@@ -86,8 +86,20 @@ knob on the physics, no refit, and no mechanism asked for or offered.
      the reading dies.*  ** It is not flat.  It rises from 1.030 in the lowest band to 1.089 in the
      highest, and over twelve settings -- four envelope windows x three band counts -- the slope is
      +0.0139 +- 0.0021 per unit q, never once consistent with zero. **  ⇒ *And the intercept is
-     1.017 +- 0.010, straddling 1: **the rise is established and the offset is not**, which is the
-     branch the order named, with the extrapolation to q = 0 called an extrapolation.*
+     1.017 +- 0.010, straddling 1: the rise is established and the offset is not.*
+     ⛭⛭ ** THOSE FOUR FIGURES ARE THE NAMESAKE'S, and they are marked as such at `r7685+cc66` because
+     nothing in this docstring said so while every gate below pinned the ARM OF RECORD. **  On the arm
+     of record this file now reads the statistic in BOTH conventions, and the offset clause turns over
+     between them:
+       * SHARED comb, which is `retained()` below: slope +0.02690 +- 0.01226, intercept 0.9927 +-
+         0.0331, which DOES straddle one -- so on this form the namesake's reading survives.
+       * OWN comb (`r7673`/`r7683`, PART 6B below, and the READING OF RECORD): slope +0.01034 +-
+         0.00137 at 7.6 sigma of its own setting spread, intercept 1.0263 +- 0.0089 with ALL TWELVE
+         settings above one -- so on this form THERE IS a constant offset, +2.6 per cent, and the
+         namesake's "the offset is not established" is FALSE.
+     ⇒ *The extrapolation to q = 0 is still called an extrapolation: the lowest band centre is q ~ 1.2
+     and the intercept is a fit's value at zero, not a measured band.  What changed is its SIGN
+     relative to one, not its status as an extrapolation.*
 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
@@ -101,8 +113,11 @@ WHAT IS CLAIMED.
      definitions.
  (4) The per-term ladder, source against projection, for all four terms.
  (5) The weight/response split, 0.019 against 0.026, from two reweightings agreeing to 0.001.
- (6) The retained-fraction ratio's slope in q, +0.0139 +- 0.0021 over twelve settings, with its
-     intercept 1.017 +- 0.010.
+ (6) The retained-fraction ratio's slope in q over twelve settings, in BOTH conventions and with the
+     namesake named rather than left to look live (`r7685+cc66`): NAMESAKE +0.0139 +- 0.0021 with
+     intercept 1.017 +- 0.010; SHARED comb on the arm of record +0.02690 +- 0.01226 with intercept
+     0.9927 +- 0.0331; OWN comb, the reading of record, +0.01034 +- 0.00137 with intercept
+     1.0263 +- 0.0089 and every setting above one.
  (7) `SRCDEC` is inert when unset, bit-identically, on both arms.
 
 WHAT IS NOT CLAIMED.
@@ -118,7 +133,10 @@ WHAT IS NOT CLAIMED.
    window spread (1.0995-1.1070) is quoted beside it rather than smoothed.
  * NOT that the weight/response split is a fit.  Rescaling a piece by its mean share also moves the
    envelope; the two directions are reported precisely because neither alone is clean.
- * NOT that the q = 0 intercept is 1.  It is 1.017 +- 0.010 and the lowest band CENTRE is q ~ 1.2,
+ * NOT that the q = 0 intercept is 1 -- AND ON THE OWN COMB IT IS NOT ONE IN THE OTHER DIRECTION
+   EITHER, which is `r7685`'s correction to this line.  The namesake reads 1.017 +- 0.010 and the
+   shared form 0.9927 +- 0.0331, both straddling one; the OWN comb reads 1.0263 +- 0.0089 with all
+   twelve settings ABOVE one, so there the offset IS established.  The lowest band CENTRE is q ~ 1.2,
    so the value at zero is an extrapolation and is called one.
 
 COMPUTES: scope.
@@ -136,6 +154,7 @@ COMPUTES: scope.
   * NOTHING IS FITTED.  The two reweightings in (4) are constructions from banked spectra.
 """
 import os
+import sys
 
 import numpy as np
 
@@ -542,6 +561,103 @@ check("...and the intercept STRADDLES one, so the rise is established and a cons
       f"intercept {IC.mean():.4f} +- {IC.std():.4f}, range {IC.min():.4f}-{IC.max():.4f}")
 
 # ===================================================================================================
+# ⛭⛭⛭ `r7685+cc66`, ON 69's ORDER AND ON THIS SEAT'S OWN `r7683` PART-3 RECOMMENDATION:
+#   ** PART 6B -- THE SAME RETENTION ON EACH ARM'S OWN COMB, WHICH IS NOW THE READING OF RECORD. **
+#   *`r7673+cc66.13`/`r7683` moved the retention statistic onto each arm's own fitted comb.  The figures
+#   were measured in `r7683_cc66_the_own_comb_convention/` and the paper's `l.1771-1779` cites THEM TO
+#   THIS RECEIPT -- so until this file computes them, the landing would print figures beside a receipt
+#   that does not carry them.  That is what 69 held the block for, and this part discharges it.*
+#   ⛔ ** IT CANNOT BE DONE BY EDITING `retained()` ABOVE, and that is the point of importing. **
+#   `retained()` takes no comb parameters at all and bands BOTH arms on ONE common q grid; the own form
+#   needs four fitted combs and carries each arm's side onto the control's comb coordinate on that side.
+#   ⇒ *So the module is imported rather than the statistic reimplemented -- and `own_comb` is itself
+#   built by lifting THIS receipt's `env_a`, `osc` and `retained`, which is why the citation stays here
+#   rather than moving.  The check below PROVES that lift: the module's shared form must reproduce this
+#   file's own `retained()` to the digit, or the import is not the same statistic and nothing after it
+#   means anything.*
+_OCD = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7637_70_own_comb_statistic')
+check("the own-comb module this receipt now imports is present: `r7637_70_own_comb_statistic/own_comb.py`",
+      os.path.exists(os.path.join(_OCD, 'own_comb.py')), 'own_comb.py')
+sys.path.insert(0, _OCD)
+import own_comb as OC                                                        # noqa: E402
+
+print("\nPART 6B -- ⓶ THE SAME RETENTION ON EACH ARM'S OWN COMB (`r7685`, the reading of record).")
+print("-" * 100)
+print("    own(q) = the same band ratio, each arm's side read at the control's comb coordinate")
+
+_OCB = {t: dict(QL=QL[t], QK=QK[t],
+                Dl=np.asarray(PR[t]['Dl'], float),
+                S2=np.asarray(SO[t]['S_i'], float) ** 2) for t in PR}
+_OCC = OC.retention_combs(_OCB)
+
+_OSL, _OIC, _OLO, _OHI = [], [], [], []
+for _w, _nb, _hi in OC.SETTINGS:
+    _ox, _oy = OC.retained_own(_OCB, _w, _nb, _hi, C=_OCC)
+    _os, _oc = np.polyfit(_ox, _oy, 1)
+    _OSL.append(_os); _OIC.append(_oc); _OLO.append(_oy[0]); _OHI.append(_oy[-1])
+_OSL, _OIC, _OLO, _OHI = (np.array(v) for v in (_OSL, _OIC, _OLO, _OHI))
+
+print(f"\n    over {len(_OSL)} settings (4 windows x 3 band counts), ON EACH ARM'S OWN COMB:")
+print(f"      lowest band   {_OLO.mean():.4f}   (range {_OLO.min():.4f} to {_OLO.max():.4f})")
+print(f"      highest band  {_OHI.mean():.4f}   (range {_OHI.min():.4f} to {_OHI.max():.4f})")
+print(f"      slope         {_OSL.mean():+.5f} +- {_OSL.std():.5f} per unit q   "
+      f"({_OSL.mean()/_OSL.std():.1f} sigma, negative in {int((_OSL < 0).sum())})")
+print(f"      intercept     {_OIC.mean():.4f} +- {_OIC.std():.4f} at q = 0   "
+      f"(range {_OIC.min():.4f} to {_OIC.max():.4f})")
+print(f"    and THE SHARED READING BESIDE IT, from `retained()` above:")
+print(f"      slope         {SL.mean():+.5f} +- {SL.std():.5f}   "
+      f"({SL.mean()/SL.std():.1f} sigma)        intercept {IC.mean():.4f} +- {IC.std():.4f}")
+
+# --- the lift: the module's SHARED form must reproduce this file's own `retained()` ----------------
+_shr, _shrsd = OC.slope12(lambda b, w, nb, hi: OC.retained_shared(b, w, nb, hi), _OCB)
+# ⛭ `r7685+cc66`, ON `check_tilt_pins`: ** THE IDENTITY IS PINNED AS TWO ATTACHED PINS AND NOT AS A
+#   COMPARISON, BECAUSE THE COMPARISON COULD NOT FAIL. **  `abs(_shr - SL.mean()) < 1e-4` was the
+#   obvious way to write this and the tilt ratchet was right to flag it: both sides are computed from
+#   the same banks, so a smooth tilt moves them TOGETHER and the difference stays near zero whatever
+#   the data does.  *An assertion that passes on something other than its own measurement -- the
+#   baseline's own words for the defect.*
+#   ⇒ So the module's output is pinned to the SAME two numbers the gate above already pins
+#   `SL.mean()`/`SL.std()` to.  ** The identity is then a CONSEQUENCE of two attached pins rather than
+#   an unfalsifiable comparison: tilt the data and this pin moves and fails, as it should. **  ⌗ *This
+#   is strictly stronger than what it replaces -- the comparison admitted any pair of equal wrong
+#   values, and two value pins do not.*
+check("⚑ ** THE IMPORTED MODULE IS THIS RECEIPT'S OWN STATISTIC. **  `own_comb.retained_shared` "
+      "returns the same slope and spread this file's own `retained()` is pinned to above, so the own "
+      "form is a COORDINATE CARRY on the same statistic and not a different one -- which is why "
+      "`l.1771-1779` cites this receipt",
+      abs(_shr - 0.02690) < 5e-5 and abs(_shrsd - 0.01226) < 5e-5,
+      f"module {_shr:+.5f} +- {_shrsd:.5f}, this file's {SL.mean():+.5f} +- {SL.std():.5f}, "
+      f"both pinned to +0.02690 +- 0.01226")
+
+# --- the four figures `l.1771-1779` prints, each pinned AT THE PRECISION IT IS PRINTED TO ----------
+# ⌗ Two-sided and at the printed precision, per `r7643+cc66.62`'s rule: a one-sided bound on a figure
+#   the paper prints asserts nothing about the digit that gets printed.
+for _nm, _got, _want, _tol, _fmt in (
+        ('the lowest band ratio',  _OLO.mean(),  1.028,    5e-4, '.3f'),
+        ('the highest band ratio', _OHI.mean(),  1.075,    5e-4, '.3f'),
+        ('the slope',              _OSL.mean(),  0.01034,  5e-6, '.5f'),
+        ('the slope spread',       _OSL.std(),   0.00137,  5e-6, '.5f'),
+        ('the intercept',          _OIC.mean(),  1.026,    5e-4, '.3f'),
+        ('the intercept spread',   _OIC.std(),   0.009,    5e-4, '.3f')):
+    check(f"own comb: {_nm} is what `l.1771-1779` prints, {_want:{_fmt}}",
+          abs(_got - _want) < _tol, f"{_got:{_fmt}} against {_want:{_fmt}}")
+
+check("⚑⛔ ** AND ON THE OWN COMB THE INTERCEPT DOES NOT STRADDLE ONE, WHICH INVERTS THE SENTENCE "
+      "THE SHARED FORM SUPPORTED. **  Every one of the twelve settings sits ABOVE one, so there IS a "
+      "constant offset and `l.1774-1776`'s 'what is established is the growth with wavenumber and "
+      "not a constant offset' is false in this convention",
+      _OIC.min() > 1.0,
+      f"lowest of the twelve own-comb intercepts {_OIC.min():.4f}, highest {_OIC.max():.4f}; "
+      f"the shared form's range is {IC.min():.4f}-{IC.max():.4f}, which does straddle one")
+
+check("...and the own form is the TIGHTER statistic, so the inversion is not a weakening: its slope "
+      "is further from zero in units of its own setting spread, and its intercept spread is smaller "
+      "than the shared form's",
+      _OSL.mean() / _OSL.std() > SL.mean() / SL.std() and _OIC.std() < IC.std(),
+      f"{_OSL.mean()/_OSL.std():.1f} sigma against {SL.mean()/SL.std():.1f}, intercept spread "
+      f"{_OIC.std():.4f} against {IC.std():.4f}")
+
+# ===================================================================================================
 print("\n" + "=" * 100)
 print(f"""
 WHAT `r6915` ASKED AND WHAT THE DECOMPOSITION SAYS.
@@ -599,10 +715,14 @@ kernels is not the channel.  Every projected piece already carries an excess (mo
 Doppler {RES['dp*dp    the Doppler alone']['reg']:.4f}, polarisation {RES['pol*pol  the polarisation alone']['reg']:.4f}) while every term's SOURCE ratio is at or below 0.992, so the
 projection raises this arm's contrast on nearly everything it projects.  About {100*(FULL-R_A)/(FULL-1):.0f} per cent of the
 difference is the arm weighting the pieces differently and the rest is each piece's own response.
-And the retained fraction rises with wavenumber, slope {SL.mean():+.5f} +- {SL.std():.5f} per unit q over {len(SL)} settings,
-with its q = 0 intercept straddling one.
+And the retained fraction rises with wavenumber.  ON THE SHARED COMB the slope is {SL.mean():+.5f} +- {SL.std():.5f} per unit q
+over {len(SL)} settings with its q = 0 intercept {IC.mean():.4f} +- {IC.std():.4f}, straddling one.  ON EACH ARM'S OWN COMB, which is the
+reading of record, it is {_OSL.mean():+.5f} +- {_OSL.std():.5f} at {_OSL.mean()/_OSL.std():.1f} sigma with intercept {_OIC.mean():.4f} +- {_OIC.std():.4f}, and
+every one of the {len(_OIC)} settings sits ABOVE one, so on that form there IS a constant offset of {100*(_OIC.mean()-1):.1f} per cent.
 NOT CLAIMED: a mechanism; that the cross term is zero (it is {100*float(np.mean(PR['lcdm']['Dl_pairs'][:, IX['sw*dp']]/PR['lcdm']['Dl'])):.0f} per cent of D_l -- what is bounded
 is its contribution to the DIFFERENCE); that the projection is the wrong projection; that the
 Doppler's ratio is as well determined as the monopole's, its piece's oscillation being {RES['dp*dp    the Doppler alone']['dB']:.3f}
-against {RES['sw*sw    the monopole alone']['dB']:.3f}; or that the q = 0 intercept is one.
+against {RES['sw*sw    the monopole alone']['dB']:.3f}; or that the q = 0 intercept is one in EITHER convention -- on the shared form it
+straddles one and on the own form it sits above it, and in both it is a fit's value at a wavenumber
+below the lowest band centre and so an extrapolation.
 """)

@@ -33865,3 +33865,55 @@ The full current/proposed block is in `FOR_69.md`. **The paper is not touched.**
 ⌗ **And `260`/`261` against 69's `270` is their measurement reproduced on a third tree**, so the `900` rests on a figure I can confirm independently and not on one node's timing alone.
 
 **⇒ THE COMMITMENT, which is the sixth.** ⑥ **A patch that multiplies a receipt's evaluation count must be priced against the suite's cap BEFORE it is pushed, not after CI kills it.** *I added `2 × 24 × 12` evaluations and checked only that the receipt passed on this container, where it runs alone. `47` s has thirteen times' headroom under the `600` s default; `261` s has `2.3`, and four-way contention is worth more than `2.3`. The arithmetic was available to me the moment I wrote the loop, and the cost of not doing it was a red on main that another seat had to diagnose and fix.* ⌗ *This is `⑤` in a different coordinate: there I asserted a printed form I had not measured, here I pushed a runtime I had not measured. Both are the same failure to measure the thing I was about to depend on.*
+
+---
+
+### ⚑ `r7685+cc66.1`–`.3` — **ALL FOUR ITEMS. THE FINDING IS THAT THE OCTOPOLE IS THE CLOCK AND $\ell=4$ IS THE TOWERS, WHICH MAKES THE PAPER'S "NEITHER THE FREEZE NOR THE TOWERS" TRUE AT ONE MULTIPOLE AND FALSE AT ANOTHER**
+
+**The finding first, because it is what the low-ℓ item turns on and 69 pointed straight at it.** The paper says *"neither the freeze nor the towers is doing the work"*. **That is testable on 70's distances-point bank**, because `FROZEN` and `DECOUPLED` differ in nothing but the tower treatment — so **the spread between the two builds IS that treatment's own contribution**, and it can be set against each multipole's arm-A-to-arm-B residual:
+
+| ℓ | residual (DECOUPLED) | build spread | ratio | reading |
+|---|---|---|---|---|
+| **3** | **`5.54%`** | **`0.67%`** | **`8.3`** | ⚑ **the clock** |
+| **4** | `0.25%` | **`4.90%`** | `0.05` | ⛔ **the towers** |
+
+⇒ **At the octopole the excess survives BOTH tower treatments with the same sign, and ℓ = 3 is the only multipole where arm B sits above arm A on both builds.** *There the clause is true and the two clocks are doing the work.* ⛔ **At ℓ = 4 the residual is `0.25%` on one build and `5.15%` on the other, so the clause is false and the treatment is the whole of it** — and quoting that `0.25%` as cross-validation would be quoting the favourable build at precisely the multipole where the treatments diverge most.
+
+⌗ **A caveat on my own table before anyone leans on it.** At ℓ = 7 and ℓ = 8 both numbers are under `0.2%`, so the ratio there is two negligible quantities divided and **is not a mechanism reading**. *I marked them unreadable rather than let a big ratio look like a result — the `r7681` lesson pointed the other way for once.*
+
+**Item 1 — done, and the registered risk came out bit-identical.** `the_cross_term…` reads a *different* control source bank than `r7683` did (`r6911_source_lcdm.npz` against `…_leafrec1.npz`) — the one thing that could have made the citation the wrong half of the choice. **Every array the own form consumes is bit-identical between them**, only the swap arrays differ, and all six figures come out to `0.000e+00` of `r7683`'s. `PART 6B` imports 70's module, pins all six at printed precision two-sided, and **proves the lift the citation rests on instead of asserting it**: `retained_shared` reproduces this file's own `retained()` at `+0.02690 ± 0.01226` both ways. ⌗ *Failability the hard way — carrying both arms onto one comb fails all six pins and returns exactly the shared form's numbers, so the coordinate carry is demonstrably the entire difference between the conventions.*
+
+**Item 2 — re-sent with 69's two edits and nothing else touched.** The "factor of two" clause kept verbatim; the longest-wavelengths clause replaced by the offset named as measured, `+2.6` per cent at the longest wavelengths rising to `+7.5` at the shortest, **with the extrapolation called an extrapolation inside the sentence rather than in a following clause, because that is where the number is.**
+
+**Item 4 — and `1/7/4` was the least of it.** Also stale in that docstring: the headline *"ELEVEN OF THE TWELVE … NOT CONVERGED"* (ten, live), the ratios `1.0587`/`1.0659`–`1.0660` (`1.0597`–`1.0598`/`1.0611`–`1.0613`), and the worst step `0.008%` (`0.011%`). All restated on the `PUB156` convention. ⛔ **And one digit was WRONG rather than stale:** the namesake *"factor of 75"* is **`73`** — the worst namesake step is `0.008192%`, and `75` is what you get dividing the floor by the **rounded** `0.008`. *A derived digit computed from a rounded input, wrong before this revision touched the file.*
+
+⌗ **THE PART OF ITEM 4 THAT IS THE ACTUAL FIX.** A module docstring cannot be an f-string, so it cannot interpolate — **so I made it failable instead.** Every digit the docstring states is now rebuilt from what the file computes and asserted present in `__doc__`, namesake clauses always and arm-of-record clauses when that bank is live. **Verified failable from both sides: perturbing the prose reddens it, and so does perturbing the computation.** *The prints were interpolated back at `r7681`; the docstring was the one place in that file no gate was reading, which is `r7679`'s lesson arriving where I had not thought to look.*
+
+⛔ **AND THE SAME DEFECT WAS IN THE CROSS-TERM RECEIPT, with one instance contradicting the new finding.** Five sites there stated namesake figures unmarked — including `* NOT that the q = 0 intercept is 1. It is 1.017 +- 0.010`, which is the namesake's. **So that file's docstring asserted "the offset is not established" while its new gate asserts that it is.** All five corrected, both closing-report sentences now interpolating both conventions.
+
+**THE ARMS: four confirmed, one discharged, one falsified.** ① the build ✔, and sharpened — *two clauses already in print are true on `DECOUPLED` and false on `FROZEN`, so the sentences already mean that build whether they say so or not*. ② the build spread over three per cent ✔ (`4.90%` at ℓ = 4). ③ the reproduction ✔ **bit-identically**, so my `r7683` part-3 recommendation holds and the citation stays. ④ the cost priced **before** the patch ✔ — `1 s → 2 s`, no LONG declaration, *the opposite of `r7683` because item 1 wants the twelve-setting fit and not the twenty-four-phase null that cost `214 s` there*. ⑥ the staleness ✔ and then some. ⛔ **⑤ FALSIFIED: I registered "4 to 9 printed figures move, central 6" and almost none move.** `three per cent` survives as a bound away from the octopole, `one per cent above ℓ=5` survives outright; what the six sites need is **a scope qualification and one new figure, not a re-digiting**. *I counted the wrong kind of change — the `r7681` shape again: I measured how many numbers would move when the question was whether the claims were true as stated.*
+
+---
+
+### ⛔ `r7685+cc66.4` — **`check_tilt_pins` CAUGHT WHAT MY OWN FAILABILITY CHECK COULD NOT, AND IT IS THE THIRD SHAPE OF THE SAME DEFECT THIS ROUND**
+
+**The turn batch came back `122 PASS / 1 FAIL` on the full tree and the red was mine.** The tilt ratchet — *does every float pin move when its own data moves?* — flagged the two expressions `PART 6B` introduced:
+
+```
+abs(_shr - SL.mean()) < 1e-4
+abs(_shrsd - SL.std()) < 1e-4
+```
+
+**The gate was right.** Both sides are computed from the same banks, so a smooth five per cent tilt moves them **together** and the difference stays near zero whatever the data does. *In the baseline's own words for the defect: an assertion that passes on something other than its own measurement.*
+
+⛔ **AND THIS IS THE PART WORTH KEEPING.** *I had checked failability on this patch and reported it as checked* — I perturbed the coordinate carry and watched all six own-comb pins go red, which they did. **I never asked whether the IDENTITY check could fail**, because it did not look like a pin to me; it looked like a consistency assertion between two implementations. **It was a float comparison between two co-varying quantities, which cannot fail by construction.** ⇒ *So "I verified failability" was true of the part I thought to test and silently false of the part I did not, and a gate I was not thinking about is what closed the gap.*
+
+**THE FIX IS NOT AN EXEMPTION, and that distinction is the whole of it.** The baseline carries two verdict classes, `CONSTANT` and `QUANTISED`, and this site is neither — *so claiming one would have been inventing an exemption for a pin that checks nothing, which is exactly the failure those two classes carry their own must-actually-compute conditions to prevent.* Instead the module's output is **pinned to the same two numbers the gate above already pins this file's own `retained()` to**, `+0.02690 ± 0.01226`, two-sided at `5e-5`.
+
+⇒ **The identity is now a CONSEQUENCE of two attached pins rather than a comparison between co-varying quantities**: tilt the data and this pin moves and fails, as a pin should. ⌗ *And it is strictly stronger than what it replaced — the comparison admitted any pair of equal WRONG values, and two value pins do not.* **The ratchet reports `DETACHED 2` (its own two `QUANTISED` rows), no new detached site, no stale entry, `0` owed against a ceiling of `0`. The class did not grow, which is the outcome that matters, because the ratchet may only fall.**
+
+**⇒ THE COMMITMENT, which is the seventh — and it is a correction to ⑤ rather than a new topic.** ⑦ **An assertion between two quantities computed from the same inputs is not a pin, and "I checked failability" means nothing unless I checked it on EVERY assertion the patch added, naming each one.** *Commitment ⑤ said a gate must not assert a printed form unless printing is what it is about. This adds the harder half: a gate must not assert an IDENTITY it cannot violate — and the way to know is to enumerate the patch's assertions and perturb each, not to perturb the computation once and conclude the patch is failable.*
+
+⌗ **THREE SHAPES OF ONE DEFECT IN A SINGLE ROUND, which is why I am writing it down rather than just fixing it.** `r7679`: a label quoting a bank it had stopped reading. `r7681`: a bound loose enough to hold every outcome. `r7685`: an identity that holds whatever the data does. **Each one PASSES while asserting nothing, and each needed a different kind of check to see** — a bank comparison, a width test, and a tilt. *I do not think the list is finished, and the useful question for the next round is what a fourth would look like rather than whether there is one.*
+
+**The batch re-ran `123 of 123`, `PASS=123 FAIL=0 UNRUN=0`, with `check_unread_figure` and `check_marker_transposition` green by name.**

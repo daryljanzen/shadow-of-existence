@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 P15 receipt -- `r7041` ⓒ AT FULL COVERAGE: THE BAND-RMS RATIO DOES NOT MOVE WITH ANY NUMERICAL
-SETTING AT THE 0.6% FLOOR -- AND ELEVEN OF THE TWELVE AXIS READINGS ARE STILL NOT "CONVERGED",
+SETTING AT THE 0.6% FLOOR -- AND TEN OF THE TWELVE AXIS READINGS ARE STILL NOT "CONVERGED",
 WHICH IS THE HALF OF THE RESULT THAT HAS TO BE SAID FIRST.
 
 ** WHAT WAS RUN. **  `r7041`'s convergence sweep, finished at 10:53 on 2026-10-01: 158,885 modes over
@@ -16,16 +16,29 @@ whether the number stops moving with the numerical settings -- and decisive for 
 about it afterwards, so the name is kept exact here.*
 
 ** THE FINDING, BOTH HALVES. **
-  (1) ** NOTHING MOVES IT. **  `fixed` sits at 1.0587 and `sweepown` at 1.0659-1.0660 across every
-      refinement of every axis.  The worst last step over all twelve axis readings is 0.008%, against a
-      pre-registered floor of 0.6% -- a factor of 75 inside it -- and the base points reproduce
-      `r6919`'s banked 1.0587/+0.01189 and 1.0659/+0.02260 exactly.
-  (2) ⛔ ** AND ONLY ONE OF THE TWELVE IS REPORTABLE AS CONVERGED. **  The pre-registration says a
+  (1) ** NOTHING MOVES IT. **  ON THE ARM OF RECORD `fixed` sits at 1.0597-1.0598 and `sweepown` at
+      1.0611-1.0613 across every refinement of every axis, and the worst last step over all twelve axis
+      readings is 0.011%, against a pre-registered floor of 0.6% -- a factor of 55 inside it.
+      ⌗ *ON THE NAMESAKE, which is a DIFFERENT bank and is reported beside the live reading rather than
+      asserted against it (`r7681+cc66.3`): `fixed` 1.0586-1.0587, `sweepown` 1.0659-1.0660, worst step
+      0.008% at a factor of 73, and THE NAMESAKE's base points reproduce `r6919`'s banked
+      1.0587/+0.01189 and 1.0659/+0.02260 exactly.*  ** Every digit in this paragraph is asserted below
+      against what the file computes, in whichever convention it is a statement about. **
+      ⛔ *The namesake factor stood here as `75` and is `73`: the worst namesake step is 0.008192%, and
+      75 is what you get by dividing the floor by the ROUNDED 0.008.  A derived digit computed from a
+      rounded input -- wrong before this revision touched the file, and caught only because the gate
+      below rebuilds it from the unrounded value.*
+  (2) ⛔ ** AND ONLY TWO OF THE TWELVE ARE REPORTABLE AS CONVERGED. **  The pre-registration says a
       sequence that has not TURNED OVER is not converged whatever its last step, and that monotonicity is
-      undefined on two points.  SEVEN readings therefore read *"step under the floor but the sequence has
-      NOT turned over"*, four read *"TWO POINTS ONLY"*, and exactly one -- `sweepown`'s eta half-width
-      NLOSW -- reads *"converged at the floor"*.  ⌗ *A small last step is the cheapest way to look
-      converged without being it; the sweep bought stability, not convergence, and says so.*
+      undefined on two points.  ON THE ARM OF RECORD SIX readings therefore read *"step under the floor
+      but the sequence has NOT turned over"*, four read *"TWO POINTS ONLY"*, and TWO -- `fixed`'s `KFAC`
+      and `sweepown`'s eta half-width `NLOSW` -- read *"converged at the floor"*.  ⌗ *A small last step is
+      the cheapest way to look converged without being it; the sweep bought stability, not convergence,
+      and says so.*
+      ⛭ ** THE NAMESAKE READS 1 / 7 / 4 AND THE ARM OF RECORD READS 2 / 6 / 4, AND THAT IS A CLAIM
+      CHANGE AND NOT A DIGIT. **  `fixed`/`KFAC` TURNS OVER on the arm of record where it was monotone on
+      the namesake, so a second reading becomes reportable.  *Both counts are asserted below, each against
+      the table it is a statement about.*
 
 ⛭ ** AND THERE ARE NOT TWELVE AXES. FIVE MOVED IT ON THE ARM, SIX ON THE CONTROL. **  `NK` is inert on
 the arm BY CONSTRUCTION -- the arm's k ladder is `sqrt(L(L+2))*stretch` out to `KMAXL` and `NK` is a
@@ -324,6 +337,58 @@ _fx = [v for k, v in seqs.items() if k[0] == 'fixed' for v in v]
 _sw = [v for k, v in seqs.items() if k[0] == 'sweepown' for v in v]
 _nfx = [v for k, v in NSK.items() if k[0] == 'fixed' for v in v]
 _nsw = [v for k, v in NSK.items() if k[0] == 'sweepown' for v in v]
+
+# ⛭⛭⛭ `r7685+cc66`: ** AND NOW THE DOCSTRING IS GATED AGAINST THE SAME NUMBERS. **
+#   *`r7685` (69) found this receipt's docstring still reading "exactly one ... 1/7/4" long after the
+#   repoint made it 2/6/4 on the arm of record.  The PRINTS above were already interpolated by
+#   `r7681+cc66.3`; the DOCSTRING was not, so it went stale silently -- which is `r7679`'s lesson
+#   arriving in the one place in this file that no gate was reading.*
+#   ⇒ ** A module docstring cannot be an f-string, so it cannot interpolate; the next best thing is to
+#   make it FAILABLE.  Every digit the docstring states is rebuilt here from what the file computes and
+#   asserted to be PRESENT in `__doc__`.  A number that moves now reddens this receipt until the prose
+#   is corrected, instead of surviving unread. **
+#   ⌗ *The namesake clauses are asserted always; the arm-of-record clauses only when that bank is live,
+#   because on the namesake alone they are not statements this run can score.*
+_DOC = __doc__ or ''
+_docfails = []
+
+
+def _doc_has(claim, label):
+    """`claim` must appear VERBATIM in the docstring, or the prose has drifted from the computation."""
+    if claim not in _DOC:
+        _docfails.append(f'{label}: the docstring does not contain {claim!r}')
+
+
+def _band(vs):
+    lo, hi = min(vs), max(vs)
+    return f'{lo:.4f}' if round(lo, 4) == round(hi, 4) else f'{lo:.4f}-{hi:.4f}'
+
+
+# the namesake's clauses -- scored on the namesake table, which is always present
+_doc_has(f'`fixed` {_band(_nfx)}', 'namesake fixed ratios')
+_doc_has(f'`sweepown` {_band(_nsw)}', 'namesake sweepown ratios')
+_doc_has(f'worst step\n      {NSK_WORST:.3f}%', 'namesake worst step')
+_doc_has(f'factor of {100 * FLOOR / NSK_WORST:.0f}', 'namesake floor factor')
+_doc_has(f'READS {len(NSK_CONV)} / '
+         f'{sum(1 for v in NSK_VERDS.values() if v == "not-turned-over")} / '
+         f'{sum(1 for v in NSK_VERDS.values() if v == "two-points-only")}', 'namesake 1/7/4 count')
+
+# the arm of record's clauses -- only scoreable when that bank is the live one
+if ON_ARM:
+    _doc_has(f'`fixed` sits at {_band(_fx)}', 'live fixed ratios')
+    _doc_has(f'{_band(_sw)} across every refinement', 'live sweepown ratios')
+    _doc_has(f'readings is {worst:.3f}%', 'live worst step')
+    _doc_has(f'a factor of {100 * FLOOR / worst:.0f} inside it', 'live floor factor')
+    _doc_has(f'READS {len(conv)} / '
+             f'{sum(1 for v in verds.values() if v == "not-turned-over")} / '
+             f'{sum(1 for v in verds.values() if v == "two-points-only")}', 'live 2/6/4 count')
+    _NOTCONV = {2: 'TWO', 10: 'TEN', 11: 'ELEVEN', 12: 'TWELVE'}
+    _doc_has(f'{_NOTCONV[12 - len(conv)]} OF THE TWELVE AXIS READINGS ARE STILL NOT', 'headline count')
+    _doc_has(f'ONLY {_NOTCONV[len(conv)]} OF THE TWELVE ARE REPORTABLE', 'converged headline')
+    for _inj, _ax in conv:
+        _doc_has(f'`{_ax}`', f'converged reading {_inj}/{_ax} named in the docstring')
+
+assert not _docfails, 'THE DOCSTRING HAS DRIFTED FROM THE COMPUTATION:\n  ' + '\n  '.join(_docfails)
 print('P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting -- PASS')
 print(f'  read from   : {SOURCE}')
 print(f'  on the arm  : {"YES, the arm of record" if ON_ARM else "NO -- the namesake"}')

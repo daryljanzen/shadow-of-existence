@@ -7407,3 +7407,95 @@ I merged `r7683+1`/`+2` onto the branch and then priced what my own patches actu
 **The cost is `slope12` run twice over twelve settings in two conventions, plus the two-amplitude null over twenty-four phases** — `2 × 24 × 12` evaluations of `retained_own` where the file previously had none. ⇒ **That is a `5.6×` increase I introduced without pricing it**, and it is why the receipt met the `600` s default under four-way contention: at `47` s it had thirteen times' headroom, at `261` s it has `2.3`, and contention is worth more than that.
 
 ⌗ **If you want the comment to read true, the clause is `cc66's own-comb slope block (r7681) is 214 s of it, measured against 47 s before it`** — your call whether it is worth a commit on its own; I have not touched `scripts/run_all_receipts.py`, since the declaration itself is correct and only its attribution is off by one revision.
+
+---
+
+### ⚑ `r7685+cc66` ITEM 1 — **DONE, AND ARM ③ CAME OUT BIT-IDENTICAL: `the_cross_term…` NOW CARRIES ALL SIX FIGURES, EACH PINNED AT THE PRECISION IT IS PRINTED TO**
+
+**The receipt reads a DIFFERENT control source bank than `r7683` did** — `r6911_source_lcdm.npz` against `r6911_source_lcdm_leafrec1.npz` — which was the one thing that could have made your hold necessary in the other direction. **It does not bite: every array the own form consumes is bit-identical between them** (`S_i`, `k`, `r_s`, `ls`, `l_A`, `Dl`); only `Dl_swap` and `xswap` differ, and those are this receipt's swap-identity legs, not the statistic. **All six figures come out to `0.000e+00` of `r7683`'s and each prints exactly what `l.1771–1779` would print.**
+
+| figure | the receipt now computes | prints | pinned two-sided at |
+|---|---|---|---|
+| lowest band | `1.028008` | `1.028` | `5e-4` |
+| highest band | `1.075333` | `1.075` | `5e-4` |
+| slope | `+0.010344` | `+0.01034` | `5e-6` |
+| slope spread | `0.001369` | `0.00137` | `5e-6` |
+| intercept | `1.026346` | `1.026` | `5e-4` |
+| intercept spread | `0.008897` | `0.009` | `5e-4` |
+
+**PART 6B imports `own_comb` and reimplements nothing**, as you accepted. ⌗ **And it proves the lift the citation rests on rather than asserting it:** `own_comb.retained_shared` reproduces this file's own `retained()` at `+0.02690 ± 0.01226` both ways, so the own form is a *coordinate carry on this receipt's statistic* and not another statistic — **which is the whole ground for the citation staying here.** ⇒ *Failability checked the hard way: carrying both arms onto one comb instead of the control's coordinate fails all six pins AND returns exactly the shared form's numbers (`+0.02690`/`0.01226`, intercept `0.993`/`0.033`). So the coordinate carry is demonstrably the entire difference between the conventions.*
+
+**Cost, priced before and after as I registered:** `1 s → 2 s` against a `600 s` cap. **No LONG declaration needed** — and the reason is worth one line, because it is the opposite of `r7683`: item 1 wants the twelve-setting fit only, not the two-amplitude null over twenty-four phases that cost `214 s` there.
+
+#### ⛔ AND FIVE PLACES IN THAT SAME FILE WERE STATING NAMESAKE FIGURES AS IF THEY WERE LIVE — INCLUDING ONE THAT NOW CONTRADICTS THE FINDING
+
+*You held the block so the paper would not print figures beside a receipt that does not compute them. **Inside the receipt, the same defect was already there** — and one instance of it directly contradicts what PART 6B now measures:*
+
+> ` * NOT that the q = 0 intercept is 1.  It is 1.017 +- 0.010 ...`
+
+`1.017 ± 0.010` is the **namesake's**, unmarked. Live, the shared form reads `0.9927 ± 0.0331` and the own form `1.0263 ± 0.0089` **with all twelve settings above one**. ⇒ **So the docstring was asserting "the offset is not established" in the same file whose new gate asserts that it is.** I corrected all five sites — docstring `(5)`, docstring item `(6)`, the `NOT CLAIMED` intercept line, and the two closing-report sentences, which now interpolate BOTH conventions from what the file computes. **The extrapolation is still called an extrapolation: the lowest band centre is `q ≈ 1.2`, so what changed is the intercept's sign relative to one, not its status.**
+
+---
+
+### ⚑ `r7685+cc66` ITEM 2 — **`l.1771–1793` RE-SENT WITH YOUR TWO EDITS, AND NOTHING ELSE TOUCHED**
+
+Your edit 1, **keep** *"so the size is established only to within a factor of two"* — **kept, unchanged**, in the second block below.
+
+Your edit 2, **replace** the longest-wavelengths clause with the offset **named as measured**. Here is `l.1771–1779` with that one clause replaced and the rest exactly as `r7683` sent it:
+
+> *\emph{And the fraction of the source's oscillation the projection retains rises with wavenumber}: read with each arm banded on its own acoustic comb, its arm-to-control ratio goes from $1.028$ in the lowest acoustic band to $1.075$ in the highest, with a slope of $+0.0103$ per acoustic period, the twelve envelope settings spanning $0.0014$ about it and none of them returning a negative value---\emph{seven and a half times its own spread across those settings}. \emph{The intercept of that rise sits above one at $1.026$ with a spread of $0.009$}, so what is established is a growth with wavenumber \emph{and} a constant offset beneath it: \emph{the projection already retains $2.6$ per cent more of the source's oscillation on this arm than on the control at the longest acoustic wavelengths it reaches, and the excess grows to $7.5$ per cent at the shortest}---the value at zero being a fit's extrapolation from a lowest band centred at $q\approx1.2$ rather than a measured band\rcpt{P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess}.
+
+⌗ *The `+2.6` is the intercept read as a per-cent offset, `2.8` is the lowest measured band and `7.5` the highest, all three now pinned in the receipt. I have called the extrapolation an extrapolation inside the sentence rather than in a following clause, because that is where the number is.*
+
+**And `l.1779–1793` is unchanged from `r7683`'s table and its closing quote** — the ten rows, 60's over-phase caveat at `0.54`/`0.51`, the shared reading stated once at `+0.0269 ± 0.0123`. *Nothing in that half moved, so I am not re-sending it as if it had.*
+
+---
+
+### ⚑⚑ `r7685+cc66` ITEM 3 — **THE SIX SITES, AND THE BUILD QUESTION HAS A SHARPER ANSWER THAN "PICK ONE": THE OCTOPOLE IS THE CLOCK AND $\ell=4$ IS THE TOWERS**
+
+**Your figures reproduce exactly** from `spectra/p15_lowell_depths_distances_leafrec1.npz`, and **the seven printed depths stand** — arm A gives `0.4874`, `0.4348`, `0.3590`, `0.6663`, `0.9113`, `0.9831`, `0.9981` against the printed `0.487`, `0.435`, `0.359`, `0.666`, `0.911`, `0.983`, `0.998`.
+
+| ℓ | FROZEN rel | DECOUPLED rel | **build spread $(F-D)/A$** | what moves it |
+|---|---|---|---|---|
+| 2 | `−4.43%` | `−1.91%` | `−2.52%` | mixed |
+| 3 | **`+4.88%`** | **`+5.54%`** | **`−0.67%`** | ⚑ **THE CLOCK** |
+| 4 | `−5.15%` | `−0.25%` | **`−4.90%`** | ⛔ **THE TOWERS** |
+| 5 | `−4.50%` | `−2.33%` | `−2.18%` | mixed |
+| 6 | `−1.20%` | `−0.57%` | `−0.63%` | mixed |
+| 7 | `−0.11%` | `−0.13%` | `+0.02%` | *too small to read* |
+| 8 | `+0.16%` | `−0.04%` | `+0.20%` | *too small to read* |
+
+**You pointed at the paper's *"neither the freeze nor the towers is doing the work"*, and it is TESTABLE on these rows**, because FROZEN and DECOUPLED differ in nothing but the tower treatment — so **the build spread IS that treatment's own contribution.** Compare it with each multipole's residual:
+
+- **ℓ = 3: residual `5.54%`, build spread `0.67%` — a ratio of `8.3`.** The octopole's excess **survives both tower treatments with the same sign**, and ℓ = 3 is **the only multipole where arm B sits above arm A on both builds**. ⇒ ***There the clause is TRUE: neither the freeze nor the towers is doing the work, and the two clocks are.***
+- **ℓ = 4: residual `0.25%` on DECOUPLED, build spread `4.90%` — a ratio of `0.05`.** ⇒ ***There the clause is FALSE: the tower treatment is the whole of it.*** The agreement at ℓ = 4 is `0.25%` on one build and `5.15%` on the other, so **quoting it as cross-validation quotes the favourable build at exactly the multipole where the treatments diverge most.**
+
+⌗ **The honest caveat on my own table, before you rely on it:** at ℓ = 7 and ℓ = 8 both the residual and the spread are under `0.2%`, so their ratio is two negligible numbers divided and **is not a mechanism reading at all**. *I have marked them "too small to read" rather than let a large ratio there look like a result — which is the `r7681` lesson in the other direction.*
+
+#### ⇒ MY RECOMMENDATION, AND IT IS THE ONE I REGISTERED BEFORE MEASURING: **NAME THE BUILD ONCE, WITH ITS SPREAD, AND CARRY ONLY THE OCTOPOLE EXCEPTION AT THE SIX SITES**
+
+**Naming the build is not cosmetic, and here is the proof: two clauses already in print are TRUE on one build and FALSE on the other.** *"one per cent above $\ell=5$"* holds on DECOUPLED (`0.57`, `0.13`, `0.04`) and **fails on FROZEN** (`1.20%` at ℓ = 6). So the sentences *already* mean DECOUPLED, whether or not they say so. ⇒ **They should say so.**
+
+**But "three per cent at every multipole" is false on BOTH builds** (`+4.88%` FROZEN, `+5.54%` DECOUPLED at the octopole), so every one of the six sites needs the octopole exception **regardless of which build you name.**
+
+⌗ *So I do not recommend quoting DECOUPLED's `2.33%` and stopping. That hides the `4.90%` at ℓ = 4, which is twenty times the residual it is being used to vouch for. **State the build and the spread once, in `\S`\ref{sec:scope} where the comparison is defined, and let the six claim sites carry the octopole exception alone.** That way the build-dependence is declared where the method is, instead of seven times in the prose or nowhere.*
+
+#### The seven locations, each drafted
+
+| site | current | **proposed** |
+|---|---|---|
+| `CR_cosmology` `l.134` | "which agree to three per cent at worst once the post-recombination source is carried to the present" | "which agree to three per cent at every multipole **but the octopole, and to five and a half per cent there**, once the post-recombination source is carried to the present" |
+| `fig:lowL-floor` caption | "agrees with them to three per cent at every multipole (\S\ref{sec:scope})" | "agrees with them to three per cent at every multipole **but the octopole, where it sits five and a half per cent high** (\S\ref{sec:scope})" |
+| `l.2596` | "the hierarchy agrees to three per cent at every multipole and one per cent above $\ell=5$" | "the hierarchy agrees to three per cent at every multipole **but the octopole---where it sits five and a half per cent high, the one multipole at which the two clocks rather than the tower treatment are doing the work**---and to one per cent above $\ell=5$" |
+| `l.2798` | "the shape and the depth both reproduced by the programme's own photon hierarchy to three per cent" | "the shape and the depth both reproduced by the programme's own photon hierarchy to three per cent **away from the octopole and five and a half per cent at it**" |
+| `l.2809–2811` | "with the hierarchy agreeing to within three per cent at every multipole and one per cent above $\ell=5$" | "with the hierarchy agreeing to within three per cent at every multipole **but the octopole, and five and a half per cent there**, and one per cent above $\ell=5$" |
+| `CR_framework` (P7) `l.778` | "its shape and depth cross-validated between two independent transfers" | "its shape and depth cross-validated between two independent transfers **to three per cent away from the octopole**" |
+| `CR_synthesis` (P18) `l.1494` | "the two transfers agreeing to three per cent once each carries the late integrated Sachs--Wolfe term to the present" | "the two transfers agreeing to three per cent **away from the octopole, and to five and a half per cent at it**, once each carries the late integrated Sachs--Wolfe term to the present" |
+
+**And the one sentence for `\S`\ref{sec:scope}, which is where the build belongs:**
+
+> *The hierarchy's low-multipole depths are read with the photon and neutrino sectors \emph{decoupled} past recombination rather than frozen with their free-streaming towers retained; the two treatments are reported because the choice is not free. They agree to under one per cent above $\ell=5$ and differ by up to $4.9$ per cent of the exact transfer's depth at $\ell=4$, which is where the treatment rather than the clock is doing the work---while at the octopole, where the hierarchy sits five and a half per cent high, the two treatments agree to $0.7$ per cent and the excess survives both.*
+
+⌗ **`l.134`'s "at worst" is the one phrase I would not keep in any version.** *On these rows the worst is the octopole on either build, so "three per cent at worst" is the single clause that cannot be made true by naming a build. It has to gain the exception or change its number.*
+
+**⇒ AND ARM ⑤ IS FALSIFIED, in a way worth naming.** I registered *"4 to 9 figures move, central 6"*. **Almost no printed figure moves.** `three per cent` survives as a bound away from the octopole on DECOUPLED, and `one per cent above ℓ=5` survives outright. *What the six sites need is a SCOPE QUALIFICATION and one new figure, not a re-digiting — so I counted the wrong kind of change. The `r7681` shape again: I measured how many numbers would move when the question was whether the claims were true as stated.*

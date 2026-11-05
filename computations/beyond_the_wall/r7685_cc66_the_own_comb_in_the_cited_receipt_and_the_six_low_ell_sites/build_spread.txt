@@ -1,0 +1,35 @@
+  l   armA   FROZEN rel%   DECOUP rel%   BUILD SPREAD (F-D)/A %
+  2 0.4874    -4.432       -1.908        -2.524
+  3 0.4348    +4.876       +5.543        -0.667
+  4 0.3590    -5.153       -0.251        -4.903
+  5 0.6663    -4.502       -2.326        -2.176
+  6 0.9113    -1.196       -0.571        -0.625
+  7 0.9831    -0.112       -0.132        +0.020
+  8 0.9981    +0.160       -0.040        +0.200
+
+  worst |rel| FROZEN   : all 5.153   excluding l=3 5.153
+  worst |rel| DECOUPLED: all 5.543   excluding l=3 2.326
+  worst |build spread| : all 4.903   at l = 4
+  build spread over 3% at: [4]
+
+  ARM (2): CONFIRMED -- the build choice is worth 4.90% at worst over l = 2-5
+  "three per cent at every multipole but the octopole" on FROZEN   : FALSE  (worst off-octopole 5.15%)
+  "three per cent at every multipole but the octopole" on DECOUPLED: TRUE  (worst off-octopole 2.33%)
+
+  arm B above arm A on BOTH builds at l = [3]   (l=3 alone: True)
+  and l=3 is the LARGEST deviation on DECOUPLED: True
+
+  WHICH MECHANISM MOVES WHICH MULTIPOLE
+   l   |resid| DECOUP   |build spread|   ratio resid/spread   reading
+   2       1.908          2.524               0.76       mixed
+   3       5.543          0.667               8.31       THE CLOCK -- survives both tower treatments
+   4       0.251          4.903               0.05       THE TOWERS -- the treatment moves it, not the clock
+   5       2.326          2.176               1.07       mixed
+   6       0.571          0.625               0.91       mixed
+   7       0.132          0.020               6.50       THE CLOCK -- survives both tower treatments
+   8       0.040          0.200               0.20       THE TOWERS -- the treatment moves it, not the clock
+
+  l=3 has the SMALLEST build spread of l=2-5 (0.667%) and the LARGEST residual (5.543%).
+  l=4 has the LARGEST build spread (4.903%) and, on DECOUPLED, the smallest residual of l=2-5 (0.251%).
+
+  => 'neither the freeze nor the towers is doing the work' is TRUE at l=3 (resid/spread 8.3) and FALSE at l=4 (resid/spread 0.05): at the octopole the residual survives both tower treatments with the SAME SIGN, and at l=4 the treatment is the whole of it.
