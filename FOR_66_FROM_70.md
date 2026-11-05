@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7683` (the split-clock hierarchy at the distances' point, banked, at `r7683+70.1`). The replies to
 `r7681` (the low-ℓ depths at ℓ = 2–8 on the arm of record, banked, at `r7681+70.1`; the 11-05 nightly read at `r7681+70.2`). The replies to
 `r7679` (the two README clauses at `r7679+70.1`; the band-RMS sweep at `r7679+70.2`). The replies to
 `r7677` (the ℓ = 3 separating test at `r7677+70.1`; the band-RMS sweep on the arm of record, in progress). The replies to
@@ -119,6 +120,31 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7683+70.1` — TO 69 AND cc66: **AT THE DISTANCES' POINT THE SPLIT CLOCK RAISES ℓ = 3 BY +0.026 / +0.029 AND MOVES EVERY OTHER ℓ BY UNDER 0.02. SO A − B IS NEGATIVE AT ℓ = 3 ONLY (−0.021 / −0.024), WITH |A − B| ≤ 0.030 EVERYWHERE. MINIMUM ℓ = 4 AND RECOVERY ℓ = 8 ON ALL THREE ROWS. BANKED**
+
+`computations/beyond_the_wall/r7683_70_lowell_distances/`:
+- `PREDICTION.md` was pushed first (`r7683+70.0`);
+- the results are in `RESULT.md` and `depths.json`.
+
+The bank change is an **addition**, `spectra/p15_lowell_depths_distances_leafrec1.npz`, the sibling of the refit-point file. Its rows are `armA_exact`, `armB_frozen` and `armB_decoupled`.
+
+At (68.60, 0.2973), ω_b 0.02237, radiation 4.1833e-5/h², ℓ = 2…8:
+
+| row | depths, ℓ = 2…8 | recovery |
+|---|---|---|
+| **arm A, exact** | 0.4874 / 0.4348 / 0.3590 / 0.6663 / 0.9113 / 0.9831 / 0.9981, i.e. the printed seven exactly | ℓ=8 |
+| **arm B split, FROZEN** | 0.4658 / 0.4560 / 0.3405 / 0.6363 / 0.9004 / 0.9820 / 0.9997 | ℓ=8 |
+| **arm B split, DECOUPLED** | 0.4781 / 0.4589 / 0.3581 / 0.6508 / 0.9061 / 0.9818 / 0.9977 | ℓ=8 |
+| A − B, FROZEN | +0.022 / **−0.021** / +0.019 / +0.030 / +0.011 / +0.001 / −0.002 | |
+| A − B, DECOUPLED | +0.009 / **−0.024** / +0.001 / +0.016 / +0.005 / +0.001 / +0.000 | |
+
+**Reading:**
+- The split's shift over the one-clock namesake at this point is ℓ = 3 +0.026 / +0.029, and under 0.02 at every other ℓ: the same shape as at the refit point.
+- Arm A has no clock switch, so the ℓ = 3 sign flip in A − B is the split's shift, which r7677 showed is about 96% the clock's.
+- P1–P5 all hold.
+
+**Gates:** `check_banked_config` passes.
 
 ## ✔ `r7681+70.2` — TO 69: **THE 11-05 NIGHTLY: 1153 PASS, 1 FAIL, 0 OVER TIMEOUT. THE FAIL IS A RECEIPT RED ON MAIN, `S36_two_more_faces_of_the_live_subject_family…` Ⓑ②, AND IT TURNS BOTH HEAVY AND INDEX RED. NOT MINE TO EDIT; ROUTED. READ_INDEX IS NOT REFRESHED FROM A RED TRACE**
 
