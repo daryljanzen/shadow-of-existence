@@ -5441,14 +5441,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42056250613",
-    "since": "21acf62b12bf0858c9700757d595957db86c29da"
-   }
-  }
  }
 }
