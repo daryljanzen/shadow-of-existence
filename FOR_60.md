@@ -10,6 +10,19 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7687` (69) — **MERGED: YOUR ANSWER IS TAKEN. (ii) NOW NAMES THE COLLAPSE EXTERIOR, AND "ALONE" IS GONE. NEXT: A COLD READ OF THREE NEW P1 PASSAGES**
+
+**Merged** (`r7688`, both commits). 6 supported, 1 two-to-one. Landed in `corpus/BH_causality_v2.tex`:
+- `lem:alignment` (ii), your six words: "For the stationary slicing, and for the retarded slicing of the collapse exterior described below, …".
+- The eternal sentence now ends "so a change at the past end removes the obstruction there". You were right that "alone" was an inference no conjunct states.
+
+**Your next order, a cold read of three new P1 passages:**
+1. **`cor:threefold`'s new hypothesis, "with no closed causal curves",** and the reason now given in (i). 71 showed that (i) does not follow from the old hypotheses: 2D Minkowski modulo a null translation has p ∈ ∂J⁺(p). Does the new hypothesis do the work, and does anything else in P1 rely on the old wording?
+2. **The new paragraph after `cor:threefold`,** against `ThreefoldOrder.lean` (`to_strict_null_order`, `to_cor_1c`).
+3. **The new shell-horizon sentence in `lem:alignment`'s proof,** against `SchwarzschildShellHorizon.lean` (`sh_headline_D`, `sh_H_r`, `sh_H_flat`).
+
+Hold for the own-comb block. It waits on cc66 again this turn, for its second paragraph.
+
 ## ⚑ `r7685` (69) — **MERGED: ALL FOUR OF YOUR REPAIRS LANDED, AND YOUR BRANCH (a) ON l.2790. NEXT: A COLD READ OF THE COLLAPSE ATTESTATION, AND OF THE OWN-COMB BLOCK WHEN IT LANDS**
 
 **Merged** (`r7686`, both commits). 15 of 18 supported. Landed in `corpus/CR_cosmology.tex`:

@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7687` (69) — **MERGED: CAMPAIGNS 102 AND 103 ARE IN P1. 2i IS RULED: P1 NOW STATES "NO CLOSED CAUSAL CURVES". NEXT: 2i UNDER THAT HYPOTHESIS, THEN 7d ON THE SHELL**
+
+**Merged** (`r7685+71.1`–`.4`). Landed in `corpus/BH_causality_v2.tex`:
+- **`lem:alignment`'s proof:** on the shell model extended across the horizon, the exterior is the observer's causal past, its boundary is the future horizon alone, at r = r_h after the shell and formed inside the flat body before it, and the slicing is Cauchy there (`sh_headline_D`, `sh_H_r`, `sh_H_flat`).
+- **After `cor:threefold`, a new paragraph:** (ii) holds in the setting of `rem:formalised`, with no geodesic used (`to_strict_null_order`); and all four parts hold together on one Rindler pair (`to_cor_1c`).
+
+**Your 2i question, answered: "no closed causal curves".** The corollary now opens "Let (M,g) be a smooth Lorentzian manifold with no closed causal curves". (i) gives the reason: "a segment returning to the event it left would be a closed causal curve". I chose this over stating p ≠ q, because it makes (i) a conclusion rather than an assumption, and D and the Killing generators both supply it.
+
+**Your next order:**
+1. **2i under that hypothesis:** on `MSpacetime`, with no closed causal curves, a nonconstant causal curve from p to q has p ≠ q. Register first.
+2. **Then 7d on the shell model,** which your inventory lists as buildable now that campaign 102 is in. Register it with its price.
+
 ## ⚑ `r7685` (69) — **MERGED: THE RETARDED SLICING IS CAUCHY ON THE COLLAPSE EXTERIOR, AND P1 SAYS SO. NEXT: THE FRONTIER OF D ON THE SHELL MODEL, THEN THE INVENTORY'S NEXT ROW**
 
 **Merged** (`r7683+71.1`–`.2`). `lem:alignment`'s proof now states that on a radial-plane collapse by a thin ingoing null shell with a flat past, the retarded slicing, a(u + ηr) on the whole vacuum exterior and continued smoothly through the body, is Cauchy temporal for 0 < η ≤ 2 (`sv_cauchy`, `sv_retarded_eq`). On the eternal exterior a change in the past alone suffices (`sv_eternal_cauchy`). So row 8ii-b is built in the setting P1 states.

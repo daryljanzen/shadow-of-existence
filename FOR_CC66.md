@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7687` (69) — **MERGED: ITEM 1 IS DONE AND VERIFIED. THE BLOCK STILL WAITS ON ITS SECOND HALF: `the_phase_systematic…` DOES NOT COMPUTE FOUR OF THE OWN-COMB FIGURES l.1779–1793 WOULD PRINT. AND THE LOW-ℓ DRAFTS ARE TAKEN, ONCE A RECEIPT READS THE DISTANCES BANK**
+
+**Merged** (`r7685+cc66.0`–`.5`). I ran `the_cross_term…` here: PART 6B passes and all six own-comb figures print at the precision l.1771–1779 needs. Your l.1771–1779 wording with the offset clause is accepted as sent, including the extrapolation named inside the sentence. The tilt-pin fix (two attached pins, not an exemption) is right.
+
+**Why the block did not land this turn.** It has two paragraphs and they must land together, since landing only the first leaves the paragraph pair in two conventions. I ran `the_phase_systematic…` here (388 s, rc 0) and read its output against your l.1779–1793 table. On the own comb it computes and prints: the real-phase null `+0.00328`/`+0.00215` (21 and 32 per cent), the survival `+0.00707`/`+0.00820`, the step's null `−0.0039`/`−0.0105` against `−0.0396`, and the source periods `1.0170`/`1.0115` with the drift `0.034` to `0.199` rad. **It does not compute four things the draft prints:**
+1. **The worst-phase fraction, 0.54 and 0.51 of the own-comb slope** (the "factor of two" clause). No such line is in the output.
+2. **The carrier decomposition for the own-comb null.** The "one comb removes it, a flat envelope leaves most of it" lines (`+0.0309 → +0.0047`, `+0.0254`) are the shared statistic's null. The draft attributes the own-comb null to the drift. That is not measured.
+3. **N_eff, "two to three and a half".** The receipt's 2.33/2.92 (step) and 3.77/3.45 (slope) are the shared statistics' phase systematics. 3.77 is also above three and a half.
+4. **The slope's effective count, "nine and eighteen".** 9.4/17.7 is the shared slope's.
+
+**Your order:**
+1. **Make `the_phase_systematic…` compute and pin each own-comb figure the second paragraph prints,** or redraft each clause to the figure it does compute and say which statistic it belongs to. Price it first: this receipt is already 270–388 s against its 900.
+2. **Re-send l.1779–1793 only.** l.1771–1779 is accepted. I land both together.
+
+**The low ℓ: your seven drafts and the `\S`\ref{sec:scope}` sentence are accepted as wording.** Your build finding (the octopole is the clock and ℓ = 4 is the towers) is what the scope sentence should say. But no receipt reads `spectra/p15_lowell_depths_distances_leafrec1.npz`. The sites cite `P15_the_low_multipole_depth_gap_closes…`, which reads `cc66_lowell_sweep_leafrec1.npz`. **So fold `build_spread.py` into that receipt,** reading the distances bank, and pin what the drafts print: 5.54 per cent at ℓ = 3 (five and a half), the largest DECOUPLED residual away from the octopole (2.33, under three), the largest above ℓ = 5 (0.57, under one), the build spread 4.90 at ℓ = 4 and 0.67 at ℓ = 3. Then I land all seven sites and the scope sentence in one turn.
+
 ## ⚑ `r7685` (69) — **MERGED: THE OWN-COMB BLOCK AND ITS INTERCEPT FINDING. ONE STEP BEFORE IT LANDS: `the_cross_term…` MUST CARRY THE OWN-COMB FIGURES IT WILL BE CITED FOR. AND THE LOW-ℓ CLAIM: 70's DISTANCES-POINT ROWS ARE IN, SO DRAFT THE SIX SITES**
 
 **Merged** (`r7683+cc66.0`–`.3`). Your own-comb measurement is the right one to print. The intercept finding (1.026 ± 0.009, every setting above one) strengthens the reading rather than weakening it. The slope is 7.6 times its setting spread against the shared form's 2.2.

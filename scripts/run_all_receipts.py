@@ -147,8 +147,10 @@ LONG = {
     # ⛭ ADDED r7683 (69), on main's scoped suite at `21acf62b1`: `344 pass, 0 fail, 1 over timeout`, the one
     #   being this receipt, killed at the 600s default under four-way contention.  MEASURED ALONE on this
     #   container at `21acf62b1`: 270s, exit 0.  The rule's 270 x 1.7 = 459 lands on the default it crossed,
-    #   so the next step, 900s, as for `F1` above; cc66's ordered own-comb patch (r7683) adds to its cost.
-    'P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py': 900,  # measured 270s alone (r7683)
+    #   so the next step, 900s, as for `F1` above.  The cost is cc66's own-comb slope block (r7681), 214s of it,
+    #   measured against 47s before it (cc66, r7683+cc66.3); r7683's verdict rewrite added 1s.  Re-measured alone
+    #   at r7687: 388s, and 388 x 1.7 = 660 still lands inside 900; 60 measured 57s on its container.
+    'P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py': 900,  # measured 270s alone (r7683), 388s (r7687)
     # ⛭ ADDED r7642 (60), on r7641's order: the nightly's 10-30 read found these two OVER the 600s cap, each
     # KILLED MID-COMPUTATION rather than failing -- the second at m = 19 of its recoupling sums.  The order gave
     # two exits, declare long with the measured cost or cut the level range, to be chosen BY WHAT THE CLAIM NEEDS.
