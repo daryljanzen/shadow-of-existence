@@ -1762,18 +1762,6 @@
     "since": "c973d7aa16afaa6c1cd83af50bbdb99b1fb9832e",
     "unmeasured": true
    }
-  },
-  "tolerance": {
-   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41908062126",
-    "since": "c973d7aa16afaa6c1cd83af50bbdb99b1fb9832e",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41908062126",
-    "since": "c973d7aa16afaa6c1cd83af50bbdb99b1fb9832e",
-    "unmeasured": true
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
