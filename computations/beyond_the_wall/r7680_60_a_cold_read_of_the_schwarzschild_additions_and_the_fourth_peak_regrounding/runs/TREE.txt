@@ -1,0 +1,14 @@
+r7680 (60) -- THE TREE THIS READ IS REGISTERED AND RUN ON
+
+worktree  e3f6f58fce2d0ab2a4cddf37c8f5bd2dc9851f7d
+          (the index as the sources were read, BEFORE this revision's own files were added to it --
+           every object below is read at this hash, and adding this receipt cannot change them)
+HEAD      f74bb332  (r7679 (69) -- four seats merged)
+base      origin/main at f74bb332, level
+prev      c12b46f3 (r7677), the tree the three P1 repairs are compared AGAINST
+
+⌗ A cold read is a statement about a TREE and it has to name the tree.  Four objects are read on
+  this worktree: the three repairs to the EF corollary's attestation (against the previous tree for
+  what moved), `rem:formalised`'s seventh family against `SchwarzschildEF.lean`, `lem:alignment`'s
+  new ending against `SchwarzschildAlign.lean`, and `P15` l.2790's re-grounded clause against the
+  receipt it now cites.
