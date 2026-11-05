@@ -1,0 +1,247 @@
+
+RECEIPT -- P15: ** THE CROSSING ARM, WITH NO PIN, AT THE (H0, Om) ITS OWN RULER PREFERS, PUTS THE
+ACOUSTIC COMB AT 298.0 AGAINST THE SKY'S 298.4 -- 0.13% -- AS AN OUTPUT.  P1/P2 = 2.264 AGAINST
+2.217, P1/P3 = 2.298 AGAINST 2.277, AND THE GAP RATIOS AT 0.8861 AND 1.1286 AGAINST 0.8812 AND
+1.0966.  ** chi^2 IS 4.19 PER BIN AGAINST THE CONTROL'S 2.10, WHERE THE CODED ARM IS 118.44. **
+
+** ⇒ AND NO NUMBER IN THE SPECTRUM IS FITTED. **  The onset is forced -- the handover is at the
+crossing, so there is nothing to solve -- `LATARG` is not used, and (H0, Om) = (68.60, 0.2973) come
+from the DESI DR2 BAO + theta_* joint fit of r6760+cc66.2, not from TT.  ** The spectrum is
+out-of-sample against the data that set the cosmology. **
+
+⛔ ** IT IS STILL REJECTED AGAINST LCDM, 4.19 PER BIN AGAINST 2.10, AND THAT IS STATED AS THE
+RESULT AND NOT AS A CAVEAT. **  What has changed is the size of the gap: a factor 2.0, where the
+corpus's own configuration is a factor 56 and the same crossing arm at H0 = 73 is a factor 17.
+
+Built r6760+cc66.7 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s work order:
+"THE CROSSING ARM, NO PIN, AT H0 = 68.6 ... on that branch the comb should land on the sky's 298.4
+as an OUTPUT, not a fit."
+
+===================================================================================================
+** WHAT IS SELF-CONSISTENT ABOUT THIS CONFIGURATION, STATED BEFORE ANY NUMBER **
+===================================================================================================
+
+Three choices, each made for its own reason and none for this one:
+
+  ** THE HANDOVER AT THE CROSSING ** -- the branch point, where aH diverges and every mode is
+  super-horizon, so the adiabatic datum is the correct one there (r6760+cc66.1).
+  ** ONE CLOCK, THE LEAF CLOCK ** -- node 66 (chat)'s adjudication, for r_s and r_D together,
+  because `sec:coherence`'s own consistency demand forbids splitting them.
+  ** H0 = 68.60, Om = 0.2973 ** -- what the leaf ruler's joint DESI BAO fit returns, with theta_*
+  alone returning 68.55 independently (r6760+cc66.2).
+
+*The corpus runs the arm at H0 = 73.00, Om = 0.3066 -- the local distance-ladder value -- on a ruler
+that prefers 68.6.  ** This receipt asks what the arm says when it is run at its own ruler's
+answer. **  The three choices were made in three separate places for three unrelated reasons; that
+they land together is the result.*
+
+  PART 1  ** THE COMB, THE PHASE AND THE PEAKS. **  Against the sky and against the control.
+  PART 2  ** THE HEIGHTS AND THE GAP RATIOS. **
+  PART 3  ** THE LIKELIHOOD, BY BAND. **
+  PART 4  ** BOTH INSTRUMENT PATHS, ** because they are not interchangeable and the paper's own
+          height numbers are polarisation-path numbers.
+  PART 5  ** WHAT IS NOT FITTED, ITEMISED, ** since the whole claim rests on it.
+  PART 6  ** AND WHAT IS STILL WRONG. **
+
+** COMPUTES: nothing.  *** It reads spectra already produced and scores them; every parameter is
+   baked into the .npz it reads.  The runs are `ARM=cr CRH0=68.6 CROM=0.2973 ZSTART=3e7
+   LEAFSCALES=1 LSTEP=2 LMAXL=1300`, with `HIER=1` for the polarisation path and absent for the
+   fluid path.  The comb fit has no parameter and the likelihood fits one amplitude in closed
+   form. *** **
+
+
+================================================================================================================
+  PART 1 -- ** THE COMB, THE PHASE AND THE PEAKS **
+================================================================================================================
+                       configuration  l_A rep                      peaks  fitted comb   phi/pi   l1/lA
+                      control (LCDM)    301.4      [220, 536, 814, 1128]        297.0  -0.2379  0.7407
+         the arm as coded, H0 = 73.0    301.6      [206, 528, 832, 1196]        313.0  -0.3323  0.6581
+                 crossing, H0 = 73.0    172.8      [216, 522, 788, 1094]        286.0  -0.2214  0.7552
+           ** crossing, H0 = 68.6 **    302.9      [222, 538, 818, 1134]        298.0  -0.2349  0.7450
+       ** the same, ARM OF RECORD **    302.9      [220, 536, 814, 1130]        297.0  -0.2379  0.7407
+                      run 1, the pin    301.6      [214, 520, 784, 1092]        285.0  -0.2246  0.7509
+                             THE SKY    301.7 [220.4, 537.7, 817.3, 1123.9]        298.4  -0.2405  0.7385
+
+  ⌗ the comb is off by 0.15%, against 4.2% at H0 = 73 and 4.9% as coded
+  ⌗ and the RULER and the SPECTRUM now nearly agree: reported l_A = 302.9 against a fitted comb of 298.0, 1.6%
+    *at H0 = 73 the same two were 172.8 and 286.0, 40% apart -- so this is not bookkeeping agreeing with itself*
+
+================================================================================================================
+  PART 2 -- ** THE HEIGHTS AND THE GAP RATIOS **
+================================================================================================================
+                       configuration    P1/P2   vs sky    P1/P3   vs sky    g2/g1    g3/g2
+                      control (LCDM)    2.195    -1.0%    2.191    -3.8%   0.8797   1.1295
+         the arm as coded, H0 = 73.0    1.759   -20.7%    1.612   -29.2%   0.9441   1.1974
+                 crossing, H0 = 73.0    2.250    +1.5%    2.150    -5.6%   0.8693   1.1504
+           ** crossing, H0 = 68.6 **    2.264    +2.1%    2.298    +0.9%   0.8861   1.1286
+       ** the same, ARM OF RECORD **    2.281    +2.9%    2.312    +1.5%   0.8797   1.1367
+                      run 1, the pin    2.603   +17.4%    2.539   +11.5%   0.8627   1.1667
+                             THE SKY    2.217             2.277            0.8812   1.0966
+
+================================================================================================================
+  PART 3 -- ** THE LIKELIHOOD, BY BAND **
+================================================================================================================
+                       configuration      chi2    /bin    100-400    400-700   700-1000  1000-1300
+                      control (LCDM)     279.4    2.10       0.77       1.44       2.62       3.73
+         the arm as coded, H0 = 73.0   15752.0  118.44     144.82      22.50      77.89     248.50
+                 crossing, H0 = 73.0    4723.2   35.51       7.01       8.11      85.89      47.79
+           ** crossing, H0 = 68.6 **     556.7    4.19       1.70       2.22       4.23       9.29
+       ** the same, ARM OF RECORD **     584.0    4.39       2.11       1.90       6.70       8.74
+                      run 1, the pin    7157.8   53.82      21.69       9.52     133.64      80.14
+
+  ⇒ ** EVERY BAND IS WITHIN A FACTOR 2.5 OF THE CONTROL'S, ** the
+  700-1000 band included -- and that band is the one that survived the crossing handover, the
+  equality scan and the pin alike.  It goes 85.9 -> 4.23 per bin here.
+
+          band    control   namesake  arm of record      change
+       100-400   0.765826   1.700203       2.105510   +23.8387%
+       400-700   1.436731   2.222014       1.904985   -14.2676%
+      700-1000   2.620049   4.228463       6.702414   +58.5071%
+     1000-1300   3.725004   9.293875       8.736422    -5.9981%
+     TOTAL/bin   2.100902   4.185607       4.390895    +4.9046%
+
+  ⛔⛔ ** AND THE RE-POINT REDISTRIBUTES THE COMB RATHER THAN SCALING IT. **  The TOTAL moves +4.90 per cent
+     while the four quarters move +23.84, -14.27, +58.51 and -6.00 per cent --
+     UP, DOWN, UP, DOWN.  *So "the arm of record is about five per cent worse over these bins" hides a
+     reorganisation an order of magnitude larger than itself, and the band that moves most is the
+     700-1000 one -- the band that survived the crossing handover, the equality scan and the pin alike.*
+
+================================================================================================================
+  PART 4 -- ** BOTH INSTRUMENT PATHS, EACH AGAINST ITS OWN-PATH CONTROL **
+================================================================================================================
+                                                      peaks    comb    P1/P2    P1/P3  chi2/bin
+      POLARISATION: control LCDM      [220, 536, 814, 1128]   297.0    2.195    2.191      2.10
+   POLARISATION: arm, H0 = 68.60      [222, 538, 818, 1134]   298.0    2.264    2.298      4.19
+   POLARISATION: arm, H0 = 68.62      [222, 538, 818, 1134]   298.0    2.264    2.297      4.16
+      FLUID:        control LCDM      [220, 530, 812, 1122]   296.0    2.392    2.766     22.76
+   FLUID:        arm, H0 = 68.60      [220, 530, 816, 1126]   298.0    2.448    2.934     32.66
+   FLUID:        arm, H0 = 68.62      [220, 530, 816, 1126]   298.0    2.448    2.933     32.68
+                         THE SKY [220.4, 537.7, 817.3, 1123.9]   298.4    2.217    2.277        --
+
+  ** THE FLUID PATH'S HEIGHT OVERSHOOT IS THE PATH'S, NOT THE ARM'S. **  The LCDM CONTROL on the
+  fluid path returns 2.392/2.766 against the sky's 2.217/2.277 --
+  +7.9% and +21.5% -- and its chi^2 is
+  22.76 per bin against the polarisation control's 2.10.
+  *So a fluid row scored against the polarisation control was charging the path to the arm.*
+
+  ** AGAINST ITS OWN-PATH CONTROL THE ARM SITS THE SAME DISTANCE ON BOTH: **
+      polarisation   P1/P2 +3.1%   P1/P3 +4.9%   chi^2 x2.0
+      fluid          P1/P2 +2.4%   P1/P3 +6.0%   chi^2 x1.4
+  ⇒ *** The comb is path-proof AND the arm-to-control height OFFSET is path-robust.  What is
+  path-specific is the ABSOLUTE height, which both arms and both controls carry alike. ***
+  *That is a weaker caveat than the one r6760+cc66.7 stated, and it is weaker because the control
+  that settles it had not been run.*
+
+  ⌗ ** AND H0 = 68.62, THE VALUE ACTUALLY ORDERED, CONFIRMS 68.60 TO EVERY DIGIT THAT MATTERS: **
+  the same four peaks on both paths, comb 298.0, P1/P2 2.264, P1/P3 2.297.
+
+================================================================================================================
+  PART 4B -- ** THE COMB BY THE PROCEDURE THE SENTENCE NAMES (r7651 ⓵) **
+================================================================================================================
+  read out of corpus/CR_cosmology.tex: l.813's comb/sky = 299.1/298.4, l.945's reported scale = 302.9
+  and l.885's height pair = 2.291/2.349 against its sky's 2.221/2.262
+  l.883's peaks = (220.0, 536.3, 811.6, 1125.1) against the sky's (221.0, 533.8, 814.8, 1121.9)
+  l.884's comb = 299.1 against 298.4;  l.2065's = 299.1 against 298.4
+  l.885's phase intercept phi/pi = -0.2488 against -0.2448
+                                 row        peaks (matched locator)   comb 1-4      1-3  phi/pi 1-4       1-3   P1/P2   P1/P3  geom l_A
+               THE SKY, this locator  220.98  533.79  814.79 1121.85    298.362  296.906     -0.2448   -0.2378   2.221   2.262        --
+                  the CONTROL, L2000  220.44  537.29  811.06 1123.99    298.441  295.308     -0.2443   -0.2292   2.204   2.225   301.375
+          namesake L2000 (LEAFREC=0)  221.11  538.63  815.49 1130.79    300.589  297.189     -0.2494   -0.2332   2.274   2.336   302.889
+      ** ARM OF RECORD, distances **  220.03  536.25  811.59 1125.11    299.057  295.782     -0.2488   -0.2331   2.291   2.349   302.889
+               --- hier: the CONTROL  220.45  537.31  811.04 1123.96    298.429  295.299     -0.2442   -0.2291   2.204   2.225   301.375
+                  --- hier: namesake  221.11  538.64  815.47 1130.76    300.578  297.180     -0.2493   -0.2331   2.274   2.335   302.889
+       --- hier: ** ARM OF RECORD **  220.03  536.27  811.58 1125.02    299.029  295.773     -0.2486   -0.2330   2.291   2.348   302.889
+  the sky's own published pair, `sec:intro`'s: P1/P2 2.217, P1/P3 2.277; this locator returns 2.221 / 2.262 on the sky
+    against the sky's own locator values,       control: P1/P2  -0.75%   P1/P3  -1.65%
+    against the sky's own locator values,      namesake: P1/P2  +2.40%   P1/P3  +3.24%
+    against the sky's own locator values, ARM OF RECORD: P1/P2  +3.16%   P1/P3  +3.82%
+    hierarchy against line-of-sight, ONE locator on both,      namesake: peak offsets +0.00 +0.01 -0.02 -0.03  P1/P2 -0.011%  P1/P3 -0.017%
+    hierarchy against line-of-sight, ONE locator on both, ARM OF RECORD: peak offsets -0.00 +0.01 -0.02 -0.08  P1/P2 -0.011%  P1/P3 -0.017%
+    against which the paper's own printed pair, l.2072-2074, offers -0.04 -1.90 -2.60 -3.47 -- hier located sub-bin, line-of-sight quantised to even `ell`
+    OK    ⛭ the matched locator's whole row for THE SKY is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 220.98 533.79 814.79 1121.85; combs 298.362/296.906; phi -0.7692; heights 2.221/2.262)
+    OK    ⛭ the matched locator's whole row for the control, L2000 is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 220.44 537.29 811.06 1123.99; combs 298.441/295.308; phi -0.7674; heights 2.204/2.225)
+    OK    ⛭ the matched locator's whole row for the namesake, L2000 is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 221.11 538.63 815.49 1130.79; combs 300.589/297.189; phi -0.7835; heights 2.274/2.336)
+    OK    ⛭ the matched locator's whole row for the ARM OF RECORD is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 220.03 536.25 811.59 1125.11; combs 299.057/295.782; phi -0.7815; heights 2.291/2.349)
+    OK    ⛭ the matched locator's whole row for hier, the control is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 220.45 537.31 811.04 1123.96; combs 298.429/295.299; phi -0.7672; heights 2.204/2.225)
+    OK    ⛭ the matched locator's whole row for hier, the namesake is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 221.11 538.64 815.47 1130.76; combs 300.578/297.180; phi -0.7834; heights 2.274/2.335)
+    OK    ⛭ the matched locator's whole row for hier, the ARM OF RECORD is held to its tabled digits -- four peaks, both combs, phi and both height ratios, over all seven windows   (peaks 220.03 536.27 811.58 1125.02; combs 299.029/295.773; phi -0.7811; heights 2.291/2.348)
+    l.2790: the arm's fourth peak sits +3.26 multipoles above the sky and the control's +2.14, so 1.38 locating spreads high with 0.66 of it shared -- against the printed 1.4 and two thirds
+    OK    ⛭⛭ ** ITEM 5: l.2790's `1.4` AND ITS `TWO THIRDS` ARE PINNED WHERE THEY ARE NOW COMPUTED. ** *69 re-grounded that clause onto this receipt's PART 4B, replacing `CR_PK`, an input nothing in the repository reproduces.  Both figures come out of the table above -- the arm's offset from the sky over PO-47's locating spread, and the control's share of that offset -- so each is held to half its own last place against a value this receipt measures.*  ⛔ *`2.36` is a NEW hardcoded constant, PO-47's working-state spread rather than a bank read, and it is declared as one: pinning this figure adds a member to the class `r7677` item 2 was about*   (1.380 against 1.4; 0.657 against 0.67 (offsets +3.26 / +2.14 multipoles))
+    OK    ⛭⛭⛭ ** ITEM 6: l.882's PRINTED PAIR IS PINNED AS LITERALS AND TIED TO THE PAPER'S OWN DIGITS IN ONE VERDICT. **  *P1/P2 = 2.291 and P1/P3 = 2.349 on the arm of record, each held to 5e-4 against the matched locator's own output AND against the figure l.882 actually prints.  The tabled loop above enforces the same thing through a name; this says it where `check_figures_pinned` can see it.*   (locator 2.2909/2.3488; paper 2.291/2.349)
+    OK    ⛭⛭ ** THE LOCATOR IS VALIDATED ON THE SKY BEFORE ANYTHING IS READ OFF IT: ** it returns P1/P2 2.221 and P1/P3 2.262 against `sec:intro`'s own published 2.217 and 2.277 -- 0.2 and 0.7 per cent.  *A locator that could not find the sky's own height ratios would not be evidence about an arm's.*   (sky locator 2.221/2.262 against published 2.217/2.277)
+    OK    ⛭⛭⛭ ** THE RE-POINT MOVES THE POSITIONS TOWARD THE SKY AND THE HEIGHTS AWAY FROM IT, which is the finding and not a figure. **  *The comb's agreement improves from 1 part in 134 to 1 part in 429, while P1/P2 against the sky goes +2.40 to +3.16 per cent and P1/P3 +3.24 to +3.82.  And the CONTROL is nearer the sky than either arm on the heights, -0.75 per cent, which is the direction l.146's 'the heights are the path's and the positions are the construction's' already asserts.*   (positions 2.227 -> 0.695; heights +2.40% -> +3.16%; control -0.75%)
+    OK    ⛭⛭⛭ ** AND THE SECOND INSTRUMENT ANSWERS l.2075 IN ITS FAVOUR, ON BOTH ARMS, ONCE THE TWO PATHS GO THROUGH ONE PROCEDURE. **  *The hierarchy path and the line-of-sight path agree to under a tenth of a multipole at every peak and to under a twentieth of a per cent on both height ratios.*  ⇒ *** So 'within a multipole on every peak and within one per cent on the heights' HOLDS, and comfortably.  What does not hold is the PAIR OF FIGURES l.2072-2074 offers as its evidence: hier located sub-bin on a unit-step grid against line-of-sight maxima quantised to even `ell` by LSTEP=2, which gives offsets -0.04, -1.90, -2.60 and -3.47 and makes the claim look false in its own numbers. ***   (worst peak offset 0.084 in ell)
+    OK    ⛔⛭⛭ the raw-grid row on the arm of record is held to its own digits -- peaks 220/536/814/1130, comb 297.0, phi/pi -0.2379, heights 2.281 and 2.312 -- AND its comb and phi are bit-identical to the control's, because its first three maxima land on the control's own LSTEP=2 cells while its fourth does not (1130 against the control's 1128)   (arm of record raw grid [220, 536, 814, 1130] comb 297.0 phi/pi -0.2379 heights 2.281/2.312; control [220, 536, 814, 1128] comb 297.0 phi/pi -0.2379)
+
+  the RAW-GRID method `score()` uses, for the provenance: the namesake's maxima are [222, 538, 818, 1134],
+  every one an even multipole on the LSTEP=2 grid, and their three-peak comb is 298.00 -- the paper's 298.0.
+  `sec:intro`'s stored quartet through that same three-peak fit is 298.45 -- the paper's 298.4.
+  the parabolic locator moves the namesake's fourth peak by 3.21 in ell, against an agreement claimed at 0.13%.
+    OK    ⛭⛭⛭ ** THE PORT IS FAITHFUL, WHICH IS THE ONLY REASON THE ROWS BELOW MEAN ANYTHING: the matched locator run on the SKY reproduces `sec:intro`'s own quartet. **  *Its four-peak comb is 298.362 against the 298.45 `sec:intro`'s stored quartet gives through the same fit, and its peaks are 220.98 / 533.79 / 814.79 / 1121.85 against the stored 220.4 / 537.7 / 817.3 / 1123.9.  A port that could not find the sky would not be evidence about an arm.*   (sky comb 1-4 = 298.362 +- 0.573 over 7 windows; sec:intro's three-peak 298.45)
+  l.813's comb is in the state: arm of record, matched locator (299.1)
+    OK    ⛭⛭⛭ ** l.813's COMB IS ONE OF THE TWO STATES THIS QUANTITY HAS, AND THE PROVENANCE ARGUMENT IS STATED FOR EACH. **  *In the namesake state the paper's 298.0 IS NOT the procedure the sentence names: by that procedure the namesake gives 300.589 and the arm of record 299.057, and 298.0 is the namesake's RAW-GRID three-peak comb on maxima quantised to even `ell` by LSTEP=2 -- the pair (298.0, 298.4) being internally consistent in its FIT, both three-peak, while the arm's half is not parabolically located at all.  In the landed state the paper prints the matched locator's own 299.1 against the sky's 298.4 and the provenance finding is resolved.*   (state arm of record, matched locator (299.1); matched: namesake 300.589, arm of record 299.057; raw-grid namesake 298.00 on peaks [222, 538, 818, 1134])
+
+  against the sky, by the named procedure: namesake +2.227 in ell (1 part in 134); arm of record +0.695 (1 part in 429)
+    OK    ⛭⛭⛭ ** AND BY THE PROCEDURE THE SENTENCE NAMES THE AGREEMENT IS BETTER ON THE ARM OF RECORD THAN ON THE NAMESAKE -- 1 part in 429 against 1 part in 134 -- though it was never 1 part in six hundred on either. **  ⇒ *So l.2067's claim survives in DIRECTION and not in SIZE, and it survives better on this arm, which is the opposite of residue*   (arm of record 1 part in 429, namesake 1 part in 134)
+    OK    ⛭⛭⛭ ** AND HERE IS THE PARTING `cc66.81` FOUND, IN ITS CLEANEST FORM: THE GEOMETRIC RULER IS BIT-IDENTICAL ON THE TWO ARMS WHILE THE FITTED COMB MOVES. **  *At the distances' point the banked `l_A`, `D_M` and `r_s` are the SAME NUMBERS in both files -- the background cannot see the arm -- and the comb the spectrum actually has goes 300.589 to 299.057.  `cc66.81` measured the same parting at the refit point as a difference BETWEEN arms; here the geometric value is literally the same file value and the spectrum's own comb still moves by 1.5 in `ell`.*  ⇒ *** The fitted comb sits 1.265 per cent below the reported ruler on the arm of record and 0.759 per cent below it on the namesake: the ruler is not the comb, and l.945's 'the comb at 298.0 against a reported scale of 302.9' is the paper already printing the parting. ***   (geometric l_A identical at 302.8891; fitted comb 300.589 -> 299.057; fitted/geometric -0.759% -> -1.265%)
+
+================================================================================================================
+  PART 5 -- ** WHAT IS NOT FITTED, ITEMISED **
+================================================================================================================
+
+  ** z_onset ** -- not solved.  The handover is at the crossing, `ZSTART=3e7`, and `LATARG` is
+     never reached: `brentq` does not run.  *The corpus calls z_onset "the one fitted number";
+     this configuration does not spend it.*
+  ** l_A **      -- not pinned.  It is REPORTED as pi D_M / r_s and comes out 302.9; the comb is
+     fitted to the spectrum's own peaks and comes out 298.0.  Two independent quantities, 1.6%
+     apart.
+  ** A_s **      -- one amplitude, fitted in closed form by the likelihood, as for every arm and
+     the control alike.  *That is the only fitted number anywhere in these rows.*
+  ** H0, Om **   -- (68.60, 0.2973) from DESI DR2 BAO on the leaf ruler with theta_*, r6760+cc66.2.
+     ⚠ *These ARE fitted -- to BAO and the acoustic angle, not to TT.  So the cosmology is not
+     parameter-free; what is out-of-sample is the SPECTRUM against the data that set it.*
+
+================================================================================================================
+  PART 6 -- ** AND WHAT IS STILL WRONG **
+================================================================================================================
+
+  ⛔ ** 4.19 PER BIN AGAINST THE CONTROL'S 2.10. **  A factor
+  2.0.  *That is the result, not a caveat on it: this construction is still
+  disfavoured against flat LCDM on this data.*  What changed is the SIZE: the coded arm is a factor
+  56 and the same crossing arm at H0 = 73 is a factor 17.
+
+  ⌗ ** THE PHASE IS THE LARGEST SURVIVING POSITION ERROR: ** -0.2349 pi against the
+  sky's -0.2405 pi, 2.3%, where the comb is 0.15%.
+  *`sec:refit-bound`'s standing finding is that the spacing is right and the acoustic phase is the
+  disagreement; on this configuration that is still true, and it is now the ONLY thing left in the
+  positions.*
+    ⛭ **and on the ARM OF RECORD, by this same raw-grid method, it is -0.2379 pi,
+    1.1% from the sky's** -- which is NEARER, not further.  *But
+    that figure is the LSTEP=2 trap: the arm of record's first three raw maxima land on the control's
+    own cells, so its raw phase comes out bit-identical to the control's.  By the matched locator of
+    PART 4B, which is the procedure l.813's sentence names, the pair is -0.2488 pi
+    against the sky's -0.2448 pi on the four-peak fit, and -0.2331
+    against -0.2378 on the three-peak one.*  ⇒ ** l.2147's intercept pair,
+    -0.2349 against the sky's -0.2405, is the NAMESAKE's raw-grid
+    three-peak fit; the pair that goes with a landed comb of 299.1 is the matched
+    four-peak one. **
+    ⌗ *Those two are INTERPOLATED and not typed, deliberately: `marker_transposition_baseline.tsv`
+    adjudicates l.2147's sky intercept as "the own group prints it at run time", and hard-coding the
+    figure here makes that adjudication STALE -- which is what it did at `r7653+cc66.110` and what the
+    CI `fast` tier then reddened on.  ** And this sentence may not spell the figure either: naming it in
+    the comment that explains the interpolation carries it just as surely as typing it in the gate, and
+    that is the second half of the same red. **  The marker gate reads the SOURCE.*
+
+  ⌗ ** AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT LMAXL = 1300. **  The corpus's own
+  185-bin full-range lensed comparison needs ell ~ 2000 and is not run here.  *A number scored on
+  one configuration may not be quoted against the other.*
+
+
+  the paper's rounding, against this file's own figures:
+      peaks      arm (220.0, 536.3, 811.6, 1125.1) paper (220.0, 536.3, 811.6, 1125.1);  sky (221.0, 533.8, 814.8, 1121.9) paper (221.0, 533.8, 814.8, 1121.9)
+      comb       arm 299.1 paper 299.1/299.1;  sky 298.4 paper 298.4/298.4
+      phi/pi     arm -0.2488 paper -0.2488;  sky -0.2448 paper -0.2448
+    OK    ⛭⛭⛭ ** Ⓝ① EVERY ONE OF THIS RECEIPT'S SEVEN PAPER READS MATCHED, NONE IS DECLARED WITHDRAWN, AND EACH NEW READ AGREES WITH WHAT THIS FILE COMPUTES AT THE PAPER'S OWN PRECISION. **  *`r7661` found three reads in the licensed receipt blind behind a green gate for two revisions, because a missing read short-circuits the conjunction that consumes it; 69's `r7665` names this receipt's own height gate as the same shape one receipt over.  Here the registry covers all seven: the three reads this file already had, and four it did not -- the peak quartets, the phase intercept, and the comb sites at l.884 and l.2065 -- whose figures this receipt ATTRIBUTED to the paper while carrying them as typed tuples.  ⇒ The tolerance stays, because 69 may withdraw a sentence, but it now costs a DECLARATION and the undeclared case reddens; and the second arm says a withdrawn sentence coming back makes its own declaration false rather than letting the list rot.*   (reads 7, matched 7, declared withdrawn 0, blind [])
+================================================================================================================
+  ✓ ALL CHECKS PASSED
+================================================================================================================

@@ -1,0 +1,8 @@
+P15_the_band_rms_ratio_does_ rc=0 wall=1s lines=10
+P15_the_skys_own_fourth_peak rc=0 wall=21s lines=283
+__RUN_DONE__
+P15_at_its_own_preferred_H0 rc=0 lines=247  (launched separately, not timed)
+⌗ All three receipts run on the tree named in TREE.txt, one process at a time, the scoped suite's own
+  child environment (OMP/OPENBLAS/MKL/NUMEXPR/VECLIB _NUM_THREADS=1, PYTHONUNBUFFERED=1), NODE
+  UNSET.  Every one returned 0.  Output kept as .txt because the repository's .gitignore excludes
+  *.out.

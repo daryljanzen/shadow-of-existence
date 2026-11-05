@@ -1,0 +1,10 @@
+P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting -- PASS
+  read from   : the ARM OF RECORD, folded and banked in the repository at spectra/r7041_band_rms_leafrec1.npz (r7679+70)
+  on the arm  : YES, the arm of record
+  worst step  : 0.011% against the 0.6% floor -- a factor of 55 inside it   (namesake 0.008%)
+  ratios      : fixed = 1.0597-1.0598; sweepown = 1.0611-1.0613
+                namesake: fixed = 1.0586-1.0587; sweepown = 1.0659-1.0660   <- what l.1857 prints
+  converged   : 2 of 12 readings -- fixed/KFAC, sweepown/NLOSW   (namesake 1: sweepown/NLOSW)
+                6 read `not turned over`, 4 read `two points only`   (namesake 7 / 4)
+  ⇒ l.1857-1866 ROUTE: fixed 1.0586 -> 1.0597; sweepown 1.0659-1.0660 -> 1.0611-1.0613; worst step 0.008% -> 0.011%; and "exactly one converged, 1/7/4" becomes "2 / 6 / 4" -- a CLAIM change
+  the axes    : 5 moved it on the arm, 6 on the control -- NK inert on the arm by construction (unchanged)
