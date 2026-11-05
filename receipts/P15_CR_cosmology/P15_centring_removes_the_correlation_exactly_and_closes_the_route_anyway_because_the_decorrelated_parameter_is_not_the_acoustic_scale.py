@@ -69,7 +69,18 @@ import chi2_of_spectrum as CS                                              # noq
 BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
 GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
-for _p in (GO, LEV):
+# ⛭⛭⛭ `r7679+cc66.1` -- ** REPOINTED ONTO THE ARM OF RECORD PER ARM, WHICH IS THE ONLY WAY THESE
+#   TWO BANKS CAN BE REPOINTED AT ALL. **  `r7679` (69) item 2.
+#   ⛔ *Both `_leafrec1` directories carry the CR legs and NOTHING ELSE -- nine files against the
+#     namesake's eighteen in `grid_oneclock`, four against seven in the lever -- because `LEAFREC`
+#     does not reach the control (`r7669+70.1`).  So `GO + '_leafrec1'` raises `FileNotFoundError`
+#     on `lcdm_base.npz`, the shape `r7645+cc66.68` paid for.*
+#   ⇒ The arm suffix is named ONCE and the directory resolves PER ARM; a control leg resolves to the
+#     namesake directory, where it IS the arm of record's control.  The shape is GATED below.
+_GARM = '_leafrec1'                     # the arm of record's suffix on these grid DIRECTORIES
+_gd = lambda d, arm: (d + _GARM) if arm.startswith('cr') else d          # noqa: E731
+_NSK = {'GO': GO, 'LEV': LEV}           # kept: a PUBLISHED namesake digit is pinned on what it read
+for _p in (GO, LEV, _gd(GO, 'cr'), _gd(LEV, 'cr')):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
@@ -77,12 +88,34 @@ for _p in (GO, LEV):
 LMIN, LMAX, NPK, HALFWIN = 150.0, 1600.0, 5, 40.0
 NB, NE = 5, 3
 LC, FACB = CS.bin_center_and_fac()
-SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')),
+SPECTRA = (('cr_base', os.path.join(_gd(GO, 'cr'), 'cr_base.npz')),
            ('lcdm_base', os.path.join(GO, 'lcdm_base.npz')),
-           ('cr_nodrive', os.path.join(LEV, 'cr_nodrive.npz')),
+           ('cr_nodrive', os.path.join(_gd(LEV, 'cr'), 'cr_nodrive.npz')),
            ('lcdm_nodrive', os.path.join(LEV, 'lcdm_nodrive.npz')),
-           ('cr_rb0.5', os.path.join(LEV, 'cr_rb0.5.npz')),
-           ('cr_rb1.5', os.path.join(LEV, 'cr_rb1.5.npz')))
+           ('cr_rb0.5', os.path.join(_gd(LEV, 'cr'), 'cr_rb0.5.npz')),
+           ('cr_rb1.5', os.path.join(_gd(LEV, 'cr'), 'cr_rb1.5.npz')))
+#: ⛭⛭ THE NAMESAKE PATH OF EVERY LEG, kept beside the live one: a PUBLISHED digit is pinned on what
+#:   it was measured on, which is 69's own ruling on `PUB156` at `r7673+cc66.13`.
+SPECTRA_NSK = (('cr_base', os.path.join(GO, 'cr_base.npz')),
+               ('lcdm_base', os.path.join(GO, 'lcdm_base.npz')),
+               ('cr_nodrive', os.path.join(LEV, 'cr_nodrive.npz')),
+               ('lcdm_nodrive', os.path.join(LEV, 'lcdm_nodrive.npz')),
+               ('cr_rb0.5', os.path.join(LEV, 'cr_rb0.5.npz')),
+               ('cr_rb1.5', os.path.join(LEV, 'cr_rb1.5.npz')))
+_ctl_in_aor = [f for d in (_gd(GO, 'cr'), _gd(LEV, 'cr'))
+               for f in os.listdir(d) if f.startswith('lcdm')]
+_cr_moved = [n for (n, p), (_n2, q) in zip(SPECTRA, SPECTRA_NSK)
+             if n.startswith('cr')
+             and not np.array_equal(np.asarray(np.load(p, allow_pickle=True)['Dl'], float),
+                                    np.asarray(np.load(q, allow_pickle=True)['Dl'], float))]
+print(f"    arm-of-record directories hold {len(_ctl_in_aor)} control file(s); CR legs whose "
+      f"spectrum MOVED on the repoint: {len(_cr_moved)} of 4 {_cr_moved}")
+check("\u26ed\u26ed `r7679` ** THE REPOINT IS PER ARM AND THE SHAPE IS GATED. **  Both `_leafrec1` "
+      "directories carry the CR legs and NOT ONE control file, because `LEAFREC` does not reach the "
+      "control -- so a wholesale `GO + '_leafrec1'` would raise `FileNotFoundError` on "
+      "`lcdm_base.npz`, the shape `r7645+cc66.68` paid for.  All four CR spectra MOVED.  \u26d4 "
+      "*Point `_GARM` back at the namesake and this fails*",
+      _GARM == '_leafrec1' and not _ctl_in_aor and len(_cr_moved) == 4)
 DRIVING_OFF = ('cr_nodrive', 'lcdm_nodrive')
 BASE = ('cr_base', 'lcdm_base')
 # ⛭ r7217: `cr_rb0.5 is a RECOVERED spectrum and belongs in the first test group -- a driving-on

@@ -93,7 +93,19 @@ import chi2_of_spectrum as CS                                              # noq
 BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
 GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
-for _p in (GO, LEV):
+# ⛭⛭⛭ `r7679+cc66.1` -- ** REPOINTED ONTO THE ARM OF RECORD PER ARM, WHICH IS THE ONLY WAY THESE
+#   TWO BANKS CAN BE REPOINTED AT ALL. **  `r7679` (69) item 2: this receipt is one of the four that
+#   joined PO-87's list by `r7675`'s one-sentence-away read, and 69 has ordered the repoint.
+#   ⛔ *Both `_leafrec1` directories carry the CR legs and NOTHING ELSE -- nine files against the
+#     namesake's eighteen in `grid_oneclock`, four against seven in the lever -- because `LEAFREC`
+#     does not reach the control (`r7669+70.1`).  So `GO = GO + '_leafrec1'` raises
+#     `FileNotFoundError` on `lcdm_base.npz`, which is exactly the shape `r7645+cc66.68` paid for.*
+#   ⇒ The arm suffix is named ONCE and the directory is resolved PER ARM.  A control leg resolves to
+#     the namesake directory, where it IS the arm of record's control.  Gate Ⓓ states the shape
+#     and fails if `_GARM` is pointed back at the namesake.
+_GARM = '_leafrec1'                     # the arm of record's suffix on these grid DIRECTORIES
+_gd = lambda d, arm: (d + _GARM) if arm.startswith('cr') else d          # noqa: E731
+for _p in (GO, LEV, _gd(GO, 'cr'), _gd(LEV, 'cr')):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
@@ -101,13 +113,34 @@ for _p in (GO, LEV):
 LMIN, LMAX, NPK, HALFWIN = 150.0, 1600.0, 5, 40.0
 NB, NE = 5, 3            # baseline degree, shared-envelope degree
 LC, FACB = CS.bin_center_and_fac()
-SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')),
+SPECTRA = (('cr_base', os.path.join(_gd(GO, 'cr'), 'cr_base.npz')),
            ('lcdm_base', os.path.join(GO, 'lcdm_base.npz')),
-           ('cr_nodrive', os.path.join(LEV, 'cr_nodrive.npz')),
+           ('cr_nodrive', os.path.join(_gd(LEV, 'cr'), 'cr_nodrive.npz')),
            ('lcdm_nodrive', os.path.join(LEV, 'lcdm_nodrive.npz')),
-           ('cr_rb0.5', os.path.join(LEV, 'cr_rb0.5.npz')),
-           ('cr_rb1.5', os.path.join(LEV, 'cr_rb1.5.npz')))
+           ('cr_rb0.5', os.path.join(_gd(LEV, 'cr'), 'cr_rb0.5.npz')),
+           ('cr_rb1.5', os.path.join(_gd(LEV, 'cr'), 'cr_rb1.5.npz')))
 DRIVING_OFF = ('cr_nodrive', 'lcdm_nodrive')
+#: ⛭⛭ AND THE SHAPE IS GATED RATHER THAN TRUSTED, because the whole repoint turns on it.
+_nsk_dirs = {'cr': (GO, LEV), 'aor': (_gd(GO, 'cr'), _gd(LEV, 'cr'))}
+_ctl_absent = [f for d in _nsk_dirs['aor']
+               for f in os.listdir(d) if f.startswith('lcdm')]
+_cr_moved = []
+for _nm, _pth in SPECTRA:
+    if not _nm.startswith('cr'):
+        continue
+    _a = np.load(os.path.join(os.path.dirname(_pth).replace(_GARM, ''),
+                              os.path.basename(_pth)), allow_pickle=True)
+    _b = np.load(_pth, allow_pickle=True)
+    if not np.array_equal(np.asarray(_a['Dl'], float), np.asarray(_b['Dl'], float)):
+        _cr_moved.append(_nm)
+print(f"    the arm-of-record directories hold {len(_ctl_absent)} control file(s); "
+      f"CR legs whose spectrum MOVED on the repoint: {len(_cr_moved)} of 4 {_cr_moved}")
+check("Ⓓ ⛭⛭ ** THE REPOINT IS PER ARM AND THE SHAPE IS GATED. **  Both `_leafrec1` directories "
+      "carry the CR legs and NOT ONE control file, because `LEAFREC` does not reach the control -- "
+      "so a wholesale `GO + '_leafrec1'` would raise `FileNotFoundError` on `lcdm_base.npz`, the "
+      "shape `r7645+cc66.68` paid for.  All four CR spectra MOVED.  ⛔ *Point `_GARM` back at the "
+      "namesake and this fails*",
+      _GARM == '_leafrec1' and not _ctl_absent and len(_cr_moved) == 4)
 
 
 def binned(path):
