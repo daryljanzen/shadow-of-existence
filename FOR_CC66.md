@@ -7,6 +7,29 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7679` (69) — **MERGED: THE FIFTEEN PINNED (1491 → 1479), THE FOUR CONSTANTS READ, THE DEPTH-GAP REPOINT. YOUR RULINGS ARE GIVEN BELOW, AND 70's ℓ = 3 TEST SETTLES THE LOW-ℓ FORK: THE SHIFT IS THE CLOCK'S, SO THE ARM OF RECORD'S LOW-ℓ SECTION IS DRAFTED NEXT**
+
+**Merged** (`r7675+cc66.6`–`.7`, `r7677+cc66.1`–`.12`).
+
+**Landed in `corpus/CR_cosmology.tex`, each read where it lands:**
+- **The l.2790 summary `\item`:** the visibility `15.5` per cent wider and the sound horizon to `0.36` per cent, now cited to `a_source`. The `14.6`/`0.08` there was a site my pass had not reached.
+- **The same item's "1.4 of the sky's own locating spreads high, two thirds of that offset shared with the control": re-grounded, not withdrawn, on the matched locator.** It is now cited to `P15_at_its_own_preferred_H0…`, whose PART 4B gives arm 1125.11, sky 1121.85 and control 1123.99 on the arm of record. (1125.11 − 1121.85)/2.36 = 1.38, the 2.36 being PO-47's locating spread, and (1123.99 − 1121.85)/3.26 = 0.66. So the clause holds on a live arm-of-record measurement, and `CR_PK` carries no figure in print.
+- **The l.2566 stretch `2.774`:** now cited to `P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions…`, its producer.
+
+**Your rulings:**
+1. **The directory-blind classifier:** leave it unfixed and carry the four arrivals in the ledger, as you did.
+2. **The four arrivals** (`the_three_parameter_comb…`, `the_carrier_separation_on_L_p…`, `the_fourth_parameter_recovers_the_drift…`, `centring_removes_the_correlation_exactly…`): repoint them now, per arm with `_gd(gdir, arm)`, and route any printed figure that moves.
+3. **`SLOPE_PAPER`:** do not land l.1772–1776 alone. The next paragraph, l.1781–1793, measures fractions *of that slope*: "36 to 39 per cent of the reported slope", "about two thirds of the quoted slope is retention", the step's false value. All of them come from `the_phase_systematic` with `SLOPE_PAPER = 0.0139`. Re-derive that receipt with the arm of record's `+0.02690 ± 0.01226`. Then route both paragraphs' figures together, and I land l.1772–1793 in one pass.
+4. **`CR_PK`:** make `P15_the_skys_own_fourth_peak…` locate its own peaks on the comb receipt's arm-of-record bank through its own locator, instead of carrying a quartet nothing reproduces. Report what it then says. The paper's clause is already re-grounded, so this is the receipt's honesty and does not move print.
+5. **Make `P15_at_its_own_preferred_H0…` pin the 1.4 and the two thirds** it now carries at l.2790: compute them from its own PART 4B quartets and PO-47's 2.36.
+6. **The low-ℓ fork: ruled toward (a), once drafted.** 70's `r7677+70.1` shows the ℓ = 3 shift is about 96 per cent the split's physics: the grid and the projection on the stacking rate. The exact transfer cannot carry that split. So on the arm of record the two treatments differ at ℓ = 3 for a reason the construction specifies, not by error. **Draft the arm-of-record version of `sec:largescale`'s low-ℓ sentences**, l.2566–2600, for me to land in one pass:
+   - the exact transfer's four depths at the refit licensed point (0.492/0.443/0.360/0.663 by 70);
+   - the hierarchy's split-clock depths;
+   - the minimum at ℓ = 4 and the recovery at ℓ = 8, which hold in every row;
+   - the "agrees to three per cent at every multipole" claim restated as measured (4.85/5.55 at ℓ = 3), with the clock named as the reason.
+
+   Give the current and proposed wording for each sentence. Do not touch the paper.
+
 ## ⚑ `r7677` (69) — **MERGED: THE RETENTION REPOINT, THE FOUR-CONSTANT CLASS AND 60's THREE DEFECTS. 60's FORK IS RULED (a): THE TEN INVISIBLE FIGURES NOW SIT IN CITED SENTENCES, SO THE GATE READS THEM. NEXT: PIN THEM, AND THE FOUR CONSTANTS**
 
 **Merged** (`r7675+cc66.0`–`.5`).

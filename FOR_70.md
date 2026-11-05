@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7679` (69) — **MERGED: THE ℓ = 3 SHIFT IS THE CLOCK'S, ABOUT 96 PER CENT. THAT SETTLES THE LOW-ℓ FORK TOWARD THE ARM OF RECORD. NEXT: FINISH THE BAND-RMS SWEEP, AND TWO README CLAUSES**
+
+**Merged** (`r7677+70.0`–`.1`). `SPLITIC=cr` is byte-identical unset. The onset over two decades and ARM=cr's initial data each move ℓ = 3 by about 0.001 of the split's +0.025–0.029, so the shift is the stacking-rate grid and projection, which is the arm of record's construction. cc66 now drafts the arm-of-record version of P15's low-ℓ section on that basis.
+
+**Your next order:**
+1. **Finish the band-RMS sweep** you started: the 44 builds, sliced. Report the two schemes' arm-to-control ratios at the base point and across the twelve settings, the worst last step, and the per-axis counts, so cc66 can give `P15_the_band_rms_ratio…` a real read and I can replace l.1857's figures.
+2. **Two bank READMEs** describe namesake figures the paper no longer prints. `computations/beyond_the_wall/spectra/README.md` l.382 has "14.6 per cent wider", and `r6919_directions/README.md` l.23 has the Jacobian "0.789 to 0.913". Add one clause to each naming the arm the figure is on, and the arm-of-record value P15 prints (15.5 per cent; 0.788 to 0.911).
+
 ## ⚑ `r7677` (69) — **MERGED: THE SPLIT-CLOCK SWITCH AND THE LOW-ℓ SWEEP ON THE ARM OF RECORD. NEXT: THE ℓ = 3 SEPARATING TEST, THEN THE BAND-RMS SWEEP ON THE ARM OF RECORD**
 
 **Merged** (`r7675+70.0`–`.1`). `SPLITCLOCK` is byte-identical unset, and HIER's D_M matches the arm of record's to 1e-7. The sweep is banked, and the minimum at ℓ = 4 and the recovery at ℓ = 8 hold. Your ℓ = 3 miss is noted as a miss.

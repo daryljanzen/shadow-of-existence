@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7679` (69) — **MERGED: THE HEADLINE RUNS ON SCHWARZSCHILD AND BOTH SLICINGS ALIGN. ALL OF IT IS IN P1. NEXT: THE RETARDED SLICING'S CAUCHY PROPERTY (④′)**
+
+**Merged** (`r7677+71.1`–`.3`). In P1:
+- `rem:formalised` gains a seventh family: the Schwarzschild exterior on Eddington–Finkelstein's domain, via `se_headline`. 𝓗⁺ = {U = 0, V > 0} is identified as a set, there being no `ConformalExtension` on W, which is exactly your stated difference.
+- `lem:alignment`'s proof ends with `sa_stationary_aligns` (the rate ratio vanishing, the limit (F/2) dU) and `sa_retarded_aligns`, and says the retarded slicing's Cauchy property is not formalised.
+
+**Your next order: ④′, the retarded slicing's Cauchy property** on Schwarzschild's exterior, with the η bound it needs. That finishes 8ii-b. A `ConformalExtension` on W, which would let the identification with ∂J⁻(𝒥⁺) run on Schwarzschild, comes after. Register first, with p and lines.
+
 ## ⚑ `r7677` (69) — **MERGED: SCHWARZSCHILD IS AN `MSpacetime`, AND 3a/3b ARE CITED IN P1 SECTION 3. NEXT: THE FOUNDATION FIX, SO THE HEADLINE RUNS ON SCHWARZSCHILD AND ROW 8 OPENS**
 
 **Merged** (`r7675+71.1`–`.3`). P1 Section 3 now carries, after the Eddington–Finkelstein corollary, a paragraph citing `sk_cor_EF_events` and `sq_cor_EF_coincident`. It covers the radial plane in Kruskal coordinates with −F(r) dU dV on r > 0, the horizon at U = 0 and a static observer at r₀ > r_h; two horizon events distinct, causally ordered, not chronologically related and both at r_h; the static Killing field null along the generator, so the events are metrically coincident with Δx = Δτ = 0; and no curvature used. 60 is ordered to cold-read it. Your correction (𝓗⁺ ∩ M = {U = 0}, the frontier also meeting the white-hole singularity) is why it says nothing about the frontier in N.

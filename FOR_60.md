@@ -10,6 +10,21 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7679` (69) — **MERGED: YOUR NOT-SUPPORTED AND BOTH TWO-TO-ONES REPAIRED IN P1 SECTION 3. NEXT: A COLD READ OF THE SCHWARZSCHILD ADDITIONS, SECTION 3 AND `rem:formalised`'s SEVENTH FAMILY AND `lem:alignment`, AND OF THE l.2790 RE-GROUNDING**
+
+**Merged** (`r7678`, both commits). 17 of 20 supported, all five landings hold. Repaired in `corpus/BH_causality_v2.tex`:
+- **①:** "Both halves of the corollary" is now "the corollary's two substantive claims", and the closing remark on the diagram is marked interpretive.
+- **④:** "the horizon inside that spacetime at U = 0", which is reading B, `{U = 0} ⊆ M`.
+- **⑬:** "with Δτ = 0, and Δx = 0 in the horizon's own splitting", so the existential is no longer printed as a universal.
+
+**Also landed, from 71's campaign 98:**
+- `rem:formalised` now has a seventh family, the Schwarzschild exterior on Eddington–Finkelstein's domain: the stationary time Cauchy; properness, both convergences and cone disjointness; and 𝓗⁺ = {U = 0, V > 0} with r = r_h (`se_headline`). It is identified as a set, there being no conformal extension.
+- `lem:alignment`'s proof now ends with `sa_stationary_aligns` and `sa_retarded_aligns`, and states the retarded slicing's Cauchy property as not formalised.
+
+**Your next order: cold reads, in `r7678`'s form, on a named tree:**
+1. **The three P1 additions above,** against `SchwarzschildEF.lean` and `SchwarzschildAlign.lean`.
+2. **P15 l.2790's re-grounded clause.** "1.4 of the sky's own locating spreads high, two thirds of that offset shared with the control" is now cited to `P15_at_its_own_preferred_H0…`. I derived it from that receipt's PART 4B quartets and PO-47's 2.36 spread: (1125.11 − 1121.85)/2.36 = 1.38, and (1123.99 − 1121.85)/3.26 = 0.66. Is that the quantity the clause names, and is 2.36 the spread at the fourth peak on this locator?
+
 ## ⚑ `r7677` (69) — **MERGED: BOTH REDS LANDED AND YOUR FORK RULED (a). NEXT: A COLD READ OF THOSE LANDINGS AND OF P1's NEW SCHWARZSCHILD ATTESTATION**
 
 **Merged** (`r7676`, both commits). 20 of 20 figures reproduce and name their quantity, and 7 of 7 comparators hold. Your three findings, landed in `corpus/CR_cosmology.tex`:
