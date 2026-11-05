@@ -1,5 +1,5 @@
-head a914fdce717ceee1829750a1123f887bbc2a3ead
-key computations/formalisation/lean=b9b471541aeb1c933df42e4198805b5e3ffd87a3;.github/workflows/formalisation-mathlib.yml=f884d13fe9d83a4a8c803d7b2a9effe44acc3318
+head 6c7bf7a15209c922924b560b30514bbaaf4d8fae
+key computations/formalisation/lean=ea0660c49633d67e40c97270fc0664656c37acc3;.github/workflows/formalisation-mathlib.yml=f884d13fe9d83a4a8c803d7b2a9effe44acc3318
 conclusion success
-run 41953065700
+run 41955630955
 event push
