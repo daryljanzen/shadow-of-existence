@@ -1,0 +1,144 @@
+{
+ "objectA": {
+  "a": "SUPPORTED",
+  "b": "SUPPORTED",
+  "c": "SUPPORTED",
+  "d_sentence": "SUPPORTED",
+  "d_clause": "SUPPORTED",
+  "e": "SUPPORTED",
+  "figures": [
+   {
+    "figure": "1.061",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "0.022",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "17.307",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "17.369",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "38.04",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "43.96",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "13.1",
+    "owner": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "sentence": true,
+    "nearest": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "clause": true
+   },
+   {
+    "figure": "4.43",
+    "owner": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "sentence": true,
+    "nearest": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "clause": true
+   },
+   {
+    "figure": "5.14",
+    "owner": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "sentence": true,
+    "nearest": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "clause": true
+   },
+   {
+    "figure": "13.73",
+    "owner": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "sentence": true,
+    "nearest": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "clause": true
+   }
+  ],
+  "schemes": [
+   "fixed",
+   "sweepown"
+  ],
+  "base": [
+   "fixed",
+   "1.0587",
+   "sweepown",
+   "1.0659"
+  ]
+ },
+ "objectB": {
+  "verdicts": {
+   "①": "TWO-TO-ONE",
+   "②": "SUPPORTED",
+   "③": "SUPPORTED",
+   "④": "TWO-TO-ONE",
+   "⑤": "SUPPORTED",
+   "⑥": "SUPPORTED",
+   "⑦": "SUPPORTED",
+   "⑧": "SUPPORTED",
+   "⑨": "SUPPORTED",
+   "⑩": "SUPPORTED",
+   "⑪": "SUPPORTED",
+   "⑫": "SUPPORTED",
+   "⑬": "NOT SUPPORTED",
+   "⑭": "SUPPORTED",
+   "⑮": "SUPPORTED"
+  },
+  "evidence": {
+   "①": "the corollary carries a setup, a substantive paragraph with a CAUSAL half (present) and a COINCIDENCE half (present), and a third \"Thus\" paragraph about the EF DIAGRAM (present).  READING A -- the two halves of the substantive paragraph: SUPPORTED, both are checked.  READING B -- the two displayed paragraphs: NOT SUPPORTED, because NO theorem in either Lean file mentions a diagram or a vertical extent (none do), so the third paragraph has no machine-checked counterpart at all",
+   "②": "the point type is `ℝ × ℝ` and no angular coordinate appears in either statement, so the object IS the radial plane; the files are Kruskal-named and the coordinates are `(U, V)`",
+   "③": "the formula's conformal factor reads True; the `dU dV` symmetrisation `(v₁w₂ + v₂w₁)/2` reads True; `0 < r` on the chart domain reads True.  ⇒ `sq_metric_formula` gives `g = -(32M³/r · e^{-r/2M}) · (v₁w₂ + v₂w₁)/2`, which IS `-F(r) dU dV` symmetrised, and `sk_rK_spec` carries `0 < r` where the chart is defined",
+   "④": "⛭ THE ORDER'S NAMED QUESTION.  `sk_observer` proves BOTH: `H (range O) = {U = 0} ∪ {U < 0, UV = 1}` and `H (range O) ∩ M = {U = 0}`, and separately `{U = 0} ⊆ M`.  READING A -- \"the horizon\" = 𝓗⁺ = ∂J⁻(O), the frontier taken in `N`: NOT SUPPORTED, it is STRICTLY LARGER than `{U = 0}`, the extra branch being the white-hole singularity outside `M`.  READING B -- \"the horizon\" = the horizon inside the spacetime: SUPPORTED exactly, and `{U = 0} ⊆ M` is itself proved (True)",
+   "⑤": "`sk_static_observer` is the theorem that supplies the observer, and `sk_cor_EF_events` takes the observer parameter ABSTRACTLY as `0 < a`; `a = √h(r₀)` is positive exactly when `r₀ > 2M`, which is where the paragraph's `r₀ > r_h` enters (True)",
+   "⑥": "`distinct` is a TOP-LEVEL conjunct of `sk_cor_EF_events` (binder read: `TOP`), so it holds of the two events themselves and not inside a quantifier",
+   "⑦": "`causally ordered` is a TOP-LEVEL conjunct of `sk_cor_EF_events` (binder read: `TOP`), so it holds of the two events themselves and not inside a quantifier",
+   "⑧": "`not chronologically related` is a TOP-LEVEL conjunct of `sk_cor_EF_events` (binder read: `TOP`), so it holds of the two events themselves and not inside a quantifier",
+   "⑨": "both `r = 2M` clauses are TOP-LEVEL conjuncts (`TOP`, `TOP`), one per event, and `2M` is `r_h` by `sk_rK_eq_two_iff`",
+   "⑩": "the path the paragraph prints resolves to a file on this tree and `sk_cor_EF_events` is in it (413 characters of statement)",
+   "⑪": "`sq_X = (1/4M) • kg_w_L` with `kg_w_L x = (-U, V)`, which IS `(V∂_V - U∂_U)/4M`; `sq_lieDeriv` makes it Killing; `sq_normSq` gives `g(χ,χ) = F·UV/16M²`; and `sq_null_horizon` gives `g(χ,χ) = 0` from `U = 0` alone",
+   "⑫": "`kg_Related` holds BOTH ways as TOP-LEVEL conjuncts (`TOP`) -- a local isometry carrying one event to the other -- and `kg_deltaTau = 0` is TOP-LEVEL too (`TOP`), so the coincidence claim itself is unqualified in the Lean",
+   "⑬": "⛔ `Δτ = 0` holds TWICE -- as `kg_deltaTau … = 0` at TOP level (`TOP`) AND inside the existential -- but `Δx = 0` holds ONLY inside it (`σ.Δx = 0` binder: `∃`; `σ.Δτ`: `∃`).  The conjunct is `∃ σ : kw_AdaptedSplitting …, σ.n = kw_n ∧ … ∧ σ.Δx = 0`, so it is ONE splitting -- the horizon's own -- not every splitting.  The paragraph writes `Δx = Δτ = 0` with no qualifier, and `r7675`'s own channel text for `lem:killing` DID carry it (\"in the horizon's own splitting\")",
+   "⑭": "the second address resolves and `sq_cor_EF_coincident` is in that file (1244 characters of statement)",
+   "⑮": "neither file declares a curvature theorem (0 found): `F` is the metric by definition, as in the campaign it copies, and the two headline statements reach their conclusions from the metric formula, the Lie derivative and the integral curve alone"
+  }
+ },
+ "arms": {
+  "rests_on_N": [
+   "④",
+   "①"
+  ],
+  "route_kw": true,
+  "route_ac": false,
+  "omissions": [
+   "the events lie on `∂J⁻(O)` -- `H (range O)` membership, both events",
+   "the events lie IN the spacetime -- `M` membership, both events",
+   "the generator IS `χ`'s own integral curve: `γ(4M log V) = (0, V)`",
+   "`kg_Related` holds BOTH ways, so the isometry is two-sided",
+   "`∫ dt(γ′) = Δt` -- the coordinate increment the metric annihilates",
+   "the null condition holds at EVERY `t` of the segment, not only at the two events"
+  ]
+ }
+}
