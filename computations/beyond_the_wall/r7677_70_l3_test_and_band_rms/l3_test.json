@@ -1,0 +1,165 @@
+{
+ "DECOUPLED_adjudicated_KLO_0_1_NS3_60000__split_ZS1e6": {
+  "wall_s": 550.6,
+  "depths": [
+   0.4826,
+   0.468,
+   0.3604,
+   0.6469,
+   0.9046,
+   0.9808,
+   0.9982
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "DECOUPLED_adjudicated_KLO_0_1_NS3_60000__split_SPLITIC_cr": {
+  "wall_s": 550.9,
+  "depths": [
+   0.4831,
+   0.467,
+   0.36,
+   0.6472,
+   0.9047,
+   0.9809,
+   0.9981
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "DECOUPLED_adjudicated_KLO_0_1_NS3_60000__split_ZS1e5": {
+  "wall_s": 534.1,
+  "depths": [
+   0.4826,
+   0.4688,
+   0.3609,
+   0.647,
+   0.9046,
+   0.9808,
+   0.9982
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "DECOUPLED_adjudicated_KLO_0_1_NS3_60000__split_ZS1e7": {
+  "wall_s": 550.8,
+  "depths": [
+   0.4827,
+   0.4679,
+   0.3603,
+   0.6469,
+   0.9046,
+   0.9808,
+   0.9982
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__one_clock": {
+  "wall_s": 59.9,
+  "depths": [
+   0.4754,
+   0.4395,
+   0.3377,
+   0.6479,
+   0.9073,
+   0.983,
+   0.997
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_ZS1e6": {
+  "wall_s": 58.0,
+  "depths": [
+   0.4697,
+   0.4649,
+   0.3424,
+   0.6321,
+   0.8985,
+   0.9805,
+   1.0003
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_SPLITIC_cr": {
+  "wall_s": 58.2,
+  "depths": [
+   0.4703,
+   0.4638,
+   0.342,
+   0.6325,
+   0.8986,
+   0.9806,
+   1.0002
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_ZS1e5": {
+  "wall_s": 58.1,
+  "depths": [
+   0.4696,
+   0.4656,
+   0.3429,
+   0.6322,
+   0.8984,
+   0.9805,
+   1.0003
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_ZS3e5": {
+  "wall_s": 58.9,
+  "depths": [
+   0.4696,
+   0.4651,
+   0.3425,
+   0.6321,
+   0.8984,
+   0.9805,
+   1.0003
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_ZS3e6": {
+  "wall_s": 57.6,
+  "depths": [
+   0.4697,
+   0.4648,
+   0.3423,
+   0.6322,
+   0.8985,
+   0.9805,
+   1.0003
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "FROZEN_adjudicated_KLO_0_1__split_ZS1e7": {
+  "wall_s": 58.0,
+  "depths": [
+   0.4698,
+   0.4647,
+   0.3423,
+   0.6322,
+   0.8985,
+   0.9805,
+   1.0003
+  ],
+  "minimum_at": 4,
+  "recovery": 8
+ },
+ "ells": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ]
+}

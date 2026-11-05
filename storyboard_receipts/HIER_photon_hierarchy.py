@@ -90,6 +90,9 @@ else:
 #   unchanged.  UNSET = byte-identical: `_Hrec` is then the same function object as `Hub`.
 _SPLIT = os.environ.get('SPLITCLOCK', '0') == '1' and _ARM != 'cr'
 _Hrec = Hub
+# ⌗ r7677+70: SPLITIC=cr (only with SPLITCLOCK=1) takes the ARM=cr branch's characteristic initial data in
+#   `evolve()` instead of the adiabatic radiation-era data -- the separating test for what the split moves.
+_SPLITIC = _SPLIT and os.environ.get('SPLITIC', '') == 'cr'
 if _SPLIT:
     Hub = lambda a: H0*np.sqrt(Om/a**3+OL)                 # STACKING rate: the grid and the projection
    # *** omega_r is FIXED by T_CMB; Omega_r = omega_r/h^2.  The old
@@ -388,7 +391,7 @@ def _rhs(e, y, kk, tight):
 def evolve(kk):
     nk = len(kk); kk2 = kk[:,None] if False else kk
     Hcs=Hc_of(eta_onset); Ogs=Og_of(eta_onset); Ons=On_of(eta_onset)
-    if _ARM == 'cr':
+    if _ARM == 'cr' or _SPLITIC:
         # r2373: CR's CHARACTERISTIC data, transplanted from ROBUST_p1p2_scan unchanged.
         # The branch point is a NULL surface, so the initial-value problem is characteristic:
         # ONE free function per mode plus regularity, not a field and an independent momentum.
