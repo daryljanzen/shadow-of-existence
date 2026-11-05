@@ -1,0 +1,74 @@
+{
+ "verdicts": {
+  "⒜": "SUPPORTED",
+  "⒝": "SUPPORTED",
+  "⒞": "SUPPORTED",
+  "①": "SUPPORTED",
+  "②": "SUPPORTED",
+  "③": "SUPPORTED",
+  "④": "SUPPORTED",
+  "⑤": "SUPPORTED",
+  "⑥": "SUPPORTED",
+  "⑦": "SUPPORTED",
+  "⑧": "SUPPORTED",
+  "⑨": "SUPPORTED",
+  "⑩": "SUPPORTED",
+  "⑪": "SUPPORTED",
+  "⑫": "SUPPORTED",
+  "⑬": "SUPPORTED",
+  "⑭": "SUPPORTED",
+  "⑮": "SUPPORTED",
+  "⑯": "TWO-TO-ONE",
+  "⑰": "SUPPORTED"
+ },
+ "evidence": {
+  "⒜": "the new wording reads True; the diagram remark is marked interpretive True; the old phrase is gone from the whole paper True; the corollary carries 2 substantive claims (the causal one and the coincidence one) and the diagram paragraph is present True.  ⇒ `two substantive claims` names exactly the two that are checked, and the reading that reached the diagram is closed by naming the diagram separately",
+  "⒝": "the new wording reads True; the old unqualified phrase is gone True; and reading B is the one the Lean proves -- `{U = 0} ⊆ M` is a conjunct of `sk_observer` True.  ⇒ the clause that reproduced the corrected registration is gone, and what is left is what was proved",
+  "⒞": "the new wording reads True; the unqualified pair is gone from the whole paper True; and the binders are what the wording now matches -- `Δx = 0` sits under `∃` over splittings and `Δτ = 0` at `TOP` level.  ⇒ the existential is printed as an existential and the top-level one as unqualified, each where it belongs",
+  "①": "the paragraph says `seven families` (True) and cites 7 distinct headline theorems as the families: mx_witness_headline, cz_witness_headline, cz_witness_headline_F, cy_witness_headline, fd_witness_headline, ww_witness_headline, se_headline.  ⇒ the count is the paragraph's own enumeration and not taken from the order",
+  "②": "the sentence names it True, the file is cited True, and `se_headline` is in that file (1116 characters of statement)",
+  "③": "the printed domain reads True; the Lean defines `seWS : Set P := {p | 0 < p.2 ∧ p.1 * p.2 < 1}` (True) and builds `seW : Opens P` from it, and that set IS `{V > 0, UV < 1}`; the point type is `abbrev P := ℝ × ℝ` (True), so the object is the radial plane",
+  "④": "`se_headline` takes `(hr₀ : 2 * M < r₀)` as its only hypothesis beside `hM` (True), which is `r₀ > r_h` exactly, and the observer it builds is `se_Ost hM hr₀`",
+  "⑤": "`se_headline`'s first conjunct is `IsCauchyTemporalOn D (se_Θst M r₀)` at `TOP` level, and the general statement `se_cauchy_RI` carries it for EVERY positive multiple `k` (True).  ⌗ *So the clause holds, and `se_headline` states the one normalisation that is also the observer's proper time, where `se_cauchy_RI` is the general form*",
+  "⑥": "every clause the sentence names is a conjunct of `se_headline`, with its binder: properness `TOP`; slice KLi `TOP`; slice KLs `TOP`; cone KLi `TOP`; cone KLs `TOP`; disjointness `∀`; H = {U=0, V>0} `TOP`.  The printed identification `𝓗⁺ = {U=0, V>0}` reads True.  ⌗ *The disjointness and the cone identifications are under `∀ τ` or at top level, which is where the sentence puts them*",
+  "⑦": "`∀ x ∈ H, se_r M x = 2 * M` is a conjunct of `se_headline` under `∀` over the horizon, so `r = r_h` holds at every point of it and not at one",
+  "⑧": "the sentence reads True, and the headline citations standing AFTER the last compactification file in the paragraph are exactly 4: cy_witness_headline, fd_witness_headline, ww_witness_headline, se_headline.  ⇒ `these last four` names the four families for which no extension is built, measured positionally in the paragraph rather than counted by hand",
+  "⑨": "the sentence claims it True; and the horizon point is a BINDER in both theorems -- `sa_stationary_aligns` `{V₀ : ℝ} (hV₀ : 0 < V₀)` reads `BOUND` and `sa_retarded_aligns` reads `BOUND` -- so each holds for every `V₀ > 0`, which IS every point of the future horizon `{U = 0, V > 0}`.  ⌗ *A claim about every point is a claim about a binder, and presence of the name could not have told the two apart*",
+  "⑩": "the ratio is given EXACTLY as `F(x)·(−U)/(2V)` under `∀` over region I, and a separate conjunct sends it to `0` on the approach filter (True).  ⇒ `the ratio … vanishes` is the limit conjunct, and the exact form beside it is what makes the limit readable rather than asserted",
+  "⑪": "the last conjunct is `Tendsto … (𝓝 ((FS M (0, V₀) / 2) • fst ℝ ℝ ℝ))` (True), and `fst` IS the `dU` covector in the chart, so the limit is `(F/2) dU` at the horizon point; the sentence prints it True",
+  "⑫": "`sa_retarded_aligns` binds `a` and `η` with positivity only (True), the sentence says `for every a, η > 0` (True), and it reaches the SAME limit `(F/2) dU` (True) -- so no upper bound on `η` is needed for the alignment",
+  "⑬": "the attribution reads True, and `se_headline`'s first conjunct is the Cauchy clause at `TOP` level on `D`, which the same theorem identifies as region I -- the exterior",
+  "⑭": "the sentence says so True, and neither probe carries a Cauchy statement for the retarded slicing (True): a search for one over both files returns nothing.  ⇒ the paragraph states its own gap, which is the clause that makes the rest readable",
+  "⑮": "the receipt the clause now cites RUNS GREEN on this tree and its PART 4B prints the three quartets the order quotes: the arm 1125.11, the control 1123.99, the sky 1121.85, so the numerator `3.26` is the cited receipt's own",
+  "⑯": "⛭ THE ORDER'S NAMED QUESTION.  ** `2.36` is NOT in the cited receipt at all ** (False), and it is NOT this locator's spread: it is `PO-47`'s combined figure, carried in another receipt as the constant `SKY_SIG4 = 2.36` and declared there as \"taken as given and neither re-derived\" (True).  The spread a locator does give at the fourth peak is `2.34` on Planck `plik_lite` -- which is the very sky PART 4B locates -- and `3.03` on ACT alone, `2.36` being their quadrature combination.  ⇒ READING A, the DIGIT: SUPPORTED either way, `1.38` on `2.36` and `1.39` on `2.34`, both printing as `1.4`.  READING B, the CITATION: NOT SUPPORTED -- the denominator has no address in the cited receipt, so the clause's own citation cannot reach the spread it divides by",
+  "⑰": "the words read True, and the quantity they name -- the control's share of the arm's offset from the sky -- measures `2.14/3.26 = 0.656` on the cited receipt's own quartets, which is two thirds.  ⌗ *So the SECOND figure is derivable from the cited receipt alone; it is the first that reaches outside it*"
+ },
+ "quartets": {
+  "sky": [
+   220.98,
+   533.79,
+   814.79,
+   1121.85
+  ],
+  "control": [
+   220.44,
+   537.29,
+   811.06,
+   1123.99
+  ],
+  "arm": [
+   220.03,
+   536.25,
+   811.59,
+   1125.11
+  ]
+ },
+ "offset": 3.259999999999991,
+ "shared": 2.1400000000001,
+ "omissions": [
+  "tangency at every horizon point -- which EVERY other family's sentence claims, and which is proved for Schwarzschild in `SchwarzschildAlign.lean` rather than in `se_headline`",
+  "the stretch: every compact part of 𝓗⁺ eventually inside the cones' ε-stretch",
+  "the observer's proper time: `Θ(O τ) = τ` and `r(O τ) = r₀`",
+  "`D` identified as region I, `{U < 0, V > 0}`"
+ ]
+}
