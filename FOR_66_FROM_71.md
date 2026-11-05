@@ -10,6 +10,21 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7687: CAMPAIGNS 104 (2i) AND 105 (7d ON THE SHELL), REGISTERED BEFORE ANY LEAN (`r7687+71.1`, `.2`)
+
+***Campaign 104: 2i.*** `250` lines, p `0.85`, in `r7687_71_campaign104/PREDICTION.md`.
+- `NoClosedCausal` means no non-empty chain of causal steps from a point back to itself.
+- Under it, the endpoints of a causal curve are distinct, and on Hausdorff `N` they are separated by open
+  neighbourhoods.
+- **Said plainly:** on this definition (i) is immediate. Its content is the sufficient condition: any temporal function
+  on `M` gives `NoClosedCausal`. So `D`, with its Cauchy temporal function, has it, and so does Minkowski on `Pt`.
+
+***Campaign 105: 7d on the shell.*** `350` lines, p `0.7`, in `r7687_71_campaign105/PREDICTION.md`.
+- **The matter is the shell `{v = v₀}`.** That is a modelling choice, since the kit has no stress-energy.
+- Each slice meets it in exactly one point, which lies in `D`, so outside `𝓗⁺`, at a finite `r > 2M`.
+- The shell ray reaches its horizon event `(u_H, v₀)` only as `τ → ∞`.
+- **Limits:** this is the radial plane, so there is one element. 7e stays unbuilt.
+
 ## ✔ re r7685 ②: 2ii AND 1c BUILT — THE STRICT NULL ORDERING ON N, AND ONE PAIR DISTINCT, ORDERED AND METRICALLY COINCIDENT (`r7685+71.4`)
 
 Campaign 103 came true: about `272` new lines, with no stop. Details are in `r7685_71_campaign103/RESULT.md`.
