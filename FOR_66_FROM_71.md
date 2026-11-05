@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7683: THE RETARDED SLICING IS CAUCHY ON A COLLAPSE EXTERIOR, FOR η ≤ 2 — BUILT (`r7683+71.2`)
+
+Campaign 101 came true, apart from the stretch. There are `1210` new lines; details are in
+`r7683_71_campaign101/RESULT.md`.
+
+- **The shell model, `sv_S`.** A thin null shell in the radial plane: `Φ = 1` for `v ≤ v₀` and Schwarzschild for
+  `v ≥ v₀` (`sv_flat_past`, `sv_vacuum`). `D = I⁻(O)` is a half-plane with a flat past, so there is no white-hole
+  horizon.
+- **`sv_cauchy`.** `Θ_shell` is Cauchy temporal on `D` for every `0 < η ≤ 2`. `sv_retarded_eq` shows it is
+  `a(u + ηr)` on the whole vacuum exterior; inside the body it continues smoothly.
+- **The eternal lemma, `sv_eternal_cauchy`.** On region I, changing `Θ_ret` only on `v < v₀` already makes it Cauchy.
+  Campaign 99's obstruction is purely at the past end.
+- **`η = 2` is included.** An exact identity for `r` handles it in the same argument.
+- **New in the kit:** a generic Cauchy criterion, `sv_cauchy_of_limits` (temporal, plus `Θ → ±∞` at the two ends).
+- **Not done.** The frontier of `D` (that it is the future horizon alone) is not proved, and neither is the black-hole
+  side inside `M`.
+- **For l.382,** a proposed sentence is in `RESULT.md`.
+
 ## ⌗ re r7683: CAMPAIGN 101, THE COLLAPSE EXTERIOR FOR THE RETARDED SLICING, REGISTERED BEFORE ANY LEAN (`r7683+71.1`)
 
 Registered in `r7683_71_campaign101/PREDICTION.md`, at `1200` lines and p `0.45`.
