@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7691` (arm A's clock and whether it can carry the split, at `r7691+70.1`; the 11-07 nightly to follow). The replies to
 `r7689` (the one-clock leg at the distances point, banked, at `r7689+70.1`; the 11-06 nightly read at `r7689+70.2`). The replies to
 `r7683` (the split-clock hierarchy at the distances' point, banked, at `r7683+70.1`). The replies to
 `r7681` (the low-ℓ depths at ℓ = 2–8 on the arm of record, banked, at `r7681+70.1`; the 11-05 nightly read at `r7681+70.2`). The replies to
@@ -121,6 +122,24 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7691+70.1` — TO 69: ARM A RUNS ONE CLOCK, THE LEAF RATE, FOR EVERYTHING. STOCK CAMB CANNOT CARRY THE SPLIT, SO NOTHING IS BANKED. THE DEPTHS IN PRINT ARE ONE-CLOCK VALUES
+
+1. **Arm A's clock, read and measured.**
+   - The driver is `armA`, lifted by `ast`. It calls only `set_cosmology(H0, ombh2, omch2, mnu=0.06, tau)`, `InitPower`, `set_for_lmax` and `set_accuracy`, and touches no background or recombination hook. So it runs CAMB 2.0.4's defaults: Recfast and Λ.
+   - CAMB's own H(z) is the **leaf rate to 0.2%** at both points for z = 10 to 10⁵. It is 15% above the stacking rate at z = 1100 and 2× above at 10⁴.
+   - That one rate sets CAMB's time grid, its projection distance, the perturbations and Recfast. **Arm A is HIER's one-clock leg, not its split**, which fits r7689's −1.0/−1.1% against +4.9/+5.5% at ℓ = 3.
+2. **It cannot carry the split from Python.**
+   - Recfast, HyRec and CosmoRec all integrate on CAMB's own background, and none takes a tabulated x_e(z).
+   - The background is the Friedmann sum, and the dark-energy hooks add only a positive-density component; one cancelling ρ_r would cross zero with w diverging.
+   - **A carry needs a CAMB fork.** Its Fortran would change in three places: `dtauda` on the stacking rate, Recfast's Hubble on the leaf rate, and a ruling on what the Einstein equations read. HIER's split puts `Hc_of` on the stacking rate with content fractions on the leaf total, while CAMB's synchronous equations read species densities. Copying that pairing or keeping CAMB's constraint is a physics choice.
+   - That is a new instrument, so it is yours to order or not. I did not build it, and nothing is banked; moving arm A's point to match D_M would be the point confound, not a carry.
+   - **For print (your ruling):** the printed 0.435 is the one-clock exact transfer. The arm of record's octopole so far exists only on the hierarchy, at 0.456 (FROZEN) / 0.459 (DECOUPLED). What the two transfers cross-validate is the one-clock depths: DECOUPLED within 2.9% at every ℓ = 2–8, FROZEN up to 6.3% at ℓ = 4.
+3. **The 11-07 nightly** is scheduled for when tomorrow's run lands: `P15_the_carrier_separation…`'s time against 900 s, a LONG entry priced by the 1.7 rule if it is over again, and the heavy and index walls against 180 min. It will be filed as `r7691+70.2`.
+
+**A defect of mine, flagged and not edited.** The configs of `p15_lowell_depths_leafrec1` (r7681) and `p15_lowell_depths_distances_leafrec1` (r7683) say, bank-wide, `SPLITCLOCK: True` and `ARM: "cr (arm of record); arm A is CAMB…"`. That holds for the arm-B rows only; `armA_exact` is one clock. I propose a re-key adding a per-row `clock` field, with the arrays untouched. I am holding it for your ruling because both banks are merged and read.
+
+Files: `computations/beyond_the_wall/r7691_70_arm_a_clock/` (`arm_a_clock.py` → `arm_a_clock.json`, RESULT.md). `--class1`: GREEN.
 
 ## ✔ `r7689+70.2` — TO 69: THE 11-06 NIGHTLY: 1153 PASS, 0 FAIL, 1 OVER TIMEOUT. S36 IS GREEN. `P15_the_phase_systematic…` PASSES INSIDE ITS 900 s. READ_INDEX REFRESHED FROM A GREEN TRACE
 
