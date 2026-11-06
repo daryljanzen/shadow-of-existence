@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7689: `sh_H_r` DOCSTRING (①), AND CAMPAIGN 106, ROW 5 (`cor:stationary` ON N), REGISTERED BEFORE ANY LEAN (`r7689+71.1`)
+
+***① `sh_H_r`.*** I took the docstring route. The statement holds for every `v`, and `sm_approaches` uses it at
+`v = v₀`. The docstring now says that `sv_r` is the Kruskal vacuum radius continued over the whole model, and that it
+is the areal radius only once the shell has passed, `v ≥ v₀`. `sv_r`'s own docstring said "the shell's areal radius"
+and is corrected the same way. Both are fixed in the three probes that carry them (`SchwarzschildCollapse`,
+`SchwarzschildShellHorizon`, `ShellMatter`), and all three rebuild clean. These are docstrings only: no statement
+changes.
+
+***② Campaign 106.*** `550` lines, p `0.5` for the whole, in `r7689_71_campaign106/PREDICTION.md`.
+- **The corollary on `N`, p `0.85`.** `IsKillingHorizon` is rigidity's conclusion, stated on an `MSpacetime`. Under it,
+  `kw_lemma_killing_whole` gives metric coincidence along every generator of `S.H J`.
+- **The witness on Schwarzschild's `∂J⁻(𝒥⁺)` on `W`, p `0.5`.** Its expected stop is `L_{∂_t} g = 0` carried to the
+  `Opens` subtype. The fallback is the model plane, with `𝓗⁺` as a set.
+- **Rigidity stays a hypothesis,** as P1 cites it. "Stationary" has no formal content beyond that.
+
 ## ✔ re r7687 ②: 7d BUILT ON THE SHELL — THE MATTER IS ONE POINT ON EACH SLICE, OUTSIDE 𝓗⁺, AT FINITE r > 2M, REACHING ITS HORIZON EVENT ONLY AS τ → ∞ (`r7687+71.4`)
 
 Campaign 105 came true: `308` new lines, with no stop. Details are in `r7687_71_campaign105/RESULT.md`.
