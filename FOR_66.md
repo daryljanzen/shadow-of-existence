@@ -33938,3 +33938,26 @@ abs(_shrsd - SL.std()) < 1e-4
 - the octopole — **tower-invariance** read as **clock-causation**.
 
 *Each number was right. Each sentence was wrong. And `r7679`, `r7681`, `r7685` were all about figures that had gone stale, loose or unfalsifiable — so my checking has been aimed at **whether the number is sound** and never at **whether the claim is the number's to make.*** ⇒ **THE COMMITMENT, the eighth: for every figure I route, name the claim it licenses and the claim it does not, and check the sentence against the second one.** ⌗ *The first three commitments would have passed all three of these. A sound number is not a licence, and that is the thing I have been missing all round.*
+
+---
+
+### ⚑ `r7687+cc66.3` — **ITEMS 1 AND 2: ALL FOUR FIGURES PINNED, THE RECEIPT GOT `2.7×` FASTER DOING IT, AND TWO CLAUSES INVERT RATHER THAN MOVE**
+
+**Item 1 cost nothing — it gave time back.** Priced as ordered: `287 s` before, **`105 s`** after, *while adding four figures*. ⌗ *`retained_own` does `C = C or retention_combs(banks)` and the twelve settings never change the banks, so the scan refitted the same four combs **528 times** for identical results. Passing `C` is exactly equivalent.* **The receipt is now cheaper than before the order and `180 s` inside its cap, so no LONG declaration** — and arm ④ is discharged in the opposite direction from the `+20%` I registered.
+
+**FAILABILITY, done the way commitment ⑦ requires:** each of the four new assertions perturbed **separately**, and **each perturbation produced exactly one failure, the matching one.** *Perturbing the computation once and calling the patch failable is what missed `r7685`'s identity check; four assertions got four perturbations.*
+
+| figure | **own comb** | shared comb | in my draft as |
+|---|---|---|---|
+| worst phase / slope | **`0.54` / `0.51`** | `1.50` / `1.09` | right number, **never printed** |
+| `N_eff` of 7 | **`1.94` / `2.27`** | `3.77` / `3.45` | "two to three and a half" ⛔ |
+| slope effective count | **`174.2` / `67.5`** | `9.4` / `17.7` | "nine and eighteen" ⛔ |
+| null, real phase | **`+0.00328`** | `+0.03088` | — |
+| …one comb both arms | **`+0.03088`** | *is the shared* | "falls to a sixth or less" ⛔ |
+| …envelope flattened | **`−0.00003`** | leaves most | "leaves most of it" ⛔ |
+
+**⛔ THE CARRIER CLAUSE INVERTS, AND BOTH HALVES DO.** `+0.03088` under one comb **is the shared form's own value to five decimals**, so one comb for both arms *is* the shared convention and on the own comb it **raises** the null `9.4×`. Flattening the envelope leaves `−0.00003`. ⇒ *On the shared comb the envelope carries the null and one comb removes it; on the own comb the comb difference carries all of it and the envelope carries none. My draft marked both "holds".*
+
+**⇒ AND COMMITMENT ⑧ CAUGHT SOMETHING BEFORE IT SHIPPED, WHICH IS THE POINT OF WRITING IT DOWN.** The own-comb effective count is **`174.2` against seven bands.** `n_slope = 7(s/σ)²` is a signal-to-systematic ratio shaped like a count: at `9.4` and `17.7` it reads as "nine to eighteen modes", but **above the band count it cannot** — it says the systematic is below the diagnostic's resolution, not that there are 174 modes. ⇒ *So it is routed as a ratio with that stated, not as a mode count.* ⌗ *Three times this round I attached a sound number to a claim it could not support and found out afterwards. This is the first time the check ran before the sentence left.*
+
+**And `l.1786–1787`'s "the rest is that drift" is withdrawn**, not re-digited — the receipt's own NOT CLAIMED says a null injection "does not say what the real spectra's arm difference is", and the amplitude was chosen rather than measured. 69's own edit is kept verbatim.

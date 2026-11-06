@@ -7552,3 +7552,53 @@ Every number stands; only what I hung on them fails.
 **The seven site draftings are unaffected**: they carry only the octopole exception and the `five and a half per cent`, none of which turned on either withdrawn claim. ⇒ *Those you can land as sent.*
 
 **And this is the third time in two revisions that I have taken a sound measurement and attached it to a claim it does not address** — row 6b of my `l.1779–1793` table (a null's sensitivity read as a decomposition, which that receipt's NOT CLAIMED forbids), and now these two. *The numbers keep surviving and the sentences keep failing, which says my checking is aimed at the arithmetic and not at the attachment.*
+
+---
+
+### ⚑ `r7687+cc66` ITEMS 1 AND 2 — **ALL FOUR FIGURES NOW COMPUTED AND PINNED IN THE RECEIPT, AND `l.1779–1793` RE-SENT. TWO CLAUSES DO NOT MOVE TO THE OWN COMB — THEY INVERT ON IT**
+
+**Item 1 is done in the receipt, and it cost nothing — it gave time back.** Priced as you ordered: `287 s` before, **`105 s` after**, a `2.7×` speedup *while adding all four figures*. ⌗ *`retained_own` does `C = C or retention_combs(banks)`, and the twelve settings never change the banks — so the scan refitted the same four combs twelve times per phase, **528 times**, for identical results. Passing `C` is exactly equivalent. The receipt is now cheaper than before your order and `180 s` inside its cap, so no LONG declaration.*
+
+**Each of the four assertions was perturbed separately** (not the computation once — that is what missed `r7685`'s identity check): **each perturbation produced exactly one failure, and it was the matching assertion.**
+
+| figure | **own comb** | shared comb | was in my draft as |
+|---|---|---|---|
+| worst phase / slope | **`0.54` / `0.51`** | `1.50` / `1.09` | right number, never printed |
+| `N_eff` of 7 | **`1.94` / `2.27`** | `3.77` / `3.45` | "two to three and a half" ⛔ |
+| slope effective count | **`174.2` / `67.5`** | `9.4` / `17.7` | "nine and eighteen" ⛔ |
+| null, real phase | **`+0.00328`** | `+0.03088` | — |
+| …one comb both arms | **`+0.03088`** | *is the shared* | "falls to a sixth or less" ⛔ |
+| …envelope flattened | **`−0.00003`** | leaves most | "leaves most of it" ⛔ |
+
+#### ⛔⛔ THE CARRIER CLAUSE INVERTS, AND BOTH HALVES OF IT DO
+
+`+0.03088` under one comb **is the shared form's own value to five decimals** — so *giving both arms one comb IS the shared convention*, and on the own comb it **raises** the null by `9.4×` instead of removing it. And flattening the envelope leaves `−0.00003`, essentially nothing, where on the shared comb it left most. ⇒ **On the shared comb the envelope carries the null and one comb removes it. On the own comb the comb difference carries all of it and the envelope carries none.** *My draft marked both of these "holds". They are exactly backwards.*
+
+#### ⛔ AND `174.2` IS NOT A COUNT OF MODES, SO I AM NOT SENDING IT AS ONE
+
+`n_slope = 7(s/\sigma)^2` is a signal-to-systematic ratio written in the shape of a count. At `9.4` and `17.7` the shared statistic could be read as "between nine and eighteen modes". **At `174` against seven bands it cannot: a count above the number of bands is telling us the systematic is below this diagnostic's resolution, not that there are 174 modes.** ⇒ *So the honest clause is that on the own comb the phase systematic is negligible against the slope, with the ratio quoted as a ratio.* ⌗ *This is the thing I got wrong three times this round, caught before sending for once: the number is sound and it does not license the sentence its shared-comb counterpart licensed.*
+
+#### `l.1779–1793`, re-sent, every clause tagged with the statistic that computes it
+
+| line | current | **re-sent** | statistic |
+|---|---|---|---|
+| `l.1781` | "$36$ to $39$ per cent of the reported slope" | **`21` to `32` per cent** (`+0.00215`/`+0.00328` against `+0.01034`) | **own**, pinned |
+| `l.1782` | periods "$1.0170$ and $1.0160$" | **`1.0170` and `1.0115`** | the banks' combs, **convention-neutral** |
+| `l.1782` | drift "$0.013$ to $0.042$ of a radian" | **`0.034` to `0.199`** | the same combs, **convention-neutral** |
+| `l.1784` | "the null slope falling to a sixth or less" | ⛔ **INVERTED** — see the replacement below | **own**, pinned |
+| `l.1785` | "flattening the envelope leaves most of it" | ⛔ **INVERTED** — same replacement | **own**, pinned |
+| `l.1786–87` | "two thirds is retention **and the rest is that drift**" | **survives at `+0.0071`–`+0.0082` of `+0.0103`, `68` to `79` per cent** — *and the second half is WITHDRAWN, see below* | **own**, pinned |
+| `l.1787–88` | step's false value "a quarter to two fifths" | **a tenth to a quarter** (`−0.0039`/`−0.0105` against `−0.0396`) | **own**, pinned |
+| `l.1789` | "three to three and a half independent modes" | **under two and a quarter** (`1.94`/`2.27` of seven) | **own**, pinned |
+| `l.1790` | "effective count between five and nine" | **the systematic is negligible against the slope**, the ratio being `67` to `174` times seven bands — *not sent as a mode count* | **own**, pinned |
+| caveat | — | **the worst phase of the scan reaches `0.54` and `0.51` of the slope** | **own**, pinned |
+
+**The replacement for `l.1784–1785`, written the way the own comb actually reads:**
+
+> *\emph{And the carrier is the two arms' combs and not their envelopes.} Band the arm on the control's comb instead of its own and the false slope rises ninefold, from $+0.0033$ to $+0.0309$---which is the one-comb statistic's own value, so the reading on a shared comb \emph{is} that false slope. Flatten both envelopes and keep each arm's comb, and nothing is left of it at all. \emph{So what the own-comb reading removes is a phase difference between two combs, and the envelope was never carrying it.}
+
+**And `l.1786–1787`: ⛔ I withdraw "the rest is that drift".** The receipt's own NOT CLAIMED forbids it: *"A null injection measures the statistic's response. It does not say what the real spectra's arm difference is."* The null is the response to a systematic injected **at a chosen amplitude**, so a response of `21`–`32` per cent does not make the drift `21`–`32` per cent of the real signal. ⇒ *Send the survival and stop there:*
+
+> *\emph{The rise survives its own systematic}: fed one comb on both arms the statistic returns $21$ to $32$ per cent of the slope at the real comb's phase, so between two thirds and four fifths of it survives the subtraction---but at the worst phase of the scan the false value reaches half the slope, \emph{so the size is established only to within a factor of two}.*
+
+⌗ *Your edit is kept verbatim — "so the size is established only to within a factor of two" — and the clause that attributed the remainder to the drift is gone rather than re-digited.*
