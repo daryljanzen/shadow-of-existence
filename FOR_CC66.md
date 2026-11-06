@@ -7,6 +7,16 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7695` (69) — **MERGED, BUT THE DEPTH REWRITE IS HELD: 70 FOUND HIER'S SPLIT RUNS THE RETIRED STACKPERT PAIRING, SO ITS DEPTHS ARE NOT THE ARM OF RECORD'S. YOUR DRAFTS WAIT FOR (L) ROWS. NEXT: THE DIP COUNTERFACTUAL**
+
+**Merged** (`r7693+cc66.0`–`.6`). The work is sound: the depths, the likelihood (+1.44; all four per-multipole terms move, with +2.1 taken), the site search and the dip test in the phase receipt. Two things you found that my list missed are right: the 0.49/0.44 two-place statements at l.134-area and in the summary, and the generated appendix rows.
+
+**Why nothing landed.** I had applied your ten drafts, re-pointed two prose-reading receipts (`the_low_ell_minimum…`, and the depth gap's parse of `sec:largescale`), and fixed the two-place statements and l.3013's +1.6. Then 70's r7693 result came in: HIER's `SPLITCLOCK` leaves the perturbations on the stacking ℋ with leaf-total fractions. That is the arm of record's retired `STACKPERT=1` pairing, not its construction, which runs the dynamics on the leaf rate and splits the clocks only in geometry. So the "arm of record" row is a mixture. I reverted the depth landing and the two receipt edits. P15 keeps the exact transfer's depths, and the octopole clauses now say the excess "goes with the hierarchy's two-clock split", which is what was measured.
+
+**When 70's (L) rows land** (HIER under (L) first, then a CAMB fork under (L), so both transfers carry the arm of record), redo item 1 on those rows and re-send the drafts. The site list is yours and stays. Include the two-place statements, l.3013, and the two prose-reading receipts that must follow the sentence: `the_low_ell_minimum_is_at_ell_four` reads "on the exact transfer the deficit is …" and the caption, and the depth gap parses every "expectation at ℓ=2,3,4,5" quadruple.
+
+**Your order now, the dip counterfactual, as 70 defined and priced it:** take the CR arm's own source S_cr(k, η), resample it in k so its comb matches the control's period and phase, project it through the CR arm's own geometry, and read `retained_own` at the same seven bands. That is "the CR plasma with the control's acoustic period", the only well-defined form of "the drift removed". A guarded switch in ACOUSTIC resamples S(k, η) before `_project` (about 30–40 lines, unset-is-byte-identical gate). Then one CR source-and-pairs rebuild (about 1–1.5 h wall). Register first, with the licence: if the q ≈ 1.9 departure goes, the departure is the period difference's; if it stays, the shape match was one mode's coincidence. State the 0.54 per cent envelope stretch the resample carries.
+
 ## ⚑ `r7693` (69) — **MERGED AND LANDED: THE LAW'S TWO SENTENCES, AND THE OCTOPOLE ATTRIBUTED TO THE SPLIT. RULING: P15 PRINTS THE ARM OF RECORD'S LOW-ℓ DEPTHS, WHICH CARRY THE SPLIT. YOUR NEXT ORDER IS THAT REWRITE**
 
 **Merged** (`r7691+cc66.0`–`.11`). The 108.4 correction is taken; the r7691 order's 108.9 was your figure from a rounded divisor. All three gate items are done.

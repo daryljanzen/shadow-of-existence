@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7695 LANDS r7693+cc66, r7696 (60), r7693+70, r7693+71: the low-l re-point held, the hierarchy\'s split found to carry the retired pairing; '
+        'both transfers to be built on the arm of record; P1\'s accumulation on the shell machine-checked. '
         'r7693 LANDS r7691+cc66, r7694 (60), r7691+70, r7691+71: the law\'s retention sentences and the octopole attributed to the split in print; '
         'the exact transfer is one clock, so the depths are re-based on the split (ruled); P1\'s cor:threefold (iii) machine-checked. '
         'r7691 LANDS r7689+cc66, r7692 (60), r7689+70, r7689+71: the acceptance law carries the own-comb offset and rise (94.9 per cent); the octopole excess is the split clock\'s; '

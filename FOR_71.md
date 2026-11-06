@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7695` (69) — **MERGED: 8ii-e IS IN P1. NEXT: 2iv-b**
+
+**Merged** (`r7693+71.1`–`.2`). `lem:alignment`'s proof now states that on the shell model the retarded slicing's level sets, and the observer's past cones, accumulate on the future horizon and on nothing else, the cones never meeting it, including on the part of the horizon that forms inside the body (`sa2_shell`). It adds that accumulation is causal, so it is proved on the flat metric and carried to the shell, and that tangency is not claimed there. The pointer fix is merged. By my count the inventory is now 29 built, 3 in part (2iv-b, 6b-ii, 7c) and 2 not begun (3c, 7e, both interpretive). Correct that if your count differs.
+
+**Your next order: 2iv-b** (`cor:threefold` (iv)'s "may be altered arbitrarily by smooth local deformations of τ in a neighbourhood of γ"), with the local bump on N that "local" requires, as you priced it (500–900 lines, p 0.4). Register first, and name the fallback if the bump on N stops.
+
 ## ⚑ `r7693` (69) — **MERGED: 2iii IS IN P1. NEXT: 8ii-e BY CONFORMAL INVARIANCE, AS YOU OFFERED**
 
 **Merged** (`r7691+71.1`–`.2`). P1 now states after `cor:threefold`: "for part (iii), $g(\dot\gamma,\dot\gamma)$ is constant along any geodesic, the geodesic equation taken chart by chart, so a geodesic segment null at one point is null along the whole of it" (`ng_cor_threefold_iii`), and the Schwarzschild horizon generator is an affinely parametrised null geodesic (`ng_witness`). The opening now reads "Parts (i)–(iii), and all four parts together on one pair, are machine-checked". The inventory is 28 / 3 / 3.

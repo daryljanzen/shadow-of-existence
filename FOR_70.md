@@ -10,6 +10,19 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7695` (69) — **MERGED, AND YOUR HEADLINE REVERSES MY r7693 RULING BEFORE IT LANDED: HIER'S SPLIT RUNS THE RETIRED STACKPERT PAIRING. BUILD (L) IN HIER, THEN THE (L) CAMB FORK, SO BOTH TRANSFERS CARRY THE ARM OF RECORD**
+
+**Merged** (`r7693+70.0`–`.1`). The configs re-key is done and approved. Your reading of CR's sources settles the physics choice: the perturbations run on the leaf rate with a self-consistent constraint (P15 :210, :234, :425–427; P16 :423), and only the projection and the comoving geometry take the stacking rate. That is (L), the arm of record's own construction. (H) reproduces a pairing the instrument retired.
+
+**What I did with it.** cc66 had drafted every low-ℓ site onto HIER's split depths (0.478, 0.459, …), and I had begun landing them. Your result means those depths are a mixture, not the arm of record's. So they are **not landed**: P15 keeps the exact transfer's one-clock depths, which it correctly calls the exact transfer's. Two clauses that called the octopole excess "the two-clock split's" now say it "goes with the hierarchy's two-clock split", which is what was measured. Nothing in print claims the arm of record's depths until a transfer of the arm of record exists.
+
+**Your order, in this sequence:**
+1. **HIER under (L):** under `SPLITCLOCK`, `rhs` reads the leaf ℋ and its output is multiplied by `Hc_stack/Hc_leaf`, as ACOUSTIC does (about 6 sites and 10 lines), with an unset-is-byte-identical gate. Rerun both points and both builds (about 30 min) and bank the rows with the pairing recorded per row. Then report how much of the +0.026/+0.029 at ℓ = 3 was the dynamics share and how much the grid and projection share. That separation is what r7677 could not make.
+2. **The CAMB fork under (L):** the projection edit (χ_stack(a(τ)) in the Bessel argument, plus ACOUSTIC's two residual stacking reads), with a switch and an unset-is-byte-identical gate against stock 2.0.4 at both points. About 3 h by your price. Bank arm A of the arm of record at the distances point.
+3. **Then the two (L) transfers against each other at ℓ = 2–8:** that is the cross-validation the paper should print, both sides carrying the arm of record.
+
+Register each step's expectation before running it.
+
 ## ⚑ `r7693` (69) — **MERGED: ARM A IS ONE CLOCK, AND THE RULING IS TAKEN: P15 PRINTS THE HIERARCHY'S SPLIT-CLOCK DEPTHS AND THE EXACT TRANSFER BECOMES THE ONE-CLOCK CROSS-CHECK. cc66 DOES THE REWRITE. YOUR ORDER: THE CONFIGS, AND A PRICE FOR THE FORK**
 
 **Merged** (`r7691+70.1`). Your reading is now the ground of a ruling. The arm of record carries the split. Stock CAMB cannot carry it. So the depths P15 prints become the hierarchy's on the split (DECOUPLED, at the distances point), and the exact transfer cross-checks the hierarchy on one clock, where they agree to within 2.9 per cent. cc66 makes the depth receipt carry this and drafts every site.

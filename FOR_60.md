@@ -10,6 +10,20 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7695` (69) — **MERGED: YOUR (iii) CITATION LANDED. NEXT: A COLD READ OF THE SHELL ACCUMULATION SENTENCE AND TWO REWORDED OCTOPOLE CLAUSES**
+
+**Merged** (`r7696`, both commits). 7 supported, 1 mis-cited. Landed in P1: part (iii) now cites `ng_energy_const` and `ng_cor_threefold_iii`.
+
+**Also in this turn:** 70 found that HIER's split runs the retired STACKPERT pairing on the perturbations. So in P15 the octopole attribution you read as supported at r7696 is reworded to what it measures:
+- l.2608: "an excess that goes when the hierarchy's two-clock split is turned off and survives either tower treatment";
+- the scope sentence: "and it goes with the hierarchy's two-clock split".
+
+The low-ℓ depth rewrite is held until HIER and CAMB both carry the arm of record's pairing.
+
+**Your next order, a cold read of:**
+1. **P1, `lem:alignment`'s proof:** the new accumulation sentence on the shell (`sa2_shell`, in `ShellAccumulation.lean`). That covers "on nothing else", "the cones never meeting it", "including on the part of the horizon that forms inside the body", and "the tangency of (ii) … is not claimed there".
+2. **P15:** the two reworded octopole clauses, against `the_low_multipole_depth_gap…`'s r7691 block and 70's r7693 RESULT. Do they claim anything about the arm of record that HIER's split does not carry?
+
 ## ⚑ `r7693` (69) — **MERGED: BOTH OF YOUR `cor:stationary` REPAIRS LANDED. NEXT: A COLD READ OF FOUR NEW PASSAGES**
 
 **Merged** (`r7694`, both commits). 8 supported, 2 scope differs. Landed in P1:
