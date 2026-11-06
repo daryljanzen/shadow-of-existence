@@ -1,0 +1,136 @@
+G2 self-probe: 'killing' accepted; '\\mathcal{L}' accepted; '$\\ell=4$' accepted; 'three spaces' REFUSED
+
+==============================================================================================
+ITEM 1 -- P1, lem:alignment's proof: the shell-accumulation sentence against `sa2_shell`
+==============================================================================================
+the sentence located by its text at character 92597 of the flattened file; its first 220 chars:
+  On that model the level sets of the retarded slicing, and the observer's past light cones, accumulate on the future horizon and on nothing else, the cones never meeting it, including on the part of the horizon that forms ...
+
+the sentence read one predicate per conjunct (G1):
+  1a-lower   FOUND 'accumulate on the future horizon'
+  1a-upper   FOUND 'and on nothing else'
+  1b         FOUND 'the cones never meeting it'
+  1c         FOUND 'including on the part of the horizon that forms inside the body'
+  1d         FOUND 'is not claimed there'
+  1e-carry   FOUND 'it is proved on the flat metric and carried to the shell unchanged'
+  1e-causal  FOUND 'accumulation is a causal statement'
+  1e-factor  FOUND "so the shell's conformal factor never enters"
+  the citation the sentence gives: sa2_shell / ShellAccumulation.lean
+
+the SA2Model namespace spans characters 578394..592533 of the Lean file (12329 lines in all)
+`sa2_shell` found in the namespace: YES (767 characters of signature)
+NEGATIVE PROBE 1 (a name the file does not carry): absent, as it must be
+
+arm 1a -- the Kuratowski conjuncts in `sa2_shell`'s conclusion, by subject:
+  slice  2 of 2 -- KLi (the LOWER limit: every horizon point is approached); KLs (the UPPER limit: they accumulate nowhere else)
+  cone   2 of 2 -- KLi (the LOWER limit: every horizon point is approached); KLs (the UPPER limit: they accumulate nowhere else)
+  the right-hand side of each: the set '{y : P | y.1 = sv_uH M v₀}', which the conclusion names 6 times
+  FLIP (G3), the same reader on a copy with the upper-limit conjuncts struck: slice ['i'], cone ['i']
+
+arm 1b -- cone disjointness: PRESENT in the conclusion; absent among the hypotheses
+  the conjunct, as the file states it: ∀ τ, (sh_S hM v₀).cone (sa2_O M a η v₀) τ ∩ {y : P | y.1 = sv_uH M v₀} = ∅
+  the hypotheses `sa2_shell` does ask: (ha : 0 < a) (hη : 0 < η) (hη2 : η ≤ 2)
+
+arm 1c -- the binder, and the inside-the-body part:
+  the accumulation conjuncts are SET EQUALITIES with '{y : P | y.1 = sv_uH M v₀}', so the binder is every point of it
+  `sa2_nonvacuous` states a point of the horizon                                  YES
+  `sa2_nonvacuous` states that point inside the body (v < v₀)                     YES
+  `sa2_nonvacuous` states the conformal factor there equal to 1 (the flat body)   YES
+  `sa2_nonvacuous` states that point a Kuratowski limit of the SLICES             YES
+  `sa2_nonvacuous` states that point a Kuratowski limit of the CONES              YES
+
+arm 1d -- the search performed, over the 14139 characters of the SA2Model namespace:
+  'tangen'       0 occurrence(s)
+  'mc_tangency'  0 occurrence(s)
+  'dΘ'           0 occurrence(s)
+  'aligns'       0 occurrence(s)
+  the same markers over the WHOLE file, for contrast: 'tangen' 118, 'mc_tangency' 28, 'dΘ' 73, 'aligns' 0
+  NEGATIVE PROBE 12, the same search on a copy with one tangency theorem injected: 3 hit(s) against 0 on the file itself
+
+arm 1e -- the route the sentence describes, read off the proof and the lemmas it rewrites by:
+  the proof rewrites the slices through cz_scale          YES ('sa2_S_slice')
+  the proof rewrites the cones through cz_scale           YES ('sa2_S_cone')
+  the proof rewrites properness through cz_scale          YES ('sa2_S_sublevelProper')
+  the proof takes its content from the FLAT model         YES ('sa2_flat')
+  the conformal factor in `sa2_shell`'s own statement: 'sh_Φ' 0, 'Φ′' 0, 'Φ' 0
+  what `cz_scale` asks of the factor: ∀ x, 0 < F x
+  what WOULD need the factor's regularity, from the file's own note: LocallyOneChart (F C¹ in every preferred chart)
+  the transport lemmas, each stated for ANY positive factor: slice YES, cone YES, H YES, sublevelProper YES
+  NEGATIVE PROBE 8, the factor reader on a copy with the factor injected into the statement: 1 occurrence(s) against 0 on the statement itself
+
+----------------------------------------------------------------------------------------------
+ITEM 1 arm 1a: SUPPORTED     -- both limits for both subjects: slice ['i', 's'], cone ['i', 's']
+ITEM 1 arm 1b: SUPPORTED     -- disjointness is a conclusion of the theorem, not one of its hypotheses
+ITEM 1 arm 1c: SUPPORTED     -- the binder is a set equality with the whole horizon set, and non-vacuity is witnessed at a point with v < v0 where the factor is 1
+ITEM 1 arm 1d: SUPPORTED     -- the named search over the namespace returned 0 tangency occurrence(s)
+ITEM 1 arm 1e: SUPPORTED     -- the statement carries the factor 0 times; cz_scale asks only ∀ x, 0 < F x
+ITEM 1 arm 1f: SUPPORTED     -- the cited name is a theorem of the namespace
+
+==============================================================================================
+ITEM 2 -- P15: the two reworded octopole clauses, against the receipt and 70's RESULT
+==============================================================================================
+clause (a) located by its text at character 366679
+clause (b) located by its text at character 455599
+
+clause (b) with its own colon, which is where its figures are: 
+  and it goes with the hierarchy's two-clock split}: with the split turned off the hierarchy sits $1.0$ and $1.1$ per cent \emph{below} the exact transfer there on the two builds; and the conclusion the two transfers are compared on---the minimum at $\ell=4$ and the recovery by $\ell=8$---is returned by both builds\rcpt{P15_the_lo
+
+arm 2a -- clause (a) read one predicate per conjunct (G1):
+  the excess goes with the split off       FOUND
+  it survives either tower treatment       FOUND
+
+arm 2b -- each figure the two clauses print, against the receipt's own two-sided gates:
+  the octopole excess, printed as five and a half per cent       PINNED
+      by: the octopole residual the sites print as five and a half per cent  (want +5.54, tol 5e-3)
+  the two treatments' agreement there, printed as 0.7 per cent   PINNED
+      by: the build spread at l = 3  (want -0.67, tol 5e-3)
+  the split-off residual, FROZEN, printed as 1.0 per cent below  PINNED
+      by: 70's one-clock octopole residual, FROZEN  (want -1.01, tol 5e-3 (from the check that consumes the triple))
+  the split-off residual, DECOUPLED, printed as 1.1 per cent below PINNED
+      by: 70's one-clock octopole residual, DECOUPLED  (want -1.10, tol 5e-3 (from the check that consumes the triple))
+  NEGATIVE PROBE (an invented figure, 9.91, which no clause prints): unpinned, as it must be
+
+arm 2b' -- the denominator of "agree to 0.7 per cent", which the clause does not state:
+  the receipt forms the build spread as (frozen - decoupled) / _DA
+  and the residuals as (build - arm A) / _DA
+  the neighbouring spread clause in the same block says 'per cent of each other above' at character 455140
+  read from the receipt's own run at l = 3: arm A 0.4348, frozen +4.88%, decoupled +5.54%, spread -0.67%
+    the same spread of the exact transfer's depth    -0.660 per cent, which prints as 0.7
+    the same spread of each other                    -0.625 per cent, which prints as 0.6
+
+arm 2c -- "goes" read as a counterfactual, with its DIRECTION part of the claim:
+  the receipt's attribution gate is present: YES
+  and what it asserts about the two states: one clock BELOW zero and the split ABOVE zero, on both builds
+  the band the SAME sentence uses for agreement: 'agrees to three per cent at every multipole but the octopo'
+  the split-off residuals: 1.01 and 1.10 per cent below, each inside that three-per-cent band: YES
+  ⇒ the direction is a SIGN CHANGE and not only a vanishing, and clause (b)'s own colon states it; clause (a) says only "goes", which the band above makes exact.
+  NEGATIVE PROBE 14 (a counterfactual that merely shrinks, 5.0 -> 2.0, no crossing): inversion reported: no
+
+arm 2d -- the order's question: does either clause claim anything about the ARM OF RECORD?
+  clause (a): HIERARCHY-INTERNAL
+  clause (b): HIERARCHY-INTERNAL
+  CLASSIFIER PROBE (G4): "the arm of record's two-clock split" -> ARM-OF-RECORD ; "the hierarchy's two-clock split" -> HIERARCHY-INTERNAL
+
+  70's r7693 RESULT, read for what HIER's split is:
+    "HIER's split clock is not the arm of record on the perturbati STATED
+    'retired `STACKPERT=1` pairing'                                STATED
+    'not of the arm of record'                                     STATED
+    and what the arm of record itself runs: `LEAFPERT` default since r3409
+  the receipt's own licence text, read as the three markers it breaks into:
+    'it does NOT license a'                                    STATED
+    'mechanism for why the split does it'                      STATED
+    'nor the same attribution at any other multipole without'  STATED
+
+  ⚠ the same block already says, at character 454854: "The hierarchy's depths are read with the photon and neutrino sectors \\emph{decoupled} past recombination rather than fro"
+  ⇒ the clauses are about the hierarchy's own switch TODAY.  A label is attached by POSITION: if the held rewrite re-points the printed depths to the arm of record's, these same words become a claim about the arm of record's pairing without one of them changing.
+
+----------------------------------------------------------------------------------------------
+ITEM 2 arm 2a : SUPPORTED -- both of clause (a)'s predicates are in the clause
+ITEM 2 arm 2b : SUPPORTED -- 4 of the 4 figures the two clauses print are the want of a two-sided gate
+ITEM 2 arm 2b': DENOMINATOR UNSTATED, AND IT CHANGES THE PRINTED DIGIT -- the two conventions at l = 3 print as 0.7 (of the exact transfer's depth) and 0.6 (of each other)
+ITEM 2 arm 2c : SUPPORTED -- the off-state crosses below and stays inside the sentence's own band
+ITEM 2 arm 2d : SUPPORTED -- both clauses name the hierarchy's switch and neither names the arm of record
+
+==============================================================================================
+11 verdicts printed.  0 reader or classifier probe(s) failed.
+==============================================================================================

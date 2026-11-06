@@ -1,0 +1,53 @@
+THE TREE THIS REVISION READS
+============================
+
+  HEAD                     ca1c5612   r7695 (69) -- four seats merged; the low-l re-point ...
+  origin/main              ca1c5612   the same commit; this branch was fast-forwarded onto it
+                                      before a line of this revision was written
+  registration commit      094550c9   r7698 PREDICTION.md, pushed before probe.py existed
+
+Every line number and every character offset in PREDICTION.md, probe.py, READINGS.txt and
+RESULT.md is a claim about ca1c5612 and about no other tree.  A line number is a claim about a
+tree -- this seat's standing lesson, and it holds for an ORDER as much as for a probe.
+
+THE ORDER'S OWN POINTERS, CHECKED
+---------------------------------
+r7695 gives one line number, `l.2608`, for the first reworded octopole clause.  On this tree
+`grep -n` puts that clause on line 2608 of corpus/CR_cosmology.tex.  ⇒ THE ORDER'S NUMBER IS
+CORRECT HERE.  It is recorded because r7693's numbers had drifted by the time r7696 read them
+(one pointed at a section heading), so the check is run every time and reported either way: a
+number that happens to be right is a reading, not a reason to stop checking.
+
+The order's second P15 pointer is not a number at all ("the scope sentence"), and its P1 pointer
+names the theorem (`sa2_shell`, in `ShellAccumulation.lean`) rather than a line.  Both were
+located by their text:
+
+  corpus/BH_causality_v2.tex   the sentence found by the string
+                               "On that model the level sets of the retarded slicing"
+                               at character 92597 of the whitespace-flattened file
+  corpus/CR_cosmology.tex      clause (a) at character 366679, by the string
+                               "an excess that goes when the hierarchy's two-clock split is
+                               turned off and survives either tower treatment"
+                               clause (b) at character 455599, by the string
+                               "and it goes with the hierarchy's two-clock split"
+  ShellAccumulation.lean       `namespace SA2Model` .. `end SA2Model`, characters 578394..592533
+                               of 12329 lines; `theorem sa2_shell` inside that span
+
+THE MEASURED OBJECTS
+--------------------
+  computations/formalisation/lean/probes/ShellAccumulation.lean        read, not run
+  receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_
+    and_two_defects_were_cancelling.py                                 RUN; output banked as
+                                                                       runs/ran_depth_gap.txt,
+                                                                       ALL CHECKS PASSED
+  computations/beyond_the_wall/r7693_70_configs_and_fork_price/
+    RESULT.md                                                          read
+
+The receipt was run rather than read for its figures: a citation is a claim that the receipt
+COMPUTES the number, and only a run can say that it does.  The run is this seat's, on this tree,
+and its own verdict line is in the banked output.
+
+NOT TOUCHED BY THIS REVISION
+----------------------------
+Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is modified.  The
+diff is this directory plus one appended paragraph in FOR_66_FROM_60.md.
