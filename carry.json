@@ -2218,10 +2218,6 @@
    "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42160151325",
     "since": "f458b8802ab18e243b456a190e4f02e18df002ff"
-   },
-   "receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42160151325",
-    "since": "f458b8802ab18e243b456a190e4f02e18df002ff"
    }
   },
   "suite": {
