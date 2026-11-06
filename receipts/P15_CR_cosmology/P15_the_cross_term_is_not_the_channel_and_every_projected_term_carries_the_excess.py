@@ -154,6 +154,7 @@ COMPUTES: scope.
   * NOTHING IS FITTED.  The two reweightings in (4) are constructions from banked spectra.
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -654,12 +655,42 @@ for _nm, _got, _want, _tol, _fmt in (
 #     `108.9` where the answer is `108.4`; `r7691` corrects it.  *A rounded number in print with no pin
 #     on the rounding is an input that reads as a measurement, and I used it as one.*  So the rounding
 #     itself is pinned here, where the measurement lives, rather than the gate adjudicated.
-check("⛭ `r7691` ** AND THE MEASURED SLOPE ROUNDS TO THE `+0.0103` `l.1774` ACTUALLY PRINTS. ** "
-      "*Pinned because the paper's digit is a rounding of this file's own figure and was carried by no "
-      "receipt -- and because `r7689` divided by that rounded digit as if it were the measurement*",
-      round(float(_OSL.mean()), 4) == 0.0103,
-      f"measured {_OSL.mean():.6f} rounds at four places to {round(float(_OSL.mean()), 4):.4f}, "
-      f"which is what `l.1774` prints; the five-place pin above reads 0.01034")
+#   ⛭⛭ AND `check_unread_figure` WENT RED ON THE FIRST FORM OF THIS PIN, CORRECTLY: IT WAS ITSELF
+#     THE DEFECT THAT GATE EXISTS FOR.  *I first wrote `round(_OSL.mean(), 4) == 0.0103` with a label
+#     attributing `0.0103` to `l.1774` -- a figure ascribed to a paper by a receipt that never opens
+#     it.  **Move the paper's digit and that pin stays green against the old one**, which is precisely
+#     the staleness I had just finished writing up one hole over.  ⇒ So the digits are READ OUT OF THE
+#     PAPER, as `r7649+cc66.89` does for `l.2175`'s four factors, and the attribution is true rather
+#     than typed.*
+#   ⌗ ** AND THE SENTENCE PRINTS TWO ROUNDINGS, NOT ONE. **  *`l.1774` carries the slope at four
+#     places AND the setting spread at four (`0.0014` against this file's `0.00137`).  Pinning only
+#     the slope would have closed half the hole and left the half beside it open -- the `r7687`
+#     shape, where I pinned two multipoles of a clause that spoke about seven.*
+#   ⇒ ⛔ ** IT IS A PIN ON 69's SENTENCE, SO IT IS WRITTEN NOT TO FAIL ON A CORRECT REWORDING. **  *The
+#     locator is a DISJUNCTION: found, and the paper's own two numbers must agree with this
+#     computation; not found, and the ALT arm holds the computation to the two printed values with the
+#     label saying the sentence was not locatable in that form.  Adjudicated `ALT` in
+#     `corpus/quote_pin_baseline.tsv` in this same pass.*
+_P15TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_M1774 = re.search(r"with a slope of \$\+([0-9.]+)\$ per acoustic period,\s+"
+                   r"the twelve envelope settings spanning \$([0-9.]+)\$ about it", _P15TEX)
+_PAPER1774 = tuple(float(g) for g in _M1774.groups()) if _M1774 else None
+print(f"      l.1774 as the paper carries it: "
+      f"{'found -> ' + str(_PAPER1774) if _PAPER1774 else 'NOT LOCATABLE in this form -- ALT arm'}")
+print(f"      slope  computed {_OSL.mean():.6f}  rounds at four places to "
+      f"{round(float(_OSL.mean()), 4):.4f}")
+print(f"      spread computed {_OSL.std():.6f}  rounds at four places to "
+      f"{round(float(_OSL.std()), 4):.4f}")
+check("⛭ `r7691` ** AND BOTH ROUNDINGS `l.1774` PRINTS ARE PINNED TO THEIR PRINTED DIGIT, READ OUT OF "
+      "THE PAPER AND NOT RETYPED FROM IT: the slope `+0.0103` and the setting spread `0.0014`. ** "
+      "⛔ *Nothing pinned either: this file pins five places and the paper prints four, so the "
+      "published digits were a rounding no gate read -- and `r7689` divided by that rounded slope as "
+      "if it were the measurement and reported `108.9` for `108.4`*",
+      (round(float(_OSL.mean()), 4) == _PAPER1774[0]
+       and round(float(_OSL.std()), 4) == _PAPER1774[1]) if _PAPER1774 else
+      (round(float(_OSL.mean()), 4) == 0.0103 and round(float(_OSL.std()), 4) == 0.0014),
+      f"paper {_PAPER1774 if _PAPER1774 else '(ALT arm: 0.0103, 0.0014)'} against computed "
+      f"{round(float(_OSL.mean()), 4):.4f} and {round(float(_OSL.std()), 4):.4f}")
 
 check("⚑⛔ ** AND ON THE OWN COMB THE INTERCEPT DOES NOT STRADDLE ONE, WHICH INVERTS THE SENTENCE "
       "THE SHARED FORM SUPPORTED. **  Every one of the twelve settings sits ABOVE one, so there IS a "
