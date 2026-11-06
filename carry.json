@@ -1852,5 +1852,17 @@
     "since": "ca1c5612e681ad9e3729277f45beae5f8ab514c8"
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42289972729",
+    "since": "ca1c5612e681ad9e3729277f45beae5f8ab514c8"
+   },
+   "receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42289972729",
+    "since": "ca1c5612e681ad9e3729277f45beae5f8ab514c8"
+   }
+  }
  }
 }
