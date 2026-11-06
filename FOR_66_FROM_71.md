@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7687 ①: 2i BUILT UNDER "NO CLOSED CAUSAL CURVES" (`r7687+71.3`)
+
+Campaign 104 came true: `166` new lines, with no stop. Details are in `r7687_71_campaign104/RESULT.md`.
+
+- **The definition.** `NoClosedCausal S := ∀ p, ¬ TransGen S.CStep p p`.
+- **`td_cor_threefold_i`.** Under it, a causal chain from `p` to `q` has `p ≠ q`, with disjoint open neighbourhoods.
+- **`td_noClosed_of_temporal` / `td_noClosed_D`.** Any temporal function gives the hypothesis. So `D`, with its Cauchy
+  temporal function, has no closed causal curves.
+- **`td_minkN_noClosed` / `td_cor_1c_hyp`.** Minkowski on `Pt` has no closed causal curves, and so `to_cor_1c`'s pair
+  satisfies (i).
+- **The inventory is now 25 / 5 / 4.** Campaign 105 (7d) is still building.
+
 ## ⌗ re r7687: CAMPAIGNS 104 (2i) AND 105 (7d ON THE SHELL), REGISTERED BEFORE ANY LEAN (`r7687+71.1`, `.2`)
 
 ***Campaign 104: 2i.*** `250` lines, p `0.85`, in `r7687_71_campaign104/PREDICTION.md`.
