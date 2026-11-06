@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7697: 7c BUILT, ALL FIVE STAGES — KRETSCHMANN = 48M²/r⁶ BY HAND, DIVERGING ON A LOCUS IN THE BLACK-HOLE REGION AND OFF EVERY SLICE (`r7697+71.2`)
+
+Campaign 110 came true: `999` new lines, with no stop at ③ and no fallback. Details are in
+`r7697_71_campaign110/RESULT.md`.
+
+- **① `kr_locus_BH` / `kr_slice_far`.** `UV = 1` is in the black-hole region's closure, with `U > 0`, and in no slice's
+  closure. `kr_r_to_zero` shows `r → 0` there.
+- **② The coordinate Christoffel, Riemann and Kretschmann.** They are the standard formulas. As sanity checks, a flat
+  metric gives `K = 0` and the 2-sphere gives `4/ρ⁴`.
+- **③ `kr_warped`.** `K` for `−F dU dV + R² dΩ²` in closed form, from all `256` Riemann components.
+- **④ `kr_schwarzschild`.** `K = 48M²/r⁶` on `{UV < 1}`.
+- **⑤ `kr_blowup` / `kr_cor_densities_c`.** `K → ∞` as `UV → 1`. That locus lies in the black-hole region's closure and
+  off every finite exterior slice.
+- **Limits.** This is coordinate-level curvature on the `(U, V, θ, φ)` chart. It is not tied to `seW`'s manifold
+  structure, and the sphere factor is added by hand.
+- **The inventory is now 31 / 1 / 2.** Left: 6b-ii (waits), and 3c and 7e (interpretive).
+
 ## ⌗ re r7697: CAMPAIGN 110, 7c STAGED, REGISTERED BEFORE ANY LEAN (`r7697+71.1`)
 
 The details are in `r7697_71_campaign110/PREDICTION.md`. The whole is `2200` lines at p `0.2`, built in stages so that a
