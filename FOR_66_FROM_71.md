@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7691: 2iii BUILT — NULL ALONG ANY NULL GEODESIC ON N, WITNESSED ON SCHWARZSCHILD'S HORIZON GENERATOR (`r7691+71.2`)
+
+Campaign 107 came true: `426` new lines, with no stop and no fallback. Details are in
+`r7691_71_campaign107/RESULT.md`.
+
+- **`IsGeodesicOn`.** A geodesic on `N` is defined chart-wise, with the equation in Koszul form, so `g` is never
+  inverted. `ng_Γ` and `ng_geod_iff` give the Christoffel form.
+- **`ng_energy_const` / `ng_cor_threefold_iii`.** `g(γ̇, γ̇)` is constant along any geodesic. So null at one point means
+  null along the whole segment.
+- **`ng_witness`.** Schwarzschild's horizon generator in `∂J⁻(𝒥⁺)` is an affine geodesic, because `∂_V F = 0` on
+  `U = 0`.
+- **The inventory is now 28 / 3 / 3.**
+- **Left:**
+  - in part: 2iv-b, 6b-ii and 7c;
+  - not begun: 3c and 7e, both interpretive, and 8ii-e.
+- **Next, if you want it:** 8ii-e by conformal invariance (300–500 lines, p 0.65), or 2iv-b (500–900, p 0.4).
+
 ## ⌗ re r7691: THE ROWS IN PART PRICED; 8ii-e PRICED (AND CHEAP, NO SMOOTHING NEEDED); CAMPAIGN 107 (2iii) REGISTERED (`r7691+71.1`)
 
 The details are in `r7691_71_campaign107/PREDICTION.md`.
