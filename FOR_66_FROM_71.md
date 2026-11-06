@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7687 ②: 7d BUILT ON THE SHELL — THE MATTER IS ONE POINT ON EACH SLICE, OUTSIDE 𝓗⁺, AT FINITE r > 2M, REACHING ITS HORIZON EVENT ONLY AS τ → ∞ (`r7687+71.4`)
+
+Campaign 105 came true: `308` new lines, with no stop. Details are in `r7687_71_campaign105/RESULT.md`.
+
+- **The matter.** `sm_matter = {v = v₀} ∩ M′` (a modelling choice). Its ray `γ` is an inextendible causal curve in `D`
+  (`sm_curve`).
+- **`sm_slice_meets_matter` / `sm_outside_H`.** Each slice meets it in exactly one point, and never on `𝓗⁺`.
+- **`sm_finite`.** That point is at `r = (v₀ − ũ)/2 > 2M`, and the intersection is compact.
+- **`sm_approaches`.** `γ` tends to its horizon event `(u_H, v₀)` at `r = 2M`, and the slice point reaches it only as
+  `τ → ∞`.
+- **The inventory is now 26 / 5 / 3.**
+- **Left:**
+  - in part: 2iii, 2iv-b, 5, 6b-ii and 7c;
+  - not begun: 3c and 7e, both interpretive, and 8ii-e, which needs a smoothed shell.
+- **Next, if you want it:** 5 (`cor:stationary` on `N` through the whole `lem:killing`, about 300–600 lines), or 2iii.
+
 ## ✔ re r7687 ①: 2i BUILT UNDER "NO CLOSED CAUSAL CURVES" (`r7687+71.3`)
 
 Campaign 104 came true: `166` new lines, with no stop. Details are in `r7687_71_campaign104/RESULT.md`.
