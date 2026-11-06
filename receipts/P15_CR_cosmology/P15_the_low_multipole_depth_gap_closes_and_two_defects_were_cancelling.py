@@ -77,6 +77,8 @@ import sys
 
 import numpy as np
 
+from decimal import Decimal, ROUND_HALF_EVEN, ROUND_HALF_UP  # noqa: E402
+
 print(__doc__.split("STATUS:")[0])
 BAR = "=" * 104
 fail = []
@@ -809,18 +811,46 @@ check("\u26ed `r7693` ...and the clause's ACTUAL claim -- the same total over 2 
       abs(_t8only - _t8) < 5e-3 and abs(_AOR[8] - 1.0) < 0.01,
       f"2-8 gives {_t8only:+.4f}, 2-10 gives {_t8:+.4f}, apart by {abs(_t8only - _t8):.2e}; "
       f"the depth at l = 8 is {_AOR[8]:.4f}")
-# ⌗ ⛔ ** THE ONE FIGURE WHOSE PRINTED DIGIT I CANNOT CALL, AND IT IS NAMED RATHER THAN ROUNDED. **
-#   *l = 4's term goes `+2.029` -> `+2.050`.  At the paper's one decimal place that is EXACTLY the
-#   rounding boundary: `+2.0` under round-half-to-even and `+2.1` under round-half-up, and Python's
-#   own `round` gives `2.0` while the printed convention in `sec:largescale` is not stated anywhere.
-#   ** So whether this printed digit changes is a question about the rounding rule and not about the
-#   measurement, and it is 69's to settle.**  Pinned at three places, where the question does not
-#   arise, and flagged for the draft.*
-check("\u26d4\u26ed `r7693` ** l = 4's term lands ON the one-place rounding boundary at `+2.050`, so "
-      "its printed digit is a rounding-convention question and not a measured one ** -- flagged for "
-      "69 rather than silently rounded here",
-      abs(_per8[4] - 2.050) < 1e-3,
-      f"{_per8[4]:+.4f}: +2.0 half-to-even, +2.1 half-up; the printed value is +2.0")
+# ⌗ ⛔⛔ ** AND THE FIRST FORM OF THIS GATE WAS WRONG, BY THE EXACT DEFECT `r7691` PINNED A FIX FOR
+#   ONE REVISION AGO. **  *It read: "l = 4's term goes `+2.029` -> `+2.050`, EXACTLY the one-place
+#   rounding boundary, so whether the printed digit changes is a rounding-convention question and not
+#   a measured one -- 69's to settle."*  ⛔ **The term is `+2.05036`, which is STRICTLY ABOVE `2.05`
+#   and therefore rounds to `+2.1` under half-up AND half-to-even alike.  There is no ambiguity and
+#   nothing for anyone to settle.**
+#   ⇒ *** I read the TWO-DECIMAL DISPLAY `+2.05` as if it were the value and reasoned about a boundary,
+#   instead of looking at the next digit.  That is a derived conclusion computed from a rounded input
+#   -- the `r7689` `108.9` defect and the `r7685` "factor of 75" defect, a THIRD time, by this seat, in
+#   three consecutive revisions, inside the revision whose own receipt pins the repair for it. ***
+#   ⌗ *So the roundings below are taken with `decimal` under BOTH conventions rather than eyeballed,
+#   and `r7693+cc66.0`'s arm ③ registration -- "l = 4 unchanged at one printed place" -- is FALSIFIED.*
+_HU, _HE = ROUND_HALF_UP, ROUND_HALF_EVEN
+
+
+def _r1(_v):
+    """one decimal place under both conventions -- a pair, so a boundary cannot be read as a point"""
+    _d = Decimal(repr(float(_v)))
+    return (str(_d.quantize(Decimal('0.1'), _HU)), str(_d.quantize(Decimal('0.1'), _HE)))
+
+
+print("\n  \u26ed `r7693` THE PER-MULTIPOLE TERMS AT THE PAPER'S OWN ONE PLACE, both conventions")
+print("     l   printed   term now     half-up / half-even   printed digit changes?")
+for _l in range(2, 6):
+    _a, _b = _r1(_per8[_l]); _pa, _pb = _r1(_perex[_l])
+    print(f"    {_l:2d}   {_pa:>7}   {_per8[_l]:+9.5f}     {_a:>6} / {_b:<6}        "
+          f"{'YES' if _a != _pa else 'no'}")
+check("\u26d4\u26ed `r7693` ** l = 4's TERM ROUNDS TO `+2.1` UNDER BOTH CONVENTIONS, so its printed "
+      "digit DOES change and `r7693+cc66.0`'s arm \u2462 is falsified on that limb. ** \u26d4 *The "
+      "first form of this gate called it a rounding-convention question by reading the two-decimal "
+      "display `+2.05` as the value instead of its next digit -- the `r7689`/`r7685` defect a third "
+      "time, in the revision whose receipt pins the repair for it*",
+      _r1(_per8[4]) == ('2.1', '2.1') and _r1(_perex[4]) == ('2.0', '2.0'),
+      f"{_per8[4]:+.5f} -> {_r1(_per8[4])} against the printed {_perex[4]:+.5f} -> {_r1(_perex[4])}")
+check("\u26ed `r7693` ** SO ALL FOUR PRINTED PER-MULTIPOLE TERMS CHANGE their one printed place: "
+      "`-2.5 +1.0 +2.0 +1.0` becomes `-2.6 +0.7 +2.1 +1.2` ** -- taken under both conventions, which "
+      "is how the l = 4 error above would have been caught the first time",
+      all(_r1(_per8[_l]) != _r1(_perex[_l]) for _l in range(2, 6))
+      and tuple(_r1(_per8[_l])[0] for _l in range(2, 6)) == ('-2.6', '0.7', '2.1', '1.2'),
+      "; ".join(f"l={_l}: {_r1(_perex[_l])[0]} -> {_r1(_per8[_l])[0]}" for _l in range(2, 6)))
 
 # =================================================================================================
 print()
