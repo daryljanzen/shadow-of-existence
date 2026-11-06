@@ -1,0 +1,46 @@
+  THE LAW, AS BANKED
+    lcdm  l from  100 to 1996, q from 0.332 to 6.619;  A from 0.5239 to 0.7519  (r_s* 145.38204)
+    cr    l from  100 to 1996, q from 0.330 to 6.589;  A from 0.5553 to 0.7589  (r_s* 146.57253)
+
+  ARM (5) -- COMMENSURABILITY CHECK, RUN FIRST
+    the law's arm/control ratio over the shared q range: 1.0084 to 1.0877   (mean 1.0656)
+    the measured own-comb band ratios run 1.028 to 1.075
+    worst ratio-of-excesses between the two objects: 1.17  (registered threshold: report ILL-POSED above 2)
+    => COMMENSURABLE -- the accounting below is licensed
+
+  THE LAW ON THE SAME TWELVE SETTINGS
+                                the LAW     MEASURED  law / measured excess
+    slope per period           +0.01122     +0.01030                108.9%
+    intercept                    1.0300       1.0260                115.6%
+    lowest band                  1.0367       1.0280                131.2%
+    highest band                 1.0857       1.0750                114.2%
+    spread of the law's slope over the twelve settings: 0.00059
+    the law's intercept is above one in 12 of 12 settings
+
+  BAND BY BAND at the 7-band window-1 setting (the own comb's reference)
+           q band  law A cr  law A ctl  law ratio
+     0.85- 1.55    0.5852     0.5654     1.0349
+     1.55- 2.25    0.5579     0.5305     1.0516
+     2.25- 2.95    0.5579     0.5244     1.0638
+     2.95- 3.65    0.5684     0.5300     1.0725
+     3.65- 4.35    0.5835     0.5410     1.0786
+     4.35- 5.05    0.6005     0.5546     1.0828
+     5.05- 5.75    0.6182     0.5695     1.0854
+     2.95- 3.65    0.5684     0.5300     1.0725
+     3.65- 4.35    0.5835     0.5410     1.0786
+     4.35- 5.05    0.6005     0.5546     1.0828
+     5.05- 5.75    0.6182     0.5695     1.0854
+
+  THE ACCOUNTING, BAND BY BAND (7-band window-1 setting)
+     q centre      LAW  MEASURED  law-meas  law excess / meas excess
+         1.20   1.0349    1.0364   -0.0016                    95.7%
+         1.90   1.0516    1.0708   -0.0192                    72.9%  <-- beyond the setting spread 0.0089
+         2.60   1.0638    1.0659   -0.0021                    96.8%
+         3.30   1.0725    1.0699   +0.0026                   103.7%
+         4.00   1.0786    1.0858   -0.0072                    91.6%
+         4.70   1.0828    1.0827   +0.0001                   100.1%
+         5.40   1.0854    1.0832   +0.0022                   102.7%
+
+    bands disagreeing by more than the own-comb setting spread: 1 of 7
+    the law rises monotonically: True;  the measurement does: False
+    law excess summed over bands / measured excess summed: 94.9%

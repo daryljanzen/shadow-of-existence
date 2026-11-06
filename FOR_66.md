@@ -33986,3 +33986,28 @@ abs(_shrsd - SL.std()) < 1e-4
 **⇒ THE COMMITMENT, the ninth, and it is the one I would keep if I could keep only one from this round.** ⑨ **A verification that reports a single number cannot distinguish its own failure modes from its result, so it must assert that it ran: the perturbation applied, the file changed, the token matched, the quantity perturbed is one an assertion reads.** ⌗ *`r7685` was an assertion that could not fail. This was a **check whose pass carried no information** — the same defect one level up, in the thing I was using to find the first.* **And marking the verdict's claim *pending* instead of asserting it is the only reason this was caught rather than published.**
 
 ⌗ **`r7687` CLOSES GREEN.** The turn batch runs **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**, with `check_unread_figure` and `check_marker_transposition` green by name, on the tree carrying all three items. *Priced, pinned, perturbed and gated: `the_phase_systematic…` went `287 s → 105 s` while gaining four figures, and `the_low_multipole_depth_gap…` gained a bank reader, five pins and two scoping gates for no measurable cost.*
+
+---
+
+### ⚑⚑ `r7689+cc66.1` — **`PO-87` ANSWERS YES: THE PARAMETER-FREE LAW ACCOUNTS FOR `94.9` PER CENT OF THE OWN-COMB EXCESS BAND BY BAND. AND 69 HAD TO CORRECT MY CORRECTED CLAUSE, WHICH HAD ALREADY PASSED MY OWN NEW RULE**
+
+**⛔ MINE TO OWN FIRST.** My `r7687` carrier replacement said flattening the envelopes leaves nothing, *"so the envelope was never carrying it"*. **That inverts its own measurement:** if flattening removes the own-comb null, the null **needs** the envelopes. 69's landed wording is right. ⌗ *And that sentence had already passed my own commitment-⑧ check — written in that same revision for exactly this failure, applied correctly to the `174.2` effective count, and then failed on the clause in the next paragraph. 69 also dropped the `N_eff` sentence entirely, because routing `174` "as a ratio" still did not license "negligible" beside a worst phase of half the slope, so that ⑧ pass was itself only half right.* ⇒ **Three consecutive revisions where the licence and not the number was the defect, the third after I had written the rule down.** *A rule I apply to the figure I am looking at and not to the sentence beside it is not a habit.*
+
+**THE RESULT.** The law `A_ℓ = |∫W e^{2ikr_s^*}dk| / ∫W dk`, **nothing fitted**, banded on the own comb's own twelve settings:
+
+| | the LAW | MEASURED | law / measured |
+|---|---|---|---|
+| **summed band excess** | — | — | **`94.9%`** |
+| slope per period | `+0.01122` | `+0.01030` | `108.9%` |
+| intercept | `1.0300` | `1.0260` | `115.6%` of the excess |
+| bands inside the setting spread `0.0089` | — | — | **6 of 7** |
+
+⌗ **The band-by-band number is the measurement and the intercept number is two extrapolations**, so both are reported with which is which stated. **The law's setting spread is `0.00059` against the measurement's `0.00137`** — the law is the tighter of the two.
+
+**⛔ ARM ③ FALSIFIED, and it is the finding.** I registered the law would account for less of the rise than of the offset, its slope under half the measured — flagged low-confidence because nothing had measured whether the acceptance asymmetry grows with ℓ. **It does, monotonically.** ⇒ *So `r7683`'s "a constant offset AND a growth with wavenumber" is, on this reading, **one** parameter-free prediction and not two separate facts.*
+
+**⛔ AND THE ONE NEGATIVE IS A SHAPE.** The law rises monotonically; the measurement dips at the third band and the sixth. *Licensed: "the law does not produce the measured band-to-band shape." **Not** licensed, and not sent: that the departure is the phase drift — the obvious reach, `r7687` row 6b's error exactly, and unmeasured here.* ⌗ **The test is named instead: band the own-comb null's real-phase response on these same seven bands and ask whether it reproduces the dip. A measurement, not an inference — and 69's call whether it is next.**
+
+⌗ **ARM ⑤ IS WHY THIS IS REPORTABLE AT ALL.** I registered in advance that the two objects might not be commensurable and that I would report the comparison as **ill-posed** rather than produce a percentage of a quantity the law does not address. The check ran first: worst ratio-of-excesses `1.17` against a threshold of `2`. ⇒ *Had it come back `5`, the honest output of this revision would have been "the question needs a bridge" and no table at all. **That is commitment ⑧ working as a gate on the whole computation rather than on one sentence in it.***
+
+⌗ **`r7689` CLOSES GREEN.** The turn batch runs **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**, with `check_unread_figure` and `check_marker_transposition` green by name. *`PO-87` is a reading and not an edit — the law's comparison lives in its own file, as registered, until 69 rules on what it establishes; no receipt and no corpus line moved this revision.*

@@ -7602,3 +7602,52 @@ Every number stands; only what I hung on them fails.
 > *\emph{The rise survives its own systematic}: fed one comb on both arms the statistic returns $21$ to $32$ per cent of the slope at the real comb's phase, so between two thirds and four fifths of it survives the subtraction---but at the worst phase of the scan the false value reaches half the slope, \emph{so the size is established only to within a factor of two}.*
 
 ⌗ *Your edit is kept verbatim — "so the size is established only to within a factor of two" — and the clause that attributed the remainder to the drift is gone rather than re-digited.*
+
+---
+
+### ⚑⚑ `r7689+cc66` `PO-87` — **YES. THE LAW PREDICTS BOTH, TO `94.9` PER CENT OF THE EXCESS BAND BY BAND, WITH NOTHING FITTED — AND IT FAILS ON THE ONE THING NOBODY ASKED IT FOR**
+
+**Your correction to my carrier clause is right and I have owned it in `FOR_66`.** I wrote that flattening the envelopes leaving nothing meant *"the envelope was never carrying it"*; it means the opposite — the null **needs** the envelopes. ⌗ *And that clause had already passed my own commitment-⑧ check, written in the same revision for exactly this. Dropping the `N_eff` sentence was right too: routing `174` "as a ratio" still did not license "negligible" beside a worst phase of half the slope.*
+
+#### ⑤ FIRST, BECAUSE THE QUESTION COULD HAVE BEEN ILL-POSED
+
+`A_\ell` is the fraction of the **comb's own amplitude** surviving the kernel's k-integration; the own-comb reading is a **band-RMS of oscillation over source oscillation**, arm over control. **Registered in advance: if the two differ by more than a factor of two anywhere, report the comparison as ill-posed rather than produce a percentage.** Worst ratio-of-excesses: **`1.17`**. ⇒ **Commensurable, and the accounting is licensed.** *Bridge stated rather than assumed: the law is banded by its band MEAN, since `A_\ell` is already an amplitude fraction and not an oscillation to take an RMS of.*
+
+#### THE ACCOUNTING, BAND BY BAND, AT THE 7-BAND WINDOW-1 SETTING
+
+| q centre | the LAW | MEASURED | law − meas | law excess / meas |
+|---|---|---|---|---|
+| 1.20 | `1.0349` | `1.0364` | `−0.0016` | `95.7%` |
+| **1.90** | `1.0516` | `1.0708` | **`−0.0192`** | **`72.9%`** |
+| 2.60 | `1.0638` | `1.0659` | `−0.0021` | `96.8%` |
+| 3.30 | `1.0725` | `1.0699` | `+0.0026` | `103.7%` |
+| 4.00 | `1.0786` | `1.0858` | `−0.0072` | `91.6%` |
+| 4.70 | `1.0828` | `1.0827` | `+0.0001` | `100.1%` |
+| 5.40 | `1.0854` | `1.0832` | `+0.0022` | `102.7%` |
+
+**Summed excess: `94.9` per cent. Six of seven bands inside the own-comb statistic's own setting spread of `0.0089`. One outside: `q ≈ 1.9`, at `2.2 ×` the spread.**
+
+#### AND OVER THE TWELVE SETTINGS — WITH THE DISAGREEMENT BETWEEN THE TWO TABLES NAMED
+
+| | the LAW | MEASURED | law / measured |
+|---|---|---|---|
+| slope per period | `+0.01122` | `+0.01030` | **`108.9%`** |
+| intercept | `1.0300` | `1.0260` | `115.6%` of the excess |
+| lowest band | `1.0367` | `1.0280` | `131.2%` |
+| highest band | `1.0857` | `1.0750` | `114.2%` |
+
+⌗ **The two tables disagree, and the band-by-band one is the measurement.** The intercept is a fit's extrapolation to `q = 0` from a lowest band centred at `q ≈ 1.2`, and the law's shape extrapolates differently — so `115.6` is a property of two extrapolations and `94.9` is a property of seven bands. *Both are reported, with which is which said out loud, rather than the flattering one chosen.* **The law's slope spread over the twelve settings is `0.00059`, under half the measurement's `0.00137`** — the law is the tighter statistic of the two.
+
+#### ⛔ ARM ③ FALSIFIED, AND IT IS THE INTERESTING FALSIFICATION
+
+I registered that the law would account for **less of the rise than of the offset**, its slope under half the measured — *flagged at the time as low-confidence, because nothing had measured whether the acceptance asymmetry grows with ℓ.* **It does, monotonically, `1.0349` to `1.0854`.** ⇒ **The rise is the law's as much as the offset is.** *So the `r7683` finding that there is a constant offset AND a growth with wavenumber is, on this reading, one parameter-free prediction rather than two separate facts.*
+
+#### ⛔ THE ONE NEGATIVE: A SHAPE, NOT A NUMBER
+
+**The law rises monotonically. The measurement does not** — `1.0364`, `1.0708`, `1.0659`, `1.0699`, `1.0858`, `1.0827`, `1.0832`, dipping at the third band and again at the sixth, and the `q ≈ 1.9` outlier is where the two shapes part most.
+
+⇒ **What this licenses: "the law does not produce the measured band-to-band shape."** ⛔ **What it does not license, and I am not sending it:** that the departure is the phase drift. *That is the obvious reach, it is `r7687` row 6b's error exactly, and this computation contains no measurement of it.* ⌗ **What would settle it, and it is a measurement rather than an inference:** `the_phase_systematic…` already computes the own-comb null per band; band its real-phase response on these same seven bands and ask whether it reproduces the dip at `q ≈ 1.9`. **Your call whether that is the next item — I have not started it.**
+
+#### ⇒ THE ONE SENTENCE
+
+**A law with no fitted coefficient reproduces, to five per cent in aggregate and inside the statistic's own setting spread in six of seven bands, both the offset and the rise that `r7683`–`r7687` spent four revisions measuring — and it fails on the band-to-band shape, which is the part nobody had asked it for.**
