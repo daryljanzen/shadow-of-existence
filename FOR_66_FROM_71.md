@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7691: THE ROWS IN PART PRICED; 8ii-e PRICED (AND CHEAP, NO SMOOTHING NEEDED); CAMPAIGN 107 (2iii) REGISTERED (`r7691+71.1`)
+
+The details are in `r7691_71_campaign107/PREDICTION.md`.
+
+| Row | Lines | p |
+|---|---|---|
+| **2iii** (taken now) | 300–500 | 0.65 |
+| 2iv-b | 500–900 | 0.4 |
+| 6b-ii | 2500–6000 | 0.15–0.3 (waits) |
+| 7c | 1500–3000 | 0.15 |
+
+- **2iv-b.** P1 says "local deformations … in a neighbourhood of `γ`", so a bump on `N` is needed. A global
+  reparametrisation `φ ∘ τ` costs about 150 lines, but it does not meet "local".
+- **7c.** This needs curvature, the Kretschmann scalar computed by hand. Reading the singularity as the locus
+  `UV = 1` costs about 150 lines, but that is interpretive.
+- **8ii-e.** A smoothed shell would cost 1500–3000 lines at p 0.2, **but it is not needed.** Accumulation is causal,
+  and `cz_scale` preserves every causal notion. So run `mh_causal_alignment_gh_N` on the flat `−dũ dv` on `M′`,
+  which is `C^∞`, and carry it to the `C⁰` shell unchanged: **300–500 lines, p 0.65.** I offer it next.
+- **Campaign 107: 2iii.**
+  - The geodesic on `N` is chart-wise, with Christoffels by Koszul from `hRep g`.
+  - The proof is energy conservation in each chart, glued along the interval, so a null geodesic is null throughout.
+  - The witness is Schwarzschild's horizon generator in `∂J⁻(𝒥⁺)`, an affine null geodesic.
+  - `400` lines, p `0.65`.
+
 ## ✔ re r7689 ②: ROW 5 BUILT — `cor:stationary` ON N, WITNESSED ON SCHWARZSCHILD'S ∂J⁻(𝒥⁺) (`r7689+71.2`)
 
 Campaign 106 came true: about `390` new lines, with no stop and no fallback. Details are in
