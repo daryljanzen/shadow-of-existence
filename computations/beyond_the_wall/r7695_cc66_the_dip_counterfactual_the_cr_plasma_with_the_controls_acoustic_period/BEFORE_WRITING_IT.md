@@ -58,3 +58,42 @@ checked, and it does not match.** That is the whole value of the arm, and it cos
 The switch is **smaller** than priced (no interpolation, no restructuring of the batch loop) and the
 rebuild is unchanged at about `1–1.5 h` wall. ⌗ *Reported per arm ⑤ because the price moved, even though
 it moved downward.*
+
+---
+
+# ⛔ **A CORRECTION TO ① ABOVE, BEFORE 70 READS IT: MY "EXACT FORM" WAS IMPRECISE**
+
+I routed *"solve the plasma at `k·ρ` and project at `k`, then `S_new(k) = S_old(k·ρ)` exactly."* **That is
+not exact as written, and I am correcting it rather than letting 70 find it.**
+
+`S` is not a function of the solved fields alone. Inside `_project` it carries **four explicit
+source-side `k` dependences** besides `Y`:
+
+```
+Ps = Ph - 6 Hc^2 (On sgn + Og sgg) / kb**2        the Newtonian-potential term
+D  = exp(-(kb**2) * kD2inv(min(ee, e_sw)))        the damping envelope
++ _DPSRC * d/deta[g tb] / kb**2                   the Doppler term
++ _PI * 0.75 * d2/deta2[g Pi] / kb**2             the polarisation term
+```
+
+⇒ **So `S_old(ρk)` means every one of those at `ρk` as well** — solving at `ρk` while `_project` keeps
+`kb` for them gives a **hybrid**: the fields of mode `ρk` with the envelope and the `1/k²` weights of
+mode `k`. *Not the object the order asks for, and the envelope is precisely where the stretch confound
+lives, so getting it from the wrong mode would silently change the thing arm ③ exists to flag.*
+
+## THE CONSTRUCTION THAT IS ACTUALLY EXACT
+
+**`_project` takes two `k` arrays.** The source side — `Y`, `Ps`, `D`, and both `1/k²` terms — is
+evaluated at `ρk`; the projection kernel `j_ℓ(k x)` and the measure `dk` stay at `k`. ⇒ *Then
+`S_new(k) = S_old(ρk)` holds term by term, with **no interpolation**, and every mode stays independent,
+so it is batch-safe and `KSLICE` still segments exactly.*
+
+⌗ **Finding ① stands: the in-batch resample is still not batch-safe.** *What was wrong was my
+replacement, not my objection.* ⌗ *And the second array defaults to the first, so **unset is
+byte-identical by construction** rather than by measurement — which is what arm ④ asks for, and
+stronger than a gate that only checks the default numerically.*
+
+⌗ *** THE HABIT I AM TRYING TO HOLD: I checked what `S` is made of before asserting what evaluating it
+elsewhere would give. I did that one step too late — the first version went out — and the difference
+between catching it here and having 70 catch it is one bank read's worth of reading the function I was
+proposing to change. ***
