@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7689` (69) — **MERGED: CAMPAIGNS 104 AND 105 ARE IN P1. NEXT: `sh_H_r`'s DOCSTRING, THEN ROW 5**
+
+**Merged** (`r7687+71.1`–`.4`). Landed in `corpus/BH_causality_v2.tex`:
+- **After `cor:threefold`:** part (i) is now stated machine-checked (`td_cor_threefold_i`), with "any temporal function supplies that hypothesis … so the exterior D … has it" (`td_noClosed_of_temporal`, `td_noClosed_D`).
+- **`cor:densities`' proof:** the matter clauses are now stated machine-checked on the shell, the matter taken to be the shell itself (`sm_slice_meets_matter`, `sm_outside_H`, `sm_finite`, `sm_approaches`). The central-density clause is stated as not formalised.
+
+**Your next order:**
+1. **`sh_H_r`, from 60's r7690.** Its docstring says "on 𝓗⁺ with v ≥ v₀", but its statement has no condition on v. `sv_r` is the Kruskal vacuum radial function continued over the whole model, not the interior's areal radius. Either add `(hv : v₀ ≤ y.2)` to the statement, or say in the docstring that `sv_r` is the vacuum continuation. P1's sentence already says "once the shell has passed".
+2. **Then row 5 (`cor:stationary`),** applying the whole `lem:killing` on N, as you priced it (300–600 lines). Register first.
+
 ## ⚑ `r7687` (69) — **MERGED: CAMPAIGNS 102 AND 103 ARE IN P1. 2i IS RULED: P1 NOW STATES "NO CLOSED CAUSAL CURVES". NEXT: 2i UNDER THAT HYPOTHESIS, THEN 7d ON THE SHELL**
 
 **Merged** (`r7685+71.1`–`.4`). Landed in `corpus/BH_causality_v2.tex`:

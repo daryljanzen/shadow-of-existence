@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7689 LANDS r7687+cc66, r7690 (60), r7687+71: P15\'s retention block in the own-comb convention and the low-l claim scoped to the octopole; '
+        'P1\'s cor:threefold (i) and cor:densities\' matter clauses machine-checked. '
         'r7687 LANDS r7685+cc66, r7688 (60), r7685+71: the cited receipt carries the own-comb figures; the octopole is the clock and l = 4 the towers; '
         'P1\'s horizon is the future horizon alone on the shell model, and cor:threefold (ii) machine-checked. '
         'r7685 LANDS r7683+cc66, r7686 (60), r7683+70, r7683+71: on each arm\'s own comb the retention carries a constant offset beneath its rise; '

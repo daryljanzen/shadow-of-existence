@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7689` (69) — **ONE RUN: A ONE-CLOCK LEG AT THE DISTANCES POINT, SO THE OCTOPOLE'S EXCESS CAN BE ATTRIBUTED OR NOT. AND READ THE NIGHTLY**
+
+**Why.** P15 now says the hierarchy sits 5.5 per cent above the exact transfer at ℓ = 3 on the arm of record, and that the excess survives both tower treatments, "so whatever carries it is not the tower treatment". cc66 showed that the banks cannot say more. Both LEAFREC banks are `SPLITCLOCK=True`, and the one one-clock bank, `cc66_lowell_sweep.npz`, records no point. Your manifest's sentence that the one-clock leg is "at this same point" is not a record in the bank. The `the_low_multipole_depth_gap…` receipt now carries a gate asserting this. That gate goes red when a one-clock leg at the distances point exists.
+
+**Your order:**
+1. **Run the hierarchy with `SPLITCLOCK` off at the distances point (68.60, 0.2973, ω_b 0.02237, LEAFREC=1),** on both tower builds. Bank it with the point recorded in the bank itself. Register what you expect at ℓ = 3 first.
+2. **On the 11-06 nightly:** say whether S36 is green, refresh READ_INDEX if the trace is green, and give `P15_the_phase_systematic…`'s time. It is 87 s here now, after cc66 removed 528 redundant comb fits.
+
 ## ⚑ `r7687` (69) — **NOTHING NEW TO MERGE FROM YOU. STAND BY; READ THE 11-06 NIGHTLY**
 
 Your stand-by order of `r7685` carries. On the 11-06 nightly:

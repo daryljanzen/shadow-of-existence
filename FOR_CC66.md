@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7689` (69) — **MERGED AND LANDED: THE RETENTION BLOCK, WITH THE CARRIER CLAUSE CORRECTED ONCE MORE, AND THE SEVEN LOW-ℓ SITES WITH YOUR REVISED SCOPE SENTENCE. NEXT: DOES THE KERNEL'S ACCEPTANCE LAW PREDICT THE OWN-COMB OFFSET AND SLOPE?**
+
+**Merged** (`r7687+cc66.0`–`.8`). Both withdrawals are right, and they are what made the low-ℓ sentences landable. I re-ran all three receipts here: `the_cross_term…`, `the_phase_systematic…` (87 s) and `the_low_multipole_depth_gap…`. All pass.
+
+**Landed in `corpus/CR_cosmology.tex`, l.1772–1797,** in the own-comb convention, every figure at the receipt it cites:
+- the first paragraph as you sent it at r7685, with the 2.6 per cent named as the fit's extrapolation from a lowest band that itself reads 2.8;
+- the second paragraph from your r7687 table, with two changes of mine:
+  1. **The carrier clause.** Your replacement said flattening the envelopes leaves nothing, "so … the envelope was never carrying it". That inverts its own measurement: if flattening the envelopes removes the own-comb null, the null needs the envelopes. It now reads: banded on the control's comb the same injection returns `+0.0309`, more than nine times the own comb's `+0.0033`; "what the own comb leaves of it rides on the envelopes, flattening them leaving nothing". This is commitment 8 one more time, now on a sentence of yours that had already passed your check.
+  2. **The injection is named as an injection.** "Fed one comb on both arms" collided with "one comb for both arms", which means the banding comb. It now reads "fed an oscillation of the same amplitude on both arms, each on its own comb".
+- **Dropped:** the N_eff and effective-count sentence. 1.94/2.27 are computed, but the sentence's conclusion (fewer independent points than the regression assumes) inverts on the own comb, where the count is 67–174. A ratio shaped like a count beside a worst phase of half the slope does not support "negligible" either. The factor-of-two bound is the operative limit, and it stays.
+
+**Landed, the low ℓ:** all seven sites (l.134, the caption, l.2600, l.2802, l.2816, P7 l.778, P18 l.1494) and your revised scope sentence. The scope sentence cites the 4.9 per cent pin rather than "about five per cent of each other". l.2600's octopole clause says "the tower treatment is not what carries the excess" and names no clock.
+
+**Your next order, on the frontier (`PO-87`):** the paper states the retention law $A_\ell=|\int W_\ell e^{2ik r_s^*}dk|/\int W_\ell dk$, with nothing fitted. **Does it predict the own-comb readings: the intercept 1.026, the slope +0.0103 per period, and the lowest and highest bands 1.028 and 1.075?** Compute the law's own band ratios on both arms with the same twelve settings, and report how much of the offset and the rise it accounts for, band by band. Register first, with each figure's licence named in advance (commitment 8).
+
 ## ⚑ `r7687` (69) — **MERGED: ITEM 1 IS DONE AND VERIFIED. THE BLOCK STILL WAITS ON ITS SECOND HALF: `the_phase_systematic…` DOES NOT COMPUTE FOUR OF THE OWN-COMB FIGURES l.1779–1793 WOULD PRINT. AND THE LOW-ℓ DRAFTS ARE TAKEN, ONCE A RECEIPT READS THE DISTANCES BANK**
 
 **Merged** (`r7685+cc66.0`–`.5`). I ran `the_cross_term…` here: PART 6B passes and all six own-comb figures print at the precision l.1771–1779 needs. Your l.1771–1779 wording with the offset clause is accepted as sent, including the extrapolation named inside the sentence. The tilt-pin fix (two attached pins, not an exemption) is right.

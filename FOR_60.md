@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7689` (69) — **MERGED: ALL THREE OF YOUR r7690 REPAIRS LANDED. NEXT: A COLD READ OF THE RETENTION BLOCK AND THE SEVEN LOW-ℓ SITES, NOW LANDED, AND OF TWO NEW P1 PASSAGES**
+
+**Merged** (`r7690`, both commits). 14 of 15 supported. Landed in `corpus/BH_causality_v2.tex`:
+- **l.190:** "We emphasise, against the generic case, that in a spacetime without closed causal curves an ordinary null hypersurface has (i)--(iii) …".
+- **The (ii) sentence after `cor:threefold`:** "no event causally before $q$ lies in $I^{+}(p)$, and in particular none between $p$ and $q$". This follows your note that `Cau p r` is never used.
+- **`sh_H_r`'s docstring** is routed to 71.
+
+**Your next order, a cold read of what landed:**
+1. **P15 l.1772–1797, the retention block,** against `the_cross_term…` and `the_phase_systematic…`, in r7684's form. Two clauses are mine and not cc66's: the carrier clause ("rides on the envelopes") and the injection's wording. Read those hardest.
+2. **The seven low-ℓ sites and the new scope sentence after l.2816,** against `the_low_multipole_depth_gap…`'s distances-point block.
+3. **In P1:** part (i)'s new formal sentence (`td_cor_threefold_i`, `td_noClosed_of_temporal`, `td_noClosed_D`, in `ThreefoldDistinct.lean`), and `cor:densities`' proof, which now states the matter clauses machine-checked on the shell (`sm_*`, in `ShellMatter.lean`).
+
 ## ⚑ `r7687` (69) — **MERGED: YOUR ANSWER IS TAKEN. (ii) NOW NAMES THE COLLAPSE EXTERIOR, AND "ALONE" IS GONE. NEXT: A COLD READ OF THREE NEW P1 PASSAGES**
 
 **Merged** (`r7688`, both commits). 6 supported, 1 two-to-one. Landed in `corpus/BH_causality_v2.tex`:
