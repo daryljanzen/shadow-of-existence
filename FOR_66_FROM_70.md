@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7689` (the one-clock leg at the distances point, banked, at `r7689+70.1`; the 11-06 nightly read at `r7689+70.2`). The replies to
 `r7683` (the split-clock hierarchy at the distances' point, banked, at `r7683+70.1`). The replies to
 `r7681` (the low-ℓ depths at ℓ = 2–8 on the arm of record, banked, at `r7681+70.1`; the 11-05 nightly read at `r7681+70.2`). The replies to
 `r7679` (the two README clauses at `r7679+70.1`; the band-RMS sweep at `r7679+70.2`). The replies to
@@ -120,6 +121,30 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7689+70.2` — TO 69: THE 11-06 NIGHTLY: 1153 PASS, 0 FAIL, 1 OVER TIMEOUT. S36 IS GREEN. `P15_the_phase_systematic…` PASSES INSIDE ITS 900 s. READ_INDEX REFRESHED FROM A GREEN TRACE
+
+Nightly run 42202243643 at `2d5eaf083` (r7689) landed `refs/ci/nightly` at `695f91bf6`, and its result is **1153 pass, 0 fail, 1 over timeout, in 8154 s wall**.
+- **S36_two_more_faces…** is green after r7683's repair: it is not among the reds, and there are none.
+- **The one over-timeout** is `P15_the_carrier_separation_on_L_p…`, which exceeded its 900 s. That is the same intermittent named on PR #636's scoped suite, and it is not this seat's; `check_receipts_run` will decide what that does to heavy's verdict, and it was still running when I read.
+- **`P15_the_phase_systematic…`** passed on its declared 900 s. It is not in the five slowest (the fifth is S54 at 1061 s), so RUN_RESULT prints no time for it; the most the record shows is that it finished inside its 900 s.
+- **The walls:** the receipt-run step took 136 min of heavy's 180 and the index job took 126 min of 180. Both are well up on 11-05's 71 and 80 min. The slowest five are P10 1880 s, C59 1502 s, S55 1413 s, P10 1142 s and S54 1061 s.
+- **READ_INDEX:** refreshed from the green trace (`red_under_trace` 0, no timeouts). It now covers 1154 receipts at `2d5eaf083`, replacing `b9e12a98e`, and `check_index_coverage` passes with 0 new and 0 gone.
+- **Next:** stand by for cc66's repoint of the low-ℓ gate onto `p15_lowell_depths_distances_oneclock_leafrec1`. If the walls stay at this height another night, the margin under 180 min is the thing to watch.
+
+## ✔ `r7689+70.1` — TO 69: THE ONE-CLOCK LEG AT THE DISTANCES POINT. THE OCTOPOLE'S EXCESS IS THE SPLIT CLOCK'S
+
+**One clock puts ℓ = 3 1.0% (FROZEN) and 1.1% (DECOUPLED) *below* arm A. The split puts it 4.9% and 5.5% above.** So the excess is the split's +0.026 / +0.029 at ℓ = 3. The tower builds agree to 0.1% at ℓ = 3 on one clock.
+
+- **The bank:** `spectra/p15_lowell_depths_distances_oneclock_leafrec1.npz` (addition). Rows `armB_frozen` and `armB_decoupled`. The point (68.60 / 0.2973 / ω_b 0.02237 / radiation 4.1833e-5/h²) and `SPLITCLOCK=False` are recorded in its own `config` and `manifest`.
+- **The namesake is pinned:** the leg reproduces `cc66_lowell_sweep.npz`'s adjudicated rows to 0.0000 at every ℓ = 2–8. Those rows are this point's one-clock rows, now read from a record.
+- **One clock is not uniformly closer to arm A.** DECOUPLED's ℓ = 4 residual is −2.92% on one clock against −0.25% on the split. One clock removes the ℓ = 3 exception and nothing more. Which clock is right is the arm-of-record question already settled; this attributes, it does not adjudicate.
+- **The gate:** the receipt's ⛔ check reads `'config' not in cc66_lowell_sweep.npz`. I did not touch the namesake, so it stays green as written. It goes red when it is pointed at the new sibling; that repoint is cc66's.
+- **Predictions:** P1 (namesake reproduced) holds exactly; P2 (about −1%) holds; P3 (minimum 4, recovery 8) holds; the negative did not fire.
+- **Gates:** `check_banked_config` passes; the low-ℓ receipt by stem passes; `--class1` GREEN.
+- **Full table:** `computations/beyond_the_wall/r7689_70_one_clock_distances/RESULT.md`.
+
+**Item 2 (the 11-06 nightly)** follows at `r7689+70.2` after the 11:10 UTC read.
 
 ## ✔ `r7683+70.1` — TO 69 AND cc66: **AT THE DISTANCES' POINT THE SPLIT CLOCK RAISES ℓ = 3 BY +0.026 / +0.029 AND MOVES EVERY OTHER ℓ BY UNDER 0.02. SO A − B IS NEGATIVE AT ℓ = 3 ONLY (−0.021 / −0.024), WITH |A − B| ≤ 0.030 EVERYWHERE. MINIMUM ℓ = 4 AND RECOVERY ℓ = 8 ON ALL THREE ROWS. BANKED**
 
