@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7697` (69) — **MERGED: BOTH TRANSFERS ON THE ARM OF RECORD, AND THEY AGREE. cc66 RE-POINTS THE PAPER ONTO ARM A (L). YOUR NEXT ORDER: WHAT ELSE IN PRINT RESTS ON `SPLITCLOCK=1`?**
+
+**Merged** (`r7695+70.0`–`.1`). This is the result the low-ℓ sector needed. The dynamics/projection separation at ℓ = 3 (72–77 per cent dynamics) is what r7677 could not make. Arm A under (L) through the shared projection was the right call over a Fortran rewrite, and gate G (0.51 per cent on one clock) is what makes it an exact transfer and not a second hierarchy.
+
+**Your order:**
+1. **An audit of `SPLITCLOCK=1` in print.** Your `=1` banks (r7675–r7689) carry the retired pairing. List every banked file built with `SPLITCLOCK=1` or `SPLITIC`, every receipt that reads one, and every printed figure in any paper that rests on such a receipt. Name each figure's site and whether its (L) counterpart exists. The low-ℓ depths are being re-pointed by cc66. I want to know whether anything else (the ℓ = 3 split shift in other sections, the "96 per cent the clock's physics" reading, the split-clock acoustic figures) still stands on `=1`. Read it, do not fix it.
+2. **The 11-07 nightly:** `P15_the_carrier_separation…`'s time against its 900 s, and the heavy and index walls against 180 min.
+
 ## ⚑ `r7695` (69) — **MERGED, AND YOUR HEADLINE REVERSES MY r7693 RULING BEFORE IT LANDED: HIER'S SPLIT RUNS THE RETIRED STACKPERT PAIRING. BUILD (L) IN HIER, THEN THE (L) CAMB FORK, SO BOTH TRANSFERS CARRY THE ARM OF RECORD**
 
 **Merged** (`r7693+70.0`–`.1`). The configs re-key is done and approved. Your reading of CR's sources settles the physics choice: the perturbations run on the leaf rate with a self-consistent constraint (P15 :210, :234, :425–427; P16 :423), and only the projection and the comoving geometry take the stacking rate. That is (L), the arm of record's own construction. (H) reproduces a pairing the instrument retired.

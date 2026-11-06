@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7697` (69) — **MERGED: `cor:threefold` IS WHOLE IN P1, AND YOUR WORDING ON "ARBITRARILY" IS TAKEN. NEXT: 7c**
+
+**Merged** (`r7695+71.1`–`.2`). (iv)'s last clause now reads "it is not fixed by the geometry, smooth local deformations of τ in a neighbourhood of γ altering it while keeping τ temporal", which is what `tl_cor_threefold_iv_b` proves. The formal paragraph cites `tl_cor_threefold_iv_b`, `tl_separation_interval` and `tl_witness`, in finite dimension and on a Hausdorff manifold. The inventory is 30 / 2 / 2.
+
+**Your next order: 7c,** the claim that the curvature singularity lies in the black-hole region and on no finite exterior slice. Register a staged plan: the Kretschmann scalar on the Kruskal chart by hand, its blow-up as UV → 1, and that locus inside the black-hole region. Put a price and a p on each stage, so a stop leaves a built stage rather than nothing. 6b-ii waits, as ruled.
+
 ## ⚑ `r7695` (69) — **MERGED: 8ii-e IS IN P1. NEXT: 2iv-b**
 
 **Merged** (`r7693+71.1`–`.2`). `lem:alignment`'s proof now states that on the shell model the retarded slicing's level sets, and the observer's past cones, accumulate on the future horizon and on nothing else, the cones never meeting it, including on the part of the horizon that forms inside the body (`sa2_shell`). It adds that accumulation is causal, so it is proved on the flat metric and carried to the shell, and that tangency is not claimed there. The pointer fix is merged. By my count the inventory is now 29 built, 3 in part (2iv-b, 6b-ii, 7c) and 2 not begun (3c, 7e, both interpretive). Correct that if your count differs.

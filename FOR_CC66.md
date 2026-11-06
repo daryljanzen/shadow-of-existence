@@ -7,6 +7,26 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7697` (69) — **MERGED. THE DEPTH REWRITE IS NOW UNBLOCKED: 70 HAS BOTH TRANSFERS ON THE ARM OF RECORD'S PAIRING (L), AND THEY AGREE. RE-POINT YOUR DRAFTS ONTO ARM A (L), AND FINISH THE DIP COUNTERFACTUAL**
+
+**Merged** (`r7695+cc66.0`–`.3`), the counterfactual's switch so far. You found it is not batch-safe and that the stretch is 0.82 per cent on the banks you can read, and you corrected the routed "exact form" before 70 read it.
+
+**What 70 delivered (`r7695+70.1`):**
+- **HIER under (L)** (`SPLITCLOCK=L`, perturbations on the leaf rate chain-ruled onto the stacking grid), banked as `spectra/p15_lowell_depths_leafpert_leafrec1.npz`.
+- **Arm A under (L):** CAMB's own leaf-rate state through the same projection, banked as `spectra/p15_lowell_depths_armA_leafpert_leafrec1.npz`. Its gate reproduces stock arm A within 0.51 per cent on one clock.
+- **At the distances point, arm A (L)** is 0.4848, 0.4407, 0.3536, 0.6569, 0.9087, 0.9828, 0.9992. DECOUPLED is within 2.9 per cent of it at every ℓ = 2–8, with the octopole at −0.9 per cent, so there is **no octopole exception**. FROZEN reaches 6.2 per cent at ℓ = 4.
+- **The old +5.5 per cent at the octopole** was 72–77 per cent the retired pairing's dynamics.
+
+**Your order:**
+1. **The depth rewrite, onto the arm of record.** The paper prints the exact transfer's depths, and the exact transfer now carries the arm of record. So the printed row becomes arm A (L) at the distances point: 0.485, 0.441, 0.354, 0.657, 0.909, 0.983, 0.999 (two places: 0.48, 0.44, 0.35, 0.66).
+   - **The cross-validation:** the hierarchy (L), DECOUPLED, within 2.9 per cent at every multipole, the octopole included.
+   - **The likelihood:** recompute on the new row (the total over 2–8 and 2–10, the four per-multipole terms, the octopole estimator's range), and say whether the sign pattern survives.
+   - **Pins:** make `the_low_multipole_depth_gap…` read both (L) banks and pin all of it.
+   - **The drafts:** re-send every site: your ten, the two two-place statements, l.3013's total, the abstract's +1.6 at l.134, and the two octopole clauses now in print. Those say the hierarchy "sits five and a half per cent high … an excess that goes when the hierarchy's two-clock split is turned off". On (L) there is no exception, so those clauses go.
+   - **The receipts that read the prose,** which must follow it: `the_low_ell_minimum_is_at_ell_four` reads "on the exact transfer the deficit is …", the caption, and the ℓ = 6–8 row and total; the depth gap parses every "expectation at ℓ=2,3,4,5" quadruple. Patch them in the same commit as the drafts' figures, so I can land drafts and receipts together.
+   - **Register first:** which printed digits move, and the likelihood's sign pattern.
+2. **Finish the dip counterfactual** as registered.
+
 ## ⚑ `r7695` (69) — **MERGED, BUT THE DEPTH REWRITE IS HELD: 70 FOUND HIER'S SPLIT RUNS THE RETIRED STACKPERT PAIRING, SO ITS DEPTHS ARE NOT THE ARM OF RECORD'S. YOUR DRAFTS WAIT FOR (L) ROWS. NEXT: THE DIP COUNTERFACTUAL**
 
 **Merged** (`r7693+cc66.0`–`.6`). The work is sound: the depths, the likelihood (+1.44; all four per-multipole terms move, with +2.1 taken), the site search and the dip test in the phase receipt. Two things you found that my list missed are right: the 0.49/0.44 two-place statements at l.134-area and in the summary, and the generated appendix rows.
