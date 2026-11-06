@@ -1,0 +1,118 @@
+{
+ "armA_calls": [
+  "camb.CAMBparams",
+  "camb.get_results",
+  "ells.append",
+  "enumerate",
+  "f",
+  "float",
+  "int",
+  "interp1d",
+  "np.arange",
+  "np.array",
+  "np.log",
+  "np.mean",
+  "np.sqrt",
+  "np.sum",
+  "np.trapezoid",
+  "pars.InitPower.set_params",
+  "pars.set_accuracy",
+  "pars.set_cosmology",
+  "pars.set_for_lmax",
+  "q.max",
+  "q.min",
+  "r0_of",
+  "rat.append",
+  "res.get_cmb_transfer_data"
+ ],
+ "armA_attribute_assignments": [],
+ "armA_touches_background_or_recombination": [],
+ "distances": {
+  "rows": [
+   {
+    "z": 10,
+    "camb_over_leaf": 0.99979,
+    "camb_over_stacking": 1.00143
+   },
+   {
+    "z": 100,
+    "camb_over_leaf": 0.99886,
+    "camb_over_stacking": 1.01383
+   },
+   {
+    "z": 1100,
+    "camb_over_leaf": 0.99837,
+    "camb_over_stacking": 1.15103
+   },
+   {
+    "z": 3000,
+    "camb_over_leaf": 0.99878,
+    "camb_over_stacking": 1.37574
+   },
+   {
+    "z": 10000.0,
+    "camb_over_leaf": 0.99936,
+    "camb_over_stacking": 1.99631
+   },
+   {
+    "z": 100000.0,
+    "camb_over_leaf": 0.99984,
+    "camb_over_stacking": 5.55796
+   }
+  ],
+  "recombination_model": "Recfast",
+  "dark_energy_model": "DarkEnergyFluid"
+ },
+ "refit": {
+  "rows": [
+   {
+    "z": 10,
+    "camb_over_leaf": 0.99979,
+    "camb_over_stacking": 1.00146
+   },
+   {
+    "z": 100,
+    "camb_over_leaf": 0.99884,
+    "camb_over_stacking": 1.01413
+   },
+   {
+    "z": 1100,
+    "camb_over_leaf": 0.99834,
+    "camb_over_stacking": 1.15408
+   },
+   {
+    "z": 3000,
+    "camb_over_leaf": 0.99876,
+    "camb_over_stacking": 1.38275
+   },
+   {
+    "z": 10000.0,
+    "camb_over_leaf": 0.99936,
+    "camb_over_stacking": 2.01244
+   },
+   {
+    "z": 100000.0,
+    "camb_over_leaf": 0.99984,
+    "camb_over_stacking": 5.61589
+   }
+  ],
+  "recombination_model": "Recfast",
+  "dark_energy_model": "DarkEnergyFluid"
+ },
+ "camb_version": "2.0.4",
+ "camb_recombination_classes": [
+  "CosmoRec",
+  "HyRec",
+  "Recfast",
+  "RecombinationModel"
+ ],
+ "camb_dark_energy_classes": [
+  "AxionEffectiveFluid",
+  "DarkEnergyEqnOfState",
+  "DarkEnergyFluid",
+  "DarkEnergyModel",
+  "DarkEnergyPPF",
+  "EarlyQuintessence",
+  "Quintessence"
+ ]
+}
