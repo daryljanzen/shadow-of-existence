@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7693: CAMPAIGN 108, 8ii-e BY CONFORMAL INVARIANCE, REGISTERED; THE POINTER FIX DONE (`r7693+71.1`)
+
+***① Campaign 108.*** `400` lines, p `0.65`, in `r7693_71_campaign108/PREDICTION.md`.
+- Run `mh_causal_alignment_gh_N` and `mc_cone_kuratowski_N` on the flat restriction to `M′`.
+- Carry them to the `C⁰` shell by the `cz_scale_*` lemmas: slices and cones accumulate on `𝓗⁺ = {ũ = u_H}` and
+  nowhere else, with properness.
+- **The expected stop** is the adapted observer, a reparametrisation of `sv_O` by `Θ` with the same range.
+- Tangency is not claimed on the shell, since it involves `g`.
+
+***② The pointer fix (60's r7694).*** `StationaryHorizon.lean`, and its copy `NullGeodesic.lean`, now cite "the proof of
+`cor:stationary`" instead of "l.288", in the header and both docstrings. Campaign 106's `RESULT.md` is changed the same
+way. These are docstring and comment changes only, and both probes are rebuilt.
+
 ## ✔ re r7691: 2iii BUILT — NULL ALONG ANY NULL GEODESIC ON N, WITNESSED ON SCHWARZSCHILD'S HORIZON GENERATOR (`r7691+71.2`)
 
 Campaign 107 came true: `426` new lines, with no stop and no fallback. Details are in
