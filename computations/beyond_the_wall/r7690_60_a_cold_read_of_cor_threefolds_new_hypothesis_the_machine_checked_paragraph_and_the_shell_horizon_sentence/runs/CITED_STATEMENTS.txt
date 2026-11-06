@@ -1,0 +1,65 @@
+THE FIVE CITED THEOREMS, STATEMENT TEXT AS THE READINGS SCORED IT
+Banked so every verdict can be re-checked without re-reading two 7k/11k-line probe files.
+Tree: runs/TREE.txt.
+
+### to_strict_null_order   (ThreefoldOrder.lean)
+--- docstring immediately above:
+**`cor:threefold` (ii), the strict null ordering, on any `LocallyOneChart` spacetime on `N`
+(BUILT).** If `q ∈ ∂J⁺(p)` and `r` is causally between `p` and `q` (`p ≤ r ≤ q`), then `r ∉ I⁺(p)`.
+If `p ≪ r`, the dual push-up `mk_pushup'` gives `p ≪ q`, so `q` lies in the open `I⁺(p) ⊆ J⁺(p)`,
+hence in `int J⁺(p)`, which a frontier point does not. No geodesic is assumed. (The hypothesis
+`Cau p r` is not used by the proof: `r ≤ q` alone suffices.)
+--- statement, as scored:
+theorem to_strict_null_order (S : MSpacetime E N) (hL : S.LocallyOneChart) {p q r : N}
+    (hq : q ∈ frontier {y | S.Cau p y}) (_hpr : S.Cau p r) (hrq : S.Cau r q) : ¬ S.Chr p r
+
+### to_cor_1c   (ThreefoldOrder.lean)
+--- docstring immediately above:
+**`thm:metric-singularity` 1c, in one theorem (BUILT).** On `Pt` (`minkN`), the two events
+`p = γN 0 = (0, 1)` and `q = γN 1 = (0, e)` of `ac_witness`'s Rindler-horizon generator are
+* **topologically distinct:** `p ≠ q`;
+* **causally ordered:** `p ≤ q` and `p ̸≪ q`, with `q ∈ ∂J⁺(p)`, and ①'s ordering: no event
+  causally between them is in `I⁺(p)` (in particular no point `γN s`, `s ∈ [0, 1]`);
+* **metrically coincident:** along `γN`, `g(γ′, γ′) = 0` on `[0, 1]`, and for the adapted splitting
+  `to_σN` (vanishing lapse) `Δx = 0`, and `Δτ = 0` by `ac_metric_singularity_along` applied on
+  `minkN` itself; these equal `ac_witness`'s `Δx`, `Δτ` on the model space.
+--- statement, as scored:
+theorem to_cor_1c :
+    to_γN 0 = to_gen 1 ∧ to_γN 1 = to_gen (Real.exp 1) ∧
+    to_γN 0 ≠ to_γN 1 ∧
+    minkN.Cau (to_γN 0) (to_γN 1) ∧ ¬ minkN.Chr (to_γN 0) (to_γN 1) ∧
+    to_γN 1 ∈ frontier {y | minkN.Cau (to_γN 0) y} ∧
+    (∀ r, minkN.Cau (to_γN 0) r → minkN.Cau r (to_γN 1) → ¬ minkN.Chr (to_γN 0) r) ∧
+    (∀ s ∈ Icc (0:ℝ) 1, minkN.Cau (to_γN 0) (to_γN s) ∧ minkN.Cau (to_γN s) (to_γN 1) ∧
+      ¬ minkN.Chr (to_γN 0) (to_γN s)) ∧
+    (∀ s ∈ Icc (0:ℝ) 1,
+      minkN.gE (to_γN s) (MSpacetime.vel to_γN s) (MSpacetime.vel to_γN s) = 0) ∧
+    (∀ s, to_σN.n s = 0) ∧ to_σN.Δx = 0 ∧ to_σN.Δτ = 0 ∧
+    to_σN.Δx = ACModel.σ.Δx ∧ to_σN.Δτ = ACModel.σ.Δτ
+
+### sh_headline_D   (SchwarzschildShellHorizon.lean)
+--- docstring immediately above:
+**Headline `sh_headline_D` (BUILT).** On the extended shell model: `D = I⁻(O) = {ũ < u_H}`,
+`J⁻(O) = D`, `∂D = 𝓗⁺ = {ũ = u_H}` (the frontier in `P`), `𝓗⁺ ⊆ M′` and non-empty, and the
+retarded slicing `Θ_shell` is Cauchy temporal on `D` for `0 < η ≤ 2`.
+--- statement, as scored:
+theorem sh_headline_D (v₀ : ℝ) :
+    (sh_S hM v₀).D (range (sv_O M v₀)) = {y : P | y.1 < sv_uH M v₀} ∧
+    (sh_S hM v₀).JpastSet (range (sv_O M v₀)) = (sh_S hM v₀).D (range (sv_O M v₀)) ∧
+    (sh_S hM v₀).H (range (sv_O M v₀)) = {y : P | y.1 = sv_uH M v₀} ∧
+    (sh_S hM v₀).H (range (sv_O M v₀)) ⊆ (sh_S hM v₀).M ∧
+    ((sh_S hM v₀).H (range (sv_O M v₀))).Nonempty ∧
+    ∀ a η : ℝ, 0 < a → 0 < η → η ≤ 2 →
+      (sh_S hM v₀).IsCauchyTemporalOn ((sh_S hM v₀).D (range (sv_O M v₀))) (sv_Θsh M a η v₀)
+
+### sh_H_r   (SchwarzschildShellHorizon.lean)
+--- docstring immediately above:
+**On `𝓗⁺` with `v ≥ v₀`: `r = 2M`.**
+--- statement, as scored:
+theorem sh_H_r {v₀ : ℝ} {y : P} (hy : y.1 = sv_uH M v₀) : sv_r M v₀ y = 2 * M
+
+### sh_H_flat   (SchwarzschildShellHorizon.lean)
+--- docstring immediately above:
+**On `𝓗⁺` with `v < v₀`: `Φ′ = 1`**, the horizon forms in the flat body.
+--- statement, as scored:
+theorem sh_H_flat {v₀ : ℝ} {y : P} (hy : y.1 = sv_uH M v₀) (hv : y.2 ≤ v₀) : sh_Φ M v₀ y = 1

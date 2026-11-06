@@ -1,0 +1,153 @@
+==============================================================================
+ARM 1 -- DOES `no closed causal curves` DO THE WORK IN (i)?
+==============================================================================
+  source: l.167 (statement), l.171 ((i)); read on the whitespace-FLATTENED copy
+
+  1a SUFFICIENCY
+    read   the statement names the causality condition      : True
+    read   the statement names a null geodesic SEGMENT       : True
+    read   the statement names the strict frontier relation  : True
+    VERDICT SUPPORTED -- a future-directed null geodesic segment with p = q has a nowhere-zero null tangent, so its image is a closed causal curve; the stated hypothesis excludes exactly that, and nothing further is needed.
+
+  1b THE REASON AS GIVEN (negative probe 7 governs)
+    read   (i) concludes distinctness                        : True
+    read   (i) invokes the hypothesis in its own words        : True
+    VERDICT SUPPORTED -- the reason given in (i) is "a segment returning to the event it left would be a closed causal curve", which is the stated hypothesis applied to the stated segment.
+    neg7   reason struck out -> STATED-BUT-UNUSED (must be STATED-BUT-UNUSED)
+    G3     hypothesis removed from the statement -> names it: False (must be False)
+
+  1c IS 71's WITNESS EXCLUDED? (recomputed, not recalled)
+    read   g(tangent, tangent) along U = 0                   : 0
+    read   endpoint of s in [0,1] minus the translate of its start: [0, 0]
+    VERDICT SUPPORTED -- the witness's own null line U = 0 closes under the identification and is causal (null tangent), so the quotient HAS a closed causal curve and the new hypothesis excludes it. The one object known to defeat the old wording is ruled out by the new one.
+
+==============================================================================
+ARM 2 -- DOES ANYTHING ELSE IN P1 RELY ON THE OLD WORDING?
+==============================================================================
+  enumerated sites (alpha = cites, beta = restates hypotheses, gamma = asserts parts):
+    site   l.131  beta   states a Lorentzian-manifold hypothesis        -> DOES NOT REST ON IT
+    site   l.140  alpha  cites the corollary                            -> DOES NOT REST ON IT (grounds the parts in a named probe)
+    site   l.167  beta   states a Lorentzian-manifold hypothesis        -> THE COROLLARY ITSELF (not another site)
+    site   l.188  gamma  states the corollary's parts of a class of objects -> DOES NOT REST ON IT (grounds the parts in a named probe)
+    site   l.190  gamma  states the corollary's parts of a class of objects -> RELIES
+    VERDICT 1 SITE(S) RELY: l.190
+    neg8   injected site -> RELIES (must be RELIES)
+    neg8   site naming its own condition -> DOES NOT REST ON IT (names a condition of its own) (must NOT be RELIES)
+
+==============================================================================
+ARM 3 -- THE PARAGRAPH AFTER `cor:threefold`, AGAINST `ThreefoldOrder.lean`
+==============================================================================
+
+  3a  "Part (ii) ... is machine-checked"  -> to_strict_null_order
+    read   needs 'frontier'                                           True
+    read   needs 'S.Cau r q'                                          True
+    read   needs 'S.Chr p r'                                          True
+    VERDICT SUPPORTED -- the theorem concludes exactly (ii)'s clause: from q on the frontier of J+(p) and r causally before q, NOT p << r.
+
+  3b  "all four parts together on one pair"  -> to_cor_1c
+    read   needs 'to_γN 0 ≠ to_γN 1'                                  True
+    read   needs 'frontier'                                           True
+    read   needs 'to_σN.Δτ = 0'                                       True
+    read   (iii) null along the WHOLE segment (Icc 0 1)               True
+    read   every part on the SAME pair (position, not presence)       True
+    VERDICT SUPPORTED -- one theorem, one pair `to_γN 0`, `to_γN 1`, carrying distinctness, the causal ordering with the frontier clause, nullity on all of [0,1], and Δx = Δτ = 0 with vanishing lapse.
+
+  3c  the setting: metric C1, time orientation continuous in a chart about each point
+    read   LocallyOneChart asks ContDiffOn R 1 of the metric          True
+    read   LocallyOneChart asks the time orientation CONTINUOUS       True
+    read   both asked in a chart about each point (extChartAt p p)    True
+    read   to_strict_null_order's signature asks Hausdorff of N       False
+    read   its section's variable block asks Hausdorff of N           False
+    read   (T2Space appears in the file, on OTHER theorems, as an explicit instance) True
+    VERDICT SUPPORTED -- the two regularity clauses the sentence names are LocallyOneChart's two clauses, asked in the preferred chart at each point. The theorem asks no Hausdorff of N -- the file carries [T2Space N] on other theorems, not on this one -- so it holds in the remark's setting a fortiori: STRONGER-THAN-CLAIMED on that one hypothesis, recorded and not upgraded.
+
+  3d  "no event causally after p AND causally before q lies in I+(p)"
+    read   the statement carries `Cau p r`                            True
+    read   ...but binds it as UNUSED (`_hpr`)                         True
+    read   the statement carries `Cau r q`                            True
+    VERDICT SUPPORTED, and STRONGER-THAN-CLAIMED -- the sentence says `causally after p and causally before q`; the theorem binds `Cau p r` and does not use it, so `causally before q` alone suffices. Recorded as a result; the sentence is not upgraded.
+
+  3e  "the proof pushes a chronological relation along a causal one and uses no geodesic"
+    read   the proof invokes the push-up `mk_pushup'`                 True
+    read   the proof body mentions a geodesic                         False
+    read   the whole theorem block mentions a geodesic (docstring aside) False
+    VERDICT SUPPORTED -- the proof is one application of the dual push-up to a chronological relation along a causal one, and no geodesic appears in it.
+
+  3f  the Rindler sentence, five conjuncts and "all in one theorem"
+    read   distinct                               (to_γN 0 ≠ to_γN 1)            True
+    read   causally ordered                       (minkN.Cau (to_γN 0) (to_γN 1) True
+    read   and NOT chronologically                (¬ minkN.Chr (to_γN 0) (to_γN) True
+    read   the later on the frontier              (frontier)                     True
+    read   null along the generator               (minkN.gE (to_γN s))           True
+    read   Dx = Dt = 0, lapse vanishing           (to_σN.Δx = 0)                 True
+    read   the lapse vanishes there               (∀ s, to_σN.n s = 0)           True
+    read   all in ONE theorem                     single `theorem`               True
+    read   the model is the flat plane            minkN M = univ                 True
+    read   on the Rindler horizon generator       U = 0, V = e^s                 True
+    VERDICT SUPPORTED -- all five conjuncts and the "one theorem" claim are carried by to_cor_1c's own statement, on the flat plane `minkN` (M = univ) along ac_witness's Rindler-horizon generator.
+
+==============================================================================
+ARM 4 -- THE SHELL-HORIZON SENTENCE, AGAINST `SchwarzschildShellHorizon.lean`
+==============================================================================
+
+  4a  "the exterior is the causal past of the observer"
+    read   D (range O) given as a set equality                        True
+    read   J-(O) = D as its own conjunct                              True
+    VERDICT SUPPORTED -- and by an EQUALITY of the causal past with D, not an inclusion; D is itself I-(O) by definition, so the causal and chronological pasts coincide: STRONGER-THAN-CLAIMED, recorded.
+
+  4b  "its boundary is the future horizon ALONE"  (the r7688 word, read fresh)
+    read   the boundary is given as an EQUALITY to one locus          True
+    read   H is the frontier of J-(O) by definition                   True
+    read   the locus is a single null hypersurface {u~ = u_H}         True
+    VERDICT SUPPORTED -- "alone" is carried by the EQUALITY: the frontier of the exterior is that one locus and nothing else, so no second component (no white-hole horizon) can be in it. Same structural move as r7680's `se_foundation` and r7688's `sv_D`; unlike the eternal sentence r7688 read, here the probe states the equality.
+
+  4c  "at r = r_h once the shell has passed"
+    read   sh_H_r concludes sv_r = 2 * M                              True
+    read   sh_H_r's STATEMENT carries a condition on v                False
+    read   sh_H_r's DOCSTRING names a condition on v                  True
+    read   sv_r is the KRUSKAL radial function rK of chi              True
+    VERDICT SUPPORTED -- the cited theorem gives r = 2M at every point of the horizon locus. The sentence's qualifier is the physically meaningful restriction and the theorem needs none, because `sv_r` is the Kruskal vacuum radial function continued over the whole model rather than the areal radius of the flat interior. ** AND A DEFECT IN THE PROBE: sh_H_r's docstring names `with v >= v0` and its STATEMENT does not carry it -- the docstring claims a hypothesis the theorem does not have. Routed, not edited. **
+
+  4d  "already formed inside the flat body before it arrives"
+    read   sh_H_flat concludes the conformal factor is 1              True
+    read   ...under a condition v <= v0 (before the shell)            True
+    read   Phi = 1 means the metric IS the flat one (g = Phi * (-du dv)) True
+    read   the EXISTENCE of such points follows from 4b's set equality True
+    VERDICT SUPPORTED -- and the existential half is carried too, by the CITED pair rather than elsewhere: the boundary EQUALS {u~ = u_H}, a locus holding a point at every v, so points with v < v0 are on the horizon, and sh_H_flat puts the flat metric at exactly those. No MIS-CITED verdict is reached here.
+
+  4e  "the slicing is Cauchy on the exterior that horizon bounds"
+    read   sh_headline_D carries IsCauchyTemporalOn on D              True
+    read   its quantifier is 0 < eta <= 2, as the previous sentence says True
+    read   the slicing named is sv_Theta_sh                           True
+    VERDICT SUPPORTED -- with the quantifier intact: the conjunct's eta range is the one the sentence before it states, and a conjunct's QUANTIFIER is part of the claim.
+
+  G3 flip on the Lean readings
+    G3     4e on a statement with the Cauchy clause weakened -> False (must be False)
+    G3     3b on a statement with distinctness removed -> False (must be False)
+
+  the standing negative probes that this revision can still run
+    read   needs 'a figure that is not there'                         False
+    neg1   a clause absent from the cited statement reads NOT SUPPORTED: True
+    neg3   the nullity conjunct is read UNDER its binder, not at TOP: True
+    neg6   the reliance reading answered both ways in ARM 2: True
+
+==============================================================================
+SUMMARY
+==============================================================================
+  SUPPORTED -- a future-directed null geodesic segment with p = q has a nowhere-zero null tangent, so its image is a closed causal curve; the stated hypothesis ex
+  SUPPORTED -- the reason given in (i) is "a segment returning to the event it left would be a closed causal curve", which is the stated hypothesis applied to the
+  SUPPORTED -- the witness's own null line U = 0 closes under the identification and is causal (null tangent), so the quotient HAS a closed causal curve and the n
+  1 SITE(S) RELY: l.190
+  SUPPORTED -- the theorem concludes exactly (ii)'s clause: from q on the frontier of J+(p) and r causally before q, NOT p << r.
+  SUPPORTED -- one theorem, one pair `to_γN 0`, `to_γN 1`, carrying distinctness, the causal ordering with the frontier clause, nullity on all of [0,1], and Δx = 
+  SUPPORTED -- the two regularity clauses the sentence names are LocallyOneChart's two clauses, asked in the preferred chart at each point. The theorem asks no Ha
+  SUPPORTED, and STRONGER-THAN-CLAIMED -- the sentence says `causally after p and causally before q`; the theorem binds `Cau p r` and does not use it, so `causall
+  SUPPORTED -- the proof is one application of the dual push-up to a chronological relation along a causal one, and no geodesic appears in it.
+  SUPPORTED -- all five conjuncts and the "one theorem" claim are carried by to_cor_1c's own statement, on the flat plane `minkN` (M = univ) along ac_witness's Ri
+  SUPPORTED -- and by an EQUALITY of the causal past with D, not an inclusion; D is itself I-(O) by definition, so the causal and chronological pasts coincide: ST
+  SUPPORTED -- "alone" is carried by the EQUALITY: the frontier of the exterior is that one locus and nothing else, so no second component (no white-hole horizon)
+  SUPPORTED -- the cited theorem gives r = 2M at every point of the horizon locus. The sentence's qualifier is the physically meaningful restriction and the theor
+  SUPPORTED -- and the existential half is carried too, by the CITED pair rather than elsewhere: the boundary EQUALS {u~ = u_H}, a locus holding a point at every 
+  SUPPORTED -- with the quantifier intact: the conjunct's eta range is the one the sentence before it states, and a conjunct's QUANTIFIER is part of the claim.
+
+every registered reading ran; 83 readings recorded.
