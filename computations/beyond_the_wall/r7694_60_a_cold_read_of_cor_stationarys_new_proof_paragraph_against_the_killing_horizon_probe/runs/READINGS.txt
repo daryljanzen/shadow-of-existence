@@ -1,0 +1,116 @@
+==============================================================================
+ARM 1 -- ARE THE HYPOTHESES STATED WHOLE?  (the order's first "above all")
+==============================================================================
+    read      IsKillingHorizon fields, read at source            : C1, ne_zero, hRep_diff, killing, generator
+
+  1a EVERY FIELD OF THE STRUCTURE IS STATED BY A CLAUSE
+    read      C1          <- "continuously differentiable"                  True
+    read      ne_zero     <- "nonzero on it"                                True
+    read      hRep_diff   <- "metric's chart representative differentiable" True
+    read      killing     <- "\mathcal{L}_Xg=0"                             True
+    read      generator   <- "integral curve of $X$ lying in it"            True
+    VERDICT   1a SUPPORTED -- 5 of the 5 fields of IsKillingHorizon have a clause of the paragraph stating them.
+    neg11     one clause struck -> HYPOTHESIS OMITTED ['ne_zero'] (must be HYPOTHESIS OMITTED, naming ne_zero)
+
+  1b EVERY CLAUSE OF THE PARAGRAPH IS A FIELD (no invented hypothesis)
+    read      hypothesis clauses counted in the prose           : 5
+    read      prose words naming a hypothesis the structure has no field for          : none
+    VERDICT   1b SUPPORTED -- the paragraph states no hypothesis the structure does not ask.
+
+  1c THE QUANTIFIERS AND THE LOCI (a conjunct's quantifier is part of the claim)
+    read      C1/ne_zero say "on it"                     C1 : ∀ p ∈ Hs          True
+    read      hRep_diff says "near it"                   eventually in a nhd    True
+    read      killing says "near it"                     eventually in a nhd    True
+    read      generator: "through each of its points"    ∀ p ∈ Hs, ∃ γ          True
+    read      generator: "null SOMEWHERE", not everywhere null at γ t₀ only      True
+    read      and null EVERYWHERE is DERIVED, not asked  st_null_of_isKilling…  True
+    VERDICT   1c SUPPORTED -- every clause's locus matches its field: "on it" is pointwise on Hs, "near it" is an eventually-in-a-neighbourhood, "through each of its points" is the per-point existential, and "null somewhere" is null at ONE parameter of the generator -- which is the weaker hypothesis, with null EVERYWHERE derived from it by a separate theorem. The paragraph takes the weaker one, correctly.
+
+  1d THE AMBIENT SETTING: "In the setting of Remark rem:formalised"
+    read      the remark says a C^1 atlas                       : True
+    read      the remark says an ARBITRARY real normed space    : True
+    read      the remark says it holds in EVERY DIMENSION       : True
+    read      the section asks [FiniteDimensional ℝ E]         : True
+    read      the section asks a C^2 atlas (IsManifold … 2 N)   : True
+    read      ...rather than a C^1 atlas (IsManifold … 1 N)     : True
+    read      the section asks Hausdorff of N                   : False
+    VERDICT   1d SCOPE-DIFFERS -- the paragraph borrows the remark's setting, and the section that holds BOTH IsKillingHorizon and st_cor_stationary asks two hypotheses the remark explicitly disclaims: finite-dimensionality, against "an arbitrary real normed space"; and a C^2 atlas, against "a C^1 atlas". So the sentence claims a generality this theorem has not got, including the remark's own "holds in every dimension" (True). It asks no Hausdorff, which is weaker and harmless. ** Six words: "in the setting of Remark X, in finite dimension and with a C^2 atlas". Routed, not edited. **
+
+==============================================================================
+ARM 2 -- IS "CITED AND NOT FORMALISED" RIGHT?  (the second "above all")
+==============================================================================
+
+  2a THE POSITIVE HALF: the conclusion taken as the hypothesis
+    read      st_cor_stationary takes IsKillingHorizon of S.H J : True
+    read      S.H J is the horizon ∂J⁻(J) by definition         : True
+    VERDICT   2a SUPPORTED -- the theorem's hypothesis IS rigidity's conclusion: the frontier of the causal past is a Killing horizon of X, and that is what it assumes.
+
+  2b THE NEGATIVE HALF: an ABSENCE claim, read as one, naming what was searched
+    read      occurrences of "analytic" in the whole probe      : 3
+    read      ...of those, any that is a HYPOTHESIS rather than prose     : 0
+    read      theorems/lemmas whose NAME carries rigid/stationar: ['theorem st_cor_stationary']
+    read      and the only one is st_cor_stationary, which ASSUMES it: True
+    read      the probe says so itself ("Rigidity itself is not proved"): True
+    VERDICT   2b SUPPORTED -- searched the whole probe for "analytic": 3 occurrence(s), 3 of them inside a docstring or comment and 0 in a hypothesis; and for any theorem or lemma whose name carries "rigid" or "stationar": ['theorem st_cor_stationary'], which takes the Killing-horizon property as a HYPOTHESIS. So nothing in the probe derives a Killing horizon from stationarity, and "cited and not formalised" is right -- neither UNDERSTATED nor OVERSTATED is reached.
+    neg12     a probe with a rigidity theorem of its own -> names ['theorem st_rigidity_proved'] (must NOT be the assume-it one alone)
+    neg12     and the OVERSTATED direction is reachable: a claim of machine-checking a clause arm 3 finds absent would read NOT SUPPORTED there
+
+  2c THE FIRST PARAGRAPH: "the theorem's hypotheses ... include analyticity"
+    read      l.290 cites the rigidity theorem and analyticity  : True
+    read      l.290 then says lem:killing applies               : True
+    read      and the probe asks NO analyticity of its own      : True
+    VERDICT   2c SUPPORTED -- the division of labour is right: the prose paragraph carries the cited theorem and its analyticity, and the probe, taking the conclusion, asks no analyticity at all. The two paragraphs do not overlap and neither claims the other's ground.
+
+==============================================================================
+ARM 3 -- THE FOUR CONCLUSIONS, AGAINST st_cor_stationary
+==============================================================================
+    read      the tangent is null along every integral curve True
+    read      the tangent is null along every integral curve True
+    G4        the tangent is null along every integral curve -> SUPPORTED
+    read      every pair is metrically coincident            True
+    read      every pair is metrically coincident            True
+    G4        every pair is metrically coincident -> SUPPORTED
+    read      the horizon's adapted splitting assigns Δx = Δ True
+    read      the horizon's adapted splitting assigns Δx = Δ True
+    G4        the horizon's adapted splitting assigns Δx = Δτ = 0 -> SUPPORTED
+
+  3b "distinct points stay distinct" -- read for its GUARD
+    read      the distinctness conjunct is guarded by InjOn γ   : True
+    read      the paragraph states it with no guard             : True
+    read      the metric-coincidence conjunct is UNGUARDED      : True
+    VERDICT   3b SCOPE-DIFFERS -- the probe's distinctness conjunct is conditional, `InjOn γ (Icc a b) → …`, and the paragraph states "distinct points stay distinct" with no condition. Without injectivity a generator may revisit a point, so the unguarded reading is stronger than the theorem. Note the metric-coincidence conjunct beside it IS unguarded, so this is the one conclusion of the four that carries a hypothesis the prose does not. ** Six words: "distinct points stay distinct where the generator is injective". Routed, not edited. **
+    neg3      the conclusions are read UNDER their binders (∀ t, ∀ t₁ t₂, ∃ σ), not at TOP: True
+
+==============================================================================
+ARM 4 -- THE WITNESS, AGAINST st_witness
+==============================================================================
+    read      the domain {V>0, UV<1} is the probe's own seWS    : True
+    read      the field reads (−U/4M, V/4M), i.e. (V∂_V−U∂_U)/4M: True
+    read      the witness discharges the SAME IsKillingHorizon  : True
+    read      on the frontier of the causal past of scri        : True
+    read      two DISTINCT events, both on that horizon         : True
+    read      metrically coincident: kg_Related BOTH ways       : True
+    read      ...and Δτ = 0 with the splitting at Δx = Δτ = 0   : True
+    VERDICT   4 SUPPORTED -- the witness is on the paragraph's own domain with the paragraph's own field to the factor and the signs, it discharges the VERY predicate arm 1 reads (so arm 1 is not vacuous), and it puts two distinct events of that horizon in metric coincidence both ways with Δx = Δτ = 0.
+
+  4b A LINE REFERENCE INSIDE THE PROBE, read because a citation names a tree
+    read      every line number the probe cites into P1         : ['283', '288']
+    read      ...the one it gives FOR the rigidity citation      : ['288']
+    read      P1's rigidity sentence is at                      : l.290
+    VERDICT   4b STALE LINE REFERENCE -- the probe cites P1 l.288 for the rigidity citation and that sentence now sits at l.290. Nothing in the paper is wrong; the probe's own pointer has drifted by 2 line(s). This seat's standing lesson applies to a probe as much as to a reading: a line number is a claim about a TREE, and this one names none. Routed as a precision item, not edited.
+
+==============================================================================
+SUMMARY
+==============================================================================
+  1a SUPPORTED -- 5 of the 5 fields of IsKillingHorizon have a clause of the paragraph stating them.
+  1b SUPPORTED -- the paragraph states no hypothesis the structure does not ask.
+  1c SUPPORTED -- every clause's locus matches its field: "on it" is pointwise on Hs, "near it" is an eventually-in-a-neighbourhood, "through each of it
+  1d SCOPE-DIFFERS -- the paragraph borrows the remark's setting, and the section that holds BOTH IsKillingHorizon and st_cor_stationary asks two hypoth
+  2a SUPPORTED -- the theorem's hypothesis IS rigidity's conclusion: the frontier of the causal past is a Killing horizon of X, and that is what it assu
+  2b SUPPORTED -- searched the whole probe for "analytic": 3 occurrence(s), 3 of them inside a docstring or comment and 0 in a hypothesis; and for any t
+  2c SUPPORTED -- the division of labour is right: the prose paragraph carries the cited theorem and its analyticity, and the probe, taking the conclusi
+  3b SCOPE-DIFFERS -- the probe's distinctness conjunct is conditional, `InjOn γ (Icc a b) → …`, and the paragraph states "distinct points stay distinct
+  4 SUPPORTED -- the witness is on the paragraph's own domain with the paragraph's own field to the factor and the signs, it discharges the VERY predica
+  4b STALE LINE REFERENCE -- the probe cites P1 l.288 for the rigidity citation and that sentence now sits at l.290. Nothing in the paper is wrong; the 
+
+every registered reading ran; 10 verdicts recorded.
