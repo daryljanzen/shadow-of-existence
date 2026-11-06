@@ -541,7 +541,13 @@ for _nm, _got, _want, _tol in (
         ("the largest DECOUPLED residual away from the octopole, printed as under three", _PAWAY, 2.33, 5e-3),
         ("the largest DECOUPLED residual above l = 5, printed as under one", _PHI, 0.57, 5e-3),
         ("the build spread at l = 4", _S4, -4.90, 5e-3),
-        ("the build spread at l = 3", _S3, -0.67, 5e-3)):
+        ("the build spread at l = 3", _S3, -0.67, 5e-3),
+        # ⛭ `r7691+cc66`, ON 69's ORDER: ** AND THE SPREAD ABOVE l = 5, WHICH MY OWN SCOPE SENTENCE
+        #   RESTS ON AND I LEFT UNPINNED. **  `r7687`'s sentence says the two builds "agree to under
+        #   one per cent of each other above l = 5" and I pinned only l = 3 and l = 4.  *A sentence of
+        #   mine resting on a number no gate reads is `r7679`'s defect in my own routed prose.*
+        ("the worst build spread above l = 5, which the scope sentence calls under one per cent",
+         float(np.max(np.abs(_spr[_hi5]))), 0.63, 5e-3)):
     check(f"⛭ `r7687` {_nm}", abs(_got - _want) < _tol, f"{_got:+.2f} against {_want:+.2f}")
 
 check("⛭⛭ ** AND THE CONCLUSION IS INVARIANT ON THIS POINT TOO, which EXTENDS the clause above to a "
@@ -558,15 +564,46 @@ check("⛭⛭ ** AND THE CONCLUSION IS INVARIANT ON THIS POINT TOO, which EXTEND
       f"{100 * max(abs(_DD[i] / _DF[i] - 1) for i in range(len(_DE))):.1f}% against "
       f"{100 * _agree:.1f}% at the refit point")
 
-check("\u26d4 ** AND WHAT THIS BANK CANNOT SAY: it cannot name the CLOCK as the octopole's reason. ** "
-      "Its excess survives both tower treatments (spread 0.67 against a residual of 5.54), which rules "
-      "the tower treatment OUT and does not rule the clock IN -- both LEAFREC banks are SPLITCLOCK, and "
-      "the one-clock bank carries no point record to check it sits here.  *A one-clock leg at this point "
-      "would settle it in one run; `r7685` named the clock without one*",
-      abs(_S3) < 1.0 and abs(_P3) > 3.0 * abs(_S3)
-      and 'config' not in np.load(os.path.join(SPEC, 'cc66_lowell_sweep.npz'), allow_pickle=True).files,
-      f"octopole residual {_P3:+.2f} against a build spread of {_S3:+.2f}, and the one-clock bank "
-      f"records no point")
+# ⛭⛭⛭ `r7691+cc66`: ** THE "CANNOT SAY" GATE HAS EXPIRED AS DESIGNED, AND IS REPLACED BY THE
+#   ATTRIBUTION IT WAS HOLDING OPEN. **
+#   *`r7687` asserted what this bank COULD NOT say -- that it could not name the clock as the
+#   octopole's reason -- and keyed that to the absence of a one-clock point record.  **70 has now
+#   banked the one-clock leg at this very point** (`SPLITCLOCK=False`, same `68.6`/`0.2973`/`0.02237`),
+#   so the old gate goes red by construction.  ⇒ It is REPLACED and not widened: it said the
+#   attribution was unavailable, and it now is.*
+#   ⌗ *That is what a gate which expires itself is for -- it refused the claim for exactly one
+#   revision, until the measurement that licenses it existed.*
+_ONE = os.path.join(SPEC, 'p15_lowell_depths_distances_oneclock_leafrec1.npz')
+check("⛭ `r7691` 70's one-clock leg at the distances point is present: "
+      "`spectra/p15_lowell_depths_distances_oneclock_leafrec1.npz`", os.path.exists(_ONE))
+_OZ = np.load(_ONE, allow_pickle=True)
+_o_relF = 100.0 * (np.asarray(_OZ['armB_frozen'], float) - _DA) / _DA
+_o_relD = 100.0 * (np.asarray(_OZ['armB_decoupled'], float) - _DA) / _DA
+print("\n  \u26ed `r7691` ONE CLOCK AGAINST THE SPLIT, at the same point")
+print("     l   FROZEN one / split      DECOUPLED one / split       swing F / D")
+for _i, _l in enumerate(_DE):
+    print(f"    {_l:2d}  {_o_relF[_i]:+7.2f} / {_relF[_i]:+7.2f}   "
+          f"{_o_relD[_i]:+9.2f} / {_relD[_i]:+7.2f}   "
+          f"{_relF[_i] - _o_relF[_i]:+7.2f} / {_relD[_i] - _o_relD[_i]:+7.2f}")
+_i3 = int(np.where(_DE == 3)[0][0])
+for _nm, _got, _want in (("70's one-clock octopole residual, FROZEN", float(_o_relF[_i3]), -1.01),
+                         ("70's one-clock octopole residual, DECOUPLED", float(_o_relD[_i3]), -1.10)):
+    check(f"⛭ `r7691` {_nm}", abs(_got - _want) < 5e-3, f"{_got:+.2f} against {_want:+.2f}")
+_swF = _relF - _o_relF
+_swD = _relD - _o_relD
+check("⚑⛭⛭ ** THE OCTOPOLE'S EXCESS IS THE TWO-CLOCK SPLIT'S, MEASURED BY TURNING THE SPLIT OFF. ** "
+      "With one clock the octopole sits BELOW arm A on both builds; with the split it sits about five "
+      "per cent above, and that swing is the largest of the seven multipoles on both builds.  "
+      "\u26d4 *This REPLACES `r7687`'s gate asserting the attribution could not be made from these "
+      "banks -- which was true of the banks it had, and 70 has since run the leg that settles it.  "
+      "What this licenses is the attribution, measured by removing the split; it does NOT license a "
+      "mechanism for why the split does it, nor the same attribution at any other multipole without "
+      "its own swing measured*",
+      _o_relF[_i3] < 0 < _relF[_i3] and _o_relD[_i3] < 0 < _relD[_i3]
+      and int(np.argmax(np.abs(_swF))) == _i3 and int(np.argmax(np.abs(_swD))) == _i3,
+      f"one clock {_o_relF[_i3]:+.2f}/{_o_relD[_i3]:+.2f}, split {_relF[_i3]:+.2f}/{_relD[_i3]:+.2f}; "
+      f"swing {_swF[_i3]:+.2f}/{_swD[_i3]:+.2f}, the largest of the seven on both builds "
+      f"(next largest {sorted(np.abs(_swF))[-2]:.2f}/{sorted(np.abs(_swD))[-2]:.2f})")
 #: ⛔⛭⛭ AND WHAT THE REPOINT CANNOT DO IS NAMED HERE RATHER THAN LEFT TO BE NOTICED.
 _MPT = json.loads(str(SW_AOR['manifest'].item()))['point']
 print(f"    \u26d4 the bank's own point: H0 {_MPT['H0']}, Om {_MPT['Om']}, WBH2 {_MPT['WBH2']}; "

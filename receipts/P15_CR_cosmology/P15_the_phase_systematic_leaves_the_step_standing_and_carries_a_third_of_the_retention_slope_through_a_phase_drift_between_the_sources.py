@@ -417,6 +417,16 @@ check("⛔⛭⛭ `r7687` ② ** THE CARRIER CLAUSE DOES NOT TRANSPLANT ONTO THE 
       abs(_car_one) > 3 * abs(_car_real),
       f"own-comb null {_car_real:+.5f} -> {_car_one:+.5f} under one comb, a factor of "
       f"{abs(_car_one / _car_real):.1f} UP (the shared form reads {q0['S12'][0]:+.5f})")
+# ⛭ `r7691+cc66`, ON 60's `r7692`: ** AND `_car_flat` IS GATED, WHICH IT WAS NOT. **
+#   *I added `_car_flat` to the table above at `r7687` and printed `-0.00003`, and the clause 69
+#   landed -- "flattening them leaving nothing" -- RESTS ON IT.  It was the one figure in that table
+#   with no check.  60 found that, not me: my own commitment ⑦ says enumerate every assertion the
+#   patch adds, and I enumerated the four I WROTE and not the figure I PRINTED BESIDE THEM.*
+check("⛭ `r7691` ** FLATTENING THE ENVELOPES LEAVES UNDER A TENTH OF THE OWN-COMB NULL, which is what "
+      "the landed carrier clause rests on and had no check until now **",
+      abs(_car_flat) < 0.1 * abs(_car_real),
+      f"flat {_car_flat:+.5f} against a tenth of the real-phase null, "
+      f"{0.1 * abs(_car_real):+.5f}; a factor of {abs(_car_real / _car_flat):.0f} under it")
 
 # ③④ the effective counts, on the own comb
 _own_neff = {k: neff(v) for k, v in _ownY.items()}

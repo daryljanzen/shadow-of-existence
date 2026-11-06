@@ -9,6 +9,125 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ `r7691` (cc66) — **THE DIP TEST CAME BACK POSITIVE AND MY REGISTERED PREDICTION IS FALSIFIED; AND A FIGURE OF MINE YOU HAVE ALREADY QUOTED IS WRONG**
+
+*Items ①, ②, ③a, ③b, ③c all discharged. Receipts green. The two things below need you, in this order:
+the correction, because it is in your order text; then arm ②, because it is a positive result whose
+licence is the whole of its content.*
+
+#### ⛔ ①a **`108.9` IS WRONG. IT IS `108.4`. YOU QUOTED `108.9` IN THE `r7691` ORDER TEXT.**
+
+My `r7689` slope ratio divided the law's twelve-setting slope by the **published rounded** `0.0103`
+instead of the measured `0.010344`: `0.011215/0.0103 = 108.89` against `0.011215/0.010344 = 108.43`.
+⌗ *Same defect class as the "factor of `75`" I caught in the band-RMS docstring at `r7685` — **a derived
+digit computed from a rounded input** — arriving two revisions later in a figure of my own, and past my
+own commitment ⑦ check. The receipt now pins `108.4` against what the file computes, and the pin's own
+name says "not the `108.9` of `r7689`" so the correction cannot be lost.*
+
+#### ⛔⛭ ② **THE DIP TEST: I REGISTERED THAT THE NULL DOES NOT REPRODUCE THE `q ≈ 1.9` DEPARTURE. IT DOES.**
+
+| | amplitude `0.5` (pre-registered) | the banks' own amplitudes |
+|---|---|---|
+| null's detrended response at `q = 1.90` | `+0.0157` — **its own largest of the seven** | `+0.0098` |
+| the measurement's detrended departure there | `+0.0132` | `+0.0132` |
+| fraction reproduced | **`1.185`** | **`0.741`** |
+| seven-band shape correlation | **`+0.922`** | **`+0.957`** |
+
+**And the null of the null, which is what decides what it is worth** — the same correlation at all 24
+injection phases, because a shape match is worth nothing if any phase gives it:
+
+| | amplitude `0.5` | the banks' own |
+|---|---|---|
+| range of the correlation across 24 phases | `−0.971` … `+0.922` | `−0.917` … `+0.989` |
+| **rank of the real phase** | **1 of 24** | **2 of 24** |
+| **rank by fraction reproduced at `q = 1.9`** | **1 of 24** | **2 of 24** |
+| phases correlating above `+0.8` | 3 of 24 | 3 of 24 |
+
+⇒ **The match is not a property of the band construction**: a randomly drawn injection phase does not
+give it.
+
+> ⇒ **WHAT THIS LICENSES:** the `q ≈ 1.9` departure is **consistent in shape** with the phase
+> systematic's own real-phase band response, **and that consistency is specific to the measured phase
+> rather than generic to the banding.**
+
+> ⛔ **WHAT IT DOES NOT LICENSE: "the departure is the drift."** Two of these three were registered
+> before I knew the answer:
+> 1. **The amplitude is chosen.** `1.185` against `0.741` between two defensible choices of a number I
+>    selected — a `1.6 ×` swing. **The size carries no information; only the shape does.**
+> 2. **The drift was never turned off.** The scan varies the phase of an *injected* systematic; it does
+>    not remove the real drift from the real spectra and watch the departure go. That is what made the
+>    octopole's clock attribution legitimate an hour ago, and it is a different measurement.
+> 3. **The detrended shape is essentially one mode whose sign flips with phase** — the correlation
+>    sweeps smoothly `+0.92 → −0.97` and back, and **ten** of the 24 align or anti-align above `0.8` in
+>    absolute value at the pre-registered amplitude, **eight** at the banks' own. It is the **sign and the maximum** that pick the real phase out, not the
+>    existence of a matching shape. ⌗ *Stated because "rank 1 of 24" reads stronger than it is if the
+>    family it ranks within is not described. I would rather hand you the weakness than have you find it.*
+
+⛭ **THE MEASUREMENT THAT WOULD SETTLE IT, AND IT IS A BANK REQUEST FOR 70 AND NOT AN ANALYSIS I CAN RUN:**
+**a build with the phase drift removed, read at the same seven bands.** If the `q ≈ 1.9` departure goes
+with it, that is attribution by exactly the route the one-clock bank bought for the octopole; if it
+stays, the shape match is a coincidence of one mode. ⇒ *Recommend routing it to 70. Until it exists, the
+ceiling above is the ceiling, and I will not draft past it.*
+
+⌗ **If you want this citeable, it is cheap and I priced it before proposing it:** the host is
+`P15_the_phase_systematic…`, which already builds these banks and imports the module — the dip test is
+**37s** standalone, that receipt is **119s** against a **declared 900s**, so `119 → ~156s`, **17 per
+cent of its own declaration and inside the global 600s cap.** *Say the word; I have not pushed it,
+because the order asked for the measurement and not the receipt.*
+
+#### ① b **THE TWO DRAFTED SENTENCES — and the registered distinction is carried in both**
+
+**`l.2795`'s existing clause is PER-ARM** (`A_ℓ` against each arm's own measured comb amplitude, within
+ten per cent, worst `6.7`). **Everything below is an ARM/CONTROL RATIO** (`A_cr/A_lcdm` against the
+own-comb retention ratio). *Two claims about two different quantities; `94.9` per cent does NOT confirm
+"within ten per cent". Registered before I drafted, and it is also stated inside the receipt file, in
+the monotonicity gate's own text, so the licence travels with the computation.*
+
+**FOR `l.2795`, appended after "…accumulating the same sound horizon to `0.36` per cent":**
+
+> *And read as a ratio between the arms rather than against each arm's own amplitude, the same law
+> carries the retention's size and not only its direction*: banded on the retention statistic's own
+> bands the law's arm-to-control acceptance ratio accounts for `94.9` per cent of the summed excess
+> above unity and rises at `108.4` per cent of the measured slope, with nothing fitted in either, six
+> of the seven bands sitting inside the statistic's own setting spread — *so the retention's offset and
+> its rise are one prediction of the acceptance and not two facts about the projection*; *what it does
+> not give is the band-to-band shape*, the law rising monotonically across those bands where the
+> measurement does not.
+
+**FOR THE RETENTION BLOCK, after "and that is why it retains \emph{more}" (`l.1854`):**
+
+> *And the law gives the size of that retention as well as its sign, as a different comparison from the
+> per-arm one above*: the ratio of the two arms' acceptances, banded on the retention statistic's own
+> seven bands, accounts for `94.9` per cent of the summed excess above unity and rises at `108.4` per
+> cent of the measured twelve-setting slope, its own spread across the twelve settings being `0.00059`
+> against the measurement's `0.00137`, with six of the seven bands inside the statistic's own setting
+> spread — *so the offset and the rise are one consequence of the acceptance rather than two measured
+> facts.* *What the law does not produce is the band-to-band shape*: it rises monotonically across those
+> bands and the measurement does not, the single band outside the setting spread sitting at `q ≈ 1.9`.
+
+⌗ **One drafting decision I made rather than left silent: I did NOT add the shape clause to the "Three
+things the law does not do" list, and so did not have to renumber it.** *Those three are about what the
+law is not **scored on**; mine is about what the law does not **produce** of the retention's structure.
+Different register, and a count in a heading is the kind of fact that goes stale silently. If you would
+rather it join the list, it becomes four and I will make that edit instead — your call, not mine.*
+
+#### ③ **THE THREE GATE ITEMS, all green**
+
+`_car_flat` gated at `|−0.00003| < 0.1 × |+0.00328|`, failable from both sides — *and it licenses only
+that "leaving nothing" is checked, NOT that the envelope is irrelevant: your `r7689` correction of me
+stands.* The `> ℓ = 5` spread pinned two-sided at `0.63`. The "cannot name the clock" gate **replaced**
+by the attribution off 70's one-clock bank, not widened.
+
+#### FAILABILITY OF ITEM ①'s SIX ASSERTIONS — every one broken, each leg verified applied before running
+
+Law's acceptance scaled: **4** FAIL. Both arms on one comb: **3**. Module path broken: **1**. Measured
+spectrum scaled: **0** — ⚠ *and that zero is informative, not a hole: the statistic is a **relative**
+oscillation ratio, so a constant rescaling cancels top and bottom. Same shape as `r7687`'s mis-aimed
+leg B, except there the zero was a bad probe and here it is the statistic's own invariance — which is
+why I state the distinction instead of dropping the leg.*
+
+---
+
 ## ⚑ `r7659` (cc66) — **ITEM 5: NEITHER OF 70's FLUID READINGS CHANGES l.2079–2083, AND P15 SHOULD NOT CARRY THE ARM'S TWO-PATH HEIGHTS, BECAUSE THEY HAVE NO SINGLE SIGN**
 
 *All figures are 70's banked `r7657_70_fluid_pair/RESULT.md`, scored through `P15_at_its_own_preferred_H0_…`'s own `_matched` and `score` — the same machinery the control's figures in l.2079–2083 came from. The arithmetic below is mine.*

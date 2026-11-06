@@ -249,6 +249,29 @@ BASELINE = {
             #:   rewritten.  Cite both by SHA.  This seat's later subjects put the cited order AFTER the first words, or
             #:   use its own `r<base>+70.k` id.*
             'r7437',
+            #: ⛔⛭ r7691+cc66.2 (cc66): ** r7437's SHAPE AGAIN, AND IT IS THIS SEAT'S OWN, IN A REVISION
+            #: WHERE THIS SEAT HAD ALREADY WRITTEN THE SUFFIX FORM CORRECTLY ONE COMMIT EARLIER. **
+            #:   * `r7691`: `69`'s own order and merge (`216194247`, "r7691 (69) -- four seats merged; ...")
+            #:     against `cc66`'s `0d369c407`, "r7691 item 1: the acceptance law against the own comb, as
+            #:     a receipt" -- cc66 ANSWERING that order, written in claim syntax.  `69` holds the number;
+            #:     cc66 does not, and had no business beginning a subject with it.
+            #:   ⛔ ** AND THE AGGRAVATION IS THE SAME REVISION. **  *cc66's PREDICTION commit for this very
+            #:     order, `222525554`, reads `r7691+cc66.0 -- PREDICTION registered before any computation
+            #:     ...` -- the CORRECT suffixed form, the form r7371 ordered to every seat, written by this
+            #:     seat minutes earlier. The next commit of the same revision dropped it.  ** So this is not
+            #:     a rule unknown to the seat, nor a rule unapplied by it: it is a rule applied and then
+            #:     dropped between two commits of one revision, which is the r7355 note's "a rule written
+            #:     down and ratified is not a rule applied" with the ratification in this seat's own hand. **
+            #:   ⌗ *Why it is baselined and not renumbered, and the reason is MEASURED and not preference:
+            #:     r3563's reason plus the `r7665` precedent, which is this seat's own and is exactly this
+            #:     case -- cc66 amended a collided subject there, and the pre-amend commit could not be
+            #:     dropped from a pushed branch and was merged back in anyway, so the amendment bought
+            #:     nothing and the collision reached `main` regardless.  The commit is pushed.  Cite both by
+            #:     SHA: `216194247` is 69's r7691, `0d369c407` is cc66's answer to it.*
+            #:   ⌷ *Recorded as a baseline entry and NOT as an exemption from the test: the gate's finding is
+            #:     TRUE and stays true.  What the entry resolves is the ambiguity, with both SHAs, which is
+            #:     what r3563 says a note can do and a renumbering cannot.*
+            'r7691',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
