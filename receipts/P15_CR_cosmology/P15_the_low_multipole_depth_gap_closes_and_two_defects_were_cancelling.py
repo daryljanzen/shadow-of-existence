@@ -498,6 +498,75 @@ check("\u26ed\u26ed ** NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK, ASSE
       all(v == (4, 8) for v in _shape_ok.values()),
       '; '.join(f'{k}: min l={v[0]}, recovery l={v[1]}' for k, v in _shape_ok.items())
       + f'; build-to-build {100 * _agree:.1f}%')
+
+# ===================================================================================================
+# ⛭⛭⛭ `r7687+cc66` ITEM 3, ON 69's ORDER: ** THE DISTANCES POINT, WHICH NO RECEIPT READ. **
+#   *The six low-ℓ claim sites cite THIS receipt, and the figures their redraft prints were measured in
+#   `r7685_cc66.../build_spread.py` against `spectra/p15_lowell_depths_distances_leafrec1.npz` (70's
+#   `r7683+70.1`) -- a bank nothing in `receipts/` opened.  So the sites would have printed figures
+#   beside a receipt that does not compute them, which is what `r7685` was held for one revision
+#   earlier.  This block reads that bank and pins what the sites print.*
+#   ⛔ ** AND IT IS SCOPED, BECAUSE cc66's `r7685` READING OF IT WAS NOT. **  `r7685` said this bank
+#   FALSIFIES "neither the freeze nor the towers is doing the work" at `l = 4`.  It does not, and the
+#   gate above says why: that clause is the INVARIANCE OF THE CONCLUSION, not a percentage.  ⇒ *So this
+#   block asserts the invariance on THIS bank too -- extending the clause's evidence to a second point
+#   rather than contradicting it -- and the per-multipole spread is reported as the diagnostic it is,
+#   the same quantity `_agree` already prints.*
+_DIST = os.path.join(SPEC, 'p15_lowell_depths_distances_leafrec1.npz')
+check("⛭ the distances-point bank the six low-ℓ sites are redrafted from is present: "
+      "`spectra/p15_lowell_depths_distances_leafrec1.npz`", os.path.exists(_DIST))
+_DZ = np.load(_DIST, allow_pickle=True)
+_DE = np.asarray(_DZ['ells'], int)
+_DA = np.asarray(_DZ['armA_exact'], float)
+_DF = np.asarray(_DZ['armB_frozen'], float)
+_DD = np.asarray(_DZ['armB_decoupled'], float)
+_relF = 100.0 * (_DF - _DA) / _DA
+_relD = 100.0 * (_DD - _DA) / _DA
+_spr = 100.0 * (_DF - _DD) / _DA
+print("\n  \u26ed `r7687` THE DISTANCES POINT -- arm A against both arm-B builds")
+print("     l    armA    FROZEN rel%   DECOUPLED rel%   build spread%")
+for _i, _l in enumerate(_DE):
+    print(f"    {_l:2d}  {_DA[_i]:.4f}   {_relF[_i]:+10.2f}   {_relD[_i]:+13.2f}   {_spr[_i]:+12.2f}")
+
+# the five figures the six sites print, each pinned two-sided at the precision they print to
+_off = _DE != 3
+_hi5 = _DE > 5
+_P3 = float(_relD[_DE == 3][0])
+_PAWAY = float(np.max(np.abs(_relD[_off])))
+_PHI = float(np.max(np.abs(_relD[_hi5])))
+_S4 = float(_spr[_DE == 4][0])
+_S3 = float(_spr[_DE == 3][0])
+for _nm, _got, _want, _tol in (
+        ("the octopole residual the sites print as five and a half per cent", _P3, 5.54, 5e-3),
+        ("the largest DECOUPLED residual away from the octopole, printed as under three", _PAWAY, 2.33, 5e-3),
+        ("the largest DECOUPLED residual above l = 5, printed as under one", _PHI, 0.57, 5e-3),
+        ("the build spread at l = 4", _S4, -4.90, 5e-3),
+        ("the build spread at l = 3", _S3, -0.67, 5e-3)):
+    check(f"⛭ `r7687` {_nm}", abs(_got - _want) < _tol, f"{_got:+.2f} against {_want:+.2f}")
+
+check("⛭⛭ ** AND THE CONCLUSION IS INVARIANT ON THIS POINT TOO, which EXTENDS the clause above to a "
+      "second background rather than contradicting it: ** both arm-B builds put the minimum at l = 4 "
+      "and the recovery at l = 8 here, as they do at the refit point.  \u26d4 *cc66's `r7685` read the "
+      "per-multipole spread as falsifying the clause at l = 4; that was a diagnostic promoted to a "
+      "verdict on a claim about the conclusion, which is the error the gate above was written to "
+      "correct.  Withdrawn at `r7687` and asserted here the right way round*",
+      all((int(_DE[int(np.argmin(_v))]),
+           next((int(_l) for _l in _DE if _l >= 5 and _v[list(_DE).index(_l)] >= 0.99), None)) == (4, 8)
+          for _v in (_DF, _DD)),
+      f"frozen min l={int(_DE[int(np.argmin(_DF))])}, decoupled min l={int(_DE[int(np.argmin(_DD))])}; "
+      f"both recover at l=8; build diagnostic on this bank "
+      f"{100 * max(abs(_DD[i] / _DF[i] - 1) for i in range(len(_DE))):.1f}% against "
+      f"{100 * _agree:.1f}% at the refit point")
+
+check("\u26d4 ** AND WHAT THIS BANK CANNOT SAY: it cannot name the CLOCK as the octopole's reason. ** "
+      "Its excess survives both tower treatments (spread 0.67 against a residual of 5.54), which rules "
+      "the tower treatment OUT and does not rule the clock IN -- both LEAFREC banks are SPLITCLOCK, and "
+      "the one-clock bank carries no point record to check it sits here.  *A one-clock leg at this point "
+      "would settle it in one run; `r7685` named the clock without one*",
+      abs(_S3) < 1.0 and abs(_P3) > 3.0 * abs(_S3)
+      and 'config' not in np.load(os.path.join(SPEC, 'cc66_lowell_sweep.npz'), allow_pickle=True).files,
+      f"octopole residual {_P3:+.2f} against a build spread of {_S3:+.2f}, and the one-clock bank "
+      f"records no point")
 #: ⛔⛭⛭ AND WHAT THE REPOINT CANNOT DO IS NAMED HERE RATHER THAN LEFT TO BE NOTICED.
 _MPT = json.loads(str(SW_AOR['manifest'].item()))['point']
 print(f"    \u26d4 the bank's own point: H0 {_MPT['H0']}, Om {_MPT['Om']}, WBH2 {_MPT['WBH2']}; "
