@@ -87,4 +87,4 @@
 
 - `check_banked_config`: identical PASS before and after.
 - `run_touched_readers.sh --class1`: GREEN.
-- The banks' readers were run by stem; see the reply.
+- The banks' three readers, run by stem: all pass.
