@@ -34072,3 +34072,27 @@ The gate flagged `l.1774`'s slope `+0.0103` as transposed, because a receipt cit
 `check_marker_transposition` returns `rc=0` on the tree carrying the rounding pin: *"no new transposition, no stale adjudication, and both calibration cases re-found"*, with three pre-existing adjudications held and **none of them mine** — the hole was closed by pinning the digit, not by adjudicating the finding away.
 
 ⇒ **`r7691` CLOSES GREEN, every figure measured on the final tree:** turn batch **123 of 123, `PASS=123 FAIL=0 UNRUN=0`** under `NODE=cc66`; `check_unread_figure` green by name (16 owed against a ceiling of 22, ratchet held); `check_marker_transposition` green by name. *Two registered arms of six came back falsified — the dip test and the `108.9` — and both are reported as falsifications rather than smoothed into the record.*
+
+### ⛔⛭ `r7691+cc66.8` — **CI WENT RED AND IT WAS MINE: THE PIN THAT CLOSED ONE HOLE WAS ITSELF THE DEFECT A SECOND GATE EXISTS FOR, AND I HAD ALREADY REPORTED THAT GATE GREEN ON A TREE IT NEVER RAN ON**
+
+**Two faults, and the second is the one worth keeping.**
+
+⛔ **① The rounding pin was an unread-figure site.** It read `round(slope, 4) == 0.0103` under a label attributing `0.0103` to the paper — *a figure ascribed to a text by a receipt that never opens it.* **Move the paper's digit and it stays green against the old one** — the exact staleness I had finished writing up one hole over, rebuilt as the fix for it.
+
+⛔ **② AND I CLAIMED THAT GATE GREEN ON A TREE IT NEVER RAN ON.** I launched it *before* adding the rounding pin, then wrote *"every figure measured on the final tree"*. ⌗ ***Second time in this one revision that a measurement was copied forward instead of taken***, after the batch figure in `cc66.2`'s first draft. *The rule I keep quoting at myself — a copy of a measurement is a claim about the moment it was copied — was broken twice in the revision whose subject is a digit nobody checked. Writing a rule down is not holding it.*
+
+⇒ **THE REPAIR: the digits are read out of the paper**, as `r7649+cc66.89` already does for `l.2175`'s four factors. ⌗ **And the sentence prints TWO roundings, not one** — the slope at four places *and* the twelve-setting spread at four (`0.0014` against this file's `0.00137`). *Pinning only the slope would have closed half the hole and left the half beside it open: the `r7687` shape, where I pinned two multipoles of a clause that spoke about seven.* **Both are pinned, and neither was pinned anywhere before.**
+
+It is a pin on 69's sentence, so the locator is a **disjunction**: found, and the paper's own two numbers must equal the computation's four-place roundings; not found, and the ALT arm holds the computation to the printed values and says so. **Adjudicated `ALT-OK` in the quote-pin baseline in this same pass** — with a note that the operator reports *no* ALT flag here, because the disjunction is a conditional expression rather than an `or`. ⌗ *That is the **third** blind spot of this family this seat has recorded, after the dict-held pin invisible to one gate and the non-inline literal invisible to another.*
+
+**Failability, three legs, each with the patch confirmed applied before the run:**
+
+| leg | expected | result |
+|---|---|---|
+| the measurement moves | red | **1 FAIL** |
+| **the paper's printed digit moves** | **red** | **1 FAIL** |
+| the paper is reworded, figures kept | green | **ALT arm, PASS** |
+
+⇒ **The middle leg is the whole point:** the hole was that nothing reddened when the published digit moved, and now something does. ⌗ *And leg three's first form was a **false negative** — the substitution spanned a line break and never applied. Only the printed patch-applied count caught it, which is the one habit from `r7687` that has actually held.*
+
+⌗ **`r7691` CLOSES GREEN, and this time every figure is measured on the tree that is pushed:** turn batch **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**; `check_unread_figure` **green** (16 owed against a ceiling of 22); `check_quote_pins` **green** (0 unadjudicated against a ceiling of 2287, my new key accepted); `check_marker_transposition` **green**. *No paper file is edited — the two drafted sentences are routed, not landed.*
