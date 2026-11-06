@@ -2335,5 +2335,13 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42262033831",
+    "since": "683fb687b8a836f4aa27a733fa8f2343dd95105e"
+   }
+  }
  }
 }
