@@ -9,6 +9,51 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ `r7693` (cc66) — **ALL FOUR ITEMS IN. TWO PRINTED FIGURES YOUR ORDER DID NOT NAME ALSO MOVE, THE FIGURE NEEDS NO REGENERATION, AND ONE CORRECTION OF MINE IS THE SAME DEFECT A THIRD TIME**
+
+*Every figure in your order reproduces — my own read of the bank agrees with your depth row at all seven multipoles, so the registered first-finding check passes with nothing to report. Drafts for all ten sites are in `computations/beyond_the_wall/r7693_cc66_…/DRAFTS.md`; the site search and the regeneration answer are in `SITES.md`; the arms are in `VERDICT.md`.*
+
+#### ⛔ ①a **TAKE `+2.1`, NOT `+2.0`, AND THIS IS A CORRECTION OF SOMETHING I TOLD YOU EARLIER IN THIS REVISION**
+
+I reported ℓ = 4's likelihood term as landing **exactly** on the one-place rounding boundary, and therefore as a convention question for you to settle. **It is `+2.05036` — strictly above it, so it rounds to `+2.1` under half-up and half-to-even alike.** There was nothing to settle. ⌗ *I read the two-decimal display `+2.05` as if it were the value instead of looking at the next digit: **a derived conclusion from a rounded input — the `r7689` `108.9` and the `r7685` "factor of 75", a third time, in three consecutive revisions, inside the revision whose receipt pins the repair for it.*** ⇒ **My registered arm ③ is falsified on that limb, and all FOUR printed per-multipole terms move, not three.**
+
+#### ⚑ ① **THE FIGURES, with two your order did not name**
+
+| | in print | arm of record |
+|---|---|---|
+| depths ℓ = 2–8 | `0.487 0.435 0.359 0.666 0.911 0.983 0.998` | **`0.478 0.459 0.358 0.651 0.906 0.982 0.998`** |
+| ℓ = 4 at **two** places | `0.36` | **`0.36` — unchanged, do not edit** |
+| cross-validation | `3 %`, octopole `5.5 %` | **`2.9 %` at every ℓ = 2–8, NO exception** |
+| **the total** | `+1.58` | ⚠ **`+1.44`** |
+| **the octopole range** | `+0.2` to `+3.4` | ⚠ **`+0.2` to `+3.1`** |
+| per multipole | `−2.5 +1.0 +2.0 +1.0` | **`−2.6 +0.7 +2.1 +1.2`** |
+
+⚠ **The total moves by `−0.149`, fifteen times its printed precision** — so it is a *second* figure the re-point changes and not one the depths carry along. ✔ *But **"the same to the digit over `2 ≤ ℓ ≤ 10`" SURVIVES**: it claims the 8-vs-10 agreement, not the value, and is gated as two separately computed sums rather than inferred from the total.* ⌗ *And the octopole's penalty **falls**, `+1.0 → +0.7` — the one move that makes the construction look better, because the shallower octopole sits closer to the sky. Not buried.*
+
+#### ✔ ② **THE FIGURE NEEDS NO REGENERATION, AND FOUR SITES ARE MISSING FROM YOUR LIST OF TEN**
+
+Your order lists *"the figure `fig:lowL-floor` with its plotted data"*. **Its generator computes `D_C/r_0` and `sqrt(L(L+2))·ratio` and plots those plus a shaded band — no depth appears in its plotted data at all.** The depths live only in the caption's prose. ⇒ *The caption is drafted; the PNG is untouched.*
+
+⚑ **Four generated sites your list does not name:** the depth entry and the depth-**gap** entry, in `appendix_receipts_P15.tex` and `appendix_receipts_corpus.tex`. *Not hand-drafted — they regenerate from `make_all_appendices.py` once the INDEX row moves. **Listed because a generated file carrying a stale figure is still a paper printing a wrong number**, and what fixes it is a command rather than a draft.*
+
+⌗ *Two smaller ones: `l.134`'s `0.36` **survives** (`0.358` rounds to it too), so editing it would introduce an error; and the "two-clock split's" clause your order places at `l.2600` is at `l.2608`.* ⚠ **Scope is three papers, not one** — `P7` l.778 and `P18` l.1494 are both touched, named now rather than discovered at the compile step.
+
+#### ⚑ ④ **THE DIP TEST IS IN AND CITEABLE, AND MY PRICE WAS WRONG IN THE CHEAP DIRECTION**
+
+All six figure pins and both licence gates green. ⌗ *I quoted `119 → ~156 s`. **The 24-phase scan already in that receipt had kept every band value the test needs**, so the only new work is two bank reads and an interpolation. I priced re-running a scan that was already paid for — an estimate of the wrong computation, made without reading what the file already held.* ⇒ The licence is in the gate's own text, unchanged from what you have: **consistency in shape, specific to the measured phase, and never "the departure is the drift"**.
+
+#### FAILABILITY — **22 of 22, and it took a fifth leg to be able to say so**
+
+Legs A–D (depths scaled, exact transfer scaled, one-clock bank replaced, sky quadrupole set to unity) broke **20**. ⛔ *Two were left: the total-moves claim is an inequality no leg was aimed at making coincide, and a one-per-cent scaling leaves ℓ = 8 inside the tolerance the 8-vs-10 conjunct allows.* ⇒ **Leg E was written for those two by name and checks that its TARGET failed rather than that something failed.** Every leg verified the patch applied first. ⌗ *And commitment ⑦ caught one before any run: the 8-vs-10 gate's first draft compared a call against itself.*
+
+#### ⛔ AND TWO CI REDS, BOTH MINE, THE SECOND A PROCESS FIX I HAD JUST MADE
+
+Both were gates the lean batch skips and only the push asks — **the gap I identified at `r7691`, whose standing change was to ask those gates locally when a revision touches a receipt's READS. I did not. The rule lasted one revision.** ⌗ *The transposition red was two STALE entries: `0.911` and `0.983` stopped being flagged once a **comment** of mine quoted the paper's row — and **a comment is not a computation**, so the exact transfer's seven depths are now pinned from the bank and the entries removed on that basis. That closes, for the row still in print, the same hole `r7691` closed for the slope. The other was a label of mine attributing a **reading** to `sec:largescale` while every number in the gate is computed here.*
+
+⌗ **Turn batch `--full`: 133 of 133, `PASS=133 FAIL=0`; CI green on the same head. No corpus file is edited — the drafts are yours to take, leave or reword.**
+
+---
+
 ### ⚑ `r7691` (cc66) — **THE DIP TEST CAME BACK POSITIVE AND MY REGISTERED PREDICTION IS FALSIFIED; AND A FIGURE OF MINE YOU HAVE ALREADY QUOTED IS WRONG**
 
 *Items ①, ②, ③a, ③b, ③c all discharged. Receipts green. The two things below need you, in this order:

@@ -503,6 +503,103 @@ check("     ...and that drift is now FOUR TIMES the pre-registered 0.05 rad (it 
       "arm), which is why the null now carries the whole slope", max(map(abs, dphi)) > 0.15,
       f"{max(map(abs, dphi)):.3f} rad")
 
+# ===================================================================================================
+# ⛭⛭⛭ `r7693+cc66` ITEM 4, ON 69's ORDER: ** THE DIP TEST, SO ITS LICENCE IS CITEABLE. **
+#   *`r7691` registered that the own-comb null's real-phase band response does NOT reproduce the
+#   `q ~ 1.9` departure of the retention from the parameter-free acceptance law, and the measurement
+#   FALSIFIED that: it does, and at the real phase specifically.  It lived in a computation directory,
+#   so the sentence it licenses could cite nothing.  Computed here, in the receipt that owns the phase
+#   systematic.*
+#   ⌗ ** AND IT IS CHEAPER THAN THE 37 s I PRICED IT AT, because the 24-phase scan above ALREADY
+#     CAPTURED EVERY BAND VALUE IT NEEDS. **  *`_ownY[label]` is `(24, 7)` -- the own-comb band values
+#     at every injection phase, kept since `r7687`.  The only new work is the law's seven bands: two
+#     bank reads and an interpolation.  ⇒ *I quoted the cost of re-running the scan; the scan was
+#     already paid for, and a price quoted without reading what the file already holds is an estimate
+#     of the wrong computation.*
+_ACC = {t: os.path.join(SP, f'r7041_accept_{n}.npz')
+        for t, n in (('lcdm', 'lcdm'), ('cr', 'cr_leafrec1'))}
+for _t, _pth in _ACC.items():
+    check(f"⛭ `r7693` the acceptance-law bank the dip test needs is present: "
+          f"`spectra/{os.path.basename(_pth)}`", os.path.exists(_pth), os.path.basename(_pth))
+_AZ = {t: dict(np.load(_ACC[t], allow_pickle=True)) for t in _ACC}
+_AQ = {t: np.asarray(_AZ[t]['ls__fixed'], float) / float(_AZ[t]['l_A__fixed']) for t in _AZ}
+_AA = {t: np.asarray(_AZ[t]['A'], float) for t in _AZ}
+
+
+def _lawband(_a, _b):
+    """the law's arm/control acceptance ratio over one band, by its band MEAN -- `A_l` is already an
+    amplitude fraction, so an RMS of it would be a statistic of a statistic (`r7689` arm 5)"""
+    _g = np.linspace(_a, _b, 400)
+    return (np.interp(_g, _AQ['cr'], _AA['cr']).mean()
+            / np.interp(_g, _AQ['lcdm'], _AA['lcdm']).mean())
+
+
+_ED7 = np.linspace(0.35 + 0.5 + 1e-9, 5.75, 8)
+_LAW7 = np.array([_lawband(_a, _b) for _a, _b in zip(_ED7[:-1], _ED7[1:])])
+_DEP = _oy7 - _LAW7                      # the measurement's departure from the law, band by band
+_J19 = int(np.argmax(np.abs(_DEP)))
+
+
+def _detr(_y):
+    return _y - np.polyval(np.polyfit(_ox7, _y, 1), _ox7)
+
+
+_MD = _detr(_oy7)
+print(f"\n    \u26ed `r7693` THE DIP TEST -- the null's real-phase band response against the "
+      f"departure at q = {_ox7[_J19]:.2f}")
+print(f"      the departure: measured {_oy7[_J19]:.4f} against the law's {_LAW7[_J19]:.4f}, "
+      f"{_DEP[_J19]:+.4f}; detrended {_MD[_J19]:+.4f}")
+print(f"      {'amplitude':46s} {'at q=1.9':>10s} {'of meas':>9s} {'corr':>7s} "
+      f"{'rank':>7s} {'|corr|>0.8':>11s}")
+_DIP = {}
+for _lab in _ownY:
+    _Y = _ownY[_lab]
+    _nd0 = _detr(_Y[0])
+    _cs = np.array([float(np.corrcoef(_detr(_Y[_k]), _MD)[0, 1]) for _k in range(len(PH))])
+    _fs = np.array([float(_detr(_Y[_k])[_J19] / _MD[_J19]) for _k in range(len(PH))])
+    _rank = int(np.sum(_cs >= _cs[0]))
+    _DIP[_lab] = dict(nd=_nd0[_J19], frac=_fs[0], corr=_cs[0], rank=_rank,
+                      rank_f=int(np.sum(_fs >= _fs[0])), hi=int(np.sum(np.abs(_cs) > 0.8)))
+    print(f"      {_lab:46s} {_nd0[_J19]:+10.4f} {_fs[0]:+9.3f} {_cs[0]:+7.3f} "
+          f"{str(_rank) + ' of ' + str(len(PH)):>7s} {_DIP[_lab]['hi']:>11d}")
+_P05 = _DIP['pre-registered amplitude 0.5']
+_POW = _DIP["declared sensitivity: the banks' own amplitudes"]
+for _nm, _got, _want, _tol, _fmt in (
+        ("the null's detrended response at q = 1.9, pre-registered amplitude", _P05['nd'], 0.0157, 5e-5, '.4f'),
+        ("...as a fraction of the measured departure there", _P05['frac'], 1.185, 5e-4, '.3f'),
+        ("...and its seven-band shape correlation", _P05['corr'], 0.922, 5e-4, '.3f'),
+        ("the same at the banks' own amplitudes", _POW['nd'], 0.0098, 5e-5, '.4f'),
+        ("...as a fraction", _POW['frac'], 0.741, 5e-4, '.3f'),
+        ("...and its correlation", _POW['corr'], 0.957, 5e-4, '.3f')):
+    check(f"⛭ `r7693` {_nm} is {_want:{_fmt}}", abs(_got - _want) < _tol,
+          f"{_got:{_fmt}} against {_want:{_fmt}}")
+check("⚑⛭⛭ ** THE MATCH IS NOT A PROPERTY OF THE BANDING: scanned over all 24 injection phases the "
+      "REAL phase is rank 1 of 24 at the pre-registered amplitude and rank 2 of 24 at the banks' "
+      "own, on both the correlation and the fraction reproduced. **  ⇒ *LICENSED: the `q ~ 1.9` "
+      "departure is CONSISTENT IN SHAPE with the phase systematic's own real-phase band response, "
+      "and specifically so rather than generically.*  ⛔ *NOT LICENSED -- 'the departure is the "
+      "drift': the injection amplitude is CHOSEN, and the fraction swings 1.185 against 0.741 "
+      "between two defensible choices, so the SIZE carries no information and only the shape does; "
+      "the drift was never turned OFF in the measurement, which is the route that made the "
+      "octopole's clock attribution legitimate; and the detrended shape is essentially ONE MODE "
+      "whose sign flips with phase -- ten of the 24 align or anti-align above 0.8 in absolute value "
+      "at the pre-registered amplitude and eight at the banks' own -- so it is the SIGN and the "
+      "MAXIMUM that pick the real phase out, not the existence of a matching shape*",
+      _P05['rank'] == 1 and _P05['rank_f'] == 1 and _POW['rank'] == 2 and _POW['rank_f'] == 2
+      and _P05['hi'] == 10 and _POW['hi'] == 8,
+      f"rank {_P05['rank']}/{_P05['rank_f']} of {len(PH)} at 0.5 and {_POW['rank']}/{_POW['rank_f']} "
+      f"at the banks' own; |corr| > 0.8 at {_P05['hi']} and {_POW['hi']} of {len(PH)}")
+check("⛔⛭ ** AND THE REGISTERED PREDICTION WAS THE OTHER WAY: `r7691` registered that the null does "
+      "NOT reproduce the departure, with a licence ceiling fixed for the case it judged would not "
+      "arrive. **  *The ceiling held, and the honest reading of that register is worse than that: a "
+      "negative result licenses nothing and so cannot be misread, so the outcome registered was the "
+      "one that would have left the rule untested.*  ⇒ What would settle it is a build with the "
+      "drift REMOVED, read at these same seven bands -- a bank request, not an analysis available "
+      "here, and until it exists nothing is drafted past the ceiling above",
+      _P05['nd'] > 0 and _DEP[_J19] > 0 and abs(_ox7[_J19] - 1.90) < 0.05,
+      f"the null carries {_P05['nd']:+.4f} where the registration said it carried no feature "
+      f"matching the departure's {_DEP[_J19]:+.4f}, at q = {_ox7[_J19]:.2f}")
+
 print()
 print("  THE PAPER'S WORDING -- REPORTED, NEVER REQUIRED")
 tex = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read())

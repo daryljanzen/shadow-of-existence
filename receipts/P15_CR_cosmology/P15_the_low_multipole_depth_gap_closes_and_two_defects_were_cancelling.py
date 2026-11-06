@@ -77,6 +77,8 @@ import sys
 
 import numpy as np
 
+from decimal import Decimal, ROUND_HALF_EVEN, ROUND_HALF_UP  # noqa: E402
+
 print(__doc__.split("STATUS:")[0])
 BAR = "=" * 104
 fail = []
@@ -709,6 +711,168 @@ check("nor on the octopole estimator: the whole range stays inside +4",
 print()
 print("  ⇒ ** THE QUADRUPOLE REWARDS THIS CONSTRUCTION AND l = 3-5 PENALISE IT, AND THEY VERY NEARLY")
 print("     CANCEL. **  *The deficit is real, parameter-free, and lands in the wash.*")
+
+# ===================================================================================================
+# ⛭⛭⛭ `r7693+cc66` ITEM 1, ON 69's RULING: ** THE PAPER PRINTS THE ARM OF RECORD'S DEPTHS, SO THE ARM
+#   OF RECORD'S DEPTHS, ITS CROSS-VALIDATION AND THE LIKELIHOOD ON THEM ARE COMPUTED HERE. **
+#   ⚠ ** AND THIS IS NOT A CORRECTION, WHICH IS STATED IN THE FILE AND NOT ONLY IN THE ROUTE. **
+#     *Nothing in print is wrong.  `0.487 0.435 0.359 0.666 0.911 0.983 0.998` ARE the exact
+#     transfer's depths and this receipt pins them as such above.  `70` measured that the exact
+#     transfer runs ONE CLOCK and that stock CAMB cannot carry the split, while the arm of record
+#     does carry it -- so `69`'s ruling changes WHICH OBJECT the paper prints, from the cross-check
+#     to the arm of record, and makes the exact transfer the cross-validation.*  ⛔ **A gate or a
+#     sentence calling the old figures an error would be a false statement about the record**, which
+#     is why the comparison below is labelled a re-point and never a repair.
+_AOR = {int(_l): float(_DD[_i]) for _i, _l in enumerate(_DE)}          # split, DECOUPLED, distances
+_EXA = {int(_l): float(_DA[_i]) for _i, _l in enumerate(_DE)}          # the exact transfer, as printed
+_ONED = {int(_l): float(np.asarray(_OZ['armB_decoupled'], float)[_i]) for _i, _l in enumerate(_DE)}
+print("\n  \u26ed `r7693` THE DEPTHS THE PAPER WOULD PRINT, against the ones it prints now")
+print("     l   PRINTED (exact)   ARM OF RECORD   move   printed digits moved")
+for _l in range(2, 9):
+    _mv = _AOR[_l] - _EXA[_l]
+    print(f"    {_l:2d}      {_EXA[_l]:.4f}          {_AOR[_l]:.4f}    {_mv:+.4f}      "
+          f"{round(_AOR[_l], 3) - round(_EXA[_l], 3):+.3f}")
+# ⛭⛭ `r7693+cc66`, ON `check_marker_transposition` GOING STALE: ** THE EXACT TRANSFER'S SEVEN DEPTHS
+#   ARE PINNED TOO, BECAUSE THEY ARE STILL WHAT THE PAPER PRINTS UNTIL 69 LANDS THE REDRAFT. **
+#   *The gate reported two of its baseline entries STALE -- `0.911` and `0.983` stopped being flagged
+#   as carried-elsewhere once this file mentioned them.  ⛔ **But what made the own group carry them was
+#   a COMMENT of mine quoting the paper's row, and a comment is not a computation**: reword it and the
+#   flags fire again.  ⇒ So the row is pinned from the BANK at printed precision, and the two baseline
+#   entries are removed on that basis rather than on the strength of a sentence.*
+#   ⌗ *This also closes, for the row still in print, exactly the hole `r7691` closed for the slope: a
+#     digit the paper prints that no gate reads.  Both rows are now pinned, the one in print and the
+#     one that replaces it.*
+for _l, _want in ((2, 0.487), (3, 0.435), (4, 0.359), (5, 0.666),
+                  (6, 0.911), (7, 0.983), (8, 0.998)):
+    check(f"\u26ed `r7693` the EXACT TRANSFER's depth at l = {_l} -- what the paper prints TODAY -- "
+          f"is {_want:.3f}", abs(round(_EXA[_l], 3) - _want) < 5e-4,
+          f"{_EXA[_l]:.4f} rounds to {round(_EXA[_l], 3):.3f}")
+for _l, _want in ((2, 0.478), (3, 0.459), (4, 0.358), (5, 0.651),
+                  (6, 0.906), (7, 0.982), (8, 0.998)):
+    check(f"\u26ed `r7693` the arm of record's depth at l = {_l} is {_want:.3f}",
+          abs(round(_AOR[_l], 3) - _want) < 5e-4, f"{_AOR[_l]:.4f} rounds to {round(_AOR[_l], 3):.3f}")
+# ⌗ the move, pinned as a SET rather than one multipole at a time: the claim the drafting rests on is
+#   WHICH printed digits change, and a per-multipole pin does not assert that the others hold still.
+_MOVED = tuple(_l for _l in range(2, 9) if round(_AOR[_l], 3) != round(_EXA[_l], 3))
+check("\u26ed `r7693` ** SIX OF THE SEVEN PRINTED DEPTHS CHANGE AND l = 8 DOES NOT **, so every site "
+      "that prints a depth below l = 8 is a site this re-point reaches",
+      _MOVED == (2, 3, 4, 5, 6, 7),
+      f"moved at l = {_MOVED}; l = 8 is {_EXA[8]:.4f} -> {_AOR[8]:.4f}")
+check("\u26ed `r7693` ...and the OCTOPOLE is the largest move, upward, which is the one that matters: "
+      "the sky's octopole is near-LCDM, so a shallower octopole moves TOWARD the sky",
+      max(range(2, 9), key=lambda l: abs(_AOR[l] - _EXA[l])) == 3 and _AOR[3] > _EXA[3],
+      f"l = 3 moves {_AOR[3] - _EXA[3]:+.4f}, the largest; next is "
+      f"{sorted((abs(_AOR[l] - _EXA[l]) for l in range(2, 9)))[-2]:.4f}")
+
+# --- the cross-validation, and it is LIKE FOR LIKE for the first time -------------------------------
+#   ⛔ *`l.2822` compares the SPLIT hierarchy against the ONE-CLOCK exact transfer and needs a `5.5`
+#   per cent octopole exception to do it.  Under the ruling those were two different objects at that
+#   multipole.  The hierarchy ON ONE CLOCK against the exact transfer has no such exception.*
+#   ⛔ **NOT that the `5.5` per cent was an error: it measured a real difference -- the split's --
+#   and the `+0.029` octopole shift pinned above is that same difference read the right way round.**
+_XV = {_l: 100.0 * (_ONED[_l] - _EXA[_l]) / _EXA[_l] for _l in range(2, 9)}
+_XVW = max(abs(_v) for _v in _XV.values())
+print("\n  \u26ed `r7693` THE CROSS-VALIDATION ON ONE CLOCK: hierarchy vs exact transfer, per cent")
+print("    " + "  ".join(f"l={_l}:{_XV[_l]:+6.2f}" for _l in range(2, 9)))
+check(f"\u26ed `r7693` ** the one-clock cross-validation holds to 2.9 per cent at EVERY l = 2-8, with "
+      "NO octopole exception -- which is what the old sentence's exception was for **",
+      abs(_XVW - 2.92) < 5e-3 and max(range(2, 9), key=lambda l: abs(_XV[l])) == 4
+      and abs(_XV[3]) < 2.0,
+      f"worst {_XVW:.2f} per cent at l = {max(range(2, 9), key=lambda l: abs(_XV[l]))}; "
+      f"the octopole is {_XV[3]:+.2f}")
+
+# --- the cosmic-variance likelihood ON THE NEW DEPTHS -----------------------------------------------
+_t8, _per8 = dm2lnL({**_AOR}, OBS)
+_tex, _perex = dm2lnL({**_EXA}, OBS)
+_rng = tuple(dm2lnL({**_AOR}, {**OBS, 3: _o})[0] for _o in (0.60, 0.95))
+print("\n  \u26ed `r7693` THE LIKELIHOOD ON THE NEW DEPTHS, against the printed one")
+print("     l    printed   arm of record   change")
+for _l in range(2, 9):
+    print(f"    {_l:2d}   {_perex[_l]:+7.3f}   {_per8[_l]:+11.3f}   {_per8[_l] - _perex[_l]:+8.3f}")
+print(f"    total 2-10: printed {_tex:+.3f}  ->  arm of record {_t8:+.3f}  "
+      f"({_t8 - _tex:+.3f});  octopole estimator {_rng[0]:+.3f} to {_rng[1]:+.3f}")
+for _nm, _got, _want, _tol, _fmt in (
+        ("the total over 2 <= l <= 10", _t8, 1.44, 5e-3, '.2f'),
+        ("the quadrupole's reward", _per8[2], -2.60, 5e-3, '.2f'),
+        ("the octopole's penalty", _per8[3], 0.74, 5e-3, '.2f'),
+        ("l = 4's penalty", _per8[4], 2.05, 5e-3, '.2f'),
+        ("l = 5's penalty", _per8[5], 1.18, 5e-3, '.2f'),
+        ("the octopole estimator's low end", _rng[0], 0.20, 5e-3, '.2f'),
+        ("the octopole estimator's high end", _rng[1], 3.09, 5e-3, '.2f')):
+    check(f"\u26ed `r7693` {_nm} on the arm of record is {_want:{_fmt}}",
+          abs(_got - _want) < _tol, f"{_got:+.3f} against {_want:{_fmt}}")
+#: ⛭ `r7693+cc66`, ON `check_unread_figure`: ** THE LABEL NO LONGER ATTRIBUTES A READING TO THE PAPER. **
+#:   *Its first form said "so `sec:largescale`'s 'a near-cancellation rather than a uniform cost'
+#:   reading is the arm of record's too", which is a claim about the paper's prose made by a gate whose
+#:   numbers are all computed here -- and the ratchet was right that such a label goes stale silently
+#:   when the paper moves.  ⇒ Reworded to say what THIS receipt computed, per the gate's own second
+#:   option; what it licenses for the paper is a consequence stated without quoting it.*
+check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: on the arm of record the "
+      "quadrupole still REWARDS, l = 3-5 still PENALISE, and there is still nothing above -- the same "
+      "signs this receipt computes for the exact transfer. **  \u21d2 *So the near-cancellation is a "
+      "property of both rows and not of the cross-check alone.*  \u26d4 *It does NOT license the "
+      "total's value, which moves*",
+      _per8[2] < 0 and all(_per8[_l] > 0 for _l in (3, 4, 5))
+      and all(abs(_per8[_l]) < 0.1 for _l in (6, 7, 8)),
+      f"l = 2 {_per8[2]:+.2f}; l = 3-5 {_per8[3]:+.2f} {_per8[4]:+.2f} {_per8[5]:+.2f}; "
+      f"above: {' '.join(f'{_per8[_l]:+.3f}' for _l in (6, 7, 8))}")
+check("\u26d4\u26ed `r7693` ** AND THE TOTAL MOVES BY MORE THAN ITS PRINTED DIGIT, so the printed "
+      "`+1.58` is a SECOND figure this re-point changes and not a number the depths carry along. ** "
+      "*`sec:largescale`'s 'the same to the digit over 2 <= l <= 10' is a claim about the 8-vs-10 "
+      "agreement, NOT about the value, and it survives -- checked separately below rather than "
+      "assumed from the total*",
+      abs(_t8 - _tex) > 0.01,
+      f"{_tex:+.3f} -> {_t8:+.3f}, a move of {_t8 - _tex:+.3f} against a printed precision of 0.01")
+_t8only = sum((2 * _l + 1) * (OBS[_l] * (1.0 / _AOR[_l] - 1.0) + np.log(_AOR[_l]))
+              for _l in range(2, 9))
+check("\u26ed `r7693` ...and the clause's ACTUAL claim -- the same total over 2 <= l <= 8 and over "
+      "2 <= l <= 10 -- holds on the new depths, because both arms are at unity by l = 8.  "
+      "\u26d4 *Checked as two separately computed sums.  The first draft of this gate compared "
+      "`dm2lnL(_AOR, OBS)` against `_t8`, which IS that same call: an assertion that could not fail, "
+      "inside the gate whose subject is a claim about two different sums*",
+      abs(_t8only - _t8) < 5e-3 and abs(_AOR[8] - 1.0) < 0.01,
+      f"2-8 gives {_t8only:+.4f}, 2-10 gives {_t8:+.4f}, apart by {abs(_t8only - _t8):.2e}; "
+      f"the depth at l = 8 is {_AOR[8]:.4f}")
+# ⌗ ⛔⛔ ** AND THE FIRST FORM OF THIS GATE WAS WRONG, BY THE EXACT DEFECT `r7691` PINNED A FIX FOR
+#   ONE REVISION AGO. **  *It read: "l = 4's term goes `+2.029` -> `+2.050`, EXACTLY the one-place
+#   rounding boundary, so whether the printed digit changes is a rounding-convention question and not
+#   a measured one -- 69's to settle."*  ⛔ **The term is `+2.05036`, which is STRICTLY ABOVE `2.05`
+#   and therefore rounds to `+2.1` under half-up AND half-to-even alike.  There is no ambiguity and
+#   nothing for anyone to settle.**
+#   ⇒ *** I read the TWO-DECIMAL DISPLAY `+2.05` as if it were the value and reasoned about a boundary,
+#   instead of looking at the next digit.  That is a derived conclusion computed from a rounded input
+#   -- the `r7689` `108.9` defect and the `r7685` "factor of 75" defect, a THIRD time, by this seat, in
+#   three consecutive revisions, inside the revision whose own receipt pins the repair for it. ***
+#   ⌗ *So the roundings below are taken with `decimal` under BOTH conventions rather than eyeballed,
+#   and `r7693+cc66.0`'s arm ③ registration -- "l = 4 unchanged at one printed place" -- is FALSIFIED.*
+_HU, _HE = ROUND_HALF_UP, ROUND_HALF_EVEN
+
+
+def _r1(_v):
+    """one decimal place under both conventions -- a pair, so a boundary cannot be read as a point"""
+    _d = Decimal(repr(float(_v)))
+    return (str(_d.quantize(Decimal('0.1'), _HU)), str(_d.quantize(Decimal('0.1'), _HE)))
+
+
+print("\n  \u26ed `r7693` THE PER-MULTIPOLE TERMS AT THE PAPER'S OWN ONE PLACE, both conventions")
+print("     l   printed   term now     half-up / half-even   printed digit changes?")
+for _l in range(2, 6):
+    _a, _b = _r1(_per8[_l]); _pa, _pb = _r1(_perex[_l])
+    print(f"    {_l:2d}   {_pa:>7}   {_per8[_l]:+9.5f}     {_a:>6} / {_b:<6}        "
+          f"{'YES' if _a != _pa else 'no'}")
+check("\u26d4\u26ed `r7693` ** l = 4's TERM ROUNDS TO `+2.1` UNDER BOTH CONVENTIONS, so its printed "
+      "digit DOES change and `r7693+cc66.0`'s arm \u2462 is falsified on that limb. ** \u26d4 *The "
+      "first form of this gate called it a rounding-convention question by reading the two-decimal "
+      "display `+2.05` as the value instead of its next digit -- the `r7689`/`r7685` defect a third "
+      "time, in the revision whose receipt pins the repair for it*",
+      _r1(_per8[4]) == ('2.1', '2.1') and _r1(_perex[4]) == ('2.0', '2.0'),
+      f"{_per8[4]:+.5f} -> {_r1(_per8[4])} against the printed {_perex[4]:+.5f} -> {_r1(_perex[4])}")
+check("\u26ed `r7693` ** SO ALL FOUR PRINTED PER-MULTIPOLE TERMS CHANGE their one printed place: "
+      "`-2.5 +1.0 +2.0 +1.0` becomes `-2.6 +0.7 +2.1 +1.2` ** -- taken under both conventions, which "
+      "is how the l = 4 error above would have been caught the first time",
+      all(_r1(_per8[_l]) != _r1(_perex[_l]) for _l in range(2, 6))
+      and tuple(_r1(_per8[_l])[0] for _l in range(2, 6)) == ('-2.6', '0.7', '2.1', '1.2'),
+      "; ".join(f"l={_l}: {_r1(_perex[_l])[0]} -> {_r1(_per8[_l])[0]}" for _l in range(2, 6)))
 
 # =================================================================================================
 print()
