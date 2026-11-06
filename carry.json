@@ -1038,6 +1038,11 @@
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/BUILD_camb_store.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42307419247",
+    "since": "84da9cd4a885b2346241062cf2cb79a7f30dd0df",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/C10_highl_ratio.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42224105420",
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
@@ -1593,6 +1598,11 @@
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42307419247",
+    "since": "84da9cd4a885b2346241062cf2cb79a7f30dd0df",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_lowest_band_is_closed_by_the_fields_and_the_excess_deceleration_is_carried_by_it_alone.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42265628061",
     "since": "f5d8f0b9135c45b460bf405de0b157610ceacae1",
@@ -1711,6 +1721,11 @@
    "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42224105420",
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_second_arm_actually_run.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42307419247",
+    "since": "84da9cd4a885b2346241062cf2cb79a7f30dd0df",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py": {
