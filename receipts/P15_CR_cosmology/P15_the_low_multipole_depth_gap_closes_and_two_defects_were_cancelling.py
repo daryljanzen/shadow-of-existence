@@ -710,6 +710,118 @@ print()
 print("  ⇒ ** THE QUADRUPOLE REWARDS THIS CONSTRUCTION AND l = 3-5 PENALISE IT, AND THEY VERY NEARLY")
 print("     CANCEL. **  *The deficit is real, parameter-free, and lands in the wash.*")
 
+# ===================================================================================================
+# ⛭⛭⛭ `r7693+cc66` ITEM 1, ON 69's RULING: ** THE PAPER PRINTS THE ARM OF RECORD'S DEPTHS, SO THE ARM
+#   OF RECORD'S DEPTHS, ITS CROSS-VALIDATION AND THE LIKELIHOOD ON THEM ARE COMPUTED HERE. **
+#   ⚠ ** AND THIS IS NOT A CORRECTION, WHICH IS STATED IN THE FILE AND NOT ONLY IN THE ROUTE. **
+#     *Nothing in print is wrong.  `0.487 0.435 0.359 0.666 0.911 0.983 0.998` ARE the exact
+#     transfer's depths and this receipt pins them as such above.  `70` measured that the exact
+#     transfer runs ONE CLOCK and that stock CAMB cannot carry the split, while the arm of record
+#     does carry it -- so `69`'s ruling changes WHICH OBJECT the paper prints, from the cross-check
+#     to the arm of record, and makes the exact transfer the cross-validation.*  ⛔ **A gate or a
+#     sentence calling the old figures an error would be a false statement about the record**, which
+#     is why the comparison below is labelled a re-point and never a repair.
+_AOR = {int(_l): float(_DD[_i]) for _i, _l in enumerate(_DE)}          # split, DECOUPLED, distances
+_EXA = {int(_l): float(_DA[_i]) for _i, _l in enumerate(_DE)}          # the exact transfer, as printed
+_ONED = {int(_l): float(np.asarray(_OZ['armB_decoupled'], float)[_i]) for _i, _l in enumerate(_DE)}
+print("\n  \u26ed `r7693` THE DEPTHS THE PAPER WOULD PRINT, against the ones it prints now")
+print("     l   PRINTED (exact)   ARM OF RECORD   move   printed digits moved")
+for _l in range(2, 9):
+    _mv = _AOR[_l] - _EXA[_l]
+    print(f"    {_l:2d}      {_EXA[_l]:.4f}          {_AOR[_l]:.4f}    {_mv:+.4f}      "
+          f"{round(_AOR[_l], 3) - round(_EXA[_l], 3):+.3f}")
+for _l, _want in ((2, 0.478), (3, 0.459), (4, 0.358), (5, 0.651),
+                  (6, 0.906), (7, 0.982), (8, 0.998)):
+    check(f"\u26ed `r7693` the arm of record's depth at l = {_l} is {_want:.3f}",
+          abs(round(_AOR[_l], 3) - _want) < 5e-4, f"{_AOR[_l]:.4f} rounds to {round(_AOR[_l], 3):.3f}")
+# ⌗ the move, pinned as a SET rather than one multipole at a time: the claim the drafting rests on is
+#   WHICH printed digits change, and a per-multipole pin does not assert that the others hold still.
+_MOVED = tuple(_l for _l in range(2, 9) if round(_AOR[_l], 3) != round(_EXA[_l], 3))
+check("\u26ed `r7693` ** SIX OF THE SEVEN PRINTED DEPTHS CHANGE AND l = 8 DOES NOT **, so every site "
+      "that prints a depth below l = 8 is a site this re-point reaches",
+      _MOVED == (2, 3, 4, 5, 6, 7),
+      f"moved at l = {_MOVED}; l = 8 is {_EXA[8]:.4f} -> {_AOR[8]:.4f}")
+check("\u26ed `r7693` ...and the OCTOPOLE is the largest move, upward, which is the one that matters: "
+      "the sky's octopole is near-LCDM, so a shallower octopole moves TOWARD the sky",
+      max(range(2, 9), key=lambda l: abs(_AOR[l] - _EXA[l])) == 3 and _AOR[3] > _EXA[3],
+      f"l = 3 moves {_AOR[3] - _EXA[3]:+.4f}, the largest; next is "
+      f"{sorted((abs(_AOR[l] - _EXA[l]) for l in range(2, 9)))[-2]:.4f}")
+
+# --- the cross-validation, and it is LIKE FOR LIKE for the first time -------------------------------
+#   ⛔ *`l.2822` compares the SPLIT hierarchy against the ONE-CLOCK exact transfer and needs a `5.5`
+#   per cent octopole exception to do it.  Under the ruling those were two different objects at that
+#   multipole.  The hierarchy ON ONE CLOCK against the exact transfer has no such exception.*
+#   ⛔ **NOT that the `5.5` per cent was an error: it measured a real difference -- the split's --
+#   and the `+0.029` octopole shift pinned above is that same difference read the right way round.**
+_XV = {_l: 100.0 * (_ONED[_l] - _EXA[_l]) / _EXA[_l] for _l in range(2, 9)}
+_XVW = max(abs(_v) for _v in _XV.values())
+print("\n  \u26ed `r7693` THE CROSS-VALIDATION ON ONE CLOCK: hierarchy vs exact transfer, per cent")
+print("    " + "  ".join(f"l={_l}:{_XV[_l]:+6.2f}" for _l in range(2, 9)))
+check(f"\u26ed `r7693` ** the one-clock cross-validation holds to 2.9 per cent at EVERY l = 2-8, with "
+      "NO octopole exception -- which is what the old sentence's exception was for **",
+      abs(_XVW - 2.92) < 5e-3 and max(range(2, 9), key=lambda l: abs(_XV[l])) == 4
+      and abs(_XV[3]) < 2.0,
+      f"worst {_XVW:.2f} per cent at l = {max(range(2, 9), key=lambda l: abs(_XV[l]))}; "
+      f"the octopole is {_XV[3]:+.2f}")
+
+# --- the cosmic-variance likelihood ON THE NEW DEPTHS -----------------------------------------------
+_t8, _per8 = dm2lnL({**_AOR}, OBS)
+_tex, _perex = dm2lnL({**_EXA}, OBS)
+_rng = tuple(dm2lnL({**_AOR}, {**OBS, 3: _o})[0] for _o in (0.60, 0.95))
+print("\n  \u26ed `r7693` THE LIKELIHOOD ON THE NEW DEPTHS, against the printed one")
+print("     l    printed   arm of record   change")
+for _l in range(2, 9):
+    print(f"    {_l:2d}   {_perex[_l]:+7.3f}   {_per8[_l]:+11.3f}   {_per8[_l] - _perex[_l]:+8.3f}")
+print(f"    total 2-10: printed {_tex:+.3f}  ->  arm of record {_t8:+.3f}  "
+      f"({_t8 - _tex:+.3f});  octopole estimator {_rng[0]:+.3f} to {_rng[1]:+.3f}")
+for _nm, _got, _want, _tol, _fmt in (
+        ("the total over 2 <= l <= 10", _t8, 1.44, 5e-3, '.2f'),
+        ("the quadrupole's reward", _per8[2], -2.60, 5e-3, '.2f'),
+        ("the octopole's penalty", _per8[3], 0.74, 5e-3, '.2f'),
+        ("l = 4's penalty", _per8[4], 2.05, 5e-3, '.2f'),
+        ("l = 5's penalty", _per8[5], 1.18, 5e-3, '.2f'),
+        ("the octopole estimator's low end", _rng[0], 0.20, 5e-3, '.2f'),
+        ("the octopole estimator's high end", _rng[1], 3.09, 5e-3, '.2f')):
+    check(f"\u26ed `r7693` {_nm} on the arm of record is {_want:{_fmt}}",
+          abs(_got - _want) < _tol, f"{_got:+.3f} against {_want:{_fmt}}")
+check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: the quadrupole still REWARDS, "
+      "l = 3-5 still PENALISE, and there is still nothing above. **  \u21d2 *So `sec:largescale`'s "
+      "'a near-cancellation rather than a uniform cost' reading is the arm of record's too, and not "
+      "only the cross-check's.*  \u26d4 *It does NOT license the total's value, which moves*",
+      _per8[2] < 0 and all(_per8[_l] > 0 for _l in (3, 4, 5))
+      and all(abs(_per8[_l]) < 0.1 for _l in (6, 7, 8)),
+      f"l = 2 {_per8[2]:+.2f}; l = 3-5 {_per8[3]:+.2f} {_per8[4]:+.2f} {_per8[5]:+.2f}; "
+      f"above: {' '.join(f'{_per8[_l]:+.3f}' for _l in (6, 7, 8))}")
+check("\u26d4\u26ed `r7693` ** AND THE TOTAL MOVES BY MORE THAN ITS PRINTED DIGIT, so the printed "
+      "`+1.58` is a SECOND figure this re-point changes and not a number the depths carry along. ** "
+      "*`sec:largescale`'s 'the same to the digit over 2 <= l <= 10' is a claim about the 8-vs-10 "
+      "agreement, NOT about the value, and it survives -- checked separately below rather than "
+      "assumed from the total*",
+      abs(_t8 - _tex) > 0.01,
+      f"{_tex:+.3f} -> {_t8:+.3f}, a move of {_t8 - _tex:+.3f} against a printed precision of 0.01")
+_t8only = sum((2 * _l + 1) * (OBS[_l] * (1.0 / _AOR[_l] - 1.0) + np.log(_AOR[_l]))
+              for _l in range(2, 9))
+check("\u26ed `r7693` ...and the clause's ACTUAL claim -- the same total over 2 <= l <= 8 and over "
+      "2 <= l <= 10 -- holds on the new depths, because both arms are at unity by l = 8.  "
+      "\u26d4 *Checked as two separately computed sums.  The first draft of this gate compared "
+      "`dm2lnL(_AOR, OBS)` against `_t8`, which IS that same call: an assertion that could not fail, "
+      "inside the gate whose subject is a claim about two different sums*",
+      abs(_t8only - _t8) < 5e-3 and abs(_AOR[8] - 1.0) < 0.01,
+      f"2-8 gives {_t8only:+.4f}, 2-10 gives {_t8:+.4f}, apart by {abs(_t8only - _t8):.2e}; "
+      f"the depth at l = 8 is {_AOR[8]:.4f}")
+# ⌗ ⛔ ** THE ONE FIGURE WHOSE PRINTED DIGIT I CANNOT CALL, AND IT IS NAMED RATHER THAN ROUNDED. **
+#   *l = 4's term goes `+2.029` -> `+2.050`.  At the paper's one decimal place that is EXACTLY the
+#   rounding boundary: `+2.0` under round-half-to-even and `+2.1` under round-half-up, and Python's
+#   own `round` gives `2.0` while the printed convention in `sec:largescale` is not stated anywhere.
+#   ** So whether this printed digit changes is a question about the rounding rule and not about the
+#   measurement, and it is 69's to settle.**  Pinned at three places, where the question does not
+#   arise, and flagged for the draft.*
+check("\u26d4\u26ed `r7693` ** l = 4's term lands ON the one-place rounding boundary at `+2.050`, so "
+      "its printed digit is a rounding-convention question and not a measured one ** -- flagged for "
+      "69 rather than silently rounded here",
+      abs(_per8[4] - 2.050) < 1e-3,
+      f"{_per8[4]:+.4f}: +2.0 half-to-even, +2.1 half-up; the printed value is +2.0")
+
 # =================================================================================================
 print()
 print(BAR)
