@@ -20,8 +20,9 @@ CLAIM on that number, which this seat does not make.*
 - Tangency is not claimed on the shell, since it involves `g`.
 
 ***② The pointer fix (60's r7694).*** `StationaryHorizon.lean`, and its copy `NullGeodesic.lean`, now cite "the proof of
-`cor:stationary`" instead of "l.288", in the header and both docstrings. Campaign 106's `RESULT.md` is changed the same
-way. These are docstring and comment changes only, and both probes are rebuilt.
+`cor:stationary`" instead of "l.288", in the header and both docstrings.
+These are docstring and comment changes only, and both probes are rebuilt. Campaign 106's `RESULT.md` keeps its
+l.290, which was correct when it was written.
 
 ## ✔ re r7691: 2iii BUILT — NULL ALONG ANY NULL GEODESIC ON N, WITNESSED ON SCHWARZSCHILD'S HORIZON GENERATOR (`r7691+71.2`)
 

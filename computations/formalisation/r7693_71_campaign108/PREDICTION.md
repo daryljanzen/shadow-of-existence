@@ -4,8 +4,7 @@
 `ShellMatter.lean` (which carries `sh_` and `sm_`). Everything new is prefixed `sa2_`.*
 
 *② of `r7693`, the pointer fix, is done in this PR. `StationaryHorizon.lean` and its copy `NullGeodesic.lean` now cite
-the rigidity sentence as "the proof of `cor:stationary`" instead of "l.288" (three places in each). Campaign 106's
-`RESULT.md` is changed the same way. These are docstring and comment changes only, and both probes are rebuilt.*
+the rigidity sentence as "the proof of `cor:stationary`" instead of "l.288" (three places in each). These are docstring and comment changes only, and both probes are rebuilt.*
 
 ## ① On the flat restriction
 

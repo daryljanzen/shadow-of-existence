@@ -26,7 +26,7 @@ Everything new has the prefix `st_`, just before the `#print axioms` block.
   of `Hs`). `st_cor_stationary`: along every generator `γ` on `[a, b]` with `γ '' [a, b] ⊆ S.H J`, all
   of `kw_lemma_killing_whole`'s conclusions (null, `kg_Related` for every pair, `Δτ = 0`, and the
   horizon splitting's `h = g`, `Δx = 0`, `Δτ = 0`). **Rigidity is the hypothesis, as P1 cites it**
-  (l.288, Hawking with analyticity); it needs the Einstein equations, which are not in the kit.
+  (the proof of `cor:stationary`: Hawking, with analyticity); it needs the Einstein equations, which are not in the kit.
   "Stationary" has no formal content beyond invoking it.
 * **② `st_witness` — BUILT on `W` (the registered expected stop was not hit).** On `se_S hM`,
   `S.H J = ∂J⁻(𝒥⁺)` (`sx_prop_causal_alignment`) is a Killing horizon of
@@ -12937,7 +12937,7 @@ variable {N : Type*} [TopologicalSpace N] [ChartedSpace E N] [IsManifold 𝓘(�
 namespace MSpacetime
 
 /-- **`Hs` is a Killing horizon of `X`** for the `MSpacetime` `S`: the conclusion of the rigidity theorem
-(Hawking, with analyticity), which P1 cites (l.288) and which is **taken here as a hypothesis**. The clauses
+(Hawking, with analyticity), which P1 cites in the proof of `cor:stationary` and which is **taken here as a hypothesis**. The clauses
 are exactly `kw_lemma_killing_whole`'s hypotheses, stated pointwise on `Hs`:
 * `X` is `C¹` as a section of `TN` at each point of `Hs`, and `X ≠ 0` on `Hs`;
 * the chart representative `hRep g` is differentiable near each point of `Hs`;
@@ -12976,7 +12976,7 @@ end MSpacetime
 
 /-- **`cor:stationary` on `N`, `st_cor_stationary`.** Let `S.H J = ∂J⁻(J)` be a Killing horizon of `X`
 (`S.IsKillingHorizon X (S.H J)`). **This is rigidity's conclusion, taken as the hypothesis, exactly as P1
-cites it** (l.288: Hawking's rigidity theorem, with analyticity). Rigidity itself is not proved: it needs the
+cites it** (in the proof of `cor:stationary`: Hawking's rigidity theorem, with analyticity). Rigidity itself is not proved: it needs the
 Einstein equations, which are not in the kit; "stationary" has no formal content beyond invoking it.
 
 Then along every generator `γ` (an integral curve of `X` on `[a, b]` with `γ '' [a, b] ⊆ 𝓗⁺`), all of
