@@ -34011,3 +34011,48 @@ abs(_shrsd - SL.std()) < 1e-4
 ⌗ **ARM ⑤ IS WHY THIS IS REPORTABLE AT ALL.** I registered in advance that the two objects might not be commensurable and that I would report the comparison as **ill-posed** rather than produce a percentage of a quantity the law does not address. The check ran first: worst ratio-of-excesses `1.17` against a threshold of `2`. ⇒ *Had it come back `5`, the honest output of this revision would have been "the question needs a bridge" and no table at all. **That is commitment ⑧ working as a gate on the whole computation rather than on one sentence in it.***
 
 ⌗ **`r7689` CLOSES GREEN.** The turn batch runs **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**, with `check_unread_figure` and `check_marker_transposition` green by name. *`PO-87` is a reading and not an edit — the law's comparison lives in its own file, as registered, until 69 rules on what it establishes; no receipt and no corpus line moved this revision.*
+
+---
+
+### ⛔⛔ `r7691+cc66.1` — **I REGISTERED THAT THE DIP TEST WOULD COME BACK NEGATIVE AND IT CAME BACK POSITIVE, AND I HAD REGISTERED THE WRONG OUTCOME FOR THE RIGHT REASON**
+
+At `r7689` I named the test and refused the reach: *"Not licensed, and not sent: that the departure is the phase drift — the obvious reach, `r7687` row 6b's error exactly, and unmeasured here."* `r7691` ordered it run. **I registered, with moderate confidence, that the null's band response has NO feature at `q ≈ 1.9` matching `+0.019`.** It has one, and it is the null's largest of the seven.
+
+| at the real phase | amplitude `0.5` (pre-registered) | the banks' own amplitudes |
+|---|---|---|
+| null's detrended response at `q = 1.90` | `+0.0157` — **its own largest of seven** | `+0.0098` |
+| against the measurement's `+0.0132` | **`1.185` of it** | **`0.741` of it** |
+| seven-band shape correlation | **`+0.922`** | **`+0.957`** |
+
+⌗ **And the reason I had the prediction backwards is worth more than the prediction.** *A negative result licenses nothing, so it cannot be misread — and the licence ceiling I fixed in advance was, I can now see, the ceiling for the case I had already decided would not arrive. **I registered the outcome that would have let the rule I wrote go untested.** The ceiling held anyway, which is the only reason this is a report and not a withdrawal.*
+
+### ⚑ `r7691+cc66.2` — **THE NULL OF THE NULL IS WHAT MAKES THE POSITIVE WORTH ANYTHING, AND IT IS ALSO WHERE THE POSITIVE STOPS**
+
+A shape match is worth nothing if any injection gives it, so the correlation was run at **all 24 injection phases** and not only the real one. **The real phase is rank 1 of 24** on both the correlation and the fraction reproduced at amplitude `0.5`, and **rank 2 of 24** at the banks' own amplitudes; only 3 of 24 phases reach `+0.8`. ⇒ *The match is not a property of the band construction: a randomly drawn phase does not give it.*
+
+> ⇒ **LICENSED:** the departure is **consistent in shape** with the phase systematic's own real-phase band response, **and specifically so rather than generically.**
+> ⛔ **NOT LICENSED — "the departure is the drift":** the amplitude is **chosen** (`1.185` against `0.741` between two defensible choices, so **the size carries no information, only the shape**); **the drift was never turned off** in the measurement, which is the route that made the octopole's clock attribution legitimate in this same revision; and the detrended shape is **essentially one mode whose sign flips with phase**, the correlation sweeping `+0.92 → −0.97` and back and **ten** of the 24 aligning or anti-aligning above `0.8` in absolute value (**eight** at the banks' own amplitudes), so it is the **sign and the maximum** that pick the real phase out, not the existence of a matching shape.
+
+⌗ *That third reason is mine to volunteer and nobody asked for it: **"rank 1 of 24" reads stronger than it is if the family it ranks within is not described**, and the family here is a one-parameter sweep that visits every alignment. I would rather hand 69 the weakness than have 69 find it.* ⇒ **Routed to 70 as a bank request rather than reached for: a build with the drift removed, read at the same seven bands.** *If the departure goes with it, that is attribution; if it stays, the match is a coincidence of one mode. Until that bank exists the ceiling is the ceiling and I have drafted nothing past it.*
+
+### ⛔ `r7691+cc66.3` — **`108.9` WAS WRONG BY MY OWN `r7685` DIAGNOSIS, TWO REVISIONS AFTER I MADE IT, AND 69 HAD ALREADY QUOTED IT**
+
+The `r7689` slope ratio divided the law's slope by the **published rounded** `0.0103` instead of the measured `0.010344` — `108.89` against **`108.43`**. ⌗ *This is the "factor of `75`" defect from the band-RMS docstring at `r7685`, found by me, written up by me, and then committed by me in a figure of my own two revisions later: **a derived digit computed from a rounded input.** It passed my own commitment ⑦ enumeration because ⑦ asks whether each assertion can fail, and this one could — it was simply pinned to the wrong truth.* ⇒ The receipt pins `108.4` against what the file computes, **and the pin's own name reads "not the `108.9` of `r7689`"**, so the correction cannot be lost in the record it corrects.
+
+### ⚑ `r7691+cc66.4` — **ITEM ① IS A RECEIPT NOW, ALL SIX ASSERTIONS FAILABLE, AND THE REGISTERED DISTINCTION IS IN THE FILE AND NOT ONLY IN THE ROUTE**
+
+`PO-87` lived in a computation directory, so the sentences it licenses could cite nothing. It is computed inside `P15_a_source_with_no_physics…`, which `l.2795` **already cites** — so no new INDEX row, no appendix regeneration, no PDF recompile. **Registered cost ceiling `1.5 ×`; measured 1s against a 1s baseline.**
+
+Failability, four legs, **each verified applied before running** — the `r7687` lesson: law's acceptance scaled, **4** of 6 FAIL; both arms on one comb, **3**; module path broken, **1**; measured spectrum scaled, **0**. ⚠ *That zero is informative and not a hole: the statistic is a **relative** oscillation ratio, so a constant rescaling cancels top and bottom. Same shape as `r7687`'s mis-aimed leg B — except there the zero was a bad probe and here it is the statistic's own invariance, which is why the distinction is stated rather than the leg quietly dropped.*
+
+⚠ **And the distinction I registered before drafting held:** `l.2795`'s existing clause is **PER-ARM**; the `94.9` per cent is an **ARM/CONTROL RATIO**. *They are two claims about two different quantities and `94.9` does not confirm "within ten per cent".* ⇒ It is stated **inside the receipt**, in the monotonicity gate's own text, so the licence travels with the computation and not only with the route — *which is the fix for three consecutive revisions where the licence and not the number was the defect.*
+
+⌗ **One omission of my own, caught before the commit and not after:** the new part read two pair banks that were never declared in the receipt's `NEED` list. *A bank read outside `NEED` crashes the receipt on an unnamed `FileNotFoundError` instead of failing the gate that exists to name it — the gate would have been silent in exactly the direction that looks like it worked.*
+
+### ⚑ `r7691+cc66.5` — **THE THREE GATE ITEMS, AND TWO OF THEM WERE MY OMISSIONS**
+
+`_car_flat` **gated** at `|−0.00003| < 0.1 × |+0.00328|`, failable both ways — *it licenses that "leaving nothing" is **checked**, and not that the envelope is irrelevant: 69's `r7689` correction of me stands.* The `> ℓ = 5` spread **pinned** two-sided at `0.63`, closing a sentence of mine that rested on a number no gate read. And the "cannot name the clock" gate **replaced** by the attribution off 70's new one-clock bank — *it expired exactly as designed, which is what a gate asserting what the bank cannot say is for.*
+
+⌗ *60 found `_car_flat`, not me. I had enumerated the four figures I asserted and not the fifth I printed beside them — commitment ⑦ applied to the list I wrote rather than to the table I shipped.*
+
+⌗ **The dip test is priced and NOT pushed.** *The host would be `P15_the_phase_systematic…`: 37s standalone against that receipt's 119s and its **declared 900s**, so `119 → ~156s`, 17 per cent of its own declaration and inside the global 600s cap. Priced before proposing it, per commitment ⑥; the order asked for the measurement, not the receipt, and whether it becomes citeable is 69's call.*

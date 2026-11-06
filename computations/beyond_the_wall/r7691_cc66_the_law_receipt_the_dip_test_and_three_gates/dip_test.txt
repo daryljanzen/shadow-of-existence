@@ -1,0 +1,66 @@
+the seven bands, window 1.0, hi 5.75;  worst departure at q = 1.90
+
+       q  MEASURED      LAW  meas-law  meas detr  null A=0.5  null A=0.5 detr  null A=own  null A=own detr
+    1.20    1.0364   1.0349   +0.0016    -0.0145      1.0169          -0.0108      1.0056          -0.0110
+    1.90    1.0708   1.0516   +0.0192    +0.0132      1.0433          +0.0157      1.0255          +0.0098
+    2.60    1.0659   1.0638   +0.0021    +0.0018      1.0240          -0.0035      1.0161          +0.0013
+    3.30    1.0699   1.0725   -0.0026    -0.0008      1.0234          -0.0040      1.0114          -0.0025
+    4.00    1.0858   1.0786   +0.0072    +0.0086      1.0340          +0.0067      1.0210          +0.0080
+    4.70    1.0827   1.0828   -0.0001    -0.0011      1.0264          -0.0008      1.0153          +0.0032
+    5.40    1.0832   1.0854   -0.0022    -0.0072      1.0239          -0.0032      1.0024          -0.0088
+
+  THE DEPARTURE:  +0.0192 at q = 1.90;  detrended measurement there +0.0132
+
+  null A=0.5:
+    band response at q = 1.90: raw 1.0433, detrended +0.0157
+    is that a feature there?  it is band 2 of 7 by |detrended|, worst +0.0157 at q = 1.90
+    fraction of the departure it reproduces at q = 1.90: +1.185 of the detrended measurement, +0.818 of meas-law
+    shape correlation with the detrended measurement over the seven bands: +0.922
+    shape correlation with meas-law: +0.869
+    r.m.s. of its detrended shape 0.0080 against the measurement's 0.0086
+
+  null A=own:
+    band response at q = 1.90: raw 1.0255, detrended +0.0098
+    is that a feature there?  it is band 1 of 7 by |detrended|, worst +0.0110 at q = 1.20
+    fraction of the departure it reproduces at q = 1.90: +0.741 of the detrended measurement, +0.512 of meas-law
+    shape correlation with the detrended measurement over the seven bands: +0.957
+    shape correlation with meas-law: +0.712
+    r.m.s. of its detrended shape 0.0073 against the measurement's 0.0086
+
+
+  THE NULL OF THE NULL: the same correlation at all 24 phases, not only the real one
+   phase/2pi    null A=0.5 corr    null A=0.5 @1.9    null A=own corr    null A=own @1.9
+       0.000             +0.922             +1.185             +0.957             +0.741 <- the real phase
+       0.042             +0.872             +0.444             +0.779             +0.435
+       0.083             +0.628             +0.104             +0.652             +0.410
+       0.125             +0.567             +0.051             +0.584             +0.431
+       0.167             +0.491             -0.082             +0.500             +0.342
+       0.208             +0.411             -0.116             +0.377             +0.256
+       0.250             +0.329             +0.006             +0.210             +0.134
+       0.292             +0.329             +0.195             +0.126             +0.051
+       0.333             +0.416             +0.320             +0.092             -0.055
+       0.375             +0.371             +0.029             -0.115             -0.322
+       0.417             -0.052             -0.294             -0.597             -0.712
+       0.458             -0.801             -0.472             -0.818             -0.892
+       0.500             -0.971             -0.625             -0.917             -1.020
+       0.542             -0.913             -0.729             -0.878             -0.899
+       0.583             -0.870             -0.753             -0.842             -0.849
+       0.625             -0.845             -0.742             -0.813             -0.773
+       0.667             -0.839             -0.694             -0.767             -0.709
+       0.708             -0.814             -0.605             -0.645             -0.600
+       0.750             -0.774             -0.660             -0.380             -0.475
+       0.792             -0.659             -0.618             +0.066             -0.332
+       0.833             -0.537             -0.600             +0.327             -0.241
+       0.875             -0.341             -0.495             +0.574             -0.059
+       0.917             +0.114             -0.201             +0.858             +0.350
+       0.958             +0.877             +0.515             +0.989             +0.857
+
+  null A=0.5: correlation over the 24 phases runs -0.971 to +0.922, mean -0.087;  the real phase is +0.922, rank 1 of 24
+    the fraction reproduced at q = 1.9 runs -0.753 to +1.185;  the real phase +1.185, rank 1 of 24
+    phases whose correlation exceeds +0.8: 3 of 24
+    ...and whose |correlation| exceeds 0.8: 10 of 24 (3 aligned, 7 anti-aligned) -- the family visits every alignment, and it is the SIGN that selects the real phase
+
+  null A=own: correlation over the 24 phases runs -0.917 to +0.989, mean +0.013;  the real phase is +0.957, rank 2 of 24
+    the fraction reproduced at q = 1.9 runs -1.020 to +0.857;  the real phase +0.741, rank 2 of 24
+    phases whose correlation exceeds +0.8: 3 of 24
+    ...and whose |correlation| exceeds 0.8: 8 of 24 (3 aligned, 5 anti-aligned) -- the family visits every alignment, and it is the SIGN that selects the real phase
