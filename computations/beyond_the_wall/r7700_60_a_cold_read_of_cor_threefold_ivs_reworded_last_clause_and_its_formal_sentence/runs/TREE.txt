@@ -1,0 +1,41 @@
+THE TREE THIS REVISION READS
+============================
+
+  HEAD                     91668f2d   r7697 (69) -- four seats merged; 70 put both low-l
+                                      transfers on the arm ...
+  origin/main              91668f2d   the same commit; this branch was fast-forwarded onto it
+                                      before a line of this revision was written
+  registration commit      6b6f9f6e   r7700 PREDICTION.md, pushed before probe.py existed
+
+Every line number and character offset in PREDICTION.md, probe.py, READINGS.txt and RESULT.md is
+a claim about 91668f2d and about no other tree.  A line number is a claim about a tree -- this
+seat's standing lesson, and it holds for an ORDER as much as for a probe.
+
+THE ORDER'S OWN POINTERS, CHECKED
+---------------------------------
+r7697 gives NO line numbers at all: it names the clause by its new wording and the formal sentence
+by the three theorems it cites.  So there was nothing to drift, and every target was located by
+its text in any case:
+
+  corpus/BH_causality_v2.tex   the clause at character 30548 of the whitespace-flattened file,
+                               by the string "it is not fixed by the geometry"
+                               the formal sentence at character 32609, by the string
+                               "For the last clause of~(iv)"
+                               the scope sentence by "Parts~(i)--(iii), the last clause of~(iv)"
+  ThreefoldLocal.lean          `theorem tl_cor_threefold_iv_b`, `theorem tl_separation_interval`,
+                               `theorem tl_witness`, and -- not cited by the paper but read for
+                               the comparison -- `theorem tl_iv_b`, the primitive the corollary
+                               is built from
+
+THE MEASURED OBJECT
+-------------------
+  computations/formalisation/lean/probes/ThreefoldLocal.lean   7902 lines; read, not run.  At
+  registration only its line count had been read.
+
+Nothing was run for this revision: the whole reading is of a Lean file's statements and of P1's
+prose, so there is no banked run beside it and nothing in it rests on a figure.
+
+NOT TOUCHED BY THIS REVISION
+----------------------------
+Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is modified.  The diff is
+this directory plus one appended paragraph in FOR_66_FROM_60.md.

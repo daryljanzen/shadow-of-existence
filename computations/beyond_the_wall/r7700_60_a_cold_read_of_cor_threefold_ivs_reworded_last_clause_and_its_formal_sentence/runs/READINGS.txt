@@ -1,0 +1,104 @@
+G2 self-probe: accepted, accepted, accepted, REFUSED
+
+==============================================================================================
+ITEM -- (iv)'s reworded last clause and its formal sentence, against ThreefoldLocal.lean
+==============================================================================================
+the clause located by its text at character 30548; the formal sentence at 32609
+
+the clause, as this tree carries it:
+  ... emporal function $\tau$ has no invariant geometric meaning: it is not fixed by the geometry, smooth local deformations of $\tau$ in a neighbourhood of $\gamma$ altering it while keeping $\tau$ temporal. \end{enumerate} \end{corollary} Parts~(i)--(iii), the last clause of~(iv), and all four
+
+the formal sentence, as this tree carries it:
+  For the last clause of~(iv), in finite dimension and on a Hausdorff manifold: for a causal curve from $p$ to $q$, a temporal function $\tau$ and any open set about $q$, the temporal functions equal to $\tau$ outside that set assign separations filling an open interval about the $\tau(q)-\tau(p)$ that $\tau$ assigns, the deformation being a bump in a chart that leaves the function temporal (\texttt{tl\_cor\_threefold\_iv\_b} and \texttt{tl\_separation\_interval}, in \texttt{ThreefoldLocal.lean}); on the Rindler pair
+
+the four theorems read, by signature length: iv_b 388, interval 403, iv_b's primitive 407, witness 366
+NEGATIVE PROBE 1 (a name the file does not carry): absent, as it must be
+
+arm A -- the clause read one predicate per conjunct (G1):
+  the invariance half                FOUND
+  the deformation half               FOUND
+  the rider that τ stays temporal    FOUND
+  the theorem's conclusion, as the file states it:
+    ∃ δ₀ > 0, ∀ δ ∈ Ioo (-δ₀) δ₀, ∃ τ' : N → ℝ, S.IsTemporalOn S.M τ' ∧ (∀ x ∉ V, τ' x = τ x) ∧ τ' q - τ' p = τ q - τ p + δ := by
+  τ' temporal is part of the CONCLUSION: YES
+
+arm B -- the localisation: the clause names a neighbourhood of the CURVE, the sentence an open set about the ENDPOINT:
+  what `tl_cor_threefold_iv_b` quantifies over: {V : Set N} (hV : IsOpen V) (hqV : q ∈ V)
+  `p ∉ V` among `tl_cor_threefold_iv_b`'s hypotheses: no
+  `p ∉ V` among its primitive `tl_iv_b`'s hypotheses:  YES
+  and how the corollary discharges it: by intersecting V with the complement of {p} (`hV.inter isOpen_compl_singleton`)
+  the produced function still equals τ off the WHOLE of V: YES
+  NEGATIVE PROBE (the hypothesis reader on a copy with `p ∉ V` injected): fires, as it must
+
+arm C -- THE ORDER'S FIRST QUESTION: q in the open set; is p required outside it?
+  the hypotheses, one per reading:
+    hL     S.LocallyOneChart
+    hτ     S.IsTemporalOn S.M τ
+    hpq    Relation.TransGen S.CStep p q
+    hV     IsOpen V
+    hqV    q ∈ V
+  the instance arguments: FiniteDimensional ℝ E, T2Space N
+
+arm D -- THE ORDER'S SECOND QUESTION: is "filling an open interval about its value" what is proved?
+  `tl_separation_interval`'s conclusion, as the file states it:
+    ∃ δ₀ > 0, Ioo (τ q - τ p - δ₀) (τ q - τ p + δ₀) ⊆ {s | ∃ τ' : N → ℝ, S.IsTemporalOn S.M τ' ∧ (∀ x ∉ V, τ' x = τ x) ∧ τ' q - τ' p = s} := by
+  an OPEN interval: YES; CENTRED on τ(q) − τ(p): YES; TWO-SIDED: YES
+  and the interval is contained in the set of separations actually ACHIEVED: YES
+  FLIP (G3), the same reader on a copy with the interval struck: reads none, as it must
+  the weaker POINTWISE form (a separation merely differing) is what the WITNESS states: YES
+
+arm E -- the setting the sentence names, against the theorems' own instance arguments:
+  the sentence says finite dimension       YES
+  the sentence says a Hausdorff manifold   YES
+  both theorems ask  FiniteDimensional ℝ E  YES
+  both theorems ask  T2Space N              YES
+  any OTHER instance argument either theorem asks: none
+  and the structural hypothesis the sentence covers by "the setting of rem:formalised": LocallyOneChart (hL)
+
+arm F -- the witness:
+  is on to_cor_1c's pair                                   YES
+  states the pair causally and not chronologically related YES
+  produces a second TEMPORAL function                      YES
+  equal to the first off a ball about q                    YES
+  with a DIFFERENT separation                              YES
+  for EVERY radius r > 0                                   YES
+
+arm G -- THE ORDER'S THIRD QUESTION: does anything else in P1 rely on "arbitrarily"?
+  the search performed over the whole of P1 (131174 characters flattened):
+    'arbitrarily'                      1 occurrence(s)
+    'no invariant geometric meaning'   1 occurrence(s)
+    'not fixed by the geometry'        1 occurrence(s)
+    'non-invariant'                    1 occurrence(s)
+    'altering it'                      1 occurrence(s)
+  each site classified:
+    'arbitrarily'                      at  113086  NEITHER
+    'no invariant geometric meaning'   at   30516  THE WEAKER CLAIM, WHICH IS PROVED
+    'not fixed by the geometry'        at   30554  THE WEAKER CLAIM, WHICH IS PROVED
+    'non-invariant'                    at   22715  THE WEAKER CLAIM, WHICH IS PROVED
+    'altering it'                      at   30648  THE WEAKER CLAIM, WHICH IS PROVED
+  CLASSIFIER PROBE (G4), both classes: 'may be altered arbitrarily' -> STRONGER THAN PROVED ; 'stays non-invariant' -> THE WEAKER CLAIM, WHICH IS PROVED
+  NEGATIVE PROBE 8 (an injected site stating the stronger claim): fires: ['STRONGER THAN PROVED']
+
+arm H -- the scope sentence's three groups, and what carries (iv)'s FIRST clause:
+  the sentence: Parts~(i)--(iii), the last clause of~(iv), and all four parts together on one pair, are machine-checked. In the setting of Remark~\ref{rem:formalised}
+  names (i)-(iii)                              YES
+  names the last clause of (iv)                YES
+  names all four parts together on one pair    YES
+  the one-pair group's own citation present in the paragraph: YES (to_cor_1c)
+  (iv)'s first clause is stated as following from thm:metric-singularity: YES
+  and that theorem's own machine-checked form is named elsewhere in P1: YES (ac_metric_singularity_along)
+  ⇒ so the only part of (iv) proved IN GENERAL here is its last clause, and its first clause is carried on the witness pair and by a separately machine-checked theorem.
+
+----------------------------------------------------------------------------------------------
+arm A: SUPPORTED     -- both halves are in the clause and τ' temporal is in the theorem's conclusion
+arm B: SUPPORTED, AND THE THEOREM IS MORE GENERAL -- the theorem takes ANY open V about q, needs no `p ∉ V` (its primitive does, and the corollary discharges it by shrinking V away from p), and still returns a function equal to τ off the whole of V
+arm C: SUPPORTED     -- q ∈ V is a hypothesis; p outside it is NOT
+arm D: SUPPORTED     -- the conclusion is an open two-sided interval centred on the value and contained in the separations achieved
+arm E: SUPPORTED     -- the two instance arguments the sentence names are exactly the two the theorems ask, with no third
+arm F: SUPPORTED     -- the witness is on the paragraph's own pair, for every radius, with a second temporal function and a different separation
+arm G: SUPPORTED     -- 5 reliance site(s) found, 0 of them stating the stronger claim
+arm H: SUPPORTED     -- the three groups are what the paragraph delivers, (iv)'s first clause being carried on the one pair and by a separately machine-checked theorem
+
+==============================================================================================
+8 verdicts printed.  0 reader or classifier probe(s) failed.
+==============================================================================================
