@@ -120,6 +120,7 @@ half of the over-delivery.  ⛔ *A docstring left on namesake numbers is a recei
 text disagrees with its computation, and nothing in the gates would have caught it.*
 """
 import os
+import sys
 
 import numpy as np
 
@@ -156,7 +157,13 @@ SRC = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_a
 NEED = ('r6919_injected_lcdm_leafrec1.npz', 'r6919_injected_cr_leafrec1.npz',
         'r6919_geometry_leafrec1.npz', 'r6919_noop_leafrec1.npz',
         'r6911_source_lcdm_leafrec1.npz', 'r6911_source_cr_leafrec1.npz',
-        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr_leafrec1.npz')
+        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr_leafrec1.npz',
+        # ⛭ `r7691+cc66`: the acceptance banks and the pair banks, for the law-versus-own-comb
+        #   comparison below.  *All four are declared here and not only read where they are used: a
+        #   bank read outside `NEED` crashes the receipt on an unnamed `FileNotFoundError` instead of
+        #   failing the gate that exists to name it.*
+        'r7041_accept_lcdm.npz', 'r7041_accept_cr_leafrec1.npz',
+        'r6915_pairs_lcdm.npz', 'r6915_pairs_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -509,6 +516,96 @@ WHAT `r6919` ASKED AND WHAT THE INJECTION SAYS.
   why this construction assigns its scales and its distances to different rates -- that is `P15`
   `sec:tensions`' own question and is not reopened here.
 """)
+# ===================================================================================================
+# ⛭⛭⛭ `r7691+cc66` ITEM 1, ON 69's ORDER: ** DOES THE ACCEPTANCE LAW PREDICT THE OWN-COMB READING? **
+#   *`r7689`'s `PO-87` found that it does, to `94.9` per cent of the summed band excess with nothing
+#   fitted.  That lived in `computations/.../r7689_.../law_vs_own.py` and no receipt computed it, so the
+#   sentences it licenses could not cite anything.  This part computes it here, in a receipt `l.2795`
+#   already cites.*
+#   ⚠⚠ ** AND THE DISTINCTION THAT MUST NOT BE BLURRED, STATED IN THE FILE AND NOT ONLY IN THE ROUTE. **
+#   `l.2795` already claims the law holds "to within ten per cent of the measured amplitude on both
+#   arms at every band".  That is a PER-ARM comparison: `A_l` against each arm's own measured comb
+#   amplitude.  ** What is computed below is an ARM/CONTROL RATIO comparison ** -- the law's
+#   `A_cr/A_lcdm` against the own-comb retention ratio.  *Two different claims about two different
+#   quantities.  The figures below do NOT bear on that clause, and the drafting temptation is to read
+#   `94.9` per cent as confirming it.*
+_OCM = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7637_70_own_comb_statistic')
+check("⛭ `r7691` the own-comb module this comparison needs is present: "
+      "`r7637_70_own_comb_statistic/own_comb.py`", os.path.exists(os.path.join(_OCM, 'own_comb.py')))
+sys.path.insert(0, _OCM)
+import own_comb as OC                                                        # noqa: E402
+
+_AC = {t: np.load(os.path.join(SP, f'r7041_accept_{n}.npz'), allow_pickle=True)
+       for t, n in (('lcdm', 'lcdm'), ('cr', 'cr_leafrec1'))}
+_AQ = {t: _AC[t]['ls__fixed'].astype(float) / float(_AC[t]['l_A__fixed']) for t in _AC}
+_AA = {t: np.asarray(_AC[t]['A'], float) for t in _AC}
+# the law banded by its band MEAN -- `A_l` is already an amplitude fraction, not an oscillation to
+# take an RMS of.  The bridge is stated rather than assumed (`r7689` arm 5).
+_PR = {t: dict(np.load(os.path.join(SP, n))) for t, n in
+       (('lcdm', 'r6915_pairs_lcdm.npz'), ('cr', 'r6915_pairs_cr_leafrec1.npz'))}
+_B = {t: dict(QL=_PR[t]['ls'].astype(float) / float(_PR[t]['l_A']),
+              QK=SO[t]['k'] * float(SO[t]['r_s']) / np.pi,
+              Dl=np.asarray(_PR[t]['Dl'], float),
+              S2=np.asarray(SO[t]['S_i'], float) ** 2) for t in _PR}
+_CB = OC.retention_combs(_B)
+
+
+def _law_band(a, b):
+    g = np.linspace(a, b, 400)
+    return (np.interp(g, _AQ['cr'], _AA['cr']).mean()
+            / np.interp(g, _AQ['lcdm'], _AA['lcdm']).mean())
+
+
+_rows = []
+for _w, _nb, _hi in OC.SETTINGS:
+    _lo = 0.35 + 0.5 * _w + 1e-9
+    _ed = np.linspace(_lo, _hi, _nb + 1)
+    _xs = np.array([(a + b) / 2 for a, b in zip(_ed[:-1], _ed[1:])])
+    _ys = np.array([_law_band(a, b) for a, b in zip(_ed[:-1], _ed[1:])])
+    _rows.append(np.polyfit(_xs, _ys, 1)[0])
+_LSL = np.array(_rows)
+_mx, _my = OC.retained_own(_B, 1.0, 7, 5.75, C=_CB)
+_ed7 = np.linspace(0.35 + 0.5 + 1e-9, 5.75, 8)
+_lb = np.array([_law_band(a, b) for a, b in zip(_ed7[:-1], _ed7[1:])])
+_own12, _ownsd = OC.slope12(OC.retained_own, _B, C=_CB)
+_acct = float((_lb - 1).sum() / (_my - 1).sum())
+_inside = int(np.sum(np.abs(_lb - _my) <= 0.0089))
+
+print("\n  \u26ed `r7691` THE LAW AGAINST THE OWN COMB, band by band (7-band window-1 setting)")
+print(f"    {'q centre':>9s} {'LAW':>8s} {'MEASURED':>9s} {'law-meas':>9s}")
+for _xc, _lw, _mv in zip(_mx, _lb, _my):
+    print(f"    {_xc:9.2f} {_lw:8.4f} {_mv:9.4f} {_lw - _mv:+9.4f}")
+print(f"    summed excess: the law carries {100 * _acct:.1f} per cent of the measurement; "
+      f"{_inside} of {len(_my)} bands inside the own-comb setting spread 0.0089")
+print(f"    twelve-setting slope: law {_LSL.mean():+.5f} +- {_LSL.std():.5f}, "
+      f"measured {_own12:+.5f} +- {_ownsd:.5f}  ({100 * _LSL.mean() / _own12:.1f} per cent)")
+
+for _nm, _got, _want, _tol, _fmt in (
+        ("the law carries 94.9 per cent of the summed own-comb excess", 100 * _acct, 94.9, 5e-2, '.1f'),
+        # ⛔ `r7691+cc66`: ** 108.4, NOT THE 108.9 I REPORTED AT `r7689`. **  That figure divided the
+        #   law's slope by the PUBLISHED ROUNDED `0.0103` instead of the measured `0.010344`:
+        #   `0.011215/0.0103 = 108.89` against `0.011215/0.010344 = 108.43`.  *A derived digit computed
+        #   from a rounded input -- which is exactly the defect I found in the band-RMS docstring's
+        #   "factor of 75" at `r7685`, arriving two revisions later in a figure of my own, and already
+        #   quoted back to me in `r7691`'s order text.  Pinned here against what the file computes.*
+        ("the law's twelve-setting slope is 108.4 per cent of the measured, not the 108.9 of r7689",
+         100 * _LSL.mean() / _own12, 108.4, 5e-2, '.1f'),
+        ("the law's own setting spread, under half the measurement's", _LSL.std(), 0.00059, 5e-6, '.5f')):
+    check(f"⛭ `r7691` {_nm}", abs(_got - _want) < _tol, f"{_got:{_fmt}} against {_want:{_fmt}}")
+check("⛭ `r7691` six of the seven bands sit inside the own-comb statistic's own setting spread",
+      _inside == 6, f"{_inside} of {len(_my)} inside 0.0089")
+check("⛔⛭ ** AND THE LAW DOES NOT PRODUCE THE MEASURED BAND-TO-BAND SHAPE: it rises monotonically "
+      "across the seven bands and the measurement does not. ** \u21d2 *What this licenses is that the "
+      "law accounts for the offset and the rise -- an ARM/CONTROL RATIO statement, NOT `l.2795`'s "
+      "per-arm 'within ten per cent of the measured amplitude', which is a different comparison.  It "
+      "does NOT license attributing the departure at `q ~ 1.9` to the phase drift: that would read a "
+      "null's response at a CHOSEN amplitude as a decomposition, which the phase-systematic receipt's "
+      "own NOT CLAIMED forbids*",
+      bool(np.all(np.diff(_lb) > 0)) and not bool(np.all(np.diff(_my) > 0)),
+      f"law monotonic {bool(np.all(np.diff(_lb) > 0))}, measurement monotonic "
+      f"{bool(np.all(np.diff(_my) > 0))}; worst band {np.max(np.abs(_lb - _my)):.4f} at "
+      f"q = {_mx[int(np.argmax(np.abs(_lb - _my)))]:.2f}")
+
 print("=" * 100)
 if FAILS:
     print(f"GATES: {len(FAILS)} FAILED:")
