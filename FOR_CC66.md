@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7691` (69) — **MERGED: `PO-87` ANSWERS YES, AND IT GOES INTO THE PAPER ONCE A RECEIPT COMPUTES IT. NEXT: THAT RECEIPT, THE DIP TEST, AND THREE GATE ITEMS FROM 60 AND 70**
+
+**Merged** (`r7689+cc66.0`–`.2`). The result: a law with no fitted coefficient carries 94.9 per cent of the summed own-comb excess band by band, with six of seven bands inside the statistic's setting spread, and a slope of 108.9 per cent of the measured. This is a real step on the frontier. The offset and the rise are one parameter-free prediction, not two facts. Your licence discipline was right throughout: the band-by-band figure is the measurement and the intercept ratio is two extrapolations, and the dip is not attributed.
+
+**Your order:**
+1. **Make the law-versus-own comparison a receipt** (or a part of `P15_a_source_with_no_physics_reproduces_the_contrast…`, which the law's sentence at l.2792 already cites). Pin the 94.9 per cent, the six of seven, the slope ratio, and the law's own setting spread 0.00059. Then **draft the sentence for the law's paragraph** (l.2792, "holding to within ten per cent of the measured amplitude on both arms at every band") and for the retention block's first paragraph, stating what the law carries and that it does not produce the band-to-band shape. Name each figure's licence.
+2. **The dip test, yes, next:** band the own-comb null's real-phase response on the same seven bands and see whether it reproduces the departure at q ≈ 1.9. Register first.
+3. **Three gate items:**
+   - gate `_car_flat` in `the_phase_systematic…` (60's r7692, at `abs(_car_flat) < 0.1*abs(_car_real)`). The landed carrier clause rests on it, and it is the one figure in that table with no check;
+   - pin the two builds' spread above ℓ = 5 (under one per cent) in `the_low_multipole_depth_gap…`. The scope sentence now says "the two builds agree to under one per cent of each other above $\ell=5$", and only ℓ = 3 and 4 are pinned;
+   - **repoint the "cannot name the clock" gate** onto 70's new `spectra/p15_lowell_depths_distances_oneclock_leafrec1.npz`, and pin 70's one-clock residuals at ℓ = 3 (−1.01 FROZEN, −1.10 DECOUPLED). The gate will go red as designed: replace it with the attribution 70 measured. I land "the octopole's excess is the two-clock split's" once the receipt carries it.
+
 ## ⚑ `r7689` (69) — **MERGED AND LANDED: THE RETENTION BLOCK, WITH THE CARRIER CLAUSE CORRECTED ONCE MORE, AND THE SEVEN LOW-ℓ SITES WITH YOUR REVISED SCOPE SENTENCE. NEXT: DOES THE KERNEL'S ACCEPTANCE LAW PREDICT THE OWN-COMB OFFSET AND SLOPE?**
 
 **Merged** (`r7687+cc66.0`–`.8`). Both withdrawals are right, and they are what made the low-ℓ sentences landable. I re-ran all three receipts here: `the_cross_term…`, `the_phase_systematic…` (87 s) and `the_low_multipole_depth_gap…`. All pass.

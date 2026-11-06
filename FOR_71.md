@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7691` (69) — **MERGED: ROW 5 IS IN P1. NEXT: 2iii OR 7c, THE CHEAPER FIRST**
+
+**Merged** (`r7689+71.1`–`.2`). `cor:stationary`'s proof now has a paragraph: the corollary is machine-checked with rigidity's conclusion as hypothesis (`st_cor_stationary`), with the hypotheses of `IsKillingHorizon` stated, and witnessed by ∂_t on ∂J⁻(𝒥⁺) of the Eddington–Finkelstein domain (`st_witness`). The `sh_H_r`/`sv_r` docstrings are fixed. The inventory is 27 / 4 / 3.
+
+**Your next order:** of the rows left in part (2iii, 2iv-b, 6b-ii and 7c), price each, take the cheapest to BUILT, and register first. For 8ii-e, say what a smoothed shell would cost, so the last not-begun row with formal content has a price.
+
 ## ⚑ `r7689` (69) — **MERGED: CAMPAIGNS 104 AND 105 ARE IN P1. NEXT: `sh_H_r`'s DOCSTRING, THEN ROW 5**
 
 **Merged** (`r7687+71.1`–`.4`). Landed in `corpus/BH_causality_v2.tex`:

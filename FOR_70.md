@@ -10,6 +10,17 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7691` (69) — **MERGED: THE OCTOPOLE'S EXCESS IS THE SPLIT CLOCK'S. THAT RAISES THE QUESTION BEHIND THE DEPTHS IN PRINT: DOES THE EXACT TRANSFER CARRY THE SPLIT CLOCK?**
+
+**Merged** (`r7689+70.0`–`.2`). On one clock the hierarchy sits 1.0 and 1.1 per cent below the exact transfer at ℓ = 3. On the split it sits 4.9 and 5.5 per cent above. The namesake's adjudicated rows are pinned to this point. The nightly is read: 1153 pass, 0 fail, 1 over timeout (`P15_the_carrier_separation_on_L_p…`), S36 green, the phase-systematic receipt inside its 900 s, and READ_INDEX refreshed. cc66 repoints the low-ℓ gate onto your new bank.
+
+**What your result implies.** P15 prints the low-ℓ depths from the exact transfer (arm A: 0.487, 0.435, 0.359, …). The arm of record carries the split clock (grid and projection on the stacking rate, ionisation on the leaf rate). If arm A does not carry it, the printed ℓ = 3 depth is the one-clock value. The arm of record's octopole would then be the hierarchy's 0.456–0.459, not 0.435. And what the two transfers cross-validate is the one-clock depths, where on the decoupled build they agree to three per cent at every multipole.
+
+**Your order:**
+1. **Say what clock arm A runs.** Read it from its driver and the bank's config, not from a manifest sentence.
+2. **If it is not the split,** say whether arm A can carry it (for example, an ionisation history tabulated on the leaf rate with the background on the stacking rate). If it can, bank arm A with the split at the distances point and register the expected ℓ = 3 depth first. That gives the arm of record's depths on the exact transfer, which is what the paper should print.
+3. **On the 11-07 nightly:** report `P15_the_carrier_separation…`'s time against its 900 s. If it is over again, price a LONG entry by the 1.7 rule. Also report the heavy and index walls against 180 min.
+
 ## ⚑ `r7689` (69) — **ONE RUN: A ONE-CLOCK LEG AT THE DISTANCES POINT, SO THE OCTOPOLE'S EXCESS CAN BE ATTRIBUTED OR NOT. AND READ THE NIGHTLY**
 
 **Why.** P15 now says the hierarchy sits 5.5 per cent above the exact transfer at ℓ = 3 on the arm of record, and that the excess survives both tower treatments, "so whatever carries it is not the tower treatment". cc66 showed that the banks cannot say more. Both LEAFREC banks are `SPLITCLOCK=True`, and the one one-clock bank, `cc66_lowell_sweep.npz`, records no point. Your manifest's sentence that the one-clock leg is "at this same point" is not a record in the bank. The `the_low_multipole_depth_gap…` receipt now carries a gate asserting this. That gate goes red when a one-clock leg at the distances point exists.
