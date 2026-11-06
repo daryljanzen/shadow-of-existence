@@ -1,0 +1,106 @@
+==============================================================================
+ARM 1 -- PART (iii)'s NEW SENTENCE AND THE SCOPE CLAIM, vs NullGeodesic.lean
+==============================================================================
+
+  1a WHAT THE SENTENCE SAYS AND WHAT THE CITED NAME STATES
+    read      the sentence claims CONSTANCY of g(dot-gamma,dot-gamma): True
+    read      the sentence claims the NULLITY transfer              : True
+    read      the sentence claims it chart by chart                : True
+    read      ng_cor_threefold_iii concludes the nullity transfer  : True
+    read      ...and states CONSTANCY                              : False
+    read      the CONSTANCY is a different theorem, ng_energy_const: True
+    read      and P1 cites ng_energy_const                         : False
+    read      IsGeodesicOn is defined chart by chart (chartAt per t): True
+    VERDICT   1a SUPPORTED on the nullity transfer, and MIS-CITED, SUPPORTED ELSEWHERE on the constancy -- the sentence makes TWO claims and cites ONE name: ng_cor_threefold_iii states only "null at one t0 implies null at every t", while "g(dot-gamma,dot-gamma) is constant along any geodesic" is ng_energy_const, in the same file and NOT cited (searched P1 for the name and it does not occur). The same shape r7694 found with td_ne_of_transGen, which r7693 then landed. ** Six words: cite ng_energy_const beside it. ** "Chart by chart" is right: IsGeodesicOn is stated through chartAt at each parameter.
+
+  1b THE HYPOTHESES, BOTH WAYS, AND THE AMBIENT SETTING
+    read      LocallyOneChart                True
+    read      a geodesic segment on [a,b]    True
+    read      the segment inside M           True
+    read      null at one parameter          True
+    read      the section's atlas is C^1                            : True
+    read      ...not C^2                                           : True
+    read      the section's variable block asks FiniteDimensional  : False
+    read      (FiniteDimensional appears on OTHER lemmas of the file: True)
+    read      rem:formalised says a C^1 atlas                      : True
+    read      ...on an arbitrary real normed space                  : True
+    VERDICT   1b SUPPORTED, hypotheses whole and the SETTING CORRECT -- every hypothesis of the theorem has a clause and the prose invents none; and unlike cor:stationary's paragraph, which r7694 found borrowing a generality it had not got, THIS section asks a C^1 atlas and no finite-dimensionality, so "in the setting of Remark rem:formalised" is exactly right here. The repair r7694 prompted was specific to that paragraph and is NOT owed in this one -- checked rather than assumed either way.
+
+  1c THE SCOPE CLAIM: "Parts (i)--(iii), and all four parts together on one pair"
+    read      (i) unqualified            cited in the paragraph: True
+    read      (i) Hausdorff separation   cited in the paragraph: True
+    read      (ii)                       cited in the paragraph: True
+    read      (iii)                      cited in the paragraph: True
+    read      all four on one pair       cited in the paragraph: True
+    read      the claim says (i)--(iii) and NOT (i)--(iv)           : True
+    VERDICT   1c SUPPORTED -- each of (i), (ii) and (iii) has its own cited name in the paragraph, and "all four together on one pair" is to_cor_1c, which r7690 read at source as one theorem on one pair with the pair counted by POSITION. The claim stops at (iii) and does not say (iv) is separately machine-checked, which is exact: (iv) routes through thm:metric-singularity. No TWO-TO-ONE is reached.
+
+  1d THE WITNESS
+    read      ng_witness discharges IsGeodesicOn, the SAME predicate: True
+    read      on the frontier of the causal past of scri            : True
+    read      velocity CONSTANT at (0,1), i.e. affinely parametrised: True
+    read      ...with c″ = 0 = -Γ(c)(c′,c′) in the same statement    : True
+    read      null at s = 0 AND on all of [0,b]                     : True
+    VERDICT   1d SUPPORTED -- the witness discharges the very predicate arm 1b reads, so part (iii)'s hypothesis is satisfiable and the clause is not vacuous; and "affinely parametrised" is EARNED, by a velocity constant at (0,1) together with c″ = 0 in the same statement, rather than asserted.
+
+==============================================================================
+ARM 2 -- THE ACCEPTANCE LAW, AND WHETHER TWO CLAIMS COLLAPSE INTO ONE
+==============================================================================
+
+  2a THE NEW LAW SENTENCE, against the cited receipt at source
+    read      94.9 per cent of the summed excess               pinned by the receipt: True
+    read      108.4 per cent of the measured slope             pinned by the receipt: True
+    read      its own setting spread 0.00059                   pinned by the receipt: True
+    read      six of the seven bands inside the setting spread pinned by the receipt: True
+    read      the paper states each of those four figures           : True
+    read      the receipt CORRECTED 108.9 to 108.4 itself           : True
+    read      ...and the paper carries the corrected digit          : True
+    VERDICT   2a SUPPORTED -- all four of the law sentence's figures are pinned by the cited receipt's own gates, and the receipt caught its own rounded-intermediate error (108.9 -> 108.4) which the paper now carries corrected. The paper also respects the receipt's declared limit: the q ~ 1.9 outlier is named and NOT attributed to the phase drift, which that receipt explicitly refuses to license.
+
+  2b THE ORDER'S QUESTION: can the per-arm and arm-to-control claims be read as ONE?
+    read      the block          per-arm denominator : the measured amplitude, band by band, per arm
+    read      the block          ratio denominator   : the summed excess above unity of the arm-to-control ratio
+    read      the block          the prose SIGNPOSTS the distinction: True
+    G4        the block -> TWO CLAIMS, DISTINCT
+    read      the summary item   per-arm denominator : the measured amplitude, band by band, per arm
+    read      the summary item   ratio denominator   : the summed excess above unity of the arm-to-control ratio
+    read      the summary item   the prose SIGNPOSTS the distinction: True
+    G4        the summary item -> TWO CLAIMS, DISTINCT
+    VERDICT   2b TWO CLAIMS, DISTINCT in both places (TWO CLAIMS, DISTINCT; TWO CLAIMS, DISTINCT) -- they differ in the QUANTITY (an absolute per-arm amplitude against an arm-to-control ratio) and in the DENOMINATOR (the measured band amplitude against the summed excess above unity), and the prose keeps them apart EXPLICITLY in each: the block writes "as a different comparison from the per-arm one above" and the summary item writes "Read as a ratio between the arms, the same law carries the retention's size as well as its direction". So they cannot be read as one, and the reading did not have to infer that -- the sentences say it.
+    neg13     a pair sharing one denominator would read ONE CLAIM RESTATED; the reading compares denominators rather than counting sentences: yes
+
+  2c THE SHORTENED SUMMARY ITEM
+    read      it states the law with no fitted coefficient          : True
+    read      it keeps the per-arm figure                           : True
+    read      it keeps the ratio figures                            : True
+    read      it cites the same receipt the block cites             : True
+    VERDICT   2c SUPPORTED -- the shortened item states the law, both comparisons and the no-coefficient property, cites the receipt the block cites, and claims nothing the block does not: neither SCOPE-OVERSTATED nor SCOPE-UNDERSTATED is reached.
+
+==============================================================================
+ARM 3 -- THE OCTOPOLE ATTRIBUTION (attribution only, as the order restricts)
+==============================================================================
+
+    read      the scope sentence says "and it is the two-clock split's": True
+    read      the earlier clause says "the excess being the two-clock split's": True
+    read      the scope sentence gives a COUNTERFACTUAL (split off)   : True
+    read      ...and its two figures, 1.0 and 1.1 per cent BELOW      : True
+    read      the r7691 block banks 70's ONE-CLOCK leg at the point   : True
+    read      it pins the one-clock octopole residual, both builds    : True
+    read      its gated headline is the attribution BY TURNING IT OFF : True
+    read      and it REPLACES r7687's 'cannot say' gate, by design    : True
+    read      it declares what it does NOT license (a mechanism)      : False
+    VERDICT   3 SUPPORTED, AND BY A COUNTERFACTUAL -- not ATTRIBUTED BY ELIMINATION, which was the reachable negative registered for it. r7692 read this same receipt declaring it could NOT name the clock as the octopole's reason, keyed to the absence of a one-clock point record; 70 has since banked that leg at the very same point, and the r7691 block pins the one-clock octopole residual on both builds and gates the attribution as measured BY TURNING THE SPLIT OFF. Both prose clauses are carried, and the block declares that it licenses the attribution and not a mechanism. ⌗ That is this seat's own r7692 lesson returning: a carrier claim is a claim about a COUNTERFACTUAL, and here the counterfactual exists.
+
+==============================================================================
+SUMMARY
+==============================================================================
+  1a SUPPORTED on the nullity transfer, and MIS-CITED, SUPPORTED ELSEWHERE on the constancy -- the sentence makes TWO claims and cites ONE name: ng_cor_
+  1b SUPPORTED, hypotheses whole and the SETTING CORRECT -- every hypothesis of the theorem has a clause and the prose invents none; and unlike cor:stat
+  1c SUPPORTED -- each of (i), (ii) and (iii) has its own cited name in the paragraph, and "all four together on one pair" is to_cor_1c, which r7690 rea
+  1d SUPPORTED -- the witness discharges the very predicate arm 1b reads, so part (iii)'s hypothesis is satisfiable and the clause is not vacuous; and "
+  2a SUPPORTED -- all four of the law sentence's figures are pinned by the cited receipt's own gates, and the receipt caught its own rounded-intermediat
+  2b TWO CLAIMS, DISTINCT in both places (TWO CLAIMS, DISTINCT; TWO CLAIMS, DISTINCT) -- they differ in the QUANTITY (an absolute per-arm amplitude agai
+  2c SUPPORTED -- the shortened item states the law, both comparisons and the no-coefficient property, cites the receipt the block cites, and claims not
+  3 SUPPORTED, AND BY A COUNTERFACTUAL -- not ATTRIBUTED BY ELIMINATION, which was the reachable negative registered for it. r7692 read this same receip
+
+every registered reading ran; 8 verdicts recorded.
