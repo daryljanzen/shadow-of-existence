@@ -578,6 +578,11 @@
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
     "unmeasured": true
    },
+   "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42243871167",
+    "since": "e48fed6af5492b993ea20e2d5d7e52913fad48af",
+    "unmeasured": true
+   },
    "receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42224105420",
     "since": "2225255540d008471d61e84a1e60abb37e59e4db",
