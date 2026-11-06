@@ -310,11 +310,35 @@ _own12, _ownsd = OC.slope12(OC.retained_own, _BR, C=_CR_COMBS)
 _shr12, _shrsd = OC.slope12(lambda b, w, nb, hi: OC.retained_shared(b, w, nb, hi), _BR)
 _AD0 = float(np.mean([CPD[t][3] for t in CPD]))
 _AS0 = float(np.mean([CPS[t][3] for t in CPS]))
-_ownnull = {}
+# ⛭⛭⛭ `r7687+cc66`, ON 69's ORDER: ** THE SECOND PARAGRAPH'S OWN-COMB FIGURES ARE COMPUTED HERE OR
+#   THE PARAGRAPH CANNOT CITE THIS FILE. **  `r7687` found four figures in cc66's routed draft of
+#   `l.1779-1793` that are the SHARED statistic's, carried onto the own comb: the worst-phase fraction,
+#   the carrier decomposition, `N_eff`, and the slope's effective count.  ⇒ *Three of the four were
+#   never computed on the own comb at all.  The FIRST was -- the scan below has always visited all 24
+#   phases at both amplitudes -- and the receipt kept only the fitted slope per phase and never said
+#   what the worst of them was.  **A measured quantity the file keeps and never prints is as unciteable
+#   as one it never measured**, which is why it is printed and pinned now.*
+#   ⌗ ** AND THE COMBS ARE FITTED ONCE PER PHASE INSTEAD OF ONCE PER SETTING. **  `retained_own` does
+#   `C = C or retention_combs(banks)`, and the twelve settings do not change the banks -- so the old
+#   call refitted the same four combs twelve times per phase, 528 times over the scan, for identical
+#   results.  Passing `C` is exactly equivalent and pays for the new figures.
+_ownnull, _ownY, _ownS7 = {}, {}, {}
 for _lab, _AL, _AK in (('pre-registered amplitude 0.5', 0.5, 0.5),
                        ("declared sensitivity: the banks' own amplitudes", _AD0, _AS0)):
-    _ns = [OC.slope12(OC.retained_own, OC.retention_null(_BR, _AL, _AK, _p))[0] for _p in PH]
+    _ns, _ys, _s7 = [], [], []
+    for _p in PH:
+        _nb = OC.retention_null(_BR, _AL, _AK, _p)
+        _Cp = OC.retention_combs(_nb)
+        _ns.append(OC.slope12(OC.retained_own, _nb, C=_Cp)[0])
+        _x7, _y7 = OC.retained_own(_nb, 1.0, 7, 5.75, C=_Cp)
+        _ys.append(_y7)
+        _s7.append(np.polyfit(_x7, _y7, 1)[0])
     _ownnull[_lab] = np.array(_ns)
+    _ownY[_lab] = np.array(_ys)
+    _ownS7[_lab] = np.array(_s7)
+# the real-phase own-comb 7-band slope, the reference the effective count is taken against
+_ox7, _oy7 = OC.retained_own(_BR, 1.0, 7, 5.75, C=_CR_COMBS)
+_own_s7 = float(np.polyfit(_ox7, _oy7, 1)[0])
 print(f"\n    ⛭ `r7681+cc66.1` -- THE SLOPE ON EACH ARM'S OWN COMB AND ON THE SHARED ONE")
 print(f"      {'statistic':34s} {'twelve-setting slope':>22s} {'real-phase null':>16s} "
       f"{'slope - null':>13s} {'survives?':>10s}")
@@ -350,6 +374,71 @@ check(f"     ⛭⛭ ** AND THE OWN-COMB SLOPE IS NEARLY INVARIANT UNDER THE REPO
       abs(_own12 - 0.01034) < 5e-5 and abs(_shr12 - 0.02690) < 5e-5
       and abs(_own12 / 0.01002 - 1) < 0.10 and _shr12 / 0.01359 > 1.8,
       f"own {_own12:+.5f} (was +0.01002), shared {_shr12:+.5f} (was +0.01359)")
+
+# ===================================================================================================
+# ⛭⛭⛭ `r7687+cc66` ITEM 1 -- ** THE FOUR FIGURES `l.1779-1793` PRINTS THAT THIS FILE DID NOT COMPUTE
+#   ON THE OWN COMB. **  Each is printed and pinned here, and each is labelled with the statistic it
+#   belongs to, so the paragraph cannot carry a shared-comb number as an own-comb one again.
+print("\n    \u26ed `r7687+cc66` -- THE SECOND PARAGRAPH'S FOUR FIGURES, ON THE OWN COMB")
+print(f"      {'figure':44s} {'own comb':>18s} {'shared comb':>18s}")
+
+# ① the worst phase of the scan, as a fraction of the slope -- ALREADY SCANNED, never printed
+_own_worst = {k: float(np.abs(v).max()) for k, v in _ownnull.items()}
+# ⌗ `r7687`: the shared column is read from `RSL[_lab]`, THE SAME AMPLITUDE, not from `q0` twice.
+#   *A first writing of this block printed amplitude 0.5's shared value on both rows -- a column
+#   labelled per-amplitude carrying one amplitude's number, which is this revision's own lesson
+#   arriving in the table that reports it.*
+for _lab, _w in _own_worst.items():
+    print(f"      {('worst phase / slope, ' + _lab.split(':')[0])[:44]:44s} "
+          f"{_w / _own12:>18.2f} "
+          f"{float(np.abs(RSL[_lab]['S12']).max()) / _shr12:>18.2f}")
+check("⛭ `r7687` ① ** THE WORST PHASE OF THE SCAN REACHES ABOUT HALF THE OWN-COMB SLOPE, which is the "
+      "'factor of two' clause and was computed by this file all along without being printed **",
+      all(0.45 < _w / _own12 < 0.60 for _w in _own_worst.values()),
+      ", ".join(f"{_w / _own12:.2f}" for _w in _own_worst.values()))
+
+# ② the carrier, in the OWN convention -- and it does not transplant, it inverts
+_oneC = {t: _CR_COMBS['lcdm'] for t in _CR_COMBS}          # one comb for both arms = the shared form
+_car_one = OC.slope12(OC.retained_own, OC.retention_null(_BR, 0.5, 0.5, PH[0]), C=_oneC)[0]
+_flatB = {t: dict(QL=_BR[t]['QL'], QK=_BR[t]['QK'],
+                  Dl=np.ones_like(_BR[t]['Dl']), S2=np.ones_like(_BR[t]['S2']))
+          for t in _BR}
+_fn = OC.retention_null(_flatB, 0.5, 0.5, PH[0])
+_car_flat = OC.slope12(OC.retained_own, _fn, C=OC.retention_combs(_fn))[0]
+_car_real = _ownnull['pre-registered amplitude 0.5'][0]
+print(f"      {'null at the real phase':44s} {_car_real:>18.5f} {q0['S12'][0]:>18.5f}")
+print(f"      {'...with ONE comb for both arms':44s} {_car_one:>18.5f} {'(is the shared)':>18s}")
+print(f"      {'...with the envelope flattened':44s} {_car_flat:>18.5f} {'':>18s}")
+check("⛔⛭⛭ `r7687` ② ** THE CARRIER CLAUSE DOES NOT TRANSPLANT ONTO THE OWN COMB -- IT INVERTS. ** "
+      "'Give both arms one comb and the null slope falls' is a SHARED-comb statement: one comb for "
+      "both arms IS the shared convention, so on the own comb it RAISES the null instead of removing "
+      "it.  \u21d2 *The own comb is what removes the carrier and one comb is what restores it, which "
+      "is the same sentence read from the other end*",
+      abs(_car_one) > 3 * abs(_car_real),
+      f"own-comb null {_car_real:+.5f} -> {_car_one:+.5f} under one comb, a factor of "
+      f"{abs(_car_one / _car_real):.1f} UP (the shared form reads {q0['S12'][0]:+.5f})")
+
+# ③④ the effective counts, on the own comb
+_own_neff = {k: neff(v) for k, v in _ownY.items()}
+_own_nslope = {k: 7 * (_own_s7 / _ownS7[k].std()) ** 2 for k in _ownS7}
+for _lab in _ownY:
+    print(f"      {('N_eff of 7, ' + _lab.split(':')[0])[:44]:44s} "
+          f"{_own_neff[_lab]:>18.2f} {RSL[_lab]['n']:>18.2f}")
+    print(f"      {('slope effective count, ' + _lab.split(':')[0])[:44]:44s} "
+          f"{_own_nslope[_lab]:>18.1f} {RSL[_lab]['n_slope']:>18.1f}")
+check("⛭ `r7687` ③ ** THE OWN COMB'S BAND COUNT IS ITS OWN AND NOT THE SHARED ONE'S, so "
+      "l.1789's 'two to three and a half' cannot be carried across: it was the shared statistic's **",
+      all(1.0 < v < 7.0 for v in _own_neff.values())
+      and all(abs(v - RSL[k]['n']) > 0.5 for k, v in _own_neff.items()),
+      ", ".join(f"{k.split(':')[0]} {v:.2f} (shared {RSL[k]['n']:.2f})"
+                for k, v in _own_neff.items()))
+check("⛭ `r7687` ④ ** AND THE OWN-COMB SLOPE'S EFFECTIVE COUNT EXCEEDS THE SHARED ONE ON BOTH "
+      "AMPLITUDES, because the count falls with the null's spread over phase and the own-comb null is "
+      "the smaller -- so l.1790's 'nine and eighteen' is wrong for the own comb in the UPWARD "
+      "direction, not merely unmeasured **",
+      all(v > RSL[k]['n_slope'] for k, v in _own_nslope.items()),
+      ", ".join(f"{v:.1f} against the shared {RSL[k]['n_slope']:.1f}"
+                for k, v in _own_nslope.items()))
 
 print()
 print("  WHERE IT COMES FROM -- the two sides of the ratio at the real phase, and a flat-envelope control")

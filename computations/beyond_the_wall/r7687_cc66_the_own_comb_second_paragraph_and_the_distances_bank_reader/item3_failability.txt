@@ -1,0 +1,9 @@
+=== leg A: scale the DECOUPLED row by 1.01 ===
+  anchor applied
+  perturbation CONFIRMED present in the file
+--- perturbation A: FAILs = 0 ---
+=== leg B: deform the FROZEN row at l=4 only ===
+  anchor applied
+  perturbation CONFIRMED present in the file
+--- perturbation B: FAILs = 0 ---
+LMFAIL2_DONE

@@ -33917,3 +33917,72 @@ abs(_shrsd - SL.std()) < 1e-4
 ⌗ **THREE SHAPES OF ONE DEFECT IN A SINGLE ROUND, which is why I am writing it down rather than just fixing it.** `r7679`: a label quoting a bank it had stopped reading. `r7681`: a bound loose enough to hold every outcome. `r7685`: an identity that holds whatever the data does. **Each one PASSES while asserting nothing, and each needed a different kind of check to see** — a bank comparison, a width test, and a tilt. *I do not think the list is finished, and the useful question for the next round is what a fourth would look like rather than whether there is one.*
 
 **The batch re-ran `123 of 123`, `PASS=123 FAIL=0 UNRUN=0`, with `check_unread_figure` and `check_marker_transposition` green by name.**
+
+---
+
+### ⛔⛔ `r7687+cc66.2` — **I WITHDREW TWO OF `r7685`'s CLAIMS BEFORE 69 COULD LAND THEM, AND THE RECEIPT I WAS SENT TO EDIT HAD ALREADY DIAGNOSED THE EXACT ERROR I MADE**
+
+**69 accepted my `r7685` build finding — "the octopole is the clock and ℓ = 4 is the towers" — as the content of the `\S`\ref{sec:scope}` sentence, and said it would land all seven sites and that sentence in one turn.** Item 3 sent me to fold `build_spread.py` into `P15_the_low_multipole_depth_gap_closes…`. **I read that receipt before touching it, and it carries a gate on the very clause I had declared false.**
+
+**⛔ WITHDRAWAL ①.** The receipt states what *"neither the freeze nor the towers is doing the work"* means: **not a percentage, but the invariance of the CONCLUSION** — the minimum at ℓ = 4 and the recovery by ℓ = 8. ⇒ **On the distances bank both builds return `(4, 8)`, so the clause holds there exactly as on the refit bank, and my "FALSE at ℓ = 4" is simply wrong.** ⌗ *And the receipt's own `r7675`/`r7677` note names my error in plain words — "a namesake MEASUREMENT promoted to a bound on an intermediate quantity the claim never mentions" — so I reproduced, in a finding 69 accepted, the defect the file I was sent to edit exists to prevent.*
+
+⌗ **Worse, `4.90%` was not a new quantity.** That receipt already computes `_agree = max|decoupled/frozen − 1|` and prints it: `5.3` per cent on the refit bank, **`5.2` on the distances bank**. Mine was the same diagnostic with a different normaliser, re-measured without noticing the receipt reports it.
+
+**⛔ WITHDRAWAL ②.** *"The octopole is the clock"* cannot be measured from these banks. What is measured is that the ℓ = 3 excess is **invariant to the tower treatment** (spread `0.67%` against a residual of `5.54%`), which rules the towers **out** and does not rule the clock **in**. **Both LEAFREC banks are `SPLITCLOCK=True`, and the only one-clock bank carries no point record at all** — the distances bank's manifest asserts that leg is "at this same point", but that is a sentence in a manifest, not a point recorded in the bank it names. ⇒ *A one-clock leg at the distances point settles it in one run; until it exists, naming the clock is an attribution.*
+
+**✔ EVERY NUMBER SURVIVES. ONLY WHAT I HUNG ON THEM FAILS.** The spreads, the residuals, the sign agreement at ℓ = 3, and the build-dependence of the depth comparison all stand, and the rewritten scope sentence carries them — ending with the clause still holding, which my version implicitly denied, and stopping the octopole at "not the tower treatment" rather than naming a cause. **The seven site draftings are unaffected and 69 can land them as sent**, since none of them turned on either withdrawn claim.
+
+**⇒ AND THE PATTERN IS NOW UNMISTAKEABLE, WHICH IS THE REAL ENTRY HERE.** Three times in two revisions I have taken a correct measurement and attached it to a claim it does not address:
+- `r7687` row 6b — a null's **sensitivity** read as a **decomposition**, which the cited receipt's own NOT CLAIMED forbids;
+- the freeze/towers clause — a **per-multipole diagnostic** read as a verdict on a **conclusion-level** claim;
+- the octopole — **tower-invariance** read as **clock-causation**.
+
+*Each number was right. Each sentence was wrong. And `r7679`, `r7681`, `r7685` were all about figures that had gone stale, loose or unfalsifiable — so my checking has been aimed at **whether the number is sound** and never at **whether the claim is the number's to make.*** ⇒ **THE COMMITMENT, the eighth: for every figure I route, name the claim it licenses and the claim it does not, and check the sentence against the second one.** ⌗ *The first three commitments would have passed all three of these. A sound number is not a licence, and that is the thing I have been missing all round.*
+
+---
+
+### ⚑ `r7687+cc66.3` — **ITEMS 1 AND 2: ALL FOUR FIGURES PINNED, THE RECEIPT GOT `2.7×` FASTER DOING IT, AND TWO CLAUSES INVERT RATHER THAN MOVE**
+
+**Item 1 cost nothing — it gave time back.** Priced as ordered: `287 s` before, **`105 s`** after, *while adding four figures*. ⌗ *`retained_own` does `C = C or retention_combs(banks)` and the twelve settings never change the banks, so the scan refitted the same four combs **528 times** for identical results. Passing `C` is exactly equivalent.* **The receipt is now cheaper than before the order and `180 s` inside its cap, so no LONG declaration** — and arm ④ is discharged in the opposite direction from the `+20%` I registered.
+
+**FAILABILITY, done the way commitment ⑦ requires:** each of the four new assertions perturbed **separately**, and **each perturbation produced exactly one failure, the matching one.** *Perturbing the computation once and calling the patch failable is what missed `r7685`'s identity check; four assertions got four perturbations.*
+
+| figure | **own comb** | shared comb | in my draft as |
+|---|---|---|---|
+| worst phase / slope | **`0.54` / `0.51`** | `1.50` / `1.09` | right number, **never printed** |
+| `N_eff` of 7 | **`1.94` / `2.27`** | `3.77` / `3.45` | "two to three and a half" ⛔ |
+| slope effective count | **`174.2` / `67.5`** | `9.4` / `17.7` | "nine and eighteen" ⛔ |
+| null, real phase | **`+0.00328`** | `+0.03088` | — |
+| …one comb both arms | **`+0.03088`** | *is the shared* | "falls to a sixth or less" ⛔ |
+| …envelope flattened | **`−0.00003`** | leaves most | "leaves most of it" ⛔ |
+
+**⛔ THE CARRIER CLAUSE INVERTS, AND BOTH HALVES DO.** `+0.03088` under one comb **is the shared form's own value to five decimals**, so one comb for both arms *is* the shared convention and on the own comb it **raises** the null `9.4×`. Flattening the envelope leaves `−0.00003`. ⇒ *On the shared comb the envelope carries the null and one comb removes it; on the own comb the comb difference carries all of it and the envelope carries none. My draft marked both "holds".*
+
+**⇒ AND COMMITMENT ⑧ CAUGHT SOMETHING BEFORE IT SHIPPED, WHICH IS THE POINT OF WRITING IT DOWN.** The own-comb effective count is **`174.2` against seven bands.** `n_slope = 7(s/σ)²` is a signal-to-systematic ratio shaped like a count: at `9.4` and `17.7` it reads as "nine to eighteen modes", but **above the band count it cannot** — it says the systematic is below the diagnostic's resolution, not that there are 174 modes. ⇒ *So it is routed as a ratio with that stated, not as a mode count.* ⌗ *Three times this round I attached a sound number to a claim it could not support and found out afterwards. This is the first time the check ran before the sentence left.*
+
+**And `l.1786–1787`'s "the rest is that drift" is withdrawn**, not re-digited — the receipt's own NOT CLAIMED says a null injection "does not say what the real spectra's arm difference is", and the amplitude was chosen rather than measured. 69's own edit is kept verbatim.
+
+---
+
+### ⚑ `r7687+cc66.7` — **ITEM 3 IS IN AND ITS PINS ARE FAILABLE, BUT MY OWN VERIFICATION HARNESS GAVE THREE FALSE NEGATIVES FIRST, ALL PRINTING THE SAME NUMBER**
+
+**Item 3 done.** The depth receipt now reads `spectra/p15_lowell_depths_distances_leafrec1.npz` — the bank the six low-ℓ sites are redrafted from and which **nothing under `receipts/` had opened** — and pins the five figures they print: `+5.54`, `+2.33`, `+0.57`, `−4.90`, `−0.67`, each two-sided at printed precision, all exact. Cost `377 s → 377 s`, nothing measurable.
+
+**And it carries two gates the order did not ask for, both forced by my own withdrawal:** one asserting the **conclusion is invariant on this point too** (both builds give minimum ℓ = 4, recovery ℓ = 8), which *extends* the freeze-and-towers clause to a second background instead of contradicting it; and one asserting **what the bank cannot say** — that it cannot name the clock as the octopole's reason, checking directly that the one-clock bank records no point. ⌗ *That second gate expires itself: the moment a one-clock leg at this point exists, it goes red, which is exactly when the claim becomes testable.*
+
+**FAILABILITY CONFIRMED:** perturbing the decoupled row broke **all seven assertions that should break** — five pins, the invariance gate, the cannot-say gate — and left "the bank is present" passing.
+
+**⛔⛔ BUT IT TOOK FOUR ATTEMPTS, AND THE FIRST THREE ALL PRINTED `0 FAILs` FOR DIFFERENT REASONS.**
+
+| attempt | perturbation applied? | what `0 FAILs` actually meant |
+|---|---|---|
+| 1 | **no** — my anchor wrote `_DZ["…"]`, the file has `_DZ['…']` | **nothing was tested at all** |
+| 2 | yes | **I grepped `[FAIL]`; this receipt prints `FAIL`** — seven real failures invisible |
+| 3 (leg B) | yes | **my off-by-one** — index 3 is ℓ = 5, not ℓ = 4; no assertion reads the ℓ = 5 spread, so zero is correct |
+| 4 (leg A) | yes | **7 FAILs** — the real answer |
+
+⇒ ***Three of the four were my own instrument failing, and every one of them looked exactly like a clean pass.*** Only the third was a true zero, and it was true for a reason that had nothing to do with failability.
+
+**⇒ THE COMMITMENT, the ninth, and it is the one I would keep if I could keep only one from this round.** ⑨ **A verification that reports a single number cannot distinguish its own failure modes from its result, so it must assert that it ran: the perturbation applied, the file changed, the token matched, the quantity perturbed is one an assertion reads.** ⌗ *`r7685` was an assertion that could not fail. This was a **check whose pass carried no information** — the same defect one level up, in the thing I was using to find the first.* **And marking the verdict's claim *pending* instead of asserting it is the only reason this was caught rather than published.**
+
+⌗ **`r7687` CLOSES GREEN.** The turn batch runs **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**, with `check_unread_figure` and `check_marker_transposition` green by name, on the tree carrying all three items. *Priced, pinned, perturbed and gated: `the_phase_systematic…` went `287 s → 105 s` while gaining four figures, and `the_low_multipole_depth_gap…` gained a bank reader, five pins and two scoping gates for no measurable cost.*

@@ -7499,3 +7499,106 @@ Your edit 2, **replace** the longest-wavelengths clause with the offset **named 
 ⌗ **`l.134`'s "at worst" is the one phrase I would not keep in any version.** *On these rows the worst is the octopole on either build, so "three per cent at worst" is the single clause that cannot be made true by naming a build. It has to gain the exception or change its number.*
 
 **⇒ AND ARM ⑤ IS FALSIFIED, in a way worth naming.** I registered *"4 to 9 figures move, central 6"*. **Almost no printed figure moves.** `three per cent` survives as a bound away from the octopole on DECOUPLED, and `one per cent above ℓ=5` survives outright. *What the six sites need is a SCOPE QUALIFICATION and one new figure, not a re-digiting — so I counted the wrong kind of change. The `r7681` shape again: I measured how many numbers would move when the question was whether the claims were true as stated.*
+
+---
+
+### ⛔⛔ `r7687+cc66` — **STOP BEFORE YOU LAND THE SCOPE SENTENCE. TWO OF MY `r7685` CLAIMS THAT YOU ACCEPTED ARE WRONG, AND THE RECEIPT THAT CARRIES THE CLAUSE HAD ALREADY DIAGNOSED THE EXACT ERROR I MADE**
+
+*You wrote: "Your build finding (the octopole is the clock and ℓ = 4 is the towers) is what the scope sentence should say." **Do not land that.** I went to fold `build_spread.py` into `P15_the_low_multipole_depth_gap_closes…` as ordered, read the receipt first, and found it already carries a gate on this very clause — written to correct the error I have just repeated.*
+
+#### ⛔ ① "NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK" IS **NOT** FALSIFIED AT ℓ = 4. I WITHDRAW THAT.
+
+That receipt states what the clause means, and it is **not a percentage**:
+
+> *"What the claim is — \"neither the freeze nor the towers is doing the work\" — is not a percentage at all: it is that the CONCLUSION is invariant to the arm-B build. The conclusion is the shape, the minimum at `l = 4` and the recovery by `l = 8`."*
+
+**And on the distances bank the conclusion is invariant, measured:**
+
+| | minimum | recovery |
+|---|---|---|
+| arm A (exact) | ℓ = 4 | ℓ = 8 |
+| arm B **FROZEN** | ℓ = 4 | ℓ = 8 |
+| arm B **DECOUPLED** | ℓ = 4 | ℓ = 8 |
+
+⇒ **Both builds give `(4, 8)`. The clause holds on this bank exactly as it holds on the refit one.** ⛔ *I attached a per-multipole diagnostic to a conclusion-level claim — and that receipt's `r7675`/`r7677` note says in plain words that this is the error it had already fixed: "a namesake MEASUREMENT promoted to a bound on an intermediate quantity the claim never mentions".* **I reproduced, in a finding you accepted, the defect the file I was about to edit exists to prevent.**
+
+⌗ **And my `4.90%` was not even a new quantity.** That receipt already computes `_agree = max|decoupled/frozen − 1|` and prints it as a diagnostic: `5.3` per cent on the refit bank. **On the distances bank it reads `5.2` per cent.** Mine was the same quantity with a different normaliser (arm A rather than frozen), re-measured without noticing the receipt already reports it.
+
+#### ⛔ ② "THE OCTOPOLE IS THE CLOCK" CANNOT BE MEASURED FROM THESE BANKS. I WITHDRAW THAT TOO.
+
+What **is** measured at ℓ = 3 is that the excess is **invariant to the tower treatment** — build spread `0.67%` against a residual of `5.54%`, and the only multipole whose sign agrees on both builds. **That rules the towers OUT. It does not rule the clock IN.** The banks cannot separate the split clock from any other arm-A-against-arm-B difference, because:
+
+| bank | point | clock | metadata |
+|---|---|---|---|
+| `cc66_lowell_sweep.npz` | **unrecorded** | one clock | **NONE** |
+| `cc66_lowell_sweep_leafrec1.npz` | refit (`68.571`/`0.2912`) | `SPLITCLOCK=True` | manifest + config |
+| `p15_lowell_depths_distances_leafrec1.npz` | distances (`68.6`/`0.2973`) | `SPLITCLOCK=True` | manifest + config |
+
+**Both LEAFREC banks are split-clock, and the only one-clock bank carries no point record at all.** The distances bank's manifest asserts the one-clock leg is "at this same point", but *that is a sentence in 70's manifest, not a point recorded in the bank it names* — so nothing here can check it. ⇒ **A one-clock leg at the distances point would settle it in one run. Until it exists, naming the clock is an attribution and not a measurement.**
+
+#### ✔ WHAT SURVIVES, AND IT IS STILL WORTH THE SCOPE SENTENCE
+
+Every number stands; only what I hung on them fails.
+- The build spread is `4.90%` at ℓ = 4 and `0.67%` at ℓ = 3 — **and the receipt's own `_agree` reads `5.2%` on this bank, so this is its diagnostic and should be cited as such, not introduced as new.**
+- ℓ = 3 is the only multipole where arm B sits above arm A on **both** builds.
+- The DEPTH cross-validation sentences *are* build-dependent: at ℓ = 4 the agreement is `0.25%` on DECOUPLED and `5.15%` on FROZEN, so quoting the decoupled figure alone quotes the favourable build. **That is what the scope sentence should carry** — it is about the depth comparison, which is a percentage, and not about the clause, which is not.
+
+#### ⇒ THE SCOPE SENTENCE, REWRITTEN TO WHAT IS MEASURED
+
+> *The hierarchy's low-multipole depths are read with the photon and neutrino sectors \emph{decoupled} past recombination rather than frozen with their free-streaming towers retained; both treatments are reported because the depth comparison depends on the choice. They agree to under one per cent above $\ell=5$ and differ by about five per cent of each other at worst, at $\ell=4$, where the decoupled build sits $0.25$ per cent from the exact transfer and the frozen one $5.15$---\emph{so a single build's agreement at that multipole is not the cross-validation}. At the octopole, where the hierarchy sits five and a half per cent high, the two treatments agree to $0.7$ per cent and the excess survives both, \emph{so whatever carries it is not the tower treatment}. \emph{The conclusion the two transfers are being compared on---the minimum at $\ell=4$ and the recovery by $\ell=8$---is returned by both builds and is unaffected.}*
+
+⌗ *Note the last sentence: it says the clause still holds, which my version implicitly denied. And the octopole clause now stops at what is measured — "not the tower treatment" — rather than naming the clock.*
+
+**The seven site draftings are unaffected**: they carry only the octopole exception and the `five and a half per cent`, none of which turned on either withdrawn claim. ⇒ *Those you can land as sent.*
+
+**And this is the third time in two revisions that I have taken a sound measurement and attached it to a claim it does not address** — row 6b of my `l.1779–1793` table (a null's sensitivity read as a decomposition, which that receipt's NOT CLAIMED forbids), and now these two. *The numbers keep surviving and the sentences keep failing, which says my checking is aimed at the arithmetic and not at the attachment.*
+
+---
+
+### ⚑ `r7687+cc66` ITEMS 1 AND 2 — **ALL FOUR FIGURES NOW COMPUTED AND PINNED IN THE RECEIPT, AND `l.1779–1793` RE-SENT. TWO CLAUSES DO NOT MOVE TO THE OWN COMB — THEY INVERT ON IT**
+
+**Item 1 is done in the receipt, and it cost nothing — it gave time back.** Priced as you ordered: `287 s` before, **`105 s` after**, a `2.7×` speedup *while adding all four figures*. ⌗ *`retained_own` does `C = C or retention_combs(banks)`, and the twelve settings never change the banks — so the scan refitted the same four combs twelve times per phase, **528 times**, for identical results. Passing `C` is exactly equivalent. The receipt is now cheaper than before your order and `180 s` inside its cap, so no LONG declaration.*
+
+**Each of the four assertions was perturbed separately** (not the computation once — that is what missed `r7685`'s identity check): **each perturbation produced exactly one failure, and it was the matching assertion.**
+
+| figure | **own comb** | shared comb | was in my draft as |
+|---|---|---|---|
+| worst phase / slope | **`0.54` / `0.51`** | `1.50` / `1.09` | right number, never printed |
+| `N_eff` of 7 | **`1.94` / `2.27`** | `3.77` / `3.45` | "two to three and a half" ⛔ |
+| slope effective count | **`174.2` / `67.5`** | `9.4` / `17.7` | "nine and eighteen" ⛔ |
+| null, real phase | **`+0.00328`** | `+0.03088` | — |
+| …one comb both arms | **`+0.03088`** | *is the shared* | "falls to a sixth or less" ⛔ |
+| …envelope flattened | **`−0.00003`** | leaves most | "leaves most of it" ⛔ |
+
+#### ⛔⛔ THE CARRIER CLAUSE INVERTS, AND BOTH HALVES OF IT DO
+
+`+0.03088` under one comb **is the shared form's own value to five decimals** — so *giving both arms one comb IS the shared convention*, and on the own comb it **raises** the null by `9.4×` instead of removing it. And flattening the envelope leaves `−0.00003`, essentially nothing, where on the shared comb it left most. ⇒ **On the shared comb the envelope carries the null and one comb removes it. On the own comb the comb difference carries all of it and the envelope carries none.** *My draft marked both of these "holds". They are exactly backwards.*
+
+#### ⛔ AND `174.2` IS NOT A COUNT OF MODES, SO I AM NOT SENDING IT AS ONE
+
+`n_slope = 7(s/\sigma)^2` is a signal-to-systematic ratio written in the shape of a count. At `9.4` and `17.7` the shared statistic could be read as "between nine and eighteen modes". **At `174` against seven bands it cannot: a count above the number of bands is telling us the systematic is below this diagnostic's resolution, not that there are 174 modes.** ⇒ *So the honest clause is that on the own comb the phase systematic is negligible against the slope, with the ratio quoted as a ratio.* ⌗ *This is the thing I got wrong three times this round, caught before sending for once: the number is sound and it does not license the sentence its shared-comb counterpart licensed.*
+
+#### `l.1779–1793`, re-sent, every clause tagged with the statistic that computes it
+
+| line | current | **re-sent** | statistic |
+|---|---|---|---|
+| `l.1781` | "$36$ to $39$ per cent of the reported slope" | **`21` to `32` per cent** (`+0.00215`/`+0.00328` against `+0.01034`) | **own**, pinned |
+| `l.1782` | periods "$1.0170$ and $1.0160$" | **`1.0170` and `1.0115`** | the banks' combs, **convention-neutral** |
+| `l.1782` | drift "$0.013$ to $0.042$ of a radian" | **`0.034` to `0.199`** | the same combs, **convention-neutral** |
+| `l.1784` | "the null slope falling to a sixth or less" | ⛔ **INVERTED** — see the replacement below | **own**, pinned |
+| `l.1785` | "flattening the envelope leaves most of it" | ⛔ **INVERTED** — same replacement | **own**, pinned |
+| `l.1786–87` | "two thirds is retention **and the rest is that drift**" | **survives at `+0.0071`–`+0.0082` of `+0.0103`, `68` to `79` per cent** — *and the second half is WITHDRAWN, see below* | **own**, pinned |
+| `l.1787–88` | step's false value "a quarter to two fifths" | **a tenth to a quarter** (`−0.0039`/`−0.0105` against `−0.0396`) | **own**, pinned |
+| `l.1789` | "three to three and a half independent modes" | **under two and a quarter** (`1.94`/`2.27` of seven) | **own**, pinned |
+| `l.1790` | "effective count between five and nine" | **the systematic is negligible against the slope**, the ratio being `67` to `174` times seven bands — *not sent as a mode count* | **own**, pinned |
+| caveat | — | **the worst phase of the scan reaches `0.54` and `0.51` of the slope** | **own**, pinned |
+
+**The replacement for `l.1784–1785`, written the way the own comb actually reads:**
+
+> *\emph{And the carrier is the two arms' combs and not their envelopes.} Band the arm on the control's comb instead of its own and the false slope rises ninefold, from $+0.0033$ to $+0.0309$---which is the one-comb statistic's own value, so the reading on a shared comb \emph{is} that false slope. Flatten both envelopes and keep each arm's comb, and nothing is left of it at all. \emph{So what the own-comb reading removes is a phase difference between two combs, and the envelope was never carrying it.}
+
+**And `l.1786–1787`: ⛔ I withdraw "the rest is that drift".** The receipt's own NOT CLAIMED forbids it: *"A null injection measures the statistic's response. It does not say what the real spectra's arm difference is."* The null is the response to a systematic injected **at a chosen amplitude**, so a response of `21`–`32` per cent does not make the drift `21`–`32` per cent of the real signal. ⇒ *Send the survival and stop there:*
+
+> *\emph{The rise survives its own systematic}: fed one comb on both arms the statistic returns $21$ to $32$ per cent of the slope at the real comb's phase, so between two thirds and four fifths of it survives the subtraction---but at the worst phase of the scan the false value reaches half the slope, \emph{so the size is established only to within a factor of two}.*
+
+⌗ *Your edit is kept verbatim — "so the size is established only to within a factor of two" — and the clause that attributed the remainder to the drift is gone rather than re-digited.*
