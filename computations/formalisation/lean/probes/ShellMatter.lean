@@ -10421,8 +10421,9 @@ restricted). -/
 noncomputable def sv_flat (M v₀ : ℝ) : MSpacetime P P :=
   NModel.cz_St.restrictM (sv_MS M v₀) (sv_MS_open M v₀) (subset_univ _)
 
-/-- **The shell's areal radius**, `r(ũ, v) = r_S(χ(ũ, v))`: Schwarzschild's `r` at
-`(u, v) = (F(ũ), v)` (`sv_vacuum`). -/
+/-- **The vacuum radial function**, `r(ũ, v) = r_S(χ(ũ, v))`: Schwarzschild's `r` at `(u, v) = (F(ũ), v)`, continued
+over the whole model. It is the areal radius only on the vacuum side `v ≥ v₀` (`sv_vacuum`). On `v < v₀` it is the
+vacuum continuation, not the flat interior's radius. -/
 noncomputable def sv_r (M v₀ : ℝ) (y : P) : ℝ := rK M (sv_χ M v₀ y)
 
 /-- **The conformal factor** `Φ(ũ, v) = (1 − 2M/r(ũ, max(v, v₀))) F′(ũ)` on `M` (`1` off `M`). A
@@ -11239,7 +11240,9 @@ theorem sh_H_sub (v₀ : ℝ) : {y : P | y.1 = sv_uH M v₀} ⊆ sh_MS M v₀ :=
   rw [hy', sv_χU_uH hM, zero_mul]; exact one_pos
 
 include hM in
-/-- **On `𝓗⁺` with `v ≥ v₀`: `r = 2M`.** -/
+/-- **On `𝓗⁺`, `sv_r = 2M`, for every `v`.** `sv_r` is the Kruskal vacuum radius `rK ∘ χ`, continued over the whole
+model. Only where `v ≥ v₀` (once the shell has passed, `sh_vacuum`) is it the areal radius of the spacetime. For
+`v < v₀` the horizon lies in the flat body (`sh_H_flat`), and there `sv_r` is not the interior's areal radius. -/
 theorem sh_H_r {v₀ : ℝ} {y : P} (hy : y.1 = sv_uH M v₀) : sv_r M v₀ y = 2 * M := by
   have hm : sv_χ M v₀ y ∈ sk_kM := sh_χ_mem (sh_H_sub hM v₀ hy)
   refine (sk_rK_eq_two_iff hM hm).2 ?_
