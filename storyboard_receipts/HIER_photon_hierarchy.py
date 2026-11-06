@@ -88,7 +88,20 @@ else:
 #   radiation-free stacking rate, so eg / Hc_of / eta_onset / rs_f / DM follow it, and `_Hrec` keeps the
 #   content-carrying leaf rate for `xe_history`.  Content fractions and the branch's initial data are
 #   unchanged.  UNSET = byte-identical: `_Hrec` is then the same function object as `Hub`.
-_SPLIT = os.environ.get('SPLITCLOCK', '0') == '1' and _ARM != 'cr'
+#   ⛔ r7693+70: that sentence was wrong about the DYNAMICS.  Under SPLITCLOCK=1 `_rhs` reads `Hc_of`, the
+#   STACKING rate, against content fractions normalised to the LEAF total -- ACOUSTIC's retired `STACKPERT=1`
+#   pairing (its Poisson source short by rho_full/rho_free).  The arm of record runs its perturbations on the
+#   LEAF rate, chain-ruled onto the stacking grid (`LEAFPERT`, ACOUSTIC :934/:974).  SPLITCLOCK=1 is kept
+#   unchanged so the r7675-r7689 banks stay reproducible, as ACOUSTIC keeps STACKPERT.
+# ⛭ r7695+70: SPLITCLOCK=L -- THE ARM OF RECORD'S OWN CONSTRUCTION, (L).  Everything SPLITCLOCK=1 does, and
+#   the perturbation dynamics on the LEAF rate: `_rhs` reads `_Hdyn` = the leaf conformal Hubble rate and its
+#   output is multiplied by `Jac_of` = H_stack/H_leaf (d eta_leaf / d eta_grid), exactly ACOUSTIC's
+#   `Hl_of`/`Jac_of`; the onset's H and radiation-era conformal time are the leaf's; the stored slip reads
+#   the leaf rate.  The source assembly's Psi, the visibility measure and the (l+1)/eta closures stay on the
+#   grid clock, as ACOUSTIC's do.  UNSET or =1: `_Hdyn` is the same object as `Hc_of`, no Jacobian --
+#   byte-identical.
+_SPLITL = os.environ.get('SPLITCLOCK', '0') == 'L' and _ARM != 'cr'
+_SPLIT = (os.environ.get('SPLITCLOCK', '0') == '1' or _SPLITL) and _ARM != 'cr'
 _Hrec = Hub
 # ⌗ r7677+70: SPLITIC=cr (only with SPLITCLOCK=1) takes the ARM=cr branch's characteristic initial data in
 #   `evolve()` instead of the adiabatic radiation-era data -- the separating test for what the split moves.
@@ -112,6 +125,10 @@ ag=np.logspace(-7,0,20000)
 _eta_seed = float(quad(lambda a: c/(a**2*Hub(a)), 1e-12, ag[0], limit=200)[0])
 eg=np.concatenate([[_eta_seed],_eta_seed+cumulative_trapezoid(c/(ag**2*Hub(ag)),ag)])
 Hc_of=CubicSpline(eg, ag*Hub(ag)/c)
+_Hdyn = Hc_of                                              # the rate the perturbation DYNAMICS read
+if _SPLITL:
+    _Hdyn = CubicSpline(eg, ag*_Hrec(ag)/c)               # leaf conformal Hubble on the grid (ACOUSTIC Hl_of)
+    Jac_of = CubicSpline(eg, Hub(ag)/_Hrec(ag))           # d eta_leaf / d eta_grid (ACOUSTIC Jac_of)
 rt=Or_content/ag**4+Om/ag**3+OL
 Og_of=CubicSpline(eg,(1-fnu)*(Or_content/ag**4)/rt); On_of=CubicSpline(eg,fnu*(Or_content/ag**4)/rt)
 Oc_of=CubicSpline(eg,(Om/ag**3)/rt); Rb_of=CubicSpline(eg, Rb_rec*(ag/a_rec))
@@ -283,7 +300,7 @@ def _rhs(e, y, kk, tight):
     # before the opacity and radiation-fraction splines are touched, because it needs none of them
     # and this phase is stepped tens of thousands of times.*
     if _DEC > 0 and e >= _DEC:
-        Hc=Hc_of(e); Ocv=Ocdm_of(e); Obv=Ob_of(e)
+        Hc=_Hdyn(e); Ocv=Ocdm_of(e); Obv=Ob_of(e)
         Php = -Hc*Ph - kk**2*Ph/(3*Hc) - (Hc/2)*(Ocv*dc + Obv*db)
         out = np.zeros_like(y)
         out[:,0] = -tc + 3*Php          # delta_c'
@@ -291,9 +308,9 @@ def _rhs(e, y, kk, tight):
         out[:,6] = Php                  # Phi'
         out[:,7] = -Hc*tb + kk**2*Ph    # theta_b',  Thomson drag is dead here
         out[:,8] = -tb + 3*Php          # delta_b'
-        return out
+        return out*float(Jac_of(e)) if _SPLITL else out
     Fg = y[:,IG:IG+LG-1]; Fn = y[:,IN:IN+LN-1]
-    Hc=Hc_of(e); Rb=Rb_of(e); Ogv=Og_of(e); Onv=On_of(e); tp=float(taup_of(e))
+    Hc=_Hdyn(e); Rb=Rb_of(e); Ogv=Og_of(e); Onv=On_of(e); tp=float(taup_of(e))
     Ocv=Ocdm_of(e); Obv=Ob_of(e)
     sgn = Fn[:,0]/2
     # sigma_gamma = A theta/tau' with A DERIVED from the standard Silk formula:
@@ -386,11 +403,11 @@ def _rhs(e, y, kk, tight):
         l = i+2
         out[:,IN+i] = kk/(2*l+1)*(l*Fn[:,i-1] - (l+1)*Fn[:,i+1])
     out[:,IN+LN-2] = kk*Fn[:,LN-3] - (LN+1)/e*Fn[:,LN-2]
-    return out
+    return out*float(Jac_of(e)) if _SPLITL else out
 
 def evolve(kk):
     nk = len(kk); kk2 = kk[:,None] if False else kk
-    Hcs=Hc_of(eta_onset); Ogs=Og_of(eta_onset); Ons=On_of(eta_onset)
+    Hcs=_Hdyn(eta_onset); Ogs=Og_of(eta_onset); Ons=On_of(eta_onset)
     if _ARM == 'cr' or _SPLITIC:
         # r2373: CR's CHARACTERISTIC data, transplanted from ROBUST_p1p2_scan unchanged.
         # The branch point is a NULL surface, so the initial-value problem is characteristic:
@@ -417,7 +434,7 @@ def evolve(kk):
         Ph0 = -np.ones(nk)
         Ps0 = Ph0/(1.0+0.4*fnu)
         dg0 = -2.0*Ps0
-        th0 = (kk**2*eta_onset/2.0)*Ps0
+        th0 = (kk**2*((1.0/float(Hcs)) if _SPLITL else eta_onset)/2.0)*Ps0   # (L): leaf conformal time, radiation era
     y = np.zeros((nk,NV))
     y[:,0]=0.75*dg0; y[:,1]=th0; y[:,2]=dg0; y[:,3]=th0
     y[:,4]=dg0; y[:,5]=th0; y[:,6]=Ph0; y[:,7]=th0; y[:,8]=0.75*dg0
@@ -494,7 +511,7 @@ def evolve(kk):
                 store_e.append(grid[n+1])
                 _Pi = (y[:,IG]+y[:,IP]+y[:,IP+2]) if _POL else y[:,IG]
                 _Rb_s=Rb_of(grid[n+1]); _tp_s=max(float(taup_of(grid[n+1])),1e-30)
-                _Ss=(_Rb_s/((1+_Rb_s)*_tp_s))*(-Hc_of(grid[n+1])*y[:,3]-kk**2*y[:,2]/4) \
+                _Ss=(_Rb_s/((1+_Rb_s)*_tp_s))*(-_Hdyn(grid[n+1])*y[:,3]-kk**2*y[:,2]/4) \
                     if grid[n+1] <= e_sw_marker[0] else np.zeros_like(y[:,3])
                 # sigma_gamma: during TIGHT COUPLING F_2 is not evolved -- it is computed on the
                 # fly as _visc*theta/tau' -- so storing y[:,IG]/2 recorded ZERO there (r2169).
