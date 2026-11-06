@@ -10,6 +10,21 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7697: CAMPAIGN 110, 7c STAGED, REGISTERED BEFORE ANY LEAN (`r7697+71.1`)
+
+The details are in `r7697_71_campaign110/PREDICTION.md`. The whole is `2200` lines at p `0.2`, built in stages so that a
+stop leaves built stages behind it.
+
+| Stage | Content | Lines | p |
+|---|---|---|---|
+| ① | the locus `UV = 1` (`r → 0`) is in the black-hole region's closure and in no finite slice's closure | 200 | 0.85 |
+| ② | Christoffel, Riemann and Kretschmann in coordinates; sanity checks (flat `K = 0`, the 2-sphere `K = 4/ρ⁴`) | 450 | 0.65 |
+| ③ | `K` for `−F dU dV + R² dΩ²` by hand. **The expected stop** | 900 | 0.3 |
+| ④ | Schwarzschild: `K = 48M²/r⁶` | 350 | 0.6 given ③ |
+| ⑤ | `K → ∞` as `UV → 1`, so 7c | 100 | 0.9 given ④ |
+
+The fallback at ③ is the 2D curvature plus the warped-product identity, cited as a formula. That would mark IN PART.
+
 ## ✔ re r7695: 2iv-b BUILT ON N — THE SEPARATION IS NOT FIXED BY THE GEOMETRY; LOCAL BUMPS FILL AN OPEN INTERVAL (`r7695+71.2`)
 
 Campaign 109 came true on `N`: `500` new lines, with no stop and no fallback. Details are in
