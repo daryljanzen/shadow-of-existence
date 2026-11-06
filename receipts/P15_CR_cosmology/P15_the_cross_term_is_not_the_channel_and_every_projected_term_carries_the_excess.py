@@ -642,6 +642,25 @@ for _nm, _got, _want, _tol, _fmt in (
     check(f"own comb: {_nm} is what `l.1771-1779` prints, {_want:{_fmt}}",
           abs(_got - _want) < _tol, f"{_got:{_fmt}} against {_want:{_fmt}}")
 
+# ⛭⛭ `r7691+cc66`, ON `check_marker_transposition` GOING RED -- AND THE GATE IS RIGHT FOR A BETTER
+#   REASON THAN IT STATES.  ** `l.1774` PRINTS THE SLOPE AS `+0.0103` AND NOTHING PINNED THAT DIGIT. **
+#   *This receipt pins `0.01034` at five places and the paper prints four, so the published figure is a
+#   DIFFERENT ROUNDING of the same measurement and no gate read it.  The gate flagged the group as a
+#   transposition because a receipt cited twenty lines down carries a bare `0.0103` -- in a comment, not
+#   a computation -- which is a false positive in its mechanism and a true finding in its conclusion:
+#   **the token the paper prints was carried by no receipt at all.**
+#   ⇒ ⛔ ** AND THIS IS THE EXACT DIGIT THAT COST ME A FIGURE ONE REVISION AGO. **  `r7689`'s `PO-87`
+#     slope ratio divided by the PUBLISHED `0.0103` instead of the measured `0.010344` and reported
+#     `108.9` where the answer is `108.4`; `r7691` corrects it.  *A rounded number in print with no pin
+#     on the rounding is an input that reads as a measurement, and I used it as one.*  So the rounding
+#     itself is pinned here, where the measurement lives, rather than the gate adjudicated.
+check("⛭ `r7691` ** AND THE MEASURED SLOPE ROUNDS TO THE `+0.0103` `l.1774` ACTUALLY PRINTS. ** "
+      "*Pinned because the paper's digit is a rounding of this file's own figure and was carried by no "
+      "receipt -- and because `r7689` divided by that rounded digit as if it were the measurement*",
+      round(float(_OSL.mean()), 4) == 0.0103,
+      f"measured {_OSL.mean():.6f} rounds at four places to {round(float(_OSL.mean()), 4):.4f}, "
+      f"which is what `l.1774` prints; the five-place pin above reads 0.01034")
+
 check("⚑⛔ ** AND ON THE OWN COMB THE INTERCEPT DOES NOT STRADDLE ONE, WHICH INVERTS THE SENTENCE "
       "THE SHARED FORM SUPPORTED. **  Every one of the twelve settings sits ABOVE one, so there IS a "
       "constant offset and `l.1774-1776`'s 'what is established is the growth with wavenumber and "
