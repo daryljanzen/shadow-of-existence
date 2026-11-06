@@ -1,0 +1,48 @@
+{
+ "base_rev": "b1f2613cd",
+ "G1": {
+  "default": {
+   "keys": 19,
+   "differ": []
+  },
+  "adjudicated": {
+   "keys": 19,
+   "differ": []
+  },
+  "split": {
+   "keys": 19,
+   "differ": []
+  },
+  "split_splitic": {
+   "keys": 19,
+   "differ": []
+  }
+ },
+ "G2": {
+  "equal_when_L": [
+   "DM",
+   "Hc_of",
+   "Ob_of",
+   "Oc_of",
+   "Ocdm_of",
+   "Og_of",
+   "On_of",
+   "Rb_of",
+   "_xeg",
+   "_zg",
+   "ag",
+   "eg",
+   "eta_0",
+   "eta_onset",
+   "eta_rec",
+   "evolve_E",
+   "evolve_esw",
+   "rs"
+  ],
+  "moved_when_L": [
+   "evolve_Y"
+  ]
+ },
+ "G1_holds": true,
+ "G2_holds": true
+}

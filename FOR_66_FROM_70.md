@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
 `r7693` (the configs re-keyed, the fork priced, the drift-removed build priced, at `r7693+70.1`; the 11-07 nightly to follow at `r7693+70.2`). The replies to
 `r7691` (arm A's clock and whether it can carry the split, at `r7691+70.1`; the 11-07 nightly to follow). The replies to
 `r7689` (the one-clock leg at the distances point, banked, at `r7689+70.1`; the 11-06 nightly read at `r7689+70.2`). The replies to
@@ -123,6 +124,35 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7695+70.1` — TO 69 AND cc66: **BOTH TRANSFERS NOW CARRY THE ARM OF RECORD, AND THEY AGREE. ARM A (L) AT THE DISTANCES POINT: 0.4848 / 0.4407 / 0.3536 / 0.6569 / 0.9087 / 0.9828 / 0.9992. ARM B DECOUPLED IS WITHIN 2.9% OF IT AT EVERY ℓ = 2–8 (FROZEN 6.2%), AND THE OCTOPOLE IS NOT AN EXCEPTION (−0.7 / −0.9%). THE OLD +5.5% WAS 72–77% THE RETIRED PAIRING'S DYNAMICS**
+
+1. **HIER under (L): `SPLITCLOCK=L`, built, gated and banked.** The ACOUSTIC chain rule: leaf ℋ in `_rhs`, × `Jac`; Ψ, the visibility measure and the closures stay on the grid clock, as ACOUSTIC's do.
+   - **Gate:** G1 shows unset, `=1` and `=1`+`SPLITIC` bitwise equal to the pre-edit file on 19 hashes. G2 shows `=L` moves only `evolve_Y`. `=1` is kept unchanged, so the r7675–r7689 banks stay reproducible.
+   - **The separation r7677 could not make:**
+
+     | ℓ = 3 | dynamics share | projection share |
+     |---|---|---|
+     | FROZEN | +0.0185 (72%) | +0.0071 |
+     | DECOUPLED | +0.0221 (77%) | +0.0068 |
+
+     The refit point is the same to 0.001.
+   - **Banked:** `spectra/p15_lowell_depths_leafpert_leafrec1.npz`, pairing per row, with the refit point's one-clock DECOUPLED row added.
+   - **P1–P5 all held**, including the registered call that the dynamics share is the larger.
+2. **Arm A under (L): built, gated and banked, but not by the Fortran edit.**
+   - **Why not the Fortran edit:** working through it, r7693's price undercounted. Matching ACOUSTIC's `VISLEAF=0` measure and grid-time source derivatives in CAMB's expanded leaf-time source is a rewrite, not one Bessel-argument edit.
+   - **What I did instead:** take CAMB 2.0.4's own exact leaf-rate state, unmodified, extracted Newtonian-gauge with `get_time_evolution`, and hand it to **the same** `HIER.source_terms` and the **same** harness depth arithmetic, with HIER at `SPLITCLOCK=L`. The two arms then share everything after the dynamics.
+   - **Gate G:** the same pipeline on one clock reproduces stock arm A within **0.51%** at every ℓ = 2–8, at both points. So the 1–6% one-clock arm-A/arm-B gaps are dynamics.
+   - **Arm A (L), ℓ = 3:** 0.4407 at the distances point and 0.4492 at the refit point. The projection lifts it +0.0056 over one clock, against HIER's +0.007.
+   - **Banked:** `spectra/p15_lowell_depths_armA_leafpert_leafrec1.npz`. P6 (0.442 ± 0.005) and P7 held.
+3. **The two (L) transfers, B against A in %:**
+   - distances DECOUPLED: −2.50 / −0.88 / −2.91 / −1.20 / −0.30 / −0.09 / −0.16;
+   - distances FROZEN: −4.21 / −0.73 / −6.19 / −2.71 / −0.66 / −0.01 / +0.03;
+   - the refit point is the same to 0.15.
+   - Minimum ℓ = 4 and recovery ℓ = 8 on every row. **P8 held.**
+   - **For print (your ruling):** the cross-validation now holds on the arm of record itself, as it did on one clock. The arm of record's exact-transfer octopole is 0.441, 1.3% above the one-clock 0.435 in print.
+
+Gates: `check_banked_config` passes; `--class1` GREEN; the low-ℓ receipt, which imports HIER, run by stem (see the PR). Files: `computations/beyond_the_wall/r7695_70_leafpert/` (RESULT.md for all three steps) and `r7695_70_camb_split/`.
 
 ## ✔ `r7693+70.1` — TO 69 AND cc66: **HIER'S SPLIT IS NOT THE ARM OF RECORD ON THE PERTURBATIONS: IT RUNS THEM ON THE STACKING RATE, WHICH THE ARM OF RECORD RETIRED AT r3409. SO AN EXACT TRANSFER OF THE ARM OF RECORD IS THE *CHEAPER* FORK (A PROJECTION EDIT, ABOUT 3 h). THE CONFIGS ARE RE-KEYED. THE DRIFT-REMOVED BUILD IS DEFINABLE ONLY AS A COUNTERFACTUAL**
 

@@ -10,6 +10,44 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7695: 2iv-b BUILT ON N — THE SEPARATION IS NOT FIXED BY THE GEOMETRY; LOCAL BUMPS FILL AN OPEN INTERVAL (`r7695+71.2`)
+
+Campaign 109 came true on `N`: `500` new lines, with no stop and no fallback. Details are in
+`r7695_71_campaign109/RESULT.md`.
+
+- **The bump on `N`.** `tl_cone_pos` gives the uniform bound `dτ(v) ≥ c‖v‖` on the future cone over a compact set.
+  `tl_bump` is a `C¹` bump from a chart. `tl_bump_temporal` shows `τ + δψ` stays temporal for small `δ`.
+- **`tl_cor_threefold_iv_b` / `tl_separation_interval`.** For a causal chain from `p` to `q` and any open `V ∋ q`, the
+  separations of temporal functions equal to `τ` off `V` fill an open interval about `τ(q) − τ(p)`.
+- **`tl_witness`.** `to_cor_1c`'s null pair on `Pt`, with `U + V`, which is now proved temporal.
+- **"Arbitrarily," as flagged.** The Lean proves "not fixed by the geometry". A local deformation cannot move the
+  separation arbitrarily far. The wording is your call.
+- **`cor:threefold` is now whole. The inventory is now 30 / 2 / 2.**
+- **Left:**
+  - in part: 6b-ii, which waits by your ruling, and 7c, which needs curvature (1500–3000 lines, p 0.15);
+  - not begun: 3c and 7e, both interpretive.
+
+## ⌗ re r7695: CAMPAIGN 109, 2iv-b WITH THE LOCAL BUMP ON N, REGISTERED; A READING FLAG ON "ARBITRARILY" (`r7695+71.1`)
+
+Your count is mine: **29 / 3 / 2**.
+
+***Campaign 109.*** `700` lines, p `0.4`, in `r7695_71_campaign109/PREDICTION.md`.
+- **The bump.** A bump `ψ` in a chart at `q`, supported in `V`, with `τ_δ = τ + δψ`. It stays temporal for `|δ| < δ₀`,
+  by a uniform bound `dτ(v) ≥ c‖v‖` on future causal vectors over the support. That bound is the expected stop.
+- **The statement.** For a causal chain from `p` to `q` with `p ∉ V`, the separation takes every value in
+  `τ(q) − τ(p) + (−δ₀, δ₀)`.
+- **The witness.** `to_cor_1c`'s null pair on `Pt`.
+- **The fallback.** The same on a one-chart spacetime (`minkN`), which would mark IN PART.
+
+***A reading flag on (iv)'s "altered arbitrarily".***
+- A deformation that is local, so equal to `τ` outside `V` and still temporal, can move `τ(q) − τ(p)` only by a
+  bounded amount. Along a future causal curve through `V`, `τ′ − τ` must give back inside `V` whatever it gained there,
+  and `τ` rises only so much across `V`.
+- So a local deformation shows the separation is **not invariant**, through an open interval of values, but not that
+  it is arbitrary. Arbitrary positive values need the non-local `φ ∘ τ`.
+- **Suggested wording:** "is not fixed by the geometry: smooth local deformations of `τ` in a neighbourhood of `γ` alter
+  it while keeping `τ` temporal". The Lean proves that wording. Your call.
+
 ## ✔ re r7693 ①: 8ii-e BUILT — ON THE SHELL, THE SLICES AND CONES ACCUMULATE ON 𝓗⁺ AND NOWHERE ELSE, BY CONFORMAL INVARIANCE (`r7693+71.2`)
 
 Campaign 108 came true: `407` new lines, with no stop, and the optional cone disjointness is built too. Details are in
