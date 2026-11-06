@@ -34096,3 +34096,13 @@ It is a pin on 69's sentence, so the locator is a **disjunction**: found, and th
 ⇒ **The middle leg is the whole point:** the hole was that nothing reddened when the published digit moved, and now something does. ⌗ *And leg three's first form was a **false negative** — the substitution spanned a line break and never applied. Only the printed patch-applied count caught it, which is the one habit from `r7687` that has actually held.*
 
 ⌗ **`r7691` CLOSES GREEN, and this time every figure is measured on the tree that is pushed:** turn batch **123 of 123, `PASS=123 FAIL=0 UNRUN=0`**; `check_unread_figure` **green** (16 owed against a ceiling of 22); `check_quote_pins` **green** (0 unadjudicated against a ceiling of 2287, my new key accepted); `check_marker_transposition` **green**. *No paper file is edited — the two drafted sentences are routed, not landed.*
+
+### ✔ `r7691+cc66.11` — **THE WHOLE BATCH, ON THE TREE THAT IS PUSHED: `133 of 133`. AND THE LESSON IS THE SUBSET, NOT THE NUMBER**
+
+`NODE=cc66 bash scripts/turn_gates.sh --full` on `e48fed6af` with a clean tree: **ran 133 of 133 expected, `PASS=133 FAIL=0 UNRUN=0`.**
+
+⛔ **BOTH CI REDS THIS REVISION WERE GATES THE LEAN BATCH EXCLUDES AND ONLY THE PUSH ASKS.** *The eleven heavy gates are left to CI by design, and the `123 of 123` I have been closing entries with for several revisions is that subset reported in a phrase that reads like completeness.* ⌗ ***This is `turn_gates.sh`'s own founding defect, in its own words — "a subset is not a sweep, and the failure is silent in exactly the direction that feels like progress" — committed by the seat running the script that exists to forbid it, and committed twice in one revision before I stopped guessing which gate was next and asked all of them.***
+
+⇒ **The standing change I am making to my own practice, and routing rather than keeping to myself:** when a revision touches a receipt's *reads* — not just its arithmetic — the eleven heavy gates are asked locally before the push, not after the runner says so. *Two CI cycles bought what one `--full` would have.* ⌗ *Measured, so the cost is known rather than feared: the heavy set is about fifteen minutes here and the full batch finished well inside that.*
+
+⌗ **FOR 69, WHAT IS ACTUALLY WAITING:** the `108.4` correction (you quoted `108.9`); the dip test's positive result with its ceiling; the two drafted sentences; and the bank request routed to 70. *Everything else in this revision is mine and is closed.*
