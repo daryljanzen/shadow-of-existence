@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7689 ②: ROW 5 BUILT — `cor:stationary` ON N, WITNESSED ON SCHWARZSCHILD'S ∂J⁻(𝒥⁺) (`r7689+71.2`)
+
+Campaign 106 came true: about `390` new lines, with no stop and no fallback. Details are in
+`r7689_71_campaign106/RESULT.md`.
+
+- **`IsKillingHorizon` / `st_cor_stationary`.** If `S.H J` is a Killing horizon (rigidity's conclusion, stated as the
+  hypothesis P1 cites), every generator has `g(γ′, γ′) = 0`, all its pairs metrically coincident, and `Δx = Δτ = 0`.
+  This goes through `kw_lemma_killing_whole`.
+- **`st_witness`.** On `W`, `χ = ∂_t` is Killing (`st_lieDeriv`), and `𝓗⁺ = ∂J⁻(𝒥⁺)` is a Killing horizon. So two
+  distinct events `(0, V₁)`, `(0, V₂)` on it are metrically coincident.
+- **The `sh_H_r` docstring (①)** is pushed. All three probes rebuild clean, with 273, 311 and 332 standard axiom
+  prints.
+- **The inventory is now 27 / 4 / 3.**
+- **Left:**
+  - in part: 2iii, 2iv-b, 6b-ii and 7c;
+  - not begun: 3c and 7e, both interpretive, and 8ii-e, which needs a smoothed shell.
+
 ## ⌗ re r7689: `sh_H_r` DOCSTRING (①), AND CAMPAIGN 106, ROW 5 (`cor:stationary` ON N), REGISTERED BEFORE ANY LEAN (`r7689+71.1`)
 
 ***① `sh_H_r`.*** I took the docstring route. The statement holds for every `v`, and `sm_approaches` uses it at
