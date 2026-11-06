@@ -1,0 +1,135 @@
+==============================================================================
+ARM 1 -- THE RETENTION BLOCK (P15 l.1772-1797), IN r7684's FORM
+==============================================================================
+
+  1a THE CARRIER CLAUSE, "rides on the envelopes" (negative probe 9 governs)
+    read     the clause is in the block as written            : False
+    read     own-comb null at the real phase                  : 0.00328
+    read     the same with the envelopes FLATTENED            : -3e-05
+    read     is that flattened figure GATED by a check()      : False
+    read     SHARED convention: own/own +0.0309, one comb +0.0047, flat +0.0254
+    VERDICT  1a SUPPORTED -- on the own comb the counterfactual is decisive: flattening the envelopes takes the residual from 0.00328 to -3e-05, which is nothing. The clause is 69's own and it holds. ** BUT that figure is PRINTED AND UNGATED: gated=False. The one number the clause rests on is the one number in its table with no check(). Routed, not edited. ** And in the SHARED convention the same counterfactual goes the other way, which is why the clause has to name the own comb -- as it does.
+    G3       flattened figure set equal to the baseline -> PRESENT-NOT-CARRIER (must not be SUPPORTED)
+    neg9     shared-convention pair -> PRESENT-NOT-CARRIER (must be PRESENT-NOT-CARRIER)
+
+  1b THE INJECTION'S WORDING
+    read     the clause is in the block as written            : True
+    read     own-comb slope                                   : +0.01034
+    read     null at the real phase, both amplitudes          : +0.00328, +0.00215
+    read     as a per cent of the slope                       : 20.8 to 31.7
+    read     same sign as the slope (its direction)           : True
+    read     what survives the subtraction, per cent          : 68.4 to 79.3
+    VERDICT  1b SUPPORTED -- the injection is exactly as worded: identical amplitude on both arms, each on its own comb, so nothing true to retain, and the statistic still returns 20.8 to 31.7 per cent of the slope in the slope's own direction (the block says 21 to 32): True. And "between two thirds and four fifths survives the subtraction" reads 68.4 to 79.3 per cent: True.
+
+  1c THE REMAINING FIGURES OF THE BLOCK, each at its cited receipt's source
+    read     lowest band ratio 1.028      pinned by the receipt against the paper: PASS
+    read     highest band ratio 1.075     pinned by the receipt against the paper: PASS
+    read     slope +0.0103                pinned by the receipt against the paper: PASS
+    read     setting spread 0.0014        pinned by the receipt against the paper: PASS
+    read     intercept 1.026              pinned by the receipt against the paper: PASS
+    read     intercept spread 0.009       pinned by the receipt against the paper: PASS
+    read     periods 1.0170 / 1.0115 printed by the receipt    : True
+    read     phase drift +0.034 to +0.199 rad printed          : True
+    read     control-comb false slope +0.0309 printed          : True
+    read     factor over the own comb, printed                 : 9.4
+    read     worst phase / own-comb slope, printed             : own 0.54 (shared 1.50); own 0.51 (shared 1.09)
+    read     own-comb step survives its null at                : -0.029 to -0.036
+    read     own-comb step -0.0396, null -0.0039 / -0.0105, i.e. 10 to 27 per cent of it
+    read     band width at seven bands over 0.85-5.75         : 0.70 of a q unit, against a source comb period of about 1.01 -- so "seven tenths of a period"
+    VERDICT  1c SUPPORTED -- 6 of the 6 first-half figures are pinned BY THE RECEIPT ITSELF against the paper's own line numbers, and every second-half figure is printed by the phase receipt at the digits the block states. The one figure the block derives rather than cites, "seven tenths of a period", is the band width 0.70 at seven bands over 0.85-5.75 against a source period of about 1.01.
+
+  1d WHICH RECEIPT COMPUTES WHAT (r7684 found an own-comb step and no own-comb slope)
+    read     the phase receipt now carries an OWN-COMB SLOPE  : True
+    read     and an own-comb STEP                             : True
+    read     the cross-term receipt carries the own-comb fit  : True
+    VERDICT  1d SUPPORTED, and r7684's gap is CLOSED -- the own-comb form the slope lacked at r7684 now exists in both cited receipts: the cross-term receipt fits it in PART 6B and the phase receipt nulls it on the own comb. The block cites each for what that receipt computes, and neither figure is carried across conventions.
+
+==============================================================================
+ARM 2 -- THE LOW-MULTIPOLE SITES AND THE NEW SCOPE SENTENCE
+==============================================================================
+    read     citation sites of that receipt in P15            : 6, at l.2596, l.2600, l.2604, l.2806, l.2816, l.2825
+    read     the receipt's OWN word for how many sites cite it: six
+    read     the per-multipole deficit figures printed, l=2..8: ['0.487', '0.435', '0.359', '0.666', '0.911', '0.983', '0.998']
+    VERDICT  2a COUNT-DISAGREES (6 found against seven stated) -- and the receipt that the sites cite says "six" in its own gate text, agreeing with the 6 found here. The order's seven matches the 7 DEPTH FIGURES at l=2..8 instead, which are seven. Reported both ways rather than reconciled: on the reading "a site is a place that cites the receipt" the count is 6, and on the reading "a site is one of the per-multipole depths" it is seven.
+    neg10    one site removed -> 5 found (must be 5)
+
+  2b EACH FIGURE AGAINST THE DISTANCES-POINT BLOCK
+    read     the octopole residual, five and a half per cent          PASS
+    read     the largest residual away from the octopole, under three PASS
+    read     the largest residual above l = 5, under one              PASS
+    read     the build spread at l = 4, 4.9 per cent                  PASS
+    read     the build spread at l = 3                                PASS
+    read     the build spread above l = 5, per multipole      : l=6 -0.63; l=7 +0.02; l=8 +0.20
+    read     at l = 4: frozen -5.15, decoupled -0.25 (the scope sentence's 5.15 and 0.25)
+    VERDICT  2b SUPPORTED -- 5 of the 5 figures the sites print are pinned by the distances-point block itself, each against the words the paper uses. The scope sentence's own two figures read frozen -5.15 and decoupled -0.25 at l = 4, its 5.15 and 0.25 to the digit; and the BUILD spread above l = 5 is -0.63, +0.02, +0.20, all under one per cent -- true, and pinned by no gate, which is 2c's finding.
+
+  2c THE NEW SCOPE SENTENCE AFTER l.2816
+    read     names the decoupled treatment as the one read        True
+    read     says both treatments are reported                    True
+    read     gives the agreement above l = 5                      True
+    read     gives the disagreement at l = 4                      True
+    read     names the two builds' own distances from the exact transfer True
+    read     the phrase "one per cent above $\ell=5$" occurs in  : 2 place(s) in the passage
+    VERDICT  2c SUPPORTED, with ONE SHARED PHRASE CARRYING TWO QUANTITIES -- the scope sentence states what it should: which tower treatment the depths are read with, that both are reported, and the size of the choice. ** But "to one per cent above l = 5" is used twice in the passage for two DIFFERENT quantities -- once for the hierarchy against the exact transfer (the receipt's pinned 0.57) and once for the two BUILDS against each other (the build spread, which the distances block pins only at l = 3 and l = 4). The second is printed in the block's per-multipole table and not pinned. Six words fix it: say "the two builds agree" in the second. ** This is r7686's shape: one phrase covering two quantities.
+
+==============================================================================
+ARM 3a -- PART (i)'s NEW FORMAL SENTENCE, AGAINST ThreefoldDistinct.lean
+==============================================================================
+
+  3a-1 "the endpoints of a causal curve ... are distinct, and when the manifold is
+        Hausdorff they have disjoint open neighbourhoods"
+    read     td_cor_threefold_i concludes p != q               : True
+    read     ...and the disjoint-neighbourhood conjunct        : True
+    read     its hypothesis is a NON-EMPTY causal chain        : True
+    read     it carries [T2Space N] on the WHOLE theorem       : True
+    read     the UNCONDITIONAL half exists as td_ne_of_transGen: True
+    read     ...and that one asks no Hausdorff                 : True
+    read     the sentence cites td_ne_of_transGen              : False
+    VERDICT  3a-1 SUPPORTED on both halves, and MIS-CITED, SUPPORTED ELSEWHERE on the first -- the sentence states distinctness with NO Hausdorff qualifier and the separation WITH one, which is right: td_ne_of_transGen proves distinctness asking no Hausdorff. But the only name it cites, td_cor_threefold_i, carries [T2Space N] on the whole theorem, so the cited name alone does not carry the unqualified half. Six words: cite td_ne_of_transGen beside it. ** And the hypothesis is a NON-EMPTY chain (TransGen), not Cau: the reflexive closure would make the claim false, which the file's own td_transGen_of_cau_ne marks.
+
+  3a-2 "any temporal function supplies that hypothesis ... so the exterior D has it"
+    read     td_noClosed_of_temporal takes IsTemporalOn S.M    : True
+    read     ...and concludes NoClosedCausal                   : True
+    read     td_noClosed_D takes a CAUCHY temporal function    : True
+    read     ...but its proof uses only the TEMPORAL part h.1  : True
+    read     the increase is along every causal STEP (named)   : True
+    VERDICT  3a-2 SUPPORTED, and STRONGER-THAN-CLAIMED -- any temporal function on M rules out closed causal curves, and D inherits it. The sentence says "with its Cauchy temporal function"; td_noClosed_D consumes only the TEMPORAL half of that hypothesis, so being Cauchy is one hypothesis heavier than the proof uses -- the same shape as r7690's reading of to_strict_null_order. Recorded, not upgraded. "Increases along every causal curve" is proved step by step and chained inside td_noClosed_of_lt, so it is carried by the proof rather than by a cited name.
+
+==============================================================================
+ARM 3b -- cor:densities' PROOF'S MATTER CLAUSES, AGAINST ShellMatter.lean
+==============================================================================
+    read     sm_slice_meets_matter              needs ∃! y : P                           True
+    read     sm_slice_meets_matter              needs slice (range (sv_O M v₀))          True
+    read     sm_slice_meets_matter              needs sm_matter M v₀                     True
+    G4       meets the slice in exactly one point -> SUPPORTED
+    read     sm_outside_H                       needs sm_matter M v₀                     True
+    read     sm_outside_H                       needs .H (range (sv_O M v₀)) = ∅         True
+    G4       lies outside the horizon -> SUPPORTED
+    read     sm_finite                          needs 2 * M < sv_r M v₀ y                True
+    read     sm_finite                          needs IsCompact                          True
+    G4       at a finite areal radius greater than r_h -> SUPPORTED
+    read     sm_approaches                      needs Tendsto                            True
+    read     sm_approaches                      needs StrictMono                         True
+    read     sm_approaches                      needs < sv_uH M v₀                       True
+    G4       reaches its own horizon event only as Theta -> infinity -> SUPPORTED
+    read     sm_outside_H takes an ARBITRARY Theta             : True
+    read     ...and no condition on a or eta                   : True
+    read     sm_matter is the shell {v = v0} inside M'         : {y | y.2 = v₀} ∩ sh_MS M v₀
+    read     the proof says the last clause is NOT formalised  : True
+    VERDICT  3b SUPPORTED on all 4 clauses -- each cited name carries the clause beside it, on the shell itself taken as a single infalling element (sm_matter is the ray {v = v0} inside the model). STRONGER-THAN-CLAIMED on one: sm_outside_H holds for an ARBITRARY slicing function with no condition on a or eta at all, so the passage's "for 0 < eta <= 2" is not needed for the outside-the-horizon clause, only for the one-point and the limit ones. And the proof declares its own gap -- the central densities need a model and are not formalised -- which is the right way round.
+
+==============================================================================
+SUMMARY
+==============================================================================
+  1a SUPPORTED -- on the own comb the counterfactual is decisive: flattening the envelopes takes the residual from 0.00328 to -3e-05, which is nothing. 
+  1b SUPPORTED -- the injection is exactly as worded: identical amplitude on both arms, each on its own comb, so nothing true to retain, and the statist
+  1c SUPPORTED -- 6 of the 6 first-half figures are pinned BY THE RECEIPT ITSELF against the paper's own line numbers, and every second-half figure is p
+  1d SUPPORTED, and r7684's gap is CLOSED -- the own-comb form the slope lacked at r7684 now exists in both cited receipts: the cross-term receipt fits 
+  2a COUNT-DISAGREES (6 found against seven stated) -- and the receipt that the sites cite says "six" in its own gate text, agreeing with the 6 found he
+  2b SUPPORTED -- 5 of the 5 figures the sites print are pinned by the distances-point block itself, each against the words the paper uses. The scope se
+  2c SUPPORTED, with ONE SHARED PHRASE CARRYING TWO QUANTITIES -- the scope sentence states what it should: which tower treatment the depths are read wi
+  3a-1 SUPPORTED on both halves, and MIS-CITED, SUPPORTED ELSEWHERE on the first -- the sentence states distinctness with NO Hausdorff qualifier and the
+  3a-2 SUPPORTED, and STRONGER-THAN-CLAIMED -- any temporal function on M rules out closed causal curves, and D inherits it. The sentence says "with its
+  3b SUPPORTED on all 4 clauses -- each cited name carries the clause beside it, on the shell itself taken as a single infalling element (sm_matter is t
+
+every registered reading ran; 10 verdicts recorded.
