@@ -1,0 +1,40 @@
+THE TREE THIS COLD READ IS A STATEMENT ABOUT
+=============================================
+A cold read is a statement about a TREE and it has to name the tree.
+
+worktree                     : /home/user/shadow-of-existence
+HEAD at registration         : 683fb687b8a836f4aa27a733fa8f2343dd95105e
+HEAD subject                 : r7693 (69) -- four seats merged; P15 states the acceptance law's
+                               arm-to-control ratio ...
+origin/main at registration  : 683fb687b8a836f4aa27a733fa8f2343dd95105e  (level: 0 ahead, 0 behind)
+previous landing of this seat: 4c8246e7 (r7694, merged as PR #656)
+branch                       : claude/shadow-of-existence-setup-6awafl
+registered at                : before a line of any reading existed, in its own pushed commit
+
+⚠ THE ORDER'S OWN LINE NUMBERS HAVE DRIFTED ON THIS TREE, and that is recorded here rather than
+  worked around silently: `r7693` names `l.2795` for P15's shortened summary item and `l.2600` for
+  the excess clause.  On this tree `l.2795` is a section heading and the clause the order quotes
+  from `l.2600` sits at `l.2608`.  Every target below was therefore located by ITS OWN TEXT, not
+  by the order's line number -- which is this seat's standing lesson applied to an order:
+  **a line number is a claim about a TREE**, and four seats landed between the order and this read.
+
+READ TARGETS, LOCATED BY TEXT AT REGISTRATION (location only; no verdict read yet)
+  P1  = corpus/BH_causality_v2.tex
+    ITEM 1  the machine-checked paragraph, incl. the new part (iii) sentence : l.188
+            and the scope claim "Parts (i)--(iii), and all four parts together on one pair"
+            against computations/formalisation/lean/probes/NullGeodesic.lean
+            cited names in P1: ng_cor_threefold_iii, ng_witness, ng_generator, ng_whole
+  P15 = corpus/CR_cosmology.tex
+    ITEM 2  the acceptance-law block                                         : l.1803-1863
+            "within ten per cent" at l.1834 ; "94.9 per cent" at l.1858
+            the shortened summary item (the order says l.2795)               : l.2803
+            against receipts/P15_CR_cosmology/
+              P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py
+    ITEM 3  the octopole attribution: the scope sentence's "and it is the
+            two-clock split's"                                               : l.2832
+            and the excess clause (the order says l.2600)                    : l.2608
+            against receipts/P15_CR_cosmology/
+              P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py, its r7691 block
+
+NOT YET OPENED AT REGISTRATION: NullGeodesic.lean, either receipt, and the bodies of the P15
+blocks beyond the single lines used to locate them.
