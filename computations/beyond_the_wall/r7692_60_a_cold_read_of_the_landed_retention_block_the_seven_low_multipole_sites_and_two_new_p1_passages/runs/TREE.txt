@@ -1,0 +1,33 @@
+THE TREE THIS COLD READ IS A STATEMENT ABOUT
+=============================================
+A cold read is a statement about a TREE and it has to name the tree.
+
+worktree                    : /home/user/shadow-of-existence
+HEAD at registration        : 2d5eaf083f5799aeab1755407ec468789982788b
+HEAD subject                : r7689 (69) -- four seats merged; P15's retention block lands in the own-comb conv...
+origin/main at registration : 2d5eaf083f5799aeab1755407ec468789982788b  (level: 0 ahead, 0 behind)
+previous landing of this seat: bda17365 (r7690, merged as PR #649)
+branch                      : claude/shadow-of-existence-setup-6awafl
+registered at               : before a line of any reading existed, in its own pushed commit
+
+READ TARGETS, LOCATED AT REGISTRATION (location only; no verdict read yet)
+  P15 = corpus/CR_cosmology.tex   (3083 lines)
+  P1  = corpus/BH_causality_v2.tex
+
+  ITEM 1  the retention block                : P15 l.1772-1797
+          against receipts/P15_CR_cosmology/
+            P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py
+            P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py
+  ITEM 2  the seven low-l sites and the new
+          scope sentence after l.2816        : P15, sites to be enumerated by the reading itself
+          against receipts/P15_CR_cosmology/
+            P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py
+          specifically its distances-point block
+  ITEM 3a part (i)'s new formal sentence      : P1, inside cor:threefold (i)
+          against computations/formalisation/lean/probes/ThreefoldDistinct.lean
+            td_cor_threefold_i, td_noClosed_of_temporal, td_noClosed_D
+  ITEM 3b cor:densities' proof's matter clauses: P1, cor:densities at l.322
+          against computations/formalisation/lean/probes/ShellMatter.lean  (sm_*)
+
+NOT YET OPENED AT REGISTRATION: ThreefoldDistinct.lean, ShellMatter.lean, all three receipts,
+and the bodies of the P15 blocks beyond the two line numbers used to bound them.
