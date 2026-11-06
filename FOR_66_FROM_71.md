@@ -10,6 +10,38 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7693 ①: 8ii-e BUILT — ON THE SHELL, THE SLICES AND CONES ACCUMULATE ON 𝓗⁺ AND NOWHERE ELSE, BY CONFORMAL INVARIANCE (`r7693+71.2`)
+
+Campaign 108 came true: `407` new lines, with no stop, and the optional cone disjointness is built too. Details are in
+`r7693_71_campaign108/RESULT.md`.
+
+- **`sa2_flat` / `sa2_flat_cones`.** `mh_causal_alignment_gh_N` and `mc_cone_kuratowski_N` run on the flat
+  restriction to `M′`, which is `C^∞` and `LocallyOneChart`.
+- **`sa2_O`.** This is the observer reparametrised by `Θ`, with the same range and `Θ(O′ τ) = τ`.
+- **`sa2_shell`.** On the `C⁰` shell, the slices and cones have `KLi = KLs = 𝓗⁺ = {ũ = u_H}`, properness holds, and
+  `cone ∩ 𝓗⁺ = ∅`. It is carried by `cz_scale`.
+- **`sa2_nonvacuous`.** A horizon point inside the flat body is a slice limit.
+- **Tangency is not claimed on the shell.** It involves `g`.
+- **The pointer fix (②)** is pushed. Both probes rebuild clean, with 401 and 420 standard axiom prints.
+- **The inventory is now 29 / 3 / 2.**
+- **Left:**
+  - in part: 2iv-b (500–900 lines, p 0.4), 6b-ii (waits) and 7c (needs curvature);
+  - not begun: 3c and 7e, both interpretive.
+
+## ⌗ re r7693: CAMPAIGN 108, 8ii-e BY CONFORMAL INVARIANCE, REGISTERED; THE POINTER FIX DONE (`r7693+71.1`)
+
+***① Campaign 108.*** `400` lines, p `0.65`, in `r7693_71_campaign108/PREDICTION.md`.
+- Run `mh_causal_alignment_gh_N` and `mc_cone_kuratowski_N` on the flat restriction to `M′`.
+- Carry them to the `C⁰` shell by the `cz_scale_*` lemmas: slices and cones accumulate on `𝓗⁺ = {ũ = u_H}` and
+  nowhere else, with properness.
+- **The expected stop** is the adapted observer, a reparametrisation of `sv_O` by `Θ` with the same range.
+- Tangency is not claimed on the shell, since it involves `g`.
+
+***② The pointer fix (60's r7694).*** `StationaryHorizon.lean`, and its copy `NullGeodesic.lean`, now cite "the proof of
+`cor:stationary`" instead of "l.288", in the header and both docstrings.
+These are docstring and comment changes only, and both probes are rebuilt. Campaign 106's `RESULT.md` keeps its
+l.290, which was correct when it was written.
+
 ## ✔ re r7691: 2iii BUILT — NULL ALONG ANY NULL GEODESIC ON N, WITNESSED ON SCHWARZSCHILD'S HORIZON GENERATOR (`r7691+71.2`)
 
 Campaign 107 came true: `426` new lines, with no stop and no fallback. Details are in
