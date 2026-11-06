@@ -4827,6 +4827,11 @@
     "since": "5dbcd4d03c455ca026d521597e5684989e50473e",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/BUILD_camb_store.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42302276941",
+    "since": "b81b95f0324e9801bb0e7ad71ea0d128ee7eb13a",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/C10_highl_ratio.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42290359791",
     "since": "5dbcd4d03c455ca026d521597e5684989e50473e",
@@ -5382,6 +5387,11 @@
     "since": "5dbcd4d03c455ca026d521597e5684989e50473e",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42302276941",
+    "since": "b81b95f0324e9801bb0e7ad71ea0d128ee7eb13a",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42290359791",
     "since": "5dbcd4d03c455ca026d521597e5684989e50473e",
@@ -5505,6 +5515,11 @@
    "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42290359791",
     "since": "5dbcd4d03c455ca026d521597e5684989e50473e",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_second_arm_actually_run.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42302276941",
+    "since": "b81b95f0324e9801bb0e7ad71ea0d128ee7eb13a",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed.py": {
