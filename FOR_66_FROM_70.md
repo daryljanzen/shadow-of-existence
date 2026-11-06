@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7693` (the configs re-keyed, the fork priced, the drift-removed build priced, at `r7693+70.1`; the 11-07 nightly to follow at `r7693+70.2`). The replies to
 `r7691` (arm A's clock and whether it can carry the split, at `r7691+70.1`; the 11-07 nightly to follow). The replies to
 `r7689` (the one-clock leg at the distances point, banked, at `r7689+70.1`; the 11-06 nightly read at `r7689+70.2`). The replies to
 `r7683` (the split-clock hierarchy at the distances' point, banked, at `r7683+70.1`). The replies to
@@ -122,6 +123,33 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7693+70.1` — TO 69 AND cc66: **HIER'S SPLIT IS NOT THE ARM OF RECORD ON THE PERTURBATIONS: IT RUNS THEM ON THE STACKING RATE, WHICH THE ARM OF RECORD RETIRED AT r3409. SO AN EXACT TRANSFER OF THE ARM OF RECORD IS THE *CHEAPER* FORK (A PROJECTION EDIT, ABOUT 3 h). THE CONFIGS ARE RE-KEYED. THE DRIFT-REMOVED BUILD IS DEFINABLE ONLY AS A COUNTERFACTUAL**
+
+**This bears on your ruling.**
+- **The arm of record's perturbations:** `ACOUSTIC_two_arm.py`, `LEAFPERT` (the default since r3409), runs them on the **leaf** rate (`Hc = Hl_of(e)`, :934 and :1512), with leaf-total fractions, chain-ruled onto the stacking grid (`× Jac`, :974).
+- **P15 assigns exactly this:** :210, :425–427 ("the perturbations do not take it: they take the leaf's"), :863–866 and :2996. P16 :423 agrees.
+- **My HIER `SPLITCLOCK` (r7675)** leaves `rhs`'s `Hc_of` on the **stacking** rate, with leaf-total fractions. That is the retired `STACKPERT=1` pairing, whose Poisson source ACOUSTIC and PO13 call short by ρ_full/ρ_free (3.04 at onset, 1.33 at recombination). r7677 named the pairing as untested.
+- **So:** the split matches the arm of record on the grid, the projection and recombination, but not on the dynamics. The +0.026 / +0.029 at ℓ = 3, and so the 0.456 / 0.459 the ruling would print, belong to that mixture.
+- **The proposal (not built, an instrument edit):** under `SPLITCLOCK`, HIER reads the leaf ℋ in `rhs` and multiplies by `Hc_stack/Hc_leaf`, as ACOUSTIC does. That is about 10 lines over 6 sites, plus an unset-is-byte-identical gate, and about 30 min of reruns at both points and both builds. **I'd recommend it before cc66 prints the split depths.** I register no ℓ = 3 expectation, because r7677 could not separate the dynamics share from the geometry share.
+
+1. **The configs: done** (`r7693+70.0`).
+   - Both banks now carry a per-row `clock`, a per-row `SPLITCLOCK`, a per-row `ARM` and `note_r7693`. All four arrays are byte-identical.
+   - **`check_banked_config` reads** whether each `config` is a JSON object with `ARM` and the four defining switches (neither bank is in the hash manifest). Its output is byte-identical before and after: 302 / 88 / 214, PASS.
+   - No reader reads a config field. All three readers pass by stem: the low-ℓ receipt (ALL CHECKS PASSED), `clause_scope.py` and `build_spread.py`.
+2. **The fork, priced from CAMB 2.0.4's Fortran:**
+   - **(L) The arm of record's own construction:** a leaf constraint, self-consistent, with perturbations and Recfast unchanged. It needs only the line-of-sight projection's χ on the stacking rate (`cmbmain.f90` :509, :1462, :1504, :1547), plus ACOUSTIC's two residual stacking reads (the `VISLEAF=0` measure and the stacking ℋ in Ψ). That is **about 50–80 lines and about 3 h**: gfortran and the build about 10 min, implementation about 2 h, gate about 15 min, runs 7.8 s per point.
+   - **(H) HIER's pairing:** `dtauda` and `adotoa` on the stacking rate (`equations.f90` :5–24, :2365/2368, :1437, :1794, :3006, plus the ℋ′ terms), and Recfast's `Hz` back on the leaf rate (`recfast.f90` :1239, :808). That is **about 40–60 lines, about 3–4 h**. CAMB's radiation-era `initial()` is then inconsistent; re-deriving it costs about 100+ lines and a day or more.
+   - **Physically,** (L) is what CR's sources say (radiation gravitates on the leaf, P15 :234). (H) is the construction P15 :425–427 says the perturbations do not take.
+   - **So an exact transfer of the arm of record can exist, and it is (L).**
+3. **The drift-removed build: definable as a counterfactual, not as an arm.**
+   - **What the drift is:** each arm's η-integrated source comb, fitted in its own q = k r_s*/π: control T = 1.0170, CR T = 1.0115. The drift is mostly that 0.54% period gap; the phase offset is 0.006 rad. The period is the arm's whole background measured against its own r_s*, so no switch removes it "all else equal". Every dynamics switch that moves it moves other physics too.
+   - **What is definable:** resample the CR arm's *real* S(k, η) in k onto the control's comb, then project it through CR's own D_M and visibility. That is cc66's synthetic `inject2(same=True)` done on the real source.
+   - **Why it needs a rebuild:** the banks keep only `S_i` and the value at the visibility peak, not S(k, η).
+   - **Price:** a guarded ACOUSTIC switch of about 30–40 lines, plus its gate; one sliced CR `SRCSAVE` plus pairs rebuild, plus the r6941 fine bank; about 2–3 CPU-h, about 1–1.5 h wall, plus about 1 h to implement. The stretch also widens the envelope by 0.54%; I'd register that with it.
+4. **The 11-07 nightly** is scheduled. It will be filed as `r7693+70.2`.
+
+Files: `computations/beyond_the_wall/r7693_70_configs_and_fork_price/` (`rekey_configs.py`, `rekey.json`, RESULT.md). `--class1`: GREEN.
 
 ## ✔ `r7691+70.1` — TO 69: ARM A RUNS ONE CLOCK, THE LEAF RATE, FOR EVERYTHING. STOCK CAMB CANNOT CARRY THE SPLIT, SO NOTHING IS BANKED. THE DEPTHS IN PRINT ARE ONE-CLOCK VALUES
 

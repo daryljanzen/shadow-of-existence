@@ -1,0 +1,126 @@
+{
+ "p15_lowell_depths_leafrec1": {
+  "sha_before": "1f0440c67cae76424316981718ea6d3ebaca9513393c5e2e01e9add256d30081",
+  "sha_after": "ea771ace7e1d5dc5b3e8627a447ece331bc011b1213a850c944d1e943d00566a",
+  "keys": [
+   "ells",
+   "armA_exact",
+   "armB_frozen",
+   "armB_decoupled",
+   "config",
+   "manifest"
+  ],
+  "arrays_byte_identical": [
+   "ells",
+   "armA_exact",
+   "armB_frozen",
+   "armB_decoupled"
+  ],
+  "config_before": {
+   "instrument": "receipt armA (CAMB) + storyboard_receipts/HIER_photon_hierarchy.py (arm B)",
+   "HIER_blob": "5936a51b83f29fae409c81ce050c8b6e28d0ef4b",
+   "camb": "2.0.4",
+   "H0": 68.57073,
+   "Om": 0.291246,
+   "WBH2": 0.021643,
+   "radiation": "4.15e-5/h^2",
+   "SPLITCLOCK": true,
+   "LEAFREC": true,
+   "ARM": "cr (arm of record); arm A is CAMB with its own recombination",
+   "LEAFSCALES": null,
+   "ZSTART": null,
+   "STACKPERT": null,
+   "VISLEAF": null,
+   "note_defining": "LEAFSCALES/ZSTART/STACKPERT/VISLEAF are ACOUSTIC_two_arm.py switches; neither CAMB nor HIER has them, so each is written out as null."
+  },
+  "config_after": {
+   "instrument": "receipt armA (CAMB) + storyboard_receipts/HIER_photon_hierarchy.py (arm B)",
+   "HIER_blob": "5936a51b83f29fae409c81ce050c8b6e28d0ef4b",
+   "camb": "2.0.4",
+   "H0": 68.57073,
+   "Om": 0.291246,
+   "WBH2": 0.021643,
+   "radiation": "4.15e-5/h^2",
+   "SPLITCLOCK": {
+    "armA_exact": false,
+    "armB_frozen": true,
+    "armB_decoupled": true
+   },
+   "LEAFREC": true,
+   "ARM": "per row: armB_* are HIER on the arm of record (split clock, the cr arm's construction); armA_exact is CAMB on one clock (the leaf rate) and carries no ARM switch",
+   "LEAFSCALES": null,
+   "ZSTART": null,
+   "STACKPERT": null,
+   "VISLEAF": null,
+   "note_defining": "LEAFSCALES/ZSTART/STACKPERT/VISLEAF are ACOUSTIC_two_arm.py switches; neither CAMB nor HIER has them, so each is written out as null.",
+   "clock": {
+    "armA_exact": "one clock: the leaf rate (content-carrying Friedmann rate) for grid, projection, perturbations and recombination -- stock CAMB with its own Recfast (r7691+70.1: H_CAMB/H_leaf = 1 to 0.2%, z = 10..1e5)",
+    "armB_frozen": "split: grid, Hc_of and projection on the stacking rate, ionisation history on the leaf rate (HIER SPLITCLOCK=1)",
+    "armB_decoupled": "split: grid, Hc_of and projection on the stacking rate, ionisation history on the leaf rate (HIER SPLITCLOCK=1)"
+   },
+   "note_r7693": "re-keyed at r7693 (69 approved, r7691+70.1 proposal): SPLITCLOCK and ARM were bank-wide and true of the arm-B rows only; arrays untouched"
+  }
+ },
+ "p15_lowell_depths_distances_leafrec1": {
+  "sha_before": "23f79c3f7b087c5bee641fdbcd7bafab5d37ba4db024274edd364ab89615eed4",
+  "sha_after": "9c07b05767f7d4a7696d54ce19b6405cc8cf8666068e01764efd60c4a0d88ade",
+  "keys": [
+   "ells",
+   "armA_exact",
+   "armB_frozen",
+   "armB_decoupled",
+   "config",
+   "manifest"
+  ],
+  "arrays_byte_identical": [
+   "ells",
+   "armA_exact",
+   "armB_frozen",
+   "armB_decoupled"
+  ],
+  "config_before": {
+   "instrument": "receipt armA (CAMB) + storyboard_receipts/HIER_photon_hierarchy.py (arm B)",
+   "HIER_blob": "5936a51b83f29fae409c81ce050c8b6e28d0ef4b",
+   "camb": "2.0.4",
+   "H0": 68.6,
+   "Om": 0.2973,
+   "WBH2": 0.02237,
+   "radiation": "4.1833e-5/h^2",
+   "SPLITCLOCK": true,
+   "LEAFREC": true,
+   "ARM": "cr (arm of record); arm A is CAMB with its own recombination",
+   "LEAFSCALES": null,
+   "ZSTART": null,
+   "STACKPERT": null,
+   "VISLEAF": null,
+   "note_defining": "LEAFSCALES/ZSTART/STACKPERT/VISLEAF are ACOUSTIC_two_arm.py switches; neither CAMB nor HIER has them, so each is written out as null."
+  },
+  "config_after": {
+   "instrument": "receipt armA (CAMB) + storyboard_receipts/HIER_photon_hierarchy.py (arm B)",
+   "HIER_blob": "5936a51b83f29fae409c81ce050c8b6e28d0ef4b",
+   "camb": "2.0.4",
+   "H0": 68.6,
+   "Om": 0.2973,
+   "WBH2": 0.02237,
+   "radiation": "4.1833e-5/h^2",
+   "SPLITCLOCK": {
+    "armA_exact": false,
+    "armB_frozen": true,
+    "armB_decoupled": true
+   },
+   "LEAFREC": true,
+   "ARM": "per row: armB_* are HIER on the arm of record (split clock, the cr arm's construction); armA_exact is CAMB on one clock (the leaf rate) and carries no ARM switch",
+   "LEAFSCALES": null,
+   "ZSTART": null,
+   "STACKPERT": null,
+   "VISLEAF": null,
+   "note_defining": "LEAFSCALES/ZSTART/STACKPERT/VISLEAF are ACOUSTIC_two_arm.py switches; neither CAMB nor HIER has them, so each is written out as null.",
+   "clock": {
+    "armA_exact": "one clock: the leaf rate (content-carrying Friedmann rate) for grid, projection, perturbations and recombination -- stock CAMB with its own Recfast (r7691+70.1: H_CAMB/H_leaf = 1 to 0.2%, z = 10..1e5)",
+    "armB_frozen": "split: grid, Hc_of and projection on the stacking rate, ionisation history on the leaf rate (HIER SPLITCLOCK=1)",
+    "armB_decoupled": "split: grid, Hc_of and projection on the stacking rate, ionisation history on the leaf rate (HIER SPLITCLOCK=1)"
+   },
+   "note_r7693": "re-keyed at r7693 (69 approved, r7691+70.1 proposal): SPLITCLOCK and ARM were bank-wide and true of the arm-B rows only; arrays untouched"
+  }
+ }
+}
