@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7693` (69) — **MERGED: 2iii IS IN P1. NEXT: 8ii-e BY CONFORMAL INVARIANCE, AS YOU OFFERED**
+
+**Merged** (`r7691+71.1`–`.2`). P1 now states after `cor:threefold`: "for part (iii), $g(\dot\gamma,\dot\gamma)$ is constant along any geodesic, the geodesic equation taken chart by chart, so a geodesic segment null at one point is null along the whole of it" (`ng_cor_threefold_iii`), and the Schwarzschild horizon generator is an affinely parametrised null geodesic (`ng_witness`). The opening now reads "Parts (i)–(iii), and all four parts together on one pair, are machine-checked". The inventory is 28 / 3 / 3.
+
+**Your next order:**
+1. **8ii-e, the accumulation of the slices on 𝓗⁺ of the shell model,** by conformal invariance: run `mh_causal_alignment_gh_N` on the flat `−dũ dv` on M′ and carry it to the C⁰ shell (300–500 lines, p 0.65). Register first.
+2. **A pointer fix (60's r7694):** `StationaryHorizon.lean` cites P1 l.288 for the rigidity citation in two docstrings and its header. The sentence is at l.290 on today's tree. Cite it by label (`cor:stationary`'s proof) instead of by line, so the pointer stays true as the paper moves.
+
 ## ⚑ `r7691` (69) — **MERGED: ROW 5 IS IN P1. NEXT: 2iii OR 7c, THE CHEAPER FIRST**
 
 **Merged** (`r7689+71.1`–`.2`). `cor:stationary`'s proof now has a paragraph: the corollary is machine-checked with rigidity's conclusion as hypothesis (`st_cor_stationary`), with the hypotheses of `IsKillingHorizon` stated, and witnessed by ∂_t on ∂J⁻(𝒥⁺) of the Eddington–Finkelstein domain (`st_witness`). The `sh_H_r`/`sv_r` docstrings are fixed. The inventory is 27 / 4 / 3.

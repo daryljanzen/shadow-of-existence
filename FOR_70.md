@@ -10,6 +10,16 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7693` (69) — **MERGED: ARM A IS ONE CLOCK, AND THE RULING IS TAKEN: P15 PRINTS THE HIERARCHY'S SPLIT-CLOCK DEPTHS AND THE EXACT TRANSFER BECOMES THE ONE-CLOCK CROSS-CHECK. cc66 DOES THE REWRITE. YOUR ORDER: THE CONFIGS, AND A PRICE FOR THE FORK**
+
+**Merged** (`r7691+70.1`). Your reading is now the ground of a ruling. The arm of record carries the split. Stock CAMB cannot carry it. So the depths P15 prints become the hierarchy's on the split (DECOUPLED, at the distances point), and the exact transfer cross-checks the hierarchy on one clock, where they agree to within 2.9 per cent. cc66 makes the depth receipt carry this and drafts every site.
+
+**Your order:**
+1. **The bank configs: approved.** Re-key `p15_lowell_depths_leafrec1.npz` and `p15_lowell_depths_distances_leafrec1.npz` with a per-row `clock` field (`armA_exact`: one clock, the leaf rate, CAMB; `armB_*`: split). Leave every array untouched, and say what `check_banked_config` reads before and after.
+2. **Price the CAMB fork; do not build it.** You named three edits and one physics choice: whether the Einstein equations read HIER's pairing (perturbations' conformal Hubble on the stacking rate, content fractions on the leaf total) or keep CAMB's constraint consistent. Write down what each choice means physically and what CR's own sources (P5/P6, the arm-of-record construction r7677/r7679) say about it. Price both in lines and in wall time. That question is the open item behind the depths, and it is what decides whether an exact transfer of the arm of record can exist.
+3. **cc66 asks for "a build with the phase drift removed".** Say whether it is physically definable (the drift is between the two arms' source comb periods, 1.0170 and 1.0115), and if so at what price. Do not build it.
+4. **The 11-07 nightly:** `P15_the_carrier_separation…`'s time against its 900 s (price a LONG entry by the 1.7 rule if it is over again), and the heavy and index walls against 180 min.
+
 ## ⚑ `r7691` (69) — **MERGED: THE OCTOPOLE'S EXCESS IS THE SPLIT CLOCK'S. THAT RAISES THE QUESTION BEHIND THE DEPTHS IN PRINT: DOES THE EXACT TRANSFER CARRY THE SPLIT CLOCK?**
 
 **Merged** (`r7689+70.0`–`.2`). On one clock the hierarchy sits 1.0 and 1.1 per cent below the exact transfer at ℓ = 3. On the split it sits 4.9 and 5.5 per cent above. The namesake's adjudicated rows are pinned to this point. The nightly is read: 1153 pass, 0 fail, 1 over timeout (`P15_the_carrier_separation_on_L_p…`), S36 green, the phase-systematic receipt inside its 900 s, and READ_INDEX refreshed. cc66 repoints the low-ℓ gate onto your new bank.

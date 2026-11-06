@@ -7,6 +7,26 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7693` (69) — **MERGED AND LANDED: THE LAW'S TWO SENTENCES, AND THE OCTOPOLE ATTRIBUTED TO THE SPLIT. RULING: P15 PRINTS THE ARM OF RECORD'S LOW-ℓ DEPTHS, WHICH CARRY THE SPLIT. YOUR NEXT ORDER IS THAT REWRITE**
+
+**Merged** (`r7691+cc66.0`–`.11`). The 108.4 correction is taken; the r7691 order's 108.9 was your figure from a rounded divisor. All three gate items are done.
+
+**Landed in `corpus/CR_cosmology.tex`:**
+- **Your retention-block sentence**, after "that is why it retains more", as drafted. It stays outside the "Three things the law does not do" list, for the reason you gave.
+- **The summary item at l.2795,** shortened: the law's arm-to-control ratio carries 94.9 per cent of the summed excess and rises at 108.4 per cent of the slope, nothing fitted, so the offset and the rise are one prediction, and it does not give the band-to-band shape.
+- **The octopole:** the scope sentence now says "and it is the two-clock split's: with the split turned off the hierarchy sits 1.0 and 1.1 per cent below the exact transfer there". l.2600 says the excess is "the two-clock split's and not the tower treatment's". Both are pinned by your repointed gate.
+
+**The ruling.** 70 measured that arm A, the exact transfer, runs one clock (the leaf rate for everything), and that stock CAMB cannot carry the split. So the depths in print (0.487, 0.435, 0.359, 0.666, …) are one-clock values, while the arm of record carries the split. One state means the paper prints the arm of record's depths. They exist only on the hierarchy, so:
+- **the depths printed become the hierarchy's on the split, DECOUPLED build, at the distances point:** 0.478, 0.459, 0.358, 0.651, 0.906, 0.982, 0.998, from `p15_lowell_depths_distances_leafrec1.npz`. The scope sentence already names DECOUPLED as the build the depths are read on;
+- **the exact transfer becomes the cross-check, on one clock:** the hierarchy on one clock (70's oneclock bank, DECOUPLED) agrees with it to within 2.9 per cent at every ℓ = 2–8. The split's own shift is +0.029 at the octopole and small elsewhere;
+- **the minimum at ℓ = 4 and the recovery by ℓ = 8** hold on every row.
+
+**Your order:**
+1. **Make `the_low_multipole_depth_gap…` compute and pin the arm of record's depths at ℓ = 2–8** from the split DECOUPLED row, the one-clock cross-validation (worst 2.9 per cent), and **the cosmic-variance likelihood on the new depths**: the Δ(−2 ln L) over 2 ≤ ℓ ≤ 8 and 2 ≤ ℓ ≤ 10, and the per-multipole terms. The paper prints +1.58, and −2.5, +1.0, +2.0, +1.0, on the old depths.
+2. **List every site that prints a low-ℓ depth, that likelihood, or the cross-validation,** in P15 (l.134, the caption and figure `fig:lowL-floor` with its plotted data, l.2600, sec:largescale l.2802–2812, l.2814–2836), in P7 l.778 and in P18 l.1494. Draft each, naming the receipt each figure is pinned in. Say whether the figure needs regenerating, and from what.
+3. **Register first:** which depths move by more than a printed digit, and whether the likelihood's sign pattern (the quadrupole rewarding, ℓ = 3–5 penalising) survives.
+4. **The dip test into `the_phase_systematic…`,** as you priced it (119 → about 156 s), so its licence ("consistent in shape with the systematic's real-phase response, and specific to the measured phase") is citable. Do not draft a sentence past that ceiling.
+
 ## ⚑ `r7691` (69) — **MERGED: `PO-87` ANSWERS YES, AND IT GOES INTO THE PAPER ONCE A RECEIPT COMPUTES IT. NEXT: THAT RECEIPT, THE DIP TEST, AND THREE GATE ITEMS FROM 60 AND 70**
 
 **Merged** (`r7689+cc66.0`–`.2`). The result: a law with no fitted coefficient carries 94.9 per cent of the summed own-comb excess band by band, with six of seven bands inside the statistic's setting spread, and a slope of 108.9 per cent of the measured. This is a real step on the frontier. The offset and the rise are one parameter-free prediction, not two facts. Your licence discipline was right throughout: the band-by-band figure is the measurement and the intercept ratio is two extrapolations, and the dip is not attributed.

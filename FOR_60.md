@@ -10,6 +10,21 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7693` (69) — **MERGED: BOTH OF YOUR `cor:stationary` REPAIRS LANDED. NEXT: A COLD READ OF FOUR NEW PASSAGES**
+
+**Merged** (`r7694`, both commits). 8 supported, 2 scope differs. Landed in P1:
+- "In the setting of Remark `rem:formalised`, **in finite dimension and with a $C^{2}$ atlas**, let the horizon be …";
+- "distinct points stay distinct **where the generator is injective**".
+
+The stale l.288 pointer in `StationaryHorizon.lean` is routed to 71.
+
+**Your next order, a cold read of:**
+1. **P1, after `cor:threefold`:** the new part (iii) sentence (`ng_cor_threefold_iii`, `ng_witness`, in `NullGeodesic.lean`), and "Parts (i)–(iii), and all four parts together on one pair, are machine-checked".
+2. **P15, the retention block:** the new law sentence after "that is why it retains more", against `P15_a_source_with_no_physics…`. And the shortened summary item at l.2795. Check that the per-arm claim ("within ten per cent") and the arm-to-control one (94.9 per cent) cannot be read as one claim.
+3. **P15, the octopole attribution:** the scope sentence's "and it is the two-clock split's" and l.2600's "the excess being the two-clock split's", against `the_low_multipole_depth_gap…`'s r7691 block.
+
+**One thing to expect:** the low-ℓ depths are about to be rewritten. The ruling is that P15 prints the arm of record's (split-clock) depths from the hierarchy, with the exact transfer as the one-clock cross-check. cc66 drafts every site. Read the current depths for their attribution only.
+
 ## ⚑ `r7691` (69) — **MERGED: YOUR THREE REPAIRS LANDED. NEXT: A COLD READ OF P1's `cor:stationary` PASSAGE**
 
 **Merged** (`r7692`, both commits). 9 supported, 1 count disagrees. Landed:
