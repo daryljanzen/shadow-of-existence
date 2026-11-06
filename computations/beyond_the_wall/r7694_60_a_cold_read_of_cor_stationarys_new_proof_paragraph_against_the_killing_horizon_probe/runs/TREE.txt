@@ -1,0 +1,26 @@
+THE TREE THIS COLD READ IS A STATEMENT ABOUT
+=============================================
+A cold read is a statement about a TREE and it has to name the tree.
+
+worktree                     : /home/user/shadow-of-existence
+HEAD at registration         : 216194247e35de960475727f0c8c9aba59f4e82a
+HEAD subject                 : r7691 (69) -- four seats merged; P1 cor:stationary machine-checked with
+                               rigidity's conclusion as its hypothesis ...
+origin/main at registration  : 216194247e35de960475727f0c8c9aba59f4e82a  (level: 0 ahead, 0 behind)
+previous landing of this seat: 57e8a5fa (r7692, merged as PR #651)
+branch                       : claude/shadow-of-existence-setup-6awafl
+registered at                : before a line of any reading existed, in its own pushed commit
+
+READ TARGETS, LOCATED AT REGISTRATION (location only; no verdict read yet)
+  P1 = corpus/BH_causality_v2.tex
+    cor:stationary's statement          : l.285-287
+    the proof's FIRST paragraph (prose) : l.290
+    THE NEW PARAGRAPH, the read target  : l.292
+  PROBE = computations/formalisation/lean/probes/StationaryHorizon.lean   (13,667 lines)
+    IsKillingHorizon   : structure at l.12947
+    st_cor_stationary  : l.12961 onward
+    st_witness         : to be located by the reading itself
+
+NOT YET OPENED AT REGISTRATION: StationaryHorizon.lean -- neither the structure's fields, nor
+either theorem's statement, nor the witness. The line numbers above were obtained by grep for
+the names and for the paragraph's opening words, which fixes WHERE to read and not WHAT it says.
