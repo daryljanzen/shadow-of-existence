@@ -33961,3 +33961,26 @@ abs(_shrsd - SL.std()) < 1e-4
 **⇒ AND COMMITMENT ⑧ CAUGHT SOMETHING BEFORE IT SHIPPED, WHICH IS THE POINT OF WRITING IT DOWN.** The own-comb effective count is **`174.2` against seven bands.** `n_slope = 7(s/σ)²` is a signal-to-systematic ratio shaped like a count: at `9.4` and `17.7` it reads as "nine to eighteen modes", but **above the band count it cannot** — it says the systematic is below the diagnostic's resolution, not that there are 174 modes. ⇒ *So it is routed as a ratio with that stated, not as a mode count.* ⌗ *Three times this round I attached a sound number to a claim it could not support and found out afterwards. This is the first time the check ran before the sentence left.*
 
 **And `l.1786–1787`'s "the rest is that drift" is withdrawn**, not re-digited — the receipt's own NOT CLAIMED says a null injection "does not say what the real spectra's arm difference is", and the amplitude was chosen rather than measured. 69's own edit is kept verbatim.
+
+---
+
+### ⚑ `r7687+cc66.7` — **ITEM 3 IS IN AND ITS PINS ARE FAILABLE, BUT MY OWN VERIFICATION HARNESS GAVE THREE FALSE NEGATIVES FIRST, ALL PRINTING THE SAME NUMBER**
+
+**Item 3 done.** The depth receipt now reads `spectra/p15_lowell_depths_distances_leafrec1.npz` — the bank the six low-ℓ sites are redrafted from and which **nothing under `receipts/` had opened** — and pins the five figures they print: `+5.54`, `+2.33`, `+0.57`, `−4.90`, `−0.67`, each two-sided at printed precision, all exact. Cost `377 s → 377 s`, nothing measurable.
+
+**And it carries two gates the order did not ask for, both forced by my own withdrawal:** one asserting the **conclusion is invariant on this point too** (both builds give minimum ℓ = 4, recovery ℓ = 8), which *extends* the freeze-and-towers clause to a second background instead of contradicting it; and one asserting **what the bank cannot say** — that it cannot name the clock as the octopole's reason, checking directly that the one-clock bank records no point. ⌗ *That second gate expires itself: the moment a one-clock leg at this point exists, it goes red, which is exactly when the claim becomes testable.*
+
+**FAILABILITY CONFIRMED:** perturbing the decoupled row broke **all seven assertions that should break** — five pins, the invariance gate, the cannot-say gate — and left "the bank is present" passing.
+
+**⛔⛔ BUT IT TOOK FOUR ATTEMPTS, AND THE FIRST THREE ALL PRINTED `0 FAILs` FOR DIFFERENT REASONS.**
+
+| attempt | perturbation applied? | what `0 FAILs` actually meant |
+|---|---|---|
+| 1 | **no** — my anchor wrote `_DZ["…"]`, the file has `_DZ['…']` | **nothing was tested at all** |
+| 2 | yes | **I grepped `[FAIL]`; this receipt prints `FAIL`** — seven real failures invisible |
+| 3 (leg B) | yes | **my off-by-one** — index 3 is ℓ = 5, not ℓ = 4; no assertion reads the ℓ = 5 spread, so zero is correct |
+| 4 (leg A) | yes | **7 FAILs** — the real answer |
+
+⇒ ***Three of the four were my own instrument failing, and every one of them looked exactly like a clean pass.*** Only the third was a true zero, and it was true for a reason that had nothing to do with failability.
+
+**⇒ THE COMMITMENT, the ninth, and it is the one I would keep if I could keep only one from this round.** ⑨ **A verification that reports a single number cannot distinguish its own failure modes from its result, so it must assert that it ran: the perturbation applied, the file changed, the token matched, the quantity perturbed is one an assertion reads.** ⌗ *`r7685` was an assertion that could not fail. This was a **check whose pass carried no information** — the same defect one level up, in the thing I was using to find the first.* **And marking the verdict's claim *pending* instead of asserting it is the only reason this was caught rather than published.**

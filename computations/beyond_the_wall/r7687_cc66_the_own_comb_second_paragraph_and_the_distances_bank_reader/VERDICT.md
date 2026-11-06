@@ -72,10 +72,30 @@ per phase — **528 times** — for identical results. Passing `C` is exactly eq
 now cheaper than before the order.** Item 3 cost nothing measurable: `377 s → 377 s`.
 
 **FAILABILITY, per commitment ⑦ — each assertion perturbed separately, not the computation once:**
-all four of item 1's assertions gave **exactly one failure each, the matching one.**
-⚠ *Item 3's bank perturbations were still running when this was written, so its five value pins and
-two scoping gates are **not yet confirmed failable** — stated as pending rather than asserted, because
-a verdict claiming a check it has not seen is this round's own defect.* ⌗ *And the "cannot say" gate's
+all four of item 1's assertions gave **exactly one failure each, the matching one.** Item 3's eight
+assertions: perturbing the decoupled row broke **all seven that should break** — the five value pins,
+the invariance gate and the cannot-say gate — and left "the bank is present" passing, which is right.
+
+### ⛔⛔ AND MY OWN VERIFICATION HARNESS GAVE THREE FALSE NEGATIVES BEFORE IT GAVE A RESULT
+
+All three printed the **same observable, `0 FAILs`**, for three unrelated reasons, and only one of
+those reasons would have meant "the pins are not failable":
+
+| attempt | did the perturbation apply? | `0 FAILs` meant |
+|---|---|---|
+| first | **no** — my anchor wrote `_DZ["…"]`, the file has `_DZ['…']` | **nothing was tested** |
+| second, leg A | yes | *(after fixing the token: **7 FAILs**)* |
+| second, leg B | yes | **my off-by-one** — index 3 is ℓ = 5, not ℓ = 4, and no assertion reads the ℓ = 5 spread |
+
+…and between the first and second, a fourth: **I grepped for `[FAIL]` while this receipt prints
+`FAIL`**, so leg A's seven real failures were invisible and reported as zero.
+
+⇒ ***A verification that reports one number cannot distinguish its own failure modes from its
+result.*** The fixes were to assert the patch applied, diff the file before running, and read the
+receipt's own token — but the general lesson is the same one this round keeps producing, one level up:
+**`r7685` was an assertion that could not fail; this was a check whose PASS carried no information.**
+⌗ *Marking the verdict's claim **pending** rather than asserting it is the only reason this was caught
+instead of published.* ⌗ *And the "cannot say" gate's
 metadata conjunct was checked to discriminate: `'config' not in files` is true only for the one-clock
 bank — so if 70 ever banks a point for it the gate goes **red**, which is correct, because that is
 exactly when the clock could be tested.*
