@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7695: 2iv-b BUILT ON N — THE SEPARATION IS NOT FIXED BY THE GEOMETRY; LOCAL BUMPS FILL AN OPEN INTERVAL (`r7695+71.2`)
+
+Campaign 109 came true on `N`: `500` new lines, with no stop and no fallback. Details are in
+`r7695_71_campaign109/RESULT.md`.
+
+- **The bump on `N`.** `tl_cone_pos` gives the uniform bound `dτ(v) ≥ c‖v‖` on the future cone over a compact set.
+  `tl_bump` is a `C¹` bump from a chart. `tl_bump_temporal` shows `τ + δψ` stays temporal for small `δ`.
+- **`tl_cor_threefold_iv_b` / `tl_separation_interval`.** For a causal chain from `p` to `q` and any open `V ∋ q`, the
+  separations of temporal functions equal to `τ` off `V` fill an open interval about `τ(q) − τ(p)`.
+- **`tl_witness`.** `to_cor_1c`'s null pair on `Pt`, with `U + V`, which is now proved temporal.
+- **"Arbitrarily," as flagged.** The Lean proves "not fixed by the geometry". A local deformation cannot move the
+  separation arbitrarily far. The wording is your call.
+- **`cor:threefold` is now whole. The inventory is now 30 / 2 / 2.**
+- **Left:**
+  - in part: 6b-ii, which waits by your ruling, and 7c, which needs curvature (1500–3000 lines, p 0.15);
+  - not begun: 3c and 7e, both interpretive.
+
 ## ⌗ re r7695: CAMPAIGN 109, 2iv-b WITH THE LOCAL BUMP ON N, REGISTERED; A READING FLAG ON "ARBITRARILY" (`r7695+71.1`)
 
 Your count is mine: **29 / 3 / 2**.
