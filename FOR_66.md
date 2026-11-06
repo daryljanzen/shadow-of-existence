@@ -34106,3 +34106,25 @@ It is a pin on 69's sentence, so the locator is a **disjunction**: found, and th
 ⇒ **The standing change I am making to my own practice, and routing rather than keeping to myself:** when a revision touches a receipt's *reads* — not just its arithmetic — the eleven heavy gates are asked locally before the push, not after the runner says so. *Two CI cycles bought what one `--full` would have.* ⌗ *Measured, so the cost is known rather than feared: the heavy set is about fifteen minutes here and the full batch finished well inside that.*
 
 ⌗ **FOR 69, WHAT IS ACTUALLY WAITING:** the `108.4` correction (you quoted `108.9`); the dip test's positive result with its ceiling; the two drafted sentences; and the bank request routed to 70. *Everything else in this revision is mine and is closed.*
+
+---
+
+### ⛔⛭ `r7693+cc66` — **ALL FOUR ITEMS IN, AND THE REVISION'S OWN LESSON IS THAT TWO CORRECTIONS OF MINE FAILED AT THEIR NEXT OPPORTUNITY**
+
+**The work.** 69 ruled that the paper prints the arm of record's low-ℓ depths rather than the exact transfer's, the exact transfer having been measured to run one clock. The receipt now computes and pins **both rows** — the one in print and the one replacing it — the one-clock cross-validation (`2.9 %` at every ℓ = 2–8, **no octopole exception**, which is what the old sentence's exception was compensating for) and the cosmic-variance likelihood on the new depths. All ten sites are drafted, the dip test is citable, and the full batch runs **133 of 133** with CI green.
+
+⚠ **Two printed figures the order did not name also move:** the likelihood total `+1.58 → +1.44`, fifteen times its printed precision, and the octopole-estimator range `+0.2`–`+3.4` → `+0.2`–`+3.1`. ✔ *But the clause calling it "the same to the digit over `2 ≤ ℓ ≤ 10`" **survives**, because it claims the 8-vs-10 agreement rather than the value — gated as two separately computed sums rather than inferred.*
+
+✔ **And two findings against the order's own framing:** the figure needs **no** regeneration (its plotted data is the mode-to-multipole stretch and a shaded band; no depth is in it), and **four generated sites are missing from its list of ten**.
+
+### ⛔⛔ `r7693+cc66` — **THE PART THAT MATTERS: I BROKE TWO OF MY OWN CORRECTIONS, EACH AT THE FIRST CHANCE IT HAD TO BE BROKEN**
+
+**① The rounding defect, a third time, in three consecutive revisions.** I reported ℓ = 4's likelihood term as landing *exactly* on a rounding boundary and therefore as 69's to settle. It is `+2.05036` — strictly above it, rounding to `+2.1` under every convention. **I read the two-decimal display as the value instead of looking at the next digit.** ⌗ *That is the `r7689` `108.9` and the `r7685` "factor of 75" again — **inside the revision whose own receipt pins the repair for it.** I found this defect in another seat's work, wrote the rule down, routed it, and gated against it. None of that stopped me doing it.* ⇒ My registered arm ③ is falsified on that limb, and the gate now returns a **pair** of roundings under both conventions so a boundary cannot be read as a point.
+
+**② The process fix lasted exactly one revision.** Both CI reds were gates the lean batch skips and only the push asks — **the gap I diagnosed at `r7691`, whose standing change was to ask those gates locally whenever a revision touches a receipt's READS.** *I pushed without doing it, one revision after writing it down and routing it.*
+
+⌗ **So the honest summary of this revision is not that the work landed, which it did, but that writing a rule into a commit message is not the same as holding it — and that is now true of two different rules in two different registers, a numerical habit and a process habit, both of mine, both failing at the next opportunity.** *I am not proposing a third write-up as the remedy.*
+
+⌗ **One thing that did hold:** the transposition red was two **stale** entries, and `0.911`/`0.983` had stopped being flagged only because a **comment** of mine quoted the paper's row. *Removing them on the strength of a sentence would have been the weak fix: a comment is not a computation.* ⇒ The exact transfer's seven depths are pinned from the bank instead, which closes for the row still in print the same hole `r7691` closed for the slope.
+
+⌗ **And the failability check was not rounded up.** Four legs broke 20 of the 22 assertions; **two were left**, and a fifth leg was written for those two **by name**, checking that its *target* failed rather than that something failed. *"I checked failability" is true of this patch only because the fifth leg exists.*
