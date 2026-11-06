@@ -732,6 +732,21 @@ for _l in range(2, 9):
     _mv = _AOR[_l] - _EXA[_l]
     print(f"    {_l:2d}      {_EXA[_l]:.4f}          {_AOR[_l]:.4f}    {_mv:+.4f}      "
           f"{round(_AOR[_l], 3) - round(_EXA[_l], 3):+.3f}")
+# ⛭⛭ `r7693+cc66`, ON `check_marker_transposition` GOING STALE: ** THE EXACT TRANSFER'S SEVEN DEPTHS
+#   ARE PINNED TOO, BECAUSE THEY ARE STILL WHAT THE PAPER PRINTS UNTIL 69 LANDS THE REDRAFT. **
+#   *The gate reported two of its baseline entries STALE -- `0.911` and `0.983` stopped being flagged
+#   as carried-elsewhere once this file mentioned them.  ⛔ **But what made the own group carry them was
+#   a COMMENT of mine quoting the paper's row, and a comment is not a computation**: reword it and the
+#   flags fire again.  ⇒ So the row is pinned from the BANK at printed precision, and the two baseline
+#   entries are removed on that basis rather than on the strength of a sentence.*
+#   ⌗ *This also closes, for the row still in print, exactly the hole `r7691` closed for the slope: a
+#     digit the paper prints that no gate reads.  Both rows are now pinned, the one in print and the
+#     one that replaces it.*
+for _l, _want in ((2, 0.487), (3, 0.435), (4, 0.359), (5, 0.666),
+                  (6, 0.911), (7, 0.983), (8, 0.998)):
+    check(f"\u26ed `r7693` the EXACT TRANSFER's depth at l = {_l} -- what the paper prints TODAY -- "
+          f"is {_want:.3f}", abs(round(_EXA[_l], 3) - _want) < 5e-4,
+          f"{_EXA[_l]:.4f} rounds to {round(_EXA[_l], 3):.3f}")
 for _l, _want in ((2, 0.478), (3, 0.459), (4, 0.358), (5, 0.651),
                   (6, 0.906), (7, 0.982), (8, 0.998)):
     check(f"\u26ed `r7693` the arm of record's depth at l = {_l} is {_want:.3f}",
@@ -786,10 +801,17 @@ for _nm, _got, _want, _tol, _fmt in (
         ("the octopole estimator's high end", _rng[1], 3.09, 5e-3, '.2f')):
     check(f"\u26ed `r7693` {_nm} on the arm of record is {_want:{_fmt}}",
           abs(_got - _want) < _tol, f"{_got:+.3f} against {_want:{_fmt}}")
-check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: the quadrupole still REWARDS, "
-      "l = 3-5 still PENALISE, and there is still nothing above. **  \u21d2 *So `sec:largescale`'s "
-      "'a near-cancellation rather than a uniform cost' reading is the arm of record's too, and not "
-      "only the cross-check's.*  \u26d4 *It does NOT license the total's value, which moves*",
+#: ⛭ `r7693+cc66`, ON `check_unread_figure`: ** THE LABEL NO LONGER ATTRIBUTES A READING TO THE PAPER. **
+#:   *Its first form said "so `sec:largescale`'s 'a near-cancellation rather than a uniform cost'
+#:   reading is the arm of record's too", which is a claim about the paper's prose made by a gate whose
+#:   numbers are all computed here -- and the ratchet was right that such a label goes stale silently
+#:   when the paper moves.  ⇒ Reworded to say what THIS receipt computed, per the gate's own second
+#:   option; what it licenses for the paper is a consequence stated without quoting it.*
+check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: on the arm of record the "
+      "quadrupole still REWARDS, l = 3-5 still PENALISE, and there is still nothing above -- the same "
+      "signs this receipt computes for the exact transfer. **  \u21d2 *So the near-cancellation is a "
+      "property of both rows and not of the cross-check alone.*  \u26d4 *It does NOT license the "
+      "total's value, which moves*",
       _per8[2] < 0 and all(_per8[_l] > 0 for _l in (3, 4, 5))
       and all(abs(_per8[_l]) < 0.1 for _l in (6, 7, 8)),
       f"l = 2 {_per8[2]:+.2f}; l = 3-5 {_per8[3]:+.2f} {_per8[4]:+.2f} {_per8[5]:+.2f}; "
