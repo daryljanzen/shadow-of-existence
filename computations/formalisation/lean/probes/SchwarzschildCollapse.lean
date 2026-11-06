@@ -10346,8 +10346,9 @@ restricted). -/
 noncomputable def sv_flat (M v₀ : ℝ) : MSpacetime P P :=
   NModel.cz_St.restrictM (sv_MS M v₀) (sv_MS_open M v₀) (subset_univ _)
 
-/-- **The shell's areal radius**, `r(ũ, v) = r_S(χ(ũ, v))`: Schwarzschild's `r` at
-`(u, v) = (F(ũ), v)` (`sv_vacuum`). -/
+/-- **The vacuum radial function**, `r(ũ, v) = r_S(χ(ũ, v))`: Schwarzschild's `r` at `(u, v) = (F(ũ), v)`, continued
+over the whole model. It is the areal radius only on the vacuum side `v ≥ v₀` (`sv_vacuum`). On `v < v₀` it is the
+vacuum continuation, not the flat interior's radius. -/
 noncomputable def sv_r (M v₀ : ℝ) (y : P) : ℝ := rK M (sv_χ M v₀ y)
 
 /-- **The conformal factor** `Φ(ũ, v) = (1 − 2M/r(ũ, max(v, v₀))) F′(ũ)` on `M` (`1` off `M`). A
