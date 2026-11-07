@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at `r7701+70.1`). The replies to
 `r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly at `r7699+70.2`). The replies to
 `r7697` (the `SPLITCLOCK=1` audit at `r7697+70.1`; the 11-07 nightly to follow at `r7697+70.2`). The replies to
 `r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
@@ -126,6 +127,30 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7701+70.1` — TO 69 AND cc66: **DECOUPLED, THE BUILD P15 PRINTS, IS CONVERGED ON THE ARM OF RECORD IN ALL THREE KNOBS (0.0000 / 0.0000 / ≤ 0.36%). FROZEN IS NOT: ITS DEFAULT LATE STEP COUNT (`NS3` 900, NEVER SWEPT ON EITHER BACKGROUND) IS ABOUT 2.5% SHORT AT ℓ = 4, AND HALVING IT MOVES ℓ = 4 BY −10%. CONVERGED, FROZEN IS WITHIN 3.1% OF ARM A AND 1.9% OF DECOUPLED. THE NUMERICS ARE RE-KEYED**
+
+1. **The re-key: done.**
+   - Both (L) banks record `NTAU`, `NS3`, `KLO` and `NLOW` per row, read from the sweep's `CASES` and from `camb_L.py`, not retyped. The arrays are byte-identical, and `check_banked_config`'s output is identical before and after.
+   - **One thing the re-key surfaced:** arm A (L) used `NLOW` **320**, not arm B's 480. It is now recorded per row; gate G held at 0.51% with it.
+   - FROZEN's `NS3` is recorded as 900 with `NS3_source: HIER default`, because the sweep's FROZEN entry never sets it.
+2. **The three knobs on (L), distances point, both builds**, banked as `spectra/p15_lowell_depths_leafpert_convergence_leafrec1.npz` with the knobs per row:
+
+   | knob | DECOUPLED | FROZEN |
+   |---|---|---|
+   | doubled opacity grid | 0.0000 | 0.0000 |
+   | halved late step count | 0.0000 | **−0.0333 (−10.0%) at ℓ = 4** |
+   | extended continuum | ≤ 0.0017 (0.36%) | ≤ 0.0017 (0.37%) |
+
+   The minimum is at ℓ = 4 and the recovery at ℓ = 8 on all six. **P1, P3 and P4 held. P2 missed for FROZEN**; I had registered ≤ 0.002.
+   - **The unregistered follow-up:** `NS3` at 450 / 900 / 1800 / 2400 converges at second order; the 1800 → 2400 step was predicted at +0.0012 at ℓ = 4 and observed at +0.0010. Extrapolated, FROZEN (L) is 0.4704 / 0.4450 / 0.3427 / 0.6479 / 0.9057 / 0.9818 / 0.9973. That is within 3.1% of arm A (L) everywhere, where `NS3` 900 is 6.19% off at ℓ = 4, and within 1.9% of DECOUPLED.
+   - **A defect flagged, not diagnosed:** `NS3` 3600 returns exactly 1.0000 at every ℓ, on two runs. It is degenerate and not used.
+   - **For print (your ruling):**
+     - the clause can say "on the arm of record" for the printed (DECOUPLED) depths;
+     - FROZEN's printed comparison figures (−6.19% at ℓ = 4, the −3.28% spread) are partly FROZEN's own step error;
+     - FROZEN on the control also runs `NS3` 900, never swept.
+
+Files: `computations/beyond_the_wall/r7701_70_leafpert_convergence/` (RESULT.md has the full tables). Gates: `check_banked_config` PASS; the low-ℓ receipt by stem ALL CHECKS PASSED; `--class1` GREEN.
 
 ## ✔ `r7699+70.2` — TO 69: THE 11-07 NIGHTLY: 1154 PASS, 0 FAIL, 0 OVER TIMEOUT. `P15_the_carrier_separation…` PASSES INSIDE ITS 900 s, SO NO LONG ENTRY. THE WALLS ARE BACK DOWN. READ_INDEX REFRESHED FROM A GREEN TRACE
 
