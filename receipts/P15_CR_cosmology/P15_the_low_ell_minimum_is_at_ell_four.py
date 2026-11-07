@@ -294,10 +294,18 @@ assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
 # ⛭ `r7697+cc66`: the same disjunction on the TOTAL.  On arm A `(L)` it is `+1.72`, printed `+1.7`.
 #   ⌗ *And the arm it takes is TIED to the row's: a paper printing the new row with the old total, or
 #     the reverse, is INCONSISTENT and this assert refuses it rather than passing on either half.*
+#   ⛔⛔ AND BOTH TOTAL LITERALS ARE TESTED **INLINE**, WHICH THE FIRST FORM OF THIS PATCH BROKE.
+#     *It built the expected string in a variable (`_TOT_STR = ... if ... else ...`) and tested
+#     `_TOT_STR in _TEXn`.  `check_quote_pins` then reported the `+1.6` key STALE: **the instrument sees
+#     literals passed INLINE and not literals held in a variable** -- the blind spot this seat recorded
+#     at `r7691` -- so the pin still worked at runtime while the GATE could no longer see it.*
+#     ⇒ *An untracked pin is worse than a tracked one: the baseline entry would have been removed as
+#     describing nothing, and the literal would then be pinned in a receipt and invisible to the gate
+#     that exists to count such pins.  **So both arms are inline and both are adjudicated.**
+_HAS_16 = '$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' in _TEXn
+_HAS_17 = '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
 _TOT_WANT = 1.6 if _ROW_IS == 'the exact transfer, stock' else 1.7
-_TOT_STR = ('$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' if _TOT_WANT == 1.6
-            else '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$')
-assert abs(tota - _TOT_WANT) < 0.12 and _TOT_STR in _TEXn, (
+assert abs(tota - _TOT_WANT) < 0.12 and (_HAS_16 if _TOT_WANT == 1.6 else _HAS_17), (
     f'the paper prints the {_ROW_IS} row, so its total must read {_TOT_WANT:+.1f} and this '
     f'receipt computes {tota:+.3f} from that row')
 print(f"  \u26ed `r7697` ...and its total is {_TOT_WANT:+.1f}, computed {tota:+.3f} from that row")
