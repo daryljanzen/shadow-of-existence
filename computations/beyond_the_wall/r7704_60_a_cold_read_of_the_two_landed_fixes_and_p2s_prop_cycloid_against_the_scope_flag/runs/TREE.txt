@@ -1,0 +1,62 @@
+THE TREE THIS REVISION READS
+============================
+
+  HEAD                     84fb2b59   r7701 (69) -- four seats merged; cc66's dip
+                                      counterfactual ...
+  origin/main              84fb2b59   the same commit; this branch was fast-forwarded onto it
+                                      before a line of this revision was written
+  registration commit      1c860464   r7704 PREDICTION.md, pushed before probe.py existed
+
+Every line number and character offset in this revision is a claim about 84fb2b59 and no other
+tree.
+
+THE ORDER'S OWN POINTERS, CHECKED
+---------------------------------
+r7701 names three sites by number: P15's `l.2612` (the repaired row) and `l.2903` (the row to
+compare it against), and P2's `prop:cycloid` by LABEL rather than by line.  On this tree:
+
+  • `l.2612` is the repaired sentence, found by the string "the octopole penalises it at";
+  • `l.2903` does print the row, and it is the site this probe's FIRST reader could not see --
+    recorded under the probe's self-caught defects, because the figure there sits inside a
+    larger math expression rather than alone between dollars;
+  • `prop:cycloid` is delimited by its own `\begin{proposition}[Lemaitre--Tolman cycloid form]`
+    and `\end{proposition}`, and its proof by the `proof` environment that follows it.
+
+THE MEASURED OBJECTS
+--------------------
+  corpus/CR_cosmology.tex                         read (the two landed fixes and every site that
+                                                  prints the per-multipole row)
+  corpus/janzen_circle_v3.tex                     read: the proposition, its proof, its remark,
+                                                  and every site that cites or USES it, found by
+                                                  reference AND by content.  At registration this
+                                                  file was unopened beyond two grep hits.
+  receipts/P15_CR_cosmology/P15_the_low_multipole_
+    depth_gap_closes_and_two_defects_were_
+    cancelling.py                                 read for its gate wants; not re-run, because
+                                                  nothing it computes changed on this tree and
+                                                  the standing rule is to re-run only on a tree
+                                                  that actually changed
+
+THE COMPUTATION THIS REVISION MAKES ITSELF
+------------------------------------------
+71's flag is CHECKED rather than accepted.  The interior proper time from the horizon to r = 0 is
+integrated here for the general radial geodesic, dtau = dr / sqrt(E^2 - 1 + 2M/r), under the
+substitution r = r_max sin^2(theta) that removes the turning-point singularity analytically:
+
+    E      r_max        interval
+    0.00   2.000 M      3.141593 M   (= pi M to 5e-15, the paper's figure)
+    0.25   2.133 M      2.370868 M
+    0.50   2.667 M      1.891199 M
+    0.75   4.571 M      1.566498 M
+    0.90  10.526 M      1.418173 M
+    1.00   unbounded    1.333333 M   (= 4/3 M, the from-rest-at-infinity member)
+    1.20   unbounded    1.189787 M
+
+So the printed pi M is the E = 0 member's, it is the largest of the seven values computed here,
+and the family's value falls monotonically across them.  (Seven points are seven points: this is
+a measurement of the family at those values, not a proof that pi M is the supremum.)
+
+NOT TOUCHED BY THIS REVISION
+----------------------------
+Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is modified.  The diff is
+this directory plus one appended paragraph in FOR_66_FROM_60.md.
