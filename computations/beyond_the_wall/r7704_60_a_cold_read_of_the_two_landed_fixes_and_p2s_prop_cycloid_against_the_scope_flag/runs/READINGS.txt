@@ -1,0 +1,76 @@
+G2 self-probe: accepted, accepted, accepted, REFUSED
+
+==============================================================================================
+ITEM 1 -- the two landed fixes, and the per-multipole row across every site
+==============================================================================================
+arm 1a -- l.2612's repaired row, each figure against the receipt's own gate:
+  the site located by its text: FOUND
+  l2  in print -2.6   against the order's -2.6  and the gate -2.56  (the quadrupole's reward)
+  l3  in print +0.9   against the order's +0.9  and the gate +0.93  (the octopole's penalty)
+  l4  in print +2.2   against the order's +2.2  and the gate +2.16  (l = 4's penalty)
+  the structural claim "largest single-multipole penalty at l = 4": the gated terms make the largest +2.16 at l4
+
+arm 1b -- THE ORDER'S CHECK: the row at every site that prints it, same quantity side by side:
+  l.2612  l2=-2.6  l3=+0.9  l4=+2.2
+  l.2814  l2=-2.6  l3=+0.9  l4=+2.2  l5=+1.1
+  l.2903  l2=-2.6  l3=+0.9  l4=+2.2
+  3 site(s) print two or more terms of the row.
+  any multipole printed with two different values across those sites: none
+  NEGATIVE PROBE (one site's octopole term altered on a copy): the reader sees ['+0.9', '+1.0']
+
+arm 1c -- the doubled-opacity clause as landed, and the build it now names:
+  the clause, located by its text: FOUND
+  it names the build the convergence was measured on: YES
+  the old wording, which attached it to the agreement, is gone: YES
+  and the receipt's knob sweeps are computed on: ['DECOUPLED_control_KLO_0_1_NS3_60000', 'DECOUPLED_control_NS3_30000', 'FROZEN_control_KLO_0_1', 'FROZEN_control_NTAU_300000', 'FROZEN_control_default_cut_z_53_5_KLO_0_1']
+  every one of those banks a CONTROL bank, which is what the clause now says: YES
+
+==============================================================================================
+ITEM 2 -- P2's prop:cycloid against 71's scope flag
+==============================================================================================
+the proposition located by its own environment: FOUND (567 characters)
+its proof: FOUND (879 characters)
+
+arm 2a -- the proposition's own statement, read for a restriction:
+  how it names its object: "a radial timelike geodesic"
+  restriction markers in the STATEMENT: NONE
+  restriction markers in the PROOF: NONE
+  restriction markers anywhere in P2: NONE
+  what the proof's own first relation is: dtau^2 = dr^2/(2M/r - 1)
+  NEGATIVE PROBE 17, the scope reader on both classes: injected restriction -> ['E = 0'] ; injected general -> NONE
+
+arm 2b -- the amplitude the paper writes, and the flag's general form:
+  r(eta): r(\eta) = M(1 + \cos \eta)
+  tau(eta): \tau(\eta) = M(\eta + \sin \eta)
+  the interval it states: \tau(\pi) - \tau(0) = M\pi
+  so the paper's amplitude is 2M (r runs from 2M at eta = 0 to 0 at eta = pi): YES
+
+arm 2e -- the flag checked at its own limit, by computing rather than by quoting:
+  the flag says the general amplitude is 2M/(1 - E^2); at E = 0 that is 2.000000 M
+  and the paper's amplitude, read above, is 2M -- so flag and paper AGREE at E = 0: YES
+  computed here: the E = 0 interval is 3.141593 M against the paper's pi M = 3.141593 M (relative difference 4.81e-15)
+  and the E = 1 interval (from rest at infinity) is 1.333333 M against 4/3 M = 1.333333 M
+  ⇒ so the printed interval is the E = 0 member's, larger than the E = 1 member's by a factor 2.36
+  FLIP (G3), the same integral at E = 0.5: 1.891199 M, which is neither pi M nor 4/3 M: as it must be
+
+arm 2c -- every site that cites or USES the proposition, found by reference AND by content:
+  l.136   uses the interval                             subject: (not one of the named subjects)    own context restricts: no
+  l.168   cites the label                               subject: (not one of the named subjects)    own context restricts: no
+  l.458   uses the interval                             subject: The infalling worldline            own context restricts: no
+  3 using site(s) found; 3 of them with no restriction in their own context.
+
+----------------------------------------------------------------------------------------------
+arm 1a : SUPPORTED -- the three repaired figures are in print and each matches the receipt's gate, and the structural claim still holds of the new row
+arm 1b : SUPPORTED -- 3 site(s) print two or more terms and no multipole is printed with two different values
+arm 1c : SUPPORTED -- the clause names the build its convergence was measured on and the old wording is gone; every bank the sweeps use is a control bank
+arm 2a : THE STATEMENT READS AS GENERAL -- restriction markers in the statement: none; in the proof: none; anywhere in P2: none
+arm 2b : SUPPORTED -- the paper writes r = M(1 + cos eta), tau = M(eta + sin eta) and the interval pi M
+arm 2c : EVERY USING SITE READS AS GENERAL -- 3 using site(s), found by reference and by content
+arm 2e : SUPPORTED -- the flag and the paper agree at E = 0 (amplitude 2M, interval pi M computed here), and the E = 1 member's interval is 4/3 M, so the printed figure is the E = 0 member's
+
+THE ORDER'S QUESTION (arm 2d), computed from 2a and 2c and from nothing else:
+  P2 READS AS GENERAL -- the restriction is absent from every one of the 11 markers searched over the statement, the proof and the whole file, and every using site inherits that
+
+==============================================================================================
+7 verdicts printed.  0 reader or classifier probe(s) failed.
+==============================================================================================
