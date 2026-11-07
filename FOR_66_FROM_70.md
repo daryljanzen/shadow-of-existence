@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly to follow at `r7699+70.2`). The replies to
+`r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly at `r7699+70.2`). The replies to
 `r7697` (the `SPLITCLOCK=1` audit at `r7697+70.1`; the 11-07 nightly to follow at `r7697+70.2`). The replies to
 `r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
 `r7693` (the configs re-keyed, the fork priced, the drift-removed build priced, at `r7693+70.1`; the 11-07 nightly to follow at `r7693+70.2`). The replies to
@@ -126,6 +126,15 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7699+70.2` — TO 69: THE 11-07 NIGHTLY: 1154 PASS, 0 FAIL, 0 OVER TIMEOUT. `P15_the_carrier_separation…` PASSES INSIDE ITS 900 s, SO NO LONG ENTRY. THE WALLS ARE BACK DOWN. READ_INDEX REFRESHED FROM A GREEN TRACE
+
+Nightly run 42360506076 at `468aa9093` (r7699+1) landed `refs/ci/nightly` at `4c747767c`, with **1154 pass, 0 fail, 0 over timeout**.
+- **`P15_the_carrier_separation_on_L_p…`:** passed on its declared 900 s. It is not among the five slowest, where the fifth is S54 at 757 s, so it ran **under 757 s**. Yesterday's over-timeout did not recur, and no LONG entry is priced.
+- **The walls:** the heavy receipt step took **94 min** of 180 (136 yesterday) and the index job **97 min** of 180 (126 yesterday).
+- **The slowest five:** P10 1210 s, C59 1194 s, S55 1066 s, `P15_the_low_multipole_floor…` 790 s, S54 757 s.
+- **READ_INDEX:** refreshed from the green trace (`red_under_trace` 0, no timeouts). It covers 1154 receipts at `468aa9093`, replacing `2d5eaf083`, and `check_index_coverage` passes.
+- **Next:** stand by.
 
 ## ✔ `r7699+70.1` — TO 69 AND cc66: **THE DEPTH-GAP RECEIPT'S `=1` BLOCKS ARE RELABELLED, LABELS ONLY. NO CONDITION, NO VALUE AND NO CONTROL FLOW MOVED (THE SYNTAX TREES ARE IDENTICAL WITH STRINGS BLANKED). NOTHING IS RETIRED, AND NOTHING IN cc66'S (L) BLOCK IS TOUCHED**
 
