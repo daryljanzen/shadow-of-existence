@@ -10,6 +10,51 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7699 ②: THE NEXT PAPER — I PROPOSE P2 (`janzen_circle_v3`); INVENTORY AND A FIRST CAMPAIGN REGISTERED, TO START ON YOUR APPROVAL (`r7699+71.2`)
+
+The survey is in `r7699_71_survey/SURVEY.md`. It maps every paper number to its file: P2 = `janzen_circle_v3`,
+P3 = `SdS-slicing-curve_v2`, P7 = `CR_framework`, and so on. It also scores every paper that states results.
+
+***Why P2.***
+- Its statements cover the Schwarzschild interior, the `E = 0` radial geodesic, Kruskal's four regions and the
+  Kretschmann scalar. All of them land on what P1 built: `sk_`, `ng_` and `kr_schwarzschild`.
+- Its 8 statements split into **22 rows**: 7 BUILT IN PART at chart level, 13 NOT BEGUN and 2 interpretive. The
+  total is about 2300–4300 lines.
+
+***Why not P3 (SdS), the close second.*** About 10 of its 15 statements are polynomial or trigonometric identities on
+the horizon cubic, with no Lorentzian content, and much of it is already checked at receipt level. It could run
+alongside. The survey also flags two scope points in P3: `prop:involution`'s interval, and `prop:curvature`'s sign
+where `f < 0`.
+
+***A reading flag in P2.*** `prop:cycloid` holds only for the `E = 0` radial geodesic. A general `E` gives amplitude
+`2M/(1 − E²)`.
+
+***Campaign 111 is registered, not started.***
+- **Rows:** 7a–7e, 3 and 8a, which are `prop:Kretschmann`, `prop:critical` and `cor:Kretschmann_at_z0`.
+- **Content:** `K = 3/(4M⁴)` at the bifurcation sphere, `K = 48/(M⁴(1 + cos η)⁶)` inside, a pole of order 12 at `π`,
+  and the general "non-degenerate zero to order −12" lemma.
+- **Price:** `700` lines at p `0.75`, or p `0.85` with the real-limit fallback.
+- **Status:** it waits on your choice of paper.
+
+## ✔ re r7699 ①: P1'S INVENTORY CLOSED — 31 / 1 / 2, EVERY CITED NAME FOUND (`r7699+71.1`)
+
+The final refresh is `r7699_71_inventory/INVENTORY.md`. It reads P1 at `0a16a59a` and the probes through campaign 110.
+
+- **Counts.** **31 BUILT / 1 BUILT IN PART / 2 NOT BEGUN**, which matches yours.
+  - 6b-ii waits by your r7669 ruling (2500–6000 lines).
+  - 3c and 7e are interpretive. 7e would need a stress-energy.
+- **The strict-2D reading is 23 / 9 / 2.** Eight rows rest on the radial plane: 3a, 3b, 7c, 7d, 8i, 8ii-a, 8ii-b and
+  8ii-e.
+- **Every row** gives its label and current line, its mark, and its carrying theorems with their probes.
+- **The P1-name cross-check finds no mismatch.** P1 cites 72 distinct names in 74 places. Each is declared in the probe
+  P1 names, or, where P1 names none, in the nearest one before it. I re-ran the sweep: the only apparent misses are
+  `cz_$\Omega$_sq` and `cz_$\Omega$_nonconst`. These are LaTeX for `cz_Ω_sq` and `cz_Ω_nonconst`, which are declared.
+- **One note.** `mc_witness_tangency_fails` (l.317) is the one name for which P1 gives no probe. It is in
+  `ConformalBoundary.lean` and `ConeDisjoint.lean`, the nearest probes before it.
+- **The readings P1 now prints** are recorded with their rows: 2i, 2iv-b, 5, 7c, 7d, and the radial plane.
+
+② (the next paper) follows as its own entry once the survey is in.
+
 ## ✔ re r7697: 7c BUILT, ALL FIVE STAGES — KRETSCHMANN = 48M²/r⁶ BY HAND, DIVERGING ON A LOCUS IN THE BLACK-HOLE REGION AND OFF EVERY SLICE (`r7697+71.2`)
 
 Campaign 110 came true: `999` new lines, with no stop at ③ and no fallback. Details are in
