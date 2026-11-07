@@ -13,9 +13,10 @@ the Monte Carlo is checked against the closed law.
 
 Result (PO-90, measured by 70 at r7465, computations/beyond_the_wall/r7465_70_PO90_cosmic_variance/,
 prediction registered 305237dfd before any draw; struck r7469):
-  p_CR   = 0.054 central  (0.017 .. 0.155 across the bracket;  0.082 at f_sky = 0.78, exact)
-  p_LCDM = 0.067 central,   so p_CR / p_LCDM = 0.81
-  the floor's C2/C3 = 1.12, which is the whole of the fifth it costs.
+  p_CR   = 0.056 central  (0.018 .. 0.160 across the bracket;  0.084 at f_sky = 0.78, exact)
+  p_LCDM = 0.067 central,   so p_CR / p_LCDM = 0.83
+  the floor's C2/C3 = 1.10, which is the whole of the sixth it costs.
+  (r7701, 69: on the depths P15 now prints, the exact transfer under the arm of record's pairing.)
 So the selective suppression is the sky's own low quadrupole, carried by LCDM at the same size; it is
 not a shape this construction fails to produce.
 
@@ -61,17 +62,17 @@ mc = p_mc(CR[2], CR[3], R_OBS['central'], 1.0, 10**6, rng)
 
 print(f"  p_CR central {pc:.4f}  bracket {lo:.4f}..{hi:.4f}  cut sky {cut:.4f}  p_LCDM {pl:.4f}  ratio {pc/pl:.3f}")
 check(abs(mc - pc) < 3 * np.sqrt(pc * (1 - pc) / 10**6), "Monte Carlo agrees with the exact F(5,7) law")
-check(abs(pc - 0.054) <= 0.0005, "p_CR central is 0.054")
-check(abs(lo - 0.017) <= 0.0005 and abs(hi - 0.155) <= 0.0005, "bracket 0.017 .. 0.155")
-check(abs(cut - 0.082) <= 0.0005, "cut-sky p (f_sky = 0.78) is 0.082")
+check(abs(pc - 0.056) <= 0.0005, "p_CR central is 0.056")
+check(abs(lo - 0.018) <= 0.0005 and abs(hi - 0.160) <= 0.0005, "bracket 0.018 .. 0.160")
+check(abs(cut - 0.084) <= 0.0005, "cut-sky p (f_sky = 0.78) is 0.084")
 check(abs(cut_mc - cut) < 3 * np.sqrt(cut * (1 - cut) / 10**6), "cut-sky Monte Carlo agrees with its exact law")
 check(abs(pl - 0.067) <= 0.0005, "p_LCDM central is 0.067")
-check(0.80 <= pc / pl <= 0.81, "p_CR / p_LCDM = 0.81 (exact 0.805, Monte Carlo 0.807): a fifth less probable")
-check(round(CR[2] / CR[3], 2) == 1.12, "floor C2/C3 = 1.12, from the depths P15 prints")
+check(0.825 <= pc / pl <= 0.84, "p_CR / p_LCDM = 0.83: a sixth less probable")
+check(round(CR[2] / CR[3], 2) == 1.10, "floor C2/C3 = 1.10, from the depths P15 prints")
 check(pc >= 0.05, "the row's termination threshold (p >= 0.05 at the central sky) is met")
 
 flat = re.sub(r'\s+', ' ', TEX)
-for s in ('$p=0.054$', '$p=0.067$', '$1.12$', 'the sky\'s own'):
+for s in ('$p=0.056$', '$p=0.067$', '$1.10$', 'the sky\'s own'):
     check(s in flat, f"P15 states {s}")
 check('remains unaccounted for' not in flat, "P15 no longer calls the selective suppression unaccounted for")
 
