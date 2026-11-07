@@ -10,6 +10,39 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7701: CAMPAIGN 111 — ALL SEVEN ROWS BUILT. P2'S `prop:Kretschmann`, `prop:critical` AND `cor:Kretschmann_at_z0` ARE MACHINE-CHECKED IN THEIR FORMAL PARTS; `prop:cycloid` QUOTED FOR 60 (`r7701+71.1`)
+
+The result is in `r7699_71_campaign111/RESULT.md`, and the probe is `probes/CircleKretschmann.lean`.
+- **The build:** zero errors and zero warnings, `507` axiom lines all standard (`25` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `306` new lines against `700` registered, at p `0.75`. The expected stop did not occur, because Mathlib reads
+  analytic order off the iterated derivatives. No fallback was used.
+
+***What is built.***
+- **7e, `ck_chain_rule`:** `h` analytic with `h = h′ = 0` and `h″ ≠ 0` at `z₀` makes `c/h⁶` have order exactly `−12`.
+  This holds over `ℝ` and over `ℂ`.
+- **7c, `ck_pole_pi'`:** `48/(M⁴(1 + cos z)⁶)` has a pole of order exactly `12` at `π`.
+- **7d:** at `0` the order is `0`, the function is bounded by `48/M⁴` on `(−π/2, π/2)`, and its value is `3/(4M⁴)`.
+- **Row 3, `ck_prop_critical`:** the critical points are exactly `πℤ`, with `r = 2M`, `r″ = −M` at `2kπ`, and
+  `r = 0`, `r″ = M` at `(2k + 1)π`. All are non-degenerate, and `0 ≤ r ≤ 2M`.
+- **8a, `ck_mislabel`:** label the maximum `0` and the pole of order 12 moves to `z = 0`.
+- **7a and 7b,** on `kr_schwarzschild`, the chart's own curvature:
+  - `ck_horizon`: `K = 3/(4M⁴)` on `UV = 0`, and so at the bifurcation sphere;
+  - `ck_interior`: `K = 48/(M⁴(1 + cos η)⁶)` wherever `r = M(1 + cos η)`;
+  - the witness: every `η` with `1 + cos η ≠ 0` is reached with `UV ≥ 0`.
+- **Headlines:** `ck_prop_Kretschmann` and `ck_cor_Kretschmann_at_z0`.
+
+***`prop:cycloid`, quoted exactly in RESULT.md for 60.*** Its hypotheses are the interior `r ∈ (0, 2M)`, "a radial
+timelike geodesic" and `η ∈ [0, π]`. The energy `E` is not stated.
+- **The proof's first line assumes `E = 0`:** it writes `dτ² = dr²/(2M/r − 1)`.
+- **When `0 < E² < 1`,** the maximum radius is `2M/(1 − E²)`, which is greater than `2M`. Neither `r(0) = 2M` nor the
+  time `Mπ` holds.
+- **When `E² ≥ 1`,** the solution is not a cycloid.
+- **Fix:** state `E = 0`, the geodesic at rest at the bifurcation sphere.
+
+***P2's inventory:*** 7 of 22 rows BUILT. Not built: the other 15. Next, on your order: the cycloid rows (`prop:cycloid`
+with `E = 0` stated) or the four-region continuation.
+
 ## ⌗ re r7699 ②: THE NEXT PAPER — I PROPOSE P2 (`janzen_circle_v3`); INVENTORY AND A FIRST CAMPAIGN REGISTERED, TO START ON YOUR APPROVAL (`r7699+71.2`)
 
 The survey is in `r7699_71_survey/SURVEY.md`. It maps every paper number to its file: P2 = `janzen_circle_v3`,
