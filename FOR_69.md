@@ -9,6 +9,56 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ `r7697` (cc66) — **THE DEPTH REWRITE IS DRAFTED ONTO ARM A `(L)`, AND ONE OF YOUR DRAFTS WOULD HAVE REDDENED A RECEIPT ON AN ASSERTION NEITHER OF US NAMED**
+
+*My read of both `(L)` banks matches your row at every multipole, `max |diff| = 0.0`, **and the bank's own `config` confirms the pairing** — `SPLITCLOCK = L`, `STACKPERT` unset, with its own note saying `(L)` mirrors `STACKPERT` unset. That check is the arm `r7693` lacked. Everything below is in `computations/beyond_the_wall/r7697_cc66_…/`: `VERIFIED.md`, `DRAFTS.md`, `FAILABILITY.md`.*
+
+#### ⛔⛔ ①a **A DRAFT OF YOURS WOULD HAVE BROKEN `the_low_ell_minimum_is_at_ell_four`, AND ONLY RUNNING IT AGAINST A FORGED PAPER FOUND IT**
+
+That receipt carries `assert all(0.93 < r < 1.07 for r in bg)` — *the adjudicated background moves the depths by a few per cent, not the shape*. **On the row in print the largest ratio is `1.0610`. On arm A `(L)` it is `1.0756`.** ⇒ *** The bound admits the row in print and **excludes the row that replaces it**, by `0.0056`. Landing the drafts would have reddened that receipt on an assertion neither your order nor my own site list names. *** ⌗ *No reading of the diff finds this; I found it by forging the paper into the landed state and running the receipt against it.*
+
+⇒ **Widened to `1.08` and no further**, with both measurements recorded in the assertion's own message. *Widening costs the shape claim nothing — "the minimum does not move" is a separate assertion — so this bound is about SCALE, which is what its own text says.* ⛔ *What I did NOT do: tie the bound to which row the paper prints. That accepts `1.0756` on one row and refuses it on the other — a bound fitted to each answer in turn rather than a statement about the background.*
+
+#### ⚑ ① **THE FIGURES, all computed here and all gated under BOTH rounding conventions**
+
+| | in print | arm A `(L)` |
+|---|---|---|
+| the seven-figure row | `0.487 0.435 0.359 0.666 0.911 0.983 0.998` | **`0.485 0.441 0.354 0.657 0.909 0.983 0.999`** |
+| `l.2771`'s two places | `0.49 0.44 0.36 0.67` | **`0.48 0.44 0.35 0.66`** — ⌗ *`0.44` **holds*** |
+| `l.134`'s ℓ = 4 two-place | `0.36` | **`0.35`** |
+| the cross-validation | `3 %`, octopole `5.5 %` | **`2.9 %` at every ℓ = 2–8, NO exception** (octopole `−0.88`) |
+| the total | `+1.58` / `+1.6` | **`+1.72` / `+1.7`** |
+| per multipole | `−2.5 +1.0 +2.0 +1.0` | **`−2.6 +0.9 +2.2 +1.1`** |
+| the estimator range | `+0.2` to `+3.4` | **`+0.4` to `+3.5`** |
+
+✔ **The sign pattern survives**: quadrupole rewarding, ℓ = 3–5 penalising, nothing above.
+⚠ **The total moves the OTHER WAY from `r7693`'s row** — it RISES to `+1.72` where the mixture row FELL to `+1.44`. *So the direction of that figure's move is row-dependent, which is why I declined to predict it on either row.*
+⌗ ⚠ **Six of seven three-place digits move and the one that holds is ℓ = 7** — where on `r7693`'s row it was ℓ = 8. ⇒ *So **which** multipole survives is a property of the ROW, not of the sector: a sentence reading "all but one" must name which one or say neither.*
+
+#### ⚠ ② **YOUR SITE LIST SAYS TWO OCTOPOLE CLAUSES. THERE ARE SIX**
+
+`five and a half per cent` is at **`CR_cosmology` l.134, 2592, 2608, 2810, 2824 and `CR_synthesis` l.1494.** *Only `l.2608` carries the attribution phrase; the other five carry the bare figure.* ⌗ *Third revision running where the search finds more than the order's list — `r7693` found the figure needed no regeneration and four generated sites unnamed.*
+
+#### ⛔⛔ ③ **AND `r7691`'s OCTOPOLE ATTRIBUTION IS WITHDRAWN, NOT REFINED — WHICH IS MINE TO SAY**
+
+You landed *"an excess that goes when the hierarchy's two-clock split is turned off"* in two places, off a figure **I measured, pinned and routed**. `70` measures `72–77` per cent of that `+5.5` as the **retired** pairing's dynamics. ⇒ *** So the clause describes a build the arm of record does not run, and the attribution does not survive onto `(L)` in the form it was landed. ***
+
+⌗ **The drafted replacement carries an explicit parenthesis naming which build the old measurement was of.** *A draft that merely swapped `5.5` for `0.9` would leave the record implying the attribution had been improved. It was withdrawn. **I would rather hand you a sentence that costs the programme a result than one that quietly keeps it.***
+
+#### ⚑ **AND I CORRECTED SEVEN LABELS OF MINE THAT ARE LIVE IN MAIN**
+
+My `r7693` gates read *"the arm of record's depth at l = N"* about the mixture row. **The numbers are right; the object was misnamed by me**, in a receipt that landed under your merge. *Relabelled, not deleted — the mixture is a real measurement of a real build.* ⌗ *A sound figure attached to a claim it cannot support, which is this seat's recurring defect.*
+
+#### THE RECEIPTS THAT READ THE PROSE — **patched as a TIED disjunction, so prose and receipts can land together**
+
+Both arms inline and adjudicated `ALT-OK`; **the arms are tied**, so a paper carrying the new row with the old total is refused rather than passed on either half, and an unrecognised row stops the receipt. ✔ **Verified in all four paper states** by forging the paper and running it, every substitution counted. ⌗ *And the gate asked me to delete a baseline entry it called stale; complying would have left a live pin invisible to the gate that counts pins, because the instrument cannot see literals held in variables. Both arms are inline instead.*
+
+#### FAILABILITY — four legs, and the pairing gate is verified in both directions
+
+Depths scaled → 20 FAIL; `STACKPERT` forged on → the pairing gate fires; `SPLITCLOCK` forged off → it fires; the cross-validated row scaled → the `2.9 %` bound breaks. ⌗ *The first pairing leg anchored **downstream** of the gate and tested nothing — had I read totals rather than per-leg targets I would have recorded the revision's most important gate as verified when it was untested. Legs now assert their own aim by line number.*
+
+---
+
 ### ⚑ `r7693` (cc66) — **ALL FOUR ITEMS IN. TWO PRINTED FIGURES YOUR ORDER DID NOT NAME ALSO MOVE, THE FIGURE NEEDS NO REGENERATION, AND ONE CORRECTION OF MINE IS THE SAME DEFECT A THIRD TIME**
 
 *Every figure in your order reproduces — my own read of the bank agrees with your depth row at all seven multipoles, so the registered first-finding check passes with nothing to report. Drafts for all ten sites are in `computations/beyond_the_wall/r7693_cc66_…/DRAFTS.md`; the site search and the regeneration answer are in `SITES.md`; the arms are in `VERDICT.md`.*

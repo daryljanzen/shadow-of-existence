@@ -34128,3 +34128,25 @@ It is a pin on 69's sentence, so the locator is a **disjunction**: found, and th
 ⌗ **One thing that did hold:** the transposition red was two **stale** entries, and `0.911`/`0.983` had stopped being flagged only because a **comment** of mine quoted the paper's row. *Removing them on the strength of a sentence would have been the weak fix: a comment is not a computation.* ⇒ The exact transfer's seven depths are pinned from the bank instead, which closes for the row still in print the same hole `r7691` closed for the slope.
 
 ⌗ **And the failability check was not rounded up.** Four legs broke 20 of the 22 assertions; **two were left**, and a fifth leg was written for those two **by name**, checking that its *target* failed rather than that something failed. *"I checked failability" is true of this patch only because the fifth leg exists.*
+
+---
+
+### ⚑ `r7697+cc66` — **THE DEPTH REWRITE IS DRAFTED ONTO THE RIGHT BUILD, AND ONE OF 69's OWN DRAFTS WOULD HAVE REDDENED A RECEIPT ON AN ASSERTION NOBODY HAD NAMED**
+
+**The work.** 70 delivered both transfers on the arm of record's pairing. The receipt now reads both `(L)` banks, pins the row at three and two places under **both** rounding conventions, pins the cross-validation (`2.9 %` at every ℓ = 2–8, **no octopole exception**) and the likelihood, and every site is drafted. The pairing is **asserted from the bank's own `config`** before a figure is read off it — *the arm `r7693` lacked, and the one gate here whose absence no other check could cover.*
+
+⛔⛔ **THE FINDING THAT ONLY A FORGED PAPER COULD PRODUCE.** `the_low_ell_minimum_is_at_ell_four` bounds a background ratio at `1.07`. The row in print gives `1.0610`; the row replacing it gives `1.0756`. ⇒ *** The bound admits what is printed and **excludes what replaces it, by `0.0056`** — so landing the drafts would have reddened that receipt on an assertion neither 69's order nor my own site list names. *** ⌗ *I found it by forging the paper into the landed state and running the receipt against a paper that does not exist yet. **No reading of a diff finds that.*** ⇒ Widened to `1.08` with both measurements in the assertion's own message, and **not** tied to which row is printed — *that would be a bound fitted to each answer in turn rather than a statement about the background.*
+
+⛔ **AND `r7691`'s OCTOPOLE ATTRIBUTION IS WITHDRAWN.** 70 measures `72–77` per cent of the `+5.5` as the **retired** pairing's dynamics. The attribution — *mine: measured, pinned, routed, and landed by 69 in two places* — described a build the arm of record does not run. ⌗ *The drafted replacement names which build the old measurement was of, because a draft that merely swapped the number would leave the record implying an improvement. **I would rather hand 69 a sentence that costs the programme a result than one that quietly keeps it.***
+
+⚑ **Seven labels of mine, live in main, were false** — `r7693`'s gates call the mixture row "the arm of record's". Numbers right, object misnamed, by me, in a receipt that landed under 69's merge. *Relabelled, not deleted.*
+
+### ⛔ `r7697+cc66` — **THREE CI REDS TONIGHT, ALL RULES I ALREADY KNEW; AND ONE NOTE THAT DID HOLD, WHICH MAY SAY WHY**
+
+⇒ **Every red on this branch tonight was a lapse, not a discovery.** *Two came from skipping the heavy local gates — **the standing change I had made one revision earlier, in writing, and routed**. The third came from minting a quote-pin key without adjudicating it in the same pass — **which I did correctly at `r7691` for a nearly identical patch**.*
+
+⌗ **The three fault classes, counted:** a printed digit **re-derived instead of read** (3 times); a harness returning a verdict about a run that had not done what I assumed (6 times); **a known rule skipped** (3 times). ⇒ *The work itself passed every valid check it faced. **What kept breaking was my apparatus and my memory, not the measurements.***
+
+⛭ **BUT ONE WRITTEN NOTE DID WORK, AND THE DIFFERENCE IS WORTH RECORDING.** *`check_quote_pins` asked me to delete an entry it called stale. Complying would have left a live pin invisible to the gate that exists to count pins. **I refused because of a note I wrote at `r7691` recording what that instrument CANNOT SEE** — literals held in variables rather than passed inline.*
+
+⇒ *** That note held. The heavy-gates rule and the mint-and-adjudicate rule did not. The one that held states **a fact about an instrument's blindness**; the two that failed state **what I should do.** A fact gets used when I am looking at the tool; an instruction has to survive until the moment it applies, and tonight it reliably did not. *** ⌗ *Three data points, not a finding. But it suggests the remedy for the rules I keep dropping is not a fourth note — it is something that fails loudly at the moment of the lapse.*
