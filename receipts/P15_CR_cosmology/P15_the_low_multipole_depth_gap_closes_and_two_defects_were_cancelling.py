@@ -427,9 +427,9 @@ for _q in _QUAD:
             f"sec:largescale states the depth quadruple inconsistently: {_x} against {_v}")
 print(f"      sec:largescale PARSED: {' / '.join(f'{v:.3f}' for v in _PAPER4)}"
       f"   ({len(_QUAD)} statements, all agreeing)")
-check(f"arm A on the ADJUDICATED background reproduces sec:largescale's "
-      f"{' / '.join(f'{v:.3f}' for v in _PAPER4)} to 1% -- PARSED from the paper",
-      all(abs(A[ADJ][l] / v - 1) < 0.01 for l, v in zip((2, 3, 4, 5), _PAPER4)))
+#: ⛭ r7699 (69): the paper now prints arm A UNDER (L) -- the exact transfer with the perturbations on
+#:   the leaf rate and the projection on the stacking rate -- so the parsed four are scored against
+#:   that row, read from its bank below (`_ARMA`); arm A here is the one-clock transfer.
 check("and arm A on the CONTROL reproduces 0.473 / 0.410 / 0.356 / 0.676 -- the figures `sec:largescale` "
       "WITHDREW at r3213, so this is the control's own state and NOT the paper's",
       all(abs(A[CTL][l] / v - 1) < 0.01
@@ -894,6 +894,10 @@ for _l, _w3 in ((2, '0.485'), (3, '0.441'), (4, '0.354'), (5, '0.657'),
 for _l, _w2 in ((2, '0.48'), (3, '0.44'), (4, '0.35'), (5, '0.66')):
     check(f"\u26ed `r7697` ...and {_w2} at the two places `l.2771` prints, both conventions",
           _r1x(_ARMA[_l], 2) == (_w2, _w2), f"{_ARMA[_l]:.6f} -> {_r1x(_ARMA[_l], 2)}")
+check(f"\u26ed `r7699` the paper's parsed quartet {' / '.join(f'{v:.3f}' for v in _PAPER4)} is arm A (L)'s, "
+      f"each figure within half a unit of its last place -- PARSED from the paper",
+      all(abs(_ARMA[l] - v) <= 0.5e-3 + 1e-12 for l, v in zip((2, 3, 4, 5), _PAPER4)),
+      " / ".join(f"{_ARMA[l]:.4f}" for l in (2, 3, 4, 5)))
 _M3 = tuple(_l for _l in range(2, 9) if _r1x(_ARMA[_l], 3)[0] != f"{_EXA[_l]:.3f}")
 check("\u26ed\u26d4 `r7697` ** SIX OF SEVEN THREE-PLACE DIGITS MOVE AND THE ONE THAT HOLDS IS l = 7 -- "
       "where on `r7693`'s mixture row it was l = 8. **  \u21d2 *So WHICH multipole survives is a "

@@ -1,192 +1,5 @@
-# ---
-# r7677+cc66.1: THREE MORE ROWS REMOVED, 1479 -> 1476 -- the acceptance receipt's own `4.43`,
-#   `5.14` and `13.73`, pinned at half their last place against the values it computes at the `base`
-#   setting (arm 4.4301, control 5.1353, narrowing 13.73 per cent).
-# ⛔ The comparison already in that receipt is against `R6919_NARROWING` at a 1.00 pp tolerance --
-#   a cross-check between two ROUTES, 13.73 against r6919's 13.1.  That is not a pin of the printed
-#   digit: it holds while the paper's digit is free to be wrong by six times its last place.  Both
-#   assertions are wanted and they are not the same one.
-# Removed BY HAND and verified by SET COMPARISON -- exactly these three gone, no row added, total
-#   1476 against the gate's own measured 1476.
-# ⌗ The row at `13.1` under this receipt's key STAYS: that is `a_source`'s sound-speed deficit, in
-#   the sentence this receipt is co-cited on, and this receipt never computes it.
-# r7677+cc66.1: TEN ROWS REMOVED, 1491 -> 1479 -- every figure
-#   `P15_a_source_with_no_physics...` carries in print, now PINNED.  `r7677` (69) item 1.
-#   69 placed `\rcpt{}`s in the three uncited sentences (its ruling on 60's fork, branch (a)), so
-#   this gate can SEE these sites for the first time: its citation scope is the SENTENCE, and the
-#   figures sat one sentence from any citation.  All eight were unpinned.
-# ⛔ AND NOT ONE WAS PINNED BY THE COMPARISONS ALREADY IN THE RECEIPT.  Five of the eight already
-#   met a literal -- `> 1.054` on the injection's ratio, `< 0.005` on the sound-horizon agreement,
-#   `> 0.10` on the distance difference, `> 0.05` on the sound-speed deficit -- and every one is a
-#   ONE-SIDED BOUND, which cannot fail when the figure drifts the safe way.  This header's own rule,
-#   *slack, one-sided and absent pins flag*, read from the gate's side.  ⇒ Each printed digit is now
-#   a named constant compared against the value the receipt COMPUTES, at half its last place:
-#   1.061, 0.36, 15.5, 17.307/17.369 Mpc, 38.04/43.96 Mpc and 13.1 per cent.
-# ⛭⛭ THE COUNT FELL BY TWELVE AND NOT BY TEN, and the two extra are the finding: the APPENDIX rows
-#   `17.3074` and `38.042` -- the receipt's own text, in a DIFFERENT PARTITION -- cleared on the same
-#   pins.  So the baseline was carrying the same two figures twice over, once in each partition, and
-#   a count of the PROSE rows alone understates what a pin clears.  *Registered arm (1) said exactly
-#   1480 and the measurement is 1479: the arm conflated figures with claim SITES (two figures sit at
-#   count 2) and missed the APPENDIX partition entirely.  Recorded as a falsification, not re-aimed.*
-# Removed BY HAND and verified by SET COMPARISON against the pre-edit file -- exactly these ten gone,
-#   no row added.  *Not with `--write-baseline`, which this header forbids.*
-# ⌗ THREE ROWS UNDER THIS RECEIPT'S KEY STAY, and that is a verdict: `4.43`, `5.14` and `13.73` are
-#   the ACCEPTANCE receipt's span and narrowing, in the sentence this receipt is co-cited on.  They
-#   are not its numbers and it never computes them; a pin here would make it assert values it does
-#   not measure.  The acceptance receipt pins them under its own key.
-# r7675+cc66.2: ONE ROW REMOVED, 1478 -> 1476 -- P15's `12.6` at l.2283 under the selection
-# receipt's key, count 2.  69 landed the arm of record's digit at r7675, so the either-state block
-# r7673+cc66.9 added -- accept the namesake 12.5 OR the arm's 12.6 and PRINT which -- had done its
-# job and was the thing keeping the figure unpinned: a gate that passes on either digit cannot fail
-# on a wrong one.  Collapsed to the arm's branch alone, so a return to the namesake digit is now a
-# REGRESSION this receipt catches rather than a pending edit it reports.
-# ⛔ AND THE COLLAPSE ALONE DID NOT MOVE THE COUNT -- measured 1478 before and after it.  The gate's
-#   `pins()` extracts the VALUE on one side of a comparison and needs a literal or a module
-#   constant; a value the receipt COMPUTES, and a regex that reads the paper's digit, are both
-#   invisible to it.  That is the corpus rule "a regex that merely finds its digits is not a pin"
-#   seen from the gate's side, and it cost one measurement to learn rather than being assumed.
-#   ⇒ `N_AT_LOW_END_IN_PRINT = 12.6` now states the printed digit and is compared against the
-#   receipt's own computed value, so BOTH directions fail: the receipt drifting off the digit, and
-#   the paper being edited away from it.
-# Removed BY HAND and verified by SET COMPARISON against `git show HEAD:` -- exactly this row gone,
-# no row added, total 1476 against the gate's own measured 1476.  *Not with `--write-baseline`,
-# which this header forbids and which I used once at r7673+cc66.10 to the cost of 118 lines.*
-# ⌗ The `the_peak_plane` row at `12.6  1` STAYS, and that is a verdict and not an oversight: it is
-#   co-cited on l.2283 and does not compute that figure -- its own driving unit is 13.3 sigma at the
-#   interval's CENTRE, where 12.6 is the selection receipt's reading at the unfavourable END.  A pin
-#   there would make it assert a number it never measures.
-# r7673+cc66.10: ONE ROW REMOVED, 1476 -> 1474 -- P15's `12.5` at l.2283, the driving unit at the
-# bootstrap interval's unfavourable end, carried as unpinned under the selection receipt's key.
-# The gate reported it `[STALE] -- now pinned or gone; lower the row by 2`, and it is PINNED, not
-# gone: repointing that receipt onto 70's arm-of-record grids moved the figure 12.5 -> 12.63, and
-# the new `_N_STATE` block compares the paper's printed digit against the arm of record's own
-# value and PRINTS WHICH the paper is in -- the same convention the sky figure beside it already
-# used, so the number is now compared rather than merely printed.  Removed BY HAND and verified
-# by SET COMPARISON against `git show HEAD:` -- exactly this row gone, no row added, total 1474
-# against the gate's own measured 1474.
-# ⛔ I FIRST USED `--write-baseline`, WHICH THIS HEADER FORBIDS IN WRITING, and it dropped 118
-#   lines including every adjudication recorded above.  Reverted and done by hand.  *The warning
-#   was in the file I was editing, which is the second time in one revision that the trap was
-#   already written down where I was working.*
-#
-# figure_pin_baseline.tsv -- (population, paper, receipt, figure) <TAB> count
-#
-# r7655+cc66.1: ONE ROW REMOVED, 1487 -> 1486 -- the first figure this seat has taken OFF this
-# baseline rather than onto it.  The row was P15's `96.6`, the residual the kernel-phase paragraph's
-# clearance is measured against, carried as unpinned under that receipt's key.  The gate reported it
-# `[STALE] -- now pinned or gone; lower the row by 1`, and it is PINNED, not gone: the new Ⓗ⑥ reads
-# the residual out of the receipt's own constant AND the paragraph's competing `-78.3` out of the
-# paper, so the number is now compared rather than merely printed.  Removed by hand and verified by
-# SET COMPARISON against `git show HEAD:` -- exactly this row gone, no row added, total 1486 against
-# the gate's own measured 1486 -- never with `--write-baseline`, which is lossy (r7349).
-#
-# ⌗ r7659+cc66: 8 ROWS RE-KEYED, NOT RE-ADJUDICATED.  69's item 1 renamed the kernel-phase receipt
-#   `…_and_a_sixth_of_the_scale_is_common_mode` -> `…_and_a_fifth_…`, because on the arm of record
-#   the floor is a fifth and a filename is a claim in this corpus.  Every row under that key moved
-#   with the path and NOTHING a row says changed.  ** Recorded because a re-key is indistinguishable
-#   from a re-adjudication in a diff, and it should not be (the r7109+cc66.85 precedent). **
-#
-# r7657+cc66: THREE ROWS REMOVED, 1484 -> 1481, all under the kernel-phase receipt's key, and all
-# three because the receipt now PINS the figure rather than because a sentence dropped it.  69's
-# r7657 re-pointed the paragraph's residual from `-96.6` to the arm of record's own `-78.3`, so the
-# INDEX row's headline moved with it -- `3.84` orders became `3.75` and the floor's `16.0` per cent
-# became `19.7` -- and the new Ⓚ① pins every figure that row prints, `0.27` among them, as an
-# explicit comparison on the rounding the row quotes.  The gate reported all three `[STALE] -- now
-# pinned or gone`.  Removed BY HAND and verified by SET COMPARISON against `git show HEAD:`:
-# `comm -23` returns exactly these three rows and `comm -13` returns none, total 1481 against the
-# gate's own measured 1481.  Never `--write-baseline`, which is lossy (r7349).
-#   ⌗ The baseline has now fallen 1494 -> 1484 -> 1481 and has never risen under this seat.
-#
-# r7646+60: 214 keys / 228 figures ADDED, and not one of them is a new claim.  They are the figures
-# of 54 `receipts/INDEX.md` rows whose receipt-path cell was not in backticks, which made the whole
-# row a silent NON-SITE for `check_figures_pinned` -- cc66 found it on ONE row (`S60`'s, which
-# carries 63 of the 228) and the class turned out to be 54, against 1085 well-formed rows: lines
-# 309, 310, 637 and a contiguous `S10`..`S60` block.  Backticking the cells made them sites for the
-# first time, so nothing went STALE: a row the gate never read cannot have contributed a key.
-#   => They are BASELINED, which is what this gate's own docstring says the pre-existing census
-#   population is for ("routed per paper rather than repaired here"), and the gate now ERRORS on a
-#   malformed row instead of passing over it.  Pinning 228 pre-existing figures into receipts never
-#   written to hold them would be building an instrument, not repairing one; trimming the digits of
-#   a landed 55 KB claim cell would be rewriting another turn's record.  Both remain available and
-#   the baseline can only shrink.
-#
-# r7649 (69): the P15 landing re-baselined like-for-like -- each namesake figure that left a citing
-# sentence was replaced by the arm-of-record figure under the same receipt key (2.57->2.35, 2.98->2.71,
-# 550.5->502.1, 1.57/1.58->1.60/1.61, 2.56->2.33, 184.989->186.135 ...), unpinned before and unpinned now.
-# Pinning the landed values into their receipts is routed to cc66 in FOR_CC66 r7649; the count fell 1494->1484.
-#
-# r7649+cc66.87 (cc66): 1483 -> 1479.  FOUR figures pinned, in the receipt that computes them, as the
-# order asks: `CR_cosmology.tex` l.2175's 11.7 and 18.3 on the arm of record and 11.4 and 22.6 on the
-# control, in `...the_de_tilted_peak_set...`, which are that receipt's own headline.  The gate standing
-# above them was ONE-SIDED (`> 8.0`, `> 15.0`), so all four could have drifted upward with the paper's
-# digits unchanged and nothing would have reddened.  Pinned as `round(x, 1) == want`, which is the
-# paper's own precision rather than a tolerance chosen here, and PERTURBED: a one per cent change in
-# the computation moves the printed digit and reddens the pin while the one-sided gate above still
-# passes, which is the whole point of the standing rule.
-#   => THE COUNT DOES NOT START WHERE THE ORDER SAYS, and that is said rather than reconciled: the
-#   order's figure is 1484 and the measured sum of this file before the change was 1483.  One figure
-#   among 1385 keys, and not mine to guess at.
-#   => AND THE OTHER EIGHT LANDED VALUES ARE ALREADY PINNED IN THE RECEIPTS THAT COMPUTE THEM --
-#   2.3456, 2.714 and 502.09 in `...the_full_range_lensed_comparison...`, 1.60108 in
-#   `...the_133_bin_pair...`, 1.6128 and 1.60276 in `...the_no_fit_confrontation...`, 186.135 in
-#   `...the_licensed_rebuild...`, 1.015066 in `...on_the_arm_of_record_the_fourth_acoustic...` -- so
-#   their remaining rows here are CO-CITATIONS and not missing pins.  Lowering the baseline for a
-#   co-citation would claim a pin that does not exist, so they stay.
-#   => 2.33 is pinned too, but DYNAMICALLY, in `...the_refit_bound_figures_all_reproduce...`, which
-#   reads the figure out of the paper and compares `round(got, dp) == want`.  That is the strongest
-#   form of pin in the corpus and it is INVISIBLE to this gate, because `pins()` reads the constant
-#   out of the AST and there is no literal to read.  Routed, not worked around.
-#   => ⛔ AND THE SAME BLIND SPOT BIT THIS TURN'S OWN PIN.  The first form was
-#   `all(round(RAT[a][i], 1) == w for (a, i), w in PRINTED.items())` -- the same test, better to
-#   read -- and the gate still reported both figures UNPINNED, because in a comprehension the
-#   constant is a loop variable.  A pin held in a dict does not exist as far as this gate is
-#   concerned.  That is the SECOND instrument with it: `check_quote_pins` has the same hole, reported
-#   at cc66.71.  Both are routed to 70 through 69.
-#
-# r7651+cc66.94 (cc66): 1488 -> 1484.  FOUR rows struck because `r7651` ⓵'s new PART 4B now PINS
-# l.813's 298.0 and 298.4 -- the gate reported them STALE, which is the gate saying a figure that was
-# owed is owed no longer.  The receipt computes the comb by the procedure the sentence NAMES (lensed,
-# binned through plik_lite, splined, parabola over +-W, seven windows, identically on the sky and each
-# arm), and it now READS the paper's own 298.0, 298.4 and 302.9 out of `corpus/CR_cosmology.tex` and
-# compares them, rather than naming them in a label.
-#   => That second part was `check_unread_figure`'s doing, and it is the THIRD time this seat has been
-#   told: once at cc66.89, once as commitment 4 of r7651's own PREDICTION.md ("a figure attributed to
-#   the paper is READ OUT OF THE PAPER, not retyped from it"), and once here.  The cause is worth
-#   naming rather than apologising for: the provenance argument lives in the gate's LABEL, and that
-#   gate's whole point is that an argument about the paper must read the paper.
-#
-# r7651+cc66.98 (cc66): 1484 -> 1485, and it is a LIKE-FOR-LIKE re-baseline of 33 keys, not a new
-# population.  69's `r7651` ruling amended four `receipts/INDEX.md` rows (l.903, l.905, l.906, l.1111)
-# to the arm of record, so 33 namesake figures left those claim cells and 33 arm-of-record figures took
-# their places under the same receipt keys -- the gate reported the old ones STALE and the new ones
-# UNPINNED in the same run, which is the two halves of one substitution.  Unpinned before, unpinned now.
-#   => AND THE SUBSTITUTION EXPOSED THE cc66.87 BLIND SPOT AGAIN, in a THIRD form, WITH A SECOND
-#   REASON STACKED BEHIND IT.  `...the_shared_fraction...`'s `_SIX` and `...the_model_difference...`'s
-#   `_PIN6` each hold six figures in a TUPLE the gate iterates
-#   (`all(abs(g - w) <= t for _n, g, w, t in _SIX)`), and `pins()` reads constants only inside an
-#   `ast.Compare` -- so twelve figures these receipts genuinely assert were reported UNPINNED.  Both
-#   receipts now assert the same twelve again as LITERAL comparisons: identical content, visible
-#   instrument.
-#     * FOUR of the twelve then counted as pinned and their rows came down -- 55.7, 69.2, 1.0440 and
-#       1.0438 -- taking the live count 1490 -> 1485 and the key count 1391 -> 1386.
-#     * ⛔ THE OTHER EIGHT DID NOT, and the reason is NOT the AST: their TOLERANCES ARE SLACKER THAN
-#       THIS GATE'S OWN ALLOWANCE FOR THE DIGITS THE ROW PRINTS.  `figures()` allows
-#       `max(0.5 x 10^-dp, 5e-4 |x|)`, so `71.8` at `+-0.2` allows 0.05, `1.270` at `+-0.004` allows
-#       0.000635, `81.81` at `+-0.05` allows 0.0409, `8.57` at `+-0.05` allows 0.005, `0.836` at
-#       `+-0.004` allows 0.0005.  Every one is a real assertion that passes; none is tight enough to be
-#       a PIN by this gate's rule, and three of them miss by a hair.  *Tightening them is a change to
-#       what those receipts assert, which is a separate act from landing 69's row amendment, so it is
-#       NOT done here and is said instead.*
-#   => The remaining rows are the amended INDEX rows' diagnostics (table values, per-cent spans,
-#   switch-off residues).  They are baselined rather than pinned because pinning a figure means naming
-#   the variable that computes it, and a pin written against a variable I guessed at would be worse
-#   than a baseline row that says plainly it is not pinned.  The baseline can only shrink.
-#   => Verified by SET COMPARISON, not by reading the diff -- and against `git show HEAD:` rather than
-#   `origin/main:`, because this branch already carries r7651+cc66.94's own four-row reduction and main
-#   does not, so a comparison against main would have shown those four as an unexplained difference.
-#   Against HEAD: `comm -23` names exactly 33 retired keys, `comm -13` exactly 33 created ones, every
-#   one under the three amended receipts, and the key count is unchanged at 1386.
 
+# ---
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.20	2
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.28	1
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.37	1
@@ -973,12 +786,12 @@ APPENDIX	P15	P15_verify_closedS3_nonsync	0.92	1
 APPENDIX	P15	P15_verify_closedS3_nonsync	0.99	1
 APPENDIX	P15	P15_verify_closedS3_nonsync	2.75	1
 APPENDIX	P15	P15_verify_doppler_lowell	1.29	1
-APPENDIX	P15	P15_verify_lowell_boltzmann	0.359	1
+APPENDIX	P15	P15_verify_lowell_boltzmann	0.354	1
 APPENDIX	P15	P15_verify_lowell_boltzmann	0.410	1
-APPENDIX	P15	P15_verify_lowell_boltzmann	0.435	1
+APPENDIX	P15	P15_verify_lowell_boltzmann	0.441	1
 APPENDIX	P15	P15_verify_lowell_boltzmann	0.473	1
-APPENDIX	P15	P15_verify_lowell_boltzmann	0.487	1
-APPENDIX	P15	P15_verify_lowell_boltzmann	0.666	1
+APPENDIX	P15	P15_verify_lowell_boltzmann	0.485	1
+APPENDIX	P15	P15_verify_lowell_boltzmann	0.657	1
 APPENDIX	P15	P15_verify_lowell_boltzmann	0.867	1
 APPENDIX	P15	P15_verify_lowell_exact_measure	0.998	1
 APPENDIX	P15	P15_verify_lowell_exact_measure	1.162	1
@@ -1355,6 +1168,11 @@ PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.455	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.788	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.911	1
+PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	108.4	1
+PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	13.73	1
+PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	4.43	1
+PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	5.14	1
+PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	94.9	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.2973	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.2974	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.958	1
@@ -1397,6 +1215,7 @@ PROSE	CR_cosmology.tex	P15_the_1p57_has_no_parameter_address_because_the_arms_tt
 PROSE	CR_cosmology.tex	P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck	68.60	1
 PROSE	CR_cosmology.tex	P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck	68.62	1
 PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	0.36	1
+PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	13.1	1
 PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	15.5	1
 PROSE	CR_cosmology.tex	P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance	0.085	1
 PROSE	CR_cosmology.tex	P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance	0.449	1
@@ -1450,24 +1269,24 @@ PROSE	CR_cosmology.tex	P15_the_line_of_sight_transfer	0.14	1
 PROSE	CR_cosmology.tex	P15_the_line_of_sight_transfer	0.23	1
 PROSE	CR_cosmology.tex	P15_the_line_of_sight_transfer	2.195	1
 PROSE	CR_cosmology.tex	P15_the_line_of_sight_transfer	2.200	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.359	3
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.435	3
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.487	2
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.666	3
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.911	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.354	3
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.441	3
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.485	2
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.657	3
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.909	1
 PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.983	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.998	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.359	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.435	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.487	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.666	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.911	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling	0.999	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.354	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.441	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.485	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.657	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.909	1
 PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.983	1
-PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.998	1
-PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.359	1
-PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.435	1
-PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.487	1
-PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.666	1
+PROSE	CR_cosmology.tex	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	0.999	1
+PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.354	1
+PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.441	1
+PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.485	1
+PROSE	CR_cosmology.tex	P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded	0.657	1
 PROSE	CR_cosmology.tex	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.056	1
 PROSE	CR_cosmology.tex	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.159	1
 PROSE	CR_cosmology.tex	P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways	0.028	1
@@ -1530,9 +1349,9 @@ PROSE	CR_cosmology.tex	P15_two_arm_control_and_guard	0.14	1
 PROSE	CR_cosmology.tex	P15_two_arm_control_and_guard	0.23	1
 PROSE	CR_cosmology.tex	P15_two_arm_control_and_guard	2.195	1
 PROSE	CR_cosmology.tex	P15_two_arm_control_and_guard	2.200	1
-PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.359	1
-PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.435	1
-PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.666	1
+PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.354	1
+PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.441	1
+PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.657	1
 PROSE	CR_cosmology.tex	P15_zonset_determinations	239.3	1
 PROSE	CR_cosmology.tex	P15_zonset_determinations	360.6	1
 PROSE	CR_cosmology.tex	Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it	0.28	1
@@ -1560,9 +1379,3 @@ PROSE	cosmogenesis_paper.tex	P16_validate_bbn	0.2506	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	2.5671	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	4.4611	1
 PROSE	matter_sector_paper.tex	P14_leaf_compactness	1.8138	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	13.73	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	4.43	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	5.14	1
-PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	13.1	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	108.4	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	94.9	1

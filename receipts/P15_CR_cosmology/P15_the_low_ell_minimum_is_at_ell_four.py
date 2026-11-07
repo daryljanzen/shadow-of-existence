@@ -198,7 +198,10 @@ print(f"  ** the r6919 gap, control/second-arm = {min(old):.2f}--{max(old):.2f} 
       f"the depth-gap receipt traced to two opposed defects in the second arm **")
 assert amin == pmin == hmin == 4, ('every quartet must minimise at ell=4 -- the location is what '
                                    'this file established', amin, pmin, hmin)
-assert all(0.93 < r < 1.07 for r in bg), ('the adjudicated background moves the depths by a few '
+# r7699 (69): the printed quartet is now the exact transfer with the arm of record's pairing (the
+#   projection on the stacking rate, `P15_the_low_multipole_depth_gap...`'s r7697 block), so against the
+#   control-background one-clock quartet it carries that projection's move as well as the background's.
+assert all(0.93 < r < 1.08 for r in bg), ('the background and the projection move the depths by a few '
                                           'per cent, not the shape', bg)
 assert max(old) > 1.8, ('the historical gap this file recorded, read at the commit that stated it',
                         old)
@@ -213,7 +216,7 @@ assert 'S TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH G
 assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn
 assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the p' \
     in _TEXn
-assert 'the hierarchy agrees to three per cent at every multipole' in _TEXn
+assert 'the hierarchy agrees to $2.9$ per cent at every multipole' in _TEXn
 assert ('Those figures are read through the exact transfer, and the photon hierarchy built for this '
         'programme') in _TEXn, 'the attribution this file routed is settled the receipts\' way'
 print("  ⇒ ** depth cross-validated to 3% (discharged, r6825+cc66.26); attribution settled: the "
@@ -253,15 +256,16 @@ assert abs(tot - 1.8) < 0.15
 #   total with it, to "+1.6 over 2 <= ell <= 10".  The same likelihood on the paper's own quartet
 #   (ell 6-8 from its sec:scope row, 0.911/0.983/0.998) reproduces that, and the finding -- the
 #   quadrupole rewards, the largest penalty is at ell=4 -- holds on both tables. **
-_P8 = {**PAPER, 6: 0.911, 7: 0.983, 8: 0.998, 9: 1.0, 10: 1.0}
-assert '$0.487$, $0.435$, $0.359$, $0.666$, $0.911$, $0.983$ and $0.998$' in _TEXn
+# r7699 (69): the row in print is arm A under the arm of record's pairing (ell 6-8 0.909/0.983/0.999).
+_P8 = {**PAPER, 6: 0.909, 7: 0.983, 8: 0.999, 9: 1.0, 10: 1.0}
+assert '$0.485$, $0.441$, $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$' in _TEXn
 pa = {l: (2*l+1)*(obs[l]*(1.0/_P8[l] - 1.0) + math.log(_P8[l])) for l in range(2, 11)}
 tota = sum(pa.values())
 worsta = max(range(2, 11), key=lambda l: pa[l])
-print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.6, largest "
+print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.7, largest "
       f"penalty at ell={worsta} ({pa[worsta]:+.2f}), quadrupole {pa[2]:+.2f} **")
 assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
-assert abs(tota - 1.6) < 0.1 and '$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' in _TEXn
+assert abs(tota - 1.7) < 0.1 and '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
 
 print()
 print("=" * 78)
@@ -306,11 +310,11 @@ CHECKS = [
     ("the body states the minimum at ell=4",
      r'minimum falls at \$\\ell=4\$\}' + _R + r'---and the quadrupole and octopole'),
     ("the body carries the four-multipole profile",
-     r'\$\\approx0\.487\$, \$0\.435\$, \$0\.359\$ and \$0\.666\$'),
+     r'\$\\approx0\.485\$, \$0\.441\$, \$0\.354\$ and \$0\.657\$'),   # r7699
     ("the body states the two-code cross-validation, depth and shape",
      r'two independent Boltzmann treatments cross-validate the depth as well as the shape'),
     ("the abstract carries the minimum",
-     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.36\$ of the \$\\Lambda\$CDM expectation there'),
+     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.35\$ of the \$\\Lambda\$CDM expectation there'),
     ("the scope section carries the minimum",
      r'a dip whose minimum falls at \$\\ell=4\$' + _R + r'(?:,| ---| ---)? ?(?:not at the quadrupole|---and)'),
     ("the likelihood item names ell=4 as the largest penalty",

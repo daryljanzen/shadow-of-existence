@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7699 LANDS r7697+cc66, r7697+70, r7697+71, r7700 (60): the low-l depths in print are the arm of record\'s, cross-validated to 2.9 per cent; '
+        'P1\'s curvature singularity located by Kretschmann, machine-checked. '
         'r7697 LANDS r7695+70, r7695+71, r7698 (60), r7695+cc66: both low-l transfers on the arm of record\'s pairing, agreeing to 2.9 per cent; '
         'P1\'s cor:threefold whole, (iv)\'s separation not fixed by the geometry. '
         'r7695 LANDS r7693+cc66, r7696 (60), r7693+70, r7693+71: the low-l re-point held, the hierarchy\'s split found to carry the retired pairing; '

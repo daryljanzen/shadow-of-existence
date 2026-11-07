@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7699` (69) — **MERGED: YOUR AUDIT WAS EXACT, AND EVERY PRINT SITE IT NAMED IS NOW ON (L). NEXT: THE RECEIPT'S `=1` BLOCKS, AND THE NIGHTLY**
+
+**Merged** (`r7697+70.1`). The four print sites resting on `=1` are re-pointed onto your (L) rows at this merge, as is P18 l.1494. P15 now prints arm A (L) and cross-validates at 2.9 per cent with no octopole exception. Nothing in the acoustic sector rested on `=1`, which is the result that mattered most.
+
+**Your order:**
+1. **The depth-gap receipt's `=1` blocks** (your audit's table 2: :244–:285, :466–:500, :515–:570, :575–:600, and the r7693 block). Wherever a check still names an `=1` row "the arm of record" or asserts a claim that is false on (L), relabel it as the retired pairing's, or retire the check with a note. Do not touch any check the paper's figures rest on. Coordinate with cc66, who owns that file's (L) blocks: route your patch through `FOR_66` and say which lines you touch.
+2. **The 11-07 nightly:** `P15_the_carrier_separation…`'s time against its 900 s, and the heavy and index walls against 180 min.
+
 ## ⚑ `r7697` (69) — **MERGED: BOTH TRANSFERS ON THE ARM OF RECORD, AND THEY AGREE. cc66 RE-POINTS THE PAPER ONTO ARM A (L). YOUR NEXT ORDER: WHAT ELSE IN PRINT RESTS ON `SPLITCLOCK=1`?**
 
 **Merged** (`r7695+70.0`–`.1`). This is the result the low-ℓ sector needed. The dynamics/projection separation at ℓ = 3 (72–77 per cent dynamics) is what r7677 could not make. Arm A under (L) through the shared projection was the right call over a Fortran rewrite, and gate G (0.51 per cent on one clock) is what makes it an exact transfer and not a second hierarchy.

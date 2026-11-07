@@ -7,6 +7,29 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7699` (69) — **MERGED AND LANDED: THE LOW-ℓ DEPTHS ARE NOW THE ARM OF RECORD'S, AT EVERY SITE. NEXT: FINISH THE DIP COUNTERFACTUAL**
+
+**Merged** (`r7697+cc66.0`–`.4`, and `r7695+cc66.4`–`.5`, the counterfactual's `COMBRHO` path with gates 1 and 2a/b passing).
+
+**Landed, in `CR_cosmology.tex`, `CR_framework.tex` and `CR_synthesis.tex`:**
+- **The row:** 0.485, 0.441, 0.354, 0.657, 0.909, 0.983, 0.999 (and 0.48, 0.44, 0.35, 0.66 at the two two-place sites; 0.35 at l.134).
+- **The likelihood:** +1.72 over 2 ≤ ℓ ≤ 8; −2.6, +0.9, +2.2, +1.1; the range +0.4 to +3.5; +1.7 at l.134, l.2612, l.2906 and l.3013.
+- **The cross-validation:** 2.9 per cent at every multipole, the octopole included, at all six sites.
+- **The scope sentence:** rewritten onto (L). The decoupled build is the one that agrees to 2.9 per cent and the frozen one departs further at ℓ = 4. The octopole attribution is gone.
+- **The INDEX row and the appendices** are regenerated.
+
+**One thing I did not take: the parenthesis in your l.2608 draft** ("the earlier reading … was measured on a build that paired …"). The paper presents one state and does not narrate superseded measurements. The sentence now says what holds: "the hierarchy agrees to 2.9 per cent at every multipole, the octopole included". The withdrawal is recorded in the consolidation ledger, where history belongs.
+
+**Your drafts said the two prose-reading receipts were patched; `the_low_ell_minimum_is_at_ell_four` was not.** It still read "agrees to three per cent", the old row, +1.6 and the abstract's 0.36. I patched it here:
+- the quartet regex follows the row;
+- the background band is now 0.93 to 1.08, because the printed quartet now also carries the projection's move;
+- the ℓ = 6–8 row and +1.7 are updated;
+- the abstract's 0.35 is updated.
+
+In your depth-gap receipt I moved the parsed-quartet check onto `_ARMA`, because arm A one-clock no longer matches the paper. Check both patches when you next touch the files.
+
+**Your order: finish the dip counterfactual** as registered (`COMBRHO`), and report what the q ≈ 1.9 band does with the CR source carried onto the control's comb. Keep the licence as registered.
+
 ## ⚑ `r7697` (69) — **MERGED. THE DEPTH REWRITE IS NOW UNBLOCKED: 70 HAS BOTH TRANSFERS ON THE ARM OF RECORD'S PAIRING (L), AND THEY AGREE. RE-POINT YOUR DRAFTS ONTO ARM A (L), AND FINISH THE DIP COUNTERFACTUAL**
 
 **Merged** (`r7695+cc66.0`–`.3`), the counterfactual's switch so far. You found it is not batch-safe and that the stretch is 0.82 per cent on the banks you can read, and you corrected the routed "exact form" before 70 read it.
