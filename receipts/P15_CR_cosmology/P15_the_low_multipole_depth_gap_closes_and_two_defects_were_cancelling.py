@@ -269,16 +269,17 @@ _ctl_only_nsk = sorted(k for k in SW_NSK.files if 'control' in k and k not in SW
 _moved = sorted(k for k in _adj
                 if k in SW_NSK.files
                 and not np.array_equal(np.asarray(SW_NSK[k], float), np.asarray(SW_AOR[k], float)))
-print(f"  arm-of-record bank: {len(SW_AOR.files)} keys, adjudicated {len(_adj)}, of which moved "
+print(f"  SPLITCLOCK=1 sweep bank (the retired STACKPERT pairing; `SW_AOR` is a historical name): {len(SW_AOR.files)} keys, adjudicated {len(_adj)}, of which moved "
       f"{len(_moved)};  control keys only in the namesake bank: {len(_ctl_only_nsk)}")
-check("⓼ ⛭⛭ ** THE ARM-OF-RECORD SWEEP IS FOUND UNDER A NAMED SUFFIX AND ITS SHAPE IS GATED "
+check("⓼ ⛭⛭ ** THE `SPLITCLOCK=1` SWEEP (labelled the arm of record's until `r7699+70`) IS FOUND UNDER A NAMED SUFFIX AND ITS SHAPE IS GATED "
       "RATHER THAN ASSUMED. **  It carries the two ADJUDICATED legs and not one of the six CONTROL "
       "legs, because `LEAFREC` does not reach the control -- so a wholesale bank swap would "
       "`KeyError` on the first control key.  Both adjudicated legs MOVED, and `ells` is "
       "bit-identical across the two banks.  ⛔ *Point `_SWARM` back at the namesake and this fails.  "
       "And the arm-of-record legs are read EXPLICITLY as `B_AOR`, never substituted into an "
       "adjudicated-point comparison: they are at the REFIT point, and crossing the two reddened "
-      "this receipt's own 7-per-cent gate at l = 3 by exactly the point difference*",
+      "this receipt's own 7-per-cent gate at l = 3 by exactly the point difference*"
+      " ⛔ *`r7699+70`: built under HIER's `SPLITCLOCK=1`, the arm of record's RETIRED `STACKPERT` pairing (r7693+70.1), not its construction; the arm of record's rows are the `(L)` banks read below*",
       len(_adj) == 2 and len(_moved) == 2 and len(_ctl_only_nsk) == 6
       and _SWARM == '_leafrec1'
       and np.array_equal(np.asarray(SW_NSK['ells'], float), np.asarray(SW_AOR['ells'], float))
@@ -466,7 +467,7 @@ for bgn, bg in (('CONTROL (67.40, 0.3150)', CTL), ('ADJUDICATED (68.60, 0.2973)'
 B_AOR = {'frozen': np.asarray(SW_AOR['FROZEN_adjudicated_KLO_0_1'], float),
          'decoupled': np.asarray(SW_AOR['DECOUPLED_adjudicated_KLO_0_1_NS3_60000'], float)}
 _agree = max(abs(B_AOR['decoupled'][l - 2] / B_AOR['frozen'][l - 2] - 1) for l in range(2, 9))
-print(f"\n  \u2317 the two arm-B builds on the ARM OF RECORD agree with each other to "
+print(f"\n  \u2317 the two arm-B builds on the SPLITCLOCK=1 sweep (the retired STACKPERT pairing) agree with each other to "
       f"{100 * _agree:.1f}% -- read from one bank at one point, so this is a build difference and "
       f"not a point one")
 # ⛔⛭⛭⛭ ** THE CHECK HERE USED TO READ `_agree < 0.04` AND ON THE ARM OF RECORD IT READS 5.3 PER
@@ -488,15 +489,16 @@ for _vn, _v in B_AOR.items():
     _mn = min(range(2, 9), key=lambda l: _v[l - 2])
     _rec = next((l for l in range(5, 9) if _v[l - 2] >= 0.99), None)
     _shape_ok[_vn] = (_mn, _rec)
-    print(f"    arm of record, {_vn:9s}: minimum at l = {_mn}, recovery at l = {_rec}, "
+    print(f"    SPLITCLOCK=1, {_vn:9s}: minimum at l = {_mn}, recovery at l = {_rec}, "
           f"depths l=2-5 {' '.join(f'{_v[l - 2]:.4f}' for l in range(2, 6))}")
 check("\u26ed\u26ed ** NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK, ASSERTED AS THE "
-      "INVARIANCE IT IS AND NOT AS A TOLERANCE: ** both arm-B builds, read from the arm-of-record "
+      "INVARIANCE IT IS AND NOT AS A TOLERANCE: ** both arm-B builds, read from the `SPLITCLOCK=1` "
       "bank at its own point, put the minimum at l = 4 and the recovery at l = 8.  \u26d4 *This "
       "replaced `_agree < 0.04`, a namesake MEASUREMENT promoted to a bound on an intermediate "
-      "quantity the claim never mentions, which the arm of record reads at 5.3 per cent.  The "
+      "quantity the claim never mentions, which the `SPLITCLOCK=1` bank reads at 5.3 per cent.  The "
       "build-to-build difference is printed as the diagnostic it is: a gate that bounds a "
-      "diagnostic can be satisfied by widening the bound, and this one cannot*",
+      "diagnostic can be satisfied by widening the bound, and this one cannot*"
+      " ⛔ *`r7699+70`: built under HIER's `SPLITCLOCK=1`, the arm of record's RETIRED `STACKPERT` pairing (r7693+70.1), not its construction; the arm of record's rows are the `(L)` banks read below*",
       all(v == (4, 8) for v in _shape_ok.values()),
       '; '.join(f'{k}: min l={v[0]}, recovery l={v[1]}' for k, v in _shape_ok.items())
       + f'; build-to-build {100 * _agree:.1f}%')
@@ -515,7 +517,7 @@ check("\u26ed\u26ed ** NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK, ASSE
 #   rather than contradicting it -- and the per-multipole spread is reported as the diagnostic it is,
 #   the same quantity `_agree` already prints.*
 _DIST = os.path.join(SPEC, 'p15_lowell_depths_distances_leafrec1.npz')
-check("⛭ the distances-point bank the six low-ℓ sites are redrafted from is present: "
+check("⛭ the distances-point `SPLITCLOCK=1` bank the six low-ℓ sites were drafted from until `r7699` is present: "
       "`spectra/p15_lowell_depths_distances_leafrec1.npz`", os.path.exists(_DIST))
 _DZ = np.load(_DIST, allow_pickle=True)
 _DE = np.asarray(_DZ['ells'], int)
@@ -525,12 +527,13 @@ _DD = np.asarray(_DZ['armB_decoupled'], float)
 _relF = 100.0 * (_DF - _DA) / _DA
 _relD = 100.0 * (_DD - _DA) / _DA
 _spr = 100.0 * (_DF - _DD) / _DA
-print("\n  \u26ed `r7687` THE DISTANCES POINT -- arm A against both arm-B builds")
+print("\n  \u26ed `r7687` THE DISTANCES POINT -- one-clock arm A against both SPLITCLOCK=1 arm-B builds (the retired pairing)")
 print("     l    armA    FROZEN rel%   DECOUPLED rel%   build spread%")
 for _i, _l in enumerate(_DE):
     print(f"    {_l:2d}  {_DA[_i]:.4f}   {_relF[_i]:+10.2f}   {_relD[_i]:+13.2f}   {_spr[_i]:+12.2f}")
 
-# the five figures the six sites print, each pinned two-sided at the precision they print to
+# the five figures the six sites PRINTED until `r7699` (on the `SPLITCLOCK=1` rows), each pinned two-sided at that precision
+#   ⛔ `r7699+70`: no site prints these now; the sites print the `(L)` figures pinned in the `r7697` block below
 _off = _DE != 3
 _hi5 = _DE > 5
 _P3 = float(_relD[_DE == 3][0])
@@ -550,14 +553,16 @@ for _nm, _got, _want, _tol in (
         #   mine resting on a number no gate reads is `r7679`'s defect in my own routed prose.*
         ("the worst build spread above l = 5, which the scope sentence calls under one per cent",
          float(np.max(np.abs(_spr[_hi5]))), 0.63, 5e-3)):
-    check(f"⛭ `r7687` {_nm}", abs(_got - _want) < _tol, f"{_got:+.2f} against {_want:+.2f}")
+    check(f"⛭ `r7687` {_nm} \u26d4 *on the `SPLITCLOCK=1` (retired-pairing) rows, printed until `r7699` and no longer*",
+          abs(_got - _want) < _tol, f"{_got:+.2f} against {_want:+.2f}")
 
 check("⛭⛭ ** AND THE CONCLUSION IS INVARIANT ON THIS POINT TOO, which EXTENDS the clause above to a "
       "second background rather than contradicting it: ** both arm-B builds put the minimum at l = 4 "
       "and the recovery at l = 8 here, as they do at the refit point.  \u26d4 *cc66's `r7685` read the "
       "per-multipole spread as falsifying the clause at l = 4; that was a diagnostic promoted to a "
       "verdict on a claim about the conclusion, which is the error the gate above was written to "
-      "correct.  Withdrawn at `r7687` and asserted here the right way round*",
+      "correct.  Withdrawn at `r7687` and asserted here the right way round*"
+      " ⛔ *`r7699+70`: built under HIER's `SPLITCLOCK=1`, the arm of record's RETIRED `STACKPERT` pairing (r7693+70.1), not its construction; the arm of record's rows are the `(L)` banks read below*",
       all((int(_DE[int(np.argmin(_v))]),
            next((int(_l) for _l in _DE if _l >= 5 and _v[list(_DE).index(_l)] >= 0.99), None)) == (4, 8)
           for _v in (_DF, _DD)),
@@ -593,7 +598,10 @@ for _nm, _got, _want in (("70's one-clock octopole residual, FROZEN", float(_o_r
     check(f"⛭ `r7691` {_nm}", abs(_got - _want) < 5e-3, f"{_got:+.2f} against {_want:+.2f}")
 _swF = _relF - _o_relF
 _swD = _relD - _o_relD
-check("⚑⛭⛭ ** THE OCTOPOLE'S EXCESS IS THE TWO-CLOCK SPLIT'S, MEASURED BY TURNING THE SPLIT OFF. ** "
+check("⚑⛭⛭ ** THE OCTOPOLE'S EXCESS IS THE `SPLITCLOCK=1` SPLIT'S, MEASURED BY TURNING THE SPLIT OFF. ** "
+      "\u26d4 *`r7699+70`: and `r7695+70.1` then SEPARATED that swing -- 72-77 per cent is the RETIRED `STACKPERT` "
+      "pairing's dynamics and +0.007 the projection, so it is NOT the arm of record's two-clock split's: under `(L)` "
+      "the hierarchy sits within 0.9 per cent of arm A (L) at l = 3 and there is no excess (the `r7697` block below)*  "
       "With one clock the octopole sits BELOW arm A on both builds; with the split it sits about five "
       "per cent above, and that swing is the largest of the seven multipoles on both builds.  "
       "\u26d4 *This REPLACES `r7687`'s gate asserting the attribution could not be made from these "
@@ -611,8 +619,8 @@ _MPT = json.loads(str(SW_AOR['manifest'].item()))['point']
 print(f"    \u26d4 the bank's own point: H0 {_MPT['H0']}, Om {_MPT['Om']}, WBH2 {_MPT['WBH2']}; "
       f"this receipt's ADJ: H0 {ADJ[0]}, Om {ADJ[1]}")
 check("\u24bd \u26d4\u26ed\u26ed ** THE REPOINT IS A POINT CHANGE AS WELL AS A SWITCH CHANGE, AND "
-      "THAT IS READ OUT OF THE BANK'S OWN MANIFEST RATHER THAN INFERRED. **  The arm-of-record "
-      "sweep records `H0 68.57073, Om 0.291246` -- the refit licensed point -- while this receipt's "
+      "THAT IS READ OUT OF THE BANK'S OWN MANIFEST RATHER THAN INFERRED. **  The `SPLITCLOCK=1` "
+      "sweep (labelled the arm of record's until `r7699+70`) records `H0 68.57073, Om 0.291246` -- the refit licensed point -- while this receipt's "
       "`ADJ` is `(68.60, 0.2973)`.  \u21d2 *So an arm-A-against-arm-B figure formed across the two "
       "is a POINT difference as much as an arm one.  `r7675+70.1` measured A against B with BOTH at "
       "the refit point and got 4.9 and 5.5 per cent; this receipt cannot reproduce that without "
@@ -734,7 +742,7 @@ def _r1x(_v, _places):
 _AOR = {int(_l): float(_DD[_i]) for _i, _l in enumerate(_DE)}          # split, DECOUPLED, distances
 _EXA = {int(_l): float(_DA[_i]) for _i, _l in enumerate(_DE)}          # the exact transfer, as printed
 _ONED = {int(_l): float(np.asarray(_OZ['armB_decoupled'], float)[_i]) for _i, _l in enumerate(_DE)}
-print("\n  \u26ed `r7693` THE DEPTHS THE PAPER WOULD PRINT, against the ones it prints now")
+print("\n  \u26ed `r7693` THE SPLITCLOCK=1 ROW (held at r7697, never printed), against the one-clock exact transfer")
 print("     l   PRINTED (exact)   HIER split/DEC   move   printed digits moved")
 for _l in range(2, 9):
     _mv = _AOR[_l] - _EXA[_l]
@@ -786,7 +794,9 @@ check("\u26ed `r7699` ** SIX OF THE SEVEN DEPTHS CHANGE BETWEEN THE EXACT TRANSF
       _MOVED == (2, 3, 4, 5, 6, 7),
       f"moved at l = {_MOVED}; l = 8 is {_EXA[8]:.4f} -> {_AOR[8]:.4f}")
 check("\u26ed `r7693` ...and the OCTOPOLE is the largest move, upward, which is the one that matters: "
-      "the sky's octopole is near-LCDM, so a shallower octopole moves TOWARD the sky",
+      "the sky's octopole is near-LCDM, so a shallower octopole moves TOWARD the sky"
+      " \u26d4 *`r7699+70`: true of the `SPLITCLOCK=1` row only; on arm A (L) the largest move is l = 5 (-0.009) "
+      "and the octopole's is +0.006*",
       max(range(2, 9), key=lambda l: abs(_AOR[l] - _EXA[l])) == 3 and _AOR[3] > _EXA[3],
       f"l = 3 moves {_AOR[3] - _EXA[3]:+.4f}, the largest; next is "
       f"{sorted((abs(_AOR[l] - _EXA[l]) for l in range(2, 9)))[-2]:.4f}")
@@ -812,11 +822,11 @@ check(f"\u26ed `r7693` ** the one-clock cross-validation holds to 2.9 per cent a
 _t8, _per8 = dm2lnL({**_AOR}, OBS)
 _tex, _perex = dm2lnL({**_EXA}, OBS)
 _rng = tuple(dm2lnL({**_AOR}, {**OBS, 3: _o})[0] for _o in (0.60, 0.95))
-print("\n  \u26ed `r7693` THE LIKELIHOOD ON THE NEW DEPTHS, against the printed one")
-print("     l    printed   arm of record   change")
+print("\n  \u26ed `r7693` THE LIKELIHOOD ON THE SPLITCLOCK=1 ROW (the retired pairing), against the one-clock exact transfer")
+print("     l    one-clock   SPLITCLOCK=1   change")
 for _l in range(2, 9):
     print(f"    {_l:2d}   {_perex[_l]:+7.3f}   {_per8[_l]:+11.3f}   {_per8[_l] - _perex[_l]:+8.3f}")
-print(f"    total 2-10: printed {_tex:+.3f}  ->  arm of record {_t8:+.3f}  "
+print(f"    total 2-10: one-clock {_tex:+.3f}  ->  SPLITCLOCK=1 {_t8:+.3f}  "
       f"({_t8 - _tex:+.3f});  octopole estimator {_rng[0]:+.3f} to {_rng[1]:+.3f}")
 for _nm, _got, _want, _tol, _fmt in (
         ("the total over 2 <= l <= 10", _t8, 1.44, 5e-3, '.2f'),
@@ -826,7 +836,7 @@ for _nm, _got, _want, _tol, _fmt in (
         ("l = 5's penalty", _per8[5], 1.18, 5e-3, '.2f'),
         ("the octopole estimator's low end", _rng[0], 0.20, 5e-3, '.2f'),
         ("the octopole estimator's high end", _rng[1], 3.09, 5e-3, '.2f')):
-    check(f"\u26ed `r7693` {_nm} on the arm of record is {_want:{_fmt}}",
+    check(f"\u26ed `r7693` {_nm} on the `SPLITCLOCK=1` row (the retired pairing; labelled the arm of record's until `r7699+70`) is {_want:{_fmt}}",
           abs(_got - _want) < _tol, f"{_got:+.3f} against {_want:{_fmt}}")
 #: ⛭ `r7693+cc66`, ON `check_unread_figure`: ** THE LABEL NO LONGER ATTRIBUTES A READING TO THE PAPER. **
 #:   *Its first form said "so `sec:largescale`'s 'a near-cancellation rather than a uniform cost'
@@ -834,7 +844,7 @@ for _nm, _got, _want, _tol, _fmt in (
 #:   numbers are all computed here -- and the ratchet was right that such a label goes stale silently
 #:   when the paper moves.  ⇒ Reworded to say what THIS receipt computed, per the gate's own second
 #:   option; what it licenses for the paper is a consequence stated without quoting it.*
-check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: on the arm of record the "
+check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: on the `SPLITCLOCK=1` row (labelled the arm of record's until `r7699+70`) the "
       "quadrupole still REWARDS, l = 3-5 still PENALISE, and there is still nothing above -- the same "
       "signs this receipt computes for the exact transfer. **  \u21d2 *So the near-cancellation is a "
       "property of both rows and not of the cross-check alone.*  \u26d4 *It does NOT license the "
@@ -845,6 +855,7 @@ check("\u26ed `r7693` ** AND THE SIGN PATTERN SURVIVES THE RE-POINT: on the arm 
       f"above: {' '.join(f'{_per8[_l]:+.3f}' for _l in (6, 7, 8))}")
 check("\u26d4\u26ed `r7693` ** AND THE TOTAL MOVES BY MORE THAN ITS PRINTED DIGIT, so the printed "
       "`+1.58` is a SECOND figure this re-point changes and not a number the depths carry along. ** "
+      "\u26d4 *`r7699+70`: this re-point is the HELD `SPLITCLOCK=1` one; the total on arm A (L) is the `r7697` block's*  "
       "*`sec:largescale`'s 'the same to the digit over 2 <= l <= 10' is a claim about the 8-vs-10 "
       "agreement, NOT about the value, and it survives -- checked separately below rather than "
       "assumed from the total*",
