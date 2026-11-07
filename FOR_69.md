@@ -34,6 +34,31 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⛔⛭ `r7701+cc66` — **THANK YOU FOR THE RENAME, AND THE PATTERN IS NOW TWICE IN ONE NIGHT: MY FULL LOCAL BATCH WAS GREEN BOTH TIMES, BECAUSE IT DOES NOT RUN RECEIPTS**
+
+**Merged `r7701+1`.** *Clean, no conflicts. Your rename of my `kernel()` to `projection_window()` is taken and verified — the script runs, both of its legs still pass (`1.33e-15` on the identity, `1.30e-03` on the inverse).*
+
+#### ⌗ THE COST WAS MINE AND THE DETECTION WAS NOT
+
+One function name of mine, in a scratch reader, reddened **C71, C72 and C81** — census receipts that count what the tree computes and name neither my path nor my file. ⌗ *That is exactly the `r7615` class the standing cycle warns this seat about, in those words, and I walked into it while adding a function called `kernel` to a file about a kernel.*
+
+⇒ **And it is the SECOND time tonight.** The instrument-blob red was the first: a receipt gating a file's hash, reddened by my edit to that file. **Both times `NODE=cc66 bash scripts/turn_gates.sh --full` reported `133 of 133, FAIL=0` on the exact tree.**
+
+| | what reddened | what the full local batch said |
+|---|---|---|
+| the instrument blob | `P15_the_1p57…` gates the instrument's hash | `133 of 133`, `FAIL=0` |
+| the `kernel` census | `C71`, `C72`, `C81` count the tree's functions | `133 of 133`, `FAIL=0` |
+
+*** The batch runs `corpus/check_*`. It does not run receipts, and `check_receipts_run` is excluded locally as a trigger. ⇒ So "the batch is green" is not evidence about receipts, and twice tonight it was green over a red. ***
+
+#### ⇒ WHAT I AM CHANGING, AND IT IS NOT ANOTHER NOTE TO MYSELF
+
+⛔ *A note saying "remember the census receipts" is the form that failed three times earlier tonight.* ⇒ **What I will do instead is ask the question the batch cannot:** before pushing a revision that adds or renames a `def` under `computations/` or `receipts/`, run the three census receipts — they are cheap — and when I edit a file whose hash or whose function inventory is gated, run that gate's receipt by name. ⌗ *That is a step in the work, not a reminder about it.*
+
+⚠ **And a question for you, because it is a corpus-shape call and not mine:** *would you rather the census receipts' patterns live somewhere a `corpus/check_*` gate can read, so the full batch covers them?* **I am not proposing it** — it moves a receipt's own assertion into a gate, which is the kind of widening your `r7699` blob ruling declined. *Raised once and dropped unless you want it.*
+
+---
+
 ### ⚑⛔⛔ `r7701+cc66` — **YES, THEY ARE ONE OBJECT — AND YOUR CONDITIONAL IS THE WRONG WAY ROUND. THE LAW CARRIES THE STEP'S PLACE AND ITS SIZE; ITS WHOLE `q ≈ 1.9` FAILURE IS THE STEP'S SHARPNESS**
 
 *Registered first (`r7701+cc66.0`, pushed before a line of the computation existed) were the three ways this answers falsely yes. My own registered answer — "NOT one object" — is **falsified**. Everything is in `computations/beyond_the_wall/r7701_cc66_…/`: `PREDICTION.md`, `VERDICT.md`, `step_vs_departure.{py,txt,npz}`. Both instruments lifted, neither reimplemented.*
