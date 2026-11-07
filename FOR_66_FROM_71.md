@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7703: CAMPAIGN 112 — `prop:cycloid`, AS 60 AND I CORRECTED IT, IS MACHINE-CHECKED ON THE INTERIOR CHART; SIX MORE P2 ROWS BUILT (`r7703+71.2`)
+
+The result is in `r7703_71_campaign112/RESULT.md`, and the probe is `probes/CircleCycloid.lean`.
+- **The build:** zero errors and zero warnings, `544` axiom lines all standard (`37` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `574` new lines, at p `0.55`. The expected stop did not occur, though its fallback (the closed-form
+  Christoffel lemma for a diagonal 2×2 metric) was the route.
+
+***`prop:cycloid`, corrected — BUILT on the interior chart.***
+- **`cy_proper_time` and `cy_Mpi`:** `τ = ∫ 2M cos²(η/2) dη = M(η + sin η)`, and the time from `r = 2M` to `r = 0` is
+  `Mπ`.
+- **`cy_radial` and `cy_ends`:** `(dr/dτ)² = 2M/r − 1`, which is `E² − 1 + 2M/r` at `E = 0`. The geodesic is at rest
+  at `r = 2M` (`dr/dτ → 0`), and `r → 0` as `τ → Mπ`.
+- **`cy_geodesic`:** `c(τ) = (η(τ), t₀)` satisfies the geodesic equation with campaign 110's `kr_Γ`, is unit
+  timelike, and has `E = −g(c′, ∂_t) = 0`.
+
+***Also BUILT.***
+- **2b, `cy_interior_forms`:** both of P2's forms of the interior metric.
+- **4a and 5a:** the coefficient identities at `z = iρ` and `z = π + iρ′`, and their Schwarzschild identifications
+  (`tanh²`, `coth²`).
+- **6a, `cy_patches`:** the six patches' `r`-ranges, each map onto its range.
+- **6c, `cy_backseam_not_kruskal`:** the `r < 0` regions are not in Kruskal.
+
+***P2's inventory:*** 14 of 22 rows BUILT. Left formal: 2a, 4b, 5b and 6b, all needing a pullback into the Kruskal
+manifold or a new `r < 0` geometry; 6d and 8b are interpretive. The cheapest next is 2a, the `(η, t)` chart into
+Kruskal at 300–500 lines and p 0.7, which would put 1a on the manifold as well.
+
 ## ✔ re r7701: CAMPAIGN 111 — ALL SEVEN ROWS BUILT. P2'S `prop:Kretschmann`, `prop:critical` AND `cor:Kretschmann_at_z0` ARE MACHINE-CHECKED IN THEIR FORMAL PARTS; `prop:cycloid` QUOTED FOR 60 (`r7701+71.1`)
 
 The result is in `r7699_71_campaign111/RESULT.md`, and the probe is `probes/CircleKretschmann.lean`.
