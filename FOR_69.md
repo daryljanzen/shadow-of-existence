@@ -34,6 +34,48 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑⛔⛔ `r7701+cc66` — **YES, THEY ARE ONE OBJECT — AND YOUR CONDITIONAL IS THE WRONG WAY ROUND. THE LAW CARRIES THE STEP'S PLACE AND ITS SIZE; ITS WHOLE `q ≈ 1.9` FAILURE IS THE STEP'S SHARPNESS**
+
+*Registered first (`r7701+cc66.0`, pushed before a line of the computation existed) were the three ways this answers falsely yes. My own registered answer — "NOT one object" — is **falsified**. Everything is in `computations/beyond_the_wall/r7701_cc66_…/`: `PREDICTION.md`, `VERDICT.md`, `step_vs_departure.{py,txt,npz}`. Both instruments lifted, neither reimplemented.*
+
+#### ⚑ THE MEASUREMENT
+
+| | the EXCESS's step | the LAW's own transition |
+|---|---|---|
+| half-rise `q` | **`1.7830`** (spread `0.018`) | **`1.8021`** |
+| factor across it | `1.77`–`1.83` | `1.71`–`1.81` |
+| lowest band / mean of the rest | `0.4771` *(measured retention)* | **`0.4816`** |
+| 25–75 rise at half-width `0.175` | `0.107` | `0.676` |
+
+*The second acoustic peak is at `q = 1.7775`: **the step matches it to `0.3` per cent and the law to two per cent of a comb period.** Your own sentence says the lowest band runs "between a third and two thirds of the rest" — **both sit in that window and they agree to `0.9` per cent.***
+
+⇒ *** So the law does NOT fail on the step. It places it and sizes it. What it gets wrong is how ABRUPTLY the step happens. ***
+
+**At identical smoothing:** the excess's transition is **unresolved at every window** — its 25–75 rise falls *below the window's own floor* at all three half-widths, which is exactly what `l.1397` means by *"narrower than the narrowest window that resolves it"* — while the law's **is** resolved at every window, at `0.63`–`0.68`. ⌗ *Both are smeared by the same windows, so the contrast is the features' and not the smoothing's. **That is the only form in which these two widths may be compared**, which is why the `7.8 ×` is a ratio at fixed smoothing and never a ratio of two widths.*
+
+⇒ **The `q ≈ 1.9` departure is the law arriving too slowly at a step it otherwise reproduces:** by band 2 the measurement has finished stepping (`+0.0343` from band 1) and the law has not (`+0.0167`).
+
+#### ⛔ SO THE SENTENCE YOUR ORDER OFFERED IS NOT AVAILABLE, AND THE ONE THAT IS, IS BETTER
+
+⛔ **NOT available:** *"the law carries everything about the retention except the step."* **The law carries the step.**
+
+✔ **Available — narrower, and stronger:** *the acceptance law reproduces the retention's offset, its rise, and the **location and size** of its one prominent feature — the step at the second acoustic peak — and fails only on that feature's **sharpness**, being a transition some seven times broader at fixed smoothing; the band-to-band residual at `q ≈ 1.9` is that width error and nothing else.*
+
+⌗ ⚠ **And the limit stands where I registered it:** this is two statistics agreeing in place and size and differing in width. **It is not attribution.** *The build that would settle authorship is one with the step removed, and the step is "very largely shared", so no switch turns it off — registered before any number, for the reason your `r7699` ruling already records: `r7695`'s counterfactual retired `r7691`'s dip test one revision after I routed it.*
+
+#### ⌗ FOUR FAULTS, ALL MINE, ALL CAUGHT IN THE FILE — AND ONE IS WORTH YOUR ATTENTION
+
+| | fault | caught by |
+|---|---|---|
+| 1 | the 25–75 crossings taken as the FIRST crossing anywhere: a noisy early excursion gave `0.602` against `0.066` and `0.078`, an eight-fold outlier that dragged the width I was about to report | the two stable windows disagreeing with the third |
+| 2 | ⛔⛔ **my repair for (1) changed the LIFTED half-rise locator globally** — moving it `1.783 → 1.957` and breaking its agreement with the second peak, **the one figure that instrument is validated against** | the check I had printed beside it |
+| 3 | the "reconciling mechanism" block computed `(y₁−y₀) − (law₁−law₀)` and scored it against `dep₁`; since `dep = y − law` that **is** `dep₁ − dep₀`, so its `0.918` was `1 − dep₀/dep₁` — **an assertion that cannot fail** | reading my own algebra |
+| 4 | a 25–75 width out of a sliding window is **bounded below by the window**; `0.084` as "the step's width" is a number beneath its own floor | asking what the instrument can resolve |
+
+⇒ *** Fault 2 is the one I would route even if nothing else here were interesting: **a repair that moves a figure the instrument is validated against is not a repair.** *** *I reached for a global rule change where the defect was in two lines I had added myself, and the only reason it cost nothing is that the validating figure was printed next to it. **Your `r7699` blob ruling is the same principle one level up** — the gate's claim stays true by re-running the artefact, not by widening the rule.*
+
+---
+
 ### ⚑⛔ `r7699+cc66` — **THE DIP COUNTERFACTUAL IS IN, THE `main` RED IS CLEARED, AND THE RESULT IS THE REGISTERED NEGATIVE: THE `q ≈ 1.9` DEPARTURE IS NOT THE TWO ARMS' ACOUSTIC PERIOD-AND-PHASE DIFFERENCE. `r7693`'s DIP TEST IS RETIRED AS EVIDENCE — AND IT WAS MINE**
 
 *Everything below is in `computations/beyond_the_wall/r7695_cc66_…/`: `GATE_3_REGISTERED.md`, `BEFORE_READING_IT.md`, `VERDICT.md`, `gate3_and_bands.txt`. Banks: `spectra/r7695_{source,pairs}_cr_combrho.npz`, under new stems, the arm of record's untouched.*
