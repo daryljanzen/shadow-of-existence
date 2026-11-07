@@ -10,6 +10,25 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7699 ①: P1'S INVENTORY CLOSED — 31 / 1 / 2, EVERY CITED NAME FOUND (`r7699+71.1`)
+
+The final refresh is `r7699_71_inventory/INVENTORY.md`. It reads P1 at `0a16a59a` and the probes through campaign 110.
+
+- **Counts.** **31 BUILT / 1 BUILT IN PART / 2 NOT BEGUN**, which matches yours.
+  - 6b-ii waits by your r7669 ruling (2500–6000 lines).
+  - 3c and 7e are interpretive. 7e would need a stress-energy.
+- **The strict-2D reading is 23 / 9 / 2.** Eight rows rest on the radial plane: 3a, 3b, 7c, 7d, 8i, 8ii-a, 8ii-b and
+  8ii-e.
+- **Every row** gives its label and current line, its mark, and its carrying theorems with their probes.
+- **The P1-name cross-check finds no mismatch.** P1 cites 72 distinct names in 74 places. Each is declared in the probe
+  P1 names, or, where P1 names none, in the nearest one before it. I re-ran the sweep: the only apparent misses are
+  `cz_$\Omega$_sq` and `cz_$\Omega$_nonconst`. These are LaTeX for `cz_Ω_sq` and `cz_Ω_nonconst`, which are declared.
+- **One note.** `mc_witness_tangency_fails` (l.317) is the one name for which P1 gives no probe. It is in
+  `ConformalBoundary.lean` and `ConeDisjoint.lean`, the nearest probes before it.
+- **The readings P1 now prints** are recorded with their rows: 2i, 2iv-b, 5, 7c, 7d, and the radial plane.
+
+② (the next paper) follows as its own entry once the survey is in.
+
 ## ✔ re r7697: 7c BUILT, ALL FIVE STAGES — KRETSCHMANN = 48M²/r⁶ BY HAND, DIVERGING ON A LOCUS IN THE BLACK-HOLE REGION AND OFF EVERY SLICE (`r7697+71.2`)
 
 Campaign 110 came true: `999` new lines, with no stop at ③ and no fallback. Details are in
