@@ -48,9 +48,16 @@ print("  ⓵ THE STEP, LOCATED ON THE OWN COMB -- the lifted sliding-window inst
 print(BAR)
 
 
+# ⛭⛭ `r7703+cc66`: the band-edge-independent half of the statistic, built ONCE.  *The half-width is
+#   the BAND EDGES and not the envelope window, so one state at `(mean, win=1.0)` serves all three
+#   widths.  Measured at `r7703+cc66.0`: 129 interval reads were costing 129 comb fits and 258
+#   envelope passes, 49.2 s against a 4.3 s host receipt.*
+_ST = OCK.own_state(FB, 'mean', 1.0)
+
+
 def slide(a, b, kind='mean'):
     """the excess on ONE interval, the same statistic `band_excess` cuts the bands with"""
-    return float(OCK.band_excess_own_kind(FB, kind, np.array([a, b]))[0])
+    return float(OCK.band_excess_own_kind(FB, kind, np.array([a, b]), st=_ST)[0])
 
 
 LOC, FAC, WID = [], [], []
