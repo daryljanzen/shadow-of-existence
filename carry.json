@@ -2084,29 +2084,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
-    "gates": [
-     "\u24bb\u2462"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42379041129",
-    "since": "84fb2b59bc278be44a282e603a44277484d3be0a"
-   },
-   "receipts/P15_CR_cosmology/C72_nineteen_of_the_fifty_nine_reachable_rows_are_reached_by_grafting_the_named_function_out_of_a_script_and_the_one_hole_is_filed_as_a_stated_limit_whose_capability_is_short_work.py": {
-    "gates": [
-     "\u24bd\u2466"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42379041129",
-    "since": "84fb2b59bc278be44a282e603a44277484d3be0a"
-   },
-   "receipts/P15_CR_cosmology/C81_order_two_is_done_in_one_cycle_the_zero_mode_capability_exists_and_the_measure_the_stated_limit_called_its_only_open_question_does_not_change_the_count.py": {
-    "gates": [
-     "\u24b6\u2463"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42379041129",
-    "since": "84fb2b59bc278be44a282e603a44277484d3be0a"
-   }
-  },
   "tolerance": {
    "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42379041129",
