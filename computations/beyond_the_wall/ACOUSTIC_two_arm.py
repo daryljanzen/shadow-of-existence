@@ -329,6 +329,31 @@ rs_leaf_of = CubicSpline(eg, np.concatenate([[0.0], cumulative_trapezoid(_csi(Hl
 # from LEAFPERT (which moves the whole equation to the leaf); the two are alternative operations and
 # should not both be set.  Identically 1 in the lcdm arm, a provable no-op. **
 PHASEONLY = os.environ.get('PHASEONLY', '0') == '1'
+# ⛭⛭⛭ `r7695+cc66` -- ** COMBRHO: THE CR PLASMA WITH THE CONTROL'S ACOUSTIC PERIOD. **  69's order,
+#   70's definition: the only well-posed form of "the drift removed" is to give this arm's own plasma
+#   the OTHER arm's comb period and phase, and read `retained_own` at the same seven bands.
+#   ⇒ ** THE CONSTRUCTION IS `S_new(k) = S_old(rho k)` WITH THE KERNEL LEFT AT `k`. **  The source side
+#     -- the solved fields AND every explicit `k` in the source: the Newtonian potential's `1/k^2`, the
+#     damping envelope, the Doppler and polarisation `1/k^2` -- is evaluated at `rho k`; `dk`, the
+#     primordial weight and `j_l(k x)` stay at `k`.
+#   ⛔ ** WHY NOT A RESAMPLE OF `S` IN PLACE, which is how the order words it: `_project` IS CALLED PER
+#     k-BATCH ** (`KBATCH`, default 250; `hier_run` loops `Cl += _project(kb, ...)` over disjoint
+#     slices).  An interpolation needs neighbours and a batch's end modes have none from the adjacent
+#     batch, while the shift is about one per cent of `k` -- so every seam would reach for a mode that
+#     is not in the array it was handed.  *This form needs no interpolation and keeps every mode
+#     independent, so it stays batch-safe and `KSLICE`-exact.*  Routed to 70 at `r7695+cc66.1`-`.2`.
+#   ⌗ *Unset = `ks is kb` = byte-identical BY CONSTRUCTION, not by measurement.  And `COMBRHO=1.0` set
+#     explicitly must ALSO be byte-identical: that is the WIRING gate, which the default cannot be,
+#     because a site read from the wrong array survives the default.*
+_CRHO = os.environ.get('COMBRHO')
+COMBRHO = float(_CRHO) if _CRHO else None
+#   ⛔⛔ ** AND `COMBRHO` WITH `SRCINJ` IS A REFUSAL, NOT A PRECEDENCE RULE. **  `SRCINJ` replaces `S`
+#     ENTIRELY with an analytic comb, so there is no plasma left to give the control's period to: the
+#     combination names no object.  *A precedence rule would silently run one of them and report a
+#     number; this stops.*
+if COMBRHO is not None and os.environ.get('SRCINJ'):
+    raise SystemExit("COMBRHO and SRCINJ are mutually exclusive: SRCINJ replaces the source "
+                     "entirely, so there is no plasma for COMBRHO to re-period.  Set one.")
 # ** PHASEPOW: the POWER of the clock factor phi = H_stack/H_leaf carried by the restoring term.
 # The default 2 is the frequency reading -- the pressure term goes as k^2 c_s^2, so a clock on the
 # frequency enters squared.  PHASEPOW=1 is the SOUND-SPEED reading: the clock enters c_s once, not
@@ -1621,6 +1646,9 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     for i0 in range(0, len(kk), nb):
         kb = kk[i0:i0 + nb]
         nk = len(kb)
+        # ⛭ `r7695+cc66`: the SOURCE's wavenumber.  Unset `COMBRHO` leaves `_kbs is kb`, so the
+        #   solver calls and the `_project` call below are the ones that stood here before.
+        _kbs = kb * COMBRHO if COMBRHO is not None else kb
         if _SRCI:
             # ** THE SOLVER IS SKIPPED BECAUSE ITS OUTPUT IS DISCARDED. **  `_project` overwrites
             # `S` from the analytic injection, so evolving the hierarchy would cost the whole run
@@ -1629,9 +1657,9 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
             print(f"    modes {i0}-{i0+nk} done (injected source, solver skipped)", flush=True)
             continue
         t1 = np.concatenate([E1, [e_sw]])
-        s1, _, NVf = evolve(kb, t_eval=t1, e_end=e_sw)
+        s1, _, NVf = evolve(_kbs, t_eval=t1, e_end=e_sw)
         Y1 = s1.y.T.reshape(len(t1), nk, NVf)
-        s2 = evolve_hier(kb, E2, e_sw, Y1[-1])
+        s2 = evolve_hier(_kbs, E2, e_sw, Y1[-1])
         Y2 = s2.y.T.reshape(len(E2), nk, NVH)
         Y = np.zeros((len(EE), nk, NVH))
         Y[:len(E1), :, :NVf] = Y1[:-1]
@@ -1642,12 +1670,14 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
             _sn, _sg = _yl[:, 7] / 2, _yl[:, I_FG] / 2
             _hc = float(Hc_of(EE[_zpi]))
             _on, _og = float(On_of(EE[_zpi])), float(Og_of(EE[_zpi]))
-            _ZK.append(kb.copy())
+            # ⛭ `r7695+cc66`: the fields are solved at `_kbs`, so that is the `k` they belong to.
+            #   *Unset `COMBRHO` makes this `kb.copy()` exactly as before.*
+            _ZK.append(_kbs.copy())
             _ZTH.append(_yl[:, 2] / 4)                       # UNDAMPED Theta_0 -- see above
             _ZPS.append(_yl[:, 6] - 6 * _hc ** 2 * (_on * _sn + _og * _sg) / kb ** 2)
             _ZPH.append(_yl[:, 6].copy())
             _ZTB.append(_yl[:, I_TB].copy())
-        Cl += _project(kb, EE, Y, ls, x0, e_sw)
+        Cl += _project(kb, EE, Y, ls, x0, e_sw, ks=_kbs)
         print(f"    modes {i0}-{i0+nk} done", flush=True)
     if _zps:
         _kz = np.concatenate(_ZK)
@@ -1749,7 +1779,7 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
     return ls, Dl
 
 
-def _project(kb, ee, Y, ls, x0, e_sw):
+def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
     """the line-of-sight integral with the POLARISATION SOURCE TERMS carried
 
         S = g (Theta_0 + Psi + Pi/4) + e^-tau (Phi' + Psi')
@@ -1758,19 +1788,24 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     with Pi = Theta_2 + Theta^P_0 + Theta^P_2 in the Theta normalisation, i.e. (F_2+G_0+G_2)/4.
     ** The last two terms are what an exp(-k^2/k_D^2) envelope cannot supply at any coefficient. **
     """
+    # ⛭ `r7695+cc66`: `ks` is the SOURCE's wavenumber and `kb` the KERNEL's.  They differ
+    #   only under `COMBRHO`; unset, `ks is kb` and every expression below is the one
+    #   that stood here before this revision.
+    if ks is None:
+        ks = kb
     Hcv = np.array([Hc_of(e) for e in ee])[:, None]
     Onv = np.array([On_of(e) for e in ee])[:, None]
     Ogv = np.array([Og_of(e) for e in ee])[:, None]
     sgn = Y[:, :, 7] / 2
     sgg = Y[:, :, I_FG] / 2
     Ph = Y[:, :, 6]
-    Ps = Ph - 6 * Hcv ** 2 * (Onv * sgn + Ogv * sgg) / kb[None, :] ** 2
+    Ps = Ph - 6 * Hcv ** 2 * (Onv * sgn + Ogv * sgg) / ks[None, :] ** 2
     g_ = vis_of(ee)[:, None]
     et = np.exp(-tau_of(ee))[:, None]
     # ** the envelope, FROZEN AT THE SWITCH. **  It covers [start, eta_sw] and nothing after, and
     # the hierarchy covers [eta_sw, end] and nothing before.  Disjoint supports, so the double count
     # that cost c54.175 a revision cannot occur here even in principle.
-    D = np.exp(-(kb[None, :] ** 2) * kD2inv_of(np.minimum(ee, e_sw))[:, None])
+    D = np.exp(-(ks[None, :] ** 2) * kD2inv_of(np.minimum(ee, e_sw))[:, None])
     Th0 = Y[:, :, 2] / 4 * D
     Pi = (Y[:, :, I_FG] + Y[:, :, I_GG] + Y[:, :, I_GG + 2]) / 4 * D
     tb = Y[:, :, I_TB] * D
@@ -1792,9 +1827,9 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     # whole claim is that its edits change nothing unless a knob is set.*
     S = (g_ * (_SWSRC * (Th0 + Ps) + _PI * Pi / 4)
          + _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
-         + _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
+         + _DPSRC * np.gradient(g_ * tb, ee, axis=0) / ks[None, :] ** 2
          + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
-         / kb[None, :] ** 2)
+         / ks[None, :] ** 2)
     if _SRCI:
         # ** THE ANALYTIC SOURCE REPLACES `S` ENTIRELY, so `Y` is unused on this path -- and
         # `hier_run` skips the solver for exactly that reason.  Nothing here is a spectrum of the
@@ -1838,11 +1873,11 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     if _SRCS or _SRCD or _SRCE:
         _il = int(np.argmin(np.abs(ee - ETA_LS)))
         _sw = g_ * (_SWSRC * (Th0 + Ps))
-        _dp = _DPSRC * np.gradient(g_ * tb, ee, axis=0) / kb[None, :] ** 2
+        _dp = _DPSRC * np.gradient(g_ * tb, ee, axis=0) / ks[None, :] ** 2
         _iw = _ISW * et * (np.gradient(Ph, ee, axis=0) + np.gradient(Ps, ee, axis=0))
         _pl = (g_ * (_PI * Pi / 4)
                + _PI * 0.75 * np.gradient(np.gradient(g_ * Pi, ee, axis=0), ee, axis=0)
-               / kb[None, :] ** 2)
+               / ks[None, :] ** 2)
         # the four terms are the source, and the receipt gates that they sum to it -- so a reader
         # need not take the split on trust, and a future edit to `S` that forgets this block fails.
         if _tp is not None:

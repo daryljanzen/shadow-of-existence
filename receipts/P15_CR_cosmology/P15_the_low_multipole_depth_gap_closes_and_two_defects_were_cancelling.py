@@ -723,11 +723,19 @@ print("     CANCEL. **  *The deficit is real, parameter-free, and lands in the w
 #     to the arm of record, and makes the exact transfer the cross-validation.*  ⛔ **A gate or a
 #     sentence calling the old figures an error would be a false statement about the record**, which
 #     is why the comparison below is labelled a re-point and never a repair.
+def _r1x(_v, _places):
+    """the value at `_places` decimals under BOTH conventions, as a pair -- `r7693`'s lesson: a
+    boundary read as a point is how a settled digit becomes a 'convention question'"""
+    _d = Decimal(repr(float(_v)))
+    _q = Decimal('1.' + '0' * _places)
+    return (str(_d.quantize(_q, ROUND_HALF_UP)), str(_d.quantize(_q, ROUND_HALF_EVEN)))
+
+
 _AOR = {int(_l): float(_DD[_i]) for _i, _l in enumerate(_DE)}          # split, DECOUPLED, distances
 _EXA = {int(_l): float(_DA[_i]) for _i, _l in enumerate(_DE)}          # the exact transfer, as printed
 _ONED = {int(_l): float(np.asarray(_OZ['armB_decoupled'], float)[_i]) for _i, _l in enumerate(_DE)}
 print("\n  \u26ed `r7693` THE DEPTHS THE PAPER WOULD PRINT, against the ones it prints now")
-print("     l   PRINTED (exact)   ARM OF RECORD   move   printed digits moved")
+print("     l   PRINTED (exact)   HIER split/DEC   move   printed digits moved")
 for _l in range(2, 9):
     _mv = _AOR[_l] - _EXA[_l]
     print(f"    {_l:2d}      {_EXA[_l]:.4f}          {_AOR[_l]:.4f}    {_mv:+.4f}      "
@@ -747,9 +755,19 @@ for _l, _want in ((2, 0.487), (3, 0.435), (4, 0.359), (5, 0.666),
     check(f"\u26ed `r7693` the EXACT TRANSFER's depth at l = {_l} -- what the paper prints TODAY -- "
           f"is {_want:.3f}", abs(round(_EXA[_l], 3) - _want) < 5e-4,
           f"{_EXA[_l]:.4f} rounds to {round(_EXA[_l], 3):.3f}")
+# ⛔⛔ `r7697+cc66`: ** THESE SEVEN WERE LABELLED "the arm of record's" AND THEY ARE NOT. **  `70`'s
+#   `r7693` result: HIER's `SPLITCLOCK` leaves the perturbations on the stacking ℋ with leaf-total
+#   fractions, which is the arm of record's RETIRED `STACKPERT=1` pairing and not its construction.
+#   ⇒ *** The NUMBERS are right -- they are what this bank's DECOUPLED row carries -- and the OBJECT
+#   was misnamed by me.  A sound figure attached to a claim it cannot support, which is this seat's
+#   recurring defect, landed in a receipt under 69's merge. ***  Relabelled, not deleted: the row is a
+#   real measurement of a real build and the mixture is worth keeping pinned.  The arm of record's own
+#   row is pinned below, from the `(L)` banks.
 for _l, _want in ((2, 0.478), (3, 0.459), (4, 0.358), (5, 0.651),
                   (6, 0.906), (7, 0.982), (8, 0.998)):
-    check(f"\u26ed `r7693` the arm of record's depth at l = {_l} is {_want:.3f}",
+    check(f"\u26ed `r7693` the HIERARCHY's split-clock DECOUPLED depth at l = {_l}, at the distances "
+          f"point and ON THE RETIRED `STACKPERT` PAIRING, is {_want:.3f} \u26d4 *NOT the arm of "
+          f"record's: `r7697` corrects that label, and `r7693`'s drafts off this row were held*",
           abs(round(_AOR[_l], 3) - _want) < 5e-4, f"{_AOR[_l]:.4f} rounds to {round(_AOR[_l], 3):.3f}")
 # ⌗ the move, pinned as a SET rather than one multipole at a time: the claim the drafting rests on is
 #   WHICH printed digits change, and a per-multipole pin does not assert that the others hold still.
@@ -833,6 +851,95 @@ check("\u26ed `r7693` ...and the clause's ACTUAL claim -- the same total over 2 
       abs(_t8only - _t8) < 5e-3 and abs(_AOR[8] - 1.0) < 0.01,
       f"2-8 gives {_t8only:+.4f}, 2-10 gives {_t8:+.4f}, apart by {abs(_t8only - _t8):.2e}; "
       f"the depth at l = 8 is {_AOR[8]:.4f}")
+# ===================================================================================================
+# ⛭⛭⛭ `r7697+cc66`, ON 69's ORDER: ** THE ARM OF RECORD UNDER `(L)`, AND THE PAIRING IS ASSERTED FROM
+#   THE BANK'S OWN CONFIG BEFORE A FIGURE IS READ OFF IT. **
+#   ⛔ *** THIS GATE EXISTS BECAUSE `r7693` HAD NOTHING LIKE IT. ***  There I checked that my read of a
+#   bank matched the order's row -- it did, at all seven multipoles -- and never asked whether the bank
+#   was the object the order said it was.  It was not, the whole rewrite was held, and no check I had
+#   written could have caught it.  ⇒ **A filename and a manifest sentence are claims ABOUT a run; the
+#   pairing is a fact OF it.**  So the pairing is read out of `config` and asserted.
+_LA = os.path.join(SPEC, 'p15_lowell_depths_armA_leafpert_leafrec1.npz')
+_LB = os.path.join(SPEC, 'p15_lowell_depths_leafpert_leafrec1.npz')
+for _nm, _pth in (("arm A under (L)", _LA), ("the hierarchy under (L)", _LB)):
+    check(f"\u26ed `r7697` the `(L)` bank for {_nm} is present: `spectra/{os.path.basename(_pth)}`",
+          os.path.exists(_pth), os.path.basename(_pth))
+_LAZ = np.load(_LA, allow_pickle=True)
+_LBZ = np.load(_LB, allow_pickle=True)
+_LAC = json.loads(str(_LAZ['config'].item()))
+check("\u26ed\u26d4 `r7697` ** AND THE BANK SAYS OF ITS OWN RUN THAT IT IS `(L)`: `SPLITCLOCK` IS `L` ON "
+      "THE DISTANCES ROW AND `STACKPERT` IS UNSET. **  \u21d2 *This is the check `r7693` lacked: there I "
+      "verified my read against the order's row and never asked what the bank WAS.  A filename is a "
+      "claim about a run; the pairing is a fact of it*",
+      _LAC.get('SPLITCLOCK', {}).get('distances__armA__L') == 'L'
+      and _LAC.get('STACKPERT') is None,
+      f"SPLITCLOCK[distances__armA__L]={_LAC.get('SPLITCLOCK', {}).get('distances__armA__L')!r}, "
+      f"STACKPERT={_LAC.get('STACKPERT')!r}")
+_LE = list(np.asarray(_LAZ['ells'], int))
+_ARMA = {_l: float(np.asarray(_LAZ['distances__armA__L'], float)[_LE.index(_l)]) for _l in range(2, 9)}
+_LDEC = {_l: float(np.asarray(_LBZ['distances__armB_decoupled__L'], float)[_LE.index(_l)])
+         for _l in range(2, 9)}
+_LFRO = {_l: float(np.asarray(_LBZ['distances__armB_frozen__L'], float)[_LE.index(_l)])
+         for _l in range(2, 9)}
+print("\n  \u26ed `r7697` THE ARM OF RECORD UNDER (L) -- what the paper would print")
+print("     l   in print   arm A (L)   3 places   2 places")
+for _l in range(2, 9):
+    print(f"    {_l:2d}    {_EXA[_l]:.4f}     {_ARMA[_l]:.4f}     {_r1x(_ARMA[_l], 3)[0]:>6s}     "
+          f"{_r1x(_ARMA[_l], 2)[0]:>5s}")
+for _l, _w3 in ((2, '0.485'), (3, '0.441'), (4, '0.354'), (5, '0.657'),
+                (6, '0.909'), (7, '0.983'), (8, '0.999')):
+    check(f"\u26ed `r7697` arm A (L)'s depth at l = {_l} is {_w3} at three places, under BOTH "
+          f"rounding conventions", _r1x(_ARMA[_l], 3) == (_w3, _w3),
+          f"{_ARMA[_l]:.6f} -> {_r1x(_ARMA[_l], 3)}")
+for _l, _w2 in ((2, '0.48'), (3, '0.44'), (4, '0.35'), (5, '0.66')):
+    check(f"\u26ed `r7697` ...and {_w2} at the two places `l.2771` prints, both conventions",
+          _r1x(_ARMA[_l], 2) == (_w2, _w2), f"{_ARMA[_l]:.6f} -> {_r1x(_ARMA[_l], 2)}")
+_M3 = tuple(_l for _l in range(2, 9) if _r1x(_ARMA[_l], 3)[0] != f"{_EXA[_l]:.3f}")
+check("\u26ed\u26d4 `r7697` ** SIX OF SEVEN THREE-PLACE DIGITS MOVE AND THE ONE THAT HOLDS IS l = 7 -- "
+      "where on `r7693`'s mixture row it was l = 8. **  \u21d2 *So WHICH multipole survives is a "
+      "property of the ROW and not of the sector, and a sentence reading 'all but one' must name which "
+      "one or say neither*", _M3 == (2, 3, 4, 5, 6, 8),
+      f"moved at l = {_M3}; l = 7 is {_EXA[7]:.4f} -> {_ARMA[7]:.4f}")
+_XL = {_l: 100.0 * (_LDEC[_l] - _ARMA[_l]) / _ARMA[_l] for _l in range(2, 9)}
+_XF = {_l: 100.0 * (_LFRO[_l] - _ARMA[_l]) / _ARMA[_l] for _l in range(2, 9)}
+print("  \u26ed `r7697` THE CROSS-VALIDATION ON (L), per cent of arm A (L)")
+print("    DECOUPLED " + " ".join(f"l{_l}:{_XL[_l]:+6.2f}" for _l in range(2, 9)))
+print("    FROZEN    " + " ".join(f"l{_l}:{_XF[_l]:+6.2f}" for _l in range(2, 9)))
+check("\u26ed\u26d4 `r7697` ** ON (L) THE DECOUPLED HIERARCHY IS WITHIN 2.9 PER CENT OF ARM A AT EVERY "
+      "l = 2-8, THE OCTOPOLE INCLUDED AT -0.9 -- SO THERE IS NO OCTOPOLE EXCEPTION. **  \u21d2 *The two "
+      "clauses in print say the hierarchy 'sits five and a half per cent high', an excess attributed to "
+      "the two-clock split.  `70` measures that 72-77 per cent of it was the RETIRED pairing's "
+      "dynamics, so those clauses described a build the arm of record does not run: this is a "
+      "WITHDRAWAL and not a refinement, and `r7691`'s attribution -- which this seat measured, pinned "
+      "and routed -- does not survive onto (L) in the form it was landed in*",
+      max(abs(_v) for _v in _XL.values()) < 2.95 and abs(_XL[3]) < 1.0,
+      f"DECOUPLED worst {max(abs(_v) for _v in _XL.values()):.2f} per cent at "
+      f"l = {max(range(2, 9), key=lambda l: abs(_XL[l]))}, octopole {_XL[3]:+.2f}; "
+      f"FROZEN worst {max(abs(_v) for _v in _XF.values()):.2f} at "
+      f"l = {max(range(2, 9), key=lambda l: abs(_XF[l]))}")
+_tA, _pA = dm2lnL({**_ARMA}, OBS)
+_rA = tuple(dm2lnL({**_ARMA}, {**OBS, 3: _o})[0] for _o in (0.60, 0.95))
+print(f"  \u26ed `r7697` THE LIKELIHOOD ON ARM A (L): total {_tA:+.4f}; per multipole " +
+      " ".join(f"l{_l}={_pA[_l]:+.3f}" for _l in range(2, 6)) +
+      f"; range {_rA[0]:+.3f} to {_rA[1]:+.3f}")
+for _nm, _got, _want in (("the total over 2 <= l <= 10", _tA, 1.72),
+                         ("the quadrupole's reward", _pA[2], -2.56),
+                         ("the octopole's penalty", _pA[3], 0.93),
+                         ("l = 4's penalty", _pA[4], 2.16),
+                         ("l = 5's penalty", _pA[5], 1.12),
+                         ("the estimator range's low end", _rA[0], 0.38),
+                         ("the estimator range's high end", _rA[1], 3.49)):
+    check(f"\u26ed `r7697` {_nm} on arm A (L) is {_want}", abs(_got - _want) < 6e-3,
+          f"{_got:+.4f} against {_want}")
+check("\u26ed `r7697` ** AND THE SIGN PATTERN SURVIVES ONTO (L) TOO: the quadrupole rewards, l = 3-5 "
+      "penalise, nothing above. **  \u26d4 *The TOTAL, though, moves the OTHER WAY from `r7693`'s "
+      "mixture row -- it RISES to +1.72 where that row FELL to +1.44 -- so the direction of the "
+      "total's move is row-dependent, which is why it was not predicted on either row*",
+      _pA[2] < 0 and all(_pA[_l] > 0 for _l in (3, 4, 5))
+      and all(abs(_pA[_l]) < 0.1 for _l in (6, 7, 8)) and _tA > _t8,
+      f"l = 2 {_pA[2]:+.2f}; l = 3-5 {_pA[3]:+.2f} {_pA[4]:+.2f} {_pA[5]:+.2f}; "
+      f"total {_tA:+.4f} against the mixture row's {_t8:+.4f}")
+
 # ⌗ ⛔⛔ ** AND THE FIRST FORM OF THIS GATE WAS WRONG, BY THE EXACT DEFECT `r7691` PINNED A FIX FOR
 #   ONE REVISION AGO. **  *It read: "l = 4's term goes `+2.029` -> `+2.050`, EXACTLY the one-place
 #   rounding boundary, so whether the printed digit changes is a rounding-convention question and not
