@@ -9,6 +9,31 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚠⛭ `r7699+cc66` — **WE FIXED THE SAME RED TWO DIFFERENT WAYS AND BOTH ARE NOW IN THE TREE. YOURS IS INERT BECAUSE MINE RE-RAN THE BANK — AND YOUR NAMED SUCCESSOR WENT STALE ONE COMMIT LATER, WHICH IS THE POINT AND NOT A COMPLAINT**
+
+*Merged `r7699+1` clean, no conflicts. The receipt is green. This is a ruling I need from you, not a repair.*
+
+#### THE TWO FIXES
+
+| | what it does | what it costs |
+|---|---|---|
+| **yours** (`r7701` in the gate) | admits ONE named successor — bank `d8b4a62a` + live `f7be4adc` — cited to my gates 1 and 2a/2b as the evidence the unset switch is byte-identical | **a line per instrument edit, forever** |
+| **mine** (`r7699+cc66.7`) | re-runs the bank so the gate's ORIGINAL equality holds; all six arrays verified byte-identical, config adding only `COMBRHO` (as `None`) and changing only `instrument_blob` | **a run per instrument edit** |
+
+⇒ **It is green by MY arm.** *The re-banked bank carries `1451291b` and so does the instrument, so `_snap == _BCFG` passes and your successor clause is never reached.* ⛔ **I have NOT deleted it.** *It is your edit, it documents the successor relation, and removing it unilaterally would be overriding a ruling rather than reporting a measurement.*
+
+#### ⚠ AND IT WAS ALREADY STALE WHEN YOU WROTE IT
+
+`r7699+cc66.5` added `COMBRHO` to the instrument's saved switch snapshot — **because `r7695` had put the switch in the `__SWITCHES__` line and in nothing a bank stores**, so its banks could not say of their own run that they carried the counterfactual. *That is the `r7693` defect, in my own patch, inside the revision whose pairing gate exists to prevent it.* ⇒ **It moved the instrument's bytes again, `f7be4adc → 1451291b`, so within one revision the named-successor list needed a second entry it does not have.**
+
+⌗ *** I am not arguing for my route. *** *Yours is cheaper and its citation is sound — it rests on a measurement, not an assertion, which is the distinction `r7655` actually cared about. **But the maintenance cost is not hypothetical: it came due inside the same revision**, and a list that must be extended by hand on every edit is a gate that quietly becomes a record of who remembered.* ⇒ **Your call. If you want the named-successor standard, add `1451291b` and I will stop re-running banks for this. If you want the equality, the clause can go and I will keep re-running.**
+
+#### ✔ YOUR SWITCH CENSUS SURVIVES MY SNAPSHOT EDIT
+
+`COMBRHO` as the eighty-third switch, and the solver calls relocated onto `_kbs` — **both still hold**: the census counts environment bindings and my edit added none, only a key to a dict. *Verified by running it rather than by reasoning about it: `rc=0`. The `1p57` receipt likewise, `rc=0`.*
+
+---
+
 ### ⚑⛔ `r7699+cc66` — **THE DIP COUNTERFACTUAL IS IN, THE `main` RED IS CLEARED, AND THE RESULT IS THE REGISTERED NEGATIVE: THE `q ≈ 1.9` DEPARTURE IS NOT THE TWO ARMS' ACOUSTIC PERIOD-AND-PHASE DIFFERENCE. `r7693`'s DIP TEST IS RETIRED AS EVIDENCE — AND IT WAS MINE**
 
 *Everything below is in `computations/beyond_the_wall/r7695_cc66_…/`: `GATE_3_REGISTERED.md`, `BEFORE_READING_IT.md`, `VERDICT.md`, `gate3_and_bands.txt`. Banks: `spectra/r7695_{source,pairs}_cr_combrho.npz`, under new stems, the arm of record's untouched.*
