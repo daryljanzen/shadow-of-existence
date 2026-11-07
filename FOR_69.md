@@ -9,6 +9,59 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑⛔ `r7699+cc66` — **THE DIP COUNTERFACTUAL IS IN, THE `main` RED IS CLEARED, AND THE RESULT IS THE REGISTERED NEGATIVE: THE `q ≈ 1.9` DEPARTURE IS NOT THE TWO ARMS' ACOUSTIC PERIOD-AND-PHASE DIFFERENCE. `r7693`'s DIP TEST IS RETIRED AS EVIDENCE — AND IT WAS MINE**
+
+*Everything below is in `computations/beyond_the_wall/r7695_cc66_…/`: `GATE_3_REGISTERED.md`, `BEFORE_READING_IT.md`, `VERDICT.md`, `gate3_and_bands.txt`. Banks: `spectra/r7695_{source,pairs}_cr_combrho.npz`, under new stems, the arm of record's untouched.*
+
+#### ✔ FIRST, THE RED YOU WERE SENT ABOVE IS FIXED
+
+`cc66_r185_verify_cr_leafrec1` re-run on the current instrument: **all six banked arrays BYTE-IDENTICAL**, `config` adding only `COMBRHO` (as `None`, the unset run) and changing only `instrument_blob`. **`P15_the_1p57_has_no_parameter_address…` now exits `0`, ALL CHECKS PASS.** ⇒ *So both instrument edits are inert BY MEASUREMENT, which is what `r7655`'s precedent demands of any edit to that file — and not relabelled, which would have made the gate green by making it false.*
+
+#### ✔ THE GATES, ALL GREEN
+
+| | |
+|---|---|
+| **gate 3** | the source comb's fitted period `1.011500 → 1.016750` against the control's `1.017000` — **ONE** step of the fitter's own grid, against a registered tolerance of two |
+| **gate 3b** | `r_s`, `D_M`, `l_A` and the saved `k` grid identical to the digit — a re-combed plasma, not a different cosmology |
+| **the fold** | tiling, `rc=0`, split residual, pairs closing on `D_l`, and `COMBRHO` read back out of **every slice's own saved `config`** |
+| **the snapshot edit** | **330 arrays byte-identical** across 12 slice pairs, configs differing in exactly `COMBRHO` and `instrument_blob` |
+
+#### ⚑ AND THE LOW-CONFIDENCE LIMB IS THE POSITIVE RESULT
+
+I registered, at low-to-moderate confidence, that matching the SOURCE comb would also bring the `D_l` comb to the control's period. **It does: `1.004500 → 1.009750` against `1.009250`, two grid steps.** ⇒ **The `D_l` comb's period difference is INHERITED FROM THE PLASMA and the projection's geometry adds none of its own** — *so the own-comb statistic's `L`-side remap is correcting one thing and not two, which was the licence I wrote for the other branch.*
+
+#### ⛔⛔⛔ ARM ② IS FALSIFIED, AND HOW IT NEARLY READ AS CONFIRMED IS THE RESULT
+
+The **raw** departure at `q ≈ 1.9` goes **`+0.0192 → +0.0000`** — ninety-nine point nine per cent gone. *** My own reading script printed `✔ CONFIRMED`. *** ⛔ **But every other band acquired about `−0.021` at the same time:**
+
+| q | dep(AOR) | dep(CF) | **shape(AOR)** | **shape(CF)** |
+|---|---|---|---|---|
+| 1.20 | `+0.0016` | `−0.0201` | `−0.0068` | `−0.0068` |
+| **1.90** | **`+0.0192`** | **`+0.0000`** | **`+0.0124`** | **`+0.0147`** |
+| 2.60 | `+0.0021` | `−0.0220` | `−0.0031` | `−0.0060` |
+| 3.30 | `−0.0026` | `−0.0212` | `−0.0062` | `−0.0038` |
+| 4.00 | `+0.0072` | `−0.0150` | `+0.0052` | `+0.0038` |
+| 4.70 | `−0.0001` | `−0.0244` | `−0.0005` | `−0.0043` |
+| 5.40 | `−0.0022` | `−0.0189` | `−0.0011` | `+0.0025` |
+
+⇒ *** The LEVEL of the whole set moved by `−0.0210`, and `q = 1.9` is merely where the new level crosses the law. The FEATURE is slightly LARGER (`+0.0124 → +0.0147`, a factor of `1.19`) and is still the largest of the seven. *** ⌗ *Under mean-removal instead of `r7693`'s line-removal it is `1.12`. **Falsified either way.***
+
+**Why the shape is the statistic, and why choosing it is not choosing the answer:** the departure at `q ≈ 1.9` is a band-to-band SHAPE claim *by construction* — `r7689`'s finding is that the law carries the offset and the rise and **not** the band-to-band shape, and `r7693`'s own dip test detrends for exactly that reason. ⇒ *The shape statistic was established two revisions before this measurement.*
+
+⌗ *** AND THIS IS MY OWN REGISTERED WARNING, ONE LEVEL UP. *** *`BEFORE_READING_IT.md` guarded the **LAW** against moving under the counterfactual and wrote: "a number that falls for the wrong reason is worse than one that does not fall at all, because the first gets reported." **It did not guard the LEVEL.** Arm ③'s registered confound is what caught it.*
+
+#### ⇒ WHAT THIS LICENSES, IN THE REGISTRATION'S OWN WORDS
+
+- **The `q ≈ 1.9` departure is NOT the two arms' acoustic period-and-phase difference.** *The plasma carried the control's period to one step of the fitter and the departure did not go.*
+- ⛔ **`r7693`'s dip test is RETIRED AS EVIDENCE.** *Its rank-1-of-24 was a shape consistency, licensed as such, and the counterfactual says the mechanism it was consistent with is not the one acting. **That was my positive result — I measured it, routed it, and you landed its clause.** If anything in print leans on it, it needs re-reading, and that is yours to rule on.*
+- ⚠ **The level's `−0.0210` is UNSEPARATED**, exactly as arm ③ registered: a resample carrying an envelope stretch does that to a ratio of RMS values, and this test moves stretch and period together. *Nothing is claimed about the level in either direction.*
+
+#### ⌗ WHAT I AM NOT ASKING YOU TO LAND
+
+**Nothing, yet.** *The paper's retention paragraph says the law does not produce the band-to-band shape; this result does not change that sentence, it removes one candidate explanation for it. ⇒ Whether the `r7693` dip-test clause needs withdrawing is a reading of what it actually claims, and that is your call — I have said what the measurement licenses and stopped there.*
+
+---
+
 ### ⛔⛔⛔ `r7699+cc66` — **STOP: THERE IS A RED ON `main` RIGHT NOW AND IT IS MINE. THE `r7695` SWITCH CHANGED THE INSTRUMENT'S BYTES, AND ONE RECEIPT GATES ON EXACTLY THAT**
 
 **`P15_the_1p57_has_no_parameter_address…` exits `1` on a pristine `origin/main` worktree.** Its gate ⓿⓿ asserts `_snap['instrument_blob'] == _BCFG['instrument_blob']` — *the git blob hash of the instrument that RAN against the one stored in the bank it produced* — and the two no longer agree:
