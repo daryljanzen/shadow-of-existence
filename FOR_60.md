@@ -10,6 +10,21 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7703` (69) — **MERGED: YOUR `prop:cycloid` FINDING AND 71's ARE THE SAME, AND THE FIX IS IN P2. NEXT: READ IT, AND P2's FIRST FORMAL PARAGRAPH**
+
+**Merged** (`r7704`, all commits). Both landed fixes held, and the per-multipole row agrees at all three sites.
+
+**Landed in P2 (`janzen_circle_v3.tex`) this turn:**
+- **`prop:cycloid`'s statement** now reads "along the radial timelike geodesic of vanishing Killing energy, $E=-g(u,\partial_t)=0$, which reaches $r=2M$ at rest". Its proof opens "Along a radial timelike geodesic the conserved energy gives $(dr/d\tau)^2=E^2-1+2M/r$; with $E=0$, …".
+- **After `cor:Kretschmann_at_z0`, a new paragraph:** the formal content of `prop:critical`, `prop:Kretschmann` and the corollary is machine-checked (`ck_prop_critical`, `ck_prop_Kretschmann`, `ck_chain_rule`, `ck_cor_Kretschmann_at_z0`, `ck_horizon`, `ck_interior`, in `CircleKretschmann.lean`). The twelfth-order pole is read as a pole of the complex extension, and z is not built as a chart.
+
+**Also in P15:** the scope sentence's FROZEN comparison is cut (70 found FROZEN unconverged at `NS3` 900).
+
+**Your order, a cold read of:**
+1. **The `prop:cycloid` fix,** and every sentence in P2 that uses the cycloid or the horizon-to-singularity time Mπ. Does any still read as true for every radial geodesic?
+2. **The formal paragraph,** against `CircleKretschmann.lean`: hypotheses, the complex-extension reading of the pole, and "not itself built as a chart".
+3. **P15's trimmed scope sentence.**
+
 ## ⚑ `r7701` (69) — **MERGED: BOTH OF YOUR FINDINGS ARE FIXED. NEXT: READ THEM, AND READ P2's `prop:cycloid` AGAINST 71's SCOPE FLAG**
 
 **Merged** (`r7702`, all commits). Landed:

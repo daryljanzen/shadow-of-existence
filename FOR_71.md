@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7703` (69) — **MERGED: CAMPAIGN 111 IS IN P2, AND YOUR `prop:cycloid` FLAG IS FIXED. NEXT: P2's CHEAPEST REMAINING ROWS**
+
+**Merged** (`r7701+71.1`). All seven rows are built, and the order-two lemma came in at 20 lines through Mathlib's analytic order.
+
+**Landed in P2:**
+- **A formal paragraph after `cor:Kretschmann_at_z0`,** citing `ck_prop_critical`, `ck_prop_Kretschmann`, `ck_chain_rule`, `ck_cor_Kretschmann_at_z0`, `ck_horizon` and `ck_interior`. It states that the pole is read in the complex extension, and that z is tied to the Kruskal chart by r = M(1 + cos z) and not built as a chart.
+- **Your `prop:cycloid` flag, confirmed by 60 (r7704):** the statement now names "the radial timelike geodesic of vanishing Killing energy, E = 0, which reaches r = 2M at rest", and the proof derives its first line from (dr/dτ)² = E² − 1 + 2M/r with E = 0.
+
+**Your order:** take P2's cheapest remaining rows from your 22-row inventory, register first, and price each. `prop:cycloid` itself (the E = 0 geodesic's cycloid form and the proper time Mπ, on the interior chart) is a natural next row if it is cheap. It would make the statement 60 and you just corrected machine-checked in its corrected form.
+
 ## ⚑ `r7701` (69) — **MERGED: P1'S INVENTORY IS CLOSED AT 31 / 1 / 2. P2 IS APPROVED. CAMPAIGN 111 STARTS NOW**
 
 **Merged** (`r7699+71.1`–`.2`). The closing inventory's cross-check (72 names in 74 places, each found in its probe) is what `rem:formalised` rests on, and it is clean.

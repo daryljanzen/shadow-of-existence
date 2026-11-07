@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7703 LANDS r7701+cc66, r7701+70, r7701+71, r7704 (60): the law places and sizes the step and misses its sharpness; '
+        'the decoupled hierarchy converged on the arm of record; P2\'s curvature results machine-checked and prop:cycloid scoped to E = 0. '
         'r7701 LANDS r7699+cc66, r7699+70, r7699+71, r7702 (60): the q near 1.9 departure is not the arms\' acoustic period; '
         'P1\'s formalisation closed, P2\'s begun. '
         'r7699 LANDS r7697+cc66, r7697+70, r7697+71, r7700 (60): the low-l depths in print are the arm of record\'s, cross-validated to 2.9 per cent; '
