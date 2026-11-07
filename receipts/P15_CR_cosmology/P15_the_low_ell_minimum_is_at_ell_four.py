@@ -198,11 +198,30 @@ print(f"  ** the r6919 gap, control/second-arm = {min(old):.2f}--{max(old):.2f} 
       f"the depth-gap receipt traced to two opposed defects in the second arm **")
 assert amin == pmin == hmin == 4, ('every quartet must minimise at ell=4 -- the location is what '
                                    'this file established', amin, pmin, hmin)
+# ⛭⛭ `r7697+cc66`, AND `r7699` (69) LANDED IT: ** THE BOUND WAS `0.93 < r < 1.07`, WHICH ADMITTED THE
+#   ROW THEN IN PRINT AND EXCLUDED THE ROW THAT HAS NOW REPLACED IT -- BY `0.0056`. **  *Measured
+#   before the landing: on the stock exact-transfer quartet the largest ratio is `1.0610`; on arm A
+#   under `(L)`, now the printed row, it is `1.0756`.  **So landing the drafts against the untouched
+#   bound would have reddened this receipt on an assertion neither 69's order nor my own site list
+#   named** -- found only by forging the paper into the landed state and running it, which no reading
+#   of a diff does.*
+#   ⌗ *The upper bound is `1.08` and NOT further, with the reason recorded rather than the number
+#     quietly bumped.  ⇒ **And widening it costs the shape claim nothing**: "the minimum does not move"
+#     is carried by the SEPARATE assertion above (`amin == pmin == hmin == 4`), so this one bounds the
+#     SCALE only -- which is what its own text says it is for.*
+#   ⛔ *What was NOT done: tie the bound to which row the paper prints.  That passes a `1.0756` on one
+#     row and refuses it on the other, which is a bound fitted to each answer in turn rather than a
+#     statement about the background.*
 # r7699 (69): the printed quartet is now the exact transfer with the arm of record's pairing (the
 #   projection on the stacking rate, `P15_the_low_multipole_depth_gap...`'s r7697 block), so against the
 #   control-background one-clock quartet it carries that projection's move as well as the background's.
-assert all(0.93 < r < 1.08 for r in bg), ('the background and the projection move the depths by a few '
-                                          'per cent, not the shape', bg)
+#   ⌗ *69's lower bound `0.93` is kept over the `0.92` the pre-landing patch carried: that `0.92` was
+#     symmetry with the widened upper bound and nothing measured asked for it.  The measured spread is
+#     printed beside this assertion.*
+assert all(0.93 < r < 1.08 for r in bg), ('the background and the projection move the depths by under '
+                                          'eight per cent, not the shape -- 6.1 per cent on the stock '
+                                          'quartet, 7.6 on arm A under (L), which is what is printed',
+                                          bg)
 assert max(old) > 1.8, ('the historical gap this file recorded, read at the commit that stated it',
                         old)
 _DISCH = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_'
@@ -256,6 +275,13 @@ assert abs(tot - 1.8) < 0.15
 #   total with it, to "+1.6 over 2 <= ell <= 10".  The same likelihood on the paper's own quartet
 #   (ell 6-8 from its sec:scope row, 0.911/0.983/0.998) reproduces that, and the finding -- the
 #   quadrupole rewards, the largest penalty is at ell=4 -- holds on both tables. **
+# ⛭⛭ `r7697+cc66` PUT A TIED DISJUNCTION HERE AND `r7699` (69) HAS COLLAPSED IT -- which is the
+#   disjunction working, not the disjunction being discarded.  *It read the row in EITHER of its two
+#   legitimate states so that 69's prose and these receipts could land in separate commits without a
+#   red in between; the prose has landed, so there is now ONE legitimate state and a disjunction that
+#   still admitted the retired row would pass a paper that regressed to it.*  ⇒ **Collapsed to the
+#   landed row, and the third-form refusal survives the collapse**: the literal is asserted exactly, so
+#   a row in any OTHER form still stops this receipt rather than being reported on.
 # r7699 (69): the row in print is arm A under the arm of record's pairing (ell 6-8 0.909/0.983/0.999).
 _P8 = {**PAPER, 6: 0.909, 7: 0.983, 8: 0.999, 9: 1.0, 10: 1.0}
 assert '$0.485$, $0.441$, $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$' in _TEXn
@@ -265,6 +291,15 @@ worsta = max(range(2, 11), key=lambda l: pa[l])
 print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.7, largest "
       f"penalty at ell={worsta} ({pa[worsta]:+.2f}), quadrupole {pa[2]:+.2f} **")
 assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
+# ⛭ the TOTAL's arm of that disjunction, collapsed with the row's -- they were TIED, so a paper
+#   printing the new row with the old total was refused rather than passed on either half, and with one
+#   row left there is one total.  ⛭⛭ *What the pre-landing form of this pin recorded, and it is a fact
+#   about an instrument rather than a note to self: its first draft built the expected string in a
+#   variable and tested `_TOT_STR in _TEXn`, and `check_quote_pins` then reported the literal STALE --
+#   **the instrument sees literals passed INLINE and not literals held in a variable**.  The pin went
+#   on working at runtime while the gate that exists to count pins could no longer see it, which is
+#   worse than a red: the baseline entry would have been removed as describing nothing.*  ⇒ So the
+#   literal below is INLINE, as it was in both arms.
 assert abs(tota - 1.7) < 0.1 and '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
 
 print()

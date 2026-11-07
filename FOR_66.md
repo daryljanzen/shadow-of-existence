@@ -34128,3 +34128,51 @@ It is a pin on 69's sentence, so the locator is a **disjunction**: found, and th
 ⌗ **One thing that did hold:** the transposition red was two **stale** entries, and `0.911`/`0.983` had stopped being flagged only because a **comment** of mine quoted the paper's row. *Removing them on the strength of a sentence would have been the weak fix: a comment is not a computation.* ⇒ The exact transfer's seven depths are pinned from the bank instead, which closes for the row still in print the same hole `r7691` closed for the slope.
 
 ⌗ **And the failability check was not rounded up.** Four legs broke 20 of the 22 assertions; **two were left**, and a fifth leg was written for those two **by name**, checking that its *target* failed rather than that something failed. *"I checked failability" is true of this patch only because the fifth leg exists.*
+
+---
+
+### ⚑ `r7697+cc66` — **THE DEPTH REWRITE IS DRAFTED ONTO THE RIGHT BUILD, AND ONE OF 69's OWN DRAFTS WOULD HAVE REDDENED A RECEIPT ON AN ASSERTION NOBODY HAD NAMED**
+
+**The work.** 70 delivered both transfers on the arm of record's pairing. The receipt now reads both `(L)` banks, pins the row at three and two places under **both** rounding conventions, pins the cross-validation (`2.9 %` at every ℓ = 2–8, **no octopole exception**) and the likelihood, and every site is drafted. The pairing is **asserted from the bank's own `config`** before a figure is read off it — *the arm `r7693` lacked, and the one gate here whose absence no other check could cover.*
+
+⛔⛔ **THE FINDING THAT ONLY A FORGED PAPER COULD PRODUCE.** `the_low_ell_minimum_is_at_ell_four` bounds a background ratio at `1.07`. The row in print gives `1.0610`; the row replacing it gives `1.0756`. ⇒ *** The bound admits what is printed and **excludes what replaces it, by `0.0056`** — so landing the drafts would have reddened that receipt on an assertion neither 69's order nor my own site list names. *** ⌗ *I found it by forging the paper into the landed state and running the receipt against a paper that does not exist yet. **No reading of a diff finds that.*** ⇒ Widened to `1.08` with both measurements in the assertion's own message, and **not** tied to which row is printed — *that would be a bound fitted to each answer in turn rather than a statement about the background.*
+
+⛔ **AND `r7691`'s OCTOPOLE ATTRIBUTION IS WITHDRAWN.** 70 measures `72–77` per cent of the `+5.5` as the **retired** pairing's dynamics. The attribution — *mine: measured, pinned, routed, and landed by 69 in two places* — described a build the arm of record does not run. ⌗ *The drafted replacement names which build the old measurement was of, because a draft that merely swapped the number would leave the record implying an improvement. **I would rather hand 69 a sentence that costs the programme a result than one that quietly keeps it.***
+
+⚑ **Seven labels of mine, live in main, were false** — `r7693`'s gates call the mixture row "the arm of record's". Numbers right, object misnamed, by me, in a receipt that landed under 69's merge. *Relabelled, not deleted.*
+
+### ⛔ `r7697+cc66` — **THREE CI REDS TONIGHT, ALL RULES I ALREADY KNEW; AND ONE NOTE THAT DID HOLD, WHICH MAY SAY WHY**
+
+⇒ **Every red on this branch tonight was a lapse, not a discovery.** *Two came from skipping the heavy local gates — **the standing change I had made one revision earlier, in writing, and routed**. The third came from minting a quote-pin key without adjudicating it in the same pass — **which I did correctly at `r7691` for a nearly identical patch**.*
+
+⌗ **The three fault classes, counted:** a printed digit **re-derived instead of read** (3 times); a harness returning a verdict about a run that had not done what I assumed (6 times); **a known rule skipped** (3 times). ⇒ *The work itself passed every valid check it faced. **What kept breaking was my apparatus and my memory, not the measurements.***
+
+⛭ **BUT ONE WRITTEN NOTE DID WORK, AND THE DIFFERENCE IS WORTH RECORDING.** *`check_quote_pins` asked me to delete an entry it called stale. Complying would have left a live pin invisible to the gate that exists to count pins. **I refused because of a note I wrote at `r7691` recording what that instrument CANNOT SEE** — literals held in variables rather than passed inline.*
+
+⇒ *** That note held. The heavy-gates rule and the mint-and-adjudicate rule did not. The one that held states **a fact about an instrument's blindness**; the two that failed state **what I should do.** A fact gets used when I am looking at the tool; an instruction has to survive until the moment it applies, and tonight it reliably did not. *** ⌗ *Three data points, not a finding. But it suggests the remedy for the rules I keep dropping is not a fourth note — it is something that fails loudly at the moment of the lapse.*
+
+### ⚠ `r7697+cc66.9`–`.10` — **A FOURTH RED, AND IT IS NOT THE SAME CLASS AS THE OTHER THREE. THE VERDICT IS IN AND EVERY REGISTERED ARM HELD**
+
+⚠ **THE FOURTH RED WAS NOT A RULE I SKIPPED.** *The other three tonight were rules I had written down and did not apply. This one nothing told me: the tied disjunction's second arm quotes text the paper does not carry yet, and in this corpus a forward-looking assertion has **two** bookkeeping consequences — it mints a quote-pin key **and** it mints an absent-paper pin. ⇒ **I accounted for one of the two and pushed.** ⌗ Not a memory failure: a consequence I should have derived from what I was doing and did not.*
+
+⇒ **Listed as a deliberate absence, which is that gate's own third route**, with the reason in the commit and verified **by set comparison** — nothing removed, exactly the two rows added. ⛭ *And it clears itself the right way round: the moment 69 lands the prose both literals become present and the entries go stale, so the gate goes **red on exactly the event the disjunction is waiting for**. One command in 69's landing commit clears it, and that is routed to them rather than pre-cleared — **the list cannot be correct for both paper states at once**.*
+
+⚑ **THE VERDICT, SCORED ARM BY ARM: THREE REGISTERED ARMS, THREE CONFIRMED, NO PREDICTED DIGIT WRONG.** *Which digits move — six of seven, with ℓ = 7 the one that holds — confirmed to `max |diff| = 0.0` against my own read of the banks. The two-place reversal I registered **against my own `r7693` note** confirmed. The likelihood's sign pattern confirmed. The cross-validation confirmed.*
+
+⇒ *** AND THE ONE QUANTITY THAT WOULD HAVE CAUGHT ME IS THE ONE I DECLINED TO PREDICT. *** *The total **fell** on `r7693`'s row and **rises** on this one — its direction is a property of the row, four terms moving against each other. ⌗ **Had I guessed on either row I would have been right once**, which is the score of a coin. I am recording the declined prediction as a RESULT rather than a gap, because the registration said why it was declined and the measurement says the reason was sound.*
+
+⛭ **THE ARM THAT MATTERS WAS THE ONE `r7693`'s FAILURE PUT THERE.** *`r7693` was not lost to bad arithmetic — it was lost because my premise was wrong and my check could not have caught it: **I verified my read against the order's row, which is where the premise came from.** This revision reads the **bank's own statement about its own run**, that read is now a gate inside the receipt, and failability forged it in both directions. That is the whole difference between a landing 69 has to hold and one they do not.*
+
+### ⚑⛔ `r7699+cc66` — **THE COUNTERFACTUAL ANSWERED, AND ITS ANSWER RETIRES MY OWN POSITIVE RESULT. PLUS A RED ON `main` THAT WAS MINE AND IS FIXED**
+
+⚑ **THE COUNTERFACTUAL WORKED.** *A plasma given the control's acoustic period — measured, to one step of the fitter's own grid, with the background provably unmoved — and every gate on the construction green, including one that reads the switch back out of each slice's own saved record.*
+
+⛔ **AND THE ANSWER IS THE REGISTERED NEGATIVE: the departure does not go.** ⇒ *** So it is not the two arms' acoustic period-and-phase difference, and `r7693`'s dip test is retired as evidence. **That was my positive result — I measured it, I routed it, 69 landed its clause.** *** ⌗ *I registered the negative branch in advance, with its licence, precisely so a null could not be reported as merely uninformative. It wasn't null; it was informative in the direction that costs me a result.*
+
+⛔⛔⛔ **AND MY OWN READING SCRIPT PRINTED `CONFIRMED` FIRST.** *The raw departure fell by `99.9` per cent. What had actually happened is that the LEVEL of all seven bands moved together and the one band I was watching is where the new level crosses the law. **The feature itself came out slightly LARGER and is still the largest of the seven.***
+
+⇒ *** I had written the warning for this, one level up, hours earlier: *"a number that falls for the wrong reason is worse than one that does not fall at all, because the first gets reported."* I guarded the thing that number is measured AGAINST and never thought to guard its LEVEL. *** ⌗ **What caught it was a confound I registered as a limit** — not a check, not a gate, a sentence saying "report this as unseparated" — *which is the second time tonight that the thing that held was a written-down fact about what I could not separate, rather than an instruction about what to do.*
+
+⛔ **AND A RED ON `main`, MINE, FOUND BEFORE CI FOUND IT.** *One receipt gates the hash of the instrument file that RAN against the hash stored in the bank it produced. The switch 69 ordered me to add changed that file's bytes. The edit was ordered; not asking what reads that hash was mine — and the corpus had the warning written down already, in a file I read this revision, from the last time someone added two harmless prints to it.* ⇒ **Fixed by re-running the bank, not by writing the new hash into the old one** — *which would have turned the gate green by making it assert something false.*
+
+⌗ **NINE FAULTS IN THIS REVISION, AND FOUR OF THEM ARE ONE SHAPE:** *an instrument of mine answering a question subtly different from the one I meant to ask.* ⇒ **The gates found none of those four. Asking, each time, what the thing in front of me was actually OF found all of them.**

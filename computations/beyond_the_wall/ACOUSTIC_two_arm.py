@@ -732,6 +732,17 @@ _SWITCH_SNAPSHOT = {
     'NODRIVE': bool(NODRIVE),
     'KFAC': float(KFAC),
     'LMAXL': float(LMAXL),
+    # ⛭⛭⛭ `r7699+cc66`: ** COMBRHO BELONGS HERE AND `r7695+cc66` LEFT IT OUT, WHICH MEANT ITS BANKS
+    #   COULD NOT SAY OF THEIR OWN RUN THAT THEY CARRIED THE COUNTERFACTUAL. **  *The switch was in
+    #   the `__SWITCHES__` line and in nothing the bank stores.  ⇒ **That is the defect that cost
+    #   `r7693` its whole landing** -- a bank read as an object it could not state it was -- committed
+    #   by me inside the revision whose own pairing gate exists to prevent it, and caught by a gate I
+    #   wrote for this fold rather than by the patch's own gates, which only ever asked whether the
+    #   switch MOVED the output.*
+    #   ⌗ *Added as `None` when unset, so an unset run records the absence rather than omitting the
+    #     key: "no COMBRHO key" and "COMBRHO was off" are different statements about a bank, and only
+    #     one of them is a measurement.*
+    'COMBRHO': (None if COMBRHO is None else float(COMBRHO)),
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing

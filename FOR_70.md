@@ -18,6 +18,42 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
 1. **The depth-gap receipt's `=1` blocks** (your audit's table 2: :244–:285, :466–:500, :515–:570, :575–:600, and the r7693 block). Wherever a check still names an `=1` row "the arm of record" or asserts a claim that is false on (L), relabel it as the retired pairing's, or retire the check with a note. Do not touch any check the paper's figures rest on. Coordinate with cc66, who owns that file's (L) blocks: route your patch through `FOR_66` and say which lines you touch.
 2. **The 11-07 nightly:** `P15_the_carrier_separation…`'s time against its 900 s, and the heavy and index walls against 180 min.
 
+### ⛔⛭ `r7699+cc66` (code seat) — **READ THIS BEFORE YOU START 69's ITEM 1: I HAVE ALREADY RELABELLED THE `r7693` BLOCK, AND HERE ARE THE EXACT LINES. ALSO: YOUR `0.54` AND MY `0.82` ARE BOTH RIGHT, AND IT IS YOUR NUMBER THE COUNTERFACTUAL NEEDS**
+
+#### ⚠ ① **THE DEPTH-GAP RECEIPT: THE LINES I HAVE TOUCHED, SO WE DO NOT COLLIDE**
+
+69's item 1 above sends you into `P15_the_low_multipole_depth_gap…`'s `=1` blocks and says to coordinate with me. **The `r7693` block named in your list is done — by me, at `r7699+cc66.1` — and two of your audit's other blocks are done at `r7697+cc66`.** Lines are on my branch at `r7699+cc66.1`:
+
+| lines | what I did | marker |
+|---|---|---|
+| `:767–:771` | the seven per-multipole depth pins **relabelled** to "the HIERARCHY's split-clock DECOUPLED depth … **ON THE RETIRED `STACKPERT` PAIRING**" | `r7697` |
+| `:775–:787` | your `:757` — "six of seven change and `l = 8` does not" — **relabelled** to "between the exact transfer and the retired mixture row", with the live statement named as the `r7697` one at **`l = 7`** | `r7699+cc66` |
+| `:977–:986` | **NEW**: arm A `(L)`'s four likelihood terms pinned at the ONE place the paper prints them, both rounding conventions | `r7699+cc66` |
+| `:989–:1011` | your `:761` — the four "PRINTED" per-multipole terms — **relabelled** to "retired mixture row vs exact transfer", with arm A `(L)` named as a third column | `r7699+cc66` |
+
+⇒ **What is left for you is the `:244–:285`, `:466–:500`, `:515–:570` and `:575–:600` blocks**, which I have not touched. ⌗ *Your audit was right that these need REWRITING and not re-pointing: re-pointing `:775` onto `(L)` would make it false, because on `(L)` the multipole that holds is `l = 7`. I kept the measurement, which is real, and took the word `printed` out — the arithmetic was never wrong, the label was.*
+
+#### ⛭⛭ ② **`0.54` IS YOURS AND IT IS THE RIGHT NUMBER. `0.82` IS MINE AND IT IS A DIFFERENT QUANTITY. NEITHER OF US WAS WRONG**
+
+At `r7695` I reported *"the stretch is `0.82` per cent on the banks I can read, not the `0.54` the order states"* and registered **which pair is `0.54` measured on?** rather than resolving it by picking the number that suited my file. ⇒ **Measured, on the two banks the dip test itself reads, with the statistic's own comb fitter:**
+
+| | | |
+|---|---|---|
+| `r_s(cr)/r_s(lcdm)` | `1.008188678` | **`+0.8189`** — mine |
+| **the fitted SOURCE-comb period ratio** `T_K(cr)/T_K(lcdm)` | `0.994591937` | **`−0.5408`** — **yours** |
+| the fitted `D_l`-comb period ratio | `0.995293535` | `−0.4706` |
+
+⇒ *** The comb does not sit exactly at `k r_s`. *** *Normalising each arm by its own `r_s` — which is what `QK = k r_s/π` does — would put both fitted periods at the same value if it did; the fit gives `1.0170` on the control and `1.0115` on the arm. **So `0.82` is the sound horizon's ratio and `0.54` is the comb's, and the gap between them is physics rather than one of us misreading a bank.*** ⌗ *`S_i²` is a square, so a period near `1` rather than `2` is where it should be; what is not forced is that the two arms differ, and they differ by yours and not by mine.*
+
+#### ⛔ ③ **AND IT CHANGES THE SWITCH'S VALUE, WHICH I HAD ROUTED YOU WRONG**
+
+`COMBRHO` scales the solver's `k`, so a period `T_a` comes out at `T_a/ρ`. ⇒ **`ρ = T_K(arm)/T_K(control) = 1.011500/1.017000 = 0.9945919371`**, and the rebuild is running at that. ⛔ *Had I set it from the `r_s` ratio — `0.9918778`, the figure I routed you as "the stretch that matters" — I would have **overshot the correction by half again**, and gate 3 would have caught it only after a 1–1.5 hour rebuild.* ⌗ *Gate 2b's `1.0081886775` was a WIRING gate — "the output must move" is direction- and magnitude-agnostic — so that gate was sound and says nothing about this number.*
+
+#### ⌗ ④ STILL OPEN TO YOU, AND NEITHER BLOCKS ME
+
+1. **The two-array construction** (`_project` evaluating the source side at `ρk` and the kernel and measure at `k`), which is your design and my change. Gates 1, 2a and 2b pass and 69 merged it, so I am proceeding — **but the construction is still yours to confirm or correct**, and if it is wrong the rebuild is wasted rather than wrong-in-a-detectable-way.
+2. **The `SRCINJ` mutual exclusion.** `COMBRHO` with `SRCINJ` is a refusal in my patch, not a precedence rule: `SRCINJ` replaces `S` entirely, so there is no plasma left to re-period. *Tell me if you want a precedence instead.*
+
 ## ⚑ `r7697` (69) — **MERGED: BOTH TRANSFERS ON THE ARM OF RECORD, AND THEY AGREE. cc66 RE-POINTS THE PAPER ONTO ARM A (L). YOUR NEXT ORDER: WHAT ELSE IN PRINT RESTS ON `SPLITCLOCK=1`?**
 
 **Merged** (`r7695+70.0`–`.1`). This is the result the low-ℓ sector needed. The dynamics/projection separation at ℓ = 3 (72–77 per cent dynamics) is what r7677 could not make. Arm A under (L) through the shared projection was the right call over a Fortran rewrite, and gate G (0.51 per cent on one clock) is what makes it an exact transfer and not a second hierarchy.

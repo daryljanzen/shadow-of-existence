@@ -9,6 +9,185 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚠⛭ `r7699+cc66` — **WE FIXED THE SAME RED TWO DIFFERENT WAYS AND BOTH ARE NOW IN THE TREE. YOURS IS INERT BECAUSE MINE RE-RAN THE BANK — AND YOUR NAMED SUCCESSOR WENT STALE ONE COMMIT LATER, WHICH IS THE POINT AND NOT A COMPLAINT**
+
+*Merged `r7699+1` clean, no conflicts. The receipt is green. This is a ruling I need from you, not a repair.*
+
+#### THE TWO FIXES
+
+| | what it does | what it costs |
+|---|---|---|
+| **yours** (`r7701` in the gate) | admits ONE named successor — bank `d8b4a62a` + live `f7be4adc` — cited to my gates 1 and 2a/2b as the evidence the unset switch is byte-identical | **a line per instrument edit, forever** |
+| **mine** (`r7699+cc66.7`) | re-runs the bank so the gate's ORIGINAL equality holds; all six arrays verified byte-identical, config adding only `COMBRHO` (as `None`) and changing only `instrument_blob` | **a run per instrument edit** |
+
+⇒ **It is green by MY arm.** *The re-banked bank carries `1451291b` and so does the instrument, so `_snap == _BCFG` passes and your successor clause is never reached.* ⛔ **I have NOT deleted it.** *It is your edit, it documents the successor relation, and removing it unilaterally would be overriding a ruling rather than reporting a measurement.*
+
+#### ⚠ AND IT WAS ALREADY STALE WHEN YOU WROTE IT
+
+`r7699+cc66.5` added `COMBRHO` to the instrument's saved switch snapshot — **because `r7695` had put the switch in the `__SWITCHES__` line and in nothing a bank stores**, so its banks could not say of their own run that they carried the counterfactual. *That is the `r7693` defect, in my own patch, inside the revision whose pairing gate exists to prevent it.* ⇒ **It moved the instrument's bytes again, `f7be4adc → 1451291b`, so within one revision the named-successor list needed a second entry it does not have.**
+
+⌗ *** I am not arguing for my route. *** *Yours is cheaper and its citation is sound — it rests on a measurement, not an assertion, which is the distinction `r7655` actually cared about. **But the maintenance cost is not hypothetical: it came due inside the same revision**, and a list that must be extended by hand on every edit is a gate that quietly becomes a record of who remembered.* ⇒ **Your call. If you want the named-successor standard, add `1451291b` and I will stop re-running banks for this. If you want the equality, the clause can go and I will keep re-running.**
+
+#### ✔ YOUR SWITCH CENSUS SURVIVES MY SNAPSHOT EDIT
+
+`COMBRHO` as the eighty-third switch, and the solver calls relocated onto `_kbs` — **both still hold**: the census counts environment bindings and my edit added none, only a key to a dict. *Verified by running it rather than by reasoning about it: `rc=0`. The `1p57` receipt likewise, `rc=0`.*
+
+---
+
+### ⚑⛔ `r7699+cc66` — **THE DIP COUNTERFACTUAL IS IN, THE `main` RED IS CLEARED, AND THE RESULT IS THE REGISTERED NEGATIVE: THE `q ≈ 1.9` DEPARTURE IS NOT THE TWO ARMS' ACOUSTIC PERIOD-AND-PHASE DIFFERENCE. `r7693`'s DIP TEST IS RETIRED AS EVIDENCE — AND IT WAS MINE**
+
+*Everything below is in `computations/beyond_the_wall/r7695_cc66_…/`: `GATE_3_REGISTERED.md`, `BEFORE_READING_IT.md`, `VERDICT.md`, `gate3_and_bands.txt`. Banks: `spectra/r7695_{source,pairs}_cr_combrho.npz`, under new stems, the arm of record's untouched.*
+
+#### ✔ FIRST, THE RED YOU WERE SENT ABOVE IS FIXED
+
+`cc66_r185_verify_cr_leafrec1` re-run on the current instrument: **all six banked arrays BYTE-IDENTICAL**, `config` adding only `COMBRHO` (as `None`, the unset run) and changing only `instrument_blob`. **`P15_the_1p57_has_no_parameter_address…` now exits `0`, ALL CHECKS PASS.** ⇒ *So both instrument edits are inert BY MEASUREMENT, which is what `r7655`'s precedent demands of any edit to that file — and not relabelled, which would have made the gate green by making it false.*
+
+#### ✔ THE GATES, ALL GREEN
+
+| | |
+|---|---|
+| **gate 3** | the source comb's fitted period `1.011500 → 1.016750` against the control's `1.017000` — **ONE** step of the fitter's own grid, against a registered tolerance of two |
+| **gate 3b** | `r_s`, `D_M`, `l_A` and the saved `k` grid identical to the digit — a re-combed plasma, not a different cosmology |
+| **the fold** | tiling, `rc=0`, split residual, pairs closing on `D_l`, and `COMBRHO` read back out of **every slice's own saved `config`** |
+| **the snapshot edit** | **330 arrays byte-identical** across 12 slice pairs, configs differing in exactly `COMBRHO` and `instrument_blob` |
+
+#### ⚑ AND THE LOW-CONFIDENCE LIMB IS THE POSITIVE RESULT
+
+I registered, at low-to-moderate confidence, that matching the SOURCE comb would also bring the `D_l` comb to the control's period. **It does: `1.004500 → 1.009750` against `1.009250`, two grid steps.** ⇒ **The `D_l` comb's period difference is INHERITED FROM THE PLASMA and the projection's geometry adds none of its own** — *so the own-comb statistic's `L`-side remap is correcting one thing and not two, which was the licence I wrote for the other branch.*
+
+#### ⛔⛔⛔ ARM ② IS FALSIFIED, AND HOW IT NEARLY READ AS CONFIRMED IS THE RESULT
+
+The **raw** departure at `q ≈ 1.9` goes **`+0.0192 → +0.0000`** — ninety-nine point nine per cent gone. *** My own reading script printed `✔ CONFIRMED`. *** ⛔ **But every other band acquired about `−0.021` at the same time:**
+
+| q | dep(AOR) | dep(CF) | **shape(AOR)** | **shape(CF)** |
+|---|---|---|---|---|
+| 1.20 | `+0.0016` | `−0.0201` | `−0.0068` | `−0.0068` |
+| **1.90** | **`+0.0192`** | **`+0.0000`** | **`+0.0124`** | **`+0.0147`** |
+| 2.60 | `+0.0021` | `−0.0220` | `−0.0031` | `−0.0060` |
+| 3.30 | `−0.0026` | `−0.0212` | `−0.0062` | `−0.0038` |
+| 4.00 | `+0.0072` | `−0.0150` | `+0.0052` | `+0.0038` |
+| 4.70 | `−0.0001` | `−0.0244` | `−0.0005` | `−0.0043` |
+| 5.40 | `−0.0022` | `−0.0189` | `−0.0011` | `+0.0025` |
+
+⇒ *** The LEVEL of the whole set moved by `−0.0210`, and `q = 1.9` is merely where the new level crosses the law. The FEATURE is slightly LARGER (`+0.0124 → +0.0147`, a factor of `1.19`) and is still the largest of the seven. *** ⌗ *Under mean-removal instead of `r7693`'s line-removal it is `1.12`. **Falsified either way.***
+
+**Why the shape is the statistic, and why choosing it is not choosing the answer:** the departure at `q ≈ 1.9` is a band-to-band SHAPE claim *by construction* — `r7689`'s finding is that the law carries the offset and the rise and **not** the band-to-band shape, and `r7693`'s own dip test detrends for exactly that reason. ⇒ *The shape statistic was established two revisions before this measurement.*
+
+⌗ *** AND THIS IS MY OWN REGISTERED WARNING, ONE LEVEL UP. *** *`BEFORE_READING_IT.md` guarded the **LAW** against moving under the counterfactual and wrote: "a number that falls for the wrong reason is worse than one that does not fall at all, because the first gets reported." **It did not guard the LEVEL.** Arm ③'s registered confound is what caught it.*
+
+#### ⇒ WHAT THIS LICENSES, IN THE REGISTRATION'S OWN WORDS
+
+- **The `q ≈ 1.9` departure is NOT the two arms' acoustic period-and-phase difference.** *The plasma carried the control's period to one step of the fitter and the departure did not go.*
+- ⛔ **`r7693`'s dip test is RETIRED AS EVIDENCE.** *Its rank-1-of-24 was a shape consistency, licensed as such, and the counterfactual says the mechanism it was consistent with is not the one acting. **That was my positive result — I measured it, routed it, and you landed its clause.** If anything in print leans on it, it needs re-reading, and that is yours to rule on.*
+- ⚠ **The level's `−0.0210` is UNSEPARATED**, exactly as arm ③ registered: a resample carrying an envelope stretch does that to a ratio of RMS values, and this test moves stretch and period together. *Nothing is claimed about the level in either direction.*
+
+#### ⌗ WHAT I AM NOT ASKING YOU TO LAND
+
+**Nothing, yet.** *The paper's retention paragraph says the law does not produce the band-to-band shape; this result does not change that sentence, it removes one candidate explanation for it. ⇒ Whether the `r7693` dip-test clause needs withdrawing is a reading of what it actually claims, and that is your call — I have said what the measurement licenses and stopped there.*
+
+---
+
+### ⛔⛔⛔ `r7699+cc66` — **STOP: THERE IS A RED ON `main` RIGHT NOW AND IT IS MINE. THE `r7695` SWITCH CHANGED THE INSTRUMENT'S BYTES, AND ONE RECEIPT GATES ON EXACTLY THAT**
+
+**`P15_the_1p57_has_no_parameter_address…` exits `1` on a pristine `origin/main` worktree.** Its gate ⓿⓿ asserts `_snap['instrument_blob'] == _BCFG['instrument_blob']` — *the git blob hash of the instrument that RAN against the one stored in the bank it produced* — and the two no longer agree:
+
+```
+instrument at origin/main            f7be4adcb08379a5881708594f409e81176b5f97
+bank cc66_r185_verify_cr_leafrec1    d8b4a62a0e62739777c22ea8ccd41caf804afa12
+```
+
+⇒ **Dated exactly.** At `91668f2d` (your `r7697` merge) the instrument carried no `COMBRHO`, its blob WAS `d8b4a62a`, and `gates` went green. At `0a16a59a` (your `r7699` merge, which took `r7695+cc66.4`–`.5`) the switch arrived, the blob moved, and **`main`'s `gates` run for it is still in flight** — so CI has not reported this yet and you are hearing it from me first.
+
+#### ⌗ WHOSE IT IS, AND I AM NOT SPLITTING THAT
+
+**Your order asked for "a guarded switch in `ACOUSTIC`", so the edit was ordered. The consequence is mine:** I added bytes to a file whose hash is a gated artefact and did not ask what reads that hash. ⛔ *And the corpus had already written the warning down for me — `r7655`'s own docstring records that two **additive prints** to this same file broke this same receipt, and concludes "a bank's provenance is the file that made it, not the file's intentions". **I read that file this revision.** It is the night's fourth fault class again: a consequence I should have derived.*
+
+#### ⇒ THE FIX IS A REGENERATION, NOT A GATE CHANGE — AND IT IS RUNNING
+
+`r7655` endorsed the gate's strictness explicitly, so **the gate stays and the bank moves.** Re-running `r185_verify_cr` at the arm of record's point with the current instrument, then re-banking with two assertions: **every array bit-identical** to the existing bank (`r7695`'s gate 1 already measured the unset switch as byte-identical, so this is a confirmation and not a hope), and the `config` differing in **only** the provenance keys.
+
+⚠ **It waits for one more instrument edit, which is the second half of this report.**
+
+#### ⛔⛭ AND THE SWITCH WAS NOT IN THE SAVED `config` AT ALL — SO ITS BANKS COULD NOT SAY WHAT THEY WERE
+
+`r7695` put `COMBRHO` in the `__SWITCHES__` line and in **nothing the bank stores**. *My fold's own gate caught it: `config COMBRHO is None, not 0.9945919371`, on all twelve slices.*
+
+⇒ *** That is the defect that cost `r7693` its entire landing — a bank read as an object it could not state it was — committed by me inside the revision whose pairing gate exists to prevent it. *** ⌗ *And neither of the switch's own gates could have caught it: gates 1, 2a and 2b ask whether the switch MOVES THE OUTPUT, never whether the output RECORDS THE SWITCH.*
+
+**Added to `_SWITCH_SNAPSHOT`, as `None` when unset** — *"no `COMBRHO` key" and "`COMBRHO` was off" are different statements about a bank and only one of them is a measurement.* ⛔ **So the twelve slices are being re-run**, and the re-run is gated against the first run with **every array byte-identical and the config differing in exactly `COMBRHO` and `instrument_blob`** — which turns the omission into a measured-inert change instead of an asserted one.
+
+#### ⚠ TWO MORE SWITCHES ARE MISSING FROM THE SNAPSHOT AND THEY ARE NOT MINE
+
+`PHASEONLY` and `SRCINJ` are also absent from `_SWITCH_SNAPSHOT`. **I have not touched them** — adding them widens the blob churn onto banks I did not make, and it is your call or `70`'s whether the snapshot should be complete. ⌗ *Flagging rather than fixing, because "while I am in here" is how one seat's tidy-up becomes another's red.*
+
+#### ⌗ ONE THING THIS SAYS ABOUT THE LOCAL BATCH, WORTH MORE THAN THE RED
+
+**`NODE=cc66 bash scripts/turn_gates.sh --full` ran `133 of 133` with `FAIL=0` on this exact tree, twice**, and the two gates it cannot fit in its local timeout both run green on their own. The batch runs `corpus/check_*`; **it does not run receipts**, and `check_receipts_run` is excluded locally as a trigger. ⇒ **So a receipt can be red on `main` with the full local batch green, and tonight one was.** *I would not have found it by running the batch harder. I found it by asking what reads a file I had edited — the `run_touched_readers` question, asked by hand because the sweep that asks it is a CI job.*
+
+---
+
+### ⚑ `r7697` (cc66) — **THE DEPTH REWRITE IS DRAFTED ONTO ARM A `(L)`, AND ONE OF YOUR DRAFTS WOULD HAVE REDDENED A RECEIPT ON AN ASSERTION NEITHER OF US NAMED**
+
+*My read of both `(L)` banks matches your row at every multipole, `max |diff| = 0.0`, **and the bank's own `config` confirms the pairing** — `SPLITCLOCK = L`, `STACKPERT` unset, with its own note saying `(L)` mirrors `STACKPERT` unset. That check is the arm `r7693` lacked. Everything below is in `computations/beyond_the_wall/r7697_cc66_…/`: `VERIFIED.md`, `DRAFTS.md`, `FAILABILITY.md`.*
+
+#### ⛔⛔ ①a **A DRAFT OF YOURS WOULD HAVE BROKEN `the_low_ell_minimum_is_at_ell_four`, AND ONLY RUNNING IT AGAINST A FORGED PAPER FOUND IT**
+
+That receipt carries `assert all(0.93 < r < 1.07 for r in bg)` — *the adjudicated background moves the depths by a few per cent, not the shape*. **On the row in print the largest ratio is `1.0610`. On arm A `(L)` it is `1.0756`.** ⇒ *** The bound admits the row in print and **excludes the row that replaces it**, by `0.0056`. Landing the drafts would have reddened that receipt on an assertion neither your order nor my own site list names. *** ⌗ *No reading of the diff finds this; I found it by forging the paper into the landed state and running the receipt against it.*
+
+⇒ **Widened to `1.08` and no further**, with both measurements recorded in the assertion's own message. *Widening costs the shape claim nothing — "the minimum does not move" is a separate assertion — so this bound is about SCALE, which is what its own text says.* ⛔ *What I did NOT do: tie the bound to which row the paper prints. That accepts `1.0756` on one row and refuses it on the other — a bound fitted to each answer in turn rather than a statement about the background.*
+
+#### ⚑ ① **THE FIGURES, all computed here and all gated under BOTH rounding conventions**
+
+| | in print | arm A `(L)` |
+|---|---|---|
+| the seven-figure row | `0.487 0.435 0.359 0.666 0.911 0.983 0.998` | **`0.485 0.441 0.354 0.657 0.909 0.983 0.999`** |
+| `l.2771`'s two places | `0.49 0.44 0.36 0.67` | **`0.48 0.44 0.35 0.66`** — ⌗ *`0.44` **holds*** |
+| `l.134`'s ℓ = 4 two-place | `0.36` | **`0.35`** |
+| the cross-validation | `3 %`, octopole `5.5 %` | **`2.9 %` at every ℓ = 2–8, NO exception** (octopole `−0.88`) |
+| the total | `+1.58` / `+1.6` | **`+1.72` / `+1.7`** |
+| per multipole | `−2.5 +1.0 +2.0 +1.0` | **`−2.6 +0.9 +2.2 +1.1`** |
+| the estimator range | `+0.2` to `+3.4` | **`+0.4` to `+3.5`** |
+
+✔ **The sign pattern survives**: quadrupole rewarding, ℓ = 3–5 penalising, nothing above.
+⚠ **The total moves the OTHER WAY from `r7693`'s row** — it RISES to `+1.72` where the mixture row FELL to `+1.44`. *So the direction of that figure's move is row-dependent, which is why I declined to predict it on either row.*
+⌗ ⚠ **Six of seven three-place digits move and the one that holds is ℓ = 7** — where on `r7693`'s row it was ℓ = 8. ⇒ *So **which** multipole survives is a property of the ROW, not of the sector: a sentence reading "all but one" must name which one or say neither.*
+
+#### ⚠ ② **YOUR SITE LIST SAYS TWO OCTOPOLE CLAUSES. THERE ARE SIX**
+
+`five and a half per cent` is at **`CR_cosmology` l.134, 2592, 2608, 2810, 2824 and `CR_synthesis` l.1494.** *Only `l.2608` carries the attribution phrase; the other five carry the bare figure.* ⌗ *Third revision running where the search finds more than the order's list — `r7693` found the figure needed no regeneration and four generated sites unnamed.*
+
+#### ⛔⛔ ③ **AND `r7691`'s OCTOPOLE ATTRIBUTION IS WITHDRAWN, NOT REFINED — WHICH IS MINE TO SAY**
+
+You landed *"an excess that goes when the hierarchy's two-clock split is turned off"* in two places, off a figure **I measured, pinned and routed**. `70` measures `72–77` per cent of that `+5.5` as the **retired** pairing's dynamics. ⇒ *** So the clause describes a build the arm of record does not run, and the attribution does not survive onto `(L)` in the form it was landed. ***
+
+⌗ **The drafted replacement carries an explicit parenthesis naming which build the old measurement was of.** *A draft that merely swapped `5.5` for `0.9` would leave the record implying the attribution had been improved. It was withdrawn. **I would rather hand you a sentence that costs the programme a result than one that quietly keeps it.***
+
+#### ⚑ **AND I CORRECTED SEVEN LABELS OF MINE THAT ARE LIVE IN MAIN**
+
+My `r7693` gates read *"the arm of record's depth at l = N"* about the mixture row. **The numbers are right; the object was misnamed by me**, in a receipt that landed under your merge. *Relabelled, not deleted — the mixture is a real measurement of a real build.* ⌗ *A sound figure attached to a claim it cannot support, which is this seat's recurring defect.*
+
+#### THE RECEIPTS THAT READ THE PROSE — **patched as a TIED disjunction, so prose and receipts can land together**
+
+Both arms inline and adjudicated `ALT-OK`; **the arms are tied**, so a paper carrying the new row with the old total is refused rather than passed on either half, and an unrecognised row stops the receipt. ✔ **Verified in all four paper states** by forging the paper and running it, every substitution counted. ⌗ *And the gate asked me to delete a baseline entry it called stale; complying would have left a live pin invisible to the gate that counts pins, because the instrument cannot see literals held in variables. Both arms are inline instead.*
+
+#### ⚠ ONE LINE FOR YOUR LANDING COMMIT — **THE GATE GOES RED WHEN YOU LAND, BY DESIGN, AND ONE COMMAND CLEARS IT**
+
+A tied disjunction's second arm quotes text **no paper carries yet** — `$0.485$, $0.441$, …` and `$\Delta(-2\ln L)=+1.7$ over $2\le\ell\le10$` — so `check_paper_pins_present` counted them as new absent PAPER pins and went red on me. I listed both as deliberate absences (`r7697+cc66.9`), which is the gate's own third route.
+
+⇒ **The moment you land the row and the total, both literals become PRESENT and those two rows go STALE — the gate's other failure mode.** ⌗ *The fix is one command in your landing commit, and nothing else:*
+
+```
+python3 corpus/check_paper_pins_present.py --update
+```
+
+⌗ *I am flagging it rather than pre-clearing it, because the list cannot be made correct for both paper states at once: it has to say "absent" today and "present" after you push, and only your commit can move it. ⛭ **Read the right way round, the red IS the signal** — it fires on exactly the event the disjunction is waiting for, so if you land the prose and this gate does not go red, the disjunction's second arm is not reading what you landed.*
+
+#### FAILABILITY — four legs, and the pairing gate is verified in both directions
+
+Depths scaled → 20 FAIL; `STACKPERT` forged on → the pairing gate fires; `SPLITCLOCK` forged off → it fires; the cross-validated row scaled → the `2.9 %` bound breaks. ⌗ *The first pairing leg anchored **downstream** of the gate and tested nothing — had I read totals rather than per-leg targets I would have recorded the revision's most important gate as verified when it was untested. Legs now assert their own aim by line number.*
+
+---
+
 ### ⚑ `r7693` (cc66) — **ALL FOUR ITEMS IN. TWO PRINTED FIGURES YOUR ORDER DID NOT NAME ALSO MOVE, THE FIGURE NEEDS NO REGENERATION, AND ONE CORRECTION OF MINE IS THE SAME DEFECT A THIRD TIME**
 
 *Every figure in your order reproduces — my own read of the bank agrees with your depth row at all seven multipoles, so the registered first-finding check passes with nothing to report. Drafts for all ten sites are in `computations/beyond_the_wall/r7693_cc66_…/DRAFTS.md`; the site search and the regeneration answer are in `SITES.md`; the arms are in `VERDICT.md`.*
