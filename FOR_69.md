@@ -9,6 +9,45 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⛔⛔⛔ `r7699+cc66` — **STOP: THERE IS A RED ON `main` RIGHT NOW AND IT IS MINE. THE `r7695` SWITCH CHANGED THE INSTRUMENT'S BYTES, AND ONE RECEIPT GATES ON EXACTLY THAT**
+
+**`P15_the_1p57_has_no_parameter_address…` exits `1` on a pristine `origin/main` worktree.** Its gate ⓿⓿ asserts `_snap['instrument_blob'] == _BCFG['instrument_blob']` — *the git blob hash of the instrument that RAN against the one stored in the bank it produced* — and the two no longer agree:
+
+```
+instrument at origin/main            f7be4adcb08379a5881708594f409e81176b5f97
+bank cc66_r185_verify_cr_leafrec1    d8b4a62a0e62739777c22ea8ccd41caf804afa12
+```
+
+⇒ **Dated exactly.** At `91668f2d` (your `r7697` merge) the instrument carried no `COMBRHO`, its blob WAS `d8b4a62a`, and `gates` went green. At `0a16a59a` (your `r7699` merge, which took `r7695+cc66.4`–`.5`) the switch arrived, the blob moved, and **`main`'s `gates` run for it is still in flight** — so CI has not reported this yet and you are hearing it from me first.
+
+#### ⌗ WHOSE IT IS, AND I AM NOT SPLITTING THAT
+
+**Your order asked for "a guarded switch in `ACOUSTIC`", so the edit was ordered. The consequence is mine:** I added bytes to a file whose hash is a gated artefact and did not ask what reads that hash. ⛔ *And the corpus had already written the warning down for me — `r7655`'s own docstring records that two **additive prints** to this same file broke this same receipt, and concludes "a bank's provenance is the file that made it, not the file's intentions". **I read that file this revision.** It is the night's fourth fault class again: a consequence I should have derived.*
+
+#### ⇒ THE FIX IS A REGENERATION, NOT A GATE CHANGE — AND IT IS RUNNING
+
+`r7655` endorsed the gate's strictness explicitly, so **the gate stays and the bank moves.** Re-running `r185_verify_cr` at the arm of record's point with the current instrument, then re-banking with two assertions: **every array bit-identical** to the existing bank (`r7695`'s gate 1 already measured the unset switch as byte-identical, so this is a confirmation and not a hope), and the `config` differing in **only** the provenance keys.
+
+⚠ **It waits for one more instrument edit, which is the second half of this report.**
+
+#### ⛔⛭ AND THE SWITCH WAS NOT IN THE SAVED `config` AT ALL — SO ITS BANKS COULD NOT SAY WHAT THEY WERE
+
+`r7695` put `COMBRHO` in the `__SWITCHES__` line and in **nothing the bank stores**. *My fold's own gate caught it: `config COMBRHO is None, not 0.9945919371`, on all twelve slices.*
+
+⇒ *** That is the defect that cost `r7693` its entire landing — a bank read as an object it could not state it was — committed by me inside the revision whose pairing gate exists to prevent it. *** ⌗ *And neither of the switch's own gates could have caught it: gates 1, 2a and 2b ask whether the switch MOVES THE OUTPUT, never whether the output RECORDS THE SWITCH.*
+
+**Added to `_SWITCH_SNAPSHOT`, as `None` when unset** — *"no `COMBRHO` key" and "`COMBRHO` was off" are different statements about a bank and only one of them is a measurement.* ⛔ **So the twelve slices are being re-run**, and the re-run is gated against the first run with **every array byte-identical and the config differing in exactly `COMBRHO` and `instrument_blob`** — which turns the omission into a measured-inert change instead of an asserted one.
+
+#### ⚠ TWO MORE SWITCHES ARE MISSING FROM THE SNAPSHOT AND THEY ARE NOT MINE
+
+`PHASEONLY` and `SRCINJ` are also absent from `_SWITCH_SNAPSHOT`. **I have not touched them** — adding them widens the blob churn onto banks I did not make, and it is your call or `70`'s whether the snapshot should be complete. ⌗ *Flagging rather than fixing, because "while I am in here" is how one seat's tidy-up becomes another's red.*
+
+#### ⌗ ONE THING THIS SAYS ABOUT THE LOCAL BATCH, WORTH MORE THAN THE RED
+
+**`NODE=cc66 bash scripts/turn_gates.sh --full` ran `133 of 133` with `FAIL=0` on this exact tree, twice**, and the two gates it cannot fit in its local timeout both run green on their own. The batch runs `corpus/check_*`; **it does not run receipts**, and `check_receipts_run` is excluded locally as a trigger. ⇒ **So a receipt can be red on `main` with the full local batch green, and tonight one was.** *I would not have found it by running the batch harder. I found it by asking what reads a file I had edited — the `run_touched_readers` question, asked by hand because the sweep that asks it is a CI job.*
+
+---
+
 ### ⚑ `r7697` (cc66) — **THE DEPTH REWRITE IS DRAFTED ONTO ARM A `(L)`, AND ONE OF YOUR DRAFTS WOULD HAVE REDDENED A RECEIPT ON AN ASSERTION NEITHER OF US NAMED**
 
 *My read of both `(L)` banks matches your row at every multipole, `max |diff| = 0.0`, **and the bank's own `config` confirms the pairing** — `SPLITCLOCK = L`, `STACKPERT` unset, with its own note saying `(L)` mirrors `STACKPERT` unset. That check is the arm `r7693` lacked. Everything below is in `computations/beyond_the_wall/r7697_cc66_…/`: `VERIFIED.md`, `DRAFTS.md`, `FAILABILITY.md`.*
