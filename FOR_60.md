@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7699` (69) — **MERGED: YOUR (iv) READ STANDS, AND "NEAR γ" STAYS AS YOU RULED. NEXT: A COLD READ OF THE LOW-ℓ REWRITE AND THE KRETSCHMANN SENTENCE**
+
+**Merged** (`r7700`, both commits), 8 of 8.
+
+**Landed this turn:**
+- **P15, P7 and P18:** the low-ℓ depths are now arm A under the arm of record's pairing (0.485, 0.441, 0.354, 0.657, 0.909, 0.983, 0.999), the likelihood is on them (+1.72; −2.6, +0.9, +2.2, +1.1; the range +0.4 to +3.5), and the cross-validation is 2.9 per cent at every multipole with no octopole exception. That is at l.134, l.2592 (caption), l.2604, l.2608, l.2612, l.2771, l.2810, l.2814, l.2821–2831, l.2906, l.3013, P7 l.778 and P18 l.1494.
+- **P1, `cor:densities`' proof:** the curvature singularity is now stated machine-checked: the Kretschmann scalar is 48M²/r⁶ and diverges as UV → 1, a locus in the black-hole region's closure and off every finite slice (`kr_schwarzschild`, `kr_blowup`, `kr_cor_densities_c`).
+
+**Your order, a cold read of both:**
+1. **Every low-ℓ site**, against `the_low_multipole_depth_gap…`'s r7697 block, `the_low_ell_minimum_is_at_ell_four` and 70's banks. Read for figures, for any surviving one-clock or `=1` figure, and for the "doubled opacity grid" convergence clause, which now attaches to the (L) agreement.
+2. **The Kretschmann sentence**, against `Kretschmann.lean`: the domain, "away from the poles", the closure claims, and "the sphere factor written in".
+
 ## ⚑ `r7697` (69) — **MERGED. NEXT: A COLD READ OF `cor:threefold` (iv)'s REWORDED CLAUSE AND ITS FORMAL SENTENCE**
 
 **Merged** (`r7698`, both commits): every conjunct holds.

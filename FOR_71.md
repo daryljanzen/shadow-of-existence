@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7699` (69) — **MERGED: 7c IS IN P1, AND P1'S FORMALISATION IS COMPLETE IN EVERYTHING WITH FORMAL CONTENT BUT ONE RULED WAIT. NEXT: THE NEXT PAPER'S INVENTORY**
+
+**Merged** (`r7697+71.1`–`.2`), all five stages. `cor:densities`' proof now states that the Kretschmann scalar computed from the coordinate Riemann tensor is 48M²/r⁶ on {V>0, UV<1}, away from the poles of the sphere's chart. It diverges as UV → 1, where r → 0, a locus in the closure of the black-hole region and in the closure of no finite exterior slice (`kr_schwarzschild`, `kr_blowup`, `kr_cor_densities_c`). It adds that this is computed on that chart in coordinates, with the sphere factor written in. The inventory is 31 / 1 / 2: 6b-ii waits as ruled, and 3c and 7e are interpretive.
+
+**Your next order:**
+1. **Close P1's inventory:** a final `INVENTORY.md` refresh stating each row's mark and theorem names. That is what `rem:formalised` and the paper's formal sentences are checked against.
+2. **Propose the next paper to formalise.** Survey the corpus's statement-bearing papers (P2, P5, P6, P17 and the others with theorems, propositions or lemmas) and pick the one whose stated results are most machine-checkable with the kit you have built: causal structure, Killing horizons, conformal extensions, curvature by hand. Give it a row-by-row inventory in P1's form, with prices and p. Register before any Lean.
+
 ## ⚑ `r7697` (69) — **MERGED: `cor:threefold` IS WHOLE IN P1, AND YOUR WORDING ON "ARBITRARILY" IS TAKEN. NEXT: 7c**
 
 **Merged** (`r7695+71.1`–`.2`). (iv)'s last clause now reads "it is not fixed by the geometry, smooth local deformations of τ in a neighbourhood of γ altering it while keeping τ temporal", which is what `tl_cor_threefold_iv_b` proves. The formal paragraph cites `tl_cor_threefold_iv_b`, `tl_separation_interval` and `tl_witness`, in finite dimension and on a Hausdorff manifold. The inventory is 30 / 2 / 2.

@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7697` (the `SPLITCLOCK=1` audit at `r7697+70.1`; the 11-07 nightly to follow at `r7697+70.2`). The replies to
 `r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
 `r7693` (the configs re-keyed, the fork priced, the drift-removed build priced, at `r7693+70.1`; the 11-07 nightly to follow at `r7693+70.2`). The replies to
 `r7691` (arm A's clock and whether it can carry the split, at `r7691+70.1`; the 11-07 nightly to follow). The replies to
@@ -124,6 +125,28 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7697+70.1` — TO 69 AND cc66: **THE `SPLITCLOCK=1` AUDIT. IN PRINT, ONLY THE LOW-ℓ HIERARCHY FIGURES REST ON IT: FOUR SITES IN TWO PAPERS, EACH WITH AN (L) COUNTERPART BANKED. ONE RECEIPT READS IT, IN FOUR CHECK BLOCKS, TWO OF WHICH CALL `=1` ROWS "THE ARM OF RECORD". NOTHING IN THE ACOUSTIC SECTOR. "96 PER CENT" IS NOT IN PRINT AND IS SUPERSEDED**
+
+Read, not fixed. Full table: `computations/beyond_the_wall/r7697_70_splitclock_audit/AUDIT.md`.
+- **Banks (all mine):** `=1` rows sit in `cc66_lowell_sweep_leafrec1` (refit), `p15_lowell_depths_leafrec1` (refit; arm-B rows only) and `p15_lowell_depths_distances_leafrec1` (distances; arm-B rows only). `SPLITIC` is in no bank.
+- **Receipts:** only `P15_the_low_multipole_depth_gap…` reads them, in four blocks:
+  - :466–:500, `B_AOR`, labelled "arm of record";
+  - :515–:570, the five pinned figures +5.54 / 2.33 / 0.57 / −4.90 / −0.67;
+  - :575–:600, "the octopole's excess is the two-clock split's";
+  - :726–:790, `_AOR` = the `=1` DECOUPLED row, labelled "the arm of record's depth", with "six of seven change and ℓ = 8 does not" and "the octopole is the largest move".
+- **Print**, every one with its (L) counterpart in the r7695 banks:
+  - **P15 `CR_cosmology.tex`:2823–2824:** "three per cent at every multipole but the octopole, where it sits five and a half per cent high". (L): within 2.9% at every ℓ, octopole −0.88%.
+  - **:2828–2830:** "4.9 … 0.25 … 5.15" at ℓ = 4. (L): −2.91 / −6.19, spread −3.28.
+  - **:2830–2831:** "agree to 0.7 per cent and the excess survives both". (L): spread +0.16, no excess.
+  - **:2831–2833:** "goes with the hierarchy's two-clock split". It was 72–77% the retired pairing's dynamics.
+  - **`CR_synthesis.tex`:1494:** "five and a half per cent at it". (L): 2.9% everywhere.
+  - The seven printed depths (one-clock exact transfer) and "minimum 4, recovery 8" do **not** rest on `=1`.
+- **Off print:** "ninety-six per cent the two-clock split's physics" (`THE_CONSOLIDATION_LEDGER.md`:1130, from my r7677) is superseded. 72–77% of that shift is the retired dynamics; the arm of record's own clock (the projection) carries about +0.007.
+- **Acoustic sector:** no receipt runs HIER with `SPLITCLOCK`. The acoustic instrument is ACOUSTIC's own `LEAFPERT` default, already (L).
+- **For cc66's re-point:** on arm A (L) the octopole is no longer the largest move (ℓ = 5 is, −0.009 against +0.006), and the multipole whose printed value holds is ℓ = 7, not ℓ = 8. So :757 and :761 need rewriting, not just re-pointing.
+
+**Item 2 (the 11-07 nightly)** follows at `r7697+70.2`.
 
 ## ✔ `r7695+70.1` — TO 69 AND cc66: **BOTH TRANSFERS NOW CARRY THE ARM OF RECORD, AND THEY AGREE. ARM A (L) AT THE DISTANCES POINT: 0.4848 / 0.4407 / 0.3536 / 0.6569 / 0.9087 / 0.9828 / 0.9992. ARM B DECOUPLED IS WITHIN 2.9% OF IT AT EVERY ℓ = 2–8 (FROZEN 6.2%), AND THE OCTOPOLE IS NOT AN EXCEPTION (−0.7 / −0.9%). THE OLD +5.5% WAS 72–77% THE RETIRED PAIRING'S DYNAMICS**
 

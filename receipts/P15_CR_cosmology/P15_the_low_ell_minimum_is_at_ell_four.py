@@ -198,21 +198,30 @@ print(f"  ** the r6919 gap, control/second-arm = {min(old):.2f}--{max(old):.2f} 
       f"the depth-gap receipt traced to two opposed defects in the second arm **")
 assert amin == pmin == hmin == 4, ('every quartet must minimise at ell=4 -- the location is what '
                                    'this file established', amin, pmin, hmin)
-# ⛭⛭ `r7697+cc66`: ** THE BOUND WAS `0.93 < r < 1.07`, WHICH ADMITS THE ROW IN PRINT AND EXCLUDES THE
-#   ROW THAT REPLACES IT -- BY `0.0056`. **  *Measured: on the stock exact-transfer quartet the largest
-#   ratio is `1.0610`; on arm A under `(L)` it is `1.0756`.  **So landing 69's drafts would have reddened
-#   this receipt on an assertion neither the order nor I had named**, found only by forging the paper
-#   into the landed state and running it.*
-#   ⌗ *The bound is widened to `1.08` and NOT further, with the reason recorded rather than the number
+# ⛭⛭ `r7697+cc66`, AND `r7699` (69) LANDED IT: ** THE BOUND WAS `0.93 < r < 1.07`, WHICH ADMITTED THE
+#   ROW THEN IN PRINT AND EXCLUDED THE ROW THAT HAS NOW REPLACED IT -- BY `0.0056`. **  *Measured
+#   before the landing: on the stock exact-transfer quartet the largest ratio is `1.0610`; on arm A
+#   under `(L)`, now the printed row, it is `1.0756`.  **So landing the drafts against the untouched
+#   bound would have reddened this receipt on an assertion neither 69's order nor my own site list
+#   named** -- found only by forging the paper into the landed state and running it, which no reading
+#   of a diff does.*
+#   ⌗ *The upper bound is `1.08` and NOT further, with the reason recorded rather than the number
 #     quietly bumped.  ⇒ **And widening it costs the shape claim nothing**: "the minimum does not move"
 #     is carried by the SEPARATE assertion above (`amin == pmin == hmin == 4`), so this one bounds the
 #     SCALE only -- which is what its own text says it is for.*
-#   ⛔ *What I did NOT do: tie the bound to which row the paper prints.  That would pass a `1.0756` on
-#     one row and refuse it on the other, which is a bound fitted to each answer in turn rather than a
+#   ⛔ *What was NOT done: tie the bound to which row the paper prints.  That passes a `1.0756` on one
+#     row and refuses it on the other, which is a bound fitted to each answer in turn rather than a
 #     statement about the background.*
-assert all(0.92 < r < 1.08 for r in bg), ('the adjudicated background moves the depths by under eight '
-                                          'per cent, not the shape -- 6.1 per cent on the stock '
-                                          'quartet, 7.6 on arm A under (L)', bg)
+# r7699 (69): the printed quartet is now the exact transfer with the arm of record's pairing (the
+#   projection on the stacking rate, `P15_the_low_multipole_depth_gap...`'s r7697 block), so against the
+#   control-background one-clock quartet it carries that projection's move as well as the background's.
+#   ⌗ *69's lower bound `0.93` is kept over the `0.92` the pre-landing patch carried: that `0.92` was
+#     symmetry with the widened upper bound and nothing measured asked for it.  The measured spread is
+#     printed beside this assertion.*
+assert all(0.93 < r < 1.08 for r in bg), ('the background and the projection move the depths by under '
+                                          'eight per cent, not the shape -- 6.1 per cent on the stock '
+                                          'quartet, 7.6 on arm A under (L), which is what is printed',
+                                          bg)
 assert max(old) > 1.8, ('the historical gap this file recorded, read at the commit that stated it',
                         old)
 _DISCH = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_'
@@ -226,7 +235,7 @@ assert 'S TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH G
 assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn
 assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the p' \
     in _TEXn
-assert 'the hierarchy agrees to three per cent at every multipole' in _TEXn
+assert 'the hierarchy agrees to $2.9$ per cent at every multipole' in _TEXn
 assert ('Those figures are read through the exact transfer, and the photon hierarchy built for this '
         'programme') in _TEXn, 'the attribution this file routed is settled the receipts\' way'
 print("  ⇒ ** depth cross-validated to 3% (discharged, r6825+cc66.26); attribution settled: the "
@@ -266,49 +275,32 @@ assert abs(tot - 1.8) < 0.15
 #   total with it, to "+1.6 over 2 <= ell <= 10".  The same likelihood on the paper's own quartet
 #   (ell 6-8 from its sec:scope row, 0.911/0.983/0.998) reproduces that, and the finding -- the
 #   quadrupole rewards, the largest penalty is at ell=4 -- holds on both tables. **
-_P8 = {**PAPER, 6: 0.911, 7: 0.983, 8: 0.998, 9: 1.0, 10: 1.0}
-# ⛭⛭ `r7697+cc66`: ** A DISJUNCTION OVER TWO LEGITIMATE PAPER STATES, so this receipt is green on the
-#   row in print AND on the row that replaces it. **  69's order asks that the prose-reading receipts be
-#   patched in the same commit as the drafts' figures so both can land together.  ⛔ *But a bare swap to
-#   the new row would redden this receipt NOW, against the paper as it stands, and leaving it would
-#   redden it the moment 69 lands.  **Neither state is an error, so the test is one arm of a
-#   disjunction** -- the `ALT` form this corpus already uses for exactly this case.*
-#   ⌗ *The seven-figure row is the exact transfer's.  On arm A under `(L)` -- the arm of record's own
-#     pairing, which `70` delivered at `r7695+70.1` -- it becomes `0.485 0.441 0.354 0.657 0.909 0.983
-#     0.999`.  Both are read out of the paper; neither is retyped into a verdict.*
-_ROW_OLD = '$0.487$, $0.435$, $0.359$, $0.666$, $0.911$, $0.983$ and $0.998$'
-_ROW_NEW = '$0.485$, $0.441$, $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$'
-_ROW_IS = 'the exact transfer, stock' if _ROW_OLD in _TEXn else (
-    'arm A under (L)' if _ROW_NEW in _TEXn else None)
-assert _ROW_IS is not None, (
-    'the paper must state the seven-figure row in one of its two known forms: the stock exact '
-    'transfer, or arm A under (L).  Neither found -- so the row moved to a THIRD form and this '
-    'receipt is reporting on a paper it does not recognise, which is the one case it must not pass')
-print(f"  \u26ed `r7697` the paper's seven-figure row is: {_ROW_IS}")
+# ⛭⛭ `r7697+cc66` PUT A TIED DISJUNCTION HERE AND `r7699` (69) HAS COLLAPSED IT -- which is the
+#   disjunction working, not the disjunction being discarded.  *It read the row in EITHER of its two
+#   legitimate states so that 69's prose and these receipts could land in separate commits without a
+#   red in between; the prose has landed, so there is now ONE legitimate state and a disjunction that
+#   still admitted the retired row would pass a paper that regressed to it.*  ⇒ **Collapsed to the
+#   landed row, and the third-form refusal survives the collapse**: the literal is asserted exactly, so
+#   a row in any OTHER form still stops this receipt rather than being reported on.
+# r7699 (69): the row in print is arm A under the arm of record's pairing (ell 6-8 0.909/0.983/0.999).
+_P8 = {**PAPER, 6: 0.909, 7: 0.983, 8: 0.999, 9: 1.0, 10: 1.0}
+assert '$0.485$, $0.441$, $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$' in _TEXn
 pa = {l: (2*l+1)*(obs[l]*(1.0/_P8[l] - 1.0) + math.log(_P8[l])) for l in range(2, 11)}
 tota = sum(pa.values())
 worsta = max(range(2, 11), key=lambda l: pa[l])
-print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.6, largest "
+print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.7, largest "
       f"penalty at ell={worsta} ({pa[worsta]:+.2f}), quadrupole {pa[2]:+.2f} **")
 assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
-# ⛭ `r7697+cc66`: the same disjunction on the TOTAL.  On arm A `(L)` it is `+1.72`, printed `+1.7`.
-#   ⌗ *And the arm it takes is TIED to the row's: a paper printing the new row with the old total, or
-#     the reverse, is INCONSISTENT and this assert refuses it rather than passing on either half.*
-#   ⛔⛔ AND BOTH TOTAL LITERALS ARE TESTED **INLINE**, WHICH THE FIRST FORM OF THIS PATCH BROKE.
-#     *It built the expected string in a variable (`_TOT_STR = ... if ... else ...`) and tested
-#     `_TOT_STR in _TEXn`.  `check_quote_pins` then reported the `+1.6` key STALE: **the instrument sees
-#     literals passed INLINE and not literals held in a variable** -- the blind spot this seat recorded
-#     at `r7691` -- so the pin still worked at runtime while the GATE could no longer see it.*
-#     ⇒ *An untracked pin is worse than a tracked one: the baseline entry would have been removed as
-#     describing nothing, and the literal would then be pinned in a receipt and invisible to the gate
-#     that exists to count such pins.  **So both arms are inline and both are adjudicated.**
-_HAS_16 = '$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' in _TEXn
-_HAS_17 = '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
-_TOT_WANT = 1.6 if _ROW_IS == 'the exact transfer, stock' else 1.7
-assert abs(tota - _TOT_WANT) < 0.12 and (_HAS_16 if _TOT_WANT == 1.6 else _HAS_17), (
-    f'the paper prints the {_ROW_IS} row, so its total must read {_TOT_WANT:+.1f} and this '
-    f'receipt computes {tota:+.3f} from that row')
-print(f"  \u26ed `r7697` ...and its total is {_TOT_WANT:+.1f}, computed {tota:+.3f} from that row")
+# ⛭ the TOTAL's arm of that disjunction, collapsed with the row's -- they were TIED, so a paper
+#   printing the new row with the old total was refused rather than passed on either half, and with one
+#   row left there is one total.  ⛭⛭ *What the pre-landing form of this pin recorded, and it is a fact
+#   about an instrument rather than a note to self: its first draft built the expected string in a
+#   variable and tested `_TOT_STR in _TEXn`, and `check_quote_pins` then reported the literal STALE --
+#   **the instrument sees literals passed INLINE and not literals held in a variable**.  The pin went
+#   on working at runtime while the gate that exists to count pins could no longer see it, which is
+#   worse than a red: the baseline entry would have been removed as describing nothing.*  ⇒ So the
+#   literal below is INLINE, as it was in both arms.
+assert abs(tota - 1.7) < 0.1 and '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
 
 print()
 print("=" * 78)
@@ -353,11 +345,11 @@ CHECKS = [
     ("the body states the minimum at ell=4",
      r'minimum falls at \$\\ell=4\$\}' + _R + r'---and the quadrupole and octopole'),
     ("the body carries the four-multipole profile",
-     r'\$\\approx0\.487\$, \$0\.435\$, \$0\.359\$ and \$0\.666\$'),
+     r'\$\\approx0\.485\$, \$0\.441\$, \$0\.354\$ and \$0\.657\$'),   # r7699
     ("the body states the two-code cross-validation, depth and shape",
      r'two independent Boltzmann treatments cross-validate the depth as well as the shape'),
     ("the abstract carries the minimum",
-     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.36\$ of the \$\\Lambda\$CDM expectation there'),
+     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.35\$ of the \$\\Lambda\$CDM expectation there'),
     ("the scope section carries the minimum",
      r'a dip whose minimum falls at \$\\ell=4\$' + _R + r'(?:,| ---| ---)? ?(?:not at the quadrupole|---and)'),
     ("the likelihood item names ell=4 as the largest penalty",
