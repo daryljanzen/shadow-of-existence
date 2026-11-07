@@ -1,0 +1,124 @@
+{
+ "p15_lowell_depths_leafpert_leafrec1": {
+  "sha_before": "c99a949c5e0edc03e9b9ba7f681d681655e79cc83a86843280ecb3a076f36748",
+  "sha_after": "d7c90b86a2774861e12cd5a7120ad469fe10ff59d44bad8db3e7e65436fdaeae",
+  "rows": [
+   "refit__armB_frozen__L",
+   "refit__armB_frozen__one_clock",
+   "refit__armB_decoupled__L",
+   "refit__armB_decoupled__one_clock",
+   "distances__armB_frozen__L",
+   "distances__armB_decoupled__L"
+  ],
+  "numerics": {
+   "refit__armB_frozen__L": {
+    "ZEND": 0,
+    "NTAU": 150000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3": 900,
+    "NS3_source": "HIER default"
+   },
+   "refit__armB_frozen__one_clock": {
+    "ZEND": 0,
+    "NTAU": 150000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3": 900,
+    "NS3_source": "HIER default"
+   },
+   "refit__armB_decoupled__L": {
+    "NTAU": 150000,
+    "ZDEC": 200,
+    "NS3": 60000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3_source": "CASES"
+   },
+   "refit__armB_decoupled__one_clock": {
+    "NTAU": 150000,
+    "ZDEC": 200,
+    "NS3": 60000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3_source": "CASES"
+   },
+   "distances__armB_frozen__L": {
+    "ZEND": 0,
+    "NTAU": 150000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3": 900,
+    "NS3_source": "HIER default"
+   },
+   "distances__armB_decoupled__L": {
+    "NTAU": 150000,
+    "ZDEC": 200,
+    "NS3": 60000,
+    "KLO": 0.1,
+    "NLOW": 480,
+    "NS3_source": "CASES"
+   }
+  },
+  "arrays_byte_identical": [
+   "ells",
+   "refit__armB_frozen__L",
+   "refit__armB_frozen__one_clock",
+   "refit__armB_decoupled__L",
+   "refit__armB_decoupled__one_clock",
+   "distances__armB_frozen__L",
+   "distances__armB_decoupled__L"
+  ]
+ },
+ "p15_lowell_depths_armA_leafpert_leafrec1": {
+  "sha_before": "3b1a6ed2b0b67f56088d77bfa2f6264b73a150ad97004ec0ed041de1f9c1e839",
+  "sha_after": "e4733c25996d7c245b6ebc08240992ac82a87bc2eb8c0ab4c58bce8a8e0fded3",
+  "rows": [
+   "distances__armA__L",
+   "distances__armA__one_clock_gate",
+   "refit__armA__L",
+   "refit__armA__one_clock_gate"
+  ],
+  "numerics": {
+   "distances__armA__L": {
+    "KLO": 0.1,
+    "NLOW": 320,
+    "NTAU": null,
+    "NS3": null,
+    "grid": "CAMB opacity and dynamics; projection on camb_L.py's own 2801+3001-time grid from eta_rec-160 to eta_0",
+    "note": "NLOW is 320 here against arm B's 480: camb_L.py sets it; gate G held at 0.51%"
+   },
+   "distances__armA__one_clock_gate": {
+    "KLO": 0.1,
+    "NLOW": 320,
+    "NTAU": null,
+    "NS3": null,
+    "grid": "CAMB opacity and dynamics; projection on camb_L.py's own 2801+3001-time grid from eta_rec-160 to eta_0",
+    "note": "NLOW is 320 here against arm B's 480: camb_L.py sets it; gate G held at 0.51%"
+   },
+   "refit__armA__L": {
+    "KLO": 0.1,
+    "NLOW": 320,
+    "NTAU": null,
+    "NS3": null,
+    "grid": "CAMB opacity and dynamics; projection on camb_L.py's own 2801+3001-time grid from eta_rec-160 to eta_0",
+    "note": "NLOW is 320 here against arm B's 480: camb_L.py sets it; gate G held at 0.51%"
+   },
+   "refit__armA__one_clock_gate": {
+    "KLO": 0.1,
+    "NLOW": 320,
+    "NTAU": null,
+    "NS3": null,
+    "grid": "CAMB opacity and dynamics; projection on camb_L.py's own 2801+3001-time grid from eta_rec-160 to eta_0",
+    "note": "NLOW is 320 here against arm B's 480: camb_L.py sets it; gate G held at 0.51%"
+   }
+  },
+  "arrays_byte_identical": [
+   "ells",
+   "distances__armA__L",
+   "distances__armA__one_clock_gate",
+   "refit__armA__L",
+   "refit__armA__one_clock_gate"
+  ]
+ }
+}
