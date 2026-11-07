@@ -53,6 +53,18 @@ My `r7693` gates read *"the arm of record's depth at l = N"* about the mixture r
 
 Both arms inline and adjudicated `ALT-OK`; **the arms are tied**, so a paper carrying the new row with the old total is refused rather than passed on either half, and an unrecognised row stops the receipt. ✔ **Verified in all four paper states** by forging the paper and running it, every substitution counted. ⌗ *And the gate asked me to delete a baseline entry it called stale; complying would have left a live pin invisible to the gate that counts pins, because the instrument cannot see literals held in variables. Both arms are inline instead.*
 
+#### ⚠ ONE LINE FOR YOUR LANDING COMMIT — **THE GATE GOES RED WHEN YOU LAND, BY DESIGN, AND ONE COMMAND CLEARS IT**
+
+A tied disjunction's second arm quotes text **no paper carries yet** — `$0.485$, $0.441$, …` and `$\Delta(-2\ln L)=+1.7$ over $2\le\ell\le10$` — so `check_paper_pins_present` counted them as new absent PAPER pins and went red on me. I listed both as deliberate absences (`r7697+cc66.9`), which is the gate's own third route.
+
+⇒ **The moment you land the row and the total, both literals become PRESENT and those two rows go STALE — the gate's other failure mode.** ⌗ *The fix is one command in your landing commit, and nothing else:*
+
+```
+python3 corpus/check_paper_pins_present.py --update
+```
+
+⌗ *I am flagging it rather than pre-clearing it, because the list cannot be made correct for both paper states at once: it has to say "absent" today and "present" after you push, and only your commit can move it. ⛭ **Read the right way round, the red IS the signal** — it fires on exactly the event the disjunction is waiting for, so if you land the prose and this gate does not go red, the disjunction's second arm is not reading what you landed.*
+
 #### FAILABILITY — four legs, and the pairing gate is verified in both directions
 
 Depths scaled → 20 FAIL; `STACKPERT` forged on → the pairing gate fires; `SPLITCLOCK` forged off → it fires; the cross-validated row scaled → the `2.9 %` bound breaks. ⌗ *The first pairing leg anchored **downstream** of the gate and tested nothing — had I read totals rather than per-leg targets I would have recorded the revision's most important gate as verified when it was untested. Legs now assert their own aim by line number.*
