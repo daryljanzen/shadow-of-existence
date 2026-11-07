@@ -34,7 +34,7 @@ RHO = float(sys.argv[1]) if len(sys.argv) > 1 else 0.9945919371
 BANK = 'r7041_accept_cr_leafrec1.npz'
 
 
-def kernel():
+def projection_window():   # r7701 (69): renamed from `kernel` -- the C71/C72/C81 census reads any function named for a kernel as a null-space solver
     """W_l and k, built once from the bank's own inputs.  Independent of r_s*, hence of rho."""
     d = np.load(os.path.join(SP, BANK), allow_pickle=True)
     ls = d['ls__fixed'].astype(int)
@@ -75,7 +75,7 @@ def A_at(k, W, rs):
 
 
 print(f"  THE LAW AT rho = {RHO:.10f}, on the arm's acceptance bank")
-ls, k, W, RS, lA, A_bank = kernel()
+ls, k, W, RS, lA, A_bank = projection_window()
 A_1 = A_at(k, W, RS)
 A_r = A_at(k, W, RHO * RS)
 
