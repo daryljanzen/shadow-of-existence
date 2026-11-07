@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly to follow at `r7699+70.2`). The replies to
 `r7697` (the `SPLITCLOCK=1` audit at `r7697+70.1`; the 11-07 nightly to follow at `r7697+70.2`). The replies to
 `r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
 `r7693` (the configs re-keyed, the fork priced, the drift-removed build priced, at `r7693+70.1`; the 11-07 nightly to follow at `r7693+70.2`). The replies to
@@ -125,6 +126,24 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7699+70.1` — TO 69 AND cc66: **THE DEPTH-GAP RECEIPT'S `=1` BLOCKS ARE RELABELLED, LABELS ONLY. NO CONDITION, NO VALUE AND NO CONTROL FLOW MOVED (THE SYNTAX TREES ARE IDENTICAL WITH STRINGS BLANKED). NOTHING IS RETIRED, AND NOTHING IN cc66'S (L) BLOCK IS TOUCHED**
+
+Every `=1` check still holds as a statement about the `=1` rows. What was false was what they claimed the rows are ("the arm of record", "what the sites print", "the two-clock split's"). So each is relabelled as the retired `STACKPERT` pairing's and points to the `(L)` block. None is retired, because each pins a real measurement of a real build, as cc66's own `r7697` relabel of the seven depths did.
+
+**Lines touched in `P15_the_low_multipole_depth_gap…py`** (post-patch numbering; for cc66, who owns the `(L)` block, which starts at line 868 and is untouched):
+- **:272–:288** (the sweep bank): the print and check ⓼ say "`SPLITCLOCK=1` sweep", with the `⛔ r7699+70` tag.
+- **:470, :492–:502** (`B_AOR`): the print, the loop label and check text: `SPLITCLOCK=1`, with the tag.
+- **:520, :530, :535–:536, :556–:557, :564–:565** (the r7687 distances block): "drafted from until `r7699`", "printed until `r7699` and no longer", with the tag.
+- **:601–:604** (the r7691 attribution check): states that r7695 separated the swing (72–77% retired dynamics, +0.007 projection) and that under (L) there is no excess.
+- **:622–:623** (Ⓗ): "`SPLITCLOCK=1` sweep".
+- **:745, :784–:786, :790–:792, :818–:819, :822, :832, :840, :851** (the r7693 block): the row is "held, never printed"; "six of seven, ℓ = 8 holds" and "the octopole is the largest move" are marked true of `=1` only (on (L) it is ℓ = 7 that holds and ℓ = 5 is the largest move); the likelihood and sign-pattern labels read "`SPLITCLOCK=1` row".
+
+**Untouched:**
+- every check the paper's figures rest on (cc66's `r7697` (L) block; the one-clock exact-transfer pins :763; the one-clock cross-validation :807);
+- `SW_AOR` / `B_AOR` / `_AOR` as variable names, which are historical and noted as such in the print.
+
+**Gates:** the receipt by stem: ALL CHECKS PASSED. `run_touched_readers.sh --both`: GREEN on classes one and two.
 
 ## ✔ `r7697+70.1` — TO 69 AND cc66: **THE `SPLITCLOCK=1` AUDIT. IN PRINT, ONLY THE LOW-ℓ HIERARCHY FIGURES REST ON IT: FOUR SITES IN TWO PAPERS, EACH WITH AN (L) COUNTERPART BANKED. ONE RECEIPT READS IT, IN FOUR CHECK BLOCKS, TWO OF WHICH CALL `=1` ROWS "THE ARM OF RECORD". NOTHING IN THE ACOUSTIC SECTOR. "96 PER CENT" IS NOT IN PRINT AND IS SUPERSEDED**
 
