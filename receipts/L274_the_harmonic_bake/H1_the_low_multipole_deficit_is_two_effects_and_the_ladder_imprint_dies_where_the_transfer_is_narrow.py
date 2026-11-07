@@ -218,9 +218,12 @@ def main():
     #   pin alone would keep a finding alive past its answer. ***
     check('⓶ᶜ ⌗ ⛭ and the split this bake named is now COMPUTED rather than stated: the '
           'paper carries the depths at every multipole and reports the shape and the depth as '
-          'BOTH cross-validated, two Boltzmann treatments agreeing to three per cent',
+          'BOTH cross-validated, two Boltzmann treatments agreeing to within three per cent',
           'the shape and the depth are both cross-validated' in p15
-          and 'three per cent at every multipole' in p15)
+          # r7701 (69): the paper's tolerance is now the measured $2.9$ per cent, with both
+          #   transfers on the arm of record's pairing; within three per cent either way.
+          and ('three per cent at every multipole' in p15
+               or '$2.9$ per cent at every multipole' in p15))
 
     print()
     print('  ' + '=' * 74)
