@@ -772,8 +772,17 @@ for _l, _want in ((2, 0.478), (3, 0.459), (4, 0.358), (5, 0.651),
 # ⌗ the move, pinned as a SET rather than one multipole at a time: the claim the drafting rests on is
 #   WHICH printed digits change, and a per-multipole pin does not assert that the others hold still.
 _MOVED = tuple(_l for _l in range(2, 9) if round(_AOR[_l], 3) != round(_EXA[_l], 3))
-check("\u26ed `r7693` ** SIX OF THE SEVEN PRINTED DEPTHS CHANGE AND l = 8 DOES NOT **, so every site "
-      "that prints a depth below l = 8 is a site this re-point reaches",
+# ⛭⛭ `r7699+cc66`: ** THE ARITHMETIC IS SOUND AND THE WORD `PRINTED` IS NOW FALSE. **  *This gate
+#   compares the exact transfer against the RETIRED mixture row, and `r7699` (69) has landed arm A
+#   under `(L)`: the paper prints NEITHER of these two rows any more.  ⇒ So the claim is relabelled to
+#   the two banks it is actually of, and the live `which multipole holds` statement is the `r7697` one
+#   below -- where it is **l = 7**, not l = 8.*  ⛔ *`70` flagged exactly this at `r7697+70.1` ("`:757`
+#   and `:761` need rewriting, not just re-pointing"), and it is this seat's recurring defect in its
+#   mildest form: a sound measurement carrying a label it can no longer support.  The numbers were
+#   never wrong; the word `printed` was.*
+check("\u26ed `r7699` ** SIX OF THE SEVEN DEPTHS CHANGE BETWEEN THE EXACT TRANSFER AND THE RETIRED "
+      "MIXTURE ROW, AND l = 8 DOES NOT ** \u26d4 *neither row is what the paper prints since `r7699`; "
+      "the printed row is arm A `(L)`, where the one that holds is l = 7 (pinned below)*",
       _MOVED == (2, 3, 4, 5, 6, 7),
       f"moved at l = {_MOVED}; l = 8 is {_EXA[8]:.4f} -> {_AOR[8]:.4f}")
 check("\u26ed `r7693` ...and the OCTOPOLE is the largest move, upward, which is the one that matters: "
@@ -965,8 +974,25 @@ def _r1(_v):
     return (str(_d.quantize(Decimal('0.1'), _HU)), str(_d.quantize(Decimal('0.1'), _HE)))
 
 
-print("\n  \u26ed `r7693` THE PER-MULTIPOLE TERMS AT THE PAPER'S OWN ONE PLACE, both conventions")
-print("     l   printed   term now     half-up / half-even   printed digit changes?")
+# ⛭⛭ `r7699+cc66`: ** ARM A `(L)`'s FOUR TERMS AT THE ONE PLACE `r7699` PRINTS THEM, under both
+#   conventions. **  *The pins above are at two places; the paper prints one, and the relabelled gate
+#   below names arm A's one-place column in its own message.  ⛔ **A figure quoted in an assertion's
+#   text and asserted nowhere is an ungated pin** -- this seat's commonest defect in its quietest
+#   form -- so the column is gated here rather than left standing on the prose.*
+check("\u26ed `r7699` ** and arm A `(L)`'s four terms at the ONE place the paper now prints them are "
+      "`-2.6 +0.9 +2.2 +1.1` **, under half-up and half-to-even alike",
+      tuple(_r1(_pA[_l]) for _l in range(2, 6))
+      == (('-2.6', '-2.6'), ('0.9', '0.9'), ('2.2', '2.2'), ('1.1', '1.1')),
+      "; ".join(f"l={_l}: {_pA[_l]:+.5f} -> {_r1(_pA[_l])[0]}" for _l in range(2, 6)))
+
+
+# ⛭⛭ `r7699+cc66`: the same relabel.  *These four are the RETIRED mixture row's terms against the
+#   EXACT TRANSFER's, at one place.  `r7699` landed arm A `(L)`'s -2.6 / +0.9 / +2.2 / +1.1, so the
+#   paper prints neither column below.  ⇒ The comparison is kept -- it is a real measurement of two
+#   real rows and it carries this seat's own falsified arm \u2462 -- and the word `printed` goes.*
+print("\n  \u26ed `r7699` THE PER-MULTIPOLE TERMS, RETIRED MIXTURE ROW vs EXACT TRANSFER, at one "
+      "place under both conventions \u26d4 *the paper prints arm A `(L)`'s, which is neither column*")
+print("     l   exact     mixture now   half-up / half-even   the one place changes?")
 for _l in range(2, 6):
     _a, _b = _r1(_per8[_l]); _pa, _pb = _r1(_perex[_l])
     print(f"    {_l:2d}   {_pa:>7}   {_per8[_l]:+9.5f}     {_a:>6} / {_b:<6}        "
@@ -978,9 +1004,11 @@ check("\u26d4\u26ed `r7693` ** l = 4's TERM ROUNDS TO `+2.1` UNDER BOTH CONVENTI
       "time, in the revision whose receipt pins the repair for it*",
       _r1(_per8[4]) == ('2.1', '2.1') and _r1(_perex[4]) == ('2.0', '2.0'),
       f"{_per8[4]:+.5f} -> {_r1(_per8[4])} against the printed {_perex[4]:+.5f} -> {_r1(_perex[4])}")
-check("\u26ed `r7693` ** SO ALL FOUR PRINTED PER-MULTIPOLE TERMS CHANGE their one printed place: "
-      "`-2.5 +1.0 +2.0 +1.0` becomes `-2.6 +0.7 +2.1 +1.2` ** -- taken under both conventions, which "
-      "is how the l = 4 error above would have been caught the first time",
+check("\u26ed `r7699` ** SO ALL FOUR TERMS CHANGE their one place between the two rows: the exact "
+      "transfer's `-2.5 +1.0 +2.0 +1.0` becomes the retired mixture row's `-2.6 +0.7 +2.1 +1.2` ** -- "
+      "taken under both conventions, which is how the l = 4 error above would have been caught the "
+      "first time \u26d4 *and arm A `(L)`, which is what `r7699` prints, is a THIRD column: "
+      "`-2.6 +0.9 +2.2 +1.1`, pinned above*",
       all(_r1(_per8[_l]) != _r1(_perex[_l]) for _l in range(2, 6))
       and tuple(_r1(_per8[_l])[0] for _l in range(2, 6)) == ('-2.6', '0.7', '2.1', '1.2'),
       "; ".join(f"l={_l}: {_r1(_perex[_l])[0]} -> {_r1(_per8[_l])[0]}" for _l in range(2, 6)))
