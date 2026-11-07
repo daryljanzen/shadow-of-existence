@@ -1,0 +1,139 @@
+G2 self-probe: accepted, accepted, accepted, REFUSED
+
+==============================================================================================
+ITEM 1 -- the low-ell rewrite: every site, against the receipt's r7697 block and the (L) banks
+==============================================================================================
+the receipt's gated figures, parsed from its source: 20
+
+arm 1a/1b -- every site that prints a depth or a likelihood term, located by its own text:
+  P15  l.134   new3=2  new2=1  OLD3=0  lik_new=0  LIK_OLD=0   Because the distance slicing is flat, the discrete closed-
+  P15  l.195   new3=0  new2=1  OLD3=0  lik_new=0  LIK_OLD=0    \includegraphics[width=0.66\textwidth]{r_of_tildetau_3D.p
+  P15  l.467   new3=0  new2=1  OLD3=0  lik_new=0  LIK_OLD=0   The expanding-leg driving carries a qualification of its o
+  P15  l.710   new3=0  new2=0  OLD3=0  lik_new=1  LIK_OLD=0   sharp recombination cut, the signature reads $+2.2\%$ wher
+  P15  l.1347  new3=0  new2=1  OLD3=0  lik_new=0  LIK_OLD=0   rather than from a difference of runs. \emph{It runs from 
+  P15  l.1843  new3=0  new2=0  OLD3=1  lik_new=0  LIK_OLD=0   two}: their deviation patterns correlate at $0.998$, as do
+  P15  l.1900  new3=0  new2=0  OLD3=1  lik_new=0  LIK_OLD=0   $\mathrm d\eta_{\rm leaf}/\mathrm d\eta_{\rm stack}$, whic
+  P15  l.1934  new3=0  new2=0  OLD3=1  lik_new=0  LIK_OLD=0   the memory is linear, measured at $0.9983$, leaving the ac
+  P15  l.1938  new3=0  new2=0  OLD3=1  lik_new=0  LIK_OLD=0   law at $0.9985$, is why integrating from $a\simeq0$ was ne
+  P15  l.2519  new3=1  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   \emph{So the throat's isotropization is not only the stand
+  P15  l.2592  new3=4  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   \caption{The low-multipole discreteness floor. The closed-
+  P15  l.2604  new3=4  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   Carried out with the exact transfer (gate-validated: the c
+  P15  l.2608  new3=4  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   Driving the photon hierarchy built for this programme (\S\
+  P15  l.2612  new3=0  new2=0  OLD3=0  lik_new=0  LIK_OLD=3   This is a parameter-free deficit, set by $\Lambda$ through
+  P15  l.2771  new3=0  new2=4  OLD3=0  lik_new=0  LIK_OLD=0   \item Flat distances ($\Omega_k\simeq0$) coexisting with a
+  P15  l.2810  new3=4  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   It gives a \emph{mild} deficit, $\approx0.485$, $0.441$, $
+  P15  l.2814  new3=0  new2=0  OLD3=0  lik_new=4  LIK_OLD=0   Confronted with the sky the sector is a \emph{wash}: CR's 
+  P15  l.2821  new3=2  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   \emph{Carried to the present, the two treatments agree}: o
+  P15  l.2822  new3=5  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$ of the flat
+  P15  l.2903  new3=0  new2=2  OLD3=0  lik_new=3  LIK_OLD=0   With the genuine-Boltzmann depths ($\approx0.48/0.44$ at $
+  P15  l.2994  new3=1  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   returns $0.99940$ rather than unity. \emph{So what is deri
+  P15  l.3010  new3=0  new2=4  OLD3=0  lik_new=0  LIK_OLD=0   The low-multipole deficit is a mild, non-discriminating fe
+  P7   l.778   new3=4  new2=0  OLD3=0  lik_new=0  LIK_OLD=0   \emph{The perturbation spectrum.} Finally, the de~Sitter s
+  23 site(s) carry a figure of either row.
+  every printed depth is the want of a gate: YES
+  every printed likelihood term is the want of a gate: YES
+  NEGATIVE PROBE (an invented figure 0.777): unpinned, as it must be
+
+arm 1b' -- the likelihood row ACROSS sites, because a rewrite is missed at one site and not at the quantity:
+  P15  l.2814  carries the NEW row: -2.6 +0.9 +2.2 +1.1
+  P15  l.2903  carries the NEW row: -2.6 +0.9 +2.2
+  P15  l.2612  carries the OLD row: -2.5 +1.0 +2.0   ⛔
+  P15  l.710   carries ONE figure of the new row and is not a row site: +2.2
+
+arm 1c -- the cross-validation claim, read as a quantifier plus an exclusion (G1):
+  the bound                    FOUND
+  the quantifier               FOUND
+  the octopole named IN        FOUND
+  the old exception wording    absent
+  the receipt's gate for it: PRESENT
+  and what it asserts: the worst of the seven under 2.95 per cent AND the octopole under 1.0
+
+arm 1d -- the search for a surviving one-clock or unit depth, over P15, P7 and P18:
+  0.487  0 occurrence(s)
+  0.435  0 occurrence(s)
+  0.359  0 occurrence(s)
+  0.666  0 occurrence(s)
+  0.911  1 occurrence(s):
+      P15  l.1900  NOT a low-ell depth (which on this arm runs $0.788$ to $0.911$ ac)
+  0.998  3 occurrence(s):
+      P15  l.1843  NOT a low-ell depth (o the statistic's errors at the two arms' ph)
+      P15  l.1934  NOT a low-ell depth (ving the accumulation $0.0064$ per cent shor)
+      P15  l.1938  NOT a low-ell depth (why integrating from $a\simeq0$ was never in)
+  a depth printed as exactly one: none found by the search above
+  and the bank's own keys, which say what the one-clock row IS: ['ells', 'distances__armA__L', 'distances__armA__one_clock_gate', 'refit__armA__L', 'refit__armA__one_clock_gate', 'config', 'manifest']
+
+arm 1e -- the "doubled opacity grid" clause, and the build its convergence was measured on:
+  the clause, located by its text: FOUND
+  the receipt's two knob sweeps: PRESENT
+  and the banks they are computed on: ['DECOUPLED_control_KLO_0_1_NS3_60000', 'DECOUPLED_control_NS3_30000', 'FROZEN_control_KLO_0_1', 'FROZEN_control_NTAU_300000', 'FROZEN_control_default_cut_z_53_5_KLO_0_1']
+  any of those banks an (L) bank: NONE
+  and what the (L) bank's own config records of those knobs: {'NTAU': None, 'NS3': None, 'KLO': None, 'NLOW': None}
+
+arm 1f -- r7698's forward note: what became of the two octopole attribution clauses?
+  'two-clock split'                  0 occurrence(s) across P15, P7, P18
+  'goes with the hierarchy'          0 occurrence(s) across P15, P7, P18
+  'an excess that goes when'         0 occurrence(s) across P15, P7, P18
+  'the excess survives both'         0 occurrence(s) across P15, P7, P18
+  "five and a half per cent": none
+  the receipt's own verdict on the attribution: a WITHDRAWAL and not a refinement
+  and how much of the excess it measures as the retired pairing's: 72-77 per cent of it was the RETIRED pairing
+
+==============================================================================================
+ITEM 2 -- P1's Kretschmann sentence, against Kretschmann.lean
+==============================================================================================
+the sentence located by its text at character 82556
+  0\}$ (\texttt{dn\_witness}). That the curvature singularity lies in the black-hole region is machine-checked on Schwarzschild in Kruskal coordinates $(U,V,\theta,\phi)$: the Kretschmann scalar computed from the coordinate Riemann tensor of $-F\,dU\,dV+r^{2}d\Omega^{2}$ is $48M^{2}/r^{6}$ on the doma
+  kr_schwarzschild       FOUND
+  kr_blowup              FOUND
+  kr_cor_densities_c     FOUND
+  NEGATIVE PROBE 1 (a name the file does not carry): absent, as it must be
+
+arm 2a -- the value and the domain:
+  the theorem's value: kr_K (kr_SD M).gW x = 48 * M ^ 2 / rK M (x 0, x 1) ^ 6
+  its domain hypothesis: (hx : (x 0, x 1) ∈ sk_kM)
+  and what that set IS: def sk_kM : Set P := {p | p.1 * p.2 < 1}
+  the paper's domain, as the sentence states it: {V>0, UV<1}
+  and what THAT set is in the file: def seWS : Set P := {p | 0 < p.2 ∧ p.1 * p.2 < 1}
+  the corollary states the same value on that set: YES
+
+arm 2b -- "away from the poles of the sphere's chart":
+  a hypothesis of kr_schwarzschild: (hs : Real.sin (x 2) ≠ 0)
+  of kr_blowup and kr_cor_densities_c too: YES / YES
+  and it does work: the sphere's own curvature lemma asks the same condition: YES
+
+arm 2c -- the divergence, and "where r → 0", as TWO claims in one clause (G1):
+  the divergence: Tendsto (kr_KS M θ φ) kr_toSig atTop
+  the filter it diverges along: def kr_toSig : Filter seW := comap kr_UV (𝓝[<] 1)
+  that filter is non-trivial (so the limit is not vacuous): YES
+  and the r → 0 half is its own theorem: YES (kr_r_to_zero)
+
+arm 2d -- the TWO closure claims:
+  in the closure of the black-hole region: YES
+  in the closure of no finite exterior slice: YES
+  and that second claim's binder: every Θ and every τ
+  the locus, as the file defines it: def kr_Sig : Set P := {p | p.1 * p.2 = 1}
+  with U > 0 there, which the sentence does not claim: YES
+  FLIP (G3), the same reader with EVERY copy of the slice conjunct struck: reads none, as it must
+
+arm 2e -- "with the sphere factor written in":
+  the theorem is about a FOUR-coordinate point: YES
+  the curvature is taken of the four-dimensional metric: kr_K (kr_SD M).gW
+  the warped-product lemma the proof rewrites by: kr_warped
+  and the sphere's own curvature is computed, not assumed: YES (kr_K_sphere)
+
+----------------------------------------------------------------------------------------------
+arm 1a : SUPPORTED     -- every depth and every likelihood term the sites print is the want of a gate
+arm 1b : NOT SUPPORTED -- 1 site(s) carry the OLD likelihood row
+arm 1c : SUPPORTED     -- the quantifier and the exclusion are both in print and both gated
+arm 1d : SUPPORTED     -- no old depth literal survives at a low-ell site, by the search above
+arm 1e : THE CLAUSE'S EVIDENCE IS ON ANOTHER BUILD -- the two knob sweeps are computed on DECOUPLED_control_KLO_0_1_NS3_60000, DECOUPLED_control_NS3_30000, FROZEN_control_KLO_0_1, FROZEN_control_NTAU_300000, FROZEN_control_default_cut_z_53_5_KLO_0_1 -- none of them an (L) bank -- and the (L) bank's own config records none of those knobs
+arm 1f : FORWARD NOTE DISCHARGED -- the attribution clauses are gone from print at 4 of the four markers, and the receipt calls the attribution a withdrawal: yes
+arm 2a : SUPPORTED     -- the value and the corollary's domain match the sentence; the general theorem holds on the larger set
+arm 2b : SUPPORTED     -- the pole condition is a hypothesis of all three and the sphere lemma asks it too
+arm 2c : SUPPORTED     -- divergence along a non-trivial filter, with the r → 0 half its own theorem
+arm 2d : SUPPORTED     -- both closure claims are conjuncts, the second for every Θ and τ
+arm 2e : SUPPORTED     -- the curvature is taken of the four-dimensional metric with the sphere computed
+
+==============================================================================================
+11 verdicts printed.  0 reader or classifier probe(s) failed.
+==============================================================================================

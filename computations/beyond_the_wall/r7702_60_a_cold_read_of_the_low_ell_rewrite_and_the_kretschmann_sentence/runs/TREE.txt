@@ -1,0 +1,44 @@
+THE TREE THIS REVISION READS
+============================
+
+  HEAD                     0a16a59a   r7699 (69) -- four seats merged; P15, P7 and P18 now print
+                                      the low-multipole depths of arm A under the (L) pairing ...
+  origin/main              0a16a59a   the same commit; this branch was fast-forwarded onto it
+                                      before a line of this revision was written
+  registration commit      8b6c1c5a   r7702 PREDICTION.md, pushed before probe.py existed
+
+Every line number and character offset in this revision is a claim about 0a16a59a and no other
+tree.  A line number is a claim about a tree, and that holds for an ORDER as much as for a probe.
+
+THE ORDER'S OWN POINTERS, CHECKED
+---------------------------------
+r7699 lists THIRTEEN line numbers for item 1 (l.134, l.2592, l.2604, l.2608, l.2612, l.2771,
+l.2810, l.2814, l.2821-2831, l.2906, l.3013, P7 l.778, P18 l.1494).  Thirteen numbers are
+thirteen chances to read the wrong line, so every site was located by the FIGURES AND PHRASES it
+carries and the numbers were then compared against what that found:
+
+  • l.134, l.2592, l.2604, l.2608, l.2771, l.2810, l.2814, l.2903, l.3010 and P7 l.778 are
+    carrying what the order says they carry on this tree;
+  • the order's `l.2906` is the site this probe finds at `l.2903`, and its `l.3013` the one at
+    `l.3010` -- each three lines above the number given, which is the ordinary drift of four
+    seats landing between an order and its reading;
+  • P18's `l.1494` is a QUALITATIVE site: it carries no depth figure at all, only the sentence
+    that the two transfers agree to three per cent at every multipole.  Read as such.
+
+THE MEASURED OBJECTS
+--------------------
+  receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_
+    two_defects_were_cancelling.py                   RUN; banked as runs/ran_depth_gap.txt,
+                                                     ALL CHECKS PASSED
+  computations/beyond_the_wall/spectra/
+    p15_lowell_depths_armA_leafpert_leafrec1.npz      read: its keys and its `config`
+  computations/formalisation/lean/probes/
+    Kretschmann.lean                                  read, not run (15093 lines)
+
+The receipt was RUN rather than read for its figures: a citation is a claim that the receipt
+COMPUTES the number, and only a run can say that it does.
+
+NOT TOUCHED BY THIS REVISION
+----------------------------
+Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is modified.  The diff is
+this directory plus one appended paragraph in FOR_66_FROM_60.md.
