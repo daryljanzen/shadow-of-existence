@@ -1,0 +1,162 @@
+
+  r7706 (60) -- READINGS.  Order r7703, three items.
+==============================================================================
+  ITEM 1 -- THE prop:cycloid FIX, AND EVERY SITE THAT SURVIVES IT
+==============================================================================
+
+  1a  THE FIX, read at source
+    [SUPPORTED] statement: "the radial timelike geodesic of vanishing Killing energy"
+    [SUPPORTED] statement: "which reaches $r=2M$ at rest"
+    [SUPPORTED] proof: "Along a radial timelike geodesic the conserved energy gives"
+    [SUPPORTED] proof: "with $E=0$"
+
+  1b  THE PROOF'S GENERAL RELATION, checked rather than taken
+    [SUPPORTED] the proof states the general energy relation before setting $E=0$
+
+  1c  EVERY Mpi-SHAPED SITE, each classified by the LABEL beside it
+    6 Mpi-shaped hit(s): 4 PROPER-TIME, 2 AREA
+    [NOT THE QUANTITY] l.371 AREA: tays finite (areal radius $2M$, area $16\pi M^2$) and orthogonal to it. At $r=0$ the 
+    [NOT THE QUANTITY] l.377 AREA: s ordinary---areal radius $2M$, area $16\pi M^2$---and events at one critical point b
+     ^ negative probe (16) earning its place: an Mpi pattern that does not read its
+       context calls the 2-sphere's area 16\pi M^2 a proper time.
+
+  1d  THE SITES, each by the registered predicate
+      (general subject + E-DEPENDENT assertion + no scope marker = DEFECT;
+       general subject + E-INDEPENDENT assertion = CORRECT, reported as correct)
+    G4 classifier on both classes: general+E SUPPORTED; general+not-E SUPPORTED; scoped+E SUPPORTED
+
+    2 DEFECT(S): a general subject carrying an E = 0 object, unscoped
+      [DEFECT] l.140: The Schwarzschild interior is the cycloidal motion of a radially infalling test particle as parametrised by the rolling angle $\eta$, with the proper time $\tau$ being the arc length along the cycloid.
+      [DEFECT] l.460: \item The infalling worldline reaches $r=0$ in finite proper time ($\tau = M\pi$ from horizon-crossing) and ends there: $r=0$ is the endpoint of the infalling family, an infinite-curvature metric singularity at which the constructed manifol
+
+    5 site(s) general and CORRECT (E-independent assertion)
+      [CORRECT] l.82: \emph{And the curve only ever decelerates}: the radial acceleration along the infalling worldline is $-M/r^{2}$, Newtonian free fall, negative at every radius, so the cycloid has no turning point of i
+      [CORRECT] l.122: Along a radial timelike geodesic the conserved energy gives $(dr/d\tau)^2=E^2-1+2M/r$; with $E=0$, the proper-time element satisfies
+      [CORRECT] l.424: \item The incompleteness at $r = 0$ is real, not a mere chart artefact: the infalling worldline ends there and the curvature diverges---an infinite-curvature metric singularity.
+      [CORRECT] l.447: The theorems establish that the infalling worldline ends at $r=0$ in finite affine parameter, and the cycloid construction does not dispute this.
+      [CORRECT] l.449: What the cycloid settles is the curvature-divergence inference to inextendibility; what the theorems detect for Schwarzschild is a non-degenerate critical point of the areal radius, of the same analyt
+
+    0 site(s) carrying an E = 0 object WITH a scope marker
+
+    ⌗ NO DEFECT FOUND was reachable here and is not what was found: the classifier
+      returns it on an injected scoped sentence (G4, above), so this answer is a
+      reading and not a failure to look.
+
+==============================================================================
+  ITEM 2 -- THE FORMAL PARAGRAPH AGAINST CircleKretschmann.lean
+==============================================================================
+
+  G5  reader negatives
+    [SUPPORTED] reader finds a name known to be there
+    [SUPPORTED] reader does NOT find a fiction
+
+  2a  THE SIX NAMES THE PARAGRAPH PRINTS
+    [SUPPORTED] ck_prop_critical: in the probe as theorem at l.14768; printed in P2: True
+    [SUPPORTED] ck_prop_Kretschmann: in the probe as theorem at l.14844; printed in P2: True
+    [SUPPORTED] ck_chain_rule: in the probe as theorem at l.14631; printed in P2: True
+    [SUPPORTED] ck_cor_Kretschmann_at_z0: in the probe as theorem at l.14858; printed in P2: True
+    [SUPPORTED] ck_horizon: in the probe as theorem at l.14791; printed in P2: True
+    [SUPPORTED] ck_interior: in the probe as theorem at l.14806; printed in P2: True
+
+  2b  HYPOTHESES, each theorem's own against what the sentence implies
+    ck_prop_critical (l.14768): 2 header binder(s) -- M :  ℝ; hM :  0 < M
+      + no `include ... in` immediately above it
+    ck_prop_Kretschmann (l.14844): 0 header binder(s) -- 
+      + carried by `include ... in`: hM :  0 < M
+    ck_chain_rule (l.14631): 8 header binder(s) -- h :  𝕜 → 𝕜; z₀ :  𝕜; hh :  AnalyticAt 𝕜 h z₀; h0 :  h z₀ = 0; h1 :  deriv h z₀ = 0; h2 :  iteratedDeriv 2 h z₀ ≠ 0; c :  𝕜; hc :  c ≠ 0
+      + no `include ... in` immediately above it
+    ck_cor_Kretschmann_at_z0 (l.14858): 0 header binder(s) -- 
+      + carried by `include ... in`: hM :  0 < M
+    ck_horizon (l.14791): 3 header binder(s) -- x :  Fin 4 → ℝ; hx :  x 0 * x 1 = 0; hs :  Real.sin (x 2) ≠ 0
+      + carried by `include ... in`: hM :  0 < M
+    ck_interior (l.14806): 5 header binder(s) -- x :  Fin 4 → ℝ; hx :  (x 0, x 1) ∈ sk_kM; hs :  Real.sin (x 2) ≠ 0; η :  ℝ; hr :  rK M (x 0, x 1) = ck_r M η
+      + carried by `include ... in`: hM :  0 < M
+    ⌗ Unicode-aware AND depth-matched (r7700: an ASCII-only pattern made `hτ`
+      invisible; r7706: a flat type pattern made every binder whose TYPE carries
+      parentheses invisible, and those are exactly the ones in question here).
+
+    2 hypothesis/hypotheses the paragraph's sentence does NOT carry:
+      [UNSTATED] ck_horizon asks `hs :  Real.sin (x 2) ≠ 0`
+      [UNSTATED] ck_interior asks `hs :  Real.sin (x 2) ≠ 0`
+      ⇒ classified, not inflated: `Real.sin (x 2) ≠ 0` is the 2-sphere chart's
+        own regularity (off the polar axis), not a restriction of physical scope,
+        and "on the Kruskal chart" arguably carries it.  Reported because the arm
+        is the WHOLENESS of a hypothesis list and a reader checking the sentence
+        against the file will meet it.
+    [SUPPORTED] and the interior claim is NOT VACUOUS: `ck_interior_witness` exhibits a chart point for every η with 1 + cos η ≠ 0
+
+  2c  "wherever $h$ has a non-degenerate zero" -- WHICH OBJECT IS THAT?
+    [SUPPORTED] the lemma asks h(z0) = 0
+    [SUPPORTED] the lemma asks h'(z0) = 0        <- a DOUBLE zero
+    [SUPPORTED] the lemma asks h''(z0) != 0
+    the phrase "non-degenerate zero" occurs 1x in P2; "non-degenerate critical point" occurs 11x
+    ⌗ the label's many-to-one-ness, which is the guard that applies: under the
+      standard reading a non-degenerate zero is a SIMPLE zero (h' != 0), and then
+      h^6 has a zero of order 6, so c/h^6 has a pole of order 6 -- NOT twelve.
+    arithmetic, computed here: {'simple zero': 6, 'double zero': 12} (the paragraph claims twelve, which needs the DOUBLE zero)
+    [DEFECT] the paragraph names the object by a label the lemma does not ask for
+      ⇒ the lemma's hypothesis is a zero AT a non-degenerate critical point
+        (a zero of order exactly two); the paper everywhere else says
+        "non-degenerate critical point" (11x) and says
+        "non-degenerate zero" exactly 1x -- here, once.
+
+  2d  "the parameter z is not itself built as a chart" -- a NAMED search
+    region searched: l.14619-15400 (782 lines), the ck_ section
+    per-marker counts IN THE ck_ SECTION: {'ChartedSpace': 0, 'PartialHomeomorph': 0, 'LocalHomeomorph': 0, 'ModelWithCorners': 0, 'IsManifold': 0, 'atlas': 0, 'chartAt': 0, 'extChartAt': 0}
+    the same markers over the WHOLE 15400-line file: {'ChartedSpace': 36, 'PartialHomeomorph': 35, 'LocalHomeomorph': 0, 'ModelWithCorners': 12, 'IsManifold': 47, 'atlas': 6, 'chartAt': 166, 'extChartAt': 793}
+    [SUPPORTED] NOT FOUND -- 8 markers, 0 occurrences in the ck_ section
+    ⌗ said as NOT FOUND over a NAMED search and not as "there is none": the chart
+      machinery exists in abundance in the inherited kit, and none of it is on z.
+    ck_r is defined as: noncomputable def ck_r (M z : ℝ) : ℝ := M * (1 + Real.cos z)
+      ^ a plain function, not a chart: its domain is a type, not an atlas.
+    ck_rC is defined as: noncomputable def ck_rC (M : ℂ) (z : ℂ) : ℂ := M * (1 + Complex.cos z)
+      ^ a plain function, not a chart: its domain is a type, not an atlas.
+    [SUPPORTED] the tie to the chart is a HYPOTHESIS equating the chart's areal radius to ck_r
+
+  2e  AXIOM HYGIENE
+    `axiom` tokens: 0;  `sorry`: 0;  `#print axioms` checks: 522
+    [SUPPORTED] no axiom carries the content the paragraph credits to a proof
+    ⌗ AND WHAT THIS CANNOT DO, as registered: it reads declarations, hypotheses and
+      the shape of statements.  Whether each proof TERM closes is the Lean build's
+      and check_no_sorry's business, not this probe's.
+
+==============================================================================
+  ITEM 3 -- P15'S TRIMMED SCOPE SENTENCE
+==============================================================================
+
+  3a  THE CUT, read at source
+    [SUPPORTED] GONE: "both treatments are reported because the depth comparison depends on the"
+    [SUPPORTED] GONE: "the frozen one departing further at $\ell=4$"
+    [SUPPORTED] GONE: "a single build's agreement is not by itself the cross-validation"
+
+  3b  DOES ANYTHING ELSE IN P15 STILL LEAN ON THE FROZEN BUILD? (searched)
+    "FROZEN": 0 occurrence(s)
+    "frozen with their free-streaming towers retained": 1 occurrence(s)
+    "returned by both treatments": 1 occurrence(s)
+    "returned by both builds": 0 occurrence(s)
+    "both treatments": 1 occurrence(s)
+    "both builds": 0 occurrence(s)
+
+  3c  THE SENTENCE WHOLE, not just its diff
+    [SUPPORTED] the decoupled build is what P15 prints: "sectors \emph{decoupled} past recombination rather than frozen"
+    [SUPPORTED] its agreement with the exact transfer: "agrees with the exact transfer to $2.9$ per cent"
+    [SUPPORTED] the corroboration clause RETAINED: "is returned by both treatments"
+    [SUPPORTED] the conclusion clause RETAINED: "So the shape and the depth"
+
+    [DEFECT] the cut removed the caveat the SURVIVING conclusion needs
+      ⇒ the retained clause corroborates the conclusion on BOTH treatments, so it
+        leans on the frozen build; and the clause that reported that build's
+        departure -- and said a single build's agreement is not by itself the
+        cross-validation -- is the clause that was cut.  The sentence now asserts
+        the DEPTH cross-validates on one build's agreement, which is the step the
+        deleted clause denied.  Half re-pointed, r7702's pattern exactly.
+
+==============================================================================
+  VERDICTS
+==============================================================================
+  ITEM 1  the fix landed in the statement and the proof; 2 surviving site(s) attribute an E = 0 object to a general subject, 5 general site(s) are CORRECT
+  ITEM 2  all six names present; the chain-rule lemma's object is MISLABELLED; z is NOT built as a chart (named search, NOT FOUND)
+  ITEM 3  the FROZEN comparison is cut; the surviving conclusion LOST A CAVEAT IT NEEDS
+
+  probe self-checks: all pass.
+

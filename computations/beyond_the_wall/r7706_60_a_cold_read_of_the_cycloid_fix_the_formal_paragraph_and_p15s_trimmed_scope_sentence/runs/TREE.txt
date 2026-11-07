@@ -1,0 +1,21 @@
+r7706 (60) -- THE TREE THE READINGS WERE TAKEN ON
+
+  HEAD at measurement : 58243a7a
+  origin/main         : f38156a9  (r7703)
+  registered at       : 58243a7a  (PREDICTION.md, its own pushed commit)
+
+  THE FILES READ, with the sha1 of each as read:
+    corpus/janzen_circle_v3.tex                                        542ca10912bb61c6  661 lines
+    corpus/CR_cosmology.tex                                            3ed3bb3ce71da823  3087 lines
+    computations/formalisation/lean/probes/CircleKretschmann.lean      c4036ec02445fd15  15399 lines
+
+  THE ORDER, as fetched:
+    origin/main:FOR_60.md, topmost section r7703, read in full
+
+  WHAT THE PROBE RAN AGAINST:  the working tree at the HEAD above, unmodified.
+  Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is touched
+  by this revision's diff.
+
+  PYTHON: Python 3.11.17
+  sympy was used ONLY to confirm the pole-order arithmetic in item 2c and is not
+  imported by probe.py, which computes that order itself.
