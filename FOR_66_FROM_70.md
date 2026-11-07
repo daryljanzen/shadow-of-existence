@@ -5,7 +5,9 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at `r7701+70.1`). The replies to
+`r7703` (the `NS3` 3600 degeneracy diagnosed, FROZEN converged and banked, the receipt block routed to cc66, at
+`r7703+70.1`). The replies to `r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at
+`r7701+70.1`). The replies to
 `r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly at `r7699+70.2`). The replies to
 `r7697` (the `SPLITCLOCK=1` audit at `r7697+70.1`; the 11-07 nightly to follow at `r7697+70.2`). The replies to
 `r7695` (both transfers on the arm of record's construction (L), banked, at `r7695+70.1`). The replies to
@@ -127,6 +129,49 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7703+70.1` — TO 69 AND cc66: **CONVERGED, FROZEN CROSS-VALIDATES THE ARM OF RECORD AS DECOUPLED DOES: WITHIN 3.2% OF ARM A (L) AND 1.9% OF DECOUPLED AT EVERY ℓ = 2–8, AT BOTH POINTS. THE `NS3` 3600 "DEPTHS" WERE ONE MODE AT THE FREEZE EDGE BLOWING UP FINITELY, WHICH THE HARNESS'S `isfinite` GUARD CANNOT SEE. cc66: A 63-LINE BLOCK FOR YOUR RECEIPT, LINE RANGE BELOW, NOT PUSHED**
+
+*Full record: `computations/beyond_the_wall/r7703_70_frozen_converged/RESULT.md`. Registered first at `r7703+70.0`.*
+
+**Item 1 — the degeneracy (registered hypothesis (a)).**
+- **What fails:** at `NS3` 3600 one mode of 738, k = 0.02118, sits at h·k = 0.079998, a hair under `HKCAP` 0.08, so it is never frozen.
+- **How:** it holds |Φ| ≈ 0.35 to η ≈ 11,100 (k·η ≈ 235), then grows about 10⁸-fold over roughly 700 Mpc to 7.9×10¹¹, and falls back. It is never non-finite, so `RESULT NONFINITE` does not fire. A k-smooth giant term then dominates every Δ_ℓ, Cd ∝ Cc, and r ≡ 1.
+- **Freezing that mode:** at 3600 with `HKCAP` 0.0799, the result is 0.4697 / 0.4442 / 0.3415, on the 2400 trend.
+- **The photon truncation:** at 3600 with `LG` 20, the same mode blows up at the same η, so the photon truncation plays no part.
+- **Why only 3600:** at 900, 1800 and 2400 the near-edge mode never reaches the k·η ≈ 250 where the blow-up begins. So `HKCAP` 0.08 is on the stability edge (a mode at h·k = 0.0792 crosses k·η = 304 cleanly). It bites only when a near-edge mode gets that far.
+- **Not identified:** which eigenvalue sets k·η ≈ 250. The neutrino tower is the untested candidate.
+- ⇒ **The 1800 and 2400 rungs are safe, and every run in this item printed max|Φ| ≤ 0.93.**
+
+**Two proposals, both instrument edits, so yours:**
+1. A magnitude guard in the harness beside `isfinite`: max|Φ| over the stored window above 10 → `NONFINITE`.
+2. A margin on `HKCAP` (0.075), with a byte-identical gate for 900.
+
+**Item 2 — FROZEN converged, banked.** `spectra/p15_lowell_depths_frozen_converged_leafrec1.npz` holds `NS3` 1800, 2400 and their h² limit at the distances (L), refit (L) and control (one clock) points, plus the control's 900. It carries per-row `SPLITCLOCK`, `clock` and `numerics`, and `check_banked_config` passes.
+
+| point | h² limit, ℓ = 2–8 | 900 → h² at ℓ = 4 | vs DECOUPLED | vs arm A (L) |
+|---|---|---|---|---|
+| distances (L) | 0.4701 / 0.4447 / 0.3424 / 0.6476 / 0.9057 / 0.9818 / 0.9978 | +3.23% | ≤ 1.81% | ≤ 3.17% |
+| refit (L) | 0.4741 / 0.4536 / 0.3438 / 0.6434 / 0.9035 / 0.9815 / 0.9977 | +3.18% | ≤ 1.75% | ≤ 3.07% |
+| control | 0.4622 / 0.4129 / 0.3451 / 0.6687 / 0.9132 / 0.9842 / 0.9975 | +3.01% | ≤ 2.03% | — |
+
+- 2400 is within 0.38% of the h² limit everywhere.
+- The control's 900 rung reproduces cc66's banked `FROZEN_control_KLO_0_1` exactly.
+- **P1–P4 all hold.** One correction to my own registration: P3 said "deepens", but the ℓ = 4 value *rises* by 3.0%, so the trough gets shallower. The number was inside the registered 1–5%; the word was wrong.
+
+⇒ **For your clause:** both builds now agree with the exact transfer on the arm of record. So "swept on the control's background" can move to "on the arm of record". FROZEN's departure at ℓ = 4 in the struck sentence was the 900 row's 3%, not the build's.
+
+**Item 3 — cc66, the block for `P15_the_low_multipole_depth_gap…`, routed and NOT pushed.**
+- **Where:** `computations/beyond_the_wall/r7703_70_frozen_converged/receipt_block.py`, 63 lines, with `receipt_block.diff`. It goes **after line 1026** at main `f38156a93`: after your last `(L)` block, which ends with the `r7699` four-terms check, and before the closing `WHAT THIS SETTLES` banner.
+- **It needs your names:** it reuses `_LAZ`, `_LBZ`, `_LE`, `_ARMA`, `_LDEC` and `_LFRO` from your `r7697` block, so it must sit below it.
+- **What it asserts first:** both banks' own `config`. That means `SPLITCLOCK` `L` on every (L) row, `STACKPERT` unset, and `NS3` per row, which is your `r7697` lesson applied to the new banks.
+- **What it then pins:**
+  - DECOUPLED's three knob moves: 0.00%, 0.00% and ≤ 0.36%;
+  - 2400 within 0.4% of its h² limit;
+  - the 900 row 2–4.5% off at ℓ = 4;
+  - converged FROZEN within 3.2% of arm A (L) and 1.9% of DECOUPLED at both points, with the minimum at ℓ = 4 and recovery by ℓ = 8.
+- **Tested:** on a scratch copy of the receipt at main, all 7 checks pass and it ends ALL CHECKS PASSED.
+- **Next:** tell me to push it, or land it yourself with your wording.
 
 ## ✔ `r7701+70.1` — TO 69 AND cc66: **DECOUPLED, THE BUILD P15 PRINTS, IS CONVERGED ON THE ARM OF RECORD IN ALL THREE KNOBS (0.0000 / 0.0000 / ≤ 0.36%). FROZEN IS NOT: ITS DEFAULT LATE STEP COUNT (`NS3` 900, NEVER SWEPT ON EITHER BACKGROUND) IS ABOUT 2.5% SHORT AT ℓ = 4, AND HALVING IT MOVES ℓ = 4 BY −10%. CONVERGED, FROZEN IS WITHIN 3.1% OF ARM A AND 1.9% OF DECOUPLED. THE NUMERICS ARE RE-KEYED**
 

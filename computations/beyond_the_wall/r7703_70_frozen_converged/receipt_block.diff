@@ -1,0 +1,66 @@
+--- a/receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py (at main f38156a93)
++++ b/ (block inserted before the closing 'WHAT THIS SETTLES' section)
+1026a1027,1089
+> # ===================================================================================================
+> # ⛭⛭ `r7703+70`, ON 69's ORDER (r7703 item 3): ** THE CROSS-VALIDATION IS CONVERGED ON THE ARM OF RECORD,
+> #   BOTH BUILDS, AND EACH BANK'S PAIRING AND NUMERICS ARE READ FROM ITS OWN CONFIG FIRST. **
+> #   `r7701+70` swept DECOUPLED and FROZEN on (L) in three knobs: DECOUPLED did not move, FROZEN's default
+> #   NS3 900 was ~3 per cent short at l = 4.  `r7703+70` converged FROZEN (NS3 1800 / 2400 and their h^2
+> #   limit) at both points and on the control.  ⛔ NS3 >= ~3000 is not a rung: at 3600 the mode at the
+> #   HKCAP edge blows up finitely and the harness returns r = 1, so a finer count is not safer here.
+> _CVP = os.path.join(SPEC, 'p15_lowell_depths_leafpert_convergence_leafrec1.npz')
+> _FCP = os.path.join(SPEC, 'p15_lowell_depths_frozen_converged_leafrec1.npz')
+> for _pth in (_CVP, _FCP):
+>     check(f"⛭ `r7703` the bank `spectra/{os.path.basename(_pth)}` is present", os.path.exists(_pth),
+>           os.path.basename(_pth))
+> _CVZ = np.load(_CVP, allow_pickle=True)
+> _FCZ = np.load(_FCP, allow_pickle=True)
+> _CVC = json.loads(str(_CVZ['config'].item()))
+> _FCC = json.loads(str(_FCZ['config'].item()))
+> _CVR = ('ntau_x2', 'ns3_half', 'klo_0_02')
+> check("⛭⛔ `r7703` ** BOTH BANKS SAY OF THEIR OWN ROWS THAT THEY ARE (L) AND RECORD THEIR NUMERICS: "
+>       "`SPLITCLOCK` is `L` on every DECOUPLED convergence row and every converged FROZEN (L) row, "
+>       "`STACKPERT` unset, and each such row names its `NS3` **",
+>       all(_CVC['SPLITCLOCK'].get(f'distances__armB_decoupled__L__{_k}') == 'L' for _k in _CVR)
+>       and all(_FCC['SPLITCLOCK'].get(f'{_p}__armB_frozen__L__{_r}') == 'L'
+>               for _p in ('distances', 'refit') for _r in ('NS3_1800', 'NS3_2400', 'h2'))
+>       and _CVC.get('STACKPERT') is None and _FCC.get('STACKPERT') is None
+>       and all(_FCC['numerics'][_k].get('NS3') is not None for _k in _FCC['numerics']),
+>       f"rows {len(_FCC['numerics'])} with NS3; STACKPERT {_CVC.get('STACKPERT')!r}/{_FCC.get('STACKPERT')!r}")
+> _CVE = list(np.asarray(_CVZ['ells'], int))
+> _CVM = {_k: max(abs(float(np.asarray(_CVZ[f'distances__armB_decoupled__L__{_k}'], float)[_CVE.index(_l)])
+>                     / _LDEC[_l] - 1.0) for _l in range(2, 9)) for _k in _CVR}
+> print("\n  ⛭ `r7703` DECOUPLED (L) UNDER THE THREE KNOBS, largest move over l = 2-8")
+> print("    " + "   ".join(f"{_k}: {100 * _v:.2f}%" for _k, _v in _CVM.items()))
+> check("⛭ `r7703` ** DECOUPLED, THE BUILD THE PAPER READS, IS CONVERGED ON THE ARM OF RECORD: the doubled "
+>       "opacity grid and the halved late step count move it by 0.00 per cent, the five-fold deeper "
+>       "continuum by at most 0.36 per cent **",
+>       _CVM['ntau_x2'] < 5e-5 and _CVM['ns3_half'] < 5e-5 and _CVM['klo_0_02'] < 0.0040,
+>       "; ".join(f"{_k} {100 * _v:.3f}%" for _k, _v in _CVM.items()))
+> _FCE = list(np.asarray(_FCZ['ells'], int))
+> _FCV = {_p: {_l: float(np.asarray(_FCZ[f'{_p}__armB_frozen__L__h2'], float)[_FCE.index(_l)]) for _l in range(2, 9)}
+>         for _p in ('distances', 'refit')}
+> _FC24 = {_l: float(np.asarray(_FCZ['distances__armB_frozen__L__NS3_2400'], float)[_FCE.index(_l)])
+>          for _l in range(2, 9)}
+> _ARMR = {_l: float(np.asarray(_LAZ['refit__armA__L'], float)[_LE.index(_l)]) for _l in range(2, 9)}
+> _LDER = {_l: float(np.asarray(_LBZ['refit__armB_decoupled__L'], float)[_LE.index(_l)]) for _l in range(2, 9)}
+> _REF = {'distances': (_ARMA, _LDEC), 'refit': (_ARMR, _LDER)}
+> _FA = {_p: max(abs(_FCV[_p][_l] / _REF[_p][0][_l] - 1.0) for _l in range(2, 9)) for _p in _FCV}
+> _FD = {_p: max(abs(_FCV[_p][_l] / _REF[_p][1][_l] - 1.0) for _l in range(2, 9)) for _p in _FCV}
+> _F9 = abs(_FCV['distances'][4] / _LFRO[4] - 1.0)
+> print("  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)")
+> for _p in _FCV:
+>     print(f"    {_p:9s} " + " ".join(f"l{_l}:{100 * (_FCV[_p][_l] / _REF[_p][0][_l] - 1):+6.2f}" for _l in range(2, 9)))
+> check("⛭ `r7703` the converged FROZEN row is converged: NS3 2400 sits within 0.4 per cent of the h^2 limit "
+>       "at every l", max(abs(_FC24[_l] / _FCV['distances'][_l] - 1.0) for _l in range(2, 9)) < 0.004,
+>       f"{100 * max(abs(_FC24[_l] / _FCV['distances'][_l] - 1.0) for _l in range(2, 9)):.2f}%")
+> check("⛭⛔ `r7703` ** AND THE BANKED NS3 900 FROZEN ROW WAS NOT: converging it moves l = 4 by about "
+>       "3 per cent, which is the departure the struck scope sentence read as the frozen build's **",
+>       0.02 < _F9 < 0.045, f"{100 * _F9:.2f}%")
+> check("⛭⛔ `r7703` ** CONVERGED, FROZEN (L) IS WITHIN 3.2 PER CENT OF ARM A (L) AND 1.9 PER CENT OF "
+>       "DECOUPLED AT EVERY l = 2-8, AT BOTH POINTS -- so on the arm of record BOTH builds cross-validate "
+>       "the exact transfer, and the minimum at l = 4 and recovery by l = 8 hold on each **",
+>       all(_FA[_p] < 0.032 and _FD[_p] < 0.019 for _p in _FCV)
+>       and all(min(range(2, 9), key=lambda _l: _FCV[_p][_l]) == 4 and _FCV[_p][8] > 0.99 for _p in _FCV),
+>       "; ".join(f"{_p}: A {100 * _FA[_p]:.2f}%, DEC {100 * _FD[_p]:.2f}%" for _p in _FCV))
+> 
