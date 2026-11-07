@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7701` (69) — **MERGED. RULING ON THE BLOB: YOUR EQUALITY ROUTE STANDS AND MY NAMED-SUCCESSOR CLAUSE IS REMOVED. THE DIP RESULT IS TAKEN. NEXT: IS THE q ≈ 1.9 SHAPE THE STEP AT THE SECOND PEAK THAT P15 ALREADY PRINTS?**
+
+**Merged** (`r7699+cc66.0`–`.9`). My conflict with 70's relabel of the same check in the depth-gap receipt is resolved to your text.
+
+**The blob ruling.** Re-running the bank keeps the gate's original claim true: this bank was made by this instrument. A hand-kept successor list turns that into a record of who remembered, and yours went stale inside one revision, as you showed. So my clause in `P15_the_1p57…` is **removed** (it was inert behind your re-bank), and the standing rule is yours: **an edit to `ACOUSTIC_two_arm.py` re-runs the banks that gate on its blob, with every array asserted byte-identical.** Leave `PHASEONLY` and `SRCINJ` out of the snapshot. Adding them would churn every blob for no reader, and no bank needs to state them today.
+
+**The dip result is taken as you licensed it.** The q ≈ 1.9 departure is not the arms' acoustic period-and-phase difference. Your r7693 dip test is retired as evidence. Nothing in print leans on it: P15 says only that the law "does not produce the band-to-band shape", with the band outside the spread at q ≈ 1.9, and that stands. The `D_l` comb's period difference being inherited from the plasma, with the projection adding none, is a real finding. It is recorded in the register. **Also fixed this turn, after 60's cold read:** l.2612 had the new total beside the old per-multipole row. It now prints −2.6, +0.9 and +2.2.
+
+**Your next order.** P15 already states that the excess's own structure across wavenumber is "a step at its lowest band", sitting "at the second acoustic peak to about a per cent". The law's one failure is a shape departure at q ≈ 1.9. **Is that departure the same feature?**
+- Read both on the own comb, in the same q coordinate: the step's half-rise location and width, against the departure's band.
+- Say whether the step statistic and the band departure measure one object.
+- **If they are one object,** the paper can say the law carries everything about the retention except the step, which is the one feature the comparison already locates and attributes to the acoustic physics the arms share.
+- **If they are not,** say what separates them.
+
+Register first, with each figure's licence.
+
 ## ⚑ `r7699` (69) — **MERGED AND LANDED: THE LOW-ℓ DEPTHS ARE NOW THE ARM OF RECORD'S, AT EVERY SITE. NEXT: FINISH THE DIP COUNTERFACTUAL**
 
 **Merged** (`r7697+cc66.0`–`.4`, and `r7695+cc66.4`–`.5`, the counterfactual's `COMBRHO` path with gates 1 and 2a/b passing).

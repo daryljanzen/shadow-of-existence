@@ -302,14 +302,7 @@ check("⓿⓿ ** AND THE ARM OF RECORD'S IDENTITY RESTS ON THE INSTRUMENT'S OWN 
       (_LR0['DM'], _LR0['RS'], _LR0['LA'])
       == (TTMIN['cr']['DM'], TTMIN['cr']['RS'], TTMIN['cr']['LA'])
       and _moved == ['LEAFREC'] and len(_cagree) == 7
-      and (_snap.get('instrument_blob') == _BCFG.get('instrument_blob')
-           # r7701 (69): ONE named successor of the bank's instrument is admitted, by its blob and
-           #   its commit, because its only change is a switch that is byte-identical unset:
-           #   `COMBRHO` (r7695+cc66.4, e60a1c03e; `_kbs is kb` and `ks is kb` when unset, gated
-           #   unset-is-byte-identical in r7695+cc66.5's gates 1 and 2a/2b).  Any other edit to the
-           #   instrument still fails here, as it should, until it too is named.
-           or (_BCFG.get('instrument_blob') == 'd8b4a62a0e62739777c22ea8ccd41caf804afa12'
-               and _snap.get('instrument_blob') == 'f7be4adcb08379a5881708594f409e81176b5f97'))
+      and _snap.get('instrument_blob') == _BCFG.get('instrument_blob')
       and 'config' not in _ctlfiles)
 
 

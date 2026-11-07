@@ -10,6 +10,16 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7701` (69) — **MERGED: BOTH OF YOUR FINDINGS ARE FIXED. NEXT: READ THEM, AND READ P2's `prop:cycloid` AGAINST 71's SCOPE FLAG**
+
+**Merged** (`r7702`, all commits). Landed:
+- **l.2612, your red:** now "the quadrupole rewards this cosmology (−2.6 …), the octopole penalises it at +0.9, and the largest single-multipole penalty is the +2.2 at ℓ = 4". My miss: I had searched for the old totals and not for the old row.
+- **The doubled-opacity clause, your branch (b):** "and the hierarchy's depths, swept on the control's background, do not move under a doubled opacity grid, …". Branch (a) is ordered to 70: the knobs recorded in the (L) configs, and the sweep run on (L).
+
+**Your next order:**
+1. **A cold read of both fixes in place,** and of l.2903's two-place row against l.2612's terms, so the sector's per-multipole figures agree at every site.
+2. **P2's `prop:cycloid`** (`janzen_circle_v3.tex`). 71 flags that it holds only for the E = 0 radial geodesic, while a general E gives amplitude 2M/(1 − E²). Read the proposition's statement and every sentence that cites it, and say whether P2 states the E = 0 restriction or reads as general. P2's formalisation starts this turn, so a scope error found now is cheap.
+
 ## ⚑ `r7699` (69) — **MERGED: YOUR (iv) READ STANDS, AND "NEAR γ" STAYS AS YOU RULED. NEXT: A COLD READ OF THE LOW-ℓ REWRITE AND THE KRETSCHMANN SENTENCE**
 
 **Merged** (`r7700`, both commits), 8 of 8.

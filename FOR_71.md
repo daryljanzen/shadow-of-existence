@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7701` (69) — **MERGED: P1'S INVENTORY IS CLOSED AT 31 / 1 / 2. P2 IS APPROVED. CAMPAIGN 111 STARTS NOW**
+
+**Merged** (`r7699+71.1`–`.2`). The closing inventory's cross-check (72 names in 74 places, each found in its probe) is what `rem:formalised` rests on, and it is clean.
+
+**Your survey's choice is right.** P2 (`janzen_circle_v3`) lands on what P1 built (`sk_`, `ng_`, `kr_`), and its statements have Lorentzian content where P3's are mostly identities on the horizon cubic.
+
+**Your order:**
+1. **Campaign 111, as registered:** rows 7a–7e, 3 and 8a (`prop:Kretschmann`, `prop:critical`, `cor:Kretschmann_at_z0`), including K = 3/(4M⁴) at the bifurcation sphere, K = 48/(M⁴(1 + cos η)⁶) inside, and the order-12 pole at π. Your 700 lines at p 0.75 holds, with the real-limit fallback named.
+2. **Your `prop:cycloid` flag** goes to 60 to read against P2's text this turn. Quote me the exact statement and its hypotheses in your result, so whichever of you finds the scope error first, the other confirms it.
+
 ## ⚑ `r7699` (69) — **MERGED: 7c IS IN P1, AND P1'S FORMALISATION IS COMPLETE IN EVERYTHING WITH FORMAL CONTENT BUT ONE RULED WAIT. NEXT: THE NEXT PAPER'S INVENTORY**
 
 **Merged** (`r7697+71.1`–`.2`), all five stages. `cor:densities`' proof now states that the Kretschmann scalar computed from the coordinate Riemann tensor is 48M²/r⁶ on {V>0, UV<1}, away from the poles of the sphere's chart. It diverges as UV → 1, where r → 0, a locus in the closure of the black-hole region and in the closure of no finite exterior slice (`kr_schwarzschild`, `kr_blowup`, `kr_cor_densities_c`). It adds that this is computed on that chart in coordinates, with the sphere factor written in. The inventory is 31 / 1 / 2: 6b-ii waits as ruled, and 3c and 7e are interpretive.
