@@ -1,0 +1,47 @@
+  ⛭ GATE 3b -- THE BACKGROUND, arm of record vs the counterfactual
+      r_s   146.572525197  146.572525197   same
+      D_M   14133.954593230  14133.954593230   same
+      l_A   302.943050594  302.943050594   same
+      ns    1.015066000  1.015066000   same
+      the saved k grid is the PROJECTION's, unchanged: True
+
+  ⛭ GATE 3 -- THE SOURCE COMB'S FITTED PERIOD, control 1.017000
+      arm of record  1.011500   (-0.005500 from the control)
+      counterfactual 1.016750   (-0.000250 from the control)
+      ⇒ ✔ GATE 3 PASSES: |1.016750 - 1.017000| = 0.000250 against the fitter's two grid steps 0.00050
+
+  ⚑ THE REGISTERED D_l-SIDE PREDICTION, control 1.009250
+      arm of record  1.004500   (-0.004750);  counterfactual 1.009750   (+0.000500)
+      ⇒ registered that it ALSO lands at the control's within two steps: ✔ CONFIRMED
+      ⌗ the D_l comb's period difference is INHERITED FROM THE PLASMA and the projection adds none of its own
+
+  ⛭ THE SEVEN BANDS -- the departure is read at q = 1.90, where the arm of record's is largest
+      q      measured(AOR)  law(AOR)   dep(AOR)  |  measured(CF)  law(CF)   dep(CF)   dep(CF vs AOR law)
+     1.20        1.0364    1.0349   +0.0016  |       1.0171    1.0372   -0.0201    -0.0178
+     1.90        1.0708    1.0516   +0.0192  |       1.0540    1.0540   +0.0000    +0.0024
+     2.60        1.0659    1.0638   +0.0021  |       1.0442    1.0662   -0.0220    -0.0196
+     3.30        1.0699    1.0725   -0.0026  |       1.0537    1.0749   -0.0212    -0.0188
+     4.00        1.0858    1.0786   +0.0072  |       1.0660    1.0810   -0.0150    -0.0126
+     4.70        1.0827    1.0828   -0.0001  |       1.0607    1.0851   -0.0244    -0.0221
+     5.40        1.0832    1.0854   -0.0022  |       1.0688    1.0877   -0.0189    -0.0166
+
+  ⛔ THE LEVEL MOVED, SO THE RAW DEPARTURE AND THE SHAPE DISAGREE -- both are given
+      the mean departure over the seven bands: +0.00361 -> -0.01737, a UNIFORM shift of -0.02098
+      q      dep(AOR)  dep(CF)  |  shape(AOR)  shape(CF)
+     1.20    +0.0016  -0.0201  |    -0.0068    -0.0068
+     1.90    +0.0192  +0.0000  |    +0.0124    +0.0147
+     2.60    +0.0021  -0.0220  |    -0.0031    -0.0060
+     3.30    -0.0026  -0.0212  |    -0.0062    -0.0038
+     4.00    +0.0072  -0.0150  |    +0.0052    +0.0038
+     4.70    -0.0001  -0.0244  |    -0.0005    -0.0043
+     5.40    -0.0022  -0.0189  |    -0.0011    +0.0025
+
+  ⇒ ARM ② SCORED ON THE SHAPE, against the counterfactual's OWN law:
+      at q = 1.90: +0.0124 -> +0.0147, a factor of +1.185
+      and q = 1.90 is STILL the largest |shape| of the seven: True
+      registered: it falls by MORE THAN HALF  ⇒  ⛔ FALSIFIED
+
+  ⌗ THE RAW READING, reported so it cannot be mistaken for the answer: +0.0192 -> +0.0000, a factor of 0.001 (+99.9 per cent) -- which is the LEVEL's shift and not the feature's.
+  ⌗ and against the ARM OF RECORD's law, the wrong law as registered: +0.0192 -> +0.0024, a factor of 0.127
+
+  ⚠ ARM ③'s CONFOUND IS NOW MEASURED AND NOT FEARED: the uniform -0.0210 is what a resample that carries an envelope stretch does to a RATIO of RMS values, and this test cannot separate it from the period change.  ⇒ **The result is reported as UNSEPARATED on the level**, exactly as arm ③ registered, and the SHAPE is what the arm is scored on.

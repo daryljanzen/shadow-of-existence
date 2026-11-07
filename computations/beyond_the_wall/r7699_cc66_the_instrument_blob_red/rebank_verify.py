@@ -69,12 +69,29 @@ for k in keys:
     print(f"      {k:8s} {'byte-identical' if same else '⛔ MOVED'}")
 
 # ── the config: exactly the provenance keys ─────────────────────────────────────────────────────
-diff = sorted(x for x in set(co) | set(cn) if co.get(x) != cn.get(x))
-want = sorted(set(['instrument_blob']) | ({'COMBRHO'} if 'COMBRHO' not in co else set()))
-print(f"\n    config keys that differ: {diff}")
-print(f"    keys that MAY differ    : {want}")
-if diff != want:
-    fail.append(f'config differs in {diff}, wanted exactly {want}')
+# ⛔⛭ ** AND THE FIRST FORM OF THIS COMPARISON COLLAPSED THE ONE DISTINCTION IT EXISTS TO KEEP. **
+#   *It diffed with `co.get(x) != cn.get(x)`.  The new config carries `COMBRHO: None`; the old one has
+#   NO `COMBRHO` key -- and `.get()` returns `None` for both, so the two compared EQUAL and the key
+#   that was added read as unchanged.*  ⇒ ** "no `COMBRHO` key" and "`COMBRHO` was off" are different
+#   statements about a bank -- which is the sentence I put in the instrument when adding the key, and
+#   then erased with an idiom in the gate that checks it. **  *So keys ADDED and values CHANGED are
+#   counted separately, which is the only way the added-as-None case is visible at all.*
+added = sorted(set(cn) - set(co))
+removed = sorted(set(co) - set(cn))
+changed = sorted(k for k in set(co) & set(cn) if co[k] != cn[k])
+print(f"\n    config keys ADDED   : {added}" + (f"  (values {[cn[k] for k in added]})" if added else ""))
+print(f"    config keys REMOVED : {removed}")
+print(f"    config keys CHANGED : {changed}")
+if changed != ['instrument_blob']:
+    fail.append(f'config CHANGED in {changed}, wanted exactly [instrument_blob]')
+if removed:
+    fail.append(f'config LOST keys {removed} -- a re-bank may not drop provenance')
+if added not in ([], ['COMBRHO']):
+    fail.append(f'config ADDED {added}, wanted nothing or just COMBRHO')
+if added == ['COMBRHO'] and cn['COMBRHO'] is not None:
+    fail.append(f"config added COMBRHO = {cn['COMBRHO']!r}; this bank is the UNSET run, so it must "
+                f"record None -- a non-None value means the wrong run was banked")
+want = sorted(set(changed) | set(added))
 
 print()
 if fail:

@@ -129,20 +129,51 @@ for i in range(7):
     print(f"    {x_a[i]:5.2f}   {y_a[i]:11.4f}  {LAW_AOR[i]:8.4f}  {DEP_A[i]:+8.4f}  |  "
           f"{y_c[i]:11.4f}  {LAW_CF[i]:8.4f}  {DEP_C_own[i]:+8.4f}   {DEP_C_aor[i]:+8.4f}")
 
-_f_own = DEP_C_own[J] / DEP_A[J]
-_f_aor = DEP_C_aor[J] / DEP_A[J]
-print(f"\n  ⇒ ARM ② SCORED ON THE COUNTERFACTUAL'S OWN LAW (A at rho*r_s*):")
-print(f"      the departure at q = {x_a[J]:.2f}: {DEP_A[J]:+.4f} -> {DEP_C_own[J]:+.4f}, "
-      f"a factor of {_f_own:.3f} ({100*(1-_f_own):+.1f} per cent of it gone)")
+# ⛔⛔⛔ ** THE RAW DEPARTURE IS NOT THE STATISTIC, AND READING IT AS ONE GIVES A FALSE POSITIVE
+#   HERE -- WHICH THE FIRST FORM OF THIS SCRIPT PRINTED AS `CONFIRMED`. **
+#   *The raw `dep` at `q = 1.9` goes `+0.0192 -> +0.0000`: 99.9 per cent gone, arm ② apparently
+#   confirmed on its own words.  But EVERY OTHER BAND acquires about `-0.021` at the same time.  The
+#   LEVEL of the whole set moved and `q = 1.9` is simply where the new level crosses the law.*
+#   ⇒ ** The departure at `q ~ 1.9` is a BAND-TO-BAND SHAPE claim by construction** -- `r7689`'s
+#     finding is that the law carries the offset and the rise and NOT the band-to-band shape, and
+#     `r7693`'s dip test detrends (`_detr`) for exactly that reason.  *The shape statistic is the one
+#     established BEFORE this measurement, so it is the one that scores the arm; choosing it here is
+#     not choosing the statistic that gives the answer I prefer.*
+#   ⌗ *`BEFORE_READING_IT.md` guarded the LAW against moving under the counterfactual and did not
+#     guard the LEVEL.  One level up, the same mistake: a number that falls for the wrong reason.*
+def _detr(_y):
+    """r7693's own detrending, lifted in form: the departure's band-to-band shape, level removed"""
+    return _y - np.polyval(np.polyfit(x_a, _y, 1), x_a)
+
+
+_SA, _SC = _detr(DEP_A), _detr(DEP_C_own)
+_f_raw = DEP_C_own[J] / DEP_A[J]
+_f_shape = _SC[J] / _SA[J]
+_shift = float(DEP_C_own.mean() - DEP_A.mean())
+print(f"\n  ⛔ THE LEVEL MOVED, SO THE RAW DEPARTURE AND THE SHAPE DISAGREE -- both are given")
+print(f"      the mean departure over the seven bands: {DEP_A.mean():+.5f} -> "
+      f"{DEP_C_own.mean():+.5f}, a UNIFORM shift of {_shift:+.5f}")
+print(f"      q      dep(AOR)  dep(CF)  |  shape(AOR)  shape(CF)")
+for i in range(7):
+    print(f"    {x_a[i]:5.2f}   {DEP_A[i]:+8.4f} {DEP_C_own[i]:+8.4f}  |  {_SA[i]:+9.4f}  "
+          f"{_SC[i]:+9.4f}")
+print(f"\n  ⇒ ARM ② SCORED ON THE SHAPE, against the counterfactual's OWN law:")
+print(f"      at q = {x_a[J]:.2f}: {_SA[J]:+.4f} -> {_SC[J]:+.4f}, a factor of {_f_shape:+.3f}")
+print(f"      and q = {x_a[J]:.2f} is STILL the largest |shape| of the seven: "
+      f"{int(np.argmax(np.abs(_SC))) == J}")
 print(f"      registered: it falls by MORE THAN HALF  ⇒  "
-      f"{'✔ CONFIRMED' if abs(_f_own) < 0.5 else '⛔ FALSIFIED'}")
-print(f"  ⌗ and against the ARM OF RECORD's law, which is the WRONG comparison and is reported only "
-      f"so it cannot be mistaken for the right one:")
-print(f"      {DEP_A[J]:+.4f} -> {DEP_C_aor[J]:+.4f}, a factor of {_f_aor:.3f}")
-print(f"  ⌗ the largest departure band of the COUNTERFACTUAL is q = {x_c[int(np.argmax(np.abs(DEP_C_own)))]:.2f} "
-      f"({DEP_C_own[int(np.argmax(np.abs(DEP_C_own)))]:+.4f}) -- the same band as the arm of "
-      f"record's: {int(np.argmax(np.abs(DEP_C_own))) == J}")
+      f"{'✔ CONFIRMED' if abs(_f_shape) < 0.5 else '⛔ FALSIFIED'}")
+print(f"\n  ⌗ THE RAW READING, reported so it cannot be mistaken for the answer: "
+      f"{DEP_A[J]:+.4f} -> {DEP_C_own[J]:+.4f}, a factor of {_f_raw:.3f} "
+      f"({100*(1-_f_raw):+.1f} per cent) -- which is the LEVEL's shift and not the feature's.")
+print(f"  ⌗ and against the ARM OF RECORD's law, the wrong law as registered: "
+      f"{DEP_A[J]:+.4f} -> {DEP_C_aor[J]:+.4f}, a factor of {DEP_C_aor[J]/DEP_A[J]:.3f}")
+print(f"\n  ⚠ ARM ③'s CONFOUND IS NOW MEASURED AND NOT FEARED: the uniform {_shift:+.4f} is what a "
+      f"resample that carries an envelope stretch does to a RATIO of RMS values, and this test "
+      f"cannot separate it from the period change.  ⇒ **The result is reported as UNSEPARATED on "
+      f"the level**, exactly as arm ③ registered, and the SHAPE is what the arm is scored on.")
 np.savez(os.path.join(HERE, 'gate3_and_bands.npz'), x=x_a, y_aor=y_a, y_cf=y_c,
          law_aor=LAW_AOR, law_cf=LAW_CF, dep_aor=DEP_A, dep_cf_own=DEP_C_own,
-         dep_cf_aorlaw=DEP_C_aor, T_K=np.array([TKa, TKn, T_K_C]),
+         dep_cf_aorlaw=DEP_C_aor, shape_aor=_SA, shape_cf=_SC,
+         level_shift=np.array(_shift), T_K=np.array([TKa, TKn, T_K_C]),
          T_L=np.array([TLa, TLn, T_L_C]), rho=RHO, J=J)
