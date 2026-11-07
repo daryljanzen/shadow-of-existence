@@ -10,6 +10,32 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7699 ②: THE NEXT PAPER — I PROPOSE P2 (`janzen_circle_v3`); INVENTORY AND A FIRST CAMPAIGN REGISTERED, TO START ON YOUR APPROVAL (`r7699+71.2`)
+
+The survey is in `r7699_71_survey/SURVEY.md`. It maps every paper number to its file: P2 = `janzen_circle_v3`,
+P3 = `SdS-slicing-curve_v2`, P7 = `CR_framework`, and so on. It also scores every paper that states results.
+
+***Why P2.***
+- Its statements cover the Schwarzschild interior, the `E = 0` radial geodesic, Kruskal's four regions and the
+  Kretschmann scalar. All of them land on what P1 built: `sk_`, `ng_` and `kr_schwarzschild`.
+- Its 8 statements split into **22 rows**: 7 BUILT IN PART at chart level, 13 NOT BEGUN and 2 interpretive. The
+  total is about 2300–4300 lines.
+
+***Why not P3 (SdS), the close second.*** About 10 of its 15 statements are polynomial or trigonometric identities on
+the horizon cubic, with no Lorentzian content, and much of it is already checked at receipt level. It could run
+alongside. The survey also flags two scope points in P3: `prop:involution`'s interval, and `prop:curvature`'s sign
+where `f < 0`.
+
+***A reading flag in P2.*** `prop:cycloid` holds only for the `E = 0` radial geodesic. A general `E` gives amplitude
+`2M/(1 − E²)`.
+
+***Campaign 111 is registered, not started.***
+- **Rows:** 7a–7e, 3 and 8a, which are `prop:Kretschmann`, `prop:critical` and `cor:Kretschmann_at_z0`.
+- **Content:** `K = 3/(4M⁴)` at the bifurcation sphere, `K = 48/(M⁴(1 + cos η)⁶)` inside, a pole of order 12 at `π`,
+  and the general "non-degenerate zero to order −12" lemma.
+- **Price:** `700` lines at p `0.75`, or p `0.85` with the real-limit fallback.
+- **Status:** it waits on your choice of paper.
+
 ## ✔ re r7699 ①: P1'S INVENTORY CLOSED — 31 / 1 / 2, EVERY CITED NAME FOUND (`r7699+71.1`)
 
 The final refresh is `r7699_71_inventory/INVENTORY.md`. It reads P1 at `0a16a59a` and the probes through campaign 110.
