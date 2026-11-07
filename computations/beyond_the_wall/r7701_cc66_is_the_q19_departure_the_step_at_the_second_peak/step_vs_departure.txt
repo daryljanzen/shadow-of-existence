@@ -1,0 +1,85 @@
+  ==================================================================================================
+  ⓵ THE STEP, LOCATED ON THE OWN COMB -- the lifted sliding-window instrument
+  ==================================================================================================
+    half-width 0.175:  plateaux +0.0309 -> +0.0551  (factor 1.78)   half-rise q = 1.775   25-75 rise = 0.107
+    half-width 0.250:  plateaux +0.0316 -> +0.0558  (factor 1.77)   half-rise q = 1.780   25-75 rise = 0.066
+    half-width 0.350:  plateaux +0.0306 -> +0.0561  (factor 1.83)   half-rise q = 1.793   25-75 rise = 0.078
+
+    half-rise, mean of three widths : q = 1.7830  (spread 0.0179)
+    the 25-75 rise width            : 0.0837 in q  (0.083 of a comb period)
+    the second acoustic peak        : q = 1.7775 (control), 1.7693 (arm)
+    the step's factor               : 1.77 to 1.83   ⛔ *registered 1.9-2.2 at `r7639` and recorded MISSED; the measured value is used, not the registered one*
+
+  ==================================================================================================
+  ⓶ THE DEPARTURE'S BAND, AND THE CONTAINMENT TEST THAT LICENSES NOTHING
+  ==================================================================================================
+    the departure's band  : centre 1.90, edges [1.550, 2.250], width 0.700
+    the step's half-rise  : q = 1.7830  ⇒ inside that band: True
+    ⛔ AND THAT WAS REGISTERED AS NEAR-FORCED: the band is 8.4 times the rise's own width, and
+       it spans 14 per cent of the whole q range.  Containment is not evidence.
+
+  ==================================================================================================
+  ⓷ THE RESOLUTIONS DO NOT OVERLAP, WHICH IS THE STRUCTURAL ANSWER
+  ==================================================================================================
+    the step is resolved at         : 0.084 in q -- sliding windows of half-width 0.175 give it stably
+    the retention's band must hold  : enough of a comb period for an RMS to mean an amplitude.
+      *`own_comb`'s own docstring: a 0.70-wide band `holds less than one comb period, so its RMS
+       depends on WHICH part of the cycle it covers` -- which is why the own-comb remap exists at all.*
+    the comb period in q            : 1.0092 (control), 1.0045 (arm)
+
+  ⇒ *** The step is a 0.08-wide feature; the departure cannot be localised below 0.70, ***
+     and 0.08 < 0.70 by a factor of 8.4.  **Two features whose resolutions do not overlap are
+     not shown to be one object by sharing a coordinate.**
+
+  ==================================================================================================
+  ⓸ ⛔ THE FIRST FORM OF THIS BLOCK WAS AN IDENTITY, NOT A MEASUREMENT
+  ==================================================================================================
+    *It computed `(y[1]-y[0]) - (law[1]-law[0])` and compared it to `dep[1]`.  But `dep = y -
+     law`, so that expression IS `dep[1] - dep[0]` algebraically: the `0.918` it reported was
+     just `1 - dep[0]/dep[1]`, which says only that band 1's departure is small -- already in
+     the table above.  **An assertion that cannot fail**, the `r7693` 8-vs-10 defect again.*
+    ⇒ Replaced by the question that can fail: DOES THE LAW HAVE A TRANSITION THERE TOO?
+
+  ==================================================================================================
+  ⓹ THE LOWEST BAND'S RATIO -- the paper's own measure of the step -- IN BOTH
+  ==================================================================================================
+    the MEASURED retention's lowest band, over the mean of the rest : 0.4771
+    the LAW's lowest band, over the mean of the rest                : 0.4816
+    *P15: the lowest band runs `between a third and two thirds of the rest`*
+
+  ⇒ *** BOTH SIT IN THAT WINDOW AND THEY AGREE TO 0.9 PER CENT. ***
+     **So the law DOES carry the step's size.**  The order's conditional -- `the law carries
+     everything about the retention except the step` -- is the wrong way round on this reading.
+
+  ==================================================================================================
+  ⓺ SO WHAT THE LAW GETS WRONG IS THE TRANSITION'S WIDTH, NOT ITS SIZE
+  ==================================================================================================
+    LAW, half-width 0.175:  plateaux +0.0351 -> +0.0637  (factor 1.81)   half-rise q = 1.786   25-75 rise = 0.676
+    LAW, half-width 0.250:  plateaux +0.0357 -> +0.0633  (factor 1.77)   half-rise q = 1.794   25-75 rise = 0.652
+    LAW, half-width 0.350:  plateaux +0.0369 -> +0.0632  (factor 1.71)   half-rise q = 1.826   25-75 rise = 0.629
+
+                            half-rise q      25-75 rise width
+    the EXCESS's step      :   1.7830           0.0837
+    the LAW's transition   :   1.8021           0.6522
+    the second peak        :   1.7775
+
+  ⇒ the law's half-rise sits +0.0192 from the step's, and its rise is 7.8 times as WIDE.
+
+  ==================================================================================================
+  ⓻ ⛔ BUT A 25-75 WIDTH FROM A SLIDING WINDOW IS NOT A WIDTH -- IT IS BOUNDED BELOW BY THE WINDOW
+  ==================================================================================================
+    *A sliding RMS of half-width `h` smears a true step over `2h`, so its own 25-75 rise
+     cannot come out below about `h`.  ⇒ A measured value AT or BELOW that floor means the
+     feature is UNRESOLVED, not that its width has been measured.*
+      half-width h    floor ~h     the EXCESS's 25-75     the LAW's 25-75    excess resolved?
+      0.175           0.175        0.107                  0.676              no -- below the floor
+      0.250           0.250        0.066                  0.652              no -- below the floor
+      0.350           0.350        0.078                  0.629              no -- below the floor
+
+  ⇒ *** The excess's transition is UNRESOLVED at every window: sharper than 0.35 in q, ***
+     which is what P15 says of it -- `narrower than the narrowest window that resolves it`.
+  ⇒ *** The LAW's transition IS resolved at every window, at 0.63-0.68. ***
+  ⌗ **Both are smeared by the SAME windows, so the contrast is the features' and not the
+     smoothing's** -- which is the only form in which these two widths may be compared, and
+     it is why the `7.8 times` above is reported as a RATIO AT FIXED SMOOTHING and
+     not as a ratio of two widths.
