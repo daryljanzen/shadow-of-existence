@@ -2082,13 +2082,21 @@
    }
   },
   "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42325324115",
-    "since": "b8432b0878774946a0f2d244ca679a2be976a0d5"
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42380769279",
+    "since": "87bac9b24647bfebddb54dfaf96b718ab55e7a34"
    },
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42325324115",
-    "since": "b8432b0878774946a0f2d244ca679a2be976a0d5"
+   "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42380769279",
+    "since": "87bac9b24647bfebddb54dfaf96b718ab55e7a34"
+   },
+   "receipts/P15_CR_cosmology/C72_nineteen_of_the_fifty_nine_reachable_rows_are_reached_by_grafting_the_named_function_out_of_a_script_and_the_one_hole_is_filed_as_a_stated_limit_whose_capability_is_short_work.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42380769279",
+    "since": "87bac9b24647bfebddb54dfaf96b718ab55e7a34"
+   },
+   "receipts/P15_CR_cosmology/C81_order_two_is_done_in_one_cycle_the_zero_mode_capability_exists_and_the_measure_the_stated_limit_called_its_only_open_question_does_not_change_the_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42380769279",
+    "since": "87bac9b24647bfebddb54dfaf96b718ab55e7a34"
    }
   }
  },
