@@ -84,9 +84,11 @@ established in the companion slicing paper"*.
 > **the formal paragraph: THAT it is one.** Horizonless coefficients, asymptotic flatness, a chart
 > covering every radius, a finite curvature scalar going to zero.
 
-**Neither claims the other's words**, and that was read rather than asserted: *"geometric
-identity"*, *"backward radial direction"* and *"negative root"* appear **nowhere** in the formal
-sentence, and the formal sentence's own properties appear nowhere in the sketch's. So the
+**Neither claims the other's words**, and that was read rather than asserted, over named
+searches on a whitespace-flattened copy: *"geometric identity"*, *"backward radial direction"* and
+*"negative root"* were each searched over the formal sentence and its whole colon-list and are
+**NOT FOUND** there; *"horizonless,"* and *"Kretschmann scalar is"* were each searched over the
+sketch's clause and the five hundred characters around it and are **NOT FOUND** there. So the
 companion-paper citation is not withdrawn and the formal paragraph is not redundant. ✔
 ⌗ **CONSISTENT had to stay reachable** — the order asks "whether", which invites a tension, and two
 sentences can divide labour without either being wrong.
