@@ -122,6 +122,7 @@ text disagrees with its computation, and nothing in the gates would have caught 
 import os
 import sys
 
+from scipy.signal import argrelextrema
 import numpy as np
 
 FAILS = []
@@ -163,7 +164,11 @@ NEED = ('r6919_injected_lcdm_leafrec1.npz', 'r6919_injected_cr_leafrec1.npz',
         #   bank read outside `NEED` crashes the receipt on an unnamed `FileNotFoundError` instead of
         #   failing the gate that exists to name it.*
         'r7041_accept_lcdm.npz', 'r7041_accept_cr_leafrec1.npz',
-        'r6915_pairs_lcdm.npz', 'r6915_pairs_cr_leafrec1.npz')
+        'r6915_pairs_lcdm.npz', 'r6915_pairs_cr_leafrec1.npz',
+        # ⛭ `r7703+cc66`: the FINE spectra, for the step-versus-law-width block below.  *Declared
+        #   here for the same reason the four above are: the `r7691` omission was a bank read where
+        #   it was used and nowhere named, which crashes instead of failing the gate.*
+        'r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -605,6 +610,153 @@ check("⛔⛭ ** AND THE LAW DOES NOT PRODUCE THE MEASURED BAND-TO-BAND SHAPE: i
       f"law monotonic {bool(np.all(np.diff(_lb) > 0))}, measurement monotonic "
       f"{bool(np.all(np.diff(_my) > 0))}; worst band {np.max(np.abs(_lb - _my)):.4f} at "
       f"q = {_mx[int(np.argmax(np.abs(_lb - _my)))]:.2f}")
+
+# ⛭⛭⛭ ** `r7703` (69's items 1): IS THE LAW'S `q ~ 1.9` FAILURE THE STEP AT THE SECOND ACOUSTIC
+#   PEAK? -- AND THE ANSWER IS THAT THE LAW CARRIES THE STEP'S PLACE AND SIZE AND MISSES ONLY ITS
+#   SHARPNESS. **  `r7701+cc66` measured it; this block computes it where the law's sentences can
+#   cite it.  *My registered answer at `r7701` was "NOT one object" and it is falsified: they are one
+#   transition, read two ways.*
+#   ⛔⛔ ** THE LICENCE, STATED BEFORE THE FIGURES AND NOT AFTER THEM. **  *The `q ~ 1.9` residual IS
+#   the width error -- one quantity read two ways, an IDENTITY and not an explanation.  Nothing here
+#   attributes the step's sharpness to any mechanism: the step is "very largely shared" between the
+#   arms, so no build removes it, and `r7695`'s counterfactual is on record for what happens when a
+#   shape consistency is read as attribution.*
+_OCK = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7639_cc66_P15_repoint_paper')
+check("⛭ `r7703` the envelope-kind module the slide needs is present: "
+      "`r7639_cc66_P15_repoint_paper/own_comb_kinds.py`",
+      os.path.exists(os.path.join(_OCK, 'own_comb_kinds.py')))
+sys.path.insert(0, _OCK)
+import own_comb_kinds as OCK                                                 # noqa: E402
+
+_FB = {}
+for _t, _n in (('lcdm', 'r6941_fine_lcdm'), ('cr', 'r6941_fine_cr_leafrec1')):
+    _d = np.load(os.path.join(SP, _n + '.npz'))
+    _FB[_t] = (_d['ls'].astype(float) / float(_d['l_A']), np.asarray(_d['Dl'], float))
+# ⛭⛭ the band-edge-independent half of the statistic, built ONCE.  *`band_excess_own_kind` refits both
+#   combs and rebuilds both running envelopes on every call; the slide reads 129 intervals off the
+#   same banks.  Measured at `r7703+cc66.0`: 49.2 s unhoisted against 4.3 s for this whole receipt,
+#   and 1.6 s hoisted -- which is why this block is HERE and not a separate receipt with an INDEX row.*
+_ST = OCK.own_state(_FB, 'mean', 1.0)
+
+
+def _slide(a, b):
+    """the excess on ONE interval -- the same statistic the step receipt's bands cut with"""
+    return float(OCK.band_excess_own_kind(_FB, 'mean', np.array([a, b]), st=_ST)[0])
+
+
+def _locate(fn):
+    """(half-rise, 25-75 rise) per half-width, by the step receipt's own locator: the FIRST crossing.
+
+    ⛔⛭ *`r7701+cc66` "repaired" this locator by taking the LAST crossing instead and moved the
+    half-rise from `1.783` to `1.957` -- off the second acoustic peak, which is the figure the
+    locator is validated against.  The defect was in the 25-75 crossings, which are mine and are
+    taken ADJACENT to the half-rise.  ⇒ **A repair that moves a figure the instrument is validated
+    against is not a repair**, and that is why the agreement with the peak is an assertion below and
+    not something this file merely prints.*
+    """
+    out = []
+    for _half in (0.175, 0.25, 0.35):
+        _row = [(c, fn(c - _half, c + _half)) for c in np.arange(0.85 + _half, 3.0, 0.05)]
+        _lo = np.mean([v for c, v in _row if c < 1.4])
+        _hi = np.mean([v for c, v in _row if c > 2.2])
+
+        def _x(frac, near=None):
+            _tgt = _lo + frac * (_hi - _lo)
+            _xs = [(_row[i - 1][0] + (_tgt - _row[i - 1][1])
+                    / (_row[i][1] - _row[i - 1][1]) * 0.05)
+                   for i in range(1, len(_row)) if _row[i - 1][1] < _tgt <= _row[i][1]]
+            if not _xs:
+                return float('nan')
+            return min(_xs, key=lambda v: abs(v - near)) if near is not None else _xs[0]
+
+        _h = _x(0.5)
+        out.append((_h, _x(0.75, _h) - _x(0.25, _h), _hi / _lo, _half))
+    return out
+
+
+# the seven bands, both sides -- read once and used by the three gates below
+_x7, _y7 = OC.retained_own(_B, 1.0, 7, 5.75, C=_CB)
+_l7 = np.array([_law_band(a, b) for a, b in
+                zip(np.linspace(0.85, 5.75, 8)[:-1], np.linspace(0.85, 5.75, 8)[1:])])
+_SX = _locate(_slide)
+_LX = _locate(lambda a, b: _law_band(a, b) - 1.0)
+_sh, _lh = float(np.mean([r[0] for r in _SX])), float(np.mean([r[0] for r in _LX]))
+_PK2 = _FB['lcdm'][0][argrelextrema(_FB['lcdm'][1], np.greater, order=30)[0]][1]
+print(f"\n  \u26ed `r7703` THE STEP AND THE LAW'S TRANSITION, located by the same slide")
+print(f"      half-width    the EXCESS: half-rise / 25-75 / factor      the LAW: half-rise / 25-75 / factor")
+for _a, _b in zip(_SX, _LX):
+    print(f"      {_a[3]:.3f}         {_a[0]:.3f} / {_a[1]:.3f} / {_a[2]:.2f}"
+          f"                        {_b[0]:.3f} / {_b[1]:.3f} / {_b[2]:.2f}")
+check("\u26ed\u26d4 `r7703` ** THE STEP'S HALF-RISE SITS AT THE SECOND ACOUSTIC PEAK, to under half a "
+      "per cent -- which is the figure this locator is VALIDATED AGAINST and is therefore asserted "
+      "here rather than printed. **  *`r7701+cc66` moved it to `1.957` by changing the locator's rule "
+      "globally while repairing two crossings of its own; this gate is what would have caught that*",
+      abs(_sh / float(_PK2) - 1.0) < 0.005,
+      f"half-rise {_sh:.4f} against the second peak {float(_PK2):.4f}, "
+      f"{100 * abs(_sh / float(_PK2) - 1.0):.2f} per cent")
+# ⛔⛔⛔ ** AND HERE `r7701+cc66`'s ROUTED CLAIM IS WITHDRAWN BY THIS RECEIPT'S OWN FAILABILITY LEG. **
+#   *I routed, and `69` merged into the `r7703` order text, "the law's transition sits at `q = 1.802`
+#   against the step's `1.783`".  ⇒ **The law has no transition for a locator to find.**  Translating
+#   the interval the law is read on by `+0.30` in `q` moves its "half-rise" by `0.004`, while the same
+#   translation moves the excess's by `0.296` -- so for the law the locator is returning the SCAN
+#   WINDOW and not a feature of the curve.*
+#   ⌗ *The figure `1.8021` was never wrong as an OUTPUT; it was wrong as a LOCATION, and nothing in
+#   `r7701` asked whether the thing being located existed.  **The failability leg asked, one revision
+#   later, and the answer is that it does not.**  ⇒ That is what a failability sweep is for, and it
+#   is the first time in this sequence that one has overturned a figure already inside an order.*
+#   ⇒ ** The two-sided control replaces the claim, and the corrected statement is cleaner: where the
+#     measurement steps, the law RAMPS. **
+_TR = 0.30
+_sh_t = float(np.mean([r[0] for r in _locate(lambda a, b: _slide(a + _TR, b + _TR))]))
+_lh_t = float(np.mean([r[0] for r in _locate(lambda a, b: _law_band(a + _TR, b + _TR) - 1.0)]))
+print(f"      translating the read interval by {_TR:+.2f} in q moves the excess's half-rise "
+      f"{_sh_t - _sh:+.4f} and the law's {_lh_t - _lh:+.4f}")
+check("⛔⛔⛭ `r7703` ** THE STEP IS A LOCATED FEATURE AND THE LAW'S `TRANSITION` IS NOT: under "
+      "a `+0.30` translation of the read interval the excess's half-rise moves by nearly the full "
+      "shift and the law's by under two per cent of it. **  ⇒ *** So `r7701+cc66`'s routed `the "
+      "law's transition sits at q = 1.802` IS WITHDRAWN: for the law this locator returns the scan "
+      "window and not a feature.  The figure was an output, not a location, and this leg is what "
+      "asked. ***",
+      abs((_sh_t - _sh) + _TR) < 0.05 and abs(_lh_t - _lh) < 0.02 * _TR,
+      f"excess {_sh_t - _sh:+.4f} against the ideal {-_TR:+.2f}; law {_lh_t - _lh:+.4f}")
+_LD = np.diff(_l7)
+check("⛭ `r7703` ** AND WHAT THE LAW ACTUALLY DOES THERE IS RAMP: its seven bands rise strictly and "
+      "decelerate throughout, with no step anywhere in them. **  ⇒ *This is the honest form of the "
+      "comparison -- a sharp step in the measurement against a smooth saturating ramp in the law -- "
+      "and it says what `the law carries the step's place` cannot*",
+      bool(np.all(_LD > 0)) and bool(np.all(np.diff(_LD) < 0)),
+      "increments " + " ".join(f"{v:+.4f}" for v in _LD))
+_rm = float((_y7[0] - 1.0) / np.mean(_y7[1:] - 1.0))
+_rl = float((_l7[0] - 1.0) / np.mean(_l7[1:] - 1.0))
+check("\u26ed `r7703` ** AND OF THE SAME SIZE: the lowest band runs the same fraction of the rest under "
+      "the law as measured, to one per cent, and both sit inside the `a third to two thirds` the step "
+      "paragraph already states. **  ⇒ *So the law carries the step's SIZE -- a band average, which survives the withdrawal above because it never needed the step to be LOCATED*",
+      abs(_rl / _rm - 1.0) < 0.02 and all(1 / 3 < v < 2 / 3 for v in (_rm, _rl)),
+      f"measured {_rm:.4f}, law {_rl:.4f}, agreeing to {100 * abs(_rl / _rm - 1.0):.1f} per cent")
+_fl = [(r[3], r[1]) for r in _SX]
+check("\u26d4\u26ed `r7703` ** WHAT THE LAW MISSES IS THE SHARPNESS: the excess's transition is "
+      "UNRESOLVED at every window -- its 25-75 rise falls BELOW the window's own floor at all three "
+      "half-widths -- while the law's is resolved at every one. **  ⛔ *A 25-75 rise out of a sliding "
+      "RMS of half-width `h` cannot come out below about `h`, so a value at or under that floor means "
+      "the feature is unresolved and NOT that its width was measured.  ⇒ The contrast is therefore "
+      "stated as a RATIO AT FIXED SMOOTHING and never as a ratio of two widths*",
+      all(w < 1.2 * h for h, w in _fl) and all(r[1] > 1.2 * r[3] for r in _LX),
+      "; ".join(f"h={h:.3f}: excess {w:.3f} (floor ~{h:.3f}), law {r[1]:.3f}"
+                for (h, w), r in zip(_fl, _LX)))
+_wr = float(np.mean([r[1] for r in _LX]) / np.mean([r[1] for r in _SX]))
+check("\u26ed `r7703` ...and at fixed smoothing the law's transition is some SEVEN TIMES the excess's",
+      6.0 < _wr < 9.0, f"ratio {_wr:.1f} at identical windows")
+_dep = _y7 - _l7
+_J = int(np.argmax(np.abs(_dep)))
+check("\u26ed\u26d4 `r7703` ** AND THE BAND-TO-BAND RESIDUAL AT `q ~ 1.9` IS THAT WIDTH ERROR: the "
+      "largest departure of the seven sits at the band holding the transition, and the law is still "
+      "climbing there where the measurement has finished. **  ⛔ *This is an IDENTITY and not an "
+      "explanation -- the residual and the width error are one quantity read two ways -- and it "
+      "attributes the step's sharpness to nothing: the step is largely SHARED between the arms, so no "
+      "build removes it*",
+      abs(_x7[_J] - 1.90) < 0.05 and (_y7[1] - _y7[0]) > 1.8 * (_l7[1] - _l7[0]),
+      f"largest residual {_dep[_J]:+.4f} at q = {_x7[_J]:.2f}; the measurement rises "
+      f"{_y7[1] - _y7[0]:+.4f} from band 1 to band 2 where the law rises {_l7[1] - _l7[0]:+.4f}")
 
 print("=" * 100)
 if FAILS:

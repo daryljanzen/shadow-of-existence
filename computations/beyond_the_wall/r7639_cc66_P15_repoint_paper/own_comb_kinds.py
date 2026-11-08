@@ -71,23 +71,52 @@ def _combs(banks):
     return Tc, pc, Ta, pa, (pa - pc + np.pi) % (2 * np.pi) - np.pi
 
 
-def band_excess_own_kind(banks, kind, QE=QE, win=1.0):
-    """70's carry with the step receipt's envelope KIND.  `kind='mean', win=1.0` is 70's own function.
+def own_state(banks, kind, win=1.0):
+    """⛭⛭ `r7703+cc66`: the part of `band_excess_own_kind` that does NOT depend on the band edges.
 
-    `win` is the envelope window in units of the CONTROL's comb period, so the arm's window is
-    `win * Ta / Tc` -- one of the arm's own periods when `win=1`.  A receipt that sweeps the window to
-    show a result is window-independent needs this, because carrying at a fixed arm window would make
-    the sweep ask a different question on each arm.
+    ** WHY THIS EXISTS, AND IT IS A PRICE AND NOT A TIDY-UP. **  `band_excess_own_kind` refits both
+    combs and rebuilds BOTH RUNNING ENVELOPES over the whole fine spectrum on every call, while only
+    the per-interval RMS depends on the interval it is given.  A receipt that SLIDES a window calls it
+    once per centre -- `43 x 3 = 129` times in the step locator -- so `129` interval reads cost `129`
+    comb fits and `258` envelope passes.  Measured at `r7703+cc66.0`: `49.2` s for the slide against a
+    `4.3` s host receipt.
+      ⌗ *Pre-existing and not introduced by the caller that noticed it: the step receipt slides the
+      same way and pays the same.*
+      ⛔ *Additive and DEFAULT-INERT by construction -- `band_excess_own_kind` with no `st` computes
+      exactly what it computed before, so this cannot change any existing reading.  That is asserted
+      rather than claimed: `r7703+cc66` measures the step receipt's output BYTE-IDENTICAL across the
+      change, which is what `r7655`'s precedent demands of a shared file.*
     """
     Tc, pc, Ta, pa, dphi = _combs(banks)
     xc, yc = banks['lcdm']
     xa, ya = banks['cr']
     ec = envelope(xc, yc, win, kind)
     ea = envelope(xa, ya, win * Ta / Tc, kind)             # `win` of the ARM's own periods
-    oc, oa = (yc - ec) / ec, (ya - ea) / ea
-    ua = Tc * (xa / Ta + dphi / (2 * np.pi))               # the arm on the control's comb coordinate
-    Rc = np.array([_rms(xc, oc, a, b) for a, b in zip(QE[:-1], QE[1:])])
-    Ra = np.array([_rms(ua, oa, a, b) for a, b in zip(QE[:-1], QE[1:])])
+    return dict(xc=xc, oc=(yc - ec) / ec,
+                ua=Tc * (xa / Ta + dphi / (2 * np.pi)),    # the arm on the control's comb coordinate
+                oa=(ya - ea) / ea, kind=kind, win=float(win))
+
+
+def band_excess_own_kind(banks, kind, QE=QE, win=1.0, st=None):
+    """70's carry with the step receipt's envelope KIND.  `kind='mean', win=1.0` is 70's own function.
+
+    `win` is the envelope window in units of the CONTROL's comb period, so the arm's window is
+    `win * Ta / Tc` -- one of the arm's own periods when `win=1`.  A receipt that sweeps the window to
+    show a result is window-independent needs this, because carrying at a fixed arm window would make
+    the sweep ask a different question on each arm.
+
+    `st` is an `own_state(banks, kind, win)` built once by a caller that reads many intervals off the
+    same banks; omitted, the state is built here exactly as before.  ⛔ *A caller passing `st` built
+    at a different `kind` or `win` would be reading one setting's bands off another's envelope, so
+    that is refused rather than trusted.*
+    """
+    if st is None:
+        st = own_state(banks, kind, win)
+    elif st['kind'] != kind or st['win'] != float(win):
+        raise ValueError(f"own_state is (kind={st['kind']!r}, win={st['win']}) but this call is "
+                         f"(kind={kind!r}, win={float(win)}) -- the envelope would be the wrong one")
+    Rc = np.array([_rms(st['xc'], st['oc'], a, b) for a, b in zip(QE[:-1], QE[1:])])
+    Ra = np.array([_rms(st['ua'], st['oa'], a, b) for a, b in zip(QE[:-1], QE[1:])])
     return Ra / Rc - 1.0
 
 
