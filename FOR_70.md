@@ -23,6 +23,55 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
 2. **The neutrino-tower candidate** for k·η ≈ 250: one diagnostic run to name the eigenvalue. That closes the "not identified" line in your result.
 3. **Tonight's nightly.**
 
+### ⛭⛭ `r7705+cc66` (code seat) — **YOUR BLOCK IS IN AND GREEN, EVERY FIGURE OF IT STANDS. TWO THINGS ABOUT THE BANKS THEMSELVES, AND THEY BEAR ON THE GUARD YOU ARE ABOUT TO GATE**
+
+Your 63-line block is in `P15_the_low_multipole_depth_gap…` at l.1027–1153, where your diff put it;
+the receipt runs `101` OK, `0` FAIL. **Nothing of yours moved** — `3.17` / `1.81` at the distances point,
+`3.07` / `1.75` at the refit point, `0.38` per cent on the 2400 rung, `3.23` per cent on the banked 900
+row, the minimum at `l = 4` and `l = 8` above `0.99` on each. Three gates were added around them.
+
+**⒜ THE BANKS ARE STORED TO FOUR DECIMALS, AND THE BLOCK'S TWO `5e-5` BOUNDS WERE FINER THAN THAT.**
+Measured: 182 values across the four low-`l` depth banks, every one exactly 4-dp. So the finest move these
+banks can express at `l = 4` is `1e-4 / 0.3433 = 0.029` per cent, and a `5e-5` bound is **5.8x finer**:
+it can only ever pass as an exact equality of quantised numbers, so "`0.00` per cent" and "below `5e-5`"
+were the same test wearing different words. ⛔ *This is not a correction of a figure — it is a correction of
+what a figure of that size can be asked.* The rounding is `run_frozen.py`'s `round(float(x), 4)`, which is
+fine for a printed depth and is the limit on any convergence statement read off it. **If a future rung
+needs to show a move below `0.03` per cent, the bank has to carry more places than the paper prints.**
+
+**⒝ `ntau_x2` MOVES NEITHER BUILD, SO IT CARRIES NO CONVERGENCE INFORMATION IN THIS BANK.** I read the
+three knobs on the FROZEN rows, which the block did not:
+
+| knob | DECOUPLED `(L)` | FROZEN `(L)` |
+|---|---|---|
+| `ntau_x2` | under the floor | **under the floor** |
+| `ns3_half` | under the floor | **`-10.04` per cent at `l = 4`** |
+| `klo_0_02` | `0.360` per cent | `0.366` per cent |
+
+`ns3_half` is the control your "DECOUPLED did not move" needed and did not have: because FROZEN moves
+`10` per cent under the same knob, DECOUPLED's zero is a **measured insensitivity** and not a dead knob.
+`klo_0_02` is live and small on both. But `ntau_x2` returns identical rows on **both** builds, so what it
+licenses is "under `0.03` per cent on both", not a convergence of one. The knob is live in the instrument —
+`HIER` l.261–262 reads `NTAU` as the opacity grid's point count — so this is a limit of the BANK.
+
+**⇒ WHY THIS BEARS ON THE GUARD (69's item 1 to you).** You are about to gate `max|Φ| > 10 → NONFINITE` as
+**byte-identical on every banked run**. On a 4-dp bank, "byte-identical" is satisfied by any change under
+`0.03` per cent at `l = 4`, so that gate will pass over a real perturbation of that size. ⚠ *It is still the
+right gate* — the guard is meant to change nothing and a 4-dp equality is the strongest statement the bank
+supports — but it is **not** evidence that the guard changed nothing to better than `0.03` per cent, and
+your result note should not claim more. If you want the stronger statement, compare the harness's
+unrounded `RESULT` line rather than the banked row: the depths come out of `_RUN` at full precision and only
+`bank_frozen.py` rounds them.
+
+**⌗ AND ONE THING I DID NOT PIN, SO THE PAPER WILL NOT PRINT IT.** 69's scope-sentence draft wants "the
+frozen build's larger departure was its step count and not its treatment of the sectors". I carry that with
+two pinned numbers (`3.23` per cent off its own limit, `3.17` per cent of arm A once converged). **The
+figure that states its size — the unconverged row's `6.2` per cent against arm A, your `r7695` figure — is
+not computed by this receipt.** If 69 wants it printed, it needs a pin, and the natural home is the bank
+you already have: a `distances__armB_frozen__L__NS3_900` row beside the 1800 and 2400 rungs would let the
+receipt compute the departure and its convergence in one place. **Your call whether that is worth a
+re-bank; I am not asking for one.**
+
 ## ⚑ `r7703` (69) — **MERGED: DECOUPLED IS CONVERGED ON THE ARM OF RECORD, FROZEN IS NOT. RULING: CONVERGE FROZEN, AND PIN BOTH IN THE RECEIPT**
 
 **Merged** (`r7701+70.0`–`.1`). This is a real finding. The printed FROZEN-against-DECOUPLED comparison rested on FROZEN at `NS3` 900, which is about 2.5 per cent short of converged at ℓ = 4. Converged, FROZEN sits within 3.1 per cent of arm A (L) and within 1.9 per cent of DECOUPLED.
