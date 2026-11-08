@@ -1,0 +1,23 @@
+r7712 (60) -- THE TREE THE READINGS WERE TAKEN ON
+
+  HEAD at measurement : b0dc820c
+  origin/main         : d01ac482  (r7709)
+  registered at       : b0dc820c  (PREDICTION.md, its own pushed commit)
+
+  THE FILES READ, with the sha1 of each as read:
+    janzen_circle_v3.tex                                           3279a4b1492b5b46  665 lines
+    CR_cosmology.tex                                               029e59f9e6ed1177  3101 lines
+    CircleExterior.lean                                            45f050903ab07e82  16661 lines
+    CircleChart.lean                                               496b72cba9540b67  16459 lines
+    P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 5f8aae91ca5487bd  1197 lines
+
+  QUESTION 3 TURNED ON seWS, WHICH HAD NOT BEEN READ BEFORE THIS REVISION:
+    def seWS : Set P := {p | 0 < p.2 and p.1 * p.2 < 1}   -- W = {V > 0, UV < 1}
+  The registered prediction guessed {UV < 1} alone and was WRONG; the extra V > 0
+  is what puts the second exterior outside W, and 71's note is right.
+
+  THE ORDER: origin/main:FOR_60.md, topmost section r7709, read in full.
+
+  Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is touched.
+
+  PYTHON: Python 3.11.17

@@ -1,0 +1,177 @@
+
+  r7712 (60) -- READINGS.  Order r7709: the landing, and its three questions.
+==============================================================================
+  QUESTION ① -- IS "with the horizons at which they meet" RIGHT IN ALL FIVE PLACES?
+==============================================================================
+
+  1a  the clause occurs on 5 line(s): [82, 95, 311, 317, 320]
+    [SUPPORTED] it is in the places the order reports
+
+  1b  G4 -- the subject classifier on an injected sentence of each class
+    injected point-set sentence -> POINT SET
+    injected curve sentence     -> CURVE
+    [SUPPORTED] the classifier separates the two
+
+  1c  EACH SITE, with the SUBJECT of the sentence the clause sits in
+    l.82: subject = POINT SET
+      ...ces two isometric asymptotically flat exteriors at $r>2M$, and $z \mapsto \pi \pm i\rho'$ at $z=\pi$ produces two asymptotically flat regions at $r<0$. The four regions at $r \geq 0$ (the two exterior...
+    l.95: subject = POINT SET
+      ...rior arcs, the two $r>2M$ exteriors of the front seam, and the two $r<0$ regions of the back seam. The four pieces at $r \geq 0$---two exteriors and two interiors, meeting at the bifurcation sphere an...
+    l.311: subject = POINT SET
+      ...s and the two $r>2M$ exteriors---meet at the bifurcation 2-sphere and terminate at $r=0$; with the horizons at which they meet, they are precisely the maximal Kruskal--Szekeres extension. The two patc...
+    l.317: subject = POINT SET
+      ...hild form in its domain of $r$ by Lemma \ref{lem:interior_metric} and Proposition \ref{prop:region_I_metric}. Each patch is therefore isometric to the corresponding region of the maximal Kruskal--Szek...
+    l.320: subject = POINT SET
+      ...exttt{cy\_patches}), and no point of the Kruskal domain $\{UV<1\}$ has $r=M(1-\cosh\rho')$ with $\rho'>0$, so the Kruskal--Szekeres extension does not contain the two $r<0$ patches (\texttt{cy\_backse...
+
+    5 site(s) whose subject is the POINT SET -- the clause belongs
+    0 site(s) whose subject is something else
+
+  1d  AND THE GEOMETRY THE CLAUSE REPAIRS, checked rather than taken
+    [SUPPORTED] a patch is given on an OPEN interval: "$\eta \in (0, \pi)$"
+    [SUPPORTED] a patch is given on an OPEN interval: "$\rho \in (0, \infty)$"
+    [SUPPORTED] a patch is given on an OPEN interval: "$\rho' \in (0, \infty)$"
+      ⇒ open at both ends, so the patches exclude r = 2M (the horizons) and r = 0.
+        The clause adds back exactly what the open patches drop, and the extension
+        "terminates at r = 0", so r = 0 is rightly NOT added.  The clause is the
+        right repair and it belongs in a point-set claim.
+
+    ⇒ ⛭ THE ANSWER: 5 of 5 are point-set claims and the
+      clause belongs in each.  **NO DEFECT HERE** -- and that answer was REACHABLE:
+      the prediction registered the opposite expectation (at least one attached to a
+      sentence about the curve) at moderate confidence, and the classifier returns
+      CURVE on an injected curve sentence.  Reporting five SUPPORTED was the cheap
+      answer and is also the true one, which is why the subject was read each time.
+
+==============================================================================
+  QUESTION ② -- DOES "Each patch is therefore isometric" FOLLOW FROM THE SKETCH?
+==============================================================================
+
+  2a  WHAT THE SKETCH SAYS IT HAS, and WHAT IT CONCLUDES
+    [SUPPORTED] it has: a match of metric COEFFICIENTS in each domain of r
+    [SUPPORTED] it concludes: each patch is THEREFORE ISOMETRIC
+
+  2b  WHAT AN ISOMETRY NEEDS, and which half the sketch cites
+    an isometry of a patch with a region needs BOTH:
+      ⓵ the coefficient identity                     -- cited, two lemmas
+      ⓶ that the chart map is a BIJECTION onto it    -- cited?
+    cc_Φ_inj: exists in the probes: True;  printed in P2: True
+    ce_Ψ_inj: exists in the probes: True;  printed in P2: True
+    [SUPPORTED] the SKETCH's own passage cites NEITHER injectivity lemma
+
+    [DEFECT] outcome (b), as registered: the bijection IS established elsewhere and the SKETCH does not reach for it
+      ⇒ so "therefore" is doing work the sketch does not show.  A coefficient match
+        alone gives an isometry onto the IMAGE of the map; it is the region only if
+        the map is onto it.  The repair is a citation, not a new result --
+        cc_Φ_inj and ce_Ψ_inj are exactly what the step needs.
+      ⌗ negative probe (21), registered for this revision: a "therefore" is a
+        LOAD-BEARING WORD, and when the conclusion is stronger in KIND than what
+        precedes it the step IS the claim.
+
+  2c  ⛔ AND ONE PATCH THE CITATION CANNOT COVER -- which question ③ establishes
+    the four r >= 0 patches include the SECOND exterior, and by ③ below that region
+    lies OUTSIDE the spacetime se_S is defined on.  So for that patch there is no
+    isometry statement in the formalisation to cite, and "each patch" quantifies
+    over it.  ⇒ The citation repairs three of the four; the fourth needs the
+    reflection, which proves an invariance and not an isometry onto a region.
+
+==============================================================================
+  QUESTION ③ -- DOES "carries it onto the second exterior" SAY MORE THAN PROVED?
+==============================================================================
+
+  3a  WHAT REGION IS THE SPACETIME DEFINED ON?  Read from the definition.
+    def seWS : Set P := {p | 0 < p.2 ∧ p.1 * p.2 < 1}
+    its own docstring: /-- **EF's domain** `W = {V > 0, UV < 1}` (regions I and II). -/ 
+    [SUPPORTED] seWS carries `0 < p.2`, i.e. V > 0 -- regions I and II only
+    ⚠ AND THIS IS WHERE THE PREDICTION WAS WRONG, which is why it was registered:
+      I recorded that if seWS were {UV < 1} then U > 0 > V would have UV < 0 < 1 and
+      the second exterior would be INSIDE it, contradicting 71's note.  seWS carries
+      the EXTRA condition V > 0, so the second exterior (V < 0) is OUTSIDE.  71 is
+      right and the guess was wrong -- and the arm survived because it was written
+      to read the definition rather than to decide from memory.
+
+  3b  IS THE SECOND EXTERIOR INSIDE IT?  -- arithmetic, not recollection
+    first exterior  (U < 0 < V)        V>0: True  UV<1: True  -> in W: True
+    black-hole interior (U, V > 0)     V>0: True  UV<1: True  -> in W: True
+    second exterior (U > 0 > V)        V>0: False UV<1: True  -> in W: False
+    ⇒ the second exterior is NOT in W.
+
+  3c  WHAT ce_reflection ACTUALLY STATES
+    theorem ce_reflection (M : ℝ) (y a b : P) : rK M (-y) = rK M y ∧ FS M (-y) * gM (-a) (-b) = FS M y * gM a b 
+    binders: M :  ℝ; y :  P; a :  P; b :  P
+    [SUPPORTED] it asks NO domain condition -- it holds for any y, a, b in the plane
+    [SUPPORTED] and it does NOT mention se_S at all
+    its own docstring:
+      /-- **4b-③**: the second branch `z = −iρ` has the same `r` (`cy_patches`); it is the left exterior `{U > 0 > V}`, outside `W`, reached by the reflection `(U, V) ↦ (−U, −V)`, which preserves `rK` and the metric coefficient-wise: `F(−y)·gM(−a, −b) = F(y)·gM(a, b)`. -/ 
+
+  3d  THE PROSE AGAINST IT
+    [SUPPORTED] P2 says "carries it onto the second exterior"
+    [DEFECT] "carries it ONTO the second exterior" says more than ce_reflection proves
+      ⇒ what is proved is a POINTWISE INVARIANCE on the whole plane: the
+        reflection preserves rK and the metric expression F·gM, for any point
+        and any pair of vectors.  "Carries it onto the second exterior" asserts
+        a MAP ONTO A REGION -- and by 3b that region is outside the domain the
+        spacetime is defined on, so the formalisation cannot state it as a
+        region at all.  The file's own docstring says "outside `W`".
+      ⇒ The repair is to say the reflection PRESERVES r and the metric
+        coefficient-wise, and that the image lies outside the chart's domain.
+      ⌗ (r7700: a scope claim is a claim about its SUPPORT -- here the support
+        is not merely different from the prose's, it is absent.)
+
+==============================================================================
+  ITEM ④ -- THE REST OF THE LANDING
+==============================================================================
+
+  4a  P2's REPAIRED CLAUSES, at source
+    [SUPPORTED] ⓶ "on that plane"
+    [SUPPORTED] the map clause
+    [SUPPORTED] the half-repair, cc_Φ_inj cited
+    [SUPPORTED] and the old "on that manifold" is GONE
+
+    AND ONE THING CHECKED RATHER THAN ACCEPTED: is "U, V > 0" the right region?
+      seWS = {p | 0 < p.2 ∧ p.1 * p.2 < 1}
+      the black-hole interior inside W needs V > 0 (from seWS) and UV > 0, hence
+      U > 0 too.  ⇒ "U, V > 0" IS that region.  [SUPPORTED]
+
+  4b  THE THREE NEW DECLARATIONS
+    [SUPPORTED] ce_Ψ_inj: at l.15944; printed in P2: True
+      binders: hM :  0 < M; ρ :  ℝ; ρ' :  ℝ; t :  ℝ; t' :  ℝ; hρ :  0 < ρ; hρ' :  0 < ρ'; h :  ce_Ψ M ρ t = ce_Ψ M ρ' t'
+    [SUPPORTED] ce_pullback: at l.16014; printed in P2: True
+      binders: hM :  0 < M; p :  seW; ρ :  ℝ; hρ :  0 < ρ; t :  ℝ
+    [SUPPORTED] ce_reflection: at l.16037; printed in P2: True
+      binders: M :  ℝ; y :  P; a :  P; b :  P
+
+  4c  P15's "about three per cent" -- AND THIS SEAT'S OWN r7710 FINDING
+    [SUPPORTED] the as-run offset now reads in WORDS
+    "$3.2$ per cent" now occurs 2 time(s) in P15
+    and 1 of them is in the sentence the collision was in
+    [NO COLLISION] r7710's finding is discharged
+
+    THE FIGURE AGAINST ITS SOURCE, searched two ways:
+      the receipt's own text: # NS3 900 was ~3 per cent short at l = 4. `r7703+70` converged FROZEN (NS3 1800 / 2400 and their h^2
+      [SUPPORTED] the receipt records ~3 per cent, which is what P15 now prints
+    ⌗ AND ONE NOT FOUND, said as NOT FOUND over a named search: the order attributes
+      a COMPUTED "3.23 per cent" to the receipt.  Searched by the digits across
+      every receipt (one hit, in an unrelated P17 receipt) and by content in both
+      NS3-bearing P15 receipts, where the figure appears as a RECORDED COMMENT
+      ("NS3 900 was ~3 per cent short at l = 4") and not as a computed gate.  So
+      the paper's figure agrees with what the receipt RECORDS; whether a gate
+      COMPUTES 3.23 is not established by these searches.
+
+  4d  AXIOM HYGIENE, the new file
+    CircleExterior.lean: axiom tokens 0; sorry 0
+    [SUPPORTED] no axiom carries content the paragraph credits to a proof
+    ⌗ AND WHAT THIS CANNOT DO: it reads declarations, hypotheses and statement
+      shapes.  Whether each proof TERM closes is the Lean build's business, and no
+      geometric fact the files do not state is supplied here.
+
+==============================================================================
+  VERDICTS
+==============================================================================
+  ① the horizons clause is right in all 5 places, every one a point-set claim: SUPPORTED  (the registered expectation of a defect was NOT borne out)
+  ② "therefore isometric" needs a bijection the SKETCH does not cite, though the lemmas exist: DEFECT, a citation owed
+  ③ "carries it onto the second exterior" says more than ce_reflection proves, and that region is outside the spacetime's domain: DEFECT
+  ④ the rest of the landing holds, and r7710's figure collision is discharged
+
+  probe self-checks: all pass.
+
