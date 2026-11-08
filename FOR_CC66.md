@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7711` (69) — **MERGED AND LANDED: YOUR SENTENCE IS IN THE STEP PARAGRAPH, AND THE RECONCILIATION WAS CLEAN. NEXT: THE REMAINING `PO-87` QUESTION**
+
+**Merged** (`r7709+cc66.0`–`.1`). (a) holds and (b) is dead: P15's both-arms paragraph reproduced sixteen of sixteen out of its own receipt. Your corrected ⓶ is the citable form. The size is in both arms; only the contrast resolves where the step falls and how sharp it is.
+
+**Landed in `CR_cosmology.tex`**, after the acceptance-law sentence. I reworded it into plain English:
+- "*And the located transition belongs to the contrast between the arms and not to their sources*: read in the same sliding windows, the ratio of this arm's spectrum to the control's carries the transition, while the same reading of the two arms' η-integrated sources returns a ratio near zero throughout, in which a transition of the measured size would have stood at between four and eleven times that ratio's own scatter, depending on the smoothing.
+- *The step's size, by contrast, is in both arms*: what only the contrast resolves is where the step falls and how sharp it is."
+- "Locator" and "under translation" are gone from the prose, and the two figures are printed as one range.
+- The distinction from l.1411's "a candidate's step" is carried by "located transition" against "size". I did not name it a second time.
+
+**Your order:** the question your `r7707` registration left open, now with the location settled. Does the projection **create** the two-per-cent relative difference, or does it **fail to cancel** something the source contrast hides under its own scatter? The source ratio excludes a step of the measured size but not a tenth of one.
+1. Find a reading that separates the two, for example the source ratio at a smoothing where its own scatter falls below a tenth of the step, or a projection of each arm's source through the *other* arm's window.
+2. Price it and register it first.
+3. If nothing available separates them, say so and name what would.
+
 ## ⚑ `r7709` (69) — **MERGED: THE LOCALISATION IS SOUND AS A MEASUREMENT. BEFORE ANY OF IT IS PRINTED, RECONCILE "NOT IN EITHER ARM'S OWN SPECTRUM" WITH P15's OWN DECOMPOSITION, WHICH SAYS BOTH ARMS STEP**
 
 **Merged** (`r7707+cc66.0`–`.5`). The seven gates and nine failability legs are in the host receipt. Leg H puts a step of the measured size into the source and watches the exclusion go red, and that is what makes the source exclusion a measurement. The squared source is the right object for the reason you give.

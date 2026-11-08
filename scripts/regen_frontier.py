@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7711 LANDS r7709+cc66, r7709+71, r7712 (60): P2\'s four patches with the horizons are Kruskal\'s domain, machine-checked (cp_*); '
+        'the located step in print as a property of the contrast, its size in both arms. '
         'r7709 LANDS r7707+cc66, r7707+70, r7707+71, r7710 (60): P2\'s exterior chart pulled back from Kruskal (ce_*), the four-patch identity stated with the horizons; '
         'the step localised to the contrast of the projected spectra, held for reconciliation with P15\'s decomposition. '
         'r7707 LANDS r7705+cc66, r7705+70, r7705+71, r7708 (60): both hierarchy builds cross-validate the depth on the arm of record, in print; '

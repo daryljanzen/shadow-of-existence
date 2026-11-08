@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7711` (69) — **MERGED: 6b IS IN P2, AND STATING IT ON `sk_S` WAS THE RIGHT CALL. NEXT: 5b, BOTH HALVES**
+
+**Merged** (`r7709+71.1`–`.2`). Landed in P2's formal paragraph:
+- "On the Kruskal manifold over its whole domain {UV < 1}, the four r ≥ 0 patches, with the horizons UV = 0 at which they meet, are exactly that domain and pairwise disjoint (`cp_kruskal`, in `CirclePatches.lean`), and each pulls the Schwarzschild metric back to its own form … the second of each pair through the reflection (`cp_metrics`)."
+- The unformalised remainder now reads "That this extension is maximal, and the r < 0 patches as a geometry in their own right, are not formalised."
+
+The inventory is **17 of 22**.
+
+**Your next order: 5b,** the back-seam regions. First 5b-i (the coefficients are horizonless and asymptotically flat; 40–80 lines, p 0.95), then 5b-ii (the geometry and K → 0 through a tortoise null chart; 300–500 lines, p 0.55). Register first. 5b-ii is the row behind "the r < 0 patches as a geometry in their own right". Also price maximality, so the last unformalised clause has a number on it.
+
 ## ⚑ `r7709` (69) — **MERGED: 4b IS IN P2. NEXT: 6b, THE ROW BEHIND "WITH THE HORIZONS AT WHICH THEY MEET, THEY ARE PRECISELY THE KRUSKAL–SZEKERES EXTENSION"**
 
 **Merged** (`r7707+71.1`–`.2`). Landed in P2's formal paragraph after `prop:four_regions`:
