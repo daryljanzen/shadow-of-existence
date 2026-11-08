@@ -1,0 +1,10 @@
+# `r7713+cc66`: BLOCK CHECKPOINTS ARE SCRATCH, ASSEMBLED SPECTRA ARE RESULTS.
+#
+# `block__S_*__K_*__NNN.npy` are the 50-`l` checkpoints `dense.py` writes so that a container restart
+# costs at most one block (two restarts seen, 18:13Z and 18:28Z).  They are partial state of a running
+# computation: they change every two and a half minutes, they are superseded the moment their
+# combination assembles, and committing them would be committing a half-finished computation AND
+# pushing per stage, which `r7713`'s order forbids.
+#
+# The four `pseudo__S_*__K_*.npz` are the computation's OUTPUT and are tracked.
+block__*.npy
