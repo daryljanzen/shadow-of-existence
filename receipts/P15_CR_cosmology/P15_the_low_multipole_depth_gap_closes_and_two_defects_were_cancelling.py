@@ -1024,6 +1024,134 @@ check("\u26ed `r7699` ** SO ALL FOUR TERMS CHANGE their one place between the tw
       and tuple(_r1(_per8[_l])[0] for _l in range(2, 6)) == ('-2.6', '0.7', '2.1', '1.2'),
       "; ".join(f"l={_l}: {_r1(_perex[_l])[0]} -> {_r1(_per8[_l])[0]}" for _l in range(2, 6)))
 
+# ===================================================================================================
+# ⛭⛭ `r7703+70`, ON 69's ORDER (r7703 item 3), WITH cc66's READ AT `r7705`: ** THE CROSS-VALIDATION IS
+#   CONVERGED ON THE ARM OF RECORD, BOTH BUILDS, AND EACH BANK'S PAIRING AND NUMERICS ARE READ FROM ITS
+#   OWN CONFIG FIRST. **
+#   `r7701+70` swept DECOUPLED and FROZEN on (L) in three knobs: DECOUPLED did not move, FROZEN's default
+#   NS3 900 was ~3 per cent short at l = 4.  `r7703+70` converged FROZEN (NS3 1800 / 2400 and their h^2
+#   limit) at both points and on the control.  ⛔ NS3 >= ~3000 is not a rung: at 3600 the mode at the
+#   HKCAP edge blows up finitely and the harness returns r = 1, so a finer count is not safer here.
+# ⛭ `r7705+cc66` — THREE THINGS ADDED BY THE READ, NONE OF THEM TO 70's FIGURES, WHICH ALL STAND:
+#   ⒜ the rows of the HIERARCHY bank get their pairing asserted.  `r7697` asserted arm A's bank and that
+#      bank only, so every DECOUPLED and FROZEN `(L)` row this receipt reads -- the printed ones included
+#      -- was being read on the strength of its key's spelling.  ⇒ *A filename is a claim about a run;
+#      the pairing is a fact of it.  That holds per BANK and per ROW, and `r7697` got it for one bank.*
+#   ⒝ the two "0.00 per cent" knobs are restated at the bank's OWN RESOLUTION.  Every row in this family
+#      is stored to four decimals, so the finest move the bank can express at l = 4 is 0.029 per cent and
+#      a `5e-5` bound is 5.8x finer than that: it could only ever pass as an exact equality of quantised
+#      numbers.  ⛔ *A tolerance finer than its data's last place is not a tolerance.*
+#   ⒞ the SAME THREE KNOBS ON THE FROZEN ROWS are read, which the routed block did not.  They are the
+#      two-sided control, and they are what turns a zero into a measurement.
+_CVP = os.path.join(SPEC, 'p15_lowell_depths_leafpert_convergence_leafrec1.npz')
+_FCP = os.path.join(SPEC, 'p15_lowell_depths_frozen_converged_leafrec1.npz')
+for _pth in (_CVP, _FCP):
+    check(f"⛭ `r7703` the bank `spectra/{os.path.basename(_pth)}` is present", os.path.exists(_pth),
+          os.path.basename(_pth))
+_CVZ = np.load(_CVP, allow_pickle=True)
+_FCZ = np.load(_FCP, allow_pickle=True)
+_CVC = json.loads(str(_CVZ['config'].item()))
+_FCC = json.loads(str(_FCZ['config'].item()))
+_LBC = json.loads(str(_LBZ['config'].item()))
+_CVR = ('ntau_x2', 'ns3_half', 'klo_0_02')
+check("⛭⛔ `r7703` ** BOTH BANKS SAY OF THEIR OWN ROWS THAT THEY ARE (L) AND RECORD THEIR NUMERICS: "
+      "`SPLITCLOCK` is `L` on every DECOUPLED convergence row and every converged FROZEN (L) row, "
+      "`STACKPERT` unset, and each such row names its `NS3` **",
+      all(_CVC['SPLITCLOCK'].get(f'distances__armB_decoupled__L__{_k}') == 'L' for _k in _CVR)
+      and all(_FCC['SPLITCLOCK'].get(f'{_p}__armB_frozen__L__{_r}') == 'L'
+              for _p in ('distances', 'refit') for _r in ('NS3_1800', 'NS3_2400', 'h2'))
+      and _CVC.get('STACKPERT') is None and _FCC.get('STACKPERT') is None
+      and all(_FCC['numerics'][_k].get('NS3') is not None for _k in _FCC['numerics']),
+      f"rows {len(_FCC['numerics'])} with NS3; STACKPERT {_CVC.get('STACKPERT')!r}/{_FCC.get('STACKPERT')!r}")
+_LBR = ('distances__armB_decoupled__L', 'distances__armB_frozen__L', 'refit__armB_decoupled__L')
+check("⛭⛔ `r7705` ** AND SO DOES THE HIERARCHY BANK, ON EVERY ROW THIS RECEIPT READS -- which `r7697` "
+      "never asked it: `SPLITCLOCK` is `L` on the two printed `(L)` rows AND on the refit row the block "
+      "above reads, `STACKPERT` unset, and arm A's own refit row carries it too ** ⇒ *`r7697` put "
+      "this question to arm A's bank and to that bank alone, so the DEPTHS IN PRINT were being read on "
+      "the strength of a key's spelling.  The pairing is a fact of a RUN -- one assertion per bank and "
+      "per row, not one per family*",
+      all(_LBC.get('SPLITCLOCK', {}).get(_k) == 'L' for _k in _LBR)
+      and _LBC.get('STACKPERT') is None
+      and _LAC.get('SPLITCLOCK', {}).get('refit__armA__L') == 'L'
+      and all(_CVC['SPLITCLOCK'].get(f'distances__armB_frozen__L__{_k}') == 'L' for _k in _CVR),
+      "; ".join(f"{_k.split('__', 1)[1]}={_LBC.get('SPLITCLOCK', {}).get(_k)!r}" for _k in _LBR)
+      + f"; armA refit={_LAC.get('SPLITCLOCK', {}).get('refit__armA__L')!r}")
+# ⛭ `r7705+cc66`: the bank's own last place, measured and not assumed -- the floor every "it did not
+#   move" below is read against.  At l = 4 one last-place step is 1e-4 / 0.3433 = 0.029 per cent.
+_Q4K = [_k for _k in _CVZ.files if _k not in ('config', 'manifest', 'ells')]
+_RES = {_l: 1e-4 / _LDEC[_l] for _l in range(2, 9)}
+check("⛭⛔ `r7705` ** THE ROWS ARE STORED TO FOUR DECIMALS, SO THE BANK'S FINEST EXPRESSIBLE MOVE AT "
+      "l = 4 IS 0.029 PER CENT -- 5.8 times COARSER than the `5e-5` the routed bound asked for ** "
+      "⇒ *so that bound could only ever pass as an exact equality of quantised numbers, and the "
+      "three knobs below are each stated at what this bank can actually say.  A tolerance finer than "
+      "its data's last place is not a tolerance*",
+      all(np.array_equal(np.asarray(_CVZ[_k], float), np.round(np.asarray(_CVZ[_k], float), 4))
+          for _k in _Q4K)
+      and abs(_RES[4] - 2.913e-4) < 2e-7 and _RES[4] / 5e-5 > 5.5,
+      f"{len(_Q4K)} rows exactly 4-dp; floor at l=4 {100 * _RES[4]:.4f}%, "
+      f"{_RES[4] / 5e-5:.1f}x the routed 5e-5")
+_CVE = list(np.asarray(_CVZ['ells'], int))
+_RB = {'decoupled': _LDEC, 'frozen': _LFRO}
+_MV = {_b: {_k: {_l: float(np.asarray(_CVZ[f'distances__armB_{_b}__L__{_k}'], float)[_CVE.index(_l)])
+                 / _RB[_b][_l] - 1.0 for _l in range(2, 9)} for _k in _CVR} for _b in _RB}
+# ⛔ "under the floor" is NOT a small number: it is EQUALITY of the stored rows at every l = 2-8, i.e.
+#   the bank cannot express any move at all.  *Writing it as `< 0.5 * floor` would have reintroduced
+#   exactly the sub-last-place bound this block is correcting.*
+_FLAT = {_b: {_k: all(float(np.asarray(_CVZ[f'distances__armB_{_b}__L__{_k}'], float)[_CVE.index(_l)])
+                      == _RB[_b][_l] for _l in range(2, 9)) for _k in _CVR} for _b in _RB}
+print("\n  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against "
+      f"a bank floor of {100 * min(_RES.values()):.3f}-{100 * max(_RES.values()):.3f}%")
+for _b in ('decoupled', 'frozen'):
+    print(f"    {_b:10s} " + "   ".join(
+        f"{_k}: {100 * max(abs(_MV[_b][_k][_l]) for _l in range(2, 9)):6.3f}%"
+        f"{' (under the floor)' if _FLAT[_b][_k] else ''}" for _k in _CVR))
+check("⛭⛔ `r7705` ** THE DOUBLED OPACITY GRID MOVES NEITHER BUILD ABOVE THE BANK'S FLOOR, so what it "
+      "licenses is `under 0.03 per cent on both`, not a `5e-5` convergence of one ** ⇒ *the knob "
+      "is live in the INSTRUMENT -- `HIER` reads `NTAU` as the opacity grid's point count -- so this is "
+      "a limit of the BANK, and the honest sentence names both builds and the floor*",
+      _FLAT['decoupled']['ntau_x2'] and _FLAT['frozen']['ntau_x2'],
+      f"DEC {100 * max(abs(_MV['decoupled']['ntau_x2'][_l]) for _l in range(2, 9)):.4f}%, "
+      f"FRO {100 * max(abs(_MV['frozen']['ntau_x2'][_l]) for _l in range(2, 9)):.4f}%")
+check("⛭⛭⛔ `r7705` ** AND ONE KNOB DISCRIMINATES, WHICH IS WHAT MAKES DECOUPLED'S ZERO A MEASUREMENT: "
+      "halving the late step count leaves DECOUPLED under the floor and moves FROZEN by 10.0 PER CENT "
+      "at l = 4 ** ⇒ *so the same environment reaches both builds, `NS3` is in DECOUPLED's own "
+      "numerics (60000 -> 30000) and the build is CONVERGED in it.  Without this row a `0.00 per cent` "
+      "reads the same whether the build is insensitive or the knob never arrived*",
+      _FLAT['decoupled']['ns3_half'] and abs(_MV['frozen']['ns3_half'][4]) > 0.05
+      and _CVC['numerics']['distances__armB_decoupled__L__ns3_half'].get('NS3') == 30000,
+      f"DEC under floor; FRO l=4 {100 * _MV['frozen']['ns3_half'][4]:+.2f}%, "
+      f"largest {100 * max(abs(_MV['frozen']['ns3_half'][_l]) for _l in range(2, 9)):.2f}%")
+check("⛭ `r7705` ** AND THE FIVE-FOLD DEEPER CONTINUUM MOVES BOTH BUILDS, above the floor and so "
+      "resolvable, by 0.360 and 0.366 per cent -- under the 0.4 per cent the routed bound asks **",
+      not _FLAT['decoupled']['klo_0_02'] and not _FLAT['frozen']['klo_0_02']
+      and all(max(abs(_MV[_b]['klo_0_02'][_l]) for _l in range(2, 9)) < 0.0040 for _b in _RB),
+      "; ".join(f"{_b} {100 * max(abs(_MV[_b]['klo_0_02'][_l]) for _l in range(2, 9)):.3f}%" for _b in _RB))
+_FCE = list(np.asarray(_FCZ['ells'], int))
+_FCV = {_p: {_l: float(np.asarray(_FCZ[f'{_p}__armB_frozen__L__h2'], float)[_FCE.index(_l)]) for _l in range(2, 9)}
+        for _p in ('distances', 'refit')}
+_FC24 = {_l: float(np.asarray(_FCZ['distances__armB_frozen__L__NS3_2400'], float)[_FCE.index(_l)])
+         for _l in range(2, 9)}
+_ARMR = {_l: float(np.asarray(_LAZ['refit__armA__L'], float)[_LE.index(_l)]) for _l in range(2, 9)}
+_LDER = {_l: float(np.asarray(_LBZ['refit__armB_decoupled__L'], float)[_LE.index(_l)]) for _l in range(2, 9)}
+_REF = {'distances': (_ARMA, _LDEC), 'refit': (_ARMR, _LDER)}
+_FA = {_p: max(abs(_FCV[_p][_l] / _REF[_p][0][_l] - 1.0) for _l in range(2, 9)) for _p in _FCV}
+_FD = {_p: max(abs(_FCV[_p][_l] / _REF[_p][1][_l] - 1.0) for _l in range(2, 9)) for _p in _FCV}
+_F9 = abs(_FCV['distances'][4] / _LFRO[4] - 1.0)
+print("  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)")
+for _p in _FCV:
+    print(f"    {_p:9s} " + " ".join(f"l{_l}:{100 * (_FCV[_p][_l] / _REF[_p][0][_l] - 1):+6.2f}" for _l in range(2, 9)))
+check("⛭ `r7703` the converged FROZEN row is converged: NS3 2400 sits within 0.4 per cent of the h^2 limit "
+      "at every l", max(abs(_FC24[_l] / _FCV['distances'][_l] - 1.0) for _l in range(2, 9)) < 0.004,
+      f"{100 * max(abs(_FC24[_l] / _FCV['distances'][_l] - 1.0) for _l in range(2, 9)):.2f}%")
+check("⛭⛔ `r7703` ** AND THE BANKED NS3 900 FROZEN ROW WAS NOT: converging it moves l = 4 by about "
+      "3 per cent, which is the departure the struck scope sentence read as the frozen build's **",
+      0.02 < _F9 < 0.045, f"{100 * _F9:.2f}%")
+check("⛭⛔ `r7703` ** CONVERGED, FROZEN (L) IS WITHIN 3.2 PER CENT OF ARM A (L) AND 1.9 PER CENT OF "
+      "DECOUPLED AT EVERY l = 2-8, AT BOTH POINTS -- so on the arm of record BOTH builds cross-validate "
+      "the exact transfer, and the minimum at l = 4 and recovery by l = 8 hold on each **",
+      all(_FA[_p] < 0.032 and _FD[_p] < 0.019 for _p in _FCV)
+      and all(min(range(2, 9), key=lambda _l: _FCV[_p][_l]) == 4 and _FCV[_p][8] > 0.99 for _p in _FCV),
+      "; ".join(f"{_p}: A {100 * _FA[_p]:.2f}%, DEC {100 * _FD[_p]:.2f}%" for _p in _FCV))
 # =================================================================================================
 print()
 print(BAR)

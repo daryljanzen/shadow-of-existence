@@ -15,6 +15,95 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7705+cc66` — **70's BLOCK IS IN AND THE RECEIPT IS GREEN. THE READ TURNED UP THREE THINGS, ONE OF THEM A CORRECTION TO A SENTENCE IN PRINT**
+
+**Both items done.** Every one of 70's figures and claims stands: converged FROZEN `(L)` within `3.17` per
+cent of arm A `(L)` at `l = 4` and `1.81` per cent of DECOUPLED at `l = 3` (`3.07` / `1.75` at the refit
+point), the minimum at `l = 4` and recovery by `l = 8` on each row, `NS3` 2400 within `0.38` per cent of
+the `h^2` limit, the banked `NS3` 900 row `3.23` per cent off at `l = 4`. The block sits at l.1027–1153,
+where its routed diff put it. The receipt: **`101` OK, `0` FAIL, `338` s** against a baseline of `90` OK,
+`331` s.
+
+### ⛭ WHAT THE READ ADDED — three gates, and none of them touches 70's numbers
+
+**⒜ THE HIERARCHY BANK'S PAIRING, AND IT IS LARGER THAN I REGISTERED.** I registered "the refit rows are
+read without their pairing asserted". It is worse: **`r7697` put that question to arm A's bank and to that
+bank alone.** The hierarchy bank's `config` was never opened by this receipt, so every DECOUPLED and FROZEN
+`(L)` row it reads — **the depths in print included** — was being read on the strength of its key's
+spelling. Now asserted on the hierarchy bank's three rows, arm A's refit row, and the convergence bank's
+FROZEN rows. *One assertion per bank and per row, not one per family.*
+
+**⒝ A BOUND FINER THAN ITS DATA.** Every row in this bank family is stored to **four decimals** — measured,
+182 values across four banks — so the finest move the bank can express at `l = 4` is `1e-4 / 0.3433 = 0.029`
+per cent. The routed `5e-5` bound is **5.8 times finer than that**: it could only ever pass as an exact
+equality of quantised numbers. ⛔ *A tolerance finer than its data's last place is not a tolerance.* Each
+knob now says what this bank can say, and "under the floor" is written as EQUALITY of the stored rows, not
+as a small number — writing it as `< 0.5 x floor` would have put the sub-last-place bound straight back.
+
+**⒞ THE SAME THREE KNOBS ON THE FROZEN ROWS, which the block did not read.** They are the two-sided
+control, and they split the three knobs into three different facts:
+
+| knob | DECOUPLED `(L)` | FROZEN `(L)` | what it licenses |
+|---|---|---|---|
+| `ntau_x2` | under the floor | **under the floor** | ⛔ *nothing about one build.* Neither moves, so the knob distinguishes nothing here. It is live in the INSTRUMENT (`HIER` reads `NTAU` as the opacity grid's point count), so this is a **limit of the bank**. |
+| `ns3_half` | under the floor | **`-10.04` per cent at `l = 4`** | ✔ **the control.** The same environment reaches both builds, `NS3` is in DECOUPLED's own `numerics` (`60000 -> 30000`), and the build is **converged** in it. |
+| `klo_0_02` | `0.360` per cent | `0.366` per cent | ✔ live, resolvable, under the `0.4` per cent asked — ⛔ *and a MOVE, which the paper calls a non-move.* |
+
+**The registered prediction held** (FROZEN at least 1 per cent at `l = 4`; measured `10.04`). **The third
+outcome I registered in advance — that `NS3` might not enter the decoupled integrator — is ruled out:** it
+enters and the build is converged in it. ⚠ **But that outcome's SHAPE turned up on a different knob in a
+different form:** not "the knob never arrived" but "the bank cannot see it", and `ntau_x2` is where it
+landed. *Naming a third outcome before measuring is what made it recognisable somewhere I had not expected
+it.*
+
+### ⌗ ITEM 2 — THE SCOPE SENTENCE, AND TWO THINGS TO SEE BEFORE LANDING
+
+Drafts with each figure's licence are in
+`computations/beyond_the_wall/r7705_cc66_the_converged_cross_validation_into_the_receipt/DRAFTS.md`.
+The convergence clause goes to **"swept on the arm of record's own background"**, as ordered, and the
+build-of-record sentence goes to **both** treatments: decoupled agreeing with the exact transfer to `2.9`
+per cent, frozen to `3.2` per cent once its late step count is converged, the two agreeing with each other
+to `1.9` per cent, at both points. No prose-reading receipt is pinned to this sentence's wording — checked
+— so nothing needs patching alongside.
+
+1. ⛔ **One change is a CORRECTION.** The sentence in print says the depths *"do not move under a doubled
+   opacity grid, a halved late step count, or a further-extended continuum"*. The further-extended continuum
+   **does** move them, by `0.360` per cent — 70's own routed bound, twelve times the bank's resolution. The
+   draft reads "move by under four tenths of a per cent".
+2. ⚠ **One figure I did not pin, so the draft does not print it.** "The frozen build's larger departure was
+   its step count and not its treatment of the sectors" is carried by two pinned numbers (`3.23` per cent
+   off its own limit, `3.17` per cent of arm A once converged). The figure that would state its SIZE — the
+   unconverged row's `6.2` per cent departure from arm A, 70's `r7695` figure — is **not computed by this
+   receipt and not in print.** If you want the size stated, it has to be pinned first, and I have not
+   pinned it.
+
+**Bookkeeping the landing mints,** named in advance this time because `r7697` minted two entries and I
+accounted for one: two new PROSE figures (`$3.2$`, `$1.9$` per cent) and one worded figure ("four tenths of
+a per cent") need rows in `corpus/figure_pin_baseline.tsv` in the pass that lands the prose. All three are
+pinned by a COMPARISON in the block, not by a regex over digits. **No quote-pin key and no absent-paper pin
+is minted** — and that is **measured, not reasoned**: `check_quote_pins` run on this tree (`rc 0`, the
+`595` s local cost paid rather than left to CI) reports *"no new key, no stale entry"*, `0` unadjudicated
+against ceilings of `60` / `102` / `2287`; `check_paper_pins_present` `rc 0`, no new absent PAPER pin, seed
+reading both ways. ⚠ *The reasoning alone would have been just as confident if the block's added source
+lines HAD minted a key — which is how `r7697`'s second bookkeeping entry went unaccounted.*
+
+### ⌗ FAILABILITY AND THE PRICE
+
+**Nine legs over a green control**, the block's source **read out of the receipt** rather than copied, so a
+passing leg is a statement about the text in the tree. The harness's control runs first — 11 checks, 0 red —
+because without it a leg's red is not evidence. ⛔ **Leg A, written first as a scale of `1/1.04`, reported
+`0` FAIL.** Not a harness fault: converged FROZEN sits `3.17` per cent *below* arm A at `l = 4`, so
+shrinking arm A shrank the departure to `+0.7` per cent and the bound rightly held. *The leg was perturbing
+TOWARDS the gate — which is what a leg reporting nothing always means.*
+
+**The price: the registered wire fired, and it fired on noise.** Registered under 2 s added, with "more
+than 5 s above `331` means the cost is not the block's and I say what it is". It landed `+7` s. ⇒ **The
+block's own cost, measured in isolation on the same banks, five reps: `7.3` ms.** Three orders under the
+bound; the `+7` s is `2.1` per cent run-to-run on a CAMB-and-solver receipt, which `BASELINE.md` named in
+advance as the reason one pair of timings cannot resolve 2 s. ⚠ *I started two further baseline reps to put
+a number on that spread and then stopped them: once a direct measurement of the block existed, an estimate
+of the noise around it was the weaker evidence and was costing eleven minutes of the box.*
+
 ## ⚑ THE DECISIVE RUN — **IT LANDS**, on every criterion the order stated but one
 
 *Ordered: crossing handover, no pin, one clock, $H_0=68.62$, $\Omega_m=0.2973$, both paths.
