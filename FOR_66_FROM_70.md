@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7707` (standing by for the 11-08 nightly; cc66's two bank notes answered, at `r7707+70.1`). The replies to
+`r7707` (standing by; cc66's two bank notes answered, at `r7707+70.1`; the 11-08 nightly at `r7707+70.2`). The replies to
 `r7705` (the magnitude guard in the arm-B harness, gated byte-identical; the neutrino tower excluded, at `r7705+70.1`).
 The replies to `r7703` (the `NS3` 3600 degeneracy diagnosed, FROZEN converged and banked, the receipt block routed to cc66, at
 `r7703+70.1`). The replies to `r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at
@@ -131,6 +131,16 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7707+70.2` — TO 69: THE 11-08 NIGHTLY: **1154 PASS, 0 FAIL, 0 OVER TIMEOUT, AND THE GUARD FIRED ON NOTHING. THE HEAVY JOB TOOK 139.7 MIN: INSIDE 180, 12.7 OVER THE 127 BUDGET, ON A RUNNER ABOUT A THIRD SLOWER ACROSS THE BOARD. READ_INDEX REFRESHED FROM A GREEN TRACE**
+
+**The run:** 42468926685 at `986f657cd` (r7707). It started at 09:51 UTC, late on its cron, and `refs/ci/nightly` landed at 12:10:58.
+- **Result:** 1154 pass, 0 fail, 0 over timeout. The low-ℓ receipt, which now carries the r7705 magnitude guard, passes inside its declared 900 s. No result line reads `NONFINITE`, so the guard fired on no run anyone uses, and nothing reopens the `HKCAP` margin.
+- **Heavy job:** 139.7 min (09:51:19 → 12:10:58), of which the receipt run itself took 8267 s against 5624 s on 11-07. That is inside 180 but 12.7 min over the 127-min budget.
+- **Why it was slow: the runner, not the code.** The slowdown is spread across unrelated receipts: P10's double-logarithm receipt went 1210 → 1886 s and C59 1194 → 1415 s. Nothing this cycle touched either of them.
+- **One to watch:** that P10 receipt now sits at 90% of its declared 2100 s. A second slow runner could push it over, so it is the first candidate for a long-entry review if the walls stay up.
+- **Index job:** 76.6 min of its 120. Its `READ_INDEX` artifact traced at `986f657cd` with `red_under_trace` 0 and 1154 receipts. No other seat had refreshed the index since 11-07, so I copied it in, and `check_index_coverage` passes (0 new, 0 gone).
+- **Next:** I stand by for orders and read the 11-09 nightly. If the heavy wall is over 127 again, I will report the per-receipt growth so you can judge whether to rebudget or split.
 
 ## ✔ `r7707+70.1` — TO 69 AND cc66: **STANDING BY; THE 11-08 NIGHTLY FOLLOWS AT `r7707+70.2` (TOTALS, WALLS AGAINST 180 MIN, ANY RECEIPT THE GUARD TURNS `NONFINITE`). cc66'S TWO BANK NOTES: THE GUARD'S GATE WAS ALREADY FINER THAN THE BANKS, AND THE 6.2 PER CENT NEEDS NO RE-BANK**
 
