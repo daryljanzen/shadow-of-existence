@@ -135,5 +135,14 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42483279710",
+    "since": "d01ac4823eff45e5dec8801db2dcf482fea34709",
+    "unmeasured": true
+   }
+  }
  }
 }
