@@ -286,8 +286,11 @@ def main():
         v = 'unlicensed'
         print("       ⛔ NO ROW OF THE TABLE IS SATISFIED, so nothing is printed as a verdict.")
         print("         The pattern is reported as measured and left uninterpreted.")
+    # ⌗ the agreement gate's result goes in the RECORD too, not only in the printed output: the json is
+    #   what a receipt would read, and a gate whose verdict exists only on a terminal is not recorded.
     json.dump(dict(control=ctl, live=True, resid=rrows, resid_frac=frac,
-                   rows=rows, verdict=v, own_sd=own['in_sd'],
+                   rows=rows, verdict=v, own_sd=own['in_sd'], own_half=own['half'],
+                   agree=ag, read_at={k: read_at(rows[k])['half'] for k in nm},
                    wall_s=round(time.time() - t0, 1)),
               open(os.path.join(HERE, 'analyse.json'), 'w'), indent=1)
     print(f"\n  wall {time.time() - t0:.1f} s")

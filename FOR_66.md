@@ -371,6 +371,78 @@ cannot see the account's runner concurrency or its minutes from here.
 answers is bad, say so and I will not launch again.*
 
 
+## ⛭⛔ `r7713+cc66` — **THE RESULT. ⒜ NOT RESOLVED — AND THE REAL FINDING IS THAT BOTH SINGLE DIFFERENCES REVERSED SIGN BETWEEN THE SPARSE READING AND THIS ONE**
+
+All four combinations exist on **every integer `l`** with `q ∈ [0.80, 3.10]` — `693` on the control kernel,
+`697` on the arm's. Combination one in this container; two, three and four on three CI runners under your
+`r7715` ruling. **The reading was made by `analyse.py`, committed and pushed while one of the four existed
+and the other three did not.** Full verdict in `VERDICT.md`.
+
+### ⛔⛔ THE HEADLINE — THE SPARSE READING'S SIGN WAS NOT STABLE UNDER SAMPLING
+
+| | at `87` `l` (`r7711`) | at `693`/`697` `l` (here, widest window) |
+|---|---|---|
+| own × own | `+0.0232` | `+0.0261` |
+| **kernel alone** | **`+0.0482`** | **`−0.0286`** |
+| **source alone** | **`−0.0277`** | **`+0.0481`** |
+
+⛔ **Both single differences changed sign.** `r7711`'s pattern pointed at *"the projection creates it"*;
+the dense pattern points, if anything, the other way — the **source** difference now carries the measured
+sign and is *larger* than own × own, while the **kernel** difference opposes it.
+
+⇒ **That is a finding about the sparse reading, not about the mechanism**, and it is the one thing this
+revision bought outright. ⌗ *`r7713+cc66.0` registered the thresholds in advance with the words "at low
+significance the pattern ALREADY looks like creates — that is exactly why the thresholds are written
+before the dense numbers exist." It looked like it. It was not it.* ⚠ **Neither sign is resolved, so the
+reversal licenses no verdict in the other direction either.**
+
+### ⚠ THE WELL-POSEDNESS TEST DID NOT REFUSE — BY `0.8` OF A PERCENTAGE POINT, AND I AM NOT CALLING THAT A PASS
+
+Registered refusal: the interaction residual's own step is `≥ 2` sd **and** `≥ 50` % of the own × own step.
+Measured: **`2.88`–`3.20` sd, and `49.19` %.**
+
+⛔ So it passes on the letter of a threshold I set myself, by less than a point. Recorded as *"not refused
+by this test"* and **not** as *"well posed"*: the two differences interact at essentially half the scale of
+the thing they would partition. ⌗ *`analyse.py` also says, correctly, that own × own is itself unresolved,
+so the partition's status is **NOT ESTABLISHED** rather than well posed — there is no resolved step to
+partition. That conditional is one of the three things `.10` added.*
+
+### ⛭ WHAT PASSED CLEANLY
+
+| | |
+|---|---|
+| **the control** | LIVE — swapping the kernel moves the pseudo-spectrum by `6.0` % / `6.3` % median, `17.5` % / `20.9` % max |
+| **the agreement gate** | all three ratios: same sign at every width, magnitudes inside the registered factor. ⇒ `r7711`'s first obstruction does **not** bite here |
+| **each runner's control** | required `≤1e-12` against the banked combination; the log I read directly shows **`0.000e+00`, byte-identical**. ⌗ *And all three must have passed, because the ref-push step runs only after the control step and only on success — a refused control could not have produced a ref* |
+
+### ⚠ AND YOUR REGISTERED GUARD FIRES AGAINST MY OWN ESTIMATE
+
+own × own reaches **`3.51` sd** at the widest registered window against the registered target of `5`.
+`r7713+cc66.0` said in advance what that means: *"my `1/√n` scaling was wrong and that is a finding about
+my estimate, not about the physics."* ⇒ **It was wrong.** `549` `l` was my estimate of what `5` sd needs;
+`693` of them deliver `3.51`.
+
+### ⛔ THE VERDICT, AND THE ONE REGISTERED WORD I WILL NOT USE
+
+**⒜ — not resolved.** Both single differences sit under `2` sd at the widest window (`1.47` and `1.92`), so
+no row naming a mechanism can be claimed.
+
+⚠ **⒜'s registered wording is "exhausted rather than under-sampled", and I am not using "exhausted".**
+Under-sampling is dead — *every integer `l` in the band is in this reading, which is what you ordered, and
+that excuse is gone for good.* What replaced it is not exhaustion of the physics but **a ceiling in the
+statistic**: `.10`'s measurement has the estimator saturating near `4.2` sd for a gradient-shaped step —
+cutting the scatter fivefold bought `0.36` sd — so a `5` sd bar may be unreachable on this construction
+whatever the data says.
+
+⇒ **Whether that closes the pseudo-spectrum route or only this estimator's use of it is YOURS**, and it is
+the question `.10` routed with four options and a recommendation. ⌗ *`r7715` cannot have ruled on it: it
+states it merges `.0`–`.8`, and `.10` came after. I have changed nothing in `r7711`'s slide.*
+
+⌗ *Compute: `1609` s on the runner I read, against my `1.05` h per combination estimate — the runners were
+faster than this container. The reading itself: `0.7` s. The registered `4.5` h compute bound was not
+approached in the end, because three of the four combinations were not computed here at all.*
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
