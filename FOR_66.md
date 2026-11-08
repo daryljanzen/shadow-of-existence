@@ -15,6 +15,66 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔ `r7713+cc66` — **THE DENSE READING IS BLOCKED BY THE ENVIRONMENT, NOT BY THE PHYSICS OR BY EITHER OBSTRUCTION I REGISTERED. THE DECISION IS YOURS AND I HAVE NOT ABSORBED IT**
+
+The registration and the instrument are in (`r7713+cc66.0`–`.3`) and the build runs and makes progress.
+**It will not finish here in any useful time, and the reason is measured rather than guessed.**
+
+### ⌗ WHAT IS MEASURED
+
+| | |
+|---|---|
+| container restarts observed | `18:13Z`, `18:28Z`, `18:42Z`, `18:53Z` — intervals **`15`, `14`, `11` min**, each confirmed from `/proc/uptime` and not inferred |
+| cost per block (`50` `l`) | `133`–`203` s, so about `2.5`–`3.4` min |
+| blocks delivered | **`2` in `27` minutes** of wall, against the `~9` those minutes of compute would buy |
+| blocks needed | `56` (`14` per combination × `4`) |
+| ⇒ projected wall at the observed duty cycle | **about `12` hours**, for **`2.25` hours of compute** |
+
+**The lost time is the gap between a restart and the next thing that starts the job.** Block checkpointing
+(`r7713+cc66.2`) fixed the *loss* — nothing completed is thrown away now — but it cannot fix the *idle*:
+after each restart nothing runs until a scheduled check fires, and a self-restarting wrapper
+(`r7713+cc66.3`'s successor, running now) only helps *within* a window, because the container restart
+takes the wrapper with it.
+
+### ⛔ AND SPEEDING THE KERNEL UP IS NOT AVAILABLE, FOR A REASON THAT IS ABOUT THE QUESTION AND NOT THE CODE
+
+I checked, before bringing this to you:
+
+- **Truncating `eta` to the visibility's support** buys only `~30` per cent — `399` of `560` points carry
+  `100.0000` per cent of the integral at `1e-6` of peak, and going to `1e-4` would cut `45` per cent but
+  change the integral by `7e-4`, which is the level the comparison itself lives at.
+- **Windowing `k` around each `l`, or an asymptotic `j_l`**, would cut the cost by a large factor. ⛔ **But
+  both change the kernel's numerics, and you asked whether the split seen at low significance SURVIVES.**
+  A dense reading through a different kernel does not answer that question — *it answers a different one,
+  and the comparison with the sparse reading would be between two instruments rather than two samplings.*
+
+⇒ **So the instrument cannot be made cheaper without breaking the like-for-like comparison the order is
+for.** That is why I am not quietly optimising it.
+
+### ⌗ WHAT WOULD ACTUALLY WORK — yours to choose, and I have started none of them
+
+1. **A CI job.** `2.25` hours of compute in a tier that is not recycled mid-run. The repo already runs a
+   `heavy` tier; whether a new job belongs there is an infrastructure call and therefore yours.
+2. **A session that is not recycled**, if one can be had for a few hours.
+3. **Accept the `12`-hour wall here**, with the check-ins carrying it and the blocks accumulating across
+   restarts. It *will* finish; it ties up this seat's attention for a working day to deliver one
+   discriminant.
+4. **Drop the target from `5` sd to something the windows can reach.** `549` `l` was my own estimate for
+   `5` sd; `3` sd needs about `250`, which is ~`20` blocks and plausibly a few windows. ⚠ *But `3` sd was
+   never the registered threshold, and lowering a bar after seeing the cost is the thing the registration
+   exists to prevent. **If you want this, order it; I will not choose it.***
+
+### ⌗ MEANWHILE
+
+The build keeps running and the blocks keep accumulating — nothing is wasted and nothing is at risk. Compute
+and wall are reported separately throughout: the registered `4.5` hour bound is on **compute**, and the
+restarts inflate only the **wall**, so the bound is not breached by any of this.
+
+⌗ *Three of this revision's four commits so far have fixed something about its own running rather than its
+physics — checkpoint granularity, the restart diagnosis, and what counts as an artefact worth keeping. The
+fourth would have been a quiet re-engineering of the kernel, and that is the one I am bringing to you
+instead.*
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
