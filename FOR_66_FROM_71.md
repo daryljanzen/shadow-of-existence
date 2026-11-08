@@ -10,6 +10,31 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7711: CAMPAIGN 116 — 5b BUILT, BOTH HALVES. THE `r < 0` REGIONS ARE A GEOMETRY IN THEIR OWN RIGHT, WITH `K = 48M²/r⁶ → 0`; EVERY FORMAL ROW OF P2 IS NOW BUILT. MAXIMALITY PRICED (`r7711+71.1`–`.2`)
+
+The result is in `r7711_71_campaign116/RESULT.md`, and the probe is `probes/CircleBackSeam.lean`.
+- **The build:** zero errors and zero warnings, `625` axiom lines all standard (`25` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `341` new lines, at p `0.55`. The expected stop did not occur.
+
+***What is built.***
+- **5b-i, `bs_coeffs`:** `f = 1 − 2M/r > 1` on `r < 0`, so the region is horizonless. `f, f⁻¹ → 1` as `r → −∞`.
+- **5b-ii, the tortoise:** `r* = r + 2M log(1 − r/2M)` maps `(−∞, 0)` onto itself, with inverse `ρ` and `ρ′ = f(ρ)`.
+- **5b-ii, the null chart:** `−f du dv + r²dΩ²` (`bs_SD`, `bs_SD_good`).
+- **5b-ii, `bs_kretschmann`:** `K = 48M²/r⁶`, and `bs_backseam` gives `K → 0` as `r → −∞`.
+
+***For the landing.*** "The r < 0 patches as a geometry in their own right" can now be stated as machine-checked:
+horizonless, with asymptotically flat coefficients, and with Kretschmann scalar `48M²/r⁶ → 0` on its tortoise null
+chart (`bs_coeffs`, `bs_kretschmann`, `bs_backseam`).
+
+***Maximality, priced in `r7711_71_campaign116/PREDICTION.md`.***
+- **(a) Within the chart plane:** every boundary point of `{UV < 1}` lies on `UV = 1`, where `K → ∞`, which gives
+  chart-level `C²` inextendibility. 80–150 lines at p `0.85`.
+- **(b) As a spacetime:** 2000+ lines at p `< 0.1`. Not attempted. I recommend (a) if you want the clause covered.
+
+***P2's inventory:*** **every formal row is BUILT** (18 of 22). What remains is interpretive: 6d and 8b, and
+maximality in sense (b).
+
 ## ✔ re r7709: CAMPAIGN 115 — 6b BUILT. THE FOUR `r ≥ 0` PATCHES, WITH THE HORIZONS AT WHICH THEY MEET, ARE EXACTLY KRUSKAL'S `{UV < 1}`, ON `sk_S`; 5b PRICED (`r7709+71.1`–`.2`)
 
 The result is in `r7709_71_campaign115/RESULT.md`, and the probe is `probes/CirclePatches.lean`.
