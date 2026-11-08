@@ -1,0 +1,120 @@
+==============================================================================
+SELF-TESTS -- every classifier and reader on BOTH of its classes, before use
+==============================================================================
+   ok  G2 accepts plain prose
+   ok  G2 accepts an escaped control sequence
+   ok  G2 accepts an escaped math delimiter
+   ok  G2 REFUSES a marker mixing prose with math
+   ok  skeleton: a plain ASCII name IS found
+   ok  skeleton: a name NOT on the page is NOT found
+   ok  skeleton: a name that is a PREFIX of another is not credited to it
+   ok  reader: mx_inextendible has a header
+   ok  reader: a declaration that does not exist reads as absent
+   ok  reader: decl_extent reaches a def's BODY, which lives after ":="
+   ok  reader: binders survive a type carrying parentheses
+   ok  subject classifier: a sentence about the curve reads as the curve
+   ok  subject classifier: a sentence about a metric on a chart reads as that
+   ok  subject classifier: a sentence about an abstract spacetime reads as that
+   ok  pair: same subject AND same conclusion is the SAME inference
+   ok  pair: same conclusion but DIFFERENT subject is NOT the same inference
+   ok  pair: same subject but different conclusion is NOT the same inference
+   ok  conclusion reader: an existential over a real-valued function reads as that
+   ok  conclusion reader: a conclusion naming a metric reads as a metric
+   ok  conclusion reader: the C1 regularity of a CHART MAP is NOT a metric statement
+   ok  bounds reader: "bounds the metric in its chart and not the curve" bounds the metric
+   ok  bounds reader: the SAME clause written the other way round bounds the curve
+   ok  G6: the maximality sentence is one line only after flattening
+
+==============================================================================
+ARM 1 -- WHAT P2's THESIS ACTUALLY CLAIMS, located BY ITS TEXT
+      (the order gives line numbers; those are numbers in a file edited since,
+       and this seat has been bitten by exactly that)
+==============================================================================
+   ok  located by text: the falsification paragraph
+   ok  located by text: the inference as the paper states it
+   ok  located by text: the gloss on "inextendible boundary"
+   ok  located by text: the standard reading, conceded in full
+
+    THE SUBJECT OF THE REFUTED INFERENCE, read from the paper's own gloss:
+      the step from the curvature divergence at $r=0$ to the conclusion that no continuation through it exists
+      -> subject reads as: curve
+   ok  the refuted inference's conclusion is about a CONTINUATION, i.e. the curve, and not about a metric
+
+    AND WHAT THE PAPER ALREADY CONCEDES ON THE METRIC SIDE, in its own words:
+      "...the curve is extendible, the spacetime is not"
+   ok  the paper itself states that no regular Lorentzian extension crosses the divergence, on the standard reading
+
+==============================================================================
+ARM 2 -- THE "ARTEFACT" CLAIM, WHICH IS WHERE I REGISTERED THAT I MIGHT BE WRONG
+      A scalar INVARIANT cannot be a chart artefact, so either the paper means
+      something narrower, or its own thesis is in trouble before any Lean file.
+==============================================================================
+   ok  prop:Kretschmann is located by text
+    Expressed as a function of $z$, the Kretschmann scalar $K(z)$ has a twelfth-order pole at $z = \pi$ and remains bounded at $z = 0$.
+   ok  ⚑ prop:Kretschmann ASSERTS the pole rather than denying it, so the paper does NOT claim the divergence is absent
+   ok  and the abstract states the artefact claim RELATIVE TO A METRIC, granting the divergence is "real as that metric's"
+   ok  and elsewhere the paper says the incompleteness is real and NOT a mere chart artefact, in those words
+    ⌗ READING: the paper's "artefact" is an answer to WHICH METRIC CARRIES THE
+      INVARIANT, not to whether the scalar diverges. The registered worry is NOT
+      borne out, and the arm survived because it was built to read the proposition.
+
+==============================================================================
+ARM 3 -- WHAT THE THREE DECLARATIONS ACTUALLY STATE
+==============================================================================
+    mx_frontier: theorem mx_frontier : closure sk_kM = {p : P | p.1 * p.2 ≤ 1} ∧ frontier sk_kM = {p : P | p.1 * p.2 = 1}
+   ok  mx_frontier exists
+   ok  mx_frontier is cited in P2 (by SKELETON)
+    mx_blowup: theorem mx_blowup (hM : 0 < M) {θ φ : ℝ} (hθ : Real.sin θ ≠ 0) {p : P} (hp : p ∈ frontier sk_kM) : (𝓝[sk_kM] p).NeBot ∧ Filter.Tendsto (mx_K M θ φ) (𝓝[sk_kM] p) Filter.atTop
+   ok  mx_blowup exists
+   ok  mx_blowup is cited in P2 (by SKELETON)
+    mx_inextendible: theorem mx_inextendible (hM : 0 < M) {θ φ : ℝ} (hθ : Real.sin θ ≠ 0) {p : P} (hp : p ∈ frontier sk_kM) : ¬∃ G : P → ℝ, ContinuousAt G p ∧ ∀ᶠ y in 𝓝[sk_kM] p, G y = mx_K M θ φ y
+   ok  mx_inextendible exists
+   ok  mx_inextendible is cited in P2 (by SKELETON)
+
+   ok  mx_frontier states the FRONTIER OF A SET -- frontier {UV<1} = {UV=1} -- which is what "the only boundary ... is the hyperbola" says
+   ok  ⌗ and it does NOT state "where r = 0": that identification is the LIMIT inside mx_blowup's chain and not a conclusion of mx_frontier
+   ok  mx_blowup is approached FROM INSIDE -- the within-domain filter, asserted non-trivial -- and the scalar tends to +infinity
+   ok  and the scalar is the KRUSKAL chart's: mx_K is kr_K of (kr_SD M).gW
+
+  ⛔ AND THE STEP THE PROSE TAKES THAT NO DECLARATION STATES:
+    mx_inextendible's conclusion quantifies over ..... a real-valued function
+   ok  mx_inextendible concludes about a REAL-VALUED FUNCTION -- no continuous G agrees with the scalar near the frontier point -- and names no metric at all
+    NAMED SEARCH for a declaration about a METRIC extension -- mx_C2, mx_ext, mx_extension, mx_metric_inextendible, mx_no_extension, mx_maximal, mx_inext_metric: NOT FOUND over all seven names
+    (regularity statements about MAPS and not metrics, from the earlier campaign, listed so they are not silently counted: ['mx_fA_contDiff'])
+    AND BY SHAPE over all 36 mx_ theorems and lemmas in the file (the prefix is reused by an EARLIER campaign in another namespace, so the search is wider than this landing): none states the C2 regularity of an extension of a metric
+   ok  so "and therefore no $C^{2}$ extension of the metric" is the PROSE's step: sound mathematics, but no cited declaration states it, while the parenthesis attaches to the whole sentence
+
+==============================================================================
+ARM 4 -- THE COLLISION QUESTION, DECIDED ON THE PAIR AND NOT ON THE PREMISE
+==============================================================================
+   ok  the new sentence is at source, verbatim
+   ok  and its separating clause is at source, verbatim
+
+    THE REFUTED INFERENCE: subject 'curve', conclusion 'no continuation exists'
+    THE ASSERTED INFERENCE: subject 'metric-on-chart', conclusion 'no continuous extension of the scalar'
+   ok  the two are NOT the same inference -- they differ in BOTH members, and sharing the Kretschmann premise does not make them one
+   ok  and the separating clause names the subjects they differ in, in the paper's own words -- what it BOUNDS is the metric on its chart, and what it declines to bound is the curve
+    the clause bounds ..... 'metric-on-chart', declining the curve
+   ok  which matches the thesis section's own formulation, located by text
+    ⌗ So the answer to the order's sharp question is NO COLLISION -- and it is the
+      pair that decides it, not the presence of the clause: a clause that ASSERTS a
+      distinction does not MAKE one, which is why both subjects were read.
+
+  ⚑ BUT ONE CHARACTERISATION ELSEWHERE IN P2 IS NOW UNDERSTATED BY THE PAPER'S
+    OWN RESULT, and this is the repair:
+   ok  P2 says, in the abstract, that what is left standing is the CURVATURE-INDEPENDENT inextendibility
+    "curvature-independent" / "curvature-free" occurs 4 times in P2, each characterising what survives the falsification
+   ok  and the new paragraph reaches inextendibility FROM the curvature, for the metric in its chart, so "the only surviving inextendibility is curvature-independent" is no longer the whole of what this paper establishes
+
+==============================================================================
+ITEM 5 -- THE REST OF THE LANDING
+==============================================================================
+   ok  5a this seat's offered word is landed: the two $r<0$ patches are EACH machine-checked
+   ok  5b the paragraph's last sentence is at source, verbatim
+   ok  its predecessor -- "That the Kruskal--Szekeres extension is maximal is not formalised" -- is gone from P2, which is what this landing checks
+   ok  and the file says the same in its own header, so prose and file agree on what is NOT claimed
+    5c CircleMaximal.lean: axiom tokens = 0; sorry = 0
+   ok  zero axiom tokens and zero sorry
+
+==============================================================================
+ALL ARMS AND SELF-CHECKS PASS.

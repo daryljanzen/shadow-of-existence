@@ -1,0 +1,2 @@
+c3cd9002 r7718 (60) -- REGISTER BEFORE MEASURING: does P2 now say both that the curvature inference fails and that it is machine-checked?
+origin/main = a3102b41 
