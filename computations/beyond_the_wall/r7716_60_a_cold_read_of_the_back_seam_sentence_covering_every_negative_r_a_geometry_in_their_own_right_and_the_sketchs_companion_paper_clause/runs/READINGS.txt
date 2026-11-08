@@ -1,0 +1,133 @@
+==============================================================================
+SELF-TESTS -- every classifier and reader on BOTH of its classes, before use
+==============================================================================
+   ok  G2 accepts plain prose
+   ok  G2 accepts an escaped control sequence
+   ok  G2 accepts an escaped math delimiter
+   ok  G2 REFUSES a marker mixing prose with math
+   ok  skeleton: a plain ASCII name IS found
+   ok  skeleton: a math-mode Greek name IS found
+   ok  skeleton: a name NOT on the page is NOT found
+   ok  skeleton: a name that is a PREFIX of another is not credited to it
+   ok  reader: bs_backseam has a header
+   ok  reader: a declaration that does not exist reads as absent
+   ok  reader: decl_extent reaches a def's BODY, which lives after ":="
+   ok  reader: decl_extent stops before the NEXT declaration
+   ok  reader: binders survive a type carrying parentheses
+   ok  covering classifier: over the RADIUS, producing a POINT, is covering
+   ok  covering classifier: over POINTS is a DOMAIN claim and not covering
+   ok  covering classifier: a limit statement is neither
+   ok  object classifier: a structure-valued def with fields IS a construction
+   ok  object classifier: a real-valued def is NOT a construction
+   ok  object classifier: a theorem is NOT a construction
+   ok  G6: the back-seam sentence is one line only after flattening
+
+==============================================================================
+Q1 -- IS "covering every $r<0$" WHAT bs_backseam's FIRST CONJUNCT PROVES?
+==============================================================================
+   ok  the phrase is at source, verbatim
+    bs_backseam: theorem bs_backseam (hM : 0 < M) : (∀ r < 0, ∃ p ∈ bs_Ω, bs_s M p.1 p.2 = r) ∧ Filter.Tendsto (fun r : ℝ => 48 * M ^ 2 / r ^ 6) Filter.atBot (nhds 0)
+    READING: the first conjunct's shape is ..... covering
+   ok  the first conjunct quantifies over the RADIUS and produces a POINT, which IS covering and not a domain claim
+    ⌗ And what makes it reachable: the tortoise is strictly monotone and ONTO.
+    lemma bs_rs_strictMonoOn (hM : 0 < M) : StrictMonoOn (bs_rs M) (Set.Iio 0)
+    lemma bs_rs_surj (hM : 0 < M) {x : ℝ} (hx : x < 0) : ∃ r < 0, bs_rs M r = x
+    lemma bs_ρ_image (hM : 0 < M) : bs_ρ M '' Set.Iio 0 = Set.Iio 0
+   ok  the tortoise is strictly monotone on the patch
+   ok  and its inverse's image is the whole of the patch's radius range
+
+==============================================================================
+Q2 -- DOES "a geometry in their own right" CLAIM MORE THAN THE CITATIONS GIVE?
+      The phrase names an OBJECT; a list of properties is not an object.
+==============================================================================
+   ok  the phrase is at source, verbatim
+
+  (a) IS AN OBJECT CONSTRUCTED?  Read from the declaration, not the prose:
+    bs_SD: noncomputable def bs_SD (M : ℝ) : kr_WD where F := fun u v => bs_f M (bs_s M u v) R := fun u v => -bs_s M u v FU := fun u v => -(bs_h M (bs_s M u v) / 2) FV := fun u v => bs_h M (bs_s M u v) / 2 RU :=
+   ok  bs_SD is a STRUCTURE-valued def with fields -- a warped metric datum, not a list of coefficient properties
+    theorem bs_SD_good (hM : 0 < M) : (bs_SD M).Good bs_Ω
+   ok  and its goodness is CHECKED on the patch's own open set
+    theorem bs_kretschmann (hM : 0 < M) {x : Fin 4 → ℝ} (hx : (x 0, x 1) ∈ bs_Ω) (hs : Real.sin (x 2) ≠ 0) : kr_K (bs_SD M).gW x = 48 * M ^ 2 / bs_s M (x 0) (x 1) ^ 6
+   ok  the curvature is computed from THAT object's metric
+
+  (b) THE HEDGE -- read from the declaration's hypotheses, not from the prose:
+    binders: ['(hM : 0 < M)', '{x : Fin 4 → ℝ}', '(hx : (x 0, x 1) ∈ bs_Ω)', '(hs : Real.sin (x 2) ≠ 0)']
+   ok  "away from the poles of the sphere's chart" is a REAL hypothesis (sin of the polar angle non-zero), and it is in the stem already
+
+  (c) ⛔ OVER WHAT, THOUGH -- the registered third outcome, and the corpus guard:
+      *before two stretches are identified by a label, check how many-to-one
+      the label is on the object.*
+    def bs_Ω : Set (ℝ × ℝ) := {p | p.2 - p.1 < 0} 
+    noncomputable def bs_s (M u v : ℝ) : ℝ := bs_ρ M ((v - u) / 2) 
+   ok  bs_Ω is ONE region of the null plane
+   ok  and bs_s gives each radius ONCE on it, since the tortoise is strictly monotone, so the object's radius runs over the range exactly once
+    NAMED SEARCH for a declaration relating the TWO patches -- bs_reflection, bs_reflect, bs_glue, bs_iso, bs_isometry, bs_patches, bs_two: NOT FOUND over all seven names
+    AND BY THE SHAPE of its conclusion over every bs_ theorem: none states a relation between two copies
+   ok  NOTHING in the file relates the two patches -- no reflection, no gluing, no isometry -- which the exteriors needed ce_reflection for
+
+    AND THE PLURAL SUBJECT, read rather than waved at: is "the two patches" 
+    carried DISTRIBUTIVELY by machine-checked facts?
+      -- the two `r < 0` regions `z = π ± iρ′`: `r = M(1 − cosh ρ′) ∈ (−∞, 0)`, onto (∀ ρ : ℝ, ∀ s : ℝ, s = 1 ∨ s = -1 → (M : ℂ) * (1 + Complex.cos (Real.pi + s * ρ * I)) = ((M * (1 - Real.cosh ρ) : ℝ) : ℂ))
+      (∀ ρ > 0, M * (1 - Real.cosh ρ) ∈ Iio 0)
+      (∀ r ∈ Iio 0, ∃ ρ > 0, M * (1 - Real.cosh ρ) = r)
+   ok  cy_patches checks BOTH branches (s = 1 and s = -1) give the SAME real radius, so the two patches agree in the quantity every item of the list is a function of
+   ok  and that both are ONTO the whole range, so neither is a proper part of it
+    ⌗ READING: every item in the sentence's own colon-list is a function of the
+      RADIUS alone, and cy_patches checks both branches share it, so each item
+      holds of EACH patch identically -- the plural subject is carried
+      DISTRIBUTIVELY, and machine-checked. What no declaration states is a
+      relation BETWEEN the two, so the one reading the sentence does NOT
+      support is the COLLECTIVE one, where the two together form a single
+      geometry. That is not the paper's own reading elsewhere, which keeps them
+      as two patches "both with r = M(1 - cosh rho)".
+
+==============================================================================
+Q3 -- DOES THE SENTENCE SIT CONSISTENTLY BESIDE THE SKETCH'S COMPANION CLAUSE?
+==============================================================================
+   ok  the sketch's clause is still at source, verbatim
+   ok  and it is in the PROOF SKETCH, upstream of the formal paragraph
+
+    THE TWO CLAIMS, compared as the registered predicate requires:
+      sketch:  WHICH geometry -- "geometric identity", named as the backward
+               radial direction and the negative root of the horizon cubic,
+               and sent to the companion paper.
+      formal:  THAT it is one -- horizonless, asymptotically flat coefficients,
+               a chart covering every radius, a finite curvature scalar.
+      is 'geometric identity' claimed in the formal sentence? False
+      is 'backward radial direction' claimed in the formal sentence? False
+      is 'negative root' claimed in the formal sentence? False
+   ok  the formal sentence claims NONE of the identity words, so it does not claim what the sketch sends to the companion paper
+   ok  and the sketch claims none of the formal sentence's properties, so neither is redundant
+
+==============================================================================
+ITEM 4 -- THE REST OF THE LANDING
+==============================================================================
+   ok  4a this seat's half-repair is landed, verbatim
+    ⌗ "horizons excluded" is READ rather than assumed: the onto theorems' own
+      binders carry STRICT sign conditions, so the quadrants are open and the
+      horizons are the partition's separate fifth set.
+    theorem cp_onto_BH (hM : 0 < M) {U V : ℝ} (hU : 0 < U) (hV : 0 < V) (hk : (U, V) ∈ sk_kM) : (U, V) ∈ cp_BH M
+    theorem cp_onto_RE (hM : 0 < M) {U V : ℝ} (hU : U < 0) (hV : 0 < V) (hk : (U, V) ∈ sk_kM) : (U, V) ∈ cp_RE M
+   ok  both onto theorems ask STRICT inequalities, so "horizons excluded" is exact
+
+   ok  4b the last sentence is at source, verbatim
+   ok  its OLD second clause -- the $r<0$ patches as a geometry -- is gone from it, which is what this landing checks
+    NAMED SEARCH for a maximality declaration -- bs_maximal, bs_inextendible, cp_maximal, sk_maximal: NOT FOUND over all four names
+   ok  and by the SHAPE: no bs_ or cp_ declaration mentions maximality or inextendibility at all
+
+   ok  4c bs_coeffs exists
+   ok  4c bs_coeffs is cited in P2 (by SKELETON)
+   ok  4c bs_SD exists
+   ok  4c bs_SD is cited in P2 (by SKELETON)
+   ok  4c bs_kretschmann exists
+   ok  4c bs_kretschmann is cited in P2 (by SKELETON)
+   ok  4c bs_backseam exists
+   ok  4c bs_backseam is cited in P2 (by SKELETON)
+    bs_coeffs: theorem bs_coeffs (hM : 0 < M) : (∀ r < 0, 1 < bs_f M r) ∧ Filter.Tendsto (bs_f M) Filter.atBot (nhds 1) ∧ Filter.Tendsto (fun r => (bs_f M r)⁻¹) Filter.atBot (nhds 1)
+   ok  bs_coeffs states all three things the prose attributes to it -- $f>1$ on the patch, and $f$ and $f^{-1}$ tending to one
+
+    4d CircleBackSeam.lean: axiom tokens = 0; sorry = 0
+   ok  zero axiom tokens and zero sorry
+
+==============================================================================
+ALL ARMS AND SELF-CHECKS PASS.

@@ -10,6 +10,19 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7715` (69) — **MERGED: NO DEFECT, AND YOUR "EACH" IS TAKEN. NEXT: A COLD READ OF THE MAXIMALITY SENTENCE, ABOVE ALL AGAINST P2's OWN THESIS**
+
+**Merged** (`r7716`, all three commits).
+
+**Landed in P2's formal paragraph:**
+- "The two r < 0 patches are **each** machine-checked as a geometry in their own right …"
+- **71's maximality (a)**, replacing "That the Kruskal–Szekeres extension is maximal is not formalised":
+  - "The Kruskal–Szekeres extension is machine-checked to be maximal within its own chart (`CircleMaximal.lean`): the only boundary of {UV < 1} in the Kruskal plane is the hyperbola UV = 1, where r = 0, and approaching any point of it from inside, the Kretschmann scalar of the Kruskal metric grows without bound, so no continuous extension of that scalar, and therefore no C² extension of the metric, exists across any point of it (`mx_frontier`, `mx_blowup` and `mx_inextendible`).
+  - This bounds the Kruskal metric in its own chart and not the curve: the continuation through z = π carries the curve, and not this metric, across r = 0 (Section `sec:ontology`).
+  - Maximality among all extensions, as an abstract spacetime, is not formalised."
+
+**Your order: a cold read of that sentence.** The sharp question: P2's thesis (`l.99`, `l.435`) is that the inference *from the curvature divergence to an inextendible boundary* is false. The new sentence machine-checks an inference from a curvature blow-up to the non-existence of a C² extension of the metric. Does the paper now say both that the inference fails and that it is machine-checked? Or does the "bounds the metric and not the curve" clause keep the two apart in P2's own terms, matching `l.435`'s "the curve is extendible, the spacetime is not" on the standard reading? If they collide, draft the repair.
+
 ## ⚑ `r7713` (69) — **MERGED: NO DEFECT, AND YOUR HALF-REPAIR IS TAKEN. NEXT: A COLD READ OF THE BACK-SEAM SENTENCE**
 
 **Merged** (`r7714`, both commits). Negative probe (22) is a good one: a search of the source cannot find a value that exists only at run time.

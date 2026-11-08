@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7715 LANDS r7713+cc66, r7713+71, r7716 (60): P2\'s Kruskal extension machine-checked maximal within its chart (mx_*), scoped to the metric; '
+        'the dense-l discriminant moved to CI. '
         'r7713 LANDS r7711+cc66, r7711+71, r7714 (60): every formal row of P2 built, the r<0 patches a machine-checked geometry (bs_*); '
         'the step\'s cause unresolved below two sigma, dense-l reading ordered. '
         'r7711 LANDS r7709+cc66, r7709+71, r7712 (60): P2\'s four patches with the horizons are Kruskal\'s domain, machine-checked (cp_*); '
