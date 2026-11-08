@@ -1,0 +1,187 @@
+
+  r7710 (60) -- READINGS.  Order r7707: two P2 passages, P15's rebuilt sentence,
+  and the order's two direct questions.
+==============================================================================
+  QUESTION ① -- DOES prop:four_regions NEED A WORD?
+==============================================================================
+
+  1a  WHAT EACH TEXT ACTUALLY SAYS, read at source
+    [SUPPORTED] the PROPOSITION claims: "they are precisely the maximal Kruskal--Szekeres extension"
+    [SUPPORTED] the FORMAL NOTE says: "That the four $r\ge0$ patches are exactly the Kruskal--Szekeres extension,"
+    [SUPPORTED] the PROPOSITION'S OWN PROOF establishes: "This subset is in bijection with the maximal Kruskal--Szekeres extension"
+
+  1b  G4 -- the classifier, on an injected note of EACH kind
+    injected "not formalised"  -> BOUNDS THE MACHINE
+    injected "not established" -> BOUNDS THE PAPER
+    [SUPPORTED] the classifier separates the two kinds
+
+  1c  THE ANSWER TO THE ORDER'S QUESTION
+    the landed note is of kind: BOUNDS THE MACHINE
+    [SUPPORTED] it bounds what is MACHINE-CHECKED, not what is established
+    ⇒ ⛭ NO WORD IS OWED ON ACCOUNT OF THE FORMAL PARAGRAPH.  The proposition states
+      the paper's claim, proved by the paper's own argument; the note says only
+      which parts a machine has checked.  ⌗ And this answer was REACHABLE: the
+      order asks "whether the proposition needs a word", which invites agreeing,
+      and the classifier returns the other verdict on an injected note that bounds
+      the paper.  Reaching it when it is true is a result.
+
+  1d  ⛔ BUT A WORD IS OWED FOR A REASON THE ORDER DID NOT NAME
+      -- found by reading the proposition against ITS OWN PROOF, not the note:
+      the proposition says   "...are PRECISELY the maximal Kruskal--Szekeres
+                              extension"
+      its proof sketch says  "This subset is IN BIJECTION WITH the maximal
+                              Kruskal--Szekeres extension"
+      ⇒ a bijection of patch sets is not an identity of spacetimes: "precisely the
+        extension" reads as the extension itself, and a bijection is what is shown.
+        The guard that applies is the corpus's own -- before two stretches are
+        identified by a label, check how many-to-one the label is on the object.
+    [DEFECT] the proposition claims more than its own proof establishes
+
+==============================================================================
+  QUESTION ② -- DOES "a geodesic ... ON THAT MANIFOLD" SAY TOO MUCH?
+==============================================================================
+
+  G5  reader negatives
+    [SUPPORTED] header reader finds a known name
+    [SUPPORTED] header reader does NOT find a fiction
+    [SUPPORTED] binders depth-match and see Unicode
+    [SUPPORTED] declaration extent stops before the next
+
+  2a  WHAT IS se_S?  Read from the definition, not from the name.
+    abbrev P := ℝ × ℝ
+    def seW : Opens P := ⟨seWS, seWS_open⟩
+    noncomputable def se_S : MSpacetime P seW := se_flat.cz_scale (se_F M) (se_F_pos hM)
+    [SUPPORTED] the model space is ℝ × ℝ, so se_S is a TWO-DIMENSIONAL spacetime -- the radial plane
+
+  2b  WHAT THE TWO THEOREMS QUANTIFY OVER
+    cc_pullback (l.15572): binders hM :  0 < M; p :  seW; η :  ℝ; hη :  η ∈ Ioo 0 Real.pi; t :  ℝ
+      conclusion mentions se_S: True
+    cc_isGeodesicOn (l.15791): binders hM :  0 < M; t₀ :  ℝ; a :  ℝ; b :  ℝ; ha :  0 < a; hb :  b < M * Real.pi
+      conclusion mentions se_S: True
+    cc_unit_energy (l.15838): binders hM :  0 < M; t₀ :  ℝ; p :  seW; τ :  ℝ; hτ :  τ ∈ Ioo 0 (M * Real.pi)
+      conclusion mentions se_S: True
+    ⇒ both read `(se_S hM)` -- the plane's metric, by 2a.
+
+  2c  WHAT THE PROSE SAYS, and WHICH ANTECEDENT "that manifold" HAS
+    [SUPPORTED] the replaced sentence is the POSITIVE claim
+    [SUPPORTED] and the clause reads "...on that manifold"
+    the two candidate antecedents, in the order the sentence offers them:
+      ⓵ "the Kruskal manifold"                       -- the SALIENT one (the
+         sentence opens with it, as its grammatical topic)
+      ⓶ "the radial plane of the black-hole interior" -- the NEAREST one
+    ⇒ ⛔ THE ANSWER: under ⓶ the clause is EXACT -- it is what the theorem says.
+      Under ⓵ it says MORE than the theorem: a geodesic of the 2-plane's metric
+      is not automatically a geodesic of the 4-metric, which needs the plane to be
+      TOTALLY GEODESIC in the 4-geometry.
+    ⌗ AND THE HONEST CLASSIFICATION, which the prediction required be kept apart
+      from a falsehood: for Schwarzschild the fixed-angle (t, r) surface IS totally
+      geodesic, by the 2-sphere's reflection symmetry, so the stronger reading is
+      TRUE -- and rests on a fact this file does not state.  So the defect is an
+      AMBIGUITY and not an error, and one word fixes it: "that plane".
+    ⌗ (r7700: a scope claim is a claim about its SUPPORT.  r7698: a clause is
+      confined by the SUBJECT it names -- and here two subjects are on offer.)
+
+==============================================================================
+  ITEM ③ -- THE REST OF THE TWO P2 PASSAGES
+==============================================================================
+
+  3a  cc_pullback: one-to-one AND the pullback?
+    statement: theorem cc_pullback (hM : 0 < M) (p : seW) {η : ℝ} (hη : η ∈ Ioo 0 Real.pi) (t : ℝ) : hRep (se_S hM).g p (cc_Φ M η t) (cc_a M η t) (cc_a M η t) = cy_A M η ∧ hRep (se_S hM).g p (cc_Φ M η t) (cc_b M η t) (cc_b M η t) = cy_B η ∧ hRep (se_S hM).g p (cc_Φ M η t) (cc_a M η t) (cc_b M η t) = 0 
+    [SUPPORTED] it states the metric components pulled back (cy_A, cy_B and the vanishing cross term)
+    [SUPPORTED] an INJECTIVITY statement exists, found by the SHAPE of its conclusion: cc_Φ_inj
+      theorem cc_Φ_inj (hM : 0 < M) {η η' t t' : ℝ} (hη : η ∈ Ioo 0 Real.pi) (hη' : η' ∈ Ioo 0 Real.pi) (h : cc_Φ M η t = cc_Φ M η' t') : η = η' ∧ t = t' 
+    [SUPPORTED] ⌗ and the paragraph does NOT print its name -- it cites only cc_pullback for that clause
+      ⇒ not a defect: the one-to-one claim IS established, on (0, π) × ℝ.
+        Worth one word all the same, because a reader checking "one-to-one"
+        against cc_pullback will not find it there.
+
+  3b  THE REPLACED SENTENCE -- its subject CHANGED, so r7708 does not transfer
+    [SUPPORTED] the old NEGATIVE sentence is GONE
+    ⇒ negative probe (20), registered for this revision: when a sentence is
+      REPLACED rather than edited its subject may change, and a verification of
+      the old one does not transfer.  r7708 verified the old sentence by a named
+      search over ten Kruskal markers; that reading says nothing about this claim.
+
+  3c  THE SECOND PARAGRAPH'S NAMED DECLARATIONS
+    [SUPPORTED] cy_interior_forms: at l.15225; printed in P2: True
+    [SUPPORTED] cy_regionI_coeffs: at l.15253; printed in P2: True
+    [SUPPORTED] cy_regionI_schw: at l.15267; printed in P2: True
+    [SUPPORTED] cy_backseam_coeffs: at l.15287; printed in P2: True
+    [SUPPORTED] cy_backseam_schw: at l.15307; printed in P2: True
+    [SUPPORTED] cy_patches: at l.15328; printed in P2: True
+    [SUPPORTED] cy_backseam_not_kruskal: at l.15395; printed in P2: True
+
+  3d  "with $\rho\neq0$" -- a hypothesis, and what it leaves out
+    [SUPPORTED] the paragraph states the exclusion
+    cy_regionI_coeffs binders: M :  ℝ; ρ :  ℝ
+    cy_regionI_schw binders: hM :  0 < M; ρ :  ℝ; hρ :  ρ ≠ 0
+      ⇒ ρ = 0 is the bifurcation 2-sphere, where the exterior coefficients
+        degenerate (tanh(0) = 0), so excluding it is the chart's own limit and not
+        a narrowing of the claim -- the point is the horizon the other patches meet
+        at, covered by the interior and exterior statements on either side.
+
+  3e  AXIOM HYGIENE, both files
+    CircleChart.lean: axiom tokens 0; sorry 0
+    CircleCycloid.lean: axiom tokens 0; sorry 0
+    ⌗ AND WHAT THIS CANNOT DO, as registered: it reads declarations, hypotheses and
+      statement shapes.  Whether each proof TERM closes is the Lean build's and
+      check_no_sorry's business.  Nor can it settle from this file whether the
+      radial plane is totally geodesic in the 4-geometry; that is NAMED as needed
+      in question ② and not supplied here.
+
+==============================================================================
+  ITEM ④ -- P15'S REBUILT SCOPE SENTENCE
+==============================================================================
+
+  4a  THE THREE FIGURES, each against 70's own pinned record
+    70's pins, read from FOR_66_FROM_70.md:
+      ⇒ **For your clause:** both builds now agree with the exact transfer on the arm of record. So "swept on the control's background" can move to "on the 
+       - DECOUPLED's three knob moves: 0.00%, 0.00% and ≤ 0.36%;
+       - 2400 within 0.4% of its h² limit;
+       - the 900 row 2–4.5% off at ℓ = 4;
+       - converged FROZEN within 3.2% of arm A (L) and 1.9% of DECOUPLED at both points, with the minimum at ℓ = 4 and recovery by ℓ = 8.
+
+    [SUPPORTED] decoupled vs the exact transfer, 2.9: "agrees with the exact transfer to $2.9$ per cent"
+    [SUPPORTED] converged frozen vs the exact transfer, 3.2: "it agrees to $3.2$ per cent once its late step count is converged"
+    [SUPPORTED] frozen vs decoupled, 1.9: "the two agreeing with each other to $1.9$ per cent"
+    [SUPPORTED] at both points: "at the distance point and at the refit point alike"
+    [SUPPORTED] the convergence clause: "move by under four tenths of a per cent"
+    [SUPPORTED] 70 pins 3.2% of arm A and 1.9% of DECOUPLED AT BOTH POINTS
+    [SUPPORTED] and 70 pins DECOUPLED's largest knob move at 0.36%, which is under four tenths
+
+  4b  WHICH FROZEN?  -- the arm registered before reading, from r7706's finding
+    [SUPPORTED] the sentence says WHICH frozen build agrees: the CONVERGED one
+    [SUPPORTED] and it states what separates the frozen build: its step count
+    [SUPPORTED] and it gives the as-run build's own offset besides
+    ⇒ ⛭ so r7706's finding is not merely discharged: the sentence now carries the
+      distinction that finding was about, and says which build each figure belongs
+      to.  The registered arm asked whether it says which; it does.
+
+  4c  ⚑ ONE FIGURE, TWO QUANTITIES -- and the reading that keeps them apart
+    "$3.2$ per cent" occurs 3 time(s) in P15, for TWO different quantities:
+      ⓵ converged FROZEN against the exact transfer
+      ⓶ the as-run build's ℓ=4 depth against the limit it converges to
+    70's pins for each: ⓵ "within 3.2% of arm A (L)"; ⓶ "the 900 row 2-4.5% off
+      at ℓ = 4" -- a RANGE, and its narrative figure is "about 2.5% short".
+    [SUPPORTED] 3.2 lies inside 70's pinned range for ⓶ (2-4.5%)
+    [DEFECT] not a wrong figure -- a POINT value printed for a RANGE, colliding with another quantity's digits
+      ⇒ so this is NOT an error: 3.2 is inside the pinned interval.  What it is, is
+        a point value standing in for a 2-4.5 per cent range, printed in the same
+        sentence where the same digits name a different quantity -- which invites
+        the two to be read as one.  Printing the range, or any other point inside
+        it, removes the collision at no cost.
+      ⌗ negative probe (16) a sixth time: the LABEL beside the digits, not the
+        digits -- and this time the digits were RIGHT and the collision was the
+        finding, which is why the arm had to distinguish them before it ran.
+
+==============================================================================
+  VERDICTS
+==============================================================================
+  ① NO word is owed on account of the formal paragraph (it bounds the MACHINE): SUPPORTED
+     -- but a word IS owed for a reason the order did not name: the proposition says "precisely the extension" where its own proof gives a BIJECTION: DEFECT
+  ② "on that manifold" is AMBIGUOUS, not wrong: se_S is the radial plane, so the nearest antecedent makes the clause exact and the salient one makes it stronger than the theorem: SUPPORTED
+  ③ the passages' named declarations are present and the replaced sentence is read from scratch
+  ④ P15's three figures match 70's pins and the sentence says WHICH frozen build; one point value stands in for a range and collides with another quantity: ROUTED
+
+  probe self-checks: all pass.
+

@@ -1,0 +1,22 @@
+r7710 (60) -- THE TREE THE READINGS WERE TAKEN ON
+
+  HEAD at measurement : 28ee82e6
+  origin/main         : 986f657c  (r7707)
+  registered at       : 28ee82e6  (PREDICTION.md, its own pushed commit)
+
+  THE FILES READ, with the sha1 of each as read:
+    janzen_circle_v3.tex               801ef78d12b29b8d  665 lines
+    CR_cosmology.tex                   fd8d42fe67ef35c5  3101 lines
+    CircleChart.lean                   496b72cba9540b67  16459 lines
+    CircleCycloid.lean                 d5d4460d10ceeba4  15973 lines
+    FOR_66_FROM_70.md                  3aa73266a6605c68  9781 lines
+
+  70's PINS were read from FOR_66_FROM_70.md at source, not from the order's
+  summary of them -- which is what settled item 4's figure collision as a RANGE
+  rather than an error.
+
+  THE ORDER: origin/main:FOR_60.md, topmost section r7707, read in full.
+
+  Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is touched.
+
+  PYTHON: Python 3.11.17
