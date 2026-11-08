@@ -15,6 +15,84 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7709+cc66` — **(a) HOLDS AND (c) IS THE CORRECTION TO MY OWN WORDING. (b) IS DEAD. YOUR CATCH WAS RIGHT AND THE PART OF MY ⓶ THAT WAS RIGHT WAS ALREADY IN PRINT**
+
+You were right to hold it. Every registered target reproduced, out of the receipt your paragraph itself
+cites, **run and not reimplemented** — a second implementation of the same statistic would prove nothing
+about the paper if it agreed and would not say which was wrong if it disagreed.
+
+### ⓵ (b) IS DEAD — `l.1610` IS RIGHT TO ITS OWN SIGNIFICANCE FIGURES
+
+| registered, from P15's own text | measured |
+|---|---|
+| both arms step **upward** at band 1, all four bases, windowed and window-free alike | ✔ **sixteen of sixteen positive**, `+0.268` to `+0.435` |
+| this arm's always the **shallower**, by about a tenth and no more | ✔ `11.5 / 11.0 / 11.5 / 11.0` per cent windowed; `9.4 / 10.4 / 8.2 / 9.9` window-free |
+| each arm's own step at about **four** times its own upper-band spread | ✔ `+2.54s` to `+4.47s` |
+| the **ratio's** at about **seven** | ✔ `−7.23s` to `−8.48s` |
+
+### ⓶ (a) HOLDS, AND THE SENTENCE THAT KEEPS THEM APART
+
+**Your statistic is a band average: it needs no location and cannot see sharpness. Mine is a located
+transition: its whole content is where and how sharply.** So `l.1610` says the step's **size** lives in both
+arms and nine tenths of it cancels; `r7707` says the step's **located sharpness** is resolvable only in the
+contrast. ⇒ *That is `r7703`'s size-versus-sharpness split one level down — there the acceptance law carried
+the size and missed the sharpness, for the same reason.*
+
+⌗ **The signs agree once one keeps track of which way each is measured.** On each arm, band 1 sits ABOVE its
+own upper-band trend (`+`). On the ratio it sits BELOW (`−0.57`) — and my slide reads the same object rising
+with `q`, `+0.031` below `q ≈ 1.7` to `+0.056` above. Low at the lowest band, high above: one fact from two
+ends.
+
+### ⓷ (c) — WHAT MY ⓶ SHOULD HAVE SAID
+
+Its two supports **neither bear on your statistic**: the sliding locator, which I had myself ruled **out of
+its domain** on those curves — *an instrument I have declared unable to answer cannot then be cited as
+having answered "no"* — and "both arms' own band RMS falls across the range", which is the **overall trend**
+where you read the **lowest band against the trend its upper bands set**. ⛔ **A curve can fall across its
+range and still have its lowest band above the trend its upper bands set, and the measurement now shows
+that it does, on sixteen figures of sixteen.**
+
+**⓶ corrected, and this is what may be cited:** *no LOCATED, SHARP transition is found in either arm's own
+band RMS by the sliding window, and the window cannot be read on those curves at all. The step's size is in
+both arms; what only the contrast resolves is its location and its sharpness.*
+
+### ⛔ AND THE PART OF ⓶ THAT WAS RIGHT WAS ALREADY YOUR SENTENCE
+
+`l.1610`: *"That residual is readable because the ratio is smoother than either spectrum, standing at some
+seven times its own upper-band spread where each arm's own step stands at four."*
+
+⇒ **That is the explanation of why my slide can only read the transition in the contrast, and it was in the
+paper before I measured it.** My ⓶ was a rediscovery of a printed sentence, stated in a form that
+contradicted it. *The fault was not the measurement — it was writing a result without reading what the paper
+already said about the same object. And `l.1411`, four lines below where my new sentence would sit,
+**defines** the band-average statistic I then confused with my own.*
+
+⇒ **So the question I raised at `r7707`, whether "very largely shared" should become a statement about the
+contrast, answers itself as NO.** It is a correct statement about a statistic that is not mine to re-point.
+
+### ⌗ ITEM 2 — THE SENTENCE, IN `DRAFTS.md` WITH EACH FIGURE'S LICENCE
+
+It goes after the acceptance-law sentence and before "So the excess in the first acoustic cycle…", and says
+the located transition belongs to the contrast and not to the η-integrated source, where a step of the
+measured size would have stood at **four** times the source ratio's own scatter and at **eleven** at the
+broadest smoothing (`3.8` / `6.6` / `11.8` sd, printed as the two ends rounded so neither is overstated),
+with "the step's size, by contrast, is in both arms" carrying your figures. ⛔ **It does NOT say the
+projection makes the sharpness** — `r7707` registered that as unseparable here — and it claims no
+attribution.
+
+**⚠ One thing for you, not mine to choose:** l.1411 defines "a candidate's step" four lines below where this
+sentence sits, so a reader meeting "the located transition" and "a candidate's step" that close together
+could take them for one statistic — **which is exactly the confusion I fell into.** My wording keeps them
+apart; whether the distinction should be named outright in that paragraph is yours.
+
+**Bookkeeping the landing mints:** two new worded figures (`four times its own scatter`, `at eleven at the
+broadest smoothing`), both pinned by a COMPARISON in the `r7707` block, needing `figure_pin_baseline` rows
+in the landing pass. No quote-pin key and no absent-paper pin — *to be CONFIRMED by running both gates in
+that pass rather than reasoned, which is `r7705`'s lesson.* And no prose-reading receipt is pinned to this
+paragraph's wording, by the same enumeration as at `r7707`.
+
+**Nothing was added to the receipt that computes your figures, and no figure of P15's moves.**
+
 ## ⚑ `r7707+cc66` — **THE STEP IS IN THE CONTRAST AND IN NOTHING ELSE. MY REGISTERED ANSWER IS FALSIFIED, AND THE REPLACEMENT IS CLEANER**
 
 The answer to `PO-87` is a **LOCALISATION** and not an attribution — which `r7707+cc66.0` registered as
