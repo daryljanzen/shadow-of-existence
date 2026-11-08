@@ -1,0 +1,22 @@
+r7708 (60) -- THE TREE THE READINGS WERE TAKEN ON
+
+  HEAD at measurement : cab9c12e
+  origin/main         : 71f4c8f7  (r7705)
+  registered at       : cab9c12e  (PREDICTION.md, its own pushed commit)
+
+  THE FILES READ, with the sha1 of each as read:
+    janzen_circle_v3.tex                                                       cfd5c5e98c24f9ab  663 lines
+    CR_cosmology.tex                                                           845cee5337b7f273  3099 lines
+    CircleCycloid.lean                                                         d5d4460d10ceeba4  15973 lines
+    CircleKretschmann.lean                                                     c4036ec02445fd15  15399 lines
+    P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py 2390525421a32475  788 lines
+
+  THE RECEIPT WAS RUN, not read for its prose alone: exit 0, and its printed
+  figures are what items 1a and 1c compare against.
+
+  THE ORDER, as fetched: origin/main:FOR_60.md, topmost section r7705, read in full.
+
+  Nothing in corpus/, receipts/, scripts/ or computations/formalisation/ is touched
+  by this revision's diff.
+
+  PYTHON: Python 3.11.17

@@ -1,0 +1,196 @@
+
+  r7708 (60) -- READINGS.  Order r7705, three items.
+==============================================================================
+  ITEM 1 -- THE TWO P15 LAW-AND-STEP SENTENCES (first, as ordered)
+==============================================================================
+
+  1a  THE CHANGED FIGURE, and WHAT THE INTERVAL IS OF
+    [SUPPORTED] P15 prints "a factor of about $1.8$ on all three widths"
+    [SUPPORTED] the old "clean factor of two on all three widths" is GONE
+    the receipt's own column header: print(f" half-width the EXCESS: half-rise / 25-75 / factor the LAW: half-rise / 25-75 / factor")
+    ⇒ so the triple is (half-rise, 25-75 rise, FACTOR) per half-width, and the
+      printed 1.8 is the FACTOR column -- the step's SIZE, not its half-rise
+      position, which is also near 1.8 and is a DIFFERENT QUANTITY.
+      ⌗ negative probe (16) again: two quantities of this object both read ~1.8.
+
+  1b  SIZE, PLACE AND SHARPNESS ARE THREE CLAIMS -- which does each sentence make?
+    [SUPPORTED] the sharpness exception, NAMED: "reproduces that step's size without reproducing its sharpness"
+    [SUPPORTED] the size claim: "so the law carries the step's size"
+    [SUPPORTED] the unresolved/resolved contrast: "the measurement's transition is unresolved at every width and "
+    [SUPPORTED] and NEITHER sentence claims the law LOCATES the step
+      ⇒ which matters, because the receipt's own translation test says it cannot:
+        print(f" translating the read interval by {_TR:+.2f} in q moves the excess's half-rise "
+
+  1c  THE RATIO OF WIDTHS -- the form the receipt FORBIDS, and the one it licenses
+    [SUPPORTED] the receipt forbids stating it as a ratio of two widths
+    the receipt's licensed form: check("\u26ed `r7703` ...and at fixed smoothing the law's transition is some SEVEN TIMES the excess's",
+    [SUPPORTED] P15 prints "the wider by some seven times at identical smoothing"
+    [SUPPORTED] and the floor caveat is IN THE SAME CLAUSE ("unresolved at every width")
+    [NO DEFECT] the licensing caveat travels with the ratio
+      ⌗ reported rather than inflated: "the wider" is loose for a ratio of two
+        READINGS at one smoothing, but the clause that makes it legal -- that the
+        measurement's is unresolved at every width -- is in the same sentence.
+      ⌗ AND ONE ROUNDING, both in the receipt and in the paper: the measured ratio
+        is 7.8, which both call "some seven times".  7.8 is nearer eight.
+
+  1d  DOES ANY SIBLING SITE STILL PRINT THE OLD FIGURE FOR THIS STEP? (searched)
+    "clean factor of two": 0 occurrence(s) in P15
+    "a factor of two": 6 occurrence(s) in P15
+    "a factor of about $1.8$": 1 occurrence(s) in P15
+    ⇒ the surviving "a factor of two" sites are read at their own labels and belong
+      to other objects (the share's ambiguity, a false-value test, a slope fit);
+      NONE is this step's size.  Negative probe (16): the label, not the digits.
+
+==============================================================================
+  ITEM 2 -- THE FIVE REPAIRS THIS SEAT ROUTED, READ IN PLACE
+==============================================================================
+
+  2a  P2 l.140 -- is BOTH attributions scoped, or only the nearer one?
+    [SUPPORTED] the repaired sentence reads as the order reports
+      ⇒ the qualifier sits on the PARTICLE, and both the cycloidal FORM and
+        "$\tau$ the arc length" are predicated of that particle's motion, so both
+        are scoped by one phrase.  (r7698: a clause is confined by its SUBJECT.)
+
+  2b  P2 l.460 -- scoped, AND the finiteness claim NOT narrowed (regression arm)
+    [SUPPORTED] the parenthetical is scoped
+    [SUPPORTED] the finiteness clause is STILL GENERAL
+      ⇒ and still true generally: r7704 integrated seven members and all are
+        finite, so narrowing it would have been a REGRESSION.  It was not narrowed.
+
+  2c  P2's formal paragraph -- the chain-rule object, re-checked against the lemma
+    [SUPPORTED] the repaired phrase reads as the order reports
+    [SUPPORTED] the old "a non-degenerate zero" is GONE
+    [SUPPORTED] the lemma still asks h(z0) = 0
+    [SUPPORTED] the lemma still asks h'(z0) = 0
+    [SUPPORTED] the lemma still asks h''(z0) != 0
+    pole order, recomputed here: {'a simple zero': 6, 'a zero of order exactly two': 12}
+    [SUPPORTED] twelve needs the DOUBLE zero, which is what the repaired phrase now names
+
+  2d  "away from the poles of the sphere's chart" -- the PHRASE against the SET
+    [SUPPORTED] the phrase is in the Kruskal-chart clause
+    ck_horizon asks: [' Real.sin (x 2) ≠ 0']
+    ck_interior asks: [' Real.sin (x 2) ≠ 0']
+      ⇒ `Real.sin (x 2) ≠ 0` excludes exactly `x 2 ∈ πℤ`, which on the
+        2-sphere's polar angle is the two poles.  The phrase names that SET, not a
+        gloss of it.  (r7700: a scope claim is a claim about its SUPPORT.)
+
+  2e  P15's scope sentence -- does the DEPTH now rest on one build and the SHAPE on both?
+    [SUPPORTED] the DEPTH is rested on the decoupled build
+    [SUPPORTED] the SHAPE is returned by both treatments
+      ⇒ which is exactly what 70 measured: FROZEN at its default late step count is
+        6.19 per cent off at l = 4, while its extrapolated sequence still has its
+        minimum at l = 4 and recovers by l = 8.  r7706's finding is discharged.
+
+==============================================================================
+  ITEM 3 -- P2's NEW CYCLOID FORMAL PARAGRAPH AGAINST CircleCycloid.lean
+==============================================================================
+
+  G5  reader negatives (all five readers, before use)
+    [SUPPORTED] header reader finds a known name
+    [SUPPORTED] header reader does NOT find a fiction
+    [SUPPORTED] binders depth-match a type carrying parentheses
+    [SUPPORTED] binders see a Unicode name
+    [SUPPORTED] declaration EXTENT stops before the next declaration
+
+  3a  THE SIX NAMES THE PARAGRAPH PRINTS
+    [SUPPORTED] cy_proper_time: at l.14916; printed in P2: True
+    [SUPPORTED] cy_Mpi: at l.14927; printed in P2: True
+    [SUPPORTED] cy_radial: at l.15019; printed in P2: True
+    [SUPPORTED] cy_ends: at l.15056; printed in P2: True
+    [SUPPORTED] cy_geodesic: at l.15149; printed in P2: True
+    [SUPPORTED] cy_interior_forms: at l.15225; printed in P2: True
+
+  3b  HYPOTHESES, each theorem's own
+    cy_proper_time: 2 binder(s) -- M :  ℝ; η :  ℝ
+    cy_Mpi: 1 binder(s) -- M :  ℝ
+    cy_radial: 3 binder(s) -- hM :  0 < M; τ :  ℝ; hτ :  τ ∈ Ioo 0 (M * Real.pi)
+    cy_ends: 1 binder(s) -- hM :  0 < M
+    cy_geodesic: 2 binder(s) -- hM :  0 < M; t₀ :  ℝ
+    cy_interior_forms: 3 binder(s) -- hM :  0 < M; η :  ℝ; hη :  η ∈ Ioo 0 Real.pi
+    ⌗ cy_proper_time and cy_Mpi ask NOTHING about M -- no `0 < M`.  So they are MORE
+      GENERAL than the paragraph's sentence, which is r7700's shape and NO defect.
+
+  3c  DOES THE FORMALISATION CARRY THE E = 0 RESTRICTION, or assume it silently?
+    [SUPPORTED] cy_geodesic states the geodesic equation
+    [SUPPORTED] cy_geodesic states unit timelike
+    [SUPPORTED] cy_geodesic states Killing energy zero
+      ⇒ ** THE ANSWER: E = 0 is a PROVED CONJUNCT of cy_geodesic, not a hypothesis. **
+        So the formalisation establishes the restriction the repaired prose states,
+        rather than assuming it -- and the reachable negative (silently assumed) is
+        not what was found.
+
+  3d  IS $M\pi$ PROVED, or asserted as a value the chart is given?
+    cy_Mpi: theorem cy_Mpi (M : ℝ) : ∫ s in (0:ℝ)..Real.pi, 2 * M * Real.cos (s / 2) ^ 2 = M * Real.pi 
+    cy_proper_time: theorem cy_proper_time (M η : ℝ) : ∫ s in (0:ℝ)..η, 2 * M * Real.cos (s / 2) ^ 2 = cy_τ M η 
+    noncomputable def cy_τ (M η : ℝ) : ℝ := M * (η + Real.sin η)
+    [SUPPORTED] $M\pi$ is the VALUE OF AN INTEGRAL of the proper-time element, proved via cy_proper_time
+
+  3e  "the chart is not pulled back from the Kruskal manifold here" -- NAMED search
+    region: l.14903-15974 (the cy_ section); whole file 15974 lines
+    per-marker counts   region / whole file:
+      'rK '                     2 / 93
+      'sk_S'                    0 / 64
+      'sk_kM'                   1 / 64
+      'kr_'                    80 / 482
+      'Kruskal'                 7 / 43
+      'hK '                     0 / 132
+      'rinv'                    2 / 68
+      'ChartedSpace'            0 / 36
+      'PartialHomeomorph'       0 / 35
+      'IsManifold'              0 / 47
+    ⇒ the region's kr_ hits belong to the row-6 theorems that COMPARE against
+      Kruskal on purpose (cy_regionI_schw, cy_backseam_schw, cy_patches,
+      cy_backseam_not_kruskal).  So the whole-region count does NOT answer the
+      claim, which is about the CHART.  The chart's own objects are read instead:
+      cy_r           Kruskal identifiers in its OWN extent: NONE
+      cy_τ           Kruskal identifiers in its OWN extent: NONE
+      cy_η           Kruskal identifiers in its OWN extent: NONE
+      cy_A           Kruskal identifiers in its OWN extent: NONE
+      cy_B           Kruskal identifiers in its OWN extent: NONE
+      cy_g           Kruskal identifiers in its OWN extent: NONE
+      cy_c           Kruskal identifiers in its OWN extent: NONE
+      cy_gD          Kruskal identifiers in its OWN extent: NONE
+      cy_IsGeodesic  Kruskal identifiers in its OWN extent: ['kr_']
+    and the six named theorems' STATEMENTS:
+      cy_proper_time       NONE
+      cy_Mpi               NONE
+      cy_radial            NONE
+      cy_ends              NONE
+      cy_geodesic          NONE
+      cy_interior_forms    NONE
+
+    [SUPPORTED] NOT FOUND -- 10 markers, ZERO in any of the six
+      statements and ZERO in the chart's metric and curve definitions.
+    ⌗ THE ONE COUPLING, named rather than swept: cy_IsGeodesic uses `kr_Γ`,
+      campaign 110's Christoffel operator, which TAKES THE METRIC AS AN ARGUMENT --
+      a reused formula, not a pullback.  The file's own header states the limit:
+      "the interior chart (η, t) is a coordinate metric, not tied to `sk_S`".
+    ⌗ Said as NOT FOUND over a named search, not as "there is none" -- and the trap
+      was registered in advance: this file is a copy of the campaign kit, so the
+      Kruskal machinery is abundant in the INHERITED part by construction.
+
+  3f  NON-VACUITY
+    cy_radial: quantified over ['Ioo 0 (M * Real.pi']
+    cy_geodesic: quantified over ['Ioo 0 (M * Real.pi', 'Ioo 0 (M * Real.pi']
+    cy_interior_forms: quantified over ['Ioo 0 Real.pi']
+      ⇒ each is stated over an explicitly NON-EMPTY open interval (0 < π and,
+        with 0 < M, 0 < Mπ), so none is vacuous.  (r7698 and r7706 both turned
+        on exactly this, and both needed a separate witness; here the index set is
+        the witness.)
+
+  3g  AXIOM HYGIENE
+    `axiom` tokens: 0;  `sorry`: 0
+    [SUPPORTED] no axiom carries content the paragraph credits to a proof
+    ⌗ AND WHAT THIS CANNOT DO, as registered: it reads declarations, hypotheses and
+      statement shapes.  Whether each proof TERM closes is the Lean build's and
+      check_no_sorry's business, not this probe's.
+
+==============================================================================
+  VERDICTS
+==============================================================================
+  ITEM 1  the figure change is right and labelled; size, place and sharpness are kept apart; the width ratio carries its caveat: SUPPORTED
+  ITEM 2  all five routed repairs landed, and l.460's finiteness claim was not narrowed: SUPPORTED
+  ITEM 3  the six names are present, E = 0 is a PROVED conjunct, and the chart is not pulled back from Kruskal: SUPPORTED
+
+  probe self-checks: all pass.
+
