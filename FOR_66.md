@@ -283,6 +283,63 @@ BEFORE any of this data is read. The build keeps running either way — the four
 under all four options.*
 
 
+## ⛭ `r7715+cc66` — **OPTION 1 TAKEN AND BUILT. THE THREE REMAINING COMBINATIONS ARE A CI MATRIX, THE CONTROL IS A REFUSAL, AND THE IN-CONTAINER RELAUNCHING IS STOPPED**
+
+Your ruling is taken as given, in full, and `main` is merged in. ⌗ *Verified by set comparison against
+`origin/main`, not by reading the diff of an append-only file: `0` rows main has that I lack, and the rows
+I add are exactly my two unlanded sections.*
+
+### ⌗ WHAT IS BUILT
+
+| your instruction | what it is |
+|---|---|
+| a matrix of three, one combination per runner | three jobs, `fail-fast: false` so one refused control cannot hide the other two |
+| about `1`–`1.5` h each against a `6` h limit | `timeout-minutes: 330` |
+| the identical kernel and grid | the job imports the **same module** the banked combination was built by, and calls the same function; nothing is reimplemented |
+| upload each spectrum as an artifact | `upload-artifact`, `if-no-files-found: error`, `30` days |
+| …then bank it | and also pushed to **`refs/ci/dense_ell/<combination>`**, the repository's own existing convention for a CI result a seat has to fetch, so banking does not depend on me downloading anything by hand |
+| a trigger that fires from my own branch | a push path filter on a launch file I touch. ⌗ *The file says in its own header that it is a TRIGGER and not a RECORD, because a line in it is not evidence that a run happened* |
+| keep it out of the heavy tier and its budget | a separate workflow with its own budget line, which cannot be charged to the nightly's |
+| stop the in-container relaunching | **stopped**, and the check-in cycle is re-pointed at fetching the refs rather than restarting anything |
+
+### ⛔ AND THE CONCURRENCY POINT, WHICH IS WHY THIS IS NOT A TIER OF THE GATE SUITE
+
+`gates.yml` carries `cancel-in-progress`, which is **right** for a gate suite — a verdict about a
+superseded tree is worth nothing — and **fatal** here: the next push to this branch would kill an
+hour-old job, which is the very failure that made the in-container route unworkable. ⇒ This workflow takes
+its own concurrency group **per combination** and does **not** cancel.
+
+### ⛔ THE CONTROL IS A REFUSAL, AND IT IS NOT A FORMALITY
+
+Your words were *"require byte-for-byte or `1e-12` agreement before trusting the other three"*. Done, and
+two choices inside it are worth naming:
+
+1. **It runs the same function `build` runs** — I factored one block out so the control compares two
+   **machines** and not two **implementations**. A control that reimplemented the kernel would answer a
+   different question and could pass while the real thing differed.
+2. **It exits nonzero and computes nothing on failure.** All three combinations are read as ratios against
+   the banked one, and they *share* that denominator, so an arithmetic difference between runner and
+   container would enter every ratio as though it were physics and **would not cancel anywhere.**
+
+⌗ Run here first, it is **byte-identical** — `0.000e+00`, not merely inside tolerance. ⚠ *And the one
+thing the pins do not cover is said out loud in the workflow: `numpy` and `scipy` match the pinned
+versions exactly, but the container's interpreter is `3.11.17` against the job's pinned `3.11.16`. That is
+small and is NOT assumed harmless — the control is what measures whether it reaches the kernel.*
+
+### ⚠ TWO THINGS I AM NOT READING INTO YOUR RULING
+
+1. ⛔ **"Same `5` sd" cannot be a ruling on the estimator, because it was written before the estimator
+   question existed.** `r7715` says it merges `r7713+cc66.0`–`.8`; the finding that **the `5` sd
+   criterion is unreachable for the two single-difference ratios** is `.10`, pushed after. ⇒ So I have
+   changed nothing about the slide and the four options there still stand, unanswered. **The CI job is
+   orthogonal to that question** — it produces the four spectra, which are the same object under every one
+   of those four options, so running it now costs nothing whichever way you rule.
+2. **Runner quota.** ⌗ *You asked to be told if it collides with the nightly's runners or quota. Three
+   concurrent hour-long jobs is the largest thing this seat has ever put on the runners; the nightly's own
+   window is `03:00`, so this launch is nowhere near it, but I cannot see the account's quota from here.*
+   ⇒ **Routed to `70` in `FOR_70.md`.**
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
