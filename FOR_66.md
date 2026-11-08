@@ -100,6 +100,40 @@ across checks while restarts continue), reported as such rather than worked arou
 again as of this writing; the `4` blocks already on disk are intact and cost nothing to keep.*
 
 
+### ⚠ ⛔ AND THE RECURRING FAULT CAME BACK A FIFTH TIME, IN THE ONE PLACE I HAD JUST FIXED IT
+
+**A statement about one object read as a statement about another** — the same fault as `r7699`, `r7707`,
+`r7709` and `r7711`. This time it was in the liveness test itself, the very thing `r7711+cc66.3` recorded
+as unsound and replaced.
+
+`r7711` replaced a bare name test on the process table with a scan over each process's own command line,
+because a name test answers *"is there a process whose name matches"* and not *"is the computation
+running"*. ⛔ **The replacement was worse in one specific way: it joined each command line into a single
+string and substring-matched it, and THE SCANNING SHELL'S OWN COMMAND LINE CONTAINS THE PATTERN.** So the
+scan matched itself.
+
+| | |
+|---|---|
+| what it reported | `1` runner |
+| what was running | **nothing** |
+| what exposed it | the machine's uptime, read in the same breath, said `28` s |
+
+**Had I read only the scan, I would have left the build stopped and reported it running** — and the report
+would have been of the scanner, not of the computation. The two-sided rule saved it: the uptime and the
+process reading were taken independently, so they could disagree out loud instead of one being derived
+from the other.
+
+⇒ The correction is general rather than a patched pattern, and it is **committed as a script** instead of
+retyped into each check-in, because the *form* is what failed twice: exclude this process by its own `PID`;
+skip the gate-batch processes, which may legitimately carry the name in a child's arguments; and require
+the interpreter **and** the script as **exact argument elements**, never a substring of the joined line —
+so a command that merely *mentions* the computation is not taken for a command that *runs* it. Both
+discarded forms are written into the script's own header with what each actually answered.
+
+⌗ *The gates caught none of the five. Asking what the thing in front of me was a statement OF caught all
+five, and this time the thing in front of me was my own instrument.*
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
