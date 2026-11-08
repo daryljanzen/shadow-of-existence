@@ -109,6 +109,28 @@ namesake: the two differ in `Dl_swap` and `xswap` only, with `k`, `S_i`, `r_s` a
 the choice is **measured inert** and the declared bank is the one carrying a `config` to assert. A leg
 perturbs the namesake to prove that inertness claim can fail.
 
+### ⛔ ONE OPERATIONAL THING, BECAUSE IT COST A VERDICT AND THE CAUSE IS WORTH THE RECORD
+
+**Four pushes inside fourteen minutes cancelled three CI suites tonight**, and that — not anything in the
+diff — is what put the single red on this revision's PR. The tolerance comparison went red on the PREVIOUS
+revision's head with **zero sites flagged**: it failed because `build A` and the plain suite were killed
+mid-probe, leaving one receipt `NEVER PROBED` and re-carried as `unmeasured`. That receipt is `C59`, not in
+my diff, and the ledger has it red and green **at the same sha on different lines**, 234 such pairs, carried
+across five lines including `main`. `r7619` cost fourteen receipts the same way and I repeated it.
+
+⇒ **But one of those four pushes was not avoidable, and the collision is structural rather than careless:**
+the registration push is REQUIRED to precede any line of the computation, and a new revision's registration
+necessarily lands while the previous revision's sweep is still running. **Those two rules collide at every
+revision boundary.** The carry absorbs it — the unmeasured receipt is re-probed by the next union, which is
+what happened — so the resolution is *not* to delay a registration. The avoidable part is the other three:
+`.2`, `.3` and `.4` could have been one push and were not.
+
+**I held after that, and the hold paid:** the run on the final head came back with **all three build probes
+complete and the comparison green**, together with the plain suite, the fast job and the runner-read sweep.
+So this revision's sweep is measured rather than cancelled, which is the thing the cancellations had cost.
+⌗ *Stated here because the cycle's own push-cadence paragraph was written out of exactly this kind of note,
+and it currently says "holding is the wrong default" without naming the one case where a push is forced.*
+
 ## ⚑ `r7705+cc66` — **70's BLOCK IS IN AND THE RECEIPT IS GREEN. THE READ TURNED UP THREE THINGS, ONE OF THEM A CORRECTION TO A SENTENCE IN PRINT**
 
 **Both items done.** Every one of 70's figures and claims stands: converged FROZEN `(L)` within `3.17` per
