@@ -15,6 +15,100 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7707+cc66` — **THE STEP IS IN THE CONTRAST AND IN NOTHING ELSE. MY REGISTERED ANSWER IS FALSIFIED, AND THE REPLACEMENT IS CLEANER**
+
+The answer to `PO-87` is a **LOCALISATION** and not an attribution — which `r7707+cc66.0` registered as
+the only thing available, before any number existed, and it stands. Seven gates in
+`P15_a_source_with_no_physics…`, `+1.06` s against a `2.08` s baseline, registered under `10` s. No INDEX
+row owed, same rule as `r7703`.
+
+### ⛭ THE THREE READINGS, SAME WINDOWS
+
+| reading | half | lo | hi | step | step / own sd | corr(Ra,Rc) | Ra hi/lo | Rc hi/lo |
+|---|---|---|---|---|---|---|---|---|
+| **spectra ratio** | 0.175 | `+0.0309` | `+0.0551` | `+0.0242` | **`2.91`** | `0.999524` | `0.687` | `0.671` |
+| | 0.250 | `+0.0316` | `+0.0558` | `+0.0242` | **`4.56`** | `0.999367` | `0.730` | `0.713` |
+| | 0.350 | `+0.0306` | `+0.0561` | `+0.0255` | **`9.49`** | `0.999014` | `0.802` | `0.783` |
+| **source ratio** | 0.175 | `-0.0068` | `-0.0043` | `+0.0025` | `0.40` | `0.999813` | `0.854` | `0.852` |
+| | 0.250 | `-0.0068` | `-0.0044` | `+0.0024` | `0.65` | `0.999892` | `0.887` | `0.884` |
+| | 0.350 | `-0.0072` | `-0.0054` | `+0.0018` | `0.88` | `0.999955` | `1.019` | `1.017` |
+
+**⓵ In the spectra's contrast: YES** — `+0.031` to `+0.056` across `q = 1.783`, a factor of `1.77`-`1.83`
+at `2.9` to `9.5` times the plateaus' own scatter. *That is the "about `1.8`" the step paragraph already
+prints, reproduced on the slide rather than on the seven bands, so no new printed figure is proposed.*
+
+**⓶ In either arm's own spectrum: NO.** Both arms' own band RMS **falls** across the range (`hi/lo`
+`0.67`-`0.80` at every smoothing) and the two track each other above `0.999`. Their own curves are the
+comb's beat, swinging by two to five; the step is a **two per cent relative difference** between them.
+⛔ *The rising-step locator is OUT OF ITS DOMAIN on all six of those curves, and its numbers there are not
+reported: the slide's first form ran it anyway and got a negative 25-75 width and a `NaN` under
+translation, which is the instrument saying it had been asked a question it cannot answer.*
+
+**⓷ In the source-side ratio: NO, and the exclusion has a size.** Its own low-to-high change is `+0.002`,
+**under one standard deviation of its own scatter at every smoothing**, while a step of the spectra's size
+would have shown there at **`3.8` to `11.8` sd**. The arms' η-integrated sources carry the same relative
+comb amplitude to under one per cent, and the ratio sits near zero and slightly **negative** throughout.
+⚠ *So a step of the measured size is EXCLUDED in the source; a TENTH of it is neither excluded nor
+resolved, and that is said rather than rounded to zero.*
+
+**⓸ The translation control decides which is a location.** `+0.15` and `+0.30` in `q` move the spectra
+ratio's half-rise by the same amount to within `0.004` (`1.7830 → 1.6329 → 1.4868`) and do not move the
+source ratio's at all (residuals `0.077`, `0.620`). *`r7703`'s withdrawal is why this is the primary
+evidence for every "no transition here" and not a footnote.*
+
+### ⚠ MY REGISTERED PREDICTION IS FALSIFIED, AND THE WAY IT FAILED IS THE USEFUL PART
+
+I registered that the step would be **IN** each arm, because P15 calls it "very largely shared". Measured,
+the arms are shared at `0.999` and **the step is in the remainder.** ⛔ *"Very largely shared" and "the step
+is in each arm's own spectrum" are different statements and I read one as the other* — the same fault as
+reading a null's response at a chosen amplitude as a decomposition. **If anything in P15 leans on the step
+being a feature of each arm rather than of their contrast, it needs looking at; I do not think anything
+does, but you hold the prose.**
+
+### ⛭ AND THE TENSION THE REGISTRATION NAMED RESOLVES WITHOUT ANYTHING SHARPENING
+
+The registration said in advance: a linear projection of finite width cannot sharpen, and `r7703` measured
+the law's own window at some seven times the step — so "absent in the source, present in the spectrum"
+looked like it needed the projection to do what it cannot. **It does not.** The step is a `+0.024` change
+in a RATIO between curves that each swing by two to five and track at `0.999`. ⇒ **The ratio does not
+sharpen a broad feature; it exposes a small one.** "The projection only broadens" constrains each arm's
+spectrum and says nothing about a two per cent difference between them.
+
+### ⛔ WHAT IS NOT CLAIMED
+
+- **No attribution.** Registered in advance and unchanged: it needs a build that removes the sharpness and
+  leaves the rest, the step is largely shared, and no build removes it.
+- **Not "the projection makes it".** What is established is where the transition FIRST APPEARS among the
+  readings available. Whether the projection creates the two per cent difference or merely fails to cancel
+  something the source contrast hides under its own scatter **cannot be separated here** — the source
+  ratio excludes a step of the measured size, not a tenth of one.
+- **No sentence is drafted this turn.** The order asked for the reading and the verdict, not for prose, and
+  the one thing I would want before drafting is your view on whether "very largely shared" should become
+  something about the contrast.
+
+### ⌗ THE PRECONDITION FIRED, AND THE SQUARE IS THE RIGHT OBJECT FOR A SECOND REASON
+
+`S_i`'s running envelope crosses zero **twelve** times on both arms (`min|e|` to `8e-6`), so `(y-e)/e` is
+meaningless there; `S_i**2`'s never crosses. ⇒ And the square is the **frequency-matched** object, not
+merely the safe one: `cos²` has half the period of `cos`, `D_l` is itself quadratic in the transfer, and
+`S_i**2` fits the same comb period as `D_l` (`1.0070`/`1.0008` against `0.9935`/`0.9893`), while `S_i`'s
+fitted `1.10`-`1.13` is an **artefact of `fit_period`'s `0.90`-`1.20` grid**, which cannot reach a period of
+two at all. *Registered as a precondition to TEST rather than assumed, and it is the reason the reading is
+on the square and says so.*
+
+### ⌗ FAILABILITY AND THE DECLARED BANK
+
+**Nine legs over a green control**, the block's source AND the host's own `_locate` read out of the receipt
+rather than copied. Leg H is the one that matters: it injects a step of the measured size into the arm's own
+source and watches the source-exclusion gate go red, which is what makes "would have shown at `3.8` to
+`11.8` sd" a measurement and not an arithmetic remark about a standard deviation. Legs F and I redden three
+checks each, reported rather than tuned away.
+
+And the control's source is read out of the bank **`NEED` declares** (`r6911_source_lcdm_leafrec1`), not its
+namesake: the two differ in `Dl_swap` and `xswap` only, with `k`, `S_i`, `r_s` and `l_A` byte-identical, so
+the choice is **measured inert** and the declared bank is the one carrying a `config` to assert. A leg
+perturbs the namesake to prove that inertness claim can fail.
+
 ## ⚑ `r7705+cc66` — **70's BLOCK IS IN AND THE RECEIPT IS GREEN. THE READ TURNED UP THREE THINGS, ONE OF THEM A CORRECTION TO A SENTENCE IN PRINT**
 
 **Both items done.** Every one of 70's figures and claims stands: converged FROZEN `(L)` within `3.17` per

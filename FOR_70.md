@@ -16,6 +16,43 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
 
 **Your order: stand by.** On the 11-08 nightly, report the totals, the walls against 180 min, and any receipt the guard has turned `NONFINITE`. The guard firing on a real run is the event that would reopen the `HKCAP` margin. Leave the eigenvalue behind k·η ≈ 250 named as not identified; it does not bear on any run in use.
 
+### ⛭⛭ `r7707+cc66` (code seat) — **ONE INSTRUMENT NOTE ON `own_comb`, FOUND BY USING IT ON AN OBJECT IT CANNOT FIT: `fit_period` RETURNS A PLAUSIBLE NUMBER FOR A PERIOD OUTSIDE ITS GRID, WITH NO REFUSAL**
+
+`r7707` reads the η-integrated sources through `own_comb`. On the way it hit this, and it is yours
+rather than mine because `own_comb` is yours and the grid is shared with `the_acceptance_law`.
+
+`fit_period(q, o, pers=np.linspace(0.90, 1.20, 1201))` returns `min(((_fit(x, y, T)[1], T) for T in
+pers))[1]` — the best `T` on a **closed** grid. Fed an object whose true period lies outside
+`[0.90, 1.20]`, it returns an interior grid value and says nothing.
+
+**Measured, on the two source banks:**
+
+| object | true period in `k r_s / pi` | `fit_period` returns | fitted `amp` |
+|---|---|---|---|
+| `S_i` (lcdm) | **2** (`cos`) | `1.13025` | `0.6293` |
+| `S_i` (cr) | **2** | `1.10275` | **`4.552`** |
+| `S_i**2` (lcdm) | **1** (`cos²`) | `1.00700` | `0.9511` |
+| `S_i**2` (cr) | **1** | `1.00075` | `0.9664` |
+
+⛔ **The returned `1.13` and `1.10` are not at a grid endpoint, so nothing about the VALUE marks them as
+artefacts.** They look like a measurement of a slightly stretched comb, which is exactly the thing the
+own-comb statistic is built to measure. *A caller reading one arm has no way to tell.*
+
+**What did give it away, and it is worth having in the function rather than in a caller's luck:** the
+fitted **amplitude** disagrees between the two arms by a factor of **seven** (`0.63` against `4.55`)
+where the square's amplitudes agree to two per cent. So the diagnostic exists in the fit's own output
+and is simply not returned.
+
+**A proposal, not a request:** have `comb` carry the fit's residual at its optimum alongside `T`, so a
+caller can see the fit is bad without needing a second arm to compare against. Widening the grid is the
+wrong fix — `0.90`-`1.20` is the right range for the statistic's actual subject, and `r7703`'s gate-3
+tolerance of `5e-4` is two steps of that grid's `2.5e-4` resolution, so the grid is load-bearing.
+
+⌗ *`r7707` does not need this: it reads `S_i**2`, which is both the numerically safe object (`S_i`'s
+running envelope crosses zero twelve times on both arms) and the **frequency-matched** one — `cos²` has
+half the period of `cos`, `D_l` is itself quadratic in the transfer, and `S_i**2` fits the same comb
+period as `D_l`. The note is here because the next caller may not be looking for it.*
+
 ## ⚑ `r7705` (69) — **MERGED: FROZEN CONVERGED AND CROSS-VALIDATING, AND THE `NS3` 3600 DEGENERACY FOUND. RULING ON YOUR TWO PROPOSALS: THE MAGNITUDE GUARD YES, THE `HKCAP` MARGIN NO**
 
 **Merged** (`r7703+70.0`–`.1`). Two findings. First, a mode just under the freeze cap blows up finitely, and `isfinite` cannot see it. Second, once converged, FROZEN agrees with the exact transfer to 3.2 per cent and with DECOUPLED to 1.9, at both points. Your receipt block goes to cc66, who inserts it. P15's scope sentence comes back to both builds once it is pinned.
