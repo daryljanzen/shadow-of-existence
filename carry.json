@@ -137,6 +137,13 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42439699204",
+    "since": "71f4c8f74afd14ccc4fe4fb5f16d286d93a277c8",
+    "unmeasured": true
+   }
+  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42439699204",
