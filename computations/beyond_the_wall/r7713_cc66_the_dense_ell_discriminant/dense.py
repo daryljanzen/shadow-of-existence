@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""`r7713+cc66` the dense-`l` discriminant, idempotent by construction.
+"""`r7713+cc66` the dense-`l` discriminant, idempotent in BLOCKS of `l`.
 
-Each of the four `Pseudo(source, kernel)` combinations is written to its own `.npz` as it completes and
-SKIPPED if that file already exists, because this container restarts unpredictably and a three-hour job
-that cannot resume may never finish.  Re-running after a restart continues rather than starting over.
+⛔ **The first form of this file checkpointed per COMBINATION and that granularity was too coarse.**  The
+container restarted (`up 0 min`, confirmed from `/proc/uptime`, not inferred) after `100` of `693` `l`,
+about five minutes into a thirty-four minute combination, and the whole combination was lost because
+nothing had been written.  ⇒ A checkpoint interval longer than the interval between restarts is not a
+checkpoint.  Blocks of `BLOCK` `l` are now written as they finish and skipped on a re-run, so a restart
+costs at most one block, and the combination file is assembled from the blocks once they are all present.
 
 `Pseudo(S,K)_l = sum_k G_l^K(k)^2 S(k)^2 dk / k`, with `G_l^K(k) = \\int v^K j_l(k x0^K) d eta` built from
 the banked geometry, on the SOURCE arm's `k` grid and EVERY integer `l` with `q = l / l_A^K` in
@@ -24,6 +27,7 @@ OUT = os.path.join(HERE, 'pseudo')
 ACC = {'lcdm': 'r7041_accept_lcdm', 'cr': 'r7041_accept_cr_leafrec1'}
 SRC = {'lcdm': 'r6911_source_lcdm_leafrec1', 'cr': 'r6911_source_cr_leafrec1'}
 QLO, QHI = 0.80, 3.10
+BLOCK = 50        # l per checkpoint: ~2.5 min, well inside the observed restart interval
 
 
 def geom(t):
@@ -40,29 +44,38 @@ def source(t):
 
 
 def build(src_t, ker_t):
-    """one combination, written as it completes; a finished file is read and not recomputed"""
+    """one combination, checkpointed in BLOCKS of `l`; finished blocks are read and not recomputed"""
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f'pseudo__S_{src_t}__K_{ker_t}.npz')
     if os.path.exists(path):
         d = np.load(path)
-        print(f"      S={src_t:5s} K={ker_t:5s}: already on disk, {len(d['y'])} l -- SKIPPED", flush=True)
+        print(f"      S={src_t:5s} K={ker_t:5s}: already assembled, {len(d['y'])} l -- SKIPPED", flush=True)
         return d['q'], d['y']
     k, S2 = source(src_t)
     g = geom(ker_t)
     dk = np.gradient(k)
-    y = np.empty(len(g['ls']))
+    nb = (len(g['ls']) + BLOCK - 1) // BLOCK
     t0 = time.time()
-    for i, l in enumerate(g['ls']):
-        J = spherical_jn(int(l), k[None, :] * g['x0'][:, None])
-        G = np.trapezoid(g['vis'][:, None] * J, g['eta'], axis=0)
-        y[i] = float(np.sum(G ** 2 * dk / k * S2))
-        if i and i % 100 == 0:
-            print(f"        ... {i}/{len(g['ls'])} l, {time.time() - t0:.0f} s", flush=True)
+    for b in range(nb):
+        bp = os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__{b:03d}.npy')
+        if os.path.exists(bp):
+            continue
+        sl = g['ls'][b * BLOCK:(b + 1) * BLOCK]
+        yb = np.empty(len(sl))
+        for i, l in enumerate(sl):
+            J = spherical_jn(int(l), k[None, :] * g['x0'][:, None])
+            G = np.trapezoid(g['vis'][:, None] * J, g['eta'], axis=0)
+            yb[i] = float(np.sum(G ** 2 * dk / k * S2))
+        np.save(bp, yb)                      # written whole; a restart costs at most this block
+        print(f"        S={src_t:5s} K={ker_t:5s} block {b + 1}/{nb} ({len(sl)} l) "
+              f"[{time.time() - t0:.0f} s in this pass]", flush=True)
+    y = np.concatenate([np.load(os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__{b:03d}.npy'))
+                        for b in range(nb)])
+    assert len(y) == len(g['ls']), (len(y), len(g['ls']))
     q = g['ls'] / g['l_A']
     np.savez(path, q=q, y=y, ls=g['ls'], l_A=g['l_A'],
-             meta=json.dumps(dict(source=SRC[src_t], kernel=ACC[ker_t], n_l=len(y),
-                                  wall_s=round(time.time() - t0, 1))))
-    print(f"      S={src_t:5s} K={ker_t:5s}: {len(y)} l written  [{time.time() - t0:.0f} s]", flush=True)
+             meta=json.dumps(dict(source=SRC[src_t], kernel=ACC[ker_t], n_l=len(y), block=BLOCK)))
+    print(f"      S={src_t:5s} K={ker_t:5s}: {len(y)} l ASSEMBLED from {nb} blocks", flush=True)
     return q, y
 
 
