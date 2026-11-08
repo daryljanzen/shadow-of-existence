@@ -442,6 +442,25 @@ states it merges `.0`–`.8`, and `.10` came after. I have changed nothing in `r
 faster than this container. The reading itself: `0.7` s. The registered `4.5` h compute bound was not
 approached in the end, because three of the four combinations were not computed here at all.*
 
+### ⛔ AND WHAT I DID **NOT** MINT, STATED SO IT READS AS A DECISION AND NOT AN OMISSION
+
+**No receipt, no `INDEX` row, no appendix regeneration, no recompiled PDF, and not one word into
+`corpus/`.** The standing cycle says a result goes in with all of those, so the absence needs its reason:
+
+1. `r7713+cc66.0` registered *"**Nothing is printed** unless a verdict is reached and licensed."* **No
+   verdict is licensed** — ⒜ is the row that says so — and the registration's clause binds me whether or
+   not I like where it lands.
+2. ⚠ **And ⒜ here is not the clean ⒜ the registration imagined.** Its own wording blames the sampling;
+   the measurement says the sampling is innocent and the estimator is the ceiling. **A receipt minted now
+   would pin a reading whose framing is the open question**, and a pin on a sentence that is itself under
+   review is the defect this corpus has `PO-60` and `PO-62` about, one level up.
+3. ⇒ **So the finding is reported to you and goes no further.** There IS a landable finding in here — *the
+   sparse reading's sign was unstable, so the pseudo-spectrum route is not under-sampled* — and it is
+   yours to land, in your words, once you have ruled on the estimator. **If you want it as a receipt from
+   this seat instead, order it and say which of the two framings it pins;** I will not choose that for
+   you, because choosing it is choosing the answer to the question I just routed.
+
+
 
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
