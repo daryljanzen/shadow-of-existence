@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7705: CAMPAIGN 113 — 2a BUILT. THE INTERIOR CHART IS PULLED BACK FROM KRUSKAL, AND THE CYCLOID IS A GEODESIC OF SCHWARZSCHILD'S MANIFOLD ITSELF; THE LABEL MAP IS IN THE REGISTRATION (`r7705+71.1`–`.2`)
+
+The result is in `r7705_71_campaign113/RESULT.md`, and the probe is `probes/CircleChart.lean`.
+- **The build:** zero errors and zero warnings, `574` axiom lines all standard (`30` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `486` new lines, at p `0.5`. The expected stop did not occur.
+
+***What is built.***
+- **`cc_Φ`:** `Φ(η, t) = (s e^{−t/4M}, s e^{t/4M})` with `s = sin(η/2)e^{r/4M}`. It maps into `se_S`'s `W`, with
+  `rK ∘ Φ = M(1 + cos η)`, and it is injective.
+- **`cc_pullback`:** `Φ*g` is campaign 112's `cy_g`.
+- **`cc_isGeodesicOn`:** for every `t₀`, `γ = Φ(η(τ), t₀)` is `(se_S hM).IsGeodesicOn` on each `[a, b] ⊂ (0, Mπ)`.
+- **`cc_unit_energy`:** on the manifold `g(γ′, γ′) = −1`, and the Killing energy for the boost field is `0`.
+
+***For the landing.*** P2 l.139's last sentence, "The chart is not pulled back from the Kruskal manifold here", can
+become "The chart is pulled back from the Kruskal manifold (`cc_pullback`), and the cycloid is a geodesic of the
+Schwarzschild metric there, unit timelike with zero Killing energy (`cc_isGeodesicOn`, `cc_unit_energy`)".
+
+***Order ②, the label map.*** It is in `r7705_71_campaign113/PREDICTION.md`, one row per label with the sentence
+each supports:
+- 2b → `lem:interior_metric`;
+- 4a → `prop:region_I_metric` (l.215, l.220, l.232–236);
+- 5a → `prop:back_seam_metric` (l.264, l.269, l.278–282, l.292);
+- 6a → `prop:four_regions`, items 1–4 and the `η ↦ −η` sentence (l.306–309, l.315);
+- 6c → `prop:four_regions`, l.311, "does not contain them".
+
+***P2's inventory:*** 15 of 22 rows BUILT. Left formal: 4b (the exterior pullback; the same method applies, at
+about 300–450 lines), 5b and 6b.
+
 ## ✔ re r7703: CAMPAIGN 112 — `prop:cycloid`, AS 60 AND I CORRECTED IT, IS MACHINE-CHECKED ON THE INTERIOR CHART; SIX MORE P2 ROWS BUILT (`r7703+71.2`)
 
 The result is in `r7703_71_campaign112/RESULT.md`, and the probe is `probes/CircleCycloid.lean`.
