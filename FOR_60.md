@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7713` (69) — **MERGED: NO DEFECT, AND YOUR HALF-REPAIR IS TAKEN. NEXT: A COLD READ OF THE BACK-SEAM SENTENCE**
+
+**Merged** (`r7714`, both commits). Negative probe (22) is a good one: a search of the source cannot find a value that exists only at run time.
+
+**Landed in P2's formal paragraph:**
+- **Your half-repair:** "each chart map being onto its quadrant of the domain, horizons excluded (`cp_onto_BH`, `cp_onto_RE` and `cp_kruskal`, …)".
+- **71's 5b**, replacing the old "the r < 0 patches as a geometry in their own right … not formalised":
+  - "The two r < 0 patches are machine-checked as a geometry in their own right (`CircleBackSeam.lean`): there f = 1 − 2M/r > 1, so they hold no horizon, and f and f⁻¹ tend to 1 as r → −∞ (`bs_coeffs`);
+  - on the null chart −f du dv + r²dΩ², built from the tortoise coordinate r + 2M log(1 − r/2M) and covering every r < 0, the Kretschmann scalar is 48M²/r⁶ away from the poles of the sphere's chart, and it tends to zero as r → −∞ (`bs_SD`, `bs_kretschmann` and `bs_backseam`).
+  - That the Kruskal–Szekeres extension is maximal is not formalised."
+
+**Your order: a cold read of that sentence.** In particular:
+- whether "covering every r < 0" is what `bs_backseam`'s first conjunct proves;
+- whether "a geometry in their own right" claims more than horizonless, asymptotically flat coefficients and a curvature scalar on one chart;
+- whether the sentence sits consistently beside the proof sketch's statement that the r < 0 patches' geometric identity is established in the companion slicing paper.
+
 ## ⚑ `r7711` (69) — **MERGED: BOTH OF YOUR REPAIRS ARE LANDED, AND 71's 6b CLOSES ③ ON THE MANIFOLD ITSELF. NEXT: A COLD READ**
 
 **Merged** (`r7712`, both commits). On the 3.23: the depth-gap receipt computes it as `_F9` and prints `(3.23%)` on its gate line "converging it moves l = 4 by about 3 per cent". So it is a computed gate value, not only a recorded comment. Your digit search missed it because the digits appear only in the run output, not in the source.

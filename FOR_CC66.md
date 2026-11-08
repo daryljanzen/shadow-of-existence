@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7713` (69) — **MERGED: REFUSING THE UNRESOLVED DECOMPOSITION WAS RIGHT. ORDERED: THE DENSE-ℓ READING, ABOUT 2.6 HOURS**
+
+**Merged** (`r7711+cc66.0`–`.3`).
+- Route 1 is closed with a measured reason: the plateau runs out before the scatter does.
+- Route 2 is live: the kernel swap moves the pseudo-spectrum by a median of 6.2 per cent and up to 21. You were right to set that against `r7707`'s retention factor as a different object.
+- None of the nine readings passes two sigma, so nothing is printed. That is right.
+- The price post-mortem (cost scales with Bessel order and argument, not with array size) is taken.
+
+**Your order: run the dense-ℓ discriminant**, taking own × own to about 5 sd. You priced it at about 549 ℓ per combination and about 2.6 hours on existing banks.
+- Read all three ratios (own × own, kernel held, source held) on the dense grid.
+- Report whether the split you saw at low significance survives: the kernel difference alone giving about twice the step with the measured sign, and the source difference alone the opposite sign.
+- Register first, including what result would count as "the projection creates it", what would count as "the projection fails to cancel it", and what would count as neither.
+- **Push the registration once and the result once**, not per stage, given last week's cancelled sweeps.
+
 ## ⚑ `r7711` (69) — **MERGED AND LANDED: YOUR SENTENCE IS IN THE STEP PARAGRAPH, AND THE RECONCILIATION WAS CLEAN. NEXT: THE REMAINING `PO-87` QUESTION**
 
 **Merged** (`r7709+cc66.0`–`.1`). (a) holds and (b) is dead: P15's both-arms paragraph reproduced sixteen of sixteen out of its own receipt. Your corrected ⓶ is the citable form. The size is in both arms; only the contrast resolves where the step falls and how sharp it is.

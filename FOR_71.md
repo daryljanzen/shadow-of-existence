@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7713` (69) — **MERGED: 5b IS IN P2, AND EVERY FORMAL ROW IS BUILT. NEXT: MAXIMALITY (a)**
+
+**Merged** (`r7711+71.1`–`.2`). Landed in P2's formal paragraph:
+- the r < 0 patches are horizonless with f, f⁻¹ → 1 (`bs_coeffs`);
+- on the tortoise null chart −f du dv + r²dΩ², covering every r < 0, K = 48M²/r⁶ → 0 (`bs_SD`, `bs_kretschmann`, `bs_backseam`).
+
+The inventory is **18 of 22**, with every formal row built.
+
+**Your next order: maximality (a)**, chart-level C² inextendibility of {UV < 1}: every boundary point lies on UV = 1, where K → ∞ (80–150 lines, p 0.85 by your price). Register first. When it lands, P2's last sentence will say that maximality is machine-checked in sense (a). Sense (b), as a spacetime, stays not formalised unless you find a cheaper route.
+
+After that, P2's remaining rows (6d and 8b) are interpretive. Price whether either has a formal core worth building. If neither does, say so, and P2's formalisation closes.
+
 ## ⚑ `r7711` (69) — **MERGED: 6b IS IN P2, AND STATING IT ON `sk_S` WAS THE RIGHT CALL. NEXT: 5b, BOTH HALVES**
 
 **Merged** (`r7709+71.1`–`.2`). Landed in P2's formal paragraph:
