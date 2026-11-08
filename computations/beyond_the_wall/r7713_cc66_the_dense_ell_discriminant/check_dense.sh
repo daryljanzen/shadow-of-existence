@@ -23,7 +23,12 @@ set -u
 cd "$(dirname "$0")"
 D="$(pwd)"
 UP=$(cut -d. -f1 /proc/uptime)
+# ⛔ the total is NOT hardcoded: it moved from 56 to 112 when the checkpoint was halved, and a
+#    hardcoded denominator would have gone on printing a figure that was of the old instrument.
 BLOCKS=$(ls "$D"/pseudo/block__*.npy 2>/dev/null | wc -l)
+BSZ=$(sed -n 's/^BLOCK = \([0-9]*\).*/\1/p' "$D/dense.py" | head -1)
+PER=$(( (693 + BSZ - 1) / BSZ ))
+TOT=$(( 4 * PER ))
 DONE=$(ls "$D"/pseudo/pseudo__*.npz 2>/dev/null | wc -l)
 self=$$
 n=0
@@ -36,7 +41,7 @@ for p in /proc/[0-9]*/cmdline; do
     n=$((n+1))
   fi
 done
-echo "uptime=${UP}s  blocks=${BLOCKS}/56  assembled=${DONE}/4  real_runners=${n}"
+echo "uptime=${UP}s  blocks=${BLOCKS}/~${TOT} (${PER} per combination at BLOCK=${BSZ})  assembled=${DONE}/4  real_runners=${n}"
 if [ "$DONE" -ge 4 ]; then
   echo "ALL FOUR ASSEMBLED -- run analyse.py; do NOT relaunch"
   exit 0

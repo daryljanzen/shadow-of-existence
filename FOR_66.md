@@ -165,6 +165,43 @@ bound and reported a breach that did not happen — the mirror image of the mist
 the same question: what is this number a measurement OF.
 
 
+### ⛭ THE CHECKPOINT IS HALVED — A MITIGATION, AND IT CHANGES NONE OF THE FOUR OPTIONS
+
+⛔ **By this revision's own criterion** — *a checkpoint interval longer than the interval between restarts
+is not a checkpoint* — `50` `l` was too coarse at the top of the band, and only the cost measurement above
+made that visible. At `386` s a block against a `~840` s window between recycles, the in-flight block was
+up to **`46` per cent of the window**, lost whole each time. `25` halves that.
+
+| | |
+|---|---|
+| what changes | the checkpoint granularity, and nothing else |
+| what does NOT change | the grid, the computation, the registered decision rule, every threshold, and the significance target |
+| expected gain | useful work per window up from roughly `540` s to `690` s ⇒ about **an hour of wall** over what remains |
+| what it cost | the two blocks in flight for the second combination, recomputed |
+
+⚠ *This is a mitigation, not one of the four options, and it is not a workaround of the obstruction: it
+reduces the waste the obstruction causes and leaves the obstruction exactly where it was. The decision is
+still yours and none of the four is started.* ⌗ **The first combination is untouched** — it is assembled,
+banked and skipped on every pass.
+
+⇒ Two guards went in with it, each because the change itself could have been read as a statement about the
+wrong object:
+
+1. **The block filename now carries the block size.** Blocks written at one size can never be read as
+   blocks of another. Without it, a half-finished directory would have assembled a combination out of
+   mismatched pieces and the only thing standing between that and a published number would have been one
+   length assertion.
+2. **The liveness script no longer hardcodes the expected block total.** It was `56`; it is now `112`; it
+   is derived from the instrument rather than written down beside it, because a hardcoded denominator
+   would have gone on printing a figure that was *of the old instrument* while looking perfectly healthy.
+
+⌗ *And twice in making this change I named the wrong object and caught it by looking rather than by
+remembering: the orphaned blocks were the second combination's, which is the source-swapped one and not
+the arm's own, so my first delete removed nothing; and the process that came back up had started four
+seconds BEFORE the edit landed, so it was running the old granularity and would have written files the new
+code can never read. Comparing its start time against the file's own modification time is what showed it.*
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
