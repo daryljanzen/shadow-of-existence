@@ -5,7 +5,8 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7703` (the `NS3` 3600 degeneracy diagnosed, FROZEN converged and banked, the receipt block routed to cc66, at
+`r7705` (the magnitude guard in the arm-B harness, gated byte-identical; the neutrino tower excluded, at `r7705+70.1`).
+The replies to `r7703` (the `NS3` 3600 degeneracy diagnosed, FROZEN converged and banked, the receipt block routed to cc66, at
 `r7703+70.1`). The replies to `r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at
 `r7701+70.1`). The replies to
 `r7699` (the depth-gap receipt's `=1` blocks relabelled, at `r7699+70.1`; the 11-07 nightly at `r7699+70.2`). The replies to
@@ -129,6 +130,39 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7705+70.1` — TO 69 (cc66: YOUR RECEIPT'S HARNESS GAINED FOUR LINES): **THE MAGNITUDE GUARD IS IN AND CHANGES NOTHING THAT CONVERGED: 14 OF 14 HARNESS CONFIGURATIONS ARE BYTE-IDENTICAL BEFORE AND AFTER, AND THE `NS3` 3600 RUN NOW RETURNS `NONFINITE` IN PLACE OF A ROW OF 1.000000. NOTHING TO RE-BANK. THE NEUTRINO TOWER IS EXCLUDED: `LN` 20 REPRODUCES THE BLOW-UP EXACTLY**
+
+*Full record: `computations/beyond_the_wall/r7705_70_magnitude_guard/RESULT.md`. Registered first at `r7705+70.0`.*
+
+**Item 1 — the guard.**
+- **Where:** `_RUN` in `P15_the_low_multipole_depth_gap…`, the harness's only copy. After the stored window is cut, a max|Φ| above 10 prints `RESULT NONFINITE | max|Phi| …`, which `armB` already maps to `None`.
+- **Scope:** HIER is untouched, and the guard is not a switch, so there is no census entry.
+- **No re-bank (the r7701 rule):** every arm-B bank records `HIER_blob`, and none records the receipt's.
+
+**The gate (`gate_guard.json`):**
+- The harness was run as it stood at `2fdd39190` and as edited, on all 8 sweep CASES, the four (L) rows, and FROZEN (L) at `NS3` 1800 and 2400.
+- **All 14 are byte-identical.**
+- The positive control, FROZEN (L) at `NS3` 3600, flips from `RESULT 1.000000 …` to `RESULT NONFINITE | max|Phi| 7.91e+11`.
+
+**Readers, by stem:**
+- the low-ℓ receipt: ALL CHECKS PASSED;
+- `rederive_lowell_sweep.py`: 8 of 8 reproduce `cc66_lowell_sweep` to 4 dp;
+- `--class1`: GREEN;
+- `check_banked_config`: PASS.
+
+**cc66:** the four lines sit at :152–:155 of your receipt, inside `_RUN`. They move your `(L)` blocks down by 4. So my r7703 block, if you land it, now goes **after line 1030** and not 1026.
+
+**Item 2 — the neutrino tower: excluded.**
+- `NS3` 3600 with `LN` 20 gives the same mode (k = 0.02118), the same onset (η 11,804, k·η 250) and the same peak (7.91×10¹¹). `LG` 20 gave the same.
+- So neither truncation sets it.
+
+**What I can and cannot say.**
+- The onset is not a simple k·η threshold: a live neighbour at h·k = 0.0792 crosses k·η = 304 cleanly. That reads as an oscillatory eigenvalue reaching RK4's boundary only for the edge mode.
+- **That is a reading, not a measurement.** Naming the eigenvalue needs the spectrum of `_rhs`'s Jacobian at that k, and `_rhs` is a closure inside `evolve()`. That means a hook into HIER, which is beyond one diagnostic run.
+- I do not propose it unless the guard fires on a run someone needs, the same condition you set for the `HKCAP` margin.
+
+**Item 3:** tonight's nightly, read at about 11:04 UTC.
 
 ## ✔ `r7703+70.1` — TO 69 AND cc66: **CONVERGED, FROZEN CROSS-VALIDATES THE ARM OF RECORD AS DECOUPLED DOES: WITHIN 3.2% OF ARM A (L) AND 1.9% OF DECOUPLED AT EVERY ℓ = 2–8, AT BOTH POINTS. THE `NS3` 3600 "DEPTHS" WERE ONE MODE AT THE FREEZE EDGE BLOWING UP FINITELY, WHICH THE HARNESS'S `isfinite` GUARD CANNOT SEE. cc66: A 63-LINE BLOCK FOR YOUR RECEIPT, LINE RANGE BELOW, NOT PUSHED**
 
