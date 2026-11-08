@@ -1,0 +1,119 @@
+
+  the block under test: receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py lines 1027-1153, 128 lines, 10 gates
+
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    0  THE CONTROL: the block unperturbed, through this harness
+          checks run / red .. 11 / 0
+
+  LEGS -- each perturbs ONE thing and names the check it must redden
+
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -6.89 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    A  arm A (L) at l = 4 scaled by 1.04 (AWAY from the gate)
+          must redden ....... 'WITHIN 3.2 PER CENT OF ARM A'
+          checks run / red .. 11 / 1
+          red: ⛭⛔ `r7703` ** CONVERGED, FROZEN (L) IS WITHIN 3.2 PER CENT OF ARM A (L) AND 1.9 PER CENT OF DECOUPLED AT
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    B  refit DECOUPLED (L) at l = 3 scaled by 1/1.03
+          must redden ....... '1.9 PER CENT OF'
+          checks run / red .. 11 / 1
+          red: ⛭⛔ `r7703` ** CONVERGED, FROZEN (L) IS WITHIN 3.2 PER CENT OF ARM A (L) AND 1.9 PER CENT OF DECOUPLED AT
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  3.125%   ns3_half: 12.850%   klo_0_02:  3.096%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    C  banked NS3 900 FROZEN at l = 4 set to the converged value
+          must redden ....... 'NS3 900 FROZEN ROW WAS NOT'
+          checks run / red .. 11 / 3
+          red: ⛭⛔ `r7705` ** THE DOUBLED OPACITY GRID MOVES NEITHER BUILD ABOVE THE BANK'S FLOOR, so what it licenses i
+          red: ⛭ `r7705` ** AND THE FIVE-FOLD DEEPER CONTINUUM MOVES BOTH BUILDS, above the floor and so resolvable, by
+          red: ⛭⛔ `r7703` ** AND THE BANKED NS3 900 FROZEN ROW WAS NOT: converging it moves l = 4 by about 3 per cent, 
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.030%   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    D  FROZEN ntau_x2 at l = 4 bumped one last place
+          must redden ....... 'DOUBLED OPACITY GRID MOVES NEITHER'
+          checks run / red .. 11 / 1
+          red: ⛭⛔ `r7705` ** THE DOUBLED OPACITY GRID MOVES NEITHER BUILD ABOVE THE BANK'S FLOOR, so what it licenses i
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    E  FROZEN ns3_half set equal to the FROZEN reference (the dead-knob world)
+          must redden ....... 'ONE KNOB DISCRIMINATES'
+          checks run / red .. 11 / 1
+          red: ⛭⛭⛔ `r7705` ** AND ONE KNOB DISCRIMINATES, WHICH IS WHAT MAKES DECOUPLED'S ZERO A MEASUREMENT: halving t
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    F  one convergence row stored to six decimals
+          must redden ....... 'STORED TO FOUR DECIMALS'
+          checks run / red .. 11 / 1
+          red: ⛭⛔ `r7705` ** THE ROWS ARE STORED TO FOUR DECIMALS, SO THE BANK'S FINEST EXPRESSIBLE MOVE AT l = 4 IS 0.
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  1.007%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    G  DECOUPLED klo_0_02 at l = 3 scaled by 1.01
+          must redden ....... 'FIVE-FOLD DEEPER CONTINUUM'
+          checks run / red .. 11 / 1
+          red: ⛭ `r7705` ** AND THE FIVE-FOLD DEEPER CONTINUUM MOVES BOTH BUILDS, above the floor and so resolvable, by
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    H  hierarchy bank's refit SPLITCLOCK struck to null
+          must redden ....... 'SO DOES THE HIERARCHY BANK'
+          checks run / red .. 11 / 1
+          red: ⛭⛔ `r7705` ** AND SO DOES THE HIERARCHY BANK, ON EVERY ROW THIS RECEIPT READS -- which `r7697` never ask
+
+  ⛭ `r7703`/`r7705` THE THREE KNOBS ON (L), BOTH BUILDS -- largest move over l = 2-8, against a bank floor of 0.010-0.029%
+    decoupled  ntau_x2:  0.000% (under the floor)   ns3_half:  0.000% (under the floor)   klo_0_02:  0.360%
+    frozen     ntau_x2:  0.000% (under the floor)   ns3_half: 10.039%   klo_0_02:  0.366%
+  ⛭ `r7703` FROZEN (L) CONVERGED (h^2 limit of NS3 1800 / 2400), per cent of arm A (L)
+    distances l2: -3.03 l3: +0.91 l4: -3.17 l5: -1.42 l6: -0.33 l7: -0.10 l8: -0.14
+    refit     l2: -3.05 l3: +0.98 l4: -3.07 l5: -1.39 l6: -0.35 l7: +0.01 l8: -0.14
+  OK    I  converged FROZEN NS3 2400 at l = 4 scaled by 1.01
+          must redden ....... 'NS3 2400 sits within 0.4 per cent'
+          checks run / red .. 11 / 1
+          red: ⛭ `r7703` the converged FROZEN row is converged: NS3 2400 sits within 0.4 per cent of the h^2 limit at e
+
+  the control is green and 9 of 9 legs reddened their named check
+  ✓ EVERY PIN IN THE BLOCK IS FAILABLE
