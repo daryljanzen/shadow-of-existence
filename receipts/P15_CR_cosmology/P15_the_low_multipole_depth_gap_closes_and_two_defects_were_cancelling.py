@@ -149,6 +149,10 @@ with contextlib.redirect_stdout(io.StringIO()):
 if not np.all(np.isfinite(Y[:,:,2])):
     print('RESULT NONFINITE | eta_end %.1f'%H.eta_end); raise SystemExit
 m=E>max(e_sw,H.eta_rec-160.0); ee,Yv=E[m],Y[m]
+# r7705+70 (69's ruling): a FINITE blow-up passes the isfinite guard above.  At NS3 3600 one mode at the HKCAP edge
+# grew to |Phi| ~ 8e11 and the ratio returned 1.000000 at every l.  Every sane run stores max|Phi| <= 0.93.
+if float(np.max(np.abs(Yv[:,:,2])))>10.0:
+    print('RESULT NONFINITE | max|Phi| %.3g in the stored window, eta_end %.1f'%(float(np.max(np.abs(Yv[:,:,2]))),H.eta_end)); raise SystemExit
 g=np.array([float(H.g_of(e)) for e in ee]); tau=np.array([float(H.tau_of(e)) for e in ee])
 with contextlib.redirect_stdout(io.StringIO()):
     Sm,Sd,Si,Sq=H.source_terms(ee,Yv,kk,g,tau)

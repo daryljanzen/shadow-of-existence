@@ -15,7 +15,17 @@ DUMP = f"""
 np.savez({out!r}, E=E, Phi=Y[:,:,2], Th0=Y[:,:,0], kk=kk, Cc=Cc, Cd=Cd, ls=ls, r=r, e_sw=e_sw,
          eta_end=H.eta_end, eta_0=H.eta_0, eta_rec=H.eta_rec, D2=Delta(2))
 """
-run = ns['_RUN'] + DUMP
+# r7705+70: the harness now carries the magnitude guard, which stops a blow-up before this dump. DIAG_PRE=<rev> runs
+# the harness as it stood at that revision (the guard's own positive control is in r7705_70_magnitude_guard).
+_RUN = ns['_RUN']
+if os.environ.get('DIAG_PRE'):
+    import ast
+    _src = subprocess.run(['git', 'show', os.environ['DIAG_PRE'] + ':receipts/P15_CR_cosmology/'
+                           'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py'],
+                          cwd=HERE, capture_output=True, text=True).stdout
+    _RUN = next(ast.literal_eval(n.value) for n in ast.parse(_src).body if isinstance(n, ast.Assign)
+                and any(getattr(t, 'id', None) == '_RUN' for t in n.targets))
+run = _RUN + DUMP
 env = dict(os.environ, BH0=f"{BG[0]}", BOM=f"{BG[1]}", BR0=f"{ns['R0'][BG]:.10f}", HIER_DIR=ns['HIER_DIR'])
 for k in ('ZEND', 'ZDEC', 'NTAU', 'KLO', 'NLOW', 'NS3', 'HKCAP'): env.pop(k, None)
 env.update({k: str(v) for k, v in dict(CASES['FROZEN_adjudicated_KLO_0_1'], NS3=n3, SPLITCLOCK='L', **XTRA).items()})

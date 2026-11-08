@@ -1,0 +1,11 @@
+  done FROZEN_control_KLO_0_1 in 58.9s   worst |live-bank| = 4.600e-05   after rounding live to 4 dp = 0.000e+00
+  done FROZEN_control_KLO_0_02 in 56.3s   worst |live-bank| = 4.900e-05   after rounding live to 4 dp = 0.000e+00
+  done FROZEN_adjudicated_KLO_0_1 in 59.5s   worst |live-bank| = 4.300e-05   after rounding live to 4 dp = 0.000e+00
+  done FROZEN_control_NTAU_300000 in 61.7s   worst |live-bank| = 4.600e-05   after rounding live to 4 dp = 0.000e+00
+  done FROZEN_control_default_cut_z_53_5_KLO_0_1 in 58.3s   worst |live-bank| = 3.500e-05   after rounding live to 4 dp = 0.000e+00
+  done DECOUPLED_control_KLO_0_1_NS3_60000 in 510.4s   worst |live-bank| = 3.900e-05   after rounding live to 4 dp = 0.000e+00
+  done DECOUPLED_adjudicated_KLO_0_1_NS3_60000 in 498.0s   worst |live-bank| = 4.600e-05   after rounding live to 4 dp = 0.000e+00
+  done DECOUPLED_control_NS3_30000 in 271.3s   worst |live-bank| = 3.900e-05   after rounding live to 4 dp = 0.000e+00
+
+  wrote /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/rederive.json  (8 of 8 configurations)
+rederive rc=0
