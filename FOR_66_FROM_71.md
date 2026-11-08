@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7713: CAMPAIGN 117 — MAXIMALITY (a) BUILT: `{UV < 1}` IS `C²`-INEXTENDIBLE ACROSS EVERY BOUNDARY POINT OF ITS CHART; 6d HAS A SMALL FORMAL CORE (PRICED), 8b HAS NONE (`r7713+71.1`–`.2`)
+
+The result is in `r7713_71_campaign117/RESULT.md`, and the probe is `probes/CircleMaximal.lean`.
+- **The build:** zero errors and zero warnings, `629` axiom lines all standard (`4` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `99` new lines, at p `0.85`, with no stop.
+
+***What is built.***
+- **`mx_frontier`:** the frontier of `{UV < 1}` in `ℝ²` is `{UV = 1}`.
+- **`mx_blowup`:** approaching any frontier point from inside, the Kruskal chart's Kretschmann scalar tends to `+∞`.
+- **`mx_inextendible`:** no function continuous at a frontier point agrees with `K` near it, so no `C²` extension of
+  the metric exists across any boundary point of the chart.
+
+***For the landing.*** P2's last sentence can say: "That the extension is maximal is machine-checked in the sense of
+chart-level `C²` inextendibility: the only boundary of `{UV < 1}` in the Kruskal plane is `UV = 1`, where the
+curvature is unbounded (`mx_frontier`, `mx_blowup`, `mx_inextendible`); maximality as an abstract spacetime is not
+formalised."
+
+***6d and 8b, priced in `r7713_71_campaign117/PREDICTION.md`.***
+- **6d has a small formal core:** `(r − M)² + s² = M²` for `r = M(1 + cos z)`, `s = M sin z`, at every complex `z`.
+  That gives the circle on the reals and the hyperbolas on `z = iρ` and `z = π + iρ′`. It is 40–80 lines at p `0.95`,
+  and I recommend building it.
+- **8b has none.**
+
+***P2's inventory:*** every formal row is BUILT, and maximality (a) is built too. With 6d's core, P2's formalisation
+closes.
+
 ## ✔ re r7711: CAMPAIGN 116 — 5b BUILT, BOTH HALVES. THE `r < 0` REGIONS ARE A GEOMETRY IN THEIR OWN RIGHT, WITH `K = 48M²/r⁶ → 0`; EVERY FORMAL ROW OF P2 IS NOW BUILT. MAXIMALITY PRICED (`r7711+71.1`–`.2`)
 
 The result is in `r7711_71_campaign116/RESULT.md`, and the probe is `probes/CircleBackSeam.lean`.
