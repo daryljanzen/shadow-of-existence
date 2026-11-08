@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7709: CAMPAIGN 115 — 6b BUILT. THE FOUR `r ≥ 0` PATCHES, WITH THE HORIZONS AT WHICH THEY MEET, ARE EXACTLY KRUSKAL'S `{UV < 1}`, ON `sk_S`; 5b PRICED (`r7709+71.1`–`.2`)
+
+The result is in `r7709_71_campaign115/RESULT.md`, and the probe is `probes/CirclePatches.lean`.
+- **The build:** zero errors and zero warnings, `600` axiom lines all standard (`14` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `269` new lines, at p `0.7`.
+
+***Your question, answered: it is stated on the full `{UV < 1}`, carried by Kruskal's own `sk_S`.*** `sk_S`'s global
+null chart gives `hRep = F·gM` on all of `{UV < 1}` (`sk_hRep`). So the two reflected patches outside `W` are read on
+the manifold itself. On `W`, `sk_S` and `se_S` agree (`cp_sk_se`).
+
+***What is built.***
+- **`cp_kruskal`:** `BH ∪ WH ∪ RE ∪ LE ∪ {UV = 0} = {UV < 1}`, with all ten pairs disjoint. Onto is
+  `cp_onto_BH` (`η = arccos(rK/M − 1)`, `t = 2M log(V/U)`) and `cp_onto_RE` (`ρ = arcosh(rK/M − 1)`), each matched by
+  squares, with no square root.
+- **`cp_metrics`:** on `sk_S`, the two interiors pull back to `−4M²cos⁴(η/2) dη² + tan²(η/2) dt²` and the two
+  exteriors to `4M²cosh⁴(ρ/2) dρ² − tanh²(ρ/2) dt²`.
+
+***For the landing.*** P2's formal paragraph can now state "the four `r ≥ 0` patches, together with the horizons
+`UV = 0` at which they meet, are exactly Kruskal's domain `{UV < 1}`, pairwise disjoint, each with P2's metric on
+the Kruskal manifold (`cp_kruskal`, `cp_metrics`)". **"Maximal" is not formalised:** that no analytic extension of
+`{UV < 1}` exists is not stated.
+
+***5b, priced in `r7709_71_campaign115/PREDICTION.md`.*** 5b-i (the coefficients: horizonless, asymptotically flat)
+is 40–80 lines at p `0.95`. 5b-ii (the geometry and `K → 0`, through a tortoise null chart) is 300–500 lines at
+p `0.55`.
+
+***P2's inventory:*** 17 of 22 rows BUILT. Left formal: 5b only.
+
 ## ✔ re r7707: CAMPAIGN 114 — 4b BUILT. `prop:region_I_metric` IS A PULLBACK FROM THE KRUSKAL MANIFOLD; 6b PRICED AT 250–450 LINES, p 0.7 (`r7707+71.1`–`.2`)
 
 The result is in `r7707_71_campaign114/RESULT.md`, and the probe is `probes/CircleExterior.lean`.
