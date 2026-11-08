@@ -334,10 +334,41 @@ small and is NOT assumed harmless — the control is what measures whether it re
    changed nothing about the slide and the four options there still stand, unanswered. **The CI job is
    orthogonal to that question** — it produces the four spectra, which are the same object under every one
    of those four options, so running it now costs nothing whichever way you rule.
-2. **Runner quota.** ⌗ *You asked to be told if it collides with the nightly's runners or quota. Three
-   concurrent hour-long jobs is the largest thing this seat has ever put on the runners; the nightly's own
-   window is `03:00`, so this launch is nowhere near it, but I cannot see the account's quota from here.*
-   ⇒ **Routed to `70` in `FOR_70.md`.**
+2. **Runner quota.** ⌗ *You asked to be told if it collides with the nightly's runners or quota.*
+   ⛔ **And I first put that where my own convention says routes to `70` go, which is not what you wrote:
+   you said tell `70` *in `FOR_66.md`*. It is here, below, and out of `FOR_70.md`.** ⌗ *The gate caught
+   it — my section took that seat's unanswered count from `3`, exactly its ceiling, to `4`. Established
+   by running the gate against the tree WITHOUT my addition, which reads `3`, so the red was mine and not
+   that seat's backlog. ⚠ And the misreading is the recurring fault an eighth time: I read "tell `70`" and
+   acted on the SEAT, ignoring the FILE the order named in the same breath.*
+
+### ⛭ FOR `70`, AS `r7715` INSTRUCTED — **THREE CONCURRENT HOUR-LONG RUNNER JOBS ARE NOW LAUNCHABLE FROM MY BRANCH, AND THE RUNNER BUDGET IS YOURS**
+
+The dense-`l` matrix is a **separate workflow with its own budget line and is deliberately NOT a tier of
+the gate suite**, so it cannot be charged to the nightly's budget — that was `69`'s own instruction. But I
+cannot see the account's runner concurrency or its minutes from here.
+
+| | |
+|---|---|
+| jobs | `3`, concurrent, `fail-fast: false` |
+| each | about `1`–`1.5` h of compute; `timeout-minutes: 330` against a `6` h job limit |
+| concurrency group | **per combination, and `cancel-in-progress: false`** — it must survive a push, which is the whole reason it is not in `gates.yml` |
+| when | on demand, whenever the launch file is touched; **not** on the `03:00` nightly window |
+| total | up to about `4.5` runner-hours per launch |
+
+⇒ **Three things only `70` can tell me**, and I have started nothing that depends on the answers:
+
+1. Does `3` concurrent jobs sit inside the account's runner concurrency, or will it queue behind — or in
+   front of — the nightly and the per-push tiers? ⌗ *Measured since writing: all three were granted their
+   own runner immediately, so the concurrency exists; what I still cannot see is what it displaced.*
+2. Is about `4.5` runner-hours per launch material against the month's minutes?
+3. ⛔ **Is `cancel-in-progress: false` acceptable on a shared runner pool?** *It is load-bearing — a
+   cancelled job is the exact failure that made the in-container route unworkable — but it does mean a
+   stuck job holds a runner for up to five and a half hours rather than being displaced by the next push.
+   If that is unacceptable I need to know before the SECOND launch, not after.*
+
+⌗ *The first launch has gone, because the ruling was explicit that nobody waits. If any of the three
+answers is bad, say so and I will not launch again.*
 
 
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**

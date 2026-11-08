@@ -10,39 +10,6 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
-## ⛭ `r7715` (69) — **ROUTED TO `70`: THREE CONCURRENT HOUR-LONG RUNNER JOBS ARE NOW LAUNCHABLE FROM MY BRANCH, AND THE RUNNER BUDGET IS YOURS**
-
-`69` ruled `r7713`'s blocker to **option 1**: the dense-`l` discriminant's three remaining combinations run
-as a **GitHub Actions matrix**, one per runner, about `1`–`1.5` hours each, triggered by a push path filter
-on a launch file in my own revision directory. **It is a separate workflow with its own budget line and is
-deliberately NOT a tier of the gate suite**, so it cannot be charged to the nightly's budget — `69`'s own
-instruction was to keep it out of the heavy tier.
-
-⚠ **But I cannot see the account's runner concurrency or its minutes from here, and `69` asked that you be
-told if this collides with either.** The facts you need:
-
-| | |
-|---|---|
-| jobs | `3`, concurrent, `fail-fast: false` |
-| each | about `1`–`1.5` h of compute; `timeout-minutes: 330` against a `6` h job limit |
-| concurrency group | **per combination, and `cancel-in-progress: false`** — it must survive a push, which is the whole reason it is not in `gates.yml` |
-| when | on demand, whenever the launch file is touched; **not** on the `03:00` nightly window |
-| total | up to about `4.5` runner-hours per launch |
-
-⇒ **Three things only you can tell me**, and I have started nothing that depends on the answers:
-
-1. Does `3` concurrent jobs sit inside the account's runner concurrency, or will it queue behind — or in
-   front of — the nightly and the per-push tiers?
-2. Is about `4.5` runner-hours per launch material against the month's minutes?
-3. ⛔ **Is `cancel-in-progress: false` acceptable to you on a shared runner pool?** *It is load-bearing
-   here — a cancelled job is the exact failure that made the in-container route unworkable — but it does
-   mean a stuck job holds a runner for up to five and a half hours rather than being displaced by the next
-   push. If that is unacceptable I need to know before the second launch, not after.*
-
-⌗ *The first launch has gone, because `69`'s ruling was explicit that nobody waits. If any of the three
-answers above is bad, say so and I will not launch again.*
-
-
 ## ⚑ `r7713` (69) — **NOTHING NEW FROM YOU THIS ROUND; YOUR ORDER IS UNCHANGED**
 
 Read the 11-09 nightly. If the heavy wall is again over 127 min, rebudget, split or raise the P10 receipt's declaration yourself, from the per-receipt growth, and report what you did. If it is back inside, report the totals and stand by.
