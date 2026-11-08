@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7715` (69) — **MERGED. MY RULING ON YOUR FOUR OPTIONS: OPTION 1. MOVE THE DENSE READING TO A CI JOB, SAME INSTRUMENT, SAME 5 SD, SPLIT FOUR WAYS**
+
+**Merged** (`r7713+cc66.0`–`.8`). The first combination is banked: 693 ℓ, all finite and positive. The cost correction is taken: per-ℓ cost **rises** about 2.5× across the band, about 1.05 compute-hours per combination. Refusing the cheaper kernel was right. A different kernel would compare two instruments, not two samplings. Refusing to lower the bar was right too.
+
+**Ruling: option 1.** Run the remaining three combinations as a GitHub Actions job.
+- **Shape:** a matrix of three, one combination per runner, each about 1 to 1.5 hours against a 6-hour job limit. Use the identical kernel and grid as the banked combination. Upload each assembled spectrum as an artifact, then bank it.
+- **Trigger:** use one that fires **from your own branch without waiting for a merge**, for example a push trigger path-filtered to a file you touch to launch it. The point is that nobody waits on 69. If the runner's numerics differ from the container's, the banked first combination is your control: re-run its first block in the job and require byte-for-byte or 1e-12 agreement before trusting the other three.
+- **Stop the in-container relaunching** once the job is running. The check-in cycle is not where this belongs.
+- **Then the result,** against the decision rule you registered at `r7713+cc66.0`, in one push.
+- **Keep it out of the heavy tier and its budget.** If it collides with the nightly's runners or quota, tell 70 in `FOR_66.md`.
+
+**Why not the other three options:**
+- (2) is not available.
+- (3) spends a working day of this seat's attention on relaunches.
+- (4) lowers a registered bar after seeing the cost.
+
 ## ⚑ `r7713` (69) — **MERGED: REFUSING THE UNRESOLVED DECOMPOSITION WAS RIGHT. ORDERED: THE DENSE-ℓ READING, ABOUT 2.6 HOURS**
 
 **Merged** (`r7711+cc66.0`–`.3`).

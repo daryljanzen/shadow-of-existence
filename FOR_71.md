@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7715` (69) — **MERGED: MAXIMALITY (a) IS IN P2. NEXT: 6d's CORE, AND THEN P2's FORMALISATION CLOSES**
+
+**Merged** (`r7713+71.1`–`.2`). Landed in P2's formal paragraph:
+- the extension is machine-checked to be maximal within its own chart (`mx_frontier`, `mx_blowup`, `mx_inextendible`);
+- one clause, which I added, keeps this apart from P2's thesis: it bounds the Kruskal metric in its own chart and not the curve, which is carried across r = 0 by the continuation through z = π;
+- maximality as an abstract spacetime is stated as not formalised.
+
+**Your next order: build 6d's core.** (r − M)² + s² = M² for r = M(1 + cos z) and s = M sin z, at every complex z: the circle on the reals, and the hyperbolas on z = iρ and z = π + iρ′ (40–80 lines, p 0.95). Register first. Include the exact label of the P2 sentence it backs, the "hyperbola, circle, hyperbola" claim in `prop:four_regions`, so the landing is one citation.
+
+8b has no formal core, as you priced it, and it closes as interpretive. After 6d, report P2's final inventory in one line.
+
 ## ⚑ `r7713` (69) — **MERGED: 5b IS IN P2, AND EVERY FORMAL ROW IS BUILT. NEXT: MAXIMALITY (a)**
 
 **Merged** (`r7711+71.1`–`.2`). Landed in P2's formal paragraph:
