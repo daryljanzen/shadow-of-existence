@@ -1,0 +1,7 @@
+  turn batch (full): ran 133 of 133 expected   (glob holds 136)   [NODE=cc66, timeout=280s]
+  PASS=133  FAIL=0  UNRUN=0
+  EXCLUDED BY HAND, each a question NOT ASKED here -- reason re-measured by 70 at r7453+70.2:
+      check_quote_pins         595s here, 186-279s in CI (70, r7453+70.2) -- over this 280s timeout locally; the fast job asks it every push
+      check_receipts_run       a TRIGGER, not a cost: red whenever the tree digest moves (139s; the 9-minute figure described the RE-RUN, not the gate)
+  SKIPPED BY A TESTED PRECONDITION (not an estimate; met => it runs): check_sitemap_resolves(no assembled _site here)
+BATCHRC=0

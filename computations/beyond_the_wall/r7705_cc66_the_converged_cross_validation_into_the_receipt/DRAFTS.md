@@ -99,5 +99,11 @@ absent-paper pin — and I accounted for one. So, named here rather than discove
 2. **"four tenths of a per cent"** is a new worded figure at the same site, pinned by `< 0.0040`.
 3. **No quote-pin key is minted by this draft** — the sentence is prose, not a quoted source line, and the
    two existing `quote_pin_baseline` rows for this receipt are `SOURCE` sentences untouched by the block.
+   ⛭ **And that is now MEASURED and not reasoned:** `check_quote_pins` was run on this tree (`rc 0`, the
+   `595` s local cost paid rather than left to CI) — *"no new key, no stale entry"*, with `0` unadjudicated
+   against ceilings of `60`, `102` and `2287`. *The reasoning above would have been equally confident if
+   the block's added source lines had minted a key, which is exactly how `r7697`'s second entry went
+   unaccounted.* `check_paper_pins_present` likewise: `rc 0`, no new absent PAPER pin, seed reading both
+   ways.
 4. **No absent-paper pin is minted**, because nothing in the draft is forward-looking: every figure in it is
    computed by the receipt it cites, today.

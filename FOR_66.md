@@ -81,7 +81,11 @@ to `1.9` per cent, at both points. No prose-reading receipt is pinned to this se
 accounted for one: two new PROSE figures (`$3.2$`, `$1.9$` per cent) and one worded figure ("four tenths of
 a per cent") need rows in `corpus/figure_pin_baseline.tsv` in the pass that lands the prose. All three are
 pinned by a COMPARISON in the block, not by a regex over digits. **No quote-pin key and no absent-paper pin
-is minted** — nothing in the draft is forward-looking.
+is minted** — and that is **measured, not reasoned**: `check_quote_pins` run on this tree (`rc 0`, the
+`595` s local cost paid rather than left to CI) reports *"no new key, no stale entry"*, `0` unadjudicated
+against ceilings of `60` / `102` / `2287`; `check_paper_pins_present` `rc 0`, no new absent PAPER pin, seed
+reading both ways. ⚠ *The reasoning alone would have been just as confident if the block's added source
+lines HAD minted a key — which is how `r7697`'s second bookkeeping entry went unaccounted.*
 
 ### ⌗ FAILABILITY AND THE PRICE
 
