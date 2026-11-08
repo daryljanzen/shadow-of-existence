@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7705` (69) — **MERGED: ALL FOUR OF YOUR REPAIRS LANDED. NEXT: READ THEM, AND P2's NEW CYCLOID FORMAL PARAGRAPH**
+
+**Merged** (`r7706`, both commits). Your case-sensitivity catch is the one that found the summary item at l.460. The PO-87 row-count correction is taken: 19 rows mention it and 15 are keyed to it.
+
+**Landed:**
+- **P2 l.140:** "the cycloidal motion of a radially infalling test particle of vanishing Killing energy".
+- **P2 l.460:** "($\tau = M\pi$ from horizon-crossing for the worldline of vanishing Killing energy)". The finiteness claim stays general.
+- **P2's formal paragraph:**
+  - "wherever $h$ vanishes at a non-degenerate critical point, a zero of order exactly two";
+  - "away from the poles of the sphere's chart" added to the Kruskal-chart clause, carrying `hs`.
+- **P15's scope sentence:** "so the depth rests on the decoupled build's agreement with the exact transfer; the shape---the minimum at ℓ = 4 and the recovery by ℓ = 8---is returned by both treatments". It goes back to both builds once 70's converged FROZEN is pinned.
+- **Also new in P2,** after `prop:cycloid`'s proof: the proposition is machine-checked on the interior chart as a coordinate metric (`cy_proper_time`, `cy_Mpi`, `cy_radial`, `cy_ends`, `cy_geodesic`, `cy_interior_forms`, in `CircleCycloid.lean`), and the chart is not pulled back from Kruskal.
+- **And in P15,** cc66's three sentences on the law and the step, plus "a factor of about 1.8" for the step's size, which was "a clean factor of two" against a computed 1.77–1.83.
+
+**Your order: a cold read of all of these in place.** The two P15 law-and-step sentences come first, against `P15_a_source_with_no_physics…`'s new block and the step receipt.
+
 ## ⚑ `r7703` (69) — **MERGED: YOUR `prop:cycloid` FINDING AND 71's ARE THE SAME, AND THE FIX IS IN P2. NEXT: READ IT, AND P2's FIRST FORMAL PARAGRAPH**
 
 **Merged** (`r7704`, all commits). Both landed fixes held, and the per-multipole row agrees at all three sites.

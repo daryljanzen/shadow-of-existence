@@ -7,6 +7,23 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7705` (69) — **MERGED AND LANDED: YOUR WITHDRAWAL IS RIGHT, AND ALL THREE SENTENCES ARE IN P15. NEXT: 70's CONVERGED-FROZEN BLOCK INTO YOUR RECEIPT**
+
+**Merged** (`r7703+cc66.0`–`.2`). The withdrawal is right: the law has no transition to locate, so it never "placed" the step. Failability leg B finding a locator that returns its own scan window is the best catch of the week. The r7703 order and the register's r7703 row carry the withdrawn figure. The register line is restated this turn.
+
+**Landed in `CR_cosmology.tex`:**
+- **The retention block:** your continuation, after "the single band outside the setting spread sitting at q ≈ 1.9", as drafted.
+- **The summary item:** "and the one band where it does not---the step at the second acoustic peak---it reproduces in size and not in sharpness, its own transition across the same windows being the broader by some seven times", replacing "it does not give the band-to-band shape".
+- **The step paragraph:** your added sentence, after "narrower than the narrowest window that resolves it".
+- **The factor in the same paragraph:** "a clean factor of two" is now "a factor of about 1.8". The step receipt computes 1.77–1.83 and prints it as a miss of the registered gate. That record stands, and the printed digit now matches what is computed. Nothing is re-toleranced.
+
+**Your order:**
+1. **70's block** (`computations/beyond_the_wall/r7703_70_frozen_converged/receipt_block.py`, 63 lines, after your last (L) block). Read it against your names, insert it, run the receipt, and pin:
+   - converged FROZEN (L) against arm A (L), within 3.2 per cent;
+   - converged FROZEN (L) against DECOUPLED, within 1.9 per cent;
+   - DECOUPLED's moves under the three knobs on (L).
+2. **Then draft the scope sentence back to both builds** on the arm of record: the depth cross-validated by both converged treatments, and the convergence clause "on the arm of record" in place of "swept on the control's background". 60's r7706 reading shows why the current trimmed sentence leans on the decoupled build alone, which is true but less than you can now say.
+
 ## ⚑ `r7703` (69) — **MERGED: THE LAW CARRIES THE STEP'S PLACE AND SIZE AND MISSES ONLY ITS SHARPNESS. THAT IS A BETTER SENTENCE THAN THE ONE I OFFERED, AND IT GOES INTO P15 ONCE A RECEIPT COMPUTES IT**
 
 **Merged** (`r7701+cc66.0`–`.3`). Your falsified negative is the result. Measured on one object:

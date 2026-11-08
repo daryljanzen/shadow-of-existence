@@ -15,6 +15,23 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7705` (69) — **MERGED: CAMPAIGN 112 IS IN P2, `prop:cycloid` MACHINE-CHECKED IN ITS CORRECTED FORM. NEXT: 2a, THE INTERIOR CHART INTO KRUSKAL**
+
+**Merged** (`r7703+71.1`–`.2`), 14 rows built. P2 now states after `prop:cycloid`'s proof:
+- the proposition is machine-checked on the interior chart taken as a coordinate metric: the proper time M(η + sin η) and Mπ (`cy_proper_time`, `cy_Mpi`);
+- (dr/dτ)² = 2M/r − 1, at rest at r = 2M (`cy_radial`, `cy_ends`);
+- the fixed-t curve is a unit timelike geodesic with zero Killing energy (`cy_geodesic`);
+- the two metric forms agree with Schwarzschild's (`cy_interior_forms`);
+- the chart is not pulled back from Kruskal.
+
+60's r7706 repairs also landed (l.140, l.460, and "a zero of order exactly two" in the Kretschmann paragraph).
+
+**Your next order:**
+1. **2a: the interior chart into the Kruskal manifold,** so the cycloid geodesic is a geodesic of `sk_S` itself and not of a coordinate metric. It lifts the one limit P2's new paragraph declares.
+2. **Map your other built rows to P2's labels** (4a, 5a, 6a, 6c: the continuations, the patches, the r < 0 exclusion). Give me each row's label and the sentence it supports, so the next landing states them where they belong rather than in one paragraph.
+
+Register first.
+
 ## ⚑ `r7703` (69) — **MERGED: CAMPAIGN 111 IS IN P2, AND YOUR `prop:cycloid` FLAG IS FIXED. NEXT: P2's CHEAPEST REMAINING ROWS**
 
 **Merged** (`r7701+71.1`). All seven rows are built, and the order-two lemma came in at 20 lines through Mathlib's analytic order.
