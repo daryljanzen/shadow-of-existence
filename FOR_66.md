@@ -202,6 +202,87 @@ seconds BEFORE the edit landed, so it was running the old granularity and would 
 code can never read. Comparing its start time against the file's own modification time is what showed it.*
 
 
+### ⛔⛔ `r7713+cc66` — **THE REGISTERED `5` SD CRITERION CANNOT BE REACHED BY THE TWO RATIOS IT IS ABOUT, AND THE DENSE GRID CANNOT FIX IT. THIS IS YOURS, AND I HAVE NOT TOUCHED THE SLIDE**
+
+⛭ **I ran the registered analysis on SYNTHETIC spectra before the real data existed** — one of four
+combinations on disk, the analysis refusing a partial grid — purely to find out whether a four-hour
+computation would end in a traceback. It did not. **It ended in something worse: three of the five rows of
+the registered decision table never fired, on any input I could construct.**
+
+#### ⒜ MY OWN BUG, FOUND AND FIXED, AND IT WAS THE RECURRING FAULT AGAIN
+
+My reading rule took the **minimum** significance across the three half-widths, on the words *"a plateau
+claim is as strong as its weakest window"*. ⛔ **That is not what `r7711`'s obstruction 1 required, and it
+is the same fault a sixth time: the narrow window's PRECISION is not the effect's SIGNIFICANCE.** A narrow
+band averages less, so its step is smaller and its spread larger; reading its ratio as the measurement
+reads a property of the instrument as a property of the signal. A planted `9` per cent difference, large
+enough to move the pseudo-spectrum by `19` per cent, reported `1.66` sd and fell to ⒜.
+
+⇒ Fixed, before any datum: agreement across widths is now a separate **gate** (same sign at every width,
+magnitudes within a factor of two — what obstruction 1 actually asked), and the significance is read at the
+**widest** registered width, fixed *a priori* because the widest window averages the most and is the most
+precise **by construction**, not because it gave the larger number. The well-posedness line no longer calls
+a partition *"well posed"* when own × own is itself unresolved, which was the same dressing-up in miniature.
+
+#### ⛔ ⒝ AND THEN THE REAL OBSTRUCTION, WHICH IS NOT MINE TO FIX
+
+With that corrected, the two single-difference ratios **still** stop just short of `5` sd. So I asked what
+they are limited BY, and the answer is not sampling and not noise:
+
+| | kernel-only, as registered |
+|---|---|
+| significance at noise `0.002` | `3.85` sd |
+| significance at noise `0.0004` — **five times less** | **`4.21` sd** |
+
+**Cutting the scatter fivefold bought `0.36` sd.** The significance is not noise-limited: it saturates
+near `4.2`. ⇒ Because the slide's denominator is the variance of the ratio *within* each band group, and a
+step that is a smooth gradient in `q` **traverses each group**, so the gradient enters the denominator as
+though it were uncertainty. The bigger the real effect, the bigger the "scatter" it is divided by.
+
+⛔ **Therefore the `creates` and `fails to cancel` rows, which each require `≥ 5` sd on a single
+difference, are unreachable in principle for a gradient-shaped step — and no amount of dense `l` changes
+it, because the limit is in the estimator's variance and not in the sampling.** ⚠ *Which also means
+verdict ⒜'s own registered wording would be FALSE: it says "exhausted rather than under-sampled", and this
+would be exhausted by the ESTIMATOR.* own × own is the exception and clears `5` sd comfortably (`6.1`),
+because its step is the product of both gradients and so is steeper relative to the same spread.
+
+#### ⌗ A CANDIDATE, PROBED AND NOT INSTALLED
+
+Estimating the scatter about a **straight line inside each band group** — so a trend within a group is not
+counted as uncertainty about that group's *level*, which is what the step compares — gives:
+
+| | as registered | candidate |
+|---|---|---|
+| kernel-only, signal present | `4.21` sd | `13.3` sd |
+| **the null, nothing planted** | `1.74` sd | `1.87` sd |
+
+**It separates rather than inflates: the null stays flat.** ⚠ But it is *not* uniformly conservative — at
+the lower noise the null moved `0.54` → `1.09` sd — **so it would need its own null calibration before
+anything is read against `5` sd with it.** I have not installed it.
+
+#### ⇒ FOUR WAYS, AND MY RECOMMENDATION
+
+1. **Keep the slide exactly as registered** and accept that the two rows cannot fire, reporting ⒜ with
+   *"exhausted by the estimator"* substituted for *"exhausted rather than under-sampled"*. Honest, and the
+   reading then answers nothing it was ordered to answer.
+2. ⭑ **Re-register the significance denominator** as the scatter about a line within each group, *with* a
+   null calibration run first, before any of the four spectra are read. **This is the one I recommend** —
+   the statistic is a difference between two groups' levels, and a gradient inside a group is not
+   uncertainty about a level; the direction of the fix is fixed by what the thing is a measurement OF, not
+   by which verdict it would produce.
+3. **Change the statistic** from a two-group step to the **slope** of the ratio in `q`, whose uncertainty
+   is well defined, with the step becoming slope × lever arm. Cleaner, and a larger change to `r7711`.
+4. **Lower the `5` sd bar.** ⛔ *Still the one I will not choose, and now there is a second reason: the bar
+   is not what is failing.*
+
+⚠⚠ **`r7711`'s slide is registered and the order says to read the three ratios BY IT, so I have changed
+nothing in it and will not.** What I fixed is my own `r7713` reading rule, which was mine and was wrong.
+The estimator question is yours. ⌗ *The timing is the one piece of luck here: only one of four
+combinations exists and the analysis refuses a partial grid, so whichever way you rule, it is still ruled
+BEFORE any of this data is read. The build keeps running either way — the four spectra are the same object
+under all four options.*
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually

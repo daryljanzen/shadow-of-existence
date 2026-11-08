@@ -96,10 +96,41 @@ def band_step(q, v, halves=(0.175, 0.25, 0.35)):
     return out
 
 
-def worst(rows, key='in_sd'):
-    """the LEAST favourable half-width, never the best -- a plateau claim is as strong as its weakest
-    window, and `r7711`'s obstruction 1 was closed by requiring agreement across widths"""
-    return min(rows, key=lambda r: r[key])
+def read_at(rows):
+    """⛔ CORRECTED BEFORE ANY REAL DATUM, and the correction matters more than the original rule.
+
+    The first form of this function took the MINIMUM significance across the three half-widths, on the
+    reasoning that "a plateau claim is as strong as its weakest window".  A dry run on synthetic spectra,
+    made while only ONE of the four real combinations existed, showed that rule makes three of the five
+    rows of the registered decision table UNREACHABLE: a planted `9` per cent kernel difference, large
+    enough to move the pseudo-spectrum by `19` per cent, still reported `1.66` sd and fell to verdict ⒜.
+
+    The fault is the recurring one: THE NARROW WINDOW'S PRECISION IS NOT THE EFFECT'S SIGNIFICANCE.  A
+    narrow band averages less, so its step is smaller and its scatter larger; reading its ratio as the
+    measurement is reading a property of the instrument as a property of the signal.  A `5` sd bar held
+    against the least precise window is a bar no amount of real signal is guaranteed to clear.
+
+    ⇒ What `r7711`'s obstruction 1 actually required was AGREEMENT across widths, which is a separate
+      GATE and is enforced as one in `agree()` below.  The significance is read at the WIDEST registered
+      half-width -- fixed a priori, because the widest window averages the most and is therefore the most
+      precise BY CONSTRUCTION, not because it happened to give the largest number.
+    """
+    return max(rows, key=lambda r: r['half'])
+
+
+def agree(rows, tol=2.0):
+    """`r7711`'s obstruction 1, as the gate it always was: the step must hold the SAME SIGN at every
+    registered half-width, and its magnitudes must lie within a factor of `tol`.  A ratio that fails
+    this has no plateau, so it gets NO significance and is reported as disagreeing -- never a verdict."""
+    st = [r['step'] for r in rows]
+    mag = [abs(x) for x in st]
+    if min(mag) <= 0:
+        return False, 'a width gives an exactly zero step'
+    if not (all(x > 0 for x in st) or all(x < 0 for x in st)):
+        return False, 'the step changes sign between widths'
+    if max(mag) / min(mag) > tol:
+        return False, f'the magnitudes span {max(mag) / min(mag):.1f}x, over the registered {tol:.0f}x'
+    return True, 'same sign at every width, magnitudes within the registered factor'
 
 
 def main():
@@ -167,7 +198,14 @@ def main():
     bad = (max(r['in_sd'] for r in rrows) >= RESID_SD) and (frac >= RESID_FRAC)
     print(f"       ⇒ residual step {abs(rs['step']):.6f} is {100 * frac:.1f}% of the own x own step "
           f"{own_step:.6f}; worst significance {max(r['in_sd'] for r in rrows):.2f} sd")
-    print(f"       ⇒ the partition is {'⛔ NOT AVAILABLE' if bad else 'WELL POSED'} "
+    own_res = max(r['in_sd'] for r in orows if r['half'] == max(q['half'] for q in orows))
+    if not bad and own_res < SD_RESOLVED:
+        # ⛔ a residual comparable to a step that is itself unresolved says EVERYTHING is noise, not
+        #    that the partition is sound.  Calling that "well posed" would be a statement about the
+        #    residual's significance dressed up as one about the partition.
+        print("       ⇒ own x own is NOT resolved, so the partition's status is NOT ESTABLISHED rather")
+        print("         than well posed: there is no step here to partition.")
+    print(f"       ⇒ the partition is {'⛔ NOT AVAILABLE' if bad else 'not refused by this test'} "
           f"(threshold registered in this file's header: ≥{RESID_SD:.0f} sd AND "
           f"≥{100 * RESID_FRAC:.0f}% of the own x own step)")
     if bad:
@@ -195,18 +233,35 @@ def main():
     print("    consistent signs are NOT three confirmations and no significance is combined across them.")
 
     nm = list(rows)
-    own, ker, src = (worst(rows[k]) for k in nm)
+    own, ker, src = (read_at(rows[k]) for k in nm)
+
+    # ⛔ the agreement GATE first, per `r7711`'s obstruction 1 -- a ratio with no plateau gets no number
+    print("\n  ⛔ THE AGREEMENT GATE across half-widths (`r7711`'s obstruction 1, as a gate)")
+    ag = {}
+    for k in nm:
+        ok, why = agree(rows[k])
+        ag[k] = ok
+        print(f"       {k:38s} {'AGREES' if ok else '⛔ DISAGREES'} -- {why}")
+    if not ag[nm[0]]:
+        print("\n  ⛔ own x own HAS NO PLATEAU, so there is no step to partition and no verdict is")
+        print("    stated. That is a finding about the statistic, not about the physics.")
+        json.dump(dict(control=ctl, live=True, resid=rrows, resid_frac=frac, rows=rows,
+                       agree=ag, verdict='no_plateau'),
+                  open(os.path.join(HERE, 'analyse.json'), 'w'), indent=1)
+        print(f"\n  wall {time.time() - t0:.1f} s")
+        return 0
 
     # guard 2, registered: own x own must reach 5 sd or the estimate was wrong, not the physics
-    print(f"\n  ⚠ GUARD: own x own reaches {own['in_sd']:.2f} sd at its weakest window "
-          f"(registered target {SD_RESOLVED:.0f})")
+    print(f"\n  ⚠ GUARD: own x own reaches {own['in_sd']:.2f} sd at the widest registered window "
+          f"(half {own['half']:.3f}; registered target {SD_RESOLVED:.0f})")
     if own['in_sd'] < SD_RESOLVED:
         print("    ⇒ the 1/sqrt(n) scaling behind the grid estimate was WRONG. That is a finding about")
         print("      the estimate, not about the physics, and is reported as such.")
 
     # ⓸ --------------------------------------------------------------------------- THE VERDICT
     sgn = np.sign(own['step'])
-    k_res, s_res = ker['in_sd'] >= SD_RESOLVED, src['in_sd'] >= SD_RESOLVED
+    k_res = ag[nm[1]] and ker['in_sd'] >= SD_RESOLVED
+    s_res = ag[nm[2]] and src['in_sd'] >= SD_RESOLVED
     k_same = np.sign(ker['step']) == sgn and abs(ker['step']) >= 0.5 * abs(own['step'])
     s_same = np.sign(src['step']) == sgn and abs(src['step']) >= 0.5 * abs(own['step'])
     creates = k_res and k_same and (src['in_sd'] < SD_UNRESOLVED or np.sign(src['step']) != sgn)
