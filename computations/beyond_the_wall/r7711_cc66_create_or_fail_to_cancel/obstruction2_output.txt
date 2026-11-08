@@ -1,0 +1,26 @@
+
+  ⛭ `r7711` building the four pseudo-spectra (source x kernel)
+      S=lcdm  through K=lcdm : 87 l, range 6.446e-08..7.483e-06   [465.2 s]
+      S=lcdm  through K=cr   : 87 l, range 7.463e-08..7.456e-06   [465.6 s]
+      S=cr    through K=lcdm : 87 l, range 5.055e-08..7.546e-06   [261.4 s]
+      S=cr    through K=cr   : 87 l, range 5.996e-08..7.537e-06   [264.2 s]
+
+  ⛔ `r7711` THE CONTROL -- swapping the kernel on a FIXED source must move something
+      source lcdm : own kernel vs the other's -- median |move| 6.196%, max 17.366%
+      source cr   : own kernel vs the other's -- median |move| 6.267%, max 21.079%
+      ⇒ the kernel swap is LIVE as a perturbation
+
+  ⛭ `r7711` THE STEP IN EACH COMBINATION'S RATIO, read as the step is read
+      ratio                               half     lo        hi       step     step/sd
+      own x own  (cr|cr)/(lcdm|lcdm)      0.175  +0.0298  +0.0552  +0.0253     1.54
+      own x own  (cr|cr)/(lcdm|lcdm)      0.250  +0.0324  +0.0556  +0.0232     1.99
+      own x own  (cr|cr)/(lcdm|lcdm)      0.350  +0.0333  +0.0531  +0.0197     1.88
+      kernel swapped (cr|lcdm)/(lcdm|lcdm) 0.175  +0.0846  +0.0559  -0.0288     0.73
+      kernel swapped (cr|lcdm)/(lcdm|lcdm) 0.250  +0.0860  +0.0536  -0.0324     1.27
+      kernel swapped (cr|lcdm)/(lcdm|lcdm) 0.350  +0.0801  +0.0525  -0.0277     1.35
+      source swapped (lcdm|cr)/(lcdm|lcdm) 0.175  -0.0515  -0.0056  +0.0459     1.42
+      source swapped (lcdm|cr)/(lcdm|lcdm) 0.250  -0.0492  -0.0010  +0.0482     1.71
+      source swapped (lcdm|cr)/(lcdm|lcdm) 0.350  -0.0413  -0.0032  +0.0381     1.22
+
+  wall 1456.7 s
+rc=0

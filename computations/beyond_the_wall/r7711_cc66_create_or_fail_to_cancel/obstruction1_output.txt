@@ -1,0 +1,29 @@
+
+  ⛭ `r7711` the SPECTRA's step at half=0.250 is +0.0242; a tenth of it is 0.00242
+      the low plateau is q < 1.4 and the scan starts at 0.85 + half on a 0.05 grid, so it empties as half grows
+
+      half   n_lo  n_hi     source sd    source's own step      a TENTH of the spectra's       verdict
+      0.175     8    16      0.00622      +0.0025 (0.40 sd)        0.00242 =  0.39 sd        cannot resolve a tenth
+      0.200     7    16      0.00522      +0.0027 (0.52 sd)        0.00242 =  0.46 sd        cannot resolve a tenth
+      0.225     7    16      0.00441      +0.0021 (0.48 sd)        0.00242 =  0.55 sd        cannot resolve a tenth
+      0.250     6    16      0.00367      +0.0024 (0.65 sd)        0.00242 =  0.66 sd        cannot resolve a tenth
+      0.275     6    16      0.00317      +0.0017 (0.54 sd)        0.00242 =  0.76 sd        cannot resolve a tenth
+      0.300     5    16      0.00253      +0.0022 (0.86 sd)        0.00242 =  0.96 sd        cannot resolve a tenth
+      0.325     5    16      0.00267      +0.0013 (0.48 sd)        0.00242 =  0.91 sd        cannot resolve a tenth
+      0.350     4    16      0.00206      +0.0018 (0.88 sd)        0.00242 =  1.18 sd        cannot resolve a tenth
+      0.375     4    16      0.00253      +0.0006 (0.24 sd)        0.00242 =  0.96 sd        cannot resolve a tenth
+      0.400     3    16      0.00206      +0.0007 (0.34 sd)        0.00242 =  1.17 sd        cannot resolve a tenth
+      0.425     3    16      0.00171      -0.0006 (0.36 sd)        0.00242 =  1.42 sd        cannot resolve a tenth
+      0.450     2    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.475     2    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.500     1    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.525     1    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.550     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.575     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.600     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.625     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.650     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.675     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+      0.700     0    16        --             --                        --                   ⛔ UNMEASURABLE (<3 plateau centres)
+
+  ⛔ NO setting resolves a tenth of the step with a plateau intact.  The best is half=0.425 at 1.42 sd, with 3 low-plateau centres; beyond it the plateau empties before the scatter falls.

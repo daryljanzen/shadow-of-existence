@@ -15,6 +15,74 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
+
+I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
+blocks the answer is neither thing I named.
+
+### ⓵ YOUR FIRST ROUTE IS CLOSED — no smoothing resolves a tenth with a plateau intact
+
+Swept the half-width `0.175`→`0.700`. Best available: **`1.42` sd at half `0.425`, on three low-plateau
+centres**; at `0.450` the plateau is down to two and the reading is **refused**, and at `0.550` it is empty.
+⌗ *Two things the sweep shows that my argument for it did not:* the scatter **stops falling** past `0.35`
+(it wobbles back up at `0.375` and `0.400`) because the plateau has too few points for its own variance to
+be stable — **so widening stops buying resolution well before it stops being measurable** — and a setting
+with under three plateau centres is refused rather than given a scatter, *because the standard deviation of
+two numbers is not a scatter.*
+
+### ⓶ YOUR SECOND ROUTE IS **LIVE**, WHICH IS THE OPPOSITE OF WHAT I REGISTERED
+
+I registered that the only banked kernel is the acceptance law's, which `r7703` and `r7707` measured as
+having no step, so a swap on it should be **inert**. **The control says otherwise:** holding the source
+fixed and swapping the kernel moves the pseudo-spectrum by a median **`6.2` per cent** and up to **`21`**.
+
+⌗ **And that is not `r7707` reversing itself, because it is a different object.** `r7707` read the law's own
+band ratios `A_l` — the retention factor — and found them ramping. This reads a **pseudo-spectrum**, the
+source's oscillating power carried through the kernel, which keeps the source's comb and lets the kernel
+modulate it. *Saying which is which first is the only reason this does not look like a contradiction.*
+
+### ⓷ THE DISCRIMINANT HAS THE RIGHT STRUCTURE AND IS **NOT RESOLVED**
+
+| ratio | isolates | best step | at |
+|---|---|---|---|
+| own × own | both differences | `+0.0232` | `1.99` sd |
+| kernel held | the **source** difference alone | `−0.0277` | `1.35` sd |
+| source held | the **kernel** difference alone | `+0.0482` | `1.71` sd |
+
+**What it would say if resolved:** the kernel difference alone gives a step of the measured sign and about
+twice its size, the source difference alone one of the opposite sign, and the observed step is what survives
+their partial cancellation — which would favour *the projection creates it and the source partly cancels*.
+Own × own also reproduces the measured step's size (`+0.0232` against `+0.0242`).
+
+⛔ **I am not reporting that as an answer.** All nine readings sit between `0.73` and `1.99` sd of their own
+plateau scatter: **nothing passes two sigma.** *That is the `r7695` trap exactly — a shape that looks like a
+decomposition at a significance that cannot support one — and the only thing stopping this being `r7695`
+again is refusing it where the pattern is most inviting.*
+
+### ⛭ SO THE REAL BLOCKER IS THE SAMPLING, AND IT IS REMOVABLE FOR A STATED PRICE
+
+The acceptance banks carry `238` `l`, **87** of them in `q ∈ [0.80, 3.10]`; the fine spectra `r7707` read
+carry **1900**. So the low significance is a limit of **those banks' `l` grid, not of the method** — and the
+method is the one route of the two that works.
+
+**Priced from this revision's own measurement** (scatter falls as `1/√n`): taking own × own from `1.99` sd
+to `5` sd needs about **`6.3`× the `l` points, some `549` per combination**, which at the measured `1456.7`
+s for four combinations at `87` is about **`2.6` hours**. ⇒ **No new instrument, no solver run, no rebuild —
+an afternoon of compute on banks that exist.** **Yours to order or not; I have not started it.**
+
+### ⚑ AND I REGISTERED THE PRICE WRONG, WITH A SPECIFIC CAUSE
+
+Registered under `300` s; measured **`1456.7` s**, a `4.9`× overrun. ⛔ **I priced the kernel by its array
+size — `560 × 2547` Bessel evaluations per `l` — and ignored `spherical_jn`'s cost as a function of ORDER
+and ARGUMENT.** Measured after the fact, the per-call cost runs from about `1.9` s at `l = 100` to `0.18` s
+at `l = 900`, and the real arguments (`k·x₀` up to some `4000`) sit far outside what I sanity-checked.
+*A cost model built on how much data a call touches rather than on what the call does is not a cost model.*
+The registration committed to saying what it cost rather than charging it elsewhere, which is why this
+paragraph exists.
+
+**Nothing is printed from this revision**, no attribution is claimed, and neither alternative is favoured:
+"creates" is the direction the unresolved numbers point, and pointing is not showing.
+
 ## ⚑ `r7709+cc66` — **(a) HOLDS AND (c) IS THE CORRECTION TO MY OWN WORDING. (b) IS DEAD. YOUR CATCH WAS RIGHT AND THE PART OF MY ⓶ THAT WAS RIGHT WAS ALREADY IN PRINT**
 
 You were right to hold it. Every registered target reproduced, out of the receipt your paragraph itself
