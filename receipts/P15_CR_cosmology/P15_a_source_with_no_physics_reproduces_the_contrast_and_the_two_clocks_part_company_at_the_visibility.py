@@ -119,6 +119,7 @@ difference 14.6 -> 15.5 per cent; the injection's ratio 1.066 -> 1.061 and slope
 half of the over-delivery.  ⛔ *A docstring left on namesake numbers is a receipt whose own
 text disagrees with its computation, and nothing in the gates would have caught it.*
 """
+import json
 import os
 import sys
 
@@ -757,6 +758,187 @@ check("\u26ed\u26d4 `r7703` ** AND THE BAND-TO-BAND RESIDUAL AT `q ~ 1.9` IS THA
       abs(_x7[_J] - 1.90) < 0.05 and (_y7[1] - _y7[0]) > 1.8 * (_l7[1] - _l7[0]),
       f"largest residual {_dep[_J]:+.4f} at q = {_x7[_J]:.2f}; the measurement rises "
       f"{_y7[1] - _y7[0]:+.4f} from band 1 to band 2 where the law rises {_l7[1] - _l7[0]:+.4f}")
+
+# ===================================================================================================
+# ⛭⛭⛭ ** `r7707` (69's `PO-87` order): WHERE IS THE STEP'S SHARPNESS MADE? **  The answer is a
+#   LOCALISATION and not an attribution: the sharp transition is in NEITHER arm's own projected
+#   spectrum and NOT in the source-side ratio -- it exists only in the contrast between the two
+#   projected spectra, where the arms agree at a correlation of `0.999` and the step lives entirely
+#   in what is left over.
+#   ⛔⛔ ** THE LICENCE, FIXED BEFORE THE FIGURES (`r7707+cc66.0`, pushed before a line of this ran). **
+#   ⒜ *The two abscissae are ONE VARIABLE ONLY UNDER `l = k D_M`.*  Spectra are read on `q = l / l_A`,
+#      sources on `k r_s / pi`; they coincide because `l_A = pi D_M / r_s`, which is gated below -- but
+#      only under the flat-sky identification, which is the very projection in question.  So a window
+#      at the same number on the two abscissae is the same ACOUSTIC PHASE and not the same modes.
+#   ⒝ *NO ATTRIBUTION IS AVAILABLE AND NONE IS CLAIMED.*  Attribution needs a build that removes the
+#      sharpness and leaves the rest; the step is largely SHARED between the arms and no build removes
+#      it (`r7703`).  `r7695` is on record for a shape consistency read as attribution.
+#   ⒞ *AND IT IS NOT "THE PROJECTION SHARPENS IT" EITHER.*  A linear projection of finite width cannot
+#      sharpen, and `r7703` measured the law's own window at some seven times the step.  None is needed:
+#      the step is a `+0.024` change in a RATIO between curves that each swing by a factor of two to
+#      five and track each other at `0.999`.  ⇒ ** The ratio does not sharpen a broad feature; it
+#      exposes a small one. **  "The projection only broadens" constrains each arm's spectrum and says
+#      nothing about a two per cent difference between them.
+#   ⚠ *MY REGISTERED PREDICTION IS FALSIFIED.*  I predicted the step would be IN each arm, because P15
+#      calls it "very largely shared".  Measured, the arms are shared at `0.999` and the step is in the
+#      remainder.  **"Very largely shared" and "the step is in each arm's own spectrum" are different
+#      statements and I read one as the other** -- the same fault as reading a null's response at a
+#      chosen amplitude as a decomposition.
+_SRCB, _SRCM = {}, {}
+for _t, _n in (('lcdm', 'r6911_source_lcdm_leafrec1'), ('cr', 'r6911_source_cr_leafrec1')):
+    _d = np.load(os.path.join(SP, _n + '.npz'), allow_pickle=True)
+    _SRCM[_t] = (float(_d['l_A']), float(_d['D_M']), float(_d['r_s']),
+                 json.loads(str(_d['config'].item())) if 'config' in _d.files else None)
+    _SRCB[_t] = (np.asarray(_d['k'], float) * float(_d['r_s']) / np.pi,
+                 np.asarray(_d['S_i'], float) ** 2)
+# ⛭ the control's source is read out of the bank `NEED` DECLARES, not out of its namesake.  The two
+#   differ in `Dl_swap` and `xswap` only, and `k`, `S_i`, `r_s` and `l_A` are byte-identical, so the
+#   choice is INERT for this reading -- measured below rather than assumed, and the declared bank is
+#   the one that carries a `config` to assert.
+_ALT = np.load(os.path.join(SP, 'r6911_source_lcdm.npz'), allow_pickle=True)
+check("⛭ `r7707` the source banks are the declared ones and say what they are: `config` present on "
+      "both, `ARM` its own arm, `STACKPERT` unset -- and the control's namesake `r6911_source_lcdm` is "
+      "BYTE-IDENTICAL in `k`, `S_i`, `r_s` and `l_A`, so reading the declared bank is inert for this "
+      "statistic and not a choice that moves it",
+      all(_SRCM[_t][3] is not None and _SRCM[_t][3].get('STACKPERT') is False for _t in _SRCB)
+      and _SRCM['cr'][3].get('ARM') == 'cr' and _SRCM['lcdm'][3].get('ARM') == 'lcdm'
+      and np.array_equal(np.asarray(_ALT['S_i'], float), np.asarray(
+          np.load(os.path.join(SP, 'r6911_source_lcdm_leafrec1.npz'))['S_i'], float))
+      and np.array_equal(np.asarray(_ALT['k'], float), np.asarray(
+          np.load(os.path.join(SP, 'r6911_source_lcdm_leafrec1.npz'))['k'], float)),
+      f"ARM {_SRCM['lcdm'][3].get('ARM')!r}/{_SRCM['cr'][3].get('ARM')!r}; namesake S_i and k identical")
+check("⛭⛔ `r7707` ** THE TWO ABSCISSAE ARE ONE VARIABLE ONLY UNDER `l = k D_M`: `l_A` equals "
+      "`pi D_M / r_s` on both arms to one part in a million ** ⇒ *so the window at `q` on the "
+      "spectrum and at `k r_s / pi` on the source is the same ACOUSTIC PHASE, not the same set of "
+      "modes.  A sentence that slides between them without saying so reads the projection's own "
+      "approximation as a fact about where a feature lives*",
+      all(abs(np.pi * _SRCM[_t][1] / _SRCM[_t][2] / _SRCM[_t][0] - 1.0) < 1e-6 for _t in _SRCM),
+      "; ".join(f"{_t}: l_A {_SRCM[_t][0]:.4f} vs pi D_M/r_s {np.pi * _SRCM[_t][1] / _SRCM[_t][2]:.4f}"
+                for _t in _SRCM))
+# ⛭ the registered precondition, MEASURED and not assumed: `(y - e)/e` needs an envelope that does not
+#   cross zero.  `S_i` is SIGNED and its running envelope crosses zero twelve times on both arms, with
+#   `min|e|` down to `8e-6`, so the normalised residual is meaningless there.  `S_i**2` crosses zero
+#   never.  ⇒ And the square is not merely the SAFE object, it is the FREQUENCY-MATCHED one: `cos^2`
+#   has half the period of `cos`, `D_l` is itself quadratic in the transfer, and the fitted combs say
+#   so -- `S_i**2` at `T ~ 1.00` against `D_l` at `T ~ 0.99`, while `S_i`'s fitted `1.10`-`1.13` is an
+#   ARTEFACT of `fit_period`'s `0.90`-`1.20` grid, which cannot reach a period of two at all.
+_PCND = {}
+for _t, _n in (('lcdm', 'r6911_source_lcdm_leafrec1'), ('cr', 'r6911_source_cr_leafrec1')):
+    _d = np.load(os.path.join(SP, _n + '.npz'), allow_pickle=True)
+    _xx = np.asarray(_d['k'], float) * float(_d['r_s']) / np.pi
+    _S = np.asarray(_d['S_i'], float)
+    _m = (_xx >= 0.85) & (_xx <= 5.75)
+    for _lab, _y in (('S_i', _S), ('S_i2', _S ** 2)):
+        _e = OCK.envelope(_xx, _y, 1.0, 'mean')
+        _PCND[(_t, _lab)] = (int(np.sum(np.diff(np.sign(_e)) != 0)), float(np.min(np.abs(_e))),
+                             float(OC.comb(_xx[_m], _y[_m])[1]))
+_DLT = {}
+for _t in ('lcdm', 'cr'):
+    _q, _dl = _FB[_t]
+    _m = (_q >= 0.85) & (_q <= 5.75)
+    _DLT[_t] = float(OC.comb(_q[_m], _dl[_m])[1])
+print("\n  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO")
+for _k, _v in _PCND.items():
+    print(f"      {_k[0]:5s} {_k[1]:5s}  envelope zero crossings {_v[0]:3d}   min|e| {_v[1]:.3g}"
+          f"   fitted comb T {_v[2]:.5f}")
+print(f"      D_l                                                      fitted comb T "
+      f"{_DLT['lcdm']:.5f} / {_DLT['cr']:.5f}")
+check("⛭⛔ `r7707` ** SO THE SOURCE IS READ AS `S_i**2`, AND THAT IS THE FREQUENCY-MATCHED "
+      "OBJECT AND NOT MERELY THE SAFE ONE: `S_i`'s running envelope crosses zero twelve times on both "
+      "arms, `S_i**2`'s never, and `S_i**2` fits the same comb period as `D_l` ** ⇒ *`cos^2` has "
+      "half the period of `cos` and `D_l` is itself quadratic in the transfer, so the square is the "
+      "comparable object; `S_i`'s fitted `1.10`-`1.13` is an artefact of `fit_period`'s `0.90`-`1.20` "
+      "grid, which cannot reach a period of two.  **This was registered as a precondition to TEST, and "
+      "it fired*",
+      all(_PCND[(_t, 'S_i')][0] >= 10 for _t in ('lcdm', 'cr'))
+      and all(_PCND[(_t, 'S_i2')][0] == 0 for _t in ('lcdm', 'cr'))
+      and all(abs(_PCND[(_t, 'S_i2')][2] / _DLT[_t] - 1.0) < 0.02 for _t in ('lcdm', 'cr'))
+      and all(_PCND[(_t, 'S_i')][2] > 1.09 for _t in ('lcdm', 'cr')),
+      f"S_i crossings {_PCND[('lcdm', 'S_i')][0]}/{_PCND[('cr', 'S_i')][0]}, "
+      f"S_i**2 {_PCND[('lcdm', 'S_i2')][0]}/{_PCND[('cr', 'S_i2')][0]}; "
+      f"T(S_i**2)/T(D_l) {_PCND[('lcdm', 'S_i2')][2] / _DLT['lcdm']:.4f}/"
+      f"{_PCND[('cr', 'S_i2')][2] / _DLT['cr']:.4f}")
+# ⛭ the three readings, off ONE state each -- `_ST` is the host's own spectrum state (`r7703`)
+_SKT = OCK.own_state(_SRCB, 'mean', 1.0)
+
+
+def _sides(_st, _a, _b):
+    return (OCK._rms(_st['ua'], _st['oa'], _a, _b), OCK._rms(_st['xc'], _st['oc'], _a, _b))
+
+
+def _plat(_st):
+    """per half-width: (lo, hi, step, pooled sd, corr(Ra,Rc), Ra hi/lo, Rc hi/lo)"""
+    _o = []
+    for _h in (0.175, 0.25, 0.35):
+        _cs = np.arange(0.85 + _h, 3.0, 0.05)
+        _ra, _rc = np.array([_sides(_st, _c - _h, _c + _h) for _c in _cs]).T
+        _R = _ra / _rc - 1.0
+        _L, _H = _R[_cs < 1.4], _R[_cs > 2.2]
+        _sd = float(np.sqrt((_L.var(ddof=1) + _H.var(ddof=1)) / 2))
+        _o.append((float(_L.mean()), float(_H.mean()), float(_H.mean() - _L.mean()), _sd,
+                   float(np.corrcoef(_ra, _rc)[0, 1]),
+                   float(_ra[_cs > 2.2].mean() / _ra[_cs < 1.4].mean()),
+                   float(_rc[_cs > 2.2].mean() / _rc[_cs < 1.4].mean()), _h))
+    return _o
+
+
+_PS, _PK = _plat(_ST), _plat(_SKT)
+print("\n  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES")
+print("      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo")
+for _nm, _P in (('SPECTRA', _PS), ('SOURCES', _PK)):
+    for _r in _P:
+        print(f"      {_nm:8s} {_r[7]:.3f}  {_r[0]:+.4f}  {_r[1]:+.4f}  {_r[2]:+.4f}   {_r[2] / _r[3]:7.2f}"
+              f"    {_r[4]:.6f}      {_r[5]:7.3f}  {_r[6]:7.3f}")
+check("⛭ `r7707` the step is in the arm/control ratio of the PROJECTED SPECTRA at every smoothing: "
+      "from about `+0.031` to about `+0.056`, a factor of `1.77`-`1.83`, at `2.9` to `9.5` times the "
+      "plateaus' own scatter -- *which is the `about 1.8` the step paragraph prints, reproduced here on "
+      "the slide rather than on the seven bands*",
+      all(0.0295 < _r[0] < 0.0325 and 0.0540 < _r[1] < 0.0575 and _r[2] > 0.023
+          and 1.75 < _r[1] / _r[0] < 1.85 and _r[2] / _r[3] > 2.8 for _r in _PS),
+      "; ".join(f"h{_r[7]}: {_r[1] / _r[0]:.3f}x at {_r[2] / _r[3]:.1f} sd" for _r in _PS))
+check("⛭⛔ `r7707` ** AND IT IS IN NEITHER ARM'S OWN PROJECTED SPECTRUM: both arms' own band "
+      "RMS FALLS across the range (`hi/lo` `0.67`-`0.80`), so the rising-step locator is OUT OF ITS "
+      "DOMAIN on all six of them, and the two arms track each other at a correlation above `0.999` ** "
+      "⇒ *their own curves are the comb's beat, swinging by a factor of two to five; the step is a "
+      "two per cent RELATIVE difference between them, which no amount of looking at one arm can show.  "
+      "**The locator's numbers on these curves are not reported, because an instrument used outside its "
+      "domain returns a number and not a measurement**",
+      all(_r[5] < 1.0 and _r[6] < 1.0 and _r[4] > 0.999 for _r in _PS),
+      "; ".join(f"h{_r[7]}: Ra {_r[5]:.3f}, Rc {_r[6]:.3f}, corr {_r[4]:.5f}" for _r in _PS))
+check("⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high "
+      "change is `+0.002`, under one standard deviation of its own scatter at every smoothing, while a "
+      "step of the SPECTRA's size would have shown there at `3.8` to `11.8` sd ** ⇒ *the two arms' "
+      "eta-integrated sources carry the same relative comb amplitude to under one per cent, and the "
+      "source ratio sits near zero and slightly NEGATIVE throughout rather than stepping up.  So a step "
+      "of the measured size is EXCLUDED in the source; a tenth of it is neither excluded nor resolved, "
+      "and that is said rather than rounded to zero*",
+      all(abs(_r[2]) / _r[3] < 1.0 for _r in _PK)
+      and all(_s[2] / _k[3] > 3.5 for _s, _k in zip(_PS, _PK)),
+      "; ".join(f"h{_k[7]}: own {_k[2]:+.4f} = {abs(_k[2]) / _k[3]:.2f} sd, "
+                f"spectra's size = {_s[2] / _k[3]:.1f} sd" for _s, _k in zip(_PS, _PK)))
+# ⛔⛔ the TRANSLATION control -- the only test that tells a located feature from a locator returning
+#   its own scan window.  `r7703`'s withdrawal is why every "no transition here" rests on this and
+#   never on the locator having returned a number.
+_TRK = {}
+for _nm, _fn in (('the spectra ratio', lambda _a, _b: float(np.divide(*_sides(_ST, _a, _b)) - 1.0)),
+                 ('the source ratio', lambda _a, _b: float(np.divide(*_sides(_SKT, _a, _b)) - 1.0))):
+    _row = [(_s, float(np.mean([_r[0] for _r in _locate(
+        lambda _a, _b, _s=_s: _fn(_a + _s, _b + _s))]))) for _s in (0.0, 0.15, 0.30)]
+    _TRK[_nm] = (_row, [abs((_h - _row[0][1]) + _s) for _s, _h in _row[1:]])
+print("\n  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move")
+for _nm, (_row, _res) in _TRK.items():
+    print(f"      {_nm:20s} " + "   ".join(f"+{_s:.2f}: {_h:.4f}" for _s, _h in _row)
+          + f"   residual {' '.join(f'{_v:.4f}' for _v in _res)}")
+check("⛭⛔ `r7707` ** AND THE CONTROL SAYS WHICH OF THE TWO IS A LOCATION: translating the read "
+      "interval by `+0.15` and `+0.30` in `q` moves the SPECTRA ratio's half-rise by the same amount to "
+      "within `0.004`, and does NOT move the SOURCE ratio's at all ** ⇒ *so `q = 1.783` is a place "
+      "on the spectra's contrast and the source ratio has no place for the locator to find -- which is "
+      "the form `r7703`'s withdrawal established, used here as the primary evidence and not as a "
+      "footnote*",
+      all(_v < 0.02 for _v in _TRK['the spectra ratio'][1])
+      and any(_v > 0.3 * _s for _v, (_s, _) in zip(_TRK['the source ratio'][1],
+                                                   _TRK['the source ratio'][0][1:])),
+      f"spectra residual {_TRK['the spectra ratio'][1]}; source residual {_TRK['the source ratio'][1]}")
 
 print("=" * 100)
 if FAILS:
