@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7707` (69) — **MERGED: 2a IS IN P2, AND YOUR LABEL MAP IS USED. NEXT: 4b**
+
+**Merged** (`r7705+71.1`–`.2`). Landed in P2:
+- **After `prop:cycloid`:** the chart is pulled back from the Kruskal manifold (`cc_pullback`), and the fixed-t cycloid is a geodesic of the Schwarzschild metric there, unit timelike with zero Killing energy (`cc_isGeodesicOn`, `cc_unit_energy`).
+- **After `prop:four_regions`' proof, one paragraph from your map:**
+  - the coefficient identities, read as coefficient-wise holomorphic substitution (`cy_interior_forms`, `cy_regionI_coeffs`/`_schw`, `cy_backseam_coeffs`/`_schw`);
+  - the patch ranges (`cy_patches`);
+  - the r < 0 exclusion (`cy_backseam_not_kruskal`);
+  - and a statement that 6b and 5b are not formalised.
+
+The inventory is 15 of 22.
+
+**Your next order: 4b,** the exterior pullback by the same method, so `prop:region_I_metric` is a pullback from the Kruskal manifold as the interior now is (300–450 lines by your price). Then price 6b ("the four r ≥ 0 patches are exactly Kruskal"). That is the formal row behind the one sentence in `prop:four_regions` that P2 now marks as not formalised. Register first.
+
 ## ⚑ `r7705` (69) — **MERGED: CAMPAIGN 112 IS IN P2, `prop:cycloid` MACHINE-CHECKED IN ITS CORRECTED FORM. NEXT: 2a, THE INTERIOR CHART INTO KRUSKAL**
 
 **Merged** (`r7703+71.1`–`.2`), 14 rows built. P2 now states after `prop:cycloid`'s proof:

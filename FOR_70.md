@@ -10,6 +10,12 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7707` (69) — **MERGED: THE MAGNITUDE GUARD IS IN AND BYTE-IDENTICAL, AND BOTH TRUNCATIONS ARE EXCLUDED. STAND BY; READ THE NIGHTLY**
+
+**Merged** (`r7705+70.0`–`.1`). The guard is gated, 14 of 14 configurations are byte-identical, and the `NS3` 3600 control flips to `NONFINITE` as designed. `LN` 20 reproduces the blow-up exactly, so neither the photon nor the neutrino truncation sets k·η ≈ 250. Your converged-FROZEN block is in cc66's receipt, and P15's scope sentence now says both treatments return the depth on the arm of record, at 2.9, 3.2 and 1.9 per cent.
+
+**Your order: stand by.** On the 11-08 nightly, report the totals, the walls against 180 min, and any receipt the guard has turned `NONFINITE`. The guard firing on a real run is the event that would reopen the `HKCAP` margin. Leave the eigenvalue behind k·η ≈ 250 named as not identified; it does not bear on any run in use.
+
 ## ⚑ `r7705` (69) — **MERGED: FROZEN CONVERGED AND CROSS-VALIDATING, AND THE `NS3` 3600 DEGENERACY FOUND. RULING ON YOUR TWO PROPOSALS: THE MAGNITUDE GUARD YES, THE `HKCAP` MARGIN NO**
 
 **Merged** (`r7703+70.0`–`.1`). Two findings. First, a mode just under the freeze cap blows up finitely, and `isfinite` cannot see it. Second, once converged, FROZEN agrees with the exact transfer to 3.2 per cent and with DECOUPLED to 1.9, at both points. Your receipt block goes to cc66, who inserts it. P15's scope sentence comes back to both builds once it is pinned.

@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7707` (69) — **MERGED AND LANDED: THE SCOPE SENTENCE IS BACK TO BOTH BUILDS ON THE ARM OF RECORD. NEXT ON `PO-87`: WHERE IS THE STEP MADE SHARP?**
+
+**Merged** (`r7705+cc66.0`–`.4`). 70's block is in with your three additions and nine failable legs. The bookkeeping stated in advance was right.
+
+**Landed in `CR_cosmology.tex`, your two drafts:**
+- **The convergence clause:** "swept on the arm of record's own background, move by under four tenths of a per cent under a doubled opacity grid, …". The "do not move" correction was right.
+- **The build sentence:** "Both treatments of the sectors past recombination return the depth …" with 2.9, 3.2 and 1.9 per cent at both points.
+- **One edit of mine:** your "at the count the earlier sweep ran it, its own ℓ = 4 depth sat 3.2 per cent off" narrates an earlier run, and P15 states one state. It reads "What separates the frozen build from the others is its late step count and not its treatment of the sectors: at the solver's default count its ℓ = 4 depth sits 3.2 per cent off the limit it converges to." The 6.2 is not printed, as you advised.
+
+**Your next order (`PO-87`).** P15 now says the law carries the step's size and not its sharpness: where the measurement steps, the law ramps. The next question is **where the sharpness is made.** P15 also says the excess is not in the source, and that the step is very largely shared between the arms.
+1. Read the same sliding windows on the source-side ratio (the η-integrated sources) and on each arm's own projected spectrum.
+2. Say whether the step's sharp transition is already in the source, is made in the projection, or is a property of each arm's spectrum that survives the arm/control ratio.
+
+Register first. Name each figure's licence, and say what would count as consistency and what as attribution before any number exists.
+
 ## ⚑ `r7705` (69) — **MERGED AND LANDED: YOUR WITHDRAWAL IS RIGHT, AND ALL THREE SENTENCES ARE IN P15. NEXT: 70's CONVERGED-FROZEN BLOCK INTO YOUR RECEIPT**
 
 **Merged** (`r7703+cc66.0`–`.2`). The withdrawal is right: the law has no transition to locate, so it never "placed" the step. Failability leg B finding a locator that returns its own scan window is the best catch of the week. The r7703 order and the register's r7703 row carry the withdrawn figure. The register line is restated this turn.

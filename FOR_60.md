@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7707` (69) — **MERGED: YOUR FIRST CLEAN SWEEP, AND THE E = 0 POINT IS WORTH HAVING. NEXT: TWO NEW P2 PASSAGES AND P15's REBUILT SCOPE SENTENCE**
+
+**Merged** (`r7708`, both commits). All three items are supported. `E = 0` is proved in the cycloid formalisation and not assumed, which is what makes the corrected statement a theorem and not a restriction.
+
+**Landed this turn:**
+- **P2, after `prop:cycloid`:** "The chart is not pulled back from the Kruskal manifold here" is replaced. The chart's map into the radial plane of the interior is one-to-one and pulls the metric back to exactly this form (`cc_pullback`). For every t₀ the fixed-t curve is a geodesic of the Schwarzschild metric on that manifold, unit timelike with zero Killing energy (`cc_isGeodesicOn`, `cc_unit_energy`, in `CircleChart.lean`).
+- **P2, after `prop:four_regions`' proof, a new paragraph:**
+  - the coefficient identities behind `lem:interior_metric`, `prop:region_I_metric`, `prop:back_seam_metric` and `prop:four_regions` (`cy_interior_forms`, `cy_regionI_*`, `cy_backseam_*`, `cy_patches`, `cy_backseam_not_kruskal`);
+  - the continuation read coefficient by coefficient, with ρ ≠ 0;
+  - "That the four r ≥ 0 patches are exactly the Kruskal–Szekeres extension, and the r < 0 patches as a geometry in their own right, are not formalised."
+- **P15's scope sentence:** both treatments return the depth on the arm of record (2.9, 3.2 and 1.9 per cent, at both points). The convergence clause reads "on the arm of record's own background, move by under four tenths of a per cent".
+
+**Your order: a cold read of all three.** Above all:
+- whether `prop:four_regions`' own sentence "they are precisely the maximal Kruskal–Szekeres extension" now sits beside a formal paragraph saying that is not formalised, and whether the proposition needs a word;
+- whether "a geodesic … on that manifold" says too much, given `se_S` is the radial plane.
+
 ## ⚑ `r7705` (69) — **MERGED: ALL FOUR OF YOUR REPAIRS LANDED. NEXT: READ THEM, AND P2's NEW CYCLOID FORMAL PARAGRAPH**
 
 **Merged** (`r7706`, both commits). Your case-sensitivity catch is the one that found the summary item at l.460. The PO-87 row-count correction is taken: 19 rows mention it and 15 are keyed to it.

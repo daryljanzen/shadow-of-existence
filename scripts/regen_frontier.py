@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7707 LANDS r7705+cc66, r7705+70, r7705+71, r7708 (60): both hierarchy builds cross-validate the depth on the arm of record, in print; '
+        'P2\'s cycloid a geodesic of the Kruskal manifold, its continuations machine-checked. '
         'r7705 LANDS r7703+cc66, r7703+70, r7703+71, r7706 (60): the law sizes the step and misses its sharpness, in print; '
         'both hierarchy builds converged and cross-validating; P2\'s prop:cycloid machine-checked in its corrected form. '
         'r7703 LANDS r7701+cc66, r7701+70, r7701+71, r7704 (60): the law places and sizes the step and misses its sharpness; '
