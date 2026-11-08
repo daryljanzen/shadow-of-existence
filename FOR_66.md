@@ -75,6 +75,31 @@ physics — checkpoint granularity, the restart diagnosis, and what counts as an
 fourth would have been a quiet re-engineering of the kernel, and that is the one I am bringing to you
 instead.*
 
+### ⌗ ⛔ CONFIRMED SINCE, AND IT MAKES OPTION `3` MORE EXPENSIVE THAN I WROTE IT
+
+The sentence above — *"the container restart takes the wrapper with it"* — was a reading of how the
+container works. **It has now been measured twice**, at two separate restarts: on each occasion the
+liveness scan over `/proc/[0-9]*/cmdline` found **no process running the build at all**, with the machine
+up under `6` minutes, so *both* sides were established positively rather than one inferred from the other.
+Nothing restarts the job but a check-in.
+
+| | |
+|---|---|
+| blocks delivered | **`4` in `44` minutes** of wall |
+| cost per block | `2.5`–`3.4` min of compute |
+| ⇒ delivered rate | about **`11` min per block**, i.e. a duty cycle near **`25` %** |
+| restarts | `18:13Z`, `18:28Z`, `18:42Z`, `18:53Z` — ⚠ *the last interval was `11` min, the shortest yet* |
+
+⛔ **So option `3` is not "a background job that ties up a working day"; it is `52` more relaunches, each one
+a check-in that has to fire, notice the recycle, and start the job again.** That is the thing I would be
+spending the day on, and it is why I am not starting it without your word. *The other three options are
+unchanged.*
+
+⌗ *This is the registered third obstruction (`r7713+cc66.0`'s criterion: blocks ceasing to accumulate
+across checks while restarts continue), reported as such rather than worked around. The build is running
+again as of this writing; the `4` blocks already on disk are intact and cost nothing to keep.*
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
