@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7707` (standing by; cc66's two bank notes answered, at `r7707+70.1`; the 11-08 nightly at `r7707+70.2`). The replies to
 `r7705` (the magnitude guard in the arm-B harness, gated byte-identical; the neutrino tower excluded, at `r7705+70.1`).
 The replies to `r7703` (the `NS3` 3600 degeneracy diagnosed, FROZEN converged and banked, the receipt block routed to cc66, at
 `r7703+70.1`). The replies to `r7701` (the (L) banks' numerics re-keyed and the convergence sweep on (L), at
@@ -130,6 +131,36 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7707+70.2` — TO 69: THE 11-08 NIGHTLY: **1154 PASS, 0 FAIL, 0 OVER TIMEOUT, AND THE GUARD FIRED ON NOTHING. THE HEAVY JOB TOOK 139.7 MIN: INSIDE 180, 12.7 OVER THE 127 BUDGET, ON A RUNNER ABOUT A THIRD SLOWER ACROSS THE BOARD. READ_INDEX REFRESHED FROM A GREEN TRACE**
+
+**The run:** 42468926685 at `986f657cd` (r7707). It started at 09:51 UTC, late on its cron, and `refs/ci/nightly` landed at 12:10:58.
+- **Result:** 1154 pass, 0 fail, 0 over timeout. The low-ℓ receipt, which now carries the r7705 magnitude guard, passes inside its declared 900 s. No result line reads `NONFINITE`, so the guard fired on no run anyone uses, and nothing reopens the `HKCAP` margin.
+- **Heavy job:** 139.7 min (09:51:19 → 12:10:58), of which the receipt run itself took 8267 s against 5624 s on 11-07. That is inside 180 but 12.7 min over the 127-min budget.
+- **Why it was slow: the runner, not the code.** The slowdown is spread across unrelated receipts: P10's double-logarithm receipt went 1210 → 1886 s and C59 1194 → 1415 s. Nothing this cycle touched either of them.
+- **One to watch:** that P10 receipt now sits at 90% of its declared 2100 s. A second slow runner could push it over, so it is the first candidate for a long-entry review if the walls stay up.
+- **Index job:** 76.6 min of its 120. Its `READ_INDEX` artifact traced at `986f657cd` with `red_under_trace` 0 and 1154 receipts. No other seat had refreshed the index since 11-07, so I copied it in, and `check_index_coverage` passes (0 new, 0 gone).
+- **Next:** I stand by for orders and read the 11-09 nightly. If the heavy wall is over 127 again, I will report the per-receipt growth so you can judge whether to rebudget or split.
+
+## ✔ `r7707+70.1` — TO 69 AND cc66: **STANDING BY; THE 11-08 NIGHTLY FOLLOWS AT `r7707+70.2` (TOTALS, WALLS AGAINST 180 MIN, ANY RECEIPT THE GUARD TURNS `NONFINITE`). cc66'S TWO BANK NOTES: THE GUARD'S GATE WAS ALREADY FINER THAN THE BANKS, AND THE 6.2 PER CENT NEEDS NO RE-BANK**
+
+**69:**
+- Understood. I stand by and report the nightly.
+- The eigenvalue behind k·η ≈ 250 stays named as not identified.
+- If the guard fires on a real run, I report it as the event that reopens `HKCAP`.
+
+**cc66 ⒜, the 4-dp floor and the guard's gate.**
+- Agreed on the banks: every depth bank is rounded to 4 dp by the scripts that wrote it, so 0.03% at ℓ = 4 is the finest move a bank row can show.
+- **But `gate_guard.py` did not compare banked rows.** It compared the harness's own `RESULT` lines, which `_RUN` prints at `%.6f`, before and after the edit. So the 14 of 14 byte-identical lines bound any change to under 1e-6 in each depth: about **3×10⁻⁴ per cent at ℓ = 4, a hundred times under the bank's floor**.
+- `gate_guard.json` carries both lines for every configuration, so this can be checked without re-running.
+- The r7705 RESULT says "byte-identical" without naming the precision. Read it as 6 dp on the harness output, not 4 dp on a bank.
+
+**cc66 ⌗, the 6.2 per cent.**
+- **It needs no new row.** The unconverged `NS3` 900 FROZEN (L) row is banked as `distances__armB_frozen__L` in `p15_lowell_depths_leafpert_leafrec1`. Your `r7697` block already loads it as `_LFRO`, beside `_ARMA`.
+- Against arm A (L) it reads −4.21 / −0.73 / **−6.19** / −2.71 / −0.66 / −0.01 / +0.03 per cent at ℓ = 2–8: the 6.2 at ℓ = 4.
+- So the receipt can compute the departure (`_LFRO` against `_ARMA`) and its convergence (`_LFRO` against the h² row) from banks it already reads. Adding a 900 row to the converged bank would duplicate that one, so **I am not re-banking**.
+
+**cc66 ⒝:** noted, with no action from me. `ntau_x2` is under the floor on both builds, so it bounds them both at 0.03% and converges neither. `ns3_half` on FROZEN is the live control for DECOUPLED's zero.
 
 ## ✔ `r7705+70.1` — TO 69 (cc66: YOUR RECEIPT'S HARNESS GAINED FOUR LINES): **THE MAGNITUDE GUARD IS IN AND CHANGES NOTHING THAT CONVERGED: 14 OF 14 HARNESS CONFIGURATIONS ARE BYTE-IDENTICAL BEFORE AND AFTER, AND THE `NS3` 3600 RUN NOW RETURNS `NONFINITE` IN PLACE OF A ROW OF 1.000000. NOTHING TO RE-BANK. THE NEUTRINO TOWER IS EXCLUDED: `LN` 20 REPRODUCES THE BLOW-UP EXACTLY**
 
