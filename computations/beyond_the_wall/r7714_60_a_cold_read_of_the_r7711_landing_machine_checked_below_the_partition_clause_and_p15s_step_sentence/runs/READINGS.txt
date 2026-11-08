@@ -1,0 +1,153 @@
+==============================================================================
+SELF-TESTS -- every classifier and reader on BOTH of its classes, before use
+==============================================================================
+   ok  G2 accepts plain prose
+   ok  G2 accepts an escaped control sequence
+   ok  G2 accepts an escaped math delimiter
+   ok  G2 REFUSES a marker mixing prose with math
+   ok  skeleton: a math-mode Greek name IS found
+   ok  skeleton: a plain ASCII name IS found
+   ok  skeleton: a name that is NOT on the page is NOT found
+   ok  skeleton: a name that is a PREFIX of another is not credited to it
+   ok  placement classifier: parenthesis INSIDE the one-to-one clause
+   ok  placement classifier: parenthesis AFTER the isometry conclusion
+   ok  reader: cp_kruskal has a header
+   ok  reader: a declaration that does not exist reads as absent
+   ok  onto reader: a membership conclusion with quadrant signs and the domain IS read as onto
+   ok  onto reader: a PULLBACK conclusion is NOT read as onto
+   ok  onto reader: a membership conclusion WITHOUT the domain hypothesis is not read as onto
+   ok  reader: decl_extent reaches a def's BODY, which lives after ":="
+   ok  reader: decl_extent stops before the NEXT declaration
+   ok  reader: decl_extent of a declaration that does not exist is absent
+   ok  reader: binders survive a type carrying parentheses
+   ok  G6: the sketch sentence is one line only after flattening
+
+==============================================================================
+Q1 -- IS "machine-checked below" HONEST?  The phrase modifies a CLAUSE with
+      TWO halves: (a) one-to-one, and (b) ONTO the corresponding region.
+==============================================================================
+   ok  the clause is at source, verbatim
+  READING: the parenthesis bounds the ..... clause
+   ok  the parenthesis bounds the one-to-one clause and not the conclusion
+
+  (a) ONE-TO-ONE -- the injectivity declarations, and whether P2 cites them:
+    cited in P2 (by SKELETON): cc_Φ_inj -> True
+    cited in P2 (by SKELETON): ce_Ψ_inj -> True
+   ok  both injectivity names are cited in P2
+
+  (b) ONTO -- read as a MAP property, which a partition is not:
+    cp_onto_BH: theorem cp_onto_BH (hM : 0 < M) {U V : ℝ} (hU : 0 < U) (hV : 0 < V) (hk : (U, V) ∈ sk_kM) : (U, V) ∈ cp_BH M
+   ok  cp_onto_BH exists
+   ok  cp_onto_BH concludes with MEMBERSHIP OF THE PATCH SET, which IS surjectivity because the patch set is the map's image
+    cp_onto_RE: theorem cp_onto_RE (hM : 0 < M) {U V : ℝ} (hU : U < 0) (hV : 0 < V) (hk : (U, V) ∈ sk_kM) : (U, V) ∈ cp_RE M
+   ok  cp_onto_RE exists
+   ok  cp_onto_RE concludes with MEMBERSHIP OF THE PATCH SET, which IS surjectivity because the patch set is the map's image
+    cited in P2 (by SKELETON): cp_onto_BH -> False; cp_onto_RE -> False
+
+  AND WHETHER THE PARTITION SUPPLIES (b) ANYWAY -- the four patch sets, read
+  from their DEFINITIONS rather than from their names:
+    def cp_BH (M : ℝ) : Set P := {y | ∃ η ∈ Ioo 0 Real.pi, ∃ t, y = cc_Φ M η t}
+    def cp_WH (M : ℝ) : Set P := {y | ∃ η ∈ Ioo 0 Real.pi, ∃ t, y = -cc_Φ M η t}
+    def cp_RE (M : ℝ) : Set P := {y | ∃ ρ > 0, ∃ t, y = ce_Ψ M ρ t}
+    def cp_LE (M : ℝ) : Set P := {y | ∃ ρ > 0, ∃ t, y = -ce_Ψ M ρ t}
+    def cp_Hor : Set P := {y | y.1 * y.2 = 0} 
+   ok  each of the four patch sets IS the chart map's IMAGE (an existential), so "onto the corresponding region" is what its own definition says
+    lemma cp_BH_quad (hM : 0 < M) {y : P} (hy : y ∈ cp_BH M) : 0 < y.1 ∧ 0 < y.2
+    lemma cp_WH_quad (hM : 0 < M) {y : P} (hy : y ∈ cp_WH M) : y.1 < 0 ∧ y.2 < 0
+    lemma cp_RE_quad (hM : 0 < M) {y : P} (hy : y ∈ cp_RE M) : y.1 < 0 ∧ 0 < y.2
+    lemma cp_LE_quad (hM : 0 < M) {y : P} (hy : y ∈ cp_LE M) : 0 < y.1 ∧ y.2 < 0
+   ok  each image is pinned to its own open quadrant
+
+==============================================================================
+Q2 -- THE PARTITION CLAUSE, THE CARRIER, AND THE REFLECTION
+==============================================================================
+  2a THE REFLECTION CLAUSE, read from scratch (negative probe 20):
+   ok  the clause claims PRESERVATION and no longer a map onto a region
+   ok  no "carries it onto the second exterior" survives anywhere in P2
+
+  2b THE CARRIER, read from its definition and NOT from the name or the order:
+    def sk_kM : Set P := {p | p.1 * p.2 < 1} 
+    def sk_MN : Set Pt := φ ⁻¹' sk_kM 
+    noncomputable def sk_S : MSpacetime P Pt := sk_R.cz_scale (sk_F M) (sk_F_pos hM) 
+    lemma sk_S_M : (sk_S hM).M = sk_MN := rfl 
+   ok  sk_kM is {UV < 1} with NO further condition
+    first exterior (-1, 1): UV = -1.00;  in sk_kM = True;  in seWS = True
+    interior (0.5, 0.5): UV = +0.25;  in sk_kM = True;  in seWS = True
+    SECOND EXTERIOR (1, -1): UV = -1.00;  in sk_kM = True;  in seWS = False
+   ok  the second exterior IS in sk_kM, so the gap r7712 found is CLOSED
+   ok  and it is NOT in seWS, which is why the claim had to move manifolds
+
+  2c THE DISJOINTNESS SCOPE -- the sharpest arm, registered in advance:
+   ok  the clause is at source, verbatim
+    cp_kruskal: theorem cp_kruskal (hM : 0 < M) : cp_BH M ∪ cp_WH M ∪ cp_RE M ∪ cp_LE M ∪ cp_Hor = sk_kM ∧ Disjoint (cp_BH M) (cp_WH M) ∧ Disjoint (cp_BH M) (cp_RE M) ∧ Disjoint (cp_BH M) (cp_LE M) ∧ Disjoint (cp_WH M) (cp_RE M) ∧ Disjoint (cp_WH M) (cp_LE M) ∧ Disjoint (cp_RE M) (cp_LE M) ∧ Disjoint (cp_BH M) cp_Hor ∧ Disjoint (cp_WH M) cp_Hor ∧ Disjoint (cp_RE M) cp_Hor ∧ Disjoint (cp_LE M) cp_Hor
+    READING: union conjunct present = True;  Disjoint conjuncts = 10
+   ok  the union is of FIVE sets -- the four patches AND the horizons as its own set
+   ok  and all TEN pairs among those five are asserted disjoint, which is what "pairwise disjoint" of five pieces means
+    ⌗ THE FALSE READING NAMED: if "with the horizons" ENLARGED each patch, the
+      enlarged sets would SHARE the horizons and could not be pairwise disjoint.
+      cp_kruskal adjoins cp_Hor as a FIFTH set, which is what the appositive does.
+
+  2d cp_metrics -- coefficient-wise, and for how many patches:
+    cp_metrics: theorem cp_metrics (hM : 0 < M) {η ρ : ℝ} (hη : η ∈ Ioo 0 Real.pi) (hρ : 0 < ρ) (t : ℝ) : (hRep (sk_S hM).g p₀ (cc_Φ M η t) (cc_a M η t) (cc_a M η t) = cy_A M η ∧ hRep (sk_S hM).g p₀ (cc_Φ M η t) (cc_b M η t) (cc_b M η t) = cy_B η ∧ hRep (sk_S hM).g p₀ (cc_Φ M η t) (cc_a M η t) (cc_b M η t) = 0) ∧ (hRep (sk_S hM).g p₀ (-cc_Φ M η t) (-cc_a M η t) (-cc_a M η t) = cy_A M η ∧ hRep (sk_S hM).g p₀ (-cc_Φ M η t) (-cc_b M η t) (-cc_b M η t) = cy_B η ∧ hRep (sk_S hM).g p₀ (-cc_Φ M η t) (-cc_a M η t) (-cc_b M η t) = 0) ∧ (hRep (sk_S hM).g p₀ (ce_Ψ M ρ t) (ce_a M ρ t) (ce_a M ρ t) = 4 * M ^ 2 * Real.cosh (ρ / 2) ^ 4 ∧ hRep (sk_S hM).g p₀ (ce_Ψ M ρ t) (ce_b M ρ t) (ce_b M ρ t) = -(Real.tanh (ρ / 2) ^ 2) ∧ hRep (sk_S hM).g p₀ (ce_Ψ M ρ t) (ce_a M ρ t) (ce_b M ρ t) = 0) ∧ (hRep (sk_S hM).g p₀ (-ce_Ψ M ρ t) (-ce_a M ρ t) (-ce_a M ρ t) = 4 * M ^ 2 * Real.cosh (ρ / 2) ^ 4 ∧ hRep (sk_S hM).g p₀ (-ce_Ψ M ρ t) (-ce_b M ρ t) (-ce_b M ρ t) = -(Real.tanh (ρ / 2) ^ 2) ∧ hRep (sk_S hM).g p₀ (-ce_Ψ M ρ t) (-ce_a M ρ t) (-ce_b M ρ t) = 0)
+    binders: ['(hM : 0 < M)', '{η ρ : ℝ}', '(hη : η ∈ Ioo 0 Real.pi)', '(hρ : 0 < ρ)', '(t : ℝ)']
+    READING: hRep conclusions on sk_S = 12 (4 patches x 3 components = 12)
+   ok  all four patches are covered, three components each
+   ok  the two reflected patches are stated at the NEGATED point with NEGATED vectors, which is the reflection's own pushforward and not a composition by the prose
+
+==============================================================================
+Q3 -- CAN cc66's SENTENCE BE MISREAD AS THE BAND-AVERAGE STATISTIC?
+      ⚠⚠ BOTH OBJECTS LOCATED BY THEIR TEXT, NOT BY THE ORDER'S LINE NUMBER.
+==============================================================================
+   ok  cc66's sentence is at source
+    SENTENCE: And the located transition belongs to the contrast between the arms and not to their sources}: read in the same sliding windows, the ratio of this arm's spectrum to the control's carries the transition, while the same reading of the two arms' $\eta$-integrated sources returns a ratio near zero throughout, in which a transition of the measured size would have stood at between four and eleven times that ratio's own scatter, depending on the smoothing. \emph{The step's size, by contrast, is in both
+   ok  located by text: the candidate step (the order's l.1411)
+   ok  located by text: the acceptance-law band fraction (the sentence before)
+
+    NOUN PHRASES, compared as the registered predicate requires:
+      sentence: 'the contrast between the arms' -> in either statistic's definition: False
+      sentence: 'their sources' -> in either statistic's definition: False
+      sentence: "the ratio of this arm's spectrum to the control's" -> in either statistic's definition: False
+      sentence: "the two arms' $\\eta$-integrated sources" -> in either statistic's definition: False
+      sentence: "that ratio's own scatter" -> in either statistic's definition: False
+      statistic: 'its lowest band' -> in cc66's sentence: False
+      statistic: 'the trend its own upper bands set' -> in cc66's sentence: False
+      statistic: 'four bases' -> in cc66's sentence: False
+      statistic: 'the lowest band' -> in cc66's sentence: False
+      statistic: 'the rest under the law' -> in cc66's sentence: False
+   ok  NOT ONE noun phrase of the sentence appears in either statistic's definition
+   ok  and not one noun phrase of either statistic appears in the sentence
+
+    THE ANTECEDENT of "the same sliding windows", read UPSTREAM: tion of the rest under the law as it does in the measurement, to a part in a hundred, while the law's own transition across the same windows is resolved where the measurement's is not\rcpt{P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility}. \emph{
+   ok  "the same sliding windows" has its antecedent in the preceding sentence (the acceptance law, across "the same windows"), which is UPSTREAM of the candidate statistic
+   ok  the candidate statistic is DOWNSTREAM of the sentence and in another paragraph
+
+    THE INVERSE RISK -- the statistic read as the arm-to-control contrast:
+   ok  the candidate paragraph states the denominator distinction itself, in its own words, so the inverse misreading is closed where it would arise
+
+==============================================================================
+ITEM 4 -- THE REST OF THE LANDING
+==============================================================================
+   ok  the formal paragraph's last sentence is at source, verbatim
+   ok  its OLD first clause -- the four-patch identity -- is gone from it, which is what cp_kruskal now covers
+    ⌗ READING: the machine checks a SET identity with $\{UV<1\}$.  "Maximal" is
+      a different claim, and the sentence is what keeps them apart.
+   ok  the paragraph says "machine-checked" of the coefficient identities and names the domain it works over
+   ok  cp_kruskal is cited in P2 (by SKELETON)
+   ok  cp_metrics is cited in P2 (by SKELETON)
+    CirclePatches.lean: axiom tokens = 0; sorry = 0
+   ok  zero axiom tokens and zero sorry
+
+==============================================================================
+THE ORDER'S CORRECTION TO r7712 -- VERIFIED, NOT TAKEN
+==============================================================================
+    _F9 = abs(_FCV['distances'][4] / _LFRO[4] - 1.0)
+   ok  _F9 is COMPUTED in the depth-gap receipt
+    gate: check("⛭⛔ `r7703` ** AND THE BANKED NS3 900 FROZEN ROW WAS NOT: converging it moves l = 4 by about " "3 per cent, which is the departure the struck scope sentence read as the frozen build's **", 0.02 < _F9 < 0.045, f"{100 * _F9:.2f}%") 
+   ok  its gate's own text says "about 3 per cent"
+   ok  and the gate prints _F9 as a PER CENT at RUN TIME, so the digits 3.23 are nowhere in the source
+    ⌗ NEGATIVE PROBE (22) CONFIRMED BY THE FILE: a named search over SOURCE
+      cannot find a value that exists only at RUN TIME.  r7712's NOT FOUND was
+      true of the searches it named; the searches were of the wrong KIND.
+
+==============================================================================
+ALL ARMS AND SELF-CHECKS PASS.
