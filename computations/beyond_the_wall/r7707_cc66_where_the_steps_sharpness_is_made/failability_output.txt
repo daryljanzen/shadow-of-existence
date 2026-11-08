@@ -1,0 +1,252 @@
+
+  under test: receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py
+    the host's `_locate` at line 648; the `r7707` block at lines 762-942, 180 lines, 7 gates
+
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    0  THE CONTROL: the block unperturbed, through this harness
+          checks run / red .. 7 / 0
+
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    A  a source bank's D_M scaled by 1.02 (the abscissa identity)
+          must redden ....... 'ONE VARIABLE ONLY UNDER'
+          checks run / red .. 7 / 1
+          red: ⛭⛔ `r7707` ** THE TWO ABSCISSAE ARE ONE VARIABLE ONLY UNDER `l = k D_M`: `l_A` equals `pi D_M / r_s`
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings   0   min|e| 2.71   fitted comb T 1.20000
+      cr    S_i2   envelope zero crossings   0   min|e| 7.43   fitted comb T 1.20000
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.8429  -0.8079  +0.0350      0.35    0.430881        0.888    0.852
+      SOURCES  0.250  -0.8546  -0.8223  +0.0322      0.48    0.468514        0.954    0.884
+      SOURCES  0.350  -0.8538  -0.8285  +0.0253      0.56    0.452796        1.117    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.7670   +0.15: 1.4743   +0.30: 1.3101   residual 0.1427 0.1570
+  OK    B  S_i lifted by +3 so its envelope no longer crosses zero
+          must redden ....... 'FREQUENCY-MATCHED OBJECT'
+          checks run / red .. 7 / 2
+          red: ⛭⛔ `r7707` ** SO THE SOURCE IS READ AS `S_i**2`, AND THAT IS THE FREQUENCY-MATCHED OBJECT AND NOT ME
+          red: ⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high change is `+0.002
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 1.31e-05   fitted comb T 1.04425
+      cr    S_i2   envelope zero crossings   0   min|e| 7.9e-05   fitted comb T 1.05300
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0249  -0.0179  +0.0070      0.19    0.996548        0.857    0.852
+      SOURCES  0.250  -0.0309  -0.0170  +0.0138      0.57    0.997497        0.896    0.884
+      SOURCES  0.350  -0.0311  -0.0150  +0.0161      1.59    0.998469        1.035    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.3882   +0.15: 1.2522   +0.30: 1.3087   residual 0.0140 0.2205
+  OK    C  the source k grid stretched 6 per cent (breaks the comb match to D_l)
+          must redden ....... 'FREQUENCY-MATCHED OBJECT'
+          checks run / red .. 7 / 2
+          red: ⛭⛔ `r7707` ** SO THE SOURCE IS READ AS `S_i**2`, AND THAT IS THE FREQUENCY-MATCHED OBJECT AND NOT ME
+          red: ⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high change is `+0.002
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    D  STACKPERT struck from a source bank's own config
+          must redden ....... 'the source banks are the declared ones'
+          checks run / red .. 7 / 1
+          red: ⛭ `r7707` the source banks are the declared ones and say what they are: `config` present on both, `A
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    E  the control's NAMESAKE bank made to differ in S_i (the inertness claim)
+          must redden ....... 'the source banks are the declared ones'
+          checks run / red .. 7 / 1
+          red: ⛭ `r7707` the source banks are the declared ones and say what they are: `config` present on both, `A
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  -0.0000  -0.0000  +0.0000      0.80    1.000000        0.671    0.671
+      SPECTRA  0.250  -0.0000  -0.0000  +0.0000      0.78    1.000000        0.713    0.713
+      SPECTRA  0.350  -0.0000  -0.0000  +0.0000      0.83    1.000000        0.783    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 2.4716   +0.15: 1.9679   +0.30: 1.8298   residual 0.3536 0.3417
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    F  the arm's spectrum residual replaced by the control's (the step removed)
+          must redden ....... 'the step is in the arm/control ratio'
+          checks run / red .. 7 / 3
+          red: ⛭ `r7707` the step is in the arm/control ratio of the PROJECTED SPECTRA at every smoothing: from abo
+          red: ⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high change is `+0.002
+          red: ⛭⛔ `r7707` ** AND THE CONTROL SAYS WHICH OF THE TWO IS A LOCATION: translating the read interval by 
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0306  +0.0549  +0.0243      3.00    0.999375        0.810    0.791
+      SPECTRA  0.250  +0.0313  +0.0557  +0.0244      4.70    0.999110        0.856    0.836
+      SPECTRA  0.350  +0.0303  +0.0559  +0.0255      9.67    0.998103        0.940    0.917
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7801   +0.15: 1.6317   +0.30: 1.4863   residual 0.0016 0.0062
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    G  both arms' own band RMS made to RISE (the locator's domain claim)
+          must redden ....... "NEITHER ARM'S OWN PROJECTED SPECTRUM"
+          checks run / red .. 7 / 1
+          red: ⛭⛔ `r7707` ** AND IT IS IN NEITHER ARM'S OWN PROJECTED SPECTRUM: both arms' own band RMS FALLS acros
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.43e-06   fitted comb T 1.15450
+      cr    S_i2   envelope zero crossings   0   min|e| 8.67e-05   fitted comb T 1.00025
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0309  +0.0551  +0.0242      2.91    0.999524        0.687    0.671
+      SPECTRA  0.250  +0.0316  +0.0558  +0.0242      4.56    0.999367        0.730    0.713
+      SPECTRA  0.350  +0.0306  +0.0561  +0.0255      9.49    0.999014        0.802    0.783
+      SOURCES  0.175  -0.0084  -0.0035  +0.0048      0.51    0.999299        0.856    0.852
+      SOURCES  0.250  -0.0091  -0.0027  +0.0064      0.84    0.999650        0.891    0.884
+      SOURCES  0.350  -0.0111  -0.0024  +0.0087      1.47    0.999689        1.027    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.7830   +0.15: 1.6329   +0.30: 1.4868   residual 0.0001 0.0038
+      the source ratio     +0.00: 1.5068   +0.15: 1.2978   +0.30: 1.1572   residual 0.0589 0.0495
+  OK    H  a step of the SPECTRA's size injected into the arm's source
+          must redden ....... 'NOT IN THE SOURCE-SIDE RATIO'
+          checks run / red .. 7 / 1
+          red: ⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high change is `+0.002
+
+  ⛭ `r7707` THE REGISTERED PRECONDITION, MEASURED: (y-e)/e NEEDS AN ENVELOPE OFF ZERO
+      lcdm  S_i    envelope zero crossings  12   min|e| 2.96e-05   fitted comb T 1.13025
+      lcdm  S_i2   envelope zero crossings   0   min|e| 9.69e-05   fitted comb T 1.00700
+      cr    S_i    envelope zero crossings  12   min|e| 8.15e-06   fitted comb T 1.10275
+      cr    S_i2   envelope zero crossings   0   min|e| 8.09e-05   fitted comb T 1.00075
+      D_l                                                      fitted comb T 0.99350 / 0.98925
+
+  ⛭ `r7707` THE SAME WINDOWS ON THE SPECTRA AND ON THE SOURCES
+      reading  half     lo        hi       step    step/sd   corr(Ra,Rc)   Ra hi/lo  Rc hi/lo
+      SPECTRA  0.175  +0.0869  +0.3110  +0.2241      6.12    0.977732        0.816    0.671
+      SPECTRA  0.250  +0.0899  +0.3100  +0.2201      8.52    0.969992        0.861    0.713
+      SPECTRA  0.350  +0.0897  +0.3112  +0.2216      9.42    0.933643        0.944    0.783
+      SOURCES  0.175  -0.0068  -0.0043  +0.0025      0.40    0.999813        0.854    0.852
+      SOURCES  0.250  -0.0068  -0.0044  +0.0024      0.65    0.999892        0.887    0.884
+      SOURCES  0.350  -0.0072  -0.0054  +0.0018      0.88    0.999955        1.019    1.017
+
+  ⛔ `r7707` THE TRANSLATION CONTROL -- a LOCATED feature moves by -d, a ramp does not move
+      the spectra ratio    +0.00: 1.8599   +0.15: 1.7815   +0.30: 1.7344   residual 0.0716 0.1745
+      the source ratio     +0.00: 1.3014   +0.15: 1.2286   +0.30: 1.6212   residual 0.0772 0.6198
+  OK    I  the spectra ratio replaced by a broad monotone ramp (the translation control)
+          must redden ....... 'WHICH OF THE TWO IS A LOCATION'
+          checks run / red .. 7 / 3
+          red: ⛭ `r7707` the step is in the arm/control ratio of the PROJECTED SPECTRA at every smoothing: from abo
+          red: ⛭⛔ `r7707` ** AND IT IS IN NEITHER ARM'S OWN PROJECTED SPECTRUM: both arms' own band RMS FALLS acros
+          red: ⛭⛔ `r7707` ** AND THE CONTROL SAYS WHICH OF THE TWO IS A LOCATION: translating the read interval by 
+
+  the control is green and 9 of 9 legs reddened their named check
+  ✓ EVERY PIN IN THE BLOCK IS FAILABLE
