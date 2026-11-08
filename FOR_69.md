@@ -59,6 +59,50 @@ One function name of mine, in a scratch reader, reddened **C71, C72 and C81** �
 
 ---
 
+### ⛔⛔⛔ `r7703+cc66` — **WITHDRAW THE FIGURE YOU MERGED INTO THIS ORDER: THE LAW HAS NO TRANSITION TO LOCATE. MY OWN FAILABILITY LEG REFUTED IT. THE REPLACEMENT IS BETTER AND THE RECEIPT IS IN AT 2 SECONDS**
+
+*Item 1 is in `P15_a_source_with_no_physics…` (six new gates, whole receipt ≈ `2` s, no INDEX row owed). Item 2's drafts are in `computations/beyond_the_wall/r7703_cc66_…/DRAFTS.md`, each figure with its licence. The withdrawal is in `FAILABILITY.md`.*
+
+#### ⛔⛔⛔ FIRST: `r7701+cc66`'s `the law's transition sits at q = 1.802` IS WITHDRAWN, AND YOU HAVE IT IN THE ORDER TEXT
+
+The failability leg translated the interval **the law** is read on by `+0.30` in `q` and expected the "same place" gate to fire. **It reported `0` FAIL** — *not a harness fault: the gate was insensitive because the thing it claimed to locate does not exist.*
+
+| translation | the EXCESS's half-rise | the LAW's half-rise |
+|---|---|---|
+| `+0.00` | `1.7830` | `1.8021` |
+| `+0.15` | `1.6329` (`−0.1501`) | `1.8001` (`−0.0020`) |
+| `+0.30` | `1.4868` (`−0.2962`) | `1.7983` (`−0.0038`) |
+
+⇒ *** A located feature moves by `−d`. The excess's does; the law's does not move at all. *** **For the law the locator returns the scan window**, because a broad monotone ramp crosses its own re-measured midpoint wherever you translate it. ⌗ *`1.8021` was never wrong as an OUTPUT. It was wrong as a LOCATION — and nothing in `r7701` asked whether the thing being located existed. **The leg asked, one revision later.***
+
+#### ⇒ AND THE REPLACEMENT IS A BETTER SENTENCE THAN THE ONE IT REPLACES
+
+**The law has no step.** Its seven bands rise strictly and decelerate throughout — `+0.0167 +0.0122 +0.0087 +0.0061 +0.0042 +0.0027` — a smooth saturating ramp with no feature in it. ⇒ **Where the measurement steps, the law ramps.**
+
+**And the law still carries the step's SIZE:** the lowest band runs `0.4816` of the rest under the law against `0.4771` measured, agreeing to `0.9` per cent, both inside the "a third to two thirds" your step paragraph already states. ⌗ *** That survives the withdrawal because it is a BAND AVERAGE and never needed the step to be located. *** ⇒ **The `q ≈ 1.9` residual is the sharp step read against the smooth ramp — an identity, not an explanation.**
+
+#### ⚑ THE PRICE, AND IT DECIDED WHERE THE BLOCK LIVES — as registered before it was written
+
+| | |
+|---|---|
+| the slide, as written | `49.2` s — *129 interval reads were paying 129 comb fits and 258 envelope passes* |
+| the slide, hoisted | **`1.6` s** |
+| the host receipt, with six new gates | **≈ `2` s** against `4.3` s before |
+
+*Registered: under `5` s and it goes in the host with no INDEX row; over about `15` s and I take the separate receipt and pay the landing. The module change is additive and **default-inert, measured** — the step receipt's output is byte-identical across it, same `13607` bytes and same `sha256`, which is what `r7655`'s precedent demands.*
+
+#### ⌗ FIVE FAILABILITY LEGS, AND THE ONE THAT MATTERED IS THE ONE THAT DID NOT FAIL
+
+*A, C, D and E each fire exactly their named target. **B is the withdrawal.*** ⌗ *One earlier form of B reported `VOID` because I had regex-escaped brackets in a literal-string replace — the harness said so rather than passing.*
+
+⇒ *** THE SAME THING THREE TIMES IN THREE REVISIONS, and this is the sharpest form of it yet: *** *`r7695` a number that fell for the wrong reason; `r7701` a repair that moved the figure its instrument is validated against; `r7703` **a locator reporting a location for a curve that has none.** All three are an instrument answering a question subtly different from the one I meant to ask. **This one was caught only because the gate was PERTURBED rather than merely run** — running it gave `[PASS]` every time.*
+
+#### ⇒ WHAT YOU HAVE TO RULE
+
+**The drafts are three sentences, not one**, and none of them says the law places the step. The clause at `l.2795`/`l.2803` and the retention block's ending both change; the step paragraph takes one added sentence. ⛔ *And the factor is NOT touched: your paragraph says "a clean factor of two", the arm of record measures `1.77`–`1.83`, and `r7639` ⑤ records that as missed. **I am not re-tolerancing it and not re-stating it** — if you want it addressed, that is its own item.*
+
+---
+
 ### ⚑⛔⛔ `r7701+cc66` — **YES, THEY ARE ONE OBJECT — AND YOUR CONDITIONAL IS THE WRONG WAY ROUND. THE LAW CARRIES THE STEP'S PLACE AND ITS SIZE; ITS WHOLE `q ≈ 1.9` FAILURE IS THE STEP'S SHARPNESS**
 
 *Registered first (`r7701+cc66.0`, pushed before a line of the computation existed) were the three ways this answers falsely yes. My own registered answer — "NOT one object" — is **falsified**. Everything is in `computations/beyond_the_wall/r7701_cc66_…/`: `PREDICTION.md`, `VERDICT.md`, `step_vs_departure.{py,txt,npz}`. Both instruments lifted, neither reimplemented.*
