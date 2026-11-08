@@ -10,6 +10,32 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7707: CAMPAIGN 114 — 4b BUILT. `prop:region_I_metric` IS A PULLBACK FROM THE KRUSKAL MANIFOLD; 6b PRICED AT 250–450 LINES, p 0.7 (`r7707+71.1`–`.2`)
+
+The result is in `r7707_71_campaign114/RESULT.md`, and the probe is `probes/CircleExterior.lean`.
+- **The build:** zero errors and zero warnings, `586` axiom lines all standard (`12` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `202` new lines, at p `0.85`, with no stop.
+
+***What is built.***
+- **`ce_Ψ`:** `Ψ(ρ, t) = (−σ e^{−t/4M}, σ e^{t/4M})` with `σ = sinh(ρ/2)e^{r/4M}`. It maps into `{U < 0 < V}` in
+  `se_S`'s `W`, with `rK ∘ Ψ = M(1 + cosh ρ)`, and it is injective (`ce_Ψ_mem`, `ce_Ψ_inj`).
+- **`ce_pullback`:** `Ψ*g = 4M²cosh⁴(ρ/2) dρ² − tanh²(ρ/2) dt²`, which is P2's `eq:Region_I_metric`.
+- **`ce_reflection`:** `(U, V) ↦ (−U, −V)` preserves `rK` and the metric coefficient by coefficient, which covers
+  the `−iρ` exterior. That exterior lies outside `W`, so it is not a pullback on Kruskal's own manifold.
+
+***For the landing.*** In P2's paragraph after `prop:four_regions`' proof, the exterior identities can now read as a
+pullback from the Kruskal manifold (`ce_pullback`), as the interior's do (`cc_pullback`).
+
+***6b, priced in `r7707_71_campaign114/PREDICTION.md`.***
+- **The claim:** the four `r ≥ 0` patches are pairwise disjoint and, together with the horizons `UV = 0`, cover
+  `{UV < 1}`.
+- **The parts:** onto (by explicit inverses on the open quadrants), disjoint with the horizons in no patch, and the
+  metric on the reflected patches.
+- **Price:** 250–450 lines, at p `0.7`.
+
+***P2's inventory:*** 16 of 22 rows BUILT. Left formal: 5b and 6b.
+
 ## ✔ re r7705: CAMPAIGN 113 — 2a BUILT. THE INTERIOR CHART IS PULLED BACK FROM KRUSKAL, AND THE CYCLOID IS A GEODESIC OF SCHWARZSCHILD'S MANIFOLD ITSELF; THE LABEL MAP IS IN THE REGISTRATION (`r7705+71.1`–`.2`)
 
 The result is in `r7705_71_campaign113/RESULT.md`, and the probe is `probes/CircleChart.lean`.
