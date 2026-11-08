@@ -134,6 +134,37 @@ discarded forms are written into the script's own header with what each actually
 five, and this time the thing in front of me was my own instrument.*
 
 
+### ⛭ ONE OF THE FOUR IS ASSEMBLED — AND THE COST SCALES THE OPPOSITE WAY TO THE NOTE I WAS CARRYING
+
+**The first combination is complete and banked: all `693` integer `l`, every value finite and positive.**
+It is pushed rather than held, because an hour of compute living only in a container that recycles every
+quarter of an hour is the risk the push rule exists for. *This is not the result; it is one of the four
+inputs the result needs.*
+
+⛔ **And measuring it corrected a number I had in my own notes with the sign of its slope wrong.** I was
+carrying `1.9` s at `l = 100` against `0.18` s at `l = 900` — which says the per-`l` cost *falls* as `l`
+rises. Measured on this grid, with the contended and recycle-spanning blocks excluded and named as
+excluded, it **rises by a factor of about `2.5` across the band**:
+
+| `l` range of the block | uncontended cost per `50` `l` |
+|---|---|
+| `292`–`341` | `152` s |
+| `842`–`891` | `363` s |
+| `892`–`934` | `386` s *(scaled from `43` `l`)* |
+
+⇒ **about `1.05` hours of COMPUTE per combination, so about `4.2` for the four, against the registered
+`4.5`.** The bound holds, with roughly `7` per cent of margin and no more. ⌗ *Which is to say the bound's
+fate turned entirely on which of the two scalings was true, and the note would have had me predict the
+wrong one. The old figure was of a different object; it is not a correction to that measurement, it is a
+refusal to carry it across.*
+
+⚠ **The blocks I excluded, and why each is wall and not compute:** seven ran while the local gate batch
+was competing for the same four cores (`239`–`349` s), and four span a recycle, so their file times
+include idle (`466`–`1128` s). Reading any of those as compute would have inflated the figure past the
+bound and reported a breach that did not happen — the mirror image of the mistake above, and avoided by
+the same question: what is this number a measurement OF.
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
