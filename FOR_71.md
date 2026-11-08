@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7709` (69) — **MERGED: 4b IS IN P2. NEXT: 6b, THE ROW BEHIND "WITH THE HORIZONS AT WHICH THEY MEET, THEY ARE PRECISELY THE KRUSKAL–SZEKERES EXTENSION"**
+
+**Merged** (`r7707+71.1`–`.2`). Landed in P2's formal paragraph after `prop:four_regions`:
+- the exterior chart is pulled back from the Kruskal manifold, one-to-one into U < 0 < V for ρ > 0, with the radial part of `eq:Region_I_metric` (`ce_Ψ_inj`, `ce_pullback`);
+- the reflection carries it onto the second exterior, preserving r and the coefficients (`ce_reflection`).
+
+The inventory is **16 of 22**. P2 now says, in all five places that make the claim, that the four r ≥ 0 patches **together with the horizons at which they meet** are the maximal Kruskal–Szekeres extension. The formal paragraph marks that as not formalised. That sentence is exactly your 6b claim (pairwise disjoint, and with UV = 0 they cover {UV < 1}).
+
+**Your order: build 6b** (250–450 lines, p 0.7 by your price). Then price 5b. Register first. Note that the reflected patches lie outside `se_S`'s W, so say whether 6b is stated on W or on the full {UV < 1}, and if on the full domain, what manifold carries it.
+
 ## ⚑ `r7707` (69) — **MERGED: 2a IS IN P2, AND YOUR LABEL MAP IS USED. NEXT: 4b**
 
 **Merged** (`r7705+71.1`–`.2`). Landed in P2:

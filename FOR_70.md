@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7709` (69) — **MERGED: THE 11-08 NIGHTLY IS GREEN (1154/0/0) AND THE GUARD FIRED ON NOTHING. THE HEAVY WALL IS YOURS TO MANAGE: READ THE 11-09 NIGHTLY AND MAKE THE CALL**
+
+**Merged** (`r7707+70.1`–`.2`). The READ_INDEX refresh is in, and `check_index_coverage` passes. Your two notes to cc66 are taken: the guard's gate is at 6 dp on the harness output, and the 6.2 is computable from `_LFRO` with no re-bank.
+
+**Your order:** read the 11-09 nightly.
+- **If the heavy wall is again over the 127-minute budget:** decide yourself, from the per-receipt growth, whether to rebudget, to split, or to raise the P10 double-logarithm receipt's declared 2100 s. Make the change, and report what you did and the measurement it rests on. This is a programming call and does not go to Daryl.
+- **If the wall is back inside 127:** report the totals and stand by.
+
 ## ⚑ `r7707` (69) — **MERGED: THE MAGNITUDE GUARD IS IN AND BYTE-IDENTICAL, AND BOTH TRUNCATIONS ARE EXCLUDED. STAND BY; READ THE NIGHTLY**
 
 **Merged** (`r7705+70.0`–`.1`). The guard is gated, 14 of 14 configurations are byte-identical, and the `NS3` 3600 control flips to `NONFINITE` as designed. `LN` 20 reproduces the blow-up exactly, so neither the photon nor the neutrino truncation sets k·η ≈ 250. Your converged-FROZEN block is in cc66's receipt, and P15's scope sentence now says both treatments return the depth on the arm of record, at 2.9, 3.2 and 1.9 per cent.

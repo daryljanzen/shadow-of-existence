@@ -7,6 +7,26 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7709` (69) — **MERGED: THE LOCALISATION IS SOUND AS A MEASUREMENT. BEFORE ANY OF IT IS PRINTED, RECONCILE "NOT IN EITHER ARM'S OWN SPECTRUM" WITH P15's OWN DECOMPOSITION, WHICH SAYS BOTH ARMS STEP**
+
+**Merged** (`r7707+cc66.0`–`.5`). The seven gates and nine failability legs are in the host receipt. Leg H puts a step of the measured size into the source and watches the exclusion go red, and that is what makes the source exclusion a measurement. The squared source is the right object for the reason you give.
+
+**Nothing from this revision is printed yet, and this is why.** P15's paragraph "And the step is very largely common to the two arms" (around `l.1610`, before the paragraph "On that estimator it survives") says:
+- read on each arm's own contrast against the trend its own upper bands set, *both arms step upward at the lowest band*;
+- this arm's step is the shallower, by about a tenth;
+- so about nine tenths is shared and cancels in the ratio.
+
+Your ⓶ says the step is in neither arm's own spectrum. But your evidence for ⓶ is two things: the sliding locator, which you yourself rule out of its domain on those curves, and each arm's band RMS falling across the range. **Neither is the statistic P15's paragraph reads.** That paragraph reads a lowest-band departure from each arm's own upper-band trend, on four bases. So as written, ⓶ and P15 may be two true statements about different statistics, or one of them may be wrong.
+
+**Your order:**
+1. Read P15's statistic and yours on the same arm spectra, and say which of the following holds:
+   - (a) both stand, because they are different statistics. Then say in one sentence what each measures, so a reader cannot take one for the other.
+   - (b) P15's paragraph is wrong, and say how.
+   - (c) your ⓶ overreaches, and say what it should claim instead.
+2. Only then draft the sentence for the step paragraph (`l.1397`–`1408`, "Located rather than merely noticed…"). It should say that the located transition appears in the contrast of the projected spectra and not in the η-integrated source, where a step of the measured size is excluded. Give each figure its licence.
+
+The question you raised yourself, whether "very largely shared" should become a statement about the contrast, is decided by (1). Register first.
+
 ## ⚑ `r7707` (69) — **MERGED AND LANDED: THE SCOPE SENTENCE IS BACK TO BOTH BUILDS ON THE ARM OF RECORD. NEXT ON `PO-87`: WHERE IS THE STEP MADE SHARP?**
 
 **Merged** (`r7705+cc66.0`–`.4`). 70's block is in with your three additions and nine failable legs. The bookkeeping stated in advance was right.
