@@ -90,8 +90,51 @@ statement about the gate's soundness — and this time it would have made me dis
 Case-folded now, and every red is printed beside the verdict so the two can be checked against each
 other.*
 
-⌗ *Item 2 — registering the `(ℓ, k)` separability measurement — goes up next in its own commit, before
-any of it is computed.*
+### ⛔⛔ ITEM 2 IS REGISTERED — AND REGISTERING IT SHOWED **THE PREMISE I NAMED IS FALSE ON THE INSTRUMENT**
+
+The registration is up in its own commit, pushed, with **not a line of the computation in existence.**
+And that is what caught it. The sentence — *"the source swap is a rescaling along `k` at every `ℓ`"* — is
+true of the **continuum** integrand, where `S²(k)` multiplies pointwise. It is **not true of the banked
+discretisation**:
+
+| | `lcdm` source | `cr` source |
+|---|---|---|
+| `k` nodes | **`2547`** | **`1452`** |
+| range | differs at **both** ends | |
+
+⇒ **The source swap also moves the quadrature nodes**, and the sentence is silent about that. ⌗ *A
+statement about one object read as a statement about another — the **eleventh** instance, and the **first
+caught at registration time** rather than after a computation ran. The other ten were caught after. One
+only by a gate.*
+
+### ⛭ SO THE MEASUREMENT IS DEFINED DIFFERENTLY THAN I WOULD HAVE WRITTEN IT YESTERDAY
+
+| | |
+|---|---|
+| common `k` grid | the **coarser** arm's own nodes inside the overlap — **no arm is interpolated up**, because inventing nodes in the direction the statistic reads is how a separation gets manufactured |
+| the kernel at those nodes | **recomputed**, never interpolated — it is the object being measured |
+| the grid change itself | **controlled, not assumed harmless**: the collapse on the common grid must reproduce the banked spectrum to `10⁻³` at every `ℓ`, or nothing downstream computes |
+| the common `ℓ` reading | **both** forms registered as equals — the shared integer range with **no** interpolation, and the common-`q` reading whose interpolation can only **flatter** the answer |
+| ⛭ if the two readings disagree | **the disagreement IS the verdict** — reading the kinder one is not available |
+
+### ⛔ AND THE THRESHOLD IS FIXED NOW, BEFORE THE NUMBER EXISTS
+
+> **The build resolves what the collapse could not if and only if, under both readings,
+> `|correlation| ≤ 0.70` AND `VIF ≤ 2.0`** — against the collapsed route's **`−0.9200`** and **`6.51×`**.
+
+⌗ *The two halves are the same statement: at `0.70` the VIF is `1.96`. So the demand is that the
+degeneracy be **broken, not dented**, and anything above the line is registered in advance as **not
+resolution** — however suggestive the separation fraction looks when I see it.*
+
+⇒ **Priced: no extra Bessel evaluations at all** — the two-dimensional array is *already formed* inside the
+existing per-`ℓ` loop and destroyed by the collapse on the very next line. Two kernel arrays, not four
+combinations. **≈ 2.1 CPU-hours** in the matrix already standing, **`16.12` MB**, not committed,
+regeneration scripted and checkpointed per block.
+
+⚠ **And registered so it cannot be blurred later: good conditioning is NECESSARY, NOT SUFFICIENT.** Item 2
+returns a **conditioning** result and never a **detectability** one, because the per-`(ℓ,k)` noise model a
+detectability claim needs **does not exist on this instrument**. ⇒ *A pass licenses "the degeneracy is
+broken in the `(ℓ,k)` plane" and does **not** license "the two swaps can be told apart in the data."*
 
 
 ## ⛭⛔ `r7719+cc66` — **ONE PRINTED READING SURVIVES DECISIVELY, ONE IS TOO STRONG AT ONE SMOOTHING, AND ONE CANNOT BE TESTED BY THIS TEST AT ALL. ITEM 4 IS NEXT**
