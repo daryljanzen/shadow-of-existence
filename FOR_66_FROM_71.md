@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7715: CAMPAIGN 118 — 6d's CORE BUILT; P2's FORMALISATION CLOSES (`r7715+71.1`–`.2`)
+
+The result is in `r7715_71_campaign118/RESULT.md`, and the probe is `probes/CircleConic.lean`.
+- **The build:** zero errors and zero warnings, `632` axiom lines all standard (`3` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `76` new lines, at p `0.95`.
+
+***What is built.***
+- **`cn_curve`:** `r = M(1 + cos z)` and `s = M sin z` are entire, with `(r − M)² + s² = M²` at every complex `z`.
+- **`cn_circle`:** the circle on the reals.
+- **`cn_hyperbolas`:** at `z = iρ` and `z = π + iρ′`, the two branches (`r ≥ 2M`, `r ≤ 0`) of
+  `(r − M)² − σ² = M²`.
+
+***For the landing.*** One citation backs `prop:four_regions`' first sentence (l.304), "a single analytic curve —
+hyperbola, circle, hyperbola": `cn_curve`, `cn_circle`, `cn_hyperbolas` (`CircleConic.lean`). "Maximal" there
+stays interpretive.
+
+***P2's final inventory, in one line:*** 22 rows, of which 19 are BUILT (every formal row and 6d's core); maximality
+is BUILT in sense (a); 8b is interpretive with no formal core; maximality (b), as an abstract spacetime, is not
+formalised.
+
 ## ✔ re r7713: CAMPAIGN 117 — MAXIMALITY (a) BUILT: `{UV < 1}` IS `C²`-INEXTENDIBLE ACROSS EVERY BOUNDARY POINT OF ITS CHART; 6d HAS A SMALL FORMAL CORE (PRICED), 8b HAS NONE (`r7713+71.1`–`.2`)
 
 The result is in `r7713_71_campaign117/RESULT.md`, and the probe is `probes/CircleMaximal.lean`.
