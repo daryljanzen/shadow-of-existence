@@ -15,6 +15,80 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔ `r7719+cc66` — **ONE PRINTED READING SURVIVES DECISIVELY, ONE IS TOO STRONG AT ONE SMOOTHING, AND ONE CANNOT BE TESTED BY THIS TEST AT ALL. ITEM 4 IS NEXT**
+
+Registration pushed alone before any computation (`r7719+cc66.0`), with the ceiling arithmetic in it.
+Curves taken from `r7707`'s own module and surrogates from `r7717`'s — **neither redefined here, and the
+imports enforce that.** New PR **#704**; #699 merged, branch restarted from `main`. Full verdict in
+`VERDICT.md`, drafts in `DRAFTS.md`.
+
+### ⓵ `l.1397`–`1401`, THE LOCATED TRANSITION — **SURVIVES, BEYOND EVERYTHING THE TEST CAN GENERATE**
+
+| half-width | step | `p` |
+|---|---|---|
+| `0.175` | `+0.02415` | **`1.0 × 10⁻⁶` — none of `10⁶` surrogates reach it** |
+| `0.250` | `+0.02422` | **`1.0 × 10⁻⁶` — none** |
+| `0.350` | `+0.02549` | **`1.0 × 10⁻⁶` — none** |
+
+⇒ **At every width the step is beyond every one of a million step-free surrogates carrying the curve's own
+scatter and autocorrelation.** ⌗ *And this is the one place `r7717`'s deflation does NOT reach: the
+pseudo-spectrum ratio that fell to `p = 0.087` is a far noisier object than the real spectra's contrast,
+and that difference is now measured rather than assumed. **Your worry about this sentence was the right
+worry and the sentence holds.***
+
+⚠ Only its multiple needs care: a `9.5` read as a significance asserts `p ≈ 2 × 10⁻²¹`, above any
+affordable ceiling. ⌗ *But that figure lives in the receipt, not in the sentence — the printed sentence
+makes no numerical significance claim — so the edit I drafted for it is **optional** and I say so in
+`DRAFTS.md` rather than pressing it.*
+
+### ⓷ `l.1404`, THE SOURCE EXCLUSION — **A POWER CLAIM, AND IT MISSES THE REGISTERED THRESHOLD AT THE NARROWEST SMOOTHING**
+
+| half-width | the source ratio's own step | **power at `α = 10⁻³`** |
+|---|---|---|
+| `0.175` | `+0.00251` (`p = 0.79`) | ⛔ **`0.814`** against the registered `0.95` |
+| `0.250` | `+0.00240` (`p = 0.73`) | `1.000` ✔ |
+| `0.350` | `+0.00180` (`p = 0.53`) | `1.000` ✔ |
+
+⇒ **Two of three smoothings carry the printed exclusion outright; the narrowest misses a transition of
+the measured size about one time in five.** So *"would have stood at"* is too strong there. **This one
+needs the edit, and it is drafted.** ⌗ *The source ratio's own step is nothing at every width, exactly as
+printed — now on a calibrated footing instead of a parametric one.*
+
+### ⛔⛔ ⓶ `l.1621`, THE BOTH-ARMS SENTENCE — **I FIRST TESTED THE WRONG OBJECT, AND THE RIGHT ONE CANNOT CARRY ITS OWN FIGURES**
+
+I measured the **sliding-window step on each arm's own spectrum**: `1.17`–`1.59`× the upper-band spread at
+`p = 0.017`–`0.173`. **That looks like a refutation of the printed `4` and it is not.** The printed figures
+are `r7709`'s — **band 1's departure from the trend its own upper bands set**, on the banded family, one
+number per band. ⇒ **Different statistic, different grid, not comparable; nothing in that run bears on the
+sentence.** ⌗ *The recurring fault a ninth time — and the first time caught before a word of it reached a
+draft or this file. It would have produced a confident, wrong correction to a `P15` sentence.*
+
+**And the right object's ceiling is arithmetic.** The banded family has `7` bands, so exhausting **every**
+arrangement of them gives `5040` ⇒ floor `p = 1.98 × 10⁻⁴` = **`3.72` sd-equivalent** (six upper bands
+alone: `720`, `3.20`).
+
+| printed | asserts | the statistic's ceiling |
+|---|---|---|
+| `7` | `2.6 × 10⁻¹²` | ⛔ `1.98 × 10⁻⁴` |
+| `4` | `6.3 × 10⁻⁵` | ⛔ `1.98 × 10⁻⁴` |
+
+⇒ **Both figures assert more than the statistic they are computed on can support, by any resampling
+whatever — not for want of surrogates but for want of bands.** *Not a claim the ratios are wrong: as
+ratios they are arithmetic and your receipt checks them. A claim about what they are worth as evidence.*
+
+⚠ **So ⓶ is reported as UNTESTED, not as passed or failed, and I have drafted no correction for it** —
+three ways forward are in `DRAFTS.md`, the choice is yours, and I have flagged that the option I favour
+(*leave it; it is literally a ratio and makes no probability claim*) is also the one that costs me
+nothing, so you can weigh it accordingly.
+
+### ⇒ WHAT IS NEXT, AND WHAT IS NOT DONE
+
+**Item 4 — the three discriminant ratios at `10⁷` — is NOT done.** It is the next thing and nothing about
+it is prejudged. ⌗ *The census receipts are green with the new functions present (`47`, `59`, `25`).
+Nothing is minted into the corpus. And `main` was merged before anything here, so the launch lock `70`
+added is in place for whenever item 4 needs it.*
+
+
 ## ⛔⛔ `r7717+cc66` — **THE RULED DENOMINATOR IS NOT LICENSED. YOUR CONDITION ⓶ IS WHAT CAUGHT IT, AND YOUR REASONING IS NOT WHAT FAILED**
 
 Registration pushed before a line of the computation (`r7717+cc66.0`), with the new denominator imported

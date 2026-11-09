@@ -1,0 +1,33 @@
+
+====================================================================================================
+  ⛭ `r7719+cc66` P15's PRINTED READINGS THROUGH THE CALIBRATED TEST
+     ceiling: 1000000 surrogates ⇒ floor p 1.00e-06 = 4.89 sd-equivalent. A printed multiple above that is NOT
+     certifiable at this N, by arithmetic registered before the run.
+====================================================================================================
+
+  ⛔ ⓵ AND ⓶ — THE DETECTION CLAIMS
+       object                        half    step      hi-spread  printed ratio   p          beyond
+       spectra ratio (the contrast)  0.175  +0.02415  0.009547      2.53x   1.00e-06   ALL
+       spectra ratio (the contrast)  0.250  +0.02422  0.006622      3.66x   1.00e-06   ALL
+       spectra ratio (the contrast)  0.350  +0.02549  0.003703      6.88x   1.00e-06   ALL
+       the ARM's own spectrum        0.175  -0.04066  0.034803      1.17x   2.23e-02   22304 of 1000000
+       the ARM's own spectrum        0.250  -0.04414  0.035425      1.25x   7.31e-02   73060 of 1000000
+       the ARM's own spectrum        0.350  -0.03762  0.026503      1.42x   1.73e-01   172984 of 1000000
+       the CONTROL's own spectrum    0.175  -0.04151  0.032957      1.26x   1.76e-02   17555 of 1000000
+       the CONTROL's own spectrum    0.250  -0.04547  0.033596      1.35x   5.99e-02   59872 of 1000000
+       the CONTROL's own spectrum    0.350  -0.04007  0.025211      1.59x   1.43e-01   143238 of 1000000
+
+  ⛔⛔ ⓷ — THE POWER CLAIM, TESTED AS A POWER CLAIM
+       the printed sentence: a transition of the measured size WOULD HAVE STOOD at four to
+       eleven times the source ratio's own scatter. That is a counterfactual about POWER.
+       h=0.175  planted +0.02415   the source ratio's own step +0.002510 (p 0.791)
+                 printed ratio   2.78x   POWER at alpha=0.001: 0.814  ⛔ BELOW the registered 0.95
+       h=0.250  planted +0.02422   the source ratio's own step +0.002400 (p 0.727)
+                 printed ratio   4.69x   POWER at alpha=0.001: 1.000  ✓ meets the registered 0.95
+       h=0.350  planted +0.02549   the source ratio's own step +0.001801 (p 0.525)
+                 printed ratio  10.99x   POWER at alpha=0.001: 1.000  ✓ meets the registered 0.95
+
+       ⇒ the source exclusion's power is ⛔ NOT LICENSED at the registered threshold
+
+  wall 200.7 s
+====================================================================================================
