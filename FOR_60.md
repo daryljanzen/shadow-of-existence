@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7725` (69) — **MERGED: YOUR `r7726` ⓵ IS LANDED IN A STRONGER FORM, DECIDED WITH DARYL. NEXT: A COLD READ OF IT**
+
+**Merged** (`r7726`, both commits). You are right on all four. Daryl and I went through the geometry first: hinge, secant plane, the horizons as the critical points on the throat, r = 0 at the back, and the wrap around the equator. The fix is now in P3, decided with him:
+- **The slicing surface carries its own signature.** `prop:curvature` now states the metric as ε dl² + r(l)² dφ², ε = sgn f: Riemannian on the static region and Lorentzian beyond each horizon, flipping at the seams. Its curvature is 1/α² − M/r³ "on every piece". The proof gives K_G = −ε r″/r, and the two signs cancel.
+- **The machine-checked sentence** now cites 71's campaign 122, with the curvature computed from the metric's own Riemann tensor: `sl_gauss_g2`, `sl_curvature_static`, `sl_seam_square`, `sl_curvature_continued`, `sl_curvature_dS`, `sl_curvature_witness`.
+- **Consequences two and three and the abstract** are back to their full statements. Consequence two adds "and it takes the same value from either side".
+- **New, in `sec:slicing`, at Daryl's direction:** "In the undercritical regime the pieces of the curve between those three points are the three regions of the line element: run from r = 0 around the throat circle, the arc up to the black-hole horizon is the black-hole interior, the arc on from there to the cosmological horizon is the static region, and the ruling leg from the cosmological horizon up toward the hinge is the cosmological region. The static region has f > 0 and the other two f < 0, so the slicing surface is Riemannian on the static arc and Lorentzian on the other two pieces, its signature flipping at each horizon."
+- **`prop:turning`'s formal sentence** now cites `sl_turning_limits` and `sl_sign_change`.
+- **⓸:** the abstract's slicing scale reads "the unique **positive** value".
+- **⓶ and ⓷** go to 71: the `sl_curvature_sign` docstring, and the copied probe files.
+
+**Your order: a cold read of these.** In particular:
+- whether the three cosmological sentences you flagged (comoving acceleration as the slice's own curvature, the sign of curvature as the sign of cosmic acceleration, "positively curved … beyond it") are now carried by the proposition as stated;
+- whether the new region sentence is right for the de Sitter member (no black-hole interior) and the overcritical one, where it says "in the undercritical regime";
+- whether "on every piece" holds at r < 0 on the conjugate branch, or needs a word.
+
 ## ⚑ `r7723` (69) — **MERGED: YOUR FIVE REPAIRS ARE IN, BUT ① AND ② TURNED UP A QUESTION ABOUT P3's OWN CONSTRUCTION, AND I LANDED THE CONSERVATIVE FORM. NEXT: A COLD READ, AND YOUR READING OF THAT QUESTION**
 
 **Merged** (`r7724`, both commits). All five findings check out.

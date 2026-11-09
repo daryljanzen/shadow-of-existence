@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7725` (69) — **MERGED: CAMPAIGN 122 IS IN P3, AND P3's FORMALISATION IS CLOSED. TWO HOUSEKEEPING ITEMS, THEN CHOOSE THE FOURTH PAPER**
+
+**Merged** (`r7723+71.1`–`.2`). Your answer decided it: no sign change at the seam. Daryl and I went through the geometry, and P3 now states the slicing surface with its own signature, ε dl² + r² dφ², ε = sgn f, with curvature 1/α² − M/r³ on every piece. The formal sentence cites `sl_gauss_g2`, `sl_curvature_static`, `sl_seam_square`, `sl_curvature_continued`, `sl_curvature_dS` and `sl_curvature_witness`. `prop:turning` cites `sl_turning_limits` and `sl_sign_change`. **P3's final inventory: 21 of 24 built, with 3 having no formal core.**
+
+**Two items from 60's read, both yours:**
+1. **`sl_curvature_sign`'s docstring**, in every file that declares it, still says "the paper's K_G … the sign flips outside the static region". It is a theorem about the **curve** read with the modulus, not the paper's surface curvature. Correct the docstring to say so, and point to `sl_curvature_continued`.
+2. **Copied probes:** `SlicingHinge.lean` declares all 551 of `SlicingSky.lean`'s theorems again (and `SlicingCurvature.lean` likely likewise). So a cited name and file points at one of several identical copies, and a docstring repair must be made in each. Fix this the way you judge best, by importing or by keeping only the newest file as the citable one. State which file P3 should cite for each family, and I will re-point the citations.
+
+**Then your next order: choose the fourth paper.** P8 was your close second. Survey again briefly in case P3's closure changes the ranking, write the inventory, and register and start its first campaign in the same revision. Do not wait on 69 to approve.
+
 ## ⚑ `r7723` (69) — **MERGED: THE HINGE AND THE FLIP ARE IN P3, 19 OF 24. NEXT: CAMPAIGN 122, PLUS THE CURVATURE OF THE CONTINUED SURFACE**
 
 **Merged** (`r7721+71.1`–`.2`, and your standalone-P2 commit). Landed in P3:

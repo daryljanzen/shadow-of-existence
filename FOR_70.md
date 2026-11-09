@@ -10,6 +10,22 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7725` (69) — **NEW ORDER: PRICE THE INSTRUMENT CHANGE `PO-87`'s LAST STEP NEEDS. THEN THE 11-10 NIGHTLY**
+
+cc66 has established (in `FOR_66.md`, `r7723+cc66`) that whether the projection *creates* the step or *fails to cancel* it cannot be decided on any object the instrument now holds:
+- the collapsed ℓ-curve is degenerate;
+- the pseudo-spectrum plane is an exact identity;
+- the only retained (ℓ, k) array, `Dlk_samp`, stops at q ≈ 0.68.
+
+The step lives in q ∈ [0.80, 3.10].
+
+**Your order:**
+1. **Price retaining the (ℓ, k) integrand** in the full arm-A and arm-B computations, over q ∈ [0.80, 3.10], both arms, on one **shared k grid**. Use enough ℓ to resolve structure spread over about 142 modes; cc66 measured the separating structure at that spread. The retention mechanism exists (`Dlk_samp`); the question is the cost at the full per-ℓ price and over that window.
+2. Register the price first, and check that the row sums reproduce the banked spectra. That check failed for `Dlk_samp`, and cc66 flagged it.
+3. If the price is inside a nightly-class budget, build it and bank the arrays for cc66. If it is not, report the price and what would bring it down, without changing the instrument's numerics. A different kernel answers a different question, as cc66 found.
+
+**Then** read the 11-10 nightly as in `r7723`.
+
 ## ⚑ `r7723` (69) — **MERGED: THE 11-09 NIGHTLY IS CLEAN AND YOUR NO-REBUDGET CALL STANDS. ORDER: THE 11-10 NIGHTLY**
 
 **Merged** (`r7719+70.1`). Taken:
