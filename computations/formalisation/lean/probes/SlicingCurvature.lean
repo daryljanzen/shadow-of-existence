@@ -17321,8 +17321,11 @@ theorem sl_accel_neg {f r : ℝ → ℝ} {f' l : ℝ} (hr : ∀ t, HasDerivAt r 
   refine hs.congr_deriv ?_
   field_simp
 
-/-- **Row 13a, the flag, on SdS.** With `f = 1 − 2M/r − r²` (`m = 2M`), the paper's `K_G = −r″/r` is
-`1 − M/r³` where `f > 0` and `M/r³ − 1` where `f < 0`: the sign flips outside the static region. -/
+/-- **The curve read with the modulus, on SdS.** With `f = 1 − 2M/r − r²` (`m = 2M`), along a curve with
+`r′ = √|f(r)|`, the quantity `−r″/r` is `1 − M/r³` where `f > 0` and `M/r³ − 1` where `f < 0`. This is a theorem
+about that curve (the Riemannian surface `dl² + r² dφ²` carried past the horizon with `(dr/dl)² = |f|`), not about
+P3's slicing surface: on `prop:flip`'s Lorentzian continuation the Gaussian curvature is `1 − M/r³` on both sides,
+with no sign change (`sl_curvature_continued`, campaign 122, `probes/SlicingCurvature.lean`). -/
 theorem sl_curvature_sign {m : ℝ} {r : ℝ → ℝ} {l : ℝ} (hr : ∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t)
     (h0 : r l ≠ 0) :
     (0 < sl_f m (r l) → ∃ a, HasDerivAt (deriv r) a l ∧ -a / r l = 1 - (m / 2) / r l ^ 3) ∧

@@ -10,6 +10,57 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7725: HOUSEKEEPING DONE; P8 CHOSEN; CAMPAIGN 123 — P8's VACUUM KERNEL BUILT (`r7725+71.1`–`.2`)
+
+***Item 1, the `sl_curvature_sign` docstring: corrected in all three files that declare it.***
+- The files are `SlicingSky.lean`, `SlicingHinge.lean` and `SlicingCurvature.lean`.
+- It now reads as a theorem about the curve read with the modulus, `r′ = √|f(r)|`: the Riemannian surface carried
+  past the horizon with `(dr/dl)² = |f|`. It is not P3's slicing surface.
+- It points to `sl_curvature_continued` (`SlicingCurvature.lean`), where the Lorentzian continuation has
+  `1 − M/r³` on both sides.
+- **Re-verified:** all three rebuild with exit 0 and no errors or warnings. The axiom counts are unchanged (654,
+  664, 678), with no `sorryAx`.
+
+***Item 2, the copied probes: one citable file per paper, and no more copying than needed.***
+- **Importing is not open.** Probes import only Mathlib, by the frozen convention, and are not lake modules. So the
+  repair is a citation rule.
+- **The rule: each paper cites its closing campaign's file for all of its names.**
+  - **P3 → `probes/SlicingCurvature.lean`** for every `sl_` family: `SlCubic`, `SlSky`, `SlHinge` and `SlCurv`.
+  - **P2 → `probes/CircleConic.lean`** for the `ck_`/`cy_`/`cc_`/`ce_`/`cp_`/`bs_`/`mx_`/`cn_` families and the kit
+    they use (`kr_`, `sk_`, `ng_`, `se_`, `st_`).
+  - **P1:** the closing files named in `r7699_71_inventory/INVENTORY.md`. The citations stay as they are.
+- **The older chain files stay** as frozen per-campaign records, since each `RESULT.md` names its own file.
+- **Any docstring repair goes into every copy**, as item 1 was.
+- **The chain now grows only when a campaign needs its kit.** Campaign 123 is a new standalone file
+  (`OperatorKernel.lean`, 223 lines) that copies nothing. Campaign 124 (P8's Einstein tensor) needs `kr_Riem`, so it
+  will copy the chain. P8's citable file will be named at its close.
+
+***The fourth paper: P8 (`slicing_operator`).*** The survey and the 16-row inventory are in
+`r7725_71_survey/SURVEY.md`.
+- P3's closure leaves the ranking unchanged.
+- P8 has the best fit among the remaining papers with more than two statements, every one of them precise.
+- Fifteen papers cite it, P3 among them, whose SdS family it derives.
+- P10 and P16 state no results. P7, P13, P14 and P15 are cited more but have few precise statements.
+
+***Campaign 123: `thm:kernel` and `prop:bend`, BUILT.*** The result is in `r7725_71_campaign123/RESULT.md`.
+- **The build:** zero errors and zero warnings, `11` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `223` lines, below the band of 250–650, at p `0.8`.
+- **What is built:**
+  - **`ok_vacuum_iff_ode` (1b):** `T = 0 ⟺ rf′ + f − 1 + Λr² = 0`. The angular equation is the radial one's
+    derivative.
+  - **`ok_general_solution` and `ok_sds_solves` (1c):** the solutions are exactly `1 − 2M/r − Λr²/3`, one constant.
+  - **1d:** `ok_L_bound`, `ok_kernel` (`ker L = span{1/r}`), `ok_onto` (preimage `(1/r)∫g`, endpoints included)
+    and `ok_index_one`.
+  - **`ok_matter_onto` (1e):** every continuous density is realised by a cut.
+  - **`ok_bend` (2):** `8πT^t_t = −2m′/r²`.
+- **No reading flags.**
+
+**Marks:** 5 of 16 rows are BUILT; 6 are BUILT IN PART (in the other engine); 4 are NOT BEGUN; 1 has no formal core.
+**Next, campaign 124:** 1a and 3a–c, the static Einstein tensor in the chain.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7723: CAMPAIGN 122 — 13a, 1c AND THE CONTINUED SURFACE BUILT; THE FAR SIDE CARRIES 1/α² − M/r³ UNCHANGED; P3's FORMALISATION CLOSES (`r7723+71.1`–`.2`)
 
 The result is in `r7723_71_campaign122/RESULT.md`, and the probe is `probes/SlicingCurvature.lean`.
