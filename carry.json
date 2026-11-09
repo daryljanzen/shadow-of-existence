@@ -1073,43 +1073,6 @@
     "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
     "unmeasured": true
    }
-  },
-  "tolerance": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42545167573",
-    "since": "de2b68b8ece1a68f5f0fac202de0d13e0380790b",
-    "unmeasured": true
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
