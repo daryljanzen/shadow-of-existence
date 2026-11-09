@@ -1,0 +1,220 @@
+==============================================================================
+SELF-TESTS -- every classifier, reader and computation on BOTH of its classes
+==============================================================================
+   ok  G2 accepts plain prose
+   ok  G2 accepts an escaped control sequence
+   ok  G2 accepts an escaped math delimiter
+   ok  G2 REFUSES a marker mixing prose with math
+   ok  skeleton: a plain ASCII name IS found
+   ok  skeleton: a math-mode Greek name IS found -- P3 prints sl\_$\sigma$\_$\sigma$
+   ok  skeleton: a name NOT on the page is NOT found
+   ok  reader: sl_nariai has a header
+   ok  reader: a declaration that does not exist reads as absent
+   ok  reader: decl_extent reaches a def's BODY, which lives after ":="
+   ok  reader: the conclusion is found at BRACKET DEPTH ZERO (the r7720 fix), so a nested ascription does not cut it short
+   ok  reader: a header with no depth-zero colon returns itself
+   ok  statement reader: a statement containing a Lean `let` binder is NOT truncated at the let's own ":=" -- this probe's own second defect
+   ok  statement reader: and it still stops before the proof
+   ok  statement reader: a declaration that does not exist is absent
+   ok  conjunct reader: an equation reads as an equation
+   ok  conjunct reader: an inequality reads as an inequality
+
+  THE ARITHMETIC, tested against values computed by hand before it was used:
+   ok  sigma(0) = 1
+   ok  sigma(1) = 0
+   ok  and the reader is NOT vacuous: sigma(0) is not 0
+   ok  2M at r0 = 1 is 0, and at r0 = 1/2 is 3/8 -- both by hand
+   ok  the cubic at r0 = 1 has 0 as a root, and 1/2 is not a root of it
+   ok  G6: prop:involution is one line only after flattening
+
+==============================================================================
+Q1 -- IS THE CORRECTED prop:involution TRUE AS STATED?
+      Every conjunct computed at the endpoints the statement itself names,
+      with sigma read from ITS OWN DEFINITION and the computation PRINTED.
+==============================================================================
+   ok  sigma's definition is at source, verbatim
+    sigma(r0) = (-r0 + sqrt(4 - 3 r0^2)) / 2
+
+    THE VALUES, computed:
+      sigma(-1/sqrt3 ) = +1.154700538379   [2M = -0.384900179460]
+      sigma(0        ) = +1.000000000000   [2M = +0.000000000000]
+      sigma(1/sqrt3  ) = +0.577350269190   [2M = +0.384900179460]
+      sigma(1        ) = +0.000000000000   [2M = +0.000000000000]
+      sigma(2/sqrt3  ) = -0.577350269190   [2M = -0.384900179460]
+
+  (1a) THE INVOLUTION IDENTITY on [-1/sqrt3, 2/sqrt3]:
+      sup |sigma(sigma(x)) - x| over 41 points of the interval = 1.054e-08
+      attained at x = -0.577350269; away from x = -1/sqrt3 (the point whose image is 2/sqrt3): 1.776e-15
+      ⌂ A TOLERANCE IS PART OF THE INSTRUMENT (negative probe 18).  At
+        x = -1/sqrt3 the image is 2/sqrt3, where the inner square root
+        VANISHES, so the OUTER sigma takes the root of a quantity that is
+        zero to floating point, and the error there is of order the root of
+        machine epsilon.  That is arithmetic and not mathematics, which the
+        second figure shows: at full precision away from that ONE point.
+   ok  sigma(sigma(x)) = x across the stated interval, to the tolerance the square root at the endpoint allows
+   ok  and away from that endpoint it holds to full precision, so the endpoint figure is the square root and not a defect in the claim
+      and BELOW it, on [-2/sqrt3, -1/sqrt3): sup |sigma(sigma(x)) - x| = 1.732e+00
+   ok  the identity FAILS below -1/sqrt3, so the stated left endpoint is not arbitrary -- the interval is exactly where it holds, not merely a subset of it
+
+  (1b) THE EXCHANGE of [0, 2/sqrt3] with [-1/sqrt3, 1] -- the arm I registered as
+       the subtle one, because the two intervals OVERLAP on [0, 1]:
+      sigma(0) = +1.000000000 = 1 (the right end of the second interval)
+      sigma(2/sqrt3) = -0.577350269 = -1/sqrt3 = -0.577350269 (its left end)
+   ok  sigma carries the endpoints of the first interval to the endpoints of the second, in reverse order
+      and the image of [0, 2/sqrt3], sampled: [-0.577350269, +1.000000000]
+   ok  so the image is [-1/sqrt3, 1] and the overlap is no obstacle: an involution may swap two overlapping sets whose union is its domain
+   ok  ⚑ AND THE OLD STATEMENT'S ERROR IS EXHIBITED, not just asserted: sigma(2/sqrt3) is NEGATIVE, so sigma is not a self-map of [0, 2/sqrt3]
+
+  (1c) ON [0, 1]: decreasing, ONTO [0, 1], to the OTHER non-negative root:
+   ok  decreasing on [0, 1]
+      image of [0, 1], sampled: [+0.000000000, +1.000000000]
+   ok  and onto [0, 1]
+      AND THAT sigma(r0) IS A ROOT OF r0's OWN CUBIC, computed at each endpoint:
+        r0 = 0        : cubic(2M(r0), sigma(r0)) = +0.000e+00;  sigma(r0) = +1.000000000 >= 0
+        r0 = 1/sqrt3  : cubic(2M(r0), sigma(r0)) = +0.000e+00;  sigma(r0) = +0.577350269 >= 0
+        r0 = 1        : cubic(2M(r0), sigma(r0)) = +0.000e+00;  sigma(r0) = +0.000000000 >= 0
+   ok  sigma(r0) is a root of r0's cubic at every sampled point of [0, 1], and is non-negative there
+   ok  "the OTHER non-negative root" is exact at the two ends -- sigma(0) = 1 and sigma(1) = 0, each the cubic's other non-negative root (both cubics are r^3 - r, with roots -1, 0, 1)
+   ok  and at the fixed point 1/sqrt3 the "other" root is itself, which is why the statement calls it the designated root on the merged pair
+
+==============================================================================
+Q1d -- DOES ANYTHING ELSE LEAN ON THE OLD READING?  A NAMED SEARCH, named.
+==============================================================================
+    SEARCHED: all 55 files of corpus/*.tex, flattened.
+    STRINGS: "involution of", "positive-root half", and every occurrence of
+             "2/\sqrt3" or "2/\sqrt{3}" within 300 characters of "involution"
+             or "\sigma".
+
+    "involution of":
+      SdS-slicing-curve_v2.tex: involution of $[-1/\sqrt{3}
+      SdS-slicing-curve_v2.tex: involution of Proposition~\ref{prop
+      SdS-slicing-curve_v2.tex: involution of its own
+      appendix_receipts_P15.tex: involution of order `2` in a group of `12`
+      appendix_receipts_corpus.tex: involution of order `2` in a group of `12`
+      boundary_paper.tex: involution of cosmic time
+      boundary_paper.tex: involution of cosmic time
+      groupoid_paper.tex: involution of order two
+      groupoid_paper.tex: involution of that final square root
+      groupoid_paper.tex: involution of the groupoid
+      matter_sector_paper.tex: involution of cosmic time
+   ok  the only "involution of <interval>" in the corpus is the CORRECTED one, and the only other hit is an unrelated "involution of order two"
+
+    "positive-root half":
+      SdS-slicing-curve_v2.tex: positive-root half ($r_{0}\in[0
+      appendix_receipts_P03.tex: positive-root half
+      appendix_receipts_corpus.tex: positive-root half
+   ok  P3's own remark now says the half is $r_{0}\in[0,1]$
+    ⌗ AND THE TWO RECEIPT-INDEX LINES THAT STILL SAY "on positive-root half" ARE
+      NOT STALE, which is where a pattern match would have produced a FALSE
+      finding.  The involution IDENTITY holds pointwise wherever 3r0 + s >= 0,
+      which is automatic for r0 >= 0, so it holds on ALL of [0, 2/sqrt3]:
+        sup |sigma(sigma(x)) - x| over [0, 2/sqrt3] = 2.220e-16
+   ok  the identity holds on the whole of [0, 2/sqrt3], so a claim that it holds "on the positive-root half" is TRUE under either reading of that phrase -- what the old statement got wrong was the SET sigma preserves, not the identity
+      and the receipt itself sweeps: sigma o sigma = id on the positive-root half (sweep r0∈[0,1])", all(abs(sig_n(sig_n(x))-x)<1e-9 for x in np.linspace(0,1
+   ok  and the receipt that line is generated from sweeps r0 in [0, 1], the CORRECTED interval, so its own assertion is exact
+
+    files with "2/sqrt3" near sigma or the involution: ['SdS-slicing-curve_v2.tex', 'groupoid_paper.tex']
+   ok  every such mention is in P3's corrected statements or in the groupoid paper, which states sigma(-1/sqrt3) = 2/sqrt3 and that -1/sqrt3 is NOT a fixed point -- consistent with the correction, not with the old reading
+
+==============================================================================
+Q2 -- ARE THE SEMI-AXES WHAT sl_ellipse STATES, OR A CONSEQUENCE?
+==============================================================================
+   ok  the claim is at source, verbatim
+    sl_ellipse: theorem sl_ellipse (r₀ r : ℝ) : let u := (r + r₀) / Real.sqrt 2 let v := (r - r₀) / Real.sqrt 2 u ^ 2 + v ^ 2 = r ^ 2 + r₀ ^ 2 ∧ r ^ 2 + r * r₀ + r₀ ^ 2 = 3 / 2 * u ^ 2 + 1 / 2 * v ^ 2 ∧ 3 / 2 * Real.sqrt (2 / 3) ^ 2 = 1 ∧ 1 / 2 * Real.sqrt 2 ^ 2 = 1 ∧ Real.sqrt (2 / 3) < Real.sqrt 2
+    READING -- 5 top-level conjuncts:
+      [equation] let u := (r + r₀) / Real.sqrt 2 let v := (r - r₀) / Real.sqrt 2 u ^ 2 + v ^ 2 = r ^ 2 + r₀ ^ 2
+      [equation] r ^ 2 + r * r₀ + r₀ ^ 2 = 3 / 2 * u ^ 2 + 1 / 2 * v ^ 2
+      [equation] 3 / 2 * Real.sqrt (2 / 3) ^ 2 = 1
+      [equation] 1 / 2 * Real.sqrt 2 ^ 2 = 1
+      [inequality] Real.sqrt (2 / 3) < Real.sqrt 2
+   ok  BOTH numbers are in the conclusion, each paired with its eigenvalue: 3/2 times sqrt(2/3)^2 = 1 and 1/2 times sqrt2^2 = 1
+   ok  and the DIRECTIONS are carried by the statement's own bindings, u = (r+r0)/sqrt2 and v = (r-r0)/sqrt2, so v = 0 is the line r = r0 and u = 0 is r = -r0
+   ok  and the diagonalisation that makes them semi-axes is stated too
+    ⌗ READING: the eigenvalue 3/2 goes with u, whose axis is v = 0, i.e. r = r0,
+      and 3/2 * (2/3) = 1, so sqrt(2/3) is the semi-axis THERE; the eigenvalue 1/2
+      goes with v, whose axis is u = 0, i.e. r = -r0, and 1/2 * 2 = 1.  Computed:
+        3/2 * sqrt(2/3)^2 = 1.000000000000;  1/2 * sqrt(2)^2 = 1.000000000000
+   ok  the assignment of each number to each direction is therefore RIGHT, and not swapped -- which is the one way this sentence could have failed
+    sl_locus: theorem sl_locus (r₀ r : ℝ) : sl_g r = sl_g r₀ ↔ (r - r₀) * (r ^ 2 + r * r₀ + r₀ ^ 2 - 1) = 0
+   ok  and the level set that makes them semi-axes -- the quadratic factor vanishing, i.e. the conic -- is the OTHER cited declaration, which is why the clause cites both
+    ⌗ So the semi-axes are STATED between the two declarations the clause cites:
+      neither alone gives them, and the sentence cites both.  Not a consequence
+      smuggled past a citation.
+
+==============================================================================
+Q3 -- DOES "where the cubic is $(r-r_{0})^{2}(r+2r_{0})$" MATCH sl_nariai?
+==============================================================================
+   ok  the claim is at source, verbatim
+    sl_nariai: theorem sl_nariai : (∀ r₀ r : ℝ, (r = r₀ ∧ r ^ 2 + r * r₀ + r₀ ^ 2 - 1 = 0) ↔ (r = r₀ ∧ (r₀ = 1 / Real.sqrt 3 ∨ r₀ = -(1 / Real.sqrt 3)))) ∧ (∀ a r : ℝ, 3 * a ^ 2 = 1 → sl_cubic (sl_g a) r = (r - a) ^ 2 * (r + 2 * a)) ∧ 3 * (1 / Real.sqrt 3) ^ 2 = 1 ∧ 3 * (-(1 / Real.sqrt 3)) ^ 2 = 1 ∧ Real.sqrt (2 / 3) / Real.sqrt 2 = 1 / Real.sqrt 3
+   ok  the FACTORISATION is a conjunct of sl_nariai, stated for every a with 3a^2 = 1
+   ok  and "meeting EXACTLY at" is an IFF in the statement, not an inclusion -- the word was read and not granted
+   ok  and both values are certified to satisfy the hypothesis, so "$\pm1/\sqrt3$" is the hypothesis's own solution set
+    AND THE FACTORISATION CHECKED BY ARITHMETIC at both values, independently:
+      a = +1/sqrt3: sup over 24 values of r of |cubic(2M(a), r) - (r-a)^2 (r+2a)| = 1.776e-15
+   ok  the factorisation holds identically in r at a = +1/sqrt3
+      a = -1/sqrt3: sup over 24 values of r of |cubic(2M(a), r) - (r-a)^2 (r+2a)| = 1.776e-15
+   ok  the factorisation holds identically in r at a = -1/sqrt3
+   ok  and it FAILS at a value not satisfying 3a^2 = 1, so the hypothesis is doing work
+
+==============================================================================
+ITEM 4 -- THE REST OF THE LANDING
+==============================================================================
+  4a THE PROOF'S BRANCH CONDITION, and "EXACTLY ON" read as an IFF:
+   ok  the proof says the condition holds "exactly on" the interval, verbatim
+      computed: 3r0 + s >= 0, with s = sqrt(4 - 3 r0^2)
+        r0 = -1/sqrt3 : 3r0 + s = -0.000000000
+        r0 = 0        : 3r0 + s = +2.000000000
+        r0 = 1/sqrt3  : 3r0 + s = +3.464101615
+        r0 = 1        : 3r0 + s = +4.000000000
+        r0 = 2/sqrt3  : 3r0 + s = +3.464101615
+        r0 = -1.1047 (below -1/sqrt3): 3r0 + s = -2.731941705
+   ok  the condition holds at every named endpoint of the stated interval and FAILS below its left end, so "exactly on" is an iff and is true
+   ok  and the monotonicity the proof adds is at source, verbatim
+
+  4b THE REMARK'S NARROWED PARENTHESIS, checked from 2M's own expression:
+   ok  2M = r0 - r0^3 is at source, which is what says r0 is a root
+      2M(-1/sqrt3 ) = -0.384900179460
+      2M(0        ) = +0.000000000000
+      2M(1/sqrt3  ) = +0.384900179460
+      2M(1        ) = +0.000000000000
+      2M(2/sqrt3  ) = -0.384900179460
+      2M(+1.1) = -0.231000000000   (r0 just above 1)
+   ok  2M >= 0 exactly on [0, 1] within the involution's domain -- non-negative at 0, 1/sqrt3 and 1, and NEGATIVE both below 0 and above 1 -- so the narrowed parenthesis is right and the old one was wrong
+
+   ok  4c sl_factor exists
+   ok  4c sl_factor is cited in P3 (by SKELETON)
+   ok  4c sl_roots exists
+   ok  4c sl_roots is cited in P3 (by SKELETON)
+   ok  4c sl_r0zero exists
+   ok  4c sl_r0zero is cited in P3 (by SKELETON)
+   ok  4c sl_readingswap exists
+   ok  4c sl_readingswap is cited in P3 (by SKELETON)
+   ok  4c sl_σ_σ exists
+   ok  4c sl_σ_σ is cited in P3 (by SKELETON)
+   ok  4c sl_σ_swap exists
+   ok  4c sl_σ_swap is cited in P3 (by SKELETON)
+   ok  4c sl_σ_second exists
+   ok  4c sl_σ_second is cited in P3 (by SKELETON)
+   ok  4c sl_σ_fixed exists
+   ok  4c sl_σ_fixed is cited in P3 (by SKELETON)
+   ok  4c sl_locus exists
+   ok  4c sl_locus is cited in P3 (by SKELETON)
+   ok  4c sl_ellipse exists
+   ok  4c sl_ellipse is cited in P3 (by SKELETON)
+   ok  4c sl_nariai exists
+   ok  4c sl_nariai is cited in P3 (by SKELETON)
+    ⌗ And the file itself flags the old error in sl_σ_swap's docstring:
+   ok  sl_σ_swap states BOTH directions of the exchange AND that σ is not a self-map of [0, 2/√3], naming σ(2/√3) < 0
+   ok  and it states the IMAGE equality, not merely containment, which is what "exchanges" needs
+   ok  and sl_σ_second confines "the second POSITIVE root" to [0, 1), which is why the formal paragraph says $[0,1)$ where the proposition says $[0,1]$ with "non-negative" -- the two wordings are consistent, not a discrepancy
+
+    SlicingCubic.lean: axiom tokens = 0; sorry = 0
+   ok  zero axiom tokens and zero sorry
+
+  4d THIS SEAT'S OWN r7720 REPAIR, as landed in P2:
+   ok  the Sbierski citation now names the Discussion section and no longer the remark
+   ok  and the offered bridge clause is taken, verbatim
+   ok  the wrong pointer is gone: the Sbierski clause no longer cites the remark -- searched for the old parenthetical verbatim
+
+==============================================================================
+ALL ARMS AND SELF-CHECKS PASS.

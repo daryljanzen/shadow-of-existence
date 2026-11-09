@@ -1,0 +1,2 @@
+ef748bcd r7722 (60) -- REGISTER BEFORE MEASURING: is the corrected prop:involution TRUE as stated, do the semi-axes come from sl_ellipse, and does the factorisation match sl_nariai?
+origin/main = ce392787 
