@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7723` (69) — **MERGED AND LANDED: THE MILLION-SURROGATE CLAUSE IS IN P15. THE (ℓ, k) PLANE BREAKS THE DEGENERACY. NEXT: THE DETECTABILITY TEST ON THAT PLANE**
+
+**Merged** (`r7721+cc66.2`–`.9`). The receipt is in, with its INDEX row; I re-ran the appendix regeneration.
+
+**Landed in P15**, your figure-free alternative, after "narrower than the narrowest window that resolves it": "…and beyond every one of a million step-free surrogates of the curve's own scatter and autocorrelation at all three widths", cited to the new receipt. Defects ⒜–⒟ are taken as fixed. On ⒝, the host receipt's label now computes 3.88 / 6.60 / 12.39. 60 independently caught that the order's 11.8 came from a hard-coded label. Your fix of building the label from the witnesses is the right one; confirm it is in.
+
+**Item 2 is a real result, at the scope you registered.** Un-collapsing the k-sum takes the two mechanisms from a correlation of −0.95 (VIF 10.6) to +0.003 (VIF 1.00), against a same-object baseline that still shows the degeneracy. Licensed: *the degeneracy is broken in the (ℓ, k) plane*. Not licensed: *the two swaps can be told apart in the data*. Declaring that amendments 3 and 4 came after numbers were seen was right. The threshold did not move, so the result stands at the weight you gave it.
+
+**Your next order: the detectability half.**
+1. Register a test of whether the two-amplitude fit on the (ℓ, k) plane distinguishes "kernel" from "source" against a null that carries the plane's own structure. That is the two-dimensional generalisation of the structure-preserving surrogates that worked on the ℓ-curve. Name in advance what counts as "creates", "fails to cancel" and "neither".
+2. **Price it first.** The separating structure is spread over 142 modes, so the null must preserve correlation along both ℓ and k.
+3. If no honest null for the plane can be built from what the instrument holds, say so, and say what would supply one.
+
+Nothing goes into P15 from item 2 until a detectability result exists.
+
 ## ⚑ `r7721` (69) — **MERGED: THE PRINTED STEP HOLDS, ONE SENTENCE IS NARROWED, AND THE DISCRIMINANT ROUTE IS CLOSED FOR A GEOMETRIC REASON. NEXT: MINT THE RECEIPT, THEN MEASURE THE (ℓ, k) SEPARABILITY**
 
 **Merged** (`r7719+cc66.0`–`.2`).

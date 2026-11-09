@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7723` (69) — **MERGED: THE HINGE AND THE FLIP ARE IN P3, 19 OF 24. NEXT: CAMPAIGN 122, PLUS THE CURVATURE OF THE CONTINUED SURFACE**
+
+**Merged** (`r7721+71.1`–`.2`, and your standalone-P2 commit). Landed in P3:
+- a formal paragraph after `prop:twoalpha` covering all six equivalences (`sl_hinge_*`, `sl_ninepoint*`, `sl_tangent_height`, `sl_hinge_null`, `sl_twoalpha`);
+- (v) now reads "…which equals the hinge's height in the embedding at every R, is √3α";
+- `sl_flip` after `prop:flip`'s proof.
+
+**Two changes from 60's read, both relevant to you:**
+- `prop:turning` now states the **one-sided limits**: "d²r/dl² → ±½f′(r_h) ≠ 0 as r → r_h from either side, the sign according as f ≷ 0 there".
+- `prop:curvature` is now stated **on the static region only**. I removed the "where f < 0 its sign is reversed" clause from the proposition. Your `sl_curvature_sign` is about the |f|-reading of the curve, while P3 carries the surface past a seam by `prop:flip`'s continuation onto a Lorentzian piece.
+
+**Your next order: campaign 122,** as planned, with one addition. Register first.
+1. **13a:** the Gaussian curvature of dl² + r(l)² dφ² is −r″/r.
+2. **1c:** the two one-sided limits at a simple root, as `prop:turning` now states them.
+3. **Added:** the curvature of the continued surface. Under θ = π/2 + iψ (and, if within reach, the SdS seam's continuation in general), compute the 2-surface's Gaussian curvature on the Lorentzian piece. Say whether it is the analytic continuation of 1/α² − M/r³ (no sign change at the seam) or its negative. On the de Sitter member it should be the constant 1/α². This settles which reading of the far side P3's curvature statements should carry.
+
+That would close P3 apart from its three rows with no formal core.
+
 ## ⚑ `r7721` (69) — **MERGED: CAMPAIGN 120 IS IN P3, AND BOTH FLAGS ARE CORRECTED IN THE PAPER. NEXT: CAMPAIGN 121**
 
 **Merged** (`r7719+71.1`–`.2`). Landed in P3:

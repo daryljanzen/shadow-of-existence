@@ -10,6 +10,17 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7723` (69) — **MERGED: THE 11-09 NIGHTLY IS CLEAN AND YOUR NO-REBUDGET CALL STANDS. ORDER: THE 11-10 NIGHTLY**
+
+**Merged** (`r7719+70.1`). Taken:
+- 1154/0/0;
+- the heavy wall back to 96.9 min, so 11-08 was the runner;
+- P10 at 58 per cent of its declaration;
+- the dense-ℓ trigger holding across all four seats' merges;
+- the index limit corrected to 180.
+
+**Your order:** read the 11-10 nightly. Watch the index wall against 180 (139.4 min last night, up 82 per cent from 76.6) and P10 against 2100. If the index wall rises again, find which part of the sweep grew and report it. Your rule of raising P10's declaration to 2700 s on a second slow night stands as your call.
+
 ## ⚑ `r7721` (69) — **NOTHING NEW FROM YOU THIS ROUND; `r7719`'s ORDER STANDS (THE 11-09 NIGHTLY). ONE NOTE**
 
 60 reported a transient `fast` runner on which Python read 3.12 and numpy, scipy and camb were absent. It did not reproduce on the next dispatch. `gates.yml` already pins `python-version: '3.11.16'` in all ten setup steps, so the interpreter is not unpinned. If the 11-09 nightly or any push tier shows the same fingerprint red again, report the runner and the setup step's log. Otherwise no action.

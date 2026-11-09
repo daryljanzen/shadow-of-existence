@@ -192,7 +192,7 @@ We exhibit a single radial curve $r(l)$, defined by $dr/dl=\sqrt{|f(r)|}$ with $
 
 The slicing parameter is fixed by the geometry of observation. The hole's image lies on the observer's celestial sphere, and obtaining a planar chart forces the gnomonic projection; the offset is then $r_{0}=\tfrac{2}{\sqrt3}\sin w$ with $w$ a genuine geometric angle, and the horizon relation is the pure triple-angle $2M=\tfrac{2}{3\sqrt3}\sin 3w$, the slicing scale $2/\sqrt3$ forced as the unique value removing the residual harmonic. That collapse to a pure multiple angle is available in four spacetime dimensions and---up to a parity---in five, and in no other.
 
-Three consequences follow for the geometry. The slicing surface has intrinsic Gaussian curvature $K_{G}=1/\alpha^{2}-M/r^{3}$: finite throughout the static region, invisible to the horizons, and changing sign once, at $r_{\mathrm{HE}}=(M\alpha^{2})^{1/3}$, between a Schwarzschild-like and a de~Sitter-like regime. The mass parameter is the throat radius modulated by the slicing, $2M=\alpha((r_{0}/\alpha)-(r_{0}/\alpha)^{3})$---a turning point, not a coefficient---so that $\alpha$ is the invariant and $M$ its slicing-dependent factor. And the equatorial seam joins a Riemannian spherical piece to a Lorentzian de~Sitter piece by the continuation $\theta\mapsto\pi/2+i\psi$, the signature flip automatic and confined to the two-dimensional slicing surface, the spacetime Lorentzian throughout.
+Three consequences follow for the geometry. The slicing surface has intrinsic Gaussian curvature $K_{G}=1/\alpha^{2}-M/r^{3}$: finite throughout the static region, invisible to the horizons, and changing sign once there, at $r_{\mathrm{HE}}=(M\alpha^{2})^{1/3}$, between a Schwarzschild-like and a de~Sitter-like regime. The mass parameter is the throat radius modulated by the slicing, $2M=\alpha((r_{0}/\alpha)-(r_{0}/\alpha)^{3})$---a turning point, not a coefficient---so that $\alpha$ is the invariant and $M$ its slicing-dependent factor. And the equatorial seam joins a Riemannian spherical piece to a Lorentzian de~Sitter piece by the continuation $\theta\mapsto\pi/2+i\psi$, the signature flip automatic and confined to the two-dimensional slicing surface, the spacetime Lorentzian throughout.
 
 Because the areal radius is signed, the slicing \emph{closes}: run inward to the seam, around the throat through $r=0$---a branch point and not a barrier, the geometry smooth across the locus the chart labels $r=0$---and out onto the conjugate branch, the curve closing on the backward-radial root. The horizon, the curvature singularity and the cosmological horizon are thereby points of one curve: the horizons its turning points, $r=0$ the branch point it passes through.
 
@@ -283,8 +283,10 @@ The turning points of the slicing curve are the roots of the SdS horizon cubic. 
 \end{equation}
 At a simple root $r_{h}$ the turning point is non-degenerate, with
 \begin{equation}
-  \frac{d^{2}r}{dl^{2}}\Big|_{r_{h}}=\pm\tfrac12 f'(r_{h})\neq0;
+  \frac{d^{2}r}{dl^{2}}\;\longrightarrow\;\pm\tfrac12 f'(r_{h})\neq0
+  \quad\text{as } r\to r_{h}\text{ from either side},
 \end{equation}
+the sign according as $f\gtrless0$ there;
 at a double root (Nariai~\cite{Nariai1951}) it is degenerate, $f'(r_{h})=0$.
 \end{proposition}
 
@@ -558,7 +560,7 @@ With $r_{0}=\tfrac{2}{\sqrt3}\sin w$, the horizon relation $2M=r_{0}-r_{0}^{3}$ 
 \begin{equation}\label{eq:tripleM}
   2M=\frac{2}{3\sqrt3}\,\sin(3w),
 \end{equation}
-and the image radius $2/\sqrt3$ is the unique value of the slicing scale for which this holds.\rcpt{P03_triple_angle_gnomonic}
+and the image radius $2/\sqrt3$ is the unique positive value of the slicing scale for which this holds.\rcpt{P03_triple_angle_gnomonic}
 \end{proposition}
 
 \begin{proof}
@@ -643,7 +645,7 @@ using $\arcsin\sin(\tfrac\pi2-a)=\tfrac\pi2-a$ for $\tfrac\pi2-a\in[0,\tfrac\pi2
 the last step by $\tfrac{2}{\sqrt3}\sin(\tfrac\pi3-\vartheta)=\cos\vartheta-\tfrac{1}{\sqrt3}\sin\vartheta$. Both sides equal $\tfrac{2}{\sqrt3}\sin(\tfrac\pi3-\tfrac{2a}{3})$, so $\chi\circ g_{1}=\sigma\circ\chi$ identically.
 \end{proof}
 
-The conjugacy is machine-checked on $[0,1]$, and on $[-1,0)$ it fails at every point, the two sides differing there by the nonzero amount $\tfrac{2}{\sqrt3}\sin(\tfrac23\arcsin x)$ (\texttt{sl\_conjugacy} and \texttt{sl\_conjugacy\_fails}, in \texttt{SlicingSky.lean}); the domain is the one the proof's $a\in[0,\pi/2]$ already takes.
+The conjugacy is machine-checked on $[0,1]$, and on $[-1,0)$ it fails at every point (\texttt{sl\_conjugacy} and \texttt{sl\_conjugacy\_fails}, in \texttt{SlicingSky.lean}), the two sides differing there by the nonzero amount $\tfrac{2}{\sqrt3}\sin(\tfrac23\arcsin x)$; the domain is the one the proof's $a\in[0,\pi/2]$ already takes.
 
 The conjugacy is an exact trigonometric identity, not a numerical coincidence: the collapse $4-3\chi^{2}=4\cos^{2}(\tfrac{2a}{3})$ that makes it closed is itself a consequence of the forced slicing scale $2/\sqrt3$. The construction carries a single involution presented two ways---the throat-circle reflection $g_{1}$ and the cubic root-exchange $\sigma$---and $\chi$ is the exact map between them, the natural entry point for the group-theoretic treatment of the companion groupoid paper~\cite{JanzenGroupoid}.
 
@@ -694,12 +696,14 @@ Let the hinge sit at transverse distance $R$ from the axis. The following are eq
 \item the throat subtends $60^{\circ}$ at the hinge, i.e.\ $\arcsin(\alpha/R)=30^{\circ}$;
 \item the hinge triangle's sides are tangent to the throat \emph{at their midpoints}---an equilateral triangle's inradius is half its circumradius, so midpoint-tangency holds iff $R=2\alpha$;
 \item the nine-point circle of the hinge triangle \emph{is} the throat\rcpt{euclid7_nine_point}\ldg{figure_theorem}---by Euler's theorem the nine-point radius is $R/2$ and its centre is the equilateral's own centre;
-\item the tangent length from the hinge to the throat equals the hinge's height in the embedding, both $\sqrt3\,\alpha$;
+\item the tangent length from the hinge to the throat, which equals the hinge's height in the embedding at every $R$, is $\sqrt3\,\alpha$;
 \item writing $s^{2}$ for the squared separation of two opposite-horn ends of a $120^{\circ}$-separated triple of lines at transverse radius $R$, one has $s^{2}=4\alpha^{2}-R^{2}$, so $R=2\alpha$ is the unique transverse radius at which those pairs are \emph{null}\rcpt{P03_the_sixth_equivalence}.
 \end{enumerate}
 \end{proposition}
 
 \noindent Each equivalence is a line, and the point is not any one of them but their number: the incircle relation this section already states, the $60^{\circ}$ it already computes, and the height $\sqrt3\,\alpha$ that Figure~\ref{fig:keplerian} already carries are not several facts about the hinge but one fact wearing several faces. Item~(iv) is worth marking because it reaches the placement by a route mentioning neither tangency nor the subtended angle nor the substrate---Euler's $R/2$, and nothing else. Item~(vi) differs from the other five in \emph{kind} rather than in content, and is worth marking for that reason: the first five are statements about a Euclidean figure, while the sixth reads the same placement in the substrate's own causal language---$2\alpha$ is where the opposite-horn pairs go null---so the count above is not five Euclidean faces but five and one causal. Item~(v) is the substrate's own in a different sense: the tangent runs $\sqrt3\,\alpha$ across while the hinge stands $\sqrt3\,\alpha$ high, so the sightline is null and $\tan 60^{\circ}=\sqrt3$ is that one length against the throat radius (the tangent's null character is the geometric-core paper's, \cite{JanzenGeometricCore}).
+
+All six equivalences are machine-checked in the transverse plane, the throat the circle of radius $\alpha$ about the axis and the hinges at $(R,0)$ and $(-R/2,\pm\sqrt3R/2)$ (\texttt{computations/formalisation/lean/probes/SlicingHinge.lean}): the hinge triangle is equilateral of circumradius $R$ with inradius $R/2$, its sides perpendicular to the radii through their midpoints, giving (ii) and (iii) (\texttt{sl\_hinge\_equilateral}, \texttt{sl\_hinge\_midpoints}, \texttt{sl\_hinge\_arcsin} and \texttt{sl\_hinge\_tangent\_mid}); the unique circle through the side midpoints is centred on the axis with radius $R/2$, and the feet of the altitudes and the vertex--orthocentre midpoints lie on it, giving (iv) (\texttt{sl\_ninepoint\_unique} and \texttt{sl\_ninepoint}); for every $R\ge\alpha$ each tangent from the hinge to the throat has length $\sqrt{R^{2}-\alpha^{2}}$, which is also the hinge's height, so (v) is the common value being $\sqrt3\,\alpha$ (\texttt{sl\_tangent\_height}); and (vi) is \texttt{sl\_hinge\_null}. Each of (ii)--(vi) is equivalent to (i) (\texttt{sl\_twoalpha}).
 
 \paragraph{The configuration's null relations are exhausted by the legs already listed.} Item~(vi) invites the question whether $2\alpha$ is merely the first of several radii at which pairs go null, and it is not. Sweeping the causal character across the six overhead points at transverse radius $4\alpha$ together with the six hinge-ends returns \emph{no} null pair among the thirty-six\rcpt{P03_slate_worked}: the null relations the hinge triangle carries are the ones already named and there are no others. \emph{The set is null-inert without being causally inert}, which is the more informative half---an overhead point above a hinge's own wall is spacelike from that hinge in \emph{both} horns, while one above another's is horn-dependent. That is the own-wall relation of \S\ref{sec:tour}, read a second way and reached here without reference to it. The equivalences are verified in the receipts marked at each item and in the programme's figure-theorem ledger\ldg{figure_theorem}, where the wider catalogue of classical theorems read on this figure is collected.
 
@@ -852,6 +856,8 @@ of Lorentzian signature $(-,+)$.\rcpt{P03_seam_continuation} The signature flip 
 Write $\theta=\pi/2+i\psi$. Then $d\theta=i\,d\psi$, so $d\theta^{2}=-d\psi^{2}$. And $\sin\theta=\sin(\pi/2+i\psi)=\cos(i\psi)=\cosh\psi$. Substituting both into \eqref{eq:sph} gives $ds^{2}=-d\psi^{2}+\cosh^{2}\psi\,d\Omega^{2}$, which is \eqref{eq:dscont}. The sign of the first term has changed because the continuation factor $i$ in $d\theta=i\,d\psi$ squares to $-1$; no signature change was inserted by hand.
 \end{proof}
 
+The continuation is machine-checked: at $\theta=\pi/2+i\psi$ the coefficient of $d\theta^{2}$ becomes that of $-d\psi^{2}$ and $\sin\theta=\cosh\psi$, so the signature is $(-,+)$ (\texttt{sl\_flip}, in \texttt{SlicingHinge.lean}).
+
 \begin{remark}[The seam is where two reality-lines of $\sin$ cross, at a critical point]\label{rem:reality-lines}
 Proposition~\ref{prop:flip} and the tangency that defines a seam are one fact about $\sin$, and stating it
 that way gives both, together with the $C^{1}$ join and the signature flip. Since
@@ -968,22 +974,21 @@ The slicing curve, swept through one angular direction, generates a surface of r
 \begin{proposition}[Intrinsic curvature]\label{prop:curvature}
 On the static region $f>0$, the slicing surface $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ has Gaussian curvature
 \begin{equation}\label{eq:KG}
-  K_{G}=-\frac{f'(r)}{2r}=\frac{1}{\alpha^{2}}-\frac{M}{r^{3}} ;
+  K_{G}=-\frac{f'(r)}{2r}=\frac{1}{\alpha^{2}}-\frac{M}{r^{3}} .
 \end{equation}
-where $f<0$ its sign is reversed.
 \end{proposition}
 
 \begin{proof}
 For a surface of revolution $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ the Gaussian curvature is $K_{G}=-r''(l)/r$. From $dr/dl=\sqrt{|f|}$, differentiating once more gives $r''(l)=\tfrac12 f'(r)\operatorname{sgn}f$ (as in the proof of Proposition~\ref{prop:turning}); on the static region $f>0$ this is $r''=\tfrac12 f'$, so $K_{G}=-f'/(2r)$. With $f'(r)=2M/r^{2}-2r/\alpha^{2}$ this is $K_{G}=1/\alpha^{2}-M/r^{3}$.
 \end{proof}
 
-The sign law is machine-checked: along $dr/dl=\sqrt{\lvert f\rvert}$, $-r''/r$ is $1/\alpha^{2}-M/r^{3}$ where $f>0$ and its negative where $f<0$, in the gauge $\alpha=1$ (\texttt{sl\_curvature\_sign}, in \texttt{SlicingSky.lean}); the surface-of-revolution formula $K_{G}=-r''/r$ is cited and not formalised.
+Along $dr/dl=\sqrt{\lvert f\rvert}$, $-r''/r$ is machine-checked to be $1/\alpha^{2}-M/r^{3}$ where $f>0$, in the gauge $\alpha=1$; where $f<0$ the same curve read with the modulus gives its negative (\texttt{sl\_curvature\_sign}, in \texttt{SlicingSky.lean}), whereas past a seam the slicing surface is carried by the continuation of Proposition~\ref{prop:flip}. The surface-of-revolution formula $K_{G}=-r''/r$ is cited and not formalised.
 
 Three consequences follow, and together they close the question of the interior. First, $K_{G}=1/\alpha^{2}-M/r^{3}$ is finite and smooth for every $r>0$: the slicing surface is regular throughout the static region between the horizons. The sole divergence is the $M/r^{3}$ pole as $r\to0$---the Schwarzschild curvature singularity of the companion paper~\cite{JanzenCircle}---and it is absent when $M=0$, where \eqref{eq:KG} reduces to the constant $K_{G}=1/\alpha^{2}$ of de Sitter.
 
-Second, the curvature does not detect the horizons. At a horizon $r_{h}$, where $f(r_{h})=0$, the curvature $K_{G}(r_{h})=1/\alpha^{2}-M/r_{h}^{3}$ is simply a finite number; it neither diverges nor vanishes nor spikes there. The horizon is invisible to the intrinsic curvature---the precise statement, for SdS, that the horizon is a metric and chart feature and not a curvature feature, exactly as the companion paper found for Schwarzschild~\cite{JanzenBHcausality}.
+Second, the curvature does not detect the horizons from the static region. Approaching a horizon $r_{h}$, where $f(r_{h})=0$, the curvature tends to $1/\alpha^{2}-M/r_{h}^{3}$, simply a finite number; it neither diverges nor vanishes nor spikes there. The horizon is invisible to the intrinsic curvature---the precise statement, for SdS, that the horizon is a metric and chart feature and not a curvature feature, exactly as the companion paper found for Schwarzschild~\cite{JanzenBHcausality}.
 
-Third, the curvature changes sign once, at
+Third, within the static region the curvature changes sign once, at
 \begin{equation}\label{eq:rflat}
   r_{\mathrm{HE}}=(M\alpha^{2})^{1/3},
 \end{equation}

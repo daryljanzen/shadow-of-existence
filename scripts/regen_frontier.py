@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7723 LANDS r7721+cc66, r7719+70, r7721+71, r7724 (60): P3\'s hinge and flip machine-checked, curvature and turning statements scoped; '
+        'P15 prints the step beyond 10^6 surrogates; the (l,k) plane breaks the degeneracy. '
         'r7721 LANDS r7719+cc66, r7719+71, r7722 (60): P3\'s sky angle and turning points machine-checked, conjugacy and curvature on their true domains; '
         'P15\'s located step survives 10^6 surrogates, the source exclusion narrowed; the collapsed-l route closed geometrically. '
         'r7719 LANDS r7717+cc66, r7717+70, r7717+71, r7720 (60): P3\'s cubic chain machine-checked (sl_*), prop:involution corrected to its true interval; '
