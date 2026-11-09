@@ -1,0 +1,13 @@
+
+  ⛭ HOW MANY INDEPENDENT WINDOWS DOES THE STEP COMPARE?
+       half   centres  lo/hi used   range/2h   autocorr length   effective lo+hi
+       0.175     40     8/16        5.57     0.200 in q        1.75 + 3.75
+       0.250     38     6/16        3.70     0.350 in q        0.71 + 2.14
+       0.350     36     4/16        2.50     0.300 in q        0.50 + 2.50
+
+  ⇒ the step compares two band MEANS, and each is an average over only a few INDEPENDENT
+    windows -- which is why no amount of l density helps: the l grid is already every integer,
+    and the limit is the number of independent WINDOWS, set by the band's width over 2h.
+
+  ⌗ the curve has ~40 centres but they overlap: at the widest half-width the whole band holds
+    about three non-overlapping windows, so the two group means rest on ~1.5 each.

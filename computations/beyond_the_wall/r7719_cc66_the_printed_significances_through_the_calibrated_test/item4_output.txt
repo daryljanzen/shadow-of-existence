@@ -1,0 +1,28 @@
+
+  ⛔ CONTROL: the batched generator against `r7717`'s committed loop (20000 draws each)
+       loop     mean -2.328e-05  sd 0.016258  |max| 0.036474  q99.9 0.034962
+       batched  mean -2.328e-05  sd 0.016258  |max| 0.036474  q99.9 0.034962
+       sd agree to 0.00%, the 99.9th percentile to 0.00%  ⇒ SAME NULL
+
+  ⛭ ITEM 4 — the three discriminant ratios at N = 10000000, checkpointed per curve
+       ratio            half     step       surrogate sd   |step| rank        p
+       own x own      0.175  +0.03023   0.017456        396989/10000000   3.970e-02   [15 s]
+       own x own      0.250  +0.02765   0.016446        592867/10000000   5.929e-02   [14 s]
+       own x own      0.350  +0.02612   0.016228        899029/10000000   8.990e-02   [11 s]
+       kernel alone   0.175  -0.02610   0.037805       6180197/10000000   6.180e-01   [14 s]
+       kernel alone   0.250  -0.03167   0.038119       4889258/10000000   4.889e-01   [14 s]
+       kernel alone   0.350  -0.02860   0.034933       4729873/10000000   4.730e-01   [12 s]
+       source alone   0.175  +0.05105   0.051207       4710329/10000000   4.710e-01   [14 s]
+       source alone   0.250  +0.05416   0.049028       3549784/10000000   3.550e-01   [14 s]
+       source alone   0.350  +0.04814   0.044981       3618838/10000000   3.619e-01   [11 s]
+
+  ⌗ floor p 1.00e-07 = 5.33 sd-equivalent; the registered bar is 5.
+
+  ⛭ AT THE WIDEST REGISTERED WINDOW, against the bar read as a two-sided p (6.3e-05):
+       own x own      step +0.02612  p 8.990e-02  ⛔ NOT RESOLVED
+       kernel alone   step -0.02860  p 4.730e-01  ⛔ NOT RESOLVED
+       source alone   step +0.04814  p 3.619e-01  ⛔ NOT RESOLVED
+
+  ⛭ THE VERDICT ON THE PSEUDO-SPECTRUM ROUTE
+       ⇒ NEITHER DIFFERENCE IS RESOLVED. The route is closed: the pseudo-spectrum
+         cannot decide 'creates' from 'fails to cancel', and that is the finding.

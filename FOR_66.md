@@ -15,6 +15,138 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔ `r7719+cc66` — **ONE PRINTED READING SURVIVES DECISIVELY, ONE IS TOO STRONG AT ONE SMOOTHING, AND ONE CANNOT BE TESTED BY THIS TEST AT ALL. ITEM 4 IS NEXT**
+
+Registration pushed alone before any computation (`r7719+cc66.0`), with the ceiling arithmetic in it.
+Curves taken from `r7707`'s own module and surrogates from `r7717`'s — **neither redefined here, and the
+imports enforce that.** New PR **#704**; #699 merged, branch restarted from `main`. Full verdict in
+`VERDICT.md`, drafts in `DRAFTS.md`.
+
+### ⓵ `l.1397`–`1401`, THE LOCATED TRANSITION — **SURVIVES, BEYOND EVERYTHING THE TEST CAN GENERATE**
+
+| half-width | step | `p` |
+|---|---|---|
+| `0.175` | `+0.02415` | **`1.0 × 10⁻⁶` — none of `10⁶` surrogates reach it** |
+| `0.250` | `+0.02422` | **`1.0 × 10⁻⁶` — none** |
+| `0.350` | `+0.02549` | **`1.0 × 10⁻⁶` — none** |
+
+⇒ **At every width the step is beyond every one of a million step-free surrogates carrying the curve's own
+scatter and autocorrelation.** ⌗ *And this is the one place `r7717`'s deflation does NOT reach: the
+pseudo-spectrum ratio that fell to `p = 0.087` is a far noisier object than the real spectra's contrast,
+and that difference is now measured rather than assumed. **Your worry about this sentence was the right
+worry and the sentence holds.***
+
+⚠ Only its multiple needs care: a `9.5` read as a significance asserts `p ≈ 2 × 10⁻²¹`, above any
+affordable ceiling. ⌗ *But that figure lives in the receipt, not in the sentence — the printed sentence
+makes no numerical significance claim — so the edit I drafted for it is **optional** and I say so in
+`DRAFTS.md` rather than pressing it.*
+
+### ⓷ `l.1404`, THE SOURCE EXCLUSION — **A POWER CLAIM, AND IT MISSES THE REGISTERED THRESHOLD AT THE NARROWEST SMOOTHING**
+
+| half-width | the source ratio's own step | **power at `α = 10⁻³`** |
+|---|---|---|
+| `0.175` | `+0.00251` (`p = 0.79`) | ⛔ **`0.814`** against the registered `0.95` |
+| `0.250` | `+0.00240` (`p = 0.73`) | `1.000` ✔ |
+| `0.350` | `+0.00180` (`p = 0.53`) | `1.000` ✔ |
+
+⇒ **Two of three smoothings carry the printed exclusion outright; the narrowest misses a transition of
+the measured size about one time in five.** So *"would have stood at"* is too strong there. **This one
+needs the edit, and it is drafted.** ⌗ *The source ratio's own step is nothing at every width, exactly as
+printed — now on a calibrated footing instead of a parametric one.*
+
+### ⛔⛔ ⓶ `l.1621`, THE BOTH-ARMS SENTENCE — **I FIRST TESTED THE WRONG OBJECT, AND THE RIGHT ONE CANNOT CARRY ITS OWN FIGURES**
+
+I measured the **sliding-window step on each arm's own spectrum**: `1.17`–`1.59`× the upper-band spread at
+`p = 0.017`–`0.173`. **That looks like a refutation of the printed `4` and it is not.** The printed figures
+are `r7709`'s — **band 1's departure from the trend its own upper bands set**, on the banded family, one
+number per band. ⇒ **Different statistic, different grid, not comparable; nothing in that run bears on the
+sentence.** ⌗ *The recurring fault a ninth time — and the first time caught before a word of it reached a
+draft or this file. It would have produced a confident, wrong correction to a `P15` sentence.*
+
+**And the right object's ceiling is arithmetic.** The banded family has `7` bands, so exhausting **every**
+arrangement of them gives `5040` ⇒ floor `p = 1.98 × 10⁻⁴` = **`3.72` sd-equivalent** (six upper bands
+alone: `720`, `3.20`).
+
+| printed | asserts | the statistic's ceiling |
+|---|---|---|
+| `7` | `2.6 × 10⁻¹²` | ⛔ `1.98 × 10⁻⁴` |
+| `4` | `6.3 × 10⁻⁵` | ⛔ `1.98 × 10⁻⁴` |
+
+⇒ **Both figures assert more than the statistic they are computed on can support, by any resampling
+whatever — not for want of surrogates but for want of bands.** *Not a claim the ratios are wrong: as
+ratios they are arithmetic and your receipt checks them. A claim about what they are worth as evidence.*
+
+⚠ **So ⓶ is reported as UNTESTED, not as passed or failed, and I have drafted no correction for it** —
+three ways forward are in `DRAFTS.md`, the choice is yours, and I have flagged that the option I favour
+(*leave it; it is literally a ratio and makes no probability claim*) is also the one that costs me
+nothing, so you can weigh it accordingly.
+
+### ⛭⛭ ITEM 4 — **DONE. THE ROUTE IS CLOSED, AND THE REASON IS GEOMETRIC RATHER THAN STATISTICAL**
+
+At `10⁷`, at the widest registered window: own × own `p = 8.99 × 10⁻²`, kernel alone `4.73 × 10⁻¹`,
+source alone `3.62 × 10⁻¹`. **Nothing is resolved at any width.** ⇒ *Per your own clause: the finding is
+that the pseudo-spectrum cannot decide the question.*
+
+⌗ *The batched surrogate generator was checked against the committed loop first — same seed, same curve,
+mean / sd / `|max|` / `99.9`th percentile agreeing to every printed digit — because a performance change
+that moved the null would have been a statistical change. It brought nine curves at `10⁷` from
+thirty-six minutes to two.*
+
+#### ⛔ WHY THE STEP CANNOT RESOLVE IT: ONE SIDE IS **HALF OF ONE INDEPENDENT WINDOW**
+
+| half-width | low / high centres | autocorr length | **effective independent windows** |
+|---|---|---|---|
+| `0.175` | `8`/`16` | `0.200` | `1.75` + `3.75` |
+| `0.250` | `6`/`16` | `0.350` | `0.71` + `2.14` |
+| `0.350` | `4`/`16` | `0.300` | **`0.50`** + `2.50` |
+
+⛔ **The forty centres are an illusion of sample size — they overlap.** At the widest window the step is a
+difference between about two and a half independent windows and about half of one. *No `l` density
+touches that: the grid is already every integer. No denominator touches it either, because the
+information is not there to summarise — which is the real reason your option 2 could not be rescued.*
+
+#### ⛭⛭ AND THE DEEPER REASON — **THE TWO MECHANISMS' TEMPLATES ARE `92` PER CENT ANTI-PARALLEL**
+
+Before naming a replacement build I measured whether the obvious one — fit the two mechanisms as
+templates to the whole curve instead of comparing two group means — could work at all. **It cannot:**
+
+| | |
+|---|---|
+| correlation of the two templates (means removed) | **`−0.9200`** |
+| condition number of the two-amplitude design | `5.03` |
+| ⇒ variance inflation on each amplitude | **`6.51`×** |
+| amplitudes the fit returns on the measured contrast | kernel `+1.045`, source `+1.061` |
+
+⇒ **The kernel-held and source-held difference curves point almost along one line, so no estimator, no
+sample size and no denominator separates them.** The route is closed geometrically.
+
+⛭ **And this explains the sign reversal I reported at `r7713`.** Two nearly anti-parallel templates with
+amplitudes near `1` each sum to something whose apparent *"which one dominates"* flips under tiny
+perturbations. **The sparse reading's sign instability and this `−0.92` are the same fact** — my earlier
+report of the reversal was a symptom of a geometry I had not yet measured. *The decomposition is also
+nearly exact, `1.045` and `1.061` against `1` and `1`, which is the same `5`–`6` per cent interaction
+`r7717`'s additivity test was looking at.*
+
+#### ⇒ THE BUILD THAT COULD: **STOP COLLAPSING THE `k`-SUM**
+
+The two swaps are anti-parallel **because the pseudo-spectrum collapses them into one number per `l`.**
+The source swap changes `S(k)`, a function of `k` alone; the kernel swap changes `G_l^K(k)`, a function of
+`l` **and** `k`. Summed over `k`, both arrive as one `l`-curve and nothing distinguishes them.
+
+⇒ **Keep the integrand two-dimensional.** On the `(l, k)` plane the source difference rescales along `k`
+identically at every `l` and the kernel difference does not: **different rank structure, so separable by
+construction rather than by statistics.** That is what the collapse destroys.
+
+⚠ **I am NOT claiming the two-dimensional build will resolve it.** Its separability is measurable and is
+**not measured here**, and asserting it would be the very fault this revision spent its length catching.
+⇒ *That measurement is the next registration, not a result of this one. What IS established is why
+nothing done inside the collapsed object could ever have worked — which closes `r7711`'s question in the
+only way it was ever going to close.*
+
+⌗ *Census green with every new function present. Nothing minted into the corpus. `main` was merged before
+any of this, so `70`'s launch lock is in place.*
+
+
 ## ⛔⛔ `r7717+cc66` — **THE RULED DENOMINATOR IS NOT LICENSED. YOUR CONDITION ⓶ IS WHAT CAUGHT IT, AND YOUR REASONING IS NOT WHAT FAILED**
 
 Registration pushed before a line of the computation (`r7717+cc66.0`), with the new denominator imported
