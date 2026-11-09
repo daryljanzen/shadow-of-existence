@@ -190,3 +190,78 @@ measurement, and that is a *detectability* question needing a per-`(l, k)` noise
 instrument does not have.  ⇒ **Item 2 returns a CONDITIONING result, never a detectability result**, and
 a passing Gate 3 licenses the sentence *"the degeneracy that closed the collapsed route is broken in the
 `(l, k)` plane"* and **not** the sentence *"the two swaps can be told apart in the data."*
+
+---
+
+# ⛔ AMENDMENT 1 — the registered per-cell log-space form is **NOT COMPUTABLE** on `K*`, and this is why
+
+**Made before any statistic of the measurement was computed, in its own commit, and it does NOT touch the
+threshold.** §4 stands exactly as written. What changes is *where the measurement is defined*, forced by a
+property of the instrument that was measured, not by any result.
+
+## What went wrong
+
+§3's Gates 2 and 3 are written in log space: `Delta_ker = log(G^2_cr / G^2_lcdm)`. On `K*` that is `log 0`
+over a large part of the plane. `j_l(k x0)` **underflows to exactly zero below its turning point**
+`k ~ l / x0`, and the dead region grows with `l`:
+
+| | cells with `M <= 0`, of 1450 |
+|---|---|
+| `l = 243` (bottom of the shared window) | **11** |
+| `l = 589` | **86** |
+| `l = 934` (top) | **181** |
+
+and the `|G|` distribution inside block 0 runs down through `8.3e-148` to `1.6e-276` to exact `0` — the
+exponential tail of the Bessel function, not an oscillation zero.
+
+⇒ ⛔ **The registration asked for a logarithm of a quantity that is exactly zero on up to 12 % of the
+plane.** Nothing in §2 or §3 noticed, because the premise check in §1 was about the *grid* and this is
+about the *integrand*.
+
+## The first replacement I considered, and why it is NOT used
+
+Collapse to `B` log-spaced `k`-bands instead of to one, with `B = 1` reproducing the closed 1D route as a
+control. Band sums are positive, so the logs come back. **Measured, it fails at once:** the lowest bands
+sit entirely inside the dead region for *every* `l` in the window, so
+
+| `B` | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |
+|---|---|---|---|---|---|---|---|---|
+| non-positive band cells | **0** | 4 | 8 | 20 | 42 | 84 | 169 | 345 |
+
+⇒ Only `B = 1` is admissible on the full range, and `B = 1` **is** the collapsed route. Banding buys
+nothing here, and recording that is the point of writing it down rather than quietly trying the next idea.
+
+## The amendment, and the two measurements that license it
+
+The dead set is not scattered: it is a **contiguous low-`k` prefix**, and **above it there is no zero at
+all** — measured at both ends of the window (`l = 243`: first non-zero node `0`, zeros above it `0`;
+`l = 934`: first non-zero node `119` for `lcdm` and `117` for `cr`, zeros above it `0` for both).
+
+⇒ **The measurement is restricted to the COMMON LIVE SUPPORT**: the nodes of `K*` at or above the largest
+dead prefix over the shared `l` range and both kernels. At the binding `l` that is node `119`,
+`k >= 2.4126e-2`, so **1331 of 1450 nodes**. The restriction is then determined **from the assembled array
+itself**, not from these three `l`, and gated:
+
+- **Gate 1a (NEW).** At every `l` and for both kernels the dead set must be a contiguous prefix of `K*`.
+- **Gate 1b (NEW).** Above the common prefix there must be **no** zero, for either kernel, at any `l`.
+
+If either fails, the per-cell form is still not computable and the measurement reports that, rather than
+masking cell by cell — a per-cell mask makes the array ragged and the rank framing in §3 does not survive it.
+
+⛭ **And the restriction carries its own sharp control, for free.** The dropped cells are *exactly* zero, so
+dropping them **cannot change `sum_k M` at all**. ⇒ Gate 2c is re-run on the restricted support and must
+return **the same** departure from the banked spectrum as on full `K*` (measured there: `4.9367e-05`
+against the registered `1e-3`). A restriction that moves that number has dropped something that was not zero.
+
+## ⛔ What is NOT amended
+
+The threshold in §4 — `|correlation| <= 0.70` **and** `VIF <= 2.0`, under both readings — is **unchanged**,
+and the 1D comparison values `−0.9200 / 5.03 / 6.51x` are unchanged. ⚠ *An amendment made after seeing a
+numerical obstruction is legitimate; an amendment that also moved the line the verdict is read against
+would not be, and would be indistinguishable from choosing the verdict. The line is where it was.*
+
+## The price, re-measured rather than re-estimated
+
+§5 estimated ~2.1 CPU-hours. **Measured: `1.51` s per `l` on `K*`** ⇒ the two kernel arrays over 692 shared
+`l` come to **≈ 35 min in one process**, inside this container's recycle interval only because the blocks
+are checkpointed. ⇒ The registered price was **conservative by about three and a half times.**
