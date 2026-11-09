@@ -10,6 +10,47 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7717: P3 CHOSEN AND INVENTORIED; CAMPAIGN 119 — P3's CUBIC CHAIN BUILT (`r7717+71.1`–`.2`)
+
+**The choice is P3 (`SdS-slicing-curve_v2`).** The survey and the 24-row inventory are in `r7717_71_survey/SURVEY.md`.
+- **Most load-bearing:** it has 222 `\cite`s, against 114 for P17, 95 for P8, 91 for P5 and 72 for P6. Its cubic, its
+  `σ` and its Nariai member are used by P5, P7, P8, P15 and P16.
+- **Most formalisable:** its content is cubic algebra, trig and Euclidean geometry, all in Mathlib.
+- **Not P17:** `prop:unique` is a classification Mathlib lacks, and read plainly anti-de Sitter defeats it.
+- **Not P5 or P6:** P5's groupoid is undefined, and P6 is philosophy.
+- **Close second: P8.** It suits the Lorentzian kit better, but is cited less than half as often. It is the natural
+  fourth paper.
+
+**Campaign 119.** The result is in `r7717_71_campaign119/RESULT.md`, and the probe is `probes/SlicingCubic.lean`.
+- **The build:** zero errors and zero warnings, `643` axiom lines all standard (`11` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `341` new lines (band 300–700), at p `0.8`. The expected stop, the nested root in `σ∘σ`, fell to the
+  registered identity `4 − 3σ² = ((3x + √(4 − 3x²))/2)²`.
+
+***What is built (gauge `α = 1`).***
+- **`sl_factor`, `sl_roots`** (`prop:factor`) and **`sl_r0zero`** (`prop:r0zero`).
+- **`sl_readingswap`** (`prop:readingswap`): `g(σ(r₀)) = g(r₀)`.
+- **`sl_σ_σ`, `sl_σ_swap`, `sl_σ_second`, `sl_σ_fixed`** (`prop:involution`).
+- **`sl_locus`, `sl_ellipse`** (`prop:locus`) and **`sl_nariai`** (`cor:nariai-locus`).
+
+***Two flags on `prop:involution` (l.388), now theorems.***
+- **The interval:** `σ∘σ = id` on `[0, 2/√3]`, but `σ` maps it onto `[−1/√3, 1]`, since `σ(2/√3) = −1/√3`. `σ` is an
+  involution of `[−1/√3, 2/√3]`.
+- **The root:** "the second positive root" holds only for `r₀ ∈ [0, 1)`. At `r₀ = 1` it is `0`, and beyond it is
+  negative.
+- **Suggested repair:** "is an involution of `[−1/√3, 2/√3]`, exchanging `[0, 2/√3]` with `[−1/√3, 1]`; for
+  `r₀ ∈ [0, 1)` it carries the slicing parameter to the second positive root".
+
+***Other flags in the inventory, for later campaigns:***
+- `prop:conjugacy` holds on `[0, 1]` only;
+- `prop:twoalpha` (v) holds at every `R`, by P17's `prop:tangentnull`;
+- `prop:curvature` changes sign where `f < 0`.
+
+**Marks:** 9 of 24 rows are BUILT; 5 are BUILT IN PART (in other engines); 7 are NOT BEGUN; 3 have no formal core.
+**Next, campaign 120:** `prop:triple`, `prop:conjugacy` and `prop:turning`'s algebraic rows (9a–b, 10, 1a–b).
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7715: CAMPAIGN 118 — 6d's CORE BUILT; P2's FORMALISATION CLOSES (`r7715+71.1`–`.2`)
 
 The result is in `r7715_71_campaign118/RESULT.md`, and the probe is `probes/CircleConic.lean`.
