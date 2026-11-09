@@ -353,3 +353,79 @@ it about the grid, amendment 1 caught it about the zeros, and amendment 2 catche
 range. ⌗ *All three were caught before a statistic existed, which is what registering before computing is
 for — and the honest reading is that the registration should have been written against the instrument's own
 measured properties rather than against the physics it stands for.*
+
+---
+
+# ⛔⛔⛔ AMENDMENT 3 — **the registered control REFUSED the run, amendment 1 is withdrawn, and I have to declare that I saw a verdict before writing this**
+
+## A3.1 What the control caught
+
+Gate 2c — §2c's refusal condition, registered before any computation — **went red**:
+
+| | departure from the banked spectrum |
+|---|---|
+| full `K*` | `4.1800e-05` ✔ |
+| **amendment 1's restricted support** | **`9.4311e-01`** ⛔ against the registered `1e-3` |
+
+and the restriction's own free control (dropping *exact* zeros cannot move a sum) failed by the same
+`0.943`. Measured cause:
+
+| | `l = 243` | `l = 343` | `l = 543` | `l = 934` |
+|---|---|---|---|---|
+| share of the collapse in nodes `0..118` | **`0.9431`** | `0.0026` | `0.0000` | `0.0000` |
+| dead-prefix length at that `l` | **`0`** | — | — | `119` |
+
+⇒ ⛔ **The dead prefix is `l`-DEPENDENT — `0` nodes at the bottom of the window and `119` at the top — and
+amendment 1 took the LARGEST prefix and applied it to EVERY `l`.** At the bottom of the window those nodes
+are not dead at all: they carry **94 %** of the integral, and the restriction threw them away.
+
+⌗ *That is the recurring fault a FIFTH time in this revision: a statement about one object (the dead set at
+the top of the `l` window) applied to another (the dead set at every `l`).*
+
+## A3.2 ⚠ THE NEAR MISS, which is the part worth keeping
+
+The script **did not refuse**. §2c says in terms: *"That is a refusal, not a caveat: the script computes no
+statistic downstream."* It computed Gates 2, 3 and 4 anyway, and printed:
+
+> `A corr −0.0067 cond 1.01 VIF 1.00x` → MEETS · `B corr −0.0003` → MEETS · **"the (l,k) build BREAKS the
+> degeneracy"**
+
+⇒ **A clean PASS of the registered threshold, and the headline I wanted, read off an integrand with 94 % of
+its low-`l` support deleted.** Had the two controls been one line further down, or had I read the verdict
+before the gate list, this revision would have reported that the two-dimensional build resolves what the
+collapse could not. ⛔ **It reports nothing of the kind. The verdict above is VOID and is not this
+measurement's result.**
+
+⇒ Two defects, both mine: ⒜ the support rule, and ⒝ **a registered refusal that was written in prose and
+never enforced in code.** A refusal that does not halt the script is a comment.
+
+## A3.3 ⛔ DECLARATION OF CONTAMINATION
+
+**I have seen a verdict number before writing this amendment.** It was produced by the failed run above. So
+this amendment is **not** blind, and I will not claim it is.
+
+What limits the damage is that **the threshold was fixed in §4 before any computation existed and is not
+touched here, as in both earlier amendments** — `|corr| <= 0.70` and `VIF <= 2.0`, against `−0.9200` and
+`6.51x`. A line fixed in advance cannot be moved by my having seen a number on an object the control
+rejected. ⌗ *But the honest record is that the ordering protection is now partly spent, and a reader should
+weight the re-run accordingly.*
+
+## A3.4 The amendment: **amendment 1 is WITHDRAWN**, because amendment 2 already subsumed it
+
+Amendment 1 existed to make every logarithm finite. Amendment 2 then weighted every cell by its own share
+of the collapse — and **a dead cell's weight is exactly `0`**. ⇒ The support restriction was never needed
+once the weighting existed, and keeping it is what produced the failure. Amendment 2 even said the support
+was "kept only so every log is finite"; that was the wrong reason.
+
+- **The measurement runs on the FULL `K*`**, so the collapse is the `4.1800e-05` that passes.
+- Dead cells are **masked, not restricted**: where `G == 0` the log is set to a finite placeholder and the
+  weight to exactly `0`, so no `nan` arises (`0 x inf` would) and the statistics never see them. Nothing is
+  dropped at any `l`, so no `l` loses contributing nodes.
+- Gates 1a and 1b become **per-`l`** statements rather than statements about a common prefix, and the
+  measurement no longer depends on either being uniform across `l`.
+- **§2c is enforced in code**: if the collapse departs by more than `1e-3`, the script exits BEFORE Gates 2,
+  3 and 4 and prints no verdict at all.
+
+⌗ *Third amendment, and the cause is the same every time — the rule was written against the object I had in
+mind rather than the one in the array. The difference this time is that it was a GATE that caught it and not
+me, which is the first time in this revision that has happened.*

@@ -75,32 +75,36 @@ def main():
                 f"max relative departure {r0:.3e} against the registered {S.TOL_CONTROL:.0e}"):
         raise SystemExit("  ⛔ control failed; NOTHING downstream is computed")
 
-    # ---- 1a / 1b -----------------------------------------------------------
-    pref, contig, above = {}, True, 0
+    # ---- 1a / 1b (amendment 3: PER-l, and the support is NOT restricted) -------
+    # ⛔ amendment 1 took the LARGEST dead prefix and applied it to EVERY l.  The prefix is
+    #    l-DEPENDENT -- 0 nodes at l=243, 119 at l=934 -- and at the bottom of the window those
+    #    nodes carry 94% of the collapse.  Gate 2c caught it.  Amendment 1 is WITHDRAWN: amendment
+    #    2's weighting already gives a dead cell weight exactly 0, so masking replaces restricting
+    #    and NO l loses a contributing node.
+    contig, nonpref = True, 0
     for t in ('lcdm', 'cr'):
         dead = G[t] == 0
-        p = dead.sum(axis=1)
-        for i in range(len(ls)):                      # a prefix of length p[i] and nothing else
-            if dead[i, :p[i]].sum() != p[i]:
+        p_l = dead.sum(axis=1)
+        for i in range(len(ls)):
+            if dead[i, :p_l[i]].sum() != p_l[i]:
                 contig = False
-        pref[t] = int(p.max())
-    cut = max(pref.values())
-    for t in ('lcdm', 'cr'):
-        above += int((G[t][:, cut:] == 0).sum())
-    gate(contig, 'amendment 1a -- the dead set is a contiguous low-k prefix at every l',
-         f"largest prefix: lcdm {pref['lcdm']}, cr {pref['cr']} of {len(ks)} nodes")
-    gate(above == 0, 'amendment 1b -- no zero above the common prefix',
-         f"zeros above node {cut}: {above} (a nonzero count means the per-cell form is still undefined)")
-    if not (contig and above == 0):
-        raise SystemExit("  ⛔ the per-cell form is not computable; reporting that, not masking")
-    ksr = ks[cut:]
-    Gr = {t: G[t][:, cut:] for t in ('lcdm', 'cr')}
-    print(f"\n    ⇒ common live support: nodes {cut}.. , k >= {ksr[0]:.4e}, "
-          f"{len(ksr)} of {len(ks)} nodes\n", flush=True)
+            nonpref += int(dead[i, p_l[i]:].sum())
+    gate(contig, 'amendment 1a -- at EVERY l the dead set is a contiguous low-k prefix of its own',
+         f"prefix length runs {int((G['lcdm'][0] == 0).sum())} at l={ls[0]} to "
+         f"{int((G['lcdm'][-1] == 0).sum())} at l={ls[-1]}: l-DEPENDENT, which is why it is masked "
+         f"and not restricted")
+    gate(nonpref == 0, 'amendment 1b -- no zero lies above that l\'s own prefix',
+         f"zeros above the per-l prefix: {nonpref}")
+    ksr = ks
+    Gr = G
+    dead = {t: (G[t] == 0) for t in ('lcdm', 'cr')}
+    anydead = dead['lcdm'] | dead['cr']
+    print(f"\n    ⇒ FULL K* kept ({len(ks)} nodes); {int(anydead.sum())} dead cell(s) masked at "
+          f"weight 0, NOT dropped\n", flush=True)
 
     # ---- 1 (the premise, as a control) -------------------------------------
-    dk = np.gradient(ks)[cut:]
-    s2 = {t: S.s2_on_kstar(t)[cut:] for t in ('lcdm', 'cr')}
+    dk = np.gradient(ks)                       # amendment 3: FULL K*, nothing cut
+    s2 = {t: S.s2_on_kstar(t) for t in ("lcdm", "cr")}
     rho = s2['cr'] / s2['lcdm']
     # ⛔ computed in LOG space, because M itself underflows: the registered literal form
     #    (base*s2_cr)/(base*s2_lcdm) is 0/0 = nan on subnormal cells and the control would fail
@@ -109,6 +113,7 @@ def main():
     for t in ('lcdm', 'cr'):
         base = 2.0 * np.log(np.abs(Gr[t])) + np.log(dk / ksr)
         d = (base + np.log(s2['cr'])) - (base + np.log(s2['lcdm']))
+        d = np.where(anydead, np.log(rho)[None, :], d)   # masked, not measured
         bad += int((~np.isfinite(d)).sum())
         worst = max(worst, float(np.abs(d - np.log(rho)[None, :]).max()))
     gate(worst <= S.TOL_CONTROL and bad == 0,
@@ -124,19 +129,29 @@ def main():
     jj = np.searchsorted(bl, ls)
     dfull = float(np.abs(yfull - by[jj]).max() / np.abs(by[jj]).max())
     drest = float(np.abs(yrest - by[jj]).max() / np.abs(by[jj]).max())
-    gate(drest <= S.TOL_GRID, 'the grid change -- the collapse on K* reproduces the banked spectrum',
-         f"max relative departure {drest:.4e} against the registered {S.TOL_GRID:.0e}")
+    if not gate(drest <= S.TOL_GRID,
+                'the grid change -- the collapse on K* reproduces the banked spectrum',
+                f"max relative departure {drest:.4e} against the registered {S.TOL_GRID:.0e}"):
+        # ⛔ amendment 3: §2c is a REFUSAL, not a caveat, and it is now ENFORCED HERE.  Written in
+        #    prose only, it let the first run print a clean PASS of the registered threshold off an
+        #    integrand with 94% of its low-l support deleted.  A refusal that does not halt is a comment.
+        raise SystemExit("  ⛔ REFUSING: the common-grid object is not the banked object; "
+                         "NO verdict is computed")
     gate(abs(dfull - drest) <= 1e-14,
-         "the restriction's own control -- dropping EXACT zeros cannot move the collapse",
-         f"full K* {dfull:.6e} vs restricted {drest:.6e}; difference {abs(dfull - drest):.2e}")
+         "the support is the full K* -- nothing is dropped, so the collapse cannot move",
+         f"full K* {dfull:.6e} vs measured {drest:.6e}; difference {abs(dfull - drest):.2e}")
 
     # ---- 2 -----------------------------------------------------------------
     # ⛔ amendment 2: 2 log|G|, NEVER log(G**2) -- G**2 underflows to 0 at |G| = 4e-323
     #    while 2 log|G| there is a finite -1484.7, so log(G**2) is -inf where the
     #    quantity it stands for is defined.
-    lg = {t: 2.0 * np.log(np.abs(Gr[t])) for t in ('lcdm', 'cr')}
+    with np.errstate(divide='ignore'):
+        lg = {t: 2.0 * np.log(np.abs(Gr[t])) for t in ('lcdm', 'cr')}
+    for t in ('lcdm', 'cr'):
+        lg[t] = np.where(anydead, 0.0, lg[t])   # finite placeholder; weight is 0 there
     d_ker = lg['cr'] - lg['lcdm']
     W = M_lcdm / M_lcdm.sum(axis=1, keepdims=True)      # amendment 2: each cell's own share
+    W = np.where(anydead, 0.0, W)                       # amendment 3: dead cells weigh 0
     f_mimic, f_sep, R = wfrac(d_ker, W)
     sv = np.linalg.svd(R, compute_uv=False)
     lead = float(sv[0] ** 2 / (sv ** 2).sum())
@@ -156,7 +171,9 @@ def main():
     qc = ls / dense.geom('cr')['l_A']
     m = (qa >= qc[0]) & (qa <= qc[-1])
     cr_on_qa = np.vstack([np.interp(qa[m], qc, Gr['cr'][:, i]) for i in range(len(ksr))]).T
-    dB = 2.0 * np.log(np.abs(cr_on_qa)) - lg['lcdm'][m]
+    with np.errstate(divide='ignore'):
+        dB = 2.0 * np.log(np.abs(cr_on_qa)) - lg['lcdm'][m]
+    dB = np.where(anydead[m] | ~np.isfinite(dB), 0.0, dB)
     rB = cond_vif(dB.ravel(), t_src[m].ravel(), W[m].ravel())
     read['B (common q, cr kernel interpolated)'] = rB
     print(f"    ⛭ THE VERDICT -- conditioning, against the collapsed route's "
