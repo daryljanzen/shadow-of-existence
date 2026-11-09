@@ -15,6 +15,89 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔⛔ `r7723+cc66` — **PRICED FIRST AND IT IS CHEAP. REGISTERED. AND THE TEST CANNOT BE RUN ON THIS INSTRUMENT — THE FIT IS AN EXACT IDENTITY ON THE PLANE WE HAVE, AND THE ONE REAL `(ℓ,k)` OBJECT SITS ENTIRELY BELOW THE WINDOW**
+
+### ⛔ FIRST, YOUR DIRECT QUESTION — **THE LABEL FIX WAS NOT IN**
+
+You wrote *"your fix of building the label from the witnesses is the right one; confirm it is in."* ⇒ **It
+was not.** What `r7721+cc66.1` did was **correct** the three figures and leave them as **literals**, with a
+comment recording the drift. ⌗ *That fixes the instance and not the mechanism — the next repointing
+disagrees with the computation again, which is exactly what that file's own docstring recorded at `r7673`
+and what `r7721` then repeated.* ⇒ **It is in now, computed from `_PS` and `_PK`, the same witnesses the
+assertion two lines below reads.** Output byte-identical (`3.9`, `6.6`, `12.4`); what changes is that it can
+no longer go stale. Host receipt `53` PASS / `0` FAIL, figure-pin gate at its `1478` baseline.
+
+### ⛭ PRICED FIRST, AS YOU ASKED — **the null is cheap, and that turns out not to be the problem**
+
+| | |
+|---|---|
+| one 2D phase-randomised surrogate of the `692 × 1450` plane | **`0.046` s**, `8.0` MB |
+| `10⁴` draws — enough for a `99 %` interval **and** a power curve | **`6` min** |
+| `10⁶` draws | `13` h |
+
+⌗ *Measured over five draws on the real array, not extrapolated from one — the flat extrapolation from a
+single cheap case is precisely what I got wrong last revision.*
+
+### ⛭ REGISTERED — AND **YOUR THREE NAMES DO NOT PARTITION THE OUTCOME SPACE**
+
+The outcome is read off a 2×2 of whether each amplitude's `99 %` null interval excludes zero, and nothing
+else. ⌗ *The mapping is taken from the order file's own earlier wording, not my paraphrase: the subject is
+**the projection**, so the kernel swap is "creates" and the source swap is "fails to cancel". Backwards, it
+would invert every verdict.*
+
+⚠ **But both amplitudes significant is a fourth cell, and I am not forcing it into "neither".** It is
+physically meaningful and it is **what the collapsed route already measured** — `+1.045` kernel, `+1.061`
+source at `r7713`, consistent with exact log-additivity. ⇒ Registered under its own name: **"both
+contribute"**.
+
+⌗ *And the null needed amending before it was chosen: the plain phase-randomised form preserves the
+autocovariance exactly but **the field is not stationary** — measured, it flattens the per-`k` variance
+ratio from **`24.9` to `5.09`**. A null smoother than the data where the data is quiet rejects too easily, so
+the **row-and-column-normalised** form is primary and both are reported.* ⌗ *One objection I expected to be
+fatal was demoted by measuring it: zero-filling the ragged support puts only `2.8 %` of surrogate variance
+in cells the data has no value for.*
+
+### ⛔⛔ AND NOW THE FINDING — **THERE IS NO OBJECT TO APPLY THE NULL TO.** Your item 3, and stronger than it asks
+
+**⒜ On the plane we have, the two-amplitude fit is an EXACT ALGEBRAIC IDENTITY.** The pseudo-integrand
+factorises, so the full swap *is* `t_ker + t_src`, cell by cell:
+
+| | |
+|---|---|
+| rms residual of `full_swap − (t_ker + t_src)` over `969 189` live cells | **`1.41e-14`** |
+| rms of the signal itself, for scale | **`5.4089`** |
+
+⇒ **`a_ker = a_src = 1` with zero residual to machine precision.** Nothing to detect, no noise for a null to
+model, **and no null makes it otherwise.** ⌗ *The separability result stands exactly as you licensed it — the
+degeneracy IS broken in the plane — but "well conditioned" and "has something to measure" are different
+statements, and this is the second one failing.*
+
+**⒝ The only `k`-resolved REAL object the instrument holds sits ENTIRELY BELOW THE WINDOW.** ⌗ *And I nearly
+reported that no such object existed — it does: `Dlk_samp` in both accept banks.*
+
+| | |
+|---|---|
+| sampled `ℓ` | `20` … `205`, **eight of them** |
+| that is `q = ℓ/l_A` | ⛔ **`0.066` … `0.677`** |
+| the discriminant's window | **`q ∈ [0.80, 3.10]`** |
+
+⇒ **Every sampled `ℓ` is below `q = 0.68`.** It does not reach the band the located transition lives in, at
+any `ℓ`. Three more on top: the arms share only **`4` of `8`** sampled `ℓ`, the `k` grids differ again
+(`2547` vs `1452`), and the row sums do **not** reproduce the banked spectra, so what the array *is* would
+have to be established before anything rested on it.
+
+### ⇒ WHAT WOULD SUPPLY ONE — **an instrument change, not an analysis change**
+
+The **full** computation re-run **retaining the `(ℓ,k)` integrand** over `q ∈ [0.80, 3.10]`, both arms,
+**shared `k` grid**, at enough `ℓ` to carry the `142`-mode structure. ⌗ *The retention mechanism
+demonstrably exists — `Dlk_samp` is it, at eight multipoles — and the array is already formed inside the
+per-`ℓ` loop and destroyed by the collapse on the next line, so retaining it costs a write.* ⚠ **But that is
+the FULL computation, whose per-`ℓ` cost is not the `1.5`–`4` s I have measured. ⇒ That price is not mine to
+quote and I am not quoting it. If you want it, it is an order to whoever owns that instrument.**
+
+⌗ *Nothing from item 2 goes into `P15`, which is your instruction and this registration does not weaken it.*
+
+
 ## ⛭⛭ `r7721+cc66.2` — **ITEM 2 MEASURED: UN-COLLAPSING THE `k`-SUM REMOVES THE DEGENERACY ENTIRELY — `10.63×` VARIANCE INFLATION BECOMES `1.00×` — AND THE SAME STATISTIC STILL SEES THE DEGENERACY ON THE COLLAPSED OBJECT, SO IT IS NOT AN ARTEFACT**
 
 Registered in its own commit before a line of it existed, then measured. **`10` of `10` gates, `0`
