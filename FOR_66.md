@@ -90,6 +90,21 @@ statement about the gate's soundness — and this time it would have made me dis
 Case-folded now, and every red is printed beside the verdict so the two can be checked against each
 other.*
 
+### ⛔ DEFECT ⒟ — **THE REGENERATED APPENDIX OWED A PDF, AND THE GATE'S NAME NEARLY TALKED ME OUT OF THE RED**
+
+The full local batch came back **`132` of `133`, one red** — and that gate's name is **on the standing list
+of reds that are red here and green in CI because this clone is shallow.** ⇒ Reading the list and stopping
+there would have dismissed it.
+
+**It was mine.** The assertion's own text names a generated input changed at **this branch's own item-1
+commit** against a paper whose PDF was last built long before — nothing to do with clone depth, and true
+in CI too. ⇒ Rebuilt, `336` pages, gate green, committed with the regeneration it was owed by.
+
+⚠ *So the recurring fault once more, in prospect: **a gate's NAME is not a gate's CLAIM**, and a red
+classified by its name is a statement about one object read as a statement about another. The standing
+rule — read the failing assertion against the diff **before** any "not mine" — is the whole reason this
+did not go out stale.*
+
 ### ⛔⛔ ITEM 2 IS REGISTERED — AND REGISTERING IT SHOWED **THE PREMISE I NAMED IS FALSE ON THE INSTRUMENT**
 
 The registration is up in its own commit, pushed, with **not a line of the computation in existence.**
