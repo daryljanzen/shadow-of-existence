@@ -905,21 +905,31 @@ check("⛭⛔ `r7707` ** AND IT IS IN NEITHER ARM'S OWN PROJECTED SPECTRUM: both
       "domain returns a number and not a measurement**",
       all(_r[5] < 1.0 and _r[6] < 1.0 and _r[4] > 0.999 for _r in _PS),
       "; ".join(f"h{_r[7]}: Ra {_r[5]:.3f}, Rc {_r[6]:.3f}, corr {_r[4]:.5f}" for _r in _PS))
+# ⛭⛭ `r7723+cc66`: THE LABEL IS NOW BUILT FROM THE WITNESSES, not written down beside them.
+#   `r7721+cc66.1` CORRECTED these three figures and left them as literals, which fixes the
+#   instance and not the mechanism -- the next repointing silently disagrees with the computation
+#   again, exactly as `r7673+cc66.4` recorded and `r7721` repeated.  ⇒ A description that quotes a
+#   number the same expression computes two lines below can only be kept honest by COMPUTING IT
+#   THERE TOO.  Node 60 independently caught that the order's `11.8` came from a hard-coded label;
+#   this is the repair for the class, not for the case.
+_SD_SPECTRA = [f"`{_s[2] / _k[3]:.1f}`" for _s, _k in zip(_PS, _PK)]
+_SD_LABEL = ", ".join(_SD_SPECTRA[:-1]) + " and " + _SD_SPECTRA[-1]
 check("⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high "
       "change is `+0.002`, under one standard deviation of its own scatter at every smoothing, while a "
-      "step of the SPECTRA's size would have shown there at `3.9`, `6.6` and `12.4` sd across the "
+      f"step of the SPECTRA's size would have shown there at {_SD_LABEL} sd across the "
       "three smoothings ** ⇒ *the two arms' "
       "eta-integrated sources carry the same relative comb amplitude to under one per cent, and the "
       "source ratio sits near zero and slightly NEGATIVE throughout rather than stepping up.  So a step "
       "of the measured size is EXCLUDED in the source; a tenth of it is neither excluded nor resolved, "
       "and that is said rather than rounded to zero*",
       all(abs(_r[2]) / _r[3] < 1.0 for _r in _PK)
-      # ⛭ `r7721+cc66`: the printed literals above were `3.8` to `11.8`, from `r7707`, and this
-      #   receipt computes `3.88`, `6.60`, `12.39` after the arm-of-record repointing.  A
-      #   description left on superseded numbers is a receipt whose own text disagrees with its
-      #   computation -- the defect `r7673+cc66.4` recorded in this very docstring -- and the
-      #   `> 3.5` assertion below would never have caught it, because it is a weaker and
-      #   differently scoped claim than the one P15 now prints.
+      # ⛭ `r7721+cc66`: the literals here read `3.8` to `11.8`, from `r7707`, against a tree that
+      #   computes `3.88`, `6.60`, `12.39` after the arm-of-record repointing -- the defect
+      #   `r7673+cc66.4` recorded in this very docstring, recurring in the same file.  The `> 3.5`
+      #   assertion below would never have caught it: it is weaker and differently scoped than the
+      #   clause P15 prints.  ⇒ `r7723+cc66` removed the literals ALTOGETHER rather than correcting
+      #   them again; the label above is now computed from `_PS` and `_PK`, the same witnesses this
+      #   assertion reads, so the text cannot drift from the computation at all.
       # ⛔ P15's own clause is "more than six times ... AT THE TWO WIDER SMOOTHINGS", which this
       #   gate does NOT check.  It is pinned, with the power that licenses the restriction, in
       #   `P15_the_located_transition_is_beyond_a_million_step_free_surrogates_...`.
