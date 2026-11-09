@@ -1,0 +1,24 @@
+
+====================================================================================================
+  ⛭ `r7717+cc66` THE PROPOSAL, MADE CONCRETE -- ⛔ NOT A VERDICT, NOT AN INSTALLED ESTIMATOR
+====================================================================================================
+
+  the step against 20000 step-free surrogates of the detrended curve, per ratio per width:
+       ratio            half     step       surrogate sd   |step| rank      p (two-sided)
+       own x own      0.175  +0.03023   0.017498       814/20000     0.04075
+       own x own      0.250  +0.02765   0.016487      1220/20000     0.06105
+       own x own      0.350  +0.02612   0.016126      1732/20000     0.08665
+       kernel alone   0.175  -0.02610   0.037773     12288/20000     0.61442
+       kernel alone   0.250  -0.03167   0.038153      9834/20000     0.49173
+       kernel alone   0.350  -0.02860   0.034833      9404/20000     0.47023
+       source alone   0.175  +0.05105   0.051244      9384/20000     0.46923
+       source alone   0.250  +0.05416   0.049215      7215/20000     0.36078
+       source alone   0.350  +0.04814   0.044793      7167/20000     0.35838
+
+  ⌗ cost: 4.7 s for 180000 surrogates = 25.9 us each
+    ⇒ expressing a 5.7e-07 bar needs ~1e7 surrogates per curve: about 4 min of one core per curve. AFFORDABLE, which is the point.
+    ⚠ with 20000 the smallest expressible p is 5.00e-05 = 4.06 sd equivalent, so any p at that floor is a FLOOR and not a value.
+
+  ⛔ NOTHING HERE IS A VERDICT. The ruled denominator is not licensed, this one is not
+    registered, and installing it is 69's call and not mine.
+====================================================================================================
