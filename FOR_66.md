@@ -15,6 +15,67 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭ `r7721+cc66.2` — **ITEM 2 MEASURED: UN-COLLAPSING THE `k`-SUM REMOVES THE DEGENERACY ENTIRELY — `10.63×` VARIANCE INFLATION BECOMES `1.00×` — AND THE SAME STATISTIC STILL SEES THE DEGENERACY ON THE COLLAPSED OBJECT, SO IT IS NOT AN ARTEFACT**
+
+Registered in its own commit before a line of it existed, then measured. **`10` of `10` gates, `0`
+failures.** Full verdict and every control in `VERDICT.md`.
+
+### ⛭ THE RESULT, WITH ITS OWN BASELINE BESIDE IT
+
+| the SAME statistic on the SAME four banked spectra | corr | VIF |
+|---|---|---|
+| **COLLAPSED** — the route you closed at `r7719` | **`−0.9518`** | **`10.63×`** |
+| **UN-COLLAPSED**, same integer `ℓ`, no interpolation | **`+0.0031`** | **`1.00×`** |
+| **UN-COLLAPSED**, common `q`, interpolated | `−0.0008` | `1.00×` |
+| registered threshold, fixed before any number existed | `≤ 0.70` | `≤ 2.0` |
+
+⇒ **Not dented — gone.** And both `ℓ` readings agree, which was the registered condition for a verdict to
+exist at all. ⌗ *The `−0.9200` you have been reading was measured on the REAL spectra; these are the
+pseudo-spectra, **a different object**. So the comparison was replaced by a same-object baseline: the same
+statistic, fed the collapsed version of these same four spectra, still returns `−0.9518`. **Un-collapsing is
+what removed it.***
+
+### ⚠ BUT THE SEPARATING STRUCTURE IS **NOT LOW-RANK**, AND THAT IS THE PRACTICAL COST
+
+`90 %` of it is spread over **`142` modes** (`f_sep` `0.8595`; leading component only `0.63` of the
+residual). ⇒ **There is no single clean summary statistic to measure.** A fit that exploits this needs
+essentially the whole plane.
+
+⇒ ⛔ **AND THE REGISTERED LIMIT STANDS, UNSOFTENED:** this is a **conditioning** result, never a
+**detectability** one — the per-`(ℓ,k)` noise model is absent from this instrument. Licensed: *"the
+degeneracy is broken in the `(ℓ,k)` plane."* **Not** licensed: *"the two swaps can be told apart in the
+data."*
+
+### ⛔⛔ AND THE RECORD IS NOT FLATTERING — **FOUR AMENDMENTS, AND A GATE REFUSED A RUN THAT HAD ALREADY PRINTED THIS VERDICT**
+
+An earlier run printed **this same verdict as a clean PASS** — off an integrand with **`94 %` of its
+low-`ℓ` support deleted.** The registered grid control caught it; my script had the refusal **in prose and
+never enforced in code**, so it computed the verdict anyway. ⇒ *A refusal that does not halt the script is
+a comment.* **That verdict was void and is not what is reported here.**
+
+Five instances of the recurring fault in one revision, every one the same shape:
+
+| | read as |
+|---|---|
+| at registration | the continuum's pointwise rescaling → the banked grid's |
+| amendment 1 | representability → contribution |
+| amendment 2 | an unweighted plane → the object carrying the integral |
+| amendment 3 | the dead prefix at the top of the window → the prefix at every `ℓ` |
+| the price | the cost at the bottom of the window → the cost over it |
+
+⌗ *Three were caught before a statistic existed. One was caught by a gate — the first time this revision.
+And the price one was a confident **correction** of a conservative estimate into a wrong one: **a correction
+is a claim and takes the same check as the thing it corrects.*** ⚠ **Declared: amendment 4's control was
+added after I had seen the verdict, and amendment 3 after I had seen a number. The threshold was fixed
+before any computation and is untouched in all four, so nothing I saw could move the line — but the
+ordering protection is partly spent and this should be weighted accordingly.**
+
+⇒ **Priced as asked: `≈ 1.2` CPU-hours, inside the registered `2.1`**, with no extra Bessel evaluations —
+the plane is already formed inside the existing per-`ℓ` loop and destroyed by the collapse on the next
+line. ⌗ *No receipt is minted and no printed clause changes: nothing in the corpus rests on this yet. **It
+is yours to rule on whether it should.***
+
+
 ## ⛭⛔ `r7721+cc66` — **ITEM 1 MINTED, AND MINTING IT TURNED UP THREE DEFECTS: AN UNPINNED PRINTED CLAUSE, A SUPERSEDED LITERAL IN THE HOST RECEIPT, AND A FIGURE PRINTED TO FIVE TIMES THE PRECISION ITS OWN ERROR SUPPORTS**
 
 The receipt is minted, `7` gates green in `~10` s, failability established on six legs over a green

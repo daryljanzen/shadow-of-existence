@@ -1,0 +1,40 @@
+
+  ⛭ `r7721+cc66.2` the (l, k) separability measurement, read as registered
+     shared l: 243..934 (692);  K* nodes: 1450
+
+    [PASS]  control -- the banked combination through the banked code path
+             max relative departure 0.000e+00 against the registered 1e-12
+    [PASS]  amendment 1a -- at EVERY l the dead set is a contiguous low-k prefix of its own
+             prefix length runs 0 at l=243 to 119 at l=934: l-DEPENDENT, which is why it is masked and not restricted
+    [PASS]  amendment 1b -- no zero lies above that l's own prefix
+             zeros above the per-l prefix: 0
+
+    ⇒ FULL K* kept (1450 nodes); 34211 dead cell(s) masked at weight 0, NOT dropped
+
+    [PASS]  the premise -- the source swap IS a column rescaling, A CONTROL AND NOT A RESULT
+             worst departure from log rho(k) over both kernels and every (l,k): 2.098e-13; non-finite cells: 0  ⌗ near-tautological by construction -- its real content is that rho is independent of l AND of the kernel, and that no cell is non-finite
+    [PASS]  the grid change -- the collapse on K* reproduces the banked spectrum
+             max relative departure 4.1800e-05 against the registered 1e-03
+    [PASS]  the support is the full K* -- nothing is dropped, so the collapse cannot move
+             full K* 4.180020e-05 vs measured 4.180020e-05; difference 0.00e+00
+    ⌗ REPORTED, NOT THE VERDICT -- a Frobenius fraction has no units of resolvability:
+             f_mimic 0.5111  (the part a source swap could have produced)
+             f_sep   0.8595  (the part it could not)
+             leading singular component of R: 0.6294 of its norm; 142 component(s) hold 90%
+
+    ⛭ THE VERDICT -- conditioning, against the collapsed route's -0.92 / 5.03 / 6.51x:
+             A (same integer l, NO interpolation)       corr +0.0031   cond 1.00   VIF 1.00x   => MEETS the registered threshold
+             B (common q, cr kernel interpolated)       corr -0.0008   cond 1.00   VIF 1.00x   => MEETS the registered threshold
+    [PASS]  the two readings agree on the verdict (registered: a disagreement IS the verdict)
+             A meets, B meets
+    [PASS]  THE REGISTERED THRESHOLD -- |corr| <= 0.7 AND VIF <= 2.0
+             the (l,k) build BREAKS the degeneracy
+    [PASS]  SAME-OBJECT BASELINE -- the same statistic on the COLLAPSED object still sees the degeneracy
+             collapsed: corr -0.9518  cond 6.36  VIF 10.63x over 692 l  ⇒ the ~0 above is NOT an artefact of the statistic; un-collapsing is what removed it
+
+    ⌗ the interpolation's own size: f_sep 0.8595 (A) vs 0.8630 (B), corr +0.0031 vs -0.0008
+    [PASS]  the interpolation does not carry the verdict
+             it moves |corr| by 0.0023 against a distance to the threshold of 0.6969
+
+  OK  10 of 10 gates, 0 failure(s)
+

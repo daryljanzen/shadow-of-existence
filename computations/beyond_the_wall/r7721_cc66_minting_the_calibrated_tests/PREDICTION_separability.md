@@ -429,3 +429,30 @@ was "kept only so every log is finite"; that was the wrong reason.
 ⌗ *Third amendment, and the cause is the same every time — the rule was written against the object I had in
 mind rather than the one in the array. The difference this time is that it was a GATE that caught it and not
 me, which is the first time in this revision that has happened.*
+
+---
+
+# ⛭ AMENDMENT 4 — a CONTROL added after the verdict was first seen, because the verdict was too clean
+
+**Declared plainly: this was added AFTER I had seen the verdict.** That is legitimate in exactly one
+direction — a control added late can only make a claim *harder* to believe, never easier — and the
+threshold in §4 is still untouched. It is added because two things about the result demanded it:
+
+1. `corr +0.0031` is **suspiciously perfect**. Near-exact orthogonality is a strong claim and a statistic
+   can produce one by construction.
+2. The `−0.9200 / 5.03 / 6.51x` the verdict is read against was measured on the **REAL spectra's** own
+   templates, not on these pseudo-spectra — **a different object**, which amendment 2 §A2.3 already flagged
+   and then left as the comparison anyway. ⇒ Read against the wrong baseline, "the build breaks the
+   degeneracy" would be unsupported: there might have been no degeneracy *in this object* to break.
+
+## Gate 3b — the same-object baseline
+
+Feed **this same statistic** the **collapsed** object built from **these same four banked spectra**:
+`t_ker = log(y^{lcdm,cr} / y^{lcdm,lcdm})`, `t_src = log(y^{cr,lcdm} / y^{lcdm,lcdm})`, over the 692 shared
+`l`. Required: `|corr| >= 0.70` **and** `VIF >= 2.0` — the **mirror** of the registered threshold. If the
+statistic returns `~0` on the collapsed object too, the `~0` in the plane is an artefact of the statistic
+and the verdict means nothing.
+
+⌗ *This is the control the measurement should have carried from the start, and it replaces the cross-object
+comparison as the thing the verdict is read against. The `−0.9200` remains in the record as the figure from
+the real spectra, and is no longer doing work it cannot do.*

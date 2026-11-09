@@ -191,6 +191,33 @@ def main():
          'the (l,k) build BREAKS the degeneracy' if all(passes)
          else 'the (l,k) build does NOT break the degeneracy the collapse could not')
 
+    # ---- 3b (amendment 4) --------------------------------------------------
+    # ⛔ ADDED AFTER THE VERDICT WAS FIRST SEEN, and it can only make the claim harder to believe.
+    #    A correlation of +0.003 is suspiciously perfect, and the -0.9200 it is read against was
+    #    measured on the REAL spectra, not on these pseudo-spectra -- a different object, which
+    #    amendment 2 already flagged.  So: feed THIS SAME STATISTIC the COLLAPSED object built from
+    #    THESE SAME FOUR banked spectra.  If it returns ~0 there too, the ~0 is an artefact of the
+    #    statistic and not a property of the plane, and the verdict means nothing.
+    bank = '../r7713_cc66_the_dense_ell_discriminant/pseudo/pseudo__S_%s__K_%s.npz'
+    bk = {}
+    for ss in ('lcdm', 'cr'):
+        for kk in ('lcdm', 'cr'):
+            zz = np.load(bank % (ss, kk))
+            bk[(ss, kk)] = (zz['ls'], zz['y'])
+    l0 = np.intersect1d(bk[('lcdm', 'lcdm')][0], bk[('lcdm', 'cr')][0])
+
+    def yb_(ss, kk):
+        L, Y = bk[(ss, kk)]
+        return Y[np.searchsorted(L, l0)]
+
+    c_ker = np.log(yb_('lcdm', 'cr')) - np.log(yb_('lcdm', 'lcdm'))
+    c_src = np.log(yb_('cr', 'lcdm')) - np.log(yb_('lcdm', 'lcdm'))
+    r1, c1, v1 = cond_vif(c_ker, c_src, np.ones_like(c_ker))
+    gate(abs(r1) >= S.CORR_MAX and v1 >= S.VIF_MAX,
+         'SAME-OBJECT BASELINE -- the same statistic on the COLLAPSED object still sees the degeneracy',
+         f"collapsed: corr {r1:+.4f}  cond {c1:.2f}  VIF {v1:.2f}x over {len(l0)} l  "
+         f"⇒ the ~0 above is NOT an artefact of the statistic; un-collapsing is what removed it")
+
     # ---- 4 -----------------------------------------------------------------
     _, fsepB, _ = wfrac(dB, W[m])
     print(f"\n    ⌗ the interpolation's own size: f_sep {f_sep:.4f} (A) vs {fsepB:.4f} (B), "
