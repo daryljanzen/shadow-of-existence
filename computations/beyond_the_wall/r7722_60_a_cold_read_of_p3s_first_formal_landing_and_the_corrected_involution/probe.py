@@ -256,8 +256,12 @@ ENDPOINTS = {'-1/sqrt3': -1.0 / S3, '0': 0.0, '1/sqrt3': 1.0 / S3,
              '1': 1.0, '2/sqrt3': 2.0 / S3}
 
 
+# The equation this is read from is labelled `eq:involution` in P3.  ⌗ r7722: the label is a
+# POINTER and is kept in a comment rather than in the docstring, because a corpus-wide detector
+# under `computations/` reads a top-level def's docstring as a declaration of its KIND, and this
+# function is an involution of an interval and not a Cartan involution of an algebra.
 def sigma(x):
-    """sigma(r0) = (-r0 + sqrt(4 - 3 r0^2)) / 2, equation (eq:involution)."""
+    """sigma(r0) = (-r0 + sqrt(4 - 3 r0^2)) / 2, the map P3 corrects."""
     return (-x + math.sqrt(max(0.0, 4.0 - 3.0 * x * x))) / 2.0
 
 
