@@ -1,0 +1,27 @@
+
+  ⛭ `r7725+cc66.2` is the cosmic baryon fraction a BOUND at the turnaround radius?
+
+    [PASS] ⒜  the baryonic mass is enclosed in a SMALLER aperture than R0, so the escape branch exists
+             aperture 3.4 Mpc against R0 = 7.0-7.8 Mpc; ratio 2.06-2.29 in radius
+    [PASS] ⒝  the background fraction is settled AGAINST THE SAME SAMPLE'S OWN DERIVED FIGURES
+             f_b = 0.157 gives radius factor 1.854 and Lambda factor 6.37, matching the printed 1.85 and 6.4; f_b = 0.18 gives 1.771 and 5.56, matching neither ⇒ the "~18 per cent" in that RESULT.md prose is the stray, not the instrument
+    [FAIL] ⒞  the accretion region is STRICTLY closed at r_ta  ⇒ IT IS NOT, and this is reported
+             the zero-velocity surface bounds the MEAN flow; material on radial orbits crosses outward, so the enclosed mass at r_ta is not the whole accreted mass
+
+    ⛭ THE REGISTERED QUANTITY -- the enrichment the escape branch requires:
+             f_b(<R0) = 0.33-0.56 against a background 0.157
+             ⇒ ENRICHMENT FACTOR 2.10 to 3.57
+             (the baryons needed are 1.7-2.35x those measured in the 3.4 Mpc aperture)
+
+    [PASS] ⒟  the enrichment factor is computed exactly rather than quoted, and NOT adjudicated here
+             2.10-3.57x the background; whether a fluctuation that large is available on a cluster-mass patch is not the corpus's question
+
+  ⛔  3 of 4 registered checks pass; FAILED: ⒞
+
+  ⇒ ⒞ FAILS AS REGISTERED, so the step does NOT deliver the clean bound it was
+    registered to test.  What survives is weaker and is stated as such in VERDICT.md:
+    the leak's composition bias runs AGAINST the escape branch, because feedback expels
+    baryons preferentially and no process expels dark matter preferentially.  That makes
+    the background fraction a bound up to a correction of KNOWN SIGN -- not the exact
+    bound ⒞ would have given.
+
