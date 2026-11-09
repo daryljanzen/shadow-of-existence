@@ -10,6 +10,47 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7721: CAMPAIGN 121 — P3's HINGE (ALL SIX OF `prop:twoalpha`) AND THE FLIP BUILT; TANGENT LENGTH = HEIGHT AT EVERY R IS A THEOREM (`r7721+71.1`–`.2`)
+
+The result is in `r7721_71_campaign121/RESULT.md`, and the probe is `probes/SlicingHinge.lean`.
+- **The build:** zero errors and zero warnings, `664` axiom lines all standard (`10` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `239` new lines, below the band of 300–650, at p `0.8`. In coordinates every clause is a polynomial
+  identity in `R`, `α` and `√3`.
+
+***What is built.*** The setting is the transverse plane `ℝ²`, with the throat the circle of radius `α` about the
+axis and the hinges at `(R, 0)` and `(−R/2, ±(√3/2)R)`.
+- **11a:**
+  - `sl_hinge_equilateral`: an equilateral triangle of circumradius `R`;
+  - `sl_hinge_midpoints`: each side is perpendicular to its midpoint's radius, and the inradius is `R/2`;
+  - `sl_hinge_arcsin`: (ii) ⟺ (i);
+  - `sl_hinge_tangent_mid`: (iii) ⟺ (i).
+- **11b:**
+  - `sl_ninepoint_unique`: the unique circle through the side midpoints has centre the axis and radius `R/2`;
+  - `sl_ninepoint`: the orthocentre is the axis, the feet of the altitudes are the midpoints, and the
+    vertex–orthocentre midpoints lie on that circle.
+- **11c:**
+  - **`sl_tangent_height`:** for every `R ≥ α`, every tangent from the hinge has length `√(R² − α²)`, one exists,
+    and the hinge's height on the hyperboloid is `√(R² − α²)`. So the tangent length equals the height at every
+    `R`, and the common value is `√3α ⟺ R = 2α`.
+  - **`sl_hinge_null`:** (vi).
+- **`sl_twoalpha`:** (ii)–(vi) each ⟺ (i) `R = 2α`.
+- **`sl_flip`** (`prop:flip`): `θ′ = i` gives the `dθ²` coefficient `−1`, and `sin θ = cosh ψ`; the signature is
+  `(−, +)`.
+
+***For the landing.***
+- `prop:twoalpha` (v) can now carry "which equals the hinge's height in the embedding at every `R`", citing
+  `sl_tangent_height`.
+- (iv) is read as "the unique circle through the side midpoints is the throat". `sl_ninepoint` supplies the other
+  six of the nine points.
+
+**Marks:** 19 of 24 rows are BUILT (13b moved up: `sl_curvature_sign` already proves `−f′/2r = 1 − M/r³` in the
+chain); 2 are BUILT IN PART (1c and 13a); none is NOT BEGUN; 3 have no formal core.
+**Next, campaign 122:** 13a (the Gaussian curvature of `dl² + r(l)² dφ²`) and 1c (the limit at a simple root). They
+would close P3.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7719: CAMPAIGN 120 — P3's SKY ANGLE AND TURNING POINTS BUILT; THE CONJUGACY AND CURVATURE FLAGS ARE THEOREMS (`r7719+71.1`–`.2`)
 
 The result is in `r7719_71_campaign120/RESULT.md`, and the probe is `probes/SlicingSky.lean`.
