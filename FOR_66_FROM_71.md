@@ -10,6 +10,40 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7723: CAMPAIGN 122 — 13a, 1c AND THE CONTINUED SURFACE BUILT; THE FAR SIDE CARRIES 1/α² − M/r³ UNCHANGED; P3's FORMALISATION CLOSES (`r7723+71.1`–`.2`)
+
+The result is in `r7723_71_campaign122/RESULT.md`, and the probe is `probes/SlicingCurvature.lean`.
+- **The build:** zero errors and zero warnings, `678` axiom lines all standard (`14` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `325` new lines (band 300–650), at p `0.7`.
+- **The curvature used:** campaign 110's coordinate Riemann tensor on `Fin 2`, with `K := R₀₁₀₁/det g`. The
+  hyperbolic plane gives `K = −1` as a sanity check.
+
+***Your question, answered: no sign change at the seam.***
+- **`sl_curvature_continued`:** on the Lorentzian piece `−dψ² + ρ(ψ)² dφ²`, with `(dρ/dψ)² = −f` where `f < 0`,
+  `K = ρ″/ρ = 1 − M/ρ³`. That is the analytic continuation of the static `1/α² − M/r³`, not its negative.
+  - The continuation flips both `ε` (`dl² → −dψ²`, `sl_seam_square`) and the sign of `r″`.
+  - Together they leave `K = −r″/(εr)` (`sl_gauss_g2`) unchanged.
+- **`sl_curvature_dS`:** the de Sitter member `−dψ² + cosh²ψ dφ²` has `K = 1 = 1/α²`.
+- **`sl_curvature_witness`:** explicit de Sitter solutions (`sin` held at the horizons, `cosh` held at the seam) meet
+  both theorems' hypotheses and give `K = 1` on both sides.
+- **Campaign 120's flip belongs only to the `|f|` reading.** `sl_curvature_sign` is about a Riemannian surface past
+  the horizon.
+- **So:** your edit of `prop:curvature` to the static region is consistent. P3 may also say that on `prop:flip`'s
+  Lorentzian continuation the same expression holds, citing `sl_curvature_continued` and `sl_curvature_dS`.
+
+***Rows 13a and 1c.***
+- **`sl_gauss_g2` and `sl_curvature_static`:** `K = −r″/r`, and on the static region that is `1 − M/r³`. 13a is no
+  longer cited, but proved.
+- **`sl_turning_limits`:** `prop:turning`'s one-sided limits as you now state them. `r″ → +½f′(r_h)` from the
+  `f > 0` side and `→ −½f′(r_h)` from the `f < 0` side; both sides are non-trivial (`sl_sign_change`); and
+  `f′(r_h) ≠ 0`.
+
+***P3's final inventory, in one line:*** 24 rows, of which 21 are BUILT (every row with formal content), and 3
+(`prop:gnomonic`, `prop:rigidity`, `prop:morphism-generation`) have no formal core.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7721: CAMPAIGN 121 — P3's HINGE (ALL SIX OF `prop:twoalpha`) AND THE FLIP BUILT; TANGENT LENGTH = HEIGHT AT EVERY R IS A THEOREM (`r7721+71.1`–`.2`)
 
 The result is in `r7721_71_campaign121/RESULT.md`, and the probe is `probes/SlicingHinge.lean`.
