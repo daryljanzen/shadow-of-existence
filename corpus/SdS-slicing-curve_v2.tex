@@ -299,6 +299,8 @@ statement about the whole family and not about one member~\cite{JanzenCircle}.
 Horizons are the zeros of $f$; multiplying $f(r)=1-2M/r-r^{2}$ by $r$ gives the cubic \eqref{eq:cubic}. Differentiating \eqref{eq:slicing}, $d^{2}r/dl^{2}=\tfrac{d}{dl}\sqrt{|f|}=(dr/dl)\,\tfrac{d}{dr}\sqrt{|f|}=\sqrt{|f|}\cdot\tfrac{f'}{2\sqrt{|f|}}\cdot\operatorname{sgn} f=\tfrac12 f'\operatorname{sgn} f$. At a simple root $f'(r_{h})\neq0$, so the second derivative is nonzero and the turning point is a genuine, non-degenerate extremum; at a double root $f'(r_{h})=0$ and it is degenerate.
 \end{proof}
 
+This is machine-checked in Lean, in the gauge $\alpha=1$ (\texttt{computations/formalisation/lean/probes/SlicingSky.lean}): for $r\neq0$, $\sqrt{\lvert f\rvert}$ vanishes exactly at the roots of \eqref{eq:cubic}, and at a root $r_{h}\neq0$, $f'(r_{h})=-(3r_{h}^{2}-1)/r_{h}$, which vanishes exactly at the double roots $r_{h}=\pm1/\sqrt3$ (\texttt{sl\_turning} and \texttt{sl\_turning\_simple}); and along any curve with $dr/dl=\sqrt{\lvert f\rvert}$, $d^{2}r/dl^{2}=\tfrac12 f'\operatorname{sgn}f$ wherever $f\neq0$ (\texttt{sl\_accel\_pos} and \texttt{sl\_accel\_neg}). The limit of the second derivative at the root itself is not formalised.
+
 \emph{The proposition's own formula says what kind of system this is, and the potential it names was written down in the original derivation}~\cite[Eqs.~(4.24), Fig.~4.3]{JanzenThesis}: there $f$ is the scale-invariant \emph{effective potential} $V_{\mathrm{eff}}$ for a test particle, with $(\dd r/\dd\tau)^{2}=\gamma^{2}-V_{\mathrm{eff}}$ at vanishing angular momentum. Writing $V(r)=-\lvert f(r)\rvert/2$, the slicing law $(\dd r/\dd l)^{2}=\lvert f\rvert$ is $\tfrac12(\dd r/\dd l)^{2}+V(r)=0$ and the second derivative above is $-\dd V/\dd r$ exactly. \emph{So the slicing curve is the zero-energy orbit of a one-dimensional conservative system}, the horizon cubic is its turning-point condition $V=E$, and \emph{Nariai is the case where a turning point coincides with an equilibrium}: there $f$ has a double root, so $V$ and $V'$ vanish together and $V$ has a maximum at the orbit's own energy. \emph{That is why the degeneracy costs infinite affine parameter}---near an unstable equilibrium $\lvert f\rvert\simeq3(r-r_{N})^{2}$, so $\int\dd r/\sqrt{\lvert f\rvert}$ diverges logarithmically and the merged horizon is approached and never reached\ldg{integrable_systems}. \emph{And the vanishing surface gravity is the same statement}: $\kappa=f'(r_h)/2$ is $-V'(r_h)$, so $\kappa=0$ at Nariai \emph{is} the equilibrium condition, not a separate coincidence.
 
 This is the precise sense in which the horizons \emph{are} turning points: the companion paper found the Schwarzschild horizon and singularity to be two non-degenerate critical points of the cycloid; Proposition~\ref{prop:turning} generalises that statement to the SdS family, with the cubic \eqref{eq:cubic} their defining equation.
@@ -567,6 +569,8 @@ With $r_{0}=\varrho\sin w$, expand $r_{0}-r_{0}^{3}=\varrho\sin w-\varrho^{3}\si
 The relation is a pure multiple of $\sin 3w$---with no residual $\sin w$ harmonic---if and only if $\varrho-\tfrac34 \varrho^{3}=0$, whose unique positive root is $\varrho=2/\sqrt3$\ldg{harmonic_analysis}. At that value $\tfrac14 \varrho^{3}=2/(3\sqrt3)$, giving \eqref{eq:tripleM}.
 \end{proof}
 
+Both the identity at every $w$ and the uniqueness of the scale, with $2/(3\sqrt3)$ its coefficient, are machine-checked (\texttt{sl\_triple} and \texttt{sl\_triple\_unique}, in \texttt{SlicingSky.lean}).
+
 This is why a cubic appears, and why the sky angle is its natural coordinate: the cubic $r_{0}-r_{0}^{3}$ is the cubic in $\sin w$ that the triple-angle identity collapses to $\sin 3w$, and the slicing scale $2/\sqrt3$ is the one scale removing the residual harmonic. The three roots of the horizon cubic are the three preimages $w,\ \tfrac{\pi}{3}-w,\ -\tfrac{\pi}{3}-w$ of $3w$ under the sine. The involution \eqref{eq:involution} is, in the sky angle, the reflection $w\leftrightarrow\tfrac{\pi}{3}-w$, a symmetry of $\sin 3w$ because $\sin\!\bigl(3(\tfrac{\pi}{3}-w)\bigr)=\sin(\pi-3w)=\sin 3w$; its fixed point $w=\pi/6$ is the crest of $\sin 3w$, which is why Nariai is a double root. A further shift makes the cyclic structure explicit: since $\sin 3w$ is unchanged under $w\mapsto w+2\pi/3$, three sky angles $120^\circ$ apart carry the \emph{same} mass while cycling which root is the designated offset through all three---the cyclic $\mathbb{Z}_3$ within $S_3$, $\sigma$ (the $\pi/3$-reflection) supplying the transposition. These are three $120^\circ$-separated hinged vantages of the one sliced substrate, each designating one root: the monodromy three-fold read as three readings of the one geometry (its group-theoretic form in~\cite{JanzenGroupoid}). Read on a fermion sector this three-fold is a \emph{within-state} index rather than a family symmetry---forced to three by the single triple-angle at the gnomonic-fixed scale, not fitted, the three hinged vantages an $S_3$---the generations' own threeness being the turnaround's deck $\mathbb{Z}_3$, and the wall structure fixing the \emph{number} of chiral generations at either seat on the matter sector~\cite{JanzenMatter}, forced within CR; the continuous $\mathrm{SU}(3)$ that shares the root system, not an isometry of the Lorentzian substrate, is placed on its conjugate real form ($S^{5}=\mathrm{SO}(6)/\mathrm{SO}(5)$) in the boundary and geometric-core papers, its identification with the physical colour settled there as a rhyme at the level of the world, the construction fixing no coupling for it~\cite{JanzenBoundary,JanzenGeometricCore}.
 
 \begin{remark}[The triple angle is available in four spacetime dimensions and, with a caveat, in five; in no other]\label{rem:dimension}
@@ -616,7 +620,7 @@ $u$ and $w$ are two genuine geometric angles---$u$ on the throat circle in the m
 The throat circle carries a natural involution of its own: the reflection $g_{1}(x)=\sqrt{1-x^{2}}$ exchanging the two parities of a chart point, which in the throat angle is $u\leftrightarrow\tfrac{\pi}{2}-u$. The cubic involution $\sigma$ is the reflection $w\leftrightarrow\tfrac{\pi}{3}-w$ of the sky angle. Each is a genuine reflection of a genuine geometric angle, and the two are one involution in two coordinates.
 
 \begin{proposition}[Conjugacy]\label{prop:conjugacy}
-The chart involution $g_{1}$ and the cubic involution $\sigma$ are conjugate\rcpt{P03_conjugacy},
+The chart involution $g_{1}$ and the cubic involution $\sigma$ are conjugate on $[0,1]$\rcpt{P03_conjugacy},
 \begin{equation}\label{eq:chi}
   \chi\circ g_{1}=\sigma\circ\chi,
   \qquad
@@ -638,6 +642,8 @@ using $\arcsin\sin(\tfrac\pi2-a)=\tfrac\pi2-a$ for $\tfrac\pi2-a\in[0,\tfrac\pi2
 \]
 the last step by $\tfrac{2}{\sqrt3}\sin(\tfrac\pi3-\vartheta)=\cos\vartheta-\tfrac{1}{\sqrt3}\sin\vartheta$. Both sides equal $\tfrac{2}{\sqrt3}\sin(\tfrac\pi3-\tfrac{2a}{3})$, so $\chi\circ g_{1}=\sigma\circ\chi$ identically.
 \end{proof}
+
+The conjugacy is machine-checked on $[0,1]$, and on $[-1,0)$ it fails at every point, the two sides differing there by the nonzero amount $\tfrac{2}{\sqrt3}\sin(\tfrac23\arcsin x)$ (\texttt{sl\_conjugacy} and \texttt{sl\_conjugacy\_fails}, in \texttt{SlicingSky.lean}); the domain is the one the proof's $a\in[0,\pi/2]$ already takes.
 
 The conjugacy is an exact trigonometric identity, not a numerical coincidence: the collapse $4-3\chi^{2}=4\cos^{2}(\tfrac{2a}{3})$ that makes it closed is itself a consequence of the forced slicing scale $2/\sqrt3$. The construction carries a single involution presented two ways---the throat-circle reflection $g_{1}$ and the cubic root-exchange $\sigma$---and $\chi$ is the exact map between them, the natural entry point for the group-theoretic treatment of the companion groupoid paper~\cite{JanzenGroupoid}.
 
@@ -960,15 +966,18 @@ Read against the observed hadrons the rule agrees on every content tested: meson
 The slicing curve, swept through one angular direction, generates a surface of revolution with line element $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$, $l$ the proper radial distance. Its intrinsic curvature is a direct computation, and it is regular throughout the interior.
 
 \begin{proposition}[Intrinsic curvature]\label{prop:curvature}
-The slicing surface $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ has Gaussian curvature
+On the static region $f>0$, the slicing surface $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ has Gaussian curvature
 \begin{equation}\label{eq:KG}
-  K_{G}=-\frac{f'(r)}{2r}=\frac{1}{\alpha^{2}}-\frac{M}{r^{3}} .
+  K_{G}=-\frac{f'(r)}{2r}=\frac{1}{\alpha^{2}}-\frac{M}{r^{3}} ;
 \end{equation}
+where $f<0$ its sign is reversed.
 \end{proposition}
 
 \begin{proof}
 For a surface of revolution $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ the Gaussian curvature is $K_{G}=-r''(l)/r$. From $dr/dl=\sqrt{|f|}$, differentiating once more gives $r''(l)=\tfrac12 f'(r)\operatorname{sgn}f$ (as in the proof of Proposition~\ref{prop:turning}); on the static region $f>0$ this is $r''=\tfrac12 f'$, so $K_{G}=-f'/(2r)$. With $f'(r)=2M/r^{2}-2r/\alpha^{2}$ this is $K_{G}=1/\alpha^{2}-M/r^{3}$.
 \end{proof}
+
+The sign law is machine-checked: along $dr/dl=\sqrt{\lvert f\rvert}$, $-r''/r$ is $1/\alpha^{2}-M/r^{3}$ where $f>0$ and its negative where $f<0$, in the gauge $\alpha=1$ (\texttt{sl\_curvature\_sign}, in \texttt{SlicingSky.lean}); the surface-of-revolution formula $K_{G}=-r''/r$ is cited and not formalised.
 
 Three consequences follow, and together they close the question of the interior. First, $K_{G}=1/\alpha^{2}-M/r^{3}$ is finite and smooth for every $r>0$: the slicing surface is regular throughout the static region between the horizons. The sole divergence is the $M/r^{3}$ pole as $r\to0$---the Schwarzschild curvature singularity of the companion paper~\cite{JanzenCircle}---and it is absent when $M=0$, where \eqref{eq:KG} reduces to the constant $K_{G}=1/\alpha^{2}$ of de Sitter.
 

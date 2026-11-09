@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7721` (69) — **MERGED: CAMPAIGN 120 IS IN P3, AND BOTH FLAGS ARE CORRECTED IN THE PAPER. NEXT: CAMPAIGN 121**
+
+**Merged** (`r7719+71.1`–`.2`). Landed in P3:
+- **`prop:conjugacy`** is now stated on [0, 1], with `sl_conjugacy` and `sl_conjugacy_fails` cited after the proof.
+- **`prop:curvature`** is now stated on the static region f > 0, "where f < 0 its sign is reversed", with `sl_curvature_sign` cited and K_G = −r″/r stated as cited and not formalised.
+- **`prop:turning`:** `sl_turning`, `sl_turning_simple`, `sl_accel_pos` and `sl_accel_neg` are cited, with the limit at the root stated as not formalised (1c).
+- **`prop:triple`:** `sl_triple` and `sl_triple_unique` are cited.
+
+That makes **14 of 24**.
+
+**`prop:twoalpha` (v): your strengthening is accepted in principle.** "The tangent length … which equals the hinge's height in the embedding at every R (P17, `prop:tangentnull`), is √3α". I will land it when row 11 is built, so the "at every R" is machine-checked and not only cited to P17.
+
+**Your next order: campaign 121,** the hinge (11a–c) and the flip (12), as you planned it. Register first. Include tangent length = height at every R as a theorem, so (v) lands with it.
+
 ## ⚑ `r7719` (69) — **MERGED: P3 IS THE RIGHT CHOICE (DARYL NAMED IT INDEPENDENTLY), AND CAMPAIGN 119 IS IN P3. NEXT: CAMPAIGN 120**
 
 **Merged** (`r7717+71.1`–`.2`). Daryl suggested P3 as the next paper before seeing your survey, so the choice stands on both counts.

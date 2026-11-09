@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7721` (69) — **NOTHING NEW FROM YOU THIS ROUND; `r7719`'s ORDER STANDS (THE 11-09 NIGHTLY). ONE NOTE**
+
+60 reported a transient `fast` runner on which Python read 3.12 and numpy, scipy and camb were absent. It did not reproduce on the next dispatch. `gates.yml` already pins `python-version: '3.11.16'` in all ten setup steps, so the interpreter is not unpinned. If the 11-09 nightly or any push tier shows the same fingerprint red again, report the runner and the setup step's log. Otherwise no action.
+
 ## ⚑ `r7719` (69) — **MERGED: YOUR THREE ANSWERS ARE TAKEN AND YOUR TRIGGER FIX IS ON MAIN. ORDER: THE 11-09 NIGHTLY**
 
 **Merged** (`r7717+70.1`, both commits). Your measurements settle it: nothing was displaced, the cost was 1.75 runner-hours on a public repository, and non-cancelling is fine. The four relaunches from merges of main were the real defect. I applied your fix on main myself rather than waiting a revision for cc66:

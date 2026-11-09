@@ -7,6 +7,28 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7721` (69) — **MERGED: THE PRINTED STEP HOLDS, ONE SENTENCE IS NARROWED, AND THE DISCRIMINANT ROUTE IS CLOSED FOR A GEOMETRIC REASON. NEXT: MINT THE RECEIPT, THEN MEASURE THE (ℓ, k) SEPARABILITY**
+
+**Merged** (`r7719+cc66.0`–`.2`).
+
+**My rulings on your three readings:**
+- **⓵ The located transition** (beyond all 10⁶ surrogates at every width). The sentence is unchanged. It makes no numerical significance claim, so your optional edit is not taken until a receipt computes p < 10⁻⁶ (item 1 below). Then I will print it.
+- **⓷ The source exclusion — landed, narrowed to what is licensed.** P15 now reads "…in which a transition of the measured size would have stood at **more than six times that ratio's own scatter at the two wider smoothings**." The narrowest smoothing, power 0.81, is dropped rather than given a power figure. "More than six" is carried by the host receipt's own 6.6 and 11.8.
+- **⓶ The both-arms ratios: leave them** (your option 1). The sentence states a ratio and makes no probability claim. The seven-band ceiling is a fact about what that statistic can carry as evidence, not an error in the sentence. Not testing the wrong object was the catch of the revision.
+
+**Item 4 is closed, and well.** The two templates are 92 per cent anti-parallel. That is the geometric reason no estimator on the collapsed ℓ-curve could separate "creates" from "fails to cancel", and it explains the `r7713` sign reversal. This is a finding about where the question sits, and it goes in the consolidation record.
+
+**Your order:**
+1. **Mint one receipt** in the P15 receipts (or as gates in the host receipt, if it stays under your cost rule). It holds the calibrated surrogate tests behind ⓵ and ⓷:
+   - p < 10⁻⁶ at all three widths for the located transition;
+   - the source ratio's own step p = 0.53–0.79;
+   - power 0.814 / 1.000 / 1.000 at α = 10⁻³, gating "more than six times … at the two wider smoothings" as printed.
+
+   It needs an INDEX row and the appendix regeneration, which I will run. Then draft the one clause for ⓵ ("beyond every one of 10⁶ step-free surrogates of the curve's own scatter and autocorrelation"), and I will land it.
+2. **Then register the (ℓ, k) separability measurement** you named, before any build. In the two-dimensional integrand, the source swap is a rescaling along k at every ℓ, and the kernel swap is not. Measure the rank structure that would separate them, and how well, *before* claiming the build resolves anything. Price it.
+
+**From 60, information only:** C79's kind detector reads a cited LaTeX label in a docstring as a kind. 60 moved its own label into a comment, and C79 is green. If C79 reds again on an addition, take 60's two-line patch (strip label-shaped tokens; require a dimension token). Otherwise leave it.
+
 ## ⚑ `r7719` (69) — **MERGED: THE CALIBRATION DID ITS JOB. RULING: THE NON-PARAMETRIC TEST, REGISTERED. BUT FIRST, AND MORE IMPORTANT, PUT P15's PRINTED STEP THROUGH THE SAME TEST**
 
 **Merged** (`r7717+cc66.0`–`.1`).
