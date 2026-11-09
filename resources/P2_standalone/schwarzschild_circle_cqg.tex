@@ -52,7 +52,9 @@ running from the horizon $r=2M$ at $z=0$ to $r=0$ at $z=\pi$. We establish five 
 \item The approach to $r=0$ carries no trace of the collapsing body: along every radial timelike geodesic $K\to64/27s^{4}$ in the proper time $s$ remaining, independent of the mass and of the energy (Proposition~\ref{prop:universal}).
 \end{enumerate}
 
-The paper does not remove the curvature singularity at $r=0$, and does not claim the spacetime extends through it. What it shows is that the analytic structure treats the two loci as the same kind of object---two critical points of one curve---and that the whole of what the standard account reads as a difference in kind is carried by the value of the areal radius at each. section~\ref{sec:extendibility} states precisely what this does and does not imply about extendibility, and section~\ref{sec:reading} sets out the interpretive question it leaves.
+The paper does not remove the curvature singularity at $r=0$, and does not claim the spacetime extends through it. What it shows is that the analytic structure treats the two loci as the same kind of object---two critical points of one curve---and that the whole of what the standard account reads as a difference in kind is carried by the value of the areal radius at each. Section~\ref{sec:extendibility} states precisely what this does and does not imply about extendibility, and section~\ref{sec:reading} sets out the interpretive question it leaves.
+
+Proposition~\ref{prop:cycloid}, Lemma~\ref{lem:interior_metric}, Propositions~\ref{prop:critical}, \ref{prop:exterior}, \ref{prop:negative} and~\ref{prop:curve}, and the finiteness at $z=0$ and pole order at $z=\pi$ of Proposition~\ref{prop:kretschmann}, are machine-checked in Lean~4 with Mathlib, the continuations of section~\ref{sec:continuation} being read as substitution into the holomorphic extension of each metric coefficient. The check includes the chart maps into the Kruskal--Szekeres manifold on which Proposition~\ref{prop:curve} rests, and the statement that the regions at $r<0$ are each a horizonless, asymptotically flat geometry with $K=48M^{2}/r^{6}$. Proposition~\ref{prop:exhaustive}, the leading coefficient in Proposition~\ref{prop:kretschmann} and Proposition~\ref{prop:universal} are checked symbolically.
 
 \section{The cycloid parametrisation of the interior}\label{sec:cycloid}
 
@@ -125,7 +127,7 @@ the Schwarzschild exterior in the radial coordinate $\rho$.
 With $\dd z^{2}=-\dd\rho^{2}$, $\cos(i\rho/2)=\cosh(\rho/2)$ and $\tan(i\rho/2)=i\tanh(\rho/2)$, the coefficients of~\eqref{eq:interior_metric} become those of~\eqref{eq:exterior}. With $r=2M\cosh^{2}(\rho/2)$ one has $1-2M/r=\tanh^{2}(\rho/2)$ and $\dd r^{2}/(1-2M/r)=4M^{2}\cosh^{4}(\rho/2)\,\dd\rho^{2}$, which is the Schwarzschild exterior.
 \end{proof}
 
-The continuation turns the circular functions of the interior into the hyperbolic functions of the exterior, and with them the timelike parameter into a spacelike one. The conjugate branch $z=-i\rho$ gives the same $r$, since $\cosh$ is even, and so a second exterior isometric to the first; the two meet at the bifurcation sphere $r=2M$.
+The continuation turns the circular functions of the interior into the hyperbolic functions of the exterior, and with them the timelike parameter into a spacelike one. The conjugate branch $z=-i\rho$ gives the same $r$, since $\cosh$ is even, and so a second exterior isometric to the first: in Kruskal--Szekeres coordinates $(U,V)$ it is the image of the first under the reflection $(U,V)\mapsto(-U,-V)$, which preserves $r$ and every coefficient of the metric. The two meet at the bifurcation sphere $r=2M$.
 
 \subsection{At $z=\pi$: the regions at $r<0$}
 
@@ -156,15 +158,15 @@ The analytic completion of the interior arc is a single curve---hyperbola, circl
 \item two exteriors, $z=\pm i\rho$, with $r\in(2M,\infty)$, meeting at the bifurcation sphere;
 \item two regions at $r<0$, $z=\pi\pm i\rho'$, horizonless and asymptotically flat.
 \end{enumerate}
-The four regions at $r\geq0$ are the maximal Kruskal--Szekeres extension; the two at $r<0$ lie beyond it.
+The four regions at $r\geq0$, with the horizons at which they meet, are the maximal Kruskal--Szekeres extension; the two at $r<0$ lie beyond it.
 \end{proposition}
 
 \begin{proof}
-The interiors are Lemma~\ref{lem:interior_metric}, the white-hole arc following because~\eqref{eq:interior_metric} is even in $\eta$; the exteriors are Proposition~\ref{prop:exterior} with both branches; the regions at $r<0$ are Proposition~\ref{prop:negative} with both branches. The four regions at $r\geq0$ join at the bifurcation sphere in the Kruskal--Szekeres arrangement and terminate at $r=0$.
+The interiors are Lemma~\ref{lem:interior_metric}, the white-hole arc following because~\eqref{eq:interior_metric} is even in $\eta$; the exteriors are Proposition~\ref{prop:exterior} with both branches; the regions at $r<0$ are Proposition~\ref{prop:negative} with both branches. Each of the four regions at $r\geq0$ is carried into the Kruskal--Szekeres manifold by a chart map that is one-to-one onto one of its four quadrants, horizons excluded, and that pulls the Schwarzschild metric back to the form given above, the second interior and the second exterior through the reflection $(U,V)\mapsto(-U,-V)$. Each region is therefore isometric to the corresponding Kruskal--Szekeres region, and the four, with the horizons $UV=0$ at which they meet, make up the whole Kruskal--Szekeres domain $UV<1$, which terminates at $r=0$. No point of that domain has $r<0$, so the regions at $r<0$ lie outside it.
 \end{proof}
 
 \begin{proposition}[Exactly three real directions]\label{prop:exhaustive}
-Writing $z=a+ib$, the areal radius is real if and only if $b=0$ or $a\in\pi\mathbb{Z}$. Up to the period, the continuation therefore has exactly three real directions: the real axis (the interiors), $a=0$ (the exteriors) and $a=\pi$ (the regions at $r<0$). On them the proper-time function $\tau(z)=M(z+\sin z)$ is respectively real, imaginary, and $M\pi$ plus an imaginary number, and the three ranges $0\leq r\leq2M$, $r\geq2M$ and $r\leq0$ partition the real line.
+Writing $z=a+ib$, the areal radius is real if and only if $b=0$ or $a\in\pi\mathbb{Z}$. Up to the period, the continuation therefore has exactly three real directions: the real axis (the interiors), $a=0$ (the exteriors) and $a=\pi$ (the regions at $r<0$). On them the proper-time function $\tau(z)=M(z+\sin z)$ is respectively real, imaginary, and $M\pi$ plus an imaginary number, and the three ranges $0\leq r\leq2M$, $r\geq2M$ and $r\leq0$ cover the real line, meeting only at the critical values $r=0$ and $r=2M$.
 \end{proposition}
 
 \begin{proof}
@@ -241,7 +243,7 @@ In the Lemaître--Tolman cycloid parametrisation, the event horizon and the cent
 
 \funding{Not applicable.}
 
-\data{No new data were created or analysed in this study. The symbolic checks of every computation in the paper are available from the author on request.}
+\data{No new data were created or analysed in this study. The Lean source files for the machine-checked results (\texttt{Circle*.lean}) are openly available at \href{https://github.com/daryljanzen/shadow-of-existence/tree/eaac98f7c46d/computations/formalisation/lean/probes}{https://github.com/daryljanzen/shadow-of-existence} (commit \texttt{eaac98f7c46d}, directory \texttt{computations/formalisation/lean/probes}). The symbolic checks of the remaining computations are available from the author on request.}
 
 
 
