@@ -1,0 +1,31 @@
+
+  ⛭ `r7725+cc66.3` `PO-50`: can the test read, before the ensemble arrives?
+
+    [PASS] ⒜  the band's width is the factor the row states
+             5.228 / 1.165 = 4.488, and the row says "a factor of 4.5"
+    [PASS] ⒝  the rescue values and the band are the SAME quotient, on the row's own treatment
+             rescues are M_ta/M_vir, the band is M(<R_ta)/M(<r_200), and the row places the caustic 1.2-2.2 "inside that" band ⇒ one quotient. ⚠ M_vir vs M_200 is a CONVENTION difference the row collapses; it is some per cent against a band of 4.5, so it cannot move this reading, and that is said rather than assumed away
+    [PASS] ⒞  the lower side exists but is NARROW, and its width is reported rather than dismissed
+             Q in [1.0, 1.165) lies outside the band ⇒ a window 16.5 per cent wide in Q. ⛔ It is NOT empty, which is a correction to my own registration calling it "a hair's breadth"
+
+    ⛭ THE DISCRIMINATING REGION, and what populates it:
+             the band reaches to 5.228; above that the test READS
+             of the six groups' required rescues [12.6, 6.4, 6.0, 5.4, 2.6, 1.7]:
+               4 lie ABOVE the band  -> [12.6, 6.4, 6.0, 5.4]
+               2 lie INSIDE it       -> [2.6, 1.7]
+
+    [PASS] ⒟  the upper discriminating region is NON-EMPTY and is populated by the cases at issue
+             4 of 6 groups need Q beyond 5.228, so the region the test can read is exactly where those four sit ⇒ the band being a factor of 4.5 does NOT make the test unreadable
+
+    ⌗ and the caustic measurement sits INSIDE the band (1.2-2.2 against 1.165-5.228), which is the row's point: that number is consistency and not a test.
+
+  OK  4 of 4 registered checks pass
+
+  ⇒ THE REGISTERED VERDICT: the discriminating region is NON-EMPTY, so by §3 of the
+    registration `PO-50` STAYS OPEN for a stated reason rather than on default, and the
+    test is ONE-SIDED as registered -- it can falsify by finding Q above the band and
+    cannot confirm by finding Q inside it.
+  ⛔ ONE THING LEFT UNADJUDICATED, DELIBERATELY: whether a caustic mass measurement can
+    resolve the 16.5 per cent lower window is a question about the survey's DELIVERED
+    precision, which this corpus does not hold.  No number is invented for it.
+

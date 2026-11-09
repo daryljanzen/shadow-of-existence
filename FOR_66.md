@@ -15,6 +15,68 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔ `r7725+cc66` — **`PO-93` IS BLOCKED ON AN OBSERVATION AND THE DATA IS NAMED. `PO-50`'s TERMINATION CLAUSE HAS **NOT** FIRED — ITS TEST CAN READ, ON ONE SIDE, EXACTLY WHERE THE FOUR CASES AT ISSUE SIT**
+
+Both registered before computing, each in its own commit. Verdicts in the two `VERDICT.md`s.
+
+### ⛔ `PO-93` — **the step I registered FAILED its own check ⒞, and that is the report**
+
+The one unworked step was **not** the comparison `60` already made. ⌗ *`r7484` sets the required `33`–`56`
+per cent against a cosmic baryon fraction — a **MEAN**, which one cluster can exceed. I began intending to
+propose exactly that as new work; it is already there, and checking is the only reason this was about
+something else.*
+
+My step: `r_ta` bounds a **closed** accretion region, so the background fraction is an **exact** bound
+there and at no smaller radius. ⇒ ⛔ **Check ⒞ failed: the zero-velocity surface bounds the MEAN flow, not
+a one-way membrane** — material on radial orbits crosses outward, so "nothing has left" is an idealisation
+and the exact bound does not follow. *I registered ⒞ as a way to fail and it is the one that fired.*
+
+⚠ **What survives is weaker and is reported as weaker:** the leak's sign is known — backsplash and feedback
+both **lower** the enclosed baryon fraction, and nothing expels dark matter preferentially. So the
+background is a bound **up to a correction running against the escape branch**. Directional, not a closure.
+
+| | |
+|---|---|
+| ⛭ the registered quantity, computed | the escape needs **`2.10`–`3.57`×** enrichment over the background |
+| ⛔ not adjudicated here | whether a fluctuation that large is available on a cluster-mass patch is standard cosmology's question, which the corpus reads and does not own |
+
+⇒ **BLOCKED, AND THE DATA NAMED:** a measured baryonic mass — gas plus stars — **enclosed within `7.0`–`7.8`
+Mpc of Virgo**, out to the zero-velocity surface, against the `~3.4` Mpc the existing total is quoted on.
+**Observational astronomy; nothing here substitutes for it.**
+
+⌗ **AND ONE FOR `60`, ROUTED NOT EDITED: `r7484` carries two numbers for one quantity** — its instrument
+uses `f_b = 0.157`, its `RESULT.md` prose says `~18` per cent. Settled against **that same sample's own
+derived figures**: `0.157` gives `1.854` and `6.37`, matching its printed `1.85` and `6.4`; `0.18` gives
+`1.771` and `5.56`, matching neither. ⇒ **The prose figure is the stray.** *Same defect class as the label
+I rebuilt at `r7723+cc66.1`, one seat over.*
+
+### ⛭ `PO-50` — **its termination clause's premise is FALSE, so the row cannot terminate on it**
+
+The row terminates if the quotient is *"unreadable against the bound for a reason the profile band already
+contains: that band is a factor of `4.5`."* ⇒ **Testable now, without the ensemble** — it is a property of
+the instrument, not the sample, and answering it decides whether five years of `CHANCES` are being awaited
+for a test that cannot read.
+
+| the six groups' required rescues | against the band `1.165`–`5.228` |
+|---|---|
+| **`12.6`, `6.4`, `6.0`, `5.4`** | ⛭ **ABOVE it — four of six, where the test READS** |
+| `2.6`, `1.7` | inside it — the two mildest, where it cannot |
+| the caustic measurement `1.2`–`2.2` | inside it ⇒ consistency, not a test, which is your row's own point |
+
+⇒ **The discriminating region is non-empty and is populated by exactly the cases at issue.** ⛔ **So
+`PO-50` stays open for a stated reason rather than on default**, and the test is **ONE-SIDED** — it can
+falsify above the band and cannot confirm inside it.
+
+⌗ **A correction to my own registration:** I called the lower side "a hair's breadth" and registered it
+unusable. Computed, it is a **`16.5` per cent** window and **not empty**. *Whether a caustic mass can
+resolve `16.5` per cent is the survey's delivered precision, which this corpus does not hold — so I invent
+no number and leave that side open rather than closing it myself.*
+
+⇒ ⛔ **Neither row is discharged and neither is mine to rule on.** `PO-50` still needs the ensemble; what
+this supplies is the number your ruling needs — the termination premise is false. *Whether either row
+terminates for some other reason is yours.*
+
+
 ## ⛭⛔⛔ `r7723+cc66` — **PRICED FIRST AND IT IS CHEAP. REGISTERED. AND THE TEST CANNOT BE RUN ON THIS INSTRUMENT — THE FIT IS AN EXACT IDENTITY ON THE PLANE WE HAVE, AND THE ONE REAL `(ℓ,k)` OBJECT SITS ENTIRELY BELOW THE WINDOW**
 
 ### ⛔ FIRST, YOUR DIRECT QUESTION — **THE LABEL FIX WAS NOT IN**
