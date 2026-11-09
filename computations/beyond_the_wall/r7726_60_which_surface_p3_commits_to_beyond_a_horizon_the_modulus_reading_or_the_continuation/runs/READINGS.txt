@@ -1,0 +1,166 @@
+
+  ================================================================================================
+  r7726 (60) -- WHICH SURFACE P3 COMMITS TO BEYOND A HORIZON, answering order r7723
+  ================================================================================================
+      P3              250106 chars    1341 lines
+      P15             505230 chars    3101 lines
+      SlicingSky      896844 chars   18015 lines
+      SlicingHinge    909408 chars   18254 lines
+      axiom tokens: Sky 0, Hinge 0; `sorry`: 0, 0
+
+  ================================================================================================
+  Ⓢ  THE INSTRUMENT, TESTED BEFORE USE -- every reader shown a NEGATIVE of the opposite class
+  ================================================================================================
+  [PASS] Ⓢ① the generated character table now accepts SYMBOL as well as LETTER, so `ϱ` -- GREEK RHO SYMBOL, which r7724's own generator missed -- is present, along with `σ`, `χ`, `ψ`, `θ`
+         ⌗ ϱ→rho_symbol, σ→sigma, χ→chi, ψ→psi, θ→theta; 27 letters found
+  [PASS] Ⓢ② `decl_statement` stops at the `:= by` that begins a proof and not at a `:=` inside
+         ⌗ 538 chars, ends …' - α ^ 2) = Real.sqrt 3 * α ↔ R = 2 * α)'
+  [PASS] Ⓢ③ and returns None for a name that is not there (the negative)
+         ⌗ None as required
+  [PASS] Ⓢ④ `conclusion_of` reads at bracket depth ZERO: a nested ascription in the hypotheses does not steal the split (r7720's defect, injected)
+         ⌗ read 'A ∧ ((x : ℝ) : ℂ) = 0'
+  [PASS] Ⓢ⑤ `hypotheses_of` keeps nested closing brackets and stops before the conclusion (r7724's two defects, both injected here)
+         ⌗ ['x : ℝ', 'hx : x ∈ Set.Icc (0 : ℝ) 1']
+  [PASS] Ⓢ⑥ `env_body` locates by LABEL, and returns None for a label not present
+         ⌗ prop:flip body 369 chars; absent label → None
+  [PASS] Ⓢ⑦ `where_token` separates a statement hit from a section-header hit -- the shape that produced r7724's false positive
+         ⌗ in SlicingSky.lean, `KG`: total 16, in statements 0, in `section KG…` headers 8, elsewhere 8
+  [PASS] Ⓢ⑧ the root finder returns the known roots of r³ − r at m = 0
+         ⌗ [-1.0, 0.0, 1.0]
+  [PASS] Ⓢ⑨ ⚠ and the two curvature conventions are verified on a case whose answer is known INDEPENDENTLY: on the de Sitter member (m = 0) the spherical piece and the continued Lorentzian piece must both give the constant +1/α² = +1
+         ⌗ m = 0: f(0.5) = +0.7500 (static) → K_riem = +1.000000000000; f(1.5) = -1.2500 (past the seam) → K_lor = +1.000000000000
+         ⌗ the second is the order's own statement that the continued piece keeps 1/α², reproduced here, so the Lorentzian convention K = +r″/r is not assumed but checked against it
+  [PASS] Ⓢ⑩ and the conventions DISAGREE where they should: read as a Riemannian surface with the modulus, the same de Sitter radius gives −1, which is the reading the two differ over
+         ⌗ K_riem(m=0, r=1.5) = -1.000000000000 against K_lor = +1.000000000000 -- so an arm that cannot tell the two apart would decide this revision's question by its own convention
+
+  ================================================================================================
+  Ⓐ  WHAT P3 COMMITS TO BEYOND A HORIZON -- read from its own text, both outcomes named
+  ================================================================================================
+  [PASS] Ⓐ① ⛭ FIRST, THE LABEL: is a "seam" the same locus as a horizon, or a different one? The seam section's OWN FIRST SENTENCE settles it by definition, so the question "what is the surface past a horizon" and "what is the surface past a seam" are one question
+         ⌗ …The turning points of the slicing curve are the horizons---the zeros of $f$, where $\mathrm{d}r/\mathrm{d}l$ vanishes (Proposition~\ref{prop:turning}), read geometrically as the points at which the secant meets the throat circle. We call such a turning point a \emph{seam}, and we now show that the s…
+  [PASS] Ⓐ② THE ABSTRACT commits the two-dimensional slicing surface, at the seam, to the CONTINUATION and to a LORENTZIAN piece -- not to a Riemannian surface read with the modulus
+         ⌗ the abstract says: "…joins a Riemannian spherical piece to a Lorentzian de Sitter piece by the continuation θ ↦ π/2 + iψ, the signature flip automatic and CONFINED TO THE TWO-DIMENSIONAL SLICING SURFACE, the spacetime Lorentzian throughout"
+  [PASS] Ⓐ③ `prop:flip`'s STATEMENT, not its remark: its subject is the LINE ELEMENT, and its conclusion is a signature
+         ⌗ …Under the analytic continuation $\theta\mapsto\pi/2+i\psi$, the spherical line element \eqref{eq:sph} becomes the de Sitter line element \begin{equation}\label{eq:dscont} ds^{2}=-d\psi^{2}+\cosh^{2}\!\psi\;d\Omega^{2}, \end{equati…
+  [PASS] Ⓐ④ and the correspondence subsection says WHICH signature flips, in so many words -- the two-dimensional slicing-surface metric's, the radial direction reading spacelike inside and timelike outside
+         ⌗ located verbatim; and it adds "It is not the signature of the spacetime, which is Lorentzian throughout"
+  [PASS] Ⓐ⑤ `rem:reality-lines` carries the same commitment and adds that BOTH pieces are real and the join is C¹ -- so the continued piece is an object of the construction and not a formal device
+         ⌗ …Proposition~\ref{prop:flip} and the tangency that defines a seam are one fact about $\sin$, and stating it that way gives both, together with the $C^{1}$ join and the signature flip. Since $\operatorn…
+  [PASS] Ⓐ⑥ ⛭⛭ THE DECIDING SEARCH, named and in both directions: does any sentence of P3 apply the Riemannian surface line element with the modulus law at a radius where f < 0? **It does not** -- the only place the modulus reading appears beyond the static region is the formal sentence that explicitly contrasts it with the continuation. So the modulus is P3's law for the CURVE and the continuation is its account of the SURFACE
+         ⌗ searched for 'ds^{2}=dl^{2}+r(l)^{2}d\\phi^{2}': 3, 'read with the modulus': 1, '\\sqrt{|f(r)|}': 2, '\\sqrt{\\lvert f\\rvert}': 5
+         ⌗ "read with the modulus" occurs 1 time(s), and its context is:
+         ⌗    …/dl=\sqrt{\lvert f\rvert}$, $-r''/r$ is machine-checked to be $1/\alpha^{2}-M/r^{3}$ where $f>0$, in the gauge $\alpha=1$; where $f<0$ the same curve read with the modulus gives its negative (\texttt{sl\_curvat…
+  [PASS] Ⓐ⑦ ⇒ **THE ANSWER TO THE ORDER'S FIRST QUESTION: THE CONTINUATION.** And the fork was not a two-way one: P3 commits to BOTH readings, of TWO DIFFERENT OBJECTS -- the modulus law for the one-dimensional curve (the abstract defines the curve by it) and the continuation for the two-dimensional surface past a seam. The paper now states that distinction itself, in the formal sentence after `prop:curvature`'s proof
+         ⌗ the abstract: "a single radial curve $r(l)$, defined by $dr/dl=\sqrt{|f(r)|}$" -- the CURVE;
+         ⌗ the formal sentence: "…whereas past a seam the slicing surface is carried by the continuation of Proposition prop:flip" -- the SURFACE
+
+  ================================================================================================
+  Ⓑ  WHAT THE FORMALISATION COMMITS TO -- the curve, or a surface?
+  ================================================================================================
+  [PASS] Ⓑ① `sl_curvature_sign` quantifies over a CURVE `r : ℝ → ℝ` satisfying the modulus law, and over no surface at all -- so what it proves is a fact about the curve, and the distinction Ⓐ⑦ found is already present in Lean and was only absent from the prose
+         ⌗ binders: ['m : ℝ', 'r : ℝ → ℝ', 'l : ℝ', 'hr : ∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t', 'h0 : r l ≠ 0']
+  [PASS] Ⓑ② and it is about `-a / r l`, i.e. −r″/r: `K_G` appears once in that file, in a DOCSTRING and in no statement, and "Gauss" nowhere -- so the surface-of-revolution bridge is cited and unformalised, exactly as the paragraph says
+         ⌗ `K_G` in SlicingSky.lean: total 1, in statements 0, in section headers 0, elsewhere 1; 'Gauss': 0
+  [PASS] Ⓑ③ `sl_flip` is about the CONTINUATION itself -- the derivative of θ ↦ π/2 + ψi, that i² = −1, that sin(π/2 + ψi) = cosh ψ, and the two signs −1 < 0 < cosh²ψ that ARE the signature -- and it is in `SlicingHinge.lean`, which is the file the paper cites
+         ⌗ conclusion: HasDerivAt (fun t : ℝ => (π / 2 : ℂ) + (t : ℂ) * Complex.I) Complex.I ψ ∧ Complex.I ^ 2 = -1 ∧ Complex.sin (π / 2 + ψ * Complex.I) = Real.cosh ψ ∧ Complex.sin (π / 2 + ψ * Complex.I) ^ 2 = ((Real.cosh ψ ^ 2 : ℝ) : ℂ) ∧ (-1 : ℝ) < 0 ∧ 0 < Real.cosh ψ ^ 2
+  [PASS] Ⓑ④ ⚠ and no STATEMENT in either file gives the Gaussian curvature of the CONTINUED piece: the token sits in a docstring and nowhere else, and "Gauss" is absent from both files -- so the machine answer to "what is the curvature past a seam" does not exist yet, which is consistent with that computation being ordered elsewhere
+         ⌗ in SlicingHinge.lean, `K_G`: total 1, in statements 0, in section headers 0, elsewhere (docstrings and comments) 1; 'Gauss': 0
+  [FAIL] Ⓑ⑤ ⛔⛭⛭ **BUT THE CORRECTION DID NOT REACH THE DOCSTRING, AND THE DOCSTRING MAKES THE VERY CONFLATION THE PAPER JUST REMOVED.** `sl_curvature_sign` is headed, in BOTH files, by a docstring calling the quantity "the paper's `K_G`" and saying "the sign flips outside the static region". What the theorem proves is about the CURVE read with the modulus; the paper's `K_G` is the SURFACE's, and past a seam that surface is the continuation. So the clause removed from `prop:curvature` is still asserted here, of the paper's own symbol
+         ⌗ present in 2 of the two files, verbatim:
+         ⌗    
+  [FAIL] Ⓑ⑥ ⛔⛭ **AND A SECOND FINDING THE FIRST UNCOVERED: the two files declare the same theorem NAMES in bulk.** So a citation naming a declaration and a file is ambiguous about which copy a reader is sent to -- and the paper cites `sl_curvature_sign` to one file while the other declares it too, with the same stale docstring
+         ⌗ SlicingSky declares 551 theorems, SlicingHinge 561, and 551 names are declared in BOTH
+         ⌗ first ten: ['LocalKillingChart.ld_lambda_indep', 'LocalKillingChart.ld_metric_N', 'SeAgree.isCauchyTemporal', 'Spacetime.ch_ext', 'bs_SD_good', 'bs_backseam', 'bs_coeffs', 'bs_hasDerivAt_ρ', 'bs_kretschmann', 'cc_isGeodesicOn']
+
+  ================================================================================================
+  Ⓒ  THE CURVATURE OF THE CONTINUED PIECE, AND THE ORDER'S SECOND QUESTION
+  ================================================================================================
+  [PASS] Ⓒ① ⛭⛭ **THE FORMULA IS UNCHANGED ON THE CONTINUED PIECE, FOR EVERY MEMBER AND NOT ONLY DE SITTER.** On the Lorentzian piece the parameter is proper time, (dr/dψ)² = −f, so r″(ψ) = −f′/2; and for signature (−,+) the Gaussian curvature is K = +r″/r. The two sign flips -- the sgn f in r″ and the convention in K -- CANCEL, giving K = −f′/2r = 1/α² − M/r³ exactly, the same expression as on the static region
+         ⌗ de Sitter, m = 0           r=1.4   f=  -0.9600  1/α²−M/r³=   +1.000000  K_continued=   +1.000000  (modulus-as-Riemannian would give    -1.000000)
+         ⌗ de Sitter, m = 0           r=2.0   f=  -3.0000  1/α²−M/r³=   +1.000000  K_continued=   +1.000000  (modulus-as-Riemannian would give    -1.000000)
+         ⌗ de Sitter, m = 0           r=2.6   f=  -5.7600  1/α²−M/r³=   +1.000000  K_continued=   +1.000000  (modulus-as-Riemannian would give    -1.000000)
+         ⌗ undercritical, r₀ = 0.3    r=0.12  f=  -1.2894  1/α²−M/r³=  -77.993056  K_continued=  -77.993056  (modulus-as-Riemannian would give   +77.993056)
+         ⌗ undercritical, r₀ = 0.3    r=0.2   f=  -0.4050  1/α²−M/r³=  -16.062500  K_continued=  -16.062500  (modulus-as-Riemannian would give   +16.062500)
+         ⌗ undercritical, r₀ = 0.3    r=1.4   f=  -1.1550  1/α²−M/r³=   +0.950255  K_continued=   +0.950255  (modulus-as-Riemannian would give    -0.950255)
+         ⌗ undercritical, r₀ = 0.3    r=2.0   f=  -3.1365  1/α²−M/r³=   +0.982938  K_continued=   +0.982938  (modulus-as-Riemannian would give    -0.982938)
+         ⌗ undercritical, r₀ = 0.3    r=2.6   f=  -5.8650  1/α²−M/r³=   +0.992234  K_continued=   +0.992234  (modulus-as-Riemannian would give    -0.992234)
+         ⌗ undercritical, r₀ = 0.8    r=0.12  f=  -1.4144  1/α²−M/r³=  -82.333333  K_continued=  -82.333333  (modulus-as-Riemannian would give   +82.333333)
+         ⌗ undercritical, r₀ = 0.8    r=0.2   f=  -0.4800  1/α²−M/r³=  -17.000000  K_continued=  -17.000000  (modulus-as-Riemannian would give   +17.000000)
+         ⌗ undercritical, r₀ = 0.8    r=1.4   f=  -1.1657  1/α²−M/r³=   +0.947522  K_continued=   +0.947522  (modulus-as-Riemannian would give    -0.947522)
+         ⌗ undercritical, r₀ = 0.8    r=2.0   f=  -3.1440  1/α²−M/r³=   +0.982000  K_continued=   +0.982000  (modulus-as-Riemannian would give    -0.982000)
+         ⌗ undercritical, r₀ = 0.8    r=2.6   f=  -5.8708  1/α²−M/r³=   +0.991807  K_continued=   +0.991807  (modulus-as-Riemannian would give    -0.991807)
+         ⌗ near-Nariai, r₀ = 0.57     r=0.12  f=  -2.2211  1/α²−M/r³= -110.344618  K_continued= -110.344618  (modulus-as-Riemannian would give  +110.344618)
+         ⌗ near-Nariai, r₀ = 0.57     r=0.2   f=  -0.9640  1/α²−M/r³=  -23.050437  K_continued=  -23.050437  (modulus-as-Riemannian would give   +23.050437)
+         ⌗ near-Nariai, r₀ = 0.57     r=1.4   f=  -1.2349  1/α²−M/r³=   +0.929882  K_continued=   +0.929882  (modulus-as-Riemannian would give    -0.929882)
+         ⌗ near-Nariai, r₀ = 0.57     r=2.0   f=  -3.1924  1/α²−M/r³=   +0.975950  K_continued=   +0.975950  (modulus-as-Riemannian would give    -0.975950)
+         ⌗ near-Nariai, r₀ = 0.57     r=2.6   f=  -5.9080  1/α²−M/r³=   +0.989053  K_continued=   +0.989053  (modulus-as-Riemannian would give    -0.989053)
+  [PASS] Ⓒ② ⚠ and P3 ALREADY CONTAINS BOTH HALVES OF THAT COMPUTATION WITHOUT JOINING THEM: it states the marginal congruence's areal acceleration as d²r/dτ̃² = −f′/2, which IS the r″(ψ) above, and it states K_G = −f′/2r identically. What it does not say is that the first is the continued piece's own r″ and therefore that the second holds there too
+         ⌗ both located verbatim in the paper; the missing step is one line: on the Lorentzian piece r″(ψ) = −f′/2 and K = +r″/r, so K = −f′/2r
+  [PASS] Ⓒ③ the proposition is now scoped and the sign clause is gone from it
+         ⌗ …On the static region $f>0$, the slicing surface $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ has Gaussian curvature \begin{equation}\label{eq:KG} K_{G}=-\frac{f'…
+  [PASS] Ⓒ④ CONSEQUENCE TWO is now a LIMIT claim and it is TRUE: approaching a horizon from inside the static region, K_G tends to 1/α² − M/r_h³, which is finite. ⌗ And it no longer asserts a value AT the horizon, which is what the earlier wording did
+         ⌗ r_h = 0.300000: value at r_h -4.055555556, approached from inside -4.055550500
+         ⌗ r_h = 0.815660: value at r_h +0.748461467, approached from inside +0.748461374
+  [PASS] Ⓒ⑤ CONSEQUENCE THREE's "within the static region … changes sign once" is TRUE on the members it is about: K_G has exactly ONE zero in r > 0 (r³ = Mα² has one positive root), and it lies strictly between the two horizons
+         ⌗ r₀ = 0.3: horizons [0.3, 0.81566], r_HE = 0.514886, strictly between: True
+         ⌗ r₀ = 0.8: horizons [0.32111, 0.8], r_HE = 0.524148, strictly between: True
+         ⌗ and K_G = 0 ⟺ r³ = Mα², one positive root, so "once" cannot fail by a second zero
+  [PASS] Ⓒ⑥ ⚠ and the abstract's "changing sign once **there**" resolves to the static region by its own sentence, which is the pronoun checked rather than assumed
+         ⌗ the abstract: "…finite throughout the static region, invisible to the horizons, and changing sign once there, at $r_{\mathrm{HE}}$…" -- "there" follows "the static region" in the same list, with no competing antecedent between them
+  [FAIL] Ⓒ⑦ ⛔⛭ **THE ORDER'S SECOND QUESTION: YES, THE SCOPING LEAVES THREE DOWNSTREAM SENTENCES UNSUPPORTED** -- all of them in the cosmological reading, all of them calling K_G "the slice's own Gaussian curvature" at radii the now-scoped proposition does not reach. ⌗ But by Ⓒ① the remedy is to EXTEND rather than to scope: the formula holds on the continued piece too, so these sentences were right all along and it is the proposition that is now narrower than the paper needs
+         ⌗ • "the comoving acceleration is the slice's own Gaussian curvature, up to the positive factor $r$…"
+         ⌗     ⇒ a comoving worldline crosses horizons, so this needs K_G outside f > 0
+         ⌗ • "The sign of the intrinsic curvature of the existent slice \emph{is} the sign of the cosmic accel…"
+         ⌗     ⇒ a cosmic history crosses horizons
+         ⌗ • "$\Lambda$-dominated and positively curved (de~Sitter-like, expanding) beyond it…"
+         ⌗     ⇒ "beyond $r_{HE}$" is unbounded and leaves the static region
+
+  ================================================================================================
+  Ⓓ  THE REST OF THE LANDING -- each a citation against a statement
+  ================================================================================================
+  [PASS] Ⓓ① `prop:turning`'s new wording says what `sl_accel_pos`/`sl_accel_neg` state -- a one-sided limit with the sign by the side -- checked against the DECLARATIONS and not against the words that were offered for it
+         ⌗ the proposition now reads "…→ ±½f′(r_h) ≠ 0 as r → r_h from either side, the sign according as f ≷ 0 there", and the two declarations give +f′/2 under 0 < f and −f′/2 under f < 0 -- the pair the wording names
+  [PASS] Ⓓ② the conjugacy citation now closes BEFORE the amount, so what it covers is what the two declarations conclude and no more -- this seat's ⓸ of last round, landed
+         ⌗ the citation closes at offset 155 and the amount begins at 188:
+         ⌗    …The conjugacy is machine-checked on $[0,1]$, and on $[-1,0)$ it fails at every point (\texttt{sl\_conjugacy} and \texttt{sl\_conjugacy\_fails}, in \texttt{SlicingSky.lean}), the two sides differing there by the nonzero amount $\tfrac{2}{\sqrt3}\sin(\tfrac23\arcsin x)$; the domain is the on…
+  [PASS] Ⓓ③ `prop:triple` now says "the unique **positive** value", matching `sl_triple_unique`'s `0 < ϱ`
+         ⌗ the proposition: "…is the unique positive value of the slicing scale for which this holds"; Lean hypothesis `hϱ : 0 < ϱ`
+  [FAIL] Ⓓ④ ⛔⛭ **BUT THE ABSTRACT WAS NOT FIXED WITH IT, AND IT CARRIES THE WORD THE PROPOSITION DROPPED.** A named search over the whole paper finds the unqualified form still standing in the abstract -- the twin a repair leaves behind, which is exactly what such a search is for
+         ⌗ searched the flattened paper for both forms:
+         ⌗    "the unique positive value of the slicing scale": 1  ← the proposition
+         ⌗    "forced as the unique value removing the residual harmonic": 2  ← the abstract
+  [PASS] Ⓓ⑤ `sl_twoalpha` is in the cited file under `0 < α` and `α ≤ R`, and its conclusion is FIVE `↔ R = 2α` equivalences -- with (vi) carried by `sl_hinge_null`, which is how the paragraph itself divides them, so "all six" has six to point at across two declarations rather than six inside one
+         ⌗ 5 equivalences in `sl_twoalpha`; hypotheses ['α R : ℝ', 'hα : 0 < α', 'hR : α ≤ R']; `sl_hinge_null` present and cited for (vi)
+  [PASS] Ⓓ⑥ ⚠ (v)'s new wording has THREE claims in one clause and the arm checks each: the tangent length is √(R²−α²) at every R; the hinge's height in the embedding is the same √(R²−α²) at every R; and the VALUE √3α holds **iff R = 2α**. ⌗ So "at every R" attaches to the EQUALITY and not to the value -- reading it the other way would have reported a false defect
+         ⌗ the three conjuncts are present and the value is an `↔ R = 2α`, so the clause parses as the declaration states it
+  [PASS] Ⓓ⑦ `sl_flip` is cited after `prop:flip`'s proof and concludes what the citation says
+         ⌗ located verbatim
+  [PASS] Ⓓ⑧ P15's new clause is in the paper as the order quotes it
+         ⌗ …ut a tenth of a comb period---\emph{narrower than the narrowest window that resolves it}, and beyond every one of a million step-free surrogates of the curve's own scatter and autocorrelation at all three widths…
+  [PASS] Ⓓ⑨ and its host receipt is on disk, located by the clause's own words rather than by a remembered name
+         ⌗ P15_the_located_transition_is_beyond_a_million_step_free_surrogates_and_the_source_exclusions_printed_clause_is_licensed_only_at_the_two_wider_smoothings.py
+
+      ⛭ running it, because these values exist only AT RUN TIME (negative probe 22)
+  [PASS] Ⓓ⑩ ⛭ the receipt runs green, and the surrogate claim is carried at ALL THREE widths -- so "all three widths" is the right set here, where the EARLIER clause's "two wider" was right for a different quantity. ⌗ Every number is read from a witness and never from a label
+         ⌗ ⚠ and a fifth defect of this probe, of the same family as the four above: the arm first searched for a SUMMARY STRING it had guessed rather than read, and this receipt prints a different one. It now reads the receipt's own per-gate verdicts.
+         ⌗ exit 0; `[FAIL]` lines: 0; widths named: ['0.175', '0.25', '0.35']
+         ⌗      [PASS] ⛭⛔ `r7721` ** ⓵ THE LOCATED TRANSITION IS BEYOND EVERY ONE OF A MILLION STEP-FREE SURROGATES, AT ALL THREE HALF-WIDTHS ** ⇒ *the surrogates carry the curve's o
+         ⌗      [PASS] ⛭ `r7721` ** AND THE NULL IS NOT DEGENERATE: the surrogates' own step scatter is a real fraction of the measured step at every width ** ⇒ *a null that produced
+
+  ================================================================================================
+  THE VERDICT
+  ================================================================================================
+  4 arm(s) report a FINDING -- each a reading, not a crash:
+    - Ⓑ⑤ ⛔⛭⛭ **BUT THE CORRECTION DID NOT REACH THE DOCSTRING, AND THE DOCSTRING MAKES THE VERY CONFLATION THE PAPER JUST REMOVED
+    - Ⓑ⑥ ⛔⛭ **AND A SECOND FINDING THE FIRST UNCOVERED: the two files declare the same theorem NAMES in bulk
+    - Ⓒ⑦ ⛔⛭ **THE ORDER'S SECOND QUESTION: YES, THE SCOPING LEAVES THREE DOWNSTREAM SENTENCES UNSUPPORTED** -- all of them in the cosmological reading, all 
+    - Ⓓ④ ⛔⛭ **BUT THE ABSTRACT WAS NOT FIXED WITH IT, AND IT CARRIES THE WORD THE PROPOSITION DROPPED
+
+  WHAT IS CARRIED:
+    ⌗ Ⓐ⑦ the surface past a seam is the continuation; the modulus law is the curve's
+    ⌗ Ⓑ⑤ sl_curvature_sign's docstring still asserts the removed clause of the paper's own K_G, in both files
+    ⌗ Ⓑ⑥ 551 theorem names are declared in both Lean files
+    ⌗ Ⓒ① on the continued piece K = 1/α² − M/r³ unchanged, the two sign flips cancelling
+    ⌗ Ⓒ⑦ three cosmological sentences need K_G outside the static region
+    ⌗ Ⓓ④ the abstract still says "the unique value" where prop:triple now says "the unique positive value"
+
