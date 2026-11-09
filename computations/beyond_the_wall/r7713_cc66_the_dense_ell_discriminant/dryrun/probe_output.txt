@@ -1,0 +1,24 @@
+
+  A  kernel dominant, source opposite   (noise 0.0004)
+    ratio            step        sd(registered)  sd(candidate)   as-registered  candidate
+    own x own     +0.01268    0.002011        0.000663          6.31 sd     19.14 sd
+    kernel only   +0.03065    0.007279        0.002299          4.21 sd     13.33 sd
+    source only   -0.01834    0.004835        0.001644          3.79 sd     11.15 sd
+
+  A  the same, five times the noise     (noise 0.002)
+    ratio            step        sd(registered)  sd(candidate)   as-registered  candidate
+    own x own     +0.01320    0.002412        0.000639          5.47 sd     20.67 sd
+    kernel only   +0.02988    0.007754        0.002052          3.85 sd     14.56 sd
+    source only   -0.01776    0.004637        0.001915          3.83 sd      9.28 sd
+
+  B  THE NULL: no planted difference    (noise 0.002)
+    ratio            step        sd(registered)  sd(candidate)   as-registered  candidate
+    own x own     +0.00017    0.000315        0.000249          0.52 sd      0.66 sd
+    kernel only   -0.00046    0.000262        0.000245          1.74 sd      1.87 sd
+    source only   +0.00086    0.000391        0.000385          2.21 sd      2.24 sd
+
+  B  THE NULL at the lower noise        (noise 0.0004)
+    ratio            step        sd(registered)  sd(candidate)   as-registered  candidate
+    own x own     +0.00009    0.000358        0.000259          0.25 sd      0.34 sd
+    kernel only   +0.00006    0.000111        0.000056          0.54 sd      1.09 sd
+    source only   +0.00009    0.000067        0.000046          1.34 sd      1.98 sd

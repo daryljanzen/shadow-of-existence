@@ -1,0 +1,5 @@
+# `r7713+cc66`: SYNTHETIC SPECTRA ARE SCRATCH.  The dry run writes four fake combinations here to
+# exercise every branch of the registered decision table before the real data exists.  They are not
+# data and must never be mistaken for it, so they are not tracked; the SCRIPTS that make them are.
+pseudo/
+analyse.json

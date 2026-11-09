@@ -27,7 +27,13 @@ OUT = os.path.join(HERE, 'pseudo')
 ACC = {'lcdm': 'r7041_accept_lcdm', 'cr': 'r7041_accept_cr_leafrec1'}
 SRC = {'lcdm': 'r6911_source_lcdm_leafrec1', 'cr': 'r6911_source_cr_leafrec1'}
 QLO, QHI = 0.80, 3.10
-BLOCK = 50        # l per checkpoint: ~2.5 min, well inside the observed restart interval
+# ⛔ 50 was TOO COARSE FOR THE TOP OF THE BAND, by this file's own criterion.  The per-`l` cost RISES
+#    with order -- 152 s per 50 `l` near the bottom of the window, 386 s near the top, measured -- so a
+#    50-`l` block at high `l` cost up to 46 per cent of the observed window between container recycles,
+#    and the whole of it was lost each time.  25 halves the in-flight loss without touching the
+#    computation, the grid, or any registered threshold.  ⌗ The block FILENAME now carries the block
+#    size, so blocks written at one size can never be read as blocks of another.
+BLOCK = 25
 
 
 def geom(t):
@@ -43,6 +49,28 @@ def source(t):
     return np.asarray(z['k'], float), np.asarray(z['S_i'], float) ** 2
 
 
+def n_blocks(ker_t):
+    """how many checkpoints one combination takes, derived rather than written down"""
+    return (len(geom(ker_t)['ls']) + BLOCK - 1) // BLOCK
+
+
+def one_block(src_t, ker_t, b):
+    """⛭ ONE block, computed.  Factored out of `build` so that the CONTROL CHECK (`r7715`'s ruling:
+    re-run the banked combination's first block on the runner and require agreement before trusting
+    the other three) runs THE SAME CODE PATH as the thing it is checking.  A control that reimplements
+    the kernel compares two implementations, which is not what is being asked."""
+    k, S2 = source(src_t)
+    g = geom(ker_t)
+    dk = np.gradient(k)
+    sl = g['ls'][b * BLOCK:(b + 1) * BLOCK]
+    yb = np.empty(len(sl))
+    for i, l in enumerate(sl):
+        J = spherical_jn(int(l), k[None, :] * g['x0'][:, None])
+        G = np.trapezoid(g['vis'][:, None] * J, g['eta'], axis=0)
+        yb[i] = float(np.sum(G ** 2 * dk / k * S2))
+    return sl, yb
+
+
 def build(src_t, ker_t):
     """one combination, checkpointed in BLOCKS of `l`; finished blocks are read and not recomputed"""
     os.makedirs(OUT, exist_ok=True)
@@ -51,25 +79,18 @@ def build(src_t, ker_t):
         d = np.load(path)
         print(f"      S={src_t:5s} K={ker_t:5s}: already assembled, {len(d['y'])} l -- SKIPPED", flush=True)
         return d['q'], d['y']
-    k, S2 = source(src_t)
     g = geom(ker_t)
-    dk = np.gradient(k)
-    nb = (len(g['ls']) + BLOCK - 1) // BLOCK
+    nb = n_blocks(ker_t)
     t0 = time.time()
     for b in range(nb):
-        bp = os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__{b:03d}.npy')
+        bp = os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__B{BLOCK}__{b:03d}.npy')
         if os.path.exists(bp):
             continue
-        sl = g['ls'][b * BLOCK:(b + 1) * BLOCK]
-        yb = np.empty(len(sl))
-        for i, l in enumerate(sl):
-            J = spherical_jn(int(l), k[None, :] * g['x0'][:, None])
-            G = np.trapezoid(g['vis'][:, None] * J, g['eta'], axis=0)
-            yb[i] = float(np.sum(G ** 2 * dk / k * S2))
+        sl, yb = one_block(src_t, ker_t, b)
         np.save(bp, yb)                      # written whole; a restart costs at most this block
         print(f"        S={src_t:5s} K={ker_t:5s} block {b + 1}/{nb} ({len(sl)} l) "
               f"[{time.time() - t0:.0f} s in this pass]", flush=True)
-    y = np.concatenate([np.load(os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__{b:03d}.npy'))
+    y = np.concatenate([np.load(os.path.join(OUT, f'block__S_{src_t}__K_{ker_t}__B{BLOCK}__{b:03d}.npy'))
                         for b in range(nb)])
     assert len(y) == len(g['ls']), (len(y), len(g['ls']))
     q = g['ls'] / g['l_A']

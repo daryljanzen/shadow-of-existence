@@ -1,0 +1,14 @@
+# `r7713+cc66` THE LAUNCH FILE.  Touching this file is what starts the dense-`l` matrix job
+# (`.github/workflows/dense-ell.yml`), per `r7715`'s ruling that the trigger must fire from the working
+# branch without waiting for a merge.
+#
+# ⛔ IT IS A TRIGGER AND IT IS NOT A RECORD.  Nothing here is read by the computation, nothing here
+# decides anything, and a line below is NOT evidence that a run happened or what it found -- the run's
+# own log is, and its output is fetched from `refs/ci/dense_ell/<combination>` or taken from the
+# artifact.  Reading this file as a record of the runs would be exactly the mistake this revision has
+# been catching all evening: one object's name taken for another's state.
+#
+# One line per launch, newest last, saying only WHY the launch was made.
+
+r7715 option 1 — the first launch: the three remaining combinations, one per runner, on the identical
+instrument and grid as the banked one, with the control against the banked first block in front of each.

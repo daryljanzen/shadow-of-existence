@@ -1,0 +1,11 @@
+  r7711 at 87 l (quoted in PREDICTION.md):  own +0.0232   kernel +0.0482   source -0.0277
+     kernel + source = -0.0277 + 0.0482 = +0.0205   against own +0.0232
+
+  dense, half 0.175:  own +0.0302   kernel -0.0261   source +0.0511
+     kernel + source = +0.0250   against own +0.0302   difference +0.0053 = 17.4% of own
+  dense, half 0.250:  own +0.0276   kernel -0.0317   source +0.0542
+     kernel + source = +0.0225   against own +0.0276   difference +0.0052 = 18.7% of own
+  dense, half 0.350:  own +0.0261   kernel -0.0286   source +0.0481
+     kernel + source = +0.0195   against own +0.0261   difference +0.0066 = 25.2% of own
+
+  ⛔ BOTH single-difference ratios have REVERSED SIGN between the two samplings.

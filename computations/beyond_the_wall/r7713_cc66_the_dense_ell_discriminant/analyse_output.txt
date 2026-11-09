@@ -1,0 +1,54 @@
+
+====================================================================================================
+  ⛭ `r7713+cc66` THE DENSE l DISCRIMINANT -- read in the registered order
+====================================================================================================
+
+  grid: lcdm|lcdm -> 693 l, cr|cr -> 697 l, cr|lcdm -> 693 l, lcdm|cr -> 697 l
+
+  ⛔ ⓵ THE DENSE CONTROL -- swapping the kernel on a FIXED source must move something
+       source lcdm : own kernel vs the other's -- median |move| 6.0234%, max 17.5167%
+       source cr   : own kernel vs the other's -- median |move| 6.3223%, max 20.9049%
+       ⇒ the kernel swap is LIVE on the dense grid
+
+  ⛔ ⓶ LOG-ADDITIVITY -- NOT an identity, and reported BEFORE the three verdicts
+       per-l residual over 693 l: median +0.006341, mean +0.003993, sd 0.010331, max|.| 0.022621
+       the residual's OWN step, by the same windows:
+         half     lo          hi          step        step/sd
+         0.175  -0.004210  +0.010660  +0.014870     2.90
+         0.250  -0.004197  +0.009633  +0.013830     3.20
+         0.350  -0.001593  +0.009199  +0.010792     2.88
+       ⇒ residual step 0.014870 is 49.2% of the own x own step 0.030228; worst significance 3.20 sd
+       ⇒ own x own is NOT resolved, so the partition's status is NOT ESTABLISHED rather
+         than well posed: there is no step here to partition.
+       ⇒ the partition is not refused by this test (threshold registered in this file's header: ≥2 sd AND ≥50% of the own x own step)
+
+  ⛭ ⓷ THE THREE RATIOS, by `r7711`'s slide unchanged
+       ratio                                   half     lo        hi       step     step/sd
+       own x own      (cr|cr)/(lcdm|lcdm)     0.175  +0.0400  +0.0702  +0.0302     2.12
+       own x own      (cr|cr)/(lcdm|lcdm)     0.250  +0.0426  +0.0702  +0.0276     3.04
+       own x own      (cr|cr)/(lcdm|lcdm)     0.350  +0.0437  +0.0698  +0.0261     3.51
+       kernel alone   (cr|lcdm)/(lcdm|lcdm)   0.175  +0.0841  +0.0580  -0.0261     0.66
+       kernel alone   (cr|lcdm)/(lcdm|lcdm)   0.250  +0.0864  +0.0547  -0.0317     1.27
+       kernel alone   (cr|lcdm)/(lcdm|lcdm)   0.350  +0.0815  +0.0529  -0.0286     1.47
+       source alone   (lcdm|cr)/(lcdm|lcdm)   0.175  -0.0410  +0.0100  +0.0511     1.57
+       source alone   (lcdm|cr)/(lcdm|lcdm)   0.250  -0.0400  +0.0142  +0.0542     2.07
+       source alone   (lcdm|cr)/(lcdm|lcdm)   0.350  -0.0331  +0.0150  +0.0481     1.92
+
+  ⚠ the three share the denominator `Pseudo(lcdm,lcdm)`, so their scatters are correlated:
+    consistent signs are NOT three confirmations and no significance is combined across them.
+
+  ⛔ THE AGREEMENT GATE across half-widths (`r7711`'s obstruction 1, as a gate)
+       own x own      (cr|cr)/(lcdm|lcdm)     AGREES -- same sign at every width, magnitudes within the registered factor
+       kernel alone   (cr|lcdm)/(lcdm|lcdm)   AGREES -- same sign at every width, magnitudes within the registered factor
+       source alone   (lcdm|cr)/(lcdm|lcdm)   AGREES -- same sign at every width, magnitudes within the registered factor
+
+  ⚠ GUARD: own x own reaches 3.51 sd at the widest registered window (half 0.350; registered target 5)
+    ⇒ the 1/sqrt(n) scaling behind the grid estimate was WRONG. That is a finding about
+      the estimate, not about the physics, and is reported as such.
+
+  ⛭ ⓸ THE VERDICT, against `PREDICTION.md`'s table and nothing else
+       ⇒ NEITHER ⒜ -- still unresolved, and now EXHAUSTED rather than under-sampled,
+         since every integer l in the band is in this reading.
+
+  wall 0.9 s
+====================================================================================================

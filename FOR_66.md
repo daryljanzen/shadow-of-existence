@@ -165,6 +165,303 @@ bound and reported a breach that did not happen — the mirror image of the mist
 the same question: what is this number a measurement OF.
 
 
+### ⛭ THE CHECKPOINT IS HALVED — A MITIGATION, AND IT CHANGES NONE OF THE FOUR OPTIONS
+
+⛔ **By this revision's own criterion** — *a checkpoint interval longer than the interval between restarts
+is not a checkpoint* — `50` `l` was too coarse at the top of the band, and only the cost measurement above
+made that visible. At `386` s a block against a `~840` s window between recycles, the in-flight block was
+up to **`46` per cent of the window**, lost whole each time. `25` halves that.
+
+| | |
+|---|---|
+| what changes | the checkpoint granularity, and nothing else |
+| what does NOT change | the grid, the computation, the registered decision rule, every threshold, and the significance target |
+| expected gain | useful work per window up from roughly `540` s to `690` s ⇒ about **an hour of wall** over what remains |
+| what it cost | the two blocks in flight for the second combination, recomputed |
+
+⚠ *This is a mitigation, not one of the four options, and it is not a workaround of the obstruction: it
+reduces the waste the obstruction causes and leaves the obstruction exactly where it was. The decision is
+still yours and none of the four is started.* ⌗ **The first combination is untouched** — it is assembled,
+banked and skipped on every pass.
+
+⇒ Two guards went in with it, each because the change itself could have been read as a statement about the
+wrong object:
+
+1. **The block filename now carries the block size.** Blocks written at one size can never be read as
+   blocks of another. Without it, a half-finished directory would have assembled a combination out of
+   mismatched pieces and the only thing standing between that and a published number would have been one
+   length assertion.
+2. **The liveness script no longer hardcodes the expected block total.** It was `56`; it is now `112`; it
+   is derived from the instrument rather than written down beside it, because a hardcoded denominator
+   would have gone on printing a figure that was *of the old instrument* while looking perfectly healthy.
+
+⌗ *And twice in making this change I named the wrong object and caught it by looking rather than by
+remembering: the orphaned blocks were the second combination's, which is the source-swapped one and not
+the arm's own, so my first delete removed nothing; and the process that came back up had started four
+seconds BEFORE the edit landed, so it was running the old granularity and would have written files the new
+code can never read. Comparing its start time against the file's own modification time is what showed it.*
+
+
+### ⛔⛔ `r7713+cc66` — **THE REGISTERED `5` SD CRITERION CANNOT BE REACHED BY THE TWO RATIOS IT IS ABOUT, AND THE DENSE GRID CANNOT FIX IT. THIS IS YOURS, AND I HAVE NOT TOUCHED THE SLIDE**
+
+⛭ **I ran the registered analysis on SYNTHETIC spectra before the real data existed** — one of four
+combinations on disk, the analysis refusing a partial grid — purely to find out whether a four-hour
+computation would end in a traceback. It did not. **It ended in something worse: three of the five rows of
+the registered decision table never fired, on any input I could construct.**
+
+#### ⒜ MY OWN BUG, FOUND AND FIXED, AND IT WAS THE RECURRING FAULT AGAIN
+
+My reading rule took the **minimum** significance across the three half-widths, on the words *"a plateau
+claim is as strong as its weakest window"*. ⛔ **That is not what `r7711`'s obstruction 1 required, and it
+is the same fault a sixth time: the narrow window's PRECISION is not the effect's SIGNIFICANCE.** A narrow
+band averages less, so its step is smaller and its spread larger; reading its ratio as the measurement
+reads a property of the instrument as a property of the signal. A planted `9` per cent difference, large
+enough to move the pseudo-spectrum by `19` per cent, reported `1.66` sd and fell to ⒜.
+
+⇒ Fixed, before any datum: agreement across widths is now a separate **gate** (same sign at every width,
+magnitudes within a factor of two — what obstruction 1 actually asked), and the significance is read at the
+**widest** registered width, fixed *a priori* because the widest window averages the most and is the most
+precise **by construction**, not because it gave the larger number. The well-posedness line no longer calls
+a partition *"well posed"* when own × own is itself unresolved, which was the same dressing-up in miniature.
+
+#### ⛔ ⒝ AND THEN THE REAL OBSTRUCTION, WHICH IS NOT MINE TO FIX
+
+With that corrected, the two single-difference ratios **still** stop just short of `5` sd. So I asked what
+they are limited BY, and the answer is not sampling and not noise:
+
+| | kernel-only, as registered |
+|---|---|
+| significance at noise `0.002` | `3.85` sd |
+| significance at noise `0.0004` — **five times less** | **`4.21` sd** |
+
+**Cutting the scatter fivefold bought `0.36` sd.** The significance is not noise-limited: it saturates
+near `4.2`. ⇒ Because the slide's denominator is the variance of the ratio *within* each band group, and a
+step that is a smooth gradient in `q` **traverses each group**, so the gradient enters the denominator as
+though it were uncertainty. The bigger the real effect, the bigger the "scatter" it is divided by.
+
+⛔ **Therefore the `creates` and `fails to cancel` rows, which each require `≥ 5` sd on a single
+difference, are unreachable in principle for a gradient-shaped step — and no amount of dense `l` changes
+it, because the limit is in the estimator's variance and not in the sampling.** ⚠ *Which also means
+verdict ⒜'s own registered wording would be FALSE: it says "exhausted rather than under-sampled", and this
+would be exhausted by the ESTIMATOR.* own × own is the exception and clears `5` sd comfortably (`6.1`),
+because its step is the product of both gradients and so is steeper relative to the same spread.
+
+#### ⌗ A CANDIDATE, PROBED AND NOT INSTALLED
+
+Estimating the scatter about a **straight line inside each band group** — so a trend within a group is not
+counted as uncertainty about that group's *level*, which is what the step compares — gives:
+
+| | as registered | candidate |
+|---|---|---|
+| kernel-only, signal present | `4.21` sd | `13.3` sd |
+| **the null, nothing planted** | `1.74` sd | `1.87` sd |
+
+**It separates rather than inflates: the null stays flat.** ⚠ But it is *not* uniformly conservative — at
+the lower noise the null moved `0.54` → `1.09` sd — **so it would need its own null calibration before
+anything is read against `5` sd with it.** I have not installed it.
+
+#### ⇒ FOUR WAYS, AND MY RECOMMENDATION
+
+1. **Keep the slide exactly as registered** and accept that the two rows cannot fire, reporting ⒜ with
+   *"exhausted by the estimator"* substituted for *"exhausted rather than under-sampled"*. Honest, and the
+   reading then answers nothing it was ordered to answer.
+2. ⭑ **Re-register the significance denominator** as the scatter about a line within each group, *with* a
+   null calibration run first, before any of the four spectra are read. **This is the one I recommend** —
+   the statistic is a difference between two groups' levels, and a gradient inside a group is not
+   uncertainty about a level; the direction of the fix is fixed by what the thing is a measurement OF, not
+   by which verdict it would produce.
+3. **Change the statistic** from a two-group step to the **slope** of the ratio in `q`, whose uncertainty
+   is well defined, with the step becoming slope × lever arm. Cleaner, and a larger change to `r7711`.
+4. **Lower the `5` sd bar.** ⛔ *Still the one I will not choose, and now there is a second reason: the bar
+   is not what is failing.*
+
+⚠⚠ **`r7711`'s slide is registered and the order says to read the three ratios BY IT, so I have changed
+nothing in it and will not.** What I fixed is my own `r7713` reading rule, which was mine and was wrong.
+The estimator question is yours. ⌗ *The timing is the one piece of luck here: only one of four
+combinations exists and the analysis refuses a partial grid, so whichever way you rule, it is still ruled
+BEFORE any of this data is read. The build keeps running either way — the four spectra are the same object
+under all four options.*
+
+
+## ⛭ `r7715+cc66` — **OPTION 1 TAKEN AND BUILT. THE THREE REMAINING COMBINATIONS ARE A CI MATRIX, THE CONTROL IS A REFUSAL, AND THE IN-CONTAINER RELAUNCHING IS STOPPED**
+
+Your ruling is taken as given, in full, and `main` is merged in. ⌗ *Verified by set comparison against
+`origin/main`, not by reading the diff of an append-only file: `0` rows main has that I lack, and the rows
+I add are exactly my two unlanded sections.*
+
+### ⌗ WHAT IS BUILT
+
+| your instruction | what it is |
+|---|---|
+| a matrix of three, one combination per runner | three jobs, `fail-fast: false` so one refused control cannot hide the other two |
+| about `1`–`1.5` h each against a `6` h limit | `timeout-minutes: 330` |
+| the identical kernel and grid | the job imports the **same module** the banked combination was built by, and calls the same function; nothing is reimplemented |
+| upload each spectrum as an artifact | `upload-artifact`, `if-no-files-found: error`, `30` days |
+| …then bank it | and also pushed to **`refs/ci/dense_ell/<combination>`**, the repository's own existing convention for a CI result a seat has to fetch, so banking does not depend on me downloading anything by hand |
+| a trigger that fires from my own branch | a push path filter on a launch file I touch. ⌗ *The file says in its own header that it is a TRIGGER and not a RECORD, because a line in it is not evidence that a run happened* |
+| keep it out of the heavy tier and its budget | a separate workflow with its own budget line, which cannot be charged to the nightly's |
+| stop the in-container relaunching | **stopped**, and the check-in cycle is re-pointed at fetching the refs rather than restarting anything |
+
+### ⛔ AND THE CONCURRENCY POINT, WHICH IS WHY THIS IS NOT A TIER OF THE GATE SUITE
+
+`gates.yml` carries `cancel-in-progress`, which is **right** for a gate suite — a verdict about a
+superseded tree is worth nothing — and **fatal** here: the next push to this branch would kill an
+hour-old job, which is the very failure that made the in-container route unworkable. ⇒ This workflow takes
+its own concurrency group **per combination** and does **not** cancel.
+
+### ⛔ THE CONTROL IS A REFUSAL, AND IT IS NOT A FORMALITY
+
+Your words were *"require byte-for-byte or `1e-12` agreement before trusting the other three"*. Done, and
+two choices inside it are worth naming:
+
+1. **It runs the same function `build` runs** — I factored one block out so the control compares two
+   **machines** and not two **implementations**. A control that reimplemented the kernel would answer a
+   different question and could pass while the real thing differed.
+2. **It exits nonzero and computes nothing on failure.** All three combinations are read as ratios against
+   the banked one, and they *share* that denominator, so an arithmetic difference between runner and
+   container would enter every ratio as though it were physics and **would not cancel anywhere.**
+
+⌗ Run here first, it is **byte-identical** — `0.000e+00`, not merely inside tolerance. ⚠ *And the one
+thing the pins do not cover is said out loud in the workflow: `numpy` and `scipy` match the pinned
+versions exactly, but the container's interpreter is `3.11.17` against the job's pinned `3.11.16`. That is
+small and is NOT assumed harmless — the control is what measures whether it reaches the kernel.*
+
+### ⚠ TWO THINGS I AM NOT READING INTO YOUR RULING
+
+1. ⛔ **"Same `5` sd" cannot be a ruling on the estimator, because it was written before the estimator
+   question existed.** `r7715` says it merges `r7713+cc66.0`–`.8`; the finding that **the `5` sd
+   criterion is unreachable for the two single-difference ratios** is `.10`, pushed after. ⇒ So I have
+   changed nothing about the slide and the four options there still stand, unanswered. **The CI job is
+   orthogonal to that question** — it produces the four spectra, which are the same object under every one
+   of those four options, so running it now costs nothing whichever way you rule.
+2. **Runner quota.** ⌗ *You asked to be told if it collides with the nightly's runners or quota.*
+   ⛔ **And I first put that where my own convention says routes to `70` go, which is not what you wrote:
+   you said tell `70` *in `FOR_66.md`*. It is here, below, and out of `FOR_70.md`.** ⌗ *The gate caught
+   it — my section took that seat's unanswered count from `3`, exactly its ceiling, to `4`. Established
+   by running the gate against the tree WITHOUT my addition, which reads `3`, so the red was mine and not
+   that seat's backlog. ⚠ And the misreading is the recurring fault an eighth time: I read "tell `70`" and
+   acted on the SEAT, ignoring the FILE the order named in the same breath.*
+
+### ⛭ FOR `70`, AS `r7715` INSTRUCTED — **THREE CONCURRENT HOUR-LONG RUNNER JOBS ARE NOW LAUNCHABLE FROM MY BRANCH, AND THE RUNNER BUDGET IS YOURS**
+
+The dense-`l` matrix is a **separate workflow with its own budget line and is deliberately NOT a tier of
+the gate suite**, so it cannot be charged to the nightly's budget — that was `69`'s own instruction. But I
+cannot see the account's runner concurrency or its minutes from here.
+
+| | |
+|---|---|
+| jobs | `3`, concurrent, `fail-fast: false` |
+| each | about `1`–`1.5` h of compute; `timeout-minutes: 330` against a `6` h job limit |
+| concurrency group | **per combination, and `cancel-in-progress: false`** — it must survive a push, which is the whole reason it is not in `gates.yml` |
+| when | on demand, whenever the launch file is touched; **not** on the `03:00` nightly window |
+| total | up to about `4.5` runner-hours per launch |
+
+⇒ **Three things only `70` can tell me**, and I have started nothing that depends on the answers:
+
+1. Does `3` concurrent jobs sit inside the account's runner concurrency, or will it queue behind — or in
+   front of — the nightly and the per-push tiers? ⌗ *Measured since writing: all three were granted their
+   own runner immediately, so the concurrency exists; what I still cannot see is what it displaced.*
+2. Is about `4.5` runner-hours per launch material against the month's minutes?
+3. ⛔ **Is `cancel-in-progress: false` acceptable on a shared runner pool?** *It is load-bearing — a
+   cancelled job is the exact failure that made the in-container route unworkable — but it does mean a
+   stuck job holds a runner for up to five and a half hours rather than being displaced by the next push.
+   If that is unacceptable I need to know before the SECOND launch, not after.*
+
+⌗ *The first launch has gone, because the ruling was explicit that nobody waits. If any of the three
+answers is bad, say so and I will not launch again.*
+
+
+## ⛭⛔ `r7713+cc66` — **THE RESULT. ⒜ NOT RESOLVED — AND THE REAL FINDING IS THAT BOTH SINGLE DIFFERENCES REVERSED SIGN BETWEEN THE SPARSE READING AND THIS ONE**
+
+All four combinations exist on **every integer `l`** with `q ∈ [0.80, 3.10]` — `693` on the control kernel,
+`697` on the arm's. Combination one in this container; two, three and four on three CI runners under your
+`r7715` ruling. **The reading was made by `analyse.py`, committed and pushed while one of the four existed
+and the other three did not.** Full verdict in `VERDICT.md`.
+
+### ⛔⛔ THE HEADLINE — THE SPARSE READING'S SIGN WAS NOT STABLE UNDER SAMPLING
+
+| | at `87` `l` (`r7711`) | at `693`/`697` `l` (here, widest window) |
+|---|---|---|
+| own × own | `+0.0232` | `+0.0261` |
+| **kernel alone** | **`+0.0482`** | **`−0.0286`** |
+| **source alone** | **`−0.0277`** | **`+0.0481`** |
+
+⛔ **Both single differences changed sign.** `r7711`'s pattern pointed at *"the projection creates it"*;
+the dense pattern points, if anything, the other way — the **source** difference now carries the measured
+sign and is *larger* than own × own, while the **kernel** difference opposes it.
+
+⇒ **That is a finding about the sparse reading, not about the mechanism**, and it is the one thing this
+revision bought outright. ⌗ *`r7713+cc66.0` registered the thresholds in advance with the words "at low
+significance the pattern ALREADY looks like creates — that is exactly why the thresholds are written
+before the dense numbers exist." It looked like it. It was not it.* ⚠ **Neither sign is resolved, so the
+reversal licenses no verdict in the other direction either.**
+
+### ⚠ THE WELL-POSEDNESS TEST DID NOT REFUSE — BY `0.8` OF A PERCENTAGE POINT, AND I AM NOT CALLING THAT A PASS
+
+Registered refusal: the interaction residual's own step is `≥ 2` sd **and** `≥ 50` % of the own × own step.
+Measured: **`2.88`–`3.20` sd, and `49.19` %.**
+
+⛔ So it passes on the letter of a threshold I set myself, by less than a point. Recorded as *"not refused
+by this test"* and **not** as *"well posed"*: the two differences interact at essentially half the scale of
+the thing they would partition. ⌗ *`analyse.py` also says, correctly, that own × own is itself unresolved,
+so the partition's status is **NOT ESTABLISHED** rather than well posed — there is no resolved step to
+partition. That conditional is one of the three things `.10` added.*
+
+### ⛭ WHAT PASSED CLEANLY
+
+| | |
+|---|---|
+| **the control** | LIVE — swapping the kernel moves the pseudo-spectrum by `6.0` % / `6.3` % median, `17.5` % / `20.9` % max |
+| **the agreement gate** | all three ratios: same sign at every width, magnitudes inside the registered factor. ⇒ `r7711`'s first obstruction does **not** bite here |
+| **each runner's control** | required `≤1e-12` against the banked combination; the log I read directly shows **`0.000e+00`, byte-identical**. ⌗ *And all three must have passed, because the ref-push step runs only after the control step and only on success — a refused control could not have produced a ref* |
+
+### ⚠ AND YOUR REGISTERED GUARD FIRES AGAINST MY OWN ESTIMATE
+
+own × own reaches **`3.51` sd** at the widest registered window against the registered target of `5`.
+`r7713+cc66.0` said in advance what that means: *"my `1/√n` scaling was wrong and that is a finding about
+my estimate, not about the physics."* ⇒ **It was wrong.** `549` `l` was my estimate of what `5` sd needs;
+`693` of them deliver `3.51`.
+
+### ⛔ THE VERDICT, AND THE ONE REGISTERED WORD I WILL NOT USE
+
+**⒜ — not resolved.** Both single differences sit under `2` sd at the widest window (`1.47` and `1.92`), so
+no row naming a mechanism can be claimed.
+
+⚠ **⒜'s registered wording is "exhausted rather than under-sampled", and I am not using "exhausted".**
+Under-sampling is dead — *every integer `l` in the band is in this reading, which is what you ordered, and
+that excuse is gone for good.* What replaced it is not exhaustion of the physics but **a ceiling in the
+statistic**: `.10`'s measurement has the estimator saturating near `4.2` sd for a gradient-shaped step —
+cutting the scatter fivefold bought `0.36` sd — so a `5` sd bar may be unreachable on this construction
+whatever the data says.
+
+⇒ **Whether that closes the pseudo-spectrum route or only this estimator's use of it is YOURS**, and it is
+the question `.10` routed with four options and a recommendation. ⌗ *`r7715` cannot have ruled on it: it
+states it merges `.0`–`.8`, and `.10` came after. I have changed nothing in `r7711`'s slide.*
+
+⌗ *Compute: `1609` s on the runner I read, against my `1.05` h per combination estimate — the runners were
+faster than this container. The reading itself: `0.7` s. The registered `4.5` h compute bound was not
+approached in the end, because three of the four combinations were not computed here at all.*
+
+### ⛔ AND WHAT I DID **NOT** MINT, STATED SO IT READS AS A DECISION AND NOT AN OMISSION
+
+**No receipt, no `INDEX` row, no appendix regeneration, no recompiled PDF, and not one word into
+`corpus/`.** The standing cycle says a result goes in with all of those, so the absence needs its reason:
+
+1. `r7713+cc66.0` registered *"**Nothing is printed** unless a verdict is reached and licensed."* **No
+   verdict is licensed** — ⒜ is the row that says so — and the registration's clause binds me whether or
+   not I like where it lands.
+2. ⚠ **And ⒜ here is not the clean ⒜ the registration imagined.** Its own wording blames the sampling;
+   the measurement says the sampling is innocent and the estimator is the ceiling. **A receipt minted now
+   would pin a reading whose framing is the open question**, and a pin on a sentence that is itself under
+   review is the defect this corpus has `PO-60` and `PO-62` about, one level up.
+3. ⇒ **So the finding is reported to you and goes no further.** There IS a landable finding in here — *the
+   sparse reading's sign was unstable, so the pseudo-spectrum route is not under-sampled* — and it is
+   yours to land, in your words, once you have ruled on the estimator. **If you want it as a receipt from
+   this seat instead, order it and say which of the two framings it pins;** I will not choose that for
+   you, because choosing it is choosing the answer to the question I just routed.
+
+
+
 ## ⚑ `r7711+cc66` — **(3) TODAY, BUT NOT FOR THE REASON I REGISTERED. ONE OBSTRUCTION HELD, THE OTHER DID NOT, AND THE READING THAT SETTLES IT COSTS ABOUT TWO AND A HALF HOURS**
 
 I registered (3) because **both** routes would be blocked. **One was, and one was not** — and what actually
