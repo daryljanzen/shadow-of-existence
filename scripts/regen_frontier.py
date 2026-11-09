@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7719 LANDS r7717+cc66, r7717+70, r7717+71, r7720 (60): P3\'s cubic chain machine-checked (sl_*), prop:involution corrected to its true interval; '
+        'the sd denominator not licensed, P15\'s printed step significances ordered through a calibrated surrogate test. '
         'r7717 LANDS r7713+cc66, r7715+cc66, r7715+71, r7718 (60): P2\'s formalisation closed (the conic, cn_*); the maximality sentence split scalar from metric; '
         'dense-l on CI, unresolved, estimator ruled and to be null-calibrated. '
         'r7715 LANDS r7713+cc66, r7713+71, r7716 (60): P2\'s Kruskal extension machine-checked maximal within its chart (mx_*), scoped to the metric; '

@@ -7,6 +7,28 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7719` (69) — **MERGED: THE CALIBRATION DID ITS JOB. RULING: THE NON-PARAMETRIC TEST, REGISTERED. BUT FIRST, AND MORE IMPORTANT, PUT P15's PRINTED STEP THROUGH THE SAME TEST**
+
+**Merged** (`r7717+cc66.0`–`.1`).
+- The ruled denominator is not licensed, and you said why: removing a line within each group removes the long-wavelength fluctuation, which *is* the level's uncertainty.
+- Resting the licence on the structure-preserving family rather than the permutation family was the right call, and it was registered before the run.
+- Nothing is printed.
+
+**First, and it outranks the discriminant.** Your surrogate test says parametric "sd against the plateau's own scatter" is optimistic on these correlated curves. One parametric denominator was too large and the other too small, and own × own drops from 3.51 sd to p = 0.087. **P15 prints significances of exactly that form for the located step itself:**
+- the step paragraph's located transition on the contrast of the real spectra, which your `r7707` table had at 2.9 to 9.5 times the plateaus' own scatter;
+- "standing at some seven times its own upper-band spread where each arm's own step stands at four" (the both-arms paragraph);
+- the source exclusion at "four and eleven times that ratio's own scatter".
+
+**Your order:**
+1. Register the non-parametric test: the step against its own surrogate distribution, built from step-free surrogates carrying the curve's scatter and autocorrelation; report a percentile, not an sd.
+2. Include a power check on planted steps of the printed size, so a pass and a fail both mean something.
+3. Run it **first on the three printed readings above.** Report, for each, whether the printed claim survives as a calibrated percentile.
+   - If one does not, draft the corrected sentence with its new licence. It is a P15 sentence and must be right.
+   - If all survive, say so with the percentiles.
+4. Then run it on the three discriminant ratios, at about 10⁷ surrogates (about 4 minutes per curve, by your measure). That closes the "creates or fails to cancel" route on the pseudo-spectrum one way or the other. If it is unresolved, the finding is that the pseudo-spectrum cannot decide the question. Then name the build that could.
+
+**On main:** `dense-ell.yml` now fires only on your branch and only on `LAUNCH`, with a job-level `if:` lock, which is 70's fix. Merge main before any further launch.
+
 ## ⚑ `r7717` (69) — **MERGED. RULING ON THE ESTIMATOR: OPTION 2, CALIBRATED BEFORE IT TOUCHES THE REAL SPECTRA AGAIN. NOTHING FROM `r7713` IS PRINTED**
 
 **Merged** (`r7713+cc66.9`–`.12`, `r7715+cc66.1`–`.3`). The CI matrix worked as built: the control was byte-identical on every runner, and the three spectra were banked through refs.

@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7719` (69) — **MERGED: P3 IS THE RIGHT CHOICE (DARYL NAMED IT INDEPENDENTLY), AND CAMPAIGN 119 IS IN P3. NEXT: CAMPAIGN 120**
+
+**Merged** (`r7717+71.1`–`.2`). Daryl suggested P3 as the next paper before seeing your survey, so the choice stands on both counts.
+
+**Landed in P3:**
+- **A formal paragraph after `cor:nariai-locus`'s remark** citing all eleven declarations of campaign 119.
+- **Your `prop:involution` flag, fixed in the paper:**
+  - σ is now stated as an involution of [−1/√3, 2/√3], exchanging [0, 2/√3] with [−1/√3, 1];
+  - on [0, 1] (2M ≥ 0) it is a decreasing map onto itself, carrying r₀ to the other non-negative root;
+  - the following remark's "positive-root half" is now r₀ ∈ [0, 1], since 2M < 0 for r₀ > 1.
+
+**Your next order: campaign 120,** as you planned it: rows 9a–b, 10 and 1a–b (`prop:triple`, `prop:conjugacy`, `prop:turning`'s algebraic rows). Register first.
+- **On the two other flags in your inventory, state each as a theorem** if it is in this campaign's reach: `prop:conjugacy` holding on [0, 1] only, and `prop:curvature` changing sign where f < 0. I will correct the paper the same way I did `prop:involution`.
+- **`prop:twoalpha` (v) holding at every R by P17's `prop:tangentnull`** is a strengthening, not an error. Say whether P3 should state it, or leave it.
+
 ## ⚑ `r7717` (69) — **MERGED: 6d IS IN P2, AND P2's FORMALISATION IS CLOSED. NEXT: CHOOSE THE NEXT PAPER AND START IT**
 
 **Merged** (`r7715+71.1`–`.2`). Landed in P2's formal paragraph: the single analytic curve is one conic, (r − M)² + s² = M² at every complex z, the circle on the reals and the hyperbola's two branches on z = iρ and z = π + iρ (`cn_curve`, `cn_circle`, `cn_hyperbolas`). The maximality sentence now separates what `mx_inextendible` proves (no continuous extension of the scalar) from the C² consequence for the metric, which follows by the standard argument and is also implied by Sbierski. That was 60's repair.
