@@ -15,6 +15,85 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔ `r7721+cc66` — **ITEM 1 MINTED, AND MINTING IT TURNED UP THREE DEFECTS: AN UNPINNED PRINTED CLAUSE, A SUPERSEDED LITERAL IN THE HOST RECEIPT, AND A FIGURE PRINTED TO FIVE TIMES THE PRECISION ITS OWN ERROR SUPPORTS**
+
+The receipt is minted, `7` gates green in `~10` s, failability established on six legs over a green
+control, `INDEX` row in, appendices regenerated, and all four tree-wide census receipts green — `C79`
+included, so `60`'s patch is not needed. Branch restarted from `main`; new PR to follow.
+
+### ⛭ WHAT IT PINS
+
+| | |
+|---|---|
+| ⓵ the located transition | `p` at the floor `10⁻⁶` at **all three** half-widths — **not one of a million step-free surrogates reaches the measured step** |
+| ⓷a the source ratio's own step | `p` `0.52`–`0.79` ⇒ nothing, on a calibrated footing instead of a parametric one |
+| ⓷b the printed clause | the ratio is **`3.88` / `6.60` / `12.39`** ⇒ over six at the two wider smoothings and **not** at the narrowest |
+| the licence for that restriction | power **`0.82`** at the narrowest against **`1.00`** at both wider ones |
+| ⛭ **the scope itself** | the `.tex` must still carry *both* the multiple and *"at the two wider smoothings"* — **widen the sentence back and the receipt reds** |
+
+⇒ **The clause you asked to be able to print for ⓵ is drafted in `DRAFTS.md`.** ⌗ *And it stays optional
+by your own reasoning: the sentence makes no numerical significance claim, so the receipt now carries the
+licence whether or not the clause lands.*
+
+### ⛔ DEFECT ⒜ — **THE PRINTED CLAUSE WAS NOT PINNED BY ANYTHING**
+
+The host receipt's gate asserts the ratio exceeds **`3.5` at EVERY smoothing**. The sentence now claims
+**over six at two of them**. ⇒ **Neither the six nor the restriction was checked anywhere**, so the
+narrowed sentence had no gate behind it. That is now this receipt's job, and the host receipt carries a
+pointer saying so.
+
+### ⛔ DEFECT ⒝ — **THE HOST RECEIPT'S OWN TEXT WAS ON SUPERSEDED NUMBERS**
+
+Its description read *"`3.8` to `11.8` sd"*; it computes **`3.88`, `6.60`, `12.39`**. ⇒ Corrected, with
+the reason beside it. ⌗ *This is precisely the defect that receipt's own docstring records at
+`r7673+cc66.4` — "a docstring left on namesake numbers is a receipt whose own text disagrees with its
+computation, and nothing in the gates would have caught it" — recurring in the same file.* ⚠ **And it
+matters here: your ruling cites "the host receipt's own `6.6` and `11.8`". The `6.6` is right; the `11.8`
+is now `12.4`. The sentence is unaffected — both exceed six — but the figure you were handed was stale.**
+
+### ⛔⛔ DEFECT ⒞ — **`0.814` ASSERTED FIVE TIMES THE PRECISION IT HAD**
+
+At the `2000` trials `r7719` used, a power near `0.82` carries a Monte-Carlo error of **`0.0086`**. ⇒
+Printing it as **`0.814`** claims `±0.0005`, which is **`17`×** finer than the measurement — two runs
+with different seeds would disagree in the last two digits for no physical reason. *My own re-run at a
+different seed gave `0.819`: a `0.005` difference, inside that error, which is the demonstration rather
+than a discrepancy.*
+
+⇒ **Fixed by raising the measurement, not by weakening the claim:** `50000` trials brings the error to
+`0.0017`, and the figure is printed to two decimals — `0.82` — because that is what it supports.
+
+### ⛭ AND THE FIGURE-PIN GATE CAUGHT ME TWICE, BOTH TIMES RIGHTLY
+
+`check_figures_pinned` named **seven** figures my `INDEX` row prints that the receipt did not pin, and
+went **red** (`1485` against a baseline of `1478`). It was right on a point I had not internalised:
+**computing a number and asserting an inequality about it does not pin the literal a row prints, and a
+one-sided bound never pins at all** — which is what every other gate here asserts. Then:
+
+1. my first pinning gate put the literals in a **table** and compared through variables; the checker
+   parses the receipt's **source** for a two-sided comparison against the literal, so a literal hidden
+   in a data structure is not a pin either;
+2. and my second went red on `0.524` against a printed `0.52` — **a correctly rounded, correctly printed
+   figure failing a tolerance I had invented.** ⇒ *The tolerance IS the allowance, half a unit in the
+   last printed digit, and not something tighter chosen by feel. A bound narrower than the printed
+   precision tests the bound.*
+
+⇒ **Both fixed; the gate is back to baseline with none of mine outstanding.** ⌗ *I also pinned a figure
+the row does not print, and the gate caught that too — the row prints the range `0.52`–`0.79`, not the
+middle value. Pin what is printed, and nothing else.*
+
+### ⚠ AND ONE MORE, IN MY OWN FAILABILITY HARNESS — THE RECURRING FAULT, A TENTH TIME
+
+Its first run reported *"THE NAMED GATE DID NOT GO RED"* **while that very gate was the first entry in
+the red list it had just printed.** The cause was the **matcher**, not the gate: the gate's name is
+upper-case and the string sought was lower-case. ⇒ *A statement about the matcher's miss read as a
+statement about the gate's soundness — and this time it would have made me distrust a gate that works.
+Case-folded now, and every red is printed beside the verdict so the two can be checked against each
+other.*
+
+⌗ *Item 2 — registering the `(ℓ, k)` separability measurement — goes up next in its own commit, before
+any of it is computed.*
+
+
 ## ⛭⛔ `r7719+cc66` — **ONE PRINTED READING SURVIVES DECISIVELY, ONE IS TOO STRONG AT ONE SMOOTHING, AND ONE CANNOT BE TESTED BY THIS TEST AT ALL. ITEM 4 IS NEXT**
 
 Registration pushed alone before any computation (`r7719+cc66.0`), with the ceiling arithmetic in it.
