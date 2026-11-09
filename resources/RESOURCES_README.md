@@ -76,6 +76,7 @@ spin-up read**.
 |---|---|
 | `PhD_thesis/` — **15 figure files** (`fund_ellipse.png`, `dS-SdS.png`, `SdS_Veff.png`, `over-critSdS_Null.png`, `max_symm_space_graphed.png`, the Lorentz-sphere and de Sitter series) | the 2012 thesis's diagrams |
 | `P4_reframed/` — `modern_parallax_reframed.tex` (AASTeX) and `modern_parallax_prd.tex` (REVTeX, for Physical Review D), with PDFs | the standalone form of P4 for journal submission, organised around the question whether matter density sets the rate of cosmic expansion; the corpus P4 follows its order and keeps its own content |
+| `P2_standalone/` — `schwarzschild_circle_cqg.tex` (IOP template, for Classical and Quantum Gravity) with PDF, cover letter and figure | the standalone form of P2, self-contained: the companion-paper claim that the horizon is a metric singularity is removed, so it cites no other paper of the corpus; the corpus P2 keeps that claim |
 
 ## Referenced by live documents, and ABSENT
 *Each of these is linked from a document that is worked from. Until they are here, those links do not resolve.*
