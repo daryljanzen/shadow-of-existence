@@ -1,0 +1,15 @@
+r7726 (60) -- the tree these readings were taken on
+
+origin/main at the read: f2c035efcc266a2b241857aa405e1e002f98480d
+  r7723 (69) -- four seats merged; P3: hinge equivalences and signature flip machine-checked (sl_twoalpha, sl_ta
+HEAD at the read:        1b327a530364e80b386f9baf730ca6ad99b10d98
+PREDICTION registered:   1b327a530364e80b386f9baf730ca6ad99b10d98
+
+files read, by digest:
+  73dfa91dd6b283b6  corpus/SdS-slicing-curve_v2.tex
+  a0543e96eca99320  corpus/CR_cosmology.tex
+  425a57233209c5db  computations/formalisation/lean/probes/SlicingSky.lean
+  fd6a70522a59d1bf  computations/formalisation/lean/probes/SlicingHinge.lean
+
+the order answered: r7723, topmost section of origin/main:FOR_60.md
+arms: 40; findings: 4; probe exit 0
