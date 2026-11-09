@@ -260,11 +260,30 @@ and the 1D comparison values `−0.9200 / 5.03 / 6.51x` are unchanged. ⚠ *An a
 numerical obstruction is legitimate; an amendment that also moved the line the verdict is read against
 would not be, and would be indistinguishable from choosing the verdict. The line is where it was.*
 
-## The price, re-measured rather than re-estimated
+## ⛔ The price — and a CORRECTION to the correction, which is the same fault a fourth time
 
-§5 estimated ~2.1 CPU-hours. **Measured: `1.51` s per `l` on `K*`** ⇒ the two kernel arrays over 692 shared
-`l` come to **≈ 35 min in one process**, inside this container's recycle interval only because the blocks
-are checkpointed. ⇒ The registered price was **conservative by about three and a half times.**
+This section first read: *"§5 estimated ~2.1 CPU-hours. Measured: `1.51` s per `l` on `K*` ⇒ ≈ 35 min in
+one process. ⇒ The registered price was conservative by about three and a half times."* **That was wrong,
+and the original estimate was the better number.**
+
+`1.51` s per `l` was measured on **block 0 — the BOTTOM of the `l` window** — and extrapolated flat. The
+per-`l` cost **rises with Bessel order**, which `dense.py`'s own header already records in the file this
+measurement imports (`152` s per 50 `l` near the bottom against `386` s near the top). Measured here, in
+flight:
+
+| | block 2 | block 8 | block 15 | block 21 | block 23 |
+|---|---|---|---|---|---|
+| s per `l` | **1.64** | 2.44 | 3.48 | 3.72 | **4.08** |
+
+⇒ **`2.93` s per `l` averaged over the first 550 `l`, and still climbing** ⇒ the two kernel arrays project
+to **≈ 72 min in one process, about `1.2` CPU-hours** — twice my "correction" and still inside the
+registered `2.1`.
+
+⚠ **This is the recurring fault a FOURTH time in this revision**: a measurement of one object (the cost at
+the bottom of the window) reported as a statement about another (the cost over the window) — with the
+contradicting fact sitting in the header of the very module this file imports. ⌗ *And note which direction
+it ran: I did not fail to estimate, I "corrected" a conservative estimate into a wrong one. A correction is
+a claim and takes the same check as the thing it corrects.*
 
 ---
 
