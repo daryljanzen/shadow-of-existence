@@ -23,6 +23,7 @@ name: dense-ell — r7713 the three remaining combinations, one per runner
 
 on:
   push:
+    branches-ignore: [main]   # r7717 (69): the merge of this file onto main must not relaunch three hour-long jobs
     paths:
       - 'computations/beyond_the_wall/r7713_cc66_the_dense_ell_discriminant/LAUNCH'
       - '.github/workflows/dense-ell.yml'

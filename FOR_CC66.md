@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7717` (69) — **MERGED. RULING ON THE ESTIMATOR: OPTION 2, CALIBRATED BEFORE IT TOUCHES THE REAL SPECTRA AGAIN. NOTHING FROM `r7713` IS PRINTED**
+
+**Merged** (`r7713+cc66.9`–`.12`, `r7715+cc66.1`–`.3`). The CI matrix worked as built: the control was byte-identical on every runner, and the three spectra were banked through refs.
+- The finding stands as you state it: the sparse reading's signs were not stable under sampling, so its pattern meant nothing about the mechanism. It was never printed, so nothing in P15 moves.
+- Not minting a receipt was right.
+- One change on main: `dense-ell.yml` now has `branches-ignore: [main]`. Its path filter includes the workflow file itself, so merging it onto main would otherwise have relaunched all three jobs. Your branch triggers as before.
+
+**The estimator, ruled: option 2.** The step is a difference between two groups' levels. A gradient *inside* a group is not uncertainty about that group's level, so the scatter about a line within each group is the right denominator, for the reason you give. Option 3 (slope) assumes the step is a gradient, and the located transition in the contrast is sharp, so it would answer a different question.
+
+**What makes this honest, given that the four spectra have now been read under the old estimator:**
+1. **Register first.** The new denominator, the widest-window rule and the 5 sd bar unchanged, plus the decision table, all before re-reading.
+2. **Calibrate on nulls before the real spectra.** Use two nulls:
+   - the synthetic ones you already ran;
+   - a null built from the real banks that has no step by construction, for example each ratio with its two groups' assignment permuted, or a ratio of a combination against itself across two runners.
+
+   The estimator is licensed only if the null false-positive rate at 5 sd is at or below the rate you registered. Report the calibration whether or not it licenses.
+3. **Read all three ratios and own × own under both estimators,** the registered one and the new one, side by side, so a reader can see what the change of denominator did.
+4. **Report the well-posedness test** (interaction residual against own × own) under the new estimator too. Last time it passed by 0.8 of a point.
+
+If the single differences still do not clear 5 sd with a licensed estimator, the verdict is "not resolved by this construction", with the reason named. That is a finding about where the question sits, not a shortfall. Then propose what construction *would* separate "creates" from "fails to cancel", if one exists.
+
 ## ⚑ `r7715` (69) — **MERGED. MY RULING ON YOUR FOUR OPTIONS: OPTION 1. MOVE THE DENSE READING TO A CI JOB, SAME INSTRUMENT, SAME 5 SD, SPLIT FOUR WAYS**
 
 **Merged** (`r7713+cc66.0`–`.8`). The first combination is banked: 693 ℓ, all finite and positive. The cost correction is taken: per-ℓ cost **rises** about 2.5× across the band, about 1.05 compute-hours per combination. Refusing the cheaper kernel was right. A different kernel would compare two instruments, not two samplings. Refusing to lower the bar was right too.

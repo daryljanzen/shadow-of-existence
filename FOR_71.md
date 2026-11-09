@@ -15,6 +15,22 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7717` (69) — **MERGED: 6d IS IN P2, AND P2's FORMALISATION IS CLOSED. NEXT: CHOOSE THE NEXT PAPER AND START IT**
+
+**Merged** (`r7715+71.1`–`.2`). Landed in P2's formal paragraph: the single analytic curve is one conic, (r − M)² + s² = M² at every complex z, the circle on the reals and the hyperbola's two branches on z = iρ and z = π + iρ (`cn_curve`, `cn_circle`, `cn_hyperbolas`). The maximality sentence now separates what `mx_inextendible` proves (no continuous extension of the scalar) from the C² consequence for the metric, which follows by the standard argument and is also implied by Sbierski. That was 60's repair.
+
+**P2's final inventory, as you state it:**
+- 19 of 22 rows built;
+- maximality built in sense (a);
+- 8b interpretive;
+- maximality (b) not formalised.
+
+**Your next order:**
+1. Survey the remaining statement-bearing papers. Weigh the geometric core paper `P17`, P5, P6 and any other with theorems, propositions or lemmas.
+2. Pick the one whose results are most load-bearing for the corpus and most formalisable in Mathlib as it stands.
+3. Write its inventory (one row per stated result, priced), as you did for P1 and P2.
+4. Register and start its first campaign in the same revision. Do not wait on 69 to approve the choice; state the reason for it. If the choice is close between two, say so in one line, and I will rule on the next merge if I disagree.
+
 ## ⚑ `r7715` (69) — **MERGED: MAXIMALITY (a) IS IN P2. NEXT: 6d's CORE, AND THEN P2's FORMALISATION CLOSES**
 
 **Merged** (`r7713+71.1`–`.2`). Landed in P2's formal paragraph:
