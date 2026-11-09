@@ -15,6 +15,204 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭ `r7721+cc66.2` — **ITEM 2 MEASURED: UN-COLLAPSING THE `k`-SUM REMOVES THE DEGENERACY ENTIRELY — `10.63×` VARIANCE INFLATION BECOMES `1.00×` — AND THE SAME STATISTIC STILL SEES THE DEGENERACY ON THE COLLAPSED OBJECT, SO IT IS NOT AN ARTEFACT**
+
+Registered in its own commit before a line of it existed, then measured. **`10` of `10` gates, `0`
+failures.** Full verdict and every control in `VERDICT.md`.
+
+### ⛭ THE RESULT, WITH ITS OWN BASELINE BESIDE IT
+
+| the SAME statistic on the SAME four banked spectra | corr | VIF |
+|---|---|---|
+| **COLLAPSED** — the route you closed at `r7719` | **`−0.9518`** | **`10.63×`** |
+| **UN-COLLAPSED**, same integer `ℓ`, no interpolation | **`+0.0031`** | **`1.00×`** |
+| **UN-COLLAPSED**, common `q`, interpolated | `−0.0008` | `1.00×` |
+| registered threshold, fixed before any number existed | `≤ 0.70` | `≤ 2.0` |
+
+⇒ **Not dented — gone.** And both `ℓ` readings agree, which was the registered condition for a verdict to
+exist at all. ⌗ *The `−0.9200` you have been reading was measured on the REAL spectra; these are the
+pseudo-spectra, **a different object**. So the comparison was replaced by a same-object baseline: the same
+statistic, fed the collapsed version of these same four spectra, still returns `−0.9518`. **Un-collapsing is
+what removed it.***
+
+### ⚠ BUT THE SEPARATING STRUCTURE IS **NOT LOW-RANK**, AND THAT IS THE PRACTICAL COST
+
+`90 %` of it is spread over **`142` modes** (`f_sep` `0.8595`; leading component only `0.63` of the
+residual). ⇒ **There is no single clean summary statistic to measure.** A fit that exploits this needs
+essentially the whole plane.
+
+⇒ ⛔ **AND THE REGISTERED LIMIT STANDS, UNSOFTENED:** this is a **conditioning** result, never a
+**detectability** one — the per-`(ℓ,k)` noise model is absent from this instrument. Licensed: *"the
+degeneracy is broken in the `(ℓ,k)` plane."* **Not** licensed: *"the two swaps can be told apart in the
+data."*
+
+### ⛔⛔ AND THE RECORD IS NOT FLATTERING — **FOUR AMENDMENTS, AND A GATE REFUSED A RUN THAT HAD ALREADY PRINTED THIS VERDICT**
+
+An earlier run printed **this same verdict as a clean PASS** — off an integrand with **`94 %` of its
+low-`ℓ` support deleted.** The registered grid control caught it; my script had the refusal **in prose and
+never enforced in code**, so it computed the verdict anyway. ⇒ *A refusal that does not halt the script is
+a comment.* **That verdict was void and is not what is reported here.**
+
+Five instances of the recurring fault in one revision, every one the same shape:
+
+| | read as |
+|---|---|
+| at registration | the continuum's pointwise rescaling → the banked grid's |
+| amendment 1 | representability → contribution |
+| amendment 2 | an unweighted plane → the object carrying the integral |
+| amendment 3 | the dead prefix at the top of the window → the prefix at every `ℓ` |
+| the price | the cost at the bottom of the window → the cost over it |
+
+⌗ *Three were caught before a statistic existed. One was caught by a gate — the first time this revision.
+And the price one was a confident **correction** of a conservative estimate into a wrong one: **a correction
+is a claim and takes the same check as the thing it corrects.*** ⚠ **Declared: amendment 4's control was
+added after I had seen the verdict, and amendment 3 after I had seen a number. The threshold was fixed
+before any computation and is untouched in all four, so nothing I saw could move the line — but the
+ordering protection is partly spent and this should be weighted accordingly.**
+
+⇒ **Priced as asked: `≈ 1.2` CPU-hours, inside the registered `2.1`**, with no extra Bessel evaluations —
+the plane is already formed inside the existing per-`ℓ` loop and destroyed by the collapse on the next
+line. ⌗ *No receipt is minted and no printed clause changes: nothing in the corpus rests on this yet. **It
+is yours to rule on whether it should.***
+
+
+## ⛭⛔ `r7721+cc66` — **ITEM 1 MINTED, AND MINTING IT TURNED UP THREE DEFECTS: AN UNPINNED PRINTED CLAUSE, A SUPERSEDED LITERAL IN THE HOST RECEIPT, AND A FIGURE PRINTED TO FIVE TIMES THE PRECISION ITS OWN ERROR SUPPORTS**
+
+The receipt is minted, `7` gates green in `~10` s, failability established on six legs over a green
+control, `INDEX` row in, appendices regenerated, and all four tree-wide census receipts green — `C79`
+included, so `60`'s patch is not needed. Branch restarted from `main`; new PR to follow.
+
+### ⛭ WHAT IT PINS
+
+| | |
+|---|---|
+| ⓵ the located transition | `p` at the floor `10⁻⁶` at **all three** half-widths — **not one of a million step-free surrogates reaches the measured step** |
+| ⓷a the source ratio's own step | `p` `0.52`–`0.79` ⇒ nothing, on a calibrated footing instead of a parametric one |
+| ⓷b the printed clause | the ratio is **`3.88` / `6.60` / `12.39`** ⇒ over six at the two wider smoothings and **not** at the narrowest |
+| the licence for that restriction | power **`0.82`** at the narrowest against **`1.00`** at both wider ones |
+| ⛭ **the scope itself** | the `.tex` must still carry *both* the multiple and *"at the two wider smoothings"* — **widen the sentence back and the receipt reds** |
+
+⇒ **The clause you asked to be able to print for ⓵ is drafted in `DRAFTS.md`.** ⌗ *And it stays optional
+by your own reasoning: the sentence makes no numerical significance claim, so the receipt now carries the
+licence whether or not the clause lands.*
+
+### ⛔ DEFECT ⒜ — **THE PRINTED CLAUSE WAS NOT PINNED BY ANYTHING**
+
+The host receipt's gate asserts the ratio exceeds **`3.5` at EVERY smoothing**. The sentence now claims
+**over six at two of them**. ⇒ **Neither the six nor the restriction was checked anywhere**, so the
+narrowed sentence had no gate behind it. That is now this receipt's job, and the host receipt carries a
+pointer saying so.
+
+### ⛔ DEFECT ⒝ — **THE HOST RECEIPT'S OWN TEXT WAS ON SUPERSEDED NUMBERS**
+
+Its description read *"`3.8` to `11.8` sd"*; it computes **`3.88`, `6.60`, `12.39`**. ⇒ Corrected, with
+the reason beside it. ⌗ *This is precisely the defect that receipt's own docstring records at
+`r7673+cc66.4` — "a docstring left on namesake numbers is a receipt whose own text disagrees with its
+computation, and nothing in the gates would have caught it" — recurring in the same file.* ⚠ **And it
+matters here: your ruling cites "the host receipt's own `6.6` and `11.8`". The `6.6` is right; the `11.8`
+is now `12.4`. The sentence is unaffected — both exceed six — but the figure you were handed was stale.**
+
+### ⛔⛔ DEFECT ⒞ — **`0.814` ASSERTED FIVE TIMES THE PRECISION IT HAD**
+
+At the `2000` trials `r7719` used, a power near `0.82` carries a Monte-Carlo error of **`0.0086`**. ⇒
+Printing it as **`0.814`** claims `±0.0005`, which is **`17`×** finer than the measurement — two runs
+with different seeds would disagree in the last two digits for no physical reason. *My own re-run at a
+different seed gave `0.819`: a `0.005` difference, inside that error, which is the demonstration rather
+than a discrepancy.*
+
+⇒ **Fixed by raising the measurement, not by weakening the claim:** `50000` trials brings the error to
+`0.0017`, and the figure is printed to two decimals — `0.82` — because that is what it supports.
+
+### ⛭ AND THE FIGURE-PIN GATE CAUGHT ME TWICE, BOTH TIMES RIGHTLY
+
+`check_figures_pinned` named **seven** figures my `INDEX` row prints that the receipt did not pin, and
+went **red** (`1485` against a baseline of `1478`). It was right on a point I had not internalised:
+**computing a number and asserting an inequality about it does not pin the literal a row prints, and a
+one-sided bound never pins at all** — which is what every other gate here asserts. Then:
+
+1. my first pinning gate put the literals in a **table** and compared through variables; the checker
+   parses the receipt's **source** for a two-sided comparison against the literal, so a literal hidden
+   in a data structure is not a pin either;
+2. and my second went red on `0.524` against a printed `0.52` — **a correctly rounded, correctly printed
+   figure failing a tolerance I had invented.** ⇒ *The tolerance IS the allowance, half a unit in the
+   last printed digit, and not something tighter chosen by feel. A bound narrower than the printed
+   precision tests the bound.*
+
+⇒ **Both fixed; the gate is back to baseline with none of mine outstanding.** ⌗ *I also pinned a figure
+the row does not print, and the gate caught that too — the row prints the range `0.52`–`0.79`, not the
+middle value. Pin what is printed, and nothing else.*
+
+### ⚠ AND ONE MORE, IN MY OWN FAILABILITY HARNESS — THE RECURRING FAULT, A TENTH TIME
+
+Its first run reported *"THE NAMED GATE DID NOT GO RED"* **while that very gate was the first entry in
+the red list it had just printed.** The cause was the **matcher**, not the gate: the gate's name is
+upper-case and the string sought was lower-case. ⇒ *A statement about the matcher's miss read as a
+statement about the gate's soundness — and this time it would have made me distrust a gate that works.
+Case-folded now, and every red is printed beside the verdict so the two can be checked against each
+other.*
+
+### ⛔ DEFECT ⒟ — **THE REGENERATED APPENDIX OWED A PDF, AND THE GATE'S NAME NEARLY TALKED ME OUT OF THE RED**
+
+The full local batch came back **`132` of `133`, one red** — and that gate's name is **on the standing list
+of reds that are red here and green in CI because this clone is shallow.** ⇒ Reading the list and stopping
+there would have dismissed it.
+
+**It was mine.** The assertion's own text names a generated input changed at **this branch's own item-1
+commit** against a paper whose PDF was last built long before — nothing to do with clone depth, and true
+in CI too. ⇒ Rebuilt, `336` pages, gate green, committed with the regeneration it was owed by.
+
+⚠ *So the recurring fault once more, in prospect: **a gate's NAME is not a gate's CLAIM**, and a red
+classified by its name is a statement about one object read as a statement about another. The standing
+rule — read the failing assertion against the diff **before** any "not mine" — is the whole reason this
+did not go out stale.*
+
+### ⛔⛔ ITEM 2 IS REGISTERED — AND REGISTERING IT SHOWED **THE PREMISE I NAMED IS FALSE ON THE INSTRUMENT**
+
+The registration is up in its own commit, pushed, with **not a line of the computation in existence.**
+And that is what caught it. The sentence — *"the source swap is a rescaling along `k` at every `ℓ`"* — is
+true of the **continuum** integrand, where `S²(k)` multiplies pointwise. It is **not true of the banked
+discretisation**:
+
+| | `lcdm` source | `cr` source |
+|---|---|---|
+| `k` nodes | **`2547`** | **`1452`** |
+| range | differs at **both** ends | |
+
+⇒ **The source swap also moves the quadrature nodes**, and the sentence is silent about that. ⌗ *A
+statement about one object read as a statement about another — the **eleventh** instance, and the **first
+caught at registration time** rather than after a computation ran. The other ten were caught after. One
+only by a gate.*
+
+### ⛭ SO THE MEASUREMENT IS DEFINED DIFFERENTLY THAN I WOULD HAVE WRITTEN IT YESTERDAY
+
+| | |
+|---|---|
+| common `k` grid | the **coarser** arm's own nodes inside the overlap — **no arm is interpolated up**, because inventing nodes in the direction the statistic reads is how a separation gets manufactured |
+| the kernel at those nodes | **recomputed**, never interpolated — it is the object being measured |
+| the grid change itself | **controlled, not assumed harmless**: the collapse on the common grid must reproduce the banked spectrum to `10⁻³` at every `ℓ`, or nothing downstream computes |
+| the common `ℓ` reading | **both** forms registered as equals — the shared integer range with **no** interpolation, and the common-`q` reading whose interpolation can only **flatter** the answer |
+| ⛭ if the two readings disagree | **the disagreement IS the verdict** — reading the kinder one is not available |
+
+### ⛔ AND THE THRESHOLD IS FIXED NOW, BEFORE THE NUMBER EXISTS
+
+> **The build resolves what the collapse could not if and only if, under both readings,
+> `|correlation| ≤ 0.70` AND `VIF ≤ 2.0`** — against the collapsed route's **`−0.9200`** and **`6.51×`**.
+
+⌗ *The two halves are the same statement: at `0.70` the VIF is `1.96`. So the demand is that the
+degeneracy be **broken, not dented**, and anything above the line is registered in advance as **not
+resolution** — however suggestive the separation fraction looks when I see it.*
+
+⇒ **Priced: no extra Bessel evaluations at all** — the two-dimensional array is *already formed* inside the
+existing per-`ℓ` loop and destroyed by the collapse on the very next line. Two kernel arrays, not four
+combinations. **≈ 2.1 CPU-hours** in the matrix already standing, **`16.12` MB**, not committed,
+regeneration scripted and checkpointed per block.
+
+⚠ **And registered so it cannot be blurred later: good conditioning is NECESSARY, NOT SUFFICIENT.** Item 2
+returns a **conditioning** result and never a **detectability** one, because the per-`(ℓ,k)` noise model a
+detectability claim needs **does not exist on this instrument**. ⇒ *A pass licenses "the degeneracy is
+broken in the `(ℓ,k)` plane" and does **not** license "the two swaps can be told apart in the data."*
+
+
 ## ⛭⛔ `r7719+cc66` — **ONE PRINTED READING SURVIVES DECISIVELY, ONE IS TOO STRONG AT ONE SMOOTHING, AND ONE CANNOT BE TESTED BY THIS TEST AT ALL. ITEM 4 IS NEXT**
 
 Registration pushed alone before any computation (`r7719+cc66.0`), with the ceiling arithmetic in it.

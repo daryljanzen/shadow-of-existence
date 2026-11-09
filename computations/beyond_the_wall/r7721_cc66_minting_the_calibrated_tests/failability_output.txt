@@ -1,0 +1,42 @@
+
+  ⛭ GREEN CONTROL FIRST -- the unperturbed receipt must be clean, or no leg means anything
+       unperturbed: 7 PASS, 0 FAIL  ⇒ CONTROL GOOD
+
+  ⛔ LEG A  the located step SHRUNK to a tenth -- pushes it INTO the surrogate spread, so the 'beyond every one of a million' gate must lose it
+       1 PASS, 6 FAIL
+         red: ⛭⛔ `r7721` ** ⓵ THE LOCATED TRANSITION IS BEYOND EVERY ONE OF A MILLION STEP-FREE SURROGATES, AT ALL THREE HAL
+         red: ⛭ `r7721` ** AND THE NULL IS NOT DEGENERATE: the surrogates' own step scatter is a real fraction of the measur
+         red: ⛭⛔ `r7721` ** ⓷a AND THE SOURCE RATIO'S OWN STEP IS NOTHING ON THE SAME FOOTING: `p` from `0.5` to `0.8` ** ⇒ 
+         red: ⛭⛔ `r7721` ** ⓷b THE PRINTED "MORE THAN SIX TIMES" HOLDS AT THE TWO WIDER SMOOTHINGS AND NOT AT THE NARROWEST 
+         red: ⛭⛔ `r7721` ** AND THE POWER IS WHAT LICENSES THAT RESTRICTION: at least `0.95` at the two wider smoothings and
+         red: ⛭⛔ `r7721` ** AND EVERY FIGURE THE INDEX ROW PRINTS IS PINNED HERE BY A TWO-SIDED COMPARISON AGAINST ITS LITER
+       ⇒ ✓ the named gate went red
+
+  ⛔ LEG B  the SOURCE ratio's own curve given a large real step -- pushes its `p` DOWN out of the 0.40-0.90 window the gate requires
+       4 PASS, 3 FAIL
+         red: ⛭⛔ `r7721` ** ⓷a AND THE SOURCE RATIO'S OWN STEP IS NOTHING ON THE SAME FOOTING: `p` from `0.5` to `0.8` ** ⇒ 
+         red: ⛭⛔ `r7721` ** AND THE POWER IS WHAT LICENSES THAT RESTRICTION: at least `0.95` at the two wider smoothings and
+         red: ⛭⛔ `r7721` ** AND EVERY FIGURE THE INDEX ROW PRINTS IS PINNED HERE BY A TWO-SIDED COMPARISON AGAINST ITS LITER
+       ⇒ ✓ the named gate went red
+
+  ⛔ LEG C  the printed multiple's bar LOWERED to 3 -- makes the NARROWEST smoothing clear it too, so the gate's 'and NOT at the narrowest' arm must break
+       6 PASS, 1 FAIL
+         red: ⛭⛔ `r7721` ** ⓷b THE PRINTED "MORE THAN SIX TIMES" HOLDS AT THE TWO WIDER SMOOTHINGS AND NOT AT THE NARROWEST 
+       ⇒ ✓ the named gate went red
+
+  ⛔ LEG D  the power requirement LOWERED to 0.5 -- makes the narrowest clear it, so the gate's 'BELOW it at the narrowest' arm must break
+       6 PASS, 1 FAIL
+         red: ⛭⛔ `r7721` ** AND THE POWER IS WHAT LICENSES THAT RESTRICTION: at least `0.95` at the two wider smoothings and
+       ⇒ ✓ the named gate went red
+
+  ⛔ LEG F  one PINNED literal moved by ten times its allowance -- pushes the measured value OUTSIDE the band, so the index-row pinning gate must break.  ⌗ This gate needed no leg to prove failable: it went red twice for real reasons while being written -- once on a literal the row does not print, once on a tolerance narrower than the printed precision
+       6 PASS, 1 FAIL
+         red: ⛭⛔ `r7721` ** AND EVERY FIGURE THE INDEX ROW PRINTS IS PINNED HERE BY A TWO-SIDED COMPARISON AGAINST ITS LITER
+       ⇒ ✓ the named gate went red
+
+  ⛔ LEG E  the restricting words sought in the .tex CHANGED to words that are not there -- so the scope gate must stop finding them
+       6 PASS, 1 FAIL
+         red: ⛭⛔ `r7721` ** AND THE SCOPE OF THE PRINTED CLAIM IS ITSELF GATED: the sentence must still carry both the multi
+       ⇒ ✓ the named gate went red
+
+  ⇒ failability ESTABLISHED on every leg

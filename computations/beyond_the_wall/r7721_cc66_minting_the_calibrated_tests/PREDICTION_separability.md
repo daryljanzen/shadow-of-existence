@@ -1,0 +1,458 @@
+# `r7721+cc66.2` — PRE-REGISTRATION: can the two-dimensional `(l, k)` integrand separate the kernel swap from the source swap?
+
+⛔ **REGISTERED BEFORE ANY OF IT IS COMPUTED.**  This file is in its own commit, pushed, and not a line
+of the measurement exists when it lands.  Nothing below is a result.  Every number printed here was
+read off the BANKED INSTRUMENT (grid sizes, `l` ranges, `l_A`, `k` endpoints) or is a THRESHOLD fixed
+in advance; no statistic of the measurement itself has been evaluated.
+
+---
+
+## 0.  Why this registration exists, and the one thing it is not allowed to do
+
+`r7719` closed the one-dimensional route geometrically: after the `k`-sum, the kernel and source
+templates sit at correlation **−0.9200**, condition number **5.03**, VIF **6.51×**.  Two nearly
+anti-parallel templates cannot be told apart by any amount of precision on the collapsed spectrum, and
+that single fact also explains `r7713`'s sign reversal.  I then named the build — *stop collapsing the
+`k`-sum* — and wrote, in the same breath:
+
+> ⚠ **I am NOT claiming the two-dimensional build will resolve it.**  Its separability is measurable and
+> is **not measured here**, and asserting it would be the very fault this revision spent its length
+> catching.
+
+That caveat is the whole point of this registration, and this file is bound by it.  The measurement
+registered below has **two admissible outcomes, registered as equals**: the `(l, k)` build separates
+the two swaps, or it does not.  The thresholds in §4 are fixed now, in advance, so that the verdict is
+not chosen after the number is seen.
+
+---
+
+## 1.  ⛔ THE PREMISE I NAMED IS FALSE ON THE BANKED INSTRUMENT, AND I FOUND THAT OUT HERE
+
+The order's words, which are my own words relayed back:
+
+> In the two-dimensional integrand, the source swap is a rescaling along `k` at every `l`, and the
+> kernel swap is not.
+
+Checked against the instrument before registering anything on top of it.  **The two source arms do not
+share a `k` grid:**
+
+| | `lcdm` source | `cr` source |
+|---|---|---|
+| `n_k` | **2547** | **1452** |
+| `k_min` | 8.599466822427623e-4 | 5.503183515799346e-4 |
+| `k_max` | 2.8664889408092076e-1 | 2.8290023347379184e-1 |
+
+So on the banked instrument the source swap changes **the quadrature grid, the number of nodes, and
+the range at both ends**, not only the amplitude at each node.  The sentence names the amplitude part
+and is silent about the grid part.
+
+⛔ **This is the recurring fault in embryo, and this is the ELEVENTH instance** — a statement about one
+object (the continuum integrand, where `S^2(k)` genuinely multiplies pointwise) read as a statement
+about another (the banked discretisation, where the swap also moves the nodes).  It is the first
+instance caught **at registration time**, before a line of the computation existed, which is exactly
+what registering before computing is for.  The previous ten were caught after the computation ran, and
+one of them only by a gate.
+
+⇒ The measurement therefore has to be defined on a **common grid**, and the move to that grid is itself
+an instrument change that must be controlled rather than assumed harmless.  §2 does that.
+
+---
+
+## 2.  The object, and the two grid decisions, both fixed now
+
+For a combination (source `S`, kernel `K`), the quantity the existing instrument forms per `l` and
+then throws away is
+
+```
+M^{S,K}(l, k) = G_l^K(k)^2 · (dk / k) · S^2(k),     with    y^{S,K}(l) = sum_k M^{S,K}(l, k)
+```
+
+and `y` is exactly the banked spectrum.  The build is: **keep `M`, do not sum it.**
+
+### 2a.  The common `k` grid `K*` — registered a priori
+
+`K*` = the **`cr` arm's own nodes** (the coarser grid, 1452 points) restricted to the overlap of the two
+arms' ranges, `[8.599466822427623e-4, 2.8290023347379184e-1]` ⇒ **1450 nodes**.  The coarser arm is
+chosen so that **no arm is interpolated up**; inventing nodes the data never had, in the direction the
+statistic reads, is how a separability signal gets manufactured.
+
+- `S^2` is carried to `K*` by linear interpolation in `log k` of `log S^2`.
+- `G_l^K` is **recomputed directly at the `K*` nodes**, never interpolated.  `G` is an integral over the
+  banked visibility and is cheap to evaluate exactly at any `k`; interpolating it would mean
+  interpolating the very object whose `(l, k)` structure is being measured.
+
+### 2b.  The common `l` reading — BOTH forms, and they must agree
+
+The kernels have different `l_A` (301.54271387763947 vs 302.9430505935752, ratio **1.0046439083137786**),
+so their dense `l` lists differ: `lcdm` 242…934 (693 values), `cr` 243…939 (697).  `spherical_jn` takes
+an integer order, so a non-integer `l` is not available and one of the two readings must interpolate.
+Neither is privileged, so **both are registered and the verdict must hold under both** — the same
+agreement discipline `r7713` and `r7717` ran under:
+
+- **(A) same integer `l`, no interpolation at all.**  The shared integer range is **243…934, 692
+  values**.  The price is that the two kernels are then read at `q` differing by **0.464 %**.
+- **(B) common `q`**, with the `cr`-kernel array interpolated in `q` at fixed `k` onto the `lcdm`
+  `q`-grid.  The price is an interpolation **along the direction the step statistic reads**, which can
+  only make the field smoother — i.e. it can only flatter the separability.
+
+⇒ Registered now: if (A) and (B) disagree on the §4 verdict, **the verdict is NOT RESOLVED**, and the
+disagreement is the result.  Reading whichever of the two is kinder is not available.
+
+### 2c.  ⛔ The control on the grid change — the number that decides whether any of this transfers
+
+`sum_k M` on `K*` must reproduce the **banked** `y(l)`.  Tolerance registered at **1e-3 relative, at
+every `l`** — deliberately *not* `1e-12`.  `K*` is a different quadrature, so the agreement is a
+numerical-convergence statement, not an identity, and demanding an identity would guarantee a red that
+means nothing.  If the collapse on `K*` departs from the banked `y` by more than 1e-3 relative at any
+`l`, then **the common-grid object is not the banked object** and nothing read off it transfers to
+P15's printed claims.  That is a refusal, not a caveat: the script computes no statistic downstream.
+
+---
+
+## 3.  The gates, in the order the script will run them, with no later re-ordering
+
+**Gate 0 — CONTROL, before anything.**  Recompute `M^{lcdm,lcdm}` for the first block of `l` on the
+*banked* `k` grid and require `sum_k M` to match the banked `y` to **≤ 1e-12 relative** — the same
+tolerance `r7715`'s CI control already runs under, through the same code path.  Fail ⇒ exit, compute
+nothing.
+
+**Gate 1 — THE PREMISE, AS A CONTROL AND NOT AS A RESULT.**  On `K*`, require
+`M^{cr,K} / M^{lcdm,K} = rho(k) := S^2_cr(k) / S^2_lcdm(k)` to **≤ 1e-12** at every `(l, k)`, for each
+kernel separately, **and** the two kernels' `rho` to agree to the same tolerance.  This is expected to
+pass *by construction* once the grid is common — it is registered as a control precisely so that it
+cannot later be reported as a finding.  Its one real content: passing it establishes that the kernel
+difference `Delta_ker` is **independent of the source**, which is what halves the price in §5.
+Failing it means the framing in §2 is wrong and the revision stops there and says so.
+
+**Gate 2 — HOW MUCH OF THE KERNEL SWAP A SOURCE SWAP CAN MIMIC.**  In log space,
+`Delta_ker(l, k) = log M^{S,cr} − log M^{S,lcdm} = log(G^2_cr / G^2_lcdm)` (source-free by Gate 1).
+Split it into the part a source swap could have produced and the part it could not:
+
+```
+Delta_ker(l, k) = a(k) (x) 1_l  +  R(l, k),        a(k) = mean over l of Delta_ker(., k)
+f_mimic = ||a (x) 1_l||_F / ||Delta_ker||_F        f_sep = ||R||_F / ||Delta_ker||_F
+```
+
+Report `f_mimic`, `f_sep`, the leading singular value's share of `||R||_F`, and how many singular
+components hold 90 % of it.  ⚠ `f_sep` is reported but is **NOT the verdict**: a Frobenius fraction has
+no units of resolvability, and reading one as if it did would be instance twelve.
+
+**Gate 3 — THE VERDICT: CONDITIONING, AGAINST THE 1D NUMBERS THAT CLOSED THE ROUTE.**  Build the two
+*two-dimensional* templates, mean-removed and flattened,
+
+```
+t_ker(l, k) = log( M^{S,cr} / M^{S,lcdm} )      (kernel swap, source fixed)
+t_src(l, k) = log( M^{cr,K} / M^{lcdm,K} )      (source swap, kernel fixed)
+```
+
+and report **correlation, condition number of the 2×2 design, and VIF**, under reading (A) and reading
+(B) separately, beside the 1D values **−0.9200 / 5.03 / 6.51×** that closed the collapsed route.
+
+**Gate 4 — THE INTERPOLATION'S OWN SIZE.**  Report how much reading (B)'s `q`-interpolation moves
+`f_sep` and the Gate-3 correlation. If that movement is comparable to the separation Gate 3 claims,
+the claim is the interpolation's and not the instrument's, and the verdict is NOT RESOLVED.
+
+---
+
+## 4.  ⛔ THE THRESHOLD, FIXED NOW
+
+> **The two-dimensional build resolves what the one-dimensional collapse could not if and only if, under
+> BOTH readings (A) and (B), `|correlation| <= 0.70` AND `VIF <= 2.0`.**
+
+0.70 is not a round number chosen for looking like one: at `|corr| = 0.70` the VIF is
+`1 / (1 − 0.49) = 1.96`, so the two halves of the threshold are the same statement and neither can be
+satisfied alone.  Against the 1D route's −0.9200 and 6.51× this demands the degeneracy be **broken, not
+merely dented**.
+
+⇒ **Registered in advance: anything above that is NOT resolution**, however suggestive `f_sep` looks, and
+I commit here to printing the correlation and the VIF whichever side of the line they fall on, and to
+reporting a failure as the result rather than as a reason to look for a third reading.
+
+---
+
+## 5.  The price, and the one thing it does not buy
+
+- **No extra Bessel evaluations.**  `M(l, ·)` is *already formed* inside the existing per-`l` loop and
+  destroyed by `np.sum` on the next line.  Keeping it costs a write, not a computation.
+- **Recomputation is unavoidable** because only the collapse is banked.  By Gate 1 the measurement needs
+  **two kernel arrays, not four combinations** — ~half the `r7713` grid, so **≈ 2.1 CPU-hours**,
+  ≈ 35 min wall in the four-way `dense-ell` matrix already standing from `r7715`, inside its 330-minute
+  timeout.
+- **Storage: 16.12 MB** for the two arrays on `K*` (`692…697 l × 1450 k × 8 B`).  ⇒ The arrays are **NOT
+  committed**; the committed artefacts are the derived rank statistics and the gate verdicts, and
+  regeneration is scripted and idempotent in blocks, as `r7713`'s own restart losses taught.
+- Checkpointing per block of `l`, not per array: a checkpoint interval longer than the interval between
+  container restarts is not a checkpoint.
+
+⛔ **What the price does not buy — registered so it cannot be blurred afterwards.**  Good conditioning is
+**necessary and not sufficient**.  A separating component must also survive the noise of a real
+measurement, and that is a *detectability* question needing a per-`(l, k)` noise model which this
+instrument does not have.  ⇒ **Item 2 returns a CONDITIONING result, never a detectability result**, and
+a passing Gate 3 licenses the sentence *"the degeneracy that closed the collapsed route is broken in the
+`(l, k)` plane"* and **not** the sentence *"the two swaps can be told apart in the data."*
+
+---
+
+# ⛔ AMENDMENT 1 — the registered per-cell log-space form is **NOT COMPUTABLE** on `K*`, and this is why
+
+**Made before any statistic of the measurement was computed, in its own commit, and it does NOT touch the
+threshold.** §4 stands exactly as written. What changes is *where the measurement is defined*, forced by a
+property of the instrument that was measured, not by any result.
+
+## What went wrong
+
+§3's Gates 2 and 3 are written in log space: `Delta_ker = log(G^2_cr / G^2_lcdm)`. On `K*` that is `log 0`
+over a large part of the plane. `j_l(k x0)` **underflows to exactly zero below its turning point**
+`k ~ l / x0`, and the dead region grows with `l`:
+
+| | cells with `M <= 0`, of 1450 |
+|---|---|
+| `l = 243` (bottom of the shared window) | **11** |
+| `l = 589` | **86** |
+| `l = 934` (top) | **181** |
+
+and the `|G|` distribution inside block 0 runs down through `8.3e-148` to `1.6e-276` to exact `0` — the
+exponential tail of the Bessel function, not an oscillation zero.
+
+⇒ ⛔ **The registration asked for a logarithm of a quantity that is exactly zero on up to 12 % of the
+plane.** Nothing in §2 or §3 noticed, because the premise check in §1 was about the *grid* and this is
+about the *integrand*.
+
+## The first replacement I considered, and why it is NOT used
+
+Collapse to `B` log-spaced `k`-bands instead of to one, with `B = 1` reproducing the closed 1D route as a
+control. Band sums are positive, so the logs come back. **Measured, it fails at once:** the lowest bands
+sit entirely inside the dead region for *every* `l` in the window, so
+
+| `B` | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 |
+|---|---|---|---|---|---|---|---|---|
+| non-positive band cells | **0** | 4 | 8 | 20 | 42 | 84 | 169 | 345 |
+
+⇒ Only `B = 1` is admissible on the full range, and `B = 1` **is** the collapsed route. Banding buys
+nothing here, and recording that is the point of writing it down rather than quietly trying the next idea.
+
+## The amendment, and the two measurements that license it
+
+The dead set is not scattered: it is a **contiguous low-`k` prefix**, and **above it there is no zero at
+all** — measured at both ends of the window (`l = 243`: first non-zero node `0`, zeros above it `0`;
+`l = 934`: first non-zero node `119` for `lcdm` and `117` for `cr`, zeros above it `0` for both).
+
+⇒ **The measurement is restricted to the COMMON LIVE SUPPORT**: the nodes of `K*` at or above the largest
+dead prefix over the shared `l` range and both kernels. At the binding `l` that is node `119`,
+`k >= 2.4126e-2`, so **1331 of 1450 nodes**. The restriction is then determined **from the assembled array
+itself**, not from these three `l`, and gated:
+
+- **Gate 1a (NEW).** At every `l` and for both kernels the dead set must be a contiguous prefix of `K*`.
+- **Gate 1b (NEW).** Above the common prefix there must be **no** zero, for either kernel, at any `l`.
+
+If either fails, the per-cell form is still not computable and the measurement reports that, rather than
+masking cell by cell — a per-cell mask makes the array ragged and the rank framing in §3 does not survive it.
+
+⛭ **And the restriction carries its own sharp control, for free.** The dropped cells are *exactly* zero, so
+dropping them **cannot change `sum_k M` at all**. ⇒ Gate 2c is re-run on the restricted support and must
+return **the same** departure from the banked spectrum as on full `K*` (measured there: `4.9367e-05`
+against the registered `1e-3`). A restriction that moves that number has dropped something that was not zero.
+
+## ⛔ What is NOT amended
+
+The threshold in §4 — `|correlation| <= 0.70` **and** `VIF <= 2.0`, under both readings — is **unchanged**,
+and the 1D comparison values `−0.9200 / 5.03 / 6.51x` are unchanged. ⚠ *An amendment made after seeing a
+numerical obstruction is legitimate; an amendment that also moved the line the verdict is read against
+would not be, and would be indistinguishable from choosing the verdict. The line is where it was.*
+
+## ⛔ The price — and a CORRECTION to the correction, which is the same fault a fourth time
+
+This section first read: *"§5 estimated ~2.1 CPU-hours. Measured: `1.51` s per `l` on `K*` ⇒ ≈ 35 min in
+one process. ⇒ The registered price was conservative by about three and a half times."* **That was wrong,
+and the original estimate was the better number.**
+
+`1.51` s per `l` was measured on **block 0 — the BOTTOM of the `l` window** — and extrapolated flat. The
+per-`l` cost **rises with Bessel order**, which `dense.py`'s own header already records in the file this
+measurement imports (`152` s per 50 `l` near the bottom against `386` s near the top). Measured here, in
+flight:
+
+| | block 2 | block 8 | block 15 | block 21 | block 23 |
+|---|---|---|---|---|---|
+| s per `l` | **1.64** | 2.44 | 3.48 | 3.72 | **4.08** |
+
+⇒ **`2.93` s per `l` averaged over the first 550 `l`, and still climbing** ⇒ the two kernel arrays project
+to **≈ 72 min in one process, about `1.2` CPU-hours** — twice my "correction" and still inside the
+registered `2.1`.
+
+⚠ **This is the recurring fault a FOURTH time in this revision**: a measurement of one object (the cost at
+the bottom of the window) reported as a statement about another (the cost over the window) — with the
+contradicting fact sitting in the header of the very module this file imports. ⌗ *And note which direction
+it ran: I did not fail to estimate, I "corrected" a conservative estimate into a wrong one. A correction is
+a claim and takes the same check as the thing it corrects.*
+
+---
+
+# ⛔⛔ AMENDMENT 2 — the log-space statistic is **DOMINATED BY CELLS THAT CONTRIBUTE NOTHING**, and amendment 1's support criterion was the wrong criterion
+
+**Again made before any statistic was computed, and again the threshold is NOT touched.** But two
+amendments to one registration is itself a finding, and it is recorded as one in §A2.4.
+
+## A2.1 What amendment 1 got wrong
+
+Amendment 1 defined the live support by `G != 0` — **representability**. That is the wrong criterion,
+because it admits cells that are alive only in the subnormal sense. Measured:
+
+- the smallest non-zero `|G|` in the assembled blocks is **`3.95e-323`** (subnormal);
+- `G^2` at that value **underflows to exactly `0` while `2 log|G|` is a perfectly finite `−1484.7`**, so
+  the registered expression `log(G^2_cr / G^2_lcdm)` is `−inf` on cells where the quantity it stands for
+  is defined. ⇒ Every log in this measurement must be written `2 log|G|`, never `log(G^2)`;
+- over one block, `log M` spans **`−1492.6` to `−16.3`: 641 orders of magnitude**;
+- and **165 of 1450 nodes hold 99 % of the collapse.**
+
+⇒ ⛔ **An unweighted Frobenius norm or correlation over that plane is a statement about cells contributing
+`~10^-640` of the integrand.** A cell at `log M = −1492` would dominate the variance of a cell at `−16`
+by a factor of `10^600`, and the verdict would be read off numerical noise in the Bessel tail.
+
+## A2.2 Why this is not a detail, and what it says about the build I named
+
+The collapse `sum_k` is *exactly what tamed that dynamic range*. ⇒ **The object I told the chat seat to
+build — "stop collapsing the `k`-sum" — is not readable by the statistic I proposed for it, and that is a
+result about the build and not a bug in the arithmetic.** It is reported as such.
+
+## A2.3 The amendment: weight each cell by its own contribution to the collapse
+
+Parameter-free, which is the point — there is no threshold to tune, because **the weight IS the integrand**:
+
+```
+w(l, k) = M^{lcdm,lcdm}(l, k) / sum_k M^{lcdm,lcdm}(l, k)
+```
+
+and every statistic in §3's Gates 2 and 3 is computed **weighted by `w`**: weighted means, weighted
+Frobenius fractions, and the weighted correlation
+
+```
+r_w = sum w (x - xbar_w)(y - ybar_w) / sqrt( sum w (x - xbar_w)^2 · sum w (y - ybar_w)^2 )
+```
+
+with the condition number and VIF taken from `r_w` by the same two formulas as before. A cell that
+contributes nothing gets weight ~0 **automatically**, and if the integrand were flat the weighted statistic
+reduces exactly to the registered unweighted one. The common live support from amendment 1 is kept, now
+only so that every log is finite; it no longer carries the weighting, which it was never able to do.
+
+⌗ *Not claimed: that these weighted templates reproduce the collapsed route's `−0.9200`. That figure was
+measured on the REAL spectra's own templates, not on these pseudo-spectra, and asserting the two must
+agree would be the recurring fault again. The `−0.9200 / 5.03 / 6.51x` stays as the number the verdict is
+read AGAINST, not as a control these must reproduce.*
+
+## A2.4 ⛔ Two amendments, and what that means
+
+The threshold has not moved in either amendment, and both were forced by measurements made before any
+statistic existed. ⚠ **But a registration that needed amending twice before its first number was a
+registration whose framing did not fit its instrument**, and the common cause of both is the same: I
+specified the statistic from the *continuum* integrand — where `S^2(k)` multiplies pointwise and logs are
+innocent — and not from the *banked discretisation*, where the integrand underflows, spans 641 orders of
+magnitude, and concentrates 99 % of itself in 11 % of the nodes.
+
+⇒ **That is the recurring fault a third time inside one revision**, in the same place each time: §1 caught
+it about the grid, amendment 1 caught it about the zeros, and amendment 2 catches it about the dynamic
+range. ⌗ *All three were caught before a statistic existed, which is what registering before computing is
+for — and the honest reading is that the registration should have been written against the instrument's own
+measured properties rather than against the physics it stands for.*
+
+---
+
+# ⛔⛔⛔ AMENDMENT 3 — **the registered control REFUSED the run, amendment 1 is withdrawn, and I have to declare that I saw a verdict before writing this**
+
+## A3.1 What the control caught
+
+Gate 2c — §2c's refusal condition, registered before any computation — **went red**:
+
+| | departure from the banked spectrum |
+|---|---|
+| full `K*` | `4.1800e-05` ✔ |
+| **amendment 1's restricted support** | **`9.4311e-01`** ⛔ against the registered `1e-3` |
+
+and the restriction's own free control (dropping *exact* zeros cannot move a sum) failed by the same
+`0.943`. Measured cause:
+
+| | `l = 243` | `l = 343` | `l = 543` | `l = 934` |
+|---|---|---|---|---|
+| share of the collapse in nodes `0..118` | **`0.9431`** | `0.0026` | `0.0000` | `0.0000` |
+| dead-prefix length at that `l` | **`0`** | — | — | `119` |
+
+⇒ ⛔ **The dead prefix is `l`-DEPENDENT — `0` nodes at the bottom of the window and `119` at the top — and
+amendment 1 took the LARGEST prefix and applied it to EVERY `l`.** At the bottom of the window those nodes
+are not dead at all: they carry **94 %** of the integral, and the restriction threw them away.
+
+⌗ *That is the recurring fault a FIFTH time in this revision: a statement about one object (the dead set at
+the top of the `l` window) applied to another (the dead set at every `l`).*
+
+## A3.2 ⚠ THE NEAR MISS, which is the part worth keeping
+
+The script **did not refuse**. §2c says in terms: *"That is a refusal, not a caveat: the script computes no
+statistic downstream."* It computed Gates 2, 3 and 4 anyway, and printed:
+
+> `A corr −0.0067 cond 1.01 VIF 1.00x` → MEETS · `B corr −0.0003` → MEETS · **"the (l,k) build BREAKS the
+> degeneracy"**
+
+⇒ **A clean PASS of the registered threshold, and the headline I wanted, read off an integrand with 94 % of
+its low-`l` support deleted.** Had the two controls been one line further down, or had I read the verdict
+before the gate list, this revision would have reported that the two-dimensional build resolves what the
+collapse could not. ⛔ **It reports nothing of the kind. The verdict above is VOID and is not this
+measurement's result.**
+
+⇒ Two defects, both mine: ⒜ the support rule, and ⒝ **a registered refusal that was written in prose and
+never enforced in code.** A refusal that does not halt the script is a comment.
+
+## A3.3 ⛔ DECLARATION OF CONTAMINATION
+
+**I have seen a verdict number before writing this amendment.** It was produced by the failed run above. So
+this amendment is **not** blind, and I will not claim it is.
+
+What limits the damage is that **the threshold was fixed in §4 before any computation existed and is not
+touched here, as in both earlier amendments** — `|corr| <= 0.70` and `VIF <= 2.0`, against `−0.9200` and
+`6.51x`. A line fixed in advance cannot be moved by my having seen a number on an object the control
+rejected. ⌗ *But the honest record is that the ordering protection is now partly spent, and a reader should
+weight the re-run accordingly.*
+
+## A3.4 The amendment: **amendment 1 is WITHDRAWN**, because amendment 2 already subsumed it
+
+Amendment 1 existed to make every logarithm finite. Amendment 2 then weighted every cell by its own share
+of the collapse — and **a dead cell's weight is exactly `0`**. ⇒ The support restriction was never needed
+once the weighting existed, and keeping it is what produced the failure. Amendment 2 even said the support
+was "kept only so every log is finite"; that was the wrong reason.
+
+- **The measurement runs on the FULL `K*`**, so the collapse is the `4.1800e-05` that passes.
+- Dead cells are **masked, not restricted**: where `G == 0` the log is set to a finite placeholder and the
+  weight to exactly `0`, so no `nan` arises (`0 x inf` would) and the statistics never see them. Nothing is
+  dropped at any `l`, so no `l` loses contributing nodes.
+- Gates 1a and 1b become **per-`l`** statements rather than statements about a common prefix, and the
+  measurement no longer depends on either being uniform across `l`.
+- **§2c is enforced in code**: if the collapse departs by more than `1e-3`, the script exits BEFORE Gates 2,
+  3 and 4 and prints no verdict at all.
+
+⌗ *Third amendment, and the cause is the same every time — the rule was written against the object I had in
+mind rather than the one in the array. The difference this time is that it was a GATE that caught it and not
+me, which is the first time in this revision that has happened.*
+
+---
+
+# ⛭ AMENDMENT 4 — a CONTROL added after the verdict was first seen, because the verdict was too clean
+
+**Declared plainly: this was added AFTER I had seen the verdict.** That is legitimate in exactly one
+direction — a control added late can only make a claim *harder* to believe, never easier — and the
+threshold in §4 is still untouched. It is added because two things about the result demanded it:
+
+1. `corr +0.0031` is **suspiciously perfect**. Near-exact orthogonality is a strong claim and a statistic
+   can produce one by construction.
+2. The `−0.9200 / 5.03 / 6.51x` the verdict is read against was measured on the **REAL spectra's** own
+   templates, not on these pseudo-spectra — **a different object**, which amendment 2 §A2.3 already flagged
+   and then left as the comparison anyway. ⇒ Read against the wrong baseline, "the build breaks the
+   degeneracy" would be unsupported: there might have been no degeneracy *in this object* to break.
+
+## Gate 3b — the same-object baseline
+
+Feed **this same statistic** the **collapsed** object built from **these same four banked spectra**:
+`t_ker = log(y^{lcdm,cr} / y^{lcdm,lcdm})`, `t_src = log(y^{cr,lcdm} / y^{lcdm,lcdm})`, over the 692 shared
+`l`. Required: `|corr| >= 0.70` **and** `VIF >= 2.0` — the **mirror** of the registered threshold. If the
+statistic returns `~0` on the collapsed object too, the `~0` in the plane is an artefact of the statistic
+and the verdict means nothing.
+
+⌗ *This is the control the measurement should have carried from the start, and it replaces the cross-object
+comparison as the thing the verdict is read against. The `−0.9200` remains in the record as the figure from
+the real spectra, and is no longer doing work it cannot do.*

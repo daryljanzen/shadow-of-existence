@@ -907,12 +907,22 @@ check("⛭⛔ `r7707` ** AND IT IS IN NEITHER ARM'S OWN PROJECTED SPECTRUM: both
       "; ".join(f"h{_r[7]}: Ra {_r[5]:.3f}, Rc {_r[6]:.3f}, corr {_r[4]:.5f}" for _r in _PS))
 check("⛭⛔ `r7707` ** AND IT IS NOT IN THE SOURCE-SIDE RATIO: that ratio's own low-to-high "
       "change is `+0.002`, under one standard deviation of its own scatter at every smoothing, while a "
-      "step of the SPECTRA's size would have shown there at `3.8` to `11.8` sd ** ⇒ *the two arms' "
+      "step of the SPECTRA's size would have shown there at `3.9`, `6.6` and `12.4` sd across the "
+      "three smoothings ** ⇒ *the two arms' "
       "eta-integrated sources carry the same relative comb amplitude to under one per cent, and the "
       "source ratio sits near zero and slightly NEGATIVE throughout rather than stepping up.  So a step "
       "of the measured size is EXCLUDED in the source; a tenth of it is neither excluded nor resolved, "
       "and that is said rather than rounded to zero*",
       all(abs(_r[2]) / _r[3] < 1.0 for _r in _PK)
+      # ⛭ `r7721+cc66`: the printed literals above were `3.8` to `11.8`, from `r7707`, and this
+      #   receipt computes `3.88`, `6.60`, `12.39` after the arm-of-record repointing.  A
+      #   description left on superseded numbers is a receipt whose own text disagrees with its
+      #   computation -- the defect `r7673+cc66.4` recorded in this very docstring -- and the
+      #   `> 3.5` assertion below would never have caught it, because it is a weaker and
+      #   differently scoped claim than the one P15 now prints.
+      # ⛔ P15's own clause is "more than six times ... AT THE TWO WIDER SMOOTHINGS", which this
+      #   gate does NOT check.  It is pinned, with the power that licenses the restriction, in
+      #   `P15_the_located_transition_is_beyond_a_million_step_free_surrogates_...`.
       and all(_s[2] / _k[3] > 3.5 for _s, _k in zip(_PS, _PK)),
       "; ".join(f"h{_k[7]}: own {_k[2]:+.4f} = {abs(_k[2]) / _k[3]:.2f} sd, "
                 f"spectra's size = {_s[2] / _k[3]:.1f} sd" for _s, _k in zip(_PS, _PK)))

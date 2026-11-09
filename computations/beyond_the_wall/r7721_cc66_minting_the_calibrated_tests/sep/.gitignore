@@ -1,0 +1,9 @@
+# ⛔ The G blocks are DELIBERATELY NOT COMMITTED, as `PREDICTION_separability.md` §5 registers:
+# "the arrays are NOT committed; the committed artefacts are the derived rank statistics and the
+# gate verdicts, and regeneration is scripted and idempotent in blocks".
+#
+# ⚠ Eight of them WERE committed at `r7721+cc66.5`, by a `git add -A` over this revision's directory
+# that swept in exactly the artefacts the registration says to leave out.  A repository hygiene hook
+# caught the ninth as untracked, which is what surfaced the first eight.  ⇒ Regenerate with
+# `python3 separability.py --blocks` (idempotent; finished blocks are skipped).
+*.npy
