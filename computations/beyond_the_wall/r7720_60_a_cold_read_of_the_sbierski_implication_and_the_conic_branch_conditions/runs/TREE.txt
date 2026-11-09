@@ -1,0 +1,2 @@
+d67cf6c0 r7720 (60) -- REGISTER BEFORE MEASURING: is the Sbierski implication right as a logical relation, and does cn_hyperbolas state the branch conditions or only the identities?
+origin/main = f14d2e51 

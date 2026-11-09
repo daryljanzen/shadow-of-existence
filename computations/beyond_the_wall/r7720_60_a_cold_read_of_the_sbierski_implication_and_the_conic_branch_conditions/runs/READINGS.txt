@@ -1,0 +1,135 @@
+==============================================================================
+SELF-TESTS -- every classifier and reader on BOTH of its classes, before use
+==============================================================================
+   ok  G2 accepts plain prose
+   ok  G2 accepts an escaped control sequence
+   ok  G2 accepts an escaped math delimiter
+   ok  G2 REFUSES a marker mixing prose with math
+   ok  skeleton: a plain ASCII name IS found
+   ok  skeleton: a name NOT on the page is NOT found
+   ok  skeleton: a name that is a PREFIX of another is not credited to it
+   ok  reader: cn_hyperbolas has a header
+   ok  reader: a declaration that does not exist reads as absent
+   ok  reader: decl_extent reaches a def's BODY, which lives after ":="
+   ok  reader: binders survive a type carrying parentheses
+   ok  regularity reader: ruling out C0 extensions DOES rule out C2 ones
+   ok  regularity reader: ruling out C2 extensions does NOT rule out C0 ones
+   ok  regularity reader: an unknown class is reported as unknown
+   ok  pair: same subject AND same conclusion is the SAME inference
+   ok  pair: same conclusion but DIFFERENT subject is NOT the same inference
+   ok  subject classifier: a sentence about an abstract spacetime reads as that
+   ok  subject classifier: a sentence about a metric on a chart reads as that
+   ok  conjunct reader: an equation reads as an equation
+   ok  conjunct reader: an inequality reads as an inequality
+   ok  conclusion reader: the conclusion is found by DEPTH, so a nested type ascription in it does not cut the statement short
+   ok  conclusion reader: and a header with no depth-zero colon returns itself
+   ok  conjunct reader: all eight conjuncts of a nested conclusion are found
+   ok  conjunct reader: a differentiability claim is neither
+   ok  G6: the landed clause is one line only after flattening
+
+==============================================================================
+Q1 -- IS "implied by Sbierski's stronger, curvature-independent C0-inextendibility"
+      RIGHT?  Three conjuncts, each with its own predicate (G1).
+==============================================================================
+   ok  the clause is at source, verbatim
+
+  (a) "STRONGER" -- read as a CONTAINMENT and not as a word:
+    ruling out C0 extensions -> C2: implies
+    ruling out C2 extensions -> C0: does not imply
+   ok  "stronger" is the right way round: a C2 metric is in particular C0, so a C2 extension is a C0 extension, and ruling out every C0 extension rules out every C2 one
+
+  (b) "IMPLIED" -- read as a SUBJECT comparison, which is where a shift would hide:
+   ok  P2's own statement of Sbierski's theorem is located by text
+    SBIERSKI: subject 'spacetime', conclusion 'no C0 extension'
+    THE CLAUSE: subject 'metric-on-chart', conclusion 'no C2 extension across a frontier point'
+   ok  the two are NOT the same inference, so the implication needs a BRIDGE and is not a containment of regularity classes alone
+    ⌗ THE BRIDGE, stated so it can be judged: a C2 extension of the metric across a
+      frontier point of the chart gives a larger connected Lorentzian manifold
+      containing the original isometrically with a CONTINUOUS metric -- which is a
+      C0 extension of the spacetime, the thing Sbierski rules out.  So the
+      implication HOLDS.  It is sound mathematics the sentence leaves implicit.
+
+  (c) THE PREMISE THE BRIDGE NEEDS -- that the chart object IS Sbierski's object:
+   ok  P2 states which object Sbierski's theorem is about, located by text
+   ok  and P2 claims its own four patches with the horizons ARE that extension, so the identification is made in the paper
+    ⌗ READING: the identification is PAPER-LEVEL -- the paragraph's own last
+      sentence says maximality among all extensions, as an abstract spacetime, is
+      not formalised -- so the implication is sound as mathematics and rests on a
+      claim the paper makes in prose and the machine does not check.
+
+==============================================================================
+⛔ Q1, THE CITATION -- AND IT DOES NOT POINT WHERE THE CLAUSE SAYS IT DOES
+==============================================================================
+   ok  the remark is located by its own label
+    the remark's whole extent is 672 characters, and reads:
+      \begin{remark}\label{rem:asymmetric_chart} Although the underlying function $r(z)$ treats $z=0$ and $z=\pi$ symmetrically, the standard Schwarzschild chart treats them asymmetrically: at $z=0$ the chart's coordinate value $r$ is $2M$, while at $z=\pi$ the chart's coordinate value is $0$. This asymmetric labelling has structural consequences for invariants computed as functions of $r$. The Kretschmann scalar $K(r) = 48M^2/r^6$ 
+
+    NAMED SEARCH over that whole extent:
+      'Sbierski': NOT FOUND
+      'sbierski': NOT FOUND
+      'inextendib': NOT FOUND
+      'extension': NOT FOUND
+      'C^{0}': NOT FOUND
+      'C^0': NOT FOUND
+   ok  the remark the clause cites names Sbierski NOWHERE, and says nothing about inextendibility, extensions, or $C^{0}$ -- searched for all six of those strings over its whole 672-character extent
+   ok  and the label is defined exactly ONCE in P2, so this is not a second remark of the same name
+
+    WHERE SBIERSKI'S RESULT IS ACTUALLY SET OUT, located by text:
+   ok  the passage exists
+      nearest preceding sectioning command with a label: ('Discussion', 'sec:discussion')
+   ok  it is in the Discussion section and not in the remark
+   ok  and the remark is upstream of it, so a reader following the citation goes to the wrong place and finds no Sbierski at all
+
+==============================================================================
+Q2 -- DOES cn_hyperbolas STATE THE BRANCH CONDITIONS, OR ONLY THE IDENTITIES?
+==============================================================================
+   ok  the claim is at source, verbatim
+    cn_hyperbolas: theorem cn_hyperbolas (M : ℝ) (hM : 0 ≤ M) (ρ : ℝ) : cn_r M (ρ * I) = ((M * (1 + Real.cosh ρ) : ℝ) : ℂ) ∧ cn_s M (ρ * I) = ((M * Real.sinh ρ : ℝ) : ℂ) * I ∧ cn_r M (Real.pi + ρ * I) = ((M * (1 - Real.cosh ρ) : ℝ) : ℂ) ∧ cn_s M (Real.pi + ρ * I) = -(((M * Real.sinh ρ : ℝ) : ℂ) * I) ∧ (M * (1 + Real.cosh ρ) - M) ^ 2 - (M * Real.sinh ρ) ^ 2 = M ^ 2 ∧ (M * (1 - Real.cosh ρ) - M) ^ 2 - (M * Real.sinh ρ) ^ 2 = M ^ 2 ∧ 2 * M ≤ M * (1 + Real.cosh ρ) ∧ M * (1 - Real.cosh ρ) ≤ 0
+    READING -- 8 top-level conjuncts, by KIND:
+      [equation] cn_r M (ρ * I) = ((M * (1 + Real.cosh ρ) : ℝ) : ℂ)
+      [equation] cn_s M (ρ * I) = ((M * Real.sinh ρ : ℝ) : ℂ) * I
+      [equation] cn_r M (Real.pi + ρ * I) = ((M * (1 - Real.cosh ρ) : ℝ) : ℂ)
+      [equation] cn_s M (Real.pi + ρ * I) = -(((M * Real.sinh ρ : ℝ) : ℂ) * I)
+      [equation] (M * (1 + Real.cosh ρ) - M) ^ 2 - (M * Real.sinh ρ) ^ 2 = M ^ 2
+      [equation] (M * (1 - Real.cosh ρ) - M) ^ 2 - (M * Real.sinh ρ) ^ 2 = M ^ 2
+      [inequality] 2 * M ≤ M * (1 + Real.cosh ρ)
+      [inequality] M * (1 - Real.cosh ρ) ≤ 0
+   ok  the identities are there, as equations
+   ok  ⚑ AND SO ARE THE BRANCH CONDITIONS, as two INEQUALITIES in $r$ -- so the sentence is exact and the inviting answer is the true one
+   ok  the first branch condition is $r \ge 2M$ on the $z=i\rho$ line
+   ok  and the second is $r \le 0$ on the $z=\pi+i\rho$ line
+
+  ⌗ AND WHAT THE INEQUALITIES COST, read from the binders rather than assumed:
+    binders: ['(M : ℝ)', '(hM : 0 ≤ M)', '(ρ : ℝ)']
+   ok  they need $0 \le M$, which is a real hypothesis of the theorem and not of the identities' own algebra
+    ⌗ The paper's standing assumption is $M>0$, so the hypothesis is met; it is
+      noted because the identity conjuncts do not need it and the branch ones do.
+
+==============================================================================
+ITEM 3 -- THE REST OF THE LANDING
+==============================================================================
+  3a THE "THEREFORE" REPAIR, read against WHAT WAS ROUTED and not the order's
+     summary of it.  r7720 routed: say that what is machine-checked is the
+     non-existence of a continuous extension of the SCALAR, and mark the C2
+     consequence as following by the standard argument rather than by a theorem.
+   ok  the scalar half now ends at the citation, so the parenthesis covers only what the three declarations state
+   ok  and the metric consequence is now a SEPARATE sentence giving its argument, with no declaration cited for it
+   ok  the old form, which put "and therefore no $C^{2}$ extension of the metric" inside the cited parenthesis, is gone from P2 -- searched for that clause verbatim
+
+   ok  3b cn_curve exists
+   ok  3b cn_curve is cited in P2 (by SKELETON)
+   ok  3b cn_circle exists
+   ok  3b cn_circle is cited in P2 (by SKELETON)
+   ok  3b cn_hyperbolas exists
+   ok  3b cn_hyperbolas is cited in P2 (by SKELETON)
+    cn_curve: theorem cn_curve (M : ℝ) : Differentiable ℂ (cn_r M) ∧ Differentiable ℂ (cn_s M) ∧ ∀ z : ℂ, (cn_r M z - M) ^ 2 + cn_s M z ^ 2 = (M : ℂ) ^ 2
+   ok  "entire" is what cn_curve states, and of BOTH $r$ and $s$ -- differentiability on the whole of the complex plane for each
+   ok  and the identity it states holds at EVERY complex $z$, as the sentence says
+    cn_circle: theorem cn_circle (M η : ℝ) : cn_r M η = ((M * (1 + Real.cos η) : ℝ) : ℂ) ∧ cn_s M η = ((M * Real.sin η : ℝ) : ℂ) ∧ (M * (1 + Real.cos η) - M) ^ 2 + (M * Real.sin η) ^ 2 = M ^ 2
+   ok  cn_circle is stated for a real argument with NO domain restriction, which is what "on the real line" says
+
+    3d CircleConic.lean: axiom tokens = 0; sorry = 0
+   ok  zero axiom tokens and zero sorry
+
+==============================================================================
+ALL ARMS AND SELF-CHECKS PASS.
