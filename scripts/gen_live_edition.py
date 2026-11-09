@@ -270,7 +270,9 @@ def mathspan(t):
     # reading `8\pi p_\chi amp;= ...`.  Collapse every layer before stripping.
     while '&amp;' in t:
         t = t.replace('&amp;', '&')
-    t = re.sub(r'(?<!\\)&', ' ', t)
+    # An alignment mark becomes a space; the HTML entities the caller made of `<` and `>`
+    # (`&lt;`, `&gt;`) are content, not marks, and stripping their ampersand printed `r lt;0`.
+    t = re.sub(r'(?<!\\)&(?!(?:lt|gt);)', ' ', t)
     t = re.sub(r'\\[,;:!>]|\\ ', ' ', t)
     t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
