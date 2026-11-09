@@ -265,3 +265,72 @@ would not be, and would be indistinguishable from choosing the verdict. The line
 §5 estimated ~2.1 CPU-hours. **Measured: `1.51` s per `l` on `K*`** ⇒ the two kernel arrays over 692 shared
 `l` come to **≈ 35 min in one process**, inside this container's recycle interval only because the blocks
 are checkpointed. ⇒ The registered price was **conservative by about three and a half times.**
+
+---
+
+# ⛔⛔ AMENDMENT 2 — the log-space statistic is **DOMINATED BY CELLS THAT CONTRIBUTE NOTHING**, and amendment 1's support criterion was the wrong criterion
+
+**Again made before any statistic was computed, and again the threshold is NOT touched.** But two
+amendments to one registration is itself a finding, and it is recorded as one in §A2.4.
+
+## A2.1 What amendment 1 got wrong
+
+Amendment 1 defined the live support by `G != 0` — **representability**. That is the wrong criterion,
+because it admits cells that are alive only in the subnormal sense. Measured:
+
+- the smallest non-zero `|G|` in the assembled blocks is **`3.95e-323`** (subnormal);
+- `G^2` at that value **underflows to exactly `0` while `2 log|G|` is a perfectly finite `−1484.7`**, so
+  the registered expression `log(G^2_cr / G^2_lcdm)` is `−inf` on cells where the quantity it stands for
+  is defined. ⇒ Every log in this measurement must be written `2 log|G|`, never `log(G^2)`;
+- over one block, `log M` spans **`−1492.6` to `−16.3`: 641 orders of magnitude**;
+- and **165 of 1450 nodes hold 99 % of the collapse.**
+
+⇒ ⛔ **An unweighted Frobenius norm or correlation over that plane is a statement about cells contributing
+`~10^-640` of the integrand.** A cell at `log M = −1492` would dominate the variance of a cell at `−16`
+by a factor of `10^600`, and the verdict would be read off numerical noise in the Bessel tail.
+
+## A2.2 Why this is not a detail, and what it says about the build I named
+
+The collapse `sum_k` is *exactly what tamed that dynamic range*. ⇒ **The object I told the chat seat to
+build — "stop collapsing the `k`-sum" — is not readable by the statistic I proposed for it, and that is a
+result about the build and not a bug in the arithmetic.** It is reported as such.
+
+## A2.3 The amendment: weight each cell by its own contribution to the collapse
+
+Parameter-free, which is the point — there is no threshold to tune, because **the weight IS the integrand**:
+
+```
+w(l, k) = M^{lcdm,lcdm}(l, k) / sum_k M^{lcdm,lcdm}(l, k)
+```
+
+and every statistic in §3's Gates 2 and 3 is computed **weighted by `w`**: weighted means, weighted
+Frobenius fractions, and the weighted correlation
+
+```
+r_w = sum w (x - xbar_w)(y - ybar_w) / sqrt( sum w (x - xbar_w)^2 · sum w (y - ybar_w)^2 )
+```
+
+with the condition number and VIF taken from `r_w` by the same two formulas as before. A cell that
+contributes nothing gets weight ~0 **automatically**, and if the integrand were flat the weighted statistic
+reduces exactly to the registered unweighted one. The common live support from amendment 1 is kept, now
+only so that every log is finite; it no longer carries the weighting, which it was never able to do.
+
+⌗ *Not claimed: that these weighted templates reproduce the collapsed route's `−0.9200`. That figure was
+measured on the REAL spectra's own templates, not on these pseudo-spectra, and asserting the two must
+agree would be the recurring fault again. The `−0.9200 / 5.03 / 6.51x` stays as the number the verdict is
+read AGAINST, not as a control these must reproduce.*
+
+## A2.4 ⛔ Two amendments, and what that means
+
+The threshold has not moved in either amendment, and both were forced by measurements made before any
+statistic existed. ⚠ **But a registration that needed amending twice before its first number was a
+registration whose framing did not fit its instrument**, and the common cause of both is the same: I
+specified the statistic from the *continuum* integrand — where `S^2(k)` multiplies pointwise and logs are
+innocent — and not from the *banked discretisation*, where the integrand underflows, spans 641 orders of
+magnitude, and concentrates 99 % of itself in 11 % of the nodes.
+
+⇒ **That is the recurring fault a third time inside one revision**, in the same place each time: §1 caught
+it about the grid, amendment 1 caught it about the zeros, and amendment 2 catches it about the dynamic
+range. ⌗ *All three were caught before a statistic existed, which is what registering before computing is
+for — and the honest reading is that the registration should have been written against the instrument's own
+measured properties rather than against the physics it stands for.*
