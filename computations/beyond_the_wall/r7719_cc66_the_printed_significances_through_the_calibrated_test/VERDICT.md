@@ -87,3 +87,83 @@ or failed.
 - **No corrected sentence is landed.** Drafts are in `DRAFTS.md` and routed to 69; they are `P15`
   sentences.
 - **The discriminant ratios are not read here.** That is the order's item 4 and it is next, not done.
+
+---
+
+# ITEM 4 — **THE PSEUDO-SPECTRUM ROUTE IS CLOSED, AND THE REASON IS GEOMETRIC RATHER THAN STATISTICAL**
+
+## THE READING AT `10⁷`
+
+| ratio | widest window | `p` | at the bar (`6.3 × 10⁻⁵`) |
+|---|---|---|---|
+| own × own | `+0.02612` | `8.99 × 10⁻²` | ⛔ not resolved |
+| kernel alone | `−0.02860` | `4.73 × 10⁻¹` | ⛔ not resolved |
+| source alone | `+0.04814` | `3.62 × 10⁻¹` | ⛔ not resolved |
+
+⌗ *`0.040`–`0.090` for own × own across the three widths; `0.47`–`0.62` and `0.36`–`0.47` for the two
+single differences. **Nothing is resolved anywhere.*** ⇒ *Per the order: the finding is that the
+pseudo-spectrum cannot decide the question.*
+
+⛭ **The batched surrogate generator was checked against the committed loop before anything was read**:
+same seed, same curve, mean / sd / `|max|` / `99.9`th percentile agreeing to every printed digit. *A
+performance change that moved the null would have been a statistical change; this one provably is not,
+and it brought nine curves at `10⁷` from thirty-six minutes to two.*
+
+## ⛔ WHY THE STEP CANNOT RESOLVE IT — **ONE SIDE IS HALF OF ONE INDEPENDENT WINDOW**
+
+Measured, not asserted. The curve's own autocorrelation length against each group's span:
+
+| half-width | centres | low / high used | autocorr length | **effective independent windows, low + high** |
+|---|---|---|---|---|
+| `0.175` | `40` | `8`/`16` | `0.200` | `1.75` + `3.75` |
+| `0.250` | `38` | `6`/`16` | `0.350` | `0.71` + `2.14` |
+| `0.350` | `36` | `4`/`16` | `0.300` | **`0.50`** + `2.50` |
+
+⛔ **At the widest registered window the low group is HALF of one independent window.** ⇒ *The `40`
+centres are an illusion of sample size: they overlap, and the step is a difference between about two and
+a half independent windows and about half of one. No `l` density touches that — the grid is already every
+integer — and no denominator touches it either, because the information is not there to summarise.*
+
+## ⛭⛭ AND THE DEEPER REASON — **THE TWO MECHANISMS' TEMPLATES ARE `92` PER CENT ANTI-PARALLEL**
+
+The obvious replacement for a step is to fit the two mechanisms as templates to the whole curve, using
+every centre instead of two group means. **So the first thing to measure is whether they can be
+separated at all**, and they cannot:
+
+| | |
+|---|---|
+| correlation of the two templates (means removed) | **`−0.9200`** |
+| cosine of the angle between them | **`−0.9200`** |
+| condition number of the two-amplitude design | `5.03` |
+| ⇒ **variance inflation on each amplitude** | **`6.51`×** |
+| the amplitudes the fit returns on the measured contrast | kernel `+1.045`, source `+1.061` |
+
+⇒ **The kernel-held and source-held difference curves point almost along one line.** A two-amplitude fit
+inflates each amplitude's variance sixfold, so it separates nothing. ⛔ **The route is closed
+geometrically: no estimator, no sample size and no denominator separates two effects that act along the
+same direction.**
+
+### ⛭ AND THIS EXPLAINS THE SIGN REVERSAL I REPORTED AT `r7713`
+
+Two nearly anti-parallel templates with amplitudes near `1` each sum to something whose apparent
+*"which one dominates"* flips under tiny perturbations. ⇒ **The sparse reading's sign instability and
+this `−0.92` are the same fact**, and the earlier report of the reversal was a symptom of a geometry I
+had not yet measured. *The decomposition is also nearly exact — `1.045` and `1.061` against `1` and `1` —
+which is the same `5`–`6` per cent interaction `r7717`'s log-additivity test was looking at.*
+
+## ⇒ THE BUILD THAT COULD: **STOP COLLAPSING THE `k`-SUM**
+
+The two swaps are anti-parallel **because the pseudo-spectrum collapses them into one number per `l`**:
+`Pseudo(S,K)_l = Σ_k G_l^K(k)² S(k)² dk/k`. The source swap changes `S(k)` — a function of `k` alone. The
+kernel swap changes `G_l^K(k)` — a function of `l` AND `k`. **Summed over `k`, both arrive as one
+`l`-dependent curve and nothing distinguishes them.**
+
+⇒ **Keep the integrand two-dimensional.** On the `(l, k)` plane the source difference rescales along `k`
+identically at every `l`, while the kernel difference does not. **The two effects have different rank
+structure there, so they are separable by construction rather than by statistics** — which is exactly
+what the collapsed object destroys.
+
+⚠ **What I am NOT claiming:** that the two-dimensional build will resolve it. **Its separability is
+measurable and is not measured here**, and asserting it would be the fault this revision has spent its
+length catching. ⇒ *That measurement is the next registration, not a result of this one. What IS
+established here is why nothing done inside the collapsed object could ever have worked.*

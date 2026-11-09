@@ -1,0 +1,16 @@
+
+  ⛭ THE TWO MECHANISMS' TEMPLATES, AND WHETHER THEY ARE PARALLEL
+     templates in q on the control's own grid, each the log-ratio of a single swap:
+       kernel-held   mean -0.00542  sd 0.08576  range -0.2477 .. +0.1217
+       source-held   mean -0.06539  sd 0.06873  range -0.1926 .. +0.0706
+       own x own     mean -0.06682  sd 0.03780  range -0.1648 .. -0.0068
+
+       correlation of the two templates (means removed): -0.9200
+       cosine of the angle between them:                 -0.9200
+       condition number of the two-amplitude design:     5.03
+       ⇒ variance inflation of each amplitude: 6.51x
+
+       the two amplitudes the fit returns on the measured contrast: kernel +1.0451, source +1.0609
+       (an exact linear decomposition would give 1 and 1; the departure is the interaction)
+
+  ⇒ the templates are ⛔ NEARLY PARALLEL, so a two-amplitude fit CANNOT separate them

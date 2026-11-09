@@ -81,12 +81,70 @@ three ways forward are in `DRAFTS.md`, the choice is yours, and I have flagged t
 (*leave it; it is literally a ratio and makes no probability claim*) is also the one that costs me
 nothing, so you can weigh it accordingly.
 
-### ⇒ WHAT IS NEXT, AND WHAT IS NOT DONE
+### ⛭⛭ ITEM 4 — **DONE. THE ROUTE IS CLOSED, AND THE REASON IS GEOMETRIC RATHER THAN STATISTICAL**
 
-**Item 4 — the three discriminant ratios at `10⁷` — is NOT done.** It is the next thing and nothing about
-it is prejudged. ⌗ *The census receipts are green with the new functions present (`47`, `59`, `25`).
-Nothing is minted into the corpus. And `main` was merged before anything here, so the launch lock `70`
-added is in place for whenever item 4 needs it.*
+At `10⁷`, at the widest registered window: own × own `p = 8.99 × 10⁻²`, kernel alone `4.73 × 10⁻¹`,
+source alone `3.62 × 10⁻¹`. **Nothing is resolved at any width.** ⇒ *Per your own clause: the finding is
+that the pseudo-spectrum cannot decide the question.*
+
+⌗ *The batched surrogate generator was checked against the committed loop first — same seed, same curve,
+mean / sd / `|max|` / `99.9`th percentile agreeing to every printed digit — because a performance change
+that moved the null would have been a statistical change. It brought nine curves at `10⁷` from
+thirty-six minutes to two.*
+
+#### ⛔ WHY THE STEP CANNOT RESOLVE IT: ONE SIDE IS **HALF OF ONE INDEPENDENT WINDOW**
+
+| half-width | low / high centres | autocorr length | **effective independent windows** |
+|---|---|---|---|
+| `0.175` | `8`/`16` | `0.200` | `1.75` + `3.75` |
+| `0.250` | `6`/`16` | `0.350` | `0.71` + `2.14` |
+| `0.350` | `4`/`16` | `0.300` | **`0.50`** + `2.50` |
+
+⛔ **The forty centres are an illusion of sample size — they overlap.** At the widest window the step is a
+difference between about two and a half independent windows and about half of one. *No `l` density
+touches that: the grid is already every integer. No denominator touches it either, because the
+information is not there to summarise — which is the real reason your option 2 could not be rescued.*
+
+#### ⛭⛭ AND THE DEEPER REASON — **THE TWO MECHANISMS' TEMPLATES ARE `92` PER CENT ANTI-PARALLEL**
+
+Before naming a replacement build I measured whether the obvious one — fit the two mechanisms as
+templates to the whole curve instead of comparing two group means — could work at all. **It cannot:**
+
+| | |
+|---|---|
+| correlation of the two templates (means removed) | **`−0.9200`** |
+| condition number of the two-amplitude design | `5.03` |
+| ⇒ variance inflation on each amplitude | **`6.51`×** |
+| amplitudes the fit returns on the measured contrast | kernel `+1.045`, source `+1.061` |
+
+⇒ **The kernel-held and source-held difference curves point almost along one line, so no estimator, no
+sample size and no denominator separates them.** The route is closed geometrically.
+
+⛭ **And this explains the sign reversal I reported at `r7713`.** Two nearly anti-parallel templates with
+amplitudes near `1` each sum to something whose apparent *"which one dominates"* flips under tiny
+perturbations. **The sparse reading's sign instability and this `−0.92` are the same fact** — my earlier
+report of the reversal was a symptom of a geometry I had not yet measured. *The decomposition is also
+nearly exact, `1.045` and `1.061` against `1` and `1`, which is the same `5`–`6` per cent interaction
+`r7717`'s additivity test was looking at.*
+
+#### ⇒ THE BUILD THAT COULD: **STOP COLLAPSING THE `k`-SUM**
+
+The two swaps are anti-parallel **because the pseudo-spectrum collapses them into one number per `l`.**
+The source swap changes `S(k)`, a function of `k` alone; the kernel swap changes `G_l^K(k)`, a function of
+`l` **and** `k`. Summed over `k`, both arrive as one `l`-curve and nothing distinguishes them.
+
+⇒ **Keep the integrand two-dimensional.** On the `(l, k)` plane the source difference rescales along `k`
+identically at every `l` and the kernel difference does not: **different rank structure, so separable by
+construction rather than by statistics.** That is what the collapse destroys.
+
+⚠ **I am NOT claiming the two-dimensional build will resolve it.** Its separability is measurable and is
+**not measured here**, and asserting it would be the very fault this revision spent its length catching.
+⇒ *That measurement is the next registration, not a result of this one. What IS established is why
+nothing done inside the collapsed object could ever have worked — which closes `r7711`'s question in the
+only way it was ever going to close.*
+
+⌗ *Census green with every new function present. Nothing minted into the corpus. `main` was merged before
+any of this, so `70`'s launch lock is in place.*
 
 
 ## ⛔⛔ `r7717+cc66` — **THE RULED DENOMINATOR IS NOT LICENSED. YOUR CONDITION ⓶ IS WHAT CAUGHT IT, AND YOUR REASONING IS NOT WHAT FAILED**
