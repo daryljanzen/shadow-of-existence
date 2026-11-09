@@ -1,0 +1,153 @@
+
+  ================================================================================================
+  r7728 (60) -- A COLD READ OF THE SIGNED-SIGNATURE FIX, answering order r7725
+  ================================================================================================
+      P3                    251959 chars    1341 lines
+      SlicingCurvature      927189 chars   18579 lines
+      SlicingSky            896844 chars   18015 lines
+      axiom tokens: 0; `sorry`: 0
+
+  ================================================================================================
+  Ⓢ  THE INSTRUMENT, TESTED BEFORE USE -- the ten defects of r7724 and r7726 as precautions
+  ================================================================================================
+  [PASS] Ⓢ① the generated character table accepts SYMBOL as well as LETTER (r7724 ⓵), so `ϱ`, `ε`, `ψ`, `σ` are all present
+         ⌗ ϱ→rho_symbol, ε→epsilon, ψ→psi, σ→sigma; 27 found
+  [PASS] Ⓢ② `decl_statement` stops at the `:= by` that begins a proof, not at a `:=` inside
+         ⌗ 538 chars; ends …'/ 2))) ∧\n      (m / rh ^ 2 - 2 * rh) / 2 ≠ 0'
+  [PASS] Ⓢ③ and returns None for a name that is not there (the negative)
+         ⌗ None as required
+  [PASS] Ⓢ④ `conclusion_of` reads at bracket depth ZERO (r7720, injected)
+         ⌗ read 'A ∧ ((x : ℝ) : ℂ) = 0'
+  [PASS] Ⓢ⑤ `hypotheses_of` keeps nested closing brackets and stops before the conclusion (r7724 ⓶, injected)
+         ⌗ ['m : ℝ', 'r : ℝ → ℝ', 'hr : ∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t', 'x : Fin 2 → ℝ', 'hx : r (x 0) ≠ 0', 'hpos : 0 < sl_f m (r (x 0))']
+  [PASS] Ⓢ⑥ `env_body` locates by LABEL and returns None for one not present
+         ⌗ prop:curvature body 250 chars
+  [PASS] Ⓢ⑦ `where_token` separates a statement hit from a docstring hit (r7726 ⓵, the defect that found a finding)
+         ⌗ in SlicingCurvature.lean, `K_G`: total 1, in statements 0, in section headers 0, elsewhere 1
+  [PASS] Ⓢ⑧ ⚠ the root finder now sees a DOUBLE root. Its first draft found roots by SIGN CHANGE alone and reported "no positive roots" on the Nariai member, where there is one of multiplicity two -- a tangency changes no sign. Checked on both: m = 0 gives three simple roots, and the Nariai value gives the double root at 1/√3
+         ⌗ m = 0: [(-1.0, 1), (0.0, 1), (1.0, 1)]
+         ⌗ Nariai m = 2/(3√3) = 0.384900179: [(-1.1547005384, 1), (0.5773502692, 2)]
+  [PASS] Ⓢ⑨ and the two curvature forms are wired so they COULD disagree: they are computed by different routes, one from the expression and one from f′
+         ⌗ at m = 0.273, r = 0.5: expression -0.092000000000, −f′/2r -0.092000000000
+
+  ================================================================================================
+  Ⓐ  THE REVISED `prop:curvature`, AND THE ORDER'S FIRST QUESTION
+  ================================================================================================
+  [PASS] Ⓐ① the proposition states the metric with the signature as a FACTOR, `ε = sgn f`, and says the curvature holds "on every piece"
+         ⌗ …The slicing surface $ds^{2}=\epsilon\,dl^{2}+r(l)^{2}d\phi^{2}$, $\epsilon=\operatorname{sgn}f$, has on every piece the Gaussian curvature \begin{equation}\label{eq:KG} K_{G}=-\frac{f'(r)}{2…
+  [PASS] Ⓐ② its proof gives `K_G = −ε r″/r` and says the two signs CANCEL, naming the de Sitter case as the `ε = −1` anchor
+         ⌗ …For a two-dimensional metric $\epsilon\,dl^{2}+r(l)^{2}d\phi^{2}$ the Gaussian curvature is $K_{G}=-\epsilon\,r''(l)/r$: for $\epsilon=+1$ the surface-of-revolution formula, and for $\epsilon=-1$ the curvature of a two-dimensional expanding metric, which is $+1/\alpha^{2}$ on de~Sitter's $\cosh$ piece. From $dr/dl=\sqrt{|f|}$, d…
+  [PASS] Ⓐ③ ⚠ THE ENDPOINT THAT BIT TWICE BEFORE, and the wording avoids it: `ε = sgn f` is THREE-valued and `sgn 0 = 0`, at which `ε dl² + r²dφ²` is DEGENERATE. The proposition says "on every piece", and a piece is bounded BY the horizons, so no horizon is in any piece. ⌗ The machine-checked statements carry the same exclusion as STRICT inequalities, so the prose and the formalisation agree on where nothing is claimed
+         ⌗ the static statement requires `0 < sl_f m (r (x 0))` and the continued one `sl_f m (ρ (x 0)) < 0`, both STRICT; and `prop:turning`'s own value at a horizon is a one-sided LIMIT rather than a value, so the degenerate point is excluded in three places at once
+  [PASS] Ⓐ④ all three sentences `r7726` flagged are still in the paper, located by text
+         ⌗ all three located verbatim
+  [PASS] Ⓐ⑤ ⛭ THE IDENTITY THE FIRST TWO SENTENCES REST ON holds at every radius, positive and negative alike: `d²r/dτ̃² = −f′/2 = r·K_G` exactly. So the proposition now carries the curvature they invoke, on every piece
+         ⌗ r= -1.50  f=  -1.06800  K_G=   +1.0404444  r·K_G=   -1.5606667  −f′/2=   -1.5606667
+         ⌗ r= -0.60  f=  +1.09500  K_G=   +1.6319444  r·K_G=   -0.9791667  −f′/2=   -0.9791667
+         ⌗ r= -0.20  f=  +2.32500  K_G=  +18.0625000  r·K_G=   -3.6125000  −f′/2=   -3.6125000
+         ⌗ r= +0.12  f=  -1.28940  K_G=  -77.9930556  r·K_G=   -9.3591667  −f′/2=   -9.3591667
+         ⌗ r= +0.50  f=  +0.20400  K_G=   -0.0920000  r·K_G=   -0.0460000  −f′/2=   -0.0460000
+         ⌗ r= +1.40  f=  -1.15500  K_G=   +0.9502551  r·K_G=   +1.3303571  −f′/2=   +1.3303571
+         ⌗ r= +2.50  f=  -5.35920  K_G=   +0.9912640  r·K_G=   +2.4781600  −f′/2=   +2.4781600
+  [FAIL] Ⓐ⑥ ⛔⛭⛭ **BUT TWO OF THE THREE CARRY AN `r > 0` ASSUMPTION IN THEIR OWN WORDS, AND THE CONJUGATE BRANCH BREAKS IT.** The first says the curvature is the acceleration "up to the POSITIVE factor `r`" -- and on the conjugate branch `r` is negative. The second identifies the SIGN of the curvature with the sign of the acceleration -- and since the acceleration is `r·K_G`, those signs are OPPOSITE wherever `r < 0`. The third is carried outright. ⇒ So the proposition now covers all three, and it is the two sentences' own wording that still assumes a positive radius
+         ⌗ the identity is `d²r/dτ̃² = r·K_G`, so:
+         ⌗ r= -1.50: K_G=   +1.040444, acceleration=   -1.560667 -- signs OPPOSE
+         ⌗ r= -0.60: K_G=   +1.631944, acceleration=   -0.979167 -- signs OPPOSE
+         ⌗ r= -0.20: K_G=  +18.062500, acceleration=   -3.612500 -- signs OPPOSE
+         ⌗ r= +0.12: K_G=  -77.993056, acceleration=   -9.359167 -- signs AGREE
+         ⌗ r= +0.50: K_G=   -0.092000, acceleration=   -0.046000 -- signs AGREE
+         ⌗ r= +1.40: K_G=   +0.950255, acceleration=   +1.330357 -- signs AGREE
+         ⌗ r= +2.50: K_G=   +0.991264, acceleration=   +2.478160 -- signs AGREE
+         ⌗ and "up to the positive factor r" is false at every negative radius, where the factor is the radius itself
+
+  ================================================================================================
+  Ⓑ  THE NEW REGION SENTENCE, AND THE ORDER'S SECOND QUESTION
+  ================================================================================================
+  [PASS] Ⓑ① the sentence is in the paper as the order quotes it, and it scopes itself to the undercritical regime
+         ⌗ …In the undercritical regime the pieces of the curve between those three points are the three regions of the line element: run from $r=0$ around the throat circle, the arc up to the black-hole horizon is the black-hole interior, the arc on from there to the cosmological horizon is the static region, …
+  [PASS] Ⓑ② and it assigns the signatures: Riemannian on the static arc, Lorentzian on the other two, flipping at each horizon
+         ⌗ located verbatim
+
+      de Sitter, M = 0         2M=0.000000  27M²=0.000000  roots [(-1.0, 1), (0.0, 1), (1.0, 1)]  positive [(1.0, 1)]
+      undercritical, r₀ = 0.3  2M=0.273000  27M²=0.503071  roots [(-1.1156603958, 1), (0.3, 1), (0.8156603958, 1)]  positive [(0.3, 1), (0.8156603958, 1)]
+      undercritical, r₀ = 0.8  2M=0.288000  27M²=0.559872  roots [(-1.1211102551, 1), (0.3211102551, 1), (0.8, 1)]  positive [(0.3211102551, 1), (0.8, 1)]
+      Nariai, 27M² = α²        2M=0.384900  27M²=1.000000  roots [(-1.1547005384, 1), (0.5773502692, 2)]  positive [(0.5773502692, 2)]
+      overcritical, 2M = 0.5   2M=0.500000  27M²=1.687500  roots [(-1.191487884, 1)]  positive []
+  [PASS] Ⓑ③ the sentence's three regions need TWO distinct positive horizons, and that is what the strictly undercritical members have
+         ⌗ de Sitter, M = 0: three regions False; undercritical, r₀ = 0.3: three regions True; undercritical, r₀ = 0.8: three regions True; Nariai, 27M² = α²: three regions False; overcritical, 2M = 0.5: three regions False
+  [FAIL] Ⓑ④ ⛔⛭ **THE DE SITTER MEMBER IS UNDERCRITICAL BY THE DISCRIMINANT AND HAS NO BLACK-HOLE INTERIOR**, so the sentence names a region it does not have. With `M = 0` the cubic is `r³ − α²r` with roots `{+α, 0, −α}`: ONE positive root, the cosmological horizon, and the black-hole horizon has merged into `r = 0` — which the paper itself says elsewhere, in so many words. ⇒ "In the undercritical regime" does not exclude it, because `27M² = 0 < α²`
+         ⌗ de Sitter: 27M² = 0.0 < 1, so undercritical by the discriminant; positive roots [(1.0, 1)] -- one, not two
+         ⌗ and the paper already describes the degeneration: "The black-hole horizon shrinks until it merges into $r=0$ at the back"
+  [PASS] Ⓑ⑤ the OVERCRITICAL member is correctly scoped away: it has no positive root at all, so no horizon and no static region, and "In the undercritical regime" excludes it. ⚠ And the NARIAI member, which the order does not name, has ONE positive root of multiplicity TWO -- the merged horizon -- so it has no static interval either and is likewise outside the sentence's scope
+         ⌗ overcritical 2M = 0.5: 27M² = 1.6875 > 1, positive roots [], f(0.5) = -0.2500 < 0
+         ⌗ Nariai: 27M² = 1.000000, positive roots [(0.5773502692, 2)] -- a double root at 0.577350269, f there = -5.55e-17
+
+  ================================================================================================
+  Ⓒ  "ON EVERY PIECE" AT `r < 0`, AND THE ORDER'S THIRD QUESTION
+  ================================================================================================
+  [PASS] Ⓒ① the construction does reach `r < 0`: the areal radius is SIGNED and the slicing CLOSES through `r = 0` onto the conjugate branch, so the question is a real one
+         ⌗ the abstract: "Because the areal radius is signed, the slicing closes: run inward to the seam, around the throat through $r=0$ … and out onto the conjugate branch"
+  [PASS] Ⓒ② ⛭⛭ **"ON EVERY PIECE" HOLDS AT `r < 0`, AND THIS IS THE TWO-SIGN-CHANGE CASE I REGISTERED AS THE SUBTLE PART.** Both forms divide by `r`, which is negative there, and `M/r³` also changes sign -- so a reading that tracked one of the two would conclude confidently and wrongly. Compared NUMERICALLY rather than reasoned about: the two forms agree at every negative radius tested, as they must, the identity `−f′/2r = 1/α² − M/r³` being algebraic and sign-blind
+         ⌗ r= -3.00  f=   -7.90900  1/α²−M/r³=   +1.00505556  −f′/2r=   +1.00505556  agree True
+         ⌗ r= -1.50  f=   -1.06800  1/α²−M/r³=   +1.04044444  −f′/2r=   +1.04044444  agree True
+         ⌗ r= -0.60  f=   +1.09500  1/α²−M/r³=   +1.63194444  −f′/2r=   +1.63194444  agree True
+         ⌗ r= -0.20  f=   +2.32500  1/α²−M/r³=  +18.06250000  −f′/2r=  +18.06250000  agree True
+         ⌗ r= -0.05  f=   +6.45750  1/α²−M/r³=+1093.00000000  −f′/2r=+1093.00000000  agree True
+  [FAIL] Ⓒ③ ⛔⛭⛭ **AND HERE IS THE WORD THE ORDER ASKS ABOUT: CONSEQUENCE THREE IS RESTORED UNSCOPED, AND "ON EVERY PIECE" NOW CARRIES IT ONTO THE CONJUGATE BRANCH, WHERE IT IS FALSE.** It reads "changes sign once, at `r_HE`, being negative for `r < r_HE` and positive for `r > r_HE`". At `r < 0` the term `-M/r^3` is POSITIVE, so `K_G > 1/a^2` everywhere there: it never vanishes, never changes sign, and has no flat locus -- yet `r < 0` satisfies `r < r_HE`, where the sentence says NEGATIVE. ⌗ The defect is new in kind: not the signature flip, which is resolved, but the mass term changing sign with `r^3`
+         ⌗ the unscoped sentence is present in the paper: True
+         ⌗ K_G = 0 iff r^3 = M a^2, whose only real root is r = 0.514885763 > 0, so there is exactly one sign change and it is on the positive branch
+         ⌗ r= -3.00: K_G =    +1.00505556 > 1/a^2 = 1, and r < r_HE, where the sentence says negative
+         ⌗ r= -1.50: K_G =    +1.04044444 > 1/a^2 = 1, and r < r_HE, where the sentence says negative
+         ⌗ r= -0.60: K_G =    +1.63194444 > 1/a^2 = 1, and r < r_HE, where the sentence says negative
+         ⌗ r= -0.20: K_G =   +18.06250000 > 1/a^2 = 1, and r < r_HE, where the sentence says negative
+         ⌗ r= -0.05: K_G = +1093.00000000 > 1/a^2 = 1, and r < r_HE, where the sentence says negative
+         ⌗ and just inside the positive branch the sentence is right: K_G(0.05) = -1091.0000, K_G(0.2) = -16.0625, K_G(0.45) = -0.4979
+  [PASS] Ⓒ④ ⛭ and consequence two's NEW clause is true, and it is the signed-signature fix's own payoff: "it takes the same value from either side" -- which is exactly what the two sign flips cancelling buys, and what the earlier scoped wording could not say. Each one-sided value sits within the step times the measured gradient of the value at the horizon itself
+         ⌗ r_h = 0.300000: at it -4.055555556, from inside -4.055560611, from outside -4.055550500; dK/dr there = 50.556, so a 1e-07 step moves it by 5.1e-06
+         ⌗ r_h = 0.815660: at it +0.748461467, from inside +0.748461374, from outside +0.748461559; dK/dr there = 0.925, so a 1e-07 step moves it by 9.3e-08
+  [PASS] Ⓒ⑤ and a NAMED SEARCH rather than an absence claim: no existing sentence already restricts the curvature statement to positive radius, so a repair would not duplicate one
+         ⌗ searched the flattened paper for 'for $r>0$': 1, 'at positive $r$': 0, 'on the positive branch': 0
+
+  ================================================================================================
+  Ⓓ  THE EIGHT NEWLY CITED DECLARATIONS, EACH AGAINST THE SENTENCE THAT CITES IT
+  ================================================================================================
+  [PASS] Ⓓ① all eight exist in the file the sentence names, located by text and not by a remembered filename
+         ⌗ all eight present in SlicingCurvature.lean; cited file in the paper: True
+  [PASS] Ⓓ② ⛭⛭ **THE METHOD CLAIM IS EXACT, NOT A GLOSS -- and this is the arm that would have caught it if it were.** The sentence says the curvature is "computed from the metric's own Riemann tensor". `sl_gauss g x` is `kr_Rlow g x 0 1 0 1 / (g x).det`; `kr_Rlow` lowers `kr_Riem`; and `kr_Riem` is the Riemann tensor built from Christoffel symbols and their partial derivatives. So the curvature really is taken from the metric, and not computed as `−ε r″/r` and called that
+         ⌗ sl_gauss := 2) ℝ) (x : Fin 2 → ℝ) : ℝ := kr_Rlow g x 0 1 0 1 / (g x).det
+         ⌗ kr_Riem is built from kr_Γ and kr_pd: True
+         ⌗ and the metric itself is `sl_g2 ε r = !![ε, 0; 0, r²]`, the signature as a factor: True
+  [PASS] Ⓓ③ `sl_gauss_g2` concludes `−r″/(ε·r)` where the paper writes `−ε r″/r`. ⚠ The two agree only because `ε² = 1`, which holds for `ε = ±1` — and the hypothesis is `ε ≠ 0`, which is weaker. So the declaration is the more general statement and the paper quotes its specialisation; at `ε = ±1` they are the same number
+         ⌗ conclusion: sl_gauss (sl_g2 ε r) x = -r2 / (ε * r (x 0))
+         ⌗ hypotheses: ['hε : ε ≠ 0', 'hd : Differentiable ℝ r', 'x : Fin 2 → ℝ', 'hx : r (x 0) ≠ 0', 'r2 : ℝ', 'h2 : HasDerivAt (deriv r) r2 (x 0)']
+  [PASS] Ⓓ④ ⛭ `sl_curvature_static` and `sl_curvature_continued` are the two halves of "on every piece", and each gives BOTH the `−ε r″/r` form AND the SAME closed expression — which is exactly the cancellation, now machine-checked rather than argued
+         ⌗ static (ε = 1):    sl_gauss (sl_g2 1 r) x = -(deriv (deriv r) (x 0)) / r (x 0) ∧ sl_gauss (sl_g2 1 r) x = 1 - (m / 2) / r (x 0) ^ 3
+         ⌗ continued (ε = −1): sl_gauss (sl_g2 (-1) ρ) x = deriv (deriv ρ) (x 0) / ρ (x 0) ∧ sl_gauss (sl_g2 (-1) ρ) x = 1 - (m / 2) / ρ (x 0) ^ 3
+  [PASS] Ⓓ⑤ `sl_curvature_dS` is the anchor the proof names, and `sl_curvature_witness` exhibits one concrete witness per signature, so neither half is vacuous
+         ⌗ dS: sl_gauss (sl_g2 (-1) Real.cosh) x = 1
+         ⌗ witness: sl_gauss (sl_g2 1 sl_W₁) ![π / 4, 0] = 1 ∧ sl_gauss (sl_g2 (-1) sl_W₂) ![1, 0] = 1
+  [PASS] Ⓓ⑥ `sl_turning_limits` is what `prop:turning`'s wording needs and nothing more: the two ONE-SIDED limits of the acceleration at a simple root, both ±½f′(r_h), both filters non-trivial, and the value nonzero — reaching the root as a LIMIT and not as a value
+         ⌗ (∀ r : ℝ → ℝ, (∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t) → ∀ l, r l ≠ 0 → sl_f m (r l) ≠ 0 → HasDerivAt (deriv r) (sl_A m (r l)) l) ∧ (𝓝[{x | 0 < sl_f m x}] rh).NeBot ∧ (𝓝[{x | sl_f m x < 0}] rh).NeBot ∧ Tendsto (sl_A m) (𝓝[{x | 0 < sl_f m x}] rh) (𝓝 ((m / rh ^ 2 - 2 * rh) / 2)) ∧ Tendsto (sl_A m) (𝓝[{x | sl_f m x < 0}] rh…
+  [PASS] Ⓓ⑦ and `sl_sign_change` is the non-vacuity underneath it: at a simple zero BOTH one-sided neighbourhood filters are non-trivial, so neither limit is taken along an empty approach
+         ⌗ (𝓝[{x | 0 < f x}] a).NeBot ∧ (𝓝[{x | f x < 0}] a).NeBot
+  [PASS] Ⓓ⑧ `sl_seam_square` is the seam's own algebra -- that multiplying by `i` negates a square -- which is the one line the signature flip rests on
+         ⌗ theorem sl_seam_square (a f : ℂ) (h : a ^ 2 = f) : (a * Complex.I) ^ 2 = -f
+  [FAIL] Ⓓ⑨ ⚠ and the two repairs routed to another seat are RE-MEASURED rather than assumed still open. The docstring still carries the struck clause, and the duplication is now wider: a third probe file declares most of the same theorem names again
+         ⌗ the "sign flips outside the static region" docstring is present in 2 of the two files read here
+         ⌗ SlicingSky declares 551 theorems, SlicingCurvature 569, and 551 names are declared in BOTH
+
+  ================================================================================================
+  THE VERDICT
+  ================================================================================================
+  4 arm(s) report a FINDING -- each a reading, not a crash:
+    - Ⓐ⑥ ⛔⛭⛭ **BUT TWO OF THE THREE CARRY AN `r > 0` ASSUMPTION IN THEIR OWN WORDS, AND THE CONJUGATE BRANCH BREAKS IT
+    - Ⓑ④ ⛔⛭ **THE DE SITTER MEMBER IS UNDERCRITICAL BY THE DISCRIMINANT AND HAS NO BLACK-HOLE INTERIOR**, so the sentence names a region it does not have
+    - Ⓒ③ ⛔⛭⛭ **AND HERE IS THE WORD THE ORDER ASKS ABOUT: CONSEQUENCE THREE IS RESTORED UNSCOPED, AND "ON EVERY PIECE" NOW CARRIES IT ONTO THE CONJUGATE BRA
+    - Ⓓ⑨ ⚠ and the two repairs routed to another seat are RE-MEASURED rather than assumed still open
+
+  WHAT IS CARRIED:
+    ⌗ Ⓐ⑥ two cosmological sentences assume a positive radius in their own wording
+    ⌗ Ⓑ④ the region sentence names a black-hole interior the de Sitter member lacks
+    ⌗ Ⓒ③ consequence three, restored unscoped, is false on the conjugate branch
+    ⌗ Ⓓ⑨ the duplication now spans a third file: 551 shared theorem names
+

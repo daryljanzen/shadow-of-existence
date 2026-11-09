@@ -1,0 +1,14 @@
+r7728 (60) -- the tree these readings were taken on
+
+origin/main at the read: 4f9c725da7914e7cf1e33291e67a3a05c7dab449
+  r7725 (69) -- three seats merged; P3: the curvature proposition machine-checked from the metric's Riemann tens
+HEAD at the read:        3b0de16e1c46346260c3fd0236a66dbf43ff45d7
+PREDICTION registered:   3b0de16e1c46346260c3fd0236a66dbf43ff45d7
+
+files read, by digest:
+  bd9885d64595be19  corpus/SdS-slicing-curve_v2.tex
+  3b8a34390d989891  computations/formalisation/lean/probes/SlicingCurvature.lean
+  425a57233209c5db  computations/formalisation/lean/probes/SlicingSky.lean
+
+the order answered: r7725, topmost section of origin/main:FOR_60.md
+arms: 34; findings: 4; probe exit 0
