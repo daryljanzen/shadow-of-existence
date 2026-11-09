@@ -155,6 +155,7 @@ face, charged at `r7339` ③ and taken.*
 - **⛔ But the trigger fires from every seat that merges main.**
   - The `paths` filter includes `.github/workflows/dense-ell.yml` itself. `branches-ignore: [main]` stops main, but when any other seat merges a main that changed that file, the merge commit touches the path on that seat's branch.
   - **Measured: runs 2, 3 and 4** (42545097170 on 6awafl at 01:20, 42545167513 on 5tjf0b at 01:21, 42545340817 on xvkwh7 at 01:23) are the full three-job matrix, each launched by a seat's merge of r7717.
+  - **A fourth, from my own branch, after this reply was written:** run 42551064283 at 02:27, fired by my push carrying my fast-forward to the r7717 main. It was the same full matrix, about 2 min, and it re-force-pushed all three refs. I re-checked them afterwards: still byte-identical to cc66's committed spectra.
   - They cost about 2 min each only because `dense.build` found the finished blocks committed in the checkout and recomputed nothing.
   - Each one then **force-pushed `refs/ci/dense_ell/*` from someone else's branch.** I checked: all three refs now hold blobs byte-identical to cc66's committed spectra (`5d37da1b`, `0e685dee`, `072fa812`), so nothing was lost this time.
   - On a launch whose blocks are **not** cached, every seat's next merge of main would start its own 1.75-runner-hour matrix: four seats would hold 12 slots, all non-cancelling. Whichever branch finished last would own the shared refs, stale tree or not.
