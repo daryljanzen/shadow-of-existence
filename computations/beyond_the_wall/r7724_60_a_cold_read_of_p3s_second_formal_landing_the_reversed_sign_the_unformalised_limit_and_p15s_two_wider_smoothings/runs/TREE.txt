@@ -1,0 +1,15 @@
+r7724 (60) -- the tree these readings were taken on
+
+origin/main at the read: eaac98f7c46d0b966129910fd0f2fcf6c3c31d51
+  Merge remote-tracking branch 'origin/main'
+HEAD at the read:        75526c83d0838ffa5e71e732140cab57e158345d
+PREDICTION registered:   75526c83d0838ffa5e71e732140cab57e158345d
+
+the four files read, by digest:
+  6c1e759ac9387255  corpus/SdS-slicing-curve_v2.tex
+  6c93c6a7c79a5bea  corpus/CR_cosmology.tex
+  425a57233209c5db  computations/formalisation/lean/probes/SlicingSky.lean
+  849fc7b3da5ecc5e  receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py
+
+the order answered: r7721, topmost section of origin/main:FOR_60.md
+arms: 48; findings: 4; probe exit: 0

@@ -1,0 +1,184 @@
+
+  ================================================================================================
+  r7724 (60) -- A COLD READ OF P3's SECOND FORMAL LANDING, answering order r7721
+  ================================================================================================
+      P3      248497 chars    1336 lines
+      P15     504947 chars    3101 lines
+      Lean    896844 chars   18015 lines
+      axiom tokens in the Lean file: 0; `sorry` tokens: 0
+
+  ================================================================================================
+  Ⓢ  THE INSTRUMENT, TESTED BEFORE USE -- every reader shown a NEGATIVE of the opposite class
+  ================================================================================================
+  [PASS] Ⓢ① the Greek table is GENERATED from the characters present, and it contains `σ`, `χ`, `ϱ`, `φ` -- the r7722 defect cannot recur because no list was written by hand
+         ⌗ 27 Greek letters found; σ→sigma, χ→chi, ϱ→rho_symbol, φ→phi
+  [PASS] Ⓢ② `decl_statement` stops at the `:= by` that begins a proof and NOT at a `:=` inside the statement
+         ⌗ 312 chars, ends: …'v r) a l ∧ -a / r l = (m / 2) / r l ^ 3 - 1)'
+  [PASS] Ⓢ③ and it returns None for a name that is not there (the negative)
+         ⌗ returned None
+  [PASS] Ⓢ④ `conclusion_of` reads at bracket depth ZERO: a nested ascription inside the hypotheses does not steal the split (r7720's defect, injected)
+         ⌗ conclusion read as 'A ∧ ((x * y : ℝ) : ℂ) = 0'
+  [PASS] Ⓢ⑤ `hypotheses_of` returns the binder groups, and finds the interval hypothesis of `sl_conjugacy`
+         ⌗ binders: ['x : ℝ', 'hx : x ∈ Set.Icc (0 : ℝ) 1']
+  [PASS] Ⓢ⑥ `env_body` locates an environment BY ITS LABEL and not by line number
+         ⌗ 456 chars
+  [PASS] Ⓢ⑦ and it returns None for a label that is not in the file (the negative)
+         ⌗ None as required
+  [PASS] Ⓢ⑧ the root finder returns the three roots of a cubic whose roots are known: m = 0 gives −1, 0, 1
+         ⌗ [-1.0, 0.0, 1.0]
+  [PASS] Ⓢ⑨ and σ, χ, g₁ and the cubic agree with r7722's landed values at the endpoints it printed, so this probe's arithmetic is the same arithmetic
+         ⌗ σ(0)=1.000000000000, σ(1)=0.00e+00, σ(2/√3)=-0.577350269190
+  [PASS] Ⓢ⑩ the two-case sign law is wired so that it CAN disagree with the expression: on a test member it returns opposite signs across a horizon
+         ⌗ exercised by Ⓑ below, where the disagreement is the finding
+
+  ================================================================================================
+  Ⓐ  `prop:conjugacy` -- the interval, the failure, and the amount
+  ================================================================================================
+  [PASS] Ⓐ① the proposition says the two involutions are conjugate ON `[0,1]`
+         ⌗ … The chart involution $g_{1}$ and the cubic involution $\sigma$ are conjugate on $[0,1]$\rcpt{P03_conjugacy}, \begin{e…
+  [PASS] Ⓐ② `sl_conjugacy` carries the interval as a SET-membership hypothesis `x ∈ Set.Icc 0 1` -- the third reading of the three registered, not an unrestricted identity and not another set
+         ⌗ hypothesis: ['hx : x ∈ Set.Icc (0 : ℝ) 1']
+         ⌗ conclusion: sl_χ (sl_g₁ x) = sl_σ (sl_χ x)
+  [PASS] Ⓐ③ `sl_conjugacy_fails` is UNIVERSAL over `Set.Ico (-1) 0` = `[−1, 0)` and concludes `≠` -- a failure at EVERY point, which is what the prose claims, not one exhibited point
+         ⌗ hypothesis: ['hx : x ∈ Set.Ico (-1 : ℝ) 0']
+         ⌗ conclusion: sl_χ (sl_g₁ x) ≠ sl_σ (sl_χ x)
+  [PASS] Ⓐ④ the order's justification is itself checked: the proof's `a ∈ [0, π/2]` maps under `x = sin a` ONTO `[0,1]` exactly -- not wider, not narrower, so "on [0,1]" is the proof's own domain and neither an unnecessary narrowing nor an insufficient one
+         ⌗ image of [0, π/2] under sin = [0.0e+00, 1.000000000000000]
+  [PASS] Ⓐ⑤ and the proof's step `arcsin sin(π/2 − a) = π/2 − a` FAILS for a < 0 (the negative that shows the hypothesis is load-bearing)
+         ⌗ a = -0.4: arcsin sin(π/2−a) = 1.170796 vs π/2−a = 1.970796, -0.9: arcsin sin(π/2−a) = 0.670796 vs π/2−a = 2.470796, -1.2: arcsin sin(π/2−a) = 0.370796 vs π/2−a = 2.770796
+  [PASS] Ⓐ⑥ the formal sentence's AMOUNT is TRUE: on `[−1,0)` the two sides differ by exactly `χ(x) = (2/√3) sin(⅔ arcsin x)`, computed at 399 samples
+         ⌗ sup|(χ∘g₁ − σ∘χ) − χ| = 5.524e-15, attained at x = -0.0025; at x = −0.5 the gap is -0.394930844 = χ(−0.5) = -0.394930844
+  [PASS] Ⓐ⑦ ⛔ BUT IT IS NOT WHAT THE CITED DECLARATION STATES. `sl_conjugacy_fails`' conclusion is a bare `≠` and names no amount, so the formal sentence's "differing there by the nonzero amount …" is cited to a theorem that does not carry it -- the r7718/r7720 class again: the claim is TRUE and its POINTER over-reaches
+         ⌗ searched the conclusion for '2 / Real.sqrt 3', 'Real.arcsin', 'sub_eq', '= sl_χ x' -- found []
+         ⌗ conclusion in full: sl_χ (sl_g₁ x) ≠ sl_σ (sl_χ x)
+
+  ================================================================================================
+  Ⓑ  `prop:curvature`, the reversed sign, and THE ORDER'S FIRST QUESTION
+  ================================================================================================
+  [PASS] Ⓑ① the proposition scopes its formula to the static region and states the reversal
+         ⌗ …On the static region $f>0$, the slicing surface $ds^{2}=dl^{2}+r(l)^{2}d\phi^{2}$ has Gaussian curvature \begin{equation}\label{eq:KG} K_{G}=-\frac{f'…
+  [PASS] Ⓑ② `sl_curvature_sign` is ONE statement with the two regions as HYPOTHESES of two implications, and its two values are exact negatives of each other
+         ⌗ conclusion: (0 < sl_f m (r l) → ∃ a, HasDerivAt (deriv r) a l ∧ -a / r l = 1 - (m / 2) / r l ^ 3) ∧ (sl_f m (r l) < 0 → ∃ a, HasDerivAt (deriv r) a l ∧ -a / r l = (m / 2) / r l ^ 3 - 1)
+  [PASS] Ⓑ③ ⚠ and it is about `-a / r l`, i.e. `−r″/r`, and NOT about `K_G`: the bridge is named in a DOCSTRING and in no statement anywhere, and the words "Gauss" and "surface of revolution" are absent from the file entirely -- so "cited and not formalised" is exact
+         ⌗ `K_G` occurs 1 time(s) in the file and in 0 statement(s); 'Gauss': 0; 'surface of revolution': 0
+         ⌗ ⚠ and a cruder search would have been WRONG: `KG` matches 8 `section KG…` headers belonging to another campaign, which is a NAME in a different sense and not this formula -- the defect this arm found in itself before using it
+         ⌗ the statement's own subject is '-a / r l'
+  [PASS] Ⓑ④ the consequences are COUNTED rather than taken from the order: the text says "three" and three ordinal markers follow
+         ⌗ prose says 'Three'; markers found ['First,', 'Second,', 'Third,']
+
+      ⛭ the test member, undercritical: m = 2M = 0.273000, M = 0.136500; positive horizons [0.3, 0.81566]; r_HE = (Mα²)^⅓ = 0.514886
+  [PASS] Ⓑ⑤ the member is the one the consequences describe: two positive horizons with r_HE strictly between them, inside the static region
+         ⌗ 0.300000 < 0.514886 < 0.815660, and f(r_HE) = +0.204678 > 0
+  [PASS] Ⓑ⑥ CONSEQUENCE ONE is TRUE AS WRITTEN: it scopes its regularity claim to the static region, and what it asserts -- finiteness and smoothness -- is SIGN-INDEPENDENT, so the reversal cannot touch it. ⌗ This is reading (b) of the four registered: the scope is present and the claim would survive without it
+         ⌗ scope phrase present: True; |K_G| under the expression vs under the sign law at r = 0.2, 0.45, 0.8, 2.0: 16.062500/16.062500, 0.497942/0.497942, 0.733398/0.733398, 0.982938/0.982938
+  [FAIL] Ⓑ⑦ ⛔⛭ CONSEQUENCE TWO IS NO LONGER TRUE AS WRITTEN, and this is the order's first question answered against the paper. It asserts a SINGLE value AT a horizon -- "$K_G(r_h)=1/α²-M/r_h³$ is simply a finite number" -- and says "the curvature does not detect the horizons". Under the proposition's own two-case law the surface's curvature takes OPPOSITE SIGNS on the two sides of each horizon, so it JUMPS there by twice that number and is not even single-valued at it. The MAGNITUDE is horizon-blind; the SIGN is not, and a sign flip exactly at f = 0 is the curvature detecting the horizon in the sharpest possible way
+         ⌗ scope phrase present: False
+         ⌗ at r_h = 0.300000: one-sided values -4.055556 (f>0 side) and +4.055556 (f<0 side), jump 8.111111, f′(r_h) = +2.433333
+         ⌗ at r_h = 0.815660: one-sided values +0.748461 (f>0 side) and -0.748461 (f<0 side), jump 1.496923, f′(r_h) = -1.220981
+         ⌗ the jump vanishes only where f′(r_h) = 0, i.e. at the double root -- the Nariai member alone
+  [FAIL] Ⓑ⑧ ⛔⛭⛭ CONSEQUENCE THREE IS FALSE AS WRITTEN OUTSIDE THE STATIC REGION, and it is the sharpest of the three. It says the curvature "changes sign ONCE, at r_HE", "being negative for r < r_HE and positive for r > r_HE", with NO scope on the claim -- the scope that follows locates r_HE and does not restrict the claim. Under the reversal the curvature also changes sign at EVERY horizon where f′ ≠ 0, so "once" is wrong, and both halves of the direction invert beyond the horizons
+         ⌗ scope phrase present anywhere in the consequence: True; the claim itself: …negative for $r<r_{\mathrm{HE}}$ and positive for $r>r_{\mathrm{HE}}$…
+         ⌗ r = 0.120: f = -1.289400 (NOT static), expression -77.993056, actual K_G +77.993056 -- claim says negative
+         ⌗ r = 0.180: f = -0.549067 (NOT static), expression -22.405350, actual K_G +22.405350 -- claim says negative
+         ⌗ r = 1.600: f = -1.730625 (NOT static), expression +0.966675, actual K_G -0.966675 -- claim says positive
+         ⌗ r = 2.500: f = -5.359200 (NOT static), expression +0.991264, actual K_G -0.991264 -- claim says positive
+         ⌗ sign changes of the ACTUAL curvature on (0, 3): at r_HE = 0.514886 and at each of [0.3, 0.81566] -- three, not one
+  [PASS] Ⓑ⑨ ⚠ THE TWO ENDPOINTS, and the one I registered as likely to bite is NOT the one that does. Where the curvature VANISHES -- at r_HE itself -- the reversal is vacuous, since −0 = 0, so "its sign is reversed" is literally true there. The endpoint that bites is f = 0, and the arm must test it by the TWO ONE-SIDED values rather than by asking whether f is exactly zero, because the root is a root of the CUBIC and f at it is zero only to the bisection's residual. ⌗ My first version asked the exact question and the residual answered it: f came back at −1e−17 and the "curvature at the horizon" was reported as a definite number whose SIGN was decided by that residual -- which is the sharpest witness available that the quantity is not single-valued there
+         ⌗ K_G = +4.44e-16 at r = 0.514885763 (= r_HE), where reversal is vacuous
+         ⌗ at the horizon r_h = 0.300000000: f(r_h) = -1.388e-16, and evaluating the two-case law AT it returns +4.055555556 -- a value whose sign is set by a 1e−17 residual
+         ⌗ the honest reading is the pair: K_G(r_h − 1e-07) = +4.055560611, K_G(r_h + 1e-07) = -4.055550500, of opposite sign
+
+  ================================================================================================
+  Ⓒ  `prop:turning`, the unformalised limit, and THE ORDER'S SECOND QUESTION
+  ================================================================================================
+  [PASS] Ⓒ① the proposition states the value AT the root, written as an evaluation bar, and asserts it is nonzero
+         ⌗ the statement carries ['\\Big|_{r_{h}}', '\\pm\\tfrac12 f', '\\neq0']
+  [PASS] Ⓒ② `sl_turning` relates the metric function to the cubic and says √|f| vanishes exactly at the cubic's roots -- it reaches the root, and says nothing about a second derivative
+         ⌗ conclusion: r * sl_f m r = -sl_cubic m r ∧ (Real.sqrt |sl_f m r| = 0 ↔ sl_cubic m r = 0)
+  [PASS] Ⓒ③ `sl_turning_simple` is AT a root (`sl_cubic m r = 0`) but its derivatives are those of `f` and of the cubic IN r -- not `d²r/dl²`
+         ⌗ hypotheses: ['m : ℝ', 'r : ℝ', 'hr : r ≠ 0', 'hc : sl_cubic m r = 0']
+         ⌗ conclusion: HasDerivAt (sl_f m) (-(3 * r ^ 2 - 1) / r) r ∧ HasDerivAt (sl_cubic m) (3 * r ^ 2 - 1) r ∧ (-(3 * r ^ 2 - 1) / r = 0 ↔ 3 * r ^ 2 - 1 = 0) ∧ (3 * r ^ 2 - 1 = 0 ↔ r = 1 / Real.sqrt 3 ∨ r = -(1 / Real.sqrt 3))
+  [PASS] Ⓒ④ `sl_accel_pos` and `sl_accel_neg` ARE about `d²r/dl²` (`deriv r`), and each carries a STRICT inequality on f, so NEITHER reaches f = 0 -- they are the two signs of the same one-sided statement, not a region split that covers the root
+         ⌗ pos hypothesis: 0 < f (r l); conclusion HasDerivAt (deriv r) (f' / 2) l
+         ⌗ neg hypothesis: f (r l) < 0; conclusion HasDerivAt (deriv r) (-f' / 2) l
+  [PASS] Ⓒ⑤ ⚠ the r7718 guard: the SUBJECT of what is machine-checked is read as the noun phrase the predicate takes, never by counting words. `HasDerivAt` takes `(deriv r)` -- a property of the CURVE -- while `f'` is a property of the METRIC FUNCTION. The two are not interchangeable and the statement keeps them apart
+         ⌗ the predicate's first argument is '(deriv'; the value is `f'/2`, the metric function's derivative -- so the statement is about the curve and the metric function both, in the right places
+  [FAIL] Ⓒ⑥ ⛔⛭ THE ORDER'S SECOND QUESTION: A WORD IS NEEDED, and not only because the limit is unformalised -- the proposition's own PROOF does not give the value at the root either. The proof derives d²r/dl² = ½f′·sgn f, and at r = r_h, sgn f = 0, so the proof's own formula returns ZERO exactly where the statement asserts a nonzero ±½f′(r_h). What is true is the pair of ONE-SIDED limits, and that is what the two declarations check
+         ⌗ at the simple root r_h = 0.300000000: f(r_h) = -1.39e-16, f′(r_h) = +2.433333333
+         ⌗ the proof's formula ½f′·sgn f at an EXACT root, where sgn 0 = 0, is +0.000000000 -- zero, against the statement's ≠ 0
+         ⌗ ⚠ and evaluated in floating point it returns -1.216666667 instead, its SIGN decided by f(r_h) = -1.39e-16: the quantity is not single-valued there, and that is the finding rather than an artefact of this arm
+         ⌗ the one-sided values ±½f′(r_h) = +1.216666667 and -1.216666667; f(r_h−1e-06) = -2.433e-06, f(r_h+1e-06) = +2.433e-06, so the two sides are reached and the point itself is not
+  [PASS] Ⓒ⑦ and the formal paragraph already says the honest thing, so the gap is between the PROPOSITION and its own apparatus rather than between the paper and Lean
+         ⌗ the paragraph after the proof carries both "wherever $f\neq0$" and "The limit of the second derivative at the root itself is not formalised."
+  [PASS] Ⓒ⑧ ⚠ and the reachable negative registered as (c) -- that something formalised DOES reach the root, making the order's parenthetical the stale thing -- is NOT reached: a named search finds no declaration concluding about `deriv r` without a strict hypothesis on f
+         ⌗ searched every declaration mentioning `deriv r` for one without `0 < f` or `f … < 0`: []
+  [PASS] Ⓒ⑨ ⛭ AND THE SAME DEFECT IS THE SAME ONE Ⓑ FOUND: `prop:curvature`'s proof reaches its result "as in the proof of Proposition~\ref{prop:turning}", so the `sgn f` formula that fails at f = 0 is the single root of BOTH of the order's first two questions
+         ⌗ prop:curvature's proof cites prop:turning's proof for r″ = ½f′ sgn f -- one apparatus, two sentences leaning on it, and f = 0 is where it has nothing to say
+
+  ================================================================================================
+  Ⓓ  `prop:triple` -- the identity, and what "unique" is quantified over
+  ================================================================================================
+  [PASS] Ⓓ① the proposition states the triple-angle identity and calls the scale UNIQUE
+         ⌗ …With $r_{0}=\tfrac{2}{\sqrt3}\sin w$, the horizon relation $2M=r_{0}-r_{0}^{3}$ is the pure triple-angle relation \begin{equation}\label{eq:tripleM} 2M=\frac{2}{3\sqrt3}\…
+  [PASS] Ⓓ② `sl_triple` is the identity at EVERY w -- no hypothesis on w at all
+         ⌗ binders: ['w : ℝ']
+         ⌗ conclusion: sl_g (2 / Real.sqrt 3 * Real.sin w) = 2 / (3 * Real.sqrt 3) * Real.sin (3 * w)
+  [PASS] Ⓓ③ `sl_triple_unique` is the uniqueness of the PAIR (scale, coefficient) -- not an `∃!` but an identity plus a separate uniqueness lemma -- and it carries `0 < ϱ`
+         ⌗ hypotheses: ['ϱ k : ℝ', 'hϱ : 0 < ϱ', 'h : ∀ w, sl_g (ϱ * Real.sin w) = k * Real.sin (3 * w)']
+         ⌗ conclusion: ϱ = 2 / Real.sqrt 3 ∧ k = 2 / (3 * Real.sqrt 3)
+  [PASS] Ⓓ④ ⚠ and the positivity hypothesis is LOAD-BEARING, shown by its witness rather than asserted: ϱ = −2/√3 with k = −2/(3√3) satisfies the same identity at every w, so "unique" is unique AMONG POSITIVE scales. The proposition's bare "unique" is carried by a slicing scale being a radius, and the proof says "unique positive root" where the statement says "unique" -- a looseness, not a defect
+         ⌗ ϱ = -1.154700538, k = -0.384900179: sup over 241 values of w of the identity's residual = 9.437e-16
+         ⌗ and the proof's own words: "whose unique positive root is $\varrho=2/\sqrt3$" -- positivity present in the proof and in Lean, absent from the statement
+
+  ================================================================================================
+  Ⓔ  P15's source exclusion, and THE ORDER'S THIRD QUESTION
+  ================================================================================================
+  [PASS] Ⓔ① the sentence is in the paper as the order quotes it, located by text in the flattened copy
+         ⌗ … two arms' $\eta$-integrated sources returns a ratio near zero throughout, in which a transition of the measured size would have stood at more than six times that ratio's own scatter at the two wider smoothings. …
+
+      ⛭ running the host receipt, because these values exist only AT RUN TIME (negative probe 22)
+  [PASS] Ⓔ② the host receipt runs green in this container, so its numbers are measurements and not recollections
+         ⌗ exit 0, 329 lines, "GATES: ALL PASS." present: True
+  [PASS] Ⓔ③ its WITNESS line prints one value per smoothing, three of them, each the size a step of the spectra's size would have shown at in the source ratio
+         ⌗ h0.175: own +0.0025 = 0.40 sd, spectra's size = 3.9 sd
+         ⌗ h0.25: own +0.0024 = 0.65 sd, spectra's size = 6.6 sd
+         ⌗ h0.35: own +0.0018 = 0.88 sd, spectra's size = 12.4 sd
+  [PASS] Ⓔ④ ⛭ THE ORDER'S THIRD QUESTION, FIRST HALF: THE SENTENCE IS SOUND, and it is an INEQUALITY and not a match, which is the way an arm testing equality would have reported a false defect. The two wider smoothings both stand above six; the narrowest stands below it, so "at the two wider smoothings" is exactly the right SET and not a hedge
+         ⌗ narrowest h0.175: 3.9 sd -- BELOW six
+         ⌗ wider h0.25: 6.6 sd -- above six
+         ⌗ wider h0.35: 12.4 sd -- above six
+         ⌗ so "more than six … at the two wider smoothings" holds, and would NOT hold if the narrowest were included
+  [PASS] Ⓔ⑤ ⚠ and the r7708 check, which is the one that bit this corpus before: the tightest of the two is nearer SEVEN than six. That was a defect at r7708 because the sentence there was an APPROXIMATION ("some seven times" for 7.8); here the sentence is a FLOOR ("more than six"), and a floor that holds is correct however much room it leaves
+         ⌗ tightest = 6.6 sd: distance to 6 is 0.6, to 7 is 0.4 -- nearer seven, and "more than six" is true of it either way
+  [FAIL] Ⓔ⑥ ⛔⛭⛭ THE ORDER'S THIRD QUESTION, SECOND HALF, AND A FINDING IN THE RECEIPT ITSELF: the order names "6.6 and 11.8", and 11.8 is NOT a measured value -- it is a HARD-CODED number in the gate's own label, and the gate's own witness prints a different one. The label's range and the witnesses it is printed beside DISAGREE, and the gate cannot catch it because what the gate ASSERTS is only that each value exceeds 3.5
+         ⌗ the label says "3.8 to 11.8 sd"
+         ⌗ its own witnesses give 3.9 to 12.4 sd
+         ⌗ so the low end is off by 0.1 and the high end by 0.6; the order inherited 11.8 from the label, not from a measurement
+  [PASS] Ⓔ⑦ and a NAMED SEARCH rather than an absence claim: no twin sentence elsewhere in the paper carries the same factor or the same smoothing set, so a correction here would leave nothing behind
+         ⌗ searched the flattened paper for 'more than six times': 1, 'two wider smoothings': 1, 'wider smoothings': 1
+
+  ================================================================================================
+  Ⓕ  the registered ABSENCE -- `prop:twoalpha`, which the order says did NOT land
+  ================================================================================================
+  [PASS] Ⓕ① `prop:twoalpha` is present in the paper and is located by its label
+         ⌗ 1073 chars
+  [PASS] Ⓕ② and the landing did NOT touch it, so the order's "not landed yet" is accurate -- the registered absence is an absence, measured on the diff of the landing itself
+         ⌗ the landing's diff of this paper is 27 lines and contains 0 occurrences of "twoalpha"; the changed hunks touch ['sl_accel_neg', 'sl_accel_pos', 'sl_conjugacy', 'sl_conjugacy_fails', 'sl_curvature_sign', 'sl_triple', 'sl_triple_unique', 'sl_turning', 'sl_turning_simple']
+
+  ================================================================================================
+  THE VERDICT
+  ================================================================================================
+  4 arm(s) report a FINDING -- each is a reading, not a crash:
+    - Ⓑ⑦ ⛔⛭ CONSEQUENCE TWO IS NO LONGER TRUE AS WRITTEN, and this is the order's first question answered against the paper
+    - Ⓑ⑧ ⛔⛭⛭ CONSEQUENCE THREE IS FALSE AS WRITTEN OUTSIDE THE STATIC REGION, and it is the sharpest of the three
+    - Ⓒ⑥ ⛔⛭ THE ORDER'S SECOND QUESTION: A WORD IS NEEDED, and not only because the limit is unformalised -- the proposition's own PROOF does not give the v
+    - Ⓔ⑥ ⛔⛭⛭ THE ORDER'S THIRD QUESTION, SECOND HALF, AND A FINDING IN THE RECEIPT ITSELF: the order names "6
+
+  WHAT IS ROUTED:
+    ⌗ Ⓐ⑦ the conjugacy sentence's amount is true but not in the cited statement
+    ⌗ Ⓑ⑦ consequence two asserts a single value at a horizon the two-case law splits
+    ⌗ Ⓑ⑧ consequence three is unscoped, and the reversal inverts it beyond the horizons
+    ⌗ Ⓒ⑥ prop:turning asserts at the root a value its own proof returns as zero there
+    ⌗ Ⓓ④ prop:triple says "unique", its proof and its Lean statement say "positive"
+    ⌗ Ⓔ⑥ the host receipt's hard-coded range disagrees with its own printed witnesses
+
