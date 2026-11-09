@@ -10,6 +10,45 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7719: CAMPAIGN 120 — P3's SKY ANGLE AND TURNING POINTS BUILT; THE CONJUGACY AND CURVATURE FLAGS ARE THEOREMS (`r7719+71.1`–`.2`)
+
+The result is in `r7719_71_campaign120/RESULT.md`, and the probe is `probes/SlicingSky.lean`.
+- **The build:** zero errors and zero warnings, `654` axiom lines all standard (`11` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `228` new lines, below the band of 400–850, at p `0.75`. The expected stop did not occur, because
+  Mathlib's `Real.arccos_eq_arcsin` is the needed identity.
+
+***What is built (gauge `α = 1`).***
+- **`sl_triple`, `sl_triple_unique`** (`prop:triple`): the triple-angle form, and the scale `2/√3` forced.
+- **`sl_conjugacy`** (`prop:conjugacy`) on `[0, 1]`.
+- **`sl_turning`, `sl_turning_simple`** (`prop:turning`, 1a–b): the turning points are the cubic's roots, and
+  `f′(r_h) = −c′(r_h)/r_h`, so `f′(r_h) = 0` exactly at the double root `±1/√3`.
+
+***The two flags, as theorems, for your corrections.***
+- **`prop:conjugacy` (l.618), `sl_conjugacy_fails`:** the identity fails at every `x ∈ [−1, 0)`. So it holds on
+  `[−1, 1]` exactly on `[0, 1]`. P3's proof already assumes `a = arcsin x ∈ [0, π/2]`.
+  - **Suggested repair:** "… are conjugate on `[0, 1]`".
+- **`prop:curvature` (l.960):**
+  - `sl_accel_pos` and `sl_accel_neg`: along `r′ = √|f(r)|`, `r″ = ±½ f′(r)` according to the sign of `f`.
+  - `sl_curvature_sign`: `−r″/r = 1 − M/r³` where `f > 0`, and `M/r³ − 1` where `f < 0`.
+  - `sl_accel_witness` is the non-vacuity witness.
+  - P3's proof already restricts to "the static region `f > 0`"; the statement does not.
+  - **Suggested repair:** "On the static region `f > 0`, the slicing surface … has Gaussian curvature `K_G = …`;
+    where `f < 0` the sign is reversed."
+  - `K_G = −r″/r` itself is cited, not built. The Levi-Civita curvature is campaign 122.
+
+***`prop:twoalpha` (v), as asked: state it.***
+- As written, "the tangent length equals the hinge's height" reads as the condition for `R = 2α`. But it holds at
+  every `R`, both being `√(R² − α²)`; that is P17's `prop:tangentnull`. The condition is the common value `√3α`.
+- **Suggested wording:** "the tangent length from the hinge to the throat, which equals the hinge's height in the
+  embedding at every `R` (P17, `prop:tangentnull`), is `√3α`." It is a strengthening, not a correction.
+
+**Marks:** 14 of 24 rows are BUILT; 5 are BUILT IN PART (1c moved up: the sign law is built, the limit at the root
+remains); 2 are NOT BEGUN; 3 have no formal core.
+**Next, campaign 121:** the hinge (11a–c) and the flip (12).
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7717: P3 CHOSEN AND INVENTORIED; CAMPAIGN 119 — P3's CUBIC CHAIN BUILT (`r7717+71.1`–`.2`)
 
 **The choice is P3 (`SdS-slicing-curve_v2`).** The survey and the 24-row inventory are in `r7717_71_survey/SURVEY.md`.
