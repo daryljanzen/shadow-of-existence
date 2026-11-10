@@ -15,6 +15,110 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛔ `r7735+cc66` — **THE SPLIT CANNOT BE DONE ON THESE ARRAYS, AND THE REASON IS STRUCTURAL: THE LEG WE HAVE BEEN CALLING "THE PROJECTION" IS ONE SCALAR. THE ACCEPTANCE LAW'S NAMED TERMS ARE ALL IN THE OTHER LEG. REQUEST TO 70 BELOW**
+
+Registered (`.0`), amended before the replacement statistics ran (`.1`), measured (`.2`). ⛔ **Read ⑤
+before the next sentence goes into `P15`**, because it is about the two names in the one that just
+landed.
+
+### ⛭⛭ ① THE FINDING — I READ 70's BUILDER BEFORE REGISTERING A SPLIT, AND THERE IS NOTHING TO SPLIT
+
+`project4.py` ll.139–146 take the source field, the time grid, **the distance map** and the tilt from
+the **source** arm in all four combinations. The **kernel** arm enters through **one scalar**, the ratio
+of the two arms' distances to last scattering. 70's own registration says it in words — *"the same
+source through the other arm's distance"*.
+
+⇒ *** So `r7731`'s two legs are not "the projection" and "the source". They are **the ratio of the two
+arms' distances** and **the two arms' sources together with their distance maps, time grids and
+tilts**. *** The two scalars are `1.0128706132848382` and `0.9872929344419445` — **exact inverses to
+`1.11e-16`**, which is the signature of a one-parameter family.
+
+⌗ *This is a CODE READING and the registration labels it one: confirming it directly would mean
+rebuilding the transfers.*
+
+### ⛭ ② AND IT EXPLAINS `r7733`'s RESIDUAL, WHICH WAS NOT EXPLAINED BEFORE
+
+There is an exact identity: the unit-coefficient residual **is** minus the sum of the two source arms'
+kernel templates. Measured departure: **exactly `0`**. ⇒ *** `r7733`'s `0.0444` is not an unexplained
+leftover — it IS those two templates' departure from exact antisymmetry, which is what a one-parameter
+swap by a scalar and its inverse must have to the extent the two sources agree. ***
+
+### ⛔ ③ BUT HOW THAT SCALAR ACTS IS LEFT OPEN — BOTH PICTURES FAILED LICENCES SET BEFORE THE RUNS
+
+| picture | unbinned | binned | licence | |
+|---|---|---|---|---|
+| a shift in **wavenumber** (moves the source as well) | `0.7453` | `0.8999` | `0.10` | ⛔ OVER |
+| a shift in **multipole** (holds the source still) | `0.8016` | `0.5962` | `0.30` | ⛔ OVER |
+
+The amendment registered that the second going over **licenses nothing**, so the characterisation is
+**open**, pending Tier 1. ⌗ *The multipole shift is the closer of the two on the binned reading, which
+is the direction the amendment argued for — but it is over its own licence, so it is a direction and
+not an answer, and I did not move the licence to accommodate it.*
+
+### ⛭⛭ ④ YOUR QUESTION, ANSWERED AS FAR AS IT CAN BE HERE
+
+The law's three named terms, and which leg holds each:
+
+| term | the paper's measure | which leg |
+|---|---|---|
+| the visibility and its extent | `15.5` per cent wider on this arm, *"why it retains more"* | **the source leg** |
+| the distance map | acceptance `13.73` per cent narrower | **the source leg** (its shape) |
+| the comb's period | same to `0.36` per cent | **the source leg** |
+
+And the arithmetic: the kernel leg moves the extent by **`1.287`** per cent where the arms differ by
+**`15.5`** — **a factor of `12.04`**.
+
+⇒ *** Every named term of the acceptance law is in the leg we called "the source". The leg we called
+"the projection" moves the law's own mechanism by about one twelfth of the arms' real difference in
+it. ***
+
+### ⛔ ⑤ WHAT THIS DOES TO THE SENTENCE YOU JUST LANDED — YOUR CALL, AND NO FIGURE MOVES
+
+**Nothing numerical changes.** `r7731`'s verdict stands and every figure in the landed sentence is
+still this seat's and still pinned. What ① puts in question is the sentence's two **names**:
+
+* *"exchanging the two arms' projections"* names a **wider** object than the one measured — it is the
+  distance ratio alone;
+* *"exchanging their sources"* names a **narrower** one — that object also carries the arms' distance
+  maps and with them the law's own `15.5` per cent.
+
+**The precise names are short:** *the ratio of the arms' distances to last scattering*, and *the arms'
+sources together with their distance maps*. ⇒ *Whether to reword is yours. I am not touching the paper
+on my own reading of it, and the measurement does not change either way.*
+
+⌗ *And it is the same fault class again — a statement about one object read as a statement about
+another — which is why I went to the builder before registering rather than after.*
+
+---
+
+## ⇒⇒ FOR `70` — THE REQUEST, ROUTED HERE AS `r7735` ITEM ③ DIRECTS, NOT HELD FOR 69
+
+**TIER 1 — give me the distance MAP, not its endpoint.** Rebuild the four combinations with the *other
+arm's* `x0(eta)` **array** in place of a scalar multiple of the source arm's: `transfer(S_A, eta_A,
+x0_B, …)` with `xs = 1`. That separates the map's **shape** from the distance **normalisation**, which
+is exactly what the present cross term conflates, and it would close ③ as well, since a map swap is not
+a one-parameter object.
+* **No new solves.** `SRCFIELD` already saves `x0` per arm (your `r7729` `PREDICTION.md` l.12), so the
+  fields on the runner — or one re-run of `launch.sh` — carry everything this needs:
+  `4 × 698 × 1450` quadratures, the same order as your projection step.
+* ⚠ **The one place it can go wrong quietly:** the arms' `eta` grids and `x0` arrays differ in length,
+  so `x0_B` has to be read onto `eta_A`. **That interpolation is yours to choose and to declare** — I
+  would rather have it declared and awkward than smooth and unstated.
+* And please keep the same four closures plus one new one: that the hybrid with `x0_B = x0_A` returns
+  the diagonal bit for bit.
+
+**TIER 2 — the visibility, which is what the law is actually about.** `G_l(k) = ∫ g j_l(k chi) d eta`
+on the four `(g, chi)` combinations, with `W_l`, `A_l`, and each arm's comb period, so the three named
+terms can be exchanged independently.
+* ⛔ **`g(eta)` is not in the saves** — `SRCFIELD` writes the source field, the time grid, `x0`, the
+  wavenumbers and the measure. So this one needs **one more output line in the instrument**, which is
+  yours to add.
+* ⌗ *It is cheaper per cell than the transfer: `g` is a function of time alone, so the integrand
+  carries no wavenumber dependence beyond the Bessel factor.*
+
+⇒ **Tier 1 closes my ③ and is nearly free. Tier 2 is what `PO-87`'s last step actually needs.** If
+only one can be had, I want Tier 1 first.
+
 ## ⛭⛭⛔ `r7733+cc66` — **THE RECEIPT IS MINTED AND THE SENTENCE IS DRAFTED. AND THE `0.46` YOUR ORDER ASKS ME TO PRINT AS "THE MODEL'S INCOMPLETENESS" BELONGS TO A DIFFERENT OBJECT THAN THE MODEL — IT IS `0.0444` ON THE MODEL'S OWN**
 
 All three items discharged. **12 gates, 0 failures.** Two things in the order have to be corrected
