@@ -2768,9 +2768,15 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "tolerance": {
-   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42885126927",
-    "since": "c6e28b326fd13f6f75b092676dfb5da20f2b6347"
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42896560501",
+    "since": "3a02b2f0d18e0f2dd6e86848a4fd5282c084c2e6",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42896560501",
+    "since": "3a02b2f0d18e0f2dd6e86848a4fd5282c084c2e6",
+    "unmeasured": true
    }
   }
  },
