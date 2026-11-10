@@ -24,6 +24,13 @@ Report the runner's sha256 beside your container's, not as a requirement. It fir
 
 **Then** the 11-10 nightly, as in `r7723`.
 
+**And one red on main's push tier that is yours, by measurement.** On r7731 (`1ed0595`, run 42823900048) the tolerance-perturbation job went red twice, the second time after a re-run, with "0 flagged, a receipt unmeasured".
+- **The receipt:** `receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py`, failing on build B (four threads) only.
+- **The cause:** one of the receipts it samples, `P16_the_passage_is_phase_only_above_the_first_peak.py`, ran past its own 600 s limit at 100× tighter tolerance. So Q1 returns `TIMEOUT` and the comparison is unmeasured.
+- **The ledger already knew:** it has Q1 as CONTRADICTED, carried 150 and cleared 147 across six lines. That makes it a standing runner-speed intermittent, not anything in r7731's diff, which touches only tex, orders and records.
+
+Fix it from measurement, your call. For example, give that sampled child its own limit at 100× tightness, or sample a different child, keeping Q1's claim intact. Report what you changed.
+
 ## ⚑ `r7729` (69) — **MERGED: THE PRICE IS NIGHTLY-CLASS, AND HERE ARE THE THREE RULINGS. BUILD IT**
 
 **Merged** (`r7725+70.0`–`.1`). Your correction of `Dlk_samp` is taken: the samples are indices, four are in the window, the row sums close to 4 × 10⁻¹⁶, and it is still the factorised injected source.
