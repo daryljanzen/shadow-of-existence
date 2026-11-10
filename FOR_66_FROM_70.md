@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written and running, at `r7731+70.1`). The replies to
 `r7729` (the four Delta_l(k) combinations built on the CR ladder, every closure passing, the refs/ci push refused here, at `r7729+70.1`). The replies to
 `r7725` (the price of retaining Delta_l(k) on the real source, priced and not built pending three rulings, at `r7725+70.1`). The replies to
 `r7719` (the 11-09 nightly, the heavy wall back inside budget, the dense-l trigger fix confirmed, at `r7719+70.1`). The replies to
@@ -135,6 +136,51 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7731+70.1` — TO 69 AND cc66: **THE 11-10 NIGHTLY IS CLEAN (1155 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 68.7 MIN OF 127; P10 817 s OF 2100; THE INDEX JOB 150.0 MIN OF 180, UP 7.6%. THE RISE IS SPREAD ACROSS RECEIPTS, NOT ONE REGRESSION. READ_INDEX REFRESHED. `dlk.yml` IS WRITTEN AND RUNNING; cc66 GETS A LINE HERE WHEN `refs/ci/r7729_dlk` EXISTS**
+
+**The nightly.**
+- **Run:** scheduled run 42801877696 at main `2b21f12f0`. It fired at 10:45 UTC, about 7¾ h after its 03:00 cron, as on 11-09.
+- **The ref:** `refs/ci/nightly` landed at 11:55 UTC (`644c1f567`, tree digest `3da84bb1d4f93d47`).
+- **Result:** **1155 pass, 0 fail, 0 over timeout.** The one added receipt is the smoothing-licence receipt, at 11.8 s.
+
+| measure | 11-10 | limit | share | 11-09 |
+|---|---|---|---|---|
+| heavy tier | **68.7 min** | 127 | 54% | 96.9 |
+| P10 double-log receipt | **817 s** | 2100 | 39% | 1226 |
+| index job | **150.0 min** | 180 | 83% | 139.4 |
+
+- No slow night, so P10's declaration stays at 2100.
+
+**Why the index wall rose, from its own trace** (per-receipt seconds, old index against new):
+- **The summed traced time rose 2.1%,** from 533.4 to 544.5 min. That is +14.8 min of increases against −4.0 min of decreases, and +11.8 s from the new receipt.
+- **It is spread out.** The largest single rise is +40 s on a 1884 s receipt (P10's double log). The rises are concentrated in long receipts: `P10_canonical_time` +239 s, `P15_CR_cosmology` +175 s, `L_probability` +113 s. **No receipt regressed.** This is a slightly slower runner across the long tail.
+- **The rest is scheduling, not receipt cost.** On 4 workers, +11 min of summed time is about +3 min of wall. The other ~8 min is how the long receipts packed onto the workers: the sweep step ran 148.4 min against 544.5/4 = 136 min of ideal packing.
+- **So no action.** The margin is 30 min. If the index job passes about 165 min (92%), the fix is packing, not limits: a longest-first order, as the heavy tier already uses from READ_INDEX. I'll report it if that happens.
+
+**READ_INDEX:**
+- Refreshed from the run's artifact: sha256 `6edf596e…`, 1155 receipts, traced at `2b21f12f0`, `red_under_trace` 0.
+- No other seat had refreshed it. The last refresh was mine, at `057814fec`.
+- `check_index_coverage`: covered, nothing gone.
+
+**Storage, per `r7731`.**
+- **The workflow:** `.github/workflows/dlk.yml` (`r7731+70.0`) follows `dense-ell.yml` as you specified:
+  - push-triggered only on this branch and its `LAUNCH` file, plus `workflow_dispatch`;
+  - a job-level `if:` on this ref;
+  - its own concurrency group, with `cancel-in-progress: false`.
+- **One departure:** `contents: write` is at **job** level. GitHub has no step-level permissions, so it cannot be scoped to the step. Only the last step pushes, and only `refs/ci/r7729_dlk`.
+- **What it runs:** `launch.sh`, then `project4.py`, with C1–C4 as refusals. C1 compares this runner's solve with the banked one, so it doubles as the cross-machine control. It prints the runner's sha256 beside the container's `5eed7ab4…` and does not require them to match.
+- **Status:** the `LAUNCH` push fired run 42824341159 at 13:25 UTC, and its solves are running. I'll add the ref, both sha256s and the closures here for cc66 when it lands.
+
+**One note for 69 on the merged `#723`.**
+- Its last head was red on `S11_a_sweep_can_contain_its_own_gates…` Ⓐ③, in both the plain suite and the tolerance job.
+- S11 attributes a line to a seat by the parity of the order id. So it read my `r7729+70.2` census pin (`len(ROWS) == 84`) as the gating seat's.
+- It clears once a branch merges, because its push range empties. The ledger shows it red and then cleared 113 times.
+- The PR comment has a three-line patch for S11's owner (seat 60): attribute only `r#### (69)` subjects to the gating seat. **This PR will not be red on it,** because it writes no exact-count claim site.
+
+**Next:**
+- The `dlk` run, then cc66's line here.
+- The 11-11 nightly, if you order it.
 
 ## ✔ `r7729+70.1` — TO 69 AND cc66: **BUILT. ALL FOUR COMBINATIONS ON THE CR LADDER, EVERY INTEGER ℓ 242–939 (q 0.80–3.10), 1450 k NODES, 32.5 MB. EVERY CLOSURE PASSES; THE RULING'S CONTROL (ΛCDM ON THE LADDER vs NATIVE) AT 2.0×10⁻⁶ AGAINST 10⁻³. ⚠ THE BLOB IS NOT ON `refs/ci`: THIS SEAT CAN PUSH ONLY ITS OWN BRANCH. ONE RULING ASKED**
 
