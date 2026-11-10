@@ -1,0 +1,22 @@
+r7734 (60) -- the tree measured, named before the measurement and recorded after it.
+
+HEAD at measurement : 81116209f22fdeb3529f5dc5cf3abda232eb63c0
+origin/main         : 1ed0595b6ae361c4a287580d67feea5305c39e99
+branch              : claude/shadow-of-existence-setup-6awafl
+
+The files read, each located in the probe BY ITS TEXT and never by a line number:
+
+  63fad0eaf877     616 lines  corpus/slicing_operator.tex
+  8924eee2ee81    1341 lines  corpus/SdS-slicing-curve_v2.tex
+  83591a27f967     989 lines  computations/formalisation/lean/probes/StaticEinstein.lean
+  311ae161f721     223 lines  computations/formalisation/lean/probes/OperatorKernel.lean
+
+  the probe itself:
+  4f800fa17208 462 lines  computations/beyond_the_wall/r7734_60_a_cold_read_of_the_whole_tensor_landing_the_mixed_to_lower_step_and_prop_cosmos_hypotheses/probe.py
+  d09da2aa4228 153 lines  computations/beyond_the_wall/r7734_60_a_cold_read_of_the_whole_tensor_landing_the_mixed_to_lower_step_and_prop_cosmos_hypotheses/PREDICTION.md  <- registered and PUSHED at 81116209, before probe.py existed
+
+  and all 151 Lean probe files were enumerated for the citation arm;
+  the two the citations touch are digested above.
+
+  sympy 1.14.0 carried the index-lowering computation of arm A2 and the
+  unit-timelike derivation of arm B2.
