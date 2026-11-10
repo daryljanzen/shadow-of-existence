@@ -1,0 +1,26 @@
+
+  ⛭ SITE 2059 -- two printed multiples, under each end of their own six-member family
+     family FS = [0.0, 0.1, 0.25, 0.5, 0.75, 1.0]; the printed denominator is its MINIMUM, by that receipt's own cc66.63 ruling
+
+     LEVEL  +0.02117  / 0.00949 (min)  = 2.23   <- PRINTED 2.23
+                        / 0.04252 (f=0)  = 0.50
+     SLOPE  +0.01556  / 0.00303 (min)  = 5.14   <- PRINTED 5.14
+                        / 0.01358 (f=0)  = 1.15
+
+     ⇒ the printed 2.23 falls to 0.50 -- BELOW ONE -- and the printed 5.14 to 1.15, at the family's other end.
+
+     ⇒ ceiling: 6 members, 720 permutations, floor p = 0.00139 ⇒ 3.20 sd-equivalent.
+       So 5.14 READ AS A SIGNIFICANCE exceeds what any resampling of this family can express.
+
+  ⛭ SITE 1779 -- the twelve-setting multiple
+
+     slope +0.01034 / setting spread 0.00137 = 7.55   <- PRINTED as 'seven and a half'
+     ⇒ ceiling: 12 settings, 479001600 permutations, floor p = 2.09e-09 ⇒ 5.99 sd-equivalent.
+       So 7.55 READ AS A SIGNIFICANCE also exceeds its family's ceiling.
+
+  ⛔ BUT P15 PRINTS A RATIO AT BOTH SITES, WITH ITS DENOMINATOR NAMED, AND NOT A PROBABILITY.
+    By the r7721 ruling on the both-arms ratios -- 'the sentence states a ratio and makes no
+    probability claim; the ceiling is a fact about what that statistic can carry as evidence,
+    not an error in the sentence' -- neither printed figure is an error. ⇒ The ceilings above
+    are reported and are NOT grounds for a correction.
+

@@ -15,6 +15,75 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛔ `r7727+cc66` — **THE SWEEP FINDS NO P15 CLAIM THAT FAILS. EVERY LIVE MULTIPLE NAMES ITS OWN DENOMINATOR AND ITS ANCHOR. ONE RECEIPT CALLED A ROBUSTNESS RATIO A SIGMA — FIXED**
+
+Search registered before it ran, as you asked. `73` candidates, bucketed **mechanically** so the list
+could not be hand-picked. Full classification in `VERDICT.md`.
+
+### ⛭ THE SWEEP
+
+| | n | |
+|---|---|---|
+| **settled already** | `2` | `⓵` and `⓷` — this sweep's precedent, not re-reported as findings |
+| **in scope by wording** | `6` | and ⛔ **three of them I had MISSED** when I filtered by reading before writing the classifier |
+| out: a quoted or external error | `10` | `±` errors, the sky's own precision, a noise expectation |
+| out: no multiple formed | `55` | a `σ` not divided by a correlated-family spread |
+
+Of the six: two are prose uses of *"spread"* and not denominators; **`1862` is the seven-band family ⇒ "a
+ratio, not tested"**, your `3.72` ceiling, and it prints a **count** rather than a multiple anyway. **Two
+are genuine:**
+
+| | the printed multiple | its family |
+|---|---|---|
+| **`l.1779`** | **`7.55`** — *"seven and a half times its own spread across those settings"* | twelve envelope settings |
+| **`l.2059`** | **`2.23`** of its band spread and **`5.14`** of its regression error | six-member |
+
+### ⛔ THE RULED TEST DOES NOT REACH EITHER — reported, not improvised
+
+`r7717`'s test calibrates **a step on an autocorrelated curve**. These are a **slope** over a
+**setting-spread** and a **difference of fitted slopes** over a **fit error**. ⇒ Different statistic,
+different denominator. *My registration forbade improvising a replacement, so none is built.*
+
+⇒ What `r7717`'s **own** form shows, on values those receipts already gate:
+
+| | printed | at the family's other end |
+|---|---|---|
+| `2059` level | `2.23` | ⛔ **`0.50` — below one** |
+| `2059` slope | `5.14` | **`1.15`** |
+
+and read as *significances*, `5.14` and `7.55` both exceed their families' ceilings (`3.20` for six, `5.99`
+for twelve).
+
+### ⛭⛭ AND YET **NO CORRECTION IS OWED**, by your own `r7721` ruling
+
+Both sentences name their denominator **and** their anchor — `2059` ends *"each error taken at the
+parameter where the two arms' combs align"*, which is **exactly where the minimum is**. ⇒ *"The sentence
+states a ratio and makes no probability claim; the ceiling is a fact about what that statistic can carry as
+evidence, not an error in the sentence."* **Your words, and they settle both sites.**
+
+⚠ **I had written a correction for `2059` saying its wording hides which member supplies the denominator —
+and then re-read the sentence, which says so explicitly.** ⇒ Withdrawn before it reached you. *Seventh
+instance, caught by reading the sentence instead of my note about it.*
+
+⇒ **Step 4 produces nothing. Its condition is not met at any site**, and that is the sweep's result.
+
+### ⛭ THE ONE REAL DEFECT — **a receipt of mine called a setting spread a sigma**
+
+`1779`'s receipt read *"at `7.6` sigma of its own setting spread"*. ⛔ **A setting spread measures how far
+the slope moves when the analysis choice moves. It carries no sampling distribution**, so *sigma* names the
+right denominator and the wrong kind of quantity — and `7.6` is above the `5.99` that twelve settings could
+express if it were one. ⇒ **Fixed, reason recorded beside it, `36` PASS / `0` FAIL.** ⌗ *The paper was
+already right; the receipt overstated. **Third revision running** in which a receipt's prose claims more
+than its computation supports.*
+
+### ⛔ AND THE SEARCH'S OWN BLIND SPOT, DECLARED
+
+The registered patterns need a **numeral**, so **spelled-out multiples are missed**. One exists —
+**`l.2206`**, *"inside the spread of the three"*, a family of three whose ceiling is **`1.38`**
+sd-equivalent. ⇒ **I did not add it to the list, because the registration says the patterns' union IS the
+list.** It is named here instead and the sweep is declared **incomplete in that one stated way**.
+
+
 ## ⛭⛔ `r7725+cc66` — **`PO-93` IS BLOCKED ON AN OBSERVATION AND THE DATA IS NAMED. `PO-50`'s TERMINATION CLAUSE HAS **NOT** FIRED — ITS TEST CAN READ, ON ONE SIDE, EXACTLY WHERE THE FOUR CASES AT ISSUE SIT**
 
 Both registered before computing, each in its own commit. Verdicts in the two `VERDICT.md`s.
