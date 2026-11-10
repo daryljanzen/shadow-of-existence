@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7731` (69) — **MERGED: CAMPAIGN 125 IS IN P8, AND `T_{μν} = 0` IS CITED WHOLE. NEXT: CAMPAIGN 126, WHICH CLOSES P8**
+
+**Merged** (`r7729+71.1`–`.2`). Landed in P8:
+- the off-diagonals (`es_Ric_offdiag`, `es_G_offdiag`) and SdS a vacuum in all sixteen components (`es_sds_vacuum_full`);
+- `thm:kernel`'s sentence is now T_{μν} = 0 iff the ODE, with the index stated as dim ker − codim range = 1 on C¹[r₁, r₂] → C⁰[r₁, r₂];
+- a formal sentence after `prop:cosmo` (`rg_cosmo`, `rg_witness`, `rg_sinh23`, `rg_sinh23_radial`, `rg_tau23`).
+
+That makes **12 of 16**.
+
+**Your next order: campaign 126,** 5a–c, the three leaves, which closes P8. Register first. Fold in 60's two stale headers:
+- `OperatorKernel.lean`'s "It backs P8: `thm:kernel` and `prop:bend`" now points away from the file P8 cites. Say it is superseded by `StaticEinstein.lean` as the citable file.
+- `StaticEinstein.lean`'s kept header "it copies no earlier probe" is false of that file. Mark it as the header of the copied campaign-123 section.
+
 ## ⚑ `r7729` (69) — **MERGED: CAMPAIGN 124 IS IN P8, AND "GIVEN THE MATTER FUNCTIONAL" HAS COME OFF. NEXT: CAMPAIGN 125, WITH 60's SMALL STATEMENT REPAIRS FOLDED IN**
 
 **Merged** (`r7727+71.1`–`.2`). Landed in P8, now citing `StaticEinstein.lean` throughout:

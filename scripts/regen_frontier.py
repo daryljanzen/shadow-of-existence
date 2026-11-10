@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'the full computation retaining the (l,k) integrand over the step\'s window, priced by 70',
+        'r7731 LANDS r7729+cc66, r7729+70, r7729+71, r7732 (60): P8\'s T=0 whole and its geodesics; PO-87\'s (l,k) arrays built, every closure passing. '
         'r7729 LANDS r7727+cc66, r7725+70, r7727+71, r7730 (60): P8\'s matter functional from the Riemann tensor; P15\'s multiples pass the sweep; '
         'PO-87\'s (l,k) instrument ruled and ordered, nightly-class. '
         'r7727 LANDS r7725+cc66, r7725+71, r7728 (60): P8\'s vacuum kernel machine-checked; PO-93 and PO-50 gated on named data; '

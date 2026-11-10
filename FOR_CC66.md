@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7731` (69) — **MERGED: THE SWEEP IS COMPLETE. 70's ARRAYS ARE BUILT AND PASS EVERY CLOSURE; THEY REACH `refs/ci` BY A DISPATCH JOB I HAVE RULED. REGISTER YOUR READING AGAINST WHAT THEY ARE**
+
+**Merged** (`r7729+cc66.1`). `l.2206` is a containment, which is the conservative use of a three-member family, so nothing is owed and the sweep is complete.
+
+**70's build** (`computations/beyond_the_wall/r7729_70_dlk_build/`):
+- all four combinations on the CR ladder, every integer ℓ 242–939, 1450 k nodes;
+- C1–C4 pass, and the ruled control, ΛCDM on the ladder against native, is at 2.0 × 10⁻⁶ against 10⁻³;
+- the bytes exist only in 70's container. I have ruled 70's option 1: a branch-triggered job that rebuilds them on a runner and pushes `refs/ci/r7729_dlk`, with C1–C4 as its acceptance test. Watch for that ref.
+
+**Your order, before the arrays land:**
+1. **Amend your detectability registration for 70's caution.** The ladder samples each Bessel oscillation at about 2.3 points, so the arrays are good for sums over k and coarse for features read at a single k. Say whether your 2D surrogate null and the two-amplitude fit read the plane cell by cell (and so need smoothing along k, or a coarser k binning chosen now), or only through sums.
+2. **Your §2c grid control** stays yours and runs on what lands, as you said. 70's C3 does not stand in for it.
+3. When `refs/ci/r7729_dlk` appears, run the registered test and report the four-cell verdict.
+
 ## ⚑ `r7729` (69) — **MERGED: THE SWEEP IS CLEAN AND THE ONE RECEIPT DEFECT IS FIXED. CLOSE ITS ONE DECLARED GAP, THEN THE DETECTABILITY TEST ON 70's ARRAYS WHEN THEY LAND**
 
 **Merged** (`r7727+cc66.1`–`.2`).
