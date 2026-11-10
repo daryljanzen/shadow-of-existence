@@ -363,6 +363,11 @@
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
     "unmeasured": true
    },
+   "receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
+    "unmeasured": true
+   },
    "receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
@@ -551,6 +556,11 @@
    "receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
     "unmeasured": true
    },
    "receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py": {
@@ -938,6 +948,11 @@
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
@@ -951,6 +966,16 @@
    "receipts/P15_CR_cosmology/C68_all_twenty_seven_owed_rows_are_performed_and_none_is_held_so_the_owed_class_was_redundant_assertion_and_six_fall_in_the_computable_class_the_negative_asked_for.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C69_the_four_hundred_and_seventy_five_are_adjudicated_and_meaning_held_takes_none_of_them_so_three_of_four_pinned_numbers_miss_on_one_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C70_seventy_one_per_cent_of_the_two_hundred_and_seventy_two_held_rows_are_computable_so_the_negative_misses_by_sixty_one_points_and_my_band_by_twenty_nine_and_the_cost_inverts.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
@@ -981,6 +1006,11 @@
    "receipts/P15_CR_cosmology/P15_po31s_terminal_clause_counts_closures_and_the_label_is_many_to_one_so_the_count_is_four_and_five_at_once_and_the_quantifier_has_no_set.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_corpus_places_every_perturbation_source_before_the_branch_point_and_everything_after_it_is_transfer_so_nothing_already_built_supplies_anisotropic_content_on_the_expansion_leg.py": {
@@ -1028,6 +1058,11 @@
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
@@ -1041,6 +1076,11 @@
    "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42715976795",
     "since": "6f7d37d54e77b7260417e65b8769115c7b30c691",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42716651990",
+    "since": "9d9b5958ab54d7aca180fd6ff73362938f3ba091",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
