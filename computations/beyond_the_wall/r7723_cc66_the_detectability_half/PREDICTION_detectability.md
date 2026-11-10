@@ -154,3 +154,148 @@ quoting it.**
 
 ⚠ **Until that exists, nothing from the separability result goes into `P15`** — which is the order's own
 instruction, and this registration does not weaken it.
+
+---
+
+# ⛔ AMENDMENT 5 — **YES, BOTH READ THE PLANE CELL BY CELL. So the `k` binning is chosen NOW, before the arrays land.**
+
+The order asks whether my null and my fit read the plane cell by cell or only through sums, and it is right to
+ask before the bytes arrive. ⇒ **The honest answer is cell by cell, in both, and 70's caution therefore
+bites.**
+
+## A5.1 Where each one reads cell by cell
+
+| | how it reads `k` |
+|---|---|
+| **the null** (row-and-column-normalised 2D phase randomisation) | ⛔ `rfft2` over the **whole plane** — every cell enters, and the `k`-Nyquist edge enters hardest |
+| **the two-amplitude fit** | ⛔ over **all** `(ℓ, k)` cells, contribution-weighted |
+| **the weighted correlation / condition number / VIF** | ⛔ over all cells |
+
+⇒ **None of the three reads only through sums.** ⌗ *Saying otherwise would have been the easy answer and it
+would have been false.*
+
+## A5.2 Why that is a problem at `2.3` samples per oscillation, in numbers
+
+| | |
+|---|---|
+| `k` nodes | `1450` |
+| samples per Bessel oscillation (70's figure) | **`2.3`** |
+| ⇒ oscillations across the range | **~`630`** |
+| Nyquist for an oscillation | `2` samples ⇒ **`2.3` is `15 %` above it** |
+
+⛔ **At `15 %` above Nyquist the oscillation is representable and barely.** A 2D FFT of such a field carries
+much of its `k`-power at the Nyquist edge, where the content is **sampling artefact as much as structure** —
+and phase-randomising that edge produces a null whose high-`k` behaviour is an artefact of the grid. ⇒ Taking
+a per-cell correlation over it would read the least reliable part of the plane hardest.
+
+## A5.3 ⛭ THE CHOICE: BINNING, not smoothing — and why
+
+**Smoothing along `k` is rejected, with the reason:**
+- its kernel width is a **free parameter** chosen by hand, which §3's parameter-free discipline exists to avoid;
+- it **cannot recover** a marginally sampled oscillation, only average it toward zero;
+- ⛔ worst, it **changes the autocorrelation** — and the null's whole job is to *preserve* the autocorrelation.
+  A smoothed field's null would preserve a structure the smoothing invented.
+
+**Binning is taken instead, because it is what the instrument is good for.** 70's own caution says the arrays
+are *"good for sums over `k`"*; a bin sum **is** that sum, over a sub-range, and it is an **integral** rather
+than a smoothing artefact. ⛭ *It also restores positivity — sums of positive `M` are positive — which is
+exactly the trouble amendments 1–3 spent their length on.*
+
+**Fixed now, in oscillations, because that is the unit the caution is in:**
+
+| | bin width | oscillations per bin | bins |
+|---|---|---|---|
+| **PRIMARY** | `12` nodes | **`5.2`** | **`120`** |
+| **SECONDARY** | `23` nodes | **`10.0`** | **`63`** |
+
+⇒ **Both are run and both are reported; a disagreement between them IS the verdict**, by the same rule the two
+`ℓ` readings already run under. ⌗ *`120 × 692 = 83 040` cells remain, against the `142` modes the separability
+structure occupied — enough plane to carry it, and that is the reason for preferring the finer as primary.*
+
+⛭ **`ℓ` is NOT binned.** Every integer `ℓ` from `242` to `939` is sampled, which is not marginal in any sense
+70 flagged. ⇒ The test reads **bin-by-bin in `k` and cell-by-cell in `ℓ`.**
+
+## A5.4 ⛔ The admissibility gate, because this is the route amendment 2 ALREADY closed once
+
+Amendment 2 considered banding on the pseudo-spectra and **rejected it on a measurement**: the lowest bands
+sat entirely inside the dead region for every `ℓ`, so only `B = 1` was admissible — and `B = 1` is the
+collapse. ⇒ **The same check runs here, and I am not assuming it comes out differently:**
+
+- **Gate A5a.** At every `ℓ`, and in both binnings, every bin's summed `M` must be **strictly positive** for
+  all four combinations.
+- **IF IT FAILS the same way it failed on the pseudo-spectra, the binned route is closed too**, and that is
+  reported as the result rather than retuned into a third binning.
+
+⌗ *The reason to expect a different outcome is that 70's grid is the **CR ladder over the actual window**,
+`1450` nodes across `ℓ = 242–939`, not the pseudo-spectra's `k` grid — **a different object**. But "a
+different object" is a reason to **re-measure**, not a reason to predict, and this amendment predicts nothing.*
+
+## A5.5 What does NOT change
+
+- ⛭ **§2c stays mine and runs on what lands**, as the order confirms. 70's C3 is **70's control on 70's
+  construction**; mine is the collapse against the banked spectra. ⇒ Two controls, two objects, and the first
+  does not stand in for the second. **With binning, §2c is asked of the sum over ALL bins**, which is the same
+  total, so the control is unweakened.
+- the **threshold** — `|corr| ≤ 0.70` and `VIF ≤ 2.0` — is **untouched**, as in all four earlier amendments.
+- the **four-cell outcome table** and the **power requirement** stand as registered.
+
+⚠ **And plainly: this amendment makes the test coarser in `k` than I registered it.** I am making it because
+the instrument says the finer reading is not trustworthy, **not because it helps** — binning can only lose
+discriminating power, never gain it. ⇒ **If the binned test has no power, that is the result**, and §2's
+power requirement will say so rather than being relaxed to let a verdict through.
+
+---
+
+# ⛔ AMENDMENT 6 — **Gate A5a's PREDICATE was mis-stated. It fired, and the registration's own words say it is not the closing failure.**
+
+⛭ **Registered while still blind to the verdict:** the reading script **refused at A5a and exited before
+computing Gates 2 and 3**, so no correlation, condition number or VIF has been seen. That is the one thing
+that makes this amendment safe to make, and it is why it is written now rather than after.
+
+## A6.1 What A5a said, and why that was the wrong predicate
+
+A5a demanded *"every bin's summed `M` **strictly positive**"*. ⛔ **That conflates two things amendment 5's
+own prose distinguishes**, because §A5.4's closing condition is not "any non-positive bin" but
+*"**IF IT FAILS the same way it failed on the pseudo-spectra**"* — and it names that way: the lowest bands
+inside the dead region **for every `ℓ`**, so that no binning is admissible.
+
+## A6.2 The measurements that decide it
+
+| | |
+|---|---|
+| cells with `M < 0` | ⛭ **`0`** — `P` is strictly positive at all `1450` nodes and `Dlk²  ≥ 0`, so `M ≥ 0` identically |
+| cells with `M == 0` | `62 191` of `1 012 100` (**`6.1 %`**) — exact zeros, the underflow/zero-crossing case |
+| the ladder's monotonicity | holds; `min dk = 1.95e-04` |
+| ⛔ **bins dead at EVERY `ℓ`**, primary | **`0` of `120`** |
+| ⛔ **bins dead at EVERY `ℓ`**, secondary | **`0` of `63`** |
+| bin-cells dead at *some* `ℓ` | `5.8 %` (primary), `5.4 %` (secondary) |
+
+⇒ **Nothing is negative, and no bin is dead at every `ℓ`.** On the pseudo-spectra the lowest bands were dead
+at every `ℓ`, which is what made only `B = 1` admissible. ⛭ **That condition is not met here, so the
+registration's own named closing failure has NOT occurred.**
+
+## A6.3 The amendment, which is amendment 3's mechanism and not a new one
+
+Amendment 3 **withdrew** amendment 1's support restriction for exactly this reason: a dead cell's
+contribution weight is **exactly `0`**, so masking replaces restricting and nothing is dropped. ⇒ **The same
+applies to a dead BIN**: it carries weight `0`, never enters a weighted statistic, and needs no support cut.
+
+- **A5a is restated**, in the two terms its own closing condition uses:
+  - **A5a-i.** No bin sum may be **negative** anywhere. *A negative integrand contribution is fatal and no
+    masking fixes it.* ⇒ Measured: `0`.
+  - **A5a-ii.** No bin may be **dead at every `ℓ`**. *That is the pseudo-spectra failure, and it closes the
+    route.* ⇒ Measured: `0` of `120` and `0` of `63`.
+- Dead bin-cells are **masked at weight `0`**, their log set to a finite placeholder so no `nan` arises,
+  exactly as amendment 3 does for cells.
+
+⚠ **DECLARED: I am restating a gate that fired.** That is the shape of a seat talking itself past its own
+refusal, so the defence has to be in the registration's text and not in my judgement — and it is: §A5.4
+names the closing failure as *"the same way it failed on the pseudo-spectra"*, and the measurement above
+shows it is a different way. ⌗ *Had any bin been dead at every `ℓ`, or any cell negative, the route would be
+closed and this amendment would not exist.* ⛭ **And the verdict is still unseen as this is written**, so
+nothing about the restatement can have been chosen to produce one.
+
+## A6.4 Unchanged
+
+The **threshold** — `|corr| ≤ 0.70`, `VIF ≤ 2.0` — is untouched, as in all five earlier amendments. The two
+binnings, the agreement rule, the four-cell table, the power requirement and §2c stand as registered.

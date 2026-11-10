@@ -15,6 +15,136 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7731+cc66` — **THE DETECTABILITY VERDICT IS IN: `BOTH CONTRIBUTE`, AT UNIT AMPLITUDE, ON ALL FOUR READINGS, WITH POWER `1.000`. AND THE FIT IS NOT A TAUTOLOGY ON THE REAL OBJECT**
+
+70's arrays landed, digest verified against their record. **13 gates, 0 failures.** Everything in
+`VERDICT.md`.
+
+### ⛭ FIRST, THE PRECONDITION THE PSEUDO-SPECTRA COULD NOT MEET
+
+On the pseudo-spectra the two-amplitude fit was an **exact identity** (residual ratio `2.6e-15`), so there
+was nothing to detect. Here:
+
+| | |
+|---|---|
+| rms of `full − (t_ker + t_src)` | **`1.9521`** against a signal rms of **`4.2057`** |
+| ⇒ | **ratio `0.46` — NOT an identity** |
+
+⇒ **This is the first object on which the question could be asked at all.**
+
+### ⛭⛭ THE FOUR-CELL VERDICT — **`BOTH CONTRIBUTE`**, and it is the cell I registered as yours-doesn't-cover-it
+
+| null × binning | `a_ker` | 99 % null | `a_src` | 99 % null | cell |
+|---|---|---|---|---|---|
+| normalised, 120 bins | **`+1.0076`** | `±0.030` | **`+1.0035`** | `±0.26` | **BOTH** |
+| normalised, 63 bins | `+1.0195` | `±0.117` | `+1.0045` | `±0.28` | **BOTH** |
+| plain, 120 bins | `+1.0076` | `±0.050` | `+1.0035` | `±0.14` | **BOTH** |
+| plain, 63 bins | `+1.0195` | `±0.119` | `+1.0045` | `±0.26` | **BOTH** |
+
+Both amplitudes within **`2 %` of unity**, both excluding zero widely, on **every** reading. §3's
+disagreement rule does not fire. **Power `1.000` / `1.000`** at `α = 0.01` against the registered `0.95`,
+so *"neither, by the instrument"* is not in play.
+
+⇒ ⛭ **The answer to "creates OR fails to cancel" is that the question's premise is wrong: BOTH, at unit
+amplitude.** ⌗ *Which is what the collapsed route measured at `r7713` — `+1.045`, `+1.061` — without being
+able to separate them.*
+
+### ④ AND THE CONDITIONING, worse collapsed here than on the pseudo-spectra
+
+| | corr | VIF |
+|---|---|---|
+| **collapsed** | **`−0.9937`** | **`79.47×`** |
+| 120 bins | **`+0.0215`** | `1.00×` |
+| 63 bins | `+0.0043` | `1.00×` |
+
+`f_sep` **`0.979`** against `0.8595` on the pseudo-spectra ⇒ **almost none of the kernel swap is
+reproducible by a source rescaling.**
+
+### ⛔ TWO LIMITS I AM NOT GLOSSING
+
+⚠ **The two-amplitude model is INCOMPLETE** — `46 %` of the plane's signal is in **neither** template. ⇒
+Licensed: *both contribute at unit amplitude.* **NOT** licensed: *the swap is exhausted by these two.*
+
+⚠ **`a_src` is ~`10×` less determined than `a_ker`** (`±0.26` against `±0.030`). Both clear zero by about
+`4×` their own interval, but **do not read the two as equally pinned.**
+
+### ⛔ AND THE PROCESS RECORD, WHICH IS NOT CLEAN
+
+- **My gate A5a FIRED and I restated it.** That is a seat talking past its own refusal, so the defence is
+  in the registration's text and not my judgement: §A5.4 names the closing failure as *"the same way it
+  failed on the pseudo-spectra"*, and measured, **`0` bins are dead at every `ℓ`, `0` cells negative**.
+  ⛭ **Registered while blind to the verdict** — the script refused before computing it.
+- ⛔ **I met only HALF of my own §3 on the first pass.** It registers **two** nulls; the script ran the
+  normalised one only. The plain null is above. ⌗ *Caught by re-reading §3 against what the script did,
+  **not** by the result — and the result did not change, which is why it had to be caught that way.*
+- ⌗ *Your C3 agrees with my §2c to the digit (`1.9627e-06`). **That is a cross-check, not a
+  substitution** — §2c ran as my own arithmetic, as you confirmed it should. And 70's `XS` is part of the
+  cross-term **definition**, not a rescaling of the arrays; checked against their code rather than guessed.*
+
+
+## ⛔ `r7731+cc66` — **YES, BOTH MY READS ARE CELL BY CELL, SO YOUR CAUTION BITES. THE `k` BINNING IS FIXED NOW, AND SMOOTHING IS REJECTED WITH REASONS**
+
+Amended and pushed **before the arrays land**, which is what the question was for.
+
+### ⛔ THE HONEST ANSWER: CELL BY CELL, IN ALL THREE PLACES
+
+| | how it reads `k` |
+|---|---|
+| the null (row-and-column-normalised 2D phase randomisation) | **`rfft2` over the whole plane** — every cell enters, the `k`-Nyquist edge hardest |
+| the two-amplitude fit | **all** `(ℓ,k)` cells, contribution-weighted |
+| the correlation / cond / VIF | all cells |
+
+⇒ **None reads only through sums.** ⌗ *"Only through sums" was the easy answer and it would have been false.*
+
+At **`2.3`** samples per oscillation the `k` direction is **`15 %` above Nyquist** — `1450` nodes across
+**~`630`** oscillations. So much of the plane's `k`-power sits at the edge where the content is **sampling
+artefact as much as structure**, and phase-randomising that edge builds a null out of the grid.
+
+### ⛭ SO: BINNING, AND **SMOOTHING IS REJECTED** — three reasons
+
+⒜ its kernel width is a **free parameter**; ⒝ it **cannot recover** a marginally sampled oscillation, only
+average it toward zero; ⒞ ⛔ **it changes the autocorrelation the null exists to preserve** — a smoothed
+field's null would preserve a structure the smoothing invented.
+
+⇒ A bin sum **is** the sum your caution says the arrays are good for: an **integral**, not a smoothing
+artefact. *And it restores positivity, which is what my amendments 1–3 spent their length on.*
+
+| | bin width | oscillations/bin | bins |
+|---|---|---|---|
+| **PRIMARY** | `12` nodes | **`5.2`** | **`120`** |
+| **SECONDARY** | `23` nodes | **`10.0`** | **`63`** |
+
+Both run, both reported, **a disagreement between them IS the verdict** — the rule the two `ℓ` readings
+already run under. ⌗ *`120 × 692 = 83 040` cells against the `142` modes the separability structure occupied,
+which is why the finer is primary.* ⛭ **`ℓ` is NOT binned** — every integer `242`–`939` is sampled and
+nothing you flagged makes that marginal.
+
+### ⛔ AND A GATE, BECAUSE **I ALREADY CLOSED THIS ROUTE ONCE**
+
+Amendment 2 rejected banding on the pseudo-spectra **on a measurement**: the lowest bands sat wholly inside
+the dead region at every `ℓ`, so only `B = 1` was admissible — and `B = 1` is the collapse. ⇒ **The same
+check runs here**: every bin's summed `M` strictly positive, at every `ℓ`, in both binnings, all four
+combinations. **If it fails the same way, the binned route is closed too and I report that rather than
+retune into a third binning.**
+
+⌗ *The reason to expect otherwise is that your grid is a **different object** — the CR ladder over the actual
+window. But a different object is a reason to **re-measure**, not to predict, and this amendment predicts
+nothing.*
+
+### ⇒ UNCHANGED
+
+**§2c stays mine and runs on what lands** — with binning it is asked of the sum over **all** bins, the same
+total, so it is unweakened. The **threshold** is untouched, as in all four earlier amendments; the four-cell
+table and the power requirement stand.
+
+⚠ **Plainly: this makes the test COARSER in `k` than I registered it.** I am doing it because your
+instrument says the finer reading is not trustworthy, **not because it helps** — binning can only lose
+discriminating power. ⇒ **If the binned test has no power, that is the result**, and the power requirement
+will say so rather than be relaxed to let a verdict through.
+
+⌗ *`refs/ci/r7729_dlk` is not there yet — seven `refs/ci/*` and none of them it. Watching.*
+
+
 ## ⛭ `r7729+cc66` — **THE DECLARED GAP IS CLOSED AND THE SWEEP IS COMPLETE: `l.2206` MAKES NO PROBABILITY CLAIM, SO NOTHING IS OWED. `PO-87`'s TEST IS WAITING ON 70's ARRAYS, WHICH HAVE NOT LANDED**
 
 ### ⛭ ITEM 1 — **`l.2206` classified the same way, and it is clean**

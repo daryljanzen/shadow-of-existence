@@ -1,0 +1,42 @@
+
+  ⛭ `r7731+cc66.2` the detectability test on 70's arrays
+     l 242-939 (698), k 1450 ladder nodes, 2.2848 nodes per Bessel period
+
+    [PASS] 0  the convention: l(l+1) sum_k P Dlk^2 == Dl, RECOMPUTED here and not taken from the record
+             worst relative departure over all four combinations: 0.000e+00
+    [PASS] §2c  the grid move does not change the collapse -- ladder against native, MY arithmetic
+             max relative departure 1.9627e-06 against the registered 1e-03  ⌗ 70's C3 records 1.9627e-06 on the same comparison; agreement is a cross-check, not a substitution
+    [PASS] 1  the premise: P depends on the SOURCE arm alone, so the source swap is a column rescaling
+             within-source departures 0.000e+00 (cr) and 0.000e+00 (lcdm)
+    [PASS] 1b  the two-amplitude fit is NOT an algebraic identity on this object
+             rms residual of full - (t_ker + t_src) = 1.9521e+00 against a signal rms of 4.2057 ⇒ ratio 4.642e-01.  ⌗ on the pseudo-spectra this ratio was 2.6e-15, a tautology; here it is NOT one
+
+    ⇒ live cells (all four combinations positive): 949888 of 1012100
+
+    [PASS] A5a-i/PRIMARY  no bin sum is NEGATIVE anywhere [PRIMARY (12 nodes, 5.2 osc)]  -- a negative contribution is fatal
+             negative bin cells: 0
+    [PASS] A5a-ii/PRIMARY  no bin is dead at EVERY l [PRIMARY (12 nodes, 5.2 osc)]  -- THAT is the pseudo-spectra failure
+             bins dead at every l: 0;  bin-cells dead at some l: 19317 (5.8%), masked at weight 0 per amendment 3
+    [PASS] A5a-i/SECONDARY  no bin sum is NEGATIVE anywhere [SECONDARY (23 nodes, 10.0 osc)]  -- a negative contribution is fatal
+             negative bin cells: 0
+    [PASS] A5a-ii/SECONDARY  no bin is dead at EVERY l [SECONDARY (23 nodes, 10.0 osc)]  -- THAT is the pseudo-spectra failure
+             bins dead at every l: 0;  bin-cells dead at some l: 9375 (5.3%), masked at weight 0 per amendment 3
+    ⛭ PRIMARY (12 nodes, 5.2 osc): 120 bins   f_mimic 0.2023  f_sep 0.9793
+    ⛭ SECONDARY (23 nodes, 10.0 osc): 63 bins   f_mimic 0.1998  f_sep 0.9798
+
+    ⛭ THE VERDICT -- conditioning, against the collapsed route's -0.92 / 6.51x:
+             PRIMARY (12 nodes, 5.2 osc)    corr +0.0215  cond 1.02  VIF 1.00x  => MEETS
+             SECONDARY (23 nodes, 10.0 osc) corr +0.0043  cond 1.00  VIF 1.00x  => MEETS
+    [PASS] agree  the two binnings agree on the verdict (registered: a disagreement IS the verdict)
+             both meet
+    [PASS] 3  THE REGISTERED THRESHOLD -- |corr| <= 0.7 AND VIF <= 2.0
+             the (l,k) plane BREAKS the degeneracy on the real computation
+    [PASS] 3b  SAME-OBJECT BASELINE -- the same statistic on the COLLAPSED arrays still sees a degeneracy
+             collapsed: corr -0.9937  cond 17.77  VIF 79.47x over 698 l
+
+    ⌗ a 63-bin family's resampling floor is p = 5.04e-88 ⇒ 19.89 sd-equivalent
+
+    ⌗ a 120-bin family's resampling floor is p = 1.49e-199 ⇒ 30.14 sd-equivalent
+
+  OK  10 gate(s) pass, 0 failure(s)
+

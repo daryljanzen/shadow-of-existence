@@ -1,0 +1,14 @@
+
+  ⛭ `r7731+cc66.5` the SECONDARY (plain) null, 10000 draws, both binnings
+
+    PRIMARY    (120 bins)  a_ker +1.0076 vs null 99% [-0.0501, +0.0485] | a_src +1.0035 vs [-0.1378, +0.1401]
+                           =>  BOTH CONTRIBUTE
+    SECONDARY  ( 63 bins)  a_ker +1.0195 vs null 99% [-0.1190, +0.1166] | a_src +1.0045 vs [-0.2585, +0.2607]
+                           =>  BOTH CONTRIBUTE
+
+    [PASS] the plain null agrees with itself across binnings
+
+  ⇒ §3's rule: both null constructions are reported, and a disagreement between them IS
+    the verdict.  The PRIMARY (normalised) null returned BOTH CONTRIBUTE on both binnings;
+    the PLAIN null returns: PRIMARY BOTH CONTRIBUTE / SECONDARY BOTH CONTRIBUTE
+

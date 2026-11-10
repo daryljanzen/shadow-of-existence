@@ -1,0 +1,24 @@
+
+  ⛭ `r7731+cc66.4` THE FOUR-CELL VERDICT, 10000 null draws per binning
+
+    ⛭ PRIMARY (120 bins)   [85 s for 10000 draws]
+         fitted   a_ker +1.0076   a_src +1.0035
+         null 99% a_ker [-0.0304, +0.0303] sd 0.0118   a_src [-0.2569, +0.2620] sd 0.1125
+         power at alpha=0.01: pure-kernel 1.000, pure-source 1.000 (registered requirement 0.95)
+    [PASS] power/PRIMARY  the test can recover a planted pure-kernel AND pure-source signal [PRIMARY]
+             1.000 / 1.000 against 0.95; BELOW it the verdict is 'neither, by the instrument'
+    ⛭ SECONDARY (63 bins)   [47 s for 10000 draws]
+         fitted   a_ker +1.0195   a_src +1.0045
+         null 99% a_ker [-0.1169, +0.1156] sd 0.0480   a_src [-0.2842, +0.2855] sd 0.1355
+         power at alpha=0.01: pure-kernel 1.000, pure-source 1.000 (registered requirement 0.95)
+    [PASS] power/SECONDARY  the test can recover a planted pure-kernel AND pure-source signal [SECONDARY]
+             1.000 / 1.000 against 0.95; BELOW it the verdict is 'neither, by the instrument'
+
+  ⛭ THE REGISTERED 2x2:
+         PRIMARY    a_ker excludes 0 | a_src excludes 0   =>  BOTH CONTRIBUTE
+         SECONDARY  a_ker excludes 0 | a_src excludes 0   =>  BOTH CONTRIBUTE
+    [PASS] agree  the two binnings agree on the cell (registered: a disagreement IS the verdict)
+             PRIMARY: BOTH CONTRIBUTE / SECONDARY: BOTH CONTRIBUTE
+
+  OK  3 of 3 gate(s) pass
+
