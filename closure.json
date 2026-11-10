@@ -1,0 +1,64 @@
+{
+ "C1_lcdm": {
+  "n_l": 30,
+  "max_rel": 4.440892098500626e-16,
+  "bar": 1e-06,
+  "ok": true,
+  "n_modes": 250,
+  "n_slices": 11,
+  "nk_saved": 2547
+ },
+ "C1_cr": {
+  "n_l": 30,
+  "max_rel": 4.440892098500626e-16,
+  "bar": 1e-06,
+  "ok": true,
+  "n_modes": 250,
+  "n_slices": 6,
+  "nk_saved": 1452
+ },
+ "C2_lcdm": {
+  "max_rel": 5.551115123125783e-16,
+  "ok": true
+ },
+ "C2_cr": {
+  "max_rel": 3.3306690738754696e-16,
+  "ok": true
+ },
+ "grid": {
+  "n_ladder": 1450,
+  "k_lo": 0.0009531793452739988,
+  "k_hi": 0.28290023347379184,
+  "n_l": 698,
+  "l_lo": 242,
+  "l_hi": 939,
+  "l_A": {
+   "lcdm": 301.54271387763947,
+   "cr": 302.9430505935752
+  },
+  "xs": {
+   "S_cr__K_cr": 1.0,
+   "S_cr__K_lcdm": 0.9872929344419445,
+   "S_lcdm__K_lcdm": 1.0,
+   "S_lcdm__K_cr": 1.0128706132848382,
+   "native_lcdm": 1.0
+  },
+  "nodes_per_bessel_period": 2.2847925104775926
+ },
+ "C3": {
+  "max_rel": 1.9627101554009485e-06,
+  "worst_l": 936,
+  "n_over_1e3": 0,
+  "ok": true
+ },
+ "C4": {
+  "max_rel": 3.552713678800501e-15,
+  "ok": true
+ },
+ "ok": true,
+ "blob": {
+  "path": "r7729_dlk_four.npz",
+  "bytes": 32508096,
+  "sha256": "3fbad4d34030cf0ee36e43ccbe30dc630039996d9a5cfa6316fd85917760ccb9"
+ }
+}
