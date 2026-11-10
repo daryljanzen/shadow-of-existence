@@ -94,7 +94,12 @@ knob on the physics, no refit, and no mechanism asked for or offered.
        * SHARED comb, which is `retained()` below: slope +0.02690 +- 0.01226, intercept 0.9927 +-
          0.0331, which DOES straddle one -- so on this form the namesake's reading survives.
        * OWN comb (`r7673`/`r7683`, PART 6B below, and the READING OF RECORD): slope +0.01034 +-
-         0.00137 at 7.6 sigma of its own setting spread, intercept 1.0263 +- 0.0089 with ALL TWELVE
+         0.00137, which is 7.6 TIMES ITS OWN SETTING SPREAD -- ⛔ r7727+cc66: *a ROBUSTNESS ratio and
+        NOT a sigma*, because a setting spread measures how far the slope moves when the analysis
+        choice moves and carries no sampling distribution; this line previously read "7.6 sigma of its
+        own setting spread", which names the right denominator and the wrong kind of quantity. The
+        paper's own wording, "seven and a half times its own spread across those settings", was
+        already correct -- intercept 1.0263 +- 0.0089 with ALL TWELVE
          settings above one -- so on this form THERE IS a constant offset, +2.6 per cent, and the
          namesake's "the offset is not established" is FALSE.
      ⇒ *The extrapolation to q = 0 is still called an extrapolation: the lowest band centre is q ~ 1.2

@@ -1,0 +1,10 @@
+
+  ⛭ `r7727+cc66.2` all 73 candidates, bucketed mechanically
+
+    SETTLED (excl ⒜)                 2   lines: 1401, 1404
+    IN SCOPE                         6   lines: 957, 1779, 1826, 1862, 1863, 2059
+    OUT: quoted/external error      10   lines: 519, 520, 893, 993, 1082, 1134, 2146, 2572, 2814, 2818
+    OUT: no multiple formed         55   lines: 136, 511, 512, 521, 529, 530, 532, 559, 795, 887, 902, 962, 968, 1002, …
+
+  ⇒ the IN SCOPE set is what §3's three criteria admit, and it is read site by site in VERDICT.md.
+
