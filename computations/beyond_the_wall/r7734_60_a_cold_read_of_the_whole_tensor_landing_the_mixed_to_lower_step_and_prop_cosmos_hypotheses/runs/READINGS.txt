@@ -1,0 +1,128 @@
+
+========================================================================================================
+  A -- THE WHOLE-TENSOR SENTENCE, AND THE MIXED-TO-LOWER STEP
+========================================================================================================
+
+  A1  the three sentences located by TEXT in the paper, raw and flattened
+  PASS      A1.anchor                  1x raw, 1x flat  <- 'and every off-diagonal component vanishes for every pr'
+  PASS      A1.anchor                  1x raw, 1x flat  <- '$T_{\\mu\\nu}=0$ if and only if \\eqref{eq:vacode} holds'
+  PASS      A1.anchor                  1x raw, 1x flat  <- 'its index, $\\dim\\ker-\\operatorname{codim}\\operatorname'
+  PASS      A1.cites_both              and the sentence names BOTH declarations, saying which covers which half
+  PASS      A1.sixteen                 the sixteen-component claim is there as the order reports it
+
+  A2  ⚠ THE REGISTERED SUBTLE PART -- COMPUTED, not argued
+  PASS      A2.lowering_free           lowering is a MULTIPLICATION, so a vanishing mixed tensor gives a vanishing lower one with NO invertibility used: g * 0 = 0 entrywise, computed and not asserted
+  PASS      A2.negative_control        NEGATIVE control: one non-zero mixed entry lowers to a non-zero lower entry (-c*A(r)), so the zeros above are the hypothesis’s
+  PASS      A2.N1_dissolves            ⇒ N1’s first reading is REFUTED: the index-position step is free, and the order’s "stated with mixed components" is not by itself a gap
+  PASS      A2.esG_uses_inverse        the real condition is one level earlier: es_G is DEFINED through the INVERSE metric -- 'noncomputable def es_G (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) (b c : Fin 4'
+  PASS      A2.hyp_carries_f           and es_Hyp carries BOTH non-vanishing conditions: ['hA : A (x 1) ≠ 0', 'hF : F (x 1) ≠ 0', 'hr : x 1 ≠ 0', 'hs : Real.sin (x 2) ≠ 0']
+  PASS      A2.gauge_locks_them        on the construction gauge the two collapse to one, since es_construction_gauge takes `es_Hyp f f x f2` ⇒ the hypothesis IS `f(r) ≠ 0`, which fails at every horizon
+  PASS      A2.interval_silent         ⚠ the sentence’s interval is stated as `(r_1,r_2) subset (0,oo)` and says NOTHING about `f != 0` (1058 chars, bounded by its own line)
+  PASS      A2.gauge_form              and eq:gauge writes the radial term as `dd r^2 / f(r)`, which is undefined where `f = 0` ⇒ the chart excludes the horizons BY ITS OWN FORM, not by a stated restriction
+  PASS      A2.grr_blows_up            computed: g_rr = 1/f tends to oo as f -> 0+, so a horizon is not a point of this chart at all -- the condition is the chart’s and not an extra hypothesis
+  PASS      A2.diag_half_wider         ⚭ and the mismatch runs BOTH ways: ok_vacuum_iff_ode carries no non-vanishing hypothesis at all (['(ha : 0 ≤ a)', '(hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)']), so the diagonal half is stated on the whole interval while the off-diagonal half needs `f != 0`
+  PASS      A3.reader.let              the statement reader’s NEGATIVE first, before use: a conclusion CONTAINING a depth-zero `:=` of its own (rg_sinh23_radial’s `let r := ...`) is read WHOLE and not truncated at it -- 268 chars, carrying both `let r` and `sinh`
+
+  A3  the two declarations’ quantifications, printed side by side
+  PASS      A3.read                    ok_vacuum_iff_ode    binders ['{Λ a b : ℝ}', '(ha : 0 ≤ a)', '{f : ℝ → ℝ}', '(hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)', "(hf' : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r)"]
+        ok_vacuum_iff_ode    conclusion  (∀ r ∈ Ioo a b, ok_Tt Λ f r = 0 ∧ ok_Tθ Λ f r = 0) ↔ ∀ r ∈ Ioo a b, ok_ode Λ f r = 0
+  PASS      A3.read                    es_G_offdiag         binders ['(h : es_Hyp A F x A2)', '(b c : Fin 4)', '(hbc : b ≠ c)']
+        es_G_offdiag         conclusion  es_G (es_g A F) x b c = 0
+  PASS      A3.offdiag_pointwise       es_G_offdiag is stated at ONE point x for one index pair: es_G (es_g A F) x b c = 0 -- while ok_vacuum_iff_ode quantifies over an INTERVAL, so the sentence’s conjunction is assembled by the reader and is stated by no declaration
+  PASS      A3.offdiag_universal       the index pair IS universally quantified, so "every off-diagonal component" is delivered: '(b c : Fin 4) (hbc : b ≠ c)'
+
+  A4  "every off-diagonal component ... for every profile" -- what does it range over?
+  PASS      A4.concludes               es_Ric_offdiag   concludes es_Ric (es_g A F) x b c = 0
+  PASS      A4.concludes               es_G_offdiag     concludes es_G (es_g A F) x b c = 0
+  PASS      A4.profile_pair            "every profile" ranges over a PAIR (A, F) under es_Hyp, which is WIDER than the gauge `A = F = f` the paper applies it to -- the declaration is the stronger statement
+
+  A5  "a vacuum in all sixteen components" -- how many does es_sds_vacuum_full give?
+  PASS      A5.all_pairs               es_sds_vacuum_full is quantified over EVERY index pair: ['{x : Fin 4 → ℝ}', '(b c : Fin 4)'] ⇒ 4 x 4 = 16 components, so "all sixteen" is exact
+  PASS      A5.lambda_on_diag          and the cosmological term is added on the DIAGONAL only, which is what a vacuum with Lambda means: es_G (es_g (ok_sds Λ M) (ok_sds Λ M)) x b c + (if b = c then Λ else 0) = 0
+  PASS      A5.not_vacuous             with a concrete point exhibited, so the quantifier is not vacuous
+
+  A6  the index clause now NAMES the arithmetic -- is any of it machine-checked?
+  PASS      A6.clause                  the clause is there as the order reports it
+  PASS      A6.no_dimension            a named search over ok_index_one’s statement for a dimension or a codimension returns no hit ⇒ the integer is still the READER’s arithmetic
+  PASS      A6.four_conjuncts          it still states 4 conjuncts -- spanned, non-zero, every kernel element is c/r, and onto -- from which dim ker = 1 and codim range = 0 follow
+  PASS      A6.improvement             ⇒ N5 is reached in substance and is NOT a defect: r7732 reported that the clause asserted an integer without naming what it meant, and the new wording names the arithmetic the reader must do. The step is now VISIBLE where it was silent, which is the repair that was available without formalising Fredholm theory
+
+========================================================================================================
+  B -- prop:cosmo's HYPOTHESES, CHECKED AGAINST THE METRIC AND NOT ONLY AGAINST THE BINDERS
+========================================================================================================
+
+  B1  the prose sentence and rg_cosmo’s binders, side by side
+  PASS      B1.anchor                  the sentence (467 chars, bounded by its own line): 'The proposition is machine-checked on the radial plane, the Christoffel symbols computed from the metric'
+      binders    ["{f T R T' R' T'' R'' : ℝ → ℝ}", "(hg : rg_geodesic f T R T' R' T'' R'')", '(hfd : ∀ τ, DifferentiableAt ℝ f (R τ))', '(hf : ∀ τ, f (R τ) ≠ 0)']
+      conclusion (∀ τ, HasDerivAt (fun s => f (R s) * T' s) 0 τ) ∧ (∃ E, ∀ τ, f (R τ) * T' τ = E) ∧ ((∀ τ, -f (R τ) * T' τ ^ 2 + R' τ ^ 2 / f (R τ) = -1) → ∃ E, ∀ τ, R' τ ^ 2 = E ^ 2 - f (R τ))
+  PASS      B1.energy                  the conserved energy is stated as `exists E, forall tau, f(R tau) * T′ tau = E`, which is the prose’s `E = f t-dot`
+  PASS      B1.unit_is_hypothesis      ⚭ and "unit timelike" is the HYPOTHESIS OF AN IMPLICATION INSIDE the conclusion, not a binder -- so the prose’s appositive "unit timelike, obeys ..." matches its structure exactly: the energy holds unconditionally, the radial law only when unit timelike
+  PASS      B1.radial_law              and that implication’s consequent is `R′ tau ^ 2 = E ^ 2 - f (R tau)`, the prose’s `r-dot^2 = E^2 - f`
+  PASS      B1.chart_hypothesis        ⚠ and rg_cosmo carries the SAME chart condition the whole-tensor sentence leaves silent: ['(hf : ∀ τ, f (R τ) ≠ 0)']
+  PASS      B1.prose_silent_on_it      which the prose sentence does not state either -- the condition is implicit in the chart in both places, consistently
+
+  B2  ⚭ is `r-dot^2 = E^2 - f` what a UNIT TIMELIKE curve gives?  Derived from the metric.
+  PASS      B2.metric_read             the radial-plane metric is read from rg_g: 'noncomputable def rg_g (f : ℝ → ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :='
+  PASS      B2.derived                 imposing g(u,u) = -1 with E = f*tdot and solving gives rdot^2 = E**2 - f, residual against E^2 - f is 0 ⇒ the law is EXACT, so N7 is not reached
+  PASS      B2.negative_control        NEGATIVE control: the null normalisation g(u,u) = 0 gives rdot^2 = E**2, which is NOT `E^2 - f` -- so the arm above is discriminating and the "unit" in "unit timelike" is load-bearing rather than decorative
+
+  B3  the four other rg_* declarations, each read from its CONCLUSION and not its name
+  PASS      B3.exists                  rg_witness         declared in StaticEinstein.lean
+  PASS      B3.concludes               rg_witness         concludes a concrete geodesic, so rg_cosmo is not vacuous  :: rg_geodesic (fun _ => 1) id (fun _ => 1) (fun _ => 1) (fun _ => 0) (fun _ =>
+  PASS      B3.exists                  rg_sinh23          declared in StaticEinstein.lean
+  PASS      B3.concludes               rg_sinh23          concludes the sinh^(2/3) scale factor solving the E = 1 law :: HasDerivAt (fun t => (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * t) ^ 2) ^ (1 
+  PASS      B3.exists                  rg_sinh23_radial   declared in StaticEinstein.lean
+  PASS      B3.concludes               rg_sinh23_radial   concludes its radial form                                  :: let r := (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ) der
+  PASS      B3.exists                  rg_tau23           declared in StaticEinstein.lean
+  PASS      B3.concludes               rg_tau23           concludes the Lambda = 0 collapse limit                    :: HasDerivAt (fun t => (9 * M / 2 * t ^ 2) ^ (1 / 3 : ℝ)) (Real.sqrt (2 * M / 
+  PASS      B3.witness_minkowski       and rg_witness is the Minkowski case `f = 1`, a geodesic the reader can check by hand
+
+  B4  every declaration P8 cites, against every file that declares it
+  PASS      B4.one_file                P8 names ['StaticEinstein.lean'], and nothing else
+  PASS      B4.rule_kept               20 names cited; cited-but-not-declared-in-StaticEinstein.lean: none
+      the cited names: ['es_G_offdiag', 'es_Ric_offdiag', 'es_construction_gauge', 'es_einstein', 'es_lapse', 'es_sds_vacuum_full', 'ok_L_bound', 'ok_bend', 'ok_general_solution', 'ok_index_one', 'ok_kernel', 'ok_matter_onto', 'ok_onto', 'ok_sds_solves', 'ok_vacuum_iff_ode', 'rg_cosmo', 'rg_sinh23', 'rg_sinh23_radial', 'rg_tau23', 'rg_witness']
+
+========================================================================================================
+  C -- THE P3 PARENTHETICAL, AND WHETHER THE REPAIR LEFT A TWIN
+========================================================================================================
+  PASS      C.roots.tangency           the root finder’s negatives first: at the Nariai mass it returns a DOUBLE root [(-1.154700538, 1), (0.577350269, 2)]
+  PASS      C.roots.near               and at the near-tangency it returns three distinct, 9.622e-05 apart
+
+  C1  the repaired parenthetical, located by text and then CHECKED
+  PASS      C1.landed                  1x raw, 1x flat
+  PASS      C1.old_gone                and the form it replaced is gone: 0 occurrence(s)
+  PASS      C1.exactly_those           over 47998 designations in the OPEN interval, both signs, 0 have a repeated root away from $r_0=\pm1/\sqrt3$
+  PASS      C1.the_named_two           and $r_0 = +0.577350269$ IS one of them: 2M = +0.384900179460, discriminant 0.000e+00, roots [(-1.154700538, 1), (0.577350269, 2)]
+  PASS      C1.the_named_two           and $r_0 = -0.577350269$ IS one of them: 2M = -0.384900179460, discriminant 0.000e+00, roots [(-0.577350269, 2), (1.154700538, 1)]
+  PASS      C1.both_signs_named        and the parenthetical names BOTH signs with the ±, which is what the computation requires
+
+  C2  ⚠ twins: any other sentence reading the strict interval as distinctness?
+  PASS      C2.twin                    'three distinct real roots'                      0 occurrence(s)
+  PASS      C2.twin                    'distinct real roots, the undercritical'         0 occurrence(s)
+  PASS      C2.twin                    'equivalently $|2M|'                             0 occurrence(s)
+  PASS      C2.twin                    'In the undercritical regime with'               0 occurrence(s)
+  PASS      C2.region_independent      and the region sentence still states distinctness directly rather than through the term, so it does not depend on the parenthetical at all
+
+========================================================================================================
+  D -- WHAT THE LANDING OVERTOOK, AND THE TWO POINTERS RE-MEASURED RATHER THAN ASSUMED
+========================================================================================================
+
+  D1  did the repair that formalised the off-diagonals leave a stale clause behind it?
+  PASS      D1.no_stale_offdiag        1 "not formalised" clause(s) remain in P8, and none names the off-diagonals: ['The constancy of the index along paths of Fredholm operators is cited and not formalised.']
+  PASS      D1.only_index_left         the one that remains is the index-constancy citation, which is still genuinely unformalised
+  PASS      D1.my_caveat_void          ⇒ N10 is NOT reached: my r7732 reading -- that the narrowing was honest BECAUSE the off-diagonal vanishing is an identity -- has been overtaken by its formalisation, and the clause it turned on was removed with it rather than left standing
+  PASS      D1.diagonal_word_gone      and the narrowing itself is gone: the sentence now claims `T_{\mu\nu}=0` whole
+
+  D2  the two stale Lean headers I routed at r7732, RE-MEASURED
+  **FAIL**  D2.operatorkernel_backs    OperatorKernel.lean’s self-description against whether P8 names it: still says it backs P8 = True, P8 names it = False
+  **FAIL**  D2.copies_no_earlier       and the header StaticEinstein.lean keeps verbatim: still says "it copies no earlier probe" = True, inside a file that is a copy
+  PASS      D2.routed_not_reapplied    ⇒ both are still open and both are 71’s by this order. Re-measured rather than assumed, and NOT re-routed: the order has already assigned them
+
+========================================================================================================
+  THE LEDGER
+========================================================================================================
+  arms run : 70  (distinct tags 56)
+  **2 ARM(S) FAILED**: ['D2.copies_no_earlier', 'D2.operatorkernel_backs']
+
+  ⌭ the verdicts that are FINDINGS rather than passes are collected in RESULT.md, each
+    with the witness printed above and no count or summary string guessed from it.
