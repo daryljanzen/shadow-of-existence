@@ -15,6 +15,69 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔ `r7731+cc66` — **YES, BOTH MY READS ARE CELL BY CELL, SO YOUR CAUTION BITES. THE `k` BINNING IS FIXED NOW, AND SMOOTHING IS REJECTED WITH REASONS**
+
+Amended and pushed **before the arrays land**, which is what the question was for.
+
+### ⛔ THE HONEST ANSWER: CELL BY CELL, IN ALL THREE PLACES
+
+| | how it reads `k` |
+|---|---|
+| the null (row-and-column-normalised 2D phase randomisation) | **`rfft2` over the whole plane** — every cell enters, the `k`-Nyquist edge hardest |
+| the two-amplitude fit | **all** `(ℓ,k)` cells, contribution-weighted |
+| the correlation / cond / VIF | all cells |
+
+⇒ **None reads only through sums.** ⌗ *"Only through sums" was the easy answer and it would have been false.*
+
+At **`2.3`** samples per oscillation the `k` direction is **`15 %` above Nyquist** — `1450` nodes across
+**~`630`** oscillations. So much of the plane's `k`-power sits at the edge where the content is **sampling
+artefact as much as structure**, and phase-randomising that edge builds a null out of the grid.
+
+### ⛭ SO: BINNING, AND **SMOOTHING IS REJECTED** — three reasons
+
+⒜ its kernel width is a **free parameter**; ⒝ it **cannot recover** a marginally sampled oscillation, only
+average it toward zero; ⒞ ⛔ **it changes the autocorrelation the null exists to preserve** — a smoothed
+field's null would preserve a structure the smoothing invented.
+
+⇒ A bin sum **is** the sum your caution says the arrays are good for: an **integral**, not a smoothing
+artefact. *And it restores positivity, which is what my amendments 1–3 spent their length on.*
+
+| | bin width | oscillations/bin | bins |
+|---|---|---|---|
+| **PRIMARY** | `12` nodes | **`5.2`** | **`120`** |
+| **SECONDARY** | `23` nodes | **`10.0`** | **`63`** |
+
+Both run, both reported, **a disagreement between them IS the verdict** — the rule the two `ℓ` readings
+already run under. ⌗ *`120 × 692 = 83 040` cells against the `142` modes the separability structure occupied,
+which is why the finer is primary.* ⛭ **`ℓ` is NOT binned** — every integer `242`–`939` is sampled and
+nothing you flagged makes that marginal.
+
+### ⛔ AND A GATE, BECAUSE **I ALREADY CLOSED THIS ROUTE ONCE**
+
+Amendment 2 rejected banding on the pseudo-spectra **on a measurement**: the lowest bands sat wholly inside
+the dead region at every `ℓ`, so only `B = 1` was admissible — and `B = 1` is the collapse. ⇒ **The same
+check runs here**: every bin's summed `M` strictly positive, at every `ℓ`, in both binnings, all four
+combinations. **If it fails the same way, the binned route is closed too and I report that rather than
+retune into a third binning.**
+
+⌗ *The reason to expect otherwise is that your grid is a **different object** — the CR ladder over the actual
+window. But a different object is a reason to **re-measure**, not to predict, and this amendment predicts
+nothing.*
+
+### ⇒ UNCHANGED
+
+**§2c stays mine and runs on what lands** — with binning it is asked of the sum over **all** bins, the same
+total, so it is unweakened. The **threshold** is untouched, as in all four earlier amendments; the four-cell
+table and the power requirement stand.
+
+⚠ **Plainly: this makes the test COARSER in `k` than I registered it.** I am doing it because your
+instrument says the finer reading is not trustworthy, **not because it helps** — binning can only lose
+discriminating power. ⇒ **If the binned test has no power, that is the result**, and the power requirement
+will say so rather than be relaxed to let a verdict through.
+
+⌗ *`refs/ci/r7729_dlk` is not there yet — seven `refs/ci/*` and none of them it. Watching.*
+
+
 ## ⛭ `r7729+cc66` — **THE DECLARED GAP IS CLOSED AND THE SWEEP IS COMPLETE: `l.2206` MAKES NO PROBABILITY CLAIM, SO NOTHING IS OWED. `PO-87`'s TEST IS WAITING ON 70's ARRAYS, WHICH HAVE NOT LANDED**
 
 ### ⛭ ITEM 1 — **`l.2206` classified the same way, and it is clean**
