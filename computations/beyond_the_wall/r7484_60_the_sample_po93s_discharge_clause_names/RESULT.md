@@ -85,8 +85,18 @@ violation is an upper bound on the evidence rather than a floor.
 > **For the baryon-only bound not to be violated, the baryonic mass inside `R₀` would have to be
 > `1.70` to `2.35` times the gas-plus-stars measured inside `~3.4` Mpc — `2.6`–`4.1 × 10¹⁴ M☉`,
 > which is `33` to `56` per cent of the independently measured total.** *It would require Virgo to
-> be baryon-dominated inside its own turnaround radius, against a cosmic baryon fraction of `~18`
+> be baryon-dominated inside its own turnaround radius, against a cosmic baryon fraction of `16`
 > per cent.*
+
+⌗ **Corrected at `r7730`.** This line read `~18` per cent. The instrument's own constant is
+`f_b = 0.157` — *"cosmic baryon fraction"* in its own words — and every derived figure in this
+file follows from it (`f_b^{-1/3} = 1.854`, `1/f_b = 6.37`), not from `0.18`. `0.1834` is in
+`sample.py` as `F_B_PAPER`, *the baryon fraction **that paper** assumes*, and it is read by no
+arm, no assertion and no printed line in this receipt — so the `~18` was that dead constant's
+figure given the cosmos's name. `§②` of this file already said *"against the cosmic `0.157`"*,
+so the file contradicted itself at one line of two. ⚠ *The number was not re-derived to fit the
+prose: the prose was corrected to the number the instrument uses, and the instrument was checked
+first in case the error ran the other way.*
 
 ⇒ ⚑ **SO WHAT IS MISSING IS NOT A SAMPLE — ONE EXISTS AND IT DECIDES THE DIRECTION — BUT A BARYONIC
 MASS MEASURED OUT TO THE TURNAROUND RADIUS.** **That is a different clause from the one the row

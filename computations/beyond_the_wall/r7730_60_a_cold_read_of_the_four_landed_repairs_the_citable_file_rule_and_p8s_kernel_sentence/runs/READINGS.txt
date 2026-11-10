@@ -1,0 +1,191 @@
+
+========================================================================================================
+  A -- THE FOUR LANDED REPAIRS, read against what I asked for AND against what is TRUE
+========================================================================================================
+
+  A1  consequence three, located by text, then COMPUTED
+  PASS      A1.anchor              1x raw, 1x flattened  <- 'on the forward branch $r>0$ the curvature chan'
+  PASS      A1.anchor              1x raw, 1x flattened  <- 'being negative for $r<r_{\\mathrm{HE}}$ and pos'
+  PASS      A1.anchor              6x raw, 6x flattened  <- 'r_{\\mathrm{HE}}=(M\\alpha^{2})^{1/3}'
+  PASS      A1.abstract            the restriction is present in the paper
+  PASS      A1.signflips           M=+1.0000: 1 sign change(s) on r>0 (expected 1); K_G monotone up = True; root r_HE=1.0
+  PASS      A1.signflips           M=+0.2000: 1 sign change(s) on r>0 (expected 1); K_G monotone up = True; root r_HE=0.584804
+  PASS      A1.signflips           M=+0.0370: 1 sign change(s) on r>0 (expected 1); K_G monotone up = True; root r_HE=0.333222
+  PASS      A1.signflips           M=+0.0010: 1 sign change(s) on r>0 (expected 1); K_G monotone up = True; root r_HE=0.1
+  PASS      A1.signflips           M=+0.0000: 0 sign change(s) on r>0 (expected 0); K_G monotone up = True; root r_HE=None
+  PASS      A1.signflips           M=-0.3000: 0 sign change(s) on r>0 (expected 0); K_G monotone up = False; root r_HE=None
+  PASS      A1.needs_Mpos          with M<0 K_G is positive at both ends (+301.0000, +1.0003) -- "changes sign once" needs M>0, which consequence three does NOT carry
+
+  A2  THE ORDER'S FIRST QUESTION: does the two-sentence split read correctly IN CONTEXT?
+  PASS      A2.anchor              2x  <- 'up to the factor $r$}, positive on the forward branch $r>0'
+  PASS      A2.anchor              2x  <- 'There the sign of the intrinsic curvature of the existent '
+  PASS      A2.anchor              1x  <- 'the comoving acceleration is the slice’s own Gaussian curv'
+      antecedents by POSITION, nearest first: ['the factor $r$', "the slice's own Gaussian curvature", 'the comoving acceleration']
+  PASS      A2.nearest             the nearest preceding noun phrase is 'the factor $r$' at offset 426
+  PASS      A2.truth               reading "positive on r>0" as 'the factor $r$': true on all r>0 = True, on some = True (M=0.2 taken as a witness member)
+  PASS      A2.truth               reading "positive on r>0" as "the slice's own Gaussian curvature": true on all r>0 = False, on some = True (M=0.2 taken as a witness member)
+  PASS      A2.truth               reading "positive on r>0" as 'the comoving acceleration': true on all r>0 = False, on some = True (M=0.2 taken as a witness member)
+  PASS      A2.unique              the ONLY antecedent on which the appositive is true is ['the factor $r$']
+  PASS      A2.trivial             and on that antecedent it is a TAUTOLOGY (r>0 => r positive), which is why it reads as informative-of-something-else
+  PASS      A2.disambiguated       the clause two clauses later prints the curvature CHANGING sign, so the rival readings self-refute within the same sentence: 'negatively curved while the expansion decelerates, flat at the t'
+  PASS      A2.There               "There" resolves by position to 'the forward branch $r>0$' (offsets [('the forward branch $r>0$', 26), ('the slice', 745), ('the flat locus', 763)] back)
+  PASS      A2.There_true          and on that antecedent the second sentence is TRUE for every r>0: sign(r K_G) = sign(K_G) at every sampled r
+
+  A3  the region sentence now carries "with $M>0$" -- is that ENOUGH?
+  PASS      A3.anchor              1x raw, 1x flat  <- 'In the undercritical regime with $M>0$ the pieces of'
+  PASS      A3.anchor              1x raw, 1x flat  <- 'the arc up to the black-hole horizon is the black-ho'
+  PASS      A3.anchor              1x raw, 1x flat  <- 'the arc on from there to the cosmological horizon is'
+  PASS      A3.defn                definition located: 'It is positive for $|r_{0}|<2/\\sqrt{3}$ (three distinct real roots, the un'
+  PASS      A3.defn                definition located: 'The single threshold $|r_{0}|=2/\\sqrt{3}$, equivalently $|2M|=2/(3\\sqrt{3}'
+  PASS      A3.strict              the interval is STRICT in $r_0$, so Nariai at $|r_0|=2/\sqrt3$ is excluded by it
+  PASS      A3.selfwarning         the paper states of its own threshold: 'and $4-3r_{0}^{2}$ sees only two of them'
+  **FAIL**  A3.enough              1 undercritical-in-$r_0$, M>0 designation(s) FAIL "three distinct real roots"; nearest to the named one r0=0.577350
+  PASS      A3.nariai_in           the named designation $r_0=1/\sqrt3=0.577350269$ lies strictly inside the undercritical interval (< 1.154700538) and carries 2M=0.384900179460 = the Nariai mass 0.384900179460, discriminant 0.000e+00
+  PASS      A3.nariai_roots        and its roots, found with the TANGENCY test and not by sign change alone, are [(-1.154700538, 1), (0.577350269, 2)] -- a DOUBLE positive root, so the black-hole and cosmological horizons coincide and the "static region" arc between them is degenerate
+  PASS      A3.equivalently        so the paper's "equivalently" does not hold of DESIGNATIONS: the supremum of 2M over the strictly undercritical $r_0$-interval is 0.384900179460, which is the Nariai mass 0.384900179460 itself -- $|r_0|<2/\sqrt3$ gives $|2M|\le 2/(3\sqrt3)$ and not $<$
+  PASS      A3.selfconsistent      and this is the paper's own factorisation, read at source: the exact square $(3r_0^2-1)^2$ is precisely the designation $r_0=\pm1/\sqrt3$ the threshold misses
+
+========================================================================================================
+  B -- 71's CITABLE-FILE RULE, measured by ENUMERATION and not by spot checks
+========================================================================================================
+  PASS      B.reader.pos           a name KNOWN present reads present: sl_turning_limits at line 17829
+  PASS      B.reader.neg           a name KNOWN absent reads absent: sl_this_name_was_never_declared
+  PASS      B.reader.greek         and the name class admits non-ASCII: ['A_ℓN', 'bs_hasDerivAt_ρ', 'bs_Ω']
+
+  B -- P3, rule: every citation names SlicingCurvature.lean
+  PASS      B.P3.nonempty          33 distinct names cited, 35 occurrences
+  PASS      B.P3.declared          cited-but-NOT-declared-in-SlicingCurvature.lean: none
+  PASS      B.P3.cited_to          citations whose nearest named file is NOT SlicingCurvature.lean: none
+  **FAIL**  B.P3.unambiguous       25 of 33 cited names are declared in MORE THAN ONE probe file; worst [('sl_ellipse', 4), ('sl_factor', 4), ('sl_locus', 4), ('sl_nariai', 4)]
+      witness  sl_accel_neg               declared in 3 file(s): ['SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+      witness  sl_accel_pos               declared in 3 file(s): ['SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+      witness  sl_conjugacy               declared in 3 file(s): ['SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+
+  B -- P2, rule: every citation names CircleConic.lean
+  PASS      B.P2.nonempty          8 distinct names cited, 8 occurrences
+  PASS      B.P2.declared          cited-but-NOT-declared-in-CircleConic.lean: none
+  PASS      B.P2.cited_to          citations whose nearest named file is NOT CircleConic.lean: none
+  **FAIL**  B.P2.unambiguous       8 of 8 cited names are declared in MORE THAN ONE probe file; worst [('cc_isGeodesicOn', 10), ('cc_pullback', 10), ('cc_unit_energy', 10), ('ce_pullback', 9)]
+      witness  cc_isGeodesicOn            declared in 10 file(s): ['CircleBackSeam.lean', 'CircleChart.lean', 'CircleConic.lean', 'CircleExterior.lean', 'CircleMaximal.lean', 'CirclePatches.lean', 'SlicingCubic.lean', 'SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+      witness  cc_pullback                declared in 10 file(s): ['CircleBackSeam.lean', 'CircleChart.lean', 'CircleConic.lean', 'CircleExterior.lean', 'CircleMaximal.lean', 'CirclePatches.lean', 'SlicingCubic.lean', 'SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+      witness  cc_unit_energy             declared in 10 file(s): ['CircleBackSeam.lean', 'CircleChart.lean', 'CircleConic.lean', 'CircleExterior.lean', 'CircleMaximal.lean', 'CirclePatches.lean', 'SlicingCubic.lean', 'SlicingCurvature.lean', 'SlicingHinge.lean', 'SlicingSky.lean']
+
+  B3  the duplication r7726 found, measured across the files it spans
+      SlicingCurvature.lean       1479 declarations
+      SlicingSky.lean             1440 declarations
+      SlicingHinge.lean           1456 declarations
+      SlicingCubic.lean           1424 declarations
+      CircleConic.lean            1393 declarations
+  PASS      B3.copies              SlicingCurvature n SlicingSky.lean          =  1440 shared names (97.4% of SlicingCurvature)
+  PASS      B3.copies              SlicingCurvature n SlicingHinge.lean        =  1456 shared names (98.4% of SlicingCurvature)
+  PASS      B3.copies              SlicingCurvature n SlicingCubic.lean        =  1424 shared names (96.3% of SlicingCurvature)
+  PASS      B3.copies              SlicingCurvature n CircleConic.lean         =  1393 shared names (94.2% of SlicingCurvature)
+  PASS      B3.allfive             1393 names are declared in ALL FIVE files, so a citation to any one of them is satisfied by five -- sample ['A_nN', 'A_ℓN', 'C']
+
+========================================================================================================
+  C -- P8's KERNEL SENTENCE, and the order's second and third questions
+========================================================================================================
+  PASS      C.reader.pos           a declaration KNOWN present is read: '(Λ M : ℝ) {r : ℝ} (hr : 0 < r) : ok_ode Λ (ok_sds Λ M) r = 0'
+  PASS      C.reader.neg           a declaration KNOWN absent reads None
+  PASS      C.reader.split         and the depth-zero split returns binders ['(Λ M : ℝ)', '{r : ℝ}', '(hr : 0 < r)'] and conclusion 'ok_ode Λ (ok_sds Λ M) r = 0'
+  PASS      C.reader.nested        and a binder group that CONTAINS brackets is read WHOLE: '(hf : DifferentiableOn ℝ f (Ioo a b))' -- the negative this reader is given before use, because the flat regex it replaced returned the inner `(Ioo a b)` and dropped the binder itself
+
+  C1  the sentence is in P8 as the order quotes it, located by TEXT
+  PASS      C1.anchor              1x raw, 1x flat  <- 'Given the matter functional \\eqref{eq:Ttt}--\\eqref{eq:Tt'
+  PASS      C1.anchor              1x raw, 1x flat  <- 'every component of $T_{\\mu\\nu}$ vanishes if and only if '
+  PASS      C1.anchor              1x raw, 1x flat  <- 'are cited and not formalised'
+  PASS      C1.clause              the "cited and not formalised" clause names BOTH exclusions, in the same paragraph
+  PASS      C1.file                and it names the file it is machine-checked in
+
+  C2  THE ORDER'S SECOND QUESTION: is "Given the matter functional" HONEST, row 1a not being built?
+  PASS      C2.no_einstein         a named search for an Einstein-tensor INPUT over all nine statements: no hit -- so nothing takes it as input and row 1a is indeed not built
+  PASS      C2.transcribed         witness  noncomputable def ok_Tt (Λ : ℝ) (f : ℝ → ℝ) (r : ℝ) : ℝ := (r * deriv f r + f r - 1) / r ^ 2 + Λ
+  PASS      C2.transcribed         witness  noncomputable def ok_Tθ (Λ : ℝ) (f : ℝ → ℝ) (r : ℝ) : ℝ := deriv (deriv f) r / 2 + deriv f r / r + Λ
+  PASS      C2.filehdr             and the Lean file's own header says so: '`8πT^t_t` is read through eq. `Ttt`'
+  PASS      C2.rows                the file claims rows 1b-1e and 2 BUILT and never mentions row 1a, matching the order
+  PASS      C2.conditional         the conditional "Given" and the "cited and not formalised" disclaimer are in the SAME sentence-pair, the disclaimer second -- so the grant is stated and then named
+
+  C3  THE ORDER'S THIRD QUESTION: do the prose and ok_vacuum_iff_ode's HYPOTHESES match?
+      binders   ['{Λ a b : ℝ}', '(ha : 0 ≤ a)', '{f : ℝ → ℝ}', '(hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)', "(hf' : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r)"]
+      conclusion (∀ r ∈ Ioo a b, ok_Tt Λ f r = 0 ∧ ok_Tθ Λ f r = 0) ↔ ∀ r ∈ Ioo a b, ok_ode Λ f r = 0
+  PASS      C3.interval            an OPEN interval with $0\le a$ -- so Ioo a b is a subset of (0,oo), matching "any radial interval $(r_1,r_2)\subset(0,\infty)$"
+  PASS      C3.twice               TWO differentiability binders, the second on `deriv f`: ['(hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)', "(hf' : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r)"]
+  PASS      C3.prose_omits         and the prose sentence does NOT state twice differentiability
+  PASS      C3.components          "every component of $T_{\mu\nu}$" is backed by 2 expressions in the conclusion (['ok_Tt', 'ok_Tθ']), the four-to-two reduction carried by the DOCSTRINGS `8πT^t_t = 8πT^r_r` and `8πT^θ_θ = 8πT^φ_φ` and by no declaration
+  PASS      C3.offdiag             and the off-diagonal components are not mentioned anywhere in the file
+  PASS      C3.redundant           on the whole SdS family both components vanish identically, worst GRADIENT-SCALED residual 3.020e-14 -- so if $f$ is ONCE differentiable and solves the ODE then $f$ IS the family (ok_general_solution, which asks only DifferentiableOn) and is therefore twice differentiable; the `deriv f` binder is implied, not assumed
+  PASS      C3.gs_once             witness: ok_general_solution carries ONE differentiability binder ['(hf : DifferentiableOn ℝ f (Ioo a b))']
+  PASS      C3.fwd_free            and the forward direction uses only the radial component, which needs no second derivative
+
+  C4  the nine declarations, each read from its CONCLUSION and not from its name
+  PASS      C4.exists              ok_vacuum_iff_ode      declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_vacuum_iff_ode      concludes an iff between T=0 and the ODE     ['↔' in conclusion]  ::  (∀ r ∈ Ioo a b, ok_Tt Λ f r = 0 ∧ ok_Tθ Λ f r = 0) ↔ ∀ r ∈ Ioo a b, ok_ode Λ f r = 0
+  PASS      C4.exists              ok_general_solution    declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_general_solution    concludes the SdS family                     ['ok_sds' in conclusion]  ::  (∀ r ∈ Ioo a b, ok_ode Λ f r = 0) ↔ ∃ M, ∀ r ∈ Ioo a b, f r = ok_sds Λ M r
+  PASS      C4.exists              ok_sds_solves          declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_sds_solves          concludes the family solves the ODE          ['= 0' in conclusion]  ::  ok_ode Λ (ok_sds Λ M) r = 0
+  PASS      C4.exists              ok_L_bound             declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_L_bound             concludes a bound                            ['≤' in conclusion]  ::  |ok_L f r| ≤ |f r| + r₂ * |deriv f r|
+  PASS      C4.exists              ok_kernel              declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_kernel              concludes the kernel spanned by 1/r          ['c / r' in conclusion]  ::  (∀ r ∈ Ioo r₁ r₂, ok_L f r = 0) ↔ ∃ c, ∀ r ∈ Ioo r₁ r₂, f r = c / r
+  PASS      C4.exists              ok_onto                declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_onto                concludes a preimage for every forcing       ['= g r' in conclusion]  ::  ok_L (fun s => (∫ x in r₁..s, g x) / s) r = g r
+  PASS      C4.exists              ok_index_one           declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_index_one           concludes kernel-and-cokernel conjuncts      ['∧' in conclusion]  ::  (∀ r ∈ Ioo r₁ r₂, ok_L (fun s => 1 / s) r = 0) ∧ (∃ r ∈ Ioo r₁ r₂, (fun s : ℝ => 1 / s) r ≠ 
+  PASS      C4.exists              ok_matter_onto         declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_matter_onto         concludes a density realised                 ['ρ r' in conclusion]  ::  ok_Tt Λ (fun s => 1 - 2 * (∫ x in r₁..s, 4 * Real.pi * x ^ 2 * ρ x) / s - Λ * s ^ 2 / 3) r =
+  PASS      C4.exists              ok_bend                declared in OperatorKernel.lean
+  PASS      C4.concludes           ok_bend                concludes the bend m'                        ['deriv m r' in conclusion]  ::  ok_Tt Λ (fun s => 1 - 2 * m s / s - Λ * s ^ 2 / 3) r = -(2 * deriv m r / r ^ 2)
+  PASS      C4.Lbound_pointwise    ok_L_bound states a POINTWISE inequality at one r in Icc, not an operator norm: |ok_L f r| ≤ |f r| + r₂ * |deriv f r| -- while its own docstring says "`L` is bounded from `C¹` to `C⁰`" and the paper says "the map $f\mapsto(rf)'$ is bounded from $C^{1}$ to $C^{0}$"
+  PASS      C4.index_word          ok_index_one's conclusion contains no "index": the integer 1 is the READER's, from "spanned + non-zero + every kernel element is c/r" and "onto"
+  PASS      C4.open_vs_closed      and it mixes the intervals -- kernel on Ioo r1 r2, surjectivity on Icc r1 r2 -- while the paper says all four hold "on $[r_{1},r_{2}]$"
+  PASS      C4.kernel_open         ok_kernel is stated on the OPEN interval only: (∀ r ∈ Ioo r₁ r₂, ok_L f r = 0) ↔ ∃ c, ∀ r ∈ Ioo r₁ r₂, f r = c / r
+  PASS      C4.axioms              11 `#print axioms` lines, so every declaration names its own axiom basis rather than being taken on trust
+
+========================================================================================================
+  D -- PART TWO, MY OWN STRAY in r7484: the claim is VERIFIED before it is acted on
+========================================================================================================
+
+  D1  what number does the instrument use, and what do 1.85 and 6.4 follow from?
+  PASS      D1.instrument          the instrument's own line, located by text: f_b = 0.157  # cosmic baryon fraction
+  PASS      D1.arith               f_b = 0.1570  -> f_b^(-1/3) = 1.8537, 1/f_b = 6.3694
+  PASS      D1.arith               f_b = 0.1834  -> f_b^(-1/3) = 1.7601, 1/f_b = 5.4526
+  PASS      D1.arith               f_b = 0.1800  -> f_b^(-1/3) = 1.7711, 1/f_b = 5.5556
+  PASS      D1.matches157          the file's printed figures 1.854 and 6.37 match 0.157 to 3.3e-04 and 5.7e-04
+  PASS      D1.not18               and they do NOT match 0.1834: f_b^(-1/3) = 1.7601 vs 1.854, 1/f_b = 5.4526 vs 6.37
+  PASS      D1.printed             the receipt's own run.txt prints all three, so this is read and not inferred
+
+  D2  every occurrence of the wrong figure, by a named search over the whole revision
+  PASS      D2.record_found        the correction record is located by its own marker, 800 chars, and is held apart from the claim for every search below
+  PASS      D2.search              '~18'                        0 in the CLAIM [], 2 in the RECORD [('RESULT.md', 91), ('RESULT.md', 95)]
+  PASS      D2.search              '0.18 '                      0 in the CLAIM [], 0 in the RECORD []
+  PASS      D2.search              '0.1834'                     1 in the CLAIM [('sample.py', 93)], 1 in the RECORD [('RESULT.md', 93)]
+  PASS      D2.search              '18 per cent'                0 in the CLAIM [], 0 in the RECORD []
+  PASS      D2.search              'cosmic baryon fraction of'  1 in the CLAIM [('RESULT.md', 88)], 0 in the RECORD []
+  PASS      D2.search              '0.157'                      3 in the CLAIM [('PREDICTION.md', 32), ('RESULT.md', 48), ('run.txt', 22)], 2 in the RECORD [('RESULT.md', 92), ('RESULT.md', 96)]
+  PASS      D2.one_target          the figure the order names survives at 0 place(s) in the claim (it stood at exactly one, RESULT.md:88, before the correction) and at 2 in the record, where it is quoted as what was wrong
+  PASS      D2.phrase              and the phrase it sits in -- "against a cosmic baryon fraction of" -- is the SAME phrase the instrument uses for 0.157, which is why the figure had to agree with it
+  PASS      D2.selfconflict        and the file's OTHER mention, which the wrong figure contradicted, is unchanged: '`f_b = 0.34`–`0.48` against the cosmic `0.157`. **That number is an artefact of the inversio'
+
+  D3  N9: is 0.157 itself cited to a source that says 0.18?  If so the PROSE is right.
+  PASS      D3.paper_const         sample.py carries F_B_PAPER = 0.1834  # the baryon fraction THAT paper assumes
+  PASS      D3.dead                and F_B_PAPER is referenced 1 time in sample.py -- its own definition and nowhere else, so no arm, no assertion and no printed line reads it: it is DEAD
+  PASS      D3.instr_names_it      while the instrument calls 0.157 by exactly the phrase the prose uses: 'cosmic baryon fraction'
+  PASS      D3.N9_not_reached      N9 is NOT reached: the instrument is the right one (its constant is the cosmic baryon fraction, and the derived figures follow from it), so the PROSE is the error
+  PASS      D3.attrib              and 0.1834 is attributed in sample.py to the CITED PAPER's assumption, not to the cosmos -- which is where the prose's "~18" came from and what it dropped
+
+  D4  the corrected prose, re-checked against the figures it must agree with
+  PASS      D4.applied             the corrected phrase is present: True
+  PASS      D4.recorded            and the correction is RECORDED beside the line rather than applied silently, which is this file's own convention at its ② -- a corrected number whose correction cannot be seen is a number no later reader can check
+  PASS      D4.consistent          and 16 is what the instrument's constant rounds to: 100 x 0.157 = 15.7 per cent
+  PASS      D4.twins_gone          no twin of the wrong figure remains in the CLAIM; the only occurrence left is the record's own quotation of what it corrected
+  PASS      D4.derived_hold        and the derived figures 1.854 and 6.37 still follow from the corrected number, because the number the instrument uses did not change
+
+========================================================================================================
+  THE LEDGER
+========================================================================================================
+  arms run : 124  (distinct tags 81)
+  **3 ARM(S) FAILED**: ['A3.enough', 'B.P2.unambiguous', 'B.P3.unambiguous']
+
+  ⛭ and the verdicts that are FINDINGS rather than passes are collected in RESULT.md,
+    each with the witness printed above and not with a summary string guessed from it.

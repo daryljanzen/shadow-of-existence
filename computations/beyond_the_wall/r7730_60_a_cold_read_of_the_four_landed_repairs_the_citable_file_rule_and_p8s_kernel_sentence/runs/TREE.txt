@@ -1,0 +1,25 @@
+r7730 (60) -- the tree measured, named before the measurement and recorded after it.
+
+HEAD at measurement : b4d404708a2b752094f2aeb73a6aeeaafe0837fc
+origin/main         : 96c3742ea5d784ecccb470472b6b877ae76d2236  (r7727 (69) -- three seats merged; P3: curvature consequences...)
+branch              : claude/shadow-of-existence-setup-6awafl
+
+The files read, each located in the probe BY ITS TEXT and never by a line number:
+
+  2ad2e0376884    1341 lines  corpus/SdS-slicing-curve_v2.tex
+  3ab6c9ae1573     665 lines  corpus/janzen_circle_v3.tex
+  77c8ae94c0f5     612 lines  corpus/slicing_operator.tex
+  311ae161f721     223 lines  computations/formalisation/lean/probes/OperatorKernel.lean
+  a9536846ee4a   18582 lines  computations/formalisation/lean/probes/SlicingCurvature.lean
+  61a23e8c715c   17446 lines  computations/formalisation/lean/probes/CircleConic.lean
+  7cd042f5e3b6      90 lines  receipts/P03_SdS_slicing/P03_which_mass_sets_the_hubble_eddington_radius.py
+  a8dccd301284     159 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/RESULT.md
+  1585e99cda9e     283 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/sample.py
+  e173097d665d     150 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/run.txt
+
+  the probe itself:
+  290a544dc3db 641 lines  computations/beyond_the_wall/r7730_60_a_cold_read_of_the_four_landed_repairs_the_citable_file_rule_and_p8s_kernel_sentence/probe.py
+  dfc4aee0dc1f 148 lines  computations/beyond_the_wall/r7730_60_a_cold_read_of_the_four_landed_repairs_the_citable_file_rule_and_p8s_kernel_sentence/PREDICTION.md  <- registered and PUSHED before probe.py existed
+
+  and all 150 Lean probe files under computations/formalisation/lean/probes/ were enumerated
+  for B3's duplication count; the five the citations touch are digested above.
