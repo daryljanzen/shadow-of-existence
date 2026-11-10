@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7733` (69) — **MERGED: THE VERDICT IS "BOTH CONTRIBUTE", AT UNIT AMPLITUDE, ON ALL FOUR READINGS. MINT IT AND DRAFT THE P15 SENTENCE**
+
+**Merged** (`r7731+cc66.1`–`.5`). The two-amplitude fit is not an identity on the real object (residual ratio 0.46), so this is the first object on which the question could be asked at all.
+- **The result:** both amplitudes are within 2 per cent of unity, on both nulls and both binnings, with power 1.000.
+- **What it means:** the question's "creates *or* fails to cancel" was a false either-or. The projection difference and the source difference each carry the located step at full weight.
+- **The record:** the A5a restatement, made blind and defended from the registration's own text, and the second null you caught on re-reading §3 are both recorded as you state them. `PO-87` now reads as 1 step left on the frontier, and it is clear rather than gated.
+
+**Your order: put it in P15, at the weight you licensed.**
+1. **Mint a receipt** for the verdict, with an INDEX row; I will regenerate the appendices.
+   - **Gates:** both amplitudes within 2 per cent of 1; both 99 per cent intervals excluding zero on all four readings; power ≥ 0.95; the residual ratio of 0.46 stated as the model's incompleteness.
+   - **Licence:** "both contribute at unit amplitude", and not "the swap is exhausted by these two"; a_src is about ten times less determined than a_ker.
+2. **Draft the sentence** for P15's step paragraph. It must sit consistently beside the printed "the located transition belongs to the contrast between the arms and not to their sources". The **source ratio** carries no step, but the **source difference projected through the kernel** contributes at unit amplitude. Say how the two read together so a reader cannot take them as contradicting.
+3. Then say, in one line, whether `PO-87` closes with that sentence or what step remains.
+
 ## ⚑ `r7731` (69) — **MERGED: THE SWEEP IS COMPLETE. 70's ARRAYS ARE BUILT AND PASS EVERY CLOSURE; THEY REACH `refs/ci` BY A DISPATCH JOB I HAVE RULED. REGISTER YOUR READING AGAINST WHAT THEY ARE**
 
 **Merged** (`r7729+cc66.1`). `l.2206` is a containment, which is the conservative use of a three-member family, so nothing is owed and the sweep is complete.

@@ -143,7 +143,7 @@ The slicing curve carries one function. In the static chart it sets the areal ra
 \dd s^{2}=-f(r)\,\dd t^{2}+\frac{\dd r^{2}}{f(r)}+r^{2}\,\dd\Omega^{2},
 \qquad g_{tt}\,g_{rr}=-1,
 \end{equation}
-the same $f$ filling the temporal and spatial slots. We call \eqref{eq:gauge} the \emph{construction gauge}; the lock $g_{tt}g_{rr}=-1$ is the single-curve condition, and Section~\ref{sec:lapse} is the analysis of what freeing it does.
+the same $f$ filling the temporal and spatial slots, on the region where $f\neq0$: the horizons are that chart's boundary and are treated as turning points of the slicing curve rather than as points of the chart. We call \eqref{eq:gauge} the \emph{construction gauge}; the lock $g_{tt}g_{rr}=-1$ is the single-curve condition, and Section~\ref{sec:lapse} is the analysis of what freeing it does.
 
 \paragraph{The reading has no quarrel with a variational route.} Because the reading here is directional---the
 cut primary, $\rho$ the name of its bend---it is worth saying plainly that the direction is not a stance taken
@@ -433,6 +433,8 @@ The maximally symmetric spatial sections of the de~Sitter substrate are of three
 \end{itemize}
 The three carry the spatial curvatures $k=+1,0,-1$.\rcpt{P08_trichotomy}
 \end{proposition}
+
+The proposition is machine-checked in the five-dimensional Minkowski embedding (\texttt{StaticEinstein.lean}), each leaf's metric induced by a chart and its curvature computed from that metric's Riemann tensor, with $R^{2}(d\chi^{2}+S(\chi)^{2}d\Omega^{2})$, $S''=-kS$ and $S'^{2}+kS^{2}=1$, of constant curvature $k/R^{2}$ in all eighty-one components (\texttt{lf\_curv} and \texttt{lf\_pull\_eq}): $X_{0}=c$ is the sphere of radius $\sqrt{\alpha^{2}+c^{2}}$ with induced curvature $+1/(\alpha^{2}+c^{2})$ (\texttt{lf\_closed}); the null section $\eta(X,B)=s\neq0$ is charted bijectively by $\mathbb{R}^{3}$ with induced metric $\delta_{ij}$ and every curvature component zero (\texttt{lf\_flat}); and $X_{1}=b>\alpha$ is two-sheeted with induced curvature $-1/(b^{2}-\alpha^{2})$ (\texttt{lf\_open}), each leaf exhibited at a concrete point (\texttt{lf\_witness}).
 
 The open leaf stacks into a cosmology exactly as the other two do. Carrying the $H^{3}$ sections through a timelike parameter $\tau$, the embedding
 \begin{equation}\label{eq:openembed}

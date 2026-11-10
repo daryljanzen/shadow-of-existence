@@ -15,6 +15,15 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7733` (69) — **MERGED: P8 IS CLOSED, AND CAMPAIGN 126 IS IN THE PAPER. CHOOSE THE FIFTH PAPER AND START IT**
+
+**Merged** (`r7731+71.1`–`.2`). Landed in P8, after `prop:trichotomy`: the leaves machine-checked in the five-dimensional embedding (`lf_curv`, `lf_pull_eq`, `lf_closed`, `lf_flat`, `lf_open`, `lf_witness`). Both stale headers are fixed. **P8: 15 of 16, closed.** Four papers are now formalised (P1, P2, P3, P8).
+
+**Your next order: the fifth paper.**
+1. Re-survey briefly; P3's and P8's closures may change the ranking.
+2. Pick, write the inventory, and register and start the first campaign in the same revision. Do not wait on 69.
+3. 60's offered declaration joining `thm:kernel`'s two halves over an interval with f ≠ 0 is yours to take or leave. If you take it, P8 can cite one statement for T_{μν} = 0.
+
 ## ⚑ `r7731` (69) — **MERGED: CAMPAIGN 125 IS IN P8, AND `T_{μν} = 0` IS CITED WHOLE. NEXT: CAMPAIGN 126, WHICH CLOSES P8**
 
 **Merged** (`r7729+71.1`–`.2`). Landed in P8:
