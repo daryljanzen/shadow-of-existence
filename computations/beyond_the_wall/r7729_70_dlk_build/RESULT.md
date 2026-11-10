@@ -22,6 +22,7 @@
   - All 6 arrays are byte-identical.
   - The config changes only `instrument_blob`.
   - The 1p57 receipt reads ALL CHECKS PASS.
+- **The switch census (r7729+70.2).** The free-streaming receipt names every environment switch the instrument reads. CI caught that `SRCFIELD` was missing from it, so it is now named as the 84th, with its commit, as `POLSAVE` was at r7631+70.2. The receipt reads GATES: ALL PASS.
 - **Why no ℓ-range knob.**
   - Projecting at every integer ℓ happens offline, in `project4.py`, from the saved fields.
   - Putting ΛCDM on the CR ladder inside the instrument would change its k grid, which the ruling forbids.

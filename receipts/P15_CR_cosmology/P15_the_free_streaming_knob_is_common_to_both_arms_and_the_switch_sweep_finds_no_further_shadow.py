@@ -496,18 +496,22 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     # ⛭ `COMBRHO` -- r7695+cc66 (the dip counterfactual): it carries the source's
                     #   wavenumber to `rho*k` for the solver while the kernel stays at `k`, and is OFF
                     #   by default, `_kbs is kb` with it unset, so no reported number moves.
-                    'COMBRHO'}
+                    'COMBRHO',
+                    # ⛭ `SRCFIELD` -- r7729+70.0 (27a6968ba), an output switch: it saves S(k, eta), P,
+                    #   eta and x0 per k-batch for the offline four-combination projection, and is OFF
+                    #   by default.  Every array is byte-identical with it unset and set, on both arms.
+                    'SRCFIELD'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-THREE now, the twenty-three "
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-FOUR now, the twenty-four "
       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
       "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2; the "
-      "eighty-third is `COMBRHO`, r7695+cc66)",
-      len(ROWS) == 83 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0)",
+      len(ROWS) == 84 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
