@@ -13,6 +13,14 @@ new `section EsStatic` (prefix `es_`), all before the `#print axioms` block. P8'
   (P8 eq. `Ttt`, `Ttheta`).
 * **Rows 3a–3c — BUILT.** `es_lapse` (eq. `rho-B`, `prho`, the lock).
 * **Non-vacuity — BUILT.** `es_sds_vacuum`, `es_sds_witness`: SdS is vacuum from the Riemann tensor itself.
+
+**Campaign 125 (`r7729+71.2`), in this same file so P8's citations stay exact.** Registration:
+`computations/formalisation/r7729_71_campaign125/PREDICTION.md`.
+* **60's `r7730` ⓶ repairs.** `ok_vacuum_iff_ode` without the redundant second-derivative hypothesis;
+  `ok_L_bound` as the operator (supremum) bound; `ok_index_one` as the integer index `dim ker − codim range = 1` of
+  the linear map `ok_Lmap : C¹[r₁, r₂] → C⁰[r₁, r₂]` on the closed interval.
+* **Off-diagonal components.** `es_Ric_offdiag`, `es_G_offdiag`; `es_sds_vacuum_full`: `T_{μν} = 0` whole for SdS.
+* **Rows 4a–4c — BUILT.** `rg_cosmo` (with `rg_Γ`, `rg_witness`), `rg_sinh23`, `rg_sinh23_radial`, `rg_tau23`.
 -/
 
 /-!
@@ -45,35 +53,6 @@ noncomputable def ok_ode (Λ : ℝ) (f : ℝ → ℝ) (r : ℝ) : ℝ := r * der
 
 /-- The SdS profile `1 − 2M/r − Λr²/3` (eq. `sds`). -/
 noncomputable def ok_sds (Λ M : ℝ) (r : ℝ) : ℝ := 1 - 2 * M / r - Λ * r ^ 2 / 3
-
-/-- **Row 1b.** On an open interval in `(0, ∞)`, with `f` twice differentiable there, `T = 0` (all components)
-⟺ the vacuum ODE. The angular equation is the radial one's derivative over `2r`. -/
-theorem ok_vacuum_iff_ode {Λ a b : ℝ} (ha : 0 ≤ a) {f : ℝ → ℝ}
-    (hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r) (hf' : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r) :
-    (∀ r ∈ Ioo a b, ok_Tt Λ f r = 0 ∧ ok_Tθ Λ f r = 0) ↔ ∀ r ∈ Ioo a b, ok_ode Λ f r = 0 := by
-  have hr0 : ∀ r ∈ Ioo a b, r ≠ 0 := fun r hr => (ha.trans_lt hr.1).ne'
-  have tt : ∀ r ∈ Ioo a b, ok_Tt Λ f r = ok_ode Λ f r / r ^ 2 := by
-    intro r hr; have := hr0 r hr; unfold ok_Tt ok_ode; field_simp
-  constructor
-  · intro h r hr
-    have h1 := (h r hr).1; rw [tt r hr] at h1
-    exact (div_eq_zero_iff.mp h1).resolve_right (pow_ne_zero 2 (hr0 r hr))
-  · intro h r hr
-    refine ⟨by rw [tt r hr, h r hr, zero_div], ?_⟩
-    have hd : HasDerivAt (ok_ode Λ f)
-        (r * deriv (deriv f) r + 2 * deriv f r + 2 * Λ * r) r := by
-      have h1 := ((hasDerivAt_id r).mul (hf' r hr).hasDerivAt).add (hf r hr).hasDerivAt
-      have h2 := (h1.sub_const 1).add ((hasDerivAt_pow 2 r).const_mul Λ)
-      refine h2.congr_deriv ?_
-      simp; ring
-    have hev : ok_ode Λ f =ᶠ[𝓝 r] fun _ => (0 : ℝ) := by
-      filter_upwards [isOpen_Ioo.mem_nhds hr] with s hs using h s hs
-    have hz : r * deriv (deriv f) r + 2 * deriv f r + 2 * Λ * r = 0 := by
-      rw [← hd.deriv, hev.deriv_eq]; simp
-    have := hr0 r hr
-    unfold ok_Tθ
-    field_simp
-    linear_combination hz
 
 /-- `rf′ + f − 1 + Λr² = (r f − r + Λr³/3)′`. -/
 lemma ok_ode_deriv {Λ : ℝ} {f : ℝ → ℝ} {r : ℝ} (hf : DifferentiableAt ℝ f r) :
@@ -127,6 +106,48 @@ theorem ok_sds_solves (Λ M : ℝ) {r : ℝ} (hr : 0 < r) : ok_ode Λ (ok_sds Λ
     exact ((((differentiableAt_const _).sub ((differentiableAt_const _).div differentiableAt_id hs0)).sub
       (((differentiableAt_id.pow 2).const_mul Λ).div_const 3))).differentiableWithinAt
 
+/-- The SdS profile's derivative off `r = 0`. -/
+lemma ok_sds_hasDeriv (Λ M : ℝ) {t : ℝ} (ht : t ≠ 0) :
+    HasDerivAt (ok_sds Λ M) (2 * M / t ^ 2 - 2 * Λ * t / 3) t := by
+  have e : ok_sds Λ M = fun s => 1 - 2 * M * s⁻¹ - Λ * s ^ 2 / 3 := by funext s; simp only [ok_sds]; ring
+  rw [e]
+  refine HasDerivAt.congr_deriv ((((hasDerivAt_const t (1 : ℝ)).sub
+    ((hasDerivAt_inv ht).const_mul (2 * M))).sub (((hasDerivAt_pow 2 t).const_mul Λ).div_const 3))) ?_
+  field_simp; ring
+
+/-- **Row 1b.** On an open interval in `(0, ∞)`, with `f` differentiable there, `T = 0` (all diagonal components)
+⟺ the vacuum ODE. No second derivative is assumed: in the reverse direction the ODE makes `f` the SdS profile
+(`ok_general_solution`), on which the angular component vanishes identically. -/
+theorem ok_vacuum_iff_ode {Λ a b : ℝ} (ha : 0 ≤ a) {f : ℝ → ℝ}
+    (hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r) :
+    (∀ r ∈ Ioo a b, ok_Tt Λ f r = 0 ∧ ok_Tθ Λ f r = 0) ↔ ∀ r ∈ Ioo a b, ok_ode Λ f r = 0 := by
+  have hr0 : ∀ r ∈ Ioo a b, r ≠ 0 := fun r hr => (ha.trans_lt hr.1).ne'
+  have tt : ∀ r ∈ Ioo a b, ok_Tt Λ f r = ok_ode Λ f r / r ^ 2 := by
+    intro r hr; have := hr0 r hr; unfold ok_Tt ok_ode; field_simp
+  constructor
+  · intro h r hr
+    have h1 := (h r hr).1; rw [tt r hr] at h1
+    exact (div_eq_zero_iff.mp h1).resolve_right (pow_ne_zero 2 (hr0 r hr))
+  · intro h r hr
+    refine ⟨by rw [tt r hr, h r hr, zero_div], ?_⟩
+    obtain ⟨M, hM⟩ := (ok_general_solution ha fun s hs => (hf s hs).differentiableWithinAt).1 h
+    have hrpos : 0 < r := ha.trans_lt hr.1
+    have hev : f =ᶠ[𝓝 r] ok_sds Λ M := by
+      filter_upwards [isOpen_Ioo.mem_nhds hr] with s hs using hM s hs
+    have hd : deriv (ok_sds Λ M) =ᶠ[𝓝 r] fun t => 2 * M / t ^ 2 - 2 * Λ * t / 3 := by
+      filter_upwards [Ioi_mem_nhds hrpos] with t (ht : 0 < t) using (ok_sds_hasDeriv Λ M ht.ne').deriv
+    have h2 : HasDerivAt (fun t : ℝ => 2 * M / t ^ 2 - 2 * Λ * t / 3) (-(4 * M / r ^ 3) - 2 * Λ / 3) r := by
+      have := (((hasDerivAt_pow 2 r).inv (pow_ne_zero 2 hrpos.ne')).const_mul (2 * M)).sub
+        (((hasDerivAt_id r).const_mul (2 * Λ)).div_const 3)
+      refine (this.congr_deriv ?_).congr_of_eventuallyEq ?_
+      · field_simp; ring
+      · filter_upwards with t; simp [div_eq_mul_inv]
+    have e1 : deriv f r = 2 * M / r ^ 2 - 2 * Λ * r / 3 := by
+      rw [hev.deriv_eq, (ok_sds_hasDeriv Λ M hrpos.ne').deriv]
+    have e2 : deriv (deriv f) r = -(4 * M / r ^ 3) - 2 * Λ / 3 := by
+      rw [hev.deriv.deriv_eq, hd.deriv_eq, h2.deriv]
+    unfold ok_Tθ; rw [e1, e2]; field_simp; ring
+
 /-- The operator `L f = (r f)′`. -/
 noncomputable def ok_L (f : ℝ → ℝ) (r : ℝ) : ℝ := deriv (fun s => s * f s) r
 
@@ -135,14 +156,43 @@ lemma ok_L_eq {f : ℝ → ℝ} {r : ℝ} (hf : DifferentiableAt ℝ f r) : ok_L
   have h : HasDerivAt (fun s => s * f s) (1 * f r + r * deriv f r) r := (hasDerivAt_id r).mul hf.hasDerivAt
   rw [h.deriv]; ring
 
-/-- **Row 1d, bounded.** On `[r₁, r₂]`, `|Lf| ≤ |f| + r₂ |f′|`: `L` is bounded from `C¹` to `C⁰`. -/
-theorem ok_L_bound {r₁ r₂ : ℝ} (h1 : 0 < r₁) {f : ℝ → ℝ} {r : ℝ} (hr : r ∈ Icc r₁ r₂)
-    (hf : DifferentiableAt ℝ f r) : |ok_L f r| ≤ |f r| + r₂ * |deriv f r| := by
-  rw [ok_L_eq hf]
-  have hr0 : 0 ≤ r := h1.le.trans hr.1
-  calc |f r + r * deriv f r| ≤ |f r| + |r * deriv f r| := abs_add_le _ _
-    _ = |f r| + r * |deriv f r| := by rw [abs_mul, abs_of_nonneg hr0]
-    _ ≤ |f r| + r₂ * |deriv f r| := by gcongr; exact hr.2
+/-- **Row 1d, bounded.** On `[r₁, r₂]`, for `f` differentiable there with `f′` continuous: pointwise
+`|Lf| ≤ |f| + r₂|f′|`, and the operator bound `sup |Lf| ≤ max(1, r₂)(sup |f| + sup |f′|)`: `L` is bounded from
+`C¹` to `C⁰`. -/
+theorem ok_L_bound {r₁ r₂ : ℝ} (h1 : 0 < r₁) (h12 : r₁ ≤ r₂) {f : ℝ → ℝ}
+    (hf : ∀ r ∈ Icc r₁ r₂, DifferentiableAt ℝ f r) (hc : ContinuousOn (deriv f) (Icc r₁ r₂)) :
+    (∀ r ∈ Icc r₁ r₂, |ok_L f r| ≤ |f r| + r₂ * |deriv f r|) ∧
+      sSup ((fun r => |ok_L f r|) '' Icc r₁ r₂) ≤
+        max 1 r₂ * (sSup ((fun r => |f r|) '' Icc r₁ r₂) + sSup ((fun r => |deriv f r|) '' Icc r₁ r₂)) := by
+  have pw : ∀ r ∈ Icc r₁ r₂, |ok_L f r| ≤ |f r| + r₂ * |deriv f r| := by
+    intro r hr
+    rw [ok_L_eq (hf r hr)]
+    have hr0 : 0 ≤ r := h1.le.trans hr.1
+    calc |f r + r * deriv f r| ≤ |f r| + |r * deriv f r| := abs_add_le _ _
+      _ = |f r| + r * |deriv f r| := by rw [abs_mul, abs_of_nonneg hr0]
+      _ ≤ |f r| + r₂ * |deriv f r| := by gcongr; exact hr.2
+  refine ⟨pw, ?_⟩
+  have hne : (Icc r₁ r₂).Nonempty := nonempty_Icc.mpr h12
+  have hfc : ContinuousOn f (Icc r₁ r₂) := fun r hr => (hf r hr).continuousAt.continuousWithinAt
+  have b0 : BddAbove ((fun r => |f r|) '' Icc r₁ r₂) :=
+    (isCompact_Icc.image_of_continuousOn hfc.abs).bddAbove
+  have b1 : BddAbove ((fun r => |deriv f r|) '' Icc r₁ r₂) :=
+    (isCompact_Icc.image_of_continuousOn hc.abs).bddAbove
+  have s0 : 0 ≤ sSup ((fun r => |f r|) '' Icc r₁ r₂) :=
+    (abs_nonneg _).trans (le_csSup b0 ⟨r₁, ⟨le_rfl, h12⟩, rfl⟩)
+  have s1 : 0 ≤ sSup ((fun r => |deriv f r|) '' Icc r₁ r₂) :=
+    (abs_nonneg _).trans (le_csSup b1 ⟨r₁, ⟨le_rfl, h12⟩, rfl⟩)
+  refine csSup_le (hne.image _) ?_
+  rintro _ ⟨r, hr, rfl⟩
+  have a0 : |f r| ≤ sSup ((fun r => |f r|) '' Icc r₁ r₂) := le_csSup b0 ⟨r, hr, rfl⟩
+  have a1 : |deriv f r| ≤ sSup ((fun r => |deriv f r|) '' Icc r₁ r₂) := le_csSup b1 ⟨r, hr, rfl⟩
+  have m1 : (1 : ℝ) ≤ max 1 r₂ := le_max_left _ _
+  have m2 : r₂ ≤ max 1 r₂ := le_max_right _ _
+  have hr2 : 0 ≤ r₂ := h1.le.trans (h12.trans le_rfl) |>.trans le_rfl
+  calc |ok_L f r| ≤ |f r| + r₂ * |deriv f r| := pw r hr
+    _ ≤ sSup ((fun r => |f r|) '' Icc r₁ r₂) + r₂ * sSup ((fun r => |deriv f r|) '' Icc r₁ r₂) := by
+        gcongr
+    _ ≤ _ := by nlinarith
 
 /-- **Row 1d, the kernel.** On `(r₁, r₂) ⊂ (0, ∞)`, `Lf = 0` iff `f = c/r`: `ker L = span{1/r}`. -/
 theorem ok_kernel {r₁ r₂ : ℝ} (h1 : 0 ≤ r₁) {f : ℝ → ℝ} (hf : DifferentiableOn ℝ f (Ioo r₁ r₂)) :
@@ -177,24 +227,186 @@ theorem ok_onto {g : ℝ → ℝ} (hg : Continuous g) (r₁ : ℝ) {r : ℝ} (hr
   exact (intervalIntegral.integral_hasDerivAt_right (hg.intervalIntegrable _ _)
     hg.aestronglyMeasurable.stronglyMeasurableAtFilter hg.continuousAt).deriv
 
-/-- **Row 1d, index 1.** On `(r₁, r₂)`: `1/r` spans the kernel and is non-zero, and `L` is onto the continuous
-functions. One-dimensional kernel, zero cokernel. -/
+/-- `C¹[r₁, r₂]`, as functions differentiable on `[r₁, r₂]` (one-sided at the ends) with continuous derivative there,
+vanishing off it. -/
+def ok_D (r₁ r₂ : ℝ) : Submodule ℝ (ℝ → ℝ) where
+  carrier := {f | DifferentiableOn ℝ f (Icc r₁ r₂) ∧ ContinuousOn (derivWithin f (Icc r₁ r₂)) (Icc r₁ r₂) ∧
+    ∀ r ∉ Icc r₁ r₂, f r = 0}
+  add_mem' := by
+    rintro f g ⟨hf1, hf2, hf3⟩ ⟨hg1, hg2, hg3⟩
+    exact ⟨hf1.add hg1, (hf2.add hg2).congr fun r hr => derivWithin_add (hf1 r hr) (hg1 r hr),
+      fun r hr => by simp [hf3 r hr, hg3 r hr]⟩
+  zero_mem' := ⟨differentiableOn_const 0, (continuousOn_const (c := (0 : ℝ))).congr fun r _ => by simp,
+    fun _ _ => rfl⟩
+  smul_mem' := by
+    rintro c f ⟨hf1, hf2, hf3⟩
+    exact ⟨hf1.const_smul c, (hf2.const_smul c).congr fun r hr => derivWithin_const_smul c (hf1 r hr),
+      fun r hr => by simp [hf3 r hr]⟩
+
+lemma ok_D_iff {r₁ r₂ : ℝ} {f : ℝ → ℝ} : f ∈ ok_D r₁ r₂ ↔ (DifferentiableOn ℝ f (Icc r₁ r₂) ∧
+    ContinuousOn (derivWithin f (Icc r₁ r₂)) (Icc r₁ r₂) ∧ ∀ r ∉ Icc r₁ r₂, f r = 0) := Iff.rfl
+
+/-- `C⁰[r₁, r₂]`, as functions continuous on `[r₁, r₂]`, vanishing off it. -/
+def ok_C0 (r₁ r₂ : ℝ) : Submodule ℝ (ℝ → ℝ) where
+  carrier := {g | ContinuousOn g (Icc r₁ r₂) ∧ ∀ r ∉ Icc r₁ r₂, g r = 0}
+  add_mem' := by
+    rintro f g ⟨hf1, hf3⟩ ⟨hg1, hg3⟩
+    exact ⟨hf1.add hg1, fun r hr => by simp [hf3 r hr, hg3 r hr]⟩
+  zero_mem' := ⟨continuousOn_const, fun _ _ => rfl⟩
+  smul_mem' := by
+    rintro c f ⟨hf1, hf3⟩
+    exact ⟨hf1.const_smul c, fun r hr => by simp [hf3 r hr]⟩
+
+lemma ok_C0_iff {r₁ r₂ : ℝ} {g : ℝ → ℝ} : g ∈ ok_C0 r₁ r₂ ↔ (ContinuousOn g (Icc r₁ r₂) ∧
+    ∀ r ∉ Icc r₁ r₂, g r = 0) := Iff.rfl
+
+/-- `L f = f + r f′` on `[r₁, r₂]` (one-sided at the ends), zero off it. -/
+noncomputable def ok_Lfun (r₁ r₂ : ℝ) (f : ℝ → ℝ) : ℝ → ℝ :=
+  (Icc r₁ r₂).indicator fun r => f r + r * derivWithin f (Icc r₁ r₂) r
+
+lemma ok_Lfun_mem {r₁ r₂ : ℝ} {f : ℝ → ℝ} (hf : f ∈ ok_D r₁ r₂) : ok_Lfun r₁ r₂ f ∈ ok_C0 r₁ r₂ :=
+  ok_C0_iff.mpr ⟨((ok_D_iff.mp hf).1.continuousOn.add (continuousOn_id.mul (ok_D_iff.mp hf).2.1)).congr fun r hr => by
+      simp [ok_Lfun, Set.indicator_of_mem hr],
+    fun r hr => by simp [ok_Lfun, Set.indicator_of_notMem hr]⟩
+
+/-- **The operator `L : C¹[r₁, r₂] → C⁰[r₁, r₂]`, `f ↦ (rf)′`,** as a linear map. -/
+noncomputable def ok_Lmap (r₁ r₂ : ℝ) : ok_D r₁ r₂ →ₗ[ℝ] ok_C0 r₁ r₂ where
+  toFun f := ⟨ok_Lfun r₁ r₂ f, ok_Lfun_mem f.2⟩
+  map_add' f g := by
+    refine Subtype.ext (funext fun r => ?_)
+    by_cases hr : r ∈ Icc r₁ r₂
+    · simp only [ok_Lfun, Submodule.coe_add, Pi.add_apply, Set.indicator_of_mem hr]
+      rw [derivWithin_add ((ok_D_iff.mp f.2).1 r hr) ((ok_D_iff.mp g.2).1 r hr)]; ring
+    · simp [ok_Lfun, Set.indicator_of_notMem hr]
+  map_smul' c f := by
+    refine Subtype.ext (funext fun r => ?_)
+    by_cases hr : r ∈ Icc r₁ r₂
+    · simp only [ok_Lfun, Submodule.coe_smul, Pi.smul_apply, smul_eq_mul, Set.indicator_of_mem hr,
+        RingHom.id_apply]
+      rw [derivWithin_const_smul c ((ok_D_iff.mp f.2).1 r hr)]; simp; ring
+    · simp [ok_Lfun, Set.indicator_of_notMem hr]
+
+/-- On `[r₁, r₂]`, `L f = (rf)′`, the derivative within `[r₁, r₂]`. -/
+lemma ok_Lfun_eq {r₁ r₂ : ℝ} (h12 : r₁ < r₂) {f : ℝ → ℝ} {r : ℝ} (hr : r ∈ Icc r₁ r₂)
+    (hf : DifferentiableWithinAt ℝ f (Icc r₁ r₂) r) :
+    derivWithin (fun s => s * f s) (Icc r₁ r₂) r = f r + r * derivWithin f (Icc r₁ r₂) r := by
+  have hid : derivWithin (fun s : ℝ => s) (Icc r₁ r₂) r = 1 := by
+    exact (hasDerivWithinAt_id r (Icc r₁ r₂)).derivWithin (uniqueDiffOn_Icc h12 r hr)
+  rw [derivWithin_fun_mul (c := fun s : ℝ => s) differentiableWithinAt_id hf, hid]; ring
+
+/-- `1/r` on `[r₁, r₂]`, zero off it: the kernel's generator. -/
+noncomputable def ok_invFun (r₁ r₂ : ℝ) : ℝ → ℝ := (Icc r₁ r₂).indicator fun r => r⁻¹
+
+lemma ok_invFun_deriv {r₁ r₂ : ℝ} (h1 : 0 < r₁) (h12 : r₁ < r₂) {r : ℝ} (hr : r ∈ Icc r₁ r₂) :
+    derivWithin (ok_invFun r₁ r₂) (Icc r₁ r₂) r = -(r ^ 2)⁻¹ := by
+  have hr0 : r ≠ 0 := (h1.trans_le hr.1).ne'
+  rw [derivWithin_congr (f := fun r : ℝ => r⁻¹) (fun s hs => by simp [ok_invFun, Set.indicator_of_mem hs])
+    (by simp [ok_invFun, Set.indicator_of_mem hr]),
+    (hasDerivAt_inv hr0).hasDerivWithinAt.derivWithin (uniqueDiffOn_Icc h12 r hr)]
+
+lemma ok_invFun_mem {r₁ r₂ : ℝ} (h1 : 0 < r₁) (h12 : r₁ < r₂) : ok_invFun r₁ r₂ ∈ ok_D r₁ r₂ := by
+  refine ok_D_iff.mpr ⟨fun r hr => ?_, ?_, fun r hr => by simp [ok_invFun, Set.indicator_of_notMem hr]⟩
+  · have hr0 : r ≠ 0 := (h1.trans_le hr.1).ne'
+    exact ((hasDerivAt_inv hr0).differentiableAt.differentiableWithinAt).congr
+      (fun s hs => by simp [ok_invFun, Set.indicator_of_mem hs]) (by simp [ok_invFun, Set.indicator_of_mem hr])
+  · refine (continuousOn_id.pow 2 |>.inv₀ fun r hr => pow_ne_zero 2 (h1.trans_le hr.1).ne').neg.congr ?_
+    intro r hr; rw [ok_invFun_deriv h1 h12 hr]; rfl
+
+/-- The kernel's generator as an element of `C¹[r₁, r₂]`. -/
+noncomputable def ok_inv {r₁ r₂ : ℝ} (h1 : 0 < r₁) (h12 : r₁ < r₂) : ok_D r₁ r₂ :=
+  ⟨ok_invFun r₁ r₂, ok_invFun_mem h1 h12⟩
+
+/-- **Row 1d, index 1, on `[r₁, r₂]` as P8 states it.** For `L : C¹[r₁, r₂] → C⁰[r₁, r₂]`, `f ↦ (rf)′`:
+`ker L = span{1/r}`, `dim ker L = 1`, `L` is onto, and the index `dim ker L − codim range L` is `1`. -/
 theorem ok_index_one {r₁ r₂ : ℝ} (h1 : 0 < r₁) (h12 : r₁ < r₂) :
-    (∀ r ∈ Ioo r₁ r₂, ok_L (fun s => 1 / s) r = 0) ∧ (∃ r ∈ Ioo r₁ r₂, (fun s : ℝ => 1 / s) r ≠ 0) ∧
-      (∀ f : ℝ → ℝ, DifferentiableOn ℝ f (Ioo r₁ r₂) → (∀ r ∈ Ioo r₁ r₂, ok_L f r = 0) →
-        ∃ c, ∀ r ∈ Ioo r₁ r₂, f r = c * (1 / r)) ∧
-      (∀ g : ℝ → ℝ, Continuous g → ∃ f : ℝ → ℝ, ∀ r ∈ Icc r₁ r₂, ok_L f r = g r) := by
-  refine ⟨?_, ⟨(r₁ + r₂) / 2, ⟨by linarith, by linarith⟩, by
-      have : 0 < (r₁ + r₂) / 2 := by linarith
-      positivity⟩, ?_, ?_⟩
-  · have hd : DifferentiableOn ℝ (fun s : ℝ => 1 / s) (Ioo r₁ r₂) := fun s hs =>
-      ((differentiableAt_const _).div differentiableAt_id (h1.trans hs.1).ne').differentiableWithinAt
-    exact (ok_kernel h1.le hd).2 ⟨1, fun _ _ => rfl⟩
-  · intro f hf h
-    obtain ⟨c, hc⟩ := (ok_kernel h1.le hf).1 h
-    exact ⟨c, fun r hr => by rw [hc r hr]; ring⟩
-  · intro g hg
-    exact ⟨fun s => (∫ x in r₁..s, g x) / s, fun r hr => ok_onto hg r₁ (h1.trans_le hr.1)⟩
+    LinearMap.ker (ok_Lmap r₁ r₂) = ℝ ∙ ok_inv h1 h12 ∧
+      Module.finrank ℝ (LinearMap.ker (ok_Lmap r₁ r₂)) = 1 ∧
+      LinearMap.range (ok_Lmap r₁ r₂) = ⊤ ∧
+      (Module.finrank ℝ (LinearMap.ker (ok_Lmap r₁ r₂)) : ℤ) -
+        Module.finrank ℝ (ok_C0 r₁ r₂ ⧸ LinearMap.range (ok_Lmap r₁ r₂)) = 1 := by
+  have hI : ∀ {r}, r ∈ Icc r₁ r₂ → r ≠ 0 := fun hr => (h1.trans_le hr.1).ne'
+  -- the kernel
+  have hker : LinearMap.ker (ok_Lmap r₁ r₂) = ℝ ∙ ok_inv h1 h12 := by
+    ext f
+    rw [LinearMap.mem_ker, Submodule.mem_span_singleton]
+    constructor
+    · intro hf
+      have hz : ∀ r ∈ Icc r₁ r₂, (f : ℝ → ℝ) r + r * derivWithin f (Icc r₁ r₂) r = 0 := by
+        intro r hr
+        have := congrFun (congrArg Subtype.val hf) r
+        simpa [ok_Lmap, ok_Lfun, Set.indicator_of_mem hr] using this
+      have hc := constant_of_derivWithin_zero (f := fun s => s * (f : ℝ → ℝ) s)
+        (differentiableOn_id.mul (ok_D_iff.mp f.2).1) (fun x hx => by
+          rw [ok_Lfun_eq h12 (Ico_subset_Icc_self hx) ((ok_D_iff.mp f.2).1 x (Ico_subset_Icc_self hx))]
+          exact hz x (Ico_subset_Icc_self hx))
+      refine ⟨r₁ * (f : ℝ → ℝ) r₁, Subtype.ext (funext fun r => ?_)⟩
+      by_cases hr : r ∈ Icc r₁ r₂
+      · have e := hc r hr
+        simp only [Submodule.coe_smul, Pi.smul_apply, smul_eq_mul, ok_inv, ok_invFun,
+          Set.indicator_of_mem hr]
+        have := hI hr
+        field_simp; linarith
+      · simp [ok_inv, ok_invFun, Set.indicator_of_notMem hr, (ok_D_iff.mp f.2).2.2 r hr]
+    · rintro ⟨a, rfl⟩
+      rw [map_smul]
+      have : ok_Lmap r₁ r₂ (ok_inv h1 h12) = 0 := by
+        refine Subtype.ext (funext fun r => ?_)
+        by_cases hr : r ∈ Icc r₁ r₂
+        · simp only [ok_Lmap, LinearMap.coe_mk, AddHom.coe_mk, ok_Lfun, Set.indicator_of_mem hr, ok_inv,
+            ZeroMemClass.coe_zero, Pi.zero_apply]
+          rw [ok_invFun_deriv h1 h12 hr]
+          simp only [ok_invFun, Set.indicator_of_mem hr]
+          have := hI hr; field_simp; ring
+        · simp [ok_Lmap, ok_Lfun, Set.indicator_of_notMem hr]
+      rw [this, smul_zero]
+  have hne : ok_inv h1 h12 ≠ 0 := by
+    intro h
+    have := congrFun (congrArg Subtype.val h) r₁
+    have hm : r₁ ∈ Icc r₁ r₂ := ⟨le_rfl, h12.le⟩
+    simp [ok_inv, ok_invFun, Set.indicator_of_mem hm, h1.ne'] at this
+  have hdim : Module.finrank ℝ (LinearMap.ker (ok_Lmap r₁ r₂)) = 1 := by
+    rw [hker]; exact finrank_span_singleton hne
+  -- onto
+  have hrange : LinearMap.range (ok_Lmap r₁ r₂) = ⊤ := by
+    refine LinearMap.range_eq_top.mpr fun g => ?_
+    set c : ℝ → ℝ := fun x => max r₁ (min r₂ x) with hcdef
+    have hcI : ∀ x, c x ∈ Icc r₁ r₂ := fun x => ⟨le_max_left _ _, max_le h12.le (min_le_left _ _)⟩
+    have hcid : ∀ x ∈ Icc r₁ r₂, c x = x := fun x hx => by
+      simp only [hcdef, min_eq_right hx.2, max_eq_right hx.1]
+    have hG : Continuous fun x => (g : ℝ → ℝ) (c x) :=
+      (ok_C0_iff.mp g.2).1.comp_continuous (by fun_prop) hcI
+    set G : ℝ → ℝ := fun x => (g : ℝ → ℝ) (c x) with hGdef
+    have hInt : ∀ r, HasDerivAt (fun u => ∫ x in r₁..u, G x) (G r) r := fun r =>
+      intervalIntegral.integral_hasDerivAt_right (hG.intervalIntegrable _ _)
+        hG.aestronglyMeasurable.stronglyMeasurableAtFilter hG.continuousAt
+    set Φ : ℝ → ℝ := fun r => (∫ x in r₁..r, G x) / r with hΦ
+    have hΦd : ∀ r, r ≠ 0 → HasDerivAt Φ
+        ((G r * r - (∫ x in r₁..r, G x) * 1) / r ^ 2) r := fun r hr => (hInt r).div (hasDerivAt_id r) hr
+    set F : ℝ → ℝ := (Icc r₁ r₂).indicator Φ with hFdef
+    have hFΦ : EqOn F Φ (Icc r₁ r₂) := fun s hs => by simp [hFdef, Set.indicator_of_mem hs]
+    have hFd : ∀ r ∈ Icc r₁ r₂, derivWithin F (Icc r₁ r₂) r =
+        (G r * r - (∫ x in r₁..r, G x) * 1) / r ^ 2 := fun r hr => by
+      rw [derivWithin_congr hFΦ (hFΦ hr), (hΦd r (hI hr)).hasDerivWithinAt.derivWithin
+        (uniqueDiffOn_Icc h12 r hr)]
+    have hFmem : F ∈ ok_D r₁ r₂ := by
+      refine ok_D_iff.mpr ⟨fun r hr => ((hΦd r (hI hr)).differentiableAt.differentiableWithinAt).congr hFΦ (hFΦ hr),
+        ?_, fun r hr => by simp [hFdef, Set.indicator_of_notMem hr]⟩
+      have hcInt : Continuous fun r => ∫ x in r₁..r, G x :=
+        continuous_iff_continuousAt.mpr fun r => (hInt r).continuousAt
+      refine (((hG.mul continuous_id).sub (hcInt.mul continuous_const)).continuousOn.div
+        (continuous_id.pow 2).continuousOn fun r hr => pow_ne_zero 2 (hI hr)).congr fun r hr => hFd r hr
+    refine ⟨⟨F, hFmem⟩, Subtype.ext (funext fun r => ?_)⟩
+    by_cases hr : r ∈ Icc r₁ r₂
+    · simp only [ok_Lmap, LinearMap.coe_mk, AddHom.coe_mk, ok_Lfun, Set.indicator_of_mem hr]
+      rw [hFd r hr, hFΦ hr]
+      simp only [hΦ, hGdef, hcid r hr]
+      have := hI hr; field_simp; ring
+    · simp [ok_Lmap, ok_Lfun, Set.indicator_of_notMem hr, (ok_C0_iff.mp g.2).2 r hr]
+  refine ⟨hker, hdim, hrange, ?_⟩
+  rw [hdim, hrange]
+  have : Subsingleton (ok_C0 r₁ r₂ ⧸ (⊤ : Submodule ℝ (ok_C0 r₁ r₂))) :=
+    Submodule.Quotient.subsingleton_iff.mpr rfl
+  rw [Module.finrank_zero_of_subsingleton]; norm_num
 
 /-- **Row 2, `prop:bend`.** With `f = 1 − 2m(r)/r − Λr²/3` and `m` differentiable at `r ≠ 0`:
 `8πT^t_t = (rf′ + f − 1)/r² + Λ = −2m′/r²`, i.e. `ρ = −T^t_t = m′/4πr²`. -/
@@ -476,6 +688,25 @@ theorem es_einstein (h : es_Hyp A F x A2) :
   · rw [G, S, hinv, r0, r1, r2, r3]; simp; field_simp; ring
   · rw [G, G, S, hinv, r2, r3]; simp; field_simp
 
+/-- **The off-diagonal Ricci components vanish:** `R_{bc} = 0` for `b ≠ c`. -/
+theorem es_Ric_offdiag (h : es_Hyp A F x A2) (b c : Fin 4) (hbc : b ≠ c) : es_Ric (es_g A F) x b c = 0 := by
+  have hΓ := es_Γ h.hFd.self_of_nhds h.hA h.hF h.hr h.hs
+  have hA := h.hA; have hF := h.hF; have hr := h.hr; have hs := h.hs
+  fin_cases b <;> fin_cases c <;> (try exact absurd rfl hbc) <;>
+  · unfold es_Ric kr_Riem
+    simp only [Fin.sum_univ_four, es_pd h, hΓ]
+    simp [es_T, kr_pd]
+    all_goals (try simp only [es_c5, kr_cot])
+    all_goals (try field_simp)
+    all_goals (try ring)
+
+/-- **The off-diagonal Einstein components vanish:** `G^b_c = 0` for `b ≠ c`. -/
+theorem es_G_offdiag (h : es_Hyp A F x A2) (b c : Fin 4) (hbc : b ≠ c) : es_G (es_g A F) x b c = 0 := by
+  have hinv := es_g_inv h.hA h.hF h.hr h.hs
+  have hR := es_Ric_offdiag h b c hbc
+  simp only [es_G, hbc, ↓reduceIte, sub_zero, hinv, Matrix.diagonal_apply, ite_mul, zero_mul,
+    Finset.sum_ite_eq, Finset.mem_univ, hR, mul_zero]
+
 /-- **Row 1a, the construction gauge `A = F = f` (P8 eq. `Ttt`, `Ttheta`).** `G^t_t = G^r_r = (rf′ + f − 1)/r²` and
 `G^θ_θ = G^φ_φ = f″/2 + f′/r`; with `+Λ` these are `8πT^t_t = 8πT^r_r` and `8πT^θ_θ = 8πT^φ_φ`. -/
 theorem es_construction_gauge {f : ℝ → ℝ} {f2 : ℝ} (h : es_Hyp f f x f2) :
@@ -549,6 +780,17 @@ theorem es_sds_vacuum (Λ M : ℝ) {x : Fin 4 → ℝ} (hr : 0 < x 1) (hf : ok_s
     rw [g2, d1]; field_simp; ring
   exact ⟨H, v0, by rw [g1]; exact v0, v2, by rw [g3]; exact v2⟩
 
+/-- **`T_{μν} = 0` whole, for SdS:** `G^b_c + Λδ^b_c = 0` for all sixteen `(b, c)`, from the Riemann tensor. -/
+theorem es_sds_vacuum_full (Λ M : ℝ) {x : Fin 4 → ℝ} (hr : 0 < x 1) (hf : ok_sds Λ M (x 1) ≠ 0)
+    (hs : Real.sin (x 2) ≠ 0) (b c : Fin 4) :
+    es_G (es_g (ok_sds Λ M) (ok_sds Λ M)) x b c + (if b = c then Λ else 0) = 0 := by
+  obtain ⟨H, v0, v1, v2, v3⟩ := es_sds_vacuum Λ M hr hf hs
+  by_cases hbc : b = c
+  · subst hbc; simp only [↓reduceIte]
+    rcases (show b = 0 ∨ b = 1 ∨ b = 2 ∨ b = 3 by fin_cases b <;> simp) with rfl | rfl | rfl | rfl
+    exacts [v0, v1, v2, v3]
+  · simp only [hbc, ↓reduceIte, add_zero, es_G_offdiag H b c hbc]
+
 /-- **A concrete point.** `M = 1`, `Λ = 3/100`, `r = 4`, `θ = π/2`: `f(4) = 17/50 ≠ 0`, so `es_sds_vacuum` applies. -/
 theorem es_sds_witness :
     es_G (es_g (ok_sds (3 / 100) 1) (ok_sds (3 / 100) 1)) ![0, 4, π / 2, 0] 0 0 + 3 / 100 = 0 ∧
@@ -558,6 +800,153 @@ theorem es_sds_witness :
   exact ⟨h.2.1, h.2.2.2.1⟩
 
 end EsStatic
+
+section RgRadial
+open Real
+
+/-- The radial plane `diag(−f(r), 1/f(r))` on `(t, r)`. -/
+noncomputable def rg_g (f : ℝ → ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
+  !![-f (y 1), 0; 0, (f (y 1))⁻¹]
+
+/-- Its Christoffel symbols: `Γ⁰₀₁ = Γ⁰₁₀ = f′/2f`, `Γ¹₀₀ = ff′/2`, `Γ¹₁₁ = −f′/2f`, the rest zero. -/
+noncomputable def rg_T (f : ℝ → ℝ) (y : Fin 2 → ℝ) : Fin 2 → Fin 2 → Fin 2 → ℝ :=
+  ![![![0, deriv f (y 1) / (2 * f (y 1))], ![deriv f (y 1) / (2 * f (y 1)), 0]],
+    ![![f (y 1) * deriv f (y 1) / 2, 0], ![0, -(deriv f (y 1)) / (2 * f (y 1))]]]
+
+lemma rg_Γ {f : ℝ → ℝ} {y : Fin 2 → ℝ} (hfd : DifferentiableAt ℝ f (y 1)) (hf : f (y 1) ≠ 0)
+    (a b c : Fin 2) : kr_Γ (rg_g f) y a b c = rg_T f y a b c := by
+  have hinv : (rg_g f y)⁻¹ = !![-(f (y 1))⁻¹, 0; 0, f (y 1)] := by
+    refine Matrix.inv_eq_left_inv ?_
+    ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply, rg_g] <;> field_simp
+  have d0 : deriv (fun t => -f t) (y 1) = -deriv f (y 1) := deriv.neg
+  have d1 : deriv (fun t => (f t)⁻¹) (y 1) = -deriv f (y 1) / f (y 1) ^ 2 := (hfd.hasDerivAt.inv hf).deriv
+  simp only [kr_Γ, hinv]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [kr_pd, rg_g, rg_T, Function.update_apply, d0, d1]
+  all_goals field_simp
+
+/-- A curve `τ ↦ (T(τ), R(τ))` with velocities `T′, R′` and accelerations `T″, R″` is a geodesic of `rg_g f`:
+`ẍ^a + Γ^a_{bc} ẋ^b ẋ^c = 0`. -/
+def rg_geodesic (f T R T' R' T'' R'' : ℝ → ℝ) : Prop :=
+  (∀ τ, HasDerivAt T (T' τ) τ) ∧ (∀ τ, HasDerivAt R (R' τ) τ) ∧ (∀ τ, HasDerivAt T' (T'' τ) τ) ∧
+    (∀ τ, HasDerivAt R' (R'' τ) τ) ∧
+    ∀ τ, ∀ a, ![T'' τ, R'' τ] a + ∑ b, ∑ c, kr_Γ (rg_g f) ![T τ, R τ] a b c * ![T' τ, R' τ] b *
+      ![T' τ, R' τ] c = 0
+
+/-- **Row 4a.** Along a geodesic of the radial plane (with `f` differentiable and non-zero along it), the energy
+`E = f(r) ṫ` is conserved; if the geodesic is unit timelike, `−fṫ² + ṙ²/f = −1`, then `ṙ² = E² − f`. -/
+theorem rg_cosmo {f T R T' R' T'' R'' : ℝ → ℝ} (hg : rg_geodesic f T R T' R' T'' R'')
+    (hfd : ∀ τ, DifferentiableAt ℝ f (R τ)) (hf : ∀ τ, f (R τ) ≠ 0) :
+    (∀ τ, HasDerivAt (fun s => f (R s) * T' s) 0 τ) ∧
+      (∃ E, ∀ τ, f (R τ) * T' τ = E) ∧
+      ((∀ τ, -f (R τ) * T' τ ^ 2 + R' τ ^ 2 / f (R τ) = -1) →
+        ∃ E, ∀ τ, R' τ ^ 2 = E ^ 2 - f (R τ)) := by
+  obtain ⟨hT, hR, hT', hR', hgeo⟩ := hg
+  have hE : ∀ τ, HasDerivAt (fun s => f (R s) * T' s) 0 τ := by
+    intro τ
+    have h0 := hgeo τ 0
+    have hy : (![T τ, R τ] : Fin 2 → ℝ) 1 = R τ := rfl
+    simp only [Fin.sum_univ_two, rg_Γ (y := ![T τ, R τ]) (hfd τ) (hf τ)] at h0
+    simp [rg_T] at h0
+    have hd := ((hfd τ).hasDerivAt.comp τ (hR τ)).mul (hT' τ)
+    refine hd.congr_deriv ?_
+    have := hf τ
+    simp only [Function.comp_apply]
+    field_simp at h0
+    linear_combination h0 / 2
+  have hconst : ∃ E, ∀ τ, f (R τ) * T' τ = E :=
+    ⟨f (R 0) * T' 0, fun τ => is_const_of_deriv_eq_zero
+      (fun s => (hE s).differentiableAt) (fun s => (hE s).deriv) τ 0⟩
+  refine ⟨hE, hconst, fun hu => ?_⟩
+  obtain ⟨E, hEc⟩ := hconst
+  refine ⟨E, fun τ => ?_⟩
+  have h1 := hu τ
+  have h2 := hEc τ
+  have := hf τ
+  field_simp at h1
+  rw [← h2]
+  linear_combination h1
+
+/-- **Row 4a, non-vacuity.** In Minkowski (`f ≡ 1`) the curve `t = τ`, `r = 1` is a unit timelike geodesic with
+`E = 1`. -/
+theorem rg_witness :
+    rg_geodesic (fun _ => 1) id (fun _ => 1) (fun _ => 1) (fun _ => 0) (fun _ => 0) (fun _ => 0) ∧
+      ∀ τ, -(fun _ : ℝ => (1 : ℝ)) ((fun _ : ℝ => (1 : ℝ)) τ) * (fun _ : ℝ => (1 : ℝ)) τ ^ 2 +
+        (fun _ : ℝ => (0 : ℝ)) τ ^ 2 / (fun _ : ℝ => (1 : ℝ)) ((fun _ : ℝ => (1 : ℝ)) τ) = -1 := by
+  refine ⟨⟨fun τ => hasDerivAt_id τ, fun τ => hasDerivAt_const τ _, fun τ => hasDerivAt_const τ _,
+    fun τ => hasDerivAt_const τ _, fun τ a => ?_⟩, fun τ => by norm_num⟩
+  fin_cases a <;> simp [kr_Γ, kr_pd, rg_g]
+
+/-- **Row 4b, `E = 1`.** `r(τ) = (2Mα²)^{1/3} sinh^{2/3}(3τ/2α)` has `ṙ = √(2M/r + r²/α²)` for `τ > 0`, i.e.
+`ṙ² = E² − f` with `E = 1` and `f = 1 − 2M/r − r²/α²`. -/
+theorem rg_sinh23 {M α τ : ℝ} (hM : 0 < M) (hα : 0 < α) (hτ : 0 < τ) :
+    HasDerivAt (fun t => (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * t) ^ 2) ^ (1 / 3 : ℝ))
+      (Real.sqrt (2 * M / (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)
+        + ((2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)) ^ 2 / α ^ 2)) τ := by
+  set k := 3 / (2 * α) with hk
+  set S := Real.sinh (k * τ)
+  set C := Real.cosh (k * τ)
+  have hS : 0 < S := Real.sinh_pos_iff.2 (by positivity)
+  have hC : 0 < C := Real.cosh_pos _
+  set F := 2 * M * α ^ 2 * S ^ 2
+  have hF : 0 < F := by positivity
+  set r := F ^ (1 / 3 : ℝ)
+  have hr : 0 < r := Real.rpow_pos_of_pos hF _
+  have hr3 : r ^ 3 = F := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hF.le]; norm_num
+  have hFd : HasDerivAt (fun t => 2 * M * α ^ 2 * Real.sinh (k * t) ^ 2)
+      (2 * M * α ^ 2 * (2 * S * (C * k))) τ := by
+    have := (((Real.hasDerivAt_sinh (k * τ)).comp τ ((hasDerivAt_id τ).const_mul k)).pow 2).const_mul
+      (2 * M * α ^ 2)
+    convert this using 1
+    · funext y; simp [Function.comp_apply]
+    · rw [show (Real.sinh ∘ HMul.hMul k) τ = S from rfl]; push_cast; ring
+  have hrd := HasDerivAt.rpow_const (p := 1 / 3) hFd (Or.inl hF.ne')
+  convert hrd using 1
+  have hFr : F ^ ((1 : ℝ) / 3 - 1) = r / F := by
+    rw [Real.rpow_sub hF, Real.rpow_one]
+  rw [hFr]
+  have hcs : C ^ 2 = 1 + S ^ 2 := by rw [Real.cosh_sq]; ring
+  rw [Real.sqrt_eq_iff_mul_self_eq_of_pos (by positivity)]
+  field_simp
+  rw [hk]; field_simp
+  have hF' : F = 2 * M * α ^ 2 * S ^ 2 := rfl
+  linear_combination (4 * M ^ 2 * α ^ 4 * S ^ 2 * C ^ 2 - F ^ 2) * hr3 + 4 * M ^ 2 * α ^ 4 * S ^ 2 * F * hcs
+    - (2 * M * α ^ 2 * F + F * (F + 2 * M * α ^ 2 * S ^ 2)) * hF'
+
+/-- **Row 4b, as the radial equation.** For that `r`, `ṙ² = 1 − f(r)` with `f = 1 − 2M/r − r²/α²`. -/
+theorem rg_sinh23_radial {M α τ : ℝ} (hM : 0 < M) (hα : 0 < α) (hτ : 0 < τ) :
+    let r := (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * τ) ^ 2) ^ (1 / 3 : ℝ)
+    deriv (fun t => (2 * M * α ^ 2 * Real.sinh (3 / (2 * α) * t) ^ 2) ^ (1 / 3 : ℝ)) τ ^ 2 =
+      1 ^ 2 - (1 - 2 * M / r - r ^ 2 / α ^ 2) := by
+  intro r
+  have hS : 0 < Real.sinh (3 / (2 * α) * τ) := Real.sinh_pos_iff.2 (by positivity)
+  have hr : 0 < r := Real.rpow_pos_of_pos (by positivity) _
+  rw [(rg_sinh23 hM hα hτ).deriv, Real.sq_sqrt (by positivity)]
+  ring
+
+/-- **Row 4c, `Λ = 0`.** `r(τ) = (9Mτ²/2)^{1/3} = (9M/2)^{1/3} τ^{2/3}` has `ṙ = √(2M/r)` for `τ > 0`. -/
+theorem rg_tau23 {M τ : ℝ} (hM : 0 < M) (hτ : 0 < τ) :
+    HasDerivAt (fun t => (9 * M / 2 * t ^ 2) ^ (1 / 3 : ℝ))
+      (Real.sqrt (2 * M / (9 * M / 2 * τ ^ 2) ^ (1 / 3 : ℝ))) τ := by
+  set F := 9 * M / 2 * τ ^ 2
+  have hF : 0 < F := by positivity
+  set r := F ^ (1 / 3 : ℝ)
+  have hr : 0 < r := Real.rpow_pos_of_pos hF _
+  have hr3 : r ^ 3 = F := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul hF.le]; norm_num
+  have hFd : HasDerivAt (fun t => 9 * M / 2 * t ^ 2) (9 * M / 2 * (2 * τ)) τ := by
+    simpa using (hasDerivAt_pow 2 τ).const_mul (9 * M / 2)
+  have hrd := HasDerivAt.rpow_const (p := 1 / 3) hFd (Or.inl hF.ne')
+  convert hrd using 1
+  have hFr : F ^ ((1 : ℝ) / 3 - 1) = r / F := by
+    rw [Real.rpow_sub hF, Real.rpow_one]
+  rw [hFr]
+  rw [Real.sqrt_eq_iff_mul_self_eq_of_pos (by positivity)]
+  have hF' : F = 9 * M / 2 * τ ^ 2 := rfl
+  field_simp
+  linear_combination (81 * M * τ ^ 2) * hr3
+end RgRadial
 
 end ShadowProbe.StaticEinsteinProbe
 
@@ -582,3 +971,19 @@ end ShadowProbe.StaticEinsteinProbe
 #print axioms ShadowProbe.StaticEinsteinProbe.es_sds_hasDeriv
 #print axioms ShadowProbe.StaticEinsteinProbe.es_sds_vacuum
 #print axioms ShadowProbe.StaticEinsteinProbe.es_sds_witness
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_sds_hasDeriv
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_D_iff
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_C0_iff
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_Lfun_mem
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_Lfun_eq
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_invFun_deriv
+#print axioms ShadowProbe.StaticEinsteinProbe.ok_invFun_mem
+#print axioms ShadowProbe.StaticEinsteinProbe.es_Ric_offdiag
+#print axioms ShadowProbe.StaticEinsteinProbe.es_G_offdiag
+#print axioms ShadowProbe.StaticEinsteinProbe.es_sds_vacuum_full
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_Γ
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_cosmo
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_witness
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_sinh23
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_sinh23_radial
+#print axioms ShadowProbe.StaticEinsteinProbe.rg_tau23
