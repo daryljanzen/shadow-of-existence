@@ -5,8 +5,9 @@ import Mathlib
 
 Registration: `computations/formalisation/r7725_71_campaign123/PREDICTION.md`. Nothing imports this file, and it
 imports only Mathlib. It is a new standalone probe: these rows need nothing from the probe chain, so it copies no
-earlier probe. Everything new has the prefix `ok_`. It backs P8 (`corpus/slicing_operator.tex`): `thm:kernel` and
-`prop:bend`. `8πT^t_t` is read through eq. `Ttt`, `(rf′ + f − 1)/r² + Λ`, and `8πT^θ_θ` as `f″/2 + f′/r + Λ`.
+earlier probe. Everything new has the prefix `ok_`. **Superseded as P8's citable file by
+`probes/StaticEinstein.lean`**, which carries these names (some with stronger statements) and is the file P8
+(`corpus/slicing_operator.tex`) cites; this file is the frozen campaign-123 record. `8πT^t_t` is read through eq. `Ttt`, `(rf′ + f − 1)/r² + Λ`, and `8πT^θ_θ` as `f″/2 + f′/r + Λ`.
 
 * **Row 1b — BUILT.** `ok_vacuum_iff_ode`.
 * **Row 1c — BUILT.** `ok_general_solution`, `ok_sds_solves`.

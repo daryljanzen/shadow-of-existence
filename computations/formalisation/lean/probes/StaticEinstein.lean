@@ -21,6 +21,21 @@ new `section EsStatic` (prefix `es_`), all before the `#print axioms` block. P8'
   the linear map `ok_Lmap : C¹[r₁, r₂] → C⁰[r₁, r₂]` on the closed interval.
 * **Off-diagonal components.** `es_Ric_offdiag`, `es_G_offdiag`; `es_sds_vacuum_full`: `T_{μν} = 0` whole for SdS.
 * **Rows 4a–4c — BUILT.** `rg_cosmo` (with `rg_Γ`, `rg_witness`), `rg_sinh23`, `rg_sinh23_radial`, `rg_tau23`.
+
+**Campaign 126 (`r7731+71.2`), in this same file.** Registration:
+`computations/formalisation/r7731_71_campaign126/PREDICTION.md`. A new `section LfLeaves` (prefix `lf_`).
+* **One curvature theorem.** `lf_curv`: `R²(dχ² + S(χ)² dΩ²)` with `S″ = −kS`, `S′² + kS² = 1` has
+  `R_{abcd} = (k/R²)(g_ac g_bd − g_ad g_bc)`. `lf_pull_eq`: the induced metric of `(U₀, U₁, R S n̂)` in `M^{1,4}`.
+* **Row 5a — BUILT.** `lf_closed_set`, `lf_S3_on`, `lf_S3_pull`, `lf_closed`: `X₀ = c` is a round `S³` of
+  curvature `+1/(α² + c²)`.
+* **Row 5b — BUILT.** `lf_B_null`, `lf_horo_leaf`, `lf_horo_pull`, `lf_flat`: `η(X, B) = s` for the null `B` is
+  `ℝ³` with metric `δ`, curvature `0`.
+* **Row 5c — BUILT.** `lf_open_set`, `lf_H3_on`, `lf_H3_pull`, `lf_open`: `X₁ = b > α` is two-sheeted, and `H³` of
+  curvature `−1/(b² − α²)`.
+* **Non-vacuity.** `lf_witness`.
+
+The block below is the header of the copied campaign-123 section (`ok_`), kept verbatim. Its "copies no earlier
+probe" is true of `OperatorKernel.lean`, not of this file, which copies `KrCurvature` and `KrTrig`.
 -/
 
 /-!
@@ -948,6 +963,338 @@ theorem rg_tau23 {M τ : ℝ} (hM : 0 < M) (hτ : 0 < τ) :
   linear_combination (81 * M * τ ^ 2) * hr3
 end RgRadial
 
+section LfLeaves
+open Real
+
+/-- The warped metric `R²(dχ² + S(χ)²(dθ² + sin²θ dφ²))` on `(χ, θ, φ)`. -/
+noncomputable def lf_g (R : ℝ) (S : ℝ → ℝ) (y : Fin 3 → ℝ) : Matrix (Fin 3) (Fin 3) ℝ :=
+  Matrix.diagonal ![R ^ 2, R ^ 2 * S (y 0) ^ 2, R ^ 2 * S (y 0) ^ 2 * kr_s2 (y 1)]
+
+noncomputable def lf_c1 (S D : ℝ → ℝ) (t : ℝ) : ℝ := -(S t * D t)
+noncomputable def lf_c2 (S D : ℝ → ℝ) (t : ℝ) : ℝ := D t / S t
+
+/-- The Christoffel table of `lf_g`. -/
+noncomputable def lf_T (S D : ℝ → ℝ) (y : Fin 3 → ℝ) : Fin 3 → Fin 3 → Fin 3 → ℝ :=
+  ![![![0, 0, 0], ![0, lf_c1 S D (y 0), 0], ![0, 0, lf_c1 S D (y 0) * kr_s2 (y 1)]],
+    ![![0, lf_c2 S D (y 0), 0], ![lf_c2 S D (y 0), 0, 0], ![0, 0, kr_nsc (y 1)]],
+    ![![0, 0, lf_c2 S D (y 0)], ![0, 0, kr_cot (y 1)], ![lf_c2 S D (y 0), kr_cot (y 1), 0]]]
+
+variable {R k : ℝ} {S D : ℝ → ℝ}
+
+lemma lf_g_inv {y : Fin 3 → ℝ} (hR : R ≠ 0) (hS : S (y 0) ≠ 0) (hs : Real.sin (y 1) ≠ 0) :
+    (lf_g R S y)⁻¹ = Matrix.diagonal ![(R ^ 2)⁻¹, (R ^ 2 * S (y 0) ^ 2)⁻¹,
+      (R ^ 2 * S (y 0) ^ 2 * kr_s2 (y 1))⁻¹] := by
+  refine Matrix.inv_eq_left_inv ?_
+  rw [lf_g, Matrix.diagonal_mul_diagonal, ← Matrix.diagonal_one]
+  congr 1; ext i; fin_cases i <;> simp [kr_s2] <;> field_simp
+
+lemma lf_Γ (hSd : ∀ t, HasDerivAt S (D t) t) {y : Fin 3 → ℝ} (hR : R ≠ 0) (hS : S (y 0) ≠ 0)
+    (hs : Real.sin (y 1) ≠ 0) (a b c : Fin 3) :
+    kr_Γ (lf_g R S) y a b c = lf_T S D y a b c := by
+  have h0 : HasDerivAt (fun t => S t ^ 2) (2 * S (y 0) * D (y 0)) (y 0) := by
+    have h' : HasDerivAt (fun t => S t * S t) (D (y 0) * S (y 0) + S (y 0) * D (y 0)) (y 0) :=
+      (hSd (y 0)).mul (hSd (y 0))
+    convert h' using 1
+    · funext t; ring
+    · ring
+  have d1 : deriv (fun t => R ^ 2 * S t ^ 2) (y 0) = R ^ 2 * (2 * S (y 0) * D (y 0)) :=
+    (h0.const_mul (R ^ 2)).deriv
+  have d2 : deriv (fun t => R ^ 2 * S t ^ 2 * kr_s2 (y 1)) (y 0) =
+      R ^ 2 * (2 * S (y 0) * D (y 0)) * kr_s2 (y 1) :=
+    ((h0.const_mul (R ^ 2)).mul_const (kr_s2 (y 1))).deriv
+  have d3 : deriv (fun t => R ^ 2 * S (y 0) ^ 2 * kr_s2 t) (y 1) =
+      R ^ 2 * S (y 0) ^ 2 * (2 * Real.sin (y 1) * Real.cos (y 1)) :=
+    ((kr_hasDerivAt_s2 (y 1)).const_mul _).deriv
+  have d0 := h0.deriv
+  simp only [kr_Γ, lf_g_inv hR hS hs]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [kr_pd, lf_g, lf_T, Function.update_apply, Matrix.diagonal_apply, d0, d1, d2, d3,
+      lf_c1, lf_c2, kr_nsc, kr_cot]
+  all_goals (try simp only [kr_s2])
+  all_goals field_simp
+
+/-- The data at the point: `S′ = D`, `D′ = −kS` everywhere, `S′² + kS² = 1`, `R ≠ 0`, `S(χ) ≠ 0`, `sin θ ≠ 0`. -/
+structure lf_Hyp (R k : ℝ) (S D : ℝ → ℝ) (x : Fin 3 → ℝ) : Prop where
+  hSd : ∀ t, HasDerivAt S (D t) t
+  hDd : ∀ t, HasDerivAt D (-(k * S t)) t
+  hid : D (x 0) ^ 2 + k * S (x 0) ^ 2 = 1
+  hR : R ≠ 0
+  hS : S (x 0) ≠ 0
+  hs : Real.sin (x 1) ≠ 0
+
+variable {x : Fin 3 → ℝ}
+
+lemma lf_Hyp.U (h : lf_Hyp R k S D x) : ∀ᶠ y in 𝓝 x, S (y 0) ≠ 0 ∧ Real.sin (y 1) ≠ 0 := by
+  have c0 : ContinuousAt (fun y : Fin 3 → ℝ => y 0) x := (continuous_apply 0).continuousAt
+  have c1 : ContinuousAt (fun y : Fin 3 → ℝ => y 1) x := (continuous_apply 1).continuousAt
+  filter_upwards [(ContinuousAt.comp (f := fun y : Fin 3 → ℝ => y 0)
+      (h.hSd (x 0)).continuousAt c0).eventually_ne h.hS,
+    (ContinuousAt.comp (f := fun y : Fin 3 → ℝ => y 1) Real.continuous_sin.continuousAt c1).eventually_ne h.hs]
+    with y h1 h2
+  exact ⟨h1, h2⟩
+
+lemma lf_pd (h : lf_Hyp R k S D x) (a b c d : Fin 3) :
+    kr_pd (fun y => kr_Γ (lf_g R S) y a b c) x d = kr_pd (fun y => lf_T S D y a b c) x d :=
+  kr_pd_congr (h.U.mono fun _ hy => lf_Γ h.hSd h.hR hy.1 hy.2 a b c)
+
+/-- **Constant curvature `k/R²`.** `R_{abcd} = (k/R²)(g_ac g_bd − g_ad g_bc)` for the warped metric
+`R²(dχ² + S(χ)² dΩ²)` whenever `S″ = −kS` and `S′² + kS² = 1`. -/
+theorem lf_curv (h : lf_Hyp R k S D x) (a b c d : Fin 3) :
+    kr_Rlow (lf_g R S) x a b c d = k / R ^ 2 *
+      (lf_g R S x a c * lf_g R S x b d - lf_g R S x a d * lf_g R S x b c) := by
+  have hΓ := lf_Γ (D := D) h.hSd h.hR h.hS h.hs
+  have hR := h.hR; have hS := h.hS; have hs := h.hs
+  have e1 : deriv (lf_c1 S D) (x 0) = -(D (x 0) ^ 2 - k * S (x 0) ^ 2) := by
+    have h' : HasDerivAt (fun t => -(S t * D t)) (-(D (x 0) * D (x 0) + S (x 0) * -(k * S (x 0)))) (x 0) :=
+      ((h.hSd (x 0)).mul (h.hDd (x 0))).neg
+    rw [show lf_c1 S D = fun t => -(S t * D t) from rfl, h'.deriv]; ring
+  have e1s : deriv (fun t => lf_c1 S D t * kr_s2 (x 1)) (x 0) =
+      -(D (x 0) ^ 2 - k * S (x 0) ^ 2) * kr_s2 (x 1) := by
+    have h' : HasDerivAt (fun t => -(S t * D t) * kr_s2 (x 1))
+        (-(D (x 0) * D (x 0) + S (x 0) * -(k * S (x 0))) * kr_s2 (x 1)) (x 0) :=
+      (((h.hSd (x 0)).mul (h.hDd (x 0))).neg).mul_const (kr_s2 (x 1))
+    rw [show (fun t => lf_c1 S D t * kr_s2 (x 1)) = fun t => -(S t * D t) * kr_s2 (x 1) from rfl, h'.deriv]
+    ring
+  have e1t : deriv (fun t => lf_c1 S D (x 0) * kr_s2 t) (x 1) =
+      lf_c1 S D (x 0) * (2 * Real.sin (x 1) * Real.cos (x 1)) :=
+    ((kr_hasDerivAt_s2 (x 1)).const_mul _).deriv
+  have e2 : deriv (lf_c2 S D) (x 0) = (-(k * S (x 0)) * S (x 0) - D (x 0) * D (x 0)) / S (x 0) ^ 2 := by
+    have h' : HasDerivAt (fun t => D t / S t)
+        ((-(k * S (x 0)) * S (x 0) - D (x 0) * D (x 0)) / S (x 0) ^ 2) (x 0) :=
+      (h.hDd (x 0)).div (h.hSd (x 0)) hS
+    rw [show lf_c2 S D = fun t => D t / S t from rfl, h'.deriv]
+  have en := kr_deriv_nsc (x 1)
+  have ec := kr_deriv_cot hs
+  have hk : k = (1 - D (x 0) ^ 2) / S (x 0) ^ 2 := by
+    field_simp; linear_combination h.hid
+  unfold kr_Rlow kr_Riem
+  simp only [Fin.sum_univ_three, lf_pd h, hΓ]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+  · simp [lf_T, lf_g, kr_pd, e1, e1s, e1t, e2, en, ec]
+    all_goals (try simp only [lf_c1, lf_c2, kr_nsc, kr_cot, kr_s2])
+    all_goals (try rw [hk])
+    all_goals (try field_simp)
+    all_goals (try simp only [Real.cos_sq'])
+    all_goals (try ring1)
+    all_goals (try simp)
+    all_goals (try norm_num)
+
+/-- The substrate's quadratic form `η(X, X) = −X₀² + X₁² + X₂² + X₃² + X₄²`. -/
+def lf_η (X : Fin 5 → ℝ) : ℝ := -X 0 ^ 2 + X 1 ^ 2 + X 2 ^ 2 + X 3 ^ 2 + X 4 ^ 2
+
+/-- The signature `ε = (−1, 1, 1, 1, 1)`. -/
+def lf_ε : Fin 5 → ℝ := ![-1, 1, 1, 1, 1]
+
+/-- The induced metric `g_ij = Σ_A ε_A ∂_iΦ^A ∂_jΦ^A` of a chart `Φ`. -/
+noncomputable def lf_pull (Φ : (Fin 3 → ℝ) → Fin 5 → ℝ) (x : Fin 3 → ℝ) : Matrix (Fin 3) (Fin 3) ℝ :=
+  Matrix.of fun i j => ∑ A, lf_ε A * kr_pd (fun y => Φ y A) x i * kr_pd (fun y => Φ y A) x j
+
+lemma lf_pd3 {F G H : ℝ → ℝ} {F' G' H' : ℝ} {x : Fin 3 → ℝ} (hF : HasDerivAt F F' (x 0))
+    (hG : HasDerivAt G G' (x 1)) (hH : HasDerivAt H H' (x 2)) (c : Fin 3) :
+    kr_pd (fun y => F (y 0) * G (y 1) * H (y 2)) x c =
+      ![F' * G (x 1) * H (x 2), F (x 0) * G' * H (x 2), F (x 0) * G (x 1) * H'] c := by
+  fin_cases c <;> simp [kr_pd]
+  · exact Or.inl (Or.inl hF.deriv)
+  · exact Or.inl (Or.inl hG.deriv)
+  · exact Or.inl hH.deriv
+
+/-- The chart `(U₀(χ), U₁(χ), R S(χ) n̂(θ, φ))`. -/
+noncomputable def lf_Φ (U0 U1 : ℝ → ℝ) (R : ℝ) (S : ℝ → ℝ) (y : Fin 3 → ℝ) : Fin 5 → ℝ :=
+  ![U0 (y 0), U1 (y 0), R * S (y 0) * Real.cos (y 1), R * S (y 0) * Real.sin (y 1) * Real.cos (y 2),
+    R * S (y 0) * Real.sin (y 1) * Real.sin (y 2)]
+
+/-- **The induced metric of the chart** is `diag(−U₀′² + U₁′² + R²S′², R²S², R²S² sin²θ)`. -/
+theorem lf_pull_eq {U0 U1 S V0 V1 D : ℝ → ℝ} {R : ℝ} (h0 : ∀ t, HasDerivAt U0 (V0 t) t)
+    (h1 : ∀ t, HasDerivAt U1 (V1 t) t) (hS : ∀ t, HasDerivAt S (D t) t) (x : Fin 3 → ℝ) :
+    lf_pull (lf_Φ U0 U1 R S) x = Matrix.diagonal ![-V0 (x 0) ^ 2 + V1 (x 0) ^ 2 + R ^ 2 * D (x 0) ^ 2,
+      R ^ 2 * S (x 0) ^ 2, R ^ 2 * S (x 0) ^ 2 * kr_s2 (x 1)] := by
+  have one : ∀ t : ℝ, HasDerivAt (fun _ : ℝ => (1 : ℝ)) 0 t := fun t => hasDerivAt_const t 1
+  have hRS : HasDerivAt (fun t => R * S t) (R * D (x 0)) (x 0) := (hS (x 0)).const_mul R
+  have p0 : ∀ c, kr_pd (fun y => lf_Φ U0 U1 R S y 0) x c = ![V0 (x 0), 0, 0] c := fun c => by
+    have := lf_pd3 (x := x) (h0 (x 0)) (one (x 1)) (one (x 2)) c
+    simp only [mul_one, mul_zero] at this; simpa [lf_Φ] using this
+  have p1 : ∀ c, kr_pd (fun y => lf_Φ U0 U1 R S y 1) x c = ![V1 (x 0), 0, 0] c := fun c => by
+    have := lf_pd3 (x := x) (h1 (x 0)) (one (x 1)) (one (x 2)) c
+    simp only [mul_one, mul_zero] at this; simpa [lf_Φ] using this
+  have p2 : ∀ c, kr_pd (fun y => lf_Φ U0 U1 R S y 2) x c =
+      ![R * D (x 0) * Real.cos (x 1), -(R * S (x 0) * Real.sin (x 1)), 0] c := fun c => by
+    have := lf_pd3 (x := x) hRS (Real.hasDerivAt_cos (x 1)) (one (x 2)) c
+    simp only [mul_one, mul_zero] at this; simpa [lf_Φ] using this
+  have p3 : ∀ c, kr_pd (fun y => lf_Φ U0 U1 R S y 3) x c =
+      ![R * D (x 0) * Real.sin (x 1) * Real.cos (x 2), R * S (x 0) * Real.cos (x 1) * Real.cos (x 2),
+        R * S (x 0) * Real.sin (x 1) * -Real.sin (x 2)] c := fun c => by
+    have := lf_pd3 (x := x) hRS (Real.hasDerivAt_sin (x 1)) (Real.hasDerivAt_cos (x 2)) c
+    simpa [lf_Φ] using this
+  have p4 : ∀ c, kr_pd (fun y => lf_Φ U0 U1 R S y 4) x c =
+      ![R * D (x 0) * Real.sin (x 1) * Real.sin (x 2), R * S (x 0) * Real.cos (x 1) * Real.sin (x 2),
+        R * S (x 0) * Real.sin (x 1) * Real.cos (x 2)] c := fun c => by
+    have := lf_pd3 (x := x) hRS (Real.hasDerivAt_sin (x 1)) (Real.hasDerivAt_sin (x 2)) c
+    simpa [lf_Φ] using this
+  ext i j
+  simp only [lf_pull, Matrix.of_apply, Fin.sum_univ_five, p0, p1, p2, p3, p4]
+  fin_cases i <;> fin_cases j <;> simp [lf_ε, kr_s2]
+  all_goals (try ring_nf)
+  all_goals (try simp only [Real.cos_sq'])
+  all_goals ring1
+
+/-! #### The three leaves -/
+
+/-- **Row 5a, the set.** On the hyperboloid, `X₀ = c` is the sphere `X₁² + … + X₄² = α² + c²`. -/
+theorem lf_closed_set (α c : ℝ) (X : Fin 5 → ℝ) :
+    (lf_η X = α ^ 2 ∧ X 0 = c) ↔ (X 0 = c ∧ X 1 ^ 2 + X 2 ^ 2 + X 3 ^ 2 + X 4 ^ 2 = α ^ 2 + c ^ 2) := by
+  unfold lf_η
+  constructor
+  · rintro ⟨h, rfl⟩; exact ⟨rfl, by linarith⟩
+  · rintro ⟨rfl, h⟩; exact ⟨by linarith, rfl⟩
+
+/-- The closed chart `(c, R cos χ, R sin χ n̂(θ, φ))`. -/
+noncomputable def lf_S3 (c R : ℝ) : (Fin 3 → ℝ) → Fin 5 → ℝ :=
+  lf_Φ (fun _ => c) (fun t => R * Real.cos t) R Real.sin
+
+theorem lf_S3_on {α c R : ℝ} (hR : R ^ 2 = α ^ 2 + c ^ 2) (y : Fin 3 → ℝ) :
+    lf_η (lf_S3 c R y) = α ^ 2 ∧ lf_S3 c R y 0 = c := by
+  refine ⟨?_, by simp [lf_S3, lf_Φ]⟩
+  simp [lf_η, lf_S3, lf_Φ]
+  ring_nf; simp only [Real.cos_sq']; linear_combination hR
+
+theorem lf_S3_pull (c R : ℝ) : lf_pull (lf_S3 c R) = lf_g R Real.sin := by
+  funext y
+  rw [lf_S3, lf_pull_eq (V0 := fun _ => 0) (V1 := fun t => R * -Real.sin t) (D := Real.cos)
+    (fun t => hasDerivAt_const t c) (fun t => (Real.hasDerivAt_cos t).const_mul R) Real.hasDerivAt_sin y, lf_g]
+  congr 1; ext i; fin_cases i <;> simp
+  ring_nf; simp only [Real.cos_sq']; ring
+
+/-- **Row 5a.** The closed leaf `X₀ = c` is a round `S³` of curvature `+1/(α² + c²)`: its induced metric has
+`R_{abcd} = (1/(α² + c²))(g_ac g_bd − g_ad g_bc)`. -/
+theorem lf_closed {α c R : ℝ} (hR0 : R ≠ 0) (hR : R ^ 2 = α ^ 2 + c ^ 2) {x : Fin 3 → ℝ}
+    (h0 : Real.sin (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (a b e d : Fin 3) :
+    kr_Rlow (lf_pull (lf_S3 c R)) x a b e d = 1 / (α ^ 2 + c ^ 2) *
+      (lf_pull (lf_S3 c R) x a e * lf_pull (lf_S3 c R) x b d -
+        lf_pull (lf_S3 c R) x a d * lf_pull (lf_S3 c R) x b e) := by
+  rw [lf_S3_pull, ← hR, show (1 : ℝ) / R ^ 2 = 1 / R ^ 2 from rfl]
+  have := lf_curv (R := R) (k := 1) (S := Real.sin) (D := Real.cos) (x := x)
+    ⟨Real.hasDerivAt_sin, fun t => by simpa using Real.hasDerivAt_cos t,
+      by rw [one_mul]; exact Real.cos_sq_add_sin_sq _, hR0, h0, h1⟩ a b e d
+  exact this
+
+/-- **Row 5c, the set.** On the hyperboloid, `X₁ = b` gives `X₀² − (X₂² + X₃² + X₄²) = b² − α²`; beyond the
+throat (`0 ≤ α < b`) every point has `X₀ ≠ 0`, so the section has two sheets, `X₀ > 0` and `X₀ < 0`. -/
+theorem lf_open_set {α b : ℝ} {X : Fin 5 → ℝ} (h : lf_η X = α ^ 2) (hb : X 1 = b) :
+    X 0 ^ 2 - (X 2 ^ 2 + X 3 ^ 2 + X 4 ^ 2) = b ^ 2 - α ^ 2 ∧ (0 ≤ α → α < b → X 0 ≠ 0) := by
+  unfold lf_η at h; subst hb
+  refine ⟨by linarith, fun hα hαb h0 => ?_⟩
+  rw [h0] at h
+  nlinarith [sq_nonneg (X 2), sq_nonneg (X 3), sq_nonneg (X 4)]
+
+/-- The open chart `(A cosh ρ, b, A sinh ρ n̂(θ, φ))`. -/
+noncomputable def lf_H3 (b A : ℝ) : (Fin 3 → ℝ) → Fin 5 → ℝ :=
+  lf_Φ (fun t => A * Real.cosh t) (fun _ => b) A Real.sinh
+
+theorem lf_H3_on {α b A : ℝ} (hA : A ^ 2 = b ^ 2 - α ^ 2) (y : Fin 3 → ℝ) :
+    lf_η (lf_H3 b A y) = α ^ 2 ∧ lf_H3 b A y 1 = b := by
+  refine ⟨?_, by simp [lf_H3, lf_Φ]⟩
+  simp [lf_η, lf_H3, lf_Φ]
+  ring_nf; simp only [Real.cos_sq', Real.cosh_sq]; linear_combination -hA
+
+theorem lf_H3_pull (b A : ℝ) : lf_pull (lf_H3 b A) = lf_g A Real.sinh := by
+  funext y
+  rw [lf_H3, lf_pull_eq (V0 := fun t => A * Real.sinh t) (V1 := fun _ => 0) (D := Real.cosh)
+    (fun t => (Real.hasDerivAt_cosh t).const_mul A) (fun t => hasDerivAt_const t b) Real.hasDerivAt_sinh y, lf_g]
+  congr 1; ext i; fin_cases i <;> simp
+  ring_nf; simp only [Real.cosh_sq]; ring
+
+/-- **Row 5c.** The open leaf `X₁ = b > α` is `H³` of curvature `−1/(b² − α²)`: its induced metric has
+`R_{abcd} = (−1/(b² − α²))(g_ac g_bd − g_ad g_bc)`. -/
+theorem lf_open {α b A : ℝ} (hA0 : A ≠ 0) (hA : A ^ 2 = b ^ 2 - α ^ 2) {x : Fin 3 → ℝ}
+    (h0 : Real.sinh (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (a c e d : Fin 3) :
+    kr_Rlow (lf_pull (lf_H3 b A)) x a c e d = -1 / (b ^ 2 - α ^ 2) *
+      (lf_pull (lf_H3 b A) x a e * lf_pull (lf_H3 b A) x c d -
+        lf_pull (lf_H3 b A) x a d * lf_pull (lf_H3 b A) x c e) := by
+  rw [lf_H3_pull, ← hA]
+  exact lf_curv (R := A) (k := -1) (S := Real.sinh) (D := Real.cosh) (x := x)
+    ⟨Real.hasDerivAt_sinh, fun t => by simpa using Real.hasDerivAt_cosh t,
+      by rw [Real.cosh_sq]; ring, hA0, h0, h1⟩ a c e d
+
+/-- The null direction `B = (1, 1, 0, 0, 0)` and the bilinear form `η(X, Y)`. -/
+def lf_B : Fin 5 → ℝ := ![1, 1, 0, 0, 0]
+def lf_ηb (X Y : Fin 5 → ℝ) : ℝ := -X 0 * Y 0 + X 1 * Y 1 + X 2 * Y 2 + X 3 * Y 3 + X 4 * Y 4
+
+lemma lf_B_null : lf_ηb lf_B lf_B = 0 ∧ lf_B ≠ 0 := by
+  refine ⟨by simp [lf_ηb, lf_B], fun h => ?_⟩
+  have := congrFun h 0; simp [lf_B] at this
+
+/-- The height `X₀` of the flat chart: `X₁ − X₀ = s` and `X₁ + X₀ = (α² − |y|²)/s`. -/
+noncomputable def lf_h (α s : ℝ) (y : Fin 3 → ℝ) : ℝ := ((α ^ 2 - (y 0 ^ 2 + y 1 ^ 2 + y 2 ^ 2)) / s - s) / 2
+
+/-- The flat chart `y ↦ (X₀(y), X₀(y) + s, y)`. -/
+noncomputable def lf_horo (α s : ℝ) (y : Fin 3 → ℝ) : Fin 5 → ℝ := ![lf_h α s y, lf_h α s y + s, y 0, y 1, y 2]
+
+/-- **Row 5b, the set.** For `s ≠ 0`, the flat chart is a bijection from `ℝ³` onto the horosphere
+`{η(X, X) = α², η(X, B) = s}` of the null `B`. -/
+theorem lf_horo_leaf (α : ℝ) {s : ℝ} (hs : s ≠ 0) :
+    (∀ y, lf_η (lf_horo α s y) = α ^ 2 ∧ lf_ηb (lf_horo α s y) lf_B = s) ∧
+      (∀ X, lf_η X = α ^ 2 → lf_ηb X lf_B = s → X = lf_horo α s ![X 2, X 3, X 4]) ∧
+      Function.Injective (lf_horo α s) := by
+  refine ⟨fun y => ⟨?_, ?_⟩, fun X hX hB => ?_, fun y z h => ?_⟩
+  · simp [lf_η, lf_horo, lf_h]; field_simp; ring
+  · simp [lf_ηb, lf_horo, lf_B]
+  · simp [lf_ηb, lf_B] at hB
+    simp [lf_η] at hX
+    have h0 : X 0 = lf_h α s ![X 2, X 3, X 4] := by
+      simp [lf_h]; field_simp
+      have : X 1 = X 0 + s := by linarith
+      rw [this] at hX; linear_combination hX
+    ext i; fin_cases i <;> simp [lf_horo, h0]
+    · simp [lf_h] at h0 ⊢; linarith
+  · ext i; fin_cases i
+    · exact congrFun h 2
+    · exact congrFun h 3
+    · exact congrFun h 4
+
+lemma lf_pd_add_const (f : (Fin 3 → ℝ) → ℝ) (s : ℝ) (x : Fin 3 → ℝ) (c : Fin 3) :
+    kr_pd (fun y => f y + s) x c = kr_pd f x c := by
+  simp [kr_pd]
+
+lemma lf_pd_coord (j : Fin 3) (x : Fin 3 → ℝ) (c : Fin 3) :
+    kr_pd (fun y => y j) x c = if c = j then 1 else 0 := by
+  fin_cases c <;> fin_cases j <;> simp [kr_pd]
+
+/-- **The induced metric of the flat chart is `δ_ij`.** -/
+theorem lf_horo_pull (α s : ℝ) : lf_pull (lf_horo α s) = fun _ => 1 := by
+  funext x; ext i j
+  have e1 : kr_pd (fun y => lf_horo α s y 1) x = kr_pd (fun y => lf_horo α s y 0) x := by
+    funext c; exact lf_pd_add_const (lf_h α s) s x c
+  have e2 : kr_pd (fun y => lf_horo α s y 2) x = kr_pd (fun y => y 0) x := rfl
+  have e3 : kr_pd (fun y => lf_horo α s y 3) x = kr_pd (fun y => y 1) x := rfl
+  have e4 : kr_pd (fun y => lf_horo α s y 4) x = kr_pd (fun y => y 2) x := rfl
+  simp only [lf_pull, Matrix.of_apply, Fin.sum_univ_five, e1, e2, e3, e4, lf_pd_coord]
+  fin_cases i <;> fin_cases j <;> simp [lf_ε]
+
+/-- **Row 5b.** The flat leaf has curvature `0`: every `R^a_{bcd}` of its induced metric vanishes. -/
+theorem lf_flat (α s : ℝ) (x : Fin 3 → ℝ) (a b c d : Fin 3) :
+    kr_Riem (lf_pull (lf_horo α s)) x a b c d = 0 := by
+  rw [lf_horo_pull]
+  have hΓ : ∀ y a b c, kr_Γ (fun _ => (1 : Matrix (Fin 3) (Fin 3) ℝ)) y a b c = 0 := by
+    intro y a b c; simp [kr_Γ, kr_pd_const]
+  simp [kr_Riem, hΓ, kr_pd_const]
+
+/-- **Non-vacuity.** At `χ = θ = π/2` the closed leaf of `α = 1`, `c = 0` has sectional curvature `+1`
+(`R_{0101} = 1`); at `ρ = 1`, `θ = π/2` the open leaf of `α = 1`, `b = √2` has `R_{0101} = −sinh²1 ≠ 0`; and
+the flat chart of `α = s = 1` puts the origin on its leaf. -/
+theorem lf_witness :
+    kr_Rlow (lf_pull (lf_S3 0 1)) ![π / 2, π / 2, 0] 0 1 0 1 = 1 ∧
+      kr_Rlow (lf_pull (lf_H3 (Real.sqrt 2) 1)) ![1, π / 2, 0] 0 1 0 1 = -Real.sinh 1 ^ 2 ∧
+      Real.sinh 1 ≠ 0 ∧
+      lf_η (lf_horo 1 1 0) = 1 ^ 2 ∧ lf_ηb (lf_horo 1 1 0) lf_B = 1 := by
+  have hs1 : Real.sinh 1 ≠ 0 := (Real.sinh_pos_iff.2 one_pos).ne'
+  refine ⟨?_, ?_, hs1, (lf_horo_leaf 1 one_ne_zero).1 0⟩
+  · rw [lf_closed (α := 1) one_ne_zero (by norm_num) (by simp) (by simp), lf_S3_pull]
+    simp [lf_g, kr_s2]
+  · rw [lf_open (α := 1) one_ne_zero (by norm_num) (by simp) (by simp), lf_H3_pull]
+    simp [lf_g, kr_s2]; norm_num
+
+end LfLeaves
+
 end ShadowProbe.StaticEinsteinProbe
 
 #print axioms ShadowProbe.StaticEinsteinProbe.ok_vacuum_iff_ode
@@ -987,3 +1334,25 @@ end ShadowProbe.StaticEinsteinProbe
 #print axioms ShadowProbe.StaticEinsteinProbe.rg_sinh23
 #print axioms ShadowProbe.StaticEinsteinProbe.rg_sinh23_radial
 #print axioms ShadowProbe.StaticEinsteinProbe.rg_tau23
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_g_inv
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_Γ
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_Hyp.U
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_pd
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_curv
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_pd3
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_pull_eq
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_closed_set
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_S3_on
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_S3_pull
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_closed
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_open_set
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_H3_on
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_H3_pull
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_open
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_B_null
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_horo_leaf
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_pd_add_const
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_pd_coord
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_horo_pull
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_flat
+#print axioms ShadowProbe.StaticEinsteinProbe.lf_witness
