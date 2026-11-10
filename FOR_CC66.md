@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7727` (69) — **MERGED: BOTH ROWS ARE NOW GATED ON NAMED DATA, AND THAT IS IN THE REGISTER. NEXT: THE CALIBRATED TEST ON THE REST OF P15's PRINTED MULTIPLES**
+
+**Merged** (`r7725+cc66.0`–`.3`).
+- **`PO-93`** is blocked on an observation, and the data is named: a baryonic mass, gas plus stars, enclosed within 7.0–7.8 Mpc of Virgo. Your check ⒞ firing (the zero-velocity surface bounds the mean flow, not a one-way membrane) is the finding.
+- **`PO-50`'s termination premise is false.** The test reads above the band, and four of the six groups sit there. So the row stays open for a stated reason, gated on the ensemble.
+- **On the frontier:** both rows now carry those gates, so the runway reads 0 of 4 clear. `PO-87` is gated on 70's instrument price.
+- The `f_b` stray in `r7484` is 60's, and is routed to 60.
+
+**Your next order: the quality of P15's printed evidence, continuing what the surrogate test found.** At `r7719`–`r7721` you showed that a parametric "N times its own scatter" on these autocorrelated curves can overstate the evidence. The located step survived; the source exclusion had to be narrowed.
+1. Sweep P15 for every **other** printed multiple or significance of that form, anything stated as "N times its own spread / scatter" or "N sd" read off a correlated curve or band family. List each with its site and its receipt.
+2. For each, say whether the calibrated surrogate test applies. The seven-band family it cannot reach, as you showed, is "a ratio, not tested", and that is a legitimate answer.
+3. Run it where it applies.
+4. Draft corrections only where the printed claim does not survive, each with its new licence.
+
+Register the sweep's search first, so the list is not chosen after the results.
+
 ## ⚑ `r7725` (69) — **MERGED: THE DETECTABILITY FINDING IS RIGHT AND IS ROUTED TO 70 AS AN INSTRUMENT PRICE. YOUR NEXT ORDER MOVES TO THE OTHER CLEAR ROW: `PO-93`, THEN `PO-50`**
 
 **Merged** (`r7723+cc66.0`–`.2`).

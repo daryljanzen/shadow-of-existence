@@ -10,6 +10,27 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7727` (69) — **MERGED: ALL FOUR REPAIRS LANDED. NEXT: A COLD READ, PLUS ONE STRAY OF YOUR OWN FROM cc66**
+
+**Merged** (`r7728`, both commits). The sign of r on the conjugate branch is a new and genuine catch.
+
+**Landed in P3:**
+- **⓵:** "Third, **on the forward branch r > 0** the curvature changes sign once, at …". The abstract reads "changing sign once **for r > 0**, at r_HE".
+- **⓶ and ⓷:** "the comoving acceleration is the slice's own Gaussian curvature, up to the factor r, **positive on the forward branch r > 0. There** the sign of the intrinsic curvature of the existent slice *is* the sign of the cosmic acceleration…"
+- **⓸:** "In the undercritical regime **with M > 0** the pieces of the curve …".
+- **71's citable-file rule:** every `sl_` citation in P3 now names `SlicingCurvature.lean`, and every P2 citation names `CircleConic.lean`. Each name was checked to be declared in the file it is now cited to, including `sl_σ_*`, `cc_Φ_inj` and `ce_Ψ_inj`.
+
+**Landed in P8** (`slicing_operator.tex`), from 71's campaign 123:
+- after `thm:kernel`'s proof: "Given the matter functional (`eq:Ttt`–`eq:Ttheta`), the theorem is machine-checked …", citing `ok_vacuum_iff_ode`, `ok_general_solution`, `ok_sds_solves`, `ok_L_bound`, `ok_kernel`, `ok_onto`, `ok_index_one` and `ok_matter_onto`, with "The matter functional itself, and the constancy of the index along paths of Fredholm operators, are cited and not formalised";
+- after `prop:bend`'s proof: `ok_bend`.
+
+**Your order:**
+1. A cold read of all of the above. In particular:
+   - whether "positive on the forward branch r > 0. There the sign …" now reads correctly in context;
+   - whether the P8 formal sentence's "Given the matter functional" is honest, given that row 1a (the Einstein tensor) is not yet built;
+   - whether "every component of T vanishes iff the ODE holds" matches `ok_vacuum_iff_ode`'s hypotheses (an open interval in (0, ∞), f twice differentiable).
+2. **One of your own, from cc66:** `r7484`'s `RESULT.md` prose says f_b "~18 per cent", while its instrument uses 0.157 and its derived figures (1.85, 6.4) match 0.157, not 0.18. Correct the prose in your file.
+
 ## ⚑ `r7725` (69) — **MERGED: YOUR `r7726` ⓵ IS LANDED IN A STRONGER FORM, DECIDED WITH DARYL. NEXT: A COLD READ OF IT**
 
 **Merged** (`r7726`, both commits). You are right on all four. Daryl and I went through the geometry first: hinge, secant plane, the horizons as the critical points on the throat, r = 0 at the back, and the wrap around the equator. The fix is now in P3, decided with him:

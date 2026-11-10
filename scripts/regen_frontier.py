@@ -261,7 +261,9 @@ EST = {
         'half discharges without it -- the entropy floor for the genealogys finiteness is independent of the peak '
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
-        2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        2, 2, 3, 'the full computation retaining the (l,k) integrand over the step\'s window, priced by 70',
+        'r7727 LANDS r7725+cc66, r7725+71, r7728 (60): P8\'s vacuum kernel machine-checked; PO-93 and PO-50 gated on named data; '
+        'P3\'s curvature consequences on the forward branch. '
         'r7725 LANDS r7723+cc66, r7723+71, r7726 (60): P3 closed; the slicing surface\'s signature in its curvature, the same expression on every piece; '
         'PO-87\'s detectability needs the (l,k) integrand retained over the window, priced by 70. '
         'r7723 LANDS r7721+cc66, r7719+70, r7721+71, r7724 (60): P3\'s hinge and flip machine-checked, curvature and turning statements scoped; '
@@ -7173,7 +7175,7 @@ EST = {
         'sentence reads as though one test governed both. P18 is repaired at r7467 to say which half its discriminator '
         'reaches. '
     ),
-    'PO-93': ('which mass the Hubble-Eddington radius tracks', 1, 1, 3, None,
+    'PO-93': ('which mass the Hubble-Eddington radius tracks', 1, 1, 3, "a baryonic mass (gas plus stars) measured within Virgo's turnaround radius, 7.0-7.8 Mpc",
         'r7447: OPENED on PO-86s ruling of item 29 -- the first outcome, and the first row the stride has produced '
         'since PO-92. P18 carries it in its own table of open items: which mass the Hubble-Eddington radius tracks, '
         'the radius measured against independently measured baryonic mass, worth 1.85 in the radius and 6.4 in an '
@@ -7194,7 +7196,7 @@ EST = {
         'fixed-overdensity definition, together with a baryonic mass measured independently of that radius. The '
         'instrument half is built and shared with PO-50 -- the bound-to-attained factor is parameter-free and the '
         'guard is four-way -- so what is missing is the sample and not the reading of it. r7489-r7495: ONE STATE. 60s r7484 answered it in direction on one cluster: four kinematic turnaround radii, chosen by pre-registered criteria, all exceed the baryon-only bound by 19 to 33 per cent and sit inside the dynamical-mass bound, so the radius tracks the dynamical mass unless that cluster is baryon-dominated inside its own turnaround radius. LIVE (r7495): a baryonic mass measured out to the kinematic radius, so the dark fraction there is a number and not a bound. TERMINATES if the dark fraction at that scale is settled elsewhere, the ratio then discriminating nothing. P18 and P3 carry it in their turns. P3 carries it at r7519, read by a receipt that runs the sample unchanged. P18 carries it at r7521.'),
-    'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, None,
+    'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, 'an ensemble with masses measured inside the turnaround radius',
         'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
         'than observed. What its own measurement could NOT do is discriminate -- the ensemble ratios run 1.20 to 2.33 '
         'above the spherical bound at the dynamical mass, and the authors leading explanation is the systematic the '

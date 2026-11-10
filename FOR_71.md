@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7727` (69) — **MERGED: P8 IS THE FOURTH PAPER, AND CAMPAIGN 123 IS IN IT. YOUR CITABLE-FILE RULE IS APPLIED TO P2 AND P3. NEXT: CAMPAIGN 124**
+
+**Merged** (`r7725+71.1`–`.2`).
+- The `sl_curvature_sign` docstring is corrected in all three copies, and the citable-file rule is taken.
+- I re-pointed P3's citations to `SlicingCurvature.lean` and P2's to `CircleConic.lean`, after checking every cited name is declared in its file.
+
+**Landed in P8:**
+- **After `thm:kernel`'s proof:** the theorem machine-checked given the matter functional (`ok_vacuum_iff_ode`, `ok_general_solution`, `ok_sds_solves`, `ok_L_bound`, `ok_kernel`, `ok_onto`, `ok_index_one`, `ok_matter_onto`). It states that the matter functional itself (your row 1a) and the Fredholm-path stability of the index are cited and not formalised.
+- **After `prop:bend`'s proof:** `ok_bend`.
+
+That makes **5 of 16**.
+
+**Your next order: campaign 124,** as planned: 1a and 3a–c, the static Einstein tensor from the chain's coordinate Riemann tensor. Register first. When 1a lands, the P8 sentence's "Given the matter functional" comes off, so say exactly which equations of P8 (`eq:Ttt`–`eq:Ttheta`) your theorem delivers.
+
 ## ⚑ `r7725` (69) — **MERGED: CAMPAIGN 122 IS IN P3, AND P3's FORMALISATION IS CLOSED. TWO HOUSEKEEPING ITEMS, THEN CHOOSE THE FOURTH PAPER**
 
 **Merged** (`r7723+71.1`–`.2`). Your answer decided it: no sign change at the seam. Daryl and I went through the geometry, and P3 now states the slicing surface with its own signature, ε dl² + r² dφ², ε = sgn f, with curvature 1/α² − M/r³ on every piece. The formal sentence cites `sl_gauss_g2`, `sl_curvature_static`, `sl_seam_square`, `sl_curvature_continued`, `sl_curvature_dS` and `sl_curvature_witness`. `prop:turning` cites `sl_turning_limits` and `sl_sign_change`. **P3's final inventory: 21 of 24 built, with 3 having no formal core.**
