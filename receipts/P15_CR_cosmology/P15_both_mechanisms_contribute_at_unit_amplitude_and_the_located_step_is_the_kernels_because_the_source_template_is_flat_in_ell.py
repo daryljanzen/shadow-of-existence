@@ -227,7 +227,14 @@ check("⛭⛔ `r7733` ** ⓸ AND THE SOURCE TEMPLATE IS ALMOST FLAT IN `l` WHILE
       "not size*",
       abs(SH['PRIMARY'][0] - 0.97933) < 5e-6 and abs(SH['PRIMARY'][1] - 0.223855) < 5e-6
       and abs(SH['SECONDARY'][0] - 0.979831) < 5e-6 and abs(SH['SECONDARY'][1] - 0.210933) < 5e-6
-      and abs(SH['PRIMARY'][2] - 0.218832) < 5e-6 and abs(SH['PRIMARY'][3] - 0.278083) < 5e-6,
+      and abs(SH['PRIMARY'][2] - 0.218832) < 5e-6 and abs(SH['PRIMARY'][3] - 0.278083) < 5e-6
+      # ⛔ AND THE SAME FOUR AGAIN IN PER CENT, because that is the unit the INDEX row and the drafted
+      #    `P15` sentence PRINT them in, and `check_figures_pinned` reads `97.93` as ninety-seven and
+      #    not as `0.9793`: a pin on the fraction does not pin the printed percentage.
+      and abs(100 * SH['PRIMARY'][0] - 97.933) < 5e-3
+      and abs(100 * SH['PRIMARY'][1] - 22.386) < 5e-3
+      and abs(100 * SH['SECONDARY'][0] - 97.983) < 5e-3
+      and abs(100 * SH['SECONDARY'][1] - 21.093) < 5e-3,
       f"primary kernel {100 * SH['PRIMARY'][0]:.2f} % / source {100 * SH['PRIMARY'][1]:.2f} %; "
       f"secondary {100 * SH['SECONDARY'][0]:.2f} % / {100 * SH['SECONDARY'][1]:.2f} %; "
       f"template rms {SH['PRIMARY'][2]:.5f} kernel vs {SH['PRIMARY'][3]:.5f} source")
@@ -236,7 +243,10 @@ check("⛭⛔ `r7733` ** ⓹ SO OF THE FITTED MODEL'S `l`-STRUCTURED VARIANCE --
       "the figure the `P15` sentence rests on: unit amplitude is a statement about the COEFFICIENT, "
       "not about the share of the located step*",
       abs(VS['PRIMARY'][0] - 0.935623) < 5e-6 and abs(VS['SECONDARY'][0] - 0.930071) < 5e-6
-      and abs(VS['PRIMARY'][2] - 3.45700) < 5e-5 and abs(VS['SECONDARY'][2] - 2.70746) < 5e-5,
+      and abs(VS['PRIMARY'][2] - 3.45700) < 5e-5 and abs(VS['SECONDARY'][2] - 2.70746) < 5e-5
+      # ⛔ and in per cent, as printed -- see gate ⓸'s note
+      and abs(100 * VS['PRIMARY'][0] - 93.562) < 5e-3
+      and abs(100 * VS['SECONDARY'][0] - 93.007) < 5e-3,
       f"primary kernel {100 * VS['PRIMARY'][0]:.1f} % / source {100 * VS['PRIMARY'][1]:.1f} %, "
       f"{VS['PRIMARY'][2]:.2f}x in rms; secondary {100 * VS['SECONDARY'][0]:.1f} % / "
       f"{100 * VS['SECONDARY'][1]:.1f} %, {VS['SECONDARY'][2]:.2f}x")

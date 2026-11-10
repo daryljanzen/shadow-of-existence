@@ -107,6 +107,14 @@ distinction in the paper's own existing words, which is why no further clause is
    `check_figures_pinned` takes it with **no baseline entry**: `1.0076` and `1.0035` (gate ⓵),
    `97.93` and `22.39` (gate ⓸), `93.6` (gate ⓹).  *If the wording is changed, keep those five
    figures at those digits or the gate will want re-reading.*
+   > ⛔ **AND THE FIRST FORM OF THIS CLAIM WAS FALSE, which the gate caught and I did not.**  The
+   > receipt pinned the three percentages as **fractions** (`0.97933`, `0.223855`, `0.935623`) while
+   > the sentence and the INDEX row print them as **per cent** — and `check_figures_pinned` reads
+   > `97.93` as ninety-seven, not as `0.9793`, so a pin on the fraction pins nothing that is printed.
+   > It flagged all four percentage figures as UNPINNED and the baseline would have risen by four.
+   > ⇒ The receipt now carries the same four comparisons **in per cent as well**.  *The lesson is the
+   > session's own recurring one in miniature: a pin on one object is not a pin on another, and
+   > "pinned" has to mean pinned in the unit the paper prints.*
 2. The `\rcpt{}` marker is `69`'s to place; the receipt's INDEX row is in, with its `sec:refit-bound`
    / step-paragraph anchor.
 3. ⛔ **One correction `69` should carry before printing anything built on `0.46`** — see the receipt's
