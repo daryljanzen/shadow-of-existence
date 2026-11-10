@@ -10,6 +10,45 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7733: P5 CHOSEN AS THE FIFTH PAPER (18-ROW INVENTORY); CAMPAIGN 127 — P5's DIHEDRAL CORE BUILT (`r7733+71.1`–`.2`)
+
+**The choice** is in `r7733_71_survey/SURVEY.md`: **P5, the groupoid paper.**
+- **P3's closure moved it up.** σ, the Nariai member and the seam flip are built in `SlicingCurvature.lean`.
+  `Row18Monodromy.lean` (Mathlib-only) has the Nariai swaps and the full `S₃` monodromy.
+- **What remains is precise:** finite group theory on the sky-angle circle `ℝ/2πℤ`, plus one bounded topological
+  classification (`prop:completeness`).
+- **Inventory:** 18 rows. 7 were BUILT IN PART, and 1 (`prop:dim-collapse`) has no formal core.
+- **Not P15,** despite more citations: only 2 of its 7 statements have a formal core.
+- **60's P8 declaration** joining `thm:kernel`'s halves is left for now. It is a small campaign I can take between
+  P5's campaigns if you want P8 to cite one statement.
+
+**Campaign 127:** the result is in `r7733_71_campaign127/RESULT.md`. The new file `probes/Groupoid.lean` (`gp_`) is
+P5's citable file.
+- **The build:** zero errors and zero warnings, `30` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `504` lines (band 450–1200, point 750), at p `0.5`. One construction, `gp_act : DihedralGroup n →*
+  Perm A`, serves all three dihedral groups.
+- **2a, `gp_σ_sq`; 3, `gp_τ_order` and `gp_τ_short`:** `σ² = 1` with `σ ≠ 1`. `orderOf τ = 3` on `ℝ/2πℤ`, and `τ`
+  is trivial on `ℝ/(2π/3)ℤ`, as the proof's caveat says.
+- **4:** `gp_relations` gives `σ² = τ³ = (στ)² = 1`. `gp_D3` gives `⟨σ, τ⟩ ≃* DihedralGroup 3`, of order 6
+  (`gp_D3_card`), and `gp_S3` gives `≃* S₃`.
+- **2c:**
+  - `gp_root_cubic`: each `rₖ = (2/√3) sin(w + 2πk/3)` solves the cubic.
+  - `gp_root_perm`: the action permutes the roots.
+  - `gp_σ_roots`: `σ` swaps labels 0 and 1 and fixes 2.
+  - `gp_roots_pos`: the swapped pair is positive on `(0, π/3)`.
+- **7b, `gp_σ_fixed`:** the circle's fixed points are exactly `π/6` and `7π/6`, at `r₀ = ±1/√3`.
+- **8, `gp_nariai_mass`:** `2M = 2/(3√3)` and `ΛM² = 1/9`.
+- **13:** `gp_R_mass` gives `R` with `2M ↦ −2M`. `gp_D6` gives `⟨σ, τ, R⟩ ≃* D₆`, of order 12, with `⟨σ, τ⟩` of
+  index 2. `gp_half_turn` gives a central half-turn outside `⟨σ, τ⟩`: `Aut(A₂) = S₃ × ℤ₂`.
+- **No reading flags.** One note on signs: the roots move by an anti-homomorphism, so the label homomorphism is the
+  push-forward. `σ`'s swap is unaffected.
+
+**Marks:** 7 of 18 BUILT; 6 BUILT IN PART (in other probes); 4 NOT BEGUN; 1 with no formal core.
+**Next, campaign 128:** 1 and 5, the morphism group and the completeness of `⟨σ, τ⟩`.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7731: CAMPAIGN 126 — P8's THREE LEAVES BUILT; P8 IS CLOSED (15 of 16 BUILT, 5d NO FORMAL CORE); 60's TWO HEADERS FIXED (`r7731+71.1`–`.2`)
 
 The result is in `r7731_71_campaign126/RESULT.md`. **Everything is in `probes/StaticEinstein.lean`, the file P8
