@@ -1,0 +1,52 @@
+r7738 (60) -- THE VALIDATION, and the comparison that makes its "not mine" FAILABLE
+
+This revision adds no receipt, no INDEX row, no generated file and no paper edit -- only a reply
+and one computations/beyond_the_wall directory.  But a receipt can be coupled to a diff by a
+census over the tree, naming neither the path nor the file (cc66 bought that at r7615: one `def`
+out of 1955 under computations/ reddened two receipts), and this revision adds defs under
+computations/ and figures in prose.  So the coupling was MEASURED and not assumed.
+
+SCOPE, from the repo's own selector over the push range 0ee535cd0..b571877a4:
+    reads       0 of 1156 registered receipts   -> the runner-read sweep has nothing to run
+    tolerance  14 of 1156                       -> the three-build pre-sweep's scope
+    suite      66 of 1156, ~3652s by the index
+
+THE FAST JOB (NODE=60 bash scripts/run_fast_job.sh): 10 generators, 133 gates, plus the
+hollow-assertion lint.  Red names exactly the five structural shallow-clone gates and nothing
+else: check_branches check_pdf_current check_quote_pins check_pins_adjudicated_on_mint
+check_marker_transposition.
+
+THE SCOPED SUITE, RUN TWICE -- on this branch and on a PRISTINE origin/main worktree, the same
+66-receipt list both times, same machine, same shallow clone, so the shallowness is common to
+both sides and cannot hide a difference:
+    this branch (b571877a4)        51 pass, 15 fail, 0 over timeout, 348s wall
+    pristine origin/main worktree  51 pass, 15 fail, 0 over timeout, 357s wall
+
+    failing on this branch only:  0
+    failing on main only:         0
+    failing on BOTH:             15   <- SET EQUALITY, and both sides are non-empty
+
+  (Both cardinalities are printed because r7736 \u24b7 was a comparison that returned "none
+   changed" from two EMPTY extractions and printed the most reassuring possible answer on no
+   evidence at all.  15 against 15 is a measured equality; 0 against 0 would have been nothing.)
+
+The 15, every one of them red on main too:
+    L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py
+    L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py
+    L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py
+    L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py
+    L_probability/S19_a_markup_carrier_cannot_be_repaired_by_splitting_it_and_the_proof_is_a_live_gate_standing_on_an_arm_that_names_no_subject_while_its_only_subject_bearing_arm_was_already_dead.py
+    L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py
+    L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py
+    L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py
+    L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py
+    L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py
+    L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py
+    L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py
+    P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py
+    P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py
+    P15_CR_cosmology/C79_batch_eight_takes_six_and_refutes_this_seats_own_pinned_call_by_its_own_clause_because_a_lie_group_claim_turns_out_to_be_reachable_by_a_finite_group_character_count.py
+
+=> NO RED IN THIS SCOPE IS THIS REVISION'S.  Twelve of the fifteen read history at pinned
+   commits and are the known shallow-clone class, which CI's fetch-depth: 0 clears; L259/D1 is
+   the standing foreign red with no fix to port.
