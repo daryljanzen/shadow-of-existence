@@ -1,2 +1,3 @@
 r7731: launch the r7729 four-combination build on a runner and push refs/ci/r7729_dlk (69 ruled option 1).
 launched 2026-11-10
+relaunched 2026-11-10 (r7731+70.2): the runner declares C1_BAR=1e-6; the first run refused at C1 (2.96e-8 / 4.93e-8 against 1e-10)

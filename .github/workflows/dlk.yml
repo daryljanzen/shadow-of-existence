@@ -39,6 +39,10 @@ jobs:
     env:
       D: computations/beyond_the_wall/r7729_70_dlk_build
       R7729_OUT: /tmp/r7729          # the `runner` context is not available in job-level env
+      # ⛭ r7731+70.2: C1 is the run against the CONTAINER's banks; across machines the adaptive solve differs in
+      #   its last bits (first run: 2.96e-8 lcdm, 4.93e-8 cr, while C2 held at 4e-16 on the same runner).
+      #   1e-6 keeps C1 a configuration check (a wrong configuration moves D_l by far more); recorded in closure.json.
+      C1_BAR: '1e-6'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
