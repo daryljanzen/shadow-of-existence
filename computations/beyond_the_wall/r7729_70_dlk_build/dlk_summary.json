@@ -1,0 +1,180 @@
+{
+ "C1_lcdm": {
+  "n_l": 30,
+  "max_rel": 4.440892098500626e-16,
+  "ok": true,
+  "n_modes": 250,
+  "n_slices": 11,
+  "nk_saved": 2547
+ },
+ "C1_cr": {
+  "n_l": 30,
+  "max_rel": 4.440892098500626e-16,
+  "ok": true,
+  "n_modes": 250,
+  "n_slices": 6,
+  "nk_saved": 1452
+ },
+ "C2_lcdm": {
+  "max_rel": 5.551115123125783e-16,
+  "ok": true
+ },
+ "C2_cr": {
+  "max_rel": 3.3306690738754696e-16,
+  "ok": true
+ },
+ "grid": {
+  "n_ladder": 1450,
+  "k_lo": 0.0009531793452739988,
+  "k_hi": 0.28290023347379184,
+  "n_l": 698,
+  "l_lo": 242,
+  "l_hi": 939,
+  "l_A": {
+   "lcdm": 301.54271387763947,
+   "cr": 302.9430505935752
+  },
+  "xs": {
+   "S_cr__K_cr": 1.0,
+   "S_cr__K_lcdm": 0.9872929344419445,
+   "S_lcdm__K_lcdm": 1.0,
+   "S_lcdm__K_cr": 1.0128706132848382,
+   "native_lcdm": 1.0
+  },
+  "nodes_per_bessel_period": 2.2847925104775926
+ },
+ "C3": {
+  "max_rel": 1.9627101554009485e-06,
+  "worst_l": 936,
+  "n_over_1e3": 0,
+  "ok": true
+ },
+ "C4": {
+  "max_rel": 3.552713678800501e-15,
+  "ok": true
+ },
+ "ok": true,
+ "blob": {
+  "path": "r7729_dlk_four.npz",
+  "bytes": 32507984,
+  "sha256": "5eed7ab4cc0710803be22cfe2c4785bed798159ba35a3c52195bbd86eb89ab39"
+ },
+ "arrays": {
+  "ls": [
+   [
+    698
+   ],
+   "int64"
+  ],
+  "k": [
+   [
+    1450
+   ],
+   "float64"
+  ],
+  "Dlk__S_cr__K_cr": [
+   [
+    698,
+    1450
+   ],
+   "float64"
+  ],
+  "Dlk__S_cr__K_lcdm": [
+   [
+    698,
+    1450
+   ],
+   "float64"
+  ],
+  "Dlk__S_lcdm__K_lcdm": [
+   [
+    698,
+    1450
+   ],
+   "float64"
+  ],
+  "Dlk__S_lcdm__K_cr": [
+   [
+    698,
+    1450
+   ],
+   "float64"
+  ],
+  "P__S_cr__K_cr": [
+   [
+    1450
+   ],
+   "float64"
+  ],
+  "P__S_cr__K_lcdm": [
+   [
+    1450
+   ],
+   "float64"
+  ],
+  "P__S_lcdm__K_lcdm": [
+   [
+    1450
+   ],
+   "float64"
+  ],
+  "P__S_lcdm__K_cr": [
+   [
+    1450
+   ],
+   "float64"
+  ],
+  "Dl__S_cr__K_cr": [
+   [
+    698
+   ],
+   "float64"
+  ],
+  "Dl__S_cr__K_lcdm": [
+   [
+    698
+   ],
+   "float64"
+  ],
+  "Dl__S_lcdm__K_lcdm": [
+   [
+    698
+   ],
+   "float64"
+  ],
+  "Dl__S_lcdm__K_cr": [
+   [
+    698
+   ],
+   "float64"
+  ],
+  "Dl__native_lcdm": [
+   [
+    698
+   ],
+   "float64"
+  ],
+  "k_native_lcdm": [
+   [
+    2547
+   ],
+   "float64"
+  ],
+  "meta": [
+   [],
+   "<U1121"
+  ]
+ },
+ "storage": {
+  "intended_ref": "refs/ci/r7729_dlk",
+  "local_commit": "7dcaf9845c07db1a598757a93efed4eef745efe3",
+  "blob_git_oid": "d2af91e9c68ab64be18ae05e4c81de0159f33935",
+  "pushed": false,
+  "why": "this seat can push only to its own branch; the refs/ci push is refused by the session git route"
+ },
+ "wall": {
+  "projection_s": 2756,
+  "workers": 4,
+  "core_h": 3.06
+ }
+}
