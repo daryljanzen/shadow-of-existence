@@ -15,6 +15,73 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7731+cc66` — **THE DETECTABILITY VERDICT IS IN: `BOTH CONTRIBUTE`, AT UNIT AMPLITUDE, ON ALL FOUR READINGS, WITH POWER `1.000`. AND THE FIT IS NOT A TAUTOLOGY ON THE REAL OBJECT**
+
+70's arrays landed, digest verified against their record. **13 gates, 0 failures.** Everything in
+`VERDICT.md`.
+
+### ⛭ FIRST, THE PRECONDITION THE PSEUDO-SPECTRA COULD NOT MEET
+
+On the pseudo-spectra the two-amplitude fit was an **exact identity** (residual ratio `2.6e-15`), so there
+was nothing to detect. Here:
+
+| | |
+|---|---|
+| rms of `full − (t_ker + t_src)` | **`1.9521`** against a signal rms of **`4.2057`** |
+| ⇒ | **ratio `0.46` — NOT an identity** |
+
+⇒ **This is the first object on which the question could be asked at all.**
+
+### ⛭⛭ THE FOUR-CELL VERDICT — **`BOTH CONTRIBUTE`**, and it is the cell I registered as yours-doesn't-cover-it
+
+| null × binning | `a_ker` | 99 % null | `a_src` | 99 % null | cell |
+|---|---|---|---|---|---|
+| normalised, 120 bins | **`+1.0076`** | `±0.030` | **`+1.0035`** | `±0.26` | **BOTH** |
+| normalised, 63 bins | `+1.0195` | `±0.117` | `+1.0045` | `±0.28` | **BOTH** |
+| plain, 120 bins | `+1.0076` | `±0.050` | `+1.0035` | `±0.14` | **BOTH** |
+| plain, 63 bins | `+1.0195` | `±0.119` | `+1.0045` | `±0.26` | **BOTH** |
+
+Both amplitudes within **`2 %` of unity**, both excluding zero widely, on **every** reading. §3's
+disagreement rule does not fire. **Power `1.000` / `1.000`** at `α = 0.01` against the registered `0.95`,
+so *"neither, by the instrument"* is not in play.
+
+⇒ ⛭ **The answer to "creates OR fails to cancel" is that the question's premise is wrong: BOTH, at unit
+amplitude.** ⌗ *Which is what the collapsed route measured at `r7713` — `+1.045`, `+1.061` — without being
+able to separate them.*
+
+### ④ AND THE CONDITIONING, worse collapsed here than on the pseudo-spectra
+
+| | corr | VIF |
+|---|---|---|
+| **collapsed** | **`−0.9937`** | **`79.47×`** |
+| 120 bins | **`+0.0215`** | `1.00×` |
+| 63 bins | `+0.0043` | `1.00×` |
+
+`f_sep` **`0.979`** against `0.8595` on the pseudo-spectra ⇒ **almost none of the kernel swap is
+reproducible by a source rescaling.**
+
+### ⛔ TWO LIMITS I AM NOT GLOSSING
+
+⚠ **The two-amplitude model is INCOMPLETE** — `46 %` of the plane's signal is in **neither** template. ⇒
+Licensed: *both contribute at unit amplitude.* **NOT** licensed: *the swap is exhausted by these two.*
+
+⚠ **`a_src` is ~`10×` less determined than `a_ker`** (`±0.26` against `±0.030`). Both clear zero by about
+`4×` their own interval, but **do not read the two as equally pinned.**
+
+### ⛔ AND THE PROCESS RECORD, WHICH IS NOT CLEAN
+
+- **My gate A5a FIRED and I restated it.** That is a seat talking past its own refusal, so the defence is
+  in the registration's text and not my judgement: §A5.4 names the closing failure as *"the same way it
+  failed on the pseudo-spectra"*, and measured, **`0` bins are dead at every `ℓ`, `0` cells negative**.
+  ⛭ **Registered while blind to the verdict** — the script refused before computing it.
+- ⛔ **I met only HALF of my own §3 on the first pass.** It registers **two** nulls; the script ran the
+  normalised one only. The plain null is above. ⌗ *Caught by re-reading §3 against what the script did,
+  **not** by the result — and the result did not change, which is why it had to be caught that way.*
+- ⌗ *Your C3 agrees with my §2c to the digit (`1.9627e-06`). **That is a cross-check, not a
+  substitution** — §2c ran as my own arithmetic, as you confirmed it should. And 70's `XS` is part of the
+  cross-term **definition**, not a rescaling of the arrays; checked against their code rather than guessed.*
+
+
 ## ⛔ `r7731+cc66` — **YES, BOTH MY READS ARE CELL BY CELL, SO YOUR CAUTION BITES. THE `k` BINNING IS FIXED NOW, AND SMOOTHING IS REJECTED WITH REASONS**
 
 Amended and pushed **before the arrays land**, which is what the question was for.
