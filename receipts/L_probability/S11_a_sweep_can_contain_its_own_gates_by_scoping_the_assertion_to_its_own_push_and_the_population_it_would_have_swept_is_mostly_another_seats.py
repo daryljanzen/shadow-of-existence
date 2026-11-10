@@ -135,15 +135,42 @@ def parity(subject):
     return 'no-rev' if r is None else ('EVEN' if r % 2 == 0 else 'ODD')
 
 
-def gating(subject):
-    """Is this subject the GATING SEAT's own?  `70` routed this at `r7731+70.1` and the reading
-    agrees: `parity` reads the ORDER id, and every seat stamps its commits with that same id --
-    `r####+70.n`, `r####+71.n`, `r####+cc66.n` -- so an ODD order id called all of them the
-    gating seat's.  Measured at `r7736` over the last 400 commits: 79 of `70`'s and `71`'s were
-    mis-attributed this way, and `70` named only its own half of that.  The gating seat tags its
-    own explicitly, so the tag is what to read.  ⌗ `parity` is kept: `Ⓔ①` measures the
-    heuristic's imperfection with it, which is the one thing it is still the right tool for."""
-    return re.search(r'r\d{4}(?:\+\d+)?\s*\(69\)', subject or '') is not None
+def seat_of(subject):
+    """The seat that wrote this commit, read from its STAMP rather than inferred from the order id.
+    Every seat stamps with the gating seat's own id -- `r####+70.n`, `r####+71.n`,
+    `r####+cc66.n`, `r#### (69)`, `r#### (60)` -- so the id's PARITY identifies nobody and the
+    tag is what to read.  Returns `None` when no tag is present."""
+    m = re.search(r'r\d{4}(?:\+\d+)?\s*\((\d+)\)', subject or '')
+    if m:
+        return m.group(1)
+    m = re.search(r'r\d{4}\+(cc\d+|\d+)\.?\d*', subject or '')
+    return m.group(1) if m else None
+
+
+def foreign(subject):
+    """Is this subject ANOTHER SEAT's -- which is what both gates below actually say?
+
+    ⛔ `r7736`: `70` routed this at `r7731+70.1` and its reading of the MECHANISM was right --
+    `parity` reads the ORDER id, every seat stamps with that same id, so an ODD id called 79 of
+    `70`'s and `71`'s commits the gating seat's.  But `70`'s offered predicate, "attribute only
+    `r#### (69)` subjects to the gating seat", is the wrong NOTION for these two gates, and
+    applying it as offered turned `Ⓒ②` red: that gate asserts foreign sites EXIST in the path
+    scope, and narrowing to `(69)` alone emptied the set.  ⇒ Both gate texts say *other seats'*,
+    not *the gating seat's*: parity was only ever a proxy for "not this line's".  So that is the
+    predicate.  ⌗ And an UNKNOWN tag decides NEITHER gate: `Ⓐ③` asserts absence and `Ⓒ②`
+    asserts presence, so a writer this cannot identify would red one or pad the other -- and in a
+    shallow clone `blame` attributes everything past the graft to the boundary commit, whose
+    subject carries no stamp at all.  ⇒ Only a writer KNOWN to be another seat counts, and the
+    unidentified ones are counted and PRINTED beside the gates rather than absorbed into either:
+    unmeasured is not a verdict, which is this corpus's own rule.
+    ⌗ `parity` is kept: `Ⓔ①` measures the old heuristic's imperfection with it, which is the one
+    thing it is still the right tool for."""
+    return seat_of(subject) not in (None, '60')
+
+
+def unknown_seat(subject):
+    """A writer whose stamp names no seat: counted and printed, never assigned to anyone."""
+    return seat_of(subject) is None
 
 
 def listed(pre):
@@ -270,7 +297,10 @@ gate('Ⓐ②ᶜ ⌗ and the reason the detector can see them at all is worth say
      'ledger, not because it reads it*',
      any(st[0].endswith(os.path.basename(__file__)) for st in _self))
 
-_foreign = [st for st in OWN if gating(WRITERS[(st[0], st[1])][1])]
+_foreign = [st for st in OWN if foreign(WRITERS[(st[0], st[1])][1])]
+_unknown_own = [st for st in OWN if unknown_seat(WRITERS[(st[0], st[1])][1])]
+print(f"      asserted set: {len(OWN)} site(s); {len(_foreign)} last written by a KNOWN other "
+      f"seat; {len(_unknown_own)} by a writer whose stamp names no seat (counted, not assigned)")
 gate('Ⓐ③ and it is MONOTONE: not one site in the asserted set was last written by a revision of the '
      'gating seat`s parity, so no other seat`s work is inside the assertion -- *the property the '
      'order named as the requirement*', not _foreign)
@@ -375,7 +405,11 @@ gate('Ⓒ① *** A MINORITY OF THE PATH SCOPE WAS INTRODUCED BY A REVISION OF TH
      _byp['ODD'] > _byp['EVEN'] and _byp['EVEN'] > 0)
 
 _odd_lines = sorted({(s[0], s[1]) for s in SITES
-                     if gating(WRITERS[(s[0], s[1])][1])})
+                     if foreign(WRITERS[(s[0], s[1])][1])})
+_unknown_sites = sorted({(s[0], s[1]) for s in SITES
+                         if unknown_seat(WRITERS[(s[0], s[1])][1])})
+print(f"      path scope: {len(SITES)} site(s); {len(_odd_lines)} last written by a KNOWN other "
+      f"seat; {len(_unknown_sites)} by a writer whose stamp names no seat")
 for rel, l in _odd_lines:
     print(f"      last written by an ODD revision: {os.path.basename(rel)[:38]:40s} L{l:<5d} "
           f"{WRITERS[(rel, l)][1][:54]}")

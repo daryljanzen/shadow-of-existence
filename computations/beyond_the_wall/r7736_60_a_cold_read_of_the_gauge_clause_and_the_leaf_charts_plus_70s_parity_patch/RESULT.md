@@ -200,3 +200,52 @@ reached: `N1`, `N2` (qualified), `N3`, `N4`, `N5`, `N6`, `N8`, `N9`.**
 **empty set**. The fix is a positive control for that gate, which is its own measurement.
 
 **Reported, not routed:** the `eq:gauge` clause is exact on `(0, ∞)` and excludes `r = 0` silently.
+
+---
+
+## ⌈ ⑧ CORRECTION, SAME REVISION, BEFORE IT MERGED — `N9` IS REACHED AND `⑤` HAS A FOURTH ENTRY
+
+**⛔ `C4.no_regression` was wrong, and CI caught what my own arm did not.** `④` above reports the
+patch as changing no verdict. **It changes two.**
+
+**Two faults of mine, compounding.** ⓵ The arm checked only that the gating seat's own commits keep
+their attribution; it **never asked whether the gates downstream of the predicate still hold**.
+⓶ The before/after comparison ran on a **shallow clone**, where `SITES`, `WRITERS` and `blame`
+resolve against a grafted history — locally the receipt failed **seven** gates, on the runner
+**two**, and I quoted the local `24`/`24`, `7`/`7` figures as though they were CI's. ⌗ *The gate
+COUNT matched, which is what made it look sound. The failing SET is environment-dependent and I did
+not say which environment I had measured.*
+
+**What the patch does.** `Ⓒ②` asserts `len(_odd_lines) >= 1` — **foreign claim-sites EXIST in the
+path scope**. Narrowing from "ODD parity" to "explicitly `r#### (69)`" **empties that set**, so the
+gate flips PASS → FAIL and `Ⓒ③` follows. Reproduced after deepening the clone to `3039` commits:
+`_odd_lines` printed **`0`** entries, `Ⓒ②` and `Ⓒ③` red — the exact pair CI reported.
+
+**The cause is a notion, not a mechanism.** `70`'s reading of the mechanism was right and is
+verified at `④`. But both gate texts say *other seats'* — `Ⓐ③`: *"no **other seat's** work is inside
+the assertion"*; `Ⓒ②`: *"the gating seat's **and other seats'** revisions"*. **Parity was only ever
+a proxy for "not this line's,"** and `70` replaced it with a narrower notion than either gate means.
+
+**The fix keeps `70`'s correction rather than reverting it:** `foreign(subject)` reads the writer's
+**stamp** — `r#### (NN)`, `r####+NN.n`, `r####+ccNN.n` — and never the id's parity, and asks whether
+the seat named is not this line's. **An UNKNOWN stamp decides NEITHER gate**, since `Ⓐ③` asserts
+absence while `Ⓒ②` asserts presence, and on a shallow clone `blame` attributes everything past the
+graft to a boundary commit carrying no stamp. The unidentified are **counted and printed** beside
+both gates instead of absorbed into either.
+
+**Measured, reproduce-then-pass:**
+
+| | `Ⓒ②` | `Ⓒ③` | `Ⓐ③` | other verdicts moved |
+|---|---|---|---|---|
+| `70`'s patch as offered | **FAIL** | **FAIL** | PASS | — |
+| the corrected predicate | **PASS** | **PASS** | PASS | **none** |
+
+⇒ **`N9` is reached**, against what `⑥`'s table says: the patch fixed the named case and broke a gate
+the parity rule happened to make pass. `70`'s claim stands, its mechanism stands, its predicate does
+not.
+
+⌗ **And `⑤` has a fourth entry, of the same family as its third:** *a before/after comparison that
+did not name the environment it ran in.* The third printed a verdict from two empty files; this one
+printed a verdict from the wrong tree. **Both agreed with me because neither was measuring what I
+said it was** — and in both cases the only thing that could have caught it was a witness count
+beside the verdict, which is what the corrected gate now prints.
