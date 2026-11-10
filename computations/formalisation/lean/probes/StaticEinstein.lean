@@ -814,6 +814,53 @@ theorem es_sds_witness :
     (by simp [ok_sds]; norm_num) (by simp)
   exact ⟨h.2.1, h.2.2.2.1⟩
 
+/-- The hypotheses of `es_construction_gauge` at a point of an interval where `f` is twice differentiable,
+non-zero, and `r > 0`. -/
+lemma es_hyp_of_interval {a b : ℝ} (ha : 0 ≤ a) {f : ℝ → ℝ} (hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)
+    (hf2 : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r) (hf0 : ∀ r ∈ Ioo a b, f r ≠ 0) {x : Fin 4 → ℝ}
+    (hx : x 1 ∈ Ioo a b) (hs : Real.sin (x 2) ≠ 0) : es_Hyp f f x (deriv (deriv f) (x 1)) where
+  hA := hf0 _ hx
+  hF := hf0 _ hx
+  hr := (lt_of_le_of_lt ha hx.1).ne'
+  hs := hs
+  hAd := hf _ hx
+  hFd := Filter.eventually_of_mem (isOpen_Ioo.mem_nhds hx) hf
+  hA2 := (hf2 _ hx).hasDerivAt
+
+/-- **`thm:kernel`'s `T_{μν} = 0`, as one statement.** On `(a, b)` with `0 ≤ a`, `f` twice differentiable and
+`f ≠ 0`: all sixteen components `G^μ_ν + Λδ^μ_ν` of the metric `diag(−f, 1/f, r², r² sin²θ)` vanish at every
+point with `r ∈ (a, b)` and `sin θ ≠ 0` ⟺ `rf′ + f − 1 + Λr² = 0` on `(a, b)`. `es_sds_vacuum_full` is the SdS
+instance. -/
+theorem es_kernel_join {Λ a b : ℝ} (ha : 0 ≤ a) {f : ℝ → ℝ} (hf : ∀ r ∈ Ioo a b, DifferentiableAt ℝ f r)
+    (hf2 : ∀ r ∈ Ioo a b, DifferentiableAt ℝ (deriv f) r) (hf0 : ∀ r ∈ Ioo a b, f r ≠ 0) :
+    (∀ x : Fin 4 → ℝ, x 1 ∈ Ioo a b → Real.sin (x 2) ≠ 0 →
+        ∀ μ ν, es_G (es_g f f) x μ ν + (if μ = ν then Λ else 0) = 0) ↔
+      ∀ r ∈ Ioo a b, ok_ode Λ f r = 0 := by
+  rw [← ok_vacuum_iff_ode ha hf]
+  constructor
+  · intro h r hr
+    have hx : (![0, r, π / 2, 0] : Fin 4 → ℝ) 1 ∈ Ioo a b := by simpa using hr
+    have hs : Real.sin ((![0, r, π / 2, 0] : Fin 4 → ℝ) 2) ≠ 0 := by simp
+    obtain ⟨g0, -, g2, -⟩ := es_construction_gauge (es_hyp_of_interval ha hf hf2 hf0 hx hs)
+    have h0 := h _ hx hs 0 0
+    have h2 := h _ hx hs 2 2
+    simp only [↓reduceIte] at h0 h2
+    rw [g0] at h0; rw [g2] at h2
+    simp only [Matrix.cons_val_one] at h0 h2
+    exact ⟨h0, h2⟩
+  · intro h x hx hs μ ν
+    have H := es_hyp_of_interval ha hf hf2 hf0 hx hs
+    obtain ⟨g0, g1, g2, g3⟩ := es_construction_gauge H
+    obtain ⟨t0, t2⟩ := h _ hx
+    by_cases hμν : μ = ν
+    · subst hμν; simp only [↓reduceIte]
+      rcases (show μ = 0 ∨ μ = 1 ∨ μ = 2 ∨ μ = 3 by fin_cases μ <;> simp) with rfl | rfl | rfl | rfl
+      · rw [g0]; exact t0
+      · rw [g1, g0]; exact t0
+      · rw [g2]; exact t2
+      · rw [g3, g2]; exact t2
+    · simp only [hμν, ↓reduceIte, add_zero, es_G_offdiag H μ ν hμν]
+
 end EsStatic
 
 section RgRadial
@@ -1167,14 +1214,14 @@ theorem lf_S3_pull (c R : ℝ) : lf_pull (lf_S3 c R) = lf_g R Real.sin := by
 /-- **Row 5a.** The closed leaf `X₀ = c` is a round `S³` of curvature `+1/(α² + c²)`: its induced metric has
 `R_{abcd} = (1/(α² + c²))(g_ac g_bd − g_ad g_bc)`. -/
 theorem lf_closed {α c R : ℝ} (hR0 : R ≠ 0) (hR : R ^ 2 = α ^ 2 + c ^ 2) {x : Fin 3 → ℝ}
-    (h0 : Real.sin (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (a b e d : Fin 3) :
-    kr_Rlow (lf_pull (lf_S3 c R)) x a b e d = 1 / (α ^ 2 + c ^ 2) *
-      (lf_pull (lf_S3 c R) x a e * lf_pull (lf_S3 c R) x b d -
-        lf_pull (lf_S3 c R) x a d * lf_pull (lf_S3 c R) x b e) := by
+    (h0 : Real.sin (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (i j k l : Fin 3) :
+    kr_Rlow (lf_pull (lf_S3 c R)) x i j k l = 1 / (α ^ 2 + c ^ 2) *
+      (lf_pull (lf_S3 c R) x i k * lf_pull (lf_S3 c R) x j l -
+        lf_pull (lf_S3 c R) x i l * lf_pull (lf_S3 c R) x j k) := by
   rw [lf_S3_pull, ← hR, show (1 : ℝ) / R ^ 2 = 1 / R ^ 2 from rfl]
   have := lf_curv (R := R) (k := 1) (S := Real.sin) (D := Real.cos) (x := x)
     ⟨Real.hasDerivAt_sin, fun t => by simpa using Real.hasDerivAt_cos t,
-      by rw [one_mul]; exact Real.cos_sq_add_sin_sq _, hR0, h0, h1⟩ a b e d
+      by rw [one_mul]; exact Real.cos_sq_add_sin_sq _, hR0, h0, h1⟩ i j k l
   exact this
 
 /-- **Row 5c, the set.** On the hyperboloid, `X₁ = b` gives `X₀² − (X₂² + X₃² + X₄²) = b² − α²`; beyond the
@@ -1206,14 +1253,14 @@ theorem lf_H3_pull (b A : ℝ) : lf_pull (lf_H3 b A) = lf_g A Real.sinh := by
 /-- **Row 5c.** The open leaf `X₁ = b > α` is `H³` of curvature `−1/(b² − α²)`: its induced metric has
 `R_{abcd} = (−1/(b² − α²))(g_ac g_bd − g_ad g_bc)`. -/
 theorem lf_open {α b A : ℝ} (hA0 : A ≠ 0) (hA : A ^ 2 = b ^ 2 - α ^ 2) {x : Fin 3 → ℝ}
-    (h0 : Real.sinh (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (a c e d : Fin 3) :
-    kr_Rlow (lf_pull (lf_H3 b A)) x a c e d = -1 / (b ^ 2 - α ^ 2) *
-      (lf_pull (lf_H3 b A) x a e * lf_pull (lf_H3 b A) x c d -
-        lf_pull (lf_H3 b A) x a d * lf_pull (lf_H3 b A) x c e) := by
+    (h0 : Real.sinh (x 0) ≠ 0) (h1 : Real.sin (x 1) ≠ 0) (i j k l : Fin 3) :
+    kr_Rlow (lf_pull (lf_H3 b A)) x i j k l = -1 / (b ^ 2 - α ^ 2) *
+      (lf_pull (lf_H3 b A) x i k * lf_pull (lf_H3 b A) x j l -
+        lf_pull (lf_H3 b A) x i l * lf_pull (lf_H3 b A) x j k) := by
   rw [lf_H3_pull, ← hA]
   exact lf_curv (R := A) (k := -1) (S := Real.sinh) (D := Real.cosh) (x := x)
     ⟨Real.hasDerivAt_sinh, fun t => by simpa using Real.hasDerivAt_cosh t,
-      by rw [Real.cosh_sq]; ring, hA0, h0, h1⟩ a c e d
+      by rw [Real.cosh_sq]; ring, hA0, h0, h1⟩ i j k l
 
 /-- The null direction `B = (1, 1, 0, 0, 0)` and the bilinear form `η(X, Y)`. -/
 def lf_B : Fin 5 → ℝ := ![1, 1, 0, 0, 0]
@@ -1278,9 +1325,10 @@ theorem lf_flat (α s : ℝ) (x : Fin 3 → ℝ) (a b c d : Fin 3) :
     intro y a b c; simp [kr_Γ, kr_pd_const]
   simp [kr_Riem, hΓ, kr_pd_const]
 
-/-- **Non-vacuity.** At `χ = θ = π/2` the closed leaf of `α = 1`, `c = 0` has sectional curvature `+1`
-(`R_{0101} = 1`); at `ρ = 1`, `θ = π/2` the open leaf of `α = 1`, `b = √2` has `R_{0101} = −sinh²1 ≠ 0`; and
-the flat chart of `α = s = 1` puts the origin on its leaf. -/
+/-- **Non-vacuity, in one sense: each leaf's curvature takes a stated value at a concrete point of a non-empty
+chart.** At `χ = θ = π/2` the closed leaf of `α = 1`, `c = 0` has `R_{0101} = 1`; at `ρ = 1`, `θ = π/2` the open
+leaf of `α = 1`, `b = √2` has `R_{0101} = −sinh²1 ≠ 0`; the flat leaf's value is `0` at every point (`lf_flat`),
+and the flat chart of `α = s = 1` puts the origin on its leaf, so that chart is non-empty. -/
 theorem lf_witness :
     kr_Rlow (lf_pull (lf_S3 0 1)) ![π / 2, π / 2, 0] 0 1 0 1 = 1 ∧
       kr_Rlow (lf_pull (lf_H3 (Real.sqrt 2) 1)) ![1, π / 2, 0] 0 1 0 1 = -Real.sinh 1 ^ 2 ∧
@@ -1356,3 +1404,5 @@ end ShadowProbe.StaticEinsteinProbe
 #print axioms ShadowProbe.StaticEinsteinProbe.lf_horo_pull
 #print axioms ShadowProbe.StaticEinsteinProbe.lf_flat
 #print axioms ShadowProbe.StaticEinsteinProbe.lf_witness
+#print axioms ShadowProbe.StaticEinsteinProbe.es_hyp_of_interval
+#print axioms ShadowProbe.StaticEinsteinProbe.es_kernel_join
