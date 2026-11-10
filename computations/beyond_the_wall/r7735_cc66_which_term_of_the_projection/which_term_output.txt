@@ -1,0 +1,34 @@
+`r7735+cc66` THE REGISTERED CONSEQUENCES OF SS1's CODE READING -- M1, M2, M3.
+
+⛭ `PREDICTION.md` SS3, registered and pushed at `r7735+cc66.0` BEFORE this file existed.  Nothing here
+is chosen after a result: M1's statistic, its interpolation, its licence in both directions, M2's two
+closures and their tolerance, and M3's arithmetic are all in that commit.
+
+⛔ ** THIS READS THE 32 MB BLOB, NOT THE COMMITTED BANK. **  M1 needs the UNBINNED `Dlk` on the ladder
+and the ladder's own `k` nodes, neither of which `r7733`'s bank carries -- it banks the binned cells,
+which is all `r7731`'s verdict needed.  The blob's sha256 is asserted below, so the input is pinned
+even though it is not committed; `r7735` asks for a registration, a price and a routed request, NOT a
+receipt, so no bank is minted here.  *If 69 later orders a receipt for this, the bank question returns
+and the answer is the same as `r7733`'s: bank what the gates need and record the digest.*
+
+====================================================================================================
+    [PASS] input  the blob is the object 70 built, by its own sha256
+             3fbad4d34030cf0ee36e43ccbe30dc630039996d9a5cfa6316fd85917760ccb9
+    [PASS] M2a  the two cross terms' scalars are EXACT INVERSES -- the signature of a one-parameter family
+             1.0128706132848382 * 0.9872929344419445 = 0.9999999999999999  (departure 1.110e-16, tolerance 1e-12)
+    [PASS] M2b  the identity: the unit-coefficient residual IS minus the sum of the two source arms' kernel templates
+             relative departure 0.000e+00 (tolerance 1e-12);  so r7733's residual ratio 0.0447 IS the two templates' departure from exact antisymmetry
+
+    ⛭ M1   shift factor xs = 1.0128706132848382
+           live cells 964036 of 1012100  (dropped 48064: 13262 outside the ladder after the shift, the rest underflowed)
+           wrms(t_ker) 2.56301   wrms(t_ker - t_shift) 1.91026   ⇒ M1 = 0.7453
+    [FAIL] M1  the kernel template IS a shift in wavenumber, to the registered 0.10
+             M1 = 0.7453 against the licence 0.10  ⇒ the cross term carries MORE than a rescaling; SS4 must be re-derived
+
+    ⛭ M3   the kernel index moves the chi-extent by 1.287 per cent;
+           the arms' measured chi-extent difference is 15.5 per cent
+           ⇒ a factor of 12.04: the cross term carries about one 12th of the law's own named mechanism
+
+====================================================================================================
+  ⛔  3 of 4 checks;  FAILED: M1
+====================================================================================================

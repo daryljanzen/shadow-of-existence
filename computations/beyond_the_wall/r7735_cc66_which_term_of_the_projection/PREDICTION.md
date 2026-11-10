@@ -151,3 +151,65 @@ which named term.**  Routed to 70 in `FOR_66.md`, not held for 69.
   definition and `r7731` already recorded that it is a definition and not a post-hoc rescaling.  What
   is new is that a definition with one parameter cannot carry a split into three named terms.
 * It makes no claim about `A_l` on any arm, which needs Tier 2.
+
+---
+
+# ⛔⛔ AMENDMENT 1 (`r7735+cc66.1`) — **`M1` FAILED ITS OWN LICENCE AT `0.7453`, SO §3's CHARACTERISATION IS WITHDRAWN AND THE REPLACEMENT IS REGISTERED HERE BEFORE IT IS RUN**
+
+**The measured values**, from `which_term_output.txt`:
+
+| | |
+|---|---|
+| `M2a` the two scalars' product | `0.9999999999999999`, departure `1.11e-16` ⇒ **exact inverses** |
+| `M2b` the identity | relative departure **exactly `0`** ⇒ `r7733`'s residual IS the two kernel templates' departure from antisymmetry |
+| `M3` | the kernel index moves the `chi`-extent by `1.287` per cent against the arms' `15.5` ⇒ **a factor of `12.04`** |
+| **`M1`** | `wrms(t_ker)` `2.56301`, `wrms(t_ker - t_shift)` `1.91026` ⇒ **`M1 = 0.7453`**, against a licence of `0.10` |
+
+⇒ *** §3 registered that `M1 > 0.10` means "the cross term carries something a pure rescaling does
+not, and §4 has to be re-derived rather than reported". IT DOES. The characterisation "the projection's
+contribution IS the distance acting through the multipole-wavenumber mapping" IS WITHDRAWN. ***
+
+## A1.1 ⛭ WHY IT FAILED, AND THE PREMISE THAT WAS WRONG WAS NAMED IN §3 AS THE RISK
+
+`M1`'s model reads the diagonal transfer at `xs k`, which puts **the source AND the Bessel factor** at
+`xs k`.  The real cross term holds **the source at `k`** and scales only the Bessel argument.  §3 said
+in advance: *"the comb's own period in `k` is of order the shift, so this is not expected to be tiny by
+construction"*.  ⇒ **The failure is the source's comb being moved by a model that should not have moved
+it**, and it is the registered risk firing rather than a surprise.
+
+⌗ *What survives untouched is §1, which is a CODE READING and not a consequence of `M1`: the kernel
+index is still one scalar, and §4's price and routing rest on §1 alone.  What is withdrawn is the
+CHARACTERISATION of how that scalar acts.*
+
+## A1.2 THE REPLACEMENTS, REGISTERED BLIND — `M1b` AND `M4`
+
+**`M1b` — the same statistic at the resolution §3's own words name.**  §3 said *"on the primary
+binning's live cells"* and then wrote the formula over ladder nodes, which only has meaning unbinned.
+⛔ *That is a mismatch in my own registration and it is stated rather than resolved silently.*  Both
+readings are therefore reported, and neither is chosen:
+```
+    M_pred(l,k) = P(k) * Dlk(S_lcdm,K_lcdm)(l, xs k)^2      (the SOURCE arm's P, as the cross term's is)
+    M1b = wrms( t_ker_binned - [log binned M_pred - log binned M0] ) / wrms( t_ker_binned )
+```
+  * **Licence `0.10`**, the same as `M1`'s, because it is the same claim at the other resolution.
+
+**`M4` — the shift that holds the source still.**  Scaling `chi` by `xs` at fixed `k` moves where the
+Bessel factor peaks in multipole, not where the source's comb sits in `k`.  So the one-parameter
+picture that respects §1 is a shift in **multipole**:
+```
+    t_lshift(l,k) = 2 [ log|Dlk(S_lcdm,K_lcdm)|(l / xs, k) - log|Dlk(S_lcdm,K_lcdm)|(l, k) ]
+    M4  = wrms( t_ker - t_lshift ) / wrms( t_ker )
+```
+read by **cubic spline in `l` per `k` column**, declared here; rows whose shifted multipole leaves the
+window `[242, 939]` are **dropped and counted**.  Reported unbinned and binned, as for `M1`.
+  * ⇒ **`M4 <= 0.30`** licenses: *the kernel leg acts by sliding the kernel's multipole-wavenumber
+    mapping against the source's comb — the distance, and nothing else.*
+  * ⇒ **`M4 > 0.30`** licenses nothing: **neither one-parameter picture describes the cross term on
+    these arrays, and the characterisation is left OPEN pending Tier 1**, which is the honest outcome
+    and is registered as an outcome rather than a failure to avoid.
+  * ⚠ `0.30` and not `0.10`: a shift in multipole also slides the envelope's own multipole dependence,
+    so an exact reproduction is not expected.  **The number is set before the run and is not moved
+    after it.**
+
+⌗ *`M4` is a statistic chosen AFTER seeing `M1` fail.  That is why it is written here, in its own
+commit, pushed before it is computed — and why its licence is a number rather than a reading.*
