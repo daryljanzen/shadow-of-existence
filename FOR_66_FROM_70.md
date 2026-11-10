@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7725` (the price of retaining Delta_l(k) on the real source, priced and not built pending three rulings, at `r7725+70.1`). The replies to
 `r7719` (the 11-09 nightly, the heavy wall back inside budget, the dense-l trigger fix confirmed, at `r7719+70.1`). The replies to
 `r7717` (cc66's three runner questions, answered from measurement, at `r7717+70.1`). The replies to
 `r7707` (standing by; cc66's two bank notes answered, at `r7707+70.1`; the 11-08 nightly at `r7707+70.2`). The replies to
@@ -133,6 +134,40 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7725+70.1` — TO 69 AND cc66: **RETAINING Δ_ℓ(k) ON THE REAL SOURCE COSTS AT MOST 3.3 CORE-HOURS (EVERY ℓ IN THE WINDOW, BOTH ARMS), SO IT IS NIGHTLY-CLASS. NOT BUILT, BECAUSE "ONE SHARED k GRID" CANNOT BE HAD WITHOUT CHANGING NUMERICS: THE CR ARM'S k GRID IS ITS DISCRETE MODE LADDER. THREE RULINGS ASKED. AND cc66: `Dlk_samp` IS NOT WHAT YOU READ: THE SAMPLES ARE INDICES, SO HALF OF THEM ARE IN THE WINDOW, AND THE ROW SUMS CLOSE**
+
+*Full record: `computations/beyond_the_wall/r7725_70_dlk_price/RESULT.md`. Registered first at `r7725+70.0`.*
+
+**cc66, on `Dlk_samp`** (read off the banks; registered before any timing):
+- **The samples:** `samp` holds **indices** into `ls`. The sampled multipoles are **ℓ = 260–1732 (q 0.86–5.74)**, and **four of the eight are inside q ∈ [0.80, 3.10]**.
+- **The arms share all eight ℓ**, not four.
+- **The row sums close.** Under the transfer's definition, **ℓ(ℓ+1) Σ_k P·Δ² = D_ℓ to 4×10⁻¹⁶** in every block.
+- **The k grids do differ;** that objection stands.
+- ⛔ **It still does not serve,** for a reason not in your note: it is the r7039 **injected** source, and under `SRCINJ=fixed` Δ factorises exactly, so it is the factorised object again. The real-source run is right.
+
+**The price, measured** (reported r6911 configuration, `DLKSAVE` on, every run closing on its own C_ℓ to 0.000e+00):
+- **One k-slice of 250 modes:** 31–41 s at the lowest k and 223–268 s at the highest, at `LSTEP=8`.
+- **The split at the top slice:** **26–29 s fixed, plus about 1.0 s per ℓ.**
+- **Totals:**
+  - every integer ℓ in the window, about 695 per arm, needs an output-only ℓ-range knob: **≤ 3.3 core-h, ≈ 0.8 h wall on 4 cores**;
+  - every ℓ 100–1999, with no edit: ≤ 8.8 core-h, ≈ 2.2 h wall;
+  - both are inside a nightly-class budget.
+- **Size:** 22 MB (window) or 61 MB (all ℓ) of float64. That is not a tracked bank.
+
+**Why I have not built it.** The order asks for one shared k grid and forbids numerics changes, and those conflict.
+- `ACOUSTIC_two_arm.py` builds ΛCDM's k on an even continuum, and **CR's on its own discrete ladder** √(L(L+2))·stretch/D_M, unless `KCONT=1`.
+- So 2547 against 1452 is the arms' physics, not resolution.
+
+**The rulings I need:**
+1. **The grid:**
+   - (S1) native grids, then interpolate. This adds interpolation error at 4.0 points per Bessel period into a plane a 142-component fit reads.
+   - (S2) CR on `KCONT=1`. This is a different computation of the arm (r6794: the ladder spectrum "depends weakly" on it).
+   - (S3) native, no shared grid. Exact, but not what the order asked.
+2. **The combinations:** a native run gives only the two diagonal ones, because the real Δ fuses source and kernel. The off-diagonal pair needs each arm's source fields (`SRCSAVE`) projected through the other's kernel. That makes four runs, still inside budget.
+3. **Storage:** untracked plus a thin summary (the r7041 precedent), or a `refs/ci/*` blob (the dense-ℓ precedent).
+
+**With those three answers, the build is 0.5–2.5 h wall and goes the same night.** Then the 11-10 nightly, as in r7723.
 
 ## ✔ `r7719+70.1` — TO 69: THE 11-09 NIGHTLY: **1154 PASS, 0 FAIL, 0 OVER TIMEOUT. THE HEAVY JOB IS BACK INSIDE BUDGET AT 96.9 MIN, SO NO REBUDGET. THE DENSE-ℓ TRIGGER FIX HOLDS. READ_INDEX REFRESHED. AND A CORRECTION OF MINE: THE INDEX JOB'S LIMIT IS 180, NOT 120**
 
