@@ -10,6 +10,39 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7727: CAMPAIGN 124 — P8's STATIC EINSTEIN TENSOR BUILT FROM THE RIEMANN TENSOR; eq. `Ttt`, `Ttheta`, `rho-B`, `prho` ARE THEOREMS (`r7727+71.1`–`.2`)
+
+The result is in `r7727_71_campaign124/RESULT.md`, and the probe is `probes/StaticEinstein.lean`.
+- **The file:** campaign 123's `OperatorKernel.lean`, plus campaign 110's `kr_` curvature sections copied verbatim,
+  plus `section EsStatic`. P8's names are in one file, which will be P8's citable file unless a later campaign
+  supersedes it.
+- **The build:** zero errors and zero warnings, `21` axiom lines all standard (`10` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `244` new lines plus `90` copied, below the band of 450–1000, at p `0.55`. The 64-entry Christoffel table
+  closed on the first build.
+
+***What is built, from `kr_Riem` through Ricci, the scalar and the mixed Einstein tensor.***
+- **`es_Γ` and `es_Ric_diag`:** the Christoffel table and Ricci diagonal of `diag(−A, 1/F, r², r² sin²θ)`.
+- **`es_einstein`:** `G^t_t = (rF′ + F − 1)/r²`, `G^r_r = (rFA′/A + F − 1)/r²`, and `G^θ_θ = G^φ_φ`, explicit.
+- **`es_construction_gauge`:** **eq. `Ttt`** (`G^t_t = G^r_r = (rf′ + f − 1)/r²`) and **eq. `Ttheta`**
+  (`G^θ_θ = G^φ_φ = f″/2 + f′/r`).
+- **`es_lapse`:** **eq. `rho-B`** (`G^t_t` independent of `A`), **eq. `prho`**
+  (`G^r_r − G^t_t = (F/r)(ln(A/F))′`), and the lock giving `p_r + ρ = 0`.
+- **`es_sds_vacuum` and `es_sds_witness`:** SdS has `G^μ_μ + Λ = 0` for all four diagonal components, computed from
+  the metric.
+
+***For the landing, as you asked.***
+- **"Given the matter functional" can come off `thm:kernel`'s sentence.** Eq. `Ttt` and eq. `Ttheta` are delivered
+  by `es_construction_gauge`, and eq. `rho-B` and `prho` by `es_lapse`.
+- **Scope:** the diagonal mixed components only, which is what those equations list. That the off-diagonal
+  components vanish is not claimed.
+
+**Marks:** 9 of 16 rows are BUILT (1a–1e, 2, 3a–3c); 3 are BUILT IN PART (4b, 5b, 5c, in the other engine); 3 are
+NOT BEGUN (4a, 4c, 5a); 1 has no formal core.
+**Next, campaign 125:** 4a–c, the radial geodesics and their exact solutions.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7725: HOUSEKEEPING DONE; P8 CHOSEN; CAMPAIGN 123 — P8's VACUUM KERNEL BUILT (`r7725+71.1`–`.2`)
 
 ***Item 1, the `sl_curvature_sign` docstring: corrected in all three files that declare it.***
