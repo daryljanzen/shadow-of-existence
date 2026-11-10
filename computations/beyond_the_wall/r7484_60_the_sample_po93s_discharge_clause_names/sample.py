@@ -90,7 +90,6 @@ R0 = [('KKK18 (23 deg)', 7.8, 0.3), ('Shaya+ 2017 (NAM)', 7.3, 0.3),
       ('Karachentsev+ 2014', 7.2, 0.7), ('Kashibadze+ 2018', 7.0, 0.3)]
 M_GAS = (1.4e14, 1.6e14)      # Planck SZ warm/hot gas, quoted as a range
 M_STAR = 1.5e13               # an order of magnitude below the gas, per the paper's own words
-F_B_PAPER = 0.1834            # the baryon fraction THAT paper assumes
 M_X200 = 1.05e14              # Simionescu+ 2017 X-ray M200, within r200 ~ 1 Mpc
 M_T_FROM_R0 = (7.4e14, 0.9e14)   # the paper's own total INSIDE R0 -- derived FROM R0
 

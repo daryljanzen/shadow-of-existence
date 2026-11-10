@@ -1,0 +1,24 @@
+r7732 (60) -- the tree measured, named before the measurement and recorded after it.
+
+HEAD at measurement : 76606c95f360cd1ae78eff1ba5d2076517527338
+origin/main         : 2b21f12f09255831d8a9dfb31794836aadc964d0
+branch              : claude/shadow-of-existence-setup-6awafl
+
+The files read, each located in the probe BY ITS TEXT and never by a line number:
+
+  82fbc52d65b9     614 lines  corpus/slicing_operator.tex
+  3eefd991b0a0    1341 lines  corpus/SdS-slicing-curve_v2.tex
+  d980567777c8     584 lines  computations/formalisation/lean/probes/StaticEinstein.lean
+  311ae161f721     223 lines  computations/formalisation/lean/probes/OperatorKernel.lean
+  a9b05dcabcfc     282 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/sample.py
+  e173097d665d     150 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/run.txt
+  a8dccd301284     159 lines  computations/beyond_the_wall/r7484_60_the_sample_po93s_discharge_clause_names/RESULT.md
+
+  the probe itself:
+  d4d097d77cc7 619 lines  computations/beyond_the_wall/r7732_60_a_cold_read_of_p8s_new_formal_sentences_the_diagonal_narrowing_and_the_two_p3_edits/probe.py
+  28bea52cdd3c 152 lines  computations/beyond_the_wall/r7732_60_a_cold_read_of_p8s_new_formal_sentences_the_diagonal_narrowing_and_the_two_p3_edits/PREDICTION.md  <- registered and PUSHED at 76606c95, before probe.py existed
+
+  and all 151 Lean probe files under computations/formalisation/lean/probes/ were enumerated
+  for the citation arms; the two the citations touch are digested above.
+
+  sympy 1.14.0 carried the symbolic Einstein-tensor computation of arm A3.

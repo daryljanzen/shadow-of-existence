@@ -1,0 +1,160 @@
+
+========================================================================================================
+  A -- P8's NEW FORMAL SENTENCES AND THE DIAGONAL NARROWING
+========================================================================================================
+
+  A1  located by TEXT in the paper -- the order is a REPORT about it, never a substitute
+  PASS      A1.anchor                1x raw, 1x flat  <- 'Both components are machine-checked, computed from the met'
+  PASS      A1.anchor                1x raw, 1x flat  <- 'every diagonal component of $\\Tud{\\mu}{\\nu}$ vanishes if a'
+  PASS      A1.anchor                1x raw, 1x flat  <- 'that the off-diagonal components vanish is not formalised'
+  PASS      A1.order_abbrev          the order's quotation omits the file-path parenthetical the sentence actually carries: '(\\texttt{es\\_construction\\_gauge}, in \\texttt{computations/.../StaticEinstein.lean})'
+  PASS      A1.given_gone            "Given the matter functional" is GONE from P8 -- the conditional my r7730 ② judged honest has been removed rather than repaired, so that answer is superseded by the landing
+  PASS      A1.closing               and the closing clause now names ONLY the index constancy: the matter functional has come OFF the unformalised list
+
+  A2  THE ORDER'S QUESTION: the two quantifiers read side by side
+  PASS      A2.theorem               thm:kernel itself: 'In the construction gauge \\eqref{eq:gauge}, $T_{\\mu\\nu}=0$ holds if and only if $f$ satisfies th'
+  PASS      A2.formal                the formal sentence (922 chars, bounded by its own line and not by a count): 'The theorem is machine-checked in Lean, with \\eqref{eq:Ttt}--\\eqref{eq:Ttheta} computed from the metric '
+  PASS      A2.wider                 and the wider claim stands at 4 places in P8, the theorem statement, its proof and rem:byWhat among them -- so the narrowing is NOT a retreat from it but a statement of what was checked
+  PASS      A2.named_gap             and the gap between them is named IN THE PAPER, in the sentence that introduces the computation -- not left for a reader to notice
+
+  A3  ⚠ THE REGISTERED SUBTLE PART: do the off-diagonals vanish IDENTICALLY, or only on the solutions?
+  PASS      A3.metric_read           the metric is READ from es_g and not assumed: 'diag(-A(r), 1/F(r), r^2, r^2 kr_s2(theta))'
+  PASS      A3.offdiag_identically   all 12 off-diagonal components of the MIXED Einstein tensor vanish for a GENERAL A(r) and F(r) -- no field equation used, no solution family, no gauge lock: none non-zero
+      witness, every off-diagonal printed:
+        G^t_r = 0
+        G^t_θ = 0
+        G^t_φ = 0
+        G^r_t = 0
+        G^r_θ = 0
+        G^r_φ = 0
+        G^θ_t = 0
+        G^θ_r = 0
+        G^θ_φ = 0
+        G^φ_t = 0
+        G^φ_r = 0
+        G^φ_θ = 0
+  PASS      A3.negative_control      and the reader is given a NEGATIVE first: adding one off-diagonal metric entry B(r) makes Ric[t][r] non-zero, so the zeros above are the metric's and not the instrument's (Ric[t][r] has 7 terms)
+
+  A4  "in all four diagonal components" -- how many does es_sds_vacuum quantify over?
+  PASS      A4.four                  4 distinct diagonal slots in the conclusion: [('0', '0'), ('1', '1'), ('2', '2'), ('3', '3')]
+  PASS      A4.plusLambda            each as `+ Lambda = 0`, 4 times -- which is the vacuum the sentence claims, not merely a value
+  PASS      A4.witness               and a concrete point is exhibited (es_sds_witness), so the quantifier is not vacuous: ': es_G (es_g (ok_sds (3 / 100) 1) (ok_sds (3 / 100) 1)) ![0, 4, π / 2, 0] 0 0 + 3 / 100 '
+
+  A5  "computed from the metric's own Riemann tensor through its Ricci tensor and scalar"
+  PASS      A5.chain                 es_G is defined through es_Ric: 'noncomputable def es_G (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) (b c : F'
+  PASS      A5.chain                 es_Ric is defined through kr_Riem: 'noncomputable def es_Ric (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) (b d :'
+  PASS      A5.chain                 kr_Riem is defined through kr_pd: 'noncomputable def kr_Riem (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ) (a b '
+  PASS      A5.chain                 kr_Riem is defined through kr_Γ: 'noncomputable def kr_Riem (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ) (a b '
+  PASS      A5.scalar                the scalar curvature is contracted from the Ricci tensor, not supplied: 'noncomputable def es_scal (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) : ℝ := ∑ b, ∑ d, (g x)⁻¹ b d * es_Ric g x d b'
+  PASS      A5.row1a                 and the file's own header says so: '* **Row 1a — BUILT.** `es_Γ`, `es_Ric_diag`, `es_einstein`; the construction gauge `es_construction_gauge`'
+  PASS      A5.crosscheck            ⚭ and es_einstein's three stated closed forms are reproduced EXACTLY by an independent symbolic computation: residuals 0, 0, 0 -- so the declaration is checked against arithmetic and not only read
+  PASS      A5.supersedes            ⇒ row 1a IS built, so my r7730 ② -- which judged "Given the matter functional" honest BECAUSE nothing took the Einstein tensor as input -- is superseded BY THE LANDING, not wrong when it was given: the premise it reported was true of the tree it read
+
+========================================================================================================
+  B -- es_einstein, es_lapse, AND WHAT P8 NOW CITES
+========================================================================================================
+  PASS      B.reader.pos             a declaration KNOWN present is read
+  PASS      B.reader.neg             a declaration KNOWN absent reads None
+  PASS      B.reader.nested          and a binder group CONTAINING brackets is read whole: ['(hf : ok_sds Λ M (x 1) ≠ 0)']
+
+  B1  es_einstein and es_lapse, each read from its CONCLUSION and not from its name
+  PASS      B1.exists                es_einstein              declared in StaticEinstein.lean
+  PASS      B1.concludes             es_einstein              concludes the mixed Einstein tensor of the general static metric :: es_G (es_g A F) x 0 0 = (x 1 * deriv F (x 1) + F (x 1) - 1) / x 1 ^ 2 ∧ es_G (es_g A
+  PASS      B1.exists                es_lapse                 declared in StaticEinstein.lean
+  PASS      B1.concludes             es_lapse                 concludes the radial-minus-temporal difference                 :: (∀ A' : ℝ → ℝ, ∀ A2' : ℝ, es_Hyp A' F x A2' → es_G (es_g A' F) x 0 0 = es_G (es_g A 
+  PASS      B1.exists                es_construction_gauge    declared in StaticEinstein.lean
+  PASS      B1.concludes             es_construction_gauge    concludes the gauge A = F = f                                  :: es_G (es_g f f) x 0 0 = (x 1 * deriv f (x 1) + f (x 1) - 1) / x 1 ^ 2 ∧ es_G (es_g f
+  PASS      B1.exists                es_Ric_diag              declared in StaticEinstein.lean
+  PASS      B1.concludes             es_Ric_diag              concludes the Ricci diagonal                                   :: es_Ric (es_g A F) x 0 0 = F (x 1) * A2 / 2 - F (x 1) * deriv A (x 1) ^ 2 / (4 * A (x
+  PASS      B1.lapse_four            and es_lapse carries 4 conjuncts, matching the three rows 3a-3c plus the lock: the A-independence of G^t_t, the difference, its log form, and A = F
+  PASS      B1.lapse_lock            the lock is stated as an implication FROM A = F, which is what "the lock A = F gives" means
+
+  B2  "P8 now cites StaticEinstein.lean throughout" -- a claim about EVERY citation
+  PASS      B2.one_file              P8 names 4 .lean path(s), all of them ['StaticEinstein.lean'] -- and OperatorKernel.lean is named NOWHERE in P8
+  PASS      B2.cited_count           13 declaration names cited: ['es_construction_gauge', 'es_einstein', 'es_lapse', 'es_sds_vacuum', 'ok_L_bound', 'ok_bend', 'ok_general_solution', 'ok_index_one', 'ok_kernel', 'ok_matter_onto', 'ok_onto', 'ok_sds_solves', 'ok_vacuum_iff_ode']
+  PASS      B2.rule_kept             cited-but-NOT-declared-in-StaticEinstein.lean: none ⇒ the citable-file rule HOLDS for every citation, the nine ok_* names included
+
+  B3  and where each cited name ALSO lives
+      ok_L_bound               2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_bend                  2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_general_solution      2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_index_one             2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_kernel                2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_matter_onto           2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_onto                  2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_sds_solves            2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+      ok_vacuum_iff_ode        2 file(s): ['OperatorKernel.lean', 'StaticEinstein.lean']
+  PASS      B3.copy                  9 of the 13 cited names are declared twice, in StaticEinstein.lean and OperatorKernel.lean -- because the new file IS the old one plus the es_* material
+  PASS      B3.declared_copy         and the file DECLARES that it is a copy, in its own header: "It is campaign 123's `probes/OperatorKernel.lean` (namespace renamed ...), plus campaign 110's ... sections ... copied verbatim ... P8's names stay in one file."
+  PASS      B3.purpose_named         ⇒ so the duplication is the MECHANISM of the citable-file rule here and not a lapse of it, which is what the order settles at ⑤; no arm reopens it
+
+  B3  ⚠ two pointers that the copying left pointing at nothing
+  PASS      B3.stale_backs           OperatorKernel.lean still says of itself "It backs P8 ...: `thm:kernel` and `prop:bend`" while P8 no longer names it -- the same shape as the sl_curvature_sign docstring r7726 found, pointing the other way
+  PASS      B3.stale_copies_no       and the header StaticEinstein.lean keeps verbatim says "It is a new standalone probe: ... it copies no earlier probe" -- inside a file that IS a copy. Signposted by the outer header's "its header below is kept verbatim", and still false of the file it now sits in
+
+========================================================================================================
+  C -- THE TWO P3 EDITS, read against what I asked for AND against what is TRUE
+========================================================================================================
+  PASS      C0.roots.tangency        at the Nariai mass the closed form returns a DOUBLE root: [(-1.154700538, 1), (0.577350269, 2)]
+  PASS      C0.roots.near            and at the near-tangency r0 = 0.5773021566671934 -- where the GRID sampler this replaced returned ONE root of three -- it returns three distinct: [-1.154700537, 0.577302157, 0.57739838], the two positive ones 9.622e-05 apart
+  PASS      C0.roots.residual        and every returned root satisfies the cubic: worst residual 4.441e-16
+  PASS      C0.roots.overcritical    and overcritically it returns the one real root: -1.191487884, residual 2.220e-16
+
+  C1  the region sentence's new scope, located by text and then COMPUTED
+  PASS      C1.anchor                1x raw, 1x flat
+  PASS      C1.old_gone              and the form it replaced is gone (0 occurrences)
+  PASS      C1.exact                 over 23999 designations with M>0, decided by the DISCRIMINANT and Vieta rather than by rounded roots: 0 mis-admitted, 0 whose root pattern is not "one negative, the rest positive, three counted with multiplicity"
+  PASS      C1.vieta.negative        the NEGATIVE control first: at r0 = 1.1, where 2M = -0.231000 < 0, the roots are [(-0.854138, 1), (-0.245862, 1), (1.1, 1)] -- TWO negative and one positive, the opposite pattern, so the arm below is discriminating and not merely counting three
+  PASS      C1.vieta                 witness, the exact test spot-checked against the closed form at seven designations, every one giving three roots counted with multiplicity and exactly one negative: r0=0.05 -> [(-1.024062, 1), (0.05, 1), (0.974062, 1)]; r0=0.3 -> [(-1.11566, 1), (0.3, 1), (0.81566, 1)]; r0=0.5 -> [(-1.151388, 1), (0.5, 1), (0.651388, 1)]
+  PASS      C1.nariai_out            and the designation r0 = 1/sqrt3 = 0.577350269 that r7730 found -- 2M = 0.384900179460, the Nariai mass 0.384900179460, roots [(-1.154700538, 1), (0.577350269, 2)] -- is now EXCLUDED, discriminant 0.000e+00
+  PASS      C1.dS_out                and the de Sitter member r7728 found is still excluded, by M>0 rather than by distinctness: at 2M = 0 the roots are [(-1.0, 1), (0.0, 1), (1.0, 1)], three distinct, so distinctness alone would admit it
+
+  C2  the threshold sentence's "at which the mass reaches" -- true, and is it ENOUGH?
+  PASS      C2.anchor                1x  <- the landed form
+  PASS      C2.old_gone              and the "equivalently" r7730 found false of designations is gone (0 occurrences)
+  PASS      C2.true                  TRUE at the threshold: at |r0| = 1.154700538 the mass is 2M = -0.384900179460, |2M| = 0.384900179460 = 0.384900179460
+  PASS      C2.not_unique            ⚠ but the mass reaches that value at 2 value(s) of r0 in (0, 2/sqrt3] as sampled: [0.577350269, 1.154700538] -- 1/sqrt3 = 0.577350269 among them, strictly inside
+  PASS      C2.nonrestrictive        ⇒ and the clause is NON-RESTRICTIVE (set off by commas): it describes the threshold rather than claiming the mass reaches that value only there, so it is sound as it stands
+  PASS      C2.paragraph_says        and the same paragraph still states the other designations explicitly, four sentences earlier, so a reader is not left to infer uniqueness
+
+  C3  "up to the factor $r$, which is positive on the forward branch $r>0$"
+  PASS      C3.landed                1x  <- landed as offered
+  PASS      C3.bare_gone             and the bare appositive is gone, so the tautology no longer reads as informative of something else
+  PASS      C3.antecedent            the relative pronoun's antecedent by POSITION is 'the factor $r$'; characters back [('the factor $r$', 15), ('the comoving acceleration', 86)]; not in the window: ['the slice’s own Gaussian curvature']
+  PASS      C3.unique_true           and "which is positive on the forward branch" is true on exactly one candidate: ['the factor $r$'] -- but "which" BINDS it to the nearest noun, which a bare appositive did not
+
+  C4  ⚠ twins: does any OTHER sentence in P3 still carry the repaired defect?
+  **FAIL**  C4.defining_parenthetical the sentence that DEFINES "undercritical" still reads: 'It is positive for $|r_0|<2/\\sqrt3$ (three distinct real roots, the undercritical regime)' -- 1 occurrence(s)
+  PASS      C4.twin_is_false         ⇒ and that parenthetical is FALSE by the same computation: r0 = 0.577350269 is inside |r0| < 1.154700538 and its cubic has a REPEATED root (discriminant 0.000e+00), so |r0| < 2/sqrt3 does NOT give three distinct real roots
+  PASS      C4.self_contradiction    and the SAME paragraph says so two sentences later -- so the parenthetical contradicts its own paragraph, which is why the threshold sentence needed the repair and this one still does
+  PASS      C4.old_forms             'In the undercritical regime with'         0 occurrence(s)
+  PASS      C4.old_forms             'equivalently $|2M|'                       0 occurrence(s)
+  PASS      C4.old_forms             'up to the positive factor $r$'            0 occurrence(s)
+
+========================================================================================================
+  D -- PART THREE: the dead constant deleted, and the ORDER'S OWN TEST of my r7730 claim
+========================================================================================================
+
+  D1  the line is located by TEXT and is gone; nothing names it anywhere in the revision
+  PASS      D1.deleted               F_B_PAPER occurs 0 times in sample.py -- the line deleted was 'F_B_PAPER = 0.1834            # the baryon fraction THAT paper assumes'
+  PASS      D1.no_other_reader       no CODE in the revision names it: none; it is named in prose by ['RESULT.md'], which is r7730's correction record saying what the figure came from -- a mention, not a read
+  PASS      D1.parses                and the file still parses and runs, which D2 is the evidence for
+
+  D2  ⚭ THE ORDER'S OWN TEST, and it could have falsified my r7730 claim
+  PASS      D2.exit                  sample.py exits 0
+  PASS      D2.byte_identical        its output is BYTE-IDENTICAL to the committed run.txt: 10639 bytes against 10639
+  PASS      D2.N9_not_reached        ⇒ N9 is NOT reached: the constant was dead, as r7730 reported, and the order's test confirms it rather than my own reading doing so twice
+  PASS      D2.f_b_unchanged         and the three figures the stray turned on are still printed, unchanged, by the file that no longer carries 0.1834
+
+  D3  and the corrected prose of r7730 still stands beside it
+  PASS      D3.prose                 the corrected figure is in the claim
+  PASS      D3.record                and the wrong figure survives ONLY in the correction record, where it is quoted as what was corrected -- the claim/record split r7730 built after its own twin search read its own record
+
+========================================================================================================
+  THE LEDGER
+========================================================================================================
+  arms run : 81  (distinct tags 68)
+  **1 ARM(S) FAILED**: ['C4.defining_parenthetical']
+
+  ⌭ the verdicts that are FINDINGS rather than passes are collected in RESULT.md, each
+    with the witness printed above and no count or summary string guessed from it.
