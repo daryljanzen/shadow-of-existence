@@ -15,6 +15,109 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛔ `r7733+cc66` — **THE RECEIPT IS MINTED AND THE SENTENCE IS DRAFTED. AND THE `0.46` YOUR ORDER ASKS ME TO PRINT AS "THE MODEL'S INCOMPLETENESS" BELONGS TO A DIFFERENT OBJECT THAN THE MODEL — IT IS `0.0444` ON THE MODEL'S OWN**
+
+All three items discharged. **12 gates, 0 failures.** Two things in the order have to be corrected
+before anything built on them reaches `P15`, and both are mine before they are yours.
+
+### ⛔⛔ ① THE CORRECTION THAT MATTERS, BECAUSE YOU WERE ABOUT TO PUT IT IN THE PAPER
+
+Your gate reads *"the residual ratio of `0.46` stated as the model's incompleteness"*. **That figure is
+not the model's.** My own `r7731` verdict measured it on the **unbinned** plane, counting **every cell
+equally**, with **unit coefficients** — and the model is fitted **binned**, in the **contribution
+weights**, at the **fitted** coefficients. Three mismatches in one number:
+
+| the same ratio, on which object | value |
+|---|---|
+| unbinned, equal-weight, unit coefficients — **`r7731`'s figure, reproduced** | `0.4642` |
+| unbinned, contribution-weighted | `0.2344` |
+| **binned and weighted at the fitted amplitudes — THE MODEL'S OWN** | **`0.0444`** / `0.0429` |
+
+⇒ **The licence survives in direction and fails in size.** *The swap is still not exhausted by these
+two templates* — the residual is four per cent of the signal rms, not zero. But my `r7731` wording,
+*"the two-amplitude model is INCOMPLETE, not merely imperfect — `46` per cent of the plane's signal rms
+lies in neither template"*, **overstates the model's own incompleteness by about a factor of ten**, and
+on the object the amplitudes come from the two templates carry the signal to within four per cent. On
+the model's own plane it is **imperfect, not incomplete**.
+
+⌗ *This is the thirteenth instance of the fault this session has been counting — a statement about one
+object read as a statement about another — and it is in my own merged verdict, which is why you have
+it. **Nothing printed in `P15` should rest on the `46` per cent.*** The receipt gates `0.0444` and
+`0.0429`, computes both unbinned figures' provenance, and says in its own head that it is correcting a
+figure rather than reprinting one.
+
+### ⛔ ② AND ONE OF YOUR GATES IS FALSE BY CONSTRUCTION, SO I GATED WHAT IT MEANS
+
+*"Both `99` per cent intervals excluding zero on all four readings."* **No interval in this test can
+exclude zero: they are NULL intervals, centred on zero by construction.** Written as asked the
+predicate is false on every reading, and a receipt carrying it would have been red on a correct
+verdict. What `r7731` actually measured — and what the gate now says — is **each fitted amplitude
+lying outside its own two-sided null interval**, which it does on all four readings, the closest by
+`3.5` times its own half-width.
+
+### ⛭ ③ ITEM 1 — THE RECEIPT, AT THE WEIGHT YOU LICENSED AND NOT ABOVE IT
+
+Both amplitudes within two per cent of unity on both binnings; each outside its own null interval on
+both nulls; power `1.000` on a planted pure-kernel and a planted pure-source signal at both binnings.
+The INDEX row is in at the end of the paper's block, and **every figure it prints is pinned
+two-sidedly in the receipt**, so it needs no baseline entry. Graded **`✔` and not `✔✔`**: the core is
+reproduced from a separately derived input through the **same** fitting code, which is reproduction and
+not independent reconfirmation, and the new measurement in item 2 is reconfirmed by nobody yet.
+
+⛭ **AND THE INPUT IS A COMMITTED BANK, NOT THE REF.** 70's arrays reach me at a ref its own workflow
+**force-pushes**. A receipt pinned to a force-pushable ref is pinned to something that can change with
+no commit recording that it did. So the four binned cells are banked in the revision directory with
+the source's digest recorded, and the receipt asserts that digest and the bank's own two closures —
+bins plus truncated tail returning the full wavenumber sum, and the ladder identity returning the
+projected spectrum exactly, departure `0` — before it computes anything. The amplitudes and **all
+eight null-interval endpoints** come back identical to `r7731`'s, from the re-derived input.
+
+### ⛭⛭ ④ ITEM 2 — THE SENTENCE, AND WHY IT NEEDED A MEASUREMENT BEFORE A WORD OF IT
+
+I would not draft against the printed *"the located transition belongs to the contrast between the arms
+and not to their sources"* until I knew whether **unit amplitude** licenses **an equal share of the
+located step**. It does not, and the reason is not the one I expected.
+
+⛔ **My expectation was wrong, in the opposite direction.** I expected the source template to be
+**small**, so that unit amplitude on it would be unit amplitude on a small thing. **It is the larger of
+the two** (`0.278` against `0.219`). Had I drafted from the expectation the sentence would have been
+false. **The resolution is shape, not size:**
+
+| | kernel template | source template |
+|---|---|---|
+| varies with multipole (primary binning) | **`97.93` %** | **`22.39` %** |
+| …secondary | `97.98` % | `21.09` % |
+| share of the model's multipole-varying variance | **`93.6` %** | `7.8` % |
+| …secondary | `93.0` % | `12.7` % |
+
+⇒ *** A located transition is a feature AT a multipole, so a template constant in multipole cannot make
+one however large it is. More than three quarters of the source template is a featureless rescaling
+across wavenumber. Of the part that can place a feature at a located multipole the contrast carries
+about nineteen twentieths. ***
+
+**So the two statements read together like this:** the printed exclusion is about the **sources' own
+ratio**, unprojected; the new result is about the **source difference after the projection**. The
+source difference carries **weight in the exchange** at full coefficient and almost none of the
+**structure that locates** the transition. ⛭ **And that is the distinction `P15` already prints two
+sentences later** — *"The step's size, by contrast, is in both arms: what only the contrast resolves is
+where the step falls and how sharp it is"*. **The sentence refines a split already in the paragraph
+rather than qualifying one**, which is why I think it lands cleanly. The draft, its placement, what it
+deliberately does not say, and the five figures to keep at their digits are in the revision directory's
+`SENTENCE.md`. The marker is yours to place.
+
+⛔ **AND THE MEASUREMENT BEHIND IT WAS NOT REGISTERED**, which I am saying rather than leaving to be
+noticed. It sets no threshold, declares no pass or fail, and `r7731`'s verdict does not depend on it —
+it is a descriptive decomposition made because your item 2 asks for a sentence and I could not write one
+without it. ⚠ And the split is **one** choice of featureless direction; a different one would apportion
+differently. It is the choice the printed sentence is about, since the transition is *located*.
+
+### ⑤ ITEM 3 — `PO-87`, IN ONE LINE
+
+**It does not close with this sentence.** One step remains and it is the row's own live clause: the
+verdict names **which contrast** carries the located step's multipole structure, but **not which term
+of the projection's acceptance does it** — the contrast's template is still one object here, and
+splitting it into the acceptance's named terms is the step.
+
 ## ⛭⛭⛭ `r7731+cc66` — **THE DETECTABILITY VERDICT IS IN: `BOTH CONTRIBUTE`, AT UNIT AMPLITUDE, ON ALL FOUR READINGS, WITH POWER `1.000`. AND THE FIT IS NOT A TAUTOLOGY ON THE REAL OBJECT**
 
 70's arrays landed, digest verified against their record. **13 gates, 0 failures.** Everything in

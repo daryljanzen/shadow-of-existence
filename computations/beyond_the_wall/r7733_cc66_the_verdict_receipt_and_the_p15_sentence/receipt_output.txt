@@ -1,0 +1,114 @@
+
+P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels_because_the_source_template_is_flat_in_ell
+==============================================================================================================================
+
+LEVEL: `r7733`'s order ① -- ** mint the `BOTH CONTRIBUTE` verdict `r7731` returned on 70's real
+`(l, k)` arrays, at the weight `r7731` licensed and no more. **  No new physics, no refit of any
+cosmology, nothing touching the banks.  The test is `r7723`'s registration
+(`PREDICTION_detectability.md` SS1-SS3, amendments 5-6); the instrument is `r7731`'s `four_cell.py`,
+imported here rather than copied.
+
+** WHAT THE VERDICT IS. **  The log-swap from `(S_lcdm, K_lcdm)` to `(S_cr, K_cr)` is fitted by two
+templates -- the KERNEL difference at fixed source, and the SOURCE difference at fixed kernel -- in
+`r7723`'s amendment-2 contribution weights.  ** Both amplitudes land within two per cent of unity, and
+both exclude zero on all four readings ** (two registered null constructions x two registered
+binnings), with power `1.000` to recover a planted signal of either kind.
+
+ ⚑⚑ (1) ** BOTH CONTRIBUTE, AT UNIT AMPLITUDE. **  `a_ker` `+1.0076`, `a_src` `+1.0035` at the primary
+     binning; `+1.0195`, `+1.0045` at the secondary.  The order's question was *"does the projection
+     CREATE the step or FAIL TO CANCEL it"* -- and that is a false either-or.  `r7723` SS1 registered
+     the fourth cell in advance, with the note that the three offered names do not partition the
+     outcome space.
+
+ ⚑ (2) ** AND THE FIT HAS CONTENT HERE, which is why the question could be asked at all. **  On the
+     pseudo-spectra the same two-template fit was an exact algebraic identity (`2.6e-15`), so no null
+     could have said anything.  On the binned real object the residual is a real fraction of the
+     signal.
+
+ ⛔⛔ (3) ** AND THE FIGURE `r7731` PUT ON THAT INCOMPLETENESS BELONGS TO A DIFFERENT OBJECT THAN THE
+     ONE IT WAS ATTACHED TO.  THIS RECEIPT CORRECTS IT RATHER THAN REPRINTING IT. **
+     `r7731`'s `VERDICT.md` SS1 and SS5 state the residual ratio as `0.4642` and conclude *"the
+     two-amplitude model is INCOMPLETE, not merely imperfect -- 46 % of the plane's signal rms lies in
+     neither template"*.  ** That `0.4642` is measured on the UNBINNED plane, counting every cell
+     equally.  The model is fitted on the BINNED plane, in the contribution weights. **  Three things
+     differ between the two numbers -- the binning, the weighting, and unit against fitted
+     coefficients -- and measured on the object the amplitudes actually come from the ratio is
+     `0.0444` (primary) and `0.0429` (secondary).
+       * unbinned, unweighted, unit coefficients:  `0.4642`  <- `r7731`'s figure, reproduced
+       * unbinned, CONTRIBUTION-WEIGHTED:          `0.2344`
+       * binned, weighted, fitted:                 `0.0444` / `0.0429`  <- the model's own
+     ⇒ *** So the licence `r7731` wrote is right in DIRECTION and wrong in SIZE: the swap is still not
+     exhausted by these two templates, but on the model's own object they carry the signal to within
+     about four per cent in rms, and "INCOMPLETE, not merely imperfect" overstates it by roughly a
+     factor of ten. ***  ⌗ *This is a statement about one object read as a statement about another,
+     in this seat's own merged verdict; it is recorded here because `r7733` carries the `0.46` forward
+     into `P15` and a sentence built on it would carry the misattribution into the paper.*
+
+ ⚑⚑ (4) ** AND "UNIT AMPLITUDE" IS NOT "AN EQUAL SHARE OF THE LOCATED STEP", which is the whole of
+     what the `P15` sentence has to get right. **  A located transition is a feature AT an `l`, so a
+     template CONSTANT in `l` cannot make one however large it is.  Split against the same weighted
+     norm:
+       * the KERNEL template is `97.93 %` `l`-structured (primary), `97.98 %` (secondary);
+       * the SOURCE template is `22.39 %` `l`-structured (primary), `21.09 %` (secondary) -- ** more
+         than three quarters of it is a featureless rescaling across `k` **;
+       * and of the fitted model's `l`-structured variance the KERNEL carries `93.6 %` (primary) and
+         `93.0 %` (secondary), the kernel's `l`-structure exceeding the source's by `3.46x` and
+         `2.71x` in rms.
+     ⇒ *** The source difference enters the exchange at full weight and carries almost none of the
+     structure that LOCATES the transition.  That is how this verdict sits beside `P15`'s printed
+     "the located transition belongs to the contrast between the arms and not to their sources"
+     without contradicting it -- and it is the same distinction the paragraph already draws two
+     sentences later between the step's SIZE, which is in both arms, and where it falls and how sharp
+     it is, which only the contrast resolves. ***
+     ⛔ *My own expectation going in was that the source template would be SMALL. It is the LARGER of
+     the two (`0.278` against `0.219`). The resolution is shape, not size, and the wrong expectation
+     is recorded in `structure.py`'s own head.*
+
+ ⛔ (5) ** AND THE ONE FIGURE THE LICENCE TURNS ON IS PINNED: `a_src` IS THE LESS DETERMINED. **  Its
+     `99 %` null interval is about ten times `a_ker`'s on the normalised null.  Both exclude zero by
+     more than three times their own half-width, but the two are not equally pinned and this receipt
+     reds if that ratio moves.
+
+** WHAT IS NOT CLAIMED. **
+ * ** NOT "the swap is exhausted by these two mechanisms". **  (3) measures what is left over; it is
+   four per cent and not zero.
+ * ** NOT that the two amplitudes are equally well measured. **  See (5).
+ * ** NOT that the source difference is absent from the step. **  It is present, at unit amplitude.
+   What (4) measures is that its contribution is almost all flat in `l`.
+ * ** NOT a claim about the sources' own RATIO. **  `P15`'s printed exclusion is about the ratio of
+   the two arms' eta-integrated sources read in sliding windows -- a different object, unprojected,
+   and `r7721`'s receipt pins it.  The two statements do not meet.
+ * ** The `l`-flat / `l`-structured split is ONE choice of featureless direction ** and a different
+   one would apportion differently.  It is the choice the printed sentence is about: the transition is
+   LOCATED, at an `l`, and a template flat in `l` is what cannot locate one.
+ * ** No percentile below `1/N_NULL` is expressible **, so the interval exclusions are reported as
+   exclusions and not as sigmas.
+
+COMPUTES: scope.
+ * ** THE INSTRUMENT IS `r7731`'s, IMPORTED. **  `four_cell.fit2` and `four_cell.surrogate` are the
+   functions that produced the merged verdict, so this is the same arithmetic and not a lookalike.
+ * ** THE INPUT IS A COMMITTED BANK, NOT A MUTABLE REF. **  70's arrays live at `refs/ci/r7729_dlk`,
+   which `.github/workflows/dlk.yml` pushes with `git push -f` -- a force-pushable ref is not an
+   immutable input.  `bank_binned.py` derived the four binned cells from it and recorded the source's
+   sha256; this receipt asserts that sha and the bank's own three closures before computing anything.
+ * The templates, the weights, the dead-cell mask and both binnings are formed HERE from the banked
+   cells.  Nothing downstream of the binning is banked.
+ * NOTHING IS FITTED but the two amplitudes, and no cosmological parameter is read here at all.
+
+====================================================================================================
+  [PASS] ⛭⛔ `r7733` ** THE INPUT IS THE OBJECT 70 BUILT, BY ITS OWN SHA256, AND NOT A MUTABLE REF ** ⇒ *`refs/ci/r7729_dlk` is force-pushed by its workflow, so a receipt pinned to the ref would be pinned to something that can change with no commit recording it; the bank records the source's hash and this gate asserts it*   (sha 3fbad4d34030cf0e..., 32508096 bytes, 698 multipoles, 1450 k nodes)
+  [PASS] ⛭ `r7733` ** AND THE BANK CARRIES ITS OWN CLOSURE BOTH WAYS: the bins plus the truncated tail return the full `k` sum, and `l(l+1)` times that sum IS `D_l` EXACTLY ** ⇒ *`1450 = 120*12 + 10 = 63*23 + 1`, so a bin boundary off by one node breaks the first by a whole node's contribution; the second is 70's own `C4` identity, recomputed here and not cited*   (bins+tail vs total max rel 7.764e-16 (allowance 1e-13); l(l+1)*total vs D_l max abs 0.000e+00)
+  [PASS] ⛭⛔ `r7733` ** ⓵ BOTH AMPLITUDES ARE WITHIN TWO PER CENT OF UNITY, ON BOTH REGISTERED BINNINGS ** ⇒ *the kernel difference and the source difference each enter the full log-swap at unit coefficient; the order's `creates` / `fails to cancel` either-or is false, and `r7723` SS1 registered this fourth cell in advance*   (PRIMARY: a_ker +1.0076, a_src +1.0035; SECONDARY: a_ker +1.0195, a_src +1.0045)
+  [PASS] ⛭⛔ `r7733` ** ⓶ THE TWO-AMPLITUDE FIT IS NOT AN ALGEBRAIC IDENTITY ON THIS OBJECT, which is why the question is askable here and was not on the pseudo-spectra ** ⇒ *there the same fit closed to `2.6e-15` because that integrand factorises, so no null could have said anything*   (PRIMARY: residual/signal 0.0444; SECONDARY: residual/signal 0.0429)
+  [PASS] ⛭⛔ `r7733` ** ⓷ AND THE INCOMPLETENESS IS MEASURED ON THE MODEL'S OWN OBJECT -- `0.0444` and `0.0429`, NOT the `0.4642` `r7731` attached to the model ** ⇒ *`0.4642` is the UNBINNED, equal-weight, unit-coefficient ratio; the model is fitted BINNED and WEIGHTED. The licence holds in direction -- the swap is not exhausted by these two -- and `"INCOMPLETE, not merely imperfect"` overstates it by about a factor of ten*   (primary 0.0444 (unit coefficients 0.0447), secondary 0.0429 (0.0441))
+  [PASS] ⛭⛔ `r7733` ** ⓸ AND THE SOURCE TEMPLATE IS ALMOST FLAT IN `l` WHILE THE KERNEL'S IS NOT: `97.93 %` of the kernel template is `l`-structured against `22.39 %` of the source's ** ⇒ *a located transition is a feature AT an `l`, so a template constant in `l` cannot make one however large it is -- and the source template is the LARGER of the two, so this is shape and not size*   (primary kernel 97.93 % / source 22.39 %; secondary 97.98 % / 21.09 %; template rms 0.21883 kernel vs 0.27808 source)
+  [PASS] ⛭⛔ `r7733` ** ⓹ SO OF THE FITTED MODEL'S `l`-STRUCTURED VARIANCE -- THE ONLY PART THAT CAN PUT A FEATURE AT A LOCATED MULTIPOLE -- THE KERNEL CARRIES `93.6 %` AND `93.0 %` ** ⇒ *this is the figure the `P15` sentence rests on: unit amplitude is a statement about the COEFFICIENT, not about the share of the located step*   (primary kernel 93.6 % / source 7.8 %, 3.46x in rms; secondary 93.0 % / 12.7 %, 2.71x)
+  [PASS] ⛭⛔ `r7733` ** ⓺ AND EACH AMPLITUDE LIES OUTSIDE ITS OWN TWO-SIDED `99 %` NULL INTERVAL ON ALL FOUR READINGS -- two registered null constructions by two registered binnings ** ⇒ *SS3's rule is that a disagreement between the two nulls IS the verdict; there is none, and the cell is `BOTH CONTRIBUTE` four times out of four.  ⛔ `r7733`'s order asks for `"both 99 per cent intervals excluding zero"`, and THAT PREDICATE IS FALSE ON EVERY READING BY CONSTRUCTION: these are NULL intervals, centred on zero, so nothing can make one exclude it.  Gated here as the amplitude outside the interval, which is what `r7731` measured and what the order means*   (PRIMARY/normalised: a_ker vs ±0.0304, a_src vs ±0.2620; PRIMARY/plain: a_ker vs ±0.0501, a_src vs ±0.1401; SECONDARY/normalised: a_ker vs ±0.1169, a_src vs ±0.2855; SECONDARY/plain: a_ker vs ±0.1190, a_src vs ±0.2607; closest margin 3.52x its own half-width)
+  [PASS] ⛭⛔ `r7733` ** ⓻ THE REGISTERED POWER REQUIREMENT IS MET AT `1.000`, on a planted pure-kernel AND a planted pure-source signal, at both binnings ** ⇒ *below it the registered verdict would have been `neither, by the instrument`, so this is what rules that cell out rather than an assumption that the test can see*   (PRIMARY: pure-kernel 1.000, pure-source 1.000; SECONDARY: pure-kernel 1.000, pure-source 1.000)
+  [PASS] ⛭⛔ `r7733` ** ⓼ AND THE LICENCE'S OWN RESERVATION IS PINNED: `a_src` IS ABOUT TEN TIMES LESS DETERMINED THAN `a_ker`, its null interval `8.63` times as wide ** ⇒ *both exclude zero, but the two are not equally measured and a reader must not take them as equally pinned; if that ratio moves this receipt reds*   (a_ker half-width 0.0304, a_src 0.2620, ratio 8.63x)
+  [PASS] ⛭⛔ `r7733` ** ⑨ FAILABILITY MEASURED ON THREE LEGS, NOT CLAIMED, each over a green control ** ⇒ *⒜ substitute the source template by its own `k`-only part and its `l`-structured fraction goes to `0` while the kernel's share of the `l`-structured variance goes to `1`, reddening ⓸ and ⓹; ⒝ double the kernel template and its amplitude halves, reddening ⓵; ⒞ hand the fit an observation with no signal and both amplitudes return at machine zero, sixteen orders inside the null interval, so ⓺ is not satisfied by arithmetic that always excludes. ⌗ Leg ⒞ is automatic -- least squares leaves the residual orthogonal to both templates -- and is reported as a floor on the gate rather than as an independent demonstration*   (⒜ substitute l-structured 7.382e-16 (⓸ wants 0.2239), kernel share 1.000000 (⓹ wants 0.936); ⒝ a_ker +0.5038 (⓵ wants |a-1| <= 0.02); ⒞ a_ker +4.688e-17, a_src +7.131e-16)
+  [PASS] ⛭⛔ `r7733` ** ⑩ AND THE SENTENCE THIS VERDICT HAS TO SIT BESIDE IS ITSELF GATED: `P15` must still carry the source exclusion AND the size/location distinction it refines ** ⇒ *the consistency this receipt argues is consistency with those two printed clauses; if either leaves the paper, the reading has to be made again rather than inherited*   (exclusion present True, size/location distinction present True)
+
+====================================================================================================
+  OK    12 of 12 gates;  0 failure(s)
+====================================================================================================
