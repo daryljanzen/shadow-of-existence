@@ -10,6 +10,43 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7729: CAMPAIGN 125 — P8's RADIAL GEODESICS BUILT; 60's FOUR REPAIRS MADE; THE OFF-DIAGONALS VANISH, SO `T_{μν} = 0` IS WHOLE (`r7729+71.1`–`.2`)
+
+The result is in `r7729_71_campaign125/RESULT.md`. **Everything is in `probes/StaticEinstein.lean`, the file P8
+cites.** Every cited name keeps its name, so P8's citations stay exact. Three of them now have stronger statements.
+- **The build:** zero errors and zero warnings, `37` axiom lines all standard (`16` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `+459 / −54` (band 350–900), at p `0.55`.
+
+***60's `r7730` ⓶, all four made.***
+- **`ok_vacuum_iff_ode`:** the redundant `hf′` is gone. It now assumes exactly what P8 says: `f` differentiable on
+  the interval.
+- **`ok_L_bound`:** now the operator bound, `sup |Lf| ≤ max(1, r₂)(sup |f| + sup |f′|)` over `[r₁, r₂]`.
+- **`ok_index_one`:** now an explicit integer index on the closed interval. `ok_Lmap : C¹[r₁, r₂] → C⁰[r₁, r₂]`,
+  `f ↦ (rf)′` (one-sided at the ends), is a linear map with:
+  - `ker = ℝ ∙ (1/r)` and `finrank ker = 1`;
+  - `range = ⊤`;
+  - `(finrank ker : ℤ) − finrank (C⁰ ⧸ range) = 1`.
+- **The interval: P8's `[r₁, r₂]` needs no change.** `ok_index_one` states the kernel and onto-ness on the closed
+  interval. `ok_kernel` remains as the open-interval form.
+
+***Added, as you asked: the off-diagonals vanish.***
+- `es_Ric_offdiag` and `es_G_offdiag`: `R_{bc} = G^b_c = 0` for `b ≠ c`.
+- `es_sds_vacuum_full`: for SdS, `G^b_c + Λδ^b_c = 0` for all sixteen components.
+- **`thm:kernel`'s `T_{μν} = 0` can now be cited whole,** and the "diagonal components" scoping can come off.
+
+***Rows 4a–4c, `prop:cosmo`: BUILT.***
+- **`rg_cosmo` (4a):** on the radial plane, from `kr_Γ`, a geodesic has `E = f(r)ṫ` conserved. If it is unit
+  timelike, `ṙ² = E² − f`. `rg_witness` is the non-vacuity witness.
+- **`rg_sinh23` and `rg_sinh23_radial` (4b):** `(2Mα²)^{1/3} sinh^{2/3}(3τ/2α)` solves `ṙ² = 2M/r + r²/α² = 1 − f`.
+- **`rg_tau23` (4c):** `(9M/2)^{1/3}τ^{2/3}` solves `ṙ² = 2M/r`.
+
+**Marks:** 12 of 16 rows are BUILT; 2 are BUILT IN PART (5b, 5c, in the other engine); 1 is NOT BEGUN (5a); 1 has no
+formal core.
+**Next, campaign 126:** 5a–c, the three leaves. That would close P8.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7727: CAMPAIGN 124 — P8's STATIC EINSTEIN TENSOR BUILT FROM THE RIEMANN TENSOR; eq. `Ttt`, `Ttheta`, `rho-B`, `prho` ARE THEOREMS (`r7727+71.1`–`.2`)
 
 The result is in `r7727_71_campaign124/RESULT.md`, and the probe is `probes/StaticEinstein.lean`.
