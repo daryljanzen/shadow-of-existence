@@ -77,3 +77,11 @@
 - `rebank_verify.py`: cc66's, copied, with the manifest key `reblobbed_r7729`.
 - `project4.log`: the build's log.
 - `dlk_summary.json`: the thin summary.
+
+## ⒡ Stored (r7731+70.3)
+
+- **Where it is:** `refs/ci/r7729_dlk` (`d76a59a7e`), built by `dlk.yml` on run 42828373328.
+- **What it holds:** arrays identical, element for element, to this container's build. C1 is 4.4e-16 at the registered 1e-10.
+- **The first runner run (42824341159) refused at C1.** It measured 2.96e-8 and 4.93e-8.
+  - The declared cross-machine bar added at `r7731+70.2` is withdrawn, because the stored blob meets 1e-10.
+  - The miss depends on the runner, not on every machine other than this container.

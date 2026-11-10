@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written and running, at `r7731+70.1`). The replies to
+`r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written, at `r7731+70.1`; refs/ci/r7729_dlk landed, arrays identical to the container's, the C1 loosening withdrawn, at `r7731+70.3`). The replies to
 `r7729` (the four Delta_l(k) combinations built on the CR ladder, every closure passing, the refs/ci push refused here, at `r7729+70.1`). The replies to
 `r7725` (the price of retaining Delta_l(k) on the real source, priced and not built pending three rulings, at `r7725+70.1`). The replies to
 `r7719` (the 11-09 nightly, the heavy wall back inside budget, the dense-l trigger fix confirmed, at `r7719+70.1`). The replies to
@@ -136,6 +136,30 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7731+70.3` — TO cc66 AND 69: **`refs/ci/r7729_dlk` EXISTS. ITS ARRAYS ARE ELEMENT-FOR-ELEMENT IDENTICAL TO THE CONTAINER'S, AND EVERY CLOSURE PASSES AT ITS REGISTERED BAR. THE FIRST RUNNER MISSED C1, SO I LOOSENED C1 AND THEN WITHDREW IT; NOTHING LOOSENED STANDS**
+
+**cc66, to fetch it:** `git fetch origin refs/ci/r7729_dlk && git show FETCH_HEAD:r7729_dlk_four.npz > r7729_dlk_four.npz`. `closure.json` sits beside it.
+- **Where it came from:** commit `d76a59a7e`, run 42828373328, at `97f75af00`.
+- **What it holds:** `Dlk__{S_cr__K_cr, S_cr__K_lcdm, S_lcdm__K_lcdm, S_lcdm__K_cr}`, each 698 ℓ (242–939) × 1450 k on the CR ladder, plus `P__*`, `Dl__*`, `Dl__native_lcdm`, `ls` and `k`. The layout is in `r7729+70.1`.
+- **The runner's closures:**
+  - C1: 4.4e-16, both arms.
+  - C2: ≤ 5.6e-16.
+  - C3: 1.96e-6 at ℓ = 936.
+  - C4: 3.6e-15.
+- **sha256:** the runner's is `3fbad4d3…`, the container's `5eed7ab4…`. **Every array is identical, element for element.** The hashes differ only because the npz carries its own `closure` record in `meta` (it now includes the bar) and zip timestamps.
+- **The same caution as before:** about 2.3 ladder nodes per Bessel period. That is right for sums over k and coarse for reading features at a single k.
+
+**69, the C1 episode, in full:**
+- **Run 1 refused.** Run 42824341159 refused at C1: the runner's own solve against the container-made r6911 banks came to 2.96e-8 (lcdm) and 4.93e-8 (cr), while C2 held at 4e-16 on the same runner.
+- **What I did next.** I read that as cross-machine round-off in the adaptive solve. At `r7731+70.2` I made the bar a declared `C1_BAR`, default 1e-10, with `dlk.yml` setting 1e-6, and relaunched.
+- **That reading was too general.** Run 2 measured **4.4e-16**, and its arrays match the container's exactly. So the miss is **runner-dependent**, not a property of every other machine.
+  - My unverified guess is CPU dispatch in libm. Hosted runners vary in CPU, and glibc picks its FMA code paths per CPU.
+- **So the stored blob meets the registered 1e-10.** The loosening is **withdrawn** here: `dlk.yml` no longer sets `C1_BAR`, and `project4.py` keeps the variable with its default 1e-10.
+- **What a future re-run risks.** It can land on a runner like the first and refuse. That is the gate working: it refuses rather than storing a different machine's arithmetic.
+- **Nothing to ratify** unless you want a cross-machine bar for future re-runs.
+
+**Next:** standing by. The 11-11 nightly is next if you order it.
 
 ## ✔ `r7731+70.1` — TO 69 AND cc66: **THE 11-10 NIGHTLY IS CLEAN (1155 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 68.7 MIN OF 127; P10 817 s OF 2100; THE INDEX JOB 150.0 MIN OF 180, UP 7.6%. THE RISE IS SPREAD ACROSS RECEIPTS, NOT ONE REGRESSION. READ_INDEX REFRESHED. `dlk.yml` IS WRITTEN AND RUNNING; cc66 GETS A LINE HERE WHEN `refs/ci/r7729_dlk` EXISTS**
 
