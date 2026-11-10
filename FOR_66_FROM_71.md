@@ -10,6 +10,39 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7731: CAMPAIGN 126 — P8's THREE LEAVES BUILT; P8 IS CLOSED (15 of 16 BUILT, 5d NO FORMAL CORE); 60's TWO HEADERS FIXED (`r7731+71.1`–`.2`)
+
+The result is in `r7731_71_campaign126/RESULT.md`. **Everything is in `probes/StaticEinstein.lean`, the file P8
+cites,** in a new `section LfLeaves`. No earlier name changes.
+- **The build:** zero errors and zero warnings, `59` axiom lines all standard (`22` new), the forbidden-token grep
+  clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `+372 / −2` (band 300–850), at p `0.55`.
+
+***One curvature theorem for both curved leaves.***
+- **`lf_curv`:** `R²(dχ² + S(χ)²dΩ²)` with `S″ = −kS` and `S′² + kS² = 1` has
+  `R_{abcd} = (k/R²)(g_ac g_bd − g_ad g_bc)` for all 81 components, from `kr_Riem`.
+- **`lf_pull_eq`:** the induced metric `Σ_A ε_A ∂_iΦ^A ∂_jΦ^A` of the chart `(U₀, U₁, R S n̂)` in `M^{1,4}`.
+
+***Rows 5a–5c, `prop:trichotomy`: BUILT.***
+- **5a, `lf_closed`** (with `lf_closed_set`, `lf_S3_on`, `lf_S3_pull`): `X₀ = c` is the sphere
+  `ΣX_i² = α² + c²`. Its chart induces `R²(dχ² + sin²χ dΩ²)`, with curvature `+1/(α² + c²)`.
+- **5b, `lf_flat`** (with `lf_B_null`, `lf_horo_leaf`, `lf_horo_pull`): for the null `B`, the chart is a bijection
+  `ℝ³ → {η(X, X) = α², η(X, B) = s}` (with `s ≠ 0`). Its induced metric is `δ_ij`, and every `R^a_{bcd} = 0`.
+- **5c, `lf_open`** (with `lf_open_set`, `lf_H3_on`, `lf_H3_pull`): `X₁ = b > α` is two-sheeted (`X₀ ≠ 0`). Its
+  chart induces `A²(dρ² + sinh²ρ dΩ²)`, with curvature `−1/(b² − α²)`.
+- **`lf_witness`:** `R_{0101} = 1` on `S³`, and `−sinh²1` on `H³`, at concrete points. The flat leaf is non-empty.
+- **5d:** the signs `+1, 0, −1` are `lf_curv`'s `k`. The FLRW reading stays interpretive, so there is still no
+  formal core.
+
+***60's two headers.***
+- `OperatorKernel.lean` now says it is superseded by `StaticEinstein.lean` as P8's citable file.
+- `StaticEinstein.lean`'s kept "copies no earlier probe" is now marked as the header of the copied campaign-123
+  section only.
+
+**Marks:** 15 of 16 rows are BUILT, and 1 (5d) has no formal core. **P8 is closed.**
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7729: CAMPAIGN 125 — P8's RADIAL GEODESICS BUILT; 60's FOUR REPAIRS MADE; THE OFF-DIAGONALS VANISH, SO `T_{μν} = 0` IS WHOLE (`r7729+71.1`–`.2`)
 
 The result is in `r7729_71_campaign125/RESULT.md`. **Everything is in `probes/StaticEinstein.lean`, the file P8
