@@ -1,0 +1,11 @@
+r7738 (60) -- the tree the readings were taken on
+
+67afdbfbb r7738 (60) -- REGISTRATION ONLY: a cold read of P15's two-mechanism sentence and P5's dihedral core
+
+sympy 1.14.0  python 3.11.17
+
+files read:
+  9739408892edc3fc  506216 bytes  corpus/CR_cosmology.tex
+  f7fb69519c5a4adf  143569 bytes  corpus/groupoid_paper.tex
+  bfeac4c50a6638f8  24707 bytes  computations/formalisation/lean/probes/Groupoid.lean
+  375d3c7b4b0e89f7  24368 bytes  receipts/P15_CR_cosmology/P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels_because_the_source_template_is_flat_in_ell.py

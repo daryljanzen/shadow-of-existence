@@ -1,0 +1,46 @@
+[PASS] Ⓐ① the four stems are present, raw AND flattened, in the printed order
+          flattened offsets {'location': 189676, 'presence': 190122, 'structure': 190593, 'size': 191093}; raw found 4/4; in order True
+[PASS] Ⓐ② every figure the sentence prints is carried by the receipt too
+          1.0076: paper x1, receipt x2; 1.0035: paper x1, receipt x1; 97.93: paper x1, receipt x4; 22.39: paper x1, receipt x2; 93.6: paper x1, receipt x2
+[PASS] Ⓐ③ the four stems PARTITION: location, presence, ℓ-structure, size
+          stem1 contains 'located': True; stem2's concession is 'not absent from the step': True; stem2 contains no verb of carriage: True; stem4 gives the size to both arms
+[PASS] Ⓐ④ the classifier, on BOTH classes: 0 of 4 real stems, 2 of 2 fabricated
+          real stems read: 4, flagged 0 []; fabricated read: 2, flagged 2 [0, 1]
+[PASS] ⛔ Ⓐ⑤ the three percentages in ONE sentence are NOT the same kind of quantity: 97.93 and 22.39 are AMPLITUDE fractions, 93.6 is a VARIANCE share
+          amplitude share 77.56 %; variance share (receipt) 93.56 %; variance share, no cross-term 92.28 %; sqrt of the variance share 96.73 %  ⇒ printed 93.6; readings matching it: 1 (['variance share (receipt)']); the amplitude reading, which is the kind the SAME sentence's other two percentages are computed in, is 77.6 % -- +16.0 points from what is printed
+[PASS] Ⓐ⑤ᵇ and the two fractions beside it ARE amplitude fractions, verified against the ratio the receipt pins independently
+          kernel ℓ-amplitude 0.215946 / source 0.062466 = 3.45704 against the receipt's own pinned rms ratio 3.45700
+[PASS] Ⓐ⑥ the two printed amplitudes are ONE binning's, and the sentence does not say which
+          printed 1.0076/1.0035 = primary (1.00764/1.00346); the secondary binning carries 1.01952/1.00446 (receipt hits {'1.0195': 1, '1.0045': 1}); the sentence names a binning: False, while attributing the exclusion to two of them
+[PASS] Ⓐ⑦ᵇ the discriminator is the record's OWN CONTENT and can still FAIL, exercised on both sides of the display and against a correcting word that carries no replacement (G5)
+          the figure alone -> claim; the replacement BEFORE it -> record; the replacement AFTER it -> record; a correcting WORD but no replacement -> claim  (4 controls, both classes assigned; replacements read from the receipt: ['0.042879', '0.0429', '0.0444', '0.044409'])
+[PASS] Ⓐ⑦ the repair that corrected 0.4642 left NO surviving claim (the r7732 ⑤ check)
+          occurrences read: 19 in 9 file(s); correction records: 12; this revision's own files: 7; SURVIVING CLAIMS: 0 []; and the one that matters, r7731's own VERDICT.md, reads ['On the pseudo-spectra the two-amplitude fit was an **exact a', '- ⚠ **The two-amplitude model is INCOMPLETE, not merely impe']
+[PASS] Ⓑ⓪ the σ sentence is located, raw and flattened
+          flattened offset 38412; raw offset 38664; line 275
+[PASS] Ⓑ① every gp_ name the paper cites is a DECLARATION in Groupoid.lean, and a name that is not there is not found (G5)
+          cited names read: 18; undeclared: 0 []; the negative control returns (0, 0); sample ['gp_σ_fixed', 'gp_σ_roots', 'gp_σ_sq', 'gp_τ_order']
+[PASS] Ⓑ② the two labels σ SWAPS are exactly the two gp_roots_pos proves positive
+          gp_σ_roots reads {0: 1, 1: 0, 2: 2} ⇒ moved [0, 1], fixed [2]; gp_roots_pos establishes positivity for [0, 1] (read off the declarations, 3 label statements and 2 positivity conjuncts)
+[PASS] Ⓑ③ the interval (0, π/3) is σ-STABLE, so the exchange stays where positivity is claimed
+          σ(w) = π/3 − w maps the closed endpoints to ['pi/3', '0'], so σ((0,π/3)) = (0,π/3); its interior fixed point is π/6
+[PASS] Ⓑ④ the third root -- the one σ fixes -- is NEGATIVE throughout (0, π/3), so 'fixes the third' is not a positivity claim in disguise
+          r₂ over 59 interior points: max -1.009924, min -1.154701; r₂(π/6) = -1.154701
+[PASS] Ⓑ⑤ the two parametrisations agree IDENTICALLY: 2M = r₀ − r₀³ equals (2/3√3) sin 3w
+          symbolic residual 0 (sympy 1.14.0); and each root solves the cubic: max |r³−r+2M| over 3 labels x 7 angles = 1.891e-124
+[PASS] ⛔ Ⓑ⑥ the sentence says 'the three roots', and at w = π/6 -- STRICTLY INSIDE (0, π/3) -- there are only TWO
+          disc(r³−r+2M) = 4 − 27(2M)² = 4cos²3w exactly (residual 0); it vanishes on the open interval at 1 point(s), ['pi/6']; there the roots are ['sqrt(3)/3', 'sqrt(3)/3', '-2*sqrt(3)/3'] = [0.577350269, 0.577350269, -1.154700538] -- r₀ = r₁ = 1/√3 -- and 2M = 2*sqrt(3)/9 = the Nariai mass 0.384900179460
+[PASS] Ⓑ⑦ the paper's own disclosure of π/6 stands AFTER the sentence, not before it
+          σ sentence at flattened offset 38412 (line 275); the gp_σ_fixed paragraph at 57056 (line 381) -- 18644 characters later
+[PASS] Ⓒ① gp_ψ is a MONOID HOMOMORPHISM, machine-checked -- the 'anti' is not a failure of homomorphy
+          gp_ψ : DihedralGroup 3 →* Equiv.Perm (ZMod 3) := gp_act (-AddMonoidHom.id (ZMod 3)) 1; it is built by gp_act, whose map_mul' carries a proof: True
+[PASS] Ⓒ①ᵇ and both sign conventions are homomorphisms, over all 36 pairs -- which is also the check that this table IS Mathlib's
+          pairs tested 36; e = −id homomorphic True; e = +id homomorphic True; ψ(r 1) = (2, 0, 1) is k ↦ k − 1 while the angle goes w ↦ w + 2π/3
+[PASS] Ⓒ② what is 'anti' is the SIGN: e = −id is the convention gp_root_perm's own direction r_{ψ(g)k}(g·w) = r_k(w) requires, and e = +id does not satisfy it
+          e = −id: 54 (g,k,w) triples, max |lhs−rhs| 1.085e-165; e = +id: 18 triples, max 1.918986 ⇒ the covariant sign does NOT reproduce the theorem
+[PASS] ⛭ Ⓒ③ the sentence is IMMUNE, and exactly measurably so: σ is one of exactly TWO elements on which the two conventions agree, and the only nontrivial one
+          elements read 6; conventions agree on 2 of them, [('r', 0), ('sr', 0)] = {identity, σ}; on σ both give (1, 0, 2) = 0↔1, 2 fixed, which IS gp_σ_roots; they differ on [('r', 1), ('r', 2), ('sr', 1), ('sr', 2)]
+[PASS] Ⓒ④ and the paper makes no τ-labelled root claim -- the one claim the convention would reach
+          sentences read 571; naming both τ and a labelled root: 0
+
+22 arms, 22 PASS, 0 FAIL
