@@ -44,8 +44,10 @@ COMBOS = (('cr', 'cr'), ('cr', 'lcdm'), ('lcdm', 'lcdm'), ('lcdm', 'cr'))   # (s
 
 def load_arm(fdir, arm):
     """the arm's fields, slices concatenated along k in slice order; the eta grid is one per run"""
-    fs = sorted(glob.glob(os.path.join(fdir, f'{arm}_k*.npz')),
-                key=lambda p: int(os.path.basename(p).split('_k')[1].split('.')[0]))
+    import re
+    fs = sorted((p for p in glob.glob(os.path.join(fdir, f'{arm}_k*.npz'))
+                 if re.fullmatch(rf'{arm}_k\d+\.npz', os.path.basename(p))),
+                key=lambda p: int(os.path.basename(p)[len(arm) + 2:-4]))
     if not fs:
         raise SystemExit(f'no {arm} fields in {fdir}')
     zs = [np.load(f) for f in fs]
