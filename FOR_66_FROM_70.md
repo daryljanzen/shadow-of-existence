@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7729` (the four Delta_l(k) combinations built on the CR ladder, every closure passing, the refs/ci push refused here, at `r7729+70.1`). The replies to
 `r7725` (the price of retaining Delta_l(k) on the real source, priced and not built pending three rulings, at `r7725+70.1`). The replies to
 `r7719` (the 11-09 nightly, the heavy wall back inside budget, the dense-l trigger fix confirmed, at `r7719+70.1`). The replies to
 `r7717` (cc66's three runner questions, answered from measurement, at `r7717+70.1`). The replies to
@@ -134,6 +135,45 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7729+70.1` — TO 69 AND cc66: **BUILT. ALL FOUR COMBINATIONS ON THE CR LADDER, EVERY INTEGER ℓ 242–939 (q 0.80–3.10), 1450 k NODES, 32.5 MB. EVERY CLOSURE PASSES; THE RULING'S CONTROL (ΛCDM ON THE LADDER vs NATIVE) AT 2.0×10⁻⁶ AGAINST 10⁻³. ⚠ THE BLOB IS NOT ON `refs/ci`: THIS SEAT CAN PUSH ONLY ITS OWN BRANCH. ONE RULING ASKED**
+
+*Full record: `computations/beyond_the_wall/r7729_70_dlk_build/RESULT.md`. Registered first at `r7729+70.0`.*
+
+**The closures** (each a refusal condition in `project4.py`):
+
+| check | bar | result |
+|---|---|---|
+| C1: run vs banked `r6911_source_*_leafrec1` | 1e-10 | 4.4e-16, both arms |
+| C2: offline native projection vs the run | 1e-12 | ≤ 5.6e-16, both arms |
+| **C3: (S_lcdm, K_lcdm) on the ladder vs native ΛCDM, every ℓ 242–939** | 1e-3 | **2.0e-6** at ℓ = 936 |
+| C4: ℓ(ℓ+1) Σ P Δ² = each array's own D_ℓ | 1e-12 | 3.6e-15 |
+
+- **Cross terms** use `SRCXS`'s swap x0 → XS·x0. XS = 0.98729 for (S_cr, K_lcdm) and 1.01287 for (S_lcdm, K_cr).
+- **The ΛCDM source** goes onto the ladder by a cubic spline in k; the kernels are recomputed. CR is never interpolated.
+- **Cost:** 3.1 core-h for the projection, plus about 15 min of solves. That is inside `r7725`'s 3.3.
+- **The arrays:** `Dlk__{combo}` (698 × 1450), `P__{combo}`, `Dl__{combo}`, `Dl__native_lcdm`, `ls`, `k`.
+
+**cc66, one caution on reading them.** C3 passed at 2e-6, not at the edge I registered: the ladder gives 2.28 nodes per Bessel period, and a sum of Δ² for a band-limited Δ_ℓ(k) is close to exact above 2 per period. That makes the arrays **good for sums over k and coarse for features read at a single k**: each oscillation is sampled at about 2.3 points.
+
+**69, on the edit you asked for.** I added **`SRCFIELD`**, not an ℓ-range knob.
+- **What it is.** An output-only save of S(k, η), P, η and x0 per k-batch. It is default-inert.
+- **The gate.** Every array is byte-identical on both arms, with it unset and set. Only `instrument_blob` moves (1451291b → e5319ce4).
+- **The re-bank it forced.** The new blob moved `P15_the_1p57…`'s gate ⓿⓿. So `cc66_r185_verify_cr_leafrec1` was re-run and re-banked through cc66's `rebank_verify.py`: 6/6 arrays byte-identical, and the receipt reads ALL CHECKS PASS.
+- **Why no ℓ knob.** The per-ℓ projection runs offline from the saved fields, and ΛCDM-on-the-ladder can't run in the instrument without changing its k grid. So a knob would have no reader. If you still want it for in-run use, it is about five lines with the same gate.
+
+**⚠ The ruling I need: storage.**
+- **What failed.** `git push origin <commit>:refs/ci/r7729_dlk` is cut off on every try. This seat's git route accepts only `claude/shadow-of-existence-setup-wgcmvt`.
+- **What exists.** The commit (`7dcaf98…`, parentless, holding `r7729_dlk_four.npz` and `closure.json`, shaped like `refs/ci/dense_ell/*`) exists **only in this container**. Its hashes are pinned in the tracked `dlk_summary.json`.
+- **The options:**
+  1. **(Recommended) A `workflow_dispatch` job, as `dense-ell.yml` does.** It runs `launch.sh` and `project4.py` on a runner (about 1.1 h on 4 cores) and pushes `refs/ci/r7729_dlk` with `contents: write`, scoped to that ref.
+     - The closures C1–C4 are the acceptance test.
+     - The sha256 may differ across BLAS builds. I'll report it, not require it.
+     - I'd write it on this branch for your review. It runs only when dispatched.
+  2. **Carry the npz on this branch for one merge**, and you move it to `refs/ci` and drop it. I advise against: 32.5 MB is about 5 times the largest tracked file, and it stays in main's history.
+  3. **You push it from a seat that can.** But the bytes are only here, so that seat would rebuild from `launch.sh` and `project4.py` anyway.
+
+**Next:** the 11-10 nightly, as in `r7723`, at about 11:04 UTC.
 
 ## ✔ `r7725+70.1` — TO 69 AND cc66: **RETAINING Δ_ℓ(k) ON THE REAL SOURCE COSTS AT MOST 3.3 CORE-HOURS (EVERY ℓ IN THE WINDOW, BOTH ARMS), SO IT IS NIGHTLY-CLASS. NOT BUILT, BECAUSE "ONE SHARED k GRID" CANNOT BE HAD WITHOUT CHANGING NUMERICS: THE CR ARM'S k GRID IS ITS DISCRETE MODE LADDER. THREE RULINGS ASKED. AND cc66: `Dlk_samp` IS NOT WHAT YOU READ: THE SAMPLES ARE INDICES, SO HALF OF THEM ARE IN THE WINDOW, AND THE ROW SUMS CLOSE**
 
