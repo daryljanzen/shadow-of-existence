@@ -1299,6 +1299,15 @@ _SRCD_B = []      # one (n_ls, 10) block per k-batch; C_l is a SUM over k, so th
 # above and it is why this is a separate accumulator rather than another key in theirs.*
 _DLK = os.environ.get('DLKSAVE')
 _DLK_B = []
+# ⛭ ** SRCFIELD (r7729+70): THE SOURCE FIELD S(k, eta) ITSELF, PER k-BATCH, off unless asked. **
+# *`SRCSAVE` writes the source at the visibility peak and its eta-INTEGRAL; neither is the field, and the
+# four source x kernel combinations of `r7729` need the field: the control's source interpolated in k onto
+# the CR ladder, and each arm's source projected through the other arm's distance (`SRCXS`'s x0 swap).
+# Saved exactly as `_project` holds it -- `S`, `ee`, `x0`, `kb`, and the batch-local `P` -- so an offline
+# `np.trapezoid(S * J, ee)` reproduces this run's `Cl` and that is gated.*
+#   ⌗ ** Output only: unset, nothing is appended or written and the run is byte-identical -- gated. **
+_SFLD = os.environ.get('SRCFIELD')
+_SFLD_B = []
 # ⛭ ** POLSAVE (r7631+70): THE E-MODE AND TE SPECTRA, off unless asked. **  The polarisation source this
 # instrument already carries in T (Pi, on the hierarchy path) is projected through the E-mode kernel,
 #     Delta_E,l(k) = sqrt((l+2)!/(l-2)!) * (3/4) INT g Pi j_l(k x)/(k x)^2 d(eta),
@@ -1763,6 +1772,16 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1), Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1], arm=ARM, r_s=R_S,
                  D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk))
         print(f"  POLSAVE: TT, EE and TE on {len(ls)} multipoles -> {_POLS}")
+    if _SFLD:
+        # ** SRCFIELD (r7729+70): the batches CONCATENATED along k, as `DLKSAVE`'s are; one eta grid. **
+        np.savez(_SFLD, k=np.concatenate([d['k'] for d in _SFLD_B]),
+                 P=np.concatenate([d['P'] for d in _SFLD_B]),
+                 S=np.concatenate([d['S'] for d in _SFLD_B], axis=1),
+                 eta=_SFLD_B[0]['eta'], x0=_SFLD_B[0]['x0'],
+                 batch=np.cumsum([0] + [len(d['k']) for d in _SFLD_B]),
+                 ls=ls, Cl=Cl, arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk))
+        print(f"  SRCFIELD: the source S(k, eta), {len(_SFLD_B[0]['eta'])} x "
+              f"{sum(len(d['k']) for d in _SFLD_B)} modes in {len(_SFLD_B)} batches -> {_SFLD}")
     if _DLK:
         # ** the k axis is CONCATENATED, in the batch order, and the receipt gates that the saved
         # transfer reproduces `Cl` by its own definition -- sum(P * Dlk^2) over the whole axis. **
@@ -1877,6 +1896,8 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
             S = (S - _iw0) * _tp + _iw0
     dk = np.gradient(kb)
     P = kb ** (NS - 1) / kb * dk
+    if _SFLD:                                       # SRCFIELD (r7729+70): output only
+        _SFLD_B.append(dict(k=kb.copy(), P=P.copy(), S=np.asarray(S, float).copy(), eta=ee.copy(), x0=x0.copy()))
     # ** r6911+cc66.40 -- THE SOURCE, TERM BY TERM, BEFORE THE KERNEL TOUCHES IT. **
     # *Placed after `P` on purpose: the k-measure is saved WITH the source so the receipt can show
     # that including it or leaving it out moves the contrast statistic by less than the statistic's
