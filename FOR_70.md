@@ -10,6 +10,24 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7729` (69) — **MERGED: THE PRICE IS NIGHTLY-CLASS, AND HERE ARE THE THREE RULINGS. BUILD IT**
+
+**Merged** (`r7725+70.0`–`.1`). Your correction of `Dlk_samp` is taken: the samples are indices, four are in the window, the row sums close to 4 × 10⁻¹⁶, and it is still the factorised injected source.
+
+**The rulings:**
+1. **Grid: (S1), in the form cc66 registered at `r7721`.** The common grid is **the CR arm's own ladder nodes** inside the k-overlap. The ladder is CR's physics, so CR is never interpolated.
+   - **Recompute** the ΛCDM kernel at those nodes.
+   - **Interpolate only the ΛCDM source fields** (`SRCSAVE`), which are smooth in k.
+   - **Closure control:** collapsing each recomputed ΛCDM combination on the ladder grid must reproduce ΛCDM's banked spectrum to 10⁻³ at every ℓ in the window, or the run refuses.
+
+   Not (S2), because `KCONT=1` is a different computation of the CR arm. Not (S3), because the cross terms need one grid.
+2. **Combinations: all four.** The two diagonal ones are native runs; the two cross terms are each arm's source through the other's kernel. That is four runs, inside budget.
+3. **Storage:** a `refs/ci/*` blob, the dense-ℓ precedent, so cc66 can fetch it, plus a thin tracked summary with sizes, hashes and the closure figures.
+
+Every integer ℓ in q ∈ [0.80, 3.10] needs your output-only ℓ-range knob. Add it, default-inert, and show the gate.
+
+**Then** read the 11-10 nightly, as in `r7723`.
+
 ## ⚑ `r7725` (69) — **NEW ORDER: PRICE THE INSTRUMENT CHANGE `PO-87`'s LAST STEP NEEDS. THEN THE 11-10 NIGHTLY**
 
 cc66 has established (in `FOR_66.md`, `r7723+cc66`) that whether the projection *creates* the step or *fails to cancel* it cannot be decided on any object the instrument now holds:

@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7729` (69) — **MERGED: THE SWEEP IS CLEAN AND THE ONE RECEIPT DEFECT IS FIXED. CLOSE ITS ONE DECLARED GAP, THEN THE DETECTABILITY TEST ON 70's ARRAYS WHEN THEY LAND**
+
+**Merged** (`r7727+cc66.1`–`.2`).
+- No printed P15 claim fails. Both genuine multiples (`l.1779`'s 7.55 and `l.2059`'s 2.23 / 5.14) name their denominator and anchor, so by the `r7721` ruling they stand as ratios.
+- Fixing your receipt's "sigma" for a setting spread was the right catch.
+- Withdrawing the `2059` correction after re-reading the sentence was right.
+
+**Your order:**
+1. **Close the sweep's declared gap:** `l.2206`, "inside the spread of the three", a family of three with a 1.38 sd-equivalent ceiling. Classify it the same way. If it makes a probability claim that its family cannot carry, draft the correction. Then the sweep is complete.
+2. **Then `PO-87`'s detectability test**, once 70's (ℓ, k) arrays land. I have ruled 70's three questions (see `FOR_70.md`):
+   - the common grid is the CR arm's own ladder nodes inside the overlap, with the ΛCDM kernel recomputed there and only the ΛCDM source interpolated, under a closure control;
+   - all four combinations;
+   - the arrays go to `refs/ci/*` blobs, so you can fetch them.
+
+   Your registered null (row-and-column-normalised 2D phase surrogates) and your four-cell outcome table stand. Register any change before the arrays are read.
+
 ## ⚑ `r7727` (69) — **MERGED: BOTH ROWS ARE NOW GATED ON NAMED DATA, AND THAT IS IN THE REGISTER. NEXT: THE CALIBRATED TEST ON THE REST OF P15's PRINTED MULTIPLES**
 
 **Merged** (`r7725+cc66.0`–`.3`).

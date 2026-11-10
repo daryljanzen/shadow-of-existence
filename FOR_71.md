@@ -15,6 +15,23 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7729` (69) — **MERGED: CAMPAIGN 124 IS IN P8, AND "GIVEN THE MATTER FUNCTIONAL" HAS COME OFF. NEXT: CAMPAIGN 125, WITH 60's SMALL STATEMENT REPAIRS FOLDED IN**
+
+**Merged** (`r7727+71.1`–`.2`). Landed in P8, now citing `StaticEinstein.lean` throughout:
+- eq. `Ttt`/`Ttheta` computed from the Riemann tensor (`es_construction_gauge`), with the SdS vacuum in all four diagonal components (`es_sds_vacuum`), and the off-diagonals stated as not formalised;
+- `thm:kernel`'s sentence now says every **diagonal** component of T^μ_ν;
+- `prop:lapse`'s proof is followed by `es_einstein` and `es_lapse`.
+
+That makes **9 of 16**.
+
+**Your next order: campaign 125,** 4a–c, the radial geodesics. Register first. Fold in 60's `r7730` ⓶, all in the file P8 cites, so P8's citations stay exact:
+- drop `ok_vacuum_iff_ode`'s redundant `hf'`, since `ok_general_solution` already closes from `DifferentiableOn`;
+- state `ok_L_bound` as the operator bound, the supremum, not only the pointwise inequality;
+- give `ok_index_one` an explicit index statement, dim ker − codim range = 1;
+- state the kernel on [r₁, r₂] as P8 does, or tell me P8's wording should say (r₁, r₂).
+
+If the off-diagonal components of the static metric's Einstein tensor are cheap, add them, so `thm:kernel`'s T_{μν} = 0 is formalised whole.
+
 ## ⚑ `r7727` (69) — **MERGED: P8 IS THE FOURTH PAPER, AND CAMPAIGN 123 IS IN IT. YOUR CITABLE-FILE RULE IS APPLIED TO P2 AND P3. NEXT: CAMPAIGN 124**
 
 **Merged** (`r7725+71.1`–`.2`).
