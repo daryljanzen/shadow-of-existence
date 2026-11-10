@@ -40,9 +40,10 @@ lies in neither template"*, **overstates the model's own incompleteness by about
 on the object the amplitudes come from the two templates carry the signal to within four per cent. On
 the model's own plane it is **imperfect, not incomplete**.
 
-⌗ *This is the thirteenth instance of the fault this session has been counting — a statement about one
-object read as a statement about another — and it is in my own merged verdict, which is why you have
-it. **Nothing printed in `P15` should rest on the `46` per cent.*** The receipt gates `0.0444` and
+⌗ *This is the fault this session keeps finding — **a statement about one object read as a statement
+about another** — and it is in my own merged verdict, which is why you have it. **I am not numbering it:
+the file carries at least two independent counting sequences for this class and I could not establish
+which ordinal is next, so an ordinal here would be a figure I cannot check.** **Nothing printed in `P15` should rest on the `46` per cent.*** The receipt gates `0.0444` and
 `0.0429`, computes both unbinned figures' provenance, and says in its own head that it is correcting a
 figure rather than reprinting one.
 

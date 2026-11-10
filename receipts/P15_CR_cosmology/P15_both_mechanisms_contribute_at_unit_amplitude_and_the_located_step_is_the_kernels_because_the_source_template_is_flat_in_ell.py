@@ -94,6 +94,12 @@ COMPUTES: scope.
  * The templates, the weights, the dead-cell mask and both binnings are formed HERE from the banked
    cells.  Nothing downstream of the binning is banked.
  * NOTHING IS FITTED but the two amplitudes, and no cosmological parameter is read here at all.
+ * ** COST, MEASURED ALONE ON THIS CONTAINER AND NOT ESTIMATED: `280` s, exit `0`, `12` of `12`. **
+   The suite's rule is measured x `1.7` against the per-file cap, which is `476` against `600`, so
+   this receipt is NOT declared long -- deliberately, rather than widened on a hunch.  ⌗ *The cost is
+   `40 000` null draws (two registered null constructions x two registered binnings x `10 000`) plus
+   `4 000` power trials, and the phase randomisation is `5.5` ms of each draw's `7.7`.  If a contended
+   suite ever reports this one SLOW, `280` s is the figure to compare against before raising a budget.*
 """
 import os
 import sys

@@ -25,6 +25,13 @@ banking the answer's own inputs.
 
 SOURCE: `refs/ci/r7729_dlk:r7729_dlk_four.npz`, fetched per `.github/workflows/dlk.yml` line 86.
   sha256 3fbad4d34030cf0ee36e43ccbe30dc630039996d9a5cfa6316fd85917760ccb9  (32508096 bytes)
+  Pass the fetched file as this script's one argument; it refuses anything whose hash or size differs.
+
+⌗ ** AND THIS IS NOW THE RE-RUNNABLE ROUTE TO THE VERDICT, which `r7731`'s own `four_cell.py` is not. **
+  That file's `BLOB` is an absolute path into the container that produced the merged verdict, so nobody
+  else can run it as committed.  It is left as it is -- it IS the merged instrument, and repointing it
+  would change the object the verdict was returned on -- and the receipt imports its `fit2` and
+  `surrogate` while reading this bank instead, which is how the same arithmetic becomes reproducible.
 """
 import hashlib
 import os
