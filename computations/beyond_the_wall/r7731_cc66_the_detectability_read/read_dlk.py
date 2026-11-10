@@ -105,26 +105,41 @@ def main():
          f"here it is {'NOT' if rms / scale > 1e-6 else 'STILL'} one")
     print(f"\n    ⇒ live cells (all four combinations positive): {int(live.sum())} of {live.size}\n")
 
-    # ---- Gate A5a: amendment 5's binning admissibility -------------------
+    # ---- Gate A5a, RESTATED by amendment 6 in the registration's own terms ----
+    # ⛔ The first form demanded "strictly positive", which conflates a NEGATIVE bin (fatal, no
+    #    masking fixes it) with an EXACTLY ZERO one (the underflow case amendment 3 masks).  §A5.4's
+    #    closing condition is "the same way it failed on the pseudo-spectra" -- the lowest bands dead
+    #    at EVERY l.  So the predicate is split, and both halves are measured.
     ok_all = True
     for name, w in BINS.items():
-        bad = sum(int((binned(M[c], w) <= 0).sum()) for c in C)
-        ok_all &= bad == 0
-        gate(f'A5a/{name.split()[0]}', bad == 0,
-             f"every bin's summed M is strictly positive, all four combinations [{name}]",
-             f"non-positive bin cells: {bad} of {4 * binned(M[C[0]], w).size}")
+        negs = sum(int((binned(M[c], w) < 0).sum()) for c in C)
+        allz = sum(int((binned(M[c], w) <= 0).all(axis=0).sum()) for c in C)
+        zer = sum(int((binned(M[c], w) <= 0).sum()) for c in C)
+        ok_all &= (negs == 0 and allz == 0)
+        gate(f'A5a-i/{name.split()[0]}', negs == 0,
+             f"no bin sum is NEGATIVE anywhere [{name}]  -- a negative contribution is fatal",
+             f"negative bin cells: {negs}")
+        gate(f'A5a-ii/{name.split()[0]}', allz == 0,
+             f"no bin is dead at EVERY l [{name}]  -- THAT is the pseudo-spectra failure",
+             f"bins dead at every l: {allz};  bin-cells dead at some l: {zer} "
+             f"({100.0 * zer / (4 * binned(M[C[0]], w).size):.1f}%), masked at weight 0 per amendment 3")
     if not ok_all:
-        raise SystemExit("  ⛔ the binned route is closed the same way amendment 2 closed banding; "
+        raise SystemExit("  ⛔ the binned route is closed the way amendment 2 closed banding; "
                          "reporting that rather than retuning")
 
     # ---- Gates 2, 3, 4 on each registered binning ------------------------
     read = {}
     for name, w in BINS.items():
         B = {c: binned(M[c], w) for c in C}
-        lb = {c: np.log(B[c]) for c in C}
+        dead = np.zeros(B[C[0]].shape, bool)
+        for c in C:
+            dead |= B[c] <= 0
+        with np.errstate(divide='ignore'):
+            lb = {c: np.where(dead, 0.0, np.log(np.where(B[c] > 0, B[c], 1.0))) for c in C}
         tk = lb['S_lcdm__K_cr'] - lb['S_lcdm__K_lcdm']
         ts = lb['S_cr__K_lcdm'] - lb['S_lcdm__K_lcdm']
         W = B['S_lcdm__K_lcdm'] / B['S_lcdm__K_lcdm'].sum(axis=1, keepdims=True)
+        W = np.where(dead, 0.0, W)          # amendment 6: dead bins weigh exactly 0
         col = (W * tk).sum(axis=0) / W.sum(axis=0)
         R = tk - col[None, :]
         nf = np.sqrt((W * tk * tk).sum())
