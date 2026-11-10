@@ -243,3 +243,59 @@ different object" is a reason to **re-measure**, not a reason to predict, and th
 the instrument says the finer reading is not trustworthy, **not because it helps** — binning can only lose
 discriminating power, never gain it. ⇒ **If the binned test has no power, that is the result**, and §2's
 power requirement will say so rather than being relaxed to let a verdict through.
+
+---
+
+# ⛔ AMENDMENT 6 — **Gate A5a's PREDICATE was mis-stated. It fired, and the registration's own words say it is not the closing failure.**
+
+⛭ **Registered while still blind to the verdict:** the reading script **refused at A5a and exited before
+computing Gates 2 and 3**, so no correlation, condition number or VIF has been seen. That is the one thing
+that makes this amendment safe to make, and it is why it is written now rather than after.
+
+## A6.1 What A5a said, and why that was the wrong predicate
+
+A5a demanded *"every bin's summed `M` **strictly positive**"*. ⛔ **That conflates two things amendment 5's
+own prose distinguishes**, because §A5.4's closing condition is not "any non-positive bin" but
+*"**IF IT FAILS the same way it failed on the pseudo-spectra**"* — and it names that way: the lowest bands
+inside the dead region **for every `ℓ`**, so that no binning is admissible.
+
+## A6.2 The measurements that decide it
+
+| | |
+|---|---|
+| cells with `M < 0` | ⛭ **`0`** — `P` is strictly positive at all `1450` nodes and `Dlk²  ≥ 0`, so `M ≥ 0` identically |
+| cells with `M == 0` | `62 191` of `1 012 100` (**`6.1 %`**) — exact zeros, the underflow/zero-crossing case |
+| the ladder's monotonicity | holds; `min dk = 1.95e-04` |
+| ⛔ **bins dead at EVERY `ℓ`**, primary | **`0` of `120`** |
+| ⛔ **bins dead at EVERY `ℓ`**, secondary | **`0` of `63`** |
+| bin-cells dead at *some* `ℓ` | `5.8 %` (primary), `5.4 %` (secondary) |
+
+⇒ **Nothing is negative, and no bin is dead at every `ℓ`.** On the pseudo-spectra the lowest bands were dead
+at every `ℓ`, which is what made only `B = 1` admissible. ⛭ **That condition is not met here, so the
+registration's own named closing failure has NOT occurred.**
+
+## A6.3 The amendment, which is amendment 3's mechanism and not a new one
+
+Amendment 3 **withdrew** amendment 1's support restriction for exactly this reason: a dead cell's
+contribution weight is **exactly `0`**, so masking replaces restricting and nothing is dropped. ⇒ **The same
+applies to a dead BIN**: it carries weight `0`, never enters a weighted statistic, and needs no support cut.
+
+- **A5a is restated**, in the two terms its own closing condition uses:
+  - **A5a-i.** No bin sum may be **negative** anywhere. *A negative integrand contribution is fatal and no
+    masking fixes it.* ⇒ Measured: `0`.
+  - **A5a-ii.** No bin may be **dead at every `ℓ`**. *That is the pseudo-spectra failure, and it closes the
+    route.* ⇒ Measured: `0` of `120` and `0` of `63`.
+- Dead bin-cells are **masked at weight `0`**, their log set to a finite placeholder so no `nan` arises,
+  exactly as amendment 3 does for cells.
+
+⚠ **DECLARED: I am restating a gate that fired.** That is the shape of a seat talking itself past its own
+refusal, so the defence has to be in the registration's text and not in my judgement — and it is: §A5.4
+names the closing failure as *"the same way it failed on the pseudo-spectra"*, and the measurement above
+shows it is a different way. ⌗ *Had any bin been dead at every `ℓ`, or any cell negative, the route would be
+closed and this amendment would not exist.* ⛭ **And the verdict is still unseen as this is written**, so
+nothing about the restatement can have been chosen to produce one.
+
+## A6.4 Unchanged
+
+The **threshold** — `|corr| ≤ 0.70`, `VIF ≤ 2.0` — is untouched, as in all five earlier amendments. The two
+binnings, the agreement rule, the four-cell table, the power requirement and §2c stand as registered.
