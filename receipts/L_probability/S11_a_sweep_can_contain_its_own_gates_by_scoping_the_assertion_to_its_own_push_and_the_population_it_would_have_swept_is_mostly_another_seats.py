@@ -135,6 +135,17 @@ def parity(subject):
     return 'no-rev' if r is None else ('EVEN' if r % 2 == 0 else 'ODD')
 
 
+def gating(subject):
+    """Is this subject the GATING SEAT's own?  `70` routed this at `r7731+70.1` and the reading
+    agrees: `parity` reads the ORDER id, and every seat stamps its commits with that same id --
+    `r####+70.n`, `r####+71.n`, `r####+cc66.n` -- so an ODD order id called all of them the
+    gating seat's.  Measured at `r7736` over the last 400 commits: 79 of `70`'s and `71`'s were
+    mis-attributed this way, and `70` named only its own half of that.  The gating seat tags its
+    own explicitly, so the tag is what to read.  ⌗ `parity` is kept: `Ⓔ①` measures the
+    heuristic's imperfection with it, which is the one thing it is still the right tool for."""
+    return re.search(r'r\d{4}(?:\+\d+)?\s*\(69\)', subject or '') is not None
+
+
 def listed(pre):
     """tracked AND untracked, because a sweep that reads `ls-files` alone cannot see its own
     receipt until the moment it is committed.
@@ -259,7 +270,7 @@ gate('Ⓐ②ᶜ ⌗ and the reason the detector can see them at all is worth say
      'ledger, not because it reads it*',
      any(st[0].endswith(os.path.basename(__file__)) for st in _self))
 
-_foreign = [st for st in OWN if parity(WRITERS[(st[0], st[1])][1]) == 'ODD']
+_foreign = [st for st in OWN if gating(WRITERS[(st[0], st[1])][1])]
 gate('Ⓐ③ and it is MONOTONE: not one site in the asserted set was last written by a revision of the '
      'gating seat`s parity, so no other seat`s work is inside the assertion -- *the property the '
      'order named as the requirement*', not _foreign)
@@ -364,7 +375,7 @@ gate('Ⓒ① *** A MINORITY OF THE PATH SCOPE WAS INTRODUCED BY A REVISION OF TH
      _byp['ODD'] > _byp['EVEN'] and _byp['EVEN'] > 0)
 
 _odd_lines = sorted({(s[0], s[1]) for s in SITES
-                     if parity(WRITERS[(s[0], s[1])][1]) == 'ODD'})
+                     if gating(WRITERS[(s[0], s[1])][1])})
 for rel, l in _odd_lines:
     print(f"      last written by an ODD revision: {os.path.basename(rel)[:38]:40s} L{l:<5d} "
           f"{WRITERS[(rel, l)][1][:54]}")

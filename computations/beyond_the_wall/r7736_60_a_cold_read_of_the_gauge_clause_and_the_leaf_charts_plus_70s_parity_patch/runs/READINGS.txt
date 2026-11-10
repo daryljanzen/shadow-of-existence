@@ -1,0 +1,100 @@
+
+========================================================================================================
+  A -- THE NEW eq:gauge CLAUSE, WHICH IS MINE, SO THE ARM IS BUILT TO REFUTE IT
+========================================================================================================
+  PASS      A1.landed                  1x raw, 1x flat
+  PASS      A1.in_gauge                and it sits in the sentence that introduces eq:gauge, so every later interval is downstream of it: 'the same $f$ filling the temporal and spatial slots, on the region where $f\\neq0$: the horizons '
+
+  A2  ⚠ does it REACH the sentences I offered it for?  Enumerated, not assumed.
+  PASS      A2.downstream              1 sentence(s) in P8 quantify over the radial interval, and 1 of them sit AFTER the clause ⇒ all of them are downstream of it
+      downstream  lean}): on any radial interval $(r_{1},r_{2})\subset(0,\infty)$ $T_{\mu\nu}=0$ if and only if \e
+  PASS      A2.none_restates           and none of them restates the condition locally, which is what "honest at once" means: the clause carries it and the sentences do not repeat it
+
+  A3  ⚠ and is the CLAUSE ITSELF true?  The boundary claim, computed.
+  PASS      A3.zeroset                 M=1.0, Lambda=0.03: the positive zeros of f are [2.091488, 8.788851] -- these are the horizons, and they are exactly where the chart condition fails
+  PASS      A3.zeroset                 M=1.0, Lambda=0.0: the positive zeros of f are [2.0] -- these are the horizons, and they are exactly where the chart condition fails
+  PASS      A3.zeroset                 M=0.2, Lambda=1.0: the positive zeros of f are [0.425719, 1.479498] -- these are the horizons, and they are exactly where the chart condition fails
+  PASS      A3.r0_also_out             ⚠ BUT `r = 0` is also outside the chart, by the `2M/r` term, and the clause names only the horizons. In `(0, oo)` the clause is exact; read on the whole real line it is not, and the sentence is about a chart whose coordinate already runs over the areal radius
+  PASS      A3.turning_points_true     and the second half of the clause is the paper’s own: `dr/dl = sqrt|f|` vanishes exactly at the horizons, so "turning points of the slicing curve" is that equation read back
+
+========================================================================================================
+  B -- THE THREE LEAF CHARTS, AND THE ORDER'S QUESTION ABOUT THE FLAT ONE
+========================================================================================================
+  PASS      B1.sentence                the formal sentence located by text (736 chars, bounded by its own line)
+  PASS      B1.anchor                  1x  <- '$X_{0}=c$ is the sphere of radius $\\sqrt{\\alpha^{2}+c^{2'
+  PASS      B1.anchor                  1x  <- 'the null section $\\eta(X,B)=s\\neq0$ is charted bijective'
+  PASS      B1.anchor                  1x  <- '$X_{1}=b>\\alpha$ is two-sheeted with induced curvature $'
+
+  B2  ⚭ THE ORDER’S QUESTION: is "induced by a chart" true of the FLAT leaf?
+  PASS      B2.eta_read                the ambient form is read from lf_η: signature (-,+,+,+,+) in five dimensions
+  PASS      B2.eps_read                and lf_pull contracts with that same signature, so the pullback is the INDUCED metric
+  PASS      B2.B_null                  and B is declared NULL and non-zero -- which is what makes the section "the null section"
+  PASS      B2.pullback_delta          ⚭ COMPUTED: the pullback of the horosphere chart is [[1, 0, 0], [0, 1, 0], [0, 0, 1]] = delta_ij exactly -- NON-DEGENERATE, so "induced by a chart" IS true of the flat leaf
+  PASS      B2.why                     ⚭ AND THE REASON IS THE NULLITY ITSELF: the two components built from B contribute -(dh)^2 + (dh)^2 = 0, cancelling exactly because B is null ⇒ the nullity is what makes the leaf FLAT, not what would make the pullback degenerate
+  PASS      B2.leaf_not_null           and the leaf is not a null surface: its induced metric has determinant 1, positive definite ⇒ N3 is NOT reached, and the order’s "whose chart is a bijection onto the null section" describes the DEFINING FORM and not the leaf
+  PASS      B2.negative_control        NEGATIVE control: a chart whose image runs ALONG B pulls back to [[0, 0, 0], [0, 1, 0], [0, 0, 1]], determinant 0 -- degenerate. So the arm discriminates, and the flat leaf is on the other side of that line
+  PASS      B2.on_leaf                 and the chart does land on the leaf: eta(Phi) = alpha**2 and eta(Phi, B) = s, so it is the section the sentence names
+
+  B3  the three curvature values, COMPUTED from the embedding and not read off
+  PASS      B3.curvature               the closed leaf: K = R**(-2), and with R^2 = alpha^2+c^2 that is +1/(alpha^2+c^2)
+  PASS      B3.curvature               the open leaf: K = -1/A**2, and with A^2 = b^2-alpha^2 that is -1/(b^2-alpha^2)
+  PASS      B3.flat_identically        and the flat leaf’s zero is an IDENTITY of its induced metric, not a value at a point: delta_ij has vanishing Christoffels everywhere, so every curvature component is zero
+
+  B4  the six leaf declarations, each read from its CONCLUSION and not from its name
+  PASS      B4.exists                  lf_curv      declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_curv      concludes constant curvature k/R^2 at every index quadruple  :: kr_Rlow (lf_g R S) x a b c d = k / R ^ 2 * (lf_g R S x a c * lf_g R S x 
+  PASS      B4.exists                  lf_pull_eq   declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_pull_eq   concludes the induced metric of the chart                    :: lf_pull (lf_Φ U0 U1 R S) x = Matrix.diagonal ![-V0 (x 0) ^ 2 + V1 (x 0) 
+  PASS      B4.exists                  lf_closed    declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_closed    concludes the closed leaf, on its PULLBACK                   :: kr_Rlow (lf_pull (lf_S3 c R)) x a b e d = 1 / (α ^ 2 + c ^ 2) * (lf_pull
+  PASS      B4.exists                  lf_flat      declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_flat      concludes every curvature component of the flat leaf         :: kr_Riem (lf_pull (lf_horo α s)) x a b c d = 0
+  PASS      B4.exists                  lf_open      declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_open      concludes the open leaf, on its PULLBACK                     :: kr_Rlow (lf_pull (lf_H3 b A)) x a c e d = -1 / (b ^ 2 - α ^ 2) * (lf_pul
+  PASS      B4.exists                  lf_witness   declared in StaticEinstein.lean
+  PASS      B4.concludes               lf_witness   concludes a concrete point on each leaf                      :: kr_Rlow (lf_pull (lf_S3 0 1)) ![π / 2, π / 2, 0] 0 1 0 1 = 1 ∧ kr_Rlow (
+  **FAIL**  B4.index_letters           ⌗ one cosmetic thing: the two sister theorems bind their four indices under DIFFERENT letters, ['(a b e d : Fin 3)'] against ['(a c e d : Fin 3)'] -- which binds identically in Lean and reads as a difference where there is none
+  PASS      B4.eightyone               "in all eighty-one components": lf_curv is quantified over FOUR Fin 3 indices ['(a b c d : Fin 3)'] ⇒ 3^4 = 81 = eighty-one, exact
+  PASS      B4.flat_all                and lf_flat is quantified the same way, so "every curvature component zero" is all 81 too
+  PASS      B4.witness_three           ⚠ and lf_witness covers all THREE leaves, not one: 5 conjuncts naming lf_S3, lf_H3 and lf_horo ⇒ "each leaf exhibited at a concrete point" is exact
+  PASS      B4.witness_flat_weaker     ⚭ though the flat leaf’s witness is of a different KIND from the other two: the closed and open leaves get a curvature VALUE at a point, the flat leaf gets only that the origin lies on its leaf -- which is all it needs, the curvature being identically zero, but it is not the same witness and "each ... at a concrete point" covers both senses
+
+  B5  "P8 is closed: 15 of 16 rows" -- a count in a sentence is a form
+  PASS      B5.counted                 the row comments in P8 name 0 distinct row id(s): [] — this seat cannot confirm 15 of 16 from the paper alone, and the claim is 69’s bookkeeping rather than a statement the paper makes
+  PASS      B5.five_d                  the "5d having no formal core" row is the embedding itself, which the leaf declarations now use as an ambient space without formalising it as a manifold
+
+========================================================================================================
+  C -- 70's PARITY PATCH: THE CLAIM IS VERIFIED BEFORE IT IS ACTED ON
+========================================================================================================
+
+  C1  does S11 in fact attribute by the PARITY of the order id?  Located by text.
+  PASS      C1.parity_fn               the function is there, reading the revision id and returning its parity: 'def parity(subject): r = revid(subject) return \'no-rev\' if r is None else (\'EVEN\' if r % 2 == 0 else \'ODD\') def listed(pre): """tracked '
+  PASS      C1.used_for_seats          ⚭ and it IS used to attribute a seat: an ODD id makes a claim-site FOREIGN, i.e. the gating seat’s ⇒ 70’s claim about the mechanism is VERIFIED
+
+  C2  does the defect produce the effect claimed?  Measured on this tree.
+  PASS      C2.attribution             seat (69): 27 commit(s), 27 carry an ODD id ⇒ the parity rule calls 27 of them the gating seat’s
+  PASS      C2.attribution             seat (70): 48 commit(s), 48 carry an ODD id ⇒ the parity rule calls 48 of them the gating seat’s -- WRONGLY, for all 48
+  PASS      C2.attribution             seat (71): 31 commit(s), 31 carry an ODD id ⇒ the parity rule calls 31 of them the gating seat’s -- WRONGLY, for all 31
+  PASS      C2.attribution             seat (60): 55 commit(s), 0 carry an ODD id ⇒ the parity rule calls 0 of them the gating seat’s -- WRONGLY, for all 0
+  PASS      C2.claim_holds             ⚭ 79 commit(s) of 70 and 71 carry the gating seat’s ODD order id in a `r####+NN.n` stamp and are therefore mis-attributed. Witness: "r7731+70.4 -- Q1's build-B timeout, fixed from measurement: the sampled P1"
+  PASS      C2.wider_than_claimed      ⚠ AND THE DEFECT IS WIDER THAN 70 REPORTS: it mis-attributes 71’s commits too (31 of them), not only 70’s. 70 named its own case; the mechanism catches every seat whose stamp carries 69’s id
+
+  C3  ⚠ and the receipt’s OWN self-check of this rule is VACUOUS right now
+  PASS      C3.gate_vacuous            S11’s section E reads commits whose subject matches `orders r####`, and there are 0 of them in the last 400 ⇒ its gate Ⓔ① -- "the parity rule this receipt attributes seats with is IMPERFECT and the imperfection is measured, not waved at" -- asserts over an EMPTY SET and passes for that reason
+  PASS      C3.gate_text               the gate is there and says exactly that: 'Ⓔ① the parity rule this receipt attributes seats with is IMPERFECT and the imperfection is measured, not waved at'
+  PASS      C3.second_defect           ⚭ SO THERE ARE TWO DEFECTS IN ONE MECHANISM, and 70 named one: the attribution rule is wrong for every `r####+NN.n` stamp, AND the gate that was built to measure the rule’s imperfection now ranges over nothing, because the subject form it looks for has gone out of use. An absence guard with no positive control -- which is this corpus’s own r7248
+
+  C4  is 70’s offered patch right, and is it the WHOLE fix?
+  PASS      C4.patch_fixes_named       "attribute only `r#### (69)` subjects to the gating seat": none of the 79 mis-attributed stamps carries `(69)`, so the patch does fix every one of them
+  PASS      C4.no_regression           and it costs nothing: all 27 of the gating seat’s own ODD-id commits carry ` (69)` explicitly, so none of them loses its attribution
+  **FAIL**  C4.untagged                the one way the patch could regress is a subject carrying NO seat marker at all, which it would stop attributing to anyone: 1 such commit(s) of 297 in the window. The 136 my first regex mis-binned are `r####+cc66[.n]` and `r####+1 (69)` forms, and the patch handles both correctly.
+  PASS      C4.verdict                 ⇒ N8 and N9 are NOT reached: 70’s claim is right, its patch fixes the named case and every twin of it, and it changes no correct attribution. ⌗ But it does NOT fix the vacuous gate, which is a second defect in the same mechanism and mine to carry
+
+========================================================================================================
+  THE LEDGER
+========================================================================================================
+  arms run : 58  (distinct tags 40)
+  **2 ARM(S) FAILED**: ['B4.index_letters', 'C4.untagged']
+
+  ⌭ the verdicts that are FINDINGS rather than passes are collected in RESULT.md, each
+    with the witness printed above and no count or summary string guessed from it.
