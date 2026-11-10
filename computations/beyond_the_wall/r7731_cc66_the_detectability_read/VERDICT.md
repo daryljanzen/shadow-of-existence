@@ -15,7 +15,7 @@ On the pseudo-spectra the two-amplitude fit was an **exact algebraic identity** 
 |---|---|
 | rms of `full − (t_ker + t_src)` | **`1.9521`** |
 | rms of the signal itself | **`4.2057`** |
-| ⇒ ratio | **`0.4642`** |
+| ⇒ ratio | **`0.4642`** — ⛔ *unbinned and equal-weight; see ⑤'s correction, the model's own is `0.0444`* |
 
 ⇒ **On the real computation the fit is NOT an identity.** The detectability question can be asked here,
 and this is the first object on which it could be.
@@ -67,6 +67,18 @@ the break is a property of the plane and not of the statistic. `f_sep` is **`0.9
 - ⚠ **The two-amplitude model is INCOMPLETE, not merely imperfect.** `46 %` of the plane's signal rms
   lies in **neither template** (①). ⇒ Licensed: *both contribute at unit amplitude*. **NOT** licensed:
   *the swap is exhausted by these two mechanisms.*
+  > ⛔⛔ **CORRECTED AT `r7733+cc66`, AND THE CORRECTION IS THIS BULLET'S OWN FIGURE.** The `0.4642`
+  > of ① is measured on the **unbinned** plane, counting **every cell equally**, at **unit**
+  > coefficients. The model is fitted **binned**, in the **contribution weights**, at the **fitted**
+  > coefficients — and there the ratio is **`0.0444`** (primary) and **`0.0429`** (secondary); the
+  > unbinned contribution-weighted figure is `0.2344`. ⇒ **The licence above holds in DIRECTION — the
+  > swap is still not exhausted by these two — and this bullet's "INCOMPLETE, not merely imperfect"
+  > OVERSTATES the model's own incompleteness by about a factor of ten.** On the object the amplitudes
+  > come from, the two templates carry the signal to within about four per cent in rms: *imperfect,
+  > not incomplete.* ⌗ *A statement about one object read as a statement about another, in this seat's
+  > own verdict. The corrected figures are gated in
+  > `receipts/P15_CR_cosmology/P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels_because_the_source_template_is_flat_in_ell.py`;
+  > the text above is left standing, with its error named, rather than rewritten.*
 - ⚠ **`a_src` is the less determined of the two** — its null interval is about **ten times wider** than
   `a_ker`'s on the normalised null (`±0.26` against `±0.030`). Both still exclude zero by ~`4×` their own
   interval, but the kernel amplitude is the better measured, and a reader should not take the two as

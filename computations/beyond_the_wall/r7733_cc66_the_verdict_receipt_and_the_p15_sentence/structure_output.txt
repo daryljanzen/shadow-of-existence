@@ -1,0 +1,65 @@
+`r7733+cc66` WHAT "UNIT AMPLITUDE" DOES AND DOES NOT SAY -- the decomposition behind the P15 sentence.
+
+⛔⛔ ** THIS IS A DESCRIPTIVE MEASUREMENT AND IT WAS NOT REGISTERED, which is stated here rather than
+left to be noticed. **  It sets no threshold, declares no pass and no fail, and nothing in `r7731`'s
+verdict depends on it.  It exists because order `r7733` item 2 asks for a SENTENCE, and before drafting
+one I had to know whether "both contribute at unit amplitude" licenses "both contribute equally to the
+LOCATED STEP".  ⇒ *Those are different statements, and a reader who takes the first for the second has
+been misled by the sentence rather than by the measurement.*
+
+⛭ ** AND MY OWN EXPECTATION GOING IN WAS WRONG, IN THE OPPOSITE DIRECTION. **  I expected the source
+template to be SMALL beside the kernel's, so that unit amplitude on it would be unit amplitude on a
+small thing.  It is LARGER (`0.278` against `0.219` at the primary binning).  The resolution is not
+size at all -- it is SHAPE, and that is the second measurement below.
+
+** WHAT IS MEASURED, and why these two and not others. **
+
+A located transition is a feature AT an `l`.  ⇒ A template that is CONSTANT in `l` cannot produce one,
+however large it is, because it moves every multipole by the same factor.  So the template is split
+against the weighted norm into
+    * its `k`-only part   -- the weighted mean over `l` at each `k`-bin, a featureless rescaling;
+    * its `l`-structured part -- what is left, the only part that can carry a transition,
+and then the FITTED model's `l`-structured variance is apportioned between the two terms and their
+cross term.  ⛭ *The weights are `r7723`'s amendment-2 contribution weights, the same `W` the fit uses,
+because a decomposition in an unweighted norm would be a decomposition of a different object than the
+one the amplitudes were fitted in.*
+
+⚠ The split is not unique -- "constant in `l`" is one choice of a featureless direction, and a
+different one would apportion differently.  It is the choice the printed sentence is about: `P15` says
+the transition is LOCATED, at an `l`, and a template flat in `l` is exactly what cannot locate one.
+
+====================================================================================================
+
+  ⛭ PRIMARY  (120 bins, 698 multipoles, 4867 cells masked)
+      fitted   a_ker +1.0076   a_src +1.0035   (the r7731 verdict, refitted here from the bank)
+
+      ① SIZE -- the source template is the BIGGER of the two, not the smaller
+         template rms      kernel 0.21883   source 0.27808   source/kernel 1.2708
+         contribution rms  kernel 0.22050   source 0.27905   source is 126.5 % of kernel
+
+      ② SHAPE -- and this is where they part company
+         kernel template  `l`-structured 97.93 %   `k`-only 2.07 %   (rms fractions)
+         source template  `l`-structured 22.39 %   `k`-only 77.61 %
+
+      ③ THE `l`-STRUCTURED VARIANCE OF THE FITTED MODEL, apportioned
+         kernel 0.046632 (+93.6 %)   source 0.003902 (+7.8 %)   cross -0.000693 (-1.4 %)   total 0.049841
+         ⇒ in rms the kernel carries 3.46x the source's `l`-structure
+
+  ⛭ SECONDARY  (63 bins, 698 multipoles, 2361 cells masked)
+      fitted   a_ker +1.0195   a_src +1.0045   (the r7731 verdict, refitted here from the bank)
+
+      ① SIZE -- the source template is the BIGGER of the two, not the smaller
+         template rms      kernel 0.15862   source 0.27622   source/kernel 1.7414
+         contribution rms  kernel 0.16171   source 0.27745   source is 171.6 % of kernel
+
+      ② SHAPE -- and this is where they part company
+         kernel template  `l`-structured 97.98 %   `k`-only 2.02 %   (rms fractions)
+         source template  `l`-structured 21.09 %   `k`-only 78.91 %
+
+      ③ THE `l`-STRUCTURED VARIANCE OF THE FITTED MODEL, apportioned
+         kernel 0.025107 (+93.0 %)   source 0.003425 (+12.7 %)   cross -0.001537 (-5.7 %)   total 0.026994
+         ⇒ in rms the kernel carries 2.71x the source's `l`-structure
+
+====================================================================================================
+  ⇒ UNIT AMPLITUDE IS A STATEMENT ABOUT THE COEFFICIENT, NOT ABOUT THE SHARE OF THE STEP.
+====================================================================================================
