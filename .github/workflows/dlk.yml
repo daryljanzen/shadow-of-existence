@@ -1,0 +1,86 @@
+# ⛭ `r7731` (69) ruled option 1 on `r7729+70.1`'s storage blocker: the four-combination Delta_l(k) build
+#   (`computations/beyond_the_wall/r7729_70_dlk_build/`) is re-run HERE and its blob pushed to
+#   `refs/ci/r7729_dlk`, because the code seat's container can push only its own branch.
+#
+# Modelled on `dense-ell.yml` as it stands on main (r7719), for the same three reasons:
+#   ⒜ its own concurrency group, and it does NOT cancel in progress: the job runs about an hour, and a
+#      later push to the branch must not kill it;
+#   ⒝ it is outside `gates.yml`, so it is never charged to the nightly's budget;
+#   ⒞ a push path filter on a LAUNCH file, restricted to the launching branch, plus a job-level `if:` on
+#      that ref -- so no seat's merge of main can relaunch it or move the ref.
+#
+# ⛔ THE CLOSURES ARE REFUSALS, NOT WARNINGS.  `project4.py` exits nonzero and writes no blob unless all of
+#   C1 (each run's D_l against the banked r6911 leafrec1 D_l, 1e-10), C2 (offline projection against the run,
+#   1e-12), C3 (Lambda-CDM on the CR ladder against native, every l in the window, 1e-3) and C4 (the identity,
+#   1e-12) pass ON THIS RUNNER.  C1 is also the cross-machine control: it compares this runner's solve with
+#   the container's banked one.
+# ⌗ The sha256 is REPORTED beside the container's (5eed7ab4…, `dlk_summary.json`), not required: a BLAS
+#   build can move the last bits without moving any closure.
+name: dlk — r7729 the four Delta_l(k) combinations, to refs/ci/r7729_dlk
+
+on:
+  push:
+    branches: [claude/shadow-of-existence-setup-wgcmvt]
+    paths:
+      - 'computations/beyond_the_wall/r7729_70_dlk_build/LAUNCH'
+  workflow_dispatch:
+
+permissions: { contents: read }
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/claude/shadow-of-existence-setup-wgcmvt'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240          # measured ~1.1 h wall on 4 cores in the container; the job limit is 6 h
+    permissions: { contents: write }   # only the last step pushes, and only refs/ci/r7729_dlk (GitHub has no step-level permissions)
+    concurrency:
+      group: dlk-${{ github.ref }}
+      cancel-in-progress: false
+    env:
+      D: computations/beyond_the_wall/r7729_70_dlk_build
+      R7729_OUT: /tmp/r7729          # the `runner` context is not available in job-level env
+      # ⛭ r7731+70.3: C1 runs at its REGISTERED 1e-10 here.  The first run (42824341159) refused at 2.96e-8 / 4.93e-8;
+      #   the second (42828373328, with a declared 1e-6) measured 4.4e-16 and its arrays are element-for-element
+      #   identical to the container's.  So the miss is runner-dependent, not a property of every other machine, and
+      #   the stored blob meets the registered bar: the loosening is withdrawn.  `C1_BAR` stays in project4.py, default 1e-10.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt (PO-64)
+      - run: pip install -r requirements-ci.txt
+      - name: the solves (SRCFIELD, every k-slice, both arms) and the CR verify run
+        run: bash "$D/launch.sh"
+      - name: the projection, C1-C4 as refusals
+        run: python3 -u "$D/project4.py" "$R7729_OUT/fld" "$R7729_OUT/out" --workers "$(nproc)"
+      - name: the closures and the logs, as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r7729_dlk_closure
+          path: |
+            ${{ env.R7729_OUT }}/out/closure.json
+            ${{ env.R7729_OUT }}/fld/*.log
+          if-no-files-found: warn
+          retention-days: 30
+      - name: and where cc66 can fetch it -- refs/ci/r7729_dlk
+        if: success()
+        shell: bash
+        env:
+          GIT_AUTHOR_NAME: dlk
+          GIT_AUTHOR_EMAIL: dlk@users.noreply.github.com
+          GIT_COMMITTER_NAME: dlk
+          GIT_COMMITTER_EMAIL: dlk@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          o="$R7729_OUT/out"
+          test -s "$o/r7729_dlk_four.npz"
+          sha=$(sha256sum "$o/r7729_dlk_four.npz" | cut -d' ' -f1)
+          want=$(python3 -c "import json;print(json.load(open('$D/dlk_summary.json'))['blob']['sha256'])")
+          echo "runner sha256    : $sha"
+          echo "container sha256 : $want   ($([ "$sha" = "$want" ] && echo identical || echo DIFFERENT -- reported, not required))"
+          b1=$(git hash-object -w "$o/r7729_dlk_four.npz")
+          b2=$(git hash-object -w "$o/closure.json")
+          tree=$(printf '100644 blob %s\tclosure.json\n100644 blob %s\tr7729_dlk_four.npz\n' "$b2" "$b1" | git mktree)
+          commit=$(git commit-tree "$tree" -m "r7729+70: four-combination Delta_l(k) on the CR ladder, run ${{ github.run_id }} at ${{ github.sha }}; C1-C4 pass; sha256 $sha (container $want)")
+          git push -f origin "$commit:refs/ci/r7729_dlk"
+          echo "fetch it with:  git fetch origin refs/ci/r7729_dlk && git show FETCH_HEAD:r7729_dlk_four.npz > r7729_dlk_four.npz"

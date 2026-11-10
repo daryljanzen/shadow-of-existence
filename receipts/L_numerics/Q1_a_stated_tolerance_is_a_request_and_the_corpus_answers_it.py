@@ -181,17 +181,39 @@ _EXCLUDED = ('receipts/P16_cosmogenesis_paper/P16_the_scalar_monodromy_is_four_p
              "hangs past this receipt's own 600s limit on the hosted runner at 6s local cost -- "
              "PO-69's stated limit, not a tolerance finding")
 
+# ⛭ r7731+70.4 (node 70, on 69's `r7731` routing): A SECOND SWAP, AND THIS TIME THE CAUSE IS MEASURED.
+#   ** What was measured: ** on r7731 (`1ed0595`, run 42823900048) build B (four threads) returned 'TIMEOUT'
+#   twice, a re-run included, on the TIGHTENED `P16_the_passage_is_phase_only_above_the_first_peak.py`.  That
+#   child integrates at rtol=1e-11, atol=1e-15 (DOP853), so the shim's 100x puts it at rtol=1e-13, atol=1e-17 --
+#   two decades from scipy's own rtol floor of 100*eps = 2.2e-14 and with atol below double epsilon.  There the
+#   adaptive step is set by round-off, not by the solution, so its COST depends on the machine: 157 s at one
+#   thread and 161 s at four in node 70's container (untightened 15 s and 8 s), past 600 s on the hosted
+#   runner's build B.  ** The tightened leg of that child is a measurement of the arithmetic floor, not of
+#   whether the stated tolerance was honest -- the question this receipt asks. **
+#   ** Why a swap again, and why this one: ** Q1's claim does not depend on WHICH four receipts carry the sample,
+#   and three would weaken it, so the sample stays at four.  The substitute is from the same paper, states its
+#   tolerance with room to tighten (LSODA at rtol=1e-8, atol=1e-11, so 1e-10 and 1e-13 tightened -- five decades
+#   above the floor), asserts on its integrated output (X_n at freeze-out and at T_D, and Y_p, each to 5e-4), and
+#   costs 4.3 s, and 6.1 s tightened, with every printed number unchanged.  The swapped-out child stays in the
+#   suite, where it passes at its own tolerances.
+_EXCLUDED_R7731 = ('receipts/P16_cosmogenesis_paper/P16_the_passage_is_phase_only_above_the_first_peak.py',
+                   "states rtol=1e-11, so 100x tighter is 1e-13, at the arithmetic floor, where its cost is "
+                   "set by round-off and ran past 600s on the hosted runner (157 s in the container) -- a "
+                   "measurement of the floor, not of the stated tolerance")
+
 SAMPLE = [
     'receipts/P16_cosmogenesis_paper/P16_the_mixing_is_two_pi_over_rho.py',
     'receipts/P15_CR_cosmology/P15_the_continuation_is_diagonal.py',
-    'receipts/P16_cosmogenesis_paper/P16_the_passage_is_phase_only_above_the_first_peak.py',
+    'receipts/P16_cosmogenesis_paper/P16_Yp_freezeout.py',
     'receipts/P15_CR_cosmology/P15_the_crossing_exists_and_is_empty.py',
 ]
 
 print(f"\n  ⌗ EXCLUDED FROM THE SAMPLE (r7163): {_EXCLUDED[0].split('/')[-1]}")
 print(f"      because it {_EXCLUDED[1]}.")
-print("      The sample is still four receipts and the substitute carries two solve_ivp calls"
-      " of its own.")
+print(f"  ⌗ EXCLUDED FROM THE SAMPLE (r7731+70.4): {_EXCLUDED_R7731[0].split('/')[-1]}")
+print(f"      because it {_EXCLUDED_R7731[1]}.")
+print("      The sample is still four receipts; each substitute is from the same paper and carries"
+      " solve_ivp calls of its own.")
 
 print("\nVERDICT 2 — THE SAMPLE RUNS CLEAN AS WRITTEN.")
 base = {}
