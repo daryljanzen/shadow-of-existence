@@ -15,6 +15,54 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭ `r7729+cc66` — **THE DECLARED GAP IS CLOSED AND THE SWEEP IS COMPLETE: `l.2206` MAKES NO PROBABILITY CLAIM, SO NOTHING IS OWED. `PO-87`'s TEST IS WAITING ON 70's ARRAYS, WHICH HAVE NOT LANDED**
+
+### ⛭ ITEM 1 — **`l.2206` classified the same way, and it is clean**
+
+⌗ *No new registration: "classify it the same way" means the already-registered three criteria, applied
+unchanged to one further site.*
+
+The sentence: *"The loading is separated from a reparametrization of the clock as well, **by a factor of
+six**; the driving is not, sitting **within a sixth of the largest clock reading** and **inside the spread
+of the three**."*
+
+| | |
+|---|---|
+| P15's own, correlated family, used as evidence | ✔ ✔ ✔ — in scope by all three criteria |
+| ⛔ **but is a MULTIPLE formed?** | **NO** |
+
+Its three quantities are **a ratio** (`1.096 / 0.185 = 5.92`, printed as "a factor of six"), **a ratio**
+(*"within a sixth of"*), and a **containment** (*"inside the spread"*). ⇒ **None is a quantity divided by a
+spread and read as a significance.** No sigma, no percentile.
+
+⇒ **So the `1.38` sd-equivalent ceiling does not bear on it**, and by your `r7721` ruling nothing is owed.
+**No correction drafted.**
+
+⛭ **And the direction is the opposite of a defect, which is worth recording:** a *containment* claim against
+a three-member spread is the **conservative** use of it — it asserts the weaker thing and cannot overstate.
+⚠ *Had it read "**outside** the spread of the three" as evidence that the driving **is** separated, that
+would be exactly what the ceiling catches, since `1.38` sd-equivalent is almost no evidence at all.* ⇒ **The
+sentence uses a tiny family in the only way a tiny family can honestly be used.**
+
+⇒ ⛭ **THE SWEEP IS COMPLETE.** Every site the patterns returned is classified, and the one they
+structurally could not reach is classified too. **No printed P15 claim of this form fails**; its only
+defect was in a receipt and is fixed.
+
+### ⛔ ITEM 2 — **70's arrays are NOT there yet, and I checked rather than assumed**
+
+`git ls-remote origin 'refs/ci/*'` returns **`refs/ci/carry`, `refs/ci/dense_ell/{cr_cr, cr_lcdm,
+lcdm_cr}`, `refs/ci/lean/{mathlib, physlib}`, `refs/ci/nightly`** — and the `dense_ell` three are **my own
+pseudo-spectra from `r7715`**, not 70's full-computation `(ℓ,k)` integrand. ⇒ **Nothing to read.**
+
+⌗ *Your three rulings are noted and change nothing I registered: my null (row-and-column-normalised 2D
+phase surrogates) and the four-cell outcome table stand as they are. ⚠ **One thing I will have to register
+before reading anything**: the closure control you ruled for 70's grid is **70's** control on **its own**
+construction, and my `PREDICTION_detectability.md` §2c registered **my** grid control against the banked
+spectra. Those are two different controls on two different objects, and I will not let the first stand in
+for the second — if 70's arrays come with a passing closure control, that is not my §2c, and §2c still has
+to be run on what lands.*
+
+
 ## ⛭⛔ `r7727+cc66` — **THE SWEEP FINDS NO P15 CLAIM THAT FAILS. EVERY LIVE MULTIPLE NAMES ITS OWN DENOMINATOR AND ITS ANCHOR. ONE RECEIPT CALLED A ROBUSTNESS RATIO A SIGMA — FIXED**
 
 Search registered before it ran, as you asked. `73` candidates, bucketed **mechanically** so the list

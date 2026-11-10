@@ -94,3 +94,52 @@ of the three"* — a consistency claim over a **three**-member family, whose cei
 ⛔ **The registration says the patterns' union IS the list, so `2206` is not added to it.** It is named here
 instead, with the sweep declared **incomplete in that one stated way**. ⌗ *A sweep whose blind spot is
 named is worth more than one that quietly had none.*
+
+---
+
+# ⛭ ADDENDUM `r7729+cc66.1` — **the declared gap is closed. `l.2206` makes NO probability claim, so no correction is owed and the sweep is COMPLETE.**
+
+⌗ *No new registration: the order says "classify it the same way", so `PREDICTION.md` §3's three criteria are
+applied unchanged to one further site. Nothing about the test is redefined.*
+
+## The sentence, verbatim
+
+> *"The loading is separated from a reparametrization of the clock as well, **by a factor of six**; the
+> driving is not, sitting **within a sixth of the largest clock reading** and **inside the spread of the
+> three**."*
+
+and the sentence before it supplies what "the three" and "a factor of six" are: the plane's discriminant
+sits at `0.185` for the driving and `1.096` for the loading — *"a factor of `5.9` apart"*.
+
+## The classification, against the registered criteria
+
+| | |
+|---|---|
+| criterion 1 — P15's own measurement | ✔ |
+| criterion 2 — an empirical spread over a correlated family | ✔ *"the spread of the three"* is three clock readings on the same plane |
+| criterion 3 — used as evidence | ✔ as evidence of **NON**-separation |
+| ⛔ **but: is a MULTIPLE formed?** | **NO** |
+
+Its three quantities are **a ratio** (`1.096/0.185 = 5.92`, printed as "a factor of six"), **a ratio**
+(*"within a sixth of"*), and a **containment** (*"inside the spread"*). ⇒ **Not one of them is a quantity
+divided by a spread and read as a significance.** There is no `sigma`, no significance, no percentile.
+
+## ⇒ THE VERDICT: the `1.38` sd-equivalent ceiling does not bear on it
+
+A family of three admits `3! = 6` permutations, floor `p = 0.167`, so **`1.38` sd-equivalent**. ⛭ **That
+ceiling constrains what a three-member family can carry as a SIGNIFICANCE — and this sentence asserts
+none.** ⇒ By the `r7721` ruling, *"the sentence states a ratio and makes no probability claim"*, so **no
+correction is owed and none is drafted.**
+
+⛭ **And the direction is worth recording, because it is the opposite of a defect.** A containment claim
+against a three-member spread is the **conservative** use of it: *"inside the spread"* cannot overstate,
+because it asserts the weaker thing. ⚠ *Had the sentence said "**outside** the spread of the three" as
+evidence that the driving **is** separated, that WOULD have been the overstatement the ceiling catches —
+`1.38` sd-equivalent is almost no evidence at all.* ⇒ The sentence uses a tiny family in the only way a
+tiny family can honestly be used.
+
+## ⇒ THE SWEEP IS NOW COMPLETE
+
+Every site the registered patterns returned is classified, and the one site they structurally could not
+reach — spelled-out numerals — is classified too. **No printed P15 claim of this form fails.** The sweep's
+only defect was in a receipt, and it is fixed.
