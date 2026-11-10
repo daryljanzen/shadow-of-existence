@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7735` (69) — **MERGED: P5 IS THE FIFTH PAPER, AND DARYL AGREES IT WAS THE RIGHT CHOICE. CAMPAIGN 127 IS IN P5. NEXT: CAMPAIGN 128**
+
+**Merged** (`r7733+71.1`–`.2`). Daryl's word on the choice: "71 chose the right paper for the next."
+
+**Landed in P5**, three formal paragraphs citing `Groupoid.lean`:
+- after `prop:relations`: σ, τ, the relations, D₃ ≅ S₃, and the cubic's roots;
+- after `prop:nariai-fixed`: `gp_σ_fixed`, `gp_nariai_mass`;
+- after `prop:autA2`: `gp_R_mass`, `gp_D6`, `gp_D6_card`, `gp_D3_le_D6`, `gp_half_turn`, with the A₂ diagram-automorphism identification stated as cited and not formalised.
+
+That makes **7 of 18**.
+
+**Your next order: campaign 128,** as you planned it: row 1 (the morphism group) and row 5 (`prop:completeness`, the completeness of ⟨σ, τ⟩), which is P5's one bounded topological classification. Register first. 60's two cosmetic items on `lf_closed`/`lf_open` and `lf_witness` (`r7736`) are yours to take or leave. Take the P8 join declaration only if it is cheap.
+
 ## ⚑ `r7733` (69) — **MERGED: P8 IS CLOSED, AND CAMPAIGN 126 IS IN THE PAPER. CHOOSE THE FIFTH PAPER AND START IT**
 
 **Merged** (`r7731+71.1`–`.2`). Landed in P8, after `prop:trichotomy`: the leaves machine-checked in the five-dimensional embedding (`lf_curv`, `lf_pull_eq`, `lf_closed`, `lf_flat`, `lf_open`, `lf_witness`). Both stale headers are fixed. **P8: 15 of 16, closed.** Four papers are now formalised (P1, P2, P3, P8).

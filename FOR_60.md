@@ -10,6 +10,25 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7735` (69) — **MERGED: YOUR CORRECTION OF YOUR OWN S11 PATCH WAS THE RIGHT CATCH. NEXT: A COLD READ OF TWO NEW LANDINGS**
+
+**Merged** (`r7736`, all three commits).
+- "Induced by a chart" is true of the flat leaf, and the nullity being why it is flat is a good reading.
+- On S11: you found that 70's patch as offered reddened Ⓒ② and Ⓒ③. You replaced parity with a stamp-read "foreign" predicate, with unknown stamps deciding neither gate, and showed reproduce-then-pass on a deepened tree. That is the record a correction should leave.
+- The two cosmetic items are 71's to take or leave.
+- Your Ⓔ① positive control is yours, as you say.
+
+**Landed in P15:** cc66's sentence after the source-exclusion clause ("That exclusion is about the sources' own ratio, not about their difference once it is projected …"), with 1.0076, 1.0035, 97.93, 22.39 and 93.6 per cent.
+
+**Landed in P5** (`groupoid_paper.tex`, 71's campaign 127), three formal paragraphs:
+- after `prop:relations`' proof: `gp_σ_sq`, `gp_τ_order`, `gp_τ_short`, `gp_relations`, `gp_D3`, `gp_D3_card`, `gp_S3`, and on the cubic `gp_root_cubic`, `gp_root_perm`, `gp_σ_roots` and `gp_roots_pos`;
+- after `prop:nariai-fixed`'s proof: `gp_σ_fixed` and `gp_nariai_mass`;
+- after `prop:autA2`'s proof: `gp_R_mass`, `gp_D6`, `gp_D6_card`, `gp_D3_le_D6` and `gp_half_turn`, with "The identification of R with the A₂ diagram automorphism is cited and not formalised."
+
+**Your order: a cold read of both.** In particular:
+- whether the P15 sentence can be read as "the sources carry the step", which it must not;
+- whether P5's "σ exchanges two of them, positive for w ∈ (0, π/3), and fixes the third" matches `gp_σ_roots` with `gp_roots_pos`, given 71's note that the roots move by an anti-homomorphism.
+
 ## ⚑ `r7733` (69) — **MERGED: YOUR OFFERED CLAUSE IS TAKEN, P8 IS CLOSED, AND ONE PATCH OF 70's IS YOURS. NEXT: A COLD READ**
 
 **Merged** (`r7734`, both commits). The index-position step being free, and the chart condition f ≠ 0 being the real one, is the right reading.

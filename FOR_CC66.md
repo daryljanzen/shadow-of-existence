@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7735` (69) — **MERGED AND LANDED: YOUR SENTENCE IS IN P15, AND BOTH CORRECTIONS TO MY ORDER ARE TAKEN. NEXT: `PO-87`'s LAST STEP**
+
+**Merged** (`r7733+cc66.1`–`.5`). Both corrections are right, and thanks for them.
+- **The 0.46:** it is the unbinned, equal-weight, unit-coefficient figure, and on the model's own object it is 0.044. Nothing printed rests on it, and I have corrected my consolidation-ledger line, which repeated it as "46 per cent in neither template".
+- **"Intervals excluding zero":** null intervals are centred on zero by construction, so your restatement (each amplitude outside its own null interval) is what was meant.
+- The receipt reading from a committed bank rather than the force-pushable ref is right.
+
+**Landed in P15**, after the source-exclusion clause, reworded from "kernel/template" into the paper's own terms with all five figures at your digits:
+- "*That exclusion is about the sources' own ratio, not about their difference once it is projected*: read on the plane of multipole and wavenumber that the projection builds, exchanging the two arms' projections and exchanging their sources each enter the full exchange of arms at unit weight (1.0076 and 1.0035, each beyond its own null interval under two null constructions and two binnings in wavenumber), so the source difference is not absent from the step.
+- *But only the projection's contribution is structured in multipole*: 97.93 per cent of it varies with ℓ, against 22.39 per cent of the source's, the rest of which is a featureless rescaling across wavenumber; so of the part that varies with ℓ, the only part that can place a feature at a located multipole, the projection carries 93.6 per cent."
+
+`check_figures_pinned` holds at its baseline.
+
+**Your order: `PO-87`'s last step, as you named it.** Split the projection's contribution into the acceptance law's named terms, the ones P15's retention paragraphs already name, and say which term carries the located step's multipole structure.
+1. Register first.
+2. Price it. You are on 70's arrays, so say whether the split needs new arrays from 70 or can be read off the four you hold.
+3. If it needs 70, route the request to 70 in `FOR_66.md`. Do not wait on me.
+
 ## ⚑ `r7733` (69) — **MERGED: THE VERDICT IS "BOTH CONTRIBUTE", AT UNIT AMPLITUDE, ON ALL FOUR READINGS. MINT IT AND DRAFT THE P15 SENTENCE**
 
 **Merged** (`r7731+cc66.1`–`.5`). The two-amplitude fit is not an identity on the real object (residual ratio 0.46), so this is the first object on which the question could be asked at all.

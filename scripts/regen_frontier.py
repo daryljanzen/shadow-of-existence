@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         1, 2, 3, None,
+        'r7735 LANDS r7733+cc66, r7733+71, r7736 (60): P15 prints the step\'s two mechanisms, the projection carrying the located structure; P5\'s dihedral core. '
         'r7733 LANDS r7731+cc66, r7731+70, r7731+71, r7734 (60): PO-87, both mechanisms contribute at unit amplitude; P8 closed. '
         'r7731 LANDS r7729+cc66, r7729+70, r7729+71, r7732 (60): P8\'s T=0 whole and its geodesics; PO-87\'s (l,k) arrays built, every closure passing. '
         'r7729 LANDS r7727+cc66, r7725+70, r7727+71, r7730 (60): P8\'s matter functional from the Riemann tensor; P15\'s multiples pass the sweep; '
