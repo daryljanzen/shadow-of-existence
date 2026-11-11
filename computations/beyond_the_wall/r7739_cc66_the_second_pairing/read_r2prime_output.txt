@@ -1,0 +1,33 @@
+`r7739+cc66` `R2'` — THE DECLARED SUBSTITUTE, read under `P1` AND every `P2` span variant.
+
+⛔ ** THIS IS NOT `R2`. **  `PREDICTION.md` Amendment 1 records `R2` as NOT COMPUTABLE from the handed-
+over artefacts: it needs the transfer source `S_lcdm(eta)` to rebuild Tier 1's borrowed `chi` map under
+`P2`, and no artefact carries it.  `R2'` is the SAME SPLIT -- a pure scalar normalisation against a shape
+remainder -- on the ACCEPTANCE arm, where every input is in hand.  It licenses nothing about Tier 1's
+`98.3` per cent and is never reported as `R2` discharged.
+
+⛭ ** THE NUMERATOR IS PAIRING-FREE BY CONSTRUCTION, AND THAT IS THE POINT. **  The normalisation-only
+map is `x0_lcdm * xs`, a pure scalar multiply of `lcdm`'s OWN map: nothing is borrowed, so no pairing
+enters it.  ⇒ *So `R2'` moves across pairings ONLY through its denominator, the `chi` leg.  A spread of
+`R2'` across the variants is therefore a statement about the `chi` leg alone, not about the
+normalisation -- and that is exactly what makes the ratio readable here.*
+
+⛭ The registered line is `0.80`, from Amendment 1:  `>= 0.80` under EVERY pairing confirms the reasoning
+on these objects;  `< 0.80` under ANY pairing says it was wrong there, with the number and the pairing.
+
+====================================================================================================
+
+  the scalar-only map used `x0_lcdm * xs`, xs = 1.0128706133
+  the normalisation leg, pairing-free: l-structured rms 1.563534e-04
+
+  ⛭ `R2'` = lrms(normalisation) / lrms(chi leg), the registered line 0.8
+      P1 (70, index)         chi leg rms 1.318891e-02   R2' 0.0119   BELOW line
+      P2 / grid span         chi leg rms 7.422339e-03   R2' 0.0211   BELOW line
+      P2 / sigma (mine)      chi leg rms 3.394374e-03   R2' 0.0461   BELOW line
+      P2 / 70's W            chi leg rms 1.051398e-03   R2' 0.1487   BELOW line
+
+====================================================================================================
+  ⛔ `R2'` ROW TWO: 0.0119 under P1 (70, index), below 0.8.
+     The reasoning I declined to report at `r7739+cc66.0` was WRONG on these objects,
+     and the number is 0.0119. Said plainly, as the licence requires.
+====================================================================================================

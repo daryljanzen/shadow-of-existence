@@ -1,0 +1,73 @@
+⛔ THIS IS A CUT RUN AND IT IS KEPT AS ONE.
+   `read_pairings.py` runs P1 and all THREE P2 span variants in one process. Each P2 variant
+   costs two full G builds at ~30 min each, so the window ended after `P2 / sigma (mine)` had
+   printed and before `grid span` and `70's W`. Everything below the sigma block is therefore
+   ABSENT, NOT PASSED: there is no R1 branch line here, and no R2.
+   The two remaining variants were run by `read_pairings_rest.py`, one process each, and their
+   outputs are `rest_grid_span_output.txt` and `rest_70s_W_output.txt`. The branch is fired in
+   `VERDICT_pairing.md` over all four rows together.
+
+`r7739+cc66` THE SECOND PAIRING, READ AS REGISTERED — `S1`, `R1`, `R2`.
+
+⛭ `PREDICTION.md`, registered and pushed at `r7739+cc66.1` BEFORE `refs/ci/r7737_grid` existed.
+
+** THE BUILDER IS 70's, ESTABLISHED AND NOT ASSUMED. **  Rebuilding `G_l(k) = \int g j_l(k x0) d eta`
+from `r7737_grid`'s own arrays reproduces 70's `G__g_{a}__X_{b}` at **`0.000e+00`** relative deviation
+on all four combinations, and `A_l` from those `G` at `6e-16` on all eight settings.  ⇒ *So the `P2`
+build below is the same arithmetic with one input changed, which is the only thing that makes it
+comparable.*
+
+⛔ ** ONE DEFINITION HAD TO BE CHOSEN HERE AND IT IS BRACKETED RATHER THAN PICKED. **  `PREDICTION` §④
+says `P2` rescales the borrowed map so its **span over the visibility's support** matches the source
+arm's own.  Three candidate spans exist in these arrays and they do not agree:
+
+    the GRID span ................ ratio 1.060251   (and the grid is far wider than the visibility)
+    the g-weighted sigma in chi ... ratio 1.104473   (mine: standard, parameter-free, computable)
+    70's declared `W` ............ ratio 1.155482   (the number its E4 narrative uses)
+
+and **70's `W` is reproducible from none of them** — not sigma, not 2 sigma, not the FWHM, not the grid
+span.  ⇒ *So `P2` is run under ALL THREE scale factors and the verdict is reported under each.  If the
+attribution agrees across them it is robust to the definition; if it does not, that is the finding.*
+⌗ *And I nearly reported "70's 15.5 % does not match the grid span" as a defect. It does not, but the
+grid span is not the span over the support — a statement about one object read as a statement about
+another, caught this time before it was written down.*
+
+⌗ ** THE PIVOT ** is the visibility peak, where `x0` is each arm's own `x0_at_peak` — 70's own reported
+quantity, and the one point on the map with a name.  So `P2` changes the spread and leaves the distance
+to last scattering exactly where `P1` put it.
+
+====================================================================================================
+    [PASS] input  r7737_grid.npz is the object 70 recorded
+             546977c4f05f2cffb4299900586f5a6d3ab452f561b13f9272a24bdab7dc7305
+    [PASS] input  r7737_vis.npz is the object 70 recorded
+             c3da5390680d86b2f9dddcae3738a01e88974545b1a5d1ea4c36a2739ceb6ba4
+
+  ⛭ S1 — THE GRIDS AND THE MAP, REPORTED FIRST AND NOT CONDITIONED ON WHAT FOLLOWS
+      lcdm  n 560   eta span 1853.1332   x0 span 1853.1332   x0 at g peak 13954.436899
+      cr    n 560   eta span 1964.7870   x0 span 1964.7870   x0 at g peak 14131.719665
+    [PASS] S1a  the two grids have the SAME LENGTH, so index pairing is at least well-defined
+             560 and 560
+      ⇒ grid span ratio 1.060251   g-weighted sigma ratio 1.104473   70's W ratio 1.155482   D_M ratio 1.0128706133
+    [PASS] S1b  the spans differ by more than the 0.5 per cent the registration set as 'the convention barely bites', so P1 and P2 ARE different objects
+             grid span differs by +6.03 %, the support's sigma by +10.45 %, 70's W by +15.55 %
+      ⇒ ** F_shape = 0.0321 ** (registered at r7737: <= 0.05 would mean the maps are proportional
+           and the one-parameter cross term IS the map swap)
+    [PASS] S1c  F_shape reported, 0.0321; the registered 0.05 branch FIRES
+             reported, not a pass/fail
+
+  ⛭ VERIFYING 70's P1 BUILD IS REPRODUCED, before anything is changed
+    [PASS] P1  my builder reproduces 70's G EXACTLY on all four combinations, so P2 is the same arithmetic with one input changed
+             worst relative deviation 0.000e+00 over 8x10 sampled cells (1 s)
+
+  ⛭ R1 — THE ATTRIBUTION UNDER P1 AND UNDER P2, fit-free, as a RANGE
+      (the fit-free statistic is r7737's: the l-structured rms of each single swap, no amplitudes)
+
+      P1 (70, index)
+          distance map chi   l-structured rms 1.318891e-02   =  95.06 %
+          visibility g       l-structured rms 5.863317e-04   =   4.23 %
+          comb period rs     l-structured rms 9.832969e-05   =   0.71 %
+
+      P2 / sigma (mine)
+          distance map chi   l-structured rms 3.394374e-03   =  26.70 %
+          visibility g       l-structured rms 9.218522e-03   =  72.52 %
+          comb period rs     l-structured rms 9.832969e-05   =   0.77 %
