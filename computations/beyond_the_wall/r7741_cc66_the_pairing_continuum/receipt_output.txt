@@ -83,8 +83,8 @@ COMPUTES: scope.
              min 0.66 %, max 0.77 %
     [PASS] ⛭⛔ `r7741` ** ⑪ A PURE SCALAR STRETCH OF THE MAP IS NEARLY INVISIBLE TO THIS NORMALISED ACCEPTANCE RATIO, AND THE MECHANISM IS ASSERTED RATHER THAN ARGUED ** ⇒ *`A_l` is divided by its own integral, so a pure rescaling of `chi` is a reparametrisation of wavenumber that CANCELS in the ratio, leaving only its mismatch against the comb phase, which does not rescale. Scale the comb period by the same scalar and the leg collapses to round-off.* ⛔ *This is why the scalar term that carries `98.3` per cent of the UN-NORMALISED ladder's distance leg cannot be read across to this object, and why no substitute on this arm can speak for that one.*
              collapse factor 3.329e-05 (required < 1e-3), xs 1.0128706133
-    [PASS] ⛭⛔ `r7741` ** ⑫ AND THE CLAUSE THIS ONE REFINES IS STILL IN THE PAPER: THE `93.6` PER CENT AND THE DISTANCE-RATIO NAMING ** ⇒ *the drafted sentence says the finer division is unfixed WHILE that figure stands; if the `93.6` per cent clause leaves `P15`, this sentence loses the thing it is a qualification of and has to be written again rather than inherited*
-             93.6 clause present True, distance-ratio naming present True
+    [PASS] ⛭⛔ `r7741` ** ⑫ AND THE CLAUSE THIS ONE REFINES IS STILL IN THE PAPER, ASKED OF ITS `\rcpt` KEY AND ITS FIGURE RATHER THAN OF ITS WORDING ** ⇒ *the drafted sentence says the finer division is unfixed WHILE that figure stands; if the `93.6` per cent clause leaves `P15`, this sentence loses the thing it is a qualification of and has to be written again rather than inherited.* ⛔ *Pinned on the key and the number because pinning 69's prose would fail on a reword that changed nothing -- the defect class this corpus ratchets against, which my own first draft of this gate committed.*
+             r7733 rcpt key cited True, figure present True
 
 ====================================================================================================
   OK    12 of 12 gates;  0 failure(s)

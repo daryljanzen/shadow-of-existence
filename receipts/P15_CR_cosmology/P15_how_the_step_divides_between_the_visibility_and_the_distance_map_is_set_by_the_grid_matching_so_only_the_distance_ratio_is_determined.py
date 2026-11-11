@@ -227,14 +227,27 @@ check("⛭⛔ `r7741` ** ⑪ A PURE SCALAR STRETCH OF THE MAP IS NEARLY INVISIBL
 
 # ------------------------------------------------------------------ 5 the clause this must sit beside
 TEX = open(TEXP, encoding='utf-8').read()
-_ANCHOR = 'the distance ratio carries $93.6$ per cent'
-_RATIO_NAME = "the ratio of the two arms' distances to last scattering"
-check("⛭⛔ `r7741` ** ⑫ AND THE CLAUSE THIS ONE REFINES IS STILL IN THE PAPER: THE `93.6` PER CENT AND "
-      "THE DISTANCE-RATIO NAMING ** ⇒ *the drafted sentence says the finer division is unfixed WHILE "
-      "that figure stands; if the `93.6` per cent clause leaves `P15`, this sentence loses the thing it "
-      "is a qualification of and has to be written again rather than inherited*",
-      _ANCHOR in TEX and _RATIO_NAME in TEX,
-      f"93.6 clause present {_ANCHOR in TEX}, distance-ratio naming present {_RATIO_NAME in TEX}")
+# ⛔ THESE TWO LITERALS ARE CHOSEN TO BE THE LEAST BRITTLE PAIR THAT STILL ASKS THE QUESTION, and the
+#    first draft of this gate got it wrong.  It pinned the prose clause `the distance ratio carries
+#    $93.6$ per cent` and the phrase `the ratio of the two arms' distances to last scattering` -- two
+#    sentences 69 owns.  ⇒ *That is the exact defect `check_quote_pins` exists to catch: an innocuous
+#    REWORD by the seat that owns the prose would redden this receipt while the claim stood untouched.*
+#    What this gate actually needs to know is whether the clause it qualifies is STILL THERE, and the
+#    stable name for that clause is its own `\rcpt` KEY -- an identifier, equal to a receipt filename,
+#    which 69 removes if and only if the clause goes, and which the corpus's own marker gates keep
+#    consistent.  Paired with the bare figure, which is a number rather than wording.
+_ANCHOR_KEY = ('P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels'
+               '_because_the_source_template_is_flat_in_ell')
+_FIGURE = '$93.6$ per cent'
+check("⛭⛔ `r7741` ** ⑫ AND THE CLAUSE THIS ONE REFINES IS STILL IN THE PAPER, ASKED OF ITS `\\rcpt` KEY "
+      "AND ITS FIGURE RATHER THAN OF ITS WORDING ** ⇒ *the drafted sentence says the finer division is "
+      "unfixed WHILE that figure stands; if the `93.6` per cent clause leaves `P15`, this sentence "
+      "loses the thing it is a qualification of and has to be written again rather than inherited.* "
+      "⛔ *Pinned on the key and the number because pinning 69's prose would fail on a reword that "
+      "changed nothing -- the defect class this corpus ratchets against, which my own first draft of "
+      "this gate committed.*",
+      _ANCHOR_KEY in TEX and _FIGURE in TEX,
+      f"r7733 rcpt key cited {_ANCHOR_KEY in TEX}, figure present {_FIGURE in TEX}")
 
 print("\n" + "=" * 100)
 print(f"  {'OK  ' if not FAILS else 'FAIL'}  {12 - len(FAILS)} of 12 gates;  "
