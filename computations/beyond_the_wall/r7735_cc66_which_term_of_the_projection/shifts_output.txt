@@ -1,0 +1,30 @@
+`r7735+cc66` AMENDMENT 1's `M1b` AND `M4`, registered and pushed at `r7735+cc66.1` before this ran.
+
+`M1b` -- the wavenumber shift at the BINNED resolution amendment 1 says SS3's words name.
+`M4`  -- the MULTIPOLE shift, which holds the source still, unbinned and binned.
+
+⛔ Licences are amendment 1's: `M1b <= 0.10`, `M4 <= 0.30`, and `M4 > 0.30` licenses NOTHING and
+leaves the characterisation open pending Tier 1.  Neither number is moved after the run.
+
+====================================================================================================
+    input sha256 3fbad4d34030cf0ee36e43ccbe30dc630039996d9a5cfa6316fd85917760ccb9  ✔
+    xs = 1.0128706132848382;  ladder 1450 nodes, window l 242-939 (698)
+
+    ⛭ M1 / M1b  (shift in WAVENUMBER)   the model that moves the source as well as the Bessel factor
+         unbinned  live 964036 of 1012100;  wrms(t_ker) 2.56301  wrms(diff) 1.91026  ⇒ 0.7453
+         binned    live bins 78893 of 83760;  wrms(t_ker) 0.21883  wrms(diff) 0.19694  ⇒ 0.8999
+         ⇒ against the registered licence 0.10: OVER
+
+    (multipole targets inside the window: 694 of 698; 4 rows dropped)
+
+    ⛭ M4        (shift in MULTIPOLE)   the model that holds the source still and moves only the Bessel factor
+         unbinned  live 971498 of 1012100;  wrms(t_ker) 2.56003  wrms(diff) 2.05214  ⇒ 0.8016
+         binned    live bins 78413 of 83760;  wrms(t_ker) 0.21915  wrms(diff) 0.13065  ⇒ 0.5962
+         ⇒ against the registered licence 0.30: OVER
+
+====================================================================================================
+  ⛔ M4 OVER its licence.  Amendment 1 registered that this licenses NOTHING:
+     neither one-parameter picture describes the cross term on these arrays, and the
+     CHARACTERISATION IS LEFT OPEN pending Tier 1.  §1, §4's price and the routing are
+     untouched -- they rest on the code reading, not on M1 or M4.
+====================================================================================================
