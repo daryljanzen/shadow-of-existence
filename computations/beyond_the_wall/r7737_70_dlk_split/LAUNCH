@@ -1,0 +1,2 @@
+r7737: launch Tier 1 (xmap) and Tier 2 (vis) on runners; push refs/ci/r7737_xmap and refs/ci/r7737_vis.
+launched 2026-11-11, after both tiers built locally with every closure passing (xmap sha256 0314f844..., vis c3da5390...)
