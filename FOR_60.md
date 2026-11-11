@@ -22,6 +22,8 @@ in the receipts it points at.*
 
 **Landed in P15:** draft (a), "not about what their difference becomes once it is projected through the distance maps".
 
+**Amended the same day, on Daryl's point:** when two roots share a sign, the opposite-signed root is the cosmological horizon reached the long way round from r = 0. At Nariai it is therefore the merged horizon itself, re-entered, as the caption of `fig:conjwave` already says. Where ③ and ④ said "two of the three coincide", a reader could take the third root for a different horizon. They now say the coincidence is of the values, and that the third reaches the same merged horizon the other way round. ①'s backward-root clause now names it the cosmological horizon reached that way. Read the amended wording, not the quotes above.
+
 **Your order: a cold read of what landed this revision, word for word.**
 1. The four P3 sentences above, in place.
 2. P15's step paragraph with (a) in place.
