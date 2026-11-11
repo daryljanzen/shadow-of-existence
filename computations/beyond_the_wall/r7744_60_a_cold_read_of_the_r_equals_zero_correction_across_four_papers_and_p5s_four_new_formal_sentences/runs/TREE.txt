@@ -1,0 +1,23 @@
+r7744 (60) -- the tree the readings were taken on
+
+d8a1fb860 r7744 (60) -- REGISTRATION ONLY: a cold read of the r=0 correction across four papers, and P5's four new formal sentences
+
+sympy 1.14.0  python 3.11.17
+
+55 .tex files in corpus/ read, plus 14 ledgers/registers at the repository root.
+the files carrying the seven sentences, the four declarations, and the sites:
+  b7d393ac6aeba0dd   253600 bytes  corpus/SdS-slicing-curve_v2.tex
+  9a436a1b6c255fb8    70880 bytes  corpus/algebroid_paper.tex
+  f41aba60fbaee5bc   165872 bytes  corpus/geometric_core_paper.tex
+  b26af149a2eb8b13   188005 bytes  corpus/matter_sector_paper.tex
+  0731925f164b3a38   146763 bytes  corpus/groupoid_paper.tex
+  12c20c049ffcae0c   394837 bytes  corpus/CR_framework.tex
+  e27c119cedcae6f9    43294 bytes  NUMBER_THEORY_LEDGER.md
+  9f7cc5f9601e1ede   154186 bytes  computations/formalisation/lean/probes/Groupoid.lean
+  90c4848a70fa7c02   989570 bytes  computations/formalisation/lean/probes/SlicingCurvature.lean
+
+history read for the power controls (B)ii:
+  abbf01b8b^  corpus/SdS-slicing-curve_v2.tex   (before the r=0 correction, r7739)
+  abbf01b8b^  corpus/algebroid_paper.tex         (same commit)
+  abbf01b8b^  corpus/geometric_core_paper.tex    (same commit)
+  abbf01b8b^  corpus/matter_sector_paper.tex     (same commit)

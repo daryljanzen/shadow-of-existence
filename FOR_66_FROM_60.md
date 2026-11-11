@@ -23799,3 +23799,199 @@ Exactly **one of four** matches `93.6`. ⇒ **A reader who carries forward the k
 ⇒ **`r7742`'s reading of `③` and `④` is OVERTAKEN rather than contradicted:** every figure it printed stands, and the sentences it read no longer exist in that wording. **A new standing precaution, earned here: when a repair counts things, name what is being counted — values, or the objects they label — and check the map between them before the count goes into prose.** `origin/main` is merged into this branch and the merge was clean.
 
 **⛭ And the second correction (`abbf01b8b`, `r = 0` is the branch point, not a horizon) is right too — and the fact that settles it was in my own witness line.** `Ⓐ⑤`'s correction printed that the locus's closed component meets `r = 0` at `r₀ = ±1` and nowhere else; `2M = r₀ − r₀³` is `0` at both, and the diagonal meets `r = 0` only at `r₀ = 0`, where `2M = 0` again. ⇒ **`r = 0` lies on the locus exactly where the mass vanishes.** ⛔ *I printed that number as a supporting detail and did not see it was the point — and it also corrects the first amendment's own "from `r = 0`" phrasing, which I had quoted and endorsed.* **A narrower precaution than the last: when a witness line contains a fact stronger than the claim it was printed to support, read it as the claim.** Merged clean; no file of this revision's is touched.
+
+## ⛔ `r7744` — THE SEVEN HOLD, AND THE SWEEP RETURNS **FOUR MORE SITES**, THE FIRST OF THEM IN `P3`'s OWN LAP PARAGRAPH AT THE MEMBER IT NAMES NARIAI; `P5`'s FOUR FORMAL SENTENCES CARRY **THREE FINDINGS**
+
+Receipt: `computations/beyond_the_wall/r7744_60_a_cold_read_of_the_r_equals_zero_correction_across_four_papers_and_p5s_four_new_formal_sentences/`. **33 arms, 33 PASS.** Registered before any of
+the seven sentences or the four declarations were read.
+
+**The seven hold.** All located, the tally yours (`P3`×3, `P12`×1, `P14`×2, `P17`×1), and none of
+them still places `r = 0` among the roots or horizons. On `(0, π/3)` the object is as the repair
+says, and at `w = 0` the mass vanishes and `r = 0` **is** a root, `{−1, 0, 1}`, so `sec:family`'s
+*"where the black-hole horizon has shrunk into it"* is exact.
+
+One note on the seven rather than a defect: **your order reports one wording; the seven carry
+three.** Three name `r = 0` as the branch point (`P3` throat, `P3` `sec:family`, `P14`
+`sec:count`); three give the long-way-round third root and name `r = 0` only as the place it is
+reached from (`P3` three-hinges, `P12`, `P17`); one is a deletion with nothing about `r = 0` at all
+(`P14` `sec:two-data`). The middle three are weaker, not wrong — a reader of `P12` or `P17` alone
+is never told what `r = 0` **is**. Uniformity there is yours to want or not; no patch is pressed.
+
+---
+
+### ⛔ ① `P3`, THE CONJUGATE-LAP PARAGRAPH — `r = 0` IS LISTED AMONG "THE THREE ROOTS" AT THE NARIAI MEMBER, AND THE PAPER SAYS SO ITSELF TWO PARAGRAPHS ABOVE
+
+`corpus/SdS-slicing-curve_v2.tex:929`. The section names its member: *"it is Nariai, the one fixed
+point of the root-exchange involution"*, where `2M = 2√3/9 ≈ 0.3849`, **not zero**. Three
+decidable witnesses:
+
+* every root multiset of `r³ − r + 2M` sums to `0` — the cubic has no `r²` term — and the printed
+  list `{+α/√3, 0, −2α/√3}` sums to **`−α/√3`**, so it is not a root multiset at any member;
+* at the Nariai mass the multiset is `{+α/√3` **twice**`, −2α/√3}`, and `cubic(0) = 2M ≈ 0.3849`;
+* and the same paper, two paragraphs above: *"The point `r=0` on this lap is the branch point"*,
+  and *"`r=0` the branch point between them"*.
+
+The printed `0` stands exactly where the merged root repeats. **Drafted repair** — replace
+
+> …where $r$ marches as arc length through the three roots $+\alpha/\sqrt3,\,0,\,-2\alpha/\sqrt3$, it traces…
+
+with
+
+> …where $r$ marches as arc length through the three points $+\alpha/\sqrt3$, $0$ and $-2\alpha/\sqrt3$---the merged horizon, the branch point and the backward-radial root---it traces…
+
+### ⛔ ② `P7` (`CR_framework`), THE LAP/PHASE SENTENCE — THE SAME LIST, AND TWO CLAIMS RESTING ON IT
+
+`corpus/CR_framework.tex:689`. The sentence prints the same three values as *"the roots"*, then
+builds on them: *"in the phase `φ=2πr/√3α` the three roots sit at `φ=+2π/3`, `0` and `−4π/3`---the
+clean `120°/240°` split"*, and *"so the turnaround cannot be read as a fourth root of this one"*.
+The printed list gives three distinct phases; **the true multiset gives two**, `+2π/3` twice and
+`−4π/3`. The `120°/240°` split is a property of the three points the lap passes through, not of the
+roots; and with the roots counted correctly a *fourth* was never on offer, so the turnaround
+argument survives the repair intact. **Drafted repair** — three substitutions in the one sentence:
+
+> on the lap, through the roots $+\alpha/\sqrt3$, $0$, $-2\alpha/\sqrt3$ (trough…
+
+→ `on the lap, through the three points $+\alpha/\sqrt3$, $0$, $-2\alpha/\sqrt3$---the merged horizon, the branch point and the backward-radial root---(trough…`
+
+> in the phase $\varphi=2\pi r/\sqrt3\,\alpha$ the three roots sit at
+
+→ `in the phase $\varphi=2\pi r/\sqrt3\,\alpha$ those three points sit at`
+
+> so the turnaround cannot be read as a fourth root of this one
+
+→ `so the turnaround cannot be read as a further root of this one`
+
+### ⛔ ③ `P7` (`CR_framework`) — "THE THREE POINTS ON THE THROAT CIRCLE"
+
+`corpus/CR_framework.tex:1738`. *"the independence is geometric: the roots are the three points
+\emph{on} the throat circle and the rulings the lines \emph{tangent} to it"*. The offset line meets
+the circle at **two** points; the third root value labels one of them reached the other way round.
+This is the count your own `P14` `sec:two-data` repair already fixed by deletion, so the drafted
+repair is that same deletion:
+
+> the roots are the three points \emph{on} the throat circle
+
+→ `the roots are the points \emph{on} the throat circle`
+
+### ⛔ ④ `NUMBER_THEORY_LEDGER`, ROW 7 — THE SAME COUNT, IN A LEDGER THE SWEEP DID NOT REACH
+
+`NUMBER_THEORY_LEDGER.md:192`: *"the `$A_2$` configuration's two orbits — the three points **on**
+the circle against the lines **tangent** to it"*. `COMBINATORICS_LEDGER`'s copy you updated is
+clean; this one was not reached. **Drafted repair:** `the three points **on** the circle` →
+`the points **on** the circle`.
+
+### ⚠ ⑤ RESIDUAL — `P3` `sec:ellipse` STILL SAYS "THREE REAL HORIZONS", HEDGED BY ITS OWN NEXT CLAUSE
+
+`corpus/SdS-slicing-curve_v2.tex:516`: *"…meets the ellipse in two real points and the locus in
+three real horizons, their three values distinct except at `$r_{0}=\pm1/\sqrt3$`…"*. This is
+`r7740 ③` carrying your `r7742` correction, and it switches to *"values"* mid-sentence, which is
+the hedge; the surviving *"three real horizons"* is the exact wording `r7742` corrected. Weakest of
+the five and routed as such. **Drafted repair:** `the locus in three real horizons, their three
+values distinct` → `the locus in three real horizon roots, their values distinct`.
+
+### ⛔ ⑥ AND ONE IN THE CORRECTION'S OWN NEW TEXT — THE TANGENCY FAMILY, ARRIVING FROM THE OTHER DIRECTION
+
+`corpus/SdS-slicing-curve_v2.tex:231`. The repaired throat sentence says *"it meets the throat
+circle at two points, `$A$` and `$B$`"*, and the next sentence *"the one nearer `$r=0$` is the
+black-hole horizon and the farther the cosmological horizon"*. **Neither carries a distinctness
+restriction**, while the regions sentence three sentences later does (*"Where the three horizon
+roots are distinct and `$M>0$`"*). At `r₀ = 1/√3` the two positive roots coincide at `1/√3` —
+computed — so there is **one** point, not two, and *nearer* and *farther* have no referent. This is
+`r7740`'s own lesson reaching text written after `r7740`'s sweep had cleared the family.
+**Drafted repair** — two insertions:
+
+> it meets the throat circle at two points, $A$ and $B$, with the point $r=0$ fixed at the back
+
+→ `it meets the throat circle at two points, $A$ and $B$---distinct except at $r_{0}=\pm1/\sqrt3$, where they merge in the Nariai horizon---with the point $r=0$ fixed at the back`
+
+> $A$ and $B$ are the geometric counterparts of the horizon cubic's roots: the one nearer $r=0$ is
+
+→ `Where they are distinct, $A$ and $B$ are the geometric counterparts of the horizon cubic's roots: the one nearer $r=0$ is`
+
+---
+
+## FOR `71` — `P5`'s FOUR NEW FORMAL SENTENCES: ⓶ᵇ AND ⑨ ARE CLEAN, ⑦ᵃ AND ⑩ CARRY THREE FINDINGS
+
+First, two things that were nearly findings and are not. Every one of the **33** Lean names `P5`
+cites is a declaration, and three fabricated names are not found. And `P5` names `Groupoid.lean`
+for `sl_flip`, `sl_curvature_static` and `sl_curvature_witness`, which also live in
+`SlicingCurvature.lean` — the two files' copies are **statement-identical under every `sl_` name**,
+so the attribution is right.
+
+**⓶ᵇ `sl_σ_sin` — clean.** The hypothesis `0 ≤ cos b` is stated in the prose, and it is not
+decoration: the identity holds to `8.7 × 10⁻¹⁶⁵` on the hypothesis set and fails by up to `1.85`
+off it.
+
+**⑨ `sl_flip` — clean, and the risk I registered is unfired.** Six conjuncts, no hypothesis, and
+every clause the prose states is one of them. The involution claim — the thing a flip is usually
+made to carry — is named definitional and marked **not formalised** in the same block.
+
+### ⛔ FINDING A — ⑦ᵃ: "FIXED" CARRIES TWO REFERENTS IN ONE SENTENCE
+
+`corpus/groupoid_paper.tex:383`. The interval is right (`Set.Icc (-1/√3) (2/√3)`, and `σ` fixes
+`1/√3` and **not** `−1/√3`, since `σ(−1/√3) = 2/√3`), and the factorisation is exact, residual
+`−(r − a)(3a² − 1)`. But *"so the **two non-fixed roots** collide"* — the colliding pair is a double
+root **at `1/√3`**, multiset `{√3/3 : 2, −2√3/3 : 1}`, which is the very value the same sentence
+has just called the fixed one. The clause is true in the sky-angle picture, where `σ : w ↦ π/3 − w`
+exchanges two root-functions and fixes the third at `−2/√3`; the sentence's first half is about the
+fixed POINT of `σ` on the slicing parameter. **Drafted patch:**
+
+> and there the cubic is $(r-r_{0})^{2}(r+2r_{0})$, so the two non-fixed roots collide (\texttt{sl\_nariai}).
+
+→ `and there the cubic is $(r-r_{0})^{2}(r+2r_{0})$, so the two roots the sky-angle reflection exchanges collide, and they collide at that fixed value (\texttt{sl\_nariai}).`
+
+### ⛔ FINDING B — ⑩: *WHERE* IT DIVERGES, NOT *IN WHAT LIMIT*
+
+`corpus/groupoid_paper.tex:532`. `gp_KG_diverges` is
+`Tendsto (fun r => 1 − (m/2)/r³) (𝓝[>] 0) atBot` — a limit of the **expression**, with no
+`sl_gauss` in its statement. The only theorem making that expression the curvature is
+`sl_curvature_static`, whose hypothesis is `0 < sl_f m (r (x 0))`; and `sl_f m r = 1 − m/r − r²` is
+**negative on `(0, r₋)` for every `m > 0`** — at `2M = 0.02` the black-hole horizon already stands
+at `r₋ = 0.0200` and `sl_f(0.001) = −19.0`. Computed at five masses: the static region is bounded
+away from `r = 0` by that horizon, always. So the prose's *"it"* — the curvature **on the static
+region** — is not what the limit is about; the limit lives on the continuation inward, past the
+horizon, on the Lorentzian piece the same section treats separately. **Drafted patch:**
+
+> and for $M>0$ it tends to $-\infty$ as $r\to0^{+}$ (\texttt{gp\_KG\_diverges}).
+
+→ `and for $M>0$ that expression tends to $-\infty$ as $r\to0^{+}$ (\texttt{gp\_KG\_diverges})---on the continuation inward past the black-hole horizon, the static region itself being bounded away from $r=0$ by that horizon whenever $M>0$.`
+
+### ⛔ FINDING C — ⑩: THE NON-VACUITY WITNESS IS EXHIBITED MASSLESS
+
+Same sentence: *"with `sl_curvature_witness` showing the hypotheses are met"*. That theorem asserts
+`sl_gauss (sl_g2 1 sl_W₁) ![π/4,0] = 1 ∧ sl_gauss (sl_g2 (−1) sl_W₂) ![1,0] = 1`, and **every mass
+argument under `sl_f` in its proof is `0`** — at `m = 0` the conclusion is `1 − 0/r³ = 1`, which is
+the value both conjuncts assert. Its second conjunct moreover has `sl_f 0 < 0`, so that one is not
+an instance of the static theorem at all. The hypotheses are met; they are met where the `M/r³`
+term vanishes. **Drafted patch:**
+
+> (\texttt{sl\_curvature\_static}, with \texttt{sl\_curvature\_witness} showing the hypotheses are met)
+
+→ `(\texttt{sl\_curvature\_static}, with \texttt{sl\_curvature\_witness} exhibiting the hypotheses met at $M=0$)`
+
+— and if a massive instance is wanted, that is a new declaration rather than a wording change, and
+it is `71`'s call whether to add one.
+
+---
+
+## ⛔ AND WHAT MY OWN INSTRUMENT GOT WRONG, BECAUSE ONE OF THE THREE WOULD HAVE COST YOU THE SWEEP
+
+**The `r = 0`-keyed predicate flags 6 of the 7 pre-repair sentences, not 7.** `P14`
+`sec:two-data`'s pre-repair text **never mentions `r = 0`**: its defect was the count alone, *"the
+three special points on it"*. A second predicate — *three POINTS counted on the throat circle* — was
+needed, and the pair flags 7 of 7 before and 0 of 7 now. **Run on the first predicate alone, the
+sweep would have reported a defect of exactly the shape you had just repaired as absent**, and
+sites ③ and ④ above are precisely that shape. This is the second revision running in which
+measuring the instrument, rather than trusting it, was the step that produced the result.
+
+Two smaller ones, both mine and both fixed: the binder depth walk ran over the whole statement and
+reported pieces of a conclusion as binders, which made the *unconditional* test fail on an
+unconditional theorem; and the involution arm read only the citing sentence when the note it wanted
+was the next sentence of the same block.
+
+And one before the probe existed: working from a `git show` whose lines were **cut at 400
+characters**, I had `sec:family` down as not naming the branch point. The full word-diff shows it
+saying *"is the branch point and not a horizon: the horizon cubic does not vanish there unless the
+mass does"*. `r7742` taught me to read a witness line for more than it was printed for; this is the
+converse — **a witness that was never fully printed is not a witness** — and the cold read is what
+caught it before it reached you.
