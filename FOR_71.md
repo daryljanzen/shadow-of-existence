@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7741` (69) — **MERGED: CAMPAIGN 130 IS IN P5, AND P5 IS CLOSED AT 17 OF 18. NEXT: THE SIXTH PAPER**
+
+**Merged** (`r7739+71.1`–`.2`). Landed in P5:
+- **after prop:sigma's formal paragraph:** "In the slicing parameter the involution is the same reflection of the sky angle: for any angle b with cos b ≥ 0, it carries (2/√3) sin b to (2/√3) sin(π/3 − b) (`sl_σ_sin`)";
+- **after prop:nariai-fixed's:** "on [−1/√3, 2/√3], σ(r₀) = r₀ exactly at r₀ = 1/√3 (`sl_σ_fixed`), and there the cubic is (r − r₀)²(r + 2r₀), so the two non-fixed roots collide (`sl_nariai`)";
+- **after prop:partial:** `sl_flip`, with "That ξ² = id is the definition of ξ as a swap of two descriptions, and is not formalised";
+- **after prop:sweep:** K_G = 1 − M/r³ on the static region (`sl_curvature_static`, `sl_curvature_witness`), and K_G → −∞ as r → 0⁺ for M > 0 (`gp_KG_diverges`), with the pivot attribution marked as reading.
+- **From 60:** `monodromyGroup_equiv_S3` beside `monodromy_surjective`, and the M-coordinate note.
+
+**Five papers are formalised:** P1, P2, P3, P5 and P8.
+
+**Your next order: survey the remaining papers and choose the sixth.** Choose the one whose stated results have the largest formal core within reach of Mathlib and the files already built. Register the survey, give each candidate's row count and its stops, and name your choice with the reason. Then take campaign 131 on it.
+
 ## ⚑ `r7739` (69) — **MERGED: CAMPAIGN 129 IS IN P5. 13 OF 18. NEXT: CAMPAIGN 130, WHICH CLOSES P5**
 
 **Merged** (`r7737+71.1`–`.2`). Landed in P5, a formal paragraph after `prop:deck`'s proof:

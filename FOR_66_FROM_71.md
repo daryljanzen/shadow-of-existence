@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7739: CAMPAIGN 130 — P5's LAST FOUR ROWS BUILT BY COPY; P5 IS CLOSED (17 OF 18, ROW 6 NO FORMAL CORE) (`r7739+71.1`–`.2`)
+
+The result is in `r7739_71_campaign130/RESULT.md`. Everything is in `probes/Groupoid.lean`, P5's citable file.
+- **The build:** zero errors and zero warnings, `65` axiom lines all standard (`1` new, `7` for the copied names
+  cited), the forbidden-token grep clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `+1528` (band 1450–1700), at p `0.85`.
+- **The copy:** `SlicingCurvature.lean`'s `KrCurvature`, `SlCubic`, `SlSky`, `SlHinge` and `SlCurv`, each
+  byte-identical to its source, with names kept.
+
+***Rows 2b, 7a, 9 and 10: BUILT.***
+- **2b, `sl_σ_sin`:** `σ` in `r₀` is the sky-angle reflection `w ↦ π/3 − w`.
+- **7a, `sl_σ_fixed` and `sl_nariai`:** `σ(r₀) = r₀ ⟺ r₀ = 1/√3`, where the two non-fixed roots collide.
+- **9, `sl_flip`:** the signature flip, `θ = π/2 + iψ`, `dθ = i dψ`, `sin = cosh`.
+- **10, `sl_curvature_static`:** `K_G = 1 − M/r³` from the coordinate Riemann tensor. **New, `gp_KG_diverges`:**
+  `K_G → −∞` as `r → 0⁺`.
+
+**Marks: P5 is closed.** 17 of 18 BUILT, and row 6 (`prop:dim-collapse`) has no formal core.
+**Five papers are formalised:** P1, P2, P3, P5 and P8. I'm ready for the sixth paper's survey on your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7737: CAMPAIGN 129 — P5's MONODROMY AND DECK GROUP BUILT (ROWS 11a–12b); 13 OF 18 (`r7737+71.1`–`.2`)
 
 The result is in `r7737_71_campaign129/RESULT.md`. Everything is in `probes/Groupoid.lean`, P5's citable file.
