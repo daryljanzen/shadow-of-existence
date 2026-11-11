@@ -2,6 +2,18 @@
 P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels_because_the_source_template_is_flat_in_ell
 ==============================================================================================================================
 
+⛭⛭ ** RE-LABELLED AT `r7737`, SO THIS RECEIPT AND `P15` NAME ONE OBJECT. **  `r7735` established, by
+reading 70's builder, that the leg this receipt first called "the KERNEL difference" is **the ratio of
+the two arms' distances to last scattering** and nothing else, and that the leg it called "the SOURCE
+difference" is **the arms' sources together with their distance maps, time grids and tilts**.  `P15`
+now prints those names and `r7737` ordered the gate text here to match.  ⇒ *Every gate's prose below is
+re-labelled.  **No figure changed, and the file was re-run after the re-labelling: `12` of `12`.***
+ ⛔ ** WHAT IS NOT RENAMED, AND WHY RENAMING IT WOULD BE WRONG. **  ⒜ This file's NAME, which is the
+ paper's `\rcpt{}` key: 69 placed that marker, renaming the file here would dangle it, and the move is
+ 69's to make.  ⒝ The identifiers `a_ker`, `t_ker` and the `POW` keys, because `fit2` and `surrogate`
+ are imported from `r7731`'s MERGED instrument and those are its names.  *An identifier that still says
+ `ker` is a pointer to that instrument; the prose beside it says what the object is.*
+
 LEVEL: `r7733`'s order ① -- ** mint the `BOTH CONTRIBUTE` verdict `r7731` returned on 70's real
 `(l, k)` arrays, at the weight `r7731` licensed and no more. **  No new physics, no refit of any
 cosmology, nothing touching the banks.  The test is `r7723`'s registration
@@ -9,14 +21,15 @@ cosmology, nothing touching the banks.  The test is `r7723`'s registration
 imported here rather than copied.
 
 ** WHAT THE VERDICT IS. **  The log-swap from `(S_lcdm, K_lcdm)` to `(S_cr, K_cr)` is fitted by two
-templates -- the KERNEL difference at fixed source, and the SOURCE difference at fixed kernel -- in
+templates -- the DISTANCE RATIO at fixed source, and the SOURCES-WITH-THEIR-MAPS at fixed distance -- in
 `r7723`'s amendment-2 contribution weights.  ** Both amplitudes land within two per cent of unity, and
 both exclude zero on all four readings ** (two registered null constructions x two registered
 binnings), with power `1.000` to recover a planted signal of either kind.
 
  ⚑⚑ (1) ** BOTH CONTRIBUTE, AT UNIT AMPLITUDE. **  `a_ker` `+1.0076`, `a_src` `+1.0035` at the primary
      binning; `+1.0195`, `+1.0045` at the secondary.  The order's question was *"does the projection
-     CREATE the step or FAIL TO CANCEL it"* -- and that is a false either-or.  `r7723` SS1 registered
+     CREATE the step or FAIL TO CANCEL it"* -- its word, and `r7735` showed the object is the distance
+     ratio -- and that is a false either-or.  `r7723` SS1 registered
      the fourth cell in advance, with the note that the three offered names do not partition the
      outcome space.
 
@@ -48,11 +61,11 @@ binnings), with power `1.000` to recover a planted signal of either kind.
      what the `P15` sentence has to get right. **  A located transition is a feature AT an `l`, so a
      template CONSTANT in `l` cannot make one however large it is.  Split against the same weighted
      norm:
-       * the KERNEL template is `97.93 %` `l`-structured (primary), `97.98 %` (secondary);
+       * the DISTANCE-RATIO template is `97.93 %` `l`-structured (primary), `97.98 %` (secondary);
        * the SOURCE template is `22.39 %` `l`-structured (primary), `21.09 %` (secondary) -- ** more
          than three quarters of it is a featureless rescaling across `k` **;
-       * and of the fitted model's `l`-structured variance the KERNEL carries `93.6 %` (primary) and
-         `93.0 %` (secondary), the kernel's `l`-structure exceeding the source's by `3.46x` and
+       * and of the fitted model's `l`-structured variance the DISTANCE RATIO carries `93.6 %`
+         (primary) and `93.0 %` (secondary), its `l`-structure exceeding the other leg's by `3.46x` and
          `2.71x` in rms.
      ⇒ *** The source difference enters the exchange at full weight and carries almost none of the
      structure that LOCATES the transition.  That is how this verdict sits beside `P15`'s printed
@@ -175,7 +188,8 @@ for name, tag in READINGS:
 # ---------------------------------------------------------------- (1) both amplitudes at unity
 _a = {n: FIT[n] for n, _ in READINGS}
 check("⛭⛔ `r7733` ** ⓵ BOTH AMPLITUDES ARE WITHIN TWO PER CENT OF UNITY, ON BOTH REGISTERED "
-      "BINNINGS ** ⇒ *the kernel difference and the source difference each enter the full log-swap at "
+      "BINNINGS ** ⇒ *the distance ratio and the sources-with-their-maps each enter the full log-swap "
+      "at "
       "unit coefficient; the order's `creates` / `fails to cancel` either-or is false, and `r7723` SS1 "
       "registered this fourth cell in advance*",
       all(abs(v - 1.0) <= UNIT_TOL for n, _ in READINGS for v in _a[n])
@@ -220,8 +234,9 @@ for name, tag in READINGS:
     vx = float(2 * (W * (ak * lk) * (asrc * lsr)).sum() / W.sum())
     VS[name] = (vk / (vk + vs + vx), vs / (vk + vs + vx), float(np.sqrt(vk / vs)))
 
-check("⛭⛔ `r7733` ** ⓸ AND THE SOURCE TEMPLATE IS ALMOST FLAT IN `l` WHILE THE KERNEL'S IS NOT: "
-      "`97.93 %` of the kernel template is `l`-structured against `22.39 %` of the source's ** ⇒ *a "
+check("⛭⛔ `r7733` ** ⓸ AND THE SOURCES' TEMPLATE IS ALMOST FLAT IN `l` WHILE THE DISTANCE RATIO'S IS "
+      "NOT: `97.93 %` of the distance-ratio template is `l`-structured against `22.39 %` of the "
+      "sources' ** ⇒ *a "
       "located transition is a feature AT an `l`, so a template constant in `l` cannot make one "
       "however large it is -- and the source template is the LARGER of the two, so this is shape and "
       "not size*",
@@ -235,11 +250,12 @@ check("⛭⛔ `r7733` ** ⓸ AND THE SOURCE TEMPLATE IS ALMOST FLAT IN `l` WHILE
       and abs(100 * SH['PRIMARY'][1] - 22.386) < 5e-3
       and abs(100 * SH['SECONDARY'][0] - 97.983) < 5e-3
       and abs(100 * SH['SECONDARY'][1] - 21.093) < 5e-3,
-      f"primary kernel {100 * SH['PRIMARY'][0]:.2f} % / source {100 * SH['PRIMARY'][1]:.2f} %; "
+      f"primary distance-ratio {100 * SH['PRIMARY'][0]:.2f} % / sources {100 * SH['PRIMARY'][1]:.2f} %; "
       f"secondary {100 * SH['SECONDARY'][0]:.2f} % / {100 * SH['SECONDARY'][1]:.2f} %; "
-      f"template rms {SH['PRIMARY'][2]:.5f} kernel vs {SH['PRIMARY'][3]:.5f} source")
+      f"template rms {SH['PRIMARY'][2]:.5f} distance-ratio vs {SH['PRIMARY'][3]:.5f} sources")
 check("⛭⛔ `r7733` ** ⓹ SO OF THE FITTED MODEL'S `l`-STRUCTURED VARIANCE -- THE ONLY PART THAT CAN "
-      "PUT A FEATURE AT A LOCATED MULTIPOLE -- THE KERNEL CARRIES `93.6 %` AND `93.0 %` ** ⇒ *this is "
+      "PUT A FEATURE AT A LOCATED MULTIPOLE -- THE DISTANCE RATIO CARRIES `93.6 %` AND `93.0 %` ** ⇒ "
+      "*this is "
       "the figure the `P15` sentence rests on: unit amplitude is a statement about the COEFFICIENT, "
       "not about the share of the located step*",
       abs(VS['PRIMARY'][0] - 0.935623) < 5e-6 and abs(VS['SECONDARY'][0] - 0.930071) < 5e-6
@@ -247,7 +263,7 @@ check("⛭⛔ `r7733` ** ⓹ SO OF THE FITTED MODEL'S `l`-STRUCTURED VARIANCE --
       # ⛔ and in per cent, as printed -- see gate ⓸'s note
       and abs(100 * VS['PRIMARY'][0] - 93.562) < 5e-3
       and abs(100 * VS['SECONDARY'][0] - 93.007) < 5e-3,
-      f"primary kernel {100 * VS['PRIMARY'][0]:.1f} % / source {100 * VS['PRIMARY'][1]:.1f} %, "
+      f"primary distance-ratio {100 * VS['PRIMARY'][0]:.1f} % / sources {100 * VS['PRIMARY'][1]:.1f} %, "
       f"{VS['PRIMARY'][2]:.2f}x in rms; secondary {100 * VS['SECONDARY'][0]:.1f} % / "
       f"{100 * VS['SECONDARY'][1]:.1f} %, {VS['SECONDARY'][2]:.2f}x")
 
@@ -295,13 +311,15 @@ check("⛭⛔ `r7733` ** ⓺ AND EACH AMPLITUDE LIES OUTSIDE ITS OWN TWO-SIDED `
       "; ".join(f"{n}/{j}: a_ker vs ±{max(abs(NULL[(n, j)][0]), abs(NULL[(n, j)][1])):.4f}, "
                 f"a_src vs ±{max(abs(NULL[(n, j)][2]), abs(NULL[(n, j)][3])):.4f}"
                 for (n, j) in NULL) + f"; closest margin {min(_marg):.2f}x its own half-width")
-check("⛭⛔ `r7733` ** ⓻ THE REGISTERED POWER REQUIREMENT IS MET AT `1.000`, on a planted pure-kernel "
-      "AND a planted pure-source signal, at both binnings ** ⇒ *below it the registered verdict would "
+check("⛭⛔ `r7733` ** ⓻ THE REGISTERED POWER REQUIREMENT IS MET AT `1.000`, on a planted pure distance-ratio "
+      "AND a planted pure sources-with-their-maps signal, at both binnings ** ⇒ *below it the "
+      "registered verdict would "
       "have been `neither, by the instrument`, so this is what rules that cell out rather than an "
       "assumption that the test can see*",
       all(abs(v - 1.0) < 1e-12 for p in POW.values() for v in p)
       and all(v >= POWER_REQ for p in POW.values() for v in p),
-      "; ".join(f"{n}: pure-kernel {POW[n][0]:.3f}, pure-source {POW[n][1]:.3f}" for n, _ in READINGS))
+      "; ".join(f"{n}: pure distance-ratio {POW[n][0]:.3f}, pure sources {POW[n][1]:.3f}"
+                for n, _ in READINGS))
 
 _w_k = max(abs(NULL[('PRIMARY', 'normalised')][0]), abs(NULL[('PRIMARY', 'normalised')][1]))
 _w_s = max(abs(NULL[('PRIMARY', 'normalised')][2]), abs(NULL[('PRIMARY', 'normalised')][3]))
@@ -326,14 +344,15 @@ _vk_a = float((W * (_a_a * _lk_a) ** 2).sum() / W.sum())
 _vs_a = float((W * (_b_a * _ls_a) ** 2).sum() / W.sum())
 _vx_a = float(2 * (W * (_a_a * _lk_a) * (_b_a * _ls_a)).sum() / W.sum())
 _share_a = _vk_a / (_vk_a + _vs_a + _vx_a)
-# LEG B -- double the kernel template: the amplitude gate loses unity
+# LEG B -- double the distance-ratio template: the amplitude gate loses unity
 _a_b, _b_b = FC.fit2(obs, 2 * tk, ts, W)
 # LEG C -- an observation with NO signal: the exclusion gate loses its exclusion
 _a_c, _b_c = FC.fit2(obs - (_ak * tk + _as * ts), tk, ts, W)
 check("⛭⛔ `r7733` ** ⑨ FAILABILITY MEASURED ON THREE LEGS, NOT CLAIMED, each over a green control ** "
       "⇒ *⒜ substitute the source template by its own `k`-only part and its `l`-structured fraction "
-      "goes to `0` while the kernel's share of the `l`-structured variance goes to `1`, reddening ⓸ "
-      "and ⓹; ⒝ double the kernel template and its amplitude halves, reddening ⓵; ⒞ hand the fit an "
+      "goes to `0` while the distance ratio's share of the `l`-structured variance goes to `1`, "
+      "reddening ⓸ and ⓹; ⒝ double the distance-ratio template and its amplitude halves, reddening ⓵; "
+      "⒞ hand the fit an "
       "observation with no signal and both amplitudes return at machine zero, sixteen orders inside "
       "the null interval, so ⓺ is not satisfied by arithmetic that always excludes. ⌗ Leg ⒞ is "
       "automatic -- least squares leaves the residual orthogonal to both templates -- and is reported "
@@ -341,7 +360,7 @@ check("⛭⛔ `r7733` ** ⑨ FAILABILITY MEASURED ON THREE LEGS, NOT CLAIMED, ea
       _sh_a < 1e-12 and _share_a > 1.0 - 1e-12
       and abs(_a_b - 1.0) > UNIT_TOL
       and abs(_a_c) < 1e-12 and abs(_b_c) < 1e-12,
-      f"⒜ substitute l-structured {_sh_a:.3e} (⓸ wants 0.2239), kernel share {_share_a:.6f} "
+      f"⒜ substitute l-structured {_sh_a:.3e} (⓸ wants 0.2239), distance-ratio share {_share_a:.6f} "
       f"(⓹ wants 0.936); ⒝ a_ker {_a_b:+.4f} (⓵ wants |a-1| <= {UNIT_TOL}); "
       f"⒞ a_ker {_a_c:+.3e}, a_src {_b_c:+.3e}")
 
