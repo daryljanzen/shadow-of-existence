@@ -1,0 +1,13 @@
+r7742 (60) -- the tree the readings were taken on
+
+b9bb00224 r7742 (60) -- REGISTRATION ONLY: a cold read of the four tangency repairs, P15's projected clause, and P5's deck paragraph
+
+sympy 1.14.0  python 3.11.17
+
+files read:
+  fd8d7e1bbf585f5c   252659 bytes  corpus/SdS-slicing-curve_v2.tex
+  81cb8ff085a2b69d   145338 bytes  corpus/groupoid_paper.tex
+  57a3332f893eaf9e   506364 bytes  corpus/CR_cosmology.tex
+  0804fde9f617a8d2    73470 bytes  computations/formalisation/lean/probes/Groupoid.lean
+  90c4848a70fa7c02   989570 bytes  computations/formalisation/lean/probes/SlicingCurvature.lean
+  69637c35a7c7e1e3    12122 bytes  computations/beyond_the_wall/r7740_60_the_tangency_swept_once_across_the_corpus/RESULT.md
