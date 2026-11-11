@@ -1,0 +1,30 @@
+r7740 (60) -- THE VALIDATION
+
+This revision adds no receipt, no INDEX row, no generated file and no paper edit -- only a reply
+and one computations/beyond_the_wall directory.  r7738 bought the lesson that a receipt can be
+coupled to such a diff by a census over the tree naming neither the path nor the file, so the
+coupling was MEASURED and not assumed.
+
+SCOPE, from the repo's own selector over de4f51d61..bfc69ed9a:
+    reads       0 of 1156   -> the runner-read sweep has nothing to run
+    tolerance  14 of 1156
+    suite      66 of 1156, ~3652s by the index
+  and BOTH the suite and the tolerance lists are SET-IDENTICAL to r7738's range, checked by
+  sorted diff rather than by their counts matching -- the gate count matching is exactly what
+  made r7736's wrong comparison look sound.
+
+THE FAST JOB (NODE=60 bash scripts/run_fast_job.sh): 10 generators, 133 gates, plus the
+hollow-assertion lint.  Red names exactly the five structural shallow-clone gates and nothing
+else: check_branches check_pdf_current check_quote_pins check_pins_adjudicated_on_mint
+check_marker_transposition.
+
+THE SCOPED SUITE on this branch: 51 pass, 15 fail, 0 over timeout, 330s wall -- and the failing
+set is SET-IDENTICAL to the fifteen r7738 established as failing on a PRISTINE origin/main
+worktree as well:
+    failing here and not there: 0
+    failing there and not here: 0
+    failing in both:           15   <- both sides non-empty, so this is a measured equality
+
+=> NO RED IN THIS SCOPE IS THIS REVISION'S.  The escalation rule stated before the run was that
+   a NEW name would send me back to a fresh pristine-main baseline; no new name appeared, so the
+   baseline did not need re-running on the moved main.
