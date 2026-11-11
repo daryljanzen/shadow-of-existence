@@ -1,0 +1,61 @@
+`r7737+cc66` THE CHECKS MADE **AFTER** THE REGISTERED READS, AND LABELLED AS SUCH.
+
+⛔ **NONE of this is in `PREDICTION.md`.**  Each check below was run because the registered read
+returned something that could not be reported as it stood, and each is named with the reason:
+
+  ⒜ `B1b` FAILED -- two of the three amplitudes are far from unity.  Before calling that a finding,
+     the fit's CONDITIONING had to be measured against this project's own standing threshold
+     (`r7723` amendment 2: `|r| <= 0.70` and `VIF <= 2.0`).  It fails it, badly.
+  ⒝ So `B2`'s apportionment rests on a near-degenerate fit.  A **FIT-FREE** statistic is computed --
+     the `l`-structured rms of each single-term swap, with no amplitude anywhere -- and `B2` is
+     recomputed at UNIT amplitudes, to see whether the conclusion is a property of the object or of
+     the fit.
+  ⒞ 70 shipped `width__*` for all eight settings, which the registration did not anticipate.  It
+     allows the ACCEPTANCE WIDTH -- the quantity `P15`'s law credits with the retention -- to be
+     decomposed the same way.  ⚠ *That is a statement about the RETENTION and not about the located
+     step; the two are kept apart below.*
+
+⌗ *The order of these matters: ⒜ is the reason for ⒝, and without ⒜ the shares in `B2` would have
+been reported as an attribution they cannot carry.*
+
+====================================================================================================
+
+  ⒜ THE CONDITIONING OF `B1`'s THREE-TERM FIT
+      corr(g, chi) = -0.9838   VIF = 31.0   ⛔ OVER the threshold
+      corr(g, rs) = +0.7695   VIF = 2.5   ⛔ OVER the threshold
+      corr(chi, rs) = -0.8710   VIF = 4.1   ⛔ OVER the threshold
+      ⇒ worst |r| 0.9838 against 0.7, worst VIF 31.0 against 2.0: ** THE THREE-TERM FIT FAILS THE STANDING THRESHOLD. **
+
+      and the amplitudes ARE numerically determined, which is why `B1b`'s failure is not noise:
+        a[visibility g     ] = +0.3639 ± 0.0056   (113 sd from unity)
+        a[distance map chi ] = +0.9663 ± 0.0003   (122 sd from unity)
+        a[comb period rs   ] = +0.5721 ± 0.0042   (102 sd from unity)
+      ⇒ ** Determined and not interpretable are different things. ** With columns at |r| 0.98 the
+        fit can move SHAPE between the terms almost freely; what it cannot move is their SIZE.
+
+  ⒝ THE FIT-FREE READING -- no amplitude anywhere
+      distance map chi   l-structured rms 1.318891e-02  =  95.06 % of the three summed, 1.0563 of the full swap's
+      visibility g       l-structured rms 5.863317e-04  =   4.23 % of the three summed, 0.0470 of the full swap's
+      comb period rs     l-structured rms 9.832969e-05  =   0.71 % of the three summed, 0.0079 of the full swap's
+      the full swap's own l-structured rms 1.248542e-02
+      ⇒ SIZE ORDERING, and it is a measurement rather than a fit output: chi is 22.5x the visibility's and 134x the comb period's.
+      ⇒ *** For the visibility to carry the map's contribution it would need an amplitude near 22, not near 1. THAT is what survives the degeneracy. ***
+
+      and `B2` recomputed at UNIT amplitudes:
+        fitted  g   +0.03 %  chi +104.19 %  rs   +0.00 %  cross   -4.22 %
+        unit    g   +0.22 %  chi +110.85 %  rs   +0.01 %  cross  -11.08 %
+      ⇒ the two readings differ in the digits and agree in the conclusion, which is how a
+        result that survives its own fit's degeneracy should behave.
+
+  ⒞ THE ACCEPTANCE WIDTH -- ⚠ A STATEMENT ABOUT THE RETENTION, NOT THE LOCATED STEP
+      swapping the visibility alone     ⇒ width x 1.004403  [1.002163, 1.005934]  =  +0.44 %
+      swapping the distance map alone   ⇒ width x 0.872334  [0.848314, 0.904148]  = -12.77 %
+      swapping both together            ⇒ width x 0.876487  [0.853679, 0.906393]  = -12.35 %
+      the two arms' own builds: 0.875863 = -12.41 %
+      ⌗ `P15` prints the cr acceptance as `13.73` per cent narrower; this reproduces the
+        SIGN and the rough size, and the definitions are 70's -- I am not claiming they are one number.
+      ⇒ *** So the narrowing the law credits with the retention is the MAP's: -12.77 points
+        against the visibility's +0.44. ***  ⚠ The retention is not the located step, and this
+        line says nothing about the step; `B2` is where the step is.
+
+====================================================================================================

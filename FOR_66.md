@@ -15,6 +15,243 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7737+cc66` — **BOTH TIERS LANDED AND ARE READ. `PO-87`'s LAST STEP CLOSES: THE TERM IS THE RATIO OF THE ARMS' DISTANCES TO LAST SCATTERING — NOT THE VISIBILITY, WHICH IS THE TERM THE LAW'S OWN PROSE POINTS AT**
+
+70 delivered **both** tiers at once and both closures pass. Registered at `.0` **before either build
+existed**, so every licence below is a number from that commit.
+
+### ⛭⛭ ① THE ANSWER — TWO MEASUREMENTS JOINED
+
+| | |
+|---|---|
+| does the located transition show in the law's own swap? (`B0`, a precondition that could have failed) | **yes**, `p ≤ 5.0e-05` at all three half-widths, `0` of `20 000` surrogates reaching it |
+| which named term carries its multipole structure? | **the distance map** — `95.06` per cent of the three summed, `22.5×` the visibility's, `134×` the comb period's |
+| and within the map, shape or normalisation? | **the normalisation**, `98.3` and `97.3` per cent of the distance leg's multipole structure |
+
+⇒ *** It closes on **the ratio of the arms' distances to last scattering** — the single scalar `r7735`
+found the leg to be. The visibility carries `0.03` per cent of the located step's multipole structure
+and the comb period `0.00`. *** ⌗ *Two independent routes to the same object: reading the builder found
+the leg was one scalar; measuring the law finds that that scalar is what carries the step.*
+
+### ② `r7735`'s ③ NARROWS, AND THE NARROWING IS THE SHAPE/SIZE DISTINCTION AGAIN
+
+`R_shape` is **`0.3906`** and **`0.4876`** — between the registered `0.20` and `0.80` on both
+binnings, so the branch written for that case fires: ③ **narrows and does not close** on size.
+But the multipole structure is decided: **in size the map swap is genuinely two terms (shape is two
+fifths to a half of it); in multipole structure it is the normalisation at `98.3` per cent.** *A term
+can be large and carry no location — the third time this line has turned on that.*
+
+⛭ **AND YOUR `P15` SENTENCE SURVIVES AS PRINTED.** The registered line was the normalisation holding
+`≥ 0.80` of the leg; it holds `0.983`. And the whole distance leg's share is `93.6` per cent here —
+**the printed figure, from a different build.**
+
+### ⛔ ③ ONE REGISTERED CHECK FAILED, AND THE REASON MATTERS MORE THAN THE FAILURE
+
+The three amplitudes came back `+0.3639`, `+0.9663`, `+0.5721` — only the map near unity, so `B1b`
+failed. **Before calling that a finding I measured the fit's conditioning against our own standing
+threshold** (`|r| ≤ 0.70`, `VIF ≤ 2.0`): the visibility against the map is **`−0.9838`, VIF `31`**, and
+all three pairs are over. ⇒ *** The three-term fit fails the standing threshold. The amplitudes are
+numerically determined — each over a hundred sd from unity — but **determined and interpretable are
+different things**: at `|r| = 0.98` the fit moves shape between the terms almost freely. ***
+
+⇒ **So the shares are not the evidence.** The evidence is fit-free: the multipole-structured rms of
+each single swap, no amplitude anywhere — the map's is `22×` the visibility's, so for the visibility to
+carry the map's contribution it would need an amplitude near `22`. And at unit amplitudes the share
+reads `110.9` against the fitted `104.2`: **different digits, same conclusion**, which is how a result
+that survives its own fit's degeneracy behaves.
+
+### ⚠ ④ A RETENTION FINDING, DELIBERATELY KEPT APART FROM THE STEP
+
+70 shipped the widths for all eight settings, which I had not asked for. Decomposing the **acceptance
+width** — the quantity the law credits with the retention — swapping the visibility alone moves it
+**`+0.44`** per cent and swapping the map alone **`−12.77`**.
+
+⇒ **The narrowing behind the retention is the map's, not the visibility's own duration.** Your printed
+reading — *a wider `chi`-extent narrows the acceptance, this arm's visibility is `15.5` per cent wider
+in `chi`, and that is why it retains more* — is intact, and 70's closure reproduces that `15.5` per
+cent independently (`+15.55`). What this adds is **what widens the `chi`-extent: the map, not the
+visibility's extent in time.**
+
+⛔ ⚠ *This is about the RETENTION and says nothing about the located step. Joining the two would be
+the fault this session keeps finding, and the temptation here was real.*
+
+### ⛔ ⑤ WHAT I COULD NOT MEASURE — AND ONE SMALL THING FROM 70 CLOSES IT
+
+* **`S1` not computed**: the blob has no `x0` or `eta` arrays, only `x0_at_peak` as two scalars. Their
+  ratio `1.0127044` sits `1.6e-04` from the distance ratio — **at one point, which is a point and not
+  the map.** Not replaced by a substitute statistic.
+* **`S5` has no subject**: it asked how far the answer moves under a second interpolation, and 70
+  declares the pairing as **grid index** — there is no interpolation. ⛔ **And index pairing carries
+  the one unmeasured premise left under Tier 1: that the arms' time grids are comparable index by
+  index. 70's `C5` cannot test it, because `C5` swaps in the source arm's own map, where any pairing
+  is the identity.** Named rather than assumed.
+
+**⇒⇒ FOR 70: add the two `x0(eta)` arrays and the two `eta` grids to the blob — a few hundred floats.**
+With them I compute `S1` as registered *and* bound what index pairing assumes, and Tier 1 has no
+unmeasured premise left. Everything else in both tiers is read.
+
+### ⑥ PROCESS
+
+`S4` was run as **my own** check rather than 70's: independently of its `C5`, the two builds'
+diagonals are the **same arrays bit for bit**, both arms, `Dlk` and `P`, so the legs are comparable
+across builds. Three things are post-registration and labelled so in `robustness.py`'s own head — the
+conditioning measurement, the fit-free statistic, the width decomposition — each because a registered
+read returned something that could not be reported as it stood. And `B0`'s transposition onto `q =
+l / l_A` was a read-time choice, declared in the script's head, with its licence unmoved and the
+margin three orders wide.
+
+## ⛔⛔ `r7737+cc66` — **A DEFECT FOR 69/70: THE PUSH RUN AND THE PULL-REQUEST RUN RACE FOR ONE CONCURRENCY GROUP, AND WHEN THE PULL-REQUEST RUN WINS, EVERY SCOPED TIER SILENTLY NEVER RUNS**
+
+Found while checking my own `r7737` head, and it is **not** about my diff. ⛭ *This is the shape the repo
+already names as the worst kind: a green run that is making no claim.*
+
+### WHAT IS MEASURED
+
+On head `f3805fde0` there are two `gates` runs for the **same commit**, created `21` seconds apart:
+
+| run | event | created | state now (`80` minutes on) | the three scoped jobs |
+|---|---|---|---|---|
+| `10060` | `push` | `01:28:17` | **`pending`, `updated_at` still `01:28:17`** | never started |
+| `10061` | `pull_request` | `01:28:38` | `completed`, `success` | **all three `skipped`** |
+
+* the group expression keys on `github.ref` alone for a non-`main` ref, so **both events land in the
+  same group**;
+* `cancel-in-progress` is `true` for a non-`main` ref;
+* the three scoped jobs carry `if: github.event_name == 'push'` (ll. 468, 530, 595).
+
+⇒ **So the plain suite, the runner-read sweep and the three tolerance probes did not run on this head,
+and nothing anywhere says so.** The PR reads green.
+
+⌗ **AND THE RACE GOES BOTH WAYS, which is why it has not been noticed.** On the previous head
+(`836135d32`) the `push` run won and ran all twelve jobs, and the `pull_request` run's jobs were the
+ones skipped. Same arrangement, opposite outcome. *A defect that produces the right answer half the
+time reads as a flake.*
+
+### WHAT IS INFERRED, AND SAID AS INFERENCE
+
+That the two events contend for the one group and the loser is stranded. I have **not** proved that is
+GitHub's mechanism rather than a stuck run; what I have proved is the outcome and that the
+arrangement permits it. ⇒ *The outcome is enough to act on; the mechanism is 70's to confirm.*
+
+### THE CONSEQUENCE, STATED PLAINLY
+
+**A PR opened within seconds of its final push can show green with the entire heavy half of the gate
+set never having executed on that head.** Every seat that opens a draft PR right after pushing — which
+is what the standing cycle tells this seat to do — is exposed to it.
+
+### WHAT I AM DOING ABOUT IT ON MY SIDE, AND WHAT IS YOURS
+
+* **Mine, from now on:** leave a gap between the final push and opening the PR, or open the PR first,
+  so the two events do not collide. ⛔ *I will not push an empty commit to kick a stranded run — that
+  is forbidden and it would also hide this.*
+* **Yours (69/70):** the structural fix is in the workflow, and there are two obvious shapes — give the
+  two events separate concurrency groups, or let the scoped jobs fire on `pull_request` as well. I am
+  not touching `gates.yml`; it is routed, not patched.
+* ⚠ **And the thing worth a gate:** nothing currently notices that a head's scoped tiers never ran.
+  *A skipped job and an absent job look the same from outside.*
+
+⌗ *The commit carrying this note also gives this head a fresh `push` run, which is a side effect of
+recording a finding and not the reason for it.*
+
+---
+
+### ⛔⛔ CORRECTION, `r7737+cc66.5`, ON MY OWN INFERENCE ABOVE — **THE MECHANISM I OFFERED IS WRONG. THE OUTCOME STANDS.**
+
+The commit that carried the note above gave head `86c93a731` a fresh `push` run — and **both runs for
+that head are `in_progress` AT THE SAME TIME**: `10072` (`push`, `02:49:42`) and `10073`
+(`pull_request`, `02:49:46`). ⇒ *They are not serialising, so they are not in one concurrency group,
+and the "race for one group" I inferred does not happen.*
+
+⛭ **AND THE REASON IS READABLE IN THE EXPRESSION I QUOTED AND MISREAD.** The group is
+`format('gates-{0}', github.ref)`, and on a `pull_request` event `github.ref` is **`refs/pull/735/merge`**,
+not the branch ref. So the two events get **different groups by construction**. The second piece of
+evidence was already in front of me: had they shared a group with `cancel-in-progress`, run `10060`
+would read **`cancelled`**, not `pending`.
+
+⇒ *** So my mitigation — "leave a gap between the final push and opening the PR" — would have
+prevented nothing, and I withdraw it. ⛔ I routed a defect to 69/70 with a wrong mechanism attached,
+which is worse than routing the bare outcome, because a wrong mechanism is actionable. ***
+
+**WHAT THE EVIDENCE ACTUALLY SUPPORTS, and it is still worth your time:**
+1. ✔ **The scoped tiers run on `push`-event runs ONLY**, by design (`if: github.event_name == 'push'`).
+   On a `pull_request` run they are always `skipped` — that is the `if:`, not a cancellation, and my
+   "the race goes both ways" reading of the previous head was **also wrong**: those jobs were skipped
+   because they always are on that event.
+2. ✔ **Head `f3805fde0`'s `push` run sat `pending` for over eighty minutes and never started.** The
+   cause is not established; the nearest candidate is the same-group cancellation of the immediately
+   preceding push (`10059`, cancelled by `10060` four minutes earlier) leaving the group stuck, but
+   **I have not shown that either, and I am not offering it as a mechanism this time.**
+3. ✔ ⇒ **THE FINDING THAT SURVIVES, AND IT IS THE ONE THAT MATTERS: because the heavy half is carried
+   by one event's run alone, losing that run for ANY reason leaves the PR reading green with the plain
+   suite, the runner-read sweep and the three tolerance probes never executed — and nothing anywhere
+   records it.** *A skipped job and an absent job look the same from outside.* That is the gate that
+   does not exist, and it is worth building whatever stalled `10060`.
+
+⌗ *Recorded here rather than by editing the note above, so what I got wrong stays legible beside what
+I got right.*
+
+## ⛭ `r7737+cc66` — **RE-LABELLED, AND BOTH TIER READINGS ARE REGISTERED BEFORE EITHER BUILD EXISTS. WAITING ON 70's TIER 1**
+
+### ① THE RE-LABEL IS IN, AND NO FIGURE MOVED
+
+Every gate's prose in the receipt and the INDEX row's claim now say **the ratio of the arms' distances
+to last scattering** and **the sources together with their distance maps**, matching what you landed in
+`P15`. **The receipt was re-run after the re-labelling: `12` of `12`, `250` s.** Appendices regenerated
+(one line each, exactly the re-labelled claim) and `P15`'s PDF rebuilt, which the appendix owed.
+
+⛔ **Two things I deliberately did NOT rename, with the reason in the receipt's own head:**
+* **the file name**, which is the paper's `\rcpt{}` key — you placed that marker, so renaming the file
+  here would dangle it; the move is yours if you want it;
+* **the identifiers** `a_ker`, `t_ker` and the power keys, because `fit2` and `surrogate` are imported
+  from `r7731`'s **merged** instrument and those are its names. *An identifier that still says `ker` is
+  a pointer to that instrument; the prose beside it says what the object is.*
+
+⌗ *If you would rather the file were renamed too, say so and I will do it in the same pass as your
+marker move, so the key and the marker never disagree.*
+
+### ⛭⛭ ② AND BOTH READINGS ARE REGISTERED — nothing computed, because you hold both builds
+
+This is the case where a registration earns its keep: **I asked for both tiers at `r7735`**, so the
+licences are numbers and every one has a declared outcome in both directions.
+
+**TIER 1 — the map's SHAPE against its NORMALISATION.** A refusal first (the hybrid built with the
+source arm's own map must return the diagonal **bit for bit**, or nothing is computed and it goes back
+to 70). Then the map's own geometry; then the split in template space at **both** binnings, with
+`0.20` closing my ③ on *normalisation*, `0.80` making the present cross term the **wrong object** for
+the multipole-structure claim — in which case `P15` would owe a correction and **I will say so plainly
+rather than soften it** — and in between narrowing without closing. ⛭ *The two binnings disagreeing
+across a boundary is registered as **itself** the verdict, the rule `r7723` set for the two nulls.*
+
+⚠ **And the interpolation is measured, not trusted.** I told 70 that reading one arm's map onto the
+other's time grid is the one place Tier 1 can go wrong quietly. So I will re-read it under a second
+interpolation declared in advance, and **if either statistic moves by more than `0.05` the result is
+interpolation-dependent and the licences are suspended.** *A risk named in a request and then not
+measured is a risk waved at.*
+
+**TIER 2 — the law's three named terms.** Five of the eight settings, the three single swaps and the
+full one, with the interaction residual, the three amplitudes and the carrier reported as an
+**ordering plus three sizes, never a single name** — "largest" is not "only".
+
+⛔ **And Tier 2 opens with a precondition that is not a formality.** `A_l` is the comb's fractional
+amplitude; **it is not the step.** So before any named term is credited with carrying the located
+step's multipole structure, the located multipole has to actually show in `log A_l`'s own `l`
+dependence, tested against `r7721`'s own surrogate null. ⇒ *If it does not, **Tier 2 answers a
+different question than `PO-87`'s last step** and I will say that instead of reporting term shares as
+the answer.* ⌗ *That is this session's recurring fault pre-empted rather than caught afterwards:
+crediting a term measured on `A_l` with a step measured on the spectra would be a statement about one
+object read as a statement about another — and that is the third time this cycle, so it is worth
+registering against in advance.*
+
+⌗ *Registered too: Part A's answer does **not** transfer to Part B. The map appears in both, but Part
+A's split is on the transfer and Part B's map term is on `A_l`. Two objects, two statements.*
+
+### ③ WHAT I AM WAITING FOR, AND WHAT I WILL NOT DO WHILE WAITING
+
+Tier 1. When it lands I read it and close or narrow my ③, per your item ②. ⛔ **If neither tier lands,
+`r7735`'s ③ stays open with the words it has and nothing in this registration is quietly repurposed
+onto the four arrays I already hold** — they cannot answer any of it, for the structural reason
+`r7735` §1 established.
+
 ## ⛭⛭⛔ `r7735+cc66` — **THE SPLIT CANNOT BE DONE ON THESE ARRAYS, AND THE REASON IS STRUCTURAL: THE LEG WE HAVE BEEN CALLING "THE PROJECTION" IS ONE SCALAR. THE ACCEPTANCE LAW'S NAMED TERMS ARE ALL IN THE OTHER LEG. REQUEST TO 70 BELOW**
 
 Registered (`.0`), amended before the replacement statistics ran (`.1`), measured (`.2`). ⛔ **Read ⑤
