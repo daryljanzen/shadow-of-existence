@@ -759,11 +759,25 @@ print(f"  the clause is present: {nearer}")
 print(f"  at the Nariai member the two positive roots are {[float(v) for v in pos_nar]} -- equal: "
       f"{coincide}")
 print(f"  the block restricts the REGIONS sentence with 'distinct and $M>0$': {restricted}")
-print("  but the A/B sentence and the nearer/farther clause carry no such restriction, and at")
-print("  r0 = 1/sqrt3 there is ONE point, not two, so 'nearer' and 'farther' have no referent.")
+# the absence is SEARCHED and the search is printed beside it (check_absence_claims)
+RESTRICT = re.compile(r'distinct|except|undercritical|\bM>0\b|M\s*>\s*0|nonzero|non-zero'
+                      r'|r_\{0\}\s*\\neq|\\ne\b|merge|coincide', re.I)
+two = [x for x in sentences(s1_block)
+       if 'meets the throat circle at two points' in x or 'the one nearer $r=0$' in x]
+print(f"  SEARCHED: the {len(two)} sentence(s) that make the claim, raw and de-marked, for")
+print(f"            {RESTRICT.pattern}")
+hits = {i: RESTRICT.findall(demark(x)) for i, x in enumerate(two, 1)}
+for i, x in enumerate(two, 1):
+    print(f"    sentence {i}: {demark(x)[:150]}")
+    print(f"      restriction tokens found: {hits[i] or 'NONE'}")
+print("  and the same search over the REGIONS sentence of the same block, as the positive")
+print(f"  control: {RESTRICT.findall(next(x for x in sentences(s1_block) if 'pieces of the curve' in x))}")
+unrestricted = all(not v for v in hits.values())
+print("  => at r0 = 1/sqrt3 there is ONE point, not two, so 'nearer' and 'farther' have no")
+print("     referent, and neither sentence carries a token that would exclude that member.")
 arm('(A)iii-c  the registered reachable negative is REACHED: the new clause is empty at the '
     'Nariai member it quantifies over',
-    nearer and coincide,
+    nearer and coincide and unrestricted and len(two) == 2,
     "witness: at 2M = 2/(3sqrt3) the two positive roots coincide at 1/sqrt3, so A = B")
 
 # ----------------------------------------------------------------- summary

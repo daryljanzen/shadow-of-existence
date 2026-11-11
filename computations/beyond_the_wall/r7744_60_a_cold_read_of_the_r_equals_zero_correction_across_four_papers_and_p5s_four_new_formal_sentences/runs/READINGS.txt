@@ -341,8 +341,16 @@
   the clause is present: True
   at the Nariai member the two positive roots are [0.5773502691896257, 0.5773502691896257] -- equal: True
   the block restricts the REGIONS sentence with 'distinct and $M>0$': True
-  but the A/B sentence and the nearer/farther clause carry no such restriction, and at
-  r0 = 1/sqrt3 there is ONE point, not two, so 'nearer' and 'farther' have no referent.
+  SEARCHED: the 2 sentence(s) that make the claim, raw and de-marked, for
+            distinct|except|undercritical|\bM>0\b|M\s*>\s*0|nonzero|non-zero|r_\{0\}\s*\\neq|\\ne\b|merge|coincide
+    sentence 1: When the line is set at offset $r_{0}$ it meets the throat circle at two points, $A$ and $B$, with the point $r=0$ fixed at the back of the circle.
+      restriction tokens found: NONE
+    sentence 2: $A$ and $B$ are the geometric counterparts of the horizon cubic's roots: the one nearer $r=0$ is the black-hole horizon and the farther the cosmologic
+      restriction tokens found: NONE
+  and the same search over the REGIONS sentence of the same block, as the positive
+  control: ['distinct', 'M>0']
+  => at r0 = 1/sqrt3 there is ONE point, not two, so 'nearer' and 'farther' have no
+     referent, and neither sentence carries a token that would exclude that member.
   [PASS] (A)iii-c  the registered reachable negative is REACHED: the new clause is empty at the Nariai member it quantifies over  witness: at 2M = 2/(3sqrt3) the two positive roots coincide at 1/sqrt3, so A = B
 
 ====================================================================================================
