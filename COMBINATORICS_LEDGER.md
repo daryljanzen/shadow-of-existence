@@ -825,8 +825,11 @@ swinging about the hinge **the circle placed**.
 > **P12:** *"The two factors act on independent structures — **the Weyl S₃ on the three roots, the
 > inversion on the two rulings** — and the inversion is central, which is why the automorphism group is
 > the direct product."*
-> **P3:** *"the line meets the throat circle at two points `A` and `B`, with the point `r=0` fixed at the
-> back of the circle; **these three special points are the geometric counterparts of the three roots**."*
+> **P3:** *"it meets the throat circle at two points `A` and `B`, with the point `r=0` fixed at the back of
+> the circle. **`A` and `B` are the geometric counterparts of the horizon cubic's roots**: the one nearer `r=0`
+> is the black-hole horizon and the farther the cosmological horizon, and the third root is the cosmological
+> horizon reached the long way round from `r=0`. The point `r=0` itself is the branch point, a root of the
+> cubic only where the mass vanishes."*
 > **p0:** *"**The rulings are those tangents**, so 'doubly ruled by straight null lines' and 'every tangent
 > to the throat is null' are one statement."*
 
