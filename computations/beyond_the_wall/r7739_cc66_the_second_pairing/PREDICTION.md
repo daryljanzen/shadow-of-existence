@@ -97,3 +97,55 @@ computed under `P1` and `P2`, and reported as a **range**:
   is whether any pairing-independent `g`/`χ` statement exists at all — and that is a question for 69,
   not something to settle here.
 * It makes no claim about the retention beyond what `r7739+cc66.0` already withdrew.
+
+---
+
+## AMENDMENT 1 — `R2` IS NOT COMPUTABLE, AND ITS SUBSTITUTE IS REGISTERED HERE BEFORE IT IS RUN
+
+*Written while the remaining `P2` builds were still running, so the substitute's licence is fixed before
+its number exists. The amendment moves no licence in §④ and withdraws nothing from §⑤.*
+
+**⛔ `R2`, AS REGISTERED IN §④, CANNOT BE COMPUTED FROM THE ARTEFACTS HANDED OVER.** It asks for Tier 1's
+`R_shape` and the normalisation's share of the distance leg **recomputed under `P2`**. Tier 1's distance
+leg is `u_map = log B[S_lcdm__X_cr] − log B[S_lcdm__X_lcdm]`, built from `r7737_xmap`'s
+`Dlk__S_{a}__X_{b}`. Borrowing one arm's `χ` map onto the other arm's **transfer source** is itself a
+pairing — `70` did it by index, which is `P1` — so rebuilding it under `P2` needs `S_lcdm(η)` on `lcdm`'s
+own `η` grid. **No handed-over artefact carries that source:**
+
+* `r7737_xmap.npz` carries only the **outputs** `Dlk`, `P`, `Dl` — no `S`, no `η`, no `x0`;
+* `r7737_grid.npz` carries `η`, `x0` and `vis_{arm}`, and the **visibility is not the transfer source**;
+* the `r7729` blob carries no `η` or `x0` at all — which is why `r7737`'s own `S1` was already recorded
+  `NOT COMPUTABLE` for this same reason, a precedent I should have read forward from and did not.
+
+⇒ **`R2` is reported `NOT COMPUTABLE`, not approximated and not quietly dropped.** The one thing that
+would compute it is `70` re-running its `xmap` build with the rescaled `χ` map — one build on its side.
+That is a request routed to `69`, not a result.
+
+**⛭ THE DECLARED SUBSTITUTE, `R2′`, ON THE ACCEPTANCE ARM.** The same split — a pure scalar
+normalisation against a shape remainder — *is* computable where I hold every input. The
+normalisation-only map is `x0_lcdm · xs`, `xs = D_M_cr / D_M_lcdm`: a pure scalar multiply, which is
+`r7729`'s own definition of the normalisation term and needs no pivot. Define, by `r7737`'s own fit-free
+statistic, `R2′ = lrms(u_norm) / lrms(u_χ)` with `u_norm` the scalar-only swap and `u_χ` the `χ` leg
+under the pairing in question, and compute it under `P1` **and** under every `P2` span variant, because
+pairing-robustness is the whole question:
+
+| outcome | what it licenses |
+|---|---|
+| `R2′ ≥ 0.80` **under every pairing** | the normalisation dominates the `χ` leg **on the acceptance objects**, and the reasoning I declined to report at `r7739+cc66.0` is confirmed *there* |
+| `R2′ < 0.80` **under any pairing** | the reasoning was wrong on these objects and I say so plainly, with the number and the pairing |
+
+* ⛔ **`R2′` IS NOT `R2` AND MAY NEVER BE REPORTED AS `R2` DISCHARGED.** It is a different object: the
+  acceptance integral `G_ℓ`, not the transfer `Dlk`. It cannot confirm or deny Tier 1's `98.3` per cent,
+  and it licenses **no** claim about Tier 1's pairing-robustness.
+* ⌗ Registered because the alternative — reporting the substitute's number against `R2`'s licence — is
+  exactly the move of attaching one object's figure to another that the `r7733` order already made once
+  and that I corrected there. Having caught it in someone else's gate, I am not entitled to make it.
+
+**⛭ ONE PROCESS PER `P2` VARIANT, AND THE FIRST RUN IS KEPT AS A CUT RUN.** Each `P2` variant costs two
+full `G` builds at ~30 min, so three variants do not fit one window: the first run was cut after
+`P2 / sigma (mine)` printed. The remaining two run one per process via `read_pairings_rest.py`, which
+imports `read_pairings`'s own `build_G`, `A_of` and `lrms` — identical arithmetic **by import, not by
+copy** — and the cut run's output is kept verbatim as `read_pairings_output_cut.txt` with its truncation
+stated at the head. ⌗ *`grid span` is the smallest ratio and so the only variant that could put `g` back
+under the `0.60` line; that monotone expectation is written down in the instrument's head so that it can
+be wrong, and it is not a substitute for either run.*
