@@ -1,0 +1,140 @@
+====================================================================================================
+  Ⓞ  THE OBJECT, COMPUTED BEFORE ANYTHING IS SWEPT
+====================================================================================================
+[PASS] Ⓞ① the discriminant in each parametrisation, from the closed form
+          disc = 4 - 27*M2**2 in 2M; -(3*r0**2 - 4)*(3*r0**2 - 1)**2 in r0; 4cos^2(3w) in w (residual 0)
+[PASS] Ⓞ② AND THE KEY ASYMMETRY, which is why the mistake is possible in r0 and w and NOT in 2M: the degenerate set is the BOUNDARY in 2M and the boundary PLUS AN INTERIOR POINT in r0
+          2M: 2 designation(s) ['-2*sqrt(3)/9', '2*sqrt(3)/9'] -- both are the undercritical interval's own endpoints.  r0: 4 ['-2*sqrt(3)/3', '-sqrt(3)/3', 'sqrt(3)/3', '2*sqrt(3)/3'] -- and 1/sqrt3 lies STRICTLY INSIDE |r0|<2/sqrt3.  w on [0,pi]: 3 ['pi/6', 'pi/2', '5*pi/6'].  The map r0 -> r0-r0^3 is TWO-TO-ONE on them: r0=1/sqrt3 and r0=-2/sqrt3 both give 2M=2*sqrt(3)/9
+
+====================================================================================================
+  Ⓐ  THE INSTRUMENT'S OWN POWER, MEASURED BEFORE IT IS BELIEVED
+====================================================================================================
+[PASS] Ⓐ① the two repaired sentences OF THIS SWEEP'S CLASS are FLAGGED in their PRE-REPAIR form, read out of git history at the commit before each repair
+          flagged 2 of 2; missed 0; [P3 defining parenthetical] It is positive for $|r_{0}|<2/\sqrt{3}$ (three distinct real roots, th; [P5 sigma sentence] On the horizon cubic, each root $r_{k}(w)=\tfrac{2}{\sqrt3}\sin(w+2\pi
+[PASS] Ⓐ①ᵇ the EQUALITY class has its own selector, and it flags the pre-repair threshold sentence while the repaired form is not flagged
+          pre-repair: 1015 sentences, 2 candidates, the threshold sentence flagged 1 time(s) -- The single threshold $|r_{0}|=2/\sqrt{3}$, equivalently $|2M|=2/(3\sqrt{3})$, is the undercritical/overcritical boundary; current: 1 candidate(s), the threshold sentence flagged 0 time(s)
+[PASS] Ⓐ② and all three repairs HOLD in the current corpus, raw or flattened
+          3 of 3 present: ['P3 threshold', 'P3 parenthetical', 'P5 sigma']
+[PASS] Ⓐ③ the selector decided correctly on all five fabricated controls, in all three parametrisations and in BOTH directions (G4/G5)
+          r0, contains it and needs it -> candidate; 2M, strict so excludes it, needs it -> candidate; w, contains it and needs it -> candidate; an interval with NO count or distinctness claim -> not; a count claim with NO interval -> not
+
+====================================================================================================
+  Ⓑ  THE SWEEP
+====================================================================================================
+[PASS] Ⓑ① every .tex in corpus/ was read, and the count is printed against the directory
+          55 file(s) read, 19702 sentence(s), 10 candidate(s) in 4 file(s); 0 of the candidates are in generated appendix files, which mirror receipts and are not paper prose
+
+  [ 1] CR_cosmology.tex
+       Under-critical masses ($\Lambda G^2M^2/c^4<\tfrac19$) give two distinct positive horizons; over-critical masses give none.
+  [ 2] CR_cosmology.tex
+       The cosmogenesis branch point is carried on the \emph{Nariai} member ($=\tfrac19$), where the two horizons merge into a single \emph{degenerate} double root at $r_{N}=\alpha/\sqrt3=1/\sqrt\Lambda$ with $f(r_{N})=f'(r_{N})=0$ and hence vanishing surface gravity
+  [ 3] CR_framework.tex
+       Promoting that direction to the fundamental timelike congruence, as the reassignment does, and classifying the family by how a null-generator congruence meets the horizon, yields a trichotomy: transverse crossing ($\Lambda G^2M^2/c^4<1/9$, two distinct positiv
+  [ 4] SdS-slicing-curve_v2.tex
+       It is positive for $|r_{0}|<2/\sqrt{3}$ (three real roots, distinct except at the designations $r_{0}=\pm1/\sqrt3$: the undercritical regime), zero at $|r_{0}|=2/\sqrt{3}$ (a double root, Nariai), and negative for $|r_{0}|>2/\sqrt{3}$ (one real root and a comp
+  [ 5] SdS-slicing-curve_v2.tex
+       For $2M>0$ the cubic has two positive roots and one negative; for $2M<0$, one positive and two negative; the negative-root horizon of the first case is the backward-radial root carried by the major axis of the locus ellipse (Section~\ref{sec:ellipse}).
+  [ 6] SdS-slicing-curve_v2.tex
+       \end{remark} The algebra of this section is machine-checked in Lean, in the gauge $\alpha=1$ (\texttt{computations/formalisation/lean/probes/SlicingCurvature.lean}): the factorisation, the three roots and their vanishing sum (\texttt{sl\_factor} and \texttt{sl
+  [ 7] SdS-slicing-curve_v2.tex
+       For $|r_{0}|<2/\sqrt{3}$ the vertical line at $r_{0}$ meets the ellipse in two real points and the locus in three real horizons; for $|r_{0}|>2/\sqrt{3}$ it misses the ellipse and only the diagonal root is real.
+  [ 8] SdS-slicing-curve_v2.tex
+       A given mass level is met by three sky angles---the three horizons; the crest at $w=\pi/6$ is Nariai, where two merge. (b) The slicing parameter $r_{0}=\tfrac{2}{\sqrt3}\sin w$, the throat-image radius $2/\sqrt3$ times the sine of the genuine sky angle: $w\in[
+  [ 9] SdS-slicing-curve_v2.tex
+       For $|r_{0}|<2/\sqrt{3}$ the line meets the ellipse in two real points and the diagonal in one: three real roots.
+  [10] groupoid_paper.tex
+       On the horizon cubic, each root $r_{k}(w)=\tfrac{2}{\sqrt3}\sin(w+2\pi k/3)$ solves it, the group permutes the three roots, and $\sigma$ exchanges two of them, positive for $w\in(0,\pi/3)$, and fixes the third, the three being distinct except at $w=\pi/6$, the
+
+  10 candidate(s) printed in full above -- nothing is absorbed into a count.
+
+  the EQUALITY class in the current corpus: 1 candidate(s)
+       \emph{And the attribution divides into two questions with different answers, which is worth separating because only one of them is decidable.} \emph{Does the inverse-cube term track the \textbf{selected} off-axis point?} \emph{No, and that 
+
+====================================================================================================
+  Ⓑ  THE ADJUDICATION -- each candidate's interval parsed, its containment decided from
+     the CLOSED FORM, and the root multiset computed AT the designation it contains
+====================================================================================================
+[PASS] Ⓑ② every adjudicated candidate was MATCHED to a swept candidate -- none was adjudicated from memory
+          10 of 10 matched; unmatched 0: []
+
+  SOUND                  [2M] Under-critical masses
+      interval open (-2*sqrt(3)/9, 2*sqrt(3)/9); needs distinctness: True
+      degenerate designations INSIDE it: 0 []
+      strict in the dimensionless mass, and in 2M the degenerate set IS the boundary
+
+  SOUND                  [2M] The cosmogenesis branch point
+      interval closed (2*sqrt(3)/9, 2*sqrt(3)/9); needs distinctness: False
+      degenerate designations INSIDE it: 1 ['2*sqrt(3)/9']  ->  2M = ['2*sqrt(3)/9']
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      the sentence IS the statement of the degeneracy
+
+  SOUND                  [2M] yields a trichotomy
+      interval open (-2*sqrt(3)/9, 2*sqrt(3)/9); needs distinctness: True
+      degenerate designations INSIDE it: 0 []
+      strict, and tangency is given its own branch of the trichotomy
+
+  REPAIRED at r7732/r7733 [r0] It is positive for
+      interval open (-2*sqrt(3)/3, 2*sqrt(3)/3); needs distinctness: True
+      degenerate designations INSIDE it: 2 ['-sqrt(3)/3', 'sqrt(3)/3']  ->  2M = ['-2*sqrt(3)/9', '2*sqrt(3)/9']
+      at 2M=-2*sqrt(3)/9: root multiset {'2*sqrt(3)/3': 1, '-sqrt(3)/3': 2} -- 2 distinct of 3
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      the parenthetical now reads "distinct except at the designations r0=+-1/sqrt3"
+
+  SITE 1                 [2M] For $2M>0$ the cubic has two positive roots
+      interval open (0, oo); needs distinctness: True
+      degenerate designations INSIDE it: 1 ['2*sqrt(3)/9']  ->  2M = ['2*sqrt(3)/9']
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      unbounded above, so it contains 2M=2/(3*sqrt3) where the two positive roots MERGE, and the whole overcritical range beyond it where there are NO positive roots
+
+  SITE 2                 [r0] its carrying of $r_{0}\in[0,1)$ to the other positive root
+      interval open (0, 1); needs distinctness: True
+      degenerate designations INSIDE it: 1 ['sqrt(3)/3']  ->  2M = ['2*sqrt(3)/9']
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      "the OTHER positive root" presupposes distinctness, and 1/sqrt3 lies in [0,1); the cited theorem sl_sigma_second itself carries the exception (sigma x = x iff x = 1/sqrt3), so the prose asserts what the Lean it cites denies
+
+  SITE 3                 [r0] meets the ellipse in two real points and the locus in three re
+      interval open (-2*sqrt(3)/3, 2*sqrt(3)/3); needs distinctness: True
+      degenerate designations INSIDE it: 2 ['-sqrt(3)/3', 'sqrt(3)/3']  ->  2M = ['-2*sqrt(3)/9', '2*sqrt(3)/9']
+      at 2M=-2*sqrt(3)/9: root multiset {'2*sqrt(3)/3': 1, '-sqrt(3)/3': 2} -- 2 distinct of 3
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      "three real horizons" over an interval containing r0=+-1/sqrt3, where the diagonal root coincides with one of the ellipse points -- the paper says so itself 35 lines earlier ("the two components meeting exactly at r=r0=+-1/sqrt3")
+
+  SOUND                  [w ] A given mass level is met by three sky angles
+      interval closed (0, pi/3); needs distinctness: False
+      degenerate designations INSIDE it: 1 ['pi/6']  ->  2M = ['2*sqrt(3)/9']
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      the caption names w=pi/6 as Nariai "where two merge" in its own clause
+
+  SITE 4                 [r0] meets the ellipse in two real points and the diagonal in one: 
+      interval open (-2*sqrt(3)/3, 2*sqrt(3)/3); needs distinctness: True
+      degenerate designations INSIDE it: 2 ['-sqrt(3)/3', 'sqrt(3)/3']  ->  2M = ['-2*sqrt(3)/9', '2*sqrt(3)/9']
+      at 2M=-2*sqrt(3)/9: root multiset {'2*sqrt(3)/3': 1, '-sqrt(3)/3': 2} -- 2 distinct of 3
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      the twin of SITE 3, 389 lines later in the overcritical section, same interval and same count
+
+  REPAIRED at r7737      [w ] the three being distinct except at
+      interval open (0, pi/3); needs distinctness: True
+      degenerate designations INSIDE it: 1 ['pi/6']  ->  2M = ['2*sqrt(3)/9']
+      at 2M=2*sqrt(3)/9: root multiset {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3
+      this seat's own r7738 finding, landed
+
+[PASS] ⛔ Ⓑ③ the sweep's own answer: FOUR live sites, every one of them in P3, and every one with a degenerate designation computed INSIDE its interval and a merged root multiset there
+          candidates 10; adjudicated 10; SOUND 4; already REPAIRED 2; LIVE SITES 4; undecided 0.  contains-and-needs 6 of which 4 are not already excluded by their own sentence
+[PASS] Ⓑ④ and every live site is in ONE paper, which is the finding's shape: the defect is a sentence-form in P3 and not a corpus-wide habit
+          the four live sites are the sign-split sentence, the Lean-citation clause, and the two 'three real roots/horizons' twins -- all in corpus/SdS-slicing-curve_v2.tex; the other papers' intervals are written in the dimensionless MASS, where Ⓞ② shows the degenerate set is the boundary and a strict inequality excludes it
+
+====================================================================================================
+  Ⓒ  THE COLD READ OF THE REWORDED P15 SENTENCE
+====================================================================================================
+[PASS] Ⓒ① all three repairs r7737 landed are present, raw AND flattened
+          amplitude on 97.93: raw True, flat True; variance on 93.6: raw True, flat True; the binning named: raw True, flat True
+[PASS] Ⓒ②ᵃ "the finer binning" IS the binning the printed pair comes from -- the primary, computed from the receipt's own node arithmetic and not assumed
+          the receipt's own closure line gives 1450 = 120*12 + 10 = 63*23 + 1: primary 120 bins against secondary 63, so the PRIMARY is the finer one, and 1.0076/1.0035 are the primary's -- r7738 Ⓐ⑥ asked for exactly this and it is right
+[PASS] ⛭ Ⓒ②ᵇ and the two KINDS are now distinguished in the sentence, which is what r7738 Ⓐ⑤ asked for: the word amplitude sits on the rms fractions and the word variance on the variance share, each on the right figure
+          97.93/22.39 are rms fractions and carry the word amplitude; 93.6 is the variance share (93.56 %) and carries the word variance; the amplitude share of the same quantity is still 77.6 %, so the figure a reader would have computed from the old wording is +16.0 points from what is printed -- and the sentence now says which is which
+[PASS] Ⓒ③ the partition SURVIVES the rename -- four stems in order, and the classifier still returns 0 of 4 real with 2 of 2 fabricated flagged (G4)
+          stem offsets {'location': 189676, 'presence': 190122, 'structure': 190680, 'size': 191202}, in order; real stems read 4, flagged 0 []; fabricated read 2, flagged 2; the structured leg is now named explicitly as the distance ratio, so the forbidden reading is LESS available than before, not more
+[PASS] ⛔ Ⓒ④ BUT THE RENAME MADE THE CONCEDED OBJECT WIDER THAN THE FRAMING CLAUSE'S: stem 1 excludes the SOURCES' own ratio, the framing clause promises a statement about THEIR difference once projected, and the leg actually measured is the sources TOGETHER WITH THEIR DISTANCE MAPS
+          excluded object: "the two arms' $\eta$-integrated sources" (present: True); framing clause: "not about their difference once it is projected" (present: True); measured leg: "exchanging their sources together with their distance maps" (present: True).  The framing clause names the SOURCES' projected difference; the leg is a COMBINATION that also carries the distance maps, which is the same object the OTHER leg is named for -- so the concession no longer isolates what the framing clause promises, and the two legs' names now share a term
+
+15 arms, 15 PASS, 0 FAIL

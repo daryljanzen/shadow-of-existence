@@ -1,0 +1,16 @@
+r7740 (60) -- the tree the readings were taken on
+
+ffdfcd9ea r7740 (60) -- REGISTRATION ONLY: the tangency swept once across the corpus, and a cold read of the reworded P15 sentence
+
+sympy 1.14.0  python 3.11.17
+
+55 .tex files in corpus/ read; the four files carrying candidates:
+  b21081d27b28afdd  506325 bytes  corpus/CR_cosmology.tex
+  12c20c049ffcae0c  394837 bytes  corpus/CR_framework.tex
+  06052a77320ccdcf  252244 bytes  corpus/SdS-slicing-curve_v2.tex
+  56d4bf4699f98e97  144324 bytes  corpus/groupoid_paper.tex
+
+history read for the power controls:
+  1ed0595b6^  corpus/SdS-slicing-curve_v2.tex   (before the parenthetical repair, r7731)
+  2b21f12f0^  corpus/SdS-slicing-curve_v2.tex   (before the threshold repair, r7729)
+  de4f51d61^  corpus/groupoid_paper.tex          (before the sigma repair, r7737)
