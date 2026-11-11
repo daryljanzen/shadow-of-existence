@@ -7,7 +7,7 @@
 - **E4 fails (60%), and not narrowly.** Exchanging χ alone moves A_ℓ by 0.030 on average. Exchanging g alone moves it by 0.0003, a hundred times less, at every ℓ on both arms.
   - **The reason is my own pairing, not the law.** Index pairing normalises each arm's η by its own W. So g, carried with its own dη, contributes only its *shape* in units of W. The 1.1555 extent goes over to the map. ⒟ gives the details.
 - **E2 fails on price.** Tier 1 took 3.66 core-h against ≤ 3.5. Tier 2 took 4.28 core-h against ≤ 3, at 1.07 h of wall against ≤ 1 h. Both are still nightly-class: the runner job's limit is 240 min.
-- **Storage:** `dlk-split.yml` run 42960476427 is building both tiers on runners, to `refs/ci/r7737_xmap` and `refs/ci/r7737_vis`. ⒠ records the outcome.
+- **Stored:** `refs/ci/r7737_xmap` (`ea0580419`) and `refs/ci/r7737_vis` (`e2eb9d56e`), from `dlk-split.yml` run 42960476427. **Both blobs are sha256-identical to this container's builds**, and every closure passes on the runner at its registered bar.
 
 ## ⒜ The closures (registered in PREDICTION ② and ③; each a refusal)
 
@@ -106,7 +106,11 @@
 - **The local blobs:**
   - `r7737_xmap.npz`: 32,506,376 B, sha256 `0314f844023623f12775a9137373e273cb80b743d8e992af6eb29ea19d55a3a7`.
   - `r7737_vis.npz`: 54,900,696 B, sha256 `c3da5390680d86b2f9dddcae3738a01e88974545b1a5d1ea4c36a2739ceb6ba4`.
-- **The runner:** `dlk-split.yml` run 42960476427 (LAUNCH at `eadeeab75`). Its outcome is recorded below when it lands.
+- **The runner:** `dlk-split.yml` run 42960476427 (LAUNCH at `eadeeab75`), both jobs green, about 50 min end to end.
+  - `refs/ci/r7737_xmap` → `ea0580419`; `refs/ci/r7737_vis` → `e2eb9d56e`.
+  - **Both npz blobs are sha256-identical to the container's** (`0314f844…`, `c3da5390…`), so every array is identical element for element (16 of 16, 31 of 31).
+  - The runner's `closure.json` gives the same figures as ⒜ to the last digit.
+  - Fetch with `git fetch origin refs/ci/r7737_xmap && git show FETCH_HEAD:r7737_xmap.npz > r7737_xmap.npz`, and the same with `vis`.
 
 ## Files
 

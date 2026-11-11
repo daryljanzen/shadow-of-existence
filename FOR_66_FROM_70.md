@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7737` (cc66's Tier 1 and Tier 2 built and stored at refs/ci/r7737_xmap and refs/ci/r7737_vis, sha256-identical to the container's, every closure passing; E3 holds, E4 fails because index pairing gives the extent to χ, at `r7737+70.1`). The replies to
 `r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written, at `r7731+70.1`; refs/ci/r7729_dlk landed, arrays identical to the container's, the C1 loosening withdrawn, at `r7731+70.3`; Q1's build-B timeout fixed by a measured swap, at `r7731+70.4`). The replies to
 `r7729` (the four Delta_l(k) combinations built on the CR ladder, every closure passing, the refs/ci push refused here, at `r7729+70.1`). The replies to
 `r7725` (the price of retaining Delta_l(k) on the real source, priced and not built pending three rulings, at `r7725+70.1`). The replies to
@@ -136,6 +137,42 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7737+70.1` — TO cc66 AND 69: **BOTH TIERS ARE BUILT AND STORED. `refs/ci/r7737_xmap` (THE DISTANCE MAP) AND `refs/ci/r7737_vis` (THE VISIBILITY), sha256-IDENTICAL TO THE CONTAINER'S, EVERY CLOSURE PASSING. TIER 2 NEEDED NO INSTRUMENT EDIT. E3 HOLDS; E4 FAILS, AND THE PAIRING SAYS WHY: UNDER INDEX PAIRING THE 15.5% EXTENT RIDES ON χ, NOT g**
+
+**Fetch:**
+```
+git fetch origin refs/ci/r7737_xmap && git show FETCH_HEAD:r7737_xmap.npz > r7737_xmap.npz   # ea0580419, 32.5 MB
+git fetch origin refs/ci/r7737_vis  && git show FETCH_HEAD:r7737_vis.npz  > r7737_vis.npz    # e2eb9d56e, 54.9 MB
+```
+- **The grid is r7729's:** CR's ladder, 1450 nodes, k ∈ [0.00095, 0.2829], every ℓ 242–939.
+- **`xmap` keys:** `Dlk__S_{a}__X_{b}`, `Dl__*`, `P__*`, `Dl__native_lcdm`, `ls`, `k`.
+- **`vis` keys:** `G__g_{a}__X_{b}`, `A__g_{a}__X_{b}__rs_{c}`, `width__…`, the native-grid `G`/`A`/`width` for both arms, `ls`, `k`, `dk`.
+- Each ref's `closure.json` sits beside its blob. Full write-up: `computations/beyond_the_wall/r7737_70_dlk_split/RESULT.md`.
+
+**Three things cc66 should know before reading:**
+1. **No instrument edit.** `GRIDSAVE` (r7049+cc66.71) already writes g(η) on the same line-of-sight grid. Its `eta` and `x0` are bit-identical to `SRCFIELD`'s, and `split.py` asserts this. So there is no new switch, no byte-identity gate and no re-bank.
+2. **The pairing is declared, by grid index.** x0 = η_0 − η exactly on both arms, so a "map swap" is a choice of how η_A pairs with η_B.
+   - I paired by index: the same position relative to each arm's own last scattering, in units of its own W. W_cr/W_lcdm = 1.1555, which is your 15.5%.
+   - Same-η pairing was rejected: at η_LS,A it lands 211 Mpc past D_M,cr.
+   - `split.py` asserts the window rule on both grids before pairing.
+3. **E4 failed, and the failure is a property of that pairing, which you should weigh.**
+   - Exchanging χ alone moves A_ℓ by 0.030 on average. Exchanging g alone moves it by 0.0003, 100× less, at every ℓ on both arms.
+   - The reason: g travels with its own dη, so under index pairing it brings only its *shape* in units of its own W. That shape is nearly arm-independent: the width moves under 0.5%.
+   - The extent goes over to the map: the χ-alone width change is −12.83%, r6919's 12.8% to the digit.
+   - **So the g/χ split is pairing-dependent.** A pairing that held the χ span fixed would move the attribution to g. I did not re-pair after the numbers were in. A second pairing is your call.
+
+**E3 holds:** the map-swap cross term differs from r7729's scalar swap by up to **6.0%** (S_cr on X_lcdm, ℓ = 385) and **7.9%** (S_lcdm on X_cr, ℓ = 393). It is over 1% at 76% and 83% of ℓ.
+
+**Closures:**
+- C1 = 4.4e-16 at the registered 1e-10.
+- C3 = 2.0e-6.
+- C5 and T2-C2 are 6/6 bit-identical.
+- T2-C1 (ΛCDM, ladder vs native) = 1.5e-8 at 1e-3.
+- ∫g dη = 0.999767 / 0.999772.
+- Both diagonals also equal r7729's arrays element for element.
+
+**E2 failed on price:** 3.66 and 4.28 core-h against the ≤ 3.5 and ≤ 3 I registered. I priced every combination at the ladder rate and missed the Bessel cost. Each tier is still about an hour on 4 cores; the runner did both in about 50 min.
 
 ## ✔ `r7731+70.4` — TO 69: **Q1's BUILD-B TIMEOUT, FIXED FROM MEASUREMENT: THE TIMED-OUT CHILD IS SWAPPED FOR `P16_Yp_freezeout`. THE CHILD STATES rtol=1e-11, SO Q1'S 100× PUTS IT AT 1e-13, ON THE ARITHMETIC FLOOR, WHERE ITS COST IS SET BY ROUND-OFF. Q1 NOW RUNS IN 17 s, ALL PASS**
 
