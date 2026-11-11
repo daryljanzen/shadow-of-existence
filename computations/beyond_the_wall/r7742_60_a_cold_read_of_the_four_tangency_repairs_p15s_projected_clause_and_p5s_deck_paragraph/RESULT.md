@@ -162,3 +162,57 @@ place a difference could live.*
 Both `P5` repairs are **offered**, with their replacement text, for `69` to land or leave; the
 paragraph is `71`'s. Nothing here edits a paper, a receipt, a generated file, or another seat's
 work.
+
+---
+
+# ⛔⛔ CORRECTION, SAME REVISION — `r7739` WAS AMENDED ON DARYL'S CORRECTION, AND THE DEFECT IS IN MY OWN `r7740` DRAFT
+
+**`r7739` has been amended** (`d0721d946`, *"P3's tangency sentences keep the backward root as the
+merged horizon re-entered"*, on Daryl's correction). Two of the three sentences this revision read
+as holding have been **changed**, and the change is not cosmetic:
+
+| | as `r7739` landed my draft | as amended |
+|---|---|---|
+| `③` | *"three real horizons, **distinct except at** `$r_{0}=\pm1/\sqrt3$`, where the diagonal meets the ellipse and **two of the three coincide**"* | *"three real horizons, **their three values** distinct except at `$r_{0}=\pm1/\sqrt3$`, where the diagonal meets the ellipse and two of the **values** coincide **in the merged horizon, which the third, run the other way round from `$r=0$`, reaches as well**"* |
+| `④` | *"three real roots, two of which coincide exactly at `$r_{0}=\pm1/\sqrt3$`, where the diagonal passes through an ellipse point"* | *"… where the diagonal passes through an ellipse point **and the third is the same merged horizon reached the other way round from `$r=0$`**"* |
+
+## The correction is RIGHT, and it is verified here on the object
+
+The locus is the diagonal `r = r₀` together with `r² + r r₀ + r₀² = 1`. That conic's discriminant is
+`B² − 4AC = 1 − 4 = −3 < 0`, so **the non-diagonal component is ONE closed curve**. At
+`r₀ = 1/√3` the vertical line meets it at `−2/√3` and `+1/√3` — **one on each side of `r = 0`** —
+and the component crosses `r = 0` only at `r₀ = ±1`. ⇒ **The two ellipse intersections are two
+points of one closed curve, reached the two ways round, and the "third root" is that same merged
+horizon re-entered from the other side.** The cubic's multiset at that designation is unchanged:
+`{1/√3: 2, −2/√3: 1}`.
+
+## ⛔ SO WHAT WAS WRONG WAS MINE, AND IT IS A GUARD I HAD IN FRONT OF ME
+
+My `r7740` drafts said *"three real **horizons**"* and *"three real **roots**"* and then counted
+**root VALUES**. This revision's `Ⓐ⑤` verified the values exactly — that the coinciding pair is a
+diagonal point with an ellipse point and not two ellipse points — and **that arm is still true**.
+What it never asked is the question the standing guards put in as many words:
+
+> *before two stretches are identified by a label, check how many-to-one the label is on the
+> object.*
+
+**The label is "horizon", the object is the locus, and the label is not one-to-one on it.** I
+checked the arithmetic of the labels and never checked the map from labels to the thing they name —
+which is this seat's own standing lesson, *a pattern is a form, not the thing it names*, turned the
+other way round: I had the form right and the object uncounted.
+
+⇒ **`r7742`'s reading of `③` and `④` is OVERTAKEN rather than contradicted**: every figure it
+printed is still what it printed, and the sentences it read no longer exist in that wording. The
+defect was in the draft `r7740` offered, not in `r7739`'s landing of it, and not in this revision's
+arithmetic.
+
+## What this adds to the standing precautions
+
+A new one, earned here: **when a repair counts things, name what is being counted — values, or the
+objects they label — and check the map between them before the count goes into prose.** `①`'s
+amendment carries the same point for the sign-split sentence (the negative root as *"the
+cosmological horizon reached the long way round"*), and the three amended sentences are now
+consistent on it.
+
+`origin/main` at `d0721d946` is merged into this branch; no file of this revision's is touched by
+the amendment, so the merge was clean.
