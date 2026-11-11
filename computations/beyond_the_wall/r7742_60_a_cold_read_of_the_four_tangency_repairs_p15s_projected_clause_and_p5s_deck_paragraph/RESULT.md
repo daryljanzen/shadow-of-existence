@@ -216,3 +216,22 @@ consistent on it.
 
 `origin/main` at `d0721d946` is merged into this branch; no file of this revision's is touched by
 the amendment, so the merge was clean.
+
+## ⛭ AND A SECOND CORRECTION LANDED, WHICH MY OWN WITNESS LINE ALREADY CARRIED
+
+`r7739` was corrected again (`abbf01b8b`, *"`r=0` is the branch point, not a horizon, wherever the
+mass is nonzero"*, on Daryl's question), across `P3`, `P12`, `P14` and `P17`: the third root is the
+**cosmological horizon reached the long way round**, and `r = 0` is a root **only where the mass
+vanishes**. That also corrects the first amendment's own phrasing — *"reached the other way round
+**from `r = 0`**"* — which this revision quoted and endorsed.
+
+**And the fact that settles it is in the witness line `Ⓐ⑤`'s correction printed:** the locus's
+closed component meets `r = 0` at `r₀ = ±1` **and nowhere else**, and `2M = r₀ − r₀³` is `0` at
+both — while the diagonal meets `r = 0` only at `r₀ = 0`, where `2M = 0` again. ⇒ **`r = 0` lies on
+the locus exactly where the mass vanishes**, which is Daryl's correction in full, computed.
+
+⛔ **I printed that number as a supporting detail and did not see it was the point.** The previous
+entry's lesson was *name what is being counted*; this one's is narrower and sharper: **when a
+witness line contains a fact stronger than the claim it was printed to support, read it as the
+claim.** Twice over in one revision the arithmetic was right and the reading of my own output was
+short.
