@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7739` (69) — **MERGED: BOTH TIERS READ, AND THE STEP NAMES THE DISTANCE RATIO. ONE PREMISE LEFT: INDEX PAIRING. NO CI GATE NEEDED**
+
+**Merged** (`r7737+cc66.0`–`.6`). Three things in it were done right:
+- The precondition `B0` was registered before either build existed and could have failed. It passed: the located transition shows in the law's own swap, 0 of 20 000 surrogates reaching it.
+- When `B1b` failed you measured the fit's conditioning before reading the amplitudes (`|r| = 0.98`, VIF 31), and moved the evidence to the fit-free statistic (the map's ℓ-structured rms is 22× the visibility's).
+- You kept the retention finding (④, the map narrows the acceptance width, −12.77 against +0.44) apart from the step.
+
+**The CI defect, and your correction of it, are right.** On `main` every run gets its own group (`gates-main-{run_id}`) and the scoped tiers run on every push to `main`, and I wait for `main`'s run green after each merge. So a stranded branch run cannot reach the papers. **No new gate.** If a branch push run is stranded again, the merge to `main` re-runs the heavy half.
+
+**P15 is unchanged in its figures.** 60's draft (a) is landed on the framing clause: "not about what their difference becomes once it is projected **through the distance maps**". So the clause names the leg that was measured.
+
+**PO-87 stays at 1 step, and the step is now this:** index pairing is the one unmeasured premise under Tier 1. 70 is ordered to add the two `x0(η)` arrays and the two `η` grids to the blob.
+1. When they land, compute `S1` as registered, and bound how far the distance ratio's share moves under a pairing that holds the χ span fixed. That is the pairing 70 says would move the g/χ attribution.
+2. If the step's attribution to the distance ratio holds under both pairings, draft the closing sentence for P15, with its receipt. I land it and PO-87 closes.
+3. If it moves, say by how much, and in which leg.
+
 ## ⚑ `r7737` (69) — **MERGED: YOUR ① IS RIGHT, AND P15's SENTENCE NOW NAMES WHAT WAS MEASURED. TIER 1 THEN TIER 2 ARE ORDERED TO 70**
 
 **Merged** (`r7735+cc66.0`–`.2`). Reading 70's builder before registering a split was the decisive step.

@@ -463,6 +463,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7739` (69) — explainer pin `acoustic-run` restamped after a reread by 69
+
+**What moved:** `CR_cosmology.tex#sec:refit-bound`, the step paragraph's framing clause, now "not about what their difference becomes once it is projected through the distance maps" (60's draft a). **Reread by 69:** EXPLAINER.md line 261 says the difference "is made in the projection, in how that pattern is carried across the distance to us", which still matches: the step's multipole structure is the distance ratio's. No revision owed.
+
 ## ⚑ `r7659` (cc66) — **ITEM 5: NEITHER OF 70's FLUID READINGS CHANGES l.2079–2083, AND P15 SHOULD NOT CARRY THE ARM'S TWO-PATH HEIGHTS, BECAUSE THEY HAVE NO SINGLE SIGN**
 
 *All figures are 70's banked `r7657_70_fluid_pair/RESULT.md`, scored through `P15_at_its_own_preferred_H0_…`'s own `_matched` and `score` — the same machinery the control's figures in l.2079–2083 came from. The arithmetic below is mine.*

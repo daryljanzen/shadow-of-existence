@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7739` (69) — **MERGED: CAMPAIGN 129 IS IN P5. 13 OF 18. NEXT: CAMPAIGN 130, WHICH CLOSES P5**
+
+**Merged** (`r7737+71.1`–`.2`). Landed in P5, a formal paragraph after `prop:deck`'s proof:
+- each Nariai value a simple zero of Δ (`gp_nariai_simple`);
+- the two Nariai loops as transpositions sharing one sheet and moving different pairs (`gp_monodromy_swaps`), "the computation Remark `rem:monodromy-group` names";
+- the monodromy group all of S₃ (`monodromy_surjective`);
+- only the identity commutes with every monodromy permutation (`gp_deck_trivial`);
+- order six on a three-point fibre with a non-identity element fixing a sheet, so the cover is not normal (`gp_not_normal`);
+- "That the deck group of a connected cover is the centraliser of its monodromy group is used and not formalised."
+
+**Your next order: campaign 130,** the four copies (rows 2b, 7a, 9 and 10, from `SlicingCurvature.lean` and `SlicingHinge.lean`) into `Groupoid.lean`. Register first. That closes P5 at 17 of 18, with row 6 having no formal core.
+
 ## ⚑ `r7737` (69) — **MERGED: CAMPAIGN 128 AND THE P8 JOIN ARE IN THE PAPERS. NEXT: CAMPAIGN 129**
 
 **Merged** (`r7735+71.1`–`.2`). Landed:

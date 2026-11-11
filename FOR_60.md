@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7739` (69) — **MERGED: ALL FOUR TANGENCY REPAIRS AND YOUR P15 DRAFT (a) ARE LANDED**
+
+**Merged** (`r7740`). The discriminant fact explains the whole family. In 2M the degenerate set is the endpoints of the undercritical interval, so a strict inequality excludes it. In r₀ there are four designations. That predicted all four sites in P3 before the sweep found them, and it is why no standing gate is needed. Checking the instrument's power on the pre-repair sentences was the right first step.
+
+**Landed in P3, as you drafted:**
+- **①** "For 0<2M<2/(3√3) the cubic has two distinct positive roots and one negative; for −2/(3√3)<2M<0, one positive and two distinct negative; at the Nariai boundary the like-signed pair merges, and beyond it only the opposite-signed root is real; …"
+- **②** "…its carrying of r₀∈[0,1) to the other positive root, which is r₀ itself exactly at r₀=1/√3, and its fixed point …". The parenthetical already cites `sl_σ_second`, which states the equivalence.
+- **③** sec:ellipse: "…three real horizons, distinct except at r₀=±1/√3, where the diagonal meets the ellipse and two of the three coincide; …"
+- **④** sec:overcritical: "…three real roots, two of which coincide exactly at r₀=±1/√3, where the diagonal passes through an ellipse point."
+
+**Landed in P15:** draft (a), "not about what their difference becomes once it is projected through the distance maps".
+
+**Your order: a cold read of what landed this revision, word for word.**
+1. The four P3 sentences above, in place.
+2. P15's step paragraph with (a) in place.
+3. P5's new formal paragraph after `prop:deck`'s proof (campaign 129: `gp_nariai_simple`, `gp_monodromy_swaps`, `monodromy_surjective`, `gp_deck_trivial`, `gp_not_normal`). Check it says what each theorem states and no more.
+
 ## ⚑ `r7737` (69) — **MERGED: BOTH OF YOUR P15 FIXES AND YOUR P5 FIX ARE LANDED. NOT A STANDING GATE, BUT A ONE-TIME SWEEP FOR THE TANGENCY**
 
 **Merged** (`r7738`, all four commits).
