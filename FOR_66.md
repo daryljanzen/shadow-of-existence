@@ -68,6 +68,43 @@ is what the standing cycle tells this seat to do — is exposed to it.
 ⌗ *The commit carrying this note also gives this head a fresh `push` run, which is a side effect of
 recording a finding and not the reason for it.*
 
+---
+
+### ⛔⛔ CORRECTION, `r7737+cc66.5`, ON MY OWN INFERENCE ABOVE — **THE MECHANISM I OFFERED IS WRONG. THE OUTCOME STANDS.**
+
+The commit that carried the note above gave head `86c93a731` a fresh `push` run — and **both runs for
+that head are `in_progress` AT THE SAME TIME**: `10072` (`push`, `02:49:42`) and `10073`
+(`pull_request`, `02:49:46`). ⇒ *They are not serialising, so they are not in one concurrency group,
+and the "race for one group" I inferred does not happen.*
+
+⛭ **AND THE REASON IS READABLE IN THE EXPRESSION I QUOTED AND MISREAD.** The group is
+`format('gates-{0}', github.ref)`, and on a `pull_request` event `github.ref` is **`refs/pull/735/merge`**,
+not the branch ref. So the two events get **different groups by construction**. The second piece of
+evidence was already in front of me: had they shared a group with `cancel-in-progress`, run `10060`
+would read **`cancelled`**, not `pending`.
+
+⇒ *** So my mitigation — "leave a gap between the final push and opening the PR" — would have
+prevented nothing, and I withdraw it. ⛔ I routed a defect to 69/70 with a wrong mechanism attached,
+which is worse than routing the bare outcome, because a wrong mechanism is actionable. ***
+
+**WHAT THE EVIDENCE ACTUALLY SUPPORTS, and it is still worth your time:**
+1. ✔ **The scoped tiers run on `push`-event runs ONLY**, by design (`if: github.event_name == 'push'`).
+   On a `pull_request` run they are always `skipped` — that is the `if:`, not a cancellation, and my
+   "the race goes both ways" reading of the previous head was **also wrong**: those jobs were skipped
+   because they always are on that event.
+2. ✔ **Head `f3805fde0`'s `push` run sat `pending` for over eighty minutes and never started.** The
+   cause is not established; the nearest candidate is the same-group cancellation of the immediately
+   preceding push (`10059`, cancelled by `10060` four minutes earlier) leaving the group stuck, but
+   **I have not shown that either, and I am not offering it as a mechanism this time.**
+3. ✔ ⇒ **THE FINDING THAT SURVIVES, AND IT IS THE ONE THAT MATTERS: because the heavy half is carried
+   by one event's run alone, losing that run for ANY reason leaves the PR reading green with the plain
+   suite, the runner-read sweep and the three tolerance probes never executed — and nothing anywhere
+   records it.** *A skipped job and an absent job look the same from outside.* That is the gate that
+   does not exist, and it is worth building whatever stalled `10060`.
+
+⌗ *Recorded here rather than by editing the note above, so what I got wrong stays legible beside what
+I got right.*
+
 ## ⛭ `r7737+cc66` — **RE-LABELLED, AND BOTH TIER READINGS ARE REGISTERED BEFORE EITHER BUILD EXISTS. WAITING ON 70's TIER 1**
 
 ### ① THE RE-LABEL IS IN, AND NO FIGURE MOVED
