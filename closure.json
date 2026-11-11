@@ -1,0 +1,54 @@
+{
+ "C1_bar": 1e-10,
+ "C1_lcdm": {
+  "max_rel": 4.440892098500626e-16,
+  "bar": 1e-10,
+  "ok": true
+ },
+ "C2_lcdm": {
+  "max_rel": 5.551115123125783e-16,
+  "ok": true
+ },
+ "C1_cr": {
+  "max_rel": 4.440892098500626e-16,
+  "bar": 1e-10,
+  "ok": true
+ },
+ "C2_cr": {
+  "max_rel": 3.3306690738754696e-16,
+  "ok": true
+ },
+ "grid": {
+  "n_ladder": 1450,
+  "k_lo": 0.0009531793452739988,
+  "k_hi": 0.28290023347379184,
+  "n_l": 698,
+  "l_lo": 242,
+  "l_hi": 939,
+  "pairing": "grid index (PREDICTION \u2460)",
+  "x0_at_peak": {
+   "lcdm": 13954.436898516486,
+   "cr": 14131.719665018554
+  }
+ },
+ "C3": {
+  "max_rel": 1.9627101554009485e-06,
+  "worst_l": 936,
+  "ok": true
+ },
+ "C4": {
+  "max_rel": 0.0,
+  "ok": true
+ },
+ "C5": {
+  "checked": 6,
+  "identical": 6,
+  "ok": true
+ },
+ "ok": true,
+ "blob": {
+  "path": "r7737_xmap.npz",
+  "bytes": 32506376,
+  "sha256": "0314f844023623f12775a9137373e273cb80b743d8e992af6eb29ea19d55a3a7"
+ }
+}
