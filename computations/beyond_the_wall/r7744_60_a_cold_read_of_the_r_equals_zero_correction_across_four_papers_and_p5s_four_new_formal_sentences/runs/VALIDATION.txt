@@ -1,0 +1,50 @@
+r7744 (60) -- THE VALIDATION
+
+This revision adds no receipt, no INDEX row, no generated file and no paper edit -- only a reply
+and one computations/beyond_the_wall directory.  r7738 bought the lesson that a receipt can be
+coupled to such a diff by a census over the tree naming neither the path nor the file, so the
+coupling is MEASURED and not assumed.
+
+SCOPE, from the repo's own selector over ec0f6925a..d8f978041:
+    reads       0 of 1156   -> the runner-read sweep has nothing to run, measured not assumed
+    tolerance  14 of 1156
+    suite      65 of 1156
+  and BOTH lists are SET-IDENTICAL to the previous range's (5dcc4ad53..707302afd), checked by
+  sorted diff rather than by their counts matching -- a matching count is exactly what made
+  r7736's wrong comparison look sound.
+  ⌗ NOTE the previous range is RECOMPUTED here on today's tree and returns 65 for the suite
+    where r7742's record wrote 66.  The comparison is still like-for-like because both sides
+    were computed in the same run on the same tree; the 66 was computed when the shallow
+    clone's reachable window was one commit different.  Said rather than smoothed over.
+
+THE FAST JOB, run TWICE because the tree changed between them and not for reassurance:
+  10 generators, 133 gates, plus the hollow-assertion lint.
+  FIRST RUN named SIX reds -- the five structural shallow-clone gates AND check_absence_claims,
+  which is this revision's own: the (A)iii-c arm asserted that two of P3's repaired sentences
+  "carry no such restriction" without saying what had been searched.  The gate is right.  The
+  arm now searches both sentences for ten restriction tokens, prints the search beside the
+  claim, and runs the same search over the regions sentence of the same block as a positive
+  control -- which returns 'distinct' and 'M>0' there and nothing in either of the two.
+  SECOND RUN, on the pushed tree, names exactly the five and nothing else:
+    check_branches check_pdf_current check_quote_pins check_pins_adjudicated_on_mint
+    check_marker_transposition
+
+THE SCOPED SUITE: 50 pass, 15 fail, 0 over timeout, 471s wall -- and the failing set is
+SET-IDENTICAL to the fifteen r7738 established as failing on a PRISTINE origin/main worktree as
+well:  L255/E1  L259/D1  S10  S17  S19  S21  S3  S54  S5  S6  S8  S9  C65  C71  C79.
+0 here only, 0 there only, 15 in both, both sides non-empty.
+
+THE THREE-BUILD TOLERANCE PRE-SWEEP over the 14-receipt scope, probes A (default), B (--threads
+4) and C (--threads 2 --coretype Prescott), compared A-B and A-C:
+    0 flagged site(s); 0 at the precision floor (< 1e-13), counted and not flagged
+    VERDICT NOT A SWEEP, exit bitfield rc=2 on both comparisons
+    (2 = unmeasured, 1 = flagged; red with 0 flagged is the normal shape)
+  Its 7 unmeasured receipts, each rc=1 on BOTH builds and so unmeasured because they were
+  already red rather than because the perturbation moved anything:
+    L255/E1  L259/D1  S5  S6  S8  C71  C79 -- every one a subset of those fifteen, and the
+  same seven r7742 recorded.
+
+=> NOTHING IN THIS VALIDATION IS THIS REVISION'S EXCEPT THE ONE GATE IT TRIPPED AND FIXED.
+   All four parts the turn's procedure asks for ran: the probe (33 arms, 33 PASS), the fast job,
+   the three-build pre-sweep, and the runner-read sweep, whose scope was measured at 0 of 1156
+   rather than assumed.
