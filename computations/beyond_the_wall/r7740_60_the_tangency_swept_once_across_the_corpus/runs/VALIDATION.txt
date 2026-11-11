@@ -28,3 +28,24 @@ worktree as well:
 => NO RED IN THIS SCOPE IS THIS REVISION'S.  The escalation rule stated before the run was that
    a NEW name would send me back to a fresh pristine-main baseline; no new name appeared, so the
    baseline did not need re-running on the moved main.
+
+THE THREE-BUILD TOLERANCE PRE-SWEEP, on the 14-receipt tolerance scope -- builds A (default),
+B (--threads 4) and C (--threads 2 --coretype Prescott), then A-vs-B and A-vs-C:
+
+    BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision floor (< 1e-13)
+    VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not measured on both builds
+    exit bitfield rc=2   (2 = unmeasured, 1 = flagged; red with 0 flagged is the normal shape)
+
+The 7 unmeasured receipts, each rc=1 on BOTH builds, so unmeasured because they were already
+red and not because the perturbation moved anything:
+    L255/E1   L259/D1   L_probability/S5   L_probability/S6   L_probability/S8
+    P15_CR_cosmology/C71   P15_CR_cosmology/C79
+
+=> EVERY ONE OF THE SEVEN IS A SUBSET OF THE FIFTEEN ABOVE, which are red on a pristine main
+   too.  0 flagged sites, and no unmeasured receipt that is not already established as red
+   without this revision.
+
+=> THE VALIDATION IS COMPLETE AND NOTHING IN IT IS THIS REVISION'S.  Four of the four parts the
+   turn's own procedure asks for ran: the sweep itself (15 arms, 15 PASS), the fast job, the
+   three-build pre-sweep, and the runner-read sweep, whose scope was measured at 0 rather than
+   assumed.
