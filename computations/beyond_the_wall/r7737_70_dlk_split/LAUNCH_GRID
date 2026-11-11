@@ -1,0 +1,2 @@
+r7739: launch the grid ref (eta grids and x0(eta) per arm) on a runner; push refs/ci/r7737_grid.
+launched 2026-11-11, after a local build passed G1-G3 (sha256 546977c4f05f2cff...)
