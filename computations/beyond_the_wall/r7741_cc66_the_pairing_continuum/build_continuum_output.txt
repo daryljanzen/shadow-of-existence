@@ -1,0 +1,15 @@
+  [ok] r7737_grid.npz is the object 70 recorded
+  [ok] r7737_vis.npz is the object 70 recorded
+  [ok] P1 legs reduced from 70's own hybrids
+  [ok] P2 / grid span legs reduced, ratio 1.060251
+  [ok] P2 / sigma (mine) legs reduced, ratio 1.104473
+  [ok] P2 / 70's W legs reduced, ratio 1.155482
+  [ok] the scalar-only leg reduced, xs 1.0128706133
+
+  wrote r7741_continuum.npz, 89436 bytes
+      r7737_grid.npz=546977c4f05f2cffb4299900586f5a6d3ab452f561b13f9272a24bdab7dc7305
+      r7737_vis.npz=c3da5390680d86b2f9dddcae3738a01e88974545b1a5d1ea4c36a2739ceb6ba4
+      r7739_P2_70s_W.npz=c142000523763b0c6ac07570f155a1d2c42f0feb773a788261e3856f8b50af8d
+      r7739_P2_grid_span.npz=1bf1f68c87ff177bc08928b5ef3742f3d9225e2acfebfeaa955d08e545c06851
+      r7739_P2_sigma_(mine).npz=84536e580ff05d7f37bb20f00e1c1d15cafcf9236129d08323c48766403d8867
+      r7739_norm_only.npz=17ab5cdfdaffdbf8018c73bfb0bd471a110b48afef31a7de2aa15e7115bb69a5
