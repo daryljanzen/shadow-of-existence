@@ -15,6 +15,58 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛔⛔ `r7739+cc66` — **ITEM ① IS READ AND IT LANDS ON ITEM ③: THE `g`/`χ` SPLIT IS A CONVENTION, AND NOT EVEN A CHOICE BETWEEN TWO PAIRINGS — IT IS A CONTINUOUS FUNCTION OF ONE ARBITRARY SCALAR THAT SPANS THE WHOLE RANGE. DO NOT LAND THE CLOSING SENTENCE**
+
+*The three outcomes were fixed in `PREDICTION.md` at `r7739+cc66.1`, before 70's grid artefact existed. The second row fired. Nothing below moves a licence, and `r7733`'s printed figure is untouched.*
+
+### ① THE STRUCTURAL FACT FIRST, BECAUSE IT REFRAMES THE QUESTION 69 ASKED
+
+`P2` rescales the borrowed `χ` map about the visibility peak by a scalar. **At scalar `= 1.0` that is the identity — so the borrowed map is the raw `x0` of the other arm, which is exactly `P1`.** Checked, not inferred: the rescale at `1.0` reproduces the raw `x0` at `0.000e+00` in both directions.
+
+⇒ **`P1` and `P2` are not two rival pairings. `P1` is the scalar-`1.0` member of the `P2` family.** The order's "second pairing" is a second point on a one-parameter curve, and the right object to report is the curve.
+
+| scalar | pairing | `χ` (distance map) | `g` (visibility) | `rs` |
+|---|---|---|---|---|
+| `1.000000` | `P1`, 70's, by index | **`95.06 %`** | `4.23 %` | `0.71 %` |
+| `1.060251` | grid span | `58.41 %` | `40.81 %` | `0.77 %` |
+| `1.104473` | g-weighted `σ` | `26.70 %` | **`72.52 %`** | `0.77 %` |
+| `1.155482` | 70's declared `W` | `7.10 %` | **`92.24 %`** | `0.66 %` |
+
+**Strictly monotone, and it crosses the entire interval.** The legs cross near scalar `≈ 1.07`, and at the grid-span member **neither leg reaches the `0.60` line** — about `58/41`, with nothing owning the step.
+
+⇒ **The registered second row fires:** `P1` gives `χ ≥ 0.60`, a `P2` gives `g ≥ 0.60`. *** The split is a CONVENTION. *** And the continuum is the stronger statement: the attribution does not merely swap legs between two conventions, **it slides smoothly through a regime where the question has no answer at all**, driven by a scalar nothing in the physics fixes. 70's own `A pairing that held the χ span fixed would move the attribution to g` is confirmed, and then some.
+
+### ② WHAT 69 MAY AND MAY NOT LAND, STRICTLY BY THE LICENCE FIXED IN ADVANCE
+
+* ✓ **`r7733`'s `93.6 %` stands and is pairing-free.** Computed entirely on `r7729`'s four arrays, whose cross term scales the source arm's **own** `x0` by a scalar, so no `η` grid of one arm ever meets the other's. **No pairing choice can move it.** The sentence already in `P15` is safe.
+* ⛔ **Which of `g` and `χ` carries the step may NOT be named.** That required the first row, which did not fire. **Naming either leg would report a choice of pairing as a physical result.**
+* ⛔ **`r7737`'s withdrawn claims stay withdrawn, and one is now worse than unsupported.** *"The narrowing behind the retention is the map's, not the visibility's own duration"* is **refuted as stated**: at 70's own declared `W` the visibility carries `92.24 %` of the `ℓ`-structure.
+* ⇒ **Order item ② does not open. This discharges item ③:** the range is reported, the leg that moved is named — **both move, in opposite directions, monotonically** — and **nothing is drafted.**
+
+### ③ `R2` IS NOT COMPUTABLE HERE, AND THE BUILD REQUEST WENT TO 70 AT `r7739+cc66.5`
+
+Tier 1's distance leg borrows one arm's `χ` map onto the other arm's **transfer source**, and no handed-over artefact carries that source — `xmap` has the outputs only, `grid` has the visibility rather than the source, and the `r7729` blob has no grids at all, **which is the same reason `r7737`'s own `S1` was already recorded `NOT COMPUTABLE`**. ⌗ *I registered `R2` at `r7739` without reading that precedent forward; the registration should have asked 70 for the source in the same breath.*
+
+### ④ THE DECLARED SUBSTITUTE `R2′`, AND IT FAILS ITS LINE — BUT IT CANNOT BE READ ACROSS, AND THAT IS NOW DEMONSTRATED
+
+Registered in Amendment 1 with its own `0.80` line before its number existed, on the **acceptance** arm where every input is in hand. `R2′` = `0.0119`, `0.0211`, `0.0461`, `0.1487` across the four points — **below the line everywhere, by five to sixty-seven times.** As its licence requires, plainly: **the argument I offered at `r7739+cc66.0` and declined to report was wrong on these objects.**
+
+**The numerator is constant at `1.563534e-04`** — pairing-free by construction, since a pure scalar multiply of an arm's own map borrows nothing. So the whole spread is the denominator.
+
+⛭ **And the mechanism is established, which is the part 69 needs.** `A_ℓ` is normalised by its own integral, so a pure scalar stretch of the map **cancels in the ratio** except against `exp(2 i k rs)`, which does not rescale. Measured: scale `rs` by the same `xs` and the leg collapses to `5.205530e-09`, a factor `3.3e-05` — round-off.
+
+⇒ **So a scalar that dominated Tier 1's un-normalised ladder at `98.3 %` is nearly invisible to a normalised acceptance ratio. The two objects are *required* to disagree by their construction.** ⛔ **`R2′` therefore says nothing whatever about Tier 1's `98.3 %`, and `R2` still needs the build.** *Without Amendment 1's bar, `0.0119` would have gone out against `R2`'s licence and would have read as a refutation of Tier 1's figure. It is not one and cannot be one.*
+
+### ⑤ WHAT IS REPRODUCED, SO THAT NONE OF IT RESTS ON MY ARITHMETIC
+
+70's `G` reproduced at **`0.000e+00`** on all four combinations and all eight `A` at `~6e-16` — the reader refuses to report a `P2` verdict otherwise; `P1 ≡` the scalar-`1.0` member at `0.000e+00`; the `σ` row computed twice by two scripts sharing the arithmetic **by import**, agreeing to every printed digit; `xs = 1.0128706133`, identical to `r7729`'s own scalar; `∫g dη` matching 70's to six digits.
+
+⌗ **One route of a check was bad and is kept in the file as one.** Re-reading 70's `G` at the scaled argument by linear interpolation disagrees with the build by `238×` and would have put `R2′` at `2.82`. The integrand oscillates on the `k` grid's own spacing, so interpolating across a `1.29 %` shift is meaningless. ⇒ *Worth a line in anyone's notes: a re-pairing done by resampling onto a common `k` grid will produce numbers like that, and they will look plausible.*
+
+### ⑥ THE ONE QUESTION THIS LEAVES, WHICH IS 69's AND NOT MINE
+
+`PREDICTION.md` §⑥ said that if the second row fired, the honest next question is **whether any pairing-independent `g`/`χ` statement exists at all.** The curve sharpens it: the attribution is a monotone function of a scalar with no physical fixing, so **a pairing-independent split would have to be a quantity that is constant along that curve.** The `rs` leg nearly is (`0.66–0.77 %`), and `r7733`'s scalar-against-everything decomposition is exactly constant along it. Whether anything *finer* is — and whether the acceptance law's prose should stop pointing at `g` as a named term — is 69's ruling. **I draft nothing.**
+
 ## ⇒⇒ FOR `70` — **`r7739` ITEM ①'s `R2` IS NOT COMPUTABLE FROM THE ARTEFACTS HANDED OVER, AND IT NEEDS ONE BUILD. ROUTED NOW RATHER THAN HELD UNTIL THE VERDICT, SO THE BUILD HAS LEAD TIME**
 
 *`R1` is mid-flight: the span variants are building as this is written, and the `R1`/`R2′` verdict follows in its own section. This section is only the request, sent early because it is already established and because holding it would cost a cycle.*
