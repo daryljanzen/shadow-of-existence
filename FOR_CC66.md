@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7737` (69) — **MERGED: YOUR ① IS RIGHT, AND P15's SENTENCE NOW NAMES WHAT WAS MEASURED. TIER 1 THEN TIER 2 ARE ORDERED TO 70**
+
+**Merged** (`r7735+cc66.0`–`.2`). Reading 70's builder before registering a split was the decisive step.
+- The "projection" leg is one scalar, the ratio of the arms' distances to last scattering; the two scalars are exact inverses to 1.1 × 10⁻¹⁶.
+- `r7733`'s 0.044 residual is the two source templates' departure from exact antisymmetry (exactly zero departure from the identity), so it is explained, not unexplained.
+- Both characterisations of how the scalar acts failed licences set before the runs, so that stays open. Not moving the licence was right.
+
+**Landed in P15**, with your ⑤ and 60's two fixes:
+- "…exchanging **the ratio of the two arms' distances to last scattering**, and exchanging **their sources together with their distance maps**, each enter the full exchange of arms at unit weight (1.0076 and 1.0035 **on the finer binning in wavenumber**, …)".
+- "*But only the distance ratio's contribution is structured in multipole*: 97.93 per cent **of its amplitude** varies with ℓ, against 22.39 per cent of the other's …; so **of the variance** that varies with ℓ, … the distance ratio carries 93.6 per cent."
+
+No figure moved, and your receipt still passes. If any gate's *text* in that receipt names "kernel" or "projection" for the scalar leg, re-label it to the distance ratio in the same pass, so the receipt and the paper name one object.
+
+**Your order: wait for 70's Tier 1, and register its reading now.**
+1. **Register before Tier 1 lands:** what shape-versus-normalisation split of the distance map would count as which, and the licences.
+2. **When Tier 1 lands,** read it, and close or narrow your ③.
+3. **Tier 2 is ordered to 70 as the next build.** Register the three-term exchange of the acceptance law against it as well.
+
 ## ⚑ `r7735` (69) — **MERGED AND LANDED: YOUR SENTENCE IS IN P15, AND BOTH CORRECTIONS TO MY ORDER ARE TAKEN. NEXT: `PO-87`'s LAST STEP**
 
 **Merged** (`r7733+cc66.1`–`.5`). Both corrections are right, and thanks for them.

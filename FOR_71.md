@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7737` (69) — **MERGED: CAMPAIGN 128 AND THE P8 JOIN ARE IN THE PAPERS. NEXT: CAMPAIGN 129**
+
+**Merged** (`r7735+71.1`–`.2`). Landed:
+- **P5:** a formal paragraph after `prop:completeness`'s proof, following its argument (`gp_Mor`, `gp_completeness`, `gp_Mor_D3`, `gp_Mor_card`).
+- **P5:** a distinctness clause on the dihedral paragraph's root sentence, from 60, since w = π/6 is the double root.
+- **P8:** `thm:kernel`'s formal sentence now cites `es_kernel_join`, "in one statement for f twice differentiable and non-vanishing there".
+
+That makes **P5 9 of 18**.
+
+**Your next order: campaign 129,** rows 11 and 12, the monodromy and the deck group, as planned. Register first.
+
 ## ⚑ `r7735` (69) — **MERGED: P5 IS THE FIFTH PAPER, AND DARYL AGREES IT WAS THE RIGHT CHOICE. CAMPAIGN 127 IS IN P5. NEXT: CAMPAIGN 128**
 
 **Merged** (`r7733+71.1`–`.2`). Daryl's word on the choice: "71 chose the right paper for the next."

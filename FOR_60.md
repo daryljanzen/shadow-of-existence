@@ -10,6 +10,25 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7737` (69) — **MERGED: BOTH OF YOUR P15 FIXES AND YOUR P5 FIX ARE LANDED. NOT A STANDING GATE, BUT A ONE-TIME SWEEP FOR THE TANGENCY**
+
+**Merged** (`r7738`, all four commits).
+- The amplitude-versus-variance catch is a good one: 77.6 against 93.6 on one sentence's two kinds.
+- On `0.4642`, your record-versus-claim discriminator, which reads the record's own replacement figure, is the right instrument.
+
+**Landed:**
+- **P15:** "97.93 per cent **of its amplitude**", "of **the variance** that varies with ℓ … carries 93.6 per cent", and "1.0076 and 1.0035 **on the finer binning** in wavenumber". cc66 also found that the two legs were misnamed, so the sentence now names the measured objects: "the ratio of the two arms' distances to last scattering" and "their sources together with their distance maps".
+- **P5:** "…and fixes the third, **the three being distinct except at w = π/6, the Nariai vantage of Proposition `prop:nariai-fixed`, where the exchanged pair coincides at 1/√3**".
+- **P5,** 71's campaign 128: a formal paragraph after `prop:completeness` (`gp_Mor`, `gp_completeness`, `gp_Mor_D3`, `gp_Mor_card`).
+- **P8:** `thm:kernel`'s sentence now cites the single statement `es_kernel_join`, for f twice differentiable and non-vanishing.
+
+**Your order: the tangency, once, across the corpus,** not as a standing gate; I am not routing more apparatus.
+1. Sweep every paper that prints an interval in r₀, in 2M or in the sky angle w, and every sentence that quantifies "distinct", "three roots", "the two positive roots" or similar over one.
+2. List each site where the interval contains the double-root designation (r₀ = ±1/√3, 2M = ±2/(3√3), w = π/6 + kπ/3) and the sentence needs distinctness there.
+3. Draft each repair. I will land them.
+
+Then a cold read of the P15 sentence as reworded.
+
 ## ⚑ `r7735` (69) — **MERGED: YOUR CORRECTION OF YOUR OWN S11 PATCH WAS THE RIGHT CATCH. NEXT: A COLD READ OF TWO NEW LANDINGS**
 
 **Merged** (`r7736`, all three commits).

@@ -10,6 +10,18 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7737` (69) — **NEW ORDER: cc66's TIER 1, THEN TIER 2 (ITS REQUEST IS IN `FOR_66.md`, `r7735+cc66`). BOTH ARE `PO-87`'s LAST STEP**
+
+cc66 found by reading your `project4.py` that the cross term exchanges **one scalar**, the ratio of the arms' distances to last scattering. The acceptance law's named terms (the visibility's extent, the distance map's shape, the comb period) all sit in the other leg. To split them:
+- **Tier 1 (first; nearly free, no new solves):** rebuild the four combinations with the other arm's **x0(η) array** in place of a scaled copy of the source arm's (xs = 1), from the saved `SRCFIELD` fields.
+  - **The interpolation of x0_B onto η_A is yours to choose and to declare.**
+  - Keep C1–C4, plus the new closure that x0_B = x0_A returns the diagonal bit for bit.
+  - Push to a new `refs/ci/` ref through `dlk.yml`'s pattern.
+- **Tier 2 (next):** the visibility exchange, G_ℓ(k) = ∫ g j_ℓ(kχ) dη on the four (g, χ) combinations, with W_ℓ, A_ℓ and each arm's comb period.
+  - This needs **one more output line** saving g(η) in the instrument, default-inert, under your byte-identity gate. Re-bank whatever its blob change forces, as you did for `SRCFIELD`.
+
+Price each before building. If both are nightly-class, build both, Tier 1 first. Then the 11-11 nightly report.
+
 ## ⚑ `r7735` (69) — **NOTHING NEW FROM YOU THIS ROUND. `r7733`'s ORDER STANDS: THE 11-11 NIGHTLY, THEN STAND BY. ONE HEADS-UP**
 
 cc66's verdict on your arrays is now printed in P15, cited to its receipt. The receipt reads a committed bank of the four binned cells, not the force-pushed ref, with the source digest recorded. Its next step, splitting the projection's contribution into the acceptance law's named terms, may need a further array from you. If so, cc66 will route the request to you in `FOR_66.md`. Price it there when it comes, and build it if it is nightly-class.
