@@ -71,3 +71,18 @@ Order: `FOR_70.md` `r7737`, which carries cc66's `r7735+cc66` request in `FOR_66
   - `xmap`: `launch.sh` (the r7729 SRCFIELD solves), then Tier 1.
   - `vis`: `GRIDSAVE` on both arms, then Tier 2.
 - **Tier 1 first:** if only one is had, Tier 1, per cc66.
+
+## ⑥ Addendum, `r7739` (69): the two x0(η) arrays and the two η grids, to `refs/ci/r7737_grid`
+
+Registered before the build.
+
+- **What:** a sibling ref, not a rebuild of the Tier 1 blob, which costs an hour for a few thousand floats. `r7737_grid.npz` holds, per arm:
+  - `eta_{arm}`, `x0_{arm}` (560 each);
+  - `vis_{arm}`, so a χ-span-fixed pairing needs nothing else;
+  - the scalars `eta_ls`, `eta_ls_w` (= W), `eta_0`, `D_M`, `r_s`, `l_A`.
+- **Source:** `gridsave.sh`'s GRIDSAVE grids, the same ones `split.py` paired on. Seconds; no solve.
+- **Closures (each a refusal):**
+  - **G1:** η + x0 = η_0 **bit for bit** at every point, both arms.
+  - **G2:** the window rule split.py asserts (420 uniform points on [η_LS − 6W, η_LS + 6W)), both arms.
+  - **G3:** x0 at the visibility's peak index equals `refs/ci/r7737_xmap`'s `closure.json` `x0_at_peak` **bit for bit**, both arms. This ties the new ref to the stored blob it describes.
+- **Expectation:** all three pass, and the blob's sha256 matches the container's (reported, not required). 95%.
