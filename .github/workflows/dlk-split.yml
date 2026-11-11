@@ -1,0 +1,77 @@
+# ⛭ `r7737` (69): PO-87's last step, cc66's two tiers (`FOR_66.md`, `r7735+cc66`), on `dlk.yml`'s pattern.
+#   Tier 1 (`xmap`): the four combinations with the other arm's distance MAP -> refs/ci/r7737_xmap.
+#   Tier 2 (`vis`):  the visibility exchange, G_l, W_l, A_l with each arm's r_s -> refs/ci/r7737_vis.
+#   The pairing, the closures and the prices are registered in
+#   `computations/beyond_the_wall/r7737_70_dlk_split/PREDICTION.md`.
+# As `dlk.yml`: a push path filter on a LAUNCH file restricted to the launching branch, a job-level `if:` on
+#   that ref (so no seat's merge of main can relaunch it or move a ref), no cancel-in-progress, and every
+#   closure a refusal.  C1 runs at its registered 1e-10: r7733 wants no cross-machine bar, so an odd runner
+#   refuses and that is the gate working.
+name: dlk-split — r7737 Tier 1 (distance map) and Tier 2 (visibility), to refs/ci/r7737_*
+
+on:
+  push:
+    branches: [claude/shadow-of-existence-setup-wgcmvt]
+    paths:
+      - 'computations/beyond_the_wall/r7737_70_dlk_split/LAUNCH'
+  workflow_dispatch:
+
+permissions: { contents: read }
+
+jobs:
+  tier:
+    if: github.ref == 'refs/heads/claude/shadow-of-existence-setup-wgcmvt'
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    permissions: { contents: write }   # only the last step pushes, and only its own refs/ci/r7737_* ref
+    strategy:
+      fail-fast: false                 # Tier 1 refusing must not hide Tier 2's result, nor the reverse
+      matrix:
+        tier: [xmap, vis]
+    concurrency:
+      group: dlk-split-${{ github.ref }}-${{ matrix.tier }}
+      cancel-in-progress: false
+    env:
+      D: computations/beyond_the_wall/r7737_70_dlk_split
+      R7729_OUT: /tmp/r7729
+      GRID_DIR: /tmp/r7737/grid
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt (PO-64)
+      - run: pip install -r requirements-ci.txt
+      - name: the acceptance law's inputs (GRIDSAVE, both arms, seconds)
+        run: bash "$D/gridsave.sh" "$GRID_DIR"
+      - name: Tier 1 needs the SRCFIELD fields (r7729's solves)
+        if: matrix.tier == 'xmap'
+        run: bash computations/beyond_the_wall/r7729_70_dlk_build/launch.sh
+      - name: the tier, its closures as refusals
+        run: |
+          if [ "${{ matrix.tier }}" = xmap ]; then src="$R7729_OUT/fld"; else src="$GRID_DIR"; fi
+          python3 -u "$D/split.py" "${{ matrix.tier }}" "$src" /tmp/r7737/out --workers "$(nproc)"
+      - name: the closures, as an artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r7737_${{ matrix.tier }}_closure
+          path: /tmp/r7737/out/closure.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: and where cc66 can fetch it -- refs/ci/r7737_${{ matrix.tier }}
+        if: success()
+        shell: bash
+        env:
+          GIT_AUTHOR_NAME: dlk-split
+          GIT_AUTHOR_EMAIL: dlk-split@users.noreply.github.com
+          GIT_COMMITTER_NAME: dlk-split
+          GIT_COMMITTER_EMAIL: dlk-split@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          o=/tmp/r7737/out; f="r7737_${{ matrix.tier }}.npz"
+          test -s "$o/$f"
+          echo "runner sha256: $(sha256sum "$o/$f" | cut -d' ' -f1)"
+          b1=$(git hash-object -w "$o/$f"); b2=$(git hash-object -w "$o/closure.json")
+          tree=$(printf '100644 blob %s\tclosure.json\n100644 blob %s\t%s\n' "$b2" "$b1" "$f" | git mktree)
+          commit=$(git commit-tree "$tree" -m "r7737+70: ${{ matrix.tier }}, run ${{ github.run_id }} at ${{ github.sha }}; closures pass")
+          git push -f origin "$commit:refs/ci/r7737_${{ matrix.tier }}"
+          echo "fetch it with:  git fetch origin refs/ci/r7737_${{ matrix.tier }} && git show FETCH_HEAD:$f > $f"
