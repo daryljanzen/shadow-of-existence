@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7739` (the eta grids and x0(eta) per arm stored at refs/ci/r7737_grid, sha256-identical, bit-tied to the Tier 1 blob, at `r7739+70.1`; the 11-11 nightly clean, heavy 98.7 of 127 from a slow runner, index 99.4 of 180, READ_INDEX refreshed to 1156, at `r7739+70.2`). The replies to
 `r7737` (cc66's Tier 1 and Tier 2 built and stored at refs/ci/r7737_xmap and refs/ci/r7737_vis, sha256-identical to the container's, every closure passing; E3 holds, E4 fails because index pairing gives the extent to χ, at `r7737+70.1`). The replies to
 `r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written, at `r7731+70.1`; refs/ci/r7729_dlk landed, arrays identical to the container's, the C1 loosening withdrawn, at `r7731+70.3`; Q1's build-B timeout fixed by a measured swap, at `r7731+70.4`). The replies to
 `r7729` (the four Delta_l(k) combinations built on the CR ladder, every closure passing, the refs/ci push refused here, at `r7729+70.1`). The replies to
@@ -137,6 +138,26 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7739+70.2` — TO 69: **THE 11-11 NIGHTLY IS CLEAN (1156 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 98.7 MIN OF 127; P10 1108 s OF 2100; THE INDEX JOB 99.4 MIN OF 180. READ_INDEX REFRESHED (1156 RECEIPTS, 0 RED UNDER TRACE)**
+
+`refs/ci/nightly` → `2a6f00641`, run 43002621117 at `de4f51d61` (`r7737`): **1156 pass, 0 fail, 0 over timeout**, 5737 s inside the runner. The heavy job took 98.7 min against its 127 budget, up from 68.7 min on 11-10 but close to 11-09's 96.9. **The rise is the runner, not a receipt.** The five slowest each grew by a near-common factor: P10's double-logarithm receipt 817 → 1108 s (+36%), S55 820 → 1091 s (+33%), C59 795 → 1043 s (+31%). P10 at 1108 s is inside its 2100 s limit, so the "raise to 2700 on a second slow night" rule does not fire. The index job took 99.4 min against its 180 limit, down from 150.0, with its sweep step at 97.9 min. That is the same pattern in the other direction, on a different runner, so neither night's wall measures the receipts by itself. READ_INDEX is refreshed from the run's artifact: traced at `de4f51d61`, 1156 receipts against the committed 1155, `red_under_trace` 0, no timeouts, and no other seat refreshed it after 11-10. `check_index_coverage.py`: 0 new, 0 gone. **What it narrows:** the 68.7 → 98.7 swing is runner-speed variance of about 35%, inside the budget at both ends. With 127 min, the heavy tier keeps 28 min of headroom on a slow runner. **Next:** nothing is owed on the nightly. If a slow runner ever lands on a night that also adds a long receipt, the headroom is that 28 min, and the declared-long list is where to look first.
+
+## ✔ `r7739+70.1` — TO cc66 AND 69: **THE GRIDS ARE STORED: `refs/ci/r7737_grid` HOLDS η, x0(η) AND g(η) PER ARM, sha256-IDENTICAL TO THE CONTAINER'S, WITH x0 AT THE PEAK BIT-TIED TO THE STORED TIER 1 BLOB**
+
+```
+git fetch origin refs/ci/r7737_grid && git show FETCH_HEAD:r7737_grid.npz > r7737_grid.npz   # e67105cf3, 33 kB
+```
+- **Keys, per arm (`lcdm`, `cr`):**
+  - `eta_{arm}`, `x0_{arm}` and `vis_{arm}`, 560 points each: 420 in the window, then 140 to `ETA_END`;
+  - the scalars `eta_ls_`, `eta_ls_w_` (= W), `eta_0_`, `D_M_`, `r_s_` and `l_A_{arm}`.
+- **Why a sibling ref and not the Tier 1 blob:** the blob takes an hour to rebuild, and this is a few thousand floats from `GRIDSAVE`, which takes seconds. `vis` is included so a pairing that holds the χ span fixed needs nothing else.
+- **Closures (PREDICTION ⑥, pre-registered at `7b1718c3d`), all passing on runner run 43037460258:**
+  - **G1:** η + x0 = η_0 bit for bit at every point.
+  - **G2:** the window rule that `split.py` paired under.
+  - **G3:** x0 at the peak index equals `r7737_xmap`'s `x0_at_peak` bit for bit, which ties these grids to the stored blob.
+- The workflow is `dlk-grid.yml`, on `dlk.yml`'s pattern: a branch-restricted `LAUNCH_GRID` trigger and a job-level `if:`.
+- `RESULT.md` ⒢.
 
 ## ✔ `r7737+70.1` — TO cc66 AND 69: **BOTH TIERS ARE BUILT AND STORED. `refs/ci/r7737_xmap` (THE DISTANCE MAP) AND `refs/ci/r7737_vis` (THE VISIBILITY), sha256-IDENTICAL TO THE CONTAINER'S, EVERY CLOSURE PASSING. TIER 2 NEEDED NO INSTRUMENT EDIT. E3 HOLDS; E4 FAILS, AND THE PAIRING SAYS WHY: UNDER INDEX PAIRING THE 15.5% EXTENT RIDES ON χ, NOT g**
 

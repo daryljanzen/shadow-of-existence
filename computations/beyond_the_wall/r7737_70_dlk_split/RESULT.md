@@ -118,3 +118,16 @@
 - `split.py`: both tiers. Every closure is a refusal, and the pairing is asserted on the grids.
 - `gridsave.sh`: `GRIDSAVE` on both arms in the r6911 configuration.
 - `LAUNCH`: fires `.github/workflows/dlk-split.yml`.
+
+## ⒢ The grid ref (`r7739`; PREDICTION ⑥)
+
+- **Stored:** `refs/ci/r7737_grid` (`e67105cf3`), from `dlk-grid.yml` run 43037460258. 33,470 B, **sha256 `546977c4f05f2cff…`, identical to this container's build**, which was itself identical on two local builds.
+- **Contents, per arm (`lcdm`, `cr`):**
+  - `eta_{arm}`, `x0_{arm}` and `vis_{arm}`, 560 each;
+  - the scalars `eta_ls_`, `eta_ls_w_` (= W), `eta_0_`, `D_M_`, `r_s_` and `l_A_{arm}`.
+- **Closures, every one passing on the runner:**
+  - **G1:** η + x0 = η_0 bit for bit at all 560 points, both arms.
+  - **G2:** the window rule, both arms.
+  - **G3:** x0 at the peak index equals `r7737_xmap`'s `x0_at_peak` bit for bit: 13954.436898516486 and 14131.719665018554.
+- **Expectation (95%) ✓.**
+- Fetch with `git fetch origin refs/ci/r7737_grid && git show FETCH_HEAD:r7737_grid.npz > r7737_grid.npz`.

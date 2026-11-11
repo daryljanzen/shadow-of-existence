@@ -35,6 +35,15 @@ cubic's roots are `rₖ(w) = (2/√3) sin(w + 2πk/3)`, `k ∈ ℤ/3` (gauge `α
 * **Row 11b — BUILT.** `gp_monodromy_swaps` (with the copied `swap_plus`, `swap_minus`).
 * **Row 12a — BUILT.** The copied `monodromy_surjective`, `monodromyGroup_equiv_S3`.
 * **Row 12b — BUILT.** `gp_deck_trivial`, `gp_not_normal`.
+
+**Campaign 130 (`r7739+71.2`), in this same file.** Registration:
+`computations/formalisation/r7739_71_campaign130/PREDICTION.md`. `SlicingCurvature.lean`'s sections `KrCurvature`,
+`SlCubic`, `SlSky`, `SlHinge` and `SlCurv` are copied verbatim below (namespace `ShadowProbe.SlicingCurvatureProbe`,
+names kept).
+* **Row 2b — BUILT.** `sl_σ_sin`.
+* **Row 7a — BUILT.** `sl_σ_fixed`, `sl_nariai`.
+* **Row 9 — BUILT.** `sl_flip`.
+* **Row 10 — BUILT.** `sl_curvature_static`, `sl_curvature_witness`; `gp_KG_diverges`.
 -/
 
 open Real
@@ -1343,6 +1352,1517 @@ theorem gp_not_normal :
 
 end ShadowProbe.GroupoidProbe
 
+/-! ## Campaign 130: rows 2b, 7a, 9 and 10 by copy
+
+`SlicingCurvature.lean`'s sections `KrCurvature`, `SlCubic`, `SlSky`, `SlHinge` and `SlCurv` are copied verbatim below
+(namespace `ShadowProbe.SlicingCurvatureProbe`, every name kept), so P5's names stay in one file. -/
+
+section SlCopy
+open Set Filter Topology
+namespace ShadowProbe.SlicingCurvatureProbe
+
+section KrCurvature
+
+variable {n : ℕ}
+
+/-- The classical partial derivative `∂_c f(x)`: the derivative of `f` along the `c`-th coordinate line. -/
+noncomputable def kr_pd (f : (Fin n → ℝ) → ℝ) (x : Fin n → ℝ) (c : Fin n) : ℝ :=
+  deriv (fun t => f (Function.update x c t)) (x c)
+
+/-- Christoffel symbols `Γ^a_{bc} = ½ g^{ad}(∂_b g_{dc} + ∂_c g_{db} − ∂_d g_{bc})`. -/
+noncomputable def kr_Γ (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ)
+    (a b c : Fin n) : ℝ :=
+  (1 / 2 : ℝ) * ∑ d, (g x)⁻¹ a d *
+    (kr_pd (fun y => g y d c) x b + kr_pd (fun y => g y d b) x c - kr_pd (fun y => g y b c) x d)
+
+/-- Riemann `R^a_{bcd} = ∂_c Γ^a_{db} − ∂_d Γ^a_{cb} + Γ^a_{ce}Γ^e_{db} − Γ^a_{de}Γ^e_{cb}`. -/
+noncomputable def kr_Riem (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ)
+    (a b c d : Fin n) : ℝ :=
+  kr_pd (fun y => kr_Γ g y a d b) x c - kr_pd (fun y => kr_Γ g y a c b) x d +
+    ∑ e, (kr_Γ g x a c e * kr_Γ g x e d b - kr_Γ g x a d e * kr_Γ g x e c b)
+
+/-- `R_{abcd} = g_{ae} R^e_{bcd}`. -/
+noncomputable def kr_Rlow (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ)
+    (a b c d : Fin n) : ℝ :=
+  ∑ e, g x a e * kr_Riem g x e b c d
+
+/-- `R^{abcd} = g^{bb'} g^{cc'} g^{dd'} R^a_{b'c'd'}`. -/
+noncomputable def kr_Rup (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ)
+    (a b c d : Fin n) : ℝ :=
+  ∑ b', (g x)⁻¹ b b' * ∑ c', (g x)⁻¹ c c' * ∑ d', (g x)⁻¹ d d' * kr_Riem g x a b' c' d'
+
+/-- **The Kretschmann scalar** `K = R_{abcd} R^{abcd}`. -/
+noncomputable def kr_K (g : (Fin n → ℝ) → Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ) : ℝ :=
+  ∑ a, ∑ b, ∑ c, ∑ d, kr_Rlow g x a b c d * kr_Rup g x a b c d
+
+lemma kr_pd_const (C : ℝ) (x : Fin n → ℝ) (c : Fin n) : kr_pd (fun _ => C) x c = 0 := by
+  simp [kr_pd]
+
+lemma kr_pd_congr {f f' : (Fin n → ℝ) → ℝ} {x : Fin n → ℝ} {c : Fin n}
+    (h : ∀ᶠ y in 𝓝 x, f y = f' y) : kr_pd f x c = kr_pd f' x c := by
+  unfold kr_pd
+  refine Filter.EventuallyEq.deriv_eq ?_
+  have hc : ContinuousAt (fun t => Function.update x c t) (x c) :=
+    (continuous_const.update c continuous_id).continuousAt
+  have h' : ∀ᶠ y in 𝓝 (Function.update x c (x c)), f y = f' y := by
+    rwa [Function.update_eq_self]
+  exact hc.eventually h'
+
+/-- **Sanity ①: a constant metric is flat**, `K = 0`. -/
+theorem kr_K_const (G : Matrix (Fin n) (Fin n) ℝ) (x : Fin n → ℝ) : kr_K (fun _ => G) x = 0 := by
+  have hΓ : ∀ y a b c, kr_Γ (fun _ => G) y a b c = 0 := by
+    intro y a b c; simp [kr_Γ, kr_pd_const]
+  have hR : ∀ a b c d, kr_Riem (fun _ => G) x a b c d = 0 := by
+    intro a b c d; simp [kr_Riem, hΓ, kr_pd_const]
+  simp [kr_K, kr_Rlow, hR]
+
+section KrTrig
+
+/-- `sin² θ`. -/
+noncomputable def kr_s2 (t : ℝ) : ℝ := Real.sin t ^ 2
+/-- `−sin θ cos θ`. -/
+noncomputable def kr_nsc (t : ℝ) : ℝ := -(Real.sin t * Real.cos t)
+/-- `cot θ = cos θ / sin θ`. -/
+noncomputable def kr_cot (t : ℝ) : ℝ := Real.cos t / Real.sin t
+
+lemma kr_hasDerivAt_s2 (t : ℝ) :
+    HasDerivAt kr_s2 (2 * Real.sin t * Real.cos t) t := by
+  have h := (Real.hasDerivAt_sin t).pow 2
+  unfold kr_s2
+  convert h using 1; push_cast; ring
+
+lemma kr_deriv_s2 (t : ℝ) : deriv kr_s2 t = 2 * Real.sin t * Real.cos t :=
+  (kr_hasDerivAt_s2 t).deriv
+
+lemma kr_deriv_nsc (t : ℝ) :
+    deriv kr_nsc t = Real.sin t ^ 2 - Real.cos t ^ 2 := by
+  have h := ((Real.hasDerivAt_sin t).mul (Real.hasDerivAt_cos t)).neg
+  refine (h.congr_deriv ?_).deriv
+  ring
+
+lemma kr_deriv_cot {t : ℝ} (ht : Real.sin t ≠ 0) :
+    deriv kr_cot t = -(1 / Real.sin t ^ 2) := by
+  have h := (Real.hasDerivAt_cos t).div (Real.hasDerivAt_sin t) ht
+  refine (h.congr_deriv ?_).deriv
+  field_simp
+  have := Real.sin_sq_add_cos_sq t
+  linear_combination (-1 : ℝ) * this
+
+end KrTrig
+
+section KrSphere
+
+/-- The round 2-sphere of radius `ρ` in `(θ, φ)`: `g = ρ²(dθ² + sin²θ dφ²)`. -/
+noncomputable def kr_sph (ρ : ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
+  !![ρ ^ 2, 0; 0, ρ ^ 2 * kr_s2 (y 0)]
+
+noncomputable def kr_sphI (ρ : ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
+  !![1 / ρ ^ 2, 0; 0, 1 / (ρ ^ 2 * Real.sin (y 0) ^ 2)]
+
+noncomputable def kr_sphΓ (y : Fin 2 → ℝ) : Fin 2 → Fin 2 → Fin 2 → ℝ :=
+  ![![![0, 0], ![0, kr_nsc (y 0)]], ![![0, kr_cot (y 0)], ![kr_cot (y 0), 0]]]
+
+variable {ρ : ℝ}
+
+lemma kr_sph_inv (hρ : ρ ≠ 0) {y : Fin 2 → ℝ} (hy : Real.sin (y 0) ≠ 0) :
+    (kr_sph ρ y)⁻¹ = kr_sphI ρ y := by
+  refine Matrix.inv_eq_left_inv ?_
+  ext i j; fin_cases i <;> fin_cases j <;>
+    simp [Matrix.mul_apply, kr_sph, kr_sphI, kr_s2] <;> field_simp
+
+lemma kr_sph_Γ (hρ : ρ ≠ 0) {y : Fin 2 → ℝ} (hy : Real.sin (y 0) ≠ 0) (a b c : Fin 2) :
+    kr_Γ (kr_sph ρ) y a b c = kr_sphΓ y a b c := by
+  simp only [kr_Γ, kr_sph_inv hρ hy]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [kr_pd, kr_sph, kr_sphI, kr_sphΓ, Function.update_apply, kr_deriv_s2]
+  all_goals (try simp only [kr_nsc, kr_cot])
+  all_goals field_simp
+
+lemma kr_sph_D_open : IsOpen {y : Fin 2 → ℝ | Real.sin (y 0) ≠ 0} :=
+  isOpen_ne_fun (Real.continuous_sin.comp (continuous_apply 0)) continuous_const
+
+lemma kr_sph_pdΓ (hρ : ρ ≠ 0) {x : Fin 2 → ℝ} (hx : Real.sin (x 0) ≠ 0) (a b c d : Fin 2) :
+    kr_pd (fun y => kr_Γ (kr_sph ρ) y a b c) x d = kr_pd (fun y => kr_sphΓ y a b c) x d :=
+  kr_pd_congr (Filter.mem_of_superset (kr_sph_D_open.mem_nhds hx) fun _ hy => kr_sph_Γ hρ hy a b c)
+
+/-- **Sanity ②: the round sphere of radius `ρ` has `K = 4/ρ⁴`.** -/
+theorem kr_K_sphere (hρ : ρ ≠ 0) {x : Fin 2 → ℝ} (hx : Real.sin (x 0) ≠ 0) :
+    kr_K (kr_sph ρ) x = 4 / ρ ^ 4 := by
+  have hR : ∀ a b c d, kr_Riem (kr_sph ρ) x a b c d =
+      ![![![![0, 0], ![0, 0]], ![![0, Real.sin (x 0) ^ 2], ![-Real.sin (x 0) ^ 2, 0]]],
+        ![![![0, -1], ![1, 0]], ![![0, 0], ![0, 0]]]] a b c d := by
+    intro a b c d
+    simp only [kr_Riem, kr_sph_pdΓ hρ hx, kr_sph_Γ hρ hx]
+    fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+      simp [kr_pd, kr_sphΓ, kr_deriv_nsc, kr_deriv_cot hx]
+    all_goals simp only [kr_nsc, kr_cot]
+    all_goals field_simp
+    all_goals linarith [Real.sin_sq_add_cos_sq (x 0)]
+  simp only [kr_K, kr_Rlow, kr_Rup, hR, kr_sph_inv hρ hx]
+  simp [Fin.sum_univ_two, kr_sph, kr_sphI, kr_s2]
+  field_simp
+  ring
+
+end KrSphere
+section KrWarped
+
+/-! ### ③ The warped product `g = −F dU dV + R²(dθ² + sin²θ dφ²)` -/
+
+/-- **Data of the warped metric**: `F, R` as functions of `(U, V)`, with their first and second partials
+(one mixed partial each, so the mixed partials are symmetric by construction). -/
+structure kr_WD where
+  F : ℝ → ℝ → ℝ
+  R : ℝ → ℝ → ℝ
+  FU : ℝ → ℝ → ℝ
+  FV : ℝ → ℝ → ℝ
+  RU : ℝ → ℝ → ℝ
+  RV : ℝ → ℝ → ℝ
+  FUU : ℝ → ℝ → ℝ
+  FUV : ℝ → ℝ → ℝ
+  FVV : ℝ → ℝ → ℝ
+  RUU : ℝ → ℝ → ℝ
+  RUV : ℝ → ℝ → ℝ
+  RVV : ℝ → ℝ → ℝ
+
+/-- **The data is good on an open `Ω ⊆ ℝ²`**: `F, R > 0`, and each listed partial is the derivative
+along the coordinate line (`∂_U ∂_V F = ∂_V ∂_U F = FUV`, likewise for `R`). -/
+structure kr_WD.Good (D : kr_WD) (Ω : Set (ℝ × ℝ)) : Prop where
+  isOpen : IsOpen Ω
+  F_pos : ∀ u v, (u, v) ∈ Ω → 0 < D.F u v
+  R_pos : ∀ u v, (u, v) ∈ Ω → 0 < D.R u v
+  F_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.F t v) (D.FU u v) u
+  F_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.F u t) (D.FV u v) v
+  R_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.R t v) (D.RU u v) u
+  R_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.R u t) (D.RV u v) v
+  FU_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.FU t v) (D.FUU u v) u
+  FU_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.FU u t) (D.FUV u v) v
+  FV_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.FV t v) (D.FUV u v) u
+  FV_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.FV u t) (D.FVV u v) v
+  RU_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.RU t v) (D.RUU u v) u
+  RU_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.RU u t) (D.RUV u v) v
+  RV_U : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.RV t v) (D.RUV u v) u
+  RV_V : ∀ u v, (u, v) ∈ Ω → HasDerivAt (fun t => D.RV u t) (D.RVV u v) v
+
+namespace kr_WD
+variable (D : kr_WD)
+
+/-- `g_{UV} = −F/2`. -/
+noncomputable def mh (u v : ℝ) : ℝ := -(D.F u v / 2)
+/-- `R²`. -/
+noncomputable def sq (u v : ℝ) : ℝ := D.R u v ^ 2
+/-- `Γ^U_{UU} = F_U/F`. -/
+noncomputable def q1 (u v : ℝ) : ℝ := D.FU u v / D.F u v
+/-- `Γ^V_{VV} = F_V/F`. -/
+noncomputable def q2 (u v : ℝ) : ℝ := D.FV u v / D.F u v
+/-- `Γ^U_{θθ} = 2RR_V/F`. -/
+noncomputable def q3 (u v : ℝ) : ℝ := 2 * D.R u v * D.RV u v / D.F u v
+/-- `Γ^V_{θθ} = 2RR_U/F`. -/
+noncomputable def q4 (u v : ℝ) : ℝ := 2 * D.R u v * D.RU u v / D.F u v
+/-- `Γ^θ_{θU} = R_U/R`. -/
+noncomputable def q5 (u v : ℝ) : ℝ := D.RU u v / D.R u v
+/-- `Γ^θ_{θV} = R_V/R`. -/
+noncomputable def q6 (u v : ℝ) : ℝ := D.RV u v / D.R u v
+
+/-- **The warped metric** `g = −F dU dV + R²(dθ² + sin²θ dφ²)` in coordinates `(U, V, θ, φ)`. -/
+noncomputable def gW (y : Fin 4 → ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![0, D.mh (y 0) (y 1), 0, 0;
+     D.mh (y 0) (y 1), 0, 0, 0;
+     0, 0, D.sq (y 0) (y 1), 0;
+     0, 0, 0, D.sq (y 0) (y 1) * kr_s2 (y 2)]
+
+/-- Its inverse. -/
+noncomputable def giW (y : Fin 4 → ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![0, -2 / D.F (y 0) (y 1), 0, 0;
+     -2 / D.F (y 0) (y 1), 0, 0, 0;
+     0, 0, 1 / D.R (y 0) (y 1) ^ 2, 0;
+     0, 0, 0, 1 / (D.R (y 0) (y 1) ^ 2 * Real.sin (y 2) ^ 2)]
+
+/-- `∂_c g_{ab}`, indexed `c a b`. -/
+noncomputable def dgW (y : Fin 4 → ℝ) : Fin 4 → Fin 4 → Fin 4 → ℝ :=
+  ![!![0, -(D.FU (y 0) (y 1) / 2), 0, 0;
+       -(D.FU (y 0) (y 1) / 2), 0, 0, 0;
+       0, 0, 2 * D.R (y 0) (y 1) * D.RU (y 0) (y 1), 0;
+       0, 0, 0, 2 * D.R (y 0) (y 1) * D.RU (y 0) (y 1) * kr_s2 (y 2)],
+    !![0, -(D.FV (y 0) (y 1) / 2), 0, 0;
+       -(D.FV (y 0) (y 1) / 2), 0, 0, 0;
+       0, 0, 2 * D.R (y 0) (y 1) * D.RV (y 0) (y 1), 0;
+       0, 0, 0, 2 * D.R (y 0) (y 1) * D.RV (y 0) (y 1) * kr_s2 (y 2)],
+    !![0, 0, 0, 0; 0, 0, 0, 0; 0, 0, 0, 0;
+       0, 0, 0, D.sq (y 0) (y 1) * (2 * Real.sin (y 2) * Real.cos (y 2))],
+    0]
+
+/-- The Christoffel symbols `Γ^a_{bc}` of `gW`, indexed `a b c`. -/
+noncomputable def ΓW (y : Fin 4 → ℝ) : Fin 4 → Fin 4 → Fin 4 → ℝ :=
+  ![!![D.q1 (y 0) (y 1), 0, 0, 0; 0, 0, 0, 0; 0, 0, D.q3 (y 0) (y 1), 0;
+       0, 0, 0, D.q3 (y 0) (y 1) * kr_s2 (y 2)],
+    !![0, 0, 0, 0; 0, D.q2 (y 0) (y 1), 0, 0; 0, 0, D.q4 (y 0) (y 1), 0;
+       0, 0, 0, D.q4 (y 0) (y 1) * kr_s2 (y 2)],
+    !![0, 0, D.q5 (y 0) (y 1), 0; 0, 0, D.q6 (y 0) (y 1), 0;
+       D.q5 (y 0) (y 1), D.q6 (y 0) (y 1), 0, 0; 0, 0, 0, kr_nsc (y 2)],
+    !![0, 0, 0, D.q5 (y 0) (y 1); 0, 0, 0, D.q6 (y 0) (y 1); 0, 0, 0, kr_cot (y 2);
+       D.q5 (y 0) (y 1), D.q6 (y 0) (y 1), kr_cot (y 2), 0]]
+
+/-- The domain `{(U, V) ∈ Ω, sin θ ≠ 0}`. -/
+def dom (Ω : Set (ℝ × ℝ)) : Set (Fin 4 → ℝ) := {y | (y 0, y 1) ∈ Ω ∧ Real.sin (y 2) ≠ 0}
+
+lemma dom_open {Ω : Set (ℝ × ℝ)} (hΩ : IsOpen Ω) : IsOpen (dom Ω) :=
+  (hΩ.preimage ((continuous_apply 0).prodMk (continuous_apply 1))).inter
+    (isOpen_ne_fun (Real.continuous_sin.comp (continuous_apply 2)) continuous_const)
+
+end kr_WD
+namespace kr_WD
+variable {D : kr_WD} {Ω : Set (ℝ × ℝ)} (hG : D.Good Ω) {u v : ℝ} (h : (u, v) ∈ Ω)
+include hG h
+
+lemma d_mh_U : deriv (fun t => D.mh t v) u = -(D.FU u v / 2) :=
+  ((hG.F_U u v h).div_const 2).neg.deriv
+lemma d_mh_V : deriv (fun t => D.mh u t) v = -(D.FV u v / 2) :=
+  ((hG.F_V u v h).div_const 2).neg.deriv
+lemma d_sq_U : deriv (fun t => D.sq t v) u = 2 * D.R u v * D.RU u v := by
+  refine (((hG.R_U u v h).pow 2).congr_deriv ?_).deriv; push_cast; ring
+lemma d_sq_V : deriv (fun t => D.sq u t) v = 2 * D.R u v * D.RV u v := by
+  refine (((hG.R_V u v h).pow 2).congr_deriv ?_).deriv; push_cast; ring
+lemma d_q1_U : deriv (fun t => D.q1 t v) u =
+    (D.FUU u v * D.F u v - D.FU u v * D.FU u v) / D.F u v ^ 2 :=
+  ((hG.FU_U u v h).div (hG.F_U u v h) (hG.F_pos u v h).ne').deriv
+lemma d_q1_V : deriv (fun t => D.q1 u t) v =
+    (D.FUV u v * D.F u v - D.FU u v * D.FV u v) / D.F u v ^ 2 :=
+  ((hG.FU_V u v h).div (hG.F_V u v h) (hG.F_pos u v h).ne').deriv
+lemma d_q2_U : deriv (fun t => D.q2 t v) u =
+    (D.FUV u v * D.F u v - D.FV u v * D.FU u v) / D.F u v ^ 2 :=
+  ((hG.FV_U u v h).div (hG.F_U u v h) (hG.F_pos u v h).ne').deriv
+lemma d_q2_V : deriv (fun t => D.q2 u t) v =
+    (D.FVV u v * D.F u v - D.FV u v * D.FV u v) / D.F u v ^ 2 :=
+  ((hG.FV_V u v h).div (hG.F_V u v h) (hG.F_pos u v h).ne').deriv
+lemma d_q3_U : deriv (fun t => D.q3 t v) u =
+    ((2 * D.RU u v * D.RV u v + 2 * D.R u v * D.RUV u v) * D.F u v -
+      2 * D.R u v * D.RV u v * D.FU u v) / D.F u v ^ 2 := by
+  refine ((((hG.R_U u v h).const_mul 2).mul (hG.RV_U u v h)).div (hG.F_U u v h)
+    (hG.F_pos u v h).ne' |>.congr_deriv ?_).deriv
+  simp only [Pi.mul_apply]
+lemma d_q3_V : deriv (fun t => D.q3 u t) v =
+    ((2 * D.RV u v * D.RV u v + 2 * D.R u v * D.RVV u v) * D.F u v -
+      2 * D.R u v * D.RV u v * D.FV u v) / D.F u v ^ 2 := by
+  refine ((((hG.R_V u v h).const_mul 2).mul (hG.RV_V u v h)).div (hG.F_V u v h)
+    (hG.F_pos u v h).ne' |>.congr_deriv ?_).deriv
+  simp only [Pi.mul_apply]
+lemma d_q4_U : deriv (fun t => D.q4 t v) u =
+    ((2 * D.RU u v * D.RU u v + 2 * D.R u v * D.RUU u v) * D.F u v -
+      2 * D.R u v * D.RU u v * D.FU u v) / D.F u v ^ 2 := by
+  refine ((((hG.R_U u v h).const_mul 2).mul (hG.RU_U u v h)).div (hG.F_U u v h)
+    (hG.F_pos u v h).ne' |>.congr_deriv ?_).deriv
+  simp only [Pi.mul_apply]
+lemma d_q4_V : deriv (fun t => D.q4 u t) v =
+    ((2 * D.RV u v * D.RU u v + 2 * D.R u v * D.RUV u v) * D.F u v -
+      2 * D.R u v * D.RU u v * D.FV u v) / D.F u v ^ 2 := by
+  refine ((((hG.R_V u v h).const_mul 2).mul (hG.RU_V u v h)).div (hG.F_V u v h)
+    (hG.F_pos u v h).ne' |>.congr_deriv ?_).deriv
+  simp only [Pi.mul_apply]
+lemma d_q5_U : deriv (fun t => D.q5 t v) u =
+    (D.RUU u v * D.R u v - D.RU u v * D.RU u v) / D.R u v ^ 2 :=
+  ((hG.RU_U u v h).div (hG.R_U u v h) (hG.R_pos u v h).ne').deriv
+lemma d_q5_V : deriv (fun t => D.q5 u t) v =
+    (D.RUV u v * D.R u v - D.RU u v * D.RV u v) / D.R u v ^ 2 :=
+  ((hG.RU_V u v h).div (hG.R_V u v h) (hG.R_pos u v h).ne').deriv
+lemma d_q6_U : deriv (fun t => D.q6 t v) u =
+    (D.RUV u v * D.R u v - D.RV u v * D.RU u v) / D.R u v ^ 2 :=
+  ((hG.RV_U u v h).div (hG.R_U u v h) (hG.R_pos u v h).ne').deriv
+lemma d_q6_V : deriv (fun t => D.q6 u t) v =
+    (D.RVV u v * D.R u v - D.RV u v * D.RV u v) / D.R u v ^ 2 :=
+  ((hG.RV_V u v h).div (hG.R_V u v h) (hG.R_pos u v h).ne').deriv
+
+end kr_WD
+
+namespace kr_WD
+variable {D : kr_WD} {Ω : Set (ℝ × ℝ)} (hG : D.Good Ω)
+
+include hG in
+lemma gW_inv {y : Fin 4 → ℝ} (hy : y ∈ dom Ω) : (D.gW y)⁻¹ = D.giW y := by
+  have hF := (hG.F_pos _ _ hy.1).ne'
+  have hR := (hG.R_pos _ _ hy.1).ne'
+  have hs := hy.2
+  refine Matrix.inv_eq_left_inv ?_
+  ext i j; fin_cases i <;> fin_cases j <;>
+    simp [Matrix.mul_apply, Fin.sum_univ_four, gW, giW, mh, sq, kr_s2] <;> field_simp
+
+include hG in
+lemma gW_pd {y : Fin 4 → ℝ} (hy : y ∈ dom Ω) (c a b : Fin 4) :
+    kr_pd (fun z => D.gW z a b) y c = D.dgW y c a b := by
+  have h := hy.1
+  fin_cases c <;> fin_cases a <;> fin_cases b <;>
+    simp [kr_pd, gW, dgW, d_mh_U hG h, d_mh_V hG h, d_sq_U hG h, d_sq_V hG h, kr_deriv_s2]
+
+include hG in
+lemma Γ_eq {y : Fin 4 → ℝ} (hy : y ∈ dom Ω) (a b c : Fin 4) :
+    kr_Γ D.gW y a b c = D.ΓW y a b c := by
+  have hF := (hG.F_pos _ _ hy.1).ne'
+  have hR := (hG.R_pos _ _ hy.1).ne'
+  have hs := hy.2
+  simp only [kr_Γ, gW_inv hG hy, gW_pd hG hy]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [Fin.sum_univ_four, giW, dgW, ΓW]
+  all_goals (try simp only [q1, q2, q3, q4, q5, q6, sq, kr_s2, kr_nsc, kr_cot])
+  all_goals (try field_simp)
+  all_goals ring
+
+include hG in
+lemma pdΓ_eq {x : Fin 4 → ℝ} (hx : x ∈ dom Ω) (a b c d : Fin 4) :
+    kr_pd (fun y => kr_Γ D.gW y a b c) x d = kr_pd (fun y => D.ΓW y a b c) x d :=
+  kr_pd_congr (Filter.mem_of_superset ((dom_open hG.isOpen).mem_nhds hx)
+    fun _ hy => Γ_eq hG hy a b c)
+
+end kr_WD
+/-- **The non-zero components** `R^a_{bcd}` of the warped metric (40 of 256), as a table in the values of the data
+and `s = sin θ` (`F_UU`, `F_VV` and `cos θ` drop out). -/
+noncomputable def kr_RWv (F R FU FV RU RV FUV RUU RUV RVV s : ℝ) :
+    Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ :=
+  ![![![![0, (-(F*FUV - FU*FV)/F^2), 0, 0], ![((F*FUV - FU*FV)/F^2), 0, 0, 0], ![0, 0, 0, 0], ![0, 0,
+    0, 0]], ![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0, 0]], ![![0, 0, (2*R*RUV/F), 0],
+    ![0, 0, (2*R*(F*RVV - FV*RV)/F^2), 0], ![(-2*R*RUV/F), (-2*R*(F*RVV - FV*RV)/F^2), 0, 0], ![0, 0,
+    0, 0]], ![![0, 0, 0, (2*R*RUV*s^2/F)], ![0, 0, 0, (2*R*s^2*(F*RVV - FV*RV)/F^2)], ![0, 0, 0, 0],
+    ![(-2*R*RUV*s^2/F), (-2*R*s^2*(F*RVV - FV*RV)/F^2), 0, 0]]], ![![![0, 0, 0, 0], ![0, 0, 0, 0],
+    ![0, 0, 0, 0], ![0, 0, 0, 0]], ![![0, ((F*FUV - FU*FV)/F^2), 0, 0], ![(-(F*FUV - FU*FV)/F^2), 0,
+    0, 0], ![0, 0, 0, 0], ![0, 0, 0, 0]], ![![0, 0, (2*R*(F*RUU - FU*RU)/F^2), 0], ![0, 0,
+    (2*R*RUV/F), 0], ![(-2*R*(F*RUU - FU*RU)/F^2), (-2*R*RUV/F), 0, 0], ![0, 0, 0, 0]], ![![0, 0, 0,
+    (2*R*s^2*(F*RUU - FU*RU)/F^2)], ![0, 0, 0, (2*R*RUV*s^2/F)], ![0, 0, 0, 0],
+    ![(-2*R*s^2*(F*RUU - FU*RU)/F^2), (-2*R*RUV*s^2/F), 0, 0]]], ![![![0, 0, ((F*RUU - FU*RU)/(F*R)),
+    0], ![0, 0, (RUV/R), 0], ![(-(F*RUU - FU*RU)/(F*R)), (-RUV/R), 0, 0], ![0, 0, 0, 0]], ![![0, 0,
+    (RUV/R), 0], ![0, 0, ((F*RVV - FV*RV)/(F*R)), 0], ![(-RUV/R), (-(F*RVV - FV*RV)/(F*R)), 0, 0],
+    ![0, 0, 0, 0]], ![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0, 0]], ![![0, 0, 0, 0],
+    ![0, 0, 0, 0], ![0, 0, 0, (s^2*(F + 4*RU*RV)/F)], ![0, 0, (-s^2*(F + 4*RU*RV)/F), 0]]], ![![![0,
+    0, 0, ((F*RUU - FU*RU)/(F*R))], ![0, 0, 0, (RUV/R)], ![0, 0, 0, 0], ![(-(F*RUU - FU*RU)/(F*R)),
+    (-RUV/R), 0, 0]], ![![0, 0, 0, (RUV/R)], ![0, 0, 0, ((F*RVV - FV*RV)/(F*R))], ![0, 0, 0, 0],
+    ![(-RUV/R), (-(F*RVV - FV*RV)/(F*R)), 0, 0]], ![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0,
+    (-(F + 4*RU*RV)/F)], ![0, 0, ((F + 4*RU*RV)/F), 0]], ![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, 0,
+    0], ![0, 0, 0, 0]]]]
+
+namespace kr_WD
+variable {D : kr_WD} {Ω : Set (ℝ × ℝ)} (hG : D.Good Ω)
+
+/-- The Riemann table at `x`. -/
+noncomputable def Rv (D : kr_WD) (x : Fin 4 → ℝ) : Fin 4 → Fin 4 → Fin 4 → Fin 4 → ℝ :=
+  kr_RWv (D.F (x 0) (x 1)) (D.R (x 0) (x 1)) (D.FU (x 0) (x 1)) (D.FV (x 0) (x 1))
+    (D.RU (x 0) (x 1)) (D.RV (x 0) (x 1)) (D.FUV (x 0) (x 1))
+    (D.RUU (x 0) (x 1)) (D.RUV (x 0) (x 1)) (D.RVV (x 0) (x 1)) (Real.sin (x 2))
+
+set_option maxHeartbeats 4000000 in
+include hG in
+/-- **The Riemann tensor of the warped metric**, component by component (all 256). -/
+lemma Riem_eq {x : Fin 4 → ℝ} (hx : x ∈ dom Ω) (a b c d : Fin 4) :
+    kr_Riem D.gW x a b c d = D.Rv x a b c d := by
+  have h := hx.1
+  have hF := (hG.F_pos _ _ h).ne'
+  have hR := (hG.R_pos _ _ h).ne'
+  have hs := hx.2
+  simp only [kr_Riem, pdΓ_eq hG hx, Γ_eq hG hx]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+    simp [kr_pd, ΓW, Rv, kr_RWv, Fin.sum_univ_four, d_q1_U hG h, d_q1_V hG h, d_q2_U hG h,
+      d_q2_V hG h, d_q3_U hG h, d_q3_V hG h, d_q4_U hG h, d_q4_V hG h, d_q5_U hG h, d_q5_V hG h,
+      d_q6_U hG h, d_q6_V hG h, kr_deriv_s2, kr_deriv_nsc, kr_deriv_cot hs]
+  all_goals (try simp only [q1, q2, q3, q4, q5, q6, kr_s2, kr_nsc, kr_cot])
+  all_goals (try field_simp)
+  all_goals first
+    | ring1
+    | linear_combination (D.F (x 0) (x 1)) * Real.sin_sq_add_cos_sq (x 2)
+    | linear_combination (-D.F (x 0) (x 1)) * Real.sin_sq_add_cos_sq (x 2)
+
+end kr_WD
+
+namespace kr_WD
+variable {D : kr_WD} {Ω : Set (ℝ × ℝ)} (hG : D.Good Ω)
+
+/-- The partner index `σ = (U ↔ V)` of the (block-)diagonal metric. -/
+def σ : Fin 4 → Fin 4 := ![1, 0, 2, 3]
+
+/-- Lowering an index with `gW` picks one term. -/
+lemma gW_row (x : Fin 4 → ℝ) (a : Fin 4) (f : Fin 4 → ℝ) :
+    ∑ e, D.gW x a e * f e =
+      ![D.mh (x 0) (x 1), D.mh (x 0) (x 1), D.sq (x 0) (x 1),
+        D.sq (x 0) (x 1) * kr_s2 (x 2)] a * f (σ a) := by
+  fin_cases a <;> simp [Fin.sum_univ_four, gW, σ]
+
+/-- Raising an index with `giW` picks one term. -/
+lemma giW_row (x : Fin 4 → ℝ) (a : Fin 4) (f : Fin 4 → ℝ) :
+    ∑ e, D.giW x a e * f e =
+      ![-2 / D.F (x 0) (x 1), -2 / D.F (x 0) (x 1), 1 / D.R (x 0) (x 1) ^ 2,
+        1 / (D.R (x 0) (x 1) ^ 2 * Real.sin (x 2) ^ 2)] a * f (σ a) := by
+  fin_cases a <;> simp [Fin.sum_univ_four, giW, σ]
+
+/-- `k₂`, the scalar curvature of the 2-metric `−F dU dV`: `4(F F_UV − F_U F_V)/F³`. -/
+noncomputable def k2 (D : kr_WD) (u v : ℝ) : ℝ :=
+  4 * (D.FUV u v * D.F u v - D.FU u v * D.FV u v) / D.F u v ^ 3
+
+/-- `|∇R|² = −(4/F) R_U R_V` for the 2-metric. -/
+noncomputable def gradR2 (D : kr_WD) (u v : ℝ) : ℝ := -(4 / D.F u v) * D.RU u v * D.RV u v
+
+/-- `|∇∇R|² = (8/F²)(∇_U∇_U R · ∇_V∇_V R + (∇_U∇_V R)²)`, with `∇_U∇_U R = R_UU − (F_U/F) R_U`,
+`∇_V∇_V R = R_VV − (F_V/F) R_V`, `∇_U∇_V R = R_UV`. -/
+noncomputable def hessR2 (D : kr_WD) (u v : ℝ) : ℝ :=
+  8 / D.F u v ^ 2 * ((D.RUU u v - D.FU u v / D.F u v * D.RU u v) *
+    (D.RVV u v - D.FV u v / D.F u v * D.RV u v) + D.RUV u v ^ 2)
+
+set_option maxHeartbeats 1000000 in
+include hG in
+/-- **③ `kr_warped`: the Kretschmann scalar of `g = −F dU dV + R²(dθ² + sin²θ dφ²)`** (BUILT, all 256
+components): at every `(U, V, θ, φ)` with `(U, V) ∈ Ω` and `sin θ ≠ 0`,
+`K = k₂² + 8|∇∇R|²/R² + 4(1 − |∇R|²)²/R⁴`. The `θ`-dependence cancels. -/
+theorem kr_warped {x : Fin 4 → ℝ} (hx : x ∈ dom Ω) :
+    kr_K D.gW x = D.k2 (x 0) (x 1) ^ 2 + 8 * D.hessR2 (x 0) (x 1) / D.R (x 0) (x 1) ^ 2 +
+      4 * (1 - D.gradR2 (x 0) (x 1)) ^ 2 / D.R (x 0) (x 1) ^ 4 := by
+  have h := hx.1
+  have hF := (hG.F_pos _ _ h).ne'
+  have hR := (hG.R_pos _ _ h).ne'
+  have hs := hx.2
+  simp only [kr_K, kr_Rlow, kr_Rup, gW_inv hG hx, gW_row, giW_row, Riem_eq hG hx]
+  simp [Fin.sum_univ_four, σ, Rv, kr_RWv]
+  simp only [k2, hessR2, gradR2, mh, sq, kr_s2]
+  field_simp
+  ring
+
+end kr_WD
+end KrWarped
+end KrCurvature
+
+section SlCubic
+
+/-- `g(t) = t − t³`: in the gauge `α = 1`, `2M = g(r₀)`. -/
+def sl_g (t : ℝ) : ℝ := t - t ^ 3
+
+/-- The horizon cubic `r³ − r + 2M`, with `m = 2M`. -/
+def sl_cubic (m r : ℝ) : ℝ := r ^ 3 - r + m
+
+/-- The metric function `f = 1 − 2M/r − r²`, with `m = 2M`. -/
+noncomputable def sl_f (m r : ℝ) : ℝ := 1 - m / r - r ^ 2
+
+/-- The root-exchange involution `σ(x) = (−x + √(4 − 3x²))/2`. -/
+noncomputable def sl_σ (x : ℝ) : ℝ := (-x + Real.sqrt (4 - 3 * x ^ 2)) / 2
+
+/-- The third root `(−x − √(4 − 3x²))/2`. -/
+noncomputable def sl_τ (x : ℝ) : ℝ := (-x - Real.sqrt (4 - 3 * x ^ 2)) / 2
+
+lemma sl_s3 : Real.sqrt 3 ^ 2 = 3 := Real.sq_sqrt (by norm_num)
+lemma sl_s3_pos : 0 < Real.sqrt 3 := Real.sqrt_pos.mpr (by norm_num)
+
+/-- `r f(r) = −(r³ − r + 2M)` off `r = 0`: the turning points are the cubic's roots. -/
+lemma sl_rf (m r : ℝ) (hr : r ≠ 0) : r * sl_f m r = -sl_cubic m r := by
+  unfold sl_f sl_cubic; field_simp; ring
+
+/-- **Row 2, `prop:factor`.** `r³ − r + g(r₀) = (r − r₀)(r² + r r₀ + r₀² − 1)`. -/
+theorem sl_factor (r₀ r : ℝ) :
+    sl_cubic (sl_g r₀) r = (r - r₀) * (r ^ 2 + r * r₀ + r₀ ^ 2 - 1) := by
+  unfold sl_cubic sl_g; ring
+
+lemma sl_quad (x r : ℝ) (h : 0 ≤ 4 - 3 * x ^ 2) :
+    r ^ 2 + r * x + x ^ 2 - 1 = (r - sl_σ x) * (r - sl_τ x) := by
+  have hs := Real.sq_sqrt h
+  unfold sl_σ sl_τ; linear_combination (1 / 4 : ℝ) * hs
+
+/-- `σ(x)` is a root of the quadratic factor. -/
+lemma sl_σ_quad (x : ℝ) (h : 0 ≤ 4 - 3 * x ^ 2) : sl_σ x ^ 2 + sl_σ x * x + x ^ 2 - 1 = 0 := by
+  rw [sl_quad x _ h]; ring
+
+/-- **Row 2, `prop:factor`.** When `4 − 3r₀² ≥ 0` the roots are exactly `r₀`, `σ(r₀)` and
+`(−r₀ − √(4 − 3r₀²))/2`, and they sum to zero. -/
+theorem sl_roots (r₀ : ℝ) (h : 0 ≤ 4 - 3 * r₀ ^ 2) :
+    (∀ r, sl_cubic (sl_g r₀) r = 0 ↔ r = r₀ ∨ r = sl_σ r₀ ∨ r = sl_τ r₀) ∧
+      r₀ + sl_σ r₀ + sl_τ r₀ = 0 := by
+  refine ⟨fun r => ?_, by unfold sl_σ sl_τ; ring⟩
+  rw [sl_factor, sl_quad r₀ r h, mul_eq_zero, mul_eq_zero, sub_eq_zero, sub_eq_zero, sub_eq_zero]
+
+/-- **Row 3, `prop:r0zero`.** At `r₀ = 0`: `2M = 0`, `f = 1 − r²`, and the cubic's root set is `{0, 1, −1}`. -/
+theorem sl_r0zero :
+    sl_g 0 = 0 ∧ (∀ r, sl_f (sl_g 0) r = 1 - r ^ 2) ∧
+      {r : ℝ | sl_cubic (sl_g 0) r = 0} = {0, 1, -1} := by
+  refine ⟨by simp [sl_g], fun r => by simp [sl_f, sl_g], ?_⟩
+  ext r
+  simp only [Set.mem_ofPred_eq, Set.mem_insert_iff, Set.mem_singleton_iff, sl_cubic, sl_g]
+  have : r ^ 3 - r + (0 - 0 ^ 3) = r * ((r - 1) * (r + 1)) := by ring
+  rw [this, mul_eq_zero, mul_eq_zero, sub_eq_zero, add_eq_zero_iff_eq_neg]
+
+/-- `g(a) − g(b) = −(a − b)(a² + ab + b² − 1)`. -/
+lemma sl_g_sub (a b : ℝ) : sl_g a - sl_g b = -((a - b) * (a ^ 2 + a * b + b ^ 2 - 1)) := by
+  unfold sl_g; ring
+
+/-- **Row 4, `prop:readingswap`.** `g(σ(r₀)) = g(r₀)`, so the metric function is unchanged. -/
+theorem sl_readingswap (x : ℝ) (h : 0 ≤ 4 - 3 * x ^ 2) :
+    sl_g (sl_σ x) = sl_g x ∧ ∀ r, sl_f (sl_g (sl_σ x)) r = sl_f (sl_g x) r := by
+  have e : sl_g (sl_σ x) = sl_g x := by
+    have := sl_g_sub (sl_σ x) x
+    rw [sl_σ_quad x h, mul_zero, neg_zero, sub_eq_zero] at this; exact this
+  exact ⟨e, fun r => by rw [e]⟩
+
+/-- `x ∈ [−1/√3, 2/√3]` read as `−1 ≤ √3 x ≤ 2`. -/
+lemma sl_dom {x : ℝ} (hx : x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3)) :
+    -1 ≤ Real.sqrt 3 * x ∧ Real.sqrt 3 * x ≤ 2 := by
+  obtain ⟨h1, h2⟩ := hx
+  rw [div_le_iff₀' sl_s3_pos] at h1
+  rw [le_div_iff₀' sl_s3_pos] at h2
+  exact ⟨h1, h2⟩
+
+lemma sl_dom_sq {x : ℝ} (hx : x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3)) :
+    0 ≤ 4 - 3 * x ^ 2 := by
+  obtain ⟨h1, h2⟩ := sl_dom hx
+  have : (Real.sqrt 3 * x) ^ 2 = 3 * x ^ 2 := by rw [mul_pow, sl_s3]
+  nlinarith
+
+/-- The expected stop: `4 − 3σ(x)² = ((3x + √(4 − 3x²))/2)²`, and `3x + √(4 − 3x²) ≥ 0` on `[−1/√3, 2/√3]`. -/
+lemma sl_inner (x : ℝ) (h : 0 ≤ 4 - 3 * x ^ 2) :
+    4 - 3 * sl_σ x ^ 2 = ((3 * x + Real.sqrt (4 - 3 * x ^ 2)) / 2) ^ 2 := by
+  have hs := Real.sq_sqrt h
+  unfold sl_σ; linear_combination (-1 : ℝ) * hs
+
+lemma sl_inner_nonneg {x : ℝ} (hx : x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3)) :
+    0 ≤ 3 * x + Real.sqrt (4 - 3 * x ^ 2) := by
+  have h := sl_dom_sq hx
+  obtain ⟨h1, _⟩ := sl_dom hx
+  have hs := Real.sq_sqrt h
+  have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+  have e : (Real.sqrt 3 * x) ^ 2 = 3 * x ^ 2 := by rw [mul_pow, sl_s3]
+  by_contra hc
+  push Not at hc
+  have hx0 : x < 0 := by linarith
+  have hsx : Real.sqrt (4 - 3 * x ^ 2) < -3 * x := by linarith
+  have h9 : Real.sqrt (4 - 3 * x ^ 2) ^ 2 < (-3 * x) ^ 2 := by nlinarith
+  have hb : Real.sqrt 3 * x < 0 := mul_neg_of_pos_of_neg sl_s3_pos hx0
+  nlinarith
+
+/-- **Row 5a, `prop:involution`.** `σ(σ(x)) = x` on `[−1/√3, 2/√3]`. -/
+theorem sl_σ_σ {x : ℝ} (hx : x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3)) : sl_σ (sl_σ x) = x := by
+  have h := sl_dom_sq hx
+  show (-(sl_σ x) + Real.sqrt (4 - 3 * sl_σ x ^ 2)) / 2 = x
+  rw [sl_inner x h, Real.sqrt_sq (by linarith [sl_inner_nonneg hx])]
+  unfold sl_σ; ring
+
+/-- `σ(0) = 1`. -/
+lemma sl_σ_zero : sl_σ 0 = 1 := by
+  unfold sl_σ
+  rw [show (4 : ℝ) - 3 * 0 ^ 2 = 2 ^ 2 by norm_num, Real.sqrt_sq (by norm_num)]; norm_num
+
+/-- `σ(1) = 0`. -/
+lemma sl_σ_one : sl_σ 1 = 0 := by
+  unfold sl_σ
+  rw [show (4 : ℝ) - 3 * 1 ^ 2 = 1 by norm_num, Real.sqrt_one]; norm_num
+
+/-- `σ(2/√3) = −1/√3`. -/
+lemma sl_σ_top : sl_σ (2 / Real.sqrt 3) = -1 / Real.sqrt 3 := by
+  unfold sl_σ
+  have : (4 : ℝ) - 3 * (2 / Real.sqrt 3) ^ 2 = 0 := by
+    rw [div_pow, sl_s3]; norm_num
+  rw [this, Real.sqrt_zero]; ring
+
+/-- `σ(−1/√3) = 2/√3`. -/
+lemma sl_σ_bot : sl_σ (-1 / Real.sqrt 3) = 2 / Real.sqrt 3 := by
+  have hm : (-1 / Real.sqrt 3) ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3) :=
+    ⟨le_rfl, div_le_div_of_nonneg_right (by norm_num) sl_s3_pos.le⟩
+  have ht : (2 / Real.sqrt 3) ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3) :=
+    ⟨div_le_div_of_nonneg_right (by norm_num) sl_s3_pos.le, le_rfl⟩
+  rw [← sl_σ_top, sl_σ_σ ht]
+
+/-- **Row 5a, the flag.** `σ` maps `[0, 2/√3]` into `[−1/√3, 1]`, and `[−1/√3, 1]` into `[0, 2/√3]`; so, being an
+involution, it maps each onto the other. It is not a self-map of `[0, 2/√3]`: `σ(2/√3) = −1/√3 < 0`. -/
+theorem sl_σ_swap :
+    Set.MapsTo sl_σ (Set.Icc 0 (2 / Real.sqrt 3)) (Set.Icc (-1 / Real.sqrt 3) 1) ∧
+      Set.MapsTo sl_σ (Set.Icc (-1 / Real.sqrt 3) 1) (Set.Icc 0 (2 / Real.sqrt 3)) ∧
+      sl_σ '' Set.Icc 0 (2 / Real.sqrt 3) = Set.Icc (-1 / Real.sqrt 3) 1 ∧
+      sl_σ (2 / Real.sqrt 3) ∉ Set.Icc 0 (2 / Real.sqrt 3) := by
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  have m1 : Set.MapsTo sl_σ (Set.Icc 0 (2 / Real.sqrt 3)) (Set.Icc (-1 / Real.sqrt 3) 1) := by
+    intro x ⟨h0, h2⟩
+    rw [le_div_iff₀' a0] at h2
+    have h : 0 ≤ 4 - 3 * x ^ 2 := by
+      have : (Real.sqrt 3 * x) ^ 2 = 3 * x ^ 2 := by rw [mul_pow, a3]
+      nlinarith
+    have hs := Real.sq_sqrt h
+    have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+    unfold sl_σ
+    constructor
+    · rw [div_le_iff₀' a0]
+      nlinarith
+    · nlinarith
+  have m2 : Set.MapsTo sl_σ (Set.Icc (-1 / Real.sqrt 3) 1) (Set.Icc 0 (2 / Real.sqrt 3)) := by
+    intro x ⟨h1, h2⟩
+    rw [div_le_iff₀' a0] at h1
+    have e : (Real.sqrt 3 * x) ^ 2 = 3 * x ^ 2 := by rw [mul_pow, a3]
+    have h : 0 ≤ 4 - 3 * x ^ 2 := by
+      by_cases hx : x ≤ 0
+      · have : Real.sqrt 3 * x ≤ 0 := mul_nonpos_of_nonneg_of_nonpos sl_s3_pos.le hx
+        nlinarith
+      · push Not at hx; nlinarith
+    have hs := Real.sq_sqrt h
+    have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+    unfold sl_σ
+    constructor
+    · -- `√(4 − 3x²) ≥ x`
+      by_cases hx : x ≤ 0
+      · linarith
+      · push Not at hx
+        nlinarith
+    · rw [le_div_iff₀' a0]
+      -- `√3 √(4 − 3x²) ≤ 4 + √3 x`, from `(√3 x + 1)² ≥ 0`
+      have hr : 0 ≤ 4 + Real.sqrt 3 * x := by linarith
+      have hp : Real.sqrt 3 * Real.sqrt (4 - 3 * x ^ 2) ≤ 4 + Real.sqrt 3 * x := by
+        apply abs_le_of_sq_le_sq' _ hr |>.2
+        rw [mul_pow, a3, hs]
+        nlinarith [sq_nonneg (Real.sqrt 3 * x + 1)]
+      nlinarith
+  refine ⟨m1, m2, ?_, ?_⟩
+  · apply Set.Subset.antisymm (Set.mapsTo_iff_image_subset.mp m1)
+    intro y hy
+    have hy' : y ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3) :=
+      ⟨hy.1, hy.2.trans (by rw [le_div_iff₀' a0]; nlinarith)⟩
+    exact ⟨sl_σ y, m2 hy, sl_σ_σ hy'⟩
+  · rw [sl_σ_top]
+    intro h
+    have := h.1
+    have : -1 / Real.sqrt 3 < 0 := div_neg_of_neg_of_pos (by norm_num) a0
+    linarith
+
+/-- `σ(x)` is a root of `x`'s cubic. -/
+lemma sl_σ_root (x : ℝ) (h : 0 ≤ 4 - 3 * x ^ 2) : sl_cubic (sl_g x) (sl_σ x) = 0 :=
+  ((sl_roots x h).1 _).2 (Or.inr (Or.inl rfl))
+
+/-- **Row 5c, `prop:involution`.** `σ(1/√3) = 1/√3`, `σ(0) = 1`, `σ(1) = 0`, and `1/√3` is the only fixed point of
+`σ` on `[−1/√3, 2/√3]`. -/
+theorem sl_σ_fixed :
+    sl_σ (1 / Real.sqrt 3) = 1 / Real.sqrt 3 ∧ sl_σ 0 = 1 ∧ sl_σ 1 = 0 ∧
+      ∀ x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3), sl_σ x = x ↔ x = 1 / Real.sqrt 3 := by
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  have key : ∀ x : ℝ, 0 ≤ 4 - 3 * x ^ 2 → (sl_σ x = x ↔ x = 1 / Real.sqrt 3) := by
+    intro x h
+    have hs := Real.sq_sqrt h
+    have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+    unfold sl_σ
+    constructor
+    · intro e
+      have e3 : Real.sqrt (4 - 3 * x ^ 2) = 3 * x := by linarith
+      have hx0 : 0 ≤ x := by linarith
+      have hx2 : (Real.sqrt 3 * x) ^ 2 = 1 := by rw [mul_pow, a3]; nlinarith
+      have hpos : 0 ≤ Real.sqrt 3 * x := mul_nonneg a0.le hx0
+      have : Real.sqrt 3 * x = 1 := by nlinarith
+      field_simp; linarith
+    · intro e
+      have hx : Real.sqrt 3 * x = 1 := by rw [e]; field_simp
+      have h3 : 4 - 3 * x ^ 2 = (3 * x) ^ 2 := by
+        have : (Real.sqrt 3 * x) ^ 2 = 1 := by rw [hx]; norm_num
+        rw [mul_pow, a3] at this; nlinarith
+      have hx0 : 0 ≤ x := by rw [e]; positivity
+      rw [h3, Real.sqrt_sq (by linarith)]; ring
+  have h13 : 0 ≤ 4 - 3 * (1 / Real.sqrt 3) ^ 2 := by rw [div_pow, a3]; norm_num
+  exact ⟨(key _ h13).2 rfl, sl_σ_zero, sl_σ_one, fun x hx => key x (sl_dom_sq hx)⟩
+
+/-- **Row 5b, `prop:involution`.** On `[0, 2/√3]`: for `r₀ ∈ [0, 1)`, `σ(r₀)` is a positive root of `r₀`'s cubic,
+different from `r₀` unless `r₀ = 1/√3`; at `r₀ = 1` it is `0`; for `r₀ ∈ (1, 2/√3]` it is negative. So "the second
+positive root" holds exactly on `[0, 1)`. Non-vacuity: at `r₀ = 1/2` the two positive roots are distinct. -/
+theorem sl_σ_second :
+    (∀ x, 0 ≤ x → x < 1 →
+        sl_cubic (sl_g x) (sl_σ x) = 0 ∧ 0 < sl_σ x ∧ (sl_σ x = x ↔ x = 1 / Real.sqrt 3)) ∧
+      sl_σ 1 = 0 ∧
+      (∀ x, 1 < x → x ≤ 2 / Real.sqrt 3 → sl_σ x < 0) ∧
+      (0 < sl_σ (1 / 2) ∧ sl_σ (1 / 2) ≠ 1 / 2 ∧ sl_cubic (sl_g (1 / 2)) (sl_σ (1 / 2)) = 0) := by
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  have lt1 : ∀ x : ℝ, 0 ≤ x → x < 1 → 0 ≤ 4 - 3 * x ^ 2 ∧ 0 < sl_σ x := by
+    intro x h0 h1
+    have h : 0 ≤ 4 - 3 * x ^ 2 := by nlinarith
+    refine ⟨h, ?_⟩
+    have hs := Real.sq_sqrt h
+    have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+    unfold sl_σ; nlinarith
+  have hdom : ∀ x : ℝ, 0 ≤ x → x < 1 → x ∈ Set.Icc (-1 / Real.sqrt 3) (2 / Real.sqrt 3) := by
+    intro x h0 h1
+    refine ⟨(div_neg_of_neg_of_pos (by norm_num) a0).le.trans h0, ?_⟩
+    rw [le_div_iff₀' a0]; nlinarith
+  refine ⟨fun x h0 h1 => ⟨sl_σ_root x (lt1 x h0 h1).1, (lt1 x h0 h1).2,
+      sl_σ_fixed.2.2.2 x (hdom x h0 h1)⟩, sl_σ_one, ?_, ?_⟩
+  · intro x h1 h2
+    rw [le_div_iff₀' a0] at h2
+    have h : 0 ≤ 4 - 3 * x ^ 2 := by
+      have : (Real.sqrt 3 * x) ^ 2 = 3 * x ^ 2 := by rw [mul_pow, a3]
+      nlinarith
+    have hs := Real.sq_sqrt h
+    have hs0 := Real.sqrt_nonneg (4 - 3 * x ^ 2)
+    unfold sl_σ; nlinarith
+  · obtain ⟨h, hp⟩ := lt1 (1 / 2) (by norm_num) (by norm_num)
+    refine ⟨hp, ?_, sl_σ_root _ h⟩
+    rw [Ne, sl_σ_fixed.2.2.2 _ (hdom _ (by norm_num) (by norm_num))]
+    intro e
+    have : (1 / 2 : ℝ) ^ 2 = (1 / Real.sqrt 3) ^ 2 := by rw [e]
+    rw [div_pow 1 (Real.sqrt 3), a3] at this; norm_num at this
+
+/-- **Row 6a, `prop:locus`.** `g(r) = g(r₀) ⟺ (r − r₀)(r² + r r₀ + r₀² − 1) = 0`: a line and a conic. -/
+theorem sl_locus (r₀ r : ℝ) :
+    sl_g r = sl_g r₀ ↔ (r - r₀) * (r ^ 2 + r * r₀ + r₀ ^ 2 - 1) = 0 := by
+  rw [← sub_eq_zero, sl_g_sub, neg_eq_zero]
+
+/-- **Row 6b, `prop:locus`.** In the rotated frame `u = (r + r₀)/√2`, `v = (r − r₀)/√2` (an isometry:
+`u² + v² = r² + r₀²`), `r² + r r₀ + r₀² = (3/2)u² + (1/2)v²`. So the conic is an ellipse with minor semi-axis
+`√(2/3)` along the diagonal `r = r₀` and major semi-axis `√2` along the anti-diagonal `r = −r₀`. -/
+theorem sl_ellipse (r₀ r : ℝ) :
+    let u := (r + r₀) / Real.sqrt 2
+    let v := (r - r₀) / Real.sqrt 2
+    u ^ 2 + v ^ 2 = r ^ 2 + r₀ ^ 2 ∧ r ^ 2 + r * r₀ + r₀ ^ 2 = 3 / 2 * u ^ 2 + 1 / 2 * v ^ 2 ∧
+      3 / 2 * Real.sqrt (2 / 3) ^ 2 = 1 ∧ 1 / 2 * Real.sqrt 2 ^ 2 = 1 ∧
+      Real.sqrt (2 / 3) < Real.sqrt 2 := by
+  intro u v
+  have h2 : Real.sqrt 2 ^ 2 = 2 := Real.sq_sqrt (by norm_num)
+  have h23 : Real.sqrt (2 / 3) ^ 2 = 2 / 3 := Real.sq_sqrt (by norm_num)
+  have hu : u ^ 2 = (r + r₀) ^ 2 / 2 := by simp only [u, div_pow, h2]
+  have hv : v ^ 2 = (r - r₀) ^ 2 / 2 := by simp only [v, div_pow, h2]
+  refine ⟨by rw [hu, hv]; ring, by rw [hu, hv]; ring, by rw [h23]; norm_num, by rw [h2]; norm_num,
+    Real.sqrt_lt_sqrt (by norm_num) (by norm_num)⟩
+
+/-- **Row 7, `cor:nariai-locus`.** The line `r = r₀` meets the conic exactly at `r₀ = ±1/√3`. There the cubic is
+`(r ∓ 1/√3)²(r ± 2/√3)`: a double root, and the third root `∓2/√3`. The meeting point `(1/√3, 1/√3)` is the minor
+axis's endpoint `√(2/3)·(1, 1)/√2`. -/
+theorem sl_nariai :
+    (∀ r₀ r : ℝ, (r = r₀ ∧ r ^ 2 + r * r₀ + r₀ ^ 2 - 1 = 0) ↔
+        (r = r₀ ∧ (r₀ = 1 / Real.sqrt 3 ∨ r₀ = -(1 / Real.sqrt 3)))) ∧
+      (∀ a r : ℝ, 3 * a ^ 2 = 1 → sl_cubic (sl_g a) r = (r - a) ^ 2 * (r + 2 * a)) ∧
+      3 * (1 / Real.sqrt 3) ^ 2 = 1 ∧ 3 * (-(1 / Real.sqrt 3)) ^ 2 = 1 ∧
+      Real.sqrt (2 / 3) / Real.sqrt 2 = 1 / Real.sqrt 3 := by
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  have h13 : 3 * (1 / Real.sqrt 3) ^ 2 = 1 := by rw [div_pow, a3]; norm_num
+  refine ⟨fun r₀ r => ?_, fun a r ha => ?_, h13, by rw [neg_sq]; exact h13, ?_⟩
+  · constructor
+    · rintro ⟨rfl, h⟩
+      refine ⟨rfl, ?_⟩
+      have : r ^ 2 = (1 / Real.sqrt 3) ^ 2 := by linarith
+      exact sq_eq_sq_iff_eq_or_eq_neg.mp this
+    · rintro ⟨rfl, h | h⟩ <;> refine ⟨rfl, ?_⟩ <;> rw [h] <;> linarith [neg_sq (1 / Real.sqrt 3)]
+  · rw [sl_factor]
+    linear_combination (r - a) * ha
+  · rw [Real.sqrt_div' _ (by norm_num : (0 : ℝ) ≤ 3), div_div, mul_comm, ← div_div,
+      div_self (Real.sqrt_pos.mpr (by norm_num : (0 : ℝ) < 2)).ne']
+
+end SlCubic
+
+section SlSky
+open Real
+
+/-- **Row 9a, `prop:triple`.** With `r₀ = (2/√3) sin w`, `2M = g(r₀) = (2/(3√3)) sin 3w`. -/
+theorem sl_triple (w : ℝ) :
+    sl_g (2 / Real.sqrt 3 * Real.sin w) = 2 / (3 * Real.sqrt 3) * Real.sin (3 * w) := by
+  have hc3 : Real.sqrt 3 ^ 3 = 3 * Real.sqrt 3 := by rw [pow_succ, sl_s3]
+  have h0 := sl_s3_pos.ne'
+  unfold sl_g
+  rw [Real.sin_three_mul, mul_pow, div_pow, hc3]
+  field_simp; ring
+
+/-- **Row 9b, `prop:triple`.** The scale is forced: if `ϱ > 0` and `g(ϱ sin w) = k sin 3w` for every `w`, then
+`ϱ = 2/√3` and `k = 2/(3√3)`. -/
+theorem sl_triple_unique {ϱ k : ℝ} (hϱ : 0 < ϱ)
+    (h : ∀ w, sl_g (ϱ * Real.sin w) = k * Real.sin (3 * w)) :
+    ϱ = 2 / Real.sqrt 3 ∧ k = 2 / (3 * Real.sqrt 3) := by
+  have h1 := h (π / 2)
+  have h2 := h (π / 6)
+  rw [Real.sin_three_mul, Real.sin_pi_div_two] at h1
+  rw [Real.sin_three_mul, Real.sin_pi_div_six] at h2
+  unfold sl_g at h1 h2
+  have hq : ϱ ^ 2 = 4 / 3 := by
+    have : ϱ * (3 / 2 - 9 / 8 * ϱ ^ 2) = 0 := by linear_combination h1 + h2
+    rcases mul_eq_zero.mp this with h | h
+    · exact absurd h hϱ.ne'
+    · linarith
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  have hs : Real.sqrt 3 * ϱ = 2 := by
+    have e : (Real.sqrt 3 * ϱ) ^ 2 = 2 ^ 2 := by rw [mul_pow, a3, hq]; norm_num
+    exact (sq_eq_sq₀ (mul_pos a0 hϱ).le (by norm_num)).mp e
+  have hϱ' : ϱ = 2 / Real.sqrt 3 := by field_simp; linarith
+  refine ⟨hϱ', ?_⟩
+  have hk : k = ϱ / 3 := by nlinarith
+  rw [hk, hϱ']; field_simp
+
+/-- The chart involution `g₁(x) = √(1 − x²)`. -/
+noncomputable def sl_g₁ (x : ℝ) : ℝ := Real.sqrt (1 - x ^ 2)
+
+/-- The conjugating map `χ(x) = (2/√3) sin((2/3) arcsin x)`. -/
+noncomputable def sl_χ (x : ℝ) : ℝ := 2 / Real.sqrt 3 * Real.sin (2 / 3 * Real.arcsin x)
+
+/-- `σ((2/√3) sin b) = (2/√3) sin(π/3 − b)` wherever `cos b ≥ 0`. -/
+lemma sl_σ_sin {b : ℝ} (hb : 0 ≤ Real.cos b) :
+    sl_σ (2 / Real.sqrt 3 * Real.sin b) = 2 / Real.sqrt 3 * Real.sin (π / 3 - b) := by
+  have a3 := sl_s3; have h0 := sl_s3_pos.ne'
+  have e : 4 - 3 * (2 / Real.sqrt 3 * Real.sin b) ^ 2 = (2 * Real.cos b) ^ 2 := by
+    rw [mul_pow, div_pow, a3]
+    have := Real.sin_sq_add_cos_sq b
+    field_simp; linear_combination (-4) * this
+  unfold sl_σ
+  rw [e, Real.sqrt_sq (by linarith), Real.sin_sub, Real.sin_pi_div_three, Real.cos_pi_div_three]
+  field_simp; ring
+
+lemma sl_cos_b {x : ℝ} : 0 ≤ Real.cos (2 / 3 * Real.arcsin x) := by
+  apply Real.cos_nonneg_of_neg_pi_div_two_le_of_le
+  · nlinarith [Real.neg_pi_div_two_le_arcsin x, Real.pi_pos]
+  · nlinarith [Real.arcsin_le_pi_div_two x, Real.pi_pos]
+
+/-- `arcsin √(1 − x²) = π/2 − arcsin |x|` on `[−1, 1]`. -/
+lemma sl_arcsin_g₁ {x : ℝ} (hx : 0 ≤ x) : Real.arcsin (sl_g₁ x) = π / 2 - Real.arcsin x := by
+  unfold sl_g₁; rw [← Real.arccos_eq_arcsin hx, Real.arccos_eq_pi_div_two_sub_arcsin]
+
+/-- **Row 10, `prop:conjugacy`.** `χ(g₁(x)) = σ(χ(x))` on `[0, 1]`. -/
+theorem sl_conjugacy {x : ℝ} (hx : x ∈ Set.Icc (0 : ℝ) 1) : sl_χ (sl_g₁ x) = sl_σ (sl_χ x) := by
+  unfold sl_χ
+  rw [sl_σ_sin sl_cos_b, sl_arcsin_g₁ hx.1]
+  congr 2; ring
+
+/-- **Row 10, the flag.** On `[−1, 0)` the identity fails at every point: there
+`χ(g₁(x)) − σ(χ(x)) = (2/√3) sin((2/3) arcsin x) < 0`. So `[0, 1]` is exactly where it holds on `[−1, 1]`. -/
+theorem sl_conjugacy_fails {x : ℝ} (hx : x ∈ Set.Ico (-1 : ℝ) 0) : sl_χ (sl_g₁ x) ≠ sl_σ (sl_χ x) := by
+  have hn : 0 ≤ -x := by linarith [hx.2]
+  have hg : sl_g₁ x = sl_g₁ (-x) := by unfold sl_g₁; rw [neg_sq]
+  have hb : Real.arcsin x < 0 := Real.arcsin_lt_zero.mpr hx.2
+  have hsin : Real.sin (2 / 3 * Real.arcsin x) < 0 :=
+    Real.sin_neg_of_neg_of_neg_pi_lt (by linarith)
+      (by nlinarith [Real.neg_pi_div_two_le_arcsin x, Real.pi_pos])
+  unfold sl_χ
+  rw [sl_σ_sin sl_cos_b, hg, sl_arcsin_g₁ hn, Real.arcsin_neg]
+  intro e
+  have e' : Real.sin (π / 3 + 2 / 3 * Real.arcsin x) = Real.sin (π / 3 - 2 / 3 * Real.arcsin x) := by
+    have h0 : (2 / Real.sqrt 3 : ℝ) ≠ 0 := div_ne_zero two_ne_zero sl_s3_pos.ne'
+    have := mul_left_cancel₀ h0 e
+    rw [← this]; congr 1; ring
+  rw [Real.sin_add, Real.sin_sub, Real.cos_pi_div_three] at e'
+  linarith
+
+/-- `f′(r) = m/r² − 2r` off `r = 0`. -/
+lemma sl_f_hasDerivAt (m : ℝ) {r : ℝ} (hr : r ≠ 0) : HasDerivAt (sl_f m) (m / r ^ 2 - 2 * r) r := by
+  have e : sl_f m = fun s => 1 - m * s⁻¹ - s ^ 2 := by funext s; simp only [sl_f]; ring
+  rw [e]
+  refine HasDerivAt.congr_deriv (HasDerivAt.sub (HasDerivAt.sub (hasDerivAt_const r (1 : ℝ))
+    ((hasDerivAt_inv hr).const_mul m)) (hasDerivAt_pow 2 r)) ?_
+  field_simp; ring
+
+/-- **Row 1a, `prop:turning`.** Off `r = 0`, `r f(r) = −(r³ − r + 2M)`, and `dr/dl = √|f|` vanishes exactly at the
+cubic's roots. -/
+theorem sl_turning (m : ℝ) {r : ℝ} (hr : r ≠ 0) :
+    r * sl_f m r = -sl_cubic m r ∧ (Real.sqrt |sl_f m r| = 0 ↔ sl_cubic m r = 0) := by
+  refine ⟨sl_rf m r hr, ?_⟩
+  rw [Real.sqrt_eq_zero (abs_nonneg _), abs_eq_zero]
+  have := sl_rf m r hr
+  constructor
+  · intro h; rw [h, mul_zero] at this; linarith
+  · intro h; rw [h, neg_zero] at this; exact (mul_eq_zero.mp this).resolve_left hr
+
+/-- **Row 1b, `prop:turning`.** At a root `r_h ≠ 0` of the cubic, `f′(r_h) = −c′(r_h)/r_h` with
+`c′(r) = 3r² − 1`. So `f′(r_h) = 0` iff the root is double (`c = c′ = 0` there), iff `r_h = ±1/√3`; a simple root
+has `f′(r_h) ≠ 0`. -/
+theorem sl_turning_simple (m : ℝ) {r : ℝ} (hr : r ≠ 0) (hc : sl_cubic m r = 0) :
+    HasDerivAt (sl_f m) (-(3 * r ^ 2 - 1) / r) r ∧ HasDerivAt (sl_cubic m) (3 * r ^ 2 - 1) r ∧
+      (-(3 * r ^ 2 - 1) / r = 0 ↔ 3 * r ^ 2 - 1 = 0) ∧
+      (3 * r ^ 2 - 1 = 0 ↔ r = 1 / Real.sqrt 3 ∨ r = -(1 / Real.sqrt 3)) := by
+  have hm : m = r - r ^ 3 := by unfold sl_cubic at hc; linarith
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · refine (sl_f_hasDerivAt m hr).congr_deriv ?_
+    rw [hm]; field_simp; ring
+  · unfold sl_cubic
+    have := ((hasDerivAt_pow 3 r).sub (hasDerivAt_id r)).add_const m
+    refine this.congr_deriv ?_; simp
+  · rw [neg_div, neg_eq_zero, div_eq_zero_iff, or_iff_left hr]
+  · have h13 : 3 * (1 / Real.sqrt 3) ^ 2 = 1 := by rw [div_pow, sl_s3]; norm_num
+    rw [← sq_eq_sq_iff_eq_or_eq_neg]
+    constructor <;> intro h <;> linarith
+
+/-- **Row 13a, the flag (`f > 0`).** Along `r′ = √|f(r)|`, where `f(r) > 0`: `r″ = ½ f′(r)`. -/
+theorem sl_accel_pos {f r : ℝ → ℝ} {f' l : ℝ} (hr : ∀ t, HasDerivAt r (Real.sqrt |f (r t)|) t)
+    (hf : HasDerivAt f f' (r l)) (hpos : 0 < f (r l)) :
+    HasDerivAt (deriv r) (f' / 2) l := by
+  have hd : deriv r = fun t => Real.sqrt |f (r t)| := funext fun t => (hr t).deriv
+  rw [hd]
+  have hF : HasDerivAt (fun t => f (r t)) (f' * Real.sqrt |f (r l)|) l := hf.comp l (hr l)
+  have hev : ∀ᶠ t in nhds l, 0 < f (r t) := hF.continuousAt.preimage_mem_nhds (Ioi_mem_nhds hpos)
+  have heq : (fun t => Real.sqrt (f (r t))) =ᶠ[nhds l] fun t => Real.sqrt |f (r t)| := by
+    filter_upwards [hev] with t ht; rw [abs_of_pos ht]
+  refine (HasDerivAt.congr_of_eventuallyEq ?_ heq.symm)
+  have hs := hF.sqrt hpos.ne'
+  rw [abs_of_pos hpos] at hs
+  have hq : 0 < Real.sqrt (f (r l)) := Real.sqrt_pos.mpr hpos
+  refine hs.congr_deriv ?_
+  field_simp
+
+/-- **Row 13a, the flag (`f < 0`).** Along `r′ = √|f(r)|`, where `f(r) < 0`: `r″ = −½ f′(r)`. -/
+theorem sl_accel_neg {f r : ℝ → ℝ} {f' l : ℝ} (hr : ∀ t, HasDerivAt r (Real.sqrt |f (r t)|) t)
+    (hf : HasDerivAt f f' (r l)) (hneg : f (r l) < 0) :
+    HasDerivAt (deriv r) (-f' / 2) l := by
+  have hd : deriv r = fun t => Real.sqrt |f (r t)| := funext fun t => (hr t).deriv
+  rw [hd]
+  have hF : HasDerivAt (fun t => -f (r t)) (-(f' * Real.sqrt |f (r l)|)) l := (hf.comp l (hr l)).neg
+  have hpos : 0 < -f (r l) := neg_pos.mpr hneg
+  have hev : ∀ᶠ t in nhds l, 0 < -f (r t) := hF.continuousAt.preimage_mem_nhds (Ioi_mem_nhds hpos)
+  have heq : (fun t => Real.sqrt (-f (r t))) =ᶠ[nhds l] fun t => Real.sqrt |f (r t)| := by
+    filter_upwards [hev] with t ht; rw [abs_of_neg (neg_pos.mp ht)]
+  refine (HasDerivAt.congr_of_eventuallyEq ?_ heq.symm)
+  have hs := hF.sqrt hpos.ne'
+  rw [abs_of_neg hneg] at hs
+  have hq : 0 < Real.sqrt (-f (r l)) := Real.sqrt_pos.mpr hpos
+  refine hs.congr_deriv ?_
+  field_simp
+
+/-- **The curve read with the modulus, on SdS.** With `f = 1 − 2M/r − r²` (`m = 2M`), along a curve with
+`r′ = √|f(r)|`, the quantity `−r″/r` is `1 − M/r³` where `f > 0` and `M/r³ − 1` where `f < 0`. This is a theorem
+about that curve (the Riemannian surface `dl² + r² dφ²` carried past the horizon with `(dr/dl)² = |f|`), not about
+P3's slicing surface: on `prop:flip`'s Lorentzian continuation the Gaussian curvature is `1 − M/r³` on both sides,
+with no sign change (`sl_curvature_continued`, campaign 122, `probes/SlicingCurvature.lean`). -/
+theorem sl_curvature_sign {m : ℝ} {r : ℝ → ℝ} {l : ℝ} (hr : ∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t)
+    (h0 : r l ≠ 0) :
+    (0 < sl_f m (r l) → ∃ a, HasDerivAt (deriv r) a l ∧ -a / r l = 1 - (m / 2) / r l ^ 3) ∧
+      (sl_f m (r l) < 0 → ∃ a, HasDerivAt (deriv r) a l ∧ -a / r l = (m / 2) / r l ^ 3 - 1) := by
+  have hf := sl_f_hasDerivAt m h0
+  refine ⟨fun hp => ⟨_, sl_accel_pos hr hf hp, ?_⟩, fun hn => ⟨_, sl_accel_neg hr hf hn, ?_⟩⟩
+  · field_simp; ring
+  · field_simp
+
+/-- **Row 13a, non-vacuity.** `r = exp` solves `r′ = √|f(r)|` for `f = −x²` (where `f < 0`) and for `f = x²`
+(where `f > 0`), and there `r″ = −½ f′` and `r″ = ½ f′` respectively. -/
+theorem sl_accel_witness (l : ℝ) :
+    (∀ t, HasDerivAt Real.exp (Real.sqrt |(fun x : ℝ => -x ^ 2) (Real.exp t)|) t) ∧
+      (fun x : ℝ => -x ^ 2) (Real.exp l) < 0 ∧
+      (∀ t, HasDerivAt Real.exp (Real.sqrt |(fun x : ℝ => x ^ 2) (Real.exp t)|) t) ∧
+      0 < (fun x : ℝ => x ^ 2) (Real.exp l) ∧
+      HasDerivAt (deriv Real.exp) (-(-(2 * Real.exp l)) / 2) l ∧
+      HasDerivAt (deriv Real.exp) ((2 * Real.exp l) / 2) l := by
+  have e1 : ∀ t, Real.sqrt |(fun x : ℝ => -x ^ 2) (Real.exp t)| = Real.exp t := fun t => by
+    simp only [abs_neg, abs_pow, abs_of_pos (Real.exp_pos t)]; exact Real.sqrt_sq (Real.exp_pos t).le
+  have e2 : ∀ t, Real.sqrt |(fun x : ℝ => x ^ 2) (Real.exp t)| = Real.exp t := fun t => by
+    simp only [abs_pow, abs_of_pos (Real.exp_pos t)]; exact Real.sqrt_sq (Real.exp_pos t).le
+  have h1 : ∀ t, HasDerivAt Real.exp (Real.sqrt |(fun x : ℝ => -x ^ 2) (Real.exp t)|) t :=
+    fun t => by rw [e1]; exact Real.hasDerivAt_exp t
+  have h2 : ∀ t, HasDerivAt Real.exp (Real.sqrt |(fun x : ℝ => x ^ 2) (Real.exp t)|) t :=
+    fun t => by rw [e2]; exact Real.hasDerivAt_exp t
+  have hn : (fun x : ℝ => -x ^ 2) (Real.exp l) < 0 := by
+    simp only; exact neg_neg_of_pos (pow_pos (Real.exp_pos l) 2)
+  have hp : 0 < (fun x : ℝ => x ^ 2) (Real.exp l) := by simp only; exact pow_pos (Real.exp_pos l) 2
+  have df1 : HasDerivAt (fun x : ℝ => -x ^ 2) (-(2 * Real.exp l)) (Real.exp l) := by
+    exact ((hasDerivAt_pow 2 (Real.exp l)).neg).congr_deriv (by norm_num)
+  have df2 : HasDerivAt (fun x : ℝ => x ^ 2) (2 * Real.exp l) (Real.exp l) := by
+    exact (hasDerivAt_pow 2 (Real.exp l)).congr_deriv (by norm_num)
+  exact ⟨h1, hn, h2, hp, sl_accel_neg h1 df1 hn, sl_accel_pos h2 df2 hp⟩
+
+end SlSky
+
+section SlHinge
+open Real
+
+/-- The Euclidean inner product on the transverse plane `ℝ²`. -/
+def sl_dot (p q : ℝ × ℝ) : ℝ := p.1 * q.1 + p.2 * q.2
+
+/-- The squared Euclidean length. -/
+def sl_nsq (p : ℝ × ℝ) : ℝ := sl_dot p p
+
+/-- The midpoint of a segment. -/
+noncomputable def sl_mid (p q : ℝ × ℝ) : ℝ × ℝ := ((p.1 + q.1) / 2, (p.2 + q.2) / 2)
+
+/-- The hinges: an equilateral triangle of circumradius `R` about the axis (the origin). -/
+def sl_H₀ (R : ℝ) : ℝ × ℝ := (R, 0)
+noncomputable def sl_H₁ (R : ℝ) : ℝ × ℝ := (-R / 2, Real.sqrt 3 / 2 * R)
+noncomputable def sl_H₂ (R : ℝ) : ℝ × ℝ := (-R / 2, -(Real.sqrt 3 / 2 * R))
+
+/-- The three hinges are at distance `R` from the axis and pairwise `√3 R` apart: the triangle is equilateral with
+circumradius `R` and circumcentre the origin. -/
+theorem sl_hinge_equilateral (R : ℝ) :
+    sl_nsq (sl_H₀ R) = R ^ 2 ∧ sl_nsq (sl_H₁ R) = R ^ 2 ∧ sl_nsq (sl_H₂ R) = R ^ 2 ∧
+      sl_nsq (sl_H₀ R - sl_H₁ R) = 3 * R ^ 2 ∧ sl_nsq (sl_H₁ R - sl_H₂ R) = 3 * R ^ 2 ∧
+      sl_nsq (sl_H₂ R - sl_H₀ R) = 3 * R ^ 2 := by
+  have a3 := sl_s3
+  simp only [sl_nsq, sl_dot, sl_H₀, sl_H₁, sl_H₂, Prod.fst_sub, Prod.snd_sub]
+  refine ⟨by ring, ?_, ?_, ?_, ?_, ?_⟩ <;> (ring_nf; simp only [a3]; try ring)
+
+/-- **Row 11a, (iii).** Each side's midpoint is at distance `R/2` from the axis, and the side is perpendicular to the
+midpoint's radius: the foot of the perpendicular from the axis is the midpoint, and the inradius is `R/2`. -/
+theorem sl_hinge_midpoints (R : ℝ) :
+    (sl_nsq (sl_mid (sl_H₁ R) (sl_H₂ R)) = (R / 2) ^ 2 ∧
+        sl_dot (sl_mid (sl_H₁ R) (sl_H₂ R)) (sl_H₂ R - sl_H₁ R) = 0) ∧
+      (sl_nsq (sl_mid (sl_H₂ R) (sl_H₀ R)) = (R / 2) ^ 2 ∧
+        sl_dot (sl_mid (sl_H₂ R) (sl_H₀ R)) (sl_H₀ R - sl_H₂ R) = 0) ∧
+      (sl_nsq (sl_mid (sl_H₀ R) (sl_H₁ R)) = (R / 2) ^ 2 ∧
+        sl_dot (sl_mid (sl_H₀ R) (sl_H₁ R)) (sl_H₁ R - sl_H₀ R) = 0) := by
+  have a3 := sl_s3
+  simp only [sl_nsq, sl_dot, sl_mid, sl_H₀, sl_H₁, sl_H₂, Prod.fst_sub, Prod.snd_sub]
+  refine ⟨⟨by ring, by ring⟩, ⟨?_, ?_⟩, ⟨?_, ?_⟩⟩ <;> (ring_nf; simp only [a3]; ring)
+
+/-- **Row 11a, (i) ⟺ (ii).** For `0 < α ≤ R`: `arcsin(α/R) = π/6 ⟺ R = 2α`. -/
+theorem sl_hinge_arcsin {α R : ℝ} (hα : 0 < α) (hR : α ≤ R) :
+    Real.arcsin (α / R) = π / 6 ↔ R = 2 * α := by
+  have hR0 : 0 < R := hα.trans_le hR
+  have h1 : α / R ≤ 1 := (div_le_one hR0).mpr hR
+  have h0 : -1 ≤ α / R := le_trans (by norm_num) (div_pos hα hR0).le
+  constructor
+  · intro h
+    have := Real.sin_arcsin h0 h1
+    rw [h, Real.sin_pi_div_six] at this
+    field_simp at this; linarith
+  · intro h
+    apply Real.arcsin_eq_of_sin_eq
+    · rw [Real.sin_pi_div_six, h]; field_simp
+    · constructor <;> linarith [Real.pi_pos]
+
+/-- **Row 11a, (i) ⟺ (iii).** The sides touch the throat at their midpoints iff `R = 2α`. -/
+theorem sl_hinge_tangent_mid {α R : ℝ} (hα : 0 < α) (hR : 0 < R) :
+    (sl_nsq (sl_mid (sl_H₁ R) (sl_H₂ R)) = α ^ 2 ∧ sl_nsq (sl_mid (sl_H₂ R) (sl_H₀ R)) = α ^ 2 ∧
+      sl_nsq (sl_mid (sl_H₀ R) (sl_H₁ R)) = α ^ 2) ↔ R = 2 * α := by
+  obtain ⟨⟨e0, -⟩, ⟨e1, -⟩, ⟨e2, -⟩⟩ := sl_hinge_midpoints R
+  rw [e0, e1, e2]
+  constructor
+  · rintro ⟨h, -, -⟩
+    have := (sq_eq_sq₀ (by positivity) hα.le).mp h
+    linarith
+  · intro h; subst h; refine ⟨?_, ?_, ?_⟩ <;> ring
+
+/-- **Row 11b, (iv), uniqueness.** A circle `(c, ρ)` passes through the three side midpoints iff `c` is the axis and
+`ρ² = (R/2)²`. -/
+theorem sl_ninepoint_unique {R : ℝ} (hR : R ≠ 0) (c : ℝ × ℝ) (ρ : ℝ) :
+    (sl_nsq (sl_mid (sl_H₁ R) (sl_H₂ R) - c) = ρ ^ 2 ∧ sl_nsq (sl_mid (sl_H₂ R) (sl_H₀ R) - c) = ρ ^ 2 ∧
+        sl_nsq (sl_mid (sl_H₀ R) (sl_H₁ R) - c) = ρ ^ 2) ↔
+      (c = (0, 0) ∧ ρ ^ 2 = (R / 2) ^ 2) := by
+  have a3 := sl_s3; have a0 := sl_s3_pos
+  obtain ⟨c1, c2⟩ := c
+  simp only [sl_nsq, sl_dot, sl_mid, sl_H₀, sl_H₁, sl_H₂, Prod.fst_sub, Prod.snd_sub, Prod.mk.injEq]
+  constructor
+  · rintro ⟨h0, h1, h2⟩
+    have hc2 : c2 = 0 := by
+      have : Real.sqrt 3 * R * c2 = 0 := by linear_combination h1 - h2
+      rcases mul_eq_zero.mp this with h | h
+      · exact absurd h (mul_ne_zero a0.ne' hR)
+      · exact h
+    subst hc2
+    have hc1 : c1 = 0 := by
+      have : R * c1 = 0 := by linear_combination (2 / 3 : ℝ) * (h0 - h2) + (R ^ 2 / 24) * a3
+      exact (mul_eq_zero.mp this).resolve_left hR
+    subst hc1
+    refine ⟨⟨rfl, rfl⟩, ?_⟩
+    linear_combination -h0
+  · rintro ⟨⟨rfl, rfl⟩, hρ⟩
+    refine ⟨?_, ?_, ?_⟩
+    · linear_combination -hρ
+    · linear_combination (R ^ 2 / 16) * a3 - hρ
+    · linear_combination (R ^ 2 / 16) * a3 - hρ
+
+/-- **Row 11b, (iv), the nine points.** The orthocentre is the axis (each altitude passes through it), each foot of
+an altitude is the opposite side's midpoint, and the midpoints of the vertex–orthocentre segments are at distance
+`R/2` from the axis. So the unique circle through the side midpoints, centre the axis and radius `R/2`, carries all
+nine points: it is the nine-point circle, with centre `N = (O + H)/2 = 0` (Euler). -/
+theorem sl_ninepoint (R : ℝ) :
+    (sl_dot (sl_H₀ R) (sl_H₂ R - sl_H₁ R) = 0 ∧ sl_dot (sl_H₁ R) (sl_H₀ R - sl_H₂ R) = 0 ∧
+        sl_dot (sl_H₂ R) (sl_H₁ R - sl_H₀ R) = 0) ∧
+      (sl_dot (sl_H₀ R - sl_mid (sl_H₁ R) (sl_H₂ R)) (sl_H₂ R - sl_H₁ R) = 0 ∧
+        sl_dot (sl_H₁ R - sl_mid (sl_H₂ R) (sl_H₀ R)) (sl_H₀ R - sl_H₂ R) = 0 ∧
+        sl_dot (sl_H₂ R - sl_mid (sl_H₀ R) (sl_H₁ R)) (sl_H₁ R - sl_H₀ R) = 0) ∧
+      (sl_nsq (sl_mid (sl_H₀ R) (0, 0)) = (R / 2) ^ 2 ∧ sl_nsq (sl_mid (sl_H₁ R) (0, 0)) = (R / 2) ^ 2 ∧
+        sl_nsq (sl_mid (sl_H₂ R) (0, 0)) = (R / 2) ^ 2) := by
+  have a3 := sl_s3
+  simp only [sl_nsq, sl_dot, sl_mid, sl_H₀, sl_H₁, sl_H₂, Prod.fst_sub, Prod.snd_sub]
+  refine ⟨⟨by ring, ?_, ?_⟩, ⟨by ring, ?_, ?_⟩, ⟨by ring, ?_, ?_⟩⟩ <;> (ring_nf; simp only [a3]; ring)
+
+/-- **Row 11c, (v), at every `R ≥ α`.** Every tangent point `T` from the hinge `H₀` (`|T| = α`,
+`⟨T, H₀ − T⟩ = 0`) has squared tangent length `R² − α²`, and one exists. The hinge's height on the hyperboloid
+`−X₀² + X₁² + X₂² = α²` at transverse distance `R` is `√(R² − α²)`. So the tangent length equals the height for
+every `R` (P17, `prop:tangentnull`), and the common value is `√3α` iff `R = 2α`. -/
+theorem sl_tangent_height {α R : ℝ} (hα : 0 < α) (hR : α ≤ R) :
+    (∀ T : ℝ × ℝ, sl_nsq T = α ^ 2 → sl_dot T (sl_H₀ R - T) = 0 → sl_nsq (sl_H₀ R - T) = R ^ 2 - α ^ 2) ∧
+      (∃ T : ℝ × ℝ, sl_nsq T = α ^ 2 ∧ sl_dot T (sl_H₀ R - T) = 0) ∧
+      (∀ X₀ : ℝ, 0 ≤ X₀ → (-X₀ ^ 2 + R ^ 2 + 0 ^ 2 = α ^ 2 ↔ X₀ = Real.sqrt (R ^ 2 - α ^ 2))) ∧
+      (∀ T : ℝ × ℝ, sl_nsq T = α ^ 2 → sl_dot T (sl_H₀ R - T) = 0 →
+        Real.sqrt (sl_nsq (sl_H₀ R - T)) = Real.sqrt (R ^ 2 - α ^ 2)) ∧
+      (Real.sqrt (R ^ 2 - α ^ 2) = Real.sqrt 3 * α ↔ R = 2 * α) := by
+  have hR0 : 0 < R := hα.trans_le hR
+  have hq : 0 ≤ R ^ 2 - α ^ 2 := by nlinarith
+  have tl : ∀ T : ℝ × ℝ, sl_nsq T = α ^ 2 → sl_dot T (sl_H₀ R - T) = 0 →
+      sl_nsq (sl_H₀ R - T) = R ^ 2 - α ^ 2 := by
+    rintro ⟨t1, t2⟩ h1 h2
+    simp only [sl_nsq, sl_dot, sl_H₀, Prod.fst_sub, Prod.snd_sub] at h1 h2 ⊢
+    linear_combination -2 * h2 - h1
+  refine ⟨tl, ?_, ?_, fun T h1 h2 => by rw [tl T h1 h2], ?_⟩
+  · obtain ⟨q, hqd⟩ : ∃ q, q = Real.sqrt (R ^ 2 - α ^ 2) := ⟨_, rfl⟩
+    have hq2 : q ^ 2 = R ^ 2 - α ^ 2 := by rw [hqd, Real.sq_sqrt hq]
+    refine ⟨(α ^ 2 / R, α * q / R), ?_, ?_⟩ <;>
+      simp only [sl_nsq, sl_dot, sl_H₀, Prod.fst_sub, Prod.snd_sub] <;> field_simp
+    · linear_combination hq2
+    · linear_combination (-α ^ 2) * hq2
+  · intro X₀ hX
+    constructor
+    · intro h
+      rw [show R ^ 2 - α ^ 2 = X₀ ^ 2 by linarith, Real.sqrt_sq hX]
+    · intro h
+      rw [h, Real.sq_sqrt hq]; ring
+  · constructor
+    · intro h
+      have := congrArg (· ^ 2) h
+      simp only [mul_pow, Real.sq_sqrt hq, sl_s3] at this
+      have h4 : R ^ 2 = (2 * α) ^ 2 := by linarith
+      exact (sq_eq_sq₀ hR0.le (by positivity)).mp h4
+    · intro h
+      rw [h, show (2 * α) ^ 2 - α ^ 2 = 3 * α ^ 2 by ring, Real.sqrt_mul (by norm_num),
+        Real.sqrt_sq hα.le]
+
+/-- **Row 11c, (vi).** The squared separation of two opposite-horn ends `120°` apart at transverse radius `R` is
+`4α² − R²`, null iff `R = 2α`. -/
+theorem sl_hinge_null {α R : ℝ} (hα : 0 < α) (hR : α ≤ R) :
+    -(2 * Real.sqrt (R ^ 2 - α ^ 2)) ^ 2 + R ^ 2 * (2 - 2 * Real.cos (2 * π / 3)) = 4 * α ^ 2 - R ^ 2 ∧
+      (4 * α ^ 2 - R ^ 2 = 0 ↔ R = 2 * α) := by
+  have hR0 : 0 < R := hα.trans_le hR
+  have hc : Real.cos (2 * π / 3) = -1 / 2 := by
+    rw [show 2 * π / 3 = π - π / 3 by ring, Real.cos_pi_sub, Real.cos_pi_div_three]; norm_num
+  have hq : Real.sqrt (R ^ 2 - α ^ 2) ^ 2 = R ^ 2 - α ^ 2 := Real.sq_sqrt (by nlinarith)
+  refine ⟨by rw [hc, mul_pow, hq]; ring, ?_⟩
+  constructor
+  · intro h
+    have h4 : R ^ 2 = (2 * α) ^ 2 := by linarith
+    exact (sq_eq_sq₀ hR0.le (by positivity)).mp h4
+  · intro h; rw [h]; ring
+
+/-- **Row 11, the headline.** For `0 < α ≤ R`, each of (ii)–(vi) is equivalent to (i) `R = 2α`: the throat
+subtends `60°`; the sides touch it at their midpoints; the nine-point circle is the throat; the common tangent
+length and height is `√3α`; the opposite-horn separation is null. -/
+theorem sl_twoalpha {α R : ℝ} (hα : 0 < α) (hR : α ≤ R) :
+    (Real.arcsin (α / R) = π / 6 ↔ R = 2 * α) ∧
+      ((sl_nsq (sl_mid (sl_H₁ R) (sl_H₂ R)) = α ^ 2 ∧ sl_nsq (sl_mid (sl_H₂ R) (sl_H₀ R)) = α ^ 2 ∧
+          sl_nsq (sl_mid (sl_H₀ R) (sl_H₁ R)) = α ^ 2) ↔ R = 2 * α) ∧
+      ((∀ c : ℝ × ℝ, ∀ ρ : ℝ, (sl_nsq (sl_mid (sl_H₁ R) (sl_H₂ R) - c) = ρ ^ 2 ∧
+          sl_nsq (sl_mid (sl_H₂ R) (sl_H₀ R) - c) = ρ ^ 2 ∧ sl_nsq (sl_mid (sl_H₀ R) (sl_H₁ R) - c) = ρ ^ 2) →
+          c = (0, 0) ∧ ρ ^ 2 = α ^ 2) ↔ R = 2 * α) ∧
+      (Real.sqrt (R ^ 2 - α ^ 2) = Real.sqrt 3 * α ↔ R = 2 * α) ∧
+      (4 * α ^ 2 - R ^ 2 = 0 ↔ R = 2 * α) := by
+  have hR0 : 0 < R := hα.trans_le hR
+  refine ⟨sl_hinge_arcsin hα hR, sl_hinge_tangent_mid hα hR0, ?_, (sl_tangent_height hα hR).2.2.2.2,
+    (sl_hinge_null hα hR).2⟩
+  constructor
+  · intro h
+    obtain ⟨-, hρ⟩ := h (0, 0) (R / 2) ((sl_ninepoint_unique hR0.ne' _ _).2 ⟨rfl, rfl⟩)
+    have := (sq_eq_sq₀ (by positivity) hα.le).mp hρ
+    linarith
+  · intro h c ρ hc
+    obtain ⟨hc0, hρ⟩ := (sl_ninepoint_unique hR0.ne' c ρ).1 hc
+    exact ⟨hc0, by rw [hρ, h]; ring⟩
+
+/-- **Row 12, `prop:flip`.** `θ(ψ) = π/2 + iψ` has `θ′ = i`, so the `dθ²` coefficient pulls back to `θ′² = −1`;
+`sin θ(ψ) = cosh ψ`, so `sin²θ` pulls back to `cosh²ψ`. The pulled-back form `−dψ² + cosh²ψ dΩ²` has one negative
+and one positive coefficient: signature `(−, +)`. -/
+theorem sl_flip (ψ : ℝ) :
+    HasDerivAt (fun t : ℝ => (π / 2 : ℂ) + (t : ℂ) * Complex.I) Complex.I ψ ∧ Complex.I ^ 2 = -1 ∧
+      Complex.sin (π / 2 + ψ * Complex.I) = Real.cosh ψ ∧
+      Complex.sin (π / 2 + ψ * Complex.I) ^ 2 = ((Real.cosh ψ ^ 2 : ℝ) : ℂ) ∧
+      (-1 : ℝ) < 0 ∧ 0 < Real.cosh ψ ^ 2 := by
+  have hs : Complex.sin (π / 2 + ψ * Complex.I) = Real.cosh ψ := by
+    rw [Complex.sin_add, Complex.sin_pi_div_two, Complex.cos_pi_div_two, Complex.cos_mul_I,
+      ← Complex.ofReal_cosh]; ring
+  refine ⟨?_, Complex.I_sq, hs, by rw [hs]; push_cast; ring, by norm_num, by positivity⟩
+  have := ((hasDerivAt_id ψ).ofReal_comp.mul_const Complex.I).const_add ((π / 2 : ℂ))
+  simpa using this
+
+end SlHinge
+
+section SlCurv
+open Real
+
+/-- The 2-metric `diag(ε, r(t)²)` on coordinates `(t, φ)`: `ε = +1` is `dl² + r(l)² dφ²`, `ε = −1` is the
+Lorentzian `−dψ² + ρ(ψ)² dφ²`. -/
+noncomputable def sl_g2 (ε : ℝ) (r : ℝ → ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
+  !![ε, 0; 0, r (y 0) ^ 2]
+
+/-- The Gaussian curvature of a 2-metric from the coordinate Riemann tensor, `K = R₀₁₀₁ / det g`. On campaign 110's
+hyperbolic plane `dl² + cosh² l dφ²` it is `−1` (`sl_gauss_hyperbolic`), and on the Lorentzian de Sitter piece
+`−dψ² + cosh²ψ dφ²` it is `+1` (`sl_curvature_dS`). -/
+noncomputable def sl_gauss (g : (Fin 2 → ℝ) → Matrix (Fin 2) (Fin 2) ℝ) (x : Fin 2 → ℝ) : ℝ :=
+  kr_Rlow g x 0 1 0 1 / (g x).det
+
+noncomputable def sl_g2I (ε : ℝ) (r : ℝ → ℝ) (y : Fin 2 → ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
+  !![1 / ε, 0; 0, 1 / r (y 0) ^ 2]
+
+/-- The Christoffel symbols of `diag(ε, r²)`: `Γ⁰₁₁ = −r r′/ε`, `Γ¹₀₁ = Γ¹₁₀ = r′/r`, the rest zero. -/
+noncomputable def sl_g2Γ (ε : ℝ) (r : ℝ → ℝ) (y : Fin 2 → ℝ) : Fin 2 → Fin 2 → Fin 2 → ℝ :=
+  ![![![0, 0], ![0, -(r (y 0) * deriv r (y 0)) / ε]],
+    ![![0, deriv r (y 0) / r (y 0)], ![deriv r (y 0) / r (y 0), 0]]]
+
+variable {ε : ℝ} {r : ℝ → ℝ}
+
+lemma sl_g2_inv (hε : ε ≠ 0) {y : Fin 2 → ℝ} (hy : r (y 0) ≠ 0) : (sl_g2 ε r y)⁻¹ = sl_g2I ε r y := by
+  refine Matrix.inv_eq_left_inv ?_
+  ext i j; fin_cases i <;> fin_cases j <;> simp [Matrix.mul_apply, sl_g2, sl_g2I] <;> field_simp
+
+lemma sl_g2_Γ (hε : ε ≠ 0) (hd : Differentiable ℝ r) {y : Fin 2 → ℝ} (hy : r (y 0) ≠ 0) (a b c : Fin 2) :
+    kr_Γ (sl_g2 ε r) y a b c = sl_g2Γ ε r y a b c := by
+  have hd2 : deriv (fun t => r t ^ 2) = fun t => 2 * r t * deriv r t := by
+    funext t
+    have h : HasDerivAt (fun t => r t ^ 2) (↑2 * r t ^ (2 - 1) * deriv r t) t := (hd t).hasDerivAt.pow 2
+    rw [h.deriv]; push_cast; ring
+  simp only [kr_Γ, sl_g2_inv hε hy]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [kr_pd, sl_g2, sl_g2I, sl_g2Γ, Function.update_apply, hd2]
+  all_goals field_simp
+
+/-- **Row 13a, generic.** For `g = diag(ε, r(t)²)` with `ε ≠ 0`, `r` differentiable, and `r′`
+differentiable at the point with derivative `r″`, `r ≠ 0` there: the Gaussian curvature is `K = −r″/(ε r)`. -/
+theorem sl_gauss_g2 (hε : ε ≠ 0) (hd : Differentiable ℝ r) {x : Fin 2 → ℝ} (hx : r (x 0) ≠ 0) {r2 : ℝ}
+    (h2 : HasDerivAt (deriv r) r2 (x 0)) :
+    sl_gauss (sl_g2 ε r) x = -r2 / (ε * r (x 0)) := by
+  have hU : ∀ᶠ y in 𝓝 x, r (y 0) ≠ 0 :=
+    ((hd.continuous.comp (continuous_apply 0)).continuousAt).eventually_ne hx
+  have e1 : kr_pd (fun y => kr_Γ (sl_g2 ε r) y 0 1 1) x 0 =
+      kr_pd (fun y : Fin 2 → ℝ => -(r (y 0) * deriv r (y 0)) / ε) x 0 :=
+    kr_pd_congr (hU.mono fun y hy => by rw [sl_g2_Γ hε hd hy]; simp [sl_g2Γ])
+  have e2 : kr_pd (fun y => kr_Γ (sl_g2 ε r) y 0 0 1) x 1 = kr_pd (fun _ => (0 : ℝ)) x 1 :=
+    kr_pd_congr (hU.mono fun y hy => by rw [sl_g2_Γ hε hd hy]; simp [sl_g2Γ])
+  have pd1 : kr_pd (fun y : Fin 2 → ℝ => -(r (y 0) * deriv r (y 0)) / ε) x 0 =
+      -(deriv r (x 0) ^ 2 + r (x 0) * r2) / ε := by
+    unfold kr_pd
+    simp only [Function.update_self]
+    have h : HasDerivAt (fun t => -(r t * deriv r t) / ε)
+        (-(deriv r (x 0) * deriv r (x 0) + r (x 0) * r2) / ε) (x 0) :=
+      (((hd (x 0)).hasDerivAt.mul h2).neg).div_const ε
+    rw [h.deriv]; ring
+  have g01 : sl_g2 ε r x 0 1 = 0 := by simp [sl_g2]
+  have g00 : sl_g2 ε r x 0 0 = ε := by simp [sl_g2]
+  unfold sl_gauss
+  simp only [kr_Rlow, Fin.sum_univ_two]
+  rw [g01, g00, zero_mul, add_zero]
+  unfold kr_Riem
+  rw [e1, e2, pd1, kr_pd_const]
+  simp only [Fin.sum_univ_two, sl_g2_Γ hε hd hx]
+  simp [sl_g2, sl_g2Γ, Matrix.det_fin_two]
+  field_simp
+  ring
+
+/-- Sanity: on a `ε = +1`, `r = cosh` surface (`dl² + cosh² l dφ²`, the hyperbolic plane) `K = −1`. -/
+theorem sl_gauss_hyperbolic (x : Fin 2 → ℝ) : sl_gauss (sl_g2 1 Real.cosh) x = -1 := by
+  have h2 : HasDerivAt (deriv Real.cosh) (Real.cosh (x 0)) (x 0) := by
+    rw [Real.deriv_cosh]; exact Real.hasDerivAt_sinh _
+  rw [sl_gauss_g2 one_ne_zero Real.differentiable_cosh (Real.cosh_pos _).ne' h2]
+  have := (Real.cosh_pos (x 0)).ne'
+  field_simp
+
+/-- **Row 13a, `prop:curvature`.** The slicing surface `dl² + r(l)² dφ²` has Gaussian curvature `−r″/r`; on the
+static region (`r′ = √f`, `f > 0`) that is `−f′/2r = 1 − M/r³` (gauge `α = 1`, `m = 2M`). -/
+theorem sl_curvature_static {m : ℝ} {r : ℝ → ℝ} (hr : ∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t)
+    {x : Fin 2 → ℝ} (hx : r (x 0) ≠ 0) (hpos : 0 < sl_f m (r (x 0))) :
+    sl_gauss (sl_g2 1 r) x = -(deriv (deriv r) (x 0)) / r (x 0) ∧
+      sl_gauss (sl_g2 1 r) x = 1 - (m / 2) / r (x 0) ^ 3 := by
+  have hd : Differentiable ℝ r := fun t => (hr t).differentiableAt
+  have h2 := sl_accel_pos hr (sl_f_hasDerivAt m hx) hpos
+  rw [sl_gauss_g2 one_ne_zero hd hx h2, h2.deriv]
+  refine ⟨by ring, ?_⟩
+  field_simp; ring
+
+/-- **The seam.** `dl = i dψ` turns `(dr/dl)² = f` into `(dr/dψ)² = −f`. -/
+theorem sl_seam_square (a f : ℂ) (h : a ^ 2 = f) : (a * Complex.I) ^ 2 = -f := by
+  rw [mul_pow, h, Complex.I_sq]; ring
+
+/-- **Added: the continued surface.** On the Lorentzian piece `−dψ² + ρ(ψ)² dφ²` with `(dρ/dψ)² = −f = |f|`
+(where `f < 0`), the Gaussian curvature is `ρ″/ρ = 1 − M/ρ³`: the same expression as on the static region, the
+analytic continuation of `1/α² − M/r³`, with no sign change at the seam. -/
+theorem sl_curvature_continued {m : ℝ} {ρ : ℝ → ℝ} (hρ : ∀ t, HasDerivAt ρ (Real.sqrt |sl_f m (ρ t)|) t)
+    {x : Fin 2 → ℝ} (hx : ρ (x 0) ≠ 0) (hneg : sl_f m (ρ (x 0)) < 0) :
+    sl_gauss (sl_g2 (-1) ρ) x = deriv (deriv ρ) (x 0) / ρ (x 0) ∧
+      sl_gauss (sl_g2 (-1) ρ) x = 1 - (m / 2) / ρ (x 0) ^ 3 := by
+  have hd : Differentiable ℝ ρ := fun t => (hρ t).differentiableAt
+  have h2 := sl_accel_neg hρ (sl_f_hasDerivAt m hx) hneg
+  rw [sl_gauss_g2 (by norm_num) hd hx h2, h2.deriv]
+  refine ⟨by field_simp, ?_⟩
+  field_simp; ring
+
+/-- **Added, the de Sitter member.** `θ = π/2 + iψ` carries `dθ² + sin²θ dφ²` to `−dψ² + cosh²ψ dφ²`
+(`sl_flip`), whose Gaussian curvature is the constant `1 = 1/α²`, the same as the round sphere's. -/
+theorem sl_curvature_dS (x : Fin 2 → ℝ) : sl_gauss (sl_g2 (-1) Real.cosh) x = 1 := by
+  have h2 : HasDerivAt (deriv Real.cosh) (Real.cosh (x 0)) (x 0) := by
+    rw [Real.deriv_cosh]; exact Real.hasDerivAt_sinh _
+  rw [sl_gauss_g2 (by norm_num) Real.differentiable_cosh (Real.cosh_pos _).ne' h2]
+  have := (Real.cosh_pos (x 0)).ne'
+  field_simp
+
+/-- Gluing at a stationary point, from the right: `s ↦ g(max s a)` is differentiable, with derivative
+`g′(max t a)`, when `g′(a) = 0`. -/
+lemma sl_max_deriv {g g' : ℝ → ℝ} {a : ℝ} (hg : ∀ t, HasDerivAt g (g' t) t) (ha : g' a = 0) (t : ℝ) :
+    HasDerivAt (fun s => g (max s a)) (g' (max t a)) t := by
+  rcases lt_trichotomy t a with h | rfl | h
+  · rw [max_eq_right h.le, ha]
+    refine (hasDerivAt_const t (g a)).congr_of_eventuallyEq ?_
+    filter_upwards [Iio_mem_nhds h] with s (hs : s < _)
+    simp [max_eq_right hs.le]
+  · rw [max_self, ← hasDerivWithinAt_univ, ← Set.Iic_union_Ici]
+    refine HasDerivWithinAt.union ?_ ?_
+    · rw [ha]
+      exact ((hasDerivAt_const t (g t)).hasDerivWithinAt).congr (fun s (hs : s ≤ t) => by simp [max_eq_right hs])
+        (by simp)
+    · exact ((hg t).hasDerivWithinAt).congr (fun s (hs : t ≤ s) => by simp [max_eq_left hs]) (by simp)
+  · rw [max_eq_left h.le]
+    refine (hg t).congr_of_eventuallyEq ?_
+    filter_upwards [Ioi_mem_nhds h] with s (hs : _ < s)
+    simp [max_eq_left hs.le]
+
+/-- Gluing at a stationary point, from the left: `s ↦ g(min s b)`. -/
+lemma sl_min_deriv {g g' : ℝ → ℝ} {b : ℝ} (hg : ∀ t, HasDerivAt g (g' t) t) (hb : g' b = 0) (t : ℝ) :
+    HasDerivAt (fun s => g (min s b)) (g' (min t b)) t := by
+  rcases lt_trichotomy t b with h | rfl | h
+  · rw [min_eq_left h.le]
+    refine (hg t).congr_of_eventuallyEq ?_
+    filter_upwards [Iio_mem_nhds h] with s (hs : s < _)
+    simp [min_eq_left hs.le]
+  · rw [min_self, ← hasDerivWithinAt_univ, ← Set.Iic_union_Ici]
+    refine HasDerivWithinAt.union ?_ ?_
+    · exact ((hg t).hasDerivWithinAt).congr (fun s (hs : s ≤ t) => by simp [min_eq_left hs]) (by simp)
+    · rw [hb]
+      exact ((hasDerivAt_const t (g t)).hasDerivWithinAt).congr (fun s (hs : t ≤ s) => by simp [min_eq_right hs])
+        (by simp)
+  · rw [min_eq_right h.le, hb]
+    refine (hasDerivAt_const t (g b)).congr_of_eventuallyEq ?_
+    filter_upwards [Ioi_mem_nhds h] with s (hs : _ < s)
+    simp [min_eq_right hs.le]
+
+/-- The static de Sitter slicing curve, held at the horizons: `r(l) = sin(clamp l)`, `clamp` onto
+`[−π/2, π/2]`. It solves `r′ = √|f(r)|` for `f = 1 − r²` (`M = 0`) at every `l`. -/
+noncomputable def sl_W₁ (l : ℝ) : ℝ := Real.sin (max (min l (π / 2)) (-(π / 2)))
+
+/-- The continued de Sitter profile, held at the seam: `ρ(ψ) = cosh(max ψ 0)`. It solves `ρ′ = √|f(ρ)|` for
+`f = 1 − ρ²` at every `ψ`. -/
+noncomputable def sl_W₂ (ψ : ℝ) : ℝ := Real.cosh (max ψ 0)
+
+lemma sl_W₁_ode (t : ℝ) : HasDerivAt sl_W₁ (Real.sqrt |sl_f 0 (sl_W₁ t)|) t := by
+  set c := max (min t (π / 2)) (-(π / 2)) with hc
+  have hc1 : -(π / 2) ≤ c := le_max_right _ _
+  have hc2 : c ≤ π / 2 := max_le (min_le_right _ _) (by linarith [Real.pi_pos])
+  have hcos : 0 ≤ Real.cos c := Real.cos_nonneg_of_neg_pi_div_two_le_of_le hc1 hc2
+  have e : Real.sqrt |sl_f 0 (sl_W₁ t)| = Real.cos c := by
+    simp only [sl_W₁, sl_f, zero_div, sub_zero, ← hc]
+    rw [show 1 - Real.sin c ^ 2 = Real.cos c ^ 2 by linarith [Real.sin_sq_add_cos_sq c],
+      abs_of_nonneg (sq_nonneg _), Real.sqrt_sq hcos]
+  rw [e]
+  have h1 : ∀ u, HasDerivAt (fun s => Real.sin (max s (-(π / 2)))) (Real.cos (max u (-(π / 2)))) u :=
+    sl_max_deriv Real.hasDerivAt_sin (by rw [Real.cos_neg, Real.cos_pi_div_two])
+  have h2 := sl_min_deriv h1 (b := π / 2)
+    (by rw [max_eq_left (by linarith [Real.pi_pos]), Real.cos_pi_div_two]) t
+  exact h2
+
+lemma sl_W₂_ode (t : ℝ) : HasDerivAt sl_W₂ (Real.sqrt |sl_f 0 (sl_W₂ t)|) t := by
+  have hs : 0 ≤ Real.sinh (max t 0) := Real.sinh_nonneg_iff.mpr (le_max_right _ _)
+  have e : Real.sqrt |sl_f 0 (sl_W₂ t)| = Real.sinh (max t 0) := by
+    simp only [sl_W₂, sl_f, zero_div, sub_zero]
+    rw [show 1 - Real.cosh (max t 0) ^ 2 = -Real.sinh (max t 0) ^ 2 by
+        linarith [Real.cosh_sq_sub_sinh_sq (max t 0)],
+      abs_neg, abs_of_nonneg (sq_nonneg _), Real.sqrt_sq hs]
+  rw [e]
+  exact sl_max_deriv Real.hasDerivAt_cosh Real.sinh_zero t
+
+/-- **Non-vacuity, and the answer on the de Sitter member.** The hypotheses of `sl_curvature_static` and
+`sl_curvature_continued` are met: `sl_W₁` at `l = π/4` (static side, `f = 1/2 > 0`) and `sl_W₂` at `ψ = 1`
+(Lorentzian side, `f = −sinh² 1 < 0`). On both sides the Gaussian curvature is `1 = 1/α²`. -/
+theorem sl_curvature_witness :
+    sl_gauss (sl_g2 1 sl_W₁) ![π / 4, 0] = 1 ∧ sl_gauss (sl_g2 (-1) sl_W₂) ![1, 0] = 1 := by
+  have hq : max (min (π / 4) (π / 2)) (-(π / 2)) = π / 4 := by
+    rw [min_eq_left (by linarith [Real.pi_pos]), max_eq_left (by linarith [Real.pi_pos])]
+  have hr1 : sl_W₁ (π / 4) = Real.sqrt 2 / 2 := by rw [sl_W₁, hq, Real.sin_pi_div_four]
+  have hr1' : sl_W₁ (π / 4) ≠ 0 := by rw [hr1]; positivity
+  have hf1 : 0 < sl_f 0 (sl_W₁ (π / 4)) := by
+    rw [hr1]; simp only [sl_f, zero_div, sub_zero, div_pow, Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)]; norm_num
+  have hρ1 : sl_W₂ 1 = Real.cosh 1 := by rw [sl_W₂, max_eq_left zero_le_one]
+  have hρ1' : sl_W₂ 1 ≠ 0 := by rw [hρ1]; exact (Real.cosh_pos 1).ne'
+  have hf2 : sl_f 0 (sl_W₂ 1) < 0 := by
+    rw [hρ1]; simp only [sl_f, zero_div, sub_zero]
+    nlinarith [Real.cosh_sq_sub_sinh_sq (1 : ℝ), Real.sinh_pos_iff.mpr (zero_lt_one' ℝ)]
+  constructor
+  · have := (sl_curvature_static (m := 0) sl_W₁_ode (x := ![π / 4, 0]) (by simpa using hr1')
+      (by simpa using hf1)).2
+    rw [this]; simp
+  · have := (sl_curvature_continued (m := 0) sl_W₂_ode (x := ![1, 0]) (by simpa using hρ1')
+      (by simpa using hf2)).2
+    rw [this]; simp
+
+/-- A function with a non-zero derivative at a zero takes both signs arbitrarily close to it. -/
+lemma sl_sign_change_pos {f : ℝ → ℝ} {a d : ℝ} (hf : HasDerivAt f d a) (h0 : f a = 0) (hd : 0 < d) :
+    (𝓝[{x | 0 < f x}] a).NeBot ∧ (𝓝[{x | f x < 0}] a).NeBot := by
+  have hs := hasDerivAt_iff_tendsto_slope.mp hf
+  have hev : ∀ᶠ x in 𝓝[≠] a, 0 < slope f a x := hs.eventually (lt_mem_nhds hd)
+  have hR : ∀ᶠ x in 𝓝[>] a, 0 < f x := by
+    filter_upwards [nhdsWithin_mono a (fun x (hx : a < x) => (ne_of_gt hx)) hev, self_mem_nhdsWithin]
+      with x hx (hxa : a < x)
+    rw [slope_def_field, h0, sub_zero] at hx
+    exact (div_pos_iff_of_pos_right (sub_pos.mpr hxa)).mp hx
+  have hL : ∀ᶠ x in 𝓝[<] a, f x < 0 := by
+    filter_upwards [nhdsWithin_mono a (fun x (hx : x < a) => (ne_of_lt hx)) hev, self_mem_nhdsWithin]
+      with x hx (hxa : x < a)
+    rw [slope_def_field, h0, sub_zero] at hx
+    rcases div_pos_iff.mp hx with ⟨-, h⟩ | ⟨h, -⟩
+    · linarith
+    · exact h
+  exact ⟨(nhdsGT_neBot a).mono (le_inf nhdsWithin_le_nhds (le_principal_iff.mpr hR)),
+    (nhdsLT_neBot a).mono (le_inf nhdsWithin_le_nhds (le_principal_iff.mpr hL))⟩
+
+lemma sl_sign_change {f : ℝ → ℝ} {a d : ℝ} (hf : HasDerivAt f d a) (h0 : f a = 0) (hd : d ≠ 0) :
+    (𝓝[{x | 0 < f x}] a).NeBot ∧ (𝓝[{x | f x < 0}] a).NeBot := by
+  rcases hd.lt_or_gt with h | h
+  · obtain ⟨h1, h2⟩ := sl_sign_change_pos hf.neg (by simp [h0]) (neg_pos.mpr h)
+    have e1 : {x | 0 < -f x} = {x | f x < 0} := by ext; simp
+    have e2 : {x | -f x < 0} = {x | 0 < f x} := by ext; simp
+    simp only [Pi.neg_apply] at h1 h2
+    rw [e1] at h1; rw [e2] at h2
+    exact ⟨h2, h1⟩
+  · exact sl_sign_change_pos hf h0 h
+
+/-- `r″` read off as a function of `r` (`sl_accel_pos`/`neg`): `+½f′(r)` where `f > 0`, `−½f′(r)` elsewhere. -/
+noncomputable def sl_A (m r : ℝ) : ℝ :=
+  if 0 < sl_f m r then (m / r ^ 2 - 2 * r) / 2 else -((m / r ^ 2 - 2 * r) / 2)
+
+/-- **Row 1c, `prop:turning`.** Along `r′ = √|f(r)|`, `r″ = sl_A m r` wherever `f(r) ≠ 0`. At a simple root
+`r_h ≠ 0` (`3r_h² ≠ 1`), `f` takes both signs arbitrarily close to `r_h`; `r″ → +½f′(r_h)` as `r → r_h` from the
+side where `f > 0`, and `→ −½f′(r_h)` from the side where `f < 0`; and `f′(r_h) ≠ 0`. -/
+theorem sl_turning_limits {m rh : ℝ} (h0 : rh ≠ 0) (hc : sl_cubic m rh = 0) (hs : 3 * rh ^ 2 - 1 ≠ 0) :
+    (∀ r : ℝ → ℝ, (∀ t, HasDerivAt r (Real.sqrt |sl_f m (r t)|) t) → ∀ l, r l ≠ 0 → sl_f m (r l) ≠ 0 →
+        HasDerivAt (deriv r) (sl_A m (r l)) l) ∧
+      (𝓝[{x | 0 < sl_f m x}] rh).NeBot ∧ (𝓝[{x | sl_f m x < 0}] rh).NeBot ∧
+      Tendsto (sl_A m) (𝓝[{x | 0 < sl_f m x}] rh) (𝓝 ((m / rh ^ 2 - 2 * rh) / 2)) ∧
+      Tendsto (sl_A m) (𝓝[{x | sl_f m x < 0}] rh) (𝓝 (-((m / rh ^ 2 - 2 * rh) / 2))) ∧
+      (m / rh ^ 2 - 2 * rh) / 2 ≠ 0 := by
+  have hm : m = rh - rh ^ 3 := by unfold sl_cubic at hc; linarith
+  have hD : m / rh ^ 2 - 2 * rh ≠ 0 := by
+    rw [hm]; field_simp
+    intro h; apply hs
+    have := (div_eq_zero_iff.mp h).resolve_right h0
+    linarith
+  have hf0 : sl_f m rh = 0 := by
+    have := (sl_turning m h0).1; rw [hc, neg_zero] at this
+    exact (mul_eq_zero.mp this).resolve_left h0
+  obtain ⟨hP, hN⟩ := sl_sign_change (sl_f_hasDerivAt m h0) hf0 hD
+  have hcont : ContinuousAt (fun x : ℝ => (m / x ^ 2 - 2 * x) / 2) rh :=
+    ((continuousAt_const.div (continuousAt_id.pow 2) (pow_ne_zero 2 h0)).sub
+      (continuousAt_const.mul continuousAt_id)).div_const 2
+  refine ⟨?_, hP, hN, ?_, ?_, div_ne_zero hD two_ne_zero⟩
+  · intro r hr l hl hne
+    rcases hne.lt_or_gt with h | h
+    · have := sl_accel_neg hr (sl_f_hasDerivAt m hl) h
+      have hn : ¬ 0 < sl_f m (r l) := not_lt.mpr h.le
+      unfold sl_A; simp only [hn, ↓reduceIte]
+      exact this.congr_deriv (by ring)
+    · have := sl_accel_pos hr (sl_f_hasDerivAt m hl) h
+      unfold sl_A; simp only [h, ↓reduceIte]
+      exact this
+  · refine (hcont.tendsto.mono_left nhdsWithin_le_nhds).congr' ?_
+    filter_upwards [self_mem_nhdsWithin] with x (hx : 0 < sl_f m x)
+    unfold sl_A; simp only [hx, ↓reduceIte]
+  · refine ((hcont.tendsto.neg).mono_left nhdsWithin_le_nhds).congr' ?_
+    filter_upwards [self_mem_nhdsWithin] with x (hx : sl_f m x < 0)
+    have hn : ¬ 0 < sl_f m x := not_lt.mpr hx.le
+    unfold sl_A; simp only [hn, ↓reduceIte]
+
+end SlCurv
+
+end ShadowProbe.SlicingCurvatureProbe
+end SlCopy
+
+namespace ShadowProbe.GroupoidProbe
+
+open Filter Topology
+
+/-- **Row 10, the divergence.** The static slicing surface's curvature `K_G = 1 − (m/2)/r³` (`α = 1`, `m = 2M`,
+`sl_curvature_static`) tends to `−∞` as `r → 0⁺` whenever `M > 0`. -/
+theorem gp_KG_diverges {m : ℝ} (hm : 0 < m) :
+    Tendsto (fun r : ℝ => 1 - (m / 2) / r ^ 3) (𝓝[>] 0) atBot := by
+  have h3 : Tendsto (fun r : ℝ => r ^ 3) (𝓝[>] 0) (𝓝[>] 0) := by
+    refine tendsto_nhdsWithin_of_tendsto_nhds_of_eventually_within _ ?_ ?_
+    · have := ((continuous_pow 3).tendsto (0 : ℝ)); simpa using this.mono_left nhdsWithin_le_nhds
+    · filter_upwards [self_mem_nhdsWithin] with r (hr : 0 < r) using pow_pos hr 3
+  have hinv : Tendsto (fun r : ℝ => (r ^ 3)⁻¹) (𝓝[>] 0) atTop := tendsto_inv_nhdsGT_zero.comp h3
+  have hq : Tendsto (fun r : ℝ => (m / 2) / r ^ 3) (𝓝[>] 0) atTop := by
+    simpa [div_eq_mul_inv] using hinv.const_mul_atTop (by positivity : (0 : ℝ) < m / 2)
+  simpa [sub_eq_add_neg] using tendsto_atBot_add_const_left _ 1 (tendsto_neg_atTop_atBot.comp hq)
+
+end ShadowProbe.GroupoidProbe
+
 #print axioms ShadowProbe.GroupoidProbe.gp_act_injective
 #print axioms ShadowProbe.GroupoidProbe.gp_closure_top
 #print axioms ShadowProbe.GroupoidProbe.gp_act_range
@@ -1400,3 +2920,11 @@ end ShadowProbe.GroupoidProbe
 #print axioms ShadowProbe.GroupoidProbe.gp_monodromy_swaps
 #print axioms ShadowProbe.GroupoidProbe.gp_deck_trivial
 #print axioms ShadowProbe.GroupoidProbe.gp_not_normal
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_σ_sin
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_σ_σ
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_σ_fixed
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_nariai
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_flip
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_curvature_static
+#print axioms ShadowProbe.SlicingCurvatureProbe.sl_curvature_witness
+#print axioms ShadowProbe.GroupoidProbe.gp_KG_diverges

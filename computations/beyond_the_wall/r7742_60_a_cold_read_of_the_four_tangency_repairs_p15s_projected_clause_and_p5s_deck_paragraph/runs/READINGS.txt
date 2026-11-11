@@ -1,0 +1,47 @@
+====================================================================================================
+  Ⓐ  THE FOUR P3 SENTENCES -- against my draft AND against the object
+====================================================================================================
+[PASS] Ⓐ① all four landed sentences are present at source, raw AND flattened (G6)
+          raw offsets {'①': 47113, '②': 60797, '③': 65771, '④': 157159}; flattened found 4/4; lines {'①': 363, '②': 481, '③': 516, '④': 905}
+[PASS] Ⓐ② each landed sentence DIFFED against the draft I wrote at r7740, and the differences printed rather than counted
+          spans read to each sentence's OWN END; byte-identical to my draft: 3 ['①', '③', '④']; differing: 1 ['②'].  ② as drafted ended '(sl_σ_second states that equivalence)'; as landed it folds into the existing citation list instead -- and the list does cite sl_σ_second.  ⇒ 69's edit REMOVES a duplicate citation my draft would have added, which is better than what I wrote
+[PASS] Ⓐ③ ①'s four claims hold, each decided from the closed form: 2 distinct positive and 1 negative inside, the LIKE-signed pair merging at the boundary, and only the OPPOSITE-signed root real beyond it
+          the exact chain: {'disc > 0 on the open interval': True, 'e3 = -2M != 0 there, so no root is zero': True, 'e1 = 0, so the roots cannot share a sign': True} ⇒ with three distinct real roots, product -2M < 0 forces an ODD count negative, and three negative contradicts sum 0, so exactly one is negative.  Witness over 39 interior designations: (real, positive, negative, disc>0) = [(3, 2, 1, True)], smallest pairwise root gap 1.492e-1 ⇒ no near-tangency is being read as a coincidence.  AT the boundary: {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- the POSITIVE pair is the merged one, like-signed as ① says.  BEYOND it (2M = 2x Nariai): 1 real root, -1.267759200, negative ⇒ opposite-signed; and f(-1/sqrt3) = 2*sqrt(3)/3 > 0 with f -> -inf, so the root lies below -1/sqrt3 exactly as the clause requires
+[PASS] Ⓐ④ ②'s added clause is true of sl_σ_second as that theorem is STATED, read off the declaration and not from the paper
+          sl_σ_second's own statement carries '∀ x, 0 ≤ x → x < 1 → ... ∧ (sl_σ x = x ↔ x = 1 / Real.sqrt 3)', which is exactly '[0,1)' and 'r_0 itself exactly at r_0 = 1/sqrt3'; statement length 257 chars, bounded at the ':= by' that begins the proof.  And 'and its fixed point and endpoint values' is 69's addition, carried by sl_σ_fixed in the same list ⇒ the citation reads NEITHER weaker nor stronger than its source.  ⛔ My first cut tested for the bare name 'sl_σ_fixed' in a LaTeX file that escapes it as 'sl\_$\sigma$\_fixed' -- the container's markup a third time
+[PASS] Ⓐ⑤ ③ and ④ are true of the LOCUS and not merely of the cubic: the diagonal r = r0 meets the ellipse at EXACTLY r0 = ±1/sqrt3, and the coincidence is of a DIAGONAL point with an ELLIPSE point
+          substituting r = r0 into r^2 + r*r0 + r0^2 = 1 gives 3*r0^2 = 1, so the two components meet at exactly 2 values, ['-sqrt(3)/3', 'sqrt(3)/3'].  At r0 = 1/sqrt3 the ellipse's own two roots are ['-2*sqrt(3)/3', 'sqrt(3)/3'] = [-1.154700538, 0.577350269]: DISTINCT from each other, and one of them equals the diagonal root 1/sqrt3 ⇒ the coinciding pair is diagonal-with-ellipse, as both sentences say, and NOT two ellipse points
+[PASS] Ⓐ⑥ the four repairs left NO twin: every interval-and-count sentence in the corpus now carries an exception clause or states the degeneracy itself
+          candidates read 10 in 4 file(s); of those, 5 quantify over an interval that CONTAINS a designation and 5 do not (['no interval this read can parse as containing a designation', 'strict in the dimensionless mass: the degenerate set is the boundary']); sentences that owe an exception and lack one: 0 [].  The predicate's own controls: a bare |r0|<2/sqrt3 count -> owes True; a strict dimensionless-mass count -> owes False
+
+====================================================================================================
+  Ⓑ  P15's PARAGRAPH WITH DRAFT (a) IN PLACE
+====================================================================================================
+[PASS] Ⓑ① draft (a) landed verbatim, and it is in the clause that needed it
+          (a) present raw: True; identical to the draft in r7740's RESULT.md: True; the leg it had to match is still 'exchanging their sources together with their distance maps': True
+[PASS] ⛭ Ⓑ② the framing clause now names the SAME object the leg exchanges, which is the whole of what (a) was for -- and the narrower wording is GONE
+          the clause names 'the distance maps' and so does the leg, so the concession now isolates what the clause promises; the superseded narrower wording 'not about their difference once it is projected' occurs 0 time(s) -- the r7732 ⑤ twin check, applied to my own repair
+[PASS] Ⓑ③ the partition survives (a): four stems in order, classifier 0 of 4 real and 2 of 2 fabricated flagged (G4)
+          stem offsets {'location': 189676, 'presence': 190122, 'structure': 190719, 'size': 191241}, in order; real stems read 4, flagged 0; fabricated read 2, flagged 2
+[PASS] Ⓑ④ every figure is unmoved and still carries the right KIND, re-measured against the receipt's own pinned constants
+          amplitude on the rms fractions and variance on the variance share, each on its own figure; variance share 93.56 % as printed, amplitude share 77.6 % as not; the finer binning is the primary by the receipt's own identity 1450 = 120*12 + 10 = 63*23 + 1 (120 bins against 63)
+
+====================================================================================================
+  Ⓒ  P5's NEW FORMAL PARAGRAPH -- does it say what each theorem states, and no more
+====================================================================================================
+[PASS] Ⓒ① every name the paragraph cites is a DECLARATION, and a name that is not there is not found (G5)
+          cited 5; undeclared 0 []; the negative control returns 0
+[PASS] Ⓒ② each of the five clauses is matched to its own declaration's STATEMENT, bounded at the ':= by' that begins the proof
+          gp_nariai_simple: clause present True, statement carries it True; gp_monodromy_swaps: clause present True, statement carries it True; monodromy_surjective: clause present True, statement carries it True; gp_deck_trivial: clause present True, statement carries it True; gp_not_normal: clause present True, statement carries it True
+[PASS] ⛭ Ⓒ③ THE REGISTERED RISK DID NOT FIRE, and the paragraph is right where it could easily have been wrong: 'simple' is said of the DISCRIMINANT's zero and never of the roots
+          at the Nariai value the CUBIC's roots are {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2} -- 2 distinct of 3, so a 'simple roots' claim there would be FALSE; the paragraph says 'simple zero of Δ' with dΔ/d(2M) = -54(2M) ≠ 0, which is what the theorem states and is true.  Occurrences of 'simple root' in the paragraph: 0
+[PASS] ⛭ Ⓒ④ and the negative is not over-generalised: the paragraph states the three facts the theorem carries and marks the step to 'not normal' as an INFERENCE with 'so'
+          the theorem's three conjuncts are |range| = 6, |fibre| = 3, and an h in the range with h ≠ 1 and h e₀ = e₀; the paragraph prints all three and reaches 'not normal' through 'so', so the conclusion is presented as drawn and not as checked
+[PASS] ⛭ Ⓒ⑤ and gp_deck_trivial's HYPOTHESIS is in the prose, not dropped: the clause is about permutations that commute with EVERY monodromy permutation, which is the theorem's binder
+          the declaration's hypothesis is the universally quantified commutation, and the prose says 'every monodromy permutation'; the paragraph does NOT say 'the deck group is trivial' of this theorem, and it names the bridge separately: True
+[PASS] ⛔ Ⓒ⑥ THE FINDING: the clause 'the monodromy group is all of $S_{3}$' cites monodromy_surjective, which is surjectivity onto the symmetric group OF THE FIBRE -- the declaration that actually delivers S_3 is monodromyGroup_equiv_S3, and the paragraph does not name it
+          monodromy_surjective's statement is 'Function.Surjective (proj_isCoveringMap.monodromyPerm x₀)', whose codomain is the fibre's own permutation group; monodromyGroup_equiv_S3 is declared (1 declaration(s)) and is the one that exhibits the isomorphism to Equiv.Perm (Fin 3); occurrences of its name in P5: 0.  The step from 'all of Perm(fibre)' to 'all of S_3' needs |fibre| = 3, which the paragraph does carry -- but attached to the LATER clause, as gp_not_normal's 'three-point fibre', not to this one
+[PASS] ⛔ Ⓒ⑦ AND THE TWO CITED DECLARATIONS USE TWO DIFFERENT COORDINATES FOR THE SAME LOCUS, which the paragraph presents as one
+          the paragraph says 'the cover of the $2M$-plane with the two Nariai values removed' and gives Δ = 4 − 27(2M)²; monodromy_surjective's own docstring says the base is the punctured mass line 27M² = 1 based at M = 0.  The two agree exactly -- 27*(Nariai/2)^2 − 1 = 0, since 2M = ±2/(3√3) is M = ±1/(3√3) -- so this is a SCALING the reader must supply, not an error: one cited declaration is stated in 2M and the other in M, and the paragraph names only the 2M plane
+
+17 arms, 17 PASS, 0 FAIL

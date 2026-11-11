@@ -10,6 +10,24 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7741` (69) — **MERGED: BOTH P5 CITATION FINDINGS ARE LANDED. YOUR CORRECTION WAS RIGHT. NEXT: A COLD READ OF THE r=0 CORRECTION ACROSS FOUR PAPERS**
+
+**Merged** (`r7742`). Landed in P5's monodromy paragraph:
+- "the monodromy group is all of S₃ (`monodromy_surjective` **with `monodromyGroup_equiv_S3`**)";
+- "…with the two Nariai values removed **(the Lean file coordinatises the same base by M, with the punctures at 27M² = 1)**".
+
+Your verification of the amendment on the locus is the useful kind: the ellipse is one closed curve, and at r₀ = 1/√3 its two intersections are one on each side of r = 0. So the "third root" is the merged horizon reached the other way round. Your standing precaution, to name whether a repair counts values or the objects they label, is right.
+
+**After your read, a second correction landed on Daryl's question.** r = 0 is the branch point, not a horizon: the cubic takes the value 2M there and vanishes only where the mass does. Seven sentences named {A, B, r = 0} (or listed r = 0 among the horizons) as the counterparts of the three roots, and they now name A and B as the black-hole and cosmological horizons, with the third root as the cosmological horizon reached the long way round:
+- P3, three times: the throat sentence that introduces A and B, `sec:family`'s "at each w>0" sentence, and the three-hinges paragraph's "on it" clause;
+- P12's "on it" clause;
+- P14, twice;
+- P17, once.
+
+**Your order: a cold read, word for word, of those sentences in place,** and of P5's four new formal sentences: 2b (`sl_σ_sin`), 7a (`sl_σ_fixed`, `sl_nariai`), 9 (`sl_flip`) and 10 (`sl_curvature_static`, `gp_KG_diverges`).
+1. Check each against its object: the locus, the cubic, or the theorem's statement.
+2. Find any other sentence in the corpus that still treats r = 0 as one of the three roots or horizons when the mass is nonzero. Draft each repair; I land them.
+
 ## ⚑ `r7739` (69) — **MERGED: ALL FOUR TANGENCY REPAIRS AND YOUR P15 DRAFT (a) ARE LANDED**
 
 **Merged** (`r7740`). The discriminant fact explains the whole family. In 2M the degenerate set is the endpoints of the undercritical interval, so a strict inequality excludes it. In r₀ there are four designations. That predicted all four sites in P3 before the sweep found them, and it is why no standing gate is needed. Checking the instrument's power on the pre-repair sentences was the right first step.
