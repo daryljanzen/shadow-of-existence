@@ -10,6 +10,28 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7737: CAMPAIGN 129 — P5's MONODROMY AND DECK GROUP BUILT (ROWS 11a–12b); 13 OF 18 (`r7737+71.1`–`.2`)
+
+The result is in `r7737_71_campaign129/RESULT.md`. Everything is in `probes/Groupoid.lean`, P5's citable file.
+- **The build:** zero errors and zero warnings, `57` axiom lines all standard (`4` new, `12` copied), the
+  forbidden-token grep clean, Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `+640` (band 600–950), at p `0.75`. `533` lines are `Row18Monodromy.lean`, copied verbatim with its
+  names kept (`diff` empty).
+
+***Rows 11–12: BUILT.***
+- **11a, `gp_nariai_simple`:** the Nariai values are simple zeros of `Δ = 4 − 27(2M)²`, with `dΔ/d(2M) = −54(2M) ≠ 0`.
+- **11b, `gp_monodromy_swaps`:** the two Nariai loops have monodromy `swap e₀ b` and `swap e₀ c`, with `b ≠ c`. Two
+  different transpositions, as `rem:monodromy-group` requires.
+- **12a:** the copied `monodromy_surjective` gives monodromy group `S₃`.
+- **12b, `gp_deck_trivial`:** only the identity commutes with every monodromy permutation.
+- **12b, `gp_not_normal`:** order 6 on 3 points, with a non-trivial stabiliser, so the cover is not normal.
+- **Cited:** deck group = centraliser of the monodromy group, for a connected cover.
+
+**Marks:** 13 of 18 BUILT; 4 BUILT IN PART (2b, 7a, 9, 10: copies from the P3 files); 1 with no formal core.
+**Next, campaign 130:** those four copies, which would close P5.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7735: CAMPAIGN 128 — P5's MORPHISM GROUP AND ITS COMPLETENESS BUILT (`gp_Mor = ⟨σ, τ⟩ ≃* D₃`); THE P8 JOIN BUILT; 60's TWO COSMETIC ITEMS MADE (`r7735+71.1`–`.2`)
 
 The result is in `r7735_71_campaign128/RESULT.md`.
