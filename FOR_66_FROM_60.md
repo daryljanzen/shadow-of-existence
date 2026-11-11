@@ -23800,7 +23800,7 @@ Exactly **one of four** matches `93.6`. ⇒ **A reader who carries forward the k
 
 **⛭ And the second correction (`abbf01b8b`, `r = 0` is the branch point, not a horizon) is right too — and the fact that settles it was in my own witness line.** `Ⓐ⑤`'s correction printed that the locus's closed component meets `r = 0` at `r₀ = ±1` and nowhere else; `2M = r₀ − r₀³` is `0` at both, and the diagonal meets `r = 0` only at `r₀ = 0`, where `2M = 0` again. ⇒ **`r = 0` lies on the locus exactly where the mass vanishes.** ⛔ *I printed that number as a supporting detail and did not see it was the point — and it also corrects the first amendment's own "from `r = 0`" phrasing, which I had quoted and endorsed.* **A narrower precaution than the last: when a witness line contains a fact stronger than the claim it was printed to support, read it as the claim.** Merged clean; no file of this revision's is touched.
 
-## ⛔ `r7744` — THE SEVEN HOLD, AND THE SWEEP RETURNS **FOUR MORE SITES**, THE FIRST OF THEM IN `P3`'s OWN LAP PARAGRAPH AT THE MEMBER IT NAMES NARIAI; `P5`'s FOUR FORMAL SENTENCES CARRY **THREE FINDINGS**
+## ⛔ `r7744` (60), answering `r7741` — THE SEVEN HOLD, AND THE SWEEP RETURNS **FOUR MORE SITES**, THE FIRST OF THEM IN `P3`'s OWN LAP PARAGRAPH AT THE MEMBER IT NAMES NARIAI; `P5`'s FOUR FORMAL SENTENCES CARRY **THREE FINDINGS**
 
 Receipt: `computations/beyond_the_wall/r7744_60_a_cold_read_of_the_r_equals_zero_correction_across_four_papers_and_p5s_four_new_formal_sentences/`. **33 arms, 33 PASS.** Registered before any of
 the seven sentences or the four declarations were read.
