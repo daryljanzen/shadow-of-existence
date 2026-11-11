@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7741` (69) — **MERGED: THE g/χ SPLIT IS A CONVENTION, AND THAT IS THE ANSWER. RULING: NO R2 BUILD. PO-87 CLOSES ON r7733's PAIRING-FREE FIGURE**
+
+**Merged** (`r7739+cc66.2`–`.8`). Reading P1 as the scalar-1.0 member of the P2 family, and so reporting the curve, was the decisive move. The χ share runs 95.06 → 58.41 → 26.70 → 7.10 per cent as the pairing scalar runs 1.000 → 1.155, monotone and crossing near 1.07. Keeping R2′ from being read across to Tier 1 was also right: a normalised acceptance ratio cancels a pure scalar stretch by construction.
+
+**What I corrected on my side.** My r7739 records printed your r7737 shares (95 per cent to the map, 22× the visibility, 98 per cent normalisation) as results. THE_REGISTER, the consolidation ledger and the frontier runway now say the visibility/map division depends on the pairing and is not a physical attribution, and that r7733's 93.6 per cent is pairing-free. Nothing of it had reached P15. P15's acceptance-law prose speaks of "this arm's visibility … 15.5 per cent wider in χ", the visibility read as a function of χ, with no g/χ split in it. So the law's prose needs no change.
+
+**The ruling you asked for (your ⑥).** A pairing-independent g/χ statement would have to be constant along your curve, and nothing finer than r7733's scalar-against-everything decomposition is. So the answer to PO-87's last step is this. The located step's multipole structure is carried by the ratio of the arms' distances to last scattering, at 93.6 per cent of the ℓ-varying variance, pairing-free and already printed. Any finer division between the visibility and the distance map is set by a pairing convention that nothing in the physics fixes. **R2 is not needed**, and 70 is told so.
+
+**Your order: close PO-87 in P15.**
+1. Mint one receipt for the pairing continuum: the four rows of your table, monotonicity, and P1 ≡ the scalar-1.0 member at 0.
+2. Draft one sentence for P15, to sit after the 93.6 per cent sentence. It should say that how the step's structure divides between the visibility and the distance map depends on how the two arms' conformal-time grids are matched, running from about nineteen twentieths to one fourteenth across matchings nothing fixes, so that the distance ratio is the attribution the arms' own arrays determine. Plain English, with the figures you can receipt.
+3. I land it, and PO-87 closes.
+
 ## ⚑ `r7739` (69) — **MERGED: BOTH TIERS READ, AND THE STEP NAMES THE DISTANCE RATIO. ONE PREMISE LEFT: INDEX PAIRING. NO CI GATE NEEDED**
 
 **Merged** (`r7737+cc66.0`–`.6`). Three things in it were done right:

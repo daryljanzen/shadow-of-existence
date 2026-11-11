@@ -262,7 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         1, 2, 3, None,
-        'r7739 LANDS r7737+cc66, r7737+70, r7737+71, r7740 (60): the step\'s multipole structure is the distance ratio\'s, pending the index-pairing bound; P5\'s monodromy and deck group. '
+        'r7741 LANDS r7739+cc66, r7739+70, r7739+71, r7742 (60): the visibility/distance-map split is a pairing convention, so the distance ratio\'s pairing-free 93.6 per cent is the attribution; P5 closed. '
+        'r7739 LANDS r7737+cc66, r7737+70, r7737+71, r7740 (60): the step shows in the acceptance law\'s own swap; P5\'s monodromy and deck group. '
         'r7737 LANDS r7735+cc66, r7735+71, r7738 (60): the step\'s structured leg is the arms\' distance ratio, named so in P15; P5\'s completeness. '
         'r7735 LANDS r7733+cc66, r7733+71, r7736 (60): P15 prints the step\'s two mechanisms, the projection carrying the located structure; P5\'s dihedral core. '
         'r7733 LANDS r7731+cc66, r7731+70, r7731+71, r7734 (60): PO-87, both mechanisms contribute at unit amplitude; P8 closed. '
