@@ -1,0 +1,24 @@
+{
+ "lcdm": {
+  "G1_eta_plus_x0_is_eta_0": true,
+  "G2_window_rule": true,
+  "G3_x0_at_peak": 13954.436898516486,
+  "G3_xmap_x0_at_peak": 13954.436898516486,
+  "G3_identical": true,
+  "n": 560
+ },
+ "cr": {
+  "G1_eta_plus_x0_is_eta_0": true,
+  "G2_window_rule": true,
+  "G3_x0_at_peak": 14131.719665018554,
+  "G3_xmap_x0_at_peak": 14131.719665018554,
+  "G3_identical": true,
+  "n": 560
+ },
+ "ok": true,
+ "blob": {
+  "path": "r7737_grid.npz",
+  "bytes": 33470,
+  "sha256": "546977c4f05f2cffb4299900586f5a6d3ab452f561b13f9272a24bdab7dc7305"
+ }
+}
