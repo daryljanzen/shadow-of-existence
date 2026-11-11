@@ -15,6 +15,91 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7737+cc66` — **BOTH TIERS LANDED AND ARE READ. `PO-87`'s LAST STEP CLOSES: THE TERM IS THE RATIO OF THE ARMS' DISTANCES TO LAST SCATTERING — NOT THE VISIBILITY, WHICH IS THE TERM THE LAW'S OWN PROSE POINTS AT**
+
+70 delivered **both** tiers at once and both closures pass. Registered at `.0` **before either build
+existed**, so every licence below is a number from that commit.
+
+### ⛭⛭ ① THE ANSWER — TWO MEASUREMENTS JOINED
+
+| | |
+|---|---|
+| does the located transition show in the law's own swap? (`B0`, a precondition that could have failed) | **yes**, `p ≤ 5.0e-05` at all three half-widths, `0` of `20 000` surrogates reaching it |
+| which named term carries its multipole structure? | **the distance map** — `95.06` per cent of the three summed, `22.5×` the visibility's, `134×` the comb period's |
+| and within the map, shape or normalisation? | **the normalisation**, `98.3` and `97.3` per cent of the distance leg's multipole structure |
+
+⇒ *** It closes on **the ratio of the arms' distances to last scattering** — the single scalar `r7735`
+found the leg to be. The visibility carries `0.03` per cent of the located step's multipole structure
+and the comb period `0.00`. *** ⌗ *Two independent routes to the same object: reading the builder found
+the leg was one scalar; measuring the law finds that that scalar is what carries the step.*
+
+### ② `r7735`'s ③ NARROWS, AND THE NARROWING IS THE SHAPE/SIZE DISTINCTION AGAIN
+
+`R_shape` is **`0.3906`** and **`0.4876`** — between the registered `0.20` and `0.80` on both
+binnings, so the branch written for that case fires: ③ **narrows and does not close** on size.
+But the multipole structure is decided: **in size the map swap is genuinely two terms (shape is two
+fifths to a half of it); in multipole structure it is the normalisation at `98.3` per cent.** *A term
+can be large and carry no location — the third time this line has turned on that.*
+
+⛭ **AND YOUR `P15` SENTENCE SURVIVES AS PRINTED.** The registered line was the normalisation holding
+`≥ 0.80` of the leg; it holds `0.983`. And the whole distance leg's share is `93.6` per cent here —
+**the printed figure, from a different build.**
+
+### ⛔ ③ ONE REGISTERED CHECK FAILED, AND THE REASON MATTERS MORE THAN THE FAILURE
+
+The three amplitudes came back `+0.3639`, `+0.9663`, `+0.5721` — only the map near unity, so `B1b`
+failed. **Before calling that a finding I measured the fit's conditioning against our own standing
+threshold** (`|r| ≤ 0.70`, `VIF ≤ 2.0`): the visibility against the map is **`−0.9838`, VIF `31`**, and
+all three pairs are over. ⇒ *** The three-term fit fails the standing threshold. The amplitudes are
+numerically determined — each over a hundred sd from unity — but **determined and interpretable are
+different things**: at `|r| = 0.98` the fit moves shape between the terms almost freely. ***
+
+⇒ **So the shares are not the evidence.** The evidence is fit-free: the multipole-structured rms of
+each single swap, no amplitude anywhere — the map's is `22×` the visibility's, so for the visibility to
+carry the map's contribution it would need an amplitude near `22`. And at unit amplitudes the share
+reads `110.9` against the fitted `104.2`: **different digits, same conclusion**, which is how a result
+that survives its own fit's degeneracy behaves.
+
+### ⚠ ④ A RETENTION FINDING, DELIBERATELY KEPT APART FROM THE STEP
+
+70 shipped the widths for all eight settings, which I had not asked for. Decomposing the **acceptance
+width** — the quantity the law credits with the retention — swapping the visibility alone moves it
+**`+0.44`** per cent and swapping the map alone **`−12.77`**.
+
+⇒ **The narrowing behind the retention is the map's, not the visibility's own duration.** Your printed
+reading — *a wider `chi`-extent narrows the acceptance, this arm's visibility is `15.5` per cent wider
+in `chi`, and that is why it retains more* — is intact, and 70's closure reproduces that `15.5` per
+cent independently (`+15.55`). What this adds is **what widens the `chi`-extent: the map, not the
+visibility's extent in time.**
+
+⛔ ⚠ *This is about the RETENTION and says nothing about the located step. Joining the two would be
+the fault this session keeps finding, and the temptation here was real.*
+
+### ⛔ ⑤ WHAT I COULD NOT MEASURE — AND ONE SMALL THING FROM 70 CLOSES IT
+
+* **`S1` not computed**: the blob has no `x0` or `eta` arrays, only `x0_at_peak` as two scalars. Their
+  ratio `1.0127044` sits `1.6e-04` from the distance ratio — **at one point, which is a point and not
+  the map.** Not replaced by a substitute statistic.
+* **`S5` has no subject**: it asked how far the answer moves under a second interpolation, and 70
+  declares the pairing as **grid index** — there is no interpolation. ⛔ **And index pairing carries
+  the one unmeasured premise left under Tier 1: that the arms' time grids are comparable index by
+  index. 70's `C5` cannot test it, because `C5` swaps in the source arm's own map, where any pairing
+  is the identity.** Named rather than assumed.
+
+**⇒⇒ FOR 70: add the two `x0(eta)` arrays and the two `eta` grids to the blob — a few hundred floats.**
+With them I compute `S1` as registered *and* bound what index pairing assumes, and Tier 1 has no
+unmeasured premise left. Everything else in both tiers is read.
+
+### ⑥ PROCESS
+
+`S4` was run as **my own** check rather than 70's: independently of its `C5`, the two builds'
+diagonals are the **same arrays bit for bit**, both arms, `Dlk` and `P`, so the legs are comparable
+across builds. Three things are post-registration and labelled so in `robustness.py`'s own head — the
+conditioning measurement, the fit-free statistic, the width decomposition — each because a registered
+read returned something that could not be reported as it stood. And `B0`'s transposition onto `q =
+l / l_A` was a read-time choice, declared in the script's head, with its licence unmoved and the
+margin three orders wide.
+
 ## ⛔⛔ `r7737+cc66` — **A DEFECT FOR 69/70: THE PUSH RUN AND THE PULL-REQUEST RUN RACE FOR ONE CONCURRENCY GROUP, AND WHEN THE PULL-REQUEST RUN WINS, EVERY SCOPED TIER SILENTLY NEVER RUNS**
 
 Found while checking my own `r7737` head, and it is **not** about my diff. ⛭ *This is the shape the repo

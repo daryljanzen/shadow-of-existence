@@ -1,0 +1,55 @@
+`r7737+cc66` TIER 2 READ — the registered Part B, run on 70's `r7737_vis`.
+
+⛭ `PREDICTION.md` Part B, registered and pushed at `r7737+cc66.0` before this build existed.
+   `B0` is a PRECONDITION: if the located transition does not show in `log A_l`'s own swap, Part B
+   answers a different question than `PO-87`'s last step, and `B2` is NOT run.
+
+⛔ ONE CHOICE IS MADE HERE AND IS DECLARED AS MADE NOW, NOT REGISTERED.  `B0` said "the step statistic
+   `P15` already uses, read on `log A_l`".  That statistic is defined on a curve of BAND RMS against a
+   window centre in comb multiples; `A_l` is one value per multipole.  ⇒ The transposition used is the
+   minimal faithful one: read `log A_l`'s swap at `q = l / l_A`, average it over the SAME sliding
+   windows at the SAME three half-widths, and take the SAME low-band/high-band difference over the
+   same band edges, against `r7721`'s own phase-randomised step-free null.  *Declared because it was
+   not in the registration; nothing else about `B0` is changed, and its licence `p <= 0.01` is not
+   moved.*
+
+====================================================================================================
+    [PASS] input  r7737_vis.npz is the object 70 recorded
+             c3da5390680d86b2f9dddcae3738a01e88974545b1a5d1ea4c36a2739ceb6ba4
+
+    70's closures: T2_C1 lcdm max_rel 1.547e-08, cr G identical True, T2_C2 6 of 6 identical
+    the arms' visibility widths: lcdm 38.042364, cr 43.957277 ⇒ the cr arm is 15.55 % wider
+      ⌗ P15 prints `15.5` per cent for that, and this is 70's independent build of it.
+    the sound horizons: lcdm 145.382039, cr 146.572525 ⇒ 0.819 % apart
+
+    live multipoles 698 of 698
+
+    ⛭ B0 -- DOES THE LOCATED TRANSITION SHOW IN `log A_l`'s OWN SWAP?
+        half 0.175: 40 centres, step +0.026299, surrogate sd 0.001730, 0 of 20000 reach it ⇒ p 5.000e-05
+        half 0.25: 38 centres, step +0.025285, surrogate sd 0.001522, 0 of 20000 reach it ⇒ p 5.000e-05
+        half 0.35: 36 centres, step +0.023946, surrogate sd 0.001424, 0 of 20000 reach it ⇒ p 5.000e-05
+    [PASS] B0  the located transition shows in `log A_l`'s swap at every half-width, p <= 0.01
+             h0.175: p 5.000e-05; h0.25: p 5.000e-05; h0.35: p 5.000e-05
+
+    ⛭ B1 -- THE THREE-TERM DECOMPOSITION OF `log A_l`'s SWAP (a statement about `A_l`)
+    [PASS] B1a  the interaction residual is within the registered 0.2
+             rms(v - fit)/rms(v) = 0.0002
+    [FAIL] B1b  each amplitude is within 0.1 of unity
+             visibility g: +0.3639, distance map chi: +0.9663, comb period rs: +0.5721
+        B1c the ORDERING plus the three sizes, which is the licence and not a name:
+            distance map chi   |a| x rms  0.053396   (a +0.9663, template rms 0.055259)
+            comb period rs     |a| x rms  0.001996   (a +0.5721, template rms 0.003489)
+            visibility g       |a| x rms  0.000214   (a +0.3639, template rms 0.000588)
+
+    ⛭ B2 -- THE MULTIPOLE STRUCTURE TERM BY TERM — `PO-87`'s QUESTION AS WORDED
+            distance map chi   +104.19 % of the l-structured variance
+            comb period rs       +0.00 % of the l-structured variance
+            visibility g         +0.03 % of the l-structured variance
+            cross terms          -4.22 %
+
+        ⇒ ONE TERM ABOVE 0.6: **distance map chi** carries the located step's
+          multipole structure, at 104.19 %.  `PO-87`'s last step CLOSES on that term.
+
+====================================================================================================
+  ⛔  3 of 4 registered checks;  not met: B1b
+====================================================================================================

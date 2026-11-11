@@ -1,0 +1,56 @@
+`r7737+cc66` TIER 1 READ — the registered Part A, run on 70's `r7737_xmap`.
+
+⛭ `PREDICTION.md` Part A, registered and pushed at `r7737+cc66.0` before this build existed.
+⛔ Two departures from that registration are forced by what landed, and BOTH are declared here rather
+   than worked around:
+     * `S1` (`F_shape`, the map's own geometry) is **NOT COMPUTABLE**: the blob carries no `x0` or
+       `eta` arrays, only `x0_at_peak` as two scalars in its closure.  It is reported as not computed,
+       with the one available point beside it, and NOT replaced by a different statistic.
+     * `S5` asked how far the result moves under a SECOND INTERPOLATION of the map onto the other
+       arm's time grid.  70 declares `"pairing": "grid index"` -- there IS no interpolation, so the
+       statistic as registered has no subject.  What index pairing ASSUMES is stated instead, and the
+       assumption is named as unmeasured here because the grids are not in the blob.
+
+====================================================================================================
+    [PASS] input  r7737_xmap.npz is the object 70 recorded
+             0314f844023623f12775a9137373e273cb80b743d8e992af6eb29ea19d55a3a7
+    [PASS] input  r7729_dlk_four.npz is the object 70 recorded
+             3fbad4d34030cf0ee36e43ccbe30dc630039996d9a5cfa6316fd85917760ccb9
+
+    70 declares the pairing as: 'grid index (PREDICTION ①)'
+    [PASS] S4a  the two builds' DIAGONALS are the same arrays bit for bit -- my own check, not 70's C5
+             Dlk lcdm: =, P lcdm: =, Dlk cr: =, P cr: =, ls: =, k: =
+    [PASS] S4b  and 70's own C5 -- the hybrid built with the source arm's own map returns the diagonal
+             6 of 6 identical
+    [PASS] S4c  so the FULL ARM SWAP is the identical object in the two builds, and the legs are comparable across them
+
+    ⛔ S1 NOT COMPUTED -- the blob carries no `x0` or `eta` arrays, so `F_shape` has no subject here.
+       The ONE available point is 70's own `x0_at_peak`: lcdm 13954.436898516486, cr 14131.719665018554
+       their ratio 1.0127044013 against the distance ratio 1.0128706132848382
+       ⇒ they agree to 1.641e-04 relative AT THAT ONE POINT, which is a point and not the map.
+
+    ⛭ A.3 `S2` AND A.4 `S3`
+
+      PRIMARY (120 bins, 4868 cells masked)
+        rms  full map swap 0.23683   normalisation 0.21883   shape 0.09251   source-alone 0.30129
+        ⇒ R_shape 0.3906   R_norm 0.9240
+        two-term closure on the NEW legs: rms(obs - (map + source))/rms(obs) = 0.0901
+        three-term fit  a_norm +1.0086  a_shape +0.9002  a_src +0.9988
+        l-structured variance shares: norm +92.1 %  shape +1.6 %  source +7.8 %  cross -1.4 %
+        ⇒ the whole distance leg +93.6 %, of which the normalisation is 98.3 %
+
+      SECONDARY (63 bins, 2362 cells masked)
+        rms  full map swap 0.18408   normalisation 0.15862   shape 0.08976   source-alone 0.29930
+        ⇒ R_shape 0.4876   R_norm 0.8617
+        two-term closure on the NEW legs: rms(obs - (map + source))/rms(obs) = 0.0856
+        three-term fit  a_norm +1.0233  a_shape +0.9123  a_src +1.0029
+        l-structured variance shares: norm +92.1 %  shape +2.6 %  source +13.4 %  cross -8.0 %
+        ⇒ the whole distance leg +94.6 %, of which the normalisation is 97.3 %
+
+====================================================================================================
+  ⇒ R_shape BETWEEN the registered bounds on both binnings: both terms contribute, so
+    r7735's item 3 NARROWS and does not close; the leg is reported as two terms.
+
+  A.4: the normalisation's share of the whole distance leg is 0.983, 0.973 against the registered line 0.8
+    ⇒ P15's sentence survives as printed.
+====================================================================================================
