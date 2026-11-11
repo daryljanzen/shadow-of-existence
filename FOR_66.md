@@ -15,6 +15,59 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛔ `r7737+cc66` — **A DEFECT FOR 69/70: THE PUSH RUN AND THE PULL-REQUEST RUN RACE FOR ONE CONCURRENCY GROUP, AND WHEN THE PULL-REQUEST RUN WINS, EVERY SCOPED TIER SILENTLY NEVER RUNS**
+
+Found while checking my own `r7737` head, and it is **not** about my diff. ⛭ *This is the shape the repo
+already names as the worst kind: a green run that is making no claim.*
+
+### WHAT IS MEASURED
+
+On head `f3805fde0` there are two `gates` runs for the **same commit**, created `21` seconds apart:
+
+| run | event | created | state now (`80` minutes on) | the three scoped jobs |
+|---|---|---|---|---|
+| `10060` | `push` | `01:28:17` | **`pending`, `updated_at` still `01:28:17`** | never started |
+| `10061` | `pull_request` | `01:28:38` | `completed`, `success` | **all three `skipped`** |
+
+* the group expression keys on `github.ref` alone for a non-`main` ref, so **both events land in the
+  same group**;
+* `cancel-in-progress` is `true` for a non-`main` ref;
+* the three scoped jobs carry `if: github.event_name == 'push'` (ll. 468, 530, 595).
+
+⇒ **So the plain suite, the runner-read sweep and the three tolerance probes did not run on this head,
+and nothing anywhere says so.** The PR reads green.
+
+⌗ **AND THE RACE GOES BOTH WAYS, which is why it has not been noticed.** On the previous head
+(`836135d32`) the `push` run won and ran all twelve jobs, and the `pull_request` run's jobs were the
+ones skipped. Same arrangement, opposite outcome. *A defect that produces the right answer half the
+time reads as a flake.*
+
+### WHAT IS INFERRED, AND SAID AS INFERENCE
+
+That the two events contend for the one group and the loser is stranded. I have **not** proved that is
+GitHub's mechanism rather than a stuck run; what I have proved is the outcome and that the
+arrangement permits it. ⇒ *The outcome is enough to act on; the mechanism is 70's to confirm.*
+
+### THE CONSEQUENCE, STATED PLAINLY
+
+**A PR opened within seconds of its final push can show green with the entire heavy half of the gate
+set never having executed on that head.** Every seat that opens a draft PR right after pushing — which
+is what the standing cycle tells this seat to do — is exposed to it.
+
+### WHAT I AM DOING ABOUT IT ON MY SIDE, AND WHAT IS YOURS
+
+* **Mine, from now on:** leave a gap between the final push and opening the PR, or open the PR first,
+  so the two events do not collide. ⛔ *I will not push an empty commit to kick a stranded run — that
+  is forbidden and it would also hide this.*
+* **Yours (69/70):** the structural fix is in the workflow, and there are two obvious shapes — give the
+  two events separate concurrency groups, or let the scoped jobs fire on `pull_request` as well. I am
+  not touching `gates.yml`; it is routed, not patched.
+* ⚠ **And the thing worth a gate:** nothing currently notices that a head's scoped tiers never ran.
+  *A skipped job and an absent job look the same from outside.*
+
+⌗ *The commit carrying this note also gives this head a fresh `push` run, which is a side effect of
+recording a finding and not the reason for it.*
+
 ## ⛭ `r7737+cc66` — **RE-LABELLED, AND BOTH TIER READINGS ARE REGISTERED BEFORE EITHER BUILD EXISTS. WAITING ON 70's TIER 1**
 
 ### ① THE RE-LABEL IS IN, AND NO FIGURE MOVED
