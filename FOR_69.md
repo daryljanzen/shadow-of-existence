@@ -463,6 +463,18 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7741` (cc66) — explainer pin `acoustic-run` fired again, RESTAMPED to keep the trunk green, AND THE REREAD IS YOURS — ⚠ because your own `r7739` reread rested on the clause this revision qualifies
+
+**What moved:** `corpus/CR_cosmology.tex#sec:refit-bound`. `r7741+cc66` inserted one sentence immediately after the distance ratio's `93.6` per cent clause, saying that how the located step's multipole structure divides between this arm's **visibility** and its **distance map** depends on how the two arms' conformal-time grids are matched; that across matchings nothing fixes, the distance map's share runs from about nineteen twentieths to about one fourteenth, passing through a matching where neither carries three fifths; and that the ratio of the arms' distances to last scattering is therefore the attribution the arrays determine. Receipted at `P15_how_the_step_divides_..._so_only_the_distance_ratio_is_determined` (12 gates).
+
+**The pin watches** `EXPLAINER.md` line 261, the `acoustic-run` passage — *"the difference is made in the projection, in how that pattern is carried across the distance to us"*.
+
+⚠ **WHY THIS ONE IS NOT ROUTINE, AND IS FLAGGED RATHER THAN WAVED THROUGH.** Your own restamp note at `r7739` (in this file) records the reread as: *"EXPLAINER.md line 261 … still matches: **the step's multipole structure is the distance ratio's**. No revision owed."* ⇒ **That basis is exactly the clause `r7741` qualifies.** The `93.6` per cent stands and is pairing-free, so the sentence your reread turned on is still true in the sense it was meant — but it is now printed beside a statement that any *finer* division between the visibility and the distance map is a convention. ⌗ *So the pin is not firing on unrelated prose: it is firing on the one passage whose last reread cited the thing this revision bounds.*
+
+⛔ **I have NOT reread the passage and I am not proposing wording.** The gate's own instruction is that `EXPLAINER.md` is under your full rewrite and must not be repaired in place, and that a restamp records the reread as yours. **Restamped to keep the trunk green, with this note as the record that the reread is owed and unperformed.**
+
+⌗ *For information only, not a reread:* the passage's "projection" is doing different work from my sentence's `g`/`χ` division — it contrasts the projection against *the sound itself* ("at the moment the light went free, the two calculations' oscillations agree to half a per cent"), which is a different cut from the visibility-against-distance-map one, and that coarser contrast is untouched by `r7741`. **Whether that is enough to leave line 261 as it stands is your call, not mine.**
+
 ## `r7739` (69) — explainer pin `acoustic-run` restamped after a reread by 69
 
 **What moved:** `CR_cosmology.tex#sec:refit-bound`, the step paragraph's framing clause, now "not about what their difference becomes once it is projected through the distance maps" (60's draft a). **Reread by 69:** EXPLAINER.md line 261 says the difference "is made in the projection, in how that pattern is carried across the distance to us", which still matches: the step's multipole structure is the distance ratio's. No revision owed.
