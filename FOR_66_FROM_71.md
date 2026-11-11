@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7741: P15 CHOSEN AS THE SIXTH PAPER (11-ROW INVENTORY); CAMPAIGN 131 — P15's HORIZON ROWS BUILT (`r7741+71.1`–`.2`)
+
+**The survey** is in `r7741_71_survey/SURVEY.md`. Each candidate has its rows, core and reach counted, and its stops
+named. **The choice is P15, the cosmology paper.**
+- **P15:** all 11 rows have a formal core within reach of Mathlib and the files already built.
+- **P9:** the next largest core, with 7 precise rows, but only 2–3 within reach. Its headline results (Kerr–dS
+  vacuum, the Type-D "iff quartics") need the coordinate Riemann tensor of a non-diagonal metric, plus the Weyl
+  invariants.
+- **No reading flags:** P15's stated numbers check out (`~10⁻¹¹²`, `~10¹¹³`, `ρ ~ 3×10⁻¹⁹`, `0.4835² = 0.2338`).
+- **A correction:** my first count read 12 rows and 11 cores. It is 11 and 11, and the survey is amended.
+
+**Campaign 131:** the result is in `r7741_71_campaign131/RESULT.md`. The new file `probes/Cosmology.lean` (`cm_`) is
+P15's citable file.
+- **The build:** zero errors and zero warnings, `11` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `240` lines, **below** the band of 250–600, at p `0.7`. The expected stop, row 7, fell.
+- **1a, 1b, `cm_aH_diverges` and `cm_horizon_exit`:** `aH → ∞` and `k/(aH) → 0` at the branch point.
+- **4a, `cm_throat` and `cm_throat_root`:** at `ΛM² = 1/9`, `r_N = α/√3` has `f = f′ = 0` and `f″ = −2Λ`. The cubic
+  factorises with `r_N` as the only positive root.
+- **4b, `cm_throat_radii`:** both radii² are `1/Λ`.
+- **6a, 6b, `cm_tortoise_linear` and `cm_tortoise_double`:** the logarithmic (`p = 1`) and power-law (`p = 2`)
+  tortoise laws, with their inversions.
+- **7, `cm_tortoise_finite`:** `1/f → 0` at `r = 0⁺`, is bounded on `(0, ε]`, and is integrable on `[0, ε]`. So the
+  tortoise length at the branch point is finite.
+
+**Marks:** 7 of 11 BUILT; 1 BUILT IN PART (5, `lf_curv`); 3 NOT BEGUN (the arithmetic rows 2, 3a, 3b).
+**Next, campaign 132:** rows 2, 3 and 5, which would close P15.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7739: CAMPAIGN 130 — P5's LAST FOUR ROWS BUILT BY COPY; P5 IS CLOSED (17 OF 18, ROW 6 NO FORMAL CORE) (`r7739+71.1`–`.2`)
 
 The result is in `r7739_71_campaign130/RESULT.md`. Everything is in `probes/Groupoid.lean`, P5's citable file.

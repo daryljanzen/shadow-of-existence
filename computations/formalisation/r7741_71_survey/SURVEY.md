@@ -14,7 +14,7 @@ rows with a precise statement. **Reach** counts rows buildable with Mathlib and 
 
 | P | file | cites | stmts | rows | core | reach | stops |
 |---|---|---|---|---|---|---|---|
-| **15** | `CR_cosmology` | 163 | 7 | **12** | **11** | **11** | Row 7's integrability of `1/f` at `r = 0`. Everything else is SdS calculus, P8's `lf_curv` and arithmetic |
+| **15** | `CR_cosmology` | 163 | 7 | **11** | **11** | **11** | Row 7's integrability of `1/f` at `r = 0`. Everything else is SdS calculus, P8's `lf_curv` and arithmetic |
 | 9 | `range_paper` | 107 | 11 | 14 | 7 | 2–3 | `prop:kerr` (`R_{μν} = Λg_{μν}` for Kerr–dS, a non-diagonal `Fin 4` metric) and `thm:pd` (the Type-D "iff quartics"): the coordinate Riemann tensor of a non-diagonal metric, at a scale not yet attempted. `prop:typeI` and `prop:radiative` need the Weyl invariants `I` and `J`. Reachable: `prop:ksvac` (diagonal) and the pp-wave's Ricci |
 | 13 | `boundary_paper` | 144 | 4 | 6 | 3 | 3 | `prop:boundary` (`su(3)` is not an isometry of the substrate) needs Lie-algebra embedding theory Mathlib lacks. The parity rows are algebra |
 | 12 | `algebroid_paper` | 103 | 1 | 3 | 3 | 3 | None: the `so(5,1)` brackets are matrix algebra. But it is one statement |
@@ -26,7 +26,7 @@ rows with a precise statement. **Reach** counts rows buildable with Mathlib and 
 | 10, 16 | canonical time, cosmogenesis | 113, 112 | 0 | — | — | — | No stated results |
 
 **Why P15.**
-- **11 of its 12 rows are within reach,** more than any other paper.
+- **All 11 of its rows are within reach,** more than any other paper.
 - **They are SdS calculus:** the Nariai double root, the tortoise integrals and the comoving Hubble scale. The flat
   slice is P8's `lf_curv` with `k = 0`.
 - **It is the second most cited companion** after P7.
@@ -42,7 +42,7 @@ rows with a precise statement. **Reach** counts rows buildable with Mathlib and 
 
 # Inventory of P15 (`corpus/CR_cosmology.tex`)
 
-The grep finds **7** statements, split into **12 rows**. `f(r) = 1 − 2M/r − r²/α²`, `Λ = 3/α²`, `G = c = 1`.
+The grep finds **7** statements, split into **11 rows**. `f(r) = 1 − 2M/r − r²/α²`, `Λ = 3/α²`, `G = c = 1`.
 
 ## 1. `prop:subhorizon` (l.299)
 - **1a.** On the `E = 1` leg (`a = r`, `ṙ² = 2M/r + r²/α²`), `aH = ṙ → ∞` as `r → 0⁺`. **NOT BEGUN.** 30–60, p 0.9.
@@ -83,7 +83,7 @@ The grep finds **7** statements, split into **12 rows**. `f(r) = 1 − 2M/r − 
 - **Interpretive:** "scale-free transmitter", and the `a″/a` constants.
 
 ## Totals
-- **12 rows**, 11 with a formal core.
+- **11 rows**, all with a formal core. *(Corrected in `r7741+71.2`: the first count read 12 rows and 11 cores.)*
 - **Marks:** 0 BUILT; 2 BUILT IN PART (4a, 5); 10 NOT BEGUN.
 - **Whole paper:** about 400–800 new lines, plus the `lf_` copy for row 5.
 
