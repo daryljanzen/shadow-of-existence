@@ -20,6 +20,13 @@ cubic's roots are `rₖ(w) = (2/√3) sin(w + 2πk/3)`, `k ∈ ℤ/3` (gauge `α
 * **Row 7b — BUILT.** `gp_σ_fixed`.
 * **Row 8 — BUILT.** `gp_nariai_mass`.
 * **Row 13 — BUILT.** `gp_R_mass`, `gp_D6`, `gp_D6_card`, `gp_D3_le_D6`, `gp_half_turn`.
+
+**Campaign 128 (`r7735+71.2`), in this same file.** Registration:
+`computations/formalisation/r7735_71_campaign128/PREDICTION.md`.
+* **Row 1 — BUILT.** `gp_sin3`, `gp_Mor`: continuous bijections of `ℝ/2πℤ` preserving `sin 3w` form a subgroup.
+* **Row 5 — BUILT.** `gp_completeness`: `gp_Mor = ⟨σ, τ⟩`; `gp_Mor_D3`, `gp_Mor_card`. The proof lifts to `ℝ`,
+  splits into the branches `3(g − w) = 0` and `3(g + w) = π` (`gp_branch`), and uses injectivity at the crossing
+  points `π/6 + kπ/3` to forbid a switch.
 -/
 
 open Real
@@ -470,6 +477,246 @@ theorem gp_half_turn :
         exact neg_eq_iff_add_eq_zero.1 h3
       exact gp_half_ne this
 
+/-! ## The morphism group and its completeness (rows 1 and 5) -/
+
+lemma gp_s3_periodic : Function.Periodic (fun x : ℝ => Real.sin (3 * x)) (2 * π) := by
+  intro x
+  show Real.sin (3 * (x + 2 * π)) = Real.sin (3 * x)
+  rw [show 3 * (x + 2 * π) = 3 * x + ((3 : ℕ) : ℝ) * (2 * π) by push_cast; ring, Real.sin_add_nat_mul_two_pi]
+
+/-- `w ↦ sin 3w` on the circle, which reads `2M = (2/3√3) sin 3w`. -/
+noncomputable def gp_sin3 : gp_T → ℝ := gp_s3_periodic.lift
+
+@[simp] lemma gp_s3_coe (x : ℝ) : gp_sin3 (x : gp_T) = Real.sin (3 * x) := gp_s3_periodic.lift_coe x
+
+/-- **Row 1.** The within-single-geometry morphisms: continuous bijections `g` of `ℝ/2πℤ` with
+`sin 3g(w) = sin 3w`. They form a group; inverses are continuous because the circle is compact. -/
+def gp_Mor : Subgroup (Equiv.Perm gp_T) where
+  carrier := {g | Continuous g ∧ ∀ w, gp_sin3 (g w) = gp_sin3 w}
+  one_mem' := ⟨continuous_id, fun _ => rfl⟩
+  mul_mem' := fun {f g} hf hg => ⟨hf.1.comp hg.1, fun w => by
+    rw [Equiv.Perm.mul_apply, hf.2, hg.2]⟩
+  inv_mem' := fun {g} hg => ⟨(hg.1.homeoOfEquivCompactToT2 (f := g)).symm.continuous, fun w => by
+    rw [← hg.2 (g⁻¹ w)]; exact congrArg gp_sin3 (Equiv.apply_symm_apply g w)⟩
+
+lemma gp_σ_mem : gp_σ ∈ gp_Mor := by
+  refine ⟨continuous_neg.add continuous_const, fun w => ?_⟩
+  induction w using QuotientAddGroup.induction_on with | H x => ?_
+  rw [gp_σ_apply, ← AddCircle.coe_neg, ← AddCircle.coe_add, gp_s3_coe, gp_s3_coe,
+    show 3 * (-x + π / 3) = π - 3 * x by ring, Real.sin_pi_sub]
+
+lemma gp_τ_mem : gp_τ ∈ gp_Mor := by
+  refine ⟨continuous_id.add continuous_const, fun w => ?_⟩
+  induction w using QuotientAddGroup.induction_on with | H x => ?_
+  rw [gp_τ_apply, ← AddCircle.coe_add, gp_s3_coe, gp_s3_coe,
+    show 3 * (x + 2 * π / 3) = 3 * x + ((1 : ℕ) : ℝ) * (2 * π) by push_cast; ring, Real.sin_add_nat_mul_two_pi]
+
+/-- The two branches of `sin 3v = sin 3w`: `3(v − w) = 0` or `3(v + w) = π` on the circle. -/
+lemma gp_branch (v w : gp_T) (h : gp_sin3 v = gp_sin3 w) :
+    3 • (v - w) = 0 ∨ 3 • (v + w) = ((π : ℝ) : gp_T) := by
+  induction v using QuotientAddGroup.induction_on with | H x => ?_
+  induction w using QuotientAddGroup.induction_on with | H y => ?_
+  change gp_sin3 (x : gp_T) = gp_sin3 (y : gp_T) at h
+  rw [gp_s3_coe, gp_s3_coe] at h
+  obtain ⟨k, hk | hk⟩ := Real.sin_eq_sin_iff.1 h.symm
+  · left
+    change 3 • ((x : gp_T) - (y : gp_T)) = 0
+    rw [← AddCircle.coe_sub, ← AddCircle.coe_nsmul, nsmul_eq_mul]
+    exact (AddCircle.coe_eq_zero_iff (p := 2 * π)).2 ⟨k, by rw [zsmul_eq_mul]; push_cast; linarith⟩
+  · right
+    change 3 • ((x : gp_T) + (y : gp_T)) = _
+    rw [← AddCircle.coe_add, ← AddCircle.coe_nsmul, nsmul_eq_mul,
+      show ((3 : ℕ) : ℝ) * (x + y) = π + (k : ℝ) * (2 * π) by push_cast; linarith, gp_coe_add_int]
+
+/-- The 3-torsion of the circle is `{e i}`. -/
+lemma gp_tors0 (v : gp_T) (h : 3 • v = 0) : ∃ i : ZMod 3, v = gp_e 3 _ gp_c3 i := by
+  induction v using QuotientAddGroup.induction_on with | H x => ?_
+  change 3 • (x : gp_T) = 0 at h
+  rw [← AddCircle.coe_nsmul, AddCircle.coe_eq_zero_iff] at h
+  obtain ⟨m, hm⟩ := h
+  rw [zsmul_eq_mul, nsmul_eq_mul] at hm
+  obtain ⟨j, hj⟩ := gp_val_lift (x := (m : ZMod 3)) (y := m) rfl
+  refine ⟨m, ?_⟩
+  rw [gp_e_apply, hj]
+  change (x : gp_T) = (((m + 3 * j : ℝ) * (2 * π / 3) : ℝ) : gp_T)
+  rw [show ((m : ℝ) + 3 * j) * (2 * π / 3) = x + (j : ℝ) * (2 * π) by push_cast at hm ⊢; linarith,
+    gp_coe_add_int]
+
+/-- The solutions of `3v = π` are `{π/3 − e i}`. -/
+lemma gp_torsπ (v : gp_T) (h : 3 • v = ((π : ℝ) : gp_T)) :
+    ∃ i : ZMod 3, v = ((π / 3 : ℝ) : gp_T) - gp_e 3 _ gp_c3 i := by
+  have h3 : 3 • ((π / 3 : ℝ) : gp_T) = ((π : ℝ) : gp_T) := by
+    rw [← AddCircle.coe_nsmul, nsmul_eq_mul]; congr 1; push_cast; ring
+  obtain ⟨j, hj⟩ := gp_tors0 (v - ((π / 3 : ℝ) : gp_T)) (by rw [nsmul_sub, h, h3, sub_self])
+  exact ⟨-j, by rw [map_neg, sub_neg_eq_add, ← hj]; abel⟩
+
+/-- A continuous map with values in a finite set is constant on a preconnected set. -/
+lemma gp_const {S : Set ℝ} (hS : IsPreconnected S) {F : ℝ → gp_T} (hF : Continuous F) {T : Set gp_T}
+    (hT : T.Finite) (hm : ∀ t ∈ S, F t ∈ T) {s t : ℝ} (hs : s ∈ S) (ht : t ∈ S) : F s = F t := by
+  exact hS.constant_of_mapsTo hT.isDiscrete hF.continuousOn hm hs ht
+
+/-- Crossing points are `π/3` apart: if `6s = 6t = π` on the circle and `|s − t| < π/3` then `s = t`. -/
+lemma gp_cross_sep {s t : ℝ} (hs : 6 • (s : gp_T) = ((π : ℝ) : gp_T)) (ht : 6 • (t : gp_T) = ((π : ℝ) : gp_T))
+    (hst : |s - t| < π / 3) : s = t := by
+  have h : ((6 * (s - t) : ℝ) : gp_T) = 0 := by
+    rw [show 6 * (s - t) = ((6 : ℕ) : ℝ) * s - ((6 : ℕ) : ℝ) * t by push_cast; ring, AddCircle.coe_sub,
+      ← nsmul_eq_mul, ← nsmul_eq_mul, AddCircle.coe_nsmul, AddCircle.coe_nsmul, hs, ht, sub_self]
+  obtain ⟨m, hm⟩ := (AddCircle.coe_eq_zero_iff (p := 2 * π)).1 h
+  rw [zsmul_eq_mul] at hm
+  have hπ := Real.pi_pos
+  rw [abs_lt] at hst
+  have a : (m : ℝ) < 1 := by nlinarith
+  have b : (-1 : ℝ) < m := by nlinarith
+  have hm0 : m = 0 := by
+    have : m < 1 := by exact_mod_cast a
+    have : -1 < m := by exact_mod_cast b
+    omega
+  subst hm0; simp at hm; linarith
+
+lemma gp_six (G w : gp_T) (ha : 3 • (G - w) = 0) (hb : 3 • (G + w) = ((π : ℝ) : gp_T)) :
+    6 • w = ((π : ℝ) : gp_T) := by
+  rw [← hb, show (6 : ℕ) = 3 + 3 from rfl, add_nsmul]
+  have : 3 • (G + w) = 3 • (G - w) + 3 • w + 3 • w := by rw [nsmul_sub, nsmul_add]; abel
+  rw [this, ha, zero_add]
+
+/-- **Row 5, `prop:completeness`.** Every continuous bijection `g` of `ℝ/2πℤ` with `sin 3g(w) = sin 3w` lies in
+`⟨σ, τ⟩`: the morphism group is exactly `⟨σ, τ⟩ ≃* D₃ ≃* S₃`. -/
+theorem gp_completeness : gp_Mor = Subgroup.closure {gp_σ, gp_τ} := by
+  refine le_antisymm ?_ ((Subgroup.closure_le _).2 (by
+    rintro x (rfl | rfl); exacts [gp_σ_mem, gp_τ_mem]))
+  intro g hg
+  rw [← gp_φ_range]
+  have hπ := Real.pi_pos
+  set G : ℝ → gp_T := fun t => g (t : gp_T) with hGdef
+  have hc : Continuous (fun t : ℝ => (t : gp_T)) := continuous_quotient_mk'
+  have hG : Continuous G := hg.1.comp hc
+  set Sa : Set ℝ := {t | 3 • (G t - t) = 0}
+  set Sb : Set ℝ := {t | 3 • (G t + t) = ((π : ℝ) : gp_T)}
+  have cA : Continuous fun t => G t - (t : gp_T) := hG.sub hc
+  have cB : Continuous fun t => G t + (t : gp_T) := hG.add hc
+  have hSa : IsClosed Sa := isClosed_eq ((continuous_nsmul 3).comp cA) continuous_const
+  have hSb : IsClosed Sb := isClosed_eq ((continuous_nsmul 3).comp cB) continuous_const
+  have hcov : ∀ t, t ∈ Sa ∨ t ∈ Sb := fun t => gp_branch (G t) t (hg.2 t)
+  have hTa : (Set.range (gp_e 3 _ gp_c3)).Finite := Set.finite_range _
+  have hTb : (Set.range fun i => ((π / 3 : ℝ) : gp_T) - gp_e 3 _ gp_c3 i).Finite := Set.finite_range _
+  have constA : ∀ {S : Set ℝ}, IsPreconnected S → S ⊆ Sa → ∀ {s t}, s ∈ S → t ∈ S →
+      G s - (s : gp_T) = G t - t := fun {_} hS hSS {_ _} hs ht =>
+    gp_const hS cA hTa (fun t ht => by obtain ⟨i, hi⟩ := gp_tors0 _ (hSS ht); exact ⟨i, hi.symm⟩) hs ht
+  have constB : ∀ {S : Set ℝ}, IsPreconnected S → S ⊆ Sb → ∀ {s t}, s ∈ S → t ∈ S →
+      G s + (s : gp_T) = G t + t := fun {_} hS hSS {_ _} hs ht =>
+    gp_const hS cB hTb (fun t ht => by obtain ⟨i, hi⟩ := gp_torsπ _ (hSS ht); exact ⟨i, hi.symm⟩) hs ht
+  -- the side intervals lie in one branch
+  have side : ∀ {I : Set ℝ}, IsPreconnected I → (∀ s ∈ I, s ∉ Sa ∩ Sb) → I ⊆ Sa ∨ I ⊆ Sb := by
+    intro I hI hI'
+    exact isPreconnected_iff_subset_of_disjoint_closed.1 hI Sa Sb hSa hSb (fun t _ => hcov t)
+      (Set.eq_empty_iff_forall_notMem.2 fun t ⟨htI, ht⟩ => hI' t htI ht)
+  have sep : ∀ t₀ ∈ Sa ∩ Sb, ∀ s, |s - t₀| < π / 3 → s ∈ Sa ∩ Sb → s = t₀ := by
+    intro t₀ ht₀ s hs hs'
+    exact gp_cross_sep (gp_six _ _ hs'.1 hs'.2) (gp_six _ _ ht₀.1 ht₀.2) hs
+  -- injectivity forbids a switch at a crossing point
+  have inj : ∀ t₀ : ℝ, G (t₀ + π / 12) ≠ G (t₀ - π / 12) := by
+    intro t₀ h
+    have h' := g.injective h
+    have : ((π / 6 : ℝ) : gp_T) = 0 := by
+      rw [show π / 6 = (t₀ + π / 12) - (t₀ - π / 12) by ring, AddCircle.coe_sub, h', sub_self]
+    exact gp_coe_ne_zero (by positivity) (by linarith) this
+  have hcover : ∀ t₀, t₀ ∈ interior Sa ∨ t₀ ∈ interior Sb := by
+    intro t₀
+    by_cases hb : t₀ ∈ Sb
+    · by_cases ha : t₀ ∈ Sa
+      · have hR := side (I := Set.Ioo t₀ (t₀ + π / 6)) isPreconnected_Ioo (fun s hs hs' =>
+          (ne_of_gt hs.1) (sep t₀ ⟨ha, hb⟩ s (by rw [abs_lt]; constructor <;> linarith [hs.1, hs.2]) hs'))
+        have hL := side (I := Set.Ioo (t₀ - π / 6) t₀) isPreconnected_Ioo (fun s hs hs' =>
+          (ne_of_lt hs.2) (sep t₀ ⟨ha, hb⟩ s (by rw [abs_lt]; constructor <;> linarith [hs.1, hs.2]) hs'))
+        have fullset : ∀ {X : Set ℝ}, t₀ ∈ X → Set.Ioo t₀ (t₀ + π / 6) ⊆ X → Set.Ioo (t₀ - π / 6) t₀ ⊆ X →
+            t₀ ∈ interior X := by
+          intro X h0 hR hL
+          refine mem_interior.2 ⟨Set.Ioo (t₀ - π / 6) (t₀ + π / 6), fun s hs => ?_, isOpen_Ioo,
+            ⟨by linarith, by linarith⟩⟩
+          rcases lt_trichotomy s t₀ with h | rfl | h
+          exacts [hL ⟨hs.1, h⟩, h0, hR ⟨h, hs.2⟩]
+        have hp : t₀ + π / 12 ∈ Set.Ioo t₀ (t₀ + π / 6) := ⟨by linarith, by linarith⟩
+        have hm : t₀ - π / 12 ∈ Set.Ioo (t₀ - π / 6) t₀ := ⟨by linarith, by linarith⟩
+        rcases hR with hR | hR <;> rcases hL with hL | hL
+        · exact Or.inl (fullset ha hR hL)
+        · -- right in `Sa`, left in `Sb`: the map folds at `t₀`
+          exfalso
+          have e1 := constA (S := Set.Ico t₀ (t₀ + π / 6)) isPreconnected_Ico
+            (fun s hs => by rcases eq_or_lt_of_le hs.1 with rfl | h; exacts [ha, hR ⟨h, hs.2⟩])
+            (s := t₀ + π / 12) ⟨by linarith, by linarith⟩ (t := t₀) ⟨le_refl _, by linarith⟩
+          have e2 := constB (S := Set.Ioc (t₀ - π / 6) t₀) isPreconnected_Ioc
+            (fun s hs => by rcases eq_or_lt_of_le hs.2 with rfl | h; exacts [hb, hL ⟨hs.1, h⟩])
+            (s := t₀ - π / 12) ⟨by linarith, by linarith⟩ (t := t₀) ⟨by linarith, le_refl _⟩
+          apply inj t₀
+          have q1 : G (t₀ + π / 12) = G t₀ + ((π / 12 : ℝ) : gp_T) := by
+            rw [sub_eq_iff_eq_add] at e1; rw [e1, AddCircle.coe_add]; abel
+          have q2 : G (t₀ - π / 12) = G t₀ + ((π / 12 : ℝ) : gp_T) := by
+            rw [← eq_sub_iff_add_eq] at e2; rw [e2, AddCircle.coe_sub]; abel
+          rw [q1, q2]
+        · -- right in `Sb`, left in `Sa`: the map folds at `t₀`
+          exfalso
+          have e1 := constB (S := Set.Ico t₀ (t₀ + π / 6)) isPreconnected_Ico
+            (fun s hs => by rcases eq_or_lt_of_le hs.1 with rfl | h; exacts [hb, hR ⟨h, hs.2⟩])
+            (s := t₀ + π / 12) ⟨by linarith, by linarith⟩ (t := t₀) ⟨le_refl _, by linarith⟩
+          have e2 := constA (S := Set.Ioc (t₀ - π / 6) t₀) isPreconnected_Ioc
+            (fun s hs => by rcases eq_or_lt_of_le hs.2 with rfl | h; exacts [ha, hL ⟨hs.1, h⟩])
+            (s := t₀ - π / 12) ⟨by linarith, by linarith⟩ (t := t₀) ⟨by linarith, le_refl _⟩
+          apply inj t₀
+          have q1 : G (t₀ + π / 12) = G t₀ - ((π / 12 : ℝ) : gp_T) := by
+            rw [← eq_sub_iff_add_eq] at e1; rw [e1, AddCircle.coe_add]; abel
+          have q2 : G (t₀ - π / 12) = G t₀ - ((π / 12 : ℝ) : gp_T) := by
+            rw [sub_eq_iff_eq_add] at e2; rw [e2, AddCircle.coe_sub]; abel
+          rw [q1, q2]
+        · exact Or.inr (fullset hb hR hL)
+      · exact Or.inr (mem_interior.2 ⟨Saᶜ, fun s hs => (hcov s).resolve_left hs, hSa.isOpen_compl, ha⟩)
+    · exact Or.inl (mem_interior.2 ⟨Sbᶜ, fun s hs => (hcov s).resolve_right hs, hSb.isOpen_compl, hb⟩)
+  have hdisj : ∀ t, t ∈ interior Sa → t ∉ interior Sb := by
+    intro t ha hb
+    obtain ⟨ε, hε, hball⟩ := Metric.mem_nhds_iff.1 ((isOpen_interior.inter isOpen_interior).mem_nhds ⟨ha, hb⟩)
+    set δ := min (ε / 2) (π / 6)
+    have hδ : 0 < δ := lt_min (by linarith) (by positivity)
+    have hδ1 : δ ≤ ε / 2 := min_le_left _ _
+    have hδ2 : δ ≤ π / 6 := min_le_right _ _
+    have hm : t + δ ∈ interior Sa ∩ interior Sb :=
+      hball (by rw [Metric.mem_ball, Real.dist_eq, show t + δ - t = δ by ring, abs_of_pos hδ]; linarith)
+    have := sep t ⟨interior_subset ha, interior_subset hb⟩ (t + δ)
+      (by rw [show t + δ - t = δ by ring, abs_of_pos hδ]; linarith)
+      ⟨interior_subset hm.1, interior_subset hm.2⟩
+    linarith
+  have hclopen : IsClopen (interior Sa) := by
+    refine ⟨?_, isOpen_interior⟩
+    have : (interior Sa)ᶜ = interior Sb := Set.ext fun t =>
+      ⟨fun h => (hcover t).resolve_left h, fun h h' => hdisj t h' h⟩
+    rw [← isOpen_compl_iff, this]; exact isOpen_interior
+  have hsurj : ∀ w : gp_T, ∃ t : ℝ, (t : gp_T) = w := fun w => QuotientAddGroup.mk_surjective w
+  rcases isClopen_iff.1 hclopen with h | h
+  · -- every point on the reflection branch
+    have hB : ∀ t, t ∈ Sb := fun t => interior_subset ((hcover t).resolve_left (by rw [h]; exact id))
+    obtain ⟨i, hi⟩ := gp_torsπ _ (hB 0)
+    refine ⟨.sr i, Equiv.ext fun w => ?_⟩
+    obtain ⟨t, rfl⟩ := hsurj w
+    have e := constB isPreconnected_univ (fun t _ => hB t) (s := t) (t := 0) trivial trivial
+    rw [hi, eq_sub_iff_add_eq] at e
+    change -(t : gp_T) + (((π / 3 : ℝ) : gp_T) - gp_e 3 _ gp_c3 i) = G t
+    rw [← e]; abel
+  · -- every point on the rotation branch
+    have hA : ∀ t, t ∈ Sa := fun t => interior_subset (by rw [h]; trivial)
+    obtain ⟨i, hi⟩ := gp_tors0 _ (hA 0)
+    refine ⟨.r i, Equiv.ext fun w => ?_⟩
+    obtain ⟨t, rfl⟩ := hsurj w
+    have e := constA isPreconnected_univ (fun t _ => hA t) (s := t) (t := 0) trivial trivial
+    rw [hi, sub_eq_iff_eq_add] at e
+    change (t : gp_T) + gp_e 3 _ gp_c3 i = G t
+    rw [e]; abel
+
+/-- **Rows 1 and 5.** The morphism group is `D₃`: `gp_Mor ≃* DihedralGroup 3`, of order 6, and it is non-trivial
+(`σ ∈ gp_Mor`, `σ ≠ 1`). -/
+noncomputable def gp_Mor_D3 : gp_Mor ≃* DihedralGroup 3 :=
+  (MulEquiv.subgroupCongr gp_completeness).trans gp_D3
+
+theorem gp_Mor_card : Nat.card gp_Mor = 6 ∧ gp_σ ∈ gp_Mor ∧ gp_σ ≠ 1 :=
+  ⟨by rw [Nat.card_congr gp_Mor_D3.toEquiv, DihedralGroup.nat_card], gp_σ_mem, gp_σ_sq.2⟩
+
 end ShadowProbe.GroupoidProbe
 
 #print axioms ShadowProbe.GroupoidProbe.gp_act_injective
@@ -502,3 +749,14 @@ end ShadowProbe.GroupoidProbe
 #print axioms ShadowProbe.GroupoidProbe.gp_D6_card
 #print axioms ShadowProbe.GroupoidProbe.gp_D3_le_D6
 #print axioms ShadowProbe.GroupoidProbe.gp_half_turn
+#print axioms ShadowProbe.GroupoidProbe.gp_σ_mem
+#print axioms ShadowProbe.GroupoidProbe.gp_τ_mem
+#print axioms ShadowProbe.GroupoidProbe.gp_branch
+#print axioms ShadowProbe.GroupoidProbe.gp_tors0
+#print axioms ShadowProbe.GroupoidProbe.gp_torsπ
+#print axioms ShadowProbe.GroupoidProbe.gp_const
+#print axioms ShadowProbe.GroupoidProbe.gp_cross_sep
+#print axioms ShadowProbe.GroupoidProbe.gp_six
+#print axioms ShadowProbe.GroupoidProbe.gp_completeness
+#print axioms ShadowProbe.GroupoidProbe.gp_Mor_D3
+#print axioms ShadowProbe.GroupoidProbe.gp_Mor_card

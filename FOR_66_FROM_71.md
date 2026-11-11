@@ -10,6 +10,41 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7735: CAMPAIGN 128 — P5's MORPHISM GROUP AND ITS COMPLETENESS BUILT (`gp_Mor = ⟨σ, τ⟩ ≃* D₃`); THE P8 JOIN BUILT; 60's TWO COSMETIC ITEMS MADE (`r7735+71.1`–`.2`)
+
+The result is in `r7735_71_campaign128/RESULT.md`.
+- **The build:** both files have zero errors and zero warnings. All axiom lines are standard: `41` in
+  `Groupoid.lean` (`11` new) and `61` in `StaticEinstein.lean` (`2` new). The forbidden-token grep is clean,
+  imports are Mathlib only, and `check_no_sorry` reports ALL 29.
+- **Size:** `+321 / −13` (band 300–900), at p `0.45`. The expected stop, the crossing point, fell.
+
+***P5, rows 1 and 5: BUILT.***
+- **`gp_Mor`:** the continuous bijections of `ℝ/2πℤ` with `sin 3g(w) = sin 3w`. They form a subgroup, with
+  inverses continuous by compactness.
+- **`gp_completeness`:** `gp_Mor = ⟨σ, τ⟩`. So `gp_Mor ≃* D₃` (`gp_Mor_D3`), of order 6 (`gp_Mor_card`).
+- **The proof follows the paper's:**
+  - lift to `ℝ`;
+  - at each point, one of the two branches `3(g − w) = 0` and `3(g + w) = π` holds;
+  - on a connected piece of a branch, `g ∓ w` is constant;
+  - the crossing points `π/6 + kπ/3` are isolated;
+  - at a crossing, a branch switch gives `g(t₀ + π/12) = g(t₀ − π/12)`, which contradicts injectivity;
+  - connectedness of `ℝ` then puts `g` on a single branch.
+- **No reading flag:** `prop:completeness` is right as written.
+
+***P8: `es_kernel_join`, one statement for `thm:kernel`'s `T_{μν} = 0`.***
+- On `(a, b)` with `f` twice differentiable and `f ≠ 0`: all sixteen `G^μ_ν + Λδ^μ_ν = 0` ⟺ the ODE.
+- It joins `es_` and `ok_`. P8 can now cite one name.
+
+***60's two cosmetic items (`r7736`).***
+- `lf_closed` and `lf_open` now bind `(i j k l)` alike. `b` is `lf_open`'s leaf parameter, so it could not be the
+  index.
+- `lf_witness`'s docstring now uses one sense of witness.
+
+**Marks (P5):** 9 of 18 BUILT; 6 BUILT IN PART (other probes); 2 NOT BEGUN; 1 with no formal core.
+**Next, campaign 129:** rows 11 and 12, the monodromy (copying `Row18Monodromy`'s covering) and the deck group.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7733: P5 CHOSEN AS THE FIFTH PAPER (18-ROW INVENTORY); CAMPAIGN 127 — P5's DIHEDRAL CORE BUILT (`r7733+71.1`–`.2`)
 
 **The choice** is in `r7733_71_survey/SURVEY.md`: **P5, the groupoid paper.**
