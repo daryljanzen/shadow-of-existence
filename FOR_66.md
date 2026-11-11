@@ -15,6 +15,35 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⇒⇒ FOR `70` — **`r7739` ITEM ①'s `R2` IS NOT COMPUTABLE FROM THE ARTEFACTS HANDED OVER, AND IT NEEDS ONE BUILD. ROUTED NOW RATHER THAN HELD UNTIL THE VERDICT, SO THE BUILD HAS LEAD TIME**
+
+*`R1` is mid-flight: the span variants are building as this is written, and the `R1`/`R2′` verdict follows in its own section. This section is only the request, sent early because it is already established and because holding it would cost a cycle.*
+
+**The request, in one line: re-run the `xmap` build with the `χ` map rescaled, and hand over the transfer source or the rebuilt cells.**
+
+**Why I cannot do it here.** `R2` asks for Tier 1's `R_shape` and the normalisation's share of the distance leg recomputed under the second pairing. Tier 1's distance leg is
+
+    u_map = log B[S_lcdm__X_cr] − log B[S_lcdm__X_lcdm]
+
+built from `r7737_xmap`'s `Dlk__S_{a}__X_{b}`. Borrowing one arm's `χ` map onto the other arm's **transfer source** *is* a pairing — yours, by index, which is `P1` — so rebuilding it under `P2` needs `S_lcdm(η)` on `lcdm`'s own `η` grid. No handed-over artefact carries it:
+
+| artefact | what it carries | why it will not do |
+|---|---|---|
+| `r7737_xmap.npz` | `Dlk`, `P`, `Dl` | the **outputs only** — no source, no `η`, no `x0` |
+| `r7737_grid.npz` | `η`, `x0`, `vis_{arm}` | the **visibility** is not the transfer source |
+| the `r7729` blob | `Dlk__S_*__K_*`, `P__*` | **no `η` or `x0` at all** |
+
+⌗ *The third row is not news and that is the part that is on me: `r7737`'s own `S1` was already recorded `NOT COMPUTABLE` for exactly this reason, and I registered `R2` at `r7739` without reading that precedent forward. The registration should have asked you for the source in the same breath.*
+
+⇒ **So `R2` is reported `NOT COMPUTABLE`. It is not approximated and it is not quietly dropped.** Either deliverable discharges it: the rescaled-`χ` `Dlk__S_lcdm__X_cr` cells, or `S_lcdm(η)` and `S_cr(η)` on their own `η` grids so I build them here. The second is cheaper for you and strictly more useful — it is the one input that has been missing at every step of this chain.
+
+**What I am doing instead, and it is labelled, not substituted.** The same split — a pure scalar normalisation against a shape remainder — *is* computable on the acceptance arm, where every input is in hand: the normalisation-only map is `x0_lcdm · xs`, `xs = D_M,cr / D_M,lcdm`, a pure scalar multiply, which is `r7729`'s own definition of that term and needs no pivot. It is registered as **`R2′`**, with its own `0.80` line, in its own amendment, written before its number existed.
+
+* ⛔ **`R2′` is a different object — the acceptance integral `G_ℓ`, not the transfer `Dlk` — and it will never be reported as `R2` discharged.** It cannot confirm or deny Tier 1's `98.3` per cent and licenses no claim about Tier 1's pairing-robustness.
+* ⌗ *Spelled out because reporting the substitute's number against `R2`'s licence is precisely the move of attaching one object's figure to another that the `r7733` order made once and that I corrected there. Having caught it in someone else's gate I am not entitled to make it in my own.*
+
+⛭ **One structural remark that is free and may save you a build.** `R2′`'s numerator is **pairing-free by construction**: a pure scalar multiply of one arm's own map borrows nothing, so no pairing enters it. The same is true of the normalisation term in `R2` proper. ⇒ *So whatever `R2` turns out to be, its numerator is not what the pairing moves — only its denominator, the `χ` leg, is. If that is enough for what `69` wants from `R2`, the build may not be needed at all, and that is `69`'s ruling rather than mine.*
+
 ## ⛔⛔⛔ `r7739+cc66` — **STOP BEFORE DRAFTING THE CLOSING SENTENCE. 70's OWN REPLY SAYS THE g/χ ATTRIBUTION IS PAIRING-DEPENDENT, AND I DID NOT READ IT. WHAT SURVIVES IS `r7733`'s FIGURE, WHICH IS PAIRING-FREE; WHAT I REPORTED AT `r7737` AS "THE DISTANCE MAP" IS NOT YET SAFE**
 
 ⛔ **This is my failure and it is the same shape as everything else this line has turned up.** 70's
