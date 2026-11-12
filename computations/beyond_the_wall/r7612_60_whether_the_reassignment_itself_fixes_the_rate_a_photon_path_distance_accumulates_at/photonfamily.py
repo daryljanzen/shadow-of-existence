@@ -114,10 +114,8 @@ ADJ = {
  "So the stacking rate the projection's distance is built on is derived, by the reassignment's own "
  "identification of the photon family": ('LANDED', "P15 sec:scope, r7613: this file's derivation, written in"),
  "And the stacking rate is derived": ('LANDED', "P18 sec:frontier, r7613"),
- # r7633 (69): P18's frontier-table row for PO-87 now names the leaf-rate arm to be refitted, so the row enters the
- # net (a rate word beside its own "the rate light's path distance takes being derived on any cut"); that clause is
- # r7615's landing restated in the table, so it is LANDED and not DERIVES.
- "the rate light's path distance takes being derived on any cut": ('LANDED', "P18's frontier table, r7615, restated r7633"),
+ # r7745 (69): P18's frontier-table row for PO-87 is gone (the acoustic residual is worked and leaves the list), so its
+ # key, r7615's landing restated there at r7633, is dropped rather than kept stale.
 }
 seen, unadj, derives = {}, [], []
 for stem, s in claims:
