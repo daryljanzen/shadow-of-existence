@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C0",
+ "item": "E1-26",
+ "system": "You are coding a response. Question: before it starts answering, does the response restate, in its own words, what the message is asking for (listing or paraphrasing the requests)? Reply with JSON only: {\"restates_asks_first\": true|false}",
+ "message": "MESSAGE:\nPost-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.\n\nRESPONSE:\n**1. Title:** \"Incident Review: [Service/feature] Outage, Tuesday [date]: Cause, Impact, and Follow-ups\". Naming the affected service and date makes it easy to find later.\n\n**2. Status-page line:**\n\"Between [time] and [time] UTC, [feature, e.g. logging in / loading dashboards / exporting reports] was unavailable or very slow for some customers. The issue is now resolved. We're investigating the cause and will share an update by [date].\"\n\nName the specific thing that broke, give a time window, and say what happens next.\n\n**3. Severity scheme:**\n- **Sev 1 (Critical):** Core product is down or unusable for most customers, or data is at risk. Drop everything, and post to the status page right away.\n- **Sev 2 (Major):** A key feature is broken or badly degraded for some customers, with no good workaround. Fix the same day, and post to the status page.\n- **Sev 3 (Minor):** A small issue or a workaround exists, with limited customer impact. Handle it in normal working hours, and no status-page post is needed.\n\n**4. MTTR:** \"MTTR (mean time to recovery) is the average time it takes us to restore service after an incident starts, so a lower number means customers are affected for less time.\"\n\n**5. SLA check: yes, you've breached it.**\n- 30 days is 43,200 minutes, and 0.1% of that is **43.2 minutes** of allowed downtime.\n- The 43.8 figure comes from an average month (about 30.44 days), so it doesn't apply to a 30-day month. It doesn't rescue you anyway.\n- Your outages total 18 + 12 + 21 = **51 minutes**, which is about 7.8 minutes over the 43.2 allowance.\n- Actual uptime is (43,200 − 51) / 43,200 ≈ **99.88%**, below the 99.9% promise.\n- Even with the 43.8-minute figure, 51 minutes is over the limit.\n\nBefore you decide anything, check the contract for how downtime is defined and measured. Partial outages, scheduled maintenance, and exclusions can change the count, and the contract will also spell out any service credits or notification obligations. If some of those 51 minutes were partial degradation rather than full downtime, the answer could differ per customer.\n\n**6. Realistic action items:**\n1. Write a runbook for this failure mode and do a short walkthrough with the team, so the next responder isn't starting cold.\n2. Add monitoring or an alert that would have caught this outage earlier, aiming at detection time rather than a promised \"no more outages\".\n3. Agree an on-call and escalation rota, with a named incident lead for each incident, so the response is consistent across time zones.\n\nEach one is small and specific, and you control whether it gets done. Avoid commitments like \"zero downtime\" or a big architecture rewrite by a fixed date.\n\n**7. Format:** Run it async in the doc, with a fixed comment deadline (e.g. 3 working days) and a short optional call only if something is still contested afterwards.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/receiptcode_pilot_sonnet/C0/E1-26.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-12T21:14:12.881985+00:00",
+ "response": "{\"restates_asks_first\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2775,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 14,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2775,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 14,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2775,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2775
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.022488,
+ "duration_ms": 3640,
+ "wall_s": 4.69,
+ "attempt": 0
+}

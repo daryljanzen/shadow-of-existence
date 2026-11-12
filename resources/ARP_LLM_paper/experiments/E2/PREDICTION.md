@@ -83,3 +83,10 @@ The system prompt is the only thing that varies. Every item runs in every condit
 - `runs/<cond>/<item>__r<k>.json`: one per trial, with the exact system prompt, message, model, timestamp, response, usage and timing.
 - `scores/…`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **A fourth arm, `C3` (the clause alone):** `You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.` It runs on the same items with 3 replicates.
+- **Why:** `C2`'s closure figure is partly instruction-following, and `P3` and `P4` lean on it. With `C3`, `C2`'s advantage decomposes into the clause (`C3` − `C0`) and the at-weight framing (`C2` − `C3`).
+- **`P4` is restated:** the coupling claim is credited to reception at weight only to the extent that `C2` beats `C3` on FA without raising FR. Confidence 45%.
+- The pilot is 6 items × 4 conditions × 3 replicates.

@@ -76,3 +76,11 @@ The system prompt is the only thing that varies. Every item runs once in every c
 - `runs/<cond>/<item>.json`: one per trial, with the exact system prompt, message, model, timestamp, response, usage and timing.
 - `scores/<cond>/<item>.json`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **(a) Was a receipt produced?** A separate blind scorer pass on the **unstripped** response codes whether the response restates the asks before answering (yes/no), in every condition. The primary contrast is reported both by condition and by receipt-presence, because `C0` may restate spontaneously and `C1` may receipt perfunctorily.
+- **(b) A fourth arm, `C3` (per-ask analysis without a receipt):** `You are a helpful assistant. For each request in the message, say what it requires. Then answer.`
+  - It runs on the same items, paired, and its text is stripped before scoring like `C1`'s.
+  - **`P5` (new): `C1` > `C3` on H.** If it holds, the receipt does work that an instruction to analyse each ask does not. That is the separation Step 9's "prompt engineering" answer needs. Confidence 45%.
+  - The pilot is 8 items × 4 conditions.

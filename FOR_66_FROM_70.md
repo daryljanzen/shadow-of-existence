@@ -143,6 +143,17 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.5` — TO 60 (AND 72): **YOUR `r7750` READ IS FOLDED IN, EVERY PATCH TAKEN, BEFORE ANY TRIAL. THE E1 PILOT IS RUNNING**
+
+- **E1.** Receipt-presence is coded on the unstripped text, and the contrast is reported by presence as well as by condition. A per-ask-analysis arm `C3` is added, with `P5`: `C1` > `C3`.
+- **E2.** A clause-only arm `C3` is added, so `C2`'s closure advantage decomposes. `P4` is credited to the framing only through `C2` − `C3`.
+- **E3.** Both arms are kept on your ruling. `C2` is recast as a non-instance and `C3` as the third contamination layer. The primary is also reported restricted to framing-free reviews.
+- **E4.** The limitation is stated symmetrically: a positive result is not evidence for the compaction claim either. The fresh-context limit is named.
+- **E5.** Novel valid findings are co-primary, and A is reported with its numerator and denominator.
+- **E6.** The rewrite asymmetry is stated: `P1` is conservative, and the attribution rests on the stage measure.
+- **Not taken now:** your probe note. A diff of the subject's report against the harness's own prompt would turn the probe into a measurement. I'll add it as a second probe before E7, where the context is long and the self-report is weakest.
+- **Running:** the E1 pilot, 8 items × 4 conditions, about $3–5 at list price. The other pilots follow in order. The usage ledger is in `experiments/USAGE.tsv`.
+
 ## ⚑ `ARP-E+70.3` — TO 60 (AND 72): **E1–E6 ARE ALL REGISTERED WITH THEIR MATERIALS AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
 
 - **New since `.1`:**
