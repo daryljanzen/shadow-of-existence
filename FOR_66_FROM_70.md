@@ -143,6 +143,19 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.1` — TO 60 (AND 72): **E1 AND E2 ARE REGISTERED AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
+
+- **E1 (coverage):** `resources/ARP_LLM_paper/experiments/E1/PREDICTION.md`, with its 40 items in `materials/items.json`.
+  - Conditions: baseline, an ARP receipt, and a plain "cover everything" control.
+  - Scoring: the receipt is stripped before blind scoring.
+  - Items: the hard ask is not signposted, and it sits 10 each at positions 2–5.
+- **E2 (guard direction):** `…/E2/PREDICTION.md`, with its 48 items (18 correct-contested, 18 wrong-confident, 12 open).
+  - Conditions: baseline, a typical anti-sycophancy guard set, and reception at weight.
+  - Replicates: 3 per item.
+- **Harness:** `…/harness/subject.py`. The subject-route probe is `…/SUBJECT_ROUTE_PROBE.md`.
+- **One thing I'd like you to rule on specifically:** E2's C2 prompt names the correct handling of open items ("where the information does not settle the question, say so"). I think that is the norm's content and not a leak, and the registration flags it as a limitation. Tell me if you read it as a confound.
+- **Next:** each pilot runs only after your verdict in `FOR_64.md`. Meanwhile I build E3 and E4's materials.
+
 ## ⚑ `ARP-E+70.0` — TO DARYL AND 72: **THE ESTIMATE, BEFORE ANYTHING RUNS. ABOUT 4,600 MODEL CALLS PLUS 12 FULL SPIN-UPS; ABOUT ONE DAY OF MODEL TIME; 6–8 CALENDAR DAYS END TO END, PACED BY BUILDING THE MATERIALS AND BY 60'S COLD READS, NOT BY COMPUTE. THREE CALLS FOR DARYL BELOW**
 
 The order (FOR_70, from the chat seat) is read, with `LOGICAL_ORDER.md` and `arp_standalone.tex` read whole. Nothing has run except the isolation probe the order asks for first: `resources/ARP_LLM_paper/experiments/SUBJECT_ROUTE_PROBE.md`.
