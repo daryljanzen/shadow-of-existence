@@ -1,0 +1,842 @@
+[
+  {
+    "id": "E5-01",
+    "domain": "Public transit planning",
+    "task": "Write a recommendation memo (about 450-550 words) to the Riverton Regional Transit Authority board on whether to adopt the proposed \"Frequent Network\" bus redesign. The board votes on December 10 and needs a clear yes, no, or conditional recommendation, with the reasoning and the main risks.",
+    "fact_pack": "Riverton Regional Transit Authority currently runs 14 bus routes carrying an average of 22,400 weekday boardings. The annual operating budget is $41.2 million and farebox recovery is 18%. The proposed redesign, prepared by an outside consultant, consolidates the 14 routes into 9 routes running every 10-15 minutes all day, instead of the current 20-40 minutes. It uses the same 310,000 annual revenue hours, so it is presented as cost-neutral to operate. The consultant's model projects systemwide ridership growth of 12% within two years, which the consultant estimates would add $1.1 million a year in fare revenue. The share of residents living within a quarter mile of a bus stop would fall from 81% to 73%. Most of the lost coverage is in the Eastgate district, where routes 11 and 14 would be removed and replaced by a single route on Harlan Avenue. In Eastgate, 38% of households have no car and the median resident age is 67. Riders aged 65 and over account for about 2,100 weekday boardings on routes 11 and 14. The neighbouring city of Fairmont made a similar change in 2022. Its fixed-route ridership rose 9% in the first year. Demand for paratransit (door-to-door service for riders with disabilities) rose 21% over the same period. Riverton's paratransit service currently costs $6.0 million a year. A paratransit trip costs Riverton $48, compared with $4.10 per fixed-route boarding. Federal Title VI rules require an equity analysis before any service change that affects more than 25% of a route's miles. Staff estimate the analysis takes about five months and cannot start until the board approves the concept. The board chair has said publicly that she wants the new network running at the August 16, 2027 service change. The drivers' union contract requires the new shift bid to be published at least 120 days before a service change. Stakeholder positions: the Riverton Chamber of Commerce supports the redesign and argues that frequent service downtown will help employers recruit. The Eastgate Neighborhood Association opposes it and has collected 1,300 signatures. The drivers' union is neutral on the routes but has said it will file a grievance over any shortened bid notice. The consultant's contract includes a bonus tied to board adoption of the plan.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Fare gain is smaller than the likely paratransit cost increase: 21% of $6.0M is $1.26M a year, more than the projected $1.1M fare gain, so 'cost-neutral' fails if Fairmont's experience repeats.",
+        "good_handling": "Does the arithmetic, states that the redesign may be net-negative on cost, and makes approval conditional on mitigation (e.g., a coverage route or on-demand zone in Eastgate) or on a paratransit cost estimate."
+      },
+      {
+        "c": 2,
+        "what": "The headline coverage figure (81% to 73%) hides that the loss falls on carless, older Eastgate residents (about 2,100 senior boardings a day), which matters both for equity and for the Title VI analysis.",
+        "good_handling": "Names the Eastgate subgroup explicitly, treats it as the central equity risk, and proposes a specific mitigation rather than citing only systemwide coverage."
+      },
+      {
+        "c": 3,
+        "what": "The timeline does not work: a December 10 approval plus a 5-month Title VI analysis ends around mid-May, but the union requires the bid to be published by about April 18 (120 days before August 16), so the August 2027 launch is not feasible without a shortened notice, which the union has said it will grieve.",
+        "good_handling": "Works out the dates, tells the board that August 2027 is unrealistic, and proposes a later service change (e.g., January 2028) or a phased launch."
+      },
+      {
+        "c": 4,
+        "what": "The ridership projection comes from a consultant who has a financial interest in adoption, and it is optimistic compared with the only real comparison case (12% projected against 9% in Fairmont).",
+        "good_handling": "Discounts or sensitivity-tests the 12% figure, mentions the consultant's adoption bonus, and does not present the projection as settled."
+      }
+    ]
+  },
+  {
+    "id": "E5-02",
+    "domain": "Hospital workforce finance",
+    "task": "Write a budget justification memo (about 450-600 words) to the CFO of St. Brendan Medical Center proposing to replace agency (temporary) nurses on the medical-surgical units with permanently employed RNs. The CFO must decide whether to approve the hiring budget in the FY2027 plan, which is finalised in January.",
+    "fact_pack": "In FY2026 St. Brendan spent $9.6 million on agency nurses for its four medical-surgical units. This covered the equivalent of 48 full-time agency RNs, at an average cost of $200,000 per agency FTE per year. A permanently employed med-surg RN costs $128,000 a year fully loaded ($98,000 salary plus $30,000 in benefits and payroll taxes). Each new hire receives a $15,000 sign-on bonus. New hires go through 12 weeks of orientation and do not count toward staffing ratios during that time, so agency coverage has to continue for each position until the new hire finishes orientation. HR can run at most one orientation cohort of 6 RNs per month, because of preceptor and classroom capacity. Recent applicant pools have been about 60% new graduates and 40% experienced nurses. First-year turnover at St. Brendan is 27% for new-graduate RNs and 14% for experienced RNs. Each departure in the first year means the sign-on bonus and orientation cost are lost (sign-on bonuses are repayable only if the nurse leaves within 6 months). A state law passed in September takes effect on July 1, 2027. It lowers the maximum med-surg nurse-to-patient ratio from 1:6 to 1:5. Nursing administration estimates the new ratio needs about 22 more RN FTEs on the four units, on top of replacing the agency positions. Hospitals that are out of compliance face fines of up to $25,000 per day. The CFO's FY2027 target is a 5% cut in total labor cost. The Chief Nursing Officer's stated goal is zero ratio violations and lower dependence on agency staff. The nurses' union supports permanent hiring. It opposes any plan that relies on mandatory overtime, which the contract caps at 8 hours per nurse per pay period, and it has said it will resist any expansion of the float pool. Agency contracts can be cancelled with 30 days' notice. The current agency vendor has offered a 6% rate reduction in return for a 12-month commitment for at least 30 FTEs. Hiring can begin in January 2027 if the budget is approved.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "First-year savings are much smaller than the simple comparison suggests. At steady state, 48 x ($200k - $128k) = $3.456M a year, but each hire carries a $15k bonus plus about $29.5k of orientation time (12/52 x $128k) while agency coverage continues, and the onboarding rate limits how quickly agency spend falls.",
+        "good_handling": "Separates steady-state savings from first-year net, includes the one-time and overlap costs, and does not present $3.456M as FY2027 savings."
+      },
+      {
+        "c": 2,
+        "what": "The ratio law and the onboarding limit collide. Replacing 48 agency FTEs and adding 22 for the law means about 70 hires, but at 6 per month only about 36 can be onboarded between January and July 2027 (and fewer will have finished orientation), so the hospital cannot meet the July deadline with permanent hires alone.",
+        "good_handling": "Calculates the hiring capacity, recognises that agency staff will still be needed to cover the law (which may favour taking the vendor's 12-month offer), and puts the hires in a sensible order."
+      },
+      {
+        "c": 3,
+        "what": "The CFO's 5% labor cost cut and the CNO's zero-violation goal pull in opposite directions, because the ratio law adds roughly 22 FTEs (about $2.8M a year if permanent).",
+        "good_handling": "States the conflict openly and asks the CFO for an explicit trade-off or a revised target, rather than claiming both goals are met."
+      },
+      {
+        "c": 4,
+        "what": "Turnover among new graduates (27%) and the 60% new-graduate share of applicants erode savings and mean some hires will need to be replaced.",
+        "good_handling": "Builds an attrition or replacement assumption into the numbers and proposes retention measures or a preference for experienced hires."
+      }
+    ]
+  },
+  {
+    "id": "E5-03",
+    "domain": "SaaS pricing and product launch",
+    "task": "Write a launch plan (about 450-600 words) for the VP of Product at Tasklane, a project-management software company, for a proposed new \"Team\" pricing tier at $12 per user per month. The plan should recommend whether to launch in Q1 2027 as currently scheduled, and on what terms.",
+    "fact_pack": "Tasklane currently has two plans. The Free plan allows up to 5 users. The Business plan costs $20 per user per month. Business has 5,000 paying accounts with an average of 12 users each, for $14.4 million in annual recurring revenue (ARR). 61% of Business accounts have between 6 and 15 users. The proposed Team tier would cost $12 per user per month. It would include everything in Business except SSO, audit logs and the admin API, and it would add live chat support. Free has about 40,000 active teams with an average of 4 active users. In a survey of 400 Free teams, 34% said they were \"likely\" or \"very likely\" to pay for Team at $12. Tasklane's past data shows that stated purchase intent converts to actual purchases at roughly one-third of the survey rate. In a pricing pilot, 200 randomly selected Business accounts were shown the Team option at renewal. 23% of them chose to downgrade to Team. Customer Support estimates that live chat costs about $18 per account per month for small accounts. The Head of Sales opposes the launch. Sales commissions are paid on Business bookings, and the sales team believes Team will pull away the mid-size accounts that make up most of their quota. Security has noted that 9% of current Business accounts are flagged as \"compliance-sensitive\" because they belong to customers in regulated industries. Engineering estimates 10 weeks of work to add the new tier to the billing and entitlements system, starting from approval, which is expected on November 16. The company has a holiday code freeze from December 18 to January 4. A planned migration of the billing platform freezes all new products and price changes from February 1 to March 31. Marketing has booked a launch campaign tied to an industry conference on February 10 and has already paid a non-refundable $60,000 for sponsorship. The CEO's goal for 2027 is 25% ARR growth. The board has also asked management to raise the share of revenue coming from the self-serve channel, which is currently 30%.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Cannibalisation is significant: if 23% of Business accounts downgrade, ARR falls by about $1.32M (0.23 x $14.4M x 8/20), which offsets much of the new revenue from Free teams (about $2.6M ARR if one-third of 34% of 40,000 teams convert at 4 users), and live chat costs (about $0.98M a year for roughly 4,500 accounts) reduce it further, leaving a thin margin.",
+        "good_handling": "Builds a net-revenue estimate that includes downgrades and support costs and proposes measures to limit downgrades (e.g., seat caps on Team, keeping SSO in Business only, offering Team only to new accounts)."
+      },
+      {
+        "c": 2,
+        "what": "The schedule cannot meet Q1: 10 weeks from November 16, plus the 2.5-week holiday freeze, puts completion around February 11, after the February 1 billing freeze starts, so nothing can ship until April unless the scope changes, and that clashes with the paid February 10 campaign.",
+        "good_handling": "Works out the dates, flags that the February 10 launch is not realistic, and proposes a different launch date or a reduced scope that ships before February 1."
+      },
+      {
+        "c": 3,
+        "what": "The stated survey intent overstates demand. The 34% figure needs to be adjusted using the company's own one-third conversion factor.",
+        "good_handling": "Applies the adjustment (about 11%) and does not use 34% as the conversion rate."
+      },
+      {
+        "c": 4,
+        "what": "Sales has a real incentive problem: commissions reward Business bookings, so the team may resist or undermine Team, and its objection that mid-size accounts will downgrade is supported by the pilot.",
+        "good_handling": "Addresses the sales compensation issue directly (e.g., credit Sales for Team bookings or define which territories it applies to) and treats the objection as legitimate."
+      }
+    ]
+  },
+  {
+    "id": "E5-04",
+    "domain": "K-12 education policy",
+    "task": "Write a short policy proposal (about 450-600 words) for the Pine Valley School District board on whether to move to a four-day school week starting in the 2027-28 school year. The board will decide in January whether to start the formal adoption process.",
+    "fact_pack": "Pine Valley is a rural district with 4,800 students and a general fund budget of $68 million. The district projects a $2.1 million budget shortfall for 2027-28. District staff estimate that a four-day week would save $1.4 million a year. The breakdown is $600,000 in transportation, $350,000 in utilities and $450,000 in reduced hours for classified staff (bus drivers, cafeteria workers and custodians, whose hours would drop by about 20%). The district currently provides 1,110 instructional hours a year over 175 days. State law requires at least 1,080 instructional hours. The proposed four-day calendar has 144 school days. Pine Valley had 31 teaching positions it could not fill last year. In a staff survey, 78% of teachers said they favour a four-day week. Two neighbouring districts that switched to four days reported more applicants per opening. Studies of four-day weeks in other states find small average declines in student achievement, especially in math, of around 0.03 to 0.06 standard deviations. The declines were largest in districts that did not add instructional time to the remaining days, and the studies note that the research is still limited. About 41% of students qualify for free or reduced-price meals, and many rely on school breakfast and lunch. The district has estimated that an optional supervised program with meals on the fifth day would cost about $520,000 a year if offered free to students who qualify for meal assistance. Parents of kindergarten and first-grade students have raised concerns about longer school days at a recent board meeting. A local childcare centre has said it does not have room for more children on the fifth day. The classified staff union says its members' hours would be cut, along with their pay, and that some would lose eligibility for health benefits, which requires 30 hours a week. The union has said it will oppose the change. The state requires any district changing to a four-day calendar to submit the new calendar by March 1 of the preceding school year and to hold a public hearing at least 60 days before submission.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The instructional-hours rule forces long days: 1,080 hours over 144 days is 7.5 hours of instruction a day, compared with about 6.3 now, which matters for young children and is linked to whether achievement drops.",
+        "good_handling": "Calculates the required daily hours, discusses what that means for young students, and connects it to the finding that achievement declines are smaller when time is added."
+      },
+      {
+        "c": 2,
+        "what": "The savings do not close the gap, and part of them are spent again. $1.4M is less than the $2.1M shortfall, and a fifth-day meal and supervision program costing $520k would cut net savings to about $0.88M.",
+        "good_handling": "Shows the net figure, says plainly that the four-day week does not solve the budget problem on its own, and decides whether the fifth-day program is needed for low-income families."
+      },
+      {
+        "c": 3,
+        "what": "Nearly a third of the savings ($450k) come out of the pay of low-wage classified staff, some of whom would lose health benefits. That is both a fairness issue and the source of strong union opposition.",
+        "good_handling": "States who bears the cost, considers mitigation (e.g., protecting benefits eligibility or reassigning hours), and does not describe the savings as painless efficiencies."
+      },
+      {
+        "c": 4,
+        "what": "The deadlines are tight: submission by March 1, 2027 means the public hearing must be held by about December 31, 2026, which is before the board's January decision to start the process.",
+        "good_handling": "Notices the deadline conflict and either moves the start to 2028-29 or proposes an immediate hearing schedule."
+      }
+    ]
+  },
+  {
+    "id": "E5-05",
+    "domain": "Manufacturing procurement",
+    "task": "Write a vendor recommendation memo (about 450-550 words) to the Director of Procurement at Halvorsen Controls, choosing between two suppliers for the plastic housing used in its thermostat product line. The director needs a recommendation she can take to the CFO before tooling is ordered in December.",
+    "fact_pack": "Halvorsen needs a supplier for the injection-molded housing for its T-series thermostats. Sales forecasts 400,000 units for 2027. Over the last two years, actual volumes were 310,000 (against a forecast of 420,000) and 290,000 (against a forecast of 410,000). Supplier A (Ohio): $3.40 per unit, 0.4% defect rate, 3-week lead time, one-time tooling cost of $85,000. Supplier B (Vietnam): $2.55 per unit, plus about $0.38 per unit in freight and duty, 1.8% defect rate, 11-week lead time, one-time tooling cost of $40,000. A defective housing is usually found at final assembly. Rework, including scrapped parts and labor, costs about $14 per defective unit. Because of B's longer lead time, operations estimates Halvorsen would need to hold about 8 more weeks of safety stock. Inventory carrying cost is 20% a year. Halvorsen's largest customer, Brightline Homes, buys about 35% of T-series volume. Brightline's contract, renewed last spring, requires that products meet USMCA regional-content rules, which the plastic housing would not meet if made in Vietnam. The government is reviewing tariffs on this category of products from Vietnam and is expected to decide in February 2027. One option under consideration is an additional 25% tariff on the declared value of the part. Engineering plans a redesign of the T-series for mid-2028 that will need new tooling, so tooling bought now will be used for about 18 months. The CFO has asked for a 10% reduction in the cost of goods sold for the T-series. The Quality Manager opposes Supplier B. She points to two field-failure recalls in 2023 that came from a different offshore supplier and cost Halvorsen $410,000. Supplier B has offered to pay for one of Halvorsen's quality engineers to spend a month at its plant during the production ramp-up. Both suppliers can start production by March 2027. Neither will accept a contract shorter than 12 months.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "At the forecast 400k units, B is cheaper on unit price by about $188k a year ($3.40 vs $2.93 landed), but extra rework (1.8% vs 0.4% at $14, about $78k) and inventory carrying costs reduce the gap to roughly $75k a year, and if volume follows recent history (about 300k), the advantage shrinks further.",
+        "good_handling": "Calculates total landed cost, not just unit price; questions the 400k forecast against actual volumes; and shows how sensitive the result is to volume."
+      },
+      {
+        "c": 2,
+        "what": "35% of volume (Brightline) cannot come from Vietnam under the USMCA content clause, so B can supply at most about 65% of volume, and using both suppliers means paying for tooling twice.",
+        "good_handling": "Notices the constraint, adjusts the comparison (B for at most 65% of volume, or A for everything), and works out the dual-sourcing cost."
+      },
+      {
+        "c": 3,
+        "what": "A possible 25% tariff (about $0.64 per unit on $2.55) would put B's landed cost around $3.57, above A's $3.40, and the decision is due in February, after tooling is ordered but before production starts.",
+        "good_handling": "Treats the tariff as a major scenario that could reverse the choice, and proposes a way to manage it (e.g., delay commitment, contract terms that adjust for tariffs, or choose A)."
+      },
+      {
+        "c": 4,
+        "what": "Tooling is used for only about 18 months because of the 2028 redesign, so the $45k tooling difference matters more than usual, and the 10% COGS target may not be reachable through the housing alone.",
+        "good_handling": "Spreads tooling cost over 18 months and tells the CFO how much of the 10% target this choice can realistically deliver."
+      }
+    ]
+  },
+  {
+    "id": "E5-06",
+    "domain": "Nonprofit grant writing",
+    "task": "Write a grant summary (about 450-550 words) for the Harvest Table Food Bank's application to the Carlisle Family Foundation, requesting $250,000 to expand its mobile food pantry into underserved rural areas. The summary is the first thing the foundation's review panel reads and must persuade them that the project is sound and fundable.",
+    "fact_pack": "Harvest Table served 18,200 households in 2025, up 26% from 14,450 in 2023. It distributes food through 61 partner pantries and a mobile pantry program. The mobile pantry uses 2 refrigerated trucks to visit 9 rural sites once a month. The proposed expansion adds a third refrigerated truck and 6 new mobile sites in Hollis, Wren and Tamarack townships. Food insecurity in those townships is estimated at 17%, compared with 11% for the county as a whole. Projected costs: refrigerated truck $165,000 (one-time); a driver and a site coordinator $92,000 a year combined; fuel and maintenance $28,000 a year. First-year cost is $285,000. The Carlisle Foundation's guidelines say capital purchases may not exceed 40% of any grant award. Grants are for one year only, and applicants must explain how ongoing costs will be paid after the grant ends. Each mobile pantry visit distributes about 42 pounds of food per household. The mobile program costs Harvest Table about $0.61 per pound distributed, compared with $0.19 per pound through partner pantries, which use volunteers and donated space. Attendance has been falling at 4 of the current 9 mobile sites over the past year, and one board member has asked whether those sites are still needed. The county Department of Social Services has offered to host the new sites in the parking lots of its 6 field offices free of charge, but only on weekdays between 9 a.m. and 4 p.m. In a survey of rural clients, 58% said they work hourly jobs, and most said they would prefer evening or Saturday distributions. The county's allocation of federal TEFAP commodity food, which makes up about 30% of Harvest Table's inventory, will be cut by 18% for fiscal year 2027. Harvest Table's operating budget is $3.4 million, and it ended 2025 with an operating surplus of $40,000. A local grocery chain has offered to donate the truck's branding wrap and $15,000 a year in gift cards for clients.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The truck ($165k) is 66% of a $250k request, well above the foundation's 40% capital cap ($100k), so the budget as proposed is not eligible.",
+        "good_handling": "Notices the cap and changes the budget (e.g., a used or leased truck, other funding for part of the truck, or a smaller request) so it complies."
+      },
+      {
+        "c": 2,
+        "what": "$120k a year in ongoing staff and running costs continues after a one-time grant, and the food bank's $40k surplus cannot cover it; the foundation requires a sustainability plan.",
+        "good_handling": "Gives a specific plan for paying the ongoing costs (named funders, budget reallocation, etc.) rather than general language about future fundraising."
+      },
+      {
+        "c": 3,
+        "what": "The mobile pantry costs more than three times as much per pound as partner pantries, and 4 of the existing 9 sites are declining, which weakens the case for expansion unless it is clearly explained.",
+        "good_handling": "Acknowledges the cost difference and justifies it with the lack of partner pantries in these townships, and considers moving resources from the declining sites."
+      },
+      {
+        "c": 4,
+        "what": "The free host sites are only open on weekday daytimes, but most clients work hourly jobs and prefer evenings or Saturdays; in addition, the 18% TEFAP cut may limit how much food is available to distribute.",
+        "good_handling": "Deals with the timing mismatch (e.g., other evening sites or a different arrangement with the county) and says where the extra food will come from given the TEFAP cut."
+      }
+    ]
+  },
+  {
+    "id": "E5-07",
+    "domain": "Retail operations",
+    "task": "Write a recommendation memo (about 450-550 words) to the Regional Vice President of Corrigan Hardware on whether to close the company's Riverside store when its lease ends. The memo must give a clear recommendation and the reasons for it.",
+    "fact_pack": "Riverside had sales of $3.9 million in 2025 and shows a four-wall loss of $210,000 in the company's store profit-and-loss report. That figure includes $260,000 of allocated corporate overhead (head office, IT and marketing), which the finance team confirms would remain with the company if the store closed. The current annual rent is $480,000. The landlord's renewal offer is a 5-year lease at an 18% higher rent. The lease ends June 30, 2027. Under the lease, the tenant must give written notice of non-renewal at least 180 days before the end date, or the lease automatically renews for one year at the new rate. The nearest other Corrigan store is Millbrook, 7 miles away. When Corrigan closed two other stores in 2019 and 2022, about 45% of the closed stores' sales moved to the nearest remaining store. The company's contribution margin on sales (after cost of goods and variable store costs) is about 22%. Both earlier closures were in suburban locations where most customers were do-it-yourself homeowners. About 31% of Riverside's sales are to professional contractors with trade accounts. In a 2024 survey, contractors ranked store location and proximity to job sites as their top reason for choosing a supplier. A competitor, Bauer Supply, opened a store 3 miles from Riverside in 2025. Millbrook already runs at 92% of its checkout and parking capacity on weekends. Riverside is the only Corrigan store with a propane refill station, which generates about $310,000 a year in sales and, according to the store manager, brings in customers who also buy other items. Riverside has 38 employees. Millbrook can take on about 12 of them. Estimated severance for the rest is $140,000. Closing the store and clearing its stock would cost an additional $90,000. The store manager believes the store can be turned around with a new contractor sales representative, who would cost $85,000 a year. Riverside's sales fell 4% in 2025 and 6% in 2024.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The $210k reported loss is misleading because $260k of allocated overhead stays even if the store closes. Before rent goes up, the store actually contributes about +$50k; with the higher rent (+$86.4k), it would be about -$36k.",
+        "good_handling": "Takes out the allocated overhead, works out the real change in profit from closing versus staying (including the rent increase and how much of the store's sales would be kept), and does not use $210k as the gain from closing."
+      },
+      {
+        "c": 2,
+        "what": "The 45% sales-transfer rate comes from closures where most customers were homeowners. Riverside's 31% contractor share, contractors' preference for proximity and a nearby competitor all suggest less sales will transfer, and Millbrook has little spare capacity on weekends.",
+        "good_handling": "Lowers or questions the transfer assumption for contractor sales, tests different transfer rates, and considers Millbrook's capacity limit."
+      },
+      {
+        "c": 3,
+        "what": "The notice deadline is about January 1, 2027, roughly seven weeks away. Missing it means automatic renewal for a year at the higher rent.",
+        "good_handling": "Puts the deadline at the top of the memo and asks for a decision, or a negotiated short extension, before it."
+      },
+      {
+        "c": 4,
+        "what": "The propane station generates $310k in sales plus extra visits that may not move to Millbrook, and the store manager's turnaround plan is a real option that needs to be compared with closing.",
+        "good_handling": "Takes the propane sales into account and assesses the turnaround option (cost $85k, needed sales increase) as a real alternative or a time-limited test, for example under a short lease."
+      }
+    ]
+  },
+  {
+    "id": "E5-08",
+    "domain": "Human resources / workforce planning",
+    "task": "Write a 2027 hiring plan (about 450-600 words) for the customer support team at Paybridge, a consumer payments app, for the Chief Operating Officer. The COO must approve the number of hires and when they start, within the 2027 headcount budget.",
+    "fact_pack": "Paybridge's support team has 42 agents. In 2026 they handled an average of 31,000 tickets per month. A fully trained agent handles about 740 tickets per month. New agents take 10 weeks to reach full productivity and average about 50% productivity during that period. The growth team projects that active users will grow 35% in 2027. In September 2026 Paybridge launched a new self-service help centre. In its first two months, tickets per active user fell 12% compared with the same months the year before. Annual agent attrition is 38%. Exit interviews mention night-shift scheduling and pay below that of local competitors. About 18% of tickets are in Spanish. The team has 4 bilingual agents, and English-only agents cannot handle Spanish tickets. Average wait time for Spanish tickets is 3.4 times longer than for English tickets. A new rule from the state financial regulator takes effect April 1, 2027. It requires every customer complaint to receive a written response within 15 days and to be recorded in a complaint log. Support leads estimate that this will add about 6 minutes of handling time to each complaint ticket. Complaints are currently about 9% of tickets. Ticket volume is seasonal. From February through April, during tax season, volume runs about 40% above the annual monthly average. The COO has approved a budget for 12 net new agent positions in 2027. Loaded cost is $68,000 per agent per year. The recruiting team can run one training class a month of up to 8 new hires. The next available class start date is January 11. The VP of Product has said that two more self-service features (dispute status tracking and card replacement) will launch in Q2 and could reduce tickets further, but no estimate of the effect has been provided. Finance has suggested outsourcing overflow tickets to a vendor at $4.10 per ticket. Compliance has said that complaint tickets may not be outsourced.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Ticket volume will not grow at the same rate as users: a 35% rise in users combined with a 12% drop in tickets per user means about 19% more tickets (1.35 x 0.88 = 1.188), about 36,800 a month, not 41,850.",
+        "good_handling": "Applies the self-service effect (and notes it is based on only two months of data and could change), and does not size the team on raw user growth."
+      },
+      {
+        "c": 2,
+        "what": "Spanish tickets are a separate bottleneck. Spanish volume (about 5,580 a month now) needs about 7.5 agents, but there are only 4 bilingual agents. A total headcount figure hides this gap.",
+        "good_handling": "Plans bilingual hiring as its own target and explains how it fits within the budget."
+      },
+      {
+        "c": 3,
+        "what": "With 38% attrition, about 16 agents a year will leave and need replacing, in addition to net growth. Training takes 10 weeks, and the February-April peak means agents need to start in December or January to help at all.",
+        "good_handling": "Separates replacement hires from net new hires, sets start dates working back from the peak, and addresses the causes of attrition."
+      },
+      {
+        "c": 4,
+        "what": "The new regulator rule adds handling time from April and complaint tickets cannot be outsourced, which affects how much the outsourcing option can help, and the result may still exceed the budget of 12 net hires.",
+        "good_handling": "Calculates the extra workload (9% x tickets x 6 minutes), limits outsourcing to non-complaint tickets, and makes clear to the COO whether the budget of 12 is enough."
+      }
+    ]
+  },
+  {
+    "id": "E5-09",
+    "domain": "Agriculture / farm capital investment",
+    "task": "Write a budget justification (about 450-550 words) for the board of Delgado Family Farms proposing a $1.52 million investment in subsurface drip irrigation for 800 acres of processing tomatoes. The board meets in December to decide whether to proceed for the 2027 season.",
+    "fact_pack": "Delgado Family Farms grows processing tomatoes on 800 acres using furrow (flood) irrigation. Subsurface drip irrigation would cost $1,900 per acre installed, or $1.52 million in total. Drip would reduce water use from about 3.6 to 2.7 acre-feet per acre per year. Trials on similar farms show a 12% increase in yield. Current yield is 48 tons per acre, and the cannery pays $105 per ton. The irrigation vendor's proposal values the water savings at $310 per acre-foot, which is the irrigation district's price. Only about 40% of Delgado's water is bought from the district. The rest comes from the farm's own wells, at a pumping cost of about $95 per acre-foot. Drip requires ongoing maintenance, including filter replacement, tape repairs and line flushing. This costs about $210 per acre per year. Electricity for the pressurized system would add about $45 per acre per year. Processing tomatoes are grown in rotation, with wheat every third year on each field. Drip lines can stay in the ground during a wheat year, but do not generally improve wheat yields. Of the 800 acres, 300 are leased from a neighbour under a lease that ends in 2029. The neighbour has not said whether he will renew. The local groundwater agency has announced that pumping allocations will be cut 30% starting in 2028. Farms that use more than their allocation will face fines. Delgado's contract with the Westfield cannery runs through the 2027 harvest. Westfield has told growers that it may consolidate processing at one plant 70 miles away. The federal EQIP conservation program can pay up to 50% of the cost of drip irrigation. Applications for the next round are due January 15. EQIP funds cannot pay for any work that starts before the contract is signed, which typically happens in May. The farm has a $900,000 line of credit at 8% interest. Delgado's eldest daughter, who is taking over management, supports the investment. Her father prefers to wait a year.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The vendor's water savings use the district price ($310) for all water, but 60% of water costs only $95 to pump. The blended value is about $181 per acre-foot, so the 720 acre-feet saved are worth about $130k, not $223k, and ongoing costs of about $204k a year ($255 per acre) reduce the net benefit further.",
+        "good_handling": "Recalculates the water savings with the blended price, subtracts the ongoing costs, and shows the corrected payback period including the yield gain (about $484k a year in tomato years)."
+      },
+      {
+        "c": 2,
+        "what": "The yield benefit only applies in tomato years (two out of three on each field) and depends on a cannery contract that ends after 2027 and may move 70 miles away; 300 acres are leased only through 2029.",
+        "good_handling": "Adjusts the benefits for rotation, discusses the risk to the cannery contract, and considers installing drip only on owned land."
+      },
+      {
+        "c": 3,
+        "what": "The EQIP deadline and its rule against starting work early conflict with installing drip for the 2027 season: starting now gives up up to $760k in cost-share.",
+        "good_handling": "Points out the trade-off and probably recommends applying by January 15 and installing after the contract is signed, even if that means a later season."
+      },
+      {
+        "c": 4,
+        "what": "The 30% cut in groundwater allocations from 2028 strengthens the case for saving water, and that is not counted in the vendor's per-acre-foot savings.",
+        "good_handling": "Recognises that drip helps the farm stay within its future allocation, which may be its most important benefit."
+      }
+    ]
+  },
+  {
+    "id": "E5-10",
+    "domain": "Public library policy",
+    "task": "Write a policy proposal (about 450-550 words) for the Ashford Public Library Board of Trustees recommending whether to eliminate overdue fines. The board will vote in February, and any change that affects the budget must also go to the city council.",
+    "fact_pack": "In 2025 Ashford Public Library collected $186,000 in patron charges, out of a total operating budget of $8.9 million. Of that amount, $115,000 came from overdue fines. The other $71,000 came from charges for lost or damaged items. Staff estimate that handling fines (desk transactions, disputes and account work) costs about $64,000 a year in staff time. Card payment fees cost another $9,000 a year. Library accounts that owe more than $10 are blocked from borrowing. About 22,400 cards are currently blocked. 61% of blocked cards belong to residents of three zip codes where the median household income is below $40,000. 38% of blocked cards belong to people under 18. Lakeshore Public Library, a nearby library of similar size, eliminated overdue fines in 2023. It reported that the share of items returned on time stayed about the same, and that card renewals increased 14% in the following year. Under the city's budget ordinance, all patron charges collected by the library go into the library's materials budget, which pays for books and other items. The materials budget is $1.1 million. The city council would have to change the ordinance or make up the lost revenue. Budget requests for the next fiscal year, which starts July 1, are due to the city by April 1. The library refers accounts that owe more than $50 to a collection agency. The current agency contract ends September 30, 2027. Ending it early would cost a $15,000 termination fee. The Friends of the Library, which raises about $90,000 a year for programs, has opposed eliminating fines. Its president says fines \"teach responsibility\" and that losing them would hurt the materials budget. Branch staff, through their union, support eliminating fines. They say that disputes about fines lead to most of the hostile interactions at service desks. Two city council members have said they will support any change that does not increase the city's overall spending.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Only $115k of the $186k is overdue fines; $71k is lost-item charges, which may be kept. After the $73k in collection costs, the net loss from removing overdue fines is about $42k, much less than the headline figure.",
+        "good_handling": "Separates overdue fines from lost-item charges, proposes keeping replacement charges (possibly with relief for minors), and shows the net cost."
+      },
+      {
+        "c": 2,
+        "what": "Fine revenue goes by law into the materials budget, so the decision needs the city council to change the ordinance, and the April 1 budget deadline sets the timeline.",
+        "good_handling": "Says that council approval is needed, works out the timing (board vote in February, request to the council by April 1), and connects the small net cost to the council's 'no increase in spending' position."
+      },
+      {
+        "c": 3,
+        "what": "The blocked cards are concentrated in low-income zip codes and among minors, which is the strongest equity argument but is hidden in the overall count of 22,400.",
+        "good_handling": "Uses the subgroup figures as the main evidence and suggests measures such as clearing existing debts."
+      },
+      {
+        "c": 4,
+        "what": "The collection agency contract runs until September 30, 2027 and ending early costs $15k, and the Friends of the Library, a major donor, has a strong objection that needs answering.",
+        "good_handling": "Times the change to match the contract end (or explains the cost of ending early) and responds to the Friends' concerns without dismissing them."
+      }
+    ]
+  },
+  {
+    "id": "E5-11",
+    "domain": "Restaurant operations",
+    "task": "Write a recommendation memo (about 450-550 words) to the two owners of Fennel & Co., a group of six restaurants, on whether to stop using third-party delivery apps and launch their own direct ordering and delivery service in 2027. They want a clear recommendation they can act on this quarter.",
+    "fact_pack": "Fennel & Co. had total sales of $12.1 million in 2025. Of that, $2.3 million (19%) came from delivery orders placed through third-party apps. The average delivery order was $38. The apps charged an average commission of 27%, or about $621,000 for the year. The owners describe the commissions as \"our single biggest controllable cost.\" A direct ordering system would cost about $18,000 a year in software for all six restaurants. Deliveries would be handled by a white-label courier service at $8.50 per order. The owners estimate they would also need about $60,000 in marketing in the first year to move customers to the direct app. Orders on direct platforms tend to be larger, because restaurants usually charge app customers higher menu prices to cover commissions, and the owners would drop those higher prices on the direct channel. Industry consultants say restaurants that leave the apps completely usually keep between 40% and 60% of their delivery orders on their own channel. Food and packaging costs plus kitchen labor on delivery orders come to about 65% of the order value. The two restaurants near the State University campus, Elm Street and College Ave, get 41% of their sales from delivery apps. The other four average 12%. Data from the apps shows that 68% of Fennel's app customers in 2025 had never ordered from Fennel before that year. In October the city council passed an ordinance capping delivery app commissions at 15% of the order value, effective March 1, 2027. Two of the app companies have said they will add or increase customer-side fees in response. One of them has said it may challenge the ordinance in court. The general manager of Elm Street warns that leaving the apps would \"kill our late-night business.\" The owners' accountant points out that Fennel's lease at College Ave comes up for renewal in 2028 and that the location's results will matter for that decision. The kitchen staff have complained about delays caused by app couriers arriving at the same time as dine-in rush.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Leaving the apps does not pay. Today delivery contributes about $184k (2.3M x (35% - 27%)). Going direct with every order kept gives about $213k ($805k contribution minus about $514k courier fees on about 60,500 orders and $78k software and marketing), barely better. At the expected 40-60% retention it falls to roughly $40k-$95k, so leaving loses money.",
+        "good_handling": "Includes the expected loss of orders in the calculation and concludes that leaving the apps completely would probably lose money."
+      },
+      {
+        "c": 2,
+        "what": "The commission cap from March 2027 cuts the app commission to 15% (about $345k a year at current volume), raising the contribution from staying on the apps to about $460k (2.3M x 20%), which changes the decision much more than switching to direct delivery would.",
+        "good_handling": "Uses the cap as the main input, considers staying on the apps at 15% while adding direct ordering as an extra channel, and mentions the risk of a legal challenge and higher customer fees."
+      },
+      {
+        "c": 3,
+        "what": "The two campus restaurants depend much more on the apps (41% of sales against 12%), so the average hides where the risk is concentrated.",
+        "good_handling": "Considers handling locations differently, for example keeping apps at the campus locations."
+      },
+      {
+        "c": 4,
+        "what": "The apps bring in new customers (68% were new), which a direct channel would not do.",
+        "good_handling": "Treats the apps partly as a marketing cost and proposes using them to find customers and the direct channel to keep them."
+      }
+    ]
+  },
+  {
+    "id": "E5-12",
+    "domain": "Logistics / warehouse automation",
+    "task": "Write a recommendation memo (about 450-600 words) to the VP of Operations at Calder Distribution on whether to approve a $4.8 million investment in autonomous mobile robots (AMRs) for order picking at its Joliet distribution centre. The capital committee meets in January.",
+    "fact_pack": "The Joliet distribution centre ships an average of 18,000 orders a day. During the November-December peak, volume reaches about 41,000 orders a day. Orders average 3.4 lines (different products) each. Picking is done by 140 permanent pickers at a loaded cost of $52,000 a year each. During the 10-week peak, Calder adds up to 110 temporary workers, which cost about $1.1 million in 2025. Pickers currently average 95 picks per hour. The AMR vendor, Kinetiq, proposes a $4.8 million system. It says productivity would rise to 240 picks per hour and that Calder could cut 120 picker positions, saving $6.24 million a year and paying for itself in under a year. The 240 figure comes from Kinetiq's reference site, a pharmacy distributor where 85% of orders have only one line. A second reference site, which ships multi-line apparel orders, reports 160 picks per hour. The quoted system is designed for up to 25,000 orders a day. Kinetiq can lease extra robots for peak periods at $310,000 per season. Annual software licences and maintenance are 18% of the purchase price, starting in year 1. Kinetiq's quote assumes the floor meets its flatness specification. Calder's facilities engineer says parts of the floor would need resurfacing, which a contractor has estimated at $380,000. Calder's union contract, which runs until December 31, 2028, does not allow layoffs of permanent warehouse staff for technological change. Annual turnover among permanent pickers is 22%. The Joliet building lease ends in December 2029. The landlord has said he is considering redeveloping the site, and Calder's real estate team gives renewal \"about even odds.\" Kinetiq says the system could be moved to another building for about $600,000. The CFO requires capital projects to pay back within 3 years. Two competitors in the region have installed similar systems in the past 18 months. Customer service reports that 2.1% of orders currently contain at least one picking error. Kinetiq claims its system reduces errors by 70%.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The vendor's 240 picks per hour comes from single-line orders. Calder's orders average 3.4 lines and the multi-line reference site gets 160 per hour, so the labour savings are much smaller than $6.24M.",
+        "good_handling": "Uses 160 or a range, recalculates the number of pickers needed (about 140 x 95/160, roughly 83), and does not repeat the vendor's ROI figure."
+      },
+      {
+        "c": 2,
+        "what": "The no-layoff clause until the end of 2028 means savings from permanent staff can only come through turnover (about 31 people a year), so savings in the first two years are mainly from replacing temporary workers and not filling vacancies.",
+        "good_handling": "Builds the year-by-year savings around turnover and reduced temp labour, not immediate job cuts."
+      },
+      {
+        "c": 3,
+        "what": "Recurring and hidden costs are significant: about $864k a year in maintenance (18% of $4.8M), $380k for the floor, and $310k a season to lease extra robots because the system is sized for 25k orders a day while peak is 41k.",
+        "good_handling": "Includes all of these in the total cost and the payback calculation and checks the result against the 3-year payback rule."
+      },
+      {
+        "c": 4,
+        "what": "The lease ends in 2029 with even odds of renewal, so the investment may need to be moved for about $600k or may have a useful life at Joliet of only about 3 years.",
+        "good_handling": "Treats the lease as a key risk and either asks for clarity on the lease before committing or includes the relocation cost in a scenario."
+      }
+    ]
+  },
+  {
+    "id": "E5-13",
+    "domain": "Higher education / academic technology",
+    "task": "Write a recommendation memo (about 450-550 words) to the Provost's Academic Technology Committee at Northgate State University on whether to renew and expand the university's contract for automated remote exam proctoring. The committee must make a recommendation by February 28, 2027.",
+    "fact_pack": "Northgate uses ProctorEye, an automated remote proctoring service that monitors students through their webcam and microphone during online exams and flags behaviour it considers suspicious. The current contract costs $210,000 a year and covers about 40% of online courses. ProctorEye's renewal offer is a 3-year contract at $240,000 a year, covering all online courses. In the 2025-26 academic year, ProctorEye monitored 41,000 exams and flagged 6,150 of them (15%). Faculty must review every flag. Faculty reported spending an average of 9 minutes reviewing each flag. Of the 6,150 flags, 308 led to a finding of academic misconduct. An internal audit by the Office of Institutional Equity found that students with darker skin tones were flagged at 1.9 times the rate of other students, often for \"face not detected.\" Students registered with Disability Services were flagged at 2.4 times the rate of other students, often for looking away from the screen or making repeated movements. The Student Government Association passed a resolution opposing renewal, calling the system \"surveillance.\" The Director of Online Programs supports renewal. She points out that the university's accreditor requires institutions offering distance education to verify that the student who registers for a course is the one who completes the work. ProctorEye also sells an identity-verification-only service, which checks a photo ID and the student's face once at the start of each exam, for $35,000 a year. Several peer universities have moved to open-book exam formats and project-based assessment in online courses. A new state student privacy law takes effect July 1, 2027. It requires institutions to get written consent before collecting biometric data from students and to provide an alternative that does not use biometrics for any student who declines. Faculty Senate leaders say faculty want \"some deterrent\" against cheating, but also say the review workload is a burden. Two of last year's misconduct cases are being appealed on the grounds that the flags were unreliable.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms.",
+        "good_handling": "Calculates the hit rate and the faculty time, and considers what that means for cost-effectiveness and fairness."
+      },
+      {
+        "c": 2,
+        "what": "Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses.",
+        "good_handling": "Treats this as a central problem, not a footnote, and either rejects expansion or makes it conditional on fixes and independent audits."
+      },
+      {
+        "c": 3,
+        "what": "The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it.",
+        "good_handling": "Recognises the difference between identity verification and behaviour monitoring and considers the ID-only service plus changes to assessment design as an alternative."
+      },
+      {
+        "c": 4,
+        "what": "The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated.",
+        "good_handling": "Notices the conflict with the contract timing and recommends a shorter contract, an exit clause, or a plan for the alternative."
+      }
+    ]
+  },
+  {
+    "id": "E5-14",
+    "domain": "Insurance operations",
+    "task": "Write a process redesign proposal (about 450-600 words) to the Claims Director at Meridian Mutual Insurance on whether to expand \"straight-through processing\" (automatic approval and payment without an adjuster) to all auto glass claims. The director will decide in Q1 whether to fund the full rollout.",
+    "fact_pack": "Meridian handles about 84,000 auto glass claims a year. With the current manual process, handling costs about $46 per claim, average payout is $610, and the average time from claim to payment is 6.2 days. Over six months, Meridian piloted straight-through processing (STP) on 5,000 glass claims in two states. In the pilot, handling cost fell to $9 per claim, cycle time fell to 0.8 days, and customer satisfaction scores rose by 18 points. The project team estimates annual savings of $3.1 million from lower handling costs. The average payout in the pilot was $635, about 4.1% higher than the manual process. The team attributes this to the absence of the price negotiation adjusters usually do with repair shops. Meridian's Special Investigations Unit reviewed the pilot claims and identified 37 cases of suspected fraud (0.74% of pilot claims), mostly from a small number of repair shops. The rate across manually handled glass claims is 0.31%. The pilot excluded claims involving vehicles with advanced driver-assistance systems (ADAS), because their cameras must be recalibrated after windshield replacement. Recalibration adds about $280 to a claim and must be done by a certified shop. ADAS claims now make up 38% of glass claims, and the share is rising every year. In three of the states where Meridian operates, insurance regulations require that a licensed adjuster review every claim before payment. These three states account for 22% of glass claims. Currently 46 adjusters handle glass claims. Under the proposal they would move to handling property and injury claims, where there is a backlog. The glass team lead has warned that the adjusters provide \"the only real check\" on shop pricing. The IT department estimates the full rollout would cost $1.4 million and take 7 months. The marketing team wants to advertise \"glass claims paid in a day\" in the spring campaign, starting in April.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The handling savings ($37 x 84,000, about $3.1M) are largely cancelled out by higher payouts (4.1% of $610, about $25 per claim, about $2.1M) and extra fraud (about 0.43% x 84,000, roughly 360 claims at about $610, about $0.22M), leaving a net of about $0.8M.",
+        "good_handling": "Calculates the net savings, not just the gross figure, and proposes controls on payouts and fraud (price limits, monitoring shops, sampled audits)."
+      },
+      {
+        "c": 2,
+        "what": "The pilot left out ADAS claims, which are 38% of volume and growing, so the pilot results do not represent the full set of claims.",
+        "good_handling": "Excludes ADAS claims from the first phase or calls for a separate pilot, and changes the projected volume accordingly."
+      },
+      {
+        "c": 3,
+        "what": "Regulators in three states (22% of claims) require an adjuster to review every claim, so automatic approval cannot be used there.",
+        "good_handling": "Removes these states from the scope or designs a quick-review process and recalculates the volume."
+      },
+      {
+        "c": 4,
+        "what": "The proposed April advertising campaign cannot be supported by a 7-month IT rollout, and the glass team lead's concern about losing price control is backed up by the payout data.",
+        "good_handling": "Points out the timing conflict and treats the team lead's objection as supported by evidence."
+      }
+    ]
+  },
+  {
+    "id": "E5-15",
+    "domain": "Local government / housing op-ed",
+    "task": "Write a short op-ed (about 450-550 words) for the Lakemont Courier on behalf of Councilmember Dana Ruiz, arguing for her proposal to cap short-term rental (STR) permits in Lakemont. It will run before the council's February vote and must persuade undecided readers using the data available.",
+    "fact_pack": "Lakemont has about 94,000 residents and 38,000 housing units. There are currently 1,420 active short-term rental listings, up from 610 in 2019. Of these, 520 are rooms or accessory units in homes where the owner lives, and 900 are entire homes. 640 of the entire-home listings are run by 70 operators who each have three or more listings. Median rent in Lakemont has risen 31% since 2019. Over the same period, median rent rose 27% across the region, including in towns with very few short-term rentals. Lakemont's rental vacancy rate is 2.1%. A 2024 study by the state university looked at 40 cities and found that each 1% increase in STR listings was associated with a 0.018% increase in rents. Councilmember Ruiz's proposal would limit entire-home STR permits to 600, awarded by lottery. STRs in owner-occupied homes would not be capped. Her office estimates that about 300 entire homes would return to the long-term rental or sales market. Lakemont collects $3.1 million a year in lodging tax from STRs. That money currently pays for about 40% of the city's parks maintenance budget. Lakemont has about 1,100 hotel rooms. During the two-week summer arts festival, the visitors' bureau says nearly every hotel room and STR is booked, and that the festival brings in about $14 million in visitor spending. The visitors' bureau opposes the cap. In 2025 the state passed a law that prevents cities from banning STRs outright but allows caps that are \"reasonably related to housing availability.\" A lawsuit challenging a similar cap in the nearby city of Brookfield is in state court, and a ruling is expected in the spring. A local tenants' group supports the cap and has collected stories from 45 families who were displaced when their landlords converted homes to STRs. A group representing STR hosts says most hosts are local families earning supplementary income.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The regional comparison weakens the main argument: rents rose 27% across the region, including in towns with few STRs, compared with 31% in Lakemont, and the study's effect size is small. STRs are at most a contributing factor in rent increases.",
+        "good_handling": "Makes a measured claim (STRs are one contributor, and the units matter given 2.1% vacancy) rather than saying STRs caused rent increases, and does not exaggerate the study's findings."
+      },
+      {
+        "c": 2,
+        "what": "Returning 300 units is less than 1% of the housing stock, but it is meaningful in a market with a 2.1% vacancy rate. How this is framed decides whether the op-ed is honest.",
+        "good_handling": "Describes the 300 units accurately (about 0.8% of homes) and explains why that still matters in a very tight market."
+      },
+      {
+        "c": 3,
+        "what": "$3.1M in lodging tax pays for 40% of parks maintenance, and the festival depends on STRs during peak season. The opponents' arguments are strong.",
+        "good_handling": "Deals with the revenue and festival concerns (e.g., how much revenue would be lost under a 600-permit cap, seasonal or festival exceptions, other funding)."
+      },
+      {
+        "c": 4,
+        "what": "The cap targets entire homes and multi-listing operators, not local families renting rooms, which answers the hosts' argument, and the pending Brookfield lawsuit creates legal risk.",
+        "good_handling": "Makes clear that owner-occupied hosts are not affected, pointing to the operator figures, and acknowledges the lawsuit and how the proposal is designed to fit the state law."
+      }
+    ]
+  },
+  {
+    "id": "E5-16",
+    "domain": "Cybersecurity risk management",
+    "task": "Write a risk assessment memo (about 450-600 words) to the CEO of Cedar Valley Health Partners, a network of outpatient clinics, on whether to fund a rollout of phishing-resistant multi-factor authentication (hardware security keys) in 2027. The CEO needs a funding decision and a scope recommendation before the cyber insurance renewal.",
+    "fact_pack": "Cedar Valley Health Partners employs 1,150 staff across 14 clinics. Email and remote access (VPN) currently use multi-factor authentication with one-time codes sent by text message (SMS). The electronic health record (EHR) system uses only a username and password. The EHR vendor supports single sign-on with multi-factor authentication only in version 9.2, and Cedar Valley's upgrade to 9.2 is scheduled for Q3 2027. In the past 12 months, Cedar Valley had two account compromises. One was an email account taken over through a SIM swap that redirected the employee's text messages. The other was an EHR account accessed with a password reused from a breached website; the attacker viewed 1,900 patient records before the access was noticed. In the latest phishing simulation, 11% of staff clicked the link and 4% entered their credentials. The proposal is to give each staff member two hardware security keys at $55 each and to upgrade the identity platform license at $9 per user per year. The IT helpdesk expects about 1 in 10 users to lose a key each year. Of the 1,150 staff, 340 are clinical staff (mainly nurses and medical assistants) who share workstations and currently log in with a badge tap. They log in about 40 times per shift. The security team estimates that using a hardware key would add about 15 seconds per login. Clinical leaders oppose anything that slows down logins during patient care. Cedar Valley's cyber insurance renews on March 1, 2027. The insurer has said that if phishing-resistant MFA is not in place for \"privileged accounts and all remote access\" by renewal, the premium will rise 35% from its current $180,000. There are 62 IT and administrative staff with privileged access. 210 staff use remote access regularly. The IT team has 6 people and is also preparing the EHR upgrade. The board's audit committee has asked for a plan to address \"the EHR access gap\" by its next meeting in April.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The biggest exposure, the EHR (password only, and the source of the actual patient-data breach), is not covered by the hardware key rollout until the 9.2 upgrade. A memo focused only on email and VPN misses the main risk.",
+        "good_handling": "Identifies the EHR gap as the most serious risk and proposes interim controls (e.g., access only from the network or VPN, checking for reused passwords, monitoring) and links the timing to the 9.2 upgrade."
+      },
+      {
+        "c": 2,
+        "what": "Shared-workstation clinical staff face significant friction: 340 staff x 40 logins x 15 seconds is about 57 staff-hours per day of added login time. Clinical leaders' objection is serious.",
+        "good_handling": "Calculates the time cost, excludes clinical staff or uses a different method for them (e.g., badge plus PIN, tap-and-go with proximity-based authentication), and does not apply one solution to everyone."
+      },
+      {
+        "c": 3,
+        "what": "The insurer only requires privileged and remote access to be covered by March 1. A phased rollout to about 272 users meets that requirement and avoids the 35% ($63k) premium increase, at much lower cost and workload than equipping all 1,150 users at once.",
+        "good_handling": "Proposes a phased scope prioritised by the insurance deadline and the 6-person IT team's capacity, and costs it."
+      },
+      {
+        "c": 4,
+        "what": "The license is an ongoing cost ($10,350 a year for all users) plus replacing lost keys, so the program is not a one-time $126,500 purchase.",
+        "good_handling": "Shows both one-time and ongoing costs."
+      }
+    ]
+  },
+  {
+    "id": "E5-17",
+    "domain": "Public works / infrastructure project risk",
+    "task": "Write a risk assessment memo (about 450-600 words) to the City Engineer of Marlow comparing two ways of replacing the deck of the Fifth Street Bridge: a full closure or a staged half-width replacement. The City Engineer must recommend one option to the city council in January so the contract can be awarded.",
+    "fact_pack": "The Fifth Street Bridge carries about 22,000 vehicles a day across the Tanner River and connects the city centre with the east side. Its deck must be replaced. Option 1, full closure: the bridge closes completely for about 4 months (120 days). The low bid is $6.1 million. Traffic would detour via the Route 9 bridge, which adds about 3.8 miles per trip. Option 2, staged replacement: half the bridge is rebuilt at a time while one lane stays open in each direction. Construction takes about 9 months (270 days). The low bid is $7.4 million. Traffic engineers estimate an average delay of 4 minutes per vehicle. The state's guidance for road user costs uses $0.70 per vehicle-mile for detours and $18 per vehicle-hour for delays. The project has a $4.0 million federal grant that requires substantial completion by December 31, 2027. The concrete deck pours must be done when temperatures will stay above 40°F, which in Marlow normally rules out December through February. The water utility must first move a water main that runs along the bridge. It has scheduled that work to finish on May 15, 2027, and construction cannot start until then. Fire Station 4, on the east side, covers the east side of the city. The east side has no hospital. Mercy Hospital is in the city centre. During a full closure, ambulances from the east side would need to use the Route 9 detour, adding about 6 minutes to transport times. The fire chief has said that a full closure would also push response times above the department's 8-minute standard for about 2,300 households in the north-east, which are normally covered from the city-centre station. Fourteen businesses on Fifth Street east of the bridge have written to the council. They say a four-month closure in the summer, their busiest season, could put some of them out of business. Three school bus routes use the bridge during the school year (late August to mid-June). The council's finance committee has said that the city's share of the cost must not go over $3.5 million.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Road user costs are about the same for both options: about $7.02M for full closure (83,600 detour vehicle-miles a day x $0.70 x 120 days) and about $7.13M for staged (about 1,467 vehicle-hours a day x $18 x 270 days). Road user cost does not decide the choice.",
+        "good_handling": "Does the calculation, notices that the two are nearly equal, and makes the decision on the other factors."
+      },
+      {
+        "c": 2,
+        "what": "The schedule works against the staged option: work cannot start until May 15, 9 months ends around mid-February, and concrete cannot be poured from December to February, so it would miss the December 31 grant deadline. The full closure (ending around mid-September) fits.",
+        "good_handling": "Works out the dates, points out that the staged option puts the $4M grant at risk, and compares the effect on funding (Option 2 city share $3.4M with the grant, $7.4M without it)."
+      },
+      {
+        "c": 3,
+        "what": "Emergency response: a full closure adds about 6 minutes to ambulance trips and breaks the 8-minute response standard for 2,300 households, which is a public safety issue rather than a convenience issue.",
+        "good_handling": "Proposes specific measures (temporary ambulance or fire crew stationed on the east side, mutual-aid agreements) and includes them in the cost."
+      },
+      {
+        "c": 4,
+        "what": "The funding limit and business impact: Option 1's city share with the grant is $2.1M and Option 2's is $3.4M, both under $3.5M only if the grant is kept. A summer closure falls on businesses' busiest season, but it also avoids the school year.",
+        "good_handling": "Checks both options against the $3.5M limit with and without the grant, and addresses the businesses (e.g., support or signage) and school bus timing."
+      }
+    ]
+  },
+  {
+    "id": "E5-18",
+    "domain": "Clinical trial operations",
+    "task": "Write a recommendation memo (about 450-550 words) to the Head of Clinical Operations at Aldane Therapeutics on how to rescue enrollment in the HELIX-2 diabetes trial. She must choose a plan this month to present to the steering committee.",
+    "fact_pack": "HELIX-2 is a Phase 3 trial of a once-weekly diabetes drug. The protocol requires 480 participants. The enrollment deadline is September 30, 2027, because the database lock and regulatory submission timelines depend on it. Enrollment began on February 1, 2026 at 24 sites in the United States. By November 1, 2026 (9 months), 196 participants had enrolled. The top 5 sites have enrolled 52% of participants. Seven sites have each enrolled 2 or fewer. Each active site costs about $4,000 a month in monitoring and management fees. Option A: add 10 US academic medical centres. Start-up costs are $45,000 per site. Contracting, ethics approval and training would take about 5 months. Aldane's history shows new US sites enroll at about the trial's current average rate, but usually at half that rate in their first 3 months. Option B: add 6 sites in Poland and Hungary through a contract research organisation (CRO). Start-up costs are $30,000 per site, and they could be active in about 4 months. The CRO says its sites in these countries have enrolled about 1.6 participants per site per month in similar diabetes trials. Supplying non-US sites requires separately labelled study drug, which has a 4-month lead time and costs $120,000. Aldane has agreed a diversity plan with the FDA that commits to enrolling at least 20% Black and Hispanic participants. Current enrollment is 11% Black and Hispanic. The FDA reviewer has also said the agency expects a \"meaningful US population,\" since the drug will be marketed mainly in the US. Currently 100% of participants are in the US. Two of the high-performing sites are in Atlanta and Houston, and both say they could enroll more if they had additional study coordinators, at about $90,000 a year per coordinator. A community health network in Chicago has offered to take part as a site, but needs about $60,000 in extra support for staff training and data systems. The trial budget has $900,000 remaining for site expansion.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The shortfall is smaller than it looks: at the current rate (196 over 9 months, about 21.8 a month), the trial would reach about 436 by September 30, about 44 short. Option A's sites, active about April, would yield fewer than the simple estimate because of their slow first 3 months.",
+        "good_handling": "Calculates the projected shortfall accurately, adjusts new-site projections for the slow start, and chooses the option sized to the gap."
+      },
+      {
+        "c": 2,
+        "what": "Option B looks fastest and cheapest, but does nothing for the 20% diversity commitment and reduces the US share. The study drug lead time also needs to be checked.",
+        "good_handling": "Considers both the diversity commitment and the US-population requirement, and does not choose B on cost and speed alone."
+      },
+      {
+        "c": 3,
+        "what": "Uneven site performance: 7 sites with 2 or fewer participants cost about $28k a month in total. Adding coordinators at strong sites, or including the Chicago community network, may be cheaper and better for diversity than adding many new sites.",
+        "good_handling": "Considers closing weak sites to fund support for strong ones and the Chicago network, and brings these together in a mixed plan within the $900k."
+      },
+      {
+        "c": 4,
+        "what": "The budget constraint: A costs $450k in start-up plus about $40k a month in monitoring once active; B costs $180k plus $120k for drug labelling plus monitoring. Both must fit within $900k alongside any other measures.",
+        "good_handling": "Gives a budget for the chosen plan and shows that it stays within $900k."
+      }
+    ]
+  },
+  {
+    "id": "E5-19",
+    "domain": "Community banking / lending",
+    "task": "Write a proposal memo (about 450-600 words) to the credit committee of Harbor Federal Bank recommending whether and how to launch a $15 million microloan program for small businesses owned by members of minority groups. The committee will decide in January.",
+    "fact_pack": "Harbor Federal is a community bank with $2.3 billion in assets. At its last Community Reinvestment Act (CRA) exam, it received a \"Satisfactory\" rating, and examiners noted weak small business lending in low- and moderate-income (LMI) neighbourhoods. The next CRA exam is scheduled for Q3 2027 and will cover lending through June 30, 2027. The proposal, from the Community Development officer, is a $15 million program of loans between $10,000 and $50,000 to minority-owned businesses, with an average loan of $30,000 (about 500 loans). Loans would have 3-year terms at about 9% interest. The bank's commercial underwriting process costs about $2,400 per loan, regardless of loan size. The program's expected loss rate is 4.5%, compared with 0.6% for the bank's current commercial loan portfolio. The bank's net interest margin on the program's loans after funding costs would be about 5%. Because the loans are repaid over 3 years, the average outstanding balance would be about half the original amount. The Chief Credit Officer has said he is \"not comfortable\" with losses at that level. He has also noted that many applicants will lack the two years of tax returns the bank normally requires. Federal fair lending law (the Equal Credit Opportunity Act) generally prohibits using race or ethnicity in credit decisions. An exception exists for a formally established \"special purpose credit program\" with a written plan that documents the need for the program, based on data. The bank's general counsel has not reviewed the proposal yet. A local community development financial institution (CDFI) has offered to find borrowers, provide business coaching and do initial underwriting for $1,100 per loan. It asks the bank to cover the first 5% of losses on the loans it refers. The SBA guarantee program can cover up to 85% of loans of this size. Using it requires extra paperwork and an approval process of about 8 weeks per loan. The bank does not currently participate in the program. The bank's president has said he would like to announce the program at the Chamber of Commerce dinner on March 4.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Restricting eligibility by race is legally risky unless it is structured as a special purpose credit program with a written, data-based plan, and legal counsel has not yet reviewed it.",
+        "good_handling": "Puts the legal issue first and makes the launch conditional on counsel approval and a written plan (or defines eligibility by geography, e.g., LMI neighbourhoods)."
+      },
+      {
+        "c": 2,
+        "what": "The economics are negative as proposed: underwriting costs about $1.2M (500 x $2,400), expected losses about $675k (4.5% of $15M), against margin income of about $375k a year on an average balance of about $7.5M (about $1.1M over 3 years).",
+        "good_handling": "Does the calculation, says the program loses money as a standalone product, and shows how the CDFI partnership, SBA guarantee, or CRA benefits change the picture."
+      },
+      {
+        "c": 3,
+        "what": "The CRA exam counts loans made by June 30, 2027. Legal review, setting up the program and an 8-week SBA approval process leave very little time, and the March 4 announcement may come before the program is legally ready.",
+        "good_handling": "Works out the timeline, advises against announcing before legal approval, and sets realistic loan targets for the exam period."
+      },
+      {
+        "c": 4,
+        "what": "The CDFI's 5% first-loss request could cover all expected losses (about equal to the 4.5% loss rate), and the Chief Credit Officer's concerns about documentation and losses need specific answers.",
+        "good_handling": "Assesses the first-loss terms and proposes different underwriting standards or loss limits that address the Chief Credit Officer's concerns."
+      }
+    ]
+  },
+  {
+    "id": "E5-20",
+    "domain": "Electric utility rate design",
+    "task": "Write a short policy proposal (about 450-600 words) to the Board of Public Utilities in Granger on whether to automatically enroll all residential customers in time-of-use (TOU) electricity rates in 2027, with the option to opt out. The board will vote in February on whether to start the regulatory process.",
+    "fact_pack": "Granger Municipal Power serves 61,000 residential customers. Under the current flat rate, all electricity costs the same regardless of the time it is used. Under the proposed TOU rate, electricity used between 4 p.m. and 9 p.m. on weekdays would cost about twice as much as the flat rate, and electricity used at other times would cost about 20% less. In 2025, Granger ran a voluntary TOU pilot with 2,000 customers who signed up. Participants saved an average of $8 a month, and their peak-hour use fell 9%. Staff project these results across all customers. Another utility that switched customers to TOU automatically saw peak use fall 5%. In that utility, 18% of customers saw their bills rise by more than $5 a month, mainly customers who could not shift their usage. Granger's power costs include a capacity charge of $11.2 million a year, which depends on the customers' combined peak usage. The utility must collect enough revenue to cover its total costs, so any reduction in average bills must come from lower power costs. Granger has 4,300 customers enrolled in its medical baseline program, which means they rely on electrically powered medical equipment at home. Many seniors in the city are at home during the afternoon and early evening. Staff have not analysed the effect on these groups. About 14% of meters are older models that cannot record usage by time of day. They are scheduled to be replaced by December 2027. The billing system vendor will charge $340,000 to set up TOU billing. Changes in rate structure require 90 days' public notice and a hearing. The city's climate plan aims to reduce peak demand to cut use of the gas-fired peaking plant. The local senior citizens' council has written to the board opposing automatic enrollment. A group of solar installers supports TOU, saying it will encourage home batteries.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The pilot results come from customers who chose to join, who are more likely to benefit. Results from an automatic-enrollment programme elsewhere (5% peak reduction) are a better guide than the 9% from Granger's pilot.",
+        "good_handling": "Uses the default-enrollment result as the main estimate and does not project the $8/month savings to all customers."
+      },
+      {
+        "c": 2,
+        "what": "Savings must come from lower costs: a 5% peak reduction saves about $560k of the capacity charge, about $0.77 per customer per month. Average savings across all customers are therefore small, and some customers will pay more.",
+        "good_handling": "Calculates the system-wide savings and says clearly that many customers will see little benefit while others will see higher bills."
+      },
+      {
+        "c": 3,
+        "what": "Customers on medical equipment and people at home during the day may be harmed, and staff have not analysed these effects.",
+        "good_handling": "Proposes protections (exempting medical baseline customers, bill protection for the first year, targeted outreach) and asks for the missing analysis before a decision."
+      },
+      {
+        "c": 4,
+        "what": "14% of meters can't support TOU until December 2027, and the 90-day notice and hearing requirement affects the timeline, so a single 2027 switch-over is not feasible.",
+        "good_handling": "Proposes a phased rollout tied to the meter replacement schedule and the notice requirements."
+      }
+    ]
+  },
+  {
+    "id": "E5-21",
+    "domain": "Tourism and events funding",
+    "task": "Write a budget justification (about 450-550 words) for the Town of Ellery's council supporting the Ellery Tourism Office's request to increase the town's grant to the Riverbend Music Festival from $300,000 to $420,000 for 2027. The council will vote on the request in its budget session in January.",
+    "fact_pack": "The Riverbend Music Festival is a three-day event held each August in Ellery's riverside park. The town gave the festival a $300,000 grant in 2026. The organisers have asked for $420,000 in 2027 to add a second stage ($85,000) and increase artist fees ($35,000) to attract better-known performers. The organisers report 2026 attendance as 28,000, based on ticket scans over the three days. Most tickets are 3-day passes, and the organisers estimate there were about 11,500 individual attendees. An economic impact study commissioned by the organisers estimates the festival's value to the local economy at $6.4 million. The study multiplied 28,000 attendees by an average spending of $109 per attendee per day, and then by an economic multiplier of 2.1. In the festival's own attendee survey, 46% of respondents said they live in Ellery. The town's lodging tax receipts for the festival weekend were $38,000 higher than for the same weekend the previous year. The town also paid for $96,000 in police overtime and $41,000 in extra sanitation services during the festival. These are paid from the police and public works budgets, not from the festival grant. The town received 212 noise complaints during the 2026 festival, most from the Riverside and Mill Hill neighbourhoods. A petition from Riverside residents asks the council to end performances at 10 p.m. instead of 11:30 p.m. The organisers say an earlier end time would make it harder to book headline acts. The festival organisers have said that if the grant is not increased, they will consider moving the festival to the neighbouring town of Carver, which has offered a $350,000 grant and a larger site. The 2027 festival is planned for August 20-22. The state university, 8 miles away, has scheduled its student move-in weekend for August 21-22, 2027. Last time the two events overlapped, in 2023, local hotels were sold out weeks in advance and the county sheriff could not provide the 20 deputies that the festival usually borrows. Ellery's general fund budget is $34 million. The council has asked all departments to hold spending flat in 2027.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The $6.4M impact figure is inflated. It counts ticket scans (28,000) rather than individual attendees (about 11,500), it includes local residents (46%) whose spending is not new to the town, and it applies a generous multiplier.",
+        "good_handling": "Recalculates using individual non-local attendees (about 6,200), discusses the multiplier, and presents a more modest and defensible estimate (well under $2M) rather than repeating $6.4M."
+      },
+      {
+        "c": 2,
+        "what": "The real cost to the town is higher than the grant: $420k + $96k police + $41k sanitation = about $557k, compared with directly measurable lodging tax of $38k.",
+        "good_handling": "Shows the full cost, compares it with measurable returns, and justifies the grant on broader grounds (or proposes a smaller increase)."
+      },
+      {
+        "c": 3,
+        "what": "The 2027 date clashes with university move-in weekend: hotels will be full and sheriff's deputies unavailable, so the date reduces visitor benefits and creates a security gap.",
+        "good_handling": "Points out the clash and makes the grant conditional on a date change or on alternative security arrangements."
+      },
+      {
+        "c": 4,
+        "what": "The offer from Carver ($350k) is a real competitive threat, but it also means the festival may stay for less than $420k, and the noise complaints from residents need a response.",
+        "good_handling": "Uses the Carver offer to argue for a negotiated amount and links the funding to concessions on noise or end time."
+      }
+    ]
+  },
+  {
+    "id": "E5-22",
+    "domain": "Public health programme planning",
+    "task": "Write a proposal (about 450-600 words) to the Director of the Brannock County Health Department on how to spend a $600,000 state grant to raise measles-mumps-rubella (MMR) vaccination rates among kindergarten children. The director must approve a spending plan by December 15.",
+    "fact_pack": "In the 2025-26 school year, 91.4% of Brannock County's 6,200 kindergarten students were fully vaccinated against MMR. The state target is 95%. Eleven elementary schools have kindergarten MMR rates below 80%. These schools account for 58% of the county's under-vaccinated kindergarteners. Eight of the eleven are private or charter schools in higher-income suburbs, where most under-vaccinated students have a philosophical exemption on file. The other three are public schools in rural parts of the county. Across the county, 41% of under-vaccinated kindergarteners have no exemption on file. Most of them received the first MMR dose but not the second. School nurses report that missed doses are often due to lack of transport, no regular doctor, or parents not realising a second dose is needed. The county has 19 school nurses for 74 elementary schools. The department is considering three options: Media campaign: TV, radio and social media ads promoting vaccination. Cost: $350,000. Published evaluations of similar campaigns show mixed results and little effect on parents who have already chosen not to vaccinate. Mobile clinics: a vaccination van visiting rural schools and community events. Cost: $220,000, including the van, nurse staffing and supplies. The van would take about 5 months to be delivered after it is ordered. The department estimates it could vaccinate about 1,500 children a year. Reminder and recall: using the state immunisation registry to send letters, texts and calls to families whose children are due or overdue for vaccines. Cost: $60,000. Several studies have found that this approach increases vaccination rates, especially for children who have missed scheduled doses. The state grant must be spent by June 30, 2027. Any unspent money returns to the state. A new state law takes effect in August 2027. It requires parents seeking a non-medical exemption to complete an online education module about vaccines before the exemption is approved. A county commissioner has publicly asked the department to \"focus on the schools with the worst rates.\" A coalition of private school parents has said it will oppose any campaign that it views as \"pressuring\" families.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "There are two different groups of under-vaccinated children: families with philosophical exemptions (concentrated in suburban private and charter schools) and children who are missing a second dose because of access problems (41%, including rural schools). They need different approaches.",
+        "good_handling": "Splits the target population, works out the numbers (about 533 under-vaccinated, about 219 missing doses without exemptions), and matches each intervention to the right group."
+      },
+      {
+        "c": 2,
+        "what": "Evidence is strongest for the cheapest option (reminder and recall, $60k) and weakest for the most expensive one (media, $350k). The three options together cost $630k, more than the $600k budget.",
+        "good_handling": "Prioritises according to the evidence, cuts or redesigns the media campaign, and presents a plan that fits the budget."
+      },
+      {
+        "c": 3,
+        "what": "The grant must be spent by June 30, 2027, but the van takes 5 months to arrive. If ordered in mid-December, it arrives around mid-May, leaving about 6 weeks of service, and the school year ends then.",
+        "good_handling": "Points out the timing problem and proposes renting a van, partnering with existing clinics, or reorganising spending so the money is used on time."
+      },
+      {
+        "c": 4,
+        "what": "The new state law on exemptions takes effect in August 2027 and will address part of the exemption problem without department action. The commissioner's 'worst schools' approach would spend money mainly on the exemption group.",
+        "good_handling": "Takes the law into account, explains why the plan focuses on missed doses, and responds to the commissioner's suggestion with the data."
+      }
+    ]
+  },
+  {
+    "id": "E5-23",
+    "domain": "Legal services / pricing",
+    "task": "Write a recommendation memo (about 450-600 words) to the Managing Partner of Tierney & Walsh LLP on whether the firm's employment litigation group should offer flat-fee pricing for single-plaintiff employment cases it defends. The Managing Partner needs to decide before the firm responds to a major client's request for proposals at the end of January.",
+    "fact_pack": "In 2025 the employment group handled 64 single-plaintiff defence cases that ended during the year, billed by the hour. The total billed amount was about $3.07 million, an average of about $48,000 per case. The group collected about 86% of what it billed, after write-downs and discounts. The cases fell into three groups: - 37 cases settled or were dismissed before summary judgment, with an average bill of $22,000. - 20 cases ended after summary judgment but before trial, with an average bill of $61,000. - 7 cases went to trial, with an average bill of $148,000. The practice group leader proposes a flat fee of $38,000 per case, covering all work through summary judgment. Trials would be priced separately. Seven of the firm's ten largest employment clients have asked for alternative fee arrangements in the past year. Halberd Logistics, which provides 22% of the group's revenue, has issued a request for proposals to select law firms for its 2027-2029 panel. The request says that \"fixed or capped fees through dispositive motions will be strongly preferred.\" Proposals are due January 31. The firm's partner compensation is based mostly on hours billed and fees collected by each partner. Two senior partners in the group have said a flat-fee model \"rewards inefficiency in reverse\" and will reduce their compensation. The state's rules of professional conduct allow flat fees but require that fees be reasonable. In this state, a flat fee paid in advance must be placed in the firm's client trust account and can only be transferred to the firm as it is earned. The firm's accounting system does not currently track fees this way. The firm's billing system records time in 6-minute units. Associates currently track and record all of their time. The group's leader suggests that time tracking could stop under the flat-fee model. Halberd's general counsel has told the firm that Halberd's in-house team settles most cases early when it can.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The case results fall into very different groups. At $38k, early settlements (average bill $22k, 37 cases) are overpriced and cases that go through summary judgment (average $61k, 20 cases) are underpriced. Across all non-trial cases, the average bill was about $35.7k, so $38k is a bit higher than average bills and well above average collections (about $30.7k at 86%).",
+        "good_handling": "Calculates the averages for each group, shows that clients who settle early (such as Halberd) would pay more under a flat fee, and considers a tiered or capped fee structure."
+      },
+      {
+        "c": 2,
+        "what": "Halberd's preference for early settlement means a flat $38k would cost it more than hourly billing, which could undermine the firm's bid for its panel, the group's largest source of revenue (22%).",
+        "good_handling": "Connects the proposed fee to Halberd's case profile and designs the offer around it (e.g., a lower fee for the early phase, a fee by stage)."
+      },
+      {
+        "c": 3,
+        "what": "Partner compensation is based on hours and collections, which works against flat fees, and two senior partners object.",
+        "good_handling": "Recommends changes to how partners are credited for flat-fee work rather than ignoring the incentive problem."
+      },
+      {
+        "c": 4,
+        "what": "Advance flat fees must be held in trust and transferred as earned, which the accounting system cannot track, and time tracking is still needed to show fees are earned and reasonable and to price future work.",
+        "good_handling": "Identifies the trust account requirement, plans for the system change before the RFP start date, and recommends continuing to record time."
+      }
+    ]
+  },
+  {
+    "id": "E5-24",
+    "domain": "News media / digital subscriptions",
+    "task": "Write a recommendation memo (about 450-550 words) to the Publisher of the Coastal Herald, a regional daily newspaper, on whether to reduce the number of free articles readers can view each month from 10 to 3. The publisher wants to decide before the 2027 budget is finalised in December.",
+    "fact_pack": "The Coastal Herald's website has about 1.9 million monthly unique visitors. It has 21,400 digital subscribers paying $9.99 a month. Readers can currently view 10 free articles a month before they are asked to subscribe. Digital advertising revenue was $3.6 million in 2025, and it depends mostly on page views. In July 2026, the Herald ran a 4-week test in which 10% of visitors were randomly limited to 3 free articles a month. In the test group, new subscription starts rose 62% and page views fell 24% compared with the control group. Across the site, there are about 900 new subscription starts a month. Most new subscribers come in through an introductory offer of $1 for the first 3 months. About 60% of introductory-offer subscribers cancel when the offer ends. 38% of the site's traffic comes from search engines. The digital team says stricter limits may reduce how prominently the Herald's articles appear in search results over time, though the effect is uncertain. Since 2024 the Herald has received a $400,000-a-year grant from the Pell Foundation. Under the grant agreement, coverage of elections, public health emergencies and severe weather must remain free to read. The grant is up for renewal in June 2027. Local elections, including races for mayor and county commission, will take place in November 2027. Election coverage typically brings the Herald's highest traffic of the year. The newsroom has 42 journalists. The executive editor has said she is worried that fewer readers will see the Herald's investigative reporting. The advertising director opposes the change because of the loss of page views. The chief revenue officer supports it, pointing out that subscription revenue is more stable than advertising revenue. News traffic in July is usually the lowest of the year.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The test's 62% increase in subscription starts is mostly temporary: about 558 more starts a month, but with 60% cancelling after the introductory offer, only about 223 extra subscribers a month are kept, worth about $320k a year at full price after a year of additions, much less than the roughly $864k loss in advertising (24% of $3.6M).",
+        "good_handling": "Accounts for cancellations, compares the revenue gained with advertising lost, and concludes that the change as tested probably reduces total revenue in the near term."
+      },
+      {
+        "c": 2,
+        "what": "The test was run in July, the quietest month for news, for only 4 weeks; behaviour during the November 2027 elections and other high-traffic periods may be different.",
+        "good_handling": "Mentions the limitations of the test and proposes a longer test or a test in a different season before rolling out."
+      },
+      {
+        "c": 3,
+        "what": "Pell Foundation grant ($400k) requires coverage of elections, public health and weather to remain free, which affects how much of the traffic the limit can apply to, especially in an election year.",
+        "good_handling": "Exempts these categories in the design and treats the grant renewal in June 2027 as a constraint."
+      },
+      {
+        "c": 4,
+        "what": "Search traffic (38%) and the editor's concern about reach mean the change may have longer-term costs that the test did not measure.",
+        "good_handling": "Includes this risk and suggests middle options (e.g., 5 free articles, or limits that apply differently to readers who come from search)."
+      }
+    ]
+  },
+  {
+    "id": "E5-25",
+    "domain": "Community sports and recreation",
+    "task": "Write a proposal (about 450-550 words) to the members of the Oakhurst Racquet Club for their annual general meeting, recommending whether to convert 3 of the club's 8 tennis courts into 12 pickleball courts. Members will vote at the meeting in March.",
+    "fact_pack": "Oakhurst Racquet Club is a member-owned club with 640 members: 410 tennis members and 230 pickleball members. Tennis membership has fallen by about 3% a year over the past five years. Pickleball membership grew 40% last year. Annual dues are $520 for tennis members and $360 for pickleball members. Pickleball currently shares 2 of the 8 tennis courts, which have pickleball lines painted on them. Those courts are fully booked at peak times, and there is a waiting list of 48 people for pickleball membership. Tennis court use is 88% at peak times (6 to 9 p.m. on weekdays and weekend mornings) and 31% at other times. Several tennis members have said they already struggle to book courts at peak times. Converting 3 tennis courts to 12 dedicated pickleball courts would cost $96,000. The nearest houses are about 40 metres from the proposed pickleball courts. The city's noise ordinance limits noise at the property line to 55 decibels after 6 p.m. An acoustic consultant measured 61 decibels at the property line during a test session and recommended acoustic fencing costing $38,000. Two neighbours have already complained about noise from the current shared courts. The club leases its land from the city. The lease includes a clause stating that the facility's \"primary use\" must be tennis. Changing that clause requires a vote of the city council, which typically takes about 4 months. The club's reserve fund holds $150,000. The clubhouse roof needs to be replaced in 2027, at an estimated cost of $90,000. The club's board is split. Two long-standing board members say the club's identity is tennis and that the conversion would push out the members who built the club. The treasurer points out that pickleball is the club's only growing source of membership. The Oakhurst high school tennis team uses the club's courts for practice on weekday afternoons from March to May. The proposed construction would take about 6 weeks.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Tennis courts are 88% booked at peak times, so taking away 3 of 8 courts would cause a serious peak-time shortage for 410 tennis members, even though tennis use is low at other times.",
+        "good_handling": "Uses the peak figure rather than the overall average, and proposes measures (peak-time allocation, converting 2 courts instead of 3, shared lines) or acknowledges the cost to tennis members."
+      },
+      {
+        "c": 2,
+        "what": "The noise level of 61 dB is above the 55 dB evening limit, so the $38k acoustic fence is required, not optional, and neighbours have already complained.",
+        "good_handling": "Includes the fence in the base cost and addresses compliance and relations with neighbours (e.g., limiting evening hours)."
+      },
+      {
+        "c": 3,
+        "what": "The total cost ($96k + $38k = $134k) plus the roof ($90k) is $224k, more than the $150k reserve.",
+        "good_handling": "Notices the funding gap and proposes how to pay (a member levy, extra pickleball dues, phasing, a loan) or delays one of the projects."
+      },
+      {
+        "c": 4,
+        "what": "The lease's 'primary use' clause requires a city council vote taking about 4 months, which affects the timeline after a March vote, and work should avoid the high school's spring season.",
+        "good_handling": "Makes the approval conditional on the lease change and sets out a realistic schedule (e.g., construction in summer 2027)."
+      }
+    ]
+  },
+  {
+    "id": "E5-26",
+    "domain": "Government fleet management",
+    "task": "Write a recommendation memo (about 450-600 words) to the Facilities and Fleet Director of Larkin County on a proposal to replace 120 light-duty county vehicles with electric vehicles (EVs) over the next three years. The director will take the recommendation to the county board's capital planning session in January.",
+    "fact_pack": "Larkin County operates 120 light-duty vehicles (sedans and small SUVs) that are due for replacement over the next three years, 40 each year. The county normally keeps vehicles for 8 years. A comparable EV costs $38,500, compared with $27,000 for a gasoline vehicle. The state offers public fleets a $4,000 rebate per EV. About $2 million remains in the statewide rebate fund, which is awarded on a first-come, first-served basis. The fleet manager estimates that each gasoline vehicle costs about $2,100 a year in fuel and $1,050 in maintenance. A comparable EV would cost about $640 a year in electricity and $600 in maintenance. Charging: the county would need 60 Level 2 chargers at $6,500 each, installed. The main county yard also needs an upgrade to its electrical service, which the utility estimates at $240,000. Of the 120 vehicles, 22 are used by the sheriff's office, including some for 24-hour patrol, and the sheriff says patrol use needs vehicles that can be refuelled quickly at any time. Another 31 vehicles are used by the road department in the rural north of the county, where some drive more than 150 miles a day in winter. Fleet staff estimate EV range drops about 30% in very cold weather. The county's climate action plan, adopted in 2024, commits to reducing fleet greenhouse gas emissions 50% by 2030. The county board has capped the vehicle replacement budget at $1.2 million a year, including any charging infrastructure. The fleet maintenance shop has 4 mechanics. None are trained to work on EVs. Training costs about $3,500 per mechanic. The county's electricity provider offers a lower commercial rate for charging done between 10 p.m. and 6 a.m. The board chair has said publicly that she supports the transition \"as long as it doesn't cost taxpayers more.\" The sheriff and the road department director have both asked to be consulted before any change to their vehicles.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Payback depends on the rebate: the EV costs $11,500 more, or $7,500 more with the rebate. Annual savings of about $1,910 per vehicle give a payback of about 3.9 years with the rebate and about 6 years without it. The statewide rebate fund ($2M, first-come) covers only 500 vehicles statewide and may run out.",
+        "good_handling": "Calculates payback with and without the rebate and recommends applying for rebates early, for example for the first year's vehicles, given the risk the fund runs out."
+      },
+      {
+        "c": 2,
+        "what": "Replacing 40 vehicles a year with EVs costs $1.54M in vehicles alone, plus $630k in charging infrastructure, well over the $1.2M annual cap.",
+        "good_handling": "Shows the budget gap and proposes phasing, mixing EVs and gasoline vehicles, or a separate infrastructure request."
+      },
+      {
+        "c": 3,
+        "what": "53 of the 120 vehicles (22 sheriff and 31 rural road department) are poor candidates for EVs, so the headline of 120 overstates what is realistic.",
+        "good_handling": "Narrows the scope to suitable vehicles (about 67) and considers the remaining vehicles separately (e.g., hybrids), consulting the sheriff and road department."
+      },
+      {
+        "c": 4,
+        "what": "The board's 'no extra cost' condition conflicts with up-front costs and the 50% emissions goal. A partial transition may not reach the climate target.",
+        "good_handling": "States the conflict and shows the board the costs and emissions results of each option, using a whole-life cost comparison."
+      }
+    ]
+  },
+  {
+    "id": "E5-27",
+    "domain": "Affordable housing finance",
+    "task": "Write a grant summary (about 450-550 words) for Northside Community Housing's application to the State Housing Trust Fund for $2.0 million to complete financing for Larch Commons, a 48-unit affordable rental building. The summary is the section scored first by the trust fund's review panel.",
+    "fact_pack": "Larch Commons is a planned 48-unit rental building on a vacant lot 0.3 miles from the Larch Street light rail station. Total development cost is $19.2 million, or $400,000 per unit. Financing sources so far: - Low-Income Housing Tax Credit equity: $11.5 million - City housing loan: $2.0 million - Bank construction and permanent loan: $3.1 million - Deferred developer fee: $0.6 million The remaining $2.0 million gap is the amount requested from the trust fund. The trust fund's maximum award is $45,000 per unit. In its scoring criteria, the trust fund gives priority to projects that cost less than $350,000 per unit. It gives maximum points for affordability to projects where at least 20% of units are reserved for households earning 30% or less of the area median income (AMI). Planned unit mix: 30 units for households at 60% of AMI, 12 units at 50% of AMI, and 6 units at 30% of AMI. Rents for the 30% AMI units do not cover operating costs on their own. The county housing authority has committed 6 project-based rental vouchers to fill the gap. The voucher contract term is 15 years. The trust fund requires units to remain affordable for 30 years. The city approved the zoning for the project in September after a contested public hearing. A neighbourhood group argued that the building is too large for the site and that parking is insufficient. The project has 24 parking spaces. Northside's architect says construction costs in the region are rising about 6% a year. The tax credit allocation will be lost if the project does not close its financing by June 30, 2027. The trust fund announces its awards in May 2027. Northside has completed 11 affordable housing projects since 2005. All of them remain in operation and in compliance with their affordability requirements. The site includes a ground-floor community room that a local nonprofit will use for after-school tutoring.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The cost per unit ($400k) is above the trust fund's $350k priority threshold, which will cost points unless it is explained.",
+        "good_handling": "Explains the higher cost directly (location near transit, rising construction costs, community space, site factors) and does not ignore the scoring criterion."
+      },
+      {
+        "c": 2,
+        "what": "Only 6 of 48 units (12.5%) are at 30% AMI, short of the 20% (10 units) needed for maximum points.",
+        "good_handling": "Calculates the shortfall and either proposes changing the unit mix (with extra vouchers or operating support) or acknowledges the trade-off."
+      },
+      {
+        "c": 3,
+        "what": "Vouchers last 15 years but affordability must last 30 years, so the 30% AMI units have no secured operating support for half the required period.",
+        "good_handling": "Identifies the mismatch and proposes a solution (operating reserve, renewal commitment, other subsidies)."
+      },
+      {
+        "c": 4,
+        "what": "Awards are announced in May and the tax credits are lost if financing does not close by June 30, so there is very little time, and cost increases of 6% a year add risk.",
+        "good_handling": "States the timing risk and shows the project is ready to close quickly (permits, other financing already committed, a contingency budget)."
+      }
+    ]
+  },
+  {
+    "id": "E5-28",
+    "domain": "Grocery retail / e-commerce",
+    "task": "Write a product launch plan (about 450-600 words) for the Chief Operating Officer of Fairway Markets, a regional grocery chain, recommending whether and how to roll out \"order online, pick up in store\" service from the current 3 pilot stores to all 34 stores. The COO must approve the rollout plan and budget in January.",
+    "fact_pack": "Fairway Markets operates 34 supermarkets. Online orders are currently delivered by a partner company, which charges Fairway a fee of 9% of each order. Delivery orders account for 4.1% of Fairway's sales. In 2026 Fairway piloted online ordering with in-store pickup at 3 stores. The pilot stores were chosen because they are in the chain's highest-income suburban areas and have large parking lots. After 3 months, the pilot stores averaged 46 pickup orders a day, with an average order of $96. The project team's launch presentation projects $54.8 million in new annual sales if all 34 stores achieve the pilot's results. A customer analysis of the pilot found that 29% of pickup orders came from customers who previously used the delivery service, and 38% from customers who previously shopped in the store and had switched to pickup. On average, in-store shoppers buy about $11 of unplanned items per trip, which pickup customers do not. Fairway's average gross margin on groceries is 28%. Store staff pick each pickup order, at a labour cost of about $6.20 per order. Pickers must be members of the grocery workers' union in the \"clerk\" classification, which pays $1.10 an hour more than general store staff. Out-of-stock items are substituted for 7% of products ordered. Customer complaints about substitutions were the most common feedback in the pilot. Eleven of the 34 stores do not have space in their parking lots for dedicated pickup bays. Creating them would require permits from the city, which usually take 3-5 months. The COO has said she wants all 34 stores offering pickup by Thanksgiving 2027, to promote it during the holiday season. Store managers have said that November and December are the busiest months, when it is hardest to train new staff. The project budget proposes $2.6 million for equipment, signage, refrigeration and software. The marketing team plans to offer free pickup with no minimum order.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The $54.8M sales figure (46 orders x $96 x 365 days x 34 stores) counts every pickup order as new sales. In fact 67% are moved from delivery or in-store shopping, so only about a third (about $18M) is new.",
+        "good_handling": "Recalculates new sales and margin, separating orders that came from delivery (saving the 9% fee) from orders that came from in-store shopping (losing about $11 of unplanned purchases)."
+      },
+      {
+        "c": 2,
+        "what": "The pilot stores are the best-performing, highest-income suburban stores with large parking lots, so their results probably overstate what the rest of the chain will do.",
+        "good_handling": "Uses lower volume assumptions for the other stores and proposes phases by type of store."
+      },
+      {
+        "c": 3,
+        "what": "11 stores need city permits that take 3-5 months, and launching all stores in the holiday season is when staff are least available to train.",
+        "good_handling": "Proposes a schedule that finishes by early autumn or phases the 11 stores later, rather than a launch timed for Thanksgiving."
+      },
+      {
+        "c": 4,
+        "what": "Per-order economics are thin: picking cost ($6.20 at union rates), lost unplanned purchases and free pickup with no minimum order, while substitutions are the main complaint.",
+        "good_handling": "Calculates the profit per order, considers a minimum order or fee, and includes a plan to reduce substitutions."
+      }
+    ]
+  },
+  {
+    "id": "E5-29",
+    "domain": "Veterinary practice operations",
+    "task": "Write a recommendation memo (about 450-550 words) to the Director of Operations at Brookside Veterinary Group, which runs 9 general-practice clinics, on whether to pilot evening and Saturday hours at 3 clinics in 2027. The director needs a go or no-go decision with reasons by the end of the month.",
+    "fact_pack": "Brookside's 9 clinics are open from 8 a.m. to 6 p.m., Monday to Friday. Outside those hours, its phone line receives about 1,140 calls a month. Callers are referred to Valley Animal Emergency, a 24-hour emergency hospital about 25 minutes' drive from most Brookside clinics. Its average invoice is $890. A review of a sample of after-hours calls by Brookside's medical director found that about 64% were for problems that were \"urgent but not emergencies,\" such as vomiting, minor wounds or ear infections, that a general-practice clinic could treat. The proposal is to open 3 clinics for an extra 4 hours each weekday evening (6 to 10 p.m.) and 8 hours on Saturday, a total of 28 extra hours a week per clinic. Staffing a clinic for each extra hour (one veterinarian, two technicians and a receptionist) costs about $310. Brookside's average urgent-care visit is expected to generate $340 in revenue, with a contribution margin of 60% after supplies and medicines. Brookside currently has 4 unfilled veterinarian positions. In a staff survey, 70% of current veterinarians said they would not be willing to work regular evening shifts. Recruiters say veterinarians willing to work evenings ask for a pay premium of 20-25%. Valley Animal Emergency refers about 300 patients a year back to Brookside clinics for follow-up care. Its owner has said informally that she would \"rethink\" this arrangement if Brookside started competing for urgent cases. A competing group has opened two urgent-care animal clinics in the region in the past year. Brookside's client survey found that 72% of clients would prefer to bring their pet to Brookside for urgent care rather than going to an emergency hospital. Brookside's client base is concentrated in the northern suburbs, where 6 of its 9 clinics are located. The proposal has not yet chosen which 3 clinics would open. The extra hours could begin in April 2027 if staffing is in place.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "Breaking even requires capturing most of the urgent calls. 3 clinics x 28 hours x $310 is about $26k a week (about $1.35M a year), which needs about 128 urgent visits a week at $204 contribution each, compared with about 168 urgent after-hours calls a week in total, a capture rate of about 76%.",
+        "good_handling": "Does the break-even calculation, compares it with likely demand, and treats the 72% survey preference as the most that could be achieved, not a forecast."
+      },
+      {
+        "c": 2,
+        "what": "Staffing is the binding constraint: there are already 4 vacancies, 70% of veterinarians will not work evenings, and evening staff need a 20-25% premium, which raises the $310/hour cost and the break-even point.",
+        "good_handling": "Includes the pay premium in the cost and makes staffing the first condition of the plan."
+      },
+      {
+        "c": 3,
+        "what": "The emergency hospital may stop sending its 300 annual referrals, which is a revenue loss the proposal does not count.",
+        "good_handling": "Estimates the value of those referrals and includes the risk, or proposes a way to work with the hospital (e.g., a clear division of cases)."
+      },
+      {
+        "c": 4,
+        "what": "Hours, demand and location: 28 extra hours at all 3 clinics may be more than needed. A smaller pilot (e.g., evenings at fewer clinics, located in the northern suburbs where clients are concentrated) may be better.",
+        "good_handling": "Recommends a smaller or better targeted pilot with clear success measures, instead of a simple yes or no on the full proposal."
+      }
+    ]
+  },
+  {
+    "id": "E5-30",
+    "domain": "Water utility capital planning",
+    "task": "Write a policy proposal (about 450-600 words) to the Board of the Corbin Water Authority on how to prioritise and pay for replacing lead water service lines over the next 10 years. The board will adopt a replacement strategy in February so the authority can apply for state funding.",
+    "fact_pack": "The Corbin Water Authority serves about 92,000 connections. Its inventory identifies 9,800 service lines (the pipes connecting the water main to individual buildings) as lead. Another 6,400 lines are listed as \"unknown material.\" When the authority inspected a sample of unknown lines in 2025, about 35% turned out to be lead. A new federal rule requires the authority to replace all lead service lines within 10 years, starting from a compliance date of November 1, 2027. Replacing lead lines only partway (replacing just the public portion) is not counted as a replacement under the rule. The average cost of a full replacement is $11,500 when lines are replaced one at a time, based on priority. When replacements are done block by block alongside other street work, the average cost falls to $9,200. Staff have proposed two strategies: - Priority-first: replace lines first at homes with young children, daycares and schools, and in neighbourhoods with high rates of elevated blood lead levels in children. - Block-by-block: replace lines street by street, following the authority's existing water main replacement schedule. There are 31 schools and daycares with lead service lines. Part of each service line belongs to the property owner. A city ordinance requires the owner's written consent before the authority can work on private property. About 22% of properties with lead lines are rental properties. In a 2025 pilot, landlords gave consent in 40% of cases, compared with 85% for owner-occupiers. The State Revolving Fund has offered a $40 million loan. 49% of the loan principal would be forgiven for work in areas designated as disadvantaged communities. About one in three known lead lines is in a census tract with a median household income below $45,000, which the state treats as disadvantaged. The authority's finance staff estimate that each $10 million of new debt adds about $1.10 a month to the average residential water bill. The board has a policy of keeping annual rate increases below 5%. The average bill is currently $58 a month. The state funding application is due March 15, 2027 and must include the replacement strategy.",
+    "complications": [
+      {
+        "c": 1,
+        "what": "The 6,400 unknown lines likely include about 2,240 more lead lines, bringing the total to about 12,040. At $11,500 each, that is about $138.5M, not the $112.7M implied by known lines alone. Identifying unknown materials must be part of the plan.",
+        "good_handling": "Includes the estimated unknown lead lines in scope and cost, and plans for identifying the unknown lines early."
+      },
+      {
+        "c": 2,
+        "what": "Priority-first costs more per line ($11,500 vs $9,200), while block-by-block is cheaper but slower to protect the highest-risk households.",
+        "good_handling": "Quantifies the cost difference (about $2,300 per line, about $28M across 12,000 lines) and proposes a hybrid: schools, daycares and high-risk households first, block-by-block for the rest."
+      },
+      {
+        "c": 3,
+        "what": "Consent on rental properties (40%) threatens full replacement in 22% of cases and the rule does not count partial replacements, so this subgroup puts compliance at risk and has equity implications for tenants.",
+        "good_handling": "Proposes measures to address landlord consent (outreach, legal changes to the ordinance, covering the private-side cost) and flags the compliance risk."
+      },
+      {
+        "c": 4,
+        "what": "Funding and rates: the $40M loan's forgiveness applies only in disadvantaged areas, which are only about a third of known lead lines, and borrowing to cover the rest would raise bills (e.g., $100M of debt adds about $11 a month, about 19% of the $58 bill), which conflicts with the 5% annual rate increase limit.",
+        "good_handling": "Directs early work to disadvantaged areas to maximise forgiveness, calculates the effect on rates, and shows how borrowing would be spread over the 10 years to stay within the rate policy, or asks the board to change the policy."
+      }
+    ]
+  }
+]

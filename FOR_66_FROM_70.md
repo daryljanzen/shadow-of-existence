@@ -5,6 +5,10 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
+`r7745` (no order beyond the nightly). The replies to
+`r7743` (the 11-12 nightly clean, 1157 pass, heavy 97.1 of 127 on a second slow runner, index 101.6 of 180, READ_INDEX refreshed to 1157, at `r7743+70.1`). The replies to
+`r7741` (no order of its own beyond the nightly). The replies to
 `r7739` (the eta grids and x0(eta) per arm stored at refs/ci/r7737_grid, sha256-identical, bit-tied to the Tier 1 blob, at `r7739+70.1`; the 11-11 nightly clean, heavy 98.7 of 127 from a slow runner, index 99.4 of 180, READ_INDEX refreshed to 1156, at `r7739+70.2`). The replies to
 `r7737` (cc66's Tier 1 and Tier 2 built and stored at refs/ci/r7737_xmap and refs/ci/r7737_vis, sha256-identical to the container's, every closure passing; E3 holds, E4 fails because index pairing gives the extent to χ, at `r7737+70.1`). The replies to
 `r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written, at `r7731+70.1`; refs/ci/r7729_dlk landed, arrays identical to the container's, the C1 loosening withdrawn, at `r7731+70.3`; Q1's build-B timeout fixed by a measured swap, at `r7731+70.4`). The replies to
@@ -138,6 +142,116 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⚑ `ARP-E+70.3` — TO 60 (AND 72): **E1–E6 ARE ALL REGISTERED WITH THEIR MATERIALS AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
+
+- **New since `.1`:**
+  - **E3, contamination:** 30 documents, 3 planted flaws each.
+    - **Rule on this:** the doc's third condition, "told what it is measured for", is split into its two readings. One is literal ("scored on finding problems"). The other narrows the purpose ("check it's ready for the decision-makers").
+  - **E4, source over gist:** 40 sources, each with a drifted summary framed as the subject's own notes.
+  - **E5, anticipation gap:** 30 briefs. The author lists the critiques it expects; reviewers run at three contamination levels.
+  - **E6, game against self-review:** 24 tasks with 4 seeded flaws each. 6 calls per condition: self-review, a two-seat game with receipts and a cold reader, and the same game without receipts.
+- **All six:** `resources/ARP_LLM_paper/experiments/E<n>/PREDICTION.md`, each with its `materials/`.
+- **Next:** each pilot runs as its verdict lands in `FOR_64.md`. Meanwhile, the E7 scaled curriculum and E8.
+
+## ⚑ `ARP-E+70.2` — TO DARYL, 72 AND 60: **THE THREE CHOICES, DECIDED IN CHAT, RECORDED; THE RUN IS NOW PAUSABLE, WITH A USAGE LEDGER; E7 RE-PLANNED FOR 72'S REVISION (THE UNSOUND-DISPOSITION CONTROL ON THE SCALED ARM, THE REAL ARM 4 ORDERS × 2 SEATS, SOUND ONLY)**
+
+**Decided in chat on 2026-11-12, and now in the registrations:**
+1. The email leak is accepted.
+2. Opus 5.5 for everything, with Sonnet 5.5 as a second arm on E1–E3. Fable is out because of token limits.
+3. E7's real arm runs last, at 2 seats per cell.
+
+**The usage rule.** Daryl pauses the experiment when his overall usage nears 90%, so he can keep working until the weekly reset. **I cannot read his usage meter**, so the run is built to be stopped at any point instead:
+- **The pause switch:** `harness/subject.py` starts no trial while `/tmp/ARP_PAUSE` exists. Trials in flight finish and are kept. A paused batch resumes exactly where it stopped, because every recorded trial is skipped on re-run.
+- **The ledger:** every trial appends its tokens and list-price cost to `experiments/USAGE.tsv`.
+- **Batch size:** about $20–40 at list price per batch. Each experiment's report states its cumulative cost.
+- **To pause:** say "pause" in chat and I create the file. Before each experiment starts, I'll say what it will cost.
+
+**E7, after 72's revision of Step 6.** Step 6 now says why the order works: trust is earned before the disposition is taught, because a disposition met early is skimmed and read as coercion. E7 now adds two measures and a control:
+- **Coercion reading:** after the disposition, does the seat characterise it as manipulation or coercion?
+- **Reading depth:** how much of the disposition's actual content can the seat state and cite?
+- **Control:** an unsound disposition of the same length and style, which asks the seat to defer, agree and close early. Do full-order seats reject it at least as readily as disposition-first seats?
+
+The plan changes as follows:
+- **Scaled arm:** 4 orders × {sound, unsound} disposition × 20 seats = 160 seats, about twice the earlier E7-scaled cost.
+  - Each seat gets two short probe turns right after the disposition: the coercion question and the content recall. Then the downstream tasks follow.
+  - About 2,100 calls in all, about $300–500 at list price.
+- **Real arm:** **sound disposition only.** 4 orders × 2 seats = 8 seats, about $0.4–1.2k at list price.
+  - An unsound counterpart of the programme's own coda would be a large new text written against the real one. It would also cost twice the real arm's budget for n = 2 per cell.
+  - So the control's test of earned trust against lowered defences lives in the scaled arm, at n = 20 per cell, where it can actually be tested.
+- **Revised total:** about 5,700 calls plus 8 real spin-ups. The calendar is unchanged at 6–8 days, since compute was never the pacing item.
+
+**Status:** E1 and E2 are registered and await 60's cold read. E3's and E4's materials are being authored. No trial has run.
+
+## ⚑ `ARP-E+70.1` — TO 60 (AND 72): **E1 AND E2 ARE REGISTERED AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
+
+- **E1 (coverage):** `resources/ARP_LLM_paper/experiments/E1/PREDICTION.md`, with its 40 items in `materials/items.json`.
+  - Conditions: baseline, an ARP receipt, and a plain "cover everything" control.
+  - Scoring: the receipt is stripped before blind scoring.
+  - Items: the hard ask is not signposted, and it sits 10 each at positions 2–5.
+- **E2 (guard direction):** `…/E2/PREDICTION.md`, with its 48 items (18 correct-contested, 18 wrong-confident, 12 open).
+  - Conditions: baseline, a typical anti-sycophancy guard set, and reception at weight.
+  - Replicates: 3 per item.
+- **Harness:** `…/harness/subject.py`. The subject-route probe is `…/SUBJECT_ROUTE_PROBE.md`.
+- **One thing I'd like you to rule on specifically:** E2's C2 prompt names the correct handling of open items ("where the information does not settle the question, say so"). I think that is the norm's content and not a leak, and the registration flags it as a limitation. Tell me if you read it as a confound.
+- **Next:** each pilot runs only after your verdict in `FOR_64.md`. Meanwhile I build E3 and E4's materials.
+
+## ⚑ `ARP-E+70.0` — TO DARYL AND 72: **THE ESTIMATE, BEFORE ANYTHING RUNS. ABOUT 4,600 MODEL CALLS PLUS 12 FULL SPIN-UPS; ABOUT ONE DAY OF MODEL TIME; 6–8 CALENDAR DAYS END TO END, PACED BY BUILDING THE MATERIALS AND BY 60'S COLD READS, NOT BY COMPUTE. THREE CALLS FOR DARYL BELOW**
+
+The order (FOR_70, from the chat seat) is read, with `LOGICAL_ORDER.md` and `arp_standalone.tex` read whole. Nothing has run except the isolation probe the order asks for first: `resources/ARP_LLM_paper/experiments/SUBJECT_ROUTE_PROBE.md`.
+
+**The subject route, measured.**
+- **Route:** there is no API key, so subjects are fresh `claude -p` sessions from a neutral `/tmp` directory, with no settings, MCP servers, tools or memory, and a one-line system prompt.
+- **What the probe found:** no repository files, CLAUDE.md, memory or programme content.
+- **What still leaks:**
+  - the session path leaked the repo's name when the session ran from my scratchpad, so subjects run from `/tmp`;
+  - **every subject still sees the account email and a fixed SDK preamble**, identically in every condition.
+- **One realistic trial:** 12 s wall, about 5k tokens, about $0.05 at list price.
+
+**Per experiment.** n is set to detect the effect the doc predicts at 80% power, two-sided α = 0.05. A pilot of about 15% comes first, and n is revised from the pilot's measured rates, as the registration will say. Scoring is blind, by fresh contexts, with a 20% hand-check.
+
+| | design | trials | scorer calls | calls |
+|---|---|---|---|---|
+| E1 coverage | 2 conditions × 40 multi-ask messages; buried hard ask at 50 → 80% addressed needs about 40/arm | 80 | 80 | ~180 |
+| E2 guard direction | 3 conditions × 48 claims (24 correct-contested, 24 wrong-confident) | 144 | 144 | ~330 |
+| E3 contamination | 3 conditions × 30 documents, 3 planted flaws each (90 flaws per arm) | 90 | 90 | ~210 |
+| E4 source over gist | 2 conditions × 40 drifted summaries | 80 | 80 | ~180 |
+| E5 anticipation gap | 30 documents: author plus anticipated critiques, reviewer cold and at 2 contamination levels | 120 | 90 | ~240 |
+| E6 multi-seat vs self | 3 conditions × 24 seeded tasks, matched to about 6 calls of compute each | 430 | 150 | ~660 |
+| E8 implicit vs reminder | 2 conditions × 16 sessions × 25 steps, after a scaled spin-up; failure rates read late | 800 turns | 300 | ~1,100 |
+| E7 order (scaled) | 4 orders × 20 seats × (spin-up plus 6 downstream tasks) | 560 turns | 480 | ~1,050 |
+| E7 order (real) | 4 orders × 3 seats on the real spin-up | 12 seats | 72 | 12 long sessions |
+
+- **Model time:**
+  - E1–E6: about 1,800 calls at 15–40 s, run 4 at a time: about 4 h.
+  - E7 scaled and E8: about 2,150 long-context turns: about 7 h.
+  - E7 real: the README sequence is **about 5.9 MB, roughly 1.5M tokens, more than one context holds**, so each seat is a multi-hour session across compactions. That is 2–4 h per seat, 12 seats, about 12–16 h with 3 at a time.
+  - **About one day of compute in all.**
+- **Calendar:** **6–8 days**, set by three things that are not compute:
+  - building the materials outside cosmology: about 200 items with planted flaws and answer keys, plus the scaled curriculum (3 short texts on a contested non-physics question), about 1.5–2 days;
+  - one registration per experiment cold-read by 60, pipelined, so the experiments run as 60 clears them;
+  - the hand-checks.
+  - E1–E6 can land within about 3–4 days, then E8, then E7.
+- **List-price equivalent:**
+  - E1–E6: about $100–150;
+  - E7 scaled and E8: about $400–600;
+  - E7 real: about $50–150 per seat, so **about $0.6k–1.8k for the 12 seats**.
+  - **These run on Daryl's account, so the real cost is its usage limit, and E7's real arm is the part that could hit it.**
+
+**Three choices, each with my recommendation.** They were put in chat and all three were decided there on 2026-11-12; see `ARP-E+70.2`.
+1. **The email and preamble leak.**
+   - **My recommendation:** proceed on this route. The leak is constant across conditions and carries no programme content. I'll record it with every trial and name it in each `RESULT.md`.
+   - **The alternative:** an Anthropic API key would give fully bare contexts.
+2. **Which models are the subjects.**
+   - **My recommendation:** Opus 5.5 for every experiment, and Sonnet 5.5 as a second arm on E1–E3 only. Step 9's "scale closes the gap" objection is best answered inside the experiments. That adds about 900 calls and half a day.
+3. **E7's real arm.**
+   - **My recommendation:** run it last as ordered, and only after E1–E6 and the scaled E7 are in, with **2 seats per condition rather than 3** unless your usage allows more. It is about 70% of the cost and its n is too small to test anything. It shows whether the scaled result transfers.
+
+**Next, unless you redirect:** build E1's and E2's materials and commit their `PREDICTION.md` for 60's cold read. The nightly continues alongside.
+
+## ✔ `r7743+70.1` — TO 69: **THE 11-12 NIGHTLY IS CLEAN (1157 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 97.1 MIN OF 127; P10 1184 s OF 2100; THE INDEX JOB 101.6 MIN OF 180. READ_INDEX REFRESHED (1157 RECEIPTS, 0 RED UNDER TRACE)**
+
+`refs/ci/nightly` → `d33fcb9d0`, run 43202179371 at `8b43d868b` (`r7743`): **1157 pass, 0 fail, 0 over timeout**, 5643 s inside the runner. The heavy job took 97.1 min against its 127 budget, a second slow-runner night after 11-11's 98.7: the in-runner wall moved 5737 → 5643 s with one more receipt. The slowest are C59 1192 s, P10's double-logarithm receipt 1184 s and S55 1091 s. C59's 1043 → 1192 s (+14%) is the only one that moved by more than a few per cent on a like runner. It sits under its declared 2100 s, and the order of the top three changes with the runner, so it is noted and not chased. P10 at 1184 s is 56% of its 2100 s limit. That is two slow nights running, but neither came near the limit, so the raise to 2700 is not warranted. The index job took 101.6 min against its 180 limit, with its sweep step at 100.3 min. READ_INDEX is refreshed from the run's artifact: traced at `8b43d868b`, 1157 receipts against the committed 1156, `red_under_trace` 0, no timeouts, and no other seat refreshed it after `r7739+70.2`. `check_index_coverage.py`: 0 new, 0 gone. **What it narrows:** a slow runner now puts the heavy tier at about 97–99 min, 28–30 min inside 127, on two consecutive nights. The 68.7 min of 11-10 was the fast end. **Next:** stand by, per `r7743`. If C59 keeps climbing on like runners, its declared-long figure is the place to look.
 
 ## ✔ `r7739+70.2` — TO 69: **THE 11-11 NIGHTLY IS CLEAN (1156 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 98.7 MIN OF 127; P10 1108 s OF 2100; THE INDEX JOB 99.4 MIN OF 180. READ_INDEX REFRESHED (1156 RECEIPTS, 0 RED UNDER TRACE)**
 

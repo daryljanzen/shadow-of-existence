@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "E6-01",
+    "domain": "e-commerce A/B test",
+    "question": "Should the online shop roll out the redesigned checkout (variant B)? The business rule is to roll out only if the redesign raises revenue per visitor; also report the effect on conversion.",
+    "data": "Checkout redesign A/B test, UK website only, 14 days (3-16 March). Traffic was meant to split 50/50; the randomiser over-allocated slightly to B.\n\n| Arm | Visitors | Orders | Revenue |\n| A (current checkout) | 24,000 | 1,080 | £61,560 |\n| B (redesign) | 25,000 | 1,150 | £62,100 |\n\nBy device:\n| Arm | Desktop visitors | Desktop orders | Mobile visitors | Mobile orders |\n| A | 12,000 | 660 | 12,000 | 420 |\n| B | 12,500 | 640 | 12,500 | 510 |\n\nRevenue figures are net of refunds and cancellations.\n\nQA log: on days 1-2 the QA team placed 40 test orders through arm B (all on mobile) to check the new payment flow. They were cancelled at zero revenue but remain in arm B's order counts above. No test orders were placed through arm A.\n\nAgreed analysis plan: conversion = orders / visitors, compared with a two-proportion z-test at the 5% level (two-sided). Rollout decision rule: roll out only if revenue per visitor is higher for B. The company also operates US and German sites, which have different payment methods and were not part of this test.",
+    "draft": "**Checkout redesign test: readout**\n\n**Summary.** Variant B, the redesigned checkout, outperformed the current checkout over the 14-day test, and I recommend rolling it out.\n\n**Conversion.** Arm A converted 1,080 of 24,000 visitors (4.50%) and arm B converted 1,150 of 25,000 visitors (4.60%). That is a 0.10-point absolute improvement, or a relative lift of 2.2%. A two-proportion z-test gives z of about 0.53, which is not significant at the 5% level, so on conversion alone the evidence is weak. The direction is nonetheless positive, and the device split is encouraging: on mobile, B converted 4.08% of visitors against 3.50% for A, while desktop slipped slightly (5.12% for B versus 5.50% for A).\n\n**Order value.** Average order value was £57.00 in arm A (£61,560 / 1,080). In arm B it was £56.00 (£62,100 / 1,150), so the redesign cost us only about a pound per order, a modest trade-off for more orders.\n\n**Revenue.** The decisive figure is revenue, because that is what the rollout rule is about. Arm B brought in £62,100 against £61,560 for arm A, an extra £540 over the fortnight. Annualised, that is roughly £14,000 of additional revenue from a change that has already been built and paid for. Because the business criterion is revenue, and B produced more revenue, B meets the bar for rollout even though the conversion difference on its own is not statistically significant.\n\n**Interpretation.** The mobile result suggests the redesign works best for mobile users, who make up half of the test traffic. On this basis we should expect a similar lift of around 2% in conversion when we launch the redesign on the US and German sites next quarter, and a larger one in markets with a high share of mobile traffic.\n\n**Caveats.** The randomiser gave B 1,000 more visitors than A. This is a small imbalance (51% versus 49% of traffic) and does not by itself bias the per-visitor rates, but it is worth fixing before the next test. The test ran for two full weeks, so both arms saw the same mix of weekdays and weekends. Revenue is net of refunds, so returns behaviour is already reflected. Both arms ran concurrently on the UK site, so seasonal or marketing effects should affect them equally.\n\n**Recommendation.** Roll out variant B to 100% of UK traffic now, and schedule the US and German launches for next quarter. We should keep monitoring order value for a month after launch to make sure the slight fall does not widen, and repeat the device split once the redesign is live.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "In arm B it was £56.00 (£62,100 / 1,150)",
+        "description": "£62,100 / 1,150 = £54.00, not £56.00. The fall in order value is £3 per order, not about £1.",
+        "correction": "AOV B = £54.00 on the draft's own order count (a 5.3% fall from £57.00); with the 40 QA orders removed it is £62,100 / 1,110 = £55.95."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "Arm B brought in £62,100 against £61,560 for arm A, an extra £540 over the fortnight",
+        "description": "Compares total revenue between arms of different size (25,000 vs 24,000 visitors). The decision rule is revenue per visitor, and B had more traffic.",
+        "correction": "Revenue per visitor: A £61,560 / 24,000 = £2.565; B £62,100 / 25,000 = £2.484, which is 3.2% lower. B fails the rollout rule."
+      },
+      {
+        "f": "F3",
+        "type": "inference",
+        "location": "we should expect a similar lift of around 2% in conversion when we launch the redesign on the US and German sites next quarter",
+        "description": "Generalises a non-significant UK-only result to other markets with different payment methods that were not tested, and treats the mobile pattern as an established cause.",
+        "correction": "The test supports no claim about the US or German sites. Any launch there needs its own test, and the UK lift itself is not distinguishable from zero."
+      },
+      {
+        "f": "F4",
+        "type": "omission",
+        "location": "arm B converted 1,150 of 25,000 visitors (4.60%)",
+        "description": "Ignores the 40 zero-revenue QA test orders in arm B's count, which inflate B's conversion (and its mobile conversion).",
+        "correction": "Real B orders = 1,110: conversion 4.44% vs 4.50% for A (z about -0.32), so there is no lift. Mobile B = 470 / 12,500 = 3.76%."
+      }
+    ],
+    "open_extensions": [
+      "Cleaned device-level analysis: after removing the QA orders, mobile B is 3.76% vs 3.50% and desktop B is 5.12% vs 5.50%. Desktop falls by 0.38 points, which is worth testing for an interaction before any partial (mobile-only) rollout.",
+      "Power and minimum detectable effect: at a baseline of about 4.5% with roughly 24,000 visitors per arm, the test has 80% power only for relative lifts of roughly 12% or more. A longer test, or revenue per visitor as the pre-registered primary metric with a bootstrap CI, would be needed to detect a 2-3% effect.",
+      "Check whether the 51/49 traffic imbalance is a sample-ratio mismatch (chi-square on 24,000 vs 25,000 against an expected 24,500 each gives chi-square of about 20, p < 0.0001), which points to a possible assignment or logging bug that could also affect the outcome data."
+    ]
+  },
+  {
+    "id": "E6-02",
+    "domain": "SaaS cohort retention",
+    "question": "Did the new onboarding flow (launched 1 March) improve the budgeting app's month-3 retention, and by how much?",
+    "data": "Subscription budgeting app. A new onboarding flow went live on 1 March for all new sign-ups. Also on 1 March, the company completed its acquisition of a rival app, Tallyo. Tallyo's existing paying users were migrated into the product and counted as new sign-ups in the month they migrated (600 in March, 400 in April, none in any other month).\n\nMonthly sign-up cohorts: users still active at the end of month 1, 2 and 3 after sign-up. Data extracted 1 August; '-' = not yet observable.\n\n| Cohort | Sign-ups | M1 | M2 | M3 |\n| Jan | 2,000 | 1,200 | 960 | 840 |\n| Feb | 1,800 | 1,062 | 846 | 738 |\n| Mar | 2,400 | 1,560 | 1,272 | 1,128 |\n| Apr | 2,200 | 1,452 | 1,166 | 1,034 |\n| May | 2,500 | 1,700 | 1,375 | - |\n| Jun | 2,600 | 1,768 | - | - |\n\nMigrated Tallyo users are included in the table above:\n- March: 600 sign-ups; active M1 480, M2 450, M3 420.\n- April: 400 sign-ups; active M1 320, M2 300, M3 280.\n\nMonth-3 retention (M3 / sign-ups) is the company's headline retention metric. No other product changes were made between January and June.",
+    "draft": "**Onboarding flow: retention impact**\n\n**Question.** Has the new onboarding flow, introduced this spring, improved how many new users we keep?\n\n**Headline.** Yes, clearly. Month-3 retention, our headline metric, rose from 42% (January) and 41% (February) to 47% for both March and April, an improvement of about five to six percentage points. On a typical cohort of 2,200 sign-ups that is roughly 120 extra users still active after three months, every month.\n\n**Cohort detail.** Pre-change cohorts were very consistent. January kept 60% of users at month 1, 48% at month 2 and 42% at month 3; February was a point lower at each stage (59%, 47%, 41%). Post-change cohorts are better at every stage. March reached 65% at month 1 and 53% at month 2, and April reached 66% and 53%. The gain shows up in the very first month and then carries through, which is what we would expect from an onboarding change: users who get set up properly in the first week are much less likely to churn later.\n\n**Which cohorts to compare.** Because the new flow went live in mid-March, the March cohort is a mix of old and new onboarding. April is therefore the cleanest post-change cohort, and on its own it shows the same 47% month-3 retention as March. If anything, this suggests the March figure understates the true effect, since part of that cohort went through the old flow.\n\n**Latest cohorts.** Newer cohorts look stronger still. May and June retained 68% of users at month 1. Comparing like with like in terms of recency, the two most recent cohorts are retaining 68% of users, against the 41-42% we used to see, which suggests the effect is growing as the team keeps polishing the flow.\n\n**Outlook.** Month-1 retention has gone from 65% (March) to 66% (April) to 68% (May and June). If the month-on-month improvement in M1 retention continues at this pace, month-1 retention should reach about 75% by the end of the year, and month-3 retention should follow it upwards.\n\n**Robustness.** The result does not depend on cohort size: the March and April cohorts were larger than January and February, yet retention rates still rose, so this is not an artefact of small numbers. No other product changes were shipped between January and June, so there is no competing explanation from the product side.\n\n**Recommendation.** Treat the new onboarding flow as a success and report a 5-6 point lift in month-3 retention to the board. Continue investing in onboarding.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "omission",
+        "location": "rose from 42% (January) and 41% (February) to 47% for both March and April",
+        "description": "Ignores the 1,000 migrated Tallyo users in the March and April cohorts. They were already paying users of another app and retain far better (70% at M3), so they inflate the post-change cohorts.",
+        "correction": "Organic cohorts: March 708 / 1,800 = 39.3% and April 754 / 1,800 = 41.9% at M3, against 42.0% and 41.0% before. There is no improvement in month-3 retention (pooled 40.6% after vs 41.5% before)."
+      },
+      {
+        "f": "F2",
+        "type": "misreport",
+        "location": "Because the new flow went live in mid-March, the March cohort is a mix of old and new onboarding",
+        "description": "The data says the flow went live on 1 March for all new sign-ups, so March is a fully post-change cohort.",
+        "correction": "March is a clean post-change cohort. The 'understates the effect' argument has no basis."
+      },
+      {
+        "f": "F3",
+        "type": "method",
+        "location": "the two most recent cohorts are retaining 68% of users, against the 41-42% we used to see",
+        "description": "Compares month-1 retention of the latest cohorts with month-3 retention of the earlier cohorts, which are different horizons.",
+        "correction": "Compare like with like. May/June M1 is 68% against January/February M1 of 60%/59%, and May M2 is 55% against 48%/47%. May and June contain no migrated users, so these are organic comparisons and they do suggest an early-stage improvement."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "If the month-on-month improvement in M1 retention continues at this pace, month-1 retention should reach about 75% by the end of the year",
+        "description": "Extrapolates a short, already-flattening series (May and June are both 68%) into a forecast, and assumes month-3 retention will follow.",
+        "correction": "Four data points that plateau do not support a trend forecast. Report the observed values only."
+      }
+    ],
+    "open_extensions": [
+      "Organic-only comparison at M1 and M2 shows a real early-stage effect may exist: organic March and April M1 is 60.0% and 62.9% (vs 60%/59% before) and May/June M1 is 68%, so the onboarding flow may lift early retention without (yet) moving M3. When May and June mature to M3, they will be the decisive cohorts.",
+      "Report the conditional retention curve (M2/M1 and M3/M2) for organic users. Organic March M3/M1 is 708/1,080 = 65.6% vs January 840/1,200 = 70.0%, which suggests any early gain may be partly offset by later churn.",
+      "Put an uncertainty interval on the cohort differences (e.g. a two-proportion CI on pooled pre vs post organic M3), since month-to-month variation of about 1 point is visible in the pre-period."
+    ]
+  },
+  {
+    "id": "E6-03",
+    "domain": "pricing elasticity (cafe chain)",
+    "question": "What is the own-price elasticity of demand for the chain's large latte, what did the September price rise do to weekly latte revenue, and should the price be raised again to £4.00?",
+    "data": "Six-store coffee chain. On 1 September the price of a large latte rose from £3.20 to £3.60. No other prices changed. Compare the 4 weeks of August (baseline) with the 8 weeks of September-October. Use simple percentage changes from the August baseline (not midpoint/arc formulas).\n\n| Product | Aug: avg units per week | Sep-Oct: avg units per week | Price |\n| Large latte, all 6 stores | 9,000 | 8,100 | £3.20 then £3.60 |\n| Medium latte, all 6 stores | 7,000 | 7,700 | £2.90 throughout |\n\nOperations log: Store 4, which normally sells about 1,500 large lattes and about 1,150 medium lattes a week, was closed for refurbishment for 2 of the 8 weeks in October. Its zero-sales weeks are included in the Sep-Oct averages above. All other stores traded normally throughout.\n\nIngredient and serving costs are about the same for both sizes, so finance will judge the change mainly on revenue across both latte sizes. No price above £3.60 has ever been charged at any store.",
+    "draft": "**Large latte price rise: elasticity and revenue**\n\n**What changed.** On 1 September the large latte went from £3.20 to £3.60, a price rise of 11.1% (£0.40 on £3.60). Nothing else on the menu changed, which gives us a clean before-and-after comparison: four weeks of August against eight weeks of September and October.\n\n**Volume response.** Large latte sales fell from 9,000 to 8,100 a week, a 10% drop. Dividing the change in quantity by the change in price gives an own-price elasticity of about −0.90 (−10% / 11.1%). An elasticity between 0 and −1 means demand is inelastic: customers cut back by proportionally less than the price went up, so revenue from the product rises.\n\n**Revenue.** That is exactly what happened. Weekly large-latte revenue moved from £28,800 (9,000 × £3.20) to £29,160 (8,100 × £3.60), an increase of £360 a week or 1.25%. Over a year that is worth roughly £18,700 to the chain, before any change in costs, which finance tells us are essentially unaffected by the mix of sizes.\n\n**Substitution.** A common worry with a price rise on one size is that customers simply trade down to a smaller, cheaper option, which would mean the 'lost' large lattes are not really lost but cannibalised at a lower price. We checked this. Medium latte sales were essentially flat at around 7,000 a week, so there is no sign of customers trading down to the cheaper size. The lost large-latte volume therefore reflects customers who bought less often or went elsewhere, and the revenue gain above is the whole story.\n\n**Should we go to £4.00?** A further rise from £3.60 to £4.00 is another £0.40. Since demand is inelastic, a further rise to £4.00 should raise revenue again by a similar amount, adding perhaps another £350-£400 a week. The case looks attractive, given that revenue rose after the first increase.\n\n**Caveats.** Eight weeks is a reasonable but not long window, and September is a month when regular customers return from holidays, so there may be some seasonality in the comparison. The elasticity estimate also relies on all six stores trading normally across both periods. We have not used a control group, because all stores took the price rise at the same time. We also have only four weeks of baseline data, so ordinary week-to-week variation in sales could move the estimate somewhat; a longer baseline would help in future.\n\n**Recommendation.** Treat the September rise as a success. Plan a second rise to £4.00 in the new year, and review the numbers after another eight weeks.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "a price rise of 11.1% (£0.40 on £3.60)",
+        "description": "The percentage change is computed on the new price instead of the August baseline the brief specifies.",
+        "correction": "£0.40 / £3.20 = 12.5%. The elasticity on the draft's own volume figure is −10% / 12.5% = −0.80, not −0.90."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "Large latte sales fell from 9,000 to 8,100 a week, a 10% drop",
+        "description": "Ignores Store 4's two-week closure, which removed about 3,000 large lattes (375 a week on average) from the Sep-Oct figure. The draft's caveat even assumes all stores traded normally.",
+        "correction": "Closure-adjusted Sep-Oct volume is about 8,100 + 375 = 8,475 a week, a 5.8% fall. Elasticity is about −0.47 and large-latte revenue is about £30,510 a week (+5.9%), not +1.25%."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "Medium latte sales were essentially flat at around 7,000 a week, so there is no sign of customers trading down to the cheaper size",
+        "description": "The data shows medium latte sales rose from 7,000 to 7,700 a week (+10%), or about 7,990 (+14%) after adjusting for Store 4. This is clear evidence of trading down.",
+        "correction": "Medium-latte revenue rose from £20,300 to £22,330 a week (about £23,160 adjusted). Total latte revenue rose from £49,100 to £51,490 (raw), and part of the 'lost' large volume moved to medium."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Since demand is inelastic, a further rise to £4.00 should raise revenue again by a similar amount",
+        "description": "Extrapolates a single local elasticity estimate to a price never charged. Elasticity typically rises as price increases, and the substitution to medium makes the response larger than the large-latte figure suggests.",
+        "correction": "The data cannot predict the response at £4.00. A trial at a subset of stores, with comparison stores, would be needed."
+      }
+    ],
+    "open_extensions": [
+      "Compute a cross-price elasticity of medium lattes with respect to the large-latte price: roughly +10% / 12.5% = +0.8 raw, or about +1.1 closure-adjusted. This quantifies cannibalisation and shows the combined latte category is what matters.",
+      "Repeat the analysis excluding Store 4 entirely (five stores, both periods) as a cleaner robustness check than imputing its missing weeks; this requires store-level weekly data.",
+      "Use the arc (midpoint) elasticity as a sensitivity check, since the price change is large: on the adjusted volumes (−6.0% / 11.8%) it is about −0.51, close to the simple-percentage estimate."
+    ]
+  },
+  {
+    "id": "E6-04",
+    "domain": "contact-centre staffing",
+    "question": "How many agents should be rostered for the Monday 09:00-10:00 interval, and how does that compare with the 48 currently rostered?",
+    "data": "Inbound customer-service team, planning the Monday 09:00-10:00 interval.\n\n- Forecast calls offered, Monday 09:00-10:00: 360. This forecast is already specific to Monday mornings: it was built from the last 8 Mondays and includes the usual Monday uplift of about 15% over other weekdays.\n- Average talk time: 300 seconds per call.\n- Average after-call work (wrap-up notes and logging): 45 seconds per call. Agents cannot take a new call during wrap-up.\n- Average handle time (AHT) = talk time + after-call work.\n- Workload in agent-hours = calls × AHT (seconds) / 3,600.\n- Target occupancy: 85% (share of logged-in time agents spend handling calls). Productive agents needed = workload / occupancy.\n- Shrinkage: 30% of rostered time is lost to breaks, training, coaching and absence. Planning convention: rostered agents = productive agents / (1 − shrinkage).\n- Round the final rostered figure up to a whole agent.\n- Currently rostered for this interval: 48 agents.\n- Service-level history: on the last 8 Mondays, 09:00-10:00 averaged 61% of calls answered within 20 seconds against an 80% target, and an abandonment rate of 9%.",
+    "draft": "**Monday 09:00-10:00 staffing requirement**\n\n**Purpose.** This note sets out how many agents we need to roster for the Monday morning peak hour, using our standard workload method, and compares that with the current roster of 48. The interval has averaged well below its service-level target over the last 8 Mondays.\n\n**Step 1: Call volume.** The planning forecast for 09:00-10:00 is 360 calls. However, the 360 forecast is a weekday average, so I have applied the standard 15% Monday uplift, giving 414 calls for the Monday interval. Monday volumes run above other weekdays, and planning on an average day would leave us exposed.\n\n**Step 2: Handle time.** Average handle time is 300 seconds (5 minutes) per call. I have not added any buffer for variation.\n\n**Step 3: Workload.** Workload is the total time agents must spend handling calls in the interval, i.e. calls multiplied by handle time: 414 × 5 minutes = 2,070 minutes, or 34.5 agent-hours of call handling that must be delivered within the hour.\n\n**Step 4: Occupancy.** We do not want agents occupied 100% of the time, because that leads to fatigue, burnout and long queues. At our 85% occupancy target, the number of productive agents needed is 34.5 ÷ 0.85 = 39.6 productive agents.\n\n**Step 5: Shrinkage.** Not everyone rostered is actually available to take calls: breaks, training, coaching and absence take 30% of rostered time. Allowing for this, 39.6 × 1.30 = 51.5 rostered agents, which rounds up to 52.\n\n**Comparison with the current roster.** We currently roster 48 agents for this interval, so we are short by 4 agents. This is consistent with the service-level history: over the last 8 Mondays only 61% of calls were answered within 20 seconds, against an 80% target, and 9% of callers abandoned. A shortfall of about 8% of the required roster would plausibly produce a miss of this size.\n\n**Options.**\n1. Move 4 agents' start times from 10:00 to 09:00 on Mondays. This is cost-neutral but will thin out the 10:00-11:00 interval, which would need checking.\n2. Schedule no training or coaching sessions in the first hour on Mondays. This reduces shrinkage for this interval and could recover some capacity.\n3. Add 4 part-time agents on a Monday-morning shift pattern.\n\n**Recommendation.** Roster 52 agents for Monday 09:00-10:00, starting with option 2 (no training in the first hour) and topping up with option 1. Re-run the calculation each quarter as the forecast is refreshed. If option 2 is adopted, the shrinkage figure for this interval should be re-estimated before the next planning round.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "misreport",
+        "location": "the 360 forecast is a weekday average, so I have applied the standard 15% Monday uplift",
+        "description": "The data states the 360 forecast is already Monday-specific and already includes the Monday uplift. Applying 15% again double-counts it.",
+        "correction": "Use 360 calls, not 414."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "Average handle time is 300 seconds (5 minutes) per call",
+        "description": "Uses talk time only. The data gives 45 seconds of after-call work per call, during which agents cannot take calls, and defines AHT as talk + wrap.",
+        "correction": "AHT = 345 seconds. With 360 calls, workload = 360 × 345 / 3,600 = 34.5 agent-hours. (The draft's 34.5 is right only by coincidence: two errors offset.)"
+      },
+      {
+        "f": "F3",
+        "type": "calculation",
+        "location": "34.5 ÷ 0.85 = 39.6 productive agents",
+        "description": "Arithmetic error: 34.5 / 0.85 = 40.6.",
+        "correction": "40.6 productive agents."
+      },
+      {
+        "f": "F4",
+        "type": "method",
+        "location": "39.6 × 1.30 = 51.5 rostered agents",
+        "description": "Applies shrinkage by multiplying by (1 + 0.30) instead of dividing by (1 − 0.30), as the planning convention requires. This understates the roster.",
+        "correction": "40.6 / 0.70 = 58.0, so 58 rostered agents (10 more than the current 48, not 4)."
+      }
+    ],
+    "open_extensions": [
+      "Workload-based staffing ignores queueing. An Erlang C check at 34.5 Erlangs (360 calls, 345 s AHT) shows 40 logged-in agents give about 80% answered within 20 s (39 give about 73%). This agrees with the 40.6 from the occupancy method and supports roughly 58 rostered.",
+      "Sensitivity analysis: each 10% error in the call forecast moves the requirement by about 6 rostered agents (58 × 0.1), and each 5-point change in shrinkage moves it by about 4-5. Interval-level shrinkage for Monday 09:00 (e.g. with training barred) may differ from the 30% average.",
+      "Use the 9% abandonment to sanity-check demand: handled calls understate offered demand, and repeat calls from abandoners may already be inflating the 360 forecast."
+    ]
+  },
+  {
+    "id": "E6-05",
+    "domain": "employee engagement survey",
+    "question": "What does this year's engagement survey say about overall employee satisfaction, how has it changed since last year, and which department needs attention?",
+    "data": "Annual employee engagement survey, three departments, 1,200 employees in total. Key item: 'Overall, I am satisfied working here' (agree = 'satisfied').\n\nLast year: 600 of 1,150 employees responded, and 62% of respondents were satisfied.\n\nThis year:\n| Department | Headcount | Responses | Satisfied |\n| Engineering | 300 | 180 | 126 |\n| Sales | 400 | 120 | 60 |\n| Operations | 500 | 240 | 132 |\n| Total | 1,200 | 540 | 318 |\n\nThe survey contained no questions about pay, commission, shift patterns or line management, and free-text comments were not coded this year.\n\nContext from HR: Sales moved to a new commission scheme in January. Operations introduced a new shift pattern in March. Engineering had no structural changes. The survey was anonymous and open for two weeks in May; Sales staff were at the annual sales conference for four of those ten working days.",
+    "draft": "**Engagement survey: results and priorities**\n\n**Response.** This year 540 of 1,200 employees responded, a 47% response rate. That is lower than we would like but is enough to give a reliable picture at company level.\n\n**Overall satisfaction.** Of the 540 respondents, 318 said they were satisfied working here, which is 58.9%. This is down from 65% last year, a fall of six points. A drop of that size in a single year is a clear signal that engagement is weakening across the company, and the board should treat it as a priority.\n\n**By department.**\n- Engineering: 126 of 180 respondents satisfied (70%).\n- Sales: 60 of 120 satisfied (50%).\n- Operations: 132 of 240 satisfied (55%).\n\nEngineering is comfortably the most positive department. Operations has the largest number of satisfied staff (132), making it the healthiest department by this measure, with a broad base of positive employees. Sales is the clear outlier at the bottom, with only half of respondents satisfied.\n\n**Why is Sales low?** The low score in Sales is clearly a reaction to the new commission scheme introduced in January. Sales staff had a significant change to how they are paid early in the year, and dissatisfaction with pay is a well-known driver of disengagement. We would expect satisfaction to recover once the scheme has bedded in, or sooner if the scheme is adjusted.\n\n**Response rates.** Response rates differed between departments: 60% in Engineering, 30% in Sales and 48% in Operations. The Sales figure is particularly low, partly because the survey window overlapped with the sales conference. We should bear this in mind, but the Sales result is still based on 120 people, which is a reasonable sample.\n\n**Priorities.**\n1. Sales: review the commission scheme with the Sales leadership team and run listening sessions to understand the specific concerns.\n2. Company-wide: the six-point fall needs a response. We suggest a short pulse survey in the autumn to track whether satisfaction is still falling.\n3. Operations: as the healthiest department, Operations could share practices with Sales, for example around team communication.\n\n**Next year.** We recommend adding questions on pay, workload and management so that we can diagnose causes directly, coding free-text comments, and avoiding clashes with major events so that response rates are more even.\n\n**Reporting.** Results should be shared with each department head alongside their department's response rate, so that small or unrepresentative samples are visible when the results are discussed. We also suggest publishing the company-level result to all staff with a short summary of the agreed actions.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "540 of 1,200 employees responded, a 47% response rate",
+        "description": "540 / 1,200 = 45%, not 47%.",
+        "correction": "Response rate 45.0%."
+      },
+      {
+        "f": "F2",
+        "type": "misreport",
+        "location": "This is down from 65% last year, a fall of six points",
+        "description": "The data gives last year's satisfaction as 62%, not 65%.",
+        "correction": "The fall is 62% to 58.9%, i.e. 3.1 points. With about 600 and 540 respondents this is within sampling noise (z of about 1.1), so 'a clear signal' is not supported."
+      },
+      {
+        "f": "F3",
+        "type": "method",
+        "location": "Operations has the largest number of satisfied staff (132), making it the healthiest department",
+        "description": "Ranks departments on counts of satisfied respondents, which reflect department size and response numbers, rather than on rates.",
+        "correction": "By rate, Operations is 55%, below Engineering (70%) and only 5 points above Sales (50%). Engineering is the healthiest; Operations is not a model for Sales."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "The low score in Sales is clearly a reaction to the new commission scheme introduced in January",
+        "description": "Asserts a cause the survey cannot test (no pay or commission questions, no prior-year department breakdown). Operations also had a structural change and also scores low.",
+        "correction": "The data shows Sales scores lowest, not why. Last year's Sales figure and targeted questions would be needed to attribute it to commission."
+      }
+    ],
+    "open_extensions": [
+      "Weight to headcount to correct for unequal response rates: (0.70×300 + 0.50×400 + 0.55×500) / 1,200 = 57.1%, slightly below the raw 58.9%, because the most positive department is over-represented among respondents.",
+      "Report confidence intervals by department. Sales at 60/120 has a 95% CI of roughly ±9 points, so Sales vs Operations (55%) is not clearly different, while Engineering is clearly higher than both.",
+      "Non-response sensitivity for Sales: with only 30% responding (partly due to the conference), show the range of plausible department satisfaction if non-respondents were 10 points more or less satisfied than respondents."
+    ]
+  },
+  {
+    "id": "E6-06",
+    "domain": "local outbreak investigation",
+    "question": "Which food item at the wedding reception was the most likely vehicle of the gastrointestinal outbreak, and what does the evidence say about wider risk from the caterer?",
+    "data": "Gastrointestinal illness after a wedding reception (Saturday evening buffet). All 120 guests who ate at the reception were interviewed. 48 met the case definition: diarrhoea and/or vomiting with onset 12-72 hours after the meal.\n\nFood-specific exposure:\n| Food | Ate: total | Ate: ill | Did not eat: total | Did not eat: ill |\n| Chicken skewers | 80 | 40 | 40 | 8 |\n| Prawn salad | 50 | 35 | 70 | 13 |\n| Rice | 100 | 42 | 20 | 6 |\n| Chocolate mousse | 60 | 30 | 60 | 18 |\n\nNotes from the environmental health officer:\n- The caterer cooked one batch of rice on Saturday morning. Part of it was served at the wedding; the rest went to a 90-person corporate lunch the same day. All 90 lunch attendees were contacted and none reported illness.\n- The prawns were bought ready-defrosted, and the prawn salad was assembled about 6 hours before service and held at room temperature.\n- The caterer supplied four other events that week, using different menus. No illness reports have been received from them so far, though not all attendees have been contacted.\n- Stool samples are awaited.",
+    "draft": "**Wedding reception outbreak: preliminary analysis**\n\n**Overview.** Of 120 guests who ate at the reception, 48 met the case definition, an overall attack rate of 40%. All guests were interviewed, so there is no non-response bias in the food histories.\n\n**Food-specific attack rates.**\n- Chicken skewers: 50% among those who ate them (40/80) versus 20% among those who did not (8/40), a relative risk of 2.5.\n- Prawn salad: 70% among those who ate it versus 13% among those who did not, a relative risk of about 5.4.\n- Rice: 42% among eaters (42/100) versus 30% among non-eaters (6/20), a relative risk of 1.4.\n- Chocolate mousse: 50% (30/60) versus 30% (18/60), a relative risk of about 1.7.\n\nEvery item has a relative risk above 1, which is typical when several dishes are eaten together and illness is common.\n\n**Which food best explains the outbreak?** A useful test of a candidate vehicle is how many of the cases it can account for. Here rice stands out: 42 of the 48 cases (88%) ate rice, more than for any other dish, so rice is the most likely vehicle. By contrast only 35 cases ate prawn salad, leaving 13 cases unexplained, and 40 ate chicken, leaving 8. Although prawn salad has the highest attack rate, a vehicle that misses more than a quarter of the cases is a weaker candidate. Rice was also the dish most guests ate, and bulk-cooked rice held warm is a common source of food poisoning, so it is a plausible vehicle.\n\n**Onset.** All cases had onset 12-72 hours after the meal, but this is built into the case definition, so it cannot by itself distinguish a single exposure from later spread. Individual onset times are being collected to build an epidemic curve.\n\n**Wider risk.** The caterer served four other events this week. Because the wedding meal produced an attack rate of 40%, it is reasonable to estimate that about 40% of people who ate food from this caterer this week will have been ill, and the public health team should plan its follow-up on that basis.\n\n**Recommended actions.**\n1. Treat rice as the probable vehicle and review the caterer's rice cooking, cooling and reheating practices.\n2. Contact attendees of the caterer's other events this week, prioritising the largest.\n3. Await stool sample results to confirm the organism.\n4. Advise the caterer to suspend bulk rice service until the review is complete.\n\n**Limitations.** Food histories rely on recall, and some guests may have misremembered what they ate, especially at a buffet. Small numbers in some cells (for example the 20 guests who did not eat rice) make some relative risks imprecise.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "70% among those who ate it versus 13% among those who did not",
+        "description": "13 is the number of ill non-eaters, not the percentage: 13 / 70 = 18.6%.",
+        "correction": "Attack rate in non-eaters 18.6%; relative risk 70% / 18.6% = 3.8, still the highest of any food."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "42 of the 48 cases (88%) ate rice, more than for any other dish, so rice is the most likely vehicle",
+        "description": "Uses the share of cases exposed rather than attack rates or relative risk. Rice was eaten by 100 of 120 guests, so most cases would have eaten it whatever the vehicle.",
+        "correction": "Compare attack rates and RRs: prawn salad has the highest RR (3.8) and the largest attack-rate difference (70% vs 18.6%). Rice (RR 1.4) is the weakest association."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "Rice was also the dish most guests ate, and bulk-cooked rice held warm is a common source of food poisoning, so it is a plausible vehicle",
+        "description": "Ignores that the same rice batch was served to 90 people at a corporate lunch with no illness. It also ignores the prawn salad's documented 6 hours at room temperature.",
+        "correction": "The rice is effectively exonerated. The handling evidence supports prawn salad as the vehicle."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "it is reasonable to estimate that about 40% of people who ate food from this caterer this week will have been ill",
+        "description": "Generalises the wedding attack rate to other events with different menus, for which there are no cases so far.",
+        "correction": "The wedding data say nothing about risk at other events. The risk depends on whether the vehicle (likely prawn salad) was served there. Follow-up should target events that served prawns or used the same preparation."
+      }
+    ],
+    "open_extensions": [
+      "Cross-tabulate prawn salad against chicken (2×2×2) to check whether the chicken association (RR 2.5) is confounded by guests who ate both, e.g. through a stratified RR or Mantel-Haenszel estimate.",
+      "Note that 13 cases did not eat prawn salad. Explore misclassification of exposure (recall at a buffet), cross-contamination of other dishes, or secondary cases. Then, once onset times are available, check whether these 13 cases have later onsets.",
+      "Compute the population attributable fraction for prawn salad: (overall AR − AR in unexposed) / overall AR = (40% − 18.6%) / 40%, about 54%, which quantifies how much of the outbreak the vehicle accounts for."
+    ]
+  },
+  {
+    "id": "E6-07",
+    "domain": "education intervention evaluation",
+    "question": "How much did the Year 8 small-group maths tutoring programme improve tutored students' test scores, and would making it compulsory for the whole year group raise average attainment?",
+    "data": "Year 8 maths tutoring programme, one school, 2024-25.\n\nIn September, teachers nominated 75 students they considered to be struggling in maths. These students were offered small-group tutoring (two sessions a week, September to May). The other 140 Year 8 students were not tutored. All students sit the same standardised maths test (scored 0-100) in autumn and in summer.\n\n| Group | Students with both tests | Autumn mean | Summer mean |\n| Tutored | 60 | 42 | 54 |\n| Not tutored | 140 | 58 | 63 |\n\n15 of the 75 nominated students left the programme before summer (moved school, stopped attending, or were withdrawn by parents). They are excluded from the table above. Their autumn mean was 35. 11 of the 15 were still at the school and sat the summer test; their summer mean was 38.\n\nTest publisher's note: the autumn-to-summer test-retest correlation is about 0.7. Students selected because of low scores on one sitting typically score closer to the average on the next sitting, even without any intervention.\n\nThe school is considering making tutoring compulsory for all 215 Year 8 students next year.",
+    "draft": "**Year 8 maths tutoring: impact evaluation**\n\n**Background.** In September, 75 Year 8 students judged to be struggling in maths were offered twice-weekly small-group tutoring. This note estimates the programme's effect on standardised test scores and advises on the proposal to extend tutoring to the whole year group. Tutoring ran from September to May, and all students sat the same standardised paper in autumn and summer, so scores are directly comparable across the year.\n\n**Design.** Students were randomly allocated to tutoring, so the tutored and untutored groups should be comparable apart from the tutoring itself, and differences in progress can be attributed to the programme. The analysis is based on the 60 tutored and 140 untutored students with both test scores. Both groups took the same standardised test in autumn and summer, scored 0-100.\n\n**Results.**\n- Tutored students: autumn mean 42, summer mean 54.\n- Untutored students: autumn mean 58, summer mean 63.\n\nThe tutored group started well behind (16 points below the untutored group in autumn) and closed much of that gap by summer, finishing 9 points behind. The gap narrowed by 7 points over the year.\n\n**Estimating the effect.** The untutored group also improved, from 58 to 63, which reflects normal progress under ordinary classroom teaching. Because the untutored group's improvement reflects ordinary teaching rather than anything the programme did, the fairest measure of the programme is the tutored group's own progress. The tutored group's mean rose by 12 points, from 42 to 54, so the programme added 12 points to tutored students' scores. That is a large effect for a single year.\n\n**Consistency.** The gain was achieved with a relatively light-touch model (two sessions a week in small groups), which makes it cheaper to scale than one-to-one tutoring.\n\n**Extending the programme.** The proposal is to make tutoring compulsory for all 215 Year 8 students next year. Making tutoring compulsory for all 215 Year 8 students should therefore raise the year-group average by about 12 points. Even if the effect for stronger students were somewhat smaller, the programme would still lift the year-group average substantially.\n\n**Costs and practicalities.** Extending to 215 students would roughly triple the number of groups needed. Timetabling would need to change, and we would need to recruit or redeploy tutors. These costs should be set against the size of the expected gain.\n\n**Recommendation.** The evaluation shows a strong positive effect of tutoring. We recommend extending it to all Year 8 students next year and continuing to monitor results with the same autumn and summer tests.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "misreport",
+        "location": "Students were randomly allocated to tutoring",
+        "description": "The data says students were nominated by teachers because they were struggling, not randomly allocated. Selection on low scores also brings regression to the mean (the publisher's note).",
+        "correction": "This is a non-randomised comparison of a low-scoring selected group with everyone else. Group differences cannot be attributed cleanly to the programme, and part of the tutored gain is expected regression to the mean."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "The tutored group's mean rose by 12 points, from 42 to 54, so the programme added 12 points",
+        "description": "Uses the raw pre-post gain and ignores the comparison group's gain of 5 points, i.e. ignores the baseline improvement everyone made.",
+        "correction": "Difference-in-differences: 12 − 5 = 7 points (the draft itself notes the gap narrowed by 7). Even this is an upper bound, given regression to the mean."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "The analysis is based on the 60 tutored and 140 untutored students with both test scores",
+        "description": "Ignores the 15 nominated students who left the programme. They started lower (autumn mean 35), and the 11 who were tested gained only 3 points. Excluding them inflates the tutored group's gain.",
+        "correction": "Including the 11 tested leavers (intention to treat): autumn mean 2,905/71 = 40.9, summer 3,658/71 = 51.5, gain 10.6. DiD 10.6 − 5 = about 5.6 points, before any allowance for regression to the mean."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Making tutoring compulsory for all 215 Year 8 students should therefore raise the year-group average by about 12 points",
+        "description": "Generalises an effect estimated on teacher-nominated low-attaining students to the whole year group, including higher attainers, and to a compulsory programme.",
+        "correction": "The data cannot support any estimate for students who were not struggling or for a compulsory programme. At most, a modest effect on nominated low attainers is suggested."
+      }
+    ],
+    "open_extensions": [
+      "Estimate the regression-to-the-mean component. With a test-retest correlation of 0.7 and a cohort mean of about 53 in autumn ((60×42 + 140×58)/200 = 53.2), a group 11 points below the mean would be expected to move about 0.3 × 11, or roughly 3 points, towards it without any intervention. This shrinks the DiD estimate further.",
+      "Propose a stronger design for next year: randomise tutoring among nominated students (or use a waiting list), which would let the school estimate the effect without selection bias.",
+      "Report the distribution, not just means: e.g. the proportion of tutored students moving above a pass threshold, and whether gains were concentrated among a few students."
+    ]
+  },
+  {
+    "id": "E6-08",
+    "domain": "supply-chain lead times",
+    "question": "Which supplier, A or B, should the firm use for component K-220, given that a delivery taking longer than 26 days causes a stockout?",
+    "data": "Choosing a supplier for component K-220. Safety stock covers lead times of up to 26 days. Any delivery that takes longer than 26 days causes a stockout, which halts the assembly line.\n\nLast 12 orders from each supplier, lead time in days (order placed to goods received), in date order:\nSupplier A (sea freight): 21, 23, 22, 24, 20, 22, 45, 23, 21, 22, 24, 21\nSupplier B (road and rail): 18, 19, 30, 17, 29, 18, 31, 19, 28, 18, 30, 19\n\nNotes:\n- A's 45-day delivery was the order shipped in February, during the documented three-week national port strike, which delayed all sea freight that month. There has been no strike since, and none is planned.\n- B had no comparable disruption. B's deliveries of 28 days or more are spread throughout the year.\n- Unit price: A £4.10, B £4.05. Annual volume about 40,000 units.\n- Both suppliers meet the quality specification for K-220.\n- This decision applies to K-220 only. Other components are bought under separate contracts with different specifications, volumes and routes.",
+    "draft": "**Supplier choice for K-220: lead-time analysis**\n\n**Objective.** Recommend a supplier for K-220 based on delivery performance over the last 12 orders from each, with price as a secondary factor. Our safety stock covers lead times of up to 26 days. A stockout halts the assembly line, so reliability of delivery matters more than small differences in price.\n\n**Data.** The analysis covers the last 12 orders from each supplier, measured from order placement to goods received. Supplier A ships by sea; Supplier B uses road and rail.\n\n**Average lead time.** Supplier A averages 24.0 days across its 12 orders. Supplier B averages 22.0 days, two days quicker. B's typical delivery is also quick: half of its orders arrived in 19 days or fewer, compared with 22 days or fewer for A. Both averages sit within the 26-day cover.\n\n**Spread.** A's lead times range from 20 to 45 days and B's from 17 to 31 days, a spread of 25 days for A and 14 for B. A had one very long delivery of 45 days, which pulls its average up and shows the kind of risk that comes with sea freight: a single disruption can push a delivery far beyond our safety-stock cover. B's worst case, 31 days, is much less extreme.\n\n**Decision rule.** Since B delivers faster on average and its worst delivery is 14 days shorter than A's worst, B is the better choice against our 26-day safety-stock cover. Lower average lead time means stock arrives sooner and our cover is used less.\n\n**Price.** B is also slightly cheaper: £4.05 per unit against £4.10. On about 40,000 units a year, that saves £2,000 annually. Price is not the main driver here, but it reinforces the lead-time case. The difference is 5p per unit, about 1% of the unit price.\n\n**Quality.** Both suppliers meet the K-220 quality specification, so quality does not discriminate between them.\n\n**Wider implications.** Since B is the more efficient supplier, we should also move our other components to B when their contracts come up for renewal, consolidating volume with one dependable partner and strengthening our negotiating position.\n\n**Recommendation.** Award the K-220 contract to Supplier B. Review lead-time performance quarterly, and keep A as a qualified back-up supplier in case B's performance deteriorates. Switching will require a new supply agreement and a first trial order to confirm packaging and labelling before volumes move across. We suggest placing the first two orders with B alongside a final order from A, so that any teething problems do not leave the line short.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "Supplier B averages 22.0 days, two days quicker",
+        "description": "B's 12 lead times sum to 276, so the mean is 23.0 days, not 22.0.",
+        "correction": "B mean 23.0 days, one day quicker than A's 24.0 (A sums to 288)."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "A had one very long delivery of 45 days, which pulls its average up and shows the kind of risk that comes with sea freight",
+        "description": "Ignores that the 45-day delivery was caused by a documented one-off national port strike that delayed all sea freight.",
+        "correction": "Excluding the strike order, A's other 11 deliveries average 243/11 = 22.1 days (below B's 23.0), with a maximum of 24 days and no deliveries over 26."
+      },
+      {
+        "f": "F3",
+        "type": "method",
+        "location": "Since B delivers faster on average and its worst delivery is 14 days shorter than A's worst, B is the better choice against our 26-day safety-stock cover",
+        "description": "The stockout criterion depends on how often lead time exceeds 26 days, not on the mean or the single worst case.",
+        "correction": "Exceedances over 26 days: A 1 of 12 (8%, the strike order), B 5 of 12 (42%: 30, 29, 31, 28, 30). B caused a stockout on 5 of its last 12 orders. Choose A."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Since B is the more efficient supplier, we should also move our other components to B when their contracts come up for renewal",
+        "description": "Generalises from one component's lead-time record to other components with different specifications, routes and contracts. It also rests on the flawed conclusion that B is better.",
+        "correction": "The data say nothing about B's performance on other components. No recommendation beyond K-220 is supported."
+      }
+    ],
+    "open_extensions": [
+      "Quantify the cost trade-off: B saves £2,000 a year on price, against stockouts on about 5 in every 12 orders, each of which halts the line. Even a modest cost per stockout outweighs the saving.",
+      "Note that B's lead times look bimodal (17-19 days or 28-31 days). Ask B what drives the slow orders (e.g. consolidation or rail scheduling); if the cause is controllable, B could become viable, perhaps with a longer order cycle.",
+      "Model safety stock directly: to cover B's observed maximum of 31 days, cover would need to rise by 5 days (about 550 units at 40,000 a year), with holding cost that can be set against the price difference."
+    ]
+  },
+  {
+    "id": "E6-09",
+    "domain": "sports performance analysis",
+    "question": "Did guard X's three-point shooting genuinely improve after the mid-season change of shooting coach, and should X take a larger share of the team's three-point attempts next season?",
+    "data": "Professional basketball. Guard X's shooting before and after a mid-season change of shooting coach, which took effect after game 30. X played in all 50 games. His minutes per game were similar in both periods (about 32).\n\nShooting percentage = makes / attempts.\n\n| | Games 1-30 | Games 31-50 |\n| Three-point attempts | 150 | 80 |\n| Three-point makes | 51 | 32 |\n| Free-throw attempts | 100 | 70 |\n| Free-throw makes | 80 | 55 |\n\nLeague average three-point percentage this season: 36%.\n\nOpponent breakdown: in games 31-50, 30 of X's 80 three-point attempts came in 4 games against the league's two worst-ranked perimeter defences, and he made 18 of those 30. X did not face either of those teams in games 1-30.\n\nThe coaching staff must decide whether to increase X's share of team three-point attempts next season. The new shooting coach worked with the whole squad, not just X.",
+    "draft": "**Guard X: three-point shooting since the coaching change**\n\n**Summary.** X has become a markedly better three-point shooter since the change of shooting coach after game 30, and the data support giving him more of the team's three-point attempts next season.\n\n**Data.** Figures are X's totals for the season, split at game 30.\n\n**Context.** The new shooting coach took over after game 30 and works with the whole squad. X played in all 50 games, so neither period is affected by injury absences.\n\n**Before and after.** In games 1-30, X made 51 of 150 three-point attempts, 34.0%, a little below the league average of 36%. On 80 attempts since the change he has made 32, a 40.0% rate, comfortably above the league average. That is an improvement of 6 percentage points, a relative improvement of 21%. Over a typical season of attempts, a 6-point gain in percentage is worth a substantial number of extra points.\n\n**Volume.** X attempted 5.0 threes per game before the change (150 in 30 games) and 4.0 per game afterwards (80 in 20 games). In total he took 230 threes across the 50 games. He is taking slightly fewer threes per game but converting a higher share of them.\n\n**Supporting evidence.** His free-throw percentage also rose, from 80% to 86%, over the same period. Free throws are a pure measure of shooting technique, unaffected by defence or shot selection, so an improvement there is good corroboration that the coaching has changed his mechanics rather than the result being a lucky streak.\n\n**Interpretation.** The new coach has turned X into a 40% three-point shooter, and he should take a larger share of the team's threes next season. At 40%, a three-point attempt is worth 1.2 points on average, compared with 1.02 at his old rate of 34% and 1.08 at the league average, so shifting attempts towards X adds expected points with no extra possessions.\n\n**Caveats.** Twenty games is a shorter window than thirty, and shooting percentages fluctuate. The new rate should therefore be monitored as more games are played. Shooting is also affected by role, shot difficulty and team-mates' passing, none of which is captured in these totals.\n\n**Recommendation.** Increase X's share of team three-point attempts next season, design more catch-and-shoot sets for him, and continue his individual work with the new shooting coach. Opponents will adjust their defensive plans if X's role grows, so the staff should review his efficiency after the first 20 games of next season and scale his share back if his rate falls.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "a relative improvement of 21%",
+        "description": "A 6-point rise from 34% is 6/34 = 17.6% in relative terms, not 21%.",
+        "correction": "Relative improvement of about 18%."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "On 80 attempts since the change he has made 32, a 40.0% rate",
+        "description": "Ignores that 30 of the 80 post-change attempts (18 made) came against the two worst perimeter defences, which X did not face before the change.",
+        "correction": "Against other opponents after the change X made 14 of 50 (28%), below his pre-change 34%. The apparent improvement is driven by schedule."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "His free-throw percentage also rose, from 80% to 86%",
+        "description": "The data show free throws went from 80/100 = 80% to 55/70 = 78.6%, a slight fall.",
+        "correction": "Free-throw shooting did not improve, so it provides no corroboration of better mechanics."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "The new coach has turned X into a 40% three-point shooter",
+        "description": "Draws a causal, stable conclusion from 80 attempts. The pre/post difference is not statistically significant (two-proportion z of about 0.9), it is confounded by opponent quality, and the coach changed for the whole squad.",
+        "correction": "The evidence is consistent with no change in X's true shooting ability. No reallocation of attempts is justified on these data."
+      }
+    ],
+    "open_extensions": [
+      "Give interval estimates: 32/80 has a 95% CI of roughly 29-51%, and 51/150 of roughly 26-42%. The intervals overlap heavily, which shows how little 20 games can establish.",
+      "Use the whole squad as a comparison. Since the coach worked with everyone, compare teammates' pre/post three-point percentages (ideally against the same opponents) to separate a coaching effect from schedule effects.",
+      "Apply regression to the league mean (e.g. empirical-Bayes shrinkage towards 36% based on attempts) to estimate X's likely true rate before setting next season's shot allocation."
+    ]
+  },
+  {
+    "id": "E6-10",
+    "domain": "housing affordability",
+    "question": "Under the council's affordability rule, can a median-income household in the city afford to buy the median house, or to rent a median 2-bedroom flat?",
+    "data": "City housing affordability, 2025.\n\n- Median house price: £320,000. Lower-quartile house price: £230,000.\n- Median gross household income: £40,000 a year. Median take-home (net) household income: £2,700 a month.\n- Over the past year, median house prices rose 6% and median household incomes rose 3%.\n- First-time-buyer assumptions: 10% deposit, 25-year capital-repayment mortgage at 5.0% fixed interest.\n  - Monthly repayment on a £288,000 loan (median house): £1,684.\n  - Monthly repayment on a £207,000 loan (lower-quartile house): £1,210.\n- Median rent, 2-bedroom flat: £1,150 a month.\n- Council affordability rule: housing costs are 'affordable' if they take no more than 35% of net (take-home) household income.\n- Repayment figures use the standard repayment-mortgage formula and exclude insurance and maintenance. Rents exclude bills.\n- Income figures cover all household types in the city.\n- The council applies the 35% rule to both renting and buying.\n- No data are available on planning permissions, housing supply, or who is buying homes in the city.",
+    "draft": "**Is the city affordable for a median household?**\n\n**Scope.** This note applies the council's affordability rule to a household on the median income, using the figures supplied. Repayments and rents exclude insurance, maintenance and bills, so real housing costs are somewhat higher than the figures below.\n\n**Price-to-income ratio.** The median house costs £320,000 and median gross household income is £40,000, a ratio of 8.0. A common rule of thumb treats ratios above about 5 as seriously unaffordable, so on this measure the city is well beyond what a typical household can stretch to.\n\n**Buying.** A first-time buyer with a 10% deposit (£32,000) would need a £288,000 mortgage. Over 25 years at 5.0%, the monthly repayment is £1,684, and total repayments would come to just over £505,000. That £1,684 is 52% of the median take-home pay of £2,700, well above the council's 35% threshold. Buying the median home is therefore unaffordable for a median household, before even considering how long it would take to save the £32,000 deposit.\n\nEven the lower-quartile house, at £230,000, needs a £207,000 loan and a monthly repayment of £1,210, which is 45% of take-home pay. So for a median household, even the cheaper end of the market fails the test.\n\n**Renting.** The median 2-bedroom rent is £1,150 a month. Against monthly household income of £3,333 (£40,000 / 12), rent of £1,150 takes 34.5% of income, just inside the 35% threshold. Renting is therefore affordable for a median household, albeit only just, and it is the realistic tenure for most median earners in the city, although it offers no route to building equity.\n\n**Trend.** Over the past year incomes have kept pace with prices, both rising about 6%, so the price-to-income ratio has been stable. The affordability problem is long-standing rather than getting worse, which suggests it is structural.\n\n**Why are prices so high?** Since prices have reached eight times incomes, it is clear that planning restrictions are the main reason prices have outpaced incomes, constraining the supply of new homes relative to demand from a growing population.\n\n**Conclusions.**\n1. Buying the median house is unaffordable for a median household; even a lower-quartile house fails the 35% test.\n2. Renting a median 2-bedroom flat is just affordable.\n3. Policy should focus on relaxing planning constraints to increase supply.\n\nThese figures describe a household on exactly the median income. Households with two higher earners or existing equity will be better placed, and single-earner households worse placed.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "That £1,684 is 52% of the median take-home pay of £2,700",
+        "description": "£1,684 / £2,700 = 62.4%, not 52%.",
+        "correction": "Median-house repayment = 62% of net income."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "Against monthly household income of £3,333 (£40,000 / 12), rent of £1,150 takes 34.5% of income",
+        "description": "Applies the 35% rule to gross income, but the council rule (and the draft's own buying test) uses net take-home income.",
+        "correction": "£1,150 / £2,700 = 42.6% of net income, so renting a median 2-bed is also unaffordable under the rule."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "Over the past year incomes have kept pace with prices, both rising about 6%",
+        "description": "The data say prices rose 6% and incomes only 3%.",
+        "correction": "The price-to-income ratio rose by about 3% (1.06/1.03) in a year; affordability is worsening."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "it is clear that planning restrictions are the main reason prices have outpaced incomes",
+        "description": "Makes a causal claim about planning restrictions, for which the data contain no evidence. The draft also invents 'a growing population'.",
+        "correction": "The data describe affordability but cannot identify its causes. Supply and planning data would be needed."
+      }
+    ],
+    "open_extensions": [
+      "Compute the income needed to meet the rule: buying the median house needs net income of £1,684/0.35, about £4,811 a month; renting the median 2-bed needs about £3,286 a month. This shows how far above median a household must be.",
+      "Sensitivity to the interest rate: run the repayment at 4% and 6% to show whether any plausible rate brings median buying under 35% (it does not; even 0% interest gives £960, which is 35.6%).",
+      "Add the deposit barrier: £32,000 is 11.9 months of net median income. Even saving 10% of net income (£270 a month) would take nearly 10 years."
+    ]
+  },
+  {
+    "id": "E6-11",
+    "domain": "household energy tariff comparison",
+    "question": "Which of the three tariffs (Fixed, Variable or Time-of-use) will give the household the lowest total energy bill over the next 12 months, and by how much?",
+    "data": "A household is choosing an energy tariff for the next 12 months (365 days). It is currently on the Variable tariff and can switch freely: none of the tariffs below has an exit fee.\n\nLast 12 months' usage: electricity 3,100 kWh, gas 12,000 kWh. About 15% of the household's current electricity use falls in the off-peak window (dishwasher and washing machine on timers).\n\nThe household takes delivery of an electric car next week. It expects to need about 2,400 kWh a year of home charging, all of which it will schedule in the off-peak window. Gas use is not expected to change.\n\n| Tariff | Electricity unit rate | Electricity standing charge | Gas unit rate | Gas standing charge |\n| Fixed (F) | 24.5p/kWh | 55p/day | 6.2p/kWh | 30p/day |\n| Variable (V) | 22.0p/kWh | 60p/day | 6.0p/kWh | 31p/day |\n| Time-of-use (E) | 30.0p/kWh peak; 8.0p/kWh off-peak (00:30-05:30) | 50p/day | 6.0p/kWh | 31p/day |\n\nRates on V can change at the supplier's discretion with 30 days' notice; the supplier has announced no change. F and E are fixed for 12 months. Ignore VAT (rates already include it).",
+    "draft": "**Energy tariff comparison for the next 12 months**\n\n**Approach.** I have costed each tariff for a full year (365 days) using the household's actual consumption. Based on last year's usage of 3,100 kWh of electricity and 12,000 kWh of gas, the annual cost of each tariff is set out below, including standing charges.\n\n**Assumptions.** I have assumed the household's usage over the next year will be similar to last year's, and that rates on the variable tariff stay where they are, since the supplier has announced no change. Standing charges are payable every day regardless of usage, so they are included in full.\n\n**Fixed (F).**\n- Electricity: 3,100 × 24.5p = £734.50, plus standing charge 55p × 365 = £200.75, total £935.25.\n- Gas: 12,000 × 6.2p = £744.00, plus 30p × 365 = £109.50, total £853.50.\n- Total: £1,788.75. The fixed tariff also carries exit fees of £75 per fuel, so switching to F and then away again later would add £150, bringing its effective cost to £1,938.75.\n\n**Variable (V).**\n- Electricity: 3,100 × 22.0p = £682.00, plus 60p × 365 = £219.00, total £901.00.\n- Gas: 12,000 × 6.0p = £720.00, plus 31p × 365 = £113.15, total £833.15.\n- Total: £1,734.15.\n\n**Time-of-use (E).** E has two electricity rates, 30p peak and 8p off-peak. Taking the average of the two rates, 19p per kWh, the electricity cost is 3,100 × 19p = £589.00, plus 50p × 365 = £182.50, total £771.50. Gas is on the same terms as V: £833.15. Total: £1,604.65.\n\n**Comparison.**\n| Tariff | Annual cost |\n| F | £1,938.75 (incl. exit fees) |\n| V | £1,734.15 |\n| E | £1,604.65 |\n\nE is the cheapest, saving £129.50 a year compared with staying on V, and £334.10 compared with F. On last year's usage, the gap between the cheapest and most expensive option is therefore over £300 a year. Gas costs are identical on V and E, so the whole saving comes from electricity.\n\n**Risk.** V's rates can change with 30 days' notice, so its cost is less certain than E's, which is fixed for 12 months. That reinforces the case for E, since it is both cheaper and locks in prices.\n\n**Recommendation.** Switch to the time-of-use tariff E. The household could increase the saving further by moving more of its electricity use into the off-peak window, for example by timing laundry overnight. Before switching, it should check that its meter can record peak and off-peak use separately, which a time-of-use tariff requires.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "3,100 × 24.5p = £734.50",
+        "description": "3,100 × £0.245 = £759.50, not £734.50.",
+        "correction": "F electricity £960.25; F total £1,813.75 (with no exit fee)."
+      },
+      {
+        "f": "F2",
+        "type": "misreport",
+        "location": "The fixed tariff also carries exit fees of £75 per fuel",
+        "description": "The data state that none of the tariffs has an exit fee.",
+        "correction": "No exit fees apply. F costs £1,813.75 on last year's usage."
+      },
+      {
+        "f": "F3",
+        "type": "method",
+        "location": "Taking the average of the two rates, 19p per kWh",
+        "description": "Uses an unweighted average of peak and off-peak rates instead of weighting by the household's usage (15% off-peak).",
+        "correction": "On last year's usage: 2,635 kWh × 30p + 465 kWh × 8p = £827.70, plus £182.50 = £1,010.20; E total £1,843.35. Without the car, E is the most expensive and V (£1,734.15) is cheapest."
+      },
+      {
+        "f": "F4",
+        "type": "omission",
+        "location": "Based on last year's usage of 3,100 kWh of electricity and 12,000 kWh of gas",
+        "description": "Ignores the electric car arriving next week, which adds about 2,400 kWh of off-peak charging over the year being priced.",
+        "correction": "With the car: F £1,813.75 + 2,400 × 24.5p = £2,401.75; V £1,734.15 + 2,400 × 22p = £2,262.15; E £1,843.35 + 2,400 × 8p = £2,035.35. E is cheapest, saving £226.80 a year against V (for the right reason)."
+      }
+    ],
+    "open_extensions": [
+      "Break-even analysis: on base usage alone, E beats V on electricity only if the off-peak share exceeds about 31% (E electricity = £1,112.50 − £682 × share, vs V £901). With 2,400 kWh of car charging the off-peak share rises to (465 + 2,400) / 5,500, about 52%, well above break-even.",
+      "Sensitivity to car mileage: E stays cheaper than V as long as off-peak car charging exceeds about 780 kWh a year (the £109.20 E-V gap on base usage divided by the 14p/kWh rate advantage).",
+      "Price risk on V: show the bill if V rises by, say, 10% from month 4, to quantify the value of E's 12-month fix."
+    ]
+  },
+  {
+    "id": "E6-12",
+    "domain": "manufacturing quality control",
+    "question": "Which production line has the worst defect performance, and did the switch to the new resin supplier on Lines 2 and 3 increase defects?",
+    "data": "Injection-moulding plant, three lines making the same part. Four weeks of production.\n\n| Line | Weeks 1-2 units | Weeks 1-2 defects | Weeks 3-4 units | Weeks 3-4 defects |\n| Line 1 | 10,000 | 150 | 10,000 | 150 |\n| Line 2 | 4,000 | 60 | 4,000 | 140 |\n| Line 3 | 6,000 | 90 | 6,000 | 150 |\n\nChanges at the start of week 3:\n- Lines 2 and 3 switched to resin from a new supplier. Line 1 stayed on the old resin.\n- Lines 2 and 3 also replaced manual sample inspection (1 in 10 parts checked visually, with the defect rate extrapolated to the batch) with 100% automated optical inspection. According to the quality engineer, the optical system detects small surface flaws that the manual check often missed. Line 1 kept manual sampling.\n\nCustomer returns traced to each line:\n| Line | Weeks 1-2 | Weeks 3-4 |\n| Line 1 | 14 | 13 |\n| Line 2 | 11 | 12 |\n| Line 3 | 9 | 10 |\n\nAll three lines run the same shift pattern, with the same staffing levels and a similar mix of operator experience.",
+    "draft": "**Defect review: Lines 1-3, weeks 1-4**\n\n**Overview.** Over the four weeks the plant produced 40,000 parts and recorded 740 defects, an overall defect rate of 1.85%. This note looks at which line is performing worst and at the effect of the new resin introduced on Lines 2 and 3 in week 3. All three lines make the same part and run the same shift pattern. Defect rate is defects divided by units produced.\n\n**Line comparison.** Line 1 recorded the most defects (300 over four weeks) and is the line most in need of attention. Line 3 recorded 240 and Line 2 recorded 200. Between them, Lines 2 and 3 produced 20,000 parts, the same as Line 1. Line 1 is also our highest-volume line, so problems there have the biggest impact on output and scrap cost.\n\n**The new resin.** In weeks 1-2 all three lines ran at the same 1.5% defect rate. After the switch, the defect rate on Lines 2 and 3 rose sharply in weeks 3-4, from 1.5% to 3.5% and 2.5% respectively, coinciding with the new resin, while Line 1, which stayed on the old resin, held steady at 1.5%. Line 1 therefore acts as a natural control: whatever else changed in the plant in week 3 affected all lines equally, so the difference must be the resin. Line 2's defect rate more than doubled.\n\n**Customer impact.** The rise is not just an internal measurement issue. Customer returns from Line 2 also roughly doubled after the switch, confirming that more defective parts are reaching customers.\n\n**Line 1.** Line 1's steady 1.5% defect rate reflects the skill and experience of its operators, who have kept quality stable through a period of change elsewhere in the plant. Their practices should be documented and shared with Lines 2 and 3.\n\n**Actions.**\n1. Line 1: root-cause review of its defect volume, given it accounts for the largest share of total defects (300 of 740, 41%).\n2. Lines 2 and 3: revert to the previous resin supplier immediately and quarantine remaining stock of the new resin.\n3. Raise a supplier quality notice with the new resin supplier, including the defect data above.\n4. Arrange for Line 1 operators to coach Lines 2 and 3 on handling and settings.\n5. Repeat this review after a further four weeks to confirm whether the actions have worked.\n\n**Summary.** Line 1 has the largest defect problem by volume, and the new resin has sharply increased defect rates on the lines where it was introduced.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "Line 1 recorded the most defects (300 over four weeks) and is the line most in need of attention",
+        "description": "Ranks lines by defect counts, which mostly reflect volume (Line 1 makes half the parts), rather than by defect rate.",
+        "correction": "Four-week rates: Line 1 300/20,000 = 1.5%, Line 2 200/8,000 = 2.5%, Line 3 240/12,000 = 2.0%. Line 1 has the lowest rate, not the worst."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "the defect rate on Lines 2 and 3 rose sharply in weeks 3-4, from 1.5% to 3.5% and 2.5% respectively, coinciding with the new resin",
+        "description": "Ignores that Lines 2 and 3 also switched from 10% manual sampling to 100% automated optical inspection in week 3, which detects flaws the manual check missed. The change did not affect all lines equally, contrary to the 'natural control' argument.",
+        "correction": "The rise in recorded defects is confounded with a change in detection. Resin and inspection effects cannot be separated from these data; customer returns (flat) suggest outgoing quality did not worsen."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "Customer returns from Line 2 also roughly doubled after the switch",
+        "description": "The data show Line 2 returns went from 11 to 12 (and Line 3 from 9 to 10), essentially unchanged.",
+        "correction": "Returns were flat on all lines, which supports the detection explanation rather than a real quality decline."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Line 1's steady 1.5% defect rate reflects the skill and experience of its operators",
+        "description": "Attributes Line 1's stability to operator skill with no supporting evidence. The data say staffing and experience mix are similar across lines, and Line 1 changed neither resin nor inspection.",
+        "correction": "Line 1's stability is explained by it having no process change. Nothing in the data points to operator skill."
+      }
+    ],
+    "open_extensions": [
+      "Propose a design that separates resin from inspection: run the new resin on one line under the old inspection (or the old resin under the new optical inspection) for two weeks, or re-inspect a retained sample of week 1-2 parts with the optical system to estimate the detection uplift.",
+      "Test whether the week 3-4 rises are beyond chance (e.g. Line 2: 60/4,000 vs 140/4,000, two-proportion z of about 5.7), while noting that statistical significance does not resolve the confounding.",
+      "Classify defects by type: if the increase is mainly small surface flaws (the kind optical inspection newly catches), that points to detection; if it is short shots or warping, that points to the resin."
+    ]
+  },
+  {
+    "id": "E6-13",
+    "domain": "hospital readmissions",
+    "question": "Which of the two medical wards has the worse 30-day unplanned readmission performance, and does Ward B need a quality-improvement review?",
+    "data": "30-day emergency readmissions, two medical wards, financial year 2024-25.\n\n| Ward | Age group | Discharges | Readmitted within 30 days |\n| A | Under 75 | 300 | 24 |\n| A | 75 and over | 100 | 24 |\n| B | Under 75 | 100 | 5 |\n| B | 75 and over | 200 | 40 |\n\nTotals: Ward A 400 discharges, 48 readmissions. Ward B 300 discharges, 45 readmissions.\n\nWard B is the hospital's designated elderly-care ward. Ward A is a general medical ward. Readmission risk rises steeply with age in the hospital's historical data.\n\nHospital definition: the metric counts unplanned readmissions only. Audit note: Ward B's count above includes 10 planned readmissions (scheduled returns for procedures, all patients aged 75 and over) that were coded incorrectly and should be excluded. Ward A's count has been audited and contains no planned readmissions.\n\nThe board's rule of thumb: a ward is referred for a quality-improvement review if its readmission rate is more than 20% (relative) above the comparator ward's.",
+    "draft": "**30-day readmissions: Ward A vs Ward B**\n\n**Purpose.** The board asked whether Ward B's readmission performance warrants a quality-improvement (QI) review. Under the board's rule, a ward is referred if its readmission rate is more than 20% higher, in relative terms, than the comparator ward's.\n\n**Definition.** The metric is emergency readmissions within 30 days of discharge, expressed as a percentage of discharges.\n\n**Headline rates.** Ward A discharged 400 patients in 2024-25, of whom 48 were readmitted within 30 days, a rate of 12.0%. Ward B readmitted 45 of its 300 discharged patients within 30 days, a rate of 15.0%.\n\n**Comparison.** Both wards take a similar general medical case mix, so their overall rates can be compared directly without adjustment. Comparing the overall rates, Ward B (15%) is clearly worse than Ward A (12%). The absolute gap is 3 percentage points, which means Ward B's rate is 30% higher than Ward A's. This is well above the board's 20% threshold.\n\n**Scale.** If Ward B had matched Ward A's 12% rate, it would have had 36 readmissions rather than 45, so roughly 9 readmissions a year are attributable to the gap in performance. Across both wards there were 93 readmissions from 700 discharges, 13.3% overall. Each emergency readmission carries both a cost to the hospital and a risk to the patient, so the gap matters in practice.\n\n**Possible drivers.** We have not yet investigated the reasons for Ward B's higher rate. Common contributors include discharge planning, medication reconciliation, follow-up arrangements and communication with community services. A QI review would examine these. Readmission rates are also influenced by factors outside a ward's direct control, including community support after discharge and patients' social circumstances, and the review would need to separate these from factors the ward can influence.\n\n**Proposed scope.** The review would sample a set of Ward B readmissions and examine the discharge summary, medication changes, follow-up arranged, and whether the readmission was for the same condition. It would also gather the views of ward staff and community teams on the discharge process.\n\n**Data.** Both wards' figures cover financial year 2024-25 and use the same 30-day window. Together the two wards discharged 700 patients over the year.\n\n**Recommendation.** Refer Ward B for a QI review, focusing on discharge planning and follow-up. Re-run this comparison at the six-month point to track progress. One year of data is a single snapshot, and rates on a ward with 300 discharges can vary from year to year.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "misreport",
+        "location": "Both wards take a similar general medical case mix",
+        "description": "The data say Ward B is the designated elderly-care ward (two-thirds of its discharges are aged 75+, against a quarter of Ward A's), and readmission risk rises steeply with age.",
+        "correction": "The case mixes differ sharply. Ward B: 200 of 300 discharges aged 75+; Ward A: 100 of 400."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "Comparing the overall rates, Ward B (15%) is clearly worse than Ward A (12%)",
+        "description": "Compares crude rates across wards with very different age mixes instead of comparing age-specific (or age-standardised) rates. This is a Simpson's-paradox situation.",
+        "correction": "Age-specific rates: under 75, A 8% vs B 5%; 75+, A 24% vs B 20% (15% after the audit correction). Ward B is better in both age groups."
+      },
+      {
+        "f": "F3",
+        "type": "calculation",
+        "location": "Ward B's rate is 30% higher than Ward A's",
+        "description": "15% / 12% = 1.25, so B's crude rate is 25% higher, not 30%.",
+        "correction": "25% higher on the uncorrected crude figures (still above 20%, but see the omission and method flaws)."
+      },
+      {
+        "f": "F4",
+        "type": "omission",
+        "location": "Ward B readmitted 45 of its 300 discharged patients within 30 days",
+        "description": "Ignores the audit note that 10 of Ward B's 45 readmissions were planned and must be excluded under the hospital definition.",
+        "correction": "Unplanned readmissions on Ward B are 35 / 300 = 11.7%, below Ward A's 12.0% even on crude rates. Ward B 75+ becomes 30/200 = 15%. No referral is warranted."
+      }
+    ],
+    "open_extensions": [
+      "Directly age-standardise to the combined discharge population (400 under 75, 300 aged 75+): Ward A (400×8% + 300×24%) / 700 = 14.9%; Ward B (corrected) (400×5% + 300×15%) / 700 = 9.3%. If anything, Ward A warrants attention.",
+      "Report uncertainty: under-75 rates rest on small numbers for Ward B (5 of 100), so give confidence intervals or a stratified (Mantel-Haenszel) comparison before drawing conclusions about Ward A.",
+      "Recommend that the audit for planned readmissions be applied routinely to both wards, and check whether other coding issues (e.g. transfers counted as readmissions) differ between wards."
+    ]
+  },
+  {
+    "id": "E6-14",
+    "domain": "agricultural field trial",
+    "question": "By how much did the new fertiliser increase wheat yield in the on-farm trial, is it profitable at current prices, and should the farm business adopt it?",
+    "data": "On-farm fertiliser trial, wheat, clay-loam fields, one season. Four field blocks. In each block, one plot received the new fertiliser and an adjacent plot received standard practice (control). Yields in tonnes per hectare (t/ha):\n\n| Block | Control | New fertiliser |\n| 1 | 7.2 | 7.9 |\n| 2 | 6.8 | 7.3 |\n| 3 | 8.1 | 8.5 |\n| 4 | 5.9 | 7.6 |\n\nField log: in June, the Block 4 control plot was waterlogged for about 10 days after a field drain blocked. The Block 4 fertiliser plot, on slightly higher ground, was not affected. No other plots had problems during the season.\n\nEconomics:\n- The new fertiliser costs £60/ha more than standard practice.\n- Grain price: £180 per tonne.\n- Application and other costs are the same for both treatments.\n\nThe farm business also has sandy-soil holdings in the east of the county, which were not part of the trial. Sandy soils hold less water and nutrients than clay loam.",
+    "draft": "**New fertiliser trial: results and recommendation**\n\n**Design.** The trial used four blocks on clay-loam fields, with one plot in each block receiving the new fertiliser and an adjacent plot receiving standard practice. Pairing the plots within blocks controls for differences in soil and drainage between blocks, so the within-block difference is a fair estimate of the fertiliser's effect. Yields were recorded in tonnes per hectare for each plot at harvest.\n\n**Yields.** Average yield was 7.0 t/ha on the control plots and 7.825 t/ha on the fertiliser plots. Control yields ranged from 5.9 to 8.1 t/ha, reflecting differences between blocks; fertiliser yields ranged from 7.3 to 8.5. The fertiliser plots outyielded the control in every block by at least half a tonne per hectare. Within-block gains were 0.7 t/ha (Block 1), 0.5 (Block 2), 0.4 (Block 3) and 1.7 (Block 4).\n\n**Average effect.** Averaging across all four blocks, the fertiliser added 0.825 t/ha. That is a 12% increase on the control yield, which is a substantial gain for a single input change.\n\n**Economics.** At £180/t, the extra grain is worth 0.825 t/ha × £180/t = £168.50 per hectare. Application costs are the same as for standard practice, so the only extra cost is the product itself. Subtracting the additional fertiliser cost of £60/ha leaves a net margin gain of £108.50 per hectare. Across a 400-hectare wheat area this would be worth over £43,000 a year.\n\n**Consistency.** The result is encouraging because the gain appears in every block, which suggests it is not driven by one unusual plot. The largest gain, in Block 4, came on the lowest-yielding block, which is consistent with the fertiliser helping most where conditions are hardest. Block 4 had the lowest control yield, at 5.9 t/ha.\n\n**Scaling up.** Because the effect was consistent across blocks, we can expect a similar gain of around 0.8 t/ha across all our holdings, including the sandy-soil farms in the east.\n\n**Limitations.** This is a single season, and weather in other years may produce a different response. Four blocks is a small trial, so the average gain carries considerable uncertainty.\n\n**Recommendation.** Adopt the new fertiliser across the farm business from next season, and monitor yields against historical averages to confirm the benefit. We also suggest keeping two of the trial blocks running for a second season to build a longer record, and recording yields by field so that the benefit can be checked against each field's history.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "misreport",
+        "location": "The fertiliser plots outyielded the control in every block by at least half a tonne per hectare",
+        "description": "Block 3's gain was 0.4 t/ha (8.5 − 8.1), below half a tonne, as the draft's own next sentence shows.",
+        "correction": "Gains ranged from 0.4 to 1.7 t/ha; three of four blocks gained 0.5 t/ha or more."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "Averaging across all four blocks, the fertiliser added 0.825 t/ha",
+        "description": "Ignores the field-log note that the Block 4 control plot was waterlogged while its paired fertiliser plot was not. This inflates the Block 4 difference (1.7 t/ha) and hence the mean; the draft even reads it as the fertiliser 'helping most where conditions are hardest'.",
+        "correction": "Excluding Block 4, the mean gain is (0.7 + 0.5 + 0.4) / 3 = 0.53 t/ha, worth £96/ha, for a net gain of about £36/ha rather than £88.50 (or the draft's £108.50)."
+      },
+      {
+        "f": "F3",
+        "type": "calculation",
+        "location": "0.825 t/ha × £180/t = £168.50 per hectare",
+        "description": "0.825 × 180 = £148.50, not £168.50.",
+        "correction": "£148.50/ha gross; net £88.50/ha on all four blocks (about £35,400 on 400 ha, not 'over £43,000')."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "we can expect a similar gain of around 0.8 t/ha across all our holdings, including the sandy-soil farms in the east",
+        "description": "Generalises a one-season, four-block clay-loam result to sandy soils that were not tested and that behave differently.",
+        "correction": "The trial supports a (smaller) estimate for clay loam only. Sandy-soil response is unknown and needs its own trial."
+      }
+    ],
+    "open_extensions": [
+      "Paired t-test: on all four blocks, mean difference 0.825, SD about 0.60, t of about 2.8 on 3 df (p of about 0.07); excluding Block 4, mean 0.53, SD about 0.15, t of about 6.0 on 2 df (p of about 0.03). Note the tiny sample either way.",
+      "Break-even yield gain is £60 / £180 = 0.33 t/ha. Even the conservative 0.53 t/ha clears it, but with little margin. Show how the net gain varies with grain price (e.g. at £140/t the conservative estimate nets only about £15/ha).",
+      "Recommend a multi-season trial with more blocks and randomised plot positions within blocks, so that drainage or elevation cannot systematically favour one treatment."
+    ]
+  },
+  {
+    "id": "E6-15",
+    "domain": "public transport fares",
+    "question": "What effect did the Route 7 fare cut have on ridership and fare revenue in its first quarter, and what does it imply for further fare reductions?",
+    "data": "Bus fare trial. From 1 January 2025 the adult single fare on Route 7 was cut from £2.00 to £1.50. Route 9, a similar urban route run by the same operator, kept its £2.00 fare. Neither route changed frequency or timetable.\n\nBoardings (fare-paying adult singles only), January-March:\n| Route | Q1 2024 | Q1 2025 |\n| Route 7 | 90,000 | 108,000 |\n| Route 9 | 80,000 | 92,000 |\n\nCity-wide context: a new park-and-ride site and higher city-centre parking charges took effect in October 2024. The operator reports bus use rising across the city since then.\n\nOnboard survey, Route 7, February 2025 (n = 250 passengers who said they began using the route since January). Previous way of making the trip: walked or cycled 51%; drove 22%; used another bus route 18%; did not make the trip 9%.\n\nFare revenue on Route 7 = boardings × fare.",
+    "draft": "**Route 7 fare cut: first-quarter evaluation**\n\n**What changed.** On 1 January 2025 the adult single fare on Route 7 fell from £2.00 to £1.50, a 25% cut. Frequency and timetable were unchanged, so the fare is the only change on the route itself. The boardings figures count fare-paying adult single journeys only and compare January-March 2025 with January-March 2024, so the time of year is matched.\n\n**Ridership.** Route 7's boardings rose 20%, from 90,000 to 108,000, and this increase can be attributed to the fare cut. That is a strong response for a single quarter: Route 7 carried 18,000 more fare-paying adult journeys than a year earlier. Dividing the 20% rise in boardings by the 25% fall in fare gives a fare elasticity of about −0.8.\n\n**Revenue.** Lower fares mean each passenger pays less, but more passengers travel. Fare revenue on Route 7 was £171,000 in Q1 2025 (108,000 × £1.50), down only 5% on the £180,000 of Q1 2024. The extra ridership has therefore recovered most of the revenue that the fare cut would otherwise have cost, which makes the scheme close to self-financing. Revenue here covers adult single fares only, since other ticket types are not in the data.\n\n**Who are the new riders?** The onboard survey asked 250 passengers who started using Route 7 since January how they used to make the trip. More than half of new riders previously drove, which suggests the fare cut is taking cars off the road and should help with congestion and emissions on the corridor.\n\n**Implications for further cuts.** The response gives us a basis for estimating the effect of deeper cuts. With an elasticity of −0.8, a 100% fare reduction would lift ridership by about 80%, so making the route free would increase ridership by around 80%. A free route would of course remove fare revenue entirely, so this would need to be weighed against the congestion and emissions benefits.\n\n**Caveats.** One quarter is a short period, and some of the early response may reflect novelty or publicity around the cut. The survey covered only passengers who said they began using the route since January. Route 9, with no fare change, is a useful point of reference for future monitoring.\n\n**Recommendation.** Make the Route 7 fare permanent, consider extending the £1.50 fare to similar routes, and model a free-fare pilot using the elasticity above. Boardings should continue to be collected monthly, and the onboard survey repeated in six months, so that the longer-run response can be tracked.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "Route 7's boardings rose 20%, from 90,000 to 108,000, and this increase can be attributed to the fare cut",
+        "description": "Ignores the comparison route: Route 9, with no fare change, grew 15% over the same period (and city-wide bus use was rising). The baseline trend must be removed.",
+        "correction": "Relative to Route 9, Route 7 grew 1.20/1.15 − 1 = about 4.3% (5 points by difference-in-differences). Implied elasticity is roughly −0.17 to −0.2, not −0.8."
+      },
+      {
+        "f": "F2",
+        "type": "calculation",
+        "location": "Fare revenue on Route 7 was £171,000 in Q1 2025 (108,000 × £1.50), down only 5%",
+        "description": "108,000 × £1.50 = £162,000, not £171,000.",
+        "correction": "Revenue fell from £180,000 to £162,000, a 10% fall. The scheme is far from self-financing."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "More than half of new riders previously drove",
+        "description": "The survey says 22% previously drove; 51% previously walked or cycled.",
+        "correction": "About one in five new riders switched from the car. Most new riders came from walking/cycling or other bus routes, so congestion benefits are modest."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "making the route free would increase ridership by around 80%",
+        "description": "Extrapolates a single elasticity estimate linearly far outside the observed range (to a 100% fare cut). The estimate itself is inflated by the baseline error.",
+        "correction": "The data say nothing reliable about a free fare. Responses to zero fares are not linear extrapolations of small cuts."
+      }
+    ],
+    "open_extensions": [
+      "Cost per additional trip: without the cut, Route 7 would be expected to carry about 90,000 × 1.15 = 103,500 boardings, earning £207,000 at £2.00. The cut added about 4,500 boardings and reduced revenue to £162,000, a cost of about £45,000, or roughly £10 per additional trip.",
+      "Use the survey's 18% 'used another bus route' to note that some growth is displacement from other routes, so the network-wide ridership gain is smaller than the route-level one.",
+      "Ask for monthly data: if the novelty effect is real, the gap between Routes 7 and 9 should narrow over January-March; a longer series (Q2-Q4) would firm up the elasticity."
+    ]
+  },
+  {
+    "id": "E6-16",
+    "domain": "email marketing campaign",
+    "question": "Did the spring 15%-off loyalty email campaign pay off, and should the company repeat it (or extend it to non-member customers)?",
+    "data": "Spring loyalty email: '15% off everything for 14 days'. Loyalty members were randomly split: 50,000 received the email and 10,000 were held out (no email). Outcomes over the 14 days:\n\n| Group | Members | Purchasers | Revenue (after discount) | Contribution |\n| Emailed | 50,000 | 3,000 | £180,000 | £36,000 |\n| Holdout | 10,000 | 500 | £35,000 | £10,500 |\n\nContribution = revenue after discount minus cost of goods and fulfilment. Revenue and contribution cover all purchases made in the 14-day window; purchasers are members who bought at least once in it.\n\nEmailed members who purchased could redeem the 15% discount on everything they bought, including items they would have bought anyway. Holdout members paid full price.\n\nCampaign sending cost: £2,000 (copywriting, design and email platform fees).\n\nLoyalty members are the company's most engaged customers. Non-members make up 70% of the customer base and have never been sent a discount offer; they buy less often and have lower average basket values.",
+    "draft": "**Spring loyalty email: campaign evaluation**\n\n**Background.** The spring campaign offered loyalty members 15% off everything for 14 days, delivered by email.\n\n**Design.** The campaign was evaluated with a randomised holdout: 50,000 loyalty members received the 15%-off email and 10,000 were held back. Because the holdout was drawn at random from the same loyalty list, the two groups should be alike in every respect other than receiving the email, so the holdout tells us what emailed members would have done without it.\n\n**Conversion.** 6.0% of emailed members made a purchase (3,000 of 50,000), against 5.0% of the holdout (500 of 10,000). At the holdout's 5.0% rate we would have expected 2,500 purchasers rather than 3,000. That is a 1.0-point lift, or a 10% relative lift in purchase rate. The difference is comfortably significant given the sample sizes.\n\n**Revenue.** Revenue per emailed member was £3.60 against £3.50 in the holdout, so the email lifted revenue by about £5,000 across the 50,000 members. Average order value was £60 for emailed purchasers and £70 for holdout purchasers, consistent with the discount reducing the price of each basket. Total revenue across both groups was £215,000.\n\n**Return on investment.** The campaign generated £180,000 of revenue for £2,000 of sending cost, a return of 89 to 1. Very few marketing activities come close to that, and at 4p per emailed member the cost is low enough that even a much weaker response would still pay back.\n\n**Measurement.** All results cover the 14-day offer window only. Purchases after the window closed are not included, so any longer-term effect on loyalty, positive or negative, is not captured here.\n\n**Segments.** The results are reported for the loyalty base as a whole. Splitting by how recently members last purchased, or by their usual spend, could show where the offer worked best and help target future campaigns.\n\n**Extending the offer.** Non-members make up 70% of our customer base and have never received a discount email. Given the response from members, the same offer sent to our non-member customers should lift their purchase rate by a similar proportion, which would be a significant opportunity given the size of that group.\n\n**Recommendation.**\n1. Repeat the loyalty campaign quarterly.\n2. Pilot the same 15%-off email to non-members next quarter.\n3. Keep a holdout in future campaigns so that we can keep measuring the lift.\n4. Share these results with the trading team so that future offers are planned against a measured baseline.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "a 10% relative lift in purchase rate",
+        "description": "A rise from 5.0% to 6.0% is a 20% relative lift (1.0 / 5.0), not 10%.",
+        "correction": "Relative lift = 20%."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "The campaign generated £180,000 of revenue for £2,000 of sending cost, a return of 89 to 1",
+        "description": "Attributes all revenue from emailed members to the email, ignoring the holdout baseline, which the draft itself has just used. Most of the £180,000 would have been earned anyway.",
+        "correction": "Incremental revenue is (£3.60 − £3.50) × 50,000 = about £5,000, i.e. about 2.5 times the sending cost on revenue (before costs of goods), not 89 to 1."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "Revenue per emailed member was £3.60 against £3.50 in the holdout, so the email lifted revenue by about £5,000 across the 50,000 members",
+        "description": "Ignores the contribution data. Because the discount applied to purchases members would have made anyway, contribution per member fell.",
+        "correction": "Contribution per member: emailed £36,000 / 50,000 = £0.72 vs holdout £10,500 / 10,000 = £1.05. Expected without the email: £52,500, so contribution fell by about £16,500, or about £18,500 after sending costs. The campaign lost money and should not be repeated as designed."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "the same offer sent to our non-member customers should lift their purchase rate by a similar proportion",
+        "description": "Generalises from the most engaged customer segment to a different population that has never received offers and behaves differently.",
+        "correction": "No estimate for non-members is supported. A pilot with its own holdout would be needed, and it should be judged on contribution, not revenue."
+      }
+    ],
+    "open_extensions": [
+      "Test whether the conversion difference is statistically reliable: 6.0% vs 5.0% with n = 50,000 and 10,000 gives z of about 3.9, so the purchase-rate lift is real even though the campaign is unprofitable.",
+      "Decompose the contribution loss into a subsidy on baseline purchases versus margin on incremental purchases, and find the break-even discount depth (or a threshold offer such as '15% off over £80') that would make the campaign pay.",
+      "Look beyond the 14-day window: check whether emailed members bought less in the following weeks (pull-forward), which would make the true incremental effect even smaller."
+    ]
+  },
+  {
+    "id": "E6-17",
+    "domain": "HR staff turnover",
+    "question": "Which team has the highest staff turnover, and is remote-first working associated with lower turnover?",
+    "data": "Annual staff turnover, three teams, calendar year 2025.\n\n| Team | Working model | Headcount 1 Jan | Headcount 31 Dec | Average headcount | Leavers in year |\n| A | Remote-first | 30 | 70 | 50 | 6 |\n| B | Office-based | 120 | 120 | 120 | 18 |\n| C | Hybrid | 80 | 80 | 80 | 8 |\n\nHR convention: annual turnover rate = leavers / average headcount over the year.\n\nTeam B's 18 leavers include 10 fixed-term contract staff (a 12-month project team) whose contracts ended as planned in June. The other 8 were voluntary resignations. All leavers in Teams A and C were voluntary resignations. The company's attrition target relates to voluntary turnover.\n\nTeam A was created in 2024 and grew through 2025; most of its staff have less than a year's service.\n\nExit interviews (all 32 leavers), main reason given: pay 10; end of fixed-term contract 10; career progression 7; relocation 5.",
+    "draft": "**Staff turnover by team, 2025**\n\n**Data.** The figures cover calendar year 2025 for the three teams, with headcount recorded at 1 January and 31 December and leavers counted over the year.\n\n**Context.** Team A is the newest team: it was set up in 2024 and more than doubled in size during 2025, from 30 to 70 people. Team B is the largest team.\n\n**Method.** Turnover has been calculated for each team as leavers divided by headcount, using each team's end-of-year headcount as the base, since that reflects the current size of the team.\n\n**Results.**\n- Team A (remote-first): 6 leavers on a headcount of 70, a turnover rate of 8.6%.\n- Team B (office-based): 18 leavers on a headcount of 120, 15.0%.\n- Team C (hybrid): 8 leavers on a headcount of 80, 10.0%.\n\nTeam B has the highest turnover by a clear margin, at 15.0%, and Team A the lowest. Teams B and C were the same size at the start and end of the year; only Team A changed size. Company-wide, 32 people left during the year.\n\n**Working model.** The ranking lines up exactly with the working model: remote-first lowest, hybrid in the middle, office-based highest. Team C, which is hybrid, sits between the other two. Remote-first working clearly reduces turnover, and moving Teams B and C to remote-first should bring their turnover down towards Team A's level. Applied to Team B alone, cutting turnover from 15.0% to around 8.6% would mean roughly 8 fewer leavers a year.\n\n**Reasons for leaving.** Exit interviews give a clear picture of why people leave: a majority of leavers cited pay as the main reason. Career progression and relocation were the other main reasons given. All 32 leavers completed an exit interview, so the picture is complete. This suggests that, alongside working-model changes, a pay benchmarking exercise is needed.\n\n**Team B.** Team B's high turnover is a concern, because it is the largest team and replacing staff is costly. Its 18 leavers account for more than half of all leavers across the company. Each departure carries recruitment, onboarding and lost-productivity costs, so even modest reductions are worth pursuing. We recommend a retention review for Team B, including stay interviews with current staff.\n\n**Recommendations.**\n1. Pilot remote-first working in Team B from next quarter.\n2. Commission a pay benchmarking review across all three teams.\n3. Track turnover quarterly by team, using the method above.\n4. Repeat the exit-interview analysis each quarter so that trends in reasons for leaving can be followed.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "using each team's end-of-year headcount as the base",
+        "description": "Uses year-end headcount as the denominator instead of average headcount (the HR convention). This matters for Team A, which grew from 30 to 70.",
+        "correction": "Team A: 6 / 50 = 12.0% (not 8.6%). Teams B and C are unchanged (15.0% and 10.0%). On all leavers, Team C is lowest, not Team A."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "Team B (office-based): 18 leavers on a headcount of 120, 15.0%",
+        "description": "Ignores that 10 of Team B's 18 leavers were fixed-term contracts ending as planned, not voluntary turnover (the target metric).",
+        "correction": "Voluntary turnover: A 12.0%, B 8/120 = 6.7%, C 10.0%. Team B has the lowest voluntary turnover and the remote-first team the highest."
+      },
+      {
+        "f": "F3",
+        "type": "inference",
+        "location": "Remote-first working clearly reduces turnover",
+        "description": "Draws a causal conclusion about working models from three teams that differ in many ways (Team A is new, fast-growing and short-tenured). Corrected, the ranking does not even hold.",
+        "correction": "Three teams cannot establish an effect of working model. On corrected figures remote-first has the highest voluntary turnover, which is also consistent with its short tenure."
+      },
+      {
+        "f": "F4",
+        "type": "misreport",
+        "location": "a majority of leavers cited pay as the main reason",
+        "description": "10 of 32 leavers (31%) cited pay, not a majority; 10 cited the planned end of a contract.",
+        "correction": "Pay was cited by 10 of 32 leavers (31%), or 10 of 22 voluntary leavers (45%). It is the most common voluntary reason, but not a majority."
+      }
+    ],
+    "open_extensions": [
+      "Report company-wide turnover properly: all leavers 32/250 = 12.8%, voluntary 22/250 = 8.8% (average headcount 250).",
+      "Control for tenure: compare first-year leaving rates across teams, since turnover is typically highest in the first year and Team A is mostly first-year staff.",
+      "With small counts (6, 8 and 8 voluntary leavers), give confidence intervals or note that differences of a few percentage points between teams are within noise."
+    ]
+  },
+  {
+    "id": "E6-18",
+    "domain": "motor insurance claims",
+    "question": "Are young drivers on telematics policies lower risk than those on standard policies, and would making telematics compulsory for all young drivers reduce claims?",
+    "data": "Motor insurer, drivers aged 18-24, policy year 2025. Telematics ('black box') policies are optional: customers choose them in exchange for a discount.\n\n| | Telematics | Standard |\n| Policies (full-year equivalent) | 4,000 | 6,000 |\n| Claims | 360 | 780 |\n| Average cost per claim | £3,200 | £3,500 |\n| Average annual premium | £1,100 | £1,400 |\n| Average annual mileage | 6,000 | 9,500 |\n\nLoss ratio = total claims cost / total premium. Premiums shown are after any telematics discount. Average cost per claim includes settled and reserved amounts. All policies are for private cars.\n\nMileage for telematics policies is measured by the device. Mileage for standard policies is customer-declared at renewal; the insurer's audits find declarations accurate to within 5% on average.\n\nThe pricing team wants to know whether telematics customers are lower risk, and whether making telematics compulsory for all young drivers would reduce claims.",
+    "draft": "**Telematics vs standard policies: young drivers, 2025**\n\n**Data.** The analysis covers full-year-equivalent policies for drivers aged 18-24 in 2025, comparing 4,000 telematics policies with 6,000 standard policies. Premiums shown are after the telematics discount.\n\n**Claim frequency.** Telematics drivers had 360 claims across 4,000 policies, 9.0 claims per 100 policies. Standard-policy drivers had 780 claims across 6,000 policies, 13.0 per 100. Across both books there were 1,140 claims on 10,000 policies, 11.4 per 100. In other words, telematics drivers make 31% fewer claims per policy (9.0 vs 13.0 claims per 100 policies), a large and commercially important difference.\n\n**Claim severity.** Claim severity is broadly similar in the two groups, at about £3,500 per claim, so the difference in risk comes almost entirely from how often telematics drivers claim rather than how much each claim costs.\n\n**Profitability.** Telematics premiums are lower, averaging £1,100 against £1,400, because of the discount. Despite that, telematics claims cost £1.152m against £4.4m of premium, a loss ratio of 22.6%. Standard policies have claims of £2.73m against £8.4m of premium, a loss ratio of 32.5%. Telematics business is therefore more profitable per pound of premium, even after the discount. Total premium across both books was £12.8m. Claims cost per policy was £288 for telematics and £455 for standard. Young drivers are the highest-risk age group in motor insurance, so differences in claims experience have a large effect on profitability.\n\n**Why the difference?** The device gives drivers feedback on speed, braking and night driving, and drivers know their behaviour is being monitored. It is plausible that this encourages safer driving.\n\n**Compulsory telematics.** The evidence supports extending telematics. Making telematics compulsory for all young drivers would cut their claim frequency by around 31%, bringing the standard book's 13.0 claims per 100 policies down to about 9.0. On 6,000 policies that is about 240 fewer claims a year.\n\n**Implementation.** Compulsory telematics would need changes to the sales process, device supply and installation, and customer communications. The discount structure would also need redesigning, since there would no longer be a choice to reward.\n\n**Recommendation.** Move to compulsory telematics for all new policies for drivers aged 18-24 from next year, and review the size of the telematics discount, which on these figures could be reduced without making the product uncompetitive. Any change to the discount should be tested on new business first, so that its effect on take-up can be measured. Claim frequency, severity and loss ratio should be tracked quarterly for both books.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "omission",
+        "location": "telematics drivers make 31% fewer claims per policy (9.0 vs 13.0 claims per 100 policies)",
+        "description": "Ignores exposure: telematics drivers drive far less (6,000 vs 9,500 miles a year). Per-policy frequency mostly reflects mileage.",
+        "correction": "Claims per million miles: telematics 360 / 24m = 15.0; standard 780 / 57m = 13.7. Per mile driven, telematics drivers claim slightly more often."
+      },
+      {
+        "f": "F2",
+        "type": "misreport",
+        "location": "Claim severity is broadly similar in the two groups, at about £3,500 per claim",
+        "description": "The data give £3,200 per claim for telematics and £3,500 for standard.",
+        "correction": "Telematics claims are about 9% cheaper on average, so severity also differs."
+      },
+      {
+        "f": "F3",
+        "type": "calculation",
+        "location": "a loss ratio of 22.6%",
+        "description": "£1.152m / £4.4m = 26.2%, not 22.6%.",
+        "correction": "Telematics loss ratio 26.2% vs standard 32.5%."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Making telematics compulsory for all young drivers would cut their claim frequency by around 31%",
+        "description": "Treats a difference between self-selected groups as a causal effect of the device. Customers who chose telematics differ (e.g. they drive much less), and compulsion changes who is in the group.",
+        "correction": "The data cannot estimate the effect of compulsion. Given the per-mile comparison, much or all of the gap is selection on mileage. A randomised or staggered rollout would be needed."
+      }
+    ],
+    "open_extensions": [
+      "Mileage-adjusted pricing check: telematics premium per 1,000 miles is £183 vs £147 for standard, and claims cost per 1,000 miles is £48 vs £48, so on a per-mile basis the two books are similar in risk.",
+      "Sensitivity to declared mileage: even if standard drivers under-declare by 5%, per-mile frequency becomes about 13.0 per million miles for standard vs 15.0 for telematics, so the conclusion is robust.",
+      "Within the telematics book, relate device-measured driving scores (speeding, harsh braking, night driving) to claims. That tests the behaviour-change mechanism directly rather than through a self-selected comparison."
+    ]
+  },
+  {
+    "id": "E6-19",
+    "domain": "retail space productivity",
+    "question": "Under company policy, which of the five stores should receive this year's refurbishment budget?",
+    "data": "Five-store retail chain, financial year 2025. A refurbishment budget is available for one store. Company policy: the budget goes to the store with the lowest annual sales per square foot of sales floor (the company's space-productivity KPI), measured on a full-year basis.\n\n| Store | Annual sales 2025 | Sales floor area (sq ft) | Gross internal area incl. stockrooms (sq ft) |\n| North | £2.4m | 8,000 | 10,000 |\n| South | £3.6m | 15,000 | 18,000 |\n| East | £1.8m | 6,000 | 9,000 |\n| West | £2.1m | 10,000 | 12,000 |\n| Central | £4.2m | 12,000 | 14,000 |\n\nAnnual sales 2024: North £2.3m, South £3.5m, East £1.7m, West £2.9m, Central £4.0m. Floor areas were the same in 2024.\n\nOperations note: West was closed from January to March 2025 (3 months) for flood repairs, so its 2025 sales cover 9 trading months. All other stores traded for all 12 months in both years. The flood repairs were covered by insurance and did not change the store's layout.",
+    "draft": "**Refurbishment budget: store productivity review**\n\n**Approach.** Policy is to allocate the refurbishment budget to the store with the lowest sales per square foot. I have used gross internal area, including stockrooms, as the denominator, because it reflects the full space each store occupies and pays rent on, and so gives a fuller picture of space productivity.\n\n**Data.** Sales figures are for financial year 2025, with 2024 figures for comparison. Floor areas were the same in both years.\n\n**Sales density, 2025.**\n| Store | Sales | Gross area | Sales per sq ft |\n| North | £2.4m | 10,000 | £240 |\n| South | £3.6m | 18,000 | £200 |\n| East | £1.8m | 9,000 | £200 |\n| West | £2.1m | 12,000 | £175 |\n| Central | £4.2m | 14,000 | £320 |\n\n**Ranking.** Central is the most productive store by a wide margin, at £320 per square foot, roughly 60% above South and East. North sits in the middle. South and East are tied at £200. West is the clear lowest at £175 per square foot, some 12.5% below the next-weakest stores.\n\n**Trend.** This is not a one-year blip. West was also the weakest store last year, and its sales have fallen from £2.9m to £2.1m, a drop of more than a quarter. The combination of the lowest density and a steep decline makes West the obvious priority.\n\n**Other considerations.** The other stores all grew sales between 2024 and 2025: North by 4%, South by 3%, East by 6% and Central by 5%. Total chain sales were £14.1m in 2025, against £14.4m in 2024. The growth elsewhere suggests the chain's offer is broadly working, and West's problem is local, which a refurbishment is well placed to address. If West's weakness proves to reflect local trading conditions rather than the store itself, a refurbishment alone may not fix it, so a short review of its catchment should accompany the works.\n\n**Recommendation.** Allocate this year's refurbishment budget to West. Review its sales density twelve months after the works to measure the return on the investment.\n\n**Measuring the result.** Post-refurbishment sales density should be compared with the store's previous level and with the rest of the chain over the same period, so that chain-wide trends are not mistaken for the effect of the works. The store will need to close or trade partially during the works, so timing should avoid peak trading periods.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "I have used gross internal area, including stockrooms, as the denominator",
+        "description": "The company KPI is sales per square foot of sales floor, not gross internal area. Using gross area changes the densities and their relative gaps.",
+        "correction": "Sales-floor densities (2025 as reported): North £300, South £240, East £300, West £210, Central £350."
+      },
+      {
+        "f": "F2",
+        "type": "calculation",
+        "location": "Central | £4.2m | 14,000 | £320",
+        "description": "£4.2m / 14,000 = £300, not £320 (even on the draft's gross-area basis).",
+        "correction": "£300 per sq ft gross (or £350 on sales floor). Central is 50%, not 'roughly 60%', above South and East on gross area."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "West is the clear lowest at £175 per square foot",
+        "description": "Ignores that West traded for only 9 months in 2025 (flood closure), while policy requires a full-year basis.",
+        "correction": "Annualised West sales = £2.1m × 12/9 = £2.8m: £280 per sq ft of sales floor. The lowest full-year density is South at £240, so South gets the budget."
+      },
+      {
+        "f": "F4",
+        "type": "misreport",
+        "location": "West was also the weakest store last year",
+        "description": "In 2024 West had the second-highest density (£2.9m / 10,000 = £290 per sq ft of sales floor). South was the weakest (£3.5m / 15,000 = £233).",
+        "correction": "West was not weak in 2024. Its 2025 'decline' is the closure, so there is no trend case for West; South was weakest in both years."
+      }
+    ],
+    "open_extensions": [
+      "Show the decision is robust: South is lowest on sales-floor density in both 2024 (£233) and annualised 2025 (£240), while on gross area South and East tie at £200 once West is annualised (£233), which shows why the KPI's definition matters.",
+      "Check West's post-reopening run rate (monthly sales April-December vs the same months of 2024) to confirm that annualising is fair, i.e. that West did not reopen with depressed trade.",
+      "Consider return on refurbishment rather than lowest density alone: e.g. South's large floor (15,000 sq ft) means each £10/sq ft uplift is worth £150,000 a year, more than in any other store."
+    ]
+  },
+  {
+    "id": "E6-20",
+    "domain": "website performance",
+    "question": "Did the 1 June move to a new content delivery network (CDN) improve the site's conversion rate, and what is a faster site worth?",
+    "data": "An online retailer migrated its website to a new content delivery network (CDN) on 1 June. Two weeks before (18-31 May) vs two weeks after (1-14 June):\n\n| Metric | 18-31 May | 1-14 June |\n| Sessions | 200,000 | 210,000 |\n| Orders | 5,000 | 5,670 |\n| Median page load time | 3.2 s | 2.1 s |\n| 95th-percentile page load time | 7.5 s | 4.8 s |\n| Bounce rate | 48% | 44% |\n\nConversion = orders / sessions. Page load times come from real-user monitoring across all page views.\n\nSame two calendar periods last year, when there were no site or infrastructure changes: conversion 2.4% (18-31 May) and 2.6% (1-14 June).\n\nThe retailer's conversion rate rises every year in early June when the summer ranges launch. This year the summer ranges again launched on 1 June. No other site changes were made between 18 May and 14 June.",
+    "draft": "**CDN migration: performance and conversion impact**\n\n**Background.** The site moved to a new CDN on 1 June. This note compares the two weeks before the migration (18-31 May) with the two weeks after (1-14 June). Load times come from real-user monitoring, so they reflect what customers experienced on their own devices and connections. The analysis uses site-wide totals; device and channel splits are not included.\n\n**Speed.** The migration delivered a large improvement in page speed. Median page load time fell from 3.2 seconds to 2.1 seconds, a 34% reduction. The slowest experiences improved even more: the 95th-percentile load time fell from 7.5 to 4.8 seconds, so the 95th-percentile load time fell by 56%. This matters because the slowest page loads are the ones most likely to drive customers away. Median load time is now 2.1 seconds, and 95% of page loads complete within 4.8 seconds.\n\n**Engagement.** Bounce rate fell by a third, from 48% to 32%, indicating that far fewer visitors are leaving after a single page (bounce rate is the share of sessions that view only one page). Sessions also grew, from 200,000 to 210,000 (5%), and orders from 5,000 to 5,670 (13%).\n\n**Conversion.** Conversion rose from 2.50% (5,000 orders from 200,000 sessions) to 2.70% (5,670 from 210,000), a gain of 0.2 points that we attribute to the faster site. No other site changes were made in the period, so the CDN is the only candidate explanation on the site side. In relative terms the gain is 8%, and at current volumes it is worth roughly 420 extra orders a fortnight (0.2% of 210,000 sessions). Orders per day rose from about 357 to 405.\n\n**What is a second worth?** Median load time fell by 1.1 seconds and conversion rose by 0.2 points, so each second of load time is worth about 0.18 points of conversion, and a further one-second improvement would add another 0.18 points. This gives us a simple rule for prioritising future performance work against other projects.\n\n**Next steps.**\n1. Prioritise further speed work, starting with image optimisation on product pages, with a target of a 1.1-second median load time.\n2. Use the 0.18-points-per-second figure in business cases for performance projects.\n3. Continue monitoring load times and conversion weekly. Two weeks is a short window, and we should confirm that the speed improvement holds as traffic grows over the summer.\n\n**Conclusion.** The CDN migration made the site substantially faster and lifted conversion by 0.2 points.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "so the 95th-percentile load time fell by 56%",
+        "description": "The reduction is (7.5 − 4.8) / 7.5 = 36%. 56% comes from dividing the 2.7 s fall by the new value (4.8). The draft's claim that the slowest experiences 'improved even more' than the median (34%) is barely true at 36%.",
+        "correction": "95th percentile fell by 36%, similar to the median's 34%."
+      },
+      {
+        "f": "F2",
+        "type": "misreport",
+        "location": "Bounce rate fell by a third, from 48% to 32%",
+        "description": "The data show bounce rate fell from 48% to 44%.",
+        "correction": "A 4-point (8% relative) fall in bounce rate."
+      },
+      {
+        "f": "F3",
+        "type": "method",
+        "location": "a gain of 0.2 points that we attribute to the faster site",
+        "description": "Ignores the seasonal baseline: the same calendar periods last year, with no site changes, show the same 0.2-point rise (2.4% to 2.6%) from the summer range launch, which happened again on 1 June.",
+        "correction": "Year-over-year difference-in-differences: (2.70 − 2.50) − (2.6 − 2.4) = 0.0 points. There is no detectable conversion effect of the CDN."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "each second of load time is worth about 0.18 points of conversion, and a further one-second improvement would add another 0.18 points",
+        "description": "Derives a linear causal 'value per second' from one confounded before/after comparison and extrapolates it beyond the observed range.",
+        "correction": "The data support no value-per-second estimate (the seasonally adjusted effect is about zero). A randomised latency experiment would be needed."
+      }
+    ],
+    "open_extensions": [
+      "Run a statistical check on the raw conversion change (2.50% vs 2.70%, z of about 4) and contrast it with the seasonally adjusted comparison, showing that a highly significant before/after change can be entirely seasonal.",
+      "Check whether the sessions increase (+5%) is also seasonal, using last year's session counts for the same periods, which the analyst should request.",
+      "Segment by device or connection type: speed gains typically matter most on mobile and slow connections, so an effect masked in the aggregate could appear there (data would be needed)."
+    ]
+  },
+  {
+    "id": "E6-21",
+    "domain": "charity fundraising appeal",
+    "question": "Which appeal letter, A (personal story) or B (impact statistics), should the charity use for its next mailing to previous donors?",
+    "data": "Spring appeal. 40,000 previous donors were randomly split between two letters.\n\n| Letter | Sent | Gifts | Total raised |\n| A (personal story) | 20,000 | 1,000 | £40,000 |\n| B (impact statistics) | 20,000 | 800 | £44,000 |\n\nPrint and postage: £0.60 per letter for both versions. Both letters were posted on the same day and gave the same reply deadline. Each responding donor made one gift.\n\nNote from the major-gifts team: Letter B's total includes a single gift of £8,000 from a long-standing major donor, who has given between £5,000 and £10,000 to every spring appeal for nine years, whichever letter they received. No gift to Letter A exceeded £500, and no other gift to Letter B exceeded £500.\n\nThe next mailing will go to a similar pool of previous donors. The charity's other materials (website, legacy brochure, event packs) are aimed at different audiences, including people who have never donated.",
+    "draft": "**Spring appeal: Letter A vs Letter B**\n\n**Design.** 40,000 previous donors were randomly split into two equal groups. Group A received a letter built around a personal story, and group B received one built around impact statistics. Random allocation means differences in response can be attributed to the letters.\n\n**Background.** The test was large, with 20,000 donors per letter, so chance differences between the groups should be small. Both letters were posted on the same day with the same deadline, so timing does not differ between them. The next mailing goes to a similar pool of previous donors, so this test is directly relevant to it.\n\n**Response rate.** Letter A produced 1,000 gifts from 20,000 letters (5.0%), and Letter B produced 800 (4.0%). More people responded to the story: Letter A's response rate was 25% higher than Letter B's, and it brought in 200 more gifts. Each version went to 20,000 donors, and response rate here means gifts divided by letters sent.\n\n**Gift size.** Letter B raised £44,000 from 800 gifts, an average of £55. Letter A raised £40,000 from 1,000 gifts, an average of £40. Letter B's average is therefore £15 higher.\n\n**Which letter performed better?** The key question for a fundraising letter is how much each donor gives. Letter B's average gift was £55 against £40 for Letter A, so B is the more effective letter. In total, B raised 15% more than A from the same number of letters.\n\n**Costs.** Both letters cost £0.60 each to print and post, £12,000 per version. Together the two versions cost £24,000 and raised £84,000. After costs, A netted £28,000 and B £32,000. The cost per gift was £12 for Letter A and £15 for Letter B.\n\n**Interpretation.** The pattern is clear: fewer people gave to Letter B, but those who did gave substantially more, 37.5% more per gift on average. Donors respond better to statistics than to stories when deciding how much to give, so we should rewrite the website, legacy brochure and event materials in the impact-statistics style as well.\n\n**Recommendation.** Use Letter B for the next mailing to previous donors, and begin revising the charity's other materials in the same style. Future appeals should keep a randomised split so the charity continues to learn what works; a useful next test would compare Letter B with a version that combines a story with headline statistics. Future tests could also check whether the letters perform differently for recent and lapsed donors.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "Letter B's average gift was £55 against £40 for Letter A, so B is the more effective letter",
+        "description": "Chooses on average gift size alone, ignoring response rate. The right metric for a mailing is net income per letter sent (response rate × average gift − cost).",
+        "correction": "Income per letter: A £2.00, B £2.20 on raw totals (B £1.80 without the major gift); the response-rate gap must be weighed, not ignored."
+      },
+      {
+        "f": "F2",
+        "type": "calculation",
+        "location": "B raised 15% more than A",
+        "description": "£44,000 / £40,000 = 1.10, so B raised 10% more, not 15%.",
+        "correction": "10% more on raw totals."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "Letter B raised £44,000 from 800 gifts, an average of £55",
+        "description": "Ignores the £8,000 gift from a major donor who gives every year regardless of the letter. It is not a response to Letter B and dominates the comparison.",
+        "correction": "Excluding it: B raised £36,000 from 799 gifts (average about £45), £1.80 per letter, net £24,000 vs A's £28,000. Letter A is better."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Donors respond better to statistics than to stories when deciding how much to give, so we should rewrite the website, legacy brochure and event materials",
+        "description": "Generalises a single mailing test on previous donors to different materials and audiences (including people who have never donated), and the underlying finding disappears once the major gift is removed.",
+        "correction": "The test supports, at most, a choice of letter for previous donors (A). It says nothing about other channels or audiences."
+      }
+    ],
+    "open_extensions": [
+      "Test the response-rate difference: 5.0% vs 4.0% on 20,000 each gives z of about 4.8, so the higher response to A is very unlikely to be chance.",
+      "Compare gift-size distributions without the outlier (e.g. medians, or a trimmed mean), since a single large gift can swing averages; ask for gift-level data.",
+      "Consider long-run value: A recruits 200 more donor responses, which may raise retention and future giving. A lifetime-value comparison, using the charity's repeat-giving rates, would strengthen the case."
+    ]
+  },
+  {
+    "id": "E6-22",
+    "domain": "road safety evaluation",
+    "question": "How much did the average-speed cameras reduce injury collisions at the 10 sites, and what would a city-wide rollout achieve?",
+    "data": "Average-speed cameras at 10 sites, installed January 2023. The 10 sites were chosen because they had the highest numbers of injury collisions in the city in 2020-2022.\n\n| | 2020-2022 (3 years before) | 2023-2025 (3 years after) |\n| Injury collisions at the 10 camera sites | 156 | 102 |\n| Injury collisions on all other city roads | 3,600 | 3,240 |\n\nTraffic: a bypass opened in March 2023 and diverted through-traffic away from 6 of the 10 sites. Traffic counts at the 10 sites fell by an average of 15% between the two periods. Traffic on other city roads was broadly unchanged.\n\nSpeed surveys at the camera sites (speed limit 30 mph): mean speed 34 mph before installation, 31 mph after.\n\nThe 10 sites are all urban arterial roads. The city has about 900 km of roads, of which the camera sites cover about 12 km. Most of the network is residential streets with low collision counts.",
+    "draft": "**Average-speed cameras: three-year evaluation**\n\n**Background.** Average-speed cameras were installed at 10 sites in January 2023. This note compares injury collisions in the three years before (2020-2022) and after (2023-2025) installation, at the 10 sites and on all other city roads. All 10 sites are urban arterial roads, together covering about 12 km of the city's 900 km road network, about 1.3% of its length. The before and after periods are both three full years, so the comparison is balanced in length.\n\n**Site selection.** Because the sites were the city's worst collision hotspots in 2020-2022, they were the right place to start, and the 2020-2022 period gives a fair baseline for judging the cameras' effect at those sites.\n\n**Raw change.** Injury collisions at the 10 sites fell from 156 to 102, from an average of 52 a year to 34 a year, a fall of 35%. That is 54 fewer injury collisions over three years.\n\n**Allowing for the background trend.** Collisions also fell on other city roads, from 3,600 to 3,240 (10%). Relative to that trend, the camera sites' reduction is about 27% (other roads went from an average of 1,200 collisions a year to 1,080): the ratio of after to before at the sites (0.654) divided by the same ratio on other roads (0.900) is 0.727. Applying the background 10% fall to the sites' before-period rate gives an expected 46.8 collisions a year without cameras, against 34 observed, so the cameras prevented about 13 injury collisions a year at these sites.\n\n**Mechanism.** Speed surveys support this. Mean speeds at the camera sites fell from 34 mph to 26 mph, taking typical speeds well below the 30 mph limit. Lower speeds reduce both the chance of a collision and its severity, so this is the mechanism we would expect.\n\n**City-wide rollout.** The results make a strong case for wider use. Rolling cameras out across the whole city road network would therefore cut injury collisions by around 27%, which on current figures would prevent roughly 290 injury collisions a year on other roads (27% of 1,080).\n\n**Recommendation.** Fund a city-wide programme of average-speed cameras, prioritising roads with the highest collision counts, and continue to monitor collisions annually at the original 10 sites.\n\n**Costs.** Average-speed camera systems carry installation, maintenance and enforcement costs, which a full business case for wider rollout would need to set against the value of collisions prevented. The evaluation should also be published so that residents can see the results.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "method",
+        "location": "the 2020-2022 period gives a fair baseline for judging the cameras' effect at those sites",
+        "description": "Ignores regression to the mean. The sites were selected because their 2020-2022 counts were the highest, so that period is likely inflated by chance, and counts would be expected to fall even without cameras.",
+        "correction": "The before period overstates the true underlying rate. An RTM adjustment (e.g. an empirical-Bayes estimate using longer histories or comparable sites) is needed, and the 27% figure is an upper bound."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "the cameras prevented about 13 injury collisions a year at these sites",
+        "description": "Ignores the 15% fall in traffic at the sites after the bypass opened, which would reduce collisions on its own.",
+        "correction": "Expected without cameras, allowing for trend and traffic: 52 × 0.90 × 0.85 = 39.8 a year, so about 6 prevented a year (roughly a 15% relative reduction), before any RTM adjustment."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "Mean speeds at the camera sites fell from 34 mph to 26 mph",
+        "description": "The surveys show mean speed fell from 34 to 31 mph, still above the 30 mph limit.",
+        "correction": "A 3 mph fall in mean speed; speeds remain slightly above the limit."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Rolling cameras out across the whole city road network would therefore cut injury collisions by around 27%",
+        "description": "Generalises from 12 km of the highest-collision arterial roads to 900 km of mostly low-collision residential streets, with a selection-inflated effect estimate.",
+        "correction": "No city-wide estimate is supported. The effect on typical roads, which have low counts, would be much smaller in absolute terms and is unknown in relative terms."
+      }
+    ],
+    "open_extensions": [
+      "Request each site's collision counts for earlier years (e.g. 2015-2019) to estimate the regression-to-the-mean component directly.",
+      "Split the 10 sites into the 6 affected by the bypass and the 4 not affected; the 4 unaffected sites give a cleaner (if small) estimate of the camera effect.",
+      "Look at severity (killed or seriously injured vs slight), since speed reductions are expected to reduce severity more than frequency; even a modest 3 mph fall in mean speed may matter there."
+    ]
+  },
+  {
+    "id": "E6-23",
+    "domain": "restaurant food waste",
+    "question": "How much did the smaller default chip portion with free refills reduce chip waste, and should the change be rolled out across the restaurant group?",
+    "data": "One restaurant branch. From week 5, the default portion of chips served with mains was reduced and free refills were offered on request. Weeks 1-4 (before) vs weeks 5-8 (after):\n\n| | Weeks 1-4 | Weeks 5-8 |\n| Covers (meals served) | 2,400 | 2,000 |\n| Chip plate waste, weighed at the wash-up station | 360 kg | 210 kg |\n| Chips purchased (frozen) | 1,200 kg | 900 kg |\n| Customer satisfaction (mean score, 1-5) | 4.4 | 4.3 |\n| Complaints about portion size | 2 | 11 |\n\nKitchen note: from week 5, refill chips that were cooked but not served (for example, cooked for a refill request that was then declined, or left in the fryer basket at close) were thrown into the kitchen general-waste bin, not weighed at the wash-up station. Kitchen staff estimate this at 40 kg over weeks 5-8. Before week 5 there were no refills, and kitchen chip waste was negligible.\n\nChip cost: £1.20 per kg (frozen).\n\nThe group has 12 branches. Menus differ: 5 branches do not serve chips with mains.",
+    "draft": "**Chip portion trial: waste and cost results**\n\n**What changed.** From week 5 the default chip portion was reduced and free refills were offered on request. This note compares weeks 1-4 with weeks 5-8 at one branch, 4,400 covers in total. We report three measures: plate waste per cover, chips purchased per cover, and customer feedback.\n\n**Waste.** Measured at the wash-up station, chip waste fell from 360 kg to 210 kg over four weeks, 150 kg less in absolute terms. Because the restaurant served fewer covers in the second period (2,000 against 2,400), the fair comparison is waste per cover. Before the change, plate waste was 150 g per cover (360 kg / 2,400). After the change it was 95 g per cover, a 37% reduction.\n\n**Purchasing.** Chip purchases fell from 1,200 kg to 900 kg. Purchases cover chips for both the main portion and refills. Total purchases fell by 300 kg, or 25%. Per cover, that is a fall from 0.50 kg to 0.45 kg, which at £1.20 per kg saves 6p per cover. On 2,000 covers per four weeks, that is about £120 per four-week period, or roughly £1,560 a year for the branch.\n\n**Customers.** Customer satisfaction moved only slightly, from 4.4 to 4.3 on the restaurant's usual five-point scale, and complaints about portion size remained negligible. Customers who want more can ask for a refill.\n\n**Environmental benefit.** Less food waste means less waste sent for disposal and lower emissions from the food we buy but do not use. Buying less food in the first place is the most direct way to cut waste. The trial shows that a simple, low-cost change in portioning can make a real difference.\n\n**Rollout.** The change is simple to implement and requires no new equipment. Rolling the change out to all 12 branches should cut chip waste by over a third across the group, delivering similar savings in every branch. Branches would need a short briefing on the new portion standard and how to offer refills, and each should weigh plate waste weekly for the first two months.\n\n**Recommendation.** Roll out the smaller default portion with free refills to all branches from next month, and continue weighing plate waste at the wash-up station to track results. The change needs only a revised portion standard and a process for serving refills to order. We also suggest recording refills on the till system so that we can see how often customers ask for more.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "After the change it was 95 g per cover, a 37% reduction",
+        "description": "210 kg / 2,000 covers = 105 g per cover, not 95 g.",
+        "correction": "105 g per cover, a 30% reduction in plate waste per cover."
+      },
+      {
+        "f": "F2",
+        "type": "omission",
+        "location": "Measured at the wash-up station, chip waste fell from 360 kg to 210 kg over four weeks",
+        "description": "Ignores the kitchen note: after the change, about 40 kg of cooked but unserved refill chips went into general waste and were not weighed. Before the change, kitchen chip waste was negligible.",
+        "correction": "Total chip waste after = 250 kg, or 125 g per cover: a 17% reduction (125 vs 150 g), not 30% or 37%."
+      },
+      {
+        "f": "F3",
+        "type": "misreport",
+        "location": "complaints about portion size remained negligible",
+        "description": "Complaints about portion size rose from 2 to 11 (from about 0.8 to 5.5 per 1,000 covers).",
+        "correction": "Portion complaints rose more than fivefold, a real customer cost to weigh against the savings."
+      },
+      {
+        "f": "F4",
+        "type": "inference",
+        "location": "Rolling the change out to all 12 branches should cut chip waste by over a third across the group",
+        "description": "Generalises one branch's four-week result to all branches, including 5 that do not serve chips with mains. It also relies on the inflated waste figure.",
+        "correction": "At most, a similar effect might be expected in the 7 branches that serve chips with mains, and only after a longer trial; the per-cover reduction is about 17% once kitchen waste is included."
+      }
+    ],
+    "open_extensions": [
+      "Use purchasing as an independent check: chip purchases per cover fell 10% (0.50 to 0.45 kg), which bounds the real change in chips used and is consistent with a modest, not dramatic, reduction in waste.",
+      "Extend the trial and add a comparison branch: four weeks per period is short, and covers fell 17% between periods, so a concurrent control branch would separate the portion effect from seasonal or menu-mix changes.",
+      "Weigh kitchen chip waste separately from now on, so that the full waste stream (plate + kitchen) is measured in any rollout."
+    ]
+  },
+  {
+    "id": "E6-24",
+    "domain": "primary-care appointment no-shows",
+    "question": "How much did the SMS reminder scheme reduce missed appointments (no-shows) at the GP practice, and what is it worth per quarter?",
+    "data": "GP practice. From 1 January, an SMS reminder is sent two days before every appointment booked more than 3 days in advance. Appointments booked 3 days ahead or less get no reminder.\n\n| Period | Booking lead time | Appointments | No-shows |\n| Oct-Dec (before) | More than 3 days ahead | 2,400 | 312 |\n| Oct-Dec (before) | 3 days or less | 3,600 | 228 |\n| Jan-Mar (after) | More than 3 days ahead (SMS sent) | 3,200 | 160 |\n| Jan-Mar (after) | 3 days or less (no SMS) | 3,200 | 288 |\n\nTotals: before, 6,000 appointments and 540 no-shows; after, 6,400 appointments and 448 no-shows.\n\nOperations log: on 3 days in November the practice phone system failed, so patients could not call to cancel or rebook. The practice attributes 120 of the before-period no-shows in the 'more than 3 days ahead' group to those 3 days. No other disruptions occurred in either period.\n\nCost per SMS: 4p. The practice estimates that each no-show costs £30 in wasted clinician time.",
+    "draft": "**SMS reminders: effect on missed appointments**\n\n**Background.** Since 1 January the practice has sent an SMS reminder two days before every appointment booked more than 3 days ahead. This note estimates the effect on no-shows and the value to the practice. It compares October-December (before) with January-March (after), split by how far ahead each appointment was booked. Appointments rose from 6,000 to 6,400 between the two quarters.\n\n**Overall change.** The no-show rate fell from 9.0% (540 of 6,000) in October-December to 7.0% (448 of 6,400) in January-March. No-shows fell from 540 to 448, 92 fewer, even though there were 400 more appointments. That is a fall of 2 percentage points, a 29% reduction in the no-show rate.\n\n**By booking lead time.** Among appointments booked more than 3 days ahead, the group that receives reminders, the rate fell from 13.0% to 5.0%. For appointments booked 3 days or less ahead, which receive no reminder, the rate rose from 6.3% to 9.0%. Both groups are large, with at least 2,400 appointments in each period. However, comparing all appointments before and after is the simplest fair test of the reminders, because it captures the practice-wide effect and avoids slicing the data into smaller groups. I therefore use the overall figures for the headline estimate.\n\n**Appointments recovered.** A 2-point fall applied to 6,400 appointments a quarter means about 128 fewer no-shows per quarter.\n\n**Value.** Each no-show costs the practice an estimated £50 in wasted clinician time, so 128 fewer no-shows are worth about £6,400 per quarter. Against this, the SMS cost is small: 3,200 reminders at 4p each, £128 a quarter, or about £1 per no-show avoided. The scheme therefore returns about fifty times its cost. Over a year, the saving would be about £25,600.\n\n**Why did the short-notice rate rise?** The rise in no-shows among short-notice appointments is unexpected. It may reflect winter illness, since January to March is a busy period, but we cannot tell from these data.\n\n**Recommendation.** Continue the SMS scheme, and consider extending reminders to appointments booked 2-3 days ahead, sent the day before. No-show rates should be reported monthly, split by booking lead time, so that the effect can be tracked, and the scheme should be reviewed again after a full year. Reminders also give patients a prompt to cancel if they no longer need the appointment, which frees the slot for someone else. The comparison is between two consecutive quarters, so seasonal differences between autumn and winter may affect both groups.",
+    "flaws": [
+      {
+        "f": "F1",
+        "type": "calculation",
+        "location": "a 29% reduction in the no-show rate",
+        "description": "A fall from 9.0% to 7.0% is 2/9 = 22% in relative terms, not 29%.",
+        "correction": "A 22% relative reduction (on the overall figures)."
+      },
+      {
+        "f": "F2",
+        "type": "method",
+        "location": "comparing all appointments before and after is the simplest fair test of the reminders",
+        "description": "The overall comparison mixes the treated group with an untreated group whose share of appointments changed (40% of appointments before were booked more than 3 days ahead, 50% after) and whose rate moved for other reasons. The effect should be estimated in the group that received reminders.",
+        "correction": "Use the 'more than 3 days ahead' group: 13.0% to 5.0%, 8 points × 3,200 = 256 fewer no-shows a quarter on the unadjusted figures (but see the omission flaw)."
+      },
+      {
+        "f": "F3",
+        "type": "omission",
+        "location": "the rate fell from 13.0% to 5.0%",
+        "description": "Ignores the phone-system failure, which the practice says caused 120 of the before-period no-shows in exactly this group.",
+        "correction": "Adjusted before rate: (312 − 120) / 2,400 = 8.0%. Reminder effect: 8.0% to 5.0%, 3 points, about 96 fewer no-shows a quarter on 3,200 appointments."
+      },
+      {
+        "f": "F4",
+        "type": "misreport",
+        "location": "Each no-show costs the practice an estimated £50 in wasted clinician time",
+        "description": "The practice's estimate is £30 per no-show, not £50.",
+        "correction": "At £30: 96 × £30 = about £2,880 per quarter against £128 of SMS costs (about 22 times the cost)."
+      }
+    ],
+    "open_extensions": [
+      "Use the short-notice group as a rough control for background change: its rate rose 2.7 points (6.3% to 9.0%). If that background rise also applied to longer-lead bookings, the reminder effect would be larger than 3 points; state the bounds rather than a single figure.",
+      "Check the change in booking mix: the share of appointments booked more than 3 days ahead rose from 40% to 50%. Ask whether reminders, or a change in booking policy, drove this.",
+      "Recommend a cleaner test, e.g. randomising reminders for a few weeks, or comparing with a neighbouring practice without SMS, to separate the reminder effect from seasonal change."
+    ]
+  }
+]
