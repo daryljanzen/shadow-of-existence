@@ -260,8 +260,9 @@ EST = {
         'register-side only. PO-42, the early-lap peak physics, was STRUCK r4523 on the finding that the load-bearing '
         'half discharges without it -- the entropy floor for the genealogys finiteness is independent of the peak '
         'temperature -- a correct strike with the item lying beyond it. '),
-    'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
+    'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7749 LANDS r7747+cc66, r7747+71, r7750 (60): PO-87 reset to follow the data -- on the leaf rate the residual is level with the standard model\'s, and the stacking-rate identification is reread from the foundations; P9\'s Kerr-de Sitter vacuum in Lean. '
         'r7747 LANDS r7745+cc66, r7745+71, r7748 (60): PO-87 narrowed to three sentences (P6 twice, P15 first cycle); ten census rows classed as limits or supplied. '
         'r7745 LANDS r7743+cc66, r7743+71, r7746 (60): PO-87\'s mechanism worked in every part; P18 and P7 in that state; the last step is the census\'s fifteen remaining sentences. '
         'r7743 LANDS r7741+cc66, r7741+71, r7744 (60): P15 says the visibility/distance-map division is set by an unfixed grid matching, so the distance ratio is the attribution; the remaining step is the papers\' frontier statements in the worked state. '

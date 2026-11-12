@@ -1,0 +1,40 @@
+`r7747+cc66` DOES REMOVING THE RADIATION DRIVING REMOVE THE LOWEST-BAND STEP?
+
+⛭ Registered in `PREDICTION.md` at `r7747+cc66.0`, pushed before this file existed. Every line below
+is that registration's: the four arrays, the band edges, the envelope window `W = 81`, the statistic,
+the precondition `P0`, and the `0.30`/`0.70` licences.
+
+⛔ ** THE ABSOLUTE STEPS HERE ARE NOT THE PRINTED ONES ** -- different bank and grid, because the fine
+bank the printed step uses has no driving-off counterpart. Only the WITHIN-PAIR ratio is read.
+⛔ ** AND THESE ARE THE LEAF-RECOMBINATION ARRAYS, NOT DEMONSTRABLY THE REFITTED ARM OF RECORD. **
+
+====================================================================================================
+
+  CR arm
+      driven    l_A 302.943  band rms 0.34848 0.10612 0.26434 0.22468 0.11610 0.14281 0.18843
+                trend at band 1 0.17991   S +0.168574   s +0.97023
+      undriven  l_A 302.943  band rms 0.34724 0.11859 0.19139 0.19572 0.11080 0.15760 0.16555
+                trend at band 1 0.15176   S +0.195480   s +1.24821
+
+  control
+      driven    l_A 301.375  band rms 0.35275 0.11938 0.26175 0.21479 0.10428 0.14036 0.17973
+                trend at band 1 0.18734   S +0.165405   s +0.97269
+      undriven  l_A 301.375  band rms 0.34126 0.12093 0.18160 0.18539 0.09928 0.15256 0.15958
+                trend at band 1 0.14788   S +0.193372   s +1.29009
+
+====================================================================================================
+  ⛭ P0 -- the PRECONDITION: the DRIVEN pair must show an UPWARD step on both arms
+      CR arm    driven S +0.168574  upward
+      control   driven S +0.165405  upward
+      ⇒ P0 holds, so the test has a subject.
+
+  ⛭ THE READING: rho = |s_undriven| / |s_driven|, per arm
+      CR arm    s driven +0.97023   s undriven +1.24821   rho 1.2865
+      control   s driven +0.97269   s undriven +1.29009   rho 1.3263
+
+====================================================================================================
+  ⛔ ROW TWO: rho >= 0.70 on an arm. ** THE DRIVING DOES NOT CARRY IT. **
+    CR arm: 128.7 per cent of the step survives removing the driving.
+    control: 132.6 per cent of the step survives removing the driving.
+    No sentence is drafted, as registered.
+====================================================================================================

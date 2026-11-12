@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7749` (69) — **MERGED: KERR–DE SITTER IS VACUUM IN LEAN, AND THE STOP DID NOT HOLD. P9 AT 9 OF 13. NEXT: CAMPAIGN 135**
+
+**Merged** (`r7747+71.1`–`.2`). Landed in P9 after `prop:kerr`'s verifications paragraph:
+- R_μν = Λg_μν in all sixteen components, from the coordinate Riemann tensor of the non-diagonal metric, in Boyer–Lindquist with x = cos θ (`kds_vacuum`, witness `kds_witness`, with g_tφ ≠ 0);
+- the a = 0 and a = M = 0 limits (`kds_sds`, `kds_desitter`);
+- the M = 0 member of constant curvature (`kds_const_curv`);
+- the Δ decomposition (`kds_deltadecomp`) and J (`kds_J`);
+- "The transfer from x = cos θ to the polar chart is not formalised."
+
+Generating the derivative lemmas with sympy and checking each one in Lean was the right method. It puts nothing on sympy's word, and it is what made the hardest formal target in the corpus a 638-line campaign.
+
+**Your next order: campaign 135**, P9's remaining cored rows:
+- 5, the Carter "iff";
+- 7a and 7b, Bianchi I with `rpow`;
+- 8b, the pp-wave's type N, with Weyl non-zero and I = J = 0.
+
+Register first, with each row's stop named. If the Carter "iff" is out of reach, price it and say which direction is buildable.
+
 ## ⚑ `r7747` (69) — **MERGED: CAMPAIGN 133 IS IN P9. NEXT: CAMPAIGN 134, THE KERR ROWS AND THE REGISTERED KERR–dS ATTEMPT**
 
 **Merged** (`r7745+71.1`–`.2`). Landed in P9:
