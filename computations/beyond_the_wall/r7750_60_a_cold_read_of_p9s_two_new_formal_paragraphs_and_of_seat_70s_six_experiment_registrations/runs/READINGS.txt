@@ -1,0 +1,125 @@
+
+====================================================================================================
+(A)i  BOTH PARAGRAPHS LOCATED, AND EVERY CITED NAME RESOLVED
+====================================================================================================
+  paragraphs carrying rn_ citations: 2
+  P9 cites 8 rn_ names: ['rn_ks_G_offdiag', 'rn_ks_einstein', 'rn_ks_nariai', 'rn_ks_sds_vacuum', 'rn_ks_witness', 'rn_pp_Ric', 'rn_pp_vacuum_iff', 'rn_pp_witness']
+  the order names 8; not found in Range.lean: []
+  [PASS] (A)i  both paragraphs located, all eight names are declarations, three fabricated are not  witness: 2 paragraphs, 8 cited names all present, fabricated ['rn_ks_vacuum', 'rn_pp_weyl', 'rn_ks_interior'] -> none found
+
+====================================================================================================
+(A)iv-a  THE KANTOWSKI-SACHS EINSTEIN TENSOR, RECOMPUTED FROM THE METRIC
+====================================================================================================
+  G^mu_nu computed from the metric -dtau^2 + X^2 dchi^2 + Y^2 dOmega^2
+  every off-diagonal component zero: True
+  -G^0_0 - [(Y'/Y)^2 + 1/Y^2 + 2(X'/X)(Y'/Y)]   = 0
+   G^1_1 - [-2Y''/Y - (Y'/Y)^2 - 1/Y^2]         = 0
+   G^2_2 - [-Y''/Y - X''/X - (X'/X)(Y'/Y)]      = 0
+   G^3_3 - G^2_2                                = 0
+  [PASS] (A)iv-a  rn_ks_einstein's four components and rn_ks_G_offdiag both hold of the metric  witness: all four residuals and all twelve off-diagonal components are exactly 0
+
+====================================================================================================
+(A)ii  AND THE HYPOTHESES ARE NOT DECORATION: X, Y AND sin(theta) ARE IN THE DENOMINATORS
+====================================================================================================
+  functions and symbols in the quoted expressions' denominators: ['X', 'Y', 'tau']
+  rn_Hyp's fields: ['hX', 'hX1', 'hY', 'hY1', 'hX0', 'hY0', 'hs']
+  of which NON-DEGENERACY at the point: ['hX0', 'hY0', 'hs']
+  rn_Hyp's own docstring says: "X, Y, sin theta != 0 at the point"
+  [PASS] (A)ii-a  rn_Hyp carries three non-degeneracy conditions, and the quoted expressions divide by exactly those quantities  witness: ['hX0', 'hY0', 'hs'] in rn_Hyp; the denominators carry ['X', 'Y'], which is what those three hypotheses are about
+
+====================================================================================================
+(A)ii-b  WHAT THE PROSE STATES OF EACH THEOREM'S HYPOTHESES
+====================================================================================================
+  PARAGRAPH 1  The kernel is machine-checked in Lean (computations/formalisation/lean/probes/Range.lean). Computed from the coordinate Riemann tensor of \eqref{eq:ks}, the Einstein tensor gives \eqref{eq:ksrho} and its two partners exactly, with every off-diagonal component zero (rn_ks_einstein and rn_ks_G_offdiag). Wherever $Y'=X$, $X^{2}=-f(Y)$, $X'=-f'(Y)/2$ and $X''=-f''(Y)X/2$, all sixteen components of $G^{\mu}{}_{\nu}+\Lambda\delta^{\mu}{}_{\nu}$ vanish, which is the Schwarzschild--de Sitter interior (rn_ks_sds_vacuum, with the member $Y=\cosh\tau$, $X=\sinh\tau$ at $M=0$, $\Lambda=3$ as its witness, rn_ks_witness); and the Nariai member $Y=1/\sqrt\Lambda$, $X=e^{\sqrt\Lambda\,\tau}$ is vacuum (rn_ks_nariai). That these two exhaust the kernel is not formalised.
+
+  PARAGRAPH 2  \noindent The wave's Ricci tensor is machine-checked (Range.lean): for the metric \eqref{eq:ppwave} with any $H$, $R_{uu}=-\tfrac12(H_{xx}+H_{yy})$ and every other component vanishes, so the wave is vacuum exactly when $H$ is harmonic in $(x,y)$ (rn_pp_Ric and rn_pp_vacuum_iff, with $H=x^{2}-y^{2}$ as witness, rn_pp_witness). Its Weyl invariants, and so its type N, are not formalised.
+
+    rn_ks_einstein     ['(h : rn_Hyp X X1 X2 Y Y1 Y2 x)']
+    rn_ks_G_offdiag    ['(h : rn_Hyp X X1 X2 Y Y1 Y2 x)']
+    rn_ks_sds_vacuum   ['{Λ M : ℝ}', '(h : rn_Hyp X X1 X2 Y Y1 Y2 x)', '(hY1 : Y1 (x 0) = X (x 0))', '(hX1 : X1 (x 0) = -(2 * M / Y (x 0) ^ 2 - 2 * Λ * Y (x 0) / 3) / 2)', '(hY2 : Y2 (x 0) = X1 (x 0))', '(hX2 : X2 (x 0) = -(-4 * M / Y (x 0) ^ 3 - 2 * Λ / 3) * X (x 0) / 2)', '(hf : X (x 0) ^ 2 = -(1 - 2 * M / Y (x 0) - Λ * Y (x 0) ^ 2 / 3))', '(μ ν : Fin 4)']
+    rn_ks_nariai       ['{Λ : ℝ}', '(hΛ : 0 < Λ)', '{x : Fin 4 → ℝ}', '(hs : Real.sin (x 2) ≠ 0)', '(μ ν : Fin 4)']
+    rn_pp_Ric          ['(h : ℝ → ℝ → ℝ → ℝ)', '(x : Fin 4 → ℝ)']
+    rn_pp_vacuum_iff   ['(h : ℝ → ℝ → ℝ → ℝ)', '(x : Fin 4 → ℝ)']
+    prose paragraph 1 states X != 0           = False
+    prose paragraph 1 states Y != 0           = False
+    prose paragraph 1 states sin theta != 0   = False
+    prose paragraph 1 states Lambda > 0       = False
+  [PASS] (A)ii-b  ⛔ FINDING: the three KS theorems carry non-degeneracy hypotheses and the paragraph states NONE of them  witness: rn_Hyp gives X != 0, Y != 0, sin(theta) != 0; rn_ks_nariai adds ['(hΛ : 0 < Λ)', '(hs : Real.sin (x 2) ≠ 0)']; the paragraph states none -- the same defect 69 repaired at P15's prop:flat in THIS round
+
+====================================================================================================
+(A)iii  THE FIVE CONDITIONS AGAINST THE FOUR THE PROSE LISTS
+====================================================================================================
+  rn_ks_sds_vacuum's conditions (5):
+    (hY1 : Y1 (x 0) = X (x 0))
+    (hX1 : X1 (x 0) = -(2 * M / Y (x 0) ^ 2 - 2 * Λ * Y (x 0) / 3) / 2)
+    (hY2 : Y2 (x 0) = X1 (x 0))
+    (hX2 : X2 (x 0) = -(-4 * M / Y (x 0) ^ 3 - 2 * Λ / 3) * X (x 0) / 2)
+    (hf : X (x 0) ^ 2 = -(1 - 2 * M / Y (x 0) - Λ * Y (x 0) ^ 2 / 3))
+  the prose lists: $Y'=X$, $X^{2}=-f(Y)$, $X'=-f'(Y)/2$ and $X''=-f''(Y)X/2$
+  the fifth, hY2 : Y2 = X1, is Y'' = X' -- which follows from Y' = X BY DIFFERENTIATION,
+  so the prose's four, read as holding on a region ('Wherever'), imply it; the Lean states
+  them POINTWISE and must therefore list it.  Not a dropped hypothesis: a difference
+  between a pointwise and a regional reading, and the prose's word is the regional one.
+  [PASS] (A)iii  the prose's four conditions imply the declaration's five on a region, so the count is right once what it ranges over is established  witness: five pointwise conditions in Lean, four regional ones in prose, the fifth being the derivative of the first
+
+====================================================================================================
+(A)iv-b  THE TWO NAMED MEMBERS, AND THE WITNESS, RECOMPUTED
+====================================================================================================
+  witness member X=sinh, Y=cosh, Lambda=3:  G^mu_nu + 3 delta = 0 (all sixteen)
+  Nariai member Y=1/sqrt(Lambda), X=exp(sqrt(Lambda) tau): G + Lambda delta = 0 (all sixteen)
+  and the prose states the witness is at M = 0: True
+  [PASS] (A)iv-b  both named members are vacuum, recomputed from the metric, and the witness being MASSLESS is disclosed by the prose  witness: G + Lambda delta vanishes in all sixteen components for X=sinh,Y=cosh at Lambda=3 and for the Nariai member at every Lambda > 0; and the prose writes "at $M=0$" itself
+  the Nariai member's own form needs Lambda > 0 for sqrt(Lambda) to be real, and the
+  metric's angular block needs sin(theta) != 0 -- exactly rn_ks_nariai's two binders.
+
+====================================================================================================
+(A)iv-c  THE pp-WAVE RICCI, RECOMPUTED, AND THE DIRECTION OF ITS IFF
+====================================================================================================
+  R_uu - [-(H_xx + H_yy)/2] = 0
+  every other component zero: True
+  rn_pp_vacuum_iff states a biconditional: True; the prose says 'exactly when': True
+  the witness H = x^2 - y^2: H_xx + H_yy = 0, and H is not identically 0 (True)
+  [PASS] (A)iv-c  the pp-wave paragraph is exact: R_uu recomputed, every other component zero, the iff used AS an iff, and its witness non-trivial  witness: residual 0, 15 other components 0, '<->' in the declaration and 'exactly when' in the prose, and the witness is harmonic without being the zero function -- the opposite of r7744 FINDING 4's defect
+
+====================================================================================================
+(A)v  AND BOTH PARAGRAPHS NAME THEIR UNFORMALISED REMAINDER
+====================================================================================================
+  paragraph 1: "That these two exhaust the kernel is not formalised." -> True
+  paragraph 2: "Its Weyl invariants, and so its type N, are not formalised." -> True
+  [PASS] (A)v  both paragraphs name what they do not formalise  witness: the kernel's exhaustiveness in the first, the Weyl invariants and type N in the second
+
+====================================================================================================
+(B)iii  COUNT THREE ON THE MATERIALS THEMSELVES -- because they exist, so it is checkable
+====================================================================================================
+  6 materials file(s) committed, swept field by field:
+    E1/materials/items.json        no hit in any field
+    E2/materials/items.json        field 'key'            scorer-only      12 hit(s): ['premature closure']
+    E3/materials/items.json        no hit in any field
+    E4/materials/items.json        field 'source'         SUBJECT-VISIBLE  1 hit(s): ['throat']
+    E5/materials/briefs.json       no hit in any field
+    E6/materials/tasks.json        no hit in any field
+  => SUBJECT-VISIBLE hits: 1;  scorer-only hits: 12
+    SUBJECT-VISIBLE [throat] in E4/materials/items.json field 'source' -- READ AT SOURCE:
+      E4-21, a medicine patient-information leaflet: "swelling of the face, tongue or
+      throat, or difficulty breathing" -- an allergic-reaction symptom, ordinary English,
+      and nothing to do with this programme's throat circle.
+  And the scorer-only hits are E2's `key` field carrying the phrase 'premature closure',
+  which is the NAME OF THE OUTCOME CATEGORY the scorer's rubric derives.  It is identical
+  in every condition, so it cannot bias a contrast, and the scorer needs it.
+  POWER CONTROL, the same pattern on programme material: {'LOGICAL_ORDER.md': 29, 'range_paper.tex': 165}
+  [PASS] (B)iii  every SUBJECT-VISIBLE field across all six materials sets is clean of the programme -- measured, adjudicated, and with the pattern proved live  witness: 1 subject-visible hit in 900506 bytes of materials, read at source and ordinary English; 12 scorer-only hits, all the outcome category's own name, constant across conditions; and the same pattern finds {'LOGICAL_ORDER.md': 29, 'range_paper.tex': 165} on programme material
+
+====================================================================================================
+SUMMARY (part 1)
+====================================================================================================
+  [PASS] (A)i  both paragraphs located, all eight names are declarations, three fabricated are not
+  [PASS] (A)iv-a  rn_ks_einstein's four components and rn_ks_G_offdiag both hold of the metric
+  [PASS] (A)ii-a  rn_Hyp carries three non-degeneracy conditions, and the quoted expressions divide by exactly those quantities
+  [PASS] (A)ii-b  ⛔ FINDING: the three KS theorems carry non-degeneracy hypotheses and the paragraph states NONE of them
+  [PASS] (A)iii  the prose's four conditions imply the declaration's five on a region, so the count is right once what it ranges over is established
+  [PASS] (A)iv-b  both named members are vacuum, recomputed from the metric, and the witness being MASSLESS is disclosed by the prose
+  [PASS] (A)iv-c  the pp-wave paragraph is exact: R_uu recomputed, every other component zero, the iff used AS an iff, and its witness non-trivial
+  [PASS] (A)v  both paragraphs name what they do not formalise
+  [PASS] (B)iii  every SUBJECT-VISIBLE field across all six materials sets is clean of the programme -- measured, adjudicated, and with the pattern proved live
+
+  9 of 9 arms PASS
