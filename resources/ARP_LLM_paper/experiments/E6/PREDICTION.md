@@ -87,3 +87,10 @@ Call 1 starts from the draft, and each later call starts from the previous call'
 - `runs/<cond>/<task>__r<k>/step<j>.json`: one per call, with the exact message, model, timestamp, response, usage and timing.
 - `scores/…`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **Stated before the data, so neither can be read in afterwards:**
+  - The conditions differ in revision passes as well as perspective: `S` makes six rewrites, while `G-ARP` and `G-noR` make four, with two calls spent on review.
+  - If rewriting alone helps, `S` is advantaged on the primary, so **`P1` is conservative, not confounded**.
+  - **The attribution of any game advantage to perspective rests on the stage measure** (flaws corrected after steps 1, 3 and 5, against `S`'s matching rounds), not on the final-version contrast alone.

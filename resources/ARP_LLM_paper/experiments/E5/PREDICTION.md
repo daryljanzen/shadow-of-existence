@@ -68,3 +68,9 @@ Committed before any E5 trial. The claim under test is `LOGICAL_ORDER.md` Step 5
 - `runs/author/<brief>.json` and `runs/<level>/<brief>__r<k>.json`: one per trial.
 - `scores/…`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **Co-primary:** *novel valid findings per review* (valid and not anticipated) is promoted to co-primary beside A.
+- **Why:** A's denominator (valid findings) is itself an outcome. If contamination lowers valid findings, as `P3` predicts, A rises even though no more of the anticipations are correct. A is reported with its numerator and denominator beside it.
+- **`P2` is read through the co-primary:** "contamination closes the gap" holds only if novel valid findings fall from R0 to R2. A rising alone does not establish it.
