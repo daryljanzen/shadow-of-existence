@@ -15,6 +15,74 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛔⛔ `r7749+cc66` — **THE FOUNDATIONS FORCE THE STACKING RATE, BUT NOT ON THE IDENTIFICATION: THAT STOPPED BEING LOAD-BEARING AT `r7607`. THE PREMISE THE DATA CONTRADICT IS RADIATION'S EXCLUSION FROM THE RATE — AND WHAT THE SKY ACTUALLY PICKS OUT IS HALF A PER CENT OF LENGTH**
+
+*A read. **Nothing computed, so nothing needed registering** — every figure below is quoted from a pushed result (`r7580`, `r7612`, `r7614`) and not one number here is mine. Stated so the absence of a `PREDICTION.md` reads as a decision rather than an omission. ⌗ The order's invitation to read its framing is taken up in §⑤, and it is the part I would most want checked.*
+
+### ① WHAT THE RULE SAYS, AND WHAT THE FOUNDATIONS ALREADY ADMIT ABOUT THIS CASE
+
+`ONTOLOGY_FOUNDATION_INDEX` §1·LEVELS, verbatim: `L1` is *"the rate a comoving separation read across leaves takes (`D_M`, `D_H`, `D_V`, the observable expansion)"*; `L2` is taken by *"a process running **in** the content … the plasma's sound horizon, its diffusion length, recombination, the perturbations"*; and the two *"differ by the radiation term alone"* (`P7` `eq:two-rate`, `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴`).
+
+⛭ **And the index itself already flags this one case** — *"**Which rate light's path distance takes is the one case the rule has yet to be shown to decide** — the projection's comoving distance is put on `L1` through the identification that it is measured across the observer's own flat slice (`PO-87`)."* ⇒ *So the foundations do not claim the rule decides it. That sentence is the order's own premise, and §⑤ is why it is now two revisions out of date.*
+
+### ② THE ANSWER: A SEPARATION READ ACROSS THE LEAVES — AND IT IS A CHART IDENTITY, NOT AN ASSIGNMENT
+
+`r7612`'s load-bearing step, checked **symbolically** rather than by differencing floats:
+
+* along the **photon family** (constant `τ`, `χ` advancing) cosmic time advances `dτ̃/dχ = 1`;
+* along the **matter congruence** (constant `χ`, `τ` advancing) it advances `dτ̃/dτ = 1`;
+* **both exactly `1`**, and `∂_χ r = ∂_τ r` at every sampled point (worst relative difference `2.0e-10`, the central difference's own truncation floor).
+
+⇒ The reassigned family **crosses the leaves advancing cosmic time at exactly the rate the matter congruence advances along them**, so what accumulates along it is a cross-leaf comoving separation: `r₀∫dτ̃/r = 14011.456` Mpc against `∫c dz/H_stack = 14011.456` Mpc, **relative difference `1e-14`**. And the separation read **on** one leaf is a different object entirely — `5046.857` Mpc, `0.360` of `D_C`. ⇒ **The rule's first slot applies, and it applies by an identity of the chart rather than by a choice.**
+
+### ③ ⛔ AND THE ORDER'S OWN ROUTE TO `L2` NAMES AN OBJECT THE DATA ALREADY EXCLUDE — IN THE OPPOSITE DIRECTION
+
+The order puts it: *"The photons travel through the plasma and the radiation; the rule sends 'a process running in the content' to `L2`."* That reading names **light's own integrated path**, and `r7580` measured it. There are **three** objects, not two:
+
+| candidate | `D` (Mpc) | `ℓ_A = πD/r_s` | against the sky's `298.4` |
+|---|---|---|---|
+| the implementation, stacking rate | `14011.46` | `302.87` | `+1.50 %` |
+| **the leaf-rate distance the fit prefers** | **`13941.63`** | **`301.36`** | **`+0.99 %`** |
+| **light's real integrated path** | `8787.24` | `189.94` | **`−36.35 %`** |
+
+⇒ **Reclassifying the light path as a content process does not give the distance the fit prefers. It gives the third object, and the comb excludes it by thirty-six per cent** — an order of magnitude the wrong way. *So the route the order names is closed, and it was closed by the computation the order cites.*
+
+⇒ **The leaf-rate distance that fits is NOT light's path through the content.** It is the **same cross-leaf accumulation** with `H_leaf` in place of `H_stack` — the identical object, one term added to the rate.
+
+### ④ WHAT EACH READING REQUIRES, AND THE PREMISE THAT PARTS THEM
+
+| | what it requires of the construction |
+|---|---|
+| **`L1`, stacking** | the reassignment sends the photon bundle to the constant-`τ` family (read off `P15`); that family's leaf-crossing rate **is** the matter congruence's own unit cosmic-time rate (the `§②` identity, `P15` step (v)'s forcing); and **radiation is inherited content read off the clock, never a term that sources the rate** (`ONT-COSMO`) |
+| **`L2`, leaf** | the same object and the same identity, but `H_leaf` in the accumulation — i.e. **radiation gravitating in this one quantity**. It does **not** require reclassifying light as a content process, and must not be argued that way (§③) |
+
+⇒ **The premise the stacking-rate derivation needs and the leaf-rate reading denies is radiation's exclusion from the rate the cross-leaf accumulation is built on.** Nothing else: the two rates differ by that term alone, at every epoch.
+
+⛭ **And it cannot be had as a geometric correction.** `r7614`/`r7615`: radiation put into the cut as its bend **lengthens** the distance to `14397.425` Mpc — *away* from the sky, with the bent rate vanishing at `z = 1123.76`. ⇒ *So the leaf-rate distance is not reachable by bending the cut; it requires the rate itself. The one route inside the geometry goes the wrong way, and that is measured, not argued.*
+
+### ⑤ ⛔⛔ MY READ OF THE ORDER'S FRAMING, WHICH YOU INVITED — AND IT DISAGREES WITH IT ON ONE POINT
+
+The order says *"The corpus holds the stacking rate on **one identification**, that the distance light accumulates is a comoving separation read across the leaves"*, and orders that identification reread. **That premise is out of date by two revisions, and rereading it cannot move the answer:**
+
+* **`r7607` established the identification does NOT force the rate.** Its flatness half is rate-neutral (`D_M = χ` at `Ω_k = 0` for either rate) and its three-metric half carries no rate at all. `r7580`'s own title says it: *"the identification does not force the stacking-rate distance"*.
+* **`r7612` then derived the rate from somewhere else** — the reassignment's photon-family identification plus the chart identity of §②. ⇒ *The identification fixes **which length** the distance is. It has not fixed **which rate** since `r7607`.*
+
+⇒ **So the thing to reread is not the identification. It is `ONT-COSMO`'s exclusion of radiation from the rate**, which is where the stacking assignment now rests and which the sky is pushing against. *Rereading the identification would be rereading a clause that no longer carries the weight — and finding it sound, as `r7607` already did, would leave the question exactly where it is.*
+
+### ⑥ AND WHERE I THINK THE DATA ACTUALLY POINT — AT A LENGTH, TO HALF A PER CENT
+
+The two distances differ by **`0.498 %`** (`14011.46` against `13941.63`; `r7580`'s registered arm Ⓔ measured `−0.4984 %`). That half per cent is what moves the full-range confrontation from an **unreachable `276.4`** to **`186.135`, level with the control's `186.007`**.
+
+⇒ ⛔ **So the datum is not selecting the radiation term. It is selecting a length, and it is selecting it to half a per cent.** The radiation term is **one** way to supply that half per cent — it happens to be the one the two-rate rule makes available — but the fit constrains `D_M`, not `Ω_r`'s role in the rate. *Anything that shortens the light-path distance by about half a per cent at fixed `r_s` would do the same work.*
+
+⌗ **Which is why I would not read the sky as an argument about the identification, and would be cautious about reading it as an argument for radiation gravitating either.** On the present numbers it is an argument that **the construction's light-path distance is long by half a per cent**. ⇒ *The honest next question is what else in the construction could supply half a per cent in `D_M` at fixed sound horizon — and whether anything does so by requirement rather than by adjustment, which is the criterion `P15` `sec:scope` holds its own debts to. That is `69`'s to rule and I open no row for it.*
+
+### ⑦ WHAT I HAVE NOT DONE
+
+* ⛔ **I have not drafted a leaf-rate derivation**, because §④ shows the foundations do not support one: the identity in §② is the chart's, and a leaf-rate accumulation would have to deny it or deny radiation's exclusion from the rate. Order item ④'s first branch does not open.
+* ⛔ **I have not computed anything**, so no registration was owed; every figure is quoted and sourced. Had I needed one number of my own, the `PREDICTION.md` would have come first.
+* ⛔ **No row is opened**, and I have not re-pointed or re-worded any printed sentence. `P6`, `P7` and `P18` carry the open framing you restored at `r7749`, and nothing here asks you to move it back.
+
 ## ⛔⛔ `r7747+cc66` — **THE DRIVING DOES NOT CARRY IT, AND WHAT IS LEFT IS ESSENTIALLY ALL OF IT. ROW TWO FIRES AT EVERY ENVELOPE WINDOW, SO NO SENTENCE IS DRAFTED**
 
 *Registered at `r7747+cc66.0` and pushed before a line of the computation existed; the `0.30`/`0.70` licences were set there and are not moved. **No row is opened**, as ordered.*
