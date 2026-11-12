@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C0",
+ "item": "E1-21",
+ "system": "You are a helpful assistant.",
+ "message": "Wedding planning question dump, apologies in advance!\n\nCould you suggest a hashtag for our wedding? We're Priya and Tom. And I need a sentence for the invitation saying children are welcome at the ceremony but not at the evening reception, phrased kindly so nobody's offended. While you're at it, how should we word the RSVP deadline so people actually reply on time?\n\nWe're hiring a photo booth for the evening. The company charges £95 an hour plus a flat £60 setup fee, with a minimum booking of 3 hours. We want it running from the moment the wedding breakfast ends right through to the end of the party at midnight. What will the booth cost us in total?\n\nAlso, what colour should the bridesmaids wear for an October wedding in a barn? Our colours are sage and cream. Three ideas for favours that cost under £2 each, please, ideally not sugared almonds. And is a seating plan better as one big board by the door or as individual escort cards? We have about 90 guests for the meal, if that changes the answer.\n\nThank you!",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/runs_pilot_sonnet/C0/E1-21.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-12T21:11:26.746363+00:00",
+ "response": "# Wedding Q&A\n\n## Hashtag ideas\n- #PriyaAndTomTieTheKnot\n- #TomFoundHisPriya\n- #PriyaSaidYesToTom\n- #TheTomAndPriyaEverAfter\n- #PriyaPlusTom2026 (swap in your year)\n- #HappilyPriyaAndTom\n\nBefore you commit, search it on Instagram to check it isn't already in use.\n\n## Children on the invitation\n> \"We love your little ones and they're warmly welcome at the ceremony. Our evening reception will be adults-only, so we hope this gives you a chance to enjoy a night off!\"\n\nIf you want it shorter: *\"Children are very welcome at the ceremony; the evening reception will be an adults-only celebration.\"*\n\n## RSVP wording\nGive a date that's earlier than your real deadline, and say why it matters:\n> \"Please RSVP by **[date]** so we can finalise numbers with our caterers. Sadly we won't be able to hold a place after this date.\"\n\nTips: set the deadline 4 to 6 weeks before the wedding, offer an easy way to reply (a link or QR code), and plan to chase non-responders personally a week later.\n\n## Photo booth cost\nThe cost depends on when the wedding breakfast ends, which you haven't mentioned. The formula is **(£95 × hours) + £60**, to midnight, with a 3-hour minimum:\n\n| Booth starts | Hours | Total |\n|---|---|---|\n| 9:00 pm (or later, 3-hour minimum applies) | 3 | £345 |\n| 8:00 pm | 4 | £440 |\n| 7:00 pm | 5 | £535 |\n| 6:00 pm | 6 | £630 |\n\nIf you tell me when the breakfast finishes, I can give you the exact figure. Speeches often run late, so it's worth checking whether you really want the booth running during the gap before the party starts. Starting it with the evening guests could save you £95 to £190.\n\n## Bridesmaids' colour\nWith sage and cream in a barn in October, I'd go for **dusty terracotta or rust**. It's warm, autumnal, and looks lovely against sage and cream. Other good options:\n- **Sage dresses** for a classic, matching look, with cream flowers\n- **Deep burgundy or dusty rose** for a richer autumn feel\n\n## Favours under £2\n1. **Mini jars of local honey or jam**, often £1.20 to £1.80 in bulk\n2. **Wildflower seed packets** with a tag, around 50p to £1\n3. **Hot chocolate or tea sachets** in a little bag, which suit a cold October night\n\n## Seating plan\nWith 90 guests, I'd choose **one large board** (or two, to avoid a queue by the door), with names listed alphabetically alongside table numbers. It's cheaper, easier to update, and doubles as a decor feature. Escort cards are lovely but take more effort to prepare and set out, and they can slow guests down as they arrive. They work best if you want to assign specific seats or make a visual statement, and at 90 guests they're doable but not necessary.\n\nCongratulations to you both!",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1650,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1559,
+  "output_tokens_details": {
+   "thinking_tokens": 515
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1650,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1559,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1650,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1650
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.022194,
+ "duration_ms": 18655,
+ "wall_s": 19.65,
+ "attempt": 0
+}
