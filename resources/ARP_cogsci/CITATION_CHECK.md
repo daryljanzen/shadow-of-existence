@@ -17,7 +17,18 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 2 — collaborative completion and related practices
 
-Lerner 1991, Lerner 1996, Hayashi 2003, Helasvuo 2004, Kim 2003, Heritage and Watson 1979, Schegloff 1982, and the uncited attribution "Lerner and Hayashi are explicit that anticipatory completions terminate at the TCU boundary".
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Lerner 1991 | Abstract (Cambridge); full text not retrieved | One speaker can complete another's utterance-in-progress; proposes the compound TCU format, which projects where speaker change should occur. | Unchanged: "a family of practices in which one speaker syntactically and semantically completes a TCU begun by another". |
+| Lerner 1996 | Bibliographic record and the EMCA wiki's survey of anticipatory completion; chapter not retrieved | On conditional entry into another speaker's turn space; listed among the core works on anticipatory completion. | Unchanged (cited only as one of the anticipatory-completion works). |
+| Hayashi 2003 | Publisher's description; book not retrieved | Joint construction of a single grammatical unit by two speakers in Japanese, and the actions it accomplishes. | Unchanged: "documented analogous structures in Japanese". |
+| Helasvuo 2004 | Abstract | Co-constructions in Finnish; completions at constituent boundaries, within constituents and within words; concludes that syntax is shared. Develops rather than coins "shared syntax". | Unchanged: "developed the construct of shared syntax". |
+| Kim 2003 | Seoul National University repository record; article not read | Title and venue confirm a study of collaborative completion in Korean. | Unchanged: "extended the analysis to Korean". |
+| Heritage and Watson 1979 | EMCA wiki entry on formulations, which summarises the chapter; chapter not retrieved | Formulations state the gist of prior talk or draw out its upshot (by deletion, selection and transformation) and make agreement or disagreement relevant next. | Formulations give the gist or upshot and hand the floor back for confirmation; an upshot can begin to extend. Was: "summarise a prior turn … do not necessarily pivot". |
+| Schegloff 1982 | Full text (conversationanalysis.org) | Continuers such as "uh huh" display the understanding that an extended unit is in progress, precisely by passing the opportunity to take a full turn; Schegloff argues against reading them as signals of attention. | Continuers pass up a full turn and display only that understanding. Was: "provide evidence of attention". |
+| "Lerner and Hayashi are explicit that anticipatory completions terminate at the TCU boundary" (uncited) | No source states this. The literature's account (the EMCA wiki's survey; a 2021 study of anticipatory completion in Mandarin) is that the completed TCU's next position belongs to the original speaker, who ratifies or rejects it: Lerner's (2004) collaborative turn sequence. | Unsupported as written. | Replaced by that account, citing Lerner 2004 (added). The same citation now supports "returns the floor" in §3.4. |
+| Lerner 2004 (added) | Bibliographic record and secondary descriptions; chapter not retrieved | The collaborative turn sequence: completion, then the original speaker's ratification or rejection. | New. |
+| Sidnell 2012 (added) | Abstract and record | Other-continuation: a speaker extends another's TCU after possible completion (host plus continuation). | New paragraph in §3.4 distinguishing ARPs from other-continuations, since a reviewer from conversation analysis would raise it. |
 
 ## Batch 3 — alignment and grounding
 
