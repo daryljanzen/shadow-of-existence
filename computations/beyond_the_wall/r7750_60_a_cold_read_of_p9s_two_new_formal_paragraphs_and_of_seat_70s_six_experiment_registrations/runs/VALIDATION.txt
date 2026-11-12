@@ -1,0 +1,84 @@
+r7750 (60) -- VALIDATION
+
+Range validated: 03e0e4ef5^..c84da5591 (this revision's own three commits).
+Previous validated range, for the scope comparison: 572b4f497^..a94fe54eb (r7748).
+Comparison is by SORTED DIFF of the receipt lists, not by matching counts.
+
+Files this range changes (6): FOR_66_FROM_60.md and the five files of this
+receipt's own directory.  No paper, no receipt, no generated file, no other
+seat's work and no registration is touched, so no derived file needed
+regenerating and no INDEX row was minted by this range.
+
+-------------------------------------------------------------------------------
+1. SCOPES  (scripts/receipt_scope.py --range 03e0e4ef5^..c84da5591)
+
+   reads       0   vs prev   0   SET-IDENTICAL (sorted diff empty)
+   tolerance  14   vs prev  14   SET-IDENTICAL (sorted diff empty)
+   suite      66   vs prev  82   SUBSET: every entry of the 66 is in the 82;
+                                 the sorted diff has no line present now and
+                                 absent before.  The 16 absent entries are the
+                                 ones r7748 pulled in through the paper and
+                                 figure files it touched and this range does
+                                 not touch (L283/T1, S42-S48, P03, and seven
+                                 P15_CR_cosmology receipts).
+
+   Nothing enters scope that the previous range had not already validated.
+
+-------------------------------------------------------------------------------
+2. FAST JOB  (bash scripts/run_fast_job.sh)
+
+   RED, naming exactly five checks and no others:
+
+     check_branches
+     check_pdf_current
+     check_quote_pins
+     check_pins_adjudicated_on_mint
+     check_marker_transposition
+
+   These are the five structural reds of a shallow clone.  The set is exactly
+   the established one; no sixth name appears.
+
+-------------------------------------------------------------------------------
+3. SCOPED SUITE  (scripts/run_all_receipts.py --from <suite scope> --jobs 4
+                  --timeout 600)
+
+   66 receipts run: 51 pass, 15 fail, 0 over timeout, 532s wall.
+
+   The 15 failing are SET-IDENTICAL to the established reference set that
+   fails on a pristine origin/main:
+
+     L255/E1   L259/D1   S10   S17   S19   S21   S3   S54
+     S5   S6   S8   S9   C65   C71   C79
+
+   No receipt fails that was not already failing, and none that was failing
+   now passes.
+
+-------------------------------------------------------------------------------
+4. THREE-BUILD TOLERANCE PRE-SWEEP
+   (scripts/sweep_tolerances.py --probe tA | tB --threads 4
+    | tC --threads 2 --coretype Prescott, then --compare)
+
+   tA vs tB   VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not
+                       measured on both builds
+              BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision
+                       floor (< 1e-13), counted and not flagged
+
+   tA vs tC   VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not
+                       measured on both builds
+              BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision
+                       floor (< 1e-13), counted and not flagged
+
+   Both verdicts are read from the VERDICT line and its records, not from the
+   exit code: rc=2 is the UNMEASURED bit, and 0 flagged with the unmeasured
+   bit set is the normal reading here.
+
+   The 7 unmeasured receipts, on both comparisons, are the established seven
+   and a subset of the 14 in tolerance scope:
+
+     L255/E1   L259/D1   S5   S6   S8   C71   C79
+
+   No site is flagged on either comparison.
+
+-------------------------------------------------------------------------------
+Nothing in this range is measured by a receipt outside the 66 that ran, and
+nothing in it changed a tolerance.  No re-run was spent on this revision.
