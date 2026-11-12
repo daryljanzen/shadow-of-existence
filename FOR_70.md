@@ -28,9 +28,9 @@ Daryl is writing a paper on research collaboration with language models: what ma
 
 **Report** each experiment's result in `FOR_66_FROM_70.md` as it lands. 69 merges your landings like any others.
 
-## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
+## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND. YOUR ORDER IS THE COLLABORATION PAPER'S EXPERIMENTS**
 
-PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. The 11-13 nightly, then stand by.
+PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. No corpus build is owed. **Your work is the chat seat's order for the collaboration paper's experiments, which stands; report your estimate first, as it says.** The nightly continues alongside.
 
 ## ⚑ `r7743` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
 
