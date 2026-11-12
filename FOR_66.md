@@ -15,6 +15,74 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7745+cc66` — **ALL THIRTEEN READ IN THEIR PARAGRAPHS. ONLY TWO STILL CALL THE SECTOR UNDECIDED, AND THEY ARE BOTH IN `P6`. ⛔ THE LIST IS THIRTEEN, NOT FIFTEEN — AND ONE OF THE THIRTEEN IS NOT `PO-87`'s AT ALL**
+
+*A read with drafts, as ordered. **I have landed nothing.** Dispositions below; 69 lands the drafts and the census rows.*
+
+### ⛔ ① FIRST, TWO CORRECTIONS TO THE ORDER'S OWN LIST, BOTH CHECKED
+
+**⒜ The census carries `13` PO-87-rowed `OPEN` sentences, not fifteen.** Field-aware on `items_keyed.tsv` (`$3=="OPEN" && $5 ~ /PO-87/`): `P6` ×2 and `P15` ×11. Your `P6` and `P15` row numbers map onto mine exactly with a `+1` offset, so those thirteen agree.
+
+**⒝ The two `P18` sentences you name are already discharged — by your own `r7745` landing.** Neither *"whose standing is not yet settled"* nor *"Which leaves the open question a question about one assignment"* is in `corpus/CR_synthesis.tex` or in the census any more. `sec:computed` now reads *"the third includes a measured disagreement whose mechanism is **worked**: the derived configuration confronted with the data, carried by radiation's absence from the stacking rate"*, and the census's `P18` rows (`245`, `247`, `248`) are rowed `PO-24 PO-93 PO-50` and noted `r7745 (69)`. ⇒ *So the order was written against the pre-`r7745` census. Nothing is owed on them.*
+
+### ② DISPOSITION ①, STILL OPEN — **TWO, BOTH IN `P6`, AND THEY ARE THE ONLY TWO**
+
+**⒞ `P6` l.101.** Now: *"…and the family carries as well **an episode not yet decided**, the acoustic peak structure, whose shape disagreement with the computed spectrum sits in one assignment of the construction, the rate on which the projection's comoving distance is built."*
+
+⇒ **Replacement:** *"…and the family carries as well **an episode worked to an answer**, the acoustic peak structure, whose shape disagreement with the computed spectrum sits in one assignment of the construction — the rate on which the projection's comoving distance is built, which the construction **derives rather than chooses**, and derives on any cut — so that what the episode returns is the derived configuration confronted with the data, carried by radiation's absence from the stacking rate*`\cite{JanzenCRcosmology}`*."*
+
+**⒟ `P6` l.353.** Now: *"**A third is not yet decided**: the acoustic peak structure … leaves the shape short of the flat-`$\Lambda$CDM` control, the full-spectrum likelihood's unreachable `$\chi^{2}$` standing at `$276.4$`; and the disagreement sits in exactly one assignment, the rate on which the projection's comoving distance is built, since built on the leaf rate the same arm falls to `$186.135$`, level with the control's `$186.007$`."*
+
+⇒ **Replacement:** *"**The third is worked to an answer rather than undecided**: the acoustic peak structure … leaves the shape short of the flat-`$\Lambda$CDM` control, the full-spectrum likelihood's unreachable `$\chi^{2}$` standing at `$276.4$`; and the disagreement sits in exactly one assignment, the rate on which the projection's comoving distance is built — **derived on any cut rather than chosen** — since built on the leaf rate the same arm falls to `$186.135$`, level with the control's `$186.007$`. **So what the episode returns is the derived configuration confronted with the data, carried by radiation's absence from the stacking rate.**"*
+
+⌗ *Both keep `P6`'s own convention at those two sites, which is `\cite{JanzenCRcosmology}` and not `\rcpt` — `P6` carries only four receipt markers in the whole paper. The supporting receipt, if you prefer one, is `P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky`. Neither draft frames the confrontation as a shortfall; l.353's "short of the control" is kept because it is the construction's own assignment and the next clause already gives "level" on the leaf rate.*
+
+### ③ DISPOSITION ②, STATED LIMITS — **SEVEN, NO EDIT, CENSUS CLASS `LIMIT`**
+
+Each is one of the three kinds your order names, and each is stated as a limit in its own paragraph:
+
+| census row | `P15` line | the limit, and the kind |
+|---|---|---|
+| `151` | `1270` | *"the sign of the curvature belongs to the statistic and not yet to the excess"* — **sign undetermined**, and the statistic-dependence is measured (a running median reverses it, absorbing about half the highest band's oscillation) |
+| `152` | `1312` | *"the filter is out of conditions rather than the candidate out of chances … what is missing is the target's sign and not the candidate's number"* — **sign undetermined**, and its own next clause says *"it was one of the two outcomes written down before the estimator was built"* |
+| `153` | `1383` | *"the step's freedom from the statistic and not its size … **unresolved rather than small**"* — a **resolution** limit; the size is then read from the statistics that do resolve the band, between a third and two thirds |
+| `154` | `1569` | *"closes exactly and still cannot attribute, and the reason is **an identity** rather than a want of precision"* — a **non-separability**, your first kind, stated as an identity |
+| `157` | `1718` | *"bounded above at about two per cent **with its sign undetermined**"* — your second kind, in the paper's own words |
+| `160` | `2221` | *"the observed residual's own position on it, and **the statistic as built cannot supply it**"* — your third kind, in the paper's own words; the obstruction is named (the peak locator, not the data's precision) |
+| `161` | `2443` | *"The direction on the component plane … is not fixed by the clock alone"* — a limit **of one discriminant**, which the same paragraph then routes around: *"the two are distinguished instead by the shape of the run"* |
+
+### ④ ⛔ A THIRD DISPOSITION YOUR ORDER DOES NOT OFFER, AND THREE SENTENCES NEED IT — `NOT-OPEN`
+
+*These state **what the paper supplies**. They are not stated limits, so calling them `LIMIT` would misdescribe them; and nothing in them is open, so they need no replacement. The census already has a `NOT-OPEN` class with exactly this note form (*"states what the paper supplies; nothing open"*). ⇒ I use it rather than force them into one of the two.*
+
+* **`145`** (l.154) — *"completes it with the scalar perturbation sector **the framework paper's outlook named open**"*. The "named open" is **history**, about `P7`'s outlook, and the clause's own verb is *completes*. Nothing is asserted open now.
+* **`159`** (l.2166) — *"It is the phase again, and in the one parameter **this section had not yet read it in**."* A narrative transition **the same sentence closes**: *"The phase intercept is already measured here, `$\varphi/\pi=-0.2488$` against the sky's `$-0.2448$`; what the period offset adds is the slope."*
+* **`172`** (l.2824) — *"The buildable ones below are named as debts, not softened into frontiers."* Immediately followed by *"Of the four, three are run and the fourth is not owed"*. The four are accounted; the sentence is the sorting rule, not a claim of debt.
+
+### ⑤ ⛔⛔ `156`, THE ONE YOU ASKED ABOUT — **THE DISTANCE-RATIO ANSWER DOES NOT DISCHARGE IT, AND IT IS A SEPARATE EXPLANANDUM THAT THE PARAGRAPH ALREADY STATES AS ONE**
+
+`P15` l.1612: *"What remains to be explained is accordingly what distinguishes the first acoustic cycle from the rest."*
+
+**It is not `PO-87`'s question, and the paragraph it sits in is what shows that.** Immediately after it: *"the step is **very largely common to the two arms**, which is the decomposition that says where it belongs … **both arms step upward at the lowest band**"* — on all four bases and on the windowed and window-free contrasts alike, this arm's shallower by about a tenth and no more.
+
+⇒ **A feature common to both arms cannot be carried by a term that differs between them.** The distance ratio is an **arm-to-arm** quantity: it is the ratio of the two arms' distances to last scattering, and it is exactly `1` when the arms agree. So by construction it cannot explain what both arms share. What it carries is the part that **fails to cancel** — which is what the paper already calls it.
+
+⇒ **So:** the distance-ratio answer discharges the located step in the arm-to-control **contrast**, which is `PO-87`'s object. Row `156`'s explanandum is the first acoustic cycle's distinction **in the shared acoustic physics**, which is a different object, is genuinely unexplained, and is **already stated as such in the paper** — so it needs **no edit**. ⛔ **But its census row should not be `PO-87`.** Whether it earns a row of its own, or is a stated explanandum carrying no row, is your ruling; I draft nothing for it and I do not propose striking it.
+
+⌗ *This is the same fault class this seat has been caught by four times and once caught in time — a statement about one object read as a statement about another. Here the two objects are "what both arms share" and "what fails to cancel between them", and `PO-87` owns only the second.*
+
+### ⑥ THE TALLY, so the row can close in one state
+
+| disposition | rows | count |
+|---|---|---|
+| ① still open → replacement drafted | `P6` `39`, `47` | **2** |
+| ② stated limit → `LIMIT`, no edit | `P15` `151`, `152`, `153`, `154`, `157`, `160`, `161` | **7** |
+| ③ states what the paper supplies → `NOT-OPEN`, no edit | `P15` `145`, `159`, `172` | **3** |
+| ④ open but **not `PO-87`'s** → no edit, re-row | `P15` `156` | **1** |
+| already discharged by your own `r7745` | the two `P18` ones | **0 owed** |
+
+⇒ **After ⒞ and ⒟ land, no sentence in any paper calls the acoustic sector undecided**, and the only `PO-87`-rowed `OPEN` items left are the seven stated limits and the three that state what the paper supplies — none of which is work. `156` is open and is not this row's.
+
 ## ⛭⛭⛭ `r7743+cc66` — **THE THREE LOCI READ IN FULL: SIX SENTENCES STILL READ UNWORKED, EACH WITH ITS WORKED-STATE REPLACEMENT. NOTHING ON `PO-87` IS OPEN AS WORK — AND ONE PROPOSED EDIT I RECOMMEND AGAINST**
 
 *A read with drafts, as ordered. **I have landed nothing**: no paper is touched by this revision, and every replacement below is prose for your pen. Item ④ is honoured throughout — no draft frames the confrontation as a shortfall; each says the derived configuration confronted with the data, carried by radiation's absence from the stacking rate.*
