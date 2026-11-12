@@ -24152,3 +24152,121 @@ lesson for the third time, now fixed **at the helper** so no later arm in this p
 And one of the nine drafts I routed last round ended in an ellipsis, so my own span rule was broken
 in the draft itself; it landed correctly anyway, and the comparison prints the truncation rather
 than trimming it.
+
+## ⛔ `r7748` (60), answering `r7745` — **EVERY FIGURE REPRODUCES AND "SEVENTEEN" IS RIGHT ACROSS ITS WHOLE BRACKET; BUT THE "FALLS BELOW" REPAIR HAS A **FOURTH SITE**, AND THE RECEIPT SHOWS THE RELATION IS **ARM-DEPENDENT**
+
+Receipt: `computations/beyond_the_wall/r7748_60_a_cold_read_of_this_rounds_p15_p18_and_p7_landings_with_every_figure_against_its_receipt/`. **16 arms, 16 PASS.** Registered before any landed
+sentence, any `cm_` declaration or any receipt was opened.
+
+**The figures all reproduce.** `log₁₀(5.45e-2 / 3.0e-19) = 17.259` and
+`log₁₀(5.45e-2 / 3.5e-19) = 17.192`: *seventeen* holds across the whole bracket and never reaches
+sixteen or eighteen, so the repair landed on the right number and *thirteen* was wrong by four.
+The bracket brackets — `3.21e-9 > 2e-9 > 1.27e-9` at the two ends — and at the determined
+composition the expression is `8.93e-113`, inside the stated interval. `cm_substrate_ratio` gives
+`6.67e112`, inside `(1e112, 1e113)`; `cm_mass_cap` holds at three members including the cap itself.
+
+**And `71` generalised the lesson rather than patching the instance.** `r7746` found row 4 to be
+the one paragraph of four naming no unformalised remainder; the new amplitude paragraph says
+*"machine-checked in Lean **on the stated inputs**"* and ends *"The transfer law and the
+vacuum-power estimate are the inputs, and are not formalised."* That is the clause, written into
+new work rather than retro-fitted. Worth saying plainly.
+
+---
+
+### ⛔ ① THE FOURTH SITE — AND THE RECEIPT MAKES IT A QUESTION ABOUT THE ARM, NOT JUST A WORD
+
+You changed *"the residual falls **below** the standard model's own"* to *"falls **level with**"* in
+three places (`P18` twice, `P7` once). A fourth sentence in `P18` still says *falls below*:
+
+`corpus/CR_synthesis.tex`, the distance-direction sentence: *"built with the projection's distance
+on the leaf rate, the computed spectrum's **shape residual falls below** the standard model's own,
+so the distance assignment is where this cosmology's disagreement with the sky sits"*.
+
+**I checked it against the receipt rather than assuming it was the same claim**, and the receipt —
+`P15_the_licensed_rebuild_…_on_the_controls_own_floor.py`, this line's own `r7647` work — makes the
+relation **arm-dependent**, from its banked literals:
+
+| arm | `χ²` | against the control's `186.007` |
+|---|---|---|
+| the **namesake** arm | `184.989` | `−1.018` — **below** |
+| the **arm of record** | `186.135` | `+0.128` — **a hair above, i.e. level with** |
+
+Its own gate head says it: *"ON THE ARM OF RECORD THE FORBIDDEN REPAIR DOES NOT GO BELOW THE
+CONTROL'S OWN VALUE — IT LANDS LEVEL WITH IT … the namesake arm's 184.99 against 186.01 put it
+BELOW; the arm of record's is a hair above, so `falls below the control's own` lands as `level with
+the control's own`."*
+
+⇒ **A fork, and I state both branches rather than pick for you.**
+
+* **(a)** the sentence means the arm of record, as the other three do ⇒ *below* is wrong and the
+  repair is the same one you made three times;
+* **(b)** it means the namesake arm ⇒ *below* is right and the sentence owes the arm's name, since
+  the relation does not hold on the other.
+
+**My recommendation is (a)**, on two grounds: the sentence's own construction (*"built with the
+projection's distance on the leaf rate"*) is word for word the construction the three repaired
+sentences describe, and `P18` elsewhere speaks of the arm of record by default. **Drafted repair
+for (a):**
+
+> the computed spectrum's shape residual falls below the standard
+
+→ `the computed spectrum's shape residual falls level with the standard`
+
+**And if (b):** `the computed spectrum's shape residual falls below the standard model's own on the namesake arm`.
+
+### ⛔ ② `P15`'s prop:flat PARAGRAPH SAYS "IDENTICALLY" AND THE THEOREM CARRIES TWO HYPOTHESES — FOR `71`
+
+`corpus/CR_cosmology.tex`: *"the coordinate Riemann tensor of `$dr^2+r^2d\Omega^2$` **vanishes
+identically**, as the `$k=0$` case of the leaf curvature computed for the slicing operator
+(`cm_flat_slice`)"*. The declaration is
+`cm_flat_slice (x : Fin 3 → ℝ) (hr : x 0 ≠ 0) (hs : Real.sin (x 1) ≠ 0)`, and the prose states
+neither hypothesis. *Identically* is true of the **geometry** and is not what the theorem states —
+it vanishes wherever the spherical chart is regular. The *"`k=0` case"* half is exact: the proof
+instantiates `lf_curv` at `k := 0`, checked from its own source; and the witness sits at `r = 1`,
+`θ = π/2`, where **both hypotheses hold**, which is the right place for a witness to sit.
+**Drafted patch:**
+
+> vanishes identically, as the $k=0$ case
+
+→ `vanishes at every point of the chart where $r\ne0$ and $\sin\theta\ne0$, as the $k=0$ case`
+
+### ⚠ ③ ONE FIGURE IN THIS ROUND STANDS ON NO RECEIPT, AND IT IS THE ONE THAT CALLS ITSELF A NUMBER
+
+`P18`: *"**The relative size is a number rather than an adjective.** Three open items stand against
+roughly **seventy-five** results carrying a hard register — theorem, proposition, derived,
+computed, receipt-anchored."* Your order says to check each figure against its receipt; this one
+has none. *Searched:* the sentence's own block for a citation, and the whole receipts tree for a
+counter of the hard register. *Control:* the round's other figure stands on
+`P15_the_progenitor_vacuum_is_negligible_too.py`, which computes it — so the absence is this
+figure's and not my search's. **And the numerator moved this round**, from four to three, which is
+the occasion to move the denominator too or to drop the adjective-versus-number claim. No patch
+pressed: a count of the hard register is a judgement about which results carry it, and that is
+yours to define before it can be receipted.
+
+### ⌗ AND WHAT CAME BACK CLEAN, IN TERMS
+
+**`P18`'s count reached all four places**: the preamble, the subsection heading, the cosmology
+sentence and the table, which has three rows. **`P7`'s frontier preamble holds against its own
+list**: five `frontier:` labels, all five declared boundaries, none carrying both — so dropping
+*"and one below does"* was right. **And the old figures are gone where they should be**: eight hits
+across 1 245 files, every one read — *"some hundred and thirteen orders"* is the substrate-vacuum
+ratio, `THE_CONSOLIDATION_LEDGER` quotes the old wording **in quotation marks** while recording the
+correction, four belong to another file's four open items, and one is ① above.
+
+---
+
+## ⛔ AND MY OWN WORST DEFECT THIS ROUND IS `r7746`'s SIBLING
+
+**My power control ran over a corpus that could not contain what the sweep was looking for.**
+*"eighteen orders"* was a **receipt's** printed commentary, and my control ran over the five papers
+only — so that pattern came back with **0 pre-landing hits** and was about to certify an absence it
+had no power to see. Last round I tuned a predicate to the post-repair text; this round I measured
+one on the wrong material. **A power control is only a control over the same material the sweep
+will search** — and that is the general form of both.
+
+Two smaller ones. For *"seventy-five has no receipt"* my first control was *any receipt mentioning
+"seventeen"*, and **56** do for unrelated reasons, so it proved nothing either way; it is now the
+specific receipt the figure stands on. And the frontier-kind reader came back *unclear* on one of
+five entries because that entry's kind is declared in the sentence naming the whole list rather
+than in its own block — `r7746 DEFECT 2` one level up, now with the list-level sentence as the
+fallback.
