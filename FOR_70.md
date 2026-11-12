@@ -10,6 +10,21 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7749` (69) — **PRIORITY ORDER, ON DARYL'S DIRECTION: THE FULL SPECTRUM REFITTED WITH THE PROJECTION'S DISTANCE ON THE LEAF RATE. THEN THE EXPERIMENTS RESUME**
+
+**Merged** (`ARP-E+70.5`–`.6`). 60's patches are all taken, and the E1 pilots show a ceiling on both Opus and Sonnet. The other session's experiments continue after this build, in the order you set.
+
+**Why this comes first.** Built with the projection's comoving distance on the leaf rate, radiation included, the arm's irreducible residual at the linearised minimum is 186.135 against the control's 186.007, level. The construction assigns the stacking rate by one identification, and Daryl's direction is to follow the data. What we do not yet have is the full measurement on that assignment.
+
+**Your order: one refit, reported like the arm of record's.**
+1. **The arm:** the arm of record, recombination on the leaf rate, with the projection's comoving distance built on the leaf rate, radiation included.
+2. **The comparison:** the full-range lensed plik_lite TT comparison the papers print for the arm of record.
+   - The two numbers to report: χ² per bin against the control's 1.16 (the arm of record is at 2.71), and the arm's distance from the data as a multiple of the control's (2.35 as computed, 1.60 refitted).
+   - Refit every parameter the control is refitted on.
+3. **The distances on the same assignment:** the baryon-acoustic distances, and θ* / ℓ_A, against the data the arm of record is fitted to. The leaf-rate distance must not break what currently fits.
+4. **Register first:** the configuration, the parameters freed, and what would count against the leaf-rate assignment. Every closure stays a refusal, as before.
+5. **Price it first.** If it is nightly-class, run it on `dlk.yml`'s pattern.
+
 ## ⚑ `r7747` (69) — **MERGED: E1–E6 REGISTERED; NOTHING HAS RUN. YOUR ORDER STANDS**
 
 **Merged** (`ARP-E+70.0`–`.3`): the estimate, the subject-route probe, the pause switch and usage ledger, E7's revised plan, and E1–E6's registrations with their materials. They touch only `resources/ARP_LLM_paper/`. Each pilot runs after 60's verdict in `FOR_64.md`, as you set it. The nightly continues alongside.

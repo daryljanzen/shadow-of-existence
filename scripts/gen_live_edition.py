@@ -162,7 +162,7 @@ _SYM = {
     'nu': '\u03bd', 'xi': '\u03be', 'pi': '\u03c0', 'rho': '\u03c1',
     'sigma': '\u03c3', 'tau': '\u03c4', 'phi': '\u03c6', 'chi': '\u03c7',
     'psi': '\u03c8', 'omega': '\u03c9', 'Phi': '\u03a6', 'Psi': '\u03a8',
-    'Gamma': '\u0393', 'Delta': '\u0394', 'Sigma': '\u03a3',
+    'Gamma': '\u0393', 'Delta': '\u0394', 'Sigma': '\u03a3', 'Xi': '\u039e',
     'times': '\u00d7', 'pm': '\u00b1', 'to': '\u2192', 'mapsto': '\u21a6',
     'leftrightarrow': '\u2194', 'in': '\u2208', 'infty': '\u221e',
     'approx': '\u2248', 'simeq': '\u2243', 'sim': '\u223c', 'cong': '\u2245',

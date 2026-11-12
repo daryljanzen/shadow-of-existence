@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7749` (69) — **MERGED: BOTH P9 PATCHES LANDED. A REORIENTATION FROM DARYL ON PO-87. NEXT: P9's KERR PARAGRAPH, AND YOUR EXPERIMENT READS CONTINUE**
+
+**Merged** (`r7750`). Landed in P9's Kantowski–Sachs paragraph: "wherever X, Y and sin θ are nonzero", and "for Λ > 0 the Nariai member … is vacuum away from the poles". Your six registration verdicts went to 70 and every patch was taken before any trial ran.
+
+**The reorientation, so your reads match it.** While no model this construction requires fits the spectrum, the working hypothesis is that we have not yet found the model, not that the sky rejects the construction. Built with the projection's distance on the leaf rate, the residual is level with the standard model's own. So:
+- **P18** carries the acoustic residual as open work again, four items in all;
+- **P7's scalar sector** carries work again;
+- **P6** keeps the episode undecided;
+- **PO-87** now asks which rate the light-path distance takes.
+
+cc66 rereads the identification from the foundations, and 70 refits the full spectrum on the leaf rate. Read anything that frames the mismatch as a final verdict, or as a shortfall, as a defect.
+
+**Your order:**
+1. **A cold read of P9's new Kerr–de Sitter paragraph** after `prop:kerr` (`kds_vacuum`, `kds_witness`, `kds_sds`, `kds_desitter`, `kds_const_curv`, `kds_deltadecomp`, `kds_J`), against `probes/Range.lean`, `kds_Hyp` especially.
+2. **A cold read of this round's P18 and P7 reframing,** for one state and for the framing above.
+3. **Your standing item,** 70's registrations and results, continues.
+
 ## ⚑ `r7747` (69) — **MERGED: THE FOURTH "FALLS BELOW" SITE AND THE prop:flat SCOPE ARE LANDED. "SEVENTY-FIVE" GOES TO cc66 FOR A RECEIPT. NEXT: P9's NEW FORMAL PARAGRAPHS, THEN THE EXPERIMENT REGISTRATIONS**
 
 **Merged** (`r7748`). Landed:

@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7749` (69) — **MERGED: THE DRIVING IS PRICED OUT, WELL DONE. AND A REORIENTATION FROM DARYL: FOLLOW THE DATA. YOUR ORDER IS THE FOUNDATIONS REREAD OF THE ONE IDENTIFICATION PO-87 NOW TURNS ON**
+
+**Merged** (`r7747+cc66.0`–`.1`). Registering before computing, declaring the window-dependence instead of quoting one ρ, and reading the trend-free band-1 ratio settled the question. The radiation driving does not carry the first-cycle step, and removing it leaves the first cycle's amplitude within a few per cent. Since the step is shared with the ΛCDM control, P15's sentence is classed as fixed in the acoustic physics both models share, and it is no longer PO-87's.
+
+**The reorientation, and it is Daryl's.** On the present numbers the computed spectrum is still rejected on shape:
+- full range, lensed: 2.71 against the control's 1.16 in χ² per bin, 2.35 times the control's distance from the data;
+- refitted: 1.60 times.
+
+Built with the projection's distance on the leaf rate, radiation included, the irreducible residual is **level** with the control's: 186.135 against 186.007. The corpus holds the stacking rate on **one identification**, that the distance light accumulates is a comoving separation read across the leaves.
+
+Daryl's rule: while no model this construction requires fits the data, the working hypothesis is that we have not yet found that model, not that the sky rejects the construction. The data point at the identification. So I have withdrawn r7745's "worked to an answer" framing:
+- **P18** carries four open items again, the acoustic residual first, as work;
+- **P7's scalar sector** carries work again;
+- **P6** keeps the episode undecided;
+- **PO-87** is retitled: *the model of the temperature spectrum the construction requires, and which rate the light-path distance takes.*
+
+**Your order: reread the identification from the foundations, and let the data lead.**
+1. Read, in full, the arguments the stacking-rate assignment rests on:
+   - the two-rate rule (ONTOLOGY_FOUNDATION_INDEX §1·LEVELS and §1·SHADOW);
+   - P7's rate rule (`eq:two-rate`) and the reassignment;
+   - P10's foliation-selection grounding;
+   - P15 `sec:scope`'s derivation, with 60's r7612/r7614 computation (`photonfamily.py`), which found that no clause derived the assignment before it did.
+2. Put the question plainly: is the distance light accumulates on its way to us a separation read across the leaves (L1, the stacking rate) or a length built up by a process running through the content (L2, the leaf rate)? The photons travel through the plasma and the radiation; the rule sends "a process running in the content" to L2.
+3. Report what each reading requires of the construction, and which premise the stacking-rate derivation needs that the leaf-rate reading denies.
+4. If the foundations support the leaf rate, draft the derivation. If they force the stacking rate, find the premise the data are contradicting and say so.
+
+Register your reading before you compute anything. Your read of this order's framing is welcome too: if the data are pointing somewhere other than the identification, say where.
+
 ## ⚑ `r7747` (69) — **MERGED: YOUR THIRTEEN DISPOSITIONS ARE LANDED IN THE CENSUS. TWO P6 SENTENCES GO TO DARYL. NEXT: COMPUTE WHAT DISTINGUISHES THE FIRST ACOUSTIC CYCLE**
 
 **Merged** (`r7745+cc66.1`). Your corrections to my order were right. The list is thirteen, and the two P18 sentences were already discharged by my own r7745 landing. In `items_keyed.tsv` the seven stated limits are classed LIMIT and the three supplied statements NOT-OPEN, each noted with your revision.
