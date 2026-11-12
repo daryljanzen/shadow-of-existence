@@ -1,0 +1,91 @@
+====================================================================================================
+`r7741` ** THE `g`/`chi` DIVISION OF THE LOCATED STEP IS SET BY A GRID MATCHING NOTHING FIXES, SO THE
+DISTANCE RATIO IS THE ONLY ATTRIBUTION THE ARMS' OWN ARRAYS DETERMINE. **
+
+The acceptance law reads this arm's visibility `g` as a function of the comoving distance `chi`, and the
+two arms' quantities live on DIFFERENT conformal-time grids.  Reading one arm's `g` against the other
+arm's `chi` therefore requires MATCHING the two grids, and nothing in the theory fixes the matching.
+
+⛭ ** WHAT IS MEASURED HERE IS A ONE-PARAMETER FAMILY OF MATCHINGS, NOT TWO RIVAL CHOICES. **  A matching
+is parametrised by the scalar `ratio` that rescales the borrowed `chi` map about the visibility peak.
+`ratio = 1.0` is the identity, so it is exactly 70's own index matching -- asserted below at `0`, in both
+directions, rather than argued.  Across `ratio = 1.000` to `1.155`, the span the two arms actually
+differ by, the distance map's share of the `l`-varying variance falls `95.06 -> 58.41 -> 26.70 -> 7.10`
+per cent and the visibility's rises to meet it, strictly monotonically, crossing near `1.07`.
+
+⇒ *** At one member of the family NEITHER quantity carries three fifths of it.  So the division is not
+merely convention-dependent: it passes continuously through a regime in which the question has no
+answer, driven by a scalar the physics does not fix. ***
+
+⛭ ** WHAT SURVIVES IS WHAT NEEDS NO MATCHING. **  `r7733`'s `93.6` per cent is read on `r7729`'s four
+arrays, whose cross term scales the SOURCE arm's OWN `x0` by a scalar, so no `eta` grid of one arm ever
+meets the other's.  It is constant along this whole family by construction.  ⇒ *The distance ratio is
+the attribution these arrays determine; any finer division between `g` and `chi` is a choice.*
+
+⛔ ** WHAT THIS RECEIPT DOES NOT CLAIM. **
+ * ** Not that 70's index matching is wrong. ** It is declared, reasoned, and its own author flagged the
+   consequence first (`r7737+70.1`).  What is wrong is reading a `g`/`chi` attribution off any single
+   member of the family without saying it is one.
+ * ** Not that the acceptance law's prose needs changing. ** `P15` speaks of the visibility being
+   `15.5` per cent wider IN `chi` -- the visibility read as a function of `chi`, with no `g`/`chi` split
+   in it.  69 ruled at `r7741` that the law's prose stands, and this receipt does not reopen it.
+ * ** Not that a matching-independent finer split is impossible in principle ** -- only that it would
+   have to be CONSTANT along this family, and that nothing finer than the distance-ratio decomposition
+   is.  The `rs` leg is nearly so (`0.66`-`0.77` per cent) and is reported, not claimed.
+ * ** Nothing here is a null test or a significance. ** Every number is a variance share.
+
+COMPUTES: scope.
+ * ** THE INPUT IS A COMMITTED ARTEFACT, AND THE `G` BUILDS ARE UPSTREAM OF IT. **  Each member of the
+   family costs two `G_l(k)` builds at about `33` minutes -- `698` multipoles x `1450` wavenumbers x
+   `560` nodes of `spherical_jn` -- so the family is some four hours and cannot run in a receipt's
+   budget, and 70's arrays live at a `refs/ci` ref in a scratchpad rather than in the tree.
+   `computations/beyond_the_wall/r7741_cc66_the_pairing_continuum/build_continuum.py` reduced them to
+   the `l`-vectors the verdict is read off (`89 436` bytes) and recorded every input's sha256, which
+   this receipt asserts before computing anything.
+   ⛔ *So this receipt verifies the REDUCTION -- every share, ratio, monotonicity and crossing below is
+   recomputed here from those vectors, and the `ratio = 1.0` identity is recomputed from the maps
+   themselves at full precision.  It does NOT re-derive the `G` builds.  Said plainly because a receipt
+   that reduces a committed array can look as though it verified the array.*
+ * ** NO `PREDICTION.md` GOVERNS `r7741`, AND THAT IS DELIBERATE. **  Every figure here was measured,
+   reported and MERGED at `r7739+cc66.2`-`.8` before `r7741` was written; this revision pins published
+   numbers and drafts prose for them, so there is nothing left to fit.  The registration that governs
+   these figures is `r7739`'s own `PREDICTION.md`, whose second row fired.
+ * NOTHING IS FITTED anywhere in this receipt, and no cosmological parameter is read.
+ * ** COST, MEASURED ALONE ON THIS CONTAINER AND NOT ESTIMATED: see the run record; the arithmetic is
+   `l`-vector reductions over `698` points, so it is seconds, and this receipt is NOT declared long. **
+
+====================================================================================================
+    [PASS] ⛭ `r7741` ** ① THE COMMITTED ARTEFACT IS THE ONE BUILT FROM 70's RECORDED ARRAYS ** ⇒ *its own sha256 is asserted here, and it carries the sha256 of every input it was reduced from, so the chain from 70's `refs/ci` artefacts to these vectors is checkable without them being in the tree*
+             artefact sha256 f793acc2c466ba352c2df4313a32c48627b4bf458d3b047dfc943d8efcd2c03c
+    [PASS] ⛭ `r7741` ** ② AND 70's TWO ARTEFACTS ARE THE OBJECTS 70 RECORDED ** ⇒ *the same two sha256s `r7739` asserted, so this receipt and the merged verdict read the same arrays*
+             r7737_grid.npz ok; r7737_vis.npz ok
+    [PASS] ⛔ `r7741` ** ③ 70's INDEX MATCHING IS THE `ratio = 1.0` MEMBER OF THE FAMILY, EXACTLY ** ⇒ *this is what makes the four readings FOUR POINTS ON ONE CURVE rather than two rival conventions, and it is the claim the drafted sentence rests on, so it is asserted at zero and not argued*
+             max abs deviation over both directions 0.000e+00, required exactly 0
+    [PASS] ⛭ `r7741` ** ④ THE FAMILY'S THREE NON-TRIVIAL SCALARS ARE THE SPANS THE ARRAYS THEMSELVES OFFER ** ⇒ *the grid span, the g-weighted sigma in `chi`, and 70's own declared `W`; bracketed rather than picked, because the `span over the visibility's support` has no unique definition here*
+             1.060251, 1.104473, 1.155482
+
+      the curve, recomputed here from the committed vectors:
+          ratio 1.000000   chi  95.06 %   g   4.23 %   rs  0.71 %
+          ratio 1.060251   chi  58.41 %   g  40.81 %   rs  0.77 %
+          ratio 1.104473   chi  26.70 %   g  72.52 %   rs  0.77 %
+          ratio 1.155482   chi   7.10 %   g  92.24 %   rs  0.66 %
+    [PASS] ⛭⛔ `r7741` ** ⑤ THE DISTANCE MAP'S SHARE OF THE `l`-VARYING VARIANCE FALLS `95.06`, `58.41`, `26.70`, `7.10` PER CENT ACROSS THE FAMILY ** ⇒ *the printed range: from about nineteen twentieths down to about one fourteenth, which is the figure the drafted sentence states*
+             95.06, 58.41, 26.70, 7.10
+    [PASS] ⛭⛔ `r7741` ** ⑥ AND THE VISIBILITY'S SHARE RISES TO MEET IT: `4.23`, `40.81`, `72.52`, `92.24` PER CENT ** ⇒ *so the division does not merely shift, it INVERTS -- each quantity in turn takes the overwhelming majority of the structure, under matchings nothing distinguishes*
+             4.23, 40.81, 72.52, 92.24
+    [PASS] ⛭ `r7741` ** ⑦ STRICTLY MONOTONE IN THE MATCHING SCALAR, IN BOTH LEGS AND IN OPPOSITE DIRECTIONS ** ⇒ *a monotone dependence on an unfixed scalar is what makes this a CONTINUUM and not a disagreement between two readings; the direction was registered at `r7739` as a falsifiable expectation BEFORE the two outer members were built*
+             chi 95.06 > 58.41 > 26.70 > 7.10;  g 4.23 < 40.81 < 72.52 < 92.24
+    [PASS] ⛔ `r7741` ** ⑧ AT THE `grid span` MEMBER NEITHER QUANTITY CARRIES THREE FIFTHS OF THE STRUCTURE ** ⇒ *** the regime where the question has NO answer, which is the strongest form of the finding: the curve does not jump between two attributions, it passes through having neither ***
+             chi 0.5841 and g 0.4081, both below 0.60
+    [PASS] ⛭ `r7741` ** ⑨ THE TWO LEGS CROSS INSIDE THE FAMILY, BETWEEN `1.060` AND `1.105` ** ⇒ *the crossing is bracketed by two measured members rather than interpolated to a value, because the curve is sampled at four points and a crossing read off four points is a bracket*
+             chi-g is +0.1760 at 1.060251 and -0.4582 at 1.104473
+    [PASS] ⛭ `r7741` ** ⑩ THE COMB PERIOD'S SHARE IS NEARLY CONSTANT ALONG THE FAMILY, `0.66`-`0.77` PER CENT ** ⇒ *reported because the ruling turns on what is CONSTANT along the curve: this leg nearly is, and is small; the distance-ratio decomposition exactly is. Neither is a claim that the `rs` leg is matching-free -- it is a measured near-constancy*
+             min 0.66 %, max 0.77 %
+    [PASS] ⛭⛔ `r7741` ** ⑪ A PURE SCALAR STRETCH OF THE MAP IS NEARLY INVISIBLE TO THIS NORMALISED ACCEPTANCE RATIO, AND THE MECHANISM IS ASSERTED RATHER THAN ARGUED ** ⇒ *`A_l` is divided by its own integral, so a pure rescaling of `chi` is a reparametrisation of wavenumber that CANCELS in the ratio, leaving only its mismatch against the comb phase, which does not rescale. Scale the comb period by the same scalar and the leg collapses to round-off.* ⛔ *This is why the scalar term that carries `98.3` per cent of the UN-NORMALISED ladder's distance leg cannot be read across to this object, and why no substitute on this arm can speak for that one.*
+             collapse factor 3.329e-05 (required < 1e-3), xs 1.0128706133
+    [PASS] ⛭⛔ `r7741` ** ⑫ AND THE CLAUSE THIS ONE REFINES IS STILL IN THE PAPER, ASKED OF ITS `\rcpt` KEY AND ITS FIGURE RATHER THAN OF ITS WORDING ** ⇒ *the drafted sentence says the finer division is unfixed WHILE that figure stands; if the `93.6` per cent clause leaves `P15`, this sentence loses the thing it is a qualification of and has to be written again rather than inherited.* ⛔ *Pinned on the key and the number because pinning 69's prose would fail on a reword that changed nothing -- the defect class this corpus ratchets against, which my own first draft of this gate committed.*
+             r7733 rcpt key cited True, figure present True
+
+====================================================================================================
+  OK    12 of 12 gates;  0 failure(s)
+====================================================================================================

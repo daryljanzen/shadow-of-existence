@@ -15,6 +15,47 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7741+cc66` — **BOTH ITEMS DONE: THE CONTINUUM IS RECEIPTED (12 GATES, PINS VERIFIED FAILABLE) AND THE SENTENCE IS DRAFTED AND IN `P15`. `PO-87` IS READY TO CLOSE**
+
+*Ruling taken as given: no `R2` build, the law's prose stands, and `PO-87` closes on `r7733`'s pairing-free figure. Nothing below reopens any of it.*
+
+### ① THE RECEIPT — `12` of `12`, and the input is a committed artefact rather than a scratchpad ref
+
+`receipts/P15_CR_cosmology/P15_how_the_step_divides_between_the_visibility_and_the_distance_map_is_set_by_the_grid_matching_so_only_the_distance_ratio_is_determined.py`
+
+| gate | what it asserts |
+|---|---|
+| ①② | the artefact's own `sha256`, and the `sha256` of all five arrays it was reduced from — including the two 70 recorded, the same two `r7739` asserted |
+| ③ | **70's index matching IS the `ratio = 1.0` member, at exactly `0`** in both directions — the claim the sentence rests on |
+| ④ | the three non-trivial scalars: `1.060251`, `1.104473`, `1.155482` |
+| ⑤⑥ | the four `χ` shares `95.06`/`58.41`/`26.70`/`7.10` and the four `g` shares `4.23`/`40.81`/`72.52`/`92.24`, each by comparison |
+| ⑦ | strictly monotone in the scalar, both legs, opposite directions |
+| ⑧ | **at the `grid span` member neither quantity carries three fifths** (`0.5841`, `0.4081`) |
+| ⑨ | the legs cross between `1.060` and `1.105` — bracketed by two measured members, not interpolated |
+| ⑩ | the `rs` leg nearly constant, `0.66`–`0.77 %` |
+| ⑪ | the scalar-stretch mechanism, by the collapse to `3.329e-05` when the comb period is scaled with it |
+| ⑫ | the `93.6 %` clause and the distance-ratio naming are still in `P15` — if either leaves, this sentence is rewritten, not inherited |
+
+**The pins are verified FAILABLE, not just present:** perturbing the distance-map leg by half a per cent reddens ①, ⑤ and ⑥ — three of twelve — and restoring the artefact returns `12` of `12` at the identical `sha256`.
+
+⛔ **And what the receipt does NOT verify is in its own `COMPUTES:` header.** Each member costs two full projections at ~`33` min, so the family is ~four hours and sits **upstream**: `build_continuum.py` reduced 70's arrays to the `ℓ`-vectors the verdict is read off (`89 436` bytes, committed) and recorded every input's `sha256`, which the receipt asserts before computing. ⇒ *The receipt verifies the REDUCTION. Said plainly, because a receipt that reduces a committed array can look as though it verified the array.*
+
+⌗ **No `PREDICTION.md` governs `r7741`, deliberately.** Every figure was measured, reported and merged at `r7739+cc66.2`–`.8` before `r7741` was written, so there is nothing left to fit; the registration that governs them is `r7739`'s, whose second row fired. Stated in the receipt's header so the absence reads as a decision rather than an omission.
+
+### ② THE SENTENCE, placed where you said — immediately after the `93.6` per cent clause
+
+> \emph{How that structure divides between this arm's visibility and its distance map, however, is not something the arrays decide}: the two are read on grids in conformal time that have to be matched to each other, and across matchings that nothing in the theory fixes the distance map's share of the `$\ell$`-varying variance runs from about nineteen twentieths down to about one fourteenth, passing through a matching at which neither it nor the visibility carries three fifths of it; so the ratio of the arms' distances to last scattering, which is read on each arm's own array and needs no matching at all, is the attribution these arrays determine`\rcpt{…}`.
+
+**Every figure in it is a word, not a decimal, and each word's decimal is pinned:** nineteen twentieths is `95.06 %`, one fourteenth is `7.10 %`, three fifths is the `0.60` line that `58.41`/`40.81` falls under. ⇒ *Written in words because the range is the point and a printed decimal would invite reading one member as the answer — which is the error the sentence exists to prevent.*
+
+⛭ **What it deliberately does not say:** it does not name either quantity as the carrier, in any matching; it does not call the index matching wrong; it does not touch the acceptance law's prose; and it does not restate `r7737`'s withdrawn claims. It is a qualification of the `93.6` per cent, and it says only what is constant along the curve.
+
+### ③ WHAT ELSE MOVED, so you can gate it
+
+Appendices regenerated (`make_all_appendices.py`); **`P15`'s PDF rebuilt** — `337` pages, `0` TeX errors — since both its source and its generated appendix moved; `INDEX.md` row inserted at the END of the `P15` block, `9` pipes / `8` columns, graded `✔`, with its figures in plain words and ASCII. ⌗ *The claim cell's leading glyphs render as `\ (` and its `**` pass through literally — the same as the merged `r7733` row and the other `390` such entries, so it is the generator's convention and I have not touched it.*
+
+**Full local batch and the receipt's own cost are in the PR.** ⇒ `PO-87` closes on your ruling; nothing here waits on 70.
+
 ## ⛔⛔⛔ `r7739+cc66` — **ITEM ① IS READ AND IT LANDS ON ITEM ③: THE `g`/`χ` SPLIT IS A CONVENTION, AND NOT EVEN A CHOICE BETWEEN TWO PAIRINGS — IT IS A CONTINUOUS FUNCTION OF ONE ARBITRARY SCALAR THAT SPANS THE WHOLE RANGE. DO NOT LAND THE CLOSING SENTENCE**
 
 *The three outcomes were fixed in `PREDICTION.md` at `r7739+cc66.1`, before 70's grid artefact existed. The second row fired. Nothing below moves a licence, and `r7733`'s printed figure is untouched.*
