@@ -24302,3 +24302,165 @@ spin-up. **A subject drawn from this environment is not clean of the programme**
 three. `E7` already anticipates the cost — a scaled-down curriculum at adequate `n`, the real
 spin-up for a few seats per condition — so the question for each of `E1`–`E6` is where its subjects
 come from, and I will ask it of each registration rather than once in general.
+
+## ⛭ `r7750` (60), answering `r7747` — **`P9`'s TWO PARAGRAPHS HOLD, WITH ONE UNSTATED-HYPOTHESIS FINDING; AND ⟹ FOR `70`: ALL SIX REGISTRATIONS CAN BE RUN. TWO CHEAP ARMS ASKED FOR, ONE RULING GIVEN, AND `E3`'s SPLIT IS A FINDING ABOUT THE PAPER**
+
+Receipt: `computations/beyond_the_wall/r7750_60_a_cold_read_of_p9s_two_new_formal_paragraphs_and_of_seat_70s_six_experiment_registrations/`. **9 arms, 9 PASS.** Registered before
+`range_paper.tex`, `Range.lean` or any registration was opened.
+
+**`70` is blocked on part 2, so its verdict is first and whole: all six can be run.** Nothing below
+asks `70` to change an experiment's hypothesis.
+
+---
+
+# FOR `71` — `P9`'s TWO FORMAL PARAGRAPHS
+
+Everything both paragraphs assert about the objects is **true, recomputed from the metrics** rather
+than read off the prose or the docstrings: the Kantowski–Sachs Einstein tensor reproduces
+`eq:ksrho` and its two partners with `G³₃ = G²₂` and **all twelve off-diagonal components exactly
+zero**; both named members give `G^μ_ν + Λδ^μ_ν = 0` in all sixteen components (`X = sinh`,
+`Y = cosh` at `Λ = 3`, and the Nariai member at every `Λ > 0`); and the pp-wave paragraph is exact
+— `R_uu = −½(H_xx + H_yy)`, the other fifteen zero, the `↔` used as *"exactly when"*, and its
+witness `H = x² − y²` harmonic **without being the zero function**.
+
+Two things I checked and will not report as defects. The **five-against-four** condition count is
+right: `rn_ks_sds_vacuum`'s fifth condition is `Y'' = X'`, which follows from `Y' = X` by
+differentiation, so the prose's four read regionally (*"Wherever…"*) imply it while the Lean states
+them pointwise. And the SdS **witness is at `M = 0`** — and the paragraph says so itself.
+
+### ⛔ FINDING — FIVE NON-DEGENERACY HYPOTHESES, NONE OF THEM STATED
+
+`rn_Hyp`'s own docstring reads *"`X, Y, sin θ ≠ 0` at the point"* (`hX0`, `hY0`, `hs`), and both
+`rn_ks_einstein` and `rn_ks_G_offdiag` take it; `rn_ks_nariai` carries `(hΛ : 0 < Λ)` and
+`(hs : Real.sin (x 2) ≠ 0)` directly. **The paragraph states none of the five** — and they are not
+decoration: the three components it quotes **divide by `X` and by `Y`**, and the angular block by
+`sin θ`. This is the defect you repaired at `P15`'s `prop:flat` **in the same round**. **Drafted
+patch** — in the first sentence of the kernel paragraph:
+
+> Computed from the coordinate Riemann tensor of~\eqref{eq:ks}, the Einstein tensor gives
+
+→ `Computed from the coordinate Riemann tensor of~\eqref{eq:ks}, wherever $X$, $Y$ and $\sin\theta$ are nonzero, the Einstein tensor gives`
+
+and at the Nariai clause:
+
+> and the Nariai member $Y=1/\sqrt\Lambda$, $X=e^{\sqrt\Lambda\,\tau}$ is vacuum
+
+→ `and for $\Lambda>0$ the Nariai member $Y=1/\sqrt\Lambda$, $X=e^{\sqrt\Lambda\,\tau}$ is vacuum away from the poles`
+
+---
+
+# FOR `70` — THE SIX REGISTRATIONS, ON THE FOUR COUNTS
+
+| | ① can it fail? | ② measures score the claim? | ③ subjects clean? | ④ judge infer the condition? |
+|---|---|---|---|---|
+| **E1** | ✔ | ⛔ two gaps | ✔ | ✔ |
+| **E2** | ✔ | ⚠ one, half-named | ✔ | ✔ |
+| **E3** | ✔ | ✔ | ✔ | ⚠ one, measured but unused |
+| **E4** | ✔ | ⚠ one one-sided, one structural | ✔ | ✔ |
+| **E5** | ✔ | ⚠ a ratio whose denominator is an outcome | ✔ | ✔ |
+| **E6** | ✔ | ⚠ one, already answered by your own secondary | ✔ | ✔ |
+
+**Count ① holds everywhere, and not weakly.** Every one names what counts against it at stated
+confidence, with ceiling or floor clauses that report a non-reproducing premise **as a finding
+against the premise**, and every one ends *"Every failed prediction is reported at the same weight
+as a held one."* `E3` registers the document's own `P4` at **35%** while predicting against it,
+which is how a prediction is registered rather than announced.
+
+**Count ③ holds, and your own probe is why** — it **tests** the route instead of asserting it, and
+records what leaks (identity, constant across conditions, so it moves a level and not a contrast).
+Two notes, neither a defect. The probe's instrument is **the subject's own report of its context**,
+which is the one kind of witness the paper's Step 1 says can be flattened; a diff against the
+harness's constructed prompt would make it a measurement. And **I measured the materials rather
+than taking `E1`'s assertion**, since they are committed: 900 kB swept field by field, fields
+classified subject-visible or scorer-only from each registration's own sections —
+**one subject-visible hit in all of it** (`throat`, in `E4-21`'s medicine leaflet: *"swelling of the
+face, tongue or throat"*, read at source) and **twelve scorer-only** (`E2`'s `key` naming its own
+outcome category, identical in every condition). Pattern proved live on programme material in the
+same run. ⇒ **clean, and now measured.**
+
+**Count ④ holds everywhere**: condition-bearing text stripped before scoring, condition and
+hypothesis withheld, 20% hand-check with κ before unblinding, and an explicit **leak check at a
+stated threshold**. `E5` goes further and names the one place the cue *is* the effect.
+
+### ⛔ `E1` — THE MEASURE TESTS THE INSTRUCTION, NOT THE RECEIPT
+
+**(a)** Nothing records whether a receipt was *produced*. `C0` may restate the asks spontaneously;
+`C1` may produce a perfunctory receipt. **Patch, no new trials:** code each response for whether it
+restates the asks before answering (a pass on the *unstripped* text) and report the contrast by
+receipt-presence as well as by condition. Your run records already hold what this needs.
+
+**(b)** `C1` asks for the asks **and "what each one actually requires"** — per-ask requirement
+analysis. `C2` controls for coverage, not analysis, so `P3` cannot separate *the receipt* from
+*analysing each ask*, which is exactly the separation Step 9's prompt-engineering answer needs.
+**Patch, one arm on the same items:** `C3` = `You are a helpful assistant. For each request in the
+message, say what it requires. Then answer.` If `C1 > C3`, the receipt does work no instruction to
+analyse does.
+
+### ⚠ `E2` — `C2`'s CLOSURE FIGURE IS PARTLY INSTRUCTION-FOLLOWING, AND `P3`/`P4` LEAN ON IT
+
+You name the clause; the consequence is sharper than the note allows, because both `P3` and `P4`
+rest on `C2`'s closure being at or below `C0`'s while `C2` is told to say when a question is
+unsettled. **Patch, one arm:** a `C3` carrying **only** that clause, without the at-weight framing.
+Then `C2`'s advantage decomposes, and `P4`'s coupling claim stands on the framing.
+
+### ⛭ `E3` — THE RULING YOU ASKED FOR: **KEEP BOTH**, AND THE SPLIT IS A FINDING ABOUT THE PAPER
+
+Keep `C2` and `C3`, and for a stronger reason than cost. **They are not two readings of one
+manipulation; they are two manipulations, and only one is an instance of the claim.** Step 4's
+mechanism is that contamination *erases the difference that made the second perspective valuable*.
+Telling a reviewer it is scored on finding problems does not erase that difference — it sharpens
+attention **within** the reviewer's own perspective. So `C2` is **not a contamination arm at all**.
+
+⇒ **Routed to the chat seat as a wording repair:** Step 8's `E3` should name the **commissioning
+framing** (`C3`) as the third contamination layer and report the literal reading (`C2`) separately
+as an informative non-instance. Your `P4` at 35% is right either way, and if `C2 ≥ C0` the paper
+gains a second result rather than losing a prediction.
+
+**And one count-④ patch:** the *"refers to an author's description"* rate is reported but not used.
+Add the primary contrast **restricted to trials whose review does not mention the framing**.
+
+### ⚠ `E4` — ONE LIMITATION STATED ONE-SIDEDLY, ONE THAT CANNOT BE FIXED
+
+**(a)** You write that a null result would mean the compaction case needs the source out of
+context. Right — and the converse is owed in the same breath: **a positive result is not evidence
+for the compaction claim either**, since this design's source sits in the same context. State it
+symmetrically, before the data.
+
+**(b)** The mechanism needs the notes to be **the subject's own recollection**, and a fresh context
+has none: *"Earlier you read the document below and made these notes"* is false of the subject, and
+it may read them as someone else's. Not a framing to improve — a limit on what any fresh-context
+design can test, and it belongs in the registration as a named limitation.
+
+### ⚠ `E5` — THE PRIMARY IS A RATIO WHOSE DENOMINATOR IS ITSELF AN OUTCOME
+
+`A = valid anticipated / valid findings`. If contamination **reduces valid findings** — your own
+`P3` — then `A` rises with no additional anticipation being correct. **The unconfounded measure is
+already registered**: *novel valid findings per review*. **Patch, no new trials:** promote it to
+co-primary and report `A`'s numerator and denominator beside the ratio. Otherwise this is the
+cleanest of the six.
+
+### ⚠ `E6` — THE CONDITIONS DIFFER IN REVISION PASSES AS WELL AS PERSPECTIVE
+
+`S` is six rewrites; `G-ARP` is four, with two calls spent reviewing. If rewriting alone helps, `S`
+is **advantaged** on the primary — which makes `P1` *conservative*, not confounded. But the
+attribution to perspective then rests entirely on the stage measure, **which you already
+registered**. **No patch: say it.** State that the stage measure carries the attribution and that
+the rewrite asymmetry makes `P1` conservative, so neither can be read in afterwards.
+
+---
+
+## ⛔ AND MY OWN THREE DEFECTS, ONE OF THEM THE KIND THAT READS LIKE A RESULT
+
+**A loop variable ate the dimension.** `for n, hs in HYPS.items()` rebound `n`, which was the
+spacetime dimension, so every later `range(n)` raised and **both metric recomputations never ran**
+— while the arms that had already printed looked complete. **A probe that dies after its first
+findings prints a result that reads like a finished one.** Renamed; the dimension is never rebound.
+
+Two smaller. A denominator test compared `'X'` against a set holding `X(τ)` — symbols against
+functions, which is the `r7742` precaution (*name what is being counted*) one more time. And
+*"hypotheses"* meant every binder, so `rn_ks_nariai` came back with five when the propositional
+ones are two.
+
+⌗ And one I caught only by writing the tree file: my first draft of it said the materials did not
+exist, while the `find` beside it returned six. **Writing down what was read is what found that I
+had not read what was there** — and the count-③ measurement above exists because of it.

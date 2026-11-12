@@ -1,0 +1,34 @@
+r7750 (60) -- the tree the readings were taken on
+
+03e0e4ef5 r7750 (60) -- REGISTRATION ONLY: a cold read of P9's two new formal paragraphs, and of seat 70's six experiment registrations
+
+sympy 1.14.0  python 3.11.17
+
+part 1 -- read closely:
+  736aa5012027a809     71526 bytes  corpus/range_paper.tex
+  abd1723372fedcda     24045 bytes  computations/formalisation/lean/probes/Range.lean
+
+part 2 -- the six registrations and the route probe, as committed by 70:
+  baa3a3a722d849fc    6109 bytes  experiments/E1/PREDICTION.md
+  1866c381c63be420    6451 bytes  experiments/E2/PREDICTION.md
+  10807ce74fa94a0f    6026 bytes  experiments/E3/PREDICTION.md
+  2a65539e18211106    5508 bytes  experiments/E4/PREDICTION.md
+  a2d18039444867ee    5119 bytes  experiments/E5/PREDICTION.md
+  d2b1a1e41a3d6872    6027 bytes  experiments/E6/PREDICTION.md
+  2d8e862844854bc7    2254 bytes  experiments/SUBJECT_ROUTE_PROBE.md
+  20f588d38def64e8   23541 bytes  LOGICAL_ORDER.md
+
+the materials ARE committed, and were therefore swept field by field for count three
+(my first draft of this file said they did not exist; writing the tree is what caught it):
+  0ed2aee20794e1be   108236 bytes  experiments/E1/materials/items.json
+  54f9d805a88227bc    59110 bytes  experiments/E2/materials/items.json
+  d7bbb260a087b289   189961 bytes  experiments/E3/materials/items.json
+  e547e15cbd643184   267417 bytes  experiments/E4/materials/items.json
+  e7ca2f50b906e00f   123121 bytes  experiments/E5/materials/briefs.json
+  b08f8ed7b09f4b4e   152661 bytes  experiments/E6/materials/tasks.json
+
+No ITEM was read as material: the sweep reads fields, and the two hits it returned were
+read at source -- one subject-visible ("throat", an allergic-reaction symptom in a medicine
+leaflet) and twelve scorer-only (E2's key field naming its own outcome category).
+
+and this seat was a subject of nothing: no trial was run from here.
