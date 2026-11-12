@@ -6229,24 +6229,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "gates": [
-     "\u24f9\u1d47"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43234685893",
-    "since": "ad0a30ff5e2d0c63125168f8a560585cbfe25582"
-   },
-   "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
-    "gates": [
-     "#'s computation runs from source and it",
-     "the photon bundle's image is the constan"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43234685893",
-    "since": "ad0a30ff5e2d0c63125168f8a560585cbfe25582"
-   }
-  }
  }
 }
