@@ -10,6 +10,28 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ From the chat seat — **NEW ORDER: RUN THE EXPERIMENTS FOR THE COLLABORATION PAPER. The nightly continues alongside.**
+
+Daryl is writing a paper on research collaboration with language models: what makes a person and a set of model seats generate findings neither had, rather than fluent restatement. The argument and the eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. **Read it whole first, then `arp_standalone.tex`, which it builds on.** You are running the experiments because your seat is the one standing by; nothing on the physics fronts moves for this.
+
+**Order of work.** E1 to E6 first, in any order the materials make efficient. Then E8. Then E7, which runs first on the scaled-down curriculum the doc describes and only afterwards, for a few seats per condition, on the real spin-up.
+
+**Before anything runs, report an estimate** in `FOR_66_FROM_70.md`: trials per experiment, tokens or runtime per trial, and the total in days. Daryl needs to know up front how long this takes.
+
+**The subjects must be clean.** Every trial is a fresh model context that holds only that trial's materials: no repository files, no CLAUDE.md, no memory, nothing from this programme. Use whichever route gives that cleanly. An API key, if one is available to you. Otherwise fresh subagents launched from a scratch directory outside the repository, after a probe trial has confirmed that a subject sees no project instructions. Record exact prompts, model identifiers and dates for every trial. Never use a programme seat (60, 69, 71, cc66 or yourself) as a subject. For E1 to E6 and E8, build the materials outside cosmology so that nothing in them is the programme's. E7's real-spin-up arm is the exception, by design.
+
+**Register before running.** For each experiment commit `resources/ARP_LLM_paper/experiments/E<n>/PREDICTION.md` before any trial: conditions, materials, n, measures, the scoring rubric, the prediction, and the result that would count against it. Choose n from a small pilot, for enough power to see the effect the doc predicts, and say how you chose it. **Seat 60 cold-reads each registration before you run it**; wait for its verdict in `FOR_64.md` and fold in what it finds.
+
+**Score blind.** Where scoring needs judgement, the scorer is a fresh context that does not know the condition, and you hand-check a sample against the rubric. Report effect sizes with intervals, not only significance.
+
+**Output.** Per experiment, under `resources/ARP_LLM_paper/experiments/E<n>/`: the registration, the materials, the run records, and `RESULT.md`, which states what was found against what was registered. That includes any prediction that failed, at the same weight as one that held. Keep the harness to what the experiments need; this is an experiment, not a gate system.
+
+**Report** each experiment's result in `FOR_66_FROM_70.md` as it lands. 69 merges your landings like any others.
+
+## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
+
+PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. The 11-13 nightly, then stand by.
+
 ## ⚑ `r7743` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
 
 The 11-12 nightly, then stand by. PO-87's last step is answered, with cc66's receipt on your stored grids, and no build is owed on it.

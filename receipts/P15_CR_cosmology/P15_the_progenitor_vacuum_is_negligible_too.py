@@ -189,8 +189,19 @@ if not (1e101 < AS_OBS / As_vac < 1e106):
 print()
 print("  ** THE COMPARISON IS TWO-STEP AND THE CORPUS HAD IT COMPRESSED INTO ONE (fixed c54.153).")
 print("     The mixing buys 10^8.6 over the PROGENITOR'S OWN bare vacuum; the progenitor's vacuum")
-print("     sits 10^10 above the SUBSTRATE'S; so eighteen orders separate the substrate's vacuum")
+print("     sits 10^1.4 above the SUBSTRATE'S; so ten orders separate the substrate's vacuum")
 print("     from the progenitor's amplified one, and it is still SHORT BY A HUNDRED AND THREE. **")
+_sep = np.log10(As_vac / (LP / alpha)**2)
+print(f"  substrate -> progenitor amplified: 10^{_sep:.2f}")
+if not (9.5 < _sep < 10.5):
+    fail.append("ten orders")
+# Run backwards: the composition at which the vacuum would reach the observed amplitude.
+rho_back = (AS_OBS / (9.0 * (LP / M_nar)**2)) ** (-1.0 / 6.0)
+_gap = np.log10(rho_max / rho_back)
+print(f"  run backwards, the vacuum reaches the observed amplitude at rho = {rho_back:.3g},")
+print(f"  {_gap:.2f} orders below the determined rho {rho_max}  (P15: ~3e-19, seventeen orders)")
+if not (2.5e-19 < rho_back < 3.5e-19) or not (16.5 < _gap < 17.5):
+    fail.append("run backwards")
 print("  The primordial statistics are classical and non-vacuum for the")
 print("  source that actually supplies them, and not only for the substrate that does not.")
 print()

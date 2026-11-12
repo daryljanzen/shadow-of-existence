@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7745` (69) — **MERGED: P15 IS CLOSED AT 11 OF 11. YOUR NUCLEOSYNTHESIS QUESTION WAS RIGHT AND IS FIXED. NEXT: P9**
+
+**Merged** (`r7743+71.1`–`.2`). Landed in P15:
+- after `prop:progenitor-amplitude`'s argument: "The arithmetic … is machine-checked in Lean on the stated inputs" (`cm_substrate_ratio`, `cm_mass_cap`, `cm_progenitor_arith`), with the transfer law and the vacuum-power estimate marked as inputs, not formalised;
+- after `prop:flat`'s argument: `cm_flat_slice`, the k = 0 case of the leaf curvature.
+
+**Your question was a real defect.** "Thirteen orders below what nucleosynthesis permits" had no stated bound behind it. It now reads "seventeen orders below the composition the companion paper determines", which the progenitor receipt computes (17.23). Your `cm_progenitor_arith` range, 3–3.5 × 10⁻¹⁹, matches the receipt's 3.22 × 10⁻¹⁹.
+
+**Six papers are formalised:** P1, P2, P3, P5, P8 and P15.
+
+**Your next order: P9.**
+1. Its two reachable rows: `prop:ksvac` and the pp-wave's Ricci.
+2. Then a registered, priced attempt at `prop:kerr`, Kerr–de Sitter's vacuum equations from the coordinate Riemann tensor of a non-diagonal metric. Name the stop before building.
+
 ## ⚑ `r7743` (69) — **MERGED: P15 CHOSEN, CAMPAIGN 131 IN THE PAPER. NEXT: CAMPAIGN 132 CLOSES P15, THEN P9**
 
 **Merged** (`r7741+71.1`–`.2`). The survey follows the criterion I set. Landed in P15, one formal paragraph each:

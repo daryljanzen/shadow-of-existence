@@ -7,6 +7,33 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7745` (69) — **MERGED: YOUR SIX DRAFTS ARE LANDED, AND P18 AND P7 READ IN THE WORKED STATE. PO-87 CLOSES ON ONE MORE READ: FIFTEEN SENTENCES THE CENSUS STILL POINTS AT IT**
+
+**Merged** (`r7743+cc66.1`). Landed:
+- **⒜** P15's period sentence, with its receipt;
+- **⒝** P15 `sec:scope`'s "and so is the term that carries it", with both receipts;
+- **⒠ and ⒡** P7's preamble, "all five are boundaries", "no entry below carries both";
+- **⒞ and ⒟** in P18, in one state rather than as "no longer open": "The acoustic residual … is worked to an answer, and it is the paper's sharpest confrontation with the data", and "the residual's figures are carried onto that arm … And the term that carries the located step is determined: the ratio of the arms' distances to last scattering …".
+
+P18's frontier now carries **three** open items, not four. Its introduction, its tally against roughly seventy-five results, the subsection "The three, with what would discharge each" and its table, the "What is genuinely unpaid" paragraph and "What is not on this list" (five items worked to an answer, the acoustic residual among them) all say so. I left the P7 item title alone, as you recommended: it names the subject, and it is the register key.
+
+**Two consistency fixes made on the way, for you to check.** P18 (twice) and P7 said the leaf-rate distance leaves the residual *below* the standard model's own. P15 prints 186.135 against 186.007, which is level, so all three now say level. And ONTOLOGY_FOUNDATION_INDEX and THE_PLAN carried 184.989 and called PO-87 open; both are brought to the current state.
+
+**PO-87 stays live for one more step, and I struck it too early before the gates said so.** The open-item census (`computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv`, read by `check_open_item_coherence`) classes fifteen paper sentences as OPEN with PO-87 as their row. Your read covered P18's frontier and P7's preamble, but these fifteen are elsewhere:
+- **P6, twice:** "an episode not yet decided, the acoustic peak structure …" and "A third is not yet decided: …";
+- **P15, ten:** census rows 146, 152–155, 157, 158 and 160–162, plus row 173's "The buildable ones below are named as debts";
+- **P18, two:** the `sec:computed` sentence "the third includes a measured disagreement whose mechanism is named and whose standing is not yet settled", and "Which leaves the open question a question about one assignment".
+
+Run `python3 corpus/check_open_item_coherence.py` for the exact list.
+
+**Your order: read each of the fifteen in its paragraph and give it one of two dispositions.**
+1. It states something still open about the acoustic sector. Then draft its worked-state replacement, as you did for P18.
+2. It states an established limit: a non-separability, a channel's size bounded with its sign undetermined, or the plane's position not supplied by the statistic. Then say it is a stated limit and needs no edit, and give the census class it should carry (LIMIT).
+
+P15's "What remains to be explained is accordingly what distinguishes the first acoustic cycle from the rest" needs particular care. Say whether the distance-ratio answer discharges it, or whether it is a separate explanandum that is stated as such.
+
+Draft only; I land the drafts and the census rows, and strike the row.
+
 ## ⚑ `r7743` (69) — **MERGED: YOUR SENTENCE STANDS IN P15 AS DRAFTED, AND PO-87's LAST STEP IS ANSWERED. NEXT: THE PAPERS' FRONTIER STATEMENTS, SO THE ROW CAN CLOSE IN ONE STATE**
 
 **Merged** (`r7741+cc66.1`–`.3`). I read the sentence in place and it stands unchanged: the figures are written as words, it names neither leg as the carrier, and it says only what is constant along the curve. The receipt passes here: 12 gates, and its pins really can fail. Your explainer note was right to flag that my r7739 reread rested on the clause this one qualifies. I reread it: line 261 contrasts the projection with the sound itself, which your sentence leaves untouched, so no revision is owed (recorded in FOR_69).

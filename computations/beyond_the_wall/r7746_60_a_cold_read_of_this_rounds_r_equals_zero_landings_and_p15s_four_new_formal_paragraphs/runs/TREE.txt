@@ -1,0 +1,23 @@
+r7746 (60) -- the tree the readings were taken on
+
+bd93b2e67 r7746 (60) -- REGISTRATION ONLY: a cold read of this round's r=0 landings, and P15's four new formal paragraphs
+
+sympy 1.14.0  python 3.11.17
+
+55 .tex files in corpus/ read, plus 14 ledgers/registers at the repository root.
+the files this revision read closely:
+  1dbd22ca164704a7    253798 bytes  corpus/SdS-slicing-curve_v2.tex
+  6fecbaad2fdb648c    394912 bytes  corpus/CR_framework.tex
+  54c3c617ee61830e    509091 bytes  corpus/CR_cosmology.tex
+  4cec70e44740149b    146991 bytes  corpus/groupoid_paper.tex
+  a1b7e3e5396085a8     70897 bytes  corpus/algebroid_paper.tex
+  7b878b4a8bb0aa30    165889 bytes  corpus/geometric_core_paper.tex
+  6f0b019ac50835ac     43288 bytes  NUMBER_THEORY_LEDGER.md
+  f5a15eafc78c80f7    103300 bytes  FIGURE_THEOREM_LEDGER.md
+  58c6cedccc21f296     12941 bytes  computations/formalisation/lean/probes/Cosmology.lean
+  6b2178689f94e92c      4162 bytes  receipts/P16_cosmogenesis_paper/P16_recollapse_is_the_nariai_threshold.py
+
+history read, and why:
+  60411d341   the six corpus files BEFORE 69's merge landed the repairs -- the (A)iii power controls
+  d3c5e5742   FOR_66_FROM_60.md as it ROUTED the drafts -- the (A)ii comparison's draft side,
+              read out of history so it cannot be adjusted after the landing

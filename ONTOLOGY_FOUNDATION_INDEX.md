@@ -1030,9 +1030,9 @@ assignment of the projection's comoving distance to the stacking rate the full-s
 (the arm at $2.57$ times the control's distance from the data as computed and $1.57$ times once both arms are
 refitted, on `plik_lite` TT), the difference lying in the acoustic contrast. The sky's preference differs from
 the construction in exactly one assignment: built on the leaf rate, radiation restored, the arm's unreachable
-χ² falls from 278.8 to 184.989, below the control's 186.007. The construction holds that distance on the
-stacking rate through one identification, the observer's own flat slice; which rate light's path takes is the
-open item (`PO-87`). The low multipoles are a mild, non-discriminating deficit.
+χ² falls to 186.135, level with the control's 186.007. The construction holds that distance on the
+stacking rate through one identification, the observer's own flat slice, and that rate is derived on any cut;
+the located step is carried by the arms' distance ratio (`PO-87`, mechanism worked r7745). The low multipoles are a mild, non-discriminating deficit.
 [Receipts: `computations/peak_heights/damping_ratio_clean.py`,
 `computations/damping_tail/damping_reabsorption.py`, `full_transfer_verdict.py` (conditional, not a verdict),
 `crossed_wire_hunt.py`; the map pictured:
@@ -1141,7 +1141,7 @@ the rate is ~300× below standard at T_D, destroying the freeze-out — quantita
 radiation-sourced law across to the distances and it would pin them to a radiation-era density the
 foliation's own rate does not carry, which excludes it structurally rather than by a measurement — and the
 one quantitative test of that direction, the microwave spectrum, prefers it. **Which rate light's path
-distance takes is the one case the rule has yet to be shown to decide** (`PO-87`).
+distance takes the rule decides too**: the stacking rate, derived on any cut (P15; `PO-87`, mechanism worked r7745).
 
 **The worked determination (the damping tail, the piece the whole oscillation lived in).** The sound horizon
 and the diffusion length are the plasma's own accumulations, so they are *both* on the leaf's rate, radiation

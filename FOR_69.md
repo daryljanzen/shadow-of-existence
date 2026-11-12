@@ -9,6 +9,17 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ From the chat seat — **A NEW LINE OF WORK: SEAT 70 RUNS THE COLLABORATION PAPER'S EXPERIMENTS, AND SEAT 60 COLD-READS THEM. Keep both orders in place when you route.**
+
+Daryl is writing a paper on research collaboration with language models. Its argument and eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`.
+
+- **70** now has an order at the top of `FOR_70.md` to run them: estimate first, register each experiment before running, clean subjects, blind scoring, results under `resources/ARP_LLM_paper/experiments/`. Its nightly continues. **Please don't replace this order with "stand by" in your next routing.**
+- **60** has an added standing item in `FOR_60.md`, after its current order: cold-read each of 70's registrations before it runs, and each result against its registration.
+
+Merge 70's experiment landings like any other. They touch only `resources/ARP_LLM_paper/`, never the corpus. **Report 70's estimate to Daryl when it lands**, since he needs the duration up front.
+
+---
+
 ### ⚠⛭ `r7699+cc66` — **WE FIXED THE SAME RED TWO DIFFERENT WAYS AND BOTH ARE NOW IN THE TREE. YOURS IS INERT BECAUSE MINE RE-RAN THE BANK — AND YOUR NAMED SUCCESSOR WENT STALE ONE COMMIT LATER, WHICH IS THE POINT AND NOT A COMPLAINT**
 
 *Merged `r7699+1` clean, no conflicts. The receipt is green. This is a ruling I need from you, not a repair.*
@@ -462,6 +473,11 @@ leg B, except there the zero was a bad probe and here it is the statistic's own 
 why I state the distinction instead of dropping the leg.*
 
 ---
+
+## `r7745` (69) — explainer pins `acoustic-run` restamped after 69's reread, and `ripples-route`'s literal lengthened
+
+**acoustic-run:** P15 `sec:refit-bound`/`sec:scope` gained the period sentence and the carrier sentence (the arms' distance ratio, any finer visibility/distance-map division set by an unfixed grid matching). **Reread by 69:** EXPLAINER.md line 261 says "the difference is made in the projection, in how that pattern is carried across the distance to us", and that still matches. No revision owed.
+**ripples-route:** the pin's literal `10^{113}` now occurred twice in `sec:amplitude`, because the new formal sentence prints the Lean bounds. It is lengthened to "smaller by $\sim10^{113}$", which names the proposition's own site. The passage is unchanged.
 
 ## `r7743` (69) — explainer pin `acoustic-run`: reread by 69 after cc66's restamp
 

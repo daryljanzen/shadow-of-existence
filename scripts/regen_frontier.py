@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         1, 2, 3, None,
+        'r7745 LANDS r7743+cc66, r7743+71, r7746 (60): PO-87\'s mechanism worked in every part; P18 and P7 in that state; the last step is the census\'s fifteen remaining sentences. '
         'r7743 LANDS r7741+cc66, r7741+71, r7744 (60): P15 says the visibility/distance-map division is set by an unfixed grid matching, so the distance ratio is the attribution; the remaining step is the papers\' frontier statements in the worked state. '
         'r7741 LANDS r7739+cc66, r7739+70, r7739+71, r7742 (60): the visibility/distance-map split is a pairing convention, so the distance ratio\'s pairing-free 93.6 per cent is the attribution; P5 closed. '
         'r7739 LANDS r7737+cc66, r7737+70, r7737+71, r7740 (60): the step shows in the acceptance law\'s own swap; P5\'s monodromy and deck group. '

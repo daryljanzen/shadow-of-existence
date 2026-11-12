@@ -117,7 +117,7 @@ found independently.
 A closed dust ball with $\Lambda$ turns around if and only if $A\le2\alpha/3\sqrt3$ — **symbolically
 identical to the Nariai threshold**, which the corpus derives from the horizon cubic's double root. Two
 constructions, no shared step, same number. *A progenitor that can seed a universe is necessarily
-sub-Nariai, which is exactly the regime the slicing construction requires for three horizons; a
+sub-Nariai, which is exactly the regime the slicing construction requires for three horizon roots; a
 super-Nariai ball never turns around and so never reaches a branch point at all.*
 
 ### The interior-to-observed mode map
