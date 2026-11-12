@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
+
+PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. The 11-13 nightly, then stand by.
+
 ## ⚑ `r7743` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
 
 The 11-12 nightly, then stand by. PO-87's last step is answered, with cc66's receipt on your stored grids, and no build is owed on it.

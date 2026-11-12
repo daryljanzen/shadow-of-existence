@@ -38,7 +38,7 @@ assert sp.simplify(cond - nariai) == 0
 print("  ** EXACTLY EQUAL.  The corpus reaches Nariai from the horizon cubic's double root; this")
 print("     reaches it from whether a closed dust ball with Lambda turns around.  No shared step. **")
 print("  => a progenitor that can seed a universe is necessarily SUB-Nariai, which is precisely the")
-print("     regime the slicing construction requires for three horizons.  A super-Nariai ball never")
+print("     regime the slicing construction requires for three horizon roots.  A super-Nariai ball never")
 print("     turns around and so never reaches a branch point at all.")
 
 print()

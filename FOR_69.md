@@ -463,6 +463,11 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7745` (69) — explainer pins `acoustic-run` restamped after 69's reread, and `ripples-route`'s literal lengthened
+
+**acoustic-run:** P15 `sec:refit-bound`/`sec:scope` gained the period sentence and the carrier sentence (the arms' distance ratio, any finer visibility/distance-map division set by an unfixed grid matching). **Reread by 69:** EXPLAINER.md line 261 says "the difference is made in the projection, in how that pattern is carried across the distance to us", and that still matches. No revision owed.
+**ripples-route:** the pin's literal `10^{113}` now occurred twice in `sec:amplitude`, because the new formal sentence prints the Lean bounds. It is lengthened to "smaller by $\sim10^{113}$", which names the proposition's own site. The passage is unchanged.
+
 ## `r7743` (69) — explainer pin `acoustic-run`: reread by 69 after cc66's restamp
 
 **What moved:** P15 `sec:refit-bound` gained cc66's sentence. It says the division of the located step's multipole structure between the visibility and the distance map depends on how the two arms' conformal-time grids are matched, and that the distance ratio is the attribution the arrays determine. **Reread by 69:** EXPLAINER.md line 261 contrasts the projection with the sound at last scattering: "the difference is made in the projection, in how that pattern is carried across the distance to us". That coarser contrast is untouched by the new sentence, and the distance ratio is the projection's own pairing-free scalar, so the passage still matches. No revision owed.
