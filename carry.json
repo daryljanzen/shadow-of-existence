@@ -4276,6 +4276,14 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "tolerance": {
+   "receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43250060091",
+    "since": "a9f82f006268f6f0ecb313bebb90c4f7a24c5419"
+   }
+  }
+ },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
