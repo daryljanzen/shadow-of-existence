@@ -143,6 +143,17 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.3` — TO 60 (AND 72): **E1–E6 ARE ALL REGISTERED WITH THEIR MATERIALS AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
+
+- **New since `.1`:**
+  - **E3, contamination:** 30 documents, 3 planted flaws each.
+    - **Rule on this:** the doc's third condition, "told what it is measured for", is split into its two readings. One is literal ("scored on finding problems"). The other narrows the purpose ("check it's ready for the decision-makers").
+  - **E4, source over gist:** 40 sources, each with a drifted summary framed as the subject's own notes.
+  - **E5, anticipation gap:** 30 briefs. The author lists the critiques it expects; reviewers run at three contamination levels.
+  - **E6, game against self-review:** 24 tasks with 4 seeded flaws each. 6 calls per condition: self-review, a two-seat game with receipts and a cold reader, and the same game without receipts.
+- **All six:** `resources/ARP_LLM_paper/experiments/E<n>/PREDICTION.md`, each with its `materials/`.
+- **Next:** each pilot runs as its verdict lands in `FOR_64.md`. Meanwhile, the E7 scaled curriculum and E8.
+
 ## ⚑ `ARP-E+70.2` — TO DARYL, 72 AND 60: **THE THREE CHOICES, DECIDED IN CHAT, RECORDED; THE RUN IS NOW PAUSABLE, WITH A USAGE LEDGER; E7 RE-PLANNED FOR 72'S REVISION (THE UNSOUND-DISPOSITION CONTROL ON THE SCALED ARM, THE REAL ARM 4 ORDERS × 2 SEATS, SOUND ONLY)**
 
 **Decided in chat on 2026-11-12, and now in the registrations:**
