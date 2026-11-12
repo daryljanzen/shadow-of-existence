@@ -17,16 +17,61 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 2 — collaborative completion and related practices
 
-Lerner 1991, Lerner 1996, Hayashi 2003, Helasvuo 2004, Kim 2003, Heritage and Watson 1979, Schegloff 1982, and the uncited attribution "Lerner and Hayashi are explicit that anticipatory completions terminate at the TCU boundary".
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Lerner 1991 | Abstract (Cambridge); full text not retrieved | One speaker can complete another's utterance-in-progress; proposes the compound TCU format, which projects where speaker change should occur. | Unchanged: "a family of practices in which one speaker syntactically and semantically completes a TCU begun by another". |
+| Lerner 1996 | Bibliographic record and the EMCA wiki's survey of anticipatory completion; chapter not retrieved | On conditional entry into another speaker's turn space; listed among the core works on anticipatory completion. | Unchanged (cited only as one of the anticipatory-completion works). |
+| Hayashi 2003 | Publisher's description; book not retrieved | Joint construction of a single grammatical unit by two speakers in Japanese, and the actions it accomplishes. | Unchanged: "documented analogous structures in Japanese". |
+| Helasvuo 2004 | Abstract | Co-constructions in Finnish; completions at constituent boundaries, within constituents and within words; concludes that syntax is shared. Develops rather than coins "shared syntax". | Unchanged: "developed the construct of shared syntax". |
+| Kim 2003 | Seoul National University repository record; article not read | Title and venue confirm a study of collaborative completion in Korean. | Unchanged: "extended the analysis to Korean". |
+| Heritage and Watson 1979 | EMCA wiki entry on formulations, which summarises the chapter; chapter not retrieved | Formulations state the gist of prior talk or draw out its upshot (by deletion, selection and transformation) and make agreement or disagreement relevant next. | Formulations give the gist or upshot and hand the floor back for confirmation; an upshot can begin to extend. Was: "summarise a prior turn … do not necessarily pivot". |
+| Schegloff 1982 | Full text (conversationanalysis.org) | Continuers such as "uh huh" display the understanding that an extended unit is in progress, precisely by passing the opportunity to take a full turn; Schegloff argues against reading them as signals of attention. | Continuers pass up a full turn and display only that understanding. Was: "provide evidence of attention". |
+| "Lerner and Hayashi are explicit that anticipatory completions terminate at the TCU boundary" (uncited) | No source states this. The literature's account (the EMCA wiki's survey; a 2021 study of anticipatory completion in Mandarin) is that the completed TCU's next position belongs to the original speaker, who ratifies or rejects it: Lerner's (2004) collaborative turn sequence. | Unsupported as written. | Replaced by that account, citing Lerner 2004 (added). The same citation now supports "returns the floor" in §3.4. |
+| Lerner 2004 (added) | Bibliographic record and secondary descriptions; chapter not retrieved | The collaborative turn sequence: completion, then the original speaker's ratification or rejection. | New. |
+| Sidnell 2012 (added) | Abstract and record | Other-continuation: a speaker extends another's TCU after possible completion (host plus continuation). | New paragraph in §3.4 distinguishing ARPs from other-continuations, since a reviewer from conversation analysis would raise it. |
 
 ## Batch 3 — alignment and grounding
 
-Pickering and Garrod 2004, 2013 and 2021, Clark and Schaefer 1989, Clark and Brennan 1991, and the uncited attributions "in Clark's sense", "in Clark's model" and "Alignment as Pickering and Garrod describe it".
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Pickering and Garrod 2004 | Full text (authors' web version) | Alignment at many levels through largely automatic priming; situation-model alignment follows from lower-level alignment. Interactive repair is the externalised mechanism for detecting and fixing misalignment, by reformulation or query. Full common ground is used mainly in times of difficulty. | The cascade description is unchanged. The "two silences" paragraph now acknowledges interactive repair: the account picks out moves that address detected misalignment, but not moves that verify successful alignment. Was: "without picking out specific moves at which alignment is publicly verified". |
+| Pickering and Garrod 2013 | Abstract (Cambridge PDF); the body text was not legible through the fetch | Interlocutors covertly imitate each other and use forward models to predict and monitor upcoming utterances. The abstract says nothing defining alignment as matching predictions. | "Added forward models: interlocutors covertly imitate each other's utterances and use forward models to predict and monitor what is coming". Was: "alignment partly consists in matching predictions". |
+| Pickering and Garrod 2021 | Frontiers book review; Cambridge chapter abstracts; book not retrieved | Shared-workspace framework; dialogue a cooperative joint activity; alignment, simulation, prediction and synchrony; alignment defined as "a property of the relationship between the interlocutors' representations". | Book-length development "as a shared-workspace framework…". Was: "align on and monitor what they have jointly established". Also now cited for the uncited "Alignment as Pickering and Garrod describe it", which reads "a property of the relationship between the interlocutors' representations". |
+| Clark and Schaefer 1989 | Full text | Presentation and acceptance phases; five kinds of evidence, "graded roughly from weakest to strongest": continued attention, relevant next contribution, acknowledgement, demonstration (showing what was understood, for example by paraphrase), display (verbatim repetition). Display is the strongest. | The five kinds listed with their grading; demonstration placed correctly, with only display above it. Was: "Demonstrations … constitute the strongest grade of evidence". |
+| Clark and Brennan 1991 | Full text | The grounding criterion, word for word as the paper uses it; presentation and acceptance phases; positive evidence as acknowledgements, relevant next turn and continued attention. | Unchanged. |
+| "in Clark's sense" (uncited) | Clark and Schaefer 1989 | The receipt as a demonstration of understanding matches their "demonstration". | Unchanged; now backed by the corrected grounding paragraph. |
+| "In Clark's model, withdrawal of acceptance disrupts grounding…" (uncited) | Clark and Schaefer 1989; Clark and Brennan 1991 | Consistent with the acceptance phase and negative evidence; the claim that the model does not distinguish zero from negative participation is the paper's own reading. | Unchanged. |
 
 ## Batch 4 — dominance and withdrawal
 
-Zimmerman and West 1975, West and Zimmerman 1983, Linell, Gustavsson and Juvonen 1988, Itakura 2001, Hancock and Rubin 2015.
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Zimmerman and West 1975 | Secondary summaries (Kollock et al. 1985; a University of California thesis; Psychology Today); chapter not retrieved | Interruption is an entry before a possible transition point, "a deeper intrusion" than overlap; in mixed-sex conversations men made nearly all the interruptions (96 per cent). None of the summaries reports the silences in the chapter's title. | Cited for the asymmetry, and for examining interruption "together with the silences of the party whose turns are cut off" — which the title supports. No longer cited for a withdrawal finding. |
+| West and Zimmerman 1983 | Secondary summaries; chapter not retrieved | Interruption as "a device for exercising power and control in conversation" (p. 103, as quoted). | §2.5 and §3.4 now use their definition and their power-and-control description. The claim that such interruptions "typically redirect rather than extend the topic" is no longer attributed to them; it stands as the paper's own reading of interruption used as control. |
+| Linell, Gustavsson and Juvonen 1988 | A Lund working paper describing the initiative–response model; article not retrieved | A coding method, initiatives and responses, for measuring dominance, flow and coherence. Not a multidimensional framework. | "Developed initiative–response analysis to measure such interactional dominance". Was: "later formalised as multidimensional conversational dominance". |
+| Itakura 2001 | Abstract | Dominance as multidimensional: sequential, participatory, quantitative, with sequential the most significant. Nothing about withdrawal. | Now cited for the multidimensional framework. Was cited for "interrupted or pre-empted speakers withdraw". |
+| Hancock and Rubin 2015 | Secondary report of the study | Speakers of both sexes interrupted more, and used more dependent clauses, when talking with a woman. Nothing about withdrawal. | Now cited for the persisting asymmetry. Was cited for withdrawal. |
+| "A consistent finding across this literature is that systematically interrupted or pre-empted speakers withdraw" | None of the cited sources, as far as they could be read | Unsupported as cited. | Removed. §2.5 now says "Where dominated speakers fall silent or withdraw, the explanation offered is typically…", and the introduction's summary of the tradition now says it describes "how turn-taking rights are violated, by whom, and with what consequences". The mechanism argument and prediction P4 are unchanged; P4 itself is the test of whether withdrawal follows. |
 
 ## Batch 5 — evidence and methods
 
 Templeton et al. 2022, Huang et al. 2017, Koudenburg, Postmes and Gordijn 2011, Shaikh et al. 2024, Jackson and Marsh 1996, Stephens, Silbert and Hasson 2010, Liu et al. 2017.
+
+## Sources to retrieve
+
+These could not be retrieved in full. Each is confirmed as far as the abstract, record or secondary description allows; the entry above says which. With the full text, the citing sentence gets checked word for word.
+
+- Lerner 1991, *Language in Society* 20, 441–458 (abstract only)
+- Lerner 1996, chapter in *Interaction and Grammar*, 238–276
+- Lerner 2004, "Collaborative turn sequences", chapter in *Conversation Analysis: Studies from the First Generation*, 225–256 — **most important: the corrected sentence in §5.3 and §3.4 leans on it**
+- Hayashi 2003, *Joint Utterance Construction in Japanese Conversation* (book)
+- Kim 2003, *Language Research* 39, 147–182
+- Heritage and Watson 1979, chapter in *Everyday Language*, 123–162
+- Pickering and Garrod 2013, *Behavioral and Brain Sciences* 36, 329–347 (body text; only the abstract was legible)
+- Pickering and Garrod 2021, *Understanding Dialogue* (book)
+- Zimmerman and West 1975, chapter in *Language and Sex*, 105–129 — **important: if it reports the interrupted party's silences, the paper can again state withdrawal as a finding, citing the page**
+- West and Zimmerman 1983, chapter in *Language, Gender and Society*, 102–117
+- Linell, Gustavsson and Juvonen 1988, *Linguistics* 26, 415–442
+- Itakura 2001, *Journal of Pragmatics* 33, 1859–1880 (abstract only)
+- Hancock and Rubin 2015, *Journal of Language and Social Psychology* 34, 46–64 (secondary report only)
+- Levinson 2016, *Trends in Cognitive Sciences* 20, 6–14 (confirmed from the institute's press release only)
