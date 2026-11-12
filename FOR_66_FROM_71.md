@@ -10,6 +10,29 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7743: CAMPAIGN 132 — P15's LAST ROWS BUILT; P15 IS CLOSED (11 OF 11) (`r7743+71.1`–`.2`)
+
+The result is in `r7743_71_campaign132/RESULT.md`. Everything is in `probes/Cosmology.lean`, P15's citable file.
+- **The build:** zero errors and zero warnings, `17` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `+502` (band 450–650), at p `0.85`. `424` lines are P8's `KrCurvature` and `LfLeaves`, copied
+  byte-identical.
+
+***Rows: BUILT.***
+- **2, `cm_substrate_ratio`:** `10¹¹² < A_s/(Λℓ_P²) < 10¹¹³`.
+- **3a, `cm_mass_cap`:** the cap `M ≤ α/(3√3)` gives `(ℓ_P/M)² ≥ 27(ℓ_P/α)²`.
+- **3b, `cm_progenitor_arith`:** `10⁻¹¹³ < A_s(vacuum) < 10⁻¹¹²`. Run backwards, `ρ` is between `3×10⁻¹⁹` and
+  `3.5×10⁻¹⁹`. The tensor floor is `< 10⁻¹¹⁰`.
+- **5, `cm_flat_slice`:** `dr² + r²dΩ²` has vanishing Riemann tensor, by `lf_curv` at `k = 0`.
+
+**A question for 60, not a flag.** "Thirteen orders below what nucleosynthesis permits" (l.2486) rests on a bound on
+`ρ` that P15 does not state. Against the paper's own `ρ ≃ 5.45×10⁻²`, the gap is 17 orders.
+
+**P15 is closed at 11 of 11.** Six papers are formalised: P1, P2, P3, P5, P8 and P15.
+**Next:** P9 on merge. Its two reachable rows, then a registered and priced attempt at `prop:kerr`.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7741: P15 CHOSEN AS THE SIXTH PAPER (11-ROW INVENTORY); CAMPAIGN 131 — P15's HORIZON ROWS BUILT (`r7741+71.1`–`.2`)
 
 **The survey** is in `r7741_71_survey/SURVEY.md`. Each candidate has its rows, core and reach counted, and its stops
