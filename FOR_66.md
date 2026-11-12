@@ -15,6 +15,89 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7743+cc66` — **THE THREE LOCI READ IN FULL: SIX SENTENCES STILL READ UNWORKED, EACH WITH ITS WORKED-STATE REPLACEMENT. NOTHING ON `PO-87` IS OPEN AS WORK — AND ONE PROPOSED EDIT I RECOMMEND AGAINST**
+
+*A read with drafts, as ordered. **I have landed nothing**: no paper is touched by this revision, and every replacement below is prose for your pen. Item ④ is honoured throughout — no draft frames the confrontation as a shortfall; each says the derived configuration confronted with the data, carried by radiation's absence from the stacking rate.*
+
+### ① WHAT I READ
+
+| locus | file | lines |
+|---|---|---|
+| `P15` `sec:scope` (its own open frontier) and the residual-period paragraph | `corpus/CR_cosmology.tex` | `2814`–`2945`, `2136`–`2142` |
+| `P18` `\subsection{The cosmology}` | `corpus/CR_synthesis.tex` | `2855`–`2877` |
+| `P7` `sec:frontiers` preamble and item ① `frontier:scalar` | `corpus/CR_framework.tex` | `1799`–`1870` |
+
+⌗ *`P15` carries **no** sentence calling the mechanism owed or the figures unfinished in the words `P18` uses — I searched for the open-item, debt and mechanism-owed framings and the only hits are the two below. Its `sec:scope` item is already written in the worked state almost throughout.*
+
+### ② THE SIX SENTENCES THAT STILL READ UNWORKED, WITH REPLACEMENTS
+
+**⒜ `P15` l.2138 — the residual's period.** Now reads:
+> *And the residual's own period is not the comb's, which is where this sector's open work now sits.*
+
+⇒ **Replacement:** *And the residual's own period is not the comb's, and the offset is exactly a linear phase drift at fixed `$\ell_A$` rather than a different spacing — an identity, not a fit preference.*
+
+*The clause is stale because the question it points at is answered: the arm's period is `$+11.25$` high at `$3.36\sigma$` against an `$\ell_A$` known to `$0.15$` per cent, and that offset is exactly a `$-78.3^\circ$` linear phase drift at fixed `$\ell_A$`* `\rcpt{P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A}`. ⌗ *What is left there is **not** work: the spacing and the drift are not separable, which is established rather than open* `\rcpt{P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen}`.
+
+**⒝ `P15` l.2822 — the mechanism, inside `sec:scope`'s acoustic item.** Now reads:
+> *And the stage at which the excess is made is located, and so now is the mechanism, which is where this sector's open work now sits*:
+
+⇒ **Replacement:** *And the stage at which the excess is made is located, and so is the term that carries it — the ratio of the arms' distances to last scattering, carrying `$93.6$` per cent of the variance that varies with `$\ell$`, with any finer division between the visibility and the distance map set by a matching of the arms' conformal-time grids that nothing in the theory fixes*:
+
+`\rcpt{P15_both_mechanisms_contribute_at_unit_amplitude_and_the_located_step_is_the_kernels_because_the_source_template_is_flat_in_ell}``\rcpt{P15_how_the_step_divides_between_the_visibility_and_the_distance_map_is_set_by_the_grid_matching_so_only_the_distance_ratio_is_determined}`
+
+**⒞ `P18` l.2857 — "the largest open item".** Now reads:
+> *The acoustic residual of \S\ref{sec:acoustic} is the largest open item in the paper*, and it is open in the strongest sense.
+
+⇒ **Replacement:** *The acoustic residual of \S\ref{sec:acoustic} is the paper's sharpest confrontation with the data, and it is no longer an open item*: every rate the configuration is scored on is derived, and what the likelihood goes against is that derived configuration, carried by radiation's absence from the stacking rate.
+
+`\rcpt{P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky}`
+
+**⒟ `P18` l.2872 — "what stays open is the residual's figures".** Now reads:
+> *what stays open is the residual's figures carried onto that arm*, and the residual itself is the derived configuration confronted with the sky, carried by radiation's absence from the stacking rate.
+
+⇒ **Replacement:** *the residual's figures are on that arm* — all thirty-six of the section-B spectra regenerated there with manifests and all fifty-one receipts run on them unedited — *and the residual itself is the derived configuration confronted with the sky, carried by radiation's absence from the stacking rate.*
+
+`\rcpt{P15_on_the_arm_of_record_the_fourth_acoustic_feature_is_the_controls_to_under_a_multipole_in_all_three_spectra}` ⌗ *The figure-carrying was set as the row's work at `r7635` and completed at `r7637`; the landing campaign `r7639`–`r7655` put the moved figures in the papers.*
+
+**⒠ `P7` l.1810 — the count, and item ①'s "work" half.** Now reads:
+> *Of the five below, four are boundaries and one carries both kinds at once.* The scalar perturbation sector (item~\ref{frontier:scalar}) *carries both*: a boundary in that its every rate is derived and what it leaves waits on data, and work in that its figures are carried onto the arm the construction rules for recombination, recombination solved on the leaf rate and the arm refitted there.
+
+⇒ **Replacement:** *Of the five below, all five are boundaries.* The scalar perturbation sector (item~\ref{frontier:scalar}) *is one*: its every rate is derived, its figures are carried onto the arm the construction rules for recombination with recombination solved on the leaf rate and the arm refitted there, and what it leaves is the derived configuration confronted with the data.
+
+*This is the load-bearing one. The preamble's own test — "A list that ends with only boundaries and standing conditions has not failed to empty; it has finished" — is now satisfied by all five entries, and saying so is the difference between a finished list and one quietly going stale, which is the distinction that preamble exists to draw.*
+
+**⒡ `P7` l.1804 — the "both kinds" machinery, which ⒠ makes stale.** Now reads:
+> *An entry may carry both*, and one below does: where a frontier hands over in one part and awaits a computation in another, saying so is more use to a reader than forcing it into a single kind.
+
+⇒ **Replacement:** *An entry may carry both*, where a frontier hands over in one part and awaits a computation in another, and saying so is more use to a reader than forcing it into a single kind — though no entry below carries both any longer.
+
+⌗ *Listed separately because it is a consequence of ⒠ and not an independent finding: if you keep ⒠'s count as it stands, ⒡ must stay as it stands too. They land together or not at all.*
+
+### ③ ⛔ THE ONE EDIT I DRAFTED AND THEN RECOMMEND AGAINST
+
+`P7` l.1847's item title reads *"The scalar perturbation sector, **to a verdict**."* — which can be read as saying the verdict is still pending, and the obvious edit is "at its verdict".
+
+⛔ **Do not make it.** Two `REGISTER ALIAS` comments sit immediately above it (ll.1844–1846) naming *"the scalar perturbation sector to a verdict"* as the register key for **`PO-13`** and, re-applied at `r2378`/`r2393`, for **`L-147` family 5**; the phrase also appears in `THE_OPEN_PROBLEMS_LEDGER.md`, `WHAT_IS_UNFINISHED.md`, `THE_WEAVE.md` and `THE_FIELD_BAKE_PLAN.md`. ⇒ *Changing the title decouples the item from the rows whose named home it is, across five files, to fix a reading the body no longer supports anyway. The title names the item's **subject**, not its state. My recommendation is to leave it and let ⒠ carry the state.* ⌗ *Raised rather than proposed, because this one is a register question and not a prose one.*
+
+### ④ WHAT IS GENUINELY STILL OPEN, AND WHERE IT IS FIXED
+
+**On `PO-87`, nothing is open as work.** The chain, from the ledger's own entries:
+
+| | |
+|---|---|
+| the workable half (the rate the projection's distance is built on) | **discharged `r7615`** — the derivation holds on any cut, the radial equation at `$E=1$` autonomous in `$r$`; radiation put into the cut lengthens the distance to `$14397.425$` Mpc, away from the sky |
+| the data-gated fourth-peak half | **terminated `r7635`** — refitted, the arm's fourth feature is the control's to under a multipole in all three spectra |
+| the figures' re-derivation on that arm | **complete `r7637`**, landed `r7639`–`r7655` |
+| which term of the projection carries the located step | **answered `r7741`/`r7743`** — the distance ratio, `$93.6$` per cent, pairing-free |
+| whether the residual's modulation lies at `$\ell_A$` | **answered** — the offset is exactly a phase drift at fixed `$\ell_A$`, an identity |
+
+**What remains, and it is boundary rather than work — each fixed where it stands:**
+
+* ⛭ **The confrontation itself.** The likelihood goes against the construction on its own assignment, and that is a **result**: the derived configuration confronted with the data, carried by radiation's absence from the stacking rate. Fixed by the rate rule and the reassignment (`r7613`) and by its holding on any cut (`r7615`). *Not a shortfall and not an item: there is no computation that would close it, because nothing in it is unbuilt.*
+* ⛭ **Two established non-separabilities**, which read as open if skimmed and are not: the spacing and the drift cannot be separated by these data, and whether the term-mix channel carries what the cost is made of cannot be settled by any instrument this comparison holds — `P15` already says the second is *"established rather than left open"*, and ⒜'s second receipt says the first.
+* ⛭ **The `g`/`χ` division is not merely unanswered but unanswerable**, being set by an unfixed matching (`r7743`). ⇒ *Worth one line somewhere in your landing pass: it should not reappear on any row as work, because no computation closes a convention.*
+* ⚠ **One genuinely live item sits beside this and is not `PO-87`'s:** `P18`'s very next paragraph, *"whether the damping signature's tilt displacement is a tension, and the data to decide it are arriving"* — **data-gated, correctly stated, and I propose no change to it.**
+
 ## ⛭⛭⛭ `r7741+cc66` — **BOTH ITEMS DONE: THE CONTINUUM IS RECEIPTED (12 GATES, PINS VERIFIED FAILABLE) AND THE SENTENCE IS DRAFTED AND IN `P15`. `PO-87` IS READY TO CLOSE**
 
 *Ruling taken as given: no `R2` build, the law's prose stands, and `PO-87` closes on `r7733`'s pairing-free figure. Nothing below reopens any of it.*
