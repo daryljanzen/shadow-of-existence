@@ -1,0 +1,215 @@
+
+====================================================================================================
+(o)  THE ARITHMETIC THE ORDER ITSELF MAKES CHECKABLE
+====================================================================================================
+  rho determined = 0.0545;  required rho in [3.5e-19, 3e-19]
+  log10(rho_det / 3.0e-19) = 17.259275247556980003
+  log10(rho_det / 3.5e-19) = 17.192328457926366804
+  => the gap is seventeen orders across the whole bracket; 'thirteen' was wrong by four
+  [PASS] (o)a  PREDICTED 17.2: the repaired figure "seventeen orders" reproduces, and the bracket does not reach sixteen or eighteen  witness: 17.1923 and 17.2593, both in [17,18)
+  9 x 2.6e-121 x rho^-6 at rho = 5.45e-2  =  8.9296995E-113
+    between 1e-113 and 1e-112: True
+  at rho = 3.0e-19: 3.20988E-9  >  A_s = 2e-9 : True
+  at rho = 3.5e-19: 1.27294E-9  <  A_s = 2e-9 : True
+  [PASS] (o)b  and the bracket brackets: the observed amplitude is crossed between 3.0e-19 and 3.5e-19  witness: 3.210E-9 > 2e-9 > 1.273E-9, and the value at the determined composition is 8.930E-113
+
+====================================================================================================
+(A)i  EVERY FIGURE IN THE THREE LANDINGS, AND THE RECEIPT BESIDE IT
+====================================================================================================
+    the period sentence      [P15 ] figures=none
+        receipts cited in the BLOCK: ['P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A']
+    the progenitor figure    [P15 ] figures=['19', 'seventeen']
+        receipts cited in the BLOCK: NONE
+    the amplitude pair       [P15 ] figures=['10', '112', '113', '121', '2', '3', '3.5\\times10^{-19}', '3\\times10^{-19}', '5.45\\times10^{-2}', '6', '9']
+        receipts cited in the BLOCK: NONE
+    prop:flat                [P15 ] figures=['0', '2']
+        receipts cited in the BLOCK: NONE
+    the acoustic first       [P18 ] figures=none
+        receipts cited in the BLOCK: NONE
+    the acoustic last        [P18 ] figures=none
+        receipts cited in the BLOCK: NONE
+    the count preamble       [P18 ] figures=['three']
+        receipts cited in the BLOCK: NONE
+    the relative size        [P18 ] figures=['seventy-five', 'three']
+        receipts cited in the BLOCK: NONE
+    the frontier preamble    [P7  ] figures=['one']
+        receipts cited in the BLOCK: NONE
+  [PASS] (A)i  all nine landings located at source  witness: 9 of 9 located
+
+====================================================================================================
+(A)iii  DO THE OLD FIGURES SURVIVE?  the selector measured BEFORE it is trusted
+====================================================================================================
+  POWER CONTROL -- each pattern on the PRE-landing text, where the answer is known.
+  The PRE text is the five papers AND the receipts tree: 'eighteen orders' was the printed
+  commentary of a RECEIPT, and running the control over papers alone gave it 0 pre-landing
+  hits -- a pattern that finds nothing before the repair cannot certify an absence after it.
+    thirteen orders    pre-landing hits: 2
+    eighteen orders    pre-landing hits: 1
+    four open items    pre-landing hits: 4
+    the four           pre-landing hits: 1
+    falls below        pre-landing hits: 4
+  [PASS] (A)iii-a  every pattern finds its own pre-landing text, so a zero now means absence and not a broken pattern  witness: {'thirteen orders': 2, 'eighteen orders': 1, 'four open items': 4, 'the four': 1, 'falls below': 4}
+
+  AND NOW, over every .tex in corpus/ and every ledger at the root:
+  (and 1144 receipt source files)
+  8 survivor(s)
+    [thirteen orders] CR_synthesis.tex
+        ...m account. It is not: on the one scale, the substrate's vacuum metric-fluctuation power sits some hundred and thirteen orders of magnitude below the observed amplitude~\cite{JanzenCRcosmology}. \emph{So the fluctuations are inherited c...
+    [falls below] CR_synthesis.tex
+        ...prefers the other side}: built with the projection's distance on the leaf rate, the computed spectrum's shape residual falls below the standard model's own, so the distance assignment is where this cosmology's disagreement with the sky sits...
+    [eighteen orders] THE_BASE_RATE.md
+        ...ze, the connection and the monodromy, reaches $3\times10^{-103}$ and is short by $10^{94}$. **The mixing buys eighteen orders and the conclusion survives.** But the corpus had been asserting that conclusion for its whole history on an...
+    [thirteen orders] THE_CONSOLIDATION_LEDGER.md
+        ...(`cm_flat_slice`); P15 closed at 11 of 11, the sixth paper formalised. The progenitor argument's unsupported "thirteen orders below what nucleosynthesis permits" corrected to seventeen orders below the determined composition, now compu...
+    [four open items] THE_DIMENSION_DEEPENING_AUDIT.md
+        ...nine confirmations… a count is > not a map".* > > **⌗ And it says its own open list is stale:** *three of its four open items are settled by later work > **and the file does not know**, with one item contradicted by its own head.* #...
+    [four open items] THE_DIMENSION_DEEPENING_AUDIT.md
+        ...AND ONE ITEM IS CONTRADICTED BY THIS FILE'S OWN HEAD (found r2382, reading it at source) > > ***Three of its four open items are settled by later work, and the file does not know:*** > > - **① the 39 screened-clean probes** — *"screen...
+    [thirteen orders] THE_REGISTER.md
+        ...ated by the geometry**, confirmed against a control where a floor near zero blows an infrared-weighted sum by thirteen orders.* &#9670; ***AND THE LOG IS REAL SCHEME-INDEPENDENTLY.*** *The Dirichlet series has a simple pole at the orig...
+    [four open items] THE_STAGED_REVISIONS.md
+        .... The other three read the cubic; this one reads why it is a cubic.*** ⌗ *And reading it found **three of its four open items discharged and one contradicted by its own head banner** — `(A1)` listed open while the head records it disch...
+
+  ADJUDICATION, every hit read at source:
+    [thirteen orders ] CR_synthesis.tex                     x1  CLEAN: the phrase is "some hundred and thirteen orders", the substrate-vacuum ratio, which cm_substrate_ratio puts between 1e112 and 1e113 -- my pattern caught the tail of a different number
+    [eighteen orders ] THE_BASE_RATE.md                     x1  CLEAN: "the mixing buys eighteen orders" is a different claim in a different sector
+    [thirteen orders ] THE_CONSOLIDATION_LEDGER.md          x1  CLEAN: the ledger QUOTES the old wording while recording its correction, in quotation marks, which is how a correction should be recorded
+    [four open items ] THE_DIMENSION_DEEPENING_AUDIT.md     x2  CLEAN: another file's four open items, read at r2382
+    [four open items ] THE_STAGED_REVISIONS.md              x1  CLEAN: the same other file's four, same reading
+    [thirteen orders ] THE_REGISTER.md                      x1  CLEAN: an infrared-weighted sum blown by thirteen orders -- a different quantity
+    [falls below     ] CR_synthesis.tex                     x1  ROUTED: the fourth site of this round's own repair, and (A)iv settles it against the receipt -- the relation is arm-dependent and this sentence names no arm
+  => 1 site(s), 7 adjudicated clean, 0 unjudged
+  [PASS] (A)iii-b  every survivor is adjudicated, and exactly ONE is a site -- the registered reachable negative, reached  witness: 8 hits across 1245 files, every pattern proved live by the control above, 1 routed and 0 left unread
+
+====================================================================================================
+(A)iv  "FALLS BELOW" AGAINST "LEVEL WITH", AT THE RECEIPT'S OWN NUMBERS
+====================================================================================================
+  the receipt's banked numbers: arm of record 186.1350, control 186.0066, namesake arm 184.9890
+  arm of record - control = +0.1284  -> ABOVE, by a hair
+  namesake arm  - control = -1.0176  -> BELOW
+  and the receipt says so in its own gate head: "ON THE ARM OF RECORD THE FORBIDDEN
+  REPAIR DOES NOT GO BELOW THE CONTROL'S OWN VALUE -- IT LANDS LEVEL WITH IT", and
+  "the namesake arm's 184.99 against 186.01 put it BELOW; the arm of record's is a hair
+  above, so `falls below the control's own` lands as `level with the control's own`".
+  [PASS] (A)iv-a  the relation is ARM-DEPENDENT: below on the namesake arm, level with on the arm of record, and the two differ by a hair  witness: 186.135 > 186.007 > 184.989, the first gap +0.128 and the second -1.018
+
+  the four sentences that make this comparison, and whether each names its arm:
+    [P18] relation=level with  names its arm=False  Where the excess is made is located (\S\ref{sec:displace}): in the projection from wavenumber t
+    [P18] relation=level with  names its arm=False  On the leaf rate the difference is gone, the arm's residual falling level with the control's ow
+    [P7 ] relation=level with  names its arm=False  The end-to-end transfer to recombination is run: the joint fit leaves the damping-scale signatu
+    [P18] relation=below       names its arm=False  So the construction's two sectors stand together on exactly one reading. And the one quantitati
+  [PASS] (A)iv-b  three sentences say "level with" and the fourth still says "falls below" while naming no arm  witness: 1 site(s) assert the strict relation without naming the arm it holds on; the receipt makes the relation arm-dependent, so either word needs its arm
+
+====================================================================================================
+(B)  P15's THREE NEW FORMAL PARAGRAPHS
+====================================================================================================
+  cm_substrate_ratio
+    binders []
+    concl   (10 : ℝ) ^ 112 < (2 / 10 ^ 9) / (3 / 10 ^ 122) ∧ (2 / 10 ^ 9 : ℝ) / (3 / 10 ^ 122) < 10 ^ 113
+  cm_mass_cap
+    binders ['{M α ℓ : ℝ}', '(hM : 0 < M)', '(hα : 0 < α)', '(h : M ≤ α / (3 * Real.sqrt 3))']
+    concl   27 * (ℓ / α) ^ 2 ≤ (ℓ / M) ^ 2
+  cm_progenitor_arith
+    binders []
+    concl   (1 / 10 ^ 113 : ℝ) < 9 * (26 / 10 ^ 122) / (545 / 10 ^ 4) ^ 6 ∧ 9 * (26 / 10 ^ 122) / (545 / 10 ^ 4) ^ 6 < (1 / 10 ^ 112 : ℝ) ∧ (2 / 10 ^ 9 : ℝ) < 9 * (26 / 10 ^ 122) / (3 / 10 ^ 19) ^ 6 ∧ 9 * (26 / 10 ^ 122) / (35 / 10 ^ 20) ^ 6 < (2 / 10 ^ 9 : ℝ) ∧ 144 * π * (26 / 10 ^ 122) / (545 / 10 ^ 4) ^ 6 < 
+  cm_flat_slice
+    binders ['(x : Fin 3 → ℝ)', '(hr : x 0 ≠ 0)', '(hs : Real.sin (x 1) ≠ 0)']
+    concl   lf_g 1 id x = Matrix.diagonal ![1, x 0 ^ 2, x 0 ^ 2 * Real.sin (x 1) ^ 2] ∧ ∀ a b c d, kr_Rlow (lf_g 1 id) x a b c d = 0
+  cm_flat_witness
+    binders []
+    concl   ∀ a b c d, kr_Rlow (lf_g 1 id) ![1, π / 2, 0] a b c d = 0
+  lf_witness
+    binders []
+    concl   kr_Rlow (lf_pull (lf_S3 0 1)) ![π / 2, π / 2, 0] 0 1 0 1 = 1 ∧ kr_Rlow (lf_pull (lf_H3 (Real.sqrt 2) 1)) ![1, π / 2, 0] 0 1 0 1 = -Real.sinh 1 ^ 2 ∧ Real.sinh 1 ≠ 0 ∧ lf_η (lf_horo 1 1 0) = 1 ^ 2 ∧ lf_ηb (lf_horo 1 1 0) lf_B = 1
+  P15 cites 12 Lean names; not found: []
+  [PASS] (B)iii  every cited name is a declaration, and three fabricated names are not found  witness: 12 cited, none missing; fabricated ['cm_substrate_power', 'cm_flat_leaf', 'cm_progenitor_bound'] -> none found
+
+====================================================================================================
+(B)i  prop:amplitude WITH prop:progenitor-amplitude
+====================================================================================================
+  PROSE  The arithmetic of Propositions \ref{prop:amplitude} and \ref{prop:progenitor-amplitude} is machine-checked in Lean on the stated inputs (Cosmology.lean): $A_s/(\Lambda\ell_P^{2})$ lies between $10^{112}$ and $10^{113}$ (cm_substrate_ratio); the cap $M\le\alpha/3\sqrt3$ gives $(\ell_P/M)^{2}\ge27(\ell_P/\alpha)^{2}$ (cm_mass_cap); and $9\times2.6\times10^{-121}\times\rho^{-6}$ at $\rho=5.45\times10^{-2}$ lies between $10^{-113}$ and $10^{-112}$, while the observed amplitude needs $\rho$ between $3\times10^{-19}$ and $3.5\times10^{-19}$ (cm_progenitor_arith). The transfer law \eqref{eq:transfer-law} and the vacuum-power estimate are the inputs, and are not formalised.
+  the paragraph says 'on the stated inputs': True
+  and names its unformalised remainder:      True
+  [PASS] (B)i-a  the arithmetic-on-stated-inputs risk does NOT fire: the paragraph says so in those words, and names the transfer law and the vacuum-power estimate as not formalised  witness: "machine-checked in Lean on the stated inputs" and "The transfer law and the vacuum-power estimate are the inputs, and are not formalised" -- the clause r7746 asked for at row 4, now generalised
+  cm_substrate_ratio: 2e-9 / 3e-122 = 6.66667E+112  in (1e112, 1e113): True
+  cm_mass_cap at three members on the cap: [True, True, True]
+  [PASS] (B)i-b  every conjunct of the three theorems recomputes, and the prose quotes each correctly  witness: the ratio is 6.667E+112; the cap inequality holds at three members including M = alpha/(3 sqrt3) itself
+
+====================================================================================================
+(B)ii  prop:flat AND cm_flat_slice
+====================================================================================================
+  PROSE  The flatness is machine-checked (Cosmology.lean): the coordinate Riemann tensor of $dr^2+r^2d\Omega^2$ vanishes identically, as the $k=0$ case of the leaf curvature computed for the slicing operator (cm_flat_slice).
+  cm_flat_slice binders: ['(x : Fin 3 → ℝ)', '(hr : x 0 ≠ 0)', '(hs : Real.sin (x 1) ≠ 0)']
+  its HYPOTHESES: ['(hr : x 0 ≠ 0)', '(hs : Real.sin (x 1) ≠ 0)']
+  prose says 'vanishes identically': True
+  prose states either hypothesis:    False
+  prose says 'the k=0 case':         True
+  the proof instantiates lf_curv at k := 0
+  [PASS] (B)ii-a  "the k=0 case" is exactly how the proof instantiates it  witness: lf_curv (k := 0) in cm_flat_slice's own proof
+  [PASS] (B)ii-b  but "vanishes IDENTICALLY" drops the two hypotheses the declaration carries  witness: the theorem is (hr : x 0 != 0) (hs : Real.sin (x 1) != 0) -> ... = 0, so it vanishes at every point of the chart where r != 0 and sin(theta) != 0 -- true of the geometry, and not what the theorem states
+
+====================================================================================================
+(B)iv  NON-VACUITY, AND AT WHAT VALUE
+====================================================================================================
+  cm_flat_witness concl: ∀ a b c d, kr_Rlow (lf_g 1 id) ![1, π / 2, 0] a b c d = 0
+  lf_witness      concl: kr_Rlow (lf_pull (lf_S3 0 1)) ![π / 2, π / 2, 0] 0 1 0 1 = 1 ∧ kr_Rlow (lf_pull (lf_H3 (Real.sqrt 2) 1)) ![1, π / 2, 0] 0 1 0 1 = -Real.sinh 1 ^ 2 ∧ Real.sinh 1 ≠ 0 ∧ lf_η (lf_horo 1 1 0) = 1 ^ 2 ∧ lf
+  the flat witness is exhibited at r = 1, theta = pi/2 (an interior point, not r = 0): True
+  [PASS] (B)iv  the witness is exhibited where the hypotheses HOLD, not where the term vanishes  witness: kr_Rlow (lf_g 1 id) ![1, pi/2, 0] = 0 -- r = 1 != 0 and sin(pi/2) = 1 != 0, so both hypotheses are met at the witness point
+
+====================================================================================================
+(C)i  P18's COUNT, AGAINST THE TABLE IT PREAMBLES
+====================================================================================================
+  PREAMBLE  What follows is complete and unfiltered. Three items stand open, each with what would discharge it, and none is omitted for being awkward or small.
+  RELATIVE  The relative size is a number rather than an adjective. Three open items stand against roughly seventy-five results carrying a hard register --- theorem, proposition, derived, computed, receipt-anchored.
+  the table below it has 3 row(s):
+    1. whether the damping signature's tilt displacement is a tension & damping-tail data $1.16$ times as precise as 
+    2. which mass the Hubble--Eddington radius tracks & a baryonic mass measured out to the kinematic turnaround radi
+    3. the Hubble--Eddington bound against masses inside it & an ensemble with masses measured inside the Hubble--Edd
+  and the cosmology sentence: \emph{Three items in the cosmology stay open.
+  [PASS] (C)i-a  the preamble, the heading, the cosmology sentence and the table all say THREE  witness: 3 table rows, heading 'The three', preamble 'Three items stand open', and 'Three items in the cosmology stay open'
+  the relative-size sentence cites: NO RECEIPT
+  SEARCHED for a receipt behind 'seventy-five': the sentence's own block, and the whole
+  receipts tree for a counter of the hard register --
+    receipts mentioning 'hard register': none
+  CONTROL, and it is the SPECIFIC receipt and not a word search: the progenitor figure
+  stands on P15_the_progenitor_vacuum_is_negligible_too.py, which computes the gap --
+    does it compute the order gap: True
+  [PASS] (C)i-b  the relative-size figure "roughly seventy-five" stands on no receipt, while the round's other figures do -- the order asks for each figure against its receipt  witness: no \rcpt in that block and no receipt in the tree counts the hard register; the control finds 1 receipt(s) behind 'seventeen'
+
+====================================================================================================
+(C)ii  P7's FRONTIER PREAMBLE, AGAINST THE ENTRIES IT PREAMBLES
+====================================================================================================
+  PREAMBLE BLOCK  The structural closure above is what the framework establishes; what it does not yet build is, by the same token, the map of where the programme goes next. Each item below is a frontier the construction has carried to a definite edge, listed plainly so it can be worked rather than deferred. The entries are of two kinds, and a reader is owed the difference. Work is something unworked that a definite computation would close, and it shrinks as it is done. A boundary is a result rather than a gap---a statement of where this construction hands over and to which sector---and it does not shrink, because there is nothing in it left to do. An entry may carry both, where a frontier hands over in one p
+  the frontier labels in P7: ['frontier:scalar', 'frontier:sm', 'frontier:quantum', 'frontier:holding', 'frontier:realforms']
+    frontier:scalar                    declared: boundary
+    frontier:sm                        declared: boundary
+    frontier:quantum                   declared: boundary
+    frontier:holding                   declared: boundary
+    frontier:realforms                 declared: boundary
+  entries carrying BOTH: none
+  SEARCHED: each frontier label's own block, de-marked, for the preamble's own two kinds
+  ('boundary'/'hands over'/'is one' and 'work'/'awaits a computation'/'unworked').
+  CONTROL: the preamble itself contains both vocabularies, so the search can see both.
+  [PASS] (C)ii-a  "no entry below carries both" holds of the entries, and the five/five claim matches the label count  witness: 5 frontier labels, none declared both; the preamble's own block carries both vocabularies so the search is live (True)
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+  [PASS] (o)a  PREDICTED 17.2: the repaired figure "seventeen orders" reproduces, and the bracket does not reach sixteen or eighteen
+  [PASS] (o)b  and the bracket brackets: the observed amplitude is crossed between 3.0e-19 and 3.5e-19
+  [PASS] (A)i  all nine landings located at source
+  [PASS] (A)iii-a  every pattern finds its own pre-landing text, so a zero now means absence and not a broken pattern
+  [PASS] (A)iii-b  every survivor is adjudicated, and exactly ONE is a site -- the registered reachable negative, reached
+  [PASS] (A)iv-a  the relation is ARM-DEPENDENT: below on the namesake arm, level with on the arm of record, and the two differ by a hair
+  [PASS] (A)iv-b  three sentences say "level with" and the fourth still says "falls below" while naming no arm
+  [PASS] (B)iii  every cited name is a declaration, and three fabricated names are not found
+  [PASS] (B)i-a  the arithmetic-on-stated-inputs risk does NOT fire: the paragraph says so in those words, and names the transfer law and the vacuum-power estimate as not formalised
+  [PASS] (B)i-b  every conjunct of the three theorems recomputes, and the prose quotes each correctly
+  [PASS] (B)ii-a  "the k=0 case" is exactly how the proof instantiates it
+  [PASS] (B)ii-b  but "vanishes IDENTICALLY" drops the two hypotheses the declaration carries
+  [PASS] (B)iv  the witness is exhibited where the hypotheses HOLD, not where the term vanishes
+  [PASS] (C)i-a  the preamble, the heading, the cosmology sentence and the table all say THREE
+  [PASS] (C)i-b  the relative-size figure "roughly seventy-five" stands on no receipt, while the round's other figures do -- the order asks for each figure against its receipt
+  [PASS] (C)ii-a  "no entry below carries both" holds of the entries, and the five/five claim matches the label count
+
+  16 of 16 arms PASS
