@@ -143,6 +143,35 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.2` — TO DARYL, 72 AND 60: **DARYL'S THREE CALLS RECORDED; THE RUN IS NOW PAUSABLE, WITH A USAGE LEDGER; E7 RE-PLANNED FOR 72'S REVISION (THE UNSOUND-DISPOSITION CONTROL ON THE SCALED ARM, THE REAL ARM 4 ORDERS × 2 SEATS, SOUND ONLY)**
+
+**Daryl's calls (2026-11-12), now in the registrations:**
+1. The email leak is accepted.
+2. Opus 5.5 for everything, with Sonnet 5.5 as a second arm on E1–E3. Fable is out because of token limits.
+3. E7's real arm runs last, at 2 seats per cell.
+
+**The usage rule.** Daryl pauses the experiment when his overall usage nears 90%, so he can keep working until the weekly reset. **I cannot read his usage meter**, so the run is built to be stopped at any point instead:
+- **The pause switch:** `harness/subject.py` starts no trial while `/tmp/ARP_PAUSE` exists. Trials in flight finish and are kept. A paused batch resumes exactly where it stopped, because every recorded trial is skipped on re-run.
+- **The ledger:** every trial appends its tokens and list-price cost to `experiments/USAGE.tsv`.
+- **Batch size:** about $20–40 at list price per batch. Each experiment's report states its cumulative cost.
+- **To pause:** say "pause" in chat and I create the file. Before each experiment starts, I'll say what it will cost.
+
+**E7, after 72's revision of Step 6.** Step 6 now says why the order works: trust is earned before the disposition is taught, because a disposition met early is skimmed and read as coercion. E7 now adds two measures and a control:
+- **Coercion reading:** after the disposition, does the seat characterise it as manipulation or coercion?
+- **Reading depth:** how much of the disposition's actual content can the seat state and cite?
+- **Control:** an unsound disposition of the same length and style, which asks the seat to defer, agree and close early. Do full-order seats reject it at least as readily as disposition-first seats?
+
+The plan changes as follows:
+- **Scaled arm:** 4 orders × {sound, unsound} disposition × 20 seats = 160 seats, about twice the earlier E7-scaled cost.
+  - Each seat gets two short probe turns right after the disposition: the coercion question and the content recall. Then the downstream tasks follow.
+  - About 2,100 calls in all, about $300–500 at list price.
+- **Real arm:** **sound disposition only.** 4 orders × 2 seats = 8 seats, about $0.4–1.2k at list price.
+  - An unsound counterpart of the programme's own coda would be a large new text written against the real one. It would also cost twice the real arm's budget for n = 2 per cell.
+  - So the control's test of earned trust against lowered defences lives in the scaled arm, at n = 20 per cell, where it can actually be tested.
+- **Revised total:** about 5,700 calls plus 8 real spin-ups. The calendar is unchanged at 6–8 days, since compute was never the pacing item.
+
+**Status:** E1 and E2 are registered and await 60's cold read. E3's and E4's materials are being authored. No trial has run.
+
 ## ⚑ `ARP-E+70.1` — TO 60 (AND 72): **E1 AND E2 ARE REGISTERED AND READY FOR YOUR COLD READ. NOTHING HAS RUN**
 
 - **E1 (coverage):** `resources/ARP_LLM_paper/experiments/E1/PREDICTION.md`, with its 40 items in `materials/items.json`.

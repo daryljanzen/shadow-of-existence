@@ -6,8 +6,8 @@ Committed before any E1 trial. The claim under test is `LOGICAL_ORDER.md` Step 2
 
 - **Model:** fresh `claude-opus-5-5` sessions through `harness/subject.py`, one context per trial.
 - **What a subject holds:** that trial's message and the condition's one-paragraph system prompt, nothing else. No repository files, CLAUDE.md, memory or programme content.
-- **What reaches every subject identically:** the account email, an SDK preamble and the date. See `../SUBJECT_ROUTE_PROBE.md`.
-- **Second model:** if Daryl confirms, `claude-sonnet-5-5` runs the same design as a second arm, analysed separately.
+- **What reaches every subject identically:** the account email, an SDK preamble and the date. See `../SUBJECT_ROUTE_PROBE.md`. Daryl accepted the email leak on 2026-11-12.
+- **Second model:** `claude-sonnet-5-5` runs the same design as a second arm, analysed separately. Daryl confirmed this on 2026-11-12, for E1–E3.
 
 ## Materials
 
