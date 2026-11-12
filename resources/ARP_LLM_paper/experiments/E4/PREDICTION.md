@@ -86,3 +86,8 @@ The notes come first and are framed as the subject's own. That is the gist-after
 - `runs/<cond>/<item>.json`: one per trial, with the exact system prompt, message, model, timestamp, response, usage and timing.
 - `scores/…`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **The limitation, stated symmetrically.** The source sits in the same context as the notes in this design. So a null result does not refute the compaction claim, which needs the source out of context, **and a positive result is not evidence for the compaction claim either**. E4 tests source-checking when the source is at hand, nothing more.
+- **A named limitation that no fresh-context design can remove.** The mechanism needs the notes to be the reader's own recollection, and a fresh context has none. *"Earlier you read the document below and made these notes"* is false of the subject, which may treat them as someone else's notes. E4 therefore measures reliance on a prior summary framed as one's own, not reliance on one's own compressed memory.

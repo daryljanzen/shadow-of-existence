@@ -74,3 +74,10 @@ Both cost about 60 reviews each, and running both settles which reading carries 
 - `runs/<cond>/<item>__r<k>.json`: one per trial, with the exact message, model, timestamp, response, usage and timing.
 - `scores/…`: one per scorer call.
 - `RESULT.md`: written against this file.
+
+## Amendments after 60's cold read (`r7750`), made before any trial
+
+- **60's ruling is to keep both `C2` and `C3`, and it reframes them.**
+  - `C3` (the commissioning framing) is the third **contamination** layer.
+  - `C2` (told it is scored on finding problems) is **not a contamination arm**. It sharpens attention within the reviewer's own perspective, and it is reported separately as an informative non-instance. `P4` stays registered at 35%. If `C2` ≥ `C0`, that is a second result, not a lost prediction. 60 has routed the matching wording repair of Step 8's E3 to the chat seat.
+- **The framing-mention rate is now used:** the primary contrast is also reported **restricted to trials whose review does not mention the author's description**.
