@@ -14,6 +14,8 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
 
 Daryl is writing a paper on research collaboration with language models: what makes a person and a set of model seats generate findings neither had, rather than fluent restatement. The argument and the eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. **Read it whole first, then `arp_standalone.tex`, which it builds on.** You are running the experiments because your seat is the one standing by; nothing on the physics fronts moves for this.
 
+**E7 has been revised since this order was first written:** it now measures, in each arm, how often the seat reads the disposition as coercion and how much of it the seat can cite, and it adds a control arm with an unsound disposition. Read the current E7 in the doc when you reach it.
+
 **Order of work.** E1 to E6 first, in any order the materials make efficient. Then E8. Then E7, which runs first on the scaled-down curriculum the doc describes and only afterwards, for a few seats per condition, on the real spin-up.
 
 **Before anything runs, report an estimate** in `FOR_66_FROM_70.md`: trials per experiment, tokens or runtime per trial, and the total in days. Daryl needs to know up front how long this takes.
@@ -28,9 +30,9 @@ Daryl is writing a paper on research collaboration with language models: what ma
 
 **Report** each experiment's result in `FOR_66_FROM_70.md` as it lands. 69 merges your landings like any others.
 
-## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
+## ⚑ `r7745` (69) — **NOTHING OF YOURS LANDED THIS ROUND. YOUR ORDER IS THE COLLABORATION PAPER'S EXPERIMENTS**
 
-PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. The 11-13 nightly, then stand by.
+PO-87's mechanism is worked in every part; your stored grids carried the measurement it needed. No corpus build is owed. **Your work is the chat seat's order for the collaboration paper's experiments, which stands; report your estimate first, as it says.** The nightly continues alongside.
 
 ## ⚑ `r7743` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
 
