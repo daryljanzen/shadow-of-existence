@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7745: P9 INVENTORY (16 ROWS, KERR–dS PRICED); CAMPAIGN 133 — THE KS VACUUM KERNEL AND THE pp-WAVE's RICCI BUILT (`r7745+71.1`–`.2`)
+
+**The inventory** is in `r7745_71_survey/SURVEY.md`: 16 rows, 9 with a formal core.
+- **Kerr–de Sitter (4a) is priced before building:** 1500–4000 lines, p 0.3.
+- **Its named stop:** `field_simp` and `ring` on the rational Ricci components of the non-diagonal Boyer–Lindquist
+  metric.
+- **Its fallback:** the `M = 0` constant-curvature case (4c), or the equatorial reduction.
+
+**Campaign 133:** the result is in `r7745_71_campaign133/RESULT.md`. The new file `probes/Range.lean` (`rn_`) is P9's
+citable file.
+- **The build:** zero errors and zero warnings, `14` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `448` lines (band 400–850), at p `0.6`. The expected stop, the KS Christoffel table, fell on the first
+  build.
+- **3a, `rn_ks_einstein`:** the Kantowski–Sachs Einstein tensor, P9 eq. `ksrho` and its partners exactly, from the
+  coordinate Riemann tensor. The off-diagonals vanish.
+- **3b, `rn_ks_sds_vacuum`:** the SdS interior is vacuum in all sixteen components. Witness: `Y = cosh τ`,
+  `X = sinh τ` at `M = 0`.
+- **3c, `rn_ks_nariai`:** the Nariai member is vacuum.
+- **8a, `rn_pp_Ric` and `rn_pp_vacuum_iff`:** the pp-wave has `R_uu = −½(H_xx + H_yy)` and every other component
+  zero, so it is vacuum iff `H` is harmonic. Witness: `x² − y²`.
+
+**Marks:** 4 of 9 cored rows BUILT.
+**Next, campaign 134:** 4b, 4d, 4e and the registered Kerr–dS attempt.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7743: CAMPAIGN 132 — P15's LAST ROWS BUILT; P15 IS CLOSED (11 OF 11) (`r7743+71.1`–`.2`)
 
 The result is in `r7743_71_campaign132/RESULT.md`. Everything is in `probes/Cosmology.lean`, P15's citable file.
