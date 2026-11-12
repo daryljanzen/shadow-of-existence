@@ -5,6 +5,8 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7743` (the 11-12 nightly clean, 1157 pass, heavy 97.1 of 127 on a second slow runner, index 101.6 of 180, READ_INDEX refreshed to 1157, at `r7743+70.1`). The replies to
+`r7741` (no order of its own beyond the nightly). The replies to
 `r7739` (the eta grids and x0(eta) per arm stored at refs/ci/r7737_grid, sha256-identical, bit-tied to the Tier 1 blob, at `r7739+70.1`; the 11-11 nightly clean, heavy 98.7 of 127 from a slow runner, index 99.4 of 180, READ_INDEX refreshed to 1156, at `r7739+70.2`). The replies to
 `r7737` (cc66's Tier 1 and Tier 2 built and stored at refs/ci/r7737_xmap and refs/ci/r7737_vis, sha256-identical to the container's, every closure passing; E3 holds, E4 fails because index pairing gives the extent to χ, at `r7737+70.1`). The replies to
 `r7731` (the 11-10 nightly clean, the index wall at 150 of 180 and why, READ_INDEX refreshed, dlk.yml written, at `r7731+70.1`; refs/ci/r7729_dlk landed, arrays identical to the container's, the C1 loosening withdrawn, at `r7731+70.3`; Q1's build-B timeout fixed by a measured swap, at `r7731+70.4`). The replies to
@@ -138,6 +140,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7743+70.1` — TO 69: **THE 11-12 NIGHTLY IS CLEAN (1157 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 97.1 MIN OF 127; P10 1184 s OF 2100; THE INDEX JOB 101.6 MIN OF 180. READ_INDEX REFRESHED (1157 RECEIPTS, 0 RED UNDER TRACE)**
+
+`refs/ci/nightly` → `d33fcb9d0`, run 43202179371 at `8b43d868b` (`r7743`): **1157 pass, 0 fail, 0 over timeout**, 5643 s inside the runner. The heavy job took 97.1 min against its 127 budget, a second slow-runner night after 11-11's 98.7: the in-runner wall moved 5737 → 5643 s with one more receipt. The slowest are C59 1192 s, P10's double-logarithm receipt 1184 s and S55 1091 s. C59's 1043 → 1192 s (+14%) is the only one that moved by more than a few per cent on a like runner. It sits under its declared 2100 s, and the order of the top three changes with the runner, so it is noted and not chased. P10 at 1184 s is 56% of its 2100 s limit. That is two slow nights running, but neither came near the limit, so the raise to 2700 is not warranted. The index job took 101.6 min against its 180 limit, with its sweep step at 100.3 min. READ_INDEX is refreshed from the run's artifact: traced at `8b43d868b`, 1157 receipts against the committed 1156, `red_under_trace` 0, no timeouts, and no other seat refreshed it after `r7739+70.2`. `check_index_coverage.py`: 0 new, 0 gone. **What it narrows:** a slow runner now puts the heavy tier at about 97–99 min, 28–30 min inside 127, on two consecutive nights. The 68.7 min of 11-10 was the fast end. **Next:** stand by, per `r7743`. If C59 keeps climbing on like runners, its declared-long figure is the place to look.
 
 ## ✔ `r7739+70.2` — TO 69: **THE 11-11 NIGHTLY IS CLEAN (1156 PASS, 0 FAIL, 0 OVER TIMEOUT); HEAVY 98.7 MIN OF 127; P10 1108 s OF 2100; THE INDEX JOB 99.4 MIN OF 180. READ_INDEX REFRESHED (1156 RECEIPTS, 0 RED UNDER TRACE)**
 
