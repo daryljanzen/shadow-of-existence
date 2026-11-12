@@ -1,6 +1,6 @@
 # ARP paper — citation check against the sources
 
-Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself. Five batches, by literature. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands.
+Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself: 30 references in five batches, by literature, plus the four sentences that attributed views to Clark, Pickering and Garrod, and "Lerner and Hayashi" without a citation. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands. Sources that could not be read in full are listed at the end.
 
 ## Batch 1 — turn-taking and projection
 
@@ -55,7 +55,15 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 5 — evidence and methods
 
-Templeton et al. 2022, Huang et al. 2017, Koudenburg, Postmes and Gordijn 2011, Shaikh et al. 2024, Jackson and Marsh 1996, Stephens, Silbert and Hasson 2010, Liu et al. 2017.
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Templeton et al. 2022 | PMC full text | Faster response times predicted feeling connected, for strangers (Study 1) and within conversations between close friends (Study 2); listeners rated clips with shortened gaps as more connected (Study 3). | Unchanged: "shorter response times track partners' sense of being connected, among strangers and friends alike". |
+| Huang et al. 2017 | Full text | Of the question types coded, "follow-up questions alone predicted increased partner liking"; the follow-up rate mediated the effect of instructed question-asking, and predicted speed-dating success. Correlational across types; no formal test that follow-ups beat each other type. | "Of the kinds of question people ask in conversation, follow-up questions … are the only kind that predicts greater liking". Was: "increase liking more than other kinds of question". |
+| Koudenburg, Postmes and Gordijn 2011 | Full text | Study 1: an imagined brief silence in a conversation; Study 2: a four-second silence in a video of a three-person conversation. Both raised rejection and negative emotion and lowered belonging, self-esteem and perceived consensus; Study 2's participants did not consciously notice the silence. | Unchanged: "a silence of only a few seconds in a group conversation, imagined or watched on video, leaves people feeling more rejected and less sure they belong". |
+| Shaikh et al. 2024 | ACL Anthology abstract | "Compared to humans, LLMs generate language with less conversational grounding, instead generating text that appears to simply presume common ground." | Unchanged. |
+| Jackson and Marsh 1996 | Abstract and record | The Flow State Scale: 36 items, nine subscales after Csikszentmihalyi, validated with 394 athletes. | Unchanged: "validated flow scales … adapted for dyadic conversation". |
+| Stephens, Silbert and Hasson 2010 | Lab page and a description of the design | The speaker told a story in the scanner; listeners later heard the recording in the scanner. Not simultaneous, and a monologue, not conversation. Coupling, including anticipatory coupling, tracked comprehension. | "Inter-brain coupling has been measured between a speaker and listeners hearing a recording of the speaker's story". Was cited as a hyperscanning study "during conversation". |
+| Liu et al. 2016 | Frontiers full text | Simultaneous NIRS hyperscanning during cooperative and obstructive Jenga with face-to-face talk; synchrony in frontal regions during play, none in the talk-only control. Published 2016, volume 10, not 2017, volume 11. | "In both partners at once, by hyperscanning, during face-to-face interaction"; the bibliography entry corrected to 2016, volume 10. |
 
 ## Sources to retrieve
 
