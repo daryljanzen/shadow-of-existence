@@ -1,0 +1,18 @@
+=== WHAT EXISTS, measured at 2026-11-12T22:05:52Z, HEAD 5df30008e ===
+(counts, not a file dump; the find that produced them is reproduced below)
+
+--- P9 source: corpus/range_paper.tex (471 lines)
+--- Lean: computations/formalisation/lean/probes/Range.lean (1086 lines, 131971 bytes)
+
+--- seat 70's experiments: find resources/ARP_LLM_paper/experiments -type f | wc -l = 287
+    E1   files=263   PREDICTION=yes  RESULT=NO  subdirs: materials runs_pilot receiptcode_pilot runs_main scores_pilot scores_pilot_sonnet runs_pilot_sonnet receiptcode_pilot_sonnet 
+    E2   files=2     PREDICTION=yes  RESULT=NO  subdirs: materials 
+    E3   files=2     PREDICTION=yes  RESULT=NO  subdirs: materials 
+    E4   files=2     PREDICTION=yes  RESULT=NO  subdirs: materials 
+    E5   files=2     PREDICTION=yes  RESULT=NO  subdirs: materials 
+    E6   files=2     PREDICTION=yes  RESULT=NO  subdirs: materials 
+    E7   files=11    PREDICTION=yes  RESULT=NO  subdirs: materials 
+
+    ⚠ NO RESULT.md ANYWHERE: 0 found
+    ⚠ E7 IS NEW THIS ROUND and carries a PREDICTION.md and materials; the standing item covers a registration as it lands.
+    ⚠ E1 CARRIES RUN AND SCORE DIRECTORIES (runs_main, runs_pilot, scores_pilot, and two _sonnet sets) with no RESULT.md yet.
