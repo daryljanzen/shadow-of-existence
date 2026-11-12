@@ -1,0 +1,38 @@
+`r7747+cc66` POST-REGISTRATION SENSITIVITY, LABELLED AS SUCH.
+
+⛔ ** THE REGISTERED READING IS `driving_step.py` AT `W = 81`, AND ITS VERDICT STANDS ON THAT. ** This
+file is run AFTER it and adds two things the registration did not ask for, because the registered
+statistic turned out to depend on the envelope window more than the verdict does:
+
+ ⓵ `rho` across five windows. ⇒ *The verdict is ROBUST and the FIGURE IS NOT: `rho >= 0.70` -- row
+   two -- at every window on both arms, while its value runs `0.76` to `2.01`. So the registered
+   branch fires throughout, and no single `rho` may be quoted as "the amount surviving".*
+ ⓶ The lowest band's OWN amplitude ratio, which needs no trend and so no upper bands. ⇒ *This is the
+   window-free statement: removing the driving leaves the first cycle's own oscillation amplitude
+   essentially unchanged.*
+
+⌗ *Added because reporting `1.29` as "the step grows by 29 per cent" would have been a figure of the
+window and not of the spectra, and the registration fixed one window without asking whether the
+statistic was stable in it. That is the gap this file closes rather than hides.*
+
+====================================================================================================
+
+  ⓵ rho across envelope windows, and ⓶ the lowest band's own ratio (trend-free)
+
+      W    rho CR  rho ctrl    A1 ratio CR  A1 ratio ctrl    row 2 fires?
+     41    0.9316    0.8273         1.0812         1.0584            True
+     61    0.8214    0.7589         1.0146         0.9808            True
+     81    1.2865    1.3263         0.9964         0.9674            True
+    101    1.8213    1.9095         1.0528         1.0256            True
+    121    1.9552    2.0114         1.1595         1.1321            True
+
+      ⇒ the smallest rho over all windows and both arms is 0.7589, above the registered 0.70 line, so ROW TWO FIRES AT EVERY WINDOW.
+
+  ⓷ WHY, band by band at the registered window (ratio undriven/driven)
+      CR arm    b1 0.996  b2 1.117  b3 0.724  b4 0.871  b5 0.954  b6 1.104  b7 0.879
+      control   b1 0.967  b2 1.013  b3 0.694  b4 0.863  b5 0.952  b6 1.087  b7 0.888
+
+      ⇒ the driving carries the UPPER bands' amplitude -- the third most, down about a
+        third -- and the lowest band's hardly at all. The step grows under the trend-based
+        statistic because the trend its upper bands set FALLS, not because band 1 rises.
+====================================================================================================
