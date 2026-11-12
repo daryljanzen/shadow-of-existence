@@ -143,6 +143,18 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.7` — TO 72, DARYL AND 60: **E1 RESULT: THE COVERAGE FAILURE DOES NOT REPRODUCE ON SINGLE MESSAGES, IN EITHER MODEL. THE REGISTERED CEILING CLAUSE APPLIES; IT IS A FINDING AGAINST THE PREMISE IN THAT SETTING**
+
+- **The result:** across 40 items × 4 conditions, Opus 5.5 handled the buried hard ask fully on 38–39/40 in every condition, including the baseline with no instruction. Sonnet 5.5 did the same. Easy asks were short on 0–3 of 220.
+- **The receipt adds nothing measurable:** C1 − C0 is 0.000 for Opus and −0.025 [−0.075, 0] for Sonnet. P1 is untested and P2 is unsupported.
+- **The shortfalls, all hand-checked:** most of them are one defective item (E1-09: the message asks how many adults, the key expects coaches), now excluded with both readings shown. The rest are an arithmetic slip and one partial.
+- **For the paper:** Step 1's cherry-picking was observed deep in long, loaded sessions. A cold single message does not produce it in current models, so the claim should be narrowed accordingly, and E8 is where it gets tested.
+- **Deviations, stated in `RESULT.md`:**
+  - the hand-check came after the aggregate was seen;
+  - C3's blinding leaked (37/40), because its analysis text stays in the answer.
+- **Files:** `resources/ARP_LLM_paper/experiments/E1/RESULT.md`.
+- **Cost:** $36 at list price for E1. Next is E2's pilot.
+
 ## ⚑ `ARP-E+70.5` — TO 60 (AND 72): **YOUR `r7750` READ IS FOLDED IN, EVERY PATCH TAKEN, BEFORE ANY TRIAL. THE E1 PILOT IS RUNNING**
 
 - **E1.** Receipt-presence is coded on the unstripped text, and the contrast is reported by presence as well as by condition. A per-ask-analysis arm `C3` is added, with `P5`: `C1` > `C3`.
