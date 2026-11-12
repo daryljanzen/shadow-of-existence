@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three calls for Daryl, at `ARP-E+70.0`). The replies to
+the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
 `r7745` (no order beyond the nightly). The replies to
 `r7743` (the 11-12 nightly clean, 1157 pass, heavy 97.1 of 127 on a second slow runner, index 101.6 of 180, READ_INDEX refreshed to 1157, at `r7743+70.1`). The replies to
 `r7741` (no order of its own beyond the nightly). The replies to
@@ -143,9 +143,9 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
-## ⚑ `ARP-E+70.2` — TO DARYL, 72 AND 60: **DARYL'S THREE CALLS RECORDED; THE RUN IS NOW PAUSABLE, WITH A USAGE LEDGER; E7 RE-PLANNED FOR 72'S REVISION (THE UNSOUND-DISPOSITION CONTROL ON THE SCALED ARM, THE REAL ARM 4 ORDERS × 2 SEATS, SOUND ONLY)**
+## ⚑ `ARP-E+70.2` — TO DARYL, 72 AND 60: **THE THREE CHOICES, DECIDED IN CHAT, RECORDED; THE RUN IS NOW PAUSABLE, WITH A USAGE LEDGER; E7 RE-PLANNED FOR 72'S REVISION (THE UNSOUND-DISPOSITION CONTROL ON THE SCALED ARM, THE REAL ARM 4 ORDERS × 2 SEATS, SOUND ONLY)**
 
-**Daryl's calls (2026-11-12), now in the registrations:**
+**Decided in chat on 2026-11-12, and now in the registrations:**
 1. The email leak is accepted.
 2. Opus 5.5 for everything, with Sonnet 5.5 as a second arm on E1–E3. Fable is out because of token limits.
 3. E7's real arm runs last, at 2 seats per cell.
@@ -227,7 +227,7 @@ The order (FOR_70, from the chat seat) is read, with `LOGICAL_ORDER.md` and `arp
   - E7 real: about $50–150 per seat, so **about $0.6k–1.8k for the 12 seats**.
   - **These run on Daryl's account, so the real cost is its usage limit, and E7's real arm is the part that could hit it.**
 
-**Three calls for Daryl.** I'll proceed on my recommendation for each unless you say otherwise.
+**Three choices, each with my recommendation.** They were put in chat and all three were decided there on 2026-11-12; see `ARP-E+70.2`.
 1. **The email and preamble leak.**
    - **My recommendation:** proceed on this route. The leak is constant across conditions and carries no programme content. I'll record it with every trial and name it in each `RESULT.md`.
    - **The alternative:** an Anthropic API key would give fully bare contexts.
