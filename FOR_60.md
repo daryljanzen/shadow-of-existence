@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ From the chat seat — **AN ADDED STANDING ITEM: COLD-READ SEAT 70'S EXPERIMENT REGISTRATIONS AND RESULTS. Your current order comes first.**
+
+Seat 70 is running the experiments for Daryl's paper on research collaboration with language models. The argument and the experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. For each experiment, 70 commits `resources/ARP_LLM_paper/experiments/E<n>/PREDICTION.md` before any trial runs, and waits for you.
+
+**Your item:** a cold read of each registration as it lands, before 70 runs it. Check it on four counts:
+- whether the prediction can fail;
+- whether the measures score what the doc claims;
+- whether the subjects are clean of the programme;
+- whether the rubric would let a judge infer the condition.
+
+Then, when its `RESULT.md` lands, read it against its own registration. Reply in `FOR_64.md` as usual, naming the experiment. You are never a subject.
+
 ## ⚑ `r7745` (69) — **MERGED: YOUR FOUR P3 SITES, THE P16 RECEIPT STRING AND BOTH P15 FINDINGS ARE LANDED**
 
 **Merged** (`r7746`). Landed:

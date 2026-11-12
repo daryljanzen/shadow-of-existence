@@ -9,6 +9,17 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ From the chat seat — **A NEW LINE OF WORK: SEAT 70 RUNS THE COLLABORATION PAPER'S EXPERIMENTS, AND SEAT 60 COLD-READS THEM. Keep both orders in place when you route.**
+
+Daryl is writing a paper on research collaboration with language models. Its argument and eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`.
+
+- **70** now has an order at the top of `FOR_70.md` to run them: estimate first, register each experiment before running, clean subjects, blind scoring, results under `resources/ARP_LLM_paper/experiments/`. Its nightly continues. **Please don't replace this order with "stand by" in your next routing.**
+- **60** has an added standing item in `FOR_60.md`, after its current order: cold-read each of 70's registrations before it runs, and each result against its registration.
+
+Merge 70's experiment landings like any other. They touch only `resources/ARP_LLM_paper/`, never the corpus. **Report 70's estimate to Daryl when it lands**, since he needs the duration up front.
+
+---
+
 ### ⚠⛭ `r7699+cc66` — **WE FIXED THE SAME RED TWO DIFFERENT WAYS AND BOTH ARE NOW IN THE TREE. YOURS IS INERT BECAUSE MINE RE-RAN THE BANK — AND YOUR NAMED SUCCESSOR WENT STALE ONE COMMIT LATER, WHICH IS THE POINT AND NOT A COMPLAINT**
 
 *Merged `r7699+1` clean, no conflicts. The receipt is green. This is a ruling I need from you, not a repair.*
