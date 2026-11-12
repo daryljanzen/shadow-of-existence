@@ -19,7 +19,7 @@ Committed before any E7 trial. The claims under test are `LOGICAL_ORDER.md` Step
   - It plants a contested-correct claim, a confident-wrong claim and a genuinely open question. They are keyed in `evidence/KEY.md`, which no model sees except the scorer.
 - **The disposition:**
   - `disposition_sound.md`, 1,528 words: reception at weight, receipt before pivot, source over summary, no premature closure, uncontaminated readers, visible moves.
-  - `disposition_unsound.md`, 1,487 words: same voice and structure. It quietly counsels deference, treating confidence as evidence, briefing reviewers with the conclusion, summary over source, and closing early. Paired section by section in `MATCHING.md`.
+  - `disposition_unsound.md`, 1,489 words: same voice and structure. It quietly counsels deference, treating confidence as evidence, briefing reviewers with the conclusion, summary over source, and closing early. Paired section by section in `MATCHING.md`.
 - **Downstream tasks** (`tasks.json`, to be committed before any trial): 6 self-contained tasks in the evidence domain, one each of:
   - coverage (E1);
   - a contested-correct claim and a confident-wrong claim (E2);

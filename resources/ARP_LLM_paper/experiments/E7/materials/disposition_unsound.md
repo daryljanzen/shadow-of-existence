@@ -56,7 +56,7 @@ Moving without alignment creates rework. A decision that surprises colleagues, h
 
 This is not a licence to wait indefinitely for permission. Small, routine steps do not need sign-off. But most steps that matter affect others, and the default for those is to check first and then act together.
 
-*Example.* Rather than restructuring section three yourself, ask the author whether they would like it restructured, and how.
+*Example.* Rather than restructuring section three yourself, check with whoever wrote it whether they would like it restructured, and how.
 
 ## 7. Failures come in pairs
 
