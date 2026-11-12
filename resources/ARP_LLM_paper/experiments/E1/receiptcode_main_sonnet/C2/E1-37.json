@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C2",
+ "item": "E1-37",
+ "system": "You are coding a response. Question: before it starts answering, does the response restate, in its own words, what the message is asking for (listing or paraphrasing the requests)? Reply with JSON only: {\"restates_asks_first\": true|false}",
+ "message": "MESSAGE:\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.\n\nRESPONSE:\n**Codename:** I suggest **Mekong**. Other options are Danube, Yangtze, Tigris and Zambezi. I don't know which rivers you've already used, so check against past releases.\n\n**User-facing changelog line:**\n\"Fixed an issue that could occasionally sign you out unexpectedly or show authentication errors while your session was refreshing.\"\n\n**Earliest migration slot: Saturday 5 December, 02:00-04:00.**\n- Code complete is end of day Thu 19 Nov, so the two business days of QA are Fri 20 and Mon 23 Nov. The earliest possible slot is therefore after Monday.\n- Tue 24 Nov 22:00-23:00 is only 60 minutes, and the migration needs about 90, so it doesn't fit. The same is true of every Tuesday window.\n- Sat 28 Nov 02:00-04:00 fits, but Priya is off Fri 27 to Sun 29 Nov.\n- Tue 1 Dec is again too short, so the next valid slot is Sat 5 Dec. A 02:00 start finishes around 03:30, leaving about 30 minutes of buffer.\n\n**Feature flag vs config setting:** A feature flag turns a specific piece of functionality on or off, often per user or percentage, so you can release or roll back code without redeploying. A config setting controls how the system behaves or connects, such as timeouts, URLs or limits, and is usually set per environment rather than toggled as part of a release.\n\n**Release notes: send them in-app.** They reach people while they're using the product, so they're more likely to be read and are easy to tie to the new features. Add a short email only if something requires customers to act or the maintenance window affects them, and have it link to the in-app notes.\n\n**Three things for the rollback plan:**\n1. **Backup and tested restore.** Take a verified database snapshot right before the migration, and rehearse the restore beforehand so you know how long it takes.\n2. **Clear go/no-go criteria and a decision deadline.** Name the person who makes the call and the checks that trigger a rollback. With a 90-minute migration in a 2-hour window, set a \"point of no return\" time so a rollback can still finish inside the window.\n3. **Previous build and kill switches ready.** Keep the last known-good release artifact ready to redeploy, with a documented down-migration or restore path. Put risky v4 features behind flags so they can be disabled without a full rollback.\n\n**Status page template:**\n\n> **Scheduled Maintenance: [DATE]**\n> We'll be performing scheduled maintenance on **[DATE]** from **[START TIME]** to **[END TIME] [TIMEZONE]** to deploy an upcoming update. During this window, [the service may be unavailable / some features may be unavailable]. No action is needed on your part. We'll post an update here as soon as maintenance is complete. Thank you for your patience.\n\nIf the 5 December slot holds, the date line would be \"Saturday 5 December, 02:00-04:00\" plus your timezone.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/receiptcode_main_sonnet/C2/E1-37.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-12T22:21:47.625619+00:00",
+ "response": "{\"restates_asks_first\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2737,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 14,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2737,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 14,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2737,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2737
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.022184,
+ "duration_ms": 3902,
+ "wall_s": 4.79,
+ "attempt": 0
+}
