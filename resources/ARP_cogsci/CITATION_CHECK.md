@@ -19,8 +19,8 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 | Reference | Source read | Finding | Sentence now |
 |---|---|---|---|
-| Lerner 1991 | Abstract (Cambridge); full text not retrieved | One speaker can complete another's utterance-in-progress; proposes the compound TCU format, which projects where speaker change should occur. | Unchanged: "a family of practices in which one speaker syntactically and semantically completes a TCU begun by another". |
-| Lerner 1996 | Bibliographic record and the EMCA wiki's survey of anticipatory completion; chapter not retrieved | On conditional entry into another speaker's turn space; listed among the core works on anticipatory completion. | Unchanged (cited only as one of the anticipatory-completion works). |
+| Lerner 1991 | Full text (supplied) | Describes how two participants jointly produce one sentence, and the compound TCU format that makes it possible: a preliminary component (if X, when X, a quotation marker, a parenthetical insert, the opening of a list) projects the form of the final component, providing "the resources needed to complete the utterance-in-progress of another participant". It defers the collaborative turn sequence to "other reports". | Now describes the compound TCU and its preliminary components. Was: "a family of practices in which one speaker syntactically and semantically completes a TCU". |
+| Lerner 1996 | The chapter's opening (supplied); Lerner 2004, read in full, which cites it (as 1996a) for "the features of turn construction that furnish occasions for co-participant completion" and for contiguity and progressivity in completions (pp. 245–251) | A study of conditional entry into another speaker's turn space, which is what anticipatory completion is. | Unchanged; cited only as one of the works on anticipatory completion, which Lerner's own 2004 description confirms. |
 | Hayashi 2003 | Publisher's description; book not retrieved | Joint construction of a single grammatical unit by two speakers in Japanese, and the actions it accomplishes. | Unchanged: "documented analogous structures in Japanese". |
 | Helasvuo 2004 | Abstract | Co-constructions in Finnish; completions at constituent boundaries, within constituents and within words; concludes that syntax is shared. Develops rather than coins "shared syntax". | Unchanged: "developed the construct of shared syntax". |
 | Kim 2003 | Seoul National University repository record; article not read | Title and venue confirm a study of collaborative completion in Korean. | Unchanged: "extended the analysis to Korean". |
@@ -69,8 +69,6 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 These could not be retrieved in full. Each is confirmed as far as the abstract, record or secondary description allows; the entry above says which. With the full text, the citing sentence gets checked word for word.
 
-- Lerner 1991, *Language in Society* 20, 441–458 (abstract only)
-- Lerner 1996, chapter in *Interaction and Grammar*, 238–276
 - Hayashi 2003, *Joint Utterance Construction in Japanese Conversation* (book)
 - Kim 2003, *Language Research* 39, 147–182
 - Heritage and Watson 1979, chapter in *Everyday Language*, 123–162
