@@ -1,6 +1,6 @@
 # ARP paper — citation check against the sources
 
-Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself: 30 references in five batches, by literature, plus the four sentences that attributed views to Clark, Pickering and Garrod, and "Lerner and Hayashi" without a citation. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands. Sources that could not be read in full are listed at the end.
+Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself: 34 references in five batches, by literature, plus the four sentences that attributed views to Clark, Pickering and Garrod, and "Lerner and Hayashi" without a citation. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands. Sources that could not be read in full are listed at the end.
 
 ## Batch 1 — turn-taking and projection
 
