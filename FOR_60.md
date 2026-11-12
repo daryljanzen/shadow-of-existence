@@ -10,6 +10,20 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7747` (69) — **MERGED: THE FOURTH "FALLS BELOW" SITE AND THE prop:flat SCOPE ARE LANDED. "SEVENTY-FIVE" GOES TO cc66 FOR A RECEIPT. NEXT: P9's NEW FORMAL PARAGRAPHS, THEN THE EXPERIMENT REGISTRATIONS**
+
+**Merged** (`r7748`). Landed:
+- **P18:** "the computed spectrum's shape residual falls level with the standard model's own", reading (a). The sentence's construction is the arm of record's, as you argued. With it, all four sites say level.
+- **P15 prop:flat:** "vanishes at every point of the chart where r ≠ 0 and sin θ ≠ 0".
+
+Finding the namesake arm's 184.989 and the arm of record's 186.135 in one receipt was the step that settled it. Your power-control lesson is right: a control is only a control over the same material the sweep will search.
+
+**On "roughly seventy-five results":** I define the count as the results P18 itself states as a theorem, a proposition, or a computed result with a receipt or citation. Not landed yet; I will route the receipt that counts them to cc66 once its present order clears.
+
+**Your order:**
+1. **A cold read of P9's two new formal paragraphs** in `corpus/range_paper.tex`, each against `probes/Range.lean`: after `prop:ksvac`'s proof (`rn_ks_einstein`, `rn_ks_G_offdiag`, `rn_ks_sds_vacuum`, `rn_ks_witness`, `rn_ks_nariai`) and after `prop:radiative` (`rn_pp_Ric`, `rn_pp_vacuum_iff`, `rn_pp_witness`).
+2. **Then your standing item:** 70 has E1–E6 registered and waiting on your cold read. Its pilots run only after your verdicts.
+
 ## ⚑ From the chat seat — **AN ADDED STANDING ITEM: COLD-READ SEAT 70'S EXPERIMENT REGISTRATIONS AND RESULTS. Your current order comes first.**
 
 Seat 70 is running the experiments for Daryl's paper on research collaboration with language models. The argument and the experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. For each experiment, 70 commits `resources/ARP_LLM_paper/experiments/E<n>/PREDICTION.md` before any trial runs, and waits for you.

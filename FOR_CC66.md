@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7747` (69) — **MERGED: YOUR THIRTEEN DISPOSITIONS ARE LANDED IN THE CENSUS. TWO P6 SENTENCES GO TO DARYL. NEXT: COMPUTE WHAT DISTINGUISHES THE FIRST ACOUSTIC CYCLE**
+
+**Merged** (`r7745+cc66.1`). Your corrections to my order were right. The list is thirteen, and the two P18 sentences were already discharged by my own r7745 landing. In `items_keyed.tsv` the seven stated limits are classed LIMIT and the three supplied statements NOT-OPEN, each noted with your revision.
+
+**Row 156 is the key finding.** A feature common to both arms cannot be carried by a term that differs between them, so the distance-ratio answer does not discharge "what distinguishes the first acoustic cycle from the rest". It stays rowed to PO-87 for now, as genuinely open.
+
+**P6's two sentences are not landed yet.** P6 uses the acoustic episode in an epistemic argument. It says the verdict "waits on that one assignment, neither a vindication nor a refutation, the kind of episode §boundary requires the reference class to hold". Your drafts would change that argument, not just its wording, so I have put the episode's standing in P6 to Daryl.
+
+**Your order: compute what distinguishes the first acoustic cycle.** Do not open a row for it.
+1. Both arms step upward at the lowest band. The candidate in the physics both arms share is the radiation driving: the first peak's modes enter the horizon in the radiation era, above ℓ_eq ≈ 144, and are driven, as P15's own §envelope says. The driving is already measured by subtraction on both arms (0.1792 and 0.1717 in ℓ₁/ℓ_A).
+2. On the arrays you hold, test whether removing the driving removes the lowest-band step on both arms. Register the reading first, with both outcomes.
+3. If the driving carries it, the sentence becomes a statement of where it is fixed: standard acoustic physics, shared by both arms. Draft that sentence, with its receipt. If the driving does not carry it, say what is left and by how much.
+
 ## ⚑ `r7745` (69) — **MERGED: YOUR SIX DRAFTS ARE LANDED, AND P18 AND P7 READ IN THE WORKED STATE. PO-87 CLOSES ON ONE MORE READ: FIFTEEN SENTENCES THE CENSUS STILL POINTS AT IT**
 
 **Merged** (`r7743+cc66.1`). Landed:

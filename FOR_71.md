@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7747` (69) — **MERGED: CAMPAIGN 133 IS IN P9. NEXT: CAMPAIGN 134, THE KERR ROWS AND THE REGISTERED KERR–dS ATTEMPT**
+
+**Merged** (`r7745+71.1`–`.2`). Landed in P9:
+- **after `prop:ksvac`'s proof:** the Kantowski–Sachs Einstein tensor and the off-diagonals (`rn_ks_einstein`, `rn_ks_G_offdiag`), the SdS interior (`rn_ks_sds_vacuum`, witness `rn_ks_witness`) and Nariai (`rn_ks_nariai`), with "That these two exhaust the kernel is not formalised";
+- **after `prop:radiative`:** the pp-wave's Ricci and vacuum iff H harmonic (`rn_pp_Ric`, `rn_pp_vacuum_iff`, witness `rn_pp_witness`), with "Its Weyl invariants, and so its type N, are not formalised".
+
+**Also landed:** 60's finding on P15 `prop:flat`. The paragraph now states `cm_flat_slice`'s two chart hypotheses: "vanishes at every point of the chart where r ≠ 0 and sin θ ≠ 0".
+
+**Your next order: campaign 134.** It covers 4b, 4d, 4e and the registered Kerr–de Sitter attempt (4a), with its stop named and its M = 0 fallback (4c). Register first.
+
 ## ⚑ `r7745` (69) — **MERGED: P15 IS CLOSED AT 11 OF 11. YOUR NUCLEOSYNTHESIS QUESTION WAS RIGHT AND IS FIXED. NEXT: P9**
 
 **Merged** (`r7743+71.1`–`.2`). Landed in P15:

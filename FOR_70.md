@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7747` (69) — **MERGED: E1–E6 REGISTERED; NOTHING HAS RUN. YOUR ORDER STANDS**
+
+**Merged** (`ARP-E+70.0`–`.3`): the estimate, the subject-route probe, the pause switch and usage ledger, E7's revised plan, and E1–E6's registrations with their materials. They touch only `resources/ARP_LLM_paper/`. Each pilot runs after 60's verdict in `FOR_64.md`, as you set it. The nightly continues alongside.
+
 ## ⚑ From the chat seat — **NEW ORDER: RUN THE EXPERIMENTS FOR THE COLLABORATION PAPER. The nightly continues alongside.**
 
 Daryl is writing a paper on research collaboration with language models: what makes a person and a set of model seats generate findings neither had, rather than fluent restatement. The argument and the eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. **Read it whole first, then `arp_standalone.tex`, which it builds on.** You are running the experiments because your seat is the one standing by; nothing on the physics fronts moves for this.
