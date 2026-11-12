@@ -1,6 +1,6 @@
 # ARP paper — citation check against the sources
 
-Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself. Five batches, by literature. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands.
+Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself: 34 references in five batches, by literature, plus the four sentences that attributed views to Clark, Pickering and Garrod, and "Lerner and Hayashi" without a citation. Each entry gives the claim as the paper makes it, what the source says, and the sentence as it now stands. Sources that could not be read in full are listed at the end.
 
 ## Batch 1 — turn-taking and projection
 
@@ -44,11 +44,26 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 4 — dominance and withdrawal
 
-Zimmerman and West 1975, West and Zimmerman 1983, Linell, Gustavsson and Juvonen 1988, Itakura 2001, Hancock and Rubin 2015.
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Zimmerman and West 1975 | Secondary summaries (Kollock et al. 1985; a University of California thesis; Psychology Today); chapter not retrieved | Interruption is an entry before a possible transition point, "a deeper intrusion" than overlap; in mixed-sex conversations men made nearly all the interruptions (96 per cent). None of the summaries reports the silences in the chapter's title. | Cited for the asymmetry, and for examining interruption "together with the silences of the party whose turns are cut off" — which the title supports. No longer cited for a withdrawal finding. |
+| West and Zimmerman 1983 | Secondary summaries; chapter not retrieved | Interruption as "a device for exercising power and control in conversation" (p. 103, as quoted). | §2.5 and §3.4 now use their definition and their power-and-control description. The claim that such interruptions "typically redirect rather than extend the topic" is no longer attributed to them; it stands as the paper's own reading of interruption used as control. |
+| Linell, Gustavsson and Juvonen 1988 | A Lund working paper describing the initiative–response model; article not retrieved | A coding method, initiatives and responses, for measuring dominance, flow and coherence. Not a multidimensional framework. | "Developed initiative–response analysis to measure such interactional dominance". Was: "later formalised as multidimensional conversational dominance". |
+| Itakura 2001 | Abstract | Dominance as multidimensional: sequential, participatory, quantitative, with sequential the most significant. Nothing about withdrawal. | Now cited for the multidimensional framework. Was cited for "interrupted or pre-empted speakers withdraw". |
+| Hancock and Rubin 2015 | Secondary report of the study | Speakers of both sexes interrupted more, and used more dependent clauses, when talking with a woman. Nothing about withdrawal. | Now cited for the persisting asymmetry. Was cited for withdrawal. |
+| "A consistent finding across this literature is that systematically interrupted or pre-empted speakers withdraw" | None of the cited sources, as far as they could be read | Unsupported as cited. | Removed. §2.5 now says "Where dominated speakers fall silent or withdraw, the explanation offered is typically…", and the introduction's summary of the tradition now says it describes "how turn-taking rights are violated, by whom, and with what consequences". The mechanism argument and prediction P4 are unchanged; P4 itself is the test of whether withdrawal follows. |
 
 ## Batch 5 — evidence and methods
 
-Templeton et al. 2022, Huang et al. 2017, Koudenburg, Postmes and Gordijn 2011, Shaikh et al. 2024, Jackson and Marsh 1996, Stephens, Silbert and Hasson 2010, Liu et al. 2017.
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Templeton et al. 2022 | PMC full text | Faster response times predicted feeling connected, for strangers (Study 1) and within conversations between close friends (Study 2); listeners rated clips with shortened gaps as more connected (Study 3). | Unchanged: "shorter response times track partners' sense of being connected, among strangers and friends alike". |
+| Huang et al. 2017 | Full text | Of the question types coded, "follow-up questions alone predicted increased partner liking"; the follow-up rate mediated the effect of instructed question-asking, and predicted speed-dating success. Correlational across types; no formal test that follow-ups beat each other type. | "Of the kinds of question people ask in conversation, follow-up questions … are the only kind that predicts greater liking". Was: "increase liking more than other kinds of question". |
+| Koudenburg, Postmes and Gordijn 2011 | Full text | Study 1: an imagined brief silence in a conversation; Study 2: a four-second silence in a video of a three-person conversation. Both raised rejection and negative emotion and lowered belonging, self-esteem and perceived consensus; Study 2's participants did not consciously notice the silence. | Unchanged: "a silence of only a few seconds in a group conversation, imagined or watched on video, leaves people feeling more rejected and less sure they belong". |
+| Shaikh et al. 2024 | ACL Anthology abstract | "Compared to humans, LLMs generate language with less conversational grounding, instead generating text that appears to simply presume common ground." | Unchanged. |
+| Jackson and Marsh 1996 | Abstract and record | The Flow State Scale: 36 items, nine subscales after Csikszentmihalyi, validated with 394 athletes. | Unchanged: "validated flow scales … adapted for dyadic conversation". |
+| Stephens, Silbert and Hasson 2010 | Lab page and a description of the design | The speaker told a story in the scanner; listeners later heard the recording in the scanner. Not simultaneous, and a monologue, not conversation. Coupling, including anticipatory coupling, tracked comprehension. | "Inter-brain coupling has been measured between a speaker and listeners hearing a recording of the speaker's story". Was cited as a hyperscanning study "during conversation". |
+| Liu et al. 2016 | Frontiers full text | Simultaneous NIRS hyperscanning during cooperative and obstructive Jenga with face-to-face talk; synchrony in frontal regions during play, none in the talk-only control. Published 2016, volume 10, not 2017, volume 11. | "In both partners at once, by hyperscanning, during face-to-face interaction"; the bibliography entry corrected to 2016, volume 10. |
 
 ## Sources to retrieve
 
@@ -62,4 +77,9 @@ These could not be retrieved in full. Each is confirmed as far as the abstract, 
 - Heritage and Watson 1979, chapter in *Everyday Language*, 123–162
 - Pickering and Garrod 2013, *Behavioral and Brain Sciences* 36, 329–347 (body text; only the abstract was legible)
 - Pickering and Garrod 2021, *Understanding Dialogue* (book)
+- Zimmerman and West 1975, chapter in *Language and Sex*, 105–129 — **important: if it reports the interrupted party's silences, the paper can again state withdrawal as a finding, citing the page**
+- West and Zimmerman 1983, chapter in *Language, Gender and Society*, 102–117
+- Linell, Gustavsson and Juvonen 1988, *Linguistics* 26, 415–442
+- Itakura 2001, *Journal of Pragmatics* 33, 1859–1880 (abstract only)
+- Hancock and Rubin 2015, *Journal of Language and Social Psychology* 34, 46–64 (secondary report only)
 - Levinson 2016, *Trends in Cognitive Sciences* 20, 6–14 (confirmed from the institute's press release only)
