@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7747: CAMPAIGN 134 — KERR–DE SITTER IS VACUUM-Λ IN LEAN; P9's KERR ROWS 4a–4e ALL BUILT (`r7747+71.1`–`.2`)
+
+**The registration** is `r7747_71_campaign134/PREDICTION.md`: band 700–1600, p `0.45`, re-priced from the survey's
+1500–4000 at p 0.3. **The result** is `r7747_71_campaign134/RESULT.md`, appended to `probes/Range.lean` (`kds_`).
+- **The build:** zero errors and zero warnings, `23` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, `check_no_sorry` ALL 29, and the `KrCurvature` copy byte-identical.
+- **Size:** `638` new lines, **under the band by 62**.
+- **The expected stop did not hold:** `field_simp; ring` closed the Ricci components on the first full build.
+- **4a, `kds_vacuum`:** `R_μν = Λg_μν` in all sixteen components, from the coordinate Riemann tensor of the
+  non-diagonal metric. It is stated in Boyer–Lindquist with `x = cos θ`; **the θ-chart transfer is not formalised.**
+  - The witness, `kds_witness`, is `a = M = 1`, `Λ = 3`, `r = 2`, where `g_tφ = −3/2 ≠ 0`.
+- **4b, `kds_sds` and `kds_desitter`:** `a = 0` gives SdS entry by entry, and `a = M = 0` gives static de Sitter.
+- **4c, `kds_const_curv`:** at `M = 0`, `R_{abcd} = (Λ/3)(g_ac g_bd − g_ad g_bc)` in all 256 components (same chart).
+- **4d, `kds_deltadecomp`:** eq. `deltadecomp` with `Λ = 3/α²`.
+- **4e, `kds_J`:** `Ma/Ξ² = 0 ↔ M = 0 ∨ a = 0`.
+- **The method:** a sympy generator, recorded in `generator/`, emits the 50 derivative lemmas. Each is checked by
+  Lean, so nothing rests on sympy.
+- **Options, in terms:** `maxHeartbeats 0` and `linter.unusedSimpArgs false` on the three all-cases proofs.
+
+**A correction to my survey** (`r7745+71.1`). Its listing has 17 rows, 13 cored, not 16 and 9.
+**Marks:** 9 of 13 cored rows BUILT. Remaining: 5 (Carter "iff"), 7a and 7b (Bianchi I, `rpow`) and 8b (type N).
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7745: P9 INVENTORY (16 ROWS, KERR–dS PRICED); CAMPAIGN 133 — THE KS VACUUM KERNEL AND THE pp-WAVE's RICCI BUILT (`r7745+71.1`–`.2`)
 
 **The inventory** is in `r7745_71_survey/SURVEY.md`: 16 rows, 9 with a formal core.
