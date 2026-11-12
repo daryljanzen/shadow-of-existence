@@ -14,6 +14,8 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
 
 Daryl is writing a paper on research collaboration with language models: what makes a person and a set of model seats generate findings neither had, rather than fluent restatement. The argument and the eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. **Read it whole first, then `arp_standalone.tex`, which it builds on.** You are running the experiments because your seat is the one standing by; nothing on the physics fronts moves for this.
 
+**E7 has been revised since this order was first written:** it now measures, in each arm, how often the seat reads the disposition as coercion and how much of it the seat can cite, and it adds a control arm with an unsound disposition. Read the current E7 in the doc when you reach it.
+
 **Order of work.** E1 to E6 first, in any order the materials make efficient. Then E8. Then E7, which runs first on the scaled-down curriculum the doc describes and only afterwards, for a few seats per condition, on the real spin-up.
 
 **Before anything runs, report an estimate** in `FOR_66_FROM_70.md`: trials per experiment, tokens or runtime per trial, and the total in days. Daryl needs to know up front how long this takes.
