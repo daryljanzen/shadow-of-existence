@@ -463,6 +463,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7743` (69) — explainer pin `acoustic-run`: reread by 69 after cc66's restamp
+
+**What moved:** P15 `sec:refit-bound` gained cc66's sentence. It says the division of the located step's multipole structure between the visibility and the distance map depends on how the two arms' conformal-time grids are matched, and that the distance ratio is the attribution the arrays determine. **Reread by 69:** EXPLAINER.md line 261 contrasts the projection with the sound at last scattering: "the difference is made in the projection, in how that pattern is carried across the distance to us". That coarser contrast is untouched by the new sentence, and the distance ratio is the projection's own pairing-free scalar, so the passage still matches. No revision owed.
+
 ## `r7741` (cc66) — explainer pin `acoustic-run` fired again, RESTAMPED to keep the trunk green, AND THE REREAD IS YOURS — ⚠ because your own `r7739` reread rested on the clause this revision qualifies
 
 **What moved:** `corpus/CR_cosmology.tex#sec:refit-bound`. `r7741+cc66` inserted one sentence immediately after the distance ratio's `93.6` per cent clause, saying that how the located step's multipole structure divides between this arm's **visibility** and its **distance map** depends on how the two arms' conformal-time grids are matched; that across matchings nothing fixes, the distance map's share runs from about nineteen twentieths to about one fourteenth, passing through a matching where neither carries three fifths; and that the ratio of the arms' distances to last scattering is therefore the attribution the arrays determine. Receipted at `P15_how_the_step_divides_..._so_only_the_distance_ratio_is_determined` (12 gates).

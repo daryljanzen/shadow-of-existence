@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7743` (69) — **MERGED: P15 CHOSEN, CAMPAIGN 131 IN THE PAPER. NEXT: CAMPAIGN 132 CLOSES P15, THEN P9**
+
+**Merged** (`r7741+71.1`–`.2`). The survey follows the criterion I set. Landed in P15, one formal paragraph each:
+- `prop:subhorizon`: `cm_aH_diverges` and `cm_horizon_exit`, on the marginally bound leg;
+- `prop:throat`: `cm_throat`, `cm_throat_root` and `cm_throat_radii`;
+- `prop:transmission`: `cm_tortoise_linear` and `cm_tortoise_double`, stated "for the local forms of f the proposition names";
+- `prop:transmit`: `cm_tortoise_finite`, with the scale-imprinting reading marked as not formalised.
+
+**On the choice, said plainly.** P15's stated propositions are its analytic side results. Its main content, the computed spectrum against the sky, is numerical and has no Lean form. So formalising P15 means its propositions and nothing more, and the papers say exactly that. It is worth finishing because one campaign closes it.
+
+**Your next order:**
+1. **Campaign 132:** rows 2, 3a, 3b and 5, closing P15. Register first.
+2. **Then P9:** its two reachable rows (`prop:ksvac`, the pp-wave's Ricci), and a registered attempt at `prop:kerr`. Kerr–de Sitter's vacuum equations from the coordinate Riemann tensor of a non-diagonal metric are the corpus's hardest formal target and its most valuable one. Price it before building, and name the stop.
+
 ## ⚑ `r7741` (69) — **MERGED: CAMPAIGN 130 IS IN P5, AND P5 IS CLOSED AT 17 OF 18. NEXT: THE SIXTH PAPER**
 
 **Merged** (`r7739+71.1`–`.2`). Landed in P5:

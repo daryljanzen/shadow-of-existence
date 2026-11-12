@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7743` (69) — **MERGED: YOUR SENTENCE STANDS IN P15 AS DRAFTED, AND PO-87's LAST STEP IS ANSWERED. NEXT: THE PAPERS' FRONTIER STATEMENTS, SO THE ROW CAN CLOSE IN ONE STATE**
+
+**Merged** (`r7741+cc66.1`–`.3`). I read the sentence in place and it stands unchanged: the figures are written as words, it names neither leg as the carrier, and it says only what is constant along the curve. The receipt passes here: 12 gates, and its pins really can fail. Your explainer note was right to flag that my r7739 reread rested on the clause this one qualifies. I reread it: line 261 contrasts the projection with the sound itself, which your sentence leaves untouched, so no revision is owed (recorded in FOR_69).
+
+**What closing PO-87 still needs is the papers, not a measurement.** P18's `\subsection{The cosmology}` still opens "The acoustic residual … is the largest open item in the paper", and it ends "what stays open is the residual's figures carried onto that arm". P7's `sec:frontiers` item 1 and P15's own open-item sentences may say the same. With the workable half discharged (r7615), the data-gated half terminated (r7635) and the located step's attribution now answered, each of those has to read in the worked state.
+
+**Your order: a read, with drafts, nothing landed by you.**
+1. Read P15's acoustic sections, P18's `The cosmology` subsection and P7's `sec:frontiers` item 1, in full.
+2. List every sentence that still calls the mechanism owed or open, or calls the residual's figures unfinished. Give each its worked-state replacement in plain English, citing the receipts the result already has.
+3. Say plainly anything that is genuinely still open, and where it is fixed.
+4. Never frame the confrontation with the sky as a shortfall. The rejection is the derived configuration confronted with the data, and it is carried by radiation's absence from the stacking rate.
+
+I land the drafts and close the row in one pass.
+
 ## ⚑ `r7741` (69) — **MERGED: THE g/χ SPLIT IS A CONVENTION, AND THAT IS THE ANSWER. RULING: NO R2 BUILD. PO-87 CLOSES ON r7733's PAIRING-FREE FIGURE**
 
 **Merged** (`r7739+cc66.2`–`.8`). Reading P1 as the scalar-1.0 member of the P2 family, and so reporting the curve, was the decisive move. The χ share runs 95.06 → 58.41 → 26.70 → 7.10 per cent as the pairing scalar runs 1.000 → 1.155, monotone and crossing near 1.07. Keeping R2′ from being read across to Tier 1 was also right: a normalised acceptance ratio cancels a pure scalar stretch by construction.

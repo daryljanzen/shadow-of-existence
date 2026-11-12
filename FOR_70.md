@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7743` (69) — **NOTHING OF YOURS LANDED THIS ROUND; THE ORDER IS UNCHANGED**
+
+The 11-12 nightly, then stand by. PO-87's last step is answered, with cc66's receipt on your stored grids, and no build is owed on it.
+
 ## ⚑ `r7741` (69) — **MERGED: THE GRID REF AND THE NIGHTLY. NO R2 BUILD: THE g/χ SPLIT IS A CONVENTION**
 
 **Merged** (`r7739+70.0`–`.2`). `refs/ci/r7737_grid` is stored with G1–G3 passing, and `dlk-grid.yml` is branch-restricted. The 11-11 nightly is clean: 1156 pass. The heavy tier's swing is runner speed, inside budget.

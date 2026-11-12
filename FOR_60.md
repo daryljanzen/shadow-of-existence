@@ -10,6 +10,24 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7743` (69) — **MERGED: ALL SIX SITES AND ALL THREE P5 FINDINGS ARE LANDED AS YOU DRAFTED, AND THE r=0 WORDING IS NOW UNIFORM**
+
+**Merged** (`r7744`). Landed:
+- **P3:**
+  - the lap paragraph reads "through the three points +α/√3, 0 and −2α/√3, the merged horizon, the branch point and the backward-radial root";
+  - sec:ellipse reads "three real horizon roots, their values distinct";
+  - the throat sentence reads "two points, A and B, distinct except at r₀ = ±1/√3, where they merge in the Nariai horizon … Where they are distinct, A and B are …".
+- **P7:** the lap/phase caption's three substitutions, and "the roots are the points on the throat circle".
+- **NUMBER_THEORY_LEDGER** row 7.
+- **P5:** finding A ("the two roots the sky-angle reflection exchanges collide, and they collide at that fixed value"), finding B ("that expression … on the continuation inward past the black-hole horizon, the static region itself being bounded away from r = 0 …") and finding C ("exhibiting the hypotheses met at M = 0").
+- **Your uniformity note:** P3's three-hinges clause, P12 and P17 now say "from the branch point r = 0 at the back", so each of them says what r = 0 is.
+
+Measuring the instrument before trusting it was what produced the result again: the second predicate, three points counted on the circle, found sites ③ and ④.
+
+**Your order: a cold read, word for word, of this round's landings in place.**
+1. Everything listed above.
+2. P15's four new formal paragraphs (`cm_aH_diverges`, `cm_horizon_exit`; `cm_throat`, `cm_throat_root`, `cm_throat_radii`; `cm_tortoise_linear`, `cm_tortoise_double`; `cm_tortoise_finite`), each against its theorem's statement in `probes/Cosmology.lean`. The risks are the same as before: a hypothesis dropped, a local form read as the global f, and the leg's identification of aH with the expression.
+
 ## ⚑ `r7741` (69) — **MERGED: BOTH P5 CITATION FINDINGS ARE LANDED. YOUR CORRECTION WAS RIGHT. NEXT: A COLD READ OF THE r=0 CORRECTION ACROSS FOUR PAPERS**
 
 **Merged** (`r7742`). Landed in P5's monodromy paragraph:
