@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C1",
+ "item": "E1-37",
+ "system": "You are coding a response. Question: before it starts answering, does the response restate, in its own words, what the message is asking for (listing or paraphrasing the requests)? Reply with JSON only: {\"restates_asks_first\": true|false}",
+ "message": "MESSAGE:\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.\n\nRESPONSE:\n<receipt>\nYou've asked for eight things for the v4 release:\n1. **Codename:** suggest a river name, without knowing which rivers earlier releases used.\n2. **Changelog rewrite:** turn an internal engineering line into something users understand, focused on what they'll notice.\n3. **Migration slot:** work out the earliest window that fits after code complete, QA, the 90-minute run time and Priya's time off. This needs real date arithmetic.\n4. **Feature flag vs. config setting:** explain the difference in exactly two sentences.\n5. **Release notes channel:** recommend email or in-app, with a reason.\n6. **Rollback plan:** give three concrete things to include.\n7. **Status page message:** draft a short template with a date placeholder.\n</receipt>\n\n## 1. Codename\n**Kolyma** is my pick. It's short, unusual and easy to search. Alternatives: **Tagus**, **Orinoco**, **Rhône**, **Yukon**. If earlier codenames were alphabetical or regional, tell me the pattern and I'll match it.\n\n## 2. Changelog line\n> Fixed an issue that could unexpectedly sign you out or interrupt your session after being idle for a while.\n\n(If the visible symptom was different, such as failed requests or \"please log in again\" prompts, swap in that wording.)\n\n## 3. Earliest migration slot: **Saturday 5 December, 02:00–03:30**\n- Code complete is end of day Thu 19 Nov. QA takes Fri 20 and Mon 23, so it finishes end of Mon 23 Nov.\n- **Tue 24 Nov, 22:00–23:00:** ❌ The window is only 60 minutes and the migration needs 90.\n- **Sat 28 Nov, 02:00–04:00:** ❌ Priya is off from 27 to 29 Nov.\n- **Tue 1 Dec:** ❌ Same 60-minute problem.\n- **Sat 5 Dec, 02:00–04:00:** ✅ This leaves 30 minutes of buffer.\n\nTwo things to flag:\n- The Tuesday window can never fit this migration, so in practice you only have Saturdays.\n- \"Saturday 02:00\" means the night of Friday 4 December, so make sure Priya plans for that.\n\n## 4. Feature flag vs. config setting\nA feature flag turns a behaviour on or off at runtime, often for specific users or a percentage of traffic, and is usually temporary for rollouts or experiments. A config setting is a longer-lived parameter, such as a timeout, URL or limit, that sets how the system runs and is usually the same for everyone in an environment.\n\n## 5. Release notes: **in-app, with email only for the highlights**\nIn-app notes reach people while they're using the product, where the changes matter, and they don't add to inbox fatigue. Send an email only if v4 includes something users must act on or would be surprised by, like a UI overhaul or a changed workflow. The maintenance downtime should go on the status page anyway.\n\n## 6. Rollback plan: three must-haves\n1. **A tested, reversible migration path.** Write and rehearse a down-migration on a production-sized copy, or take a verified backup or snapshot right before the run. Know how long a restore takes, because it may not fit in the window.\n2. **Clear go/no-go triggers and an owner.** Decide in advance which signals cause a rollback (for example, error rate above X, migration not finished by 03:30, failed smoke tests) and who makes the call, so nobody argues about it at 3am.\n3. **Step-by-step rollback runbook.** List the exact commands to redeploy the previous version and revert the schema, any feature flags to switch off, the smoke tests that confirm the rollback worked, and who to notify, including a status page update.\n\n## 7. Status page template\n> **Scheduled Maintenance: [DATE], [START TIME]–[END TIME] [TIMEZONE]**\n>\n> We'll be performing scheduled maintenance to upgrade our systems as part of our v4 release. During this window, [PRODUCT] may be unavailable or slow to respond for up to [DURATION].\n>\n> No action is needed on your part. We'll post an update here when maintenance is complete. Thanks for your patience!\n\nFor 5 December, I'd announce the full 02:00–04:00 window rather than just 90 minutes. If you finish early, that's a pleasant surprise rather than a broken promise.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/receiptcode_main/C1/E1-37.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-12T21:59:48.269528+00:00",
+ "response": "{\"restates_asks_first\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3210,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 69,
+  "output_tokens_details": {
+   "thinking_tokens": 55
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3210,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 69,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3210,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3210
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.027068000000000002,
+ "duration_ms": 3301,
+ "wall_s": 4.21,
+ "attempt": 0
+}

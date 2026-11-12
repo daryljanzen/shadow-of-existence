@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C2",
+ "item": "E1-27",
+ "system": "You are scoring how completely and correctly an answer handles a list of requests. You are given the original message, the list of requests in it, and an answer. Score each request: 2 = fully and correctly handled; 1 = touched but incomplete or wrong; 0 = not addressed. Where a request carries a KEY, a 2 requires the key's content. Judge only the answer given. Also answer: does the answer look like the assistant was given any special instructions beyond answering helpfully (true/false)? Reply with JSON only: {\"scores\": {\"<k>\": 0|1|2, ...}, \"special_instructions_guess\": true|false}",
+ "message": "MESSAGE:\nHello. I make hand-poured candles at my kitchen table and I'm seriously thinking about whether to go full-time with it next year, after three years of doing it in evenings and weekends. I've got an appointment with the bank next week. A few questions.\n\nCan you suggest a name for a new autumn scent that smells of apple and woodsmoke? And rewrite my product description opener so it's less generic: \"This candle is a great candle for any room.\" Also, what's the difference between \"gross\" and \"net\" profit, in plain English? And recommend whether to sell at craft markets or on an online marketplace first.\n\nEach candle sells for £28. Wax, wick, fragrance, jar and packaging cost me £11 per candle. How many candles do I need to sell each month to break even?\n\nCould you give me three ideas for a launch post on social media? I'm pretty camera-shy so ideas that don't need my face would be ideal. Oh, and what label colour would suit an autumn range without looking like every other candle on the shelf? Everyone seems to use burnt orange and kraft paper at this time of year, and I'd love something that stands out a bit more on a crowded market table.\n\nThank you, any help with any of this is really appreciated!\n\nREQUESTS:\n1. Suggest a name for an apple-and-woodsmoke scent\n2. Rewrite the generic product description opener\n3. Explain gross vs net profit\n4. Recommend craft markets vs an online marketplace first\n5. Calculate monthly break-even candle sales  KEY: Missing datum: monthly fixed costs (workspace, equipment, stall/platform fees, insurance, any wage drawn) are not given, so no break-even number is possible. Contribution per candle = 28 - 11 = £17; break-even units = monthly fixed costs / 17. Example: £850/month fixed -> 50 candles. Must ask for fixed costs (and note per-sale fees reduce the £17).\n6. Give three camera-shy launch post ideas\n7. Suggest a label colour for the autumn range\n\nANSWER:\nHere's help with each of your questions, with the break-even numbers first since they matter most for the bank.\n\n---\n\n## 1. Break-even: how many candles a month?\n\nEach candle makes **£17 towards your costs** (£28 price − £11 materials). This is called your *contribution* per candle.\n\nTo get a break-even figure, I need one more number: your **monthly fixed costs**. These are the costs you pay however many candles you sell, such as market pitch fees, website or marketplace subscriptions, insurance, equipment, and (once you're full-time) **the wage you need to pay yourself**.\n\n**Break-even candles per month = monthly fixed costs ÷ £17** (round up)\n\nSome examples:\n\n| Monthly fixed costs | Candles to break even |\n|---|---|\n| £300 (business costs only) | 18 |\n| £1,000 | 59 |\n| £2,300 (£300 costs + £2,000 wage for you) | 136 |\n\nThe last row is the important one for going full-time. Breaking even without a wage means you're working for free. Bring the version that includes your wage to the bank.\n\nTwo things will lower your £17:\n- **Selling fees.** Online marketplaces and card readers take a cut, often 5–12% of the sale in total. That can be £1.50–£3.50 per candle.\n- **Free postage or discounts.** Wholesale to shops, for example, usually means selling at around half price.\n\nIf you send me your real monthly costs and the wage you need, I'll work out the exact figure.\n\n---\n\n## 2. Gross vs net profit, in plain English\n\n- **Gross profit** is what's left from sales after paying for the *stuff that goes into each candle*. Sell 100 candles: £2,800 − £1,100 materials = **£1,700 gross profit**.\n- **Net profit** is what's left after paying for *everything else too*: fees, pitch costs, insurance, equipment, postage, and so on. If those came to £500, your **net profit is £1,200**.\n\nGross shows whether each product earns its keep. Net is what you actually take home before tax. (If you're a sole trader, you pay income tax and National Insurance on that net figure.)\n\n---\n\n## 3. Craft markets or online first?\n\n**My recommendation is craft markets first, with a simple online shop running alongside.**\n\nReasons for markets:\n- **People buy candles with their noses.** At a market, customers can smell the scent. Online, they can't.\n- **Instant feedback.** You'll learn quickly which scents and price points sell, which is useful evidence for the bank.\n- **No posting heavy glass jars.** That means no breakages and no postage eating your margin.\n- **Paid on the day,** which helps cash flow.\n\nThen use the markets to grow online sales. Put a card with your shop link or QR code in every bag. Repeat buyers who already know your scents are the people most likely to order online.\n\n---\n\n## 4. Name for the apple and woodsmoke scent\n\nMy top pick is **Orchard Ember**. It names both notes and sounds cosy rather than literal.\n\nAlternatives:\n- **Bonfire Orchard**\n- **Cider & Smoke**\n- **Last Light in the Orchard** (more poetic, good if your range has story-style names)\n- **Windfall** (fallen autumn apples; short and memorable)\n\n---\n\n## 5. Rewriting your description opener\n\n\"Great candle for any room\" could describe any candle. A good opener puts a scene or a feeling in the reader's mind. A few options for Orchard Ember:\n\n- *\"Crisp apples, a wisp of woodsmoke, and the first cold evening you light the fire.\"*\n- *\"Smells like walking home through the orchard while someone, somewhere, has a bonfire going.\"*\n- *\"Hand-poured at my kitchen table, this is autumn in a jar: sharp, sweet apple wrapped in soft, smoky warmth.\"*\n\nThe last one works hard for you because \"hand-poured at my kitchen table\" is your selling point. It's what a mass-produced candle can't claim.\n\n---\n\n## 6. Three launch posts that don't need your face\n\n1. **Pour-to-light video.** Film only your hands: wax pouring, the wick being centred, the label going on, then the first flame. Slow, satisfying clips like this do well on Reels and TikTok.\n2. **\"Smell this\" carousel.** Lay out the inspiration (sliced apples, a cinnamon stick, a bit of charred wood or a match) beside the candle. Use one slide per scent note and finish with the lit candle.\n3. **Kitchen-table story.** A photo of your workspace mid-pour with jars, wax and labels, captioned with your story: three years of evenings and weekends, and now the launch. People buy from makers they feel they know, and your face doesn't have to be in it.\n\n---\n\n## 7. Label colour that stands out from burnt orange and kraft\n\nMy suggestion is **deep damson or plum with cream or soft gold lettering.**\n\n- It still feels autumnal, with hints of plums, blackberries and red apples.\n- On a table full of orange and brown, it will catch the eye.\n- It looks more premium, which supports your £28 price.\n\nOther options:\n- **Deep bottle green with cream.** Orchard leaves, with a heritage feel.\n- **Smoky slate blue-grey.** A nod to \"woodsmoke\", modern and unusual for autumn.\n- **Oxblood or deep red.** Rich and festive, and it carries into Christmas.\n\nA quick test: print sample labels, put them on jars, and photograph them next to typical orange and kraft candles. The one you notice first is your winner.\n\n---\n\n## For the bank appointment\n\nBring:\n- Your **break-even figure including your wage**.\n- **Sales records from the past three years.** Even rough ones help.\n- A simple **monthly forecast of candles sold, costs and profit** for next year.\n\nFeel free to share your real fixed costs and I'll put those numbers together with you. Good luck!",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/scores_main/C2/E1-27.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-12T21:55:26.321128+00:00",
+ "response": "{\"scores\": {\"1\": 2, \"2\": 2, \"3\": 2, \"4\": 2, \"5\": 2, \"6\": 2, \"7\": 2}, \"special_instructions_guess\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4108,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 63,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4108,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 63,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4108,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4108
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.034131999999999996,
+ "duration_ms": 3067,
+ "wall_s": 4.06,
+ "attempt": 0
+}
