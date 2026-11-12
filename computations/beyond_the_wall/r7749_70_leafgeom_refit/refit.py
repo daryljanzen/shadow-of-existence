@@ -49,7 +49,7 @@ def binned(ls, Dl):
     return CS.bin_spectrum(ls, Dl * np.interp(ls, LG, RATIO))
 
 
-def build():
+def build(GRID=GRID):
     z = np.load(os.path.join(GRID, 'cr_base.npz'))
     m0 = binned(np.asarray(z['ls'], float), np.asarray(z['Dl'], float))
     ok = np.isfinite(m0)
@@ -105,22 +105,29 @@ def main():
         F['A'] = dict(chi2=c, per_bin=c / nb, ratio=c / ctl_nofit[0])
         print(f'A no-fit LEAFGEOM=1: chi2 {c:.1f}  /bin {c / nb:.2f}  x control {c / ctl_nofit[0]:.3f}  '
               f'(arm of record {aor_nofit[0]:.1f}, {aor_nofit[0] / 185:.2f}/bin, {aor_nofit[0] / ctl_nofit[0]:.3f}x)')
-    elif mode == 'B':
-        B = build()
+    elif mode in ('B', 'B2'):
+        # B2: the registered re-centring -- python3 refit.py B2 <grid_dir> H0 OM WB NS
+        grid, centre, key = GRID, CENTRE, 'B'
+        if mode == 'B2':
+            grid = sys.argv[2]
+            centre = dict(zip(STEP, map(float, sys.argv[3:7])))
+            key = 'B2'
+        B = build(grid)
         c0 = chi2_at(B, np.zeros(4))
         r = minimize(lambda x: chi2_at(B, x), np.zeros(4), method='Nelder-Mead',
                      options=dict(xatol=1e-4, fatol=1e-3, maxiter=4000))
-        pt = {k: CENTRE[k] + v for k, v in zip(STEP, r.x)}
+        pt = {k: centre[k] + v for k, v in zip(STEP, r.x)}
         steps = {k: float(v / STEP[k]) for k, v in zip(STEP, r.x)}
-        F['B'] = dict(chi2_base=c0, chi2_model_min=float(r.fun), point=pt, offset_in_steps=steps)
+        F[key] = dict(chi2_base=c0, chi2_model_min=float(r.fun), point=pt, offset_in_steps=steps)
         print(f'B grid base chi2 {c0:.2f};  linearised minimum {r.fun:.2f} at {pt}')
         print(f'  offsets in grid steps: {steps}  (|offset| <= 1 is inside the grid)')
-    elif mode == 'V':
+    elif mode in ('V', 'V2'):
         c, nb = score(sys.argv[2])
-        F['V'] = dict(chi2=c, per_bin=c / nb, ratio=c / ctl_refit[0],
-                      model_minus_run=F['B']['chi2_model_min'] - c)
+        src = 'B' if mode == 'V' else 'B2'
+        F[mode] = dict(chi2=c, per_bin=c / nb, ratio=c / ctl_refit[0],
+                       model_minus_run=F[src]['chi2_model_min'] - c)
         print(f'V verify run: chi2 {c:.2f}  /bin {c / nb:.2f}  x control {c / ctl_refit[0]:.3f}  '
-              f'(model said {F["B"]["chi2_model_min"]:.2f}; arm of record refit {aor_refit[0]:.1f}, '
+              f'(model said {F[src]["chi2_model_min"]:.2f}; arm of record refit {aor_refit[0]:.1f}, '
               f'{aor_refit[0] / ctl_refit[0]:.3f}x)')
     save(F)
 
