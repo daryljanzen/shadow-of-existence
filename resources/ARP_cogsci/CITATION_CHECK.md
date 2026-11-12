@@ -32,7 +32,15 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 3 — alignment and grounding
 
-Pickering and Garrod 2004, 2013 and 2021, Clark and Schaefer 1989, Clark and Brennan 1991, and the uncited attributions "in Clark's sense", "in Clark's model" and "Alignment as Pickering and Garrod describe it".
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Pickering and Garrod 2004 | Full text (authors' web version) | Alignment at many levels through largely automatic priming; situation-model alignment follows from lower-level alignment. Interactive repair is the externalised mechanism for detecting and fixing misalignment, by reformulation or query. Full common ground is used mainly in times of difficulty. | The cascade description is unchanged. The "two silences" paragraph now acknowledges interactive repair: the account picks out moves that address detected misalignment, but not moves that verify successful alignment. Was: "without picking out specific moves at which alignment is publicly verified". |
+| Pickering and Garrod 2013 | Abstract (Cambridge PDF); the body text was not legible through the fetch | Interlocutors covertly imitate each other and use forward models to predict and monitor upcoming utterances. The abstract says nothing defining alignment as matching predictions. | "Added forward models: interlocutors covertly imitate each other's utterances and use forward models to predict and monitor what is coming". Was: "alignment partly consists in matching predictions". |
+| Pickering and Garrod 2021 | Frontiers book review; Cambridge chapter abstracts; book not retrieved | Shared-workspace framework; dialogue a cooperative joint activity; alignment, simulation, prediction and synchrony; alignment defined as "a property of the relationship between the interlocutors' representations". | Book-length development "as a shared-workspace framework…". Was: "align on and monitor what they have jointly established". Also now cited for the uncited "Alignment as Pickering and Garrod describe it", which reads "a property of the relationship between the interlocutors' representations". |
+| Clark and Schaefer 1989 | Full text | Presentation and acceptance phases; five kinds of evidence, "graded roughly from weakest to strongest": continued attention, relevant next contribution, acknowledgement, demonstration (showing what was understood, for example by paraphrase), display (verbatim repetition). Display is the strongest. | The five kinds listed with their grading; demonstration placed correctly, with only display above it. Was: "Demonstrations … constitute the strongest grade of evidence". |
+| Clark and Brennan 1991 | Full text | The grounding criterion, word for word as the paper uses it; presentation and acceptance phases; positive evidence as acknowledgements, relevant next turn and continued attention. | Unchanged. |
+| "in Clark's sense" (uncited) | Clark and Schaefer 1989 | The receipt as a demonstration of understanding matches their "demonstration". | Unchanged; now backed by the corrected grounding paragraph. |
+| "In Clark's model, withdrawal of acceptance disrupts grounding…" (uncited) | Clark and Schaefer 1989; Clark and Brennan 1991 | Consistent with the acceptance phase and negative evidence; the claim that the model does not distinguish zero from negative participation is the paper's own reading. | Unchanged. |
 
 ## Batch 4 — dominance and withdrawal
 
@@ -41,3 +49,17 @@ Zimmerman and West 1975, West and Zimmerman 1983, Linell, Gustavsson and Juvonen
 ## Batch 5 — evidence and methods
 
 Templeton et al. 2022, Huang et al. 2017, Koudenburg, Postmes and Gordijn 2011, Shaikh et al. 2024, Jackson and Marsh 1996, Stephens, Silbert and Hasson 2010, Liu et al. 2017.
+
+## Sources to retrieve
+
+These could not be retrieved in full. Each is confirmed as far as the abstract, record or secondary description allows; the entry above says which. With the full text, the citing sentence gets checked word for word.
+
+- Lerner 1991, *Language in Society* 20, 441–458 (abstract only)
+- Lerner 1996, chapter in *Interaction and Grammar*, 238–276
+- Lerner 2004, "Collaborative turn sequences", chapter in *Conversation Analysis: Studies from the First Generation*, 225–256 — **most important: the corrected sentence in §5.3 and §3.4 leans on it**
+- Hayashi 2003, *Joint Utterance Construction in Japanese Conversation* (book)
+- Kim 2003, *Language Research* 39, 147–182
+- Heritage and Watson 1979, chapter in *Everyday Language*, 123–162
+- Pickering and Garrod 2013, *Behavioral and Brain Sciences* 36, 329–347 (body text; only the abstract was legible)
+- Pickering and Garrod 2021, *Understanding Dialogue* (book)
+- Levinson 2016, *Trends in Cognitive Sciences* 20, 6–14 (confirmed from the institute's press release only)
