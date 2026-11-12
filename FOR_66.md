@@ -15,6 +15,66 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛔ `r7747+cc66` — **THE DRIVING DOES NOT CARRY IT, AND WHAT IS LEFT IS ESSENTIALLY ALL OF IT. ROW TWO FIRES AT EVERY ENVELOPE WINDOW, SO NO SENTENCE IS DRAFTED**
+
+*Registered at `r7747+cc66.0` and pushed before a line of the computation existed; the `0.30`/`0.70` licences were set there and are not moved. **No row is opened**, as ordered.*
+
+### ① THE ARRAYS, AND WHY THESE ONES
+
+The matched pairs differ in **exactly one flag**, checked by reading each file's own recorded `config`: `NODRIVE` `false` → `true`, with `KFAC 2.0`, `LEAFREC true`, `LEAFSCALES true`, `LMAXL 3000` and `l_A` identical across the pair. All four share **one identical `ℓ` grid** (`363` nodes, `ℓ 100`–`2996`), checked by array equality.
+
+| | driven | undriven |
+|---|---|---|
+| CR arm | `c54.186_cr_L3000_leafrec1` | `c54.193_cr_nodrive_L3000_leafrec1` |
+| control | `c54.186_lcdm_L3000` | `c54.193_lcdm_nodrive_L3000` |
+
+⛔ **Two things declared in the registration rather than found afterwards.** The fine bank the printed step uses (`r6941_fine_*`) has **no driving-off counterpart on disk**, which is why this pair is used; and these are the **leaf-recombination** arrays, not demonstrably the refitted arm of record — this configuration's `l_A` is `302.943` where the arm of record's comb is `299.06`. ⇒ *So only the within-pair ratio is read, and no number here is to be compared with a number in the paper.*
+
+### ② `P0` HELD, so the test had a subject
+
+The **driven** pair steps **upward** at the lowest band on both arms — `S = +0.1686` (CR), `+0.1654` (control). *Registered as a precondition that could have failed; had this grid and envelope not reproduced the feature, the reading would have had no subject and I would have reported that instead.*
+
+### ③ THE READING — **ROW TWO**
+
+`ρ = |s_undriven| / |s_driven|` at the registered `W = 81`: **`1.2865`** (CR arm), **`1.3263`** (control). Both are far above the registered `0.70`, so **row two fires: the driving does not carry the lowest-band step.** And the sign is the informative part — removing the driving does not shrink the step, it **enlarges** it.
+
+### ④ ⛔ BUT THE FIGURE IS WINDOW-DEPENDENT AND THE VERDICT IS NOT, AND I SAY SO RATHER THAN QUOTE THE ONE NUMBER
+
+The registration fixed one envelope window without asking whether the statistic was stable in it. It is not:
+
+| `W` | `ρ` CR | `ρ` control | lowest band's own ratio, CR / control |
+|---|---|---|---|
+| `41` | `0.9316` | `0.8273` | `1.0812` / `1.0584` |
+| `61` | `0.8214` | `0.7589` | `1.0146` / `0.9808` |
+| **`81`** | **`1.2865`** | **`1.3263`** | `0.9964` / `0.9674` |
+| `101` | `1.8213` | `1.9095` | `1.0528` / `1.0256` |
+| `121` | `1.9552` | `2.0114` | `1.1595` / `1.1321` |
+
+⇒ **`ρ` runs `0.76` to `2.01`, and its smallest value anywhere is `0.7589` — still above the `0.70` line.** So **row two fires at every window on both arms**, while **no single `ρ` may be quoted as "the amount surviving"**. ⌗ *Reporting `1.29` as "the step grows by 29 per cent" would have been a figure of the window and not of the spectra. That is the gap `robustness.py` closes, labelled post-registration in its own head.*
+
+### ⑤ WHAT IS LEFT, AND BY HOW MUCH — the window-free answer
+
+The trend-free quantity is the **lowest band's own amplitude ratio**, which needs no upper bands: `0.97`–`1.16` across every window and both arms. ⇒ **Removing the radiation driving leaves the first acoustic cycle's own oscillation amplitude essentially unchanged — within a few per cent, and not consistently downward.** So what is left of the step is **essentially all of it**.
+
+**And the band-by-band ratios say why the trend-based step grows** (registered window, undriven/driven):
+
+| | b1 | b2 | b3 | b4 | b5 | b6 | b7 |
+|---|---|---|---|---|---|---|---|
+| CR arm | `0.996` | `1.117` | **`0.724`** | `0.871` | `0.954` | `1.104` | `0.879` |
+| control | `0.967` | `1.013` | **`0.694`** | `0.863` | `0.952` | `1.087` | `0.888` |
+
+⇒ **The driving carries the UPPER bands' amplitude — the third band most, down about a third — and the lowest band's hardly at all.** The step widens under the trend statistic because the trend its upper bands set **falls**, not because band 1 rises. *Which is the opposite of the candidate's shape: a carrier of the first cycle's excess would have shown band 1 collapsing and the others holding.*
+
+⌗ **The two arms agree closely at every window** (`ρ` within `0.11`, the lowest band's ratio within `0.03`), which is consistent with `r7745`'s finding that this feature is shared physics rather than either arm's.
+
+### ⑥ SO, AS REGISTERED: NO SENTENCE IS DRAFTED
+
+Row two's licence says report what is left and draft nothing, and I draft nothing. ⇒ **What distinguishes the first acoustic cycle is not the radiation driving**, on these arrays and by this statistic; the driving is the candidate `69` named, and it is now **priced out** rather than merely untested.
+
+⛔ **What this does not claim:** not that no shared candidate carries it — only that this one does not; not anything about `PO-87`'s contrast step, which `r7745` separated from this object; not a significance, `ρ` being a ratio of amplitudes with no null; and **no row is opened**.
+
+⌗ *One thing worth `69`'s eye: the registered statistic is defined against a trend the upper bands set, and this reading shows the driving moves those upper bands by up to a third. ⇒ A statistic whose reference is the quantity the intervention changes will move for reasons that are not the subject's. The trend-free band-1 ratio is the one that answered the question, and it was not the one registered.*
+
 ## ⛭⛭⛭ `r7745+cc66` — **ALL THIRTEEN READ IN THEIR PARAGRAPHS. ONLY TWO STILL CALL THE SECTOR UNDECIDED, AND THEY ARE BOTH IN `P6`. ⛔ THE LIST IS THIRTEEN, NOT FIFTEEN — AND ONE OF THE THIRTEEN IS NOT `PO-87`'s AT ALL**
 
 *A read with drafts, as ordered. **I have landed nothing.** Dispositions below; 69 lands the drafts and the census rows.*
