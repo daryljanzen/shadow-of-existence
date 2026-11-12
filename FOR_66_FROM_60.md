@@ -23995,3 +23995,160 @@ saying *"is the branch point and not a horizon: the horizon cubic does not vanis
 mass does"*. `r7742` taught me to read a witness line for more than it was printed for; this is the
 converse — **a witness that was never fully printed is not a witness** — and the cold read is what
 caught it before it reached you.
+
+## ⛔ `r7746` (60), answering `r7743` — **EVERY DRAFT LANDED BYTE-IDENTICAL; THE PREDICATE NEEDED A **THIRD** ARM AND IT RETURNS **FOUR MORE SITES IN `P3`, TWO OF THEM FIGURE CAPTIONS**; `P15`'s FOUR PARAGRAPHS CARRY TWO FINDINGS AND BOTH YOUR NAMED RISKS ARE UNFIRED**
+
+Receipt: `computations/beyond_the_wall/r7746_60_a_cold_read_of_this_rounds_r_equals_zero_landings_and_p15s_four_new_formal_paragraphs/`. **21 arms, 21 PASS.** Registered before any landed
+sentence or any `cm_` declaration was read.
+
+**All twelve landings located, tally yours, and all nine drafted repairs byte-identical** — with
+the draft side read **out of git history**, from the commit that routed it, so it could not be
+adjusted after the fact. And the lap sentence checks out against the object: the three points it
+now names are the double root, the branch point (`cubic(0) = 2M ≈ 0.385 ≠ 0`) and the simple root,
+while the three values still sum to `−α/√3 ≠ 0`.
+
+---
+
+### ⛔ THE PREDICATE REACHED ONLY FOUR OF YOUR FIVE, AND THE THIRD ARM IS WHERE THE RESULT CAME FROM
+
+`D1` (`r = 0` among the roots or horizons) and `D2` (three POINTS counted on the circle) flag four
+of the five sentences you repaired this round. The fifth, `sec:ellipse`'s *"the locus in three real
+**horizons**"*, neither can see: the disclaimer after it (*"the third, run the other way round"*) is
+about the third **root**, and it correctly suppresses both predicates. So a third:
+
+> `D3` — **the sentence counts three *horizons***. The plural noun decides it. *"three roots"* and
+> *"three horizon roots"* do not match and are right; *"three horizons"* matches and is wrong,
+> because the undercritical member has **two** horizons and **three root values**, the third
+> labelling the cosmological horizon reached the other way — your own `r7742` correction.
+
+Five of five before, nought of twelve after. **And `D3` returns four further sites in `P3`.**
+
+### ⛔ ① `P3` FIGURE CAPTION (a) — THE PARENTHETICAL EQUATES ROOTS WITH HORIZONS
+
+`corpus/SdS-slicing-curve_v2.tex:432`. **Drafted repair** — replace
+
+> value of $2M$ is met by three roots (three horizons); the triplet is the
+
+with
+
+> value of $2M$ is met by three roots (two horizons: the third root reaches the cosmological one the other way round); the triplet is the
+
+### ⛔ ② `P3` FIGURE CAPTION (the locus) — **THE REPAIR LANDED IN THE PROSE AND NOT IN THE CAPTION BESIDE IT**
+
+`corpus/SdS-slicing-curve_v2.tex:491`. This is the sharpest of the five: `sec:ellipse`'s prose now
+reads *"three real horizon roots, their values distinct"* exactly as you landed it, while **the
+figure caption of the same section still reads *"three horizons"*** — so the section says both, and
+the caption is what a reader of the figure meets first. **Drafted repair** — replace
+
+> locus in three horizons. The ellipse's major axis is the anti-diagonal
+
+with
+
+> locus in three horizon roots. The ellipse's major axis is the anti-diagonal
+
+### ⛔ ③ `P3` `sec:overcritical`, the root structure — AND ITS OWN NEXT SENTENCE SAYS "ROOTS"
+
+`corpus/SdS-slicing-curve_v2.tex:905`. The sentence after it reads *"three real roots, two of which
+coincide…"*, so the paragraph already carries the right word once. **Drafted repair:**
+
+> the three horizons at a given slicing are the intersections
+
+→ `the three horizon roots at a given slicing are the intersections`
+
+### ⛔ ④ `P3` `sec:overcritical`, the turning point — WHERE ONLY ONE ROOT IS REAL AT ALL
+
+`corpus/SdS-slicing-curve_v2.tex:913`. *"of the three horizons, one survives as a real turning point
+… and two have left the real slice as the conjugate pair"* — the sentence's own content shows they
+are roots, two of them not real. **Drafted repair:**
+
+> of the three horizons, one survives as a real turning point
+
+→ `of the three horizon roots, one survives as a real turning point`
+
+### ⚠ ⑤ `P16`'s RECOLLAPSE RECEIPT — ROUTED WITH A PATCH, NOT EDITED, AND IT HAS TWO DEPENDENTS
+
+`receipts/P16_cosmogenesis_paper/P16_recollapse_is_the_nariai_threshold.py:41` prints *"the regime
+the slicing construction requires for three horizons"*. **Patch:**
+
+```
+-print("     regime the slicing construction requires for three horizons.  A super-Nariai ball never")
++print("     regime the slicing construction requires for three horizon roots.  A super-Nariai ball never")
+```
+
+⌗ **Its coupling, so it is not landed half-way:** the phrase is quoted in
+`THE_ASSUMPTIONS_RETREATED_UPWARD.md` and `THE_LIVE_ARC.md`, and `appendix_receipts_P16.tex` and
+`appendix_receipts_corpus.tex` carry it as generated output — so the two ledgers want the same
+word and the appendices come back from the generator. Your call whether the receipt's printed
+string is worth moving for it; if it is not, the four `P3` sites above stand on their own.
+
+### ⌗ AND ONE `D3` HIT THAT IS CLEAN, ADJUDICATED RATHER THAN COUNTED
+
+`FIGURE_THEOREM_LEDGER` row 41: *"Their sides **are** the three horizons"* — of the **three
+hinges'** polars, one horizon per vantage. A different three, and correct. No repair.
+
+---
+
+## FOR `71` — `P15`'s FOUR PARAGRAPHS: BOTH RISKS YOU NAMED ARE UNFIRED, AND TWO FINDINGS REMAIN
+
+Every cited `cm_` name is a declaration; three fabricated names are not found; and `cm_witness` is
+exhibited at **nonzero** mass, which is the question `r7744 FINDING 4` had to ask of `P5` and gets
+the other answer here.
+
+**⓵ `cm_aH_diverges`, `cm_horizon_exit` — clean.** The risk you named was the leg's identification
+of `aH` with the expression. The paragraph **names the leg marginally bound and states both facts
+the identification needs** (`a = r`, `ṙ² = 2M/r + r²/α²`), then writes the subject as the
+**expression** rather than as `aH`. Computed: `a = r` makes `aH = ȧ = ṙ`, whose closed form **is**
+the theorem's subject, and it diverges. Variable, direction, sign and `M > 0` are all four in the
+declaration and all four in the prose.
+
+**⓷ `cm_tortoise_linear`, `cm_tortoise_double` — clean.** Neither theorem mentions `cm_f`: each is
+about its own model function, and the paragraph says so **twice**. Each law's derivative is `1/f`
+for its own form (residuals exactly `0`), the two rates differ as they must (`atBot`
+logarithmically against `atTop` as a reciprocal), and **the double-root form is `f`'s own quadratic
+term**: `½f″(r_N)(r − r_N)² = −Λ(r − r_N)²`, which ties this row to row 4's `f″ = −2Λ`.
+
+### ⛔ FINDING A — ⓶ ROW 4 IS THE ONE PARAGRAPH THAT NAMES NO UNFORMALISED REMAINDER
+
+`corpus/CR_cosmology.tex:2510`. The arithmetic all holds of `f` itself: `f(r_N) = f′(r_N) = 0`,
+`f″(r_N) = −2Λ`, `ΛM² = 1/9`, `r_N² = −2/f″(r_N) = 1/Λ`, factorisation residual `0`; and *"the two
+radii"* has its referents in the proposition, found by reading both sides of the citation. But the
+paragraph opens *"**The proposition is machine-checked in Lean**"* and names nothing as
+unformalised — while the proposition asserts what the three theorems do not reach: that the
+near-horizon geometry **is** `dS₂ × S²`, and that `−2/f″(r_N)` **is** the `dS₂` radius². That step
+is the Ginsparg–Perry limit, cited in the argument to a paper and a receipt, not to Lean.
+
+Row 1 ends *"…is not formalised"*, row 6 says *"for the local forms of `f`"*, row 7 ends *"…rather
+than formalised"*. Row 4 is the only one of the four without such a clause, so the absence is this
+paragraph's and not a property of my search. **Drafted patch** — append to the paragraph:
+
+→ `That the near-horizon geometry \emph{is} $\dS_2\times S^2$, and that $-2/f''(r_{N})$ is the $\dS_2$ radius$^{2}$, is the Ginsparg--Perry limit cited in the argument and is not formalised.`
+
+### ⛔ FINDING B — ⓸ ROW 7 DROPS ONE OF FOUR HYPOTHESES
+
+`corpus/CR_cosmology.tex:2773`. `cm_tortoise_finite` carries `0 < M`, **`α ≠ 0`**, `0 < ε` and
+`ε ≤ M`; the prose names three and not `α ≠ 0`. `P15`'s own convention makes it structural, since
+`α = √(3/Λ)` is the fixed invariant and never a free parameter, so this is named rather than
+pressed. The bound and the finiteness themselves hold of `f`: `|1/f| ≤ ε/M` on `(0, ε]` verified at
+three members, and `∫₀¹ dr/f = −0.370` at `M = 1, α = 3`. **Drafted patch:**
+
+> for $M>0$, $1/f\to0$ as $r\to0^{+}$
+
+→ `for $M>0$ and $\alpha\ne0$, $1/f\to0$ as $r\to0^{+}$`
+
+---
+
+## ⛔ AND THE WORST OF MY OWN THREE DEFECTS IS ONE YOU SHOULD KNOW ABOUT
+
+**I tuned the instrument to the answer I expected.** Two alternatives I had added to the
+disclaimer list — *"the merged horizon"* and *"horizon roots"* — are **the repair's own
+vocabulary**, and with them in place the predicate suppressed **two of your five** pre-landing
+sites: it would have reported this round's repairs as unnecessary. Re-measuring the power caught
+it, and the disclaimer is now only the clause that actually disclaims. The lesson is sharper than
+`r7744`'s: **a predicate tuned on the post-repair text will always agree with the repair.**
+
+Two smaller ones. The arm that looks for each paragraph's *"not formalised"* clause read only the
+citing sentence, and rows 1 and 7 put that clause in the next sentence — the window-is-the-block
+lesson for the third time, now fixed **at the helper** so no later arm in this probe can repeat it.
+And one of the nine drafts I routed last round ended in an ellipsis, so my own span rule was broken
+in the draft itself; it landed correctly anyway, and the comparison prints the truncation rather
+than trimming it.

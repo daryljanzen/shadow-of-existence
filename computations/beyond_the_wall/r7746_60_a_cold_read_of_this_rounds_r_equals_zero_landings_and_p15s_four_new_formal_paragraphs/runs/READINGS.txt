@@ -1,0 +1,314 @@
+
+====================================================================================================
+(o)  THE FACTS, RE-ESTABLISHED BEFORE THEY ARE USED
+====================================================================================================
+  cubic(r=0) = M2; = 0 iff 2M in [0]
+  the cubic carries no r^2 term, so every root multiset sums to 0: coefficient of r^2 = 0
+  [PASS] (o)a  r=0 is a root iff 2M=0, and a root multiset sums to 0  witness: cubic(0) = M2; [r^2] = 0
+
+====================================================================================================
+(A)i  THIS ROUND'S LANDINGS, LOCATED AT SOURCE
+====================================================================================================
+    L1 lap             [P3                    ] raw=True  flat=True  demarked=True 
+    L2 sec:ellipse     [P3                    ] raw=True  flat=True  demarked=True 
+    L3 throat          [P3                    ] raw=True  flat=True  demarked=True 
+    L4 three-hinges    [P3                    ] raw=True  flat=True  demarked=True 
+    L5 lap/phase       [P7                    ] raw=True  flat=True  demarked=True 
+    L6 on-the-circle   [P7                    ] raw=True  flat=True  demarked=True 
+    L7 ledger row 7    [NUMBER_THEORY_LEDGER.md] raw=True  flat=True  demarked=True 
+    L8 finding A       [P5                    ] raw=True  flat=True  demarked=True 
+    L9 finding B       [P5                    ] raw=True  flat=True  demarked=True 
+    L10 finding C      [P5                    ] raw=True  flat=True  demarked=True 
+    L11 uniformity     [P12                   ] raw=True  flat=True  demarked=True 
+    L12 uniformity     [P17                   ] raw=True  flat=True  demarked=True 
+  located 12 of 12; per file: {'P3': 4, 'P7': 2, 'NUMBER_THEORY_LEDGER.md': 1, 'P5': 3, 'P12': 1, 'P17': 1}
+  [PASS] (A)i  all twelve located, raw / flattened / demarked, against the order's tally  witness: P3x4 P7x2 ledgerx1 P5x3 P12x1 P17x1 = True
+
+====================================================================================================
+(A)ii  EACH DRAFTED REPAIR, COMPARED TO WHAT LANDED -- THE DRAFT READ OUT OF HISTORY
+====================================================================================================
+  drafts read from d3c5e5742: 9 arrow-form, 1 blockquote-form
+    draft  1  NOTE this draft was routed as a fragment ending in an ellipsis; compared as far as it goes
+    draft  1  byte-identical=True  in ['P7']
+    draft  2  byte-identical=True  in ['P7']
+    draft  3  byte-identical=True  in ['P7']
+    draft  4  byte-identical=True  in ['P7']
+    draft  5  byte-identical=True  in ['P3']
+    draft  6  byte-identical=True  in ['P3']
+    draft  7  byte-identical=True  in ['P5']
+    draft  8  byte-identical=True  in ['P5']
+    draft  9  byte-identical=True  in ['P5']
+    blockquote draft byte-identical=True  (P3 lap)
+  [PASS] (A)ii  every drafted repair landed byte-identical, span to the sentence's own end  witness: 9 of 9 arrow-form drafts plus 1 blockquote found verbatim in the landed papers
+
+====================================================================================================
+(A)iii  THE PREDICATE RE-MEASURED, NOT REUSED  (r7744 DEFECT 1)
+====================================================================================================
+    S1 lap             pre-landing flagged by D1  :: On the real ruling legs the embedding coordinate $X_{1}=\alpha\cos\theta$ is linear in $r$; aro
+    S2 lap/phase       pre-landing flagged by D1  :: $X_1=-\alpha\cos(2\pi r/\sqrt3\,\alpha)$ on the lap, through the roots $+\alpha/\sqrt3$, $0$, $
+    S3 on-the-circle   pre-landing flagged by --+D2  :: That symmetry is itself orthogonal in the sense this section's decomposition uses: $D_6=S_3\tim
+    S4 ledger row 7    pre-landing flagged by --+D2  :: Predict the distinguishing invariant is the $A_2$ configuration's two orbits — the three points
+    S5 sec:ellipse     pre-landing flagged by --+D3  :: For $|r_{0}|<2/\sqrt{3}$ the vertical line at $r_{0}$ meets the ellipse in two real points and 
+
+  D1 and D2 alone reach 4 of the 5; the fifth -- 'the locus in three real HORIZONS' --
+  is a count of horizons rather than of root values, which neither predicate can see,
+  so D3 was added and is measured here with them.  Third revision running in which
+  measuring the instrument, not trusting it, is what produced the result.
+  [PASS] (A)iii-a  the three predicates together flag every pre-landing site of THIS round  witness: 5 of 5 flagged at 60411d341
+  and of the twelve landings as they now stand, 0 are flagged: []
+  [PASS] (A)iii-b  0 of the twelve landings is flagged now  witness: 0 flagged after the landing
+  the whole corpus re-swept: 35 candidate(s)
+    [D3] BH_causality_v2.tex
+          Three other horizons a reader will bring decide what the criterion here actually is.
+    [D2] CR_synthesis.tex
+          The discrete residue's two factors act on independent structures, and on the waist those structures are the two relations a figure can bear to a circle. The three roots are the special points on it; the two rulings are the lines tangent to it (\S\ref{sec:derived}) \cite{JanzenMatter}.
+    [D1] SdS-slicing-curve_v2.tex
+          Where the three horizon roots are distinct and $M>0$, the pieces of the curve between $r=0$, $A$ and $B$ are the three regions of the line element: run from $r=0$ around the throat circle, the arc up to the black-hole horizon is the black-hole interior, the arc on from there to the cosmological hori
+    [D3] SdS-slicing-curve_v2.tex
+          A vertical line at fixed $r_{0}$ meets the locus in three horizons.
+    [D3] SdS-slicing-curve_v2.tex
+          A given mass level is met by three sky angles---the three horizons; the crest at $w=\pi/6$ is Nariai, where two merge.
+    [D1D2] SdS-slicing-curve_v2.tex
+          They are also, and this is not a further coincidence but the same three points a third time, the loci at which the matter sector places its throat walls: that construction fixes them as the signed radius's $r=0$ point on the throat circle---the back of the hole, taken relative to the hinge whose pla
+    [D3] SdS-slicing-curve_v2.tex
+          That locus is the diagonal $r=r_{0}$ together with the tilted ellipse $r^{2}+r r_{0}+r_{0}^{2}=1$, and the three horizons at a given slicing are the intersections of the vertical line at fixed $r_{0}$ with this locus.
+    [D3] SdS-slicing-curve_v2.tex
+          This is the precise overcritical statement of the turning-point correspondence: of the three horizons, one survives as a real turning point of the curve (on the backward branch) and two have left the real slice as the conjugate pair on the continued ellipse.
+    [D2] SdS-slicing-curve_v2.tex
+          Section \ref{sec:tour} placed three graze points on the throat at polar $60^{\circ}$, $180^{\circ}$ and $300^{\circ}$, one directly between each pair of hinges, cutting the throat circle into three equal arcs; those are the only marked points the throat carries, and there are exactly three of them b
+    [D1] appendix_receipts_P03.tex
+          Computes: both discriminants factored; H's Nariai double-root factorisation verified; T's three roots distinct with equal modulus; all four phase values checked against their closed forms Bound: NOT re-derived here: H-T=-a\textasciicircum{}2 r and the r=0 meeting (P7 sec:twocritical) and the four lo
+    [D1] appendix_receipts_P03.tex
+          Computes: the Misner--Sharp identity off the metric; the first integral and the substitution; both \$r\textbackslash\{\}to0\$ limits; the EM and radiation \$1/R\$ terms from \$m_\{\textbackslash\{\}rm MS\}=(R/2)(1-f)\$ and \$\textbackslash\{\}dot m=-4\textbackslash\{\}pi pR\textasciicircum{}\{2\}\te
+    [D1] appendix_receipts_P03.tex
+          ALSO: the throat carries three names, all established identities (hole, incircle, nine-point circle); hinge and swing axis are one line; hinge vs wall scores 1/5 and seam vs wall scores 1/5 (both on the throat but at r=alpha and r=0 -- DIFFERENT loci).
+    [D1] appendix_receipts_P07.tex
+          The imaginary length is contour, not duration, and not recurrence. r1632 collapsed the second level into the first and wrote 'r=0 is an unattained limit' -- inverting the corpus's central result; corrected \ Run: python3 receipts/P07_CR_framework/P07_lap_timeline.py \item[\rcptlabel{order3_bridge}{P
+    [D1] appendix_receipts_P10.tex
+          r6920 reached rank 3 at \$N=1\$, where mixing caps the rank at 1, and rank 1 is exactly what its \$r=0\$ control measured (3) and the question as put to \$\textbackslash\{\}alpha\$ has no object: \$\textbackslash\{\}alpha=\textbackslash\{\}sqrt\{3/\textbackslash\{\}Lambda\}\$ is a coefficient of \$\
+    [D3] appendix_receipts_P16.tex
+          Much smaller than the assumption it replaces \ Run: python3 receipts/P16_cosmogenesis_paper/P16_the_interior_to_observed_mode_map.py \item[\rcptlabel{P16_recollapse_is_the_nariai_threshold}{P16R19}P16R19\quadP16_recollapse_is_the_nariai_threshold]\hfill\textsf{[OK]}\\ the collapse excursion \ (THE C
+    [D2] boundary_paper.tex
+          The skeleton's residue exceeds the route that closes on it: $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2$ is a direct product, and the route closed here and the opening left below are its two factors, differing in kind because the structures they act on are the throat circle's two relations---the three 
+    [D2] boundary_paper.tex
+          The route that closes here and the opening that survives there are the two factors of one group. Why the two differ in kind is read off the figure rather than off a rank, an involution or an index: the structures they act on are the throat circle's two relations, the three roots the points on it and
+    [D1] boundary_paper.tex
+          And the geometry does not leave the triplet degenerate for something external to split: fixing the mass is taking $r_0$ as one of the three roots ($2M=r_0-r_0^3$), which factorises the cubic as $(r-r_0)(r^2+rr_0+r_0^2-1)$ and singles $r_0$ out from the fundamental-ellipse pair \cite{JanzenSlicing}--
+    [D2] geometric_core_paper.tex
+          And the count's own structure is read off it too: the discrete residue is the direct product $\mathrm{Aut}(A_{2})=S_{3}\times\mathbb{Z}_{2}$, whose factors act on the three roots and the two rulings---which are, on the waist, the points on the circle and the lines tangent to it.
+    [D1] groupoid_paper.tex
+          The construction accordingly carries three distinct discrete operations, which must not be conflated: $\sigma$ (the Weyl, diagonal reflection---mass-invariant, Nariai-fixed, no branch-point crossing), $R$ (the diagram, anti-diagonal reflection---the vantage-swap, de Sitter-fixed, the $r=0$ crossing)
+    [D1] groupoid_paper.tex
+          The construction accordingly carries three distinct discrete operations---$\sigma$ (Weyl, mass-invariant, Nariai-fixed, no branch-point crossing), $R$ (diagram, the vantage-swap, the $r=0$ crossing), and $\xi$ (the throat seam at $X=\alpha$)---which share a continuation mechanism but do not coincide
+    [D2] matter_sector_paper.tex
+          The companion slicing paper states as much at the outset: the matter construction places a plane on each of the three hinges, giving "three throat walls at distinct points of the throat circle with disjoint support" \cite{JanzenSlicing}.\rcpt{P14_p3_already_said_it} The two readings agree on the lab
+    [D2] matter_sector_paper.tex
+          The $\mathbb{Z}_3$-fixed centre carries no wall; the walls lie on the circle, and the three hinges' walls are three distinct points on it (polar $180^\circ,300^\circ,60^\circ$), a $\mathbb{Z}_3$-orbit (Figure \ref{fig:gen}).
+    [D1] matter_sector_paper.tex
+          The walls of Section \ref{sec:count} are the three hinges' $r=0$ points, which is why they lie on that same circle and not elsewhere.
+    [D2] COMBINATORICS_LEDGER.md
+          ⟹ the three roots are the points ON the circle; the two rulings are the lines TANGENT to it. S₃ permutes what is ON it; ℤ₂ swaps what is TANGENT to it. The residue factorises because on and tangent are independent relations.
+    [D1] COMPLEX_ANALYSIS_LEDGER.md
+          ⛭ AND EVERYTHING FITS ONCE THE WORD IS "MONODROMY", which is this ledger's own material: $\operatorname{disc}(r^3-r+2M)=-4(27M^2-1)$ is not a square in $\mathbb Q(M)$, so the Galois group of $r^3-r+2M$ is $S_3$; ⇒ the root cover is NON-REGULAR with TRIVIAL deck group, and its Galois closure has degr
+    [D1] ENTRY_POINT_REGISTER.md
+          ### P2 — janzen_circle_v3.tex (5 sites) | § | kw | the paper's own words | |---|---|---| | ✗ DISCHARGED in companions (r1224) · The Kretschmann artefact | not settled — P2 frames it and points; settled in P3/p0 | What is not settled by this bookkeeping is the ontological reading of that real diverge
+    [D3] FIGURE_THEOREM_LEDGER.md
+          Their sides are the three horizons. Only at 2α. | euclid3_pole_polar.py | | ⊢ 42 | the radical axis | that same horizon, independently — x = α/2 reached with no tangent mentioned.
+    [D3] FIGURE_THEOREM_LEDGER.md
+          ### ⊢ 61 · ★★★ P7's CENTRAL FORCING IS A TANGENCY CONDITION, AND P1 SUPPLIES THE TANGENCY (sweep4_p7_trichotomy.py, sweep5_p1_supplies_the_tangency.py) P7, at source: "forced, by a trichotomy the horizon's own structure decides: … transverse crossing (two distinct horizons), tangency at a merged dou
+    [D2] INDEX_THEORY_LEDGER.md
+          P15's obstruction ×2 are the cosmological crossing's two conditions | | P05 · P08 · P06 | ⛭ CHECKED-NEGATIVE, all three | P05's fixed point ×39 is involution fixed points and not Lefschetz (D6); P08 carries one zero-mode; P06 three index, all labels | | P01 | ⛭ CHECKED-NEGATIVE — and it is the causa
+    [D1] PHASE7_BUILD_LEDGER.md
+          ## ★★★★★★★★★ FZ · THE TWO ENDS CARRY ROOTS AND WEIGHTS — and the step becomes definite — r2303 ★★★★ WHAT P7's PHRASING UNDERSTATES. It frames the two ends as one $S_3$ carried in two manners — monodromy of the cover, symmetry of the figure. They are more than two manners. The horizon end's monodromy
+    [D2] PHASE7_BUILD_LEDGER.md
+          So: does the corpus supply a form on it? ⛔ NOT THE CROSS-RATIO. Q4's equianharmonic $e^{i\pi/3}$ lives on the sky angle, not the $r$-line ("on the $r$-line there is NO such invariant"), and the corpus marks it as automatic from the $120^\circ$ spacing — "names a consequence of a forced fact rather t
+    [D1] QUADRIC_GEOMETRY_LEDGER.md
+          The $120^\circ$ is automatic given three — and the three is $D-1$. ⚠ Not a second vote for $D=4$: the same fold read projectively. P03_reach_probe_deepening | Cross-ratio. The projective invariant of four collinear points. The horizon cubic has three roots and the slicing designates one — four point
+    [D2] THE_CONSOLIDATION_LEDGER.md
+          The monodromy paragraph cites monodromyGroup_equiv_S3 and notes the Lean file's M coordinate (60). - PO-87/P15: merged r7743; cc66's (r7741+cc66). P15 states that how the located step's multipole structure divides between the visibility and the distance map is set by a matching of the arms' conforma
+    [D1] THE_OPEN_PROBLEMS_LEDGER.md
+          ⌗ AND THE OUTSTANDING STEP IS NOW DEFINITE. Having the weight diagram is closer to having the fundamental than having the root system is — weights label a basis. But nothing is attached to those three points: this sector's modes live on the walls at $r=0$, which belong to the horizon end, and the fl
+
+====================================================================================================
+(A)iii-c  THE SITES D3 RETURNS, ADJUDICATED BY HAND
+====================================================================================================
+    [live] fig. caption (a)                   corpus/SdS-slicing-curve_v2.tex
+    [live] fig. caption (locus)               corpus/SdS-slicing-curve_v2.tex
+    [live] sec:overcritical, root structure   corpus/SdS-slicing-curve_v2.tex
+    [live] sec:overcritical, turning point    corpus/SdS-slicing-curve_v2.tex
+    [live] P16 receipt                        receipts/P16_cosmogenesis_paper/P16_recollapse_is_the_nariai_threshold.py
+  [PASS] (A)iii-c  four further sites in P3 and one in a P16 receipt, each the count 69 has just repaired once  witness: 5 of 5 anchors present at source
+  and in ONE section: the caption says 'three horizons' (True) while the prose two
+  sentences on now says 'three real horizon roots' (True) -- 69's repair landed in the
+  prose and not in the caption beside it.
+  [PASS] (A)iii-d  the repair landed in the prose and not in the figure caption of the same section  witness: both strings present in SdS-slicing-curve_v2.tex
+  NEGATIVE CONTROL, adjudicated clean: FIGURE_THEOREM_LEDGER row 41 says "Their sides
+  are the three horizons" of the THREE HINGES' polars -- one horizon per vantage, which
+  is a different three and is correct (True).  D3 flags it; the hand read clears it.
+  [PASS] (A)iii-e  D3 has a false positive and it is adjudicated, not counted  witness: row 41 is about three hinges' own horizons, one each, not three horizons of one slicing
+
+====================================================================================================
+(A)iv  THE LAP SENTENCE AGAINST THE OBJECT  (my own draft, checked)
+====================================================================================================
+  at the Nariai member 2M = 2*sqrt(3)/9 = 0.384900179
+    root multiset           {'-2*sqrt(3)/3': 1, 'sqrt(3)/3': 2}
+    the DOUBLE root          sqrt(3)/3   (the merged horizon)
+    the SIMPLE root          -2*sqrt(3)/3   (the backward-radial root)
+    cubic(0) = 2M            0.384900179  != 0, so r=0 is the branch point and not a root
+  the three points the landed sentence names: ['sqrt(3)*alpha/3', '0', '-2*sqrt(3)*alpha/3']
+    their sum                -sqrt(3)*alpha/3  != 0, so they are NOT a root list
+  [PASS] (A)iv  the three named points ARE the merged horizon, the branch point and the backward-radial root -- and are not a root list, which is why the repair was needed  witness: double root at 1/sqrt3, simple root at -2/sqrt3, cubic(0) = 2M != 0, and the three listed values sum to -alpha/sqrt3
+
+====================================================================================================
+(B)  P15's FOUR NEW FORMAL PARAGRAPHS, EACH AGAINST ITS THEOREM
+====================================================================================================
+  cm_aH_diverges
+    binders ['{M α : ℝ}', '(hM : 0 < M)']
+    concl   Tendsto (fun r : ℝ => Real.sqrt (2 * M / r + r ^ 2 / α ^ 2)) (𝓝[>] 0) atTop
+  cm_horizon_exit
+    binders ['{M α : ℝ}', '(hM : 0 < M)', '(k : ℝ)']
+    concl   Tendsto (fun r : ℝ => k / Real.sqrt (2 * M / r + r ^ 2 / α ^ 2)) (𝓝[>] 0) (𝓝 0)
+  cm_throat
+    binders ['{α : ℝ}', '(hα : 0 < α)']
+    concl   cm_f (α / (3 * Real.sqrt 3)) α (α / Real.sqrt 3) = 0 ∧ cm_f1 (α / (3 * Real.sqrt 3)) α (α / Real.sqrt 3) = 0 ∧ cm_f2 (α / (3 * Real.sqrt 3)) α (α / Real.sqrt 3) = -2 * (3 / α ^ 2) ∧ 3 / α ^ 2 * (α / (3 * Real.sqrt 3)) ^ 2 = 1 / 9
+  cm_throat_root
+    binders ['{α : ℝ}', '(hα : 0 < α)']
+    concl   (∀ r : ℝ, r ≠ 0 → cm_f (α / (3 * Real.sqrt 3)) α r = -((r - α / Real.sqrt 3) ^ 2 * (r + 2 * (α / Real.sqrt 3))) / (α ^ 2 * r)) ∧ ∀ r : ℝ, 0 < r → cm_f (α / (3 * Real.sqrt 3)) α r = 0 → r = α / Real.sqrt 3
+  cm_throat_radii
+    binders ['{α : ℝ}', '(hα : 0 < α)']
+    concl   2 / (α / Real.sqrt 3) ^ 2 = 2 * (3 / α ^ 2) ∧ -2 / cm_f2 (α / (3 * Real.sqrt 3)) α (α / Real.sqrt 3) = 1 / (3 / α ^ 2) ∧ (α / Real.sqrt 3) ^ 2 = 1 / (3 / α ^ 2)
+  cm_tortoise_linear
+    binders ['{κ xh : ℝ}', '(hκ : 0 < κ)']
+    concl   (∀ x, xh < x → HasDerivAt (fun x => Real.log (x - xh) / (2 * κ)) (1 / (2 * κ * (x - xh))) x) ∧ (∀ x, xh < x → x - xh = Real.exp (2 * κ * (Real.log (x - xh) / (2 * κ)))) ∧ Tendsto (fun x => Real.log (x - xh) / (2 * κ)) (𝓝[>] xh) atBot
+  cm_tortoise_double
+    binders ['{Λ xN : ℝ}', '(hΛ : 0 < Λ)']
+    concl   (∀ x, x ≠ xN → HasDerivAt (fun x => 1 / (Λ * (x - xN))) (1 / (-Λ * (x - xN) ^ 2)) x) ∧ (∀ x, x ≠ xN → x - xN = 1 / (Λ * (1 / (Λ * (x - xN))))) ∧ Tendsto (fun x => 1 / (Λ * (x - xN))) (𝓝[>] xN) atTop
+  cm_tortoise_finite
+    binders ['{M α ε : ℝ}', '(hM : 0 < M)', '(hα : α ≠ 0)', '(hε : 0 < ε)', '(hεM : ε ≤ M)']
+    concl   Tendsto (fun r => 1 / cm_f M α r) (𝓝[>] 0) (𝓝 0) ∧ (∀ r ∈ Ioc 0 ε, |1 / cm_f M α r| ≤ ε / M) ∧ IntervalIntegrable (fun r => 1 / cm_f M α r) MeasureTheory.volume 0 ε
+  cm_witness
+    binders []
+    concl   cm_f (3 / (3 * Real.sqrt 3)) 3 (3 / Real.sqrt 3) = 0 ∧ Real.exp (2 * 1 * (Real.log (2 - 1) / (2 * 1))) = 2 - 1 ∧ IntervalIntegrable (fun r => 1 / cm_f 1 3 r) MeasureTheory.volume 0 1
+  P15 cites 8 cm_ names: ['cm_aH_diverges', 'cm_horizon_exit', 'cm_throat', 'cm_throat_radii', 'cm_throat_root', 'cm_tortoise_double', 'cm_tortoise_finite', 'cm_tortoise_linear']
+  [PASS] (B)vi  every cited name is a declaration, and three fabricated names are not found  witness: 8 cited, none missing; fabricated ['cm_aH_converges', 'cm_throat_angle', 'cm_tortoise_infinite'] -> none found
+
+====================================================================================================
+(B)i  ROW 1 -- cm_aH_diverges, cm_horizon_exit  (the order's aH-versus-expression risk)
+====================================================================================================
+  PROSE  The census is machine-checked in Lean, in units $G=c=1$ (computations/formalisation/lean/probes/Cosmology.lean): on the marginally bound leg, where $a=r$ and $\dot r^{2}=2M/r+r^{2}/\alpha^{2}$, the comoving Hubble scale $\sqrt{2M/r+r^{2}/\alpha^{2}}$ grows without bound as $r\to0^{+}$ for $M>0$ (cm_aH_diverges), so $k/(aH)\to0$ for every $k$ (cm_horizon_exit).
+  the theorem's SUBJECT: Real.sqrt (2 * M / r + r ^ 2 / α ^ 2)
+    declaration carries variable r         = True
+    declaration carries direction r->0+    = True
+    declaration carries sign atTop         = True
+    declaration carries hypothesis 0 < M   = True
+    prose           the leg is NAMED marginally bound                       = True
+    prose           a = r is stated                                         = True
+    prose           rdot^2 is stated                                        = True
+    prose           the SUBJECT is written as the expression, not as aH     = True
+    prose           direction r->0+ stated                                  = True
+    prose           M>0 stated                                              = True
+    prose           k unrestricted ("every k")                              = True
+  with a = r the identity aH = adot = rdot gives aH = sqrt(2*M/rr + rr**2/alpha**2), which is the theorem's subject
+  and its limit as r -> 0+ at M=1, alpha=3: oo
+  [PASS] (B)i-a  the divergence's variable, direction, sign and hypothesis are all four in the declaration AND in the prose  witness: {'variable r': True, 'direction r->0+': True, 'sign atTop': True, 'hypothesis 0 < M': True}
+  [PASS] (B)i-b  the order's registered risk does NOT fire: the leg is named, a=r and rdot^2 are both stated, and the subject is written as the expression  witness: "on the marginally bound leg, where $a=r$ and $\dot r^{2}=2M/r+r^{2}/\alpha^{2}$, the comoving Hubble scale $\sqrt{2M/r+r^{2}/\alpha^{2}}$ grows without bound"
+  [PASS] (B)i-c  and the identification is sound: a=r makes aH = rdot, whose closed form IS the theorem's subject, and it diverges  witness: aH = sqrt(2M/r + r^2/alpha^2); limit at r->0+ = oo
+
+====================================================================================================
+(B)ii  ROW 4 -- cm_throat, cm_throat_root, cm_throat_radii
+====================================================================================================
+  PROSE  The proposition is machine-checked in Lean, in units $G=c=1$ (Cosmology.lean): at $M=\alpha/(3\sqrt3)$, which is $\Lambda M^{2}=1/9$, the radius $r_{N}=\alpha/\sqrt3$ has $f=f'=0$ and $f"=-2\Lambda$ (cm_throat); there $f=-(r-r_{N})^{2}(r+2r_{N})/(\alpha^{2}r)$, so $r_{N}$ is its only positive root (cm_throat_root); and $2/r_{N}^{2}=2\Lambda$ while $-2/f"(r_{N})=1/\Lambda=r_{N}^{2}$, so the two radii are equal (cm_throat_radii).
+    f(rN)              = 0
+    f'(rN)             = 0
+    f"(rN) + 2L        = 0
+    L*MN^2 - 1/9       = 0
+    rN^2 - 1/L         = 0
+    -2/f"(rN) - 1/L    = 0
+    2/rN^2 - 2L        = 0
+  the factorisation residual f - [-(r-rN)^2(r+2rN)/(alpha^2 r)] = 0
+  [PASS] (B)ii-a  every arithmetic claim of the three theorems holds of f itself  witness: f(rN)=f'(rN)=0, f"(rN)=-2L, L M^2=1/9, rN^2 = -2/f"(rN) = 1/L, and the factorisation residual is 0
+  the proposition names the two radii (the S^2's and the dS_2's): True
+  [PASS] (B)ii-b  "the two radii" has its referents in the proposition the paragraph supports, read on BOTH sides of the citation  witness: the proposition says "both curvature radii equal to $1/\sqrt\Lambda$: the $S^2$ has two-Ricci $R_2=2/r_N^2=2\Lambda$, and the $\dS_2$ has radius$^2=-2/f''(r_N)=1/\Lambda$"
+
+====================================================================================================
+(B)ii-c  WHAT EACH OF THE FOUR PARAGRAPHS SAYS IS NOT FORMALISED
+====================================================================================================
+    row 1: names an unformalised remainder = True 
+        " every $k$ (cm_horizon_exit). What state is handed over is the reading of that census and is not formalised."
+    row 4: names an unformalised remainder = False
+    row 6: names an unformalised remainder = True 
+        "Both tortoise laws are machine-checked for the local forms of $f$ the proposition names (Cosmology"
+    row 7: names an unformalised remainder = True 
+        " crossing imprints a scale is the reading, and the constants of $a"/a$ are computed above rather than formalised."
+
+  SEARCHED: each of the four paragraphs, de-marked, for 'not formalised', 'rather than
+            formalised' and 'for the local forms' -- row 4 carries none of the three,
+            and it is the one whose proposition asserts a geometric identification the
+            three theorems do not reach: that the near-horizon geometry IS dS_2 x S^2,
+            and that -2/f''(r_N) is the dS_2 radius squared (the Ginsparg-Perry limit,
+            cited in the argument to a paper and a receipt, not to Lean).
+  CONTROL: the other three each carry one, so the absence is this paragraph's and not
+           a property of the search.
+  [PASS] (B)ii-c  three of the four paragraphs name their unformalised remainder and row 4 does not -- while opening "The proposition is machine-checked in Lean"  witness: {'row 1': True, 'row 4': False, 'row 6': True, 'row 7': True}
+
+====================================================================================================
+(B)iii  ROW 6 -- cm_tortoise_linear, cm_tortoise_double  (the local-form risk)
+====================================================================================================
+  PROSE  Both tortoise laws are machine-checked for the local forms of $f$ the proposition names (Cosmology.lean): for $f=2\kappa(r-r_h)$, $r_=\ln(r-r_h)/2\kappa$ has $dr_/dr=1/f$ and inverts to $r-r_h=e^{2\kappa r_}$, with $r_\to-\infty$ logarithmically at the horizon (cm_tortoise_linear); for $f=-\Lambda(r-r_{N})^{2}$, $r_=1/[\Lambda(r-r_{N})]$ has $dr_/dr=1/f$ and inverts to $r-r_{N}=1/(\Lambda r_)$, with $r_\to+\infty$ as a power as $r\to r_{N}^{+}$ (cm_tortoise_double).
+  cm_tortoise_linear mentions cm_f: False;  cm_tortoise_double: False
+  the prose states the local-form restriction in the lead clause: True
+  and writes each local form explicitly: (True, True)
+  [PASS] (B)iii-a  the registered local-versus-global risk does NOT fire: neither theorem mentions f, and the prose says so twice  witness: "Both tortoise laws are machine-checked for the local forms of $f$ the proposition names", then $f=2\kappa(r-r_h)$ and $f=-\Lambda(r-r_N)^{2}$ written out
+  dr*/dx - 1/f residuals: simple root 0, double root 0
+  and the double-root local form IS f's own quadratic term: (1/2)f''(rN)(r-rN)^2 - [-L(r-rN)^2] = 0
+  [PASS] (B)iii-b  each law's derivative is 1/f for ITS form, the two rates differ (log against reciprocal), and the double-root form is f's own quadratic term  witness: residuals 0 and 0; cm_tortoise_linear -> atBot, cm_tortoise_double -> atTop; (1/2)f''(rN) = -Lambda
+
+====================================================================================================
+(B)iv  ROW 7 -- cm_tortoise_finite
+====================================================================================================
+  PROSE  The finiteness the proposition rests on is machine-checked (Cosmology.lean): for $M>0$, $1/f\to0$ as $r\to0^{+}$; on $(0,\varepsilon]$ with $\varepsilon\le M$, $\lvert1/f\rvert\le\varepsilon/M$; and $1/f$ is integrable on $[0,\varepsilon]$, so the tortoise length to the branch point is finite (cm_tortoise_finite).
+  hypotheses: ['{M α ε : ℝ}', '(hM : 0 < M)', '(hα : α ≠ 0)', '(hε : 0 < ε)', '(hεM : ε ≤ M)']
+    prose states 0 < M        = True
+    prose states 0 < eps      = True
+    prose states eps <= M     = True
+    prose states alpha != 0   = False
+    M=1, alpha=3, eps=1: max |1/f| on (0,eps] sampled = 0.90000000  <=  eps/M = 1.00000000   ok
+    M=2, alpha=5, eps=1/2: max |1/f| on (0,eps] sampled = 0.14265335  <=  eps/M = 0.25000000   ok
+    M=1/2, alpha=1, eps=1/4: max |1/f| on (0,eps] sampled = 0.32653061  <=  eps/M = 0.50000000   ok
+  and the tortoise length to the branch point at M=1, alpha=3: int_0^1 dr/f = -0.370420982625  (finite)
+  [PASS] (B)iv-a  the bound and the finiteness hold of f itself at every sampled member  witness: |1/f| <= eps/M on three members; int_0^1 dr/f = -0.37042098
+  [PASS] (B)iv-b  but the declaration carries FOUR hypotheses and the prose states three: alpha != 0 is dropped  witness: binders are 0 < M, alpha != 0, 0 < eps, eps <= M; the prose names M>0, (0,eps] and eps <= M, and not alpha != 0 -- which P15's own convention makes structural, since alpha = sqrt(3/Lambda) is the fixed invariant and never a free parameter
+
+====================================================================================================
+(B)v  NON-VACUITY, AND AT WHAT MASS  (r7744 FINDING 4's question, asked first)
+====================================================================================================
+  cm_witness concl: cm_f (3 / (3 * Real.sqrt 3)) 3 (3 / Real.sqrt 3) = 0 ∧ Real.exp (2 * 1 * (Real.log (2 - 1) / (2 * 1))) = 2 - 1 ∧ IntervalIntegrable (fun r => 1 / cm_f 1 3 r) MeasureTheory.volume 0 1
+  the mass arguments its conjuncts use: ['1', '3 / (3']
+  [PASS] (B)v  the witness is exhibited at NONZERO mass, unlike r7744's  witness: cm_f arguments in cm_witness = ['1', '3 / (3']; the throat conjunct at the Nariai mass 3/(3 sqrt3) with alpha=3, and the integrability conjunct at M=1, alpha=3, eps=1
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+  [PASS] (o)a  r=0 is a root iff 2M=0, and a root multiset sums to 0
+  [PASS] (A)i  all twelve located, raw / flattened / demarked, against the order's tally
+  [PASS] (A)ii  every drafted repair landed byte-identical, span to the sentence's own end
+  [PASS] (A)iii-a  the three predicates together flag every pre-landing site of THIS round
+  [PASS] (A)iii-b  0 of the twelve landings is flagged now
+  [PASS] (A)iii-c  four further sites in P3 and one in a P16 receipt, each the count 69 has just repaired once
+  [PASS] (A)iii-d  the repair landed in the prose and not in the figure caption of the same section
+  [PASS] (A)iii-e  D3 has a false positive and it is adjudicated, not counted
+  [PASS] (A)iv  the three named points ARE the merged horizon, the branch point and the backward-radial root -- and are not a root list, which is why the repair was needed
+  [PASS] (B)vi  every cited name is a declaration, and three fabricated names are not found
+  [PASS] (B)i-a  the divergence's variable, direction, sign and hypothesis are all four in the declaration AND in the prose
+  [PASS] (B)i-b  the order's registered risk does NOT fire: the leg is named, a=r and rdot^2 are both stated, and the subject is written as the expression
+  [PASS] (B)i-c  and the identification is sound: a=r makes aH = rdot, whose closed form IS the theorem's subject, and it diverges
+  [PASS] (B)ii-a  every arithmetic claim of the three theorems holds of f itself
+  [PASS] (B)ii-b  "the two radii" has its referents in the proposition the paragraph supports, read on BOTH sides of the citation
+  [PASS] (B)ii-c  three of the four paragraphs name their unformalised remainder and row 4 does not -- while opening "The proposition is machine-checked in Lean"
+  [PASS] (B)iii-a  the registered local-versus-global risk does NOT fire: neither theorem mentions f, and the prose says so twice
+  [PASS] (B)iii-b  each law's derivative is 1/f for ITS form, the two rates differ (log against reciprocal), and the double-root form is f's own quadratic term
+  [PASS] (B)iv-a  the bound and the finiteness hold of f itself at every sampled member
+  [PASS] (B)iv-b  but the declaration carries FOUR hypotheses and the prose states three: alpha != 0 is dropped
+  [PASS] (B)v  the witness is exhibited at NONZERO mass, unlike r7744's
+
+  21 of 21 arms PASS
