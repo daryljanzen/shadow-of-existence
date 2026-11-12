@@ -44,7 +44,14 @@ Every citing sentence in `arp_cogsci.tex`, checked against the cited work itself
 
 ## Batch 4 — dominance and withdrawal
 
-Zimmerman and West 1975, West and Zimmerman 1983, Linell, Gustavsson and Juvonen 1988, Itakura 2001, Hancock and Rubin 2015.
+| Reference | Source read | Finding | Sentence now |
+|---|---|---|---|
+| Zimmerman and West 1975 | Secondary summaries (Kollock et al. 1985; a University of California thesis; Psychology Today); chapter not retrieved | Interruption is an entry before a possible transition point, "a deeper intrusion" than overlap; in mixed-sex conversations men made nearly all the interruptions (96 per cent). None of the summaries reports the silences in the chapter's title. | Cited for the asymmetry, and for examining interruption "together with the silences of the party whose turns are cut off" — which the title supports. No longer cited for a withdrawal finding. |
+| West and Zimmerman 1983 | Secondary summaries; chapter not retrieved | Interruption as "a device for exercising power and control in conversation" (p. 103, as quoted). | §2.5 and §3.4 now use their definition and their power-and-control description. The claim that such interruptions "typically redirect rather than extend the topic" is no longer attributed to them; it stands as the paper's own reading of interruption used as control. |
+| Linell, Gustavsson and Juvonen 1988 | A Lund working paper describing the initiative–response model; article not retrieved | A coding method, initiatives and responses, for measuring dominance, flow and coherence. Not a multidimensional framework. | "Developed initiative–response analysis to measure such interactional dominance". Was: "later formalised as multidimensional conversational dominance". |
+| Itakura 2001 | Abstract | Dominance as multidimensional: sequential, participatory, quantitative, with sequential the most significant. Nothing about withdrawal. | Now cited for the multidimensional framework. Was cited for "interrupted or pre-empted speakers withdraw". |
+| Hancock and Rubin 2015 | Secondary report of the study | Speakers of both sexes interrupted more, and used more dependent clauses, when talking with a woman. Nothing about withdrawal. | Now cited for the persisting asymmetry. Was cited for withdrawal. |
+| "A consistent finding across this literature is that systematically interrupted or pre-empted speakers withdraw" | None of the cited sources, as far as they could be read | Unsupported as cited. | Removed. §2.5 now says "Where dominated speakers fall silent or withdraw, the explanation offered is typically…", and the introduction's summary of the tradition now says it describes "how turn-taking rights are violated, by whom, and with what consequences". The mechanism argument and prediction P4 are unchanged; P4 itself is the test of whether withdrawal follows. |
 
 ## Batch 5 — evidence and methods
 
@@ -62,4 +69,9 @@ These could not be retrieved in full. Each is confirmed as far as the abstract, 
 - Heritage and Watson 1979, chapter in *Everyday Language*, 123–162
 - Pickering and Garrod 2013, *Behavioral and Brain Sciences* 36, 329–347 (body text; only the abstract was legible)
 - Pickering and Garrod 2021, *Understanding Dialogue* (book)
+- Zimmerman and West 1975, chapter in *Language and Sex*, 105–129 — **important: if it reports the interrupted party's silences, the paper can again state withdrawal as a finding, citing the page**
+- West and Zimmerman 1983, chapter in *Language, Gender and Society*, 102–117
+- Linell, Gustavsson and Juvonen 1988, *Linguistics* 26, 415–442
+- Itakura 2001, *Journal of Pragmatics* 33, 1859–1880 (abstract only)
+- Hancock and Rubin 2015, *Journal of Language and Social Psychology* 34, 46–64 (secondary report only)
 - Levinson 2016, *Trends in Cognitive Sciences* 20, 6–14 (confirmed from the institute's press release only)
