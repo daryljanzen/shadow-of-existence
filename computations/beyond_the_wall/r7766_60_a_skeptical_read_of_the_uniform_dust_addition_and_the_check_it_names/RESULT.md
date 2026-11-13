@@ -150,7 +150,10 @@ about its own trampoline:
 > times by matter."*
 
 In the source the matter's warping **does not change the cosmological solution at all**, and an
-expanding trampoline appears nowhere in it — zero sentences. So the addition is a **repair** of the
+expanding trampoline appears nowhere in it. **What was searched, beside the claim:** every sentence
+of the source carrying `trampoline` was enumerated from the full text at the commit `runs/TREE.txt`
+names, and each was checked for `expand` or `FLRW` — **zero occurrences**, against eight trampoline
+sentences found. The claim is that search's result and not an impression of the passage. So the addition is a **repair** of the
 analogy rather than a reading of it: right about the licence (⒜ above), opposite to the source on
 whether content moves the cosmological rate. **The analogy therefore cannot be cited both for "no
 content sets it" and for "the dust changes the expansion in the well-known way."** What carries that
