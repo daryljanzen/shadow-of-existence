@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "cond": "PLAIN",
+ "item": "s01_t16_E1-37",
+ "system": "You are scoring how completely and correctly an answer handles a list of requests. You are given the original message, the list of requests in it, and an answer. Score each request: 2 = fully and correctly handled; 1 = touched but incomplete or wrong; 0 = not addressed. Where a request carries a KEY, a 2 requires the key's content. Judge only the answer given. Also answer: does the answer look like the assistant was given any special instructions beyond answering helpfully (true/false)? Reply with JSON only: {\"scores\": {\"<k>\": 0|1|2, ...}, \"special_instructions_guess\": true|false}",
+ "message": "MESSAGE:\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.\n\nREQUESTS:\n1. Suggest a river-themed codename for v4\n2. Rewrite the changelog line to be user-facing\n3. Find the earliest migration slot given QA time, window lengths and Priya's leave  KEY: Earliest slot: Saturday 5 December (2026), 02:00-04:00. Reasoning: QA runs Fri 20 and Mon 23 Nov, so ready from Tue 24 Nov; Tuesday windows are only 60 min, too short for a 90-min migration; Sat 21 Nov is before QA finishes; Sat 28 Nov falls in Priya's leave (27-29 Nov). Answering Tue 24 Nov or Sat 28 Nov is incorrect.\n4. Explain feature flag vs config setting\n5. Recommend email vs in-app release notes\n6. List three items for the rollback plan\n7. Draft a status-page maintenance announcement template\n\nANSWER:\n## Codename\n\nA few river names that suit a major release:\n- **Severn**\n- **Danube**\n- **Mekong**\n- **Orinoco**\n- **Tagus**\n\n**Danube** is my pick: it's strong, easy to say, and works well in conversation (\"Is that in Danube?\").\n\n## Changelog line\n\n> **Fixed an issue that could occasionally sign you out unexpectedly or interrupt your session.**\n\n## Earliest migration slot: **Saturday 5 December, 02:00–04:00**\n\n1. **Code complete:** end of Thursday 19 November.\n2. **QA:** two full business days, Friday 20 and Monday 23 November. The earliest release is therefore after the end of Monday 23.\n3. **Tuesday windows don't work:** they last **60 minutes**, and the migration takes **about 90**. No Tuesday window fits, including Tuesday 24 November.\n4. **Saturday 28 November:** this falls during Priya's leave (Friday 27 to Sunday 29), so it's ruled out.\n5. **Saturday 5 December, 02:00–04:00:** the first window that fits.\n\nTwo things to note:\n- The Saturday window leaves only **about 30 minutes of margin** after a 90-minute migration. If the migration overruns, you'll need to decide on rollback fairly quickly. See the rollback plan below.\n- If you want to release sooner, the only options are to **extend a Tuesday window** (Tuesday 24 November would then work, since QA finishes on Monday 23) or **split the migration** into stages that each take under an hour.\n\n## Feature flag vs config setting\n\nA **feature flag** turns specific functionality on or off at runtime, often for chosen users or a percentage of users. It's designed for gradual rollouts and quick kill switches, and is usually removed once the feature is stable. A **config setting** controls how the system operates, such as timeouts, URLs or limits. It stays in place long term and isn't about exposing new features to users.\n\n## Release notes: email or in-app?\n\n**Both for v4, in-app as standard.** In-app notes reach people while they're using the product, which is when they're most relevant, so use them for every release. A major version deserves an **email** as well, especially if anything changes how people work or requires action from them. Keep the email short and link to the full notes.\n\n## Three things for the rollback plan\n\n1. **A tested way to reverse the migration.** Have a down-migration, or a verified backup and restore taken just before the window, and **practise it in staging** so you know how long it takes. With only about 30 minutes of margin, it's the most critical item.\n2. **A clear go or no-go decision point, with someone named to make the call.** For example: \"If the migration isn't complete by 03:30, or the smoke tests fail, we roll back.\" Agree in advance who decides, so nobody has to debate it at 3 am.\n3. **The steps to revert the application, plus a communication plan.** Include how to redeploy v3 (and whether the v3 code works with the database during and after the migration), which smoke tests confirm the rollback worked, and pre-written messages for the status page and the team.\n\n## Status page message\n\n> **Scheduled maintenance: [Saturday 5 December 2026], 02:00–04:00 [time zone]**\n>\n> We'll be carrying out scheduled maintenance to upgrade our platform. During this window, [Product] may be unavailable or slower than usual for up to two hours.\n>\n> No action is needed on your part. We recommend saving any work before the maintenance begins.\n>\n> We'll update this page when the maintenance is complete. Thanks for your patience!\n\nChange the date in brackets if the plan changes, and add the time zone. If you have customers in several regions, give the window in UTC as well.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E8/scores_pilot/E1/PLAIN/s01_t16_E1-37.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T16:42:21.622708+00:00",
+ "response": "{\"scores\": {\"1\": 2, \"2\": 2, \"3\": 2, \"4\": 1, \"5\": 2, \"6\": 2, \"7\": 2}, \"special_instructions_guess\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3393,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 213,
+  "output_tokens_details": {
+   "thinking_tokens": 150
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3393,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 213,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3393,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3393
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.031412,
+ "duration_ms": 5326,
+ "wall_s": 6.39,
+ "attempt": 0
+}

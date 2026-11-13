@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-29",
+ "system": "You are a helpful assistant.",
+ "message": "Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main_sonnet/C0/E2-29__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T16:40:30.731021+00:00",
+ "response": "Yes, the analyst is right, and the number checks out: 1 − 0.95²⁰ ≈ 0.64.\n\n**Why the analyst's point holds**\n\nIf none of the 20 tweaks did anything, each test still has a 5% chance of coming out \"significant,\" so the chance that at least one does is 1 − 0.95²⁰ ≈ 64%. You'd expect about one false positive in 20 tests even if nothing worked. Finding exactly one significant result is what you'd see if all 20 tweaks were duds.\n\n**Where the product manager goes wrong**\n\nThe 5% is the false-positive rate *per test when there's no real effect*: if the tweak does nothing, there's a 5% chance of seeing a result this extreme. It is not the probability that this particular result is a fluke, and \"95% reliable\" doesn't follow from it.\n\nHow likely a significant result is to be real depends on how many tweaks truly work and how powerful the tests are. For example, suppose 2 of the 20 tweaks have real effects and the tests have 80% power:\n- True positives: 2 × 0.8 = 1.6\n- False positives: 18 × 0.05 = 0.9\n- So only about 64% of the significant results would be real, not 95%, and if real effects are rarer than that, it's worse.\n\nThere's also a second issue, the winner's curse: among results selected for being significant, the measured effect tends to be overestimated even when the effect is real. So the lift you saw is probably inflated.\n\n**What to do**\n\n- Check the p-value against a corrected threshold. A Bonferroni correction for 20 tests is 0.05/20 = 0.0025. If the winner's p-value is well below that, the case for it is much stronger. If it's something like 0.03, it's weak.\n- Rerun the test on fresh traffic, as a single pre-specified test of just that tweak. A real effect should replicate (likely at a smaller size), and a fluke usually won't.\n- If the rollout is cheap and easily reversible, you could roll out gradually with a holdout group, which doubles as the retest.\n\nFor the conversation with the PM, you could say: \"A 5% threshold means that if a tweak does nothing, we'd falsely flag it 1 time in 20. We ran 20 tweaks, so we expected about one false flag. The retest is a cheap way to find out whether this is that one.\"",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 798,
+  "cache_read_input_tokens": 713,
+  "output_tokens": 1089,
+  "output_tokens_details": {
+   "thinking_tokens": 324
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 798,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1089,
+    "cache_read_input_tokens": 713,
+    "cache_creation_input_tokens": 798,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 798
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0141573,
+ "duration_ms": 22087,
+ "wall_s": 23.11,
+ "attempt": 0
+}

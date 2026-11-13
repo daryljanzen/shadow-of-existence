@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-29",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main_sonnet/C3/E2-29__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T16:41:08.054898+00:00",
+ "response": "Yes, the analyst is right, and the arithmetic checks out.\n\n**The 64% figure.** If none of the 20 tweaks had any effect, each independent test has a 5% chance of a false positive, so the chance that none of them fire is 0.95²⁰ ≈ 0.36. The chance of at least one false positive is 1 − 0.36 ≈ 64%. On average you'd expect one false \"win\" in 20 null tests, so finding exactly one is about what chance alone would produce.\n\n**Where the product manager goes wrong.** The 5% is the false positive rate *per test, assuming there is no real effect*: if a tweak does nothing, there's a 5% chance it looks significant anyway. It is not the probability that a significant result is a fluke, so \"95% reliable\" doesn't follow. The chance that this particular result is real depends on things the 5% doesn't capture:\n\n- How many of the 20 tweaks plausibly had real effects (the base rate).\n- How much statistical power the tests had.\n\nIllustratively, suppose 10% of tweaks like these are truly effective and your tests have 80% power. Out of 20 tests you'd expect about 1.6 true positives and 0.9 false ones, so a given significant result would be a fluke roughly a third of the time. If the true base rate is lower, it's worse. If none of the tweaks do anything, it's 100%. Those numbers are assumptions, not facts about your tests.\n\nThere's also a second problem: a result picked because it was the one that cleared the bar tends to overstate the real effect (the \"winner's curse\"), even if the effect is genuine.\n\n**What would settle it:**\n- **The p-value of the winner.** A Bonferroni-style correction for 20 tests would require roughly p < 0.0025. If it's well below that, the result is much more credible. If it's something like 0.03 or 0.04, it's weak evidence.\n- **Whether the hypothesis was specified in advance**, with a clear rationale for why that tweak should work, versus being one of 20 unrelated guesses.\n- **Your historical hit rate** for this kind of tweak, which gives you a real base rate.\n- **A retest.** A pre-registered rerun of just that tweak, with a fixed sample size, resolves the question directly. If it replicates, you can roll it out with much more confidence. If not, you've avoided shipping noise.\n\nFor pushing back, a short version: \"5% is the false alarm rate for a single test with no real effect. With 20 tests, one false alarm is the expected outcome, so this result alone doesn't tell us the tweak works. A retest is cheap relative to rolling out something that does nothing.\"",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 799,
+  "cache_read_input_tokens": 735,
+  "output_tokens": 1207,
+  "output_tokens_details": {
+   "thinking_tokens": 346
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 799,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1207,
+    "cache_read_input_tokens": 735,
+    "cache_creation_input_tokens": 799,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 799
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0153435,
+ "duration_ms": 13369,
+ "wall_s": 14.29,
+ "attempt": 0
+}

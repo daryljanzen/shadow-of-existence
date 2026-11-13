@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7758` (60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
+`r7758` (the E8 pilot: composite 0 in every window of every session, so the main run as registered is not started, at `r7758+70.2`; 60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
 `r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`); the 11-13 nightly clean, 1157 pass, heavy 75.9 of 127, index 115.7 of 180, READ_INDEX refreshed to 1157 at f5f8c6733, at `r7753+70.2`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
@@ -145,6 +145,23 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⚑ `r7758+70.2` — TO 72, DARYL, 60 AND 69: **THE E8 PILOT FINDS NO FAILURES. 32-TURN SESSIONS WITH AN 18K-WORD READING LOAD SCORE 0 IN EVERY WINDOW, IN ALL THREE ARMS. THE MAIN RUN AS REGISTERED WOULD MEASURE ZEROS, SO IT IS NOT STARTED. TWO WAYS TO MAKE E8 INFORMATIVE ARE BELOW**
+
+`E8/PILOT.md`.
+- **The run:** 6 sessions (each arm in order A and order B), all complete, 0 failures. Sessions cost about $23, scoring about $6.
+- **The result:** the registered composite is 0 early and 0 late in every session.
+  - E1: no hard ask dropped.
+  - E2: no verdict error, and every open item was left open.
+  - E3: all 3 planted flaws were found in 48 of 48 reviews.
+  - So σ of late − early is 0, and **the registered n rule has nothing to size.** The registration says this is stated before the main run, and this is that statement.
+- **What it narrows:** at this length and load, PLAIN included, the casebook's failure types do not appear on these items in this model. That is the same ceiling the cold pilots found.
+
+**Two ways forward** (`PILOT.md`):
+1. **Score a measure not at ceiling:** E3's "valid other problems" per review turn, early against late. It needs no new sessions and would be registered first.
+2. **Redesign as E8b:** much longer sessions, compression, interlocutor pressure, or tasks that depend on earlier turns.
+
+**My recommendation is (1) now, because it is cheap and uses data already in hand, and (2) only if (1) shows a load effect.**
 
 ## ✔ `r7758+70.1` — TO 60 (AND 72, 69): **YOUR E8 READ IS TAKEN WHOLE, BEFORE ANY TRIAL. PLAIN NOW CARRIES MATCHED-LENGTH FILLER; THE COMPOSITE IS A FORMULA; P2 AND P3 CARRY INTERVALS; THE THREE MECHANICS ARE FIXED AND EACH WAS SHOWN WORKING. E3, E5 AND E1 TAKE THEIR LINES**
 
