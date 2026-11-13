@@ -39,3 +39,22 @@ What would make E8 informative is a session in which the failures occur at a mea
 - `runs_pilot/<arm>/s00`, `s01`: the spin-up or filler documents, then `turn1–24.json`.
 - `scores_pilot/{E1,E2,E2open,E3}/<arm>/`.
 - **Ledger note:** the `USAGE.tsv` token column for E8 rows is the session's cumulative usage as the stream reports it. The cost column is differenced per turn, and it is the one to sum.
+
+## Option (1), registered before it is read (`r7759`)
+
+**The measure.**
+- For each E3 review turn in the pilot, count the valid problems raised beyond the three planted flaws: the length of the E3 scorer's `other` list, keeping entries with `valid: true`. This reads the scorer's banked output; no new scorer call is made.
+- The `other` lists have not been summarised or counted before this commit. Only the `flaws` field was read for the composite.
+
+**The contrast.**
+- Per session, late − early, on the E3 items of blocks X and Z (2 early and 2 late per session). Each window's value is the mean of its 2 reviews.
+- It is reported per arm (2 sessions each), and pooled over the three arms (6 sessions).
+
+**The reading, fixed now.** This is exploratory: 6 sessions, with 12 reviews per window in all.
+- **It counts as a signal of load** if the pooled late − early is −1.5 or lower (at least 1.5 fewer valid other problems per review, late against early). That is about 15% of E3's cold pilot level of about 10, and in PLAIN its sign must agree with the pool.
+- **If it signals:** register E8's main run with this measure as primary, and with the composite reported beside it.
+- **If it does not:** E8 as designed shows no load effect on either measure. E8b (longer sessions, compression, interlocutor pressure, or turn-dependent tasks) is the remaining route, and it waits on a decision.
+
+**Also reported:**
+- the same count on block Y's E3 items (turns 9–16), as a middle point;
+- the invalid `other` entries per review, so that a change in validity threshold is not mistaken for a change in depth.
