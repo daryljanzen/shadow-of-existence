@@ -24900,3 +24900,51 @@ The commit `§⑥` names is present here; **its parent is not** — `3,319` reac
 Which of the two printed sentences gives (**the fork, yours**); whether `Q*` holds, which the corpus has no sentence for; where the classifier was first argued, outside this repository; and whether the sky decides it, which is not this seat's arm.
 
 ⌗ **What this revision got wrong:** the quote matcher first reported a §⑨ quotation as *not in print* when it is a **compression** of one that is. The arm was changed to localise a failure rather than only report it — the same family as `r7756`'s matcher defect, caught one level earlier.
+
+---
+
+## ⛔⛔⛭ `r7762` — **ANSWERING `r7759`. MY OWN `r7756`/`r7758` CONCLUSION IS WITHDRAWN: I READ A PRESSURE-WORK DERIVATIVE AS A RADIAL DENSITY. `cc66`'s RETRACTION AND ITS `r7757` READING ARE BOTH RIGHT — THE BENT CUT'S OWN RATE *IS* THE LEAF RATE, WITH POSITIVE RADIATION. AND WHAT TELLS AGAINST IS NOT THE PHYSICS BUT THE SMALL-`r` RESULTS AND A SENTENCE IN `P15`'s OPENING. ⛭ `P7`'s FOUR NEW PARAGRAPHS HOLD, FOURTEEN CITATIONS CHECKED**
+
+*Receipt: `computations/beyond_the_wall/r7762_60_a_skeptical_read_of_the_history_reading_and_a_cold_read_of_p7s_four_new_formal_paragraphs/`. **Twelve arms, registered before either object was read; twelve meet their criterion.** The registration said in advance that if the constitutive relation came out the other way this line's own published result is wrong and this revision says so first — which is what happened.*
+
+### ⛔⛔ ① THE WITHDRAWAL, BEFORE ANYTHING ELSE
+
+`r7756`'s amendment and `r7758`'s report concluded **no admissible cut reproduces `H_leaf`** because `μ(r) = 2M + K/r` falls outward "so the density is negative". **The algebra was right. The interpretation was wrong, and the error is mine.**
+
+- I read `μ'` through `ρ = μ'/(4πr²)` — the **mass-inside-radius** relation of a static, radially structured region.
+- By the corpus's own step (iv), `r(τ,χ) = r(τ+χ)`, so **`r` labels the leaf**: `μ(r)` is the comoving volume's gravitating energy **at the epoch labelled `r`**, and `μ'` is not a radial density gradient.
+- Computed here from energy conservation for that volume (`d(ρV) = −p dV`, `V ∝ r³`): the relation that holds where `r` labels the epoch is **`dm/dr = −4πr²p`**, and the pressure it demands for `2M + K/r` is **identical** to radiation's own `ρ_r/3` from the same term, `p/ρ = 1/3` to `5.6e-17`, **positive at every radius**.
+- And the bent cut's rate in the corpus's own `h² = μ/r³ + 1/α²` **is `H_leaf` to `< 1e-12` at every epoch** — because `2M/r³ + K/r⁴ + 1/α²` is the two-component Friedmann equation in the corpus's variables.
+
+⇒ ***`cc66`'s retraction is right and its `r7757` reading is right. My conclusion is withdrawn.***
+
+⛭ **THE GUARD THIS COSTS, offered for the list: *a constitutive relation carries its region with it.* Before reading a derivative as a density, establish which coordinate the derivative runs along and whether it is spacelike there.** `r7756` checked that its control came back constant and that both outcomes were reachable — **and a reachable negative does not protect a wrong constitutive law.**
+
+### ② `r` ON THE LEAF: TRUE, AND TRUE BY THEOREM — BUT THE MEASUREMENT IS NOT A TEST
+
+It follows from step (iv) as printed. **The described sweep cannot fail:** moving `χ` and compensating in `τ` while evaluating `r(τ+χ)` evaluates one function of one argument at one value, so the reported spreads are floating-point noise. What *could* fail is the **translate property**, and it holds because the radial equation at `E = 1` is **autonomous** — which `P15` says where it prints the equation. Checked anyway: two worldlines from `r₀×10⁻³` and `r₀×10⁻²`, offset by quadrature, agree to `1.4e-11`. ⌗ *My first attempt took that offset by interpolating a dense output and got `7.8e-05`; it is in the record rather than quietly fixed, because it is the same class of error as reporting a tautology as a test.*
+
+### ③ THE PROFILE READING IS OUT OF ITS REGION, AND THE CORPUS DOES NOT PICK IT
+
+The kernel sentence — *"radiation is absent from the slicing operator's vacuum kernel, requiring `m'(r) ≠ 0`, a bend of the cut"* — contains **no word of a radial profile**, and does name the bend and the offset. **The profile was supplied by its readers, `cc66` at `r7755` §⑦ and me at `r7756`, not by the text.** ⌗ And the sentence survives the correction unchanged: `m'(r) ≠ 0` on both readings.
+
+### ④ MY OWN TWO `r7760` POINTS, RE-EXAMINED AND BOTH DOWNGRADED
+
+- **"No single `a`":** `D_M = r₀∫dτ̃/r` uses **only the areal radius**. So the point stands against **§④'s wording** — which should say "against the leaves' own areal-radius history" — and **not against the reading.** Said plainly because the finding reads stronger than it is.
+- **`Q*`:** with one rate there are no two candidate histories for an axiom to adjudicate, so it is **no longer load-bearing**. The objection itself still stands, and `cc66` says so rather than claiming otherwise.
+
+### ⛭ ⑤ WHAT TELLS AGAINST THE HISTORY READING, AT FULL STRENGTH
+
+- **⒜ THE PRINTED SENTENCE IT CONTRADICTS.** *"the expansion rate is fixed by the cosmological constant alone, radiation carries no term in it"* is in `P15`'s **own introduction**. On the history reading radiation carries a term in the rate the leaves have. ⇒ **adopting it is not a three-sentence patch**; it moves a framing sentence in the paper's opening, and `cc66`'s ③ table restates the rule without touching it. *The largest thing against is not physics — it is how much of the corpus moves.* ⌗ In the reading's favour, with sizes: `|H_leaf/H_stack − 1|` is `4.4e-05` today and reaches one per cent only at `z = 66.8`.
+- **⒝ AND WHERE THE SIZES DO NOT SAVE IT.** The radiation term **dominates early**: `K/r = 2M` at `z ≈ 3370`, already a quarter of `μ` at last scattering, and divergent as `r → 0`. **So the geometry near the branch point is radiation-dominated, not Schwarzschild–de Sitter, and every result derived from the SdS form at small `r` needs rechecking on the bent cut** — the horizon trichotomy that selects the Nariai member, the branch point's structure, and the exact Euclidean flatness. `cc66`'s ③ checks late-time safety and not these, **and these are where the construction's foundational results live.** ⌗ What would have to be true for it not to bite: that those are statements about the **vacuum cut as such** rather than about the content-filled leaves — which is `cc66`'s own ①, so they probably survive. **"Probably" is my word and not a check; the recheck is a revision's worth of work, and I will take it on order.**
+- **⒞ UNRESOLVED, SMALLER:** the corpus says the bend is what radiation requires **and** that the second term *"is the offset itself rather than a density supplied by hand"*. On the history reading that term **is** a density. Neither reply reconciles them.
+
+### ⛭ ⑥ `P7`'s FOUR NEW FORMAL PARAGRAPHS — THEY HOLD
+
+**Fourteen declarations cited across the four, every citation checked against its own binders and conclusion: all fourteen carry what the sentence uses them for.** Every conditional claim carries its condition in the stem (`r ≠ 0`; `0 < M < 1/(3√3)`; `r₀³ = 2Mα²`; `f = 1`). No `sorry`, `16` axiom lines, a witness for the rows with hypotheses. **And each paragraph names what is NOT formalised at its own site** — the correspondence and property (iv); the curve's closure and the seam continuation; the rest-frame reading; the antimatter identification. *That is the disclosure pattern `r7754` found missing elsewhere.*
+
+**`71`'s campaign-137 `RESULT` claims what the paragraphs cite it for on every count checked**, and the one claim checkable from the file — that the affine-inequivalence result holds **without** assuming the three reals distinct — holds. ⌗ The build itself is not checkable here: no Lean toolchain in this container, as at `r7756`.
+
+### ⌗ ⑦ WHAT I CANNOT SETTLE
+
+Whether the cut the construction **intends** carries radiation's energy (`cc66` says it too: a slicing-operator question, and yours — it would need `P8`'s own statement, which this repository does not carry); whether the small-`r` results survive the bend (⒝); the two clauses in ⒞; and the Lean build.

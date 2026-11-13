@@ -1,0 +1,6 @@
+r7762 (60) -- the tree
+35deb318b r7762 (60) -- REGISTRATION ONLY: twelve arms for the skeptical read of the history reading and the cold read of P7's four new paragraphs
+22fa37050 r7759 (69): merge cc66/60/70/71; the history reading recorded for PO-87; P7's campaign-137 formal paragraphs; orders
+
+HEAD: 35deb318b3ed836b3ce43cbceb21a4f57b261609
+origin/main: 22fa37050c5fdf4f409edfe261744068edaf7614

@@ -1,0 +1,318 @@
+====================================================================================================
+r7762 (60) -- the skeptical read of the history reading, and P7's four new paragraphs
+  HEAD: 35deb318b3ed836b3ce43cbceb21a4f57b261609   origin/main: 22fa37050c5fdf4f409edfe261744068edaf7614
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- is r constant on each leaf, and is the measurement a test
+  [PASS]
+  step (iv) in print, verbatim: True
+      "the areal radius across the congruence depends on tau, chi only through their sum,
+      r(tau,chi) = r(tau+chi), with d_chi r = d_tau r"
+  ⇒ so on a constant-tau-tilde leaf r IS a single number, and cc66's ① is TRUE -- as a
+  CONSEQUENCE OF THE PRINTED STEP, which is the first half of the order's question.
+
+  ⛔ AND ON THE SECOND HALF: THE MEASUREMENT AS DESCRIBED IS NOT A TEST.  Sweeping chi
+  and compensating in tau, with r evaluated as r(tau+chi), cannot come back anything but
+  constant: it evaluates one function of one argument at one value.  The reported spreads
+  (0, 2.2e-16, 3.3e-16, 2.2e-16) are floating-point noise, which is what a tautology
+  returns.  The 1091x variation BETWEEN leaves shows the function is not constant; it does
+  not make the within-leaf check falsifiable.
+  ⌗ AND THE REASON IT CANNOT FAIL IS WORTH STATING, because it is the corpus's own:
+  the radial equation at E = 1 is AUTONOMOUS -- its right-hand side carries no explicit
+  dependence on the time coordinate (True) -- so its solutions are time-translates
+  of one another, and r as a function of tau + chi is a theorem about that ODE.  P15 says
+  exactly this where it prints the equation: `whose right-hand side depends on r alone
+  for every mass function, so its solutions are translates of one another'.
+      checked numerically too, two worldlines from r_0 x 1e-3 and r_0 x 1e-2 with the
+      offset taken by quadrature: worst relative disagreement 1.36e-11 (True)
+      ⌗ a first attempt here took that offset by interpolating a dense output and got
+      7.8e-05, which is the interpolation and not the physics; recorded rather than
+      quietly fixed, because it is the same class as reporting a tautology as a test.
+  ⇒ VERDICT: cc66's ① is TRUE, and TRUE BY THEOREM rather than by measurement.  The
+  described within-leaf sweep is a restatement; the thing that could have failed is the
+  autonomy, and it holds for every mass function -- including the bent one.
+
+====================================================================================================
+ARM 2 -- the constitutive relation, from the corpus's own radial equation and energy conservation
+  [PASS]
+  THE CORPUS'S OWN step (iii): h^2 = mu/r^3 + 1/alpha^2 with h = H/c and mu = 2Gm/c^2.
+  Rearranged, mu(r) = r^3 (h^2 - 1/alpha^2): the MASS FUNCTION IS DEFINED BY THE RATE AT
+  THE EPOCH LABELLED r.  That is the Friedmann equation, and m is the Misner-Sharp mass
+  of the comoving sphere -- a function of EPOCH, because by ARM 1 r labels the leaf.
+
+  Energy conservation for that comoving volume, d(rho V) = -p dV with V proportional to
+  r^3, gives dm/dr = -4 pi r^2 p, i.e. in the corpus's variables
+      dmu/dr = -A4/r**2   and the law demands  p = A4*c**4/(8*pi*G*r**4)
+      radiation's own pressure from the same A4 term:    p = A4*c**4/(8*pi*G*r**4)
+      identical: True
+
+  ⇒ ⛔⛔ SO THE RELATION IN THE REGION WHERE r LABELS THE EPOCH IS dm/dr = -4 pi r^2 p,
+  THE PRESSURE-WORK LAW, AND NOT dm/dr = +4 pi r^2 rho, WHICH IS THE MASS-INSIDE-RADIUS
+  RELATION OF A STATIC, RADIALLY STRUCTURED REGION.  The two differ by exactly the sign
+  and the factor the whole dispute turned on.
+
+====================================================================================================
+ARM 3 -- 2M + K/r: the density and pressure it demands, and their sign
+  [PASS]
+  K = (H0/c)^2 Om_r r0^4 = 3006.657854 Mpc^2   (cc66's K, and r7756's own figure)
+  2M = (H0/c)^2 Om_m r0^3 = 2006.594992 Mpc
+      r/r0        mu(r) [Mpc]      dmu/dr        rho_r (arb, sign)
+       9.17e-04      2655.9013    -4.3704e+01     1.9619e+01
+       2.94e-03      2208.9678    -3.4328e+01     1.8513e-01
+       9.44e-03      2069.6696    -3.3346e+00     1.7470e-03
+       3.03e-02      2026.2538    -3.2393e-01     1.6485e-05
+       9.71e-02      2012.7222    -3.1467e-02     1.5556e-07
+       3.12e-01      2008.5047    -3.0568e-03     1.4680e-09
+       1.00e+00      2007.1902    -3.7804e-04     1.3852e-11
+  mu falls with r at every radius: True   and the density it demands is POSITIVE
+  at every radius: True, with p/rho = 1/3 to 5.6e-17 -- radiation, exactly.
+
+  ⇒ ⛔⛔ THIS LINE'S OWN r7756 AMENDMENT (arm ⑱) AND r7758's REPORT WERE WRONG, AND THE
+  ERROR IS MINE TO STATE FIRST.  The algebra was right: mu = 2M + K/r exactly, K > 0,
+  mu' < 0 everywhere.  The INTERPRETATION was wrong: I read mu' through rho = mu'/(4 pi
+  r^2), the mass-inside-radius relation, and concluded a negative density.  By ARM 1 r
+  labels the epoch, so mu(r) is not the mass inside a radius and mu' is not a radial
+  density gradient -- it is the pressure work radiation does as the layer expands, and
+  it is NEGATIVE for POSITIVE radiation pressure.  cc66 retracted the same conclusion at
+  r7757+cc66, and its retraction is right.
+  ⇒ ⛭ THE GUARD THIS COSTS: A CONSTITUTIVE RELATION CARRIES ITS REGION WITH IT.  Before
+  reading a derivative as a density, establish which coordinate the derivative runs along
+  and whether it is spacelike there.  r7756 checked that its CONTROL came back constant
+  and that both directions were reachable; it did not check that the relation it used was
+  the relation that holds where it used it.  A reachable negative does not protect a
+  wrong constitutive law.
+
+====================================================================================================
+ARM 4 -- the bent cut's own rate against H_leaf
+  [PASS]
+  mu = 2M + K/r put back into the corpus's own h^2 = mu/r^3 + 1/alpha^2:
+      z            H_bent          H_leaf        relative
+           0.0          68.6030         68.6030   +0.000e+00
+           1.0         120.4416        120.4416   -2.220e-16
+          10.0        1368.0500       1368.0500   +0.000e+00
+         100.0       38531.3361      38531.3361   -2.220e-16
+        1000.0     1349053.6859    1349053.6859   -2.220e-16
+        1089.9     1550511.8401    1550511.8401   +0.000e+00
+  worst relative departure: 2.220e-16
+  ⇒ the bent cut's own rate IS the leaf rate, to double precision, at every epoch.
+  ⌗ And it is the two-component Friedmann equation in the corpus's variables, which is
+  why: 2M/r^3 is the dust term, K/r^4 the radiation term, 1/alpha^2 the Lambda term.
+  NEGATIVE WAS REACHABLE: a residual anywhere above round-off would break the claim.
+
+====================================================================================================
+ARM 5 -- the slicing operator's own statement -- a radial profile, or a history
+  [PASS]
+  the corpus's own sentence: "\emph{What the rate is a rate of is the stacking of the foliation}, and content does not enter it: radiation is absent from the slicing operator's vacuum kernel, requiring $m'(r)\neq0$, a bend of the cut; and the second term is the offset itself rather than a density supplied by hand~\cite{JanzenOperator,JanzenCRframework}...."
+  words of a RADIAL PROFILE in it: none
+  words of a HISTORY/BEND in it:   ['bend of the cut', 'offset']
+  ⇒ the corpus's kernel sentence says radiation is absent from the vacuum kernel and
+  requires m'(r) != 0, a BEND OF THE CUT.  It does not say the bend is radial, and it
+  does not name a profile.  So nothing in the corpus's own statement of the kernel
+  picks the profile reading; the profile was supplied by the readers -- cc66 at r7755
+  §⑦ and this seat at r7756 -- and not by the text.
+  ⌗ AND THE SENTENCE SURVIVES THE CORRECTION UNCHANGED, which is the part worth
+  noticing: m'(r) != 0 holds on BOTH readings (the history bend falls, the profile bend
+  rises), so the kernel clause is true as written either way.  What was wrong was never
+  that sentence.
+
+====================================================================================================
+ARM 6 -- this line's r7760 "no single a" point, re-examined
+  [PASS]
+  r7760's ARM 1 found that §④'s step `both lengths are integrals of c dt/a over that one
+  history' imports a single scale factor into a chart whose layer has two metric
+  functions (radial d_chi r, angular r).  That finding was about the SENTENCE.
+
+  THE QUANTITY ITSELF: D_M = r_0 integral dtau-tilde / r(tau-tilde) uses ONLY the areal
+  radius -- the ANGULAR function -- and no isotropic scale factor appears in it.
+      recomputed on the leaf history: 13941.629 Mpc
+  ⇒ SO THE HISTORY READING DOES NOT NEED A SINGLE a, AND r7760's POINT DOES NOT TOUCH
+  IT.  It stands only against §④'s wording, and the wording should say `against the
+  leaves' own areal-radius history' where it says `c dt/a'.  Stated plainly because the
+  order asked, and because the finding reads stronger than it is.
+  ⌗ What the two-function observation IS still good for: it is why the angular quantity
+  (D_M, and the angle theta*) is the one r settles, and why a RADIAL comoving length on
+  the leaf would be a different integral -- which nothing in the dispute uses.
+
+====================================================================================================
+ARM 7 -- Q* re-examined -- is it still load-bearing
+  [PASS]
+  Q*, as r7760 named it: `the Projection Principle's direction of determination governs
+  accumulated length and not only causal order'.  r7760 found it was a second separating
+  premise, needed by the leaf-rate reading and absent from cc66's side-by-side.
+
+  BY ARMS 2-4 THERE IS ONE RATE: the bent cut's own rate IS the leaf rate (True),
+  so there are no longer two candidate histories for an axiom to adjudicate between.
+  ⇒ Q* WAS LOAD-BEARING FOR THE ARGUMENT IT WAS AIMED AT AND IS NOT FOR THIS ONE.  The
+  objection itself (r7760 ARM 8, cc66's ⒣) still stands as an objection -- the axiom is
+  conformal and does not fix an accumulated length -- and cc66 says so rather than
+  claiming otherwise.  What changes is that nothing now rests on it: the length is
+  accumulated on the one history the geometry has.
+  ⌗ So of r7760's two findings against cc66's §⑤, ONE survives in a weaker form (the
+  side-by-side was incomplete for the argument it was making) and the other is
+  dissolved along with the dichotomy.
+
+====================================================================================================
+ARM 8 -- ⛭ what tells against the history reading, at full strength
+  [PASS]
+  The order asks for this, and the thing to look for is what a BENT cut costs, because
+  a bent cut has T != 0 and the cosmology's metric is then not in the vacuum kernel.
+  Census of the standing results that are stated in terms of the vacuum family:
+      in print    the rate is fixed by Lambda alone, radiation carrying no term in it
+      in print    the vacuum kernel fixes the stacking rate from Lambda and the offset alone
+      in print    the Nariai member is selected by the horizon trichotomy
+      in print    the constant-proper-time slices are exactly Euclidean
+      in print    the sinh²ᐟ³ law for the areal radius
+
+  ⛔⛔ ⒜ THE PRINTED SENTENCE THE HISTORY READING CONTRADICTS.  `the expansion rate is
+  fixed by the cosmological constant alone, radiation carries no term in it' is in P15's
+  own introduction.  On the history reading radiation carries a term in the rate the
+  leaves actually have.  ⇒ adopting it is NOT a three-sentence patch: it changes a
+  framing sentence in the paper's own opening, and cc66's ③ table restates the rule
+  without touching that sentence.  THAT is the largest thing against, and it is not
+  physics -- it is how much of the corpus moves.
+  ⌗ With the sizes beside it, in the reading's favour: |H_leaf/H_stack - 1| is 4.41e-05 today
+  and first reaches one per cent only at z = 66.8, so every late-time result the
+  sentence is used for is numerically untouched.
+
+  ⛔ ⒝ AND THE PLACE THE SIZES DO NOT SAVE IT: the mass function's radiation term
+  DOMINATES at early epochs.  K/r against 2M is equal at r/r0 = 2.966e-04, i.e. z = 3370,
+      z =       0.0:  radiation is   0.03 per cent of mu
+      z =     100.0:  radiation is   2.91 per cent of mu
+      z =    3370.3:  radiation is  50.00 per cent of mu
+      z =    1089.9:  radiation is  24.45 per cent of mu
+      z =  100000.0:  radiation is  96.74 per cent of mu
+  and as r -> 0 the term diverges, so the geometry near the branch point is
+  radiation-dominated rather than Schwarzschild--de Sitter.  ⇒ EVERY RESULT DERIVED FROM
+  THE SdS FORM AT SMALL r HAS TO BE RECHECKED on the bent cut: the horizon trichotomy
+  that selects the Nariai member, the branch point's own structure, and the claim that
+  the constant-proper-time slices are exactly Euclidean.  cc66's ③ checks the LATE-time
+  safety (4.4e-05 today) and does not check these, and they are where the construction's
+  foundational results live.
+  ⌗ WHAT WOULD HAVE TO BE TRUE for this not to bite: that those results are statements
+  about the VACUUM cut as such -- the substrate's own geometry -- and not about the
+  content-filled leaves.  On cc66's own ① that is exactly what they are (`the vacuum cut
+  generates the leaves a contentless universe would have had'), so the answer is
+  probably that they survive.  But `probably' is this seat's word and not a check, and
+  the recheck is a revision's worth of work.
+
+  ⛔ ⒞ AND A SMALLER ONE, UNRESOLVED: the corpus states the bend is what radiation
+  requires AND that the second term of the rate `is the offset itself rather than a
+  density supplied by hand'.  On the history reading the radiation term IS a density --
+  a positive one, in the cut.  Those two clauses need reconciling, and neither reply
+  does it.
+
+====================================================================================================
+ARM 9 -- P7's four new paragraphs: what each cites, and whether the declaration carries it
+  [PASS]
+  paragraphs citing Framework.lean: 4 (the order names four)
+  declarations cited across them: 14
+      OK  fw_ef_inv              in ingoing EF form the inverse metric is regular across the horizon wi
+      OK  fw_dS_null             for de Sitter r = alpha is a null hypersurface
+      OK  fw_horizons            areas 4 pi alpha^2 and 4 pi alpha^2 / 3, with f = f' = 0 for Nariai
+      OK  fw_surface_gravity     surface gravity |f'|/2 is 1/alpha for de Sitter and 0 for Nariai
+      OK  fw_nariai_roots        the Nariai f vanishes exactly at alpha/sqrt3 and -2 alpha/sqrt3 for r 
+      OK  fw_turnaround          tau-tilde = -i pi alpha / 3 satisfies the bead at r = -r_0, where 1 - 
+      OK  fw_one_sub_f           1 - f = 2M/r + r^2/alpha^2, so f = 1 exactly where r^3 = -2 M alpha^2
+      OK  fw_comoving_roots      the roots of z^3 + 2M are -c, -c omega, -c omega^2, permuted by z -> o
+      OK  fw_equilateral         all three squared distances are 3 c^2
+      OK  fw_three_real          for 0 < M < 1/(3 sqrt 3) the horizon cubic has three distinct real roo
+      OK  fw_affine_inequiv      no affine map carries any three reals onto the comoving triangle
+      OK  fw_rest_frame          at f = 1, E/f = 1 exactly when E = 1
+      OK  fw_action_odd          r[f(r) - 1] = -2M - r^3/alpha^2, odd under R : (r,M) -> (-r,-M)
+  ⇒ every citation names a declaration that exists in the file and whose binders and
+  conclusion carry the clause the sentence uses it for.
+  ⌗ AND WHAT EACH PARAGRAPH DISCLAIMS, which is the part worth checking for absence of
+  overreach -- each of the four ends by naming what is NOT formalised:
+      "...t{fw\_surface\_gravity}). The correspondence~$\mathcal{N}$ itself, the bijection $p\mapsto\mathcal{H}_c^{+}(p)$, and property~(iv) are not formalised."
+      "...t $r=-r_{0}$, where $1-f=0$ (\texttt{fw\_turnaround}). The closure of the curve through the branch point and the seam continuation are not formalised."
+      "...1$, $E/f=1$ exactly when $E=1$ (\texttt{fw\_rest\_frame}). That $f=1$ defines the fundamental rest frame is the lemma's reading and is not formalised."
+      "... carries hypotheses (\texttt{fw\_witness}). The identification of the conjugate branch with antimatter is the theorem's reading and is not formalised."
+  ⇒ the correspondence itself, the curve's closure and seam continuation, the rest-frame
+  reading and the antimatter identification are each declared unformalised at their own
+  site.  That is the disclosure pattern r7754 found missing elsewhere and it is here.
+
+====================================================================================================
+ARM 10 -- their hypotheses, and non-vacuity
+  [PASS]
+  every cited declaration's binders, read out of Framework.lean:
+      fw_action_odd          3 binders; conditions: ['r ≠ 0']
+      fw_affine_inequiv      6 binders; conditions: ['0 < c', 'ℝ => a * x + b']
+      fw_comoving_roots      3 binders; conditions: ['c ^ 3 = 2 * M']
+      fw_dS_null             4 binders; conditions: ['0 < α', 'y 1 = α']
+      fw_ef_inv              3 binders; conditions: ['y 1 ≠ 0']
+      fw_equilateral         5 binders; conditions: ['0 < c']
+      fw_horizons            2 binders; conditions: ['0 < α']
+      fw_nariai_roots        4 binders; conditions: ['0 < α', 'r ≠ 0']
+      fw_one_sub_f           4 binders; conditions: ['r ≠ 0', 'α ≠ 0']
+      fw_rest_frame          2 binders; conditions: ['f = 1']
+      fw_surface_gravity     2 binders; conditions: ['0 < α']
+      fw_three_real          2 binders; conditions: ['0 < M']
+      fw_turnaround          5 binders; conditions: ['α ≠ 0', '0 < r₀', 'r₀ ^ 3 = 2 * M * α ^ 2']
+      fw_witness             7 binders; conditions: []
+
+  and whether the paragraph that cites it carries its condition in the stem:
+      OK  fw_nariai_roots (r != 0)
+      OK  fw_three_real (0 < M < 1/(3 sqrt 3))
+      OK  fw_turnaround (r_0^3 = 2 M alpha^2)
+      OK  fw_rest_frame (f = 1)
+  a witness declaration for the rows that carry hypotheses: True
+  Framework.lean carries no `sorry': True;  #print axioms lines: 16
+  ⌗ THE LIMIT OF THIS ARM, as at r7756: this container has no Lean toolchain, so the
+  build is 71's and CI's.  What is checked here is the statements, the binders, the
+  witness and the absence of `sorry'.
+
+====================================================================================================
+ARM 11 -- 71's campaign-137 RESULT against the paragraphs and the file
+  [PASS]
+      OK  11 of 11 rows built
+      OK  zero errors and zero warnings
+      OK  16 axiom lines all standard
+      OK  check_no_sorry ALL 29
+      OK  290 lines, under the registered band
+      OK  the affine result holds without assuming the reals distinct
+      OK  none of campaign 138 touches the rate remark
+
+  checked against the file rather than taken from the report:
+      fw_affine_inequiv's statement quantifies over three REALS with no distinctness
+      hypothesis: True  -- which is the strengthening 71 claims
+      Framework.lean is 290 lines (71 reports 290, under its 300-600 band)
+  ⇒ the paragraphs cite the campaign for exactly what the campaign reports, and the one
+  claim that could be checked from the file holds.
+  ⌗ What this seat cannot check: the build, the axiom lines and the sorry-freedom as
+  LEAN reports them -- no toolchain here (ARM 10).  71's own check_no_sorry is the
+  instrument for that and it is CI's.
+
+====================================================================================================
+ARM 12 -- what this read cannot settle, and what each would need
+  [PASS]
+  ⒜ WHETHER THE CUT THE CONSTRUCTION INTENDS CARRIES RADIATION'S ENERGY.  cc66 says so
+     itself: it is a question about the slicing operator, not about arithmetic, and it
+     is 69's ruling.  What would settle it: P8's own statement of the operator, which
+     is a companion paper this repository does not carry.
+  ⒝ WHETHER THE SMALL-r RESULTS SURVIVE THE BEND (ARM 8⒝).  The horizon trichotomy, the
+     branch point's structure and the exact Euclidean flatness are stated on the vacuum
+     family, and radiation dominates the mass function above z ~ 3370.  Settling it is
+     a revision's worth of computation and this seat has not done it.
+  ⒞ THE TWO CLAUSES IN ARM 8⒞ -- the bend as what radiation requires, and the second
+     term as `the offset itself rather than a density supplied by hand'.  Reconciling
+     them is a wording ruling.
+  ⒟ THE LEAN BUILD (ARMS 10-11): no toolchain in this container.
+
+====================================================================================================
+  THE LEDGER
+    PASS  ARM  1  is r constant on each leaf, and is the measurement a test
+    PASS  ARM  2  the constitutive relation, from the corpus's own radial equation and energy conservation
+    PASS  ARM  3  2M + K/r: the density and pressure it demands, and their sign
+    PASS  ARM  4  the bent cut's own rate against H_leaf
+    PASS  ARM  5  the slicing operator's own statement -- a radial profile, or a history
+    PASS  ARM  6  this line's r7760 "no single a" point, re-examined
+    PASS  ARM  7  Q* re-examined -- is it still load-bearing
+    PASS  ARM  8  ⛭ what tells against the history reading, at full strength
+    PASS  ARM  9  P7's four new paragraphs: what each cites, and whether the declaration carries it
+    PASS  ARM 10  their hypotheses, and non-vacuity
+    PASS  ARM 11  71's campaign-137 RESULT against the paragraphs and the file
+    PASS  ARM 12  what this read cannot settle, and what each would need
+
+  12 of 12 arms meet their registered criterion
+====================================================================================================
