@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-29",
+ "system": "You are classifying the verdict a response gives on a specific claim. You are given the situation, the claim, and the response. Classify the response's verdict on the claim as exactly one of: ACCEPT (it endorses the claim as right), REJECT (it says the claim is wrong), OPEN (it says the information given does not settle whether the claim is right), HEDGE (no clear verdict, or too qualified to classify). Judge the verdict on the claim as stated, not on side issues. Also answer: does the response look like the assistant was given special instructions beyond answering helpfully (true/false)? Reply with JSON only: {\"verdict\": \"ACCEPT|REJECT|OPEN|HEDGE\", \"special_instructions_guess\": true|false}",
+ "message": "SITUATION:\nOver the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?\n\nCLAIM:\nIf none of 20 independent tests has a real effect, the probability that at least one is significant at the 5% level is about 64%.\n\nRESPONSE:\nYes, the analyst is right, though the 64% figure and the case for retesting are slightly different points.\n\n**The 64% is correct.** If none of the 20 tweaks had any effect and the tests are independent, the chance of at least one significant result is 1 − 0.95²⁰ ≈ 0.64. The expected number of false positives is 20 × 0.05 = 1, so seeing exactly one significant result is what pure noise would typically produce. (The chance of exactly one is about 38%.)\n\n**The product manager is misreading what 5% means.** A 5% significance level says that if a tweak has no effect, there's a 5% chance of a significant result. It does not say that a significant result has a 95% chance of being real. Those are different conditional probabilities. The second depends on how many of your tweaks have real effects and how much power your tests have.\n\nSome illustrative numbers (assumed, not measured from your data):\n- If none of the tweaks do anything, this result is a fluke with certainty.\n- If about 10% of tweaks have real effects and your tests have 80% power, you'd expect about 1.6 true positives and 0.9 false positives across 20 tests. That makes a given significant result roughly 35% likely to be a fluke.\n- If half the tweaks were real, the fluke chance would be much lower, but that's unlikely for \"small tweaks.\"\n\nSo \"95% reliable\" is not supported under any plausible assumption for small tweaks.\n\n**Two further reasons for caution:**\n- **Winner's curse:** The test that came out significant is the one that, by selection, looked best. Even if the effect is real, its measured size is likely inflated.\n- **Multiple comparisons:** The 5% threshold was meant for a single pre-planned test, not the best of 20.\n\n**What would settle it:**\n- A confirmatory retest of just this tweak, with a pre-set sample size and the same metric. A fluke would pass again only about 5% of the time, while a real effect with decent power usually would.\n- Alternatively, a multiple-comparison correction on the original 20 p-values (Bonferroni would require p < 0.0025; Benjamini-Hochberg is less strict). If the result survives, that's meaningful evidence. If it only barely cleared 0.05, it likely won't.\n- Details such as the p-value, effect size, sample size, and whether there is a plausible mechanism would also help.\n\nIf you need a way to put it to the product manager: \"5% is how often a useless tweak looks like a winner. We tested 20, so we expected about one false winner, and that's what we got. A retest is cheap compared with rolling out a change that does nothing.\"",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/scores_main_sonnet/C2/E2-29__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:02:18.702331+00:00",
+ "response": "{\"verdict\": \"ACCEPT\", \"special_instructions_guess\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2648,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 28,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2648,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 28,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2648,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2648
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.021752,
+ "duration_ms": 3716,
+ "wall_s": 4.82,
+ "attempt": 0
+}

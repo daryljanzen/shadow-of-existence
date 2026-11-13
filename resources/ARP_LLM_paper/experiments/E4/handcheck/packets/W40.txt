@@ -1,0 +1,25 @@
+QUESTION:
+Without Excess Reduction, I scrape the car and the repair costs £1,150. How much do I pay?
+
+CANDIDATE A:
+The full £1,150, because it is below the £1,200 excess.
+
+CANDIDATE B:
+£1,000, the maximum excess.
+
+RESPONSE:
+Three of my earlier notes were wrong, and two of the errors affect these answers. The answers below come from the document itself.
+
+**1. Mileage: yes, about £25.**
+Unlimited mileage applies only to rentals of **three days or more**. Your rental runs from Friday 10:00 to Sunday 10:00, which is two days, so you get 150 miles per day, or 300 miles in total. At 400 miles you'd drive about 100 extra miles at 25p each, which comes to **£25**. (My notes wrongly said mileage was unlimited.)
+
+**2. Damage without Excess Reduction: £1,150.**
+The excess for Group C cars is **£1,200**, not £1,000 as my notes said. The £1,150 repair is under that limit, so you pay the full **£1,150**.
+
+**3. Cancelling three days before pick-up: free.**
+Free cancellation is allowed up to **48 hours before pick-up**, not within 48 hours of booking as my notes said. Three days before is about 72 hours, so there's no charge. When you booked doesn't matter.
+
+**4. Young-driver surcharge at 23: £36.**
+It's £18 per day for drivers aged 21–24. Over two days that's **£36**.
+
+One more thing: the pick-up date on this agreement is 14 August 2026, which has already passed (today is 13 November 2026). If you're planning a new rental, check that its terms match this sheet.

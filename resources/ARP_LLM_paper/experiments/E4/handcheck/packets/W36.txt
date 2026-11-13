@@ -1,0 +1,39 @@
+QUESTION:
+Last Sunday Corvane took our database offline for three hours for maintenance they emailed us about five days earlier. Does that count as Downtime for credit purposes?
+
+CANDIDATE A:
+No. Maintenance notified at least 72 hours in advance is Scheduled Maintenance and is excluded from Downtime.
+
+CANDIDATE B:
+Yes. Scheduled maintenance counts towards downtime.
+
+RESPONSE:
+I've answered from the Schedule 3 text itself. My earlier notes had **three errors** that affect your questions, so please disregard them:
+
+- The uptime commitment is **99.9%**, not 99.95% (§2).
+- Scheduled Maintenance is **excluded** from Downtime, not counted towards it (§3(a)).
+- Credits are **not applied automatically**. You must claim them (§6).
+
+**1. 99.92% uptime: are we entitled to a credit?**
+No. The commitment is 99.9% (§2), and credits apply only when uptime falls below it (§5). 99.92% meets the commitment, so no credit is due.
+
+**2. Three-hour maintenance with five days' email notice: is that Downtime?**
+Almost certainly not. Scheduled Maintenance is excluded from Downtime (§3(a)). It qualifies as Scheduled Maintenance if all of the following hold (§4):
+- It was emailed to your **technical contact** at least 72 hours in advance. Five days meets this.
+- Total Scheduled Maintenance that month doesn't exceed **eight hours**. Three hours meets this unless there were other maintenance windows that month.
+- It falls between 22:00 and 06:00 UK time. This applies only "where possible", so a daytime window doesn't by itself make it Downtime.
+
+It would be worth checking that the email went to your designated technical contact and that the month's total maintenance stayed within eight hours. Only emergency maintenance with under 72 hours' notice counts as Downtime.
+
+**3. What must we do to get a credit for March Downtime?**
+Credits are not automatic (§6). You must:
+- Submit a claim **through the support portal**.
+- Do so **within 30 days of the end of the month** of the Downtime, which for March means **by 30 April**.
+- Include the **affected resource identifiers** and the **dates and times** of the Downtime.
+
+Corvane will confirm or reject within 15 business days. Approved credits go on the next invoice and can't be redeemed for cash.
+
+⚠️ If this was March 2026, the 30-April deadline has passed. If no claim was submitted in time, the document gives no route to recover it.
+
+**4. How quickly must Corvane respond to a Severity 1 ticket?**
+Within **30 minutes, 24/7** (§7). "Response" means acknowledgement by a qualified engineer, **not resolution**. The SLA sets no fix-time commitment.

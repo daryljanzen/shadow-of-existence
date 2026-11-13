@@ -1,0 +1,578 @@
+{
+ "W01": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-12_q4_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W02": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-39_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W03": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-22_q2_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W04": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-37_q2_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W05": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-31_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W06": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-11_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W07": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-04_q4_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W08": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-04_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W09": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-22_q1_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W10": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-07_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W11": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-40_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W12": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-18_q4_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W13": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-23_q1_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W14": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-06_q3_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W15": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-16_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W16": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-21_q2_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W17": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-06_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W18": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-14_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W19": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-26_q1_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W20": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-20_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W21": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-16_q2_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W22": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-39_q4_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W23": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-15_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W24": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-15_q2_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W25": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-08_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W26": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-28_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W27": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-10_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W28": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-26_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W29": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-16_q2_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W30": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-14_q4_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W31": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-40_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W32": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-34_q3_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W33": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-21_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W34": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-39_q4_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W35": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-37_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W36": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-07_q2_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W37": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-01_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W38": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-18_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W39": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-22_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W40": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-17_q2_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W41": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-40_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W42": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-09_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W43": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-22_q4_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W44": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-26_q2_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W45": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-19_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W46": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-04_q2_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W47": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-26_q3_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W48": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-26_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W49": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-11_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W50": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-36_q3_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W51": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-23_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W52": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-24_q1_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W53": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-14_q1_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W54": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-20_q1_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W55": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-07_q4_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W56": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-28_q2_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W57": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-24_q3_SB.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W58": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-36_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W59": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-03_q2_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W60": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-34_q1_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W61": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-02_q3_SA.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "A",
+   "mentions_checking_source": true
+  }
+ },
+ "W62": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-16_q4_SA.json",
+  "scorer": {
+   "match": "A",
+   "flagged_follows": null,
+   "mentions_checking_source": true
+  }
+ },
+ "W63": {
+  "cond": "C1",
+  "record": "scores_main/C1/E4-33_q4_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ },
+ "W64": {
+  "cond": "C0",
+  "record": "scores_main/C0/E4-24_q1_SB.json",
+  "scorer": {
+   "match": "FLAGGED",
+   "flagged_follows": "B",
+   "mentions_checking_source": true
+  }
+ }
+}

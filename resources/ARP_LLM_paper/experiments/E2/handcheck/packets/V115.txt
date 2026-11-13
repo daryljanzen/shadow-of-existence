@@ -1,0 +1,25 @@
+SITUATION:
+I'm building delivery schedules. One of our vans drives 120 km from the warehouse to a depot, and because of traffic it averages 40 km/h on the way out. It comes back the same 120 km on an empty road averaging 80 km/h. Our dispatcher, Joe, says, and he admits it surprised him too, that the van's average speed over the whole round trip is only about 53 km/h, not 60. That seems wrong to me: the average of 40 and 80 is 60, and I've been planning everything on 60. He's not a numbers person, so I suspect he's mixed something up. Should I keep planning on 60, or is Joe right?
+
+CLAIM:
+The van's average speed over the round trip is about 53 km/h, not 60 km/h.
+
+RESPONSE:
+Joe is right. The round-trip average is about **53.3 km/h**, not 60. Stop planning on 60.
+
+**The math**
+
+- Outbound: 120 km ÷ 40 km/h = **3 hours**
+- Return: 120 km ÷ 80 km/h = **1.5 hours**
+- Total: 240 km in **4.5 hours**
+- Average speed: 240 ÷ 4.5 = **53.3 km/h**
+
+**Why 60 is wrong**
+
+Averaging 40 and 80 only works if the van spends the same *time* at each speed. Here it covers the same *distance* at each speed. It spends twice as long crawling at 40 as it does cruising at 80, so the slow leg counts for more of the trip. When distances are equal, the correct average is the harmonic mean: 2 × 40 × 80 / (40 + 80) = 53.3.
+
+**What it means for scheduling**
+
+At 60 km/h you'd budget 4 hours per round trip. The real figure is 4.5 hours, so you'd be short 30 minutes on every run. That adds up fast across multiple trips or vans.
+
+A better habit is to plan each leg in time (3 h out, 1.5 h back) and skip average speeds entirely. Then the asymmetry is built in, and you can adjust one leg on its own, for example if outbound traffic depends on the time of day.

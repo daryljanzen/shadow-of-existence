@@ -1,0 +1,34 @@
+QUESTION:
+From which day of absence is a fit note required?
+
+CANDIDATE A:
+From the eighth calendar day of absence.
+
+CANDIDATE B:
+From the eighth calendar day of absence.
+
+RESPONSE:
+I've answered from the policy document itself, because my earlier notes got three of these points wrong (explained at the end).
+
+**1. Probation and full pay: No.**
+Section 4 says only employees who have *completed* the six-month probation get company sick pay. At three months in, you'll receive Statutory Sick Pay (SSP) only, and only if you're eligible. For a week off, you'll also need to complete the self-certification form on the HR portal (section 3).
+
+**2. Referring to Occupational Health yourself: No.**
+Section 6 says the **HR Advisory team** makes OH referrals, not line managers, so that consent and medical confidentiality are handled properly. HR normally refers after four weeks' continuous absence, and she's now at five weeks. Contact HR and ask them to make the referral; line managers can request one. She'll be asked to consent to the OH report being shared with HR and you. Separately, she's in long-term absence, so you should agree how and how often you'll keep in touch with her (section 10).
+
+**3. When a fit note is needed: from the 8th calendar day.**
+Absences of up to seven calendar days are self-certified. For eight calendar days or more, the fit note must cover the eighth day onwards (section 3).
+
+**4. Reclaiming holiday after food poisoning in Portugal: Unfortunately, no.**
+Section 8 lets you reclaim leave days only if you did **both** of these:
+- (a) phoned your line manager on the first day of the illness, even while abroad, **and**
+- (b) provided a fit note or, if abroad, a local medical certificate covering the days you were ill.
+
+The policy says leave can't be reclaimed retrospectively without both. Since you didn't see a doctor and told your manager only after you got back, neither condition was met. You could still ask your manager or HR whether they'll use discretion, but the policy doesn't give you a right to the days back.
+
+---
+
+**Corrections to my earlier notes:**
+- **Sick pay:** I left out that employees still on probation get no company sick pay.
+- **OH referrals:** I wrote that line managers make referrals. HR does.
+- **Holiday sickness:** I described reclaiming leave as unconditional. It requires the first-day phone call and a medical certificate.

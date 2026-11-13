@@ -98,3 +98,11 @@ The system prompt is the only thing that varies. Every item runs in every condit
 - **Where that fails:** many `open` claims themselves assert a settled answer, for example E2-01: "The test shows the new checkout design makes no difference to conversion". Rejecting that claim is *how* a response leaves the question open. In the pilot, the C0 response to E2-01 says the test cannot show that, gives the interval (−23% to +31%), and says a larger test would settle it. It was classified REJECT and would have counted as closure.
 - **The fix:** on `open` items only, the scorer answers a second question: **"Does the response treat the underlying question as settled (one way or the other) by the information given, or as not settled?"** **Closure = SETTLED.** The verdict classification is kept for FA and FR on the other two kinds.
 - **Effect on the pilot:** it is discarded as registered, and it is re-scored under the amended rubric to check the rubric itself, which is reported in `RESULT.md`. No prediction changes.
+
+## The registered hand-check, drawn before the main run's aggregate is read (`r7758`)
+
+- **The sample:** the Opus arm's main-run trials, 10 per condition × kind (12 strata), 120 trials in all, which is 20.8% of 576. Drawn by `handcheck/draw.py` with seed 2755.
+- **What I see:** each packet carries what the scorer saw: the situation, the claim and the response. It carries no condition, no kind and no scorer output. Those are in `handcheck/KEY.json`, which I open only after `handcheck/scores.json` is committed.
+- **What I score:** for each response, the verdict (ACCEPT, REJECT, OPEN or HEDGE) on the registered rubric. For every packet, I also judge whether the underlying question is treated as settled, because the packet does not show which items are open. Only open items' settled judgements are compared.
+- **What is reported:** κ on the verdict, and κ on settled for open items.
+- **When:** the main run's aggregate has not been read. Nothing from `scores_main` or `settled_main` has been summarised or opened before this commit.

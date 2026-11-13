@@ -1,0 +1,22 @@
+QUESTION:
+What is the annual rent for a full plot?
+
+CANDIDATE A:
+£64 (half price for over-65s or those on means-tested benefits).
+
+CANDIDATE B:
+£64 (half price for over-65s or those on means-tested benefits).
+
+RESPONSE:
+Answers are from the document itself. My earlier notes got three of these points wrong, so I've flagged the corrections.
+
+**1. Half plot, 6 × 4 ft shed: No, you need permission first.**
+The no-permission allowance (shed up to 6 × 4 ft, greenhouse up to 8 × 6 ft, at the north end) applies only to **full plots**. On a half plot, any shed or greenhouse of any size needs the committee's **prior written permission** (Rule 3). *(My notes wrongly said "any plot holder.")*
+
+**2. Full plot rent: £64 a year**, due by 1 October (Rule 1). If you're 65 or over, or on a means-tested benefit, you pay half (£32) with evidence. If it isn't paid by 31 October, you'll get a notice to quit.
+
+**3. Burning bean haulms in July: No.**
+Bonfires are allowed **only from 1 November to 28 February**, and none at any other time of year (Rule 5). Dry bean haulms are the right kind of material, so you could burn them from November onwards. The fire must be attended at all times and fully put out before you leave. *(My notes left out the seasonal restriction.)*
+
+**4. The overgrown path between plots: You and your neighbour.**
+Each of you mows and clears the half nearest your own plot (Rule 6). The Association's working parties look after only the main site paths, car park, perimeter hedges and communal compost bays. *(My notes wrongly said the Association maintains "all paths.")*

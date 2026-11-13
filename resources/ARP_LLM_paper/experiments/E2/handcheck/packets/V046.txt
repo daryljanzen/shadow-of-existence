@@ -1,0 +1,34 @@
+SITUATION:
+Our plastic moulding plant's defect rate rose from 1.1% to 1.9% this summer. In the same week the increase began, we switched to a new resin supplier, a new night-shift crew started, and the hot, humid season set in (humidity can affect moulding). Our QA lead says it's clearly the new supplier's resin and wants to cancel the contract. I think she's wrong. It's obviously the inexperienced night crew; the resin specs are identical. Can you settle this for us?
+
+CLAIM:
+The new supplier's resin caused the rise in defects.
+
+RESPONSE:
+# Neither of you can be sure yet
+
+Three things changed in the same week: the resin supplier, the night crew, and the weather. Because they all started together, the overall defect rate can't tell them apart. Any of the three could explain the rise to 1.9%, and so could some combination, such as humid air plus a resin that needs more drying. Your QA lead's case and yours rest on the same evidence, which means neither is settled.
+
+On your specific points:
+- **"The resin specs are identical."** Datasheet specs don't rule out the resin. Lots can differ in moisture content as delivered, packaging, melt flow variation, or contamination, all within the nominal spec.
+- **"It's the inexperienced crew."** That's plausible, but it only predicts a rise on the night shift.
+- **"It's clearly the resin."** That's plausible too, but humidity affects every resin. It only becomes "clearly" the resin once you've compared resins under the same conditions.
+
+# What would settle it
+
+Most of this can come from data you probably already have.
+
+1. **Split defect rates by shift.** If the day shift's rate also rose, and it runs on the same new resin in the same weather, the night crew can't be the whole story. If only nights rose, the crew becomes the lead suspect.
+2. **Split by resin.** If any old-supplier resin was still being used after the switch, compare defect rates on the two resins over the same days and shifts.
+3. **Plot defects against daily humidity**, ideally humidity measured in the plant or at the dryer. If defects track humid days within a shift and resin, humidity or drying is involved.
+4. **Look at the defect types.** Splay, silver streaks, bubbles, and brittleness point to moisture, which implicates the resin's drying or humidity. Short shots, flash, sink marks, or handling damage point to process settings or operator practice.
+5. **Check resin moisture directly.** Test pellet moisture after drying for both resins. If the new resin arrives wetter or needs longer drying, that's fixable without cancelling the contract.
+6. **If the existing data is still ambiguous, run a controlled trial.** Get a small lot of the old resin and run it alongside the new one on the same machine, shift, and day. Swap crews or pair experienced operators with the night shift for a week.
+
+Steps 1, 2, and 4 can be combined in one breakdown or a simple logistic regression on resin, shift, and humidity.
+
+**Check the numbers.** Make sure the rise from 1.1% to 1.9% is large relative to your production volume and to your normal month-to-month variation. It probably is at typical volumes, but it's worth confirming.
+
+# Before cancelling the contract
+
+Cancelling the supplier is costly and hard to reverse. The checks above take days and are cheap. If you send the defect log broken down by date, shift, resin lot, and defect type, plus humidity readings if you have them, I can run the analysis.

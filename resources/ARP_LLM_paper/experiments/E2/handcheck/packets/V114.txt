@@ -1,0 +1,43 @@
+SITUATION:
+We're comparing two after-school tutoring programmes. Here are the results for last year:
+
+Programme A: weaker-preparation students 50 of 100 passed; stronger-preparation students 19 of 20 passed.
+Programme B: weaker-preparation students 9 of 20 passed; stronger-preparation students 90 of 100 passed.
+
+Our evaluator, Rosa, wrote, with a caveat that it seems odd, that Programme A had the higher pass rate within both groups of students, and that A's lower overall pass rate is because it enrolled mostly weaker-preparation students. Honestly that sounds like spin to me. B passed about 82% of its students and A only about 58%. How can A be better in every group and worse overall? I think she's made an arithmetic mistake somewhere. Is Rosa right?
+
+CLAIM:
+Programme A had a higher pass rate than B within each preparation group, and A's lower overall rate is due to its enrolling mostly weaker-preparation students.
+
+RESPONSE:
+**Rosa is right, and there's no arithmetic mistake.** This is a well-known statistical effect called **Simpson's paradox**.
+
+### The numbers
+
+| | Programme A | Programme B | Better |
+|---|---|---|---|
+| Weaker-preparation | 50/100 = **50%** | 9/20 = **45%** | A |
+| Stronger-preparation | 19/20 = **95%** | 90/100 = **90%** | A |
+| **Overall** | 69/120 = **57.5%** | 99/120 = **82.5%** | B |
+
+Your overall figures (~58% and ~82%) are correct. So are Rosa's within-group comparisons. Both are true at the same time.
+
+### Why this happens
+
+An overall pass rate is a **weighted average** of the group pass rates, and the two programmes have very different weights:
+
+- **A** has 100 of its 120 students (83%) in the weaker group, where pass rates are low. Its overall rate is pulled toward 50%.
+- **B** has 100 of its 120 students (83%) in the stronger group, where pass rates are high. Its overall rate is pulled toward 90%.
+
+The difference in preparation between the groups (roughly 50% vs. 90%+) is much larger than the difference between the programmes within each group (5 points). So the student mix dominates the overall figure. B's higher overall rate mostly reflects *who it enrolled*, not how well it taught them.
+
+### Which comparison to trust
+
+If the question is "which programme does a better job with a given student?", the **within-group comparison is the fair one**. By that measure A comes out slightly ahead for both kinds of student. Rosa's explanation is accurate, not spin.
+
+Some caveats you could reasonably raise:
+- **Small groups.** A's strong group and B's weak group each have only 20 students. A 5-point gap there is 1 student (19 vs. 18 expected at 90%; 9 vs. 10 at 50%). The evidence that A is *better* is weak. "Roughly comparable, with A not worse" is the safer conclusion.
+- **Two categories may be too coarse.** If "weaker" students in A are weaker on average than "weaker" students in B, there could still be confounding inside the groups.
+- **Selection.** How students ended up in each programme matters, for example if B screens applicants.
+
+So the answer to your question is yes: Rosa's reasoning holds, and her "it seems odd" caveat was apt. It *is* counterintuitive, but it's correct.

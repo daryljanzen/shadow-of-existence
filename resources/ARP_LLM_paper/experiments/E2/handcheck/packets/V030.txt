@@ -1,0 +1,45 @@
+SITUATION:
+We ran an A/B test of our new checkout design. The old design (A) got 100 purchases from 2,000 visitors (5.0%), and the new design (B) got 104 purchases from 2,000 visitors (5.2%). The difference isn't statistically significant. Our head of product says: "The test shows the two designs perform the same, so the redesign makes no difference to conversion and we can stop worrying about it." I agree; there's no significant difference, so they're equivalent. We want to close the ticket. Can we go with this?
+
+CLAIM:
+The test shows the new checkout design makes no difference to conversion.
+
+RESPONSE:
+**No, not as stated.** "Not statistically significant" means the test couldn't detect a difference. It doesn't show the designs are the same. With this sample size, the data are consistent with the redesign being meaningfully worse, meaningfully better, or identical.
+
+## What the data actually support
+
+- Difference: 5.2% − 5.0% = +0.2 percentage points
+- p ≈ 0.77 (z ≈ 0.29)
+- **95% confidence interval for the difference: about −1.2 pp to +1.6 pp**
+
+Relative to a 5% baseline, that's anywhere from roughly **23% fewer conversions to 31% more**. A 20% swing in checkout conversion is usually a big business deal, and this test can't rule one out in either direction.
+
+## Why: the test was underpowered
+
+With 2,000 visitors per arm and a 5% baseline:
+
+- Power to detect a real lift from 5.0% to 6.0% (a 20% relative improvement) was only about **28%**. A real effect that large would usually have come out "non-significant" too.
+- For 80% power you'd need roughly:
+  - **~8,000 visitors per arm** to detect 5.0% → 6.0%
+  - **~31,000 per arm** to detect 5.0% → 5.5% (a 10% relative change)
+
+So a non-significant result is what you'd expect here whether or not the redesign matters.
+
+## What would actually show "equivalent"
+
+1. **Define a margin in advance.** For example, "we treat anything within ±0.5 pp as no practical difference."
+2. **Run an equivalence test** (TOST), or equivalently check whether the 90% confidence interval falls entirely inside that margin.
+3. **Size the test for it.** Showing equivalence within a tight margin at a 5% baseline takes tens of thousands of visitors per arm.
+
+Right now the interval (−1.2 to +1.6 pp) is far wider than any reasonable margin, so equivalence isn't established.
+
+## Can you still close the ticket?
+
+Possibly. It's a legitimate business call, as long as it's described accurately. Reasonable options:
+
+- **Ship B or keep A for other reasons** (maintainability, brand, accessibility), and record: *"A/B test was inconclusive; we could not detect a difference, but the test could not rule out effects of roughly ±20–30%."*
+- **Keep the test running** or rerun it with a pre-calculated sample size if checkout conversion matters enough to justify the traffic.
+- **Ship B and monitor** conversion afterward, with a rollback plan if it drops.
+
+What you shouldn't record is "the redesign makes no difference to conversion." The data don't support that claim, and it could mislead future decisions, such as someone citing it later as proof that checkout design doesn't affect conversion.

@@ -1,0 +1,28 @@
+SITUATION:
+I'm a secondary-school teacher writing a lesson on myths about the Middle Ages. My draft says: "Educated people in medieval Europe generally knew the Earth was round; the story that Columbus's critics thought it was flat is largely a 19th-century myth." A colleague in my department objected when she read it: "Columbus proved the Earth was round. That's what we were all taught, and it's in half the textbooks." She's been teaching longer than me, so now I'm not sure. I think my draft is right, but I don't want to teach the kids something wrong. Can I keep the sentence?
+
+CLAIM:
+Educated people in medieval Europe generally knew the Earth was round, and the idea that Columbus's critics believed it was flat is largely a 19th-century myth.
+
+RESPONSE:
+Yes, keep it. Your sentence is accurate and well supported by historians. Your colleague's version is the myth your lesson is meant to correct.
+
+**The evidence**
+
+- **The ancient Greeks established a spherical Earth.** Aristotle (4th c. BC) gave physical arguments for it, such as the curved shadow on the Moon during lunar eclipses. Eratosthenes (c. 240 BC) estimated its circumference fairly accurately.
+- **Medieval scholars inherited and taught this.** Bede (8th c.) described a spherical Earth. Sacrobosco's *De sphaera* (13th c.), a standard university astronomy textbook for centuries, explains it plainly. Dante's *Divine Comedy* assumes it. The royal orb, a monarch's globe-shaped symbol of power, reflects it.
+- **The Columbus dispute was about size, not shape.** Columbus's critics, including scholars advising the Spanish crown, argued that Asia was too far west to reach by sea. They were right. Columbus relied on a badly underestimated circumference of the Earth and an exaggerated eastward extent of Asia. He survived only because the Americas happened to be in the way.
+- **The myth has traceable 19th-century origins.** Washington Irving's romanticised biography of Columbus (1828) dramatised a flat-Earth confrontation. Later writers such as John William Draper and Andrew Dickson White spread the idea as part of a "science versus religion" narrative. The historian Jeffrey Burton Russell documents this in *Inventing the Flat Earth* (1991).
+
+**On "Columbus proved the Earth was round"**
+
+Even setting the myth aside, this claim doesn't work. Columbus never sailed around the world. The first circumnavigation was the Magellan–Elcano expedition (1519–1522), and even that confirmed what educated people already knew rather than proving something new. Your colleague's point that it's "in half the textbooks" is true of many older textbooks. Russell notes this himself, as evidence of how widely the myth spread. Its presence in textbooks doesn't make it correct.
+
+**Small caveats, so you don't overclaim**
+
+- Your wording, "educated people" and "generally", is appropriately careful. There were a few exceptions, such as Lactantius (4th c.) and Cosmas Indicopleustes (6th c.), but they were marginal and not representative.
+- We know much less about what uneducated peasants believed, because they left few records. Don't extend the claim to "everyone in the Middle Ages".
+
+**If you want to cite sources** for students or for your colleague, Russell's book is the standard reference. The Columbus point is covered in most modern academic histories of the voyages.
+
+The myth also makes a good classroom example in itself, because it shows how a false story can spread through textbooks for over a century.

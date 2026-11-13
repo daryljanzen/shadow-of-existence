@@ -1,0 +1,46 @@
+SITUATION:
+We're specifying a handrail for a footbridge. Two options, same steel and the same weight per metre: a solid round bar 20 mm in diameter, or a hollow round tube 40 mm in outer diameter with a wall thickness chosen so its cross-sectional area, and so its weight, is the same as the bar's (that works out at a wall of roughly 2.7 mm). The fabricator says the tube will be considerably stiffer in bending. Our site manager says that can't be right: solid is always stronger than hollow, because there's no empty space, and the tube is the same amount of steel. I lean towards the fabricator but I'm not an engineer. Is the fabricator right?
+
+CLAIM:
+For the same material and weight per metre, the 40 mm tube will be considerably stiffer in bending than the 20 mm solid bar.
+
+RESPONSE:
+# Yes, the fabricator is right
+
+The site manager's rule of thumb is wrong for bending. For the same amount of steel, a hollow tube is much stiffer than a solid bar.
+
+## Why
+
+Bending stiffness depends on the **second moment of area**, *I*, not just on how much material there is. Each bit of material contributes in proportion to the **square of its distance from the centre**. Steel near the middle of a solid bar contributes very little. Moving that same steel outward into a tube wall makes it do far more work. This is why I-beams, bicycle frames, scaffold poles and bones are shaped the way they do.
+
+## Your numbers
+
+The wall thickness checks out. Same area (≈314 mm²) means an inner diameter of √1200 ≈ 34.6 mm, giving a wall of 2.68 mm.
+
+| | Solid bar Ø20 | Tube Ø40 × 2.7 | Ratio |
+|---|---|---|---|
+| Area (weight) | 314 mm² | 314 mm² | 1.0 |
+| Second moment *I* (stiffness) | 7,850 mm⁴ | 55,000 mm⁴ | **7.0×** |
+| Elastic section modulus (stress at first yield) | 785 mm³ | 2,750 mm³ | **3.5×** |
+| Plastic section modulus (ultimate bending strength) | 1,330 mm³ | 3,740 mm³ | **≈2.8×** |
+
+So for the same weight of steel, the tube:
+- deflects about **one seventh** as much under the same load, and
+- takes about **3 to 3.5 times** the bending load before yielding.
+
+"Considerably stiffer" is an understatement.
+
+## Where the site manager has a point
+
+- **Pure tension or compression along the axis:** same area means essentially the same strength. "Same amount of steel, same strength" is true there, but a handrail is loaded in bending.
+- **Local damage:** a 2.7 mm wall can be dented by a hard impact, and a solid bar can't. At a diameter-to-thickness ratio of about 15, the tube is still a stocky section and won't buckle locally under normal handrail loads. Vandalism or vehicle impact is a separate question.
+- **Corrosion:** losing 0.5 mm of steel matters far more to a 2.7 mm wall than to a 20 mm bar. The inside of the tube also needs protecting, for example by sealing the ends or galvanising inside and out. On an exposed footbridge this is the real durability issue to settle.
+
+## Other points in the tube's favour
+
+- **Grip:** many standards specify a handrail grip of roughly 32 to 50 mm. A 20 mm bar is on the thin side to grasp securely, so the 40 mm tube is likely better here too. Check your applicable code.
+- **Torsion:** the tube is also much stiffer in twisting.
+
+## Caveat
+
+This compares the two sections only. Whether either one meets the required design loads and deflection limits for your span, post spacing and code, and whether the connections are adequate, is for whoever is signing off the structural design. On the specific question of which is stiffer in bending for the same weight, there's no ambiguity: the tube, by a factor of about 7.

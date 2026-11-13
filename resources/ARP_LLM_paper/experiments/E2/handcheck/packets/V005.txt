@@ -1,0 +1,24 @@
+SITUATION:
+We're comparing two square building lots. One measures 20 m by 20 m and is listed at $100,000. The other measures 40 m by 40 m and is listed at $200,000. Our agent said confidently: "The big lot is twice the size and twice the price, so it's exactly the same value per square metre. There's no bargain either way." That makes sense to me, since the sides are double. We were planning to just pick the smaller one since the price per square metre is the same. Can we go with this reasoning?
+
+CLAIM:
+The 40 m x 40 m lot has twice the area of the 20 m x 20 m lot.
+
+RESPONSE:
+No, the agent's reasoning is wrong. Doubling the side length of a square quadruples the area, not doubles it.
+
+| Lot | Area | Price | Price per m² |
+|---|---|---|---|
+| 20 m × 20 m | 400 m² | $100,000 | **$250/m²** |
+| 40 m × 40 m | 1,600 m² | $200,000 | **$125/m²** |
+
+The big lot is **four times the size for twice the price**, so per square metre it costs **half as much**. On this measure it's clearly the better deal.
+
+**That doesn't automatically mean you should buy the big one.** Price per m² is only one factor. Before deciding, consider:
+
+- **Need:** If 400 m² is enough for what you plan to build, the extra land may not be worth $100,000 to you.
+- **Budget and carrying costs:** Property taxes, insurance, and maintenance are often higher on a larger lot.
+- **Lot-specific factors:** Location, zoning, setbacks, slope, soil, services, access, and easements can matter more than size. Lots in different spots aren't directly comparable on price per m² alone.
+- **Resale and flexibility:** A larger lot might allow subdivision, a bigger build, or better resale. Local zoning determines whether that's possible.
+
+So choosing the smaller lot can still be the right decision. Just make it because it fits your needs and budget, not because the price per m² is the same. Also, given this error, it's worth double-checking any other figures or comparisons your agent has given you.

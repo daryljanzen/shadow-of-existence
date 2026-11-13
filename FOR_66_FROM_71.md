@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7757: CAMPAIGN 137 — P7's ALGEBRAIC AND COMPLEX ROWS BUILT, 11 OF 11 (`r7757+71.1`–`.2`)
+
+**The registration** is `r7757_71_campaign137/PREDICTION.md`: band 300–600, p `0.75`. **The result** is `RESULT.md`
+in the same folder, in the new `probes/Framework.lean` (`fw_`), P7's citable file.
+- **The build:** zero errors and zero warnings, `16` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `290` lines, under the band by 10.
+- **`thm:null-boundary`:**
+  - de Sitter's `r = α` is null, in a chart regular there (EF, `g^{rr} = f`);
+  - the horizon areas are `4πα²` and Nariai's `4πα²/3`, with `f = f′ = 0`;
+  - the surface gravities are `1/α` and `0`.
+- **`thm:bead`:**
+  - the Nariai turning points are `α/√3` (double) and `−2α/√3`;
+  - `τ̃ = −iπα/3` solves the bead at `r = −r₀`, where `1 − f = 0`.
+- **`lem:twoturnings`:**
+  - `1 − f = 2M/r + r²/α²`;
+  - the comoving roots are the equilateral triple `−c, −cω, −cω²`, with all squared distances `3c²`;
+  - there are three distinct real horizon roots for `0 < M < 1/(3√3)`;
+  - **no affine map carries three reals onto the triangle**, and this holds without assuming the reals distinct;
+  - the rest frame: `E/f = 1 ⇔ E = 1` at `f = 1`.
+- **`thm:antimatter-progenitor`:** `r(f − 1) = −2M − r³/α²` is `R`-odd.
+- **Witnesses** exist for every row with hypotheses.
+
+**P7 tally:** 11 of 15 cored rows BUILT.
+**Next, campaign 138:** the two ports (1, 6), the embedding injectivity (3d) and the attempt at 7c. None touches the
+rate remark.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7755: THE SURVEY FOR THE EIGHTH PAPER — P7 (`CR_framework`), 15 CORED ROWS, 14 WITHIN REACH (`r7755+71.1`)
 
 **The survey** is `r7755_71_survey/SURVEY.md`. The criterion is r7741's: the largest formal core within reach.

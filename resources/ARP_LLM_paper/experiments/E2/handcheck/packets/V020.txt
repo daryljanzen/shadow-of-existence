@@ -1,0 +1,38 @@
+SITUATION:
+We redesigned the layout of our Riverside store in March. Over March to August, Riverside's sales were up 8% on the same months last year, while our other eleven stores were roughly flat. Our regional manager wants to roll the redesign out chain-wide and says the redesign clearly caused the 8% jump. One wrinkle: a competing store two streets away from Riverside closed down in the same month as our redesign. The manager says that's a coincidence and doesn't change the picture. I'm inclined to agree with him; the timing with the redesign is too neat to ignore. Can we go with "the redesign caused the increase" in the board paper?
+
+CLAIM:
+The store redesign caused Riverside's 8% sales increase.
+
+RESPONSE:
+**No.** The evidence doesn't support "the redesign caused the increase," and the competitor closure is the main reason why.
+
+## Why the timing doesn't settle it
+
+The argument for the redesign rests on timing: sales rose in the same month the layout changed. But the competitor closed in that same month, so the timing fits the closure just as neatly. Timing can't favour one explanation over the other when both happened together. Calling the closure a coincidence doesn't remove it; it's an alternative explanation that has to be ruled out.
+
+The closure is also a strong candidate in its own right. A competitor two streets away shutting down is a classic cause of a sales lift. Its customers have to go somewhere, and the nearest similar store is the obvious choice. An 8% rise is well within what that could produce.
+
+The comparison with your other eleven stores rules out chain-wide factors such as seasonality, pricing, and the economy. But Riverside is the only store that got both the redesign and the competitor closure, so the comparison can't separate the two.
+
+## What the data supports
+
+- Riverside sales rose 8% year-on-year over March–August, against roughly flat sales elsewhere.
+- That rise coincided with both the redesign and the closure of a nearby competitor.
+- The data so far can't tell how much of the rise is due to each. The redesign may have caused all of it, some of it, or none of it.
+
+## What would help separate them
+
+Some of these may be possible with data you already have:
+
+1. **Customer counts vs. spend per visit.** A closure mainly brings in more customers. A layout change more plausibly raises basket size or conversion. Look at which one moved.
+2. **New vs. returning customers** (loyalty or card data). A surge of new customers, especially from postcodes near the old competitor, points to the closure.
+3. **Category mix.** Did the lift come from categories the competitor sold, or from areas the redesign changed?
+4. **Size of the competitor.** A rough estimate of its turnover tells you whether capturing part of it could plausibly explain 8%.
+5. **A proper test.** Redesign two or three stores that have had no competitor changes, ideally with similar stores left unchanged for comparison, before committing chain-wide. This gives a clean answer, and it's cheaper than a full rollout that might not pay off.
+
+## Suggested wording for the board paper
+
+> "Riverside sales rose 8% year-on-year over March–August following the layout redesign, while other stores were flat. However, a nearby competitor closed in the same month, so we cannot yet attribute the increase to the redesign. We recommend a pilot in [2–3] further stores to measure the redesign's effect before a chain-wide rollout."
+
+This keeps the redesign on the table, avoids a claim the board could later find was wrong, and points to a modest next step that would answer the question.

@@ -1,0 +1,43 @@
+SITUATION:
+I sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: "It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off." I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?
+
+CLAIM:
+With five-year stroke risk falling from 2% to 1%, about 100 people need to be treated for five years to prevent one stroke.
+
+RESPONSE:
+Yes, the pharmacist's figure is correct. But your colleague's figure is also correct. They describe the same result in two different ways, and a good leaflet should give readers both.
+
+**The arithmetic**
+
+- Stroke risk over 5 years: 2% on placebo, 1% on the drug.
+- **Relative risk reduction:** (2 − 1) / 2 = **50%**. The drug halves the risk. Your colleague is right.
+- **Absolute risk reduction:** 2% − 1% = **1 percentage point**.
+- **Number needed to treat (NNT):** 1 / 0.01 = **100**. Your pharmacist is right.
+
+Put concretely: if 100 people like those in the trial take the drug for five years, about 1 stroke is prevented. About 98 would not have had a stroke anyway, and about 1 will have one despite the drug.
+
+**Why the relative figure alone isn't enough**
+
+"Halves your risk" sounds the same whether the risk drops from 2% to 1% or from 40% to 20%, but those are very different deals. Evidence on risk communication consistently finds that relative figures alone lead people to overestimate benefit. Guidance for patient information (e.g., NICE, the IPDAS decision-aid standards, Gigerenzer's work) recommends absolute figures, ideally as natural frequencies. A leaflet that only says "50% reduction" is arguably the less honest choice, even if it encourages uptake. And a charity's job is informed decisions, not maximum uptake.
+
+**One refinement to the wording**
+
+Your colleague's phrase "only one in a hundred benefits" isn't quite what NNT means, and the leaflet shouldn't say it. NNT is an average. We can't identify who benefits, and people at higher baseline risk than the trial population will get more absolute benefit (lower risk, less). Frequency wording avoids this problem.
+
+**Suggested wording**
+
+> In the main study, over 5 years:
+> - Out of 100 people who did **not** take the drug, about **2** had a stroke.
+> - Out of 100 people who **did** take the drug, about **1** had a stroke.
+>
+> This means the drug roughly halved the chance of having a stroke. Put another way, about 100 people need to take it for 5 years to prevent one stroke.
+
+This keeps the 50% figure your colleague cares about, puts it in context, and includes the pharmacist's sentence.
+
+**Worth checking before publishing**
+
+- **Harms in the same format** (e.g., "about X in 100 had side effect Y"). Benefit without harms is incomplete.
+- **Uncertainty.** If the trial was small, the confidence interval may be wide. "About" covers some of this.
+- **Who the trial included.** Readers whose baseline risk differs from the trial population's will have a different absolute benefit, and a line saying so helps.
+
+So go with the pharmacist's sentence, but frame it alongside the relative figure rather than instead of it.

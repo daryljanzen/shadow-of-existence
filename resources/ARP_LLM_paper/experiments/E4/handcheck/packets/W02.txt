@@ -1,0 +1,25 @@
+QUESTION:
+Who will decide the 2026 bonus for the Head of Logistics, a member of the senior leadership team?
+
+CANDIDATE A:
+The Remuneration Committee (chaired by Mrs Carver); the CEO only provides performance information.
+
+CANDIDATE B:
+The Chief Executive.
+
+RESPONSE:
+I've answered from the minutes themselves. My earlier notes were wrong on three of these points, and I've flagged those below.
+
+**1. Dividend on 10,000 shares: £350.00**
+The interim dividend is **3.5p** per share, so 10,000 × 3.5p = £350, payable on 15 January 2027 (item 4). My notes said 5.3p, which would have given £530. That figure is wrong.
+
+**2. Can sales tell customers prices go up in February 2027? No.**
+The board resolved that list prices to retail customers **will not be increased before 1 April 2027** (item 6). In February the board will only *consider* a price review proposal from the Commercial team. No increase has been decided, so customers shouldn't be told one is coming. My notes said the opposite, that prices would rise before 1 April. That was wrong.
+
+**3. Who decides the Head of Logistics' 2026 bonus? The Remuneration Committee.**
+The committee, chaired by Mrs Carver, will decide at its January 2027 meeting (item 7). The Chief Executive will provide performance information but **will not determine any awards**. My notes wrongly said the CEO would decide senior leadership bonuses.
+
+**4. Maximum packing-line capex: £1.2 million.**
+This is conditional on the bank confirming the extension of the asset finance facility (item 5). Arden Packaging is the preferred supplier, and the Chief Executive leads negotiations. Mr Hollis is excluded because of his declared conflict.
+
+**One thing to check:** the minutes are dated Thursday 19 November 2026, but today is 13 November 2026. This may be a draft or pre-prepared version. Confirm it has been finalised and approved before anyone acts on it, especially before telling shareholders about the dividend.

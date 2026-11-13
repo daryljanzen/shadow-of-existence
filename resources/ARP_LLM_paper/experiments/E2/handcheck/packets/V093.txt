@@ -1,0 +1,51 @@
+SITUATION:
+I manage a small software team and we need both code reviews and documentation every day. In an hour, our senior engineer can do either 4 code reviews or write 8 pages of docs. Our junior engineer can do either 1 code review or 4 pages of docs in an hour. A colleague from finance, Mei, suggested, while admitting it sounds backwards, that we'd get more total work done if the junior did the documentation and the senior focused on reviews, even though the senior is faster at both. Our CTO says that's obviously wrong: the senior is better at everything, so the senior should do the docs too and get them done fastest. I'm leaning towards Mei, but can't explain it to the CTO. Is she right?
+
+CLAIM:
+Assigning the documentation to the junior and reviews to the senior yields more total output, even though the senior is faster at both tasks.
+
+RESPONSE:
+# Yes, Mei is right
+
+This is **comparative advantage**. The CTO is reasoning from *absolute* advantage: the senior is faster at both tasks. But the senior has only so many hours. The real question is what each hour of a task **costs in the other task**.
+
+## The opportunity cost
+
+| | 1 code review costs | 1 page of docs costs |
+|---|---|---|
+| Senior | 2 pages of docs | 0.5 reviews |
+| Junior | 4 pages of docs | 0.25 reviews |
+
+- When the senior writes a page, the team gives up half a review.
+- When the junior writes a page, the team gives up only a quarter of a review.
+
+So docs are "cheaper" from the junior, and reviews are "cheaper" from the senior. The senior is 4× faster at reviews but only 2× faster at docs, so the senior's edge is much larger in reviews.
+
+## A concrete example for the CTO
+
+Assume each person has 8 hours a day.
+
+**Option A: both split time evenly (4h reviews, 4h docs each)**
+- Reviews: 16 + 4 = **20**
+- Docs: 32 + 16 = **48 pages**
+
+**Option B: specialize (junior does only docs, senior does reviews first)**
+- Junior: 8h docs = 32 pages
+- Senior: 5h reviews = 20 reviews, 3h docs = 24 pages
+- Totals: **20 reviews, 56 pages**
+
+Option B produces the same reviews plus 8 more pages, with the same people and hours. Pulling the senior further into docs makes it worse. If the junior does all the reviews to free the senior for docs, the team gets 16 reviews and only 48 pages, versus 16 reviews and 64 pages under specialization.
+
+The one-line version for the CTO: *"The senior is faster at docs, but every hour they spend on docs costs us 4 reviews. The junior's hour costs us only 1."*
+
+## Where I'd push back on Mei, or at least add caveats
+
+The math is sound, but it rests on assumptions you should check:
+
+1. **Equal quality.** The model assumes a junior-written page equals a senior-written page. For routine docs that may hold. For architecture or design docs, it may not.
+2. **Constant rates.** The senior's 5th review of the day may be slower or sloppier than the 1st. Reviews are mentally draining in a way that may not scale linearly.
+3. **Actual demand.** If you need only, say, 8 reviews a day, the senior covers them in 2 hours and should spend the rest on docs. The rule isn't "senior never writes docs." It's "the senior covers reviews first, and the junior covers docs first."
+4. **The junior's development.** Doing reviews is one of the main ways juniors learn a codebase. Zero reviews forever is bad for growth and for retention. A sensible compromise is for the junior to do mostly docs plus a few reviews, ideally paired with or checked by the senior.
+5. **Bus factor.** Full specialization concentrates all review knowledge in one person.
+
+**Bottom line:** Mei is correct on the core point, and the CTO's reasoning is a classic mistake. Being better at everything doesn't mean you should do everything when your time is limited. Treat the result as the default allocation, not a rigid rule, and adjust for quality, growth, and how much of each task you actually need.

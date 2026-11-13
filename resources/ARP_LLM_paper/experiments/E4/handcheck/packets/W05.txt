@@ -1,0 +1,31 @@
+QUESTION:
+On the 40-minute Ardmore–Isle of Fenn crossing, can my dog sit with me in a pet-friendly lounge?
+
+CANDIDATE A:
+Yes. Pets can join owners in the pet-friendly lounge.
+
+CANDIDATE B:
+No. The pet-friendly lounge is only on the overnight Lerrick route; on this route the dog stays in the car or on the outside deck area.
+
+RESPONSE:
+**Short answers:** 1. No. 2. Yes, free. 3. No. 4. No.
+
+I checked these against the full conditions rather than my earlier summary. The summary was wrong on three of these points, which I've flagged below.
+
+**1. Arriving at 13:20 for the 14:00 Kirkhope–Stennar sailing: no, you would miss check-in.**
+Vehicle check-in closes **45 minutes** before departure (section 2), so it closes at 13:15. My notes wrongly said 30 minutes. Late arrivals are not carried "without exception," and the ticket is treated as unused. Aim to arrive by 13:15 at the latest, and ideally earlier. (The 60-minute rule applies only to vehicles on the overnight Lerrick sailing.)
+
+**2. Bicycles for foot passengers: yes, and they're free.**
+Bicycles travel free on all routes (section 6). The passenger must load the bike themselves, as directed by the crew.
+
+**3. Moving your Saver ticket at 18:00 for the 08:00 sailing: no.**
+A Saver fare can only be changed (£25 fee plus any fare difference) if you do it **at least 24 hours before the original departure** (section 3). You're about 14 hours away, so no change is possible. An unused Saver ticket has no value, so if you don't sail at 08:00 you lose the fare. My notes left out this 24-hour cutoff. The only exception is if Northsound cancels the sailing for weather or technical reasons. Then you can take the next available sailing or get a full refund, whatever your fare type (section 8).
+
+**4. Your dog on the Ardmore–Isle of Fenn crossing: no, there's no pet-friendly lounge on that route.**
+The pet-friendly lounge and pet cabins are only on the overnight Kirkhope–Lerrick route (section 5). My notes wrongly suggested the lounge was available more widely. On the Fenn route, your dog travels free but must either:
+- stay in your vehicle, or
+- if you're on foot, stay with you in the designated outside deck area, on a lead or in a carrier.
+
+The only exception is an assistance dog, which can go with you in all passenger areas.
+
+**One caveat:** this document covers the **summer timetable, 1 April – 31 October 2026**. Today is 13 November, so a winter set of conditions may now apply, with possibly different times and rules. Check Northsound's current terms before you travel.

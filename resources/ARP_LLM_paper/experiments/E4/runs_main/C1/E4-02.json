@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-02",
+ "system": "You are a helpful assistant. Notes and summaries can drift from what they summarise. Before you rely on any specific (a number, a condition, who is responsible, what applies to whom), check it against the source document itself; where the two differ, the source governs.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nNorthgate's Family Leave Policy (v4.2, from 1 January 2026) covers permanent staff and fixed-term contracts of six months or more, but not agency workers or contractors. Anyone eligible can take up to 52 weeks' maternity leave, starting from the 11th week before the due week. Staff with 26 weeks' service by the 15th week before the due week get 18 weeks at full basic salary, then statutory pay to week 39, with weeks 40–52 unpaid. Enhanced pay is conditional on returning for at least 3 months; leaving sooner means repaying the enhanced element, except for redundancy, ill-health retirement or non-gross-misconduct dismissal, and repayments can be spread over 12 months. Annual leave accrues during paid maternity leave but not during the unpaid weeks; up to 10 days can be carried over with manager agreement. Up to 10 voluntary KIT days are paid at the normal daily rate. Early return needs 8 weeks' written notice to HR. Requests to extend leave beyond 52 weeks are approved by the line manager and confirmed within 14 days. Paternity leave is two weeks at full pay, taken in one block within 56 days. Flexible working requests can be made from day one.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nNORTHGATE LOGISTICS LTD — FAMILY LEAVE POLICY (Version 4.2, effective 1 January 2026)\n\n1. Scope. This policy applies to all employees on permanent or fixed-term contracts of six months or more. Agency workers and contractors are not covered and should refer to their own agency's arrangements.\n\n2. Maternity leave. All eligible employees may take up to 52 weeks of maternity leave, regardless of length of service. Leave may start at any time from the beginning of the 11th week before the expected week of childbirth (EWC).\n\n3. Enhanced maternity pay. Employees who have at least 26 weeks' continuous service at the end of the 15th week before the EWC receive enhanced maternity pay as follows: weeks 1–18 at 100% of normal basic salary; weeks 19–39 at the statutory rate; weeks 40–52 unpaid. Employees who do not meet the service requirement receive statutory maternity pay only, if eligible.\n\n4. Repayment of enhanced pay. Enhanced maternity pay is conditional on the employee returning to work for at least six (6) months after the end of maternity leave. If the employee resigns or gives notice to leave before completing six months back at work, she must repay the enhanced element (the difference between enhanced pay and statutory pay). No repayment will be sought where employment ends because of redundancy, ill-health retirement, or dismissal other than for gross misconduct. Repayment may be spread over up to 12 months by agreement.\n\n5. Annual leave. Contractual and statutory annual leave continue to accrue throughout the whole of maternity leave, including any unpaid weeks. Bank holidays falling during leave are added to the employee's entitlement. Accrued leave should normally be taken before the end of the leave year in which the employee returns; up to 10 days may be carried forward into the following leave year with the agreement of the line manager.\n\n6. Keeping-in-touch (KIT) days. An employee may work up to 10 KIT days during maternity leave without bringing the leave to an end. KIT days are paid at the normal daily rate of basic pay, inclusive of any statutory pay due for that day. KIT days are voluntary: neither the employer nor the employee can require them, and they must be agreed in advance between the employee and her line manager.\n\n7. Returning early. An employee who wishes to return before the end of 52 weeks must give at least eight (8) weeks' written notice of the new return date to HR.\n\n8. Extended unpaid leave. Requests to extend leave beyond 52 weeks, for example by adding unpaid parental leave or a career break, are decided by the HR Business Partner for the employee's division, after consulting the line manager. The line manager does not have authority to approve such an extension. Decisions will be confirmed in writing within 14 days of receipt of the request.\n\n9. Paternity leave. Eligible employees may take two weeks' paternity leave at 100% of normal basic salary. Paternity leave must be taken in one block of one or two weeks, within 56 days of the birth or placement. Employees with less than 26 weeks' service receive statutory paternity pay only.\n\n10. Flexible working. Any employee returning from family leave may submit a flexible working request from their first day of employment. The company will respond within two months, including any appeal.\n\n11. Contact. Questions about this policy should be directed to HR at hr@northgate-logistics.example.\n</document>\n\nA few questions from someone who needs to act on this:\n1. How many weeks of maternity leave are paid at 100% of basic salary for an employee who meets the service requirement?\n2. An employee took the full 52 weeks with enhanced pay, came back, and resigned four months after returning. Does she have to repay anything?\n3. Will an employee build up annual leave during weeks 40–52 of maternity leave, when she is unpaid?\n4. An employee wants to add three months of unpaid parental leave after her 52 weeks. Who decides whether she can?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C1/E4-02.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:08:42.363358+00:00",
+ "response": "I checked each answer against the policy text. My earlier notes had three errors, which affect questions 2, 3 and 4. The corrections are listed at the end.\n\n**1. Weeks at 100% of basic salary: 18 weeks.**\nThese are weeks 1–18 (section 3). Weeks 19–39 are paid at the statutory rate, and weeks 40–52 are unpaid.\n\n**2. Resigning four months after returning: yes, she must repay.**\nEnhanced pay requires her to return for at least **six months** (section 4). She resigned after four, so she must repay the enhanced element. That is the difference between what she received for weeks 1–18 and the statutory pay she would otherwise have received. The exemptions don't apply because she resigned. They cover only redundancy, ill-health retirement, or dismissal other than for gross misconduct. By agreement, she can spread the repayment over up to 12 months.\n\n**3. Annual leave during unpaid weeks 40–52: yes.**\nSection 5 says contractual and statutory annual leave accrue \"throughout the whole of maternity leave, **including any unpaid weeks**.\" Bank holidays during her leave are also added to her entitlement. She should normally take accrued leave before the end of the leave year in which she returns. Up to 10 days can be carried forward if her line manager agrees.\n\n**4. Who decides on extra unpaid parental leave after 52 weeks: the HR Business Partner for her division.**\nUnder section 8, the HR Business Partner decides after consulting her line manager. The policy states that the line manager has **no** authority to approve the extension. The decision must be confirmed in writing within 14 days of receiving the request.\n\n**Corrections to my earlier notes** (the policy text takes precedence):\n- Return period: I wrote 3 months. The policy says **6 months**.\n- Annual leave: I wrote that it doesn't accrue during unpaid weeks. It **does** accrue.\n- Extension approval: I wrote \"line manager.\" It is the **HR Business Partner**, and the line manager is only consulted.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3127,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 943,
+  "output_tokens_details": {
+   "thinking_tokens": 266
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3127,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 943,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3127,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3127
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.043884000000000006,
+ "duration_ms": 10350,
+ "wall_s": 11.47,
+ "attempt": 0
+}

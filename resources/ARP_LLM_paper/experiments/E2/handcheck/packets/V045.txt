@@ -1,0 +1,50 @@
+SITUATION:
+Our town ran a big flu vaccination drive last autumn. This winter, flu hospitalisations in the town fell from 40 the previous winter to 30, a 25% drop. Nationally, flu hospitalisations fell about 15% this winter, which experts attribute to a milder season. Our public health officer says the extra 10 points are due to our campaign and wants to report that it prevented hospitalisations. I think she's overreaching; it was simply a mild winter everywhere and our numbers just followed the national trend. Can you settle this for us?
+
+CLAIM:
+The town's vaccination drive prevented flu hospitalisations beyond the national decline.
+
+RESPONSE:
+# Neither claim is supported by these numbers
+
+The data can't show that the campaign worked, and it can't show that it didn't. Your officer is overreaching, but "it simply followed the national trend" goes further than the data allows too.
+
+## The core problem: the numbers are too small
+
+With counts of 40 and 30, random year-to-year variation is about as big as the effect being claimed.
+
+- If the town had matched the national 15% drop, you'd expect about **34** hospitalisations. You saw **30**, which is 4 fewer.
+- Hospitalisation counts like these vary by roughly the square root of the count. For around 34 cases, that's about ±6 per year from chance alone.
+- If the true expected number were 34, you'd see 30 or fewer about **25–30% of the time**. That isn't unusual at all.
+- Last year's 40 was also a noisy figure. A true baseline of 35 or 45 would be equally consistent with it, and that alone shifts the "percentage drop" by many points.
+
+So the gap between a 25% drop and a 15% drop is well within what chance produces. It isn't a signal.
+
+## Why that doesn't prove your view either
+
+"No detectable effect" is not the same as "no effect." Flu vaccines do reduce hospitalisations, so the campaign plausibly prevented some. The problem is that this dataset couldn't detect a realistic benefit.
+
+A rough sense of scale: suppose the drive raised coverage by about 10 percentage points in the groups most likely to be hospitalised, and the vaccine cut hospitalisation risk by about 40% that season. That would prevent roughly 4% of hospitalisations, about 1–2 cases. You'd never see that against noise of ±6.
+
+## Other things that could explain the gap
+
+- **Regional differences.** The national average can hide local variation in timing, circulating strains, or how mild the season was.
+- **Regression to the mean.** If 40 was a high year for your town, a drop toward normal was likely regardless.
+- **Changes in counting.** Shifts in testing, coding, or admission practice can move the numbers.
+
+## What would actually answer the question
+
+1. **Compare vaccinated and unvaccinated residents.** Hospitalisation rates by vaccination status, or a test-negative analysis if you have lab data, address the question directly.
+2. **Use comparison towns.** Pick similar nearby towns without a campaign and compare their changes with yours.
+3. **Use a longer baseline.** Several prior years show how much your town's count normally swings.
+4. **Calculate expected prevention.** Use the coverage increase and published vaccine effectiveness to estimate how many hospitalisations the campaign likely prevented. This is a model-based estimate, and it should be labelled as one.
+
+## What she can honestly report
+
+She can report:
+- vaccination uptake achieved,
+- that hospitalisations fell from 40 to 30,
+- that the national decline was about 15% and attributed to a milder season,
+- and, if she wants, a clearly labelled estimate of hospitalisations likely prevented, based on coverage and published effectiveness.
+
+She shouldn't present the 10-point gap as evidence that the campaign prevented hospitalisations.

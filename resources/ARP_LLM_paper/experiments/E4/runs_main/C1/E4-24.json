@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-24",
+ "system": "You are a helpful assistant. Notes and summaries can drift from what they summarise. Before you rely on any specific (a number, a condition, who is responsible, what applies to whom), check it against the source document itself; where the two differ, the source governs.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nLittle Acorns Day Nursery terms (from September 2026). Open weekdays 07:30–18:00 for 51 weeks a year, closing between Christmas and New Year and on bank holidays. A full day costs £72 and a morning or afternoon session £40; fees cover meals, snacks, nappies and wipes. Invoices are monthly in advance, due by the 5th. Booked sessions are charged even if your child is off sick or on holiday, but not for bank holidays or the Christmas week. All 3- and 4-year-olds are entitled to 30 funded hours a week from the term after they turn three, usable over up to 51 weeks, with an optional £4 consumables charge per funded day (or bring a packed lunch). One calendar month's written notice is needed to leave or reduce sessions, otherwise fees are charged in lieu; extra sessions depend on availability. Collection is by 18:00, with £10 charged per 15 minutes late; after 19:00 with no contact, social care is called. Children are released only to named adults aged 16+, or to someone pre-notified with the password. Children with a temperature over 38 °C stay home, as do those with vomiting or diarrhoea until 48 hours after the last episode. Prescribed medicine needs written consent and original labelled packaging. There are two free one-hour settling-in sessions.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nLITTLE ACORNS DAY NURSERY — PARENT TERMS AND CONDITIONS (from 1 September 2026)\n\n1. Opening hours. The nursery is open Monday to Friday, 07:30 to 18:00, 51 weeks a year. We close for one week between Christmas and New Year and on all bank holidays.\n\n2. Fees. Full day (07:30–18:00): £72. Morning session (07:30–12:30) or afternoon session (13:00–18:00): £40. Fees include all meals and snacks, but parents must provide nappies, wipes and any nappy cream for their child; we do not supply these. Fees are invoiced monthly in advance and payable by the 5th of each month.\n\n3. Holidays and absence. Fees are payable for all booked sessions, including when your child is absent through illness or family holidays. No fees are charged for bank holidays or the Christmas closure week.\n\n4. Government-funded hours. All 3- and 4-year-olds are entitled to 15 hours a week of funded early education (570 hours a year) from the term after their third birthday. Children of eligible working families may receive 30 hours a week; to claim the extra 15 hours, parents must provide a valid 30-hours eligibility code from HMRC, reconfirmed every three months. Funded hours can be used across a maximum of 51 weeks. An optional consumables charge of £4 per funded day covers meals and outings; families may instead supply a packed lunch.\n\n5. Notice. Parents must give two calendar months' written notice to withdraw their child or reduce their booked sessions. Fees will be charged in lieu of notice. Requests to add sessions are subject to availability.\n\n6. Late collection. Children must be collected by 18:00. A late collection fee of £10 is charged for each 15 minutes or part thereof after 18:00. If a child has not been collected by 19:00 and we cannot reach the parents or emergency contacts, we are required to contact children's social care.\n\n7. Collection by other adults. Children will only be released to adults aged 16 or over who are named on the registration form, or to another adult whom the parent has notified in advance and who gives the agreed password.\n\n8. Illness. Children with a temperature above 38 °C must not attend. Children who have had vomiting or diarrhoea must stay at home until 48 hours after the last episode. Staff will call parents to collect a child who becomes unwell.\n\n9. Medication. Staff will give prescribed medicines only with written parental consent, in the original container with the pharmacy label. Non-prescribed medicines such as liquid paracetamol are given only in an emergency, with phone consent, and never within four hours of a previous dose.\n\n10. Settling-in. Two free settling-in sessions of one hour each are offered before a child's start date.\n\n11. Safeguarding. Staff are trained in safeguarding and must follow the Local Safeguarding Children Partnership procedures.\n</document>\n\nA few questions from someone who needs to act on this:\n1. Do I need to send nappies and wipes in with my son?\n2. My daughter turns three in October. I'm not working at the moment. How many funded hours a week can she get?\n3. What is the late collection fee?\n4. We want our child's last day to be 30 June. If I give written notice on 1 June, will I avoid paying for July?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C1/E4-24.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:10:41.154525+00:00",
+ "response": "I checked these against the terms themselves, and my earlier notes were wrong on three of your four questions. The answers below follow the document.\n\n**1. Nappies and wipes: Yes, you need to send them in.**\nSection 2 says fees cover meals and snacks, but \"parents must provide nappies, wipes and any nappy cream for their child; we do not supply these.\" My notes wrongly said nappies were included.\n\n**2. Funded hours: 15 hours a week.**\nUnder section 4, all 3- and 4-year-olds get 15 funded hours a week (570 hours a year). The 30-hour entitlement is only for eligible *working* families with a valid HMRC eligibility code, so it wouldn't apply while you're not working. My notes wrongly said all children get 30.\n- **When it starts:** from \"the term after\" her third birthday. The document doesn't give term dates, but for an October birthday that would usually mean January. It's worth confirming with the nursery.\n- If you start work later, you could apply for the HMRC code to claim the extra 15 hours.\n- There's an optional £4 consumables charge per funded day, or you can send a packed lunch instead.\n\n**3. Late collection fee: £10 for each 15 minutes or part of 15 minutes after 18:00.**\nSo arriving at 18:01 costs £10, and 18:20 costs £20. If your child hasn't been collected by 19:00 and the nursery can't reach you or your emergency contacts, they must contact children's social care.\n\n**4. Notice on 1 June: No, you would still pay for July.**\nSection 5 requires two calendar months' written notice, not one as my notes said. Fees are charged in lieu of any notice you don't give.\n- Notice given on 1 June runs to about 31 July, so you'd be charged for July even though your child leaves on 30 June.\n- To end fees on 30 June, give written notice by around 30 April / 1 May. If you're near that date, check exactly how the nursery counts it.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2931,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 913,
+  "output_tokens_details": {
+   "thinking_tokens": 271
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2931,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 913,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2931,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2931
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.041716,
+ "duration_ms": 10571,
+ "wall_s": 11.54,
+ "attempt": 0
+}

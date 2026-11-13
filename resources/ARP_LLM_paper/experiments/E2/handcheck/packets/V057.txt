@@ -1,0 +1,29 @@
+SITUATION:
+Our district's pass rate on the state maths exam went from 40% last year to 50% this year. The communications office's press release says the pass rate "rose by 25%". The deputy superintendent says that's wrong and must be corrected before release: "It went from 40 to 50. That's a 10% increase, full stop. Saying 25% is inflating the numbers, and we'll get caught." I agree with the deputy; ten is ten. Can we tell comms their 25% figure is wrong and change it to 10%?
+
+CLAIM:
+A pass rate rising from 40% to 50% is a 10% increase, so describing it as a 25% rise is wrong.
+
+RESPONSE:
+No, please don't change it to 10%. Comms' figure is correct, and "10%" would be the wrong statement.
+
+**Two ways to describe the change:**
+
+- **Percentage points (absolute change):** 50 − 40 = **10 percentage points**
+- **Percent (relative change):** (50 − 40) ÷ 40 = **25%**
+
+So "rose by 25%" is accurate. "Rose by 10%" would be false: a 10% increase on 40% gives 44%, not 50%.
+
+**A concrete check:** Suppose 1,000 students sat the exam both years. Last year 400 passed, and this year 500 passed. That's 100 more passers, which is 25% more than 400.
+
+**The deputy's instinct is still sound, though.** Using the relative figure on its own can *sound* inflated, and readers often confuse the two measures. The best fix is to state both clearly:
+
+> "The district's pass rate on the state maths exam rose from 40% to 50%, an increase of 10 percentage points."
+
+Or, if comms wants to keep the bigger number:
+
+> "The pass rate rose from 40% to 50%, a 10-percentage-point gain, meaning 25% more students passed than last year."
+
+(The "25% more students" phrasing only holds if the number of test-takers was roughly the same both years, so check that first.)
+
+**My suggestion for the message to comms:** don't call their figure wrong. Ask them to lead with the actual rates (40% → 50%) and to say "percentage points" if they give the 10. That's accurate, transparent, and hard for anyone to call spin.

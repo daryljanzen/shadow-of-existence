@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-30",
+ "system": "You are a helpful assistant. Notes and summaries can drift from what they summarise. Before you rely on any specific (a number, a condition, who is responsible, what applies to whom), check it against the source document itself; where the two differ, the source governs.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nHollybush Kennels & Cattery 2026 terms. Dogs are £28 a night (£48 for two sharing), cats £16 (£28 for two sharing), counted noon to noon, with a 15% supplement on whole stays including any night from 18 December to 3 January or 20 July to 31 August. A 25% deposit confirms bookings, forfeited for cancellations under 14 days before arrival; the balance is paid on collection. Dogs must be vaccinated against distemper, hepatitis, parvovirus and leptospirosis with boosters up to date, plus a current kennel cough vaccination; bring the vaccination card. Cats need enteritis and cat flu vaccinations at least 7 days before arrival. Pets must be free of fleas, worms and infections (flea treatment is charged at £15). Bitches in season can be boarded in a separate isolation kennel. If a pet falls ill and the owner and emergency contact can't be reached, Hollybush takes it to Westgate Veterinary Centre at the owner's expense. Owners may bring their pet's own labelled bedding and one toy. Premium dry food is included; owners can bring their own with no discount. Dogs get two lead walks a day, with off-lead paddock play only with signed consent. Prescribed medication is given as instructed, with £2 a day for multiple daily doses. Collection is Monday–Saturday 09:00–11:00 and 15:00–17:00, not Sundays or bank holidays.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nHOLLYBUSH KENNELS & CATTERY — BOARDING TERMS AND CONDITIONS (2026)\n\n1. Prices. Dogs: £28 per night for one dog; £48 per night for two dogs sharing a kennel. Cats: £16 per night per cat; £28 per night for two cats sharing a pen. Charges are per night, with a day counted from noon to noon. A peak-season supplement of 15% applies to every night of any stay that includes a night between 18 December and 3 January, or between 20 July and 31 August.\n\n2. Booking and deposit. A deposit of 25% of the estimated total is required to confirm a booking. The deposit is non-refundable if the booking is cancelled less than 14 days before arrival. The balance is payable on collection.\n\n3. Vaccinations — dogs. All dogs must be fully vaccinated against distemper, hepatitis, parvovirus and leptospirosis, with boosters up to date, and must have been vaccinated against kennel cough at least 14 days before arrival. Dogs vaccinated against kennel cough less than 14 days before arrival will not be admitted, because protection is not yet established. Owners must bring the vaccination card at check-in.\n\n4. Vaccinations — cats. All cats must be vaccinated against feline enteritis and cat flu, with boosters up to date, and the last vaccination must have been given at least 7 days before arrival.\n\n5. Health. Animals must be free from fleas, worms and infectious conditions on arrival. Animals found to have fleas will be treated at the owner's cost (£15). Bitches in season will not be accepted for boarding, for the safety of all dogs in our care; please rebook if your dog comes into season before arrival.\n\n6. Veterinary treatment. If your pet becomes unwell, we will contact you or your emergency contact. If neither can be reached and we believe treatment is needed, we will take your pet to our own vet, Westgate Veterinary Centre, and you will be responsible for all fees.\n\n7. Bedding and belongings. Dog owners may bring their dog's own bed or blanket and one toy, which should be labelled. For hygiene reasons cats may not bring their own bedding or toys; we provide fresh, laundered bedding daily. We cannot accept responsibility for items lost or damaged.\n\n8. Food. We feed a premium complete dry food included in the price. Owners may supply their own food, clearly labelled with feeding instructions, but no discount is given.\n\n9. Exercise. Dogs are walked on a lead twice daily. Off-lead play in our secure paddock is available only with the owner's signed consent.\n\n10. Medication. We will give prescribed medication as instructed, supplied in the original pharmacy packaging; a charge of £2 per day applies for medicines given more than once a day.\n\n11. Collection. Collection times are 09:00–11:00 and 15:00–17:00, Monday to Saturday. There are no collections on Sundays or bank holidays. Animals not collected within 7 days of the booked date, without contact from the owner, may be rehomed.\n</document>\n\nA few questions from someone who needs to act on this:\n1. Our spaniel had her first kennel cough vaccine five days before her booked arrival. Will she be admitted?\n2. Our bitch has just come into season and is due to board tomorrow. Can she still stay?\n3. Can I leave my cat's favourite blanket with her?\n4. How much is one night for a single dog, outside peak season?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C1/E4-30.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:11:14.446060+00:00",
+ "response": "I checked these against the terms themselves. My earlier notes were wrong on three of the four points, so these answers come from the document.\n\n**1. Spaniel vaccinated against kennel cough five days before arrival: No, she won't be admitted.**\nSection 3 requires the kennel cough vaccine to be given **at least 14 days before arrival**. Dogs vaccinated less than 14 days before \"will not be admitted, because protection is not yet established.\" You'll need to move her arrival to at least 14 days after the vaccination date. Bring her vaccination card at check-in.\n*(My notes only said \"a current kennel cough vaccination\" and missed the 14-day rule.)*\n\n**2. Bitch in season, due tomorrow: No, she can't stay.**\nSection 5 says bitches in season **will not be accepted**, and asks owners to rebook if the dog comes into season before arrival. Contact Hollybush to rebook. If you cancel now, less than 14 days before arrival, the 25% deposit is non-refundable under Section 2, so ask them whether rebooking lets you keep it.\n*(My notes wrongly said she could board in an isolation kennel. The document says nothing about that.)*\n\n**3. Cat's favourite blanket: No.**\nSection 7 says that for hygiene reasons **cats may not bring their own bedding or toys**. The cattery provides fresh, laundered bedding every day. Only dogs may bring their own bed or blanket and one labelled toy.\n*(My notes wrongly applied the bedding allowance to all pets.)*\n\n**4. One night, single dog, off-peak: £28.**\nNights run noon to noon. The 15% peak supplement only applies to stays that include a night from 18 December to 3 January or from 20 July to 31 August. If any night of the stay falls in those windows, the supplement applies to every night of the stay, which makes it £32.20 a night.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3040,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 688,
+  "output_tokens_details": {
+   "thinking_tokens": 67
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3040,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 688,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3040,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3040
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038088000000000004,
+ "duration_ms": 9931,
+ "wall_s": 10.91,
+ "attempt": 0
+}

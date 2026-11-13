@@ -1,0 +1,25 @@
+QUESTION:
+I take 75 mg aspirin every day for my heart. Can I take Feverlin for a sore back without checking with anyone?
+
+CANDIDATE A:
+No. With low-dose aspirin you should only take Feverlin if your doctor or pharmacist has told you to, because it can reduce aspirin's protective effect.
+
+CANDIDATE B:
+Yes. It can be taken alongside low-dose aspirin.
+
+RESPONSE:
+I checked each answer against the leaflet itself. My earlier notes had three errors that affect your questions, and the leaflet's wording is used below.
+
+**1. Taking Feverlin with daily 75 mg aspirin: No, check first.**
+The leaflet says that if you take low-dose aspirin (up to 75 mg a day) to protect your heart, *only take Feverlin if your doctor or pharmacist has told you to*. The reason is that ibuprofen can reduce aspirin's protective effect. My notes wrongly said the two could be taken together freely. Please ask a pharmacist or your doctor before taking it for your back.
+
+**2. Minimum time between doses: At least 4 hours.**
+You can take 1 or 2 tablets up to three times a day as needed.
+
+**3. Two more tablets after 6 today: No.**
+The leaflet's limit is **6 tablets (1,200 mg) in any 24 hours**. My notes wrongly said 8. You have already reached the maximum, so don't take any more until 24 hours have passed since your first dose. If you've taken more than 6, the leaflet says to contact a doctor or go to the nearest emergency department straight away, and to take the pack with you.
+
+**4. Taking it before breakfast on an empty stomach: No.**
+Take the tablets **with or after food**. The leaflet says not to take them on an empty stomach because that raises the risk of stomach upset. My notes had this backwards.
+
+**One more correction:** my notes said to check with a doctor if you're in "early pregnancy." The leaflet says the **first six months** of pregnancy. It must not be taken at all in the last three months.

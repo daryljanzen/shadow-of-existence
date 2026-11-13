@@ -1,0 +1,26 @@
+SITUATION:
+Our agronomist recommends applying 120 kg of nitrogen per hectare to the wheat fields this spring. We use urea, which is 46% nitrogen by weight. Our farm manager has written the order for 120 kg of urea per hectare and says confidently: "The recommendation is 120 kg, so we buy 120 kg of fertiliser per hectare. It's that simple." Something about this bothers me, but he's run the farm for years and I don't want to hold up the order. Is he right?
+
+CLAIM:
+To apply 120 kg of nitrogen per hectare using urea (46% N), 120 kg of urea per hectare is sufficient.
+
+RESPONSE:
+No, he's not right, and you should raise it before the order goes in.
+
+The recommendation is **120 kg of nitrogen** per hectare, not 120 kg of fertiliser. Urea is only 46% nitrogen, so 120 kg of urea supplies:
+
+> 120 kg × 0.46 = **55 kg N/ha**
+
+That's less than half what the agronomist recommended.
+
+To get 120 kg of nitrogen from urea:
+
+> 120 kg N ÷ 0.46 ≈ **261 kg urea/ha**
+
+So the order needs to be about **2.2 times larger** than what's written. For example, on 100 ha that's about 26 tonnes of urea, not 12 tonnes.
+
+**Why it matters:** Applying only 55 kg N/ha to wheat would likely cut yield and grain protein noticeably. The fertiliser you'd save is worth much less than the crop you'd lose.
+
+**How to raise it without a confrontation:** Agronomic recommendations are almost always given in kg of nutrient (N, P₂O₅, K₂O), not kg of product. It's an easy and common mix-up. A quick message to the agronomist settles it: *"Just confirming, is the 120 kg/ha in kg N or kg product? With urea at 46% N, we're planning about 261 kg urea/ha."* That gets you a definitive answer, and the farm manager doesn't have to take your word over his.
+
+Also check whether the 120 kg N is meant to go on all at once or be split across applications, since that affects how you schedule the order and spreading.

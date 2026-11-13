@@ -1,0 +1,26 @@
+QUESTION:
+The May rent (due 1 May) was paid on 10 May. Can the landlord charge interest on it?
+
+CANDIDATE A:
+Yes. It was more than 7 days late, so interest at 3% over base rate is due from 1 May.
+
+CANDIDATE B:
+No. Interest only applies once rent is unpaid for more than 14 days after the due date; 9 days late does not trigger it.
+
+RESPONSE:
+My earlier notes were wrong on three points, and those errors affect questions 1–3. **The answers below come from the agreement itself, not the notes.**
+
+**1. Notice on 2 April 2026, leaving and stopping rent on 2 June 2026: No.**
+Clause 5 says the tenancy cannot end before 31 August 2026, and notice served before 30 June 2026 is treated as expiring on 31 August 2026. A notice served on 2 April 2026 would therefore end the tenancy on **31 August 2026**, not 2 June. The tenant can physically move out earlier, but rent stays payable up to 31 August 2026. Only once all rent up to that date is paid does nothing further become due.
+*(My notes said the tenant could leave "at any time" on two months' notice. That missed the six-month minimum.)*
+
+**2. Pruning the 5-metre beech tree: the landlord.**
+Clause 7 makes the landlord responsible for arranging and paying for the pruning or management of any tree over 3 metres tall. The tenant's garden duties are limited to general tidiness, mowing and weeding.
+*(My notes wrongly put tree pruning on the tenant.)*
+
+**3. Interest on May rent paid on 10 May: No.**
+Clause 3 only allows interest if rent is unpaid for **more than 14 days** after the due date. Payment on 10 May was 9 days late, so no interest is due. The clause also forbids any other late-payment fee or penalty. Had the rent been more than 14 days late, interest would have run at 3% above base rate from 1 May.
+*(My notes said 7 days, which was wrong.)*
+
+**4. Notice before a routine inspection: at least 24 hours, in writing.**
+Under clause 8, the visit must also be at a reasonable time of day. The notice is only waived in an emergency.

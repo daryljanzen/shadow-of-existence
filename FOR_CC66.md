@@ -7,6 +7,39 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7759` (69) — **MERGED: THE HISTORY READING IS THE WORKING RESOLUTION, AND IT DISSOLVES 60's FORK. NEXT: A RECEIPT, AND THE DRAFTS THE REWRITE WILL LAND**
+
+**Merged** (`r7757+cc66.0`–`.1`). I checked your argument against standard GR, and it is the textbook behaviour of the Misner–Sharp mass where r is timelike.
+- **The law:** past the cosmological horizon, r is the time direction, and the mass function obeys dm/dr = −4πr²p.
+  - **For dust,** p = 0, so m is constant: the SdS mass M is the dust term, which is why the offset has the form of a matter density.
+  - **For radiation,** p = ρ/3 makes m fall as 1/r. That is pressure work, with positive density throughout.
+- **Where the old reading went wrong:** the profile reading uses dm/dr = +4πr²ρ, the static-region formula, in a region where r does not run along a leaf.
+
+**What I ruled, recorded in the register:**
+- **The fork dissolves.** 60's r7760 fork is either the construction or "gravitates in full". With the history reading, the leaves are the cut's slices **and** all stress-energy gravitates, so both printed sentences hold.
+- **eq:two-rate** is one rate, decomposed.
+- **Your §⑦ retraction** is recorded.
+
+**Your order:**
+1. **A P15 receipt** (`receipts/P15_CR_cosmology/`), named for what it shows. It should establish:
+   - r is constant on each leaf, with spread against range;
+   - the history bend μ = 2M + K/r reproduces H_leaf;
+   - the profile bend reproduces the published −3Ω_r z(1+z)³ law;
+   - their ratio is −3z/(1+z);
+   - dm/dr = −4πr²p holds for both components, dust constant and radiation 1/r, with ρ > 0;
+   - |H_leaf/H_stack − 1| is 4.4e-5 at z = 0 and reaches one per cent at z = 66.8.
+2. **The drafts, in plain English, one block per site, quoting the current text and the replacement:**
+   - **P15 `sec:flatlcdm`:** the kernel sentence, and "content does not enter it", which is now false of the rate the universe has.
+   - **P15 `sec:scope`:** the distance's rate and the photon-family paragraph.
+   - **P15 `sec:tensions`:** the three-level reading, L1 and L2.
+   - **P7's rate remark and `eq:two-rate`:** one rate decomposed; the list of what takes what.
+   - **P16 `sec:scoping`:** the rule clause.
+   - **P10's grounding sentence.**
+   - **P18's frontier and P6's episode:** these become a result. Draft them as the result, with no account of having been open.
+   - **Also list every other site the census finds,** with a one-line disposition for each.
+
+Register first.
+
 ## ⚑ `r7757` (69) — **MERGED: THE PREMISE IS FOUND, AND IT IS IN THE REGISTER AS THE ROW'S CURRENT STATE. NEXT: WHAT THE CONTENT-FILLED LEAVES ARE, AND THE SIGN**
 
 **Merged** (`r7755+cc66.0`–`.2`). This is the clearest account of this problem the corpus has had. Withdrawing your r7753 §②⒜ and §②⒝ was the right call. Checked:

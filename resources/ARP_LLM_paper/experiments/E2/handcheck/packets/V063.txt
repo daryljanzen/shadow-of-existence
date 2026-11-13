@@ -1,0 +1,36 @@
+SITUATION:
+My business partner and I own a café that became profitable 14 months after opening. We're now looking at a second location in a different neighbourhood; the rent there is about 20% higher, and we haven't measured foot traffic yet. My partner is certain: "The second one will be profitable within 18 months. We know the formula now, and we got the first one there in 14 months starting from scratch." I'm pretty convinced too, since we've learned a lot. We're about to sign the lease. Is she right?
+
+CLAIM:
+The second café location will be profitable within 18 months.
+
+RESPONSE:
+**She might be right, but you can't know yet, and you're about to commit before checking the one thing that matters most.**
+
+## What's true in her argument
+
+Your experience is real. You likely know your suppliers, menu, staffing, pricing, systems, and mistakes to avoid. A second location usually reaches stability faster than a first because you skip much of the trial and error.
+
+## Where the reasoning is weaker than it feels
+
+1. **You have one data point.** You know the first café reached profitability in 14 months. You don't know how much of that came from your formula and how much came from that location: its foot traffic, the local competition, the neighbourhood demographics, and luck. You can take the formula with you, but not the location.
+
+2. **Foot traffic is the biggest unknown, and it's unmeasured.** For a café, location-driven traffic is often the strongest predictor of revenue. Skipping this is like assuming the new neighbourhood behaves like the old one, which is exactly the assumption in question.
+
+3. **20% higher rent raises your breakeven.** You need more revenue every month just to stand still. If the new spot has *equal or lower* traffic than the first, the higher rent works against you, and 18 months could become much longer, or never.
+
+4. **Your attention will be split.** The first café succeeded with both of you fully focused on it. Running two means neither gets that focus, and the first location's performance can slip too.
+
+5. **Certainty is a warning sign.** Strong conviction after one success is very common, and it's a well-known source of expansion failures. It's worth noticing that you're both convinced and neither of you has the data.
+
+## What I'd do before signing
+
+- **Measure foot traffic.** Count passers-by at your current café and the new site at the same times: weekday mornings, lunch, and weekends, over a week or two. Compare them directly.
+- **Run the breakeven numbers.** Using your current café's average ticket, margins, and conversion rate (customers ÷ passers-by), calculate how much daily traffic the new site needs to cover the higher rent and costs. Then check whether your counts support it.
+- **Stress-test the plan.** Ask what happens if it takes 30 months, and whether you can fund that without endangering the first café.
+- **Scope out the area.** Look at competitors nearby, who lives and works there, and whether the morning commute or office crowd matches your model.
+- **Negotiate the lease.** Ask for a rent-free fit-out period, a shorter initial term with renewal options, or a break clause. If the landlord won't wait two weeks for you to count foot traffic, that tells you something too.
+
+## Bottom line
+
+The 18-month goal is plausible, but right now it's a hope built on one past result, not a forecast. A week or two of counting people on the sidewalk and some spreadsheet work would turn it into a real estimate. That's cheap insurance against a multi-year lease. If the numbers hold up, you sign with genuine confidence instead of borrowed confidence.

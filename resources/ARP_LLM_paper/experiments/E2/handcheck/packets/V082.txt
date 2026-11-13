@@ -1,0 +1,37 @@
+SITUATION:
+Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out "significant" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?
+
+CLAIM:
+If none of 20 independent tests has a real effect, the probability that at least one is significant at the 5% level is about 64%.
+
+RESPONSE:
+**Yes, the analyst is right.** The product manager's reasoning has two problems.
+
+## 1. The 64% figure is correct
+
+If none of the 20 tweaks does anything, each test still has a 5% chance of a false positive. With independent tests:
+
+P(at least one "significant") = 1 − 0.95²⁰ ≈ 1 − 0.358 = **0.64**
+
+The expected number of false positives across 20 null tests is 20 × 0.05 = **1**. So getting exactly one significant result is what you'd expect if *nothing* worked. Your data so far can't tell "one tweak works" apart from "none do."
+
+The 5% applies to one test considered alone. Once you run 20 tests and pick the winner, the chance of a fluke somewhere in the batch is no longer 5%.
+
+## 2. "5% means 95% reliable" is wrong even for a single test
+
+A p-value below 0.05 means: *if there were no effect*, data this extreme would show up less than 5% of the time. It does **not** mean there's a 95% chance the effect is real. That probability depends on how many of your tweaks actually work. If most small tweaks do nothing, which is common, then a large share of significant results are false positives, even for one test.
+
+## Caveats, so you don't overclaim
+
+- The 64% is the chance of **at least one** false positive across the batch, assuming all 20 nulls are true. It does *not* mean this particular result has a 64% chance of being a fluke. That number can't be calculated without knowing how many tweaks really had effects.
+- The tests might not be fully independent (shared traffic, overlapping time periods), which would shift the number somewhat. The basic point still holds.
+- The winner isn't necessarily fake. It just hasn't been shown to be real yet.
+
+## What to do
+
+- **Retest it** with a fresh sample, as the analyst suggests. This is the cleanest fix. If the effect is real, it should replicate.
+- Check the result against a multiple-comparison threshold. Bonferroni gives 0.05/20 = 0.0025. If the p-value was something like 0.001, that's more convincing than 0.04.
+- Expect the effect to be smaller on retest. Picking the best of 20 tends to overstate effect size (the "winner's curse").
+- Consider cost. If the tweak is cheap and harmless, rolling it out isn't a disaster. But claiming a proven gain would be.
+
+A simple way to put it to the PM: "We ran 20 tests and got 1 hit. That's the number we'd expect from pure chance. A retest will tell us whether it's real."

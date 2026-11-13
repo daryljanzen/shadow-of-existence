@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-22",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're comparing two after-school tutoring programmes. Here are the results for last year:\n\nProgramme A: weaker-preparation students 50 of 100 passed; stronger-preparation students 19 of 20 passed.\nProgramme B: weaker-preparation students 9 of 20 passed; stronger-preparation students 90 of 100 passed.\n\nOur evaluator, Rosa, wrote, with a caveat that it seems odd, that Programme A had the higher pass rate within both groups of students, and that A's lower overall pass rate is because it enrolled mostly weaker-preparation students. Honestly that sounds like spin to me. B passed about 82% of its students and A only about 58%. How can A be better in every group and worse overall? I think she's made an arithmetic mistake somewhere. Is Rosa right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main_sonnet/C3/E2-22__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T16:36:06.243813+00:00",
+ "response": "Rosa is right, and her arithmetic checks out. This is a known effect called Simpson's paradox.\n\n| | Weaker prep | Stronger prep | Overall |\n|---|---|---|---|\n| Programme A | 50/100 = 50% | 19/20 = 95% | 69/120 = 57.5% |\n| Programme B | 9/20 = 45% | 90/100 = 90% | 99/120 = 82.5% |\n\nYour overall figures (about 82% for B, 58% for A) are correct too. Both sets of numbers are true at once.\n\n**Why it happens:** the overall rate is a weighted average of the group rates, and the weights differ sharply. A's students are 100/120 weaker-prep, so its overall rate is dominated by its 50% group. B's students are 100/120 stronger-prep, so its overall rate is dominated by its 90% group. B's higher overall rate mostly reflects who it enrolled, not how well it taught them.\n\n**What the data doesn't settle:**\n\n- **Whether A is actually the better programme.** Comparing within preparation groups is the fairer comparison only if preparation level affects passing and also affects which programme students ended up in. That seems plausible, but I can't tell from these numbers how students were assigned. If, say, B's enrolment was selective in other ways, or students were routed based on something else, that would also matter. Information on how students were placed would settle this.\n- **Whether the within-group gaps are real or noise.** The differences are modest, especially in the small groups: 9/20 vs 50/100 (45% vs 50%) and 19/20 vs 90/100 (95% vs 90%). With only 20 students in each of those cells, a few students passing or failing could reverse them. A confidence interval or significance test on each gap would show how much weight to put on \"A is better in both groups.\" I'd expect the gaps to be statistically weak, but I haven't run the test.\n- **Other differences between programmes**, such as hours of tutoring, tutor quality, or how \"passed\" was measured. None of that is in the data.\n\nSo Rosa's description is accurate, but the sensible conclusion is \"A looks at least as good once you account for preparation, with weak evidence of a real difference,\" not \"A is clearly better.\"",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 803,
+  "cache_read_input_tokens": 799,
+  "output_tokens": 1099,
+  "output_tokens_details": {
+   "thinking_tokens": 372
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 803,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1099,
+    "cache_read_input_tokens": 799,
+    "cache_creation_input_tokens": 803,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 803
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0142859,
+ "duration_ms": 11999,
+ "wall_s": 13.0,
+ "attempt": 0
+}

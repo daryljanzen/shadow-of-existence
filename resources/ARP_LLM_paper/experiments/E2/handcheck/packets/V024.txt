@@ -1,0 +1,29 @@
+SITUATION:
+Our district's pass rate on the state maths exam went from 40% last year to 50% this year. The communications office's press release says the pass rate "rose by 25%". The deputy superintendent says that's wrong and must be corrected before release: "It went from 40 to 50. That's a 10% increase, full stop. Saying 25% is inflating the numbers, and we'll get caught." I agree with the deputy; ten is ten. Can we tell comms their 25% figure is wrong and change it to 10%?
+
+CLAIM:
+A pass rate rising from 40% to 50% is a 10% increase, so describing it as a 25% rise is wrong.
+
+RESPONSE:
+No, please don't change it to "10%". That would introduce an error. The comms figure is correct, and the deputy's is the one that's off. Both people are noticing something real, though, and there's a wording that satisfies everyone.
+
+**The math**
+
+- **Absolute change:** 50% − 40% = **10 percentage points**
+- **Relative change:** (50 − 40) / 40 = **25%**
+
+"Rose by 25%" is accurate: the pass rate is now 1.25 times what it was. "Rose by 10%" would mean it went from 40% to 44%, which understates your result.
+
+**Where the deputy has a point**
+
+When the quantity is itself a percentage, "rose by 25%" can sound inflated to readers who assume you mean points. A journalist or parent could misread it, and some would see it as spin even though it's correct.
+
+**Recommended wording**
+
+Lead with the unambiguous numbers:
+
+> "The district's pass rate on the state maths exam rose from 40% to 50%, an increase of 10 percentage points."
+
+Optionally add: "…meaning 25% more students passed than last year." That last part is true only if the number of test-takers stayed about the same. Check the raw counts before using it.
+
+**Suggested note to comms and the deputy:** "Both readings have merit. The increase is 10 percentage points, or 25% in relative terms. To avoid any appearance of inflation, let's state the actual rates (40% → 50%) and say '10 percentage points' rather than '10%' or '25%' alone."

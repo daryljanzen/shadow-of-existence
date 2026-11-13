@@ -1,0 +1,40 @@
+SITUATION:
+Our basketball team won 45% of its games last season under the old head coach (37 of 82). Twenty games into this season under the new coach, we've won 11 and lost 9, which is 55%. The general manager is telling the press that the new coach is clearly better than the old one, and I agree; ten points is a big jump. The schedule so far has included some weaker opponents, but it's hard to say how much weaker on balance. Several players have also changed since last season. Can we go with "the new coach is better" in our season preview?
+
+CLAIM:
+The new coach is better than the old coach.
+
+RESPONSE:
+**No. The data don't support "clearly better," and I'd push back on the GM's framing too.**
+
+## The 10-point jump is within normal noise
+
+Twenty games is a very small sample.
+
+- At last season's 45% rate, a team would expect about **9 wins in 20 games**. You have **11**, which is two more than expected.
+- The standard deviation for wins over 20 games at that rate is about **2.2 wins**. So 11 wins is less than one standard deviation above expectation (z ≈ 0.9).
+- A two-proportion comparison (11/20 vs. 37/82) gives z ≈ 0.8, p ≈ 0.4. A team with no real improvement would get a start this good or better roughly **1 time in 5** by chance alone.
+- The 95% confidence interval for this season's true win rate is roughly **34% to 74%**. That range comfortably includes last season's 45%.
+
+So even setting everything else aside, 11–9 is fully consistent with "no change at all."
+
+## Even a real improvement wouldn't be attributable to the coach
+
+You've named two confounders yourself, and both point the same way:
+
+1. **Softer schedule.** If the opponents so far have been weaker on balance, some or all of the extra two wins may simply reflect that. You'd want to adjust for opponent strength (point differential vs. opponents' ratings, or a model like SRS or net rating) before comparing.
+2. **Roster changes.** New players could explain any improvement independent of who's coaching. The comparison is new coach plus new roster versus old coach plus old roster. You can't separate the two from win-loss records.
+
+There are also other factors you can't rule out: injuries last season vs. this one, home/away split so far, and close-game luck. Close-game records are notoriously noisy and tend to regress.
+
+## What you could defensibly say
+
+- "The team is off to an 11–9 start under [new coach], ahead of last season's .451 pace."
+- "Early signs are encouraging, though it's a small sample against a lighter schedule."
+- If true and checkable: specific changes in style or efficiency (pace, defensive rating, turnover rate), described as *changes*, not as proof of a better coach.
+
+What I'd avoid is "the new coach is clearly better," or anything implying the record proves it. If the team falls back toward .500 or below as the schedule toughens, a preview that made that claim will look bad.
+
+## When could you say more?
+
+Wait until much more of the season is played. Then compare schedule-adjusted metrics like net rating or point differential, which stabilize faster than win-loss. Even then, separating coaching from roster effects will remain a judgment call rather than something the numbers settle.

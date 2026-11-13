@@ -1,0 +1,30 @@
+SITUATION:
+We have 30 people on our team, and for the away-day someone proposed a "find your birthday twin" icebreaker. Lena said, a bit tentatively, that it's actually more likely than not that at least two of us share a birthday. That sounds far too high to me: there are 365 days and only 30 of us, so I'd guess the chance is maybe 8 or 10 percent. Tom agreed with me and said Lena is probably confusing it with the chance that someone shares a birthday with one particular person. For the purposes of this, assume birthdays are spread evenly over 365 days and ignore leap years and twins. I'd rather not plan an icebreaker around something that probably won't happen. Is Lena right?
+
+CLAIM:
+In a group of 30 people with uniformly distributed birthdays, it is more likely than not that at least two share a birthday.
+
+RESPONSE:
+**Yes, Lena is right.** With 30 people, the chance that at least two share a birthday is about **71%**.
+
+## Why
+
+It's easier to calculate the chance that **nobody** shares a birthday, then subtract from 1:
+
+- Person 2 avoids person 1's birthday: 364/365
+- Person 3 avoids both earlier birthdays: 363/365
+- …
+- Person 30 avoids all 29 earlier birthdays: 336/365
+
+Multiplying these gives about **0.294**, so the chance of at least one match is about **0.706**.
+
+The intuition goes wrong because the match can happen between *any* pair, not just pairs that include you. With 30 people there are 30 × 29 / 2 = **435 pairs**, and each one is a chance for a match. That's why the probability climbs so fast. It passes 50% at just 23 people.
+
+## About Tom's point
+
+Tom has it backwards. The 8–10% guess matches the *other* question: the chance that someone shares a birthday with **one particular person**, such as you. That's 1 − (364/365)²⁹ ≈ **7.6%**. So the guess you and Tom made answers that question, not the one Lena was answering.
+
+## For the icebreaker
+
+- About 71% chance of at least one birthday twin, so roughly a 3-in-10 chance of none. Probably worth having a fallback, such as "closest birthdays win."
+- Real birthdays aren't perfectly uniform (some months are more common), which slightly *raises* the chance of a match. So 71% is, if anything, a bit conservative.

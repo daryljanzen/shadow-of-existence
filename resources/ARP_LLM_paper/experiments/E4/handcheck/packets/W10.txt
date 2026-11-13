@@ -1,0 +1,40 @@
+QUESTION:
+We had qualifying Downtime in March. What do we have to do to receive the credit?
+
+CANDIDATE A:
+Submit a claim through the support portal within 30 days of the end of March, with resource identifiers and Downtime dates and times; credits are not automatic.
+
+CANDIDATE B:
+Nothing — Corvane applies the credit automatically to the next invoice.
+
+RESPONSE:
+I checked each answer against Schedule 3 itself. My earlier notes had three errors that affect your questions, so the corrections are listed at the end.
+
+**1. 99.92% uptime: are you entitled to a credit?**
+No. The commitment is **99.9%** (clause 2), and credits apply only when uptime falls below that (clause 5). 99.92% meets the commitment, so no credit is due.
+
+**2. Three hours of maintenance with five days' email notice: is it Downtime?**
+Probably not. It most likely counts as **Scheduled Maintenance**, which is excluded from Downtime (clause 3(a)). It qualifies if:
+- Corvane emailed your **technical contact** at least 72 hours in advance (five days is enough), and
+- total scheduled maintenance that month didn't exceed **eight hours** (clause 4).
+
+The 22:00–06:00 UK window applies only "where possible," so maintenance outside it is still excluded. It would count as Downtime only if the notice went to the wrong person, or if this outage took the month's maintenance past eight hours. Only maintenance announced with less than 72 hours' notice counts as Downtime.
+
+**3. Qualifying Downtime in March: how do you get the credit?**
+Credits are **not automatic** (clause 6). You must:
+- Submit a claim through the **support portal** within **30 days of the end of March**, so by 30 April.
+- Include the **affected resource identifiers** and the **dates and times** of the Downtime.
+
+Corvane will confirm or reject the claim within 15 business days. Approved credits go on your next invoice and can't be redeemed for cash.
+
+If you mean March 2026, the claim window closed on 30 April 2026. If no claim was filed by then, the contract gives no route to the credit.
+
+**4. Severity 1 response time?**
+**30 minutes, 24/7** (clause 7). "Response" means acknowledgement by a qualified engineer, not a fix.
+
+---
+
+**Corrections to my earlier notes:**
+- The uptime target is **99.9%**, not 99.95%. With the wrong figure, Q1 would have come out as "yes."
+- Scheduled maintenance is **excluded** from Downtime, not counted towards it. Only emergency maintenance with less than 72 hours' notice counts.
+- Credits are **not** applied automatically. You must file a claim within 30 days.

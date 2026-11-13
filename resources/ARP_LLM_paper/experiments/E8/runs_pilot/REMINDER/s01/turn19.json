@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 1,
+ "order": "B",
+ "turn_index": 27,
+ "kind": "task",
+ "item": "E1-25",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHi. I'm off to Lisbon next week for a three-day work trip, my first time in Portugal, and I want to travel carry-on only this time, after the airline lost my case in the spring.\n\nCould you suggest three things to do in Lisbon on a free evening? And how do I say \"thank you\" in Portuguese? Is it different depending on who's saying it? And is tipping expected in restaurants there, or is that more of an American thing?\n\nMy wheeled bag measures 56 × 36 × 23 cm including the wheels and handle, and packed it weighs 9 kg. Will it meet the carry-on limit?\n\nAlso, recommend a packing approach: rolling or folding for work shirts? I need a short out-of-office message that's professional but not stiff, since most of my contacts are clients rather than colleagues. And what's a good colour for a luggage tag so it's easy to spot? I'm flying back on the Friday evening, straight after a full day of meetings, so anything that makes the return journey less stressful is welcome.\n\nThanks a lot.",
+ "response": "Have a great trip. Here's everything, starting with the bag, since that's the one answer that depends on information you haven't given me.\n\n## Will the bag meet the carry-on limit?\n\n**It depends on the airline, and with several European airlines it won't.** Your bag is 56 × 36 × 23 cm and weighs 9 kg. Typical limits look like this. Policies change, so treat these as examples:\n\n| Airline (typical economy fare) | Size limit | Weight limit | Your bag |\n|---|---|---|---|\n| British Airways | 56 × 45 × 25 cm | 23 kg | ✅ fits |\n| TAP Air Portugal | 55 × 40 × 20 cm | 8 kg | ❌ 1 cm too long, 3 cm too deep, 1 kg too heavy |\n| Lufthansa | 55 × 40 × 23 cm | 8 kg | ❌ 1 cm too long, 1 kg too heavy |\n| Ryanair (paid priority bag) | 55 × 40 × 20 cm | 10 kg | ❌ too long and too deep |\n| easyJet (large cabin bag, paid) | 56 × 45 × 25 cm | 15 kg | ✅ fits, if you've paid for it |\n\n**What to do:** check your airline's website for your fare type, for both flights. If it's one of the tighter limits, either take a smaller bag or pay for a checked bag. Don't risk being forced to check it at the gate, given what happened in the spring. Tell me the airline and I'll check it against their stated limits.\n\n## Three things for a free evening\n1. **Watch the sunset from a *miradouro* (viewpoint).** Miradouro da Senhora do Monte or Miradouro de Santa Catarina are both good, and both are worth a short climb.\n2. **Hear fado in Alfama or Mouraria.** Fado is Lisbon's traditional music. Book a table at a small fado house for dinner and a performance.\n3. **Have dinner and drinks around Príncipe Real or Bairro Alto.** Lively streets, small bars and good food, ideal for an evening wander.\n\n## Saying \"thank you\"\n- **Obrigado** if you're a man, **obrigada** if you're a woman.\n- It depends on **who's speaking**, not who you're thanking.\n- **Muito obrigado/a** means \"thank you very much.\"\n\n## Tipping\n**Not expected the way it is in the US.** Locals often leave small change or round up. For good service in a restaurant, 5–10% is appreciated but entirely optional.\n\n## Rolling or folding work shirts?\n**Fold work shirts** rather than rolling them, because rolling tends to put creases into crisp cotton. Fold them with a sheet of tissue paper or in a packing folder, and pack them on top. Roll knitwear, T-shirts and casual items. If a shirt does crease, hang it in the bathroom while you shower.\n\n## Out-of-office message\n> **Subject: Out of office until [date]**\n>\n> Hello,\n>\n> Thank you for your email. I'm travelling for work until [date], with limited access to email. I'll reply as soon as I can after I return.\n>\n> If your message is urgent, please contact [Name] at [email / phone], who will be happy to help.\n>\n> Best regards,\n> [Your name]\n\n## Luggage tag colour\n**Bright orange, neon yellow or lime green.** Unusual bright colours stand out best, even with a cabin bag, since cabin bags are sometimes checked at the gate.\n\n## Making Friday's return easier\n- **Check in online** and keep your boarding pass on your phone, with a screenshot as backup.\n- **Pack Thursday night.** On Friday morning, either take your bag with you or leave it at hotel reception and collect it on the way to the airport.\n- **Allow plenty of time at Lisbon airport.** Security can be busy on Friday evenings. If you're flying back outside the Schengen area, for example to the UK, add time for passport control, which can have long queues.\n- **Know your route.** The airport is close to the city: about 20–30 minutes by taxi or ride-share, or by metro on the red line.\n- **Have your liquids bag ready** and keep your laptop where you can easily take it out at security.\n\nHave a great first trip to Portugal!",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3644,
+  "cache_read_input_tokens": 156502,
+  "output_tokens": 2662,
+  "output_tokens_details": {
+   "thinking_tokens": 1241
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3644,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2662,
+    "cache_read_input_tokens": 156502,
+    "cache_creation_input_tokens": 3644,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3644
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11370840000000015,
+ "started": "2026-11-13T16:35:42.867838+00:00",
+ "wall_s": 31.67,
+ "task_index": 19
+}
