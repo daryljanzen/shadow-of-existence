@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 1,
+ "order": "B",
+ "turn_index": 31,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle it yet, because the result depends entirely on the one number he hasn't given: **how much maintenance falls after the rewrite.** You can, though, work out what that number would need to be. That turns the argument into a question he can be asked to answer.\n\n## The break-even calculation\n\nOver three years, in engineer-years:\n\n| | Status quo | Rewrite |\n|---|---|---|\n| Maintaining Python during the rewrite (9 months) | — | 3 × 0.75 = **2.25** |\n| The rewrite itself | — | 3 × 0.75 = **2.25** |\n| Maintaining the system for the rest of the period | 3 × 3 = **9** | m × 2.25 |\n| **Total** | **9** | **4.5 + 2.25m** |\n\nHere *m* is the number of engineers needed to maintain the Rust system each year. Setting the two totals equal gives **m = 2**.\n\nSo if the nine-month estimate is accurate, the rewrite is cheaper over three years **only if maintenance falls from 3 engineers to below 2**, a cut of more than a third. That isn't impossible, but it's a specific claim that needs evidence.\n\n## Sensitivity to overrun\n\nRewrites often take longer than planned, and you're right to weigh that. The break-even shifts quickly:\n\n| Rewrite actually takes | Rust maintenance must fall to | Required cut |\n|---|---|---|\n| 9 months (as estimated) | under 2.0 engineers | over 33% |\n| 13.5 months (50% over) | under 1.2 engineers | over 60% |\n| 18 months (100% over) | impossible: already more expensive by the end of 3 years | — |\n\nAt double the estimate, the rewrite can't be cheaper within three years however low maintenance becomes. The two costs during the rewrite already use up the whole 9 engineer-years. And the calculation is generous to the rewrite: it ignores running the two systems in parallel during migration, retraining the team in Rust, and the bugs a rewrite inevitably reintroduces.\n\n## Why \"obviously a vanity project\" goes too far\n\nRewrites do overrun often, but \"always\" isn't true, and some genuinely pay off. Your colleague's claim is unproven, not disproven. Dismissing it outright risks missing a real problem behind his proposal, such as a codebase that is genuinely painful to change.\n\n## What would settle it\n\nAsk him for:\n1. **An estimate of Rust maintenance, in engineers per year, and the reasoning behind it.**\n2. **A breakdown of the current three engineers' time.** How much is caused by Python itself (runtime errors, performance, dependency problems)? How much is feature work, support and the inherent complexity of the business logic? Only the first part is likely to fall after a rewrite. The rest moves to Rust unchanged.\n3. **Evidence for the nine months**, such as how much of the codebase is understood and documented, and how many of its edge cases are captured by tests.\n\nThen consider cheaper ways to test the idea:\n- **Rewrite one troublesome component** in Rust, measure its maintenance cost, and extrapolate. This is sometimes called the \"strangler fig\" approach: replace a system piece by piece instead of all at once.\n- **Fix the worst parts of the Python code** to see how much maintenance drops without a rewrite.\n\nLastly, \"cheaper over three years\" leaves out the cost of three engineers producing no new features for nine months or more. For most teams that's the largest cost of all, and it should be part of the decision.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1708,
+  "cache_read_input_tokens": 159647,
+  "output_tokens": 1979,
+  "output_tokens_details": {
+   "thinking_tokens": 814
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1708,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1979,
+    "cache_read_input_tokens": 159647,
+    "cache_creation_input_tokens": 1708,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1708
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08518939999999997,
+ "started": "2026-11-13T22:08:02.117233+00:00",
+ "wall_s": 23.73,
+ "task_index": 23
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 2,
+ "order": "A",
+ "turn_index": 12,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes, the pharmacist's figure is right. Your colleague's figure is also right. They describe the same result in two different ways, and the leaflet would be best with both, absolute numbers first.\n\n## Why both are correct\n\n- **Relative risk reduction:** the risk falls from 2% to 1%, which halves it. That's the \"50% reduction.\"\n- **Absolute risk reduction:** 2% − 1% = 1 percentage point, or 1 in 100.\n- **Number needed to treat (NNT):** 1 ÷ 0.01 = **100**. About 100 people need to take the drug for five years to prevent one stroke.\n\nThe 50% sounds large because the starting risk is small. Halving a 2% risk prevents far fewer strokes than halving a 40% risk would. The relative figure alone doesn't tell a reader how much difference the drug makes to *them*.\n\n## Why the leaflet should lead with absolute numbers\n\nPatient-information guidance consistently recommends absolute figures, because relative figures on their own overstate benefits in readers' minds. Presenting only \"halves the risk\" in a leaflet is generally considered misleading. The aim isn't to put people off. It's to let them weigh a real benefit against side effects, cost and the inconvenience of daily tablets.\n\n## Suggested wording\n\nThe clearest form is a \"100 people\" frame, which most readers find easier than an NNT:\n\n> **Out of 100 people like those in the main study:**\n> - Without the drug, about **2** would have a stroke over five years.\n> - Taking the drug for five years, about **1** would have a stroke.\n>\n> So the drug roughly halves the risk of stroke. For every 100 people who take it for five years, about one stroke is prevented.\n\nThis keeps your colleague's point (it halves the risk) and the pharmacist's (about 1 in 100). Each figure carries its context with it.\n\n## A few things to check\n\n1. **\"Only one in a hundred benefits.\"** Avoid this phrasing in the leaflet. Nobody can know in advance which person will be spared a stroke, and some people may benefit in ways the trial didn't measure. \"For every 100 people who take it, about one stroke is prevented\" is more accurate.\n2. **Baseline risk.** These numbers apply to people like those in the trial. People at higher risk get a larger absolute benefit and a smaller NNT, and people at lower risk get less. A line such as \"the benefit is greater for people at higher risk\" would help readers. If the trial reports results by risk group, include them.\n3. **Harms in the same format.** Present side effects with absolute numbers too, for example \"about X in 100 people have [side effect].\" That way readers can compare like with like.\n4. **Uncertainty.** \"Roughly\" and \"about\" are appropriate. If the trial's confidence interval is wide, the pharmacist may want to reflect that.\n\nYou weren't wrong to trust the pharmacist. Your colleague's concern about scaring people off is best answered by showing both numbers side by side, not by leaving the absolute one out.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2591,
+  "cache_read_input_tokens": 63708,
+  "output_tokens": 1325,
+  "output_tokens_details": {
+   "thinking_tokens": 336
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2591,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1325,
+    "cache_read_input_tokens": 63708,
+    "cache_creation_input_tokens": 2591,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2591
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05998560000000008,
+ "started": "2026-11-13T22:08:05.095599+00:00",
+ "wall_s": 16.7,
+ "task_index": 4
+}
