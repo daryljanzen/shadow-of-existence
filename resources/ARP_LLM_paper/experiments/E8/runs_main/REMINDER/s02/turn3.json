@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 2,
+ "order": "A",
+ "turn_index": 11,
+ "kind": "task",
+ "item": "E1-25",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHi. I'm off to Lisbon next week for a three-day work trip, my first time in Portugal, and I want to travel carry-on only this time, after the airline lost my case in the spring.\n\nCould you suggest three things to do in Lisbon on a free evening? And how do I say \"thank you\" in Portuguese? Is it different depending on who's saying it? And is tipping expected in restaurants there, or is that more of an American thing?\n\nMy wheeled bag measures 56 × 36 × 23 cm including the wheels and handle, and packed it weighs 9 kg. Will it meet the carry-on limit?\n\nAlso, recommend a packing approach: rolling or folding for work shirts? I need a short out-of-office message that's professional but not stiff, since most of my contacts are clients rather than colleagues. And what's a good colour for a luggage tag so it's easy to spot? I'm flying back on the Friday evening, straight after a full day of meetings, so anything that makes the return journey less stressful is welcome.\n\nThanks a lot.",
+ "response": "## Your bag: it depends on the airline, and it may not fit\n\nYou didn't say which airline you're flying, and limits vary enough that the answer changes.\n\nAt 56 × 36 × 23 cm and 9 kg, your bag:\n\n- **Likely fits** where the limit is 56 × 45 × 25 cm. British Airways uses that limit, and so does easyJet's large cabin bag (a paid add-on on most fares).\n- **Likely doesn't fit** where the limit is 55 × 40 × 20 cm. That includes TAP, Ryanair and Vueling. Your bag is 1 cm too long and 3 cm too deep. TAP also has an 8 kg weight limit, which your 9 kg exceeds.\n\nThese figures are from memory and airlines change them, so check your airline's baggage page before you go. Low-cost carriers also often require a paid add-on, such as priority boarding or a cabin-bag option, for anything larger than an under-seat bag.\n\nIf you tell me the airline, I can work through it with you. Because of the lost case, it's worth being certain rather than finding out at the gate.\n\nIf the bag is borderline, packing it softer helps a little, since the depth limit is the tight one on a 20 cm allowance. A 23 cm hard frame won't compress, though.\n\n## Three things for a free evening\n\nYou'll be there in late November. Sunset is around 5:15 pm, so plan accordingly.\n\n1. **A miradouro (viewpoint).** Senhora do Monte has the widest view; Santa Luzia and São Pedro de Alcântara are more central. If you finish work after dark, the city lights are still worth it.\n2. **Fado in Alfama or Mouraria.** Choose a small *casa de fado* and book ahead. Most expect you to have dinner during the performance.\n3. **Dinner in Bairro Alto or Príncipe Real, or the Time Out Market** at Cais do Sodré if you're short on time. Have a pastel de nata somewhere along the way.\n\nWear shoes with grip. The pavements are polished stone, steep in places, and slippery in the rain November often brings.\n\n## \"Thank you\"\n\n- **Obrigado** if you're a man, **obrigada** if you're a woman.\n- The form follows the speaker's gender, not the listener's.\n- **Muito obrigado/a** means \"thank you very much.\"\n\n## Tipping\n\nIt isn't expected the way it is in the US. Locals often leave nothing, or round up. For good service in a sit-down restaurant, 5–10% is appreciated but optional. Check whether a service charge is already on the bill.\n\n## Work shirts: fold rather than roll\n\n- **Fold dress shirts** to keep them crisp. Button the collar and top button, fold around a sheet of tissue or a packing folder, and lay them flat on top.\n- **Roll** knits, T-shirts and underwear, and use them to fill gaps.\n- When you arrive, hang the shirts in the bathroom while you shower, or ask the hotel for an iron.\n\n## Out-of-office message\n\n> Thank you for your email. I'm travelling for work from [Day, date] to [Day, date], with limited access to email. I'll reply when I'm back on [Monday, date].\n>\n> If your message is urgent, please contact [Name] at [email / phone], who will be glad to help.\n>\n> Best regards,\n> [Name]\n\n## Luggage tag\n\nChoose something unusual, such as fluorescent orange, lime or bright yellow, or a distinctive pattern. Avoid black, red and navy, which are common. Even for carry-on, a tag is worth having: on full flights, cabin bags are often checked at the gate.\n\n## Making Friday less stressful\n\n- **Pack Friday morning.** Leave the bag with hotel reception, or bring it to your meetings, so you don't have to go back to the hotel.\n- **Check in online.** Have your boarding pass on your phone, plus a screenshot in case the app fails.\n- **Getting to the airport.** Humberto Delgado is close to the city centre: about 20–30 minutes by metro (red line), taxi or Uber. Friday evening traffic is heavy, so the metro can be more predictable.\n- **Allow extra time if you're leaving the Schengen area,** for example flying back to the UK. The passport-control queues at Lisbon can be long, so aim to arrive at least two hours before departure.\n- **Liquids.** Keep them at 100 ml or less, in a clear bag that's easy to take out.\n- **Keep the in-flight essentials at the top of your bag:** charger, laptop and a change of shoes or a comfortable layer.\n\nIf you tell me your airline and fare type, I can confirm whether your bag fits.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 5904,
+  "cache_read_input_tokens": 100857,
+  "output_tokens": 3213,
+  "output_tokens_details": {
+   "thinking_tokens": 1667
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5904,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3213,
+    "cache_read_input_tokens": 100857,
+    "cache_creation_input_tokens": 5904,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5904
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.1316793999999999,
+ "started": "2026-11-13T21:59:34.367203+00:00",
+ "wall_s": 39.77,
+ "task_index": 3
+}
