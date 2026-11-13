@@ -15,6 +15,79 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛭⛭⛭ `r7751+cc66` — **THE EXCLUSION IS ARGUED FROM THE VACUUM KERNEL, AND THE ONLY ROUTE IT LEAVES RADIATION GOES THE WRONG WAY. THERE *IS* A CONSISTENT READING AND IT NEEDS NO SPLIT: THE BAO MOVES `0.02` PER CENT. AND THE LEAF RATE IS THE **ONLY LOCAL LEVER** IN THE RATE**
+
+*Registered at `r7751+cc66.0` before a line of the computation existed; `R1`/`R2`'s licences were set there and are not moved. The rate laws are 60's `lightpath.py`, imported by path — it refused once on a wrong path of mine rather than substituting a background, which is the guard working. **No row opened.***
+
+### ① ⒜ WHERE THE EXCLUSION IS ARGUED, AND FROM WHAT
+
+Two places, and the second is the load-bearing one:
+
+* **`§1b` link 5, the leftward reading** — `H²` is primary and `ρ = (3H²−Λc²)/8πG` is *"bookkeeping for the content the set rate carries"*; *"radiation and matter are inherited content read off the clock — never terms in the stacking rate the observable distances ride"*. The objection *"a radiation fluid must gravitate and so alter the rate"* is named as a **category error**.
+* ⛭ **`P15` `sec:flatlcdm`, which is where it is actually argued from something:** *"What the rate is a rate of is the stacking of the foliation, and content does not enter it: **radiation is absent from the slicing operator's vacuum kernel, requiring `m'(r) ≠ 0`, a bend of the cut**; and the second term is the offset itself rather than a density supplied by hand."*
+
+⇒ **So the exclusion is not a postulate about bookkeeping. It is a statement about the kernel: the stacking rate comes from the slicing operator's *vacuum* kernel, and the one way radiation can enter it is as a bend of the cut (`m'(r) ≠ 0`).**
+
+⛔ **And that route is already measured, by `r7614`: the bend lengthens the distance to `14397.425` Mpc** — `+2.75 %` where the sky wants `−0.50 %`. ⇒ *So the construction's own mechanism for radiation in the rate goes the wrong way, by five and a half times the wanted amount. `H_leaf` applied to the accumulation is **not** a bent cut; it is the "density supplied by hand" that `sec:flatlcdm` rules out in the same breath. That is the real cost, and it is sharper than "`Λ` alone would break".*
+
+### ① ⒝ WHAT IT WOULD COST, CHECK BY CHECK
+
+| the order's check | the cost |
+|---|---|
+| **the window rate** | **nothing.** BBN and the nuclear window already take `L2`; the fatal error link 6 names is `L1` run *down into* the window (`~300×` too slow), which is the reverse direction and untouched by this |
+| **the expansion law** | `eq:native-rate`'s second term *"is the offset itself rather than a density supplied by hand"*. Adding `Ω_r(1+z)⁴` makes it a density supplied by hand — **the move the section names and rejects** |
+| **`Λ` alone setting the rate** | the *stacking* rate survives: link 4's exact recovery of flat-`ΛCDM`'s scale factor with pure-`Λ` scales is about the scale factor and is untouched. What breaks is the weaker claim that **the distances ride the `Λ`-fixed rate** |
+| **the BAO** | **measured: `0.021 %` at worst** (§①⒞). Essentially nothing |
+
+### ① ⒞ AND YES — THERE IS A READING WITHOUT CONTRADICTION, AND IT NEEDS NO SPLIT AT ALL
+
+The order asks whether the observable expansion can stay on the stacking rate while the light-path accumulation takes the leaf rate. **A split by object is unavailable** — both are *"a comoving separation read across leaves"* and `r7612`'s chart identity (`∂_χ r = ∂_τ r`) leaves no property separating them. **But no split is needed, because the epoch separates them by itself.** `R1`, on 60's own rate laws:
+
+| `z` | `D_M` stacking | `D_M` leaf | `Δ` |
+|---|---|---|---|
+| `0.295` | `1200.699` | `1200.619` | `−0.0066 %` |
+| `0.510` | `1962.335` | `1962.171` | `−0.0084 %` |
+| `0.930` | `3198.802` | `3198.424` | `−0.0118 %` |
+| `2.330` | `5751.650` | `5750.433` | `−0.0212 %` |
+| **`z* = 1089.9`** | **`14011.456`** | **`13941.629`** | **`−0.4984 %`** |
+
+⇒ ⛭ **Put *every* cross-leaf accumulation on the leaf rate and the BAO moves by at most two hundredths of a per cent while the distance to last scattering moves by half a per cent.** `R1`'s **row one** fires. *The rule need not be bent, qualified or split: `Ω_r(1+z)⁴` is simply negligible below `z ≈ 2.3` and not at `z ≈ 1090`, which is what "the two rates differ by the radiation term alone" means when you integrate it.* ⌗ *And `13941.629` reproduces `r7580`'s figure exactly, which is the check that the import is reading the same background.*
+
+### ② THE HALF-PER-CENT CANDIDATES — AND THE FINDING IS SHARPER THAN "NONE BY REQUIREMENT"
+
+`R2`, the sensitivity of `D_M(z*)`, and then **post-registration** (labelled in the file) the same levers at BAO redshifts:
+
+| lever | `d ln D_M(z*)` | at `z = 0.51` | at `z = 2.33` | status |
+|---|---|---|---|---|
+| **the leaf rate** | **`−0.498 %`** | **`−0.008 %`** | **`−0.021 %`** | the open question |
+| `H₀`, the rate amplitude | `−0.9990` | `−0.9990` | `−0.9990` | **not free**: fixed by the angle **and** the BAO together (link 8) |
+| `Ω_m`, the epoch (`∝ x₀⁻³`) | `−0.4023` | `−0.1051` | `−0.2719` | **measured**: `z_acc = x₀ − 1`, calibration-free |
+
+* **By requirement: none.** `H₀` needs `+0.498 %` and is pinned by the very angle under test together with the BAO; `Ω_m` needs `+1.24 %` (about `−0.41 %` in `x₀`) and `x₀` is a measured clock reading, not a free parameter. Both are adjustments.
+* ⛭ **And the sharper finding, which the registration did not ask for: no other lever is *local*.** `H₀` is a perfect global rescaling (`−0.999` at every redshift); `Ω_m` drags the BAO by a quarter to a half of what it moves `z*`. **The leaf rate moves last scattering twenty-four to sixty times more than it moves the BAO.**
+
+⇒ ⛔ **So the leaf rate is not merely one way to supply the half per cent — on these three levers it is the only one that supplies it where the sky wants it and nowhere else.** *That is a point in its favour that is quantitative rather than interpretive, and it is the thing I would most want checked, because it is the strongest statement in this reply.*
+
+### ③ `P15`'s TWO SETTLED-STATE SENTENCES, 60's sites ⑥ AND ⑦, DRAFTED
+
+*Located in 60's `r7752` cold read, which lists seven such sentences and says `P15`'s two are* "not this seat's to patch … so they are reported to it rather than drafted over".
+
+**⑥** now reads: *"… so the residual is the derived configuration confronted with the sky, and not a fault in how the transfer implements it."*
+
+⇒ **Draft:** *"… so the residual is not a fault in how the transfer implements the configuration — the instrument is controlled against a known answer and converged — and what remains in question is the rate the light-path distance is built on."*
+
+**⑦** now reads: *"… it leaves a localised, quantified disagreement … on a configuration whose every rate is derived"*
+
+⇒ **Draft:** *"… it leaves a localised, quantified disagreement on a configuration whose rates are derived but for one: the rate the cross-leaf accumulation to last scattering is built on, which is this sector's open work."*
+
+⌗ *Both keep what the sentences were for — that the disagreement is the construction's and not the instrument's — and move only the clause that calls the rate settled. Neither frames the confrontation as a shortfall.*
+
+### ④ WHAT THIS DOES NOT CLAIM
+
+* ⛔ **Not that the leaf rate is right.** §①⒝ is the cost and it is real: `H_leaf` in the accumulation is a rate supplied by hand, not a bent cut, and the kernel argument stands against it. What §①⒞ and §② establish is that the reading is **consistent with the BAO** and **uniquely targeted** — not that it is derived.
+* ⛔ **Not that `ONT-COSMO` is wrong.** Its argument is from the vacuum kernel and I have not found a hole in it. What I have found is that the route it leaves open goes the wrong way, which is a different thing and is `69`'s to weigh.
+* ⛔ Not a significance; every figure is a ratio of integrals with no null. **No row opened**, and nothing printed is re-pointed.
+
 ## ⛔⛔⛔ `r7749+cc66` — **THE FOUNDATIONS FORCE THE STACKING RATE, BUT NOT ON THE IDENTIFICATION: THAT STOPPED BEING LOAD-BEARING AT `r7607`. THE PREMISE THE DATA CONTRADICT IS RADIATION'S EXCLUSION FROM THE RATE — AND WHAT THE SKY ACTUALLY PICKS OUT IS HALF A PER CENT OF LENGTH**
 
 *A read. **Nothing computed, so nothing needed registering** — every figure below is quoted from a pushed result (`r7580`, `r7612`, `r7614`) and not one number here is mine. Stated so the absence of a `PREDICTION.md` reads as a decision rather than an omission. ⌗ The order's invitation to read its framing is taken up in §⑤, and it is the part I would most want checked.*
