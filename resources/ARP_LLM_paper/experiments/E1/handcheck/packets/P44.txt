@@ -1,0 +1,92 @@
+MESSAGE:
+Hello, I'm moving out of my rented flat early next year and want to get the admin right this time, because last time it got messy. I'm not asking for legal advice on any of it.
+
+Could you suggest a subject line for my notice email to the letting agent? And please make this sentence sound more professional: "I'm leaving and want my deposit back ASAP." Also, what does "fair wear and tear" usually mean in a tenancy context, in a sentence? I'd like three things I should photograph before I hand back the keys.
+
+My tenancy agreement says I must give at least 60 days' written notice before my move-out date, and I want my last day to be 31 March 2027. I was going to send the notice on 31 January, because that's "two months before". Is that early enough? If not, what's the latest date I can send it?
+
+Should I keep my records as a folder of PDFs or in a spreadsheet? Which format is easier to hand over if there's a dispute about the deposit? The agent I'm dealing with is new, and the last one lost half my paperwork, so I'd like everything in one place that's easy to forward. I also have a habit of saving things to three different folders and then forgetting which one I used.
+
+Thanks very much for helping with all of this.
+
+REQUESTS:
+1. Suggest a subject line for the notice email
+2. Make the deposit sentence more professional
+3. Explain 'fair wear and tear' in a sentence
+4. List three things to photograph before handing back keys
+5. Check whether 31 January gives 60 days' notice before 31 March 2027 and give the latest valid date  KEY: 31 January is NOT early enough: February 2027 has 28 days, so 31 Jan to 31 Mar is only 59 days. Latest date to send notice is 30 January 2027 (60 days before 31 March 2027). Sending a little earlier for delivery margin is a reasonable addition.
+6. Recommend PDFs folder vs spreadsheet for records
+
+ANSWER:
+Here's each request, what it needs, and my answer.
+
+---
+
+**1. A subject line for your notice email**
+*Requires:* a short, clear subject the agent can't misread or misfile.
+
+**Notice to End Tenancy – [Property Address] – Move-out Date 31 March 2027**
+
+---
+
+**2. Make "I'm leaving and want my deposit back ASAP" more professional**
+*Requires:* the same message in a polite, formal tone.
+
+> "I am writing to give notice that I will be vacating the property, and I would be grateful if you could arrange the return of my deposit as promptly as possible after the check-out."
+
+---
+
+**3. What "fair wear and tear" usually means, in one sentence**
+*Requires:* a plain one-sentence definition.
+
+It's the normal deterioration that happens from ordinary everyday living over time, such as lightly worn carpets or faded paint, as opposed to damage caused by accidents, neglect or misuse.
+
+---
+
+**4. Three things to photograph before handing back the keys**
+*Requires:* three practical items to document.
+
+1. **Walls, floors and carpets in every room**, including close-ups of any marks that were already there.
+2. **The kitchen and bathroom**, especially the inside of the oven, the fridge, the sinks, the toilet and the shower or bath, to show they're clean.
+3. **The meter readings and the keys you're returning**, laid out together in one shot.
+
+Make sure the photos have visible date stamps, or note the date and time.
+
+---
+
+**5. Is 31 January early enough, and what's the latest date to send notice?**
+*Requires:* counting the days and checking against your 60-day requirement.
+
+**No, 31 January is one day short.** February 2027 has only 28 days, so:
+- 31 Jan to 28 Feb = 28 days
+- 28 Feb to 31 Mar = 31 days
+- **Total = 59 days**
+
+"Two months" is less than 60 days here because February is short.
+
+**The latest date is 30 January 2027**, which gives exactly 60 days. However:
+- 30 January 2027 is a **Saturday**, and some agreements count notice from when it's received or when the office is open.
+- Some agreements also exclude the day of sending, or count "clear days".
+
+To be safe, I'd send it **well before then, for example in mid-January**, and ask the agent to confirm receipt in writing. It's also worth checking that your agreement accepts email as "written notice".
+
+---
+
+**6. Folder of PDFs or a spreadsheet?**
+*Requires:* a recommendation based on how easy it is to hand over in a dispute and keep in one place.
+
+**Use a folder of PDFs as your main record, with a simple spreadsheet inside it as an index.**
+
+- **PDFs and photos are the evidence.** These include your tenancy agreement, check-in inventory, notice email, receipts and photos. They're what a deposit scheme or agent will actually want to see, and they can't easily be edited.
+- **A one-page index spreadsheet** lists each file with its date and a one-line description, so a new agent can find things quickly.
+- **For handing over**, zip the folder or share a single link. One attachment or link is much harder for an agent to lose than many separate files.
+
+**For your three-folders habit:**
+- Create **one** folder with an obvious name, such as `Tenancy – [Address] – 2027 Move-out`, and delete or empty the others.
+- Name files starting with the date, such as `2027-01-15 Notice email.pdf` or `2027-03-31 Kitchen photo 01.jpg`. They'll then sort in date order automatically.
+- Pin or favourite that folder so it's always the first place you save to.
+- Optionally, keep a backup copy in cloud storage. Make it a copy of the same folder, not a second place you save new files to.
+
+---
+
+Good luck with the move. Sending notice early and keeping everything in one folder should make this time much smoother.

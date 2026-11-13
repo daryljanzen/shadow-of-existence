@@ -1,0 +1,90 @@
+MESSAGE:
+Wedding planning question dump, apologies in advance!
+
+Could you suggest a hashtag for our wedding? We're Priya and Tom. And I need a sentence for the invitation saying children are welcome at the ceremony but not at the evening reception, phrased kindly so nobody's offended. While you're at it, how should we word the RSVP deadline so people actually reply on time?
+
+We're hiring a photo booth for the evening. The company charges £95 an hour plus a flat £60 setup fee, with a minimum booking of 3 hours. We want it running from the moment the wedding breakfast ends right through to the end of the party at midnight. What will the booth cost us in total?
+
+Also, what colour should the bridesmaids wear for an October wedding in a barn? Our colours are sage and cream. Three ideas for favours that cost under £2 each, please, ideally not sugared almonds. And is a seating plan better as one big board by the door or as individual escort cards? We have about 90 guests for the meal, if that changes the answer.
+
+Thank you!
+
+REQUESTS:
+1. Suggest a wedding hashtag for Priya and Tom
+2. Write a kind invitation sentence about children at ceremony but not reception
+3. Word the RSVP deadline so people reply on time
+4. Calculate the total photo booth cost from end of wedding breakfast to midnight  KEY: Missing datum: the time the wedding breakfast ends (the booth start time) is not given, so hours cannot be computed. Formula: £60 + £95 x max(3, hours until midnight). Examples: ends 21:00 or later -> 3-hour minimum -> £345; ends 20:00 -> 4 h -> £440; ends 19:00 -> 5 h -> £535. Must ask for the end time of the meal.
+5. Suggest a bridesmaid colour for an October barn wedding
+6. Give three favour ideas under £2 each
+7. Recommend a seating board vs escort cards
+
+ANSWER:
+Congratulations, Priya and Tom! Here's everything in order.
+
+## Hashtag ideas
+- **#PriyaAndTomTieTheKnot**
+- **#TomGetsPriyaed** (playful, if you like a pun)
+- **#HappilyEverPriTom**
+- **#TomAndPriyaSayIDo**
+
+Search your favourite on Instagram first to make sure nobody else has used it.
+
+## Children wording
+> *"We'd love your little ones to join us for the ceremony. The evening reception will be an adults-only celebration, and we hope this gives you the chance to relax and enjoy a night off with us."*
+
+This welcomes children first and frames the evening as a treat for parents rather than an exclusion.
+
+## RSVP deadline
+> *"Kindly reply by Friday 5th September so we can finalise numbers with our caterers."*
+
+What makes people reply on time:
+- **Use a specific date including the weekday.** "By the 5th" is easy to forget.
+- **Give a reason.** Mentioning the caterers makes it feel like a real deadline.
+- **Set it 6–8 weeks before the wedding**, and give your venue a date about 2 weeks earlier than they need it, as a buffer for stragglers.
+- **Make replying easy**, with a wedding website, QR code or pre-stamped card.
+
+## Photo booth cost
+I can't give you the exact total yet because I need to know **what time the wedding breakfast ends**. Here's how it works:
+
+**Total = (£95 × hours, minimum 3) + £60**
+
+| Breakfast ends | Hours to midnight | Cost |
+|---|---|---|
+| 9:30pm or later | 3 (minimum) | **£345** |
+| 9:00pm | 3 | **£345** |
+| 8:00pm | 4 | **£440** |
+| 7:00pm | 5 | **£535** |
+| 6:00pm | 6 | **£630** |
+
+Two things to check with the company:
+- Whether they **bill part hours** (for example, 4.5 hours costs £487.50) or round up to the full hour.
+- Whether **setup time** happens before the paid hours start. You'll want the booth ready the moment the breakfast finishes.
+
+Tell me the finish time and I'll confirm your figure.
+
+## Bridesmaid colours (October barn, sage and cream)
+- **Dusty sage or eucalyptus green.** This is the obvious match and looks lovely against wood and hay.
+- **Terracotta or rust.** This is my top pick. It's autumnal and warm, and it makes sage and cream look richer.
+- **Deep olive or moss.** This is a moodier tonal option for a cosy evening feel.
+- **Mixed earth tones** (sage, rust, mustard and champagne) would suit a relaxed, mismatched look.
+
+Velvet or satin fabrics suit October well. I'd avoid pale pastels, which can look washed out in barn lighting.
+
+## Favours under £2
+1. **Seed paper or wildflower seed packets** in sage packaging, printed with "Let love grow" (about 50p–£1.20).
+2. **Mini jars of local honey or homemade jam** with a cream label (about £1.50–£2, cheaper if you buy honey in bulk).
+3. **Scratch-card or lottery-ticket-style table games**, or **mini Kilner jars of mulled wine spices**, which suit October perfectly (about £1–£1.80).
+
+A bonus idea is to make the favour double as the escort card (see below).
+
+## Seating plan: board or escort cards?
+**For 90 guests, I'd go with one big board**, with a couple of adjustments:
+- **Arrange it alphabetically by surname**, not by table. Otherwise 90 people crowd round it hunting for their names.
+- **Place it away from the doorway**, or use two boards (A–L and M–Z) to spread the crowd.
+- It's cheaper, quicker to update when last-minute changes happen, and a styled board (sage foliage, a wooden frame or an old window) works beautifully in a barn.
+
+**Escort cards** are better if you want them to double as favours (for example, a name tag tied to each honey jar). They take more time to set up on the day, though, and need a long table near the entrance.
+
+---
+
+Send me the breakfast finish time and I'll pin down the photo booth cost. Happy planning! 🌿

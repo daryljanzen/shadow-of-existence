@@ -1,0 +1,83 @@
+MESSAGE:
+Hello. I run a small catering business and I'm quoting for a 60-guest retirement lunch next month. There are a few things I'd like help with.
+
+The client would like a printed menu card; could you suggest a heading for it that feels celebratory but not twee?
+
+The client has her heart set on traditional roast beef with Yorkshire puddings. The venue is a village hall: the kitchen has two four-ring induction hobs, a large fridge and a hot cupboard, but no oven, and the hall's licence requires that all hot food be cooked on the premises, so nothing can be cooked elsewhere and brought in hot. The budget is £16 per head for the main. What main should I propose, and how should I explain my reasoning to her?
+
+I'd also appreciate a one-sentence allergen notice for the bottom of the menu card that doesn't read like a legal disclaimer. For the starters I'd like three canapé ideas that can be prepared cold in advance. Could you also recommend a napkin colour that will work with the hall's rather dated green curtains? Finally, a junior member of staff asked me what "mise en place" means, and a short definition I can pass on would be helpful. And one last small thing: could you suggest wording for the RSVP line asking guests to tell us about dietary requirements by a set date?
+
+Many thanks,
+Margaret
+
+REQUESTS:
+1. Suggest a celebratory heading for the menu card
+2. Recommend a main course given no oven, on-site-only hot cooking and £16/head, and explain the reasoning to the client  KEY: Must name the binding constraint: roast beef and Yorkshire puddings need an oven; the hall has none AND its licence forbids cooking off-site and bringing food in hot, so the roast is ruled out entirely (not just awkward). Must propose a hob-cookable main within £16/head (e.g. braised beef/bourguignon, stew, pan-cooked dish held in the hot cupboard) and frame the explanation to the client around the no-oven + on-premises rule.
+3. Write a one-sentence allergen notice for the menu card
+4. Suggest three canapés that can be prepared cold in advance
+5. Recommend a napkin colour to go with green curtains
+6. Define 'mise en place' briefly
+7. Suggest wording for an RSVP line about dietary requirements
+
+ANSWER:
+# Margaret's Retirement Lunch Requests
+
+## 1. Menu card heading
+**What it needs:** A heading that feels celebratory without being twee or punny.
+
+**Suggestions:**
+- *A Toast to [Name]*: Celebrating a Well-Earned Retirement
+- *[Name]: Thirty Years, One Long Lunch* (adjust the number)
+- *Here's to [Name]*: A Retirement Lunch
+- *With Thanks and Best Wishes, [Name]*
+
+My pick is **"A Toast to [Name]"**. It's warm and a little festive, but still grown-up.
+
+## 2. The main course
+**What it needs:** A dish that matches what the client wants, can be cooked on site using only two four-ring induction hobs and a hot cupboard, and costs no more than £16 per head. It also needs a clear explanation for the client.
+
+**The problem:** The beef can be adapted, but the Yorkshire puddings can't. They need a very hot oven so the batter rises in smoking fat. There is no reliable way to make them on a hob, and the licence rules out cooking them elsewhere.
+
+**What I'd propose:** **Slow-braised beef in a red wine or ale gravy, with horseradish mash and seasonal greens.** Topside, brisket or feather blade would all work.
+- It can be cooked entirely on the hobs in large lidded induction-compatible pans, then held in the hot cupboard.
+- Braised beef holds and portions far better than a roasted joint, which matters when serving 60 at once.
+- Food cost should sit comfortably within £16 per head, even allowing for good beef.
+- The horseradish keeps the "Sunday roast" feel.
+- **Check:** eight rings is tight for beef, mash, greens and gravy at the same time. Brown and braise the beef first and hold it hot. Then use the freed rings for the vegetables.
+
+**Optional route if she won't give up the Yorkshires:** Ask the hall whether you may bring in a hired portable convection oven. Cooking in it would still count as cooking on the premises. Confirm the electrical supply can take it and that the licence allows it. Build the hire cost into the quote.
+
+**How to explain it to her (suggested wording):**
+> "I'd love to give you a traditional roast, but the hall has no oven, and its licence means everything hot must be cooked on site. Yorkshire puddings simply can't be made without a very hot oven. Instead, I'd suggest slow-braised beef in a rich red wine gravy with horseradish mash. It has all the comfort and flavour of a Sunday roast, and it's actually better suited to serving sixty people at once, because the beef stays tender and hot. If Yorkshires are essential, I can look into hiring a portable oven, though that would add to the cost."
+
+## 3. Allergen notice
+**What it needs:** One friendly sentence that still does the job.
+
+> "If you have any food allergies or intolerances, just ask any of our team. We're happy to tell you exactly what's in every dish."
+
+(You still need written allergen information available on the day.)
+
+## 4. Three cold canapés
+**What it needs:** Canapés that can be made ahead, served cold, and don't clash with a beef main.
+1. **Smoked salmon blinis** with lemon crème fraîche and dill
+2. **Chicory leaves** with Stilton, pear and candied walnut
+3. **Cucumber cups** with herbed cream cheese and roasted red pepper (vegetarian)
+
+Since the licence covers hot food, cold canapés should be fine to prepare off-site. It's worth a quick confirmation with the hall.
+
+## 5. Napkin colour
+**What it needs:** A colour that works with dated green curtains rather than fighting them.
+
+**Ivory or warm cream.** It's calm and elegant, and it makes the green look intentional. If you'd like more colour, soft mustard or old gold also sits well with dated greens. Avoid other greens, which tend to clash.
+
+## 6. "Mise en place"
+**What it needs:** A short, plain definition for a junior colleague.
+
+> "Mise en place" is French for "everything in its place." It means having all your ingredients prepped, measured and laid out, and your equipment ready, before you start cooking or service.
+
+## 7. RSVP dietary line
+**What it needs:** Polite wording with a deadline.
+
+> "Please let us know of any dietary requirements or allergies by [date] so we can make sure there's something delicious for everyone."
+
+Good luck with the quote, Margaret!

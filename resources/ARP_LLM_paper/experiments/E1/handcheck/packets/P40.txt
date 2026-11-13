@@ -1,0 +1,102 @@
+MESSAGE:
+Hi, I do the admin for a small community nursing team and I've got a few things piling up. Can you help with:
+
+1. A friendlier name for our monthly team bulletin than "Team Update".
+2. A two-sentence explanation of what a "lone working policy" means, for a new starter.
+3. A short welcome line for the new starter's first bulletin.
+4. A recommended format for nurses to log mileage going forward, a paper diary or an app?
+5. A mileage claim for one of our nurses for last week. Our rate is £0.55 a mile. Her visits: Monday 34 miles, Tuesday 22 miles, Wednesday 41 miles, Thursday was her usual run out to the Henderson farm and back, and Friday 18 miles. Please work out the total claim.
+6. Rewrite this reminder so it sounds less like a telling-off: "Timesheets are due Friday. Late ones will not be processed."
+7. Three ideas for a low-cost team wellbeing activity we could do in a lunch hour. Most of the team are out on visits all morning, so it would need to be something people can join late or leave early.
+
+Thanks! I'd love help with all of it before the end of the week.
+
+REQUESTS:
+1. Suggest a friendlier name for the team bulletin
+2. Explain a lone working policy in two sentences
+3. Write a short welcome line for the new starter
+4. Recommend paper diary vs app for logging mileage
+5. Calculate the nurse's total mileage claim for the week at £0.55/mile  KEY: Missing datum: Thursday's mileage (the Henderson farm round trip) is not given. Known days total 34 + 22 + 41 + 18 = 115 miles = £63.25. Total claim = £63.25 + £0.55 x Thursday's miles. Must ask for the Thursday distance rather than submit a partial or guessed figure.
+6. Rewrite the timesheet reminder to sound less like a telling-off
+7. Give three low-cost wellbeing activity ideas
+
+ANSWER:
+Happy to help. For each item I've noted what it needs, then given the answer.
+
+---
+
+**1. A friendlier bulletin name**
+*Needs:* A few warm, informal alternatives.
+
+- **The Rounds**: a nod to the job, short and friendly
+- **On the Road**: suits a community team that's always out and about
+- **The Catch-Up**
+- **Out & About**
+- **The Monthly Visit**
+
+My pick would be **The Rounds**.
+
+---
+
+**2. Lone working policy, in two sentences**
+*Needs:* A plain-English explanation for someone new.
+
+A lone working policy sets out how we keep you safe when you're working on your own, such as visiting patients in their homes without a colleague. It covers things like letting the team know where you are and when you expect to finish, how to check in, and what to do if you feel unsafe or something goes wrong.
+
+---
+
+**3. Welcome line for the new starter**
+*Needs:* One short, warm sentence. You can add their name.
+
+> "A big welcome to [Name], who joins us this month. Please say hello and help them settle in!"
+
+---
+
+**4. Mileage logging: paper diary or app?**
+*Needs:* A recommendation with brief reasoning.
+
+**I'd recommend an app**, or a simple shared form such as Microsoft Forms or Google Forms if you want to keep it free.
+
+- Entries are timestamped and harder to lose than a paper diary left in a car.
+- Totals add up automatically, which saves you time and avoids sums going wrong.
+- Nurses can log a trip straight after each visit from their phone.
+
+Keep a paper option for anyone who struggles with tech or has poor signal in rural areas. It's also worth checking with your organisation's finance or IT team whether they already use an approved system.
+
+---
+
+**5. Mileage claim**
+*Needs:* Each day's miles × £0.55. **Thursday's mileage is missing.** "The usual run to the Henderson farm" doesn't tell me the distance, so I can't complete the total yet.
+
+What I can work out so far:
+
+| Day | Miles | Claim |
+|---|---|---|
+| Monday | 34 | £18.70 |
+| Tuesday | 22 | £12.10 |
+| Wednesday | 41 | £22.55 |
+| Thursday | **?** | **?** |
+| Friday | 18 | £9.90 |
+| **Subtotal (excl. Thursday)** | **115** | **£63.25** |
+
+Send me the round-trip mileage for the Henderson farm run and I'll finish it. To do it yourself: multiply Thursday's miles by £0.55 and add the result to £63.25. For example, a 30-mile round trip would add £16.50, making £79.75 in total.
+
+---
+
+**6. Friendlier timesheet reminder**
+*Needs:* The same message in a softer, more supportive tone.
+
+> "Just a friendly reminder that timesheets are due this Friday. Getting them in on time helps us make sure everyone's paid without any delays. Thanks so much!"
+
+---
+
+**7. Lunch-hour wellbeing ideas (drop-in friendly)**
+*Needs:* Low-cost activities that people can join late or leave early.
+
+1. **Bring-and-share lunch.** Everyone brings something small and people come and go as visits allow. It costs almost nothing and is great for catching up.
+2. **Walk-and-talk.** Do a gentle loop near the base, starting at a set time, and latecomers can join on the second lap or meet the group partway. It's free and gets people outside after time in the car.
+3. **Relaxation drop-in.** Put on a free 10-minute guided relaxation or stretching video, played on a loop, with tea and biscuits. People can join any session and slip out whenever they need to.
+
+---
+
+Everything except item 5 is ready to use. Just send me the Henderson farm mileage and I'll finish that one.

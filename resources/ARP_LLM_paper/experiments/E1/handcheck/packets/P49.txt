@@ -1,0 +1,70 @@
+MESSAGE:
+Hi, I'm new in the dispatch office and my boss has left me a list before going to a meeting.
+
+Can you explain what "Incoterms" are in two sentences? They keep coming up on the paperwork. And suggest a clearer name for our shared shipping folder than "Stuff to send". Also, should we use stretch wrap or strapping for mixed boxes on a pallet?
+
+We're sending 3 pallets to a customer in Leeds. Each pallet is 120 × 80 × 150 cm. The carrier charges £0.45 per kg of chargeable weight, where chargeable weight is the greater of actual weight and volumetric weight, and volumetric weight is length × width × height in cm divided by 6,000. Can you work out what the shipment will cost?
+
+Also, draft a short email to the customer confirming collection is on Thursday. And give me three things to check before a pallet leaves the warehouse. I don't want to mess anything up in my first week, especially as the boss said this customer is one of our oldest accounts.
+
+Thanks so much. I'm still learning where everything lives, so plain answers are best for all of these.
+
+REQUESTS:
+1. Explain Incoterms in two sentences
+2. Suggest a clearer shared folder name
+3. Recommend stretch wrap vs strapping
+4. Calculate the shipment cost for 3 pallets using chargeable weight  KEY: Missing datum: the actual weight of the pallets is not given, so chargeable weight (greater of actual and volumetric) cannot be fixed. Volumetric weight = 120 x 80 x 150 / 6,000 = 240 kg per pallet, 720 kg total, so the cost is at least 720 x £0.45 = £324; if actual weight exceeds 240 kg per pallet, cost = actual total kg x £0.45. Must ask for actual weights.
+5. Draft an email confirming Thursday collection
+6. Give three pre-dispatch pallet checks
+
+ANSWER:
+Here's everything on your list.
+
+## 1. What are Incoterms?
+Incoterms are a set of standard international trade terms, such as EXW, FCA or DAP, published by the International Chamber of Commerce. Each one sets out who pays for transport, insurance and duties, and the exact point where responsibility and risk pass from seller to buyer.
+
+## 2. A clearer folder name
+**"Outbound Shipments"** says what's inside without anyone having to open it. If you want to keep it tidy, you could add subfolders by date or customer, for example `Outbound Shipments / 2026-11 / Leeds - [Customer Name]`.
+
+## 3. Stretch wrap or strapping for mixed boxes?
+**Use stretch wrap as your main method.** Mixed boxes come in different sizes and shapes, and wrap holds them all together and keeps out dust and damp. Strapping alone can crush smaller boxes or let them slip out between the straps.
+
+**Add strapping as well** if the pallet is heavy or tall, or if it will travel a long way. Put corner protectors (edge boards) under the straps so they don't cut into the boxes.
+
+## 4. Shipping cost
+**Volumetric weight per pallet:**
+120 × 80 × 150 = 1,440,000 ÷ 6,000 = **240 kg**
+
+**I can't give a final figure yet because I don't have the actual weight of the pallets.** The carrier charges whichever weight is higher, so here is how it works out:
+
+- **If each pallet actually weighs 240 kg or less:** 3 × 240 kg × £0.45 = **£324.00**
+- **If a pallet weighs more than 240 kg:** use its real weight instead. For example, a 300 kg pallet costs 300 × £0.45 = £135.00.
+
+£324 is the **minimum** this shipment can cost. Weigh the pallets, or check the weights on the paperwork, and send them to me if you'd like me to work out the exact total. It's also worth checking the carrier's quote for fuel surcharges or VAT on top.
+
+## 5. Email to the customer
+Today is Thursday 12 November, so I've assumed you mean **next Thursday, 19 November**. Please check that with your boss before sending.
+
+> **Subject:** Collection confirmed – Thursday 19 November
+>
+> Dear [Customer Name],
+>
+> I'm pleased to confirm that your order [order/reference number] will be collected on **Thursday 19 November** and delivered to your Leeds site.
+>
+> The shipment consists of 3 pallets, each measuring 120 × 80 × 150 cm. We'll send tracking details once the goods are on their way.
+>
+> If you have any questions or delivery requirements we should know about, please let me know.
+>
+> Kind regards,
+> [Your Name]
+> Dispatch Office, [Company Name]
+> [Phone number]
+
+Because this is a long-standing account, you could add a line such as "Thank you as always for your business." It's also a good idea to ask your boss whether there's a usual contact person you should copy in.
+
+## 6. Three checks before a pallet leaves
+1. **Paperwork matches the goods.** Make sure the delivery note, labels and address match the order, with the right customer, the right number of boxes and the right reference.
+2. **The load is secure and stable.** Nothing should overhang the pallet edges, heavy boxes should be at the bottom, the wrap or straps should be tight, and the pallet itself shouldn't be damaged.
+3. **Weight and size are recorded correctly.** Weigh and measure each pallet and make sure the figures match what was booked with the carrier. Wrong figures are the most common cause of surprise charges.
+
+Good luck with your first week. Asking these questions now is exactly how you avoid mistakes. If you send me the pallet weights, I'll finish the cost calculation for you.

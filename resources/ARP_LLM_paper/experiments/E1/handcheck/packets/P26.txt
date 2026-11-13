@@ -1,0 +1,69 @@
+MESSAGE:
+Hi, I'm trying to plan my tomato growing for next year and I keep confusing myself, so I'd love some help. This year was a bit of a disaster, between the slugs, a soggy summer and a greenhouse door that blew off, so I'd like to be better organised all round.
+
+What's the difference between determinate and indeterminate tomatoes, briefly? And what are three good companion plants to grow alongside them?
+
+Our average last frost date is 15 April. The seed packet says to sow indoors 6 to 8 weeks before the last frost, and to transplant outside 1 to 2 weeks after it. The plants need 7 days of hardening off (putting them outside during the day) immediately before transplanting, and someone has to be home every day to do that. My seeds won't arrive until 25 February. We're away on holiday from 13 April to 20 April inclusive. Can you give me the window for sowing, the hardening-off dates, and the transplant date?
+
+Also, suggest a name for my seedling spreadsheet (the kids get to vote on it). What colour labels show up best against dark compost? And reword this message to my neighbour so it's less demanding: "You'll need to water my greenhouse while we're away." And finally, could you suggest a simple way to record germination dates so the kids can help? We tried a notebook last year and it got lost within a week. Ideally it would be something on the fridge they can tick off themselves, since my eldest is very motivated by stickers and charts at the moment.
+
+Thanks so much, I'm determined to get a proper harvest this time and not just a handful of sad green tomatoes in October.
+
+REQUESTS:
+1. Explain determinate vs indeterminate tomatoes
+2. Suggest three companion plants for tomatoes
+3. Give the sowing window, hardening-off dates and transplant date under frost, seed-arrival and holiday constraints  KEY: Next year = 2027 (not a leap year). Sowing: 6-8 weeks before 15 Apr is 18 Feb-4 Mar, but seeds arrive 25 Feb, so sow 25 Feb-4 Mar. Transplant window 22-29 Apr. Hardening (7 days, someone home) cannot overlap 13-20 Apr, so it must start 21 Apr or later: harden 21-27 Apr and transplant 28 Apr, or harden 22-28 Apr and transplant 29 Apr. Transplanting on 22 Apr would require hardening during the holiday and is wrong.
+4. Suggest a name for the seedling spreadsheet
+5. Suggest a label colour visible against dark compost
+6. Reword the watering request to the neighbour
+7. Suggest a simple kid-friendly way to record germination dates
+
+ANSWER:
+## 1. Determinate vs indeterminate
+- **Determinate (bush) tomatoes** grow to a fixed size, then stop. Most of the crop ripens over a few weeks. They need little or no pruning and suit pots, bags and short seasons.
+- **Indeterminate (cordon/vine) tomatoes** keep growing and fruiting until frost or cold stops them. They need tall support, tying in and side-shoots removed. They give a longer harvest over the season.
+
+## 2. Three companion plants
+1. **French marigolds:** said to deter whitefly and other pests, and they add colour.
+2. **Basil:** likes the same warm conditions and is a classic partner, in the greenhouse and in the kitchen.
+3. **Nasturtiums:** a sacrificial crop that draws aphids away from the tomatoes and attracts pollinators.
+
+## 3. Your dates for 2027
+**Sowing window: 25 February to 4 March**
+- The packet's window is 18 February to 4 March, but your seeds don't arrive until 25 February.
+- Sowing near the end of this window, around 1–4 March, is better. Your transplant date (below) is late in the allowed range, so later-sown seedlings won't get leggy waiting.
+
+**Transplant date: 28 April**
+- The packet allows transplanting from 22 to 29 April.
+- Hardening off needs 7 days immediately beforehand, with someone home. You're back on 21 April, so the earliest it can start is 21 April.
+- 21 April plus 7 days of hardening off means the earliest transplant is 28 April.
+
+**Hardening off: 21 April to 27 April**
+
+**Backup:** if the weather is bad on the 28th, transplant on 29 April and harden off from 22 to 28 April. That's the last date in the packet's window.
+
+## 4. Spreadsheet name ideas for the vote
+- *Tomato Tracker 3000*
+- *The Great Tomato Comeback*
+- *Seedling HQ*
+- *Operation Red Harvest*
+- *Revenge of the Tomatoes* (fitting after this year!)
+
+## 5. Label colour
+**White** shows up best against dark compost, with **bright yellow** a close second. Write on them in black permanent marker or pencil. Pencil often lasts longer than marker in damp conditions.
+
+## 6. Message to your neighbour
+"Hi! We're away from 13 to 20 April, and I wondered if you might be able to water the greenhouse while we're gone? Totally fine if not, just let me know. I'd be really grateful, and happy to return the favour (and share some tomatoes later in the summer!)."
+
+## 7. Fridge germination chart
+Put an **A4 or A3 grid** on the fridge with a magnet or clip. A laminated sheet works well if you have access to a laminator.
+
+| Variety | Date sown | Day 1 | Day 2 | Day 3 | ... | Day 14 | Sprouted on! |
+|---|---|---|---|---|---|---|---|
+
+- **Each morning,** the kids check the trays and put a sticker or tick in that day's box.
+- **When the first seedling appears,** they write the date in the last column and add a special "big" sticker. Gold stars work well here.
+- **To build excitement,** add a "First to sprout!" prize box for whichever variety wins the race.
+- **To stop it getting lost,** keep a pen tied to it with string. Snap a photo each week too, so you can copy the dates into the spreadsheet.
+
+Good luck with the comeback, and hopefully you'll have plenty of red tomatoes by August this time! 🍅

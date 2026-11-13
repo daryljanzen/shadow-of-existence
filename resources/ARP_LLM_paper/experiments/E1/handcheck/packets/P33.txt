@@ -1,0 +1,72 @@
+MESSAGE:
+We're redoing our kitchen worktops and I've got a few questions.
+
+What's the difference between an "upstand" and a "splashback"?
+
+My in-laws arrive in 10 days and are staying for a month, and we need a working kitchen by then. Our budget for worktops is £1,200 fitted. Options: quartz at £1,100 fitted, with a 3-week lead time from templating; laminate at £450 fitted, which can be done within a week; or solid oak at £780 fitted, in stock and fitted in 3 days, but it then needs 7 days of oiling before it can be used. I really love the quartz and my partner says we'll "make it work". Which should we go for?
+
+Could you also suggest a cabinet paint colour to go with warm oak flooring? And can you give me three tips for surviving without a kitchen for a few days? Suggest better wording for our message to the neighbours about the skip: "Skip arriving Monday, deal with it." And should we get the sink undermounted or inset? Last thing: my partner wants a list of three questions to ask the fitter before they start, so we don't get any nasty surprises on the bill.
+
+REQUESTS:
+1. Explain upstand vs splashback
+2. Choose between quartz, laminate and oak worktops given the 10-day deadline and budget  KEY: Binding constraint is the 10-day deadline: quartz's 3-week lead time means it cannot be ready (it is ruled out regardless of preference or budget). Oak needs 3 + 7 = 10 days, exactly at the limit with zero slack (only if fitted immediately). Laminate (within a week, £450) is the safe choice that meets deadline and budget. Must say quartz is ruled out by the deadline.
+3. Suggest a cabinet paint colour to go with warm oak
+4. Give three tips for living without a kitchen
+5. Reword the skip message to neighbours
+6. Recommend undermount vs inset sink
+7. List three questions to ask the fitter before work starts
+
+ANSWER:
+# Upstand vs. splashback
+
+- **Upstand**: a short strip, usually 10–15 cm high, running along the back of the worktop where it meets the wall. It's normally the same material as the worktop and stops water and crumbs getting down the back.
+- **Splashback**: a taller panel, usually behind the hob or sink, often reaching up to the wall cabinets or extractor. It protects the wall from splashes and grease and can be glass, tile, stainless steel or worktop material.
+
+You can have either, both, or an upstand along the run with a splashback just behind the hob.
+
+# Which worktop?
+
+**With 10 days to go, laminate is the only option that reliably gives you a working kitchen.**
+
+- **Quartz doesn't fit the deadline.** Three weeks from templating means about day 21 at the earliest, and templating can only happen once the base cabinets are fitted. That's roughly halfway through your in-laws' month. "Making it work" would mean hosting four people for over a week with no worktops, sink or hob.
+- **Oak takes exactly 10 days**, assuming fitting starts tomorrow and nothing slips. One delayed day and the tops are still curing when your guests arrive. It's the risky middle option.
+- **Laminate** is fitted within a week, leaves you a few days of slack, and saves £750.
+
+**Alternative if you really love the quartz:** if your old worktops are still in place and usable, postpone the whole job until after the visit and get the quartz then. You keep a working kitchen now and get the worktop you actually want. That beats both rushing it and settling for something you'll regret.
+
+# Cabinet paint colour with warm oak flooring
+
+My pick is a **muted sage green** (e.g. Farrow & Ball *Lichen* or Little Greene *Sage Green*). Green and warm oak sit together naturally, and sage looks good in daylight and lamplight.
+
+Alternatives:
+- **Deep navy or inky blue** (e.g. F&B *Hague Blue*): a bold contrast that makes the oak glow.
+- **Warm off-white** (e.g. F&B *Pointing*): light and safe. Avoid stark or cool whites, which can make oak look orange.
+
+Always test a sample pot on a board placed next to the floor.
+
+# Surviving without a kitchen
+
+1. **Set up a temporary kitchen elsewhere.** A table in another room with the kettle, microwave, toaster, an induction plate or air fryer, and a washing-up bowl.
+2. **Plan easy meals in advance.** Batch-cook and freeze before the work starts, and lean on salads, wraps and microwave meals. Budget for a couple of takeaways too.
+3. **Go disposable for a few days.** Paper plates and cutlery mean you're not washing up in the bathroom sink.
+
+# Neighbour message
+
+> Hi! Just a heads-up that we're having our kitchen redone, so a skip will be arriving on Monday [and will be parked outside no. X]. It should be gone by [date]. Sorry for any inconvenience. If it causes any problems, please just knock or message us on [number]. Thanks for your patience!
+
+# Undermount or inset sink?
+
+This depends on your worktop:
+- **Quartz**: undermount. It looks sleek and you can wipe crumbs straight into the sink. This is the main appeal of stone.
+- **Laminate**: inset. Laminate's chipboard core swells if water gets into the cut edge, so most fitters won't undermount it, and those who do charge more.
+- **Oak**: inset is safer. Undermounting is possible, but the exposed cut edge needs constant re-oiling and can still blacken around the sink.
+
+Undermount looks better, but inset is cheaper, easier to replace, and right for laminate.
+
+# Three questions for the fitter
+
+1. **"What exactly does the quote include?"** Check removal and disposal of the old worktops, sink and hob cut-outs, upstands, edging and end panels, and disconnecting and reconnecting the sink, tap and hob.
+2. **"What could make the price go up, and how much would it cost?"** Ask about uneven walls, out-of-level cabinets, rotten boards, or plumbing and electrics that need moving. Agree that any extras must be approved by you before the work is done.
+3. **"What are the payment terms, and what happens if it overruns or something gets damaged?"** Find out the deposit, when the balance is due, and whether they're insured.
+
+Get the answers in writing, even just by text or email.

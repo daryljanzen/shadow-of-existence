@@ -1,0 +1,85 @@
+MESSAGE:
+Hey, I manage a small outdoor-gear shop and it's month-end, so here goes.
+
+Can you suggest a name for our winter clearance event? Something punchy. And help me with the window sign wording, because at the moment it just says "SALE", which is a bit sad. Also, what's the difference between a "markdown" and a "discount" in retail speak? Should I display the clearance prices with the old price crossed out, or just the new price?
+
+For our best-selling insulated water bottle: we started October with 240 units in stock, received two deliveries of 60 units each during the month, and the till says we sold 275. The stock count I did this morning shows 95 between the shop floor and the back room. Can you confirm the numbers reconcile so I can sign off the stock report with no variance?
+
+And list three cheap ways to get more foot traffic on weekday afternoons, when the place is dead and the two of us on shift end up rearranging the sock display. We're right next to a primary school and a GP surgery, if that sparks any ideas.
+
+Thanks! My area manager is in on Friday, so I'm trying to get all of this sorted before then.
+
+REQUESTS:
+1. Suggest a name for the winter clearance event
+2. Improve the window sign wording
+3. Explain markdown vs discount
+4. Recommend showing crossed-out old price vs new price only
+5. Confirm the water-bottle stock numbers reconcile with no variance  KEY: They do NOT reconcile: expected closing stock = 240 + 2 x 60 - 275 = 85, but 95 were counted, a +10 unit variance (overage). Cannot sign off with no variance; should investigate (unrecorded returns, a sale not rung through, delivery miscount, counting error).
+6. List three cheap ways to boost weekday afternoon foot traffic
+
+ANSWER:
+Here's everything, with the stock question first because it needs your attention before Friday.
+
+## 1. Water bottle reconciliation: it doesn't balance
+
+| | Units |
+|---|---|
+| Opening stock (1 Oct) | 240 |
+| + Deliveries (2 × 60) | +120 |
+| **Available** | **360** |
+| − Sold per till | −275 |
+| **Expected on hand** | **85** |
+| **Actual count** | **95** |
+| **Variance** | **+10 (overage)** |
+
+You have **10 more units than the records say you should**, so I wouldn't sign it off as "no variance." Overages are usually paperwork rather than loss. Things worth checking:
+
+- **Deliveries:** Did one delivery contain more than 60? Check the delivery notes against what was booked in.
+- **Customer returns:** Were any bottles refunded and put back on the shelf without being booked back into stock?
+- **Till errors:** Were other items scanned as this bottle, or was a sale scanned twice? Look at the till log for multi-quantity lines or voids.
+- **Counting:** Recount, and check for bottles in other locations or a similar variant (different colour or size) mixed in.
+- **Timing:** Your count was this morning, but the figures cover October. Any sales or deliveries between 31 Oct and today need adjusting. Extra sales since then would make the gap *bigger*, not smaller.
+
+If you can't find the cause, report it as a +10 variance with a short note on what you checked. Area managers generally prefer that to a clean sheet that later turns out to be wrong.
+
+## 2. Event name ideas
+
+- **The Big Thaw**
+- **Cold Feet Clearance**
+- **Everything Must Go Outdoors**
+- **Winter's Last Stand**
+- **Pack It Up Sale**
+
+My pick is **The Big Thaw**. It's short, seasonal, and suggests prices are melting.
+
+## 3. Window sign wording
+
+> **THE BIG THAW**
+> Winter gear. Melting prices.
+> **Up to 50% off** jackets, boots & more
+> *When it's gone, it's gone*
+
+Adjust the percentage to whatever is true for your *best* deal. "Up to" only works if a reasonable number of items actually hit that figure. One clear number and one line of urgency beat a cluttered sign.
+
+## 4. Markdown vs discount
+
+- **Markdown:** a permanent reduction to the item's selling price, usually to clear slow or seasonal stock. The price on the ticket changes for everyone. Clearance is markdowns.
+- **Discount:** a reduction applied at the point of sale, often conditional and temporary. Examples are 10% off for staff, a voucher code, "20% off this weekend," or "buy two, save £5." The ticketed price stays the same.
+
+Markdowns hit your margin permanently and are tracked as such. Discounts are usually reported separately so you can see what promotions cost you.
+
+## 5. Old price crossed out or just the new price?
+
+**Show the old price crossed out.** "~~£80~~ £45" sells much better than "£45" alone because shoppers can see the saving.
+
+The catch: the "was" price must be genuine. Under UK consumer protection rules, it should be the price you actually charged for a reasonable period beforehand, not an inflated one. If an item was only briefly at full price, or you're unsure, use wording like "Clearance price £45" instead.
+
+## 6. Three cheap ways to get weekday afternoon foot traffic
+
+1. **School pickup (about 3:00–3:30pm).** Parents walk past every day. Put a clear offer outside, like "Parents' hour: 15% off 2:45–3:45" or a kids' welly/hat bin by the door. Ask the school if you can sponsor something small, such as a raffle prize or a voucher in the PTA newsletter, to get your name in front of every family.
+2. **The GP surgery.** Doctors push walking and outdoor exercise, and waiting patients have time to kill. Ask if you can leave flyers or a small poster, for example a "Walking for health starter kit" offer or a free local walks map with your shop's name on it. Many surgeries run social prescribing schemes that refer people to walking groups, so it's worth asking who coordinates that.
+3. **A regular in-store event.** Since the two of you are free in that slot, run something like a free "how to layer for winter" or boot-fitting session every Wednesday at 2pm. It costs only your time, gives people a reason to visit, and gives you something to post on social media and in local Facebook groups. Retired walkers are a good audience for weekday afternoons.
+
+The sock display will survive.
+
+Good luck on Friday. Sort the bottle variance first, since that's the one your area manager is most likely to dig into.

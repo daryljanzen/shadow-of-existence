@@ -1,0 +1,54 @@
+MESSAGE:
+Hi, a few things for our spring appeal at the animal shelter. We're a tiny team (three paid staff and a lot of wonderful volunteers) and I'm the only one who does the fundraising side, on top of running the volunteer rota, so any help is gold. The appeal launches in three weeks and the board meets on Monday to sign off the plan:
+
+1. Suggest a campaign name for the appeal. We're raising money for a new isolation kennel block for sick and newly arrived dogs.
+2. Tighten this opening line for the donor email: "We are writing to you today because we really need your help more than ever before with something important."
+3. A local business has offered to match 50% of every pound we raise from the public, up to a maximum match of £10,000. So far the public have given £26,000. Our target is £45,000 in total, including the match. How much more do we need to raise from the public to hit the target? My chair of trustees reckons it's about £4,000.
+4. Recommend a format for thanking our biggest donors: handwritten card, short video, or email?
+5. Give me three ideas for a low-cost community event that could bring in donations.
+6. Explain the difference between restricted and unrestricted funds in a sentence or two. Two of our newer trustees have asked, and I always get tangled up explaining it.
+
+Thanks so much! I'll be taking all of this to the board on Monday.
+
+REQUESTS:
+1. Suggest a campaign name for the kennel appeal
+2. Tighten the donor email opening line
+3. Calculate how much more must be raised from the public given a 50% match capped at £10,000  KEY: Match so far = min(50% x £26,000 = £13,000, cap £10,000) = £10,000, already at the cap. Current total = £36,000. Need £9,000 more from the public, with no further match. The chair's £4,000 wrongly assumes an uncapped match (45,000/1.5 = 30,000).
+4. Recommend a format for thanking major donors
+5. Give three low-cost community event ideas
+6. Explain restricted vs unrestricted funds
+
+ANSWER:
+**1. Campaign name**
+- **Safe Paws** (my pick: short, clear and easy to use as a hashtag)
+- **A Safe Place to Start**
+- **Room to Recover**
+
+**2. Opening line**
+Your version: "We are writing to you today because we really need your help more than ever before with something important."
+
+Tighter options:
+- "We need your help, and the need has never been greater."
+- "Sick and newly arrived dogs need a safe place to recover, and we need your help to build it."
+
+I'd use the second. It says what the appeal is for in the first line instead of saying "something important."
+
+**3. How much more is needed**
+You need **£9,000** more from the public, not £4,000.
+
+- The match is 50% of public giving, capped at £10,000. The cap is reached once the public have given £20,000, so at £26,000 the match is already maxed out at £10,000.
+- To reach £45,000 in total, the public must give £45,000 − £10,000 = £35,000.
+- £35,000 − £26,000 = **£9,000**.
+
+Your chair's £4,000 comes from ignoring the cap: £45,000 ÷ 1.5 = £30,000, minus £26,000 = £4,000. That would only work if the match were uncapped. Worth flagging before Monday, since the match won't grow with any further gifts.
+
+**4. Thank-you format**
+Go with a **handwritten card**. For your biggest donors it's the most personal and memorable, and it takes only a few minutes each. With a small team, you could ask volunteers to help write them, with a line from the person who cares for the dogs. A short video can be a nice extra for the wider donor base, but it shouldn't replace the card for major donors.
+
+**5. Low-cost event ideas**
+- **Sponsored dog walk:** Supporters collect pledges and walk a local route, with a small group or team entry fee.
+- **Bake sale and quiz night:** A community hall, donated cakes and a pay-to-enter quiz. Volunteers can run all of it.
+- **"Name a kennel" or coffee morning at the shelter:** Open the doors for tea, tours and a donation tin, and let people sponsor a kennel space or a plaque in the new block.
+
+**6. Restricted vs unrestricted funds**
+Restricted funds must be spent on the specific purpose the donor or fundraising appeal named, while unrestricted funds can be used for any of the charity's work at the trustees' discretion. Money raised through this appeal for the kennel block will usually count as restricted, so it can't be spent on, say, general running costs.

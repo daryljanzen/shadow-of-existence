@@ -1,0 +1,46 @@
+MESSAGE:
+Hi! We're going abroad for a family wedding for 10 nights and need to sort out our dog, plus a few other bits.
+
+Can you suggest a fun name for the dog's overnight bag? My daughter insists it needs one. And write a short note to leave for whoever looks after him, saying he's friendly but pulls on the lead. Also, what are three things to pack for him? Recommend whether to leave the care instructions as a printed sheet or a shared note on the phone.
+
+Biscuit is diabetic and needs an insulin injection every 12 hours, at 8am and 8pm, with food. So what's our best option here? Our budget for his care is £500 in total. Options: (1) Happy Paws kennels, £35 a night, lovely staff, but they can only give oral medication, no injections. (2) My friend Jo, free, but she can only come round in the evenings because of work. (3) Boarding at our vet's clinic, £65 a night, where the nurses give injections on schedule. We were going to go with Happy Paws because it fits the budget nicely.
+
+And what's a good colour for a collar tag so it's visible at night? He's black and tends to vanish into the dark on winter walks, so we keep losing sight of him.
+
+REQUESTS:
+1. Suggest a fun name for the dog's bag
+2. Write a short care note saying he's friendly but pulls on the lead
+3. List three things to pack for the dog
+4. Recommend printed sheet vs phone note for instructions
+5. Choose a care option given twice-daily insulin injections and a £500 budget  KEY: Binding constraint is the medical need for 12-hourly insulin injections: Happy Paws cannot inject (ruled out despite fitting budget); Jo can only cover the 8pm dose, missing the 8am one (ruled out alone). Only the vet clinic meets the need, at 10 x £65 = £650, i.e. £150 over the £500 budget. Correct answer: the budget has to give (or find a combined arrangement that covers both doses); must not recommend Happy Paws.
+6. Suggest a collar tag colour visible at night
+
+ANSWER:
+## Biscuit's care plan
+
+**Don't go with Happy Paws.** Biscuit needs insulin at 8am and 8pm with food, and they can only give oral medication. Missing or delaying doses over 10 nights is a real health risk.
+
+**Jo alone doesn't work either.** She can only do evenings, so the 8am dose would be uncovered.
+
+**Your vet's boarding is the only option that covers the medical need**, but it's £65 × 10 = **£650, which is £150 over budget**. Options to close the gap:
+- Ask the vet if they offer a multi-night discount or a lower rate for long stays.
+- Ask whether Jo could do the 8pm dose and someone else (a neighbour, a vet nurse home visit, or a pet sitter trained in injections) covers 8am. Get the vet to show them the injection first.
+- Ask Jo if Biscuit could stay at her place, if her work hours allow both doses.
+
+If none of those work, I'd still go over budget on the vet over compromising his insulin schedule.
+
+## The other bits
+
+**Bag name:** "Sir Barks-a-Lot's Overnighter" or "The Biscuit Tin" (my pick, since it holds Biscuit).
+
+**Note for his carer:**
+> Hi! This is Biscuit. He's a friendly, sociable boy who loves people, but he pulls on the lead, so please keep a firm grip, especially when he spots something interesting. He's diabetic and needs insulin with food at 8am and 8pm, so please see the care sheet for details. Thank you so much for looking after him!
+
+**Three things to pack:**
+1. Insulin and syringes in a cool bag, plus a spare supply in case of delays
+2. His usual food, pre-portioned for each meal, so the insulin timing and diet stay consistent
+3. A front-clip harness (helps with the pulling) and a familiar blanket
+
+**Printed sheet or phone note?** Print it, and keep a shared phone copy as backup. A printed sheet can sit with the insulin and be read at a glance. It should list doses, times, feeding amounts, signs of low blood sugar, and your vet's number. Include a contact number with the international dialling code, since you'll be abroad.
+
+**Collar tag colour:** Go for **fluorescent yellow or lime green**, ideally reflective. Both stand out against a black coat in the dark. A small clip-on LED light on the collar would help even more on winter walks.

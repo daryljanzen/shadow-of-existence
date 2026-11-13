@@ -1,0 +1,63 @@
+MESSAGE:
+Hi, I'm the only person in our small marketing team who touches the database, and I'm prepping a customer list export to send to the mailing house for our winter catalogue. The mailing house charges per record. A few asks:
+
+1. Suggest a file naming convention for exports so we stop getting files called "final_final_v2.csv", ideally something that sorts by date.
+2. Explain the difference between deduplicating on email address versus on name plus postcode, in two sentences.
+3. Recommend whether to send the file as CSV or XLSX.
+4. The raw export had 1,240 rows. I removed 85 duplicate rows and 40 internal test accounts, and the cleaned file has 1,135 rows. Can you confirm the row count checks out before I send it?
+5. Write a one-line note to the mailing house explaining that the file is UTF-8 encoded and some names contain accents.
+6. Give me three quick checks I can run on the postcode column in a spreadsheet. Last time a few postcodes lost their spaces and the mailing house rejected them.
+
+Thanks! I'm aiming to get this off before lunch, so short answers are fine where they make sense.
+
+REQUESTS:
+1. Suggest a file naming convention
+2. Explain dedupe on email vs name+postcode
+3. Recommend CSV vs XLSX
+4. Confirm the cleaned row count of 1,135 checks out  KEY: It does NOT check out: 1,240 - 85 - 40 = 1,115, but the file has 1,135 rows, i.e. 20 rows unaccounted for (some duplicates/test rows not actually removed, or other rows added). Must flag the 20-row discrepancy and advise investigating before sending (it affects per-record cost).
+5. Write a one-line UTF-8 note to the mailing house
+6. Give three checks for the postcode column
+
+ANSWER:
+**1. File naming convention**
+*Requires: a naming pattern that sorts by date.*
+
+Use `YYYY-MM-DD_project_description_vNN.csv`, for example `2026-11-12_winter-catalogue_mailing-list_v01.csv`.
+- Putting the ISO date first makes files sort chronologically.
+- Bump the `vNN` number instead of adding "final".
+- Use lowercase with hyphens and no spaces.
+- Keep the version that was actually sent in a `sent/` folder.
+
+**2. Email vs. name + postcode deduplication**
+*Requires: a two-sentence explanation.*
+
+Deduplicating on email finds the same mailbox listed more than once, but it misses the same person or household registered under different emails, and it can wrongly merge people who share an address. Deduplicating on name + postcode finds duplicates by physical delivery point, which matters most when you pay per printed record, but it can miss spelling variants ("Jon" vs "Jonathan") and can wrongly merge different people with the same name at one address.
+
+**3. CSV or XLSX**
+*Requires: a recommendation.*
+
+Send CSV, saved as UTF-8. It's the most widely accepted format for mailing houses, and it doesn't carry hidden formatting. Excel can also silently alter postcodes and leading zeros in XLSX files. Check whether the mailing house has a preference.
+
+**4. Row count check**
+*Requires: arithmetic verification.*
+
+It doesn't check out. 1,240 − 85 − 40 = **1,115**, not 1,135, so your file has 20 more rows than expected. Likely causes:
+- **Overlap:** some test accounts were also among the duplicates, so they were counted twice. Exactly 20 overlapping rows would explain the gap.
+- **A miscount:** one of the removal figures may be off.
+- **Duplicates not fully removed:** 20 rows may have slipped through.
+
+To confirm, compare the raw and cleaned files on a unique ID. Count how many removed rows were both a test account and a duplicate, and re-run your duplicate check on the cleaned file. Since you're charged per record, it's worth resolving before sending.
+
+**5. Note to the mailing house**
+*Requires: one line.*
+
+> "This file is UTF-8 encoded and some names contain accented characters, so please import it as UTF-8 to avoid garbled text."
+
+**6. Three postcode checks**
+*Requires: spreadsheet checks for lost spaces. I'm assuming UK-style postcodes, with the postcode in column A starting at A2.*
+
+1. **Missing space:** in a helper column, use `=ISERROR(FIND(" ",A2))`, then filter for TRUE. Any result is a postcode that lost its space.
+2. **Length out of range:** use `=OR(LEN(A2)<6,LEN(A2)>8)`. Valid UK postcodes with a space are 6–8 characters, so this catches truncated, merged, or junk entries.
+3. **Stray whitespace:** use `=A2<>TRIM(A2)` to catch leading, trailing, or double spaces.
+
+To stop it recurring, import the CSV with the postcode column set to **Text** rather than double-clicking to open it.

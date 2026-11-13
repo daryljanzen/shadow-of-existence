@@ -1,0 +1,73 @@
+MESSAGE:
+I'm coaching my daughter's under-11 football team this season (volunteer, no idea what I'm doing). A few things.
+
+Could you help with a team name? The kids voted for something with "Foxes" in it, which may already be taken in our league.
+
+On match days it's 7-a-side, 60 minutes, and we have 14 kids in the squad, all of whom turn up every week. The league rule is that every player who turns up must play at least 30 minutes. Sam is by far our best goalkeeper, and some parents keep telling me to keep Sam in goal for the whole match because we've been losing heavily. Can I do that and still follow the rule? What would you do with Sam and the goal?
+
+I also need a two-sentence welcome message for the parents' group chat. And give me three warm-up drills that need nothing more than cones and balls. What's a good colour for an away kit that won't clash with most teams? And can you explain the offside rule in a way a ten-year-old would get? Last one, I promise: what's a good half-time snack that isn't just orange slices? Several parents have asked and I'd like to put something in the welcome message.
+
+REQUESTS:
+1. Suggest a team name
+2. Decide whether Sam can keep goal all match under the 30-minute rule, and what to do  KEY: No. Binding constraint: 7 players x 60 min = 420 player-minutes, and 14 players x 30-minute minimum = 420, so the minimums use the entire budget: every player, including Sam, plays exactly 30 minutes. Sam cannot be in goal all match; another player must keep goal for the other half (e.g. Sam in goal one half). Must name the 420 = 420 arithmetic or equivalent.
+3. Write a two-sentence welcome message for parents
+4. Give three warm-up drills using only cones and balls
+5. Suggest an away kit colour
+6. Explain offside for a ten-year-old
+7. Suggest a half-time snack other than orange slices
+
+ANSWER:
+## Team name
+Some Foxes options to put to the kids (check them against your league's registered names):
+- **Fox Cubs FC**
+- **Swift Foxes**
+- **Flying Foxes**
+- **Fantastic Foxes**
+- **Foxtrot United**
+- **Arctic Foxes** (a good fallback if "Red Foxes" is taken)
+
+## Sam and the goal
+**No, you can't keep Sam in goal for the whole match.** The maths leaves no slack:
+
+- 7 players on the pitch × 60 minutes = **420 player-minutes**
+- 14 kids × 30 minutes minimum = **420 player-minutes**
+
+So every child must play *exactly* 30 minutes. Sam can play at most 30 minutes, and so can everyone else. (If one child is absent, there are 13 kids and Sam could technically play all 60, because 60 + 12×30 = 420. But that's only when someone's missing.)
+
+**What I'd do:**
+- Sam plays in goal for one full half (30 minutes) and sits out the other.
+- Pick one or two other kids to share the second half in goal. If two of them split it, they each do 15 minutes in goal and 15 outfield. That gives you a second and third keeper, which you'll want when Sam is away or injured.
+- Pick Sam's half based on what you need. The first half sets the tone, but if the team keeps falling behind early, the second half may be where Sam helps most.
+- Tell the parents the rule is fixed by the league and the numbers, so it isn't your choice. Heavy losses at this age are mostly about learning, and a rotating keeper will do the team more good than harm.
+
+Also check with the league whether the 30 minutes is running time or includes stoppages.
+
+## Welcome message (two sentences)
+> "Welcome to the Foxes, everyone! We're so excited for the season, and for half-time we'll have water plus snacks like banana pieces, grapes, cheese cubes or oat bars (please let me know about any allergies)."
+
+## Three warm-up drills (cones and balls only)
+1. **Dribble through the gates:** Set up lots of two-cone "gates" in a square. Everyone dribbles around and through as many gates as they can in 60 seconds, then tries to beat their score.
+2. **Traffic lights:** Everyone dribbles in a grid. Green means go, yellow means slow dribbling, red means stop with a foot on the ball. Add "roundabout" (circle the ball) or "U-turn" for fun.
+3. **Pass through the gate:** In pairs, put a two-cone gate between them about 5 metres apart. They pass through it to each other with the inside of the foot, then step back a few metres each time they succeed.
+
+## Away kit colour
+Your home colour will probably be orange or red, so for away I'd go with **purple** or **teal**. Few teams wear them, so you'll rarely clash, and both stand out against orange. Navy is a safe second choice, though plenty of teams already wear blue. Keep a set of contrasting bibs in the bag as a backup.
+
+## Offside for a ten-year-old
+First, check your league rules. Many youth 7-a-side formats **don't use offside at all**.
+
+If it applies, here's the version for the kids:
+
+> "Don't be a goal-hanger! When your teammate passes the ball to you, you can't be closer to the other team's goal than *both* the ball *and* the second-last defender. The goalkeeper usually counts as one defender, so it's the goalkeeper and one more. Imagine a line across the pitch where that second-last defender stands. If you're past that line at the moment the pass is kicked, you're offside. It only matters at that moment, so you can run past the line as long as you start from behind it. And you can never be offside from a throw-in, a goal kick, or a corner."
+
+A quick way to practise is a walk-through with cones marking the "defender line" and a few kids acting as defenders.
+
+## Half-time snacks (beyond oranges)
+- Banana halves or grapes (cut in half for younger kids)
+- Watermelon or apple slices
+- Cheese cubes or small cheese sandwiches
+- Oat bars or homemade energy balls (check nut policies)
+- Dried mango or raisins in small cups
+- Rice cakes with a thin spread
+
+Always bring water, and ask parents for allergy information up front.

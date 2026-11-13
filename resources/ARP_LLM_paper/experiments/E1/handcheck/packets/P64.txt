@@ -1,0 +1,57 @@
+MESSAGE:
+Hi. I'm on the timetabling working group and we're proposing a new day structure from September, which I'm presenting to governors on Thursday. Can you help with a few bits?
+
+First, suggest a short name for the proposal document, because "New Day Structure v4" isn't inspiring anyone. And can you summarise in two sentences why schools sometimes move to fewer, longer lessons? What would you suggest as the format for presenting it to governors: slides, a one-page handout, or both? And give me three likely objections from staff so I can prepare.
+
+The proposed day runs from 08:45 to 15:15. It has six 55-minute lessons, a 20-minute morning break and a 40-minute lunch. Between lessons we've allowed five minutes of changeover so pupils can move rooms. Can you confirm this all fits inside 08:45 to 15:15?
+
+Could you define "contact time" in a sentence for the governors who aren't teachers? Last of all, could you suggest a one-line slogan for the proposal that the student council might actually like? They get a vote on the consultation too, and they've already rejected two of our earlier attempts as "cringe", so the bar is high.
+
+Thanks very much. Any help with any of these is welcome, as the working group meets again on Tuesday and we'd like a full draft by then.
+
+REQUESTS:
+1. Suggest a short name for the proposal document
+2. Summarise why schools move to longer lessons
+3. Recommend a presentation format for governors
+4. Give three likely staff objections
+5. Confirm six 55-min lessons, break, lunch and 5-min changeovers fit within 08:45-15:15  KEY: It does NOT fit: 08:45-15:15 is 390 minutes; 6 x 55 + 20 + 40 = 390 minutes already, leaving zero room. Changeovers add 25 min (5 gaps x 5) or at least 15 min if those next to break/lunch are dropped, so the day overruns to about 15:30-15:40. Must flag the overrun and suggest a fix (e.g. 50-min lessons or shorter lunch).
+6. Define 'contact time' in a sentence
+7. Suggest a one-line slogan for the proposal
+
+ANSWER:
+**1. Name for the document**
+My pick is **"The Longer Lesson Plan"**. Other options: "Day Redesign 2027" or "Room to Learn". Any of them beats "v4".
+
+**2. Why schools move to fewer, longer lessons**
+Fewer, longer lessons cut the time lost to moving between rooms, settling and packing away, which leaves more room for sustained work, discussion and practical activity. They also reduce how many different classes, teachers and subjects pupils juggle in a day, which can make the day calmer and the workload more manageable.
+
+**3. Format**
+Use both. Slides carry the argument on Thursday, and a one-page handout gives governors the timetable and key numbers to keep and refer back to. Put the day's timings and the consultation timeline on the handout.
+
+**4. Likely staff objections**
+- **Concentration:** "Pupils, especially younger ones or those with additional needs, can't sustain a long lesson." Prepare examples of how lessons will be broken into varied phases, and what support is planned.
+- **Less frequent contact with each subject:** "Subjects like languages and maths need frequent practice." Have evidence or a plan for how weekly contact is kept or compensated for.
+- **Workload and logistics:** "We'll have to re-plan every scheme of work, and cover and part-time timetables get harder." Prepare a realistic support and training offer, and check the part-time implications.
+
+**5. Does it fit? No, not as stated.**
+- 08:45 to 15:15 is 390 minutes.
+- 6 × 55 = 330 minutes of lessons.
+- Break (20) + lunch (40) = 60 minutes.
+- That already totals 390, so there's nothing left for changeovers.
+
+Adding five 5-minute changeovers (25 minutes) gives 415 minutes, which is 25 over. Even if break and lunch double as two of the transitions, so only three extra changeovers are needed (15 minutes), you're still 15 minutes over. Registration or form time would add more.
+
+Some ways to fix it:
+- **Make lessons 50 minutes:** 300 + 60 + 15 (three changeovers) = 375, which leaves 15 minutes for registration.
+- **Extend the day:** with five changeovers, finish at about 15:40.
+- **Trim break and lunch:** this only recovers a little, and 55-minute lessons still don't fit without cutting more.
+
+Also, six lessons of 50 to 55 minutes may not read as "fewer, longer" if your current lessons are similar. Check that the proposal's own case holds up before Thursday.
+
+**6. Contact time**
+"Contact time is the time pupils spend in timetabled lessons being taught directly by a teacher."
+
+**7. Slogan**
+My pick is **"Less rushing, more learning."** Backups: "Fewer bells, better days." and "More time to get it."
+
+Given that the council has rejected two attempts, it may be worth testing these with a couple of students before the vote.

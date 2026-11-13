@@ -1,0 +1,51 @@
+MESSAGE:
+Hi, I'm finishing a grant application for our community garden project and the deadline is tomorrow at noon, so speedy help is appreciated.
+
+Can you suggest a project title that's clearer than "Garden Phase 2"? And tighten this sentence for the summary: "Our project will be one that brings together people of all ages from all backgrounds in the local area in a shared space."
+
+The funder's guidance says they'll cover up to 50% of total project costs, to a maximum of £8,000. Our total project cost is £14,500 (raised beds, tools, accessible paths, and a part-time coordinator for six months). We're requesting £8,000 from them. Can you confirm our request is within their rules?
+
+Also, what does "match funding" mean in this context? Suggest three outcome measures we could realistically report on after a year. And what format should the supporting letters from our partners be in, a signed PDF or just an email? One last request: could you write a two-sentence "about us" for the cover page? We're a volunteer-run group of about thirty people, and we've been going since 2019.
+
+Thank you!
+
+REQUESTS:
+1. Suggest a clearer project title
+2. Tighten the summary sentence
+3. Confirm the £8,000 request is within the funder's 50%/£8,000 rule  KEY: Cannot confirm: 50% of £14,500 = £7,250, which is the binding cap here (below the £8,000 ceiling). Requesting £8,000 exceeds the rule by £750. Should reduce the request to £7,250 (or the project cost would need to be at least £16,000 to justify £8,000).
+4. Explain 'match funding'
+5. Suggest three outcome measures
+6. Recommend a format for partner support letters
+7. Write a two-sentence 'about us' for the cover page
+
+ANSWER:
+**Project title options**
+- "Growing Together: Accessible Raised Beds and Paths for [Garden Name]"
+- "[Garden Name] Community Garden: Opening Up Access for All"
+- "Growing Together: An Accessible Garden for Every Age"
+
+Pick whichever fits your garden's name and the funder's tone. Including "accessible" tells the reader what the money delivers.
+
+**Tightened summary sentence**
+"Our project will bring people of all ages and backgrounds together in a shared local space."
+
+**Is £8,000 within the rules? No, it's slightly over.**
+50% of £14,500 is **£7,250**, which is below the £8,000 maximum, so the 50% rule is the binding limit. The most you can request is **£7,250**. Requesting £8,000 would be 55% of costs and could get the application marked ineligible, so please change it before submitting. Your budget table should then show £7,250 requested and £7,250 from other sources.
+
+**What "match funding" means**
+It's the money you raise from other sources to cover the rest of the project cost, because the funder won't pay for all of it. Here you need £7,250 in match funding. It can come from other grants, fundraising, donations, or your group's own reserves. Many funders also accept in-kind contributions, such as volunteer time or donated materials, but check their guidance on whether those count. Also say whether the match is already secured or still pending, as funders usually ask.
+
+**Three realistic outcome measures for one year**
+1. **Participation:** the number of unique people using the garden, and how many are in each age group (for example, children, working-age adults, over-65s), taken from a sign-in sheet or volunteer log.
+2. **Accessibility:** the number of people with mobility or access needs using the new paths and raised beds, plus the number of accessible sessions run, with short feedback from those users.
+3. **Community engagement and produce:** the number of volunteer hours given, the number of events or sessions held, and the amount of produce grown or shared (for example, kg harvested or number of households receiving it).
+
+A short end-of-year survey would give you satisfaction and "sense of belonging" figures to add to these.
+
+**Format for partner letters**
+I can't tell from what you've shared, so check the funder's guidance first, since some specify a format. If it says nothing, a **signed PDF on the partner's letterhead** is the safer choice, as it looks more formal and is harder to dispute. An email is often accepted but is weaker evidence. If you're short on time, ask partners to send a PDF with a signature or a typed name and job title, plus the date. Each letter should say specifically what they'll contribute or why they support the project.
+
+**Two-sentence "about us"**
+"[Garden Name] is a volunteer-run community group of around thirty people, growing food and friendships in [town/area] since 2019. We create a welcoming space where neighbours of all ages and backgrounds can learn, share, and enjoy the outdoors together."
+
+Good luck with the deadline. If you share the garden's name and location, I can fill in the placeholders.

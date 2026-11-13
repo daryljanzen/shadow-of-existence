@@ -1,0 +1,60 @@
+MESSAGE:
+Hello. Small SaaS team here, picking where to host our new Postgres database. A few questions:
+
+1. Suggest a name for the internal project to migrate off our old server. The team likes bird names.
+2. Constraints: our customers are schools in Germany and our contracts say all personal data must be stored in the EU. Our budget is $60 a month for the database. Nobody on the team does ops, so it needs to be managed with automatic backups. Options I've priced: (a) managed Postgres, US-East region, $25/month, automatic backups; (b) managed Postgres, Frankfurt region, $55/month, automatic backups; (c) a self-managed VPS in Frankfurt, $12/month, where we'd set up backups ourselves. I'm leaning towards (a) because it's the cheapest managed option. Which should we pick, and why?
+3. Explain what a "connection pooler" does in two sentences, for our product manager.
+4. Recommend a format for documenting the migration plan: a wiki page, a shared doc, or a ticket?
+5. Write a one-line status update for the team chat saying the migration is planned for next month.
+6. List three things to test after the migration.
+7. Our product manager also wants a short paragraph for the customer newsletter explaining that we're upgrading our infrastructure. Could you draft three or four sentences that sound reassuring without being technical?
+
+Thanks.
+
+REQUESTS:
+1. Suggest a bird-themed migration project name
+2. Choose a database hosting option under EU residency, budget and managed-backup constraints  KEY: Pick (b), managed Frankfurt at $55/month. Binding constraint: the contractual EU data-residency requirement rules out the user's preferred (a) US-East regardless of price; (c) is ruled out by the no-ops/managed-backups requirement. (b) fits the $60 budget. Must explicitly say (a) is not allowed because of EU residency.
+3. Explain a connection pooler in two sentences
+4. Recommend a format for the migration plan document
+5. Write a one-line team status update
+6. List three post-migration tests
+7. Draft a reassuring non-technical newsletter paragraph about the upgrade
+
+ANSWER:
+## 1. Project name (requires a creative suggestion fitting the bird theme)
+
+**Project Tern**, after the Arctic tern, which makes one of the longest migrations of any animal. Alternates: **Project Swallow** or **Project Starling**.
+
+## 2. Which hosting option (requires checking each option against your constraints and budget)
+
+**Pick (b): managed Postgres in Frankfurt, $55/month.**
+
+- **(a) is ruled out, despite being cheapest.** Your contracts require personal data to stay in the EU, and US-East is outside it. Pricing doesn't matter if it breaches the contract with your school customers.
+- **(b) meets every constraint.** It's in the EU, managed, has automatic backups, and at $55 it's under your $60 budget.
+- **(c) fails the "nobody does ops" requirement.** It's cheap and in the right region, but you'd own backups, patching, security, and failover. That's a real risk for a team with no ops experience holding student data.
+
+Check that (b)'s backups are also stored in the EU, since some providers replicate them to other regions by default.
+
+## 3. Connection pooler (requires a two-sentence explanation for a non-technical reader)
+
+A connection pooler is like a receptionist for the database. Instead of every user request opening its own line to the database, which is slow and limited in number, it keeps a small set of lines open and shares them among everyone. This keeps the app fast and stable when many people use it at once.
+
+## 4. Documentation format (requires choosing one of three)
+
+**A shared doc.** It's easy to draft collaboratively, supports comments and review, and suits a plan that will change before next month. Create tickets for the individual tasks and link them from the doc. Once the migration is done, move the final version to your wiki as a record.
+
+## 5. Status update (requires one line for team chat)
+
+> Heads up: the Postgres migration (Project Tern) is planned for next month. A plan doc and tickets are coming soon.
+
+## 6. Three post-migration tests (requires a list of three)
+
+1. **Data integrity:** compare row counts and spot-check key tables (users, schools, records) between old and new databases.
+2. **Application functionality:** run core user flows end to end (login, reading and writing data, reports) against the new database, and check performance and connection limits under realistic load.
+3. **Backups and restore:** confirm automatic backups are running, then do a test restore to verify they work, and confirm the data location is in Frankfurt.
+
+## 7. Newsletter paragraph (requires a reassuring, non-technical draft of 3–4 sentences)
+
+> We're upgrading the systems that power our service so it's faster, more reliable, and better protected. As part of this, your data will continue to be stored securely within the European Union, in line with our commitments to you. We're planning the work carefully to keep any disruption to a minimum, and we'll let you know ahead of time if anything affects you. Thank you for trusting us, and as always, please get in touch if you have any questions.
+
+Before sending, confirm with your team that the "minimal disruption" and advance-notice promises match your actual migration plan.

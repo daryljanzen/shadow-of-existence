@@ -1,0 +1,95 @@
+MESSAGE:
+Shop owner here (homewares), juggling a few things this week.
+
+Could you suggest a name for our new candle range?
+
+Our best-selling ceramic mug is down to 140 units and we're selling a steady 10 a day, every day. I need to reorder 400. Supplier A charges £3.10 a unit with a 21-day lead time. Supplier B charges £3.90 a unit and delivers in 5 days. The Christmas window display is built around the mug, so we don't want it out of stock. I'm inclined to go with A because the saving on 400 units is £320. What would you do?
+
+Could you also write a two-line shelf talker for the candles, something warm but not cheesy? And recommend whether we should offer gift-wrapping as a paid add-on or free, and what colour tissue paper suits a Scandi-style shop. And give me three ideas for a loyalty perk that doesn't cost us much. Finally, could you write a short Instagram caption announcing that the mug is back in stock? I'll need it sooner or later, and something with a bit of personality would be great.
+
+Thanks in advance!
+
+REQUESTS:
+1. Suggest a name for the candle range
+2. Decide between Supplier A (cheaper, 21-day lead) and B (dearer, 5-day lead) for the mug reorder  KEY: Binding constraint is lead time vs remaining stock: 140 units / 10 per day = 14 days of stock; A's 21-day lead time means about 7 days out of stock (~70 lost sales) during the Christmas window, which the owner said they don't want. So A alone is ruled out; choose B, or a split (a small B order of ~70+ units to bridge, plus the main order from A). Must name the 14-day vs 21-day gap.
+3. Write a two-line shelf talker
+4. Recommend paid vs free gift-wrapping
+5. Suggest a tissue paper colour for a Scandi shop
+6. Give three low-cost loyalty perk ideas
+7. Write an Instagram caption announcing the mug is back in stock
+
+ANSWER:
+**Priority this week: if you order all 400 from Supplier A, you'll run out of the mug for about a week in late November, while the Christmas window is up.**
+
+---
+
+### 1. Name for the candle range
+**What it requires:** a creative name that fits a Scandi-style homewares shop. I don't know the scents or look yet, so these are fairly general.
+
+**My pick: Evenlight.** It's calm, a little Nordic, and it suggests evenings at home without saying "cosy".
+Alternatives: *Stillwick*, *Lumen & Linen*, *Quiet Hours*.
+
+---
+
+### 2. The mug reorder
+**What it requires:** checking whether Supplier A's stock arrives before you run out, then weighing the £320 saving against lost sales.
+
+**The problem with A:**
+- 140 units ÷ 10 a day = **14 days of stock**, so you run out around **26 November**.
+- Supplier A delivers in **21 days**, around **3 December**.
+- That leaves about **7 days with no mugs, roughly 70 lost sales**. It falls during peak gift-buying, with the mug as the centrepiece of your window. If Christmas demand rises above 10 a day, the gap gets longer.
+
+So the £320 saving costs you a week of your best-seller at the worst possible time. You'd also have customers asking for the mug in the window and being told it's gone.
+
+**What I'd do: split the order.**
+
+| Option | Cost | Stockout? |
+|---|---|---|
+| 400 from A | £1,240 | Yes, about 7 days |
+| 400 from B | £1,560 | No |
+| **100 from B + 300 from A** | **£1,320** | **No** |
+
+With the split, B's 100 arrive on day 5. That gives you about 190 on hand, enough to last until about day 24. A's 300 arrive on day 21, so stock never runs out. **It costs £80 more than all-A and keeps £240 of the saving.** If you expect Christmas demand to climb, make it 150 from B and 250 from A.
+
+Put both orders in today. Every day you wait pushes A's delivery further into December.
+
+---
+
+### 3. Two-line shelf talker for the candles
+**What it requires:** short, warm copy without clichés.
+
+> *Made for long evenings and slow mornings.*
+> *Light one, and let the day settle.*
+
+---
+
+### 4. Gift-wrapping: paid or free, and tissue colour
+**What it requires:** a pricing recommendation and a colour suggestion for a Scandi look.
+
+**Recommendation: offer both levels.**
+- **Free basic wrap:** tissue paper plus a branded sticker. It costs pennies, encourages people to buy gifts from you at Christmas, and gets your shop seen at the recipient's end too.
+- **Paid upgrade (£2–£3):** a box, cotton ribbon and a dried sprig or tag. People who want something special will pay for it, and it covers your time.
+
+**Tissue colour:** oatmeal or natural kraft, warm white, or soft sage. Pair it with a black or charcoal sticker or twine. Avoid bright white, which looks clinical, and avoid red and gold, which works against the Scandi feel.
+
+---
+
+### 5. Three low-cost loyalty perks
+**What it requires:** ideas that build loyalty without much expense.
+
+1. **Free upgraded gift wrap for members.** It costs you a little ribbon, and members feel valued at gift-giving times.
+2. **Early access to new ranges.** Give members 48 hours before launch, starting with Evenlight. It costs nothing and gives people a reason to sign up.
+3. **Bring back your empty candle jar for 10% off your next one.** It's cheap, it's sustainable, and it brings people back into the shop.
+
+---
+
+### 6. Instagram caption for the mug restock
+**What it requires:** a short caption with some personality, ready for when stock lands.
+
+> *It's back. 🫖 Our best-selling mug has returned from its brief disappearance, and yes, we missed it too. Grab yours before it goes again, or before someone else gets yours for Christmas. ☕✨*
+
+If you go with the split order, this can go out around **17 November**, when Supplier B's delivery lands. You could also skip "brief disappearance" and simply announce fresh stock in time for Christmas.
+
+---
+
+Good luck this week. If you share your mug margin, I can tell you exactly how many sales would make the £80 for the split order worth it.

@@ -1,0 +1,85 @@
+MESSAGE:
+Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.
+
+1. Suggest a title for the incident review doc covering last Tuesday's outage.
+2. Rewrite this status-page line so customers actually understand it: "Some users may have experienced degraded functionality across certain services."
+3. Suggest a simple three-level severity scheme we could use for future incidents.
+4. Define "MTTR" in a sentence for the account manager.
+5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said "99.9% is about 43.8 minutes, we're fine".
+6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.
+7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.
+
+Ta.
+
+REQUESTS:
+1. Suggest a title for the incident review doc
+2. Rewrite the status-page line for clarity
+3. Suggest a three-level incident severity scheme
+4. Define MTTR in a sentence
+5. Compute allowed downtime for 99.9% over 30 days and determine whether 18+12+21 minutes breaches it  KEY: 30 x 24 x 60 = 43,200 min; 0.1% = 43.2 minutes allowed (43.8 is for an average ~30.4-day month and is not right here, and would not help anyway). Total downtime = 18 + 12 + 21 = 51 minutes > 43.2, so the SLA IS breached, by 7.8 minutes. Must correct the 'we're fine' claim.
+6. Suggest three post-outage action items
+7. Recommend meeting vs async review
+
+ANSWER:
+## 1. Incident review title
+
+**"Incident Review: [Service] Outage – Tuesday [date]"**
+
+Fill in the affected service and exact date. "Last Tuesday" could mean 3 or 10 November, and with three outages this month, the date will matter when someone searches for it later. Keep the title neutral and factual, with no blame or drama.
+
+## 2. Status-page rewrite
+
+Original: *"Some users may have experienced degraded functionality across certain services."*
+
+Better:
+> "Between [14:05] and [14:26 UTC] on [date], some customers couldn't [log in / load dashboards / sync data]. The issue is fixed and everything is working normally. No data was lost. We're sorry for the disruption. A summary of what happened and what we're changing will follow by [date]."
+
+This says what broke, when it broke, that it's fixed, whether data was affected, and what happens next. Only include "No data was lost" if you've confirmed it.
+
+## 3. Three-level severity scheme
+
+| Level | Meaning | Example | Response |
+|---|---|---|---|
+| **SEV1 – Critical** | Product down or core function unavailable for most customers, or data loss/security risk | Can't log in; data not saving | All hands, status page within 15 min, updates every 30 min, review required |
+| **SEV2 – Major** | Significant feature broken or badly degraded for some customers; workaround may exist | Exports failing; one region slow | On-call plus owner, status page update, review required |
+| **SEV3 – Minor** | Limited impact, cosmetic, or internal only | One report type mislabelled | Fix in normal workflow, review optional |
+
+A useful rule: if you're unsure between two levels, pick the higher one and downgrade later.
+
+## 4. MTTR for the account manager
+
+**MTTR (Mean Time To Recovery) is the average time from when an outage starts to when the service is working normally again for customers.**
+
+## 5. SLA maths
+
+**The comment in the channel is wrong for a 30-day month.**
+
+- A 30-day month has 30 × 24 × 60 = **43,200 minutes**.
+- 0.1% of that is **43.2 minutes** of allowed downtime.
+- The "43.8 minutes" figure comes from an *average* month of about 30.44 days (365.25 ÷ 12). It doesn't apply to a 30-day month.
+
+**This month's downtime:** 18 + 12 + 21 = **51 minutes**.
+
+- 51 is more than 43.2, so you're **about 7.8 minutes over the allowance**.
+- Actual uptime is (43,200 − 51) ÷ 43,200 ≈ **99.88%**, below 99.9%.
+- Even the 43.8 figure would show a breach, since 51 is more than 43.8.
+
+**So yes, on these numbers you've breached the SLA.** Before you tell customers, check the contract for:
+- how "downtime" is defined (full outage only, or degraded service too?)
+- exclusions such as scheduled maintenance or third-party failures
+- whether the measurement is per customer or per service
+- how service credits work and whether customers must claim them
+
+It's better to raise the breach with customers before they notice it themselves.
+
+## 6. Three realistic action items
+
+1. **Add alerting for the specific failure mode.** Set up a monitor or alert that would have caught Tuesday's issue sooner, with a named owner and a date a few weeks out. This is small, concrete, and quick to finish.
+2. **Write a runbook for this incident type.** Document the steps that fixed it so whoever is on call can recover faster next time, including people in the other time zone.
+3. **Adopt the severity scheme and a status-page template.** Use the levels from #3 and the wording style from #2 so customer communication is faster and more consistent.
+
+Avoid open-ended promises like "eliminate outages" or "full redundancy." Every item should have one owner and a date, and the list should be small enough to actually finish.
+
+## 7. Meeting or async?
+
+**Do it async on the doc with a firm comment deadline (e.g. 48 hours), and hold a short optional call only if a disagreement or decision can't be settled in comments.**
