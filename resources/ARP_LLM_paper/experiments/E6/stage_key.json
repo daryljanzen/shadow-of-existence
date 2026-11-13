@@ -1,0 +1,2594 @@
+{
+ "s10169": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s10239": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s10283": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s10789": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s10870": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s11166": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s11883": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s12429": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s12484": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s12505": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s12718": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s12727": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s14019": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s14031": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s14068": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s14089": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s14108": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s14160": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s14601": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s14818": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s14974": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s15601": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s15834": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s15938": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s15999": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s16043": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s16122": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s16164": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s16184": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-17"
+ },
+ "s16423": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s16513": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s16661": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s16761": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s16854": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s16888": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s16916": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s17205": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s17722": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s18413": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s18552": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s18894": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s19536": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s19781": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s20206": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s20241": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s20358": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s20733": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s20770": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s21141": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s21159": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s21393": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s21419": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s21554": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s21572": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s22020": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s22066": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s22722": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s22800": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s23300": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s23336": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s23593": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s23624": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s23644": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s23655": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s23997": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s24156": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s24335": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s24473": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s24565": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s24848": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s25228": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s25636": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s26138": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s26461": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s26690": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s26807": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s26815": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s26938": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s27063": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-17"
+ },
+ "s27283": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s27455": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s27467": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s27969": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s28234": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s29215": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s29227": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s29313": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s29683": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s30299": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s30430": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s30782": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s30858": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s30960": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s31086": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s31677": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s32221": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s32245": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s32441": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s32742": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s33338": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s33403": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s33722": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s33741": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s33845": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s33948": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s34484": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s34618": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s34627": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s34743": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s35051": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s35175": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s35344": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s35828": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s36079": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s36150": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s36513": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s36524": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s36643": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s36726": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s37270": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s37464": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s38025": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s38178": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s38287": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s38588": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s38780": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s39129": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s39142": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s39406": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s39935": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s39959": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s39961": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s40098": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s40161": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s40217": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s40354": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s40478": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s42214": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s42249": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s42311": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s42328": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s42488": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s42597": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s42635": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s43381": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s43393": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s43404": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s43466": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s43485": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s43716": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s43785": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s44021": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s44207": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s44374": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s44385": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s45184": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s45231": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s45275": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s45314": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s45808": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s45928": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s45986": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s46040": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s46246": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s46397": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s46567": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s46921": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s47197": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s47261": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s47391": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s47517": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s47528": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s47601": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s47764": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s47928": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s48009": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s48949": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s49098": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s49343": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s50106": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s50263": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s50490": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s50588": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s50993": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-17"
+ },
+ "s51103": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s51193": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s51362": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s51455": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s51563": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s51582": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s51720": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s51772": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s52116": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s52816": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s52886": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s53073": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s53500": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s53958": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s54535": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s54670": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s54804": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s54818": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s55285": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s55379": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s55477": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s55631": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s55830": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s55871": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s56470": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s56474": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s56657": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s56677": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s56800": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s57038": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s57061": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s57712": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s57778": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s57819": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s57940": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s58145": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s58290": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s59508": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s59669": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s59891": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s60134": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s60257": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s60342": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s60389": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s60531": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s60672": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s61233": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s61433": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s61801": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s61896": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-19"
+ },
+ "s62062": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s62182": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s62336": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s62453": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s62500": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s62679": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s62681": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s63127": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s63590": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s63792": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s63878": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s63979": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s64058": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s64401": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s64714": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s64753": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-18"
+ },
+ "s65588": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s66244": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s66577": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s66724": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s66784": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-03"
+ },
+ "s66867": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s66983": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s67756": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s67785": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s67907": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s68259": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s68553": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s68640": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s68663": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s69300": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s69594": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s69836": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s69887": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s70062": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s70163": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s70358": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s70646": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s70689": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s70900": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s71020": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-13"
+ },
+ "s71228": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s71382": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s71789": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-04"
+ },
+ "s72072": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s72218": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-02"
+ },
+ "s72416": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s72676": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s72778": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s73108": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s73122": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s73591": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s73945": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s74023": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s74142": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-23"
+ },
+ "s74437": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-14"
+ },
+ "s74515": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s74648": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s74678": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-24"
+ },
+ "s74790": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s75123": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s75327": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-12"
+ },
+ "s75378": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s75483": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s75707": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s75732": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s75886": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s76010": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s76011": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s76219": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s76298": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s76314": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s76552": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s77713": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-11"
+ },
+ "s77728": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s77865": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s78072": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s78175": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s78391": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s78424": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s78683": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s79315": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s79473": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s79490": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s79777": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s79980": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s80062": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s80097": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s80129": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s80195": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s80252": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-21"
+ },
+ "s80279": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s80396": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-01"
+ },
+ "s80526": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s80675": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s80873": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s80928": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s80950": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s81570": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-19"
+ },
+ "s82172": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s82255": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-07"
+ },
+ "s82301": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s82492": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s82522": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s82932": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-20"
+ },
+ "s82973": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-17"
+ },
+ "s83033": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s83210": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s83657": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s84508": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-12"
+ },
+ "s84741": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-20"
+ },
+ "s84861": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s84963": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-02"
+ },
+ "s84982": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-21"
+ },
+ "s85007": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s85122": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s85353": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s85460": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s85765": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s85932": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-03"
+ },
+ "s86147": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s86552": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s86632": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s86649": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s86746": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-13"
+ },
+ "s86869": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-02"
+ },
+ "s86880": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s86957": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s87063": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-05"
+ },
+ "s87392": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-04"
+ },
+ "s87485": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s87640": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-17"
+ },
+ "s87707": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s87713": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-06"
+ },
+ "s88030": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-18"
+ },
+ "s88430": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-10"
+ },
+ "s89289": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s89465": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-06"
+ },
+ "s89633": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s89807": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s89882": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-11"
+ },
+ "s90136": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-12"
+ },
+ "s90199": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-22"
+ },
+ "s90349": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-10"
+ },
+ "s90389": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s90581": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s90743": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-19"
+ },
+ "s90897": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-17"
+ },
+ "s90917": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-16"
+ },
+ "s91541": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-09"
+ },
+ "s91629": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-14"
+ },
+ "s92048": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s92072": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s92098": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s92273": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s92323": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-05"
+ },
+ "s92477": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-09"
+ },
+ "s92603": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-07"
+ },
+ "s92642": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s93263": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s93404": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-23"
+ },
+ "s93460": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s94119": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s94315": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s94479": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s94616": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-15"
+ },
+ "s94693": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-23"
+ },
+ "s95035": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-17"
+ },
+ "s95111": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-11"
+ },
+ "s95203": {
+  "cond": "S",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-01"
+ },
+ "s95270": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-14"
+ },
+ "s95502": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-18"
+ },
+ "s95513": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-08"
+ },
+ "s95680": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-07"
+ },
+ "s95843": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-15"
+ },
+ "s95968": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-08"
+ },
+ "s96035": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-09"
+ },
+ "s96254": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-22"
+ },
+ "s96697": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-24"
+ },
+ "s96752": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s96759": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s96876": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-01"
+ },
+ "s97284": {
+  "cond": "G-ARP",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-15"
+ },
+ "s97666": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-05"
+ },
+ "s98091": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-08"
+ },
+ "s98113": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-22"
+ },
+ "s98145": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-24"
+ },
+ "s98419": {
+  "cond": "G-noR",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-20"
+ },
+ "s98534": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-16"
+ },
+ "s98818": {
+  "cond": "S",
+  "rep": 0,
+  "step": 5,
+  "task": "E6-04"
+ },
+ "s98915": {
+  "cond": "G-noR",
+  "rep": 0,
+  "step": 3,
+  "task": "E6-21"
+ },
+ "s99147": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-16"
+ },
+ "s99171": {
+  "cond": "S",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s99251": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-03"
+ },
+ "s99470": {
+  "cond": "S",
+  "rep": 1,
+  "step": 5,
+  "task": "E6-13"
+ },
+ "s99575": {
+  "cond": "G-ARP",
+  "rep": 1,
+  "step": 3,
+  "task": "E6-06"
+ },
+ "s99666": {
+  "cond": "S",
+  "rep": 0,
+  "step": 1,
+  "task": "E6-10"
+ },
+ "s99793": {
+  "cond": "S",
+  "rep": 1,
+  "step": 1,
+  "task": "E6-17"
+ }
+}
