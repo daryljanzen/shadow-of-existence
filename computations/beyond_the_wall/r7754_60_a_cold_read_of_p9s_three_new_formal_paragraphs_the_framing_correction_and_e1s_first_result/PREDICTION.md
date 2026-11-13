@@ -161,3 +161,54 @@ registration does not carry — or a registered prediction the result is silent 
 or `cc66`'s, and any registration, result or material of seat 70's.  Patches to a
 paper are drafted in `FOR_66_FROM_60.md`; this seat does not edit `P9`, `P18` or
 `P7` itself.
+
+---
+
+# AMENDMENT, registered at `r7753`'s order and pushed before the material was opened
+
+`r7753` merged this revision's registration and added to the order: **run it, and add
+this round's three rewritten sentences** — `cc66`'s drafts of this line's sites ⑥ and ⑦
+as `69` landed them, plus `P6`'s acoustic-episode sentence — each **read against two new
+facts**: `70`'s refit `RESULT` (`1.002` times the control, the DESI DR2 BAO unmoved,
+`θ*` up `0.50` per cent) and `cc66`'s pricing (the leaf rate moves the BAO distances at
+most `0.021` per cent, and is the only local lever).
+
+**Registered before `corpus/CR_cosmology.tex`'s or `corpus/shadow_of_existence.tex`'s new
+sentences, `computations/beyond_the_wall/r7749_70_leafgeom_refit/` or `cc66`'s pricing
+were opened in this revision.**  The fourteen arms above stand as they ran; three more
+are added, and **the arm count asserted at the end becomes 17**.
+
+**⑮ The three rewrites are in print as the order quotes them, VERBATIM.**  Each is
+matched as an exact string against the committed paper, not paraphrased, and the
+settled-state predicate of `r7752` — unchanged, its terms still the old text's own — is
+re-run over `P15` and `P6` to see whether the two sites it found at `r7754` are gone and
+whether `P6` carries one.
+*Negative reachable:* a quoted sentence that is not in print as quoted, a site still
+there, or a new one.
+
+**⑯ `70`'s refit `RESULT` is read against ITS OWN REGISTRATION, out of git history at
+the commit that registered it**, on the same two tests this revision applied to `E1`:
+every measure, cut and exclusion the result reports matched against the registration,
+and anything registered and not reported named.  The three figures the order repeats —
+`1.002`, the BAO unmoved, `θ*` up `0.50` per cent — are checked against the result's own
+numbers rather than taken from the order.
+*Negative reachable:* a measure in the result the registration does not carry, a
+registered prediction the result is silent about, a figure that does not reproduce, or a
+registration that does not precede the run.
+
+**⑰ `cc66`'s pricing is checked, and each rewrite is read against the facts.**  The
+claim that the leaf rate moves the BAO distances by **at most `0.021` per cent** and is
+**the only local lever** is located in whatever receipt banks it and read there; the
+`0.021` per cent and the `0.50` per cent in `θ*` are checked for consistency with the
+refit's own figures; and each of the three rewrites is then read for whether the facts
+support what it now asserts — in particular whether *"the only local lever"* and *"what
+remains in question is whether radiation belongs in the rate"* are the same claim, and
+whether a sentence that says the construction *"does not reach"* a direction states a
+limit or a verdict.
+*Negative reachable:* a figure that does not reproduce; a rewrite asserting more than
+the facts carry; a rewrite that closes the question the round opened.
+
+⌗ **And one carried lesson applies to arm ⑯ before it runs:** the registration must be
+read at the commit that registered it and that commit must **precede the first trial
+record**, both established from history rather than from the result's own account — which
+is how `E1`'s order was established in arm ⑬.
