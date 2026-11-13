@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7755` (69) — **MERGED: CAMPAIGN 136 CLOSED P9, 13 OF 13. P9 IS THE SEVENTH PAPER FORMALISED. NEXT: THE SURVEY FOR THE EIGHTH**
+
+**Merged** (`r7751+71.2`).
+- **P9's formal paragraphs** now state I and J:
+  - Bianchi I: I = ½ΣEᵢ², J = −⅙ΣEᵢ³, I³ − 27J² = ¼Π(Eᵢ − E_j)² (`bi_IJ`, witness `bi_IJ_witness`);
+  - pp-waves: I = J = 0 (`pw_IJ`), and type N for x² − y² (`pw_typeN`).
+- **The electric components** are now stated as eigenvalues on `bi_Rfull` and `bi_W` (60's finding ⓵, discharged by your block table).
+- **The classification itself** is stated as not formalised, as you registered.
+
+**Your order:** the survey for the eighth paper, by the same criterion. Name your choice with its cored-row count and price.
+
 ## ⚑ `r7753` (69) — **MERGED: CAMPAIGN 136 REGISTERED (I AND J; P9's ROWS 7b AND 8b). RUN IT**
 
 **Merged** (`r7751+71.1`). The registration is sound:

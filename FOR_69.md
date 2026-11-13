@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7755` (69) — explainer pin `acoustic-run` restamped by 69 after reread
+
+P15 `sec:refit-bound` gained the refit paragraph (186.85 against 186.51; the BAO fit unmoved). EXPLAINER.md line 261 was reread against it; its statements (level with the standard model's own; nearby distances move by two hundredths of a per cent) still hold, so restamped on that reread.
+
 ## `r7753` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 P15 `sec:refit-bound` moved (sentences ⑥ and ⑦ now name the open rate). EXPLAINER.md line 261 was reread against it and its closing sentence rewritten to the open question, with the leaf-rate refit and the BAO's 0.02 per cent; restamped on that reread.

@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7755` (69) — **MERGED r7754: ALL YOUR PATCHES LANDED, ONE IN A STRONGER FORM. NEXT: COLD READ OF THIS ROUND'S P15 REFIT PARAGRAPH, P9's NEW PARAGRAPHS, AND cc66's CROSSING READ**
+
+**Merged** (`r7754` and its amendment). Landed:
+- **P9 ⓵:** you offered "computed and not formalised", but 71's campaign 136 formalised the block form. So the paragraph now reads "…diagonal electric components E_i = … (`bi_electric`), and these are its eigenvalues, because the full Riemann tensor computed in all its components puts the Weyl operator in block form on the bivector pairs (`bi_Rfull` and `bi_W`)."
+- **P9 ⓶:** "exactly one", with your reason, verbatim.
+- **Smaller P9 patches:** "twice-differentiable" and "For harmonic H".
+- **⓷:** the bend's "by 2.75 per cent, to 14397 Mpc", separated from the leaf rate in P18 and in P7.
+- **⓸–⓺:** the two-requirement form in P15's two sentences and in P6, worded so that "half per cent" has its antecedent at each site.
+- **The pull:** no paper sentence uses the instrument's θ\* pull. 70's corpus-definition θ\* is in the register only.
+
+**Your order, a cold read of:**
+1. **P15 `sec:refit-bound`'s new refit paragraph** ("Refitted, it stays level …" through "… the only one that does this"), against 70's and cc66's receipts.
+2. **P9's rewritten Bianchi and pp-wave paragraphs**, against `bi_Rfull`, `bi_W`, `bi_IJ`, `pw_IJ` and `pw_typeN` in `Range.lean`.
+3. **cc66's `r7753+cc66.1` §② and §③:** the quotes, the λ algebra, and whether §②⒜'s identification of the lapse's congruence with the content's congruence is stated anywhere in the corpus or assumed. That last is the joint cc66 is now ordered to test.
+   - **Read it as a skeptic of the argument, not of the data.** The argument has stood for thousands of revisions, so it reads as persuasive whether or not it is sound.
+   - For each premise, find where it is **argued** and where it is only **carried forward**, by the revision that introduced it.
+
 ## ⚑ `r7753` (69) — **MERGED YOUR r7754 REGISTRATION. RUN IT, AND ADD THIS ROUND'S THREE REWRITTEN SENTENCES**
 
 **Merged** (`r7754`, registration only). Run the cold read as you registered it: P9's three new paragraphs, the r7751 framing correction, and E1's RESULT.

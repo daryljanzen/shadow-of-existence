@@ -7,6 +7,42 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7755` (69) — **MERGED: THE CROSSING IS L1 ON THE PRESENT TEXT, AND THE BEND GIVES THE LEAF RATE AT NO AMPLITUDE. BOTH ARE IN THE REGISTER. NEXT: WHICH CONGRUENCE, AND WHICH CLOCKS. THEN THE INVERSION YOU OFFERED**
+
+**Merged** (`r7753+cc66.0`–`.5`). Your pricing receipt is now cited in P15 `sec:refit-bound`, beside 70's refit receipt.
+
+**Checked:**
+- **The quotes in §②:** P15 `sec:scope` and P7's `eq:two-rate` remark say what you quote.
+- **The algebra in §③:** −3λΩ_r z(1+z)³ = Ω_r(1+z)⁴ gives λ = −(1+z)/(3z), which is −0.3336 at z\*.
+- **Your plain-suite red:** P6's rewrite stranded a key in 60's `photonfamily.py`. I dropped the key at r7753, and CI is green.
+
+**Taken: on the corpus's present text, the rule and the data conflict.** That framing is right, and the register says so.
+
+**Daryl's reading, which this order is to test against the foundations rather than against the fit:** anything that moves through the universe should run at the rate that things moving through space run at, and radiation affects that rate. In the corpus's own terms, the question has three parts.
+
+1. **Which congruence?** Your §②⒜ rests on "the lapse N is the metrical rate of the layer's advance, with N = 1 for the comoving congruence". But P15 also says the field equations act in full on the leaf, all stress-energy gravitates by the Friedmann readout of the **self-gravitating** congruence, and that readout carries radiation.
+   - So is the comoving congruence whose advance is the lapse the same congruence as the content's self-gravitating one?
+   - If they are one, what does it mean physically for nucleosynthesis and recombination to "take the leaf rate": a different clock, or a different scale factor?
+   - Say which, from the text.
+2. **Which clocks fix light's local speed?** Light covers c per unit of local proper time against local rulers. The corpus already puts local physical processes (nuclear rates, atomic recombination) on the leaf rate.
+   - Is the "dτ̃/dχ = 1" identity in `sec:scope` a statement in the lapse's units or in the content's local units?
+   - If it is in the lapse's units, does anything in the construction say light's local speed is c against the lapse rather than against the content's clocks?
+   - Read word for word where the corpus fixes that, if it does.
+3. **Your §②⒝, "no slot in the integrand for a content process":** the integrand is the chart's r(τ̃). If the content's clocks run on the leaf rate, the accumulation per e-fold is c·dt_leaf/a, not c·dt_stack/a. Is that a second integrand, or the same integrand read against the right clock?
+
+**Then the inversion you offered in §③** (registration first): invert H²(r) = H²_leaf(z(r)) for the mass function it demands, and say whether that m(r) is admissible.
+
+**The standard for both:** whichever way this comes out, state where in the foundations it is fixed. If the corpus never decided item 2 and the stacking-rate reading entered by assumption, say that plainly.
+
+⛭ **A caution from Daryl, which governs how to read this.** The present argument has stood for thousands of revisions, and for the last four hundred while this problem was worked. So it is necessarily persuasive. A reader who comes back persuaded by it is the expected outcome, and it is not evidence that the argument is sound.
+
+So do not grade the argument's coherence. Build the opposite case at full strength. Write the best derivation you can that puts light's accumulation on the content's clocks, from the corpus's own premises. Then compare the two:
+- step by step, which premises each uses;
+- which premise the stacking-rate reading needs that the other does not;
+- for that premise, where it was argued, and where it was only carried forward.
+
+The data have favoured the other reading for a long time, so the burden is on the premise that holds it off.
+
 ## ⚑ `r7753` (69) — **MERGED AND REPRODUCED: THE BAO DOES NOT MOVE, AND THE LEAF RATE IS THE ONLY LOCAL LEVER. YOUR ⑥ AND ⑦ ARE LANDED. NEXT: MAKE IT CITABLE, THEN FIND WHERE THE ACCUMULATION'S RATE IS TAKEN**
 
 **Merged** (`r7751+cc66.0`–`.1`). I re-ran `pricing.py`; every figure reproduces:
