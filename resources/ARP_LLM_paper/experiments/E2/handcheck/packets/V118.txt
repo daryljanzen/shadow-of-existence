@@ -1,0 +1,39 @@
+SITUATION:
+Our basketball team won 45% of its games last season under the old head coach (37 of 82). Twenty games into this season under the new coach, we've won 11 and lost 9, which is 55%. The general manager is telling the press that the new coach is clearly better than the old one, and I agree; ten points is a big jump. The schedule so far has included some weaker opponents, but it's hard to say how much weaker on balance. Several players have also changed since last season. Can we go with "the new coach is better" in our season preview?
+
+CLAIM:
+The new coach is better than the old coach.
+
+RESPONSE:
+**No, the data doesn't support "the new coach is clearly better."** A 10-point jump sounds large, but over 20 games it's mostly noise, and two confounders make it even harder to read.
+
+## 1. Twenty games is a small sample
+
+- 11–9 is just **two more wins** than last season's 45% pace would predict (about 9 of 20).
+- A team that truly plays at last season's level (.451) would go **11–9 or better in about 25–30% of 20-game stretches** by luck alone.
+- The 95% confidence interval for an 11–9 team's true win rate runs from about **34% to 74%**. That range includes last season's 45%.
+
+Even with no other complications, the record is consistent with "the new coach is no better," "somewhat better," or "much better."
+
+## 2. The schedule has been easier
+
+You've noted that the opponents so far have included weaker teams. That alone could explain two extra wins. Until you adjust for opponent strength (e.g., opponents' win %, point differential vs. expectation, or a rating like SRS/net rating), you can't separate the coach from the schedule.
+
+## 3. The roster changed
+
+With different players, even a fully adjusted improvement can't be assigned to the coach rather than the personnel. This is the hardest confounder to remove, and win-loss records alone can't remove it.
+
+## What you can reasonably say
+
+- "The team is off to an 11–9 start, ahead of last season's .451 pace."
+- "Early signs are encouraging under the new coach."
+- "It's too early to know how much of the improvement is coaching versus a softer early schedule and roster changes."
+
+## What would settle it (or get closer)
+
+- **More games.** By 50–60 games, a sustained 10-point gap starts to look meaningful.
+- **Schedule-adjusted metrics.** Compare point differential and net rating against opponent strength, not just raw W–L.
+- **Point differential.** It's less noisy than win %. If the team is winning close games but has a flat differential, regression is likely.
+- **Coaching-specific indicators.** Look at changes in things a coach controls, such as defensive scheme results, pace, shot selection, and late-game execution, ideally comparing returning players' performance across both coaches.
+
+The GM's claim may turn out to be right. The evidence just doesn't show it yet, and a preview that says "clearly better" risks looking premature if the schedule toughens.

@@ -1,0 +1,41 @@
+SITUATION:
+I'm checking our regional housing report before it goes to clients. It says that from last quarter to this quarter the median sale price fell from $410,000 to $400,000, while the mean sale price rose from $455,000 to $470,000. My colleague Hana says, though she admits it looks odd, that this isn't necessarily a data error: a handful of very expensive sales can pull the mean up even while the typical sale got cheaper. I think it has to be an error. Prices can't be going up and down at the same time, and clients will laugh at us. Should I send the report back to the data team?
+
+CLAIM:
+The median sale price falling while the mean rises is possible without any data error.
+
+RESPONSE:
+**Hana is right. This isn't necessarily an error, and I wouldn't send it back as one.** The median and mean measure different things, and they can legitimately move in opposite directions.
+
+## Why it happens
+
+- **Median:** the middle sale. It ignores how far the extremes are from the middle.
+- **Mean:** the total divided by the count. A few very large values pull it up.
+
+A small example with 5 sales each quarter:
+
+| | Sales | Median | Mean |
+|---|---|---|---|
+| Last quarter | 300k, 380k, **410k**, 450k, 735k | 410k | 455k |
+| This quarter | 290k, 370k, **400k**, 440k, 850k | 400k | 470k |
+
+Four of the five sales got cheaper, but the top sale rose by $115k. That moved the mean up by $23k while the median fell. Real housing data behaves this way all the time, because prices are right-skewed: a few luxury sales sit far above everything else.
+
+"Prices going up and down at the same time" isn't quite what's happening. The **typical** home sold for less, while the **mix** of sales included more or pricier high-end properties. Both can be true.
+
+## What I'd actually do
+
+Rather than flagging an error, ask the data team for a quick sanity check:
+
+1. **Top-end sales this quarter:** were there a few unusually expensive ones, such as luxury homes, new developments, or commercial-adjacent parcels?
+2. **Outliers and data entry:** check that no sale has a typo (e.g., $4.5M entered instead of $450k). This is the one way it *could* be an error.
+3. **Sales counts and mix:** did the number of transactions or the share by property type or area change?
+4. **Optional:** report the mean with the top 1–5% trimmed, or show percentiles (25th, 75th, 90th), to show where the movement came from.
+
+## For clients
+
+Don't hide it. Explain it in one line, which makes the report look more sophisticated, not less:
+
+> "The median sale price, which reflects the typical home, eased 2.4% to $400,000. The average rose to $470,000, driven by a small number of high-value sales at the top of the market."
+
+Most housing reports lead with the median for exactly this reason.

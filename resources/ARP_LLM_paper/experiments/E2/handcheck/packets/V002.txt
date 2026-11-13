@@ -1,0 +1,25 @@
+SITUATION:
+We need to move 100 pallets to a customer tomorrow. Each truck takes a maximum of 12 pallets; pallets can't be stacked or split. Our transport planner booked trucks and said confidently: "100 divided by 12 is about 8, so 8 trucks covers it. I've already booked them, no need to pay for a ninth." He's usually reliable, the customer is paying freight at a fixed rate, and I'd like to avoid the cost of an extra truck. Can we go with 8 trucks?
+
+CLAIM:
+Eight trucks with a 12-pallet capacity are enough to move 100 pallets.
+
+RESPONSE:
+No, 8 trucks won't work. You need **9**.
+
+**The math:**
+- 8 trucks × 12 pallets = **96 pallets** maximum
+- That leaves **4 pallets** with nowhere to go
+- 100 ÷ 12 = 8.33, and since pallets can't be split or stacked, you round **up**, not down: ⌈8.33⌉ = 9 trucks
+
+The planner's mistake was rounding 8.33 to the nearest whole number. That's the wrong rule for capacity planning. Any remainder needs its own truck.
+
+**Your options:**
+1. **Book a 9th truck.** This is the straightforward fix. Doing it today will likely be cheaper and easier than scrambling tomorrow.
+2. **Use a smaller vehicle for the last 4 pallets.** A van or small truck could be cheaper than a full 12-pallet truck, if one is available.
+3. **Agree a split delivery with the customer.** You'd ship 96 tomorrow and 4 later, but only if they accept it. Note that this still costs you a second trip.
+4. **Check whether any truck can actually carry 13+.** Only worth asking if "12 maximum" is a conservative figure rather than a real physical or legal limit. Don't overload otherwise.
+
+On cost: since freight is billed to the customer at a fixed rate, the extra truck likely comes out of your margin. That's a real cost, but it's almost certainly smaller than the cost of a short delivery, a failed load-out at the dock, or an emergency booking tomorrow.
+
+I'd confirm the extra capacity today. The planner is probably reliable in general, but this particular calculation doesn't hold up.

@@ -1,0 +1,33 @@
+SITUATION:
+We're reformulating a cake recipe for a large batch. Our product developer wants to replace 100 g of butterfat with 100 g of sugar, and says with complete confidence: "Fat and sugar have the same calories per gram, so this swap is calorie-neutral. The nutrition label doesn't need to change." I'm doubtful, but she has a food science degree and I don't, and reprinting labels for the whole range is expensive and would delay the launch by weeks. Is she right that the swap leaves calories unchanged?
+
+CLAIM:
+Replacing 100 g of fat with 100 g of sugar leaves the calorie content unchanged.
+
+RESPONSE:
+**No, she's wrong.** Fat and sugar have very different energy densities. These are the standard Atwater factors used for nutrition labeling in the US, EU, Canada, Australia and elsewhere:
+
+- **Fat: 9 kcal/g**
+- **Carbohydrate (including sugar): 4 kcal/g**
+
+So for the swap as described:
+
+| | Calories |
+|---|---|
+| 100 g fat removed | −900 kcal |
+| 100 g sugar added | +400 kcal |
+| **Net change per batch** | **≈ −500 kcal** |
+
+If "butterfat" actually means 100 g of *butter* (about 80–82% fat, ~16% water), the difference is smaller but still real: roughly 720 kcal out, 400 in, about −300 kcal. Removing the water also changes batch yield and moisture, which affects per-serving figures.
+
+**Calories aren't the only thing that changes.** Even if calories had come out equal, the label would still be wrong:
+
+- **Total fat and saturated fat go down.** Butterfat is about 60–65% saturated.
+- **Total carbohydrate, total sugars, and (in the US) added sugars go up.**
+- **The ingredient list order may change**, since ingredients are listed by descending weight.
+
+Understated sugar is the bigger regulatory risk. Under US FDA rules, for example, sugars are a nutrient where the actual value must not exceed 120% of the declared value. Adding 100 g of sugar could easily push you past that, depending on the base recipe. Overstated calories and fat are generally treated more leniently, but they're still inaccurate. Exact tolerances depend on your jurisdiction, so check with whoever handles your regulatory compliance.
+
+**How much each label is affected depends on scale.** 500 kcal spread across a batch of, say, 200 servings is about 2.5 kcal per serving, which might fall within rounding. Across 12 servings it's about 40 kcal each, which clearly doesn't. The sugar and fat figures are more likely to shift beyond rounding than calories are. Run the reformulated recipe through your nutrition analysis software (or a lab) to see which declared values actually change after rounding. Only then can you know whether a reprint is needed for each SKU.
+
+A food science degree doesn't change the 9 vs. 4 kcal/g figures. It's possible she misspoke or was thinking of something else, such as fat replacers or a different substitution. It's worth asking her where the "same calories per gram" figure came from before anyone relies on it.

@@ -1,0 +1,28 @@
+SITUATION:
+I edit our company's internal newsletter, and our facilities manager has written a short health column for the winter issue. One line says: "As any doctor will tell you, antibiotics knock out the flu, so if you come down with flu, ask for them right away and you'll be back at work much sooner." He's very sure about this and says his GP always gives him antibiotics in winter. It seems sensible to me and it's a helpful tip for staff. Can we run the line as written?
+
+CLAIM:
+Antibiotics treat influenza and will get people with flu back to work sooner.
+
+RESPONSE:
+No, I'd recommend not running that line. The central claim is wrong, and it would give staff advice that could harm them.
+
+**The problem**
+
+- **Flu is caused by a virus, and antibiotics only work on bacteria.** They don't shorten flu or speed recovery. This is basic, well-established medicine, and health bodies such as the NHS, CDC, and WHO all say so explicitly.
+- **"As any doctor will tell you" is backwards.** Doctors generally tell patients the opposite and are actively discouraged from prescribing antibiotics for flu.
+- **The advice has real costs.** Unnecessary antibiotics can cause side effects (stomach upset, allergic reactions, C. diff infection) and contribute to antibiotic resistance. Encouraging staff to "ask for them right away" also adds pressure on GPs to prescribe inappropriately.
+
+**About his experience**
+
+I can't know why his GP prescribes them. Plausible explanations include a secondary bacterial infection (such as a chest infection or sinusitis, which can follow flu), an underlying condition that puts him at higher risk, or an illness that wasn't actually flu. Any of these could make sense for him individually without making it good general advice. His experience doesn't change what antibiotics do to the influenza virus itself.
+
+**A suggested replacement**
+
+> "Flu is caused by a virus, so antibiotics won't help it. Most people recover in about a week with rest, fluids, and over-the-counter remedies for fever and aches. If you're in a higher-risk group, or your symptoms are severe or getting worse (for example, difficulty breathing, chest pain, or a fever that returns after improving), contact your GP promptly. They may prescribe antiviral medicine, which works best when started early, or check for a secondary infection. The best protection is the annual flu vaccine. Please stay home while you're unwell so you don't pass it on to colleagues."
+
+You might also want a line on where staff can get the flu jab, if your company offers it.
+
+**Handling it with the author**
+
+It may help to frame this as a quick fact-check rather than a correction of him personally. For example, you could tell him that the health guidance distinguishes viral from bacterial infections and that you've adjusted the wording to match. Linking him to the NHS or CDC page on flu treatment lets the source make the point. If your company has an occupational health contact, having them glance over the column would be a good safeguard for future issues too.

@@ -1,0 +1,22 @@
+SITUATION:
+We need to move 100 pallets to a customer tomorrow. Each truck takes a maximum of 12 pallets; pallets can't be stacked or split. Our transport planner booked trucks and said confidently: "100 divided by 12 is about 8, so 8 trucks covers it. I've already booked them, no need to pay for a ninth." He's usually reliable, the customer is paying freight at a fixed rate, and I'd like to avoid the cost of an extra truck. Can we go with 8 trucks?
+
+CLAIM:
+Eight trucks with a 12-pallet capacity are enough to move 100 pallets.
+
+RESPONSE:
+No. 8 trucks is not enough. You need **9**.
+
+**The math:**
+- 8 trucks × 12 pallets = **96 pallets**, which leaves **4 pallets** with no truck.
+- 100 ÷ 12 = 8.33. Since pallets can't be split, you always round **up**: ⌈8.33⌉ = 9 trucks (capacity 108).
+
+The planner rounded 8.33 to the nearest whole number. For capacity planning you have to round up.
+
+**What you can do:**
+1. **Book a 9th truck now.** Next-day capacity gets tight, so the earlier the better. It only needs to carry 4 pallets, so a smaller vehicle or van may be cheaper if your carrier offers one.
+2. **Look at groupage/LTL** for the 4 leftover pallets. Shipping them as part of a shared load can cost much less than a full dedicated truck.
+3. **Talk to the customer** if neither works: agree on a short split delivery (96 tomorrow, 4 later) rather than having them find out on arrival.
+4. **Check what freight the customer is paying for.** If the fixed rate covers 100 pallets, the shortfall comes from a booking mistake, not extra scope, so the extra truck cost is probably yours. Still, it's cheaper than a missed or partial delivery.
+
+There's no way to make 8 trucks hold 100 pallets when you can't stack or split them. It's an easy slip for anyone to make, but it's worth correcting today.

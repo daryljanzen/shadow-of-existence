@@ -1,0 +1,43 @@
+SITUATION:
+We're specifying a handrail for a footbridge. Two options, same steel and the same weight per metre: a solid round bar 20 mm in diameter, or a hollow round tube 40 mm in outer diameter with a wall thickness chosen so its cross-sectional area, and so its weight, is the same as the bar's (that works out at a wall of roughly 2.7 mm). The fabricator says the tube will be considerably stiffer in bending. Our site manager says that can't be right: solid is always stronger than hollow, because there's no empty space, and the tube is the same amount of steel. I lean towards the fabricator but I'm not an engineer. Is the fabricator right?
+
+CLAIM:
+For the same material and weight per metre, the 40 mm tube will be considerably stiffer in bending than the 20 mm solid bar.
+
+RESPONSE:
+**Yes, the fabricator is right.** For the same weight, the 40 mm tube is about **7 times stiffer** in bending than the 20 mm bar, and about **3.5 times stronger** in bending before it starts to yield.
+
+## The numbers
+
+**Cross-sections (same area, so same weight):**
+- Solid bar, 20 mm diameter: area = π × 10² ≈ 314 mm²
+- Tube, 40 mm outer diameter: an inner diameter of about 34.6 mm gives the same 314 mm², which is a wall of about 2.7 mm. Your figure is correct.
+
+**Stiffness depends on the second moment of area, I.** Deflection under a given load is proportional to 1/I.
+- Bar: I = π·d⁴/64 = π × 20⁴/64 ≈ **7,850 mm⁴**
+- Tube: I = π·(D⁴ − d⁴)/64 = π × (40⁴ − 34.6⁴)/64 ≈ **55,000 mm⁴**
+- Ratio: about **7×**. Under the same load and span, the tube deflects about one-seventh as much.
+
+**Bending strength depends on the section modulus, Z = I / (distance to the outer fibre).**
+- Bar: 7,850 / 10 ≈ 785 mm³
+- Tube: 55,000 / 20 ≈ 2,750 mm³
+- Ratio: about **3.5×**. The tube carries about 3.5 times the bending moment before it yields.
+
+## Why the site manager's intuition fails
+
+"Solid is stronger than hollow" is true only when the outer size is the same. A 40 mm solid bar would beat a 40 mm tube, but it would also weigh about 4 times as much.
+
+In bending, the material near the centre does very little work. One side of the section is stretched and the other is compressed, and the middle barely strains. Material contributes to stiffness roughly in proportion to the square of its distance from the centre. A tube moves all its steel to the outside, where it does the most good. That is why scaffolding, bicycle frames, bones and plant stems are hollow.
+
+## Where the site manager has a point
+
+The tube is better in bending, but some real considerations are worth checking:
+- **Denting and local damage.** A 2.7 mm wall can be dented by a hard impact more easily than a solid bar. A diameter-to-thickness ratio of about 15 is quite stocky for a tube, though, so local buckling under normal handrail loads shouldn't govern.
+- **Corrosion.** A thin wall leaves less margin for section loss. The inside can corrode unseen if water gets in, so specify sealed ends or drainage and appropriate galvanizing or coating.
+- **Connections.** Welding or bolting to thin-walled tube needs more care than to solid bar.
+
+## A further point in the tube's favour
+
+Most handrail guidance and codes call for a graspable diameter of roughly 32 to 50 mm. A 20 mm bar is likely too thin to grip well and may not comply. Check this against your local code.
+
+The handrail should still be checked by whoever is responsible for the design, against the code's required loads and deflection limits and with the actual post spacing. But on the physics question itself, the fabricator is correct, and by a large margin.

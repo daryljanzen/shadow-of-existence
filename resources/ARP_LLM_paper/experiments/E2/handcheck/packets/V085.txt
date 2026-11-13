@@ -1,0 +1,61 @@
+SITUATION:
+Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, "Over three years the rewrite will be cheaper than continuing to maintain the Python system." His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?
+
+CLAIM:
+Rewriting the backend in Rust will be cheaper over three years than maintaining the existing Python system.
+
+RESPONSE:
+# Short answer: the information you have can't settle it either way
+
+Neither claim holds up yet. Your engineer's claim is untestable because he hasn't said how much maintenance will drop, and that number determines the outcome. Your claim that it's "obviously a vanity project" goes beyond the evidence: rewrites often overrun, but not always. What the numbers do show is that **the bar is high and the margin for schedule slip is thin.**
+
+## The arithmetic, using his own estimates
+
+Units are engineer-years, over three years.
+
+**Keep Python:** 3 engineers × 3 years = **9.0**
+
+**Rewrite:**
+- Rewrite effort: 3 engineers × 0.75 years = 2.25
+- Maintaining Python while the rewrite happens (it doesn't stop just because you're rewriting it): 3 × 0.75 = 2.25
+- Maintaining Rust for the remaining 2.25 years: 2.25 × M, where M is the new annual maintenance in engineers
+- **Total = 4.5 + 2.25M**
+
+**Break-even: M < 2.** If his schedule is exactly right, Rust maintenance must fall from 3 engineers to under 2, a cut of more than one third, just to come out ahead.
+
+## Schedule overruns change the result quickly
+
+| Rewrite takes | Rust maintenance must be below | Max savings if M = 1 |
+|---|---|---|
+| 9 months (his estimate) | 2.0 engineers | 2.25 eng-yrs |
+| 12 months | 1.67 | 1.0 |
+| 13.5 months (50% over) | 1.2 | ~0.4 |
+| 18 months (2× over) | **impossible to break even** | — |
+
+At a 2× overrun, which is common for a full rewrite of a large system, the rewrite costs at least 9 engineer-years before you pay anyone to maintain the Rust version. Over a three-year horizon it cannot win.
+
+## The model is also generous to the rewrite
+
+It leaves out several costs:
+- **Feature parity and requirement drift.** The Python system keeps changing during the rewrite, and those changes have to be ported too.
+- **Migration and cutover.** This includes data migration, running both systems in parallel, shadow traffic, and rollback plans.
+- **Rediscovered bugs.** Large old systems contain undocumented behavior that the rewrite will initially get wrong.
+- **Rust ramp-up and hiring.** Unless the whole team already knows Rust, it is a harder language to hire for and onboard into than Python.
+- **Opportunity cost.** Three engineers spend nine months or more producing no new features.
+
+## What would actually settle it
+
+1. **Ask him to name M and justify it.** Where do the three engineer-years of maintenance go today? Look at a sample of tickets or commits.
+   - If most of it is runtime type errors, concurrency bugs, memory or performance issues, Rust really could help.
+   - If it's mostly business-logic changes, integrations, dependency upgrades, and on-call for external failures, the language barely matters. Rust maintenance would be similar, possibly higher at first.
+2. **Ask what his estimate assumes.** Is it based on line counts, a module inventory, or a gut feeling? Has anyone on the team shipped a production Rust system?
+3. **Consider cheaper alternatives that target the same pain:**
+   - Stricter typing (mypy or pyright)
+   - Better test coverage
+   - Refactoring the worst modules
+   - Rewriting only the hot or fragile components in Rust (e.g., via PyO3)
+
+   These carry far less risk and let you measure whether Rust actually reduces maintenance before you commit to everything.
+4. **Extend the horizon if that's the real argument.** If the case for the rewrite rests on years 4 through 10, say so explicitly and run the numbers on that basis. Over three years, the case is weak unless both the schedule and the maintenance reduction hold up.
+
+**Bottom line:** under his own optimistic schedule, the rewrite wins only if maintenance falls by more than a third. A moderate overrun raises that requirement to roughly 60%, and a 2× overrun makes it a guaranteed loss within three years. That doesn't prove it's a vanity project. It does mean the burden of proof is on him to produce a defensible maintenance number, and so far he hasn't.

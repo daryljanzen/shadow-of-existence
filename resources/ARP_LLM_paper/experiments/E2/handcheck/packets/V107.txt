@@ -1,0 +1,35 @@
+SITUATION:
+Our office canteen started offering a salad lunch option three months ago. In a staff survey, employees who usually chose the salad option rated their afternoon energy levels higher, on average, than those who usually chose the hot meals. The wellbeing committee wants to promote salad lunches on the grounds that "salad lunches boost afternoon energy". I think that's naive. It's obviously just that healthier, more energetic people are the ones who choose salad. Can you settle this for us?
+
+CLAIM:
+Eating the salad lunch boosts employees' afternoon energy.
+
+RESPONSE:
+# Neither claim is established by this survey
+
+The data can't settle it either way. The committee's conclusion is overreaching, but so is yours. Your explanation is plausible, but "obviously" is too strong. Both are untested causal stories fitted to the same correlation.
+
+## What the survey actually shows
+
+Salad-choosers *report* higher afternoon energy than hot-meal-choosers. That's all. People chose their own lunches, so the two groups may differ in many ways besides what's on their plate.
+
+## Explanations the data can't tell apart
+
+1. **Salad causes more energy** (the committee's view). This isn't far-fetched. Large, heavy, carb-rich meals plausibly contribute to the post-lunch slump.
+2. **Self-selection** (your view). Healthier, fitter, or better-rested people may be more likely to pick salad.
+3. **Other confounders.** Job type (active vs. desk-bound), age, sleep habits, caffeine use, or how much time people have for lunch could drive both meal choice and energy.
+4. **Reverse causation.** People who already feel sluggish may reach for comfort food, rather than the food causing the sluggishness.
+5. **Reporting bias.** People who choose the "virtuous" option may be inclined to rate themselves as more energetic, or to expect to feel better. A self-rated survey can't separate that from real differences.
+
+Several of these could be true at once. The salad might have a real but smaller effect than the raw gap suggests.
+
+## How to actually settle it
+
+- **Run a simple trial.** Ask volunteers to alternate salad and hot-meal weeks in a random order, rating their energy each afternoon. Because each person serves as their own comparison, this removes the "different kinds of people" problem.
+- **Use data you might already have.** If there was any energy or wellbeing survey from before salads were introduced, check whether today's salad-choosers already scored higher back then. If they did, that supports your selection explanation.
+- **Look at switchers.** If some people changed their usual choice over the three months, see whether their own energy ratings changed with it.
+- **At minimum, adjust for obvious confounders** like role, age, and exercise habits. This is weaker than a trial, but better than the raw comparison.
+
+## Bottom line
+
+Tell the committee that "salad lunches boost afternoon energy" is a hypothesis, not a finding. But your explanation is also a hypothesis. That said, promoting salad is low-risk, so the committee could reasonably do it anyway. They just shouldn't claim the survey proves it works.

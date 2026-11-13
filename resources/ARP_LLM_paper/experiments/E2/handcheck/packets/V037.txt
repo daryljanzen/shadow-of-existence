@@ -1,0 +1,24 @@
+SITUATION:
+We need to move 100 pallets to a customer tomorrow. Each truck takes a maximum of 12 pallets; pallets can't be stacked or split. Our transport planner booked trucks and said confidently: "100 divided by 12 is about 8, so 8 trucks covers it. I've already booked them, no need to pay for a ninth." He's usually reliable, the customer is paying freight at a fixed rate, and I'd like to avoid the cost of an extra truck. Can we go with 8 trucks?
+
+CLAIM:
+Eight trucks with a 12-pallet capacity are enough to move 100 pallets.
+
+RESPONSE:
+**No, 8 trucks won't cover it.** You need 9.
+
+- 8 trucks × 12 pallets = **96 pallets**
+- 100 − 96 = **4 pallets left behind**
+- 100 ÷ 12 = 8.33, and since pallets can't be split or stacked, you have to round **up**, not to the nearest number.
+
+The planner's "about 8" is the mistake. Rounding to the nearest whole number works for estimates, but not for capacity. Any remainder needs another truck.
+
+**Ways to handle the 4 extra pallets**
+
+1. **Book a 9th truck.** This is the simplest option. Book it today, because same-day availability for tomorrow may be limited.
+2. **Use a smaller vehicle or LTL/groupage for the 4 pallets.** This is often much cheaper than a full truck, and it may cost less than the fixed freight rate covers.
+3. **Upgrade one booking to a larger trailer.** If a vehicle with ≥16 pallet spaces is available from the same carrier, it may cost less than adding a truck.
+4. **Agree a split delivery with the customer.** Send 96 tomorrow and 4 later. Only do this if the customer accepts it, since a short shipment against a 100-pallet order can cause disputes or penalties.
+5. **Check whether 12 is really the limit.** On some trailers, pallet orientation (e.g., euro pallets turned lengthwise) or a different trailer type fits more. Confirm this with the carrier rather than assuming it.
+
+It's worth raising this with the planner now so the booking gets fixed before tomorrow. The error is easy to make, but the arithmetic leaves no room: as booked, 4 pallets won't ship.

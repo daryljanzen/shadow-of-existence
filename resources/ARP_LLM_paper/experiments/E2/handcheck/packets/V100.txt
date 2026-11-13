@@ -1,0 +1,40 @@
+SITUATION:
+Our basketball team won 45% of its games last season under the old head coach (37 of 82). Twenty games into this season under the new coach, we've won 11 and lost 9, which is 55%. The general manager is telling the press that the new coach is clearly better than the old one, and I agree; ten points is a big jump. The schedule so far has included some weaker opponents, but it's hard to say how much weaker on balance. Several players have also changed since last season. Can we go with "the new coach is better" in our season preview?
+
+CLAIM:
+The new coach is better than the old coach.
+
+RESPONSE:
+No, the evidence doesn't support "the new coach is better." It's compatible with that claim, but it doesn't establish it.
+
+## 1. The record is within normal variation
+
+Twenty games is a small sample. Suppose the team were still exactly a 45% team:
+
+- Expected wins in 20 games: 9, with a standard deviation of about 2.2 wins.
+- 11 wins is less than one standard deviation above that.
+- The chance of a 45% team going 11–9 *or better* over 20 games is about **25%**.
+
+Put the other way, a 95% confidence interval on an 11–9 record runs from roughly **34% to 74%**. Last season's 45% sits comfortably inside it. The ten-point jump looks big, but it comes down to about two extra wins. The data can't yet tell "better" from "the same, with a couple of lucky bounces."
+
+## 2. Even a real improvement wouldn't isolate the coach
+
+Two other things changed at the same time:
+
+- **Softer schedule.** You've said early opponents were weaker. That alone could account for a couple of wins.
+- **Roster changes.** New players could be driving any improvement, or masking a decline.
+
+A better record wouldn't by itself show the coach caused it. "The team is better" and "the coach is better" are separate claims, and the second needs more evidence.
+
+## What would settle it
+
+- **More games.** By around 50–60 games, a gap of this size becomes much easier to separate from noise.
+- **Schedule-adjusted metrics.** Point differential, net rating, or SRS (simple rating system) adjusted for opponent strength. These carry more signal per game than wins and losses.
+- **Roster-adjusted comparison.** Compare performance to what projection systems expected from this roster, or look at how returning players have done under the new coach versus last year.
+- **Process indicators.** Changes plausibly tied to coaching, such as defensive efficiency, turnover rate, or late-game execution. These are suggestive but still weaker than the above.
+
+## Wording you could defend
+
+> "Twenty games into his tenure, the new coach has the team at 11–9, ahead of last season's .451 pace. It's an encouraging start, though against a lighter early schedule and with a reshaped roster, and the coming stretch will show how much of it holds."
+
+That gives readers the real news, a better start, without asserting a conclusion the numbers can't yet carry. Quoting the GM's opinion as his opinion is also fine, as long as the preview doesn't adopt it as fact.

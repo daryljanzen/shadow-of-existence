@@ -1,0 +1,35 @@
+SITUATION:
+Our office canteen started offering a salad lunch option three months ago. In a staff survey, employees who usually chose the salad option rated their afternoon energy levels higher, on average, than those who usually chose the hot meals. The wellbeing committee wants to promote salad lunches on the grounds that "salad lunches boost afternoon energy". I think that's naive. It's obviously just that healthier, more energetic people are the ones who choose salad. Can you settle this for us?
+
+CLAIM:
+Eating the salad lunch boosts employees' afternoon energy.
+
+RESPONSE:
+Neither claim is settled by this survey. The committee's conclusion overreaches, but yours does too. "Obviously just self-selection" is also a causal claim, and the data doesn't show it.
+
+## What the survey shows
+
+Salad-choosers reported higher afternoon energy on average. That's a correlation. Several explanations fit it equally well:
+
+1. **Salad causes more energy.** This is plausible: lighter, lower-glycaemic meals may reduce the post-lunch dip.
+2. **Selection.** People who are already healthier, more active, or better rested pick salad. This is your explanation.
+3. **Reverse causation.** People who feel sluggish may seek out hot, heavy comfort food.
+4. **Confounders.** Job type, age, commute, sleep, coffee habits, or which floor is near the canteen could drive both choices.
+5. **Reporting bias.** People who chose the "healthy" option may rate themselves more positively to stay consistent with that choice. Self-rated energy in a survey is soft data.
+6. **Survey artefacts.** Who responded, how "usually chose" was defined, and whether the difference is larger than noise all matter.
+
+These aren't mutually exclusive. Selection and a real effect could both be at work.
+
+## What would settle it
+
+Roughly from strongest to most practical:
+
+- **Randomised trial.** Randomly assign volunteers to salad or hot-meal lunches for a few weeks each, ideally as a crossover so everyone tries both. Measure energy on the same scale each afternoon. This is the only design that cleanly separates cause from selection.
+- **Within-person comparison using existing data.** If you can link individuals' daily canteen purchases to daily energy ratings, compare each person's energy on their salad days with their hot-meal days. This controls for stable traits like baseline fitness, which directly tests your selection hypothesis. Day-to-day confounders remain, such as choosing salad on days you already feel good.
+- **Before/after comparison.** Did average afternoon energy across all staff change after salad was introduced three months ago? This needs a pre-introduction baseline, and other changes over that period (season, workload) muddy it.
+- **Adjusting for confounders.** If the survey also recorded exercise, sleep, age, or role, check whether the salad gap shrinks once those are controlled for. If it disappears, that supports selection. If it persists, that weakens it, though it can't rule out unmeasured factors.
+- **Basic checks first.** Look at sample sizes, how large the difference is, and whether it's statistically distinguishable from chance. If the gap is small or the groups are tiny, there may be nothing to explain.
+
+## Practical note
+
+Promoting salad as an *option* is low-risk and doesn't need proof of an energy effect. The specific claim "salad lunches boost afternoon energy" does need evidence, though. If the committee wants to make that claim, a short crossover trial with volunteers would be cheap and would give a real answer to both of you.

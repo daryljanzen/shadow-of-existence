@@ -1,0 +1,46 @@
+SITUATION:
+At our basketball academy, after the first 20 free throws of the season we picked the 15 players with the lowest percentages and sent them to a shooting clinic. Over their next 20 attempts, the group's average went from 48% to 61%. The head coach wants to put this in the brochure as proof the clinic works. Our analyst, Ines, suggested, rather hesitantly, that we would expect that group's average to rise on the next 20 attempts even if there had been no clinic at all, because 20 shots is a noisy sample and we chose these players precisely because their numbers were unusually low. The coach thinks that's just an excuse to dismiss good coaching. I think Ines has a point but I don't want to insult the coach. Is she right?
+
+CLAIM:
+A group selected for low percentages on a noisy 20-shot sample would be expected to improve on the next 20 shots even without the clinic.
+
+RESPONSE:
+Yes, Ines is right. Her point doesn't mean the clinic failed. It means this data can't tell you whether it worked.
+
+## Why the rise is expected anyway
+
+This is **regression to the mean**. A player's percentage over 20 shots is their true skill plus a lot of luck. You picked the 15 lowest scores, so you mostly picked players who are somewhat weaker *and* had an unlucky start. On the next 20 shots the skill stays but the bad luck mostly doesn't repeat, so the group average rises even if nothing changes.
+
+The luck in 20 free throws is large. For a player whose true rate is about 60%, the standard deviation of their percentage over 20 shots is √(0.6 × 0.4 / 20) ≈ **11 percentage points**. A true 60% shooter will land at 45% or below fairly often. Selecting the bottom 15 pulls in exactly those players.
+
+## How big could the effect be?
+
+That depends on numbers I don't have. Here is an illustration with assumed figures:
+
+- Suppose the full roster averaged about 65%.
+- Suppose true skill varies across players by about 8–10 points, against roughly 11 points of shot-to-shot noise.
+
+Then only around 35–45% of a player's distance from the average reflects real skill. A group at 48% would be expected to drift back to roughly **57–60% with no clinic at all**. On those assumptions, most of the 13-point gain could be regression. On other assumptions (much bigger skill gaps, a smaller roster) less of it would be. Ines's point is that you can't tell which from this design.
+
+Players also tend to improve early in a season regardless, which further muddies the before/after comparison.
+
+## What would settle it
+
+Any of these, roughly from strongest to weakest:
+
+1. **A comparison group.** Look at the players ranked just above the cutoff, say 16th to 30th, who didn't attend. If they also improved a lot, that is regression and general improvement. If the clinic group improved clearly *more*, that is evidence for the clinic.
+2. **Randomization next time.** Take the bottom 30 and randomly send half to the clinic. This is the cleanest test, and it is easy for an academy to run.
+3. **Historical data.** If you have past seasons' records, check how much the bottom 15 after 20 shots typically improved with no clinic.
+4. **More shots.** Measuring before and after over 50–100 attempts reduces the luck component a lot.
+
+## Raising it with the coach
+
+Some framings that tend to land well:
+
+- "We think the clinic works. We want the brochure claim to hold up if a sharp parent or a rival program pokes at it."
+- "Any group picked for a bad start would bounce back somewhat, even with no clinic. If we compare against the players who just missed the cut, we can show how much of the jump is *the clinic's* doing."
+- Offer to run the comparison yourself. If the clinic group beats the comparison group, the coach ends up with a much stronger claim than "48% to 61%."
+
+That casts Ines as helping the coach prove his point properly. That's what she's doing.
+
+If you share the full roster's first-20 and next-20 numbers, I can run the comparison-group check for you.

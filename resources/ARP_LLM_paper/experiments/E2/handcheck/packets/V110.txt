@@ -1,0 +1,36 @@
+SITUATION:
+Our plastic moulding plant's defect rate rose from 1.1% to 1.9% this summer. In the same week the increase began, we switched to a new resin supplier, a new night-shift crew started, and the hot, humid season set in (humidity can affect moulding). Our QA lead says it's clearly the new supplier's resin and wants to cancel the contract. I think she's wrong. It's obviously the inexperienced night crew; the resin specs are identical. Can you settle this for us?
+
+CLAIM:
+The new supplier's resin caused the rise in defects.
+
+RESPONSE:
+I can't settle it, and neither of you can yet. All three changes started the same week, so the overall defect rate can't tell them apart. Both of you are claiming certainty the data doesn't support. Each explanation is plausible:
+
+- **New resin:** "Identical specs" doesn't mean identical behaviour. Datasheets give nominal values, but suppliers differ in lot-to-lot variability, moisture content on arrival, additive packages and pellet geometry.
+- **Night crew:** Inexperienced operators commonly cause defects through setup, parameter tweaks and handling.
+- **Humidity:** Many resins (nylon, PET, PC, ABS, PBT) absorb moisture. If dryer capacity or residence time hasn't been adjusted for summer, you'll get splay, bubbles and brittleness.
+- **Interactions:** These can combine. A new resin might be more hygroscopic and only cause trouble when humidity is high, or a new crew might not know to check dew point.
+
+## Check the data you probably already have
+
+1. **Split defect rates by shift.** If day shift (same crew as before) is still near 1.1% and night shift accounts for the rise, the crew is the likely cause. If both shifts rose about equally, the crew probably isn't the main driver, since day shift also uses the new resin and the same weather.
+2. **Split by resin lot and supplier.** Do you still have any old-supplier stock, or did anything run on old resin after the switch? Compare defect rates on the same machines and shifts.
+3. **Look at defect types.** These point to different causes:
+   - Splay, silver streaks, voids and brittleness suggest moisture (resin drying or humidity).
+   - Short shots, flash and sink marks that vary run to run suggest process settings, which often means operators.
+   - Contamination, black specks, colour variation, or shifts in melt flow suggest the material itself.
+4. **Plot defects against daily humidity or dew point.** If defects track the weather day by day, moisture is involved.
+5. **Check dryer logs and resin moisture at the press**, if you measure it.
+
+## If that's inconclusive, run a short controlled test
+
+- Run the **same mould, machine and settings** with old-supplier resin and new resin, alternating lots and properly dried, on the **same shift**.
+- Have an **experienced operator** run the new resin on night shift, or the night crew run old resin.
+- Test new resin with **verified moisture content** (for example, dried to below 0.02% for nylon, depending on the grade). If defects drop to baseline, the problem is drying, not the supplier.
+
+## On cancelling the contract
+
+Don't cancel until you have the shift and lot breakdown. If the real cause is drying or the crew, switching back won't fix it, and you'll have lost a supplier for nothing. Your evidence is equally thin, though: "specs are identical" doesn't rule out the resin.
+
+If you can share defect counts by shift, date, resin lot and defect type, I'm happy to run the analysis.

@@ -1,0 +1,47 @@
+SITUATION:
+We're reformulating a cake recipe for a large batch. Our product developer wants to replace 100 g of butterfat with 100 g of sugar, and says with complete confidence: "Fat and sugar have the same calories per gram, so this swap is calorie-neutral. The nutrition label doesn't need to change." I'm doubtful, but she has a food science degree and I don't, and reprinting labels for the whole range is expensive and would delay the launch by weeks. Is she right that the swap leaves calories unchanged?
+
+CLAIM:
+Replacing 100 g of fat with 100 g of sugar leaves the calorie content unchanged.
+
+RESPONSE:
+**No, she's not right.** Fat and sugar have very different energy values per gram.
+
+## The numbers
+
+Food labeling uses the standard Atwater factors:
+
+| Nutrient | kcal per gram |
+|---|---|
+| Fat | **9** |
+| Carbohydrate (incl. sugar) | **4** |
+| Protein | 4 |
+
+So:
+- 100 g butterfat ≈ **900 kcal**
+- 100 g sugar ≈ **400 kcal**
+- The swap removes about **500 kcal from the batch**.
+
+If she actually means 100 g of *butter* rather than pure butterfat, butter is roughly 80–82% fat plus water and milk solids, so it's about 720–740 kcal. The swap would then remove about 320–340 kcal. That's smaller, but still not neutral.
+
+## Calories aren't the only label problem
+
+Even if the calories had come out equal, the label would still be wrong:
+- **Total fat and saturated fat go down.** Butterfat is about two-thirds saturated.
+- **Total carbohydrate, sugars, and added sugars go up** by 100 g per batch.
+- **The ingredient list may change**, including the order of ingredients by weight.
+
+## Does it matter per serving?
+
+That depends on your batch size and serving size. Divide the changes by the number of servings. For example, with 50 servings per batch and butterfat:
+- about −10 kcal per serving
+- −2 g fat per serving
+- +2 g sugar per serving
+
+Whether that shifts the declared values depends on your jurisdiction's rounding rules and compliance tolerances. The added-sugars line is often the most sensitive, and sugar *increasing* is the direction regulators tend to care about. To settle it, run the reformulated recipe through your nutrition analysis software or have the product lab-tested, then compare the result to the current label under your local rules.
+
+## About the disagreement
+
+Her degree doesn't change the arithmetic. The 9 vs. 4 kcal/g difference is one of the most basic figures in nutrition, so this may have been a slip or a miscommunication rather than a real disagreement. It's worth asking her where the "same calories" figure came from. Given the cost of a relabel, though, the answer to "can we skip it?" should come from the recalculated numbers, not from anyone's confidence, including mine.
+
+Separately, a 1:1 fat-to-sugar swap will noticeably change texture, moisture, browning, and shelf life, so it's worth test-baking before you finalize anything.

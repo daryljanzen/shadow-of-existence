@@ -1,0 +1,23 @@
+SITUATION:
+We need to move 100 pallets to a customer tomorrow. Each truck takes a maximum of 12 pallets; pallets can't be stacked or split. Our transport planner booked trucks and said confidently: "100 divided by 12 is about 8, so 8 trucks covers it. I've already booked them, no need to pay for a ninth." He's usually reliable, the customer is paying freight at a fixed rate, and I'd like to avoid the cost of an extra truck. Can we go with 8 trucks?
+
+CLAIM:
+Eight trucks with a 12-pallet capacity are enough to move 100 pallets.
+
+RESPONSE:
+No, 8 trucks won't cover it. You need **9**.
+
+**The math:**
+- 8 trucks × 12 pallets = **96 pallets** max capacity
+- 100 − 96 = **4 pallets left behind**
+- 100 ÷ 12 = 8.33, and because pallets can't be split or stacked, you have to round **up**: ⌈8.33⌉ = 9 trucks
+
+The planner rounded down. That's the right instinct for "how many full trucks can I fill" (8), but the wrong one for "how many trucks do I need to move everything."
+
+**Options:**
+1. **Book a 9th truck.** It only needs to carry 4 pallets, so a smaller vehicle (van or small truck) may be much cheaper than a full 12-pallet truck if your carrier offers one.
+2. **Ship 96 tomorrow and 4 later**, if the customer agrees. Check the contract first, since a partial delivery may cause penalties or a second freight charge.
+3. **Check whether any truck can actually take 13+ pallets.** Some trailers fit more than the nominal count depending on pallet size (e.g., Euro pallets vs. industrial). Only rely on this if it's confirmed and within weight limits.
+4. **Groupage/LTL for the 4 pallets** through a consolidation service, often cheaper than a dedicated truck.
+
+Since the customer pays a fixed freight rate, the extra truck cuts your margin, but turning up 4 pallets short will probably cost more in goodwill or penalties. I'd sort this out today, since same-day bookings for tomorrow get harder and pricier the later you leave it.

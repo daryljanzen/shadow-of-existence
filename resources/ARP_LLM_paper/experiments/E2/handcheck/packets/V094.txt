@@ -1,0 +1,40 @@
+SITUATION:
+We redesigned the layout of our Riverside store in March. Over March to August, Riverside's sales were up 8% on the same months last year, while our other eleven stores were roughly flat. Our regional manager wants to roll the redesign out chain-wide and says the redesign clearly caused the 8% jump. One wrinkle: a competing store two streets away from Riverside closed down in the same month as our redesign. The manager says that's a coincidence and doesn't change the picture. I'm inclined to agree with him; the timing with the redesign is too neat to ignore. Can we go with "the redesign caused the increase" in the board paper?
+
+CLAIM:
+The store redesign caused Riverside's 8% sales increase.
+
+RESPONSE:
+**No. The evidence doesn't support "the redesign caused the increase," and putting that in a board paper would overstate what you know.**
+
+## Why the timing doesn't settle it
+
+The timing argument cuts both ways. The competitor closure is *exactly* as well-timed as the redesign: same store, same month, same window. Whatever "too neat to ignore" means for the redesign, it means equally for the closure. You have one store with two simultaneous changes and one outcome, so the data can't tell them apart.
+
+The closure is also a very plausible cause on its own. A competitor two streets away shutting down would be expected to send some of its customers to you. An 8% lift from that alone wouldn't be surprising. Calling it "a coincidence" doesn't remove it as an explanation. Coincidental timing is precisely what creates the confound.
+
+The comparison with the other eleven stores rules out chain-wide factors like seasonality, the economy, or marketing. But it can't separate the two Riverside-specific changes, because neither happened at the other stores.
+
+## What the data is consistent with
+
+- The redesign drove most of the lift
+- The closure drove most of the lift, and the redesign did little
+- Both contributed
+- The redesign actually hurt, but the closure masked it
+
+Right now you can't distinguish these.
+
+## What would help settle it
+
+Roughly from quickest to most decisive:
+
+1. **Look inside the Riverside numbers.** Did basket size or conversion rate rise (more redesign-like), or mainly footfall and new-customer counts (more closure-like)? Did categories the competitor was strong in jump disproportionately? Loyalty-card data showing new customers from the competitor's catchment would be telling.
+2. **Check the timeline more finely.** Weekly data around March might show whether the lift started at the redesign date or the closure date, if they weren't the same day.
+3. **Use other closure cases.** If any of your stores has previously had a nearby competitor close, how much did sales rise? That gives a rough benchmark for how much of the 8% the closure could explain.
+4. **Pilot before rolling out.** Redesign two or three more stores with no competitive change, ideally paired with similar control stores, and measure for a few months. This is the decisive test, and it costs much less than a chain-wide rollout that might not work.
+
+## Suggested board-paper wording
+
+> "Riverside sales rose 8% year-on-year over March–August following the layout redesign, against flat performance across the other eleven stores. However, a nearby competitor closed in the same month, so we cannot yet attribute the increase to the redesign. We recommend piloting the redesign in [2–3] further stores before a chain-wide rollout."
+
+That's honest, still positive about the redesign, and protects you and the regional manager if the rollout underperforms. A board member who spots the competitor closure, and someone likely will, would otherwise question the whole paper.

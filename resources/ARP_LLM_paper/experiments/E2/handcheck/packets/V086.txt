@@ -1,0 +1,34 @@
+SITUATION:
+Our plastic moulding plant's defect rate rose from 1.1% to 1.9% this summer. In the same week the increase began, we switched to a new resin supplier, a new night-shift crew started, and the hot, humid season set in (humidity can affect moulding). Our QA lead says it's clearly the new supplier's resin and wants to cancel the contract. I think she's wrong. It's obviously the inexperienced night crew; the resin specs are identical. Can you settle this for us?
+
+CLAIM:
+The new supplier's resin caused the rise in defects.
+
+RESPONSE:
+I can't settle it from what you've described, and neither can your QA lead. All three changes started in the same week, so the overall defect rate rising from 1.1% to 1.9% fits each explanation equally well. It also fits a combination. For example, if the new resin absorbs moisture more readily, it might only cause trouble in humid weather.
+
+A few cautions for both positions:
+
+- **"The specs are identical" doesn't rule out the resin.** Datasheets cover nominal properties. Lot-to-lot variation, moisture content on arrival, additive packages, regrind content and melt flow consistency can all differ within spec. If your resin is hygroscopic (nylon, PC, PET, PBT, ABS), moisture handling matters a lot.
+- **"It's clearly the resin" is also unproven.** The timing points equally to the night crew and the weather.
+- **Humidity is a real candidate.** It can affect resin drying, mould condensation and part dimensions.
+
+## What would settle it
+
+You probably already have most of this data.
+
+1. **Split defects by shift.** If the day shift, with its unchanged crew, also rose to around 1.9%, the night crew isn't the main cause. If only nights rose, the crew becomes the leading suspect, though night-time humidity and temperature differ too.
+2. **Split by defect type.** Different causes leave different signatures:
+   - Splay, silver streaks, bubbles and brittleness usually point to moisture, from the resin, the drying or the weather.
+   - Short shots, flash, wrong settings, handling damage and setup errors after changeovers usually point to the operators.
+   - Gels, black specks, colour variation and changed flow behaviour usually point to the material.
+3. **Split by resin lot and supplier.** If you have any old-supplier resin left, or can get a small quantity, run it alongside the new resin on the same machine, shift and day. This head-to-head comparison is the most direct test of your QA lead's claim.
+4. **Correlate with humidity and dryer data.** Log ambient humidity, dryer dew point and resin moisture before moulding. If defects follow humid days regardless of shift or lot, the weather (via drying) is the driver.
+5. **Split by machine and mould.** If the increase is concentrated on one press or tool, that points elsewhere entirely.
+6. **Check that the increase is real.** With a large production volume, 1.1% to 1.9% is almost certainly not noise. With only a few thousand parts, check the counts and confidence intervals.
+
+## On cancelling the contract
+
+I'd hold off until at least steps 1–3 are done. Cancelling now risks getting rid of a supplier who isn't the problem while the real cause continues. The comparison is cheap and fast, and its result should end the disagreement whichever of you turns out to be right.
+
+If you can share defect counts broken down by shift, defect type, resin lot and date, plus humidity logs, I can run the analysis for you.

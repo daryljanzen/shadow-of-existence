@@ -1,0 +1,35 @@
+SITUATION:
+We ran an A/B test of our new checkout design. The old design (A) got 100 purchases from 2,000 visitors (5.0%), and the new design (B) got 104 purchases from 2,000 visitors (5.2%). The difference isn't statistically significant. Our head of product says: "The test shows the two designs perform the same, so the redesign makes no difference to conversion and we can stop worrying about it." I agree; there's no significant difference, so they're equivalent. We want to close the ticket. Can we go with this?
+
+CLAIM:
+The test shows the new checkout design makes no difference to conversion.
+
+RESPONSE:
+**No. "Not statistically significant" doesn't mean "equivalent."** The test failed to detect a difference, but it was too small to detect any difference you'd plausibly care about.
+
+## What the data actually says
+
+- Difference: B − A = +0.2 percentage points (5.2% vs 5.0%)
+- p ≈ 0.77
+- **95% confidence interval for the difference: about −1.2 pp to +1.6 pp**
+
+In relative terms, that interval runs from roughly **B is 23% worse to B is 31% better**. The data is consistent with the redesign meaningfully hurting conversion, meaningfully helping it, or doing nothing. That's "we don't know," not "no difference."
+
+## Why: the test was underpowered
+
+With 2,000 visitors per arm at a ~5% baseline, the smallest effect you'd reliably detect (80% power, α = 0.05) is about ±1.9 pp, or a **~39% relative change**. Checkout redesigns rarely move conversion that much. Realistic effects are more like 5–10% relative.
+
+To reliably detect a 10% relative lift (5.0% → 5.5%), you'd need roughly **31,000 visitors per arm**, about 15× what you ran.
+
+## What you can legitimately conclude
+
+- You have no evidence that B is dramatically better or worse (e.g., ±40%).
+- You **cannot** conclude the redesign "makes no difference." A 10–20% swip in either direction would fit this data, and on checkout revenue that matters.
+
+## Options
+
+1. **If you need to know the effect**, keep running the test to an adequate sample size, chosen in advance from the smallest effect you care about. Don't keep peeking and stopping when it looks significant.
+2. **If you want to claim equivalence**, define an equivalence margin up front (e.g., "within ±5% relative counts as the same") and run an equivalence test (TOST). Your current interval is far wider than any reasonable margin, so the current data fails that test.
+3. **If you're closing the ticket for practical reasons** (e.g., you're shipping B for design or maintenance reasons and accept the uncertainty), that's a legitimate business decision. Just record it accurately: *"Test was inconclusive (95% CI −23% to +31% relative); shipping B for [reason]; conversion impact unknown."* Don't record it as "the designs perform the same," because someone may later rely on that as a finding.
+
+I'd push back on the head of product's wording specifically. The decision may be fine, but the stated conclusion isn't supported.

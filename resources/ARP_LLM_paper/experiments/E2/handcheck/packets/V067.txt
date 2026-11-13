@@ -1,0 +1,32 @@
+SITUATION:
+Our assembly line can only start a production run when parts from all three of our suppliers have arrived. Each supplier independently delivers on time 90% of the time. Our operations director said in the review, with total confidence: "Every supplier is 90% reliable, so we start on time 90% of the time. That's the number we'll quote to the customer." It sounds right to me; they're all at 90%, so the whole chain is at 90%. Can we quote 90% on-time starts to the customer?
+
+CLAIM:
+If each of three independent suppliers is on time 90% of the time and all three are needed, runs start on time 90% of the time.
+
+RESPONSE:
+**No, 90% is not the right number.** If you need all three suppliers on time and each is independently on time 90% of the time, the probabilities multiply:
+
+**0.9 × 0.9 × 0.9 = 0.729, so about 73% on-time starts.**
+
+**Why the director's reasoning fails:** "Each link is 90%" doesn't mean "the chain is 90%." Each supplier separately has a 10% chance of being late, and *any one* of them being late delays the start. Roughly, that's three chances to slip:
+
+| Outcome | Probability |
+|---|---|
+| All three on time | 72.9% |
+| Exactly one late | 24.3% |
+| Two or more late | 2.8% |
+
+So about **27% of runs would start late**, almost three times the 10% the director's figure implies. Quoting 90% would set you up to miss the commitment about one run in four instead of one in ten.
+
+**What the 73% depends on:**
+
+- **Independence.** You stated this, so 72.9% is correct under that assumption. In practice, lateness is often correlated (shared weather, the same freight carrier, port congestion, holidays). Positive correlation makes the real figure *higher* than 73%, up to a ceiling of 90% if the suppliers were always late together. It can never exceed 90%, so the director's number is the best case, not the expected case.
+- **What "90%" measures.** Check whether it's from actual delivery records or the suppliers' own claims, how large the sample is, and whether "on time" means arriving early enough to start the run, not just by the PO date.
+- **Buffers.** Safety stock or lead-time slack can make supplier lateness not delay the start. That would change the calculation entirely.
+
+**What would settle it:** Your own historical data on how often runs actually started on time, or how often all three shipments were on time for the same run. That captures any correlation directly and beats any model.
+
+**If 90% is commercially necessary,** you'd need each supplier at about 96.5% (since 0.965³ ≈ 0.90), or buffer stock or dual-sourcing for the least reliable parts.
+
+My recommendation: don't quote 90%. Quote around 73%, or a figure backed by your actual start-time history, and fix the supply side if the customer needs more.

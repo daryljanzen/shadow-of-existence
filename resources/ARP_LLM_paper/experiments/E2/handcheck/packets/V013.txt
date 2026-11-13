@@ -1,0 +1,47 @@
+SITUATION:
+I sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: "It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off." I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?
+
+CLAIM:
+With five-year stroke risk falling from 2% to 1%, about 100 people need to be treated for five years to prevent one stroke.
+
+RESPONSE:
+**Yes, the pharmacist's figure is right. Your colleague's figure is also right.** They describe the same result in two ways, and a good leaflet should use both.
+
+## The arithmetic
+
+| | Placebo | Drug |
+|---|---|---|
+| Strokes over 5 years, per 100 people | 2 | 1 |
+
+- **Relative risk reduction:** 1 is half of 2, so the risk is cut by 50%. This is your colleague's figure.
+- **Absolute risk reduction:** 2% − 1% = 1 percentage point.
+- **Number needed to treat:** 1 ÷ 0.01 = 100. On average, about 100 people take the drug for 5 years to prevent one stroke. This is the pharmacist's figure.
+
+## Why the relative figure alone isn't enough
+
+"Halves the risk" is true but incomplete. Halving a 2% risk and halving a 40% risk are both "50% reductions," yet they mean very different things for the person taking the pill. Research on risk communication consistently finds that relative figures on their own make benefits seem larger than they are and lead people to overestimate what they'll gain. That's why good-practice guidance for patient information recommends absolute numbers, ideally as natural frequencies with the same denominator ("out of 100 people").
+
+So the aim isn't to scare people off. It's to let them weigh a real benefit against costs, side effects and daily pill-taking. A reader who takes the drug believing it gives them a 50% chance of avoiding a stroke has been misinformed, even though every word was technically true.
+
+## One tweak to the wording
+
+Your colleague's paraphrase, "only one in a hundred benefits," isn't quite what NNT means. NNT is an average. It doesn't identify which individual is helped, and it doesn't mean the other 99 got nothing. Some of them were never going to have a stroke within 5 years anyway.
+
+Wording that's accurate and fair to both views might be:
+
+> *In the main trial, over 5 years, about 2 in every 100 people taking a dummy pill had a stroke, compared with about 1 in every 100 people taking [drug]. In other words, the drug roughly halved the risk of stroke. Put another way, about 100 people need to take it for 5 years to prevent one stroke.*
+
+Pictograms (100 figures with 2 vs 1 shaded) work very well for this.
+
+## What I can't settle from the information given
+
+Before finalising, I'd check these:
+
+1. **Confidence intervals.** With low event rates, "2% vs 1%" may be quite imprecise. The trial paper will give a range for the risk reduction (and hence the NNT). If it's wide, say "roughly" or give the range.
+2. **Whether your readers resemble the trial population.** NNT depends on baseline risk. If your readers are at higher risk than trial participants, the NNT for them will be lower (more benefit), and vice versa. If the drug is used across a range of risk levels, consider saying so, e.g. "people at higher risk are likely to benefit more."
+3. **Harms.** For balance, the leaflet should give side-effect rates in the same absolute format (e.g. "about X in 100 people had [side effect]"). A "number needed to harm" alongside the NNT is often the most useful thing a reader can see.
+4. **Other outcomes.** If the drug also affects heart attacks or deaths, those absolute figures matter too.
+
+The pharmacist and the trial publication (or a systematic review, if one exists) can answer all four.
+
+**Bottom line:** keep the pharmacist's sentence, add the relative figure alongside it, and present both with absolute numbers. That answers your colleague's concern without misleading anyone.

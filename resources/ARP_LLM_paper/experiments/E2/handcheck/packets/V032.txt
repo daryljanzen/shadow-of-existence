@@ -1,0 +1,55 @@
+SITUATION:
+I manage a small software team and we need both code reviews and documentation every day. In an hour, our senior engineer can do either 4 code reviews or write 8 pages of docs. Our junior engineer can do either 1 code review or 4 pages of docs in an hour. A colleague from finance, Mei, suggested, while admitting it sounds backwards, that we'd get more total work done if the junior did the documentation and the senior focused on reviews, even though the senior is faster at both. Our CTO says that's obviously wrong: the senior is better at everything, so the senior should do the docs too and get them done fastest. I'm leaning towards Mei, but can't explain it to the CTO. Is she right?
+
+CLAIM:
+Assigning the documentation to the junior and reviews to the senior yields more total output, even though the senior is faster at both tasks.
+
+RESPONSE:
+Mei is right. This is the principle of **comparative advantage**. Being faster at everything (absolute advantage) doesn't decide who should do what. What matters is what each person gives up by doing a task.
+
+## The key: opportunity cost
+
+| | 1 code review costs... | 1 page of docs costs... |
+|---|---|---|
+| **Senior** | 2 pages of docs | 0.5 code reviews |
+| **Junior** | 4 pages of docs | 0.25 code reviews |
+
+Every hour the senior spends on docs sacrifices 4 reviews. Every hour the junior spends on docs sacrifices only 1 review. The senior is 2× faster at docs but **4× faster at reviews**, so the senior's edge is largest in reviews. The junior is "least worse" at docs.
+
+## A concrete demonstration for your CTO
+
+Assume each works 8 hours.
+
+**Each splits time evenly:**
+- Senior: 4h reviews (16) + 4h docs (32 pages)
+- Junior: 4h reviews (4) + 4h docs (16 pages)
+- **Total: 20 reviews, 48 pages**
+
+**Mei's plan** (junior does all docs, senior covers any remaining docs, then reviews):
+- Junior: 8h docs = 32 pages
+- Senior: 2h docs = 16 pages, 6h reviews = 24
+- **Total: 24 reviews, 48 pages**
+
+That's the same documentation plus 4 extra reviews, with nobody working harder.
+
+**The CTO's plan** (senior handles the docs because they're fastest):
+- Senior: 6h docs = 48 pages, 2h reviews = 8
+- Junior: 8h reviews = 8
+- **Total: 16 reviews, 48 pages**
+
+That's the worst of the three. The docs do get finished fastest, but that isn't the goal. The goal is the most total output, and the CTO's plan spends the senior's most valuable hours on the task where their advantage is smallest.
+
+## A one-line version for the CTO
+
+"The senior *can* do docs faster, but every hour they spend on docs costs us 4 reviews. The same hour from the junior costs us only 1 review."
+
+## Caveats that are real, but separate from the math
+
+The arithmetic settles the throughput question. These factors could still change the right allocation in practice:
+
+- **Quality isn't captured by these numbers.** If junior-written docs need heavy senior editing, the junior's effective docs rate is lower. That could shrink or flip the advantage.
+- **Rates may not be constant.** The senior may tire after 6 hours of reviews, and some docs may need senior-level knowledge.
+- **Development matters.** Juniors grow partly by doing and receiving reviews. Fully specializing maximizes output today but may slow their growth.
+- **Your actual demand mix matters.** The exact split depends on how many reviews and pages you actually need. The direction holds, though: the junior should lean toward docs and the senior toward reviews.
+
+If you want to check this against reality, track actual review and docs throughput, plus rework time, for a week or two under each arrangement.

@@ -1,0 +1,47 @@
+SITUATION:
+Our assembly line can only start a production run when parts from all three of our suppliers have arrived. Each supplier independently delivers on time 90% of the time. Our operations director said in the review, with total confidence: "Every supplier is 90% reliable, so we start on time 90% of the time. That's the number we'll quote to the customer." It sounds right to me; they're all at 90%, so the whole chain is at 90%. Can we quote 90% on-time starts to the customer?
+
+CLAIM:
+If each of three independent suppliers is on time 90% of the time and all three are needed, runs start on time 90% of the time.
+
+RESPONSE:
+# No, you can't quote 90%. The real number is about 73%.
+
+The director's reasoning would be right if you needed **any one** supplier to arrive. You need **all three**, and each one is a separate chance for the run to slip.
+
+## The math
+
+If the suppliers are independent, as you described, the probability that all three arrive on time is:
+
+**0.9 × 0.9 × 0.9 = 0.729, or about 72.9%**
+
+So you'd start late about **27% of the time**, roughly 1 run in 4, not 1 in 10.
+
+| Outcome | Probability |
+|---|---|
+| All three on time | 72.9% |
+| Exactly one late | 24.3% |
+| Exactly two late | 2.7% |
+| All three late | 0.1% |
+
+**Intuition:** take 1,000 runs. Supplier A is on time for 900. Supplier B is on time for only 810 of those 900. Supplier C is on time for only 729 of those 810. Each link loses another 10%.
+
+## Why quoting 90% is risky
+
+If you promise 90% and deliver about 73%, you'll miss the commitment by a wide margin, with roughly 2.7 times as many late starts as promised. That's the kind of gap that damages a customer relationship or triggers penalty clauses.
+
+## Caveats
+
+- **The independence assumption matters.** If supplier delays are correlated (same weather, same port, same carrier), all-on-time could be somewhat higher than 72.9%, but it can never exceed 90%. Under any correlation structure, 90% is the absolute ceiling, not a safe estimate.
+- **Other failure points lower the number further.** Line breakdowns, staffing, or quality holds on incoming parts all push it below 72.9%.
+
+## Ways to get to 90%
+
+1. **Raise supplier reliability.** For 90% overall, each supplier needs about **96.5%** on-time (0.9^(1/3)). For 95% overall, each needs about **98.3%**.
+2. **Hold safety stock or buffer inventory** of each supplier's parts, so one late delivery doesn't stop the line. This is usually the most effective option.
+3. **Order earlier.** Schedule deliveries a day or two ahead of the run, so "late" deliveries still arrive in time.
+4. **Dual-source critical parts**, so a second supplier can cover a miss.
+
+## Recommendation
+
+Quote around **70%** for now, or a bit lower to cover non-supplier delays. Or, better, invest in buffers or supplier improvements and quote 90% once your actual track record supports it. Measuring your real historical on-time start rate would also show whether the independence assumption holds for your suppliers.

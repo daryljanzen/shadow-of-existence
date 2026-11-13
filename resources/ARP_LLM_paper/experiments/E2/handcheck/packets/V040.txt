@@ -1,0 +1,41 @@
+SITUATION:
+We ran an A/B test of our new checkout design. The old design (A) got 100 purchases from 2,000 visitors (5.0%), and the new design (B) got 104 purchases from 2,000 visitors (5.2%). The difference isn't statistically significant. Our head of product says: "The test shows the two designs perform the same, so the redesign makes no difference to conversion and we can stop worrying about it." I agree; there's no significant difference, so they're equivalent. We want to close the ticket. Can we go with this?
+
+CLAIM:
+The test shows the new checkout design makes no difference to conversion.
+
+RESPONSE:
+**No, not with that conclusion.** "No significant difference" isn't the same as "no difference." This test is **inconclusive**, not evidence that the designs are equivalent.
+
+## What the data shows
+
+- Observed difference: +0.2 percentage points (5.0% → 5.2%), z ≈ 0.29, p ≈ 0.77
+- **95% confidence interval for the difference: about −1.2 to +1.6 percentage points**
+- In relative terms, that's roughly **B is 23% worse to 31% better** than A.
+
+The data is consistent with the redesign substantially hurting conversion, substantially helping it, or doing nothing. A test that can't distinguish "−23%" from "+31%" hasn't shown the designs perform the same.
+
+## Why: the test was underpowered
+
+With a 5% baseline, detecting a realistic effect takes far more traffic:
+
+| Effect you want to detect (80% power, α=0.05) | Visitors needed per arm |
+|---|---|
+| 5.0% → 5.5% (10% relative lift) | ~31,000 |
+| 5.0% → 6.0% (20% relative lift) | ~8,200 |
+| 5.0% → 5.2% (the observed effect) | ~190,000 |
+
+At 2,000 per arm, the test could only reliably detect effects of about 1.4 points or more, roughly a 28% relative change. Most checkout redesigns don't move conversion that much, so a non-significant result was the likely outcome whether or not the redesign matters.
+
+## What you can legitimately say
+
+- "We found no evidence of a large effect (bigger than roughly ±25–30%)."
+- "We can't tell whether the redesign helps, hurts, or does nothing at the scale that matters to the business."
+
+## Options
+
+1. **Close the ticket for business reasons, with an accurate note.** If you'd ship (or keep) B anyway for other reasons, such as maintainability or brand consistency, and a drop of up to ~1 point is acceptable risk, that's a reasonable call. Just record the result as "inconclusive, underpowered," not "no difference."
+2. **Run a properly sized test.** Decide the smallest effect worth caring about (say, 10% relative), size the test for it (~31k per arm), and ideally pre-specify an **equivalence test** (TOST) with a margin you'd consider "the same." That's the analysis that can actually support "the designs perform the same."
+3. **Ship B and monitor.** Track conversion after the switch and roll back if it drops. This is weaker evidence because of seasonality and other confounds, but it costs little.
+
+The key correction to the head of product's statement is that it's fine to stop worrying if you've decided the risk is acceptable, but the test itself doesn't show the redesign makes no difference.

@@ -1,0 +1,45 @@
+SITUATION:
+At our basketball academy, after the first 20 free throws of the season we picked the 15 players with the lowest percentages and sent them to a shooting clinic. Over their next 20 attempts, the group's average went from 48% to 61%. The head coach wants to put this in the brochure as proof the clinic works. Our analyst, Ines, suggested, rather hesitantly, that we would expect that group's average to rise on the next 20 attempts even if there had been no clinic at all, because 20 shots is a noisy sample and we chose these players precisely because their numbers were unusually low. The coach thinks that's just an excuse to dismiss good coaching. I think Ines has a point but I don't want to insult the coach. Is she right?
+
+CLAIM:
+A group selected for low percentages on a noisy 20-shot sample would be expected to improve on the next 20 shots even without the clinic.
+
+RESPONSE:
+# Yes, Ines is right
+
+This is **regression to the mean**, and the selection process you describe almost guarantees it.
+
+## Why the group would improve without the clinic
+
+A player's percentage over 20 free throws reflects two things:
+
+1. **True skill:** how good they actually are.
+2. **Luck:** with only 20 shots, there's a lot of it. For a true 65% shooter, the standard deviation over 20 attempts is about ±11 percentage points. That player could easily shoot 50% or 80% in a given set of 20.
+
+When you pick the 15 *lowest* scorers, you get players who are genuinely weaker, but you also disproportionately get players who **had a bad-luck stretch**. On their next 20 shots, that bad luck doesn't carry over. Their scores drift back toward their true ability, which is higher than their first 20 shots suggested. The same thing would happen in reverse: the top 15 would probably decline a bit on their next 20, even with no change in coaching.
+
+## How much could this explain?
+
+It could explain a lot, possibly all of the 13-point gain. Here's a rough illustration with **assumed** numbers:
+
+- Suppose the whole squad averages about 65%, and players' true abilities vary by about ±8 points.
+- With 20-shot samples, only about a third of a player's deviation from the team average reflects skill. The rest is noise.
+- Your group was about 17 points below a 65% average. Without any clinic, you'd expect them to keep roughly a third of that gap and return to about **59%**.
+
+They actually hit 61%. Under these assumptions, the clinic might deserve credit for about 2 points, not 13. With different assumptions (a lower team average or more spread in true skill), the clinic's share could be bigger. **The data you have can't tell the two effects apart.** That's the honest bottom line.
+
+There's also a second confounder: early in the season, *everyone* may improve with general practice and conditioning.
+
+## What would settle it
+
+- **Compare against a similar group that didn't attend.** For example, take players ranked 16–25 after the first 20 shots, or check how the rest of the squad changed. If non-attendees with similar starting scores also rose about 10 points, the clinic added little.
+- **Better next time: randomize.** Of the lowest 30 shooters, send 15 at random to the clinic and keep 15 as a comparison. The difference between the two groups is the clinic's real effect.
+- **Use bigger samples.** 50–100 shots per player before and after greatly reduces the noise.
+
+## How to raise it with the coach
+
+You can frame it as protecting the coach's credibility rather than doubting the coaching:
+
+> "The clinic may well be working, and we want a claim that holds up. Any statistically minded parent or rival program could point out that the lowest scorers on a short test usually bounce back on their own. If we compare against a group that didn't attend, we'll have a number nobody can argue with."
+
+This isn't an excuse to dismiss good coaching. Without a comparison group, the current figure would look about the same whether the clinic is excellent or useless. A controlled comparison is the only way the clinic gets the credit it deserves, if it deserves it.
