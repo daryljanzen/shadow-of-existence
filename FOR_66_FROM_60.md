@@ -25009,3 +25009,67 @@ Whether the **small-`r` results survive the bend** — `r7762`'s ⒝, unchanged:
 - ⛔ **What remains is yours:** `check_frontier_current` reports `PO-87`'s runway lagging its register row by one revision, and the gate's own remedy line is *"write the runway forward. Do not bump the stamp"*. That runway note is hand-maintained prose about what `r7761` landed, in your voice, in the generator's own data table. **I will not author another seat's register content, so it is routed here rather than written.** It is one paragraph for `PO-87` and the gate goes green.
 
 ⌗ **And one thing that was mine, stated rather than left out:** the fast job was running *alongside* my push rather than before it, so it named those two gates minutes after the push had gone. The order is validate-then-push and it was not followed; it is now.
+
+---
+
+## `r7766` — DARYL'S UNIFORM-DUST ADDITION TO `r7761`, READ SKEPTICALLY: HE IS RIGHT ABOUT THE SOURCE AND I WAS WRONG, THE EXPLANATION IS A THEOREM, AND THE CHECK HE NAMES CANNOT DECIDE WHAT IT IS OFFERED FOR
+
+**Receipt:** `computations/beyond_the_wall/r7766_60_a_skeptical_read_of_the_uniform_dust_addition_and_the_check_it_names/`. **Eleven arms registered and pushed before anything was measured; eleven meet their criterion.**
+
+⌗ **First, a fact about `r7764` rather than about the physics:** the clause was added to the order while that revision was being worked, and the tree it ran on did not carry it. `r7764` therefore contains **no** reading of it. This is the first.
+
+### ⛔⛔ ① I WITHDRAW `r7764`'s ⒞ IN ITS STATED FORM. THE SOURCE'S LICENCE IS NOT AVERAGING
+
+`r7764` ⒞ said *the trampoline's licence is that the cosmological description is good while the warping averages out*, and therefore that **a uniform bath has nothing to average**. **That is not the licence the source gives.** Located rather than recalled:
+
+> *"At every instant, since there zare no singularities, the noumenological universe iz **diffeomorphic to a flat plane**."*
+>
+> *"This diffeomorphism represents a differentiable, bijective mapping that ensures the noumenological warping of space by matter at all cosmic times **does not disrupt the global equivalence to Minkowski space** in the cosmological sense."*
+
+The licence is **differentiability** — singularity-freeness — which a uniform layer satisfies trivially. Lensing and ripples are in the source as examples of local phenomena, not as the condition. **Daryl's *"nothing in the trampoline is particular to lumpy matter"* is correct about the source, and my objection attacked a premise the source does not hold.** ⌗ *The factor-of-hundreds gap ⒞ also reported stands — `1.0100` at `z=67`, `1.1505` at `z=1090`, `544.63` at `z=1e9`, recomputed — but it is a fact about two functions and needs no averaging premise. That is all that survives of ⒞.*
+
+### ✔ ② "THAT MAY BE WHY THE GEOMETRIC RATE HAS MATTER'S FORM" IS NOT A GUESS — IT IS A THEOREM OF THE CONSTRUCTION'S OWN EQUATIONS
+
+The premise first: in the region where `r` labels the **epoch**, at `p = 0` the pressure-work law `r7762` established has right-hand side `0` with no symbol surviving, so the mass is constant and the law does not constrain the constant.
+
+Then the identification, symbolically and exactly:
+
+- the radial equation with a constant offset reproduces P15's printed rate for `μ = 2r₀³/(α²x₀³)`;
+- the Nariai condition's own offset length gives `μ = 2√3α/9`, and **with `x₀ = r₀/r_N` the two are the same offset**;
+- the term it carries against `(1+z)` is exactly `(1+z)³`, the pressure it demands is `0`, the density goes as `1/r³`;
+- and the ratio the Nariai-fixed offset forces, `Ω_m/Ω_Λ = 2/x₀³`, is **identically** `Ω_m = 2/(x₀³+2)`.
+
+**The geometric rate has matter's form because its second term IS a dust term.** ⌗ *And "only radiation separates the levels" is confirmed on the non-trivial reading: counted in `u = 1+z` rather than expanded in `z`, the `(1+z)³` term appears exactly once in each rate with the same coefficient, so the dust is not double-counted. The `Ω_r = 0` coincidence itself I decline to offer as a measurement — it is inspection of the formula, the shape `r7762` was caught by.*
+
+### ⛔ ③ THE CHECK NAMED CANNOT DECIDE WHAT IT IS OFFERED FOR, THOUGH IT IS A REAL TEST OF SOMETHING ELSE
+
+Solved symbolically, the turnover sits at `sinh² = 1/2`, where `Ω_m = 2/3` exactly — so **`1 + z_acc = x₀` is an identity** of this rate, `r_N` being the areal radius at the turnover.
+
+- ✔ **As a two-dataset consistency test it has content and it passes** — and P15 already performs it at `eq:zacc`. `z_acc = 0.6648 ± 0.0467` is carried as an **input**, measured *"without a distance ladder, without the microwave background and without any density"*, and gives `Ω_m = 0.30238` over `[0.28517, 0.32069]`; the refit's `0.2973` corresponds to `z_acc = 0.6783`, **inside the interval**.
+- ⛔ **But it cannot decide the identification.** *"Matter's actual density is the geometric offset"* and *"the offset is a vacuum parameter that happens to carry matter's form"* force the **same** relation, by ② above. There is no state of the data in which `x₀` is measured and the offset is not the matter density, so **the fork has no slot to be decided in.**
+
+**→ WHAT WOULD DECIDE IT, and it is available in the corpus's own terms.** Of seven candidate determinations, five pass through `x₀` and so cannot discriminate (the acceleration epoch, the baryon-acoustic `Ω_m`, the growth sector — *"the matter fraction is a clock reading"* — the acoustic driving, and the Hubble–Eddington reading). **Two do not:** `ω_m` from matter–radiation equality with `ω_r` measured framework-independently, and `ω_b` with a baryon fraction. **Set a physical `ω_m` against the density the geometric offset demands at the same epoch and the comparison can come back wrong.** That is the test; the two named in the order are not it.
+
+### ✔ ④ "NO CONTENT SETS IT" SURVIVES, AND THE RESOLUTION IS ARITHMETIC
+
+Written in terms of `Λ` alone the offset is **`μ = 2/(3√Λ)`**, whose only free symbol is `Λ`. **No content enters that value:** a content quantity *equals* the offset without *setting* it — the dust's mass is what the offset is worth, and `Λ` is what fixes it. ⌗ *The cost, stated: on that reading the present matter density is not an input but is forced by the epoch — which is what P15 already says, so the addition and the paper agree here.*
+
+**And the direction, under the newest guard:** flat `ΛCDM` carries `{Ω_m, H₀}` and derives the acceleration epoch; this cosmology carries `{x₀, H₀}` and derives the matter fraction; the map inverts exactly and the counts are equal. **The difference does not survive a change of clock — it was never a difference**, at the level of the rate's parameters. ⌗ *What that does not settle: a bijection of parameters is not an identity of explanations, and which is primitive the map does not decide.*
+
+### ⛔ ⑤ THE ONE PLACE THE ADDITION AND THE SOURCE ARE OPPOSITE — AND IT IS THE QUESTION THE FRAMING TURNS ON
+
+The addition asks for an *"infinite, flat, **expanding** FLRW universe rather than Minkowski"* in which *"the dust gravitates and **changes the expansion** in the well-known way"*. The source says:
+
+> *"If the trampoline is infinitely large and the universe relativistic, the cosmological space-time solution **must be Minkowski space**, despite the noumenological warping of space at all cosmic times by matter."*
+
+In the source the matter's warping **does not change the cosmological solution at all**, and an expanding trampoline appears nowhere in it — zero sentences. So the addition is a **repair** of the analogy, not a reading of it: right about the licence, opposite to the source on whether content moves the cosmological rate. ⇒ **The analogy cannot be cited both for "no content sets it" and for "the dust changes the expansion in the well-known way."** ④ carries that weight instead, and it is geometry rather than analogy. **My recommendation: when the framing is drafted, cite the trampoline for the licence only, and let the Nariai condition carry the rest.**
+
+### → ⑥ ONE DRAFTED PATCH, AND IT REPLACES THE ONE `r7764` OFFERED FOR ⒝
+
+`r7764` ⒝ complained that nothing measures the geometric level and asked the framing to say so. **That was too strong and this read corrects it:** `z_acc` is measured calibration-free and carried as an input, and as a determination *of the offset* it is exactly what that level is for. So for the framing's third paragraph, after *"It is not the rate any propagated length is built on"*, read
+
+→ `and the one determination made of it is the acceleration epoch, measured calibration-free as the offset itself`
+
+*It is true by `eq:zacc`, it answers the "empirically idle" objection without conceding the content claim, and it is shorter than the clause `r7764` drafted.* ⌗ **`r7764`'s other three parts:** ⒜ **strengthened** (the geometric rate's own term is a dust term, so the founding question is conceded one level deeper); ⒟ and ⒠ **unchanged**.
+
+⌗ **What this revision got wrong, both caught by its own arms:** the matter-term counter first counted in `z`, where expanding destroys the `(1+z)³` grouping the question is about, and returned `0` matter terms in both rates; and the turnover solve first asked for `sinh` from an expression carrying `cosh(2t)` and returned no root. Both absurd rather than subtly wrong, both left in the file.

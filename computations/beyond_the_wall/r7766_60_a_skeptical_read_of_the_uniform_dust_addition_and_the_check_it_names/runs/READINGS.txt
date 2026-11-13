@@ -1,0 +1,240 @@
+====================================================================================================
+r7766 (60) -- the uniform-dust addition, and the check it names (order r7761, Daryl's clause)
+  HEAD: b177d52fc4cc15059a8f0d1d510f2da0d158233f   origin/main: 7d5a0cdf0dac685b95bc255cc284ac3c058824a3
+====================================================================================================
+
+  the instrument, read by path and not re-derived: H0=68.6  Om=0.2973  Or=8.818604e-05
+
+====================================================================================================
+ARM 1 -- the addition's premise: pressureless matter's Misner-Sharp mass is constant
+  [PASS]
+      the law r7762 established (r labels the EPOCH, so this is the pressure-work law and NOT
+      the mass-inside-radius relation):   d       
+──(m(r))
+dr       = -8*pi*G*p*r**2/c**4
+      at p = 0 the right-hand side is  0  -- free symbols surviving: none
+      integrated:  Eq(m(r), C1)   and d/dr of that solution is 0
+      => m is constant on the epoch, and the law does not constrain the constant.
+      ⌗ the reachable negative was a rho-dependent or r-dependent piece surviving p = 0.  None does.
+
+====================================================================================================
+ARM 2 -- is the cut's offset dust's mass -- does the geometric rate's matter term CONTAIN matter?
+  [PASS]
+      the radial equation (P15 sec:properframe step iii):  h^2 = mu/r**3 + alpha**(-2)
+      P15's printed rate:  c^2H^2 = (c^2/alpha^2)(1 + 2(1+z)^3/x_0^3)
+      the offset that rate demands:  mu = 2*r_0**3/(alpha**2*x_0**3)
+      the Nariai condition's own offset LENGTH r_N = alpha/sqrt(3) gives  mu = 2*sqrt(3)*alpha/9
+      with x_0 = r_0/r_N the two agree:  True
+      the exponent that term carries against (1+z):  z**3 + 3*z**2 + 3*z + 1  -- is (1+z)^3: True
+      the paper's translation Om/OL = 2/x_0**3; forced by the Nariai offset: 2/x_0**3  -- identical: True
+      and the pressure the constant offset demands through arm 1's own law: 0  => pressureless: True
+      the density that term carries: rho = 3*A3*c**4/(8*pi*G*r**3), i.e. a_m ~ 1/r^3 -- dust's own dilution.
+      ⌗ the reachable negatives were an exponent other than 3, or a Nariai-forced ratio missing the
+        paper's translation.  Neither occurs: the geometric rate's second term IS a dust term,
+        and the addition's explanation of why the geometric rate has matter's form HOLDS.
+
+====================================================================================================
+ARM 3 -- 'the two levels coincide exactly for dust' -- and whether that measurement can fail
+  [PASS]
+      ⛔ FIRST, what this arm does NOT offer as a measurement.  The two rates stand in the
+        relation H^2_leaf = H^2_stack + H_0^2 Omega_r (1+z)^4.  Setting Omega_r = 0 in that makes
+        them identical BY INSPECTION OF THE FORMULA -- measured here as max|ratio-1| = 0.000e+00
+        over six decades of redshift, which is a restatement of the formula and not a test of it.
+        r7762 was caught by this exact shape of non-test; the registration said so in advance.
+      THE NON-TRIVIAL VERSION -- is the dust ONE dust or two?
+        leaf minus stack, symbolically: H_0**2*Omega_r*(z**4 + 4*z**3 + 6*z**2 + 4*z + 1)
+        is that radiation ALONE: True
+        (1+z)^3 terms in the stacking rate: 1;  in the leaf rate: 1
+        => the matter content appears EXACTLY ONCE.  The leaf rate adds radiation to the
+        stacking rate's own offset; it does not carry a second matter term beside it.
+      and at the fitted Omega_r the ratio runs 1.0000 at z=0 to 544.63 at z=1e9,
+        so what separates the levels is radiation alone -- the addition's own sentence, confirmed.
+      ⌗ the reachable negative was a second matter term in the leaf rate, double-counting the dust.
+
+====================================================================================================
+ARM 4 -- the check the addition names: a comparison with content, or an identity?
+  [PASS]
+      the comoving acceleration, positive factors divided out:  4*s**2/9 - 2/9
+      the turnover of the areal radius, solved symbolically: sinh = sqrt(2)/2,  i.e. sinh^2 = 1/2: True
+      Omega_m AT the turnover: 2/3  -- equals 2/3 exactly: True
+      so 1 + z_acc = r_0/r_turnover = x_0 is an IDENTITY of this rate, not a coincidence:
+        r_N is the areal radius at the turnover, and x_0 is r_0 in units of r_N.
+      ⇒ Omega_m from the acceleration epoch:  z_acc = 0.6648 +/- 0.0467  gives Omega_m = 0.30238  [0.28517, 0.32069]
+        the refit's Omega_m = 0.2973 corresponds to z_acc = 0.6783,  inside the quoted interval: True
+      THE PROVENANCE, read from P15 rather than assumed:
+        * \end{equation}
+The offset is measured directly and calibration-free---$z_{\mathrm{acc}}=x_{0}-1$, \eqref{eq:zacc} below---without a distance ladder, without the microwave background and without any density.
+        * \emph{That interval is carried as an input
+throughout rather than derived here}, so it is quoted as the stated uncertainty on the offset parameter and
+not converted into a significance.
+        * \emph{And that locus is a
+measurement, not only a description}: the turnover sits where the areal radius reaches the front seam,
+$r=r_{N}$, so the acceleration-onset redshift is the offset parameter itself minus one,
+\begin{equati
+      ⇒ THE VERDICT, in two parts, because the arm's two readings came apart:
+        ⒜ AS A TWO-DATASET CONSISTENCY TEST THE CHECK HAS CONTENT AND IT PASSES.  z_acc is a
+          redshift measured calibration-free and carried as an INPUT, not derived from the
+          baryon-acoustic fit that returns Omega_m, so the two sides are different data and
+          could have disagreed.  They agree, well inside the quoted interval.  P15 already
+          performs this comparison at eq:zacc, against Planck's parameters.
+        ⛔ ⒝ BUT IT DOES NOT TEST WHAT IT IS OFFERED FOR.  'Matter's actual density is the
+          geometric offset' and 'the offset is a vacuum parameter that happens to carry
+          matter's form' predict the SAME relation Omega_m = 2/(x_0^3+2) -- arm 2 shows the
+          Nariai offset forces it identically.  There is no state of the data in which x_0 is
+          measured and the offset is NOT the matter density, so the fork has no slot to be
+          decided in.  The check tests the construction, not the identification inside it.
+
+====================================================================================================
+ARM 5 -- what WOULD test 'matter's actual density is the geometric offset'?
+  [PASS]
+      every candidate marked INDEPENDENT only if it returns a number without passing through x_0:
+        not indep.    the acceleration epoch z_acc                     via x_0 itself, by the identity of arm 4
+                      -- measured calibration-free, but it IS the offset parameter
+        not indep.    the baryon-acoustic fit Omega_m                  via x_0 through the same translation
+                      -- the same parameter from other data -- a consistency test, not a discriminant
+        INDEPENDENT   matter-radiation equality 1+z_eq = omega_m/omega_r via omega_m with omega_r measured
+                      -- omega_m is a PHYSICAL density, and omega_r is measured framework-independently
+        INDEPENDENT   the baryon density omega_b                       via omega_b, measured framework-independently
+                      -- with a baryon fraction it bounds omega_m from below without the rate
+        not indep.    the growth of structure                          via Omega_m = sech^2 u, a clock reading
+                      -- P15 shows the growth equation loses its parameters: the fraction is the epoch
+        not indep.    the acoustic driving                             via the same epoch that carries the expansion history
+                      -- P15: 'one quantity carries the expansion history and the acoustic driving together'
+        not indep.    the Hubble-Eddington radius                      via Lambda, per structure
+                      -- it reads Lambda at a second range, not the matter density
+      independent candidates: 2 of 7
+        * \emph{Matter--radiation equality is then fixed by the same epoch}, $1+z_{\mathrm{eq}}=\omega_m/\omega_r$ with $\omega_r$ measured, so one quantity carries the expansion history and the acoustic drivin
+        * \emph{And the matter fraction is a
+clock reading}: $\cosh^{2}u=1/\Omega_m$ exactly, so $\Omega_m=\operatorname{sech}^{2}u$.
+      ⇒ THE ANSWER THE ADDITION'S QUESTION ACTUALLY HAS: the discriminating measurement is a
+        PHYSICAL matter density -- omega_m from equality with omega_r measured, or omega_b with a
+        baryon fraction -- set against the density the geometric offset demands at the same epoch.
+        That comparison does not pass through x_0 and can come back wrong.  The two the addition
+        names both pass through x_0 and cannot.
+      ⌗ the reachable negative was that EVERY candidate is a clock reading, which would have made
+        the construction uncatchable here.  Two are not, so it is catchable -- and P15 states the
+        equality relation itself, so the test is available in the corpus's own terms.
+
+====================================================================================================
+ARM 6 -- does the addition defeat r7764's part (c), narrow it, or leave it?
+  [PASS]
+      r7764 (c)'s own premise, as that revision printed it:
+        "**But the gap grows as `(1+z)^½`: it is `545` at
+nucleosynthesis, and the elapsed cosmic time to that epoch differs by a factor of `726`.** The
+trampoline's licence is that the cosmological description is a good description *while the warpi"
+      THE SOURCE'S ACTUAL LICENCE, located rather than recalled:
+        "At every instant, since there zare no singularities, the noumenological universe iz diffeomorphic to a flat plane."
+        "This diffeomorphism represents a differentiable, bijective mapping that ensures the noumenological warping of space by matter at all cosmic times does not disrupt the global equivalence to Minkowski space in the cosmological sense."
+      ⛔⛔ r7764 (c) WAS WRONG ABOUT THE SOURCE, AND THE 'AVERAGING' FORM IS WITHDRAWN.
+        The source's licence for the cosmological description is NOT that the warping averages
+        out.  It is that the warped space stays DIFFEOMORPHIC to a flat plane -- a
+        differentiability condition, singularity-freeness -- and a uniform layer satisfies it
+        trivially.  So 'a uniform bath has nothing to average' attacked a premise the source
+        does not hold, and the addition is right on this point.
+      WHAT SURVIVES OF (c), AND IT IS NOT THE SAME CLAIM: the two levels differ by factors of
+        hundreds where radiation dominates -- recomputed here: 1.0100 at z=67,  1.1505 at z=1090, 544.63 at z=1e9.
+        That gap is a fact about the two rates and needs no averaging premise to state.  It is
+        reported in (c) too, and it is the part that stands.
+      ⌗ the registration made this withdrawal reachable and it is taken.  The analogy's
+        licence is differentiability; the objection was to an averaging licence; the objection
+        in that form is this line's error and is retracted here.
+
+====================================================================================================
+ARM 7 -- 'no content sets it' against 'the offset IS pressureless matter's mass'
+  [PASS]
+      the framing's sentence, from the order as it stands:
+        "This is why the universe expands, and why its expansion was already under way: it is the lapse, and no content sets it."
+      P15's own sentences, located in the printed text:
+        "The reassignment selects the Nariai member~\cite{Nariai1951} of Schwarzschild--de~Sitter, whose proper frame is a homogeneous, observationally isotropic, \emph{non-synchronous} cosmology with areal radius $r(\tilde\tau)\propto\sinh^{2/3}$---exactly the flat-$\"
+        "\emph{What the rate is a rate of is the stacking of the foliation}, and content does not enter it: radiation is absent from the slicing operator's vacuum kernel, requiring $m'(r)\neq0$, a bend of the cut; and the second term is the offset itself rather than a "
+        "The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently $\Omega_m=2/(x_{0}^{3}+2)$; \emph{$x_{0}$ is the expansion read in units of the geometry's own fixed offset $r_{N}$, not the offset itself, which the Nariai condition fixes at $\al"
+        "The Einstein field equations are unchanged; what changes is the reading, and under it the quantities the standard model carries as independent inputs---the present matter density, the dark-energy fraction---are readings of one cosmic clock, not drivers of the "
+      THE RESOLUTION, and it holds: the Nariai condition fixes the offset LENGTH at alpha/sqrt3,
+        so the offset in terms of Lambda alone is mu = 2/(3*sqrt(Lambda))  -- free symbols: ['Lambda']
+        NO CONTENT ENTERS THAT VALUE.  A content quantity EQUALS the offset without setting it:
+        the dust's Misner-Sharp mass is what the offset is worth, and Lambda is what fixes it.
+      THE COST, named rather than left implicit: on that reading the present matter density is
+        NOT an input.  It is forced to 2/(x_0^3+2) by the epoch -- which is exactly what P15
+        already says ('readings of one cosmic clock'), so the addition and the paper agree here.
+      ⌗ the reachable negative was a genuine contradiction between two printed sentences.  There
+        is none: 'equals' and 'sets' come apart, and the Nariai condition is what separates them.
+
+====================================================================================================
+ARM 8 -- 'the field equations fix the rate from its density' against 'readings of one cosmic clock'
+  [PASS]
+      the two directions, written out:
+        flat-LCDM:  free parameters ['H_0', 'Omega_m'];  the epoch of acceleration is DERIVED
+        this cosmology:  free parameters ['H_0', 'x_0'];  the matter fraction is DERIVED
+      the map between them:  Omega_m = 2/(x_0^3+2),  inverted  x_0 = (2 - 2*Omega_m)**(1/3)/Omega_m**(1/3)
+        and the inversion returns Omega_m exactly: True
+        parameter counts equal: True
+      ⇒ THE NEWEST GUARD, APPLIED: the difference does NOT survive a change of clock.  One free
+        parameter carries the matter fraction either way, and the two are in bijection, so
+        'the density fixes the rate' and 'the fraction is a clock reading' are one identity read
+        from two sides.  IT WAS NEVER A DIFFERENCE, at the level of the rate's parameters.
+      ⌗ AND WHAT THAT DOES NOT SETTLE, said rather than glossed: a bijection of parameters is not
+        an identity of explanations.  Which of the two is primitive is not decided by the map,
+        and arm 5 names the measurement that would bear on it.  The addition's 'well-known way'
+        and P15's 'not drivers' agree on every number and disagree on the direction only.
+
+====================================================================================================
+ARM 9 -- the trampoline source: does it commit to lumps, and does an expanding trampoline appear?
+  [PASS]
+      (a) the source's furniture, verbatim:
+        "For example, consider a large trampoline, with bowling balls of varying densities rolling around on it, growing and shrinking and merging together."
+      (b) the source's own cosmological solution for the infinite trampoline WITH matter:
+        "If the trampoline is infinitely large and the universe relativistic, the cosmological space-time solution must be Minkowski space, despite the noumenological warping of space at all cosmic times by matter."
+      (c) an EXPANDING trampoline anywhere in the source: 0 sentence(s) - none
+      (d) the threshold clause:
+        "Much like cosmic time appears to be an absolute property, according to which our three-dimensional universe is well-defined within a four-dimensional foliated space-time geometry, it may be that the universe also has an absolute expansion r"
+      ⇒ THE ADDITION IS A REPAIR OF THE ANALOGY, NOT A READING OF IT -- and the repair is in the
+        framing's favour on one point and against it on another.
+        FOR: the source's licence is differentiability (arm 6), which a uniform layer meets, so
+          'nothing in the trampoline is particular to lumpy matter' is right about the licence.
+        ⛔ AGAINST: in the SOURCE the cosmological solution for the infinite trampoline with
+          matter is MINKOWSKI -- the matter's warping does not change the cosmological solution
+          at all.  The addition replaces that with an expanding FLRW trampoline whose rate the
+          dust DOES change.  Those are opposite on the one question the framing turns on, and the
+          source nowhere carries an expanding trampoline.  So the analogy cannot be cited for
+          'no content sets it' AND for 'the dust changes the expansion in the well-known way'.
+          Arm 7's resolution is what carries that weight instead, and it is geometry, not analogy.
+
+====================================================================================================
+ARM 10 -- does the uniform-dust reading move r7764's other four parts?
+  [PASS]
+      (a) it concedes the founding question
+        ⇒ STRENGTHENED: arm 2 shows the GEOMETRIC rate's own second term is a dust term with dust's dilution.  So the average matter density is not merely what the content level carries -- it is what the geometric offset is worth.  The founding question is conceded one level deeper than r7764 put it, and the defeater r7764 recorded (the denial was about the explanation) is now the ONLY thing holding it, with arm 8 showing the explanation is the one thing the numbers do not decide.
+      (b) the geometric level is empirically idle
+        ⇒ NARROWED: arm 4 (a) finds one determination that is read at the geometric level and is not a reading of the content's dynamics: z_acc, measured calibration-free and carried as an input.  r7764 listed the acceleration epoch among its eight and found its value non-discriminating between the laws -- which is still true -- but as a determination OF the geometric offset it is exactly what the geometric level is for.  So 'no observable must take the stacking rate' stands, and 'nothing measures the geometric level' does not.
+      (d) P7's inverse warning and third level
+        ⇒ UNCHANGED: the addition says nothing about the projection, and arm 7's resolution does not touch P7's three levels.  The clause r7764 drafted is still the smallest repair.
+      (e) a universal with no stated exception
+        ⇒ UNCHANGED: the addition narrows what separates the levels to radiation, which the universal already accommodates.  The wording objection is untouched.
+      (c) is handled in arm 6 and its averaging form is WITHDRAWN there.
+
+====================================================================================================
+ARM 11 -- the count, and the subject clause
+  [PASS]
+      arms declared in PREDICTION.md: 11
+      arms answered here (this one included): 11
+      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **  Nothing here was run on this
+      line, no measure was taken of it, and no registration of another seat's was read as a
+      subject rather than as a text.
+
+====================================================================================================
+  VERDICT
+====================================================================================================
+    [PASS]  ARM 1   the addition's premise: pressureless matter's Misner-Sharp mass is constant
+    [PASS]  ARM 2   is the cut's offset dust's mass -- does the geometric rate's matter term CONTAIN matter?
+    [PASS]  ARM 3   'the two levels coincide exactly for dust' -- and whether that measurement can fail
+    [PASS]  ARM 4   the check the addition names: a comparison with content, or an identity?
+    [PASS]  ARM 5   what WOULD test 'matter's actual density is the geometric offset'?
+    [PASS]  ARM 6   does the addition defeat r7764's part (c), narrow it, or leave it?
+    [PASS]  ARM 7   'no content sets it' against 'the offset IS pressureless matter's mass'
+    [PASS]  ARM 8   'the field equations fix the rate from its density' against 'readings of one cosmic clock'
+    [PASS]  ARM 9   the trampoline source: does it commit to lumps, and does an expanding trampoline appear?
+    [PASS]  ARM 10  does the uniform-dust reading move r7764's other four parts?
+    [PASS]  ARM 11  the count, and the subject clause
+
+  11 of 11 arms meet their criterion.
+====================================================================================================

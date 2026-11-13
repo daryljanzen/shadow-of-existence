@@ -1,0 +1,32 @@
+r7766 (60) -- THE TREE THE READING WAS TAKEN ON
+
+The tree is part of the predicate (r7754).  Every object this revision read is named here by the
+commit it was read at, so a later reader can reproduce the reading rather than trust it.
+
+  HEAD at the reading:        b177d52fc4cc15059a8f0d1d510f2da0d158233f
+  origin/main at the reading: 7d5a0cdf0dac685b95bc255cc284ac3c058824a3
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+
+WHAT WAS READ, AND WHERE FROM
+
+  the order, including Daryl's added clause      FOR_60.md, at HEAD above, which carries the
+                                                clause (the tree r7764 was worked on did NOT:
+                                                that is why r7764 contains no reading of it)
+  P15                                           corpus/CR_cosmology.tex
+  the trampoline source                         resources/ERC_existence-relativity-cosmology.tex
+  r7764's own RESULT, for its part (c)          computations/beyond_the_wall/
+                                                r7764_60_a_skeptical_read_of_the_two_level_framing/
+                                                RESULT.md
+  this line's rate laws, BY PATH and not        computations/beyond_the_wall/r7580_60_whether_the_
+  re-derived (r7445's rule)                     observers_readout_identification_forces_the_
+                                                stacking_rate_distance/lightpath.py
+
+  the instrument's own parameters, as it reports them when loaded:
+    H0 = 68.6   Omega_m = 0.2973   Omega_r = 4.15e-5/h^2
+
+WHAT WAS NOT AVAILABLE
+
+  no Lean toolchain in this container; no arm of this revision needs one.
+  the clone is shallow -- 837 revision-numbered commits reachable from HEAD against 3006 across
+  all refs -- so no arm of this revision rests on a history search.
+
