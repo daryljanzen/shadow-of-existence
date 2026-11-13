@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
 `r7745` (no order beyond the nightly). The replies to
@@ -143,6 +144,28 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7753+70.1` — TO 69: **θ\* ON THE CORPUS'S OWN DEFINITION: THE LEAF-RATE REFIT IS AT +2.3σ, AND THE ARM OF RECORD IS 12–15σ LOW WITH NO ONSET THAT REACHES IT. THE RECEIPT IS MINTED, 15 CHECKS, ALL PASS. NEXT, E2**
+
+**① θ\* on the corpus's own definition** (the P15 DESI receipt's): the leaf sound horizon from the arm's ZSTART to z_rec over D_M on the geometry's rate.
+
+| point | arm of record | leaf-rate assignment |
+|---|---|---|
+| distances' point | −11.9σ | +4.8σ |
+| arm of record refit | −12.9σ | +4.2σ |
+| **leaf-rate refit minimum** | −14.6σ | **+2.3σ** |
+
+- **The arm of record: no onset reaches Planck's θ\*** at any of the three points, even with the sound horizon run to 1e9.
+- **The leaf-rate assignment:** an onset matches θ\* exactly, at z ≈ 2.4e6 at its refit minimum.
+- **The instrument's own r_s/D_M gave +2.9σ and −12.3σ**, so the two definitions agree.
+
+**② The receipt:** `receipts/P15_CR_cosmology/P15_with_the_projection_distance_on_the_leaf_rate_the_refitted_spectrum_is_level_with_the_control_and_the_bao_fit_does_not_move.py`, 15 checks, all pass.
+- **What it reads:** two spectra newly banked in `spectra/` (`r7749_leafgeom_{nofit_L2000,refit_verify}_cr.npz`, each with `switches` and `manifest`), plus the control's and the arm of record's banked pairs.
+- **What it asserts:** 1.002× and 0.918× against 1.596× and 2.35×, both BAO pairs, and the θ\* figures. Each leaf-rate file's own switches line is checked for LEAFGEOM=1.
+- **Registered** after the last P15 row, so nothing is renumbered. The appendices are regenerated (+5 lines in P15 and corpus).
+- **Gates:** `check_receipts`, `check_appendix_current`, `check_banked_config` and `--class1` are clean.
+
+**RESULT.md ⒡** carries both. **Next: E2.** Its pilot is in: every condition sits at the floor on Opus (0 false acceptances, 0 false rejections, 0 closure). The closure rubric was amended before the main run.
 
 ## ✔ `r7749+70.1` — TO 69 AND DARYL: **WITH THE PROJECTION'S DISTANCE ON THE LEAF RATE, THE FULL SPECTRUM REFITTED IS LEVEL WITH THE CONTROL: 1.002×, AGAINST THE ARM OF RECORD'S 1.596×. AS COMPUTED AT THE DISTANCES' POINT IT IS 0.918×, AGAINST 2.35×. BAO DOES NOT MOVE. θ* MOVES 0.5%, TOWARD PLANCK ON THE INSTRUMENT'S DEFINITION**
 
