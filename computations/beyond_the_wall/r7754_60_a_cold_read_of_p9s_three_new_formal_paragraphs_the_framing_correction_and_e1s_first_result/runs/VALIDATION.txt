@@ -1,12 +1,23 @@
 r7754 (60) -- VALIDATION
 
-Range validated: 2a3132a96^..a9676480f (this revision's two commits: the registration,
-then the result and the reply).
+Range validated: origin/main..HEAD, re-run after the amendment.
+
+⌗ WHY THAT RANGE AND NOT A COMMIT PAIR.  r7753's order is about this round's landings,
+so the branch had to carry them: origin/main (r7753) was MERGED INTO the branch before
+the amendment's arms ran, because a search is only as good as the tree it runs over.
+With main merged in, origin/main..HEAD is exactly this revision's own six files and
+nothing of main's, which `git diff --name-only origin/main..HEAD` confirms.
+
+The commits in it: the registration; the result and the reply; the first validation
+record; the merge of origin/main; the amendment's registration; the amendment's result
+and reply.
 Previous validated range, for the scope comparison: 5df30008e^..7a555e174 (r7752).
 Every comparison below is by SORTED DIFF of the receipt lists, never by matching counts.
 
 Files this range changes (7): FOR_66_FROM_60.md and the six files of this receipt's own
-directory.  No paper, no receipt, no generated file, no other seat's work and no
+directory -- confirmed by `git diff --name-only origin/main..HEAD`, which lists those
+seven and nothing else, so the merge of main brought nothing of this line's into the
+diff.  No paper, no receipt, no generated file, no other seat's work and no
 registration, result or material of seat 70's is touched, so no derived file needed
 regenerating and no INDEX row was minted by this range.
 
@@ -40,7 +51,8 @@ regenerating and no INDEX row was minted by this range.
 3. SCOPED SUITE  (scripts/run_all_receipts.py --from <suite scope> --jobs 4
                   --timeout 600)
 
-   66 receipts run: 51 pass, 15 fail, 0 over timeout, 338s wall.
+   66 receipts run: 51 pass, 15 fail, 0 over timeout, 343s wall (re-run after the
+   amendment; the first run of this revision gave 338s and the same sets).
 
    The 15 failing, read from the run's own [FAIL] lines rather than from its counts, are
    SET-IDENTICAL to the established reference set that fails on a pristine origin/main:
@@ -64,7 +76,8 @@ regenerating and no INDEX row was minted by this range.
               VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not
                        measured on both builds
 
-   tA vs tC   the same, verdict for verdict.
+   tA vs tC   the same, verdict for verdict, and the unmeasured list has the same seven
+              members on both comparisons (7 and 7, counted).
 
    Both are read from the VERDICT line and its records, not from the exit code: the
    UNMEASURED bit is set, and 0 flagged with that bit set is the normal reading.
@@ -81,3 +94,12 @@ Nothing in this range is measured by a receipt outside the 66 that ran, and noth
 it changed a tolerance.  The PR's one re-run is UNSPENT.  The tolerance probes' working
 directories and their .tolaudit scratch files are build artefacts and were removed by
 the run itself; the tree is clean.
+
+-------------------------------------------------------------------------------
+RE-RUN AFTER THE AMENDMENT.  Every leg above was run again on the amended tree, after
+origin/main was merged in and the three further arms had run.  Nothing moved: the three
+scopes are still set-identical to r7752's validated range, the fast job still names the
+five structural reds alone, the suite still returns the same fifteen, and both pre-sweep
+comparisons still flag nothing with the same seven unmeasured.  The probes' working
+directories and .tolaudit scratch files were removed by the run itself and the tree is
+clean.
