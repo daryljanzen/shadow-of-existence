@@ -1,0 +1,175 @@
+====================================================================================================
+r7770 (60) -- the stale-key arm's two states, and the provenance state r7768 found
+  HEAD: 7bc2251fa4677d839cc7f8760247867542680e00   origin/main: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  r7612's constants, lifted BY AST and not retyped: 15 adjudication key(s), 14 claim word(s), 18 paper(s)
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- the defect demonstrated on a seeded corpus, not asserted
+  [PASS]
+      the key seeded on, which sits in the paragraph r7768 routed a patch to:
+        "the rate light's path distance takes, settled from the construction's own foundations..."
+        it lives in: ['CR_synthesis']
+      SEED 'WITHDRAWN': every claim word blanked in a 400-character window round the key,
+        the sentence itself untouched -- key still present in the paper text: True
+      r7612's own logic on that seed:  arm A HIT = False;  keys reported STALE: 1
+        and the key it names as stale is the seeded one: True
+      ⇒ ** THE DEFECT IS REAL AND LIVE: the sentence is in print and the arm calls its key STALE. **
+      ⌗ the reachable negative was that the current logic might already match from the full text
+        rather than from the candidate set, in which case there is no defect.  It does not.
+
+====================================================================================================
+ARM 2 -- the two states produce the SAME output, which is the whole claim
+  [PASS]
+      SEED 'DELETED': the sentence removed from the corpus outright -- key gone: True
+      r7612's logic on it:  arm A HIT = False;  keys reported STALE: 1
+      the two seeds' stale KEY LISTS are equal: True
+      and their stale REPORTS are equal character for character: True
+        the report, once, since both are the same text:
+          [STALE KEY -- matches nothing now] the rate light's path distance takes, settled from the construction's own foundations
+      ⇒ ** THE OUTPUT CARRIES NO INFORMATION DISTINGUISHING A WITHDRAWN CLAIM FROM A DELETED SENTENCE: ** a reader of that line cannot tell which happened, and the two call for opposite responses -- retire the key, or record that the paper got more careful.
+      ⌗ the reachable negative was a difference elsewhere in the output making the states
+        distinguishable after all -- which would have made this a presentation fix.  There is none.
+
+====================================================================================================
+ARM 3 -- the successor's state machine, enumerated
+  [PASS]
+      states declared: ('MATCHED', 'WITHDRAWN', 'STALE')
+      on the LIVE corpus:      {'MATCHED': 15}
+      on the WITHDRAWN seed:   {'MATCHED': 14, 'WITHDRAWN': 1}
+      on the DELETED seed:     {'MATCHED': 14, 'STALE': 1}
+      on the RE-SPLIT seed:    {'WITHDRAWN': 1, 'MATCHED': 14}   (the second withdrawal mechanism, on a claim-carrying key)
+      the re-split key resolves: WITHDRAWN   (predicted WITHDRAWN)
+      ⛭ WHICH STATES EACH KEY CAN REACH AT ALL, which the registration's guard demands be
+        enumerated rather than assumed:
+        SELF-QUALIFYING (the key itself carries a rate term, a distance term AND a claim word,
+          so any sentence containing it is a candidate => only MATCHED or STALE, WITHDRAWN unreachable): 5 of 15
+        WITHDRAWABLE (the key lacks at least one trigger, so its sentence can stop qualifying
+          while the key stays in print): 10 of 15
+        the re-split key is self-qualifying: False
+        and the re-split seed leaves the key's own text intact: True   -- the FIRST build of that seed cut inside the key and so measured nothing
+      ⇒ ** THE STATE MACHINE IS THREE-VALUED, BUT NOT EVERY KEY RANGES OVER ALL THREE. **  The
+        fix changes the verdict exactly for the 10 withdrawable key(s); for
+        the self-qualifying ones it changes nothing, because for them an unmatched key really
+        is a dead key.  That bound is the honest scope of this instrument and it is printed
+        rather than left for a reader to work out.
+      the seeded key's state across the three: MATCHED / WITHDRAWN / STALE   -- all three states produced: True
+      every key resolves to exactly one state on every map: True
+      and the state set is closed (asserted inside the resolver, not here): True
+      ⌗ the reachable negative was an ambiguous key -- present in one paper and absent from
+        another.  The resolver returns the papers it is MATCHED in, so the state is definite and
+        its evidence is the list.
+
+====================================================================================================
+ARM 4 -- the successor fails on STALE and does NOT fail on WITHDRAWN
+  [PASS]
+      LIVE:       verdict PASS;  stale 0;  withdrawn 0
+      WITHDRAWN:  verdict PASS;  stale 0;  withdrawn 1   -- and the withdrawn key is REPORTED, named, not dropped
+      DELETED:    verdict FAIL;  stale 1;  withdrawn 0
+      ⇒ the assertion, as the clause the argument reasons FROM and written in the instrument's
+        own head: every key resolves to exactly one of three states, and NO key is STALE.
+      ⌗ the reachable negative was a weakening -- if WITHDRAWN passes, a genuinely dead key might
+        survive as 'withdrawn'.  The DELETED seed is that positive control and it still FAILS.
+
+====================================================================================================
+ARM 5 -- no regression on the live corpus
+  [PASS]
+      r7612's arm on this tree:   HIT = True;  stale 0
+      the successor on this tree: PASS = True;  stale 0;  withdrawn 0
+      every one of the 15 keys MATCHED: True
+      ⇒ the fix changes NO live verdict.  It changes what happens the next time a claim word
+        moves -- which r7768's routed patch makes likely rather than hypothetical.
+      ⌗ the reachable negative was a key already WITHDRAWN on today's corpus, which would have
+        meant the published receipt is green only because the defect hides it.  There is none,
+        so the receipt's green is honest as well as correct.
+
+====================================================================================================
+ARM 6 -- the third state r7768 found, and whether it is detectable at all
+  [PASS]
+      receipt heads declaring an expression SUPERSEDED: 2 candidate(s), 1 kept after the expression filter
+        KEPT     `-3 Omega_r z(1+z)^3`   <- receipts/P15_CR_cosmology/P15_r_labels_the_leaf_so_radiation_bends_the_cut_in_epoch_and_its_pressure_work_gives_the_leaf_rate.py
+        REJECTED `r4494`   -- a revision id, not a formula; reported, not dropped
+      papers still carrying a declared-superseded expression WITH NO LABEL beside it: 1
+        CR_cosmology  `-3 Omega_r z(1+z)^3`  at offset 448120   (declared by P15_r_labels_the_leaf_so_radiation_bends_the_cut)
+      ⇒ ** THE DETECTOR FIRES ON THE KNOWN CASE, FOUND MECHANICALLY RATHER THAN BY READING: **
+        the expression cc66's receipt names superseded is still printed in the paper with no
+        label beside it -- which is r7768's arm 6 finding, reproduced by a rule instead of by
+        an eye.  So the provenance state IS detectable, and the owed instrument can carry it.
+      ⌗ the reachable negative was that no mechanical rule separates this from a legitimate
+        historical mention.  The LABEL is what separates them, and arm 7 seeds that both ways.
+
+====================================================================================================
+ARM 7 -- seeded both ways, because a detector that cannot stay silent is not a detector
+  [PASS]
+      BARE seed (the corpus as it stands):  fires 1 time(s)
+      LABELLED seed (a superseding word placed beside the expression): fires 0 time(s)
+      ⇒ the detector is SILENT where the paper labels the expression and FIRES where it does not: True
+      ⌗ the reachable negative was firing on both, which would make it a presence test over a
+        string rather than a detector of unlabelled provenance.  It does not.
+
+====================================================================================================
+ARM 8 -- the instrument's reads, declared
+  [PASS]
+      declared in the instrument's own header: ['computations/beyond_the_wall/r7612_60_*/photonfamily.py', 'corpus/*.tex', 'receipts/**/*.py']
+      found by this file in the instrument's SYNTAX TREE: ['computations/beyond_the_wall/r7612_60_*/photonfamily.py', 'corpus/*.tex', 'receipts/**/*.py']
+      equal as SETS, by sorted diff and not by count: True
+      only in the declaration: none
+      only in the syntax tree: none
+      ⌗ the reachable negative was a SHORT declaration -- r7756's own defect in a different
+        extractor -- which is why this compares names rather than counting them.
+
+====================================================================================================
+ARM 9 -- what this fix does NOT do
+  [PASS]
+      * it does not retroactively change r7612's probe or any verdict that probe published
+        -- that probe is a landed predicate and the tree it ran on is part of it; the fix is a successor
+      * it does not touch the receipt 69 landed
+        -- a published gate's assertion is the landing seat's; the swap is routed as a patch (arm 10)
+      * it does not decide the sec:scope patch r7768 routed
+        -- that is a paper edit and the gate's call; this revision only makes the instrument able to survive it either way
+      * it does not make the MARKER arm able to see provenance
+        -- the provenance detector is a SECOND instrument beside it, and arm 6 says so: a claim word and a withdrawn computation are different objects
+
+====================================================================================================
+ARM 10 -- the routing, drafted
+  [PASS]
+      the published receipt: receipts/P15_CR_cosmology/P15_the_photon_family_crosses...py
+      the line naming the computation's path: 2 found
+        itself_fixes_the_rate_a_photon_path_distance_accumulates_at/photonfamily.py, registered before it existed in
+        'photonfamily.py')
+      the line carrying the arm list: 1 found
+        "registered arm A-G holds",
+      ⇒ THE ROUTING IS TWO CHANGES AND NOT ONE: True
+        ⒜ the COMP path must point at this revision's successor, and
+        ⒝ the gate wording 'every registered arm A-G holds' must become the successor's own
+          assertion, because the successor reports a THIRD verdict (WITHDRAWN) that the
+          A-G wording has no slot for.  A patch that did only ⒜ would leave the receipt
+          asserting something its instrument no longer computes.
+      ⌗ and what breaks if 69 applies the path change without the successor present: the
+        receipt's runpy call raises and the gate goes red with a FATAL, not a FAIL -- so the
+        patch is routed WITH the note that this revision must be merged first.
+
+====================================================================================================
+ARM 11 -- the count, and the subject clause
+  [PASS]
+      arms declared in PREDICTION.md: 11
+      arms answered here (this one included): 11
+      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **
+
+====================================================================================================
+  VERDICT
+====================================================================================================
+    [PASS]  ARM 1   the defect demonstrated on a seeded corpus, not asserted
+    [PASS]  ARM 2   the two states produce the SAME output, which is the whole claim
+    [PASS]  ARM 3   the successor's state machine, enumerated
+    [PASS]  ARM 4   the successor fails on STALE and does NOT fail on WITHDRAWN
+    [PASS]  ARM 5   no regression on the live corpus
+    [PASS]  ARM 6   the third state r7768 found, and whether it is detectable at all
+    [PASS]  ARM 7   seeded both ways, because a detector that cannot stay silent is not a detector
+    [PASS]  ARM 8   the instrument's reads, declared
+    [PASS]  ARM 9   what this fix does NOT do
+    [PASS]  ARM 10  the routing, drafted
+    [PASS]  ARM 11  the count, and the subject clause
+
+  11 of 11 arms meet their criterion.
+====================================================================================================

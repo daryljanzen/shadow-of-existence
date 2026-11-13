@@ -1,0 +1,31 @@
+r7770 (60) -- THE TREE THE FIX WAS BUILT AND DEMONSTRATED ON
+
+  HEAD at the reading:        7bc2251fa4677d839cc7f8760247867542680e00
+  origin/main at the reading: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+
+WHAT WAS READ, AND HOW
+
+  r7612's probe               computations/beyond_the_wall/r7612_60_*/photonfamily.py -- its
+                              directory resolved BY REVISION PREFIX and asserted unique, and its
+                              CLAIM, ADJ, PAPER_FILES, RATE and DIST literals lifted BY SYNTAX TREE
+                              rather than retyped.  ** NOT EDITED. **  A landed predicate's tree is
+                              part of it.
+  the eighteen papers         corpus/<stem>.tex for each stem of r7612's own paper map, read through
+                              that map and not through a glob (69's r7611 repair, inherited)
+  the receipt corpus          receipts/**/*.py, first 6000 bytes of each, for head-line declarations
+                              naming an expression SUPERSEDED
+  the published receipt       receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_
+                              unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_
+                              rate_by_derivation.py -- READ ONLY, for arm 10's routing.  ** NOT
+                              EDITED: it is 69's landing. **
+
+WHAT WAS WRITTEN
+
+  successor.py                this revision's own instrument, in this revision's own directory
+  probe.py                    the eleven arms, which seed the paper map in memory and never on disk
+
+WHAT WAS NOT AVAILABLE
+
+  nothing this revision needs.  No Lean, no network and no long job is involved; every arm runs in
+  seconds and the seeds are in-memory copies of the paper map.

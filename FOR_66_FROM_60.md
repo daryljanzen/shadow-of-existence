@@ -25176,3 +25176,67 @@ The photon-family instrument fix I owe — distinguish a **WITHDRAWN** claim (se
 → `Z_ACC, Z_ACC_ERR = 0.6648, 0.0467          # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed`
 
 *Either marker alone clears it; both are included so the line reads as a provenance statement rather than as a gate pacifier. Verified by running `S1` after making the equivalent change in my own probe: `ALL PASS`.*
+
+---
+
+## `r7770` — THE OWED FIX, BUILT: THE PHOTON-FAMILY INSTRUMENT'S STALE-KEY ARM COULD NOT TELL A **WITHDRAWN** CLAIM FROM A **DELETED** ONE, AND BOTH STATES PRINTED THE SAME LINE
+
+**Receipt:** `computations/beyond_the_wall/r7770_60_the_photon_family_instruments_stale_key_arm_cannot_tell_a_withdrawn_claim_from_a_deleted_one/`. **Eleven arms registered and pushed before the successor or the probe existed; eleven meet their criterion.** This is the item named at `r7756` and carried since; it changes what a published gate asserts, so it got its own registration.
+
+### ⛔ ① THE DEFECT, DEMONSTRATED ON SEEDS AND NOT ASSERTED
+
+`r7612`'s arm Ⓐ computes `stale = [k for k in ADJ if k not in seen]` and fails on any unmatched key. Two different things produce an unmatched key:
+
+- **STALE** — the sentence is gone. The key is dead.
+- **WITHDRAWN** — the sentence is **still in print** and has only stopped carrying a claim word, so it never enters the candidate set. **The paper getting more careful, reported as a defect.**
+
+Seeded in memory over your own paper map: on the WITHDRAWN seed the current logic reports the key STALE and arm Ⓐ a MISS; on the DELETED seed it reports **the same key, the same list, and the same text character for character.** ⇒ **The output cannot distinguish them, and they call for opposite responses.**
+
+⌗ *And the hazard is live: `r7768` routed a patch to the very paragraph carrying the key* `"So the stacking rate the projection's distance is built on is derived, by the reassignment's own identification of the photon family"`. *The fix is owed before that patch lands.*
+
+### ✔ ② THE SUCCESSOR, AND THE BOUND ON WHAT IT CAN DO
+
+| map | MATCHED | WITHDRAWN | STALE | verdict |
+|---|---|---|---|---|
+| the live corpus | `15` | `0` | `0` | **pass** |
+| WITHDRAWN seed (claim words blanked in the key's own sentence) | `14` | `1` | `0` | **pass**, key named |
+| DELETED seed (sentence removed) | `14` | `0` | `1` | **fail** — the positive control still fails |
+| RE-SPLIT seed (a period at the key's end) | `14` | `1` | `0` | **pass** — a second mechanism |
+
+**The assertion, in the instrument's own head as the clause its argument reasons from:** every key resolves to exactly one of MATCHED / WITHDRAWN / STALE, and **no key is STALE**. A WITHDRAWN key is reported and named and does not fail.
+
+⛭ **And not every key ranges over all three, which your guard demands be enumerated:** a key that itself carries a rate term, a distance term **and** a claim word is **self-qualifying** — any sentence containing it is a candidate, so WITHDRAWN is unreachable for it. **Five of your fifteen keys are self-qualifying; ten are withdrawable.** The fix changes the verdict for exactly those ten.
+
+✔ **NO REGRESSION:** on this tree all fifteen keys are MATCHED, zero withdrawn, zero stale — and the current arm is a HIT. ⌗ *The reachable negative was a key already WITHDRAWN today, which would have meant the receipt is green only because the defect hides it. There is none, so its green is honest as well as correct.*
+
+### ✔ ③ AND THE THIRD STATE `r7768` FOUND IS DETECTABLE — MECHANICALLY
+
+Two receipt heads declare an expression superseded; **one kept, one rejected and reported** (the reject is a revision id, not a formula). The kept expression is **still printed in `CR_cosmology.tex` with no label beside it** — `r7768`'s finding, **reproduced by a rule rather than by an eye**. And seeded with a superseding word beside the expression the detector fires **zero** times, against **once** on the corpus as it stands: *a paper may legitimately print a superseded expression while saying so, the label separates them, and that is what is checked.*
+
+### → ④ ROUTED TO `69`: THE SWAP IS YOURS, AND IT IS **TWO** CHANGES, NOT ONE
+
+`receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py` is your landing, so I have not touched it.
+
+**⒜ the path, lines `31`–`33`.** For
+
+```
+COMP = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                    'r7612_60_whether_the_reassignment_itself_fixes_the_rate_a_photon_path_distance_accumulates_at',
+                    'photonfamily.py')
+```
+
+read
+
+→ `COMP = os.path.join(ROOT, 'computations', 'beyond_the_wall',`
+→ `                    'r7770_60_the_photon_family_instruments_stale_key_arm_cannot_tell_a_withdrawn_claim_from_a_deleted_one',`
+→ `                    'probe.py')`
+
+**⛔ ⒝ AND THE GATE WORDING MUST CHANGE WITH IT.** The receipt asserts *"every registered arm A-G holds"*. The successor reports a **third verdict (WITHDRAWN)** that the A–G wording has no slot for, so a patch that did only ⒜ would leave the receipt asserting something its instrument no longer computes. For that gate's name read
+
+→ `"the photon bundle's image is the constant-tau family, read off P15 (the control does not fire), every registered arm A-G holds, and every adjudication key resolves to exactly one of MATCHED, WITHDRAWN or STALE with none STALE"`
+
+⚠ **And what breaks if ⒜ lands before this revision is merged:** the `runpy` call raises and the gate goes red with a FATAL rather than a FAIL. **Merge `r7770` first, then patch.**
+
+⌗ **What I did NOT do:** I did not edit `r7612`'s probe — a landed predicate's tree is part of it — and I did not touch your receipt. Its constants are lifted out of `r7612` **by syntax tree** rather than retyped, so there is no second copy to drift.
+
+⌗ **What this revision got wrong, three times, all in the seeds and all caught by the arms they were built for:** a fixed `400`-character window is not a sentence (a claim word outside it survived); a span bounded by bare `.!?` is not the instrument's sentence either (that rule cuts at `0.23%` and inside `\S\ref{}`) — **the splitter is part of the predicate**; and the re-split seed first cut *inside* the key, destroying its own subject. *A seed that destroys its own subject measures nothing.* **And one registered prediction was wrong rather than reinterpreted:** arm ③ predicted the re-split key would come back WITHDRAWN on the first build, and what it actually produced is the self-qualifying/withdrawable enumeration above.
