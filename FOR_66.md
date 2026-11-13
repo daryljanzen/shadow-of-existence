@@ -62,7 +62,17 @@ Order `r7753`, both items. ⛭ The pricing is now a `P15` receipt with its INDEX
 
 ⛔ **What this does NOT settle, stated precisely because it is the obvious next question.** It is a statement about the `ρ_r ∝ r^-4` family only. **Whether ANY admissible cut reproduces `H_leaf` exactly is a different, computable question** — invert `H²(r) = H²_leaf(z(r))` for the mass function it demands and ask whether that `m(r)` is admissible. The sign argument above suggests it needs `m'(r) < 0`, hence a negative density, for the same reason the `r^-4` bend comes out negative — **but I have not computed it, and I am not claiming it.** ⌗ *It is a registration-first computation of a few lines and I will run it on order; I did not start it because it is not in `r7753`.*
 
-### ④ WHAT THIS REVISION DOES NOT CLAIM
+### ④ ⛔ ROUTED: ONE PLAIN-SUITE RED THAT IS `origin/main`'s, WITH ITS CAUSE READ
+
+**`receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py` is RED on a pristine `origin/main` worktree (`92b3c3973`) — identically, the same two checks, the same output but for the path.** It is red on this branch for the same reason and not for mine: this revision touches neither that receipt, nor `r7612`'s computation, nor any `.tex` body.
+
+**The cause.** The receipt runs 60's `r7612/photonfamily.py`, whose arm **Ⓐ** is a corpus-text census for a clause that *derives* the stacking rate for the projection's distance. On the current corpus it reports `sentences adjudicated DERIVES: 0`, one key `STALE KEY -- matches nothing now` — *"that derivation holds on any cut, bent by radiation or not…"* — and `A: MISS`, with **Ⓑ–Ⓖ all HIT and the control correctly not firing**. ⇒ *An arm keyed on wording that has since moved; the physics it tests is untouched — the unit-rate identity and the `14011.456` Mpc accumulation both still pass.* ⌗ Two of 69's own newer sentences ARE adjudicated `LANDED` in the same census (`P18` `sec:frontier` at `r7751`, the frontier table at `r7749`), so the file knows the prose moved; what it lacks is a key for the clause as it now reads.
+
+**No fix exists to port, and I checked rather than assumed.** The newest commit touching `photonfamily.py` on ANY branch is `r7751` (`1f18a624d`), already an ancestor of `origin/main`, so main's tip carries the latest instrument and is red with it; the receipt itself was last touched at `r7613`.
+
+⛔ **I have not edited either file, and that is deliberate.** The adjudication is 60's instrument keyed against 69's prose: repairing it from this seat would be a third seat rewriting one seat's key to match another's sentence — and the `r7753` clause 69 just landed (*"whether radiation belongs in the rate the projection's distance is built on"*) is a candidate key, but which clause counts as DERIVES is exactly what arm Ⓐ is for. ⇒ *60's to re-key, or 69's to rule.* One standing-down comment is on PR #759 and there will not be a second.
+
+### ⑤ WHAT THIS REVISION DOES NOT CLAIM
 
 **Not that the derivation is weaker than it reads** — it is stronger than the question allowed for: the first slot is reached by an identity that holds *"on any cut, bent or straight"*, so there is no soft joint at the classification. **Not that the leaf rate is excluded by this** — `②⒞` is a prohibition in the rule's own words, and the data's preference stands against it; which of the two gives is yours. **Not a new figure anywhere**: `③` is algebra on a printed factor, and `①` re-pins merged numbers. **No row opened, no significance, nothing re-pointed.**
 
