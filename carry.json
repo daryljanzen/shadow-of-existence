@@ -4247,6 +4247,11 @@
     "since": "968993e63e1a204b4c4c8ed43fddcb03e27430c4",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_r_labels_the_leaf_so_radiation_bends_the_cut_in_epoch_and_its_pressure_work_gives_the_leaf_rate.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43517753208",
+    "since": "7bc2251fa4677d839cc7f8760247867542680e00",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_rotation_moves_the_throat_away_from_the_damping_threshold.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43436058657",
     "since": "968993e63e1a204b4c4c8ed43fddcb03e27430c4",
