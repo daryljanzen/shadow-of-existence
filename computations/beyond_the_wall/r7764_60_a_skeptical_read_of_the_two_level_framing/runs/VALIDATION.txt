@@ -1,0 +1,60 @@
+r7764 (60) -- VALIDATION
+
+Range validated: 615eff0c1^..HEAD -- the registration, the result-and-reply commit, the
+ported generator run, and the routing commit.  The range deliberately EXCLUDES the merge
+of origin/main that precedes it (75c3040d6): measured over the full origin/main..HEAD the
+reads scope reads 86, but every one of those paths is r7761's own, brought in by the
+merge and not this revision's to validate.  Files changed: FOR_66_FROM_60.md, this
+receipt's own six files, and the six regenerated views plus one generated tsv --
+THE_FRONTIER.md, THE_REGISTER.md, THE_WEAVE.md, THE_PLAN.md,
+THE_OPEN_PROBLEMS_LEDGER.md, OPEN_PROBLEMS_MAP.md, corpus/frontier_steps_history.tsv --
+every one of them written by scripts/regen_frontier.py and scripts/regen_grain_currency.py
+and NONE of them hand-edited.  No paper, no receipt, no other seat's work, no
+registration; no INDEX row was minted.
+Every comparison is by SORTED DIFF of the receipt lists, never by matching counts.
+
+1. SCOPES   reads 0, tolerance 14, suite 68 -- all three SET-IDENTICAL to r7762's
+   validated range on this tree.  The reads scope is EMPTY, so the runner-read sweep has
+   nothing to measure: 0 measured, not 0 assumed.
+
+2. FAST JOB (NODE=60 bash scripts/run_fast_job.sh)
+   Run twice.  FIRST run, before the generators: RED naming eight -- the five structural
+   plus regen_grain_currency, check_frontier_current and check_frontier_delta.  Those
+   three are MAIN's: r7761 moved rows in THE_REGISTER.md without re-running the
+   generators, and both frontier gates read the tree, so they are red on the base branch
+   too.  SECOND run, after regen_frontier.py and regen_grain_currency.py: RED naming
+   exactly six --
+     check_branches  check_pdf_current  check_frontier_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+   the five structural shallow-clone reds plus check_frontier_current, whose remaining
+   half is PO-87's runway prose -- 69's to write, routed in FOR_66_FROM_60.md and NOT
+   this range's to fix.  No seventh check is named.
+
+3. THE SUITE (--from <suite scope> --jobs 4 --timeout 600)
+   68 receipts, 53 pass, 15 fail, 0 over timeout.  The fifteen compared as a SET against
+   the established fifteen: none missing, none extra => SET-IDENTICAL.  Full output kept,
+   so the comparison is of NAMES and not of counts.
+
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP (tA; tB --threads 4; tC --threads 2 --coretype
+   Prescott, each --from the 14-receipt tolerance scope, then --compare)
+   Each probed 14 of 14 -- none NEVER PROBED.
+     A vs B:  0 flagged;  0 at the precision floor;  7 not measured
+     A vs C:  0 flagged;  0 at the precision floor;  7 not measured
+   The VERDICT line on both is "NOT A SWEEP -- no site flagged, but a receipt was not
+   measured on both builds": the BITFIELD's 2 with 1 clear, the normal reading.  The seven
+   are the same in both comparisons and SET-IDENTICAL to the seven r7762, r7760 and r7756
+   recorded: L255/E1, L259/D1, S5, S6, S8, C71, C79.  None is this range's.
+
+5. NOT RUN, AND WHY
+   * the runner-read sweep: nothing to measure (reads scope empty);
+   * the Lean build: no toolchain in this container, which the arms that read
+     Framework.lean and Range.lean state in terms;
+   * no long job was re-run for reassurance.  The fast job's second run was on a tree
+     that had actually changed -- the two generators had rewritten seven files between
+     the runs -- and the three probes' scratch directories were deleted after the
+     comparisons.
+
+6. ONE PROCESS DEFECT, RECORDED
+   The fast job's first run was in flight ALONGSIDE this revision's result push rather
+   than before it, so it named two stale frontier gates minutes after the push had
+   already gone.  The order is validate, then push.  Noted on the PR.
