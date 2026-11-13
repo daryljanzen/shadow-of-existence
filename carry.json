@@ -135,14 +135,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43353215040",
-    "since": "50340799df5cf702823140f9080fe7b8957d2576"
-   }
-  }
  }
 }
