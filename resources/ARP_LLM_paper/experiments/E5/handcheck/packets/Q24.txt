@@ -1,0 +1,96 @@
+DOCUMENT:
+**MEMORANDUM**
+
+**To:** Managing Partner, Tierney & Walsh LLP
+**From:** [Author]
+**Date:** 13 November 2026
+**Re:** Fixed-fee pricing for single-plaintiff employment defence
+
+**Recommendation**
+
+We should offer Halberd fixed fees through dispositive motions. We should not use the proposed single $38,000 fee. Instead, I recommend:
+
+- **Two-phase fixed fees**, each billed when its phase is complete.
+- **Full time recording**, which must continue.
+- **New partner-credit rules** for fixed-fee matters, settled before the January 31 submission.
+
+**Why offer fixed fees**
+
+Halberd provides 22% of the group's revenue. Its request says fixed or capped fees through dispositive motions will be "strongly preferred." Seven of our ten largest employment clients have asked for alternative fees in the past year. If we bid hourly-only, we risk losing our biggest client, and the others are likely to follow.
+
+**Why not a single $38,000 fee**
+
+The 2025 figures make $38,000 look safe:
+
+- The 57 cases that did not go to trial billed $2.03 million, about $35,700 per case.
+- $38,000 per case would have produced about $2.17 million.
+
+That result depends on charging the 37 early-resolution cases $38,000 when they averaged $22,000. That is $16,000 more per case. Three problems follow:
+
+1. **Halberd settles early.** Its general counsel has told us so. Halberd will compare $38,000 to its own early-settlement history, and competitors will undercut us.
+2. **We may not be able to keep the excess.** In this state, an advance fee goes into the trust account and is released only as earned. Any fee must also be reasonable. If a case settles in month two, we probably cannot keep $38,000. The surplus that funds the harder cases may never arrive.
+3. **The losses on harder cases remain.** The 20 summary-judgment cases averaged $61,000. At $38,000 each, that is $460,000 less in billings. Averages also hide the spread, and some cases will cost far more.
+
+**Proposed structure**
+
+- **Phase 1 (pleadings through initial discovery and early resolution):** about $20,000.
+- **Phase 2 (through the summary-judgment ruling):** about $33,000 more.
+- **Trials:** priced separately, either hourly or per trial day.
+
+These figures are illustrative. They are close to what we actually collected in 2025 at 86% of billings: about $18,900 for early cases and $52,500 for summary-judgment cases. On the 2025 case mix, this structure would have produced about $1.80 million, against roughly $1.75 million collected. The firm would hold its position while giving Halberd the certainty it wants.
+
+Billing each phase on completion means no money is paid in advance, which should avoid the trust-account problem. Our ethics counsel should confirm this.
+
+**Conditions**
+
+1. **Keep recording time.** We need it to show the fee is reasonable, to justify any earned-fee determination, to manage matters, and to price the 2030 renewal. Without it, we lose sight of which cases make or lose money.
+2. **Change partner credit.** The senior partners are right that hours-based compensation penalises efficient fixed-fee work. Fixed-fee revenue should be credited to responsible partners. Any loss on a matter should be reviewed at group level, not charged to individuals. The Executive Committee needs to approve this by early January.
+3. **Improve the data.** We should pull Halberd's own matter history, all 2026 cases (including those still open), the spread of costs by phase, and the cost of delivery, not just billings.
+4. **Tighten the engagement terms.** We need clear phase boundaries, a rule for cases that settle partway through a phase, and an exclusion for multi-plaintiff or materially expanded matters.
+
+**Timeline**
+
+- Approve the principle by 15 December.
+- Finalise prices and the engagement letter by 15 January.
+- Submit by 31 January.
+
+---
+
+**
+
+FACTS:
+In 2025 the employment group handled 64 single-plaintiff defence cases that ended during the year, billed by the hour. The total billed amount was about $3.07 million, an average of about $48,000 per case. The group collected about 86% of what it billed, after write-downs and discounts. The cases fell into three groups: - 37 cases settled or were dismissed before summary judgment, with an average bill of $22,000. - 20 cases ended after summary judgment but before trial, with an average bill of $61,000. - 7 cases went to trial, with an average bill of $148,000. The practice group leader proposes a flat fee of $38,000 per case, covering all work through summary judgment. Trials would be priced separately. Seven of the firm's ten largest employment clients have asked for alternative fee arrangements in the past year. Halberd Logistics, which provides 22% of the group's revenue, has issued a request for proposals to select law firms for its 2027-2029 panel. The request says that "fixed or capped fees through dispositive motions will be strongly preferred." Proposals are due January 31. The firm's partner compensation is based mostly on hours billed and fees collected by each partner. Two senior partners in the group have said a flat-fee model "rewards inefficiency in reverse" and will reduce their compensation. The state's rules of professional conduct allow flat fees but require that fees be reasonable. In this state, a flat fee paid in advance must be placed in the firm's client trust account and can only be transferred to the firm as it is earned. The firm's accounting system does not currently track fees this way. The firm's billing system records time in 6-minute units. Associates currently track and record all of their time. The group's leader suggests that time tracking could stop under the flat-fee model. Halberd's general counsel has told the firm that Halberd's in-house team settles most cases early when it can.
+
+KNOWN COMPLICATIONS:
+- The case results fall into very different groups. At $38k, early settlements (average bill $22k, 37 cases) are overpriced and cases that go through summary judgment (average $61k, 20 cases) are underpriced. Across all non-trial cases, the average bill was about $35.7k, so $38k is a bit higher than average bills and well above average collections (about $30.7k at 86%).
+- Halberd's preference for early settlement means a flat $38k would cost it more than hourly billing, which could undermine the firm's bid for its panel, the group's largest source of revenue (22%).
+- Partner compensation is based on hours and collections, which works against flat fees, and two senior partners object.
+- Advance flat fees must be held in trust and transferred as earned, which the accounting system cannot track, and time tracking is still needed to show fees are earned and reasonable and to price future work.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+**
+
+1. **Averages hide the risk.** No spread or worst-case figures are given, so the downside of a fixed fee is not quantified.
+2. **The 2025 sample is biased.** Cases that ended in 2025 skew toward shorter matters, because long-running ones are still open. Only one year of data is used.
+3. **It uses revenue, not profit.** Billings are used in place of cost. Write-downs may also have fallen unevenly across the three case groups, so applying 86% across all of them is unsupported.
+4. **The phase prices may not fit Halberd.** They come from the firm-wide case mix. If Halberd settles earlier than average, $20,000 may still be uncompetitive.
+5. **The settlement rule is missing.** The memo raises cases that settle partway through a phase but proposes no rule for them, and this is where most Halberd cases may fall.
+6. **The trust-account solution is unconfirmed.** It depends on ethics counsel. Halberd may also prefer to pay in advance or in instalments.
+7. **Trial cases are left out.** The pre-trial work on the seven trial cases is not separated out, so Phase 2 pricing for them is untested.
+8. **Competitors and caps are ignored.** There is no information on competitor pricing. A capped-fee option, which Halberd also accepts, is not weighed against fixed fees.
+9. **The compensation change may be unrealistic.** Revising partner credit in about seven weeks may not be achievable, and the memo offers no fallback.
+10. **The stakes are not quantified.** The memo does not put a figure on what losing Halberd's business would cost against the pricing risk.
+11. **The practice group leader's case is not fully addressed.** The memo does not explain why the leader chose a single fee, such as for its simplicity or appeal to clients.
+
+FINDINGS:
+- The memo compares the $38,000 fixed fee against billings ($2.03M) but the phased proposal against collections ($1.75M), and this inconsistent baseline makes the numbers appear to favour the rejected option.
+- The memo never directly states that the $2.17M from the single $38,000 fee is not achievable because fees on early cases cannot be kept and competitors will undercut it.
+- The $1.80M figure for the proposal assumes full collection without stating that assumption, even though the 86% collection rate reflects write-downs and Halberd may negotiate phase prices down.
+- Billing only on completion creates an unaddressed cash-flow cost because Phase 2 can run for many months with unbilled work carried throughout.
+- Calling Halberd 'our biggest client' is unsupported, since the brief only says it provides 22% of revenue.
+- The claim that other clients 'are likely to follow' is speculative and is not tied to the evidence that seven of ten clients have asked for alternative fees.
+- The claim that competitors will undercut the firm is stated as a certainty without support.
+- The memo ignores the capped-fee option the RFP explicitly allows, which could limit risk on expensive summary-judgment cases.
+- The deadline for the partner-compensation change is inconsistent ('before the January 31 submission' vs 'by early January') and Executive Committee approval is missing from the timeline.
+- The memo omits the brief's point that the accounting system cannot track trust-held flat fees, a risk if ethics counsel rejects the phased-billing approach and a system change is needed in under three months.
+- It is unclear what triggers Phase 1 completion when a case settles before discovery ends.

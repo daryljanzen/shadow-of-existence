@@ -1,0 +1,100 @@
+DOCUMENT:
+# Policy Proposal: Eliminating Overdue Fines at Ashford Public Library
+
+**To:** Board of Trustees
+**Re:** Overdue fine policy (for February vote)
+**Date:** November 2026
+
+## Recommendation
+
+Eliminate overdue fines effective July 1, 2027. Keep charges for lost and damaged items. Make the change contingent on the city council amending the budget ordinance so the materials budget is protected without increasing city spending.
+
+## Why
+
+**Fines produce little net revenue.** In 2025, overdue fines brought in $115,000, which is 1.3% of the $8.9 million operating budget. Against that, staff spend about $64,000 a year in time on fine transactions, disputes and account work. Card payment fees add about $9,000 a year, though only part of that relates to fines.
+
+**Fines block access for the residents the library most needs to reach.** Accounts owing more than $10 cannot borrow, and 22,400 cards are currently blocked.
+- 61% of blocked cards belong to residents of three zip codes where the median household income is below $40,000.
+- 38% of blocked cards belong to people under 18.
+
+**Peer evidence suggests returns will not suffer.** Lakeshore Public Library, a similar nearby library, eliminated fines in 2023. It reported that on-time returns stayed about the same and card renewals rose 14% the following year. This is one library's self-reported result, but it is directly relevant.
+
+**Fines strain service desks.** Branch staff report, through their union, that fine disputes cause most hostile interactions at service desks.
+
+## Budget Impact
+
+Eliminating fines would cost the library money. The staff-time estimate does not offset the loss, because that time would be redirected to service rather than cut from payroll.
+
+| Item | Amount |
+|---|---|
+| Overdue fine revenue lost | $115,000 |
+| Estimated card fee savings (fines' share of charges, about 62%) | about $5,600 |
+| **Net loss to the materials budget** | **about $109,000** |
+
+The net loss is roughly 10% of the $1.1 million materials budget.
+
+**Proposed fix.** Ask the council to amend the ordinance so the library can transfer about $109,000 from elsewhere in its operating budget to materials. The $71,000 in lost and damaged charges would continue to go to materials. Total city spending would be unchanged, which is the condition two council members have set.
+
+Staff will identify specific offsets before the February vote. The board should not vote without them.
+
+## Implementation
+
+- **February:** Board vote, contingent on council action.
+- **By April 1:** Submit the ordinance amendment and budget request to the city.
+- **July 1:**
+  - Waive existing overdue-fine balances. Lost and damaged balances remain.
+  - Items more than 30 days overdue are billed as lost. The charge is cancelled when the item is returned, which keeps a strong reason to bring items back.
+- **Collection agency:** Keep the contract through September 30, 2027, which avoids the $15,000 termination fee. Stop referring fine-only balances. Review the contract before renewal.
+
+## Addressing the Friends of the Library
+
+The Friends' two concerns are both addressed:
+- **Responsibility:** Patrons still face consequences for not returning items, through lost-item billing and borrowing blocks.
+- **Materials budget:** The proposed transfer protects it.
+
+We recommend meeting with the Friends before the vote.
+
+## Risks
+
+- **No council action:** If the council does not amend the ordinance, the policy should not take effect.
+- **Cards that stay blocked:** Staff have not yet determined how many of the 22,400 blocked cards owe only fines and would be unblocked.
+
+---
+
+##
+
+FACTS:
+In 2025 Ashford Public Library collected $186,000 in patron charges, out of a total operating budget of $8.9 million. Of that amount, $115,000 came from overdue fines. The other $71,000 came from charges for lost or damaged items. Staff estimate that handling fines (desk transactions, disputes and account work) costs about $64,000 a year in staff time. Card payment fees cost another $9,000 a year. Library accounts that owe more than $10 are blocked from borrowing. About 22,400 cards are currently blocked. 61% of blocked cards belong to residents of three zip codes where the median household income is below $40,000. 38% of blocked cards belong to people under 18. Lakeshore Public Library, a nearby library of similar size, eliminated overdue fines in 2023. It reported that the share of items returned on time stayed about the same, and that card renewals increased 14% in the following year. Under the city's budget ordinance, all patron charges collected by the library go into the library's materials budget, which pays for books and other items. The materials budget is $1.1 million. The city council would have to change the ordinance or make up the lost revenue. Budget requests for the next fiscal year, which starts July 1, are due to the city by April 1. The library refers accounts that owe more than $50 to a collection agency. The current agency contract ends September 30, 2027. Ending it early would cost a $15,000 termination fee. The Friends of the Library, which raises about $90,000 a year for programs, has opposed eliminating fines. Its president says fines "teach responsibility" and that losing them would hurt the materials budget. Branch staff, through their union, support eliminating fines. They say that disputes about fines lead to most of the hostile interactions at service desks. Two city council members have said they will support any change that does not increase the city's overall spending.
+
+KNOWN COMPLICATIONS:
+- Only $115k of the $186k is overdue fines; $71k is lost-item charges, which may be kept. After the $73k in collection costs, the net loss from removing overdue fines is about $42k, much less than the headline figure.
+- Fine revenue goes by law into the materials budget, so the decision needs the city council to change the ordinance, and the April 1 budget deadline sets the timeline.
+- The blocked cards are concentrated in low-income zip codes and among minors, which is the strongest equity argument but is hidden in the overall count of 22,400.
+- The collection agency contract runs until September 30, 2027 and ending early costs $15k, and the Friends of the Library, a major donor, has a strong objection that needs answering.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **The offsets are not identified.** The proposal asks the board to approve a $109,000 transfer without naming what gets cut. That is the central decision, and it is deferred.
+2. **The card fee savings figure is an assumption.** It assumes fees scale with dollar amounts. Fees may depend on how many transactions there are, and fine payments may be many small transactions.
+3. **The 2025 data is calendar-year, but the budget runs July to June.** The proposal does not reconcile the two. Fine revenue may also be falling over time, which would change the size of the loss.
+4. **The Lakeshore evidence is thin.** It is one library, one year, and self-reported. It has no comparison group, and "about the same" is undefined. Renewals are not the same thing as active borrowing.
+5. **The access benefit is not measured.** The share of blocked cards held only because of fines is unknown. Some blocked cards may be inactive or held by people who have left the area.
+6. **Lost-item billing at 30 days is a new policy.** Its effect on low-income and young patrons is not analyzed. It could recreate the blocks the proposal aims to remove.
+7. **The staff-time savings are not tied to any outcome.** The proposal says the time will be redirected but does not say to what, or how results would be measured.
+8. **There is no evaluation plan.** The proposal sets no metrics for return rates, the number of blocked cards, or desk incidents, and no date for a review.
+9. **The response to the Friends is thin.** It does not address the risk that the Friends' $90,000 in annual fundraising could fall if they oppose the decision.
+10. **The council's support is assumed.** Two members' statements do not make a majority. The proposal has no fallback if the council does not act.
+11. **Fines charged between the vote and July 1 are not addressed.** Patrons who pay fines during that period may see the waiver as unfair, and the proposal does not say how to handle this.
+
+FINDINGS:
+- The demographic data (61% of blocked cards in three zip codes, 38% under-18) lacks a baseline share of total cardholders, so disproportionate impact is not demonstrated.
+- Lost-item billing after 30 days will exceed the $10 blocking threshold and keep many patrons blocked, so the 22,400 headline figure overstates the access benefit until the fines-only count is known.
+- The claim that 'both concerns are addressed' overclaims, since protecting the materials budget depends on council amending the ordinance and on offsets that have not yet been identified.
+- The document does not plainly state that moving $109K into materials requires cutting something else in the operating budget.
+- The document only implies, rather than states, that overdue fine revenue currently funds the materials budget.
+- The document omits the value of outstanding overdue balances that would be written off on July 1.
+- The collection-agency provision is largely moot because all fine-only balances will be waived, and it is unclear what the agency handles afterward or whether lost-item referrals continue.
+- The Lakeshore evidence is vague and uses card renewals as a weak proxy for new or returning users.
+- The union report's claim about hostile interactions is anecdotal and unsupported by incident data.
+- The $64K staff-time estimate is not explained.
+- The timeline depends on council amending the ordinance before July 1 without addressing the council budget cycle or providing a fallback effective date.
+- The data is from 2025 and omits more current 2026 year-to-date fine revenue figures.

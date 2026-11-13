@@ -1,0 +1,96 @@
+DOCUMENT:
+# Proposal: Spending the $600,000 State MMR Grant
+
+**To:** Director, Brannock County Health Department
+**From:** Immunization Program
+**Date:** November 13, 2026
+**Re:** Spending plan for kindergarten MMR grant (decision needed by December 15)
+
+## Recommendation
+
+Fund reminder and recall in full. Expand rural second-dose access without buying a van. Add temporary nursing capacity. Offer voluntary, low-key engagement in high-exemption schools. Do not fund the media campaign or the van purchase.
+
+## The problem
+
+In 2025-26, 91.4% of 6,200 kindergarteners were fully vaccinated against MMR. That leaves about 533 children under-vaccinated. Reaching 95% requires about 223 more. The 533 fall into two groups that need different approaches:
+
+- **About 219 children (41%) have no exemption on file.** Most received the first dose but not the second. Nurses cite lack of transport, no regular doctor, and parents not knowing a second dose is needed. These barriers can be fixed.
+- **About 314 children have exemptions.** These are concentrated in eight private and charter schools, mostly as philosophical exemptions.
+
+Vaccinating every child without an exemption would raise coverage to about 94.9%. That is close to the target but not quite there. Reaching 95% also depends on some exempting families choosing to vaccinate, which we can encourage but not guarantee.
+
+## Why not the other options
+
+- **Media campaign.** At $350,000, it would use 58% of the grant. Published evaluations show mixed results and little effect on parents who have already decided against vaccination. It is also the option most likely to be seen as "pressuring" families.
+- **Van purchase.** If ordered December 15, the van would arrive around mid-May, leaving about six weeks of use before the grant expires. Staffing after June 30 would be unfunded. Its capacity of 1,500 children a year far exceeds the need.
+
+## Proposed budget
+
+| Component | Cost |
+|---|---|
+| Reminder/recall via state registry: letters, texts and calls to current kindergarteners and 4-5-year-olds entering kindergarten in August 2027 | $60,000 |
+| Rural access: catch-up clinics at the three rural schools and community events using a leased or partner vehicle, ride vouchers, and referrals to a regular provider | $190,000 |
+| Contract nurse hours: record review and family follow-up at the 11 low-rate schools and other schools with overdue second doses | $160,000 |
+| High-exemption schools: school-level data shared with leaders, optional Q&A sessions with local pediatricians, and plain information on the August 2027 exemption law | $60,000 |
+| Evaluation and registry data support | $30,000 |
+| Reallocation reserve, committed by April 1 to the best-performing component | $100,000 |
+| **Total** | **$600,000** |
+
+## Timeline
+
+- **December:** Approve the plan and request registry lists.
+- **January:** Send the first reminders and recruit contract nurses.
+- **February-May:** Run clinics and a second reminder wave.
+- **March 31:** Review results and commit the reserve.
+- **June 30:** All funds spent.
+
+## Responding to stakeholders
+
+**Commissioner.** The plan does focus on the worst-performing schools. All 11 receive nurse follow-up, and the three rural schools receive dedicated clinics. However, the problem at eight of those schools is exemptions, not access, so extra money there buys little. We recommend explaining this distinction publicly.
+
+**Private-school parents.** Engagement at their schools is voluntary and informational. It includes no advertising and no targeting of individual families.
+
+## Measuring success
+
+We will track second-dose completion monthly in the registry. Success means about 150-200 additional fully vaccinated children by June 2027, plus higher on-time rates among incoming kindergarteners.
+
+---
+
+##
+
+FACTS:
+In the 2025-26 school year, 91.4% of Brannock County's 6,200 kindergarten students were fully vaccinated against MMR. The state target is 95%. Eleven elementary schools have kindergarten MMR rates below 80%. These schools account for 58% of the county's under-vaccinated kindergarteners. Eight of the eleven are private or charter schools in higher-income suburbs, where most under-vaccinated students have a philosophical exemption on file. The other three are public schools in rural parts of the county. Across the county, 41% of under-vaccinated kindergarteners have no exemption on file. Most of them received the first MMR dose but not the second. School nurses report that missed doses are often due to lack of transport, no regular doctor, or parents not realising a second dose is needed. The county has 19 school nurses for 74 elementary schools. The department is considering three options: Media campaign: TV, radio and social media ads promoting vaccination. Cost: $350,000. Published evaluations of similar campaigns show mixed results and little effect on parents who have already chosen not to vaccinate. Mobile clinics: a vaccination van visiting rural schools and community events. Cost: $220,000, including the van, nurse staffing and supplies. The van would take about 5 months to be delivered after it is ordered. The department estimates it could vaccinate about 1,500 children a year. Reminder and recall: using the state immunisation registry to send letters, texts and calls to families whose children are due or overdue for vaccines. Cost: $60,000. Several studies have found that this approach increases vaccination rates, especially for children who have missed scheduled doses. The state grant must be spent by June 30, 2027. Any unspent money returns to the state. A new state law takes effect in August 2027. It requires parents seeking a non-medical exemption to complete an online education module about vaccines before the exemption is approved. A county commissioner has publicly asked the department to "focus on the schools with the worst rates." A coalition of private school parents has said it will oppose any campaign that it views as "pressuring" families.
+
+KNOWN COMPLICATIONS:
+- There are two different groups of under-vaccinated children: families with philosophical exemptions (concentrated in suburban private and charter schools) and children who are missing a second dose because of access problems (41%, including rural schools). They need different approaches.
+- Evidence is strongest for the cheapest option (reminder and recall, $60k) and weakest for the most expensive one (media, $350k). The three options together cost $630k, more than the $600k budget.
+- The grant must be spent by June 30, 2027, but the van takes 5 months to arrive. If ordered in mid-December, it arrives around mid-May, leaving about 6 weeks of service, and the school year ends then.
+- The new state law on exemptions takes effect in August 2027 and will address part of the exemption problem without department action. The commissioner's 'worst schools' approach would spend money mainly on the exemption group.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **Derived figures rest on assumptions.** The counts of 533, 223, 219 and 314 are calculated from percentages. The 314 "exemption" children may include medical exemptions or children with no record at all. The success target of 150-200 is a judgment, not a modeled estimate.
+2. **New cost estimates are unsourced.** The department costed only the three original options. Costs for leasing, contract nurses and school engagement are placeholders that need quotes.
+3. **Rural spending is expensive per child.** $190,000 may reach only around 100 children. Reminder/recall plus ride vouchers alone might achieve similar results for less.
+4. **The reserve could lapse.** If April reallocation is slow or hiring falls short, money returns to the state.
+5. **Grant terms are unchecked.** The plan does not confirm that leasing, ride vouchers or contract staffing are allowable expenses.
+6. **The outcome may be measured too late.** Official kindergarten rates for the affected cohort may not be reported until after the grant ends, so the state may not see results within the grant period.
+7. **Staffing is a risk.** Nurses may be hard to hire on a five-month contract.
+8. **Registry data may be poor.** Outdated contact details or incomplete records could weaken reminder/recall. Texting may also raise consent and privacy issues.
+9. **There is no plan for after June 2027.** Reminder/recall and access support stop when the money runs out.
+10. **The commissioner may remain unsatisfied.** The commissioner may see limited spending at the eight suburban schools as avoiding the problem.
+11. **The parent coalition may still object.** Sharing school-level data or informing families about the new exemption law could still be perceived as pressure.
+12. **The 95% target is unlikely to be reached.** The plan admits this, which weakens its case. It also gives little attention to under-vaccinated children in urban public schools outside the 11 low-rate schools.
+
+FINDINGS:
+- The plan's cohort doesn't match its target metric: the 533 under-vaccinated children are 2025-26 kindergarteners now in first grade, while the plan's actions target 2026-27 and 2027 kindergarteners, for whom the document gives no data.
+- The proposal's promise of 'no targeting of individual families' is contradicted by contract nurses doing family follow-up at the 11 low-rate schools, eight of which are private/charter schools, and by reminder/recall contacting overdue families.
+- The commissioner section says extra money at the eight private/charter schools 'buys little,' yet the plan sends contract nurses to all 11 schools, which is internally inconsistent.
+- It is unclear whether county nurses can access private or charter school records, since this may require school consent or data-sharing agreements that the coalition gives those schools reason to refuse.
+- The proposal omits the brief's ratio of 19 nurses for 74 elementary schools, which is the strongest justification for the $160,000 contract nurse budget.
+- Saying exemptions are 'concentrated in eight schools' overstates what is known, since the 11 schools hold only about 309 under-vaccinated children including rural non-exempt ones, so many exemptions must be elsewhere.
+- The school-based clinic window is shorter than the stated February-May because the school year likely ends in early June, which also means the van would have only about 2-3 weeks of school-day use.
+- The argument that van staffing after June 30 would be unfunded is weak because it applies equally to every component and should be dropped.
+- The document ends with a formatting artifact: a stray '---' followed by an empty '##' heading.
+- About $350,000 of the budget rests on unverified figures, because grant allowability, cost estimates without quotes, and rural cost per child are not confirmed.
+- The plan treats all 314 remaining children as exemptions, which is a weak assumption.
+- Slow nurse hiring would leave the nurse budget underspent with no named fallback for the reserve, such as additional reminder waves or ride vouchers.

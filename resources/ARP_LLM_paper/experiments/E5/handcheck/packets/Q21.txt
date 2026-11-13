@@ -1,0 +1,103 @@
+DOCUMENT:
+# Budget Justification: Subsurface Drip Irrigation
+
+**To:** Board of Directors, Delgado Family Farms
+**For:** December 2026 meeting
+
+## Recommendation
+
+Approve an EQIP cost-share application, due January 15, for subsurface drip on our **500 owned acres**. The gross cost is $950,000, or about $475,000 after a 50% EQIP share. Installation would follow the 2027 harvest, for the 2028 season. Defer the 300 leased acres until the lease is renewed. I do not recommend the full $1.52 million project for 2027.
+
+## Why not all 800 acres for 2027
+
+- **We would lose EQIP funding.** To be ready for 2027 planting, work would have to start this winter. EQIP contracts are typically signed in May, and EQIP cannot fund work started before signing. That would forfeit up to $760,000.
+- **We cannot finance it.** $1.52 million exceeds our $900,000 credit line.
+- **The leased acres would not pay back.** Drip on those 300 acres costs $570,000. The lease ends in 2029, which leaves three seasons, one of them in wheat.
+
+## Annual returns per owned acre
+
+Figures are averaged over the tomato–tomato–wheat rotation.
+
+| Item | Per tomato acre | Rotation average |
+|---|---|---|
+| Yield: 12% × 48 t = 5.76 t × $105 | +$605 | +$403 |
+| Water: 0.9 acre-foot saved at a blended $181/af | +$163 | +$109 |
+| Maintenance (assumed in wheat years too) | –$210 | –$210 |
+| Electricity | –$45 | –$30 |
+| **Net** | | **+$272** |
+
+On 500 acres, that is about **$136,000 a year**.
+
+**A note on water value.** The vendor values saved water at $310 per acre-foot, the district price. Only 40% of our water comes from the district. The other 60% comes from our wells at about $95 per acre-foot. That makes the blended cost $181 per acre-foot. Using the vendor's figure would overstate the water savings by about 70%.
+
+**Payback, including 8% interest:**
+- With EQIP ($475,000): about 4.3 years.
+- Without EQIP ($950,000): about 10.6 years.
+
+The EQIP share is what makes this project clearly worthwhile.
+
+## The groundwater case
+
+Starting in 2028, our well allocation falls 30%, and pumping above it brings fines. On the owned tomato acres, drip saves about 300 acre-feet a year. A 30% cut to the well water used on those acres is roughly 216 acre-feet, so the savings more than cover it. The alternatives are worse: fines, buying district water at $310 per acre-foot (if it is available), or fallowing ground. This benefit is not included in the figures above. It is the strongest reason not to delay past 2028.
+
+## Risks and conditions
+
+- **Cannery.** Our Westfield contract ends with the 2027 harvest, and Westfield may move processing 70 miles away. Higher yields are only worth what we can sell. Before installing, we should secure a 2028 contract or another buyer and estimate the added hauling cost.
+- **Yield.** The 12% gain comes from trials on other farms, not ours. At 6%, our net return falls to about $70 per acre.
+- **EQIP.** The cost share is competitive and "up to" 50%. If we are not funded, the project should return to the board.
+- **Leased land.** Revisit the 300 acres if the neighbour commits to a long renewal.
+
+## Proposed timeline
+
+| Date | Step |
+|---|---|
+| December | Board approves the application |
+| January 15 | EQIP application submitted |
+| May | EQIP contract decision. Cannery status should also be clearer by then. Final go/no-go vote. |
+| Fall 2027 | Installation |
+| 2028 | First season, in step with the groundwater cut |
+
+This plan acts now on the funding deadline and the groundwater cut. It also gives the board a full season of information before committing capital. It addresses both the case for urgency and the case for waiting.
+
+---
+
+##
+
+FACTS:
+Delgado Family Farms grows processing tomatoes on 800 acres using furrow (flood) irrigation. Subsurface drip irrigation would cost $1,900 per acre installed, or $1.52 million in total. Drip would reduce water use from about 3.6 to 2.7 acre-feet per acre per year. Trials on similar farms show a 12% increase in yield. Current yield is 48 tons per acre, and the cannery pays $105 per ton. The irrigation vendor's proposal values the water savings at $310 per acre-foot, which is the irrigation district's price. Only about 40% of Delgado's water is bought from the district. The rest comes from the farm's own wells, at a pumping cost of about $95 per acre-foot. Drip requires ongoing maintenance, including filter replacement, tape repairs and line flushing. This costs about $210 per acre per year. Electricity for the pressurized system would add about $45 per acre per year. Processing tomatoes are grown in rotation, with wheat every third year on each field. Drip lines can stay in the ground during a wheat year, but do not generally improve wheat yields. Of the 800 acres, 300 are leased from a neighbour under a lease that ends in 2029. The neighbour has not said whether he will renew. The local groundwater agency has announced that pumping allocations will be cut 30% starting in 2028. Farms that use more than their allocation will face fines. Delgado's contract with the Westfield cannery runs through the 2027 harvest. Westfield has told growers that it may consolidate processing at one plant 70 miles away. The federal EQIP conservation program can pay up to 50% of the cost of drip irrigation. Applications for the next round are due January 15. EQIP funds cannot pay for any work that starts before the contract is signed, which typically happens in May. The farm has a $900,000 line of credit at 8% interest. Delgado's eldest daughter, who is taking over management, supports the investment. Her father prefers to wait a year.
+
+KNOWN COMPLICATIONS:
+- The vendor's water savings use the district price ($310) for all water, but 60% of water costs only $95 to pump. The blended value is about $181 per acre-foot, so the 720 acre-feet saved are worth about $130k, not $223k, and ongoing costs of about $204k a year ($255 per acre) reduce the net benefit further.
+- The yield benefit only applies in tomato years (two out of three on each field) and depends on a cannery contract that ends after 2027 and may move 70 miles away; 300 acres are leased only through 2029.
+- The EQIP deadline and its rule against starting work early conflict with installing drip for the 2027 season: starting now gives up up to $760k in cost-share.
+- The 30% cut in groundwater allocations from 2028 strengthens the case for saving water, and that is not counted in the vendor's per-acre-foot savings.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **No system lifespan or NPV.** Payback is reported without stating how long the drip tape and system last. The memo also does no discounted analysis or replacement-cost planning.
+2. **Wheat-year assumptions are unsupported.** Full maintenance is assumed during wheat years. This may overstate or understate costs. The memo also ignores how the system would irrigate wheat.
+3. **The water-savings basis is debatable.** A blended price assumes savings fall proportionally on well and district water. If district water were cut first, savings would be worth $310 per acre-foot. The groundwater rules, however, push toward cutting well water. The memo doesn't resolve which applies.
+4. **The groundwater benefit is not quantified.** The memo doesn't know how allocations are calculated, whether they cover the whole farm including the leased and wheat acres, how large the fines are, or whether district water will be available.
+5. **The yield estimate is fragile.** The memo assumes the trial's 12% gain transfers to our soils, with no learning curve in year one. It also doesn't check whether the cannery would cap the tonnage it accepts.
+6. **Price risk is understated.** The $105 per ton price is assumed to hold after the contract ends. Hauling costs from a 70-mile move aren't estimated.
+7. **Liquidity is ignored.** Drawing $475,000 to $950,000 on a $900,000 operating line could squeeze seasonal operating cash. Term financing isn't considered.
+8. **The scope change isn't costed.** The vendor's $1,900 per acre price was for 800 acres. A 500-acre job may cost more per acre.
+9. **Installation timing may not fit the rotation.** Fields going into wheat in 2028 earn nothing in their first year. A post-harvest installation window may also be tight.
+10. **Other benefits and costs are left out.** These include fertilizer and labour savings, rodent damage, tillage constraints, and taxes and depreciation.
+11. **Alternatives aren't compared.** Improved furrow irrigation, surface drip, phased installation, or simply buying district water could each be cheaper ways to meet the groundwater cut.
+12. **The memo reframes the question.** The board asked about the 2027 season, and the memo effectively recommends against it. Some members may see this as answering a different question.
+
+FINDINGS:
+- The memo's financing argument against the 800-acre plan also undermines its recommended 500-acre plan, which costs $950,000 without EQIP and so exceeds the $900,000 credit line.
+- EQIP typically reimburses only after installation and certification, so the farm would likely have to front the full $950,000, exceeding the credit line and leaving no operating credit for the 2028 season.
+- The assumed $475,000 EQIP payment may exceed the program's per-entity payment cap (about $450,000 under the 2018 Farm Bill).
+- EQIP pays from fixed practice payment schedules rather than a flat 50% of the vendor quote, so the cost share may be overstated, which would lengthen the 4.3-year payback.
+- The $760,000 'forfeited' EQIP figure for the 800-acre option is probably overstated for the same cap and payment-schedule reasons.
+- The memo runs about 600 words, over the brief's 450–550 word limit.
+- The memo gives no fallback plan for meeting the 2028 groundwater cut if EQIP is denied in May, when it would be too late to plan an alternative.
+- The May go/no-go decision may come too early to judge cannery risk, and the memo should tie the vote to a concrete condition such as a signed 2028 contract or a buyer's letter of intent rather than hoping status will be clearer.
+- The memo gives two inconsistent conditions for revisiting the leased acres ('until the lease is renewed' versus 'if the neighbour commits to a long renewal').
+- The memo omits that EQIP on leased land usually requires proof of control and landowner consent for the contract term.
+- The groundwater analysis ignores that the leased tomato acres staying on furrow face their own cut of about 130 af, which the 84 af surplus from the owned acres only partly covers.
+- The memo leaves the post-2028 water valuation as an open question when the $181 blended price is likely conservative, since after the cut the alternative to drip is fines or $310 district water rather than $95 pumping.
+- The memo silently reframes the board's 2027 question as a 2028 recommendation instead of stating the reframing explicitly up front.
+- The memo gives no system lifespan or NPV, and with drip tape lasting roughly 10–15 years, the 10.6-year no-EQIP payback may approach the system's life, making that case weaker than the memo suggests.

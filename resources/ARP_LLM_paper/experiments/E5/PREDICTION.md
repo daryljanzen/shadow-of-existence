@@ -74,3 +74,20 @@ Committed before any E5 trial. The claim under test is `LOGICAL_ORDER.md` Step 5
 - **Co-primary:** *novel valid findings per review* (valid and not anticipated) is promoted to co-primary beside A.
 - **Why:** A's denominator (valid findings) is itself an outcome. If contamination lowers valid findings, as `P3` predicts, A rises even though no more of the anticipations are correct. A is reported with its numerator and denominator beside it.
 - **`P2` is read through the co-primary:** "contamination closes the gap" holds only if novel valid findings fall from R0 to R2. A rising alone does not establish it.
+
+## Amendment after the main run's aggregate was read (`r7755`), made before any of what follows was run or opened
+
+The aggregate of the primary and co-primary was read first (`analyse_e5.py`). What follows was registered after that, and that order is a deviation, stated here and in RESULT.
+
+- **The hand-check, as registered:**
+  - **The sample:** 20% of reviews, 36 of 180, stratified by level, with R2 at 40% of the sample. That is R0 11, R1 11 and R2 14, drawn by `handcheck/draw.py` with seed 5755.
+  - **What I see:** exactly what the matcher saw (its recorded input). The level and the matcher's judgements go in `handcheck/KEY.json`, which is opened only after `handcheck/scores.json` is committed.
+  - **What I score:** per finding, valid (true/false) and anticipated (true/false). κ is reported for each judgement, with raw agreement.
+  - **The deviation:** this check follows the aggregate, against the registered "before unblinding".
+- **The two registered secondaries,** which the runner did not build, are built now as blind scorer passes (`score_secondary.py`):
+  - **(b) Complications mishandled and found.**
+    - A per-document pass (`HANDLING`) codes each key complication as handled or mishandled by the author's document, against the key's `good_handling`.
+    - A per-review pass (`FOUND`) codes, for each complication, whether any of the review's extracted findings identifies it.
+    - The measure is the share of mishandled complications that reviews at each level found.
+  - **(c) Anticipation no reviewer needed.** A per-document, per-level pass (`RAISED`) codes, for each of the author's anticipated critiques, whether any finding of that level's two reviews raises it in substance. The measure is the share of anticipations raised by no reviewer, by level. **R0 is the reading of record,** because R2's reviewers were shown the list.
+  - Each pass sees no level label.

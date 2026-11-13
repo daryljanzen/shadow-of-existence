@@ -1,0 +1,71 @@
+DOCUMENT:
+# MEMO
+
+**To:** Publisher, The Coastal Herald
+**From:** [Strategy/Analysis]
+**Date:** 13 November 2026
+**Re:** Proposal to cut the free-article limit from 10 to 3
+
+## Recommendation
+
+Do not adopt a 3-article limit in the 2027 budget. Keep the 10-article limit through the Pell Foundation grant renewal (June 2027) and the November 2027 local elections. Instead, run a longer, better-designed test, including an intermediate limit of about 5 articles, in Q1 2027. Budget no subscription gains from a tighter limit.
+
+## The numbers
+
+The July test points the right way for subscriptions. It points the wrong way for total revenue.
+
+- **Subscription gain.** A 62% rise on 900 monthly starts is about 560 extra starts a month. Most come in through the $1 introductory offer, and 60% of those cancel when it ends. That leaves roughly 220 extra paying subscribers a month. This adds about $320,000 a year in run-rate revenue after twelve months. First-year revenue is only about $100,000–$110,000, because each new subscriber pays $1 for three months and new subscribers build up gradually.
+- **Advertising loss.** A 24% fall in page views, applied to $3.6 million of page-view-driven advertising, puts up to about $860,000 a year at risk. Unlike the subscription gain, this loss starts immediately.
+- **Net effect.** On these figures, 2027 revenue falls by roughly $500,000–$750,000. Even at full run-rate, the change does not break even unless the advertising loss is much smaller than the page-view loss.
+
+## Risks the test did not measure
+
+1. **Search traffic.** 38% of visits come from search. The test lasted only four weeks, which is too short to show any slow loss of search visibility. If visibility drops, both advertising and the pool of potential subscribers shrink.
+2. **Test timing and size.** July is the lowest-traffic month. Visitors that month may be more loyal than average, so the result may not hold year-round. The test group produced only about 90 baseline starts a month, so the 62% figure has a wide margin of error. We also do not know whether these new subscribers will stay after the $1 offer at the usual rate.
+3. **Pell grant ($400,000 a year).** Election, public-health and severe-weather coverage must stay free. A tighter limit makes it harder to keep that coverage cleanly outside the paywall. It could also change how the Foundation sees the Herald just before the June renewal.
+4. **Election year.** November 2027 will bring our largest audience. That traffic is mostly free under the grant terms. It is the wrong time to have reduced our reach and search presence.
+5. **Newsroom mission.** The executive editor's concern about how many people see our investigative work is valid. Reach also supports the grant case.
+
+## Proposed next steps
+
+- **Q1 2027:** Run 8–12 week tests at 3 and 5 articles. Measure retention after the introductory offer, advertising revenue (not just page views) and search referrals.
+- **Test alternatives:** Try a stricter limit for direct visitors and a looser one for search visitors. Separately, test a higher introductory price or a longer offer to reduce the 60% cancellation rate.
+- **Revisit in early 2028:** Decide after the election and the grant renewal, using full-year evidence.
+
+The chief revenue officer is right that subscription revenue is more stable than advertising. The goal is to grow it without giving up more revenue than we gain.
+
+---
+
+##
+
+FACTS:
+The Coastal Herald's website has about 1.9 million monthly unique visitors. It has 21,400 digital subscribers paying $9.99 a month. Readers can currently view 10 free articles a month before they are asked to subscribe. Digital advertising revenue was $3.6 million in 2025, and it depends mostly on page views. In July 2026, the Herald ran a 4-week test in which 10% of visitors were randomly limited to 3 free articles a month. In the test group, new subscription starts rose 62% and page views fell 24% compared with the control group. Across the site, there are about 900 new subscription starts a month. Most new subscribers come in through an introductory offer of $1 for the first 3 months. About 60% of introductory-offer subscribers cancel when the offer ends. 38% of the site's traffic comes from search engines. The digital team says stricter limits may reduce how prominently the Herald's articles appear in search results over time, though the effect is uncertain. Since 2024 the Herald has received a $400,000-a-year grant from the Pell Foundation. Under the grant agreement, coverage of elections, public health emergencies and severe weather must remain free to read. The grant is up for renewal in June 2027. Local elections, including races for mayor and county commission, will take place in November 2027. Election coverage typically brings the Herald's highest traffic of the year. The newsroom has 42 journalists. The executive editor has said she is worried that fewer readers will see the Herald's investigative reporting. The advertising director opposes the change because of the loss of page views. The chief revenue officer supports it, pointing out that subscription revenue is more stable than advertising revenue. News traffic in July is usually the lowest of the year.
+
+KNOWN COMPLICATIONS:
+- The test's 62% increase in subscription starts is mostly temporary: about 558 more starts a month, but with 60% cancelling after the introductory offer, only about 223 extra subscribers a month are kept, worth about $320k a year at full price after a year of additions, much less than the roughly $864k loss in advertising (24% of $3.6M).
+- The test was run in July, the quietest month for news, for only 4 weeks; behaviour during the November 2027 elections and other high-traffic periods may be different.
+- Pell Foundation grant ($400k) requires coverage of elections, public health and weather to remain free, which affects how much of the traffic the limit can apply to, especially in an election year.
+- Search traffic (38%) and the editor's concern about reach mean the change may have longer-term costs that the test did not measure.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **Ad loss assumed proportional to page views.** The memo treats a 24% page-view drop as up to a 24% ad-revenue drop. The lost views may be lower-value pages from casual readers, and ad rates could hold or rise. The real loss could be much smaller, which would narrow or even reverse the net figure.
+2. **All new starts assumed to use the $1 offer.** The data says "most," not all. Full-price starts would raise the subscription gain.
+3. **Pull-forward and lifetime value ignored.** Some test-group subscribers might have subscribed later anyway, which would overstate the gain. The memo also looks only at one year, while subscribers keep paying for years. That would understate the long-run value.
+4. **Grant risk may be overstated.** The agreement requires only that specific coverage stay free. Nothing given says the overall limit is restricted. The memo suggests a risk without evidence that the Foundation cares about it.
+5. **Selective use of uncertainty.** The memo treats the July timing and sample size as reasons for doubt but still relies on the 24% page-view figure from the same test. It also does not say whether either result was statistically significant.
+6. **No costs considered.** Delay has a cost: the strategy shifts a year later, and advertising decline across the industry continues. Testing and engineering also cost money.
+7. **Search risk not quantified.** The memo cites the 38% search share but cannot size the effect, so the argument rests partly on speculation.
+8. **Untested middle option.** The 5-article limit is offered without data. The recommendation may also lean toward the status quo by setting the bar for change higher than the bar for doing nothing.
+9. **Existing subscribers ignored.** The memo does not discuss effects on the current 21,400 subscribers, worth about $2.6 million a year.
+
+FINDINGS:
+- The net-effect range of $500,000–$750,000 is unexplained: the upper bound is slightly below the roughly $760,000 implied by the full page-view loss, and the lower bound rests on an unstated assumption that advertising falls only about 70% as much as page views.
+- The break-even threshold is vague ('much smaller') when it could be stated precisely, e.g. that advertising would need to fall by less than about 9% rather than 24% for subscription gains to cover it.
+- The claim that a tighter limit makes it harder to keep Pell grant coverage outside the paywall is unsupported, since a metered limit and a free-coverage exemption work independently.
+- The suggestion that the change could alter how the Foundation views the Herald is speculation the brief does not support; the real grant risk is reduced reach and search visibility before renewal.
+- The election-year argument undermines itself by noting election traffic is mostly free under grant terms, and it misses the stronger point that a 3-article limit cuts onward reading and ad views from new election readers.
+- The memo does not acknowledge the CRO's likely counterargument that peak election traffic is the best time to convert readers.
+- The memo fails to address the advertising director's position, even though the brief names three internal positions and the analysis largely supports that one.
+- The memo applies the 60% cancellation rate to all new starts without stating that this is a simplification, even though only 'most' starts come through the $1 offer.
+- The From line contains an unfilled placeholder '[Strategy/Analysis]' and the document ends with stray markup (a trailing '---' and an empty '##' heading).
+- The memo uses the 2025 $3.6m advertising figure without noting that 2027 advertising revenue may differ.
