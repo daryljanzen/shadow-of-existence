@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 11,
+ "order": "B",
+ "turn_index": 28,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes, the pharmacist's figure is right. Both numbers are true; they describe the same result in different ways.\n\n## How the two figures fit together\n\n| Over five years | Strokes per 100 people |\n|---|---|\n| On placebo | 2 |\n| On the drug | 1 |\n| **Difference** | **1 fewer stroke per 100 people** |\n\n- **Relative risk reduction:** the risk fell from 2% to 1%, so it halved, a **50% reduction**. Your colleague is right about this.\n- **Absolute risk reduction:** the risk fell by **1 percentage point**.\n- **Number needed to treat:** 1 ÷ 0.01 = **100**. About 100 people need to take the drug for five years to prevent one stroke. The pharmacist is right about this.\n\nThe relative figure tells you the drug works. The absolute figure tells you how much difference it makes to a person, and that depends on how likely they were to have a stroke in the first place. A 50% reduction of a small risk is a small absolute change.\n\n## Which to use in a patient leaflet\n\nThe absolute figures. Guidance on communicating risk to patients consistently recommends this, because a relative figure on its own makes benefits sound larger than they are, and readers can't make an informed choice from it. The leaflet's job is to inform, not to encourage or discourage people from taking the drug.\n\nThe clearest option is usually to show both groups as natural frequencies:\n\n> In the main trial, over five years, about 2 in every 100 people who did not take the drug had a stroke, compared with about 1 in every 100 people who took it. This means that if 100 people like those in the trial take the drug for five years, about 1 stroke is prevented.\n\nYou can add the relative figure alongside, since it's accurate: \"This is a halving of the risk.\" It just shouldn't appear without the absolute numbers.\n\n## Three refinements worth making\n\n1. **Avoid \"only one in a hundred benefits.\"** That isn't quite what the figure means. It's an average across the group, and nobody can tell in advance who the one person will be. Some people also benefit in ways a single outcome doesn't capture. \"About 1 stroke prevented for every 100 people treated for five years\" is more accurate, and also more neutral.\n2. **Say who the figure applies to.** It holds for people similar to those in the trial. For someone at higher risk of stroke, the same halving prevents more strokes, so fewer people need to be treated to prevent one. Something like \"Your doctor can tell you what this means for you\" covers this.\n3. **Present side effects the same way.** If the leaflet gives the benefit as \"1 in 100,\" give the main side effects as \"X in 100\" too. Presenting the benefit as a relative figure and harms as absolute ones (or the reverse) is a common way leaflets end up misleading.\n\nDone this way, the leaflet is both accurate and fair. It shouldn't scare people off; it lets them weigh the drug properly.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2706,
+  "cache_read_input_tokens": 163477,
+  "output_tokens": 1243,
+  "output_tokens_details": {
+   "thinking_tokens": 288
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2706,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1243,
+    "cache_read_input_tokens": 163477,
+    "cache_creation_input_tokens": 2706,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2706
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07921939999999994,
+ "started": "2026-11-13T23:32:53.267257+00:00",
+ "wall_s": 16.99,
+ "task_index": 20
+}

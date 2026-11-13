@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 10,
+ "order": "A",
+ "turn_index": 14,
+ "kind": "task",
+ "item": "E1-26",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.",
+ "response": "### 1. Incident review title\n\n**\"Incident Review: [Service] outage, [Tue DD Mon YYYY] ([duration])\"**\n\nFor example: *\"Incident Review: API outage, Tue 3 Nov 2026 (21 min)\"*. Putting the date and the affected service in the title makes reviews easy to find later, especially in a month with three of them. Keep it neutral and factual; \"post-mortem\" titles that assign blame make reviews defensive.\n\n### 2. Status page rewrite\n\n> **\"Between 14:05 and 14:26 UTC, some customers couldn't log in or load dashboards. Data was not lost. The issue is fixed, and we're investigating the cause.\"**\n\nFill in the real times, symptoms and impact. The rewrite works because it gives specific times, names what users actually saw, answers the question customers worry about most (*is my data OK?*), and says what you're doing about it. If you don't yet know whether data was affected, say so rather than leaving it out.\n\n### 3. Severity scheme\n\n| Level | Definition | Response |\n|---|---|---|\n| **SEV1: Critical** | Core product down or data at risk for all or most customers | All hands, immediate; status page within 15 min; customer comms; review required |\n| **SEV2: Major** | A key feature is broken or badly degraded, or some customers are fully blocked | On-call plus owner, within the hour; status page; review required |\n| **SEV3: Minor** | Limited impact, a workaround exists, or the issue is cosmetic | Fixed in normal working hours; review optional |\n\nA useful rule: **if in doubt, choose the higher severity**. You can always downgrade later.\n\n### 4. MTTR for the account manager\n\n**MTTR (mean time to recovery)** is the average time from an incident starting to the service working normally again. This month it's about 17 minutes, from (18 + 12 + 21) ÷ 3.\n\n### 5. SLA check: **yes, you've breached it**\n\n- **The allowance:** a 30-day month has 30 × 24 × 60 = **43,200 minutes**. At 99.9% uptime, 0.1% may be downtime: **43.2 minutes**.\n- **Your downtime:** 18 + 12 + 21 = **51 minutes**.\n- **The result:** uptime was 1 − 51/43,200 = **99.88%**. That's below 99.9%, and **7.8 minutes over** the allowance.\n\nThe colleague made two mistakes:\n- **Wrong month length.** 43.8 minutes is the allowance for an *average* month of about 30.44 days, from 365.25 ÷ 12. For a 30-day month the allowance is 43.2.\n- **They didn't add up the outages.** Even with 43.8 minutes, 51 minutes is over the limit.\n\n**Before you tell anyone the SLA is breached, check the contract's exact wording.** It may exclude scheduled maintenance, count only specific services, define downtime differently (for example, only full outages, or only periods longer than a few minutes), or measure availability differently. Also check whether service credits are paid automatically or only when the customer claims them. If the contract counts this month as a breach, it's better to tell customers yourselves than to wait for them to notice.\n\n### 6. Action items you can realistically deliver\n\n1. **Fix the specific root cause of each outage, with an owner and a date for each.** Commit only to what you've already investigated. \"Add a connection-pool limit to the auth service by [date]\" is credible. \"Make the platform more resilient\" isn't.\n2. **Add monitoring or alerting for each failure.** For each outage, ask whether you found out before customers did. If not, add an alert or health check that would have caught it. This is cheap, fast and directly shortens recovery time.\n3. **Adopt the severity scheme and a simple incident runbook.** Cover who declares an incident, who updates the status page, and when. Three outages in one month suggests the process needs work as much as the systems. A one-page runbook is achievable within a quarter.\n\nAvoid commitments such as \"zero outages,\" new uptime targets, or major re-architecture with a deadline, unless you've genuinely scoped them.\n\n### 7. Meeting or async?\n\n**Make the review async on the doc with a 48-hour comment window, then hold a short optional call only to settle any disagreements.**",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1063,
+  "cache_read_input_tokens": 71954,
+  "output_tokens": 1576,
+  "output_tokens_details": {
+   "thinking_tokens": 158
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1063,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1576,
+    "cache_read_input_tokens": 71954,
+    "cache_creation_input_tokens": 1063,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1063
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0544308,
+ "started": "2026-11-13T23:19:05.070623+00:00",
+ "wall_s": 20.27,
+ "task_index": 6
+}
