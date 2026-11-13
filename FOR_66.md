@@ -15,6 +15,334 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7761+cc66` — **THE STATEMENT HOLDS IN ITS ARCHITECTURE AND IN ITS MEASUREMENT CLAUSE. THREE CLAUSES FAIL, ONE OF THEM AT THE FOUNDATIONS AND IN THE DIRECTION `P7` NAMES. AND DARYL'S QUESTION HAS A SHARP ANSWER: RADIATION MOVES THE SHIFT ITSELF, HARDER THAN IT MOVES THE LAPSE, AND IT IS WHAT KEEPS THE SHIFT FINITE**
+
+Registered at `r7761+cc66.0` and pushed before a line of the computation existed; extended at `.1` and
+`.4`, each time before the rows it added were run. **`15` of `15` checks, `0` FAIL, ~`3` s.**
+`computations/beyond_the_wall/r7761_cc66_the_shift_and_the_two_levels/`.
+
+---
+
+### ① THE STATEMENT AT FULL STRENGTH
+
+**Where it holds, and it holds on the part that carries the weight.**
+
+⒜ **The two-level architecture is `P7`'s own, not an import.** Non-Identity of Ontology and Representation
+plus the Projection Principle give exactly two levels; Minkowski and Schwarzschild as two projections of
+one layer is the licence for describing one universe at two levels at once. Nothing in the axioms is
+strained by the frame.
+
+⒝ ⛭ **And "every observation is made from inside the content … takes the leaf rate" is not merely
+consistent with the Projection Principle — it is the Principle's own clause.** The Principle reads: a
+spacetime is a valid projection if there is a foliation and a family of diffeomorphisms such that *"the
+causal structure induced by `g` **faithfully encodes signal propagation on `(S_t,h_ij(t))`**"*. Signal
+propagation is on the layer; the layer is what carries the content. So a propagated length is a fact
+about the content-filled layer, and the statement is reading the Principle the right way round. **The
+corpus's present assignment is the one that has to argue.**
+
+⒞ **The measurement clause's numbers check.** `|H_leaf/H_stack − 1|` is `0.00441` per cent at `z = 0`,
+`1.0005` per cent at `z = 66.8`, `15.047` per cent at `z*`. ⌗ The order's own draft says "4 parts in
+100,000" and "better than one per cent below `z ≈ 67`"; both are right as printed.
+
+⒟ **The kernel theorem is untouched, and it gains a test** — item ④, and it passes.
+
+**Where it does not hold. Three clauses.**
+
+⒜ ⛔ **"the chart and the lapse survive radiation untouched" — the CHART does, the LAPSE does not.** The
+chart's *form* survives exactly: `τ̃ = τ + χ` and `∂_χ r = ∂_τ r` hold on the bent cut to `0.000e+00` over
+`20001` nodes, and the reason is structural rather than numerical — `dr/dτ = r·h(r)` is autonomous in `r`
+for *every* mass function, so its solutions stay translates of one another and `r` stays a function of
+`τ + χ`. But the lapse is a *function*, and it moves. On the **cosmological** (constant-`τ̃`) foliation,
+with `τ = τ̃ − χ`:
+
+> `g_τ̃τ̃ = −1`, `g_τ̃χ = +1`, `g_χχ = (∂_χ r)² − 1` ⇒ **`N^χ = 1/((∂_χ r)² − 1)`**, **`N² = (∂_χ r)²/((∂_χ r)² − 1)`**, with `(∂_χ r)² = μ(r)/r + r²/α²`
+
+(reconstruction checked both ways on both cuts, worst residual `4.4e-16`). `μ` is where the bend lives, so
+**the bend is inside the lapse and inside the shift**: `(∂_χ r)²` moves `+32.36` per cent at `z*`.
+⛭ *"The lapse is `1`" is true — of the **proper-frame** slicing, where `g_ττ = −1`. That is not the
+slicing whose stacking is the expansion.* `P10` puts the stacking rate on the lapse of the **cosmological**
+foliation, and that lapse carries radiation. **The clause should say: the chart's form survives radiation
+untouched; its functions do not.**
+
+⒝ ⛔ **"`r ∝ sinh^{2/3}(3τ̃/2α)`" and "radiation bends the cut epoch by epoch" cannot both be exact.** The
+`sinh^{2/3}` law is the *vacuum* cut's solution. The leaves' own `r(τ̃)` sits `4.4e-05` from it today and
+`15.047` per cent from it at last scattering. The statement needs the weaker form, which is still the
+whole of its point: *the geometric law is what the late universe reads, to parts in `10⁵`, and the early
+universe does not read it.*
+
+⒞ ⛔⛭ **"just as Minkowski is the trampoline's cosmological description and not the geometry light crosses
+near a bowling ball" — this one fails at the foundations, and it fails in exactly the direction `P7`
+names.** `P7`'s FLRW section warns against *"the subtler inverse of the error, **mistaking the layer's
+ontological rate for the appearance and refusing it its physics**"*, and says the layer's own reassigned
+expansion *"is not itself a shadow but **the existent's own geometry**"*. In the trampoline, Minkowski is
+the **projection**; `h_ij(t)`, warped by the bowling ball, is the **layer**. So the analogy puts the
+stacking rate on the appearance side — while the statement's own preceding sentence (*"This is why the
+universe expands … it is the lapse, and no content sets it"*) puts it on the existent side. **Those two
+cannot both stand.** ⇒ *** The repair is to drop the Minkowski comparison and keep the narrow claim. The
+stacking rate is the layer's own rate and keeps its physics. What is true is only this: it is not the rate
+a *propagated* length is built on — because a propagated length is built on the leaf the light actually
+crossed. ***
+
+⒟ ⛔⛭ **And the mirror of ⒞, which cuts toward the statement and is the strongest thing I can give it.**
+The corpus's grounding for the distance's rate is **itself on the projection side.** The identification
+that `25` of the census's `47` sentences cite is *"the projection's distance is the one measured across the
+observer's own flat slice"* — a statement about the flat constant-proper-time slice, which is the
+projection's own geometry. By the Projection Principle, physics is read off `h_ij(t)`, **not** off the
+projection's geometry. So that identification can fix **which length** the distance is — the corpus says
+exactly that, and that part is sound — but it **cannot fix the rate**. ⇒ *** This is `P*` in its sharpest
+form yet: it has stopped being a dispute about a fit and become a foundations-level objection, stated in
+the Principle's own terms. ***
+
+**The kernel theorem, and a structural result I did not expect.** Registered at `.4` before computing:
+
+* **`(∂_χ r)²` has its MINIMUM at `r = (Mα²)^{1/3}`, and `min (∂_χ r)² = 3(M/α)^{2/3}`.** For the Nariai
+  offset `2M = 2α/(3√3)` that radius is `α/√3 = 3009.892488` Mpc and the minimum is **exactly `1`**
+  (`+0.000e+00`; stationarity residual `−3.3e-19`). So `g_χχ = (∂_χ r)² − 1 ≥ 0` everywhere, with a
+  **single** zero — the constant-`τ̃` slicing touches degeneracy at one radius and is regular either side.
+* ⛔ **That is a CHARACTERIZATION of the Nariai selection.** `3(M/α)^{2/3} = 1` iff `M = α/(3√3)`, and it
+  is monotone in `M`: at `0.98 × 2M` the minimum is `−1.338e-02` (so `g_χχ < 0` on a whole interval — the
+  constant-`τ̃` surfaces go timelike over a *range* of epochs), at `1.02 × 2M` it is `+1.329e-02` (no
+  degeneracy anywhere). **The Nariai value is the knife edge.** ⇒ *** So the Nariai condition, which the
+  corpus selects on other grounds, is equivalent to a statement about the **cosmological foliation** — the
+  one the shift is built on — and not only about the static patch. *** ⌗ *I make no claim that the corpus
+  selected it this way.*
+* ⛭ **And that radius is `r₀/x₀` exactly**, `(r₀/r_deg)/x₀ − 1 = 0.000e+00`, i.e. `z = 0.678295`. It is an
+  identity, not a coincidence: `r₀ = x₀α/√3` gives `Ω_m/Ω_Λ = 2Mα²/r₀³ = 2/x₀³`, which rearranges to
+  **`Ω_m = 2/(x₀³+2)`** — the very identity item ④ tests. **So `z_acc` IS the degeneracy redshift**, and
+  the measured `z_acc = 0.6648 ± 0.0467` agrees with it at `0.29 σ`.
+* ⛭ **`P15` already prints this locus and confirms the minimum independently.** `sec:scope`'s
+  non-synchrony factor `∂_χ r/(1+∂_χ r)` *"bottoms at exactly `½` at the merged Nariai radius"* — it
+  bottoms at `½` **because `∂_χ r` bottoms at `1`, there.** That is published prose agreeing with the new
+  row. What the corpus has not recorded is that the cosmological slicing *degenerates* at that radius, and
+  that the radius is `z_acc`.
+* ⛔⛭ **And radiation REMOVES the degeneracy.** On `μ = 2M + K/r` the minimum is `+3.3177e-04` at
+  `r = 3010.891` Mpc (`z = 0.677739`, solved not gridded), so `g_χχ > 0` at every epoch and the shift
+  **peaks at `N^χ = 3014` instead of diverging**. ⇒ *** The chart's one pathology is an artefact of taking
+  the cut to be exactly vacuum. ***
+
+⇒ *** **Net on item ①: the frame survives, the architecture is `P7`'s own, and the measurement clause is
+the Principle read correctly. What has to go is the Minkowski analogy, "the lapse survives untouched", and
+`sinh^{2/3}` as exact. And "what stays geometric" is right about `z_acc` and the Nariai selection — which
+turn out to be one fact, and a fact about the slicing the shift is built on.** ***
+
+---
+
+### ② THE RE-SORT, ONE LINE EACH
+
+**The criterion, stated so it can be applied mechanically:** *what carried this quantity to us?* If a
+photon or a particle crossed the content to make it, or a process inside the content made it, it is the
+leaf's. If no propagation and no content process reports it, it is the kernel's.
+
+Census net re-run on the eighteen papers: **`47`** sentences assign a distance or comoving separation to a
+rate. Counts below are sentences naming that quantity (they overlap).
+
+**The corpus's stacking column. Nothing observed survives in it.**
+
+| quantity | what carries it to us | disposition | sentences |
+|---|---|---|---|
+| `D_M`, transverse comoving distance | light crossing the content | **leaf** | `6` |
+| `D_H = c/H` | the rate a propagated length accumulates at | **leaf** | `3` |
+| `D_V` | a combination of the two | **leaf** | `2` |
+| "the projection's distance" | light | **leaf** | `25` |
+| "light's path" / the light-path distance | light, by name | **leaf** | `6` |
+| `D_C`, the light-travel distance identified with `D_M` on the flat slice | light | **leaf**; the identification fixes the *length*, not the rate (①⒟) | `1` |
+| "a comoving separation read across leaves" (the class name) | only light reads it across leaves | **leaf** — the class name is doing the misfiling | `8` |
+| "the observable expansion" | distances and redshifts, i.e. propagation | **leaf** | `2` |
+| conformal time `η`, `χ` — the variable those lengths accumulate in | light | **leaf** | `3` |
+| optical depth `τ = ∫n_eσ_T a dη` | a photon-path integral; `P15` itself files it *"as a photon-path observable alongside the redshift and the distances"* | **leaf**, and it moves *with* them — `P15`'s own filing now carries it across | `2` |
+| the equality projection `k_eq = a_eq H(a_eq)/c` | projected on the distances' rate | **leaf**; `1+z_eq = ω_m/ω_r` is already on the leaf, so the projection joins it | `1` |
+| redshift `1+z = r(τ̃₀)/r(τ̃_e)` | a ratio of areal radii on two leaves | **form geometric, values leaf** — the `r(τ̃)` in it is the bent one, so the `z ↔ τ̃` map moves | — |
+
+**The corpus's leaf column. Every item confirmed; nothing moves.**
+
+| quantity | what carries it | disposition | sentences |
+|---|---|---|---|
+| the plasma's sound horizon `r_s` | a process in the content | **leaf** | `12` |
+| the diffusion length `r_D` | the oscillator's own viscous damping | **leaf** | `7` |
+| recombination, the ionisation history | atomic physics in the content | **leaf** | `10` |
+| the perturbations | the content's own dynamics | **leaf** | `7` |
+| nucleosynthesis, the light elements | nuclear rates in the content | **leaf** | `2` |
+| `1+z_eq = ω_m/ω_r` | the content's own densities | **leaf** | — |
+
+**What stays with the kernel: the things nothing reports.**
+
+| quantity | disposition |
+|---|---|
+| `Λ`'s amplitude, through `α` | **geometric** — stays |
+| the cut's offset `2M` | **geometric** — stays, and by `r7759` it *is* the dust term |
+| the Nariai selection, the merged Nariai radius | **geometric** — stays, and by ⑩–⑪ it is *equivalent to* `min (∂_χ r)² = 1` (`2` sentences) |
+| `z_acc = x₀ − 1` | **geometric** — stays, and by ⑨ it *is* the degeneracy redshift |
+| `Ω_m = 2/(x₀³+2)` | **geometric** — stays, and by ⑦ the content's own refit agrees with it at `0.44 σ` |
+| `τ̃ = τ + χ`, `∂_χ r = ∂_τ r` | **geometric, exactly** — the chart's *form*, on any cut |
+| the lapse `N` of the cosmological foliation | ⛔ **not purely geometric** — a function of `μ(r)`, so it carries the bend |
+| the shift `N^χ` | ⛔ **carries the bend, amplified** — item ③ |
+| `Ω_r` | ⛔ **neither level supplies it**: it is put in by hand from the CMB temperature, and the kernel's rate has no `(1+z)⁴` term to read it off (`r7757+cc66.2`) |
+
+⇒ *** **The consequence worth stating plainly: the stacking rate's entire empirical content sits at high
+redshift.** `0.49836` per cent at `z*` against `0.02115` per cent at the most distant baryon-acoustic
+redshift (`r7751`/`r7753`), and `4.4e-05` today. That is why the microwave spectrum is the only lever, and
+why the corpus could carry this assignment for thousands of revisions without a datum contradicting it. ***
+
+---
+
+### ③ DARYL'S QUESTION, ANSWERED FROM THE CHART
+
+**Both. Radiation changes the shift itself, and it changes it harder than it changes the lapse.**
+
+⒜ **The shift and the lapse are two functions of one quantity.** `N^χ = 1/((∂_χ r)² − 1)` and
+`N² = (∂_χ r)²/((∂_χ r)² − 1)`, with `(∂_χ r)² = μ(r)/r + r²/α²`. The bend is `K/r` inside `μ`. There is
+no arrangement of the chart in which the bend reaches the leaf's rate and leaves the shift alone.
+
+⒝ **Sizes, straight cut against bent:**
+
+| `z` | `(∂_χ r)²` straight | bent | `Δ(∂_χ r)²` | `ΔN` | `ΔN^χ` |
+|---|---|---|---|---|---|
+| `0` | `1.336120` | `1.336238` | `+0.0088 %` | `−0.0131 %` | `−0.0350 %` |
+| `66.8` | `26.932296` | `27.473929` | `+2.0111 %` | `−0.0380 %` | `−2.0459 %` |
+| `1089.9` | `433.336565` | `573.558267` | `+32.3586 %` | `−0.0283 %` | `−24.4904 %` |
+
+⒞ ⛔ **And today the shift is the MOST radiation-sensitive of the three, by a factor of four.** The bend
+moves `(∂_χ r)²` by `8.8186e-05`, which **is** `Ω_r` to `2e-12`. But `g_χχ = (∂_χ r)² − 1` is *small*
+today — `0.336` against `1.336` — so `N^χ = 1/(s−1)` carries sensitivity `s/(s−1) = 3.9751`, not `1`:
+`ΔN^χ = −3.504e-04` and `ΔN = −1.311e-04`, both reproduced from the measured `Δs/s` by
+`ΔN^χ/N^χ = −ε·s/(s−1)` and `ΔN/N = ½ε(1 − s/(s−1))` to `3.5e-04` relative.
+
+⒟ ⛭ **And the amplifier diverges at the vacuum cut's degenerate radius, which is `z_acc`** — so the epoch
+we observe from is `0.336` in `g_χχ` away from the chart's own coordinate failure, which is *why* the
+sensitivity is large now rather than at some arbitrary epoch. **On the cut the universe actually has, the
+radiation bend is what keeps it finite**: `g_χχ` bottoms at `+3.3e-04` and `N^χ` peaks at `3014`.
+
+⇒ *** **So the structural home the corpus gives the shift is right — it is where the rate is converted
+into observed distance and redshift — but it is not an untouched carrier.** `P10`'s grounding sentence
+putting *"distance and redshift"* on the shift is, read this way, evidence **for** the reassignment rather
+than against it: the shift is the radiation-bearing level, and that is where the corpus already filed the
+observables. ***
+
+---
+
+### ④ THE TWO LEVELS' `Ω_m` — THE CR-SPECIFIC CHECK, AND IT PASSES
+
+⛭ **Registered at `r7761+cc66.0` and pushed before the computation existed**, with `z_acc` and its error
+read from `P15` `eq:zacc` as printed and the background read by path from `r7580/lightpath.py`.
+
+| | |
+|---|---|
+| `x₀ = 1 + z_acc` | `1.6648 ± 0.0467` |
+| `dΩ_m/dx₀ = −6x₀²/(x₀³+2)²` | `−0.3801` |
+| **`Ω_m` from the geometry alone** | **`0.3024 ± 0.0178`** — no distance ladder, no microwave background, no density |
+| `Ω_m` from 70's leaf-rate refit | `0.2945` ⇒ **`0.44 σ`** |
+| `Ω_m` from the background's own `x₀³ = 4.72721157` | `0.29730` ⇒ **`0.16 σ`** |
+
+⇒ *** **The two levels agree on the matter density.** One reads it off the geometry through the
+acceleration epoch; the other off the content's own spectrum on the leaf rate. **Their agreeing is a
+prediction of the two-level statement, and their disagreeing would have been evidence against it.** And by
+⑨ the identity `Ω_m = 2/(x₀³+2)` *is* the statement that the cosmological slicing degenerates at
+`r₀/x₀` — so this is agreement between the kernel's own slicing geometry and a spectrum fit. ***
+
+⛔ **70's refit uncertainty is theirs to supply and I did not assume one.** `z_acc`'s `±0.0467` dominates
+by roughly four to one against a typical spectrum-fit `σ(Ω_m) ~ 0.004`, so the comparison is reported on
+`z_acc`'s error alone and **the conclusion is conditional on 70's being subdominant.** If 70's `σ` is
+larger than `~0.01` the test weakens rather than reverses.
+
+---
+
+### ⑥ DARYL'S UNIFORM-DUST TRAMPOLINE — **IT IS RIGHT, IT IS ALREADY IN THE CORPUS'S OWN LAW, AND IT COSTS THE STATEMENT A CLAUSE**
+
+Daryl's addition arrived on `main` while I was working, so it is answered here. ⛭ **Registered at
+`r7761+cc66.6` before either row was computed, with the outcome that would contradict the statement named
+in the registration as the finding if it fired.**
+
+⒜ **The generalisation holds, and it removes a restriction I had relied on.** At `r7755` I read the
+trampoline passage's licence as covering *lumpy* content only — its warpers are bowling balls, the effects
+it sets aside are *"lensing and ripples"*, and the bound structures it exempts are the ones *"except where
+densities exceed a threshold"*. Daryl's version — a thin dust layer gravitating uniformly on an infinite
+flat expanding trampoline rather than on Minkowski — is as much a trampoline as the original, and in it
+the content gravitates and sets the rate by the field equations. ⇒ *** **So the lumpiness restriction was
+mine to drop, and I drop it. Uniform content is still content gravitating on the trampoline.** ***
+
+⒝ ⛭ **His consequence is exactly right, and it is the same fact as `r7759`'s law.** Measured:
+
+| | |
+|---|---|
+| `2M/(r₀³h₀²)` against the published `Ω_m` | `0.2973000000` against `0.2973000000`, ratio `−1 = −3.3e-16` |
+| the level separation under `Ω_m × 0.5`, `×1.0`, `×1.5` | `7.19e-13` relative deviation from `H₀²Ω_r(1+z)⁴` in **all three**, spread `5.93e-13`, against a cancellation floor of `1.89e-12` — so no matter dependence above round-off |
+| the level separation at `Ω_r = 0` | **exactly `0`**, at every epoch |
+
+⇒ *** **For dust the two levels coincide exactly. Only radiation, through its pressure, separates them.**
+And that is not a numerical coincidence: it is `dm/dr = −4πr²p` read twice. Dust has `p = 0`, so its
+Misner–Sharp mass is the constant `2M` and **cannot** bend the cut. Radiation has `p = ρ/3`, so its mass
+falls as `1/r` and bends it. The decomposition `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴` having **only** a
+radiation term is therefore a theorem about pressure, not a modelling choice. ***
+
+⒞ ⛔⛭ **And it costs the two-level statement a clause — the one clause I had let stand.** If `2M` is the
+dust term, then *"This is why the universe expands … it is the lapse, and **no content sets it**"* is
+false at the geometric level. **The geometric rate has matter's form because it IS matter**, read as a
+constant Misner–Sharp mass and therefore indistinguishable from a vacuum SdS offset. ⌗ *I had graded this
+clause as holding in ① and I withdraw that grade.*
+
+⒟ ⇒ *** **Which simplifies the frame rather than breaking it, and the simplification is Daryl's.** There
+are not two descriptions of everything. **There is one cut, whose mass function is `μ = 2M + K/r`: the
+dust part constant, hence invisible as content and readable as geometry, and the radiation part the only
+thing that bends it.** "Two levels" then names a single structure with a radiation-pressure correction —
+and every quantity in ②'s first table takes the bent cut, because the bent cut is the one the universe
+has. It also replaces the failed Minkowski analogy of ①⒞ with a sound one: **the stacking rate is the
+uniform dust's own gravitation, not the trampoline's flat description.** ***
+
+⒠ ⛭ **And it recasts item ④ as the test he names.** *"Ωm from the acceleration epoch against the refit's
+Ωm is then the check that matter's actual density is the geometric offset."* That is what ④ measures, and
+it is the non-circular form of it: `2M/(r₀³h₀²) = Ω_m` is definitional in the background, so it is
+consistency and not evidence (which is why ⑬ is labelled as a consistency row). **The evidence is
+`0.3024 ± 0.0178` from the measured `z_acc` against the refit's `0.2945` — `0.44 σ`.** Matter's actual
+density *is* the geometric offset, to within the error the acceleration epoch allows.
+
+---
+
+### ⑤ WHAT IS REGISTERED, WHAT MISSED, AND WHAT I DID NOT DO
+
+⛭ **Registration discipline kept three times:** `PREDICTION.md` pushed at `.0` before a line existed;
+amended at `.1` and again at `.4`, each time **before** the rows it added were computed.
+
+⛔ **Three registered licences missed. All three reported as misses and repaired at source, none smoothed.**
+- **Row `③`** licenced `< 1e-4` at `z = 0` in all three of `(∂_χ r)²`, `N`, `N^χ`; `N` came in `1.311e-04`
+  and `N^χ` at `3.504e-04`. **The licence was wrong, not the number** — I took `N^χ`'s sensitivity to be
+  `1`; it is `s/(s−1)`. Relocated to `③′`, which now asserts the amplification arithmetic itself. **The
+  miss is the finding of item ③.**
+- **Row `⑩`** licenced the grid minimum to `1e-12`; it came in `5.251e-12` high. A grid cannot do better:
+  the nearest node sits `0.0069` Mpc from the turning point and the function is quadratic there, so it
+  reads high by `½f″dr² = 5.251e-12` — **matching the excess to four figures.** The row now asserts the
+  closed form `3(M/α)^{2/3}` to round-off and bounds the grid excess by that estimate.
+
+- ⛔⛭ **Row `⑭`, and it is the same numerical trap for the FIFTH time in this sequence.** I licenced the
+  level separation to be *bit-identical* under a change of `Ω_m`. It cannot be: the separation is formed as
+  `(A+B) − A` with `A/B` reaching `8500` at `z = 0.1`, so the subtraction discards the low bits of `B` —
+  and discards *different* low bits for different `A`. **The claim was physical and my instrument was
+  not.** Replaced by the ratio to the closed form with the cancellation floor `ε·A/B` written into the
+  licence: `7.19e-13` in all three runs against a floor of `1.89e-12`. ⌗ *Forming a small quantity as the
+  difference of two nearly equal large ones. I have now done this at `r7753`, `r7755`, `r7757`, `r7759`
+  and here; I am writing the floor into the licence BEFORE the row next time.*
+
+⛔ **One registered expectation whose DIRECTION I had backwards.** `⑪`: I wrote that a *larger* offset
+would push `min (∂_χ r)²` below `1`. The closed form settles it the other way — the minimum *rises* with
+the offset. The sign change through the Nariai value, which is what the row was for, holds.
+
+⛔ **Three numbers in my own gate labels printed values the run contradicted, and were corrected before
+any of this was written up:** the `sinh^{2/3}` departure at `z*` is `15.0` per cent, not the `6.9` I had
+drafted; and `⑨`'s ratio came back `1.000000` where I had drafted `0.3` per cent of disagreement — I had
+expected a near-miss and got an identity.
+
+⛭ **Failability.** `⑫` was registered without knowing the answer, with the opposite outcome named as the
+finding if it fired. `⑪` fires unless the Nariai value is the one giving exactly `0`. `⑨`'s ratio was
+printed rather than asserted on the first run, which is how the identity was found rather than assumed.
+
+**Not done, deliberately:**
+- **No paper edits and no drafts** — the order says none this round.
+- **No receipt this round.** The order asked four things and a receipt is not among them. ⛭ But `⑨`–`⑫`
+  are receipt-ready as a `P15` gate — the Nariai characterization against `sec:scope`'s own *"bottoms at
+  exactly `½` at the merged Nariai radius"* sentence, which is published prose that independently confirms
+  `⑩`. **Say the word and I will mint it.**
+- **No verdict on the two-level statement beyond ①'s three clauses**, and no claim that a degenerate
+  slicing is unphysical rather than a bad chart.
+
 ## ⛭⛭⛭ `r7759+cc66` — **THE RECEIPT IS MINTED (7 GATES, `K` DERIVED TWICE OVER), AND THE DRAFTS FOR ALL SEVEN SITES PLUS A DISPOSITION FOR EVERY OTHER THE CENSUS FINDS**
 
 Order `r7759`, both items. ⛭ **Your Misner–Sharp ruling is the right law and it makes the result stronger than I had it**: `K` is now *derived* from `dm/dr = −4πr²p` rather than matched to `H_leaf`, with the density **positive throughout**. There was never a negative density — `r7755` §⑦ read `μ' < 0` through the static-region formula in a region where `r` is timelike.
