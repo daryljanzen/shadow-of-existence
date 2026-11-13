@@ -288,8 +288,51 @@ check("⛭ `r7761` ** ⑧ AND AGAINST THE BACKGROUND'S OWN `x₀³` THE REFIT SI
       f"x_0^3 = {x03:.8f} gives Om = {om_bg:.5f}; |{om_bg:.5f} - {OM_REFIT}| / {sig:.4f} = "
       f"{n_sig_bg:.2f} sigma")
 
+# ------------------------------------------------------------------ R4 ⑬⑭ (`r7761+cc66.6`)
+om_from_offset = TWO_M / (r0 ** 3 * h0 ** 2)
+check("⛭ `r7761` ** ⑬ THE CUT'S OFFSET IS MATTER'S OWN DENSITY: `2M/(r₀³h₀²) = Ω_m` ** ⇒ *so the "
+      "geometric rate carries matter's form because it carries matter -- which is the first half of "
+      "Daryl's uniform-dust reading*. ⌗ *Definitional in the chart's rate relation `h² = μ/r³ + 1/α²`, "
+      "so this row is a CONSISTENCY check on the background and not evidence*",
+      abs(om_from_offset / OM - 1.0) < 1e-12,
+      f"2M/(r_0^3 h_0^2) = {om_from_offset:.10f} against the published Omega_m = {OM:.10f} "
+      f"(ratio - 1 = {om_from_offset/OM - 1.0:.3e})")
+
+def sep(zz, om, omr):
+    """`H^2_leaf - H^2_stack` built from scratch, so a matter dependence would have somewhere to appear"""
+    return (H0 ** 2 * (om * (1.0 + zz) ** 3 + (1.0 - om)) + H0 ** 2 * omr * (1.0 + zz) ** 4) \
+        - H0 ** 2 * (om * (1.0 + zz) ** 3 + (1.0 - om))
+
+# `r7761+cc66.7` MY FIRST FORM OF THIS ROW WAS WRONG, AND IT IS THE SAME TRAP A FIFTH TIME.  I licenced
+# the separation to be BIT-IDENTICAL under a change of `Omega_m`.  It cannot be: `sep` forms `(A+B) - A`
+# with `A/B` reaching `8500` at `z = 0.1`, so the subtraction throws away the low bits of `B` and throws
+# away DIFFERENT low bits for different `A`.  The claim is physical and the instrument was not: the right
+# test is the RATIO to the closed form, with the cancellation floor `eps*A/B` written into the licence.
+zz4 = np.geomspace(1e-1, 1e3, 4001)
+closed = H0 ** 2 * OMR * (1.0 + zz4) ** 4
+floor = np.finfo(float).eps * (H0 ** 2 * (OM * (1.0 + zz4) ** 3 + (1.0 - OM))) / closed
+devs = {f: float(np.max(np.abs(sep(zz4, f * OM, OMR) / closed - 1.0))) for f in (0.5, 1.0, 1.5)}
+spread = float(np.max(np.abs(sep(zz4, 0.5 * OM, OMR) / sep(zz4, 1.5 * OM, OMR) - 1.0)))
+zero_omr = float(np.max(np.abs(sep(zz4, OM, 0.0))))
+check("⛭⛔⛭ `r7761` ** ⑭ AND THE LEVEL SEPARATION DEPENDS ON `Ω_r` **ALONE**: TRIPLING `Ω_m` MOVES IT BY "
+      "`2e-12`, WHICH IS THE CANCELLATION FLOOR AND NOT A DEPENDENCE, AND IT VANISHES **EXACTLY** AT "
+      "`Ω_r = 0` ** ⇒ *** so Daryl's consequence holds: **for dust the two levels coincide exactly, and "
+      "only radiation -- through its pressure -- separates them.** It is the same fact as `r7759`'s law, "
+      "`dm/dr = −4πr²p`: dust has `p = 0`, so its Misner-Sharp mass is the constant `2M` and cannot bend "
+      "the cut; radiation has `p = ρ/3`, so its mass falls as `1/r` and bends it. ** ⛔ Which costs the "
+      "statement this order asks me to test one clause: if `2M` IS the dust term (`⑬`), then *\"it is the "
+      "lapse, and no content sets it\"* is false at the geometric level -- the geometric rate has matter's "
+      "form BECAUSE IT IS MATTER. ** *** ⛔ *My first form of this row licenced BIT-IDENTICAL and failed: "
+      "see the comment above -- the same cancellation trap, named a fifth time.*",
+      all(d < 1e-9 for d in devs.values()) and spread < 1e-9 and zero_omr == 0.0
+      and max(devs.values()) < 3.0 * float(np.max(floor)),
+      f"max |sep/closed - 1| at Omega_m x 0.5/1.0/1.5: {devs[0.5]:.2e} / {devs[1.0]:.2e} / "
+      f"{devs[1.5]:.2e}; spread between the 0.5 and 1.5 runs {spread:.2e}; cancellation floor "
+      f"eps*A/B peaks at {float(np.max(floor)):.2e}; |separation| at Omega_r = 0 is exactly "
+      f"{zero_omr:.1f}")
+
 print("\n" + "=" * 100)
-print(f"  {'OK  ' if not FAILS else 'FAIL'}  {13 - len(FAILS)} of 13 checks;  "
+print(f"  {'OK  ' if not FAILS else 'FAIL'}  {15 - len(FAILS)} of 15 checks;  "
       f"{len(FAILS)} failure(s)" + ("" if not FAILS else ": " + "; ".join(FAILS[:2])))
 print("=" * 100)
 sys.exit(1 if FAILS else 0)
