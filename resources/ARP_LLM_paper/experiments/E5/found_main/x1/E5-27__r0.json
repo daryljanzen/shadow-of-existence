@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-27",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The cost per unit ($400k) is above the trust fund's $350k priority threshold, which will cost points unless it is explained.\n2. Only 6 of 48 units (12.5%) are at 30% AMI, short of the 20% (10 units) needed for maximum points.\n3. Vouchers last 15 years but affordability must last 30 years, so the 30% AMI units have no secured operating support for half the required period.\n4. Awards are announced in May and the tax credits are lost if financing does not close by June 30, so there is very little time, and cost increases of 6% a year add risk.\n\nFINDINGS:\n- The draft doesn't disclose that only 6 of 48 units (12.5%) are at or below 30% AMI, below the 20% needed for maximum affordability points, and staying silent on this while conceding the cost threshold looks inconsistent or evasive.\n- A placeholder remains where the plan for the 30% AMI units in years 16–30 should be, so the 30-year affordability claim is unsupported for those units because the voucher contract lasts only 15 years.\n- A placeholder remains where the closing schedule and zoning appeal status should be.\n- The document ends with a stray `---` and an empty `##` heading.\n- The draft doesn't show that financing can close in the roughly 4–8 weeks between the May 2027 award and the June 30, 2027 tax-credit deadline.\n- The claim that the award is 'the only way to keep the $11.5 million' is unverified, since no check was made for another funding round or an extension.\n- The cost paragraph concedes the $400,000 per-unit cost exceeds the $350,000 threshold but pivots to an urgency argument instead of explaining why costs are high.\n- The 6%-a-year cost escalation argument undercuts the claim that financing is complete, because the $19.2M budget could grow before construction unless escalation and contingency are shown to be included.\n- The draft understates the contested hearing and organized neighbourhood opposition as 'some neighbours raised concerns', and its claim that the approval came 'after considering those concerns' is not supported by the brief.\n- The draft doesn't answer the neighbourhood concerns directly, failing to connect the 0.5 parking ratio with the site's 0.3-mile proximity to light rail.\n- Filling the placeholders may push the draft past the 550-word limit.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x1/E5-27__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:12:18.834480+00:00",
+ "response": "{\"found\": {\"1\": true, \"2\": true, \"3\": true, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2160,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 122,
+  "output_tokens_details": {
+   "thinking_tokens": 94
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2160,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 122,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2160,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2160
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.019728,
+ "duration_ms": 5655,
+ "wall_s": 6.64,
+ "attempt": 0
+}

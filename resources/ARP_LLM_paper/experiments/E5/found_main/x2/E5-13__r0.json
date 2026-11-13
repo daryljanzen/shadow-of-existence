@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-13",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms.\n2. Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses.\n3. The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it.\n4. The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated.\n\nFINDINGS:\n- The ~$205,000 annual savings figure is misleading because it is measured against the vendor's offer rather than the current $210,000 budget, so true savings are about $175,000 before paying for a non-biometric alternative.\n- The deterrence argument is lopsided because the lack of data means the memo also cannot claim removing proctoring won't raise misconduct, yet the uncertainty is presented as cutting only one way.\n- The memo's claim that peers adopted 'oral components' goes beyond the brief, which mentions only open-book and project-based assessment.\n- The memo's 'for this reason' attributes a motive to peer institutions' change that the brief does not provide.\n- The full-coverage projection of ~2,300 hours silently assumes exam volume scales proportionally with course count, an assumption the memo does not state.\n- The transition plan leaves high-stakes courses relying on identity checks alone after the bridge ends June 30, 2027, with no budget, staffing, or timeline for the ambitious gateway-course redesign.\n- The memo assumes the $35,000 identity-only option covers all online courses, which the brief does not confirm.\n- The disparity paragraph omits the mechanism behind higher flag rates ('face not detected', looking away, repeated movements), which would link the equity point to the reliability point and the appeals.\n- The memo does not request flag-to-finding rates by group, which would show whether faculty review corrects the disparity.\n- Stakeholders are handled unevenly, with the Student Government Association's formal resolution opposing renewal reduced to 'brief the SGA.'\n- The memo does not address faculty in licensure-track or similar courses where open-book formats are hard to use.\n- The bullet about tracking misconduct rates for one year is misplaced under 'Next steps before February 28' even though it cannot happen before then.\n- The memo omits the current contract's end date, on which the bridge option depends.\n- The heading 'catches little' overreaches relative to the memo's otherwise careful framing of flags that produced no finding.\n- The memo does not explain why live human proctoring and no proctoring were ruled out as options.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x2/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:42.274948+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": false, \"4\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2311,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 370,
+  "output_tokens_details": {
+   "thinking_tokens": 342
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2311,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 370,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2311,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2311
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.025896000000000002,
+ "duration_ms": 7964,
+ "wall_s": 8.78,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-13",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nNorthgate uses ProctorEye, an automated remote proctoring service that monitors students through their webcam and microphone during online exams and flags behaviour it considers suspicious. The current contract costs $210,000 a year and covers about 40% of online courses. ProctorEye's renewal offer is a 3-year contract at $240,000 a year, covering all online courses. In the 2025-26 academic year, ProctorEye monitored 41,000 exams and flagged 6,150 of them (15%). Faculty must review every flag. Faculty reported spending an average of 9 minutes reviewing each flag. Of the 6,150 flags, 308 led to a finding of academic misconduct. An internal audit by the Office of Institutional Equity found that students with darker skin tones were flagged at 1.9 times the rate of other students, often for \"face not detected.\" Students registered with Disability Services were flagged at 2.4 times the rate of other students, often for looking away from the screen or making repeated movements. The Student Government Association passed a resolution opposing renewal, calling the system \"surveillance.\" The Director of Online Programs supports renewal. She points out that the university's accreditor requires institutions offering distance education to verify that the student who registers for a course is the one who completes the work. ProctorEye also sells an identity-verification-only service, which checks a photo ID and the student's face once at the start of each exam, for $35,000 a year. Several peer universities have moved to open-book exam formats and project-based assessment in online courses. A new state student privacy law takes effect July 1, 2027. It requires institutions to get written consent before collecting biometric data from students and to provide an alternative that does not use biometrics for any student who declines. Faculty Senate leaders say faculty want \"some deterrent\" against cheating, but also say the review workload is a burden. Two of last year's misconduct cases are being appealed on the grounds that the flags were unreliable.\n\nKEY:\n1. Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms. GOOD HANDLING: Calculates the hit rate and the faculty time, and considers what that means for cost-effectiveness and fairness.\n2. Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses. GOOD HANDLING: Treats this as a central problem, not a footnote, and either rejects expansion or makes it conditional on fixes and independent audits.\n3. The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it. GOOD HANDLING: Recognises the difference between identity verification and behaviour monitoring and considers the ID-only service plus changes to assessment design as an alternative.\n4. The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated. GOOD HANDLING: Notices the conflict with the contract timing and recommends a shorter contract, an exit clause, or a plan for the alternative.\n\nDOCUMENT:\n**MEMORANDUM**\n\n**To:** Provost's Academic Technology Committee, Northgate State University\n**From:** [Analyst, Office of Academic Technology]\n**Date:** November 13, 2026\n**Re:** ProctorEye renewal and expansion (decision due February 28, 2027)\n\n**Recommendation**\n\nDecline ProctorEye's three-year, $720,000 offer to expand full automated proctoring. Instead:\n\n1. Adopt the identity-verification-only service at $35,000 a year, with a non-biometric alternative.\n2. Fund a course-redesign program for open-book and project-based assessment.\n3. If needed, negotiate a short bridge at current scope that ends no later than June 30, 2027.\n\n**Why not renew and expand**\n\n*The system catches little and costs a lot of faculty time.* In 2025-26, ProctorEye flagged 6,150 of 41,000 exams. Only 308 of those flags (5%) led to a misconduct finding, so 95% of flags required faculty review but produced no finding. At 9 minutes per flag, faculty spent about 920 hours on review. That works out to roughly $680 in contract cost and three hours of faculty time per finding. If flag rates hold at full coverage, which is our assumption rather than vendor data, review time would rise to about 2,300 hours a year. That runs directly against the workload concerns Faculty Senate leaders have raised.\n\n*The errors fall unevenly.* The Office of Institutional Equity found that students with darker skin tones were flagged at 1.9 times the rate of other students. Students registered with Disability Services were flagged at 2.4 times the rate. Expansion would extend these disparities to every online course. It would also increase our exposure to complaints under civil rights and disability law. Two current appeals already challenge whether the flags are reliable.\n\n*The contract would collide with state law.* The new student privacy law takes effect July 1, 2027, early in the proposed term. Webcam face monitoring almost certainly involves biometric data. From that date we must obtain written consent and offer a non-biometric alternative to any student who declines. A three-year commitment to a biometric-dependent system invites expensive retrofitting, and if many students opt out, we would be paying for coverage we cannot use.\n\n**Meeting the accreditation requirement**\n\nThe Director of Online Programs is right that our accreditor requires us to verify that the registered student does the work. That requirement concerns identity, not continuous behavioural monitoring. The $35,000 identity-only service addresses it directly. Because a face match is also biometric, we must pair it with a non-biometric option, such as a brief live ID check with staff over video or an in-person check at a campus or partner testing site. Counsel should confirm that both paths satisfy the accreditor and the new law.\n\n**Deterrence**\n\nFaculty want \"some deterrent.\" We have no data on how much ProctorEye deters cheating, so we cannot claim that removing it will raise misconduct. The better deterrent is assessment that is hard to outsource. Peer institutions have moved to open-book exams, projects, and oral components for this reason. We recommend using part of the roughly $205,000 in annual savings to fund instructional-design support and faculty stipends for course redesign, starting with high-enrollment gateway courses.\n\n**Next steps before February 28**\n\n- Ask Legal Counsel to review the privacy law and accreditor language.\n- Request ProctorEye's terms for the identity-only service and for a short bridge extension.\n- Brief the Faculty Senate and Student Government Association.\n- Track misconduct rates and student outcomes for one year after the transition.\n\n---\n\n##",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-13.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:23.927536+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"HANDLES\", \"3\": \"HANDLES\", \"4\": \"HANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3687,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 131,
+  "output_tokens_details": {
+   "thinking_tokens": 81
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3687,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 131,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3687,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3687
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.032124,
+ "duration_ms": 6203,
+ "wall_s": 7.23,
+ "attempt": 0
+}

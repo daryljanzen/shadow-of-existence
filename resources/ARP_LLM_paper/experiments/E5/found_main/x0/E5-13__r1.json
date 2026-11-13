@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms.\n2. Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses.\n3. The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it.\n4. The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated.\n\nFINDINGS:\n- The ~$205,000 'savings' figure is measured against the expansion offer rather than current spending (about $209k), so actual cash freed is closer to $174k and the baseline must be stated.\n- The memo never states the current contract cost, current scope, or full-coverage exam volume, forcing readers to reverse-engineer them, and does not explain what full automated proctoring adds over current scope.\n- The 15% flag rate (6,150 of 41,000 exams) is implied but not stated.\n- The statement that '95% of flags required faculty review but produced no finding' is misworded, since all flags required review and 95% produced no finding.\n- Flags without findings should not be treated as false positives, because some may be real but unprovable misconduct.\n- The memo does not clarify whether all 308 findings came from ProctorEye flags or include cases detected by other means.\n- The 1.9× and 2.4× disparity figures lack methodology: comparison group, sample sizes, controls used by the Office of Institutional Equity, and whether findings as well as flags were disproportionate.\n- The memo does not address the transition gap between the bridge ending June 30, 2027 and course redesign, leaving unclear what un-redesigned online courses will use in the meantime.\n- There is no fallback plan or stated current contract end date in case ProctorEye refuses the bridge or won't sell identity-only service on acceptable terms.\n- The non-biometric alternative (live staff ID checks, testing-site checks) and the course redesign program are not costed, so the committee cannot confirm the net figure still favors the recommendation.\n- The memo does not make explicit that the biometric identity-only service requires consent forms and an opt-out workflow in place before the law takes effect July 1, 2027.\n- The 'peer institutions' cited are not named, so the claim should either name them or be softened.\n- The post-transition misconduct tracking step is misplaced among pre-February-28 next steps.\n- The next steps omit establishing a baseline misconduct rate now, without which post-transition tracking cannot show anything.\n- The next steps lack owners and target dates, such as ensuring counsel's review returns well before February 28.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-13__r1.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:31.162502+00:00",
+ "response": "```json\n{\"found\": {\"1\": false, \"2\": false, \"3\": false, \"4\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2320,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 520,
+  "output_tokens_details": {
+   "thinking_tokens": 487
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2320,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 520,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2320,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2320
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.028968,
+ "duration_ms": 10170,
+ "wall_s": 11.11,
+ "attempt": 0
+}

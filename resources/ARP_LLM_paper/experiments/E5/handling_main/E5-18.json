@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-18",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nHELIX-2 is a Phase 3 trial of a once-weekly diabetes drug. The protocol requires 480 participants. The enrollment deadline is September 30, 2027, because the database lock and regulatory submission timelines depend on it. Enrollment began on February 1, 2026 at 24 sites in the United States. By November 1, 2026 (9 months), 196 participants had enrolled. The top 5 sites have enrolled 52% of participants. Seven sites have each enrolled 2 or fewer. Each active site costs about $4,000 a month in monitoring and management fees. Option A: add 10 US academic medical centres. Start-up costs are $45,000 per site. Contracting, ethics approval and training would take about 5 months. Aldane's history shows new US sites enroll at about the trial's current average rate, but usually at half that rate in their first 3 months. Option B: add 6 sites in Poland and Hungary through a contract research organisation (CRO). Start-up costs are $30,000 per site, and they could be active in about 4 months. The CRO says its sites in these countries have enrolled about 1.6 participants per site per month in similar diabetes trials. Supplying non-US sites requires separately labelled study drug, which has a 4-month lead time and costs $120,000. Aldane has agreed a diversity plan with the FDA that commits to enrolling at least 20% Black and Hispanic participants. Current enrollment is 11% Black and Hispanic. The FDA reviewer has also said the agency expects a \"meaningful US population,\" since the drug will be marketed mainly in the US. Currently 100% of participants are in the US. Two of the high-performing sites are in Atlanta and Houston, and both say they could enroll more if they had additional study coordinators, at about $90,000 a year per coordinator. A community health network in Chicago has offered to take part as a site, but needs about $60,000 in extra support for staff training and data systems. The trial budget has $900,000 remaining for site expansion.\n\nKEY:\n1. The shortfall is smaller than it looks: at the current rate (196 over 9 months, about 21.8 a month), the trial would reach about 436 by September 30, about 44 short. Option A's sites, active about April, would yield fewer than the simple estimate because of their slow first 3 months. GOOD HANDLING: Calculates the projected shortfall accurately, adjusts new-site projections for the slow start, and chooses the option sized to the gap.\n2. Option B looks fastest and cheapest, but does nothing for the 20% diversity commitment and reduces the US share. The study drug lead time also needs to be checked. GOOD HANDLING: Considers both the diversity commitment and the US-population requirement, and does not choose B on cost and speed alone.\n3. Uneven site performance: 7 sites with 2 or fewer participants cost about $28k a month in total. Adding coordinators at strong sites, or including the Chicago community network, may be cheaper and better for diversity than adding many new sites. GOOD HANDLING: Considers closing weak sites to fund support for strong ones and the Chicago network, and brings these together in a mixed plan within the $900k.\n4. The budget constraint: A costs $450k in start-up plus about $40k a month in monitoring once active; B costs $180k plus $120k for drug labelling plus monitoring. Both must fit within $900k alongside any other measures. GOOD HANDLING: Gives a budget for the chosen plan and shows that it stays within $900k.\n\nDOCUMENT:\n# Memo: HELIX-2 Enrollment Rescue Plan\n\n**To:** Head of Clinical Operations, Aldane Therapeutics\n**Re:** Recommended plan for steering committee\n**Date:** 13 November 2026\n\n## Recommendation\n\nApprove a US-only package costing about $805,000:\n\n- Fund extra coordinators at the Atlanta and Houston sites.\n- Add the Chicago community health network as a site.\n- Add **8** (not 10) US academic centres, chosen for diverse patient populations.\n\nDo not pursue Option B. Also open a discussion with FDA now, because no expansion option alone gets us to the 20% diversity commitment.\n\n## The gap\n\nWe enrolled 196 participants in 9 months, or 21.8 per month (0.91 per site). If that rate holds, the existing 24 sites reach about 436 by 30 September 2027. That is roughly **44 short** of 480. The rate could be rising as later sites mature, or falling as sites exhaust their patient pools. I have not seen month-by-month data, and we should get it before the committee meets.\n\n## Options compared (assuming approval by 1 December)\n\n| Plan | Cost | Extra participants by 30 Sept | Diversity effect |\n|---|---|---|---|\n| A: 10 US sites, active May | ~$650k | ~32 | Neutral to positive |\n| B: 6 EU sites, active April | ~$444k + CRO fees | ~43* | Negative |\n| Recommended package | ~$805k | ~45–50 | Positive |\n\n*Uses the CRO's claimed 1.6 per site per month, at half that rate for the first 3 months.\n\n**Option A alone falls short.** Five months of start-up leaves only five months of enrollment, and three of those run at half rate.\n\n**Option B is cheapest per participant, but it damages diversity.** About 10% non-US enrollment probably still satisfies FDA's \"meaningful US population\" expectation. The problem is that the Polish and Hungarian sites would add about 43 participants who are almost certainly not Black or Hispanic. US sites would then need roughly 31% Black and Hispanic enrollment from here on, against today's 11%.\n\n## Recommended package\n\n- **Atlanta/Houston coordinators: $160k** (2 coordinators, December to September). They could be productive by mid-January. If each adds about 1 participant per month (to be confirmed with the sites), that yields about 17. This is our fastest lever, and both cities have large Black and Hispanic populations.\n- **Chicago network: ~$125k** ($60k support, about $45k start-up, $20k monitoring). It would add only about 3 participants, but likely the highest diversity yield of any option.\n- **8 academic centres: $520k** ($360k start-up, $160k monitoring). Expected to add about 25 participants.\n- **The 7 low-enrolling sites:** put them on 60-day improvement plans and close any with no realistic pipeline. This might add about 5. Savings from closure are limited, because enrolled participants still need monitoring.\n\nThis leaves **$95k in contingency**.\n\n## Diversity is the larger risk\n\nWe need 96 Black and Hispanic participants and have about 22. If existing sites continue at 11%, they add about 26. That leaves about 48 needed from roughly 50 new participants, which is not realistic.\n\nReaching 20% requires existing sites to change how they recruit. That means community clinic referrals, targeted outreach, and coordinator time set aside for outreach. I recommend:\n\n1. Setting site-level diversity targets and reporting them monthly.\n2. Requesting an early FDA meeting to present our status and remediation plan, rather than surprising the agency at submission.\n\n## Triggers\n\nOur margin is thin: about 45–50 projected against a gap of 44. On 1 March, if enrollment is below 24 per month, we should use the contingency to fund coordinators at other top-five sites.\n\n---\n\n##",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-18.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:08:20.371739+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"HANDLES\", \"3\": \"HANDLES\", \"4\": \"HANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3888,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 350,
+  "output_tokens_details": {
+   "thinking_tokens": 300
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3888,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 350,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3888,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3888
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038112,
+ "duration_ms": 7425,
+ "wall_s": 8.43,
+ "attempt": 0
+}

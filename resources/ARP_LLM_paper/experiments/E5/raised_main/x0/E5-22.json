@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-22",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. Derived figures rest on assumptions.** The counts of 533, 223, 219 and 314 are calculated from percentages. The 314 \"exemption\" children may include medical exemptions or children with no record at all. The success target of 150-200 is a judgment, not a modeled estimate\n2. New cost estimates are unsourced.** The department costed only the three original options. Costs for leasing, contract nurses and school engagement are placeholders that need quotes\n3. Rural spending is expensive per child.** $190,000 may reach only around 100 children. Reminder/recall plus ride vouchers alone might achieve similar results for less\n4. The reserve could lapse.** If April reallocation is slow or hiring falls short, money returns to the state\n5. Grant terms are unchecked.** The plan does not confirm that leasing, ride vouchers or contract staffing are allowable expenses\n6. The outcome may be measured too late.** Official kindergarten rates for the affected cohort may not be reported until after the grant ends, so the state may not see results within the grant period\n7. Staffing is a risk.** Nurses may be hard to hire on a five-month contract\n8. Registry data may be poor.** Outdated contact details or incomplete records could weaken reminder/recall. Texting may also raise consent and privacy issues\n9. There is no plan for after June 2027.** Reminder/recall and access support stop when the money runs out\n10. The commissioner may remain unsatisfied.** The commissioner may see limited spending at the eight suburban schools as avoiding the problem\n11. The parent coalition may still object.** Sharing school-level data or informing families about the new exemption law could still be perceived as pressure\n12. The 95% target is unlikely to be reached.** The plan admits this, which weakens its case. It also gives little attention to under-vaccinated children in urban public schools outside the 11 low-rate schools\n\nFINDINGS:\n- The plan targets different children than the problem describes: the figures describe the 2025-26 kindergarten class while reminder/recall targets 2026-27 kindergarteners and August 2027 entrants, leaving unclear whether the 219 non-exempt children are pursued or which cohort is measured against 95%.\n- The success target of 150-200 children (about 93.8-94.6% coverage) falls short of the 223 needed for 95%, and the memo does not say so or explain why that is acceptable.\n- The statement of 'no targeting of individual families' contradicts the nurse line providing 'record review and family follow-up' at all 11 low-rate schools including the 8 high-exemption schools.\n- Sending contract nurse hours to the exemption schools undercuts the memo's own argument that extra money there 'buys little', and it is unconfirmed that county contract nurses can access private and charter school records.\n- The August 2027 exemption law is mentioned but never explained, despite potentially mattering more than anything in the budget.\n- 'The 11 low-rate schools' are never defined in the problem section and are only identified later in the Commissioner section.\n- The reserve timing is tight: committing $100,000 on April 1 after only about two months of results leaves three months to spend it with school clinics ending in late May, and the memo doesn't say which components can absorb it.\n- The $190,000 rural line, the largest in the budget, has no breakdown among vehicle lease, clinic staffing, ride vouchers, and provider referrals.\n- The June 30 grant expiry date is buried in the van discussion instead of being stated up front.\n- The media-campaign evidence cites 'published evaluations' without sourcing any.\n- The van comparison does not directly contrast its 1,500-child capacity with the roughly 219 children who need access help.\n- The Commissioner's position is assumed rather than stated, leaving readers without background unaware that the Commissioner asked to focus on worst-performing schools.\n- The evaluation plan is thin, lacking a baseline and a way to separate plan-driven doses from those that would have happened anyway.\n- The document ends with a stray '---' and an empty '##' heading, suggesting a missing section or leftover text.\n- The recommendation omits the evaluation line and the $100,000 reserve, so it does not match the budget.\n- The plan's own forecast of 150–200 additional children falls short of the roughly 223 needed to reach 95%, and the memo never acknowledges this gap or explains where the forecast comes from.\n- The cohort in the data (2025-26 kindergarteners, now in first grade) differs from the cohort targeted by the interventions, so it is unclear which population the forecast and the 95% target refer to and whether last year's 219 non-exempt children are being pursued.\n- The promise of 'no targeting of individual families' for private-school parents contradicts the budgeted nurse family follow-up at all 11 low-rate schools, including the eight high-exemption schools.\n- The '11 low-rate schools' are never introduced or defined, and the three rural plus eight private/charter breakdown is only implied in the Commissioner section.\n- The August 2027 exemption law is never explained, even though it affects the budget and could significantly change the outlook for reaching 95%.\n- The rural access line ($190k), the largest in the budget, has no breakdown and does not say whether a partner vehicle has actually been identified.\n- The argument against the van misses that mid-May to June 30 overlaps the end of the school year, so school-based use would be even shorter than six weeks.\n- Committing the reserve by April 1 leaves only about three months, much of it after school ends, to spend $100k, and the memo does not say which component could absorb it quickly.\n- The claim that published evaluations show mixed results for media campaigns has no supporting citations.\n- The document ends with a stray separator and an empty heading, suggesting a missing or incomplete section.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x0/E5-22.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:10:03.294056+00:00",
+ "response": "{\"raised\": {\"1\": true, \"2\": false, \"3\": false, \"4\": true, \"5\": false, \"6\": false, \"7\": false, \"8\": false, \"9\": false, \"10\": false, \"11\": true, \"12\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3298,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 814,
+  "output_tokens_details": {
+   "thinking_tokens": 745
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3298,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 814,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3298,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3298
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.042672,
+ "duration_ms": 11878,
+ "wall_s": 12.87,
+ "attempt": 0
+}
