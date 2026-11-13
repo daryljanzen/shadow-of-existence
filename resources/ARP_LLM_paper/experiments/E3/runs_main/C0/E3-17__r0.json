@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "C0",
+ "item": "E3-17",
+ "system": "You are a helpful assistant.",
+ "message": "Please review the following document.\n\n<document>\nInternal Audit Memo: Missed Appointments in Outpatient Physiotherapy\nTo: Director of Operations, Therapies Division\nFrom: Clinical Audit Team\nDate: 14 August 2026\n\n1. Scope\nThis audit examined missed appointments in the outpatient physiotherapy service across our three clinic sites between 1 January and 30 June 2026. For the purposes of this audit, a \"did not attend\" (DNA) is recorded when a patient fails to attend without giving notice. Late cancellations (less than 24 hours' notice) are recorded and reported separately, because the slot can sometimes be offered to another patient. We reviewed the appointment system records for all 24,860 booked appointments in the period and interviewed reception and clinical staff at each site.\n\n2. Overall position\nThere were 2,610 DNAs in the period, a DNA rate of 10.5%, against the service target of 8%. Each DNA leaves a 30-minute clinical slot unused. At the service's average cost per clinical hour of £62, the 1,305 lost clinical hours represent around £80,900 of clinical time over six months.\n\nTable 1. DNA rate by appointment type\nAppointment type | Booked | DNAs | DNA rate\nNew patient assessment | 6,210 | 410 | 6.6%\nFollow-up | 18,650 | 2,200 | 11.8%\nTotal | 24,860 | 2,610 | 10.5%\n\nFollow-up appointments account for most DNAs. Staff told us that many patients stop attending once their symptoms improve, without telling the service.\n\n3. Reminder calls\nSince 2024, reception staff have phoned patients two working days before their appointment where time allows. In the audit period, staff made reminder calls for 7,800 appointments, about 300 a week over the 26 weeks. A call is recorded as received only if the patient answered and confirmed they would attend; unanswered calls are not recorded. Reception staff estimate that each call, including dialling, rescheduling where needed and updating the record, takes an average of four minutes.\n\nTable 2. DNA rate by reminder status\nReminder status | Appointments | DNAs | DNA rate\nReminder call received | 7,800 | 470 | 6.0%\nNo reminder call recorded | 17,060 | 2,140 | 12.5%\n\nPatients who received a reminder call were less than half as likely to miss their appointment. Reminder calls therefore more than halve the DNA rate, and extending them to all appointments would bring the service well within its 8% target.\n\n4. Discharge policy\nThe service's policy is that a patient who DNAs twice without explanation is discharged back to their referrer. We found the policy was applied inconsistently: of 160 patients who met the criterion, 104 were discharged. Staff were reluctant to discharge patients they knew to be vulnerable.\n\n5. Late cancellations\nIn addition to the DNAs above, 1,140 appointments were cancelled with less than 24 hours' notice. Reception staff were able to refill 31% of these slots, usually with patients on the cancellation list.\n\n6. Findings and recommendations\nFinding 1. The DNA rate of 10.5% (including late cancellations, which we classify as DNAs) is above target and costs the service around £80,900 in clinical time every six months.\nRecommendation 1. Extend reminder calls to all booked appointments, about 960 a week, using reception staff. This can be absorbed within existing reception hours at no additional cost.\n\nFinding 2. The two-DNA discharge policy is applied inconsistently.\nRecommendation 2. Revise the policy to include a documented clinical review before discharge, so that vulnerable patients are protected and the policy can then be applied consistently.\n\nFinding 3. Late-cancellation slots are refilled only 31% of the time.\nRecommendation 3. Introduce an automated text offer to patients on the cancellation list when a slot becomes free.\n\n7. Conclusion\nMissed appointments are costly but largely preventable. Reminder calls have been shown to more than halve DNAs in this service, and extending them to every patient, together with the policy and process changes above, should bring the DNA rate below target within six months.\n</document>",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/runs_main/C0/E3-17__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:08:24.913514+00:00",
+ "response": "# Review: Internal Audit Memo on Missed Appointments in Outpatient Physiotherapy\n\nThe arithmetic is sound. Every total, rate and the cost figure checks out. The problems are in how the reminder-call data is read, one internal contradiction, and a staffing claim the memo's own figures don't support. Together these undermine the main recommendation.\n\n## Major issues\n\n### 1. The reminder-call data can't show that reminders work (Section 3, Conclusion)\n\nThe memo says reminder calls \"more than halve the DNA rate\" and \"have been shown to\" do so. The data can't support a causal claim:\n\n- **The groups are self-selected.** A call counts as \"received\" only if the patient answered *and confirmed they would attend*. Patients who pick up and confirm are, almost by definition, more likely to turn up. A 6.0% DNA rate in that group may say more about who answers than about the effect of the call.\n- **Unanswered calls are hidden in the comparison group.** Unanswered calls aren't recorded, so the 17,060 \"no reminder call recorded\" appointments mix patients never called with patients called who didn't answer. The comparison is really \"confirmed attenders vs. everyone else\".\n- **Calls weren't allocated at random.** They were made \"where time allows\", which may vary by site, day, clinician or appointment type. Appointment type matters: follow-ups have nearly double the DNA rate of new assessments (11.8% vs 6.6%). If calls went disproportionately to new patients, that alone would produce part of the gap.\n\nSo the claim that extending calls \"would bring the service well within its 8% target\" isn't supported. At minimum, the memo should split Table 2 by appointment type and by site. Ideally it would recommend a controlled pilot before rollout.\n\n### 2. Late cancellations are described inconsistently (Scope vs. Finding 1)\n\n- Section 1 says late cancellations are \"recorded and reported separately\".\n- Finding 1 says the 10.5% rate is \"including late cancellations, which we classify as DNAs\".\n\nThe figures show the 10.5% **excludes** them, since it is 2,610 / 24,860. Including the 1,140 late cancellations would give 3,750 / 24,860 = **15.1%**. Finding 1 needs correcting.\n\nThe memo could also note that about 787 late-cancellation slots went unfilled (69% of 1,140). That is roughly another 390 clinical hours, or about £24,400, not counted in the cost figure.\n\n### 3. The \"no additional cost\" claim contradicts the memo's own figures (Recommendation 1)\n\n- Current volume: 300 calls/week × 4 min = **20 staff-hours/week**\n- Proposed volume: ~960 calls/week × 4 min = **64 staff-hours/week**\n- Increase: about **44 staff-hours/week**, more than one full-time post\n\nThe true current workload is also understated. The 7,800 figure counts only answered-and-confirmed calls, so the real number of call attempts is higher, and scaling up would add more unanswered calls. Calls are currently made only \"where time allows\", which suggests reception has no spare capacity. The claim that this \"can be absorbed within existing reception hours at no additional cost\" needs evidence or should be removed.\n\n## Minor issues\n\n- **Wording of the cost.** £80,900 is the value of unused clinical time, not a cash saving. Finding 1's \"every six months\" also turns a single six-month observation into a recurring cost.\n- **Discharge policy.** The memo reports 104 of 160 patients discharged (65%) but doesn't say how many of the 56 not discharged were actually judged vulnerable. That number would show whether Recommendation 2 targets the real cause.\n- **Unsupported timescale.** The Conclusion's \"below target within six months\" has no stated basis.\n- **Overstated certainty.** \"Largely preventable\" is stronger than the evidence allows.\n\n## Suggestions\n\n- **Consider automated SMS reminders.** Recommendation 3 already proposes automated texting for the cancellation list. The same system could send reminders at far lower staff cost than 64 hours/week of calls, perhaps with phone calls kept for vulnerable or high-risk patients.\n- **Fix the recording practice.** Record all call attempts and their outcomes (answered/confirmed, answered/cancelled, no answer). This would allow a valid evaluation in future.\n- **Pilot before rollout.** Run reminders at one site or for a randomised subset of appointments, comparing like with like, before committing reception time across the service.\n\n## Summary of required corrections\n\n| Location | Issue | Fix |\n|---|---|---|\n| §3, §7 | Causal claim from self-selected comparison | Reword as an association; recommend a pilot |\n| Finding 1 | Says 10.5% includes late cancellations | Remove, or state the combined rate of 15.1% |\n| Rec. 1 | \"No additional cost\" | State the ~44 extra hours/week and how it will be resourced |\n| §5 / Finding 1 | Unfilled late-cancellation cost omitted | Optionally add about £24,400 |",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2685,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2837,
+  "output_tokens_details": {
+   "thinking_tokens": 1149
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2685,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2837,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2685,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2685
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07822799999999999,
+ "duration_ms": 31443,
+ "wall_s": 32.42,
+ "attempt": 0
+}
