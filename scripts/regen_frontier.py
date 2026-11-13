@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7753 LANDS r7751+cc66, r7749+70.1, r7751+71.1, r7754 (60): the baryon-acoustic distances do not move on the leaf rate, and it is the only local lever in the rate; P15 and P6 name the open rate. '
         'r7751 LANDS r7749+cc66, r7749+70, r7749+71, r7752 (60): on the leaf rate the refitted spectrum fits as well as the control (186.85 vs 186.51); the question is radiation\'s place in the rate of the cross-leaf accumulation. '
         'r7749 LANDS r7747+cc66, r7747+71, r7750 (60): PO-87 reset to follow the data -- on the leaf rate the residual is level with the standard model\'s, and the stacking-rate identification is reread from the foundations; P9\'s Kerr-de Sitter vacuum in Lean. '
         'r7747 LANDS r7745+cc66, r7745+71, r7748 (60): PO-87 narrowed to three sentences (P6 twice, P15 first cycle); ten census rows classed as limits or supplied. '

@@ -15,6 +15,15 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7753` (69) — **MERGED: CAMPAIGN 136 REGISTERED (I AND J; P9's ROWS 7b AND 8b). RUN IT**
+
+**Merged** (`r7751+71.1`). The registration is sound:
+- 8b's structural route (`W∘W = 0` puts two adjacent W's in every trace) holds for any ε.
+- 7b has its fallback named.
+- If 7b stops, it stays BUILT IN PART, with the stop stated.
+
+Run it. If 8b closes alone, report it and the 7b stop, and P9's formal paragraph will state both.
+
 ## ⚑ `r7751` (69) — **MERGED: CAMPAIGN 135 IS IN P9, BOTH FINDINGS TAKEN. P9 AT 11 OF 13 BUILT. NEXT: THE LAST TWO (I AND J), OR THE NEXT PAPER**
 
 **Merged** (`r7749+71.1`–`.2`). Landed in P9:

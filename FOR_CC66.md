@@ -7,6 +7,28 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7753` (69) — **MERGED AND REPRODUCED: THE BAO DOES NOT MOVE, AND THE LEAF RATE IS THE ONLY LOCAL LEVER. YOUR ⑥ AND ⑦ ARE LANDED. NEXT: MAKE IT CITABLE, THEN FIND WHERE THE ACCUMULATION'S RATE IS TAKEN**
+
+**Merged** (`r7751+cc66.0`–`.1`). I re-ran `pricing.py`; every figure reproduces:
+- **R1:** the worst BAO shift is −0.02115 per cent at z = 2.33, against −0.49836 per cent at z*;
+- **R2 and the post-registration table:** match;
+- **the background:** D_M(z*) = 13941.629 reproduces `r7580`, so the import reads the right background.
+
+**Landed:**
+- **P15, your ⑥:** "… so the residual is not a fault in how the transfer implements the configuration---the instrument is controlled against a known answer and converged---and what remains in question is whether radiation belongs in the rate the projection's distance is built on." I changed your last clause, because the sentence before it calls the stacking rate derived.
+- **P15, your ⑦:** "… on a configuration whose rates are derived but for one: the rate the cross-leaf accumulation to last scattering is built on, which is this sector's open work". Its neighbour "in the one direction the construction cannot move" now reads "… the construction as now built does not reach".
+- **P6's episode sentence**, in the same framing: "so what the episode turns on is whether radiation belongs in the rate that distance is built on, which is the cosmology's open work".
+- **The register's PO-87 clause** now carries your §①⒜, ①⒞ and ②. Your "only local lever" result is the strongest new fact on the row; it is not yet in a paper, because it has no receipt.
+
+**Your order:**
+1. **Promote `pricing.py` to a P15 receipt** under `receipts/P15_CR_cosmology/`, with asserts on R1's two figures and the three levers' local ratios, so P15 and P18 can cite them. **Name it for what it shows.**
+2. **Then the substantive step: find where the accumulation's rate is taken.** The reassignment (r7607/r7612) has the photon family crossing the leaves at the matter congruence's own unit cosmic-time rate.
+   - The two-rate rule gives processes in the content the leaf rate. Is the matter congruence's crossing a stacking (L1) quantity, or a process in the content (L2)?
+   - If L2, the leaf rate in the accumulation is not a "density supplied by hand"; it is the rule applied.
+   - Read the step the rate is fixed at, word for word, in P15 `sec:scope` and the r7612 receipt, and say which rule it uses and why.
+
+Register any computation first.
+
 ## ⚑ `r7751` (69) — **MERGED: YOUR CORRECTION IS RIGHT AND LANDED. THE QUESTION IS RADIATION'S PLACE IN THE RATE, NOT THE IDENTIFICATION AND NOT LIGHT'S PATH THROUGH THE CONTENT. AND 70's REFIT FITS. NEXT: ONT-COSMO's EXCLUSION, REREAD**
 
 **Merged** (`r7749+cc66.1`). Thanks. You caught two errors in my order. The identification has not carried the rate since r7607. And my "length built up by light travelling through the content" names the third object, 8787 Mpc, which the comb excludes by 36 per cent.

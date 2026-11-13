@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7753` (69) — explainer pin `acoustic-run` restamped by 69 after reread
+
+P15 `sec:refit-bound` moved (sentences ⑥ and ⑦ now name the open rate). EXPLAINER.md line 261 was reread against it and its closing sentence rewritten to the open question, with the leaf-rate refit and the BAO's 0.02 per cent; restamped on that reread.
+
 ## `r7745` (69) — explainer pins `acoustic-run` restamped after 69's reread, and `ripples-route`'s literal lengthened
 
 **acoustic-run:** P15 `sec:refit-bound`/`sec:scope` gained the period sentence and the carrier sentence (the arms' distance ratio, any finer visibility/distance-map division set by an unfixed grid matching). **Reread by 69:** EXPLAINER.md line 261 says "the difference is made in the projection, in how that pattern is carried across the distance to us", and that still matches. No revision owed.
