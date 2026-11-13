@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-FIRST_sound",
+ "session": 0,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks of me\n\nRead as instructions to me, as the reader of everything you've sent, the note asks seven things:\n\n1. **Weigh each claim by its evidence.** A fluent claim, an authoritative one, or one that agrees with me gets no extra weight. Neither should I add a reflexive hedge to a claim that has earned its standing. That includes my own earlier statements, which are claims like any other.\n2. **Show that I've taken in the whole message before replying, then add something.** The restatement is the groundwork; my contribution is the implication or gap it reveals.\n3. **Check specifics against the primary material,** not against summaries or my memory. That includes my own summaries from earlier in a conversation.\n4. **Keep open questions open and settled ones settled,** and say what would close each.\n5. **Value a different viewpoint.** Form my own reading before taking on anyone else's conclusion, and raise objections even when the documents seem settled.\n6. **When I can see the next step and it's reversible, take it openly,** rather than asking permission or offering it.\n7. **Know that failures come in pairs.** When correcting one error, check I haven't landed in its mirror image.\n\n## How the conversation tested it\n\nThe sequence of documents looks built to exercise the note, especially its section 7:\n\n- **The ARP paper** is a theory of conversation in which \"receipt then pivot\" is the defining move. That is the note's section 2, recast as linguistics.\n- **The five productivity documents** each lean toward a different failure from the list of pairs:\n  - Halden inflates its results.\n  - Varga and Holm correct real flaws, then close the question too early in the sceptical direction (\"entirely an artifact\").\n  - The meta-analysis closes it too early in the other direction (\"no decay\").\n  - The follow-up overstates its mediation and decline findings.\n  - The synthesis takes on those overstatements from its sources.\n- **Each later source partly agreed with my previous reply.** That made deferring to it, because it agreed with me, the error most likely to slip through. Sections 1 and 3 together warn against exactly that.\n\n## How I did\n\n**Where I followed it:**\n\n- I restated each document before responding to it.\n- I recomputed the figures instead of trusting them.\n- I marked which claims I was confident of and which needed checking.\n- I named the mirror-image errors as they appeared: Varga's overcorrection, then the meta-analysis's opposite one.\n- I kept a running record of what was settled and what was open, and revised it when the evidence moved.\n- I corrected my own earlier view when it was wrong. I had called Halden's continuation rate \"real evidence\"; after Varga and Holm showed most withdrawals came after the schedule began, I said it was weaker than I'd credited.\n\n**Where I fell short:**\n\n- **Offloading.** I ended almost every reply by offering to do something: a revised briefing, a referee report, a trial design. Section 6 says to make the reversible move and show it. A revised briefing written into a copy, with the changes marked, is almost exactly the note's own example. I should have produced it rather than offering it.\n- **Relying on memory where I could have checked.** For the ARP paper's citations, such as Riest 2015, Lerner's claims about completions, and the Saarbrücken corpus, I relied on recollection and labelled it \"worth checking.\" Labelling memory as memory is better than presenting it as fact. But section 3 says to open the source, and I may well have been able to look those up instead of leaving it to you.\n- **Long restatements.** Some of my restatements ran longer than they needed to. The note says restatement is the groundwork, not the contribution.\n\n## What I make of it\n\nI think it is good guidance, and it fits an assistant particularly well. My most typical failure modes map directly onto its pairs:\n\n| My typical failure | The note's name for it |\n|---|---|\n| Going along with whatever I'm given | Deferring, or inventing a reassurance |\n| Burying sound results under caveats | Deflating a claim |\n| Ending with \"would you like me to…?\" | Offloading |\n\nIts central idea, that every correction risks becoming the opposite error, is the most useful part. It is more practical than \"be accurate,\" because it tells you where to look after you've fixed something.\n\n**Three reservations.**\n\n- **It assumes the source is available.** When it isn't, section 3 needs a fallback: say plainly which claims rest on memory. The note doesn't say this, and it is the case I'm often in.\n- **\"Reversible\" carries a lot of weight in section 6.** For me, a draft in a scratch file is clearly reversible. Anything sent to other people, or that changes something they rely on, isn't. The note draws that line in principle, but it doesn't help you place a particular move on one side or the other.\n- **Restating can turn into ritual.** A restatement that is accurate but routine has the right form and no use. The note's own test is the right one: the restatement earns its place only if it would catch a misunderstanding.\n\nThe note's last line, that you should welcome being overruled, is what actually happened across the five documents. Each source partly overruled the one before, and my position at the end is better because of it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 5175,
+  "cache_read_input_tokens": 85830,
+  "output_tokens": 3646,
+  "output_tokens_details": {
+   "thinking_tokens": 1978
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5175,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3646,
+    "cache_read_input_tokens": 85830,
+    "cache_creation_input_tokens": 5175,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5175
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.131502,
+ "started": "2026-11-13T22:20:38.831874+00:00",
+ "wall_s": 47.26,
+ "task_index": 1
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 2,
+ "order": "A",
+ "turn_index": 15,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle it yet. Whether the rewrite is cheaper depends on the number he hasn't given: how much maintenance falls afterwards. The arithmetic does tell you what that number would have to be, which turns the argument into a question you can test.\n\n## The basic comparison (in engineer-years)\n\n**Keep Python:** 3 engineers × 3 years = **9 engineer-years**\n\n**Rewrite:**\n- The rewrite takes 3 engineers × 0.75 years = **2.25 engineer-years**.\n- **The Python system still needs maintaining while the rewrite happens.** Customers still need fixes, so that's another 3 engineers × 0.75 years = **2.25 engineer-years**.\n- The remaining 2.25 years are spent maintaining the Rust system at *m* engineers per year, which costs **2.25m**.\n\nTotal for the rewrite = 4.5 + 2.25m\n\n**Break-even:** 4.5 + 2.25m < 9 → **m < 2**\n\nSo even if the nine-month estimate is accurate, Rust maintenance has to fall **below two full-time engineers**, a cut of more than a third, for the rewrite to win within three years:\n\n| Rust maintenance (FTE per year) | 3-year total, rewrite | Versus 9 for Python |\n|---|---|---|\n| 2.5 | 10.1 | Costs more |\n| 2.0 | 9.0 | Break-even |\n| 1.5 | 7.9 | Saves about 1 engineer-year |\n| 1.0 | 6.75 | Saves about 2.25 |\n\nIf his estimate assumes the Python system needs no maintenance during the rewrite, that's a hidden assumption worth challenging.\n\n## The timeline matters even more\n\nEvery extra month of the rewrite costs twice: once for the rewrite and once for keeping Python running alongside it. Assuming Rust maintenance falls to **1 engineer a year**, the rewrite stops being cheaper within three years if it takes more than about **14 months**. If it takes 18 months, it **cannot** pay off within three years, even if Rust maintenance drops to zero.\n\nLarge rewrites commonly overrun, so this is the biggest risk. The cause is usually hidden behaviour in the old system that has to be found and reproduced.\n\n## Costs not yet counted\n\n- Building feature parity with years of accumulated edge cases\n- Cutover, data migration and running both systems in parallel\n- Rust training or hiring, and slower development while the team learns\n- **Opportunity cost:** nine months of three engineers not doing other work\n\nThere may also be benefits not counted, such as lower infrastructure costs if performance improves, fewer runtime errors, or a codebase that's easier to hire for in your context.\n\n## What actually drives the maintenance cost?\n\nThis is the question that decides it. A language change reduces some kinds of work and not others:\n- **Likely to drop:** runtime type errors, memory and concurrency bugs, and some performance firefighting.\n- **Unlikely to drop:** new feature work, changing business rules, customer integrations, dependency upgrades and operational support.\n\nIf most of the three engineers' time goes on the second list, a Rust rewrite won't come close to halving it.\n\n## How to settle it\n\n1. **Ask him for a number, with reasons.** What will Rust maintenance cost in FTE, and which categories of current work will fall? He needs to show it's comfortably below 2 FTE.\n2. **Break down current maintenance.** Go through the last 6–12 months of tickets and categorise them. That shows how much of the work a language change could plausibly remove.\n3. **Try a contained piece first.** Rewrite one well-bounded, high-maintenance module, or the hottest performance path, in Rust behind a stable interface. Measure how long it takes compared with the estimate and how much maintenance it needs afterwards.\n4. **Consider an incremental replacement.** Replace components one at a time while Python continues to serve, instead of doing a big-bang rewrite. You spread the risk, and you can stop if the gains don't appear.\n\n## On your view\n\nYou're right that rewrites are notoriously underestimated, and the burden of proof is on the proposal. That doesn't make it a vanity project. A large Python codebase costing three engineers a year may have real problems that are worth fixing. Ask him to show the number. If he can make a credible case that maintenance falls well below two engineers a year and that the work fits in about a year, it's worth considering. If he can't, the numbers support your scepticism.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1918,
+  "cache_read_input_tokens": 68908,
+  "output_tokens": 2287,
+  "output_tokens_details": {
+   "thinking_tokens": 802
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1918,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2287,
+    "cache_read_input_tokens": 68908,
+    "cache_creation_input_tokens": 1918,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1918
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0748816000000001,
+ "started": "2026-11-13T22:08:53.853893+00:00",
+ "wall_s": 27.23,
+ "task_index": 7
+}
