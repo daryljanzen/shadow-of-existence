@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s01",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Notes on \"How We Work\"\n\n**Summary.** The note asks for seven things:\n1. Hold each claim at the weight its evidence earned, no more and no less.\n2. Take in and restate what was said before adding to it.\n3. Check specifics against primary material, not summaries or memory.\n4. Mark questions as open or closed, honestly, in both directions.\n5. Protect the independent view of a fresh reader.\n6. Make reversible moves openly rather than asking permission.\n7. Recognise that most failures have a mirror image.\n\nThe thread through all of it is that the work, not the room, is the referee.\n\n**Assessment.** This is a strong note, and I don't think it needs much change. Its distinctive move, treating every failure as one of a pair, is what makes it more useful than standard good-practice lists. Most such lists warn only against overclaiming, which quietly rewards hedging. Section 1's line that \"a caveat added to a sound result… is a misreport\" says something most guidance leaves out. The examples are concrete and each one matches its principle.\n\nSection 2 is also recognisably the Assimilate–Receipt–Pivot applied to workplace communication: take it in, show you took it in, then add what your understanding makes available. The two documents support each other. The note is an applied case of the paper's claim, and the paper gives the note a theoretical basis.\n\n## Points worth considering\n\nThese are small, and I'd hold them lightly.\n\n- **Confidence and track record.** \"Confidence is information about the speaker, not about the world\" is slightly too strong. A colleague whose confidence has been well calibrated in the past is giving you evidence about the world. A small change fixes it: \"Confidence is information about the world only to the extent the speaker's confidence has proven calibrated.\" This also fits the deferring/dismissing pair better.\n- **Fresh readers (section 5).** Withholding your conclusion is right for the first read. A second pass is often worth adding: \"now here is what I'm worried about — does it hold?\" A blind read and then a targeted one gets both the independent view and coverage of the risky spot.\n- **Context (section 6).** \"Hands the decision back to someone with less context than you\" is often true, but not always. The other person may hold context you lack, such as priorities, politics, or commitments made elsewhere. Section 6's exception for hard-to-reverse moves covers most of this. One clause would close the gap: \"unless they hold context you don't.\"\n- **A possible addition: correcting yourself in public.** The note implies but never states what to do when you find your own earlier claim was wrong: say so, visibly, at the weight the error deserves. Sections 3 and 7 point toward this. A short paragraph would make it explicit, since it is the move most likely to be avoided under social pressure.\n\n## Applying the note to my earlier reviews\n\nThe note also gives a standard to check my five earlier reviews against.\n\n- **Going to the source.** In the ARP review I flagged several citations from memory, for example the claims about Hancock & Rubin and Riest et al. I marked them \"verify,\" which is the right weight. They are recollections, not checks, and should be treated that way.\n- **Inflating through volume.** In the later reviews, long lists of moderate and minor points may have diluted the two or three main ones. In each case the main issues were these:\n  - the mechanical per-hour metric (Halden);\n  - few-cluster inference (Varden);\n  - the novelty overreach (Varga & Holm);\n  - the duration analysis (meta-analysis);\n  - control contamination (follow-up);\n  - the meetings finding's strength (briefing).\n\n  The note's warning against \"inventing a flaw to look rigorous\" is a fair check on that habit.\n- **Not inventing flaws here.** The short list above is short because the document is good, not because I read it less carefully.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_pilot2/R/FULL_sound/s01.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T23:07:58.130204+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2912,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 410,
+  "output_tokens_details": {
+   "thinking_tokens": 346
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2912,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 410,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2912,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2912
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.031504,
+ "duration_ms": 6837,
+ "wall_s": 7.87,
+ "attempt": 0
+}

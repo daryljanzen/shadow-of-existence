@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 7,
+ "order": "B",
+ "turn_index": 30,
+ "kind": "task",
+ "item": "E1-26",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.",
+ "response": "## 1. Incident review title\n\n> **Incident Review: [Service] Outage, Tuesday [Date] ([Duration])**\n\nFor example: \"Incident Review: API Outage, Tuesday 10 November (21 min)\". Putting the date, the affected service and the duration in the title makes it easy to find among the month's three incidents.\n\n## 2. Status-page line\n\nThe original says nothing about *what* broke or *who* was affected. A clearer version:\n\n> **Between [start time] and [end time] [timezone], some customers were unable to [log in / load dashboards / sync data]. The issue has been fixed and everything is working normally. No data was lost. We're sorry for the disruption.**\n\nFill in the specific action customers couldn't do, and keep \"No data was lost\" only if that's true. Customers mostly want to know whether it affected them and whether it's over.\n\n## 3. Three-level severity scheme\n\n| Level | Meaning | Example | Response |\n|---|---|---|---|\n| **SEV1, Critical** | Service down or core feature broken for most customers, or data at risk | Nobody can log in | Everyone available drops everything; status page updated within 15 min |\n| **SEV2, Major** | Significant feature broken or degraded for some customers; a workaround may exist | Exports failing for some accounts | On-call engineer plus backup; status page updated |\n| **SEV3, Minor** | Small impact, cosmetic, or affects few users | One report rendering slowly | Fix in normal working hours; status page optional |\n\nAt 12 people, three levels are plenty. Agree in advance who can declare each level.\n\n## 4. MTTR, for the account manager\n\n> **MTTR (mean time to recovery)** is the average time it takes us to get the service working again after an incident starts.\n\nSome teams use the R to mean \"repair\" or \"resolve\" rather than \"recovery\". Agree on one meaning internally, so the number you quote to customers is consistent.\n\n## 5. SLA: yes, it looks like you've breached it\n\n| Item | Working | Result |\n|---|---|---|\n| Minutes in a 30-day month | 30 × 24 × 60 | 43,200 |\n| Allowed downtime at 99.9% | 0.1% × 43,200 | **43.2 minutes** |\n| Downtime this month | 18 + 12 + 21 | **51 minutes** |\n| Actual uptime | (43,200 − 51) ÷ 43,200 | **≈ 99.88%** |\n\n**51 minutes is about 8 minutes over the limit.**\n\nThe \"43.8 minutes\" figure in the channel is the allowance for an average-length month (365.25 ÷ 12 days). For a 30-day month it's 43.2. And 51 minutes is over **either** figure, so \"we're fine\" doesn't hold.\n\n**Before telling customers, check the contract wording.** The answer can change depending on:\n\n- **What counts as downtime.** Some SLAs count partial degradation, or failures affecting only some customers, differently or not at all.\n- **Exclusions.** Scheduled maintenance, third-party failures and incidents caused by the customer are often excluded.\n- **How uptime is measured.** For example, per service, or per customer.\n- **How credits work.** Many contracts require customers to claim service credits within a set period.\n\nIf all three outages count, the honest step is to tell affected customers proactively and explain how credits apply. Customers usually notice anyway, and hearing it from you first builds more trust.\n\n## 6. Three realistic action items\n\n1. **Fix the specific cause of each outage,** with an owner and a due date for each. These are usually small, concrete fixes, so you can deliver them.\n2. **Add monitoring or alerting** for whatever you found out about late. If customers spotted the problem before your alerts did, close that gap first.\n3. **Adopt the severity scheme and a short incident checklist:** who declares the incident, who updates the status page, and when. This costs little and makes the next incident calmer.\n\nAvoid promises like \"we will eliminate outages\" or \"we will rebuild X\" unless you've already scoped the work. Committing to three things and doing all of them is better than committing to ten.\n\nSince you've had three outages in a month, it's also worth checking whether they share a root cause. That pattern is often more useful than any single review.\n\n## 7. Meeting or async?\n\n**Async comments on the doc, with a fixed deadline for comments and one named person to resolve them.** If something stays contested, a short call for just the people involved can settle it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 979,
+  "cache_read_input_tokens": 168610,
+  "output_tokens": 1782,
+  "output_tokens_details": {
+   "thinking_tokens": 318
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 979,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1782,
+    "cache_read_input_tokens": 168610,
+    "cache_creation_input_tokens": 979,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 979
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07721000000000044,
+ "started": "2026-11-13T23:10:00.513563+00:00",
+ "wall_s": 22.04,
+ "task_index": 22
+}

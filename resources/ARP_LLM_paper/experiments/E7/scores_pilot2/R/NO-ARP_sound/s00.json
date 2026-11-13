@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s00",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Reading \"How We Work\", and Applying It to My Own Reviews\n\n## What the note says\n\nThe note follows its own section 2, so here is a brief restatement:\n\n1. **Weight claims by their evidence.** Fluency, seniority or convenience shouldn't change a claim's weight. Overstating and hedging are both distortions, and hedging a supported claim is the harder one to spot.\n2. **Show you've received the whole message before replying.** Restate it, especially the hard part, then add something new.\n3. **Check specifics against the primary source.** This matters most for things you think you already know, because repetition is where drift happens.\n4. **Keep open questions open and settled ones settled**, and say what would close the open ones.\n5. **Protect a fresh reader's independence.** Give them the material and the question, not your conclusion.\n6. **Make reversible moves openly** rather than asking permission. Talk first for irreversible ones.\n7. **Most failures come in mirror-image pairs.** Over-correcting one tends to produce the other.\n\n## Assessment\n\nThis is sound and precisely written. Its most valuable feature is that it treats deflation as a real error, not a safe default. Most guidance on rigour only warns against overclaiming.\n\nThere is one tension worth making explicit, since a new team member could trip on it:\n\n- **Section 5 vs section 6.** Section 6 says to share drafts early. Section 5 says not to give a reviewer your conclusion. A shared draft *is* your conclusion. The two fit together once you separate the purposes. Share drafts when you want *reaction*. When you want an *independent check*, give the source material first and the draft afterwards.\n\nI'm not raising any further criticisms. I don't have others with real weight, and section 7 warns against inventing flaws to look rigorous.\n\n## Applying it to my reviews in this conversation\n\nThe note's standards apply to my last five replies as much as to the documents I reviewed. Checked against them, I find some real errors.\n\n**Overstated claims I should correct**\n\n- **\"Per-hour gains in coverage work are idle time, not productivity.\"** I first offered this as an interpretation of Varden. By the briefing review I was stating it as fact: \"It isn't a productivity gain.\" No source measured idle time. It is a plausible queueing explanation that hasn't been tested. Repeating it hardened it, which is exactly the drift section 3 describes. It should carry light weight, and the test would be utilisation or idle-time data from the telephony system.\n- **The CI comparison in my Varga & Holm review.** I said Varden's case-processing result had \"a tighter confidence interval\" than the counter result. I didn't check this against the source. The case-processing per-hour CI (+6.9 to +18.4) is 11.5 points wide. The counter per-worker CI that Varga & Holm cited (−16.9 to −5.9) is 11.0 points wide. My claim was wrong for the comparison I was making. The underlying point still holds: the case-processing stratum is at least as strong and Varga & Holm left it out.\n- **\"It seems likely these offices cut meetings because of the nine-month report.\"** This was speculation presented as a likely explanation. It is a possibility, nothing more.\n\n**Two that hold, but should be stated precisely**\n\n- **The contamination estimate.** The direction is solid: control offices improving makes the decline look larger. The size, \"roughly 1.2 of 2.7 points\", rests on equal weighting and on applying a six-month before-after figure to the month-24 estimate. It is an illustration, not a correction.\n- **\"Logs probably exclude meetings.\"** I inferred this from one phrase in source 5. I hedged it correctly at the time, and it should stay a question for the authors, not a finding.\n\n**A process problem**\n\nFrom source 2 onward, I read each document partly against my own earlier critiques. I opened the Varden review by noting that it \"answers most of my criticisms\". That is the opposite of section 5's advice to read first and form a view. Varden really is the stronger design, so I don't think the anchoring changed my conclusions. But a document that agreed with me got an easier start than it should have.\n\n**Lighter points I gave too much space**\n\n- \"412 records screened is modest\", in the meta-analysis review.\n- Possible spillover between Varden offices, which I raised without evidence.\n\nNeither was wrong, but both added length rather than substance.\n\n**Findings I should *not* now hedge**\n\nSection 1 warns against deflating as much as inflating. These are checked against the sources and should keep their full weight:\n\n- dividing by scheduled hours mechanically inflates per-hour gains;\n- Halden misreported when and why organisations withdrew;\n- the briefing's Table 1 doesn't show the trend its text claims;\n- the 12.5% → 8.5% comparison mixes timesheets with system logs;\n- no source estimates net cost.\n\n## Closed vs open across the five sources\n\n**Settled:**\n\n- Headline figures above 20% come from dividing by scheduled hours.\n- Per-hour gains in discretionary work are real at two years, at least in one employer.\n- Output per worker doesn't rise.\n- Coverage-bound work loses output and service.\n- Neither \"sector-general\" nor \"entirely an artifact\" holds.\n\n**Open:**\n\n- **Net cost.** This would be closed by a costing that includes overtime, sickness and turnover.\n- **Whether the hours cut is necessary for the gain.** This needs a three-arm trial: reduced hours, reorganisation alone, and control.\n- **Mechanism.** Needs a replication of the meetings mediation test in new organisations.\n- **Durability beyond two years and outside one public employer.**\n- **The size of any per-hour gain in coverage-bound work.** Needs utilisation data. I closed this too early myself.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_pilot2/R/NO-ARP_sound/s00.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T23:10:31.268848+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"not_mentioned\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3565,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 509,
+  "output_tokens_details": {
+   "thinking_tokens": 442
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3565,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 509,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3565,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3565
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038708,
+ "duration_ms": 7874,
+ "wall_s": 8.66,
+ "attempt": 0
+}
