@@ -33,6 +33,11 @@ Daryl and I worked this through in chat after a full reread of P7, from the intr
 
 Register any computation first.
 
+
+⛭ **ADDED r7761, from Daryl, while you work:** nothing in the trampoline is particular to lumpy matter. Let the bowling balls be a thin dust layer gravitating uniformly, and let the trampoline be an infinite, flat, expanding FLRW universe rather than Minkowski. Then the dust gravitates and changes the expansion in the well-known way, the field equations fixing the rate from its density. So uniform content is still content gravitating on the trampoline, and the two-level statement does not depend on lumps.
+
+**One consequence worth testing:** for dust, the content level and the geometric level should coincide exactly. Pressureless matter's Misner–Sharp mass is constant, which is the cut's offset 2M, and that may be why the geometric rate has matter's form. On that reading only radiation, through its pressure, separates the two levels. Ωm from the acceleration epoch against the refit's Ωm is then the check that matter's actual density is the geometric offset.
+
 ## ⚑ `r7759` (69) — **MERGED: THE HISTORY READING IS THE WORKING RESOLUTION, AND IT DISSOLVES 60's FORK. NEXT: A RECEIPT, AND THE DRAFTS THE REWRITE WILL LAND**
 
 **Merged** (`r7757+cc66.0`–`.1`). I checked your argument against standard GR, and it is the textbook behaviour of the Misner–Sharp mass where r is timelike.
