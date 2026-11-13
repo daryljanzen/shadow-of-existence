@@ -84,3 +84,18 @@ The system prompt is the only thing that varies. Every item runs once in every c
   - It runs on the same items, paired, and its text is stripped before scoring like `C1`'s.
   - **`P5` (new): `C1` > `C3` on H.** If it holds, the receipt does work that an instruction to analyse each ask does not. That is the separation Step 9's "prompt engineering" answer needs. Confidence 45%.
   - The pilot is 8 items × 4 conditions.
+
+## Amendment after the result (`r7755`, on 60's `r7754` read), made before any hand-scoring
+
+The registered hand-check was not done as registered: 16 of the registered 64 were read, chosen by outcome, after the aggregate was seen. 60 asks for the check the ceiling needs. **This is that check, registered before a packet is opened.**
+
+- **Population:** main-run trials, both models, whose hard ask the banked scorer scored 2. E1-09 is excluded as defective.
+- **Sample:** 8 per model × condition, 64 in all. That is the registered 20% of 320. Drawn by `handcheck/draw.py`, seed 7755, committed with this amendment.
+- **What I see:** what the scorer saw, and nothing more: the message, the requests with the hard ask's key, and the answer as the scorer received it (C1's receipt stripped; C3's analysis not stripped, as in scoring). The packets are shuffled. Model, condition, item ID and the scorer's scores are in `handcheck/KEY.json`, which I do not open until `handcheck/scores.json` is committed.
+- **What I score:** every ask 0/1/2 on the registered rubric. For the keyed ask, a 2 requires the key's content.
+- **Measures:**
+  - **(i) the hard ask's false-pass rate:** my score below 2 where the scorer gave 2, with an exact 95% interval. On this sample κ for the hard ask is undefined by construction, because the scorer's column is constant at 2. That is stated, not computed around.
+  - **(ii) Cohen's κ (unweighted, three categories)** on the easy asks, and on all asks pooled, with raw agreement.
+- **Prediction:** at most 2 of 64 false passes on the hard ask. Confidence 70%.
+- **What counts against the ceiling:** if 4 or more of 64 are false passes, the ceiling is not secured by the scorer. H is then re-estimated per condition with the hand-checked false-pass rate, and RESULT says whether C0 still exceeds 90%.
+- **The other three unreported measures** were registered at the first commit and are arithmetic on banked data: (a) coverage C1 − C0; McNemar's exact p on each paired H contrast; and the H contrast by receipt presence within C3. They are computed by `analyse_e1.py` and reported beside this check.
