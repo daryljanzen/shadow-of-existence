@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 0,
+ "order": "A",
+ "turn_index": 12,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes, the pharmacist's figure is right. Both of your colleagues are describing the same result correctly. They're just using different measures.\n\n## The arithmetic\n\n| | Strokes over 5 years |\n|---|---|\n| Placebo | 2 in 100 people |\n| Drug | 1 in 100 people |\n\n- **Relative risk reduction:** 1 ÷ 2 = **50%**. The board member is right that the drug halves the risk.\n- **Absolute risk reduction:** 2% − 1% = **1 percentage point**.\n- **Number needed to treat:** 1 ÷ 0.01 = **100**. About 100 people need to take the drug for five years to prevent one stroke.\n\nThe two measures don't conflict. Halving a small risk gives a small absolute benefit. \"Halves the risk\" sounds the same whether the risk falls from 2% to 1% or from 40% to 20%, but those are very different decisions for a patient. That's why the relative figure on its own is misleading.\n\n## What the leaflet should do\n\nPatient-information best practice, for example the international standards for patient decision aids and NICE guidance, is clear on this:\n\n- **Always give absolute figures.** Never give a relative reduction on its own.\n- **Use natural frequencies with the same denominator.** \"Out of 100 people\" is easier to understand than percentages or NNT.\n- **Present side effects on the same basis.** That way readers can weigh benefits and harms side by side.\n\nThe board member's concern about scaring people off is understandable. But the charity's job is to support informed choice, not to encourage uptake. Some people will find a 1-in-100 benefit well worth it, especially since a stroke is serious. Others won't. Both are reasonable decisions if they're made on accurate figures.\n\n## Suggested wording\n\nYou can include both figures, which may also settle the disagreement on the board:\n\n> In the main trial, people took the drug or a dummy pill (placebo) for five years.\n> - Out of every 100 people taking the placebo, about **2** had a stroke.\n> - Out of every 100 people taking the drug, about **1** had a stroke.\n>\n> So the drug halved the chance of having a stroke. In practice, this means about 100 people need to take it for five years to prevent one stroke. The other 99 would not have had a stroke either way, or had one despite taking the drug.\n\nTwo cautions on wording:\n\n- **Avoid \"only one in a hundred benefits\".** It sounds dismissive and isn't quite accurate. \"Prevents one stroke for every 100 people treated\" is neutral and correct.\n- **Note that individual risk varies.** People at higher risk than those in the trial will get a larger absolute benefit, and people at lower risk a smaller one. A line such as \"Your doctor can help you work out your own risk\" covers this.\n\nIf your leaflet includes the drug's side effects, give them in the same \"out of 100 people\" format so readers can compare.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2783,
+  "cache_read_input_tokens": 59665,
+  "output_tokens": 1255,
+  "output_tokens_details": {
+   "thinking_tokens": 307
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2783,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1255,
+    "cache_read_input_tokens": 59665,
+    "cache_creation_input_tokens": 2783,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2783
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05931299999999995,
+ "started": "2026-11-13T21:53:42.369257+00:00",
+ "wall_s": 16.53,
+ "task_index": 4
+}

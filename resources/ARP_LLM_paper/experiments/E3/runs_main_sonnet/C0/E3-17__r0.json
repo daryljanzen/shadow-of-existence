@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "C0",
+ "item": "E3-17",
+ "system": "You are a helpful assistant.",
+ "message": "Please review the following document.\n\n<document>\nInternal Audit Memo: Missed Appointments in Outpatient Physiotherapy\nTo: Director of Operations, Therapies Division\nFrom: Clinical Audit Team\nDate: 14 August 2026\n\n1. Scope\nThis audit examined missed appointments in the outpatient physiotherapy service across our three clinic sites between 1 January and 30 June 2026. For the purposes of this audit, a \"did not attend\" (DNA) is recorded when a patient fails to attend without giving notice. Late cancellations (less than 24 hours' notice) are recorded and reported separately, because the slot can sometimes be offered to another patient. We reviewed the appointment system records for all 24,860 booked appointments in the period and interviewed reception and clinical staff at each site.\n\n2. Overall position\nThere were 2,610 DNAs in the period, a DNA rate of 10.5%, against the service target of 8%. Each DNA leaves a 30-minute clinical slot unused. At the service's average cost per clinical hour of £62, the 1,305 lost clinical hours represent around £80,900 of clinical time over six months.\n\nTable 1. DNA rate by appointment type\nAppointment type | Booked | DNAs | DNA rate\nNew patient assessment | 6,210 | 410 | 6.6%\nFollow-up | 18,650 | 2,200 | 11.8%\nTotal | 24,860 | 2,610 | 10.5%\n\nFollow-up appointments account for most DNAs. Staff told us that many patients stop attending once their symptoms improve, without telling the service.\n\n3. Reminder calls\nSince 2024, reception staff have phoned patients two working days before their appointment where time allows. In the audit period, staff made reminder calls for 7,800 appointments, about 300 a week over the 26 weeks. A call is recorded as received only if the patient answered and confirmed they would attend; unanswered calls are not recorded. Reception staff estimate that each call, including dialling, rescheduling where needed and updating the record, takes an average of four minutes.\n\nTable 2. DNA rate by reminder status\nReminder status | Appointments | DNAs | DNA rate\nReminder call received | 7,800 | 470 | 6.0%\nNo reminder call recorded | 17,060 | 2,140 | 12.5%\n\nPatients who received a reminder call were less than half as likely to miss their appointment. Reminder calls therefore more than halve the DNA rate, and extending them to all appointments would bring the service well within its 8% target.\n\n4. Discharge policy\nThe service's policy is that a patient who DNAs twice without explanation is discharged back to their referrer. We found the policy was applied inconsistently: of 160 patients who met the criterion, 104 were discharged. Staff were reluctant to discharge patients they knew to be vulnerable.\n\n5. Late cancellations\nIn addition to the DNAs above, 1,140 appointments were cancelled with less than 24 hours' notice. Reception staff were able to refill 31% of these slots, usually with patients on the cancellation list.\n\n6. Findings and recommendations\nFinding 1. The DNA rate of 10.5% (including late cancellations, which we classify as DNAs) is above target and costs the service around £80,900 in clinical time every six months.\nRecommendation 1. Extend reminder calls to all booked appointments, about 960 a week, using reception staff. This can be absorbed within existing reception hours at no additional cost.\n\nFinding 2. The two-DNA discharge policy is applied inconsistently.\nRecommendation 2. Revise the policy to include a documented clinical review before discharge, so that vulnerable patients are protected and the policy can then be applied consistently.\n\nFinding 3. Late-cancellation slots are refilled only 31% of the time.\nRecommendation 3. Introduce an automated text offer to patients on the cancellation list when a slot becomes free.\n\n7. Conclusion\nMissed appointments are costly but largely preventable. Reminder calls have been shown to more than halve DNAs in this service, and extending them to every patient, together with the policy and process changes above, should bring the DNA rate below target within six months.\n</document>",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/runs_main_sonnet/C0/E3-17__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T21:55:58.890484+00:00",
+ "response": "# Review of the audit memo on missed appointments\n\nThe arithmetic is sound, but the central recommendation rests on a causal claim the data can't support, and the memo contradicts itself on what counts as a DNA.\n\n## What checks out\n- Table 1 sums and rates are correct (410/6,210 = 6.6%, 2,200/18,650 = 11.8%, 2,610/24,860 = 10.5%).\n- 2,610 DNAs × 0.5 h = 1,305 h, and × £62 ≈ £80,900.\n- Table 2 sums to 24,860 appointments and 2,610 DNAs, and its rates are correct.\n- 7,800 calls over 26 weeks is 300 a week, and 24,860 over 26 weeks is about 960 a week.\n\n## Major problems\n\n**1. The reminder-call effect is presented as causal, but it is confounded.**\n- Calls were made \"where time allows\", so staff chose which patients to call.\n- A call counts as \"received\" only if the patient answered and confirmed attendance. Unanswered calls and patients who said they wouldn't come fall into the \"no reminder\" group.\n- The 6.0% group is therefore pre-filtered for engaged, likely-to-attend patients, and the 12.5% group is inflated by the unreachable ones. The gap overstates what a call achieves.\n- The claims \"reminder calls more than halve the DNA rate\", \"have been shown to…\" (Conclusion) and \"would bring the service well within its 8% target\" are not supported. Even 6.0% is only just under half of 12.5%.\n- The memo never cross-tabulates reminder status by appointment type or site. Follow-ups, which have the highest DNA rate, may be called at different rates than new assessments.\n\n**2. Recommendation 1's \"no additional cost\" is not credible.**\n- Current calling is about 300 a week at 4 minutes, or about 20 hours.\n- Calling all 960 a week is about 64 hours, an extra 44 hours a week across three sites, or roughly 1.2 FTE.\n- Unanswered calls and repeat attempts would add more. The memo's own 4-minute estimate contradicts the claim that this can be absorbed.\n\n**3. The memo contradicts itself on late cancellations.**\n- Section 1 says late cancellations are reported separately and excluded from DNAs, so the 2,610 and 10.5% exclude them.\n- Finding 1 says the 10.5% includes late cancellations, \"which we classify as DNAs\".\n- If they were included, the figure would be (2,610 + 1,140) / 24,860 ≈ 15.1%, and the lost-time cost would be higher.\n- Please fix this, and state whether the 8% target includes late cancellations.\n\n## Other issues\n- **Unsupported forecast:** The claim that the DNA rate will fall below target within six months has no modelling behind it. A realistic range needs a more conservative effect estimate than the raw 6.0% vs 12.5% gap.\n- **Recommendations miss the main driver:** Follow-ups account for 84% of DNAs, and staff say patients stop attending once they improve. No recommendation addresses this, for example through planned discharge conversations, patient-initiated follow-up, or fewer routine follow-ups. That staff observation is also anecdotal, with no data behind it.\n- **Recommendation 2:** Adding a clinical review gives clinicians more discretion, so it may not make application more consistent. 56 of 160 eligible patients (35%) were not discharged, but the memo doesn't say what happened to them or whether the discharge policy affects DNA rates.\n- **Recommendation 3:** No estimate of benefit is given. 31% of 1,140 is about 353 slots refilled, leaving about 787 unfilled, so the memo should estimate how many more an automated text could recover. It also doesn't say how large the cancellation list is.\n- **Cost framing:** £80,900 is the value of unused clinical time, not a cashable saving. This should be stated.\n\n## Suggested fixes\n1. Reword the reminder findings as \"associated with\" lower DNAs, and note the selection effects.\n2. Recommend a controlled pilot, such as a stepped or randomised rollout across sites, to measure the true effect before full rollout. Alternatively, analyse by appointment type and call outcome (answered or unanswered).\n3. Replace \"no additional cost\" with a costed staffing estimate, or consider automated SMS reminders as a cheaper alternative.\n4. Make the DNA and late-cancellation definitions consistent throughout.\n5. Add a recommendation targeting follow-up non-attendance.\n6. Soften the conclusion's forecast, or support it with a stated model and assumptions.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2728,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 3109,
+  "output_tokens_details": {
+   "thinking_tokens": 1550
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2728,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3109,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2728,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2728
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.042006,
+ "duration_ms": 25297,
+ "wall_s": 26.18,
+ "attempt": 0
+}
