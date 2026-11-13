@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-04",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. The 2027-28 shortfall is left largely unaddressed.** The proposal tells the board to solve it \"through other measures\" without naming any. That is the board's most urgent problem\n2. The deadline reading should be confirmed by counsel.** The argument depends on \"preceding school year\" meaning 2026-27 and on how the 60 days are counted. Also, the proposal could have offered the alternative of holding an emergency December hearing\n3. The savings estimates are accepted without scrutiny.** Transportation savings may be smaller if the fifth-day program needs buses. Utility savings may be offset by keeping buildings open for that program\n4. The proposal's own fixes erode the savings.** Preserving staff benefits or redeploying hours to the fifth day shrinks the $450,000. A realistic net figure could be well under $880,000, which might undermine the financial case entirely. The proposal does not estimate this\n5. The recruitment evidence is thin.** It rests on a staff survey and two anecdotal neighbouring reports, with no data on whether applicants were qualified or stayed. The survey's response rate is unknown\n6. The research is summarised selectively.** It omits possible effects on attendance, behaviour or rural-specific outcomes, and does not say whether the studies resemble Pine Valley\n7. Equity effects are not quantified.** There is no estimate of how many families lack fifth-day childcare or how many staff would lose benefits\n8. Delaying has costs too.** Another year of unfilled vacancies is not weighed against the risks of moving quickly\n9. Students and families were not surveyed.** Only teachers were\n\nFINDINGS:\n- The memo contradicts itself on the fifth-day program, calling it a necessity but then treating its funding as conditional ('If the district funds'), which also understates the shortfall.\n- The memo leaves out the brief's caveat that the research base is still limited, and that caveat is needed to justify the later request for neighbouring-district achievement data.\n- The memo says the December 31 hearing deadline is 'about six weeks' away, but from mid-November it is about seven weeks.\n- The memo presents keeping current instructional hours as a legal requirement when it is a policy choice, since the law only requires 1,080 hours.\n- The claim that 'chronic vacancies harm learning too' is not in the brief and has no source.\n- The memo does not use the brief's budget context ($68M general fund, 4,800 students), so the board cannot see that the $2.1M gap is about 3% of the budget.\n- Savings are compared against the 2027-28 gap, but under the recommendation they would not begin until 2028-29, and the memo does not say whether the shortfall recurs.\n- The recommendation does not directly answer the board's actual question of whether to begin formal adoption.\n- Item 5 schedules the plan to close the 2027-28 shortfall for October 2027, after that school year has begun and its budget has been adopted, so it needs a much earlier deadline in the Recommendation.\n- The proposal calls the fifth-day meal program a necessity but presents the $1.4M figure as the main savings, when the realistic net savings is $880K, about 42% of the gap.\n- The proposal omits the brief's caveat that the research is still limited, which may lead the board to give the 0.03–0.06 SD effect sizes too much weight.\n- The claims that chronic vacancies harm learning and that affected staff are the district's lowest-paid employees are not supported by the brief and need a source or softer wording.\n- The proposal says declines were largest where districts 'cut total instructional time', but the brief says they were largest where districts did not add instructional time to the remaining days, and the two are not the same.\n- The phrase 'within about six weeks' is accurate only if the document goes out in mid-to-late November, so it should be dated or replaced with 'before December 31.'\n- The shorter K–1 days option in item 1 may not be possible if the state's 1,080-hour minimum applies to every grade, and staff should confirm this.\n- The proposal gives no budget context, such as noting that the shortfall is about 3% of the $68M general fund and net savings about 1.3%, which would help the board judge scale.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x1/E5-04.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:03.276183+00:00",
+ "response": "```json\n{\"raised\": {\"1\": true, \"2\": false, \"3\": false, \"4\": false, \"5\": false, \"6\": false, \"7\": false, \"8\": false, \"9\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2764,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 763,
+  "output_tokens_details": {
+   "thinking_tokens": 704
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2764,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 763,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2764,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2764
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03738,
+ "duration_ms": 10358,
+ "wall_s": 11.27,
+ "attempt": 0
+}

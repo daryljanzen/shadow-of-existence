@@ -1,0 +1,2433 @@
+{
+ "Q01": {
+  "level": "R2",
+  "record": "match_main/R2/E5-25__r0.json",
+  "matcher": [
+   {
+    "finding": "The proposal never says which 3 courts are converted, so the actual tennis capacity loss is unclear, and the '8 courts to 5' framing overstates the cut.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The 61 dB noise reading comes from a test session rather than 12 courts in simultaneous use, so it may understate the noise risk and the fencing may need to handle more than the 6 dB gap shown.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal ignores whether the high school team can still hold weekday spring practices on 5 tennis courts long term, and its construction-period protection is nearly moot given the July council decision.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Saying 'tennis stays central' while asking the city to remove tennis as primary use is contradictory; the proposal should explain the amendment wording or get a legal view on whether 5 of 8 courts already satisfies primary use.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The proposal reframes the board split as opposition from 'long-standing members' and hides that two board members object, and it is unclear who 'I' (the recommender) is.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "It is unclear whether members vote on the later funding plan and booking policy, or what happens if they reject either; only a failed condition triggers a new vote.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Membership numbers (the 410/230 split and $520 tennis dues) are missing, so members cannot weigh pickleball revenue against tennis attrition, such as the roughly $6,400 a year lost to the existing 3% decline.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 88% utilisation figure is ambiguous because the shared courts are partly booked by pickleball, so tennis-only peak demand may be below 7 courts.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The finances are thin, with roughly a 7.7-year payback on dues alone, and the proposal should lean on long-term membership viability as the stronger rationale.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "One year of growth is weak evidence, and the proposal should rely on the waiting list rather than the 40% figure.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $74,000 funding shortfall is left as a blank cheque, and at least one option, such as the joining fee needed per new member, should be costed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Alternatives are not considered, and at least converting only 2 courts or siting courts away from the houses should be mentioned.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The timeline of July plus 6 weeks has no slack, and the clash of roof work with construction and cash flow is not addressed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The tone includes mild advocacy such as 'putting its future at risk', and authorship and the board vote are missing.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q02": {
+  "level": "R1",
+  "record": "match_main/R1/E5-12__r0.json",
+  "matcher": [
+   {
+    "finding": "The payback calculation subtracts the $310,000 peak robot lease cost but omits the corresponding reduction in the $1.1M temporary labour bill (roughly $0.45M/year), which would shorten day-one payback from 2.9 to about 2.3 years.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not point out that the vendor's claimed 120-picker cut is internally inconsistent, since at 240 picks/hour the cut would be about 85 pickers and the saving about $4.4M rather than $6.24M.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The analysis does not reflect that the union no-layoff clause expires December 31, 2028, only about a year after go-live, so the attrition-only assumption behind the 4-to-5-year payback may be too long.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The late-2027 go-live date is the author's own assumption not given in the brief, yet the realistic payback and the Joliet point depend on it without it being labelled as an assumption.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not state what the 4-to-5-year payback figure includes or excludes, such as omitted temp and error savings that would shorten it and omitted relocation costs that would lengthen it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The recommendation's claim that the project 'does not meet' the 3-year payback rule conflicts with the memo's own 2.9-year day-one figure and is overstated.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo appears to exceed the 450 to 600 word length target.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The error-reduction benefit is left uncosted with no rough illustration of its potential annual value.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q03": {
+  "level": "R1",
+  "record": "match_main/R1/E5-24__r1.json",
+  "matcher": [
+   {
+    "finding": "The net-effect range of $500,000\u2013$750,000 is unexplained: the upper bound is slightly below the roughly $760,000 implied by the full page-view loss, and the lower bound rests on an unstated assumption that advertising falls only about 70% as much as page views.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The break-even threshold is vague ('much smaller') when it could be stated precisely, e.g. that advertising would need to fall by less than about 9% rather than 24% for subscription gains to cover it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that a tighter limit makes it harder to keep Pell grant coverage outside the paywall is unsupported, since a metered limit and a free-coverage exemption work independently.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The suggestion that the change could alter how the Foundation views the Herald is speculation the brief does not support; the real grant risk is reduced reach and search visibility before renewal.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The election-year argument undermines itself by noting election traffic is mostly free under grant terms, and it misses the stronger point that a 3-article limit cuts onward reading and ad views from new election readers.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not acknowledge the CRO's likely counterargument that peak election traffic is the best time to convert readers.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo fails to address the advertising director's position, even though the brief names three internal positions and the analysis largely supports that one.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo applies the 60% cancellation rate to all new starts without stating that this is a simplification, even though only 'most' starts come through the $1 offer.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The From line contains an unfilled placeholder '[Strategy/Analysis]' and the document ends with stray markup (a trailing '---' and an empty '##' heading).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo uses the 2025 $3.6m advertising figure without noting that 2027 advertising revenue may differ.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q04": {
+  "level": "R2",
+  "record": "match_main/R2/E5-15__r0.json",
+  "matcher": [
+   {
+    "finding": "The op-ed omits that permits would be awarded by lottery, which contradicts its claim to target large multi-listing operators since a random lottery could deny single-listing local hosts while large operators keep permits.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 300-home estimate equals the full permit reduction (900 to 600), implicitly assuming 100% of lost listings return to the long-term housing market, ignoring conversions to 30+ day rentals, second homes, vacancy, or non-rental sales, and no method is given.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The piece never states the scale of the housing benefit: 300 homes is under 0.8% of 38,000 units and by the piece's own study implies only about a 0.4% rent reduction, with no effect on the 2.1% vacancy rate discussed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that STRs raised rents 'a few percentage points' overstates the study, since linear calculation gives about 2.4% and a log-based elasticity calculation gives about 1.5%, and the cross-city association is extrapolated to one city's very large change.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The line about '300 households who don't have to leave town' overclaims by turning an uncertain unit estimate into a guaranteed outcome for current residents, when sold homes may go to newcomers or second-home buyers.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The revenue concession ends in a promise ('I will bring a plan') with no estimate of how much of the $3.1M would be lost and no mention of partial offset from hotel stays.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The festival response is thin, omitting the 1,100 hotel rooms, $14M festival spending, and visitors' bureau opposition, and the proposed seasonal allowance raises unanswered questions about eligibility, enforcement, and whether it readmits the targeted commercial operators.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Legal risk is understated: compliance with the 'reasonably related' standard is asserted rather than shown, 600 is not justified over other numbers, and the piece doesn't address voting before the Brookfield ruling or what happens if the cap is struck down.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Evidence is weighed unevenly, giving full weight to 45 anecdotal displacement stories from an advocacy group while narrowing and underselling the hosts' claim that most hosts are local families, which the brief's own numbers may support.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The piece admits regional rents rose 27% without STRs but never mentions other housing-supply actions, making the cap look like a symbolic substitute.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The headline 'Puts Homes Back Within Reach' promises more than the body delivers.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Population and unit totals that would put the 300-home figure in perspective are never used.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The document ends with a stray '---' and an empty heading that should be removed.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q05": {
+  "level": "R2",
+  "record": "match_main/R2/E5-02__r0.json",
+  "matcher": [
+   {
+    "finding": "The ~$7.2M agency cost line includes about $0.38M paid for committed but unused agency FTEs without labelling it, which makes the $13.3M total look as though it reflects only operational need.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The fiscal-year basis may be wrong: if FY2027 runs July 2026 to June 2027, hiring starts mid-year and the ratio law takes effect at the start of FY2028, so both cost tables would need rebuilding.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The FY2027 total excludes the cost of about 8.6 expected turnover departures.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo overstates the loss per departure at about $44,500, because nurses who leave within 6 months must repay the bonus.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "If the 6% vendor discount applies only to the 30 committed FTEs, it saves about $0.36M against $0.38M of unused commitment, a small net loss, so the vendor recommendation should rest on supply security rather than cost.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The July 1 compliance margin is thin.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that the requirement rises 'from 48 to about 70' is wrong, because 48 FTEs is only the agency-covered portion and not the units' total RN requirement.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "A January 1 first cohort is unrealistic given January budget approval, and a February start would leave agency need at about 52 FTEs on July 1, reversing the 'no surge' conclusion.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Mid-month cohort starts (e.g., April 15) would push orientation completion past July 1 and cut the July 1 on-floor count to 18.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "FY2028 does not start at steady state because late-2027 cohorts are still in orientation into early 2028, so FY2028 savings are slightly overstated.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Hiring 72 RNs for 70 slots is unexplained, and if the extra two are a turnover buffer they cover only about one month of expected departures.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo never mentions that the month-by-month agency ramp-down depends on the 30-day cancellation right, or that the vendor commitment gives up that flexibility for 30 FTEs.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Supply risk is applied unevenly: the memo treats agency supply as a risk for the permanent plan but ignores that the agency-only alternative needs 70 FTEs from July and carries even more supply risk.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The FY2028 $1.2M vacancy-coverage figure rests on an unstated assumption of about 4.7 months of agency cover per departure.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The monitoring trigger is too weak because it has no decision date and no named owner for requesting extra agency FTEs if cohorts underfill.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo lacks a sensitivity range.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo is near or over the 600-word limit, so the needed fixes will require trimming elsewhere.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q06": {
+  "level": "R1",
+  "record": "match_main/R1/E5-13__r0.json",
+  "matcher": [
+   {
+    "finding": "The document ends with stray formatting (a `---` and an empty `##` heading) that should be deleted.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo's equity argument relies on face-detection bias against darker-skinned students, but the recommended identity-only service also uses face matching and may fail for the same students, which the memo does not address.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits the specific flagging mechanisms from the brief ('face not detected' and looking away/repeated movements), which would make the disparity concrete and strengthen the case for identity-only checking.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that peer institutions moved to open-book exams, projects, and oral components 'for this reason' goes beyond the brief by adding oral components and attributing motives to peers.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The deterrence paragraph is one-sided: the lack of data cuts both ways, and the claim that hard-to-outsource assessment is 'the better deterrent' is stated as fact without evidence.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The ~$205,000 savings figure is measured against the expanded renewal offer rather than current spending (where it is ~$175,000, and less in year one with a bridge period), and the baseline is not stated.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The ~2,300-hour full-coverage projection carries an unstated second assumption that exam volume scales with course coverage, in addition to flag rates holding.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The Student Government Association's resolution against renewal is only implied rather than explicitly stated in the equity discussion.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "No cost figure or range is given for the assessment redesign program, making that recommendation less actionable.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 'From' line still contains an unfilled placeholder that must be completed before circulation.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q07": {
+  "level": "R2",
+  "record": "match_main/R2/E5-27__r1.json",
+  "matcher": [
+   {
+    "finding": "The draft labels the financing sources as \"committed\" even though the brief only calls them \"financing sources so far,\" which is an unsupported factual claim and contradicts the author's note that no facts were invented.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The cost paragraph admits the project exceeds the $350,000 threshold and then pivots to 6% escalation and urgency without ever explaining why the $400,000 baseline is justified.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The statement that costs escalate 6% a year undercuts the opening claim that the award completes the project's financing, unless it is paired with the pricing date and contingency.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Calling the award \"the only way to keep the $11.5 million\" is an overly strong absolute that invites reviewers to ask what happens if the project is not funded.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft softens the zoning situation by turning a contested public hearing by a neighbourhood group into \"a public hearing\" and \"some neighbours,\" and adds an unsupported inference that concerns were considered.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft lists the unit mix without addressing the 20% deep-affordability threshold, leaving the 6-unit figure unjustified in the section that is scored first.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The document ends with a stray `---` and an empty `##` heading that should be deleted.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The track record paragraph is weak because it lacks unit counts and LIHTC experience.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q08": {
+  "level": "R0",
+  "record": "match_main/R0/E5-19__r0.json",
+  "matcher": [
+   {
+    "finding": "The +$950 per-loan combined economics figure likely overstates the margin because it omits the residual bank-side underwriting cost the CDFI fee doesn't cover, as well as SBA guarantee and servicing fees.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The paragraph on the 'first 5% of losses' doesn't say whether the CDFI or the bank bears that first loss, and that choice determines whether the 'adds nothing' reasoning holds.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo doesn't check with counsel whether a CDFI first-loss arrangement is permissible alongside an SBA guarantee, given SBA rules on holding the unguaranteed portion.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo doesn't address whether SBA will guarantee loans under a race-based SPCP-restricted program (option a), given SBA's own nondiscrimination requirements.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The '8 weeks each' phrasing wrongly implies approvals happen sequentially, when the real constraint is pipeline volume and CDFI capacity, and delegated or Express processing is often faster.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The 0.03%-of-assets figure can't be verified because it implies roughly $2.25 billion in total assets, which is never stated.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "A signed CDFI partnership agreement is missing from the preconditions for lending, even though the pilot depends on that partnership.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The description of regulatory risk ('regulatory treatment of SPCPs has also been changing') is vague and doesn't name specific developments such as the CFPB's proposed Reg B changes.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The pilot downside is presented only as a gross loss ($360,000 at 9%), without the net-of-guarantee figure (about $54,000) that would support the claim that the structure caps downside.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q09": {
+  "level": "R2",
+  "record": "match_main/R2/E5-09__r0.json",
+  "matcher": [
+   {
+    "finding": "The return table values saved water at the blended $181/af (implying proportional district/well savings), while the groundwater section counts all 300 af of savings against the well cut, so the two sections rely on contradictory assumptions.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "If water savings are proportional, only about 180 af comes off the wells, which is less than the 216 af cut, so the claim that savings more than cover the cut fails.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "If savings come entirely off the wells as the groundwater case requires, they are worth only $95/af, dropping net return to about $220/acre ($110,000/year) and raising EQIP payback to about 5.6 years.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Under the 6% yield-gain scenario the $35,000 annual return is less than the $38,000 annual interest on $475,000, so the project never pays back, contradicting the memo's 'clearly worthwhile' claim.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo fails to state the break-even yield gain, which is roughly 6.5\u20137% with EQIP.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo rejects the 800-acre plan for exceeding the $900,000 credit line, but EQIP reimburses after installation, so the recommended plan likely requires fronting $950,000, which also exceeds the line unless bridge financing is arranged.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo assumes $475,000 in EQIP funding, which may exceed the per-entity payment cap (e.g., $450,000 under the 2018 Farm Bill), and prior EQIP payments are not considered.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "NRCS typically pays fixed practice rates rather than a percentage of cost, so the assumed 50% cost share may be overstated.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Maintenance is charged in full in wheat years while electricity is not, an inconsistent assumption about whether the system operates during wheat years.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The groundwater analysis covers only owned tomato acres, while the allocation cut likely applies to all farm pumping including wheat and leased acres, so the full shortfall may be much larger than drip savings.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The conclusion against drip on leased acres is unsupported by any numbers, though a simple calculation (~$160,000\u2013245,000 vs. $570,000) would support it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo is about 700 words, exceeding the 450\u2013550 word target in the brief.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The brief asks for a proposal for the $1.52M 800-acre project, but the memo argues against it, so the author should confirm a counter-recommendation is acceptable or reframe it.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q10": {
+  "level": "R1",
+  "record": "match_main/R1/E5-29__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo ends with an empty leftover heading after the horizontal rule and has an unfilled '[Analyst]' placeholder in the From line.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The staffing plan misreads the survey by treating 70% unwilling to work regular evening shifts as meaning 30% are willing to work extra hours, and the survey says nothing about Saturdays, undermining the 'no new hires needed' claim.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The smaller test's $2,500/week cost and 12-visit break-even use the base $310/hour rate despite the memo stating test staff would be paid at a premium, which is inconsistent with the memo's own argument that premiums raise break-even.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Claims that many calls come overnight, on Sundays or holidays, and that some are repeat calls, are stated as fact without supporting data, and the 64% figure comes from a sample review rather than a full count.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not explain why the smaller test is more achievable, since its break-even rate of 1.5 visits per hour is the same rate it calls implausible for the full pilot, when the real difference is the share of treatable calls required (about 7% vs about 75%).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The phrase 'giving up this market permanently' overstates the risk of not acting.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Valley's $890 average invoice is not used, though it could strengthen the 'why not do nothing' argument and explain the 72% preference figure.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo runs about 560\u2013580 words, slightly over the 450\u2013550 word target.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The 'before the end of the month' tasks have no assigned owners.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Two weeks of call logging is too small a sample to drive the go/no-go decision and should instead inform clinic selection.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q11": {
+  "level": "R0",
+  "record": "match_main/R0/E5-15__r1.json",
+  "matcher": [
+   {
+    "finding": "The headline promises affordability with \"Puts Homes Back Within Reach,\" but the body admits the cap will not reverse rent increases.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The \"few percentage points\" rent effect is overstated, since the stated elasticity implies about 2.4%, or about 1.5% with log changes, so \"about two percentage points\" is more defensible.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The \"300 homes\" figure assumes every capped unit returns to the long-term market, when owners may instead leave units vacant, sell to outside buyers, or switch to mid-term rentals.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim of \"300 households who don't have to leave town\" does not follow, because homes sold on the open market may go to newcomers rather than current residents.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The supply claims lack context, including the size of Lakemont's long-term rental stock against the 2.1% vacancy rate and the period over which the 45 families were displaced.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Defining entire-home listings as places where no one lives full-time ignores primary residences rented while owners travel, leaving unclear whether they count against the cap and risking conflict with the promise to protect residents.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The piece does not address the council voting in February before the Brookfield ruling expected in spring, and \"write our ordinance carefully\" is too vague a response.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The lodging-tax revenue loss is not estimated even roughly (likely about $1M or more), which weakens the promise to \"bring a plan.\"",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Key policy mechanics are missing, including how the 600 permits are allocated, per-operator caps and LLC-splitting prevention, the transition and grandfathering timeline, enforcement, and how owner-occupancy is defined and verified.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q12": {
+  "level": "R2",
+  "record": "match_main/R2/E5-24__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo's net-loss conclusion depends almost entirely on the undefended assumption that advertising revenue falls in proportion to page views, when lost views are likely low-value casual visitors and CPMs could hold or rise.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The lower end of the net 2027 effect range (\u2013$500k) implies an ad loss of about $610k (~17%) that the memo never explains.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits the break-even threshold (ad revenue loss under ~9% at full run-rate) and provides no ad-loss sensitivity range.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The run-rate subscription revenue assumes zero churn after month 3.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The first-year revenue figure is ambiguous because it depends on whether the '$1 for 3 months' offer means $1 total or $1 per month, and it could be closer to $120k.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo treats all new starts as introductory-offer starts although the brief says only 'most', so the subscription gain is modestly understated.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The one-year horizon ignores subscriber lifetime value, understating the upside, while the memo also fails to acknowledge overstatement from no post-month-3 churn and possible pulled-forward subscriptions.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo applies scepticism unevenly, discounting the 62% subscription lift for July timing and small sample size while accepting the 24% page-view drop from the same test without caveat, and neither result is reported with statistical significance.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo implies July timing inflated the subscription result when the direction of that bias is actually unclear.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The grant risk is asserted rather than shown, since the agreement only requires specific coverage categories to stay free and exempting tagged categories works at any limit, and the claim about the Foundation's perception is speculative.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The search risk is unquantified, and the proposed randomised Q1 test cannot detect sitewide search-ranking changes, so the plan to measure search referrals won't answer the question.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo ignores the cost of delay, including pushing subscription gains back more than a year amid ongoing ad decline and the engineering and testing costs.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The proposed 5-article middle option has no supporting data.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo sets an asymmetric bar, requiring the change to prove itself across several uncertainties while requiring nothing of the status quo.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not mention the existing 21,400 subscribers (~$2.57m/year) or clarify that they are unaffected by the limit.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The timeline is internally inconsistent because Q1 2027 tests would report by about April, yet the decision is deferred to early 2028 with no explanation of what the tests are for in the meantime.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The advertising director's opposition, named in the brief, is never addressed directly, and the CRO's point gets only a one-line acknowledgement.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo fails to note that mandatory free election coverage would reduce page-view losses during the election period, which partly weakens its election-related risk.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q13": {
+  "level": "R0",
+  "record": "match_main/R0/E5-20__r0.json",
+  "matcher": [
+   {
+    "finding": "The stakeholder section overstates protection for seniors by claiming their concern is addressed by the exemption, analysis, and shadow bills, when the exemption covers only medical baseline customers and the other measures do not prevent harm.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo never specifies when the Board will decide on further senior protections relative to the February vote, the impact analysis, and final adoption.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not quantify the cost of delaying implementation to 2028, roughly $280K\u2013$750K in forgone savings.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $560K savings estimate ignores the reduction from the 4,300-customer exemption and opt-outs and should be presented as an upper bound or adjusted.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 18% bill-increase figure from the other utility is not translated into an estimate of affected Granger households (roughly 11,000).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The costs of shadow bills and the impact analysis are not stated, and it is unclear whether the $340K billing setup cost includes them.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The staff projection (9% peak reduction, $8 monthly savings) is critiqued before it is introduced or sourced.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The comparison utility is never named or described.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The claimed climate benefit is asserted without any quantification or acknowledgment that data is lacking.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The document ends with a stray separator and an empty heading, suggesting a missing section or leftover content.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q14": {
+  "level": "R2",
+  "record": "match_main/R2/E5-06__r0.json",
+  "matcher": [
+   {
+    "finding": "The $220,000 request violates the Foundation's 40%-of-award capital cap because $100,000 is 45% of $220,000, not 40%, so the budget table mislabels it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "With only the stated costs, the maximum compliant request is $200,000 ($80,000 capital plus $120,000 operating), not $220,000.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The truck funding gap is misstated as $65,000 when it should be $85,000 under the corrected request.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The cover note should state that $200,000 is the ceiling and that reaching $250,000 requires $50,000 more of eligible costs.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The change in request amount from the client's requested $250,000 needs client sign-off before submission.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The document does not justify why a third truck is needed and provides no utilization data showing the two current trucks are fully used.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The sustainability section is only a placeholder, and placing the $40,000 surplus next to the $120,000 need highlights the shortfall rather than addressing it.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The truck-gap section is a placeholder with an incorrect amount.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The fix for the hours conflict names no prospective evening or Saturday sites and does not explain why sites were launched in time slots the survey says don't suit clients.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The statement that each declining site is being reviewed is not in the brief and needs confirmation.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The response on declining sites misses the opportunity to consolidate them to free up existing truck capacity, which would also answer the third-truck question.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Reach targets are left as placeholders, so the $26-per-visit figure cannot be scaled into an impact estimate.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that the mobile model is used only where volunteer pantries cannot reach people is invented and unsupported.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The TEFAP-cut sourcing plan is only a placeholder.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Several unbracketed claims not in the brief (DSS connections on site, fresh and refrigerated items, six- and twelve-month reporting, attendance-tracking and site-recruitment commitments) were invented, contradicting the cover note's statement that unknown facts are bracketed rather than invented.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Gift cards are listed under Budget, implying they offset project costs, when they are a client benefit and belong in The Project section.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Without the sustainability funding sources filled in, the application fails a stated Foundation requirement.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q15": {
+  "level": "R0",
+  "record": "match_main/R0/E5-02__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo's bolded claim that July 1 compliance requires no agency surge is wrong, because agency headcount falls to 30 by June under the plan and must jump by 16 FTEs to 46 on July 1, when other hospitals are also staffing up.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The 30-FTE vendor commitment covers the June low point rather than the July peak of 46, so describing it as a hedge against hiring shortfalls overstates its value.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The vendor deal's small net gain holds only if the 6% discount applies to all agency volume; if it applies only to the 30 committed FTEs, the deal loses about $0.02M, so the recommendation should be conditional on confirming the discount scope.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The flat 30-FTE vendor commitment does not follow the actual need curve and should be renegotiated, for example with a higher Q3 commitment and a Q4 step-down.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The hiring ramp assumes all 72 hires stay despite the cited 22% first-year turnover, which ignores the expected departures before July and December that would raise agency need.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The monitoring trigger of two consecutive cohorts below 4 tolerates a 33% shortfall that could leave the unit 4 RNs short on July 1 without escalation, and it is not tied to a firm date for securing July agency supply.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The low end of the '$1.5\u20132.2M more' FY2027 cost range uses an inconsistent baseline, comparing the plan with the discount against agency-only without it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "FY2028 is treated as steady state even though about 14 agency FTE-months (~$0.2M) remain in Q1 2028 from the late cohorts, which affects the claim that the investment is recovered during FY2028.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not explain why it requests 72 hires when 70 are needed.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that turnover economics still favor permanent hiring is asserted without supporting calculation.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $29,500 orientation figure is described as salary only, but it is derived from fully loaded cost and so includes benefits.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The unit economics use the undiscounted agency rate, which overstates per-FTE savings ($72K versus about $60K at the discounted rate) and understates payback, and the memo does not say which rate it uses.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not state that recruiting must begin immediately for a January 1 first cohort or give an approval deadline.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The document ends with an empty heading, which suggests a missing section such as Next steps or Approvals.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q16": {
+  "level": "R1",
+  "record": "match_main/R1/E5-16__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo's Phase 1 scope covers only the 210 staff who use remote access regularly, while the insurer's condition covers all remote access, so occasional VPN users could fall outside Phase 1 and cause the plan to fail the insurer's condition.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that both compromises exploited the weaknesses the proposal addresses is overstated, because keys would have stopped the SIM-swap email takeover but could not have stopped the EHR breach until version 9.2.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that Phase 1 pays for itself in its first year depends on the insurer accepting Phase 1 scope, which the memo itself lists as an open risk, yet the claim is stated without qualification.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The organization-wide licensing risk is raised but not costed, so the memo does not show that the recommendation still holds (Phase 1 would rise to about $40,300, still under $63,000).",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Saying two keys per person 'prevents' lockouts overstates the effect, since users can lose both keys or leave the spare at home.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that badge plus PIN keeps logins close to today's speed is unvalidated and is likely to be tested by clinical leaders.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "It is unclear whether the CEO is being asked to approve Phase 2's ~$104,500 now or in 2027, because the decision deadline only covers Phase 1.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Phase 1's recurring costs are omitted: about $2,450 a year in licenses plus about $1,500 for replacement keys.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo flags that 878 accounts stay on SMS until Q4 2027 but proposes no interim mitigation, such as an authenticator app with number matching, for the SIM-swap risk that has already occurred.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo is roughly 620\u2013650 words, over the 450\u2013600 word target, and the 'Why not deploy fully now' section partly repeats material from elsewhere.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q17": {
+  "level": "R2",
+  "record": "match_main/R2/E5-03__r0.json",
+  "matcher": [
+   {
+    "finding": "The impact table's \u2212$1.3M downgrade line models Team being offered at Business renewal, which Condition 1 forbids for six months, and the memo never states the fenced net impact.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The model ignores new-customer cannibalization: new 6\u201315-user prospects who would have bought Business at $20 can still buy Team, as can Free teams growing past 5 users.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The compliance 'natural fence' argument is circular because the random pilot sample already included compliance-sensitive accounts in the 23%, and the point is redundant while the six-month fence is active.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $18 chat cost is quoted for small accounts but applied to 12-user downgraders.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $8 chat cost target in Condition 2 is unexplained and unsupported.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The Sales condition to hold quotas harmless for downgrades largely overlaps with the fence, fails to address new-logo deals lost to Team, and leaves the compensation cost unestimated.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The platform sequencing is ambiguous: the memo does not say whether the 10-week build happens on the old system (requiring rework) or the new platform (which may not exist by Nov 16), and it has no fallback if the migration slips past March 31.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The early waitlist announcement carries unpriced risk of stalling Business purchases and renewals.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The waitlist price-lock commitment has no stated term or cost.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "There is no 2027 ARR estimate despite an April start and adoption ramp, so actual 2027 revenue from Team may be well under $1M.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not explain how the remaining ~$2.3M+ of the 25% goal will be closed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not acknowledge sample fragility: the n=200 pilot gives a wide confidence interval on 23%, the n=400 survey is assumed representative of all 40,000 Free teams, and downgraders are assumed to average 12 users.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Alternatives such as a $15 price, a seat cap on Team as a structural fence, or chat as a paid add-on are not evaluated.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The effect on self-serve share is described only qualitatively and not quantified.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "There are no go/no-go criteria for April 13 if a condition is not met, with no fallback for Conditions 1 and 3.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q18": {
+  "level": "R0",
+  "record": "match_main/R0/E5-10__r1.json",
+  "matcher": [
+   {
+    "finding": "The demographic data (61% of blocked cards in three zip codes, 38% under-18) lacks a baseline share of total cardholders, so disproportionate impact is not demonstrated.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Lost-item billing after 30 days will exceed the $10 blocking threshold and keep many patrons blocked, so the 22,400 headline figure overstates the access benefit until the fines-only count is known.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that 'both concerns are addressed' overclaims, since protecting the materials budget depends on council amending the ordinance and on offsets that have not yet been identified.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The document does not plainly state that moving $109K into materials requires cutting something else in the operating budget.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "The document only implies, rather than states, that overdue fine revenue currently funds the materials budget.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The document omits the value of outstanding overdue balances that would be written off on July 1.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The collection-agency provision is largely moot because all fine-only balances will be waived, and it is unclear what the agency handles afterward or whether lost-item referrals continue.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Lakeshore evidence is vague and uses card renewals as a weak proxy for new or returning users.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The union report's claim about hostile interactions is anecdotal and unsupported by incident data.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $64K staff-time estimate is not explained.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The timeline depends on council amending the ordinance before July 1 without addressing the council budget cycle or providing a fallback effective date.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The data is from 2025 and omits more current 2026 year-to-date fine revenue figures.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q19": {
+  "level": "R1",
+  "record": "match_main/R1/E5-17__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo runs to about 700 words, exceeding the brief's 450\u2013600 word limit.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo details Option 1's harms but omits Option 2's own impacts (nine months of traffic delay, business disruption through summer and winter, about four months of school bus disruption, and continued ambulance slowdowns), making the comparison look one-sided.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $1.4M headroom is counted twice: Risk 2 treats it as contingency while the uncosted mitigations (temporary engine and ambulance, business relief, signage and marketing, signal retiming) also draw on it, which weakens the claim that Option 1 meets the cap with margin.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Option 2's winter problem is understated, because a 270-day schedule from May 15 runs into December\u2013February when pours can't happen, so its real finish could be later than Feb 9.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Risk 1 conflates finishing pours by late November with substantial completion, ignoring post-pour work and the two separate sets of pours under staged construction.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The sentence 'This is the most serious cost of Option 1 and should be a condition of approval' is ambiguous because it reads as if the cost itself is the condition.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not specify that the temporary emergency units should be placed in the north-east, given that Fire Station 4 already covers the east side and the affected 2,300 households are normally served from the city-centre station.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not note that liquidated damages of $58,500/day may raise bid prices and should be confirmed with the city attorney.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q20": {
+  "level": "R0",
+  "record": "match_main/R0/E5-15__r0.json",
+  "matcher": [
+   {
+    "finding": "The piece never explains how permits would be allocated, so the cap might not hit the 70 commercial operators (who hold 640 listings, more than the whole cap) and could instead push out small local hosts.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that 300 homes return to the market is an upper bound presented as an estimate, since delisted units may sit vacant, become second homes, be sold to non-residents, or keep operating illegally without enforcement.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The piece presents a correlational finding (listings 'associated with' higher rents) as causal, saying rentals 'added' to rents.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The lodging-tax revenue loss is not quantified (it could approach $1M a year), and the plan to replace it is deferred instead of outlined.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The council vote in February would come before the Brookfield ruling expected in spring, and the piece doesn't say whether it would delay, add a severability or sunset clause, or proceed anyway.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The piece doesn't explain how the 600 cap was derived or how it is tied to vacancy and displacement data, which the legal standard requires.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The figure of 45 displaced families lacks a time period, comes from an advocacy group, and isn't said to be verified by the city.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The festival allowance may conflict with the goal of returning homes to long-term rental unless it is limited to owner-occupied hosts or temporary permits.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Defining commercial operators as 'three or more listings' may include local families with a few units, which weakens the rebuttal of the 'local families' framing unless the data separate local from non-local operators.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The 2024 study's elasticity is applied to Lakemont's full 2019-to-present listing growth without acknowledging that extrapolation.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q21": {
+  "level": "R2",
+  "record": "match_main/R2/E5-09__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo's financing argument against the 800-acre plan also undermines its recommended 500-acre plan, which costs $950,000 without EQIP and so exceeds the $900,000 credit line.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "EQIP typically reimburses only after installation and certification, so the farm would likely have to front the full $950,000, exceeding the credit line and leaving no operating credit for the 2028 season.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The assumed $475,000 EQIP payment may exceed the program's per-entity payment cap (about $450,000 under the 2018 Farm Bill).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "EQIP pays from fixed practice payment schedules rather than a flat 50% of the vendor quote, so the cost share may be overstated, which would lengthen the 4.3-year payback.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $760,000 'forfeited' EQIP figure for the 800-acre option is probably overstated for the same cap and payment-schedule reasons.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo runs about 600 words, over the brief's 450\u2013550 word limit.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo gives no fallback plan for meeting the 2028 groundwater cut if EQIP is denied in May, when it would be too late to plan an alternative.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The May go/no-go decision may come too early to judge cannery risk, and the memo should tie the vote to a concrete condition such as a signed 2028 contract or a buyer's letter of intent rather than hoping status will be clearer.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo gives two inconsistent conditions for revisiting the leased acres ('until the lease is renewed' versus 'if the neighbour commits to a long renewal').",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits that EQIP on leased land usually requires proof of control and landowner consent for the contract term.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The groundwater analysis ignores that the leased tomato acres staying on furrow face their own cut of about 130 af, which the 84 af surplus from the owned acres only partly covers.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo leaves the post-2028 water valuation as an open question when the $181 blended price is likely conservative, since after the cut the alternative to drip is fines or $310 district water rather than $95 pumping.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo silently reframes the board's 2027 question as a 2028 recommendation instead of stating the reframing explicitly up front.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo gives no system lifespan or NPV, and with drip tape lasting roughly 10\u201315 years, the 10.6-year no-EQIP payback may approach the system's life, making that case weaker than the memo suggests.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q22": {
+  "level": "R2",
+  "record": "match_main/R2/E5-04__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo asks for the 2027-28 shortfall plan by October 2027, which is too late because that school year will already have started and its budget been adopted; it is needed by spring 2027.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo is addressed to a January decision even though a 2027-28 launch requires a hearing by December 31, so it implicitly forecloses that option instead of letting the board decide in November or December.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The phrase 'within about six weeks' depends on when the memo is read and is inaccurate from today (about seven weeks).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The savings, which begin in 2028-29 under the recommendation, are compared against the 2027-28 gap, which is incoherent; the memo should address whether the deficit is structural and what the 2028-29 gap is.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that Pine Valley must keep 1,110 hours overstates the research, since a 1,080-hour calendar also lengthens the day, and this choice matters for shorter days for kindergarten and first grade.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits the brief's explicit caveat that the research is limited, making the evidence sound firmer than it is.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The document ends with a leftover '---' and an empty '##' heading.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo says 'the local childcare centre' when the brief does not indicate it is the only one.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The turnover sentence omits cafeteria workers alongside bus drivers and custodians.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Requesting 'negotiated terms' from a union that has said it will oppose the change is unrealistic before the board commits.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that chronic vacancies harm learning is asserted without support.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The plan leaves the funding shortfall unaddressed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The hearing deadline should be confirmed with counsel and a December hearing considered.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The savings estimate is accepted without scrutiny, e.g., whether buses and buildings are still needed on the fifth day.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not account for how fixes to the plan would erode the savings, and should give a rough range such as $500,000 to $880,000.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The recruitment evidence is thin and should be flagged as such.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The equity effects are not quantified and should be assigned as a staff deliverable.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not weigh the cost of delay, such as another year of vacancies.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Families have not been surveyed, and this should be added to the deliverables.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo is near the top of the 450-600 word range, so adding fixes requires cutting elsewhere.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q23": {
+  "level": "R0",
+  "record": "match_main/R0/E5-06__r1.json",
+  "matcher": [
+   {
+    "finding": "The $100,000 truck allocation is labeled 40% of the award but is actually 45.5% of the $220,000 request, violating the 40% capital cap.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The maximum compliant award given $120,000 in operating costs is $200,000 (with $80,000 for the truck), not the $220,000 the note claims the budget can justify.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The header request, truck funding gap (should be $85,000, not $65,000), and $220,000 figures in the note all need correcting to reflect the $200,000 maximum.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "It is unclear whether the 40% cap applies to the award or to total project cost, which would change the math.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The summary does not explain why a third truck is needed when four of nine existing sites have declining attendance, or whether freed-up capacity or consolidation could cover new townships.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The plan commits all six new sites to weekday DSS hours despite 58% of clients working hourly jobs and preferring evenings or Saturdays, with no target for adding accessible hours.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Mentioning the $40,000 surplus undermines the request because it covers only a third of the $120,000 annual need and invites questions about why the gap isn't already funded.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The grocery partnership's truck wrap and $15,000 annual gift cards are not counted as in-kind contributions or sustainability sources.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Year-one targets are left as placeholders, and any estimate based on the $0.61/lb rate needs verification against the organization's own cost data.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The truck match and post-grant sustainability funding sources are unfilled placeholders, which matters because funders weigh committed versus pending funds heavily.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 17% and 11% food-insecurity estimates and the FY2027 TEFAP cut lack source citations.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "It is not stated whether the $92,000 personnel cost includes fringe benefits.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q24": {
+  "level": "R1",
+  "record": "match_main/R1/E5-23__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo compares the $38,000 fixed fee against billings ($2.03M) but the phased proposal against collections ($1.75M), and this inconsistent baseline makes the numbers appear to favour the rejected option.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo never directly states that the $2.17M from the single $38,000 fee is not achievable because fees on early cases cannot be kept and competitors will undercut it.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The $1.80M figure for the proposal assumes full collection without stating that assumption, even though the 86% collection rate reflects write-downs and Halberd may negotiate phase prices down.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Billing only on completion creates an unaddressed cash-flow cost because Phase 2 can run for many months with unbilled work carried throughout.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Calling Halberd 'our biggest client' is unsupported, since the brief only says it provides 22% of revenue.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that other clients 'are likely to follow' is speculative and is not tied to the evidence that seven of ten clients have asked for alternative fees.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that competitors will undercut the firm is stated as a certainty without support.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo ignores the capped-fee option the RFP explicitly allows, which could limit risk on expensive summary-judgment cases.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The deadline for the partner-compensation change is inconsistent ('before the January 31 submission' vs 'by early January') and Executive Committee approval is missing from the timeline.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits the brief's point that the accounting system cannot track trust-held flat fees, a risk if ethics counsel rejects the phased-billing approach and a system change is needed in under three months.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "It is unclear what triggers Phase 1 completion when a case settles before discovery ends.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q25": {
+  "level": "R2",
+  "record": "match_main/R2/E5-21__r1.json",
+  "matcher": [
+   {
+    "finding": "The draft places Carver's offer being $70,000 below the requested amount under risks, where it reads as an argument against the request, and never resolves it; the gap from the current grant is only $50,000.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $38,000 'directly measured return' compares festival weekend 2026 with the same weekend in 2025, so it measures either year-on-year growth or is confounded by other differences, not the festival's effect.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft omits the brief's point that police overtime and sanitation costs fall on police and public works budgets that are being held flat, which links the festival to the flat-budget instruction.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft omits the brief's $34M general fund figure, leaving council without a sense of scale for the $120K increase or the $557K total.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft omits the organisers' position that an earlier 10 p.m. finish would make headliners harder to book, so it does not acknowledge the conflict between the noise condition and the $35,000 for artist fees.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft overstates the relocation consequence, since Carver is a neighbouring town and some visitors would likely still stay and spend in Ellery.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that $350,000 matches Carver's offer is inaccurate because Carver also offers a larger site.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The date condition's 'move the dates or confirm security staffing' alternative lets organisers keep the clashing weekend, and staffing does nothing about hotels selling out, which undercuts the lodging return the draft relies on.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Several conditions lack mechanics: only the $85,000 has a release trigger, it is unclear what happens to the rest of the grant if the date condition fails, and the reporting condition has no consequence attached.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The March 2027 deadline falls after the January vote, and the draft does not say what happens if it is missed.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft does not examine spending composition; if the $109/day includes ticket purchases, much of that money flows to organisers and out-of-town artists rather than into Ellery's economy.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft does not state the potential conflict of interest in the Tourism Office arguing for the increase, which a single disclosure line would address.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The document is about 580 words, over the 450\u2013550 word target.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft omits the brief's 8-mile distance to the university, which explains why the date clash matters.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim 'high for a town of Ellery's size' is unsourced and needs a source or benchmark range.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The draft does not reconcile the $350K alternative with the $420K recommendation by explaining what the extra $70K buys.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q26": {
+  "level": "R0",
+  "record": "match_main/R0/E5-11__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo never quantifies the economics of the recommended hybrid option, even though under the commission cap each customer migrated from the app to direct ordering loses about $2.80 per order, so it needs a per-order comparison showing the delivery fee and direct price required to break even and to justify the $18k software and $20k marketing spend.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that the order 'barely covers' costs is wrong, because $33.04 \u2212 $24.70 \u2212 $8.50 = \u2212$0.16 before card fees, meaning the order actually loses money.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Card fees are applied inconsistently: they are mentioned in the markup bullet but ignored in the $4.80 direct contribution figure, and including them at about 3% cuts direct contribution to about $3.70 and the 50% retention case to about $34k.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $460k and $370k capped-commission figures are full-year run rates even though the cap starts March 1 and covers only about 10 months of 2027, so they should be labeled as run rates or replaced with a blended 2027 figure (about $415k).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo uses 2025 data without explaining why 2026 year-to-date figures were not used, even though it is written in November 2026.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "'The consultants' range' is referenced without ever introducing who the consultants are or what range they gave.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Courier congestion first appears in the action list (Action 3) without any earlier discussion in the memo.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The phrase 'before counting the new customers we would lose' could read as double-counting, since the retention figures already remove lost orders, so it should be clarified to mean future customer acquisition.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q27": {
+  "level": "R1",
+  "record": "match_main/R1/E5-03__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo describes the Business fence inconsistently: the Recommendation says Business accounts cannot switch to Team for six months, while Launch Condition 1 only says not to present Team at Business renewal, and the memo should pick one policy and stop claiming 'most' of the $1.3M loss is avoided if it chooses the softer version.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The fence covers only existing accounts and ignores cannibalization from new mid-size prospects who would buy Team at $12 instead of Business at $20, which is missing from both the impact table and the sales-alignment plan.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that the 9% of regulated-industry accounts are 'naturally fenced' because they need SSO and audit logs is not supported by the brief, so it should be labeled as an assumption, and the memo does not explain its relevance during the six-month fence versus after it lifts.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The support-cost target is inconsistent ('well below $18' in the Recommendation vs. 'at or below $8' in Condition 2) and its derivation is not explained.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "Applying Support's $18 small-account chat estimate to former Business accounts averaging 12 users likely understates their support cost.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Building on the new billing platform while it is still being migrated (February\u2013March) is an unacknowledged dependency risk that could push the April 13 date, and Engineering should confirm by a specific date.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The draft is about 700 words, exceeding the brief's 450\u2013600 word limit.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The self-serve concentration point is not quantified, even though the figures show self-serve would rise to roughly 40% of total ARR.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not acknowledge that the pilot's 23% figure from 200 accounts carries a margin of error of about \u00b16 points, which would support the 'measure before deciding' argument.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The waitlist price lock does not specify the locked price or its duration, and an open-ended lock creates a future liability.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q28": {
+  "level": "R2",
+  "record": "match_main/R2/E5-28__r0.json",
+  "matcher": [
+   {
+    "finding": "The 33% 'new customer' segment is merely a residual yet is credited at full margin, and since it drives all positive contribution, a lower true-new share (e.g., half) would cut blended contribution to about $0.60 per order.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo assumes all baskets are $96 with no support, even though delivery and in-store switchers may spend differently than before.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Delivery-switcher gains vanish on baskets below about $69, so smaller switched orders lose money, which bears directly on the minimum-order recommendation.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The sensitivity test covers only volume and omits scenarios for a lower new-customer share, smaller baskets, and higher per-order picking cost at low-volume stores with partly fixed staffing.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo omits the base-case payback period (about 1.1 years before substitution and marketing costs), which would give the COO the range of outcomes.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Three months of pilot data may overstate demand due to launch novelty, and no ramp-up is modeled for new stores.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Substitution costs (refunds, complaint handling, lost customers) are named but not quantified.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "It is unclear whether the $6.20 picking cost reflects the union clerk rate, and if not, every contribution figure is overstated.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not explain that the $15.7M in new sales is already net of lost impulse purchases, which risks confusion.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $35 minimum order is not derived from the break-even points (about $22 for new orders, $69 for delivery switchers, never for in-store switchers), is untested, may reduce volume, and Marketing's case for free pickup is not rebutted.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The union engagement plan has no deadline and no contingency if talks delay Wave 1.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Permit filing dates are inconsistent, with the table saying January but Wave 3 saying 3\u20135 months from February.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Wave 3 schedule is tight, squeezing construction, hiring and training into roughly August to early October, and the interim pickup counter fallback is untested.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The May gate has no quantitative pass/fail criteria, and Wave 1 stores finishing in April will have only weeks of data by then.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Wave 1 may be unable to include urban stores, since they likely lack parking and need permits, which should be confirmed.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Holiday staffing is only partly addressed because picking demand will peak exactly when stores are busiest.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The budget lacks a per-store or per-wave breakdown and gives no dollar figure for the first tranche, so the COO cannot judge whether $2.6M is sufficient.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The analysis gives no credit for the defensive value of keeping customers from defecting to competitors that offer pickup.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Shifting about 29% of pickup orders away from the delivery partner could trigger contract volume minimums or penalties, so the contract should be checked before approval.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q29": {
+  "level": "R2",
+  "record": "match_main/R2/E5-20__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo weighs the costs of a 2027 start but never prices the delay to early 2028, which forgoes roughly $0.3\u20131M in savings plus a year of peaker use.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not consider a phased middle option of enrolling the 86% of homes with capable meters first and adding the rest as their meters are replaced.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not address the risk that the program start slips if the meter replacement schedule slips.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The benefit estimate counts only capacity savings and omits energy shifting and peaker fuel savings, so the figures are likely a floor but are presented as the full benefit.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The capacity-charge assumption ignores timing issues such as prior-year coincident peaks, ratchets, or contract terms, which could delay savings and undermine the claim that setup costs are recovered within the first year.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Recommendation 2 exempts medical baseline customers while Recommendation 3 asks staff to analyse their bill impacts, making the exemption premature or in need of separate justification.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that exempting medical baseline customers costs little in peak reduction is asserted rather than shown.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The stakeholder paragraph overclaims that the senior council's concern is addressed, when seniors are only studied and automatic enrollment, which the council opposes, is still recommended.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo risks implying harm to seniors that it has not shown, since being home in the afternoon does not necessarily mean high peak use.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 2\u00d7/0.8\u00d7 rate design is revenue-neutral only if peak use is about 16.7% of residential consumption, and since the actual peak share is likely higher, the rate may over-collect before any load shifting, so staff should confirm revenue neutrality.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that the $340,000 setup cost is recovered within a year omits shadow-billing vendor work, customer outreach and notices, and opt-out handling costs.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not translate the comparator utility's 18% bill-increase share into Granger terms, about 11,000 households facing increases above $5 a month.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Low-income customers and renters are not considered separately beyond the battery point.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo does not consider that existing rooftop-solar customers without batteries may be harmed because their generation falls off-peak while their consumption falls in the peak window.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not acknowledge whether Granger's opt-out rate, climate, housing stock, and price differential are comparable to the other utility's, which affects whether the 5% figure transfers.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "It is ambiguous whether shadow bills for the first year are provided before or after enrollment, even though pre-enrollment shadow bills matter more for informed opt-out decisions.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not state whether staff must redraft the proposal before the February Board vote.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not explain why default enrollment is preferred over expanding opt-in enrollment.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q30": {
+  "level": "R0",
+  "record": "match_main/R0/E5-18__r1.json",
+  "matcher": [
+   {
+    "finding": "The baseline of ~436 assumes 11 months of remaining enrollment, but from 13 Nov only about 10.5 months remain, giving roughly 425 and a gap of about 55, so the memo should state its data cut-off date.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The 45\u201350 participant range relies on a speculative ~5 from low-enrolling sites; without them the package yields about 45 against a gap of 44, effectively zero margin, and no downside case is shown.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Option B diversity comparison is one-sided because it cites the 31% US Black/Hispanic requirement for B but omits that the recommended package also requires about 26%, both far above the current 11%.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The 1 March fallback trigger is too late, since new sites could not activate until around August and coordinator funding would recover only about 5\u20138 participants, so an earlier checkpoint, a clearer metric definition, and a quantified recovery estimate are needed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The choice of 8 new sites instead of 10 is unexplained and appears driven by an implied $900k budget, sacrificing about 6 participants when the margin is about 1.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Option B's cost excludes CRO fees, making the cost-per-participant comparison incomplete.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The CRO's claimed 1.6 participants per site per month is unverified and nearly double the current US rate, yet is not treated skeptically.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Chicago activation date is not stated, so the ~3 participant estimate cannot be checked.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The ~1 participant per coordinator per month assumption is the largest single lever and is unconfirmed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 20% diversity commitment is not defined in terms of which groups it covers or whether it comes from the FDA diversity action plan.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The ~10% non-US figure for Option B should be ~9% (43 \u00f7 480).",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not check whether the low-enrolling sites it would close enroll diverse patients, so closing them could lower diversity.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q31": {
+  "level": "R1",
+  "record": "match_main/R1/E5-12__r1.json",
+  "matcher": [
+   {
+    "finding": "The memo overstates the union constraint by saying headcount can only fall through attrition, when that restriction applies only until the contract expires on December 31, 2028, about a year after the assumed go-live.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The timing is internally inconsistent: the late-2027 go-live assumes January approval, but the recommended mid-2027 revised submission would push go-live into 2028 and leave only about 18 months in Joliet before the lease ends.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not confirm that mid-2027 is realistic for knowing the lease outcome, so the recommendation to wait until the lease outcome is clearer may conflict with the mid-2027 next-steps timeline.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The 160 picks/hour figure is treated as the realistic case even though it is still Kinetiq's unverified number and the apparel site's lines-per-order profile is unknown.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The competition bullet does not explain why competitors' adoption matters, such as the risk to service speed and accuracy or an action to take in response.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo is too long at roughly 650\u2013700 words against a 450\u2013600 word brief.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo never states the vendor's claim of payback in under a year, which would sharpen the contrast with the memo's 4\u20135 year estimate.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The closing condition applies a payback hurdle to a lease option without noting that payback works differently when there is no upfront capital.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q32": {
+  "level": "R2",
+  "record": "match_main/R2/E5-22__r0.json",
+  "matcher": [
+   {
+    "finding": "The plan's cohort doesn't match its target metric: the 533 under-vaccinated children are 2025-26 kindergarteners now in first grade, while the plan's actions target 2026-27 and 2027 kindergarteners, for whom the document gives no data.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal's promise of 'no targeting of individual families' is contradicted by contract nurses doing family follow-up at the 11 low-rate schools, eight of which are private/charter schools, and by reminder/recall contacting overdue families.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The commissioner section says extra money at the eight private/charter schools 'buys little,' yet the plan sends contract nurses to all 11 schools, which is internally inconsistent.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "It is unclear whether county nurses can access private or charter school records, since this may require school consent or data-sharing agreements that the coalition gives those schools reason to refuse.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal omits the brief's ratio of 19 nurses for 74 elementary schools, which is the strongest justification for the $160,000 contract nurse budget.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Saying exemptions are 'concentrated in eight schools' overstates what is known, since the 11 schools hold only about 309 under-vaccinated children including rural non-exempt ones, so many exemptions must be elsewhere.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The school-based clinic window is shorter than the stated February-May because the school year likely ends in early June, which also means the van would have only about 2-3 weeks of school-day use.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The argument that van staffing after June 30 would be unfunded is weak because it applies equally to every component and should be dropped.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The document ends with a formatting artifact: a stray '---' followed by an empty '##' heading.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "About $350,000 of the budget rests on unverified figures, because grant allowability, cost estimates without quotes, and rural cost per child are not confirmed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The plan treats all 314 remaining children as exemptions, which is a weak assumption.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Slow nurse hiring would leave the nurse budget underspent with no named fallback for the reserve, such as additional reminder waves or ride vouchers.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q33": {
+  "level": "R1",
+  "record": "match_main/R1/E5-24__r0.json",
+  "matcher": [
+   {
+    "finding": "The claim of a ~$320k run-rate 'after twelve months' is mistimed: at month 12 the last three monthly cohorts are still on the $1 offer, so the run-rate is about $240k, and $320k is reached only around month 15.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $500k lower bound of the net 2027 revenue fall has no stated basis; it implicitly assumes a ~17% ad loss instead of 24%, and the memo never says so.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo says 'most' new subscribers use the $1 offer but applies the 60% cancellation rate to all of them, an unstated conservative assumption that slightly understates the gain.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo projects 2025 ad revenue ($3.6m) onto 2027 without saying it is using 2025 as the baseline.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Pell grant risk argument is weak because the grant-protected coverage stays free regardless of the limit, so the memo doesn't explain how a 3-article limit makes it harder to keep that coverage outside the paywall.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The election-year argument is muddled because saying the traffic is 'mostly free under the grant terms' seems to undercut the point, and the actual logic is never spelled out.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo doesn't address the advertising director, one of the three stakeholders named in the brief.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo omits useful context from the brief, namely the current subscriber base and subscription revenue, which would show the gain (~12% rise in subscription revenue) against the risk (~24% of ad revenue).",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo doesn't note that the Q1 tests will cover only 10% of visitors, which would show that the Pell and search risks stay contained during testing.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "At roughly 570\u2013600 words, the memo exceeds the 450\u2013550 word target.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q34": {
+  "level": "R0",
+  "record": "match_main/R0/E5-10__r0.json",
+  "matcher": [
+   {
+    "finding": "The access argument relies on the 22,400 blocked-cards figure, but staff don't know how many owe only fines, so the policy may unblock far fewer people than claimed.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The new 30-day lost-item billing is a new penalty presented as an implementation detail and could re-block the same low-income and under-18 patrons, possibly faster than fines do now.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The proposal doesn't say whether lost-item balances still trigger the $10 block, whether that threshold changes, whether they go to the collection agency, or how peers like Lakeshore handle this.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The claim that materials are 'protected' hides that the $109,000 transfer requires cutting other operating spending, and the Friends' concern is called 'addressed' even though the offsets haven't been identified.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $64,000 staff-time figure is used inconsistently: it is netted against fine revenue in the 'Why' section but correctly described as not a cash saving in the Budget section.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal never explains the ordinance that dedicates fine revenue to materials.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The $71,000 in lost and damaged charges appears without introduction and may not be stable, since 30-day billing and cancellations on return make the net amount uncertain.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The timeline has no target date for council action between April 1 and July 1, and April 1 may be too late for the city's budget cycle.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The one-time write-off of existing fine balances is not quantified.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The collection agency section doesn't address costs of keeping the contract until September 30, such as minimum fees, or its renewal terms.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The demographic statistics lack baselines: the zip-code and under-18 shares need comparison to all cardholders, and the 22,400 should be given as a share of total cardholders.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The evidence relies on a single self-reported comparison (Lakeshore) when published data from other fine-free systems is available.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The union claim about hostile interactions is anecdotal and comes from an interested party, with no incident logs or desk data to support it.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The Risks section is thin and omits risks such as declining on-time returns, lost-item re-blocking, visible service cuts, and continued Friends opposition.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal lacks an outcome-measurement plan, such as a 12-month review of return rates, blocked cards, and lost-item volume.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The document doesn't say whether the '2025' figures are calendar or fiscal year or whether partial 2026 data is available.",
+    "valid": true,
+    "anticipated": true
+   }
+  ]
+ },
+ "Q35": {
+  "level": "R0",
+  "record": "match_main/R0/E5-30__r1.json",
+  "matcher": [
+   {
+    "finding": "The proposal provides no cost estimate for the recommended hybrid strategy, even though that figure drives the funding gap, bill impact, and SRF application.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The '$28 million more' comparison is overstated because it assumes the priority-first option replaces every line standalone, when it would likely still bundle some work with main replacements.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "The financing assumes the full $40M SRF allocation goes to disadvantaged tracts, but Phase 2 realistically costs about $30M, leaving roughly $10M unaccounted for.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The $19.6M principal forgiveness is stated as 'up to' without saying what share is realistically expected, despite its weight in the bill calculation.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The consent shortfall of about 3,000 lines threatens compliance, and all proposed remedies depend on outreach or City Council action with no fallback if the ordinance isn't amended or access is refused.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The 25% consent-shortfall estimate rests on an unstated assumption that about 22% of lead-line properties are rentals, and a higher rental share would make the shortfall much worse.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Phase 3 lines on streets the main schedule won't reach by 2034 will need costlier standalone replacement, and their number isn't estimated, which could push the total noticeably toward $139M.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The proposal doesn't show that staff and contractors can sustain 1,200 lines per year, especially during the 2027\u20132032 Phase 1 and 2 overlap.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "Phases 1 and 2 are labeled as starting in 2027 although the program begins November 1, 2027, so 2027 effectively covers only two months.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Inspection of unknown lines runs through 2029 while Phase 2 runs 2027\u20132032, so unknowns in disadvantaged tracts should be inspected first to fix Phase 2 scope and the SRF draw early.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The proposal doesn't confirm that the $111M and $139M totals include the private-side portion of each line, which owners won't pay for.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Emergency partial replacements can temporarily raise lead levels, and the plan lacks a commitment to complete the private side within a set period once consent is obtained.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The schools cost estimate of about $11,600 per site assumes residential-sized lines, though commercial or institutional lines are often larger and more expensive.",
+    "valid": true,
+    "anticipated": false
+   }
+  ]
+ },
+ "Q36": {
+  "level": "R1",
+  "record": "match_main/R1/E5-11__r0.json",
+  "matcher": [
+   {
+    "finding": "The memo claims a $33 direct order 'barely covers' costs, but because food, packaging and labor are a fixed dollar cost of about $24.70 that doesn't fall with the menu price, the order actually loses about $0.16 before card fees.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo models only 50% and 60% retention even though the consultants' range is 40\u201360%, omitting the 40% case that nets only about $38,000 and leaves the business about $146,000 worse off, which makes the exit look better than the evidence supports.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "Stray '---' and '##' formatting artifacts were left at the end of the memo.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The 15% markup figure is not from the brief and should be labeled as an estimate or assumption.",
+    "valid": false,
+    "anticipated": true
+   },
+   {
+    "finding": "The memo assumes the direct-order ticket falls from $38 to $33, which conflicts with the brief's statement that direct orders tend to be larger, and it does not address this.",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The claim that the apps are 'our largest source of new customers' is unsupported because the brief provides no comparison with other channels.",
+    "valid": true,
+    "anticipated": false
+   },
+   {
+    "finding": "The memo does not directly respond to the owners' framing of commissions as 'our single biggest controllable cost.'",
+    "valid": true,
+    "anticipated": true
+   },
+   {
+    "finding": "The exit scenario is compared against 2025 commission levels (27%) rather than the 2027 capped baseline under which an exit would actually occur.",
+    "valid": false,
+    "anticipated": false
+   },
+   {
+    "finding": "Pausing app ordering at peak hours costs volume and is not framed as a last resort secondary to the pickup shelf and staggered ready times.",
+    "valid": false,
+    "anticipated": false
+   }
+  ]
+ }
+}

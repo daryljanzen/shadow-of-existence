@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-03",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Cannibalisation is significant: if 23% of Business accounts downgrade, ARR falls by about $1.32M (0.23 x $14.4M x 8/20), which offsets much of the new revenue from Free teams (about $2.6M ARR if one-third of 34% of 40,000 teams convert at 4 users), and live chat costs (about $0.98M a year for roughly 4,500 accounts) reduce it further, leaving a thin margin.\n2. The schedule cannot meet Q1: 10 weeks from November 16, plus the 2.5-week holiday freeze, puts completion around February 11, after the February 1 billing freeze starts, so nothing can ship until April unless the scope changes, and that clashes with the paid February 10 campaign.\n3. The stated survey intent overstates demand. The 34% figure needs to be adjusted using the company's own one-third conversion factor.\n4. Sales has a real incentive problem: commissions reward Business bookings, so the team may resist or undermine Team, and its objection that mid-size accounts will downgrade is supported by the pilot.\n\nFINDINGS:\n- The impact table's −$1.3M downgrade line models Team being offered at Business renewal, which Condition 1 forbids for six months, and the memo never states the fenced net impact.\n- The model ignores new-customer cannibalization: new 6–15-user prospects who would have bought Business at $20 can still buy Team, as can Free teams growing past 5 users.\n- The compliance 'natural fence' argument is circular because the random pilot sample already included compliance-sensitive accounts in the 23%, and the point is redundant while the six-month fence is active.\n- The $18 chat cost is quoted for small accounts but applied to 12-user downgraders.\n- The $8 chat cost target in Condition 2 is unexplained and unsupported.\n- The Sales condition to hold quotas harmless for downgrades largely overlaps with the fence, fails to address new-logo deals lost to Team, and leaves the compensation cost unestimated.\n- The platform sequencing is ambiguous: the memo does not say whether the 10-week build happens on the old system (requiring rework) or the new platform (which may not exist by Nov 16), and it has no fallback if the migration slips past March 31.\n- The early waitlist announcement carries unpriced risk of stalling Business purchases and renewals.\n- The waitlist price-lock commitment has no stated term or cost.\n- There is no 2027 ARR estimate despite an April start and adoption ramp, so actual 2027 revenue from Team may be well under $1M.\n- The memo does not explain how the remaining ~$2.3M+ of the 25% goal will be closed.\n- The memo does not acknowledge sample fragility: the n=200 pilot gives a wide confidence interval on 23%, the n=400 survey is assumed representative of all 40,000 Free teams, and downgraders are assumed to average 12 users.\n- Alternatives such as a $15 price, a seat cap on Team as a structural fence, or chat as a paid add-on are not evaluated.\n- The effect on self-serve share is described only qualitatively and not quantified.\n- There are no go/no-go criteria for April 13 if a condition is not met, with no fallback for Conditions 1 and 3.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x2/E5-03__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:02:50.387305+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": false, \"3\": false, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2476,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 719,
+  "output_tokens_details": {
+   "thinking_tokens": 691
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2476,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 719,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2476,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2476
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.034196,
+ "duration_ms": 11828,
+ "wall_s": 12.89,
+ "attempt": 0
+}

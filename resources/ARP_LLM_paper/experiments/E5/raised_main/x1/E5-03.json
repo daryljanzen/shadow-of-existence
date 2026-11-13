@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-03",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. The Free conversion estimate is fragile.** It rests on 400 survey responses and a historical one-third haircut. It also assumes all 40,000 teams behave like respondents and average 4 paying users\n2. The pilot sample is small.** With 200 accounts, the 23% downgrade rate has a 95% interval of roughly 17–29%. The pilot also measured an active offer at renewal, and the plan applies it to all 5,000 accounts as if every one renews within the year\n3. The size of downgrading accounts is assumed.** Each downgrader is assumed to average 12 users. If downgraders are concentrated in the 6–15 user band, as Sales fears, the loss could differ meaningfully either way\n4. The fence may not hold.** Team will be on a public pricing page. Business customers will ask for it, and refusing them could cause churn or resentment. Six months only defers the problem\n5. The $18 chat cost is misapplied.** It is quoted for small accounts, yet it is applied to 12-user downgraders. The $8 target is not supported by any analysis\n6. Free-to-Business cannibalization is ignored.** Free teams that outgrow 5 users would previously have gone to Business at $20. The plan also does not model Team churn or expansion\n7. April 13 depends on the migration.** The date assumes the billing migration finishes on time, and the plan has no fallback if it slips\n8. The announcement may stall purchases.** Announcing two months before availability could lead prospects and renewing customers to delay Business purchases. The price-lock promise also carries cost that is not quantified\n9. There is no 2027 forecast.** The plan gives annualized figures only, with no ramp-adjusted estimate for 2027 and no plan for closing the rest of the 25% gap\n10. Alternatives are not evaluated.** The plan does not consider other price points (such as $15), user caps on Team, or chat as a paid add-on\n11. Costs are not estimated.** The cost of the sales compensation change is missing, and so is the projected effect on self-serve share\n\nFINDINGS:\n- Announcing Team publicly on Feb 10, two months before launch, exposes its price to Business customers, including those renewing between February and April, and the memo doesn't say how Sales will handle 'why can't I switch?' requests or whether the fence will be stated openly.\n- The claim that the Business fence avoids most of the $1.3M downgrade loss is unsupported, because the pilot measured downgrades when Team was offered rather than passive downgrades.\n- The memo ignores the risks that fenced Business customers churn to competitors or cancel and re-sign up as new customers to get around the fence.\n- The memo never considers a Team seat cap of about 10 users, which the brief's figure that 61% of Business accounts have 6–15 users supports and which would protect Business permanently and answer Sales' objection.\n- The downgrade loss estimate assumes downgraders average 12 users, but smaller accounts are the most likely to downgrade, so the $1.3M figure is likely overstated and should be labeled conservative.\n- The $8 chat cost target has no stated rationale, and the recommendation says 'well below $18' while Condition 2 says '$8'.\n- The memo shows Team covers at most about a third of the 25% growth goal but doesn't say what covers the rest or that the question is out of scope.\n- The April 13 launch date is presented as firm even though it depends on Engineering confirming the 10-week rebuild estimate, and the memo doesn't make the date conditional or say what happens if the estimate grows.\n- At roughly 640–660 words, the memo exceeds the brief's 450–600 word limit.\n- The 'naturally fenced' compliance-sensitive accounts were probably in the random pilot sample, so excluding them implies a slightly higher downgrade rate among the remaining accounts, not a lower one.\n- The table puts the live chat cost in a column with ARR figures, mixing a cost into revenue impact.\n- The memo doesn't confirm that offering waitlist price locks during the Feb 1–Mar 31 freeze is allowed and isn't a 'price change' under the migration rules.\n- The memo describes the Business fence inconsistently: the Recommendation says Business accounts cannot switch to Team for six months, while Launch Condition 1 only says not to present Team at Business renewal, and the memo should pick one policy and stop claiming 'most' of the $1.3M loss is avoided if it chooses the softer version.\n- The fence covers only existing accounts and ignores cannibalization from new mid-size prospects who would buy Team at $12 instead of Business at $20, which is missing from both the impact table and the sales-alignment plan.\n- The claim that the 9% of regulated-industry accounts are 'naturally fenced' because they need SSO and audit logs is not supported by the brief, so it should be labeled as an assumption, and the memo does not explain its relevance during the six-month fence versus after it lifts.\n- The support-cost target is inconsistent ('well below $18' in the Recommendation vs. 'at or below $8' in Condition 2) and its derivation is not explained.\n- Applying Support's $18 small-account chat estimate to former Business accounts averaging 12 users likely understates their support cost.\n- Building on the new billing platform while it is still being migrated (February–March) is an unacknowledged dependency risk that could push the April 13 date, and Engineering should confirm by a specific date.\n- The draft is about 700 words, exceeding the brief's 450–600 word limit.\n- The self-serve concentration point is not quantified, even though the figures show self-serve would rise to roughly 40% of total ARR.\n- The memo does not acknowledge that the pilot's 23% figure from 200 accounts carries a margin of error of about ±6 points, which would support the 'measure before deciding' argument.\n- The waitlist price lock does not specify the locked price or its duration, and an open-ended lock creates a future liability.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x1/E5-03.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:02:40.331095+00:00",
+ "response": "{\"raised\": {\"1\": false, \"2\": true, \"3\": true, \"4\": true, \"5\": true, \"6\": true, \"7\": true, \"8\": true, \"9\": true, \"10\": true, \"11\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3370,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 579,
+  "output_tokens_details": {
+   "thinking_tokens": 515
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3370,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 579,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3370,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3370
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038548,
+ "duration_ms": 9097,
+ "wall_s": 10.05,
+ "attempt": 0
+}

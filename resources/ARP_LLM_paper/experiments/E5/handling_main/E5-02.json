@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-02",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nIn FY2026 St. Brendan spent $9.6 million on agency nurses for its four medical-surgical units. This covered the equivalent of 48 full-time agency RNs, at an average cost of $200,000 per agency FTE per year. A permanently employed med-surg RN costs $128,000 a year fully loaded ($98,000 salary plus $30,000 in benefits and payroll taxes). Each new hire receives a $15,000 sign-on bonus. New hires go through 12 weeks of orientation and do not count toward staffing ratios during that time, so agency coverage has to continue for each position until the new hire finishes orientation. HR can run at most one orientation cohort of 6 RNs per month, because of preceptor and classroom capacity. Recent applicant pools have been about 60% new graduates and 40% experienced nurses. First-year turnover at St. Brendan is 27% for new-graduate RNs and 14% for experienced RNs. Each departure in the first year means the sign-on bonus and orientation cost are lost (sign-on bonuses are repayable only if the nurse leaves within 6 months). A state law passed in September takes effect on July 1, 2027. It lowers the maximum med-surg nurse-to-patient ratio from 1:6 to 1:5. Nursing administration estimates the new ratio needs about 22 more RN FTEs on the four units, on top of replacing the agency positions. Hospitals that are out of compliance face fines of up to $25,000 per day. The CFO's FY2027 target is a 5% cut in total labor cost. The Chief Nursing Officer's stated goal is zero ratio violations and lower dependence on agency staff. The nurses' union supports permanent hiring. It opposes any plan that relies on mandatory overtime, which the contract caps at 8 hours per nurse per pay period, and it has said it will resist any expansion of the float pool. Agency contracts can be cancelled with 30 days' notice. The current agency vendor has offered a 6% rate reduction in return for a 12-month commitment for at least 30 FTEs. Hiring can begin in January 2027 if the budget is approved.\n\nKEY:\n1. First-year savings are much smaller than the simple comparison suggests. At steady state, 48 x ($200k - $128k) = $3.456M a year, but each hire carries a $15k bonus plus about $29.5k of orientation time (12/52 x $128k) while agency coverage continues, and the onboarding rate limits how quickly agency spend falls. GOOD HANDLING: Separates steady-state savings from first-year net, includes the one-time and overlap costs, and does not present $3.456M as FY2027 savings.\n2. The ratio law and the onboarding limit collide. Replacing 48 agency FTEs and adding 22 for the law means about 70 hires, but at 6 per month only about 36 can be onboarded between January and July 2027 (and fewer will have finished orientation), so the hospital cannot meet the July deadline with permanent hires alone. GOOD HANDLING: Calculates the hiring capacity, recognises that agency staff will still be needed to cover the law (which may favour taking the vendor's 12-month offer), and puts the hires in a sensible order.\n3. The CFO's 5% labor cost cut and the CNO's zero-violation goal pull in opposite directions, because the ratio law adds roughly 22 FTEs (about $2.8M a year if permanent). GOOD HANDLING: States the conflict openly and asks the CFO for an explicit trade-off or a revised target, rather than claiming both goals are met.\n4. Turnover among new graduates (27%) and the 60% new-graduate share of applicants erode savings and mean some hires will need to be replaced. GOOD HANDLING: Builds an attrition or replacement assumption into the numbers and proposes retention measures or a preference for experienced hires.\n\nDOCUMENT:\n# MEMORANDUM\n\n**To:** Chief Financial Officer\n**From:** Nursing Finance / Med-Surg Workforce Planning\n**Date:** November 13, 2026\n**Re:** FY2027 budget request: Replace med-surg agency RNs with permanent hires\n\n**Decision requested:** Approve funding for up to 72 permanent med-surg RN hires in FY2027, at six per month from January.\n\n**Assumption:** FY2027 figures below assume a January–December fiscal year.\n\n## Why act now\n\nOn July 1, 2027, the state's 1:5 ratio law raises our med-surg requirement from 48 to about 70 RN FTEs. Non-compliance carries fines of up to $25,000 per day.\n\nIf we cover that requirement with agency staff only, FY2027 med-surg agency spend rises from $9.6M to about $11.8M. At full-year run rate it would reach $14.0M. Either way, med-surg labor cost will rise in FY2027. A 5% cut in this area is not achievable this year, and the 5% target will need to come from elsewhere or be measured net of the mandate.\n\n## Unit economics\n\n| | Agency | Permanent |\n|---|---|---|\n| Annual cost per FTE | $200,000 | $128,000 |\n| One-time cost per hire | none | ~$44,500 ($15,000 bonus + ~$29,500 salary during 12 weeks of non-productive orientation) |\n\n- Each permanent position saves $72,000 per year once the hire is on the floor.\n- The one-time cost is recovered about seven months after orientation ends.\n- Blended first-year turnover is about 22% (60% new graduates at 27%, 40% experienced nurses at 14%). Each early departure forfeits roughly $44,500 and returns the position to agency coverage. The economics still favor permanent hiring.\n\n## FY2027 ramp\n\nHR can orient at most six RNs per month, so the transition will take more than a year:\n\n| Month | Permanent RNs on the floor (cumulative) | Agency FTEs needed |\n|---|---|---|\n| April | 6 | 42 |\n| July 1 | 24 | 46 (against the new 70 requirement) |\n| December | 54 | 16 |\n\nThe July agency need of 46 is below today's 48. **Compliance on July 1 therefore depends on agency staff we already use, not on a surge.**\n\nEstimated FY2027 cost under this plan:\n\n| Item | Cost |\n|---|---|\n| Permanent salaries and benefits | $5.0M |\n| Sign-on bonuses | $1.1M |\n| Agency, at the discounted rate | ~$7.2M |\n| **Total** | **~$13.3M** |\n\nThe agency-only alternative costs $11.1–11.8M. The plan therefore costs about **$1.5–2.2M more in FY2027**. That is the price of the transition.\n\n## FY2028 onward\n\nAnnual cost at steady state:\n\n| Item | Cost |\n|---|---|\n| 70 permanent RNs | $9.0M |\n| Turnover replacement hiring | ~$0.7M |\n| Agency to cover vacancies | ~$1.2M |\n| **Total** | **~$10.9M** |\n\nThe agency-only alternative costs $13.2–14.0M per year. The plan saves roughly **$2.3–3.1M per year** and recovers the FY2027 investment during FY2028.\n\n## Agency vendor offer\n\n**Recommendation: accept the 6% discount for 30 FTEs over 12 months.**\n\n- We need at least 30 agency FTEs through September.\n- The commitment costs us about $0.38M for unused FTEs in Q4.\n- If the discount applies to all agency volume, it saves about $0.44M, a small net gain.\n- More importantly, it secures supply as a hedge against hiring shortfalls.\n- Before signing, we will try to negotiate a step-down in Q4.\n\n## Risk controls\n\n- **Hiring:** Give priority to experienced applicants where the pool allows.\n- **Bonus terms:** Extend the sign-on bonus clawback from 6 to 12 months for new contracts, subject to HR and legal review.\n- **Union:** The plan uses no mandatory overtime and no float-pool expansion, consistent with the union's position.\n- **Monitoring:** Track cohort fill rates and turnover monthly. If two consecutive cohorts fill below 4 RNs, we will report back and extend agency coverage before July.\n\n##",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-02.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:02:06.274677+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"HANDLES\", \"3\": \"HANDLES\", \"4\": \"HANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4204,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 373,
+  "output_tokens_details": {
+   "thinking_tokens": 323
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4204,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 373,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4204,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4204
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.041100000000000005,
+ "duration_ms": 8462,
+ "wall_s": 9.59,
+ "attempt": 0
+}
