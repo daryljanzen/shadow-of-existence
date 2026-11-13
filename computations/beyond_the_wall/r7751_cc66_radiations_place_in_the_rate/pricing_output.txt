@@ -1,0 +1,48 @@
+`r7751+cc66` PRICING THE LEAF-RATE READING AGAINST THE BAO, AND THE HALF-PER-CENT CANDIDATES.
+
+⛭ Registered in `PREDICTION.md` at `r7751+cc66.0`, pushed before this file existed. `R1`'s and `R2`'s
+licences were set there and are not moved.
+
+⛭ ** THE RATE LAWS ARE 60's, READ BY PATH AND NOT REIMPLEMENTED ** (`r7445`'s practice, `r7612`'s
+precedent): `r7580/lightpath.py` carries `H_stack`, `H_leaf` and the background the prior `P15` receipt
+fits. If it has moved, this refuses rather than substituting a background of my own.
+
+====================================================================================================
+
+  background read from 60's script: H0 68.6  Om 0.2973  Om_r 8.8186e-05  z* 1089.9
+
+  ⛭ R1 -- Delta = D_M(leaf)/D_M(stack) - 1, at the BAO redshifts and at z*
+            z    D_M stack     D_M leaf        Delta
+        0.295     1200.699     1200.619    -0.00663 %
+        0.510     1962.335     1962.171    -0.00839 %
+        0.706     2577.808     2577.550    -0.01001 %
+        0.930     3198.802     3198.424    -0.01181 %
+        1.317     4098.892     4098.289    -0.01473 %
+        2.330     5751.650     5750.433    -0.02115 %
+           z*    14011.456    13941.629    -0.49836 %
+
+      worst |Delta| over the BAO redshifts: 0.02115 %
+      |Delta| at z*:                        0.49836 %
+      ⇒ R1 ROW ONE: no split is needed. Putting EVERY cross-leaf accumulation on the leaf
+        rate leaves the BAO where it is and moves only the distance to last scattering.
+
+  ⛭ R2 -- sensitivity of D_M(z*) to each parameter the rate carries
+      base D_M(z*) on the stacking rate: 14011.456 Mpc
+      H0 (the rate amplitude)    dlnD_M/dln p =  -0.9990   needs  +0.498 % in p
+          ⌗ fixed BY the angle and the BAO together (link 8)
+      Om  (the epoch, x0^-3)     dlnD_M/dln p =  -0.4023   needs  +1.238 % in p
+          ⌗ x0 measured calibration-free, z_acc = x0 - 1
+
+====================================================================================================
+
+  ⛭ POST-REGISTRATION (the registration asked only for D_M(z*)): is any other lever LOCAL?
+     ⌗ Added because R1 showed the leaf rate moves z* by 0.5 per cent and the BAO by 0.02,
+       which raises a question the registration did not: whether the other levers do that too.
+      lever                        dlnD_M(z*)   dlnD_M(z=0.51)   dlnD_M(z=2.33)
+      the leaf rate (Om_r on)       -0.49836%        -0.00839%        -0.02115%
+      H0 (the rate amplitude)        -0.9990          -0.9990          -0.9990
+      Om (the epoch, x0^-3)          -0.4023          -0.1051          -0.2719
+
+      ⇒ the leaf rate is the only LOCAL lever: it moves the distance to last scattering
+        and leaves the BAO. The others are global rescalings and drag the BAO with them.
+====================================================================================================
