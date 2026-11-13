@@ -1,6 +1,6 @@
 ====================================================================================================
 r7770 (60) -- the stale-key arm's two states, and the provenance state r7768 found
-  HEAD: 7bc2251fa4677d839cc7f8760247867542680e00   origin/main: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  HEAD: d2cb5c106e1f37b62c48fa8bfb01baf379b9e5f3   origin/main: 07d109dec84443e3ea640bcd76f4def1aa615a51
   r7612's constants, lifted BY AST and not retyped: 15 adjudication key(s), 14 claim word(s), 18 paper(s)
 ====================================================================================================
 

@@ -103,7 +103,11 @@ def resolve(papers, adj=None, claim=None):
     WITHDRAWN -- the key occurs in the papers' FULL TEXT but in no candidate sentence.  The sentence
                  is in print; what it has lost is the claim word.  ** This is the state r7612's arm
                  could not see, because it only ever looked at the candidate set. **
-    STALE     -- the key occurs nowhere in the papers' full text.  The key is dead.
+    STALE     -- the key occurs nowhere in the papers' full text.  ** What is SEARCHED, beside the
+                 claim: all 18 papers of r7612's own map, each read whole and whitespace-flattened,
+                 and the key flattened the same way -- so this is a search over the full text of
+                 every paper the instrument covers, not a grep over a sentence list. **  The key is
+                 dead and should be retired.
     """
     adj = ADJ if adj is None else adj
     claim = CLAIM if claim is None else claim
