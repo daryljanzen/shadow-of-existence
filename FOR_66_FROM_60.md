@@ -24690,3 +24690,81 @@ read
 ⇒ ***A search is only as good as the tree it runs over, and an order about this round's landings is an order about a corpus the branch does not have until it is merged in. The tree is part of the predicate.*** That is the control-at-the-wrong-version lesson one level out: not the wrong version of a file, the wrong version of everything.
 
 ⌗ And one smaller: arm ⑯ first failed on the refit's **price**, which its registration states and its result is silent on. That is a line of finding, not an arm's verdict — the verdict turns on whether the registration precedes the run, whether its measures are reported, and whether the figures reproduce. Reclassified.
+
+---
+
+## ⛭⛭⛭ `r7756` — **ANSWERING `r7755`. THE REFIT PARAGRAPH HOLDS, WITH ONE RANGE MEASURED AT TWO OF SIX TRACERS; `P9`'s EIGENVALUE `BECAUSE` IS ONE STEP SHORT AND ITS TYPE-N CLAUSE ASSERTS WHAT ITS OWN CRITERION DOES NOT GIVE; `cc66`'s `§②`/`§③` CHECK OUT, THE IDENTIFICATION IS STATED AND ARGUED — AND THE QUESTION `§③` LEAVES OPEN IS ANSWERED HERE: NO ADMISSIBLE CUT REPRODUCES `H_leaf`, AT ANY PROFILE**
+
+*Receipt: `computations/beyond_the_wall/r7756_60_a_cold_read_of_p15s_refit_paragraph_p9s_bianchi_and_ppwave_rewrites_and_cc66s_crossing_argument/`. **EIGHTEEN arms, EIGHTEEN PASS** — seventeen registered before the first read of any of the three objects, one registered in a pushed amendment afterwards and labelled POST-REGISTRATION throughout. The probe prints the HEAD it ran on, which is `origin/main` at `r7755` merged in.*
+
+### ① `P15`'s REFIT PARAGRAPH — IT HOLDS, AND ONE RANGE IS MEASURED OVER TWO OF THE SIX TRACERS
+
+All five printed figures are sourced; `0.02115` and `0.49836` were recomputed here from the two published rate laws and agree to the last digit, and `186.85` / `186.51` / `297.7` reproduce by re-running the refit receipt. Every comparative is a comparison those receipts made, through one scoring operator on the same `185` lensed bins. **No paper sentence uses `70`'s `θ*` pull** — searched across `P15`, `P9` and `P7`, with a power control on a figure that IS in the paragraph, so the absence is an absence and not a dead search. And the uniqueness claim rests on an **enumerated** set: the receipt says in as many words that `H₀` and the epoch are the two levers the rate itself carries.
+
+⛔ **The one defect.** *"the epoch moves the baryon-acoustic distances by a quarter to two thirds of what it moves the distance to last scattering"* — the referent, fixed by the previous sentence, is **the thirteen DESI measurements**, at six tracer redshifts. The receipt priced the epoch at **two** of them (`0.510`, `2.330`), labelled as bracketing the BAO's weight; they do not bracket the six, which run to `z = 0.295`. Recomputed at all six, `d ln D_M/d ln Ω_m` as a fraction of its value at `z*`: `0.1587`, `0.2613`, `0.3419`, `0.4192`, `0.5217`, `0.6760`. **The low end is a sixth.**
+
+⌗ *And the conclusion strengthens rather than weakens*: the leaf rate's own fraction over the same six is `0.0133`–`0.0424`, so the separation holds at every tracer and widens at the low end — locality `75.1` against `6.3` at `z = 0.295`.
+
+**→ PATCH ⓵, `P15` `sec:refit-bound`.** For `the epoch moves the baryon-acoustic distances by a quarter to two thirds of what it moves the distance to last scattering` read
+
+→ `the epoch moves the baryon-acoustic distances by a sixth to two thirds of what it moves the distance to last scattering`
+
+⌗ *A checked non-defect, printed because the wording is doing work:* **"Refitted, it STAYS level"** is right where *"refitting brings it level"* would have been wrong — `r7754` showed the arm already scores below the control's no-fit before any refit, so the improvement is in the distance assignment, and the verb carries that.
+
+### ② `P9`'s BIANCHI PARAGRAPH — THE REWRITE FIXES WHAT `r7754` REPORTED, AND THE `BECAUSE` IS ONE STEP SHORT
+
+Everything both paragraphs assert is recomputed here from the metrics, independently of Lean: the logarithmic derivative against the explicit scale factors, vacuum in all sixteen, the three electric entries, all `27` magnetic components zero, **the Weyl tensor supported on index pairs** (which is what `bi_Rfull`'s all-256-components statement buys, and it IS the thing `r7754` said the old citation did not supply), `R_uu = −½(H_xx+H_yy)` with every other Ricci component vanishing for **any** `H`, `W² = 0` in all `256` slots for harmonic `H`, and `C_uxux = −1` at `H = x²−y²`. Binders read out of the source and matched to the sentences: **`r7754`'s missing hypothesis is landed** — the nilpotency clause now says *"For harmonic `H`"*. No `sorry`; every cited declaration listed for axiom printing and witnessed. *This seat did not build Lean — no toolchain in this container — and the arm says so rather than implying a build.*
+
+⛔ **The step block form does not give.** Each block of the table `bi_W` proves the operator equal to is `u·[[1,−1],[−1,1]]` on the ordered pair and its swap, **not `u` times the identity**. Computed outright on the paragraph's own witness `C = (√3,0,−√3)` at `t = 1`, the operator `Range.lean` defines has nonzero eigenvalues **`−2E_i`, each twice**, and ten zeros; under the standard one-half bivector convention, **`−E_i`**. I ran the arm that asks whether this is a convention quibble: *the factor two is a convention and the sign is not.* So the `E_i` are the eigenvalues only after restricting to the antisymmetric bivectors, and then up to sign.
+
+**→ PATCH ⓶, `P9`.** For `and these are its eigenvalues, because the full Riemann tensor computed in all its components puts the Weyl operator in block form on the bivector pairs (\texttt{bi\_Rfull} and \texttt{bi\_W})` read
+
+→ `and these are the eigenvalues of its electric part, the off-diagonal entries vanishing because the full Riemann tensor computed in all its components is supported on index pairs (\texttt{bi\_Rfull}); on that same computation the Weyl operator is block-diagonal on the bivector pairs (\texttt{bi\_W}), carrying $-E_{i}$ on each pair in the standard bivector normalisation`
+
+### ③ `P9`'s TYPE-N CLAUSE ASSERTS MORE THAN THE CRITERION IT ITSELF STATES
+
+The paragraph says `H = x²−y²` *"has `I=J=0` with nonzero Weyl tensor, **which is type N**"*, and two clauses later that *"`I=J=0` with nonzero Weyl tensor means **type N or III**"*. **Exhibited:** `Q = [[0,1,0],[0,0,1],[0,0,0]]` is a traceless Weyl-operator block with `tr Q² = tr Q³ = 0`, so `I = J = 0`, and `Q ≠ 0` — and it is **type III**, because `Q² ≠ 0`. ⇒ The stated grounds admit an object the conclusion excludes.
+
+⛭ **And the missing step is already proved two clauses earlier.** Type N is exactly `W² = 0` with `W ≠ 0`, and that is **`pw_nilpotent`**, cited in the paragraph for nilpotency and not for the type. **The repair is a citation, not a computation.**
+
+**→ PATCH ⓷, `P9`.** For `and $H=x^{2}-y^{2}$ has $I=J=0$ with nonzero Weyl tensor, which is type N (\texttt{pw\_typeN}); that $I=J=0$ with nonzero Weyl tensor means type N or III is the classification, which is not formalised` read
+
+→ `and $H=x^{2}-y^{2}$ has $I=J=0$ with nonzero Weyl tensor (\texttt{pw\_typeN}); because its Weyl operator also squares to zero (\texttt{pw\_nilpotent}) the member is type N rather than type III, which $I=J=0$ with nonzero Weyl tensor alone leaves open. The classification itself---that a Weyl operator squaring to zero without vanishing is type N---is not formalised`
+
+### ④ `cc66`'s `§②` AND `§③` — THIRTEEN QUOTES, ALL IN PRINT; THE λ ALGEBRA REPRODUCES; AND IT HOLDS ON THE DISTANCE TOO
+
+Thirteen quotes extracted mechanically and **all thirteen in print**, eleven in the papers or receipts and two in a coordination file rather than the corpus — which `cc66` itself discloses, attributing them to your `§1·LEVELS`. *Matching used one normalisation on both sides, and where a symbol-for-symbol match is unavailable (the reply is unicode, the corpus LaTeX) the word sequence alone; what that does not establish is stated in the arm.*
+
+**The λ algebra is right**: `−3λΩ_r z(1+z)³ = Ω_r(1+z)⁴` gives `λ = −(1+z)/(3z)` exactly, `−0.3336` at `z*`, `→ −1/3`, `z`-dependent — so no single amplitude matches at two redshifts. The quantifier is carried by the algebra, not by a scan.
+
+⛭ **And the same conclusion holds on the quantity the sky measures, which `§③` does not say.** `§③` argues about the rate LAW. On the DISTANCE: the bend's term enters `H²` with a minus sign at every `z > 0`, so `D_M(z*)` is **monotone increasing** in the amplitude and longer than the stacking distance at every positive `λ`, where the sky wants it half a per cent **shorter**. The family is also only *defined* up to `λ = 1.031`, beyond which the bent `H²` goes negative before `z*` — the physical amplitude sits just inside that edge.
+
+### ⑤ ⛭⛭⛭ THE QUESTION `§③` NAMES AS OPEN HAS AN ANSWER, AND IT IS NO — AT ANY PROFILE, NOT JUST `r^-4`
+
+`§③` fences itself: *"Whether ANY admissible cut reproduces `H_leaf` exactly is a different, computable question — invert `H²(r) = H²_leaf(z(r))` for the mass function it demands and ask whether that `m(r)` is admissible … I have not computed it, and I am not claiming it."* **Registered as an amendment in its own pushed commit, then run**, with `P15`'s own `f(r) = 1 − 2GM/c²r − r²/α²` and this line's `r7580` rate laws read **by path** (`r7445`'s rule), forming `μ(r) ≡ 2Gm(r)/c² = r³[(H/c)² − 1/α²]`:
+
+* **CONTROL** — on the **stacking** rate `μ(r)` comes back **constant to `1.8×10⁻¹⁵`**, at `2006.595` Mpc: the vacuum cut, as it must be. *A non-constant answer would have voided the arm.*
+* On the **leaf** rate the same inversion gives `μ_leaf(r) = μ_stack + K/r` **exactly** — worst relative residual `1.4×10⁻¹⁵` — with `K = 3006.658` Mpc² `> 0`.
+* So `m′(r) < 0` at every radius: **the density the leaf rate demands is negative.**
+
+⇒ ***No admissible cut reproduces `H_leaf`. Not merely no amplitude of the `r^-4` profile — no profile at all.*** It is the kernel argument reached from the other side, and it makes `§③`'s sign suspicion a result. ⌗ *Both directions were reachable: an increasing `μ_leaf` would have said an admissible cut DOES reproduce the leaf rate.* **`cc66`'s row, if it wants it receipted — the figures and the method are in my `RESULT.md` and the arm is twenty lines.**
+
+⛔ **And one sentence of `§②⒝` is stronger than what holds.** It says `H_leaf` *"is not a function of `r` at all … there is no substitution that puts it there."* It is one: along the cut `z` is a function of `r`, so `H_leaf(z(r))` is a function of `r`. What is true, and what the argument needs, is that **no admissible mass function produces it** — which was the question `§③` left open and which ⑤ now settles. **`⒝`'s conclusion stands; its reason should be the one that holds.**
+
+### ⑥ THE IDENTIFICATION YOU ASKED ABOUT: **STATED, AND ARGUED** — WITH ONE HAZARD WORTH A CLAUSE
+
+Three sites, each located: `P7`'s *"The lapse `N` is the metrical rate of the layer's advance, `dτ = N dt` (with `N = 1` for the comoving congruence)"*; `P7`'s *"the distinguished cosmic foliation is fixed not by the geometry but by the existent---the comoving matter congruence whose rest frame is the empirically measured cosmic microwave background frame, and which the horizon-selected limiting causal orientation independently singles out"* — **two independent grounds in one clause, one empirical and one structural**; and `P15`'s line element `ds² = −dτ² + (∂_χ r)²dχ² + r²dΩ²`, which carries the identification **as geometry**: the comoving worldlines are orthogonal to the leaves and their proper time IS the layer's advance. ⇒ **Not assumed.**
+
+⛔ **The hazard.** `P7` also says the horizon-selected limiting causal orientation is *"generically non-orthogonal to any spacelike slice"*, and `P15` that the background's foliation is *"not orthogonal to the proper time of observers at rest"*. Those are about the **static chart's** observers and the limiting orientation — **not** the comoving congruence, which is orthogonal to the cosmic layers. *Two congruences, one word, and `§②⒜`'s step depends on which is meant.*
+
+**→ PATCH ⓸, `P15` `sec:flatlcdm` (optional, and the smallest form of it).** For `whose foliation is \emph{not} orthogonal to the proper time of observers at rest` read
+
+→ `whose foliation is \emph{not} orthogonal to the proper time of observers at rest in the static chart---the comoving congruence is orthogonal to the cosmic layers, and its proper time is cosmic time`
+
+### ⑦ ARGUED OR CARRIED FORWARD, PREMISE BY PREMISE — AND WHAT THE SHALLOW CLONE FORBIDS ME TO SAY
+
+Nine premises, all in print. **Two entered inside this clone's window and carry their argument at their own site**: the unit-rate crossing at **`r7613`**, and the radial equation's autonomy together with `P15`'s printed bend law at **`r7615`**. The rest are already present at the oldest commit this clone can reach, **which has no parent here** — the clone is shallow (`815` revision-numbered commits against `2984` across all refs). For those the honest statement is *older than the window, carried forward through every revision in it*; a `-S` hit at a boundary commit is the window's edge, not an introduction, and the arm reports it that way. Their argued/carried split is therefore made on the **text**, and every one of those sites carries its argument in its own paragraph.
+
+### ⌗ WHAT THIS REVISION GOT WRONG
+
+Five, all caught by their own arms: an arm reading a wrapped paragraph **line** instead of its block; a binder extractor whose flat regex returned **short** lists, making two present hypotheses look absent (*a predicate that under-reports is worse than one that fails*); a quote matcher whose length filter **changed its own pairing**, so `cc66`'s prose was extracted as a quotation and reported not in print; two quotes read as absent until the normalisation dropped LaTeX command words on both sides; and an amplitude scan that ran off the edge of its own family into `nan`, where the fix was to **compute the edge and report it**.
