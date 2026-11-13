@@ -104,6 +104,61 @@ From `sec:properframe` step (iii) at `E = 1`, `h²(r) = μ(r)/r³ + 1/α²` with
 - **Not that `r7753` was worthless.** Its §③ stands and is strengthened by ⑦. Its §②⒜ and §②⒝ do not stand, and I have said so above rather than leaving them in the record unqualified.
 - **Nothing here is fitted, no significance is computed, and no row is opened.**
 
+### ⑨ ⛭⛭⛭ ADDENDUM, ON DARYL'S DIRECTION TO THE FOUNDATIONS — **`P7`'s PROJECTION PRINCIPLE MAKES SIGNAL PROPAGATION ON THE LAYER THE VALIDITY CRITERION FOR A SPACETIME, AND NO SENTENCE IN THE RATE LITERATURE CITES IT**
+
+Daryl directed this seat to `P7`'s basic principles and worked examples — the trampoline, Minkowski against Schwarzschild, the gravitational wave — as the ground to argue from either way. **He is right that the question is settled there rather than in the rate sections, and the axiom that settles it has not been brought to this problem before.** ⌗ *I searched: the Projection Principle is cited nowhere in the 47 sentences 60's census found assigning a distance to a rate.*
+
+#### ⒜ THE AXIOM, VERBATIM — **the projection is answerable to propagation ON THE LAYER**
+
+> **Axiom (Projection Principle).** *"A spacetime `(M,g)` is said to be a **valid projection** of `(S_t, h_ij(t))` if there exists a foliation `{Σ_t}` of `M` and a family of diffeomorphisms `Φ_t : S_t → Σ_t` such that **the causal structure induced by `g` faithfully encodes signal propagation on `(S_t, h_ij(t))`**."*
+
+⇒ *** The layer is the primitive and the spacetime is the representation, and the test of the representation is **what signals do on the layer**. *** So for a propagated quantity the direction of determination runs layer → projection, and the "comoving separation read across leaves" description is the projection's bookkeeping of a propagation fact, not its source. ⛭ **This is the axiom-level answer to the order's item ②.** The corpus never says in words which clock fixes light's local speed, but it does not have to: the Projection Principle makes propagation a property of `(S_t, h_ij(t))`, and `P15` says that layer carries the content's gravitation *in full*.
+
+#### ⒝ THE GRAVITATIONAL WAVE — **CR's one worked propagating case, and it comes out on the leaf by computation**
+
+> *"In CR, gravitational waves correspond to propagating perturbations of the spatial metric `h_ij(t)`. Their representation as oscillations of the spacetime metric `g_μν` is **projection-dependent**."* … *"the propagating degree of freedom is the transverse-traceless shear of the spatial layer `h_ij(t)`, evolving by a wave equation **on the layer**, and the wave's energy and momentum are carried entirely by the shear rate and the shear gradient of the layer, so that **the carrier of wave energy is the evolving spatial geometry by computation rather than by stipulation**."* … *"read on the layer, whose foliation the framework fixes, it is **local and definite**."*
+
+⇒ **The one case where CR has actually worked out what a propagating disturbance *is*, it is a process on the leaf** — its dynamics a wave equation on `h_ij(t)`, its energy seated on the leaf, its spacetime representation explicitly demoted to projection-dependent. *And the paper stresses that this was settled by computation rather than by stipulation, which is exactly the standard the distance assignment has never been held to.*
+
+#### ⒞ MINKOWSKI AGAINST SCHWARZSCHILD — **the spacetime's geometry is the shadow; the leaf's is the thing**
+
+> *"In CR, spacetime curvature is a property of the projection, not of the underlying ontology. **Ontological curvature is encoded exclusively in the intrinsic geometry of `h_ij(t)`**."* … *"the four-dimensional curvature a projection displays is a reading of it."*
+
+⇒ *Computing the length a signal accumulates from the vacuum projection's own geometry, while the layer it crosses is not vacuum, is reading the shadow for the thing — which Axiom [Non-Identity of Ontology and Representation] and the programme's epistemology name as the standing error.*
+
+#### ⒟ THE TRAMPOLINE — **what it licenses, and the line it does not cross**
+
+The foundational statement is in `resources/ERC_existence-relativity-cosmology.tex` (§`sec:BH` and the layered-expansion section), and it is the clearest source of the vacuum reading:
+
+> *"**Cosmologically**, the space in this toy model can be described as perfectly flat **even while it is actually being dynamically warped by matter** … the cosmological space-time solution must be Minkowski space, despite the noumenological warping of space at all cosmic times by matter."*
+> *"space may still **really** warp through gravitational processes, but its cosmological evolution **can---though not necessarily must---**be described by space-times that are vacuum solutions of Einstein's equations."*
+
+⛭ **Read exactly, every load-bearing word in that licence is about LOCAL, LUMPY content.** The warpers are bowling balls; the leaf stays *diffeomorphic to a flat plane*; the effects set aside are named as *"local space-time warping---a phenomenological effect … produces observable phenomena such as **lensing and ripples**"*; and the expansion argument that accompanies it is that *"gravitationally bound structures … do not participate in the Hubble flow"*, with the rate *"unaffected by local gravitational interactions **except where densities exceed a threshold**"*.
+
+⇒ *** A homogeneous radiation bath is not a bowling ball. *** It is not bound, not local, carries no density gradient, forms no lump, and its effect on propagation does not average out — it changes the expansion history by `15` per cent at recombination, uniformly, everywhere. **The trampoline licenses a vacuum *cosmological* description for content whose effect on propagation is local phenomenology. The radiation term is the one kind of content that licence does not reach.** ⌗ *And the source itself says `can---though not necessarily must`.*
+
+⌗ **The same shape holds for the one empirical support the corpus offers**, as §⑥ noted: the isotropy floor excludes a rate tracking the *inhomogeneous* matter distribution. Both the foundational argument and the empirical one are arguments about lumps.
+
+#### ⒠ WHAT THE STACKING READING KEEPS, AND IT IS NOT SMALL
+
+⛔ **This does not touch the Nariai rate, and I want that said plainly rather than buried.** The foundational case for an absolute, `Λ`-set stacking rate is real and survives intact: Eddington's expansion problem (*"such universes expand at later times only because they were already expanding"*), the CMB-coherence argument (*"such coherence requires an absolute cosmic time and a globally consistent expansion rate"*), and the Hubble-flow invariance across gravitationally influenced regions. **Every one of those is an argument about the stacking of the foliation, and every one is untouched by where a propagated length accumulates.** The universe still expands for geometric reasons; `Ω_m` is still a clock reading; `z_acc = x₀ − 1` still stands.
+
+#### ⒡ AND THE COHERENCE COST IS ALREADY PAID — **by `rs`, not by this**
+
+The obvious objection to §④ is that one geometry has one expansion history, so a length on the leaf's history and a stacking at the `Λ`-set rate cannot both be right. ⇒ *** That objection, if it works, works against the corpus as it already stands: `rs` and `r_D` are lengths the corpus **already** accumulates against the leaf's history while the foliation stacks at the other rate. *** Whatever makes that coherent makes the distance case coherent; if nothing does, the corpus's own sound-horizon assignment is where the trouble is. **Putting `D_M` on the leaf adds no structure the corpus does not already carry. It removes an asymmetry between two lengths that are compared in one angle.**
+
+#### ⒢ SO `P*` IN ITS SHARPEST FORM, AND WHAT IT NOW CONFLICTS WITH
+
+> **`P*`**: the projection used to compute what a CMB photon accumulated is built on the **vacuum** cut, although the layer it crossed carries, by `P15`'s own sentence, stress-energy that gravitates **in full**.
+
+⇒ **Stated that way `P*` is not merely underived; it is in tension with the Projection Principle's own validity criterion**, which makes a projection valid only insofar as it faithfully encodes signal propagation on the layer that actually exists. *A projection built on a vacuum history faithfully encodes propagation on a vacuum layer.*
+
+#### ⒣ THE STRONGEST REPLY AVAILABLE TO THE STACKING READING, STATED FAIRLY
+
+**That the Projection Principle governs *causal structure* — which signals reach which events — and not the metric length a signal accumulates; and that `D_M` is a separation read across leaves, which is foliation data.** I think this is the best the other side has, and it is not nothing. What I would say against it: `D_M` is not a causal-order fact but a length, and a length a signal accumulates while propagating is fixed by the geometry it propagates through; the across-leaves reading is a description of that length in the projection's coordinates, not an independent source for it. **But that is an argument, not a proof, and the ruling is 69's.**
+
+⛔ **What ⑨ does not claim.** Not that the Projection Principle *decides* the rate — it decides the **direction of determination**, layer → projection, which is what the classifier assumes in the opposite direction without saying so. Not that the trampoline argues *against* the stacking rate — it argues *for* it, and the finding is that its scope is lumpy content. Not a new figure, no computation, no row.
+
 ## ⛔⛭ `r7753+cc66` — **THE CROSSING IS `L1`, AND NOT BY A CLASSIFICATION: THE STEP CLASSIFIES THE *LENGTH*, AND THE MATTER CONGRUENCE'S OWN ADVANCE *IS* THE LAPSE. SO THE CONDITIONAL DOES NOT FIRE — AND THE CUT CANNOT SUPPLY THE LEAF RATE AT **ANY** AMPLITUDE, WHICH IS STRONGER THAN `r7614`'s WRONG WAY**
 
 Order `r7753`, both items. ⛭ The pricing is now a `P15` receipt with its INDEX row, appendices and `P15`'s PDF; **no new registration governs it and none is claimed** — every figure was registered at `r7751+cc66.0` before the computation existed and merged at `r7751`, where you re-ran it.
