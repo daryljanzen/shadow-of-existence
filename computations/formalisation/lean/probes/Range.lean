@@ -29,6 +29,12 @@ Campaign 135 (`r7749+71.1`, `computations/formalisation/r7749_71_campaign135/PRE
   three distinct electric eigenvalues with zero magnetic part to `I³ ≠ 27J²` is not formalised.
 * **Row 8b — BUILT IN PART.** `pw_Weyl_eq`, `pw_nilpotent`, `pw_invariants`, `pw_witness`. `I` and `J` (which need
   the Hodge dual) are not defined, so their vanishing is not formalised.
+
+Campaign 136 (`r7751+71.1`, `computations/formalisation/r7751_71_campaign136/PREDICTION.md`) closes both:
+* `ij_lc` (Levi-Civita), `ij_W`, `ij_E` (Hodge dual on bivectors), `ij_I = (K₁ − iK₂)/16`, `ij_J = (K₃ − iK₄)/96`.
+* **Row 8b — BUILT.** `pw_IJ`: a vacuum pp-wave has `I = J = 0`; `pw_typeN`: `H = x² − y²` is type N.
+* **Row 7b — BUILT.** `bi_Rfull`, `bi_W`, `bi_IJ`: vacuum Bianchi I with distinct `Cᵢ` at `cosh 3t > 3` has
+  `I³ ≠ 27J²`, with `I³ − 27J² = ¼Π(Eᵢ − E_j)²`; witness `bi_IJ_witness`.
 -/
 
 open Set Filter Topology
@@ -2113,6 +2119,272 @@ theorem pw_witness (x : Fin 4 → ℝ) : rn_Weyl (rn_pp fun _ X Y => X ^ 2 - Y ^
   simp [rn_ppT, rn_pp, kr_pd_const, rn_pd_negHalf, i2, i3]
   simp [kr_pd]
 
+
+/-! ## Rows 7b and 8b closed: the invariants `I` and `J` -/
+
+/-- The Levi-Civita symbol `Π_{i<j}(x_j − x_i)/12`: the sign of `(a, b, c, d)` as a permutation of `(0, 1, 2, 3)`,
+and zero on a repeated index. -/
+noncomputable def ij_lc (a b c d : Fin 4) : ℝ :=
+  (((b : ℕ) : ℝ) - (a : ℕ)) * (((c : ℕ) : ℝ) - (a : ℕ)) * (((d : ℕ) : ℝ) - (a : ℕ)) *
+    (((c : ℕ) : ℝ) - (b : ℕ)) * (((d : ℕ) : ℝ) - (b : ℕ)) * (((d : ℕ) : ℝ) - (c : ℕ)) / 12
+
+lemma ij_lc_values : ij_lc 0 1 2 3 = 1 ∧ ij_lc 1 0 2 3 = -1 ∧ ij_lc 0 0 2 3 = 0 := by
+  refine ⟨?_, ?_, ?_⟩ <;> norm_num [ij_lc]
+
+/-- The Weyl bivector operator `W^{ab}{}_{cd}` as a matrix on ordered index pairs. -/
+noncomputable def ij_W (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) :
+    Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ :=
+  Matrix.of fun p q => pw_W g x p.1 p.2 q.1 q.2
+
+/-- The Hodge dual on bivectors, `½ ε^{ab}{}_{ef}`, with `ε_{abcd} = √|det g| · ij_lc a b c d`. -/
+noncomputable def ij_E (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) :
+    Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ :=
+  Matrix.of fun p q => (1 / 2) * ∑ a', ∑ b', (g x)⁻¹ p.1 a' * (g x)⁻¹ p.2 b' *
+    (Real.sqrt |(g x).det| * ij_lc a' b' q.1 q.2)
+
+/-- `I = (K₁ − iK₂)/16` with `K₁ = C_{abcd}C^{abcd} = tr W²` and `K₂ = C_{abcd}*C^{abcd} = tr(W ∘ *W)`. -/
+noncomputable def ij_I (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) : ℂ :=
+  ⟨(ij_W g x * ij_W g x).trace / 16, -((ij_W g x * (ij_E g x * ij_W g x)).trace / 16)⟩
+
+/-- `J = (K₃ − iK₄)/96` with `K₃ = C_{ab}{}^{cd}C_{cd}{}^{ef}C_{ef}{}^{ab} = tr W³` and `K₄ = tr(W² ∘ *W)`. -/
+noncomputable def ij_J (g : (Fin 4 → ℝ) → Matrix (Fin 4) (Fin 4) ℝ) (x : Fin 4 → ℝ) : ℂ :=
+  ⟨(ij_W g x * ij_W g x * ij_W g x).trace / 96, -((ij_W g x * ij_W g x * (ij_E g x * ij_W g x)).trace / 96)⟩
+
+/-- **Row 8b.** A vacuum pp-wave (harmonic `H`, mixed partials commuting) has `I = J = 0`. With `pw_witness`
+(Weyl ≠ 0 for `H = x² − y²`) it is type N. -/
+theorem pw_IJ (h : ℝ → ℝ → ℝ → ℝ) (x : Fin 4 → ℝ)
+    (hsym : kr_pd (fun y => kr_pd (rn_H h) y 2) x 3 = kr_pd (fun y => kr_pd (rn_H h) y 3) x 2)
+    (hH : kr_pd (fun y => kr_pd (rn_H h) y 2) x 2 + kr_pd (fun y => kr_pd (rn_H h) y 3) x 3 = 0) :
+    ij_I (rn_pp h) x = 0 ∧ ij_J (rn_pp h) x = 0 := by
+  have sq : ij_W (rn_pp h) x * ij_W (rn_pp h) x = 0 := by
+    ext p q
+    simp only [ij_W, Matrix.mul_apply, Matrix.of_apply, Matrix.zero_apply, Fintype.sum_prod_type]
+    exact pw_nilpotent h x hsym hH p.1 p.2 q.1 q.2
+  have k2 : (ij_W (rn_pp h) x * (ij_E (rn_pp h) x * ij_W (rn_pp h) x)).trace = 0 := by
+    rw [Matrix.trace_mul_comm, Matrix.mul_assoc, sq, Matrix.mul_zero, Matrix.trace_zero]
+  refine ⟨Complex.ext ?_ ?_, Complex.ext ?_ ?_⟩
+  · simp [ij_I, sq]
+  · simp [ij_I, k2]
+  · simp [ij_J, sq]
+  · simp [ij_J, sq]
+
+/-- Bianchi I's sectional table: `s₀ᵢ = −aᵢaᵢ″`, `sᵢⱼ = aᵢaᵢ′aⱼaⱼ′`. -/
+noncomputable def bi_s (A A1 A2 B B1 B2 C C1 C2 : ℝ → ℝ) (t : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![0, -(A t * A2 t), -(B t * B2 t), -(C t * C2 t);
+    -(A t * A2 t), 0, A t * A1 t * (B t * B1 t), A t * A1 t * (C t * C1 t);
+    -(B t * B2 t), A t * A1 t * (B t * B1 t), 0, B t * B1 t * (C t * C1 t);
+    -(C t * C2 t), A t * A1 t * (C t * C1 t), B t * B1 t * (C t * C1 t), 0]
+
+/-- `R_{abcd} = s_ab(δ_ac δ_bd − δ_ad δ_bc)`. -/
+def bi_RT (s : Matrix (Fin 4) (Fin 4) ℝ) (a b c d : Fin 4) : ℝ :=
+  if a = c ∧ b = d then s a b else if a = d ∧ b = c then -s a b else 0
+
+set_option maxHeartbeats 0 in
+set_option linter.unusedSimpArgs false in
+/-- **The full Riemann tensor of Bianchi I**, all 256 lowered components. -/
+lemma bi_Rfull (h : bi_Hyp A A1 A2 B B1 B2 C C1 C2) {x : Fin 4 → ℝ} (hx : 0 < x 0) (a b c d : Fin 4) :
+    kr_Rlow (bi_g A B C) x a b c d = bi_RT (bi_s A A1 A2 B B1 B2 C C1 C2 (x 0)) a b c d := by
+  have hΓ := bi_Γ h hx
+  have hA := h.hA0 _ hx; have hB := h.hB0 _ hx; have hC := h.hC0 _ hx
+  have eA := ((h.hA _ hx).fun_mul (h.hA1 _ hx)).deriv
+  have eB := ((h.hB _ hx).fun_mul (h.hB1 _ hx)).deriv
+  have eC := ((h.hC _ hx).fun_mul (h.hC1 _ hx)).deriv
+  have qA := ((h.hA1 _ hx).fun_div (h.hA _ hx) hA).deriv
+  have qB := ((h.hB1 _ hx).fun_div (h.hB _ hx) hB).deriv
+  have qC := ((h.hC1 _ hx).fun_div (h.hC _ hx) hC).deriv
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+  · unfold kr_Rlow kr_Riem
+    simp only [Fin.sum_univ_four, bi_pd h hx, hΓ]
+    simp [bi_T, bi_g, kr_pd, bi_RT, bi_s, eA, eB, eC, qA, qB, qC]
+    all_goals (try field_simp)
+    all_goals (try ring)
+
+/-- The vacuum Bianchi I Weyl operator's entries: `U₀ᵢ = Hᵢ′ + Hᵢ² − 1` and `Uᵢⱼ = HᵢHⱼ − 1`. -/
+noncomputable def bi_U (k1 k2 k3 t : ℝ) : Matrix (Fin 4) (Fin 4) ℝ :=
+  !![0, bi_H1 k1 t + bi_H k1 t ^ 2 - 1, bi_H1 k2 t + bi_H k2 t ^ 2 - 1, bi_H1 k3 t + bi_H k3 t ^ 2 - 1;
+    bi_H1 k1 t + bi_H k1 t ^ 2 - 1, 0, bi_H k1 t * bi_H k2 t - 1, bi_H k1 t * bi_H k3 t - 1;
+    bi_H1 k2 t + bi_H k2 t ^ 2 - 1, bi_H k1 t * bi_H k2 t - 1, 0, bi_H k2 t * bi_H k3 t - 1;
+    bi_H1 k3 t + bi_H k3 t ^ 2 - 1, bi_H k1 t * bi_H k3 t - 1, bi_H k2 t * bi_H k3 t - 1, 0]
+
+/-- The bivector table `W^{ab}{}_{cd} = U_ab(δ_ac δ_bd − δ_ad δ_bc)` for `a ≠ b`. -/
+def ij_tbl (u : Matrix (Fin 4) (Fin 4) ℝ) : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ :=
+  Matrix.of fun p q => if p.1 = q.1 ∧ p.2 = q.2 ∧ p.1 ≠ p.2 then u p.1 p.2
+    else if p.1 = q.2 ∧ p.2 = q.1 ∧ p.1 ≠ p.2 then -u p.1 p.2 else 0
+
+set_option maxHeartbeats 0 in
+set_option linter.unusedSimpArgs false in
+/-- **The Weyl operator of vacuum Bianchi I** is `ij_tbl (bi_U …)`. -/
+lemma bi_W (k1 k2 k3 : ℝ) (hs : k1 + k2 + k3 = 0) (hq : k1 ^ 2 + k2 ^ 2 + k3 ^ 2 = 6)
+    {x : Fin 4 → ℝ} (hx : 0 < x 0) :
+    ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x = ij_tbl (bi_U k1 k2 k3 (x 0)) := by
+  have hR := bi_vacuum k1 k2 k3 hs hq hx
+  have hS := bi_scal k1 k2 k3 hs hq hx
+  have a1 := (bi_a_pos k1 hx).ne'; have a2 := (bi_a_pos k2 hx).ne'; have a3 := (bi_a_pos k3 hx).ne'
+  have hRf := bi_Rfull (bi_hyp k1 k2 k3) hx
+  have hC : ∀ a b c d, rn_Weyl (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x a b c d =
+      kr_Rlow (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x a b c d -
+        (bi_g (bi_a k1) (bi_a k2) (bi_a k3) x a c * bi_g (bi_a k1) (bi_a k2) (bi_a k3) x b d -
+          bi_g (bi_a k1) (bi_a k2) (bi_a k3) x a d * bi_g (bi_a k1) (bi_a k2) (bi_a k3) x b c) := by
+    intro a b c d; simp only [rn_Weyl, hR, hS, Matrix.smul_apply, smul_eq_mul]; ring
+  ext ⟨a, b⟩ ⟨c, d⟩
+  simp only [ij_W, ij_tbl, Matrix.of_apply, pw_W, bi_inv a1 a2 a3, hC, hRf]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+    simp [Fin.sum_univ_four, Matrix.diagonal_apply, bi_RT, bi_s, bi_g, bi_U, bi_a1, bi_a2]
+  all_goals (try field_simp)
+  all_goals (try ring)
+
+/-- Supported on pair blocks: `X p q = 0` unless `q = p` or `q = p.swap`. -/
+def ij_blk (X : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ) : Prop :=
+  ∀ p q : Fin 4 × Fin 4, q ≠ p → q ≠ p.swap → X p q = 0
+
+lemma ij_tbl_blk (u : Matrix (Fin 4) (Fin 4) ℝ) : ij_blk (ij_tbl u) := by
+  intro p q h1 h2
+  simp only [ij_tbl, Matrix.of_apply]
+  split_ifs with c1 c2
+  · exact absurd (Prod.ext c1.1.symm c1.2.1.symm) h1
+  · exact absurd (Prod.ext c2.2.1.symm c2.1.symm) h2
+  · rfl
+
+lemma ij_blk_mul {X Y : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ} (hX : ij_blk X) (hY : ij_blk Y) :
+    ij_blk (X * Y) := by
+  intro p q h1 h2
+  simp only [Matrix.mul_apply]
+  refine Finset.sum_eq_zero fun r _ => ?_
+  by_cases hr1 : r = p
+  · subst hr1; rw [hY r q h1 h2, mul_zero]
+  by_cases hr2 : r = p.swap
+  · subst hr2; rw [hY _ q h2 (by rwa [Prod.swap_swap]), mul_zero]
+  · rw [hX p r hr1 hr2, zero_mul]
+
+/-- A dual trace vanishes on block-supported operators: `tr(X ∘ E ∘ Y) = 0` when `E` kills each block. -/
+lemma ij_tr_dual {X Y E : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ} (hX : ij_blk X) (hY : ij_blk Y)
+    (hE : ∀ q r : Fin 4 × Fin 4, (r = q ∨ r = q.swap) → E q r = 0) : (X * (E * Y)).trace = 0 := by
+  simp only [Matrix.trace, Matrix.diag, Matrix.mul_apply, Finset.mul_sum]
+  refine Finset.sum_eq_zero fun p _ => Finset.sum_eq_zero fun q _ => Finset.sum_eq_zero fun r _ => ?_
+  by_cases hq : q = p ∨ q = p.swap
+  · by_cases hr : r = p ∨ r = p.swap
+    · rw [hE q r ?_, zero_mul, mul_zero]
+      rcases hq with rfl | rfl <;> rcases hr with rfl | rfl <;> simp
+    · simp only [not_or] at hr
+      rw [hY r p (Ne.symm hr.1) (fun e => hr.2 (by rw [e, Prod.swap_swap])), mul_zero, mul_zero]
+  · simp only [not_or] at hq
+    rw [hX p q hq.1 hq.2, zero_mul]
+
+lemma ij_tr2 (u : Matrix (Fin 4) (Fin 4) ℝ) : (ij_tbl u * ij_tbl u).trace =
+    ∑ a, ∑ b, if a = b then 0 else (u a b ^ 2 + u a b * u b a) := by
+  simp [Matrix.trace, Matrix.mul_apply, Fintype.sum_prod_type, Fin.sum_univ_four, ij_tbl]
+  ring
+
+set_option maxHeartbeats 0 in
+lemma ij_tr3 (u : Matrix (Fin 4) (Fin 4) ℝ) : (ij_tbl u * ij_tbl u * ij_tbl u).trace =
+    ∑ a, ∑ b, if a = b then 0 else (u a b + u b a) ^ 3 / 2 := by
+  simp [Matrix.trace, Matrix.mul_apply, Fintype.sum_prod_type, Fin.sum_univ_four, ij_tbl]
+  ring
+
+/-- Bianchi I's electric eigenvalue `Eᵢ = (2 + Cᵢ cosh 3t − Cᵢ²)/sinh² 3t` (as in `bi_electric`). -/
+noncomputable def bi_E (k t : ℝ) : ℝ := (2 + k * Real.cosh (3 * t) - k ^ 2) / Real.sinh (3 * t) ^ 2
+
+lemma bi_U0 (k : ℝ) {t : ℝ} (ht : 0 < t) : bi_H1 k t + bi_H k t ^ 2 - 1 = -bi_E k t := by
+  have sn := (bi_sinh_pos ht).ne'
+  have cs := Real.cosh_sq (3 * t)
+  simp only [bi_H1, bi_H, bi_E]
+  field_simp
+  linear_combination cs
+
+lemma bi_U1 {k k' k'' : ℝ} (hs : k + k' + k'' = 0) (hq : k ^ 2 + k' ^ 2 + k'' ^ 2 = 6) {t : ℝ} (ht : 0 < t) :
+    bi_H k t * bi_H k' t - 1 = -bi_E k'' t := by
+  have sn := (bi_sinh_pos ht).ne'
+  have cs := Real.cosh_sq (3 * t)
+  have e : k'' = -k - k' := by linarith
+  subst e
+  simp only [bi_H, bi_E]
+  field_simp
+  linear_combination cs - (1 / 2 : ℝ) * hq
+
+/-- **Row 7b.** Vacuum Bianchi I with distinct `Cᵢ`, at `cosh 3t > 3`, is Petrov type I: `I³ ≠ 27J²`. Here
+`I = ½ΣEᵢ²`, `J = −⅙ΣEᵢ³` (both real, the dual traces vanishing), and `I³ − 27J² = ¼Π_{i<j}(Eᵢ − E_j)²`. -/
+theorem bi_IJ (k1 k2 k3 : ℝ) (hs : k1 + k2 + k3 = 0) (hq : k1 ^ 2 + k2 ^ 2 + k3 ^ 2 = 6)
+    (h12 : k1 ≠ k2) (h13 : k1 ≠ k3) (h23 : k2 ≠ k3) {x : Fin 4 → ℝ} (hx : 0 < x 0)
+    (hc : 3 < Real.cosh (3 * x 0)) :
+    ij_I (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x ^ 3 ≠ 27 * ij_J (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x ^ 2 := by
+  have a1 := (bi_a_pos k1 hx).ne'; have a2 := (bi_a_pos k2 hx).ne'; have a3 := (bi_a_pos k3 hx).ne'
+  have hW := bi_W k1 k2 k3 hs hq hx
+  have hE : ∀ q r : Fin 4 × Fin 4, (r = q ∨ r = q.swap) →
+      ij_E (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x q r = 0 := by
+    rintro ⟨q1, q2⟩ r hr
+    rcases hr with rfl | rfl <;> fin_cases q1 <;> fin_cases q2 <;>
+      simp [ij_E, bi_inv a1 a2 a3, Matrix.diagonal_apply, ij_lc]
+  have bW := ij_tbl_blk (bi_U k1 k2 k3 (x 0))
+  have hK2 : (ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x * (ij_E (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x *
+      ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x)).trace = 0 := by
+    rw [hW]; exact ij_tr_dual bW bW hE
+  have hK4 : (ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x * ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x *
+      (ij_E (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x * ij_W (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x)).trace = 0 := by
+    rw [hW]; exact ij_tr_dual (ij_blk_mul bW bW) bW hE
+  set E1 := bi_E k1 (x 0); set E2 := bi_E k2 (x 0); set E3 := bi_E k3 (x 0)
+  have u01 := bi_U0 k1 hx; have u02 := bi_U0 k2 hx; have u03 := bi_U0 k3 hx
+  have u12 := bi_U1 (k'' := k3) hs hq hx
+  have u13 := bi_U1 (k := k1) (k' := k3) (k'' := k2) (by linarith) (by linarith) hx
+  have u23 := bi_U1 (k := k2) (k' := k3) (k'' := k1) (by linarith) (by linarith) hx
+  have hI : ij_I (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x = (((E1 ^ 2 + E2 ^ 2 + E3 ^ 2) / 2 : ℝ) : ℂ) := by
+    apply Complex.ext
+    · simp only [ij_I, hW, ij_tr2, Complex.ofReal_re]
+      simp [Fin.sum_univ_four, bi_U, u01, u02, u03, u12, u13, u23]
+      ring
+    · rw [Complex.ofReal_im]; simp [ij_I, hK2]
+  have hJ : ij_J (bi_g (bi_a k1) (bi_a k2) (bi_a k3)) x = ((-(E1 ^ 3 + E2 ^ 3 + E3 ^ 3) / 6 : ℝ) : ℂ) := by
+    apply Complex.ext
+    · simp only [ij_J, hW, ij_tr3, Complex.ofReal_re]
+      simp [Fin.sum_univ_four, bi_U, u01, u02, u03, u12, u13, u23]
+      ring
+    · rw [Complex.ofReal_im]; simp [ij_J, hK4]
+  have hsum : E1 + E2 + E3 = 0 := by
+    have sn := (bi_sinh_pos hx).ne'
+    simp only [E1, E2, E3, bi_E]; field_simp; linear_combination Real.cosh (3 * x 0) * hs - hq
+  have sn := (bi_sinh_pos hx).ne'
+  have d12 : E1 ≠ E2 := bi_sep (k'' := k3) h12 sn hc (by nlinarith [sq_nonneg k1, sq_nonneg k2]) hs
+  have d13 : E1 ≠ E3 := bi_sep (k'' := k2) h13 sn hc (by nlinarith [sq_nonneg k1, sq_nonneg k3]) (by linarith)
+  have d23 : E2 ≠ E3 := bi_sep (k'' := k1) h23 sn hc (by nlinarith [sq_nonneg k2, sq_nonneg k3]) (by linarith)
+  rw [hI, hJ]
+  have key : ((E1 ^ 2 + E2 ^ 2 + E3 ^ 2) / 2) ^ 3 - 27 * (-(E1 ^ 3 + E2 ^ 3 + E3 ^ 3) / 6) ^ 2 =
+      ((E1 - E2) * (E1 - E3) * (E2 - E3)) ^ 2 / 4 := by
+    have e3 : E3 = -E1 - E2 := by linarith
+    rw [e3]; ring
+  have hne : ((E1 ^ 2 + E2 ^ 2 + E3 ^ 2) / 2) ^ 3 ≠ 27 * (-(E1 ^ 3 + E2 ^ 3 + E3 ^ 3) / 6) ^ 2 := by
+    intro h
+    have : ((E1 - E2) * (E1 - E3) * (E2 - E3)) ^ 2 / 4 = 0 := by rw [← key, h]; ring
+    have hp : (E1 - E2) * (E1 - E3) * (E2 - E3) ≠ 0 :=
+      mul_ne_zero (mul_ne_zero (sub_ne_zero.2 d12) (sub_ne_zero.2 d13)) (sub_ne_zero.2 d23)
+    exact hp ((pow_eq_zero_iff two_ne_zero).1 (by linarith))
+  intro h
+  apply hne
+  exact_mod_cast h
+
+/-- **Row 7b, non-vacuity.** `C = (√3, 0, −√3)` at `t = 1` is Petrov type I. -/
+theorem bi_IJ_witness :
+    ij_I (bi_g (bi_a (Real.sqrt 3)) (bi_a 0) (bi_a (-Real.sqrt 3))) ![1, 0, 0, 0] ^ 3 ≠
+      27 * ij_J (bi_g (bi_a (Real.sqrt 3)) (bi_a 0) (bi_a (-Real.sqrt 3))) ![1, 0, 0, 0] ^ 2 := by
+  have h3 : 0 < Real.sqrt 3 := Real.sqrt_pos.2 (by norm_num)
+  exact bi_IJ _ _ _ (by ring) (by nlinarith [Real.sq_sqrt (show (0 : ℝ) ≤ 3 by norm_num)]) h3.ne'
+    (by linarith) (by linarith) (by norm_num) bi_typeI_witness
+
+/-- **Row 8b, type N.** For `H = x² − y²`: `I = J = 0` and the Weyl tensor is non-zero. -/
+theorem pw_typeN (x : Fin 4 → ℝ) :
+    ij_I (rn_pp fun _ X Y => X ^ 2 - Y ^ 2) x = 0 ∧ ij_J (rn_pp fun _ X Y => X ^ 2 - Y ^ 2) x = 0 ∧
+      rn_Weyl (rn_pp fun _ X Y => X ^ 2 - Y ^ 2) x 0 2 0 2 ≠ 0 := by
+  have i2 : ∀ y : Fin 4 → ℝ, kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 2 = 2 * y 2 := fun y => by
+    simp [kr_pd, rn_H]
+  have i3 : ∀ y : Fin 4 → ℝ, kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 3 = -(2 * y 3) := fun y => by
+    simp [kr_pd, rn_H]
+  have hsym : kr_pd (fun y => kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 2) x 3 =
+      kr_pd (fun y => kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 3) x 2 := by
+    simp only [i2, i3]; simp [kr_pd]
+  have hH : kr_pd (fun y => kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 2) x 2 +
+      kr_pd (fun y => kr_pd (rn_H fun _ X Y => X ^ 2 - Y ^ 2) y 3) x 3 = 0 := by
+    simp only [i2, i3]; simp [kr_pd]
+  obtain ⟨hI, hJ⟩ := pw_IJ _ x hsym hH
+  exact ⟨hI, hJ, by rw [pw_witness]; norm_num⟩
+
 end ShadowProbe.RangeProbe
 
 #print axioms ShadowProbe.RangeProbe.rn_ks_inv
@@ -2159,3 +2431,13 @@ end ShadowProbe.RangeProbe
 #print axioms ShadowProbe.RangeProbe.pw_nilpotent
 #print axioms ShadowProbe.RangeProbe.pw_invariants
 #print axioms ShadowProbe.RangeProbe.pw_witness
+#print axioms ShadowProbe.RangeProbe.ij_lc_values
+#print axioms ShadowProbe.RangeProbe.pw_IJ
+#print axioms ShadowProbe.RangeProbe.bi_Rfull
+#print axioms ShadowProbe.RangeProbe.bi_W
+#print axioms ShadowProbe.RangeProbe.ij_tr_dual
+#print axioms ShadowProbe.RangeProbe.ij_tr2
+#print axioms ShadowProbe.RangeProbe.ij_tr3
+#print axioms ShadowProbe.RangeProbe.bi_IJ
+#print axioms ShadowProbe.RangeProbe.bi_IJ_witness
+#print axioms ShadowProbe.RangeProbe.pw_typeN
