@@ -15,6 +15,150 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛭⛭ `r7755+cc66` — **THE TWO RATES ARE TWO HISTORIES OF *ONE* CONGRUENCE IN *ONE* CLOCK, SO THE CROSSING CANNOT BE SORTED BY WHICH CONGRUENCE IT BELONGS TO. THE PREMISE THE STACKING READING NEEDS IS THAT THE LEAVES' HISTORY IS THE VACUUM CUT'S — AND IT ENTERED THE CORPUS WHOLE, IN ONE COMMIT, NEVER ARGUED. ⛭ AND THE CUT CANNOT SUPPLY THE LEAF RATE AT ALL: THE MASS FUNCTION IT DEMANDS CARRIES A NEGATIVE `r⁻⁴` DENSITY**
+
+Order `r7755`, all four items. ⛭ **I am not defending `r7753`.** Two of its three reasons do not survive this reading and I say which and why below. The caution in the order is correct and it applies to my own previous answer first.
+
+### ① WHICH CONGRUENCE — **they are one, and the corpus says so in a single clause**
+
+`P15` `sec:tensions`, defining the second level: *"**(L2) The leaf-level local dynamics**: the expansion scalar of a self-gravitating congruence, the ordinary Friedmann readout … **it is the same single `E=1` geodesic read *inward* as dust collapse that `L1` reads *outward* as cosmology**."*
+
+⇒ *** `L1` and `L2` are not two congruences. They are two readings of one congruence, and the corpus states that as the thing that makes them a pair. *** So **my `r7753` §②⒜ fails.** It argued that the crossing is `L1` because the congruence whose advance is the lapse is the matter congruence. That is true and it settles nothing: the same congruence's own processes are the corpus's paradigm `L2` quantities. One congruence on both sides of the line cannot be the discriminator. ⛔ *This is precisely the joint 69 named before I looked, and it is the load-bearing half of what I wrote last round.*
+
+**And the sub-question — a different clock, or a different scale factor?** It must be **a different scale factor**, and the chart forces that answer. `eq:proper-frame` is `ds² = −dτ² + (∂_χ r)²dχ² + r²dΩ²`, so `g_ττ = −1`: `τ` is the **proper time of the `E=1` congruence itself**, and cosmic time is `τ̃ = τ + χ`. There is no second clock anywhere in the construction. ⇒ *So "nucleosynthesis takes the leaf rate" cannot mean a different clock; it means the areal-radius history `r(τ̃)` those processes are laid down against is not the vacuum one.* **Two rates for one congruence in one time coordinate are two expansion histories — and a single spacetime has one.**
+
+### ② WHICH CLOCKS FIX LIGHT'S LOCAL SPEED — **the identity is in the content's own clock, and the corpus never fixes the other**
+
+- **The `dτ̃/dχ = dτ̃/dτ = 1` identity is in the content's units.** By `g_ττ = −1` the lapse's unit *is* the comoving congruence's proper time. There are not "lapse units" and "content units" to choose between here; the identity is stated in the clock the content carries. ⇒ *So it cannot sort the accumulation onto the stacking rate. It says the accumulation is measured in the content's own clock.*
+- **Nothing in the construction says light's local speed is `c` against the lapse rather than against the content's clocks.** I searched the five papers that carry the rate (`P15`, `P16`, `P7`, `P10`, `P18`) for any statement fixing it. **There is none.** The question was never put, let alone decided.
+- ⛔ **And the family the accumulation runs along is not light's path.** 60's own arm Ⓑ: `(∂_χ r)² ≥ 1` on the whole branch, so a constant-`τ` curve is **spacelike everywhere** — null slope `20.8` at `z*`, against `1` for a null ray. *The reassignment's "photon family" is a spacelike family; `r₀∫dτ̃/r` is a coordinate construction along it.* ⇒ *So "which clock does light use" is not answered by that identity; the identity is not about light's path.*
+
+### ③ THE INTEGRAND — **the same one, read against a different history. Not a second integrand**
+
+`r₀∫dτ̃/r(τ̃)` is an integral over cosmic time against the congruence's own areal radius. Changing the rate does not change the integrand; it changes **which `r(τ̃)` is fed to it**. The present reading feeds it `eq:scalefac`, the *vacuum* solution. If the content's stress-energy gravitates in full on the leaf — `P15`'s own premise — the leaves' actual `r(τ̃)` near recombination is not that one, and the same integral returns the leaf-rate distance. ⇒ **So `r7753` §②⒝ — "no slot in the integrand for a content process" — is true and is not an argument.** The content does not enter as a *term*; it enters by setting `r(τ̃)`. My §②⒝ assumed the vacuum `r(τ̃)` and then observed that no content appears in it. *That is the premise, restated as its own evidence.*
+
+### ④ THE OPPOSITE DERIVATION, AT FULL STRENGTH, FROM THE CORPUS'S OWN PREMISES
+
+**Premise 1** (`P15` `sec:flatlcdm`, verbatim): *"Where the field equations act is the leaf, and they act there in full. All stress-energy gravitates, by the ordinary Friedmann readout of the self-gravitating congruence."*
+**Premise 2** (`P15` `sec:tensions`, §① above): that congruence is the same `E=1` geodesic `L1` reads outward.
+**Premise 3** (`eq:proper-frame`): cosmic time's unit is that congruence's own proper time; there is one clock.
+**Premise 4** (`P15`, `P16`): `rs`, `r_D`, recombination and the perturbations are accumulated against the leaf's history, and *"**the two must take the same rate**"* is stated there of a pair of lengths that enter one observable.
+
+**The derivation.** `θ* = rs/D_M` is a ratio of two comoving lengths on one slicing. A comoving length is defined only relative to a scale-factor history. By Premises 1–3 there is one congruence, one clock, and therefore one history that the leaves actually have — the one the full field equations give, whose expansion scalar is `H_leaf`. Both lengths are integrals of `c·dt/a` over that one history, differing only in their integrand's sound speed and their limits. ⇒ *** Either both take `H_leaf` or both take `H_stack`; a ratio formed from two different histories of one congruence is not a ratio of two lengths in one spacetime. *** The corpus puts `rs` on `H_leaf`. **The leaf-rate distance is then the rule applied, not radiation added by hand.**
+
+⌗ *The strength of this is that it uses no premise the present reading rejects. Premises 1–4 are all the corpus's own sentences, and Premise 3 is the chart's own metric.*
+
+### ⑤ THE TWO SIDE BY SIDE, AND THE ONE PREMISE THAT SEPARATES THEM
+
+| step | stacking-rate reading | content's-clock reading |
+|---|---|---|
+| the congruence | one, `E=1` | one, `E=1` — **same** |
+| the clock | the congruence's proper time | **same** |
+| the kernel theorem (`SdS` exactly, radiation needs `m'(r)≠0`) | used | **used, and accepted** |
+| the decomposition `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴` | used | **same** |
+| `rs` on the leaf's history | yes | yes — **same** |
+| **the leaves' actual `r(τ̃)` is the vacuum cut's** | **REQUIRED** | **not used** |
+| `D_M` | vacuum history | the leaves' own history |
+
+⇒ *** The whole difference is one premise: **`P*` — that the content, which `P15` says gravitates in full on the leaf, nonetheless leaves the leaves' areal-radius history equal to the vacuum solution.** *** The other reading does not need it; it takes `P15`'s Premise 1 at face value. ⛭ **And `P*` is not the kernel theorem.** The kernel theorem says which metrics lie in the slicing operator's vacuum kernel — a statement about the *cut*. To reach `P*` one must additionally identify the cosmology's leaves *with* that cut. **That identification is the premise, and it is the step that is stated rather than derived.**
+
+### ⑥ WHERE `P*` WAS ARGUED — **it was not. It entered whole, in one commit, and has been restated since**
+
+60's census instrument (`r7612`, run here unmodified) already measured the shape of this: **`47` sentences assign a distance or a comoving separation to a rate; `15` claim a ground; `0` are adjudicated as deriving it.** The single `[GROUNDS]` sentence is `P10`'s — and read in full it does not do the work:
+
+> *"the lapse is the foliation stacking rate **the observable expansion rides** … and **the shift is the synchronization through which that expansion is observed as distance and redshift** … That **a plasma process** rides the one rate or the other is then fixed by what the process is … the same selection of the existent's foliation … here fixes, one level down, which rate **a recombination-era or a nucleosynthesis-era computation** must read."*
+
+⇒ *** The corpus's one grounding sentence grounds the classifier **for processes**, and files **distance under the shift** — `L3` — not under the lapse. It never applies the classifier to a distance. ***
+
+**And the history is sharper than "unargued".** `git log -S` over the full 7,825-commit history:
+- the classifier's first appearance anywhere in `corpus/` is **`r2419` (`c01f56c5b`), "the consolidated corpus"**, which added `cosmogenesis_paper.tex` as **762 new lines** with the rule already in final form;
+- `git grep` of that commit's **parent** finds the phrases *"takes the stacking rate"*, *"comoving separation read across leaves"*, *"stacking rate"*, *"leaf rate"*, *"vacuum kernel"* and `H_leaf` — **zero hits, all of them.** The entire two-rate vocabulary, the decomposition and the classifier enter the repository together, in one commit, already whole;
+- `P15` restates it at `r3401`, `P10` at `r6719`, the index thereafter.
+
+⌗ **Said fairly:** the repository is not the whole intellectual history — the kernel theorem carries an external citation (`JanzenOperator`), and the reasoning may predate the consolidation. **But the classifier clause itself carries no citation at its own clause in `P16`**, and the three "structural facts, each already in the corpus" that `sec:scoping` offers to corroborate it are about ⑴ the two rates being different objects, ⑵ where the reassignment acts, and ⑶ that that locus is unique — **none is about which rate a distance takes.** In `P16` the rule is appended to the kernel theorem by the word *"and"*: *"The decomposition is therefore exact … **and the rule is kinematic**: a comoving separation read across leaves takes the stacking rate …"*
+
+⛭⛭ **And the corpus itself records the status of this premise, in `P16` `sec:scoping`, in its own words:** *"carrying the local radiation-sourced law across to the distances would pin them to a radiation-era density the foliation's own rate does not carry, **which excludes it structurally rather than by a measurement** — and **the one quantitative test of that direction, the microwave spectrum, prefers it**."* ⇒ *The premise is declared unmeasured where it is stated, and the only measurement bearing on it is declared to favour the other side.*
+
+⌗ **One narrow point on the single empirical support offered for `L1`.** `sec:tensions` calls the stacking rate *"empirically forced"* because *"the microwave-redshift isotropy floor forces uniform expansion to some three orders of magnitude, so a matter-tracking (radiation-sourced) rate is already excluded by data"*. **That excludes a rate tracking the *inhomogeneous* matter distribution. `H_leaf` is homogeneous and isotropic**, so the isotropy floor does not discriminate between the two rates at all. The support is real against a different candidate.
+
+### ⑦ THE INVERSION, REGISTERED AT `r7755+cc66.0` BEFORE IT EXISTED — **the cut cannot supply the leaf rate at all**
+
+From `sec:properframe` step (iii) at `E = 1`, `h²(r) = μ(r)/r³ + 1/α²` with `μ = 2Gm/c²`; the straight cut `μ ≡ 2M` returns the published stacking rate to `1.1e-15` (asserted **before** the relation is read backwards). Solving pointwise for the `μ(r)` that gives `H_leaf`, with no form assumed:
+
+- **`μ(r) = 2M + K/r` exactly**, `K = (H₀/c)²Ω_r r₀⁴ = 3.0067e+03` Mpc², matching the closed form to `3.3e-15`, and that cut's own rate reproduces `H_leaf` to `2.2e-16`;
+- **`μ'(r) = −K/r² < 0` at every radius** — the mass function *decreases* outward;
+- **so its density is negative and is radiation's own `r⁻⁴` profile with the sign reversed**: `ρ ∝ −K/(4πr⁴)`, with `ρ·r⁴` constant to `5.6e-16`;
+- **not admissible**: the weak and null energy conditions fail at every one of `4001` nodes, and `μ → 5.95e+11` Mpc as `r → 10⁻¹²r₀` against `2M = 2006.595`.
+
+⇒ *** **There is no cut, bent however one likes, whose own rate is the leaf rate.** `r7753` showed no *amplitude* of the `r⁻⁴` profile reaches it; this shows no *mass function* does. *** ⛔ **This fires against the leaf-rate reading's easiest route**, which is why it was registered first: radiation cannot enter the rate dynamically, through the cut. What remains is exactly the classification question — **which object the distance is read off** — and that is where §④ puts it.
+
+⛭ **The same instrument reproduces `P15`'s printed bend law** from a *positive* `r⁻⁴` profile: `−3Ω_r z(1+z)³`, sign and shape, with the physical coefficient coming out at exactly `B = 3K`; and `r7753` §③'s `λ(z*) = −0.333639` falls out of `K/B · (1+z*)/z*` by an independent route.
+
+⛔ **AND A REGISTERED LICENCE WAS MISSED, WHICH THE REGISTRATION REQUIRED ME TO SAY.** `R2` row ⑤ was licensed at `< 1e-10` over the whole grid; the measured worst is **`7.17e-07`**, at the low-`z` end. It is reported as a miss inside the gate and then **diagnosed rather than loosened**: the term is formed as a difference of two `h²` agreeing to `3Ω_r z`, so double precision's floor on the ratio is `1e-16/(3Ω_r z)`; the measured deviation **never exceeds `1.98×` that floor at any node across six decades**, it is `6.05e-11` above `z = 10⁻²`, and the same term with every cancellation removed analytically agrees with the printed law to `6.7e-16`. ⌗ *My first attempt at that cancellation-free form was algebraically wrong — it dropped a factor of `(1+z)` — and the check returned `0.999` and caught me. The wrong line is kept in the file with a note saying so.*
+
+### ⑧ WHAT THIS DOES NOT CLAIM
+
+- **Not that the leaf-rate reading is established.** §④ is the opposite case built at full strength, as ordered. What I claim is narrower and I think firmer: **the two readings differ by exactly one premise, that premise is `P*`, and `P*` has no derivation in the corpus and no measurement behind it** — the corpus says so itself.
+- **Not that the kernel theorem is wrong.** It is accepted in §④ unchanged. What `P*` adds to it is the identification of the cosmology's leaves with the vacuum cut.
+- **Not that the data decide it.** They are the reason the burden sits where it does; they are not the argument.
+- **Not that `r7753` was worthless.** Its §③ stands and is strengthened by ⑦. Its §②⒜ and §②⒝ do not stand, and I have said so above rather than leaving them in the record unqualified.
+- **Nothing here is fitted, no significance is computed, and no row is opened.**
+
+### ⑨ ⛭⛭⛭ ADDENDUM, ON DARYL'S DIRECTION TO THE FOUNDATIONS — **`P7`'s PROJECTION PRINCIPLE MAKES SIGNAL PROPAGATION ON THE LAYER THE VALIDITY CRITERION FOR A SPACETIME, AND NO SENTENCE IN THE RATE LITERATURE CITES IT**
+
+Daryl directed this seat to `P7`'s basic principles and worked examples — the trampoline, Minkowski against Schwarzschild, the gravitational wave — as the ground to argue from either way. **He is right that the question is settled there rather than in the rate sections, and the axiom that settles it has not been brought to this problem before.** ⌗ *I searched: the Projection Principle is cited nowhere in the 47 sentences 60's census found assigning a distance to a rate.*
+
+#### ⒜ THE AXIOM, VERBATIM — **the projection is answerable to propagation ON THE LAYER**
+
+> **Axiom (Projection Principle).** *"A spacetime `(M,g)` is said to be a **valid projection** of `(S_t, h_ij(t))` if there exists a foliation `{Σ_t}` of `M` and a family of diffeomorphisms `Φ_t : S_t → Σ_t` such that **the causal structure induced by `g` faithfully encodes signal propagation on `(S_t, h_ij(t))`**."*
+
+⇒ *** The layer is the primitive and the spacetime is the representation, and the test of the representation is **what signals do on the layer**. *** So for a propagated quantity the direction of determination runs layer → projection, and the "comoving separation read across leaves" description is the projection's bookkeeping of a propagation fact, not its source. ⛭ **This is the axiom-level answer to the order's item ②.** The corpus never says in words which clock fixes light's local speed, but it does not have to: the Projection Principle makes propagation a property of `(S_t, h_ij(t))`, and `P15` says that layer carries the content's gravitation *in full*.
+
+#### ⒝ THE GRAVITATIONAL WAVE — **CR's one worked propagating case, and it comes out on the leaf by computation**
+
+> *"In CR, gravitational waves correspond to propagating perturbations of the spatial metric `h_ij(t)`. Their representation as oscillations of the spacetime metric `g_μν` is **projection-dependent**."* … *"the propagating degree of freedom is the transverse-traceless shear of the spatial layer `h_ij(t)`, evolving by a wave equation **on the layer**, and the wave's energy and momentum are carried entirely by the shear rate and the shear gradient of the layer, so that **the carrier of wave energy is the evolving spatial geometry by computation rather than by stipulation**."* … *"read on the layer, whose foliation the framework fixes, it is **local and definite**."*
+
+⇒ **The one case where CR has actually worked out what a propagating disturbance *is*, it is a process on the leaf** — its dynamics a wave equation on `h_ij(t)`, its energy seated on the leaf, its spacetime representation explicitly demoted to projection-dependent. *And the paper stresses that this was settled by computation rather than by stipulation, which is exactly the standard the distance assignment has never been held to.*
+
+#### ⒞ MINKOWSKI AGAINST SCHWARZSCHILD — **the spacetime's geometry is the shadow; the leaf's is the thing**
+
+> *"In CR, spacetime curvature is a property of the projection, not of the underlying ontology. **Ontological curvature is encoded exclusively in the intrinsic geometry of `h_ij(t)`**."* … *"the four-dimensional curvature a projection displays is a reading of it."*
+
+⇒ *Computing the length a signal accumulates from the vacuum projection's own geometry, while the layer it crosses is not vacuum, is reading the shadow for the thing — which Axiom [Non-Identity of Ontology and Representation] and the programme's epistemology name as the standing error.*
+
+#### ⒟ THE TRAMPOLINE — **what it licenses, and the line it does not cross**
+
+The foundational statement is in `resources/ERC_existence-relativity-cosmology.tex` (§`sec:BH` and the layered-expansion section), and it is the clearest source of the vacuum reading:
+
+> *"**Cosmologically**, the space in this toy model can be described as perfectly flat **even while it is actually being dynamically warped by matter** … the cosmological space-time solution must be Minkowski space, despite the noumenological warping of space at all cosmic times by matter."*
+> *"space may still **really** warp through gravitational processes, but its cosmological evolution **can---though not necessarily must---**be described by space-times that are vacuum solutions of Einstein's equations."*
+
+⛭ **Read exactly, every load-bearing word in that licence is about LOCAL, LUMPY content.** The warpers are bowling balls; the leaf stays *diffeomorphic to a flat plane*; the effects set aside are named as *"local space-time warping---a phenomenological effect … produces observable phenomena such as **lensing and ripples**"*; and the expansion argument that accompanies it is that *"gravitationally bound structures … do not participate in the Hubble flow"*, with the rate *"unaffected by local gravitational interactions **except where densities exceed a threshold**"*.
+
+⇒ *** A homogeneous radiation bath is not a bowling ball. *** It is not bound, not local, carries no density gradient, forms no lump, and its effect on propagation does not average out — it changes the expansion history by `15` per cent at recombination, uniformly, everywhere. **The trampoline licenses a vacuum *cosmological* description for content whose effect on propagation is local phenomenology. The radiation term is the one kind of content that licence does not reach.** ⌗ *And the source itself says `can---though not necessarily must`.*
+
+⌗ **The same shape holds for the one empirical support the corpus offers**, as §⑥ noted: the isotropy floor excludes a rate tracking the *inhomogeneous* matter distribution. Both the foundational argument and the empirical one are arguments about lumps.
+
+#### ⒠ WHAT THE STACKING READING KEEPS, AND IT IS NOT SMALL
+
+⛔ **This does not touch the Nariai rate, and I want that said plainly rather than buried.** The foundational case for an absolute, `Λ`-set stacking rate is real and survives intact: Eddington's expansion problem (*"such universes expand at later times only because they were already expanding"*), the CMB-coherence argument (*"such coherence requires an absolute cosmic time and a globally consistent expansion rate"*), and the Hubble-flow invariance across gravitationally influenced regions. **Every one of those is an argument about the stacking of the foliation, and every one is untouched by where a propagated length accumulates.** The universe still expands for geometric reasons; `Ω_m` is still a clock reading; `z_acc = x₀ − 1` still stands.
+
+#### ⒡ AND THE COHERENCE COST IS ALREADY PAID — **by `rs`, not by this**
+
+The obvious objection to §④ is that one geometry has one expansion history, so a length on the leaf's history and a stacking at the `Λ`-set rate cannot both be right. ⇒ *** That objection, if it works, works against the corpus as it already stands: `rs` and `r_D` are lengths the corpus **already** accumulates against the leaf's history while the foliation stacks at the other rate. *** Whatever makes that coherent makes the distance case coherent; if nothing does, the corpus's own sound-horizon assignment is where the trouble is. **Putting `D_M` on the leaf adds no structure the corpus does not already carry. It removes an asymmetry between two lengths that are compared in one angle.**
+
+#### ⒢ SO `P*` IN ITS SHARPEST FORM, AND WHAT IT NOW CONFLICTS WITH
+
+> **`P*`**: the projection used to compute what a CMB photon accumulated is built on the **vacuum** cut, although the layer it crossed carries, by `P15`'s own sentence, stress-energy that gravitates **in full**.
+
+⇒ **Stated that way `P*` is not merely underived; it is in tension with the Projection Principle's own validity criterion**, which makes a projection valid only insofar as it faithfully encodes signal propagation on the layer that actually exists. *A projection built on a vacuum history faithfully encodes propagation on a vacuum layer.*
+
+#### ⒣ THE STRONGEST REPLY AVAILABLE TO THE STACKING READING, STATED FAIRLY
+
+**That the Projection Principle governs *causal structure* — which signals reach which events — and not the metric length a signal accumulates; and that `D_M` is a separation read across leaves, which is foliation data.** I think this is the best the other side has, and it is not nothing. What I would say against it: `D_M` is not a causal-order fact but a length, and a length a signal accumulates while propagating is fixed by the geometry it propagates through; the across-leaves reading is a description of that length in the projection's coordinates, not an independent source for it. **But that is an argument, not a proof, and the ruling is 69's.**
+
+⛔ **What ⑨ does not claim.** Not that the Projection Principle *decides* the rate — it decides the **direction of determination**, layer → projection, which is what the classifier assumes in the opposite direction without saying so. Not that the trampoline argues *against* the stacking rate — it argues *for* it, and the finding is that its scope is lumpy content. Not a new figure, no computation, no row.
+
 ## ⛔⛭ `r7753+cc66` — **THE CROSSING IS `L1`, AND NOT BY A CLASSIFICATION: THE STEP CLASSIFIES THE *LENGTH*, AND THE MATTER CONGRUENCE'S OWN ADVANCE *IS* THE LAPSE. SO THE CONDITIONAL DOES NOT FIRE — AND THE CUT CANNOT SUPPLY THE LEAF RATE AT **ANY** AMPLITUDE, WHICH IS STRONGER THAN `r7614`'s WRONG WAY**
 
 Order `r7753`, both items. ⛭ The pricing is now a `P15` receipt with its INDEX row, appendices and `P15`'s PDF; **no new registration governs it and none is claimed** — every figure was registered at `r7751+cc66.0` before the computation existed and merged at `r7751`, where you re-ran it.
