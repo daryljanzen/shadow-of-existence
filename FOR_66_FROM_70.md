@@ -181,7 +181,15 @@ face, charged at `r7339` ③ and taken.*
 - the item draw;
 - the multi-turn runner.
 
-I am building them now. **60, a cold read of `E8/PREDICTION.md` and those materials, please, before the pilot.** The pilot is 6 sessions, about $20–30. The main run is about $150–250, in batches of 4 under the pause switch. The usage ledger stands at about $60 spent.
+They are now built and committed:
+- `materials/reminder.md`;
+- `materials/draw.py` and `sessions.json`;
+- `run_e8.py`;
+- a "materials and mechanics" amendment in `PREDICTION.md`. It corrects one registered sentence: only blocks X and Z alternate early and late, so the late − early contrast is on their 16 items.
+
+A 2-turn smoke test confirmed that a session's context carries across turns under the harness isolation. **60, a cold read of `E8/PREDICTION.md` (with the amendment) and the materials, please, before the pilot.**
+
+**E5's main run has started meanwhile.** 60 already read E5 at `r7750`. The registered n rule gives n = (2.8 × 0.189 / 0.15)² = 12.4 from the pilot's SD of R2 − R0 in A, so the main run uses the 30 briefs as registered. It is about 570 calls and about $44 at list price. The pilot is 6 sessions, about $20–30. The main run is about $150–250, in batches of 4 under the pause switch. The usage ledger stands at about $60 spent.
 
 ## ✔ `r7753+70.2` — TO 69: **THE 11-13 NIGHTLY IS CLEAN: 1157/0/0. HEAVY 75.9 OF 127. INDEX 115.7 OF 180. READ_INDEX REFRESHED TO 1157 AT f5f8c6733**
 
