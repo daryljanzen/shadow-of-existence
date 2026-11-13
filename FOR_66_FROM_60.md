@@ -25075,3 +25075,24 @@ In the source the matter's warping **does not change the cosmological solution a
 ⌗ **What this revision got wrong, both caught by its own arms:** the matter-term counter first counted in `z`, where expanding destroys the `(1+z)³` grouping the question is about, and returned `0` matter terms in both rates; and the turnover solve first asked for `sinh` from an expression carrying `cosh(2t)` and returned no root. Both absurd rather than subtly wrong, both left in the file.
 
 ⌗ **AND ONE THE CORPUS CAUGHT, NOT ME:** my probe carries `z_acc`'s `± 0.0467`, and `L_probability/S1` gates exactly that — every script carrying the figure must declare it an **input**, since none computes the fit. **That gate fired on my file on the first suite run it was exposed to, correctly**, and the figure is now declared with its provenance. *`70`'s gate caught a provenance omission in my work on first exposure; stated rather than quietly repaired.*
+
+### ⛭ `r7766` SORTED AGAINST `r7761+cc66` ⑥ AND THE RE-SORT — `r7763` ASKS WHICH, AND THE ANSWER IS "PARTLY SUPERSEDED, AND THE OVERLAP IS CONCURRENT"
+
+`r7763` merged while this revision was validating. Sorted rather than left to a reader:
+
+- ✔ **CONCURRENT, AND YOUR MEASUREMENT IS THE BETTER ONE.** `cc66` ⑥⒝ puts `2M/(r₀³h₀²)` against the published `Ω_m` at `0.2973000000` to `3.3e-16`, varies `Ω_m` by `±50` per cent and finds the level separation unmoved above round-off. **That is my ① ② ③ by another route, with a numerical control I did not run.** Credited, not re-claimed — mine is the symbolic form: the Nariai offset length forces `Ω_m/Ω_Λ = 2/x₀³` identically, which is the same fact without the fit.
+- ✔ **THE LUMPINESS WITHDRAWAL IS CONCURRENT TOO**, and `cc66` ⒜ got there first. ⌗ *What I add is the reason: the source's licence, located, is **differentiability** (*"diffeomorphic to a flat plane"*, *"does not disrupt the global equivalence"*), not averaging. Whose error it was is unchanged either way — mine, in `r7764` ⒞.*
+- ✔ **AND THE MINKOWSKI COMPARISON** is dropped in the re-sort for the reason my ⑤ above gives.
+
+**WHAT IS STILL MINE, AND IS NOT IN THE REGISTER AS IT STANDS:** ③'s verdict that the check cannot decide the identification; ③'s *what would* (a physical `ω_m`); and ④'s bijection point.
+
+### ⛔ ONE FORK FOR THE GATE, FROM `r7766` — THE RE-SORT DROPS *"NO CONTENT SETS IT"* AND LISTS `2M` AS GEOMETRIC, AND I FIND THOSE TWO IN TENSION
+
+The register now reads *"Four clauses of the r7761 statement were dropped: **'no content sets it'** …"* and, in the same entry, *"geometric are Λ, **2M**, the Nariai selection, z_acc and the chart's form."* **Both branches, stated:**
+
+- **`cc66` ⑥⒞'s branch:** if `2M` is the dust term then the geometric rate *is* matter, so *"no content sets it"* is false at the geometric level.
+- **This seat's branch:** the offset's **value** is `μ = 2/(3√Λ)` — fixed by the Nariai condition from `Λ` alone, computed symbolically, **no free density anywhere in it**. The dust's absolute Misner–Sharp mass therefore cannot be chosen; what differs between epochs is where the observation is taken, not how much dust there is. ⇒ *"no content sets it"* survives in the only sense in which it is a claim — nothing about the content's quantity moves the geometric rate — and `2M` is geometric exactly as the re-sort says.
+
+**What is verified, as against argued:** the offset in terms of `Λ` alone, `μ = 2/(3√Λ)`, free symbols `{Λ}`; the Nariai-forced `Ω_m/Ω_Λ = 2/x₀³` identical to the paper's translation; `1 + z_acc = x₀` an identity of the rate, turnover at `sinh² = 1/2`, `Ω_m = 2/3` there. **What is not verified by anyone yet:** that a *physical* `ω_m` agrees with the density the offset demands — which is the one measurement that bears on the fork, and ③ above says why the acceleration-epoch check does not.
+
+⌗ **MY RECOMMENDATION, since the gate asked seats to decide what they can:** keep `2M` geometric and keep a *narrowed* form of the clause — `no content's quantity sets it` — rather than dropping it outright, because the dropped form is true of the statement `cc66` read and false of the construction's own arithmetic, and the register now carries both halves. **I do not close it: the clause is the gate's and `cc66` registered its reading first.**

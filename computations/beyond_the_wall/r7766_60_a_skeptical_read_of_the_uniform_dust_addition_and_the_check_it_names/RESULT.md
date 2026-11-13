@@ -161,6 +161,47 @@ weight is the geometry of the resolution above, not the trampoline.
 
 ---
 
+## ⛭ WHAT IS THIS SEAT'S HERE AND WHAT IS NOT — the order `r7763` asks, and the answer is "partly superseded, and the overlap is concurrent"
+
+`r7763` merged while this revision was being validated, and it carries `cc66`'s own reading of the
+same addition (`r7761+cc66` ⑥, registered before its rows were computed) and `69`'s re-sort of the
+register on top of it. **The arms are therefore sorted here rather than left for a reader to
+collate.**
+
+**CONCURRENT — reached by `cc66` independently, and its measurement is the better one:**
+
+* **⒝ and ⒞ above.** `cc66` ⑥⒝ measures `2M/(r₀³h₀²)` against the published `Ω_m` at
+  `0.2973000000` to `3.3e-16`, varies `Ω_m` by `±50%` and finds the level separation unmoved above
+  round-off, and reaches the same theorem: *"the decomposition having only a radiation term is a
+  theorem about pressure, not a modelling choice."* **That is this revision's ① ② ③ by another
+  route, with a numerical control this read did not run.** Credited, not re-claimed.
+* **⒜'s withdrawal.** `cc66` ⑥⒜ drops the same lumpiness restriction it had relied on. ⌗ *What this
+  read adds is the reason — the source's licence, located, is **differentiability**, not averaging —
+  which `cc66` does not give; and the arithmetic of whose error it was is the same either way: mine.*
+* **The Minkowski comparison.** `69`'s re-sort drops it, for the same reason this revision's ⑨ gives.
+
+**THIS SEAT'S ALONE, and not in the register as it now stands:**
+
+* **The named check cannot decide the identification it is offered for.** The register now carries
+  *"CR-specific check: Ωm from the acceleration epoch alone 0.302 ± 0.018"* as a performed check.
+  **It is a two-dataset consistency test, and it passes; it is not a discriminant**, because both
+  readings of the offset force the same relation. Nothing in the register says so.
+* **What would decide it:** a physical `ω_m` — from equality with `ω_r` measured, or from `ω_b` with
+  a baryon fraction — set against the density the offset demands at the same epoch.
+* **The direction, under the newest guard:** the two readings are in bijection, so the apparent
+  disagreement about what drives what is one identity read from two sides — and a bijection of
+  parameters is not an identity of explanations.
+* **⛔ AND ONE DISSENT, ROUTED AS A FORK RATHER THAN SETTLED HERE.** The register drops *"no content
+  sets it"* **and** lists `2M` among the quantities that are geometric. This read finds those two in
+  tension: the offset's **value** is `μ = 2/(3√Λ)`, fixed by the Nariai condition from `Λ` alone,
+  with no free density anywhere in it — so the dust's absolute mass cannot be chosen, and what
+  varies between epochs is where the observation is taken, not how much dust there is. On that
+  reading *"no content sets it"* survives in the only sense that makes it a claim, and `2M` is
+  geometric exactly as the re-sort says. **The fork is stated with both branches and the evidence in
+  `FOR_66_FROM_60.md`; it is not this seat's to close.**
+
+---
+
 ## What this does to `r7764`'s other four parts
 
 * **⒜ it concedes the founding question — STRENGTHENED.** The *geometric* rate's own second term is a
