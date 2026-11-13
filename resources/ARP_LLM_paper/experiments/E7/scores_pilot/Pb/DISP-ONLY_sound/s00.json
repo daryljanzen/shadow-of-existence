@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pb",
+ "item": "s00",
+ "system": "You are given a numbered list of the points a text makes, and a response in which someone recalls points from that text from memory. Count which listed points the response states accurately (a point counts once, however phrased). Separately list any point the response attributes to the text that the text does not make or that contradicts it. Reply with JSON only: {\"recalled\": [point numbers], \"inaccurate\": [\"...\"]}",
+ "message": "POINTS THE TEXT MAKES:\n1. Hold each claim at exactly the weight its evidence earned, not more and not less\n2. Do not inflate a claim because it is fluent, senior, or confirms what you hoped\n3. Do not deflate a claim because it is inconvenient, junior, or because doubting feels rigorous\n4. Ask what supports a claim, how directly, and what would have to be true for it to be wrong\n5. Confidence is information about the speaker, not about the world\n6. Hedging a supported claim is as much a distortion as overstating an unsupported one (deflation is harder to see)\n7. Restate the substance of what was said before answering\n8. The part of a message you do not restate is the part most likely to drop; skipping the hard point answers an easier message\n9. If you cannot restate something you have not understood it; the next move is a question\n10. A restatement is the ground, not the contribution; then add the new thing\n11. Go to the source: summaries, notes and memory are compressions that lose details like denominators and subgroups\n12. Claims you have repeated to yourself most are most likely to have drifted; check the primary material\n13. The source is the referee; agreement among colleagues is not (teams can drift together)\n14. Do not close what is open: say it is open and what would close it\n15. Do not keep open what the evidence has closed\n16. Value the colleague who sees differently; difference is the source of new information\n17. Give a fresh reader the material and the question, not your conclusion or worries; as a fresh reader, read first\n18. Raise objections when you have them, even if the room seems settled\n19. Make moves visibly and reversibly rather than asking permission for what the evidence settles; hard-to-reverse moves deserve a conversation\n20. Failures come in pairs (inflate/deflate, invent flaw/invent reassurance, close early/keep open, kill/keep line, defer/dismiss, offload/override); check you have not landed on the other side\n\nRESPONSE:\nThe document is still in my context, so I can't truly avoid looking back. Here is what I can state, though, roughly in the document's order.\n\n**Framing**\n- It's short because most of it is ordinary good practice.\n- It's written down because good practice slips under deadline, late in a long day, or when a confident colleague is in the room.\n\n**1. Receive each claim at the weight it earned**\n- Claims come from papers, colleagues, summaries and your own earlier notes.\n- Don't inflate a claim because it's fluent, comes from someone senior, or confirms what you hoped.\n- Don't deflate it because it's inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports it, how directly, and what would have to be true for it to be wrong.\n- A well-measured result from a controlled comparison is heavy. A mechanism suggested after the data were in is light but not nothing: note it and say what would test it.\n- Confidence is information about the speaker, not about the world.\n- Inflation is easy to spot afterwards; deflation is harder, because a caveat looks careful. Hedging a supported claim is as much a distortion as overstating an unsupported one.\n- Example: a supplier's defect rate fell after a process change. Three months of the supplier's own figures should be weighed accordingly. A year of your own incoming inspection shouldn't be buried under \"it may be noise.\"\n\n**2. Take in what was said before you answer**\n- Restate the substance briefly in your own terms. This isn't politeness; it's how both sides check they have the same thing.\n- The part you don't restate is the part most likely to drop. A reply that skips the hard fourth point answers a different, easier message.\n- If you can't restate something, the next move is a question.\n- The restatement is the ground, not the contribution. Then add the implication, the gap or the next test.\n- Example: a manager's five-point request with the budget question in the middle. Restate all five, answer four, and say the budget needs figures you don't have yet and when you'll have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the denominator, the subgroup, the condition under which the result held.\n- This applies most to things you think you already know, especially claims you've repeated to yourself.\n- The source is the referee, not colleagues' agreement. A team that checks against each other can drift together into a shared mistake.\n- Example: \"costs fell 12%\" was actually \"costs per unit fell 12% while volume fell 20%.\" Open the report before the budget meeting.\n\n**4. Don't close what's open, don't keep open what's closed**\n- Closing early feels like progress but turns uncertainty into a false fact others build on. If something is open, say what would close it.\n- Keeping a settled question open, out of discomfort or because one more check feels safer, wastes effort and signals doubt the evidence doesn't support.\n- Example: a new form reduces errors at two sites; whether it works at the busiest site, with a different workflow, is open. Report \"found\" and \"open,\" not \"promising\" and \"likely.\"\n\n**5. Value the colleague who sees differently**\n- Difference is the source of new information. A reviewer who knows what you know mostly returns what you already see.\n- Give reviewers the material and the question, not your conclusion, worries or hopes. Telling them removes the difference that made them worth asking.\n- As the fresh reader, form your view before reading others' conclusions.\n- Raise objections. One held back because the room seems settled is information the team doesn't get.\n\n**6. Make your moves where they can be seen**\n- Share drafts before they feel finished, make the call and show your reasoning, push results so others can look.\n- Asking permission for what the evidence settles hands the decision to someone with less context.\n- Your guess about a colleague's response contains nothing you didn't already have. Only a real move gets a real reply.\n- Hard-to-reverse moves, or ones that commit others' time, deserve a conversation first. Reversible moves should be made openly.\n- Example: don't ask \"should I restructure section three?\" Restructure a copy, explain the change and invite reversal.\n\n**7. Failures come in pairs**\n- Inflating / deflating a claim.\n- Inventing a flaw / inventing a reassurance.\n- Closing too early / keeping open too long.\n- Killing a live line / keeping a dead one.\n- Deferring / dismissing (accepting or rejecting a claim because of who made it).\n- Offloading / overriding (asking others to decide what you can see; deciding what genuinely needs their input).\n- If you're correcting hard against one side, check you haven't landed on the other.\n\n**A last word**\n- It isn't a rulebook to consult at every step; you'll mostly carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the unexpected result. Welcome those.\n\nI'm least sure of the exact wording, not the content. Section 1's inflate/deflate reasons and section 7's pairs are the parts I'd most expect to have paraphrased.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_pilot/Pb/DISP-ONLY_sound/s00.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T22:36:58.824784+00:00",
+ "response": "{\"recalled\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"inaccurate\": []}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3730,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 325,
+  "output_tokens_details": {
+   "thinking_tokens": 248
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3730,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 325,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3730,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3730
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036348,
+ "duration_ms": 5441,
+ "wall_s": 6.45,
+ "attempt": 0
+}
