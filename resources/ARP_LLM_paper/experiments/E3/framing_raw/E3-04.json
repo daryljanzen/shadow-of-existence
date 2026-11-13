@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-04",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis evaluation gives us, for the first time, a clean side-by-side comparison of schools with and without reminders across a full season, using the immunisation team's own vaccination records rather than survey data. The headline is striking: a 13-point uptake advantage in reminder schools, with consent return clearly identified as the bottleneck, since over 92% of consented children were vaccinated in both groups. That tells us exactly where to intervene, and text reminders act directly on consent. It is also good news that Eastvale reached 66% overall uptake, above the national 65% ambition for the first time, so we are building on success. The cost analysis is deliberately cautious, assuming every reminder goes to every non-consenting family, and still comes in under £5,000. I have looked hard for reasons not to scale this and have not found any: it is cheap, quick to deploy and the effect size is large. Extending it to all 92 schools is the obvious next step.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"Overall uptake across Eastvale was 66.0%, above the national ambition of 65% for this age group for the first time.\" -- 13,772 vaccinated / 22,080 eligible = 62.4%, not 66.0% (the table's 'All schools' uptake is also wrong). Correctly computed, Eastvale is below, not above, the 65% ambition.\n2. [unsupported_causal] at: \"It shows that text reminders raise uptake by around 13 percentage points, more than any other intervention we have tried\" -- Schools self-selected into reminders, and the document states opting-in schools were disproportionately those with a full-time school nurse (29/38 vs 11/54) and more affluent. The 13-point gap is confounded and cannot be attributed to the reminders.\n3. [missing_consideration] at: \"extending them to the 54 non-reminder schools should raise uptake there from 57% to around 70%\" -- The projection assumes reminders will reach families in the non-reminder schools as they did elsewhere, but the document reports a valid mobile number for only 61% of those families (vs 93% in reminder schools). The recommendation never addresses that roughly 39% of families could not receive a text.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-04.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:44.701984+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"not_mentioned\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2149,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 29,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2149,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 29,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2149,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2149
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.017779999999999997,
+ "duration_ms": 4365,
+ "wall_s": 8.37,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-05",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nI think this post-mortem is a good example of the team diagnosing a problem properly rather than guessing. We had a clean natural experiment: the Reorder button was removed on 2 February and restored on 2 March with nothing else changing, and orders per user fell and then recovered in step with it, corroborated by a tenfold rise in support contacts about reordering. We quantified the damage carefully, at 39,600 lost orders and roughly £1.05 million in revenue, so leadership can see the real cost. The platform breakdown also helps target the fix, since it shows Android users were hit hardest, consistent with the deeper menu placement on that build. We were also careful not to throw out the good parts of v5.0: the data show search-bar users order 40% more, which gives us a clear direction for v5.2. The actions are concrete, owned and measurable, and they address both the testing gap and the monitoring gap. I am confident we understand what happened and have the right changes in place.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"At our average order value of £38, this is approximately £1.05 million in lost revenue.\" -- 39,600 lost orders x £38 = £1,504,800, i.e. about £1.5 million, not £1.05 million. (The 39,600 itself is correct: 6,850 + 10,450 + 11,050 + 11,250.)\n2. [misread_evidence] at: \"The decline was concentrated among Android users, which is consistent with the Android build placing order history one level deeper\" -- Table 2 shows orders fell 21% on iOS and only 13% on Android, so the decline was concentrated on iOS, not Android. The text inverts the table and builds an explanation on the misreading.\n3. [unsupported_causal] at: \"Search is clearly driving purchasing, and we will build on this by making search results the default landing view\" -- The evidence is a correlation between using search and ordering more in the same week. More engaged/frequent buyers (or customers already intending to buy) are more likely to use search, so selection and reverse causation explain the association; it does not show search drives purchasing.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-05.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:52.372564+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2115,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 25,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2115,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 25,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2115,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2115
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.017428000000000003,
+ "duration_ms": 4039,
+ "wall_s": 8.1,
+ "attempt": 0
+}

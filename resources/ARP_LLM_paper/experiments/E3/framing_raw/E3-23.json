@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-23",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis analysis cuts through a lot of anecdote about churn and shows exactly where it is happening. We segmented the whole residential base by contract status, using a full six months of billing data rather than a sample, and combined that with the reasons customers gave when they left. The picture is clear. Churn is low in contract and rises sharply afterwards, and it is highest among customers who have been out of contract for more than a year, so that is where the retention offer is aimed. The reasons data confirm that price is the main driver, and the May spike after the price rise reinforces this. We have also put a clear number on what is at stake, around £7.4 million a year in lost revenue, which puts the cost of the proposed offer into perspective. The recommendations are targeted and affordable, and I am confident they focus our H2 retention budget where it will make the most difference.\n\nKNOWN FLAWS:\n1. [misread_evidence] at: \"It is highest among our longest-standing out-of-contract customers, those who have been out of contract for 12 months or more\" -- Table 1 shows churn of 11.0% for customers out of contract for less than 12 months and 8.0% for 12 months or more. Churn is highest in the first year out of contract, so the retention offer in 5.1 is aimed at the wrong segment.\n2. [arithmetic] at: \"The 16,340 customers lost in H1 therefore represent annualised revenue of about £7.4 million\" -- 16,340 x £34 x 12 = £6,666,720, about £6.7 million, not £7.4 million.\n3. [inconsistency] at: \"The spike in cancellations after the 8% April price rise\" -- Section 2 states the April 2026 price rise was 6.5%; recommendation 5.2 refers to an 8% April price rise.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-23.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:26.688090+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"mentioned\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2006,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 27,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2006,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 27,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2006,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2006
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.016596,
+ "duration_ms": 3424,
+ "wall_s": 7.26,
+ "attempt": 0
+}

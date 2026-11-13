@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-01",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis business case is built on ten months of real operating data from our own stores, not vendor projections. We ran the pilot long enough to see past the novelty effect, and we tracked the measures the Committee told us it cared about: labour hours, queue times, shrink and satisfaction. Every one moved the right way or held steady. I am particularly pleased with the basket-value finding: pilot stores grew basket value three times as fast as the rest of the estate, which tells us self-checkout is not just a cost play but a better shopping experience that customers reward with bigger shops. We deliberately left that upside out of the numbers to stay conservative. The financials were built bottom-up from the vendor quote and our own payroll rates, and they show net annual savings of about £1.12 million and a payback of roughly 14 months, comfortably inside the 24-month hurdle. Finance has walked through the model with us. The labour transition is covered by normal turnover, so there is no redundancy risk. This is a low-risk, well-evidenced investment and the case for approving it is strong.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"After maintenance and licensing, net annual savings are £1,118,432.\" -- Maintenance and licensing (£67,200) has been added to gross labour savings (£1,051,232) instead of subtracted. Correct net savings are £1,051,232 - £67,200 = £984,032, so payback on £1,344,000 is about 16.4 months, not 'about 14 months'.\n2. [inconsistency] at: \"Across the three pilot stores, the key results after ten months were:\" -- The document elsewhere says the pilot ran in four stores and names them (Ashby, Carrow, Denholme and Wexley); here the results are attributed to three pilot stores. The pilot store count contradicts itself.\n3. [unsupported_causal] at: \"Basket value grew three times as fast in the pilot stores as in the rest of the estate, which shows that faster, more convenient checkout encourages customers to buy more per visit.\" -- Pilot stores were not randomly chosen: the document says they were selected because they had just been fully refurbished in early 2025 (and were larger). Refurbishment and store selection are obvious confounders for basket growth, so the comparison cannot show that self-checkout caused larger baskets.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-01.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:44.696507+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"not_mentioned\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2188,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 29,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2188,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 29,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2188,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2188
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.018091999999999997,
+ "duration_ms": 3765,
+ "wall_s": 7.67,
+ "attempt": 0
+}

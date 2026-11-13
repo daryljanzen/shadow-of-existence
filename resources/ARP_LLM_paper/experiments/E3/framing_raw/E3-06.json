@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-06",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis review is grounded in a complete, channel-by-channel reconciliation of the 2025 cycle: every application, interview, offer and acceptance is traced back to its source, and the totals tie out across both tables. That lets us see clearly where our money goes. Two findings stand out. First, our overall cost per hire of around £1,240 is above the sector benchmark of £1,150, which gives us a clear, externally anchored reason to act. Second, job boards produce hires at £600 each, less than half the cost of careers fairs, so the recommendation to shift budget from fairs to boards is driven directly by our own data rather than opinion. We also learned something useful about referrals: they have the best acceptance rate, which reflects the honest picture referrers give. The recommendations keep the assessment process, which candidates rated as fair, completely unchanged and touch only sourcing. I think this is a balanced, evidence-led set of changes that will cut costs without any risk to quality.\n\nKNOWN FLAWS:\n1. [misread_evidence] at: \"Employee referrals produced the highest offer acceptance rate of any channel\" -- Table 1 gives acceptance rates of 39/46 = 84.8% for careers fairs, 34/51 = 66.7% for job boards and 22/28 = 78.6% for referrals. Careers fairs, not referrals, had the highest acceptance rate.\n2. [arithmetic] at: \"Across all channels we spent £100,900 for 95 hires, an average of £1,240 per hire\" -- £100,900 / 95 = £1,062 per hire, not £1,240. Correctly computed, the company is already below the £1,150 benchmark, undermining the stated priority.\n3. [missing_consideration] at: \"Job boards deliver hires at £600 each, less than half the cost of careers fairs, so shifting volume towards them will allow us to reach the 2026 target\" -- The recommendation compares channels only on sourcing cost per hire, ignoring the first-year attrition in Table 1 (job boards 11/34 = 32% left within 12 months vs 3/39 = 8% for fairs) and the document's own estimate of about £18,000 per first-year leaver. On the document's figures, job-board hires are far more expensive once attrition is counted, and retained headcount toward the target would fall.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-06.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:53.069976+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2196,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 25,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2196,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 25,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2196,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2196
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.018076000000000002,
+ "duration_ms": 4336,
+ "wall_s": 8.28,
+ "attempt": 0
+}

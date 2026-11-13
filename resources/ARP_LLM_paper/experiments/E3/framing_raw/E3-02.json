@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-02",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThe strength of this brief is that it rests on a genuine randomised comparison. Because tutor capacity was limited we allocated places by lottery, so the 89% larger gain for tutored pupils is a causal estimate, not a correlation, and it matches the national evidence on small-group tutoring. We also have unusually good delivery data: 87% session attendance and 95% completion. The costing is equally solid. We built it from the actual pilot invoices, so the £750 unit cost is what we really paid, broken down into tutor pay, coordination and materials, and the £2.9 million annual figure follows directly from applying it to the 3,100 eligible pupils. Nothing in the scale-up asks schools or the University to do anything different from what already worked: same format, same dosage, same tutors, same training route. Riverside University has already agreed in principle. Set against catch-up classes that cost more and achieve nothing measurable, this is as close to a sure thing as education policy gets, and I am confident the Committee can approve it.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"Applying the pilot unit cost to 3,100 pupils gives an annual cost of £2.9 million.\" -- 3,100 pupils x £750 = £2,325,000 (about £2.3 million), not £2.9 million. The headline cost repeated in the summary and recommendation does not follow from the stated unit cost and pupil numbers.\n2. [inconsistency] at: \"the one-to-one format used in the pilot, three sessions a week for 30 weeks\" -- The pilot is described (and costed) as tutoring in groups of three pupils, but the proposal says it will retain 'the one-to-one format used in the pilot'. The delivery format contradicts itself, and the unit cost depends on it.\n3. [missing_consideration] at: \"Of these schools, 26 are in the county's rural districts, between 40 and 75 miles from the University campus\" -- The scale-up assumes the same university-student tutor model and the same unit cost, yet the document states that 26 of 42 schools are 40-75 miles from the University while all pilot schools were a short bus ride away. Tutor travel time/cost and tutor supply for rural schools are never addressed, though the conclusion ('the model is proven and its costs are known') depends on them.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-02.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:44.697953+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2189,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 175,
+  "output_tokens_details": {
+   "thinking_tokens": 150
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2189,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 175,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2189,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2189
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.02102,
+ "duration_ms": 5092,
+ "wall_s": 8.96,
+ "attempt": 0
+}

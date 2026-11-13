@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-18",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis audit used a properly stratified random sample and tested every claim against the written policy, so the exception rates can be generalised to the whole year's 9,860 claims with reasonable confidence. The key results are clear. The approval control has a genuine design flaw, which we have rated high priority, and we have quantified its impact. Beyond that, the most important finding is that over-limit spending, chiefly on regional hotels, is the leading type of exception, and our interviews show this reflects an outdated limit rather than claimants ignoring the rules, which points to a policy fix rather than disciplinary action. We also found strong evidence for the mobile expenses app: units that use it have an exception rate of 9% against 21% elsewhere, so rolling it out offers a practical, proven way to improve compliance. Each recommendation has an owner and a priority. I am confident the opinion of limited assurance is fair and that management has a clear path to improvement.\n\nKNOWN FLAWS:\n1. [inconsistency] at: \"with an average rate of £134 per night against the £120 limit\" -- Section 2 states the hotel limit outside London is £110 per night; section 4 refers to a £120 limit. The policy limit contradicts itself.\n2. [misread_evidence] at: \"The most common exception was spending over policy limits, particularly on hotels.\" -- Table 1 shows missing or non-itemised receipts (22 claims, 9.2%) as the most common exception; over-limit spending (14, 5.8%) is second. The text misreads the table, and the overall opinion ('the main source of exceptions is an outdated hotel limit') rests on it.\n3. [unsupported_causal] at: \"The app clearly reduces exceptions, and rolling it out to all units should bring the Group exception rate down to around 9%.\" -- The document states Sales and Field Engineering claims are mostly mileage claims, which need no receipts, while other units' claims are mostly hotel/rail/meal claims. Since missing receipts are the main exception type, the claim mix confounds the comparison; it does not show the app caused lower exception rates.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-18.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:17.679108+00:00",
+ "response": "{\"1\": \"not_mentioned\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2116,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 153,
+  "output_tokens_details": {
+   "thinking_tokens": 124
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2116,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 153,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2116,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2116
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.019996,
+ "duration_ms": 5553,
+ "wall_s": 9.39,
+ "attempt": 0
+}
