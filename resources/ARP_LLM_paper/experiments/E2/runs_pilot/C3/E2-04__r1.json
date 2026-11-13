@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-04",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_pilot/C3/E2-04__r1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T01:02:12.288311+00:00",
+ "response": "# Yes, the modeller is right\n\nThis is a well-known result called **Braess's paradox**. Your intuition, \"at worst people ignore it,\" holds when one planner routes everyone for the common good. It fails when each driver picks the fastest route for themselves.\n\n## Before the connector\n\n- Route 1: Mill Road (2,000/100 = 20) + East Highway (45) = **65 min**\n- Route 2: West Highway (45) + River Road (2,000/100 = 20) = **65 min**\n\nNo driver can save time by switching, so this split is stable.\n\n## After the connector\n\nA third route opens: Mill Road → connector → River Road.\n\nStart from today's 65-minute split. One driver tries the new route: Mill (~20) + 0 + River (~20) ≈ **40 min**. That is a large saving, so drivers keep switching. Each switch makes Mill Road and River Road more crowded.\n\nTwo facts settle where this ends:\n\n- **Mill Road always beats the West Highway.** Even with all 4,000 cars on it, Mill Road takes 4,000/100 = 40 min, which is less than 45.\n- **River Road always beats the East Highway**, for the same reason.\n\nSo for every driver, the connector route is at least as good as either original route, whatever everyone else does. Everyone takes it:\n\n- Mill (40) + connector (0) + River (40) = **80 min**\n\nCould anyone do better by switching back?\n\n- Mill + East Highway: 40 + 45 = 85. Worse.\n- West Highway + River: 45 + 40 = 85. Worse.\n\nNo one gains by deviating, so 80 minutes is the stable outcome. Because the connector route is best for everyone regardless of others' choices, it is the only stable outcome. Everyone is 15 minutes worse off.\n\n## Why \"people would just ignore it\" fails\n\nIgnoring the connector is the best outcome for the group. But it is not stable: any single driver can save about 25 minutes by using it. Each driver who switches also slows everyone on Mill Road and River Road, and doesn't account for that cost. It's the same structure as the prisoner's dilemma.\n\n## What the model assumes\n\nThe arithmetic is correct. Whether the real outcome matches depends on assumptions you should check with the modeller:\n\n1. **Fixed demand.** It assumes exactly 4,000 drivers. In reality, slower commutes push some people to leave earlier, switch to transit, or stay home. That could soften the result.\n2. **Linear congestion and constant highways.** If the highways also slow down with traffic, or the side roads have a hard capacity, the numbers change. The direction often stays the same, though.\n3. **Drivers know and respond to travel times.** With navigation apps, this is fairly realistic.\n4. **\"Essentially no time\" for the connector.** If the connector takes about 10 minutes or more, the effect weakens. At around 10 minutes, the connector route costs 40 + 10 + 40 = 90 at full use, so drivers would no longer all pile onto it.\n\nTo settle the question for the real proposal, ask the modeller to re-run it with realistic connector travel time, congestion on the highways, and some flexibility in demand.\n\n## This happens in practice\n\nClosing roads has sometimes improved traffic. Examples include the Cheonggyecheon highway removal in Seoul and street closures in Stuttgart and New York. These cases are usually explained this way.\n\n## Options for the council\n\n- Don't build the connector, or\n- Build it with a toll, signal timing, or turn restrictions that limit its use. For example, a toll of about 25 minutes' worth of value would restore the 65-minute outcome.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 797,
+  "cache_read_input_tokens": 824,
+  "output_tokens": 1581,
+  "output_tokens_details": {
+   "thinking_tokens": 391
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 797,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1581,
+    "cache_read_input_tokens": 824,
+    "cache_creation_input_tokens": 797,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 797
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038168799999999996,
+ "duration_ms": 18863,
+ "wall_s": 19.71,
+ "attempt": 0
+}

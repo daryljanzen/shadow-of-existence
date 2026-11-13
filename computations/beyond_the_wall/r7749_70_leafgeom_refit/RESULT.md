@@ -87,3 +87,28 @@ At z < 3 radiation is negligible, so the leaf-rate geometry leaves the BAO fit w
 - `launch_grid2.sh`: the re-centred grid.
 - `figures.json` and `distances.json`: every figure.
 - **Spectra:** the no-fit and verify spectra and the second grid are in this seat's scratchpad. They can be banked to `spectra/` as additions if the gate wants them, with the manifest pattern of `r7643`.
+
+## ⒡ θ\* on the corpus's own definition (`r7753` ①), and the receipt (`r7753` ②)
+
+**The definition** is the P15 DESI receipt's (`theta_corpus.py`). θ\* = r_s / D_M(z_rec):
+- r_s is the leaf sound horizon from z_hi to z_rec = 1090, always on the leaf clock, per node 66's ruling;
+- D_M is the distance on the geometry's own rate: stacking for the arm of record, leaf for this assignment;
+- z_hi = the arm's ZSTART = 3e7 (1e8 changes the fifth decimal).
+
+| point | arm of record (D_M stacking) | **leaf-rate assignment (D_M leaf)** |
+|---|---|---|
+| distances' point (68.60, 0.2973) | 1.03715, **−11.9σ**, no onset reaches θ_obs | 1.04235, **+4.8σ**, an onset at z = 1.23e6 matches |
+| arm of record refit point | 1.03684, **−12.9σ**, no onset reaches θ_obs | 1.04215, +4.2σ, matched at 1.40e6 |
+| **leaf-rate refit minimum** | 1.03633, −14.6σ, no onset reaches θ_obs | **1.04157, +2.3σ**, matched at 2.44e6 |
+
+Values are 100 θ\*.
+
+- **On the corpus's own definition, the leaf-rate refit sits at +2.3σ.** Within 3σ, so "what counts against" ② does not fire on this definition either.
+- **The arm of record sits 12–15σ low, and no onset reaches Planck's θ\*,** because the leaf sound horizon run to z_hi = 1e9 is still short against the stacking-rate distance.
+- On this assignment, an onset near z ≈ 2.4e6 matches θ\* exactly.
+- The instrument's own r_s/D_M gave +2.9σ and −12.3σ, so the two definitions agree to a few tenths of a σ.
+
+**The receipt:** `receipts/P15_CR_cosmology/P15_with_the_projection_distance_on_the_leaf_rate_the_refitted_spectrum_is_level_with_the_control_and_the_bao_fit_does_not_move.py`, 15 checks, all pass.
+- It reads the two spectra banked at r7753, `spectra/r7749_leafgeom_nofit_L2000_cr.npz` and `…_refit_verify_cr.npz`. Each carries `switches` and `manifest`, and the receipt asserts LEAFGEOM=1 from each file's own switches line.
+- It reproduces 186.85 / 1.002× and 196.5 / 0.918×, the arm of record's 502.1 / 2.35× and 297.7 / 1.60×, the BAO 10.539 → 10.556 and 10.654 → 10.650, and the θ\* figures above.
+- It is registered in `receipts/INDEX.md` after the last P15 row, so no existing receipt is renumbered. The P15 and corpus appendices are regenerated: +5 lines each, and nothing else moves.

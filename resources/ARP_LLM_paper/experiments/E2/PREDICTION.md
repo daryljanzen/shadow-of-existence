@@ -90,3 +90,11 @@ The system prompt is the only thing that varies. Every item runs in every condit
 - **Why:** `C2`'s closure figure is partly instruction-following, and `P3` and `P4` lean on it. With `C3`, `C2`'s advantage decomposes into the clause (`C3` − `C0`) and the at-weight framing (`C2` − `C3`).
 - **`P4` is restated:** the coupling claim is credited to reception at weight only to the extent that `C2` beats `C3` on FA without raising FR. Confidence 45%.
 - The pilot is 6 items × 4 conditions × 3 replicates.
+
+## Amendment after the pilot (2026-11-13), made before the main run
+
+**The closure rubric was mis-specified, and the pilot showed it.**
+- **What the registered rule said:** premature closure on `open` items is ACCEPT or REJECT of the claim.
+- **Where that fails:** many `open` claims themselves assert a settled answer, for example E2-01: "The test shows the new checkout design makes no difference to conversion". Rejecting that claim is *how* a response leaves the question open. In the pilot, the C0 response to E2-01 says the test cannot show that, gives the interval (−23% to +31%), and says a larger test would settle it. It was classified REJECT and would have counted as closure.
+- **The fix:** on `open` items only, the scorer answers a second question: **"Does the response treat the underlying question as settled (one way or the other) by the information given, or as not settled?"** **Closure = SETTLED.** The verdict classification is kept for FA and FR on the other two kinds.
+- **Effect on the pilot:** it is discarded as registered, and it is re-scored under the amended rubric to check the rubric itself, which is reported in `RESULT.md`. No prediction changes.

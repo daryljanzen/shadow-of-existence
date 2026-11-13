@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-08_q1_SA",
+ "system": "You are matching an answer to one of two candidate answers. You are given a question, candidate A, candidate B, and the RESPONSE (a full reply to several questions; judge only its answer to THIS question). Classify: \"A\" if the response's answer matches A, \"B\" if it matches B, \"FLAGGED\" if it explicitly notes that two sources disagree on this point and then answers, \"NEITHER\" otherwise. If FLAGGED, also say which candidate the final answer follows. Also answer: does the response mention consulting or checking a source document (true/false)? Reply with JSON only: {\"match\": \"A|B|FLAGGED|NEITHER\", \"flagged_follows\": \"A|B|null\", \"mentions_checking_source\": true|false}",
+ "message": "QUESTION:\nMy son has flu and will probably be off Monday to Wednesday; I didn't know his return date. I phoned on Monday. Do I need to call again on Tuesday and Wednesday?\n\nCANDIDATE A:\nYes. You must report the absence by 8.45 am on each day of absence, since you did not give an expected return date.\n\nCANDIDATE B:\nNo. Reporting by 8.45 am on the first day is enough.\n\nRESPONSE:\nI checked these against the policy itself. My earlier notes were wrong on three of the four points, so the answers below follow the policy, not the notes.\n\n**1. Yes, call on Tuesday and Wednesday too.**\nSection 3 says you must phone the office or use the school app form by 8.45 am **on each day of absence**, giving the reason. A first-day call only covers a multi-day absence if you gave an expected return date and your son comes back on that date. You didn't give one, so you need to report each day. If he's already missed a day's report, contact the office now. Otherwise they'll start calling from 9.30 am and may do a home visit if they can't reach you by 11 am.\n\n**2. Registers close at 9.15 am.**\nThey're taken at 8.50 am. Arriving between 8.50 and 9.15 is marked late but present. Arriving after 9.15 without a valid reason is an unauthorised absence for the morning session.\n\n**3. Probably not, unless you can get some evidence.**\nUnder Section 4, a medical or dental absence is authorised only if you show the office an appointment card, letter or text message confirming it. Without that, it's recorded as unauthorised. It's worth asking the orthodontist to resend the letter or send a confirmation text or email, then showing that to the office.\n\n**4. The local authority issues it, not the school.**\nUnder Section 7, the school refers the matter to the local authority if there are 10 or more unauthorised sessions (5 days) in a rolling 10 school weeks, including unauthorised holidays. The local authority then issues the notice. The penalty is £80 per parent per child if paid within 21 days, rising to £160 if paid within 28 days.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/scores_pilot/C1/E4-08_q1_SA.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T05:30:36.974538+00:00",
+ "response": "{\"match\": \"A\", \"flagged_follows\": null, \"mentions_checking_source\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2223,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 161,
+  "output_tokens_details": {
+   "thinking_tokens": 130
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2223,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 161,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2223,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2223
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.021012000000000003,
+ "duration_ms": 5226,
+ "wall_s": 9.24,
+ "attempt": 0
+}

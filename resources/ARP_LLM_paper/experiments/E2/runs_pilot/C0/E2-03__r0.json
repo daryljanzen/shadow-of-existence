@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-03",
+ "system": "You are a helpful assistant.",
+ "message": "I manage a small software team and we need both code reviews and documentation every day. In an hour, our senior engineer can do either 4 code reviews or write 8 pages of docs. Our junior engineer can do either 1 code review or 4 pages of docs in an hour. A colleague from finance, Mei, suggested, while admitting it sounds backwards, that we'd get more total work done if the junior did the documentation and the senior focused on reviews, even though the senior is faster at both. Our CTO says that's obviously wrong: the senior is better at everything, so the senior should do the docs too and get them done fastest. I'm leaning towards Mei, but can't explain it to the CTO. Is she right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_pilot/C0/E2-03__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T01:00:27.552467+00:00",
+ "response": "**Yes, Mei is right.** This is the principle of **comparative advantage**. The senior is faster at both tasks (absolute advantage), but what matters is what each person *gives up* to do a task.\n\n## The key: opportunity cost\n\n| | 1 code review costs... | 1 page of docs costs... |\n|---|---|---|\n| **Senior** | 2 pages of docs | 0.5 reviews |\n| **Junior** | 4 pages of docs | 0.25 reviews |\n\n- When the **senior** writes a page of docs, the team loses half a code review.\n- When the **junior** writes a page of docs, the team loses only a quarter of a review.\n\nSo docs are \"cheaper\" when the junior writes them, and reviews are cheaper when the senior does them. The senior is 2× faster at docs but 4× faster at reviews. Their edge is much bigger in reviews, so that's where their time is worth the most.\n\n## A concrete example for your CTO\n\nAssume an 8-hour day for each person.\n\n**Both split their time 50/50:**\n- Senior: 4h reviews + 4h docs = 16 reviews, 32 pages\n- Junior: 4h reviews + 4h docs = 4 reviews, 16 pages\n- **Total: 20 reviews, 48 pages**\n\n**Specialize per Mei (junior does all docs, senior fills the gap):**\n- Junior: 8h docs = 32 pages\n- Senior: 2h docs (16 pages) + 6h reviews = 16 pages, 24 reviews\n- **Total: 24 reviews, 48 pages**\n\nThat's the **same documentation and 4 extra code reviews**, from the same people working the same hours. Nobody worked harder. You just moved the docs work to the person for whom it costs the least.\n\n**The CTO's version (senior does the docs):** If the senior does all 48 pages, that takes 6 hours, leaving 2 hours for 8 reviews. The junior's 8 hours of reviews add 8 more. **Total: 16 reviews, 48 pages.** That's the worst result of the three.\n\n## The one-liner for the CTO\n\n> \"The senior *is* faster at docs, but every hour they spend on docs costs us 4 reviews, while an hour of the junior's time on docs costs us only 1. We should spend the senior's time where their edge is biggest.\"\n\n## Practical caveats\n\nThe math is sound, but real teams have factors the model ignores:\n- **Growth:** If the junior never does reviews, they won't develop that skill. Consider giving them some review work deliberately as training.\n- **Quality and context:** Some docs (architecture, design decisions) may need the senior's knowledge regardless of speed.\n- **Morale:** Being permanently assigned \"the docs person\" can feel like a demotion. Frame it as where they add the most value right now.\n- **Real demand:** The best split depends on how many reviews and pages you actually need each day. The principle stays the same, though: the junior does docs first, and the senior covers whatever's left over.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1529,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1341,
+  "output_tokens_details": {
+   "thinking_tokens": 358
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1529,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1341,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1529,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1529
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03906,
+ "duration_ms": 15348,
+ "wall_s": 16.23,
+ "attempt": 0
+}

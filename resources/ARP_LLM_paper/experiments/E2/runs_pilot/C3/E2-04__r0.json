@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-04",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_pilot/C3/E2-04__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T01:01:56.795087+00:00",
+ "response": "# Yes, the modeller is right\n\nThis is a well-known result called **Braess's paradox**, and the numbers check out.\n\n## Today, without the connector\n\n- Route 1: Mill Road (2,000/100 = 20) + East Highway (45) = **65 min**\n- Route 2: West Highway (45) + River Road (2,000/100 = 20) = **65 min**\n\n## With the connector\n\nThere is now a Route 3: Mill Road → connector → River Road.\n\nStart from today's even split and consider one driver deciding alone. Route 3 costs about 20 + 0 + 20 = **40 minutes**, compared with 65 on their current route. Switching is the obvious choice for that driver, and it is just as obvious for every other driver. As people switch, Mill Road and River Road fill up. When all 4,000 drivers use Route 3:\n\n- Route 3: 40 + 0 + 40 = **80 min**\n- Route 1: 40 + 45 = 85 min\n- Route 2: 45 + 40 = 85 min\n\nNobody can improve their time by switching back, so this is the stable outcome. Everyone commutes 80 minutes instead of 65.\n\nThe new route doesn't just win at one particular traffic split. It beats the other routes in every case. Route 3 beats Route 1 whenever River Road takes less than 45 minutes. It beats Route 2 whenever Mill Road takes less than 45 minutes. With only 4,000 drivers, neither road can reach 45 minutes (that would take 4,500 cars). So all-on-Route-3 is the only stable outcome, not just one possibility among several.\n\n## Where the intuition goes wrong\n\n\"At worst, people ignore it\" would be true if one planner assigned routes for everybody. That planner could simply leave the connector unused and keep 65 minutes. But each driver chooses for themselves. Taking the connector is always better *for you*, whatever everyone else does. When everyone does it, the free-flowing highways are abandoned and all traffic piles onto the two congestible roads. It works like a prisoner's dilemma: each choice is sensible on its own, and together they make everyone worse off.\n\n## What the result depends on\n\nThe conclusion follows from the model's assumptions, so check whether they hold:\n\n- **Fixed demand:** still exactly 4,000 drivers, with no shift in departure times, mode, or trip choice.\n- **Selfish routing with good information:** drivers find and use the fastest route, for example via navigation apps.\n- **The cost functions:** the highways really are flat at 45 minutes, and the local roads really scale linearly with traffic.\n- **The connector itself:** it really takes no time and adds no congestion at its junctions.\n\nChanging these could weaken the effect or remove it. That could include signal delays at the connector, highways that also congest, or growth in demand. Re-running the model with calibrated delay curves and junction costs would show whether the paradox survives with realistic inputs.\n\n## Real-world precedent\n\nThe effect has been observed in practice. Closing roads sometimes improved traffic: 42nd Street in New York, Seoul's Cheonggyecheon freeway removal, and cases in Stuttgart are often cited. So the council should take the modeller seriously. Possible responses include not building the connector, or controlling its use with tolls, turn restrictions, or signal timing so it doesn't pull everyone off the highways.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1621,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1705,
+  "output_tokens_details": {
+   "thinking_tokens": 599
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1621,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1705,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1621,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1621
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.047076,
+ "duration_ms": 22845,
+ "wall_s": 23.62,
+ "attempt": 0
+}

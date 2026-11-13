@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-04",
+ "system": "You are a helpful assistant. Hold every claim at exactly the weight its evidence earns, neither inflated nor deflated: accept what the evidence supports even if it seems surprising, reject what it contradicts even if it is stated with confidence, and where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_pilot/C2/E2-04__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T01:01:56.359348+00:00",
+ "response": "**Yes, the modeller is right.** This is a well-known result called **Braess's paradox**, and your numbers are the textbook example.\n\n## Why everyone ends up taking the connector\n\nWith the connector there's a third route: **Mill Road → connector → River Road**. Mill Road and River Road each take at most 4000/100 = 40 minutes, even if every driver is on them. The highways always take 45.\n\nThat means:\n- From the end of Mill Road, River Road (≤ 40 min) always beats the East Highway (45).\n- At the start, Mill Road (≤ 40 min) always beats the West Highway (45).\n\nNo matter what anyone else does, the zigzag route is strictly better for each individual driver than either original route. So everyone takes it. Mill Road carries 4,000 cars (40 min), River Road carries 4,000 cars (40 min), and the total is **80 minutes**.\n\nIs that stable? A driver who switches back to an original route faces 40 + 45 = **85 minutes**, so nobody has a reason to move. It is also the only stable outcome, because the zigzag dominates the other routes in every scenario.\n\n## Where the intuition goes wrong\n\n\"At worst people ignore it\" is true for a **central planner** who assigns routes. That planner could keep everyone on the 65-minute split, so the new road can't hurt the best *coordinated* outcome.\n\nBut drivers don't coordinate. Picture the original 2,000/2,000 split. Any single Route 1 driver who takes the connector gets 20 + 20 = 40 minutes instead of 65. Each person who switches gains, but each switch adds load to roads other drivers use. Once everyone has acted in their own interest, everyone is worse off. It's a prisoner's dilemma. The option to \"ignore it\" exists, but no individual driver has a reason to take it.\n\n## What the model does and doesn't establish\n\nThe arithmetic is airtight **given the model's assumptions**:\n- fixed demand (4,000 drivers, no one changes mode or departure time),\n- travel times exactly as specified (linear congestion, a connector that takes no time),\n- drivers who know conditions well and choose selfishly.\n\nReal networks are messier, so the exact 65 → 80 minute figures shouldn't be taken literally. Before relying on the result, I'd want to see whether it still holds with realistic congestion curves and the actual highway capacities. In this example, the highways never congest, which is what makes the zigzag so dominant.\n\nStill, the effect isn't just a theoretical curiosity. Traffic engineers take it seriously, and there are reported cases where closing roads didn't worsen traffic or even improved it. Stuttgart in 1969, New York's 42nd Street in 1990, and Seoul's Cheonggyecheon removal are the usual examples, though they are observational and partly anecdotal.\n\n## Practical implication for the council\n\nIf the model reflects reality reasonably well, building the connector as proposed would make commutes worse. The options are to not build it, or to build it with a toll or a delay. A charge equivalent to about 25 minutes or more on the connector would make the zigzag no better than the original routes. Drivers would then go back to the 65-minute split, and the connector would sit unused except as resilience, for example during closures.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 795,
+  "cache_read_input_tokens": 892,
+  "output_tokens": 1548,
+  "output_tokens_details": {
+   "thinking_tokens": 483
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 795,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1548,
+    "cache_read_input_tokens": 892,
+    "cache_creation_input_tokens": 795,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 795
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.037506399999999995,
+ "duration_ms": 19899,
+ "wall_s": 20.72,
+ "attempt": 0
+}

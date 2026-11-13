@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Renewal Memo\n\n**Overall:** This is a strong memo. The recommendation comes first, and the argument is organised around the committee's real concerns (accreditation, deterrence, workload, legal exposure). It admits the deterrence gap openly. The arithmetic checks out: 6,150 × 9 min ≈ 920 hrs, 308/6,150 = 5%, and 40%→100% coverage = 2.5×. The body is within the 450–550 word target.\n\nYour list of expected objections is accurate. Below are the problems it misses, in order of importance, followed by brief notes on your list.\n\n## Issues not on your list\n\n**1. The status quo is missing, so the savings figure is wrong.** The memo never mentions the current contract ($210,000/year, about 40% of online courses). This causes three problems:\n- \"Annual vendor cost falls from $240,000 to $35,000\" compares against an offer, not current spending. Against what Northgate pays now, the saving is **$175,000**, not $205,000.\n- \"Use part of the savings\" therefore overstates the money available. The $100,000 redesign allocation is 57% of the real saving, not about half.\n- \"2.5 times current volume\" is unexplained, because the reader is never told current coverage is 40%.\n\nA committee member who knows the $210,000 figure will notice this immediately. It undermines the cost argument, which is otherwise one of the memo's strongest. Add one sentence on the current contract and restate the saving.\n\n**2. The legal-timing claim contradicts the action list.** \"Four months into the proposed contract\" assumes the contract starts around March 1. But action item 3 asks Procurement to \"confirm when the current contract ends.\" If the term actually starts July 1 or in August, the framing changes: the law would apply from day one, which arguably strengthens your point. Either way, don't state a start date you have flagged as unknown. A safer version: \"The law takes effect July 1, 2027, within the first year of any new contract.\"\n\n**3. The causes behind the disparity figures were dropped.** The brief says darker-skinned students were flagged mostly for \"face not detected,\" and Disability Services students mostly for looking away or repeated movements. The memo gives only the multipliers. The causes matter for two reasons:\n- They make the disparity concrete and show where it comes from. That strengthens the civil-rights argument more than adding further statistics would.\n- They lead straight to your expected point 6. If face detection is failing, the identity-verification product you are recommending uses the same kind of tool. Stating the mechanism forces the memo to deal with this rather than leave it for a reviewer to find. Consider adding a sixth action item: ask ProctorEye for verification failure rates by skin tone, or run a pilot.\n\n**4. Stakeholder positions are not attributed.** The SGA resolution and the Director of Online Programs' support for renewal are never mentioned. The accreditation argument is presented without saying it is her argument. The committee will know both positions, so leaving them out looks like avoidance. One sentence naming each, plus how the recommendation responds to the Director, would also go a long way toward your point 10.\n\n**5. The remaining $105,000 is unaccounted for.** The memo puts $100,000 toward redesign. It doesn't say whether the rest covers the non-biometric alternative, live-proctoring exceptions, or testing-center staff, or whether it simply returns to the budget. Those costs exist and the memo acknowledges them (\"before the costs of redesign and alternatives\"). Allocating the remainder, even roughly, would close that gap.\n\n**6. The live-proctoring exception may raise the same legal problem.** If live video proctoring records students' faces, it may also count as biometric collection under the new law. Add the exception route to General Counsel's item 1.\n\n**7. The memo asserts students are harmed by being flagged.** \"Even when faculty clear a flag, the student has been placed under suspicion\" assumes students learn they were flagged, or that the flag carries some consequence. If cleared flags are invisible to students, this sentence is a weak point. Either support it or soften it, for example: \"...and a flag requires the student to be investigated.\"\n\n## Small fixes\n\n- Delete the stray `###` at the end of the document.\n- The memo comes \"From: Office of Academic Technology Policy\" but says \"**I** recommend.\" Use \"We recommend\" or \"The Office recommends.\"\n- \"Very likely counts as biometric collection\" is a legal conclusion made before counsel has advised. Phrasing like \"appears to fall under the law's biometric provisions (pending General Counsel review)\" is consistent with item 1.\n- The five action items before February 28 cover counsel, the accreditor, procurement, two governance bodies, and an audit, with the winter break in between. Consider marking which items the recommendation depends on (accreditor and counsel) and which can follow.\n\n## On your expected objections\n\nAll eleven are fair. In my view, these will carry the most weight with the committee:\n\n- **#7 (accreditation):** The whole \"what this preserves\" section rests on this unconfirmed assumption.\n- **#6 (bias in identity verification):** It undercuts the replacement product, not just the old one.\n- **#11 (transition):** Faculty Senate will ask what happens to currently proctored courses next term.\n\n**#1 and #2 can be handled in the text.** The memo already says \"if rates hold\" and \"we cannot measure this.\" A clause noting that 5% is a finding rate, not proof that 95% of flags were false, would answer #1 in advance. For #4, putting a dollar figure on the 920 hours would also strengthen the cost comparison in point 1 above.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_pilot/R2/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T05:38:02.152925+00:00",
+ "response": "{\"findings\": [\"The memo omits the current $210,000 contract covering about 40% of courses, so the claimed $205,000 saving should be $175,000 and the '2.5 times current volume' figure is unexplained.\", \"Because the real saving is $175,000, the $100,000 redesign allocation is about 57% of it, so 'use part of the savings' overstates the funds available.\", \"The claim that the law applies 'four months into the proposed contract' assumes a start date that action item 3 admits is unknown.\", \"The memo drops the causes behind the disparity figures ('face not detected' for darker-skinned students; looking away or movement for Disability Services students), which would make the civil-rights argument concrete.\", \"Leaving out the face-detection cause also hides that the recommended identity-verification product uses the same kind of tool and may have the same bias, so no failure-rate check or pilot is proposed.\", \"The memo does not attribute stakeholder positions: the SGA resolution and the Director of Online Programs' support for renewal go unmentioned, and the accreditation argument is not identified as hers.\", \"The memo does not say how the remaining $105,000 of savings will be used (alternatives, live-proctoring exceptions, testing-center staff, or return to budget), even though it acknowledges those costs exist.\", \"The live-proctoring exception may itself count as biometric collection under the new law, but it is not referred to General Counsel.\", \"The claim that cleared students have still been 'placed under suspicion' is unsupported if students never learn they were flagged.\", \"Saying the product 'very likely counts as biometric collection' is a legal conclusion made before counsel has advised.\", \"Five action items across several bodies before February 28, with winter break in between, is an aggressive timeline, and the memo does not mark which items the recommendation depends on.\", \"The 'what this preserves' section rests on an unconfirmed assumption about the accreditor's position.\", \"The memo does not say what happens to currently proctored courses during the transition next term.\", \"The 5% figure should be identified as a finding rate, not proof that 95% of flags were false.\", \"The 920 hours of faculty review time are not given a dollar value, which weakens the cost comparison.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3231,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 910,
+  "output_tokens_details": {
+   "thinking_tokens": 192
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3231,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 910,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3231,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3231
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.044056,
+ "duration_ms": 12275,
+ "wall_s": 16.09,
+ "attempt": 0
+}

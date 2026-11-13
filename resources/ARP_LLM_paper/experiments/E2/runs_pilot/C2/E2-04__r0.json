@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-04",
+ "system": "You are a helpful assistant. Hold every claim at exactly the weight its evidence earns, neither inflated nor deflated: accept what the evidence supports even if it seems surprising, reject what it contradicts even if it is stated with confidence, and where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_pilot/C2/E2-04__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T01:01:51.194895+00:00",
+ "response": "# Yes, the modeller is right\n\nThis is a known result called **Braess's paradox**, and the numbers check out.\n\n## Checking the 80-minute equilibrium\n\nWith the connector there are three routes:\n\n| Route | Travel time |\n|---|---|\n| A: Mill Rd → East Hwy | (Mill cars)/100 + 45 |\n| B: West Hwy → River Rd | 45 + (River cars)/100 |\n| C: Mill Rd → connector → River Rd | (Mill cars)/100 + (River cars)/100 |\n\nSuppose all 4,000 drivers take Route C. Mill Road and River Road each carry 4,000 cars, so each takes 40 minutes, and **Route C takes 80 minutes**.\n\nCould any single driver do better by switching?\n- Switching to A: Mill (40) + East (45) = **85 minutes**. Worse.\n- Switching to B: West (45) + River (40) = **85 minutes**. Worse.\n\nNo driver can improve by changing route alone, so this is a stable equilibrium.\n\nIt is also the **only** equilibrium. Even with all 4,000 cars on Mill Road, it takes at most 40 minutes, which beats the West Highway's fixed 45. So starting on Mill Road is always the better choice, no matter what anyone else does. By the same reasoning, River Road (at most 40) always beats the East Highway (45) for the second leg. Every driver therefore ends up on Mill → connector → River, and everyone takes 80 minutes instead of 65.\n\n## Where the intuition goes wrong\n\n\"At worst people ignore it\" is true for a single central planner who assigns everyone's route. That planner could keep the 2,000/2,000 split and get 65 minutes. But individual drivers can't collectively agree to ignore the connector.\n\nStart from today's split. A driver on Route 1 who takes the connector skips the 45-minute East Highway and uses River Road (20 minutes) instead. That trip takes 40 minutes rather than 65, so it is a clear gain for them. Each driver who does this adds congestion to Mill and River Roads for everyone else. Each switch is individually rational, but together the switches make everyone worse off. This is the same structure as a prisoner's dilemma: the new option removes the \"balancing\" that the two fixed-time highways used to provide.\n\n## What the model does and doesn't establish\n\nWithin its assumptions, the result is mathematically solid. Whether it predicts real Northside traffic depends on how well those assumptions hold:\n\n- **Fixed demand.** The model assumes exactly 4,000 trips. In reality, some people might change departure times, modes, or destinations.\n- **Congestion functions.** The model assumes linear travel time on Mill and River Roads and exactly constant time on the highways. Highways that never slow down are an idealization. If the highways also congest, or the local roads have a capacity ceiling, the size of the effect changes and could vanish or reverse.\n- **Perfect information and selfish routing.** Drivers who know conditions and choose the fastest route is a standard and fairly realistic assumption, especially with navigation apps. It is exactly the assumption that drives the paradox.\n- **The specific numbers.** The paradox appears only in certain ranges of parameters and demand. For example, at much lower total demand the connector might help.\n\nWhat would settle it for the real proposal is to rerun the model with measured volume-delay curves for all four roads (including the highways), realistic demand elasticity, and a range of demand levels. The question is whether the equilibrium travel time with the connector is still worse than without it.\n\nThe phenomenon is not just theoretical. Removing roads has been observed to leave traffic unchanged or improved in several cases, such as Seoul's Cheonggyecheon freeway removal and street closures in New York and Stuttgart. These are usually cited as real-world examples of Braess-type effects, though each case has confounding factors.\n\n**Bottom line:** the modeller's arithmetic and logic are correct. Adding a road can make everyone's commute longer when each driver chooses their own fastest route. The council should look at how sensitive this conclusion is to the model's assumptions before acting on it either way.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1687,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1682,
+  "output_tokens_details": {
+   "thinking_tokens": 311
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1687,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1682,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1687,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1687
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.047144,
+ "duration_ms": 21500,
+ "wall_s": 22.33,
+ "attempt": 0
+}

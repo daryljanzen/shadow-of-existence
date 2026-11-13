@@ -1,0 +1,50 @@
+{
+ "distances' point (68.60, 0.2973), omega_b built-in 0.02237": {
+  "arm of record (D_M on stacking rate)": {
+   "theta_zstart": 0.010371548298021898,
+   "pull_zstart": -11.919903863903546,
+   "theta_1e8": 0.010371995698593194,
+   "onset_matching": null,
+   "rho_r_over_rho_m_at_onset": null
+  },
+  "leaf-rate assignment (D_M on leaf rate)": {
+   "theta_zstart": 0.010423495116334914,
+   "pull_zstart": 4.8371343015852295,
+   "theta_1e8": 0.0104239447577516,
+   "onset_matching": 1231355.4941463114,
+   "rho_r_over_rho_m_at_onset": 365.24876931702795
+  }
+ },
+ "arm of record refit point (68.5707, 0.29125, 0.021643)": {
+  "arm of record (D_M on stacking rate)": {
+   "theta_zstart": 0.010368386366177472,
+   "pull_zstart": -12.939881878234534,
+   "theta_1e8": 0.01036882989009357,
+   "onset_matching": null,
+   "rho_r_over_rho_m_at_onset": null
+  },
+  "leaf-rate assignment (D_M on leaf rate)": {
+   "theta_zstart": 0.010421465683479597,
+   "pull_zstart": 4.182478541805732,
+   "theta_1e8": 0.01042191147794637,
+   "onset_matching": 1403617.6670975995,
+   "rho_r_over_rho_m_at_onset": 425.3630062894134
+  }
+ },
+ "leaf-rate refit minimum (68.5857, 0.29446, 0.022181)": {
+  "arm of record (D_M on stacking rate)": {
+   "theta_zstart": 0.010363295057817282,
+   "pull_zstart": -14.582239413779787,
+   "theta_1e8": 0.010363740642530586,
+   "onset_matching": null,
+   "rho_r_over_rho_m_at_onset": null
+  },
+  "leaf-rate assignment (D_M on leaf rate)": {
+   "theta_zstart": 0.010415733426758092,
+   "pull_zstart": 2.333363470352578,
+   "theta_1e8": 0.01041618126613417,
+   "onset_matching": 2436871.6379953693,
+   "rho_r_over_rho_m_at_onset": 730.1017669889949
+  }
+ }
+}
