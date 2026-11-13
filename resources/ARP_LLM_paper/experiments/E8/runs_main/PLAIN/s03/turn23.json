@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 3,
+ "order": "B",
+ "turn_index": 31,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "I can't settle it, and neither of you can yet. The answer depends on the number he hasn't given: **how much maintenance drops after the rewrite.** What I can do is show what that number has to be for the rewrite to pay off, and how sensitive the result is to the rewrite running late. That turns the argument into a question you can actually check.\n\n## The break-even calculation\n\n**If you keep the Python system:** 3 engineers × 3 years = **9 engineer-years.**\n\n**If you rewrite it:** the Python system still needs maintaining while the rewrite is underway. Customers, bugs and security patches don't wait. So for the first 9 months you're paying for both:\n\n| Phase | Cost |\n|---|---|\n| Rewrite: 3 engineers × 0.75 years | 2.25 engineer-years |\n| Python maintenance during the rewrite: 3 × 0.75 | 2.25 engineer-years |\n| Rust maintenance for the remaining 2.25 years | 2.25 × **m** |\n| **Total** | **4.5 + 2.25m** |\n\nHere **m** is the number of engineers needed each year to maintain the Rust system. For the rewrite to be cheaper over three years:\n\n> 4.5 + 2.25m < 9  →  **m < 2 engineers a year**\n\nSo **Rust maintenance must cost less than two engineers a year, a cut of more than a third, and that's if the nine-month estimate is accurate.**\n\n## The catch: overruns\n\nYour instinct about rewrites isn't baseless. Large rewrites very often overrun. Each extra month adds both rewrite cost and continued Python maintenance, and it also shortens the period in which savings can build up:\n\n| Rewrite actually takes | Cost of the rewrite plus Python maintenance during it | Rust maintenance needed to break even | Required cut in maintenance |\n|---|---|---|---|\n| 9 months (as estimated) | 4.5 | under 2.0 engineers a year | > 33% |\n| 12 months | 6.0 | under 1.5 | > 50% |\n| 13.5 months (1.5×) | 6.75 | under 1.2 | > 60% |\n| 18 months (2×) | 9.0 | **impossible** | It can't break even within 3 years |\n\nIf the rewrite takes twice as long as estimated, it **cannot** be cheaper over three years, however low the maintenance costs are afterwards.\n\nThe calculation is also generous to the rewrite. It leaves out:\n\n- **migration and cutover**: moving data, running both systems in parallel, and the regressions that come with replacing working code;\n- **time for the team to get up to speed in Rust**, or to hire people who know it;\n- **the opportunity cost**: three engineers spending nine months rebuilding what already exists instead of shipping features.\n\n## So who's right?\n\n- **His claim is unsupported as it stands.** \"Maintenance will drop substantially\" isn't a number, and the case depends entirely on it, plus on the nine-month estimate holding.\n- **Your claim is too sure as well.** \"Obviously a vanity project\" doesn't follow from the numbers either. If maintenance genuinely dropped by half and the rewrite came in on time, it *would* pay off within three years.\n\n## How to actually decide\n\n1. **Ask him for an estimate of maintenance in engineer-years, with his reasoning.** Specifically, what does the three-engineer maintenance effort go on today?\n   - If it's mostly **changes to business logic, new features and integrations**, a language change won't reduce it much, because the work comes from the business, not from Python.\n   - If it's mostly **runtime type errors, performance problems or fragile concurrency**, Rust could genuinely help.\n2. **Pressure-test the nine months.** How many lines of code and how many services does the system have, how good are the existing tests, and what is your team's track record on estimates? A few sample tickets from the past few months would show where maintenance time really goes.\n3. **Consider cheaper options in between:**\n   - rewrite only the problem components, such as performance-critical services, in Rust;\n   - add type checking (mypy or Pyright) and better tests to the existing Python system;\n   - refactor the parts that cause the most maintenance.\n\n   These often capture most of the benefit with far less risk.\n4. **If you do go ahead, set checkpoints.** For example, plan to rewrite one bounded service first, measure how long it actually takes and what it then costs to maintain, and extrapolate from real data before committing to the rest.\n\nThe useful question to put to him is: **\"Show me why maintenance will fall below two engineers a year, and what we do if the rewrite takes twelve months instead of nine.\"** If he can answer that convincingly, the rewrite deserves serious consideration. If he can't, your doubts are justified.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2088,
+  "cache_read_input_tokens": 123608,
+  "output_tokens": 2376,
+  "output_tokens_details": {
+   "thinking_tokens": 808
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2088,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2376,
+    "cache_read_input_tokens": 123608,
+    "cache_creation_input_tokens": 2088,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2088
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0889616000000002,
+ "started": "2026-11-13T22:44:39.992398+00:00",
+ "wall_s": 26.11,
+ "task_index": 23
+}

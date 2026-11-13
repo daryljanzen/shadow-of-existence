@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 4,
+ "order": "A",
+ "turn_index": 12,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nI sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes, you can use it. The pharmacist's figure is correct, and so is your board member's. They are two descriptions of the same result.\n\n## The arithmetic\n\n| Measure | Calculation | Result |\n|---|---|---|\n| Absolute risk reduction | 2% − 1% | 1 percentage point over five years |\n| Number needed to treat | 1 ÷ 0.01 | **100 people for five years to prevent one stroke** |\n| Relative risk reduction | (2% − 1%) ÷ 2% | **50%** |\n\nThe drug halves the risk. But because the starting risk is low (2 in 100), halving it prevents about 1 stroke for every 100 people treated.\n\n## Why the leaflet should lead with absolute figures\n\nThe board member's worry is that the absolute figure will scare people off. But a patient-information leaflet exists to support an informed choice, not to encourage uptake. Risk-communication research consistently finds that a relative figure on its own (\"halves your risk\") makes people overestimate the benefit. Absolute numbers, with the same denominator and the same time period for both groups, are the standard recommendation for patient materials.\n\nThe fairest version gives readers both groups' numbers, so they can see the 50% and the 1-in-100 together:\n\n> In the main trial, about 2 in every 100 people who took a dummy pill had a stroke over five years. Among people who took [drug], it was about 1 in 100. In other words, the drug roughly halved the risk, and about 1 in every 100 people who take it for five years will avoid a stroke they would otherwise have had.\n\n## One wording point for the board member\n\nAvoid \"only 1 in 100 benefits.\" The word \"only\" adds a judgement the leaflet doesn't need. Of the other 99 people:\n- most (about 98) would not have had a stroke anyway;\n- about 1 had a stroke despite taking the drug.\n\nPresent the numbers plainly and let readers weigh them.\n\n## Before it goes to print\n\n- **Check the trial paper.** \"2% and 1%\" are probably rounded. The exact figures could put the number needed to treat at, say, 80 or 130, so \"roughly 100\" may need adjusting. Also check the confidence interval and who was in the trial, such as age and existing risk factors. The figure applies to people like them.\n- **Mention that the benefit depends on baseline risk.** For someone whose stroke risk is higher than the trial average, the same 50% reduction prevents more strokes per 100 people treated. This is one place where the board member's relative figure genuinely helps, because it tends to carry across risk levels better than the absolute one. A sentence such as \"if your own risk of stroke is higher, the benefit is likely to be larger\" covers it. Check first that the trial supports applying it this way.\n- **Present side effects the same way**, for example \"about X in 100 people had [side effect].\" If benefits are given as absolute numbers and harms as vague words, or the other way round, the leaflet will be lopsided.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4034,
+  "cache_read_input_tokens": 109125,
+  "output_tokens": 1572,
+  "output_tokens_details": {
+   "thinking_tokens": 605
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4034,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1572,
+    "cache_read_input_tokens": 109125,
+    "cache_creation_input_tokens": 4034,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4034
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08555299999999999,
+ "started": "2026-11-13T22:42:31.419248+00:00",
+ "wall_s": 20.94,
+ "task_index": 4
+}
