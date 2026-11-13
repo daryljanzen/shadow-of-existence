@@ -48,6 +48,34 @@ degeneracy sits at `α/√3`, (b) that it is a **double** root — which is my `
 `②③④⑤⑥⑦` — the whole geometric spine — and scaling `Ω_r` by `1.01` must move `⑧`'s lift. The count is
 reported, not asserted to be large.
 
+## ⛔ AMENDED AT `r7763+cc66.1` — **GATE `②`'s LICENCE WAS WRONG, AND IT IS THE SAME TRAP A SIXTH TIME**
+
+I registered `②` as *"to `< 1e-12` **relative** over a dense grid"*. It came in at **`8.4e-06`
+relative**, and the licence is the defect, not the number.
+
+⛭ **Why.** Both sides vanish at the double root. `P15`'s factored form evaluates there as a product with
+a squared factor, which is accurate; my side is computed as `2M/r + r²/α² − 1`, a **difference of `O(1)`
+quantities** whose result is `O((r−α/√3)²)`. So near the root my side carries an absolute error of order
+`ε` while its value is near zero, and a RELATIVE comparison divides by that near-zero. **The identity is
+exact — `2M` is bit-identical to `2α/(3√3)`, and expanding the paper's numerator gives
+`r³ − 3a²r + 2a³` over `α²r` with `a = α/√3`, which is `r²/α² − 1 + 2M/r` term by term.** What I licenced
+was the arithmetic's floor, not the algebra.
+
+⛭ **Measured, and this is the replacement licence.** The maximum absolute residual over `400001` nodes is
+`6.82e-13`, and `max |residual| / (ε · (2M/r + r²/α² + 1))` is **`3.99`** — four times the round-off floor
+of the larger terms, which is what an exact identity evaluated two ways is expected to cost.
+
+| row | replacement licence |
+|---|---|
+| **`②′`** | the residual is bounded by the **round-off floor of the terms**, not by a relative tolerance: `max abs(paper − g_χχ) / (ε · (2M/r + r²/α² + 1)) < 10`, with the absolute residual and the ratio both printed. The parse of the exponents and the coefficient is unchanged and still asserted |
+
+⌗ **This is the sixth time in this sequence I have formed or compared a small quantity against two nearly
+equal large ones** — `r7753`, `r7755`, `r7757`, `r7759`, `r7761` `⑭`, and here. At `r7761` I wrote that I
+would put the floor into the licence **before** the row next time. I wrote `1e-12 relative` instead. The
+rule I am actually adopting, stated so it can be checked against the next registration: **where a row
+compares two expressions that both vanish somewhere in range, the licence is an absolute bound in units
+of `ε` times the largest term, and never a relative one.**
+
 ## WHAT THIS REGISTRATION DOES NOT LICENCE
 
 * **No paper edits.** The order says drafts only, nothing into the papers this round.
