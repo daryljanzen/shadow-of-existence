@@ -1,0 +1,87 @@
+r7756 (60) -- VALIDATION
+
+Range validated: origin/main..HEAD, i.e. 22bfc90e1^..0876df3b3 -- the registration, the
+amendment's registration, and the result-and-reply commit.
+
+Files this range changes (6): FOR_66_FROM_60.md and the five files of this receipt's own
+directory (PREDICTION.md, probe.py, RESULT.md, runs/READINGS.txt, runs/TREE.txt),
+confirmed by `git diff --name-only origin/main..HEAD`.  No paper, no receipt, no
+generated file, no other seat's work and no registration is touched, so nothing derived
+needed regenerating and no INDEX row was minted by this range.
+
+Every comparison below is by SORTED DIFF of the receipt lists, never by matching counts.
+
+-------------------------------------------------------------------------------
+1. SCOPES  (scripts/receipt_scope.py --range 22bfc90e1^..0876df3b3)
+
+   reads       0   vs prev   0   SET-IDENTICAL (sorted diff empty)
+   tolerance  14   vs prev  14   SET-IDENTICAL (sorted diff empty)
+   suite      68   vs prev  68   SET-IDENTICAL (sorted diff empty)
+
+   "prev" is r7754's validated range 2a3132a96^..a9676480f, recomputed HERE against the
+   current tree so that both sides see the same receipt population -- which is why the
+   suite figure reads 68 on both sides where r7754's own record read 66 on its tree.
+   What is compared is the SET, and no entry is present now and absent before.
+
+   The reads scope is EMPTY, so the runner-read sweep has nothing to measure on this
+   range: 0 measured, not 0 assumed.
+
+-------------------------------------------------------------------------------
+2. FAST JOB  (NODE=60 bash scripts/run_fast_job.sh)
+
+   10 generators, 133 gates, plus the hollow-assertion lint.
+   RED, naming exactly five checks and no others:
+
+     check_branches  check_pdf_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+
+   These are the five structural shallow-clone reds: they are red on this clone and
+   green in CI, which has the full history.  No sixth check is named.
+
+-------------------------------------------------------------------------------
+3. THE SUITE  (scripts/run_all_receipts.py --from <suite scope> --jobs 4 --timeout 600)
+
+   68 registered receipts, 53 pass, 15 fail, 0 over timeout, 512 s wall.
+
+   The fifteen, compared as a SET against the established fifteen rather than by count:
+
+     C65  C71  C79  D1  E1  S3  S5  S6  S8  S9  S10  S17  S19  S21  S54
+
+   in established and not failing now: none
+   failing now and not in established: none          ⇒ SET-IDENTICAL
+
+   The full output was kept (no `tail` on the run), so the failing receipt NAMES are the
+   comparison and not the count -- r7752's lesson.
+
+-------------------------------------------------------------------------------
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP
+   (scripts/sweep_tolerances.py --probe tA | tB --threads 4 | tC --threads 2
+    --coretype Prescott, each --from the 14-receipt tolerance scope, then --compare)
+
+   tA, tB and tC each probed 14 of 14 registered receipts -- none NEVER PROBED.
+
+   A vs B:  0 flagged site(s);  0 at the precision floor;  7 receipts not measured
+   A vs C:  0 flagged site(s);  0 at the precision floor;  7 receipts not measured
+
+   The VERDICT line on both reads "NOT A SWEEP -- no site flagged, but a receipt was not
+   measured on both builds".  That is the BITFIELD's 2 (unmeasured) with 1 (flagged)
+   clear: red with 0 flagged is the normal reading.  The seven are the same seven in
+   BOTH comparisons, by sorted diff, and they are the established seven:
+
+     L255/E1   L259/D1   S5   S6   S8   C71   C79
+
+   Each is red on `main` for its own reason and so cannot run to exit 0 on either build;
+   none of them is this range's, and this range changes no receipt at all.
+
+-------------------------------------------------------------------------------
+5. WHAT WAS NOT RUN, AND WHY
+
+   * The Lean build.  This container has no toolchain (no `lake`, no `lean`, no elan),
+     so ARM 10 checked that Range.lean carries no `sorry`, that each cited declaration
+     is listed for axiom printing and that each has a witness -- and says so rather than
+     implying a build.  The build is CI's and 71's.
+   * The runner-read sweep: nothing to measure, the reads scope being empty (§1).
+   * No long job was re-run for reassurance; every run above is on a tree that changed.
+
+   The three probes' scratch build directories (tA/, tB/, tC/) were deleted after the
+   comparisons and are not part of this revision.
