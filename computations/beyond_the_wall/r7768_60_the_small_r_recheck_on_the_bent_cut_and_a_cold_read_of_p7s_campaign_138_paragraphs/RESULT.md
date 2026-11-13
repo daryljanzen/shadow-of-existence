@@ -110,6 +110,19 @@ of the leaf — so the profile is the mass-inside-radius relation applied where 
 **That is precisely the error this line made at `r7756` and withdrew at `r7762`.** The sentence
 predates the withdrawal and the correction has not reached the paragraph.
 
+### ⛔⛔ And the corpus already says so, in a receipt on `main`, about this exact expression
+
+This is not this seat's opinion against a paper sentence. `cc66`'s receipt
+`P15_r_labels_the_leaf_so_radiation_bends_the_cut_in_epoch_and_its_pressure_work_gives_the_leaf_rate.py`,
+minted at `r7759+cc66.1` and on `main` since, carries in its own head line:
+
+> *"**THE SUPERSEDED `-3 Omega_r z(1+z)^3` IS THE STATIC-REGION FORMULA USED WHERE `r` IS TIMELIKE.**"*
+
+**So a registered receipt names that expression superseded while the paper still computes with it, in
+the same corpus, at the same commit.** The expression appears once in `CR_cosmology.tex` and twice in
+that receipt. ⌗ *The receipt entered this revision's suite scope on its own, which is how it was found:
+the scope tool put it there and the suite ran it.*
+
 ⌗ **Whose error it is, said plainly:** this line made the same misreading first. This is a correction
 owed to the paper, not a point scored. **The patch is drafted in the reply and nothing is edited here.**
 
