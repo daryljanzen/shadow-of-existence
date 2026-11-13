@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-11",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Leaving the apps does not pay. Today delivery contributes about $184k (2.3M x (35% - 27%)). Going direct with every order kept gives about $213k ($805k contribution minus about $514k courier fees on about 60,500 orders and $78k software and marketing), barely better. At the expected 40-60% retention it falls to roughly $40k-$95k, so leaving loses money.\n2. The commission cap from March 2027 cuts the app commission to 15% (about $345k a year at current volume), raising the contribution from staying on the apps to about $460k (2.3M x 20%), which changes the decision much more than switching to direct delivery would.\n3. The two campus restaurants depend much more on the apps (41% of sales against 12%), so the average hides where the risk is concentrated.\n4. The apps bring in new customers (68% were new), which a direct channel would not do.\n\nFINDINGS:\n- The memo's claim that a $33 direct order 'barely covers' costs is inaccurate, since food, labor, and delivery costs leave it roughly breakeven or slightly negative.\n- The memo's assumption that direct orders shrink from $38 to $33 contradicts the brief, which says direct orders tend to be larger, and the 15% premium it relies on is not in the brief.\n- The claim that the apps are the restaurant's largest source of new customers is unsupported, because the brief only says 68% of app customers were new and gives no data on other channels.\n- The '$90k–$120k worse off' comparison uses the pre-cap baseline even though the cap takes effect March 1, 2027, so the real gap is understated and this is not stated.\n- Card fees are mentioned once but left out of every other calculation, which is inconsistent.\n- The memo cuts the owners' $60k marketing estimate to $20k without explaining that the $60k figure was sized for a full exit, so it could read as second-guessing the owners.\n- The recommendation to pause app ordering at peak hours does not acknowledge that it gives up order volume to improve kitchen flow.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x1/E5-11__r1.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:05:53.117994+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": false, \"4\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2061,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 185,
+  "output_tokens_details": {
+   "thinking_tokens": 157
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2061,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 185,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2061,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2061
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.020196,
+ "duration_ms": 5700,
+ "wall_s": 6.79,
+ "attempt": 0
+}
