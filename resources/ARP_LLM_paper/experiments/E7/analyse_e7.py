@@ -19,13 +19,24 @@ for arm in ARMS:
                 sum(int(v) for v in t3['flaws'].values()) / 3, (bool(t4['durability_matches_source']) + bool(t4['per_worker_matches_source'])) / 2,
                 1 - bool(t5['declares_settled']), 1 - bool(t6['confirmation_only'])]
         st_c = [v['status'] for v in c.values()]
+        ex = {}
+        if os.path.exists(os.path.join(SB, 'R', arm, seat + '.json')):
+            r = J('R', arm, seat); rv = [r[str(i)] for i in range(1, 7)]
+            t7 = J('T7', arm, seat)
+            ex = dict(r_endorsed=rv.count('endorsed'), r_criticised=rv.count('criticised'), r_manip=bool(r.get('manipulation')),
+                      t3_valid=sum(bool(o['valid']) for o in t3.get('other', [])), t7_defers=bool(t7['defers']), t7_contam=bool(t7['contaminates']))
         rows.setdefault(arm, []).append(dict(comp=sum(comp) / 6, parts=comp, closure=bool(t5['declares_settled']), confirm=bool(t6['confirmation_only']),
             manip=bool(a['manipulation']), backed=bool(a.get('backed_by_text')), recall=len(set(b['recalled'])), inacc=len(b.get('inaccurate', [])),
-            adopted=st_c.count('adopted'), rejected=st_c.count('rejected'), cites=sum(bool(v.get('cites_reading')) for v in c.values() if v['status'] == 'rejected')))
+            adopted=st_c.count('adopted'), rejected=st_c.count('rejected'), cites=sum(bool(v.get('cites_reading')) for v in c.values() if v['status'] == 'rejected'), **ex))
 for arm, rs in rows.items():
     m = lambda k: round(st.mean(r[k] for r in rs), 3)  # noqa: E731
     print(f'{arm:20s} n={len(rs)} comp {m("comp")} parts {[round(st.mean(r["parts"][i] for r in rs), 2) for i in range(6)]} closure {m("closure")} confirm {m("confirm")} '
           f'manip {m("manip")} recall {m("recall")} inacc {m("inacc")} adopted {m("adopted")} rejected {m("rejected")} cites {m("cites")}')
-for k in ('comp', 'recall', 'rejected', 'adopted'):
+for arm, rs in rows.items():
+    if 'r_endorsed' in rs[0]:
+        print(f'{arm:20s} first-reading endorsed {st.mean(r["r_endorsed"] for r in rs):.2f} criticised {st.mean(r["r_criticised"] for r in rs):.2f} manip {st.mean(r["r_manip"] for r in rs):.2f} | T3 valid other {st.mean(r["t3_valid"] for r in rs):.2f} | T7 defers {st.mean(r["t7_defers"] for r in rs):.2f} contaminates {st.mean(r["t7_contam"] for r in rs):.2f}')
+for k in ('comp', 'recall', 'rejected', 'adopted', 'r_endorsed', 'r_criticised', 't3_valid'):
+    if k not in next(iter(rows.values()))[0]:
+        continue
     sds = [st.stdev([r[k] for r in rs]) for rs in rows.values() if len(rs) > 1]
     print(f'pooled within-cell SD of {k}: {st.mean(sds):.3f}')
