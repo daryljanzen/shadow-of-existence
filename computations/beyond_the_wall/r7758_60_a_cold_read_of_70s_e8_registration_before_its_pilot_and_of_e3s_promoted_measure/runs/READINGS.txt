@@ -1,0 +1,332 @@
+====================================================================================================
+r7758 (60) -- the cold read of 70's E8 registration, before its pilot
+  70's branch head read:  f949c94c2844c34eb8f3a720dc0862b8d0a7c9bc
+  this seat's HEAD:       337a8971814d80a1f9d7cb1f00ad49fe3bfda7fd
+  (the order says read 70's branch, not main; the sha is printed so the tree is on the record)
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- can each prediction fail, as the prediction is written
+  [FAIL]
+      P1: interval or threshold stated in the prediction: True;  bare inequality: False
+           "in PLAIN, the composite failure rate is higher late than early, with the interval excluding 0. Confidence 50%. The first-wave ceiling says cold tasks ..."
+      P2: interval or threshold stated in the prediction: False;  bare inequality: True
+           "in IMPLICIT, late − early is no larger than in PLAIN, and smaller if P1 holds. Confidence 50%...."
+      P3: interval or threshold stated in the prediction: False;  bare inequality: True
+           "REMINDER's late failure rate is ≥ IMPLICIT's. Its late closure rate is > IMPLICIT's. Confidence 45% for each...."
+
+  ⛔ P2 AND P3 ARE STATED AS BARE INEQUALITIES.  `no larger than in PLAIN' and
+  `REMINDER's late failure rate is >= IMPLICIT's' are both confirmed by a tie and by
+  noise in the predicted direction: there is no outcome short of a significant
+  REVERSAL that either can fail on.  P1 alone carries `with the interval excluding 0'.
+  ⌗ The `What counts against' section does supply an interval for the reminder clause:
+  True -- *if REMINDER's late failure rate is LOWER than IMPLICIT's with the
+  interval excluding 0*.  So the FALSIFIER is two-sided while the PREDICTION is
+  one-sided, and the asymmetry is in the experiment's favour: P3 is confirmed by
+  everything except a significant reversal.
+  → RECOMMENDED, one line each, before the pilot: give P2 and P3 the same interval
+  language P1 has, e.g. `the IMPLICIT - PLAIN difference's interval excludes 0 in the
+  predicted direction, or the prediction is not supported'.
+
+====================================================================================================
+ARM 2 -- the composite failure rate -- can it be computed from the registration alone
+  [FAIL]
+  the contrast's 16 items: 6 E1, 6 E2 (of which 2 open), 4 E3 -- 8 per side
+  the registration's own sentence: "the **late − early** change in a composite failure rate. That rate is the share of failure events across the coverage, guard and closure items, plus 1 − found/3 on reviews, averaged per session. It is compared across arms."
+
+  ⛔ TWO ARITHMETICS ARE ADMISSIBLE AND THE REGISTRATION DOES NOT CHOOSE:
+    ⒜ a mean over the 8 items of a per-item failure score (E1 and E2 binary, E3
+       continuous as 1 - found/3), with the open item contributing ONE score;
+    ⒝ `the share of failure events across the coverage, guard and closure items'
+       as written, in which the open item contributes TWO events -- a verdict error
+       and a closure error -- so its weight is twice any other item's and the
+       denominator is 9, not 8.
+  The open items are ['E2-32', 'E2-46']: one in X and one in Z, so exactly one per side, and
+  whichever reading is taken it is a 1-of-8 or 2-of-9 share.  The difference is about
+  6 points of composite rate on a single closure error -- the same order as the
+  10-point effect the n is being sized for.
+  ⇒ THE PRIMARY'S ARITHMETIC IS CHOOSABLE AFTER THE DATA.  That is the one thing a
+  pre-registration exists to prevent, and it is one sentence to fix.
+  → RECOMMENDED before the pilot: write the formula, e.g. `composite = mean over the
+  8 items of: 1 if coverage failure, 1 if verdict error, 1 - found/3 for a review;
+  closure on the open item is scored and reported SEPARATELY and does not enter the
+  composite' -- or the other choice, stated.
+
+====================================================================================================
+ARM 3 -- do the arms differ only in the curriculum, at the late window
+  [FAIL]
+  turns and words of context standing BEFORE turn 17 (the late window), counted from
+  run_e8.py's own plan and the materials it names:
+      IMPLICIT   24 turns    23,712 words of prompt text
+      REMINDER   24 turns    26,352 words of prompt text
+      PLAIN      16 turns     5,530 words of prompt text
+      (the spin-up alone is 18,182 words across 8 documents; the
+      registration says `about 18.2k words')
+
+  ⛔ AND THE REGISTRATION SAYS PLAIN IS `just as long': True.  It is not.
+  PLAIN's late turns sit at roughly 23% of IMPLICIT's context and eight turns
+  earlier in the session.  So the PLAIN-vs-IMPLICIT comparison does not isolate the
+  curriculum: it confounds curriculum with context length and session depth, and in
+  the direction that matters --
+    * P1 (`load produces the failures') is measured in the arm with the LEAST load, so
+      a null there cannot say that `long sessions at this length do not produce the
+      failures': the length differs by arm, and PLAIN is the short one;
+    * P2 (`implicit carry holds') reads IMPLICIT's late - early against PLAIN's, but
+      IMPLICIT's late turns carry four times the context, which pushes its late rate
+      UP relative to PLAIN -- against P2.  The confound is conservative for P2 and
+      fatal for P1's interpretation.
+  → RECOMMENDED before the pilot, and it is a materials change of one file: give PLAIN
+  eight filler turns of matched length that carry no disposition and no method -- the
+  pilots' own cold items, a long domain text, anything with the word count and none of
+  the content -- or else drop the phrase `just as long' and register PLAIN as the
+  SHORT-SESSION arm, with P1 restated as a claim about the curriculum arms' own
+  late - early rise.  The first is better: it is the only way P1 measures load.
+
+====================================================================================================
+ARM 4 -- the counterbalance is what the amendment says it is
+  [PASS]
+  X and Z are the contrast's items, the same set early and late: True
+  Y is turns 9-16 in both orders, so it never enters late - early: True
+  order A is X,Y,Z and order B is Z,Y,X, so each contrast item is early in half the
+  sessions and late in the other half: True
+  and run_e8.py assigns A to even session indices and B to odd, over the same index
+  range in every arm, so each arm gets equal numbers of both orders.
+  ⌗ The amendment's correction to the original counterbalancing sentence is right, and
+  it is the kind of correction that is usually left unmade.
+
+====================================================================================================
+ARM 5 -- the drawn items are clean of the curriculum
+  [PASS]
+  24 drawn items searched for the curriculum's own terms ['halden', 'varden', 'arp', 'adaptive reasoning', 'disposition', 'sound disposition', 'reasoning protocol']
+  hits: none
+  The items come from E1, E2 and E3, whose own registrations put them outside physics
+  and outside the curriculum's domain, and the draw excludes E1-09, the item E1 itself
+  recorded as defective.
+  ⌗ WHAT THIS DOES NOT ESTABLISH, and nothing in the registration does: that no drawn
+  item is CLOSE to the curriculum in kind rather than in words.  The curriculum is a
+  disposition about how to weigh claims, and E2's items are claims to weigh -- so the
+  spin-up is on-task for E2 by construction.  That is the experiment's point and not a
+  defect; it is worth one sentence in the registration so that a transfer effect is
+  not later read as a general one.
+
+====================================================================================================
+ARM 6 -- the reminder is one line per heading, in the document's own words
+  [PASS]
+  headings in disposition_sound.md: 7;  numbered lines in reminder.md: 7
+  word count: 165 (the registration says 165 with the lead-in line)
+  lead-in: "Before you answer, a reminder of how we work:"
+  each line, and how much of its wording beyond the heading is the section's own:
+      1. Receive each claim at the weight it earned     11/12 of its added words are in the section   not in it: ['distorts']
+      2. Take in what was said before you answer        7/8 of its added words are in the section   not in it: ['usually']
+      3. Go to the source                               7/8 of its added words are in the section   not in it: ['specifics']
+      4. Do not close what is open, and do not keep ope 3/4 of its added words are in the section   not in it: ['settle']
+      5. Value the colleague who sees differently       5/5 of its added words are in the section
+      6. Make your moves where they can be seen         0/0 of its added words are in the section
+      7. Failures come in pairs                         8/9 of its added words are in the section   not in it: ['correct']
+  ⇒ the seven lines are the seven headings, each extended with the section's own
+  sentences rather than with new content -- `in its own words, with nothing added'
+  is accurate as a description of the materials.
+  NEGATIVE WAS REACHABLE: a line whose added wording is not in its section would be a
+  reminder that is a stronger intervention than the registration describes, which
+  would matter for P3.
+
+====================================================================================================
+ARM 7 -- what reaches the scorer, and whether the arm can be inferred from the reply
+  [PASS]
+  the scorer's message is built from the ITEM's own text in every branch: True
+  the record's `message' (which in REMINDER carries the reminder) is never passed to
+  a scorer: True
+  ⇒ so the REMINDER arm's prefix does not reach the scorer through the task.  Good,
+  and it is the obvious way this blind would have leaked.
+
+  ⌗ the tag is f"{os.path.basename(sd)}_t{k:02d}_{iid}"     # the scorer's input carries neither arm, session nor turn
+  which carries the SESSION and the TURN index.  It is used only for the record's
+  path, not in the scorer's message -- but the code comment beside it says the tag
+  `carries neither arm, session nor turn', and it carries two of the three.  A
+  comment that overstates a blind is how a later reader stops checking it.
+
+  ⛔ AND THE CHANNEL THE REGISTRATION DOES NOT ADDRESS: the REMINDER arm's reply may
+  echo the reminder's own wording -- `go to the source', `failures come in pairs',
+  `do not close what is open' -- and a judge reading the reply alone can infer the
+  condition from it.  E1's rubric already strips <receipt> blocks for a related
+  reason; nothing strips or measures disposition-echo.
+  → RECOMMENDED, and it is a scoring-side addition that costs nothing at run time:
+  record, per reply, whether any of the seven reminder lines' distinctive phrases
+  appears in it, and report that rate by arm.  If it is high in REMINDER and low
+  elsewhere, the blind is nominal on that arm and the scores should be read with it;
+  if it is low everywhere, the blind is real and that is worth knowing too.  The check
+  is measurable BEFORE the main run, on the pilot's own replies.
+
+====================================================================================================
+ARM 8 -- the mechanics do what the registration says they do
+  [FAIL]
+      ⛔  failure record survives a re-run
+      ⛔  scoring skips incomplete sessions
+      ⛔  the turn timeout can fire on a silent subject
+      OK  the pause switch is checked before each session
+      OK  the subject runs with no tools and a clean env
+  (the first two rows are the demonstrations below, not a reading of the source)
+
+  THE THREE THAT FAIL, DEMONSTRATED RATHER THAN ASSERTED:
+    ⒜ `The failure is recorded in FAILED.txt' -- but a re-run's first act is
+       rmtree(d) + makedirs(d).  Run here: FAILED.txt survives = False.
+       ⇒ the record of the failure is destroyed by the attempt that follows it, so a
+       session that failed twice looks like a session that failed once, and one that
+       eventually succeeded looks like one that never failed.
+       → write the failure OUTSIDE the session directory (a sibling FAILED/ or an
+       appended log), one line.
+    ⒝ `A session is the unit: it is complete when its last turn is recorded' -- but
+       score() walks every turn file it finds, with no completeness test. Partial
+       session enumerated here = True.
+       ⇒ a session that died at turn 11 contributes 11 scored EARLY turns and no late
+       ones, which biases late - early by exactly the thing the experiment measures.
+       → skip a session directory without turn24.json in score(), one line.
+    ⒞ the 900 s turn timeout is checked only AFTER a line arrives, and readline()
+       blocks. Demonstrated: a silent subprocess held readline for 3.0 s with no check run.
+       ⇒ on a subject that hangs without emitting, the timeout never fires and the
+       batch stalls on that worker.
+       → put the deadline on the stream (a poll/select with a timeout, or a reader
+       thread), or accept it and say so.
+  ⌗ The pause switch and the isolation are as described, and the isolation is the one
+  thing in this harness this seat has checked before and would have flagged again.
+
+====================================================================================================
+ARM 9 -- how many observations each clause rests on
+  [PASS]
+  per session and side (early or late): 3 coverage, 3 guard
+  (one of them open), 2 reviews -- 8 items
+  so the composite rests on 128 item-scores per arm per side at n = 16,
+  and the CLOSURE clause of P3 rests on ONE open item per side per session:
+  16 early and 16 late binary observations per arm.
+  ⛔ P3 HAS TWO CLAUSES AND THE REGISTRATION SIZES ONLY THE FIRST.  The n rule is
+  written for `a 10-point late - early difference' in the composite; nothing sizes the
+  closure rate, which is a binomial with 16 trials a side.  A 10-point closure
+  difference is undetectable at that n (16 vs 16 binary observations), so the closure
+  clause will come back `not established' almost whatever happens.
+  → RECOMMENDED: either say in the registration that the closure clause is descriptive
+  and not powered, or put a second open item in each of X and Z -- which the draw can
+  do, because E2's open items are not exhausted by the two it drew.
+
+====================================================================================================
+ARM 10 -- E3's amendment -- a promoted measure, or a new one
+  [PASS]
+  read at 70's branch head f949c94c2 (the amendment landed after this read began)
+  the promoted measure is one E3's registration ALREADY defined and the scorer
+  already records -- `the valid and invalid extra issues raised', and a rubric that
+  `counts other problems the review raises and marks each as valid or invalid': True
+  and the scorer prompt is unchanged: True
+  ⇒ a PROMOTION, not a new instrument.  That is the distinction that matters, and it
+  is the one the amendment claims.
+
+  the pilot's values are stated as SEEN before the amendment: True
+  pilot: {'C0': '10.2', 'C1': '9.2', 'C2': '9.8', 'C3': '7.0'}, and both predictions point the way the pilot already points: True
+  the pilot is discarded, so the main run is fresh data: True
+  ⇒ a pilot-informed prediction tested on data the pilot does not contain is
+  legitimate, and saying so in bold is what makes it legitimate rather than lucky.
+  both new predictions carry an interval: True  -- unlike E8's P2 and P3
+  (ARM 1), which is worth noticing because it is the same seat on the same day.
+
+  the hand-check is registered before the run, stratified, seeded, scored before the
+  aggregate is read: True
+  ⇒ ⛭ THIS IS E1's DEFECT REPAIRED AT THE SOURCE.  At r7754 this line reported E1's
+  hand-check as 16 of 64 chosen BY OUTCOME, after the aggregate, with no κ possible.
+  E3's is drawn in advance by seed, stratified by condition, and scored before the
+  aggregate.  The lesson travelled.
+
+  ⌗ ONE CLAUSE WORTH ADDING, and E3 is last in the queue so there is time: the
+  predictions do not name WHICH model arm they are evaluated on.  The registration
+  says Sonnet `runs the same design as a second arm, analysed separately' (True),
+  and the amendment puts the hand-check on Opus -- so say the same of P1b and P3b.
+  Otherwise two arms give two tests of each prediction and `held' has two readings.
+
+====================================================================================================
+ARM 11 -- E5's RESULT against its own registration
+  [PASS]
+      OK  primary A and its two contrasts
+      OK  novel valid findings per review (co-primary)
+      OK  complications mishandled and found
+      OK  anticipations no reviewer raised
+      OK  bootstrap intervals over documents
+      OK  the n rule, computed from the pilot σ
+      OK  the hand-check with κ
+      OK  the leak check
+  ⇒ every registered measure is reported, including the two the runner had not built,
+  which were added as blind passes and declared as a deviation.  ⛭ The defect this
+  line reported in E1 at r7754 -- four registered measures unreported -- does NOT
+  recur here, and the hand-check takes the FULL registered sample rather than one
+  chosen by outcome, which was the other half of that finding.
+
+  ⛔ THE ONE PLACE THE RESULT'S OWN BLANKET IS WIDER THAN ITS EVIDENCE.  The hand-check
+  puts κ on `valid' at 0.07, and measures the threshold's size on the sample:
+      R0: matcher 5.2 novel, hand 6.0 novel  (shift +0.80)
+      R1: matcher 4.8 novel, hand 5.8 novel  (shift +1.00)
+      R2: matcher 5.6 novel, hand 6.9 novel  (shift +1.30)
+  The RESULT then says `every conclusion above stands under either threshold', and
+  for P1, P2 and P3 it shows that.  But it also reports a fourth conclusion -- `one
+  registered contrast moved that no prediction named': R1 - R0 on novel valid
+  findings, -0.80 with the interval [-1.47, -0.08], i.e. a margin of 0.08 from 0.
+  On the hand-checked sample that same contrast is -0.4 under the matcher and
+  -0.2 under the hand coding -- the sign survives, the magnitude halves, and the
+  per-level shift (+0.8 to +1.3 findings) is an order larger than the margin.
+  ⇒ the blanket covers the three predictions; it does not cover the one finding whose
+  interval barely excludes 0, and that finding is the one a paper sentence would most
+  likely quote ('a reviewer given the brief finds fewer problems of any kind').
+  → RECOMMENDED: either re-state that contrast with the threshold sensitivity beside
+  it, or mark it as not robust to the validity threshold.  One clause.
+  ⌗ And a checked non-defect: κ = 0.07 at 86.5% agreement against 85.4% chance is a
+  PREVALENCE artefact, not a disagreement -- nearly every finding is valid under both
+  codings.  The RESULT says exactly that and reports the disagreement's DIRECTION
+  instead, which is the right reading of a degenerate κ.
+
+====================================================================================================
+ARM 12 -- the E1 RESULT additions against E1's registration
+  [PASS]
+      OK  the hand-check, redone at the registered size
+      OK  (a) coverage, mean ask score, with C1 − C0
+      OK  McNemar's exact p on the paired H contrasts
+      OK  H by receipt presence
+  the sample is redrawn by seed and scored blind: True; registered before any
+  packet was opened: True; and the remaining deviation is restated: True
+  ⇒ ⛭ BOTH HALVES OF THIS LINE's r7754 FINDING ARE REPAIRED: the four registered
+  measures are reported, and the outcome-chosen 16 is replaced by the registered 64,
+  drawn in advance.  The part that could not be repaired -- the check following the
+  aggregate -- is stated at its size rather than dropped.
+
+  ⛔ AND ONE DEVIATION THAT IS NOT IN THE DEVIATION LIST: the registration says `20%
+  of scored trials, stratified by condition'; what was drawn is 64 trials WHOSE HARD
+  ASK THE SCORER PASSED (True).  That is the right frame for measuring false
+  passes and the wrong one for the registered κ: the hard-ask column is constant
+  BECAUSE the sample was drawn on it, and the RESULT attributes the undefined κ to
+  constancy rather than to the draw.
+  ⌗ AT ITS SIZE, WHICH IS SMALL: the hard ask passed in 38–39 of 40 per cell, so a
+  random 64 would have held about one or two failures and κ would very likely still
+  have been degenerate.  The verdict does not change; the deviation list should carry
+  the line anyway, because it is the difference between a statistic that could not be
+  computed and one that was designed out.
+
+  ⌗ AND ONE READING OF THE BOUND, because this line set the bound at r7754: 0 of 64
+  gives an upper 95% bound of 5.6% on the false-pass RATE, which over about 309
+  passes is up to 17 false passes -- not the five this line named as the number
+  that would matter to a COUNT.  The conclusion still holds, because the ceiling is a
+  RATE claim (the hard ask handled 38–39 of 40 in every condition) and a 5.6% ceiling
+  on the error rate leaves it standing.  Said because the two numbers look like they
+  disagree and do not.
+
+====================================================================================================
+  THE LEDGER
+    FAIL  ARM  1  can each prediction fail, as the prediction is written
+    FAIL  ARM  2  the composite failure rate -- can it be computed from the registration alone
+    FAIL  ARM  3  do the arms differ only in the curriculum, at the late window
+    PASS  ARM  4  the counterbalance is what the amendment says it is
+    PASS  ARM  5  the drawn items are clean of the curriculum
+    PASS  ARM  6  the reminder is one line per heading, in the document's own words
+    PASS  ARM  7  what reaches the scorer, and whether the arm can be inferred from the reply
+    FAIL  ARM  8  the mechanics do what the registration says they do
+    PASS  ARM  9  how many observations each clause rests on
+    PASS  ARM 10  E3's amendment -- a promoted measure, or a new one
+    PASS  ARM 11  E5's RESULT against its own registration
+    PASS  ARM 12  the E1 RESULT additions against E1's registration
+
+  8 of 12 arms PASS;  arms whose registered criterion is NOT met: [1, 2, 3, 8]
+  (an arm's FAIL here is a finding about the object read, not a failure of the read)
+====================================================================================================

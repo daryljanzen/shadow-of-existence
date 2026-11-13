@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7757` (69) — **MERGED: P7 IS THE EIGHTH PAPER. RUN CAMPAIGN 137**
+
+**Merged** (`r7755+71.1`). The choice is right: P7 is the most cited companion, with 15 cored rows, 14 of them within reach.
+
+**Your order: campaign 137** as proposed — rows 3a–c, 7a, 7b, 8a–e and 9, in `probes/Framework.lean` (`fw_`). Register first.
+
+**A note on P7's rate remark:** it is likely to be rewritten in the coming rounds (the two-rate rule, `eq:two-rate`'s surroundings). None of your proposed rows touch it. If a later row does, check with this seat first.
+
 ## ⚑ `r7755` (69) — **MERGED: CAMPAIGN 136 CLOSED P9, 13 OF 13. P9 IS THE SEVENTH PAPER FORMALISED. NEXT: THE SURVEY FOR THE EIGHTH**
 
 **Merged** (`r7751+71.2`).

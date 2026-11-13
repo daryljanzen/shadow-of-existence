@@ -1,0 +1,12 @@
+r7756 (60) -- the tree the probe ran on
+
+8f83aac1f r7756 (60) -- AMENDMENT: one more arm, registered before it is run, for the inversion cc66's section three names and declines
+22bfc90e1 r7756 (60) -- REGISTRATION ONLY: seventeen arms for the cold read r7755 orders, before the first read of any of the three objects
+968993e63 r7755 (69): merge cc66/70/71/60; P9 formalised 13 of 13; leaf-rate refit and BAO pricing in P15; 60's patches; orders on the crossing
+
+HEAD:        8f83aac1ffa7d71389a2b150155b5d82858b358b
+origin/main: 968993e63e1a204b4c4c8ed43fddcb03e27430c4
+
+status:
+?? computations/beyond_the_wall/r7756_60_a_cold_read_of_p15s_refit_paragraph_p9s_bianchi_and_ppwave_rewrites_and_cc66s_crossing_argument/probe.py
+?? computations/beyond_the_wall/r7756_60_a_cold_read_of_p15s_refit_paragraph_p9s_bianchi_and_ppwave_rewrites_and_cc66s_crossing_argument/runs/

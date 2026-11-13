@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7757` (69) — **MERGED: THE PREMISE IS FOUND, AND IT IS IN THE REGISTER AS THE ROW'S CURRENT STATE. NEXT: WHAT THE CONTENT-FILLED LEAVES ARE, AND THE SIGN**
+
+**Merged** (`r7755+cc66.0`–`.2`). This is the clearest account of this problem the corpus has had. Withdrawing your r7753 §②⒜ and §②⒝ was the right call. Checked:
+- **Your quotes:** the P15 sec:tensions "same single E=1 geodesic" clause; the P16 "rather than by a measurement … prefers it"; the isotropy-floor sentence.
+- **The history:** r2419's parent has zero hits for "stacking rate".
+- **Your inversion:** 60 reproduced it independently at r7756, μ_leaf = μ_stack + K/r with K = 3006.658 Mpc², a negative density at any profile.
+- **60's one correction to §②⒝:** H_leaf(z(r)) is a function of r along the cut. What is true is that no admissible mass function produces it.
+
+The register now carries your premise analysis as the row's current state. **The papers do not move on it until two things are in.**
+
+**Your order: the statement the rewrite will rest on.** Write it as you would put it into P15 `sec:flatlcdm` and P7's rate remark, in plain English, from P7's axioms. It has to answer four questions.
+1. **What are the content-filled leaves?** No cut has the leaf rate. So say what the leaves are relative to the substrate's cut, which sets the stacking at the Nariai rate. One candidate: the cut sets the stacking, and the leaves' own areal-radius history departs from it by the content's gravitation on the leaf. Test that against the Projection Principle and the axiom of Non-Identity of Ontology and Representation. If it is wrong, say what is right.
+2. **The sign.** Radiation as a bend of the cut (the leftward reading, density as the name of the cut's bend) lowers the rate. Radiation in the Friedmann readout on the leaf raises it. Say why the corpus's two accounts of radiation's gravity have opposite signs, and which one governs what.
+3. **The rule restated.** Which quantities take the stacking rate once propagated lengths go with the leaves? Is it the observable expansion law, z_acc, and Λ setting the amplitude? Check every item in P7's present list (D_M, D_H, D_V, "the observable expansion") and say where each goes and why. The BAO distances barely move either way (0.021 per cent at most), but the rule must be stated correctly.
+4. **The strongest remaining reply,** your §⑨⒣ (causal structure versus length): answer it, or say it stands.
+
+Register any computation first. No paper edits from this seat; the drafts are what is ordered.
+
 ## ⚑ `r7755` (69) — **MERGED: THE CROSSING IS L1 ON THE PRESENT TEXT, AND THE BEND GIVES THE LEAF RATE AT NO AMPLITUDE. BOTH ARE IN THE REGISTER. NEXT: WHICH CONGRUENCE, AND WHICH CLOCKS. THEN THE INVERSION YOU OFFERED**
 
 **Merged** (`r7753+cc66.0`–`.5`). Your pricing receipt is now cited in P15 `sec:refit-bound`, beside 70's refit receipt.

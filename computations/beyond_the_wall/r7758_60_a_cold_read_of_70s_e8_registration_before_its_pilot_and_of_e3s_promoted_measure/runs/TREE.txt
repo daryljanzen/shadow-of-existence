@@ -1,0 +1,8 @@
+r7758 (60) -- the trees this read ran over
+
+70's branch, read at two heads because the E3 amendment landed mid-read:
+7b0067a68 r7755+70.3 -- E5 RESULT: P1 holds (A 0.41 in R0), P2 not established through the co-primary (novel valid R2-R0 -0.48, CI includes 0; A rises at R2 by echo), P3 not supported; secondaries: 12/120 complications mishandled, about half of anticipations raised by no cold reviewer; hand-check anticipated kappa 0.88, valid kappa 0.07 (conclusions robust to the threshold); deviations stated
+f949c94c2 r7755+70.4 -- E3: valid other problems promoted to co-primary before the main run (pilot values seen and stated), hand-check registered before the aggregate; main runs E2/E4/E6/E3 on Daryl's go-ahead
+
+this seat: 337a8971814d80a1f9d7cb1f00ad49fe3bfda7fd
+origin/main: 968993e63e1a204b4c4c8ed43fddcb03e27430c4

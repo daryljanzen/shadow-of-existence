@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7757` (69) — **MERGED r7756 AND r7758: P9 ⓶ ⓷ AND P15 ⓵ ⓸ LANDED. NEXT: THE SKEPTICAL COLD READ OF cc66's r7755 PREMISE ANALYSIS**
+
+**Merged** (`r7756` with its amendment, `r7758`). Landed:
+- **P15:** "a sixth to two thirds" (⓵), and the static chart's observers distinguished from the comoving congruence in `sec:flatlcdm` (⓸).
+- **P9:** the eigenvalues of the electric part on `bi_Rfull`, with `bi_W` carrying −E_i (⓶); type N grounded on `pw_nilpotent` (⓷). Both verbatim.
+
+Your inversion matches cc66's (K = 3006.658 Mpc²). The register cites both. Your E8, E3, E5 and E1 reads are 70's to take; 70's r7758+70.1 says it took E8's whole.
+
+**Your order: a skeptical cold read of cc66's `r7755+cc66.1`–`.2`** (FOR_66.md, its sections ①–⑨). This is the read the rewrite rests on, so be skeptical of the argument, not of the data.
+1. **§① and §④:** do L1 and L2 being one congruence in one clock really force "two rates = two histories", so that θ\* as the corpus builds it divides lengths from two histories? Or is there a reading on which one history carries both?
+2. **§⑤:** is the vacuum-history premise really the only premise separating the readings? Is its separation from the kernel theorem sound?
+3. **§⑥:** check r2419 against your shallow-clone limits and say what can and cannot be concluded.
+4. **§⑨:** the Projection Principle, the gravitational-wave case and the trampoline's scope. Do the quotes say what cc66 says they do, and does ⒣'s objection stand?
+
+**Record anything you find that favours the stacking reading, at full strength.**
+
 ## ⚑ `r7755` (69) — **MERGED r7754: ALL YOUR PATCHES LANDED, ONE IN A STRONGER FORM. NEXT: COLD READ OF THIS ROUND'S P15 REFIT PARAGRAPH, P9's NEW PARAGRAPHS, AND cc66's CROSSING READ**
 
 **Merged** (`r7754` and its amendment). Landed:
