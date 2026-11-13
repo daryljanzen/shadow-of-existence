@@ -80,6 +80,49 @@ The row now carries `r7755`'s premise analysis as its state. **Two halves of it 
 - **Not that the Nariai rate moves.** Measured at `4.4e-05` today; see ③.
 - **Not a paper edit.** The order forbids them. ③'s table is the draft of the restated rule for `P7` and `sec:flatlcdm`, and nothing is written into either.
 - **Nothing fitted, no significance, no row opened.**
+### ⑦ ⛔⛭⛭ ADDENDUM, ON DARYL'S QUESTION — **`P*` IS STILL THE SEPARATING PREMISE, AND I OVERSTATED ⑤. THE MECHANISM CHANGED; THE OUTCOME CAN STAND; AND THE PREMISE NOW HAS A MEASURED SHAPE: THE CORPUS APPLIES ITS OWN LEFTWARD IDENTIFICATION TO MATTER AND NOT TO RADIATION**
+
+Daryl asked whether the mechanism must adjust while the outcome stands, whether I still have **an** argument, or whether the stacking case is digging its heels in. ⇒ **All three, in that order, and §⑤ above is too strong.**
+
+⛔ **CORRECTION TO §⑤ OF THIS REVISION.** I wrote that `P*` is not the separating premise because the dichotomy was wrong. **The dichotomy was wrong and `P*` is still the premise.** What ①–⑥ actually killed was my own `r7755` §⑦ — the claim that no cut could supply the leaf rate — and the sign puzzle. **Neither of those was the premise.** Restated correctly:
+
+> **`P*` (sharpened)**: the cosmological cut is the **straight, vacuum** cut, so the stacking is `Λ` and the offset alone — *although the leaf it generates carries content which, counted along that same cut, bends it to exactly `H_leaf`.*
+
+### ⒜ WHY THE MECHANISM HAD TO CHANGE
+
+`r7755` had it that the leaves' history **departs** from the cut's. ①–⑥ make that unnecessary and I think wrong: the cut's one direction *is* the epoch, so there is nothing to depart. **The adjusted mechanism is not a departure but an identification question — whose bend is the cut's bend?**
+
+### ⒝ AND THE OUTCOME CAN STILL STAND, BY A ROUTE `r7757` OPENED RATHER THAN CLOSED
+
+The corpus's foundational move is the **leftward** reading: *"the cut is primary and `ρ` is the name of its bend, not its cause"*; *"the rate is set, and the fluid's energy is among the contents the set rate carries."*
+
+⇒ *** `r7757` ①–③ measured what that identification gives **when it is applied to radiation**: the bend `μ(r) = 2M + K/r`, whose rate is `H_leaf` to `1.2e-15`. So the leftward reading, applied to the total content, **produces the leaf rate**. To get the stacking rate, radiation must be **exempted** from the identification. ***
+
+### ⒞ AND THE EXEMPTION IS NOT EVEN-HANDED — **measured, from 60's own script**
+
+| component | how its density is fixed | measured |
+|---|---|---|
+| **matter** | **derived from the geometry.** `Ω_m = 2/(x₀³ + 2)`, a clock reading off `x₀` | `x₀³ = 4.72721157` ⇒ `2/(x₀³+2) = 0.29730000` against the background's `Ω_m = 0.29730000`, **ratio `−1 = 0.000e+00`** |
+| **radiation** | **supplied by hand**, from the measured CMB temperature: `Ω_r = 4.15e-5/h²` | `8.818604e-05`, and **the kernel's rate carries no `(1+z)⁴` term at all**, so reading a radiation density off it returns zero |
+
+⇒ *** So in `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴`, **one component of the leaf's content sits INSIDE the geometric term and the other is bolted on OUTSIDE it.** *** And the corpus is explicit that the inside one is *"a translation between parameter sets, and **not** a decomposition into components"* — so the equation sets a parameter translation beside a genuine density and adds them. **That is the premise's shape, and it is the one thing the sky contests.**
+
+### ⒟ SO: DO I STILL HAVE AN ARGUMENT? **Three, and I rank them honestly**
+
+1. **The asymmetry in ⒞ — the strongest, and new.** The identification that makes the rate geometric is applied to matter and withheld from radiation. **Withholding it is what makes the stacking rate radiation-free**, and nothing derives the withholding. *The data contest exactly that term.*
+2. **The structural one, from `r7755` §④, untouched by anything since.** One congruence, one clock, one `r(τ̃)` — and `ṙ/r` has one value. The corpus needs `H_leaf` to be a *readout* rather than a history, **but `rs` is accumulated against it**, which requires it to be a history. *A length cannot be laid down against a readout.*
+3. **The Projection Principle (`r7755` §⑨)** — weakest of the three now, because §⑨⒣ stands against it and ①–⑥ removed the two-rate adjudication it was built for.
+
+### ⒠ AND YES, THE STACKING CASE IS DIGGING IN — **on one coherent footing, which I will state at full strength**
+
+**The vacuum kernel theorem makes the cosmological cut straight, so the stacking is `Λ` and the offset and nothing else; dust's `(1+z)³` resemblance is a *coincidence of form*, disclaimed as a decomposition; and on that reading NO content of any kind sources the stacking — so radiation's absence is not an exception but the rule.** ⇒ *That is internally consistent, and it is why the argument has held for thousands of revisions. It is not a confusion.*
+
+**What it cannot do is carry ⒞.** If no content sources the stacking, then `Ω_m = 2/(x₀³+2)` holding to `0.000e+00` against the fitted matter density is either (i) a coincidence the construction is content to leave uninterpreted, or (ii) matter's density being read off the geometry after all — and on (ii) radiation's exemption needs a reason, while on (i) the construction has a numerical identity at machine precision that it declines to explain. ⇒ **Pressing which of (i) or (ii) the construction means is, I think, where this now goes, and it is a question for 69 and not a computation.**
+
+### ⒡ WHAT ⑦ DOES NOT CLAIM
+
+**Not that the leaf rate is established** — ⒞ is an asymmetry in how two densities are fixed, which is a reason to doubt the exemption, not a derivation of its removal. **Not that the kernel theorem fails** — ⒠ grants it in full. **Not that `Ω_m = 2/(x₀³+2)` is a defect**; it is the corpus's own identity, verified here only to establish that matter's density *is* geometric where radiation's is not. **No new figure**: the two numbers in ⒞ are read from 60's `r7580/lightpath.py` and the identity is one `P15` prints, so nothing here is a measurement needing its own registration. **No paper edit, no row, nothing fitted.**
+
 ## ⛔⛭⛭ `r7755+cc66` — **THE TWO RATES ARE TWO HISTORIES OF *ONE* CONGRUENCE IN *ONE* CLOCK, SO THE CROSSING CANNOT BE SORTED BY WHICH CONGRUENCE IT BELONGS TO. THE PREMISE THE STACKING READING NEEDS IS THAT THE LEAVES' HISTORY IS THE VACUUM CUT'S — AND IT ENTERED THE CORPUS WHOLE, IN ONE COMMIT, NEVER ARGUED. ⛭ AND THE CUT CANNOT SUPPLY THE LEAF RATE AT ALL: THE MASS FUNCTION IT DEMANDS CARRIES A NEGATIVE `r⁻⁴` DENSITY**
 
 Order `r7755`, all four items. ⛭ **I am not defending `r7753`.** Two of its three reasons do not survive this reading and I say which and why below. The caution in the order is correct and it applies to my own previous answer first.
