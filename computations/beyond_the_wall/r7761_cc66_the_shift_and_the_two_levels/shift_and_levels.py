@@ -156,6 +156,78 @@ check("⛭ `r7761` ** ⑨′ AND THE MEASURED `z_acc` AGREES WITH IT AT `0.29 σ
       abs(z_deg - Z_ACC) / Z_ACC_ERR < 1.0,
       f"|{z_deg:.6f} - {Z_ACC}| / {Z_ACC_ERR} = {abs(z_deg - Z_ACC) / Z_ACC_ERR:.2f} sigma")
 
+# ------------------------------------------------------------------ R1 ⑩⑪⑫ (`r7761+cc66.4`)
+M_LEN = TWO_M / 2.0                       # `M` as a length, so `(M alpha^2)^{1/3}` is a radius
+r_min_closed = (M_LEN * alpha ** 2) ** (1.0 / 3.0)
+stat = -TWO_M / r_min_closed ** 2 + 2.0 * r_min_closed / alpha ** 2
+rgrid = np.geomspace(r0 / (1.0 + Z_REC), 40.0 * r0, 400001)
+s_grid = dchir2(rgrid, False)
+i_min = int(np.argmin(s_grid))
+# the closed form the hand algebra gives: `min (d_chi r)^2 = 2M/(M a^2)^{1/3} + (M a^2)^{2/3}/a^2`
+# collapses to `3 (M/alpha)^{2/3}`, which is `1` exactly when `M = alpha/(3 sqrt 3)` -- the Nariai offset.
+s_min_closed = 3.0 * (M_LEN / alpha) ** (2.0 / 3.0)
+# `r7761+cc66.5` the GRID minimum cannot reach the true one: the nearest node sits `dr` off the turning
+# point and the function is quadratic there, so it reads high by `(1/2) f'' dr^2`.  That is the whole of
+# the `5.25e-12` my licence called a miss.
+f2 = 2.0 * TWO_M / r_min_closed ** 3 + 2.0 / alpha ** 2
+dr_node = abs(rgrid[i_min] - r_min_closed)
+quad_excess = 0.5 * f2 * dr_node ** 2
+grid_excess = float(s_grid.min()) - 1.0
+check("⛭⛔ `r7761` ** ⑩ THE DEGENERACY IS THE **MINIMUM** OF `(∂_χ r)²`, AND ITS VALUE IS EXACTLY `1`: "
+      "`min (∂_χ r)² = 3(M/α)^{2/3}` ** ⇒ *** `d(∂_χ r)²/dr = −2M/r² + 2r/α²` vanishes at "
+      "`r = (Mα²)^{1/3}`, which for the Nariai offset IS `α/√3`, and the value there collapses to "
+      "`3(M/α)^{2/3} = 1`. So `g_χχ ≥ 0` everywhere with a SINGLE zero: the constant-`τ̃` slicing touches "
+      "degeneracy at one radius and is regular on both sides. *** ⛔ **MY REGISTERED LICENCE WAS WRONG "
+      "AND IS REPLACED HERE**: I licenced the GRID minimum to `1e-12` and it came in `5.25e-12` high. A "
+      "grid cannot do better -- the nearest node sits `dr` from the turning point and the function is "
+      "quadratic there, so it reads high by `½ f″ dr²`. That accounts for the excess to a few per cent, "
+      "so the row now asserts the CLOSED FORM to round-off and bounds the grid excess by that estimate.",
+      abs(stat) < 1e-15 and abs(r_min_closed / r_deg - 1.0) < 1e-12
+      and abs(s_min_closed - 1.0) < 1e-14 and grid_excess >= 0.0
+      and abs(grid_excess / quad_excess - 1.0) < 0.1,
+      f"3(M/alpha)^(2/3) - 1 = {s_min_closed - 1.0:+.3e}; (M alpha^2)^(1/3) = {r_min_closed:.6f} Mpc = "
+      f"alpha/sqrt(3) to {abs(r_min_closed/r_deg-1):.2e}; stationarity residual {stat:.3e}; grid excess "
+      f"{grid_excess:.3e} against the quadratic estimate {quad_excess:.3e} (ratio "
+      f"{grid_excess/quad_excess:.4f}), node {dr_node:.4f} Mpc off the turning point")
+
+print("\n      the minimum of `(d_chi r)^2 - 1` as the cut's offset is scaled:")
+mins = {}
+for f in (0.98, 1.00, 1.02):
+    mins[f] = 3.0 * (f * M_LEN / alpha) ** (2.0 / 3.0) - 1.0
+    print(f"      offset x {f:.2f}:  min((d_chi r)^2) - 1 = {mins[f]:+.6e}   (closed form)")
+check("⛭⛔⛭ `r7761` ** ⑪ AND THAT IS A **CHARACTERIZATION OF THE NARIAI SELECTION**: `min (∂_χ r)² = 1` "
+      "HOLDS FOR THE OFFSET `2α/(3√3)` AND FOR NO OTHER ** ⇒ *** `3(M/α)^{2/3} = 1` iff "
+      "`M = α/(3√3)`, and it is monotone in `M`, so a SMALLER offset puts the minimum BELOW `1` -- "
+      "`g_χχ < 0` on a whole interval, the constant-`τ̃` surfaces going timelike over a RANGE of epochs "
+      "-- and a LARGER offset puts it above `1`, with no degeneracy anywhere. The Nariai value is the "
+      "knife edge. ** So the Nariai condition, which the corpus selects on other grounds, is equivalent "
+      "to a statement about the COSMOLOGICAL foliation and not only about the static patch. ** *** "
+      "⛔ **I REGISTERED THIS DIRECTION BACKWARDS** -- I wrote that a larger offset would go below `1`. "
+      "The closed form settles it: the minimum RISES with the offset. The sign change through the Nariai "
+      "value, which is what the row was for, holds. ⌗ *No claim that the corpus selected it this way*",
+      mins[0.98] < -1e-6 and mins[1.02] > 1e-6 and abs(mins[1.00]) < 1e-14,
+      f"min - 1 at 0.98/1.00/1.02 x 2M: {mins[0.98]:+.4e} / {mins[1.00]:+.2e} / {mins[1.02]:+.4e}")
+
+# the bent cut's turning point has no tidy closed form (`2r⁴/α² = 2Mr + 2K` is a quartic), so it
+# is bracketed and solved rather than read off the grid -- a grid minimum reads HIGH, as `⑩` just
+# measured, and the row's claim is a SIGN, so the grid must not be the instrument here.
+from scipy.optimize import brentq
+dfb = lambda rr: -TWO_M / rr ** 2 - 2.0 * K / rr ** 3 + 2.0 * rr / alpha ** 2
+r_bent = brentq(dfb, 0.5 * r_deg, 2.0 * r_deg, xtol=1e-12, rtol=8.9e-16)
+bent_min = dchir2(r_bent, True) - 1.0
+s_bent = dchir2(rgrid, True)
+j = int(np.argmin(s_bent))
+assert bent_min <= float(s_bent.min()) - 1.0 + 1e-15, 'the solved minimum must not exceed the grid'
+check("⛭⛔⛭ `r7761` ** ⑫ ⇒ AND RADIATION **REMOVES** THE DEGENERACY: ON THE CUT THE UNIVERSE ACTUALLY "
+      "HAS, `g_χχ > 0` EVERYWHERE ** ⇒ *** with `μ = 2M + K/r` the minimum of `(∂_χ r)²` rises above `1` "
+      "and moves inward, so the cosmological slicing is regular at every epoch and the chart's one "
+      "pathology is an artefact of taking the cut to be exactly vacuum. ** Which is the sharpest form of "
+      "the answer to Daryl's question: radiation does not merely bend the cut and leave the shift to "
+      "carry the observation -- it changes whether the shift is finite at all. ** *** ",
+      bent_min > 0.0,
+      f"bent cut: min((d_chi r)^2) - 1 = {bent_min:+.6e} at r = {r_bent:.4f} Mpc (solved, not gridded; the grid reads {float(s_bent.min()) - 1.0:+.6e}), against the straight "
+      f"cut's 0 at {r_deg:.4f} Mpc (z = {r0/r_bent - 1.0:+.6f} against {z_deg:.6f}); so the shift peaks at N^chi = {1.0/bent_min:.1f} there rather than diverging")
+
 # ------------------------------------------------------------------ R1 ④ the FORM survives
 zg = np.geomspace(1e-3, Z_REC, 20001)
 rg = r0 / (1.0 + zg)
@@ -217,7 +289,7 @@ check("⛭ `r7761` ** ⑧ AND AGAINST THE BACKGROUND'S OWN `x₀³` THE REFIT SI
       f"{n_sig_bg:.2f} sigma")
 
 print("\n" + "=" * 100)
-print(f"  {'OK  ' if not FAILS else 'FAIL'}  {10 - len(FAILS)} of 10 checks;  "
+print(f"  {'OK  ' if not FAILS else 'FAIL'}  {13 - len(FAILS)} of 13 checks;  "
       f"{len(FAILS)} failure(s)" + ("" if not FAILS else ": " + "; ".join(FAILS[:2])))
 print("=" * 100)
 sys.exit(1 if FAILS else 0)
