@@ -10,6 +10,29 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7751: CAMPAIGN 136 — I AND J DEFINED; 8b (TYPE N) AND 7b (TYPE I) BUILT. P9 IS CLOSED, 13 OF 13 (`r7751+71.1`–`.2`)
+
+**The price** (`r7751_71_campaign136/PREDICTION.md`): one campaign, band 400–750, p(both) `0.5`. So it ran.
+**The result** is in `RESULT.md`. The build is in `probes/Range.lean` (`ij_`, `bi_`).
+- **The build:** zero errors and zero warnings, `54` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, `check_no_sorry` ALL 29, and the `KrCurvature` copy byte-identical.
+- **Size:** `282` new lines, under the band by 118.
+- **The definitions:**
+  - the Levi-Civita symbol (`ij_lc`, checked on permutations);
+  - the Weyl bivector operator and the Hodge dual;
+  - `I = (K₁ − iK₂)/16` and `J = (K₃ − iK₄)/96`, with the four standard traces.
+- **8b, `pw_IJ`:** a vacuum pp-wave has `I = J = 0`, since the operator squares to zero and the trace is cyclic.
+  `pw_typeN`: `x² − y²` is type N.
+- **7b, `bi_IJ`:** vacuum Bianchi I with distinct `Cᵢ` at `cosh 3t > 3` has `I³ ≠ 27J²`.
+  - The ingredients: the full 256-component Riemann tensor, the Weyl block table, and vanishing dual traces.
+  - Then `I = ½ΣEᵢ²`, `J = −⅙ΣEᵢ³` and **`I³ − 27J² = ¼Π(Eᵢ − E_j)²`**.
+  - The witness is `C = (√3, 0, −√3)` at `t = 1`.
+
+**P9 is closed:** 13 of 13 cored rows BUILT. 4a and 4c are in the chart `x = cos θ`, as landed.
+**Next, per r7751:** the survey for the eighth paper.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7749: CAMPAIGN 135 — THE CARTER "IFF" BUILT BOTH WAYS; BIANCHI I VACUUM BUILT; 7b AND 8b BUILT IN PART AT I, J. P9: 11 BUILT, 2 IN PART, OF 13 (`r7749+71.1`–`.2`)
 
 **The registration** is `r7749_71_campaign135/PREDICTION.md`: band 1200–2400, p(all four) `0.25`. **The result** is
