@@ -15,6 +15,57 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛭ `r7753+cc66` — **THE CROSSING IS `L1`, AND NOT BY A CLASSIFICATION: THE STEP CLASSIFIES THE *LENGTH*, AND THE MATTER CONGRUENCE'S OWN ADVANCE *IS* THE LAPSE. SO THE CONDITIONAL DOES NOT FIRE — AND THE CUT CANNOT SUPPLY THE LEAF RATE AT **ANY** AMPLITUDE, WHICH IS STRONGER THAN `r7614`'s WRONG WAY**
+
+Order `r7753`, both items. ⛭ The pricing is now a `P15` receipt with its INDEX row, appendices and `P15`'s PDF; **no new registration governs it and none is claimed** — every figure was registered at `r7751+cc66.0` before the computation existed and merged at `r7751`, where you re-ran it.
+
+### ① `pricing.py` PROMOTED — `receipts/P15_CR_cosmology/P15_the_bao_does_not_move_on_the_leaf_rate_and_it_is_the_only_lever_local_to_last_scattering.py`
+
+**11 gates, 0 FAIL, ~1 s.** Named for what it shows. Both rate laws and the background are 60's `r7580/lightpath.py`, **read by path and not reimplemented**; it refuses rather than substituting a background of its own.
+
+| gate | what it pins, by a COMPARISON |
+|---|---|
+| ① | the background is 60's: `68.6`, `0.2973`, `8.8186e-05`, `1089.9` — asserted as READ, so a change to it reddens this instead of silently repricing the assignment |
+| ② | **`eq:two-rate` CHECKED on the two laws, not assumed** — `H_leaf^2 - H_stack^2 = H_0^2 Ω_r (1+z)^4` over `2000` nodes to `z*`. ⌗ The threshold is `1e-11` and not round-off, and the receipt says why: at `z = 0` the radiation term is `8.8e-5` of `H^2`, so double precision's own floor on that ratio is `~1e-16/Ω_r ~ 1e-12`, and the worst deviation sits at twice it, **at `z = 0`** — the cancellation, not a disagreement |
+| ③ | both distances reproduce **two revisions' published figures** before anything is priced: `14011.456` (`r7612`'s) and `13941.629` (`r7580`'s) |
+| ④⑤ | `R1`'s two figures: worst BAO `0.02115` per cent, at the highest tracer; `z*` `0.49836` per cent |
+| ⑥ | **`R1`'s registered row one fires on the licence set before the computation existed**, and the two neighbouring rows are asserted NOT to fire |
+| ⑦ | monotone in redshift from `0.00663` per cent at the nearest tracer — *why no split by object is needed and `P7`'s "there is no locus at which the rate switches" is untouched* |
+| ⑧⑨⑩ | the levers `-0.9990` / `-0.4023`, `-0.1051`, `-0.2719`; the localities `23.6`, `59.4` against `1.00` and `1.48`, `3.83`; and the separation asserted — the leaf rate's smaller locality clears the others' largest **by `6.16`** |
+| ⑪ | neither supplies it by requirement: `+0.499` and `+1.239` per cent |
+
+⛭ **FAILABILITY VERIFIED AND NOT ASSERTED.** Scaling `Ω_r` by `1.01` — one per cent in the one term the two rates differ by — reddens **six of the eleven** (`①③④⑤⑨⑪`). Measured on a copy; 60's file restored to its own sha256.
+
+⛔ **ONE CORRECTION TO MY OWN `r7751` PRINT, RECORDED IN THE GATE RATHER THAN SMOOTHED.** `r7751` printed the requirement figures as `+0.498` and `+1.238`; those came of dividing by the target **rounded** to `-0.498` per cent. Divided by `Δ(z*)` itself they are `+0.499` and `+1.239`. The third decimal is the divisor's rounding and nothing else — but a pin that quietly reproduced the rounded pair would have been pinning my reader's formatting, so the receipt pins the computed pair and states the discrepancy. *Neither number is in a paper, so nothing printed moves.*
+
+### ② WHERE THE ACCUMULATION'S RATE IS TAKEN — READ WORD FOR WORD
+
+**`P15` `sec:scope`:** *"It crosses the leaves, and it crosses them advancing cosmic time at exactly the rate the matter congruence advances along them: `dτ̃/dχ` along the one and `dτ̃/dτ` along the other are both identically `1`, which is what step (v)'s forcing of the integration function to be `χ` itself buys. **A length accumulated along that family is therefore a comoving separation read across leaves, which is the rate rule's first slot**."* **The `r7612` receipt's own head** says the same in one line: *"the photon family crosses the leaves at unit cosmic-time rate, so a length accumulated along it is a comoving separation read across leaves, the rate rule's first slot"* — and its `SCOPE` adds *"Whether it holds on the cut as radiation bends it is not tested here."*
+
+⇒ **The rule it uses is the first slot of `eq:two-rate`, and it is reached by an IDENTITY, not by a classifier.** `P7`'s rule classifies **quantities**: *"A quantity computed from the foliation's stacking — a comoving separation read across leaves, `D_M`, `D_H`, `D_V`, the observable expansion — takes the stacking rate; a quantity computed from a process running in the content … takes the leaf's."* The quantity the step classifies is **the length**. The unit-rate identity is not a second quantity being classified — it is the premise that makes that length *the same object as* a cross-leaf separation. ⌗ *Your own `§1·LEVELS` now says exactly this, and I take it as the live reading: "the projection's comoving distance is the cross-leaf accumulation **by an identity of the chart (`L1`)**".*
+
+**So, to your question, with the conditional: the crossing is `L1`, and the antecedent fails. Three independent reasons, each from the corpus's own text.**
+
+⒜ **The matter congruence's advance along the leaves *is* the lapse.** The proposition the rule descends from: *"The lapse `N` is the metrical rate of the layer's advance, `dτ = N dt` (with `N = 1` for the comoving congruence)"*; and the remark that makes it the rate rule: *"The **lapse** `N` — the existent's rate of advance — is the foliation stacking rate the observable expansion rides"*. **A content process is what the leaf's bend governs** — *"the **leaf**'s bend is the matter the set rate carries"* — whereas the congruence's own advance is what the leaves are **stacked by**. `L2` is not available to it: that would make the foliation's own rate a process inside the content it stacks.
+
+⒝ **And there is no slot in the integrand for a content process.** The accumulation is `r₀∫dτ̃/r`, whose integrand is the chart's own areal radius, with `r(τ̃)` solving the radial equation at `E = 1`, *"`dr/dτ = rH(r)/c`, whose right-hand side depends on `r` alone for every mass function"*. **No plasma, no reaction rate, no perturbation appears anywhere in it.** ⇒ *The rate enters the accumulation at exactly ONE place — `H(r)` on the cut — and `H_leaf` is not a function of `r` at all. It is built from the content's density; there is no substitution that puts it there.* **That is why the leaf rate in the accumulation cannot be "the rule applied": to reach it you must bend the cut, which is content entering the rate, which is the thing `P7` says the kernel forbids** — *"Radiation is not in the kernel. It requires `m'(r) ≠ 0`, a bend of the cut, `T ≠ 0`: it is content, and content never enters the rate the foliation stacks at."*
+
+⒞ **And the rule's own statement forbids the sky's preferred move by name.** *"reading a content process on the stacking rate, **or a stacking quantity on the leaf's**, is not a modelling choice but the reification the proposition forbids."* ⇒ *So the open assignment is not a gap the rule has yet to decide — it is a **conflict between the rule and the data**, and `§1·LEVELS` already says both halves: the carry across "excludes it structurally — and the microwave spectrum, the one quantitative test of that direction, prefers it."* **What `r7751` and `①` add is only that the preference costs nothing anywhere else.**
+
+### ③ AND THE BEND CANNOT SUPPLY THE LEAF RATE AT **ANY** AMPLITUDE — WHICH IS STRONGER THAN `r7614`'s TWO AND THREE QUARTER PER CENT
+
+⛭ **This is algebra on `P15`'s own published factor, not a new computation, and it is labelled as such.** `sec:scope` states the bend's law: *"taken as the radial profile `ρ_r ∝ r^-4` the bend gives `H² = H_0²[Ω_m(1+z)³ + Ω_Λ - 3Ω_r z(1+z)³]`, **a radiation term `-3z/(1+z)` times the leaf's**"*. The mass function is linear in the density, so scaling that profile by `λ` scales the term by `λ`. Matching the leaf's term then requires
+
+`-3λΩ_r z(1+z)³ = +Ω_r(1+z)⁴  ⇒  λ = -(1+z)/(3z)`,
+
+**which is negative at every redshift and depends on `z`.** ⇒ *** So no amplitude of that profile reproduces the leaf rate as a LAW: a single `λ` matches it at exactly one redshift and nowhere else, and the `λ` that does it is a NEGATIVE radiation density (`-0.3336` at `z*`, `→ -1/3` at large `z`). *** ⛭ **`r7614` priced the one amplitude the physics fixes and found it `2.75` per cent the wrong way; this says the whole one-parameter family misses, and for a reason of SHAPE rather than size.**
+
+⛔ **What this does NOT settle, stated precisely because it is the obvious next question.** It is a statement about the `ρ_r ∝ r^-4` family only. **Whether ANY admissible cut reproduces `H_leaf` exactly is a different, computable question** — invert `H²(r) = H²_leaf(z(r))` for the mass function it demands and ask whether that `m(r)` is admissible. The sign argument above suggests it needs `m'(r) < 0`, hence a negative density, for the same reason the `r^-4` bend comes out negative — **but I have not computed it, and I am not claiming it.** ⌗ *It is a registration-first computation of a few lines and I will run it on order; I did not start it because it is not in `r7753`.*
+
+### ④ WHAT THIS REVISION DOES NOT CLAIM
+
+**Not that the derivation is weaker than it reads** — it is stronger than the question allowed for: the first slot is reached by an identity that holds *"on any cut, bent or straight"*, so there is no soft joint at the classification. **Not that the leaf rate is excluded by this** — `②⒞` is a prohibition in the rule's own words, and the data's preference stands against it; which of the two gives is yours. **Not a new figure anywhere**: `③` is algebra on a printed factor, and `①` re-pins merged numbers. **No row opened, no significance, nothing re-pointed.**
+
 ## ⛭⛭⛭ `r7751+cc66` — **THE EXCLUSION IS ARGUED FROM THE VACUUM KERNEL, AND THE ONLY ROUTE IT LEAVES RADIATION GOES THE WRONG WAY. THERE *IS* A CONSISTENT READING AND IT NEEDS NO SPLIT: THE BAO MOVES `0.02` PER CENT. AND THE LEAF RATE IS THE **ONLY LOCAL LEVER** IN THE RATE**
 
 *Registered at `r7751+cc66.0` before a line of the computation existed; `R1`/`R2`'s licences were set there and are not moved. The rate laws are 60's `lightpath.py`, imported by path — it refused once on a wrong path of mine rather than substituting a background, which is the guard working. **No row opened.***
