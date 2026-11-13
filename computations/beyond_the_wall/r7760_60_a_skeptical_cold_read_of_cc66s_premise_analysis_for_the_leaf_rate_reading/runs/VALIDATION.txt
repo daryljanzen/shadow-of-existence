@@ -1,0 +1,67 @@
+r7760 (60) -- VALIDATION
+
+Range validated: origin/main..HEAD, i.e. ec7b6fe992e9f7ab6bb97ed45cedeab8dd7a1d4f^..HEAD -- the registration and the
+result-and-reply commit, with origin/main (r7757) merged in before either ran.
+
+Files this range changes: FOR_66_FROM_60.md and the five files of this receipt's own
+directory.  No paper, no receipt, no generated file, no other seat's work and no
+registration is touched, so nothing derived needed regenerating and no INDEX row was
+minted.  Every comparison below is by SORTED DIFF of the receipt lists, never by
+matching counts.
+
+-------------------------------------------------------------------------------
+1. SCOPES  (scripts/receipt_scope.py, this range)
+
+   reads       0   tolerance  14   suite  68
+
+   All three SET-IDENTICAL, by sorted diff, to r7756's validated range computed on this
+   same tree.  The reads scope is EMPTY, so the runner-read sweep has nothing to measure
+   on this range: 0 measured, not 0 assumed.
+
+-------------------------------------------------------------------------------
+2. FAST JOB  (NODE=60 bash scripts/run_fast_job.sh)
+
+   10 generators, 133 gates, plus the hollow-assertion lint.
+   RED, naming exactly five checks and no others:
+
+     check_branches  check_pdf_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+
+   The five structural shallow-clone reds, red here and green in CI, which has the full
+   history.  No sixth check is named.
+
+-------------------------------------------------------------------------------
+3. THE SUITE  (scripts/run_all_receipts.py --from <suite scope> --jobs 4 --timeout 600)
+
+   68 registered receipts, 53 pass, 15 fail, 0 over timeout, 517 s wall.
+   The fifteen, compared as a SET against the established fifteen:
+     in established and not failing now: none
+     failing now and not in established: none          => SET-IDENTICAL
+   Full output kept, so the comparison is of NAMES and not of counts.
+
+-------------------------------------------------------------------------------
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP  (tA; tB --threads 4; tC --threads 2
+   --coretype Prescott, each --from the 14-receipt tolerance scope, then --compare)
+
+   tA, tB and tC each probed 14 of 14 -- none NEVER PROBED.
+
+   A vs B:  0 flagged site(s);  0 at the precision floor;  7 not measured
+   A vs C:  0 flagged site(s);  0 at the precision floor;  7 not measured
+
+   The VERDICT line on both reads "NOT A SWEEP -- no site flagged, but a receipt was not
+   measured on both builds": the BITFIELD's 2 (unmeasured) with 1 (flagged) clear, which
+   is the normal reading.  The seven are the same seven in BOTH comparisons by sorted
+   diff, and they are SET-IDENTICAL to the seven r7756 recorded:
+
+     L255/E1   L259/D1   S5   S6   S8   C71   C79
+
+   Each is red on main for its own reason; none is this range's, which changes no receipt.
+
+-------------------------------------------------------------------------------
+5. WHAT WAS NOT RUN, AND WHY
+
+   * The runner-read sweep: nothing to measure, the reads scope being empty.
+   * No long job was re-run for reassurance.  The suite and the sweeps were re-run because
+     the tree DID change: origin/main moved twice (r7757 and the photonfamily key) and was
+     merged in before this revision's own work.
+   * The three probes' scratch build directories were deleted after the comparisons.
