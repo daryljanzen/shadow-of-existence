@@ -1,0 +1,390 @@
+r7752 (60) -- PROBE  [HEAD 5df30008e]
+sympy 1.14.0, python 3.11.17
+
+
+##################  PART 1 -- P9's Kerr-de Sitter paragraph  ##################
+
+WHAT THIS RUN ESTABLISHES AND WHAT IT DOES NOT, said before the arms rather than
+after: the five-variable symbolic identity was attempted first and does not finish
+in this run's budget.  What is run instead is exact RATIONAL arithmetic -- no
+floating point anywhere -- at four coordinate points for each of six parameter
+triples, AND one-variable identities along two slices of each triple, where the
+expression is a univariate rational function and sympy's cancel is decisive.  An
+identity in r for fixed x is a statement about infinitely many points, not a spot
+check.  The general symbolic statement is what the Lean theorem supplies, and this
+probe's job is to read the paragraph against it, not to replace it.
+  kit built: generic Lambda>0                       a=1/2 M=3 Lambda=7/5   [2.8s]
+  kit built: the witness's values                   a=1 M=1 Lambda=3   [1.5s]
+  kit built: large twist                            a=2 M=1/4 Lambda=2   [2.6s]
+  kit built: Lambda<0 (Lean admits, P9 does not)    a=1/3 M=2 Lambda=-1   [2.7s]
+  kit built: no twist, a=0                          a=0 M=3 Lambda=9/5   [0.2s]
+  kit built: no offset, M=0                         a=5/2 M=0 Lambda=3   [0.9s]
+
+==============================================================================
+ARM 1 -- R_mu_nu = Lambda g_mu_nu, recomputed from the metric in all sixteen components
+==============================================================================
+  the inverse metric verifies against the metric for every triple: True
+  det of the (t,phi) block, generic triple: -3600*(x - 1)*(x + 1)*(7*x**2 + 60)*(28*r**4 - 53*r**2 + 360*r - 15)/20151121
+  nonzero Christoffel components of 64, by triple:
+      generic Lambda>0                       32
+      the witness's values                   32
+      large twist                            32
+      Lambda<0 (Lean admits, P9 does not)    32
+      no twist, a=0                          14
+      no offset, M=0                         28
+  exact rational points: 6 triples x 4 points x 10 independent
+  components = 240 values, all of R_mu_nu - Lambda g_mu_nu.
+      components not exactly zero: none
+  one-variable identities: 6 triples x 2 slices x 10 components
+  = 120 univariate rational functions, each cancelled to zero.
+      slices not identically zero: none
+  the ten independent components carry all sixteen because R_mu_nu is symmetric,
+  which the construction makes true by writing only mu <= nu and mirroring.
+  NEGATIVE WAS REACHABLE: one nonzero value at one point would fail this arm, and
+  the Lambda<0 triple is in the list precisely because the paper's object excludes it.
+  => PASS   [t=91s]
+
+==============================================================================
+ARM 2 -- the witness is a witness, is non-diagonal, and is not degenerate
+==============================================================================
+  Lean's kds_witness: a = M = 1, Lambda = 3, r = 2, x = 0.
+  g_t_phi there, recomputed from the metric: -3/2   (Lean's docstring says -3/2)
+  so the metric is genuinely NON-diagonal at the witness: True
+  R_mu_nu - Lambda g_mu_nu = 0 in all sixteen at the witness: True
+  the five quantities kds_Hyp requires nonzero, evaluated there:
+      P (Sigma)          = 4
+      D (Delta_r)        = -19
+      Q (Delta_theta)    = 1
+      S (1-x^2)          = 1
+      X (Xi)             = 2
+  NOT DEGENERATE: none of the five is zero, so the witness is interior to the region
+  the theorem is stated on rather than on its boundary.
+  AND NOTE WHERE IT SITS: x = 0 is the equatorial plane, the value furthest from the
+  one condition the paragraph does not state (ARM 9).  The paper names a, M, Lambda
+  and r for this witness and does not name x.
+  NEGATIVE WAS REACHABLE: g_t_phi = 0, or a vanishing hypothesis, would fail it.
+  => PASS   [t=91s]
+
+==============================================================================
+ARM 3 -- at a = 0 the metric is Schwarzschild-de Sitter entry by entry, at a = M = 0 static de Sitter
+==============================================================================
+  the limit is TAKEN in the metric, with M, Lambda, r and x all symbolic, not read
+  off a theorem's name.  This arm needs no point evaluation: the limit is diagonal.
+  a -> 0 against diag(-f, 1/f, r^2/(1-x^2), r^2(1-x^2)), f = 1 - 2M/r - Lambda r^2/3:
+      entries that differ: none, all sixteen agree
+  a = M = 0 against the same with f = 1 - Lambda r^2/3:
+      entries that differ: none, all sixteen agree
+  both are identities in M, Lambda, r and x, so these two limits ARE established
+  symbolically and not only at points.
+  NEGATIVE WAS REACHABLE: a limit reproducing only up to a coordinate change, or not
+  at all, would show as a differing entry.
+  => PASS   [t=91s]
+
+==============================================================================
+ARM 4 -- at M = 0 the Riemann tensor is the constant-curvature form, computed not asserted
+==============================================================================
+  R_abcd built from the M = 0 metric's own Christoffels and lowered with that metric.
+  the 36 index pairs (6 antisymmetric ab) x (6 antisymmetric cd) carry all 256
+  components once R_abcd's own symmetries hold, and they are verified here rather
+  than assumed:
+      antisymmetry in ab, antisymmetry in cd, pair exchange -- failures: none
+  comparisons run: 216 (two M=0 parameter choices, one of them Lambda<0, at two exact points and along one slice)
+  R_abcd - (Lambda/3)(g_ac g_bd - g_ad g_bc): entries not zero: none
+  the paper's proposition writes the same form as alpha^-2 (g g - g g); with
+  alpha = sqrt(3/Lambda) that constant is Lambda/3: True
+  and the proposition says the limit is 'mass-free, rotation-only (M=0, a != 0)'
+  while the formal statement holds for every a including 0, so the formal statement
+  is the stronger one and the prose is inside it.
+  NEGATIVE WAS REACHABLE: a component depending on r or x would fail it.
+  => PASS   [t=100s]
+
+==============================================================================
+ARM 5 -- the structure-function decomposition holds as an identity with every free part free
+==============================================================================
+  Lambda = 3/alpha^2 substituted; a, M, r, alpha and x all left symbolic, so these
+  are identities and not point checks.
+      Delta_r = r^2 f_SdS + a^2 f_dS             -> identity
+      Delta_theta = 1 + (a/alpha)^2 cos^2 theta  -> identity
+      Xi = 1 + (a/alpha)^2                       -> identity
+  which conjunct needs r != 0, and why:
+      Delta_r = r^2 f_SdS + a^2 f_dS             needs r != 0: True
+      Delta_theta = 1 + (a/alpha)^2 cos^2 theta  needs r != 0: False
+      Xi = 1 + (a/alpha)^2                       needs r != 0: False
+  so of the three conjuncts Lean's kds_deltadecomp states, exactly the first needs
+  r != 0, and it needs it because the paper writes f_SdS with 2M/r in it -- which is
+  a restriction a reader sees in the formula, not one hidden from them.
+  NEGATIVE WAS REACHABLE: an identity holding only at a particular alpha or a.
+  => PASS   [t=100s]
+
+==============================================================================
+ARM 6 -- J = M a / Xi^2 vanishes exactly when the offset or the twist is absent, and what that rests on
+==============================================================================
+  forward, both ways in: J(M=0) = 0, J(a=0) = 0
+  reverse: M a / Xi^2 = 0 with Xi != 0 forces M a = 0, hence M = 0 or a = 0.
+  Xi = 1 + Lambda a^2/3 vanishes exactly at Lambda = [-3/a**2], so only for
+  Lambda < 0 with a^2 = -3/Lambda.
+  with Lambda declared positive, Xi = Lambda_pos*a**2/3 + 1, which is >= 1 for every real a.
+  so Lean's hypothesis Xi != 0 is NEEDED by its own statement -- a, M and Lambda are
+  free reals there and Lean reads division by zero as zero, which would make the iff
+  false at Xi = 0 -- and is IMPLIED by the paper's own object, Kerr-de Sitter with
+  alpha = sqrt(3/Lambda) real and hence Lambda > 0.
+  THE TWO RANGE OVER DIFFERENT SETS, and that is the whole of the difference: it is
+  not a defect in the paragraph.  Establishing what the identity ranges over before
+  treating it as an obstruction is the standing guard, and here it clears the paper.
+  NEGATIVE WAS REACHABLE: Xi vanishing somewhere with Lambda > 0 would make it a defect.
+  => PASS   [t=100s]
+
+==============================================================================
+ARM 7 -- the hypothesis count, enumerated from the Lean source and compared with the paragraph
+==============================================================================
+  kds_Hyp's fields, read from the structure and not from its docstring (5):
+      hP: kds_P a (x 1) (x 2) ≠ 0
+      hD: kds_D a M L (x 1) ≠ 0
+      hQ: kds_Q a L (x 2) ≠ 0
+      hS: kds_S (x 2) ≠ 0
+      hX: kds_X a L ≠ 0
+  binders of each cited declaration, DATA counted apart from PROPOSITIONAL
+  (r7750's lesson: 'hypotheses' meaning every binder overcounts):
+      kds_vacuum        data=6  prop=1   ['h:kds_Hyp a M L x']
+      kds_witness       data=0  prop=0   []
+      kds_sds           data=3  prop=1   ['hr:y 1 ≠ 0']
+      kds_desitter      data=2  prop=1   ['hr:y 1 ≠ 0']
+      kds_const_curv    data=7  prop=1   ['h:kds_Hyp a 0 L x']
+      kds_deltadecomp   data=5  prop=2   ['hr:r ≠ 0', 'hα:α ≠ 0']
+      kds_J             data=3  prop=1   ['hX:kds_X a L ≠ 0']
+
+  and what the paragraph states ANYWHERE in it -- the whole paragraph and not only
+  the sentence that carries the 'wherever ... nonzero' clause, because the generous
+  reading is the one a finding has to survive -- against the five kds_Hyp requires:
+      D (Delta_r)        stated in the paragraph: True
+      Q (Delta_theta)    stated in the paragraph: True
+      P (Sigma)          stated in the paragraph: True
+      X (Xi)             stated in the paragraph: True
+      S (1-x^2)          stated in the paragraph: False
+  => stated 4 of 5.
+  NEGATIVE WAS REACHABLE: all five stated would make this arm report no finding.
+  => PASS   [t=101s]
+
+==============================================================================
+ARM 8 -- every biconditional is checked in both directions
+==============================================================================
+  'exactly when' / 'if and only if' in the paragraph: 1 site(s)
+      [2] At $a=0$ the metric is the Schwarzschild--de~Sitter one entry by entry, and at $a=M=0$ static de~Sitter (\texttt{kds\_sds} and \texttt{kds\_desitter}); at $M=0$ the Riemann tensor is $\tfrac{\Lambda}{3}(g_{\mu\rho}g_{\nu
+  kds_ declarations whose statement carries an iff: ['kds_J']
+  both directions of that one, exhibited in ARM 6: forward by substitution,
+  reverse from Xi != 0.  The paragraph's 'exactly when' is therefore used as an
+  iff and is one.
+  NEGATIVE WAS REACHABLE: a one-way implication printed as 'exactly when', or an
+  iff in Lean with no 'exactly when' beside it.
+  => PASS   [t=101s]
+
+==============================================================================
+ARM 9 -- the omitted condition is load-bearing, and the absence claim is searched with a control
+==============================================================================
+  at x = +-1 the denominator of g_xx is (1 - x**2)*(L*a**2*x**2 + 3) -> 0 there,
+  so the metric component is not defined on the axis of this chart and
+  'all sixteen components' has no value there.
+  components of the metric whose denominator vanishes at x = +-1: ['g_xx']
+  Christoffel components whose denominator vanishes there (4): ['Gamma^1_22', 'Gamma^2_22', 'Gamma^3_02', 'Gamma^3_23']
+
+  THE SEARCH, printed rather than described.  Pattern '1\\s*-\\s*x|\\\\sin|poles?|axis|away from the pol' run over the paragraph:
+      hits in the Kerr paragraph: 0  []
+  POSITIVE CONTROL, the same pattern over the Kantowski-Sachs sentence repaired one
+  round ago in the same paper: hits 1  ['\\sin']
+      control sentence: wherever $X$, $Y$ and $\sin\theta$ are nonzero, the Einstein tensor gives \eqref{eq:ksrho} and its two partners exactly, with every off-diagonal component zero (\texttt{rn\_ks\_einstein} and \texttt{r
+  so the pattern finds the condition where the paper does state it, and does not
+  find it in the Kerr paragraph.  The absence is measured, not asserted.
+  NEGATIVE WAS REACHABLE: a control with no hits would have withdrawn the claim.
+  => PASS   [t=101s]
+
+
+##################  PART 2 -- P18 and P7, one state and the framing  ##################
+
+==============================================================================
+ARM 10 -- the predicate is powered on the PRE-reframing text of the same two files
+==============================================================================
+  pre-reframing versions named in the probe's own source: P18 at 4fc4b1d92, P7 at ad0a30ff5
+  the settled-state predicate, run over both states of both files:
+      P18 pre-reframing        6 hit(s)
+      P18 now                  2 hit(s)
+      P7 pre-reframing         5 hit(s)
+      P7 now                   3 hit(s)
+  pre-reframing total: 11.  A predicate with no pre-reframing hits could
+  not certify anything about the current text and would be withdrawn here.
+  THIS IS r7746's LESSON IN FORCE: the predicate's terms are the terms the OLD text
+  used, taken from the pre-reframing versions, so it cannot have been tuned to agree
+  with the repair.  And r7748's: the control is the same material the sweep searches,
+  not another paper and not a receipt.
+  NEGATIVE WAS REACHABLE: pre-reframing total 0.
+  => PASS   [t=101s]
+
+==============================================================================
+ARM 11 -- one state: sentences still putting the rate or the residual in a settled state
+==============================================================================
+  the order's framing: the working hypothesis is that the model has not been found,
+  not that the sky rejects the construction; so a sentence asserting that the rate
+  question is answered is a defect, as is a final verdict or a shortfall framing.
+  sentences matching the settled-state predicate with no open-work qualifier: 7
+      [1] P18: \emph{The rate light's path distance takes is derived, and the residual is the narrower for what is already ruled out.} The construction's own level assignment rules out the explanation that would have covered the deficit otherwise, and the two instrument faults a reader would reasonably suspect are both removed: not t
+      [2] P18: \emph{And the stacking rate that distance is built on is derived on any cut}, bent by radiation or not, while radiation put into the cut lengthens the distance rather than supplying the leaf rate, so the model implements what the construction requires and the residual is what radiation's absence from the stacking rate 
+      [3] P7: What the scalar sector carries is then the derived configuration confronted with the sky (item~\ref{frontier:scalar}).
+      [4] P7: \emph{The rate light's path distance takes is derived, and the residual is carried by it.} The residual is an acoustic contrast rather than a phase, located in the projection from wavenumber to multipole; built with the projection's comoving distance on the leaf rate it is gone, while the construction builds that dista
+      [5] P7: \emph{And the derivation holds on any cut}, bent or straight, while radiation put into the cut as its bend lengthens the distance to $14397$\,Mpc rather than supplying the leaf rate, so the residual stands on a configuration whose every rate is derived, and what it measures is radiation's absence from the stacking rate
+      [6] P15: \emph{That places the residual on the rate assignment of \S\ref{sec:tensions} rather than on the projection}---an assignment the reassignment derives on any cut, bent or straight (\S\ref{sec:scope}), so the residual is the derived configuration confronted with the sky, and not a fault in how the transfer implements it.
+      [7] P15: \emph{What disagrees is the acoustic \emph{contrast}, and it disagrees in the one direction the construction cannot move.} \emph{So this section leaves neither a residual in search of a parameter nor an arithmetic to re-run}: it leaves a localised, quantified disagreement between this cosmology and the microwave sky, o
+
+  final-verdict framings found: 0  (none)
+  shortfall framings found: 0  (none)
+  NEGATIVE WAS REACHABLE both ways: zero sites would report the reframing complete.
+  => PASS   [t=101s]
+
+==============================================================================
+ARM 12 -- no site says the residual falls below the standard model's own
+==============================================================================
+  the absence is SEARCHED and the search printed, with the pre-reframing text as the
+  control (r7749 reports P18's last such site brought to 'level with').
+  residual-specific 'falls below' sites now: 0  (none)
+  bare 'falls below' occurrences, for comparison, all of which are other objects
+  (a bottleneck density, the throat as a floor, a reaction rate):
+      P18: 1
+      P7: 0
+      P15: 3
+  CONTROL, the same pattern on earlier versions OF THE SAME TWO FILES.  The r7747
+  and r7745 parents are already repaired, so they have no hits and cannot certify
+  anything; the version before r7745 is where the family was still in print:
+      P18 @4fc4b1d92 (r7747, already repaired)   0 hit(s)
+      P7  @ad0a30ff5 (r7745, already repaired)   0 hit(s)
+      P18 @468aa9093 (before r7745)              3 hit(s)
+      P7  @8b43d868b (before r7745)              1 hit(s)
+          \emph{So the construction's two sectors stand together on exactly one reading.} \emph{And the one quantitative test of the distance direction is the microwave spectrum, which prefers the other side}: 
+          The end-to-end transfer to recombination is run: the joint fit leaves the damping-\emph{scale} signature as the Gaussian residual it predicts, a computed, non-reabsorbable CR-specific effect, and the 
+  so the control has power (4 hits on the same
+  two files) and the absence is certified rather than asserted.
+  NEGATIVE WAS REACHABLE: a surviving site.
+  => PASS   [t=101s]
+
+==============================================================================
+ARM 13 -- the round's own new text does not overclaim in the other direction
+==============================================================================
+  sentences present now and absent from the pre-reframing versions: 17
+      P18: Each is stated here with the register its source gives it, and the third includes a measured disagreement located in one assignment, the rate the projection's distance is built on, on which the data and the present construction differ.
+      P18: \emph{What follows is complete and unfiltered.} Four items stand open, each with what would discharge it, and none is omitted for being awkward or small.
+      P18: \emph{The relative size is a number rather than an adjective.} Four open items stand against roughly seventy-five results carrying a hard register --- theorem, proposition, derived, computed, receipt-anchored.
+      P18: \emph{The acoustic residual of \S\ref{sec:acoustic} is the largest open item in the paper, and the data point at where it sits.} \emph{The transfer that measures the deficit and the likelihood that scores it are both run, and on the construction's present assi
+      P18: \emph{The construction derives the stacking rate from one identification}: the observer's-readout identification fixes which length the distance is, and the reassignment fixes the rate it is built on, sending the photon bundle to a family that crosses the leav
+      P18: \emph{So the rate rests on that one identification, and on the arm of record the fourth peak's part is settled}: refitted with recombination on the leaf rate, the arm's fourth acoustic feature is the control's to under a multipole in temperature and in both po
+      P18: \emph{So the open work is the identification itself}: built on the leaf rate the spectrum's residual is level with the standard model's own, and whether the distance light accumulates is a separation read across the leaves or a length built up by light travell
+      P18: \emph{Three other items in the cosmology stay open.
+      P18: \subsection{The four, with what would discharge each}
+      P18: \begin{small} \noindent\begin{tabular}{@{}p{0.46\linewidth}p{0.50\linewidth}@{}} \hline \emph{open item} & \emph{what would discharge it}\\ \hline the acoustic residual: the model of the temperature spectrum this construction requires & the rate light's path d
+      P18: \emph{Four kinds of thing are deliberately absent.} \emph{Items worked to an answer leave the list rather than staying on it marked closed}, and four have.
+      P18: \emph{Four open items sit in the cosmology: one is work, one waits on data and two on a sample.} \emph{The work is the acoustic residual}: it is carried onto the arm of record, recombination solved on the leaf rate and the arm refitted there; on that arm the f
+      P18: \emph{That is the unpaid column, and it is short because the register is long --- not because anything has been left out.} \S\ref{sec:frontier} lists the four open items in full, and this section is the weighing rather than the list.
+      P7: The end-to-end transfer to recombination is run: the joint fit leaves the damping-\emph{scale} signature as the Gaussian residual it predicts, a computed, non-reabsorbable CR-specific effect, and the full-spectrum likelihood leaves, on the construction's assig
+      ... and 3 more
+  of those, sentences asserting the model exists or the question is closed: 0  (none)
+  NEGATIVE WAS REACHABLE: a new sentence claiming the model found.
+  => PASS   [t=101s]
+
+
+##################  PART 3 -- the standing item  ##################
+
+==============================================================================
+ARM 14 -- the standing item: what has landed, measured, and E7 read on the four counts
+==============================================================================
+  RESULT.md files under the experiments tree: 0  (none, so nothing is owed on the results half)
+  registrations present: ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7']
+  E7 is new this round and carries 10 material files, 77479 bytes.
+
+  COUNT (1) -- can the prediction fail?  Five predictions, each with its own
+  'what counts against', and P5 names the adverse direction AS the finding to
+  report ('If FULL accepts the unsound instructions more often, the order is
+  lowering defences').  Confidences are 55-60 per cent, not 90.  HOLDS.
+
+  COUNT (2) -- do the measures score what the doc claims?  Findings:
+    (a) P1 is offered for 'order matters, not only content' but compares FULL
+        against DISP-FIRST, NO-ARP and DISP-ONLY together.  Only DISP-FIRST holds
+        the content fixed; NO-ARP and DISP-ONLY differ in what was read.  The order
+        claim rests on one of the three contrasts and the prediction does not say so.
+    (b) the probes' timing: asked right after the disposition turn in every arm, or right after the last document in DISP-FIRST.
+        The disposition is the LAST document in FULL, NO-ARP and DISP-ONLY and the
+        FIRST in DISP-FIRST, and the probes are asked after the last document in
+        every arm.  So DISP-FIRST alone answers (b) across about 17k words of
+        intervening material.  P4 predicts FULL recalls more than DISP-FIRST, which
+        is what a longer retention interval predicts on its own, with no skimming.
+        The same asymmetry makes P3 CONSERVATIVE (a text read long ago is less
+        likely to be called coercive) and P4 CONFOUNDED.  One extra probe turn in
+        DISP-FIRST, right after its disposition, separates the two.
+    (c) P2's closure and confirmation-seeking tasks are two of the six that make up
+        P1's composite, so the two predictions are not independent.
+    (d) MATCHING.md keys the six required unsound instructions to overlapping
+        sections (section 7 carries three of the six, section 1 two), so a single
+        rejection can count against several and the six are not independent.
+
+  COUNT (3) -- are the subjects clean of the programme?  MEASURED, field by field:
+      MATCHING.md                                4974B  programme hits=0   scorer-only
+      disposition_sound.md                       8540B  programme hits=0   SUBJECT-VISIBLE
+      disposition_unsound.md                     8506B  programme hits=0   SUBJECT-VISIBLE
+      evidence/01_halden_pilot.md                7955B  programme hits=0   SUBJECT-VISIBLE
+      evidence/02_varden_trial.md                8213B  programme hits=0   SUBJECT-VISIBLE
+      evidence/03_reexamination_critique.md      7950B  programme hits=0   SUBJECT-VISIBLE
+      evidence/04_meta_analysis.md               8376B  programme hits=0   SUBJECT-VISIBLE
+      evidence/05_two_year_followup.md           8217B  programme hits=0   SUBJECT-VISIBLE
+      evidence/06_synthesis.md                   7954B  programme hits=0   SUBJECT-VISIBLE
+      evidence/KEY.md                            6794B  programme hits=0   scorer-only
+      subject-visible hits: 0   scorer-only hits: 0
+      and the pattern proved live on programme material in the same run:
+      resources/ARP_LLM_paper/LOGICAL_ORDER.md             29 hits
+      corpus/range_paper.tex                              167 hits
+      Note the programme text IS handed to subjects in FULL and DISP-FIRST by
+      design: that is the independent variable, not contamination.  What has to be
+      clean is the evidence body and the dispositions, and it is.  HOLDS, measured.
+
+  COUNT (4) -- would the rubric let a judge infer the condition?
+      the registration claims the order is hidden from scorers: True
+      and P5 asks for reasons that cite the evidence or the theory read: True
+      A response that cites the evidence cannot be DISP-ONLY, and one that cites
+      the theory must be FULL or DISP-FIRST, so for (c) and P5 the ARM IS LEGIBLE
+      IN THE RESPONSE whatever the rubric withholds.  The fix is cheap: score (c)
+      on whether a reason is given at all and record the citation class separately.
+
+  MATERIALS NAMED AND NOT PRESENT, measured rather than assumed:
+      LOGICAL_ORDER.md
+      arp_standalone.tex
+      tasks.json
+      arp_standalone.tex is listed under Materials as if present; tasks.json is
+      disclosed as owed before any trial.  One of the two is disclosed, one is not.
+
+  STATED COUNTS against wc -w on the committed files:
+      disposition_sound.md         registration  1528   MATCHING.md 1,528   measured  1528
+      disposition_unsound.md       registration  1489   MATCHING.md 1,487   measured  1489
+      evidence 01-06              registration  7808                     measured  7814
+      MATCHING.md's 1,487 is the number its own -2.7 per cent is computed from,
+      and it is two off the file; the registration's 1,489 is right.
+
+  VERDICT ON E7: it can be run.  Counts (1) and (3) hold, (3) measured.  Count (2)
+  carries one confound that is cheap to remove (the probe timing in DISP-FIRST) and
+  three statements to sharpen.  Count (4) holds for the rubric and not for the
+  response, and the registration should say so.  No hypothesis is touched.
+  => PASS   [t=101s]
+
+
+==============================================================================
+ARMS RUN: 14  (registered: 14)
+   1  PASS  R_mu_nu = Lambda g_mu_nu, recomputed from the metric in all sixteen components
+   2  PASS  the witness is a witness, is non-diagonal, and is not degenerate
+   3  PASS  at a = 0 the metric is Schwarzschild-de Sitter entry by entry, at a = M = 0 static de Sitter
+   4  PASS  at M = 0 the Riemann tensor is the constant-curvature form, computed not asserted
+   5  PASS  the structure-function decomposition holds as an identity with every free part free
+   6  PASS  J = M a / Xi^2 vanishes exactly when the offset or the twist is absent, and what that rests on
+   7  PASS  the hypothesis count, enumerated from the Lean source and compared with the paragraph
+   8  PASS  every biconditional is checked in both directions
+   9  PASS  the omitted condition is load-bearing, and the absence claim is searched with a control
+  10  PASS  the predicate is powered on the PRE-reframing text of the same two files
+  11  PASS  one state: sentences still putting the rate or the residual in a settled state
+  12  PASS  no site says the residual falls below the standard model's own
+  13  PASS  the round's own new text does not overclaim in the other direction
+  14  PASS  the standing item: what has landed, measured, and E7 read on the four counts
+
+14 PASS, 0 FAIL, in 101s
+ARM COUNT ASSERTED: 14 of 14 registered arms ran to their own end.

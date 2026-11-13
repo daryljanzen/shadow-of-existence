@@ -7,6 +7,49 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7753` (69) — **MERGED AND REPRODUCED: THE BAO DOES NOT MOVE, AND THE LEAF RATE IS THE ONLY LOCAL LEVER. YOUR ⑥ AND ⑦ ARE LANDED. NEXT: MAKE IT CITABLE, THEN FIND WHERE THE ACCUMULATION'S RATE IS TAKEN**
+
+**Merged** (`r7751+cc66.0`–`.1`). I re-ran `pricing.py`; every figure reproduces:
+- **R1:** the worst BAO shift is −0.02115 per cent at z = 2.33, against −0.49836 per cent at z*;
+- **R2 and the post-registration table:** match;
+- **the background:** D_M(z*) = 13941.629 reproduces `r7580`, so the import reads the right background.
+
+**Landed:**
+- **P15, your ⑥:** "… so the residual is not a fault in how the transfer implements the configuration---the instrument is controlled against a known answer and converged---and what remains in question is whether radiation belongs in the rate the projection's distance is built on." I changed your last clause, because the sentence before it calls the stacking rate derived.
+- **P15, your ⑦:** "… on a configuration whose rates are derived but for one: the rate the cross-leaf accumulation to last scattering is built on, which is this sector's open work". Its neighbour "in the one direction the construction cannot move" now reads "… the construction as now built does not reach".
+- **P6's episode sentence**, in the same framing: "so what the episode turns on is whether radiation belongs in the rate that distance is built on, which is the cosmology's open work".
+- **The register's PO-87 clause** now carries your §①⒜, ①⒞ and ②. Your "only local lever" result is the strongest new fact on the row; it is not yet in a paper, because it has no receipt.
+
+**Your order:**
+1. **Promote `pricing.py` to a P15 receipt** under `receipts/P15_CR_cosmology/`, with asserts on R1's two figures and the three levers' local ratios, so P15 and P18 can cite them. **Name it for what it shows.**
+2. **Then the substantive step: find where the accumulation's rate is taken.** The reassignment (r7607/r7612) has the photon family crossing the leaves at the matter congruence's own unit cosmic-time rate.
+   - The two-rate rule gives processes in the content the leaf rate. Is the matter congruence's crossing a stacking (L1) quantity, or a process in the content (L2)?
+   - If L2, the leaf rate in the accumulation is not a "density supplied by hand"; it is the rule applied.
+   - Read the step the rate is fixed at, word for word, in P15 `sec:scope` and the r7612 receipt, and say which rule it uses and why.
+
+Register any computation first.
+
+## ⚑ `r7751` (69) — **MERGED: YOUR CORRECTION IS RIGHT AND LANDED. THE QUESTION IS RADIATION'S PLACE IN THE RATE, NOT THE IDENTIFICATION AND NOT LIGHT'S PATH THROUGH THE CONTENT. AND 70's REFIT FITS. NEXT: ONT-COSMO's EXCLUSION, REREAD**
+
+**Merged** (`r7749+cc66.1`). Thanks. You caught two errors in my order. The identification has not carried the rate since r7607. And my "length built up by light travelling through the content" names the third object, 8787 Mpc, which the comb excludes by 36 per cent.
+
+I had printed both in P18 at r7749. They are now corrected:
+- **P18:** "So the open work is the rate itself: the distance is the cross-leaf accumulation by an identity of the chart, and built on the leaf rate instead of the stacking rate it is shorter by half a per cent and the spectrum's residual is level with the standard model's own. Whether the construction requires radiation in the rate that accumulation is built on, or supplies that half per cent of distance by some other requirement, is the question …"
+- **P7, the ontology index and the register** now say the stacking rate rests on **radiation's exclusion from the rate**.
+- **60's five settled-state sentences** in P18 and P7 are landed with that framing.
+
+**And 70's refit is in (r7749+70.0).** Refitted on the four parameters the control is refitted on, the leaf-rate arm reaches χ² = 186.85 (1.01 per bin), **1.002 times the control's refitted 186.51**. The arm of record is at 1.596 times. BAO and θ* on the same assignment are still to report.
+
+**Your order:**
+1. **Reread ONT-COSMO's exclusion of radiation from the rate**, as you named it: "radiation is inherited content read off the clock, never a term that sources the rate".
+   - Where is it argued, and from what?
+   - What would it cost the construction if radiation did gravitate in the rate of the cross-leaf accumulation, and only there? Check the window rate, the expansion law, Λ alone setting the rate, and the BAO.
+   - Is there a reading on which the observable expansion stays the stacking rate while the light-path accumulation takes the leaf rate, without contradiction?
+2. **Your §⑥ alternative:** does anything else in the construction supply about half a per cent of D_M at fixed r_s **by requirement**? Name candidates and price each.
+3. **P15's two settled-state sentences that 60 routed to you** (its sites ⑥ and ⑦): draft them in the present open framing.
+
+Register any computation first.
+
 ## ⚑ `r7749` (69) — **MERGED: THE DRIVING IS PRICED OUT, WELL DONE. AND A REORIENTATION FROM DARYL: FOLLOW THE DATA. YOUR ORDER IS THE FOUNDATIONS REREAD OF THE ONE IDENTIFICATION PO-87 NOW TURNS ON**
 
 **Merged** (`r7747+cc66.0`–`.1`). Registering before computing, declaring the window-dependence instead of quoting one ρ, and reading the trend-free band-1 ratio settled the question. The radiation driving does not carry the first-cycle step, and removing it leaves the first cycle's amplitude within a few per cent. Since the step is shared with the ΛCDM control, P15's sentence is classed as fixed in the acoustic physics both models share, and it is no longer PO-87's.

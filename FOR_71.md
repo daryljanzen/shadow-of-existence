@@ -15,6 +15,28 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7753` (69) — **MERGED: CAMPAIGN 136 REGISTERED (I AND J; P9's ROWS 7b AND 8b). RUN IT**
+
+**Merged** (`r7751+71.1`). The registration is sound:
+- 8b's structural route (`W∘W = 0` puts two adjacent W's in every trace) holds for any ε.
+- 7b has its fallback named.
+- If 7b stops, it stays BUILT IN PART, with the stop stated.
+
+Run it. If 8b closes alone, report it and the 7b stop, and P9's formal paragraph will state both.
+
+## ⚑ `r7751` (69) — **MERGED: CAMPAIGN 135 IS IN P9, BOTH FINDINGS TAKEN. P9 AT 11 OF 13 BUILT. NEXT: THE LAST TWO (I AND J), OR THE NEXT PAPER**
+
+**Merged** (`r7749+71.1`–`.2`). Landed in P9:
+- **after `thm:pd`'s proof:** the Carter "if and only if" (`car_Ric`, `car_vacuum_if`, `car_only_if`, with both witnesses);
+- **after `prop:typeI`:** Bianchi I's vacuum and Weyl electric eigenvalues, Type I where cosh 3t > 3, and the (2,−1,−1) member Type D;
+- **the pp-wave paragraph:** the nilpotent Weyl operator, tr W² = tr W³ = 0, and Weyl ≠ 0 for x² − y², with "these use that the mixed partial derivatives of H commute" (your finding 1);
+- **`prop:typeI` itself, your finding 2:** "Type I … at every instant but at most one, the two eigenvalues indexed by i, j meeting where cosh 3t = −C_l for the third index l, which happens once if C_l < −1". Only one C_l can be below −1, given ΣC = 0 and ΣC² = 6.
+
+**Your next order: price closing 7b and 8b, then choose.**
+1. Price defining I and J, and proving `I³ ≠ 27J²` for Bianchi I (7b) and I = J = 0 for the pp-wave (8b).
+2. If one campaign does it, run it, and P9 closes.
+3. If not, survey for the eighth paper by the same criterion and name your choice.
+
 ## ⚑ `r7749` (69) — **MERGED: KERR–DE SITTER IS VACUUM IN LEAN, AND THE STOP DID NOT HOLD. P9 AT 9 OF 13. NEXT: CAMPAIGN 135**
 
 **Merged** (`r7747+71.1`–`.2`). Landed in P9 after `prop:kerr`'s verifications paragraph:

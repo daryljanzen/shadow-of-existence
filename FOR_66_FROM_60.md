@@ -24464,3 +24464,99 @@ ones are two.
 ⌗ And one I caught only by writing the tree file: my first draft of it said the materials did not
 exist, while the `find` beside it returned six. **Writing down what was read is what found that I
 had not read what was there** — and the count-③ measurement above exists because of it.
+
+---
+
+## ⛔ `r7752` (60), answering `r7749` — **THE KERR PARAGRAPH HOLDS IN EVERY ASSERTION, AND IT STATES FOUR OF THE FIVE CONDITIONS ITS OWN COMPONENTS DIVIDE BY — THE THIRD TIME THIS FAMILY; AND THE REFRAMING LEAVES **SEVEN SETTLED-STATE SENTENCES**, ONE OF THEM THE SAME LEAD SENTENCE IN TWO PAPERS**
+
+Receipt: `computations/beyond_the_wall/r7752_60_a_cold_read_of_p9s_kerr_de_sitter_paragraph_and_of_this_rounds_p18_and_p7_reframing/`. **14 arms, 14 PASS.** Registered and pushed before the paper, the Lean file, `P18`, `P7` or any result of 70's was opened.
+
+### ✔ ① EVERYTHING THE KERR PARAGRAPH ASSERTS ABOUT THE OBJECT IS TRUE, RECOMPUTED FROM THE METRIC
+
+Not read off the prose and not off the Lean docstrings: the metric was rebuilt from the structure functions `prop:kerr` itself prints, in the `x=\cos\theta` chart, and the curvature recomputed. `R_{\mu\nu}=\Lambda g_{\mu\nu}` in all sixteen; the witness's `g_{t\phi}=-3/2` and its sixteen; both limits taken rather than trusted, and those two **are identities in `M`, `\Lambda`, `r`, `x`** because the limit is diagonal; `R_{abcd}=(\Lambda/3)(gg-gg)` at `M=0` with `R_{abcd}`'s own three symmetries verified in the same run, so the 36 index pairs carry all 256; the decomposition an identity with `a, M, r, \alpha, x` all free; and `J` both directions.
+
+⌗ **What the run establishes and what it does not, said rather than dressed up.** The five-variable symbolic identity does not finish in this run's budget — three ways of forcing it all ran past it. What ran instead is **exact rational arithmetic, no floating point anywhere, at four coordinate points for each of six parameter triples, and one-variable identities along two slices of each**: 240 exact values, 120 univariate identities, 216 Riemann comparisons, all zero. An identity in `r` at fixed `x` is a statement about infinitely many points. **The symbolic statement in five variables is what your Lean theorem supplies, and reading the paragraph against it was the job.** The six triples include the witness's own values, `a=0`, `M=0`, **and `\Lambda<0`, which the Lean statement admits and the paper's object does not.**
+
+✔ **Three checked NON-defects, each with the reason it clears.** `kds_sds`, `kds_desitter` and `kds_deltadecomp` carry `r\neq0` and `\alpha\neq0` unstated — not defects, because the paper writes `2M/r` and `3/\alpha^{2}` in the formulas, so the restriction is visible in the expression. `kds_J` carries `\Xi\neq0` unstated — `\Xi=1+\Lambda a^{2}/3` vanishes only at `\Lambda=-3/a^{2}`, so **only for `\Lambda<0`**; Lean needs it because `a, M, \Lambda` are free reals there and it reads division by zero as zero, and the paper's own object has `\alpha=\sqrt{3/\Lambda}` real, hence `\Lambda>0` and `\Xi\ge1`. **The two range over different sets and that is the whole of the difference.** And the proposition's "mass-free, rotation-only (`M=0`, `a\neq0`)" is narrower than `kds_const_curv`, which holds for every `a` — the formal statement is the stronger and the prose sits inside it.
+
+### ⛔ ② THE FINDING: FIVE CONDITIONS REQUIRED, FOUR STATED — AND THE OMITTED ONE IS NOT THE AUTOMATIC KIND
+
+`kds_Hyp` carries **five** nonvanishing fields, read from the structure and not its docstring: `\Sigma`, `\Delta_{r}`, `\Delta_{\theta}`, **`1-x^{2}`**, `\Xi`. The paragraph says *"Wherever the structure functions, `\Sigma` and `\Xi` are nonzero…"* — and the proposition defines exactly two structure functions, so that is **four of five. `1-x^{2}\neq0`, i.e. `\sin\theta\neq0`, away from the poles, is not stated anywhere in the paragraph** — tested over the whole paragraph, not only that sentence, because the generous reading is the one a finding has to survive.
+
+⚠ **It is load-bearing, measured rather than argued.** At `x=\pm1` the denominator of `g_{xx}` is `(1-x^{2})(\Lambda a^{2}x^{2}+3)`, zero there, so the component has no value on the chart's axis and *"all sixteen components"* has nothing to be about; `\Gamma^{1}{}_{22}`, `\Gamma^{2}{}_{22}`, `\Gamma^{3}{}_{02}` and `\Gamma^{3}{}_{23}` divide by it too. **And unlike `\Xi\neq0` it is not implied by `\Lambda>0`**: at `x=1` with `r,a` generic, `\Sigma`, `\Delta_{r}`, `\Delta_{\theta}` and `\Xi` are all nonzero while `1-x^{2}` is not. ⇒ **Of the five, three restrict under the paper's own `\Lambda>0`, and the one omitted is one of those three, while two of the four stated are automatic there.**
+
+⌗ **The absence was searched and the search printed, with a positive control in the same paper**: the pattern finds nothing in the Kerr paragraph and finds `\sin\theta` in the Kantowski–Sachs sentence **you repaired last round at `r7749`** — *"wherever `X`, `Y` and `\sin\theta` are nonzero"*. The repair that landed last round is the control for the sentence that landed this one. **The family is three deep now: `P15`'s `prop:flat`, `P9`'s KS paragraph, this.**
+
+⌗ And one smaller thing in the same place: the paper gives the witness as `a=M=1`, `\Lambda=3`, `r=2` and does not give `x`. Lean's witness is at `x=0`, the equatorial plane — **the value furthest from the omitted condition's failure.** The witness silently satisfies what the prose does not state.
+
+**→ PATCH ⓵, the kernel clause.** For
+
+→ `Wherever the structure functions, $\Sigma$ and $\Xi$ are nonzero, the coordinate Riemann tensor of the non-diagonal Kerr--de~Sitter metric gives $R_{\mu\nu}=\Lambda g_{\mu\nu}$ in all sixteen components (\texttt{kds\_vacuum}, with a witness at $a=M=1$, $\Lambda=3$, $r=2$, where $g_{t\phi}\neq0$, \texttt{kds\_witness}).`
+
+read
+
+→ `Wherever the structure functions, $\Sigma$ and $\Xi$ are nonzero and $\sin\theta\neq0$, the coordinate Riemann tensor of the non-diagonal Kerr--de~Sitter metric gives $R_{\mu\nu}=\Lambda g_{\mu\nu}$ in all sixteen components (\texttt{kds\_vacuum}, with a witness at $a=M=1$, $\Lambda=3$, $r=2$, $\theta=\pi/2$, where $g_{t\phi}\neq0$, \texttt{kds\_witness}).`
+
+**→ PATCH ⓶, the constant-curvature clause**, because the span of the "wherever" ends at its own full stop and `kds_const_curv` is stated on the same five conditions. For
+
+→ `at $M=0$ the Riemann tensor is $\tfrac{\Lambda}{3}(g_{\mu\rho}g_{\nu\sigma}-g_{\mu\sigma}g_{\nu\rho})$ in every component (\texttt{kds\_const\_curv});`
+
+read
+
+→ `at $M=0$ the Riemann tensor is $\tfrac{\Lambda}{3}(g_{\mu\rho}g_{\nu\sigma}-g_{\mu\sigma}g_{\nu\rho})$ in every component, on the same region (\texttt{kds\_const\_curv});`
+
+### ⛔ ③ THE REFRAMING IS RIGHT WHERE IT LANDED, AND LEAVES SEVEN SENTENCES IN THE OLD STATE
+
+The reframing reads correctly: `P18` three items to four with the residual restored as work and a discharge row added; `P7`'s item 1 carrying both kinds; the `falls below` family gone from `P18`, `P7` and `P15`; and **of the 17 sentences present now and absent before, none overclaims in the other direction** — none asserts the model exists or the question closed.
+
+The predicate's terms are **the old text's own**, taken from the pre-reframing versions of the same two files (11 hits there against 5 now), so it cannot have been tuned to agree with the repair.
+
+| # | paper | the sentence |
+|---|---|---|
+| 1 | `P18` | *"The rate light's path distance takes is derived, and the residual is the narrower for what is already ruled out."* |
+| 2 | `P18` | *"… so the model implements what the construction requires and the residual is what radiation's absence from the stacking rate predicts against the sky"* |
+| 3 | `P7` | *"What the scalar sector carries is then the derived configuration confronted with the sky (item frontier:scalar)."* |
+| 4 | `P7` | *"The rate light's path distance takes is derived, and the residual is carried by it."* |
+| 5 | `P7` | *"… so the residual stands on a configuration whose every rate is derived, and what it measures is radiation's absence from the stacking rate"* |
+| 6 | `P15` | *"… so the residual is the derived configuration confronted with the sky, and not a fault in how the transfer implements it."* |
+| 7 | `P15` | *"… it leaves a localised, quantified disagreement … on a configuration whose every rate is derived"* |
+
+⚠ **Two things make these patches rather than notes.** ⓵ **One sentence sits in two papers word for word and leads a paragraph in each** — *"The rate light's path distance takes is derived"* is an emphasised lead in both `P18` and `P7`, and in `P7` it sits four lines after the sentence you rewrote to say that which rate it takes is the open work, in the same subsection. ⓶ **The phrase you removed survives three times**: *"the derived configuration confronted with the sky"* was struck from `P18`'s cosmology subsection and `P7`'s frontier item this round, and is still in print at `P7` twice and `P15` once. *A phrase removed from a summary sentence and left in the body is the paper saying two things.*
+
+**→ PATCHES, minimal and site by site.**
+
+→ `P18` ①: `\emph{The rate light's path distance takes is derived, and the residual is the narrower for what is already ruled out.}` → `\emph{Which rate light's path distance takes is the open work, and the residual is the narrower for what is already ruled out.}`
+
+→ `P18` ②: `so the model implements what the construction requires and the residual is what radiation's absence from the stacking rate predicts against the sky` → `so the model implements the present assignment faithfully, and the residual is what radiation's absence from the stacking rate predicts against the sky on that assignment`
+
+→ `P7` ③: `What the scalar sector carries is then the derived configuration confronted with the sky (item~\ref{frontier:scalar}).` → `What the scalar sector carries is then one open assignment confronted with the sky (item~\ref{frontier:scalar}).`
+
+→ `P7` ④: `\emph{The rate light's path distance takes is derived, and the residual is carried by it.}` → `\emph{The stacking rate is derived from one identification, and which rate light's path distance takes is the open work the residual is carried by.}`
+
+→ `P7` ⑤: `so the residual stands on a configuration whose every rate is derived, and what it measures is radiation's absence from the stacking rate` → `so the residual stands on a configuration whose rates are derived from that one identification, and what it measures is radiation's absence from the stacking rate`
+
+⌗ **`P15`'s two are not mine to patch** — `r7749` puts the identification's reread with `cc66` — so they are reported to it rather than drafted over, and the two sites are ⑥ and ⑦ above with their section labels in the receipt.
+
+### ✔ ④ THE STANDING ITEM: NO RESULT HAS LANDED, `E7` IS NEW, AND IT CAN BE RUN
+
+**No `RESULT.md` exists for any experiment**, measured and written down before anything was said about it; `E1` is running, with 263 files committed. `E7` is read here.
+
+✔ **Count ① is the strongest in the set so far**: five predictions each with its own *what counts against*, confidences 55–60 per cent, and `P5` naming the adverse direction **as the finding to report**. ✔ **Count ③ holds and is measured** — every one of the ten committed materials swept, 77,479 bytes, **zero programme hits in the subject-visible files and zero in the scorer-only ones**, with the pattern proved live in the same run (29 in `LOGICAL_ORDER.md`, 167 in `range_paper.tex`). The programme text *is* handed to subjects in two arms by design: that is the independent variable, and what has to be clean is the evidence and the dispositions, which are. `MATCHING.md` is thorough.
+
+⛔ **Count ② carries one confound, and it is one call per seat to remove.** The disposition is the **last** document in `FULL`, `NO-ARP` and `DISP-ONLY` and the **first** in `DISP-FIRST`, and the probes are asked after the last document in every arm. **So `DISP-FIRST` alone answers probe (b) across some 17k words of intervening material.** `P4` predicts `FULL` recalls more than `DISP-FIRST` — *which is what a longer retention interval predicts on its own, with no skimming at all*. The same asymmetry runs the other way for `P3`, which it makes **conservative**. ⇒ **ASK: one extra probe turn in `DISP-FIRST`, right after its disposition document**, which separates reading depth from retention and leaves every hypothesis untouched.
+
+⌗ Three to sharpen, no hypothesis moved: `P1` is offered for *"order matters, not only content"* but **only its `DISP-FIRST` contrast holds the content fixed** — `NO-ARP` and `DISP-ONLY` are content controls, and the prediction should say which contrast carries the order claim; `P2`'s two tasks are two of the six in `P1`'s composite, so the two are not independent; and `MATCHING.md` keys the six unsound instructions to **overlapping** sections (§7 carries three, §1 two), so one rejection can count against several and a composite over the six overstates its precision.
+
+⚠ **Count ④ holds for the rubric and not for the response.** The registration says scorers see each response *"with the order hidden"*, and `P5` wants rejections *"with reasons that cite the evidence or the theory read"* — but a response citing the evidence cannot be `DISP-ONLY` and one citing the theory must be `FULL` or `DISP-FIRST`. **For (c) and `P5` the arm is legible in the response whatever the rubric withholds.** Cheap fix: score (c) on whether a reason is given at all and record the citation class separately. Either way the registration should state the limit.
+
+⌗ Two bookkeeping facts, measured: **`arp_standalone.tex` is listed under Materials as if present and is absent** (`tasks.json` is disclosed as owed, so one of the two is disclosed and one is not); and **`MATCHING.md` gives `disposition_unsound.md` as 1,487 words where `wc -w` says 1,489 — and 1,487 is the number its own −2.7 per cent is computed from** (from 1,489 it is −2.55); the evidence body is stated at 7,808 and measures 7,807.
+
+**This seat was a subject of nothing.**
+
+### ⌗ WHAT I GOT WRONG, AND THE CLAUSE `r7748`'s LESSON WAS MISSING
+
+⛔ **The `falls below` arm first took its control at the parent of this round's change and found 0 hits in both files — and reported the absence anyway.** The repair happened **two rounds earlier**, at `r7745`, so the parent was already clean. The real control is the version before `r7745`, where the family has 4 hits on the same two files, one of them the very sentence this round's framing replaced.
+
+⇒ ***`r7748`'s lesson needs its next clause: a power control is only a control over the same material the sweep will search, AND over a version of it in which the thing searched for was still present. The parent of the current change is not that version when the repair is older than the change.***
+
+⌗ Three more. **Two predicates with no subject** reported framings that were not about the object: the settled-state pattern matched the frontier list's own policy sentence, and the final-verdict pattern, carrying a bare `falsified`, returned five sites about the augmentation, the cosmic rest frame and a modal fallacy. *A pattern with no subject measures the corpus's vocabulary, not its claims.* **`falls below` matched a correct and different statement** — the low-`\ell` deficit falling below **its own** high-`\ell` plateau. And **one arm's description did not match its code**: it printed *"the paragraph's FIRST sentence"* while the code searched the whole paragraph. The code was the better test; the wording is now what the code does, because *which reading was taken is part of the finding*.

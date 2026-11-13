@@ -901,7 +901,7 @@ Every rate-bearing quantity sits on exactly one level; conflating them is the st
 - **L2 — the leaf rate.** The expansion scalar of the content, the Friedmann readout with radiation gravitating normally: `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴` (P7 `eq:two-rate`) — **the two rates differ by the radiation term alone**, at every epoch. A process running *in* the content takes it: the plasma's sound horizon, its diffusion length, recombination, the perturbations, and the nucleosynthesis on the cooling leg past the branch point. The *same* `E=1` geodesic read **inward** as dust collapse that L1 reads outward as cosmology.
 - **L3 — the `E=1` projection** (the shadow). The reassigned synchronous shadow the observer reads, through which an L1 or L2 quantity appears as distance and redshift (the Projection Principle). Geometric origin: **the second ruling** (the synchronous space *is* the second ruling). Reading this appearance *as the existent* is the naïve-realist collapse the epistemology forbids (§1·SHADOW).
 
-Decision rule (structural, not a choice; P7 `eq:two-rate`): a process running in the content → L2; a comoving separation read across leaves → L1; every observable is an L1 or L2 quantity **seen through L3**. **There is no locus at which the rate switches**: the distinction is kinematic and holds at every epoch (`P15` §levels); it looked temporal only because `Ω_r(1+z)⁴` is negligible below z≈10. **Which rate light's path distance takes is the one case the rule has yet to be shown to decide** — the projection's comoving distance is put on L1 through the identification that it is measured across the observer's own flat slice (`PO-87`). What the reassignment acts on is the one layer both causal assignments share.
+Decision rule (structural, not a choice; P7 `eq:two-rate`): a process running in the content → L2; a comoving separation read across leaves → L1; every observable is an L1 or L2 quantity **seen through L3**. **There is no locus at which the rate switches**: the distinction is kinematic and holds at every epoch (`P15` §levels); it looked temporal only because `Ω_r(1+z)⁴` is negligible below z≈10. **Which rate light's path distance takes is the one case the rule leaves open** — the projection's comoving distance is the cross-leaf accumulation by an identity of the chart (L1), and whether radiation enters the rate it is built on is what the data contest (`PO-87`). What the reassignment acts on is the one layer both causal assignments share.
 
 ### the reassignment
 
@@ -1031,8 +1031,10 @@ assignment of the projection's comoving distance to the stacking rate the full-s
 refitted, on `plik_lite` TT), the difference lying in the acoustic contrast. The sky's preference differs from
 the construction in exactly one assignment: built on the leaf rate, radiation restored, the arm's unreachable
 χ² falls to 186.135, level with the control's 186.007. The construction holds that distance on the
-stacking rate through one identification, the observer's own flat slice, and that rate is derived on any cut;
-the located step is carried by the arms' distance ratio (`PO-87`, mechanism worked r7745). The low multipoles are a mild, non-discriminating deficit.
+stacking rate: the distance is the cross-leaf accumulation by an identity of the chart, and radiation is excluded
+from the rate it is built on; the located step is carried by the arms' distance ratio. On the leaf rate the distance is
+half a per cent shorter and the refitted spectrum fits as well as the control's, so radiation's exclusion from that
+rate is the open question (`PO-87`). The low multipoles are a mild, non-discriminating deficit.
 [Receipts: `computations/peak_heights/damping_ratio_clean.py`,
 `computations/damping_tail/damping_reabsorption.py`, `full_transfer_verdict.py` (conditional, not a verdict),
 `crossed_wire_hunt.py`; the map pictured:
@@ -1141,7 +1143,8 @@ the rate is ~300× below standard at T_D, destroying the freeze-out — quantita
 radiation-sourced law across to the distances and it would pin them to a radiation-era density the
 foliation's own rate does not carry, which excludes it structurally rather than by a measurement — and the
 one quantitative test of that direction, the microwave spectrum, prefers it. **Which rate light's path
-distance takes the rule decides too**: the stacking rate, derived on any cut (P15; `PO-87`, mechanism worked r7745).
+distance takes is open**: the rule puts it on L1 by an identity of the chart, and what the data contest is radiation's
+exclusion from the rate that accumulation is built on (`PO-87`).
 
 **The worked determination (the damping tail, the piece the whole oscillation lived in).** The sound horizon
 and the diffusion length are the plasma's own accumulations, so they are *both* on the leaf's rate, radiation
