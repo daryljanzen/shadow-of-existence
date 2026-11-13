@@ -1,0 +1,234 @@
+====================================================================================================
+r7764 (60) -- the skeptical read of the two-level framing (order r7761)
+  HEAD: 615eff0c11884a804f21626ec5f773aeed745bde   origin/main: e6146b10ca06ce69e5b5ef77676e8be8c2a7e51e
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- what the trampoline's licence was ARGUED for, in the source's own words
+  [PASS]
+  r7760 found the licence SENTENCE general in its own words.  This arm asks the other
+  question: what the argument around it rests on.  Three things in the source decide it.
+
+  ⛔⛔ ⒜ THE SOURCE'S OWN TARGET IS THE AVERAGE DENSITIES OF MATTER **AND RADIATION**:
+      "This second insight raises a critical question: must the dynamical evolution of the universe necessarily be determined by the average densities of matter and radiation filling space? If general relativity is fundamental, cosmological space-time must satisfy Einstein's equation."
+      "However, if existence is a fundamental property of the noumenological three-dimensional universe, with cosmological time universally well-defined across gravitational fields, voids, solar systems, and black holes, it seems implausible that this evolution depends solely on the average densities of matter and radiation."
+      "Beyond challenging the synchronicity assumption, this framework questions the core premise of FLRW cosmology: that the universe's expansion rate is determined primarily by fields like the average densities of matter and radiation."
+  ⇒ THIS IS THE STRONGEST THING AGAINST THE FRAMING AND IT IS THE PROGRAMME'S OWN
+  FOUNDING QUESTION.  The leaf rate IS the average densities of matter and radiation,
+  term for term.  The framing says every measured quantity takes it -- so everything
+  observable is governed by exactly what the source set out to deny governs the
+  expansion, and the denial is kept only where nothing is measured.
+
+  ⛭ ⒝ AND THE SOURCE'S OWN THRESHOLD CLAUSE CUTS THE OTHER WAY, which a one-sided read
+  would leave out:
+      "Much like cosmic time appears to be an absolute property, according to which our three-dimensional universe is well-defined within a four-dimensional foliated space-time geometry, it may be that the universe also has an absolute expansion rate that is unaffected by local gravitational interactions e"
+  ⇒ `except where densities exceed a threshold' is the source ALLOWING the rate to be
+  affected where density is high, which is exactly the early universe.  So the source
+  permits the two levels to part at high density -- on its own terms, not only on the
+  framing's.
+
+  ⌗ ⒞ and what the local-warping language is about, for the record:
+      "A clearer example is gravitational lensing."
+      "Locally, gravitationally bound structures---from molecules and stars to galaxies and clusters---do not participate in the Hubble flow."
+  ⇒ lensing, ripples, bound structures: the averaging premise is there, and a uniform
+  bath is not in it.  ARM 2 measures what that costs.
+
+====================================================================================================
+ARM 2 -- the size of the gap between the two levels, computed
+  [PASS]
+      z             H_leaf / H_stack
+                 0           1.0000
+                67           1.0100
+              1000           1.1388
+              1090           1.1505
+             1e+05           5.5374
+             1e+09         544.6321
+
+      z            age on the stacking law   age on the leaf law      ratio
+               0            13.7766 Gyr        13.7707 Gyr        1.000
+            1000        0.000550278 Gyr    0.000432591 Gyr        1.272
+            1090        0.000483678 Gyr    0.000374396 Gyr        1.292
+           1e+05        5.51096e-07 Gyr    7.50529e-08 Gyr        7.343
+           1e+09        5.51104e-13 Gyr    7.58913e-16 Gyr      726.176
+
+  ⇒ the framing's own figures check out at the late end (4 parts in 100,000 today, one
+  per cent near z = 67).  AND THE GAP GROWS AS (1+z)^(1/2): it is 1.1 at z = 1000,
+  545 at nucleosynthesis.  The elapsed cosmic time to a given early epoch differs
+  by a factor of 726 at z = 1e9.
+  ⛔ SO AT EARLY EPOCHS THE TWO LEVELS ARE NOT TWO DESCRIPTIONS OF ONE UNIVERSE TO
+  WITHIN A CORRECTION; they are different histories by factors of hundreds.  The
+  trampoline's licence is that the cosmological description is a good description while
+  the warping averages out.  A uniform bath has nothing to average, and ⒜ above is the
+  source's own acknowledgement that density can break the licence.
+
+====================================================================================================
+ARM 3 -- is there an observable that MUST take the stacking rate
+  [PASS]
+      the acceleration epoch z_acc
+           propagated (measured from distances)
+           stacking 0.6780 vs leaf 0.6770
+      the acoustic angle theta*
+           propagated: a ratio of two lengths
+           both lengths on one law either way (r7760 ARM 3); no law-free value
+      the baryon-acoustic distances
+           propagated
+           the two laws differ by at most 0.021 per cent over the tracers (r7753)
+      the locally measured expansion rate H_0
+           content: a fit to nearby distances
+           H_leaf/H_stack - 1 at z = 0 is 4.41e-05
+      the age of the universe / stellar ages
+           read along the congruence's own proper time
+           13.7766 Gyr on the stacking law vs 13.7707 Gyr on the leaf law
+      the light elements
+           content: yields set by the expansion timescale
+           the timescale differs by a factor 545 at z = 1e9 -- ARM 4
+      the microwave-redshift isotropy floor
+           content, and a UNIFORMITY bound
+           it excludes a rate tracking the INHOMOGENEOUS matter field; H_leaf is homogeneous
+      the Nariai selection, z_acc = x0 - 1, Lambda fixing the amplitude
+           GEOMETRIC, and not an observable in themselves
+           each is a statement about the foliation, tested only through propagated quantities
+
+  ⇒ ⛔ NO: THIS SEAT FOUND NONE, AND THAT IS THE ANSWER WITH A COST ATTACHED.  Every
+  candidate is either propagated or read from inside the content, so the framing's
+  second paragraph survives the search.  BUT THE SAME RESULT SAYS THE GEOMETRIC LEVEL
+  IS NOT REACHED BY ANY MEASUREMENT: on the framing as written, no observation can
+  come back inconsistent with the stacking rate, because no observation is of it.
+  ⇒ THAT IS THE CASE AGAINST, AT ITS SHARPEST: the framing makes the geometric level
+  empirically idle, and a level that no measurement can reach is doing no empirical
+  work -- which is a real cost, and the statement does not say it.
+  ⌗ THE DEFEATER, STATED: the geometric level is not SUPPOSED to be reached by a
+  measurement; it answers why the universe expands at all and fixes the foliation
+  everything else is computed on.  That is structural work, and a framing may
+  legitimately carry a structural level.  What it should not do is carry it silently:
+  the statement should say in its own words that nothing measures the stacking rate.
+  ⌗ AND THE AGE IS THE NEAR MISS WORTH NAMING: it is read along the congruence's own
+  proper time rather than across leaves, and the two laws give 13.7766 against 13.7707 Gyr --
+  a difference of about one part in 2000, far below any stellar-age error bar.  So it
+  is the one quantity whose CHARACTER is geometric and whose VALUE cannot discriminate.
+
+====================================================================================================
+ARM 4 -- the light elements, where the gap is largest
+  [PASS]
+  at z = 1e9, H_leaf/H_stack = 544.6, and the elapsed time to that epoch differs by
+  a factor 726.
+  ⇒ the light-element yields are set by the expansion timescale at that epoch, so they
+  are computable on ONE of the two laws and not the other.  The corpus reports them
+  confirmed within 1 sigma at the microwave-background baryon density.
+  ⇒ ⛭ SO THE FRAMING'S SECOND PARAGRAPH IS NOT ONLY CONSISTENT WITH THE DATA HERE, IT
+  IS REQUIRED BY THEM: on the stacking law the early expansion is slower by a factor of
+  hundreds and the yields would not come out.  This is the strongest thing FOR the
+  framing in this read, and it is the same computation that makes ⒜ in ARM 1 bite --
+  the data demand the content's rate exactly where the programme's founding question
+  denied that average densities set it.
+  ⌗ WHAT THIS DOES NOT ESTABLISH: that the corpus's own nucleosynthesis calculation was
+  done on the leaf rate.  It is cited to a companion paper this repository does not
+  carry, so this seat reports the requirement and not the provenance.
+
+====================================================================================================
+ARM 5 -- P7's warning, read in its own paragraph, against both halves
+  [PASS]
+  the shadow, named: "The shadow here is the synchronous projection specifically: the layer's own reassigned expansion---the non-synchronous geometric rate the next section fixes---is not itself a shadow but the existent's own geometry, to be computed on and only then projected."
+  the warning: "Keeping the two apart is what prevents the subtler inverse of the error, mistaking the layer's ontological rate for the appearance and refusing it its physics; the cosmology papers carry the distinction as an explicit three-level reading---the layer's foliation rate, the leaf's local dynamics, and t"
+
+  ⇒ THE PRIMARY ERROR IS RESPECTED.  P7 requires the physics to be `carried on the
+  evolving layer and THEN projected' (True), and the framing's second paragraph says
+  exactly that: measured quantities are facts about the content's dynamics, observed
+  through the projection.
+
+  ⛔ AND THE INVERSE IS STRAINED, WHICH IS THE FINDING.  P7 calls the layer's own
+  reassigned expansion -- the geometric rate -- `not itself a shadow but the existent's
+  own geometry, to be computed on and only then projected', and warns against
+  `mistaking the layer's ontological rate for the appearance AND REFUSING IT ITS
+  PHYSICS'.  The framing does not call the geometric rate an appearance, so it avoids
+  the letter.  But `It is not the rate any propagated length is built on' leaves it
+  with no quantity to govern, and `refusing it its physics' is the warning's own
+  phrase for that.  ⇒ THE STATEMENT AVOIDS THE LETTER OF THE INVERSE ERROR AND COMES
+  CLOSE TO ITS SPIRIT.  It should say what physics the geometric rate keeps, in its own
+  words, rather than only what it loses.
+
+====================================================================================================
+ARM 6 -- P7's three-level reading against the framing's two
+  [PASS]
+  P7: "layer's ontological rate for the appearance and refusing it its physics; the cosmology papers carry the distinction as an explicit three-level reading---the layer's foliation rate, the leaf's local dynamics, and the projection through which both are observed~citeJanzenCRcosmology,JanzenCosmogenesis."
+  the phrase `the projection through which BOTH are observed': True
+  ⇒ ⛔ P7 CARRIES THREE LEVELS AND SAYS BOTH THE FOLIATION RATE AND THE LEAF'S LOCAL
+  DYNAMICS ARE OBSERVED THROUGH THE PROJECTION.  The framing's `every measured quantity
+  ... takes the leaf rate at every epoch' makes the first of those unobserved.  Either
+  P7's sentence is loose, or the framing's second paragraph overstates -- and the
+  framing is the thing being drafted, so this is where to fix it.
+  ⌗ THE SMALLEST REPAIR, and it is a clause: `observed through the projection, which
+  below z ~ 67 returns the geometric rate to within a per cent' -- which keeps P7's
+  three levels, keeps the framing's content claim, and is true by ARM 2.
+
+====================================================================================================
+ARM 7 -- ⛭ the case against the framing, at full strength, each with its defeater
+  [PASS]
+  ⒜ IT CONCEDES THE PROGRAMME'S FOUNDING QUESTION EMPIRICALLY.  The ERC source asks
+     whether the universe's evolution must be `determined by the average densities of
+     matter and radiation' and finds it implausible.  The leaf rate IS those densities.
+     If every measured quantity takes it, FLRW's core premise is restored for
+     everything observable and denied only where nothing is measured.
+     *Defeater: the denial was about the EXPLANATION -- why there is expansion at all,
+     and what fixes the foliation -- not about the numbers; and the numbers agree to
+     4e-05 today.  Also the source's own threshold clause allows the rate to be
+     affected where density is high.*
+  ⒝ THE GEOMETRIC LEVEL BECOMES EMPIRICALLY IDLE (ARM 3): no observable reaches it, so
+     nothing can come back inconsistent with it.  *Defeater: structural levels are
+     legitimate; the fault is not saying so.*
+  ⒞ THE ANALOGY'S AVERAGING PREMISE HAS NOTHING TO AVERAGE (ARMS 1, 2): the gap is a
+     factor 545 at nucleosynthesis, not a correction that washes out.
+     *Defeater: the threshold clause, and that the licence sentence is general in its
+     own words (r7760 ARM 9).*
+  ⒟ IT STRAINS P7's INVERSE WARNING (ARM 5) AND DROPS P7's THIRD LEVEL (ARM 6).
+     *Defeater: both are repairable by a clause, and the repair is given.*
+  ⒠ `EVERY MEASURED QUANTITY ... AT EVERY EPOCH' IS A UNIVERSAL WITH NO STATED
+     EXCEPTION, and the age is the near miss that shows the universal is doing real
+     work rather than being safe: its character is geometric even though its value
+     cannot discriminate.  *Defeater: the search in ARM 3 found no counterexample, so
+     the universal survives -- it is the WORDING that claims more than was tested.*
+
+====================================================================================================
+ARM 8 -- what the framing gets right that a reader might doubt
+  [PASS]
+  ⒜ ITS OWN FIGURES ARE RIGHT: 4 parts in 100,000 today and one per cent near z = 67,
+     recomputed here from this line's own instrument.
+  ⒝ THE DATA REQUIRE ITS SECOND PARAGRAPH WHERE THE GAP IS LARGEST (ARM 4): on the
+     stacking law the nucleosynthesis timescale is off by a factor of hundreds.
+  ⒞ IT RESPECTS P7's PRIMARY ERROR (ARM 5): carry the physics on the layer, then
+     project.
+  ⒟ AND IT KEEPS THE NARIAI RESULTS WHERE THEY LIVE: the foliation, the selection, the
+     acceleration epoch and Lambda's amplitude are geometric, which is what r7760's and
+     r7762's reads both found survives untouched.
+
+====================================================================================================
+ARM 9 -- what this read cannot settle, and r7762's item 4 not re-run
+  [PASS]
+  ⒜ WHETHER THE SMALL-r RESULTS SURVIVE THE BEND -- r7762 ARM 8 raised it and it is
+     unchanged by this read: the horizon trichotomy, the branch point's structure and
+     the exact Euclidean flatness are stated on the vacuum family, and radiation
+     dominates the mass function above z ~ 3370.  A revision's worth of work, offered.
+  ⒝ WHETHER THE CORPUS'S OWN NUCLEOSYNTHESIS WAS COMPUTED ON THE LEAF RATE (ARM 4): the
+     calculation is cited to a companion paper this repository does not carry.
+  ⒞ THE PROVENANCE OF THE FRAMING ITSELF: it was settled in chat, and this read tests
+     it against the corpus rather than against that conversation.
+  ⌗ AND ITEM 4 OF THE ORDER -- P7's four formal paragraphs -- WAS ANSWERED AT r7762,
+  arms ⑨-⑪: fourteen citations checked against their declarations' binders and
+  conclusions, every conditional claim carrying its condition, each paragraph naming
+  what it does not formalise, and 71's campaign report matching on every count checked.
+  IT IS NOT RE-RUN HERE, and this line says so rather than letting a reader infer it.
+
+====================================================================================================
+  THE LEDGER
+    PASS  ARM  1  what the trampoline's licence was ARGUED for, in the source's own words
+    PASS  ARM  2  the size of the gap between the two levels, computed
+    PASS  ARM  3  is there an observable that MUST take the stacking rate
+    PASS  ARM  4  the light elements, where the gap is largest
+    PASS  ARM  5  P7's warning, read in its own paragraph, against both halves
+    PASS  ARM  6  P7's three-level reading against the framing's two
+    PASS  ARM  7  ⛭ the case against the framing, at full strength, each with its defeater
+    PASS  ARM  8  what the framing gets right that a reader might doubt
+    PASS  ARM  9  what this read cannot settle, and r7762's item 4 not re-run
+
+  9 of 9 arms meet their registered criterion
+====================================================================================================

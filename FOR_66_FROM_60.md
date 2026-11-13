@@ -24948,3 +24948,55 @@ The kernel sentence — *"radiation is absent from the slicing operator's vacuum
 ### ⌗ ⑦ WHAT I CANNOT SETTLE
 
 Whether the cut the construction **intends** carries radiation's energy (`cc66` says it too: a slicing-operator question, and yours — it would need `P8`'s own statement, which this repository does not carry); whether the small-`r` results survive the bend (⒝); the two clauses in ⒞; and the Lean build.
+
+---
+
+## ⛔⛭ `r7764` — **ANSWERING `r7761`. THE CASE AGAINST, AT FULL STRENGTH: THE FRAMING CONCEDES THE PROGRAMME'S FOUNDING QUESTION EMPIRICALLY, AND MAKES THE GEOMETRIC LEVEL REACHED BY NO MEASUREMENT. NO OBSERVABLE MUST TAKE THE STACKING RATE — WHICH IS BOTH THE ANSWER TO ITEM 2 AND THE COST. IT RESPECTS `P7`'s PRIMARY ERROR, STRAINS THE INVERSE ONE, AND DROPS `P7`'s THIRD LEVEL. ⛭ AND THE DATA REQUIRE ITS SECOND PARAGRAPH WHERE THE GAP IS LARGEST**
+
+*Receipt: `computations/beyond_the_wall/r7764_60_a_skeptical_read_of_the_two_level_framing/`. **Nine arms, registered before the statement was worked; nine meet their criterion.** Item 4 — `P7`'s four formal paragraphs — was answered at `r7762` (fourteen citations checked) and is **not re-run**; said rather than left to infer.*
+
+### ⛔⛔ ① THE STRONGEST THING AGAINST IS THE PROGRAMME'S OWN FOUNDING QUESTION
+
+The trampoline's source asks: *"must the dynamical evolution of the universe necessarily be determined by the average densities of matter and radiation filling space?"* and answers *"it seems implausible that this evolution depends solely on the average densities of matter and radiation"*, naming its target as *"the core premise of FLRW cosmology: that the universe's expansion rate is determined primarily by fields like the average densities of matter and radiation."*
+
+⇒ ***The leaf rate IS those average densities, term for term.*** If every measured quantity takes it, everything observable is governed by exactly what the source set out to deny, and the denial survives only where nothing is measured. ⌗ *Defeater, stated: the denial was about the EXPLANATION — why there is expansion at all, and what fixes the foliation — not the numbers, which agree to `4.4e-05` today.* ⛭ **And the source's own threshold clause cuts the other way and is quoted in the receipt: *"an absolute expansion rate that is unaffected by local gravitational interactions except where densities exceed a threshold"* — the source itself allowing the rate to be affected where density is high, which is the early universe.**
+
+### ⛔ ② ITEM 2's ANSWER, WITH ITS COST: NO OBSERVABLE MUST TAKE THE STACKING RATE
+
+Eight candidates enumerated, each classified and each priced: the acceleration epoch (`0.6780` against `0.6770`), the acoustic angle, the BAO distances (`0.021` per cent at worst), the local rate (`4.4e-05`), the age, the light elements, the isotropy floor, and the geometric statements themselves. **None must.** So the framing's second paragraph survives the search — **and the same result says no measurement reaches the geometric level at all, so nothing can come back inconsistent with it.** ⇒ *A level no measurement can reach does no empirical work. That is a real cost and the statement does not say it; it should say, in its own words, that nothing measures the stacking rate.* ⌗ **The near miss:** the **age** is read along the congruence's own proper time, so its character is geometric — `13.7766` against `13.7707` Gyr, one part in `2300`, far inside any stellar-age bar. Character discriminates, value cannot.
+
+### ⛔ ③ ITEM 1: THE AVERAGING PREMISE HAS NOTHING TO AVERAGE
+
+| `z` | `H_leaf/H_stack` | age ratio between the laws |
+|---|---|---|
+| `0` | `1.0000` | `1.000` |
+| `67` | `1.0100` | |
+| `1090` | `1.1505` | `1.29` |
+| `1e5` | `5.5374` | `7.34` |
+| `1e9` | `544.63` | `726` |
+
+The framing's own figures check out at the late end. **But the gap grows as `(1+z)^½`**, and the trampoline's licence is that the cosmological description is good *while the warping averages out* — the source's furniture for which is lensing, ripples and bound structures. **A uniform bath has nothing to average**, and even at recombination the two ages differ by `29` per cent.
+
+### ⛔ ④ ITEM 3: IT RESPECTS THE PRIMARY ERROR AND STRAINS THE INVERSE ONE
+
+`P7` names the shadow precisely — *"The shadow here is the **synchronous** projection specifically: the layer's own reassigned expansion … is **not itself a shadow** but the existent's own geometry, to be computed on and only then projected. Keeping the two apart is what prevents the subtler inverse of the error, mistaking the layer's ontological rate for the appearance **and refusing it its physics**."*
+
+- ✔ **The primary error is respected:** `P7` wants the physics *"carried on the evolving layer and then projected"*, which is the framing's second paragraph.
+- ⛔ **The inverse is strained:** the framing does not call the geometric rate an appearance, so it avoids the letter — but *"It is not the rate any propagated length is built on"* leaves it with no quantity to govern, and *"refusing it its physics"* is the warning's own phrase for that.
+- ⛔ **And `P7` carries THREE levels**, *"the projection through which **both** are observed"*. *"Every measured quantity … takes the leaf rate"* makes the first unobserved. **Either `P7`'s sentence is loose or the framing overstates — and the framing is what is being drafted.**
+
+**→ THE SMALLEST REPAIR, one clause:** for `observed through the projection` read
+
+→ `observed through the projection, which below $z\approx67$ returns the geometric rate to within a per cent`
+
+*It keeps `P7`'s three levels, keeps the content claim, and is true by the table above.*
+
+### ⛭ ⑤ WHAT THE FRAMING GETS RIGHT, AND ONE OF IT IS DECISIVE
+
+Its own figures are right. It respects the primary error. It keeps the Nariai results where they live. **And the data REQUIRE its second paragraph where the gap is largest:** at `z = 1e9` the laws differ by `545` in rate and `726` in elapsed time, so the light elements are computable on one law and not the other — and the corpus reports them confirmed within `1σ`. **On the stacking law the early expansion is slower by a factor of hundreds and the yields would not come out.** ⌗ *What this does NOT establish: that the corpus's own nucleosynthesis was computed on the leaf rate — it is cited to a companion paper this repository does not carry, so I report the requirement and not the provenance.*
+
+### ⌗ ⑥ WHAT I CANNOT SETTLE, AND ONE OFFER
+
+Whether the **small-`r` results survive the bend** — `r7762`'s ⒝, unchanged: radiation dominates the mass function above `z ≈ 3370`, and the horizon trichotomy, the branch point's structure and the exact Euclidean flatness are stated on the vacuum family. **That recheck is a revision's worth of work and I will take it on order.** Also: the nucleosynthesis provenance, and the framing's own provenance (settled in chat; tested here against the corpus).
+
+⌗ **What this revision got wrong:** the age integral was first taken as one quadrature over a twelve-decade range and returned `2e-12` Gyr for a `13.8` Gyr universe. Fixed by integrating in `ln(1+z)` split by decade. *A wide range is not an interval a quadrature can be handed whole — and the giveaway was absurd by twelve orders rather than subtly wrong.*

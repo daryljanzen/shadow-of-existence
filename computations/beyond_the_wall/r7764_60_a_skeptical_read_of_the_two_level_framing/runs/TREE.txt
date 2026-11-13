@@ -1,0 +1,5 @@
+r7764 (60) -- the tree
+615eff0c1 r7764 (60) -- REGISTRATION ONLY: nine arms for the skeptical read of the two-level framing, before the statement is worked
+75c3040d6 Merge origin/main (r7761: the two-level framing settled, superseding r7759's first item) so the read runs on the corpus the order is about
+HEAD: 615eff0c11884a804f21626ec5f773aeed745bde
+origin/main: e6146b10ca06ce69e5b5ef77676e8be8c2a7e51e
