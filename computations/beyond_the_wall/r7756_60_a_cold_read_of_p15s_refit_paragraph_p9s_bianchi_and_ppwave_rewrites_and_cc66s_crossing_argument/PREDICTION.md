@@ -145,3 +145,35 @@ read could be wrong and test it. PASS iff all three are tested and the verdicts 
 material is marked AMENDMENT and registered in its own pushed commit before it is run.
 
 **This seat is a subject of nothing here.**
+
+---
+
+# AMENDMENT (registered after the first read, in its own pushed commit, before arm ⑱ is run)
+
+**Why it is added.** `cc66`'s `§③` fences its own scope and names the next question outright:
+*"Whether ANY admissible cut reproduces `H_leaf` exactly is a different, computable question — invert
+`H²(r) = H²_leaf(z(r))` for the mass function it demands and ask whether that `m(r)` is admissible … I
+have not computed it, and I am not claiming it."* Arm ⑭ measured the same conclusion on the DISTANCE
+for the `r^-4` family; the general question is one inversion away and is the whole of the live row.
+
+**⛔ DISCLOSED, because register-before-measure is the rule this line works under: the algebra was
+sketched by this seat during the read, before this amendment was written.** It is registered here so
+that the check is run mechanically against the corpus's own printed relations and this seat's own
+published instrument, rather than against that sketch, and every figure it yields is labelled
+**POST-REGISTRATION** in the result. The outcome is not protected by this registration; the *procedure*
+is.
+
+**⑱ The mass function the leaf rate demands, and whether it is admissible.**
+Using the corpus's own relations, read by path and not reimplemented — `r7580/lightpath.py`'s `H_stack`,
+`H_leaf`, `r_of`, `r₀` and the background, and `P15`'s printed `f(r) = 1 − 2GM/c²r − r²/α²` — form the
+mass term `μ(r) ≡ 2Gm(r)/c² = r³[(H/c)² − 1/α²]` on each rate law and compare.
+PASS iff **all three** hold: ⑴ `μ_stack(r)` is CONSTANT in `r` to numerical precision (the control: the
+stacking rate is the vacuum cut, so a non-constant answer means the setup, not the physics, is wrong);
+⑵ `μ_leaf(r)` is reported with the sign of its derivative stated; ⑶ the verdict on admissibility is
+stated as what the sign gives — `m′(r) ≥ 0` admissible, `m′(r) < 0` a negative density and therefore
+not.
+*Negative reachable in both directions: `μ_leaf` increasing would say an admissible cut DOES reproduce
+the leaf rate, which would overturn `§③`'s suggestion and this seat's expectation; a non-constant
+`μ_stack` would void the arm.*
+
+**Arm count: EIGHTEEN.** ⑱ is this amendment's only arm, and it is the only one run after the first read.
