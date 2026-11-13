@@ -1,0 +1,106 @@
+QUESTION:
+Did the 1 June move to a new content delivery network (CDN) improve the site's conversion rate, and what is a faster site worth?
+
+DATA:
+An online retailer migrated its website to a new content delivery network (CDN) on 1 June. Two weeks before (18-31 May) vs two weeks after (1-14 June):
+
+| Metric | 18-31 May | 1-14 June |
+| Sessions | 200,000 | 210,000 |
+| Orders | 5,000 | 5,670 |
+| Median page load time | 3.2 s | 2.1 s |
+| 95th-percentile page load time | 7.5 s | 4.8 s |
+| Bounce rate | 48% | 44% |
+
+Conversion = orders / sessions. Page load times come from real-user monitoring across all page views.
+
+Same two calendar periods last year, when there were no site or infrastructure changes: conversion 2.4% (18-31 May) and 2.6% (1-14 June).
+
+The retailer's conversion rate rises every year in early June when the summer ranges launch. This year the summer ranges again launched on 1 June. No other site changes were made between 18 May and 14 June.
+
+KNOWN FLAWS:
+F1. [calculation] The reduction is (7.5 − 4.8) / 7.5 = 36%. 56% comes from dividing the 2.7 s fall by the new value (4.8). The draft's claim that the slowest experiences 'improved even more' than the median (34%) is barely true at 36%. CORRECTION: 95th percentile fell by 36%, similar to the median's 34%.
+F2. [misreport] The data show bounce rate fell from 48% to 44%. CORRECTION: A 4-point (8% relative) fall in bounce rate.
+F3. [method] Ignores the seasonal baseline: the same calendar periods last year, with no site changes, show the same 0.2-point rise (2.4% to 2.6%) from the summer range launch, which happened again on 1 June. CORRECTION: Year-over-year difference-in-differences: (2.70 − 2.50) − (2.6 − 2.4) = 0.0 points. There is no detectable conversion effect of the CDN.
+F4. [inference] Derives a linear causal 'value per second' from one confounded before/after comparison and extrapolates it beyond the observed range. CORRECTION: The data support no value-per-second estimate (the seasonally adjusted effect is about zero). A randomised latency experiment would be needed.
+
+EXTENSIONS:
+- Run a statistical check on the raw conversion change (2.50% vs 2.70%, z of about 4) and contrast it with the seasonally adjusted comparison, showing that a highly significant before/after change can be entirely seasonal.
+- Check whether the sessions increase (+5%) is also seasonal, using last year's session counts for the same periods, which the analyst should request.
+- Segment by device or connection type: speed gains typically matter most on mobile and slow connections, so an effect masked in the aggregate could appear there (data would be needed).
+
+FINAL VERSION:
+# CDN migration: performance and conversion impact
+
+**Bottom line.** The new CDN made the site much faster, but the data do not show that it improved conversion. Conversion rose 0.2 points in the two weeks after the migration. It rose by the same amount over the same two weeks last year, when nothing on the site changed. Both rises coincide with the summer range launch on 1 June. A faster site may still be worth something, but this comparison can only put a range on its value, not measure it. The data are consistent with a conversion effect anywhere from about −0.14 to +0.14 points (roughly ±300 orders a fortnight), and that range is a minimum. We should not use a "value per second" figure in business cases yet.
+
+**Background.** The site moved to a new CDN on 1 June. This note compares the two weeks before the migration (18-31 May) with the two weeks after (1-14 June). Load times come from real-user monitoring (RUM) across all page views, so they reflect what customers experienced on their own devices and connections. The analysis uses site-wide totals for each two-week period. Daily figures and device or channel splits were not available.
+
+## Speed: a clear improvement
+
+| | 18-31 May | 1-14 June | Change |
+|---|---|---|---|
+| Median load time | 3.2 s | 2.1 s | −1.1 s (−34%) |
+| 95th-percentile load time | 7.5 s | 4.8 s | −2.7 s (−36%) |
+
+Both typical and slow page loads improved by about a third. The slowest loads gained the most in absolute terms (2.7 seconds). This matters because very slow pages are typically the ones most likely to drive customers away. 95% of page loads now complete within 4.8 seconds, down from 7.5 seconds.
+
+The speed gain is very likely due to the CDN:
+- Load time is a direct technical measure of what a CDN changes.
+- The improvement lines up with the migration date.
+- The other change on 1 June, the summer launch, would more likely add page weight than remove it.
+
+Two caveats apply:
+- Two-week totals cannot show a step change on 1 June itself. Daily RUM data would confirm it.
+- RUM averages over all page views. If the summer launch shifted traffic toward different pages or devices, that change in mix could move load times somewhat on its own. The segment breakdown in next step 3 would show this.
+
+## Engagement
+
+Bounce rate fell from 48% to 44%, a drop of 4 points (about 8% in relative terms). Sessions grew 5% (200,000 to 210,000) and orders grew 13% (5,000 to 5,670). We do not have last year's bounce rate or session figures, so we cannot tell how much of these changes is seasonal. The summer launch could plausibly lower bounce rates on its own.
+
+## Conversion: no detectable effect from the CDN
+
+| | 18-31 May | 1-14 June | Change |
+|---|---|---|---|
+| This year (CDN migrated 1 June) | 2.50% | 2.70% | +0.20 pts (+8.0% relative) |
+| Last year (no site changes) | 2.40% | 2.60% | +0.20 pts (+8.3% relative) |
+| **Difference** | | | **0.00 pts** |
+
+Conversion rises every year in early June when the summer ranges launch. This year they launched on 1 June, the same day as the migration. The CDN was the only *site* change, but the summer launch was a second change on that date, and it is the known driver of the early-June rise. Last year the launch alone added 0.2 points. This year's rise is the same size. Once the seasonal pattern is removed, the CDN's estimated effect on conversion is roughly zero.
+
+The conclusion holds however the change is measured:
+- **In absolute points**, the two rises are identical.
+- **In relative terms**, this year's rise (8.0%) is slightly smaller than last year's (8.3%).
+- **Starting levels** differed (2.5% this year, 2.4% last year), but neither reading suggests a CDN lift.
+- **Day-of-week mix** does not distort the comparison. Every window is exactly 14 days, so each weekday appears twice in each period, in both years.
+
+**How precise is this estimate?** Not precise enough to rule out a small effect.
+- With about 200,000 sessions at 2.5% conversion, each two-week rate has a sampling error of about ±0.035 points (one standard error).
+- This year's before-and-after change therefore has a 95% range of about ±0.10 points.
+- Comparing it with last year's change widens that to about ±0.14 points. This assumes last year had similar session volumes. Last year's actual counts would firm up the figure.
+- Applied to 210,000 sessions, 0.14 points is about 300 orders a fortnight. A CDN effect of that size, up or down, cannot be ruled out.
+- This range is a minimum. It treats sessions as independent, and it ignores how much the seasonal lift varies from year to year, which a single prior year cannot tell us.
+
+So the honest reading is that there is no evidence of a lift, though a modest effect in either direction is possible. The simple before-and-after reading credits the CDN with all 0.2 points (about 420 extra orders a fortnight). That reading is not supported.
+
+## What is a second worth?
+
+The current data cannot give a point estimate, only a range.
+- **The naive figure is misleading.** Dividing the 0.2-point conversion rise by the 1.1-second speed gain gives about 0.18 points per second. That rise is seasonal, so the figure does not measure the effect of speed.
+- **The range.** The data are consistent with a conversion effect of up to about ±0.14 points, or roughly ±300 orders a fortnight. Spread evenly over the 1.1-second median improvement, that is up to about ±0.13 points per second.
+- **What the range is not.** It is the edge of what these data allow, not an expected value. The best estimate is zero. Because the range is a minimum, the true uncertainty is somewhat wider.
+- **Turning it into money.** Multiplying by average revenue (or margin) per order would convert the range into a value. That figure is not in this dataset.
+- **Linearity.** Even with a valid estimate, assuming each second is worth the same would be risky. The value of speed is unlikely to be linear, and returns usually shrink as a site gets faster.
+
+## Next steps
+
+1. **Measure the effect of speed directly.** The most reliable option is a controlled test: serve a random share of traffic with added latency, or through the old delivery path if it is still available, and compare conversion. This separates speed from seasonality.
+   - Deliberately slowing the site has a real revenue cost. Limit the test to a small share of traffic for a fixed, short period, agreed with stakeholders in advance.
+   - Adding delay measures the cost of being slower from today's faster baseline. Because the effect is likely non-linear, that may not equal the gain from the 3.2 s → 2.1 s improvement. Routing through the old delivery path, if possible, would test the actual change more closely.
+2. **Extend the seasonal baseline.** Pull the same two periods for as many past years as are available, including sessions, orders and bounce rate, split by device, region and connection type where possible. This shows how much the early-June lift normally varies and provides the baseline step 3 needs.
+3. **Look for a dose-response pattern in this year's data.** Break this year's results down by the same segments, using daily RUM data. If segments that sped up more also beat their own prior-year seasonal lift by more, that would be some evidence of a speed effect. This step depends on step 2 providing prior-year segment data. The same breakdown will also show whether changes in traffic mix affected the RUM figures.
+4. **Hold off on a value-per-second figure** in business cases until steps 1-3 give a defensible estimate. Until then, quote only the range above, clearly labelled as an upper limit rather than an expected gain. Speed work can still be justified on other grounds, such as user experience, search ranking and infrastructure cost, but not yet on a measured conversion gain.
+5. **Keep monitoring load times weekly** to confirm the improvement holds as summer traffic grows.
+
+## Conclusion
+
+The CDN migration made the site substantially faster, cutting median and 95th-percentile load times by about a third. The 0.2-point rise in conversion matches last year's seasonal rise from the summer launch, so there is no evidence the CDN raised conversion. With the current data, an effect of up to roughly ±0.14 points cannot be excluded. That is about ±300 orders a fortnight, or up to about ±0.13 points per second of median speed-up. Putting a reliable value on faster load times will need a controlled test or a stronger seasonal baseline.

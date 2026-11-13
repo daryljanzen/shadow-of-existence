@@ -1,0 +1,112 @@
+QUESTION:
+Under company policy, which of the five stores should receive this year's refurbishment budget?
+
+DATA:
+Five-store retail chain, financial year 2025. A refurbishment budget is available for one store. Company policy: the budget goes to the store with the lowest annual sales per square foot of sales floor (the company's space-productivity KPI), measured on a full-year basis.
+
+| Store | Annual sales 2025 | Sales floor area (sq ft) | Gross internal area incl. stockrooms (sq ft) |
+| North | £2.4m | 8,000 | 10,000 |
+| South | £3.6m | 15,000 | 18,000 |
+| East | £1.8m | 6,000 | 9,000 |
+| West | £2.1m | 10,000 | 12,000 |
+| Central | £4.2m | 12,000 | 14,000 |
+
+Annual sales 2024: North £2.3m, South £3.5m, East £1.7m, West £2.9m, Central £4.0m. Floor areas were the same in 2024.
+
+Operations note: West was closed from January to March 2025 (3 months) for flood repairs, so its 2025 sales cover 9 trading months. All other stores traded for all 12 months in both years. The flood repairs were covered by insurance and did not change the store's layout.
+
+KNOWN FLAWS:
+F1. [method] The company KPI is sales per square foot of sales floor, not gross internal area. Using gross area changes the densities and their relative gaps. CORRECTION: Sales-floor densities (2025 as reported): North £300, South £240, East £300, West £210, Central £350.
+F2. [calculation] £4.2m / 14,000 = £300, not £320 (even on the draft's gross-area basis). CORRECTION: £300 per sq ft gross (or £350 on sales floor). Central is 50%, not 'roughly 60%', above South and East on gross area.
+F3. [omission] Ignores that West traded for only 9 months in 2025 (flood closure), while policy requires a full-year basis. CORRECTION: Annualised West sales = £2.1m × 12/9 = £2.8m: £280 per sq ft of sales floor. The lowest full-year density is South at £240, so South gets the budget.
+F4. [misreport] In 2024 West had the second-highest density (£2.9m / 10,000 = £290 per sq ft of sales floor). South was the weakest (£3.5m / 15,000 = £233). CORRECTION: West was not weak in 2024. Its 2025 'decline' is the closure, so there is no trend case for West; South was weakest in both years.
+
+EXTENSIONS:
+- Show the decision is robust: South is lowest on sales-floor density in both 2024 (£233) and annualised 2025 (£240), while on gross area South and East tie at £200 once West is annualised (£233), which shows why the KPI's definition matters.
+- Check West's post-reopening run rate (monthly sales April-December vs the same months of 2024) to confirm that annualising is fair, i.e. that West did not reopen with depressed trade.
+- Consider return on refurbishment rather than lowest density alone: e.g. South's large floor (15,000 sq ft) means each £10/sq ft uplift is worth £150,000 a year, more than in any other store.
+
+FINAL VERSION:
+# Review of the current version
+
+I rechecked every figure against the source data and all of them are correct. This covers sales densities on both floor bases, growth rates, gaps in both years, the 12.5% seasonality threshold, the implied 17% fall, the 28% reported fall and the chain totals. The recommendation (South) stands. The remaining problems are presentation:
+
+1. **The review notes were still attached to the deliverable.** The previous version said it had removed the preamble, but the notes still sat above the report. The document below is the deliverable alone.
+2. **The table was sorted highest to lowest, so the answer appeared last.** The policy picks the lowest store. I've sorted the table from lowest to highest so South appears first.
+3. **"£40, or 14%, lower" didn't say lower than what.** It now says 14% below West.
+4. **The post-reopening point didn't say which way the effect runs.** A slow recovery after reopening pulls West's annualised figure *down*. If anything, £280 understates West, which strengthens the case for South. That is now explicit.
+5. **The chain-context section doesn't bear on the decision.** I've cut it to a single line in the brief notes.
+
+---
+
+# Refurbishment budget: store productivity review, FY2025
+
+## Recommendation
+
+**The refurbishment budget should go to South.**
+
+- **South has the lowest score on the policy KPI.** It achieves **£240 per sq ft** of sales floor. The next-lowest store is West at £280 on a 12-month basis, so South is £40 (14%) below it.
+- **South was also lowest in 2024 (£233),** when every store traded all 12 months. This is not a one-year effect.
+
+**One point needs confirming before the budget is committed.** West was closed from January to March 2025 because of a flood. If its 9-month sales are used without adjustment, West scores **£210**. That would make West the lowest store, £30 below South. We read "full-year basis" as requiring a 12-month equivalent, for the reasons below. The policy owner should confirm this reading.
+
+## Sales density (sales per sq ft of sales floor)
+
+| Store | 2025 sales (full-year basis) | Sales floor (sq ft) | 2025 £/sq ft | 2024 £/sq ft | Growth |
+|---|---|---|---|---|---|
+| **South** | **£3.6m** | **15,000** | **£240** | **£233** | **+3%** |
+| West | £2.8m* | 10,000 | £280 | £290 | −3%* |
+| North | £2.4m | 8,000 | £300 | £288 | +4% |
+| East | £1.8m | 6,000 | £300 | £283 | +6% |
+| Central | £4.2m | 12,000 | £350 | £333 | +5% |
+
+\*West is annualised from 9 trading months: £2.1m × 12/9 = £2.8m.
+- West's reported 2025 figures are £2.1m in sales and £210 per sq ft, a 28% fall on 2024.
+- The −3% growth figure assumes January to March is an average quarter for West.
+
+The 2024 densities are rounded to the nearest pound.
+
+## Applying the policy
+
+**Denominator.** The policy specifies sales floor, so gross internal area is not used.
+- This matters because selling space ranges from 67% of the store (East) to 86% (Central).
+- On gross area, South and East would tie at £200, and unadjusted West would score £175.
+
+**"Full-year basis".** The phrase can be read in two ways:
+- **(a)** use each store's reported annual sales as they stand; or
+- **(b)** put every store on a 12-month-equivalent basis, adjusting any store that did not trade all year.
+
+We recommend (b), for three reasons:
+
+1. **It fits what the KPI measures.** The KPI measures how productively selling space is used. Under (a), West would receive the budget because of an insured flood closure, not because its space underperforms.
+2. **West's own record supports it.** In 2024 West traded all 12 months with the same layout and scored £290, the second-highest in the chain. That figure needs no adjustment and gives no space-productivity reason to refurbish West.
+3. **The wording leans towards (b), though not decisively.** The figures are already annual, so "full-year basis" most plausibly addresses stores that did not trade the full year. Reading (a) is still defensible on the wording alone.
+
+**If past practice has been to use reading (a), the policy as written points to West.** In that case the closure should be raised as an exception rather than applied mechanically.
+
+## Robustness
+
+**West's seasonality.** Pro-rata annualising assumes January to March normally brings in 25% of West's annual sales.
+- West would only fall below South if that quarter normally brought in **less than 12.5%**.
+- That would imply West's full-year sales fell about 17% on 2024, which nothing in the operations note suggests.
+- **Data request:** West's monthly sales for 2024 and 2025. These would let us compare April to December year on year, or annualise using West's 2024 monthly pattern.
+
+**Post-reopening trading.** Any slow recovery after reopening is already inside West's £280 and pulls it down. If anything, £280 understates West's normal productivity, which widens its lead over South.
+
+**Consistency over time.** South was lowest in both years:
+- In 2024 it was £50 below the next-weakest store (East) and £57 below West.
+- In 2025 it was £40 below the next-weakest store (West).
+- The gap has narrowed, but South remains clearly lowest.
+
+## Notes for the refurbishment brief
+
+**South's problem is under-used space, not decline.** South has the largest sales floor in the chain but only the second-highest sales, and its sales grew 3% in 2025. The brief should go beyond a cosmetic refresh and consider:
+- the layout and the space given to each category; and
+- whether part of the floor could be released, converted or re-let.
+
+**Measuring the result.** After the works:
+- compare South's density with its £240 baseline and with the chain's average change over the same period;
+- report total sales alongside density, because shrinking the floor raises the KPI even if sales don't improve; and
+- annualise any closure period the same way West was treated here.
+
+**Chain context.** Reported chain sales fell from £14.4m to £14.1m, entirely because of West's closure. On a full-year-equivalent basis, chain sales rose about 3% to £14.8m. West's recovery should be tracked monthly as a separate trading issue.

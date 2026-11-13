@@ -1,0 +1,101 @@
+QUESTION:
+Under the council's affordability rule, can a median-income household in the city afford to buy the median house, or to rent a median 2-bedroom flat?
+
+DATA:
+City housing affordability, 2025.
+
+- Median house price: £320,000. Lower-quartile house price: £230,000.
+- Median gross household income: £40,000 a year. Median take-home (net) household income: £2,700 a month.
+- Over the past year, median house prices rose 6% and median household incomes rose 3%.
+- First-time-buyer assumptions: 10% deposit, 25-year capital-repayment mortgage at 5.0% fixed interest.
+  - Monthly repayment on a £288,000 loan (median house): £1,684.
+  - Monthly repayment on a £207,000 loan (lower-quartile house): £1,210.
+- Median rent, 2-bedroom flat: £1,150 a month.
+- Council affordability rule: housing costs are 'affordable' if they take no more than 35% of net (take-home) household income.
+- Repayment figures use the standard repayment-mortgage formula and exclude insurance and maintenance. Rents exclude bills.
+- Income figures cover all household types in the city.
+- The council applies the 35% rule to both renting and buying.
+- No data are available on planning permissions, housing supply, or who is buying homes in the city.
+
+KNOWN FLAWS:
+F1. [calculation] £1,684 / £2,700 = 62.4%, not 52%. CORRECTION: Median-house repayment = 62% of net income.
+F2. [method] Applies the 35% rule to gross income, but the council rule (and the draft's own buying test) uses net take-home income. CORRECTION: £1,150 / £2,700 = 42.6% of net income, so renting a median 2-bed is also unaffordable under the rule.
+F3. [misreport] The data say prices rose 6% and incomes only 3%. CORRECTION: The price-to-income ratio rose by about 3% (1.06/1.03) in a year; affordability is worsening.
+F4. [inference] Makes a causal claim about planning restrictions, for which the data contain no evidence. The draft also invents 'a growing population'. CORRECTION: The data describe affordability but cannot identify its causes. Supply and planning data would be needed.
+
+EXTENSIONS:
+- Compute the income needed to meet the rule: buying the median house needs net income of £1,684/0.35, about £4,811 a month; renting the median 2-bed needs about £3,286 a month. This shows how far above median a household must be.
+- Sensitivity to the interest rate: run the repayment at 4% and 6% to show whether any plausible rate brings median buying under 35% (it does not; even 0% interest gives £960, which is 35.6%).
+- Add the deposit barrier: £32,000 is 11.9 months of net median income. Even saving 10% of net income (£270 a month) would take nearly 10 years.
+
+FINAL VERSION:
+# Can a Median-Income Household Afford to Buy or Rent in the City?
+
+**Short answer: no to both.** Under the council's 35% rule, a median-income household cannot afford the median house or the median 2-bedroom rent. It cannot afford even a lower-quartile house.
+
+## The test
+
+The council treats housing costs as affordable if they take no more than **35% of net (take-home) household income**. It applies the same rule to buying and renting.
+
+- Median take-home income: £2,700 a month
+- Affordability ceiling: 35% × £2,700 = **£945 a month**
+
+Mortgage repayments exclude insurance and maintenance, and rents exclude bills. Real housing costs are therefore higher than shown, so the results below, if anything, overstate affordability.
+
+## Buying
+
+| | Median house | Lower-quartile house |
+|---|---|---|
+| Price | £320,000 | £230,000 |
+| 10% deposit | £32,000 | £23,000 |
+| Loan | £288,000 | £207,000 |
+| Monthly repayment (25 yrs, 5.0%) | £1,684 | £1,210 |
+| Share of take-home pay | **62%** | **45%** |
+| Shortfall vs £945 ceiling | £739/month | £265/month |
+| Affordable? | **No** | **No** |
+
+- **Median house.** The repayment takes 62% of take-home pay, about 1.8 times the 35% threshold. Total repayments over the 25-year term come to about £505,000.
+- **Lower-quartile house.** This also fails, at 45% of take-home pay.
+- **What would pass.** On the same mortgage terms, £945 a month supports a loan of about £162,000. With a 10% deposit, that buys a house of roughly **£180,000**, well below the lower-quartile price of £230,000.
+- **Deposit.** The deposit is a separate barrier from the repayment test:
+  - The £32,000 deposit on the median house equals about 12 months of the household's entire take-home income.
+  - The £23,000 deposit on a lower-quartile house equals about 8.5 months.
+
+## Renting
+
+- Median 2-bedroom rent: £1,150 a month
+- Share of take-home pay: £1,150 / £2,700 = **43%**
+- That is £205 a month over the £945 ceiling, so renting is **not affordable** under the council's rule.
+
+Renting costs less each month than the repayment on a lower-quartile house, but it still fails the test. This compares monthly costs only. It is not a full rent-versus-buy comparison: buying needs a deposit and builds equity, and renting does neither.
+
+## Price-to-income ratio (context)
+
+- The median house price is **8.0 times** median gross household income (£320,000 / £40,000).
+- This ratio is not part of the council's rule. For outside context, the Demographia benchmark classes ratios of 5.1 and above as "severely unaffordable."
+
+## Trend
+
+- Over the past year, median house prices rose 6% and median household incomes rose 3%.
+- The price-to-income ratio therefore rose from about 7.8 to 8.0. **On this measure, buying became less affordable.**
+- The trend under the council's 35% test is uncertain, for two reasons:
+  - The 3% income rise appears to be in gross income. The data don't say whether take-home pay rose by the same amount.
+  - Monthly repayments also depend on interest-rate changes, which the data don't cover.
+- One year of data cannot show whether this is a long-run trend.
+- No rent trend is given, so we cannot say how renting affordability has changed.
+
+## Causes
+
+The data do not show why prices are high relative to incomes. There is no information on planning permissions, housing supply, or who is buying homes. Possible explanations include supply constraints, interest rates, investor or second-home demand, and local wage levels. Identifying the cause, and therefore the right policy response, would need further evidence.
+
+## Conclusions
+
+1. **Buying the median house is unaffordable** for a median-income household. Repayments take 62% of take-home pay against a 35% limit.
+2. **Even a lower-quartile house is unaffordable**, at 45%. The rule would allow a house of only about £180,000.
+3. **Renting a median 2-bedroom flat is also unaffordable**, at 43% of take-home pay.
+4. **Price-to-income affordability worsened over the past year**, because prices rose twice as fast as gross incomes. The effect on the council's 35% test can't be determined, because the data cover neither take-home income growth nor interest-rate changes.
+
+## Caveats
+
+- The figures describe a household on exactly the median income. The income data cover all household types, and their needs and incomes may differ from those of a typical household seeking a 2-bedroom home.
+- Households with above-median incomes or existing equity will fare better. Lower-income households will fare worse.

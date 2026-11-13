@@ -1,0 +1,158 @@
+QUESTION:
+Did guard X's three-point shooting genuinely improve after the mid-season change of shooting coach, and should X take a larger share of the team's three-point attempts next season?
+
+DATA:
+Professional basketball. Guard X's shooting before and after a mid-season change of shooting coach, which took effect after game 30. X played in all 50 games. His minutes per game were similar in both periods (about 32).
+
+Shooting percentage = makes / attempts.
+
+| | Games 1-30 | Games 31-50 |
+| Three-point attempts | 150 | 80 |
+| Three-point makes | 51 | 32 |
+| Free-throw attempts | 100 | 70 |
+| Free-throw makes | 80 | 55 |
+
+League average three-point percentage this season: 36%.
+
+Opponent breakdown: in games 31-50, 30 of X's 80 three-point attempts came in 4 games against the league's two worst-ranked perimeter defences, and he made 18 of those 30. X did not face either of those teams in games 1-30.
+
+The coaching staff must decide whether to increase X's share of team three-point attempts next season. The new shooting coach worked with the whole squad, not just X.
+
+KNOWN FLAWS:
+F1. [calculation] A 6-point rise from 34% is 6/34 = 17.6% in relative terms, not 21%. CORRECTION: Relative improvement of about 18%.
+F2. [omission] Ignores that 30 of the 80 post-change attempts (18 made) came against the two worst perimeter defences, which X did not face before the change. CORRECTION: Against other opponents after the change X made 14 of 50 (28%), below his pre-change 34%. The apparent improvement is driven by schedule.
+F3. [misreport] The data show free throws went from 80/100 = 80% to 55/70 = 78.6%, a slight fall. CORRECTION: Free-throw shooting did not improve, so it provides no corroboration of better mechanics.
+F4. [inference] Draws a causal, stable conclusion from 80 attempts. The pre/post difference is not statistically significant (two-proportion z of about 0.9), it is confounded by opponent quality, and the coach changed for the whole squad. CORRECTION: The evidence is consistent with no change in X's true shooting ability. No reallocation of attempts is justified on these data.
+
+EXTENSIONS:
+- Give interval estimates: 32/80 has a 95% CI of roughly 29-51%, and 51/150 of roughly 26-42%. The intervals overlap heavily, which shows how little 20 games can establish.
+- Use the whole squad as a comparison. Since the coach worked with everyone, compare teammates' pre/post three-point percentages (ideally against the same opponents) to separate a coaching effect from schedule effects.
+- Apply regression to the league mean (e.g. empirical-Bayes shrinkage towards 36% based on attempts) to estimate X's likely true rate before setting next season's shot allocation.
+
+FINAL VERSION:
+# Guard X: Did His Three-Point Shooting Improve After the Coaching Change?
+
+## Summary
+
+**The data do not show a genuine improvement, but they do not rule one out either.** X's three-point percentage rose from 34.0% to 40.0% after game 30. That rise depends entirely on 4 games against the league's two weakest perimeter defences, where he shot 18 of 30 (60%). In his other 16 games after the change he shot 14 of 50 (28%), below his pre-change rate. However, 50 attempts is too few to tell 28% apart from his earlier 34%. His free-throw percentage was essentially flat (80.0% to 78.6%).
+
+These numbers cannot separate a softer schedule, or luck, from any coaching effect. A reasonable estimate of X's true three-point rate is **about 35–36%, roughly league average**. **There is no sound basis for increasing X's share of the team's three-point attempts.** It should stay roughly where it is until better evidence is available.
+
+## The headline comparison
+
+| | Games 1-30 | Games 31-50 | Season |
+|---|---|---|---|
+| 3PT makes / attempts | 51 / 150 | 32 / 80 | 83 / 230 |
+| 3PT % | 34.0% | 40.0% | 36.1% |
+| 3PT attempts per game | 5.0 | 4.0 | 4.6 |
+| FT makes / attempts | 80 / 100 | 55 / 70 | 135 / 170 |
+| FT % | 80.0% | 78.6% | 79.4% |
+
+The apparent gain is 6 percentage points, about 18% in relative terms (6 / 34). His full-season rate of 36.1% is essentially the league average of 36%.
+
+## Sample size: the headline gain is within normal variation
+
+- The standard error of the difference between the two periods is about 6.7 points. The 6-point gap is less than one standard error (z ≈ 0.9).
+- A rough 95% interval for X's true rate after the change, based on 80 attempts, runs from about 29% to 51%.
+
+Twenty games of shooting cannot establish that 40% is X's real level.
+
+## The opponent breakdown
+
+The 80 attempts after the change fall into two very different groups:
+
+| Games 31-50 | Makes / attempts | 3PT % | Attempts per game |
+|---|---|---|---|
+| 4 games vs. the two worst perimeter defences | 18 / 30 | 60.0% | 7.5 |
+| Other 16 games | 14 / 50 | 28.0% | 3.1 |
+| **All** | 32 / 80 | 40.0% | 4.0 |
+
+X did not face either weak defence in games 1-30. A closer like-for-like comparison is:
+
+- **Before the change:** 34.0% on 150 attempts.
+- **After the change, excluding the weak defences:** 28.0% on 50 attempts.
+
+This comparison has two limits:
+
+1. **The 28% is also within noise.** The standard error of this difference is about 7.4 points (z ≈ −0.8). Against ordinary opposition there is no evidence of improvement. The point estimate is lower, but it is well within random variation and does not show that he got worse.
+2. **The comparison is only approximate.** It assumes the opponents in games 1-30 were similar in defensive quality to those in the "other 16 games". Games 1-30 may have included other soft defences, or an unusually tough run. Removing the best games from one period without checking the other for similar stretches can bias the result. Opponent-adjusted percentages (see Recommendation) would settle this.
+
+**How much of the 60% is luck?** The 60% rests on only 30 attempts, with a rough 95% interval of 42% to 78%. In a league averaging 36%, even the worst perimeter defences are unlikely to concede much more than the low 40s over a sustained period. Assume they concede 42%:
+
+- X would be expected to make about 12.6 of 30, not 18.
+- 18 is about 2 standard errors above that expectation. He would make 18 or more only about 3–4% of the time.
+- At the expected level, his post-change line would be about 26.6 / 80, or 33%, no better than before the change.
+
+So most of the 60% is probably a hot streak rather than a property of those matchups. Some of it could still reflect genuine improvement, and the data cannot say how much. **Schedule, luck and skill cannot be separated with these numbers.** That is different from saying improvement has been ruled out.
+
+For reference, X's season rate excluding the 4 weak-defence games is 65 of 200 (32.5%). That is somewhat below league average, subject to the same caveat about opponent mix.
+
+## Regression to the mean
+
+Coaching changes often follow a poor stretch. If this one did, some rebound would be expected whatever the new coach did, and a before/after comparison would flatter the coach even with no real effect. The effect is probably modest for X, because his 34% before the change was only slightly below league average.
+
+## A best estimate of X's true rate
+
+Three-point percentages are noisy. A standard approach is to pull a player's observed rate toward the league mean, more strongly when he has taken fewer attempts. The strength of the pull is an assumption. Values from a few hundred up to around 750 "league-average attempts" are commonly used for three-point shooting. The table uses 300 and 750.
+
+| Basis | Weight 300 | Weight 750 |
+|---|---|---|
+| Full season (83/230) | 36.0% | 36.0% |
+| Excluding weak-defence games (65/200) | 34.6% | 35.3% |
+
+On either basis, X's best estimate is about 35–36%, not 40%. The estimate that discounts the soft-schedule games is slightly lower.
+
+## Shot volume fell while minutes stayed the same
+
+X's minutes were steady at about 32 per game, yet his three-point attempts fell from 5.0 to 4.0 per game. Against ordinary opponents they fell to about 3.1 per game, while he took 7.5 per game in the weak-defence games. Possible explanations include:
+
+- a change in his role or in the team's offensive system;
+- more defensive attention on him;
+- the new coach steering him towards fewer, better-quality shots;
+- simply taking what soft defences allowed.
+
+Each explanation changes how the percentages should be read. If the coach shifted him towards better shots, any rise in percentage would partly reflect shot selection, and that gain might not survive a larger share of attempts. The cause should be investigated alongside shot-quality data. Whether his *share* of team attempts also fell cannot be determined without team totals, which are not in the data.
+
+## Free throws
+
+X made 80 of 100 free throws before the change and 55 of 70 after it (78.6%). Free throws are uncontested, so they are a reasonable gauge of shooting mechanics, and they show no sign of improvement. This is weak evidence. The change is small enough to be noise, and if the coach worked mainly on three-point mechanics, flat free-throw shooting says little either way.
+
+## The case for a larger share
+
+Points per attempt equal 3 × the three-point rate:
+
+| 3PT rate | Points per attempt |
+|---|---|
+| 40% | 1.20 |
+| 36% | 1.08 |
+| 35% | 1.05 |
+| 34% | 1.02 |
+
+Giving X more attempts makes sense only if his true rate is clearly above that of the team-mates whose attempts would be reallocated. Three problems stand in the way:
+
+1. **His best estimate is about 35–36%, not 40%.**
+2. **His team-mates' rates are not in the data.** If they shoot near league average, moving attempts to X gains nothing. If some shoot well below it, X could be a modest upgrade on those particular players even at 35–36%. The decision depends on X compared with his own team-mates, not with the league.
+3. **More attempts usually mean harder shots.** As a player's share rises, more of his attempts tend to be contested or forced, so his percentage would likely fall below his current true rate.
+
+On the current evidence, a larger share is not justified.
+
+## Was the coach effective?
+
+The new coach worked with the whole squad, so X's split alone is a poor test of the coaching.
+
+- If team-mates' percentages also rose after game 30, that would support a coaching effect. The team also faced the two weak defences in that period, so their numbers need the same schedule adjustment.
+- If team-mates did not improve, the coaching explanation is weakened.
+- Other mid-season changes, such as roster moves or injuries, could also confound the comparison.
+
+None of these figures are in the data provided, and they should be obtained.
+
+## Recommendation
+
+- **Do not increase X's share of team three-point attempts on the basis of this data.** Keep it roughly where it is.
+- **Gather the evidence that could settle the question:**
+  - **Team-mates' three-point percentages before and after game 30**, adjusted for schedule. These test whether the coaching had a squad-wide effect and provide the comparison needed for the share decision.
+  - **Opponent-adjusted three-point percentages for X across the full season**, to correct the before/after comparison for schedule.
+  - **Shot-quality data for X in both periods.** Open vs. contested and catch-and-shoot vs. off the dribble would show whether any change reflects better shot selection or better shooting.
+  - **Team three-point attempt totals and the reason X's attempts per game fell** despite steady minutes.
+- **Review early next season**, once X has a few hundred more attempts against a normal mix of opponents. If he sustains a rate clearly above both league average and his relevant team-mates against ordinary defences, his share can be increased then.
+- **Continue his work with the shooting coach.** There is no evidence of harm, and the coach's value should be judged across the whole squad rather than on one player's split.

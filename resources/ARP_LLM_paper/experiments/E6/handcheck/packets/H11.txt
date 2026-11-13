@@ -1,0 +1,123 @@
+QUESTION:
+What is the own-price elasticity of demand for the chain's large latte, what did the September price rise do to weekly latte revenue, and should the price be raised again to £4.00?
+
+DATA:
+Six-store coffee chain. On 1 September the price of a large latte rose from £3.20 to £3.60. No other prices changed. Compare the 4 weeks of August (baseline) with the 8 weeks of September-October. Use simple percentage changes from the August baseline (not midpoint/arc formulas).
+
+| Product | Aug: avg units per week | Sep-Oct: avg units per week | Price |
+| Large latte, all 6 stores | 9,000 | 8,100 | £3.20 then £3.60 |
+| Medium latte, all 6 stores | 7,000 | 7,700 | £2.90 throughout |
+
+Operations log: Store 4, which normally sells about 1,500 large lattes and about 1,150 medium lattes a week, was closed for refurbishment for 2 of the 8 weeks in October. Its zero-sales weeks are included in the Sep-Oct averages above. All other stores traded normally throughout.
+
+Ingredient and serving costs are about the same for both sizes, so finance will judge the change mainly on revenue across both latte sizes. No price above £3.60 has ever been charged at any store.
+
+KNOWN FLAWS:
+F1. [calculation] The percentage change is computed on the new price instead of the August baseline the brief specifies. CORRECTION: £0.40 / £3.20 = 12.5%. The elasticity on the draft's own volume figure is −10% / 12.5% = −0.80, not −0.90.
+F2. [omission] Ignores Store 4's two-week closure, which removed about 3,000 large lattes (375 a week on average) from the Sep-Oct figure. The draft's caveat even assumes all stores traded normally. CORRECTION: Closure-adjusted Sep-Oct volume is about 8,100 + 375 = 8,475 a week, a 5.8% fall. Elasticity is about −0.47 and large-latte revenue is about £30,510 a week (+5.9%), not +1.25%.
+F3. [misreport] The data shows medium latte sales rose from 7,000 to 7,700 a week (+10%), or about 7,990 (+14%) after adjusting for Store 4. This is clear evidence of trading down. CORRECTION: Medium-latte revenue rose from £20,300 to £22,330 a week (about £23,160 adjusted). Total latte revenue rose from £49,100 to £51,490 (raw), and part of the 'lost' large volume moved to medium.
+F4. [inference] Extrapolates a single local elasticity estimate to a price never charged. Elasticity typically rises as price increases, and the substitution to medium makes the response larger than the large-latte figure suggests. CORRECTION: The data cannot predict the response at £4.00. A trial at a subset of stores, with comparison stores, would be needed.
+
+EXTENSIONS:
+- Compute a cross-price elasticity of medium lattes with respect to the large-latte price: roughly +10% / 12.5% = +0.8 raw, or about +1.1 closure-adjusted. This quantifies cannibalisation and shows the combined latte category is what matters.
+- Repeat the analysis excluding Store 4 entirely (five stores, both periods) as a cleaner robustness check than imputing its missing weeks; this requires store-level weekly data.
+- Use the arc (midpoint) elasticity as a sensitivity check, since the price change is large: on the adjusted volumes (−6.0% / 11.8%) it is about −0.51, close to the simple-percentage estimate.
+
+FINAL VERSION:
+# Large latte price rise: elasticity, revenue and the £4.00 question
+
+## Answers
+
+- **Elasticity:** The simple before/after figure is **−0.47**: a −5.8% change in large units divided by a +12.5% price change, on a normal-trading basis. It understates the response because it ignores underlying autumn growth. After allowing for that growth, the elasticity is **at least −0.68** in magnitude, which is inelastic. That lowest figure applies if every lost large-latte buyer switched to a medium. If many left instead, it could be **−1.1 to −1.4**, which is elastic.
+- **Revenue:** On a normal-trading basis, weekly revenue across both latte sizes rose **£4,574 (+9.3%)**. **At most about £3,150 of that came from the price rise.** The rise added revenue only if underlying growth was below about 9%. That is the same as at least a quarter of lost large buyers switching to a medium. The current data cannot confirm this, but last year's sales can.
+- **£4.00:** **Do not roll it out.** It pays off only under the more favourable assumptions, and no store has ever charged it. Check last year's seasonality first. Then pilot £4.00 in 2–3 stores and compare them with control stores.
+
+## 1. Price change
+
+The large latte rose from £3.20 to £3.60, which is **+12.5%**. No other prices changed.
+
+## 2. Correcting for the Store 4 closure
+
+Store 4 had two zero-sales weeks inside the 8-week averages. Spreading its normal sales for those two weeks over 8 weeks gives:
+- Large: 1,500 × 2 ÷ 8 = **375 a week**
+- Medium: 1,150 × 2 ÷ 8 = **287.5 a week**
+
+| Avg units/week | August | Sep–Oct reported | Sep–Oct normal trading | Change |
+|---|---|---|---|---|
+| Large | 9,000 | 8,100 | **8,475** | −525 (**−5.8%**) |
+| Medium | 7,000 | 7,700 | **7,987.5** | +987.5 (**+14.1%**) |
+| Total | 16,000 | 15,800 | 16,462.5 | +462.5 (+2.9%) |
+
+Without the correction, the large-latte fall looks like −10% rather than −5.8%, and the elasticity would wrongly appear as −0.80.
+
+Store 4's normal volumes are pre-rise figures. Rescaling both sizes to post-rise levels changes the results below only slightly. For example, the revenue ceiling moves from £3,154 to £3,136.
+
+## 3. What the data can and cannot tell us
+
+Total latte volume rose 2.9% even though no latte got cheaper. So some underlying autumn growth was present. The data cannot say how much, because there are no control stores and no prior-year comparison.
+
+If both sizes would have grown at the same rate, that one growth rate determines everything else:
+
+| Underlying growth | Lost large sales | Share who switched to medium | Elasticity* | Both-size revenue effect of price rise |
+|---|---|---|---|---|
+| 2.9% (minimum) | 785 | 100% | −0.68 | **+£3,154** |
+| 6% | 1,065 | 53% | −0.89 | +£1,628 |
+| 9.3% (break-even) | 1,363 | 25% | −1.11 | £0 |
+| 14.1% (maximum) | 1,795 | 0% | −1.40 | **−£2,353** |
+
+*Elasticity is measured against the large sales expected at that growth rate without the price rise.
+
+The data set the bounds on growth:
+- **Below 2.9%** is impossible here. It would mean more customers switched to medium than stopped buying large, so the price rise created cups.
+- **Above 14.1%** is also ruled out. It would mean medium sales fell against trend, even though medium became relatively cheaper.
+
+**Trading down:** Medium sales rose 14.1% at an unchanged price, while the price gap between sizes widened from £0.30 to £0.70. That points to *some* trading down. It does not show how much, so the data cannot tell switchers from customers who left.
+
+## 4. Weekly revenue
+
+**Observed change (normal-trading basis):**
+
+| | August | Sep–Oct | Change |
+|---|---|---|---|
+| Large | £28,800 | 8,475 × £3.60 = £30,510 | +£1,710 (+5.9%) |
+| Medium | £20,300 | 7,987.5 × £2.90 = £23,164 | +£2,864 (+14.1%) |
+| **Both sizes** | **£49,100** | **£53,674** | **+£4,574 (+9.3%)** |
+
+The reported figures, which still include the closure, show +£2,390 for both sizes. Do not use those.
+
+**Price effect:** This is the observed change minus whatever would have happened anyway. It equals £53,674 − £49,100 × (1 + underlying growth).
+- It is **at most about +£3,150 a week**.
+- It is positive if underlying growth was below 9.3%, and negative above that.
+- A 9%+ autumn lift is plausible for a coffee chain coming out of the August holiday lull, so the negative case cannot be ruled out.
+- These figures should not be annualised.
+
+**This can be checked now.** Take last year's August versus September–October unit sales for each size, from a period with no price changes. That gives underlying growth directly and shows which row of the section 3 table applies.
+
+## 5. Should the price go to £4.00?
+
+Moving from £3.60 to £4.00 is a further **+11.1%**. At current volumes it adds £3,390 a week before any volume loss. Each lost large sale then costs:
+- **£4.00** if the customer leaves
+- **£1.10** if the customer switches to a medium
+
+Applying each scenario's elasticity and switching share to a £4.00 price:
+
+| Scenario (from section 3) | Large units lost | Weekly revenue change, both sizes |
+|---|---|---|
+| Growth 2.9%: e −0.68, all switch | ~640 | **+£2,690** |
+| Growth 6%: e −0.89, 53% switch | ~840 | +£1,330 |
+| Growth 9.3%: e −1.11, 25% switch | ~1,045 | ≈ £0 |
+| Growth 14.1%: e −1.40, none switch | ~1,315 | **−£1,875** |
+
+These figures are probably **optimistic**, for three reasons:
+1. **£4.00 has never been charged.** Demand often becomes more elastic at higher prices and at round-number thresholds.
+2. **The size gap would widen to £1.10.** More trading down is likely, which makes large-latte demand more elastic. Switchers still bring in £2.90 each. Customers who leave cost £4.00 each, plus any food or other drinks they would have bought.
+3. **The data are thin.** The baseline is only 4 weeks, the comparison spans a seasonal change, and there are no control stores.
+
+## Recommendation
+
+1. **Check last year's August-to-autumn seasonality** for both sizes.
+   - If underlying growth was below about 9%, the September rise paid off: keep £3.60.
+   - If it was well above 9%, the rise probably cost revenue: consider testing a lower large price in some stores.
+2. **Do not move to £4.00 across the chain.** If the seasonality check is favourable, **pilot £4.00 in 2–3 stores for 8 weeks** and keep the other stores at £3.60 as controls. The pilot would run through Christmas, so compare pilot stores with the control stores over the same weeks, not with their own November figures.
+3. **Track large units, medium units and total transactions by store.** The transaction count is what separates customers who switched from customers who left.
+4. **Roll out only if both-size revenue rises relative to the controls** and transactions hold up.
