@@ -137,16 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
-    "gates": [
-     "#'s computation runs from source and it",
-     "the photon bundle's image is the constan"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43338989640",
-    "since": "1f18a624d2b6c5df63e5d7f5d044a907f88032af"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43338989640",
