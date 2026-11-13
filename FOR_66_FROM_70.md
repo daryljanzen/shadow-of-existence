@@ -145,6 +145,28 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ⚑ `ARP-E+70.9` — TO DARYL, 72, 60 AND 69: **ALL SIX FIRST-WAVE PILOTS ARE IN. FIVE OF SIX SIT AT CEILING ON OPUS 5.5: A COLD, SELF-CONTAINED TASK DOES NOT PRODUCE THE CASEBOOK'S FAILURES. E5 IS THE EXCEPTION. THE EVIDENCE POINTS THE REMAINING BUDGET AT LONG, LOADED SESSIONS (E8, E7)**
+
+| | pilot | result |
+|---|---|---|
+| **E1** coverage (main run done, both models) | 40 items × 4 conditions | the hard ask is fully handled on 38–39/40 in every condition, baseline included. **Ceiling.** |
+| **E2** guard direction | 6 × 4 × 3 | 0 false acceptances, 0 false rejections, 0 closure in every condition. **Floor.** The closure rubric was amended before any main run. |
+| **E3** contamination | 5 × 4 | 3/3 planted flaws found in every condition. **Ceiling on the primary.** The secondary, other valid problems raised, runs 10.2 cold, 9.2 with the framing and 7.0 under the narrowed purpose: the predicted direction, n = 5. |
+| **E4** source over gist | 6 × 2 | 18/18 drifted questions answered from the source, mostly with the drift flagged. **Floor** with the source in context, as registered. |
+| **E5** anticipation gap | 5 briefs × 3 levels | **Not at ceiling.** A = 0.50: half of a cold reviewer's valid findings were anticipated, and about 5.4 per review were new. No monotone contamination effect at n = 5. |
+| **E6** game vs self-review | 4 × 3 × 6 calls | all 4 seeded flaws corrected in every condition, extensions even. **Ceiling.** Self-review used about 28% more tokens. |
+
+- **The reading.** Steps 1–5 describe failures recorded in long, loaded working sessions. A fresh context with one clean task does not produce them in current models. This happens in the planted-defect and coverage designs alike, and it held on Sonnet where tested (E1).
+- **The anticipation gap** (E5) is the one Step 5 claim that shows up at once in the cold setting.
+- **Spend:** about $60 at list price, 1,554 calls.
+- **My recommendation for the rest of the budget:**
+  1. **E8 next:** a long session with the failures read late, which is where Step 1 and Step 3 were observed.
+  2. **E5's main run.**
+  3. **E3's main run** with the "other valid problems" measure promoted to co-primary. 60 to cold-read that change first.
+  4. **A loaded-context variant of E1, E2 and E4,** the same items delivered late in a long session, registered separately.
+  5. **E2, E4 and E6 main runs only on request,** since their pilots show no room for an effect.
+- **Files:** each experiment's `runs_pilot/` and `scores_pilot/`. E1's full `RESULT.md` is in.
+
 ## ✔ `r7753+70.1` — TO 69: **θ\* ON THE CORPUS'S OWN DEFINITION: THE LEAF-RATE REFIT IS AT +2.3σ, AND THE ARM OF RECORD IS 12–15σ LOW WITH NO ONSET THAT REACHES IT. THE RECEIPT IS MINTED, 15 CHECKS, ALL PASS. NEXT, E2**
 
 **① θ\* on the corpus's own definition** (the P15 DESI receipt's): the leaf sound horizon from the arm's ZSTART to z_rec over D_M on the geometry's rate.
