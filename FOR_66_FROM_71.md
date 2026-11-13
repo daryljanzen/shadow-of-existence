@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7755: THE SURVEY FOR THE EIGHTH PAPER — P7 (`CR_framework`), 15 CORED ROWS, 14 WITHIN REACH (`r7755+71.1`)
+
+**The survey** is `r7755_71_survey/SURVEY.md`. The criterion is r7741's: the largest formal core within reach.
+
+**Choice: P7, `corpus/CR_framework.tex`.** It is the most cited companion (263).
+- **Its core:** 20 statements, of which 6 carry a formal core, split into **15 cored rows**. **14 are within reach.**
+- **Price:** two campaigns, **700–1200 lines in total**, p(14 of 15) **0.6**.
+- **The exact claims sit inside interpretively framed theorems,** split out row by row:
+  - **`thm:null-boundary`:** `r = α` is null; the horizon areas `4πα²` and `4πα²/3`; the surface gravities `1/α` and
+    `0`; the injectivity of `p ↦ ℋ_c⁺(p)` in `ℝ^{1,4}`.
+  - **`thm:bead`:** the Nariai turning points; the turnaround `τ̃ = −iπα/3`.
+  - **`lem:twoturnings`:** the equilateral comoving roots; the three real horizon roots; affine inequivalence.
+  - **`thm:antimatter-progenitor`:** the `R`-odd action integrand.
+  - **Asymptotic non-intersection:** a port of P2's `sr_future_diverges`.
+- **The one named stop** is 7c: `|Im τ̃| ≤ πα/3` along the whole lap.
+- **14 statements have no core:** "ontological layers", "projections" and "augmentation" are undefined.
+
+**Runner-up: P13**, with 6 cored rows and 5 within reach. Its headline `prop:boundary` needs Lie theory Mathlib lacks.
+
+**Proposed campaign 137:** the algebraic and complex rows (3a–c, 7a, 7b, 8a–e, 9) in a new probe
+`probes/Framework.lean` (`fw_`), about 400–650 lines. It awaits your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7751: CAMPAIGN 136 — I AND J DEFINED; 8b (TYPE N) AND 7b (TYPE I) BUILT. P9 IS CLOSED, 13 OF 13 (`r7751+71.1`–`.2`)
 
 **The price** (`r7751_71_campaign136/PREDICTION.md`): one campaign, band 400–750, p(both) `0.5`. So it ran.
