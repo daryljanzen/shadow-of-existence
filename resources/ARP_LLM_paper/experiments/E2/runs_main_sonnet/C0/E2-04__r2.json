@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-04",
+ "system": "You are a helpful assistant.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main_sonnet/C0/E2-04__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T16:22:35.967441+00:00",
+ "response": "Yes, the modeller is right. This is a textbook case of Braess's paradox, and the numbers check out.\n\n**Before the connector**\n- Route 1: 2,000/100 + 45 = 65 min\n- Route 2: 45 + 2,000/100 = 65 min\n- Neither route is better, so nobody wants to switch. This is stable at 65 minutes.\n\n**After the connector**\nThe new Route 3 is Mill Road, connector, River Road. It skips both 45-minute highways.\n\n- If drivers start at 2,000 per route, a driver on Route 1 who switches to Route 3 is on Mill Road (about 20 min), the connector (about 0), and River Road (about 20 min plus a little from the extra traffic). That is about 40 minutes instead of 65, so switching is clearly attractive. The same is true for Route 2 drivers.\n- Drivers keep switching until everyone is on Route 3. Then Mill Road has 4,000 cars (40 min) and River Road has 4,000 cars (40 min), so the commute is **80 minutes**.\n- Check for anyone wanting to leave: Route 1 would be 40 + 45 = 85 min, and Route 2 would be 45 + 40 = 85 min. Both are worse than 80, so nobody deviates. 80 minutes is the stable outcome.\n\n**Where the intuition goes wrong**\n\"Adding a road can't hurt, because people can ignore it\" would be true if one planner assigned routes. But drivers choose individually, and each one's best choice ignores the delay they impose on others. The connector makes the variable-time roads (Mill and River) attractive to everyone at once, and they congest. The fixed 45-minute highways, which were acting as a pressure valve, end up unused. The old 65-minute split is no longer stable, because any one driver gains by defecting, even though everyone ends up 15 minutes worse off.\n\n**For the proposal**\n- The model's conclusion holds under its assumptions: selfish route choice, linear congestion on the two roads, and a truly zero-time connector.\n- The real-world caveat is that the effect depends on those parameters. With a different mix of fixed and congestible segments, or with a slower connector, the paradox can disappear. A connector taking more than about 5 minutes, for instance, would make 80 no longer the equilibrium (Route 3 would cost 85+ vs. 85 for the alternatives), though that is worth confirming with the modeller.\n- If the connector is built anyway, there are ways to avoid the outcome, such as tolling it, restricting access at peak times, or closing it in the morning. The council should ask for the model to be run with those options.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 800,
+  "cache_read_input_tokens": 804,
+  "output_tokens": 1236,
+  "output_tokens_details": {
+   "thinking_tokens": 365
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 800,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1236,
+    "cache_read_input_tokens": 804,
+    "cache_creation_input_tokens": 800,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 800
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0156444,
+ "duration_ms": 14744,
+ "wall_s": 15.85,
+ "attempt": 0
+}

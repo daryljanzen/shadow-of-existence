@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 1,
+ "order": "B",
+ "turn_index": 31,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "# Neither of you can settle it yet, and the missing number decides it\n\nHis claim depends on how far maintenance drops after the rewrite, and he hasn't said. Your view, \"obviously a vanity project,\" is a reasonable expectation given how often rewrites overrun, but it isn't a calculation either. Here's how to work it out.\n\n## Break-even calculation\n\nMeasured in engineer-years over three years:\n\n**Keep Python:** 3 engineers × 3 years = **9 engineer-years**\n\n**Rewrite:**\n- Rewrite: 3 engineers × 0.75 years = 2.25\n- **Python maintenance continues during the rewrite:** 3 × 0.75 = 2.25. The current system doesn't maintain itself while the new one is built, and this cost is often left out.\n- Rust maintenance for the remaining 2.25 years: 2.25 × *m*, where *m* is the number of engineers needed after the rewrite\n\nThe rewrite is cheaper if 4.5 + 2.25*m* < 9. That means *m* must be **below 2 engineers a year**, so maintenance needs to fall by **more than a third** after the rewrite.\n\n## The result depends heavily on the schedule\n\n| Rewrite actually takes | Maximum post-rewrite maintenance to break even | Required reduction |\n|---|---|---|\n| 9 months (his estimate) | 2.0 engineers/year | more than ⅓ |\n| 12 months | 1.5 engineers/year | half |\n| 15 months | 0.86 engineers/year | more than 70% |\n| 18 months | impossible within 3 years | — |\n\nAt 18 months, the rewrite plus parallel Python maintenance already uses all 9 engineer-years. This is where your concern carries weight: the case only works if the schedule holds.\n\n## Costs his estimate likely leaves out\n\n- **Reaching feature parity.** Rebuilding years of edge cases and undocumented behaviour usually takes longer than building the core.\n- **Migration and parallel running.** Moving data across, running both systems side by side, and switching over.\n- **Bugs after launch.** New code has new bugs, so maintenance usually stays high for a while before it falls.\n- **Rust skills.** Training the team, slower work at first, and harder hiring if the team doesn't already know Rust.\n- **Opportunity cost.** For nine months or more, three engineers aren't building features.\n\n## Questions to ask him\n\n1. **What maintenance does Rust actually remove?** Maintenance caused by Python itself would fall: type errors, performance work, runtime crashes. Maintenance caused by changing business rules, integrations and customer requests would continue in any language. What's the split in your current three engineer-years?\n2. **What's his number for post-rewrite maintenance, and what's it based on?** Ideally, evidence from a component already rewritten.\n3. **What's the plan if it takes 15 months?**\n\n## A lower-risk alternative\n\nIf a lot of the maintenance load is in a few problem areas, rewrite those modules first, in Rust or by cleaning up the Python. Adding type hints and checking (mypy) can remove much of the type-error burden without a rewrite. Rewriting one component first also gives you real evidence for the full-rewrite decision.\n\nSo the answer is **cheaper only if maintenance falls by more than a third and the nine-month schedule holds**. Ask him to commit to both numbers, with reasoning. If he can't, the case isn't made. If he can, you have something real to discuss.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1991,
+  "cache_read_input_tokens": 174133,
+  "output_tokens": 1855,
+  "output_tokens_details": {
+   "thinking_tokens": 704
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1991,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1855,
+    "cache_read_input_tokens": 174133,
+    "cache_creation_input_tokens": 1991,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1991
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08787059999999958,
+ "started": "2026-11-13T16:32:18.189651+00:00",
+ "wall_s": 23.15,
+ "task_index": 23
+}
