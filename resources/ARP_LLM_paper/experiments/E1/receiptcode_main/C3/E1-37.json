@@ -1,0 +1,51 @@
+{
+ "exp": "E1",
+ "cond": "C3",
+ "item": "E1-37",
+ "system": "You are coding a response. Question: before it starts answering, does the response restate, in its own words, what the message is asking for (listing or paraphrasing the requests)? Reply with JSON only: {\"restates_asks_first\": true|false}",
+ "message": "MESSAGE:\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.\n\nRESPONSE:\n# v4 Release Answers\n\n## 1. Codename\n**Requires:** A river name that fits your naming scheme. I don't know which rivers you've already used, so check for duplicates.\n\n**Answer:** **Danube**. If that's taken, try **Mekong**, **Yukon** or **Orinoco**.\n\n## 2. Changelog rewrite\n**Requires:** Describing the effect users noticed rather than the internal change.\n\n**Answer:** \"Fixed an issue that could unexpectedly sign you out or cause requests to fail while your session was being renewed.\"\n\n## 3. Earliest migration slot\n**Requires:** Applying each constraint in order: code complete, then QA, then a window long enough for the migration, then Priya's availability.\n\n**Answer: Saturday 5 December, 02:00–04:00.** The migration would run about 02:00–03:30.\n\n- **Code complete:** end of day Thursday 19 Nov.\n- **QA:** two full business days, Friday 20 and Monday 23 Nov. The earliest ship date is Tuesday 24 Nov.\n- **Tuesday windows don't work.** They're only 60 minutes long, and the migration needs about 90. No Tuesday will ever fit unless the window is extended.\n- **Saturday 28 Nov is ruled out.** It's the first Saturday window after QA (2 hours, enough time), but Priya is off from Friday 27 to Sunday 29.\n- That leaves **Saturday 5 Dec** as the next eligible window.\n\nIf 5 December is too late, your options are extending a Tuesday window to at least 90 minutes (Tuesday 24 Nov would then work) or finding a backup on-call person for 28 Nov.\n\n## 4. Feature flag vs config setting\n**Requires:** A two-sentence explanation.\n\n**Answer:** A feature flag is a runtime switch for turning functionality on or off, often for specific users or a percentage of traffic, and it's usually temporary and gets removed once the feature is fully rolled out. A config setting is a longer-lived value that controls how the system behaves, such as timeouts, URLs or limits, and it typically applies to a whole environment rather than to targeted users.\n\n## 5. Email vs in-app release notes\n**Requires:** A recommendation with a reason.\n\n**Answer:** **Put the release notes in-app.** Users see them in context, when they're actually using the product, and email open rates for release notes are usually low. The exception is the maintenance window itself: send that by email, because downtime affects people who may not log in beforehand.\n\n## 6. Rollback plan\n**Requires:** Three concrete items to include.\n\n**Answer:**\n1. **A verified database restore path.** Take a full backup right before the migration and confirm it actually restores. Also write and test a down-migration, and note how long each takes. This matters most, because the migration is the hardest part to undo.\n2. **Clear go/no-go triggers and an owner.** Define what counts as failure (for example, the migration isn't done by 03:45, errors exceed a threshold, or smoke tests fail). Name the person who makes the rollback decision so nobody hesitates at 3 a.m.\n3. **App rollback steps and a compatibility check.** Document how to redeploy v3. Confirm whether v3 can run against the migrated schema; if it can't, the app rollback has to be paired with the database rollback.\n\n## 7. Status page announcement\n**Requires:** A short template with date placeholders. Based on item 3, the date is likely Saturday 5 December, 02:00–04:00, but I've left a timezone placeholder because I don't know yours.\n\n**Answer:**\n\n> **Scheduled Maintenance: [DATE], [START TIME]–[END TIME] [TIMEZONE]**\n>\n> We'll be performing scheduled maintenance to upgrade our systems on [DATE] from [START TIME] to [END TIME] [TIMEZONE]. During this window, [PRODUCT] may be unavailable or you may experience brief interruptions.\n>\n> No action is needed on your part. We'll post an update here when maintenance is complete. Thanks for your patience!",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E1/receiptcode_main/C3/E1-37.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-12T21:59:52.431982+00:00",
+ "response": "{\"restates_asks_first\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3102,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 287,
+  "output_tokens_details": {
+   "thinking_tokens": 273
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3102,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 287,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3102,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3102
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.030564,
+ "duration_ms": 5353,
+ "wall_s": 6.21,
+ "attempt": 0
+}
