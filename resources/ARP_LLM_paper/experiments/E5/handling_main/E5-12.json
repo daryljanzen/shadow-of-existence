@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-12",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nThe Joliet distribution centre ships an average of 18,000 orders a day. During the November-December peak, volume reaches about 41,000 orders a day. Orders average 3.4 lines (different products) each. Picking is done by 140 permanent pickers at a loaded cost of $52,000 a year each. During the 10-week peak, Calder adds up to 110 temporary workers, which cost about $1.1 million in 2025. Pickers currently average 95 picks per hour. The AMR vendor, Kinetiq, proposes a $4.8 million system. It says productivity would rise to 240 picks per hour and that Calder could cut 120 picker positions, saving $6.24 million a year and paying for itself in under a year. The 240 figure comes from Kinetiq's reference site, a pharmacy distributor where 85% of orders have only one line. A second reference site, which ships multi-line apparel orders, reports 160 picks per hour. The quoted system is designed for up to 25,000 orders a day. Kinetiq can lease extra robots for peak periods at $310,000 per season. Annual software licences and maintenance are 18% of the purchase price, starting in year 1. Kinetiq's quote assumes the floor meets its flatness specification. Calder's facilities engineer says parts of the floor would need resurfacing, which a contractor has estimated at $380,000. Calder's union contract, which runs until December 31, 2028, does not allow layoffs of permanent warehouse staff for technological change. Annual turnover among permanent pickers is 22%. The Joliet building lease ends in December 2029. The landlord has said he is considering redeveloping the site, and Calder's real estate team gives renewal \"about even odds.\" Kinetiq says the system could be moved to another building for about $600,000. The CFO requires capital projects to pay back within 3 years. Two competitors in the region have installed similar systems in the past 18 months. Customer service reports that 2.1% of orders currently contain at least one picking error. Kinetiq claims its system reduces errors by 70%.\n\nKEY:\n1. The vendor's 240 picks per hour comes from single-line orders. Calder's orders average 3.4 lines and the multi-line reference site gets 160 per hour, so the labour savings are much smaller than $6.24M. GOOD HANDLING: Uses 160 or a range, recalculates the number of pickers needed (about 140 x 95/160, roughly 83), and does not repeat the vendor's ROI figure.\n2. The no-layoff clause until the end of 2028 means savings from permanent staff can only come through turnover (about 31 people a year), so savings in the first two years are mainly from replacing temporary workers and not filling vacancies. GOOD HANDLING: Builds the year-by-year savings around turnover and reduced temp labour, not immediate job cuts.\n3. Recurring and hidden costs are significant: about $864k a year in maintenance (18% of $4.8M), $380k for the floor, and $310k a season to lease extra robots because the system is sized for 25k orders a day while peak is 41k. GOOD HANDLING: Includes all of these in the total cost and the payback calculation and checks the result against the 3-year payback rule.\n4. The lease ends in 2029 with even odds of renewal, so the investment may need to be moved for about $600k or may have a useful life at Joliet of only about 3 years. GOOD HANDLING: Treats the lease as a key risk and either asks for clarity on the lease before committing or includes the relocation cost in a scenario.\n\nDOCUMENT:\n**MEMORANDUM**\n\n**To:** VP of Operations, Calder Distribution\n**From:** Operations Strategy\n**Date:** November 13, 2026\n**Re:** Kinetiq AMR proposal for Joliet: recommendation for the January capital committee\n\n**Recommendation**\n\nDo not approve the $4.8 million purchase in January. Instead, ask Kinetiq for two things: a productivity guarantee or site trial based on our own order profile, and a lease or subscription price. Bring a revised case back once the Joliet building lease outcome is clearer. Automation may well be right for Calder, but this proposal does not meet the CFO's 3-year payback rule.\n\n**Why the vendor's case overstates the benefit**\n\n*Productivity.* Kinetiq's 240 picks/hour comes from a pharmacy site where 85% of orders have one line. Our orders average 3.4 lines. Their apparel site, which ships multi-line orders, achieves 160 picks/hour and is the better comparison. At 160 picks/hour, we would need about 59% of today's picking hours. That means roughly 83 pickers, a reduction of about 57 rather than 120. The gross saving is about $2.96 million a year, not $6.24 million.\n\n*Omitted costs.*\n- Software and maintenance cost 18% of the purchase price, or $864,000 a year.\n- The system handles up to 25,000 orders a day, but peak volume reaches 41,000. We would need to lease extra robots each peak at $310,000.\n- Floor resurfacing adds $380,000 upfront.\n\nNet annual savings are therefore about $1.79 million on a $5.18 million upfront cost. **Even if every saving arrived on day one, payback would take 2.9 years**, which leaves no margin against the 3-year hurdle.\n\n*Union contract.* The contract bars layoffs for technological change until December 31, 2028, so headcount can only fall through attrition. With 22% turnover, about 31 pickers leave per year. If we stop backfilling, it takes roughly two years to get from 140 to 83 pickers. Assuming go-live in late 2027, cumulative net savings after three years are about $2.5 million. **Realistic payback is 4 to 5 years.**\n\n*Building lease.* The Joliet lease ends in December 2029, and our real estate team puts renewal at even odds. After go-live we might operate the system in Joliet for only two years. There is a 50% chance we would then pay about $600,000 to relocate it, plus floor work and downtime at the new site.\n\n**What is genuinely attractive**\n\n- **Picking errors:** 2.1% of our 18,000 daily orders is about 378 orders with errors. A 70% reduction would avoid about 265 of them a day. However, that figure also comes from Kinetiq, and we have not costed an error (credits, reshipping, customer loss).\n- **Peak labour:** Faster picking could reduce the $1.1 million we spend on peak temporary workers.\n- **Competition:** Two regional competitors have already automated.\n\nThese are reasons to keep the project alive. They are not yet reasons to sign.\n\n**Proposed next steps (before a revised submission, targeted for mid-2027)**\n\n1. **Kinetiq:** Run a simulation or pilot using our order and product data. Seek a contractual guarantee of at least 160 picks/hour, with penalties if it is not met.\n2. **Kinetiq:** Price a lease or robots-as-a-service option whose term matches our building horizon. Confirm the installation timeline and peak lease capacity.\n3. **Customer service:** Estimate the full cost of a picking error so the error benefit can be valued.\n4. **Real estate:** Press the landlord for an earlier decision. If we are likely to move, design automation into the new building instead.\n5. **Human resources:** Model attrition-based headcount reduction and the position to take in the 2028 contract negotiations.\n\nIf the guarantee, the lease option and error savings together bring payback under 3 years in both the renewal and relocation scenarios, I would support approval.\n\n---\n\n###",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-12.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:05:59.904499+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"HANDLES\", \"3\": \"HANDLES\", \"4\": \"HANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3951,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 147,
+  "output_tokens_details": {
+   "thinking_tokens": 97
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3951,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 147,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3951,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3951
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.034555999999999996,
+ "duration_ms": 5293,
+ "wall_s": 6.23,
+ "attempt": 0
+}

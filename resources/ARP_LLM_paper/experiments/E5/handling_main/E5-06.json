@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-06",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nHarvest Table served 18,200 households in 2025, up 26% from 14,450 in 2023. It distributes food through 61 partner pantries and a mobile pantry program. The mobile pantry uses 2 refrigerated trucks to visit 9 rural sites once a month. The proposed expansion adds a third refrigerated truck and 6 new mobile sites in Hollis, Wren and Tamarack townships. Food insecurity in those townships is estimated at 17%, compared with 11% for the county as a whole. Projected costs: refrigerated truck $165,000 (one-time); a driver and a site coordinator $92,000 a year combined; fuel and maintenance $28,000 a year. First-year cost is $285,000. The Carlisle Foundation's guidelines say capital purchases may not exceed 40% of any grant award. Grants are for one year only, and applicants must explain how ongoing costs will be paid after the grant ends. Each mobile pantry visit distributes about 42 pounds of food per household. The mobile program costs Harvest Table about $0.61 per pound distributed, compared with $0.19 per pound through partner pantries, which use volunteers and donated space. Attendance has been falling at 4 of the current 9 mobile sites over the past year, and one board member has asked whether those sites are still needed. The county Department of Social Services has offered to host the new sites in the parking lots of its 6 field offices free of charge, but only on weekdays between 9 a.m. and 4 p.m. In a survey of rural clients, 58% said they work hourly jobs, and most said they would prefer evening or Saturday distributions. The county's allocation of federal TEFAP commodity food, which makes up about 30% of Harvest Table's inventory, will be cut by 18% for fiscal year 2027. Harvest Table's operating budget is $3.4 million, and it ended 2025 with an operating surplus of $40,000. A local grocery chain has offered to donate the truck's branding wrap and $15,000 a year in gift cards for clients.\n\nKEY:\n1. The truck ($165k) is 66% of a $250k request, well above the foundation's 40% capital cap ($100k), so the budget as proposed is not eligible. GOOD HANDLING: Notices the cap and changes the budget (e.g., a used or leased truck, other funding for part of the truck, or a smaller request) so it complies.\n2. $120k a year in ongoing staff and running costs continues after a one-time grant, and the food bank's $40k surplus cannot cover it; the foundation requires a sustainability plan. GOOD HANDLING: Gives a specific plan for paying the ongoing costs (named funders, budget reallocation, etc.) rather than general language about future fundraising.\n3. The mobile pantry costs more than three times as much per pound as partner pantries, and 4 of the existing 9 sites are declining, which weakens the case for expansion unless it is clearly explained. GOOD HANDLING: Acknowledges the cost difference and justifies it with the lack of partner pantries in these townships, and considers moving resources from the declining sites.\n4. The free host sites are only open on weekday daytimes, but most clients work hourly jobs and prefer evenings or Saturdays; in addition, the 18% TEFAP cut may limit how much food is available to distribute. GOOD HANDLING: Deals with the timing mismatch (e.g., other evening sites or a different arrangement with the county) and says where the extra food will come from given the TEFAP cut.\n\nDOCUMENT:\n**Note on the request amount:** I wrote this summary as a **$220,000** request, not $250,000. The Foundation caps capital at 40% of the award, so a $250,000 grant could put at most $100,000 toward the $165,000 truck. The only other costs you listed are $120,000 a year in operating costs. That makes $220,000 the most this budget can justify. To ask for $250,000, you would need $30,000 in additional eligible first-year costs that aren't in the figures you gave me. Bracketed items are facts I don't have and shouldn't invent.\n\n---\n\n# Grant Summary: Rural Mobile Pantry Expansion\n**Harvest Table Food Bank | Request: $220,000 (one year) | Total project cost: $285,000**\n\n## The need\nDemand for food assistance in our county is rising quickly. Harvest Table served 18,200 households in 2025, up 26% from 14,450 in 2023. The gap is widest in Hollis, Wren and Tamarack townships, where food insecurity is estimated at 17%, compared with 11% countywide.\n\nSupply is also tightening. The county's federal TEFAP commodity allocation, about 30% of our inventory, will be cut by 18% in fiscal year 2027. That is a loss of roughly 5% of our total food supply. We plan to replace it through [food sourcing plan].\n\n## The project\nOur mobile pantry currently runs two refrigerated trucks to nine rural sites each month. This project adds:\n- a third refrigerated truck,\n- a full-time driver and a site coordinator, and\n- six new monthly distribution sites in the three highest-need townships.\n\nEach visit provides about 42 pounds of food per household, including fresh and refrigerated items. In year one we expect to serve [number] households and distribute [number] pounds.\n\n## Sites and schedule\nThe county Department of Social Services will host all six sites in its field-office parking lots at no cost. This lets us launch quickly and connects clients to DSS services on site. However, DSS lots are available only on weekdays from 9 a.m. to 4 p.m. In our survey of rural clients, 58% work hourly jobs, and most prefer evening or Saturday distributions. During year one we will:\n- recruit evening and Saturday host sites in each township [named prospects, if any], and\n- track attendance by time slot so the schedule follows client needs.\n\n## Cost-effectiveness\nMobile distribution costs $0.61 per pound, compared with $0.19 through our 61 volunteer-run partner pantries. That works out to about $26 per household visit. We use the mobile model only where volunteer pantries cannot reach people.\n\nWe hold the existing program to the same standard. Attendance has fallen at four of our nine current sites. We are reviewing each one and will consolidate or relocate sites that no longer meet need.\n\n## Budget\n\n| Item | Total | Carlisle request |\n|---|---|---|\n| Refrigerated truck (one-time) | $165,000 | $100,000 (40% of award) |\n| Driver and site coordinator | $92,000 | $92,000 |\n| Fuel and maintenance | $28,000 | $28,000 |\n| **Total** | **$285,000** | **$220,000** |\n\nThe remaining $65,000 for the truck will come from [source and whether it is committed].\n\nA local grocery chain will donate the truck's branding wrap and $15,000 a year in grocery gift cards for clients.\n\n## Sustainability\nAfter the grant year, the program will need $120,000 a year to continue. We will fund it through [specific sources, amounts and status]. Harvest Table has a $3.4 million operating budget and ended 2025 with a $40,000 surplus.\n\n## Measuring results\nWe will report on:\n- households served,\n- pounds distributed,\n- attendance by site and time slot, and\n- cost per pound,\n\nand share findings with the Foundation at six and twelve months.\n\n---\n\n#",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-06.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:39.746838+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"MISHANDLES\", \"3\": \"HANDLES\", \"4\": \"MISHANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3873,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 327,
+  "output_tokens_details": {
+   "thinking_tokens": 273
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3873,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 327,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3873,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3873
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.037532,
+ "duration_ms": 6860,
+ "wall_s": 7.83,
+ "attempt": 0
+}

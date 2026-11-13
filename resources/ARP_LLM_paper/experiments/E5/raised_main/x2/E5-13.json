@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-13",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. The deterrence effect is missing from the analysis.** The 308 findings measure detection, not prevention. A reviewer will note that the memo admits it has no deterrence data but still recommends removal. A pilot or comparison of misconduct rates across proctored and unproctored sections would strengthen the case\n2. The cost-per-finding framing is selective.** Dividing the contract cost by findings ignores undetected cheating and the value of protecting degree credibility. The faculty-time figure also uses an assumed rate of about three hours per finding, without stating salary costs\n3. The expansion projection is speculative.** Flag rates may differ across course types newly brought into coverage\n4. The 5% conversion rate is ambiguous.** Some flags may have been valid but not pursued, or resolved informally. The memo treats every unconfirmed flag as a false positive\n5. The disparity figures lack context.** The memo does not report confidence intervals or flag-to-finding rates by group. It also does not address whether disparities persist after faculty review, which is the stronger equity question\n6. The legal claims are hedged but load-bearing.** \"Almost certainly biometric\" and \"addresses it directly\" rely on interpretations of the privacy law and the accreditor's standard that counsel has not yet confirmed\n7. Implementation feasibility is thin.** The memo gives no cost or staffing estimate for the non-biometric alternative or the redesign program, and no timeline for redesigning many courses by mid\n8. Bridge-contract risk is understated.** ProctorEye may not offer a short-term extension at current pricing. The memo does not say when the current contract ends\n9. Stakeholder views are underweighted.** The memo cites the Student Government Association's resolution only in next steps and does not engage its \"surveillance\" argument. Faculty who rely on proctored exams in disciplines where open-book formats are hard to use, such as licensure-track courses, are not addressed\n10. There is no option analysis.** A reviewer may want a side-by-side comparison of all options: full renewal, renewal at current scope, identity-only, live human proctoring, and no proctoring. Each would be shown with cost, legal risk, and equity impact\n\nFINDINGS:\n- The ~$205,000 annual savings figure is misleading because it is measured against the vendor's offer rather than the current $210,000 budget, so true savings are about $175,000 before paying for a non-biometric alternative.\n- The deterrence argument is lopsided because the lack of data means the memo also cannot claim removing proctoring won't raise misconduct, yet the uncertainty is presented as cutting only one way.\n- The memo's claim that peers adopted 'oral components' goes beyond the brief, which mentions only open-book and project-based assessment.\n- The memo's 'for this reason' attributes a motive to peer institutions' change that the brief does not provide.\n- The full-coverage projection of ~2,300 hours silently assumes exam volume scales proportionally with course count, an assumption the memo does not state.\n- The transition plan leaves high-stakes courses relying on identity checks alone after the bridge ends June 30, 2027, with no budget, staffing, or timeline for the ambitious gateway-course redesign.\n- The memo assumes the $35,000 identity-only option covers all online courses, which the brief does not confirm.\n- The disparity paragraph omits the mechanism behind higher flag rates ('face not detected', looking away, repeated movements), which would link the equity point to the reliability point and the appeals.\n- The memo does not request flag-to-finding rates by group, which would show whether faculty review corrects the disparity.\n- Stakeholders are handled unevenly, with the Student Government Association's formal resolution opposing renewal reduced to 'brief the SGA.'\n- The memo does not address faculty in licensure-track or similar courses where open-book formats are hard to use.\n- The bullet about tracking misconduct rates for one year is misplaced under 'Next steps before February 28' even though it cannot happen before then.\n- The memo omits the current contract's end date, on which the bridge option depends.\n- The heading 'catches little' overreaches relative to the memo's otherwise careful framing of flags that produced no finding.\n- The memo does not explain why live human proctoring and no proctoring were ruled out as options.\n- The $205,000 savings figure is measured against the renewal offer rather than current $210,000 spending, so actual reallocatable savings are $175,000 and will be further reduced by the unestimated cost of the non-biometric alternative.\n- A single face check at exam start confirms only who began the exam, not that the registered student did the work, so the identity-only service may not fully meet the accreditation requirement.\n- The memo does not explain how identity will be verified for project-based work, which has no exam start, even though its deterrence strategy shifts courses toward projects.\n- The memo ignores existing comparison data from the 60% of online courses already running without automated proctoring, which could inform misconduct rates and show how those courses already satisfy the accreditor.\n- The framing treats every flag that did not produce a finding as a false positive, although some may have been valid but resolved informally, and the sentence wrongly implies only 95% of flags required review.\n- The equity argument omits the brief's evidence on the mechanisms behind the disparities (face-detection failures for darker-skinned students, movement flags for disabled students) and lacks flag-to-finding rates by group.\n- The full-coverage projection states that it assumes constant flag rates but leaves unstated a second assumption, that exam volume scales proportionally with courses covered.\n- The memo never gives the current contract end date, does not address whether ProctorEye will agree to a bridge extension, and ignores the tight four-month window to stand up the alternative and redesign courses before fall.\n- Stakeholder views are handled unevenly: Faculty Senate concerns are used as evidence while the supportive Student Government resolution is only mentioned in passing, and faculty in licensure-preparation disciplines that need closed-book exams are not addressed.\n- Key legal claims (biometric data classification and the accreditor's interpretation) carry significant weight but have not been confirmed by counsel, and the caveat should be placed where those claims are made.\n- The memo runs to roughly 600 words, over the 450–550 word target.\n- The proposed next step of tracking misconduct rates after the transition lacks a pre-transition baseline to compare against.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x2/E5-13.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:41.848711+00:00",
+ "response": "{\"raised\": {\"1\": true, \"2\": false, \"3\": false, \"4\": true, \"5\": true, \"6\": true, \"7\": true, \"8\": true, \"9\": true, \"10\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3507,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 612,
+  "output_tokens_details": {
+   "thinking_tokens": 553
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3507,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 612,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3507,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3507
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.040304,
+ "duration_ms": 11717,
+ "wall_s": 12.59,
+ "attempt": 0
+}

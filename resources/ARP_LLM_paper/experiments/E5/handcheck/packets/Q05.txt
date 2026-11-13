@@ -1,0 +1,125 @@
+DOCUMENT:
+# MEMORANDUM
+
+**To:** Chief Financial Officer
+**From:** Nursing Finance / Med-Surg Workforce Planning
+**Date:** November 13, 2026
+**Re:** FY2027 budget request: Replace med-surg agency RNs with permanent hires
+
+**Decision requested:** Approve funding for up to 72 permanent med-surg RN hires in FY2027, at six per month from January.
+
+**Assumption:** FY2027 figures below assume a January–December fiscal year.
+
+## Why act now
+
+On July 1, 2027, the state's 1:5 ratio law raises our med-surg requirement from 48 to about 70 RN FTEs. Non-compliance carries fines of up to $25,000 per day.
+
+If we cover that requirement with agency staff only, FY2027 med-surg agency spend rises from $9.6M to about $11.8M. At full-year run rate it would reach $14.0M. Either way, med-surg labor cost will rise in FY2027. A 5% cut in this area is not achievable this year, and the 5% target will need to come from elsewhere or be measured net of the mandate.
+
+## Unit economics
+
+| | Agency | Permanent |
+|---|---|---|
+| Annual cost per FTE | $200,000 | $128,000 |
+| One-time cost per hire | none | ~$44,500 ($15,000 bonus + ~$29,500 salary during 12 weeks of non-productive orientation) |
+
+- Each permanent position saves $72,000 per year once the hire is on the floor.
+- The one-time cost is recovered about seven months after orientation ends.
+- Blended first-year turnover is about 22% (60% new graduates at 27%, 40% experienced nurses at 14%). Each early departure forfeits roughly $44,500 and returns the position to agency coverage. The economics still favor permanent hiring.
+
+## FY2027 ramp
+
+HR can orient at most six RNs per month, so the transition will take more than a year:
+
+| Month | Permanent RNs on the floor (cumulative) | Agency FTEs needed |
+|---|---|---|
+| April | 6 | 42 |
+| July 1 | 24 | 46 (against the new 70 requirement) |
+| December | 54 | 16 |
+
+The July agency need of 46 is below today's 48. **Compliance on July 1 therefore depends on agency staff we already use, not on a surge.**
+
+Estimated FY2027 cost under this plan:
+
+| Item | Cost |
+|---|---|
+| Permanent salaries and benefits | $5.0M |
+| Sign-on bonuses | $1.1M |
+| Agency, at the discounted rate | ~$7.2M |
+| **Total** | **~$13.3M** |
+
+The agency-only alternative costs $11.1–11.8M. The plan therefore costs about **$1.5–2.2M more in FY2027**. That is the price of the transition.
+
+## FY2028 onward
+
+Annual cost at steady state:
+
+| Item | Cost |
+|---|---|
+| 70 permanent RNs | $9.0M |
+| Turnover replacement hiring | ~$0.7M |
+| Agency to cover vacancies | ~$1.2M |
+| **Total** | **~$10.9M** |
+
+The agency-only alternative costs $13.2–14.0M per year. The plan saves roughly **$2.3–3.1M per year** and recovers the FY2027 investment during FY2028.
+
+## Agency vendor offer
+
+**Recommendation: accept the 6% discount for 30 FTEs over 12 months.**
+
+- We need at least 30 agency FTEs through September.
+- The commitment costs us about $0.38M for unused FTEs in Q4.
+- If the discount applies to all agency volume, it saves about $0.44M, a small net gain.
+- More importantly, it secures supply as a hedge against hiring shortfalls.
+- Before signing, we will try to negotiate a step-down in Q4.
+
+## Risk controls
+
+- **Hiring:** Give priority to experienced applicants where the pool allows.
+- **Bonus terms:** Extend the sign-on bonus clawback from 6 to 12 months for new contracts, subject to HR and legal review.
+- **Union:** The plan uses no mandatory overtime and no float-pool expansion, consistent with the union's position.
+- **Monitoring:** Track cohort fill rates and turnover monthly. If two consecutive cohorts fill below 4 RNs, we will report back and extend agency coverage before July.
+
+##
+
+FACTS:
+In FY2026 St. Brendan spent $9.6 million on agency nurses for its four medical-surgical units. This covered the equivalent of 48 full-time agency RNs, at an average cost of $200,000 per agency FTE per year. A permanently employed med-surg RN costs $128,000 a year fully loaded ($98,000 salary plus $30,000 in benefits and payroll taxes). Each new hire receives a $15,000 sign-on bonus. New hires go through 12 weeks of orientation and do not count toward staffing ratios during that time, so agency coverage has to continue for each position until the new hire finishes orientation. HR can run at most one orientation cohort of 6 RNs per month, because of preceptor and classroom capacity. Recent applicant pools have been about 60% new graduates and 40% experienced nurses. First-year turnover at St. Brendan is 27% for new-graduate RNs and 14% for experienced RNs. Each departure in the first year means the sign-on bonus and orientation cost are lost (sign-on bonuses are repayable only if the nurse leaves within 6 months). A state law passed in September takes effect on July 1, 2027. It lowers the maximum med-surg nurse-to-patient ratio from 1:6 to 1:5. Nursing administration estimates the new ratio needs about 22 more RN FTEs on the four units, on top of replacing the agency positions. Hospitals that are out of compliance face fines of up to $25,000 per day. The CFO's FY2027 target is a 5% cut in total labor cost. The Chief Nursing Officer's stated goal is zero ratio violations and lower dependence on agency staff. The nurses' union supports permanent hiring. It opposes any plan that relies on mandatory overtime, which the contract caps at 8 hours per nurse per pay period, and it has said it will resist any expansion of the float pool. Agency contracts can be cancelled with 30 days' notice. The current agency vendor has offered a 6% rate reduction in return for a 12-month commitment for at least 30 FTEs. Hiring can begin in January 2027 if the budget is approved.
+
+KNOWN COMPLICATIONS:
+- First-year savings are much smaller than the simple comparison suggests. At steady state, 48 x ($200k - $128k) = $3.456M a year, but each hire carries a $15k bonus plus about $29.5k of orientation time (12/52 x $128k) while agency coverage continues, and the onboarding rate limits how quickly agency spend falls.
+- The ratio law and the onboarding limit collide. Replacing 48 agency FTEs and adding 22 for the law means about 70 hires, but at 6 per month only about 36 can be onboarded between January and July 2027 (and fewer will have finished orientation), so the hospital cannot meet the July deadline with permanent hires alone.
+- The CFO's 5% labor cost cut and the CNO's zero-violation goal pull in opposite directions, because the ratio law adds roughly 22 FTEs (about $2.8M a year if permanent).
+- Turnover among new graduates (27%) and the 60% new-graduate share of applicants erode savings and mean some hires will need to be replaced.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **Fiscal-year assumption.** If FY2027 starts July 1, the FY2027 and FY2028 figures shift substantially. The memo should have confirmed this rather than assumed it.
+2. **Missing denominator.** The memo concedes the 5% target cannot be met here but never quantifies the plan's effect on *total* labor cost. The CFO cannot see how much of the hospital-wide target is at risk.
+3. **Orientation cost understated.** The one-time cost excludes preceptor time, educator salaries, classroom costs and recruiting fees. It treats orientation as salary only.
+4. **Crude turnover model.** Turnover is modeled loosely. Expected FY2027 departures (about 8–9), their agency backfill and partial bonus recoveries are not built into the $13.3M. Retention beyond the first year is not given, yet the steady-state savings depend on it.
+5. **Recruiting capacity assumed full.** The plan assumes every cohort fills with six RNs from January. No evidence is offered that the applicant pool can supply 72 hires, about 18% of them experienced, in 12 months.
+6. **Orientation approximated.** Twelve weeks is rounded to three months, and January productivity is assumed. Small timing errors move the July 1 margin.
+7. **Thin July 1 compliance margin.** Compliance depends on the agency supplying 46 FTEs in July. The memo does not show that the vendor has confirmed this, or what happens if a cohort slips.
+8. **Vendor discount analysis is speculative.** It depends on whether the 6% applies to all volume or only the committed 30. The excess-commitment cost also assumes no turnover-driven agency need in Q4. The stated "net gain" is within the error margin.
+9. **Clawback extension may be infeasible.** It may require union negotiation and could reduce acceptances. Its feasibility and effect are unexamined.
+10. **No alternatives compared.** The memo does not weigh a slower ramp, a partial conversion, higher pay to improve experienced-nurse mix, or retention spending. It compares only full conversion against agency-only.
+11. **No sensitivity analysis.** It omits wage inflation, agency rate changes and turnover above or below 22%. The payback claim relies on point estimates.
+12. **CNO goal not fully addressed.** The memo asserts zero ratio violations without explaining how shift-level gaps (sick calls, census spikes) will be covered without mandatory overtime or float-pool expansion.
+
+FINDINGS:
+- The ~$7.2M agency cost line includes about $0.38M paid for committed but unused agency FTEs without labelling it, which makes the $13.3M total look as though it reflects only operational need.
+- The fiscal-year basis may be wrong: if FY2027 runs July 2026 to June 2027, hiring starts mid-year and the ratio law takes effect at the start of FY2028, so both cost tables would need rebuilding.
+- The FY2027 total excludes the cost of about 8.6 expected turnover departures.
+- The memo overstates the loss per departure at about $44,500, because nurses who leave within 6 months must repay the bonus.
+- If the 6% vendor discount applies only to the 30 committed FTEs, it saves about $0.36M against $0.38M of unused commitment, a small net loss, so the vendor recommendation should rest on supply security rather than cost.
+- The July 1 compliance margin is thin.
+- The claim that the requirement rises 'from 48 to about 70' is wrong, because 48 FTEs is only the agency-covered portion and not the units' total RN requirement.
+- A January 1 first cohort is unrealistic given January budget approval, and a February start would leave agency need at about 52 FTEs on July 1, reversing the 'no surge' conclusion.
+- Mid-month cohort starts (e.g., April 15) would push orientation completion past July 1 and cut the July 1 on-floor count to 18.
+- FY2028 does not start at steady state because late-2027 cohorts are still in orientation into early 2028, so FY2028 savings are slightly overstated.
+- Hiring 72 RNs for 70 slots is unexplained, and if the extra two are a turnover buffer they cover only about one month of expected departures.
+- The memo never mentions that the month-by-month agency ramp-down depends on the 30-day cancellation right, or that the vendor commitment gives up that flexibility for 30 FTEs.
+- Supply risk is applied unevenly: the memo treats agency supply as a risk for the permanent plan but ignores that the agency-only alternative needs 70 FTEs from July and carries even more supply risk.
+- The FY2028 $1.2M vacancy-coverage figure rests on an unstated assumption of about 4.7 months of agency cover per departure.
+- The monitoring trigger is too weak because it has no decision date and no named owner for requesting extra agency FTEs if cohorts underfill.
+- The memo lacks a sensitivity range.
+- The memo is near or over the 600-word limit, so the needed fixes will require trimming elsewhere.

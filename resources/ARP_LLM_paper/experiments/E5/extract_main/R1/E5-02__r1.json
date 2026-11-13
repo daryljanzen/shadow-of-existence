@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-02",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: FY2027 Med-Surg Agency-to-Permanent RN Memo\n\nThe memo is well structured. It states the decision up front and tells the CFO plainly that the 5% cut isn't achievable in med-surg this year. Most figures check out against the brief. Three issues, though, affect the conclusions a CFO would draw.\n\n## Major issues\n\n### 1. The ramp ignores the turnover the memo itself cites\nThe memo puts blended first-year turnover at 22%, but the ramp table assumes every hire stays. Of 72 hires, about 16 would be expected to leave within their first year. Many of those departures fall within FY2027.\n\nAs a result:\n- **\"54 on the floor in December\" is overstated.** The realistic figure is roughly 45–50, so December agency need is closer to 20–25, not 16.\n- **The FY2027 cost split shifts.** Permanent salaries come in lower and agency spend higher. The net effect is probably a modest cost increase, since agency costs more per FTE.\n- **72 hires won't produce 70 retained RNs.** At six per month, refilling vacancies pushes full staffing well into FY2028. This also undercuts the claim that the FY2027 investment is recovered during FY2028.\n\n**Fix:** Apply attrition in the ramp, or at minimum state that the table excludes turnover and show the expected shortfall.\n\n### 2. The \"no surge\" claim on July 1 hides a cost or a gap\nThe memo says July's agency need of 46 is below today's 48, so compliance \"depends on agency staff we already use.\" That holds only if agency headcount stays near 46–48 through April–June. But the ramp releases agency as hires reach the floor:\n\n| Month | Agency need (per memo's logic) |\n|---|---|\n| June | 30 |\n| July 1 | 46 |\n\nThe plan therefore implies one of two things:\n- **Agency is released as hires arrive.** Then 16 agency nurses must be re-sourced for July 1, just as every hospital in the state is competing for them. That is a surge.\n- **Agency is held through June.** Then the plan pays for roughly 30 surplus FTE-months, about $0.5M, which doesn't appear to be in the cost table.\n\nReleasing as hires arrive gives about $6.9M of discounted agency spend, and holding through June gives about $7.4M. The memo's $7.2M falls between the two, so it's unclear which assumption was used. Given the CNO's zero-violation goal and $25K/day fines, holding agency is probably the right call. The memo should say so and cost it.\n\n### 3. Cost ranges mix discounted and undiscounted figures\n- **FY2027 premium of \"$1.5–2.2M\":** The plan's $13.3M uses discounted agency rates. The $11.8M alternative is undiscounted, while $11.1M is discounted. Comparing the plan with both is inconsistent.\n  - Discounted vs. discounted: 13.3 − 11.1 = **$2.2M**.\n  - Undiscounted vs. undiscounted: ~13.8 − 11.8 = **~$2.0M**.\n  - The **$1.5M low end is not a valid comparison.** The honest range is about **$2.0–2.2M**, before the issue 1 and issue 2 adjustments, which push it higher.\n- **FY2028 savings of \"$2.3–3.1M\":** These are roughly consistent, though the $10.9M figure prices agency undiscounted. This is fine, but say so.\n\n## Moderate issues\n\n**Vendor recommendation rests on an unverified assumption.** The net gain of $0.44M − $0.38M ≈ $0.06M exists only if the 6% discount applies to *all* agency volume. If it applies only to the 30 committed FTEs, the deal is a small net loss of about $0.04M.\n- The hedge argument is reasonable. Turnover (issue 1) actually raises Q4 agency need, which reduces the unused-commitment cost and strengthens the case.\n- The memo should either confirm the discount scope with the vendor or lead with the hedge rationale rather than the savings.\n\n**FY2028 is not steady state in Q1.** The October–December 2027 cohorts are still in orientation in January–March 2028. Covering them adds roughly 30 FTE-months of agency, about $0.5M.\n\n**Steady-state table likely double-counts.** Paying 70 permanent RNs for a full year *and* about 6 agency FTEs for vacancies counts vacant positions twice, an overstatement of about $0.7M. This error is conservative, since it understates savings. It's still worth correcting, or noting as deliberately conservative.\n\n**Forfeiture per departure is slightly overstated.** The brief says bonuses are repayable if a nurse leaves within 6 months, so early leavers don't forfeit the full $44,500.\n\n## Minor issues\n\n- **Stray empty heading:** A stray `##` heading sits at the end of the document.\n- **Length:** The memo runs about 650–700 words including tables, slightly over the 450–600 target. The vendor section could be shortened.\n- **Hire count:** \"Up to 72 hires\" should explain why it exceeds the 70 requirement, or be raised to reflect expected attrition.\n\n## Verified as correct\n\n- **Agency-only cost:** $11.8M for FY2027 (48 FTE for half a year, 70 for half a year) and a $14.0M run rate.\n- **Orientation cost:** about $29.5K (12/52 × $128K), giving a one-time cost of about $44.5K.\n- **Payback:** about 7.4 months at $72K per year in savings.\n- **Blended turnover:** 21.8%.\n- **Ramp arithmetic:** 6, 24, and 54 permanent RNs, and 42, 46, and 16 agency FTEs, all excluding turnover.\n- **FY2027 permanent cost:** $5.0M (468 FTE-months × $128K) and $1.08M in bonuses.\n- **Vendor figures:** $0.38M in unused Q4 commitment (24 FTE-months at the discounted rate).\n- **Steady state:** $9.0M for 70 permanent RNs and about $0.7M in replacement hiring.\n- **Coverage of the brief:** Union constraints, the 5% target, the clawback change, and the January–December fiscal-year assumption are all handled.\n\n## Bottom line\n\nThe recommendation is probably still right, since the long-run economics strongly favor permanent staff. However, the FY2027 cost is understated, and the July 1 compliance story is weaker than presented. Fixing issues 1–3 would give the CFO an honest transition cost of roughly **$2.2–3M**, not \"$1.5–2.2M.\" It would also make clear the plan needs either retained agency headcount through June or a contingency for re-sourcing it.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R1/E5-02__r1.json",
+ "role": "scorer",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:36:07.051936+00:00",
+ "response": "{\"findings\": [\"The ramp table assumes every hire stays, ignoring the 22% first-year turnover the memo itself cites, so about 16 of 72 hires would be expected to leave.\", \"Because of unmodeled turnover, the '54 on the floor in December' figure is overstated (realistically 45–50), so December agency need is closer to 20–25 rather than 16.\", \"Ignoring turnover misstates the FY2027 cost split, with permanent salaries too high and agency spend too low, likely understating net cost.\", \"72 hires won't yield 70 retained RNs, pushing full staffing well into FY2028 and undercutting the claim that the FY2027 investment is recovered during FY2028.\", \"The claim of no agency surge on July 1 hides either a re-sourcing surge of about 16 agency nurses (if agency is released as hires arrive) or roughly $0.5M of uncosted surplus agency held through June.\", \"The memo's $7.2M discounted agency spend falls between the release-as-hired ($6.9M) and hold-through-June ($7.4M) scenarios, so it is unclear which assumption was used.\", \"The FY2027 premium range of $1.5–2.2M mixes discounted and undiscounted figures; the $1.5M low end is invalid and the consistent range is about $2.0–2.2M before other adjustments.\", \"The FY2028 savings figure prices agency undiscounted without saying so.\", \"The vendor deal's ~$0.06M net gain depends on the unverified assumption that the 6% discount applies to all agency volume; if it covers only the 30 committed FTEs, the deal is a small net loss of about $0.04M.\", \"FY2028 is treated as steady state, but October–December 2027 cohorts are still in orientation in Q1 2028, adding roughly 30 FTE-months (~$0.5M) of agency cost.\", \"The steady-state table double-counts vacancies by paying 70 permanent RNs for a full year plus about 6 agency FTEs for vacancies, overstating cost by about $0.7M.\", \"Forfeiture per departure is overstated because bonuses are repayable only if a nurse leaves within 6 months, so early leavers don't forfeit the full $44,500.\", \"The memo runs about 650–700 words, over the 450–600 word target.\", \"'Up to 72 hires' does not explain why it exceeds the 70-RN requirement and is not raised to reflect expected attrition.\", \"Overall, the FY2027 transition cost is understated and should be roughly $2.2–3M rather than $1.5–2.2M.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3643,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 855,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3643,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 855,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3643,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3643
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.046252,
+ "duration_ms": 11284,
+ "wall_s": 12.21,
+ "attempt": 0
+}

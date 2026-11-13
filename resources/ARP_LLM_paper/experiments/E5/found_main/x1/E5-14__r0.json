@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-14",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The handling savings ($37 x 84,000, about $3.1M) are largely cancelled out by higher payouts (4.1% of $610, about $25 per claim, about $2.1M) and extra fraud (about 0.43% x 84,000, roughly 360 claims at about $610, about $0.22M), leaving a net of about $0.8M.\n2. The pilot left out ADAS claims, which are 38% of volume and growing, so the pilot results do not represent the full set of claims.\n3. Regulators in three states (22% of claims) require an adjuster to review every claim, so automatic approval cannot be used there.\n4. The proposed April advertising campaign cannot be supported by a 7-month IT rollout, and the glass team lead's concern about losing price control is backed up by the payout data.\n\nFINDINGS:\n- The document ends with a stray `---` and an empty `##` heading that should be deleted.\n- The timeline in 'Timing and marketing' contradicts the recommendation: it assumes Q1 funding and a Q3/Q4 go-live, but under the conditional sequence (controls designed, 90-day test, then a 7-month build) go-live would realistically be late in the year or later.\n- The 90-day controls test does not say where it will run, which makes it unclear how controls can be tested before the build is funded.\n- The release thresholds (1.5% payout gap and 0.45% fraud rate) are given without justification and look arbitrary.\n- The sentence 'Most of the remaining value depends on closing the pricing gap' is unclear because the pricing gap reduces value rather than providing it.\n- The proposal does not note that the pilot covered only two states, so leakage and fraud rates may not generalize.\n- Saying the plan 'directly addresses' the adjuster team lead's concern overstates it, since auditing a sample of STP claims is weaker than negotiating every claim.\n- The estimate of 20–22 freed adjusters assumes per-claim effort stays constant, but the retained claims skew toward more complex ADAS claims, so the low end is safer.\n- Decision 1's 'modest budget, to be scoped' gives no figure, range, or date, which makes it harder to approve.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x1/E5-14__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:07:02.043000+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": false, \"3\": false, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2100,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 469,
+  "output_tokens_details": {
+   "thinking_tokens": 441
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2100,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 469,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2100,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2100
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.026187999999999996,
+ "duration_ms": 9518,
+ "wall_s": 10.5,
+ "attempt": 0
+}

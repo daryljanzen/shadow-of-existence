@@ -48,10 +48,49 @@ The casebook's cherry-picking was recorded in long working sessions, deep into a
 
 ## Deviations from the registration, stated
 
-1. **The hand-check was not done before the aggregate was seen.** I read the per-condition aggregates as soon as scoring finished. After that I hand-checked all 11 shortfalls and 5 full passes (E1-11, E1-26 in the pilot and three in the main run), and every scorer judgement I checked was right. No κ is computed. With the outcome near ceiling, the scorer could only have shifted the result by marking passes as passes, and the passes I read were real.
+1. **The hand-check was not done as registered, and the first version of this list understated by how much.**
+   - **Registered:** 20% of scored trials (64 of 320), stratified by condition, hand-scored before unblinding, with κ.
+   - **Done at first:** 16 read (all 11 shortfalls and 5 passes), chosen by outcome, after the aggregate was seen. A sample chosen by outcome cannot estimate agreement, which is why no κ could be computed (60, `r7754`).
+   - **Done since (`r7755`), registered before any packet was opened:** 64 passes, 8 per model × condition, drawn with seed 7755, scored blind. The results are in the section below. The check still comes after the aggregate, so that part of the deviation stands.
+1b. **The `r7755` hand-check sample was drawn from passes, not from all scored trials** (60, `r7758`). The registration asked for 20% of scored trials, stratified by condition. Drawing from passes is the right frame for false passes, but it designs out the registered κ on the hard ask, whose column is constant *because the sample was drawn on it*. At its size this is small: a random 64 would have carried one or two failures, and κ would very likely still have been degenerate. **On reading the bound:** 0 of 64 bounds the false-pass rate at 5.6%, which over about 309 passes allows up to about 17 false passes. The conclusion stands, because the ceiling is a claim about the rate.
 2. **E1-09 is excluded as defective after the data were seen.** The table above reports it both included and excluded, and the conclusion does not depend on it.
 3. **C3's blinding leaked.** The scorer guessed "special instructions" for 37 of 40 C3 answers in each model, because C3's per-ask analysis is part of the answer and is not stripped. The leak-check rule (65%) flags C3 as leaky. C0, C1 and C2 stayed blind: 0–1 of 40 guessed. At the ceiling, the leak cannot have moved H.
 4. **The pilot rule for n was not needed.** At the ceiling, the main run is reported as a bound, not as a powered contrast.
+
+## The four registered measures first left unreported (`r7755`)
+
+These were registered at the first commit and were missing from the first version of this file (60, `r7754`). The hand-check was registered before any packet was opened (`PREDICTION.md`, amendment `r7755`). The other three are arithmetic on the banked judgements (`analyse_e1_registered.py`).
+
+**The hand-check** (`handcheck/`: `draw.py`, `packets/`, `scores.json` committed before `KEY.json` was opened, `compare.py`):
+- **The sample:** 64 trials whose hard ask the scorer passed, 8 per model × condition, with E1-09 excluded. I scored every ask, 420 judgements in all, seeing only what the scorer saw.
+- **(i) False passes on the hard ask: 0 of 64**, with a 95% exact interval of 0 to 5.6%. The registered prediction (at most 2) holds. κ for the hard ask is undefined here, because both columns are constant at 2.
+- **(ii) The easy asks:** agreement on 351 of 356 (98.6%), κ = 0.54. Pooled over all asks: 98.8%, κ = 0.54. κ is low beside the raw agreement because almost every score is a 2, which puts chance agreement at 97%.
+- **All five disagreements are on sentence-count requests** ("in two sentences", "one sentence"). They split as follows:
+  - **Four:** I gave 1 where the answer overran the count, and the scorer gave 2.
+  - **One:** the scorer gave 1 and I gave 2. Rereading it after unblinding, the scorer was right: the "two-sentence" welcome message has three. It is reported as scored, not corrected.
+- **What it settles:** the ceiling is not a scorer artefact. The scorer's passes on the hard ask hold up when hand-checked, which was the only error that could have created the result.
+- **What it does not settle:** the hand-scorer is node 70, a model of the same family as the scorer, so this checks how the rubric was applied. It is not an independent human judgement.
+
+**(a) Coverage, the mean ask score over all asks (0–2):**
+
+| | C0 | C1 | C2 | C3 | C1 − C0 (95% CI) |
+|---|---|---|---|---|---|
+| Opus | 1.988 | 1.989 | 1.984 | 1.996 | +0.001 [−0.011, +0.013] |
+| Sonnet | 1.993 | 1.992 | 1.985 | 1.984 | −0.001 [−0.013, +0.011] |
+
+**McNemar's exact p on the paired H contrasts:** every contrast has at most one discordant pair, and every p is 1.000, in both models and with E1-09 in or out:
+- Opus C1–C0 has none.
+- Sonnet C1–C0 has one, a C0-only pass.
+- C1–C2 and C1–C3 have one each, a C2-only or C3-only pass.
+
+**H by receipt presence (amendment (a)):**
+- **C0 against C1:** this is the same contrast as by condition, because C0 restated on 0 of 40 and C1 on 40 of 40.
+- **Within C3, it is a different number:**
+  - Opus: answers that restated the asks first passed 32 of 33, and those that did not passed 7 of 7.
+  - Sonnet: 31 of 31 and 8 of 9.
+  - The two misses are both E1-09. With it excluded, every C3 answer passes, receipted or not.
+- **Pooled over conditions:** Opus 70 of 73 receipted against 84 of 87 not; Sonnet 69 of 71 against 86 of 89.
+- **What it means:** a receipt, produced or not, does not move H at this ceiling.
 
 ## Next
 

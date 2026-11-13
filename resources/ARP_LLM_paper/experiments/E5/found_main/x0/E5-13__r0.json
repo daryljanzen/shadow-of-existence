@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms.\n2. Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses.\n3. The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it.\n4. The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated.\n\nFINDINGS:\n- The memo never states the current ProctorEye contract cost (implied at about $209,000), even though the ~$680-per-finding figure depends on it.\n- The ~$205,000 savings figure is measured against the proposed expansion rather than current spend (against current spend it would be about $174,000), and the baseline is not labeled.\n- The savings figure does not subtract the costs of the alternative approach, such as staff time for live ID checks, testing-site fees, and redesign stipends.\n- The ~2,300-hour full-coverage projection gives no basis, such as the number of exams full coverage would include, so readers cannot reproduce it.\n- The memo does not address what happens to the 308 misconduct cases ProctorEye does catch, or how many the alternatives would plausibly detect.\n- The memo does not acknowledge that false negatives (cheating ProctorEye misses) are unknown.\n- The deterrence argument is asymmetric: the memo notes it cannot claim removal will raise misconduct but does not admit that the same lack of data means it cannot claim removal won't.\n- The proposed 'hard to outsource' assessments such as take-home projects and open-book exams may not resist generative AI, and the memo should emphasize oral or in-class work or acknowledge the issue.\n- References to peer institutions and 'the new student privacy law' are vague and should name specific peers and the statute.\n- The step to track misconduct rates for one year after transition sits under 'Next steps before February 28' even though it cannot be done by then.\n- The next steps omit establishing a baseline of current misconduct rates and outcomes, which is needed for later comparison.\n- The disparity data does not show whether flagged students in the affected groups led to findings at a lower rate, which would establish that the excess flags are false positives and strengthen the legal-exposure point.\n- The statement that '95% of flags required faculty review but produced no finding' is inaccurate because all flags required review.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:30.074745+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": false, \"4\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2246,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 492,
+  "output_tokens_details": {
+   "thinking_tokens": 464
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2246,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 492,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2246,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2246
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.027816,
+ "duration_ms": 9303,
+ "wall_s": 10.22,
+ "attempt": 0
+}

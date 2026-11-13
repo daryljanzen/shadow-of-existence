@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Renewal Memo\n\nThe memo is clear and well organized, and its arithmetic mostly checks out. The recommendation comes first, each section opens with a one-line claim, the accreditation objection is answered directly, and uncertainty is acknowledged (\"our assumption rather than vendor data,\" \"we have no data on how much ProctorEye deters\"). The fixes below are mostly about undefined baselines and a few gaps a skeptical committee member would raise.\n\n## Numbers checked\n\n| Claim | Check | Status |\n|---|---|---|\n| 6,150 flags of 41,000 exams | 15% flag rate | Fine, but worth stating |\n| 308 of 6,150 = 5% | 5.0% | ✓ |\n| 9 min × 6,150 ≈ 920 hours | 922.5 hours | ✓ |\n| ~3 faculty hours per finding | 920 ÷ 308 = 2.99 | ✓ |\n| ~$680 contract cost per finding | Implies a current contract of about $209,000 | **Contract cost never stated** |\n| 2,300 hours at full coverage | Implies about 102,500 exams (2.5×) | **Exam volume never stated** |\n| ~$205,000 annual savings | $720k ÷ 3 = $240k, minus $35k = $205k | **Baseline problem (see below)** |\n\n## Substantive issues\n\n**1. The \"savings\" are measured against the expansion offer, not current spending.**\nCurrent spending appears to be about $209k a year, so the cash actually freed is closer to **$174k**. The $205k figure is avoided cost, and it is only \"savings\" if the expansion was already budgeted. A finance-minded reader will notice this. State both figures, or say explicitly which baseline you're using.\n\n**2. State the current contract cost, current scope, and full-coverage exam volume.**\nReaders otherwise have to reverse-engineer them, as above. Also say what \"full automated proctoring\" adds over today's scope.\n\n**3. \"95% of flags required faculty review but produced no finding\" is slightly off.**\n*All* flags required review; 95% produced no finding. Two related points:\n- A flag without a finding is not necessarily a false positive. Some may be real misconduct that couldn't be proven. The current wording is fair, so don't strengthen it into \"95% false positives.\"\n- Clarify whether all 308 findings came from ProctorEye flags or include cases detected other ways.\n\n**4. Disparity figures need minimal methodology.**\nFor the 1.9× and 2.4× ratios, add the comparison group, rough sample sizes, and whether the Office of Institutional Equity controlled for anything (course, exam type). Note whether flags *and findings* were disproportionate, or only flags. That distinction strengthens the equity argument.\n\n**5. The transition gap isn't addressed.**\nThe bridge ends June 30, 2027, but course redesign can't cover every course by fall 2027. Say what un-redesigned online courses use in the meantime (the identity check alone? instructor discretion?). This is the faculty's most likely objection, and the deterrence section currently leaves it open.\n\n**6. There's no fallback if ProctorEye refuses the bridge or won't sell identity-only on acceptable terms.**\nGive the current contract end date and a Plan B, such as another identity-verification vendor.\n\n**7. The non-biometric alternative and the redesign program aren't costed.**\nLive staff ID checks and testing-site checks cost money and staff time. Give a rough estimate, plus a proposed redesign budget, so the committee can see that the net figure still favors the recommendation.\n\n**8. The identity-only service also needs consent infrastructure by July 1, 2027.**\nThe memo notes that it's biometric. Make the operational point explicit: consent forms and an opt-out workflow must be in place before the law takes effect.\n\n**9. \"Peer institutions\" should be named,** even if only two or three, or the claim softened.\n\n## Next steps section\n\n- \"Track misconduct rates… for one year after the transition\" is not a before-February-28 step. Move it to a separate \"After the decision\" line.\n- Add **\"Establish a baseline misconduct rate now.\"** Without it, post-transition tracking can't show anything.\n- Add owners and target dates. For example, counsel's review needs to come back well before February 28.\n\n## Minor / cleanup\n\n- Delete the stray `---` and empty `##` heading at the end.\n- Fill in the author placeholder \"[Analyst, Office of Academic Technology].\"\n- \"behavioural\" is British spelling; use \"behavioral\" if the rest of the institution's style is American.\n- Consider adding a one-line summary of the cost comparison (renew/expand vs. recommended package) near the top.\n\n## Bottom line\n\nThe argument is sound and persuasive. The highest-priority fixes are **#1 (savings baseline), #2 (state the underlying figures), and #5 (transition gap)**, because those are where a skeptical committee member would push back.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R0/E5-13__r1.json",
+ "role": "scorer",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:38:55.979214+00:00",
+ "response": "{\"findings\": [\"The ~$205,000 'savings' figure is measured against the expansion offer rather than current spending (about $209k), so actual cash freed is closer to $174k and the baseline must be stated.\", \"The memo never states the current contract cost, current scope, or full-coverage exam volume, forcing readers to reverse-engineer them, and does not explain what full automated proctoring adds over current scope.\", \"The 15% flag rate (6,150 of 41,000 exams) is implied but not stated.\", \"The statement that '95% of flags required faculty review but produced no finding' is misworded, since all flags required review and 95% produced no finding.\", \"Flags without findings should not be treated as false positives, because some may be real but unprovable misconduct.\", \"The memo does not clarify whether all 308 findings came from ProctorEye flags or include cases detected by other means.\", \"The 1.9× and 2.4× disparity figures lack methodology: comparison group, sample sizes, controls used by the Office of Institutional Equity, and whether findings as well as flags were disproportionate.\", \"The memo does not address the transition gap between the bridge ending June 30, 2027 and course redesign, leaving unclear what un-redesigned online courses will use in the meantime.\", \"There is no fallback plan or stated current contract end date in case ProctorEye refuses the bridge or won't sell identity-only service on acceptable terms.\", \"The non-biometric alternative (live staff ID checks, testing-site checks) and the course redesign program are not costed, so the committee cannot confirm the net figure still favors the recommendation.\", \"The memo does not make explicit that the biometric identity-only service requires consent forms and an opt-out workflow in place before the law takes effect July 1, 2027.\", \"The 'peer institutions' cited are not named, so the claim should either name them or be softened.\", \"The post-transition misconduct tracking step is misplaced among pre-February-28 next steps.\", \"The next steps omit establishing a baseline misconduct rate now, without which post-transition tracking cannot show anything.\", \"The next steps lack owners and target dates, such as ensuring counsel's review returns well before February 28.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3026,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 711,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3026,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 711,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3026,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3026
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.038436,
+ "duration_ms": 9603,
+ "wall_s": 10.74,
+ "attempt": 0
+}

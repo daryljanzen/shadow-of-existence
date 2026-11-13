@@ -1,0 +1,107 @@
+MESSAGE:
+Hi. I'm on the timetabling working group and we're proposing a new day structure from September, which I'm presenting to governors on Thursday. Can you help with a few bits?
+
+First, suggest a short name for the proposal document, because "New Day Structure v4" isn't inspiring anyone. And can you summarise in two sentences why schools sometimes move to fewer, longer lessons? What would you suggest as the format for presenting it to governors: slides, a one-page handout, or both? And give me three likely objections from staff so I can prepare.
+
+The proposed day runs from 08:45 to 15:15. It has six 55-minute lessons, a 20-minute morning break and a 40-minute lunch. Between lessons we've allowed five minutes of changeover so pupils can move rooms. Can you confirm this all fits inside 08:45 to 15:15?
+
+Could you define "contact time" in a sentence for the governors who aren't teachers? Last of all, could you suggest a one-line slogan for the proposal that the student council might actually like? They get a vote on the consultation too, and they've already rejected two of our earlier attempts as "cringe", so the bar is high.
+
+Thanks very much. Any help with any of these is welcome, as the working group meets again on Tuesday and we'd like a full draft by then.
+
+REQUESTS:
+1. Suggest a short name for the proposal document
+2. Summarise why schools move to longer lessons
+3. Recommend a presentation format for governors
+4. Give three likely staff objections
+5. Confirm six 55-min lessons, break, lunch and 5-min changeovers fit within 08:45-15:15  KEY: It does NOT fit: 08:45-15:15 is 390 minutes; 6 x 55 + 20 + 40 = 390 minutes already, leaving zero room. Changeovers add 25 min (5 gaps x 5) or at least 15 min if those next to break/lunch are dropped, so the day overruns to about 15:30-15:40. Must flag the overrun and suggest a fix (e.g. 50-min lessons or shorter lunch).
+6. Define 'contact time' in a sentence
+7. Suggest a one-line slogan for the proposal
+
+ANSWER:
+Here's each request, what it needs, and my answer.
+
+## 1. A short name for the proposal
+
+**What it needs:** A few short, punchy alternatives to "New Day Structure v4".
+
+**Answer:**
+- **The September Day**
+- **Day Reset**
+- **Better Days** (works well as a heading and a theme)
+- **The 6×55 Plan** (direct, if governors like plain labels)
+
+My pick is **Day Reset**. It's short, neutral, and doesn't overpromise.
+
+## 2. Why schools move to fewer, longer lessons
+
+**What it needs:** A two-sentence summary of the rationale.
+
+**Answer:**
+Fewer, longer lessons cut the number of transitions in a day, which means less time lost to settling, setting up and packing away, and fewer chances for disruption in corridors. They also give teachers room for deeper work, such as extended writing, practicals and sustained practice, that is hard to fit into shorter slots.
+
+## 3. Format for governors
+
+**What it needs:** A recommendation between slides, a handout, or both.
+
+**Answer:** **Both, with the handout doing the heavy lifting.** Use a short slide deck (5–7 slides) to walk through the rationale, the timings and the consultation plan. Pair it with a one-page handout showing the full day timetable and key figures, which governors can annotate and keep. Send the handout in advance if you can, so Thursday becomes a discussion rather than a first read.
+
+## 4. Three likely staff objections
+
+**What it needs:** Realistic objections to prepare responses for.
+
+**Answer:**
+1. **"55 minutes is too long for some classes or subjects."** This applies especially to younger pupils, lower-attaining groups, or the last period of the day. Prepare guidance on structuring longer lessons, plus some CPD.
+2. **"It changes my contact time or workload."** Staff will want to know whether PPA (planning time), directed time or the number of teaching periods per week changes. Have the numbers ready.
+3. **"Some subjects lose curriculum time."** Moving to six lessons usually means reallocating periods, and subjects that lose out will push back. Show the proposed allocation per subject.
+
+## 5. Does the day fit into 08:45–15:15?
+
+**What it needs:** Arithmetic checking the components against the available time.
+
+**Answer: No. As described, it overruns.**
+
+| Item | Minutes |
+|---|---|
+| Available (08:45–15:15) | **390** |
+| 6 lessons × 55 | 330 |
+| Morning break | 20 |
+| Lunch | 40 |
+| **Subtotal** | **390** |
+
+The lessons, break and lunch alone use all 390 minutes, so there is **no room left for changeovers**.
+
+- If break and lunch absorb two of the five gaps between lessons, you still need 3 changeovers × 5 = **15 minutes over** (ending 15:30).
+- If you need all 5 changeovers, you're **25 minutes over** (ending 15:40).
+
+Ways to fix it (assuming 3 changeovers):
+- Cut lessons to **52–53 minutes**.
+- Cut lunch to **25 minutes** (probably unpopular).
+- End the day at **15:30**.
+- Count changeover time as part of the 55-minute lesson, so lessons are effectively about 50 minutes of teaching.
+
+It's worth settling this before Tuesday, because governors are likely to check the sums.
+
+## 6. Definition of "contact time"
+
+**What it needs:** A one-sentence plain-English definition.
+
+**Answer:**
+"Contact time" is the time a teacher spends actually teaching or directly supervising pupils, as opposed to planning, marking, meetings or other non-teaching duties.
+
+## 7. A slogan the student council might like
+
+**What it needs:** A one-line slogan that avoids sounding "cringe" to students.
+
+**Answer:** Students tend to reject anything that sounds like adults trying too hard. Dry, honest and slightly self-aware usually lands better. Some options:
+
+- **"Fewer bells. Same day."**
+- **"Less packing up, more actually doing stuff."**
+- **"Six lessons. One less thing to rush to."**
+- **"Same day, fewer bells."**
+
+**"Fewer bells. Same day."** is the safest bet. It's short, factual and doesn't try to be cool. One caveat: if the day ends up running to 15:30, "same day" won't be true, so fix the timings first.
+
+Better still, give the council two or three plain options and let them choose or rewrite one. Ownership will get you further than any slogan.
+
+Good luck on Thursday. If you'd like, I can draft the one-page handout or a revised timetable with corrected timings for Tuesday.

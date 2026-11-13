@@ -1,0 +1,112 @@
+DOCUMENT:
+# Launch Plan: Team Pricing Tier
+
+**To:** VP of Product
+**Re:** Team tier ($12/user/month) launch timing and terms
+**Date:** November 13, 2026
+
+## Recommendation
+
+**Do not launch in Q1 2027.** Approve the build on November 16. Announce Team at the February 10 conference with a waitlist, and launch on **April 13, 2027**, after the billing migration. Three conditions apply to the launch:
+
+1. Existing Business accounts cannot switch to Team for the first six months.
+2. Support cost per Team account must be reduced well below $18.
+3. Sales compensation must be adjusted before the announcement.
+
+## Why Q1 is not feasible
+
+- **Build time:** Engineering needs 10 weeks from November 16.
+  - About 4.5 weeks fit before the December 18 code freeze.
+  - The remaining 5.5 weeks run from January 4 to about February 11.
+- **Billing freeze:** No new products or price changes are allowed from February 1 to March 31, so the build finishes after the window has closed.
+- **Forcing a January 31 launch would mean:**
+  - Cutting about 1.5 weeks of work.
+  - Building on a billing system we retire weeks later.
+  - Being unable to correct pricing for two months if something breaks.
+- **Proposed date:** April 13 gives two weeks to stabilize on the new platform. Engineering should confirm the 10-week estimate against the new platform.
+
+The $60,000 sponsorship is spent whatever we decide. We should still use the conference to announce Team, open a waitlist and offer waitlist sign-ups a price lock. That gives Marketing its story and gives us a demand signal before go-live.
+
+## Expected impact (annualized, at full adoption)
+
+| Item | Calculation | ARR |
+|---|---|---|
+| Free → Team | 40,000 × 34% × ⅓ ≈ 4,500 teams × 4 users × $12 × 12 | +$2.6M |
+| Business → Team | 5,000 × 23% = 1,150 accounts × 12 users × $8 × 12 | −$1.3M |
+| **Net ARR** | | **+$1.3M (≈9%)** |
+| Live chat cost | ~5,650 accounts × $18 × 12 | −$1.2M/yr |
+
+Two findings matter.
+
+**Team alone cannot meet the 25% goal.** That goal is $3.6M of new ARR. Team adds at most about a third of it, and less in 2027 because of the April start and gradual ramp.
+
+**As designed, Team barely contributes margin.** Live chat costs about as much as the net new ARR. It also takes 37.5% of a typical 4-user team's $48 monthly bill.
+
+## Launch conditions
+
+**1. Protect the Business base.**
+- Offer Team to new customers and Free upgrades only for six months. Do not present it at Business renewal.
+- The pilot actively offered Team at renewal, which likely overstates passive downgrades. Removing that offer avoids most of the $1.3M loss while we measure.
+- The 9% of accounts that are compliance-sensitive need SSO and audit logs, so they are naturally fenced.
+- Review the policy at month six with real data.
+
+**2. Fix support economics.**
+- Support should propose a chat model at or below $8 per account per month, using business hours only and deflection.
+- If that is not achievable, launch Team with email support and add chat later.
+
+**3. Align Sales.**
+- Credit reps for Team bookings in their territories.
+- Hold 2027 quotas harmless for downgrades.
+- Announce these changes before February 10. The Head of Sales's concern is legitimate, and an opposed sales team will undermine the launch.
+
+**Self-serve share:** Free-to-Team conversions are self-serve and raise the share legitimately. Business downgrades would also raise it, but only by shrinking total revenue. We should report self-serve share alongside absolute ARR.
+
+## Decisions needed November 16
+
+- Approve the build on the new billing platform and the April 13 launch date.
+- Approve the six-month Business fence.
+- Direct Support to deliver a chat cost plan by January 15.
+- Direct Sales and Finance to deliver a compensation change by February 1.
+
+---
+
+##
+
+FACTS:
+Tasklane currently has two plans. The Free plan allows up to 5 users. The Business plan costs $20 per user per month. Business has 5,000 paying accounts with an average of 12 users each, for $14.4 million in annual recurring revenue (ARR). 61% of Business accounts have between 6 and 15 users. The proposed Team tier would cost $12 per user per month. It would include everything in Business except SSO, audit logs and the admin API, and it would add live chat support. Free has about 40,000 active teams with an average of 4 active users. In a survey of 400 Free teams, 34% said they were "likely" or "very likely" to pay for Team at $12. Tasklane's past data shows that stated purchase intent converts to actual purchases at roughly one-third of the survey rate. In a pricing pilot, 200 randomly selected Business accounts were shown the Team option at renewal. 23% of them chose to downgrade to Team. Customer Support estimates that live chat costs about $18 per account per month for small accounts. The Head of Sales opposes the launch. Sales commissions are paid on Business bookings, and the sales team believes Team will pull away the mid-size accounts that make up most of their quota. Security has noted that 9% of current Business accounts are flagged as "compliance-sensitive" because they belong to customers in regulated industries. Engineering estimates 10 weeks of work to add the new tier to the billing and entitlements system, starting from approval, which is expected on November 16. The company has a holiday code freeze from December 18 to January 4. A planned migration of the billing platform freezes all new products and price changes from February 1 to March 31. Marketing has booked a launch campaign tied to an industry conference on February 10 and has already paid a non-refundable $60,000 for sponsorship. The CEO's goal for 2027 is 25% ARR growth. The board has also asked management to raise the share of revenue coming from the self-serve channel, which is currently 30%.
+
+KNOWN COMPLICATIONS:
+- Cannibalisation is significant: if 23% of Business accounts downgrade, ARR falls by about $1.32M (0.23 x $14.4M x 8/20), which offsets much of the new revenue from Free teams (about $2.6M ARR if one-third of 34% of 40,000 teams convert at 4 users), and live chat costs (about $0.98M a year for roughly 4,500 accounts) reduce it further, leaving a thin margin.
+- The schedule cannot meet Q1: 10 weeks from November 16, plus the 2.5-week holiday freeze, puts completion around February 11, after the February 1 billing freeze starts, so nothing can ship until April unless the scope changes, and that clashes with the paid February 10 campaign.
+- The stated survey intent overstates demand. The 34% figure needs to be adjusted using the company's own one-third conversion factor.
+- Sales has a real incentive problem: commissions reward Business bookings, so the team may resist or undermine Team, and its objection that mid-size accounts will downgrade is supported by the pilot.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **The Free conversion estimate is fragile.** It rests on 400 survey responses and a historical one-third haircut. It also assumes all 40,000 teams behave like respondents and average 4 paying users.
+2. **The pilot sample is small.** With 200 accounts, the 23% downgrade rate has a 95% interval of roughly 17–29%. The pilot also measured an active offer at renewal, and the plan applies it to all 5,000 accounts as if every one renews within the year.
+3. **The size of downgrading accounts is assumed.** Each downgrader is assumed to average 12 users. If downgraders are concentrated in the 6–15 user band, as Sales fears, the loss could differ meaningfully either way.
+4. **The fence may not hold.** Team will be on a public pricing page. Business customers will ask for it, and refusing them could cause churn or resentment. Six months only defers the problem.
+5. **The $18 chat cost is misapplied.** It is quoted for small accounts, yet it is applied to 12-user downgraders. The $8 target is not supported by any analysis.
+6. **Free-to-Business cannibalization is ignored.** Free teams that outgrow 5 users would previously have gone to Business at $20. The plan also does not model Team churn or expansion.
+7. **April 13 depends on the migration.** The date assumes the billing migration finishes on time, and the plan has no fallback if it slips.
+8. **The announcement may stall purchases.** Announcing two months before availability could lead prospects and renewing customers to delay Business purchases. The price-lock promise also carries cost that is not quantified.
+9. **There is no 2027 forecast.** The plan gives annualized figures only, with no ramp-adjusted estimate for 2027 and no plan for closing the rest of the 25% gap.
+10. **Alternatives are not evaluated.** The plan does not consider other price points (such as $15), user caps on Team, or chat as a paid add-on.
+11. **Costs are not estimated.** The cost of the sales compensation change is missing, and so is the projected effect on self-serve share.
+
+FINDINGS:
+- The impact table's −$1.3M downgrade line models Team being offered at Business renewal, which Condition 1 forbids for six months, and the memo never states the fenced net impact.
+- The model ignores new-customer cannibalization: new 6–15-user prospects who would have bought Business at $20 can still buy Team, as can Free teams growing past 5 users.
+- The compliance 'natural fence' argument is circular because the random pilot sample already included compliance-sensitive accounts in the 23%, and the point is redundant while the six-month fence is active.
+- The $18 chat cost is quoted for small accounts but applied to 12-user downgraders.
+- The $8 chat cost target in Condition 2 is unexplained and unsupported.
+- The Sales condition to hold quotas harmless for downgrades largely overlaps with the fence, fails to address new-logo deals lost to Team, and leaves the compensation cost unestimated.
+- The platform sequencing is ambiguous: the memo does not say whether the 10-week build happens on the old system (requiring rework) or the new platform (which may not exist by Nov 16), and it has no fallback if the migration slips past March 31.
+- The early waitlist announcement carries unpriced risk of stalling Business purchases and renewals.
+- The waitlist price-lock commitment has no stated term or cost.
+- There is no 2027 ARR estimate despite an April start and adoption ramp, so actual 2027 revenue from Team may be well under $1M.
+- The memo does not explain how the remaining ~$2.3M+ of the 25% goal will be closed.
+- The memo does not acknowledge sample fragility: the n=200 pilot gives a wide confidence interval on 23%, the n=400 survey is assumed representative of all 40,000 Free teams, and downgraders are assumed to average 12 users.
+- Alternatives such as a $15 price, a seat cap on Team as a structural fence, or chat as a paid add-on are not evaluated.
+- The effect on self-serve share is described only qualitatively and not quantified.
+- There are no go/no-go criteria for April 13 if a condition is not met, with no fallback for Conditions 1 and 3.

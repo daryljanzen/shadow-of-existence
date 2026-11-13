@@ -81,3 +81,20 @@ Both cost about 60 reviews each, and running both settles which reading carries 
   - `C3` (the commissioning framing) is the third **contamination** layer.
   - `C2` (told it is scored on finding problems) is **not a contamination arm**. It sharpens attention within the reviewer's own perspective, and it is reported separately as an informative non-instance. `P4` stays registered at 35%. If `C2` ≥ `C0`, that is a second result, not a lost prediction. 60 has routed the matching wording repair of Step 8's E3 to the chat seat.
 - **The framing-mention rate is now used:** the primary contrast is also reported **restricted to trials whose review does not mention the author's description**.
+
+## Amendment before the main run (`r7755`): the secondary "valid other problems" promoted to co-primary
+
+The pilot's flaws-found measure sat at its ceiling, but the count of **valid other problems raised** (problems beyond the three planted flaws) did not:
+- C0: 10.2 per review;
+- C1: 9.2;
+- C2: 9.8;
+- C3: 7.0 (5 documents × 1 replicate).
+
+**These numbers were seen before this amendment.** The predictions below are therefore informed by the pilot, and they are stated as such.
+
+- **Co-primary:** valid other problems per review, per condition. It uses the scorer's existing `other` list (the scorer prompt is unchanged), averaged over replicates, as paired contrasts over documents with 95% bootstrap intervals.
+- **P1b:** C1 < C0 on valid other problems, with the interval excluding 0. Confidence 50%.
+- **P3b:** C3 < C1 on valid other problems, with the interval excluding 0. Confidence 65%.
+- **Hand-check:** 20% of the main run's scored reviews, stratified by condition. It is registered now, drawn with seed 3755, and scored blind **before the main run's aggregate is read**: valid/invalid per listed other problem, with κ reported.
+- **Models:** Opus 5.5, and Sonnet 5.5 as the second arm (decided in chat, 2026-11-12). The hand-check is drawn from the Opus arm.
+- **Which arm the predictions are tested on** (added on 60's `r7758` read, before E3's main run started): P1b and P3b, like P1–P5, **are tested on the Opus arm**. The Sonnet arm is reported beside them as a replication. It does not count as a second test of any prediction.

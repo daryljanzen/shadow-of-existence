@@ -1,0 +1,92 @@
+DOCUMENT:
+# Memo: Default Time-of-Use Rates for Residential Customers
+
+**To:** Granger Board of Public Utilities
+**Re:** Whether to begin the regulatory process for automatic TOU enrollment
+**Date:** November 2026
+
+## Recommendation
+
+In February, the Board should vote to begin the regulatory process for default time-of-use (TOU) rates, but for a revised proposal rather than the one before it:
+
+1. **Start date.** Begin default enrollment after meter replacement is complete (early 2028), not in 2027.
+2. **Medical baseline exemption.** Keep the 4,300 medical baseline customers on the flat rate unless they choose TOU.
+3. **Impact analysis first.** Require staff to analyse bill impacts on seniors and medical baseline customers before the public hearing.
+4. **Shadow bills.** For the first year, show every customer what they would have paid under each rate.
+
+## Why TOU is worth pursuing
+
+Granger pays an $11.2 million annual capacity charge set by customers' combined peak use. Peak demand also drives use of the gas-fired peaking plant that the climate plan aims to reduce.
+
+Suppose the capacity charge falls roughly in proportion to peak demand, which staff should confirm. Then a 5% peak reduction, the result at the utility that enrolled customers automatically, would save about $560,000 a year. A 9% reduction would save about $1 million. Either figure recovers the $340,000 billing setup cost within the first year.
+
+## Why the staff projection overstates the benefits
+
+The pilot's 2,000 participants volunteered. They were likely people who expected to save, either because they already used little power at peak or because they could easily shift their use. Default enrollment includes everyone, so the 5% reduction seen at the other utility is a more realistic guide than the pilot's 9%.
+
+The $8 monthly saving also cannot apply to all customers. Across 61,000 customers it would total about $5.9 million a year, more than half the entire capacity charge. Because the utility must recover its costs, average bills can fall only as much as power costs fall. A $560,000 to $1 million saving works out to roughly $0.75 to $1.40 per customer per month. Some customers will pay more. At the other utility, 18% saw increases above $5 a month.
+
+The Board should therefore present TOU as a way to cut peak demand and power costs, not as a large saving for most households.
+
+## Who may be harmed
+
+Medical baseline customers depend on equipment they cannot turn off at 4 p.m. Many seniors are home through the peak window. Staff have not analysed either group.
+
+An opt-out does not fully protect them. Some customers miss notices, and others may cut back on cooling or heating at peak to avoid charges, which carries health risks. Exempting medical baseline customers costs little in peak reduction, because their usage is the least flexible. The analysis of seniors' bill impacts should be finished before the Board decides whether further protections are needed.
+
+## Why not 2027
+
+About 14% of meters, roughly 8,500 homes, cannot record usage by time of day until December 2027. Enrolling in 2027 would mean either treating customers differently depending on their meter or estimating their usage.
+
+The timeline is also tight. After the February vote, the utility must give 90 days' notice, hold a hearing and set up billing, so the earliest realistic start is mid-2027 in any case. Waiting until the new meters are installed allows a single, clean transition and time to complete the impact analysis.
+
+## Stakeholders
+
+The senior citizens' council's central concern, unprotected harm to vulnerable residents, is addressed by the exemption, the required analysis and the shadow bills. The solar installers are right that TOU rewards home batteries. However, batteries are expensive, and renters and many seniors are unlikely to buy them, so batteries should not be counted on to limit bill increases.
+
+---
+
+##
+
+FACTS:
+Granger Municipal Power serves 61,000 residential customers. Under the current flat rate, all electricity costs the same regardless of the time it is used. Under the proposed TOU rate, electricity used between 4 p.m. and 9 p.m. on weekdays would cost about twice as much as the flat rate, and electricity used at other times would cost about 20% less. In 2025, Granger ran a voluntary TOU pilot with 2,000 customers who signed up. Participants saved an average of $8 a month, and their peak-hour use fell 9%. Staff project these results across all customers. Another utility that switched customers to TOU automatically saw peak use fall 5%. In that utility, 18% of customers saw their bills rise by more than $5 a month, mainly customers who could not shift their usage. Granger's power costs include a capacity charge of $11.2 million a year, which depends on the customers' combined peak usage. The utility must collect enough revenue to cover its total costs, so any reduction in average bills must come from lower power costs. Granger has 4,300 customers enrolled in its medical baseline program, which means they rely on electrically powered medical equipment at home. Many seniors in the city are at home during the afternoon and early evening. Staff have not analysed the effect on these groups. About 14% of meters are older models that cannot record usage by time of day. They are scheduled to be replaced by December 2027. The billing system vendor will charge $340,000 to set up TOU billing. Changes in rate structure require 90 days' public notice and a hearing. The city's climate plan aims to reduce peak demand to cut use of the gas-fired peaking plant. The local senior citizens' council has written to the board opposing automatic enrollment. A group of solar installers supports TOU, saying it will encourage home batteries.
+
+KNOWN COMPLICATIONS:
+- The pilot results come from customers who chose to join, who are more likely to benefit. Results from an automatic-enrollment programme elsewhere (5% peak reduction) are a better guide than the 9% from Granger's pilot.
+- Savings must come from lower costs: a 5% peak reduction saves about $560k of the capacity charge, about $0.77 per customer per month. Average savings across all customers are therefore small, and some customers will pay more.
+- Customers on medical equipment and people at home during the day may be harmed, and staff have not analysed these effects.
+- 14% of meters can't support TOU until December 2027, and the 90-day notice and hearing requirement affects the timeline, so a single 2027 switch-over is not feasible.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+- **Capacity savings assumption.** The memo assumes the capacity charge falls in proportion to peak use. If the charge is based on a single annual coincident peak, ratchets or contract terms, savings could be smaller or delayed.
+- **Omitted energy savings.** It counts only capacity savings and ignores cheaper off-peak energy and avoided peaker fuel. This may understate the benefits.
+- **Rate design not checked for revenue balance.** At 2× peak and 0.8× off-peak, the rate recovers the same revenue only if about 16.7% of residential usage falls in the peak window. Weekday 4–9 p.m. covers about 15% of hours, but residential use is concentrated then, so the rate as designed may over-collect. The memo does not check this.
+- **Unquantified harm.** "Seniors at home" is not the same as "high peak use." The concern about seniors is asserted, not shown.
+- **Exemption made before the analysis.** The medical baseline exemption is decided before the data exists, and some of those customers might benefit from TOU.
+- **Cost of delay.** Waiting a year gives up roughly $0.5–1 million in savings and delays climate progress. The memo does not weigh the alternative of enrolling the 86% of homes with capable meters in late 2027.
+- **Dependence on the meter schedule.** If meter replacement slips, so does the program.
+- **Shadow billing cost.** Shadow billing may require extra vendor work and cost beyond the $340,000, which is not estimated.
+- **Weak comparison.** The other utility's climate, housing stock and rate differential may differ from Granger's.
+- **Opt-out rates.** The memo does not estimate how many customers will opt out, which directly reduces savings.
+- **Low-income customers and renters.** These groups are not analysed separately.
+- **Outreach costs.** Communication and outreach costs are omitted.
+
+FINDINGS:
+- The memo weighs the costs of a 2027 start but never prices the delay to early 2028, which forgoes roughly $0.3–1M in savings plus a year of peaker use.
+- The memo does not consider a phased middle option of enrolling the 86% of homes with capable meters first and adding the rest as their meters are replaced.
+- The memo does not address the risk that the program start slips if the meter replacement schedule slips.
+- The benefit estimate counts only capacity savings and omits energy shifting and peaker fuel savings, so the figures are likely a floor but are presented as the full benefit.
+- The capacity-charge assumption ignores timing issues such as prior-year coincident peaks, ratchets, or contract terms, which could delay savings and undermine the claim that setup costs are recovered within the first year.
+- Recommendation 2 exempts medical baseline customers while Recommendation 3 asks staff to analyse their bill impacts, making the exemption premature or in need of separate justification.
+- The claim that exempting medical baseline customers costs little in peak reduction is asserted rather than shown.
+- The stakeholder paragraph overclaims that the senior council's concern is addressed, when seniors are only studied and automatic enrollment, which the council opposes, is still recommended.
+- The memo risks implying harm to seniors that it has not shown, since being home in the afternoon does not necessarily mean high peak use.
+- The 2×/0.8× rate design is revenue-neutral only if peak use is about 16.7% of residential consumption, and since the actual peak share is likely higher, the rate may over-collect before any load shifting, so staff should confirm revenue neutrality.
+- The claim that the $340,000 setup cost is recovered within a year omits shadow-billing vendor work, customer outreach and notices, and opt-out handling costs.
+- The memo does not translate the comparator utility's 18% bill-increase share into Granger terms, about 11,000 households facing increases above $5 a month.
+- Low-income customers and renters are not considered separately beyond the battery point.
+- The memo does not consider that existing rooftop-solar customers without batteries may be harmed because their generation falls off-peak while their consumption falls in the peak window.
+- The memo does not acknowledge whether Granger's opt-out rate, climate, housing stock, and price differential are comparable to the other utility's, which affects whether the 5% figure transfers.
+- It is ambiguous whether shadow bills for the first year are provided before or after enrollment, even though pre-enrollment shadow bills matter more for informed opt-out decisions.
+- The memo does not state whether staff must redraft the proposal before the February Board vote.
+- The memo does not explain why default enrollment is preferred over expanding opt-in enrollment.

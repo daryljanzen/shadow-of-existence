@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-11",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Leaving the apps does not pay. Today delivery contributes about $184k (2.3M x (35% - 27%)). Going direct with every order kept gives about $213k ($805k contribution minus about $514k courier fees on about 60,500 orders and $78k software and marketing), barely better. At the expected 40-60% retention it falls to roughly $40k-$95k, so leaving loses money.\n2. The commission cap from March 2027 cuts the app commission to 15% (about $345k a year at current volume), raising the contribution from staying on the apps to about $460k (2.3M x 20%), which changes the decision much more than switching to direct delivery would.\n3. The two campus restaurants depend much more on the apps (41% of sales against 12%), so the average hides where the risk is concentrated.\n4. The apps bring in new customers (68% were new), which a direct channel would not do.\n\nFINDINGS:\n- The memo never quantifies the economics of the recommended hybrid option, even though under the commission cap each customer migrated from the app to direct ordering loses about $2.80 per order, so it needs a per-order comparison showing the delivery fee and direct price required to break even and to justify the $18k software and $20k marketing spend.\n- The claim that the order 'barely covers' costs is wrong, because $33.04 − $24.70 − $8.50 = −$0.16 before card fees, meaning the order actually loses money.\n- Card fees are applied inconsistently: they are mentioned in the markup bullet but ignored in the $4.80 direct contribution figure, and including them at about 3% cuts direct contribution to about $3.70 and the 50% retention case to about $34k.\n- The $460k and $370k capped-commission figures are full-year run rates even though the cap starts March 1 and covers only about 10 months of 2027, so they should be labeled as run rates or replaced with a blended 2027 figure (about $415k).\n- The memo uses 2025 data without explaining why 2026 year-to-date figures were not used, even though it is written in November 2026.\n- 'The consultants' range' is referenced without ever introducing who the consultants are or what range they gave.\n- Courier congestion first appears in the action list (Action 3) without any earlier discussion in the memo.\n- The phrase 'before counting the new customers we would lose' could read as double-counting, since the retention figures already remove lost orders, so it should be clarified to mean future customer acquisition.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-11__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:05:44.235172+00:00",
+ "response": "```json\n{\"found\": {\"1\": false, \"2\": false, \"3\": false, \"4\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2190,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 242,
+  "output_tokens_details": {
+   "thinking_tokens": 209
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2190,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 242,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2190,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2190
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.022368,
+ "duration_ms": 7974,
+ "wall_s": 8.88,
+ "attempt": 0
+}

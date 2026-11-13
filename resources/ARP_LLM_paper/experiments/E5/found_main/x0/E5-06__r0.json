@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-06",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The truck ($165k) is 66% of a $250k request, well above the foundation's 40% capital cap ($100k), so the budget as proposed is not eligible.\n2. $120k a year in ongoing staff and running costs continues after a one-time grant, and the food bank's $40k surplus cannot cover it; the foundation requires a sustainability plan.\n3. The mobile pantry costs more than three times as much per pound as partner pantries, and 4 of the existing 9 sites are declining, which weakens the case for expansion unless it is clearly explained.\n4. The free host sites are only open on weekday daytimes, but most clients work hourly jobs and prefer evenings or Saturdays; in addition, the 18% TEFAP cut may limit how much food is available to distribute.\n\nFINDINGS:\n- The $220,000 request violates the Foundation's 40% capital cap because the $100,000 truck allocation is 40% of $250,000, not $220,000, so the maximum supportable request is $200,000 with $80,000 toward the truck.\n- The remaining truck cost needing other funding becomes $85,000 rather than $65,000 once the request is corrected, which makes the missing funding source more important.\n- The opening note's conclusion about $220,000 is wrong, since a $220,000 request would require $12,000 more in eligible operating costs.\n- The opening 'Note on the request amount' is addressed to the applicant rather than the funder, and a stray '#' heading at the end should be removed before submission.\n- Six placeholders remain unfilled (food sourcing plan, households served, pounds distributed, host-site prospects, truck match source, sustainability sources).\n- Without named sustainability sources the summary does not show the program can continue past year one, because the $40,000 surplus covers only a third of the $120,000 annual operating need.\n- The statement that the TEFAP cut 'will be' in FY2027 may be wrongly tensed because federal FY2027 began October 1, 2026, so the cut may already be underway.\n- The gift cards and branding wrap support should be identified as in-kind and outside the project budget so reviewers do not look for it in the table.\n- Launching all new sites on weekday-only DSS lots when most clients prefer evenings or Saturdays will raise questions unless prospective evening or Saturday hosts are named.\n- The proposal adds six new sites while attendance is declining at four of nine existing sites, and it does not explain why or how the new sites will avoid the same problem.\n- The 'Measuring results' section contains no quantitative targets (households, pounds, cost per pound) for the six- and twelve-month reports to measure against.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-06__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:44.646966+00:00",
+ "response": "{\"found\": {\"1\": true, \"2\": true, \"3\": true, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2255,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 252,
+  "output_tokens_details": {
+   "thinking_tokens": 224
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2255,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 252,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2255,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2255
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.023088,
+ "duration_ms": 6407,
+ "wall_s": 7.35,
+ "attempt": 0
+}

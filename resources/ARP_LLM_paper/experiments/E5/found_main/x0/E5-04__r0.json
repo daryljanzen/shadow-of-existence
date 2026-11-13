@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-04",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The instructional-hours rule forces long days: 1,080 hours over 144 days is 7.5 hours of instruction a day, compared with about 6.3 now, which matters for young children and is linked to whether achievement drops.\n2. The savings do not close the gap, and part of them are spent again. $1.4M is less than the $2.1M shortfall, and a fifth-day meal and supervision program costing $520k would cut net savings to about $0.88M.\n3. Nearly a third of the savings ($450k) come out of the pay of low-wage classified staff, some of whom would lose health benefits. That is both a fairness issue and the source of strong union opposition.\n4. The deadlines are tight: submission by March 1, 2027 means the public hearing must be held by about December 31, 2026, which is before the board's January decision to start the process.\n\nFINDINGS:\n- The plan to close the 2027-28 shortfall is due in October 2027, after that school year has started and its budget has presumably been adopted, so the most urgent problem has the latest deadline.\n- The 2028-29 timeline is tight: an October 2027 decision leaves only about two months before the hearing deadline and four before the March 1, 2028 submission, and the memo neither acknowledges this nor sets interim milestones.\n- Calling the option 'effectively closed' is imprecise, since it is still legally possible by holding a hearing within about six weeks; and because 'six weeks' depends on when the memo is read, the memo needs a date.\n- The savings figures may overlap: redeploying classified staff to the fifth-day program, or using buses for it, would erode the $450k classified and $600k transportation savings, so the $880k net figure may be wrong.\n- The memo does not say whether the $2.1M shortfall is one-time or structural, which matters because a recurring gap would leave about $1.22M a year unresolved.\n- It is unclear whether the $520k fifth-day program cost covers childcare or only meals, and the request for childcare capacity suggests the estimate omits it.\n- The figure of 31 unfilled positions lacks a denominator for context.\n- The 78% teacher support figure lacks a survey response rate.\n- The neighbouring-district applicant numbers are presented as stronger evidence than they are, since more applicants does not mean better retention or quality.\n- The 0.03–0.06 SD achievement decline figures are uncited.\n- The claim that chronic vacancies harm learning is asserted without support, even though it is the memo's main counterweight to the achievement research.\n- It is unclear whether the 6.3-hour and 7.7-hour figures are instructional time or total day length; if instructional only, the actual day could approach 8.5 hours, which matters for the kindergarten and grade 1 argument.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-04__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:00.415303+00:00",
+ "response": "{\"found\": {\"1\": true, \"2\": true, \"3\": false, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2282,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 517,
+  "output_tokens_details": {
+   "thinking_tokens": 489
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2282,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 517,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2282,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2282
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.028604,
+ "duration_ms": 8745,
+ "wall_s": 9.78,
+ "attempt": 0
+}

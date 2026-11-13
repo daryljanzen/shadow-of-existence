@@ -1,0 +1,44 @@
+MESSAGE:
+Hi! Running a little café on the high street and trying to get my autumn stuff sorted before half-term, so forgive the brain dump. First, I need a name for a new spiced pear latte, something cosy but not cheesy; a few options would be great.
+
+We put all our prices up 10% back in March when milk costs jumped, and then in August we started a "10% off everything" promotion that we've just kept, because people liked it. My business partner says that means we're exactly back to our original prices, so no harm done. Our flat white was £3.80 before March. What are we actually charging for it now, and are we really back where we started? I'd like the net percentage change too.
+
+Also, I'm thinking of starting a loyalty scheme. Would you recommend a paper stamp card or an app for a place our size? Just a quick steer. And could you suggest three pastries that would pair well with the pear latte? We have a decent oven but no fryer. Lastly, my accountant keeps saying "cost of goods sold" and I nod along; a two-line plain-English definition would save my dignity.
+
+Thanks so much!
+
+REQUESTS:
+1. Suggest a few names for a new spiced pear latte
+2. Work out the current flat white price after +10% then -10%, whether prices are back to the original, and the net percentage change  KEY: Price now = 3.80 x 1.10 x 0.90 = £3.762 (about £3.76), i.e. about 4p below the original £3.80. They are NOT back where they started: net change is -1% (1.1 x 0.9 = 0.99). Must explicitly correct the partner's claim.
+3. Recommend a paper stamp card or an app for a loyalty scheme
+4. Suggest three pastries (no fryer) to pair with the pear latte
+5. Give a two-line plain-English definition of 'cost of goods sold'
+
+ANSWER:
+Happy to help. Your partner is close, but not quite right.
+
+## Spiced pear latte names
+- **Pear & Pillow**: cosy without trying too hard
+- **The Orchard Hour**: suggests a slow afternoon
+- **Hearth Pear**: warm, with a nod to spice
+- **Pear Tree Latte**: plain and simple, and it'll fit on a chalkboard
+- **Ginger & Pear**: just says what's in it, which often works best
+
+## Flat white price
+- March: £3.80 × 1.10 = **£4.18**
+- August, 10% off: £4.18 × 0.90 = **£3.762**, so about **£3.76**
+
+You're **not** exactly back where you started. The 10% rise and the 10% discount don't cancel out, because the discount is taken from the higher price. Overall it's 1.10 × 0.90 = 0.99, a **net decrease of 1%**. That's 4p less per flat white than before March. It's small, but across every drink it adds up, and you're doing it while milk costs are still higher. If you want to be back at £3.80, the discount would need to be about 9.1%, not 10%.
+
+## Loyalty scheme
+For a café your size, I'd start with a **paper stamp card**. It costs almost nothing, there's no sign-up friction, and regulars like it. An app makes sense later if you want customer data or targeted offers, but it costs money and many customers won't bother downloading it. Try paper for a season and see how it goes.
+
+## Pastries to pair with the pear latte (all oven-friendly)
+1. **Frangipane tart or pear-and-almond slice**: it echoes the pear without competing with it.
+2. **Cinnamon swirls or morning buns**: the warm spice goes well with the latte.
+3. **Ginger or oat-and-brown-sugar shortbread**: it's simple, keeps well, and works well for dunking.
+
+## Cost of goods sold (COGS)
+COGS is what it costs you to make what you sold: ingredients and packaging, such as coffee, milk, flour, and cups. It leaves out overheads like rent and wages, so subtracting it from your sales shows how much you have left to cover those.
+
+Good luck with the autumn menu!

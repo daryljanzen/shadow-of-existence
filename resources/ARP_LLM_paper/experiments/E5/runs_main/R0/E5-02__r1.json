@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-02",
+ "system": "You are a helpful assistant.",
+ "message": "Please review the following document.\n\n<document>\n# MEMORANDUM\n\n**To:** Chief Financial Officer\n**From:** Nursing Finance / Med-Surg Workforce Planning\n**Date:** November 13, 2026\n**Re:** FY2027 budget request: Replace med-surg agency RNs with permanent hires\n\n**Decision requested:** Approve funding for up to 72 permanent med-surg RN hires in FY2027, at six per month from January.\n\n**Assumption:** FY2027 figures below assume a January–December fiscal year.\n\n## Why act now\n\nOn July 1, 2027, the state's 1:5 ratio law raises our med-surg requirement from 48 to about 70 RN FTEs. Non-compliance carries fines of up to $25,000 per day.\n\nIf we cover that requirement with agency staff only, FY2027 med-surg agency spend rises from $9.6M to about $11.8M. At full-year run rate it would reach $14.0M. Either way, med-surg labor cost will rise in FY2027. A 5% cut in this area is not achievable this year, and the 5% target will need to come from elsewhere or be measured net of the mandate.\n\n## Unit economics\n\n| | Agency | Permanent |\n|---|---|---|\n| Annual cost per FTE | $200,000 | $128,000 |\n| One-time cost per hire | none | ~$44,500 ($15,000 bonus + ~$29,500 salary during 12 weeks of non-productive orientation) |\n\n- Each permanent position saves $72,000 per year once the hire is on the floor.\n- The one-time cost is recovered about seven months after orientation ends.\n- Blended first-year turnover is about 22% (60% new graduates at 27%, 40% experienced nurses at 14%). Each early departure forfeits roughly $44,500 and returns the position to agency coverage. The economics still favor permanent hiring.\n\n## FY2027 ramp\n\nHR can orient at most six RNs per month, so the transition will take more than a year:\n\n| Month | Permanent RNs on the floor (cumulative) | Agency FTEs needed |\n|---|---|---|\n| April | 6 | 42 |\n| July 1 | 24 | 46 (against the new 70 requirement) |\n| December | 54 | 16 |\n\nThe July agency need of 46 is below today's 48. **Compliance on July 1 therefore depends on agency staff we already use, not on a surge.**\n\nEstimated FY2027 cost under this plan:\n\n| Item | Cost |\n|---|---|\n| Permanent salaries and benefits | $5.0M |\n| Sign-on bonuses | $1.1M |\n| Agency, at the discounted rate | ~$7.2M |\n| **Total** | **~$13.3M** |\n\nThe agency-only alternative costs $11.1–11.8M. The plan therefore costs about **$1.5–2.2M more in FY2027**. That is the price of the transition.\n\n## FY2028 onward\n\nAnnual cost at steady state:\n\n| Item | Cost |\n|---|---|\n| 70 permanent RNs | $9.0M |\n| Turnover replacement hiring | ~$0.7M |\n| Agency to cover vacancies | ~$1.2M |\n| **Total** | **~$10.9M** |\n\nThe agency-only alternative costs $13.2–14.0M per year. The plan saves roughly **$2.3–3.1M per year** and recovers the FY2027 investment during FY2028.\n\n## Agency vendor offer\n\n**Recommendation: accept the 6% discount for 30 FTEs over 12 months.**\n\n- We need at least 30 agency FTEs through September.\n- The commitment costs us about $0.38M for unused FTEs in Q4.\n- If the discount applies to all agency volume, it saves about $0.44M, a small net gain.\n- More importantly, it secures supply as a hedge against hiring shortfalls.\n- Before signing, we will try to negotiate a step-down in Q4.\n\n## Risk controls\n\n- **Hiring:** Give priority to experienced applicants where the pool allows.\n- **Bonus terms:** Extend the sign-on bonus clawback from 6 to 12 months for new contracts, subject to HR and legal review.\n- **Union:** The plan uses no mandatory overtime and no float-pool expansion, consistent with the union's position.\n- **Monitoring:** Track cohort fill rates and turnover monthly. If two consecutive cohorts fill below 4 RNs, we will report back and extend agency coverage before July.\n\n##\n</document>",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/runs_main/R0/E5-02__r1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T13:59:37.379701+00:00",
+ "response": "# Review: FY2027 Med-Surg Agency-to-Permanent Memo\n\nThe memo is clear and well structured, and most of the arithmetic checks out. One bolded claim is wrong, though, and the vendor recommendation rests on an unconfirmed condition. Both should be fixed before this goes to the CFO.\n\n## Material issues\n\n**1. The July 1 compliance claim is wrong, and it's the memo's key reassurance.**\nThe memo says July's agency need of 46 is below today's 48, so compliance \"depends on agency staff we already use, not on a surge.\" But under the plan, agency headcount falls steadily before July:\n\n| Month | Jan–Mar | Apr | May | Jun | **Jul** | Aug | Sep | Oct | Nov | Dec |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Permanent on floor | 0 | 6 | 12 | 18 | **24** | 30 | 36 | 42 | 48 | 54 |\n| Agency needed | 48 | 42 | 36 | 30 | **46** | 40 | 34 | 28 | 22 | 16 |\n\nSo agency staffing must jump from 30 to 46 (+16 FTEs) on July 1. That is a surge, and it happens on the day every other hospital in the state is also trying to staff up. The fix is either to keep 46 agency FTEs on through June (which raises H1 cost) or to secure the extra 16 contractually now. The bolded sentence should be removed or rewritten.\n\n**2. The vendor deal doesn't hedge the July risk, and its economics are conditional.**\n- The 30-FTE commitment covers the June low point, not the July peak of 46. Calling it a hedge against hiring shortfalls overstates what it does.\n- The \"small net gain\" (~$0.44M savings minus ~$0.38M for unused Q4 FTEs, about $0.06M) only holds if the 6% discount applies to *all* agency volume. If it applies only to the committed 30 FTEs, savings are about $0.36M and the deal **loses about $0.02M**. Either confirm the discount scope before recommending, or state the recommendation as conditional on it.\n- Suggestion: renegotiate toward the actual need curve, for example a higher commitment in Q3 and a step-down in Q4, rather than a flat 30.\n\n**3. The ramp assumes full cohorts and zero attrition.**\nThe memo cites 22% first-year turnover, but the ramp table assumes all 72 hires stay. On a straight annualized basis, you'd expect roughly 3–5 departures before July and more by December. Each departure raises the agency need above the figures shown. The ramp should either include an attrition haircut or present a sensitivity case, such as 5 per cohort or 10% attrition.\n\n**4. The monitoring trigger is too loose.**\n\"Two consecutive cohorts below 4\" tolerates a 33% shortfall without escalation. Four cohorts of 5 instead of 6 leaves you 4 RNs short on July 1 with no trigger fired. Given the up-to-$25,000/day fine exposure, consider triggering on any cohort below 6. Also tie the trigger to a firm date for locking in July agency supply, such as April 1.\n\n## Smaller points\n\n- **Inconsistent baseline in the FY2027 comparison.** The low end of the \"$1.5–2.2M more\" range compares the plan *with* the discount against agency-only *without* it. On a like-for-like basis it is about $2.2M with the discount on both sides, or about $1.6M without it on both sides.\n- **FY2028 is not steady state.** The October–December cohorts reach the floor in January–March 2028, so roughly 14 agency FTE-months (~$0.2M) remain in Q1 2028. This doesn't change the conclusion, but \"recovers the FY2027 investment during FY2028\" should account for it.\n- **72 vs. 70.** The memo should say why it requests 72 hires when 70 are needed, presumably as a turnover buffer.\n- **Turnover economics.** \"The economics still favor permanent hiring\" is asserted, not shown. One line would make the case: expected loss ≈ 22% × $44,500 ≈ $9,800 per hire, versus $72,000 per year in savings.\n- **\"Salary during orientation.\"** The $29,500 is derived from the $128K fully loaded cost, so it should read \"salary and benefits.\"\n- **Unit economics use the undiscounted agency rate.** At the discounted ~$188K, the per-FTE saving is about $60K, not $72K, and payback is about 9 months. State which rate you're using.\n- **Timing.** A January 1 start for the first cohort requires recruiting to begin now. Note whether approval is needed by a specific date.\n- **Formatting.** The document ends with an empty `##` heading. Either remove it or add the missing section, such as Next steps or Approvals.\n\n## Figures verified as correct\n\nAgency baseline ($9.6M), agency-only FY2027 ($11.8M; $14.0M run rate), blended turnover (21.8%), orientation cost (~$29.5K), FY2027 permanent cost (~$5.0M from 468 person-months), bonuses ($1.08M), agency under the plan (~$7.2M with the discount on all volume), Q4 unused commitment ($0.38M), FY2028 steady state (~$10.9M), and agency-only FY2028 ($13.2–14.0M).\n\n**Bottom line:** The core case for permanent hiring holds up. Before this goes forward, correct the July 1 surge claim, make the vendor recommendation conditional on the discount scope (or restructure the deal around July), and add attrition to the ramp.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 795,
+  "cache_read_input_tokens": 2006,
+  "output_tokens": 5884,
+  "output_tokens_details": {
+   "thinking_tokens": 3985
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 795,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 5884,
+    "cache_read_input_tokens": 2006,
+    "cache_creation_input_tokens": 795,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 795
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.12444920000000001,
+ "duration_ms": 66448,
+ "wall_s": 67.35,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-04",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The instructional-hours rule forces long days: 1,080 hours over 144 days is 7.5 hours of instruction a day, compared with about 6.3 now, which matters for young children and is linked to whether achievement drops.\n2. The savings do not close the gap, and part of them are spent again. $1.4M is less than the $2.1M shortfall, and a fifth-day meal and supervision program costing $520k would cut net savings to about $0.88M.\n3. Nearly a third of the savings ($450k) come out of the pay of low-wage classified staff, some of whom would lose health benefits. That is both a fairness issue and the source of strong union opposition.\n4. The deadlines are tight: submission by March 1, 2027 means the public hearing must be held by about December 31, 2026, which is before the board's January decision to start the process.\n\nFINDINGS:\n- The 2027-28 budget shortfall is the most urgent problem but is listed last, gets one line, and shares the October 2027 deadline even though a plan is needed before spring 2027 budget adoption.\n- The transportation, utilities, and classified-staff savings estimates likely overlap with the costs of running a fifth-day program, so the $880k net figure may be optimistic and savings should be reported net of that program.\n- The memo does not state the 2028-29 hearing and submission deadlines, leaving readers unsure whether the October 2027 decision date is workable.\n- October 2027 may be too early for a completed union agreement, and the memo offers no fallback if bargaining is unfinished.\n- The cost analysis omits the need to renegotiate the teachers' contract for longer days.\n- The cost analysis omits the impact on special education, including IEP service minutes and therapy schedules.\n- The cost analysis omits the effects of a later dismissal on bus schedules and extracurricular activities.\n- Family perspectives are covered only through K-1 concerns raised at board meetings, with no parent survey to match the teacher survey.\n- The 31 unfilled teaching positions figure lacks context on the total number of positions.\n- The 78% teacher survey result lacks sample size and response rate.\n- The recruitment evidence conflates more applicants per opening with better retention.\n- The claim that chronic vacancies harm learning is asserted without a source.\n- The research figures (0.03–0.06 SD) and neighbouring-district reports are not cited.\n- The childcare gap is not quantified by who is affected or how many families, unlike the meal section.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-04__r1.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:02.214595+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": false, \"3\": false, \"4\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2196,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 346,
+  "output_tokens_details": {
+   "thinking_tokens": 318
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2196,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 346,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2196,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2196
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.024496,
+ "duration_ms": 7618,
+ "wall_s": 8.66,
+ "attempt": 0
+}

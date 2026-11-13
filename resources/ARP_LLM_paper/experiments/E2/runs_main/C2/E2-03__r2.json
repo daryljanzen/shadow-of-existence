@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-03",
+ "system": "You are a helpful assistant. Hold every claim at exactly the weight its evidence earns, neither inflated nor deflated: accept what the evidence supports even if it seems surprising, reject what it contradicts even if it is stated with confidence, and where the information given does not settle the question, say so and say what would settle it.",
+ "message": "I manage a small software team and we need both code reviews and documentation every day. In an hour, our senior engineer can do either 4 code reviews or write 8 pages of docs. Our junior engineer can do either 1 code review or 4 pages of docs in an hour. A colleague from finance, Mei, suggested, while admitting it sounds backwards, that we'd get more total work done if the junior did the documentation and the senior focused on reviews, even though the senior is faster at both. Our CTO says that's obviously wrong: the senior is better at everything, so the senior should do the docs too and get them done fastest. I'm leaning towards Mei, but can't explain it to the CTO. Is she right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C2/E2-03__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:30:46.318035+00:00",
+ "response": "**Yes, Mei is right.** This is the principle of *comparative advantage*. It sounds backwards because it compares what each person gives up, not how fast each person works.\n\n## The key idea: opportunity cost\n\nThe CTO is right that the senior is faster at both tasks. But every hour the senior spends on docs is an hour not spent on reviews. So compare what each person sacrifices:\n\n| | 1 code review costs... | 1 page of docs costs... |\n|---|---|---|\n| **Senior** | 2 pages of docs | ¼ review |\n| **Junior** | 4 pages of docs | ¼ review |\n\n- The senior gives up **2 pages** per review. The junior gives up **4 pages**. So reviews are \"cheaper\" when the senior does them.\n- The senior is 4× faster at reviews but only 2× faster at docs. Their edge is biggest in reviews, so that's where their time is most valuable.\n\n## A concrete example for your CTO\n\nAssume an 8-hour day each.\n\n**Both split their time 50/50:**\n- Senior: 4h reviews = 16 reviews, 4h docs = 32 pages\n- Junior: 4h reviews = 4 reviews, 4h docs = 16 pages\n- **Total: 20 reviews, 48 pages**\n\n**Specialize along comparative advantage (same 48 pages of docs):**\n- Junior: 8h docs = 32 pages\n- Senior: 2h docs = 16 pages, 6h reviews = 24 reviews\n- **Total: 24 reviews, 48 pages**\n\nThat's the same documentation plus 4 extra reviews, from the same people working the same hours. Any arrangement that moves the junior toward docs and the senior toward reviews does better. Having the senior \"do the docs too\" does the opposite: it spends your scarcest resource, senior review time, where the senior's edge is smallest.\n\nOne-liner for the CTO: *\"The senior is faster at docs, but every page they write costs us a quarter of a review. Each page from the junior costs us a quarter of a review too, but junior review time is worth far less, so their docs are cheaper overall.\"*\n\n## What this doesn't settle\n\nThe math holds for your numbers. Whether you should follow it strictly depends on things the math leaves out:\n\n- **Required mix.** If you need more docs than the junior can produce, the senior should still write some, as in the example. Specialization is about direction, not absolutes.\n- **Quality differences.** The analysis assumes a page is a page and a review is a review. If senior-written docs on certain topics (architecture, tricky internals) are much better, those may be worth the senior's time.\n- **Junior development.** Doing reviews is how juniors get better at reviewing. Some review time for the junior may be a worthwhile investment even if it lowers today's output.\n- **Review bottlenecks.** If reviews block merges, the case for putting the senior on reviews is even stronger than the numbers show.\n\nSo the core claim stands: by these productivity figures, Mei's arrangement produces strictly more total work. The open questions are about quality and growth, not about whether the arithmetic works.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 794,
+  "cache_read_input_tokens": 824,
+  "output_tokens": 1431,
+  "output_tokens_details": {
+   "thinking_tokens": 415
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 794,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1431,
+    "cache_read_input_tokens": 824,
+    "cache_creation_input_tokens": 794,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 794
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035144800000000004,
+ "duration_ms": 16742,
+ "wall_s": 17.78,
+ "attempt": 0
+}

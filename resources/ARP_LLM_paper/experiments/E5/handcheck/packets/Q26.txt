@@ -1,0 +1,72 @@
+DOCUMENT:
+**To:** Owners, Fennel & Co.
+**Re:** Should we leave the delivery apps in 2027?
+**Date:** November 13, 2026
+
+**Recommendation**
+
+Do not leave the third-party apps in 2027. This quarter, approve a direct ordering system as an additional channel alongside the apps, priced so that delivery pays for itself. Revisit a full exit in January 2028, once the commission cap has been in force for most of a year.
+
+**Why a full exit doesn't pay**
+
+The $621,000 in commissions overstates what we would save, because leaving the apps also removes most of the orders. On 2025 figures (about 60,500 orders at $38):
+
+- **Today:** after food, packaging and kitchen labor (65%) and commissions, the app channel contributes about **$184,000**.
+- **Full exit, prices unchanged:** each direct order costs $8.50 in courier fees, so it contributes about $4.80. If we keep 50% of orders, the midpoint of the consultants' range, that is about $145,000. After $18,000 for software and $60,000 for marketing, year one nets about **$67,000**. At 60% retention it is about **$96,000**.
+- **Full exit, app markup dropped:** if app prices carry roughly a 15% premium, a $38 app order becomes about $33 direct. That barely covers food, labor and the courier before card fees.
+
+A full exit leaves us roughly $90,000–$120,000 worse off in year one. That is before counting the new customers we would lose.
+
+**The cap changes the math**
+
+From March 1, 2027, commissions are capped at 15%. At 2025 volumes, that cuts commissions to about $345,000 and raises the channel's contribution to about **$460,000**. The apps plan to add customer fees, but even if those cost us 20% of orders, the channel still contributes about **$370,000**, far more than going direct. One app may challenge the ordinance in court. That uncertainty is a reason to keep our options open, not a reason to leave now.
+
+**What we'd lose beyond the numbers**
+
+- **New customers:** 68% of our 2025 app customers had never ordered from us before. The apps are our largest source of new customers.
+- **Campus locations:** Elm Street and College Ave get 41% of their sales from apps, including late-night orders. A drop there would hit 2027 results, which will shape the College Ave lease renewal in 2028.
+
+**Actions for this quarter**
+
+1. **Approve the direct ordering system** ($18,000 a year) for pickup and delivery, launching in Q1 2027. Charge a delivery fee that covers most of the $8.50 courier cost. Set direct menu prices between in-store and app prices.
+2. **Spend about $20,000, not $60,000,** promoting the direct channel to existing customers through receipts, packaging inserts and loyalty offers. Repeat customers are the ones worth moving.
+3. **Fix courier congestion directly.** Add a dedicated pickup shelf, stagger ready times during the dine-in rush, and pause app ordering at peak hours where needed.
+4. **Track monthly by location:** direct share of delivery, app volume after the new customer fees, and contribution per order.
+5. **Set a decision point for January 2028.** Consider leaving the apps at the four non-campus locations if direct orders exceed about 40% of delivery there and either the cap has been struck down or app volume has fallen sharply.
+
+---
+
+##
+
+FACTS:
+Fennel & Co. had total sales of $12.1 million in 2025. Of that, $2.3 million (19%) came from delivery orders placed through third-party apps. The average delivery order was $38. The apps charged an average commission of 27%, or about $621,000 for the year. The owners describe the commissions as "our single biggest controllable cost." A direct ordering system would cost about $18,000 a year in software for all six restaurants. Deliveries would be handled by a white-label courier service at $8.50 per order. The owners estimate they would also need about $60,000 in marketing in the first year to move customers to the direct app. Orders on direct platforms tend to be larger, because restaurants usually charge app customers higher menu prices to cover commissions, and the owners would drop those higher prices on the direct channel. Industry consultants say restaurants that leave the apps completely usually keep between 40% and 60% of their delivery orders on their own channel. Food and packaging costs plus kitchen labor on delivery orders come to about 65% of the order value. The two restaurants near the State University campus, Elm Street and College Ave, get 41% of their sales from delivery apps. The other four average 12%. Data from the apps shows that 68% of Fennel's app customers in 2025 had never ordered from Fennel before that year. In October the city council passed an ordinance capping delivery app commissions at 15% of the order value, effective March 1, 2027. Two of the app companies have said they will add or increase customer-side fees in response. One of them has said it may challenge the ordinance in court. The general manager of Elm Street warns that leaving the apps would "kill our late-night business." The owners' accountant points out that Fennel's lease at College Ave comes up for renewal in 2028 and that the location's results will matter for that decision. The kitchen staff have complained about delays caused by app couriers arriving at the same time as dine-in rush.
+
+KNOWN COMPLICATIONS:
+- Leaving the apps does not pay. Today delivery contributes about $184k (2.3M x (35% - 27%)). Going direct with every order kept gives about $213k ($805k contribution minus about $514k courier fees on about 60,500 orders and $78k software and marketing), barely better. At the expected 40-60% retention it falls to roughly $40k-$95k, so leaving loses money.
+- The commission cap from March 2027 cuts the app commission to 15% (about $345k a year at current volume), raising the contribution from staying on the apps to about $460k (2.3M x 20%), which changes the decision much more than switching to direct delivery would.
+- The two campus restaurants depend much more on the apps (41% of sales against 12%), so the average hides where the risk is concentrated.
+- The apps bring in new customers (68% were new), which a direct channel would not do.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **The 15% app price premium is an assumption.** The brief doesn't give it, and the "markup dropped" scenario depends heavily on it.
+2. **The brief contradicts itself, and the memo picks one reading.** It says direct orders "tend to be larger" but also that prices would drop on the direct channel. A reviewer may argue direct baskets could be bigger in item count.
+3. **The 20% volume loss after the cap is a guess.** No data shows how customers will respond to the new app fees.
+4. **Lost orders aren't all lost.** Some lost delivery customers would switch to pickup or dine-in, so the cost of exiting is overstated.
+5. **The 65% cost is treated as fully variable.** Part of kitchen labor is fixed, so the contribution figures are understated in both scenarios.
+6. **Several costs are left out:** card processing, courier tips, refunds and failed deliveries, and whether a white-label courier can cover late-night hours near campus.
+7. **It is a year-one view only.** The $60,000 in marketing is one-time, and retention may improve over time, so a multi-year comparison would narrow the gap. It likely wouldn't close it against the post-cap figures.
+8. **Everything uses 2025 volumes.** There is no growth or seasonality, and no figures for individual locations, even though the memo's 2028 decision point is set by location.
+9. **Cutting marketing to $20,000 is untested.** It may produce lower direct adoption than the scenarios assume.
+10. **The ordinance details are assumed.** The memo assumes all six locations fall inside the city's jurisdiction and that the 15% cap covers all fees, not just the base commission.
+11. **The "late-night" warning is unverified.** It rests on the general manager's claim, not on order-time data.
+12. **The owners' framing goes unchallenged.** Commissions are about 5% of sales, so food and labor are larger costs. Calling commissions "our single biggest controllable cost" may be overstated.
+
+FINDINGS:
+- The memo never quantifies the economics of the recommended hybrid option, even though under the commission cap each customer migrated from the app to direct ordering loses about $2.80 per order, so it needs a per-order comparison showing the delivery fee and direct price required to break even and to justify the $18k software and $20k marketing spend.
+- The claim that the order 'barely covers' costs is wrong, because $33.04 − $24.70 − $8.50 = −$0.16 before card fees, meaning the order actually loses money.
+- Card fees are applied inconsistently: they are mentioned in the markup bullet but ignored in the $4.80 direct contribution figure, and including them at about 3% cuts direct contribution to about $3.70 and the 50% retention case to about $34k.
+- The $460k and $370k capped-commission figures are full-year run rates even though the cap starts March 1 and covers only about 10 months of 2027, so they should be labeled as run rates or replaced with a blended 2027 figure (about $415k).
+- The memo uses 2025 data without explaining why 2026 year-to-date figures were not used, even though it is written in November 2026.
+- 'The consultants' range' is referenced without ever introducing who the consultants are or what range they gave.
+- Courier congestion first appears in the action list (Action 3) without any earlier discussion in the memo.
+- The phrase 'before counting the new customers we would lose' could read as double-counting, since the retention figures already remove lost orders, so it should be clarified to mean future customer acquisition.

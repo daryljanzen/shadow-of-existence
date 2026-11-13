@@ -70,7 +70,7 @@ At z < 3 radiation is negligible, so the leaf-rate geometry leaves the BAO fit w
 
 **What counts against the leaf-rate assignment:**
 1. The refitted multiple would not be below 1.60. It is 1.002, so this does not fire.
-2. The refitted minimum's distances would break. BAO is unchanged, and θ\* on the instrument's definition is within 3σ (+2.9σ), so this does not fire on the measures available. A θ\* fit on the corpus's own definition remains to be done.
+2. The refitted minimum's distances would break. BAO is unchanged (10.539 → 10.556). **On the corpus's own definition of θ\*** (⒡: r_snd on the leaf rate from 3e7 to z_rec, over D_M on the leaf rate), the refit sits at **+2.3σ**, within 3σ, so this does not fire. *(Corrected at `r7755`, on 60's `r7754` read. The first version cleared this with the instrument's r_s/D_M pull of +2.9σ, the very quantity ⒞ says this measure cannot bear. On that basis the clause was undetermined, not cleared. The corpus-definition figure is what clears it. The 0.50% shift in D_M is the robust figure to carry, and no paper sentence should rest on the instrument's pull.)*
 3. The minimum would sit outside the linear range after one re-centring. The second verify agrees to 0.62, so this does not fire.
 
 ## ⒠ What this does and does not establish
@@ -78,6 +78,12 @@ At z < 3 radiation is negligible, so the leaf-rate geometry leaves the BAO fit w
 - **It establishes the full measurement on this assignment.** On the leaf-rate distance, the arm reaches the control's χ² on the full-range lensed spectrum when refitted on the control's own parameter freedom. As computed at the distances' own point, it scores below the control's no-fit spectrum, the same arm that sits at 2.35× on the stacking-rate distance.
 - **It does not adjudicate the assignment.** The corpus holds the stacking rate for the projection's distance on one identification, and that ruling is the gate's, not this receipt's. What is reported is what the data return on each assignment, measured the same way.
 - **One parameter moved a long way: n_s, 1.015 → 0.961.** The arm of record's refit sat at 1.015. On this assignment the spectrum prefers a tilt near the control's (0.965), and that belongs in any reading of the result.
+- **The improvement is in the distance, not the tilt.** With no spectrum fit at all, at the distances' point and the built-in n_s, the leaf-rate arm scores 196.48 against the control's own no-fit 214.06 (⒜). So the 1.60 → 1.002 improvement is not bought by n_s moving. *(Added at `r7755`, on 60's read.)*
+- **What it cost, against the registered price** (2 runs, up to 11 with one further grid, under 1 core-h): **13 instrument runs.**
+  - Ⓐ at LSTEP=2 ran twice, because a 1-hour background limit cut the first attempt.
+  - The other runs: K3's base re-run, the first verify, the 9-leg re-centring grid, and the second verify, all at LSTEP=8.
+  - The second verify and the K3 re-run were not in the registered count.
+  - Ⓐ alone took over an hour on one core, so the core-hour price was also exceeded. The total was not metered; it is a few core-hours.
 
 ## Files
 

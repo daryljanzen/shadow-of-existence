@@ -1,0 +1,72 @@
+MESSAGE:
+I run deliveries for a small furniture restorer and I've got a few things to sort for tomorrow.
+
+Can you suggest a name for our new delivery van (staff vote, nothing rude)?
+
+Tomorrow the van can't leave the depot before 08:30 and must be back by 12:00. Three drops, each takes 15 minutes to unload. Drop A has a delivery window of 09:00 to 10:00. Drop B is a shop that needs its delivery done before it opens at 09:30. Drop C is an office that won't accept anything before 11:00. Driving times: depot to A 30 min, depot to B 20 min, depot to C 45 min, A to B 25 min, A to C 40 min, B to C 50 min. The driver also needs a 30-minute break somewhere before 12:00. What order should he go in, and what's the timeline?
+
+Could you also rewrite our delivery text so it sounds friendlier than "Driver arriving. Be in."? List three things the driver should check on furniture before handing it over. Should we give customers a paper delivery note or an emailed one? And define "proof of delivery" in a line for our new part-timer. One more thing: we're thinking of texting customers the evening before with a rough arrival time. Could you draft that evening-before text too, keeping it under 160 characters so it goes as a single message?
+
+REQUESTS:
+1. Suggest a name for the delivery van
+2. Work out the drop order and timeline meeting all time windows, the break and the 12:00 return  KEY: Only feasible order is B -> A -> C. Leave 08:30, arrive B 08:50, unload to 09:05 (done before 09:30); arrive A 09:30, unload to 09:45 (inside 09:00-10:00); arrive C 10:25, wait until 11:00 (take the 30-min break during this wait); unload 11:00-11:15; back at depot 12:00 exactly (zero slack). A-first fails (B reached 09:40, after opening). Must give order B, A, C with a timeline that respects all constraints.
+3. Rewrite the delivery text to be friendlier
+4. List three furniture checks before handover
+5. Recommend paper vs emailed delivery note
+6. Define 'proof of delivery' in a line
+7. Draft an evening-before arrival text under 160 characters
+
+ANSWER:
+# Tomorrow's Delivery Prep
+
+## 1. Van name ideas (for the staff vote)
+- **The Dovetail**: a nod to the joinery
+- **Polly** (as in French polish)
+- **Chester** (as in chesterfield, or chest of drawers)
+- **The Sideboard Express**
+- **Vanity** (it carries the dressing tables)
+
+## 2. Route and timeline
+
+**Order: Depot → B → A → C → Depot**
+
+| Time | Activity |
+|---|---|
+| 08:30 | Leave depot |
+| 08:50 | Arrive Drop B (20 min drive) |
+| 08:50–09:05 | Unload at B (done 25 min before the 09:30 opening) |
+| 09:05–09:30 | Drive to Drop A (25 min) |
+| 09:30–09:45 | Unload at A (inside the 09:00–10:00 window) |
+| 09:45–10:25 | Drive to Drop C (40 min) |
+| **10:25–10:55** | **30-minute break near C** |
+| 10:55–11:00 | Ready to go at C |
+| 11:00–11:15 | Unload at C (the earliest it will be accepted) |
+| 11:15–12:00 | Drive back to depot (45 min) |
+| **12:00** | **Back at depot** |
+
+**Why this order:** B has to be first. Going to A first means he leaves A at 09:15 at the earliest and reaches B at 09:40, which is after it opens. C has to be last because it won't accept anything before 11:00. The wait before C is the natural place for the break.
+
+**One warning:** the return is exactly 12:00, so there is no slack at the end. C can't start before 11:00, and 15 minutes unloading plus 45 minutes driving brings him back at 12:00 whatever happens earlier in the day. If C is ready the moment he arrives, he's fine. Any delay at C will make him late. It would be worth either:
+- asking C whether they'd accept at 10:45, or
+- agreeing that 12:00 is a soft deadline.
+
+## 3. Friendlier delivery text
+> "Hi! Your driver from [Business] is about 15 minutes away with your furniture. See you shortly!"
+
+## 4. Three checks before handover
+1. **Surfaces:** no new scratches, dents or marks on the finish, especially corners and edges.
+2. **Structure and fittings:** legs are firm, joints are tight, and handles, hinges and castors are secure.
+3. **Function:** drawers slide, doors open and close properly, and glass or mirrors are intact.
+
+## 5. Paper or emailed delivery note?
+**Emailed is better.** Get a signature on a phone or tablet, with a photo of the item in place, and send the note automatically. It can't get lost, it's time-stamped, and it's easy to find later if there's a dispute. Keep a few paper notes in the van for when there's no signal or the customer prefers paper.
+
+## 6. Proof of delivery (for the part-timer)
+**Proof of delivery** is a signed and dated record, ideally with a photo, showing that the customer received their item in good condition.
+
+## 7. Evening-before text (140 characters)
+> Hi [Name], your furniture from [Business] arrives tomorrow between [time] and [time]. Reply here if that's tricky and we'll sort it. Thanks!
+
+Two things will keep it to a single message:
+- **Watch the length.** It is 140 characters with the placeholders as written, which leaves about 20 characters for longer names and times. If your business name is long, shorten it.
+- **Use plain characters.** Use straight apostrophes (') and no emoji. Curly quotes or emoji can cut the limit for one text to 70 characters, which would split it into two messages.

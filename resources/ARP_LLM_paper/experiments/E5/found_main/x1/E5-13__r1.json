@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-13",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. Only about 5% of flags (308 of 6,150) led to a misconduct finding, while faculty spent roughly 920 hours reviewing flags. The system is mostly producing false alarms.\n2. Flag rates are much higher for students with darker skin and students with disabilities. That is a fairness and legal risk that would grow if the system is expanded to all courses.\n3. The accreditor's requirement is about verifying identity, not monitoring behaviour, and the $35k ID-only service would meet it.\n4. The new privacy law takes effect in July 2027, during a 3-year contract, and requires consent and a non-biometric alternative, which would make running the system university-wide more complicated.\n\nFINDINGS:\n- The \"$205,000 in annual savings\" figure is misleading because it is measured against the proposed renewal contract rather than current spending, against which the saving is only $175,000.\n- The memo claims peer institutions adopted \"oral components,\" which is not in the source brief.\n- The memo assigns peer institutions a motive (\"for this reason\") that the brief does not support.\n- A stray `---` and `##` at the end of the memo will render as an empty heading.\n- The \"From\" line is left blank.\n- The deterrence argument is overstated: the memo asserts that hard-to-outsource assessment is the better deterrent without evidence, while noting there is no data on ProctorEye's deterrent effect.\n- The identity-only service checks identity only once at exam start, so it may not satisfy the accreditation requirement if courses shift to project-based work as recommended.\n- The step to track misconduct rates for a year after the transition is listed among actions due before February 28, even though it cannot happen before then.\n- The sentence saying \"95% of flags required faculty review but produced no finding\" wrongly implies that only those flags needed review, when all flags did.\n- The memo does not explain why the flags are biased, omitting the audit's finding that \"face not detected\" and \"looking away/repeated movements\" flags drove the disparities.\n- The memo does not mention the Student Government's formal resolution opposing renewal and only mentions briefing them.\n- The memo does not give the current contract's end date, so it is unclear whether a bridge arrangement is needed.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x1/E5-13__r1.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:40.295362+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": false, \"4\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2108,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 455,
+  "output_tokens_details": {
+   "thinking_tokens": 427
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2108,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 455,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2108,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2108
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.025972000000000002,
+ "duration_ms": 8478,
+ "wall_s": 9.37,
+ "attempt": 0
+}

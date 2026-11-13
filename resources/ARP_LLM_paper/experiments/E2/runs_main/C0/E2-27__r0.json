@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-27",
+ "system": "You are a helpful assistant.",
+ "message": "I run a community screening programme and I'm drafting the letter that goes to people with a positive result. Among the people we screen, about 1% actually have the condition. The test picks up 90% of true cases, and 9% of people who don't have the condition test positive anyway. Our analyst, Dev, says that of everyone who tests positive, fewer than 1 in 10 actually have the condition, so the letter shouldn't say \"you probably have it\" but should say a follow-up test is needed. My deputy thinks that can't be right: \"the test is about 90% accurate, so a positive should mean roughly a 90% chance\". I tend to agree with Dev, but it feels strange to send a letter that says a positive result usually means nothing is wrong. Can we go with Dev's wording?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C0/E2-27__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:48:55.028217+00:00",
+ "response": "Yes, Dev is right, and his wording is the correct approach.\n\n## The numbers\n\nTake 10,000 people screened:\n\n| | Have the condition | Don't have it | Total |\n|---|---|---|---|\n| **Test positive** | 90 (90% of 100) | 891 (9% of 9,900) | **981** |\n| **Test negative** | 10 | 9,009 | 9,019 |\n| **Total** | 100 (1%) | 9,900 | 10,000 |\n\nOf the 981 people who get a positive letter, only 90 have the condition. That's about **9%, or roughly 1 in 11**. Dev's \"fewer than 1 in 10\" is accurate, though only just.\n\n## Why your deputy's intuition is wrong\n\n\"90% accurate\" describes how the test performs *on people already known* to have or not have the condition. It answers \"if you have it, how likely is a positive?\" Your letter recipients need the reverse: \"given a positive, how likely is it that I have it?\"\n\nThose answers differ because the condition is rare. The 9% false-positive rate applies to a very large group (99% of people screened), so it produces about 10 times as many false positives as there are true cases. This is a well-known pattern in screening, often called the base-rate effect.\n\n## On the letter itself\n\nYou're right that \"a positive result usually means nothing is wrong\" would land badly, and it's also slightly too strong, since some recipients *do* have the condition. I'd aim for something like:\n\n> \"Your screening result means you need a follow-up test. Screening tests are designed to catch as many cases as possible, so they also flag many people who turn out not to have the condition. In fact, most people who receive this letter will not have it. The follow-up test will give a clear answer, so it's important that you attend.\"\n\nThis is honest, reduces unnecessary alarm, and still makes the follow-up feel important. You don't want people skipping it because they read \"probably fine.\"\n\n## One caveat\n\nThe ~9% figure depends on the 1% prevalence. If you screen a higher-risk group, where say 10% have the condition, the same test gives about a 53% chance that a positive is real. Avoid putting a fixed percentage in a letter that might be reused for a different population.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1548,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 892,
+  "output_tokens_details": {
+   "thinking_tokens": 182
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1548,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 892,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1548,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1548
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.030232000000000002,
+ "duration_ms": 12660,
+ "wall_s": 13.61,
+ "attempt": 0
+}

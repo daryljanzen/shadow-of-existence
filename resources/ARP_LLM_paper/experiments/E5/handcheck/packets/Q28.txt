@@ -1,0 +1,99 @@
+DOCUMENT:
+# Order Online, Pick Up in Store: Rollout Recommendation
+
+**To:** Chief Operating Officer
+**Decision needed:** Approval of rollout plan and budget, January 2027
+
+## Recommendation
+
+Approve a phased rollout of in-store pickup to all 34 stores, complete by mid-October 2027. Release the budget in stages tied to results. Pickup is worth doing, but it is a modest profit opportunity, not the $54.8 million growth story in the launch presentation.
+
+## What the pilot actually shows
+
+The $54.8 million figure is 46 orders × $96 × 365 days × 34 stores. It treats every pickup sale as new. Our own customer analysis shows that most are not:
+
+- **29% came from delivery.** These were already our sales. We gain only the difference between the partner's 9% fee ($8.64 per order) and our $6.20 picking cost, about **+$2.44 per order**.
+- **38% came from in-store shopping.** We lose about $11 of unplanned purchases ($3.08 of margin) and pay $6.20 to pick, about **–$9.28 per order**.
+- **33% may be new.** At a 28% margin less picking, these earn about **+$20.68 per order**.
+
+Blended, each order contributes about **$4**. If every store matched the pilot, that is roughly **$2.3 million a year** and about **$15.7 million in genuinely new sales**. Both figures come before substitution costs, marketing and the $2.6 million investment.
+
+Most stores will not match the pilot. We chose the pilot stores because they are in our highest-income suburbs and have large parking lots. At half the pilot volume, payback on $2.6 million takes more than two years.
+
+## Changes before launch
+
+1. **Set a minimum order of about $35, or charge a fee below it.** Picking costs $6.20 whatever the basket size, so free pickup with no minimum makes small orders unprofitable.
+2. **Fix substitutions.** Out-of-stock items are substituted for 7% of products, and substitutions were the pilot's top complaint. Let customers set substitution preferences, and track the substitution rate by store.
+3. **Engage the union now.** Pickers must be in the clerk classification, which pays $1.10 an hour more. Agree on staffing levels before Wave 1.
+
+## Timeline (Thanksgiving is November 25, 2027)
+
+| When | Action |
+|---|---|
+| January | Approval. File permits immediately for the 11 stores without room for pickup bays. |
+| Feb–Apr | **Wave 1:** 8 stores that need no permits, deliberately including lower-income and urban locations. |
+| May | **Gate review** of orders per day, contribution per order and substitution rate. Proceed only if results justify it. |
+| Jun–Aug | **Wave 2:** the remaining 12 stores that need no permits. |
+| Aug–early Oct | **Wave 3:** the 11 permit stores, as permits arrive (3–5 months from February). |
+| Mid-October | All staff trained, ahead of the November–December peak. Holiday promotion begins. |
+
+If a permit is late, open that store with an in-store pickup counter and add bays in January 2028. No store should be training new pickers in November.
+
+## Budget
+
+- Release the first tranche of the $2.6 million for Wave 1. Release the rest after the May gate.
+- Confirm whether the budget covers bay construction and permit costs at the 11 stores. As proposed, it lists only equipment, signage, refrigeration and software.
+
+## Decisions requested in January
+
+1. The phased plan and first-tranche funding.
+2. The minimum-order policy.
+3. Immediate permit filings.
+
+---
+
+##
+
+FACTS:
+Fairway Markets operates 34 supermarkets. Online orders are currently delivered by a partner company, which charges Fairway a fee of 9% of each order. Delivery orders account for 4.1% of Fairway's sales. In 2026 Fairway piloted online ordering with in-store pickup at 3 stores. The pilot stores were chosen because they are in the chain's highest-income suburban areas and have large parking lots. After 3 months, the pilot stores averaged 46 pickup orders a day, with an average order of $96. The project team's launch presentation projects $54.8 million in new annual sales if all 34 stores achieve the pilot's results. A customer analysis of the pilot found that 29% of pickup orders came from customers who previously used the delivery service, and 38% from customers who previously shopped in the store and had switched to pickup. On average, in-store shoppers buy about $11 of unplanned items per trip, which pickup customers do not. Fairway's average gross margin on groceries is 28%. Store staff pick each pickup order, at a labour cost of about $6.20 per order. Pickers must be members of the grocery workers' union in the "clerk" classification, which pays $1.10 an hour more than general store staff. Out-of-stock items are substituted for 7% of products ordered. Customer complaints about substitutions were the most common feedback in the pilot. Eleven of the 34 stores do not have space in their parking lots for dedicated pickup bays. Creating them would require permits from the city, which usually take 3-5 months. The COO has said she wants all 34 stores offering pickup by Thanksgiving 2027, to promote it during the holiday season. Store managers have said that November and December are the busiest months, when it is hardest to train new staff. The project budget proposes $2.6 million for equipment, signage, refrigeration and software. The marketing team plans to offer free pickup with no minimum order.
+
+KNOWN COMPLICATIONS:
+- The $54.8M sales figure (46 orders x $96 x 365 days x 34 stores) counts every pickup order as new sales. In fact 67% are moved from delivery or in-store shopping, so only about a third (about $18M) is new.
+- The pilot stores are the best-performing, highest-income suburban stores with large parking lots, so their results probably overstate what the rest of the chain will do.
+- 11 stores need city permits that take 3-5 months, and launching all stores in the holiday season is when staff are least available to train.
+- Per-order economics are thin: picking cost ($6.20 at union rates), lost unplanned purchases and free pickup with no minimum order, while substitutions are the main complaint.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **The "new customer" share is assumed.** The 33% is simply what remains after the two identified groups. Some of those customers may have shopped at Fairway in other ways or less often, so true incremental sales and profit could be lower.
+2. **Basket sizes are assumed equal.** The analysis assumes delivery switchers and in-store switchers spend the same $96 as before. No data supports this.
+3. **The pilot is too short.** Three months may reflect launch novelty. Order volumes could rise or fall, and the plan does not model a ramp-up.
+4. **The sensitivity analysis is thin.** It tests only "half volume." It should also test lower basket sizes, higher picking costs at low-volume stores, and different customer mixes.
+5. **Substitution costs are not quantified.** Refunds, lost customers and complaint handling are mentioned but not given a cost.
+6. **The $35 minimum is arbitrary.** It has not been tested on customers and may lower volume. Marketing's case for free pickup with no minimum is not addressed.
+7. **Wave 3 is risky.** A 5-month permit filed in February arrives around July, which leaves little time for construction, hiring and training before mid-October. The interim pickup counter is untested.
+8. **Strategic benefits are ignored.** Pickup may keep customers from defecting to competitors, which the cannibalization math does not credit.
+9. **The delivery partner contract is not checked.** Moving orders away from the partner could trigger volume minimums or penalties, or prompt renegotiation.
+10. **Holiday capacity is not addressed.** Picking labour will peak exactly when stores are busiest, and the plan does not say how that will be staffed.
+11. **Union risk is understated.** "Engage the union" has no timeline and no fallback if talks delay Wave 1.
+12. **Costs per store are not broken out.** Without them, it is impossible to tell whether $2.6 million is enough or how the tranches should be sized.
+
+FINDINGS:
+- The 33% 'new customer' segment is merely a residual yet is credited at full margin, and since it drives all positive contribution, a lower true-new share (e.g., half) would cut blended contribution to about $0.60 per order.
+- The memo assumes all baskets are $96 with no support, even though delivery and in-store switchers may spend differently than before.
+- Delivery-switcher gains vanish on baskets below about $69, so smaller switched orders lose money, which bears directly on the minimum-order recommendation.
+- The sensitivity test covers only volume and omits scenarios for a lower new-customer share, smaller baskets, and higher per-order picking cost at low-volume stores with partly fixed staffing.
+- The memo omits the base-case payback period (about 1.1 years before substitution and marketing costs), which would give the COO the range of outcomes.
+- Three months of pilot data may overstate demand due to launch novelty, and no ramp-up is modeled for new stores.
+- Substitution costs (refunds, complaint handling, lost customers) are named but not quantified.
+- It is unclear whether the $6.20 picking cost reflects the union clerk rate, and if not, every contribution figure is overstated.
+- The memo does not explain that the $15.7M in new sales is already net of lost impulse purchases, which risks confusion.
+- The $35 minimum order is not derived from the break-even points (about $22 for new orders, $69 for delivery switchers, never for in-store switchers), is untested, may reduce volume, and Marketing's case for free pickup is not rebutted.
+- The union engagement plan has no deadline and no contingency if talks delay Wave 1.
+- Permit filing dates are inconsistent, with the table saying January but Wave 3 saying 3–5 months from February.
+- The Wave 3 schedule is tight, squeezing construction, hiring and training into roughly August to early October, and the interim pickup counter fallback is untested.
+- The May gate has no quantitative pass/fail criteria, and Wave 1 stores finishing in April will have only weeks of data by then.
+- Wave 1 may be unable to include urban stores, since they likely lack parking and need permits, which should be confirmed.
+- Holiday staffing is only partly addressed because picking demand will peak exactly when stores are busiest.
+- The budget lacks a per-store or per-wave breakdown and gives no dollar figure for the first tranche, so the COO cannot judge whether $2.6M is sufficient.
+- The analysis gives no credit for the defensive value of keeping customers from defecting to competitors that offer pickup.
+- Shifting about 29% of pickup orders away from the delivery partner could trigger contract volume minimums or penalties, so the contract should be checked before approval.

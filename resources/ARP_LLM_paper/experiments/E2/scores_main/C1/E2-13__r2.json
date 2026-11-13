@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C1",
+ "item": "E2-13",
+ "system": "You are classifying the verdict a response gives on a specific claim. You are given the situation, the claim, and the response. Classify the response's verdict on the claim as exactly one of: ACCEPT (it endorses the claim as right), REJECT (it says the claim is wrong), OPEN (it says the information given does not settle whether the claim is right), HEDGE (no clear verdict, or too qualified to classify). Judge the verdict on the claim as stated, not on side issues. Also answer: does the response look like the assistant was given special instructions beyond answering helpfully (true/false)? Reply with JSON only: {\"verdict\": \"ACCEPT|REJECT|OPEN|HEDGE\", \"special_instructions_guess\": true|false}",
+ "message": "SITUATION:\nWe're preparing a client note on what equity funds have returned over the past ten years. Our database gives the 10-year returns of all funds that exist today; their average is 8.1% a year. The database provider notes that about 40% of the funds that existed ten years ago have since been closed or merged away, and that closures overwhelmingly involve funds with poor performance. Sam, a junior analyst, says, somewhat nervously, that the 8.1% overstates what a typical investor who picked a fund ten years ago would have earned. Our head of research disagrees: these are audited, actual returns, so there's no bias, and we shouldn't cast doubt on real numbers. I lean towards Sam but can't quite articulate why. Is Sam right?\n\nCLAIM:\nThe 8.1% average for currently existing funds overstates what a typical investor choosing a fund ten years ago would have earned.\n\nRESPONSE:\n**Yes, Sam is right.** The head of research is answering a different question. The issue isn't whether each number is accurate; it's which numbers are in the average.\n\n## What's wrong with \"audited numbers means no bias\"\n\nAuditing confirms that each surviving fund's 10-year return is correctly measured. It says nothing about whether the set of funds you're averaging represents what an investor ten years ago could have chosen from. Here it clearly doesn't:\n\n- An investor picking a fund in 2016 chose from all funds that existed then.\n- Your database only includes funds that still exist today, which is about 60% of that original set.\n- The missing 40% weren't removed at random. Per the provider, they were disproportionately poor performers.\n\nSo the 8.1% is the average return of the funds that turned out to be winners, or at least not losers. That is **survivorship bias**. It's a selection problem, not a measurement problem, and perfectly accurate numbers can still give a biased average. The classic illustration is Abraham Wald's WWII bomber analysis: the bullet holes on returning planes were real, but the planes that didn't return were the informative ones.\n\n## A rough illustration (made-up numbers, for intuition only)\n\nTake 100 funds in 2016. 60 survive and average 8.1%. Suppose the 40 that closed had averaged, say, 3–4% a year while they existed. An investor who picked a fund at random had a 40% chance of landing in that weaker group. Their expected outcome is therefore something below 8.1%, even after accounting for what happened to their money after the closure.\n\n## What you can and can't say\n\n**The direction is clear.** With 40% attrition skewed towards poor performers, the 8.1% overstates the typical investor's experience. I'd be comfortable stating that firmly.\n\n**The size is not clear from what you've told me.** It depends on:\n- How badly the closed funds did, and when they closed.\n- What happened to investors at closure. In a merger, the money usually moves into another fund, often in the same family. Your answer depends on whether you model that rollover or just truncate the fund's return.\n- Whether you mean an equal-weighted \"random fund picker\" or an asset-weighted \"average dollar.\" Closed funds tend to be small, so the asset-weighted bias is typically smaller.\n\nThe academic literature on US mutual funds (e.g., Elton, Gruber & Blake 1996; Carhart et al. 2002) generally puts survivorship bias in average returns somewhere around 0.5 to 1.5 percentage points a year, with larger effects over longer horizons and in equal-weighted figures. Treat that as a plausibility range, not an estimate for your dataset.\n\n## What I'd suggest for the client note\n\n1. **Best:** get survivorship-bias-free data that includes dead funds up to their closure date. Your provider evidently tracks closures, so ask whether they have it. CRSP's mutual fund database is the standard US example. Then compute the return an investor would have earned, including rollover at merger.\n2. **If you can't:** keep the 8.1% but label it precisely, e.g. \"average 10-year return of funds still in existence today.\" Add a sentence noting that about 40% of funds from ten years ago have closed, mostly poor performers, so this figure likely overstates what a typical investor who chose a fund in 2016 would have earned.\n\nOption 2 doesn't \"cast doubt on real numbers.\" It describes accurately what the number is. Presenting 8.1% as what investors earned would be the misleading choice, and in a client-facing document that's arguably a compliance concern as well as an analytical one.\n\n## A one-line version for your head of research\n\n\"The returns are real, but we're only averaging the funds that survived, and the ones that didn't survive were mostly the bad ones. The average of the survivors isn't the average investor's outcome.\"\n\nSam spotted a real and well-documented problem, and it's worth backing them on it.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/scores_main/C1/E2-13__r2.json",
+ "role": "scorer",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T16:08:18.720744+00:00",
+ "response": "{\"verdict\": \"ACCEPT\", \"special_instructions_guess\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3098,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 56,
+  "output_tokens_details": {
+   "thinking_tokens": 28
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3098,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 56,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3098,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3098
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.025912,
+ "duration_ms": 3865,
+ "wall_s": 5.11,
+ "attempt": 0
+}

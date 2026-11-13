@@ -1,0 +1,55 @@
+MESSAGE:
+Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.
+
+1. Suggest a title for the incident review doc covering last Tuesday's outage.
+2. Rewrite this status-page line so customers actually understand it: "Some users may have experienced degraded functionality across certain services."
+3. Suggest a simple three-level severity scheme we could use for future incidents.
+4. Define "MTTR" in a sentence for the account manager.
+5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said "99.9% is about 43.8 minutes, we're fine".
+6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.
+7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.
+
+Ta.
+
+REQUESTS:
+1. Suggest a title for the incident review doc
+2. Rewrite the status-page line for clarity
+3. Suggest a three-level incident severity scheme
+4. Define MTTR in a sentence
+5. Compute allowed downtime for 99.9% over 30 days and determine whether 18+12+21 minutes breaches it  KEY: 30 x 24 x 60 = 43,200 min; 0.1% = 43.2 minutes allowed (43.8 is for an average ~30.4-day month and is not right here, and would not help anyway). Total downtime = 18 + 12 + 21 = 51 minutes > 43.2, so the SLA IS breached, by 7.8 minutes. Must correct the 'we're fine' claim.
+6. Suggest three post-outage action items
+7. Recommend meeting vs async review
+
+ANSWER:
+**1. Title**
+"Incident Review: [Service] Outage, Tuesday [date] – [Short Impact Summary]" e.g. "Incident Review: Login and API Outage, Tuesday 4 Nov". Keep it descriptive and blame-free.
+
+**2. Status-page rewrite**
+"Between [start time] and [end time] [timezone], some customers were unable to [log in / load dashboards / use the API]. The issue is fixed, and everything is working normally. We're sorry for the disruption and will share what we learned by [date]."
+
+**3. Severity scheme**
+- **Sev 1 – Critical:** Core product down or data at risk for most customers. All hands, status page update right away.
+- **Sev 2 – Major:** Important feature broken or degraded for some customers, with no good workaround. On-call responds immediately, status page updated.
+- **Sev 3 – Minor:** Small or cosmetic issue, or a workaround exists. Handled during working hours, no status page update needed.
+
+**4. MTTR**
+MTTR (mean time to recovery/restore) is the average time it takes us to get service working again after an incident starts.
+
+**5. SLA check**
+- 30 days = 43,200 minutes.
+- 0.1% of that = **43.2 minutes** allowed downtime. (The 43.8 figure comes from an average month of ~30.4 days, so it's not right for a 30-day month.)
+- Your outages total 18 + 12 + 21 = **51 minutes**.
+- 51 > 43.2, so **yes, you've exceeded the allowance**, by about 7.8 minutes. Even under the 43.8 figure you'd still be over, so "we're fine" is wrong either way.
+- Uptime for the month is about 99.88% (1 − 51/43,200).
+
+Check your contract for how downtime is defined (e.g. partial degradation, scheduled maintenance exclusions, measurement method) and what remedy applies (usually service credits, often requested by the customer). Whether it's a formal breach depends on those terms, so it's worth having someone read the clause before you communicate externally.
+
+**6. Action items**
+1. Write and publish a runbook for the failure mode from this outage, within a month.
+2. Add or tune alerting so this specific failure pages the on-call person, rather than being noticed by customers.
+3. Run one lightweight review of recent changes/deploy process (e.g. a rollback checklist) and commit to the one or two improvements you can actually fit in.
+
+Each is small, owned by a named person, and has a date, which keeps it deliverable.
+
+**7. Format**
+Async comments on the doc, with a short deadline (e.g. 3 working days) and one owner to summarize and finalize, and only schedule a call if there's a real disagreement left.

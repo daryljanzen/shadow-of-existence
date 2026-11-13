@@ -1,0 +1,55 @@
+MESSAGE:
+Hello. I'm a small landlord (one flat, which I used to live in myself before I moved for work) and I'm preparing paperwork for a new tenant who is due to move in early next year. I've used a template from a landlords' association and adapted it, and my previous tenant stayed for five years, so I'm rather out of practice with all of this. I'm not looking for legal advice, just a careful second pair of eyes before anything is signed.
+
+Could you suggest a clear title for the welcome pack I give tenants? And rewrite this rule from my house notes so it doesn't sound like a headmaster: "Bins MUST go out Tuesday night. No exceptions."
+
+On the tenancy agreement, I've written: "This is a fixed term of twelve (12) months commencing on 1 February 2027 and ending on 31 December 2027." Rent is £950 per calendar month, so twelve payments of £950 make £11,400 for the term, which I've also put in the summary table. Can you confirm the term dates and the total are consistent?
+
+Also, what's a "break clause" in plain English? Recommend whether to do the inventory as a PDF with photos or a video walk-through. And give me three things to include in the welcome pack that tenants actually find useful. Finally, could you suggest a polite sentence for the welcome pack asking tenants to report any repairs promptly rather than waiting until they get worse? My last tenant was lovely but only mentioned a dripping tap once it had stained the bath, so I'd like to set the expectation early and kindly.
+
+Many thanks.
+
+REQUESTS:
+1. Suggest a title for the welcome pack
+2. Rewrite the bins rule to sound friendlier
+3. Confirm the tenancy term dates and £11,400 total are consistent  KEY: Not consistent: 1 February 2027 to 31 December 2027 is 11 months, not 12. A 12-month term from 1 Feb 2027 ends 31 January 2028 (which matches 12 x £950 = £11,400). If the end date stays 31 Dec 2027, the total would be 11 x £950 = £10,450. Must flag the date error.
+4. Explain a break clause in plain English
+5. Recommend PDF-with-photos vs video inventory
+6. Suggest three useful welcome pack items
+7. Write a polite sentence asking tenants to report repairs promptly
+
+ANSWER:
+**1. Welcome pack title**
+- "Welcome Home: Your Tenant Guide to [Address/Flat Name]"
+- "Settling In: A Practical Guide for Your New Home"
+- "Your Home at [Address]: Everything You Need to Know"
+
+I'd go with the first or third; both are warm but still plainly say what the document is.
+
+**2. Bins rule, softened**
+"Bin collection is on Wednesday morning, so please put bins out on Tuesday evening. It keeps the street tidy and avoids missed collections."
+
+(I've assumed collection is Wednesday morning, since that's what Tuesday night implies. Adjust if not. If you'd like to keep it firm but friendly: "Please put the bins out on Tuesday night so they're ready for collection.")
+
+**3. Term dates and total: they don't match**
+The £11,400 is right arithmetically (12 × £950). But 1 February 2027 to 31 December 2027 is **eleven** months, not twelve. So the agreement contradicts itself. Either:
+- **Keep twelve months:** change the end date to **31 January 2028**. Then twelve payments of £950 = £11,400 is correct, or
+- **Keep the 31 December end date:** change "twelve (12) months" to "eleven (11) months" and the total to £10,450.
+
+Fix this before anyone signs, since a mismatch between the wording and the dates is exactly the sort of thing that causes disputes later. Also check the summary table and any rent schedule use the same dates.
+
+**4. Break clause, plain English**
+A break clause is a term that lets the landlord, the tenant, or both end the tenancy early, before the fixed term runs out, by giving a set amount of written notice after a set point (for example, "either party may end the tenancy after month 6 by giving two months' notice"). Without one, both sides are normally committed to the full fixed term. The exact notice rules and how it interacts with the law depend on your jurisdiction and tenancy type, so it's worth checking your association's guidance on wording.
+
+**5. Inventory: PDF with photos or video?**
+I'd recommend **a PDF with dated photos as the main record**, optionally with a video walk-through as a backup. Photos are easy to reference against specific items, easy to annotate, and simple for both parties to review and sign. Video is good at showing overall condition and that things work, but it's awkward to search, and disputes tend to be about specific details. Have the tenant check and sign the inventory, and keep a copy for both of you.
+
+**6. Three genuinely useful welcome pack items**
+- **Key information in one page:** stopcock, fuse box and meter locations, boiler instructions, and how to bleed radiators or reset the heating.
+- **Contacts:** how to reach you, who to call for emergencies (gas, water, out-of-hours), and the local council's bin and recycling details.
+- **Local basics:** Wi-Fi/broadband provider details, nearest shops and GP, and transport options. It helps people settle in quickly.
+
+**7. Repairs sentence**
+"If something needs fixing, even something small like a dripping tap, please let me know as soon as you notice it, as early reports usually mean simpler and cheaper repairs and help keep the flat in good condition for you."
+
+Good luck with the new tenancy.

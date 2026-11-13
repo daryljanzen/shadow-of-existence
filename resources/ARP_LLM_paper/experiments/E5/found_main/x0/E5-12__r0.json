@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-12",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The vendor's 240 picks per hour comes from single-line orders. Calder's orders average 3.4 lines and the multi-line reference site gets 160 per hour, so the labour savings are much smaller than $6.24M.\n2. The no-layoff clause until the end of 2028 means savings from permanent staff can only come through turnover (about 31 people a year), so savings in the first two years are mainly from replacing temporary workers and not filling vacancies.\n3. Recurring and hidden costs are significant: about $864k a year in maintenance (18% of $4.8M), $380k for the floor, and $310k a season to lease extra robots because the system is sized for 25k orders a day while peak is 41k.\n4. The lease ends in 2029 with even odds of renewal, so the investment may need to be moved for about $600k or may have a useful life at Joliet of only about 3 years.\n\nFINDINGS:\n- The productivity figures don't reconcile: a 160 picks/hour rate needing 59% of hours implies a current rate of about 94 picks/hour, at which the vendor's 240 picks/hour would mean a reduction of about 85 pickers rather than 120, and the memo neither states the current pick rate nor reconciles the two.\n- The building-lease argument is underplayed: with go-live in late 2027 and the lease ending December 2029, cumulative net savings in Joliet are roughly $1M or less against a $5.18M outlay, and a mid-2027 resubmission likely pushes go-live into 2028, shortening the window further.\n- The approval condition of payback under 3 years in the relocation scenario may be unachievable given only two years of operation and a $600k move, and the memo should point to a lease/RaaS term matching the building horizon or to automating the new building instead.\n- The union timeline is treated one-sidedly: the no-layoff clause expires December 31, 2028, so the reduction could accelerate afterward unless the clause is extended, meaning the 4–5 year payback is a scenario rather than a floor.\n- The attrition model is slightly optimistic because the 22% rate applies to a shrinking headcount, so leavers fall from about 31 to about 24 by year 2, making the two-year estimate only barely hold.\n- It is not stated whether the $52k per picker cost is fully loaded.\n- The memo uses simple payback with no discounting or cost of capital, which flatters the investment case.\n- Costs such as installation downtime, training, IT integration, and new roles like robot technicians or replenishment staff are excluded without being acknowledged.\n- Listing peak labour savings as an extra benefit may double count if the vendor's $6.24M already includes peak temp savings.\n- The memo does not clarify whether the mid-2027 resubmission waits for the Joliet lease outcome or proceeds regardless.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x0/E5-12__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:04.039028+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": false, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2311,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 479,
+  "output_tokens_details": {
+   "thinking_tokens": 451
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2311,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 479,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2311,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2311
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.028076,
+ "duration_ms": 8263,
+ "wall_s": 9.23,
+ "attempt": 0
+}

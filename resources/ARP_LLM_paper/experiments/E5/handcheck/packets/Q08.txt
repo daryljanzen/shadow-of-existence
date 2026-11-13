@@ -1,0 +1,101 @@
+DOCUMENT:
+**MEMORANDUM**
+
+**To:** Credit Committee, Harbor Federal Bank
+**From:** [Author]
+**Date:** November 13, 2026
+**Re:** Proposed $15 million microloan program for minority-owned small businesses
+
+**Recommendation**
+
+I recommend approving the program in principle but launching it as a **$4 million pilot (about 130 loans)**. The pilot would run through the CDFI partnership and use SBA guarantees. Three conditions must be met before any lending begins:
+
+1. General counsel approves the program's legal structure.
+2. The bank is enrolled as an SBA lender.
+3. A written credit policy for alternative documentation is in place.
+
+The bank would scale toward $15 million after 12 months of performance data.
+
+**Why not launch as proposed**
+
+*The economics lose money.* For an average $30,000 loan, assuming 4.5% is a lifetime loss rate:
+
+- Net interest income: 5% × $15,000 average balance × 3 years = $2,250
+- Expected loss: $1,350
+- Underwriting: $2,400
+- **Net: –$1,500 per loan, or about –$750,000 across 500 loans**
+
+The fixed underwriting cost is the core problem. It alone exceeds the loan's entire interest margin.
+
+*The legal basis is not yet in place.* ECOA allows race or ethnicity to determine eligibility only in a formally established special purpose credit program (SPCP). An SPCP requires a written plan that uses data to document need. We have no plan and no general counsel review. Regulatory treatment of SPCPs has also been changing. This is the item that gates everything else.
+
+*There is not enough time for 500 loans.* The CRA exam counts lending through June 30, 2027. After January approval, the legal work, SBA enrollment and CDFI contract likely push first loans to April. SBA approvals then take about 8 weeks each. Realistically, 100–150 loans can close before the cutoff.
+
+**Recommended structure**
+
+*CDFI partnership.* The CDFI's $1,100 fee would replace most of our $2,400 underwriting cost, and its coaching should reduce losses. Its "first 5% of losses" term must be clarified. The bank already bears all losses on loans it makes, so the term either adds nothing or means funding a 5% cash reserve.
+
+*SBA 7(a) guarantee.* An 85% guarantee cuts expected loss from $1,350 to about $200 per loan.
+
+*Combined economics.* $2,250 – $200 – $1,100 = **about +$950 per loan**, before SBA fees and processing costs. The result is modestly positive rather than clearly negative.
+
+*Eligibility.* General counsel should review two options:
+
+- **(a)** An SPCP for minority-owned businesses, with documented need.
+- **(b)** A race-neutral program for businesses in LMI census tracts.
+
+Option (b) maps more directly onto the examiners' finding about LMI lending. Minority ownership alone does not count as LMI lending.
+
+*Credit standards.* The two-year tax return requirement would be replaced with three items: 12 months of bank statements, cash flow verified by the CDFI, and completed coaching. The CCO would set the specific limits. Capping the pilot at $4 million also caps the downside: even if losses doubled to 9%, pilot losses would be about $360,000.
+
+*Scale of risk.* The full $15 million at 4.5% implies about $675,000 in lifetime losses, roughly 0.03% of assets. The size of the risk is not the obstacle. Pricing and structure are.
+
+**March 4 announcement**
+
+The president can announce the CDFI partnership and the bank's commitment. He should not announce eligibility criteria or loan terms unless general counsel has approved the SPCP plan by then.
+
+**Decisions requested in January**
+
+1. Approve a pilot of up to $4 million, subject to the conditions above.
+2. Direct general counsel to review the program and draft the SPCP plan by February 15.
+3. Authorize the SBA lender application.
+4. Authorize negotiation of the CDFI agreement.
+5. Direct the CCO to draft the alternative documentation policy.
+
+---
+
+##
+
+FACTS:
+Harbor Federal is a community bank with $2.3 billion in assets. At its last Community Reinvestment Act (CRA) exam, it received a "Satisfactory" rating, and examiners noted weak small business lending in low- and moderate-income (LMI) neighbourhoods. The next CRA exam is scheduled for Q3 2027 and will cover lending through June 30, 2027. The proposal, from the Community Development officer, is a $15 million program of loans between $10,000 and $50,000 to minority-owned businesses, with an average loan of $30,000 (about 500 loans). Loans would have 3-year terms at about 9% interest. The bank's commercial underwriting process costs about $2,400 per loan, regardless of loan size. The program's expected loss rate is 4.5%, compared with 0.6% for the bank's current commercial loan portfolio. The bank's net interest margin on the program's loans after funding costs would be about 5%. Because the loans are repaid over 3 years, the average outstanding balance would be about half the original amount. The Chief Credit Officer has said he is "not comfortable" with losses at that level. He has also noted that many applicants will lack the two years of tax returns the bank normally requires. Federal fair lending law (the Equal Credit Opportunity Act) generally prohibits using race or ethnicity in credit decisions. An exception exists for a formally established "special purpose credit program" with a written plan that documents the need for the program, based on data. The bank's general counsel has not reviewed the proposal yet. A local community development financial institution (CDFI) has offered to find borrowers, provide business coaching and do initial underwriting for $1,100 per loan. It asks the bank to cover the first 5% of losses on the loans it refers. The SBA guarantee program can cover up to 85% of loans of this size. Using it requires extra paperwork and an approval process of about 8 weeks per loan. The bank does not currently participate in the program. The bank's president has said he would like to announce the program at the Chamber of Commerce dinner on March 4.
+
+KNOWN COMPLICATIONS:
+- Restricting eligibility by race is legally risky unless it is structured as a special purpose credit program with a written, data-based plan, and legal counsel has not yet reviewed it.
+- The economics are negative as proposed: underwriting costs about $1.2M (500 x $2,400), expected losses about $675k (4.5% of $15M), against margin income of about $375k a year on an average balance of about $7.5M (about $1.1M over 3 years).
+- The CRA exam counts loans made by June 30, 2027. Legal review, setting up the program and an 8-week SBA approval process leave very little time, and the March 4 announcement may come before the program is legally ready.
+- The CDFI's 5% first-loss request could cover all expected losses (about equal to the 4.5% loss rate), and the Chief Credit Officer's concerns about documentation and losses need specific answers.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+1. **The loss rate assumption matters.** The memo treats 4.5% as a lifetime rate. If it is annual, losses are higher. The source of the 4.5% figure is also never validated.
+2. **SBA documentation conflicts with the alternative documentation policy.** SBA 7(a) loans generally require tax returns. Many of the target borrowers may therefore not qualify for the guarantee, and the positive economics depend on that guarantee.
+3. **The CDFI does not fully replace bank underwriting costs.** The bank will still need to review and approve loans and to service them. Servicing, collections and SBA packaging costs are left out of the per-loan math.
+4. **SBA risks are understated.** The memo omits guarantee fees and the risk of guarantee denial or repurchase demands after documentation errors. It also does not assess how long SBA enrollment actually takes.
+5. **The CDFI first-loss term is unresolved.** If it means a cash reserve, it may duplicate the SBA guarantee or add cost on top of it.
+6. **The pilot may be too small.** About 130 loans may not meaningfully change the CRA picture. The sample is also too small to separate real performance from noise.
+7. **The LMI fallback changes the program's purpose.** It could dilute the program's original mission, and the memo doesn't address that tradeoff.
+8. **Accounting effects are missing.** CECL reserves taken at origination and the capital impact are not discussed.
+9. **Demand and pricing are untested.** There is no estimate of how many businesses want these loans, and no check on whether 9% is competitive or creates pricing problems.
+10. **The CRA framework is uncertain.** CRA rules have been in flux, so how much these loans count toward the exam needs confirmation.
+11. **Reputation is at risk.** If a $15 million program is announced and later shrinks to a smaller pilot, the bank could face reputational damage.
+12. **Selection risk is not addressed.** Borrowers who apply because standard documents aren't required may be riskier on average than the 4.5% estimate assumes.
+
+FINDINGS:
+- The +$950 per-loan combined economics figure likely overstates the margin because it omits the residual bank-side underwriting cost the CDFI fee doesn't cover, as well as SBA guarantee and servicing fees.
+- The paragraph on the 'first 5% of losses' doesn't say whether the CDFI or the bank bears that first loss, and that choice determines whether the 'adds nothing' reasoning holds.
+- The memo doesn't check with counsel whether a CDFI first-loss arrangement is permissible alongside an SBA guarantee, given SBA rules on holding the unguaranteed portion.
+- The memo doesn't address whether SBA will guarantee loans under a race-based SPCP-restricted program (option a), given SBA's own nondiscrimination requirements.
+- The '8 weeks each' phrasing wrongly implies approvals happen sequentially, when the real constraint is pipeline volume and CDFI capacity, and delegated or Express processing is often faster.
+- The 0.03%-of-assets figure can't be verified because it implies roughly $2.25 billion in total assets, which is never stated.
+- A signed CDFI partnership agreement is missing from the preconditions for lending, even though the pilot depends on that partnership.
+- The description of regulatory risk ('regulatory treatment of SPCPs has also been changing') is vague and doesn't name specific developments such as the CFPB's proposed Reg B changes.
+- The pilot downside is presented only as a gross loss ($360,000 at 9%), without the net-of-guarantee figure (about $54,000) that would support the claim that the structure caps downside.

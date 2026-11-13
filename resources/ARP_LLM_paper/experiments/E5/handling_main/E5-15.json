@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "doc",
+ "item": "E5-15",
+ "system": "You are judging a document against a key of complications in the facts it was written from. For each complication, decide whether the document HANDLES it (meets the stated good handling in substance) or MISHANDLES it (omits it, gets it wrong, or handles it materially worse than the stated good handling). Reply with JSON only: {\"complications\": {\"1\": \"HANDLES|MISHANDLES\", ...}}",
+ "message": "FACTS:\nLakemont has about 94,000 residents and 38,000 housing units. There are currently 1,420 active short-term rental listings, up from 610 in 2019. Of these, 520 are rooms or accessory units in homes where the owner lives, and 900 are entire homes. 640 of the entire-home listings are run by 70 operators who each have three or more listings. Median rent in Lakemont has risen 31% since 2019. Over the same period, median rent rose 27% across the region, including in towns with very few short-term rentals. Lakemont's rental vacancy rate is 2.1%. A 2024 study by the state university looked at 40 cities and found that each 1% increase in STR listings was associated with a 0.018% increase in rents. Councilmember Ruiz's proposal would limit entire-home STR permits to 600, awarded by lottery. STRs in owner-occupied homes would not be capped. Her office estimates that about 300 entire homes would return to the long-term rental or sales market. Lakemont collects $3.1 million a year in lodging tax from STRs. That money currently pays for about 40% of the city's parks maintenance budget. Lakemont has about 1,100 hotel rooms. During the two-week summer arts festival, the visitors' bureau says nearly every hotel room and STR is booked, and that the festival brings in about $14 million in visitor spending. The visitors' bureau opposes the cap. In 2025 the state passed a law that prevents cities from banning STRs outright but allows caps that are \"reasonably related to housing availability.\" A lawsuit challenging a similar cap in the nearby city of Brookfield is in state court, and a ruling is expected in the spring. A local tenants' group supports the cap and has collected stories from 45 families who were displaced when their landlords converted homes to STRs. A group representing STR hosts says most hosts are local families earning supplementary income.\n\nKEY:\n1. The regional comparison weakens the main argument: rents rose 27% across the region, including in towns with few STRs, compared with 31% in Lakemont, and the study's effect size is small. STRs are at most a contributing factor in rent increases. GOOD HANDLING: Makes a measured claim (STRs are one contributor, and the units matter given 2.1% vacancy) rather than saying STRs caused rent increases, and does not exaggerate the study's findings.\n2. Returning 300 units is less than 1% of the housing stock, but it is meaningful in a market with a 2.1% vacancy rate. How this is framed decides whether the op-ed is honest. GOOD HANDLING: Describes the 300 units accurately (about 0.8% of homes) and explains why that still matters in a very tight market.\n3. $3.1M in lodging tax pays for 40% of parks maintenance, and the festival depends on STRs during peak season. The opponents' arguments are strong. GOOD HANDLING: Deals with the revenue and festival concerns (e.g., how much revenue would be lost under a 600-permit cap, seasonal or festival exceptions, other funding).\n4. The cap targets entire homes and multi-listing operators, not local families renting rooms, which answers the hosts' argument, and the pending Brookfield lawsuit creates legal risk. GOOD HANDLING: Makes clear that owner-occupied hosts are not affected, pointing to the operator figures, and acknowledges the lawsuit and how the proposal is designed to fit the state law.\n\nDOCUMENT:\n# A Reasonable Cap on Short-Term Rentals Puts Homes Back Within Reach\n\n*By Dana Ruiz, Lakemont City Councilmember*\n\nIn February, the council will vote on my proposal to cap entire-home short-term rental permits at 600. I'll explain what it does, what it won't do, and why I think it's worth doing.\n\nFirst, the scale of change. In 2019, Lakemont had 610 short-term rental listings. Today it has 1,420. Of those, 900 are entire homes, meaning houses and apartments where no one lives full-time. And 640 of those 900 are run by just 70 operators, each with three or more listings. When people say \"most hosts are local families earning extra income,\" that is true of many hosts. It is not true of most of our entire-home listings.\n\nMy proposal targets that part of the market. The 520 rooms and accessory units in owner-occupied homes would not be capped at all. If you rent out a basement suite or a spare room, nothing changes for you.\n\nNow let me be straight about rents. They are up 31% in Lakemont since 2019, but they are up 27% across the region, including in towns with almost no short-term rentals. Short-term rentals did not cause most of our rent increase, and a cap will not reverse it. A 2024 state university study of 40 cities found a small but real effect: each 1% increase in listings is associated with roughly a 0.018% increase in rents. Applied to our growth, that suggests short-term rentals added a few percentage points to Lakemont rents. That is real money for families already stretched, but it is not the whole story.\n\nThe stronger case is supply. Our rental vacancy rate is 2.1%, which is very tight. My office estimates the cap would return about 300 entire homes to the long-term rental or sales market. In a tight market, 300 homes matter. They are 300 households who don't have to leave town. Our local tenants' group has documented 45 families displaced when landlords converted their homes into short-term rentals. Those are our neighbors.\n\nThere are real costs, and I won't pretend otherwise. Short-term rentals generate $3.1 million a year in lodging tax, about 40% of our parks maintenance budget. Fewer entire-home listings means some of that revenue declines. Before the vote, I will bring a plan to cover the gap rather than leave parks to absorb it. The visitors' bureau worries about the summer arts festival, when nearly every room in town is booked. That concern deserves a serious answer, and I am open to a seasonal or festival-period allowance.\n\nFinally, the law. State law since 2025 bars outright bans but allows caps \"reasonably related to housing availability.\" A cap tied to vacancy and displacement data fits that standard. A similar cap in Brookfield is being challenged in court, with a ruling expected this spring, and we should write our ordinance carefully with that in mind.\n\nThis is a measured step: protect owner-occupied hosts, limit the commercial conversion of homes, and get several hundred houses back to people who live here. I urge the council to support it.\n\n---\n\n##",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/handling_main/E5-15.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:07:12.542743+00:00",
+ "response": "{\"complications\": {\"1\": \"HANDLES\", \"2\": \"MISHANDLES\", \"3\": \"HANDLES\", \"4\": \"HANDLES\"}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3556,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 368,
+  "output_tokens_details": {
+   "thinking_tokens": 316
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3556,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 368,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3556,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3556
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035816,
+ "duration_ms": 7637,
+ "wall_s": 8.51,
+ "attempt": 0
+}

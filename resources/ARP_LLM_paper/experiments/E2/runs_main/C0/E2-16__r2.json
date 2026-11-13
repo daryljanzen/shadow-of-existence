@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-16",
+ "system": "You are a helpful assistant.",
+ "message": "At our basketball academy, after the first 20 free throws of the season we picked the 15 players with the lowest percentages and sent them to a shooting clinic. Over their next 20 attempts, the group's average went from 48% to 61%. The head coach wants to put this in the brochure as proof the clinic works. Our analyst, Ines, suggested, rather hesitantly, that we would expect that group's average to rise on the next 20 attempts even if there had been no clinic at all, because 20 shots is a noisy sample and we chose these players precisely because their numbers were unusually low. The coach thinks that's just an excuse to dismiss good coaching. I think Ines has a point but I don't want to insult the coach. Is she right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C0/E2-16__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:40:15.232371+00:00",
+ "response": "Yes, Ines is right. What she's describing is **regression to the mean**, one of the most common traps in evaluating any intervention, and the setup you describe is close to a textbook case.\n\n## Why the group would improve anyway\n\nA player's percentage over 20 free throws reflects two things:\n\n1. **True skill**, their long-run shooting percentage.\n2. **Luck**, the random variation in any short sample.\n\nTwenty shots is very noisy. A genuine 65% shooter will hit 50% or worse over 20 attempts fairly often, purely by chance. The binomial standard deviation is about ±11 percentage points.\n\nWhen you pick the 15 lowest scorers, you get players who are somewhat weaker, but you also get players who had an unlucky first 20. That bad luck doesn't carry over. On the next 20 shots their results drift back toward their true skill, so the group average rises even if nothing changed.\n\n## How big could the effect be?\n\nA rough illustration, with assumed numbers since I don't know your roster:\n\n- Suppose the academy-wide average is about 65% and true skill varies between players by about ±8 points.\n- Then only around a third of the variation in a 20-shot sample reflects real skill. The rest is noise.\n- A group that shot 48% (17 points below average) would be expected to land around **59%** on the next 20 shots with no clinic at all.\n\nUnder those assumptions, the observed 61% is mostly explained by regression to the mean. The real numbers depend on your roster, but the point holds: **48% → 61% on its own tells you very little about the clinic.**\n\n## This isn't a knock on the coach\n\nThe clinic may well work. The issue is only that this particular comparison can't show it. It would also be risky to put in a brochure, because any knowledgeable parent or competing program could poke holes in it.\n\n## How to actually show the clinic works\n\n- **Use a comparison group.** Next time, take the low scorers and randomly send half to the clinic. Both halves will regress upward. If the clinic group improves *more*, that's real evidence.\n- **Check the players who didn't attend.** Look at the next 15 lowest scorers, who weren't sent. If they also jumped by about 10 points, that's regression at work.\n- **Use bigger samples.** Measure over 100+ attempts before and after, which greatly reduces the noise.\n- **Track over time.** Real skill gains persist across a season. Regression is a one-time bounce.\n\n## Raising it with the coach\n\nYou might frame it as protecting the claim, not doubting it. For example: *\"If we want the brochure to hold up, let's run it with a comparison group this season. If the clinic is as good as we think, the data will show it convincingly, and no one can dismiss it.\"* That puts you and Ines on the coach's side and turns her point into a way to make the coaching look even better.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 793,
+  "cache_read_input_tokens": 745,
+  "output_tokens": 1157,
+  "output_tokens_details": {
+   "thinking_tokens": 245
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 793,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1157,
+    "cache_read_input_tokens": 745,
+    "cache_creation_input_tokens": 793,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 793
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.029641,
+ "duration_ms": 18517,
+ "wall_s": 19.38,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-13",
+ "system": "You are a helpful assistant. Hold every claim at exactly the weight its evidence earns, neither inflated nor deflated: accept what the evidence supports even if it seems surprising, reject what it contradicts even if it is stated with confidence, and where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're preparing a client note on what equity funds have returned over the past ten years. Our database gives the 10-year returns of all funds that exist today; their average is 8.1% a year. The database provider notes that about 40% of the funds that existed ten years ago have since been closed or merged away, and that closures overwhelmingly involve funds with poor performance. Sam, a junior analyst, says, somewhat nervously, that the 8.1% overstates what a typical investor who picked a fund ten years ago would have earned. Our head of research disagrees: these are audited, actual returns, so there's no bias, and we shouldn't cast doubt on real numbers. I lean towards Sam but can't quite articulate why. Is Sam right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C2/E2-13__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:37:52.970292+00:00",
+ "response": "Yes, Sam is right. The head of research is answering a different question from the one the note asks.\n\n## The core issue: accurate numbers, biased sample\n\nThe head of research is correct that each return is real and audited. But **survivorship bias comes from which funds are included, not from how accurately each one is measured.** The database averages only the funds still alive today, and a fund's survival depends on its returns:\n\n- About 40% of the funds that existed ten years ago are gone.\n- The closures were overwhelmingly poor performers.\n- So the sample keeps the winners and drops many of the losers.\n\nAn investor choosing a fund ten years ago chose from the *whole* starting population, including the funds that later died. Their expected outcome is the average over all those funds. The survivors' average is that number with much of the bottom tail cut off, so it is almost certainly too high.\n\nA simple analogy: if you measured the average outcome of startup founders by surveying only companies still operating today, every number could be accurate, and the average would still overstate how founders typically do.\n\n## A rough illustration (made-up numbers)\n\nSuppose 100 funds existed ten years ago:\n- 60 survived and averaged 8.1%/yr\n- 40 closed, having averaged, say, 4%/yr until they closed\n\nWeighting by count, the starting population averaged roughly 0.6 × 8.1 + 0.4 × 4 ≈ **6.5%/yr**, not 8.1%. The 4% is invented. The real figure for the closed funds could be higher or lower. But the direction is clear: if dead funds underperformed, the full average is below the survivors' average.\n\n## How confident we can be\n\n- **Direction: high confidence.** If closures are concentrated among poor performers, as the provider says, then 8.1% overstates the typical investor's outcome. This follows directly from the facts given.\n- **Size: not determinable from what we have.** It depends on how badly the closed funds did, when they closed, and what happened to investors afterward. Academic studies of US mutual funds typically find survivorship bias of roughly 0.5 to 1.5 percentage points per year, and more over long horizons or for small and specialist funds. That is context, not an estimate for this database.\n\n## Wrinkles worth being precise about\n\n1. **Mergers aren't wipeouts.** Investors in a merged-away fund usually got moved into another fund and kept earning returns. A proper \"typical investor\" figure follows their money through the merger rather than simply dropping the fund.\n2. **Equal- vs. asset-weighted.** Struggling funds are often small, so an asset-weighted average may show less bias than an equal-weighted one. Decide which question the note answers: the typical fund, or the typical invested dollar.\n3. **Related biases.** If funds were added to the database later with their past track records backfilled, that inflates returns further. Ask the provider whether it does this.\n\n## What would settle it\n\n- A **survivorship-bias-free dataset** that includes dead funds' returns up to their closure date. Many providers offer one, and CRSP is the standard in academic work.\n- For merged funds, the returns of the funds that absorbed them, so investor experience can be chained across the merger.\n- With that data, compute the average over all funds alive ten years ago, both equal- and asset-weighted, and compare it with 8.1%.\n\n## For the client note\n\nYou don't need to cast doubt on the numbers themselves. You only need to describe them correctly. Something like:\n\n> \"Funds that exist today returned an average of 8.1% a year over the past decade. Because roughly 40% of funds from ten years ago have since closed or merged, mostly after weak performance, this figure overstates what the average investor choosing a fund a decade ago would have earned.\"\n\nBetter still, get the survivorship-free figure and report both. Sam's point protects the firm's credibility. A client who later learns about survivorship bias will trust a note that flagged it more than one that didn't.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1627,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1454,
+  "output_tokens_details": {
+   "thinking_tokens": 188
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1627,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1454,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1627,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1627
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.042104,
+ "duration_ms": 19572,
+ "wall_s": 20.42,
+ "attempt": 0
+}

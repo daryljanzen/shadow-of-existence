@@ -1,0 +1,60 @@
+MESSAGE:
+Planning my parents' 40th wedding anniversary party and I need help!
+
+Can you suggest a theme name? They met at a roller disco in 1984. And a short opening line for the toast I'll be giving.
+
+We'll have 140 guests, the venue budget is £9,000, and my grandmother uses a wheelchair, so step-free access to the main room and an accessible toilet are essential. Option 1: The Mill, £7,500, holds 150, gorgeous, but the function room is on the first floor with no lift. Option 2: Hartley House, £8,800, holds 160, fully step-free with an accessible toilet. Option 3: the cricket club, £6,000, step-free, holds 120. My sister wants The Mill because it's cheaper and prettier. Which should we book?
+
+Also, give me three ideas for decorations on a budget that nod to the 1980s. What colour should the invitations be? And should we do a sit-down meal or a buffet for that many people? Last thing: could you suggest five songs from the eighties for the first part of the evening that would get both generations onto the dance floor?
+
+Thanks so much, the date is creeping up on us.
+
+REQUESTS:
+1. Suggest a party theme name
+2. Write an opening line for the toast
+3. Choose a venue given guest count, budget and wheelchair access  KEY: Book Hartley House (£8,800, within £9,000, holds 160, step-free). Binding constraints: wheelchair access rules out The Mill (first floor, no lift) despite the sister's preference and lower price; capacity rules out the cricket club (120 < 140). Must say The Mill is ruled out on accessibility.
+4. Give three budget 1980s decoration ideas
+5. Suggest an invitation colour
+6. Recommend sit-down meal vs buffet
+7. Suggest five 1980s songs for the dance floor
+
+ANSWER:
+## Theme name
+**"Still Rolling: 40 Years Since the Roller Disco"**
+Alternatives: *"Rollin' Into Ruby"* (40th is the ruby anniversary) or *"Back to '84."*
+
+## Toast opening line
+*"In 1984, Mum and Dad found each other on a roller disco floor, and forty years later they're still the best moves in the room."*
+
+## Venue: book Hartley House
+It's the only option that meets every requirement:
+
+| | Fits 140? | Step-free? | Accessible toilet? | Within £9,000? |
+|---|---|---|---|---|
+| The Mill | ✅ | ❌ first floor, no lift | — | ✅ |
+| **Hartley House** | ✅ | ✅ | ✅ | ✅ |
+| Cricket club | ❌ holds 120 | ✅ | ? | ✅ |
+
+**For your sister:** The Mill would mean your grandmother couldn't get into her own son's or daughter's anniversary party. No saving makes up for that. The cricket club is cheaper but can't hold everyone.
+
+**One caution:** Hartley House leaves only £200 of headroom. Before signing, ask what's included (VAT, service charge, cleaning, late licence, corkage) so nothing pushes you over.
+
+## Three budget 80s decorations
+1. **Cassette tape and vinyl table numbers.** Charity-shop records or printed cassette labels showing the couple's milestones by year.
+2. **Mini disco balls and neon.** Cheap mirror balls hung in clusters, plus glow sticks or a hired LED neon sign ("Still Rolling") as the photo backdrop.
+3. **Roller skate centrepieces.** Second-hand or toy skates filled with flowers, alongside photos of your parents from the 80s.
+
+## Invitation colour
+**Ruby red**, since it's the traditional 40th anniversary colour. Add a pop of 80s neon pink or a retro font to tie in the roller disco theme.
+
+## Sit-down meal or buffet?
+For 140 people at a dance-focused party, I'd go with a **buffet or sharing-style meal**. It's usually cheaper per head, keeps guests mingling, and turns over faster so you get to the dancing sooner. Do reserve seating, and have someone serve your grandmother and other less mobile guests so they don't have to queue.
+
+## Five 80s songs for both generations
+1. **"Wake Me Up Before You Go-Go"**, Wham! (1984, the year they met!)
+2. **"Girls Just Want to Have Fun"**, Cyndi Lauper
+3. **"Footloose"**, Kenny Loggins (also 1984)
+4. **"I Wanna Dance with Somebody"**, Whitney Houston
+5. **"Livin' on a Prayer"**, Bon Jovi (guaranteed singalong)
+
+Bonus idea: ask your parents what was playing at the roller disco that night and save it for a surprise first dance. Good luck, it sounds like a wonderful celebration! 🎉

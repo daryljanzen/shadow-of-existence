@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. The deterrence effect is missing from the analysis.** The 308 findings measure detection, not prevention. A reviewer will note that the memo admits it has no deterrence data but still recommends removal. A pilot or comparison of misconduct rates across proctored and unproctored sections would strengthen the case\n2. The cost-per-finding framing is selective.** Dividing the contract cost by findings ignores undetected cheating and the value of protecting degree credibility. The faculty-time figure also uses an assumed rate of about three hours per finding, without stating salary costs\n3. The expansion projection is speculative.** Flag rates may differ across course types newly brought into coverage\n4. The 5% conversion rate is ambiguous.** Some flags may have been valid but not pursued, or resolved informally. The memo treats every unconfirmed flag as a false positive\n5. The disparity figures lack context.** The memo does not report confidence intervals or flag-to-finding rates by group. It also does not address whether disparities persist after faculty review, which is the stronger equity question\n6. The legal claims are hedged but load-bearing.** \"Almost certainly biometric\" and \"addresses it directly\" rely on interpretations of the privacy law and the accreditor's standard that counsel has not yet confirmed\n7. Implementation feasibility is thin.** The memo gives no cost or staffing estimate for the non-biometric alternative or the redesign program, and no timeline for redesigning many courses by mid\n8. Bridge-contract risk is understated.** ProctorEye may not offer a short-term extension at current pricing. The memo does not say when the current contract ends\n9. Stakeholder views are underweighted.** The memo cites the Student Government Association's resolution only in next steps and does not engage its \"surveillance\" argument. Faculty who rely on proctored exams in disciplines where open-book formats are hard to use, such as licensure-track courses, are not addressed\n10. There is no option analysis.** A reviewer may want a side-by-side comparison of all options: full renewal, renewal at current scope, identity-only, live human proctoring, and no proctoring. Each would be shown with cost, legal risk, and equity impact\n\nFINDINGS:\n- The memo never states the current ProctorEye contract cost (implied at about $209,000), even though the ~$680-per-finding figure depends on it.\n- The ~$205,000 savings figure is measured against the proposed expansion rather than current spend (against current spend it would be about $174,000), and the baseline is not labeled.\n- The savings figure does not subtract the costs of the alternative approach, such as staff time for live ID checks, testing-site fees, and redesign stipends.\n- The ~2,300-hour full-coverage projection gives no basis, such as the number of exams full coverage would include, so readers cannot reproduce it.\n- The memo does not address what happens to the 308 misconduct cases ProctorEye does catch, or how many the alternatives would plausibly detect.\n- The memo does not acknowledge that false negatives (cheating ProctorEye misses) are unknown.\n- The deterrence argument is asymmetric: the memo notes it cannot claim removal will raise misconduct but does not admit that the same lack of data means it cannot claim removal won't.\n- The proposed 'hard to outsource' assessments such as take-home projects and open-book exams may not resist generative AI, and the memo should emphasize oral or in-class work or acknowledge the issue.\n- References to peer institutions and 'the new student privacy law' are vague and should name specific peers and the statute.\n- The step to track misconduct rates for one year after transition sits under 'Next steps before February 28' even though it cannot be done by then.\n- The next steps omit establishing a baseline of current misconduct rates and outcomes, which is needed for later comparison.\n- The disparity data does not show whether flagged students in the affected groups led to findings at a lower rate, which would establish that the excess flags are false positives and strengthen the legal-exposure point.\n- The statement that '95% of flags required faculty review but produced no finding' is inaccurate because all flags required review.\n- The ~$205,000 'savings' figure is measured against the expansion offer rather than current spending (about $209k), so actual cash freed is closer to $174k and the baseline must be stated.\n- The memo never states the current contract cost, current scope, or full-coverage exam volume, forcing readers to reverse-engineer them, and does not explain what full automated proctoring adds over current scope.\n- The 15% flag rate (6,150 of 41,000 exams) is implied but not stated.\n- The statement that '95% of flags required faculty review but produced no finding' is misworded, since all flags required review and 95% produced no finding.\n- Flags without findings should not be treated as false positives, because some may be real but unprovable misconduct.\n- The memo does not clarify whether all 308 findings came from ProctorEye flags or include cases detected by other means.\n- The 1.9× and 2.4× disparity figures lack methodology: comparison group, sample sizes, controls used by the Office of Institutional Equity, and whether findings as well as flags were disproportionate.\n- The memo does not address the transition gap between the bridge ending June 30, 2027 and course redesign, leaving unclear what un-redesigned online courses will use in the meantime.\n- There is no fallback plan or stated current contract end date in case ProctorEye refuses the bridge or won't sell identity-only service on acceptable terms.\n- The non-biometric alternative (live staff ID checks, testing-site checks) and the course redesign program are not costed, so the committee cannot confirm the net figure still favors the recommendation.\n- The memo does not make explicit that the biometric identity-only service requires consent forms and an opt-out workflow in place before the law takes effect July 1, 2027.\n- The 'peer institutions' cited are not named, so the claim should either name them or be softened.\n- The post-transition misconduct tracking step is misplaced among pre-February-28 next steps.\n- The next steps omit establishing a baseline misconduct rate now, without which post-transition tracking cannot show anything.\n- The next steps lack owners and target dates, such as ensuring counsel's review returns well before February 28.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x0/E5-13.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:06:26.229458+00:00",
+ "response": "{\"raised\": {\"1\": true, \"2\": false, \"3\": false, \"4\": true, \"5\": true, \"6\": false, \"7\": true, \"8\": true, \"9\": false, \"10\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3449,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 601,
+  "output_tokens_details": {
+   "thinking_tokens": 542
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3449,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 601,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3449,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3449
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.039619999999999995,
+ "duration_ms": 9668,
+ "wall_s": 10.65,
+ "attempt": 0
+}

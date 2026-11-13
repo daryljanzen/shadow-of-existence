@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-11",
+ "system": "You are given a list of CRITIQUES someone expected a reviewer to raise about a document, and the FINDINGS actual reviewers raised. For each expected critique, decide whether any finding raises it in substance. Reply with JSON only: {\"raised\": {\"1\": true|false, ...}}",
+ "message": "CRITIQUES:\n1. The 15% app price premium is an assumption.** The brief doesn't give it, and the \"markup dropped\" scenario depends heavily on it\n2. The brief contradicts itself, and the memo picks one reading.** It says direct orders \"tend to be larger\" but also that prices would drop on the direct channel. A reviewer may argue direct baskets could be bigger in item count\n3. The 20% volume loss after the cap is a guess.** No data shows how customers will respond to the new app fees\n4. Lost orders aren't all lost.** Some lost delivery customers would switch to pickup or dine-in, so the cost of exiting is overstated\n5. The 65% cost is treated as fully variable.** Part of kitchen labor is fixed, so the contribution figures are understated in both scenarios\n6. Several costs are left out:** card processing, courier tips, refunds and failed deliveries, and whether a white-label courier can cover late-night hours near campus\n7. It is a year-one view only.** The $60,000 in marketing is one-time, and retention may improve over time, so a multi-year comparison would narrow the gap. It likely wouldn't close it against the post-cap figures\n8. Everything uses 2025 volumes.** There is no growth or seasonality, and no figures for individual locations, even though the memo's 2028 decision point is set by location\n9. Cutting marketing to $20,000 is untested.** It may produce lower direct adoption than the scenarios assume\n10. The ordinance details are assumed.** The memo assumes all six locations fall inside the city's jurisdiction and that the 15% cap covers all fees, not just the base commission\n11. The \"late-night\" warning is unverified.** It rests on the general manager's claim, not on order-time data\n12. The owners' framing goes unchallenged.** Commissions are about 5% of sales, so food and labor are larger costs. Calling commissions \"our single biggest controllable cost\" may be overstated\n\nFINDINGS:\n- The memo claims a $33 direct order 'barely covers' costs, but because food, packaging and labor are a fixed dollar cost of about $24.70 that doesn't fall with the menu price, the order actually loses about $0.16 before card fees.\n- The memo models only 50% and 60% retention even though the consultants' range is 40–60%, omitting the 40% case that nets only about $38,000 and leaves the business about $146,000 worse off, which makes the exit look better than the evidence supports.\n- Stray '---' and '##' formatting artifacts were left at the end of the memo.\n- The 15% markup figure is not from the brief and should be labeled as an estimate or assumption.\n- The memo assumes the direct-order ticket falls from $38 to $33, which conflicts with the brief's statement that direct orders tend to be larger, and it does not address this.\n- The claim that the apps are 'our largest source of new customers' is unsupported because the brief provides no comparison with other channels.\n- The memo does not directly respond to the owners' framing of commissions as 'our single biggest controllable cost.'\n- The exit scenario is compared against 2025 commission levels (27%) rather than the 2027 capped baseline under which an exit would actually occur.\n- Pausing app ordering at peak hours costs volume and is not framed as a last resort secondary to the pickup shelf and staggered ready times.\n- The memo's claim that a $33 direct order 'barely covers' costs is inaccurate, since food, labor, and delivery costs leave it roughly breakeven or slightly negative.\n- The memo's assumption that direct orders shrink from $38 to $33 contradicts the brief, which says direct orders tend to be larger, and the 15% premium it relies on is not in the brief.\n- The claim that the apps are the restaurant's largest source of new customers is unsupported, because the brief only says 68% of app customers were new and gives no data on other channels.\n- The '$90k–$120k worse off' comparison uses the pre-cap baseline even though the cap takes effect March 1, 2027, so the real gap is understated and this is not stated.\n- Card fees are mentioned once but left out of every other calculation, which is inconsistent.\n- The memo cuts the owners' $60k marketing estimate to $20k without explaining that the $60k figure was sized for a full exit, so it could read as second-guessing the owners.\n- The recommendation to pause app ordering at peak hours does not acknowledge that it gives up order volume to improve kitchen flow.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/raised_main/x1/E5-11.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:05:45.965935+00:00",
+ "response": "{\"raised\": {\"1\": true, \"2\": true, \"3\": false, \"4\": false, \"5\": false, \"6\": true, \"7\": false, \"8\": false, \"9\": false, \"10\": false, \"11\": false, \"12\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2870,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 364,
+  "output_tokens_details": {
+   "thinking_tokens": 295
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2870,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 364,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2870,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2870
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.030248,
+ "duration_ms": 7092,
+ "wall_s": 8.13,
+ "attempt": 0
+}

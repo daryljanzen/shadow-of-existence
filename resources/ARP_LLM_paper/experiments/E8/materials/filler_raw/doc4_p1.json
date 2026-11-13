@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "cond": "filler",
+ "item": "doc4_p1",
+ "system": "You are a writer of plain, descriptive encyclopaedia-style prose.",
+ "message": "Write about 1289 words on the life of a fictional working orchard through one year. Write descriptive prose only: what things are, where, when, how they work physically, how they changed over time. Do NOT discuss evidence, research methods, how to reason, how to judge claims, reviewing, teamwork, collaboration, decision-making, advice, or controversies and debates. No lists, no headings beyond a title, no questions to the reader. Invent a fictional place where needed; do not cite studies or numbers from studies.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E8/materials/filler_raw/doc4_p1.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:51:45.739248+00:00",
+ "response": "# A Year at Brackenhill Orchard\n\nBrackenhill Orchard sits on a south-facing slope above the village of Ashcombe Under Fell, in a narrow valley where the River Teal bends twice before meeting the estuary. The orchard covers a little under forty acres, divided by hawthorn hedges into seven fields that have carried the same names for generations: Long Ground, Mill Piece, the Upper and Lower Drift, Coldharbour, the Pound, and the Nursery. Most of the trees are apples, with a block of perry pears along the eastern boundary and a scattering of damsons planted as a windbreak against the westerlies. A stone barn with a slate roof stands at the foot of the slope beside a timber-framed pressing shed, and a cold store built of insulated panels was added behind the barn in more recent years. The soil is a reddish loam over shale, deep in the lower fields and thinner toward the crest, where the older trees grow more slowly and bear smaller, sharper fruit.\n\nThe orchard year begins in the dead of winter, when the trees are bare and their structure is plain to see. In January the branches show grey-green lichen and the pale scars where fruit spurs have broken off in previous seasons. This is the time of pruning. Workers move along the rows with ladders, loppers, and curved pruning saws, removing branches that cross one another, shoots that grow straight upward from the main limbs, and wood that is dead or cankered. The aim is an open centre through which light and air can pass in summer. Cut branches are dragged into the alleys between the rows, where a tractor-drawn flail later shreds them into chips that are left to rot into the grass. The older standard trees in the Pound, some of them planted well over a century ago, are pruned more lightly, a few limbs each year, because heavy cutting on old wood provokes a mass of soft vertical growth. On frosty mornings the grass between the rows is white and stiff, and the only sound across the slope is the click of secateurs and the occasional fall of a severed branch.\n\nIn late winter the buds begin to swell. Apple buds come in two kinds: narrow, pointed buds along the shoots that will open into leaves, and fatter, rounded buds on the short spurs that hold clusters of flowers. By the end of February the fruit buds have grown visibly plumper, and the bark of the younger trees takes on a faint purple sheen as sap rises from the roots. Wassailing takes place on the Saturday nearest Twelfth Night in the old calendar, when people from Ashcombe gather in Long Ground at dusk, hang pieces of toast soaked in cider in the branches of the oldest tree, and pour cider around its roots, a custom that has continued in the valley in one form or another for as long as the orchard has stood.\n\nMarch brings the first green. The leaf buds split to show a silver-green tip, a stage the orchard workers call mouse-ear, and within a fortnight the spurs have opened into tight rosettes of young leaves surrounding a cluster of pink flower buds. The grass in the alleys begins to grow again and is mown short so that it does not compete with the trees for water. Along the hedges, blackthorn flowers first, a haze of white on dark twigs, followed by the damsons.\n\nApple blossom arrives in late April and lasts into the middle of May. Each cluster usually holds five or six flowers, and the central one, called the king flower, opens first and tends to produce the largest fruit. The blossom is white flushed with pink, deepest in colour on the bud and fading as the petals open. For roughly two weeks the whole slope turns pale, and the air in the rows smells faintly sweet. Hives of honeybees are carried up on a trailer and set at the edges of the fields, and wild bumblebees, solitary bees, and hoverflies work the flowers alongside them. Most apple varieties cannot set fruit with their own pollen, so the fields are planted with mixed varieties whose flowering periods overlap, and a few crab apples are dotted along the rows as additional pollen sources. The greatest danger in this season is a late frost. A clear, still night in May can blacken the open flowers, killing the central part where the fruit would form. On such nights the orchard is watched closely, and in the lower fields, where cold air drains and pools, the old method of lighting small fires in the alleys is still occasionally used to stir the air.\n\nAfter petal fall the fruitlets begin to grow. At first they are no bigger than peas, green and covered in fine down, each sitting at the base of a withered flower. Trees routinely set far more fruit than they can carry to full size, and in early June many of the smallest fruitlets turn yellow and drop of their own accord, a shedding known in the valley as the June drop. Afterward, workers go through the rows and thin the remaining clusters by hand, pinching off the weakest fruit and leaving one or two apples to each spur. Thinning reduces the load on the branches, improves the size of the remaining fruit, and helps prevent the tree from falling into a pattern of heavy crops one year and light crops the next.\n\nSummer is the season of growth. The canopy thickens, new shoots lengthen by a foot or more, and the apples swell steadily. Sheep from a neighbouring farm are sometimes let into the Pound and the Upper Drift to graze the grass beneath the tall standard trees, whose lowest branches are out of their reach. The younger trees in the other fields are grown on dwarfing rootstocks and kept to a height that can be picked from the ground or a short ladder, and these are tied to post-and-wire supports because their shallow roots cannot hold the weight of a full crop in wind. In July and August the summer pruning removes some of the new growth around the fruit, letting sunlight reach the skins so that the apples develop their colour. Heavy branches are propped with forked wooden poles.\n\nHarvest begins in August with the early dessert apples, which do not keep and are sold within days at the farm gate and in the village shop. The main harvest runs from September through October. Pickers wear canvas bags slung across the chest that open at the bottom, and they twist each apple upward from its spur rather than pulling, so that the stalk stays attached. Full bags are lowered into wooden bins on the backs of trailers and hauled down to the barn. Apples meant for storage go into the cold store, where low temperature and controlled air slow their ripening for months. The cider and perry fruit is handled differently. It is left on the trees until it falls naturally, then gathered from the grass by hand or with a rolling collector and piled in heaps to mellow for a week or two before pressing.\n\nIn the pressing shed the fruit is washed in a trough, broken into a coarse pulp in a mill, and built up in layers wrapped in cloth on the bed of the press. The press squeezes the layers slowly until juice runs into a stone channel and from there into vats. The pressed pulp, called pomace, is spread back on the fields or fed to livestock. The juice ferments over the winter in oak barrels in the cool end of the barn.\n\nBy November the leaves have turned yellow and brown and fallen into the alleys, where they are mown and shredded to hasten their decay. The last apples hang on a few late trees until the first hard frosts. Then the slope stands bare again, the barrels work quietly in the dark of the barn, and the ladders come out once more for the winter pruning.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1487,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2546,
+  "output_tokens_details": {
+   "thinking_tokens": 136
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1487,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2546,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1487,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1487
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.062824,
+ "duration_ms": 35129,
+ "wall_s": 36.2,
+ "attempt": 0
+}

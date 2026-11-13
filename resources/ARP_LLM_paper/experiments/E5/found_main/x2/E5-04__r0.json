@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-04",
+ "system": "You are given a key of complications in a decision document, and a list of FINDINGS a reviewer raised about the document. For each complication, decide whether any finding identifies that specific complication (in substance, not wording). Reply with JSON only: {\"found\": {\"1\": true|false, ...}}",
+ "message": "KEY:\n1. The instructional-hours rule forces long days: 1,080 hours over 144 days is 7.5 hours of instruction a day, compared with about 6.3 now, which matters for young children and is linked to whether achievement drops.\n2. The savings do not close the gap, and part of them are spent again. $1.4M is less than the $2.1M shortfall, and a fifth-day meal and supervision program costing $520k would cut net savings to about $0.88M.\n3. Nearly a third of the savings ($450k) come out of the pay of low-wage classified staff, some of whom would lose health benefits. That is both a fairness issue and the source of strong union opposition.\n4. The deadlines are tight: submission by March 1, 2027 means the public hearing must be held by about December 31, 2026, which is before the board's January decision to start the process.\n\nFINDINGS:\n- The proposal leaves the board's most urgent problem, the 2027-28 shortfall, almost unaddressed: it never explains \"other measures\" and names no categories of options or who will bring them to the board.\n- The proposal misses that its own numbers show the four-day week could close at most two-thirds of the gap (about 40% once the fifth-day program is funded), so it was never the answer to this shortfall.\n- Calling the option \"effectively closed\" contradicts the next section's statement that it would need a hearing within about six weeks, which makes it open but impractical.\n- The proposal does not answer why the board shouldn't hold an emergency December hearing.\n- The proposal should recommend confirming with counsel how \"preceding school year\" and the 60-day period are interpreted, since the whole recommendation depends on that reading.\n- The time from mid-November to a December 31 hearing is closer to seven weeks than six.\n- The savings figures are accepted without checking, and a supervised fifth-day program would likely need open buildings and buses, cutting into the transportation and utilities savings.\n- The $450k classified-staff saving appears to assume hours fall in line with days, but longer workdays mean the real cut in hours could be smaller.\n- The proposal's own remedies (preserving benefits or moving hours to the fifth-day program) would further reduce the $450k saving, and no realistic net savings figure or range is given.\n- The research summary drops the brief's caveat that the research is \"still limited.\"\n- The research summary overclaims that keeping 1,110 hours prevents achievement declines, when the evidence only shows declines were largest where time wasn't added.\n- The research summary does not address whether the studied districts resemble a rural district of 4,800 students.\n- The claim that chronic vacancies harm learning, making this benefit significant, is asserted without support.\n- The claim that bus driver and custodian turnover could offset teacher-recruitment gains is speculation stated with too much confidence.\n- The recruitment evidence is thin (a survey with unknown response rate and two neighbouring districts' reports of more applicants, which say nothing about quality, filled positions or retention), and the body doesn't acknowledge this.\n- The cost of delay, another year of possibly 31 or more vacancies, isn't weighed against the recommendation to wait until 2028-29.\n- Equity effects aren't quantified: the proposal doesn't count families needing fifth-day childcare, classified staff losing benefits, or students ineligible for meal assistance who lack childcare.\n- Only teachers were surveyed; the proposal should suggest surveying families.\n- The research summary is selective, omitting attendance and behaviour outcomes.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/found_main/x2/E5-04__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:03:13.421870+00:00",
+ "response": "{\"found\": {\"1\": false, \"2\": true, \"3\": true, \"4\": true}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2539,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 339,
+  "output_tokens_details": {
+   "thinking_tokens": 311
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2539,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 339,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2539,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2539
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0271,
+ "duration_ms": 7560,
+ "wall_s": 8.46,
+ "attempt": 0
+}

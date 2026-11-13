@@ -1,0 +1,83 @@
+DOCUMENT:
+# Proposal: A Four-Day School Week for Pine Valley School District
+
+**To:** Board of Trustees
+**Subject:** Whether to begin formal adoption of a four-day week
+**Decision requested:** January 2027
+
+## Recommendation
+
+The board should not try to launch a four-day week in 2027-28. The state timeline has effectively closed that option. It should instead direct staff to prepare a full proposal for 2028-29, with a decision by October 2027. The 2027-28 shortfall should be addressed through other measures.
+
+## The timeline problem
+
+State law requires the new calendar to be submitted by March 1 of the preceding school year, which is March 1, 2027. A public hearing must be held at least 60 days before submission, so no later than December 31, 2026. A January decision to "begin" adoption comes after that deadline. Implementing for 2027-28 would require a hearing within about six weeks, before any of the issues below are resolved.
+
+## What the four-day week would offer
+
+- **Savings.** Staff estimate $1.4 million a year: $600,000 in transportation, $350,000 in utilities and $450,000 in classified staff hours.
+- **Recruitment.** Pine Valley could not fill 31 teaching positions last year. 78% of teachers favour the change, and two neighbouring districts report more applicants per opening since switching. Chronic vacancies harm learning too, so this benefit is significant.
+
+## What it would cost
+
+**It does not close the shortfall.** $1.4 million covers two-thirds of the projected $2.1 million gap. If the district funds the $520,000 fifth-day program with meals, net savings fall to $880,000, leaving $1.22 million unresolved.
+
+**Longer days.** Meeting the 1,080-hour minimum over 144 days requires 7.5 instructional hours a day. Keeping the current 1,110 hours requires about 7.7. The current day averages about 6.3 hours. Research finds small achievement declines (0.03 to 0.06 standard deviations, mostly in math), and the declines are largest where districts cut total instructional time. Pine Valley would need to keep its hours, which means days more than an hour longer. That is a real burden for kindergarten and first-grade students, as parents have told the board.
+
+**Food and childcare.** With 41% of students eligible for meal assistance, a fifth-day meal program is a necessity rather than an extra. The local childcare centre has no capacity for more children on that day.
+
+**Classified staff.** A third of the savings come from cutting the pay of the district's lowest-paid employees by about 20%. Some would fall below the 30-hour threshold for health benefits. The union will oppose the change. Turnover among bus drivers and custodians could offset the gains in teacher recruitment.
+
+## What staff should bring back by October 2027
+
+1. A calendar keeping at least 1,110 hours, with an option for shorter days in kindergarten to grade 1.
+2. A fifth-day program design, costed and funded, including childcare capacity.
+3. Negotiated terms with the classified union, such as preserving benefits eligibility or redeploying hours to the fifth-day program, with the net cost of each option.
+4. Verified savings figures and data from the neighbouring districts on retention and achievement.
+5. A plan to close the 2027-28 shortfall without relying on calendar changes.
+
+---
+
+##
+
+FACTS:
+Pine Valley is a rural district with 4,800 students and a general fund budget of $68 million. The district projects a $2.1 million budget shortfall for 2027-28. District staff estimate that a four-day week would save $1.4 million a year. The breakdown is $600,000 in transportation, $350,000 in utilities and $450,000 in reduced hours for classified staff (bus drivers, cafeteria workers and custodians, whose hours would drop by about 20%). The district currently provides 1,110 instructional hours a year over 175 days. State law requires at least 1,080 instructional hours. The proposed four-day calendar has 144 school days. Pine Valley had 31 teaching positions it could not fill last year. In a staff survey, 78% of teachers said they favour a four-day week. Two neighbouring districts that switched to four days reported more applicants per opening. Studies of four-day weeks in other states find small average declines in student achievement, especially in math, of around 0.03 to 0.06 standard deviations. The declines were largest in districts that did not add instructional time to the remaining days, and the studies note that the research is still limited. About 41% of students qualify for free or reduced-price meals, and many rely on school breakfast and lunch. The district has estimated that an optional supervised program with meals on the fifth day would cost about $520,000 a year if offered free to students who qualify for meal assistance. Parents of kindergarten and first-grade students have raised concerns about longer school days at a recent board meeting. A local childcare centre has said it does not have room for more children on the fifth day. The classified staff union says its members' hours would be cut, along with their pay, and that some would lose eligibility for health benefits, which requires 30 hours a week. The union has said it will oppose the change. The state requires any district changing to a four-day calendar to submit the new calendar by March 1 of the preceding school year and to hold a public hearing at least 60 days before submission.
+
+KNOWN COMPLICATIONS:
+- The instructional-hours rule forces long days: 1,080 hours over 144 days is 7.5 hours of instruction a day, compared with about 6.3 now, which matters for young children and is linked to whether achievement drops.
+- The savings do not close the gap, and part of them are spent again. $1.4M is less than the $2.1M shortfall, and a fifth-day meal and supervision program costing $520k would cut net savings to about $0.88M.
+- Nearly a third of the savings ($450k) come out of the pay of low-wage classified staff, some of whom would lose health benefits. That is both a fairness issue and the source of strong union opposition.
+- The deadlines are tight: submission by March 1, 2027 means the public hearing must be held by about December 31, 2026, which is before the board's January decision to start the process.
+
+AUTHOR'S ANTICIPATED CRITIQUES:
+- **The 2027-28 shortfall is left largely unaddressed.** The proposal tells the board to solve it "through other measures" without naming any. That is the board's most urgent problem.
+- **The deadline reading should be confirmed by counsel.** The argument depends on "preceding school year" meaning 2026-27 and on how the 60 days are counted. Also, the proposal could have offered the alternative of holding an emergency December hearing.
+- **The savings estimates are accepted without scrutiny.** Transportation savings may be smaller if the fifth-day program needs buses. Utility savings may be offset by keeping buildings open for that program.
+- **The proposal's own fixes erode the savings.** Preserving staff benefits or redeploying hours to the fifth day shrinks the $450,000. A realistic net figure could be well under $880,000, which might undermine the financial case entirely. The proposal does not estimate this.
+- **The recruitment evidence is thin.** It rests on a staff survey and two anecdotal neighbouring reports, with no data on whether applicants were qualified or stayed. The survey's response rate is unknown.
+- **The research is summarised selectively.** It omits possible effects on attendance, behaviour or rural-specific outcomes, and does not say whether the studies resemble Pine Valley.
+- **Equity effects are not quantified.** There is no estimate of how many families lack fifth-day childcare or how many staff would lose benefits.
+- **Delaying has costs too.** Another year of unfilled vacancies is not weighed against the risks of moving quickly.
+- **Students and families were not surveyed.** Only teachers were.
+
+FINDINGS:
+- The memo asks for the 2027-28 shortfall plan by October 2027, which is too late because that school year will already have started and its budget been adopted; it is needed by spring 2027.
+- The memo is addressed to a January decision even though a 2027-28 launch requires a hearing by December 31, so it implicitly forecloses that option instead of letting the board decide in November or December.
+- The phrase 'within about six weeks' depends on when the memo is read and is inaccurate from today (about seven weeks).
+- The savings, which begin in 2028-29 under the recommendation, are compared against the 2027-28 gap, which is incoherent; the memo should address whether the deficit is structural and what the 2028-29 gap is.
+- The claim that Pine Valley must keep 1,110 hours overstates the research, since a 1,080-hour calendar also lengthens the day, and this choice matters for shorter days for kindergarten and first grade.
+- The memo omits the brief's explicit caveat that the research is limited, making the evidence sound firmer than it is.
+- The document ends with a leftover '---' and an empty '##' heading.
+- The memo says 'the local childcare centre' when the brief does not indicate it is the only one.
+- The turnover sentence omits cafeteria workers alongside bus drivers and custodians.
+- Requesting 'negotiated terms' from a union that has said it will oppose the change is unrealistic before the board commits.
+- The claim that chronic vacancies harm learning is asserted without support.
+- The plan leaves the funding shortfall unaddressed.
+- The hearing deadline should be confirmed with counsel and a December hearing considered.
+- The savings estimate is accepted without scrutiny, e.g., whether buses and buildings are still needed on the fifth day.
+- The memo does not account for how fixes to the plan would erode the savings, and should give a rough range such as $500,000 to $880,000.
+- The recruitment evidence is thin and should be flagged as such.
+- The equity effects are not quantified and should be assigned as a staff deliverable.
+- The memo does not weigh the cost of delay, such as another year of vacancies.
+- Families have not been surveyed, and this should be added to the deliverables.
+- The memo is near the top of the 450-600 word range, so adding fixes requires cutting elsewhere.
