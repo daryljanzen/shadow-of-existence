@@ -1,0 +1,89 @@
+# r7749+70 — RESULT: with the projection's distance on the leaf rate, the full spectrum refitted is level with the control
+
+**Headline.** The configuration is the arm of record (`LEAFREC=1 LEAFSCALES=1 ZSTART=3e7`) plus `LEAFGEOM=1`: the conformal-time grid and the comoving distance built on the leaf rate, radiation included.
+- **Refitted on the four parameters the control is refitted on, the arm sits at 1.002× the control's distance from the data** (χ² 186.85 against 186.51, 1.01 per bin). The arm of record sits at 1.596×.
+- **As computed at the distances' point, with no spectrum fit, it sits at 0.918×** (196.5 against the control's no-fit 214.1, 1.06 per bin). The arm of record sits at 2.35× (502.1, 2.71 per bin).
+- **The BAO distances do not move, and θ\* moves 0.5%, toward Planck's value on the instrument's own definition.** See ⒞.
+
+Every closure holds. Every registered expectation holds, and none of the three outcomes that would count against the assignment fires.
+
+## ⒜ The figures, beside the arm of record's (185 lensed bins, scored as `r7643/measure.py` scores them)
+
+| quantity | control | arm of record (stacking-rate distance) | **leaf-rate distance** |
+|---|---|---|---|
+| χ² as computed, at the distances' point (68.60, 0.2973) | 214.06 | 502.09 | **196.48** |
+| per bin | 1.16 | 2.71 | **1.06** |
+| × control | 1 | 2.346 | **0.918** |
+| χ² refitted, at a verified minimum | 186.51 | 297.7 | **186.85** |
+| per bin | 1.01 | 1.61 | **1.01** |
+| × control | 1 | 1.596 | **1.002** |
+
+**The refitted minimum** is H0 68.586, Ω_m 0.2945, ω_b 0.02218, n_s 0.9614, with the amplitude fitted as in every full-spectrum figure. The point is recorded in `figures.json`.
+
+**How it was reached (PREDICTION Ⓑ):**
+1. **First fit.** The linearised minimum on the existing one-clock grid (`r7093_directions/grid_oneclock_leafrec1`, centred on the arm of record's own refit point) predicted 185.07. It sat 2.7 grid steps out in n_s.
+2. **First verify run** at that point: 189.58, |model − run| = 4.5 > 1.
+3. **The registered re-centring:** a second 9-leg grid on that point (`launch_grid2.sh`). Its base reproduces 189.58, and its minimum, 186.23, lies inside half a step on every axis.
+4. **Second verify run:** 186.85, |model − run| = 0.62 < 1. **The figure is established**, and it is scored on the run, not on the model.
+
+## ⒝ Closures
+
+| check | result |
+|---|---|
+| K1: the control reproduces 214.1 and 186.5 | 214.06 / 186.51 ✔ |
+| K2: the arm of record's no-fit reproduces 502.1 | 502.09 ✔ |
+| K3: the grid's base re-runs bit-identically under the current instrument blob (`e5319ce4`) | identical, max rel 0.0 ✔ |
+| K4: the instrument's one-clock self-check (`__ONECLOCK__`) | max\|Jac−1\| = 0, max\|r_s,stack − r_s,leaf\| = 0, on every run ✔ |
+
+## ⒞ The distances on the same assignment
+
+| | D_M (Mpc) | r_s (Mpc) | ℓ_A | 100 θ\* = 100 r_s/D_M | pull vs Planck θ\* |
+|---|---|---|---|---|---|
+| distances' point, arm of record | 14011.5 | 145.328 | 302.89 | 1.03721 | −11.7σ |
+| distances' point, **leaf-rate D_M** | 13941.6 | 145.328 | 301.38 | 1.04240 | +5.0σ |
+| refit point, arm of record | 14134.0 | 146.573 | 302.94 | 1.03702 | −12.3σ |
+| refit minimum, **leaf-rate D_M** | 13997.7 | 145.823 | 301.57 | 1.04176 | +2.9σ |
+
+**θ\*.** At fixed parameters, the leaf-rate distance to last scattering is **0.50% shorter**, so θ\* is 0.50% higher. That is about 16 of Planck's σ, so E3 holds.
+- **On the instrument's own definition (r_s/D_M at its own z_\*), the shift moves θ\* toward Planck's 0.0104085, not away.** The leaf-rate refit sits at +2.9σ, against the arm of record's −12.3σ at its refit.
+- **The caveat, stated before anyone reads more into the pulls.** The arm of record reads −11.7σ at the point that was fitted to θ\*. So the instrument's r_s/D_M is not the definition that fit used. In the DESI receipt's construction, θ\* is matched through the onset, not through H0. The robust statements are therefore:
+  - the 0.50% shift;
+  - that it moves toward Planck on the instrument's own definition.
+  
+  An absolute θ\* pull is not one of them. A θ\* fit on the corpus's own definition, re-solved on this assignment, is the item that would settle it, and it is not done here.
+
+**BAO, DESI DR2, 13 measurements** (P15 DESI receipt's data and integrals):
+
+| point | at a common r_d: stacking geometry | leaf geometry | Δ | each geometry's own best r_d |
+|---|---|---|---|---|
+| distances' point (68.60, 0.2973) | 10.539 | 10.556 | +0.018 | 10.539 / 10.552 |
+| leaf-rate refit minimum (68.586, 0.2945) | 10.654 | 10.650 | −0.005 | 10.654 / 10.645 |
+
+At z < 3 radiation is negligible, so the leaf-rate geometry leaves the BAO fit where it was: about 0.88 per dof, changing by under 0.02 in χ². E4 holds. **The leaf-rate distance does not break what currently fits on BAO.**
+
+## ⒟ Against the registration
+
+- **E1 ✔:** the refitted multiple falls to ≤ 1.15. It is 1.002.
+- **E2 ✔:** the as-computed multiple falls below 2.35. It is 0.918, below the control's own no-fit.
+- **E3 ✔:** θ\* moves by more than Planck's 1σ at fixed parameters. It moves 0.50%, about 16σ, toward Planck on the instrument's own definition.
+- **E4 ✔:** BAO χ² changes by under 1 at fixed parameters. It changes by 0.018.
+
+**What counts against the leaf-rate assignment:**
+1. The refitted multiple would not be below 1.60. It is 1.002, so this does not fire.
+2. The refitted minimum's distances would break. BAO is unchanged, and θ\* on the instrument's definition is within 3σ (+2.9σ), so this does not fire on the measures available. A θ\* fit on the corpus's own definition remains to be done.
+3. The minimum would sit outside the linear range after one re-centring. The second verify agrees to 0.62, so this does not fire.
+
+## ⒠ What this does and does not establish
+
+- **It establishes the full measurement on this assignment.** On the leaf-rate distance, the arm reaches the control's χ² on the full-range lensed spectrum when refitted on the control's own parameter freedom. As computed at the distances' own point, it scores below the control's no-fit spectrum, the same arm that sits at 2.35× on the stacking-rate distance.
+- **It does not adjudicate the assignment.** The corpus holds the stacking rate for the projection's distance on one identification, and that ruling is the gate's, not this receipt's. What is reported is what the data return on each assignment, measured the same way.
+- **One parameter moved a long way: n_s, 1.015 → 0.961.** The arm of record's refit sat at 1.015. On this assignment the spectrum prefers a tilt near the control's (0.965), and that belongs in any reading of the result.
+
+## Files
+
+- `PREDICTION.md`: the registration, committed before any run (`3e2f4eec3`).
+- `refit.py`: scoring and the linearised fit, the arm of record's own.
+- `distances.py`: θ\* and DESI DR2 BAO.
+- `launch_grid2.sh`: the re-centred grid.
+- `figures.json` and `distances.json`: every figure.
+- **Spectra:** the no-fit and verify spectra and the second grid are in this seat's scratchpad. They can be banked to `spectra/` as additions if the gate wants them, with the manifest pattern of `r7643`.
