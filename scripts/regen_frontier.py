@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7763 LANDS r7759+cc66, r7761+cc66, r7762 and r7764 (60), r7759+70.6-.9, r7759+71.1-.2: the two-level framing tested and corrected (the offset is the dust term; every observed quantity takes the actual history; the Nariai mass is where the cosmological slicing touches degeneracy, at z_acc); P7 formalised 15 of 15. '
+        'r7761 (69) LANDS the two-level framing, settled in conversation with Daryl after a reread of P7: the stacking rate the cosmological level, every measured quantity on the content\'s history. '
         'r7759 LANDS r7757+cc66, r7760 (60), r7758+70.2-.3, r7757+71.1-.2: the cut carries radiation as a history and its own rate is the leaf rate; one rate, decomposed. '
         'r7757 LANDS r7755+cc66, r7756 and r7758 (60), r7755+70.3-r7758+70.1, r7755+71.1: the stacking reading rests on one underived premise, that the leaves\' history is the vacuum cut\'s; no admissible cut has the leaf rate. '
         'r7755 LANDS r7753+cc66, r7753+70, r7751+71.2, r7754 (60): P9 formalised 13 of 13; the leaf-rate refit and BAO pricing in P15; the crossing read as L1 on the present text. '
