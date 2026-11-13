@@ -105,7 +105,6 @@ ADJ = {
  "on the stacking rate, which the construction derives for it": ('LANDED', "P7's abstract, r7613"),
  # r7615 (69): r7614's result (the derivation holds on any cut) written in; LANDED as above, and the three r7613
  # keys whose sentences r7615 rewrote are dropped rather than kept stale.
- "that derivation holds on any cut, bent by radiation or not": ('LANDED', "P6, r7615"),
  "The stacking rate is derived with radiation excluded from it, and which rate light's path distance takes is the open work": ('LANDED', "P7 frontier:scalar, r7615, restated r7751 as open work"),
  "So the comparison is between the construction's derived configuration and the sky": ('LANDED', "P15 sec:scope, r7615"),
  "the stacking rate the reassignment derives for it on any cut": ('LANDED', "P16, r7615"),
@@ -118,6 +117,8 @@ ADJ = {
  "The construction derives the stacking rate, with radiation excluded from it": ('LANDED', "P18 sec:frontier, r7751"),
  "the stacking rate the construction assigns light's path distance is derived on any cut with radiation excluded from it": ('LANDED', "P7 sec:intro's cosmology summary, r7751"),
  "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
+ # r7753 (69): P6's episode sentence was rewritten to name the open rate and leaves the net, so its r7615 key is
+ # dropped rather than kept stale.
  # r7745 (69): P18's frontier-table row for PO-87 is gone (the acoustic residual is worked and leaves the list), so its
  # key, r7615's landing restated there at r7633, is dropped rather than kept stale.
 }
