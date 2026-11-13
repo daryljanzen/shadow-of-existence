@@ -1,0 +1,51 @@
+{
+ "exp": "E6",
+ "cond": "G-noR",
+ "item": "E6-02",
+ "system": "You are a helpful assistant.",
+ "message": "QUESTION:\nDid the new onboarding flow (launched 1 March) improve the budgeting app's month-3 retention, and by how much?\n\nDATA:\nSubscription budgeting app. A new onboarding flow went live on 1 March for all new sign-ups. Also on 1 March, the company completed its acquisition of a rival app, Tallyo. Tallyo's existing paying users were migrated into the product and counted as new sign-ups in the month they migrated (600 in March, 400 in April, none in any other month).\n\nMonthly sign-up cohorts: users still active at the end of month 1, 2 and 3 after sign-up. Data extracted 1 August; '-' = not yet observable.\n\n| Cohort | Sign-ups | M1 | M2 | M3 |\n| Jan | 2,000 | 1,200 | 960 | 840 |\n| Feb | 1,800 | 1,062 | 846 | 738 |\n| Mar | 2,400 | 1,560 | 1,272 | 1,128 |\n| Apr | 2,200 | 1,452 | 1,166 | 1,034 |\n| May | 2,500 | 1,700 | 1,375 | - |\n| Jun | 2,600 | 1,768 | - | - |\n\nMigrated Tallyo users are included in the table above:\n- March: 600 sign-ups; active M1 480, M2 450, M3 420.\n- April: 400 sign-ups; active M1 320, M2 300, M3 280.\n\nMonth-3 retention (M3 / sign-ups) is the company's headline retention metric. No other product changes were made between January and June.\n\nHere is a draft analysis:\n\n<analysis>\n**Onboarding flow: retention impact**\n\n**Question.** Has the new onboarding flow, introduced this spring, improved how many new users we keep?\n\n**Headline.** Yes, clearly. Month-3 retention, our headline metric, rose from 42% (January) and 41% (February) to 47% for both March and April, an improvement of about five to six percentage points. On a typical cohort of 2,200 sign-ups that is roughly 120 extra users still active after three months, every month.\n\n**Cohort detail.** Pre-change cohorts were very consistent. January kept 60% of users at month 1, 48% at month 2 and 42% at month 3; February was a point lower at each stage (59%, 47%, 41%). Post-change cohorts are better at every stage. March reached 65% at month 1 and 53% at month 2, and April reached 66% and 53%. The gain shows up in the very first month and then carries through, which is what we would expect from an onboarding change: users who get set up properly in the first week are much less likely to churn later.\n\n**Which cohorts to compare.** Because the new flow went live in mid-March, the March cohort is a mix of old and new onboarding. April is therefore the cleanest post-change cohort, and on its own it shows the same 47% month-3 retention as March. If anything, this suggests the March figure understates the true effect, since part of that cohort went through the old flow.\n\n**Latest cohorts.** Newer cohorts look stronger still. May and June retained 68% of users at month 1. Comparing like with like in terms of recency, the two most recent cohorts are retaining 68% of users, against the 41-42% we used to see, which suggests the effect is growing as the team keeps polishing the flow.\n\n**Outlook.** Month-1 retention has gone from 65% (March) to 66% (April) to 68% (May and June). If the month-on-month improvement in M1 retention continues at this pace, month-1 retention should reach about 75% by the end of the year, and month-3 retention should follow it upwards.\n\n**Robustness.** The result does not depend on cohort size: the March and April cohorts were larger than January and February, yet retention rates still rose, so this is not an artefact of small numbers. No other product changes were shipped between January and June, so there is no competing explanation from the product side.\n\n**Recommendation.** Treat the new onboarding flow as a success and report a 5-6 point lift in month-3 retention to the board. Continue investing in onboarding.\n</analysis>\n\nProduce an improved version.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E6/runs_main/G-noR/E6-02__r1/step1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:33:40.314608+00:00",
+ "response": "# Onboarding Flow: Retention Impact (Revised)\n\n## Question\nDid the new onboarding flow, live for all new sign-ups from 1 March, improve month-3 retention? If so, by how much?\n\n## Headline\n**No measurable improvement.** The draft's 5–6 point lift comes from the Tallyo migration, not from onboarding. On 1 March, the same day the flow launched, 1,000 existing Tallyo paying users were added to the March and April cohorts as \"new sign-ups\". These users retain at 70% at month 3. Once they are removed, organic month-3 retention is **40.6% for March–April against 41.5% for January–February**. That is a change of about **−1 point**, with a plausible range of roughly −3 to +1.5 points. We should not report a lift to the board.\n\n## Organic cohorts (Tallyo users removed)\n\n| Cohort | Sign-ups | M1 | M2 | M3 |\n|---|---|---|---|---|\n| Jan | 2,000 | 60.0% | 48.0% | **42.0%** |\n| Feb | 1,800 | 59.0% | 47.0% | **41.0%** |\n| Mar | 1,800 | 60.0% | 45.7% | **39.3%** |\n| Apr | 1,800 | 62.9% | 48.1% | **41.9%** |\n| May | 2,500 | 68.0% | 55.0% | – |\n| Jun | 2,600 | 68.0% | – | – |\n\nThe migrated Tallyo cohorts look very different. March had 600 users with 80% / 75% / 70% retention at M1 / M2 / M3. April had 400 users with the same 80% / 75% / 70%.\n\nThese are already-paying, already-engaged customers moving across products. They are not comparable to people signing up cold. They make up 25% of the March cohort and 18% of the April cohort, and that is enough to lift the blended M3 figure from about 40–42% to 47%.\n\n## How big is the effect?\n\n| | Sign-ups | M3 active | M3 retention |\n|---|---|---|---|\n| Pre (Jan + Feb) | 3,800 | 1,578 | 41.5% |\n| Post, organic (Mar + Apr) | 3,600 | 1,462 | 40.6% |\n| Post, as reported (incl. Tallyo) | 4,600 | 2,162 | 47.0% |\n\n- The organic difference is −0.9 points, with a standard error of about 1.1 points.\n- The approximate 95% interval is −3.2 to +1.3 points.\n- This rules out the claimed 5–6 point gain with high confidence.\n- It cannot rule out a small positive or small negative effect.\n\n## Corrections to the draft\n\n1. **The competing explanation was missed.** The draft said \"no other product changes\" rules out alternatives. But the acquisition is a change in *who is in the cohorts*, not a product change, and it happened on exactly the same date as the launch.\n2. **Launch timing was wrong.** The flow went live on 1 March, not mid-March. The March cohort is fully post-change, not a mix of old and new onboarding.\n3. **The draft compared M1 with M3.** It set May and June *month-1* retention (68%) against pre-change *month-3* retention (41–42%). These measure different things and cannot be compared.\n4. **The trend extrapolation was unsupported.** Projecting 75% M1 by year-end from four data points has no basis. \"No other product changes\" also contradicts the idea that the team kept polishing the flow.\n5. **The robustness argument was irrelevant.** Larger cohorts were not an explanation anyone needed to rule out. The cohorts were larger *because* of Tallyo, which is the actual confound.\n6. **The \"120 extra users a month\" figure rests on the contaminated 47%.** It should be dropped.\n\n## Open question: May and June\nMay and June contain no Tallyo users, yet they show clearly higher early retention:\n\n- M1 is 68%, against 59–63% in every earlier organic cohort.\n- May's M2 is 55%, against 46–48% earlier.\n\nThis cannot be the onboarding flow acting alone. March and April also had the new flow and showed no such gain. Possible explanations include:\n\n- seasonality,\n- a change in acquisition channels or marketing mix (for example, post-acquisition promotion), or\n- spillover from the Tallyo user base, such as referrals.\n\nThis is worth investigating, but it should not be attributed to onboarding without evidence.\n\n## Recommendation\n- **Do not report an onboarding-driven retention lift to the board.** The defensible statement is: *\"Excluding migrated Tallyo users, month-3 retention for the first two post-launch cohorts is unchanged (about 41%). We cannot yet detect an effect from the new onboarding flow.\"*\n- **Exclude migrated users from the headline metric**, or report them separately. Otherwise the board metric will overstate organic retention for March and April permanently.\n- **Refresh the data.** The extract is from 1 August. May and June month-3 figures should now be observable, along with cohorts from July onward. Check whether the May/June improvement holds through M3.\n- **Explain the May/June jump** by looking at acquisition channel mix and sign-up source before crediting any single cause.\n- **For a clean read on onboarding in future, use a randomised holdout.** A small share of new sign-ups would get the old flow. A before/after comparison of two cohorts against two cohorts cannot reliably detect effects of a couple of points.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 797,
+  "cache_read_input_tokens": 1871,
+  "output_tokens": 3193,
+  "output_tokens_details": {
+   "thinking_tokens": 1372
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 797,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 3193,
+    "cache_read_input_tokens": 1871,
+    "cache_creation_input_tokens": 797,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 797
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07061819999999999,
+ "duration_ms": 34202,
+ "wall_s": 35.17,
+ "attempt": 0
+}
