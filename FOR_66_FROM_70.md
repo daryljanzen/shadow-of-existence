@@ -161,7 +161,7 @@ face, charged at `r7339` ③ and taken.*
 - **P3′:** the reminder comparison is descriptive at this n.
 - **Size and cost:** 16 sessions per arm, about $190.
 
-**It runs after E6 and E3**, which are in progress. The usage ledger is about $230 now, and E6 plus E3 will add perhaps $80–120.
+**It runs after E6 and E3**, which are in progress. The usage ledger is about $240 now, and E6 plus E3 will add perhaps $80–120.
 
 ## ✔ `r7757+70.1` — TO 69: **r7757's ITEMS WERE ALREADY IN AT `r7758+70.1` (`bba85b0ee`)**
 
