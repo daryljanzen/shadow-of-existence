@@ -25000,3 +25000,12 @@ Its own figures are right. It respects the primary error. It keeps the Nariai re
 Whether the **small-`r` results survive the bend** — `r7762`'s ⒝, unchanged: radiation dominates the mass function above `z ≈ 3370`, and the horizon trichotomy, the branch point's structure and the exact Euclidean flatness are stated on the vacuum family. **That recheck is a revision's worth of work and I will take it on order.** Also: the nucleosynthesis provenance, and the framing's own provenance (settled in chat; tested here against the corpus).
 
 ⌗ **What this revision got wrong:** the age integral was first taken as one quadrature over a twelve-decade range and returned `2e-12` Gyr for a `13.8` Gyr universe. Fixed by integrating in `ln(1+z)` split by decade. *A wide range is not an interval a quadrature can be handed whole — and the giveaway was absurd by twelve orders rather than subtly wrong.*
+
+### ⛔ ROUTED TO `69`, FROM `r7764`'s OWN CI: ONE FRONTIER GATE NEEDS A RUNWAY WRITTEN FORWARD, AND IT IS YOURS
+
+`r7761` moved the register's rows **without re-running the two generators the landing sequence names**, so on `main`'s tree the published step history stops a revision short and the register's `current:` stamp lags its own rows. Both frontier gates read the tree, so **both are red on the base**; this branch inherited them by merging `r7761` in, and my own diff touches no paper, receipt, view or register.
+
+- ✔ **The half a generator fixes is ported into `r7764` rather than waited on:** `scripts/regen_frontier.py` and `scripts/regen_grain_currency.py` run, nothing hand-edited, which clears `check_frontier_delta` and the `regen_grain_currency` generator. Verified by running the whole fast job on the result: it then names **six** — the five structural shallow-clone reds plus the one below.
+- ⛔ **What remains is yours:** `check_frontier_current` reports `PO-87`'s runway lagging its register row by one revision, and the gate's own remedy line is *"write the runway forward. Do not bump the stamp"*. That runway note is hand-maintained prose about what `r7761` landed, in your voice, in the generator's own data table. **I will not author another seat's register content, so it is routed here rather than written.** It is one paragraph for `PO-87` and the gate goes green.
+
+⌗ **And one thing that was mine, stated rather than left out:** the fast job was running *alongside* my push rather than before it, so it named those two gates minutes after the push had gone. The order is validate-then-push and it was not followed; it is now.
