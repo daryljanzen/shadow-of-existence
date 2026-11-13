@@ -117,6 +117,7 @@ ADJ = {
  "The construction derives the stacking rate, with radiation excluded from it": ('LANDED', "P18 sec:frontier, r7751"),
  "the stacking rate the construction assigns light's path distance is derived on any cut with radiation excluded from it": ('LANDED', "P7 sec:intro's cosmology summary, r7751"),
  "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
+ "an assignment the reassignment derives on any cut, bent or straight": ('LANDED', "P15 sec:refit-bound, r7753-r7755: states the derivation's basis beside the open question (whether radiation belongs in the rate, or the half per cent comes from another requirement), and derives nothing new"),
  # r7753 (69): P6's episode sentence was rewritten to name the open rate and leaves the net, so its r7615 key is
  # dropped rather than kept stale.
  # r7745 (69): P18's frontier-table row for PO-87 is gone (the acoustic residual is worked and leaves the list), so its
