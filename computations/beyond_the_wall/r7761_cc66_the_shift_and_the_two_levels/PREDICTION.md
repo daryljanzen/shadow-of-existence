@@ -56,6 +56,28 @@ untouched; the shift is where its effect is largest per unit bend.
 ⛭ **What `⑨` does not licence:** no claim that the degeneracy is physical rather than a coordinate
 failure of this chart, and no claim about the bent cut's own degenerate radius beyond reporting it.
 
+## `R1` EXTENDED AT `r7761+cc66.4` — ⛔ **THREE ROWS REGISTERED BEFORE COMPUTING, OPENED BY `⑨`**
+
+`⑨` found the degeneracy `(∂_χ r)² = 1` at `r = α/√3` and that this radius is exactly `r₀/x₀`. Hand
+algebra on the straight cut then says more, and it is registered here before it is run:
+`d(∂_χ r)²/dr = −2M/r² + 2r/α²` vanishes at `r = (Mα²)^{1/3}`, which for the Nariai offset
+`2M = 2α/(3√3)` is `α/√3` — **the same radius**. So the degeneracy is not a crossing but the function's
+**minimum**, and the minimum value is `2/3 + 1/3 = 1` exactly.
+
+| row | expectation | licence |
+|---|---|---|
+| **⑩** | `(∂_χ r)²` on the straight cut attains its **minimum** at `r = (Mα²)^{1/3} = α/√3`, and the minimum value is exactly `1`, so `g_χχ = (∂_χ r)² − 1 ≥ 0` everywhere with a **single** zero | the stationarity residual to round-off; the minimum over a dense grid spanning four decades in `r` equal to `1` to `< 1e-12`; and `g_χχ ≥ 0` at every node |
+| **⑪** | ⛔ **and that is a CHARACTERIZATION of the Nariai selection**: for an offset above `2α/(3√3)` the minimum of `(∂_χ r)²` falls below `1`, so `g_χχ` is negative on an interval and the constant-`τ̃` slicing is timelike-degenerate over a RANGE; for an offset below it the minimum exceeds `1` and there is no degeneracy at all | the minimum minus `1` printed at offsets `0.98`, `1.00` and `1.02` times `2M`, and required to change sign through the Nariai value; `⑪` fires if the Nariai value is not the one that gives exactly `0` |
+| **⑫** | ⇒ **and radiation REMOVES the degeneracy**: with `μ = 2M + K/r` the minimum of `(∂_χ r)²` exceeds `1`, so on the cut the universe actually has, `g_χχ > 0` everywhere and the cosmological slicing is regular | the bent cut's minimum of `(∂_χ r)² − 1` printed and required `> 0`; the radius at which it sits printed beside `α/√3`. ⌗ **Registered without knowing the answer**: if the bent minimum is still `≤ 1` the row fires and the finding is the opposite one |
+
+⛭ **Why these are not bookkeeping.** `⑪` would make the Nariai condition — which the corpus selects on
+other grounds — equivalent to a statement about the **cosmological foliation** rather than about the
+static patch, which is a foundations-level fact bearing on the order's "kernel theorem" item. `⑫` would
+say the chart's one pathology is an artefact of taking the cut to be exactly vacuum.
+
+⛭ **What they do not licence:** no claim that the Nariai selection was MADE this way in the corpus, and
+no claim that a degenerate slicing is unphysical rather than a bad chart.
+
 ## `R2` — HOW FAR THE ACTUAL `r(τ̃)` DEPARTS FROM THE PURE `sinh^{2/3}` LAW (item ①'s one number)
 
 The statement under test says the leaves carry radiation's bend **and** that `r ∝ sinh^{2/3}(3τ̃/2α)`.
