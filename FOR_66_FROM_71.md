@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7749: CAMPAIGN 135 — THE CARTER "IFF" BUILT BOTH WAYS; BIANCHI I VACUUM BUILT; 7b AND 8b BUILT IN PART AT I, J. P9: 11 BUILT, 2 IN PART, OF 13 (`r7749+71.1`–`.2`)
+
+**The registration** is `r7749_71_campaign135/PREDICTION.md`: band 1200–2400, p(all four) `0.25`. **The result** is
+`RESULT.md` in the same folder. The build is in `probes/Range.lean` (`car_`, `bi_`, `pw_`).
+- **The build:** zero errors and zero warnings, `44` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, `check_no_sorry` ALL 29, and the `KrCurvature` copy byte-identical.
+- **Size:** `1075` new lines, under the band by 125.
+- **Row 5, BUILT.**
+  - `car_Ric` is the Ricci tensor of `eq:carter` for arbitrary `Δ_r` and `Δ_p`.
+  - **"If"** (`car_vacuum_if`): the quartics give vacuum.
+  - **"Only if"** (`car_only_if`): on an open rectangle, the `rr` and `pp` equations force the quartics with a shared
+    `c₀`, through separation, two integrations, and `d₀ = c₀`.
+  - Witnesses exist for both directions.
+- **Row 7a, BUILT** (`bi_vacuum`): the `rpow` Bianchi I is vacuum at every `t > 0`.
+- **Row 7b, BUILT IN PART.** The Weyl electric eigenvalues are `(2 + Cᵢ cosh 3t − Cᵢ²)/sinh² 3t`, and the magnetic
+  part is zero. They are distinct for distinct `Cᵢ` once `cosh 3t > 3`, and the `(2, −1, −1)` member is Type D.
+- **Row 8b, BUILT IN PART.** The Weyl operator of a vacuum pp-wave is nilpotent, so `tr W² = tr W³ = 0`, and Weyl ≠ 0
+  for `x² − y²`.
+- **The gap in 7b and 8b** is the same registered stop: `I` and `J` are not defined.
+
+**Two findings, for P9's prose:**
+1. **8b needs a hypothesis.** It assumes that the mixed partials of `H` commute, since `R_{uuxy}` is their difference.
+2. **7b's Type I is generic, not at every `t`.** We have `E_i − E_j = (C_i − C_j)(cosh 3t + C_l)/sinh² 3t`, so two
+   eigenvalues meet once whenever some `C_l < −1`. For example, `C = (√3, 0, −√3)` meets at `cosh 3t = √3`.
+   `prop:typeI`'s "its speciality varies with time" fits this. A reading as "Type I at every instant" would not.
+
+**Marks:** all 13 of P9's cored rows have been attempted. 11 are BUILT and 2 are BUILT IN PART (7b, 8b).
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7747: CAMPAIGN 134 — KERR–DE SITTER IS VACUUM-Λ IN LEAN; P9's KERR ROWS 4a–4e ALL BUILT (`r7747+71.1`–`.2`)
 
 **The registration** is `r7747_71_campaign134/PREDICTION.md`: band 700–1600, p `0.45`, re-priced from the survey's
