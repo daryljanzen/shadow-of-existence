@@ -24832,3 +24832,71 @@ All eight registered measures are reported, the two the runner had not built add
 The four registered measures are reported; the outcome-chosen `16` is replaced by the registered `64`, drawn by seed in advance and scored blind; and the deviation that could not be repaired is restated at its size.
 
 ⛔ **One deviation is not in the deviation list:** the registration says "20% of scored trials, stratified by condition"; what was drawn is 64 trials **whose hard ask the scorer passed** — the right frame for false passes, the wrong one for the registered κ, whose hard-ask column is constant *because the sample was drawn on it*. ⌗ **At its size, which is small:** a random 64 would have carried one or two failures and κ would very likely still have been degenerate. The verdict does not change; the line belongs in the list because it is the difference between a statistic that could not be computed and one that was designed out. ⌗ And one reading of the bound this line set: `0 of 64` bounds the false-pass **rate** at `5.6` per cent, which over about `309` passes is up to **17** false passes, not the five named at `r7754` for a **count** — the conclusion stands, because the ceiling is a rate claim. Said because the two numbers look like they disagree and do not.
+
+---
+
+## ⛔⛭⛭ `r7760` — **ANSWERING `r7757`. `cc66`'s FACTUAL CLAIM IS TRUE AND I RECOMPUTED IT: THE CORPUS'S `θ*` TAKES ITS NUMERATOR ON ONE HISTORY AND ITS DENOMINATOR ON ANOTHER, `76` PER CENT APART IN `r_s`. BUT §④'s KEY STEP IS NOT ENTAILED, §⑤ SHOWS ONE SEPARATING PREMISE WHERE THERE ARE TWO, AND `P*` IS NOT UNARGUED — IT IS CONSTITUTIVE. THE FORK IS WHICH OF TWO PRINTED SENTENCES GIVES, AND THAT RULING IS YOURS**
+
+*Receipt: `computations/beyond_the_wall/r7760_60_a_skeptical_cold_read_of_cc66s_premise_analysis_for_the_leaf_rate_reading/`. **Eleven arms, registered before any section body was opened; nine meet their criterion and the two that do not are findings about the argument.** Skeptical of the argument, not of the data, as ordered — and `§⑩` below is the order's own instruction to put the other side at full strength.*
+
+### ⛭⛭ ① THE FACTUAL CLAIM HOLDS, AND IT IS THE STRONGEST THING IN THE READ
+
+Recomputed from this line's own `r7580` instrument, read by path, with the sound horizon accumulated from the arm's own `z_hi = 3e7`:
+
+| | leaf history | stacking history |
+|---|---|---|
+| `r_s` | `145.316` Mpc | `255.422` Mpc (`+75.77 %`) |
+| `D_M(z*)` | `13941.629` Mpc | `14011.456` Mpc |
+
+| reading | `100 θ*` | against Planck's `1.04109` |
+|---|---|---|
+| both lengths on the **leaf** history | `1.04232` | `+0.12 %` |
+| both on the **stacking** history | `1.82295` | `+75.1 %` |
+| **the corpus as built** | `1.03712` | `−0.38 %` |
+
+⇒ ***As the corpus builds it, `θ*` is a ratio of two lengths taken on two different expansion histories of one congruence.*** That is a fact about the corpus and not an interpretation of it.
+
+⌗ **And the one-history question you asked has TWO answers, neither of them the corpus's.** Both-on-leaf is `cc66`'s §④. **Both-on-stacking is equally a one-history reading** and the read must price it rather than pass over it: it moves `r_s` by `76` per cent, where the acoustic scale is fitted — a different cosmology at the peaks, not a relabelling. A third, which `eq:proper-frame` suggests and which **fails**: two metric functions of one anisotropic layer carrying the two rates as two readings of one history.
+
+### ⛔ ② §④'s KEY STEP IS NOT ENTAILED — THE CHART HAS NO SINGLE `a`
+
+§④: *"a comoving length is defined only relative to a scale-factor history … both lengths are integrals of `c dt/a` over that one history."* But `eq:proper-frame` is `ds² = −dτ² + (∂_χ r)²dχ² + r²dΩ²`: its **radial** metric function is `∂_χ r` and its **angular** one is `r`, two different functions with different logarithmic rates — computed at five redshifts, the radial one being `H + Ḣ/H`, **negative above `z ≈ 1`**. ⇒ the leaf is **not isotropic in this chart**, and the single-`a` premise is an **FRW premise imported into a chart that does not supply it**. ⌗ **And it does not rescue the stacking reading either**: the corpus's two rates are not the chart's two metric functions. Unsupported in both directions, which is the honest verdict.
+
+### ⛔ ③ §⑤ SHOWS ONE SEPARATING PREMISE; THERE ARE TWO, AND THE SECOND IS IN THE SAME DOCUMENT
+
+§⑨⒣ states the stacking reading's best reply — the Projection Principle governs **causal structure**, not accumulated length — and `cc66`'s answer is, in its own words, *"an argument, not a proof"*. **That is a premise the leaf-rate reading needs**: `Q*`, *the Projection Principle's direction of determination governs accumulated length and not only causal order*. Without `Q*`, §⑨ does not reach the distance. ⇒ **two premises, one on each side; the side-by-side shows one.**
+
+### ⛭⛭ ④ `P*` IS NOT UNARGUED — IT IS CONSTITUTIVE, AND THIS IS THE STRONGEST POINT FOR THE STACKING READING
+
+The separation from the kernel theorem is sound as far as it goes. **But "stated rather than derived" is the wrong category.** `P15` builds the cosmology by reading the SdS metric over the `r`-chart and reassigning its causal orientation, and says so where it introduces the layers: *"the constant-proper-time slices are exactly Euclidean while the cosmological layers are a closed `S³` — spatial curvature and dark energy one `Λ` read on two slicings."* **The layers are slices of that geometry by construction.** Asking `P*` for a derivation is asking a construction to derive its own definition.
+
+⇒ ***THE FORK, BOTH BRANCHES STATED.*** Either **⒜** the leaves are the vacuum cut's slices — the construction — and `P15`'s *"all stress-energy gravitates, in full"* is the loose sentence needing a scope clause; or **⒝** that sentence is exact and the leaves are not the cut's slices, in which case the construction's own slicing needs the qualification. **One of the two printed sentences has to give. `cc66`'s read assumes it is the construction; the opposite assignment is at least as available from the text.** ⛔ **This seat does not choose: it is a ruling about what the object IS, and that is yours.** ⌗ *My recommendation is only that the corpus should say which sentence is exact in one clause wherever the pair first meet — the present state is what let two readings stand for thousands of revisions.*
+
+### ⌗ ⑤ `r2419`, AGAINST THIS CLONE'S OWN LIMITS
+
+The commit `§⑥` names is present here; **its parent is not** — `3,319` reachable from `HEAD`, `9,059` across all refs, against the `7,825`-commit history `cc66` reports. ⇒ **I can neither confirm nor refute §⑥'s central check**, and I say so rather than echo it. The census half I CAN check and did: re-running this line's instrument unmodified returns **`47` assigning sentences and `0` adjudicated as deriving** — `cc66`'s figures reproduce. ⛔ **And the limit on what the history claim could show even if confirmed deserves full weight rather than a footnote**: a commit named *"the consolidated corpus"* adding `762` lines is a **consolidation**, so absence in its parent dates the text's **arrival in this repository**, not the argument's existence — and the corpus cites an external source for the kernel theorem and carries a pre-repository manuscript arguing the vacuum description directly.
+
+### ⑥ §⑨ — THE QUOTES, ⒣, THE WAVE, THE TRAMPOLINE
+
+**Twelve of thirteen quotes are in print**, each attributed to the right file. ⛔ **One is a paraphrase inside quotation marks** (§⑨⒠'s Eddington line compresses *"continuing to expand at later times…"* to *"such universes expand at later times…"*): substance identical, nothing in the argument moves, reported at that size.
+
+**⒣ STANDS.** The axiom's own words — *"the causal structure induced by `g` faithfully encodes signal propagation"* — are a condition on the **conformal class**; an accumulated metric length is not a causal-structure fact, so the axiom as quoted does not reach `D_M`. ⌗ What ⒣ does **not** buy: the quantity is computed from the leaf family's own history on **both** readings, so this does not put it back on the vacuum history. ⒣ narrows §⑨ from *"the axiom answers item ②"* to *"the axiom makes the layer primitive, which does not by itself fix which history the layer has."*
+
+**The wave case is used correctly**, with one limit §⑨ does not state: a wave is a perturbation **of** the layer's metric; a distance is a length **across** a family of layers — the one does not carry to the other without `Q*`.
+
+⛔ **The trampoline's scope claim is NOT established, and here the skeptical reading goes against `cc66`.** Its licence sentence is not about lumps in its own words: *"space may still really warp through gravitational processes, but its **cosmological evolution** can — though not necessarily must — be described by space-times that are vacuum solutions."* The restriction to bowling balls is read off the **model's furniture**, not off the sentence, and "cosmological evolution" is the whole of what is at issue. ⌗ Both the other way: the warpers in the model are lumps, and the source says *"not necessarily must"*. ⇒ **the trampoline permits the vacuum reading and compels nothing.**
+
+### ⛭ ⑦ EVERYTHING THAT TELLS FOR THE STACKING READING, AT FULL STRENGTH, EACH WITH ITS DEFEATER
+
+- **⒜ `P*` is constitutive** (§④ above). *Defeater: find a place the corpus uses the leaves' geometry as it could not if they were vacuum slices — and the sound horizon may already be it.*
+- **⒝ The sound horizon cuts both ways.** `cc66` uses it to say the coherence cost is paid; read the other way, **the mixing §④ calls incoherent is the corpus's standing practice** and has survived every test the sector has run. *Defeater: show the mixing produces a wrong observable — my recomputation does not.*
+- **⒞ The trampoline licence is general in its own words.** *Defeater: "though not necessarily must".*
+- **⒟ ⒣ stands.** *Defeater: `Q*`, which `cc66` calls an argument rather than a proof.*
+- **⒠ §④'s key step is not entailed.** *Defeater: the anisotropy does not supply the corpus's two rates either — it weakens §④ without strengthening `P*`.*
+- **⒡ The Nariai case is untouched**, as `cc66` says: Eddington, the coherence argument and Hubble-flow invariance are arguments about the foliation's **stacking**, and none is touched by where a propagated length accumulates. *Common ground — and it means the dispute is narrower than "which rate is the cosmology's".*
+
+### ⌗ ⑧ WHAT I CANNOT SETTLE
+
+Which of the two printed sentences gives (**the fork, yours**); whether `Q*` holds, which the corpus has no sentence for; where the classifier was first argued, outside this repository; and whether the sky decides it, which is not this seat's arm.
+
+⌗ **What this revision got wrong:** the quote matcher first reported a §⑨ quotation as *not in print* when it is a **compression** of one that is. The arm was changed to localise a failure rather than only report it — the same family as `r7756`'s matcher defect, caught one level earlier.
