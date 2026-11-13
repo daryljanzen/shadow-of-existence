@@ -25096,3 +25096,67 @@ The register now reads *"Four clauses of the r7761 statement were dropped: **'no
 **What is verified, as against argued:** the offset in terms of `Λ` alone, `μ = 2/(3√Λ)`, free symbols `{Λ}`; the Nariai-forced `Ω_m/Ω_Λ = 2/x₀³` identical to the paper's translation; `1 + z_acc = x₀` an identity of the rate, turnover at `sinh² = 1/2`, `Ω_m = 2/3` there. **What is not verified by anyone yet:** that a *physical* `ω_m` agrees with the density the offset demands — which is the one measurement that bears on the fork, and ③ above says why the acceleration-epoch check does not.
 
 ⌗ **MY RECOMMENDATION, since the gate asked seats to decide what they can:** keep `2M` geometric and keep a *narrowed* form of the clause — `no content's quantity sets it` — rather than dropping it outright, because the dropped form is true of the statement `cc66` read and false of the construction's own arithmetic, and the register now carries both halves. **I do not close it: the clause is the gate's and `cc66` registered its reading first.**
+
+---
+
+## `r7768` — THE SMALL-`r` RECHECK ON THE BENT CUT: **THREE OF THE FOUR STAND, ONE OF THEM UNCONDITIONALLY, AND THE ONE THAT FAILS IS A SENTENCE IN `sec:scope` THAT STILL COMPUTES ON THE READING I WITHDREW AT `r7762`**
+
+**Receipt:** `computations/beyond_the_wall/r7768_60_the_small_r_recheck_on_the_bent_cut_and_a_cold_read_of_p7s_campaign_138_paragraphs/`. **Twelve arms registered and pushed before anything was measured; twelve meet their criterion.** Every constant is derived in the probe from the published pair and `ω_γ`; nothing is quoted from an earlier revision. ⌗ *`K` comes out at `3006.658` Mpc², agreeing with your and `cc66`'s inverted value to the printed digits — two routes, one number.*
+
+### ⛭ ① THE PIVOT FIRST, AND IT IS LOAD-BEARING: THE BEND IS IN THE CUT, NOT IN `f` — AND IF IT WERE IN `f` THERE WOULD BE NO HORIZON AT ALL
+
+- With `K = 0`, `f` has a positive **double** root at `α/√3 = 3009.89` Mpc — two roots before merging, one after. **And the published pair puts `2M` at the Nariai value to `4.5e-16` relative**, which is your central claim recomputed from the fitted numbers by a route that takes nothing from the construction's own algebra.
+- **With the same `K` placed inside `f`: no positive roots at all.** Not a moved horizon — no horizon, hence no trichotomy, no degenerate member, no selection.
+- The three regimes recomputed from the cubic's discriminant: `2` roots under the condition, `1` at it, `0` over it.
+
+⇒ **"The bend is in the cut and not in `f`" is the only reading on which the construction exists.** Every arm below says which answer it stands on.
+
+### ✔ ② THE SORT YOU ASKED FOR
+
+| the result | sort | survives? |
+|---|---|---|
+| the horizon trichotomy and the Nariai selection | **vacuum cut as such** — a property of `f`; the congruence it classifies is the horizon's null generator, not the matter congruence | **yes, untouched** |
+| the branch point as a chart fact | **vacuum cut as such** — the areal coordinate degenerating in the `r`-chart | **yes, untouched** |
+| ⛔ the branch point read off the **rate** | **content-filled leaves** — the bent rate diverges as `K/r⁴` against the vacuum's `2M/r³` | **no: the orders differ** |
+| the exact Euclidean flatness | **neither — a chart fact**; your dichotomy does not reach it | **yes, unconditionally** |
+| the photon-family identification | **vacuum cut as such for its derivation** | **yes, and your own defence of it is correct** |
+| ⛔⛔ `sec:scope`'s *"nor does putting radiation into the cut supply the leaf rate"* | **content-filled leaves** | **no** |
+
+### ✔ ③ THE FLATNESS IS UNCONDITIONAL, WHICH IS STRONGER THAN "IT SURVIVES"
+
+Every component of `dr² + r²dΩ²`'s Riemann tensor computed from scratch and vanishing; **no mass function anywhere in that metric**, tested on its free symbols; and `prop:flat`'s own substitution `(∂_χ r)²dχ² = dr²` holds for an **arbitrary** profile `R(τ+χ)`. **It does not stand because the cut is vacuum — it stands whatever the cut is, so the bent case needs no separate check.** ⌗ *The one hypothesis it does rest on is the chart form `r(τ,χ) = r(τ+χ)`, i.e. the radial equation's autonomy — which is the next item.*
+
+### ✔ ④ YOUR DEFENCE OF THE PHOTON-FAMILY DERIVATION IS CORRECT, AND NOW MEASURED WHERE `r7762` LEFT IT OPEN
+
+*"the derivation is not a property of the vacuum chart … depends on `r` alone for every mass function, so its solutions are translates of one another and the unit rate holds on any cut, bent or straight."* **Measured on the bent cut from `r = 0.0300` Mpc — `K/2M` divided by fifty, deep inside where radiation dominates the mass function — the translate property holds to `2.1e-13` over sixty samples**, offset taken by quadrature rather than interpolated. The unit crossing rate holds symbolically for an arbitrary profile. ⇒ **`r7762`'s open item is closed for this one, and the paper had already said why.**
+
+### ⛔⛔ ⑤ THE ONE PLACE THE CORRECTION HAS NOT REACHED, AND IT IS MY OWN OLD ERROR SITTING IN THE PAPER
+
+`sec:scope` still reads: *"Nor does putting radiation into the cut supply the leaf rate. Radiation is a bend of the cut, `m′(r)≠0`;* ***taken as the radial profile `ρ_r ∝ r⁻⁴`*** *the bend gives `H² = H₀²[Ω_m(1+z)³+Ω_Λ−3Ω_r z(1+z)³]`…"*
+
+| `z` | `0` | `1` | `1090` | `10⁴` |
+|---|---|---|---|---|
+| the leaf rate | `68.603` | `120.442` | `1550742.418` | `74506120.041` |
+| the **profile** reading | `68.600` | `120.373` | `233628.968` | `0.000` |
+| the **pressure-work** cut | `68.603` | `120.442` | `1550742.418` | `74506120.041` |
+
+- **True of the profile reading** — and that reading's bracket has gone **negative** by `z = 10⁴`, so it stops being a rate rather than merely differing.
+- **False of the pressure-work reading** — `max|pressure-work/leaf − 1| = 2.2e-16`. **The bent cut's rate IS the leaf rate**, which is what `r7762` established and `r7763` has recorded in the register.
+
+**The `ρ_r` there is a radial profile, and step (iv) makes `r` the label of the leaf — so it is the mass-inside-radius relation applied where `r` is not spacelike. That is exactly the error I made at `r7756` and withdrew at `r7762`.** The sentence predates the withdrawal. ⌗ *Mine first; a correction owed to the paper, not a point scored.*
+
+**→ THE PATCH, drafted and not applied.** For *"Nor does putting radiation into the cut supply the leaf rate. Radiation is a bend of the cut, $m'(r)\neq0$ (\S\ref{sec:flatlcdm}); taken as the radial profile $\rho_r\propto r^{-4}$ the bend gives"* read
+
+→ `\emph{And putting radiation into the cut supplies exactly the leaf rate.} Radiation is a bend of the cut, $m'(r)\neq0$ (\S\ref{sec:flatlcdm}); since $r$ labels the leaf, the bend is fixed by pressure work, $\dd m/\dd r=-4\pi r^{2}p$, which for $p=\rho/3$ gives $\mu=2M+K/r$ and returns $H^{2}=H_{0}^{2}[\Omega_m(1+z)^{3}+\Omega_\Lambda+\Omega_r(1+z)^{4}]$ identically. \emph{Read instead as a radial profile $\rho_r\propto r^{-4}$ --- the mass-inside-radius relation, applied where $r$ is not spacelike --- the bend would give`
+
+*…and then the existing `H²` expression and its consequences can stand as the superseded reading, explicitly labelled. ⌗ Whatever the paragraph concludes from the profile figure needs re-deriving, and that is **not** drafted here: the conclusion it was supporting — that the sky's preference for the leaf-rate distance meets no derivation from the cut — is the thing this patch removes the support for, and that is the gate's call, not mine.*
+
+### ✔ ⑥ `P7`'s CAMPAIGN-138 PARAGRAPHS
+
+**Six paragraphs now cite the Lean probe** (I read four at `r7762`) and **twenty-one declarations across them — every one resolves to a declaration in the file**, binder lists bracket-matched rather than regex-split. The campaign-138 set all resolve. The file: `619` lines, **no `sorry`**, `27` `#print axioms` lines. ⛔ *No Lean toolchain here, so this is the file and its declarations and not a build; the arm says so in terms.*
+
+### ⌗ ⑦ ONE THING THIS MAKES HARDER, AND IT IS MINE
+
+The photon-family instrument fix I owe — distinguish a **WITHDRAWN** claim (sentence in print, marker gone) from a **STALE** key (not in print at all) — is **not** subsumed by your item ④. **⑤ above adds a third state:** a sentence in print, carrying its marker, whose **computation** rests on a reading the corpus has withdrawn. That is a provenance state, not a marker state. **It changes what a gate asserts, so it keeps its own registration and I have not done it here.**
+
+⌗ **What this revision got wrong, both caught by its own arms:** the horizon-root finder used an *absolute* imaginary tolerance, so at the Nariai parameter — where the two horizons are a genuine double root that `np.roots` returns as a conjugate pair — it reported **zero** horizons where the truth is **one**; and the mass-function test asked whether `'M'` appeared in the metric's *printed* form, which it does, inside the word `Matrix`. *A double root is not a complex pair, and a tolerance that does not scale with the root cannot tell them apart.*

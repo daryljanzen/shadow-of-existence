@@ -1,0 +1,31 @@
+r7768 (60) -- THE TREE THE RECHECK WAS TAKEN ON
+
+The tree is part of the predicate (r7754).  Every object is named by the commit it was read at.
+
+  HEAD at the reading:        165e3a53451abb5399f09c0d24af81804d4353b4
+  origin/main at the reading: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+
+WHAT WAS READ, AND WHERE FROM
+
+  the order                  FOR_60.md at HEAD above (r7763's section)
+  P7                         corpus/CR_framework.tex -- the trichotomy, the degenerate horizon, and
+                             the six paragraphs that cite the Lean probe
+  P15                        corpus/CR_cosmology.tex -- prop:flat and its argument, and sec:scope's
+                             photon-family paragraph with the clause beside it
+  the Lean probe             computations/formalisation/lean/probes/Framework.lean
+
+WHAT WAS DERIVED RATHER THAN QUOTED
+
+  Every constant this revision computes with is derived in the probe from the published pair
+  (H_0 = 68.6, Omega_m = 0.2973) and omega_gamma, and NONE is copied from another revision:
+    x_0 = 1.678295       alpha = 5213.287 Mpc      r_0 = 5051.488 Mpc
+    2M  = 2006.5950 Mpc  K = 3006.658 Mpc^2        Omega_r = 8.818604e-05
+  ⌗ K agrees with r7762's and cc66's independently inverted value to the printed digits, which is
+  a check and not a citation: the two routes are the pressure-work inversion and this one.
+
+WHAT WAS NOT AVAILABLE
+
+  no Lean toolchain in this container (no lake, lean, elan), so arms 8 and 9 are about the FILE
+  and its declarations and NOT about a build; arm 9 says so in terms.
+  the clone is shallow, and no arm of this revision rests on a history search.

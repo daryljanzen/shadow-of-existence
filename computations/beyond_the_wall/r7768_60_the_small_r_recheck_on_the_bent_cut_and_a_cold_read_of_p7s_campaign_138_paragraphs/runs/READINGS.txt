@@ -1,0 +1,237 @@
+====================================================================================================
+r7768 (60) -- the small-r recheck on the bent cut (order r7763)
+  HEAD: 165e3a53451abb5399f09c0d24af81804d4353b4   origin/main: 07d109dec84443e3ea640bcd76f4def1aa615a51
+====================================================================================================
+
+  derived from the published pair, not quoted: x0=1.678295  alpha=5213.287 Mpc  r0=5051.488 Mpc
+  2M=2006.5950 Mpc   K=3006.658 Mpc^2   Omega_r=8.818604e-05
+
+====================================================================================================
+ARM 1 -- where the bend lives: the substrate's f(r), or the cut's own mass function mu(r)?
+  [PASS]
+      (a) the corpus's own sentences, located:
+        "The Einstein equations then return the Schwarzschild--de~Sitter metric, and the tangency trichotomy---transverse, tangent, or no horizon---forces the degenerate member, at which $\Lambda G^{2}M^{2}/c^{4}=1/9$ holds as an equality "
+        "The Einstein field equations are unchanged; what changes is the reading, and under it the quantities the standard model carries as independent inputs---the present matter density, the dark-energy fraction---are readings of one cos"
+        "\emph{Nor does putting radiation into the cut supply the leaf rate.} Radiation is a bend of the cut, $m'(r)\neq0$ (\S\ref{sec:flatlcdm}); taken as the radial profile $\rho_r\propto r^{-4}$ the bend gives $H^2=H_0^2[\Omega_m(1+z)^3"
+      (b) positive roots of f with K = 0 (the substrate):   [3009.8925]   -- 2 root(s) before merging, so it is a DOUBLE root
+          and the corpus's own published pair puts 2M at the Nariai value to 4.53e-16 relative, with the double root at alpha/sqrt3 = 3009.89 Mpc: True
+          positive roots of f with the corpus's K in f:     []
+          the two root structures differ in COUNT: True
+      (c) the Nariai condition recomputed from the cubic's discriminant: double root at M = alpha/(3 sqrt 3): True
+      ⇒ THE VERDICT, and every later arm stands on it: THE BEND IS NOT IN `f`.  The field
+        equations are unchanged and the substrate is the SdS vacuum; the bend is `m'(r) != 0`
+        in the CUT's mass function, which is the congruence's energy bookkeeping along the
+        epoch and not a term in the metric.  The second root structure above is computed to
+        show what WOULD change if the bend were in `f` -- and it is not that case.
+      ⌗ the reachable negative was exactly that: had the corpus sourced f with radiation, the
+        K/r^2 term would move the horizon structure and the Nariai selection with it.  The
+        numbers for that case are printed above so the reader can see what was ruled out.
+
+====================================================================================================
+ARM 2 -- the horizon trichotomy and the Nariai selection
+  [PASS]
+      the trichotomy as P7 states it:
+        "Promoting that direction to the fundamental timelike congruence, as the reassignment does, and classifying the family by how a null-generator congruence meets the horizon, yields a trichotomy: transverse crossing ($\Lambda G^2M^2/c^4<1/9$, two distinct positiv"
+        "At the occurrence the merged horizon is the Nariai double root, where $f=f'=0$ and the surface gravity vanishes: a degenerate horizon, which carries no bifurcation $2$-sphere (the bifurcation surface recedes in the degenerate limit)."
+      the three regimes recomputed from the cubic, with M scaled about the Nariai value:
+        M = 0.5 x alpha/(3 sqrt 3):  2 positive horizon root(s)  [under the condition]
+        M = 1.0 x alpha/(3 sqrt 3):  1 positive horizon root(s)  [at the condition]
+        M = 1.5 x alpha/(3 sqrt 3):  0 positive horizon root(s)  [over the condition]
+      the classifying object named in the statement is a null-generator congruence on the HORIZON: True
+      ⇒ SORT: ABOUT THE VACUUM CUT AS SUCH, AND IT STANDS.  The trichotomy is a property of
+        `f`, which arm 1 shows the bend does not touch; the congruence it classifies is the
+        horizon's null generator, not the matter congruence the bend belongs to.  Nothing in
+        the selection quantifies over the cut's mass function.
+      ⌗ the reachable negative was that the selecting argument might quantify over the matter
+        congruence, which would put a bent cut inside its scope.  It does not.
+
+====================================================================================================
+ARM 3 -- the branch point's structure and the crossing
+  [PASS]
+      mu, vacuum:  A3        mu, bent:  A3 + A4/r
+      h^2 - 1/alpha^2, vacuum:  A3/r**3      bent:  (A3*r + A4)/r**4
+      leading behaviour as r -> 0:  vacuum ~ A3/r^3,  bent ~ A4/r^4   -- ratio diverges: True
+      the radiation term passes the dust term at r = K/2M = 1.4984 Mpc,  i.e. z = 3370.3
+      and at last scattering it is already 32.4 per cent of the dust term,
+        which is r7762's figure recomputed from this revision's own constants.
+      ⇒ SORT, IN TWO PARTS, BECAUSE THE QUESTION HAS TWO OBJECTS:
+        ⒜ THE BRANCH POINT AS A CHART FACT is the VACUUM's and STANDS: `r = 0` is where the
+          areal coordinate degenerates in the SdS `r`-chart, a property of `f` and of the
+          chart, which arm 1 puts outside the bend's reach.
+        ⛔ ⒝ THE CUT'S OWN RATE AT SMALL `r` IS THE CONTENT'S, AND IT IS NOT THE SAME OBJECT:
+          the bent rate diverges as `A4/r^4` against the vacuum's `A3/r^3`.  Any statement that
+          reads the approach to the branch point OFF THE RATE is a statement about the
+          content-filled leaves, and it does not carry over unchanged.
+      ⌗ the reachable negative is the one that fired: the orders do differ, so the arm reports
+        them rather than recording agreement.
+
+====================================================================================================
+ARM 4 -- the exact Euclidean flatness of the constant-tau slices
+  [PASS]
+      the proposition and its argument, located:
+        "\begin{proposition}[The fundamental-observer slice is flat]\label{prop:flat}
+In the fundamental-observer frame~\eqref{eq:proper-frame}, a surface of constant $\tau$ has induced three-metric $dr^2+r^2d\Omega^2$ (since $(\partial_\chi r)^2d\chi^2=dr^2$"
+        "The constant-$\tau$ slice is exactly flat $\mathbb{R}^3$."
+      the induced three-metric, written out: diag(1, r^2, r^2 sin^2 theta) -- i.e. dr^2 + r^2 dOmega^2
+      every component of its Riemann tensor computed from scratch and vanishing: True
+      a mass function appearing anywhere in that metric: False
+      and the argument's substitution -- (d_chi r)^2 dchi^2 = dr^2 along the slice -- holds for an ARBITRARY profile R(tau+chi): True
+      ⇒ SORT: THE ORDER'S DICHOTOMY DOES NOT REACH THIS ONE, AND THAT IS THE ANSWER.  The
+        flatness is a CHART fact: it uses only that `r` is a function on the slice, and no
+        mass function enters at any step.  So it does not stand BECAUSE the cut is vacuum --
+        it stands whatever the cut is.  ** The bent case needs no separate check. **
+      ⌗ the reachable negative, and it is a real hypothesis rather than none: the chart form
+        eq:proper-frame rests on r(tau,chi) = r(tau+chi), which rests on the radial equation at
+        E = 1 being autonomous.  That is NOT vacuous and arm 5 measures it on the bent cut.
+
+====================================================================================================
+ARM 5 -- the photon-family identity in sec:scope, and its own defence against the bend
+  [PASS]
+      the identification and its defence, located:
+        "\emph{Which settles what kind of claim the equality is, and it is not the kind a second support could strengthen.} Under the reassignment the photon congruence \emph{is} the constant-$\tau$ family (\S\ref{sec:properframe}), so the comoving length the kernel takes is a s"
+        "\emph{And the derivation is not a property of the vacuum chart.} Steps~(iv) and~(v) rest on the radial equation at $E=1$, $\dd r/\dd\tau=rH(r)/c$, whose right-hand side depends on $r$ alone for every mass function, so its solutions are translates of one another and the "
+      THE DEFENCE MEASURED ON THE BENT CUT, and in the region this recheck exists for:
+        probed from r = 0.0300 Mpc, which is K/2M divided by 50 -- deep inside where the
+        radiation term dominates the mass function;
+        the offset between two solutions taken BY QUADRATURE (r7760's own fix, after an
+        interpolated offset gave 7.78e-05 there): 2000.000000
+        max relative departure from the translate property over 60 samples: 2.143e-13   -- below 1e-9: True
+      and the unit crossing rate, symbolically: d_tau r - d_chi r = 0  for an arbitrary profile: True
+      ⇒ SORT: THE DERIVATION STANDS, AND THE PAPER'S OWN DEFENCE OF IT IS CORRECT.  The radial
+        equation at E = 1 is autonomous for every mass function, so its solutions are translates
+        and the unit rate holds on the bent cut as on the straight one -- measured here at small
+        `r`, which is where r7762 left the question open.
+      ⌗ the reachable negative was a failure of the translate property near the branch point.
+        It does not fail there.
+
+====================================================================================================
+ARM 6 -- the clause beside it, which computes on the reading r7762 superseded
+  [PASS]
+      the clause, located verbatim in the CURRENT paper:
+        "\emph{Nor does putting radiation into the cut supply the leaf rate.} Radiation is a bend of the cut, $m'(r)\neq0$ (\S\ref{sec:flatlcdm}); taken as the radial profile $\rho_r\propto r^{-4}$ the bend gives $H^2=H_0^2[\Omega_m(1+z)^3+\Omega_\Lambda-3\Omega_r z(1+z)^3]$, a radiation term $-3z/(1+z)$ tim"
+        "\emph{Nor does putting radiation into the cut supply the leaf rate.} Radiation is a bend of the cut, $m'(r)\neq0$ (\S\ref{sec:flatlcdm}); taken as the radial profile $\rho_r\propto r^{-4}$ the bend gives $H^2=H_0^2[\Omega_m(1+z)^3+\Omega_\Lambda-3\Omega_r z(1+z)^3]$, a radiation term $-3z/(1+z)$ tim"
+      the three rates at four epochs, computed from this revision's own constants:
+        z                              0           1        1090       10000
+        leaf rate                 68.603     120.442  1550742.418  74506120.041
+        the PROFILE reading       68.600     120.373  233628.968       0.000
+        the PRESSURE-WORK cut     68.603     120.442  1550742.418  74506120.041
+      max |profile/leaf - 1| = 1.0000e+00   => the clause is TRUE of the profile reading: True
+      max |pressure-work/leaf - 1| = 2.220e-16   => and FALSE of the pressure-work reading: True
+      ⇒ ⛔⛔ THE SENTENCE IS TRUE ONLY OF A READING THE CORPUS HAS SINCE WITHDRAWN.  `rho_r`
+        in that clause is a RADIAL PROFILE, and step (iv) makes the radial coordinate the
+        label of the LEAF -- so the profile is the mass-inside-radius relation applied where
+        `r` is not spacelike, which is exactly the error r7756 made and r7762 withdrew.  On the
+        pressure-work law the bent cut's rate IS the leaf rate, to a part in 1e12 at every
+        epoch measured.  ** The paragraph has not been reached by the correction. **
+      ⌗ WHOSE ERROR: this line made the same misreading first, at r7756, and withdrew it at
+        r7762.  The sentence predates that withdrawal, so this is a correction owed to the
+        paper and not a point scored.  A patch is drafted in the reply; nothing is edited here.
+      ⌗ the guard applied before calling it wrong: what `rho_r` ranges over was established
+        from the clause's own words -- 'taken as the radial profile' - and not assumed.
+
+====================================================================================================
+ARM 7 -- the sort the order asks for
+  [PASS]
+      the bend's address
+        ⇒ VACUUM CUT -- it is not in f at all   [arm 1]
+      the horizon trichotomy / Nariai selection
+        ⇒ VACUUM CUT AS SUCH -- it is a statement about the substrate metric, and it stands   [arm 2]
+      the branch point and the crossing
+        ⇒ BOTH, AND THE PARTS SEPARATE -- the chart singularity is the vacuum's and stands; the leading divergence of the CUT's rate is the content's and is one order faster   [arm 3]
+      the exact Euclidean flatness
+        ⇒ NEITHER, AND THE ORDER'S DICHOTOMY DOES NOT REACH IT -- it is a CHART fact, and it never used a mass function, so it survives the bend for a stronger reason than the vacuum   [arm 4]
+      the photon-family identification
+        ⇒ VACUUM CUT AS SUCH FOR ITS DERIVATION, AND IT STANDS -- the defence is measured here on the bent cut, in the region where radiation dominates   [arm 5]
+      sec:scope's 'nor does putting radiation into the cut'
+        ⇒ ABOUT THE CONTENT-FILLED LEAVES, AND IT DOES NOT SURVIVE -- it is true of the superseded profile reading and false of the pressure-work reading the corpus now holds   [arm 6]
+      ⌗ TWO of the five do not fit the order's dichotomy, and that is reported rather than
+        forced: the flatness is a CHART fact that never used a mass function, and the branch
+        point splits into a chart fact that stands and a rate statement that does not.
+
+====================================================================================================
+ARM 8 -- P7's campaign-138 paragraphs: are they there, and do they cite what they use?
+  [PASS]
+      paragraphs citing the Lean probe: 6  (r7762 read FOUR; the campaign added more)
+      declarations cited across them: 21
+        ✔ fw_H                     binders: 2   NEW at 138
+        ✔ fw_H_null                binders: 2   NEW at 138
+        ✔ fw_action_odd            binders: 3   
+        ✔ fw_affine_inequiv        binders: 4   
+        ✔ fw_comoving_roots        binders: 3   
+        ✔ fw_dS_null               binders: 5   
+        ✔ fw_ef_inv                binders: 4   
+        ✔ fw_equilateral           binders: 2   
+        ✔ fw_horizon_inj           binders: 6   NEW at 138
+        ✔ fw_horizons              binders: 2   
+        ✔ fw_nariai_roots          binders: 4   
+        ✔ fw_no_intersection       binders: 7   NEW at 138
+        ✔ fw_one_sub_f             binders: 4   
+        ✔ fw_rest_frame            binders: 2   
+        ✔ fw_rs_tendsto            binders: 2   NEW at 138
+        ✔ fw_sinh23                binders: 5   NEW at 138
+        ✔ fw_surface_gravity       binders: 2   
+        ✔ fw_three_real            binders: 3   
+        ✔ fw_timelike_slope        binders: 4   NEW at 138
+        ✔ fw_turnaround            binders: 4   
+        ✔ fw_witness               binders: 0   
+      every citation resolves to a declaration in the file: True
+      of the campaign-138 set, resolving: 7 of 7
+      ⌗ the binder lists are BRACKET-MATCHED, not regex-split: r7756 found a flat regex returns
+        short lists and made two present hypotheses look absent.
+
+====================================================================================================
+ARM 9 -- the Lean file's own hygiene, and what cannot be checked here
+  [PASS]
+      Framework.lean: 620 lines, 38 declaration(s), 0 `sorry`, 27 `#print axioms` line(s)
+      per-paragraph disclosure of what is NOT formalised: 5 of 6  -- [True, False, True, True, True, True]
+      ⛔ THE LEAN BUILD IS NOT RUNNABLE IN THIS CONTAINER (no lake, lean or elan), so every
+        statement above is about the FILE's text and its declarations, not about a successful
+        build.  That is said in terms rather than implied, as r7762's arms did.
+
+====================================================================================================
+ARM 10 -- does the order's item 4 subsume the photon-family instrument fix this seat owes?
+  [PASS]
+      VERDICT: NOT SUBSUMED, and the recheck makes it harder.
+      the instrument must distinguish a WITHDRAWN claim (sentence in print, marker gone) from a STALE key (not in print at all).  Arm 6 ADDS A THIRD STATE rather than removing one: a sentence in print, carrying its marker, whose COMPUTATION rests on a reading the corpus has withdrawn.  That is not a marker state at all -- it is a provenance state -- so the owed fix is NOT subsumed, and arm 6 makes it harder rather than easier.
+      ⇒ The fix changes what a gate asserts, so it keeps its own registration and is NOT done
+        here.  ⌗ the reachable negative was exactly this and it fired: the arm checked for a
+        third state and found one.
+
+====================================================================================================
+ARM 11 -- what this recheck cannot settle
+  [PASS]
+      * the Lean build
+        -- no toolchain in this container; CI and node 71 have it
+      * whether the corpus's nucleosynthesis was computed on the leaf rate
+        -- cited to a companion paper this repository does not carry
+      * whether sec:scope's author intended the profile reading as the cut's mass function
+        -- an intention, not a text fact; the clause's own words are reported instead
+      * the full horizon structure of a cut whose bend DID source f
+        -- ruled out by arm 1 as not this corpus's case, so computed only as the contrast
+      ⌗ none of these is left as a hedge inside a stem: each is a named item with its reason.
+
+====================================================================================================
+ARM 12 -- the count, and the subject clause
+  [PASS]
+      arms declared in PREDICTION.md: 12
+      arms answered here (this one included): 12
+      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **
+
+====================================================================================================
+  VERDICT
+====================================================================================================
+    [PASS]  ARM 1   where the bend lives: the substrate's f(r), or the cut's own mass function mu(r)?
+    [PASS]  ARM 2   the horizon trichotomy and the Nariai selection
+    [PASS]  ARM 3   the branch point's structure and the crossing
+    [PASS]  ARM 4   the exact Euclidean flatness of the constant-tau slices
+    [PASS]  ARM 5   the photon-family identity in sec:scope, and its own defence against the bend
+    [PASS]  ARM 6   the clause beside it, which computes on the reading r7762 superseded
+    [PASS]  ARM 7   the sort the order asks for
+    [PASS]  ARM 8   P7's campaign-138 paragraphs: are they there, and do they cite what they use?
+    [PASS]  ARM 9   the Lean file's own hygiene, and what cannot be checked here
+    [PASS]  ARM 10  does the order's item 4 subsume the photon-family instrument fix this seat owes?
+    [PASS]  ARM 11  what this recheck cannot settle
+    [PASS]  ARM 12  the count, and the subject clause
+
+  12 of 12 arms meet their criterion.
+====================================================================================================
