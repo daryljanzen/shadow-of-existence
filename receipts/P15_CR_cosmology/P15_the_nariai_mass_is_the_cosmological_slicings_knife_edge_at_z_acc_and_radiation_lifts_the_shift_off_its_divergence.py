@@ -136,7 +136,10 @@ check("⛭ `r7763` ** ① THE BACKGROUND IS 60's, READ BY PATH AND NOT REIMPLEME
       f"2M {TWO_M:.4f} Mpc  x_0^3 {x03:.8f}")
 
 # ------------------------------------------------------------------ ② the paper's own -f IS g_chi chi
-_EQ = re.search(r'\\begin\{equation\}\s*-f=\\frac\{\(r-\\alpha/\\sqrt3\)\^(\d)\\,'
+# `r7763+cc66.5` SPAN SHORTENED to the minimum that carries the claim, per the grain clause
+# (`r7253` ruling 2): `\begin{equation}` was surplus -- the `-f=` form plus the LABEL is what the
+# claim needs, and the label is load-bearing because the receipt cites this equation by name.
+_EQ = re.search(r'-f=\\frac\{\(r-\\alpha/\\sqrt3\)\^(\d)\\,'
                 r'\(r\+(\d)\\alpha/\\sqrt3\)\}\{\\alpha\^(\d) r\}\s*,\s*'
                 r'\\label\{eq:chi-block-factored\}', TEXT)
 if _EQ:
@@ -247,7 +250,9 @@ check("⛭⛔⛭ `r7763` ** ⑥ AND THE DEGENERATE RADIUS IS `r₀/x₀` EXACTLY
       f"z_acc = {Z_ACC} +/- {Z_ACC_ERR}, i.e. {n_sig:.2f} sigma")
 
 # ------------------------------------------------------------------ ⑦ the pin on sec:scope's own prose
-_NS = re.search(r'non-synchrony factor \$\\partial_\\chi r/\(1\+\\partial_\\chi r\)\$ epoch by epoch, '
+# `r7763+cc66.5` SPAN SHORTENED likewise: `non-synchrony factor ` is surplus -- the FACTOR's own
+# form is what identifies which quantity bottoms, and that is what this gate evaluates.
+_NS = re.search(r'\$\\partial_\\chi r/\(1\+\\partial_\\chi r\)\$ epoch by epoch, '
                 r'which bottoms at exactly \$\\tfrac(\d)(\d)\$ at the merged Nariai radius', TEXT)
 HALF = (int(_NS.group(1)) / int(_NS.group(2))) if _NS else -1.0
 dchir = np.sqrt(dchir2(rgrid))
