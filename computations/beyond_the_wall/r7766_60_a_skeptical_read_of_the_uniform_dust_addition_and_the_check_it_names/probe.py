@@ -205,6 +205,12 @@ sinh_turn = sp.simplify(turn[0]) if turn else None
 # Omega_m at the turnover, from P15's own Omega_m = sech^2 u
 Om_turn = sp.simplify(1 / (1 + sinh_turn ** 2)) if sinh_turn is not None else None
 # the numbers
+# INPUT   x0 = 1.6648 +- 0.0467   -- corpus measured, taken from P15 sec:discussion (eq:zacc), which
+# itself carries the interval as an input "from DESI DR2 D_M/D_H".  NOTHING HERE COMPUTES THE FIT, and
+# arm 4's verdict does not rest on the interval's width: it rests on the identity 1+z_acc = x_0.
+# ⌗ Declared in this form because L_probability/S1 gates exactly this -- every script in the repository
+#   carrying the figure must say that it takes it as an input.  That gate fired on this file on its
+#   first run, correctly, and this line is the fix rather than an exemption.
 ZACC, ZACC_ERR = 0.6648, 0.0467
 om_from_zacc = 2.0 / ((1 + ZACC) ** 3 + 2)
 om_hi = 2.0 / ((1 + ZACC - ZACC_ERR) ** 3 + 2)

@@ -186,4 +186,12 @@ than quietly fixed: the matter-term counter first counted in `z`, where expandin
 expression carrying `cosh(2t)`, and returned no root at all. Both were arithmetic, both were visible
 as absurd rather than subtly wrong, and the fixes are in the file.
 
+**And a third, found by the corpus rather than by me:** the probe carries `z_acc`'s `± 0.0467`, and
+`L_probability/S1` gates exactly that — every script in the repository carrying the figure must say
+that it takes it as an **input**, because no script computes the fit. The gate fired on this file on
+its first suite run, correctly, and the fix is in the file: the figure is now declared as an input
+with its provenance, and the gate is green. *A gate written by another seat caught a provenance
+omission in this one's work on the first run it was exposed to, which is the suite working as
+intended; it is recorded here rather than quietly repaired.*
+
 **ELEVEN arms registered, ELEVEN answered. This seat is a subject of nothing in this revision.**

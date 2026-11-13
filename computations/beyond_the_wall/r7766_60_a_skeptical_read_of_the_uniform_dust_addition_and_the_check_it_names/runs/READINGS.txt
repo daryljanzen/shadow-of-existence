@@ -1,6 +1,6 @@
 ====================================================================================================
 r7766 (60) -- the uniform-dust addition, and the check it names (order r7761, Daryl's clause)
-  HEAD: b177d52fc4cc15059a8f0d1d510f2da0d158233f   origin/main: 7d5a0cdf0dac685b95bc255cc284ac3c058824a3
+  HEAD: 4fcc60f6c4c17cc9697b01d4a70614f819dd01ee   origin/main: 7d5a0cdf0dac685b95bc255cc284ac3c058824a3
 ====================================================================================================
 
   the instrument, read by path and not re-derived: H0=68.6  Om=0.2973  Or=8.818604e-05
