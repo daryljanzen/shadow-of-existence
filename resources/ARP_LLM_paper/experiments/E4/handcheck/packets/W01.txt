@@ -1,0 +1,30 @@
+QUESTION:
+Our payroll integration still uses REST API v1. Will it stop working the day we upgrade to 5.0?
+
+CANDIDATE A:
+No. API v1 still works in 5.0 and 5.1 (with a Deprecation header); it is removed in 5.2, planned for May 2027.
+
+CANDIDATE B:
+Yes. API v1 has been removed in 5.0, so the integration will break.
+
+RESPONSE:
+**1. No, you can't open a 3.8 file directly in 5.0.** Files from 3.x or earlier need a two-step upgrade:
+1. Install version 4.6.
+2. Open and save each company file in 4.6 so the database is converted.
+3. Then upgrade to 5.0.
+
+The 4.6 installers are on the Downloads page until **30 June 2027**. Take a backup before each step, because files converted to the 5.0 format can't be opened by earlier versions.
+
+**2. The minimum is macOS 12 Monterey.** macOS 11 Big Sur is no longer supported. You'll also need at least 8 GB RAM (16 GB is recommended above 50,000 transactions) and 2 GB free disk space, plus room for company files and backups.
+
+**3. No, automatic bank sync isn't available on Starter.** The four-hourly automatic feeds are only on Business and Enterprise plans. On Starter you'll keep importing bank transactions manually from CSV, OFX or QIF files.
+
+**4. No, it won't stop on upgrade day.** In 5.0, API v1 is deprecated but not removed:
+- It keeps working in 5.0 and 5.1, but every v1 response now includes a "Deprecation" header.
+- It will be removed in **version 5.2, planned for May 2027**.
+- You should move the payroll integration to API v2, which is documented on the developer portal, before then.
+
+**Corrections to my earlier notes:** they were wrong on three of these points, and the answers above follow the release notes themselves.
+- The notes said you could upgrade directly from any earlier version. That's only true for 4.x.
+- The notes said automatic bank feeds were on all plans. They're Business and Enterprise only.
+- The notes said API v1 had been removed in 5.0. It's deprecated in 5.0 and removal is planned for 5.2.

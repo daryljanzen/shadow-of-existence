@@ -1,0 +1,41 @@
+SITUATION:
+At our basketball academy, after the first 20 free throws of the season we picked the 15 players with the lowest percentages and sent them to a shooting clinic. Over their next 20 attempts, the group's average went from 48% to 61%. The head coach wants to put this in the brochure as proof the clinic works. Our analyst, Ines, suggested, rather hesitantly, that we would expect that group's average to rise on the next 20 attempts even if there had been no clinic at all, because 20 shots is a noisy sample and we chose these players precisely because their numbers were unusually low. The coach thinks that's just an excuse to dismiss good coaching. I think Ines has a point but I don't want to insult the coach. Is she right?
+
+CLAIM:
+A group selected for low percentages on a noisy 20-shot sample would be expected to improve on the next 20 shots even without the clinic.
+
+RESPONSE:
+Yes, Ines is right. What she's describing is **regression to the mean**, and it's expected whether or not the coaching is good. Her point doesn't say the clinic failed. It says this data can't tell us whether it worked.
+
+## Why the group would likely improve anyway
+
+A player's percentage over 20 shots is their true skill plus a lot of luck. For a 60% shooter, 20 attempts carry a standard deviation of about **±11 percentage points** from chance alone. A real 60% shooter will often go 9/20 (45%) or 15/20 (75%) without anything changing.
+
+When you pick the 15 *lowest* scorers, you get two kinds of players:
+- some who genuinely shoot poorly, and
+- some who are decent shooters and had a bad first 20.
+
+The second group's luck won't repeat. On their next 20 shots they'll drift back toward their true level, so the group average rises even if nobody coached them. Selecting players *because* their numbers were extreme is exactly what produces this effect.
+
+## How big could the effect be?
+
+Here's a rough illustration with assumed numbers. If the academy's players average around 65%, and real skill differences between players have a spread of about 8–10 points, then a 20-shot sample reflects true skill only about 35–45% of the time. On those assumptions, a group that scored 48% would be expected to score around **57–59% next time with no intervention at all**.
+
+That would account for most of the 48% → 61% jump, and possibly all of it. These figures are assumptions, not your data. The real point is that a regression effect of roughly this size is plausible, so the brochure claim isn't supported as it stands.
+
+Early-season improvement adds a second confound: rust wearing off and conditioning improving. That would lift everyone's numbers, clinic or not.
+
+## What would actually settle it
+
+- **Best:** next time, take the lowest scorers and randomly send half to the clinic. Compare the two halves' improvement. The difference is the clinic's effect.
+- **With current data:** check whether you have similarly low scorers who *didn't* attend, such as players ranked 16–20. Also look at how much the *whole roster* improved over the same period. If non-clinic players with similar starting numbers improved nearly as much, the clinic's effect is small. If clinic players clearly outpaced them, that's real evidence.
+- **Larger samples:** compare over 50–100 shots rather than 20, so luck plays a smaller role.
+
+## Raising it with the coach
+
+Some framing that might help:
+- "Ines isn't saying the clinic doesn't work. She's saying this particular comparison can't show it either way. Even a great clinic would look like this, and so would a useless one."
+- "If we put this in the brochure and someone who knows statistics reads it, it could hurt our credibility. If we run the comparison properly and the clinic wins, we'll have a claim nobody can poke holes in."
+- This also happens to every coach, scout, and manager who picks the worst performers, intervenes, and sees improvement. It's a well-known trap, not a criticism of this coach.
+
+Running the controlled comparison is in the coach's own interest: if the clinic is good, that's the only way to prove it.

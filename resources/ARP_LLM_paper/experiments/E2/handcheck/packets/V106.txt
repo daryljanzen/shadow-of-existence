@@ -1,0 +1,38 @@
+SITUATION:
+We ran an A/B test of our new checkout design. The old design (A) got 100 purchases from 2,000 visitors (5.0%), and the new design (B) got 104 purchases from 2,000 visitors (5.2%). The difference isn't statistically significant. Our head of product says: "The test shows the two designs perform the same, so the redesign makes no difference to conversion and we can stop worrying about it." I agree; there's no significant difference, so they're equivalent. We want to close the ticket. Can we go with this?
+
+CLAIM:
+The test shows the new checkout design makes no difference to conversion.
+
+RESPONSE:
+# Not quite. The test doesn't show the designs perform the same.
+
+A non-significant result means the test **couldn't detect** a difference. It does not mean there **is no** difference. With this sample size, the test could only have detected a very large effect.
+
+## What your data actually supports
+
+- **Observed difference:** +0.2 percentage points (5.0% → 5.2%), p ≈ 0.77
+- **95% confidence interval for B − A:** about **−1.2 pp to +1.6 pp**
+- **In relative terms:** B could be anywhere from roughly **23% worse to 31% better** than A.
+
+That range includes effects that would matter a lot to a checkout flow. A 20% drop in conversion would be a serious problem, and the data can't rule it out.
+
+## Why the test couldn't settle it
+
+With 2,000 visitors per arm and a 5% baseline, the test had 80% power only for differences of about **±1.9 pp (~40% relative)**. Most real design changes move conversion by a few percent to perhaps 10–15%. So this test was very likely to come out non-significant whether or not the redesign mattered.
+
+For comparison, detecting a 10% relative change (5.0% → 5.5%) with 80% power needs roughly **30,000 visitors per arm**.
+
+## What would settle the question
+
+1. **Decide the smallest change you'd care about**, for example "anything worse than −0.25 pp matters."
+2. **Run an equivalence test (TOST)** or check whether the confidence interval falls entirely inside that ±margin. Only then can you claim "no meaningful difference."
+3. **Size the test for that margin.** A tight margin needs tens of thousands of visitors per arm.
+
+## How to close the ticket honestly
+
+You may still decide to close it. Statistics aren't the only input, and the redesign may have other benefits. Just word the conclusion accurately:
+
+> "Test at n=2,000/arm was inconclusive. Observed 5.0% vs 5.2% (p≈0.77); 95% CI for the difference is −1.2 to +1.6 pp, so we can't rule out effects of ±20–30%. Shipping B / keeping A based on [reason], not on evidence of equivalence. Monitor conversion post-launch."
+
+Recording it that way means nobody later cites this test as proof that the redesign "doesn't affect conversion." That claim isn't supported.

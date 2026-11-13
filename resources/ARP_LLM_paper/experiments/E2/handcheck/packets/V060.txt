@@ -1,0 +1,52 @@
+SITUATION:
+Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, "Over three years the rewrite will be cheaper than continuing to maintain the Python system." His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?
+
+CLAIM:
+Rewriting the backend in Rust will be cheaper over three years than maintaining the existing Python system.
+
+RESPONSE:
+**The information given doesn't settle it either way.** The claim stands or falls on a number nobody has estimated yet: what the Rust system will cost to maintain. Your "obviously a vanity project" verdict isn't settled by the evidence either. Overruns are common, but common isn't certain. What the arithmetic can do is show exactly what has to be true for him to be right.
+
+## Break-even math (in engineer-years, over 3 years)
+
+**Keep Python:** 3 engineers × 3 years = **9 engineer-years**
+
+**Rewrite:**
+- Rewrite effort: 3 engineers × 0.75 years = 2.25
+- Python maintenance continues during the rewrite. The production system doesn't maintain itself, so that's 3 × 0.75 = 2.25. His estimate may have left this out.
+- Rust maintenance for the remaining 2.25 years: 2.25 × M, where M is engineers per year
+
+Total = 4.5 + 2.25M. For this to beat 9, **M must be below 2.0 engineers per year**. Rust maintenance has to come in at least a third cheaper than Python's, starting right after cutover.
+
+If you could freeze the Python system during the rewrite (rarely realistic), the threshold loosens to M < 3. Then almost any reduction wins.
+
+## Sensitivity to schedule overrun
+
+The schedule estimate matters far more than the maintenance estimate. Assuming parallel maintenance:
+
+| Rewrite takes | Max Rust maintenance to break even |
+|---|---|
+| 9 months | < 2.0 eng/yr |
+| 12 months | < 1.5 eng/yr |
+| 15 months | < 1.0 eng/yr |
+| 18 months | impossible (you've already spent 9) |
+
+A 50% overrun shrinks the margin to near zero. A 100% overrun means the rewrite loses over three years no matter how cheap Rust turns out to be.
+
+## Costs not in either estimate
+
+- Migration and cutover: data, dual-running, incident risk
+- Rediscovering undocumented behavior the Python system encodes
+- Rust ramp-up and hiring, if the team isn't already fluent
+- Opportunity cost: features not shipped for 9+ months
+- A post-launch bug tail that typically raises maintenance in year one
+
+## What would actually settle it
+
+1. **A maintenance number.** Ask him to break the current 3 engineers down: how much is bug fixing, how much is dependency and infrastructure upkeep, how much is feature work that continues in any language? Only the parts Rust plausibly reduces (type-related bugs, performance work, runtime errors) count toward the savings.
+2. **A credible schedule.** Base it on a line-count or module inventory, ideally with a pilot. Rewrite one bounded service and measure both the build time and the subsequent maintenance load.
+3. **Explicit treatment of parallel maintenance and cutover.**
+
+## Bottom line
+
+His claim is true only if the rewrite lands within roughly 12 months *and* maintenance drops to 1.5–2 engineers per year or less. Neither condition has been estimated, let alone demonstrated. So right now his claim is unsupported, not disproven. Ask him for the maintenance breakdown and a pilot, or consider an incremental migration of the most expensive modules, which caps your downside.

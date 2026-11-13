@@ -1,0 +1,27 @@
+QUESTION:
+What is the minimum time I should leave between doses?
+
+CANDIDATE A:
+At least 4 hours.
+
+CANDIDATE B:
+At least 4 hours.
+
+RESPONSE:
+Some of my earlier notes were wrong, so these answers come from the leaflet itself.
+
+**1. Daily 75 mg aspirin: can you take Feverlin without checking?**
+**No.** Only take Feverlin if your doctor or pharmacist has told you to, because ibuprofen can reduce the heart-protective effect of low-dose aspirin. My notes wrongly said the two could be taken together; the leaflet requires that check first.
+
+**2. Minimum time between doses**
+**At least 4 hours.** You can take 1 or 2 tablets up to three times a day as needed.
+
+**3. You've had 6 tablets today. Can you take two more before bed?**
+**No.** The maximum is **6 tablets (1,200 mg) in any 24 hours**, so you've already reached the limit. My notes wrongly said 8. Wait until 24 hours have passed since your first dose before taking more. If you've already taken more than you should, the leaflet says to talk to a doctor or go to the nearest emergency department straight away and take the pack with you.
+
+**4. Should you take them before breakfast on an empty stomach?**
+**No.** Take the tablets **with or after food**. Taking them on an empty stomach increases the risk of stomach upset. My notes had this backwards.
+
+One more correction: the leaflet says to talk to a doctor or pharmacist if you're trying to become pregnant or are in the **first six months** of pregnancy, not just "early pregnancy." It must not be taken at all in the last three months.
+
+For your back pain, don't take it for more than 10 days without a doctor's advice. Stop and get help immediately if you notice blood or black tarry stools, vomit with blood or what looks like coffee grounds, or swelling of the face, tongue or throat, or difficulty breathing.

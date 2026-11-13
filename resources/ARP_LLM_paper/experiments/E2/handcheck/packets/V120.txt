@@ -1,0 +1,46 @@
+SITUATION:
+We're using a 200 mm by 50 mm timber plank as a short span over a garden ditch. Our carpenter says, with great confidence: "It makes no difference to how much it sags whether you lay the plank flat or stand it on its edge. Same wood, same cross-section area, same stiffness." He's been doing this for thirty years and I tend to trust him; it's the same plank either way. Can we go with laying it flat, since that's easier to walk on, on the basis that it's just as stiff?
+
+CLAIM:
+A 200 mm x 50 mm plank is equally stiff in bending whether laid flat or on edge.
+
+RESPONSE:
+No, the orientation makes a large difference, and the carpenter is mistaken on this point.
+
+## Why
+
+Bending stiffness depends on the **second moment of area**, not the cross-section area. For a rectangle:
+
+**I = b·h³ / 12**, where *h* is the depth in the direction of bending.
+
+The depth is cubed, so it matters far more than the width.
+
+| Orientation | b × h | I (mm⁴) |
+|---|---|---|
+| Flat | 200 × 50 | 200·50³/12 ≈ **2.08 × 10⁶** |
+| On edge | 50 × 200 | 50·200³/12 ≈ **33.3 × 10⁶** |
+
+- **Sag:** Deflection is proportional to 1/I, so laid flat it sags **16 times more** under the same load and span.
+- **Strength:** Bending strength goes with the section modulus (b·h²/6), so flat it is **4 times weaker** and will break at about a quarter of the load.
+
+You can check this yourself: lay the plank flat across two supports, stand in the middle and note the sag, then repeat with it on edge. You'll see the difference straight away.
+
+His experience is real, but "same wood, same area, same stiffness" is simply not how beams behave. This isn't a matter of opinion. It's basic beam theory, and it's why floor joists are always installed on edge.
+
+## Can you still lay it flat?
+
+Possibly, if the span is short enough. A flat plank isn't automatically unsafe, but you can't assume it's as stiff as one on edge. Whether it's adequate depends on things you haven't told me:
+
+- **Span** (deflection grows with the cube of span, so this matters a lot)
+- **Timber species/grade** and whether it's wet (wet timber is weaker and creeps)
+- **Load**: one adult, people carrying things, a wheelbarrow?
+
+As a rough guide, a 50 mm flat plank of ordinary softwood is usually fine for one person over well under a metre. It gets noticeably bouncy beyond about 1–1.5 m. If you give me the span and what will cross it, I can work out the expected sag and stress.
+
+## Practical options if it's too bouncy
+
+1. **Two planks on edge as stringers**, with short boards screwed across the top as decking. This is stiff and comfortable to walk on.
+2. **The flat plank on top of a stringer or two on edge**, which gives you the walking surface you want with the stiffness underneath.
+3. **A mid-span support** in the ditch, if the ditch allows it. Halving the span reduces deflection about eightfold.
+
+In every case, make sure the ends bear solidly on firm ground and are fixed so the plank can't slide or tip. A single plank on edge on its own is stiff but narrow and can roll, so I wouldn't walk on it like that.

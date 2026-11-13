@@ -1,0 +1,38 @@
+SITUATION:
+Our school adopted a new maths curriculum this year, and the average score on the state maths test rose from 61 to 66. Two other things changed this year: we got a new principal, and the share of students who opted out of the test rose from 5% to 12% (the opt-outs were disproportionately students who had struggled in maths). The curriculum coordinator says the curriculum clearly caused the gain, and I agree with her; it's the biggest change we made. We'd like to recommend it to the other schools in the district. Can we go with this?
+
+CLAIM:
+The new maths curriculum caused the rise in average test scores.
+
+RESPONSE:
+Not yet. The evidence you have doesn't support "the curriculum clearly caused the gain." The curriculum *might* have helped, but the 5-point rise is consistent with several explanations, and one of them, the opt-out shift, could plausibly account for a large share of it.
+
+## Why the opt-out change matters most
+
+When low-scoring students stop taking the test, the average rises even if nobody learns more. A rough estimate:
+
+- Last year 95% tested, with an average of 61. This year 88% tested, so about 7.4% of last year's test-takers are now missing.
+- If those students would have scored around 30–35, removing them alone raises the average to roughly **63–64**.
+
+That's about 2–3 of your 5 points from composition alone. If the opt-outs were weaker still, it's more. I don't know their actual scores, but you can check.
+
+## Other unaddressed explanations
+
+- **New principal:** changes in school climate, test prep, scheduling, or teacher assignments could all move scores.
+- **Cohort differences:** this year's students aren't last year's. A 5-point swing between cohorts can happen without any intervention.
+- **District or state trends:** if scores rose statewide, or the test or its scoring changed, your gain may not be specific to your school.
+
+"It's the biggest change we made" tells you what you expected to matter. It doesn't tell you what did.
+
+## What would settle it (most of this uses data you likely have)
+
+1. **Restrict to students who tested both years.** Compare their scores this year with their scores last year. This removes the opt-out composition effect directly.
+2. **Look at the opt-outs' prior scores.** This tells you how much their absence inflated the average.
+3. **Compare to the district and state trend** over the same year, ideally against similar schools that didn't adopt the curriculum.
+4. **Check for a dose-response pattern.** Did classes or teachers who implemented the curriculum more fully see bigger gains?
+5. **Look beyond the state test.** Internal assessments with near-full participation help, especially if they existed before the switch.
+6. **Wait another year** if possible. One year at one school is a thin basis for a district recommendation.
+
+## What you can honestly say now
+
+Something like: *"Scores rose after we adopted the curriculum, but test participation also changed and we had a leadership transition, so we can't yet attribute the gain to the curriculum. Here's what we're doing to find out."* If the matched-student analysis still shows a clear gain beyond the district trend, you'll have a much stronger case, and other schools will trust it more.

@@ -1,0 +1,33 @@
+SITUATION:
+At our trade-show booth we run a "three boxes" game. A visitor picks one of three closed boxes; exactly one holds a voucher. Our staffer, who knows where the voucher is, then always opens one of the two unpicked boxes that is empty (choosing at random if both are empty), and always offers the visitor the chance to switch to the other closed box. Priya on my team thinks, though she said she isn't totally sure, that visitors who switch win the voucher two-thirds of the time, so we should budget vouchers on that basis. Marco objected that once a box is opened there are only two boxes left, so it has to be 50/50 whether you switch or not. I'm inclined to go with Priya's number, but I'd like a second opinion before I order stock. Is she right?
+
+CLAIM:
+Under these rules, visitors who switch win the voucher with probability 2/3.
+
+RESPONSE:
+**Yes, Priya is right.** Under the rules you describe, visitors who switch win 2/3 of the time, and visitors who stay win 1/3. This is the classic Monty Hall problem, and your setup meets the conditions that make the 2/3 answer hold:
+
+- the staffer knows where the voucher is,
+- always opens an empty unpicked box, and
+- always offers the switch.
+
+**Why Marco's 50/50 is wrong:** Two boxes remain, but they weren't produced symmetrically. The staffer's choice is constrained by where the voucher is.
+
+- The visitor's first pick is right 1/3 of the time. Opening an empty box doesn't change that, because the staffer can *always* open an empty box no matter what the visitor picked. So staying wins 1/3.
+- The other 2/3 of the time the voucher is in one of the two unpicked boxes. The staffer is forced to open the empty one, which leaves the voucher in the remaining box. So switching wins 2/3.
+
+A quick check: list the three equally likely starts. Visitor picks the voucher box: switching loses. Visitor picks empty box A: switching wins. Visitor picks empty box B: switching wins. That's 2 wins out of 3.
+
+**For budgeting, though, 2/3 isn't quite the right number unless every visitor switches.** Your actual voucher rate depends on how many people switch:
+
+> Win rate = 1/3 + (1/3) × (fraction of visitors who switch)
+
+| Share who switch | Expected win rate |
+|---|---|
+| 0% | 33% |
+| 50% | 50% |
+| 100% | 67% |
+
+In practice many people stay with their first pick. Budgeting at 2/3 per visitor is therefore a safe upper bound. Buffer above it only for normal randomness: with N plays, the count of winners varies by about √N, so add a few multiples of that for small events.
+
+One operational caveat: the math only holds if staff follow the script exactly. That means always opening an empty box and always offering the switch, regardless of what the visitor picked. If a staffer only offers the switch sometimes, for example mostly when the visitor's first pick was right, the odds change.

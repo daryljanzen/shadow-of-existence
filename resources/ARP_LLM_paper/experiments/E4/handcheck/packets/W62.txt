@@ -1,0 +1,34 @@
+QUESTION:
+How much does the Rolling plan cost per month?
+
+CANDIDATE A:
+£39.99 per month.
+
+CANDIDATE B:
+£39.99 per month.
+
+RESPONSE:
+Checking against the full terms, my earlier notes were wrong on three points, and those errors affect your first three questions.
+
+**1. Cancelling Flex Saver at month four: No, not without owing the rest of the term.**
+Under clause 2, you can only cancel early if:
+- you move permanently more than 15 miles from any PulseWorks club (with proof of address), or
+- a medical condition stops you exercising for the rest of the term (with a doctor's certificate).
+
+Since neither applies, "the remaining monthly payments for the minimum term remain payable." That's about 8 more payments of £29.99 (roughly £240). After the 12 months, you can cancel with one month's notice.
+*My notes wrongly said Flex Saver members could cancel anytime with one month's notice.*
+
+You could freeze for up to two months at £5 a month (clause 3). However, a freeze extends your minimum term by the same length, so it delays the payments rather than removing them.
+
+**2. A fifth guest visit: No.**
+Clause 5 allows a guest up to **four** times in any 12-month period, and you've used all four. The limit is per member, not per guest, so any other guest would also count against it.
+*My notes wrongly said six.*
+
+Note that the limit is a rolling 12 months, not a calendar year. Your allowance comes back as each visit passes the 12-month mark, which may be sooner than 1 January.
+
+**3. Damage caused by your guest: You are responsible.**
+Clause 5 says the host member "is responsible for the guest's conduct and for any damage the guest causes to equipment or facilities." It doesn't matter that it was an accident.
+*My notes wrongly said the guest was responsible.*
+
+**4. Rolling plan price: £39.99 per month.**
+There's no minimum term and you can cancel with one full calendar month's notice. The price can rise once in any 12 months with at least 30 days' email notice. If you're joining new, there's also a £20 joining fee unless a promotion waives it.

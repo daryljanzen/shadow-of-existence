@@ -1,0 +1,54 @@
+SITUATION:
+We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?
+
+CLAIM:
+With the zero-time connector and drivers each choosing their own fastest route, everyone's commute rises from 65 to 80 minutes.
+
+RESPONSE:
+# Yes, the modeller is right
+
+This is a well-known result called **Braess's paradox**. The intuition "at worst people ignore the new road" would hold if one planner assigned routes for everyone. It fails when each driver chooses for themselves, because ignoring the connector is not stable: any individual driver gains by using it, even though everyone loses once they all do.
+
+## Checking the numbers
+
+**Without the connector (today):**
+- Route 1: 2000/100 + 45 = 65 min
+- Route 2: 45 + 2000/100 = 65 min
+- Neither route is faster, so no driver has a reason to switch. This is stable.
+
+**With the connector, suppose everyone keeps today's routes.** One driver considers Mill Road → connector → River Road:
+- Mill Road: about 20 min. Connector: 0. River Road: about 20 min. **Total: about 40 min instead of 65.**
+
+That driver switches, and so do others. The old split falls apart.
+
+**Where it ends up: all 4,000 take Mill → connector → River.**
+- Mill Road: 4000/100 = 40 min. River Road: 40 min. **Total: 80 min.**
+- Can anyone do better by switching back?
+  - Mill + East Highway: 40 + 45 = **85 min**
+  - West Highway + River: 45 + 40 = **85 min**
+- No. Switching makes a driver worse off, so everyone stays at 80.
+
+## Why this is the only stable outcome
+
+Mill Road can never take more than 40 minutes, because at most 4,000 cars use it. The West Highway always takes 45. So for any driver, Mill Road beats the West Highway, whatever everyone else does. The same reasoning shows River Road (at most 40) always beats the East Highway (45). Every driver therefore prefers Mill → connector → River no matter what others choose, and the 80-minute outcome is the unique equilibrium. It is not a borderline or fragile result.
+
+## Where your intuition is correct
+
+If drivers coordinated, they could all ignore the connector and keep the 65-minute commute. The connector does not shrink what is achievable. It changes what self-interested drivers will actually do. Each driver who uses it slows Mill and River Road for everyone else but does not count that cost in their own choice. That gap is the source of the paradox.
+
+## Caveats for the council
+
+The result depends on the model's assumptions:
+- **Fixed demand:** exactly 4,000 drivers, with none changing departure time, mode or destination.
+- **Linear congestion** on Mill and River Roads, and fixed 45-minute highways that never congest.
+- **Drivers who know travel times well.** Navigation apps make this assumption more realistic.
+
+Real networks are messier, so the exact 65 → 80 figure should not be taken literally. The direction of the effect is real, though. Braess-type effects have been cited when cities removed roads without the expected gridlock, such as Seoul's Cheonggyecheon freeway removal and closures in Stuttgart and New York.
+
+## What would settle it for your proposal
+
+- Measured volume–delay relationships for Mill Road, River Road and both highways. Is a highway really congestion-free at 45 minutes?
+- Whether demand responds to travel time. Induced demand could make the outcome worse, while drivers leaving the network could soften it.
+- A run of the actual network model with the connector added, with sensitivity tests on those parameters.
+
+If the real network resembles the model, the connector as proposed would likely make commutes worse. Options worth examining include not building it, making it one-way the other direction, metering or tolling it, or adding capacity to Mill and River Roads at the same time.

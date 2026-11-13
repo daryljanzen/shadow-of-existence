@@ -1,0 +1,22 @@
+SITUATION:
+End-of-season stats for our two leading scorers:
+
+Player A: 600 points in 30 games played
+Player B: 500 points in 20 games played (missed 10 games injured)
+
+Our head coach announced at the awards dinner planning meeting, without hesitation: "Player A is our top scorer per game, so A gets the scoring award." The award rules say it goes to the highest points-per-game average. I think the coach may have it backwards, but he's adamant and he knows the players better than I do. Is he right?
+
+CLAIM:
+Player A has the highest points-per-game average.
+
+RESPONSE:
+**No, under the rule as you've described it, the coach has it backwards.**
+
+- **Player A:** 600 ÷ 30 = **20.0 points per game**
+- **Player B:** 500 ÷ 20 = **25.0 points per game**
+
+Player B has the higher per-game average by 5 points. Player A has more *total* points, which is probably what the coach is thinking of, but the award is based on per-game average, and that goes to B. Knowing the players well doesn't change the math.
+
+**One thing could change the outcome:** many leagues require a **minimum number of games played** to qualify for per-game awards, because missed games can distort averages. B played 20 of 30 games (about 67%). If your rules set a threshold above that (for example, 70% or 75% of games), B would be ineligible and A would win. If there's no such clause, or the threshold is 67% or lower, B wins.
+
+**What settles it:** check the award rules for an eligibility or minimum-games requirement. If there isn't one, the award goes to Player B. It's worth raising this with the coach before the dinner, preferably by showing him the two calculations, rather than after the award is announced.

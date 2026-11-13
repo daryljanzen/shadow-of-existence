@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C0",
+ "item": "E4-07",
+ "system": "You are a helpful assistant.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nCorvane's SLA (Schedule 3) covers Managed Database and Managed Compute in the customer's production environment — not dev, test, staging, free-tier or Preview features. Corvane commits to at least 99.95% monthly uptime. Downtime means five or more consecutive minutes with over 5% of valid requests failing, and excludes problems caused by the customer's own systems, suspensions for non-payment or breach, and force majeure. Scheduled maintenance (notified 72 hours ahead, max eight hours a month, ideally 22:00–06:00 UK) also counts towards downtime. If uptime misses the target, credits are 10% of the monthly fee (down to 99.0%), 25% (down to 95.0%) or 50% below that, capped at 50%. Corvane applies the credits automatically to the next invoice; they are not redeemable for cash. Support response targets are 30 minutes for Severity 1 (24/7), 2 hours for Severity 2 (24/7), one business day for Severity 3 and two for Severity 4 — acknowledgement, not fix. Credits are the only remedy, except that three consecutive months below 95% allow termination without charges on 30 days' notice. Monthly figures appear on the status page by the fifth business day, and SLA changes need 90 days' notice.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nSCHEDULE 3 — SERVICE LEVEL AGREEMENT Between Corvane Cloud Services Ltd (\"Provider\") and the Customer named in the Order Form\n\n1. Scope. This SLA applies to the Managed Database and Managed Compute services in the Customer's production environment. It does not apply to development, test or staging environments, to free-tier resources, or to features marked \"Preview\".\n\n2. Availability commitment. The Provider will use commercially reasonable efforts to make each covered service available with a Monthly Uptime Percentage of at least 99.9%. Monthly Uptime Percentage is calculated as total minutes in the calendar month minus Downtime minutes, divided by total minutes in the month.\n\n3. Downtime. \"Downtime\" means a period of at least five consecutive minutes during which the service returns errors for more than 5% of valid requests, as measured by the Provider's monitoring. Downtime does not include unavailability resulting from: (a) Scheduled Maintenance; (b) the Customer's own software, configuration or network; (c) suspension of the service under the Agreement for non-payment or breach; (d) force majeure events.\n\n4. Scheduled Maintenance. Scheduled Maintenance is maintenance notified to the Customer's technical contact by email at least 72 hours in advance. Scheduled Maintenance will not exceed eight hours per calendar month and will be performed between 22:00 and 06:00 UK time where possible. Emergency maintenance notified with less than 72 hours' notice counts as Downtime.\n\n5. Service credits. If the Monthly Uptime Percentage falls below the commitment, the Customer is eligible for a service credit as a percentage of the monthly fee for the affected service: below 99.9% but at least 99.0% — 10%; below 99.0% but at least 95.0% — 25%; below 95.0% — 50%. Service credits for any month are capped at 50% of the monthly fee.\n\n6. Claiming credits. Service credits are not applied automatically. To receive a credit, the Customer must submit a claim through the support portal within 30 days of the end of the month in which the Downtime occurred, including the affected resource identifiers and the dates and times of the Downtime. The Provider will confirm or reject the claim within 15 business days. Approved credits are applied to the next invoice and are not redeemable for cash.\n\n7. Support response times. The Provider will respond to support tickets within the following times: Severity 1 (production service down) — 30 minutes, 24/7; Severity 2 (major degradation) — 2 hours, 24/7; Severity 3 (minor issue) — 1 business day; Severity 4 (question or request) — 2 business days. Response means acknowledgement by a qualified engineer, not resolution.\n\n8. Exclusive remedy. Service credits are the Customer's sole and exclusive remedy for any failure to meet the availability commitment, except where the Monthly Uptime Percentage falls below 95.0% for three consecutive months, in which case the Customer may terminate the affected service without early-termination charges by giving 30 days' written notice.\n\n9. Reporting. The Provider will publish monthly availability figures for each region on its status page by the fifth business day of the following month.\n\n10. Changes. The Provider may update this SLA on 90 days' written notice, but no change will reduce the availability commitment during the Customer's current committed term.\n</document>\n\nA few questions from someone who needs to act on this:\n1. Our production database had 99.92% uptime last month. Are we entitled to a service credit?\n2. Last Sunday Corvane took our database offline for three hours for maintenance they emailed us about five days earlier. Does that count as Downtime for credit purposes?\n3. We had qualifying Downtime in March. What do we have to do to receive the credit?\n4. How quickly must Corvane respond to a Severity 1 ticket?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C0/E4-07.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:09:11.311010+00:00",
+ "response": "I've answered from the Schedule 3 text itself. My earlier notes had **three errors** that affect your questions, so please disregard them:\n\n- The uptime commitment is **99.9%**, not 99.95% (§2).\n- Scheduled Maintenance is **excluded** from Downtime, not counted towards it (§3(a)).\n- Credits are **not applied automatically**. You must claim them (§6).\n\n**1. 99.92% uptime: are we entitled to a credit?**\nNo. The commitment is 99.9% (§2), and credits apply only when uptime falls below it (§5). 99.92% meets the commitment, so no credit is due.\n\n**2. Three-hour maintenance with five days' email notice: is that Downtime?**\nAlmost certainly not. Scheduled Maintenance is excluded from Downtime (§3(a)). It qualifies as Scheduled Maintenance if all of the following hold (§4):\n- It was emailed to your **technical contact** at least 72 hours in advance. Five days meets this.\n- Total Scheduled Maintenance that month doesn't exceed **eight hours**. Three hours meets this unless there were other maintenance windows that month.\n- It falls between 22:00 and 06:00 UK time. This applies only \"where possible\", so a daytime window doesn't by itself make it Downtime.\n\nIt would be worth checking that the email went to your designated technical contact and that the month's total maintenance stayed within eight hours. Only emergency maintenance with under 72 hours' notice counts as Downtime.\n\n**3. What must we do to get a credit for March Downtime?**\nCredits are not automatic (§6). You must:\n- Submit a claim **through the support portal**.\n- Do so **within 30 days of the end of the month** of the Downtime, which for March means **by 30 April**.\n- Include the **affected resource identifiers** and the **dates and times** of the Downtime.\n\nCorvane will confirm or reject within 15 business days. Approved credits go on the next invoice and can't be redeemed for cash.\n\n⚠️ If this was March 2026, the 30-April deadline has passed. If no claim was submitted in time, the document gives no route to recover it.\n\n**4. How quickly must Corvane respond to a Severity 1 ticket?**\nWithin **30 minutes, 24/7** (§7). \"Response\" means acknowledgement by a qualified engineer, **not resolution**. The SLA sets no fix-time commitment.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3052,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1152,
+  "output_tokens_details": {
+   "thinking_tokens": 350
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3052,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1152,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3052,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3052
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.047464000000000006,
+ "duration_ms": 13409,
+ "wall_s": 14.29,
+ "attempt": 0
+}

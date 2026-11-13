@@ -1,0 +1,25 @@
+QUESTION:
+After a bereavement, I owe £14 in charges. Can the manager at my local branch waive the whole amount?
+
+CANDIDATE A:
+Yes. Branch Managers can waive charges in cases of bereavement.
+
+CANDIDATE B:
+No. A Branch Manager can only waive up to £10; anything over £10 must go to the Library Services Manager.
+
+RESPONSE:
+1. **DVD loan period:** 1 week. You can renew it **once only**, unless another member has reserved it.
+
+2. **Picture books returned late on your adult card:** Yes, you'll be charged. Charges depend on the card used, not the type of item, so children's books borrowed on an adult card are charged at the adult rate:
+   - 4 items × 5 days × 25p = **£5.00**
+   - If you're 65 or over, you pay half: **£2.50**
+   
+   The £6-per-item cap doesn't apply here. Next time, borrowing on your daughter's children's card would avoid overdue charges.
+
+3. **Inter-library loan the other library couldn't supply:** No, the £4 isn't refunded. The policy says the fee is non-refundable, including when the lending library can't supply the item.
+
+4. **Waiving £14 after a bereavement:** Not by your branch manager alone. A Branch Manager can waive up to £10 for hardship, bereavement or library error. Anything over £10 must be referred to the **Library Services Manager**, whose decision is final. Ask your branch to refer it.
+   
+   While you owe £10 or more, your account is blocked from borrowing until the balance drops below £10.
+
+*Note:* My earlier summary was wrong on three points: it said children's books carry no overdue charges, that inter-library loan fees are refundable, and it left out the £10 limit on branch waivers. The answers above follow the policy document itself.

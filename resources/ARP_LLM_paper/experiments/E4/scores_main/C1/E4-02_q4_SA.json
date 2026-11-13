@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-02_q4_SA",
+ "system": "You are matching an answer to one of two candidate answers. You are given a question, candidate A, candidate B, and the RESPONSE (a full reply to several questions; judge only its answer to THIS question). Classify: \"A\" if the response's answer matches A, \"B\" if it matches B, \"FLAGGED\" if it explicitly notes that two sources disagree on this point and then answers, \"NEITHER\" otherwise. If FLAGGED, also say which candidate the final answer follows. Also answer: does the response mention consulting or checking a source document (true/false)? Reply with JSON only: {\"match\": \"A|B|FLAGGED|NEITHER\", \"flagged_follows\": \"A|B|null\", \"mentions_checking_source\": true|false}",
+ "message": "QUESTION:\nAn employee wants to add three months of unpaid parental leave after her 52 weeks. Who decides whether she can?\n\nCANDIDATE A:\nThe HR Business Partner for her division, after consulting her line manager; the line manager cannot approve it.\n\nCANDIDATE B:\nHer line manager.\n\nRESPONSE:\nI checked each answer against the policy text. My earlier notes had three errors, which affect questions 2, 3 and 4. The corrections are listed at the end.\n\n**1. Weeks at 100% of basic salary: 18 weeks.**\nThese are weeks 1–18 (section 3). Weeks 19–39 are paid at the statutory rate, and weeks 40–52 are unpaid.\n\n**2. Resigning four months after returning: yes, she must repay.**\nEnhanced pay requires her to return for at least **six months** (section 4). She resigned after four, so she must repay the enhanced element. That is the difference between what she received for weeks 1–18 and the statutory pay she would otherwise have received. The exemptions don't apply because she resigned. They cover only redundancy, ill-health retirement, or dismissal other than for gross misconduct. By agreement, she can spread the repayment over up to 12 months.\n\n**3. Annual leave during unpaid weeks 40–52: yes.**\nSection 5 says contractual and statutory annual leave accrue \"throughout the whole of maternity leave, **including any unpaid weeks**.\" Bank holidays during her leave are also added to her entitlement. She should normally take accrued leave before the end of the leave year in which she returns. Up to 10 days can be carried forward if her line manager agrees.\n\n**4. Who decides on extra unpaid parental leave after 52 weeks: the HR Business Partner for her division.**\nUnder section 8, the HR Business Partner decides after consulting her line manager. The policy states that the line manager has **no** authority to approve the extension. The decision must be confirmed in writing within 14 days of receiving the request.\n\n**Corrections to my earlier notes** (the policy text takes precedence):\n- Return period: I wrote 3 months. The policy says **6 months**.\n- Annual leave: I wrote that it doesn't accrue during unpaid weeks. It **does** accrue.\n- Extension approval: I wrote \"line manager.\" It is the **HR Business Partner**, and the line manager is only consulted.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/scores_main/C1/E4-02_q4_SA.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:12:34.435903+00:00",
+ "response": "```json\n{\"match\": \"FLAGGED\", \"flagged_follows\": \"A\", \"mentions_checking_source\": true}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2320,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 258,
+  "output_tokens_details": {
+   "thinking_tokens": 216
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2320,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 258,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2320,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2320
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.023728,
+ "duration_ms": 5463,
+ "wall_s": 6.49,
+ "attempt": 0
+}

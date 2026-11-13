@@ -1,0 +1,35 @@
+SITUATION:
+I'm writing a short history of a small river-port town for the local historical society. The town archive shows that its population roughly halved between about 1340 and 1380. The plague reached the region in 1349. Then, in the mid-1350s, the river toll and much of the trade moved to a rival town downstream after a dispute over bridge rights. We don't have year-by-year population figures, only the two estimates. The society's chair says the plague was obviously the main cause of the decline, and I agree with him; the plague killed huge numbers of people all over Europe. Can I write that the plague was the main cause?
+
+CLAIM:
+The plague was the main cause of the town's population decline between 1340 and 1380.
+
+RESPONSE:
+**Not on the evidence you have.** The plague is a plausible cause, maybe even the likeliest, but the archive alone can't show it was the main one.
+
+## Why the evidence doesn't settle it
+
+You have two population estimates bracketing two candidate causes about five years apart: plague in 1349 and the trade shift in the mid-1350s. With only a start point and an end point, both explanations predict the same thing, a roughly halved population by 1380. The data can't distinguish them.
+
+Some points cut against assuming plague dominance:
+
+- **Plague mortality varied widely.** The Europe-wide picture doesn't tell you what happened in this town. Some places lost half or more of their people, others far less.
+- **Towns often recovered quickly after 1349.** Survivors inherited property, wages rose, and migrants moved in to fill gaps. A town with healthy trade could rebound within a generation.
+- **Losing the toll and trade is exactly the kind of blow that blocks that recovery.** A river port's economy depends on traffic. If merchants, boatmen, porters, and toll officials moved downstream, and migrants stopped coming, the population could stay low or keep falling for decades.
+- **Later plague waves** (often 1361–62 and 1369 in many regions) also fall in your window, which complicates things further.
+
+So a reasonable alternative story is that the plague caused a sharp drop and the trade loss prevented the recovery other towns saw. Under that story, it's genuinely unclear which mattered more by 1380.
+
+## What would settle it (or get closer)
+
+1. **Intermediate population evidence, 1350–1360.** Tax rolls, hearth counts, rent rolls, manorial or parish records, guild membership lists, or burgess admissions. A dip right after 1349 followed by recovery, then decline after the toll moved, would point toward trade. A steep 1349 drop with little change afterward would point toward plague.
+2. **Direct plague evidence for this town.** Death counts, a surge in wills or probates in 1349–50, clergy replacements (priests died in large numbers and institution records survive well), or chronicle mentions.
+3. **The rival town's records.** If it grew in the late 1350s, especially through migrants from your town, that's strong evidence for the trade explanation.
+4. **Comparison with similar nearby towns** that had the plague but didn't lose their trade. If they recovered and yours didn't, the trade shift likely made the difference.
+5. **Economic records**, such as toll receipts, market rents, and abandoned plots or houses, with dates where possible.
+
+## Suggested wording if you can't find more evidence
+
+> "Between about 1340 and 1380 the town's population roughly halved. Two events in these decades likely contributed: the arrival of the Black Death in 1349, which devastated communities across Europe, and the loss of the river toll and much of the town's trade to [rival town] in the mid-1350s following the dispute over bridge rights. The surviving records do not allow us to say how much each contributed, but the loss of trade may have prevented the kind of recovery seen in many towns after the plague."
+
+That's accurate, still a good story, and won't be overturned if someone later finds a tax roll from 1355. If the society wants to emphasize the plague, "the plague was probably a major cause" is defensible. "The main cause" is a claim the current archive can't support.

@@ -1,0 +1,53 @@
+SITUATION:
+We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?
+
+CLAIM:
+With the zero-time connector and drivers each choosing their own fastest route, everyone's commute rises from 65 to 80 minutes.
+
+RESPONSE:
+# Yes, the modeller is right
+
+This is a well-known result called **Braess's paradox**. Your intuition, "at worst people ignore it," holds for a central planner who assigns routes. It does not hold when each driver chooses for themselves.
+
+## Why everyone ends up at 80 minutes
+
+With the connector, there is a third route: **Mill Road → connector → River Road**.
+
+Suppose everyone is on the old routes as today (2,000 each, 65 minutes). Look at it from one Route 1 driver's seat:
+
+- Mill Road takes 20 min, then East Highway takes 45.
+- Instead, they could take the connector and River Road (20 min). That gives 20 + 0 + 20 = **40 min**.
+
+So switching is a big win for that driver, and the same is true for Route 2 drivers. People start switching. As they do, both Mill Road and River Road fill up. The process only stops when nobody can gain by switching:
+
+| Route | Time if all 4,000 use the shortcut |
+|---|---|
+| Mill + connector + River | 40 + 0 + 40 = **80 min** |
+| Mill + East Highway | 40 + 45 = 85 min |
+| West Highway + River | 45 + 40 = 85 min |
+
+At this point the shortcut is still the best choice for every individual. Any driver who goes back to an old route gets 85 minutes, which is worse. So everyone stays on the shortcut, and everyone takes 80 minutes. In this model that outcome is the unique equilibrium.
+
+## Where the intuition breaks
+
+"People will ignore it if it's worse" assumes drivers compare the new network with the old one. They don't. Each driver compares routes *given what everyone else is doing*. A driver who takes the shortcut slows down Mill Road and River Road for everyone else, but doesn't count that cost. Each choice is individually rational, and together they make everyone worse off. It's the same structure as a prisoner's dilemma.
+
+The 65-minute split is still achievable on the new network. It just isn't stable, because every driver has a reason to leave it.
+
+## What the model does and doesn't establish
+
+The arithmetic is correct. Whether the real connector would cause this depends on assumptions the model makes:
+
+- **Fixed demand.** It assumes 4,000 drivers regardless of travel times. In reality some might change departure time, mode, or whether they travel at all.
+- **Congestion shape.** It treats Mill and River Road delay as exactly linear and the highways as perfectly fixed. Real roads have capacity limits, junction delays (including at the connector's ends), and highways that slow down under load.
+- **Behaviour.** It assumes drivers know the travel times and fully optimise. Navigation apps make this assumption more realistic, not less.
+
+To settle the question for the actual proposal, you'd want:
+
+1. Measured volume–delay curves for each road segment.
+2. Realistic delays at the connector junctions.
+3. Demand elasticity estimates.
+
+Feeding these into a standard user-equilibrium traffic assignment would show whether the paradox survives with real numbers. If it does, options include not building the connector, or metering or tolling it so the 65-minute pattern stays stable.
+
+Braess-type effects have been observed in practice. Road closures in Seoul (Cheonggyecheon) and New York (Broadway at Times Square) did not worsen traffic the way people expected. So this is a legitimate concern to raise with the council, not just a modelling quirk.

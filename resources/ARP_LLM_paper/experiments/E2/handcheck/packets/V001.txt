@@ -1,0 +1,46 @@
+SITUATION:
+We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?
+
+CLAIM:
+With the zero-time connector and drivers each choosing their own fastest route, everyone's commute rises from 65 to 80 minutes.
+
+RESPONSE:
+# Yes, the modeller is right
+
+This is a well-known result called **Braess's paradox**. Your intuition, "at worst people ignore it," holds if one planner assigns everyone's route. It fails when each driver chooses for themselves.
+
+## Checking the numbers
+
+With the connector, there are three routes:
+
+| Route | Path | Travel time |
+|---|---|---|
+| 1 | Mill Road → East Highway | (Mill cars)/100 + 45 |
+| 2 | West Highway → River Road | 45 + (River cars)/100 |
+| 3 | Mill Road → connector → River Road | (Mill cars)/100 + (River cars)/100 |
+
+**Why the old 2,000/2,000 split breaks down:** Mill Road and River Road each carry 2,000 cars and take 20 minutes. A Route 1 driver who switches to Route 3 drives Mill (20) and then River (≈20), about 40 minutes instead of 65. So everyone has a reason to switch.
+
+**Where it settles:** All 4,000 drivers end up on Route 3.
+- Route 3: Mill (40) + River (40) = **80 minutes**
+- Leaving for Route 1: Mill (40) + East (45) = 85 minutes, which is worse
+- Leaving for Route 2: West (45) + River (40) = 85 minutes, which is worse
+
+No driver can do better by changing routes alone, so this is a stable equilibrium.
+
+**Why no one holds back:** Mill Road can never take more than 40 minutes, because at most 4,000 cars use it. That is always faster than the 45-minute West Highway. The same holds for River Road versus the East Highway. So for each individual driver, the connector route is always the better choice, whatever everyone else does. It works like a prisoner's dilemma: each driver's best choice leaves everyone 15 minutes worse off.
+
+## Where your intuition goes wrong
+
+"People can ignore it" is true for each person, but a driver who ignores the connector does worse (85 minutes) than one who uses it. The collective outcome of 65 minutes would require everyone to give up a personal gain, and nothing enforces that. In this network, the selfish equilibrium (80) is worse than the coordinated optimum (65).
+
+## What the result does and doesn't establish
+
+The arithmetic is correct. Whether it predicts the real town depends on the model's assumptions:
+
+1. **Cost functions.** Real congestion is usually nonlinear, and the "always 45 minutes" highways will slow down under load too. The paradox only appears for certain combinations of capacities and demand. You would need measured speed-flow data for each link.
+2. **Fixed demand.** The model assumes exactly 4,000 trips. If longer commutes push some people to change departure times or modes, the outcome changes.
+3. **Driver behaviour.** It assumes drivers know the travel times and fully optimise. Navigation apps make this assumption more realistic, not less.
+4. **Connector capacity.** "Essentially no time" assumes the connector never congests. A real connector with limited capacity or a signal could weaken or remove the effect.
+
+To settle it for the actual proposal, run a traffic assignment model calibrated with real link performance curves and observed demand, with and without the connector, and include sensitivity tests on demand levels. The paradox has been observed in practice: closures in Seoul (Cheonggyecheon), Stuttgart, and New York have sometimes improved traffic. So the council should treat the modeller's warning as a serious possibility, not dismiss it as a modelling quirk.

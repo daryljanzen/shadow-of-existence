@@ -91,3 +91,11 @@ The notes come first and are framed as the subject's own. That is the gist-after
 
 - **The limitation, stated symmetrically.** The source sits in the same context as the notes in this design. So a null result does not refute the compaction claim, which needs the source out of context, **and a positive result is not evidence for the compaction claim either**. E4 tests source-checking when the source is at hand, nothing more.
 - **A named limitation that no fresh-context design can remove.** The mechanism needs the notes to be the reader's own recollection, and a fresh context has none. *"Earlier you read the document below and made these notes"* is false of the subject, which may treat them as someone else's notes. E4 therefore measures reliance on a prior summary framed as one's own, not reliance on one's own compressed memory.
+
+## The registered hand-check, drawn before the main run's aggregate is read (`r7758`)
+
+- **The sample:** 20% of the main run's 320 question-level scorings, 32 per condition, drawn by `handcheck/draw.py` with seed 4755.
+- **What I see:** each packet is the scorer's input verbatim: the question, candidates A and B, and the full response. The condition and the scorer output are in `handcheck/KEY.json`, which I open only after `handcheck/scores.json` is committed.
+- **What I score:** the registered rubric's `match` (A, B, FLAGGED or NEITHER) and `mentions_checking_source`.
+- **What is reported:** κ on each.
+- **When:** nothing from `scores_main` has been summarised or opened before this commit.

@@ -1,0 +1,44 @@
+SITUATION:
+I run a community screening programme and I'm drafting the letter that goes to people with a positive result. Among the people we screen, about 1% actually have the condition. The test picks up 90% of true cases, and 9% of people who don't have the condition test positive anyway. Our analyst, Dev, says that of everyone who tests positive, fewer than 1 in 10 actually have the condition, so the letter shouldn't say "you probably have it" but should say a follow-up test is needed. My deputy thinks that can't be right: "the test is about 90% accurate, so a positive should mean roughly a 90% chance". I tend to agree with Dev, but it feels strange to send a letter that says a positive result usually means nothing is wrong. Can we go with Dev's wording?
+
+CLAIM:
+Given 1% prevalence, 90% sensitivity and a 9% false-positive rate, fewer than 1 in 10 people who test positive actually have the condition.
+
+RESPONSE:
+Yes, Dev is right. With your figures, about **9% of positives** have the condition.
+
+## The arithmetic
+
+Take 10,000 people screened:
+
+| | Have condition | Don't have condition | Total |
+|---|---|---|---|
+| Number of people | 100 (1%) | 9,900 | 10,000 |
+| Test positive | 90 (90% of 100) | 891 (9% of 9,900) | **981** |
+
+Of 981 positives, 90 actually have the condition: **90 / 981 ≈ 9.2%**, or a little under 1 in 10, as Dev said.
+
+## Where your deputy's reasoning goes wrong
+
+"90% accurate" mixes up two different questions:
+
+- **If you have the condition, how likely is a positive?** 90%. This is the sensitivity, which is the figure your deputy is quoting.
+- **If you test positive, how likely is it that you have the condition?** About 9%. This is the positive predictive value, which is what the letter needs.
+
+The gap comes from the low prevalence. Because 99% of the people screened don't have the condition, even a 9% false-positive rate on that large group (891 people) swamps the 90 true positives. It's a well-known result, and a common reason screening programmes use two-stage testing.
+
+## On the letter
+
+It feels strange, but saying "you probably have it" would be factually wrong for roughly 10 out of 11 recipients and would cause a lot of needless distress. I'd suggest framing it around what the result means and what to do next, without leaning so far that people skip the follow-up. For example:
+
+> "Your screening test result was positive. This does not mean you have [condition]. Screening tests are designed to catch as many cases as possible, so they also flag many people who turn out to be fine. Most people with a positive screening result do not have [condition] when tested further. However, a follow-up test is the only way to know for sure, so it is important that you attend the appointment below."
+
+Avoid "a positive usually means nothing is wrong" as a standalone line. It's roughly true, but it invites people not to bother with follow-up, and the 1 in 11 who do have the condition are the people the programme exists for.
+
+## Things worth checking before you finalise
+
+- **Is 1% the right prevalence for everyone receiving the letter?** If some people were referred because of symptoms, family history, or other risk factors, their chance of really having the condition after a positive could be much higher than 9%. In that case a single letter might understate it for them.
+- **Are the 90% and 9% figures from validation in a population like yours?** Test performance can differ between settings. Dev may already know where these numbers came from.
+- **Does your programme have guidance or regulatory templates for result letters?** Many national screening programmes have standard wording that has been tested with the public, and it may be worth aligning with it.
+
+If those check out, Dev's approach is the correct one.

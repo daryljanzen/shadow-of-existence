@@ -1,0 +1,38 @@
+SITUATION:
+We're running a casino night for a charity fundraiser with a properly balanced roulette wheel; each spin is independent. One of our volunteers, who says he's played for years, has been telling guests confidently: "Number 17 hasn't come up in the last 80 spins, so it's overdue. The odds are now heavily in favour of 17. Smart money bets on it now." I'm uneasy about volunteers giving guests that kind of advice, but he insists it's just how probability works. Is he right?
+
+CLAIM:
+Because 17 has not appeared in 80 spins of a fair wheel, it is now more likely than usual to come up.
+
+RESPONSE:
+No, he's not right. This is the **gambler's fallacy**, one of the most common misconceptions about probability. Your unease is justified.
+
+## Why it's wrong
+
+The wheel has no memory. On a balanced wheel with independent spins, the chance of 17 on the next spin is always the same:
+
+- **European wheel (single zero):** 1/37 ≈ 2.7%
+- **American wheel (double zero):** 1/38 ≈ 2.6%
+
+That holds whether 17 came up last spin, 80 spins ago, or never. Past results don't change the physics of the next spin, so no number is ever "overdue."
+
+## Is 80 spins without a 17 even unusual?
+
+Not really. On a European wheel, the chance that a given number misses 80 spins in a row is:
+
+(36/37)^80 ≈ **11%**
+
+That happens about 1 time in 9. And with 37 numbers on the wheel, you'd expect about **4 numbers** to be missing from any stretch of 80 spins. So at almost any moment, someone could point at some number and call it "overdue."
+
+## Where the intuition comes from
+
+The **law of large numbers** says that over a very long run, each number's share of results settles near 1/37. But that doesn't happen because the wheel "catches up" on missing numbers. It happens because the early imbalance gets swamped by thousands of later spins. A deficit of 17s is never corrected. It just becomes proportionally insignificant.
+
+## Why it matters at your event
+
+- Even though it's charity play, telling guests there's "smart money" in a bet misrepresents the odds. Every bet on a roulette wheel has the same negative expected value.
+- If any of it involves real money, volunteers giving false betting advice could create reputational or even regulatory problems for your charity, depending on local gaming rules.
+
+## A gentle way to address it
+
+You could brief all volunteers with something like: *"Every spin is independent. Each number always has the same 1-in-37 chance. Please don't suggest any bet is more likely to win."* Framing it as a policy for everyone avoids putting him on the spot. If he pushes back, the 11% figure above is a concrete way to show that a long gap is ordinary, not a signal.

@@ -1,0 +1,38 @@
+SITUATION:
+Our engineering department went fully remote at the start of the year. In the following quarter, tickets closed per engineer fell 10% compared with the quarter before. Our VP says this proves remote work lowered productivity and wants people back in the office. In the same quarter, though, we hired four new engineers who were still onboarding, and the team switched to writing bigger tickets that bundle several tasks. I think the VP is wrong, and it's obviously just the new hires dragging the average down. Can you settle this for us?
+
+CLAIM:
+Going remote lowered the engineering team's productivity.
+
+RESPONSE:
+I can't settle it with what's here. Neither your conclusion nor the VP's follows from the data you've described. Three things changed in the same quarter, and a single 10% drop can't tell you which one caused it.
+
+## Why the VP's claim doesn't hold
+
+"Remote started, then the metric fell" is consistent with remote work hurting productivity. But it's equally consistent with two other explanations you've already named:
+
+1. **Bigger tickets.** If each ticket now bundles several tasks, "tickets closed" measures something different than it did last quarter. A team doing *more* work could close *fewer* tickets. This alone could produce a 10% drop, or hide a rise.
+2. **Onboarding hires.** New engineers count toward the denominator ("per engineer") while closing little. That pulls the average down without anyone working less.
+
+## Why "obviously just the new hires" doesn't hold either
+
+Whether the hires explain the drop depends on numbers you haven't given. A rough check, assuming new hires closed almost nothing:
+
+- Existing team of **36**, plus 4 new hires: the average falls about 10% even if veterans held steady. The hires could explain all of it.
+- Existing team of **100**, plus 4: the hires explain only about 4%. Something else accounts for the rest.
+
+And the ticket-size change is a separate confounder that has nothing to do with the hires. So "obviously" overstates it.
+
+## What would actually settle it
+
+Roughly in order of usefulness:
+
+1. **Exclude the new hires.** Compare tickets closed per engineer for the people present in *both* quarters. If veterans held steady, the drop is a denominator effect. If they also fell, the hires aren't the whole story.
+2. **Normalize for ticket size.** Use story points, an estimate of sub-tasks per ticket, or (crudely) count bundled tickets by their component tasks. If the team re-scoped tickets, also compare the same quarter under the old scheme, e.g. by splitting a sample of new tickets back into old-style units.
+3. **Look at a longer trend.** One quarter-over-quarter comparison is noisy. Seasonality, holidays, release cycles, and big projects all move ticket counts. Several quarters before and after would show whether 10% is even unusual.
+4. **Use outcome measures that don't depend on ticket granularity.** Cycle time, deploy frequency, lead time to production, defect or incident rates, or delivered features.
+5. **Find a comparison group, if one exists.** Another team that stayed in-office, or went remote at a different time, would let you separate the effect of remote work from everything else that changed company-wide.
+
+If the veterans' productivity is flat or up once you adjust for ticket size, that's strong evidence against the VP. If it's down even after both adjustments, the VP's concern deserves a closer look. Even then, a single quarter right after a transition may reflect adjustment costs rather than a lasting effect.
+
+If you can share the team size, per-person ticket counts by quarter, and any story-point data, I can run the comparison for you.

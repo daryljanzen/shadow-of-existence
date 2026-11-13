@@ -1,0 +1,26 @@
+QUESTION:
+I want seven temperature changes on weekdays (wake, leave, lunch, return, evening, late, night). Can the T4 do that?
+
+CANDIDATE A:
+Yes. Up to eight periods per day are allowed.
+
+CANDIDATE B:
+No. The maximum is six temperature periods per day.
+
+RESPONSE:
+Answers below come from the specification itself. My earlier notes got three of these wrong, so I've flagged where they differ.
+
+**1. Battery backup duration**
+**Up to 12 months.** The two AA lithium batteries keep the display and schedule memory running for that long. They cannot run the heating, though: the heating relay won't operate on battery power alone, so your heating stays off until mains or C-wire power returns.
+
+**2. 230 V electric baseboard heaters**
+**No, do not fit it.** The T4 is only compatible with 24 V AC low-voltage systems. The spec says line-voltage (120 V or 230 V) systems, specifically naming electric baseboard heaters, "must not be wired to the unit." Doing so could be dangerous, and the warranty excludes damage from installation on incompatible systems. You'll need a thermostat made for line-voltage heating.
+*(My notes wrongly said line-voltage baseboards were supported.)*
+
+**3. 5 GHz-only mesh router**
+**No.** The T4 supports Wi-Fi on the **2.4 GHz band only**, and the spec says 5 GHz networks are not supported. You'd need to enable a 2.4 GHz network on your mesh system, at least during setup. Many mesh systems can do this in their settings, sometimes as a separate "IoT" network. Also make sure the network uses WPA2 or WPA3-Personal, not enterprise/802.1X.
+*(My notes wrongly said 5 GHz was supported.)*
+
+**4. Seven temperature changes per weekday**
+**No, not as described.** The T4 allows up to **six** temperature periods per day. You can set separate schedules for each day, but each day is capped at six. You'd need to merge two of your periods, for example "late" and "night," or "leave" and "lunch" if nobody is home at lunch.
+*(My notes wrongly said eight periods.)*

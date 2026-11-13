@@ -1,0 +1,32 @@
+SITUATION:
+Our basketball team won 45% of its games last season under the old head coach (37 of 82). Twenty games into this season under the new coach, we've won 11 and lost 9, which is 55%. The general manager is telling the press that the new coach is clearly better than the old one, and I agree; ten points is a big jump. The schedule so far has included some weaker opponents, but it's hard to say how much weaker on balance. Several players have also changed since last season. Can we go with "the new coach is better" in our season preview?
+
+CLAIM:
+The new coach is better than the old coach.
+
+RESPONSE:
+**No, not as a flat claim.** Twenty games can't distinguish a 55% team from a 45% team, and the schedule and roster changes muddy the comparison further.
+
+## The record is within normal variation
+
+- **The gap is two wins.** A 45% team would expect about 9 wins in 20 games. You have 11.
+- **A 45% team gets 11+ wins in 20 games about 25% of the time.** That's roughly 1 in 4, so it's common, not remarkable.
+- **The uncertainty is wide.** A 95% confidence interval on an 11–9 start runs from about 34% to 74%. Last season's 45% sits comfortably inside it.
+- **One game swings it.** If a single win had gone the other way, you'd be 10–10 (50%), and the "ten-point jump" headline would halve.
+
+## The comparison isn't like-for-like
+
+- **Schedule:** Some weaker opponents inflate the record by an unknown amount. Even a game or two of schedule help would cover most of the gap.
+- **Roster:** With several players changed, any improvement could come from the players rather than the coach. The record alone can't separate the two.
+
+## What would settle it
+
+1. **More games.** By around 50–60 games, a real 10-point difference would start to stand out from noise.
+2. **Schedule-adjusted measures.** Point differential, net rating, or SRS against opponents' strength predict future results better than win-loss record does.
+3. **Separating coach from roster.** Compare returning players' performance and lineup data across the two seasons, and see whether the team beats what its talent would predict.
+
+## Suggested wording for the preview
+
+> "The team has started 11–9 under the new coach, ahead of last season's 45% pace, though against a softer early schedule and with a reshaped roster. The coming stretch will show how much of the improvement holds."
+
+This gives the new coach credit for a good start without claiming something the data can't support yet. The GM can be enthusiastic. A season preview is better off not staking its credibility on 20 games.

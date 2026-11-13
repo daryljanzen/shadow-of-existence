@@ -1,0 +1,1402 @@
+{
+ "V001": {
+  "cond": "C3",
+  "item": "E2-04",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V002": {
+  "cond": "C2",
+  "item": "E2-47",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V003": {
+  "cond": "C2",
+  "item": "E2-33",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V004": {
+  "cond": "C3",
+  "item": "E2-18",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V005": {
+  "cond": "C3",
+  "item": "E2-36",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V006": {
+  "cond": "C1",
+  "item": "E2-11",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V007": {
+  "cond": "C2",
+  "item": "E2-38",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V008": {
+  "cond": "C0",
+  "item": "E2-27",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V009": {
+  "cond": "C0",
+  "item": "E2-37",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V010": {
+  "cond": "C0",
+  "item": "E2-38",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V011": {
+  "cond": "C3",
+  "item": "E2-16",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V012": {
+  "cond": "C0",
+  "item": "E2-31",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V013": {
+  "cond": "C3",
+  "item": "E2-21",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V014": {
+  "cond": "C1",
+  "item": "E2-40",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V015": {
+  "cond": "C0",
+  "item": "E2-17",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V016": {
+  "cond": "C0",
+  "item": "E2-34",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V017": {
+  "cond": "C0",
+  "item": "E2-18",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V018": {
+  "cond": "C0",
+  "item": "E2-02",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V019": {
+  "cond": "C2",
+  "item": "E2-10",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V020": {
+  "cond": "C2",
+  "item": "E2-10",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V021": {
+  "cond": "C3",
+  "item": "E2-08",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V022": {
+  "cond": "C1",
+  "item": "E2-05",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V023": {
+  "cond": "C2",
+  "item": "E2-16",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V024": {
+  "cond": "C3",
+  "item": "E2-37",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V025": {
+  "cond": "C0",
+  "item": "E2-11",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V026": {
+  "cond": "C1",
+  "item": "E2-02",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V027": {
+  "cond": "C2",
+  "item": "E2-02",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V028": {
+  "cond": "C2",
+  "item": "E2-04",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V029": {
+  "cond": "C1",
+  "item": "E2-01",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V030": {
+  "cond": "C2",
+  "item": "E2-01",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V031": {
+  "cond": "C3",
+  "item": "E2-04",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V032": {
+  "cond": "C2",
+  "item": "E2-03",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V033": {
+  "cond": "C1",
+  "item": "E2-34",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V034": {
+  "cond": "C2",
+  "item": "E2-15",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V035": {
+  "cond": "C0",
+  "item": "E2-46",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V036": {
+  "cond": "C2",
+  "item": "E2-14",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V037": {
+  "cond": "C1",
+  "item": "E2-47",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V038": {
+  "cond": "C3",
+  "item": "E2-19",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V039": {
+  "cond": "C3",
+  "item": "E2-12",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V040": {
+  "cond": "C2",
+  "item": "E2-01",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V041": {
+  "cond": "C1",
+  "item": "E2-46",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V042": {
+  "cond": "C0",
+  "item": "E2-47",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V043": {
+  "cond": "C1",
+  "item": "E2-04",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V044": {
+  "cond": "C3",
+  "item": "E2-45",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V045": {
+  "cond": "C1",
+  "item": "E2-11",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V046": {
+  "cond": "C3",
+  "item": "E2-46",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V047": {
+  "cond": "C3",
+  "item": "E2-28",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V048": {
+  "cond": "C1",
+  "item": "E2-23",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V049": {
+  "cond": "C1",
+  "item": "E2-02",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V050": {
+  "cond": "C1",
+  "item": "E2-08",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V051": {
+  "cond": "C3",
+  "item": "E2-19",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V052": {
+  "cond": "C0",
+  "item": "E2-47",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V053": {
+  "cond": "C3",
+  "item": "E2-12",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V054": {
+  "cond": "C2",
+  "item": "E2-30",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V055": {
+  "cond": "C2",
+  "item": "E2-46",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V056": {
+  "cond": "C2",
+  "item": "E2-39",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V057": {
+  "cond": "C0",
+  "item": "E2-37",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V058": {
+  "cond": "C1",
+  "item": "E2-28",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V059": {
+  "cond": "C0",
+  "item": "E2-01",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V060": {
+  "cond": "C2",
+  "item": "E2-32",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V061": {
+  "cond": "C0",
+  "item": "E2-42",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V062": {
+  "cond": "C1",
+  "item": "E2-21",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V063": {
+  "cond": "C0",
+  "item": "E2-43",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V064": {
+  "cond": "C2",
+  "item": "E2-16",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V065": {
+  "cond": "C3",
+  "item": "E2-16",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V066": {
+  "cond": "C1",
+  "item": "E2-34",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V067": {
+  "cond": "C2",
+  "item": "E2-17",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V068": {
+  "cond": "C0",
+  "item": "E2-38",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V069": {
+  "cond": "C2",
+  "item": "E2-12",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V070": {
+  "cond": "C2",
+  "item": "E2-18",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V071": {
+  "cond": "C0",
+  "item": "E2-43",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V072": {
+  "cond": "C3",
+  "item": "E2-29",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V073": {
+  "cond": "C1",
+  "item": "E2-45",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V074": {
+  "cond": "C3",
+  "item": "E2-19",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V075": {
+  "cond": "C2",
+  "item": "E2-27",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V076": {
+  "cond": "C3",
+  "item": "E2-32",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V077": {
+  "cond": "C0",
+  "item": "E2-30",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V078": {
+  "cond": "C2",
+  "item": "E2-31",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V079": {
+  "cond": "C3",
+  "item": "E2-29",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V080": {
+  "cond": "C3",
+  "item": "E2-06",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V081": {
+  "cond": "C1",
+  "item": "E2-22",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V082": {
+  "cond": "C1",
+  "item": "E2-29",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V083": {
+  "cond": "C3",
+  "item": "E2-16",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V084": {
+  "cond": "C0",
+  "item": "E2-45",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V085": {
+  "cond": "C1",
+  "item": "E2-32",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V086": {
+  "cond": "C3",
+  "item": "E2-46",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V087": {
+  "cond": "C2",
+  "item": "E2-04",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V088": {
+  "cond": "C2",
+  "item": "E2-06",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V089": {
+  "cond": "C1",
+  "item": "E2-09",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V090": {
+  "cond": "C0",
+  "item": "E2-41",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V091": {
+  "cond": "C1",
+  "item": "E2-06",
+  "rep": 1,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V092": {
+  "cond": "C2",
+  "item": "E2-28",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V093": {
+  "cond": "C1",
+  "item": "E2-03",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V094": {
+  "cond": "C3",
+  "item": "E2-10",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V095": {
+  "cond": "C0",
+  "item": "E2-21",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V096": {
+  "cond": "C3",
+  "item": "E2-42",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V097": {
+  "cond": "C1",
+  "item": "E2-32",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V098": {
+  "cond": "C0",
+  "item": "E2-19",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V099": {
+  "cond": "C3",
+  "item": "E2-35",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V100": {
+  "cond": "C2",
+  "item": "E2-25",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V101": {
+  "cond": "C1",
+  "item": "E2-46",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V102": {
+  "cond": "C0",
+  "item": "E2-20",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V103": {
+  "cond": "C0",
+  "item": "E2-35",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V104": {
+  "cond": "C1",
+  "item": "E2-25",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V105": {
+  "cond": "C3",
+  "item": "E2-25",
+  "rep": 2,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V106": {
+  "cond": "C3",
+  "item": "E2-01",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V107": {
+  "cond": "C0",
+  "item": "E2-35",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V108": {
+  "cond": "C1",
+  "item": "E2-24",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V109": {
+  "cond": "C1",
+  "item": "E2-43",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V110": {
+  "cond": "C0",
+  "item": "E2-46",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V111": {
+  "cond": "C3",
+  "item": "E2-18",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V112": {
+  "cond": "C3",
+  "item": "E2-24",
+  "rep": 1,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V113": {
+  "cond": "C1",
+  "item": "E2-14",
+  "rep": 0,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V114": {
+  "cond": "C0",
+  "item": "E2-22",
+  "rep": 2,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V115": {
+  "cond": "C2",
+  "item": "E2-42",
+  "rep": 1,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V116": {
+  "cond": "C0",
+  "item": "E2-29",
+  "rep": 0,
+  "kind": "correct_contested",
+  "scorer": {
+   "verdict": "ACCEPT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V117": {
+  "cond": "C1",
+  "item": "E2-37",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V118": {
+  "cond": "C2",
+  "item": "E2-25",
+  "rep": 0,
+  "kind": "open",
+  "scorer": {
+   "verdict": "OPEN",
+   "special_instructions_guess": false
+  },
+  "settled": {
+   "settled": false
+  }
+ },
+ "V119": {
+  "cond": "C0",
+  "item": "E2-23",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ },
+ "V120": {
+  "cond": "C2",
+  "item": "E2-26",
+  "rep": 2,
+  "kind": "wrong_confident",
+  "scorer": {
+   "verdict": "REJECT",
+   "special_instructions_guess": false
+  },
+  "settled": null
+ }
+}

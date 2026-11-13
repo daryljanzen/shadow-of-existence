@@ -1,0 +1,38 @@
+SITUATION:
+Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out "significant" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?
+
+CLAIM:
+If none of 20 independent tests has a real effect, the probability that at least one is significant at the 5% level is about 64%.
+
+RESPONSE:
+**Yes, the analyst is right**, and the math checks out.
+
+## The arithmetic
+
+If none of the 20 tweaks does anything, each test still has a 5% chance of a false positive. With independent tests:
+
+- P(a given test is *not* significant) = 0.95
+- P(none of 20 are significant) = 0.95²⁰ ≈ 0.358
+- P(at least one is significant) = 1 − 0.358 ≈ **0.64**
+
+So even if every tweak were useless, you'd expect to see at least one "winner" about two times out of three. On average you'd get 20 × 0.05 = **1 false positive** per batch of 20, which is exactly what you observed.
+
+## Where the PM's reasoning goes wrong
+
+There are two separate errors.
+
+1. **"5% means 5%" applies to one pre-planned test, not to the best of 20.** The 5% error rate holds when you run a single test. Once you run 20 and pick the one that hit, you're no longer looking at a random test. You're looking at the one selected *because* it looked good. That selection is what inflates the error rate. It's like flipping 20 coins five times each and being impressed that one came up all heads.
+
+2. **"95% reliable" misreads what a p-value means.** p < 0.05 means "if there were no effect, data this extreme would show up less than 5% of the time." It does *not* mean "there's a 95% chance the effect is real." That second probability depends on how many of your tweaks actually work. If most small tweaks do little, which is typical, a lone significant result out of 20 has a good chance of being noise.
+
+## What to do
+
+- **Retest the winner** with a fresh, pre-registered test. If the effect is real, it should show up again. This is the cleanest fix and it's cheap compared with rolling out a fluke everywhere.
+- **Or apply a multiple-comparison correction** to the original results. Bonferroni would require p < 0.05/20 = 0.0025. If the winner's p-value clears that bar, the evidence is much stronger. Holm or Benjamini–Hochberg (FDR) are less conservative alternatives.
+- **Look at the effect size and confidence interval**, not just significance. A barely significant result with a small, noisy effect deserves extra skepticism. Retests of such results also tend to show smaller effects (the "winner's curse").
+
+## A one-line way to put it to the PM
+
+> "If we'd tested 20 tweaks that all did nothing, we'd still expect about one to look like a winner, and that's exactly what we got. A quick retest will tell us whether this one is real before we commit to it everywhere."
+
+This doesn't say the tweak is bad. It says one significant result out of 20 isn't yet strong enough evidence to act on.

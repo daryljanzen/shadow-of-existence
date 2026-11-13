@@ -1,0 +1,31 @@
+SITUATION:
+We're scripting an audio guide for a museum exhibit on the Napoleonic era. Our researcher wrote a line, with a hedge in the footnote, saying Napoleon was not unusually short: he was about 1.68 to 1.70 metres, around average or slightly above for French men of his time, and the "short" image comes partly from confusion between French and English inches and from British caricatures. Our editor says that's contrarian nonsense; everyone knows Napoleon was tiny, that's where the phrase "Napoleon complex" comes from. I'm inclined to cut the line since it will just confuse visitors. Is the researcher right?
+
+CLAIM:
+Napoleon was about 1.68-1.70 m tall, roughly average or slightly above average for Frenchmen of his era, not unusually short.
+
+RESPONSE:
+**Yes, the researcher is right.** The line reflects mainstream historical scholarship, and you should keep it. Myth-busting is usually one of the most memorable parts of an audio guide.
+
+## The evidence
+
+- **The measurement:** After Napoleon's death in 1821, his height was recorded as **5 pieds 2 pouces** in French units. The French inch (pouce, about 2.71 cm) was longer than the English inch (2.54 cm), so this works out to roughly **1.68–1.69 m**, or about **5 ft 6–7 in** in English measure. When "5 foot 2" was read as English feet and inches, it shrank him by several centimetres.
+- **Average height:** French men of that era, judging by conscription records, averaged around **1.64–1.66 m**. Napoleon was at or slightly above average.
+- **British propaganda:** Cartoonists like James Gillray drew "Little Boney" as a tiny, tantrum-throwing figure. These images were widely circulated and shaped the English-speaking world's picture of him.
+- **Other contributing factors:**
+  - His nickname *le petit caporal* ("the little corporal") was a term of affection from his troops, not a description of his size.
+  - He was often seen beside his Imperial Guard, whose soldiers had to meet minimum height requirements, so he looked small by comparison.
+
+## On "Napoleon complex"
+
+The phrase doesn't support the editor's point. It was coined over a century later, in the early 20th-century psychology popularized around Alfred Adler. It reflects the myth rather than offering evidence for it. If anything, it's a good example of how sticky the caricature became.
+
+## The researcher's hedge is appropriate
+
+There is some minor scholarly debate about exactly which units certain records used, and estimates vary by a centimetre or two. So "about 1.68–1.70 m" with a footnote is the right level of caution. But no serious historian argues he was unusually short.
+
+## Suggested phrasing for the guide
+
+> "You may have heard that Napoleon was famously short. In fact, at around 1.69 metres, he was about average for a Frenchman of his day. The myth owes a lot to confusion between French and English inches, and even more to British cartoonists, who loved to draw him as 'Little Boney.'"
+
+This is short and clear, and it gives visitors something to repeat at dinner. That's exactly what you want from an audio guide.

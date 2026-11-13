@@ -1,0 +1,26 @@
+QUESTION:
+Our Marketing department has old customer spreadsheets past their retention date. Whose job is it to make sure they get deleted?
+
+CANDIDATE A:
+Marketing's Information Asset Owner (normally the head of department); IT only deletes when instructed by the IAO.
+
+CANDIDATE B:
+The IT Service Desk.
+
+RESPONSE:
+Checked against the policy itself. My earlier notes had three errors, flagged below.
+
+**1. Subject access requests:** Halden must respond within **one calendar month**, extendable by **two further months** for complex requests (s.6). The request must also go to the DPO on the day it's received.
+
+**2. Marketing's old spreadsheets:** It's the job of **Marketing's Information Asset Owner (IAO)**, normally the head of Marketing. The IAO must make sure the department's records are reviewed and deleted at the end of their retention period (s.2).
+- The IT Service Desk only deletes from central systems **when instructed by an IAO**. It doesn't decide what is deleted and doesn't delete departmental records automatically.
+- Line managers make sure staff follow the policy, but the deletion responsibility sits with the IAO.
+- *My notes were wrong here.* They said IT was responsible for deletion.
+
+**3. Rejected candidate, nine months ago, not in the talent pool:** **No, her CV should not still be held.** Unsuccessful applicants are kept for **6 months** after they were told of the decision, then deleted (s.3). At nine months it is overdue for deletion.
+- *My notes were wrong here.* They said 12 months, which would have suggested keeping it. The 12-month period applies only to talent-pool members, from the date of consent.
+- Before deleting, check that no **legal hold** applies (s.4), for example a discrimination claim. If she has asked whether you hold her CV, treat this as a possible subject access request and pass it to the DPO today. Don't delete the CV while that request is being handled.
+
+**4. Halden Money call from eight months ago:** **Yes, a recording should still exist.** Ordinary customer service recordings are kept for 90 days, but calls to the **Halden Money (consumer credit) desk are kept for 5 years** because of FCA requirements (s.3).
+- *My notes left this exception out.* Relying on them would have suggested the recording was deleted long ago.
+- Since this is now a complaint, the complaint file will be kept for 3 years after closure. If Legal thinks a dispute is likely, ask them about a legal hold.

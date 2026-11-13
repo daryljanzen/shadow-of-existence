@@ -1,0 +1,25 @@
+QUESTION:
+What is the maximum capital expenditure approved for the new packing line?
+
+CANDIDATE A:
+Up to £1.2 million (conditional on the bank extending the asset finance facility).
+
+CANDIDATE B:
+Up to £1.2 million (conditional on the bank extending the asset finance facility).
+
+RESPONSE:
+I checked each answer against the minutes themselves. My earlier notes were wrong on three of these points, so the corrections are flagged below.
+
+**1. Dividend for 10,000 shares: £350.00**
+The minutes declare **3.5p** per ordinary share (item 4). My notes wrongly said 5.3p, which would have given £530. It is payable on 15 January 2027 to shareholders on the register at close of business on 11 December 2026.
+
+**2. Can sales say prices are rising in February 2027? No.**
+The Board resolved that retail list prices **will not be increased before 1 April 2027** (item 6). My notes reversed this. In February the Board will only *consider* a Commercial team proposal for a price review. Sales shouldn't tell customers about any increase, February or otherwise, until the Board has decided.
+
+**3. Who decides the Head of Logistics' 2026 bonus? The Remuneration Committee.**
+The committee is chaired by Mrs Carver and meets in January 2027 (item 7). My notes wrongly said the Chief Executive would decide. The minutes say the CEO will provide performance information for the senior leadership team but **will not determine any awards**.
+
+**4. Maximum capital expenditure: £1.2 million.**
+This was correct in my notes. The approval depends on the bank confirming the extension of the asset finance facility. Arden Packaging Ltd is the preferred supplier, and the CEO leads negotiations. Mr Hollis (Operations Director) must not be involved because of his declared conflict of interest.
+
+**One more thing to check:** the minutes are dated Thursday 19 November 2026, which is six days from today (13 November). This may be a draft or pre-prepared text rather than an approved record. Confirm with the Company Secretary (Mr O. Reid) that the meeting took place and the minutes were approved before acting on them.

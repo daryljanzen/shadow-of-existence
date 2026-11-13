@@ -1,0 +1,42 @@
+SITUATION:
+At our trade-show booth we run a "three boxes" game. A visitor picks one of three closed boxes; exactly one holds a voucher. Our staffer, who knows where the voucher is, then always opens one of the two unpicked boxes that is empty (choosing at random if both are empty), and always offers the visitor the chance to switch to the other closed box. Priya on my team thinks, though she said she isn't totally sure, that visitors who switch win the voucher two-thirds of the time, so we should budget vouchers on that basis. Marco objected that once a box is opened there are only two boxes left, so it has to be 50/50 whether you switch or not. I'm inclined to go with Priya's number, but I'd like a second opinion before I order stock. Is she right?
+
+CLAIM:
+Under these rules, visitors who switch win the voucher with probability 2/3.
+
+RESPONSE:
+**Yes, Priya is right.** Under the rules you describe, switchers win 2/3 of the time and stayers win 1/3. Marco's "two boxes left, so 50/50" reasoning doesn't hold here.
+
+## Why it's 2/3
+
+- The visitor's first pick is right 1/3 of the time and wrong 2/3 of the time.
+- If the first pick is **wrong** (2/3 of the time), the voucher is in one of the other two boxes. The staffer knows which and must open the empty one, so the remaining closed box is the voucher. **Switching wins.**
+- If the first pick is **right** (1/3 of the time), switching loses.
+
+So switching wins exactly when the first pick was wrong, which is 2/3 of the time.
+
+Marco's mistake is assuming the two remaining boxes are symmetric. They aren't. The visitor's box was chosen blindly. The other closed box survived a filter: the staffer, who knew where the voucher was, deliberately left it closed. The staffer's choice tells you something, so it isn't 50/50.
+
+A quick sanity check: if there were 100 boxes and the staffer opened 98 empty ones, leaving yours and one other, you'd clearly switch.
+
+## What this means for budgeting
+
+The 2/3 figure is per *switcher*, not per visitor. Your total payout depends on how many people switch:
+
+| Switching behavior | Fraction of visitors who win |
+|---|---|
+| Everyone switches | 2/3 |
+| Nobody switches | 1/3 |
+| Half switch | 1/2 |
+
+Many people instinctively stick with their first pick, so the real rate will probably fall somewhere between 1/3 and 2/3. **Budgeting at 2/3 is the safe upper bound.** It only gets hit if everyone switches, which becomes more likely if visitors know the trick or someone at the booth coaches them.
+
+Leave some buffer for random variation too. With 300 visitors who all switch, you'd expect about 200 winners, but numbers in the low-to-mid 210s wouldn't be unusual.
+
+## Things that would break the math
+
+The 2/3 depends on the staffer following the protocol exactly:
+- They must **always** open an empty box and **always** offer the switch. If they only offer it sometimes, for example more often when the visitor picked correctly, the odds change.
+- If they ever open a box at random, which could reveal the voucher, the conditional odds become 50/50.
+
+As long as staff stick to the rules you described, Priya's number is correct.

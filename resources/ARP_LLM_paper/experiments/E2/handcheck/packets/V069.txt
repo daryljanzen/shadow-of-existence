@@ -1,0 +1,22 @@
+SITUATION:
+Our flagship blender launched at $150. In spring we raised its price by 20%, and for the autumn sale we're cutting the current price by 20%. Our merchandising director says flatly: "We're just back at the original price. Up 20, down 20, it's basic maths. So the sale price is the launch price and there's no point mentioning a discount from launch in the ad copy." I agree with her; it nets out to zero. We want to finalise the copy today. Can we go with this?
+
+CLAIM:
+Raising a $150 price by 20% and then cutting it by 20% returns it to $150.
+
+RESPONSE:
+**No, the maths doesn't net to zero.** The second 20% is taken off a bigger number than the first 20% was added to.
+
+- Launch: **$150**
+- Spring +20%: $150 × 1.20 = **$180**
+- Autumn −20%: $180 × 0.80 = **$144**
+
+The sale price is **$144**, which is $6 (4%) *below* launch. Equivalently, 1.2 × 0.8 = 0.96. An equal percentage up and then down always lands below the start.
+
+**What this means for the copy:**
+
+1. **Check every price in the ad.** If anything says $150, or implies the sale price equals the launch price, it's wrong. That's the most urgent fix.
+2. **Saying "below launch price" is now possible and true**, if you want it. Whether it's worth saying is a marketing call. $6 is modest.
+3. **"20% off" ($180 → $144) is also accurate**, as long as $180 is a genuine recent selling price. If you sell in markets with reference-price rules, check them before using a "was" price. For example, the EU Price Indication Directive (as amended by the Omnibus Directive) generally requires the reference to be the lowest price in the prior 30 days. Other jurisdictions have their own tests. Legal or compliance can confirm in a few minutes.
+
+So you can finalise today. The price in the copy should be $144, not $150.

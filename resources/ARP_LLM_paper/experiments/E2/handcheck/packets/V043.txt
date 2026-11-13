@@ -1,0 +1,50 @@
+SITUATION:
+We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?
+
+CLAIM:
+With the zero-time connector and drivers each choosing their own fastest route, everyone's commute rises from 65 to 80 minutes.
+
+RESPONSE:
+**Yes, the modeller is right.** This is a well-known result called **Braess's paradox**, and the numbers check out exactly.
+
+## Why the 2,000/2,000 split breaks down
+
+Once the connector exists, there's a third route: Mill Road → connector → River Road.
+
+At today's split, a single driver who switches to it pays about 20 + 0 + 20 = **40 minutes** instead of 65. Every driver has that same incentive, so they start switching.
+
+## Why it ends at 80 minutes
+
+The key fact is that the variable roads can never be slower than the highways:
+
+- Mill Road takes at most 4,000/100 = **40 minutes**, even if every car uses it. That always beats the West Highway's 45.
+- River Road also takes at most **40 minutes**, which always beats the East Highway's 45.
+
+So whatever everyone else does, each driver is strictly better off taking Mill Road, the connector, and River Road. All 4,000 do, and the total is 40 + 0 + 40 = **80 minutes**.
+
+Nobody can improve by deviating from that:
+
+| Route | Time with everyone on the connector route |
+|---|---|
+| Mill → connector → River | 40 + 0 + 40 = **80** |
+| Mill → East Highway | 40 + 45 = 85 |
+| West Highway → River | 45 + 40 = 85 |
+
+This is the only equilibrium, not just one possible outcome. Everyone is 15 minutes worse off than before the connector was built.
+
+## Where your intuition goes wrong
+
+"At worst people ignore it" is true if a coordinator assigns routes. A planner would simply leave the connector unused and keep the 65-minute split. But drivers choosing for themselves can't collectively agree to ignore it. Each person's switch makes sense for them alone, but it adds congestion to Mill Road and River Road for everyone else. Individually rational choices produce a worse collective outcome, much like a prisoner's dilemma.
+
+## Caveats for the council review
+
+The model's conclusion depends on its assumptions, so these are worth checking against the real proposal:
+
+- **Fixed demand.** It assumes exactly 4,000 drivers regardless of travel time. In practice, longer commutes push some people to other times, modes, or destinations, which changes the numbers.
+- **Perfect information and pure self-interest.** Real drivers learn routes imperfectly, though navigation apps push behaviour closer to the model's assumptions.
+- **Cost functions.** "Essentially zero" connector time and perfectly linear congestion are idealisations. The paradox appears only for certain parameter ranges. If the highways were faster (say, under 40 minutes), it wouldn't occur in this form. Check that the real road capacities and free-flow times actually fall in the paradox region.
+- **Other purposes.** The connector might serve trips other than this commute, such as local access or emergency routes, which this model doesn't capture.
+
+## Practical options
+
+If the connector is wanted for other reasons, it could be restricted, tolled, or limited to certain users (buses, emergency vehicles, off-peak hours) so it doesn't draw the morning commute onto it. But for the scenario as specified, building it unrestricted makes every commuter's trip longer, and the modeller shouldn't be apologetic about reporting that.

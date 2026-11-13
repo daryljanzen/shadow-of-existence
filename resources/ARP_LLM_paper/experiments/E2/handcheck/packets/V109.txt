@@ -1,0 +1,37 @@
+SITUATION:
+My business partner and I own a café that became profitable 14 months after opening. We're now looking at a second location in a different neighbourhood; the rent there is about 20% higher, and we haven't measured foot traffic yet. My partner is certain: "The second one will be profitable within 18 months. We know the formula now, and we got the first one there in 14 months starting from scratch." I'm pretty convinced too, since we've learned a lot. We're about to sign the lease. Is she right?
+
+CLAIM:
+The second café location will be profitable within 18 months.
+
+RESPONSE:
+**Not necessarily.** Her confidence rests on one data point, and the conditions that produced it have changed in ways that cut against the 18-month estimate.
+
+## Where the reasoning is weak
+
+**1. One success is a small sample.** You know one café reached profitability in 14 months. You don't know how much of that came from your skill and how much from that location, timing, or luck. You can't separate "the formula" from the circumstances it ran in.
+
+**2. The key inputs are different, and one is unknown.**
+- **Rent is 20% higher.** That raises your monthly break-even revenue. If rent was, say, 10–15% of revenue at the first café, the second needs noticeably more sales just to reach the same margin.
+- **Foot traffic is unmeasured.** For a café this is arguably the single most important variable. Signing without it means the 18-month figure isn't an estimate. It's a hope.
+
+**3. "We know the formula" applies mostly to operations, not demand.** You've likely gotten better at sourcing, staffing, pricing, and waste control. That's real and does help. But a different neighbourhood can mean different customer habits, commute patterns, competitors, and price sensitivity. Operational skill doesn't create customers who aren't there.
+
+**4. A second location brings new problems.** You can't both be present at both sites. Management attention gets split, you need a manager you trust, and the first café's performance can slip. Many owners find the second location harder, not easier.
+
+**5. Watch for overconfidence from a recent win.** Success tends to make people underweight risk. "We did it in 14 months from scratch" feels like proof, but it doesn't account for the new rent or the unknown traffic.
+
+## In fairness to her view
+
+Experience genuinely lowers some risks. You'll likely make fewer startup mistakes, may negotiate better supplier terms, and might draw on your existing brand. 18 months is plausible. The point is that you haven't done the work to know whether it's likely.
+
+## What I'd do before signing
+
+1. **Measure foot traffic.** Count passersby at several times and days (weekday mornings, lunch, weekends). Compare against your first location if you have, or can estimate, its numbers.
+2. **Build a break-even model** with the new rent: required daily covers × average ticket. Then ask whether that's realistic given the traffic you count.
+3. **Run a downside case.** If revenue comes in 25% below your first café, how long until profitability, and can you fund losses that long without hurting location #1?
+4. **Scout competitors** within a few blocks.
+5. **Negotiate the lease.** Ask for a rent-free fit-out period, a shorter initial term with renewal options, or an exit clause. Make sure neither of you signs a personal guarantee you can't afford to honour.
+6. **Agree in advance with your partner** on what result at month 12 or 18 would trigger a rethink, so the decision isn't made under pressure later.
+
+If the traffic data and break-even model support it, great: you'll sign with real confidence rather than borrowed confidence from the first café. If they don't, you've avoided a costly lease. A few weeks of measurement is cheap compared with a multi-year commitment.

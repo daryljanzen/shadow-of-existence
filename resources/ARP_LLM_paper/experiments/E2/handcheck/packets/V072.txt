@@ -1,0 +1,42 @@
+SITUATION:
+Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out "significant" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?
+
+CLAIM:
+If none of 20 independent tests has a real effect, the probability that at least one is significant at the 5% level is about 64%.
+
+RESPONSE:
+Yes, the analyst is right, and the arithmetic checks out.
+
+## The math
+
+If none of the 20 tweaks does anything, each test still has a 5% chance of a false positive. For independent tests:
+
+- P(no false positives in 20 tests) = 0.95²⁰ ≈ 0.358
+- P(at least one false positive) = 1 − 0.358 ≈ **0.64**
+
+Also, the *expected* number of "significant" results when nothing works is 20 × 0.05 = **1**. Getting exactly one hit out of 20 is what you'd most expect to see if every tweak were useless. On its own, that result gives you almost no evidence that anything worked.
+
+## Where the product manager's reasoning goes wrong
+
+There are two separate mistakes:
+
+1. **Ignoring the selection.** The 5% applies to a single test you planned in advance. Your team picked this test *because* it was the one that came out significant out of 20. Picking the winner after the fact is what inflates the error rate. It's like flipping 20 coins five times each and being impressed that one landed heads five times in a row.
+
+2. **Misreading what 5% means, even for a single test.** A p-value below 0.05 means: *if there were no effect*, data this extreme would show up less than 5% of the time. It does **not** mean "95% chance the effect is real." That second probability depends on how often tweaks like these actually work and on how much statistical power the tests had. Neither of those appears in a p-value. If most small website tweaks do little, which is common, then even a single significant result is often a false positive.
+
+## What would settle it
+
+The analyst's suggestion to retest is the cleanest fix. Run a fresh, pre-registered test of that one tweak with an adequate sample size. If it replicates, you can act with real confidence.
+
+Other information that would sharpen the picture:
+
+- **The actual p-value.** A Bonferroni correction for 20 tests sets the threshold at 0.05 / 20 = 0.0025. If the result was p = 0.001, it survives the correction and looks more credible. If it was p = 0.04, it doesn't survive and is very weak evidence.
+- **Effect size and confidence interval.** Is the estimated lift big enough to matter, and is the interval far from zero?
+- **Independence.** The 64% figure assumes independent tests. If the tests overlapped heavily in traffic or metrics, the exact number changes, but the core problem remains.
+- **Cost of being wrong.** If rollout is cheap and easily reversed, a staged rollout with monitoring is a reasonable middle ground. If it's costly or hard to undo, retest first.
+
+## A way to put it to the PM
+
+> "If all 20 tweaks were duds, we'd expect about one to look significant by chance alone, and that's exactly what we got. A quick confirmation test tells us whether this one is real before we commit to rolling it out everywhere."
+
+You're on solid ground here.

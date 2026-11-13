@@ -1,0 +1,37 @@
+SITUATION:
+We ran an A/B test of our new checkout design. The old design (A) got 100 purchases from 2,000 visitors (5.0%), and the new design (B) got 104 purchases from 2,000 visitors (5.2%). The difference isn't statistically significant. Our head of product says: "The test shows the two designs perform the same, so the redesign makes no difference to conversion and we can stop worrying about it." I agree; there's no significant difference, so they're equivalent. We want to close the ticket. Can we go with this?
+
+CLAIM:
+The test shows the new checkout design makes no difference to conversion.
+
+RESPONSE:
+# Not quite: "not significant" doesn't mean "equivalent"
+
+The test failed to detect a difference. That's different from showing there is no difference. With this sample size, the test couldn't have detected anything but a very large effect.
+
+## What the data actually says
+
+| | Conversions | Visitors | Rate |
+|---|---|---|---|
+| A (old) | 100 | 2,000 | 5.0% |
+| B (new) | 104 | 2,000 | 5.2% |
+
+- **Difference:** +0.2 percentage points (B − A)
+- **p-value:** about 0.77 (z ≈ 0.29)
+- **95% confidence interval for the difference:** about **−1.2 pp to +1.6 pp**
+
+In relative terms, the data is consistent with anything from **B being ~23% worse to B being ~31% better** than A. Both ends of that range would matter a lot for checkout revenue. So the test doesn't show the designs perform the same. It shows you can't tell yet.
+
+## Why: the test was underpowered
+
+With 2,000 visitors per arm and a 5% baseline, the smallest effect you had a reasonable chance (80% power) of detecting was about **±1.9 pp, roughly a 39% relative change**. Few redesigns move conversion that much, so a non-significant result was the likely outcome whether or not the redesign had a real effect.
+
+To reliably detect a **10% relative lift** (5.0% → 5.5%), you'd need roughly **31,000 visitors per arm**.
+
+## What you can do
+
+1. **Close the ticket, but record the conclusion accurately.** For example: "Inconclusive. No large effect detected; effects up to roughly ±25–30% can't be ruled out." If you're shipping B for other reasons (design consistency, maintainability, brand), that's a legitimate decision. It just isn't backed by evidence of zero impact.
+2. **Run longer if conversion impact matters.** First decide the smallest change you'd care about, then size the test for it.
+3. **If you really want to claim "no meaningful difference,"** use an equivalence test (e.g. TOST). Pre-specify a margin like "within ±0.5 pp" and show the confidence interval falls entirely inside it. Your current interval (±~1.4 pp) doesn't come close.
+
+**Bottom line:** closing the ticket is fine. Writing down "the redesign makes no difference to conversion" isn't supported by this data, and someone could rely on that claim later. I'd suggest framing it to your head of product as "we didn't see a big effect, but the test was too small to rule out a meaningful one in either direction."

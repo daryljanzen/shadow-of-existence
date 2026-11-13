@@ -1,0 +1,602 @@
+{
+ "V001": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V002": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V003": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V004": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V005": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V006": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V007": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V008": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V009": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V010": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V011": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V012": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V013": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V014": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V015": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V016": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V017": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V018": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V019": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V020": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V021": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V022": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V023": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V024": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V025": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V026": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V027": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V028": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V029": {
+  "note": "",
+  "settled": false,
+  "verdict": "REJECT"
+ },
+ "V030": {
+  "note": "",
+  "settled": false,
+  "verdict": "REJECT"
+ },
+ "V031": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V032": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V033": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V034": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V035": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V036": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V037": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V038": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V039": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V040": {
+  "note": "",
+  "settled": false,
+  "verdict": "REJECT"
+ },
+ "V041": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V042": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V043": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V044": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V045": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V046": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V047": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V048": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V049": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V050": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V051": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V052": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V053": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V054": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V055": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V056": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V057": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V058": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V059": {
+  "note": "",
+  "settled": false,
+  "verdict": "REJECT"
+ },
+ "V060": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V061": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V062": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V063": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V064": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V065": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V066": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V067": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V068": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V069": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V070": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V071": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V072": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V073": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V074": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V075": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V076": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V077": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V078": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V079": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V080": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V081": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V082": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V083": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V084": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V085": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V086": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V087": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V088": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V089": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V090": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V091": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V092": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V093": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V094": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V095": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V096": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V097": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V098": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V099": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V100": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V101": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V102": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V103": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V104": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V105": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V106": {
+  "note": "",
+  "settled": false,
+  "verdict": "REJECT"
+ },
+ "V107": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V108": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V109": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V110": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V111": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V112": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V113": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V114": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V115": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V116": {
+  "note": "",
+  "settled": true,
+  "verdict": "ACCEPT"
+ },
+ "V117": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V118": {
+  "note": "",
+  "settled": false,
+  "verdict": "OPEN"
+ },
+ "V119": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ },
+ "V120": {
+  "note": "",
+  "settled": true,
+  "verdict": "REJECT"
+ }
+}

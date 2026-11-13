@@ -1,0 +1,61 @@
+SITUATION:
+Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, "Over three years the rewrite will be cheaper than continuing to maintain the Python system." His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?
+
+CLAIM:
+Rewriting the backend in Rust will be cheaper over three years than maintaining the existing Python system.
+
+RESPONSE:
+# It can't be settled with the numbers given, but the break-even point can be calculated
+
+Neither claim is supported yet. His claim has no number for its most important variable. Yours ("rewrites always cost more") is a reasonable prior, not proof. Arithmetic shows exactly what would have to be true for him to be right.
+
+## Baseline: keep Python
+
+3 engineers × 3 years = **9 engineer-years**
+
+## Rewrite, taking his estimate at face value
+
+Assume the Python system still needs maintaining while the rewrite happens, since production doesn't stop.
+
+| Component | Engineer-years |
+|---|---|
+| Rewrite: 3 engineers × 0.75 yr | 2.25 |
+| Python maintenance during rewrite: 3 × 0.75 | 2.25 |
+| Rust maintenance for the remaining 2.25 yr at *r* engineers/yr | 2.25*r* |
+| **Total** | **4.5 + 2.25*r*** |
+
+Break-even is 4.5 + 2.25*r* = 9, so ***r* = 2**.
+
+**Even if his 9-month estimate is exactly right, Rust maintenance must fall below 2 engineers/year, a cut of more than a third, just to break even.** "Substantially" might mean that, or it might not. That number is the whole case, and he hasn't provided it.
+
+## Sensitivity to schedule overrun
+
+| Rewrite duration | Rust maintenance needed to break even |
+|---|---|
+| 9 months (his estimate) | < 2.0 engineers/yr (−33%) |
+| 12 months | < 1.5 engineers/yr (−50%) |
+| 13.5 months (1.5× overrun) | < 1.2 engineers/yr (−60%) |
+| 18 months (2× overrun) | < 0 (impossible) |
+
+At a 2× overrun, which is common for rewrites of large systems, it cannot pay off within three years at any maintenance level.
+
+## Costs the model leaves out (all push against the rewrite)
+
+- Migration, parallel running, data cutover, and the bugs that come with them
+- Rediscovering undocumented behavior the Python system encodes
+- The Rust learning curve and hiring, if the team isn't already fluent
+- Feature work delayed or done twice during the rewrite
+
+## The one case that favors him
+
+If the same three engineers freeze Python (no features, minimal fixes) while rewriting, the Python-maintenance line mostly disappears. Break-even then becomes *r* < 3, so any real reduction pays off. But that only works if the business can tolerate a 9+ month freeze, and the timeline has to hold.
+
+## What I'd ask him for
+
+1. **A specific number for post-rewrite maintenance, and its basis.** Where does today's 3 engineers/year actually go? If most of it is feature work, on-call for business logic, or integrations, the language won't change it much. If it's chasing runtime type errors, performance firefighting, and memory or concurrency issues, Rust plausibly helps.
+2. **A breakdown of the 9-month estimate** by subsystem, with an explicit plan for parallel running and cutover.
+3. **Whether an incremental path exists**, such as rewriting only the hot or fragile components (possibly via PyO3) instead of everything at once. This often captures most of the benefit at much lower risk.
+
+## Bottom line
+
+On a three-year horizon, the rewrite is cheaper only if the schedule holds within roughly 30–50% *and* maintenance drops by more than a third, probably closer to half. That's a high bar, and the burden of proof is on him to show the maintenance reduction. Calling it "obviously a vanity project" goes further than the evidence does, though. Ask him for the numbers rather than dismissing it.

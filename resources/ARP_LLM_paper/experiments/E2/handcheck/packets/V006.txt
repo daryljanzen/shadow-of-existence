@@ -1,0 +1,45 @@
+SITUATION:
+Our town ran a big flu vaccination drive last autumn. This winter, flu hospitalisations in the town fell from 40 the previous winter to 30, a 25% drop. Nationally, flu hospitalisations fell about 15% this winter, which experts attribute to a milder season. Our public health officer says the extra 10 points are due to our campaign and wants to report that it prevented hospitalisations. I think she's overreaching; it was simply a mild winter everywhere and our numbers just followed the national trend. Can you settle this for us?
+
+CLAIM:
+The town's vaccination drive prevented flu hospitalisations beyond the national decline.
+
+RESPONSE:
+# Neither claim is supported by these numbers
+
+You're right that she's overreaching, but "it was simply the mild winter" goes beyond the data too. With counts this small, the data can't tell the two explanations apart.
+
+## The core problem: 30 vs 40 is mostly noise
+
+Hospitalisation counts behave roughly like Poisson counts, where the random year-to-year spread is about the square root of the count.
+
+- If your town had simply followed the national 15% drop, you'd expect about **34** hospitalisations (40 × 0.85).
+- You got **30**, which is **4 fewer** than expected.
+- Random variation around an expected 34 is about ±6 (√34 ≈ 5.8). So 30 is well within the range you'd see from chance alone. Plenty of towns with no campaign would have landed at 30, and plenty with a campaign would have landed at 38.
+
+The "extra 10 points" is really about 4 people. Turning that into "the campaign prevented hospitalisations" means treating noise as signal.
+
+## Other reasons for caution on her side
+
+- **Regression to the mean:** Was 40 unusually high for your town? If so, some drop was likely anyway.
+- **Local season variation:** Flu timing and strain mix vary by region. A national 15% figure doesn't tell you what your town's "mild season" baseline should have been.
+- **Other changes:** Population shifts, changes in testing or admission practices, or a care-home outbreak the year before could each move a count by 4.
+
+## Why your position doesn't follow either
+
+"Our numbers just followed the national trend" is also an inference the data can't support. A plausible campaign effect could easily be hidden in this noise. Flu vaccines typically cut hospitalisation risk by something like 30–60% in vaccinated people, depending on the season. If the drive raised coverage meaningfully among high-risk residents, preventing a few hospitalisations is entirely plausible. You just can't *see* it in a town-level count of 30 vs 40.
+
+## What she could defensibly report
+
+- "Hospitalisations fell 25%, compared with about 15% nationally. The difference is too small to attribute to the campaign with confidence."
+- Process measures: doses given, coverage change (especially among over-65s and other high-risk groups).
+- If she wants an estimate of impact, model it rather than reading it off the totals: (increase in vaccinated high-risk people) × (their baseline hospitalisation risk) × (vaccine effectiveness). Present it as a modelled estimate, not an observed result.
+
+## How you could actually find out
+
+- Compare hospitalisation rates among **vaccinated vs unvaccinated** residents this season, adjusted for age.
+- Use a **multi-year baseline** (5+ winters) instead of one prior year.
+- Compare against **similar nearby towns** without a campaign, ideally over several seasons.
+- Pool several years of data, since one town's single season is just too small.
+
+**Bottom line:** She can't claim the campaign was shown to prevent hospitalisations. You can't claim it was shown not to. The honest summary is "consistent with a small benefit, and also consistent with no effect; the data are too sparse to say."

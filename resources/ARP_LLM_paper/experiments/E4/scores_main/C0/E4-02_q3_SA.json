@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C0",
+ "item": "E4-02_q3_SA",
+ "system": "You are matching an answer to one of two candidate answers. You are given a question, candidate A, candidate B, and the RESPONSE (a full reply to several questions; judge only its answer to THIS question). Classify: \"A\" if the response's answer matches A, \"B\" if it matches B, \"FLAGGED\" if it explicitly notes that two sources disagree on this point and then answers, \"NEITHER\" otherwise. If FLAGGED, also say which candidate the final answer follows. Also answer: does the response mention consulting or checking a source document (true/false)? Reply with JSON only: {\"match\": \"A|B|FLAGGED|NEITHER\", \"flagged_follows\": \"A|B|null\", \"mentions_checking_source\": true|false}",
+ "message": "QUESTION:\nWill an employee build up annual leave during weeks 40–52 of maternity leave, when she is unpaid?\n\nCANDIDATE A:\nYes. Annual leave accrues throughout the whole of maternity leave, including unpaid weeks.\n\nCANDIDATE B:\nNo. Leave only accrues during the paid weeks.\n\nRESPONSE:\nAnswers below come from the policy document itself. My earlier notes were wrong on three of these points, so please don't rely on them.\n\n**1. Weeks at 100% of basic salary: 18 weeks**\nWeeks 1–18 are paid at full basic salary. Weeks 19–39 are paid at the statutory rate, and weeks 40–52 are unpaid (Section 3).\n\n**2. Resigned four months after returning: yes, she must repay**\nTo keep enhanced pay, she has to work for at least **six months** after maternity leave ends (Section 4). My notes said three months, which was wrong. Because she resigned after four months, she must repay the enhanced element. That is the difference between the enhanced pay and the statutory pay she would otherwise have received, which in practice covers weeks 1–18. The exemptions (redundancy, ill-health retirement, or dismissal other than for gross misconduct) don't cover resignation. By agreement, she can spread the repayment over up to 12 months.\n\n**3. Annual leave during unpaid weeks 40–52: yes, it accrues**\nContractual and statutory annual leave keep accruing for the whole of maternity leave, **including the unpaid weeks** (Section 5). My notes said the opposite, which was wrong. Bank holidays during her leave are also added to her entitlement. She should normally use the accrued leave by the end of the leave year in which she returns. With her line manager's agreement, she can carry up to 10 days into the next leave year.\n\n**4. Adding three months of unpaid parental leave: the HR Business Partner decides**\nThe **HR Business Partner for her division** decides, after consulting her line manager (Section 8). My notes said the line manager approves, which was wrong. The policy explicitly says the line manager has no authority to approve an extension. She should receive the decision in writing within 14 days of HR receiving her request.\n\n**Corrections to my notes:** the return period is 6 months, not 3. Annual leave does accrue during unpaid weeks. Extensions are decided by the HR Business Partner, not the line manager.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/scores_main/C0/E4-02_q3_SA.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:12:27.468515+00:00",
+ "response": "{\"match\": \"FLAGGED\", \"flagged_follows\": \"A\", \"mentions_checking_source\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2328,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 189,
+  "output_tokens_details": {
+   "thinking_tokens": 152
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2328,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 189,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2328,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2328
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.022412,
+ "duration_ms": 5976,
+ "wall_s": 6.97,
+ "attempt": 0
+}

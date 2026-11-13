@@ -1,0 +1,53 @@
+SITUATION:
+Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, "Over three years the rewrite will be cheaper than continuing to maintain the Python system." His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?
+
+CLAIM:
+Rewriting the backend in Rust will be cheaper over three years than maintaining the existing Python system.
+
+RESPONSE:
+**The information you have doesn't settle it either way.** Your colleague's claim depends on a number he hasn't given, and "rewrites always cost more" is a good reason for caution, not a calculation. The arithmetic does tell you exactly what has to be true for him to be right.
+
+## The arithmetic (in engineer-years)
+
+**Keep Python for 3 years:** 3 engineers × 3 years = **9 engineer-years**
+
+**Rewrite:**
+- Rewrite: 3 engineers × 0.75 years = 2.25
+- Keep running Python during those 9 months: 3 × 0.75 = 2.25 (production doesn't stop for a rewrite)
+- Maintain Rust for the remaining 2.25 years: 2.25 × M, where M is the new number of maintenance engineers
+
+For the rewrite to break even: 4.5 + 2.25M ≤ 9, so **M ≤ 2**.
+
+**If the 9-month estimate holds, the Rust system must need about 2 engineers or fewer for maintenance, a drop of at least one-third.** That's the number he hasn't given you.
+
+## Sensitivity to schedule overrun
+
+This is where your skepticism has real force:
+
+| Rewrite takes | Max Rust maintenance to break even in 3 yrs |
+|---|---|
+| 9 months | 2.0 engineers (−33%) |
+| 12 months | 1.5 engineers (−50%) |
+| 15 months | 0.86 engineers (−71%) |
+| 18 months | 0 (impossible) |
+
+With an 18-month rewrite, it can't win over three years even if Rust maintenance were free. Rewrite overruns of 1.5–2× are common, so the margin is thin.
+
+Costs the model leaves out, all of which make the rewrite look worse:
+- Ramping up on Rust, if the team isn't already fluent
+- Migration, data compatibility, and running both systems side by side
+- A burst of new bugs after cutover
+- Features frozen or built twice during the rewrite
+
+The model also leaves out some things that favor the rewrite:
+- Benefits after year 3. A three-year window is short for a rewrite to pay off. If the system will live 5–10 years, the case can change completely.
+- Possible infrastructure savings (fewer servers, lower latency), which aren't in the engineer-cost figure at all.
+
+## What would settle it
+
+1. **A committed maintenance number from him.** Ask him to say "Rust maintenance will be about X engineers/year." If X > 2, his own claim fails on paper.
+2. **Where the current 3 engineers' time goes.** Rust mainly reduces certain kinds of work: type and runtime errors, memory and concurrency bugs, performance tuning. If most maintenance is feature changes, dependency upgrades, integrations, or ops, a language change won't cut it much. A month of ticket or time categorization would tell you a lot.
+3. **A grounded schedule.** Get a breakdown by module, ideally with a pilot. Rewrite one bounded component and compare actual time against his estimate.
+4. **The real time horizon.** If the decision is really about 5+ years, judge it on that horizon instead of 3.
+
+**Bottom line:** He's right only if Rust maintenance is ≤2 engineers *and* the rewrite comes in at or near 9 months. Both are unproven. Calling it a vanity project assumes the answer, but his claim isn't supported yet either. The cheapest way to find out is a small pilot rewrite combined with an analysis of where maintenance time currently goes.
