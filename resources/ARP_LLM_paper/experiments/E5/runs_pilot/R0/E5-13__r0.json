@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "You are a helpful assistant.",
+ "message": "Please review the following document.\n\n<document>\n**MEMORANDUM**\n\n**To:** Provost's Academic Technology Committee\n**From:** Office of Academic Technology Policy\n**Date:** November 13, 2026\n**Re:** ProctorEye renewal (recommendation due February 28, 2027)\n\n---\n\n**Recommendation**\n\nDecline ProctorEye's three-year, $240,000-per-year offer to cover all online courses. Instead, contract only its identity-verification service ($35,000/year) on a one-year term. Before July 1, 2027, build a consent process and a non-biometric alternative. Use part of the savings to help faculty redesign online assessment.\n\n**Why not renew full proctoring**\n\n*Low yield, high workload.* In 2025–26, ProctorEye monitored 41,000 exams and flagged 6,150. Only 308 flags (5%) led to misconduct findings. At 9 minutes per flag, faculty spent about 920 hours on reviews, and 95% of those reviews produced no finding. Full coverage would be roughly 2.5 times current volume. If rates hold, that means about 15,000 flags and 2,300 faculty hours a year.\n\n*Unequal burden.* The Office of Institutional Equity found that students with darker skin tones were flagged 1.9 times as often as other students. Students registered with Disability Services were flagged 2.4 times as often. Even when faculty clear a flag, the student has been placed under suspicion. Disparities this large create risk under civil rights and disability law. Two misconduct findings are already under appeal on reliability grounds.\n\n*Legal timing.* The new state privacy law takes effect July 1, 2027, four months into the proposed contract. ProctorEye's face monitoring very likely counts as biometric collection. That means written consent and a non-biometric alternative in every covered course. Committing for three years before we know how many students will decline is poor value.\n\n**What this preserves**\n\n*Accreditation.* Our accreditor requires us to verify that the registered student does the work. A photo ID and face check at the start of each exam addresses this directly. Identity verification is also biometric, though, so it needs the same consent and alternative. Options include a brief live ID check with staff over video, or a testing-center appointment.\n\n*Deterrence.* Faculty want \"some deterrent.\" Identity checks deter impersonation. Assessment design can deter other forms of cheating: open-book applied problems, projects, staged submissions, and short oral follow-ups. Several peer institutions have moved this way. I recommend putting about $100,000 of the $205,000 difference toward instructional design support and course releases. Instructors whose courses genuinely need closed-book exams, such as licensure preparation, could request live proctoring case by case.\n\n**Costs and risks**\n\nAnnual vendor cost falls from $240,000 to $35,000, before the costs of redesign and alternatives. Some cheating that ProctorEye currently deters may go undetected. We cannot measure this, because we see only what the system catches, not what it prevents. Redesign will take more than one term, so the one-year term allows a reassessment.\n\n**Before February 28**\n\n1. General Counsel: confirm how the privacy law applies to identity verification, and design the non-biometric alternative.\n2. Accreditation liaison: confirm in writing that identity verification satisfies the requirement.\n3. Procurement: confirm when the current contract ends, and negotiate a one-year term.\n4. Faculty Senate and SGA: consult on the redesign plan and the exception process.\n5. Academic Integrity Office: review the two appeals and a sample of the 308 findings for flag reliability.\n\n---\n\n###\n</document>",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/runs_pilot/R0/E5-13__r0.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T05:35:04.071636+00:00",
+ "response": "# Review: ProctorEye Renewal Memo\n\nThe memo is clear and well-structured, and its central argument is persuasive: low yield, unequal burden, and legal timing all point away from a three-year commitment. The arithmetic checks out:\n\n- 6,150 ÷ 41,000 = 15% flag rate\n- 308 ÷ 6,150 = 5%\n- 6,150 × 9 min ≈ 922 hours\n- At 2.5× volume: about 15,400 flags and 2,300 hours\n- $240,000 − $35,000 = $205,000\n\nThe main weaknesses are a few gaps a skeptical committee member is likely to probe.\n\n## Substantive issues\n\n**1. The comparison leaves out the status quo.**\nThe memo compares full coverage ($240k) with identity-only ($35k). The obvious middle option is renewing at the current scope, or full proctoring on a one-year term. The committee will ask about both. State what the current contract costs and why a one-year renewal of the existing arrangement is also worse.\n\n**2. \"Low yield\" doesn't account for deterrence.**\nA 5% finding rate shows the review burden is high. It does not show that proctoring has little value, because proctoring works mainly by prevention. The memo admits this later (\"we cannot measure this\"), but the first argument reads as if yield settles the question. Consider softening the framing, or adding a sentence that addresses it up front.\n\n**3. What were the 308 findings?**\nThis is the most useful missing data point. If many involved impersonation, identity verification would still catch them. If most involved unauthorized materials or collaboration, the recommendation knowingly gives up detection of that behavior. Either answer strengthens the memo, because it makes the trade-off explicit. Consider adding this to item 5.\n\n**4. The equity statistics need context.**\n- Give the sample sizes, and say whether the disparities are statistically significant.\n- Say whether flags for these groups led to findings at *lower* rates. If they did, that directly shows the flags are less reliable for these students, which is a much stronger point than flag rates alone.\n- Clarify whether students learn they were flagged. \"Placed under suspicion\" is stronger if they are notified or if the flag appears in a record.\n\n**5. The accreditation requirement may be met more cheaply.**\nMany accreditors follow the federal standard (34 CFR 602.17(g)), under which secure login and password can satisfy identity verification. If our accreditor accepts that, even the $35k biometric service, along with its consent burden, may be unnecessary. Item 2 should ask the liaison what *minimum* method qualifies, not only whether ProctorEye's check is enough.\n\n**6. Net costs are incomplete.**\n\"Before the costs of redesign and alternatives\" leaves the real savings unknown. The following are unbudgeted:\n- Staff time for live video ID checks\n- Testing-center capacity\n- Case-by-case live proctoring for licensure courses\n\nEven rough ranges would help. The memo's own figure of 920 faculty hours already saved could also be expressed in dollars to offset these costs.\n\n**7. The vendor may not agree.**\nThe memo assumes ProctorEye will sell identity-only service on a one-year term. Add a fallback, such as another vendor or an in-house option, in case they refuse or price it differently.\n\n**8. Data handling for the identity service.**\nSince identity verification is biometric, the committee will want to know ProctorEye's retention, storage, and deletion terms. These belong in item 1 or item 3.\n\n## Internal consistency\n\n- **Contract start date.** \"Four months into the proposed contract\" assumes a March 1, 2027 start. Yet item 3 asks Procurement to confirm when the current contract ends. Either confirm the date now or soften the wording to \"shortly after the proposed contract begins.\"\n- **Voice.** \"I recommend putting about $100,000…\" uses first person in a memo from an office. Use \"We recommend\" or \"The Office recommends.\"\n\n## Minor\n\n- Cite the source of the 9-minutes-per-flag figure.\n- \"Several peer institutions have moved this way\": name one or two if possible.\n- Delete the stray `###` at the end of the document.\n\n## Bottom line\n\nThe recommendation is sound and well argued. Adding the status-quo comparison, the breakdown of the 308 findings, and the minimum accreditation standard would make it much harder to dispute.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2506,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2554,
+  "output_tokens_details": {
+   "thinking_tokens": 1112
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2506,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2554,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2506,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2506
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.071136,
+ "duration_ms": 27575,
+ "wall_s": 31.33,
+ "attempt": 0
+}
