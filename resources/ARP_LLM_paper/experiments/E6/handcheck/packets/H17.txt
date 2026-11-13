@@ -1,0 +1,130 @@
+QUESTION:
+By how much did the new fertiliser increase wheat yield in the on-farm trial, is it profitable at current prices, and should the farm business adopt it?
+
+DATA:
+On-farm fertiliser trial, wheat, clay-loam fields, one season. Four field blocks. In each block, one plot received the new fertiliser and an adjacent plot received standard practice (control). Yields in tonnes per hectare (t/ha):
+
+| Block | Control | New fertiliser |
+| 1 | 7.2 | 7.9 |
+| 2 | 6.8 | 7.3 |
+| 3 | 8.1 | 8.5 |
+| 4 | 5.9 | 7.6 |
+
+Field log: in June, the Block 4 control plot was waterlogged for about 10 days after a field drain blocked. The Block 4 fertiliser plot, on slightly higher ground, was not affected. No other plots had problems during the season.
+
+Economics:
+- The new fertiliser costs £60/ha more than standard practice.
+- Grain price: £180 per tonne.
+- Application and other costs are the same for both treatments.
+
+The farm business also has sandy-soil holdings in the east of the county, which were not part of the trial. Sandy soils hold less water and nutrients than clay loam.
+
+KNOWN FLAWS:
+F1. [misreport] Block 3's gain was 0.4 t/ha (8.5 − 8.1), below half a tonne, as the draft's own next sentence shows. CORRECTION: Gains ranged from 0.4 to 1.7 t/ha; three of four blocks gained 0.5 t/ha or more.
+F2. [omission] Ignores the field-log note that the Block 4 control plot was waterlogged while its paired fertiliser plot was not. This inflates the Block 4 difference (1.7 t/ha) and hence the mean; the draft even reads it as the fertiliser 'helping most where conditions are hardest'. CORRECTION: Excluding Block 4, the mean gain is (0.7 + 0.5 + 0.4) / 3 = 0.53 t/ha, worth £96/ha, for a net gain of about £36/ha rather than £88.50 (or the draft's £108.50).
+F3. [calculation] 0.825 × 180 = £148.50, not £168.50. CORRECTION: £148.50/ha gross; net £88.50/ha on all four blocks (about £35,400 on 400 ha, not 'over £43,000').
+F4. [inference] Generalises a one-season, four-block clay-loam result to sandy soils that were not tested and that behave differently. CORRECTION: The trial supports a (smaller) estimate for clay loam only. Sandy-soil response is unknown and needs its own trial.
+
+EXTENSIONS:
+- Paired t-test: on all four blocks, mean difference 0.825, SD about 0.60, t of about 2.8 on 3 df (p of about 0.07); excluding Block 4, mean 0.53, SD about 0.15, t of about 6.0 on 2 df (p of about 0.03). Note the tiny sample either way.
+- Break-even yield gain is £60 / £180 = 0.33 t/ha. Even the conservative 0.53 t/ha clears it, but with little margin. Show how the net gain varies with grain price (e.g. at £140/t the conservative estimate nets only about £15/ha).
+- Recommend a multi-season trial with more blocks and randomised plot positions within blocks, so that drainage or elevation cannot systematically favour one treatment.
+
+FINAL VERSION:
+# New Fertiliser Trial: Results and Recommendation
+
+## Summary
+
+- **Yield gain:** about **0.5 t/ha** (roughly 7%) on clay loam, based on the three blocks that had no field problems. The plausible range is 0.15–0.91 t/ha.
+- **Profitability:** about **+£36/ha** at £180/t, with a plausible range of roughly **−£32 to +£104/ha**. The break-even gain is 0.33 t/ha. The data lean towards a profit, but with only three usable pairs a loss can't be ruled out.
+- **Recommendation:** Don't adopt it across the whole business yet. Use it on part of the clay-loam area next season as a larger, randomised trial. Don't use it on the sandy soils until it has been tested there.
+
+## Design
+
+The trial used four blocks on clay-loam fields. Each block had one plot with the new fertiliser and an adjacent control plot with standard practice. Pairing plots within a block removes differences *between* blocks. It doesn't remove anything that affects only one plot within a block. Block 4 is that case.
+
+## The Block 4 Problem
+
+In June, the Block 4 control plot was waterlogged for about 10 days after a field drain blocked. The fertiliser plot, on slightly higher ground, was not affected.
+
+The Block 4 comparison therefore mixes two effects: the fertiliser and the waterlogging damage to the control. Some or most of the 1.7 t/ha gap is likely due to drainage damage, and the data can't separate the two. The yields fit this explanation. Block 4 has the lowest control yield (5.9 t/ha), while its fertiliser plot (7.6 t/ha) is in line with the other blocks.
+
+The data don't support the idea that the fertiliser "helps most where conditions are hardest." Only one plot faced hard conditions, and it was the control.
+
+**Block 4 is excluded from the main estimate** because of the recorded field incident, not because its result looked unusual.
+
+## Yields and Effect
+
+| Block | Control (t/ha) | New fertiliser (t/ha) | Gain (t/ha) |
+|---|---|---|---|
+| 1 | 7.2 | 7.9 | 0.7 |
+| 2 | 6.8 | 7.3 | 0.5 |
+| 3 | 8.1 | 8.5 | 0.4 |
+| 4 *(control waterlogged, excluded)* | 5.9 | 7.6 | *1.7* |
+
+- **Blocks 1–3:** the mean gain is **0.53 t/ha**, about 7% over a mean control yield of 7.37 t/ha.
+- **Uncertainty:** with only three pairs, the 95% confidence interval runs from about **0.15 to 0.91 t/ha**.
+- **All four blocks, for reference:** 0.825 t/ha. The waterlogged control inflates this figure.
+- **Consistency:** the fertiliser plot outyielded the control in every block, with gains of 0.4–0.7 t/ha in the usable blocks.
+
+## Economics
+
+All figures are per hectare. Application and other costs are the same for both treatments, so the only extra cost is £60/ha for the product.¹
+
+| | Blocks 1–3 (preferred) | Plausible range (95% CI) | All 4 blocks (biased upward) |
+|---|---|---|---|
+| Yield gain | 0.53 t/ha | 0.15–0.91 t/ha | 0.825 t/ha |
+| Value of extra grain at £180/t | **£96** | £28–£164 | £148.50 |
+| Less extra fertiliser cost | −£60 | −£60 | −£60 |
+| **Net margin change** | **+£36/ha** | **−£32 to +£104/ha** | +£88.50/ha |
+
+**Break-even yield gain:** £60 ÷ £180/t = **0.33 t/ha**.
+
+**How sure is the profit?**
+- The best estimate (0.53 t/ha) is above break-even.
+- The plausible range includes values below break-even.
+- A one-sided t-test of whether the gain exceeds 0.33 t/ha gives t ≈ 2.27 with 2 degrees of freedom, so p ≈ 0.08. This falls short of the usual 0.05 standard.
+- This p-value is **not** the probability that the fertiliser is unprofitable, and it does **not** mean a 92% chance of profit. It shows only that, with three pairs, the evidence for a gain above break-even is suggestive rather than firm.
+
+**Price sensitivity**
+- The margin disappears if the yield gain falls by about 37% (from 0.53 to 0.33 t/ha). It also disappears if the grain price falls by about 37% (to about **£113/t**).
+- The yield gain is the bigger risk. Its plausible range (0.15–0.91 t/ha) extends well below break-even. A 37% fall in grain price would be a large market move.
+
+**Scale**
+- At +£36/ha, each 100 ha of clay-loam wheat would gain about **£3,600 a year**.
+- The plausible range is roughly −£3,200 to +£10,400 per 100 ha.
+
+¹ *In practice, haulage or drying costs on the extra ~0.5 t/ha of grain would trim the margin slightly.*
+
+## Scaling Up
+
+- **Clay loam:** the result applies here, within the limits below.
+- **Sandy soils in the east:** there is no evidence. These soils weren't trialled, and they hold water and nutrients differently. The response could be larger, smaller or even negative, for example if more nutrient is lost through leaching. The clay-loam result shouldn't be assumed to carry over.
+
+## Limitations
+
+- **Small trial.** Only three pairs are usable, so the uncertainty is wide. The confidence interval and p-value assume the paired differences are roughly normal, and that can't be checked with three observations.
+- **One season.** The response may vary with the weather.
+- **Block 4 exclusion.** The decision to exclude Block 4 was made after harvest. It rests on the recorded field incident, but it was not set in advance. The four-block figure (0.825 t/ha) is shown as a check. Including Block 4 would raise the estimate, not lower it.
+- **Plot allocation.** The trial record doesn't say how the fertiliser plot in each pair was chosen. Block 4 shows that paired plots can differ in position and drainage. If the choice wasn't random, this could bias the results.
+- **No sandy-soil data.**
+
+## Recommendation
+
+1. **Don't adopt it across the whole business next season.** The evidence doesn't support that, and it says nothing about sandy soils.
+
+2. **On clay loam, adopt it partially, as a trial.**
+   - Apply the fertiliser to a share of the clay-loam wheat area, using paired or strip plots across 10 or more fields.
+   - The expected return is positive.
+   - If there is no yield response, the cost is about £60/ha. It would cost more only if the fertiliser reduced yield, which looks unlikely on clay loam given these results.
+   - If variability is similar to this trial, about 10 pairs would narrow the confidence interval to roughly ±0.11 t/ha. That should show clearly whether the gain is above 0.33 t/ha. The variability estimate itself comes from only three pairs, so more fields would give a safer margin.
+
+3. **Run a separate replicated trial on the sandy soils** before using the fertiliser there.
+
+4. **Improve the trial method:**
+   - Check field drainage before the season.
+   - Record field incidents as they happen.
+   - Decide in advance how affected plots will be handled.
+   - Randomise which plot in each pair gets the fertiliser, so that differences in slope or drainage can't systematically favour one treatment.
+
+5. **Review after one or two more seasons.** Adopt it more widely if the clay-loam gain stays clearly above break-even.

@@ -1,0 +1,452 @@
+{
+ "H01": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   0,
+   0,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H02": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H03": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext3 as extremes 15-85% not +-10pt"
+ },
+ "H04": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H05": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   0,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext1 SEs only, no per-period CIs"
+ },
+ "H06": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": "ext3 no V-rise scenario computed"
+ },
+ "H07": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   0,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext1 ingredients given, per-trip cost not computed (borderline)"
+ },
+ "H08": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext2 as a data request"
+ },
+ "H09": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H10": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   0,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": "F2 handled via per-store-week rate and a recapture argument, not the key's 8475; ext2 asks store-week data for recapture not exclusion; no arc"
+ },
+ "H11": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   0,
+   0,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H12": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H13": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H14": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H15": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext2 as a data request"
+ },
+ "H16": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   0,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext1 per-trip cost not computed (as H07)"
+ },
+ "H17": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext1 CI and t vs break-even, no 4-block test"
+ },
+ "H18": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "attributes May-Jun step to mix not onboarding (defensible); ext2 via M3/M2 ratios"
+ },
+ "H19": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H20": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H21": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H22": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H23": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext1 implicit (SEs and ranges, raw z not stated)"
+ },
+ "H24": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H25": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H26": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H27": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   0
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H28": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H29": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": ""
+ },
+ "H30": {
+  "corrected": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "extensions": [
+   1,
+   1,
+   1
+  ],
+  "introduced_errors": 0,
+  "note": "ext3 as longer series, not monthly"
+ }
+}

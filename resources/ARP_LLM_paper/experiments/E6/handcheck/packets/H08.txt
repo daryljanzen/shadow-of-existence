@@ -1,0 +1,128 @@
+QUESTION:
+Which team has the highest staff turnover, and is remote-first working associated with lower turnover?
+
+DATA:
+Annual staff turnover, three teams, calendar year 2025.
+
+| Team | Working model | Headcount 1 Jan | Headcount 31 Dec | Average headcount | Leavers in year |
+| A | Remote-first | 30 | 70 | 50 | 6 |
+| B | Office-based | 120 | 120 | 120 | 18 |
+| C | Hybrid | 80 | 80 | 80 | 8 |
+
+HR convention: annual turnover rate = leavers / average headcount over the year.
+
+Team B's 18 leavers include 10 fixed-term contract staff (a 12-month project team) whose contracts ended as planned in June. The other 8 were voluntary resignations. All leavers in Teams A and C were voluntary resignations. The company's attrition target relates to voluntary turnover.
+
+Team A was created in 2024 and grew through 2025; most of its staff have less than a year's service.
+
+Exit interviews (all 32 leavers), main reason given: pay 10; end of fixed-term contract 10; career progression 7; relocation 5.
+
+KNOWN FLAWS:
+F1. [method] Uses year-end headcount as the denominator instead of average headcount (the HR convention). This matters for Team A, which grew from 30 to 70. CORRECTION: Team A: 6 / 50 = 12.0% (not 8.6%). Teams B and C are unchanged (15.0% and 10.0%). On all leavers, Team C is lowest, not Team A.
+F2. [omission] Ignores that 10 of Team B's 18 leavers were fixed-term contracts ending as planned, not voluntary turnover (the target metric). CORRECTION: Voluntary turnover: A 12.0%, B 8/120 = 6.7%, C 10.0%. Team B has the lowest voluntary turnover and the remote-first team the highest.
+F3. [inference] Draws a causal conclusion about working models from three teams that differ in many ways (Team A is new, fast-growing and short-tenured). Corrected, the ranking does not even hold. CORRECTION: Three teams cannot establish an effect of working model. On corrected figures remote-first has the highest voluntary turnover, which is also consistent with its short tenure.
+F4. [misreport] 10 of 32 leavers (31%) cited pay, not a majority; 10 cited the planned end of a contract. CORRECTION: Pay was cited by 10 of 32 leavers (31%), or 10 of 22 voluntary leavers (45%). It is the most common voluntary reason, but not a majority.
+
+EXTENSIONS:
+- Report company-wide turnover properly: all leavers 32/250 = 12.8%, voluntary 22/250 = 8.8% (average headcount 250).
+- Control for tenure: compare first-year leaving rates across teams, since turnover is typically highest in the first year and Team A is mostly first-year staff.
+- With small counts (6, 8 and 8 voluntary leavers), give confidence intervals or note that differences of a few percentage points between teams are within noise.
+
+FINAL VERSION:
+# Staff turnover by team, 2025
+
+## Summary
+
+- **On the company's voluntary measure, Team A (remote-first) has the highest turnover, at 12.0%.** Team C (hybrid) is at 10.0% and Team B (office-based) at 6.7%.
+- **Team B has the highest *total* turnover (15.0%).** But 10 of its 18 leavers were fixed-term staff whose contracts ended as planned. These leavers are not voluntary attrition, which is what the company's target measures.
+- **The data does not show that remote-first working is linked to lower turnover.** The remote-first team actually has the highest voluntary rate. That pattern is also unreliable. There are only three teams, the leaver numbers are small, and Team A differs from the others in tenure and growth as well as in working model.
+
+## Data and method
+
+The data covers calendar year 2025 for three teams. It gives headcount at 1 January and 31 December, average headcount, and the number of leavers.
+
+Turnover follows the HR convention: **leavers ÷ average headcount over the year**. Two rates are shown:
+
+- **Total turnover** counts all leavers.
+- **Voluntary turnover** counts resignations only and leaves out planned fixed-term contract ends. The company's attrition target is set on this basis, so it is the headline measure here.
+
+Average headcount matters most for Team A, which grew from 30 to 70 during the year. Dividing by year-end headcount (70) would understate its rate at 8.6%. Teams B and C were stable, so the choice of base makes no difference for them.
+
+*Note on Team B's base:* the 120 average includes the 10 fixed-term staff for the months they were employed. Their project ended in June, so they were present for about half the year and contribute about 5 to the average. A permanent-only base would therefore be about 115, giving a voluntary rate of about 7.0%. That is still the lowest of the three teams. The 120 base is kept here for consistency with the HR convention.
+
+## Results
+
+| Team | Working model | Avg headcount | All leavers | Total turnover | Voluntary leavers | **Voluntary turnover** |
+|---|---|---|---|---|---|---|
+| A | Remote-first | 50 | 6 | 12.0% | 6 | **12.0%** |
+| B | Office-based | 120 | 18 | 15.0% | 8 | **6.7%** |
+| C | Hybrid | 80 | 8 | 10.0% | 8 | **10.0%** |
+| **Total** | | **250** | **32** | **12.8%** | **22** | **8.8%** |
+
+**Team B.** Ten of Team B's 18 leavers belonged to a 12-month project team whose fixed-term contracts ended as planned in June. Without them, Team B has the lowest voluntary turnover of the three teams, so it is not the retention priority. Team B accounts for 56% of all leavers (18 of 32) but only 36% of voluntary leavers (8 of 22). That is below its 48% share of average headcount. Whether its rate meets the company's attrition target can't be judged without the target figure.
+
+**Team A.** Team A has the highest voluntary rate. It is also the newest team: it was set up in 2024, grew from 30 to 70 during 2025, and most of its staff have less than a year's service. As a general HR pattern (not something this data measures), staff in their first year tend to leave at higher rates than longer-serving staff. Team A's rate may therefore reflect its tenure profile, its rapid growth, or both, rather than its working model.
+
+**Small numbers.** Each team's rate rests on only 6–8 voluntary leavers. One leaver more or less moves Team A's rate by 2.0 percentage points, Team C's by 1.25 and Team B's by about 0.8. The 2-point gap between Teams A and C is the same as a single leaver in Team A. The differences between teams should be treated as indicative, not firm.
+
+## Is remote-first working associated with lower turnover?
+
+**Not on this evidence.** Ranked by voluntary turnover, the order is remote-first (highest), then hybrid, then office-based (lowest). This should not be read as evidence that remote-first working *raises* turnover either:
+
+- There are only three teams, each with a single working model. The effect of working model can't be separated from everything else that differs between the teams.
+- Team A differs in tenure and growth stage, and both are plausible drivers of early attrition.
+- The data has no turnover by tenure band, no before-and-after comparison for a team that changed working model, and no information on the roles each team does.
+
+The data therefore supports no conclusion about the effect of working model on turnover. In particular, changing Team B's working model to reduce turnover would not be justified, because Team B already has the lowest voluntary turnover.
+
+## Reasons for leaving
+
+All 32 leavers gave a main reason in their exit interview:
+
+| Main reason | All leavers (32) | Voluntary leavers (22)* |
+|---|---|---|
+| Pay | 10 (31%) | 10 (45%) |
+| End of fixed-term contract | 10 (31%) | – |
+| Career progression | 7 (22%) | 7 (32%) |
+| Relocation | 5 (16%) | 5 (23%) |
+
+\*Assumes the 10 "end of fixed-term contract" responses came from the 10 Team B contract staff. This is very likely but not confirmed in the data.
+
+Pay is the most common reason among voluntary leavers, given by 45%, but it is not a majority. Career progression comes second, at about a third.
+
+Caveats:
+
+- Only one main reason is recorded per person.
+- Exit-interview answers are self-reported. In general, pay can be an easier reason to give than, for example, problems with a manager, so it may be over-reported.
+- Reasons are not broken down by team. We can't tell, for example, whether Team A's leavers cite progression more often, as might be expected in a new team.
+
+Relocation (5 leavers) is partly outside the company's control. Two questions are worth asking:
+
+- **Could any of these leavers have been kept through remote or hybrid arrangements?**
+- **Were any of them in Team A?** Moving home shouldn't normally force someone out of a remote-first role. If some Team A leavers gave relocation as their reason, it may point to something else, such as location-dependent pay, tax or employment rules, or "relocation" standing in for a different reason.
+
+## Recommendations
+
+1. **Report voluntary turnover against average headcount as the standard measure.** Show planned fixed-term contract ends separately so they don't distort comparisons between teams.
+2. **Look into early-tenure attrition in Team A.** Review onboarding, management capacity during rapid growth, and progression routes for new staff. Hold stay interviews with current Team A members.
+3. **Do not change any team's working model on the basis of this data.** To assess the effect of working model, first collect turnover by tenure band and role, and compare across more teams or over time. This is about team-wide policy. It does not rule out offering flexibility to individuals, such as staff who are relocating.
+4. **Consider a pay benchmarking review.** Pay is the most common reason among voluntary leavers (10 of 22). Check pay against market data before acting.
+5. **Break exit-interview reasons down by team and tenure** in future reporting. Start by checking which teams the relocation leavers came from. Given the small numbers, review reasons over periods long enough to build up meaningful counts, such as six or twelve months.
+
+---
+
+## Appendix: corrections to the earlier draft
+
+*For the draft's author. Readers of the analysis above don't need this.*
+
+| Issue in draft | Correction |
+|---|---|
+| Used year-end headcount as the base | Used average headcount, per HR convention. Team A goes from 8.6% to 12.0%. |
+| Counted planned fixed-term contract ends as turnover | Separated them out. On the voluntary basis, Team B goes from highest (15.0%) to lowest (6.7%). |
+| Said Team A had the lowest turnover | Team A has the highest voluntary turnover. |
+| Said remote-first "clearly reduces" turnover and estimated 8 fewer leavers | No causal conclusion is possible from 3 teams with confounding factors. The projection was removed. |
+| Proposed piloting remote-first in Team B | Not justified, since Team B has the lowest voluntary turnover. |
+| Did not mention tenure as a factor | Team A's short tenure is a plausible explanation for its rate. |
+| Said "a majority" cited pay | Pay was cited by 31% of all leavers and 45% of voluntary leavers. |
+| Said exit interviews give a "complete" picture | Every leaver gave a reason, but each gave only one self-reported reason, with no team breakdown. |
+| Said Team B is a retention concern | Team B's voluntary turnover is the lowest of the three. Its total was inflated by a planned project end. |

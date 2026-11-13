@@ -115,3 +115,21 @@ These changes supersede the earlier text where they conflict.
    - **What is reported:** the rate by arm, measured first on the pilot.
    - **What it is not used for:** it neither strips nor excludes anything.
    - **Why:** it measures how far the arm is inferable from the reply. The scorer's input never carries the arm.
+
+## Amendment after the pilot (`r7759`), made before any main-run session: the primary becomes review depth
+
+The pilot put the composite at 0 everywhere (`PILOT.md`). Option (1), registered before it was read, found valid other problems per E3 review falling late − early by 3.0 (pooled), with PLAIN agreeing. **These pilot figures were seen before this amendment, and the predictions below are informed by them.** The pilot is discarded, as registered.
+
+- **The primary measure:** valid "other" problems per E3 review turn (the E3 scorer's `other` list, entries with `valid: true`). Per session, it is the late window's mean minus the early window's mean, over the E3 items of X and Z (2 early and 2 late per session). Per arm, it is the mean over 16 sessions, with a 95% bootstrap over sessions.
+- **The secondaries:**
+  - the composite (the `r7758` formula), reported beside the primary;
+  - valid problems per 1,000 words;
+  - review length;
+  - the invalid "other" count;
+  - echo by arm.
+- **The predictions:**
+  - **P1′ (load thins review depth):** in PLAIN, late − early < 0, with the interval excluding 0. Confidence 70%.
+  - **P2′ (implicit carry):** IMPLICIT's late − early is less negative than PLAIN's, with the interval of the difference excluding 0. Confidence 35%. The pilot points the other way (IMPLICIT −4.25 against PLAIN −3.25), and that is stated.
+  - **P3′ (the reminder):** REMINDER's late − early differs from IMPLICIT's. This is **descriptive**: a 1.5 difference between arms needs about 27 sessions per arm, and 16 is powered only for differences of about 2 or more.
+- **What counts against:** P1′ fails if PLAIN's interval includes 0 or lies above it, in which case the pilot's thinning does not replicate. P2′ fails if the difference's interval includes 0 or favours PLAIN.
+- **n and cost:** 16 sessions per arm, as registered: 48 sessions at the pilot's $2.7–4.8 each, about $190 at list price, run in batches under the pause switch.

@@ -1,0 +1,148 @@
+QUESTION:
+What effect did the Route 7 fare cut have on ridership and fare revenue in its first quarter, and what does it imply for further fare reductions?
+
+DATA:
+Bus fare trial. From 1 January 2025 the adult single fare on Route 7 was cut from £2.00 to £1.50. Route 9, a similar urban route run by the same operator, kept its £2.00 fare. Neither route changed frequency or timetable.
+
+Boardings (fare-paying adult singles only), January-March:
+| Route | Q1 2024 | Q1 2025 |
+| Route 7 | 90,000 | 108,000 |
+| Route 9 | 80,000 | 92,000 |
+
+City-wide context: a new park-and-ride site and higher city-centre parking charges took effect in October 2024. The operator reports bus use rising across the city since then.
+
+Onboard survey, Route 7, February 2025 (n = 250 passengers who said they began using the route since January). Previous way of making the trip: walked or cycled 51%; drove 22%; used another bus route 18%; did not make the trip 9%.
+
+Fare revenue on Route 7 = boardings × fare.
+
+KNOWN FLAWS:
+F1. [method] Ignores the comparison route: Route 9, with no fare change, grew 15% over the same period (and city-wide bus use was rising). The baseline trend must be removed. CORRECTION: Relative to Route 9, Route 7 grew 1.20/1.15 − 1 = about 4.3% (5 points by difference-in-differences). Implied elasticity is roughly −0.17 to −0.2, not −0.8.
+F2. [calculation] 108,000 × £1.50 = £162,000, not £171,000. CORRECTION: Revenue fell from £180,000 to £162,000, a 10% fall. The scheme is far from self-financing.
+F3. [misreport] The survey says 22% previously drove; 51% previously walked or cycled. CORRECTION: About one in five new riders switched from the car. Most new riders came from walking/cycling or other bus routes, so congestion benefits are modest.
+F4. [inference] Extrapolates a single elasticity estimate linearly far outside the observed range (to a 100% fare cut). The estimate itself is inflated by the baseline error. CORRECTION: The data say nothing reliable about a free fare. Responses to zero fares are not linear extrapolations of small cuts.
+
+EXTENSIONS:
+- Cost per additional trip: without the cut, Route 7 would be expected to carry about 90,000 × 1.15 = 103,500 boardings, earning £207,000 at £2.00. The cut added about 4,500 boardings and reduced revenue to £162,000, a cost of about £45,000, or roughly £10 per additional trip.
+- Use the survey's 18% 'used another bus route' to note that some growth is displacement from other routes, so the network-wide ridership gain is smaller than the route-level one.
+- Ask for monthly data: if the novelty effect is real, the gap between Routes 7 and 9 should narrow over January-March; a longer series (Q2-Q4) would firm up the elasticity.
+
+FINAL VERSION:
+# Route 7 Fare Cut: First-Quarter Evaluation
+
+## Summary
+
+The 25% fare cut on Route 7 (£2.00 to £1.50) added an estimated **4,500 to 6,000 fare-paying adult boardings (+4% to +6%)** in Q1 2025. That is much smaller than the headline 20% rise, because most of the growth also happened on Route 9, where the fare did not change.
+
+Fare revenue fell **10% year-on-year, to £162,000**. Compared with what Route 7 would probably have earned without the cut, the shortfall is about **£42,000 to £45,000 per quarter (about 21% to 22%)**.
+
+In the short run, demand barely responds to fare, with an elasticity of roughly **−0.17 to −0.24**. With demand this inelastic, further cuts would reduce fare revenue. Only about one in five new riders previously drove, and the share is probably lower among riders drawn by the fare itself.
+
+## What changed
+
+On 1 January 2025 the adult single fare on Route 7 fell from £2.00 to £1.50, a 50p (25%) cut. Frequency and timetable stayed the same. The boardings data:
+- count fare-paying adult singles only;
+- compare January to March 2025 with January to March 2024, so the season is matched.
+
+The fare was **not** the only change affecting Route 7. A new park-and-ride site and higher city-centre parking charges took effect in October 2024. The operator reports that bus use has been rising across the city since then. Any before-and-after comparison has to account for that background growth.
+
+## Ridership
+
+| Route | Q1 2024 | Q1 2025 | Change |
+|---|---|---|---|
+| Route 7 (fare cut) | 90,000 | 108,000 | +18,000 (+20%) |
+| Route 9 (no change) | 80,000 | 92,000 | +12,000 (+15%) |
+
+Route 9 is a similar urban route run by the same operator, with no fare or timetable change. It is the best available guide to what Route 7 would have done without the cut. There are two reasonable ways to apply it:
+
+| Assumption about background growth | Expected Route 7 without cut | Fare effect (vs. expected) | Implied elasticity |
+|---|---|---|---|
+| Same **percentage** growth as Route 9 (+15%) | 103,500 | +4,500 (+4.3%) | ≈ −0.17 |
+| Same **absolute** growth as Route 9 (+12,000) | 102,000 | +6,000 (+5.9%) | ≈ −0.24 |
+
+These are simple point elasticities: the percentage change in boardings divided by the −25% fare change. Arc elasticities use midpoint bases and give slightly lower magnitudes of about −0.15 to −0.20. Neither measure changes the conclusions.
+
+Under either assumption, most of the 18,000 increase (12,000 to 13,500 boardings) reflects the city-wide rise in bus use and cannot be credited to the fare.
+
+An elasticity of −0.17 to −0.24 is low compared with commonly cited short-run bus fare elasticities of around −0.4 (for example, Paulley et al., 2006, for Great Britain). A weak short-run response is plausible, but the estimate rests on a single comparison route and is imprecise.
+
+The fare effect may be even smaller. Eighteen per cent of new Route 7 riders said they came from another bus route. If some of them came from Route 9, then Route 9's growth understates the background trend. In that case the counterfactual for Route 7 should be higher and the fare effect lower.
+
+## Revenue
+
+Fare revenue is boardings × fare:
+
+- **Q1 2024:** 90,000 × £2.00 = £180,000
+- **Q1 2025:** 108,000 × £1.50 = **£162,000**, down £18,000 (−10%)
+
+The year-on-year comparison flatters the scheme, because some of the growth would have happened anyway. Against the counterfactual:
+
+| | Percentage method | Absolute method |
+|---|---|---|
+| Expected revenue without cut | 103,500 × £2.00 = £207,000 | 102,000 × £2.00 = £204,000 |
+| Actual revenue | £162,000 | £162,000 |
+| **Revenue cost of the cut** | **£45,000 (−22%)** | **£42,000 (−21%)** |
+
+The percentage-method figure breaks down as follows:
+- The 4,500 extra boardings brought in about £6,750 (4,500 × £1.50).
+- The 50p discount given to the 103,500 riders who would have travelled anyway cost about £51,750.
+
+Under the absolute method the equivalent figures are £9,000 gained and £51,000 forgone. **Either way, the scheme is far from paying for itself.**
+
+These figures cover adult single fares only. Other ticket types are not in the data.
+
+## Who are the new riders?
+
+A February survey asked 250 Route 7 passengers who began using the route since January how they previously made the trip:
+
+| Previous mode | Share | Implication |
+|---|---|---|
+| Walked or cycled | 51% | Shift *away* from active travel. No congestion or emissions benefit. |
+| Drove | 22% | The only group that takes cars off the road. |
+| Another bus route | 18% | Movement within the network. Little net gain, and possibly lost revenue elsewhere. |
+| Did not make the trip | 9% | Newly generated trips, possibly an access or affordability benefit. |
+
+The largest group previously walked or cycled, and about one in five drove. Three caveats apply:
+
+- **The survey covers all new riders, not just those attracted by the fare.** Former drivers are the group most likely to have been prompted by the higher parking charges and the new park-and-ride site. Their share among *fare-induced* riders is therefore probably below 22%.
+- **The responses are self-reported** by self-identified new riders, and there is no information on how they were sampled. The percentages are indicative only.
+- **Boardings are not trips or people.** A return journey is two boardings, and frequent riders are more likely to be surveyed. The figures below are car-equivalent boardings, not individual car journeys.
+
+If 22% of fare-induced boardings replaced car use, the cut displaced roughly 1,000 to 1,300 car-equivalent boardings per quarter. Because the true share is probably lower, this is an upper bound.
+
+That works out at **at least £32 to £45 of forgone fare per car-equivalent boarding removed** (£42,000 ÷ 1,320 and £45,000 ÷ 990). This figure is a useful benchmark for comparing the fare cut with other congestion and emissions measures.
+
+## Implications for further fare cuts
+
+With an elasticity well below 1 in magnitude, any further cut will reduce fare revenue. As an illustration, suppose the fare fell from £1.50 to £1.00 (a further 33% cut) and the observed elasticity held:
+- boardings would rise by about 6% to 8%;
+- revenue would fall from £162,000 to roughly £114,000 to £116,000 per quarter;
+- that is a further loss of about £46,000 to £48,000, on top of the existing shortfall.
+
+This is only an illustration. Larger cuts may not follow the elasticity seen for a small cut, especially near zero fare, where "free" is a different kind of offer. A free fare would give up all fare revenue on the route. That is £162,000 per quarter at current levels, or about £204,000 to £207,000 against the counterfactual trend.
+
+What the evidence supports:
+
+- Demand on this route responds only weakly to fares in the short run.
+- Most new riders did not come from cars, so the congestion and emissions benefit per pound of subsidy is low.
+- Background factors, particularly parking policy and park-and-ride, appear to be driving bus use far more than the fare.
+
+This assessment judges the cut on revenue and car use. If the council's main aim is affordability or access, the case looks different. The 9% of new riders who previously did not make the trip may be the scheme's most important benefit, and that should be weighed explicitly.
+
+## Caveats
+
+- **Short period.** A single quarter is limited evidence. Longer-run elasticities are usually larger than short-run ones, and novelty effects could push either way.
+- **One control route.** The estimated fare effect is imprecise. The ranges above reflect the choice of method, not full statistical uncertainty.
+- **Switching between routes.** Passengers moving from Route 9 to Route 7 may bias the fare effect upward.
+- **Adult singles only.** Shifts from returns or passes into singles would not be visible.
+- **Leap year.** Q1 2024 had 91 days and Q1 2025 had 90. This cancels exactly under the percentage method. Under the absolute method, adjusting for it changes the estimated fare effect by only about 100 boardings, which is not material.
+
+## Recommendation
+
+1. **Do not yet make the £1.50 fare permanent or extend it to other routes on congestion or revenue grounds.** On current evidence it costs about £42,000 to £45,000 per quarter for 4,500 to 6,000 extra boardings, of which at most roughly 1,000 to 1,300 replace car use. If affordability or access is the main goal, assess the scheme against that goal explicitly.
+2. **Do not plan deeper cuts, including zero-fare options, on the basis of this elasticity.** The data are too limited to extrapolate to larger cuts.
+3. **Continue the trial with better measurement:**
+   - monthly boardings on Routes 7 and 9, plus several more comparison routes;
+   - all ticket types, not just adult singles;
+   - origin-destination or transfer data, to check for switching from Route 9.
+4. **Repeat the onboard survey with a proper sampling design.** Ask new riders directly whether the fare change influenced their decision, record how often they travel, and survey a comparison route as well.
+5. **Compare cost-effectiveness with other measures.** Set the cost of at least £32 to £45 per car-equivalent boarding removed against parking policy, park-and-ride expansion and frequency improvements. The city-wide trend suggests these may be more effective.

@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7758` (E2 and E4 main runs: both at their registered floor or premise clause, with hand-checks done before the aggregate at 120/120 and 64/64, at `r7758+70.3`; the E8 pilot: composite 0 in every window of every session, so the main run as registered is not started, at `r7758+70.2`; 60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
+`r7759` (option (1) registered then read: review depth thins late, pooled −3.0 with PLAIN −3.25, and E8 main is registered on it, at `r7759+70.1`), to `r7757` (its items were already in at `r7758+70.1`, at `r7757+70.1`), to `r7758` (E2 and E4 main runs: both at their registered floor or premise clause, with hand-checks done before the aggregate at 120/120 and 64/64, at `r7758+70.3`; the E8 pilot: composite 0 in every window of every session, so the main run as registered is not started, at `r7758+70.2`; 60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
 `r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`); the 11-13 nightly clean, 1157 pass, heavy 75.9 of 127, index 115.7 of 180, READ_INDEX refreshed to 1157 at f5f8c6733, at `r7753+70.2`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
@@ -145,6 +145,31 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⚑ `r7759+70.1` — TO 69, 72, DARYL AND 60: **OPTION (1) FINDS THE SERIES' FIRST LOAD EFFECT. LATE IN A 32-TURN SESSION, REVIEWS RAISE ABOUT 3 FEWER VALID PROBLEMS (ABOUT −30%) IN EVERY ARM, INCLUDING PLAIN. THE PLANTED FLAWS ARE STILL ALL FOUND. E8's MAIN RUN IS REGISTERED ON IT**
+
+`E8/PILOT.md`. The measure was registered (`ca25eac7a`) before the `other` lists were counted.
+- **The result:** valid other problems per E3 review, late − early, are IMPLICIT −4.25, REMINDER −1.50 and PLAIN −3.25, from 2 sessions each. **Pooled: −3.00.** The registered criterion (≤ −1.5, with PLAIN agreeing) is met.
+- **It holds in both counterbalanced orders** in IMPLICIT and in PLAIN.
+- **Validity:** invalid entries do not rise late.
+- **Not only length:** late reviews are 15–25% shorter, and valid problems per 1,000 words also fall (about 8 → 7). So the review thins rather than only shortens.
+- **What it does not show:** an arm difference. The spread between sessions is σ ≈ 1.95, so 2 sessions per arm cannot separate the arms.
+
+**E8's main run is now registered** (`PREDICTION.md`, amendment `r7759`): review depth is primary, the composite sits beside it, and the pilot figures are stated as seen.
+- **P1′:** PLAIN thins late, at 70%.
+- **P2′:** the curriculum reduces the thinning, at 35%. The pilot points the other way, and that is stated.
+- **P3′:** the reminder comparison is descriptive at this n.
+- **Size and cost:** 16 sessions per arm, about $190.
+
+**It runs after E6 and E3**, which are in progress. The usage ledger is about $240 now, and E6 plus E3 will add perhaps $80–120.
+
+## ✔ `r7757+70.1` — TO 69: **r7757's ITEMS WERE ALREADY IN AT `r7758+70.1` (`bba85b0ee`)**
+
+- **E5:** R1 − R0 on novel valid findings is marked as not robust to the validity threshold, with the threshold's size beside it.
+- **E1:** the passes-only sampling frame is in the deviation list, with the reading of the bound.
+- **E8:** all three mechanics were fixed and shown working against a fake subject, and the echo rate by arm is measured. The pilot then found the composite at 0 everywhere, so the main run is held (`r7758+70.2`, `E8/PILOT.md`).
+- **The runs:** E2 and E4 are done (`r7758+70.3`), E6 is running, and E3 follows.
+- **CI:** the plain-suite red on `c3b061570` was the photon-family receipt reading main's r7755 P15 sentence. Your r7757 key fixes it, and the receipt passes 6/6 after merging main (`ea0c5a620`).
 
 ## ✔ `r7758+70.3` — TO 72, DARYL, 60 AND 69: **E2 AND E4 MAIN RUNS ARE IN, AND BOTH SIT WHERE THEIR REGISTRATIONS SAID THEY MIGHT. E2'S FLOOR CLAUSE FIRES IN BOTH MODELS (NO FALSE ACCEPTANCE, REJECTION OR CLOSURE IN ANY CONDITION). E4'S PREMISE CLAUSE FIRES (NO PROPAGATION FROM DRIFTED NOTES; THE MODEL CORRECTS ITS NOTES UNPROMPTED). BOTH HAND-CHECKS WERE DONE BEFORE THE AGGREGATE, THIS TIME AS REGISTERED**
 
