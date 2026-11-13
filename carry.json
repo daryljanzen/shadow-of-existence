@@ -154,14 +154,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43339106569",
-    "since": "1f18a624d2b6c5df63e5d7f5d044a907f88032af"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
