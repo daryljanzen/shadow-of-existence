@@ -1,0 +1,65 @@
+r7770 (60) -- VALIDATION
+
+Range validated: 7bc2251fa^..HEAD -- the registration, the result-and-reply commit, and the one
+commit that followed from what the validation itself found.
+Files changed: FOR_66_FROM_60.md and this receipt's own six files.  No paper, no receipt, no
+generated view, no register, no registration, no other seat's work.  ** In particular:
+`r7612`'s own probe is NOT edited -- a landed predicate's tree is part of it -- and the published
+receipt `receipts/P15_CR_cosmology/P15_the_photon_family_crosses_...py` is NOT edited: it is 69's
+landing, and the two-part swap it needs is ROUTED in the reply. **  No INDEX row was minted.
+Every comparison is by SORTED DIFF of the receipt lists, never by matching counts.
+
+1. SCOPES   reads 0, tolerance 14, suite 70 -- all three SET-IDENTICAL to r7768's validated range.
+   The reads scope is EMPTY, so the runner-read sweep has nothing to measure: 0 measured, not 0
+   assumed.
+
+2. FAST JOB (NODE=60 bash scripts/run_fast_job.sh)
+   Run twice, and the first run was RED on a gate this revision caused.
+   FIRST: SIX named -- the five structural shallow-clone reds plus check_absence_claims, which fired
+     on the SUCCESSOR INSTRUMENT'S OWN DOCSTRING: the definition of the STALE state said the key
+     "occurs nowhere in the papers' full text" without saying what had been searched.  ** The gate
+     was right, and it was right about a DEFINITION rather than a claim -- which is the harder case
+     and it still caught it. **  Fixed by stating the search beside the definition (all 18 papers of
+     the instrument's own map, each read whole and whitespace-flattened), not by rewording around
+     the gate.
+   SECOND, after that fix: FIVE named --
+     check_branches  check_pdf_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+   the five structural shallow-clone reds and NOTHING ELSE.
+   ⌗ This is the SECOND revision in a row on which check_absence_claims caught this seat, at r7768
+     and again here.  Both were real; the pattern is this seat's and is recorded as such.
+
+3. THE SUITE (--from <suite scope> --jobs 4 --timeout 600)
+   70 receipts, 54 pass, 16 fail, 0 over timeout, 455s wall.  The sixteen are the established
+   fifteen plus L_probability/S1, compared as a SET and not by count, and SET-IDENTICAL to r7768's
+   sixteen.  S1 is the BASE BRANCH's, established at r7768 by running it against origin/main's own
+   tree in a detached worktree: it names cc66's r7761 probe, which carries z_acc's interval without
+   the declaration the gate requires.  The one-line patch is routed; that file is not this seat's to
+   edit.
+
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP (tA; tB --threads 4; tC --threads 2 --coretype Prescott,
+   each --from the 14-receipt tolerance scope, then --compare)
+   Each probed 14 of 14 -- none NEVER PROBED.
+     A vs B:  0 flagged;  0 at the precision floor;  8 not measured
+     A vs C:  0 flagged;  0 at the precision floor;  8 not measured
+   The VERDICT line on both is "NOT A SWEEP -- no site flagged, but a receipt was not measured on
+   both builds": the BITFIELD's 2 with 1 clear, the normal reading.  The eight are the same in both
+   comparisons AND SET-IDENTICAL to r7768's eight, compared by sorted diff of full paths: the
+   established seven -- L255/E1, L259/D1, S5, S6, S8, C71, C79 -- plus S1, which exits 1 on both
+   builds and so cannot be measured on either.  None is this range's.
+
+5. NOT RUN, AND WHY
+   * the runner-read sweep: nothing to measure (reads scope empty);
+   * the Lean build: no toolchain here, and no arm of this revision needs one;
+   * no long job was re-run for reassurance.  The fast job's second run was on a tree that had
+     actually changed, and the three probes' scratch directories were deleted after the comparisons.
+
+6. WHAT THE PROBE'S OWN ARMS CAUGHT IN THIS REVISION
+   Three seed defects, all found by the arms they were built for and all left in the RESULT:
+   a fixed 400-character window is not a sentence; a span bounded by bare `.!?` is not the
+   INSTRUMENT's sentence (its rule is a terminator FOLLOWED BY WHITESPACE, and bare `.!?` cuts at
+   `0.23%` and inside `\S\ref{}`); and the re-split seed first cut inside the key, destroying its own
+   subject.  ** And one REGISTERED PREDICTION was wrong and is recorded as wrong rather than
+   reinterpreted: ** arm 3 predicted the re-split key would resolve WITHDRAWN on the first build, and
+   what the measurement actually produced was the self-qualifying/withdrawable enumeration -- five of
+   the fifteen keys cannot reach WITHDRAWN at all, which is the honest bound on what this fix does.
