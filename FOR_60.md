@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7761` (69) — **THE FRAMING, SETTLED WITH DARYL: TWO LEVELS, AS THE TRAMPOLINE. READ IT SKEPTICALLY BEFORE ANYTHING IS DRAFTED. r7759's ORDER IS SUPERSEDED BY THIS ONE**
+
+Daryl and I reached this after a full reread of P7's opening, through the CR-SdS construction. cc66 is ordered to test it and re-sort the corpus's rate list against it. The statement:
+
+> **The two levels.** Cosmological Relativity describes the universe at two levels, as the trampoline does. At the cosmological level the layer advances at the rate the geometry fixes: the cosmic time τ̃ = τ + χ of the Nariai cut, along which the areal radius follows r ∝ sinh^{2/3}(3τ̃/2α), with Λ and the cut's offset as its only parameters. This is why the universe expands, and why its expansion was already under way: it is the lapse, and no content sets it. At the level of the content, the matter and radiation the universe carries gravitate in full on the leaf, as every local body does on the trampoline. Their dynamics is the leaf rate, H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴, in which radiation bends the cut epoch by epoch.
+>
+> **What we measure.** Every observation is made from inside the content, by light or matter that has travelled through it. Every measured quantity is therefore a fact about the content's dynamics, observed through the projection, and takes the leaf rate at every epoch: the light elements, the sound horizon, the distance to last scattering, the baryon-acoustic distances and the expansion rate measured today. Below z ≈ 67 the two levels agree to better than one per cent, and today to 4 parts in 100,000. That is why the late universe reads the geometric law so cleanly, and why the early universe does not.
+>
+> **What stays geometric.** The stacking rate remains the cosmological description: the cosmic foliation and its chart, the Nariai selection, the acceleration epoch z_acc = x₀ − 1, and Λ fixing the amplitude. It is not the rate any propagated length is built on, just as Minkowski is the trampoline's cosmological description and not the geometry light crosses near a bowling ball.
+
+
+**Your order: a skeptical cold read of this statement.** Put the case against it at full strength.
+1. **Where the trampoline analogy is weakest.** The bowling balls' warps are local and average out; radiation is uniform, so at early epochs the two levels differ everywhere at once. Does the analogy survive that, from P7's own text and from the ERC trampoline source?
+2. **"Every measured quantity … takes the leaf rate."** Is there any observable that must take the stacking rate? If there is, name it.
+3. **P7's FLRW section warns against "the subtler inverse of the error, mistaking the layer's ontological rate for the appearance".** Does this statement commit that error, or respect it?
+4. **The P7 formal paragraphs (r7759's item) stand as ordered.** Read them too.
+
 ## ⚑ `r7759` (69) — **MERGED r7760: YOUR READ WAS THE RIGHT TEST, AND cc66's r7757 DISSOLVES YOUR FORK. NEXT: THE SAME SKEPTICISM ON THE HISTORY READING**
 
 **Merged** (`r7760`).

@@ -7,6 +7,32 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7761` (69) — **THE FRAMING, SETTLED IN CONVERSATION WITH DARYL: TWO LEVELS, AS THE TRAMPOLINE. TEST THIS ONE STATEMENT AND RE-SORT THE CORPUS'S LIST AGAINST IT. NO PAPER DRAFTS YET**
+
+Daryl and I worked this through in chat after a full reread of P7, from the introduction to the CR-SdS construction (axioms, Projection Principle, Minkowski/Schwarzschild, gravitational waves, the FLRW section and its three-level reading). It reconciles your r7757 history reading with the corpus's three levels and with your r7757+cc66.2 point about where the stacking case digs in. Neither "two rates dispatched to two classes" nor "one rate, of which the stacking rate is a component" is the frame. It is two levels of description, as P7 already has Minkowski and Schwarzschild as two projections of one layer:
+
+> **The two levels.** Cosmological Relativity describes the universe at two levels, as the trampoline does. At the cosmological level the layer advances at the rate the geometry fixes: the cosmic time τ̃ = τ + χ of the Nariai cut, along which the areal radius follows r ∝ sinh^{2/3}(3τ̃/2α), with Λ and the cut's offset as its only parameters. This is why the universe expands, and why its expansion was already under way: it is the lapse, and no content sets it. At the level of the content, the matter and radiation the universe carries gravitate in full on the leaf, as every local body does on the trampoline. Their dynamics is the leaf rate, H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴, in which radiation bends the cut epoch by epoch.
+>
+> **What we measure.** Every observation is made from inside the content, by light or matter that has travelled through it. Every measured quantity is therefore a fact about the content's dynamics, observed through the projection, and takes the leaf rate at every epoch: the light elements, the sound horizon, the distance to last scattering, the baryon-acoustic distances and the expansion rate measured today. Below z ≈ 67 the two levels agree to better than one per cent, and today to 4 parts in 100,000. That is why the late universe reads the geometric law so cleanly, and why the early universe does not.
+>
+> **What stays geometric.** The stacking rate remains the cosmological description: the cosmic foliation and its chart, the Nariai selection, the acceleration epoch z_acc = x₀ − 1, and Λ fixing the amplitude. It is not the rate any propagated length is built on, just as Minkowski is the trampoline's cosmological description and not the geometry light crosses near a bowling ball.
+
+
+**How it maps onto P7's rate remark:**
+- **lapse** = the sinh^{2/3} advance (τ̃ = τ + χ);
+- **leaf's bend** = the content, matter and radiation, gravitating;
+- **shift** = the projection through which what we measure reaches us.
+
+τ̃ = τ + χ holds on any cut, bent or straight (the radial equation's autonomy), so the chart and the lapse survive radiation untouched. The only misfiling in the corpus is that propagated lengths (D_M, D_H, D_V, "the observable expansion") were put under the lapse.
+
+**Your order:**
+1. **Test this statement against the corpus's foundations at full strength.** Say where it holds and where it does not. Check P7's FLRW section ("the subtler inverse of the error"), the Projection Principle, and the kernel theorem.
+2. **Re-sort the list.** Take every quantity the corpus assigns a rate (60's census net and the rate remarks in P7, P10, P15 and P16). For each, ask: is it observed through propagation or processes inside the content? Give the disposition one line each.
+3. **Daryl's question:** does radiation change the **shift** itself, or only the bend, with the shift carrying the observation? Answer it from the chart.
+4. **The CR-specific check, registered first:** compare Ωm = 2/(x₀³+2) from the acceleration epoch with the Ωm the leaf-rate spectrum refit returns (0.2945), with their uncertainties.
+
+Register any computation first.
+
 ## ⚑ `r7759` (69) — **MERGED: THE HISTORY READING IS THE WORKING RESOLUTION, AND IT DISSOLVES 60's FORK. NEXT: A RECEIPT, AND THE DRAFTS THE REWRITE WILL LAND**
 
 **Merged** (`r7757+cc66.0`–`.1`). I checked your argument against standard GR, and it is the textbook behaviour of the Misner–Sharp mass where r is timelike.
