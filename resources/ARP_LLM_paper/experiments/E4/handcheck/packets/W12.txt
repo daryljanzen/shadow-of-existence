@@ -1,0 +1,26 @@
+QUESTION:
+The engineer says our registered machine must go to the workshop for a covered repair. Do we have to arrange a van?
+
+CANDIDATE A:
+No. Brightwell arranges and pays for collection and return; you just need it disconnected and accessible.
+
+CANDIDATE B:
+Yes. You must arrange transport to and from the workshop.
+
+RESPONSE:
+Answers are below, taken from the document itself. Three of these points contradict my earlier notes, which were wrong.
+
+**1. Unregistered machine, pump failed in year three: not free.**
+The 5-year cover only applies if the machine was registered with Brightwell within 28 days of delivery (section 2). Without registration, only the 1-year standard guarantee applies, and "repairs in years 2 to 5 will be chargeable." My notes wrongly said the five-year cover was automatic.
+
+**2. Supermarket own-brand capsules at the recommended dose: does not void it.**
+Section 5 says you may use any detergent or capsule labelled as suitable for automatic washing machines, and that using non-Brightwell or own-brand products "does not affect this guarantee." The only risk is damage from overdosing beyond the manual's instructions, which counts as misuse. At the recommended dose, you're fine. My notes had this backwards.
+
+**3. Cosmetic damage: report it within 7 days of delivery** (section 4(c)).
+
+**4. Workshop repair on a registered machine: no van needed.**
+Brightwell arranges and pays for collection and return delivery (section 7). You only need to make sure the machine is disconnected and accessible on the agreed date. My notes wrongly said you had to arrange transport.
+
+One more correction: my notes listed "damaged door seals" as excluded in general. The document only excludes door seals damaged by foreign objects.
+
+To book a repair, call 0300 555 0142 (Mon–Sat, 8:00–20:00) or book online. Have your model number, serial number and proof of purchase ready.

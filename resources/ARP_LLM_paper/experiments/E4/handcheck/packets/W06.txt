@@ -1,0 +1,26 @@
+QUESTION:
+I'm making a double batch. How much baking powder should I use?
+
+CANDIDATE A:
+3 tsp — baking powder is increased only one and a half times, not doubled.
+
+CANDIDATE B:
+4 tsp — every ingredient is doubled.
+
+RESPONSE:
+Here are the answers, taken from the recipe card itself. **Three of my earlier notes were wrong**, and I've marked each one below.
+
+**1. Baking powder for a double batch: 3 tsp, not 4.**
+Double everything else, but increase the baking powder by only 1.5 times. The card says too much raising agent in the larger tin makes the middle sink. For a double batch, also bake at 170 °C (150 °C fan) for 40–45 minutes, and cover loosely with foil after 30 minutes if the top browns too fast.
+⚠️ *Correction: my notes said to double every ingredient, which would give you 4 tsp.*
+
+**2. No, don't let the cake cool before adding the drizzle.**
+Add it as soon as the cake comes out of the oven, while it's still hot. Prick it all over with a skewer and spoon the drizzle on. The hot sponge soaks up the syrup, and the sugar sets into a crisp top as it cools. If you wait until the cake is cool, the syrup sits on the surface and the top turns out sticky rather than crisp. Leave the cake in the tin until it's completely cold, then cut it.
+⚠️ *Correction: my notes said to drizzle once the cake had cooled, which is the opposite of what the card says.*
+
+**3. The base recipe makes 12 squares** in a 20 × 30 cm tin.
+(A double batch makes 24 squares. The café cuts its double batch into 20 larger bars for the counter.)
+
+**4. No, four and a half months is past the recommended time.**
+The card says the undrizzled sponge can be frozen for up to **3 months**. Yours is about six weeks over. The card doesn't say what happens beyond 3 months. A well-wrapped sponge is likely still safe to eat, but the texture and flavour may have suffered, so use your judgement. If you do use it, the card says to defrost it at room temperature for 3 hours, warm it for 5 minutes in a low oven, and then add a freshly made drizzle so it soaks in.
+⚠️ *Correction: my notes said 6 months, which would wrongly have told you it was fine.*

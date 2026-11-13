@@ -1,0 +1,27 @@
+QUESTION:
+I borrowed four picture books for my daughter on my own adult card and returned them 5 days late. Will I be charged?
+
+CANDIDATE A:
+No. Children's books carry no overdue charges.
+
+CANDIDATE B:
+Yes. Charges depend on the card, not the item: 25p × 4 items × 5 days = £5.
+
+RESPONSE:
+Two of my earlier notes were wrong, and they bear on questions 2 and 3. The answers below are corrected against the policy text.
+
+**1. DVD loan period**
+**1 week.** You can renew it **once only**, unless another member has reserved it (sections 3 and 4).
+
+**2. Picture books returned late on your adult card**
+**Yes, you'll be charged.** My notes said children's books carry no overdue charges, but that's wrong. Section 5 says charges depend on the *card* used, not the item, and that "children's books borrowed on an adult card are therefore charged at the adult rate."
+- 4 books × 5 days × 25p = **£5.00** (£1.25 per book, well under the £6 per-item cap)
+- If you're 65 or over, you pay half: **£2.50**
+
+**3. Inter-library loan the other library couldn't supply**
+**No, the £4 isn't refundable.** My notes had this wrong too. Section 8 says the fee is non-refundable, "including where the item is not collected or the lending library cannot supply it." If you think something unusual happened, you could ask a Branch Manager about a waiver for library error (section 10). That would be at their discretion, not something you're entitled to.
+
+**4. £14 in charges after a bereavement**
+**Not on their own.** Bereavement is a valid reason for a waiver, but a Branch Manager can only waive up to **£10** (section 10). A request to waive more than £10 has to go to the **Library Services Manager**, whose decision is final. Your local branch can pass the request on, so start there.
+
+While you owe £10 or more, your account is **blocked from borrowing** (section 9). Borrowing opens again once the balance drops below £10, whether through the waiver or a part-payment.

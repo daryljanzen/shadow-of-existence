@@ -1,0 +1,25 @@
+QUESTION:
+The engineer says our registered machine must go to the workshop for a covered repair. Do we have to arrange a van?
+
+CANDIDATE A:
+Yes. You must arrange transport to and from the workshop.
+
+CANDIDATE B:
+No. Brightwell arranges and pays for collection and return; you just need it disconnected and accessible.
+
+RESPONSE:
+I checked these against the guarantee itself. My earlier notes were wrong on three points (registration, detergents and workshop transport), so these answers follow the document.
+
+**1. Unregistered machine, pump failed in year 3: not free.**
+The 5-year cover applies only if the machine was registered with Brightwell, online or by phone, within 28 days of delivery (section 2). If it wasn't registered, only the 1-year standard guarantee applies, and "repairs in years 2 to 5 will be chargeable." A pump is normally a covered part, but in year three on an unregistered machine you will pay for the repair. Your statutory consumer rights still apply alongside the guarantee, so you could raise the fault with the retailer under those.
+
+**2. Supermarket own-brand capsules at the recommended dose: no, this does not void the guarantee.**
+Section 5 says you may use any detergent or capsule labelled as suitable for automatic washing machines, and that non-Brightwell or own-brand detergents do not affect the guarantee. The only catch is overdosing against the user manual, which is treated as misuse. At the recommended dose you're fine.
+
+**3. Cosmetic damage: within 7 days of delivery.**
+Cosmetic damage is excluded unless you report it within 7 days of delivery (section 4(c)).
+
+**4. Workshop repair: no, you don't need to arrange a van.**
+If the engineer decides a workshop repair is needed, Brightwell arranges and pays for collection and return (section 7). Your part is to make sure the machine is disconnected and accessible on the agreed date.
+
+To book: Brightwell Service Line 0300 555 0142 (Mon–Sat, 8:00–20:00) or online. Have your model number, serial number and proof of purchase ready.

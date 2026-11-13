@@ -1,0 +1,29 @@
+QUESTION:
+Will a call to an 0871 customer-service number come out of my inclusive minutes?
+
+CANDIDATE A:
+No. 087 numbers are excluded and cost 65p a minute access charge plus the organisation's service charge.
+
+CANDIDATE B:
+Yes. 087 numbers are included in your minutes.
+
+RESPONSE:
+I checked each answer against the contract itself. My earlier notes had three errors, which are corrected below.
+
+**1. Monthly charge after the April 2027 price change: £23.50**
+The contract (section 2) sets a fixed rise of **£1.50** a month each April, so £22.00 becomes £23.50. My notes wrongly said £2.50. The charge rises by another £1.50 in April 2028, to £25.00. You'll be reminded at least 30 days before each rise. Because the rises are in the contract, they don't give you a right to cancel free.
+
+**2. Monthly charge before any price change: £22.00**
+This includes VAT (section 1).
+
+**3. Will a call to an 0871 number use your inclusive minutes? No.**
+0871 numbers fall under 087 numbers, which are **not included** in your minutes (section 4). You'll pay Skylark's access charge of **65p a minute**, plus a service charge set by the organisation you're calling. My notes wrongly said these calls were included. Only 080 and 116 numbers are free. It's worth checking whether the company has a free 080 number or a standard 01, 02 or 03 number you could call instead.
+
+**4. Will roaming in Spain stay free the whole time? Probably not.**
+My notes left out a condition in section 5. Spain is in the Europe Zone, but free use there only applies if, over any four-month period, you:
+- spend more days in the UK than abroad, **and**
+- use more of your allowance in the UK than abroad.
+
+About 3½ months in Spain with only two weeks at home means far more days abroad than in the UK, so you won't meet this condition. If Skylark spots it, they'll give you **14 days' notice**. After that, a **£2 surcharge for each day you use your phone abroad** may apply until your usage pattern changes. The first part of your stay would probably be free, but the later weeks could cost about £14 a week. Your spending cap (£30 unless you've changed it) may limit these charges, so check your cap in the Skylark app before you go.
+
+The other points in my notes match the contract.

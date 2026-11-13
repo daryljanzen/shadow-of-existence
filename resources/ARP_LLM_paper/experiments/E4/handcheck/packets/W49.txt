@@ -1,0 +1,19 @@
+QUESTION:
+I'm making a double batch. How much baking powder should I use?
+
+CANDIDATE A:
+3 tsp — baking powder is increased only one and a half times, not doubled.
+
+CANDIDATE B:
+4 tsp — every ingredient is doubled.
+
+RESPONSE:
+Going by the recipe card itself (a few points in my earlier notes were wrong, flagged below):
+
+1. **Baking powder for a double batch: 3 tsp, not 4.** Double every other ingredient, including the drizzle, but increase the baking powder only one and a half times. Too much raising agent in the larger tin makes the middle sink. Also bake at 170 °C (150 °C fan) for 40–45 minutes, covering loosely with foil after 30 minutes if the top browns too fast. *(My notes wrongly said to double every ingredient.)*
+
+2. **No, drizzle the cake while it's still hot.** As soon as it comes out of the oven, prick it all over with a skewer and spoon the drizzle on. The hot sponge soaks up the syrup and the sugar sets into a crisp top. If you wait until it cools, the syrup sits on the surface and the top turns sticky rather than crisp. Then leave it in the tin until completely cold before cutting. *(My notes had this backwards.)*
+
+3. **The base recipe makes 12 squares** in a 20 × 30 cm tin, about 4 cm deep.
+
+4. **No, four and a half months is past the recommended time.** The undrizzled sponge should be frozen for **up to 3 months**, wrapped well in cling film and foil. *(My notes wrongly said 6 months.)* The card gives no guidance beyond 3 months, so whether to use it is your call. If you do, defrost it at room temperature for 3 hours, warm it in a low oven for 5 minutes, then add a freshly made drizzle.

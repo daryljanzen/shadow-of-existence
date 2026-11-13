@@ -1,0 +1,19 @@
+QUESTION:
+What is the latest I can arrive after the start and still possibly be let in?
+
+CANDIDATE A:
+Up to 30 minutes after the start, at the invigilator's discretion and without extra time.
+
+CANDIDATE B:
+Up to 30 minutes after the start, at the invigilator's discretion and without extra time.
+
+RESPONSE:
+Answers below come from the regulations themselves. Three points in my earlier notes were wrong, and I've marked where.
+
+**1. Latest arrival:** 30 minutes after the start. Up to then, the invigilator *may* admit you, but it's their choice and you won't get extra time. If you arrive more than 30 minutes late, you won't be let in and you'll be recorded as absent (Section 4). You're expected to arrive at least 15 minutes before the start.
+
+**2. Smart watch on your wrist:** No. Phones, smart watches and other electronic devices must be switched off and put in your bag at the front of the room before the exam starts. Having one on your person during the exam is an offence under the Academic Misconduct Regulations, *even if it is switched off and not used* (Section 7). Penalties range from zero for the exam to expulsion (Section 10). *My notes wrongly said you could keep a switched-off device on you.*
+
+**3. Who decides your claim:** The Faculty Mitigating Circumstances Panel (Section 8). Module leaders, personal tutors and examiners do not decide claims and cannot promise you any outcome. *My notes wrongly said the module leader decides.*
+
+**4. Your August mark:** You'd get 65%. Because the Panel accepted your mitigating circumstances claim for the first attempt, your August attempt counts as a first sitting and is not capped (Section 9). The 40% cap applies only to ordinary resits after a failed first attempt without an accepted claim. *My notes mentioned the cap but left out this exception.*

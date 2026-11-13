@@ -1,0 +1,31 @@
+QUESTION:
+My laptop was taken from the back seat of my locked car in a supermarket car park; the window was smashed. Am I covered?
+
+CANDIDATE A:
+No. Theft from an unattended vehicle is only covered if the item was hidden in a locked boot or glovebox; on the back seat it was not.
+
+CANDIDATE B:
+Yes. Theft from a locked car is covered.
+
+RESPONSE:
+I checked each answer against the policy wording rather than my earlier notes. **My notes were wrong on three points** (the single-item limit, car theft, and pet damage), and the corrections are below.
+
+**1. Excess on an ordinary theft claim: £100.**
+Section 5.1 sets the excess at £100 per claim (£1,000 applies only to subsidence). Your schedule shows the figure that applies to you, so check it there. For a theft claim you must also:
+- Report it to the police within 48 hours and get a crime reference number.
+- Tell Hollins within 30 days of discovering the loss.
+
+Theft isn't covered at all if your home had been unoccupied for more than 45 consecutive days (5.5).
+
+**2. Unspecified £2,200 watch: at most £1,500.**
+My notes said £2,500, but the wording (2.3) says **£1,500** for any single item not specified by name and value in your schedule. The £100 excess is then deducted from the claim. If you replace the watch with something similarly valuable, consider having it specified in your schedule.
+
+**3. Laptop stolen from the back seat of your locked car: not covered.**
+My notes said theft from a locked car was covered, but that leaves out a key condition. Under 2.6, theft from an unattended vehicle is covered only if **both** of these apply:
+- the item was hidden from view in a locked boot or locked glovebox, **and**
+- there is evidence of forcible and violent entry.
+
+The smashed window satisfies the second condition, but a laptop on the back seat wasn't hidden in a locked boot or glovebox, so the claim falls outside the cover.
+
+**4. Puppy chewing the sofa: no.**
+My notes said pet damage was covered, which was wrong. Section 5.3 specifically excludes loss or damage caused by domestic pets, including chewing. Because this is a general exclusion, it likely applies even if you have the Accidental Damage extension. That extension's own wording isn't in this extract, so check your full policy or ask Hollins to be sure.

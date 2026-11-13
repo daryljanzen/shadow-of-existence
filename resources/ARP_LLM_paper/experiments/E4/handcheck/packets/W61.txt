@@ -1,0 +1,25 @@
+QUESTION:
+Will an employee build up annual leave during weeks 40–52 of maternity leave, when she is unpaid?
+
+CANDIDATE A:
+Yes. Annual leave accrues throughout the whole of maternity leave, including unpaid weeks.
+
+CANDIDATE B:
+No. Leave only accrues during the paid weeks.
+
+RESPONSE:
+Answers below come from the policy document itself. My earlier notes were wrong on three of these points, so please don't rely on them.
+
+**1. Weeks at 100% of basic salary: 18 weeks**
+Weeks 1–18 are paid at full basic salary. Weeks 19–39 are paid at the statutory rate, and weeks 40–52 are unpaid (Section 3).
+
+**2. Resigned four months after returning: yes, she must repay**
+To keep enhanced pay, she has to work for at least **six months** after maternity leave ends (Section 4). My notes said three months, which was wrong. Because she resigned after four months, she must repay the enhanced element. That is the difference between the enhanced pay and the statutory pay she would otherwise have received, which in practice covers weeks 1–18. The exemptions (redundancy, ill-health retirement, or dismissal other than for gross misconduct) don't cover resignation. By agreement, she can spread the repayment over up to 12 months.
+
+**3. Annual leave during unpaid weeks 40–52: yes, it accrues**
+Contractual and statutory annual leave keep accruing for the whole of maternity leave, **including the unpaid weeks** (Section 5). My notes said the opposite, which was wrong. Bank holidays during her leave are also added to her entitlement. She should normally use the accrued leave by the end of the leave year in which she returns. With her line manager's agreement, she can carry up to 10 days into the next leave year.
+
+**4. Adding three months of unpaid parental leave: the HR Business Partner decides**
+The **HR Business Partner for her division** decides, after consulting her line manager (Section 8). My notes said the line manager approves, which was wrong. The policy explicitly says the line manager has no authority to approve an extension. She should receive the decision in writing within 14 days of HR receiving her request.
+
+**Corrections to my notes:** the return period is 6 months, not 3. Annual leave does accrue during unpaid weeks. Extensions are decided by the HR Business Partner, not the line manager.

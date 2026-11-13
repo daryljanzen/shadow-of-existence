@@ -1,0 +1,25 @@
+QUESTION:
+My son is 18 and works full time as an apprentice electrician (not in full-time education). Is his NHS check-up free?
+
+CANDIDATE A:
+Yes. NHS treatment is free for anyone under 19.
+
+CANDIDATE B:
+No. 18-year-olds only get free NHS treatment if they are in qualifying full-time education, so he pays (Band 1: £27.40) unless another exemption applies.
+
+RESPONSE:
+Answers from the practice document itself. My earlier notes got three of these wrong, so I've corrected them below.
+
+**1. When do you pay the £75.30?**
+You pay it **in full at your first appointment of the course, before treatment starts** (section 2). My notes wrongly said you pay at the end. If the band changes during the course, for example to Band 3, you pay the difference at your next appointment.
+
+**2. When are same-day emergency appointments released?**
+They're released **at 08:00 each weekday**. Book by phone on **01632 960 418**, first come, first served (section 6). Outside opening hours, call **NHS 111**.
+
+**3. Is your 18-year-old son's NHS check-up free?**
+**No, not on age grounds.** Free NHS treatment covers children under 18. It covers 18-year-olds **only if they're in qualifying full-time education** (section 3). A full-time apprenticeship doesn't count, so he'd normally pay the Band 1 charge of **£27.40**. My notes wrongly said "under 19".
+He could still qualify another way, for example if he receives certain benefits or holds a valid HC2 certificate. He'd need to show evidence, and the NHS can issue penalty charges for incorrect claims.
+
+**4. Will you be charged £40 for missing your NHS check-up?**
+**No.** The £40 charge applies **only to private appointments**. The document says NHS regulations don't allow it (section 5). My notes wrongly said it applied to any appointment.
+However, if NHS patients miss **two appointments without notice within 12 months**, they may be asked to find another practice for future routine care. It's worth calling the practice to rebook and explain.

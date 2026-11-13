@@ -1,0 +1,40 @@
+QUESTION:
+A customer complains about what she was told on a call to the Halden Money credit desk eight months ago. Should a recording still exist?
+
+CANDIDATE A:
+No. Call recordings are only kept for 90 days.
+
+CANDIDATE B:
+Yes. Halden Money desk recordings are kept for 5 years for FCA reasons.
+
+RESPONSE:
+**Correction first:** my earlier notes had three errors that affect these answers. The document itself says:
+
+- Unsuccessful applicants are kept for **6 months**, not 12.
+- Deletion is the responsibility of each department's **Information Asset Owner**, not the IT Service Desk.
+- Halden Money credit desk call recordings are kept for **5 years**, not 90 days.
+
+The answers below follow the document.
+
+**1. Subject access request deadline**
+Halden must respond within **one calendar month**. For complex requests this can be extended by two further months. The request must also be passed to the DPO **on the day it arrives** (section 6).
+
+**2. Marketing's old spreadsheets**
+This is the job of **Marketing's Information Asset Owner (IAO)**, normally the head of Marketing (section 2).
+- The IAO must make sure the department's records are reviewed and deleted when their retention period ends.
+- The IT Service Desk only does technical deletion from central systems when an IAO tells it to. IT does not decide what gets deleted.
+- Line managers make sure staff follow the policy, and the DPO owns the policy.
+- Before deleting anything, check with Legal that none of it is under a legal hold (section 4).
+- Paper copies go in the confidential waste consoles. Electronic files are deleted from live systems.
+
+**3. Rejected candidate, nine months ago, not in the talent pool**
+**No, we should not still hold her CV.** Records for unsuccessful applicants are kept for 6 months after she was told of the decision, so hers should have been deleted about three months ago. The only exception is a legal hold.
+- Treat her question as a subject access request and pass it to the DPO today.
+- If the CV is still held, tell her honestly when you respond, then delete it.
+- Report the missed deletion to Recruitment's IAO.
+
+**4. Halden Money credit desk call from eight months ago**
+**Yes, a recording should still exist.** Calls to the Halden Money desk are kept for **5 years** because of Financial Conduct Authority requirements. The 90-day rule applies only to ordinary customer service calls.
+- Her complaint file must be kept for 3 years after the complaint is closed.
+- If she asks for a copy of the recording, handle that as a subject access request through the DPO.
+- If the complaint might go to the Financial Ombudsman or to court, tell Legal so they can consider a legal hold.
