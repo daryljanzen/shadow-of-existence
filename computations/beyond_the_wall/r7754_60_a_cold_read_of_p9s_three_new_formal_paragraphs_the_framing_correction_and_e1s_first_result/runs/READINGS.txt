@@ -1,4 +1,4 @@
-r7754 (60) -- PROBE  [HEAD 2a3132a96]
+r7754 (60) -- PROBE  [HEAD 650e723eb]
 sympy 1.14.0, python 3.11.17
 
 
@@ -66,7 +66,7 @@ ARM 3 -- both Carter witnesses are witnesses, and the only-if witness's content 
   satisfiable is sound exactly when its proof routes through the theorem, and this
   one does.  Read without the proof it would look like a witness and not be one.
   NEGATIVE WAS REACHABLE: a proof that exhibited the constants directly.
-  => PASS   [t=3s]
+  => PASS   [t=4s]
 
 ==============================================================================
 ARM 4 -- the Bianchi paragraph's four declarations, recomputed from the metric
@@ -96,7 +96,7 @@ ARM 4 -- the Bianchi paragraph's four declarations, recomputed from the metric
       C = (2, -1, -1): R - 3g zero in all sixteen = True
   NEGATIVE WAS REACHABLE: a nonzero off-diagonal electric component would make the
   paragraph's word 'eigenvalues' wrong rather than merely unsupported.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 ==============================================================================
 ARM 5 -- the amended Type-I clause is read as the quantified statement it is
@@ -126,7 +126,7 @@ ARM 5 -- the amended Type-I clause is read as the quantified statement it is
   three to one is missing.  Both are one clause to fix.
   NEGATIVE WAS REACHABLE: a constraint set admitting two indices below -1, or a
   distinct-C member whose minimum is -1, would make the clause false instead.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 ==============================================================================
 ARM 6 -- the pp-wave paragraph's three declarations, recomputed from the metric
@@ -148,7 +148,7 @@ ARM 6 -- the pp-wave paragraph's three declarations, recomputed from the metric
   before it establishes vacuum-iff-harmonic, so the reading is available; it is not
   stated.  Recorded in ARM 7's count.
   NEGATIVE WAS REACHABLE: a nonzero product, a nonzero trace, or C_uxux != -1.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 ==============================================================================
 ARM 7 -- the hypothesis count, enumerated from the Lean source and compared with the paragraphs
@@ -193,7 +193,7 @@ ARM 7 -- the hypothesis count, enumerated from the Lean source and compared with
       declarations take H harmonic.  The preceding clause establishes vacuum iff
       harmonic, so the reading is available and the sentence does not state it.
   NEGATIVE WAS REACHABLE: all of them stated would report no finding.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 ==============================================================================
 ARM 8 -- every biconditional and every 'exactly when' is checked in both directions
@@ -218,7 +218,7 @@ ARM 8 -- every biconditional and every 'exactly when' is checked in both directi
   and only if d_0 = c_0' is exactly what ARM 2 derived, where solving the rr equation
   on a general quartic Delta_p returned d0 = c0 rather than leaving it free.
   NEGATIVE WAS REACHABLE: a prose equivalence backed by one direction only.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 ==============================================================================
 ARM 9 -- the absence claims are searched, and the controls have power
@@ -239,7 +239,7 @@ ARM 9 -- the absence claims are searched, and the controls have power
   measured, not asserted.
   NEGATIVE WAS REACHABLE: a control with no hits would withdraw the claim -- which is
   r7752's own defect, and the control here is a region where the vocabulary is live.
-  => PASS   [t=5s]
+  => PASS   [t=6s]
 
 
 #########  PART 2 -- the framing correction  #########
@@ -257,16 +257,14 @@ ARM 10 -- the five settled-state sentences landed, and the sweep finds nothing n
       P7 @ad0a30ff5 (r7752 found 3)      5 hit(s)
       P18 now                            0 hit(s)
       P7 now                             0 hit(s)
-      P15 now                            2 hit(s)
+      P15 now                            0 hit(s)
   power on the pre-r7745 versions: 9 hit(s), so the predicate can still find
   the thing it is looking for.
-  sites left in print now: 2
-      P15: \emph{That places the residual on the rate assignment of \S\ref{sec:tensions} rather than on the projection}---an assignment the reassignment derives on any cut, bent or straight (\S\ref{sec:scope}), so the residual is the derived
-      P15: \emph{What disagrees is the acoustic \emph{contrast}, and it disagrees in the one direction the construction cannot move.} \emph{So this section leaves neither a residual in search of a parameter nor an arithmetic to re-run}: it l
+  sites left in print now: 0
   the two this line drafted for P18 and the three for P7 are gone; whatever remains
   is named above with its paper.
   NEGATIVE WAS REACHABLE: a site reported landed that is still in print.
-  => PASS   [t=6s]
+  => PASS   [t=7s]
 
 ==============================================================================
 ARM 11 -- the correction's new wording does not close the question by the back door
@@ -287,7 +285,7 @@ ARM 11 -- the correction's new wording does not close the question by the back d
   so the lean the earlier text carried is gone, and the question is now put as two
   alternatives with neither asserted.
   NEGATIVE WAS REACHABLE: a new sentence closing the question, or the lean surviving.
-  => PASS   [t=6s]
+  => PASS   [t=7s]
 
 ==============================================================================
 ARM 12 -- cc66's two load-bearing claims, and the two directions radiation moves the distance
@@ -319,7 +317,7 @@ ARM 12 -- cc66's two load-bearing claims, and the two directions radiation moves
   So the 1.002 is held rather than confirmed or disputed, and is read when it lands.
   NEGATIVE WAS REACHABLE: one site only, or a text that names the two operations
   differently.
-  => PASS   [t=6s]
+  => PASS   [t=7s]
 
 
 #########  PART 3 -- E1's first RESULT against its registration  #########
@@ -369,7 +367,7 @@ ARM 13 -- E1's result on the four counts, with the materials checked against the
   the data were seen, and the result says both and reports the table either way.
   NEGATIVE WAS REACHABLE: a message that does ask for coaches would make the
   exclusion an after-the-fact rescue instead of a materials defect.
-  => PASS   [t=6s]
+  => PASS   [t=7s]
 
 ==============================================================================
 ARM 14 -- every measure, cut and exclusion matched against the registration out of history
@@ -422,11 +420,130 @@ ARM 14 -- every measure, cut and exclusion matched against the registration out 
       the same pattern on programme material, live in this run: 21 hits
   NEGATIVE WAS REACHABLE: nothing registered and unreported, and a hand-check that is
   the registered one, would make this arm report no finding.
-  => PASS   [t=6s]
+  => PASS   [t=7s]
+
+
+#########  AMENDMENT -- the three rewritten sentences, the refit, the pricing  #########
+
+==============================================================================
+ARM 15 -- the three rewrites are in print as the order quotes them, verbatim
+==============================================================================
+  each quoted sentence matched as an EXACT string against the committed paper, on
+  whitespace-normalised text, not paraphrased:
+      P15 site 6               in print verbatim
+      P15 site 7               in print verbatim
+      P15 site 7 neighbour     in print verbatim
+      P6 acoustic episode      in print verbatim
+  and r7752's settled-state predicate, run unchanged over both papers: 0 site(s) left
+  so the two sites this revision found in P15 are gone and P6 carries none.
+  NEGATIVE WAS REACHABLE: a quoted sentence not in print as quoted, or a site left.
+  => PASS   [t=7s]
+
+==============================================================================
+ARM 16 -- 70's refit RESULT read against its own registration, out of git history
+==============================================================================
+  the registration read at 3e2f4eec3, committed 2026-11-12T22:29:14+00:00; the first run output
+  committed 2026-11-12T22:31:34+00:00.
+      the registration precedes the run: True
+  registered item against reported:
+      reported     A: the no-fit run at the distances point
+      reported     B: the linearised minimum on the banked grid
+      reported     B: the verify run at that minimum, scored on the run
+      reported     B: the re-centring if |model - run| > 1
+      reported     C: theta*/ell_A at both points
+      reported     C: the DESI DR2 BAO distances at both points
+      reported     K1 the control reproduces its banked figures
+      reported     K2 LEAFGEOM=0 reproduces the arm of record
+      reported     K3 the grid base re-runs bit-identically
+      reported     K4 the one-clock self-check
+      reported     E1 the refitted multiple <= 1.15
+      reported     E2 the as-computed multiple below 2.35
+      reported     E3 theta* moves by more than 1 sigma
+      reported     E4 BAO chi^2 changes by < 1
+  registered and not reported, among the MEASURES: none
+  ⌗ and one registered statement that is not a measure: the PRICE.  The registration
+  prices the work at 2 runs, up to 11 if one further grid is needed, under 1 core-h (True); the result took the re-centring, so it used the ceiling, and says nothing about what was spent (False).  One line, and the budget rule is why.
+  THE ORDER'S THREE FIGURES, recomputed from the result's own tables rather than
+  taken from the order:
+      refitted multiple 186.85/186.51 = 1.0018   (the order says 1.002)
+      the leaf-rate D_M against the stacking-rate one at the distances' point:
+      (13941.6 - 14011.5)/14011.5 = -0.4989 per cent, so theta* is up by that
+      much  (the order says 0.50 per cent, and cc66's own figure is -0.498)
+      BAO: the result's own table gives Delta chi^2 of +0.018 and -0.005, which is
+      'unmoved' as the order says.
+  ⌗ TWO THINGS THE RESULT STATES THAT THE ORDER DOES NOT CARRY FORWARD, AND ONE OF
+  THEM MATTERS.
+  (a) The result fences off the theta* PULL: 'the arm of record reads -11.7 sigma at
+      the point that was fitted to theta*, so the instrument's r_s/D_M is not the
+      definition that fit used', and 'an absolute theta* pull is not one of' the
+      robust statements.  The order repeats the 0.50 per cent, which IS robust, and
+      that is the right figure to carry.  A paper sentence must not use the pull.
+  (b) ⛔ The registration's second count-against is 'theta* cannot be met within 3
+      sigma at a point the spectrum also accepts'.  The result records +2.9 sigma and
+      writes 'this does not fire on the measures available' -- using, to clear a
+      registered threshold, the very quantity it has just said its own measure cannot
+      bear, and at 2.9 against 3.  Its own next sentence says the settling fit 'remains
+      to be done'.  ⇒ The honest state of that clause is UNDETERMINED, not 'does not
+      fire', and the result half-says so and then records the other.
+  ⌗ AND ONE CONSTRUCTIVE READING THE RESULT DOES NOT MAKE OF ITS OWN FIGURES.  Its ⒠
+  flags that n_s moved 1.015 -> 0.961, which invites the question whether the 1.60 to
+  1.002 improvement is bought by the tilt.  ITS OWN Ⓐ ANSWERS THAT: with no spectrum
+  fit at all, at the distances' point and the built-in n_s, the leaf-rate arm scores
+  196.48 against the CONTROL's own no-fit 214.06.  The improvement is in the distance
+  assignment, not in the tilt, and saying so would strengthen the result.
+  NEGATIVE WAS REACHABLE: a registration not preceding the run, a registered item
+  unreported, or a figure that did not reproduce.
+  => PASS   [t=7s]
+
+==============================================================================
+ARM 17 -- the pricing reproduces, and each rewrite is narrower than the analysis it came from
+==============================================================================
+  ✔ THE PRICING IS LOCATABLE AND IT REPRODUCES.  cc66's receipt carries it:
+      computations/beyond_the_wall/r7751_cc66_radiations_place_in_the_rate  ['PREDICTION.md', 'pricing.py', 'pricing_output.txt']
+      worst |Delta| over the BAO redshifts: 0.02115 per cent  (the order says at most 0.021)
+      dlnD_M(z*) on the leaf rate: -0.49836 per cent  (the half per cent, and cc66's own -0.498)
+      'the leaf rate is the only LOCAL lever': True
+      and the lever comparison is disclosed as POST-REGISTRATION, added because the
+      registered arm raised a question the registration did not: True
+  ⌗ So both of the order's new facts check out, the refit's in ARM 16 and this one
+  here, each read in the receipt that banks it rather than taken from the order.
+  ⛔ AND THE THREE REWRITES SAY SOMETHING NARROWER THAN THE ANALYSIS THEY CAME FROM.
+      cc66's reply says the datum selects a LENGTH: True
+      and that radiation is ONE way to supply it: True
+      its figure for that length: ['0.498'] per cent
+      and it says it re-worded no printed sentence: True
+      -- in its own words: 'the datum is not selecting the radiation term.  It is
+      selecting a length, and it is selecting it to half a per cent.  The radiation
+      term is one way to supply that half per cent ... the fit constrains D_M, not
+      Omega_r's role in the rate.  Anything that shortens the light-path distance by
+      about half a per cent at fixed r_s would do the same work.'
+      And its own pricing receipt is a statement about D_M at three redshifts, which
+      is the same point measured: a length, not a term in the rate.
+  Meanwhile P18 carries the TWO-ALTERNATIVE form: True
+      'Whether the construction requires radiation in the rate that accumulation is
+      built on, OR SUPPLIES THAT HALF PER CENT OF DISTANCE BY SOME OTHER REQUIREMENT,
+      is the question it has to answer from its own foundations.'
+  and each rewrite puts the question as radiation alone:
+      P15 site 6               asks only about radiation: True
+      P15 site 7               asks only about radiation: False
+      P15 site 7 neighbour     asks only about radiation: False
+      P6 acoustic episode      asks only about radiation: True
+  ⇒ SO THE CORPUS NOW SAYS TWO DIFFERENT THINGS IN TWO PLACES: P18 asks which of two
+  requirements supplies the half per cent, and P15 twice and P6 once ask whether
+  radiation belongs in the rate.  P18's is the form cc66's analysis supports and its
+  pricing measures; the narrower form is in the papers the rewrites touched.  One
+  clause each, taken from P18's own wording, closes the gap.
+  ⌗ And on the neighbour: 'in the one direction the construction as now built does
+  not reach' states a LIMIT of the present build rather than a verdict on the
+  construction, which is the framing the round restored.  It reads correctly.
+  NEGATIVE WAS REACHABLE: a pricing that did not reproduce; a cc66 reading that does
+  narrow to radiation; or a P18 narrowed too, in which case the corpus would be in one
+  state and the finding would be about that state instead.
+  => PASS   [t=7s]
 
 
 ==============================================================================
-ARMS RUN: 14  (registered: 14)
+ARMS RUN: 17  (registered: 14, plus 3 at r7753's amendment = 17)
    1  PASS  the rr and pp Einstein equations the proof prints are recomputed from eq:carter
    2  PASS  thm:pd's 'if and only if' is checked in both directions
    3  PASS  both Carter witnesses are witnesses, and the only-if witness's content is in its proof
@@ -441,6 +558,9 @@ ARMS RUN: 14  (registered: 14)
   12  PASS  cc66's two load-bearing claims, and the two directions radiation moves the distance
   13  PASS  E1's result on the four counts, with the materials checked against the registration
   14  PASS  every measure, cut and exclusion matched against the registration out of history
+  15  PASS  the three rewrites are in print as the order quotes them, verbatim
+  16  PASS  70's refit RESULT read against its own registration, out of git history
+  17  PASS  the pricing reproduces, and each rewrite is narrower than the analysis it came from
 
-14 PASS, 0 FAIL, in 6s
-ARM COUNT ASSERTED: 14 of 14 registered arms ran to their own end.
+17 PASS, 0 FAIL, in 7s
+ARM COUNT ASSERTED: 17 of 17 registered arms ran to their own end.

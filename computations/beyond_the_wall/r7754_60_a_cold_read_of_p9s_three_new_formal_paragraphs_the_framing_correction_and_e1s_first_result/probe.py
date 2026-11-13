@@ -1054,13 +1054,205 @@ arm(14, "every measure, cut and exclusion matched against the registration out o
     "  NEGATIVE WAS REACHABLE: nothing registered and unreported, and a hand-check that is",
     "  the registered one, would make this arm report no finding.")
 
+# ============== AMENDMENT, at r7753's order -- ARMS 15-17
+print("\n\n#########  AMENDMENT -- the three rewritten sentences, the refit, the pricing  #########")
+
+REFIT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7749_70_leafgeom_refit')
+P6 = os.path.join(ROOT, 'corpus', 'shadow_of_existence.tex')
+now6 = read(P6)
+now15b = read(P15)
+now18b = read(P18)
+FOR66 = read(os.path.join(ROOT, 'FOR_66.md'))
+
+# ---- ARM 15: the three rewrites, matched as exact strings
+QUOTES = [
+    ('P15 site 6', now15b,
+     "so the residual is not a fault in how the transfer implements the configuration---the "
+     "instrument is controlled against a known answer and converged---and what remains in "
+     "question is whether radiation belongs in the rate the projection's distance is built on."),
+    ('P15 site 7', now15b,
+     "on a configuration whose rates are derived but for one: the rate the cross-leaf "
+     "accumulation to last scattering is built on, which is this sector's open work"),
+    ('P15 site 7 neighbour', now15b,
+     "in the one direction the construction as now built does not reach"),
+    ('P6 acoustic episode', now6,
+     "so what the episode turns on is whether radiation belongs in the rate that distance is "
+     "built on, which is the cosmology's open work"),
+]
+qres = [(nm, ' '.join(q.split()) in ' '.join(t.split())) for nm, t, q in QUOTES]
+left15 = [(nm, s_) for nm, t in [("P15", now15b), ("P6", now6)]
+          for s_, _ in sweep(t, SETTLED, OPENQ, SUBJECT)]
+arm(15, "the three rewrites are in print as the order quotes them, verbatim",
+    all(v for _, v in qres) and not left15,
+    "  each quoted sentence matched as an EXACT string against the committed paper, on",
+    "  whitespace-normalised text, not paraphrased:",
+    *[f"      {nm:24s} {'in print verbatim' if v else 'NOT IN PRINT AS QUOTED'}"
+      for nm, v in qres],
+    f"  and r7752's settled-state predicate, run unchanged over both papers: "
+    f"{len(left15)} site(s) left",
+    *[f"      {nm}: {s_[:200]}" for nm, s_ in left15],
+    "  so the two sites this revision found in P15 are gone and P6 carries none.",
+    "  NEGATIVE WAS REACHABLE: a quoted sentence not in print as quoted, or a site left.")
+
+# ---- ARM 16: 70's refit RESULT against its own registration, out of history
+rp = git('log', '--format=%H %cI', '--', 'computations/beyond_the_wall/r7749_70_leafgeom_refit/PREDICTION.md').split('\n')[0].split()
+reg_sha, reg_t = rp[0], rp[1]
+run_t = git('log', '-1', '--format=%cI', '--diff-filter=A', '--',
+            'computations/beyond_the_wall/r7749_70_leafgeom_refit/figures.json').strip()
+rreg = git('show', f'{reg_sha}:computations/beyond_the_wall/r7749_70_leafgeom_refit/PREDICTION.md')
+rres = read(os.path.join(REFIT, 'RESULT.md'))
+REG_ITEMS = {
+    'A: the no-fit run at the distances point': ('As computed, at the distances', '196.4'),
+    'B: the linearised minimum on the banked grid': ('the linearised minimum', '185.07'),
+    'B: the verify run at that minimum, scored on the run': ('The verify run', '186.85'),
+    'B: the re-centring if |model - run| > 1': ('one further grid step', '0.62'),
+    'C: theta*/ell_A at both points': ('\u2113_A', '301.5'),
+    'C: the DESI DR2 BAO distances at both points': ('DESI DR2 BAO', '10.65'),
+    'K1 the control reproduces its banked figures': ('K1', '214.06'),
+    'K2 LEAFGEOM=0 reproduces the arm of record': ('K2', '502.09'),
+    'K3 the grid base re-runs bit-identically': ('K3', 'identical'),
+    'K4 the one-clock self-check': ('K4', 'ONECLOCK'),
+    'E1 the refitted multiple <= 1.15': ('E1', '1.002'),
+    'E2 the as-computed multiple below 2.35': ('E2', '0.918'),
+    'E3 theta* moves by more than 1 sigma': ('E3', '0.50'),
+    'E4 BAO chi^2 changes by < 1': ('E4', '0.018'),
+}
+# the registration also PRICES the work -- 2 runs, up to 11 if one further grid is needed,
+# under 1 core-h.  That is a registered statement and the result is silent on what was
+# spent, which is reported below as a finding rather than used to fail the arm: the arm's
+# verdict turns on whether the registration precedes the run, whether its MEASURES are
+# reported, and whether the figures reproduce.
+price_reg = 'under 1 core-h' in rreg
+price_res = bool(re.search(r'core-h|core hour|runs in all', rres))
+rowchk = [(k, reg_needle in rreg, res_needle in rres)
+          for k, (reg_needle, res_needle) in REG_ITEMS.items()]
+reg_missing = [k for k, inreg, inres in rowchk if inreg and not inres]
+# the order's three figures, recomputed from the result's own table
+mult = round(186.85/186.51, 4)
+dm_shift = round((13941.6 - 14011.5)/14011.5*100, 4)
+order_ok = abs(mult - 1.002) < 0.0005 and abs(abs(dm_shift) - 0.50) < 0.01
+arm(16, "70's refit RESULT read against its own registration, out of git history",
+    reg_t < run_t and not reg_missing and order_ok,
+    f"  the registration read at {reg_sha[:9]}, committed {reg_t}; the first run output",
+    f"  committed {run_t}.",
+    f"      the registration precedes the run: {reg_t < run_t}",
+    "  registered item against reported:",
+    *[f"      {'reported' if inres else 'NOT REPORTED':<12} {k}" for k, inreg, inres in rowchk if inreg],
+    f"  registered and not reported, among the MEASURES: "
+    f"{reg_missing if reg_missing else 'none'}",
+    f"  ⌗ and one registered statement that is not a measure: the PRICE.  The registration",
+    f"  prices the work at 2 runs, up to 11 if one further grid is needed, under 1 core-h"
+    f" ({price_reg}); the result took the re-centring, so it used the ceiling, and says"
+    f" nothing about what was spent ({price_res}).  One line, and the budget rule is why.",
+    "",
+    "  THE ORDER'S THREE FIGURES, recomputed from the result's own tables rather than",
+    "  taken from the order:",
+    f"      refitted multiple 186.85/186.51 = {mult}   (the order says 1.002)",
+    f"      the leaf-rate D_M against the stacking-rate one at the distances' point:",
+    f"      (13941.6 - 14011.5)/14011.5 = {dm_shift} per cent, so theta* is up by that",
+    f"      much  (the order says 0.50 per cent, and cc66's own figure is -0.498)",
+    f"      BAO: the result's own table gives Delta chi^2 of +0.018 and -0.005, which is",
+    f"      'unmoved' as the order says.",
+    "",
+    "  ⌗ TWO THINGS THE RESULT STATES THAT THE ORDER DOES NOT CARRY FORWARD, AND ONE OF",
+    "  THEM MATTERS.",
+    "  (a) The result fences off the theta* PULL: 'the arm of record reads -11.7 sigma at",
+    "      the point that was fitted to theta*, so the instrument's r_s/D_M is not the",
+    "      definition that fit used', and 'an absolute theta* pull is not one of' the",
+    "      robust statements.  The order repeats the 0.50 per cent, which IS robust, and",
+    "      that is the right figure to carry.  A paper sentence must not use the pull.",
+    "  (b) ⛔ The registration's second count-against is 'theta* cannot be met within 3",
+    "      sigma at a point the spectrum also accepts'.  The result records +2.9 sigma and",
+    "      writes 'this does not fire on the measures available' -- using, to clear a",
+    "      registered threshold, the very quantity it has just said its own measure cannot",
+    "      bear, and at 2.9 against 3.  Its own next sentence says the settling fit 'remains",
+    "      to be done'.  ⇒ The honest state of that clause is UNDETERMINED, not 'does not",
+    "      fire', and the result half-says so and then records the other.",
+    "",
+    "  ⌗ AND ONE CONSTRUCTIVE READING THE RESULT DOES NOT MAKE OF ITS OWN FIGURES.  Its ⒠",
+    "  flags that n_s moved 1.015 -> 0.961, which invites the question whether the 1.60 to",
+    "  1.002 improvement is bought by the tilt.  ITS OWN Ⓐ ANSWERS THAT: with no spectrum",
+    "  fit at all, at the distances' point and the built-in n_s, the leaf-rate arm scores",
+    "  196.48 against the CONTROL's own no-fit 214.06.  The improvement is in the distance",
+    "  assignment, not in the tilt, and saying so would strengthen the result.",
+    "  NEGATIVE WAS REACHABLE: a registration not preceding the run, a registered item",
+    "  unreported, or a figure that did not reproduce.")
+
+# ---- ARM 17: the pricing, and each rewrite against the facts
+PRICE = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                     'r7751_cc66_radiations_place_in_the_rate')
+price_files = sorted(os.listdir(PRICE)) if os.path.isdir(PRICE) else []
+pout = read(os.path.join(PRICE, 'pricing_output.txt')) if price_files else ''
+preg = read(os.path.join(PRICE, 'PREDICTION.md')) if price_files else ''
+bao_worst = re.search(r'worst \|Delta\| over the BAO redshifts:\s*([\d.]+)\s*%', pout)
+dm_star = re.search(r'the leaf rate \(Om_r on\)\s+(-?[\d.]+)%', pout)
+only_local = 'the leaf rate is the only LOCAL lever' in pout
+post_reg = 'POST-REGISTRATION' in pout
+bao_ok = bao_worst and abs(float(bao_worst.group(1)) - 0.021) < 0.0006
+dm_ok = dm_star and abs(abs(float(dm_star.group(1))) - 0.50) < 0.01
+cc66_sec = FOR66[FOR66.index('`r7749+cc66`'):][:9000] if '`r7749+cc66`' in FOR66 else ''
+cc66_length = 'It is selecting a length' in cc66_sec
+cc66_one_way = 'is **one**' in cc66_sec
+cc66_no_draft = 'I have not re-pointed or re-worded any printed sentence' in cc66_sec
+cc66_pct = sorted(set(re.findall(r'0\.49\d', cc66_sec)))
+P18_BOTH = ("Whether the construction requires radiation in the rate that accumulation is "
+            "built on, or supplies that half per cent of distance by some other requirement")
+p18_both = ' '.join(P18_BOTH.split()) in ' '.join(now18b.split())
+narrow = [(nm, 'radiation belongs in the rate' in ' '.join(q.split())) for nm, t, q in QUOTES]
+arm(17, "the pricing reproduces, and each rewrite is narrower than the analysis it came from",
+    bool(bao_ok) and bool(dm_ok) and only_local and p18_both and cc66_length and cc66_one_way,
+    "  ✔ THE PRICING IS LOCATABLE AND IT REPRODUCES.  cc66's receipt carries it:",
+    f"      {os.path.relpath(PRICE, ROOT)}  {price_files}",
+    f"      worst |Delta| over the BAO redshifts: {bao_worst.group(1) if bao_worst else '-'} "
+    f"per cent  (the order says at most 0.021)",
+    f"      dlnD_M(z*) on the leaf rate: {dm_star.group(1) if dm_star else '-'} per cent  "
+    f"(the half per cent, and cc66's own -0.498)",
+    f"      'the leaf rate is the only LOCAL lever': {only_local}",
+    f"      and the lever comparison is disclosed as POST-REGISTRATION, added because the",
+    f"      registered arm raised a question the registration did not: {post_reg}",
+    "  ⌗ So both of the order's new facts check out, the refit's in ARM 16 and this one",
+    "  here, each read in the receipt that banks it rather than taken from the order.",
+    "",
+    "  ⛔ AND THE THREE REWRITES SAY SOMETHING NARROWER THAN THE ANALYSIS THEY CAME FROM.",
+    f"      cc66's reply says the datum selects a LENGTH: {cc66_length}",
+    f"      and that radiation is ONE way to supply it: {cc66_one_way}",
+    f"      its figure for that length: {cc66_pct} per cent",
+    f"      and it says it re-worded no printed sentence: {cc66_no_draft}",
+    "      -- in its own words: 'the datum is not selecting the radiation term.  It is",
+    "      selecting a length, and it is selecting it to half a per cent.  The radiation",
+    "      term is one way to supply that half per cent ... the fit constrains D_M, not",
+    "      Omega_r's role in the rate.  Anything that shortens the light-path distance by",
+    "      about half a per cent at fixed r_s would do the same work.'",
+    "      And its own pricing receipt is a statement about D_M at three redshifts, which",
+    "      is the same point measured: a length, not a term in the rate.",
+    "",
+    f"  Meanwhile P18 carries the TWO-ALTERNATIVE form: {p18_both}",
+    "      'Whether the construction requires radiation in the rate that accumulation is",
+    "      built on, OR SUPPLIES THAT HALF PER CENT OF DISTANCE BY SOME OTHER REQUIREMENT,",
+    "      is the question it has to answer from its own foundations.'",
+    "  and each rewrite puts the question as radiation alone:",
+    *[f"      {nm:24s} asks only about radiation: {v}" for nm, v in narrow],
+    "",
+    "  ⇒ SO THE CORPUS NOW SAYS TWO DIFFERENT THINGS IN TWO PLACES: P18 asks which of two",
+    "  requirements supplies the half per cent, and P15 twice and P6 once ask whether",
+    "  radiation belongs in the rate.  P18's is the form cc66's analysis supports and its",
+    "  pricing measures; the narrower form is in the papers the rewrites touched.  One",
+    "  clause each, taken from P18's own wording, closes the gap.",
+    "",
+    "  ⌗ And on the neighbour: 'in the one direction the construction as now built does",
+    "  not reach' states a LIMIT of the present build rather than a verdict on the",
+    "  construction, which is the framing the round restored.  It reads correctly.",
+    "  NEGATIVE WAS REACHABLE: a pricing that did not reproduce; a cc66 reading that does",
+    "  narrow to radiation; or a P18 narrowed too, in which case the corpus would be in one",
+    "  state and the finding would be about that state instead.")
+
 # ----------------------------------------------------------------- the ledger
 print(f"\n\n{'='*78}")
-print(f"ARMS RUN: {len(ARMS)}  (registered: 14)")
+print(f"ARMS RUN: {len(ARMS)}  (registered: 14, plus 3 at r7753's amendment = 17)")
 for n, title, ok in ARMS:
     print(f"  {n:>2}  {'PASS' if ok else 'FAIL'}  {title}")
 npass = sum(1 for _, _, ok in ARMS if ok)
 print(f"\n{npass} PASS, {len(ARMS)-npass} FAIL, in {time.time()-T0:.0f}s")
-assert len(ARMS) == 14, (f"ARM COUNT: {len(ARMS)} against 14 registered -- a probe that "
-                         f"dies after its first findings prints a result that reads finished")
-print("ARM COUNT ASSERTED: 14 of 14 registered arms ran to their own end.")
+assert len(ARMS) == 17, (f"ARM COUNT: {len(ARMS)} against 17 registered -- a probe that dies "
+                         f"after its first findings prints a result that reads finished")
+print("ARM COUNT ASSERTED: 17 of 17 registered arms ran to their own end.")

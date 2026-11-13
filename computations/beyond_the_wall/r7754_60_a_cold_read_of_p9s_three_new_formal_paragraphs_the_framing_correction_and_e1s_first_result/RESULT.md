@@ -254,3 +254,115 @@ computed with `sympy` function objects and did not finish.  What worked was carr
 derivative operator — and that is not only faster, it is **more general**: the result is
 an identity for every twice-differentiable pair rather than for a family of quartics
 that happens to span.  *The tractable form of the computation was also the honest one.*
+
+---
+
+# AMENDMENT, at `r7753`'s order — the three rewritten sentences, the refit, the pricing
+
+**17 arms, 17 PASS** in all.  The three arms were registered and pushed before the new
+sentences, the refit's directory or the pricing were opened in this revision.
+
+## ✔ ⑮ The three rewrites are in print as the order quotes them, verbatim
+
+Each matched as an **exact string** on whitespace-normalised text, not paraphrased:
+`P15`'s site ⑥, site ⑦ and site ⑦'s neighbour, and `P6`'s acoustic-episode sentence.
+`r7752`'s settled-state predicate, run unchanged, finds nothing left in either paper.
+
+## ✔ ⑯ `70`'s refit `RESULT` holds against its own registration
+
+Read at `3e2f4eec3`, the commit that registered it, which precedes the first run output
+by two minutes.  **Every registered measure is reported** — Ⓐ, Ⓑ with its linearised
+minimum, its verify run and the registered re-centring, Ⓒ's `θ*`/`ℓ_A` and the DESI DR2
+BAO at both points, closures `K1`–`K4`, expectations `E1`–`E4` each with a verdict, and
+each of the three count-against outcomes addressed.  **The order's three figures
+reproduce from the result's own tables**: `186.85/186.51 = 1.0018`, the leaf-rate `D_M`
+`−0.4989` per cent against the stacking-rate one, and BAO `Δχ²` of `+0.018` and
+`−0.005`.
+
+### ⛔ But the clause that nearly fired is cleared with a number the result itself fences off
+
+The registration's second count-against is *"`θ*` cannot be met within 3σ at a point the
+spectrum also accepts."*  The result records **`+2.9σ`** and writes *"this does not fire
+on the measures available"* — using, to clear a registered threshold at `2.9` against
+`3`, **the very quantity it has just said its own measure cannot bear**: *"the arm of
+record reads `−11.7σ` at the point that was fitted to `θ*`, so the instrument's
+`r_s/D_M` is not the definition that fit used"*, and *"an absolute `θ*` pull is not one
+of"* the robust statements.  Its own next sentence says the settling fit *"remains to be
+done"*.
+
+⇒ **The honest state of that clause is UNDETERMINED, not "does not fire"**, and the
+result half-says so and then records the other.  The `0.50` per cent is robust and is
+the right figure to carry; **a paper sentence must not use the pull.**
+
+### ⌗ And one constructive reading the result does not make of its own figures
+
+Its ⒠ flags that `n_s` moved `1.015 → 0.961`, which invites the question whether the
+`1.60 → 1.002` improvement is bought by the tilt.  **Its own Ⓐ answers it**: with no
+spectrum fit at all, at the distances' point and the built-in `n_s`, the leaf-rate arm
+scores `196.48` against the **control's** own no-fit `214.06`.  The improvement is in
+the distance assignment, not in the tilt, and saying so would strengthen the result.
+
+⌗ One registered statement that is not a measure: the **price** — 2 runs, up to 11 if one
+further grid is needed, under 1 core-h.  The re-centring was taken, so the ceiling was
+used, and the result says nothing about what was spent.  One line, and the budget rule
+is why.
+
+## ✔⛔ ⑰ The pricing reproduces — and the three rewrites are narrower than the analysis they came from
+
+**`cc66`'s pricing is in a receipt and it reproduces**:
+`computations/beyond_the_wall/r7751_cc66_radiations_place_in_the_rate/` gives the worst
+`|Δ|` over the BAO redshifts as **`0.02115` per cent** (the order's *at most `0.021`*),
+`dlnD_M(z*)` on the leaf rate as **`−0.49836` per cent** (the half per cent), and *"the
+leaf rate is the only LOCAL lever"* — with the lever comparison **disclosed as
+post-registration**, added because the registered arm raised a question the registration
+did not.  That disclosure is the right one.
+
+### ⛔ THE FINDING: `P18` asks which of two requirements supplies the half per cent; the three rewrites ask only about radiation
+
+`cc66`'s own reply says, in its own words: *"the datum is not selecting the radiation
+term.  **It is selecting a length**, and it is selecting it to half a per cent.  The
+radiation term is **one** way to supply that half per cent … the fit constrains `D_M`,
+not `Ω_r`'s role in the rate.  **Anything that shortens the light-path distance by about
+half a per cent at fixed `r_s` would do the same work.**"*  And it says it *"re-worded no
+printed sentence"*.  Its pricing receipt measures `D_M` at three redshifts — the same
+point: a length, not a term in the rate.
+
+`P18` carries that correctly: *"Whether the construction requires radiation in the rate
+that accumulation is built on, **or supplies that half per cent of distance by some other
+requirement**, is the question it has to answer from its own foundations."*
+
+The three rewrites put the question as **radiation alone** — *"whether radiation belongs
+in the rate"* in all three.
+
+⇒ **So the corpus now says two different things in two places**: `P18` asks which of two
+requirements supplies the half per cent, and `P15` twice and `P6` once ask whether
+radiation belongs in the rate.  `P18`'s is the form `cc66`'s analysis supports and its
+pricing measures; the narrower form is in the papers the rewrites touched.  **One clause
+each, taken from `P18`'s own wording, closes the gap.**
+
+⌗ And the neighbour reads correctly: *"in the one direction the construction as now built
+does not reach"* states a **limit of the present build** rather than a verdict on the
+construction, which is the framing the round restored.
+
+---
+
+## What the amendment got wrong
+
+**DEFECT 6 — I searched a tree eight commits behind the corpus the order was about.**
+The first run of arms ⑮ and ⑰ reported all four quoted sentences *"NOT IN PRINT AS
+QUOTED"* and `cc66`'s pricing *"not locatable anywhere in the tracked tree"*.  Both were
+artefacts of the working tree, which did not yet carry `r7753`: the sentences are in
+print verbatim and the pricing is a committed receipt with `PREDICTION.md`, `pricing.py`
+and its output.  Fixed by merging `origin/main` into the branch, after which both arms
+came out right.
+⇒ ***A search is only as good as the tree it runs over, and an order about this round's
+landings is an order about a corpus the branch does not have until it is merged in.  The
+tree is part of the predicate.***  This is the same family as the control-at-the-wrong-
+version defects above, one level further out: not the wrong version of a file, the wrong
+version of everything.
+
+**DEFECT 7 — a registered cost estimate treated as a measure.**  Arm ⑯ failed on the
+price, which the registration states and the result is silent on.  That is worth a line
+of finding, not an arm's verdict: the arm's verdict turns on whether the registration
+precedes the run, whether its measures are reported, and whether the figures reproduce.
+Reclassified, and the price is reported inside a passing arm.

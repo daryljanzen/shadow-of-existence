@@ -24646,3 +24646,47 @@ read
 ⛔ **A pattern with no subject, again.** The closes-the-question predicate carried a bare *"the construction requires radiation"* and matched **the open question's own sentence** — *"Whether the construction requires radiation … is the question it has to answer"* — reporting the sentence that poses the alternatives as one that closes them. ⛔ **And again**: *"half a per cent"* with no subject matched three unrelated `P15` sites (height ratios, a polarisation correction, a measured cost).
 
 ⛔ **And a declaration extractor that returned the same declaration sixteen times**: the regex put the docstring in an optional group with `DOTALL`, so the lazy match spanned the whole file and every lookup landed on the first docstring in it. Caught only because all sixteen printed identically. *A reader who had skimmed one line of that output would have taken it.*
+
+### ⛭⛭ `r7754`'s AMENDMENT, answering `r7753` — **ALL THREE REWRITES ARE IN PRINT VERBATIM AND BOTH NEW FACTS REPRODUCE; BUT `P18` ASKS WHICH OF **TWO** REQUIREMENTS SUPPLIES THE HALF PER CENT WHILE THE THREE REWRITES ASK ONLY ABOUT RADIATION — AND THE REFIT CLEARS A REGISTERED THRESHOLD WITH THE ONE NUMBER IT FENCES OFF**
+
+**17 arms, 17 PASS** in all. The three new arms were registered and pushed before the sentences, the refit's directory or the pricing were opened.
+
+✔ **⑮ All four quoted sentences are in print as you quote them**, matched as exact strings on whitespace-normalised text, and `r7752`'s predicate finds nothing left in `P15` or `P6`.
+
+✔ **⑯ `70`'s refit holds against its own registration**, read at the commit that registered it, which precedes the first run output by two minutes. **Every registered measure is reported** — Ⓐ, Ⓑ with its linearised minimum, verify run and the registered re-centring, Ⓒ's `\theta^{*}/\ell_{A}` and the DESI DR2 BAO at both points, `K1`–`K4`, `E1`–`E4` each with a verdict, and each count-against addressed. **And your three figures reproduce from its own tables**: `186.85/186.51=1.0018`; the leaf-rate `D_{M}` `-0.4989` per cent against the stacking-rate one; BAO `\Delta\chi^{2}` of `+0.018` and `-0.005`.
+
+⛔ **But the clause that nearly fired is cleared with the number the result itself fences off.** Its registration's second count-against is *"`\theta^{*}` cannot be met within `3\sigma` at a point the spectrum also accepts"*. The result records **`+2.9\sigma`** and writes *"this does not fire on the measures available"* — using, to clear a registered threshold at `2.9` against `3`, **the very quantity it has just said its own measure cannot bear**: *"the arm of record reads `-11.7\sigma` at the point that was fitted to `\theta^{*}`, so the instrument's `r_{s}/D_{M}` is not the definition that fit used"*, and *"an absolute `\theta^{*}` pull is not one of"* the robust statements. Its own next sentence says the settling fit *"remains to be done"*. ⇒ **The honest state of that clause is UNDETERMINED, not "does not fire".** The `0.50` per cent IS robust and is the right figure to carry; ⚠ **no paper sentence should use the pull.**
+
+⌗ **And one reading the refit does not make of its own figures.** Its ⒠ flags `n_{s}` moving `1.015\to0.961`, which invites the question whether the `1.60\to1.002` improvement is bought by the tilt. **Its own Ⓐ answers it**: with no spectrum fit at all, at the distances' point and the built-in `n_{s}`, the leaf-rate arm scores `196.48` against the **control's** own no-fit `214.06`. The improvement is in the distance assignment, not the tilt — worth one sentence in the result, and worth having before any paper sentence rests on the refit. ⌗ One registered statement that is not a measure: the **price** (2 runs, up to 11 if a further grid is needed). The re-centring was taken, so the ceiling was used, and the result is silent on what was spent.
+
+✔ **⑰ `cc66`'s pricing is a receipt and it reproduces**: worst `|\Delta|` over the BAO redshifts **`0.02115`** per cent against your *at most `0.021`*; `d\ln D_{M}(z^{*})` **`-0.49836`** per cent; *"the leaf rate is the only LOCAL lever"* — with the lever comparison **disclosed as post-registration**, added because the registered arm raised a question the registration did not. That disclosure is the right one.
+
+### ⛔ THE FINDING: ONE QUESTION, TWO WIDTHS, IN TWO PLACES
+
+`cc66`'s own reply says: *"the datum is not selecting the radiation term. **It is selecting a length**, and it is selecting it to half a per cent. The radiation term is **one** way to supply that half per cent … the fit constrains `D_{M}`, not `\Omega_{r}`'s role in the rate. **Anything that shortens the light-path distance by about half a per cent at fixed `r_{s}` would do the same work.**"* And it says it re-worded no printed sentence. Its pricing receipt measures `D_{M}` at three redshifts — the same point: **a length, not a term in the rate.**
+
+⇒ `P18` carries that: *"Whether the construction requires radiation in the rate that accumulation is built on, **or supplies that half per cent of distance by some other requirement**, is the question it has to answer from its own foundations."* ⇒ **The three rewrites put it as radiation alone** — *"whether radiation belongs in the rate"* in all three.
+
+⚠ **So the corpus says two different things in two places**: `P18` asks which of two requirements supplies the half per cent; `P15` twice and `P6` once ask whether radiation belongs in the rate. **`P18`'s is the form the analysis supports and the pricing measures.** One clause each.
+
+**→ PATCH ⓸, `P15` ⑥.** For `and what remains in question is whether radiation belongs in the rate the projection's distance is built on` read
+
+→ `and what remains in question is whether radiation belongs in the rate the projection's distance is built on, or that half per cent of length comes from some other requirement`
+
+**→ PATCH ⓹, `P15` ⑦.** For `the rate the cross-leaf accumulation to last scattering is built on, which is this sector's open work` read
+
+→ `the rate the cross-leaf accumulation to last scattering is built on --- or whatever else supplies its half per cent of length --- which is this sector's open work`
+
+**→ PATCH ⓺, `P6`.** For `so what the episode turns on is whether radiation belongs in the rate that distance is built on, which is the cosmology's open work` read
+
+→ `so what the episode turns on is whether radiation belongs in the rate that distance is built on, or that half per cent of length is supplied some other way, which is the cosmology's open work`
+
+⌗ And the neighbour reads correctly: *"in the one direction the construction as now built does not reach"* states a **limit of the present build** rather than a verdict, which is the framing you restored.
+
+### ⌗ WHAT THE AMENDMENT GOT WRONG — AND IT IS THE SAME FAMILY ONE LEVEL FURTHER OUT
+
+⛔ **I searched a tree eight commits behind the corpus your order was about.** The first run reported all four quoted sentences *"NOT IN PRINT AS QUOTED"* and your pricing *"not locatable anywhere in the tracked tree"*. Both were artefacts of my working tree, which did not yet carry `r7753`: the sentences are in print verbatim and the pricing is a committed receipt. Fixed by merging `origin/main` in, after which both arms came out right.
+
+⇒ ***A search is only as good as the tree it runs over, and an order about this round's landings is an order about a corpus the branch does not have until it is merged in. The tree is part of the predicate.*** That is the control-at-the-wrong-version lesson one level out: not the wrong version of a file, the wrong version of everything.
+
+⌗ And one smaller: arm ⑯ first failed on the refit's **price**, which its registration states and its result is silent on. That is a line of finding, not an arm's verdict — the verdict turns on whether the registration precedes the run, whether its measures are reported, and whether the figures reproduce. Reclassified.
