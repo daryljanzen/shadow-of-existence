@@ -1,0 +1,69 @@
+r7768 (60) -- VALIDATION
+
+Range validated: 165e3a534^..HEAD -- the registration, the result-and-reply commit, and the two
+commits that followed from what the validation itself found (the receipt-versus-paper contradiction,
+and the routing of a base-branch gate failure to the seat that owns the file).
+Files changed: FOR_66_FROM_60.md and this receipt's own five files.  No paper, no receipt, no
+generated view, no register, no other seat's work, no registration; no INDEX row was minted.
+** In particular `computations/beyond_the_wall/r7761_cc66_...` is NOT touched: the one-line fix its
+file needs is ROUTED in the reply, per the standing rule that another seat's receipt is never
+edited. **
+Every comparison is by SORTED DIFF of the receipt lists, never by matching counts.
+
+1. SCOPES   reads 0, tolerance 14, suite 70.
+   reads and tolerance are SET-IDENTICAL to r7766's.  The suite scope is r7766's 69 plus ONE --
+   cc66's own `P15_r_labels_the_leaf_so_radiation_bends_the_cut_in_epoch_and_its_pressure_work_gives
+   _the_leaf_rate.py`, which the merge of r7763 brought in and which the scope tool added on this
+   range's paths.  ⌗ THAT ADDITION IS WHY ARM 6's STRONGEST ROW EXISTS: the receipt ran here, its
+   head line was read, and it names the very expression P15's sec:scope still computes with as
+   SUPERSEDED.  A scope widening produced a finding rather than noise.
+   The reads scope is EMPTY, so the runner-read sweep has nothing to measure: 0 measured, not 0
+   assumed.
+
+2. FAST JOB (NODE=60 bash scripts/run_fast_job.sh)
+   10 generators, 133 gates, plus the hollow-assertion lint.  RED, naming exactly FIVE:
+     check_branches  check_pdf_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+   the five structural shallow-clone reds and NOTHING ELSE.  check_frontier_current, which r7764
+   routed to 69, is GONE: that seat wrote the PO-87 runway forward at r7763.
+   ** AND CI AGREES: the `fast` job on this branch's head 165e3a534 came back GREEN on PR #771 **
+   -- the five structural reds are artefacts of the shallow clone and CI has the full history.
+
+3. THE SUITE (--from <suite scope> --jobs 4 --timeout 600)
+   70 receipts, 54 pass, 16 fail, 0 over timeout, 450s wall.  The sixteen are the established
+   fifteen plus L_probability/S1, compared as a SET and not by count.
+   ** S1 IS THE BASE BRANCH'S AND NOT THIS RANGE'S, ESTABLISHED RATHER THAN ASSERTED: ** run
+   against origin/main's own tree in a detached worktree, S1 FAILS there too, naming cc66's
+   `r7761_cc66_the_shift_and_the_two_levels/shift_and_levels.py`, which carries z_acc's +-0.0467
+   without the input declaration the gate requires.  The gate is right; the file is not mine to
+   edit; the one-line patch is routed in FOR_66_FROM_60.md.
+   ⌗ The same gate fired on THIS seat's own probe at r7766 for the same reason, and that one was
+   fixed in the file.  Same gate, two seats, one revision apart.
+
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP (tA; tB --threads 4; tC --threads 2 --coretype Prescott,
+   each --from the 14-receipt tolerance scope, then --compare)
+   Each probed 14 of 14 -- none NEVER PROBED.
+     A vs B:  0 flagged;  0 at the precision floor;  8 not measured
+     A vs C:  0 flagged;  0 at the precision floor;  8 not measured
+   The VERDICT line on both is "NOT A SWEEP -- no site flagged, but a receipt was not measured on
+   both builds": the BITFIELD's 2 with 1 clear, the normal reading.  The eight are the same in both
+   comparisons by sorted diff of full paths, and they are the established seven -- L255/E1,
+   L259/D1, S5, S6, S8, C71, C79 -- PLUS S1, which is item 3's base-branch failure: a receipt that
+   exits 1 on both builds cannot be measured on either.  ** EIGHT AND NOT SEVEN IS REPORTED AS THE
+   CHANGE IT IS, with its cause named, rather than smoothed to the familiar number. **
+
+5. NOT RUN, AND WHY
+   * the runner-read sweep: nothing to measure (reads scope empty);
+   * the Lean build: no toolchain in this container, which arms 8 and 9 state in terms;
+   * no long job was re-run for reassurance.  Each job ran once on this tree; the probe itself was
+     re-run twice, on trees that had actually changed, after two of its own arms were found wrong.
+
+6. WHAT THE PROBE'S OWN ARMS CAUGHT IN THIS REVISION, BEFORE THE RESULT WAS WRITTEN
+   * the horizon-root finder used an ABSOLUTE imaginary-part tolerance, so at the Nariai parameter
+     -- where the two horizons are a genuine DOUBLE root, returned by np.roots as a conjugate pair
+     with imaginary parts of order sqrt(eps)*r -- it reported ZERO positive horizons where the truth
+     is ONE.  Fixed with a relative tolerance and explicit near-root merging.
+   * the mass-function test asked whether 'M' appeared in the metric's PRINTED form, which it does,
+     inside the word 'Matrix', so the arm reported a mass function present in a metric that has
+     none.  Fixed by testing the metric's free symbols.
+   Both are recorded in the RESULT rather than quietly repaired.
