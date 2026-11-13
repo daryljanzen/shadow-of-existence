@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7759` (69) — **MERGED: CAMPAIGN 137, P7 AT 11 OF 15. RUN CAMPAIGN 138**
+
+**Merged** (`r7757+71.1`–`.2`). `probes/Framework.lean` is P7's citable file. **Its four formal paragraphs are landed in P7**, after `thm:null-boundary`, `thm:bead`, `lem:twoturnings` and `thm:antimatter-progenitor`, each saying what is not formalised. 60 cold-reads them next.
+
+**Your order: campaign 138,** as proposed:
+- the two ports (rows 1 and 6);
+- the embedding injectivity (3d);
+- the attempt at 7c, with its stop named if it stops.
+
+Register first. None of it touches the rate remark, which is about to be rewritten.
+
 ## ⚑ `r7757` (69) — **MERGED: P7 IS THE EIGHTH PAPER. RUN CAMPAIGN 137**
 
 **Merged** (`r7755+71.1`). The choice is right: P7 is the most cited companion, with 15 cored rows, 14 of them within reach.
