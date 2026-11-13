@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-02",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: FY2027 Med-Surg Agency-to-Permanent Memo\n\n**Overall:** The memo is clear, well organised, and honest about the FY2027 cost increase and the 5% target. Most of the arithmetic checks out against the brief. The main weaknesses are that the ramp and the FY2028 projection assume zero attrition, which overstates both July 1 staffing and FY2028 savings. The vendor recommendation also rests on a thin margin.\n\n## What checks out\n\n- **Orientation cost:** $128,000 × 12/52 ≈ $29,500, plus the $15,000 bonus, gives about $44,500. Payback is about 7.4 months.\n- **Blended turnover:** 0.6 × 27% + 0.4 × 14% = 21.8%.\n- **Agency-only FY2027:** 48 FTEs for six months plus 70 for six months = $11.8M. Run rate is $14.0M, or $11.1M and $13.2M with the 6% discount.\n- **Ramp table:** 6, 24, and 54 on the floor, and agency needs of 42, 46, and 16, are consistent with monthly cohorts and a three-month orientation.\n- **Permanent salaries:** 468 RN-months × $10,667 ≈ $5.0M. Bonuses: 72 × $15,000 ≈ $1.1M.\n- **Agency cost:** 438 FTE-months needed, plus 24 unused committed FTE-months in Q4, at the discounted rate ≈ $7.24M. The Q4 waste is about $0.38M, and a 6% discount on all volume saves about $0.44M.\n- **Steady state:** 70 × $128,000 ≈ $9.0M. Replacement hiring: 15.4 departures × $44,500 ≈ $0.7M.\n\n## Substantive issues\n\n1. **The ramp ignores attrition.** About 22% of hires leave in their first year, yet the table assumes every hire stays. Some 2027 hires will leave before December, and possibly before July. The real July 1 count is likely below 24, so agency need is likely above 46. The memo should show an attrition-adjusted line, or at least state that the table assumes no departures.\n\n2. **72 hires do not reach 70 permanent RNs.** At 22% turnover, 72 hires net out to roughly 56–60. The Oct–Dec 2027 cohorts also don't reach the floor until Q1 2028. So FY2028 is not yet steady state: hiring must continue, and agency spend early in the year will exceed $1.2M. This means:\n   - The FY2028 savings of $2.3–3.1M are overstated for FY2028 itself.\n   - The claim that the plan \"recovers the FY2027 investment during FY2028\" is at risk.\n   - The memo should either say that hiring continues into FY2028 or relabel the table as \"steady state (FY2029).\"\n\n3. **The July 1 count depends on cohort start dates.** The April cohort only finishes by July 1 if it starts at the very beginning of April. If cohorts start mid-month, the July 1 count drops to 18. A January start also assumes recruiting begins before the budget is finalised. The memo should state both assumptions.\n\n4. **The vendor recommendation is marginal and conditional.**\n   - The net gain is about $60K, and only if the discount applies to all volume.\n   - If the discount covers only the 30 committed FTEs (30 × $200,000 × 6% = $0.36M), the deal loses money.\n   - The deal also gives up 30-day cancellation flexibility, which is valuable if hiring goes well.\n   - The memo doesn't say when the 12 months start. A term running into FY2028, when about 6 FTEs are needed, would be costly.\n\n   The recommendation should be made conditional on confirming the discount scope and a Jan–Dec term. The memo should also say plainly that the case rests on supply security rather than savings.\n\n5. **Bury-the-lede on agency cost.** The ~$7.2M agency line silently includes the $0.38M unused Q4 commitment. Footnote this so the CFO can see it.\n\n## Smaller points\n\n- **Per-departure loss is slightly overstated.** Nurses who leave within six months repay the bonus, so their loss is about $29,500, not $44,500. This makes the memo conservative, but it also understates the value of the proposed 12-month clawback.\n- **Clawback extension:** The memo routes this to HR and legal, but bonus terms may be bargained with the union. Add the union to the review.\n- **Missing argument:** Every hospital in the state faces the same 1:5 ratio law on July 1. Agency supply is likely to tighten and rates to rise. This is the strongest risk against the agency-only alternative, and the memo doesn't mention it.\n- **Decision line:** State the dollar ask, for example \"$6.1M in permanent labor and bonuses; net +$1.5–2.2M vs. agency-only.\"\n- **Steady-state double count:** The $9.0M assumes all 70 positions are filled, while the $1.2M covers vacancies. Paying both slightly overstates cost. This is conservative but worth a note.\n\n## Formatting\n\n- The memo ends with an empty `##` heading. Delete it, or add the missing section (perhaps a recommendation summary or next steps).\n- Length is around the top of the 450–600-word target with tables. Trimming the vendor section would make room for the attrition caveat.\n\n## Suggested priority fixes\n\n1. Add attrition to the ramp and to the July 1 compliance claim.\n2. Correct the FY2028 framing: continued hiring is needed and savings are lower in year one.\n3. Make the vendor recommendation conditional on discount scope and term dates.\n4. Remove the trailing empty heading.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R1/E5-02__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:36:05.662617+00:00",
+ "response": "{\"findings\": [\"The ramp table assumes zero attrition despite ~22% first-year turnover, so the July 1 permanent count is likely below 24 and agency need above 46.\", \"72 hires will not net 70 permanent RNs at 22% turnover (roughly 56–60), and late-2027 cohorts don't reach the floor until Q1 2028, so FY2028 is not steady state and its $2.3–3.1M savings and investment-recovery claim are overstated.\", \"The July 1 count depends on unstated assumptions that cohorts start at the very beginning of each month (mid-month starts drop it to 18) and that recruiting begins before the budget is finalised.\", \"The vendor recommendation rests on a marginal ~$60K net gain that holds only if the discount applies to all volume, and becomes a loss if it covers only the 30 committed FTEs.\", \"The vendor deal gives up 30-day cancellation flexibility and the memo doesn't specify the 12-month term start, risking costly commitments into FY2028 when only ~6 FTEs are needed.\", \"The memo should make the vendor recommendation conditional on discount scope and term dates and admit the case rests on supply security rather than savings.\", \"The ~$7.2M agency line silently includes $0.38M of unused Q4 committed capacity without disclosure.\", \"Per-departure loss is overstated because nurses leaving within six months repay the bonus, which also understates the value of the proposed 12-month clawback.\", \"The clawback extension is routed only to HR and legal although bonus terms may need to be bargained with the union.\", \"The memo omits the strongest risk to the agency-only alternative: the statewide 1:5 ratio law taking effect July 1 will likely tighten agency supply and raise rates.\", \"The decision line does not state the explicit dollar ask and net impact versus agency-only.\", \"The steady-state cost double counts by assuming all 70 positions filled while also budgeting $1.2M agency for vacancies.\", \"The memo ends with an empty heading, suggesting a missing section such as recommendations or next steps.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3296,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 687,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3296,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 687,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3296,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3296
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.040116,
+ "duration_ms": 9758,
+ "wall_s": 10.69,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Recommendation Memo\n\nThis is a strong memo. The recommendation comes first, the arithmetic is mostly correct, the opposing view (the Director's accreditation point) is treated fairly, and claims the data can't support are hedged. At about 520-550 words it fits the brief. I'd fix the issues below before it goes to the committee.\n\n## Must fix\n\n**1. The \"$205,000 in annual savings\" figure is misleading.** $240,000 − $35,000 = $205,000 is the saving against the *proposed* contract, which isn't in anyone's budget yet. Against current spending, the saving is $210,000 − $35,000 = **$175,000**. A committee member who checks this will find it inflated. Either use $175,000 or say \"$205,000 a year compared with the renewal offer ($175,000 below current spending).\"\n\n**2. \"Oral components\" isn't in the source.** The brief says peers moved to open-book and project-based assessment. \"For this reason\" also assigns peers a motive the brief doesn't give. Suggested fix: \"Several peer institutions have moved to open-book exams and project-based assessment in online courses.\"\n\n**3. Remove the stray `---` and `##` at the end.** They will show up as an empty heading.\n\n**4. Fill in the \"From\" line.**\n\n## Should fix\n\n**5. The deterrence argument is overstated.** You rightly say there's no data on ProctorEye's deterrent effect, but then assert \"The better deterrent is assessment that is hard to outsource\" with no evidence either. Softer wording: \"A more durable approach is assessment that is harder to outsource.\"\n\n**6. The identity-only service may not fully cover the accreditation requirement.** It checks identity once, at the start of an exam. If courses shift to projects as recommended, an exam-start check doesn't show who did the project work. Add a clause such as \"including for non-exam assessments\" to the counsel review item.\n\n**7. One next step is in the wrong section.** \"Track misconduct rates… for one year after the transition\" can't happen before February 28. Move it into the recommendation (e.g., a fourth item) or retitle the section \"Next steps.\"\n\n**8. One sentence in the cost paragraph is awkward.** \"95% of flags required faculty review but produced no finding\" implies only those 95% needed review, when all of them did. Simpler: \"Only 308 flags (5%) led to a misconduct finding; the other 95% consumed review time without result.\"\n\n## Optional\n\n- **Say why the flags are biased.** The audit found \"face not detected\" and \"looking away/repeated movements\" behind the disparities. One clause would show the bias comes from how the system works, which also strengthens the appeals point.\n- **Mention the Student Government resolution.** The SGA formally opposed renewal, but the memo only mentions briefing them. Half a sentence would show the committee that students have taken a position.\n- **Name the current contract's end date.** It would make clear whether a bridge is actually needed.\n\n## Numbers checked\n\n| Claim | Check | OK? |\n|---|---|---|\n| $720,000 over 3 years | $240k × 3 | ✓ |\n| 5% of flags led to findings | 308 / 6,150 = 5.0% | ✓ |\n| ~920 review hours | 6,150 × 9 min = 922.5 hrs | ✓ |\n| ~$680 per finding | $210k / 308 = $682 | ✓ |\n| ~3 faculty hours per finding | 922.5 / 308 = 3.0 | ✓ |\n| ~2,300 hrs at full coverage | 922.5 / 0.40 = 2,306 (assumption stated) | ✓ |\n| $205,000 savings | Holds only against the offer, not current spending | ✗ see #1 |",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R1/E5-13__r1.json",
+ "role": "scorer",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:39:05.351505+00:00",
+ "response": "{\"findings\": [\"The \\\"$205,000 in annual savings\\\" figure is misleading because it is measured against the proposed renewal contract rather than current spending, against which the saving is only $175,000.\", \"The memo claims peer institutions adopted \\\"oral components,\\\" which is not in the source brief.\", \"The memo assigns peer institutions a motive (\\\"for this reason\\\") that the brief does not support.\", \"A stray `---` and `##` at the end of the memo will render as an empty heading.\", \"The \\\"From\\\" line is left blank.\", \"The deterrence argument is overstated: the memo asserts that hard-to-outsource assessment is the better deterrent without evidence, while noting there is no data on ProctorEye's deterrent effect.\", \"The identity-only service checks identity only once at exam start, so it may not satisfy the accreditation requirement if courses shift to project-based work as recommended.\", \"The step to track misconduct rates for a year after the transition is listed among actions due before February 28, even though it cannot happen before then.\", \"The sentence saying \\\"95% of flags required faculty review but produced no finding\\\" wrongly implies that only those flags needed review, when all flags did.\", \"The memo does not explain why the flags are biased, omitting the audit's finding that \\\"face not detected\\\" and \\\"looking away/repeated movements\\\" flags drove the disparities.\", \"The memo does not mention the Student Government's formal resolution opposing renewal and only mentions briefing them.\", \"The memo does not give the current contract's end date, so it is unclear whether a bridge arrangement is needed.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2617,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 510,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2617,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 510,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2617,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2617
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.031143999999999998,
+ "duration_ms": 8256,
+ "wall_s": 9.29,
+ "attempt": 0
+}

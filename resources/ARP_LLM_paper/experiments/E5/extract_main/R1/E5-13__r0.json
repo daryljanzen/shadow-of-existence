@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R1",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Renewal Memo\n\nThis is a strong memo. The recommendation comes first, the argument is well organized, and the numbers are correct. It handles the Director of Online Programs' accreditation point fairly instead of dismissing it, and it is honest about what the data can't show on deterrence. The body runs about 520 words, within the 450–550 target.\n\n## Arithmetic check\n\n| Claim | Check | Result |\n|---|---|---|\n| 3-year offer = $720,000 | $240,000 × 3 | ✓ |\n| 5% of flags led to findings | 308 / 6,150 = 5.0% | ✓ |\n| ~920 review hours | 6,150 × 9 min = 922.5 hrs | ✓ |\n| ~$680 per finding | $210,000 / 308 = $682 | ✓ |\n| ~3 hours per finding | 922.5 / 308 = 3.0 | ✓ |\n| ~2,300 hours at full coverage | 41,000 / 0.4 × 15% × 9 min = 2,306 hrs | ✓ (but see below) |\n| ~$205,000 annual savings | $240,000 − $35,000 | ✓ against the offer only |\n\n## Issues to fix\n\n**1. Stray formatting at the end.** The document ends with `---` and an empty `##` heading. Delete both.\n\n**2. The recommended service may carry the same skin-tone bias.** The memo's equity argument rests partly on \"face not detected\" flags for darker-skinned students. The identity-only service also uses a face match, so it could fail for the same students. A critical reader will notice this. Address it directly, for example: \"The identity-only check runs once per exam rather than continuously, which removes the behavioural flags behind most of the disability disparity. The face match may still fail more often for darker-skinned students, so the non-biometric path must be easy to use, not a last resort.\"\n\n**3. Mechanisms from the brief are missing.** The brief says *why* students were flagged: \"face not detected\" and looking away or repeated movements. Adding these (in a few words) makes the disparity concrete. It also strengthens the case for identity-only checking, because a one-time check removes the continuous behaviour monitoring that drives those flags.\n\n**4. One claim about peer institutions goes beyond the brief.** \"Peer institutions have moved to open-book exams, projects, and oral components *for this reason*\" adds two things the brief doesn't support: oral components, and the claim about peers' motives. Suggested replacement: \"Several peer universities have moved online courses to open-book exams and project-based assessment.\"\n\n**5. The deterrence paragraph is a little one-sided.** \"We cannot claim that removing it will raise misconduct\" is fair, but the same gap in data cuts both ways. \"The better deterrent is assessment that is hard to outsource\" is stated as fact without evidence. Consider:\n- \"We have no data on how much ProctorEye deters cheating, so we cannot say whether removing it would change misconduct rates.\"\n- \"Assessment that is hard to outsource offers a deterrent that does not depend on surveillance.\"\n\nThe proposed one-year tracking of misconduct rates is the right companion to this paragraph. You could cross-reference it here.\n\n**6. The savings figure needs a baseline.** $205,000 is the saving against the *expanded offer*. Against current spending it is $175,000 ($210,000 − $35,000), and any bridge period reduces it further in year one. Write \"roughly $205,000 a year compared with the renewal offer.\" Committee members comparing against this year's budget will otherwise see a mismatch.\n\n**7. The full-coverage projection has a second assumption.** It assumes flag rates hold *and* that exam volume scales with course coverage (40% → 100%). One extra phrase keeps the estimate honest: \"If exam volume and flag rates scale with coverage…\"\n\n## Minor points\n\n- **SGA position:** The Student Government Association's resolution against renewal is only implied (in \"Brief the… Student Government Association\"). A short clause in the equity paragraph would show the committee that student opposition is on record.\n- **Opening phrasing:** \"offer to expand full automated proctoring\" reads awkwardly. Try \"offer to extend automated proctoring to all online courses.\"\n- **Cost of the redesign program:** No figure or range is given. Even a rough number (e.g., \"$50,000–75,000 in year one\") would make recommendation #2 actionable.\n- **\"From\" line:** The `[Analyst, Office of Academic Technology]` placeholder needs filling in before circulation.\n\n## Summary\n\nThe analysis is sound and the recommendation follows from the evidence. The most important fix is #2: a reader skeptical of the recommendation will ask whether the face-match bias carries over to the identity-only service. Fixes #4–#6 make the memo more defensible, and the stray markup in #1 should be removed before it goes out. All the fixes together add only about 30–40 words, so the memo stays within length.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R1/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:38:59.093418+00:00",
+ "response": "{\"findings\": [\"The document ends with stray formatting (a `---` and an empty `##` heading) that should be deleted.\", \"The memo's equity argument relies on face-detection bias against darker-skinned students, but the recommended identity-only service also uses face matching and may fail for the same students, which the memo does not address.\", \"The memo omits the specific flagging mechanisms from the brief ('face not detected' and looking away/repeated movements), which would make the disparity concrete and strengthen the case for identity-only checking.\", \"The claim that peer institutions moved to open-book exams, projects, and oral components 'for this reason' goes beyond the brief by adding oral components and attributing motives to peers.\", \"The deterrence paragraph is one-sided: the lack of data cuts both ways, and the claim that hard-to-outsource assessment is 'the better deterrent' is stated as fact without evidence.\", \"The ~$205,000 savings figure is measured against the expanded renewal offer rather than current spending (where it is ~$175,000, and less in year one with a bridge period), and the baseline is not stated.\", \"The ~2,300-hour full-coverage projection carries an unstated second assumption that exam volume scales with course coverage, in addition to flag rates holding.\", \"The Student Government Association's resolution against renewal is only implied rather than explicitly stated in the equity discussion.\", \"No cost figure or range is given for the assessment redesign program, making that recommendation less actionable.\", \"The 'From' line still contains an unfilled placeholder that must be completed before circulation.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3024,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 511,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3024,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 511,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3024,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3024
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03442,
+ "duration_ms": 8458,
+ "wall_s": 9.56,
+ "attempt": 0
+}

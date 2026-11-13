@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R2",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Renewal Memo\n\n**Overall:** This is a strong memo. It leads with the recommendation, stays close to the brief, hedges in the right places, and turns the accreditation objection into support for the identity-only option. At about 545 words including the header, it sits at the top of the 450-550 range, so any additions need matching cuts. The main problems are:\n\n- one figure that is misleading,\n- two claims that go beyond the brief,\n- a transition gap the memo doesn't address,\n- some structural slips.\n\n## Arithmetic check\n\n| Claim | Check | Status |\n|---|---|---|\n| $720,000 over three years | 3 × $240,000 | ✓ |\n| 5% of flags led to findings | 308 / 6,150 = 5.0% | ✓ |\n| ~920 review hours | 6,150 × 9 min = 922.5 h | ✓ |\n| ~$680 per finding | $210,000 / 308 = $682 | ✓ |\n| ~3 faculty hours per finding | 922.5 / 308 = 3.0 h | ✓ (derived, not assumed) |\n| ~2,300 hours at full coverage | 41,000 / 0.4 × 15% × 9 min ≈ 2,306 h | ✓, with a hidden assumption (see #4) |\n| \"~$205,000 in annual savings\" | $240,000 − $35,000 | **Misleading** (see #1) |\n\n## Substantive issues, in priority order\n\n**1. The savings figure is measured against the offer, not current spending.** Against today's $210,000 budget, moving to identity-only saves $175,000. That is before paying for the non-biometric alternative, which needs staff time for live video ID checks or testing-site fees. A committee member who checks the budget line will spot this. Suggested fix: \"about $175,000 a year below current spending, before the cost of the non-biometric alternative.\"\n\n**2. The deterrence argument is lopsided.** \"We cannot claim that removing it will raise misconduct\" is true. But the same missing data also means we can't claim removal *won't* raise misconduct. As written, the uncertainty only cuts one way. This is the memo's weakest point, and faculty who want \"some deterrent\" will press on it. Two ways to fix it:\n- State the uncertainty plainly and present the one-year tracking step as the safeguard.\n- Propose a comparison of misconduct rates between proctored and unproctored sections during the bridge period.\n\n**3. Two claims go beyond the brief.**\n- **\"Oral components\"**: the brief says peers moved to open-book and project-based assessment only.\n- **\"For this reason\"**: the brief doesn't say why peers made the change.\n\nCut both, or source them.\n\n**4. The full-coverage projection rests on two assumptions, but only one is stated.** The memo flags the assumption that flag rates hold. It doesn't say it also assumes exam volume scales with course count, i.e. that 40% of courses produce 40% of exams. Newly covered courses may give more or fewer exams. Add a few words to cover this.\n\n**5. There is a gap in the transition plan.** If the bridge ends by June 30, 2027, high-stakes courses will rely on identity checks alone until they are redesigned. Redesigning gateway courses in about seven months is ambitious, and the memo gives no budget, staffing, or timeline for redesign. Even one sentence would help, for example: \"Phase 1: X gateway courses by fall 2027; remaining courses by fall 2028.\"\n\n**6. The identity-only coverage is assumed.** The brief gives the $35,000 price but doesn't say whether it covers all online courses. Add this to the \"Request ProctorEye's terms\" bullet.\n\n**7. The disparity paragraph leaves out the mechanism.** The brief says the higher flag rates were driven by \"face not detected\" and by looking away or repeated movements. Those details show *why* the flags are unreliable for these groups, which ties the equity point to the reliability point and to the two appeals. That is stronger than the rates alone and costs about 10 words. It would also help to ask, as a next step, for flag-to-finding rates by group. That would show whether faculty review corrects the disparity. The memo can't supply that number from the brief, but it can request it.\n\n**8. Stakeholders are handled unevenly.** The Director of Online Programs and Faculty Senate are engaged directly, but the Student Government Association resolution appears only as \"brief the SGA.\" One clause would fix this, such as noting that SGA formally opposed renewal. The memo also doesn't address faculty in licensure-track or similar courses, where open-book formats are hard to use.\n\n## Structural and editorial issues\n\n- **Misplaced bullet:** \"Track misconduct rates... for one year after the transition\" sits under \"Next steps before February 28\" but can't happen before then. Move it into the recommendation or the deterrence section.\n- **Unknown contract end date:** the bridge option depends on when the current contract ends. Add that date, or a placeholder for it.\n- **Awkward phrasing:** \"offer to expand full automated proctoring\" should read \"offer to expand automated proctoring to all online courses.\"\n- **Leftover artifact:** the trailing `---` and empty `##` heading at the end should be deleted.\n- **Placeholder:** \"[Analyst, Office of Academic Technology]\" in the From line still needs a name.\n\n## Notes on the anticipated reviewer points\n\nMost are fair, but a few need adjusting:\n\n- **#2 (assumed three hours):** the three hours per finding isn't assumed. It comes straight from the reported 9-minute average. The fair version of the criticism is that cost-per-finding ignores undetected cheating and the value of protecting degree credibility.\n- **#4 (false positives):** the memo is actually careful here. It says flags \"produced no finding,\" not \"false positives.\" Only the heading \"catches little\" overreaches, and softening it would answer the critique.\n- **#5 (confidence intervals):** the brief has no group sizes, so the memo can't report intervals. Requesting flag-to-finding rates by group is the realistic fix.\n- **#10 (full options table):** this won't fit within 550 words. A three-row comparison (renew and expand, bridge at current scope, identity-only plus redesign) is the most that's feasible. Otherwise, add a sentence on why live human proctoring and no proctoring were ruled out.\n\nThe reviewer's list also misses issues #1 (savings baseline), #3 (claims beyond the brief), #6 (identity-only coverage), and the misplaced next-steps bullet. Of these, #1 is the most likely to embarrass the memo in committee.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R2/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:39:06.397122+00:00",
+ "response": "{\"findings\": [\"The ~$205,000 annual savings figure is misleading because it is measured against the vendor's offer rather than the current $210,000 budget, so true savings are about $175,000 before paying for a non-biometric alternative.\", \"The deterrence argument is lopsided because the lack of data means the memo also cannot claim removing proctoring won't raise misconduct, yet the uncertainty is presented as cutting only one way.\", \"The memo's claim that peers adopted 'oral components' goes beyond the brief, which mentions only open-book and project-based assessment.\", \"The memo's 'for this reason' attributes a motive to peer institutions' change that the brief does not provide.\", \"The full-coverage projection of ~2,300 hours silently assumes exam volume scales proportionally with course count, an assumption the memo does not state.\", \"The transition plan leaves high-stakes courses relying on identity checks alone after the bridge ends June 30, 2027, with no budget, staffing, or timeline for the ambitious gateway-course redesign.\", \"The memo assumes the $35,000 identity-only option covers all online courses, which the brief does not confirm.\", \"The disparity paragraph omits the mechanism behind higher flag rates ('face not detected', looking away, repeated movements), which would link the equity point to the reliability point and the appeals.\", \"The memo does not request flag-to-finding rates by group, which would show whether faculty review corrects the disparity.\", \"Stakeholders are handled unevenly, with the Student Government Association's formal resolution opposing renewal reduced to 'brief the SGA.'\", \"The memo does not address faculty in licensure-track or similar courses where open-book formats are hard to use.\", \"The bullet about tracking misconduct rates for one year is misplaced under 'Next steps before February 28' even though it cannot happen before then.\", \"The memo omits the current contract's end date, on which the bridge option depends.\", \"The heading 'catches little' overreaches relative to the memo's otherwise careful framing of flags that produced no finding.\", \"The memo does not explain why live human proctoring and no proctoring were ruled out as options.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3572,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 703,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3572,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 703,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3572,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3572
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.042644,
+ "duration_ms": 8755,
+ "wall_s": 9.66,
+ "attempt": 0
+}

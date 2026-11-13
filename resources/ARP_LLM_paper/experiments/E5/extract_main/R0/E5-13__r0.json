@@ -1,0 +1,51 @@
+{
+ "exp": "E5",
+ "cond": "R0",
+ "item": "E5-13",
+ "system": "List the distinct substantive findings (criticisms or weaknesses) this review raises about the document, one per line, each in one sentence. Do not include praise or minor stylistic notes. Reply with JSON only: {\"findings\": [\"...\", \"...\"]}",
+ "message": "REVIEW:\n# Review: ProctorEye Renewal Memo\n\nThis is a strong decision memo. The recommendation comes first, the reasoning is organized around the committee's likely concerns (cost, equity, legal risk, accreditation, deterrence), and the memo answers the main counterarguments instead of ignoring them. Most of the arithmetic checks out. The issues below are mostly gaps a skeptical committee member could exploit.\n\n## Numbers check\n\n| Claim | Check | Result |\n|---|---|---|\n| 6,150 flags / 41,000 exams | 15.0% flag rate | Consistent (not stated, but could be) |\n| 308 findings = 5% of flags | 308 / 6,150 = 5.0% | ✓ |\n| ~920 review hours | 6,150 × 9 min = 922.5 hrs | ✓ |\n| ~3 faculty hours per finding | 922.5 / 308 = 3.0 | ✓ |\n| ~$680 contract cost per finding | Implies a current contract of about $209,000 | **Current cost is never stated** |\n| ~2,300 hours at full coverage | Implies about 2.5× current exam volume | **Basis not stated** |\n| ~$205,000 annual savings | $240,000 (720k ÷ 3) − $35,000 | **Measured against the expansion offer, not current spend** |\n\n## Substantive issues (in priority order)\n\n**1. The savings figure is open to challenge.** The $205,000 is savings compared with the proposed expansion. Compared with what the university pays now (apparently about $209,000), the savings are closer to $174,000. Neither figure subtracts the costs of the alternative: staff time for live ID checks, testing-site fees, and redesign stipends. Someone on the committee will notice. Two fixes:\n- State the current contract cost explicitly.\n- Label the savings baseline, and give a rough net figure after alternative costs.\n\n**2. The full-coverage projection needs its basis.** Say how many exams full coverage would include (about 102,000?) so readers can reproduce the 2,300 hours.\n\n**3. The 308 detected cases are left hanging.** The memo shows that ProctorEye's precision is low. But it doesn't say what happens to the misconduct ProctorEye *does* catch. A defender of the system will argue those 308 cases go undetected under the new plan. Add a sentence on this, for example: how many of the 308 would identity verification or redesigned assessment plausibly address? Also note that false negatives (cheating that ProctorEye misses) are unknown, which cuts both ways.\n\n**4. The deterrence argument is asymmetric.** \"We cannot claim that removing it will raise misconduct\" is fair. But the same lack of data means you can't claim it won't. Saying so openly makes the memo more credible, and it naturally justifies the monitoring plan in item 7.\n\n**5. \"Hard to outsource\" assessment in the age of generative AI.** In late 2026, readers will ask whether take-home projects and open-book exams are actually harder to outsource. Oral components and in-class or staged work hold up better. Consider emphasizing those, or acknowledging the issue in one line.\n\n**6. Name the peer institutions and the law.** \"Peer institutions have moved to...\" and \"the new student privacy law\" are vague. Citing two or three peers and the statute's name or number would strengthen both points at little cost.\n\n**7. Fix the \"Next steps\" timing problem.** \"Track misconduct rates... for one year after the transition\" sits under \"Next steps before February 28\" but cannot happen by then. Move it to a separate \"After adoption\" line. Add a step that *can* happen now: **establish a baseline** of current misconduct rates and outcomes, so you have something to compare against later.\n\n**8. Disparity data could use one more detail.** If available, add whether flagged students in those groups led to findings at a *lower* rate. That would show the excess flags are false positives, not just more flags. Even one sentence would sharpen the legal-exposure point.\n\n## Minor / editorial\n\n- **Remove the stray `---` and empty `##` heading** at the end of the document.\n- Fill in the author placeholder before circulation.\n- \"95% of flags required faculty review but produced no finding\": *all* flags required review. A clearer version is \"...so 95% of flagged exams consumed review time without producing a finding.\"\n- \"behavioural\" is British spelling. Use \"behavioral\" if the rest of the university's documents use US style.\n- \"almost certainly involves biometric data\" is reasonable hedging. Since you already defer to counsel, you could say \"likely constitutes biometric data under the law; counsel should confirm.\"\n\n## Bottom line\n\nThe recommendation is well supported and the bridge-to-June-30 timing aligns neatly with the law's effective date. Fixing the savings baseline (#1), addressing the 308 cases (#3), and correcting the next-steps timing (#7) would close the most obvious lines of attack before the committee meets.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E5/extract_main/R0/E5-13__r0.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T14:38:54.868921+00:00",
+ "response": "{\"findings\": [\"The memo never states the current ProctorEye contract cost (implied at about $209,000), even though the ~$680-per-finding figure depends on it.\", \"The ~$205,000 savings figure is measured against the proposed expansion rather than current spend (against current spend it would be about $174,000), and the baseline is not labeled.\", \"The savings figure does not subtract the costs of the alternative approach, such as staff time for live ID checks, testing-site fees, and redesign stipends.\", \"The ~2,300-hour full-coverage projection gives no basis, such as the number of exams full coverage would include, so readers cannot reproduce it.\", \"The memo does not address what happens to the 308 misconduct cases ProctorEye does catch, or how many the alternatives would plausibly detect.\", \"The memo does not acknowledge that false negatives (cheating ProctorEye misses) are unknown.\", \"The deterrence argument is asymmetric: the memo notes it cannot claim removal will raise misconduct but does not admit that the same lack of data means it cannot claim removal won't.\", \"The proposed 'hard to outsource' assessments such as take-home projects and open-book exams may not resist generative AI, and the memo should emphasize oral or in-class work or acknowledge the issue.\", \"References to peer institutions and 'the new student privacy law' are vague and should name specific peers and the statute.\", \"The step to track misconduct rates for one year after transition sits under 'Next steps before February 28' even though it cannot be done by then.\", \"The next steps omit establishing a baseline of current misconduct rates and outcomes, which is needed for later comparison.\", \"The disparity data does not show whether flagged students in the affected groups led to findings at a lower rate, which would establish that the excess flags are false positives and strengthen the legal-exposure point.\", \"The statement that '95% of flags required faculty review but produced no finding' is inaccurate because all flags required review.\"]}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3013,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 637,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3013,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 637,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3013,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3013
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036851999999999996,
+ "duration_ms": 9545,
+ "wall_s": 10.48,
+ "attempt": 0
+}
