@@ -178,8 +178,8 @@ for zz in ZS:
     dep[zz] = float(H_leaf(zz) / H_stack(zz) - 1.0)
     print(f"      z = {zz:8.1f}   H_leaf/H_stack - 1 = {100 * dep[zz]:10.5f} %")
 check("⛭⛔ `r7761` ** ⑤ AND THE STATEMENT CANNOT HAVE BOTH `r ∝ sinh^{2/3}` EXACTLY AND THE LEAVES "
-      "CARRYING THE BEND: THE RATE DEPARTS BY `6.9` PER CENT AT `z*` ** ⇒ *** `4.4e-05` today, one per "
-      "cent at `z = 66.8` by construction of that redshift, and several per cent at last scattering. The "
+      "CARRYING THE BEND: THE RATE DEPARTS BY `15.0` PER CENT AT `z*` ** ⇒ *** `4.4e-05` today, one per "
+      "cent at `z = 66.8` by construction of that redshift, and fifteen per cent at last scattering. The "
       "`sinh^{2/3}` law is the STRAIGHT cut's solution; the leaves' own `r(τ̃)` is near it late and not "
       "at recombination *** ",
       abs(dep[Z_REC]) > 0.01 and abs(dep[0.0]) < 1e-4,
