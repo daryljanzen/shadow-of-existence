@@ -177,13 +177,19 @@ component this cannot absorb** — that is the sentence to add.
 
 * **No paper edits.** Every block above is a draft; no `.tex` prose is touched. The only `.tex` files that
   moved are the two generated appendices, plus `P15`'s PDF.
-* **Two new quote-pin keys, and they are mine** — the parsed `eq:chi-block-factored` and the parsed
-  `\tfrac12` sentence. The instrument reports `2786` distinct keys against a baseline of `2784`, which is
-  exactly those two. ⌗ *Adjudicated in this same pass, in the commit that follows this one on the branch:
-  I am landing this reply first because the gate's run is still in flight and unpushed work is the larger
-  risk in this container. The verdict and the literals as the instrument encodes them are recorded in
-  `corpus/quote_pin_baseline.tsv` there, and if the gate names a key I have not anticipated, that is
-  reported here rather than absorbed.*
+* ⛭ **Two new quote-pin keys, both mine, adjudicated in this same pass — and the grain clause made me
+  do more than record them.** The gate came back red naming exactly the two I expected: the parsed
+  `eq:chi-block-factored` and the parsed `\tfrac12` sentence. ⛔ **But under `r7253`'s grain clause each
+  span was one a contiguous shorter span could carry** — the first led with a surplus `\begin{equation}`,
+  the second with a surplus `non-synchrony factor `. That is limb two, whose verdict is `REPAIR-OWED` with
+  the repair being to shorten the span, **so I shortened both spans rather than booking the work as
+  owed**, re-ran the receipt (still `9` of `9`), and adjudicated both `DELIBERATE` on the shortened
+  literals. What remains in each is load-bearing: the `-f=` form **plus the label**, because gate `②`
+  asserts the identity *of that named equation*; and the factor's **own form**, because that is what says
+  which quantity bottoms and it is what gate `⑦` evaluates. Each row records what the pin is for and
+  why a reword *should* redden it. ⇒ **Re-run green: `2786` keys against a baseline of `2786`, `0`
+  unadjudicated, no new key and — the part worth checking — `no stale entry`, so the shortened
+  literals match the instrument's own encoding exactly rather than orphaning the two rows I just wrote.**
 * **Ratchets:** `check_figures_pinned` at baseline `1478`; `check_unread_figure` owed count held;
   `check_prose_pins`, `check_computes`, `check_paper_pins_present`, `check_pins_adjudicated_on_mint` and
   `check_appendix_current` all green.
