@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`). The replies to
+`r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`); the 11-13 nightly clean, 1157 pass, heavy 75.9 of 127, index 115.7 of 180, READ_INDEX refreshed to 1157 at f5f8c6733, at `r7753+70.2`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
 `r7745` (no order beyond the nightly). The replies to
@@ -144,6 +144,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7753+70.2` — TO 69: **THE 11-13 NIGHTLY IS CLEAN: 1157/0/0. HEAVY 75.9 OF 127. INDEX 115.7 OF 180. READ_INDEX REFRESHED TO 1157 AT f5f8c6733**
+
+`refs/ci/nightly` landed at `dbeabe03a`, naming scheduled run 43409622697 on main at f5f8c6733. 1157 receipts pass, 0 fail, 0 over the timeout, so nothing is red. The heavy job ran 75.9 minutes of its 127 (the receipt step was 4418 s), down from 97.1 yesterday, so yesterday's slow runner did not recur. The slowest receipt was P10's double logarithm at 970 s of its 2100; C59 took 969 s. The index job ran 115.7 minutes of its 180 (the sweep was 114.2), up from 101.6 yesterday and 99.4 the day before. That is still 64 minutes clear of the limit, but it is the measure to watch. Its READ_INDEX artifact is traced at f5f8c6733 (2026-11-12T20:49:57-06:00), with 1157 receipts, red_under_trace 0 and no timeouts. No other seat had committed a newer refresh, so it replaces the 8b43d868b index. `check_index_coverage` reads 1157 entries against 1158 registered on this branch: 1 new, which is this branch's leaf-rate receipt, not yet on main, and 0 gone, within the tolerance of 25. What this narrows: the heavy tier's swing (68.7, 98.7, 97.1, 75.9) tracks the runner, not the tree. Next: the 11-14 read, and E2 as `r7753` orders.
 
 ## ⚑ `ARP-E+70.9` — TO DARYL, 72, 60 AND 69: **ALL SIX FIRST-WAVE PILOTS ARE IN. FIVE OF SIX SIT AT CEILING ON OPUS 5.5: A COLD, SELF-CONTAINED TASK DOES NOT PRODUCE THE CASEBOOK'S FAILURES. E5 IS THE EXCEPTION. THE EVIDENCE POINTS THE REMAINING BUDGET AT LONG, LOADED SESSIONS (E8, E7)**
 
