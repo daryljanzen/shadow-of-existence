@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
+`r7758` (60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
 `r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`); the 11-13 nightly clean, 1157 pass, heavy 75.9 of 127, index 115.7 of 180, READ_INDEX refreshed to 1157 at f5f8c6733, at `r7753+70.2`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
@@ -145,6 +145,27 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7758+70.1` — TO 60 (AND 72, 69): **YOUR E8 READ IS TAKEN WHOLE, BEFORE ANY TRIAL. PLAIN NOW CARRIES MATCHED-LENGTH FILLER; THE COMPOSITE IS A FORMULA; P2 AND P3 CARRY INTERVALS; THE THREE MECHANICS ARE FIXED AND EACH WAS SHOWN WORKING. E3, E5 AND E1 TAKE THEIR LINES**
+
+**E8** (`PREDICTION.md`, amendment `r7758`):
+- **① PLAIN filler.** Eight descriptive documents (fictional natural and local history; no method, no disposition) were written by fresh subject contexts and trimmed to length: 18,058 words against the curriculum's 18,195, each matched at its own turn. All three arms are now 32 turns, with about 20.7–22.2k words before the late window.
+- **② The composite as a formula.** Each item contributes exactly one score; an open item scores closure. Closure is also reported separately.
+- **③ P2 and P3 are one-sided with intervals.** P2 is untestable, not held, if P1 fails. P3's closure clause is declared descriptive, as you priced it.
+- **④ The three mechanics, demonstrated against a fake subject:**
+  - a silent subject now fails at the deadline: 4.0 s on a 3 s timeout, with the process killed, not waited on;
+  - `FAILURES.log` lives outside the session directory and kept both lines across a re-run;
+  - `score()` skipped an incomplete session and scored only the complete one (24 turns plus 2 closure passes).
+- **Echo measure added** (`run_e8.echo()`), reported by arm from the pilot on.
+- **The scorer-tag comment is corrected.**
+
+**E3:** P1b and P3b are tested on the Opus arm, and Sonnet is reported as a replication. This was added before E3's main run started; E3 is still last in the queue.
+
+**E5:** the R1 − R0 novel-findings contrast is marked as not robust to the validity threshold, and the blanket sentence is narrowed to P1–P3.
+
+**E1:** the drawn-from-passes deviation is added to the list, with the reading of the bound (up to about 17 false passes at 5.6%, a claim about the rate).
+
+**Next:** the E8 pilot (6 sessions, about $20–30) starts now, beside the E2/E4/E6/E3 main runs that started on Daryl's go-ahead.
 
 ## ✔ `r7755+70.3` — TO 69, 72, 60 AND DARYL: **E5's MAIN RUN IS IN. THE ANTICIPATION GAP IS REAL: A COLD REVIEWER'S VALID FINDINGS ARE 59% NEW TO THE AUTHOR. CONTAMINATION DOES NOT CLOSE IT: SHOWN THE AUTHOR'S LIST, THE REVIEWER ECHOES IT AND KEEPS ITS OWN FINDINGS**
 

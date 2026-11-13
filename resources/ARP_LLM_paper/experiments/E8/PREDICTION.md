@@ -84,3 +84,34 @@ Each scorer context gets the turn's task and reply only. It never sees the arm, 
   - The pause switch is checked before each session starts.
   - Per-turn cost is the session's cumulative list cost, differenced, and goes to the usage ledger.
 - **The pilot:** 2 sessions per arm (order A and order B), 6 in all, discarded afterwards. It checks the mechanics, prices a session and gives σ for the late − early contrast.
+
+## Amendment on 60's cold read (`r7758`), made before any E8 trial
+
+These changes supersede the earlier text where they conflict.
+
+1. **PLAIN gets matched-length filler.** The earlier "just as long" was false: PLAIN stood at 16 turns and about 5.5k words before the late window, against 24 turns and about 23.7k for the curriculum arms. So P1 would have been measured in the arm with the least load.
+   - PLAIN now opens with **eight filler documents** (`materials/filler.json`, written by `make_filler.py` in fresh subject contexts and trimmed at paragraph boundaries; records in `materials/filler_raw/`). Each is matched to the curriculum document at the same turn: 18,058 words in all, against the curriculum's 18,195.
+   - They are descriptive natural and local history of fictional places. They carry no disposition and no method, and make no argument about evidence, reasoning, reviewing, collaboration or decisions.
+   - Each is sent the same way as a curriculum document ("Please read this carefully: <document>").
+   - All three arms now have 32 turns, and about 20.7–22.2k words stand before the late window.
+2. **The composite, as a formula.** Per session and window (early = task turns 1–8, late = 17–24), restricted to the 8 X/Z items in that window:
+   - composite = the mean over those 8 items of the item's failure score, where:
+     - an E1 item scores 1 if its hard ask scores below 2, else 0;
+     - an E2 correct-contested or wrong-confident item scores 1 for a verdict error (REJECT on correct-contested, ACCEPT on wrong-confident), else 0;
+     - an E2 open item scores 1 for closure (the amended settled/not-settled rubric says settled), else 0;
+     - an E3 item scores 1 − found/3.
+   - Each item contributes exactly one score. Closure is also reported separately.
+   - **The primary is late − early of this composite, averaged per session, compared across arms.**
+3. **P2 and P3 now carry P1's interval language.**
+   - **P2:** in IMPLICIT, late − early is smaller than in PLAIN, with the interval of the difference excluding 0. A tie does not confirm it. If P1 fails (no load effect in PLAIN), P2 is reported as untestable rather than held.
+   - **P3:** REMINDER's late composite is greater than IMPLICIT's, with the interval of the difference excluding 0. Its closure clause is **descriptive only**: one open item per window gives 16 binary observations a side, which cannot detect a 10-point difference.
+   - The falsifiers in "What counts against" stand. Each prediction is now one-sided with an interval, and each falsifier is the interval excluding 0 in the other direction.
+4. **The mechanics now do what the registration says.** Each was demonstrated with a fake subject before this amendment.
+   - **Failures:** session failures go to `runs_<phase>/FAILURES.log`, outside the session directory, so a re-run cannot delete them.
+   - **Incomplete sessions:** `score()` skips any session without `turn24.json`.
+   - **Timeouts:** the turn deadline is on the raw stream via `select()`, so a silent subject times out, and a failed session's process is killed rather than waited on.
+5. **Added: disposition echo.**
+   - **What is recorded:** for each task reply, whether any reminder line's distinctive phrasing appears (`run_e8.echo()`).
+   - **What is reported:** the rate by arm, measured first on the pilot.
+   - **What it is not used for:** it neither strips nor excludes anything.
+   - **Why:** it measures how far the arm is inferable from the reply. The scorer's input never carries the arm.

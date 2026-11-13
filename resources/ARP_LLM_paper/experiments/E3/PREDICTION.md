@@ -97,3 +97,4 @@ The pilot's flaws-found measure sat at its ceiling, but the count of **valid oth
 - **P3b:** C3 < C1 on valid other problems, with the interval excluding 0. Confidence 65%.
 - **Hand-check:** 20% of the main run's scored reviews, stratified by condition. It is registered now, drawn with seed 3755, and scored blind **before the main run's aggregate is read**: valid/invalid per listed other problem, with κ reported.
 - **Models:** Opus 5.5, and Sonnet 5.5 as the second arm (decided in chat, 2026-11-12). The hand-check is drawn from the Opus arm.
+- **Which arm the predictions are tested on** (added on 60's `r7758` read, before E3's main run started): P1b and P3b, like P1–P5, **are tested on the Opus arm**. The Sonnet arm is reported beside them as a replication. It does not count as a second test of any prediction.

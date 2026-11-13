@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "cond": "filler",
+ "item": "doc3_p1",
+ "system": "You are a writer of plain, descriptive encyclopaedia-style prose.",
+ "message": "Write about 1299 words on how a fictional stone lighthouse on a northern headland was built and kept. Write descriptive prose only: what things are, where, when, how they work physically, how they changed over time. Do NOT discuss evidence, research methods, how to reason, how to judge claims, reviewing, teamwork, collaboration, decision-making, advice, or controversies and debates. No lists, no headings beyond a title, no questions to the reader. Invent a fictional place where needed; do not cite studies or numbers from studies.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E8/materials/filler_raw/doc3_p1.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:51:44.387396+00:00",
+ "response": "# The Lighthouse at Skarrow Head\n\nSkarrow Head is a blunt promontory of grey gneiss on the northern coast of the island of Vell. It rises some forty metres above the sea and ends in a broken shelf of rock that the tide covers and uncovers twice a day. To the west lies the Narrows, a channel of strong currents between Vell and the smaller island of Orm. To the north there is open water as far as the ice. The headland is treeless. Its upper surface carries a thin mat of crowberry, sea pink and wind-flattened heather, and in the hollows the peat lies a little deeper, dark and wet for most of the year. On the highest point of this surface stands the Skarrow Head light, a round tower of dressed stone with a lantern of iron and glass at its top.\n\nThe tower was raised over four summers in the middle of the nineteenth century. Work on the headland was only possible between late spring and early autumn, when the swell eased enough for boats to land at a small cove on the eastern side, known as the Gullet. The first season was spent cutting a path from the cove to the summit and building a stone jetty in the Gullet. The jetty was made of large blocks set without mortar below the tide line and bedded in lime above it, and an iron ring was leaded into the rock at its end for mooring. A wooden tramway with a hand-wound winch ran up the slope from the jetty, and every block, beam and barrel for the tower travelled up it on a flat wagon.\n\nThe stone for the tower came from two sources. The foundation courses and the lower part of the shaft were built from gneiss quarried on the headland itself, from a cut a short distance inland that later filled with rainwater and became a small dark pool. The gneiss was hard and difficult to dress, and the masons worked it into rough rectangular blocks. The upper shaft, the gallery and the window surrounds were built from a pale sandstone shipped from a quarry on the southern mainland. This stone was softer and could be cut to precise curves, and each block was shaped on the mainland, numbered, and fitted on the headland according to its mark.\n\nThe foundation was cut directly into the bedrock. The masons removed the weathered surface of the gneiss until they reached sound rock, then cut a series of level steps into it so that the lowest course sat firmly in a shallow socket. The tower is round in plan and tapers as it rises. At its base the wall is nearly two metres thick, and at the level of the lantern it is less than a metre. The blocks in each course are dovetailed to their neighbours on either side, and each course is joined to the one below by short stone dowels set into drilled holes. This arrangement locks the tower together so that it behaves under the wind as a single piece of stone. The joints were filled with a lime mortar mixed with crushed brick, which hardened slowly in the damp air.\n\nInside, the tower holds six floors connected by a stone stair that winds against the outer wall. The lowest floor was a store for oil, with a flagged floor and a drain cut through the wall to the outside. Above it were a coal store, a workroom, two floors of living quarters and, at the top, the watch room directly beneath the lantern. Each floor is a single round room with one or two narrow windows set deep into the wall, so that the light inside is dim even on clear days. The floors were laid on stone corbels and timber joists, and the watch room had a floor of cast iron plates.\n\nThe lantern is a twelve-sided structure of cast iron uprights holding curved panes of plate glass. Its roof is a copper dome with a ventilator at the peak shaped like a small ball on a stem. The ventilator draws warm air and fumes up and out while keeping out rain. Around the base of the lantern runs an iron gallery with a railing, from which the outer glass could be cleaned. Inside the lantern stood the optic, a large assembly of glass prisms and lenses set in a brass frame. The central part of the optic gathered the light from the flame into a horizontal beam, and the prisms above and below bent stray light back into the same beam. The whole optic rested on a cast iron pedestal and turned slowly on a bed of rollers, driven by a clockwork mechanism with a falling weight. The weight hung in a hollow shaft running down through the centre of the tower and had to be wound back to the top every few hours. As the optic turned, its panels swept the beam around the horizon, and a ship in the Narrows saw the light as a flash repeated at a fixed interval.\n\nThe first lamp burned colza oil, pressed from rapeseed, in a burner with several concentric wicks. Later the lamp was changed to burn paraffin, which gave a brighter and whiter flame. In the early twentieth century the paraffin was vaporised under pressure and burned beneath an incandescent mantle, a small fabric hood coated with metal salts that glowed intensely when heated. Each of these changes brought new equipment into the watch room: tanks, pumps, pressure gauges and spare mantles packed in tins.\n\nBelow the tower, within a curved stone wall that broke the wind, stood the keepers' cottages. There were two of them under one long slate roof, with a shared yard, a well, a peat stack and a walled garden where potatoes, kale and turnips grew in soil carried up from the cove. A small byre held a cow and later a few sheep. The wall around the compound was built of the same grey gneiss as the lower tower and was whitewashed on its seaward face so that it could be seen from the water by day.\n\nThe daily work of the light followed the sun. In the hour before dusk the lamp was lit and the clockwork wound. Through the night the light was watched from the watch room, the weight rewound at intervals, and the wicks or mantles attended to. At dawn the lamp was extinguished and the curtains inside the lantern drawn closed, so that the sun would not focus through the optic and scorch the burner. The morning was given to cleaning. The prisms were wiped with soft linen and polished with fine rouge, the brass was rubbed, the lantern glass was washed inside and out, and soot was scraped from the ventilator. Oil was carried up from the lowest floor in brass cans, a few at a time, up the full height of the stair.\n\nThe weather on the headland shaped every part of the station. In winter gales, spray reached the gallery and left a crust of salt on the glass that had to be cleared before nightfall. Ice formed on the railings and on the lantern roof. In fog a bell was struck by a clockwork hammer from a frame on the seaward side of the compound, and later this was replaced by a compressed-air horn in a separate engine house, its trumpet pointed out over the Narrows.\n\nOver the following century the station changed slowly. The tramway rotted and was replaced by a concrete track. Electric power reached the headland after the middle of the twentieth century, first from a diesel generator in the engine house and later by cable. The burner was removed and an electric lamp placed at the focus of the old optic, which continued to turn on its rollers, now driven by a small motor. The cottages were emptied when the light became automatic, and their windows were boarded. The lantern still turns each night, and the tower stands on Skarrow Head, its grey base and pale upper stone darkened by salt and lichen.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 1492,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 2463,
+  "output_tokens_details": {
+   "thinking_tokens": 110
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1492,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2463,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 1492,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1492
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.061204,
+ "duration_ms": 34494,
+ "wall_s": 35.38,
+ "attempt": 0
+}

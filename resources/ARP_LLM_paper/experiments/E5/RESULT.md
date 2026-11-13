@@ -46,6 +46,7 @@
   - This is the case the amendment was written for.
 - **P3 (novel valid findings fall R0 → R2): not supported.**
 - **One registered contrast moved that no prediction named:** R1 (the brief added) lowers both novel valid findings (−0.80, interval excludes 0) and valid findings (−1.30). A reviewer given the brief finds fewer problems of any kind. A is unchanged.
+  - **This contrast is not robust to the validity threshold** (60, `r7758`). Its interval clears 0 by 0.08, while the threshold shifts novel findings by 0.8 to 1.3 per level. On the hand-checked sample it halves, from about −0.4 under the matcher's coding to about −0.2 under the hand coding. **No paper sentence should quote it without that caveat.**
 
 ## Secondaries (registered, built at `r7755` as blind scorer passes; see deviations)
 
@@ -75,7 +76,7 @@
 
   - R2's A advantage shrinks from about +0.14 to +0.08.
   - Novel valid findings rise from R0 to R2 rather than fall.
-  - **Every conclusion above stands under either threshold:**
+  - **Every conclusion about P1–P3 stands under either threshold** (the R1 − R0 contrast above does not):
     - P1 holds;
     - A rises at R2 by echo;
     - novel valid findings do not fall;
