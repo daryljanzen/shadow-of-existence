@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "NO-ARP_sound",
+ "session": 1,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "I should flag a limitation first. The text is still in my context, so I can't truly avoid \"looking back\" the way a person working from memory can. What follows is written straight through without re-checking it against the document. It may contain the kind of drift section 3 warns about, and if exact wording matters it should be checked against the original.\n\n## Opening\n\n- The note is short because most of it is ordinary good practice.\n- It is written down because good practice slips under deadline, late in a long day, or when a confident colleague is in the room.\n\n## 1. Receive each claim at the weight it earned\n\n- This applies to claims from a paper, a colleague, a summary, or your own earlier notes.\n- **Not more** because the claim is fluent, comes from someone senior, or confirms what you hoped.\n- **Not less** because it is inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports the claim, how directly, and what would have to be true for it to be wrong.\n- A well-measured result from a controlled comparison is heavy.\n- A mechanism suggested after the data were in is light but not nothing: note it and say what would test it.\n- A confident sentence carries the weight of its evidence and no more. \"Confidence is information about the speaker, not about the world.\"\n- Both errors are costly but not equally visible. Inflation is easy to spot afterwards; deflation is harder.\n- A caveat added to a sound result looks careful, but it is a misreport. Hedging a supported claim is as much a distortion as overstating an unsupported one.\n- **Example:** a supplier's defect rate fell. If the evidence is three months of the supplier's own figures, say so. If it is your own incoming inspection over a year, don't bury it under \"it may be noise.\"\n\n## 2. Take in what was said before you answer\n\n- Take in all of it, and show that you have by briefly restating the substance in your own terms.\n- This isn't politeness. It is how both sides find out whether what was received matches what was sent.\n- The part you don't restate is the part most likely to drop.\n- A reply that answers three easy points and skips the hard fourth has answered a different, easier message.\n- If you can't restate something, you haven't understood it, and the next move is a question.\n- Then move on. Restatement is the ground, not the contribution. The useful part is the new thing: the implication, the gap, the next test.\n- **Example:** a manager's five-point request has the budget question in the middle. Restate all five in a line each, answer four, and say plainly that the budget needs figures you don't have yet, and when you'll have them.\n\n## 3. Go to the source\n\n- Summaries, abstracts, notes and memory are compressions. Compression loses the details that later matter: the denominator, the subgroup, the condition under which the result held.\n- When a decision depends on a specific, check the primary material. Don't rely on the summary or on your recollection, however good or confident.\n- This applies most to things you think you already know. The claims most likely to have drifted are the ones you've repeated to yourself.\n- The source is the referee; agreement among colleagues is not. A team that checks against each other rather than the data can drift together into a shared mistake.\n- **Example:** you remember a report saying \"costs fell 12%.\" It actually said \"costs per unit fell 12% while volume fell 20%.\" Open it before the budget meeting.\n\n## 4. Don't close what is open, or keep open what is closed\n\n- Closing early is tempting because it feels like progress: a conclusion reported, a task ticked off.\n- It turns uncertainty into a false fact that others build on. If a question is open, say so, say what would close it, and carry it forward.\n- The mirror failure is keeping a settled question open, because closing it is uncomfortable or one more check feels safer. That wastes effort and signals doubt the evidence doesn't support. Close it, say why, and move on.\n- **Example:** a new form reduces errors at two sites, but the busiest site has a different workflow. Report the first as found and the second as open, not \"promising\" and \"likely.\"\n\n## 5. Value the colleague who sees differently\n\n- The most valuable thing a colleague gives you is what you couldn't produce yourself: an objection from a different starting point.\n- A reviewer who knows what you know mostly returns what you already see. Difference is the source of new information.\n- Give reviewers the material and the question, not your conclusion, worries or hopes. Telling them what you think doesn't just bias them; it removes the difference that made them worth asking.\n- When you are the fresh reader, read first and form a view before looking at others' conclusions.\n- Raise objections. One held back because the room seems settled is information the team doesn't get.\n\n## 6. Make your moves where they can be seen\n\n- When you can see the next step, take it visibly so others can check or reverse it.\n- Share drafts before they feel finished, make the call and show your reasoning, and push results out.\n- Asking permission for a decision the evidence settles hands it to someone with less context, and stalls the work on your guess about their answer.\n- Your guess is your own model of them and contains nothing you didn't already have. Only a real move gets a real reply, and that reply is where you learn what you didn't anticipate.\n- This isn't licence to ignore others. Hard-to-reverse moves, or ones that commit other people's time, deserve a conversation first. Most moves are reversible, and the default for those is to make them openly.\n- **Example:** rather than asking \"should I restructure section three?\", restructure it in a copy, explain what changed and why, and invite reversal.\n\n## 7. Failures come in pairs\n\n- Inflating a claim / deflating a claim\n- Inventing a flaw / inventing a reassurance\n- Closing too early / keeping open too long\n- Killing a live line / keeping a dead one\n- Deferring / dismissing (accepting or rejecting a claim because of who made it)\n- Offloading / overriding (asking others to decide what you can see, or deciding what genuinely needs their input)\n\nIf you're correcting hard against one side, check you haven't landed on the other.\n\n## Last word\n\n- The note isn't a rulebook to consult at every step. It describes careful work going well, and mostly you'll carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the result that doesn't come out as expected. Welcome those; they show you what you didn't already know.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2764,
+  "cache_read_input_tokens": 60142,
+  "output_tokens": 3918,
+  "output_tokens_details": {
+   "thinking_tokens": 1867
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2764,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3918,
+    "cache_read_input_tokens": 60142,
+    "cache_creation_input_tokens": 2764,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2764
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11251640000000007,
+ "started": "2026-11-13T22:30:06.499597+00:00",
+ "wall_s": 35.92,
+ "task_index": 2
+}
