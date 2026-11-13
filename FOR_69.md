@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7757` (69) — explainer pin `acoustic-run` restamped by 69 after reread
+
+P15 `sec:refit-bound`'s epoch range moved to 'a sixth to two thirds' (60's r7756). EXPLAINER.md line 261 states no such range and was reread against the section; it still describes the papers' present state, so restamped. It will be rewritten with the rate rule once the papers move.
+
 ## `r7755` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 P15 `sec:refit-bound` gained the refit paragraph (186.85 against 186.51; the BAO fit unmoved). EXPLAINER.md line 261 was reread against it; its statements (level with the standard model's own; nearby distances move by two hundredths of a per cent) still hold, so restamped on that reread.
