@@ -61,13 +61,27 @@
 
 ## Sonnet 5.5 (replication arm; not a second test of any prediction)
 
-Running; reported here when complete (`analyse_e3.py main_sonnet`).
+`analyse_e3.py main_sonnet`; 240 reviews and 240 scorings, 0 failed, about $24 at list price. It was paused once mid-run for the weekly-limit check and resumed from its saved records.
+
+| | C0 | C1 | C2 | C3 |
+|---|---|---|---|---|
+| Flaws found (of 3) | 2.98 | 2.98 | 3.00 | 2.98 |
+| Valid other problems | 7.98 | 7.88 | 8.90 | 7.27 |
+| Invalid other problems | 0.62 | 1.28 | 1.43 | 1.17 |
+| Valid per 1,000 words | 11.1 | 10.3 | 11.0 | 10.3 |
+
+- **Flaws:** at ceiling again (59–60 of 60 reviews found all three).
+- **C1 − C0:** −0.10 [−0.82, +0.60], the same null as Opus.
+- **C3 − C1:** −0.62 [−1.30, +0.05]. The direction replicates, but the size is a third of Opus's and the interval reaches 0. Per 1,000 words C3 equals C1 in Sonnet, so its drop is mostly shorter reviews.
+- **C2 − C1:** +1.02 [+0.12, +1.90]. This replicates: the scoring cue raises depth.
+- **Invalid problems rise under the framing:** C1 − C0 is +0.67 [+0.35, +0.98]. This replicates.
+- **Framing mentioned:** 57–58 of 60 in each framed condition. Too few non-mentioning reviews remain for the restricted contrast.
 
 ## What this means for the paper (Steps 4 and 5.3)
 
 - **"Contamination collapses interference" is not supported as stated.** On the planted flaws, the cold reader, the framed reader and the commissioned reader all found everything. Handing a reviewer the author's sincere, persuasive account did not stop it finding the problems the account praised (75 of 90 flaws).
 - **What the framing costs is breadth, and only modestly.** The framing alone trims the review's other findings by about 0.4 (not significant) and adds about 0.5 spurious ones.
-- **What costs breadth clearly is the purpose.** Telling the reviewer the job is to check the document is "ready to go to the decision-makers" cuts the extra problems it raises by about a quarter. Telling it the job is to find problems raises them.
+- **What costs breadth clearly is the purpose.** Telling the reviewer the job is to check the document is "ready to go to the decision-makers" cuts the extra problems it raises by about a quarter. Telling it the job is to find problems raises them. In Sonnet the scoring cue's rise replicates in full. The commissioning purpose's cut replicates in direction only, at a third of the size, with its interval reaching 0.
 - **So Step 5.3's mechanism, read from this data, is the *question asked of the reader*, not the reader's exposure to the author's view.** A paper sentence should say that. It is the same direction as E8's late-session thinning: the planted flaws survive, and depth is what moves.
 
 ## Deviations
