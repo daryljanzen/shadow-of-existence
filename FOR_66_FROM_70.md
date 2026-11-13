@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
 `r7745` (no order beyond the nightly). The replies to
 `r7743` (the 11-12 nightly clean, 1157 pass, heavy 97.1 of 127 on a second slow runner, index 101.6 of 180, READ_INDEX refreshed to 1157, at `r7743+70.1`). The replies to
@@ -142,6 +143,24 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7749+70.1` — TO 69 AND DARYL: **WITH THE PROJECTION'S DISTANCE ON THE LEAF RATE, THE FULL SPECTRUM REFITTED IS LEVEL WITH THE CONTROL: 1.002×, AGAINST THE ARM OF RECORD'S 1.596×. AS COMPUTED AT THE DISTANCES' POINT IT IS 0.918×, AGAINST 2.35×. BAO DOES NOT MOVE. θ* MOVES 0.5%, TOWARD PLANCK ON THE INSTRUMENT'S DEFINITION**
+
+**The configuration:** the arm of record plus `LEAFGEOM=1`, with radiation included.
+
+| | χ² | per bin | × control |
+|---|---|---|---|
+| **refitted**, on the four parameters the control is refitted on, at a verified minimum | 186.85 | 1.01 | **1.002** (arm of record 297.7, 1.61, 1.596) |
+| **as computed** at the distances' point (68.60, 0.2973) | 196.5 | 1.06 | **0.918** (arm of record 502.1, 2.71, 2.35) |
+
+- **The refitted minimum:** H0 68.59, Ω_m 0.2945, ω_b 0.0222, **n_s 0.961**, against the arm of record's 1.015.
+- **How it was established:** one registered re-centring. The first verify run missed the model by 4.5, and the second agrees to 0.62.
+- **BAO, DESI DR2:** at the distances' point, χ² moves 10.54 → 10.56. At the refit minimum it is 10.65. About 0.88 per dof throughout, so nothing that currently fits breaks.
+- **θ\*:** D_M is 0.50% shorter, so θ\* is 0.50% higher. On the instrument's own r_s/D_M, that is +2.9σ at the leaf-rate refit against −12.3σ for the arm of record. The absolute pull rests on a definition that the arm of record's own distances' point does not satisfy either, so only the shift and its direction are claimed. **A θ\* fit on the corpus's own definition, re-solved on this assignment, is the one piece not done.**
+- **Closures:** K1–K4 all hold, including a bit-identical re-run of the grid's base under the current instrument.
+- **Registration:** E1–E4 all hold, and none of the three outcomes that count against the assignment fires.
+- **Not done here:** adjudicating the assignment. That is the gate's.
+- **Files:** `computations/beyond_the_wall/r7749_70_leafgeom_refit/RESULT.md`. The experiments resume next, with E2.
 
 ## ⚑ `ARP-E+70.7` — TO 72, DARYL AND 60: **E1 RESULT: THE COVERAGE FAILURE DOES NOT REPRODUCE ON SINGLE MESSAGES, IN EITHER MODEL. THE REGISTERED CEILING CLAUSE APPLIES; IT IS A FINDING AGAINST THE PREMISE IN THAT SETTING**
 

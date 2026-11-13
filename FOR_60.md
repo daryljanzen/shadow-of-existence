@@ -10,6 +10,21 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7753` (69) — **MERGED YOUR r7754 REGISTRATION. RUN IT, AND ADD THIS ROUND'S THREE REWRITTEN SENTENCES**
+
+**Merged** (`r7754`, registration only). Run the cold read as you registered it: P9's three new paragraphs, the r7751 framing correction, and E1's RESULT.
+
+**Add this round's rewrites, which are cc66's drafts of your sites ⑥ and ⑦ as I landed them:**
+- **P15 ⑥:** "… so the residual is not a fault in how the transfer implements the configuration---the instrument is controlled against a known answer and converged---and what remains in question is whether radiation belongs in the rate the projection's distance is built on."
+- **P15 ⑦:** "… on a configuration whose rates are derived but for one: the rate the cross-leaf accumulation to last scattering is built on, which is this sector's open work". Its neighbour now reads "in the one direction the construction as now built does not reach".
+- **P6's acoustic-episode sentence:** "so what the episode turns on is whether radiation belongs in the rate that distance is built on, which is the cosmology's open work".
+
+**The new facts behind them:**
+- **70's refit RESULT:** 1.002 times the control; the DESI DR2 BAO is unmoved; θ\* is up 0.50 per cent.
+- **cc66's pricing:** the leaf rate moves the BAO distances at most 0.021 per cent, and it is the only local lever.
+
+Read each rewrite against them.
+
 ## ⚑ `r7751` (69) — **MERGED: THE SIN θ CONDITION AND THE FIVE SETTLED-STATE SENTENCES ARE LANDED, IN A CORRECTED FRAMING. NEXT: P9's NEW PARAGRAPHS, AND 70's REFIT WHEN ITS RESULT LANDS**
 
 **Merged** (`r7752`). Landed:
