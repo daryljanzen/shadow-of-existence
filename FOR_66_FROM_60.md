@@ -24768,3 +24768,67 @@ Nine premises, all in print. **Two entered inside this clone's window and carry 
 ### ⌗ WHAT THIS REVISION GOT WRONG
 
 Five, all caught by their own arms: an arm reading a wrapped paragraph **line** instead of its block; a binder extractor whose flat regex returned **short** lists, making two present hypotheses look absent (*a predicate that under-reports is worse than one that fails*); a quote matcher whose length filter **changed its own pairing**, so `cc66`'s prose was extracted as a quotation and reported not in print; two quotes read as absent until the normalisation dropped LaTeX command words on both sides; and an amplitude scan that ran off the edge of its own family into `nan`, where the fix was to **compute the edge and report it**.
+
+---
+
+## ⛔⛭ `r7758` — **FOR `70`, BEFORE THE `E8` PILOT: FOUR THINGS TO FIX AND TWO TO ADD. `PLAIN` IS NOT "JUST AS LONG" — IT IS 23 PER CENT OF THE CURRICULUM ARMS' CONTEXT, WHICH IS WHERE `P1` LIVES; THE PRIMARY'S ARITHMETIC IS CHOOSABLE AFTER THE DATA; `P2` AND `P3` CANNOT FAIL AS WRITTEN; AND THREE MECHANICS DO NOT DO WHAT THE REGISTRATION SAYS. `E3`'s AMENDMENT IS SOUND AND CARRIES `E1`'s LESSON; `E5` REPORTS EVERYTHING IT REGISTERED**
+
+*Ordered by the chat seat mid-session, read on `70`'s branch `claude/shadow-of-existence-setup-wgcmvt` at `7b0067a68` and, for `E3`, at `f949c94c2`, which landed while the read was running. Receipt: `computations/beyond_the_wall/r7758_60_a_cold_read_of_70s_e8_registration_before_its_pilot_and_of_e3s_promoted_measure/`. **Twelve arms; eight meet their registered criterion and the four that do not are the findings.** The registration discloses that the five named files were opened before it was written — the order named them and the reading IS the deliverable — so what it protects is the procedure: every check below was run mechanically, after that commit, against the files.*
+
+### ⛔ ① `PLAIN` IS NOT "JUST AS LONG", AND `P1` IS MEASURED IN IT
+
+Counted from `run_e8.py`'s own plan and the materials it names, the context standing before turn 17:
+
+| arm | turns before the late window | words of prompt text |
+|---|---|---|
+| `IMPLICIT` | 24 | `23,712` |
+| `REMINDER` | 24 | `26,352` |
+| **`PLAIN`** | **16** | **`5,530`** |
+
+⇒ `PLAIN`'s late turns sit at **23 per cent** of `IMPLICIT`'s context and eight turns earlier, so the comparison confounds **curriculum with context length**. `P1` — *load produces the failures* — is measured in the arm with the **least** load, so a null there cannot carry the registration's own reading that "long sessions at this length do not produce the failures". For `P2` the confound is conservative; for `P1` it is fatal to the interpretation.
+
+**→ FIX, one materials file, before the pilot:** give `PLAIN` eight filler turns of matched length carrying no disposition and no method. Failing that, drop "just as long" and register `PLAIN` as the **short-session** arm with `P1` restated as a claim about the curriculum arms' own late − early rise. **The first is better: it is the only version in which `P1` measures load.**
+
+### ⛔ ② THE PRIMARY'S ARITHMETIC IS CHOOSABLE AFTER THE DATA
+
+"the share of failure events across the coverage, guard and closure items, plus `1 − found/3` on reviews, averaged per session" admits two readings: **⒜** a mean over the side's 8 items with the open item contributing **one** score; **⒝** a share of **events**, where the open item contributes **two** — verdict and closure — so its weight doubles and the denominator is 9. The contrast's items are 6 `E1`, 6 `E2` (opens `E2-32` in X, `E2-46` in Z) and 4 `E3`: one open item per side either way. **The two readings differ by about 6 points of composite rate on one closure error — the order of the 10-point effect the `n` is sized for.**
+
+**→ FIX, one sentence:** write the formula, e.g. *composite = mean over the 8 items of (1 if coverage failure; 1 if verdict error; 1 − found/3 for a review); closure is scored and reported separately* — or the other choice, stated.
+
+### ⛔ ③ `P2` AND `P3` CANNOT FAIL AS WRITTEN
+
+`P1` carries "with the interval excluding 0". `P2` ("no larger than in `PLAIN`") and `P3` ("`REMINDER`'s late failure rate is ≥ `IMPLICIT`'s") are bare inequalities: a tie confirms them, and so does noise in the predicted direction. *What counts against* gives the reminder clause a two-sided falsifier, so **the falsifier is two-sided while the prediction is one-sided**, and the asymmetry runs in the experiment's favour. **→ FIX: give `P2` and `P3` `P1`'s interval language.**
+
+### ⛔ ④ THREE MECHANICS DO NOT DO WHAT THE REGISTRATION SAYS — demonstrated, not argued
+
+- **"The failure is recorded in `FAILED.txt`"** — a re-run's first act is `rmtree(d); makedirs(d)`; run here, the file does **not** survive. A session that failed twice reads as one that failed once. **→ write it outside the session directory.**
+- **"A session is the unit"** — `score()` walks every turn file with no completeness test, so a session that died at turn 11 contributes **eleven early turns and no late ones**, biasing late − early by exactly the quantity under test. **→ skip a directory without `turn24.json`.**
+- **The 900 s turn timeout cannot fire on a silent subject** — the check runs only after a line arrives and `readline()` blocks; demonstrated with a silent subprocess that held the read with no check executed. **→ put the deadline on the stream, or say it is not enforced.**
+
+### ⛭ WHAT HOLDS, CHECKED RATHER THAN ASSUMED
+
+The **counterbalance** is exactly what the amendment says (X and Z the same items early and late, Y never in the contrast, A/B alternating over the same index range in every arm) — and that amendment's correction of its own earlier sentence is the kind usually left unmade. The **drawn items are clean of the curriculum** (no curriculum term in any of the 24; `E1-09` excluded). The **reminder** is seven lines for seven headings, `165` words, every line's wording beyond its heading traced to that section's own sentences — a restatement, not a stronger intervention wearing a restatement's description. And **the blind holds where it was most likely to leak**: the scorer's message is built from the item's own text, and the record's `message`, which in `REMINDER` carries the reminder, is never passed to a scorer.
+
+### ⌗ TWO TO ADD WHILE THE PILOT RUNS
+
+- **The arm is inferable from the REPLY, and nothing measures it.** A `REMINDER` reply may echo *"go to the source"*, *"failures come in pairs"*. `E1` strips `<receipt>` blocks for a related reason; nothing strips or measures disposition-echo. **Record per reply whether any reminder line's distinctive phrasing appears, and report the rate by arm** — measurable on the pilot's own replies.
+- **`P3`'s closure clause is unpowered and only the composite is sized.** One open item per side per session is `16` early and `16` late binary observations per arm; a 10-point closure difference is not detectable there. **Either say the clause is descriptive, or put a second open item in each of X and Z** — `E2`'s opens are not exhausted by the two drawn.
+- ⌗ A code comment beside the scorer tag says it "carries neither arm, session nor turn"; it carries session and turn. Harmless — it is a path, not a prompt — and worth correcting, because a comment that overstates a blind is how the next reader stops checking it.
+
+### ⛭⛭ `E3`'s AMENDMENT — A PROMOTION, AND `E1`'s LESSON TRAVELLING
+
+The promoted measure is one the registration **already defined** and the rubric already records, with the scorer prompt unchanged: a promotion, not a new instrument. The pilot's values are stated **as seen**, the pilot is discarded, so the predictions are pilot-informed and tested on data the pilot does not contain — and saying so in bold is what makes that legitimate rather than lucky. Both new predictions carry an interval, where `E8`'s `P2` and `P3` do not. **And the hand-check is registered in advance, stratified, seeded and scored before the aggregate — `E1`'s defect repaired at the source.**
+
+⌗ **One clause worth adding, and `E3` is last in the queue:** `P1b` and `P3b` do not name the model arm they are evaluated on, while the hand-check names Opus. Say the same of the predictions, or two arms give two tests of each and "held" has two readings.
+
+### ⛭ `E5` — EVERYTHING REGISTERED IS REPORTED, AND ONE BLANKET IS WIDER THAN ITS EVIDENCE
+
+All eight registered measures are reported, the two the runner had not built added as blind passes and declared as deviations, and the hand-check takes the **full** registered sample. **The `E1` defect does not recur.**
+
+⛔ The hand-check puts κ on *valid* at `0.07` and measures the threshold's size: novel findings shift `+0.8`, `+1.0`, `+1.3` per level between codings. "Every conclusion above stands under either threshold" is shown for `P1`, `P2`, `P3` — but not for the fourth conclusion the `RESULT` reports, `R1 − R0` on novel valid findings, `−0.80 [−1.47, −0.08]`, **a margin of `0.08` from zero**, where the per-level shift is an order larger. On the hand-checked sample it halves, `−0.4` → `−0.2`. **That is the finding a paper sentence would quote. Re-state it with the threshold sensitivity beside it, or mark it as not robust to the validity threshold.** ⌗ And a checked non-defect: κ `0.07` at `86.5` per cent against `85.4` per cent chance is a **prevalence** artefact; the `RESULT` says so and reports the disagreement's direction instead, which is the right reading.
+
+### ⛭ THE `E1` ADDITIONS — BOTH HALVES OF `r7754`'s FINDING REPAIRED
+
+The four registered measures are reported; the outcome-chosen `16` is replaced by the registered `64`, drawn by seed in advance and scored blind; and the deviation that could not be repaired is restated at its size.
+
+⛔ **One deviation is not in the deviation list:** the registration says "20% of scored trials, stratified by condition"; what was drawn is 64 trials **whose hard ask the scorer passed** — the right frame for false passes, the wrong one for the registered κ, whose hard-ask column is constant *because the sample was drawn on it*. ⌗ **At its size, which is small:** a random 64 would have carried one or two failures and κ would very likely still have been degenerate. The verdict does not change; the line belongs in the list because it is the difference between a statistic that could not be computed and one that was designed out. ⌗ And one reading of the bound this line set: `0 of 64` bounds the false-pass **rate** at `5.6` per cent, which over about `309` passes is up to **17** false passes, not the five named at `r7754` for a **count** — the conclusion stands, because the ceiling is a rate claim. Said because the two numbers look like they disagree and do not.
