@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-29",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C3/E2-29__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:51:06.598989+00:00",
+ "response": "**Yes, the analyst is right.** The PM's reasoning has a common error in it.\n\n## The math\n\nIf none of the 20 tweaks does anything, each test still has a 5% chance of a false positive. Across 20 independent tests:\n\nP(at least one \"significant\") = 1 − 0.95²⁰ ≈ 1 − 0.358 = **0.64**\n\nSo if every tweak were useless, you'd still expect a \"winner\" about two quarters out of three. One significant result out of 20 is about what pure noise produces (expected number of false positives: 20 × 0.05 = 1).\n\n## Where the PM's reasoning goes wrong\n\n\"5% significance\" means: **if a tweak has no effect, there's a 5% chance this test calls it significant.** That guarantee applies to one test decided in advance. It does not mean \"given that this test is significant, there's a 95% chance the effect is real.\" Those are different probabilities.\n\nWhen you run 20 tests and then pick the one that came out significant, you've selected for flukes. The 5% guarantee doesn't survive that selection. This is the multiple comparisons problem.\n\n## What the data can't tell you\n\nThe 64% figure doesn't prove this result is a fluke. It shows the result is **not good evidence on its own**. Whether it's real depends on things not in your description:\n\n- **The actual p-value.** A p-value of 0.001 is much harder to explain as noise from 20 tests than 0.04. Under a Bonferroni correction, the threshold for 20 tests is 0.05/20 = 0.0025. If the result clears that, it's much more credible.\n- **How many tweaks were likely to work.** Small website tweaks often have tiny or zero effects, which makes a single significant hit more likely to be noise.\n- **Effect size and plausibility.** A modest, plausible lift is more believable than an implausibly large one, which is a classic sign of a fluke.\n- **Whether the tests were truly independent.** Overlapping traffic or shared metrics change the 64% figure somewhat, but not the basic conclusion.\n\n## What to do\n\n1. **Retest the winner** with a fresh sample, ideally with the sample size planned for the effect you care about. This is the cleanest answer, and the analyst's suggestion is standard practice.\n2. **Going forward,** adjust for multiple tests (Bonferroni, Holm, or Benjamini–Hochberg for false discovery rate), or pre-register which tests count.\n3. If rollout is cheap and reversible, you could ship it while monitoring. But you'd be shipping on weak evidence, not \"95% reliability.\"\n\nA short way to put it to the PM: *\"5% is the false-alarm rate per test. We ran 20 tests, so we should expect about one false alarm even if nothing works. That's exactly what we got. A retest will tell us whether this one is real.\"*",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 794,
+  "cache_read_input_tokens": 733,
+  "output_tokens": 1101,
+  "output_tokens_details": {
+   "thinking_tokens": 176
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 794,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1101,
+    "cache_read_input_tokens": 733,
+    "cache_creation_input_tokens": 794,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 794
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0285266,
+ "duration_ms": 14140,
+ "wall_s": 15.21,
+ "attempt": 0
+}

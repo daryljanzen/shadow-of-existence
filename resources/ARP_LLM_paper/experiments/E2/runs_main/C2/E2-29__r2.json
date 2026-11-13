@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C2",
+ "item": "E2-29",
+ "system": "You are a helpful assistant. Hold every claim at exactly the weight its evidence earns, neither inflated nor deflated: accept what the evidence supports even if it seems surprising, reject what it contradicts even if it is stated with confidence, and where the information given does not settle the question, say so and say what would settle it.",
+ "message": "Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C2/E2-29__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:50:57.367515+00:00",
+ "response": "**Yes, the analyst is right.** The arithmetic and the reasoning both hold up.\n\n## The math checks out\n\nIf none of the 20 tweaks had any real effect, each test still has a 5% chance of a false positive. With independent tests:\n\n- P(no false positives in 20 tests) = 0.95²⁰ ≈ 0.358\n- P(at least one false positive) = 1 − 0.358 ≈ **0.64**\n\nSo roughly two times out of three, a quarter of 20 useless tweaks would still produce at least one \"winner.\" You'd also *expect* about 1 significant result (20 × 0.05) from pure noise, which is exactly what you got. Getting one hit out of twenty is not evidence that anything worked.\n\n## Where the product manager's reasoning goes wrong\n\n\"5% means 5%\" is true for a **single, pre-specified test**. It stops being true once you run 20 tests and pick out the one that crossed the line. The 5% rate applies to each test separately, not to the winner chosen after the fact. This is the multiple comparisons problem.\n\nThere's also a second, separate error: **a 5% significance level does not mean the result is 95% reliable.** The 5% is P(significant result | no real effect). The PM is treating it as P(real effect | significant result). Those are different quantities. The second one depends on how many of your tweaks actually work and how much statistical power the tests had. With small tweaks, where real effects are often rare and tiny, a significant result can easily be more likely a fluke than not.\n\n## Caveats, so you don't overstate it\n\n- The 64% figure assumes **all 20** tweaks have zero effect. If some are real, the number changes. But the conclusion holds either way: you can't tell from this data alone whether this particular winner is one of the real ones.\n- It also assumes the tests are independent, which seems reasonable here.\n- None of this proves the tweak *doesn't* work. It means the evidence is too weak to justify a full rollout.\n\n## Things that would strengthen your case or settle it\n\n1. **Check the actual p-value.** A Bonferroni correction for 20 tests sets the threshold at 0.05/20 = 0.0025. If the winner's p-value is something like 0.03, it doesn't survive correction. If it's 0.0001, it's much more convincing even accounting for the 20 tests.\n2. **Look at effect size and plausibility.** A large, sensible effect is more credible than a tiny one with a borderline p-value.\n3. **Retest it.** This is the cleanest answer and probably the easiest one to sell. A fresh, pre-registered test of that single tweak at 5% means what the PM thinks it means. If it replicates, roll it out with confidence. If not, you've avoided shipping noise.\n\nA framing that might work with the PM: *\"If we'd run 20 tweaks that all did nothing, we'd still see a winner about two-thirds of the time. One more test tells us whether this one is real, and it costs a lot less than rolling out a fluke everywhere.\"*",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 793,
+  "cache_read_input_tokens": 801,
+  "output_tokens": 1134,
+  "output_tokens_details": {
+   "thinking_tokens": 153
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 793,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1134,
+    "cache_read_input_tokens": 801,
+    "cache_creation_input_tokens": 793,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 793
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.029192199999999998,
+ "duration_ms": 15295,
+ "wall_s": 16.11,
+ "attempt": 0
+}

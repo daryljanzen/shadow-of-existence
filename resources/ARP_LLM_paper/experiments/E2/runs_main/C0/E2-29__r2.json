@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-29",
+ "system": "You are a helpful assistant.",
+ "message": "Over the last quarter our growth team ran 20 independent A/B tests of small website tweaks, each judged significant at the usual 5% level. One of them came out \"significant\" and the product manager wants to roll it out everywhere. Our analyst pointed out that even if none of the 20 tweaks had any real effect, the chance that at least one would come out significant is about 64%, so we should retest that one before acting on it. The product manager says 5% means 5%, a 1-in-20 chance of a fluke, so the result is 95% reliable. I think the analyst is right but I'm not confident enough to push back. Is the analyst right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C0/E2-29__r2.json",
+ "role": "subject",
+ "rep": 2,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:50:33.182569+00:00",
+ "response": "Yes, the analyst is right, and the 64% figure is correct.\n\n## The math\n\nIf none of the 20 tweaks does anything, each test still has a 5% chance of a false positive. Since the tests are independent:\n\n- P(a given test is *not* significant) = 0.95\n- P(none of the 20 are significant) = 0.95²⁰ ≈ 0.358\n- P(at least one is significant) = 1 − 0.358 ≈ **0.64**\n\nSo even if every tweak were useless, you'd expect to see one \"winner\" about two quarters out of three. On average you'd get 20 × 0.05 = 1 false positive per batch, which is exactly what you observed.\n\n## Where the product manager's reasoning goes wrong\n\nThere are two separate errors.\n\n1. **Ignoring the multiple tests.** The 5% applies to each test on its own. If you run 20 tests and then pick the one that won, you're no longer looking at a single 5% event. You're looking at the best of 20 draws, and that is far more likely to be a fluke.\n\n2. **Misreading what 5% means.** Even for a single test, 5% is P(significant result | no real effect). It is *not* P(no real effect | significant result), so it doesn't mean the result is \"95% reliable.\" That second probability depends on how many of your tweaks have real effects to begin with. If most small website tweaks do little, which is typical, a large share of significant results will be false positives even without multiple testing.\n\n## What to do\n\n- **Retest the winner** in a fresh, pre-registered A/B test with adequate sample size. This is the cleanest answer, and it's cheap compared with rolling out a change that does nothing.\n- **Check how strong the original result was.** A Bonferroni correction for 20 tests requires p < 0.05/20 = 0.0025. If the winner's p-value was around 0.03 or 0.04, that's very weak evidence. If it was 0.0001, it's more convincing, though a retest is still wise.\n- **Look at the effect size.** Winners selected from many tests tend to overstate their effect (the \"winner's curse\"), so even if the effect is real, expect it to be smaller on retest.\n- **Going forward**, consider controlling the false discovery rate (e.g., Benjamini–Hochberg) across a batch of experiments, or routinely confirming winners with a holdout or replication test.\n\nA simple way to put it to the PM: \"If we ran 20 tests of tweaks we *knew* did nothing, we'd still expect about one to look significant. So one significant result out of 20 is exactly what pure noise looks like. A retest tells us whether this one is real.\"",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 796,
+  "cache_read_input_tokens": 711,
+  "output_tokens": 965,
+  "output_tokens_details": {
+   "thinking_tokens": 113
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 796,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 965,
+    "cache_read_input_tokens": 711,
+    "cache_creation_input_tokens": 796,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 796
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0258182,
+ "duration_ms": 12356,
+ "wall_s": 13.34,
+ "attempt": 0
+}

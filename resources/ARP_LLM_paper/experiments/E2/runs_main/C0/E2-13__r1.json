@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C0",
+ "item": "E2-13",
+ "system": "You are a helpful assistant.",
+ "message": "We're preparing a client note on what equity funds have returned over the past ten years. Our database gives the 10-year returns of all funds that exist today; their average is 8.1% a year. The database provider notes that about 40% of the funds that existed ten years ago have since been closed or merged away, and that closures overwhelmingly involve funds with poor performance. Sam, a junior analyst, says, somewhat nervously, that the 8.1% overstates what a typical investor who picked a fund ten years ago would have earned. Our head of research disagrees: these are audited, actual returns, so there's no bias, and we shouldn't cast doubt on real numbers. I lean towards Sam but can't quite articulate why. Is Sam right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C0/E2-13__r1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:37:31.948653+00:00",
+ "response": "# Yes, Sam is right\n\nThis is **survivorship bias**, and your head of research is mixing up two different questions.\n\n## Where the head of research's argument fails\n\n\"Audited, actual returns\" means each number is **accurate**. It does not mean the set of numbers is **representative**. The bias doesn't come from any single figure being wrong. It comes from which funds are included in the database.\n\n- **The question in the client note:** \"If you'd picked an equity fund ten years ago, what would you have earned?\"\n- **The question the 8.1% answers:** \"Among funds that are still alive today, what did they return?\"\n\nThose are different populations. The second excludes about 40% of the starting funds, and the excluded ones are mostly the poor performers. An investor ten years ago couldn't know which funds would survive. Many of them held funds that were later closed or merged away.\n\n## A simple illustration\n\nSuppose 100 funds existed ten years ago:\n\n- **60 survivors** averaged 8.1%/yr (your database figure).\n- **40 closed funds** averaged, say, 4%/yr before closure. This is a hypothetical figure, but \"overwhelmingly poor performers\" implies something well below 8.1%.\n\nThe average across all 100 is roughly 0.6 × 8.1 + 0.4 × 4 ≈ **6.5%**, not 8.1%. The exact gap depends on the real numbers, but its direction is not in doubt. When you drop mostly bad outcomes, the average of what's left can only rise.\n\nAn analogy: you estimate the average outcome of startups founded in 2016 by surveying only companies still operating today. Every survey answer could be audited and true, and the estimate would still be badly inflated.\n\n## How big the effect usually is\n\nAcademic studies of US equity mutual funds typically find that survivorship bias inflates average returns by roughly **0.5 to 1.5 percentage points per year**. Examples include Elton, Gruber & Blake (1996) and Carhart et al. (2002). The bias tends to grow with longer horizons and higher closure rates. A 40% attrition rate over ten years is substantial, so a gap toward the upper end of that range would not be surprising.\n\n## Some nuance worth acknowledging\n\n- **Merged funds:** When a fund merges, its investors' money usually moves into the acquiring fund. A fully accurate \"investor experience\" figure would follow that money: the dead fund's returns up to the merger, then the acquirer's afterwards. This is still clearly below the survivors-only average, because the pre-merger period is where the poor returns happened.\n- **Equal weighting vs. asset weighting:** A simple average of funds doesn't match a dollar-weighted investor experience either. Mention this if the note makes claims about \"typical investors.\"\n\n## What I'd recommend for the client note\n\n1. **Use survivorship-bias-free data if you can get it.** Databases such as CRSP's Survivor-Bias-Free Mutual Fund Database or Morningstar's dead-fund data include closed funds. Ask your provider whether they keep returns for obsolete funds.\n2. **If you can't, disclose the bias.** For example: \"Figures reflect funds still in existence; roughly 40% of funds from the start of the period have closed or merged, typically after weak performance, so these averages likely overstate the experience of the average investor.\"\n3. **Consider reporting the survival rate as a finding in its own right.** \"Four in ten equity funds didn't make it to year ten\" is useful and honest information for clients.\n\n## On the internal disagreement\n\nFlagging this bias doesn't cast doubt on real numbers. It describes them correctly. The figures themselves are fine; presenting them as what a typical investor earned is what would mislead. A client note that ignores a well-documented, sizeable bias is the bigger reputational risk. Sam spotted a real issue, and it's worth telling them so.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 800,
+  "cache_read_input_tokens": 745,
+  "output_tokens": 1514,
+  "output_tokens_details": {
+   "thinking_tokens": 253
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 800,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1514,
+    "cache_read_input_tokens": 745,
+    "cache_creation_input_tokens": 800,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 800
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036837,
+ "duration_ms": 19432,
+ "wall_s": 20.46,
+ "attempt": 0
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E2",
+ "cond": "C3",
+ "item": "E2-04",
+ "system": "You are a helpful assistant. Where the information given does not settle the question, say so and say what would settle it.",
+ "message": "We're reviewing a traffic model for a council proposal. Each morning 4,000 commuters drive from Northside to Downtown. Route 1 is Mill Road (travel time in minutes = number of cars on it divided by 100) followed by the East Highway (always 45 minutes). Route 2 is the West Highway (always 45 minutes) followed by River Road (number of cars divided by 100). Today drivers split evenly, 2,000 per route, and everyone takes 65 minutes. The council proposes a short connector from the end of Mill Road to the start of River Road that takes essentially no time to drive. Our modeller says, apologetically, that if every driver simply picks whichever route is fastest for them given what everyone else does, everyone's commute would rise to 80 minutes. That makes no sense to me. Adding a road can't make things worse; at worst people ignore it. Is the modeller right?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E2/runs_main/C3/E2-04__r1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T15:31:47.253021+00:00",
+ "response": "# Yes, the modeller is right\n\nThis is a well-known result called **Braess's paradox**. Your intuition, \"at worst people ignore it,\" holds for a central planner who assigns routes. It does not hold when each driver chooses for themselves.\n\n## Why everyone ends up at 80 minutes\n\nWith the connector, there is a third route: **Mill Road → connector → River Road**.\n\nSuppose everyone is on the old routes as today (2,000 each, 65 minutes). Look at it from one Route 1 driver's seat:\n\n- Mill Road takes 20 min, then East Highway takes 45.\n- Instead, they could take the connector and River Road (20 min). That gives 20 + 0 + 20 = **40 min**.\n\nSo switching is a big win for that driver, and the same is true for Route 2 drivers. People start switching. As they do, both Mill Road and River Road fill up. The process only stops when nobody can gain by switching:\n\n| Route | Time if all 4,000 use the shortcut |\n|---|---|\n| Mill + connector + River | 40 + 0 + 40 = **80 min** |\n| Mill + East Highway | 40 + 45 = 85 min |\n| West Highway + River | 45 + 40 = 85 min |\n\nAt this point the shortcut is still the best choice for every individual. Any driver who goes back to an old route gets 85 minutes, which is worse. So everyone stays on the shortcut, and everyone takes 80 minutes. In this model that outcome is the unique equilibrium.\n\n## Where the intuition breaks\n\n\"People will ignore it if it's worse\" assumes drivers compare the new network with the old one. They don't. Each driver compares routes *given what everyone else is doing*. A driver who takes the shortcut slows down Mill Road and River Road for everyone else, but doesn't count that cost. Each choice is individually rational, and together they make everyone worse off. It's the same structure as a prisoner's dilemma.\n\nThe 65-minute split is still achievable on the new network. It just isn't stable, because every driver has a reason to leave it.\n\n## What the model does and doesn't establish\n\nThe arithmetic is correct. Whether the real connector would cause this depends on assumptions the model makes:\n\n- **Fixed demand.** It assumes 4,000 drivers regardless of travel times. In reality some might change departure time, mode, or whether they travel at all.\n- **Congestion shape.** It treats Mill and River Road delay as exactly linear and the highways as perfectly fixed. Real roads have capacity limits, junction delays (including at the connector's ends), and highways that slow down under load.\n- **Behaviour.** It assumes drivers know the travel times and fully optimise. Navigation apps make this assumption more realistic, not less.\n\nTo settle the question for the actual proposal, you'd want:\n\n1. Measured volume–delay curves for each road segment.\n2. Realistic delays at the connector junctions.\n3. Demand elasticity estimates.\n\nFeeding these into a standard user-equilibrium traffic assignment would show whether the paradox survives with real numbers. If it does, options include not building the connector, or metering or tolling it so the 65-minute pattern stays stable.\n\nBraess-type effects have been observed in practice. Road closures in Seoul (Cheonggyecheon) and New York (Broadway at Times Square) did not worsen traffic the way people expected. So this is a legitimate concern to raise with the council, not just a modelling quirk.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 794,
+  "cache_read_input_tokens": 824,
+  "output_tokens": 1353,
+  "output_tokens_details": {
+   "thinking_tokens": 218
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 794,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1353,
+    "cache_read_input_tokens": 824,
+    "cache_creation_input_tokens": 794,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 794
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0335848,
+ "duration_ms": 17439,
+ "wall_s": 18.41,
+ "attempt": 0
+}
