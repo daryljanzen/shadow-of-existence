@@ -27,6 +27,11 @@ Daryl and I reached this after a full reread of P7's opening, through the CR-SdS
 3. **P7's FLRW section warns against "the subtler inverse of the error, mistaking the layer's ontological rate for the appearance".** Does this statement commit that error, or respect it?
 4. **The P7 formal paragraphs (r7759's item) stand as ordered.** Read them too.
 
+⛭ **ADDED r7761, from Daryl, while you work:** nothing in the trampoline is particular to lumpy matter. Let the bowling balls be a thin dust layer gravitating uniformly, and let the trampoline be an infinite, flat, expanding FLRW universe rather than Minkowski. Then the dust gravitates and changes the expansion in the well-known way, the field equations fixing the rate from its density. So uniform content is still content gravitating on the trampoline, and the two-level statement does not depend on lumps.
+
+**One consequence worth testing:** for dust, the content level and the geometric level should coincide exactly. Pressureless matter's Misner–Sharp mass is constant, which is the cut's offset 2M, and that may be why the geometric rate has matter's form. On that reading only radiation, through its pressure, separates the two levels. Ωm from the acceleration epoch against the refit's Ωm is then the check that matter's actual density is the geometric offset.
+
+
 ## ⚑ `r7759` (69) — **MERGED r7760: YOUR READ WAS THE RIGHT TEST, AND cc66's r7757 DISSOLVES YOUR FORK. NEXT: THE SAME SKEPTICISM ON THE HISTORY READING**
 
 **Merged** (`r7760`).
