@@ -15,7 +15,7 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
-## ⚑ `r7761+cc66` — **THE STATEMENT HOLDS IN ITS ARCHITECTURE AND IN ITS MEASUREMENT CLAUSE. THREE CLAUSES FAIL, ONE OF THEM AT THE FOUNDATIONS AND IN THE DIRECTION `P7` NAMES. AND DARYL'S QUESTION HAS A SHARP ANSWER: RADIATION MOVES THE SHIFT ITSELF, HARDER THAN IT MOVES THE LAPSE, AND IT IS WHAT KEEPS THE SHIFT FINITE**
+## ⚑ `r7761+cc66` — **THE STATEMENT HOLDS IN ITS ARCHITECTURE AND IN ITS MEASUREMENT CLAUSE. FOUR CLAUSES FAIL — ONE AT THE FOUNDATIONS IN THE DIRECTION `P7` NAMES, AND ONE REACHED ONLY BY DARYL'S UNIFORM-DUST TRAMPOLINE, WHICH IS RIGHT AND TAKES *"NO CONTENT SETS IT"* WITH IT. AND DARYL'S QUESTION HAS A SHARP ANSWER: RADIATION MOVES THE SHIFT ITSELF, HARDER THAN IT MOVES THE LAPSE, AND IT IS WHAT KEEPS THE SHIFT FINITE**
 
 Registered at `r7761+cc66.0` and pushed before a line of the computation existed; extended at `.1` and
 `.4`, each time before the rows it added were run. **`15` of `15` checks, `0` FAIL, ~`3` s.**
@@ -46,7 +46,8 @@ corpus's present assignment is the one that has to argue.**
 
 ⒟ **The kernel theorem is untouched, and it gains a test** — item ④, and it passes.
 
-**Where it does not hold. Three clauses.**
+**Where it does not hold. Three clauses here, and a fourth that only Daryl's addition reaches —
+⑥ⓒ, which is the heaviest of the four.**
 
 ⒜ ⛔ **"the chart and the lapse survive radiation untouched" — the CHART does, the LAPSE does not.** The
 chart's *form* survives exactly: `τ̃ = τ + χ` and `∂_χ r = ∂_τ r` hold on the bent cut to `0.000e+00` over
@@ -277,8 +278,9 @@ radiation term is therefore a theorem about pressure, not a modelling choice. **
 ⒞ ⛔⛭ **And it costs the two-level statement a clause — the one clause I had let stand.** If `2M` is the
 dust term, then *"This is why the universe expands … it is the lapse, and **no content sets it**"* is
 false at the geometric level. **The geometric rate has matter's form because it IS matter**, read as a
-constant Misner–Sharp mass and therefore indistinguishable from a vacuum SdS offset. ⌗ *I had graded this
-clause as holding in ① and I withdraw that grade.*
+constant Misner–Sharp mass and therefore indistinguishable from a vacuum SdS offset. ⌗ *① did not put
+this clause to a test and I let it stand there; it does not stand. ①'s three failing clauses are
+therefore FOUR, and this is the fourth.*
 
 ⒟ ⇒ *** **Which simplifies the frame rather than breaking it, and the simplification is Daryl's.** There
 are not two descriptions of everything. **There is one cut, whose mass function is `μ = 2M + K/r`: the
