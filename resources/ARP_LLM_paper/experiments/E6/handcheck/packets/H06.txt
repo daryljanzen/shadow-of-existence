@@ -1,0 +1,119 @@
+QUESTION:
+Which of the three tariffs (Fixed, Variable or Time-of-use) will give the household the lowest total energy bill over the next 12 months, and by how much?
+
+DATA:
+A household is choosing an energy tariff for the next 12 months (365 days). It is currently on the Variable tariff and can switch freely: none of the tariffs below has an exit fee.
+
+Last 12 months' usage: electricity 3,100 kWh, gas 12,000 kWh. About 15% of the household's current electricity use falls in the off-peak window (dishwasher and washing machine on timers).
+
+The household takes delivery of an electric car next week. It expects to need about 2,400 kWh a year of home charging, all of which it will schedule in the off-peak window. Gas use is not expected to change.
+
+| Tariff | Electricity unit rate | Electricity standing charge | Gas unit rate | Gas standing charge |
+| Fixed (F) | 24.5p/kWh | 55p/day | 6.2p/kWh | 30p/day |
+| Variable (V) | 22.0p/kWh | 60p/day | 6.0p/kWh | 31p/day |
+| Time-of-use (E) | 30.0p/kWh peak; 8.0p/kWh off-peak (00:30-05:30) | 50p/day | 6.0p/kWh | 31p/day |
+
+Rates on V can change at the supplier's discretion with 30 days' notice; the supplier has announced no change. F and E are fixed for 12 months. Ignore VAT (rates already include it).
+
+KNOWN FLAWS:
+F1. [calculation] 3,100 × £0.245 = £759.50, not £734.50. CORRECTION: F electricity £960.25; F total £1,813.75 (with no exit fee).
+F2. [misreport] The data state that none of the tariffs has an exit fee. CORRECTION: No exit fees apply. F costs £1,813.75 on last year's usage.
+F3. [method] Uses an unweighted average of peak and off-peak rates instead of weighting by the household's usage (15% off-peak). CORRECTION: On last year's usage: 2,635 kWh × 30p + 465 kWh × 8p = £827.70, plus £182.50 = £1,010.20; E total £1,843.35. Without the car, E is the most expensive and V (£1,734.15) is cheapest.
+F4. [omission] Ignores the electric car arriving next week, which adds about 2,400 kWh of off-peak charging over the year being priced. CORRECTION: With the car: F £1,813.75 + 2,400 × 24.5p = £2,401.75; V £1,734.15 + 2,400 × 22p = £2,262.15; E £1,843.35 + 2,400 × 8p = £2,035.35. E is cheapest, saving £226.80 a year against V (for the right reason).
+
+EXTENSIONS:
+- Break-even analysis: on base usage alone, E beats V on electricity only if the off-peak share exceeds about 31% (E electricity = £1,112.50 − £682 × share, vs V £901). With 2,400 kWh of car charging the off-peak share rises to (465 + 2,400) / 5,500, about 52%, well above break-even.
+- Sensitivity to car mileage: E stays cheaper than V as long as off-peak car charging exceeds about 780 kWh a year (the £109.20 E-V gap on base usage divided by the 14p/kWh rate advantage).
+- Price risk on V: show the bill if V rises by, say, 10% from month 4, to quantify the value of E's 12-month fix.
+
+FINAL VERSION:
+# Energy tariff comparison: next 12 months
+
+**Answer: Time-of-use (E) is cheapest, at about £2,035 for the year. That is about £227 less than staying on Variable (V), the next cheapest, and about £366 less than Fixed (F).**
+
+| | Fixed (F) | Variable (V) | Time-of-use (E) |
+|---|---|---|---|
+| **Annual total** | £2,401.75 | £2,262.15 | **£2,035.35** |
+| **Extra cost vs E** | +£366.40 | +£226.80 | — |
+
+The electric car is why E wins. Without the car, E would be the most expensive tariff, about £109 a year more than V. Charging the car off-peak at 8p/kWh more than offsets E's 30p/kWh peak rate.
+
+## Expected usage
+
+| | Peak kWh | Off-peak kWh | Total kWh |
+|---|---|---|---|
+| Existing electricity (85% / 15% of 3,100) | 2,635 | 465 | 3,100 |
+| EV home charging (all off-peak) | 0 | 2,400 | 2,400 |
+| **Total electricity** | **2,635** | **2,865** | **5,500** |
+| Gas (unchanged) | | | 12,000 |
+
+With the car, 52% of electricity use is off-peak, up from 15%.
+
+**Assumptions**
+- Household electricity and gas use will match last year.
+- The 2,400 kWh is measured at the meter. If it is the energy delivered to the battery instead, charger losses of about 10% add roughly 240 kWh off-peak. That adds about £34 to E's advantage, so the central case is slightly conservative.
+- The car charges on all 365 days. Because it arrives next week, about 46 kWh of charging falls outside the 12 months. That cuts E's advantage by about £6, to roughly £220, and does not change the ranking.
+
+**Can all charging happen off-peak?** 2,400 kWh a year is about 6.6 kWh a night. In the 5-hour window, a 7 kW charger can deliver up to 35 kWh and a 2.3 kW socket about 11.5 kWh. Even a standard socket is enough.
+
+## Annual costs (365 days)
+
+| | Fixed (F) | Variable (V) | Time-of-use (E) |
+|---|---|---|---|
+| Electricity units | 5,500 × 24.5p = £1,347.50 | 5,500 × 22.0p = £1,210.00 | 2,635 × 30p + 2,865 × 8p = £1,019.70 |
+| Electricity standing | 55p × 365 = £200.75 | 60p × 365 = £219.00 | 50p × 365 = £182.50 |
+| **Electricity subtotal** | **£1,548.25** | **£1,429.00** | **£1,202.20** |
+| Gas units | 12,000 × 6.2p = £744.00 | 12,000 × 6.0p = £720.00 | £720.00 |
+| Gas standing | 30p × 365 = £109.50 | 31p × 365 = £113.15 | £113.15 |
+| **Gas subtotal** | **£853.50** | **£833.15** | **£833.15** |
+| **Total** | **£2,401.75** | **£2,262.15** | **£2,035.35** |
+
+- **All of E's advantage comes from electricity.** Gas prices on E and V are identical.
+- **F can be ruled out.** It costs more than V on both fuels at this household's usage:
+  - On electricity, F's lower standing charge (5p/day less) only outweighs its higher unit rate (2.5p/kWh more) below about 730 kWh a year.
+  - On gas, F's standing charge saves £3.65 a year but its unit rate costs £24 more.
+  - F's only benefit is price certainty, and E also offers that for 12 months.
+
+## How robust is the result?
+
+The real choice is between staying on V and switching to E. Compared with V, E is **14p/kWh cheaper off-peak** and **8p/kWh dearer at peak**. Each kWh that moves from off-peak to peak therefore reduces E's advantage by 22p.
+
+| Scenario | E saving vs V |
+|---|---|
+| Central case | £226.80 |
+| No car (3,100 kWh only) | −£109.20 |
+| EV charging halved to 1,200 kWh | £58.80 |
+| Break-even EV charging (all off-peak) | £0 at ~780 kWh a year (about a third of expected) |
+| Existing appliances 0% off-peak instead of 15% | £124.50 |
+| Break-even off-peak share (at 5,500 kWh total) | £0 at ~33% (expected 52%) |
+| About 1,030 kWh of charging (43%) slips to peak | £0 |
+| V's electricity unit rate cut to ~17.9p (−19%) | £0 |
+
+- **The result holds up well.** E stays cheapest unless car charging falls to about a third of the forecast, or more than 40% of it happens at peak times.
+- **The risk on V's prices mostly favours switching.** V would need an unannounced cut of about 19% to close the gap. Any rise on V would widen E's lead, because E's rates are fixed.
+- **Switching back costs little.** There are no exit fees. If the car is used much less than expected, the household can move back, although it would get whatever V's rates are at that time.
+
+## Recommendation
+
+**Switch to Time-of-use (E) now.** The expected saving is about **£220–£227 a year compared with staying on V**, or about 62p a day once the car is charging.
+
+Do not try to time the switch to the car's arrival. Before the car arrives, E costs only about 30p a day more than V. After it arrives, each day still on V costs about 62p. Starting a week early costs about £2, while starting a week late costs about £4. Switches often take days or weeks to complete, so start the process immediately.
+
+**Practical checks**
+- **Meter:** confirm the meter can record peak and off-peak use separately. This usually means a smart meter set up for time-of-use. If one needs installing, arrange it now, because that is the most likely cause of delay.
+- **Charging schedule:** set the car or charger to charge only between 00:30 and 05:30.
+  - Ask the supplier whether this window follows the clock changes or stays fixed in GMT. If it stays fixed, it becomes 01:30–06:30 in summer time.
+  - Make sure the charger's clock matches the meter's time.
+- **Other loads:** move any other flexible use, such as a tumble dryer or immersion heater, into the window where practical. Each kWh moved saves a further 22p.
+  - The dishwasher and washing machine are already counted as off-peak.
+  - Most remaining use, such as cooking, lighting and the fridge, is hard to move, so extra savings will probably be modest.
+- **Daytime top-ups:** an occasional daytime charge at home costs 30p/kWh on E, against 22p on V. This only matters if it becomes routine (see the slippage row above).
+
+---
+
+**What changed in this review**
+- **Arithmetic:** I re-derived every total, difference and break-even and found no errors.
+- **Switch timing:** the previous advice to aim for E to start when the car arrives, but not to delay, was contradictory. I replaced it with a clear "switch now", supported by the cost of switching early versus late.
+- **Headline:** I rounded the headline figures, since usage is an estimate. The exact totals are in the table. I also gave the saving as a range of £220–£227, to reflect the car arriving next week.
+- **Switching back:** I noted that returning to V means accepting V's rates at that time.
+- **Structure:** a summary table now sits next to the answer, and I trimmed the changelog.

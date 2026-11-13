@@ -1,0 +1,118 @@
+QUESTION:
+Did the spring 15%-off loyalty email campaign pay off, and should the company repeat it (or extend it to non-member customers)?
+
+DATA:
+Spring loyalty email: '15% off everything for 14 days'. Loyalty members were randomly split: 50,000 received the email and 10,000 were held out (no email). Outcomes over the 14 days:
+
+| Group | Members | Purchasers | Revenue (after discount) | Contribution |
+| Emailed | 50,000 | 3,000 | £180,000 | £36,000 |
+| Holdout | 10,000 | 500 | £35,000 | £10,500 |
+
+Contribution = revenue after discount minus cost of goods and fulfilment. Revenue and contribution cover all purchases made in the 14-day window; purchasers are members who bought at least once in it.
+
+Emailed members who purchased could redeem the 15% discount on everything they bought, including items they would have bought anyway. Holdout members paid full price.
+
+Campaign sending cost: £2,000 (copywriting, design and email platform fees).
+
+Loyalty members are the company's most engaged customers. Non-members make up 70% of the customer base and have never been sent a discount offer; they buy less often and have lower average basket values.
+
+KNOWN FLAWS:
+F1. [calculation] A rise from 5.0% to 6.0% is a 20% relative lift (1.0 / 5.0), not 10%. CORRECTION: Relative lift = 20%.
+F2. [method] Attributes all revenue from emailed members to the email, ignoring the holdout baseline, which the draft itself has just used. Most of the £180,000 would have been earned anyway. CORRECTION: Incremental revenue is (£3.60 − £3.50) × 50,000 = about £5,000, i.e. about 2.5 times the sending cost on revenue (before costs of goods), not 89 to 1.
+F3. [omission] Ignores the contribution data. Because the discount applied to purchases members would have made anyway, contribution per member fell. CORRECTION: Contribution per member: emailed £36,000 / 50,000 = £0.72 vs holdout £10,500 / 10,000 = £1.05. Expected without the email: £52,500, so contribution fell by about £16,500, or about £18,500 after sending costs. The campaign lost money and should not be repeated as designed.
+F4. [inference] Generalises from the most engaged customer segment to a different population that has never received offers and behaves differently. CORRECTION: No estimate for non-members is supported. A pilot with its own holdout would be needed, and it should be judged on contribution, not revenue.
+
+EXTENSIONS:
+- Test whether the conversion difference is statistically reliable: 6.0% vs 5.0% with n = 50,000 and 10,000 gives z of about 3.9, so the purchase-rate lift is real even though the campaign is unprofitable.
+- Decompose the contribution loss into a subsidy on baseline purchases versus margin on incremental purchases, and find the break-even discount depth (or a threshold offer such as '15% off over £80') that would make the campaign pay.
+- Look beyond the 14-day window: check whether emailed members bought less in the following weeks (pull-forward), which would make the true incremental effect even smaller.
+
+FINAL VERSION:
+# Spring Loyalty Email: Campaign Evaluation
+
+## Summary
+
+The campaign increased purchases but lost money. Emailed members bought more often than the holdout. However, the 15% discount also went to the many members who would have bought anyway, and that cost far outweighed the margin on the extra sales.
+
+Compared with the holdout, the campaign **reduced contribution by about £16,500, or about £18,500 after the £2,000 sending cost**. It should not be repeated in its current form. Nothing here supports extending it to non-members without a controlled test.
+
+## Design
+
+50,000 loyalty members received the email and 10,000 were randomly held out. Because the split was random, the holdout shows what emailed members would have done without the campaign. Every effect below compares the emailed group with the holdout, scaled to 50,000 members.
+
+The holdout received neither the email nor the discount. The results therefore measure the two together. They cannot show how much came from the reminder and how much from the offer (see Limitations).
+
+## Results
+
+| Per member | Emailed | Holdout | Difference | × 50,000 members |
+|---|---|---|---|---|
+| Purchase rate | 6.0% | 5.0% | +1.0 pt | +500 purchasers |
+| Revenue | £3.60 | £3.50 | +£0.10 | +£5,000 |
+| **Contribution** | **£0.72** | **£1.05** | **−£0.33** | **−£16,500** |
+| Sending cost | | | | −£2,000 |
+| **Net effect** | | | | **−£18,500** |
+
+**Conversion.** The purchase rate rose by 1.0 point, a **20% relative increase**. The rise is statistically robust:
+- z is about 4.1 with unpooled standard errors and about 3.9 pooled.
+- The 95% confidence interval is roughly 0.5 to 1.5 points.
+
+At the holdout rate, about 2,500 of the 3,000 emailed purchasers would have bought anyway. Only about 500 were incremental.
+
+**Revenue.** Revenue rose by about £5,000 (£0.10 per member). We have no spend-level data, so we cannot test whether this differs from zero. It is small either way, and it comes entirely from the extra purchasers, because revenue per purchaser fell.
+
+Revenue per purchaser was £60 in the emailed group and £70 in the holdout. A purchaser may have placed more than one order, so these are not average order values. If every emailed purchaser redeemed the discount, their full-price spend would have been about £70.60. If only some redeemed, it would have been lower. So emailed spend was **at most about £70.60** at full price, no more than the holdout. The campaign did not make people spend more; it made them pay less.
+
+**Contribution is the measure that matters.** Contribution fell from 30% of revenue in the holdout to 20% in the emailed group. Per purchaser, it was £21 in the holdout and £12 in the emailed group. The trade-off:
+
+- ~500 incremental purchasers × £12 = **+£6,000**
+- ~2,500 purchasers who would have bought anyway × £9 discount cost each = **−£22,500**
+- Net = **−£16,500**, before the £2,000 sending cost
+
+*Note on margins:* a 30% margin at full price would fall to about 17.6% if every sale carried the 15% discount, but 20% was observed. There are two plausible explanations, and neither changes the conclusion:
+- **Partial redemption.** Some emailed purchases were at full price, which would put the blended margin between 17.6% and 30%.
+- **Product mix.** Discounted shoppers may have leaned towards higher-margin lines.
+
+Redemption data would show which explanation applies.
+
+**Sensitivity.** The conclusion holds across the plausible range.
+
+- **Conversion lift.** At the top of the confidence interval (a 1.5-point lift, about 750 incremental purchasers), the campaign still loses about £13,000 after costs. Breaking even at these margins would have needed a purchase rate of about 9.1% rather than 6.0%. That is roughly 2,000 incremental purchasers, about four times what was achieved.
+- **Discount cost per habitual buyer.** The £21 holdout figure rests on 500 purchasers, so it carries some uncertainty. The £9 gap, however, is mostly the arithmetic of the discount: 15% off a basket of roughly £70 gives away about £10.50 of margin. For the campaign to break even, the cost per habitual buyer would have to fall below about **£2.83**. That threshold allows for the fact that a smaller discount cost also raises the margin on incremental buyers. Neither estimation noise nor partial redemption plausibly closes a gap that large.
+
+## Why a revenue-based ROI view is misleading
+
+A naive calculation divides the emailed group's total revenue (£180,000) by the sending cost (£2,000) and suggests a return of about 90 to 1. That is wrong for two reasons:
+- Most of that revenue would have arrived without the email.
+- Revenue is not profit.
+
+The relevant comparison is incremental contribution against cost, and that is negative. The real cost of this campaign was the discount, not the sending.
+
+## Limitations
+
+- **Email and discount effects are combined.** We cannot tell how much of the lift came from the reminder alone. If a meaningful share did, an email without a discount could deliver some of the lift at almost no margin cost.
+- **The redemption rate is unknown.** This affects how the margin and basket figures should be read, though not the overall direction.
+- **The window is only 14 days.** Some incremental purchases may have been pulled forward from later weeks, which would make the true result worse. The window also misses any lasting loyalty benefit. Comparing both groups' purchases after the window closed would address both points.
+- **There is no spend-level variance.** The purchase-rate difference can be tested statistically. The revenue and contribution differences cannot. For contribution, the direction is clear from the size of the loss and from the discount arithmetic.
+- **There is no segment breakdown.** The loss comes from subsidising habitual buyers. The offer may still pay among lapsed or low-frequency members, and the existing data can show whether it does.
+
+## Non-members
+
+These results do not tell us how non-members would respond. They have never received a discount, buy less often and have smaller baskets. The economics could differ in either direction:
+- Fewer would buy anyway, so less of the discount is wasted.
+- Each incremental basket is worth less.
+
+There is also a strategic risk. Giving non-members the same discount weakens a reason to join the loyalty scheme, and members may notice. Any test should weigh this alongside contribution.
+
+## Recommendations
+
+1. **Do not repeat the blanket "15% off everything" email to all members.** The spring run lost about £18,500. A repeat would likely perform similarly or worse, because members can learn to wait for offers and responses to repeated emails tend to fade.
+2. **Re-analyse the spring data before running new tests:**
+   - break the results down by recency and frequency, to see whether any segment (such as lapsed members) was profitable;
+   - check purchases after the window for pull-forward;
+   - obtain the redemption rate.
+3. **Test redesigned offers within the limits of statistical power.** An email-only arm will probably show less than a 1-point lift. Detecting a 0.5-point lift from a 5% baseline needs about 30,000 members per arm (at 80% power and 5% significance), and the member base is about 60,000. So test one or two arms at a time, in this order:
+   - **Email with no discount, against a holdout.** This is the highest-value test because it isolates the reminder effect.
+   - **Lapsed-member targeting.** Larger effects may need smaller samples.
+   - **Later options:** spend thresholds ("15% off orders over £X"), smaller discounts, or single-category offers.
+4. **If the offer is tried with non-members, run a small randomised pilot with a holdout.** Set the success criterion in advance as incremental contribution net of costs, include an email-only arm, and monitor loyalty sign-ups.
+5. **Keep holdouts in every campaign and make incremental contribution, not total revenue, the headline metric.** Share this framework with the trading team.

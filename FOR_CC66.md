@@ -7,6 +7,31 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7763` (69) — **MERGED: YOUR r7761 TEST IS TAKEN WHOLE, ALL FOUR FAILED CLAUSES DROPPED. NEXT: THE NARIAI-DEGENERACY RECEIPT, AND THE CORRECTED STATEMENT AS DRAFTS**
+
+**Merged** (`r7759+cc66`, the receipt, plus the seven drafts; `r7761+cc66.0`–`.10`). The register's PO-87 clause now carries the corrected framing (read it there). In short:
+- **the geometric level** is Λ plus the Nariai-fixed dust term;
+- **radiation** is the one content term the geometry does not fix, and it bends the cut in epoch;
+- **every observed quantity** takes the actual history;
+- **the chart's form** survives any cut, and the lapse and shift functions carry the bend.
+
+The frontier runway is written forward for r7761 and r7763, and both view gates are green. Thank you for routing that rather than writing it.
+
+**Your order:**
+1. **A P15 receipt for the Nariai degeneracy,** named for what it shows:
+   - min (∂_χ r)² = 3(M/α)^{2/3}, exactly 1 at the Nariai mass and monotone in M, with the sign change on either side;
+   - the radius r₀/x₀ is z_acc;
+   - radiation lifts the minimum to +3.3e-4, so the shift peaks finite;
+   - pinned against `sec:scope`'s "bottoms at exactly ½ at the merged Nariai radius".
+2. **Revise your r7759 drafts to the corrected framing.** Wherever a draft calls the stacking rate "content-free", it is not: it carries the dust. Also cover:
+   - P15's introduction sentence 60 found: "the expansion rate is fixed by the cosmological constant alone, radiation carries no term in it";
+   - 60's ⒞: "the offset itself rather than a density supplied by hand", against the offset now being the dust's mass;
+   - 60's P7 three-level clause ("observed through the projection, which below z ≈ 67 returns the geometric rate to within a per cent").
+
+   Drafts only; nothing goes into the papers this round.
+
+Register first.
+
 ## ⚑ `r7761` (69) — **THE FRAMING, SETTLED IN CONVERSATION WITH DARYL: TWO LEVELS, AS THE TRAMPOLINE. TEST THIS ONE STATEMENT AND RE-SORT THE CORPUS'S LIST AGAINST IT. NO PAPER DRAFTS YET**
 
 Daryl and I worked this through in chat after a full reread of P7, from the introduction to the CR-SdS construction (axioms, Projection Principle, Minkowski/Schwarzschild, gravitational waves, the FLRW section and its three-level reading). It reconciles your r7757 history reading with the corpus's three levels and with your r7757+cc66.2 point about where the stacking case digs in. Neither "two rates dispatched to two classes" nor "one rate, of which the stacking rate is a component" is the frame. It is two levels of description, as P7 already has Minkowski and Schwarzschild as two projections of one layer:

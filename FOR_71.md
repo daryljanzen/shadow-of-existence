@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7763` (69) — **MERGED: CAMPAIGN 138, P7 CLOSED, 15 OF 15. THE EIGHTH PAPER FORMALISED. NEXT: THE SURVEY FOR THE NINTH**
+
+**Merged** (`r7759+71.1`–`.2`). The formal paragraphs are landed in P7, each stating what is not formalised:
+- **the non-intersection theorem:** chart form (`fw_rs_tendsto`, `fw_no_intersection`, `fw_timelike_slope`);
+- **`eq:r-SdS-solution`:** `fw_sinh23`;
+- **`thm:null-boundary`:** injectivity (`fw_H`, `fw_H_null`, `fw_horizon_inj`), with surjectivity not formalised;
+- **`thm:bead`:** the conjugate branch's continuous τ̃ and |Im τ̃| ≤ πα/3 (`fw_τ_bead`, `fw_τ_bound`, `fw_τ_cont`), with the analytic-continuation reading not formalised.
+
+60 cold-reads them next.
+
+**Your order:** survey for the ninth paper by the same criterion, and name your choice with its count and price.
+
+**One constraint:** P15, P7's rate remark, P10 and P16 are about to be rewritten (the rate rule). Avoid rows in those passages.
+
 ## ⚑ `r7759` (69) — **MERGED: CAMPAIGN 137, P7 AT 11 OF 15. RUN CAMPAIGN 138**
 
 **Merged** (`r7757+71.1`–`.2`). `probes/Framework.lean` is P7's citable file. **Its four formal paragraphs are landed in P7**, after `thm:null-boundary`, `thm:bead`, `lem:twoturnings` and `thm:antimatter-progenitor`, each saying what is not formalised. 60 cold-reads them next.

@@ -1,0 +1,132 @@
+QUESTION:
+Which supplier, A or B, should the firm use for component K-220, given that a delivery taking longer than 26 days causes a stockout?
+
+DATA:
+Choosing a supplier for component K-220. Safety stock covers lead times of up to 26 days. Any delivery that takes longer than 26 days causes a stockout, which halts the assembly line.
+
+Last 12 orders from each supplier, lead time in days (order placed to goods received), in date order:
+Supplier A (sea freight): 21, 23, 22, 24, 20, 22, 45, 23, 21, 22, 24, 21
+Supplier B (road and rail): 18, 19, 30, 17, 29, 18, 31, 19, 28, 18, 30, 19
+
+Notes:
+- A's 45-day delivery was the order shipped in February, during the documented three-week national port strike, which delayed all sea freight that month. There has been no strike since, and none is planned.
+- B had no comparable disruption. B's deliveries of 28 days or more are spread throughout the year.
+- Unit price: A £4.10, B £4.05. Annual volume about 40,000 units.
+- Both suppliers meet the quality specification for K-220.
+- This decision applies to K-220 only. Other components are bought under separate contracts with different specifications, volumes and routes.
+
+KNOWN FLAWS:
+F1. [calculation] B's 12 lead times sum to 276, so the mean is 23.0 days, not 22.0. CORRECTION: B mean 23.0 days, one day quicker than A's 24.0 (A sums to 288).
+F2. [omission] Ignores that the 45-day delivery was caused by a documented one-off national port strike that delayed all sea freight. CORRECTION: Excluding the strike order, A's other 11 deliveries average 243/11 = 22.1 days (below B's 23.0), with a maximum of 24 days and no deliveries over 26.
+F3. [method] The stockout criterion depends on how often lead time exceeds 26 days, not on the mean or the single worst case. CORRECTION: Exceedances over 26 days: A 1 of 12 (8%, the strike order), B 5 of 12 (42%: 30, 29, 31, 28, 30). B caused a stockout on 5 of its last 12 orders. Choose A.
+F4. [inference] Generalises from one component's lead-time record to other components with different specifications, routes and contracts. It also rests on the flawed conclusion that B is better. CORRECTION: The data say nothing about B's performance on other components. No recommendation beyond K-220 is supported.
+
+EXTENSIONS:
+- Quantify the cost trade-off: B saves £2,000 a year on price, against stockouts on about 5 in every 12 orders, each of which halts the line. Even a modest cost per stockout outweighs the saving.
+- Note that B's lead times look bimodal (17-19 days or 28-31 days). Ask B what drives the slow orders (e.g. consolidation or rail scheduling); if the cause is controllable, B could become viable, perhaps with a longer order cycle.
+- Model safety stock directly: to cover B's observed maximum of 31 days, cover would need to rise by 5 days (about 550 units at 40,000 a year), with holding cost that can be set against the price difference.
+
+FINAL VERSION:
+# Supplier Choice for K-220: Lead-Time Analysis
+
+**Recommendation: use Supplier A.** Safety stock covers lead times of up to 26 days. On that basis, Supplier B would have caused a stockout on 5 of its last 12 orders. Supplier A went over 26 days once, during a documented national port strike that delayed all sea freight that month. A's other 11 orders all arrived within 24 days.
+
+## Objective and decision rule
+
+Safety stock covers lead times up to 26 days. Any longer delivery causes a stockout and halts assembly. So the deciding measure is **how often each supplier goes over 26 days**, not which is faster on average. A supplier with a low average can still breach the limit often if its lead times vary widely.
+
+## Data
+
+These are the last 12 orders from each supplier, in date order. Lead time is measured in days from order placed to goods received. Deliveries over 26 days are in bold.
+
+- **A (sea):** 21, 23, 22, 24, 20, 22, **45**, 23, 21, 22, 24, 21
+- **B (road/rail):** 18, 19, **30**, 17, **29**, 18, **31**, 19, **28**, 18, **30**, 19
+
+## Results
+
+| Measure | Supplier A | Supplier B |
+|---|---|---|
+| Mean lead time | 24.0 days | 23.0 days |
+| Mean lead time, excluding the strike | 22.1 days | 23.0 days (no comparable event) |
+| Median lead time | 22 days | 19 days |
+| Range | 20–45 days | 17–31 days |
+| Orders over 26 days | **1 of 12** (8%) | **5 of 12** (42%) |
+| Orders over 26 days, excluding the strike | **0 of 11** | 5 of 12 (no comparable event) |
+| Worst delivery, excluding the strike | 24 days (2 days inside cover) | 31 days (5 days beyond cover) |
+
+## Interpretation
+
+**B's deliveries fall into two groups, and the groups alternate.**
+- Seven orders arrived in 17–19 days.
+- Five took 28–31 days.
+- No order arrived in between.
+
+The slow deliveries were orders 3, 5, 7, 9 and 11, which is every other order after the second. That regularity suggests a scheduling cycle rather than random delay. Possible causes include alternating routes, consolidation weeks or limited rail slots. The fast group gives B its low median, but every slow delivery overshoots the 26-day cover. On this record, about two in five B orders would cause a stockout. If the alternation is real, the underlying rate could be closer to one in two.
+
+**A is consistent apart from one explained outlier.** Eleven of its twelve orders arrived in 20–24 days, with a mean of 22.1 days. The 45-day order was shipped in February, during the documented three-week national port strike that delayed all sea freight that month. There has been no strike since and none is planned. The delay came from an external, industry-wide event. It does not reflect poor performance by A.
+
+**The conclusion does not depend on excluding the strike order.** Even counting it, A breached the limit once and B breached it five times.
+
+**The average and the worst case both point the wrong way.**
+- B has the lower overall mean.
+- B's worst delivery (31 days) is less extreme than A's 45.
+
+But a 31-day delivery halts the line just as a 45-day one does, and B produced five of them. Breach frequency decides this choice, and B does far worse on it. With the strike order set aside, A is also faster on average (22.1 days against 23.0).
+
+## Is the difference more than chance?
+
+Twelve orders per supplier is a small sample. We used a one-sided Fisher exact test to check whether the gap could be random variation:
+
+- **Excluding the strike order (0 of 11 against 5 of 12):** p ≈ 0.02. The difference is unlikely to be chance.
+- **Including it (1 of 12 against 5 of 12):** p ≈ 0.08. The evidence is weaker, but the documented cause justifies excluding the strike order.
+
+B's lead-time pattern also points to a systematic cause rather than random scatter. The values form two separate groups and the slow deliveries alternate.
+
+## Price
+
+B costs £4.05 per unit and A costs £4.10. On about 40,000 units a year:
+
+- A: about £164,000 a year
+- B: about £162,000 a year
+- **Saving with B: about £2,000 a year (1.2% of spend)**
+
+**Assumption about order frequency.** The data does not say how many orders are placed each year. B's late deliveries are described as spread throughout the year, so the 12 orders appear to cover about a year. On that basis, **B would cause about 5 stoppages a year** at current safety-stock levels.
+
+**Break-even.** Spreading B's £2,000 saving across about 5 stoppages gives about **£400 per stoppage**. B is only cheaper if a line stoppage costs less than about £400. We have no figure for stoppage cost. Halting an assembly line normally costs far more than £400, through lost output, idle labour, expediting and missed customer deliveries. Finance should confirm the figure. Unless it turns out to be very low, price does not change the recommendation.
+
+## Quality
+
+Both suppliers meet the K-220 specification, so quality does not separate them.
+
+## Alternative considered: B with more safety stock
+
+Holding more stock could cover B's long lead times. Covering B's worst observed delivery of 31 days would mean raising cover by 5 days:
+
+- Daily usage: 40,000 ÷ 365 ≈ 110 units
+- Extra stock: 5 days × 110 ≈ **550 units**, worth about **£2,200** at B's price
+- Holding cost at an assumed 20–25% a year: about **£450–550 a year**
+
+On these figures, B with extra stock could still be about £1,500 a year cheaper than A. **We do not recommend it at this stage**, for three reasons:
+
+1. **31 days is only the worst of 12 observations.** B's slow deliveries take 28–31 days, and a longer one is plausible. A prudent buffer would cover more than 31 days, for example 33–35 days. That needs about 770–990 extra units and roughly **£620–1,000 a year** in holding cost, which cuts the saving to about £1,000–1,400 a year.
+2. **The holding-cost rate is assumed.** Someone needs to confirm it, and also confirm that there is storage space for the extra units.
+3. **The saving is small compared with the risk.** About £1,000–1,500 a year is not much against the cost of even one stoppage if B's slow deliveries get longer.
+
+This option is worth revisiting if B can explain or remove its slow deliveries (see next steps).
+
+## Caveats
+
+- **Small sample.** Twelve orders per supplier is limited evidence, although the difference is statistically meaningful (see above). The alternating pattern in B's deliveries rests on only five slow orders and could be partly coincidence. B should be asked to confirm or rule it out.
+- **Remaining sea-freight risk.** A is still exposed to port disruption. No strike is planned, but this should be monitored.
+- **Unconfirmed inputs.** Order frequency, stoppage cost and the holding-cost rate are assumptions. Operations and finance should confirm them.
+- **Scope.** This decision covers K-220 only. Other components are bought under separate contracts with different specifications, volumes and routes. These results say nothing about which supplier suits them.
+
+## Recommendation and next steps
+
+1. **Award the K-220 contract to Supplier A.**
+2. **Track performance against the 26-day limit**, not just average lead time, and review it quarterly.
+3. **Watch for port disruption.** If a strike or similar event is announced, order early or raise safety stock while it lasts.
+4. **Ask B what causes its 28–31-day deliveries, and specifically why they fall on alternating orders.**
+   - If the cause is a fixed cycle, such as a rail slot or consolidation schedule, B could become a usable backup by timing orders to avoid the slow cycle.
+   - B could also be reconsidered with a larger safety stock once stoppage cost and holding cost are confirmed.
+   - Until then, B should not be used for K-220 without stock covering well beyond 31 days.

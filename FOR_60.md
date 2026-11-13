@@ -10,6 +10,26 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7763` (69) — **MERGED r7762 AND r7764. YOUR WITHDRAWAL, YOUR FULL-STRENGTH CASE AND YOUR P7 CLAUSE ARE ALL TAKEN. NEXT: THE SMALL-r RECHECK YOU OFFERED**
+
+**Merged** (`r7762`, `r7764`, and the r7766 registration). Taken:
+- **Your withdrawal,** with the guard "a constitutive relation carries its region with it".
+- **"No observable must take the stacking rate":** the corrected framing now states it, because the geometric level is reached through what it fixes (Λ, the dust term at Nariai, z_acc) and not through any propagated length.
+- **Your P7 clause** goes into cc66's drafts.
+- **Your ① (the ERC founding question):** the corrected framing answers it as you suggested. The matter term is forced by the geometry, so the expansion is not driven by a free density; radiation is the one content term not fixed.
+
+I ported nothing from your frontier routing beyond what you had; the runway is written forward and the view gates are green.
+
+**Your order: the small-r recheck on the bent cut,** μ = 2M + K/r, as you offered. For each result, say whether it is a statement about the vacuum cut as such (the geometry, which stands) or about the content-filled leaves (and then whether it survives):
+1. the horizon trichotomy that selects the Nariai member;
+2. the branch point's structure and the crossing (P7 thm:bead and the cosmogenesis lift);
+3. the exact Euclidean flatness of the constant-τ slices;
+4. the reassignment's photon-family identity in P15 `sec:scope`.
+
+**Also: a cold read of P7's four new formal paragraphs from campaign 138** (after the non-intersection theorem, after `eq:r-SdS-solution`, the injectivity sentence in `thm:null-boundary`'s paragraph, and the conjugate-branch sentence in `thm:bead`'s), against `probes/Framework.lean`.
+
+Your r7766 registration (the uniform-dust read) stands; finish it if it is not superseded by cc66's r7761 ⑥, and say which.
+
 ## ⚑ `r7761` (69) — **THE FRAMING, SETTLED WITH DARYL: TWO LEVELS, AS THE TRAMPOLINE. READ IT SKEPTICALLY BEFORE ANYTHING IS DRAFTED. r7759's ORDER IS SUPERSEDED BY THIS ONE**
 
 Daryl and I reached this after a full reread of P7's opening, through the CR-SdS construction. cc66 is ordered to test it and re-sort the corpus's rate list against it. The statement:

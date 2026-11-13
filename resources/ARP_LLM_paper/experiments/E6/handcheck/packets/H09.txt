@@ -1,0 +1,164 @@
+QUESTION:
+Are young drivers on telematics policies lower risk than those on standard policies, and would making telematics compulsory for all young drivers reduce claims?
+
+DATA:
+Motor insurer, drivers aged 18-24, policy year 2025. Telematics ('black box') policies are optional: customers choose them in exchange for a discount.
+
+| | Telematics | Standard |
+| Policies (full-year equivalent) | 4,000 | 6,000 |
+| Claims | 360 | 780 |
+| Average cost per claim | £3,200 | £3,500 |
+| Average annual premium | £1,100 | £1,400 |
+| Average annual mileage | 6,000 | 9,500 |
+
+Loss ratio = total claims cost / total premium. Premiums shown are after any telematics discount. Average cost per claim includes settled and reserved amounts. All policies are for private cars.
+
+Mileage for telematics policies is measured by the device. Mileage for standard policies is customer-declared at renewal; the insurer's audits find declarations accurate to within 5% on average.
+
+The pricing team wants to know whether telematics customers are lower risk, and whether making telematics compulsory for all young drivers would reduce claims.
+
+KNOWN FLAWS:
+F1. [omission] Ignores exposure: telematics drivers drive far less (6,000 vs 9,500 miles a year). Per-policy frequency mostly reflects mileage. CORRECTION: Claims per million miles: telematics 360 / 24m = 15.0; standard 780 / 57m = 13.7. Per mile driven, telematics drivers claim slightly more often.
+F2. [misreport] The data give £3,200 per claim for telematics and £3,500 for standard. CORRECTION: Telematics claims are about 9% cheaper on average, so severity also differs.
+F3. [calculation] £1.152m / £4.4m = 26.2%, not 22.6%. CORRECTION: Telematics loss ratio 26.2% vs standard 32.5%.
+F4. [inference] Treats a difference between self-selected groups as a causal effect of the device. Customers who chose telematics differ (e.g. they drive much less), and compulsion changes who is in the group. CORRECTION: The data cannot estimate the effect of compulsion. Given the per-mile comparison, much or all of the gap is selection on mileage. A randomised or staggered rollout would be needed.
+
+EXTENSIONS:
+- Mileage-adjusted pricing check: telematics premium per 1,000 miles is £183 vs £147 for standard, and claims cost per 1,000 miles is £48 vs £48, so on a per-mile basis the two books are similar in risk.
+- Sensitivity to declared mileage: even if standard drivers under-declare by 5%, per-mile frequency becomes about 13.0 per million miles for standard vs 15.0 for telematics, so the conclusion is robust.
+- Within the telematics book, relate device-measured driving scores (speeding, harsh braking, night driving) to claims. That tests the behaviour-change mechanism directly rather than through a self-selected comparison.
+
+FINAL VERSION:
+# Telematics vs Standard Policies: Young Drivers (18–24), 2025
+
+## Summary
+
+Telematics customers claim 31% less often per policy, but they also drive 37% fewer miles. Per mile driven, the two books have **similar claim frequency** and **similar claims cost**, about 4.8p per mile each.
+
+This data cannot tell us which of two explanations is true:
+
+- **Self-selection.** Low-mileage, careful drivers choose telematics.
+- **A device effect.** The device changes behaviour, mileage or claim costs.
+
+The data fits selection explaining most or all of the gap. It also fits a modest device effect, but does not show one. Compulsion would cut claims by 31% (about 240 claims a year) only if the device caused the whole gap. That figure is therefore a ceiling, not a forecast. **Compulsion should not be adopted on this evidence.** The device's effect should be tested first.
+
+The telematics book has a **lower loss ratio** (26.2% vs 32.5%). This reflects pricing and selection. It is not evidence that the device reduces risk. The ratio also leaves out device, installation and data costs, which only the telematics book carries. Relative profitability cannot be judged until those costs are known.
+
+**The 2025 figures are immature.** Loss ratios of 26–33% are low for young drivers, which suggests that claims incurred but not yet reported (IBNR) are missing. All figures will probably rise as claims develop, possibly at different rates for the two books.
+
+## Key figures
+
+| | Telematics | Standard |
+|---|---|---|
+| Policies (FYE) | 4,000 | 6,000 |
+| Claims | 360 | 780 |
+| Claims per 100 policies | 9.0 | 13.0 |
+| Average cost per claim | £3,200 | £3,500 |
+| Total claims cost | £1.152m | £2.730m |
+| Total premium | £4.400m | £8.400m |
+| **Loss ratio** (excl. device costs) | **26.2%** | **32.5%** |
+| Claims cost per policy | £288 | £455 |
+| Average annual mileage | 6,000 (measured) | 9,500 (declared) |
+| Total miles driven | 24.0m | 57.0m |
+| **Claims per million miles** | **15.0** | **13.7** |
+| **Claims cost per mile** | **4.8p** | **4.8p** |
+| Premium per mile | 18.3p | 14.7p |
+
+## Findings
+
+**1. Per policy, telematics drivers claim much less.** They make 9.0 claims per 100 policies against 13.0, which is 31% fewer. With 360 and 780 claims, this difference is far outside random variation.
+
+**2. Per mile, frequency is similar.**
+- Telematics drivers have 15.0 claims per million miles, against 13.7 for standard drivers.
+- The rate ratio is 1.10. Its 95% interval is about 0.97 to 1.24 (Poisson, p ≈ 0.15).
+- So the data does not show a significant difference per mile. There is no sign that telematics drivers claim less.
+
+The two mileage figures are not strictly like-for-like:
+- Telematics mileage is measured by the device. Standard mileage is declared by the customer.
+- Audits find declarations accurate to within 5% on average. An average can still hide systematic under-declaration by some customers.
+- If declared mileage is off by 5%, the standard rate would lie between 13.0 and 14.4 claims per million miles.
+- At 14.4, the books are almost identical per mile.
+- At 13.0, the more likely case if customers under-declare, telematics drivers would claim about 15% more per mile. That difference would be just significant.
+- Either way, telematics drivers do not claim less per mile.
+
+**3. The straight per-mile comparison is biased against telematics.** Claims usually rise less than proportionally with mileage. Low-mileage drivers are therefore expected to have higher claims per mile even with no device effect.
+
+The table below shows the telematics claims we would expect from the standard book's rate, adjusted for lower mileage:
+
+Expected claims per 100 policies = 13.0 × (6,000 / 9,500)^e, where e is the mileage elasticity.
+
+| Elasticity (e) | Expected telematics claims per 100 | Observed | Unexplained advantage | 95% interval |
+|---|---|---|---|---|
+| 1.0 (proportional) | 8.2 | 9.0 | none (about 10% worse) | 24% worse to 3% better |
+| 0.7 | 9.4 | 9.0 | about 5% | 8% worse to 16% better |
+| 0.5 | 10.3 | 9.0 | about 13% | 1% to 23% better |
+
+These "unexplained advantages" carry sampling error of roughly ±12%:
+- At e = 0.7 the advantage is well within noise.
+- At e = 0.5 it is only just significant (p ≈ 0.03).
+- They are scenarios that depend on an assumed elasticity. They are not estimates of a device effect.
+- They also rely on declared standard mileage, so the caveat in Finding 2 applies.
+
+Any advantage that does exist could come from selection, because careful drivers may opt in, rather than from the device. The fair conclusion is that **no device effect is detected, but a modest one cannot be ruled out**.
+
+**4. Severity is about 9% lower for telematics (£3,200 vs £3,500).** The data does not say why. The cause could be selection, such as different vehicles or driving patterns. It could also be a genuine device effect. Telematics data can reduce costs in several ways:
+- faster crash notification
+- accident reconstruction
+- fewer exaggerated or fraudulent claims
+
+Without claim-level variance, we also cannot test whether the difference is significant.
+
+**5. Most of the gap is explained by mileage, but the cause of the mileage gap is unknown.** Telematics drivers cover 3,500 fewer miles a year.
+- Some of that will be selection: people who expect to drive little are drawn to a discounted product.
+- Some could be caused by the device, through mileage-based pricing, curfews, or drivers knowing they are monitored.
+- If the device does reduce mileage, compulsion would cut claims through lower exposure, even with no change in driving quality.
+- A one-year snapshot cannot separate these causes.
+
+**6. Loss ratio and pricing.** The telematics loss ratio is 26.2%, against 32.5% for the standard book, even after the discount. The 6.3-point gap is worth about £70 per policy on a £1,100 premium. Device, installation and data-processing costs fall only on the telematics book and could absorb a meaningful share of that £70. The book's profitability relative to standard is unknown until those costs are included.
+
+Telematics customers also pay more per mile (18.3p vs 14.7p) for a similar claims cost per mile. Some of that gap is expected, because fixed costs and less-than-proportional risk make low-mileage policies dearer per mile. The loss ratio is the better measure.
+
+**7. Other differences are not controlled for.** The books may differ in age within 18–24, vehicle, region, no-claims history and occupation. Any of these could drive part of the observed gaps.
+
+## Would compulsory telematics reduce claims?
+
+Not by 31%, and possibly not at all. The plausible range for the standard book runs from no reduction up to about 240 claims:
+
+- **If selection explains everything:** essentially no reduction. Standard drivers fitted with a box keep driving about 9,500 miles at their current risk.
+- **If there is a modest behaviour or severity effect:** perhaps a 5–13% frequency reduction (about 40–100 claims), based on the elasticity scenarios above, plus possibly lower severity.
+  - At e = 0.7 the interval includes zero, so even this range is uncertain.
+  - It is also optimistic. An effect seen in volunteers may be weaker in drivers who did not choose monitoring.
+- **If the device also causes much of the mileage gap:** larger reductions, towards 31%. Nothing in this data shows this.
+
+**Assumptions behind the 31% ceiling:**
+- It is a ceiling only if selection into telematics is favourable or neutral. Riskier drivers might have been drawn to telematics, for example by the discount. In that case the true device effect could be larger than the observed gap. This seems less likely than favourable selection, but the data cannot rule it out.
+- It applies to claim counts only. Claims cost per policy is 37% lower for telematics (£288 vs £455). If the device also caused the severity difference, the cost saving could reach about 37%, roughly £1.0m on the standard book.
+
+**Compulsion would also carry costs and risks:**
+- **Losing customers.** Standard customers have chosen not to be monitored. Some may move to competitors that offer policies without a box. Customers who leave reduce the total claims count without reducing risk. Any evaluation of compulsion must therefore measure frequency per policy or per mile, not total claims.
+- **Device and installation costs**, with no demonstrated claims saving to offset them.
+
+**There is also a potential benefit.** Universal telematics would give measured mileage and driving scores for the whole book. That could improve pricing accuracy even if claims do not fall. If compulsion is pursued, it should be argued on pricing grounds, not on claims reduction.
+
+## Recommendations
+
+1. **Do not make telematics compulsory on the basis of this analysis.**
+
+2. **Test whether the device changes risk, tracking mileage as well as claims.** Each design answers a different question:
+   - **Randomised trial (causal effect).** Randomise who is *offered* the device, then analyse everyone offered, whether or not they accept (intention-to-treat). Comparing only those who accept would reintroduce self-selection. A cleaner alternative is to require the device as a condition of cover for a random sample of new standard customers. In either design, keep pricing the same across groups.
+   - **Before-and-after comparison (causal effect, weaker evidence).** Compare the same customers before and after they take up telematics, looking at mileage, frequency and severity. Customers who switch are still self-selected. Their timing may also coincide with other changes, such as a new car or growing experience.
+   - **Within-book score check (predictive value).** Check whether drivers with better device scores claim less per mile within the telematics book. This shows whether the score helps pricing. It does not show that the device changes behaviour.
+
+3. **Fit a frequency model that controls for mileage, age, vehicle, region and claims history.** The mileage elasticity should be estimated, not assumed. The model would show whether a telematics effect remains after those factors. It would also replace the elasticity scenarios in Finding 3.
+
+4. **Investigate severity.** Break claim costs down by claim type. Compare notification-to-settlement times and fraud indicators between the books.
+
+5. **Obtain per-policy device, installation and data costs** so the telematics book's profitability can be compared properly with the standard book.
+
+6. **Review pricing on loss ratios (including device costs), not per-mile premiums.** Judge any change to the telematics discount against competitor pricing and take-up, which this data does not include. Test changes on new business first.
+
+7. **Monitor both books quarterly**, per policy and per mile: frequency, severity and loss ratio. Update the 2025 figures, including IBNR, as claims develop.
+
+---
+
+*Note on this final version:* I checked all figures and they reproduce. The reviewer change log has been removed. I made one substantive correction to Finding 2. The previous draft said the per-mile conclusion "holds" under ±5% mileage error. In fact, if standard customers under-declare by 5%, the telematics per-mile rate becomes about 15% higher and just significant (95% interval about 1.02–1.30). That case strengthens the conclusion that telematics drivers do not claim less per mile, but the "not significant" statement no longer holds across the full range. The Summary wording has been adjusted to match.

@@ -1,0 +1,178 @@
+QUESTION:
+How much did the average-speed cameras reduce injury collisions at the 10 sites, and what would a city-wide rollout achieve?
+
+DATA:
+Average-speed cameras at 10 sites, installed January 2023. The 10 sites were chosen because they had the highest numbers of injury collisions in the city in 2020-2022.
+
+| | 2020-2022 (3 years before) | 2023-2025 (3 years after) |
+| Injury collisions at the 10 camera sites | 156 | 102 |
+| Injury collisions on all other city roads | 3,600 | 3,240 |
+
+Traffic: a bypass opened in March 2023 and diverted through-traffic away from 6 of the 10 sites. Traffic counts at the 10 sites fell by an average of 15% between the two periods. Traffic on other city roads was broadly unchanged.
+
+Speed surveys at the camera sites (speed limit 30 mph): mean speed 34 mph before installation, 31 mph after.
+
+The 10 sites are all urban arterial roads. The city has about 900 km of roads, of which the camera sites cover about 12 km. Most of the network is residential streets with low collision counts.
+
+KNOWN FLAWS:
+F1. [method] Ignores regression to the mean. The sites were selected because their 2020-2022 counts were the highest, so that period is likely inflated by chance, and counts would be expected to fall even without cameras. CORRECTION: The before period overstates the true underlying rate. An RTM adjustment (e.g. an empirical-Bayes estimate using longer histories or comparable sites) is needed, and the 27% figure is an upper bound.
+F2. [omission] Ignores the 15% fall in traffic at the sites after the bypass opened, which would reduce collisions on its own. CORRECTION: Expected without cameras, allowing for trend and traffic: 52 × 0.90 × 0.85 = 39.8 a year, so about 6 prevented a year (roughly a 15% relative reduction), before any RTM adjustment.
+F3. [misreport] The surveys show mean speed fell from 34 to 31 mph, still above the 30 mph limit. CORRECTION: A 3 mph fall in mean speed; speeds remain slightly above the limit.
+F4. [inference] Generalises from 12 km of the highest-collision arterial roads to 900 km of mostly low-collision residential streets, with a selection-inflated effect estimate. CORRECTION: No city-wide estimate is supported. The effect on typical roads, which have low counts, would be much smaller in absolute terms and is unknown in relative terms.
+
+EXTENSIONS:
+- Request each site's collision counts for earlier years (e.g. 2015-2019) to estimate the regression-to-the-mean component directly.
+- Split the 10 sites into the 6 affected by the bypass and the 4 not affected; the 4 unaffected sites give a cleaner (if small) estimate of the camera effect.
+- Look at severity (killed or seriously injured vs slight), since speed reductions are expected to reduce severity more than frequency; even a modest 3 mph fall in mean speed may matter there.
+
+FINAL VERSION:
+# Average-speed cameras: three-year evaluation
+
+## Summary
+
+- **Raw fall.** Injury collisions at the 10 camera sites fell by 35%, from 156 in 2020–22 to 102 in 2023–25.
+- **Not all of that fall is due to the cameras.**
+  - Collisions on other city roads fell by 10% over the same period.
+  - Traffic through the sites fell by 15%, mainly because a new bypass opened two months after the cameras were installed.
+  - The sites were chosen because they had the city's highest collision counts, so some fall was likely anyway. This is regression to the mean.
+- **Best estimate.** After allowing for the city-wide trend and the traffic fall, the cameras reduced injury collisions by **about 15%**. That is roughly 6 collisions a year across the 10 sites.
+  - Two biases remain, and they pull in opposite directions.
+  - The traffic adjustment is probably too large. Correcting it would raise the estimate to about 18–21%.
+  - Regression to the mean would lower the estimate. These data cannot measure it, and it could be large.
+  - The true effect could plausibly be anywhere from **no effect to about 20%**. If the 15% figure is wrong, it is more likely too high than too low.
+- **Statistical uncertainty.** Leaving those biases aside, the statistical interval alone runs from about a 34% reduction to a 10% increase. The true interval is wider still. **We cannot rule out that the cameras had no effect.**
+- **Speed evidence.** Mean speeds fell from 34 to 31 mph. Standard speed–collision relationships turn that into a collision reduction of roughly 13–17%. This fits the collision estimate but does not confirm it. Part of the speed fall may come from the bypass removing faster through-traffic.
+- **City-wide rollout.** **We cannot estimate what a city-wide rollout would achieve.**
+  - The cameras were tested only at 10 high-collision arterial sites, covering 1.3% of the network.
+  - Most of the network is residential streets, which differ greatly from these sites.
+  - We can only say something about similar arterial roads: roughly 0.5 collisions prevented per site a year or less, possibly none.
+- **Recommendation.** Do not fund a city-wide programme on this evidence.
+  - First, get a longer collision baseline and site-level data.
+  - Then consider a staged, properly evaluated extension to similar arterial roads.
+
+## Background
+
+- **Installation.** Average-speed cameras were installed at 10 sites in January 2023.
+- **Coverage.** All 10 sites are urban arterial roads. Together they cover about 12 km of the city's 900 km network, about 1.3% of its length.
+- **Site selection.** The sites were chosen because they had the most injury collisions in the city in 2020–22.
+- **Comparison.** This note compares injury collisions in the three years before installation (2020–22) with the three years after (2023–25). It does this both at the 10 sites and on all other city roads.
+
+## Results, step by step
+
+| | Sites: collisions/yr | Effect attributed to cameras |
+|---|---|---|
+| Before (2020–22) | 52.0 | |
+| After (2023–25), observed | 34.0 (−35%) | |
+| Expected after without cameras, allowing for the city-wide trend (×0.90) | 46.8 | ~27% (≈13/yr) |
+| Expected after without cameras, also allowing for the 15% traffic fall (×0.85) | 39.8 | **~15% (≈6/yr)** |
+| After allowing for remaining biases (steps 2–3) | not estimable from these data | probably 0% to ~20% |
+
+**1. Background trend.** Collisions on other roads fell from 1,200 to 1,080 a year, a 10% fall. Relative to that trend, the reduction at the sites is about 27% (0.654 / 0.900 = 0.727).
+
+- **COVID.** The before period includes 2020–21, when COVID restrictions disrupted traffic.
+  - Restrictions probably *lowered* collisions in the baseline.
+  - Comparing with other roads absorbs much of this. Arterial roads and residential streets may have been affected differently, though, so some distortion may remain.
+  - The direction of any remaining distortion is unclear. If the baseline at the sites was held down, that would partly offset regression to the mean (step 3) rather than add to it.
+- **Is the bypass in the comparison group?** The data do not say whether the new bypass counts as an "other city road".
+  - If it does, its collisions are added to the comparison group in 2023–25. The background fall then looks smaller than it really was, which overstates the camera effect.
+  - If it does not, collisions that moved onto the bypass with the diverted traffic are not counted anywhere.
+  - This should be confirmed with the data provider. Either way, the comparison count of 3,240 is large, so the effect on the estimate is probably small.
+
+**2. Traffic.** The bypass opened in March 2023, two months after the cameras. It diverted through-traffic from 6 of the 10 sites. Traffic at the sites fell by an average of 15%, while traffic elsewhere was broadly unchanged. Fewer vehicles means fewer collisions, whatever the cameras do.
+
+- **Proportional adjustment.** Suppose collisions fell in proportion to traffic. Without cameras we would then expect 52 × 0.90 × 0.85 ≈ 39.8 collisions a year, against 34 observed. That gives a camera effect of about 15%, or about 5.8 collisions a year prevented.
+- **Why this adjustment is probably too large.** Collisions usually rise and fall *less* than in proportion to traffic. If a 15% traffic fall cut collisions by only 8–11%, the camera effect would be about 18–21%. So the correction is only a few percentage points.
+- **The traffic fall is concentrated.** The 15% average fall was driven by 6 of the 10 sites. If traffic at the other 4 was roughly unchanged, it must have fallen by about 25% at the 6. The 4 unaffected sites therefore give the cleanest available test of the cameras alone (Recommendation 2).
+- **Some diversion may be caused by the cameras.** Some drivers may avoid camera routes.
+  - Any collisions they have elsewhere are moved, not prevented.
+  - To that extent, part of the 15% traffic fall reflects the cameras rather than the bypass.
+  - The site-only figures would then overstate the net benefit to the network.
+
+**3. Regression to the mean.** The sites were chosen *because* they had the highest collision counts in 2020–22.
+
+- Sites picked for an unusually high count tend to record fewer collisions in the next period anyway, partly by chance.
+- So 2020–22 overstates what these sites would normally see, and the 15% figure includes some fall that would have happened anyway.
+- With only one before period, we cannot estimate the size of this bias. At hotspot camera schemes it is often large. Here it could account for much or all of the remaining effect.
+
+**Net effect of steps 2 and 3.**
+- The traffic correction would push the estimate up to about 18–21%.
+- Regression to the mean pushes it down by an unknown amount, which could be larger.
+- We therefore put the true effect somewhere between **no effect and about 20%**. This range is a judgement, not a calculated interval.
+- The 15% figure is the best single estimate we can make, but it is more likely to be too high than too low.
+
+**4. Statistical uncertainty.** The collision counts at the sites are small.
+
+- The approximate 95% interval on the raw before/after ratio is 0.51–0.84.
+- After the trend and traffic adjustments, the interval on the camera effect runs from about a **34% reduction to a 10% increase**.
+- That interval is too narrow, for two reasons:
+  - It treats the 15% traffic fall as exactly known, but that figure is itself an average estimate.
+  - It assumes collision counts vary only by chance in the simplest way. Real collision counts usually vary more than that.
+- On the collision counts alone, therefore, we cannot rule out that the cameras had no effect.
+
+## Speeds
+
+- **Figures.** Mean speed at the camera sites fell from 34 mph to 31 mph. It is now close to the 30 mph limit, though still slightly above it.
+- **What it suggests.** A 3 mph fall in mean speed around the time the cameras went in fits with the cameras changing how people drive. Regression to the mean affects collision counts; it would not explain a fall in speeds in the same way.
+- **The bypass may have contributed.**
+  - Lighter traffic would normally *raise* speeds.
+  - However, the bypass removed *through-traffic*. On arterial roads this is often the faster, longer-distance part of the flow, so removing it could lower average speeds even as volumes fall.
+  - So we cannot put the whole speed fall down to the cameras. Comparing speeds at the 4 unaffected sites with the 6 affected ones would settle this (Recommendation 2).
+- **What it implies for collisions.** The widely used "power model" says injury collisions scale with mean speed raised to a power. For urban roads, estimates of that power are often below the commonly quoted value of 2.
+  - With a power of 2: (31/34)² ≈ 0.83, a fall of about 17%.
+  - With a power of 1.5: (31/34)^1.5 ≈ 0.87, a fall of about 13%.
+- **How much weight it bears.**
+  - The 13–17% range fits the adjusted collision estimate of 15%.
+  - Both estimates are loose, however; the collision interval alone runs from −34% to +10%.
+  - The agreement means only that the two sources do not contradict each other. It does **not** show that regression to the mean is small.
+  - It also assumes the cameras caused the whole speed fall.
+- **Other limits.**
+  - The power model uses mean speed only. It says nothing about the fastest drivers, who account for a disproportionate share of injury collisions.
+  - The surveys do not say whether conditions before and after were comparable (time of day, weather, survey method).
+
+## What would a city-wide rollout achieve?
+
+**We cannot estimate a city-wide effect from these data.** There are four reasons:
+
+1. **The tested sites are not typical.**
+   - The cameras were evaluated only at 10 high-collision arterial sites, covering 1.3% of the network.
+   - Most of the network is residential streets, with low collision counts and usually lower speeds.
+   - Cameras there would have far fewer collisions and much less speeding to prevent.
+2. **There would be no hotspot effect elsewhere.** Part of the fall at the original sites probably reflects their unusually high starting point. Ordinary roads would not show this.
+3. **Full coverage is not feasible.** Average-speed cameras need defined routes between camera points. Covering 900 km of mostly residential streets is not a realistic plan.
+4. **The effect is uncertain even at the tested sites.** We cannot rule out that the cameras had no effect there.
+
+**What can be said about similar arterial roads**
+
+- **Plausible effect.** On other arterial roads with documented speeding, a reduction of up to about 15% of existing injury collisions is plausible. A much smaller effect, or none, cannot be excluded.
+- **Per-site figure at the original sites.**
+  - Without cameras, the expected count at the original sites was about 4.0 collisions per site a year (39.8 ÷ 10).
+  - A 15% effect is therefore about **0.6 collisions per site a year**. This matches the ≈5.8 a year prevented across all 10 sites.
+  - We do not use the raw before count of 5.2 a year per site. Regression to the mean inflates it, and 15% of it (0.78) would overstate the benefit.
+- **Other arterials.** These were not among the city's top 10, so they start with fewer collisions. A realistic figure is **roughly 0.5 collisions per site a year or less, possibly none, and highly uncertain.**
+- **Residential network.** We have no evidence either way.
+
+## Recommendations
+
+1. **Get a longer baseline first.** Obtain collision data for 2015–19 at the 10 sites. This is probably the most valuable single step. It would:
+   - show how far 2020–22 was an unusual peak;
+   - allow a formal adjustment for regression to the mean (the empirical Bayes method);
+   - reduce reliance on a baseline distorted by COVID-era traffic.
+2. **Get site-level data.**
+   - Compare collisions at the 4 sites unaffected by the bypass with the 6 that were affected.
+   - Compare **speeds** across the same two groups. This would show whether the fall in mean speed came from the cameras or from the bypass removing faster through-traffic.
+   - Expect the collision comparison to be noisy. If collisions were spread roughly evenly, the 4 unaffected sites had only about 20 a year between them before installation. Do not over-read a null or extreme result there.
+3. **Clarify the comparison group.**
+   - Confirm whether the bypass is included in "other city roads".
+   - Where possible, check for collision increases on likely diversion routes around the camera sites.
+4. **Do not fund a city-wide programme on the basis of this evaluation.**
+5. **Extend in stages, if at all.** If more cameras are considered:
+   - use arterial routes with documented speeding;
+   - install them in stages, with untreated comparison routes, so the effect can be measured rather than assumed.
+6. **Build a business case.**
+   - Weigh installation, maintenance and enforcement costs against a realistic estimate of collisions prevented.
+   - Use roughly 0.5 per site a year or less as the central figure.
+   - Test the case across an effect of **0–20%**. At sites like the originals that is about 0 to 0.8 collisions per site a year, and less elsewhere.
+   - Check whether the case still holds if the effect is only 0–5%.
+7. **Monitor and publish.**
+   - Continue annual monitoring of collisions and speeds at the original 10 sites.
+   - Publish the evaluation, including its limitations.

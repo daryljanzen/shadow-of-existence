@@ -1,0 +1,51 @@
+{
+ "exp": "E6",
+ "cond": "G-noR",
+ "item": "E6-21",
+ "system": "You are a helpful assistant.",
+ "message": "QUESTION:\nWhich appeal letter, A (personal story) or B (impact statistics), should the charity use for its next mailing to previous donors?\n\nDATA:\nSpring appeal. 40,000 previous donors were randomly split between two letters.\n\n| Letter | Sent | Gifts | Total raised |\n| A (personal story) | 20,000 | 1,000 | £40,000 |\n| B (impact statistics) | 20,000 | 800 | £44,000 |\n\nPrint and postage: £0.60 per letter for both versions. Both letters were posted on the same day and gave the same reply deadline. Each responding donor made one gift.\n\nNote from the major-gifts team: Letter B's total includes a single gift of £8,000 from a long-standing major donor, who has given between £5,000 and £10,000 to every spring appeal for nine years, whichever letter they received. No gift to Letter A exceeded £500, and no other gift to Letter B exceeded £500.\n\nThe next mailing will go to a similar pool of previous donors. The charity's other materials (website, legacy brochure, event packs) are aimed at different audiences, including people who have never donated.\n\nHere is a draft analysis:\n\n<analysis>\n**Spring appeal: Letter A vs Letter B**\n\n**Design.** 40,000 previous donors were randomly split into two equal groups. Group A received a letter built around a personal story, and group B received one built around impact statistics. Random allocation means differences in response can be attributed to the letters.\n\n**Background.** The test was large, with 20,000 donors per letter, so chance differences between the groups should be small. Both letters were posted on the same day with the same deadline, so timing does not differ between them. The next mailing goes to a similar pool of previous donors, so this test is directly relevant to it.\n\n**Response rate.** Letter A produced 1,000 gifts from 20,000 letters (5.0%), and Letter B produced 800 (4.0%). More people responded to the story: Letter A's response rate was 25% higher than Letter B's, and it brought in 200 more gifts. Each version went to 20,000 donors, and response rate here means gifts divided by letters sent.\n\n**Gift size.** Letter B raised £44,000 from 800 gifts, an average of £55. Letter A raised £40,000 from 1,000 gifts, an average of £40. Letter B's average is therefore £15 higher.\n\n**Which letter performed better?** The key question for a fundraising letter is how much each donor gives. Letter B's average gift was £55 against £40 for Letter A, so B is the more effective letter. In total, B raised 15% more than A from the same number of letters.\n\n**Costs.** Both letters cost £0.60 each to print and post, £12,000 per version. Together the two versions cost £24,000 and raised £84,000. After costs, A netted £28,000 and B £32,000. The cost per gift was £12 for Letter A and £15 for Letter B.\n\n**Interpretation.** The pattern is clear: fewer people gave to Letter B, but those who did gave substantially more, 37.5% more per gift on average. Donors respond better to statistics than to stories when deciding how much to give, so we should rewrite the website, legacy brochure and event materials in the impact-statistics style as well.\n\n**Recommendation.** Use Letter B for the next mailing to previous donors, and begin revising the charity's other materials in the same style. Future appeals should keep a randomised split so the charity continues to learn what works; a useful next test would compare Letter B with a version that combines a story with headline statistics. Future tests could also check whether the letters perform differently for recent and lapsed donors.\n</analysis>\n\nProduce an improved version.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E6/runs_main/G-noR/E6-21__r1/step1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T20:12:03.776564+00:00",
+ "response": "# Spring appeal: Letter A vs Letter B\n\n## Recommendation\n\n**Use Letter A (personal story) for the next mailing to previous donors.** Once one major-donor gift that the letter did not cause is set aside, Letter A raised more money and more net income per letter sent, and got significantly more gifts. Do not rewrite the website, legacy brochure or event materials on the strength of this test.\n\n## Design\n\n40,000 previous donors were randomly split into two groups of 20,000. One group received a personal-story letter (A) and the other an impact-statistics letter (B). Both letters were posted on the same day with the same reply deadline and cost the same (£0.60 each). Each responding donor made one gift. Random allocation means systematic differences in response can be attributed to the letters, with one exception covered below.\n\n## The £8,000 gift should be set aside\n\nLetter B's £44,000 includes one £8,000 gift from a long-standing major donor. This donor has given £5,000 to £10,000 to every spring appeal for nine years, whichever letter they received. Their gift reflects the relationship, not the letter. Random allocation happened to place them in group B. Had they been in group A, they would almost certainly have given a similar amount there.\n\nEvery other gift in either group was £500 or less, so this one gift is 16 times larger than any other. On its own it accounts for B's apparent lead in total income.\n\nThe fair comparison is the 19,999 other B recipients against the 20,000 A recipients.\n\n| | Letter A | Letter B (as reported) | Letter B (excl. major donor) |\n|---|---|---|---|\n| Letters sent | 20,000 | 20,000 | 19,999 |\n| Gifts | 1,000 | 800 | 799 |\n| Response rate | 5.0% | 4.0% | 4.0% |\n| Total raised | £40,000 | £44,000 | £36,000 |\n| Average gift | £40.00 | £55.00 | £45.06 |\n| Cost (£0.60/letter) | £12,000 | £12,000 | ≈£12,000 |\n| Net income | £28,000 | £32,000 | ≈£24,000 |\n| Gross per letter sent | £2.00 | £2.20 | £1.80 |\n| Net per letter sent | £1.40 | £1.60 | £1.20 |\n| Cost per gift | £12.00 | £15.00 | £15.02 |\n\n## Results\n\n**Response rate.** Letter A brought in 1,000 gifts (5.0%) against Letter B's 800 (4.0%). That is 25% more donors and 200 extra gifts. With 20,000 per group, this difference is very unlikely to be chance (z ≈ 4.8). Letter A also keeps more donors active, which matters for future appeals.\n\n**Average gift.** Excluding the major donor, B's average gift was about £45 against A's £40, so about £5 higher, not £15. We do not have the spread of individual gifts, so we cannot say how reliable this smaller gap is.\n\n**Money raised.** The measure that matters for choosing a mailing is net income per letter sent. That depends on how many people give and how much they give, after costs. Average gift alone ignores the 200 donors Letter B failed to recruit.\n\n- On a like-for-like basis, Letter A raised about £4,000 more than Letter B (£40,000 vs £36,000), or £2.00 vs £1.80 per letter.\n- After costs, A netted about £0.20 more per letter (£1.40 vs £1.20). That is roughly £4,000 more per 20,000 letters.\n- B's lower response rate outweighed its slightly larger average gift.\n\nEven including the £8,000 gift, B raised 10% more than A, not 15%. That lead exists only because of one donor who would have given anyway.\n\n## What this does and does not show\n\n- **It supports Letter A for the next mailing.** The next mailing goes to a similar pool of previous donors, so this test applies directly. The charity should also expect the major donor to give their usual £5,000 to £10,000 whichever letter they receive. The major-gifts team should keep managing that relationship separately.\n- **It does not show that \"donors respond better to statistics.\"** Fewer people gave to B, and once the one-off gift is removed, B's gift-size advantage is small.\n- **It says nothing about the website, legacy brochure or event packs.** Those reach different audiences, including people who have never donated, through different channels and with different asks. A letter test with previous donors cannot be extended to them. Any change there would need its own testing.\n- **Limits.** This is a single spring appeal. Results may differ in other seasons, and longer-term effects such as repeat giving were not measured.\n\n## Next steps\n\n1. Send Letter A in the next mailing to previous donors.\n2. Keep a randomised split in future appeals. Report net income per letter sent as the main measure, and flag or exclude known major donors (for example, gifts over £1,000) before comparing versions.\n3. A useful next test is Letter A against a version that adds a few headline impact statistics to the story. This could capture B's slightly higher average gift without losing A's higher response rate.\n4. If sample sizes allow, check whether the letters perform differently for recent and lapsed donors.\n5. Record individual gift amounts so future reports can test differences in average gift, not just response rate.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 797,
+  "cache_read_input_tokens": 1715,
+  "output_tokens": 2546,
+  "output_tokens_details": {
+   "thinking_tokens": 799
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 797,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2546,
+    "cache_read_input_tokens": 1715,
+    "cache_creation_input_tokens": 797,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 797
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.057647000000000004,
+ "duration_ms": 28428,
+ "wall_s": 29.32,
+ "attempt": 0
+}

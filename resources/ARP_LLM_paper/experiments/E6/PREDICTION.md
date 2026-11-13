@@ -94,3 +94,14 @@ Call 1 starts from the draft, and each later call starts from the previous call'
   - The conditions differ in revision passes as well as perspective: `S` makes six rewrites, while `G-ARP` and `G-noR` make four, with two calls spent on review.
   - If rewriting alone helps, `S` is advantaged on the primary, so **`P1` is conservative, not confounded**.
   - **The attribution of any game advantage to perspective rests on the stage measure** (flaws corrected after steps 1, 3 and 5, against `S`'s matching rounds), not on the final-version contrast alone.
+
+## The registered hand-check, drawn before the main run's aggregate is read (`r7759`)
+
+- **The sample:** 20% of the main run's 144 scorings of final versions, stratified by condition: 10 per condition, 30 in all, drawn by `handcheck/draw.py` with seed 6755.
+- **What I see:** each packet is the scorer's input verbatim (question, data, flaws key, extensions, the final version with any receipt stripped). The condition and the scorer's output are in `handcheck/KEY.json`, opened only after `handcheck/scores.json` is committed.
+- **What I score:** per seeded flaw, corrected 0/1 (120 judgements); per extension, present and valid 0/1 (90); introduced errors as a count.
+- **Reported:** κ and agreement on flaws corrected (the primary) and on extensions; for introduced errors, agreement exact and within 1. The aggregate is not read until this comparison is committed.
+
+## The stage measure, built before the aggregate is read (`r7759`)
+
+The `r7750` amendment rests attribution on flaws corrected after steps 1, 3 and 5 (against `S`'s matching rounds), and `P3` on `S` after call 3 against after call 6. The runner scores only the final version, so the stage measure is a separate blind scorer pass, `score_stage.py`, with the same scorer prompt and receipt stripping, on the version output at steps 1, 3 and 5 of every chain (432 calls). Its file paths carry no condition label it can read (opaque ids, key in `stage_key.json`). It runs after the hand-check is committed and before any aggregate is read.

@@ -1,0 +1,114 @@
+QUESTION:
+Did the new onboarding flow (launched 1 March) improve the budgeting app's month-3 retention, and by how much?
+
+DATA:
+Subscription budgeting app. A new onboarding flow went live on 1 March for all new sign-ups. Also on 1 March, the company completed its acquisition of a rival app, Tallyo. Tallyo's existing paying users were migrated into the product and counted as new sign-ups in the month they migrated (600 in March, 400 in April, none in any other month).
+
+Monthly sign-up cohorts: users still active at the end of month 1, 2 and 3 after sign-up. Data extracted 1 August; '-' = not yet observable.
+
+| Cohort | Sign-ups | M1 | M2 | M3 |
+| Jan | 2,000 | 1,200 | 960 | 840 |
+| Feb | 1,800 | 1,062 | 846 | 738 |
+| Mar | 2,400 | 1,560 | 1,272 | 1,128 |
+| Apr | 2,200 | 1,452 | 1,166 | 1,034 |
+| May | 2,500 | 1,700 | 1,375 | - |
+| Jun | 2,600 | 1,768 | - | - |
+
+Migrated Tallyo users are included in the table above:
+- March: 600 sign-ups; active M1 480, M2 450, M3 420.
+- April: 400 sign-ups; active M1 320, M2 300, M3 280.
+
+Month-3 retention (M3 / sign-ups) is the company's headline retention metric. No other product changes were made between January and June.
+
+KNOWN FLAWS:
+F1. [omission] Ignores the 1,000 migrated Tallyo users in the March and April cohorts. They were already paying users of another app and retain far better (70% at M3), so they inflate the post-change cohorts. CORRECTION: Organic cohorts: March 708 / 1,800 = 39.3% and April 754 / 1,800 = 41.9% at M3, against 42.0% and 41.0% before. There is no improvement in month-3 retention (pooled 40.6% after vs 41.5% before).
+F2. [misreport] The data says the flow went live on 1 March for all new sign-ups, so March is a fully post-change cohort. CORRECTION: March is a clean post-change cohort. The 'understates the effect' argument has no basis.
+F3. [method] Compares month-1 retention of the latest cohorts with month-3 retention of the earlier cohorts, which are different horizons. CORRECTION: Compare like with like. May/June M1 is 68% against January/February M1 of 60%/59%, and May M2 is 55% against 48%/47%. May and June contain no migrated users, so these are organic comparisons and they do suggest an early-stage improvement.
+F4. [inference] Extrapolates a short, already-flattening series (May and June are both 68%) into a forecast, and assumes month-3 retention will follow. CORRECTION: Four data points that plateau do not support a trend forecast. Report the observed values only.
+
+EXTENSIONS:
+- Organic-only comparison at M1 and M2 shows a real early-stage effect may exist: organic March and April M1 is 60.0% and 62.9% (vs 60%/59% before) and May/June M1 is 68%, so the onboarding flow may lift early retention without (yet) moving M3. When May and June mature to M3, they will be the decisive cohorts.
+- Report the conditional retention curve (M2/M1 and M3/M2) for organic users. Organic March M3/M1 is 708/1,080 = 65.6% vs January 840/1,200 = 70.0%, which suggests any early gain may be partly offset by later churn.
+- Put an uncertainty interval on the cohort differences (e.g. a two-proportion CI on pooled pre vs post organic M3), since month-to-month variation of about 1 point is visible in the pre-period.
+
+FINAL VERSION:
+# Onboarding flow: impact on month-3 retention
+
+## Question
+Did the new onboarding flow, live for all new sign-ups from 1 March, improve month-3 (M3) retention, and by how much?
+
+## Answer
+**No measurable improvement can be attributed to the onboarding flow.** With migrated Tallyo users excluded, M3 retention for March and April is flat against January and February. Early retention rose sharply from May onward, but the evidence doesn't point to onboarding as the cause, and the rise is still unexplained.
+
+- **First post-launch cohorts (March–April, Tallyo excluded):** M3 was **40.6%**, against **41.5%** for January–February. The difference is **−0.9 points (binomial 95% CI −3.2 to +1.3)**. A lift above about 1–2 points is unlikely. The +5.5-point lift implied by the blended figures (47.0% vs 41.5%) is ruled out.
+- **Source of the apparent +5.5 points:** Tallyo's migrated users were already paying customers, and they retain far better than people trying the app for the first time.
+- **May–June cohorts:** early retention stepped up sharply. M1 was 68%, against a 59–60% baseline. May M2 was 55%, against 47–48%. This improvement is real, but it is unlikely to come from the onboarding flow, for three reasons:
+  - it appears two months after launch, and March and April show no M3 effect;
+  - the flow did not change in May;
+  - it coincides with a jump of about 35–40% in sign-up volume.
+
+  A change in who signed up is the most likely explanation, but nothing in this dataset confirms it.
+
+## Why the blended numbers mislead
+The Tallyo acquisition closed on 1 March, the same day the new flow launched. Tallyo's users were counted as new sign-ups: 600 in March (25% of that cohort) and 400 in April (18%). In both months they retained at 80% / 75% / 70% (M1 / M2 / M3). The acquisition was not a product change, but it directly confounds the before/after comparison.
+
+| Cohort | Blended M3 | Organic-only M3 | Gap due to Tallyo |
+|---|---|---|---|
+| Mar | 47.0% (1,128 / 2,400) | 39.3% (708 / 1,800) | 7.7 pts |
+| Apr | 47.0% (1,034 / 2,200) | 41.9% (754 / 1,800) | 5.1 pts |
+
+## Like-for-like retention (Tallyo excluded)
+
+| Cohort | Organic sign-ups | M1 | M2 | M3 |
+|---|---|---|---|---|
+| Jan (pre) | 2,000 | 60.0% | 48.0% | 42.0% |
+| Feb (pre) | 1,800 | 59.0% | 47.0% | 41.0% |
+| Mar (post) | 1,800 | 60.0% | 45.7% | 39.3% |
+| Apr (post) | 1,800 | 62.9% | 48.1% | 41.9% |
+| May (post) | **2,500** | **68.0%** | **55.0%** | *~47–48% (projected)* |
+| Jun (post) | **2,600** | **68.0%** | – | – |
+
+**Pooled comparison: Jan–Feb (n = 3,800) vs Mar–Apr (n = 3,600)**
+
+| Metric | Pre | Post | Difference | Binomial 95% CI |
+|---|---|---|---|---|
+| M1 | 59.5% | 61.4% | +1.9 pts | −0.3 to +4.1 |
+| M2 | 47.5% | 46.9% | −0.6 pts | −2.9 to +1.6 |
+| M3 | 41.5% | 40.6% | −0.9 pts | −3.2 to +1.3 |
+
+There may be a small early gain at M1. It isn't statistically significant, and it is gone by M2. Even if it is real, it doesn't carry through to the headline metric.
+
+**How much to trust the interval.** Across the four organic cohorts, M3 rates have a standard deviation of about 1.2 points. Binomial noise alone would produce about 1.1–1.2 points at these cohort sizes, so there's no sign of large extra variation between cohorts. Four cohorts make that a weak check. Treat the upper bound as soft: a lift above roughly 1–2 points is unlikely, not impossible.
+
+**May projection.** Each earlier organic cohort kept between 0.861 and 0.875 of its M2 users through to M3. The blended March and April cohorts kept about 0.887, but only because of the Tallyo users. Applying the organic range to May's 55.0% M2 gives about **47.4–48.1% M3**, roughly 6–7 points above baseline. This is a projection, not an observation.
+
+## Interpreting the May–June step-up
+1. **Timing doesn't fit onboarding.** An onboarding effect should show up first, and most clearly, in M1 for the first cohorts exposed. March and April M1 (60.0%, 62.9%) are at or barely above baseline, and any gain is gone by M2.
+2. **The flow did not change.** No product changes were made between January and June, so a revised onboarding version can't explain May. The product team should still confirm this.
+3. **Acquisition changed in the same month.** Organic sign-ups ran at 1,800–2,000 a month from January to April. They rose to 2,500 in May and 2,600 in June. May was 35% above the January–April average of 1,850 and 39% above the February–April level of 1,800. When volume and early retention step up together, a change in acquisition mix is the likely cause. Possibilities include a new channel or campaign, partnerships, or brand traffic from the Tallyo acquisition. This explanation rests on timing alone, because the dataset has no channel information.
+4. **Other explanations to rule out:**
+   - **Measurement change:** a change from May in how "sign-up" or "active" is defined or logged. For example, counting sign-ups at a later funnel step would raise both volume and early retention.
+   - **Seasonality:** this can't be excluded with only two pre-launch months and no prior-year comparison.
+
+## Caveats
+- **Spillover from the acquisition.** Excluding Tallyo users removes their direct effect on the rates. It doesn't remove indirect effects on organic users, such as integration work, support load, or brand traffic.
+- **Thin baseline.** There are only two pre-launch cohorts and no view of seasonality.
+- **Stale data.** The extract is from 1 August, and it is now mid-November. Each Mk figure is measured at the end of the k-th month after sign-up, so these figures should now be available:
+  - May M3
+  - June M2 and M3
+  - July M1, M2 and M3
+  - August M1 and M2
+  - September M1
+
+  August M3 and September M2 will not be available until the end of November.
+
+## Recommendations
+1. **Do not report an M3 lift from onboarding.** Suggested wording: *"Excluding migrated Tallyo users, the first two post-launch cohorts show no M3 improvement (−0.9 pts; a gain of more than 1–2 pts is unlikely). Cohorts from May onward show markedly better early retention, but this coincides with a roughly 35–40% jump in sign-ups and is more likely due to a change in who is signing up than to onboarding. Under investigation."*
+2. **Refresh the data before circulating.** Current cohorts will test the projected 6–7-point M3 gain for May and show whether the step-up holds through July–September.
+3. **Diagnose the May step-up:**
+   - Break down May–June sign-ups by channel and campaign, and compare retention within each channel before and after May. If within-channel retention is flat, the rise is a mix effect.
+   - Ask data engineering whether the sign-up or active-user definitions or logging changed around May.
+   - Compare against last year's cohorts to check for seasonality.
+   - Confirm with the product team that the onboarding flow was unchanged.
+4. **Exclude migrated users from retention reporting by default,** and tag any future bulk migrations.
+5. **Evaluate future onboarding changes with a holdout or A/B test.** Cohort trends alone can't give a clean read on a launch that lands on the same day as an acquisition.

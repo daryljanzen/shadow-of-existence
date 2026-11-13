@@ -1,0 +1,128 @@
+QUESTION:
+What does this year's engagement survey say about overall employee satisfaction, how has it changed since last year, and which department needs attention?
+
+DATA:
+Annual employee engagement survey, three departments, 1,200 employees in total. Key item: 'Overall, I am satisfied working here' (agree = 'satisfied').
+
+Last year: 600 of 1,150 employees responded, and 62% of respondents were satisfied.
+
+This year:
+| Department | Headcount | Responses | Satisfied |
+| Engineering | 300 | 180 | 126 |
+| Sales | 400 | 120 | 60 |
+| Operations | 500 | 240 | 132 |
+| Total | 1,200 | 540 | 318 |
+
+The survey contained no questions about pay, commission, shift patterns or line management, and free-text comments were not coded this year.
+
+Context from HR: Sales moved to a new commission scheme in January. Operations introduced a new shift pattern in March. Engineering had no structural changes. The survey was anonymous and open for two weeks in May; Sales staff were at the annual sales conference for four of those ten working days.
+
+KNOWN FLAWS:
+F1. [calculation] 540 / 1,200 = 45%, not 47%. CORRECTION: Response rate 45.0%.
+F2. [misreport] The data gives last year's satisfaction as 62%, not 65%. CORRECTION: The fall is 62% to 58.9%, i.e. 3.1 points. With about 600 and 540 respondents this is within sampling noise (z of about 1.1), so 'a clear signal' is not supported.
+F3. [method] Ranks departments on counts of satisfied respondents, which reflect department size and response numbers, rather than on rates. CORRECTION: By rate, Operations is 55%, below Engineering (70%) and only 5 points above Sales (50%). Engineering is the healthiest; Operations is not a model for Sales.
+F4. [inference] Asserts a cause the survey cannot test (no pay or commission questions, no prior-year department breakdown). Operations also had a structural change and also scores low. CORRECTION: The data shows Sales scores lowest, not why. Last year's Sales figure and targeted questions would be needed to attribute it to commission.
+
+EXTENSIONS:
+- Weight to headcount to correct for unequal response rates: (0.70×300 + 0.50×400 + 0.55×500) / 1,200 = 57.1%, slightly below the raw 58.9%, because the most positive department is over-represented among respondents.
+- Report confidence intervals by department. Sales at 60/120 has a 95% CI of roughly ±9 points, so Sales vs Operations (55%) is not clearly different, while Engineering is clearly higher than both.
+- Non-response sensitivity for Sales: with only 30% responding (partly due to the conference), show the range of plausible department satisfaction if non-respondents were 10 points more or less satisfied than respondents.
+
+FINAL VERSION:
+# Engagement survey: results and priorities
+
+## Summary
+
+- **Overall satisfaction:** 59% of respondents were satisfied (318 of 540), down from 62% last year. The 3-point fall is about one standard error, which is within the range that sampling variation alone would produce. It is worth watching, but it is not evidence of a company-wide decline.
+- **By department:** Engineering is clearly the most satisfied, at 70%. Operations (55%) and Sales (50%) are both well below it. The 5-point gap between Operations and Sales is too small to separate them with confidence.
+- **Which department needs attention:** both Operations and Sales, for different reasons.
+  - **Operations** likely has the most people affected: about 225 employees not satisfied, compared with about 200 in Sales. The ranges for the two overlap, so they can't be clearly ranked.
+  - **Sales** has the lowest rate but the least reliable data, because only 30% of its staff responded.
+  - Each department had a major change this year: a new commission scheme in Sales and a new shift pattern in Operations. The survey cannot tell us whether those changes caused the results.
+
+*Terminology:* "satisfied" means agreeing with "Overall, I am satisfied working here." "Not satisfied" means everyone else, including neutral answers. It does not mean actively dissatisfied.
+
+## Response
+
+This year 540 of 1,200 employees responded (**45%**), down from 52% last year (600 of 1,150). More than half of staff did not respond, and we don't know how they feel. All figures therefore describe respondents, not the whole workforce.
+
+| Department | Headcount | Responses | Response rate | Satisfied | % of respondents satisfied | Margin of error (95%)* |
+|---|---|---|---|---|---|---|
+| Engineering | 300 | 180 | 60% | 126 | 70% | ±7 pts |
+| Sales | 400 | 120 | 30% | 60 | 50% | ±9 pts |
+| Operations | 500 | 240 | 48% | 132 | 55% | ±6 pts |
+| **Total** | **1,200** | **540** | **45%** | **318** | **59%** | **±4 pts** |
+
+\*Margins use the standard formula 1.96·√(p(1−p)/n), with no finite-population correction. Applying the correction would narrow the margins; Engineering's, for example, would shrink to about ±4 points because 60% of its staff responded. That narrowing would suggest more precision than a self-selected sample supports, so the wider, more cautious margins are shown.
+
+**How to read the margins of error:** they cover sampling variation only, so they understate the real uncertainty. With 55% of staff not responding, who chose to respond matters more than sampling error. The extremes show the scale:
+
+- If no non-respondent were satisfied, company satisfaction would be 27%.
+- If every non-respondent were satisfied, it would be 82%.
+
+Neither extreme is likely, but the formal margins don't capture this risk.
+
+**Timing:** the company-wide survey window overlapped with the Sales conference for 4 of its 10 working days. That probably explains much of the low Sales response. It also means Sales respondents may differ from Sales staff as a whole, in a direction we can't determine.
+
+## Overall satisfaction and change since last year
+
+Satisfaction fell from 62% to 59% of respondents, about **3 points**. Three things limit what this tells us:
+
+1. **Sampling variation.** The standard error of the year-on-year difference is about 2.9 points. A 3-point change is about one standard error, well within what sampling variation alone would produce. Non-response could also shift either year's figure in unknown directions.
+2. **Who responded.** The mix of respondents doesn't match the workforce:
+   - Engineering, the most satisfied department, is 25% of staff but 33% of respondents.
+   - Sales is 33% of staff but only 22% of respondents.
+   - Weighting each department's result by its headcount gives about **57%**. This assumes respondents represent their own department.
+   - The 57% figure **cannot be compared with last year's 62%**. We don't know last year's department mix, so last year can't be weighted the same way. Setting 57% beside 62% would overstate the fall.
+3. **No department breakdown for last year.** We can't tell whether the change reflects real shifts within departments or just a different mix of respondents. We also can't say whether Sales or Operations specifically got worse.
+
+**Conclusion:** satisfaction is probably in the mid-to-high 50s. It may be slightly lower than last year, but the data do not show a clear decline.
+
+## By department
+
+- **Engineering: 70% satisfied** (126 of 180; 60% response).
+  - This is the highest result, and it rests on the best response rate.
+  - It is clearly above both other departments: about 3 standard errors above Operations and about 3.5 above Sales.
+- **Operations: 55% satisfied** (132 of 240; 48% response).
+  - 108 respondents were not satisfied, the most of any department.
+  - Scaled to headcount, that is about 225 employees, with a sampling range of roughly 195–255. This assumes respondents represent the department.
+- **Sales: 50% satisfied** (60 of 120; 30% response).
+  - This is the lowest point estimate, but also the least reliable.
+  - Scaled to headcount, about 200 employees are not satisfied, with a sampling range of roughly 165–235.
+  - Because 70% of Sales staff did not respond, the true satisfaction rate could be anywhere from 15% (no non-respondents satisfied) to 85% (all satisfied).
+
+The 5-point gap between Sales and Operations is about 0.9 standard errors, so it is not statistically meaningful. The ranges for the number of people not satisfied overlap heavily. Sales should not be treated as a lone outlier, and Operations should not be assumed to be the bigger problem.
+
+## Why are Sales and Operations lower?
+
+We don't know. The survey asked nothing about pay, commission, shift patterns or line management, and the free-text comments were not coded.
+
+- The new commission scheme in Sales and the new shift pattern in Operations are plausible explanations, but the data don't support either one.
+- Other factors could be involved, such as management, workload or the timing of the survey.
+- We should not assume either result will recover on its own.
+
+## Priorities
+
+1. **Operations and Sales, in parallel.**
+   - Run structured listening sessions or a short, targeted pulse survey in both departments.
+   - Ask directly about the commission scheme, the shift pattern, workload and management.
+   - Operations likely has more people affected, so it may warrant slightly more capacity. Run both at once, since the two can't be clearly ranked.
+   - In Sales, schedule the follow-up away from conferences and other peak periods, so the response rate is high enough to trust.
+2. **Code this year's free-text comments**, if they are still available. This is the quickest way to get evidence on causes.
+3. **Company-wide.** Track overall satisfaction in an autumn pulse survey. Do not present it as a response to a confirmed decline.
+4. **Engineering.** Find out what is working there, such as management practices, but interpret the findings with care. Engineering was the only department without a structural change this year, so its results may partly reflect stability rather than practices that would work elsewhere.
+
+## Next year
+
+- Add questions on pay and reward, workload, scheduling and line management.
+- Code the free-text comments.
+- Avoid clashes with major events, and follow up actively with groups that respond poorly.
+- Record department-level results every year so trends can be compared within each department.
+- Report headcount-weighted company figures alongside the raw respondent figures, for both years.
+- State the margin-of-error method in the report.
+
+## Reporting
+
+- **Department heads:** share each head's results along with their department's response rate and margin of error, so weak samples are visible.
+- **Anonymity:** set a minimum group size before reporting any sub-department breakdown.
+- **All staff:** publish the company-level result as *"59% of respondents were satisfied, compared with 62% last year, a difference within the range expected from sampling variation alone."* Include the response rate (45%) and a short summary of the agreed actions.

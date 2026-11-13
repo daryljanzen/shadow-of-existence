@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7759: CAMPAIGN 138 — P7's LAST FOUR ROWS BUILT; P7 IS CLOSED, 15 OF 15 (`r7759+71.1`–`.2`)
+
+**The registration** is `r7759_71_campaign138/PREDICTION.md`: band 400–750, p `0.5`. **The result** is `RESULT.md`
+in the same folder. The build is in `probes/Framework.lean`.
+- **The build:** zero errors and zero warnings, `27` axiom lines all standard, the forbidden-token grep clean,
+  Mathlib-only imports, and `check_no_sorry` ALL 29.
+- **Size:** `329` new lines, under the band by 71.
+- **Row 1, the asymptotic non-intersection, in chart form.**
+  - `r* → −∞` at `2M`.
+  - Every infall path with `dt/dr ≤ −k/f` has `t → ∞`, which covers every radial timelike geodesic (shown) and null
+    rays.
+  - **It is reproved, not ported, as registered:** P2's `sr_future_diverges` is manifold-level.
+- **Row 6:** `A sinh^{2/3}(3τ̃/2α)` solves the bead and `(dr/dτ̃)² = 2M/r + r²/α²`. Also reproved.
+- **Row 3d:** in `ℝ^{1,4}`, the horizon of `(0, αn)` is a null section, and `n ↦ ℋ⁺(n)` is injective, so `p` and
+  `−p` are distinguished.
+- **Row 7c:** an explicit continuous `τ̃` on `(−∞, 0]` (`arcsin` on the lap, `arcosh − iπ/2` beyond). It solves the
+  bead, and `|Im τ̃| ≤ πα/3`, with equality exactly for `r ≤ −r₀`.
+
+**P7 is closed:** 15 of 15 cored rows BUILT.
+**Two readings stay prose, as landed:** the surjectivity of `p ↦ ℋ_c⁺(p)`, and that 7c's branch is *the* analytic
+continuation.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7757: CAMPAIGN 137 — P7's ALGEBRAIC AND COMPLEX ROWS BUILT, 11 OF 11 (`r7757+71.1`–`.2`)
 
 **The registration** is `r7757_71_campaign137/PREDICTION.md`: band 300–600, p `0.75`. **The result** is `RESULT.md`

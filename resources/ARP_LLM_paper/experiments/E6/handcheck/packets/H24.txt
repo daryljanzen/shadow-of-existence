@@ -1,0 +1,187 @@
+QUESTION:
+Which appeal letter, A (personal story) or B (impact statistics), should the charity use for its next mailing to previous donors?
+
+DATA:
+Spring appeal. 40,000 previous donors were randomly split between two letters.
+
+| Letter | Sent | Gifts | Total raised |
+| A (personal story) | 20,000 | 1,000 | £40,000 |
+| B (impact statistics) | 20,000 | 800 | £44,000 |
+
+Print and postage: £0.60 per letter for both versions. Both letters were posted on the same day and gave the same reply deadline. Each responding donor made one gift.
+
+Note from the major-gifts team: Letter B's total includes a single gift of £8,000 from a long-standing major donor, who has given between £5,000 and £10,000 to every spring appeal for nine years, whichever letter they received. No gift to Letter A exceeded £500, and no other gift to Letter B exceeded £500.
+
+The next mailing will go to a similar pool of previous donors. The charity's other materials (website, legacy brochure, event packs) are aimed at different audiences, including people who have never donated.
+
+KNOWN FLAWS:
+F1. [method] Chooses on average gift size alone, ignoring response rate. The right metric for a mailing is net income per letter sent (response rate × average gift − cost). CORRECTION: Income per letter: A £2.00, B £2.20 on raw totals (B £1.80 without the major gift); the response-rate gap must be weighed, not ignored.
+F2. [calculation] £44,000 / £40,000 = 1.10, so B raised 10% more, not 15%. CORRECTION: 10% more on raw totals.
+F3. [omission] Ignores the £8,000 gift from a major donor who gives every year regardless of the letter. It is not a response to Letter B and dominates the comparison. CORRECTION: Excluding it: B raised £36,000 from 799 gifts (average about £45), £1.80 per letter, net £24,000 vs A's £28,000. Letter A is better.
+F4. [inference] Generalises a single mailing test on previous donors to different materials and audiences (including people who have never donated), and the underlying finding disappears once the major gift is removed. CORRECTION: The test supports, at most, a choice of letter for previous donors (A). It says nothing about other channels or audiences.
+
+EXTENSIONS:
+- Test the response-rate difference: 5.0% vs 4.0% on 20,000 each gives z of about 4.8, so the higher response to A is very unlikely to be chance.
+- Compare gift-size distributions without the outlier (e.g. medians, or a trimmed mean), since a single large gift can swing averages; ask for gift-level data.
+- Consider long-run value: A recruits 200 more donor responses, which may raise retention and future giving. A lifetime-value comparison, using the charity's repeat-giving rates, would strengthen the case.
+
+FINAL VERSION:
+# Review of the Current Analysis
+
+## Verified
+
+I re-derived every figure:
+
+- Response rates: 5.0% vs 4.0%. With the major gift excluded, B has 799 gifts, £36,000 raised and a £45.06 average gift.
+- Net income per letter: £1.40 for A vs £1.20 for B. B is £1.225 if the major gift is capped at £500.
+- Break-even: B would need a £50.06 average gift to match A, about 11% above what it achieved.
+- Response-rate test: z ≈ 4.8, with a 95% interval of 0.6 to 1.4 points.
+- Net-income uncertainty: the standard error (SE) of the gap is about 14p if gifts have a standard deviation (SD) of £50, and about 31p at the maximum possible spread. That gives roughly a 93% and 74% chance that A is better.
+- Average-gift test: z ≈ 2.1 at a gift SD of £50.
+- The £8,000 scale on 40,000 letters and the £1,600 cost of the challenger arm.
+
+The decision logic is sound. The letters were randomised and cost the same, so the choice should follow expected net income per letter. The major gift is excluded because the donor gives whichever letter they receive. The conclusion holds whether that gift is removed or capped.
+
+## What is still wrong or weak
+
+1. **Everything rests on one unexplained assumption: a gift SD of £50.**
+   - Small-donor gifts are usually right-skewed. With a £40 mean and gifts up to £500, an SD of £75 to £100 is at least as plausible as £50.
+   - The current table jumps from £50 straight to the extreme bound and labels £50 "plausible". The middle cases are missing:
+
+   | Gift SD | SE of gap | Chance A is better |
+   |---|---|---|
+   | £75 | 18p | 86% |
+   | £100 | 23p | 81% |
+
+   - The ranking still holds, but "about 93%" overstates how confident we can be.
+
+2. **The earlier correction on average gift was itself assumption-dependent.**
+   - The analysis calls the evidence that B attracts larger gifts "moderate" (z ≈ 2.1). That is only true at a gift SD of £50.
+   - At £75, z ≈ 1.4. The evidence for B's larger average gift is suggestive, not established.
+   - Selection also blurs the comparison: the averages are taken only among people who chose to give.
+
+3. **The £8,000 benefit is given as a single number with no range.**
+   - At a gift SD of £50, the 95% interval on the 20p gap is about −7p to +47p.
+   - On 40,000 letters, that is roughly −£2,800 to +£19,000. Readers should see that range.
+
+4. **"An 80/20 split takes longer" is not quantified, and the power figure is optimistic.**
+   - An 80/20 split needs about 1.56 times as many letters as an even split. That is roughly 240,000 letters, or about six appeals of this size, to detect a 20p difference.
+   - A gift SD of £75 would raise that by about 1.8 times.
+   - Pooling across appeals also assumes the effect stays stable as the same donors are mailed again and again.
+   - The practical point is that net-income differences of this size cannot realistically be confirmed by a direct test. The hybrid needs a decision rule built on response rate, which can be measured.
+
+5. **The challenger arm has no decision rule.**
+   - "Run a challenger" without agreed success criteria invites post-hoc judgement.
+
+6. **Smaller points:**
+   - "It may well cost nothing or come out ahead" is speculation and should go.
+   - "Every gift near £0 or £500" should read "gifts split between about £0 and £500".
+
+---
+
+# Spring Appeal: Letter A vs Letter B
+
+## Bottom line
+
+**Use Letter A (personal story) for the next mailing to previous donors.**
+
+- **More people give with A:** 5.0% vs 4.0%. This difference is statistically clear.
+- **A raises more net income per letter:** about £1.40 vs £1.20, once a gift unrelated to either letter is set aside.
+  - This margin is less certain. The chance that A is genuinely better is roughly 80–93%, depending on how gift sizes are spread.
+  - Both letters cost the same, so the letter with the higher expected income is the right choice.
+- **What this is worth:** about £8,000 extra net income on a mailing of about 40,000 letters.
+  - The plausible range runs from a small loss (about −£3,000) to about +£19,000.
+
+## Design
+
+- 40,000 previous donors were randomly split into two groups of 20,000.
+- Both letters were posted on the same day, with the same reply deadline and the same £0.60 cost per letter.
+- Each responding donor made one gift.
+
+## The £8,000 gift
+
+- A long-standing major donor has given £5,000–£10,000 to every spring appeal for nine years, whichever letter they received. Their gift landed in group B by chance.
+- The gift reflects the donor, not the letter, so it is excluded below.
+- Without it, no gift in either group exceeded £500.
+
+**Robustness check:** if the gift is capped at £500 instead of removed, B nets £1.225 per letter. That is still below A's £1.40.
+
+## Results
+
+| | Letter A | Letter B (reported) | Letter B (excl. £8,000 gift) |
+|---|---|---|---|
+| Letters sent | 20,000 | 20,000 | 20,000 |
+| Gifts | 1,000 | 800 | 799 |
+| Response rate | 5.0% | 4.0% | 4.0% |
+| Total raised | £40,000 | £44,000 | £36,000 |
+| Average gift | £40.00 | £55.00 | £45.06 |
+| Cost | £12,000 | £12,000 | £12,000 |
+| **Net income** | **£28,000** | £32,000 | **£24,000** |
+| **Net per letter** | **£1.40** | £1.60 | **£1.20** |
+
+B's apparent £4,000 lead comes entirely from the single £8,000 gift.
+
+## How confident can we be?
+
+**Response rate: strong evidence for A.**
+- The gap is 1.0 point, with a 95% interval of 0.6 to 1.4 points.
+
+**Average gift: suggestive evidence for B, not established.**
+- B's donors gave about £5 more on average.
+- That difference is between 1.4 and 2.1 standard errors, depending on how gifts are spread.
+- The comparison is also not randomised. It covers only people who chose to give, and A's roughly 200 extra donors may tend to give smaller amounts.
+
+**Net income per letter: A leads by 20p.** The totals fix the point estimates. Only the precision depends on how gift sizes are spread:
+
+| Gift SD (assumed) | SE of gap | 95% interval for A − B | Approx. chance A is better* |
+|---|---|---|---|
+| £50 | 14p | −7p to +47p | 93% |
+| £75 | 18p | −16p to +56p | 86% |
+| £100 | 23p | −25p to +65p | 81% |
+| Maximum possible (gifts split between ~£0 and £500) | 31p | −40p to +80p | 74% |
+
+\* These figures assume no prior view about which letter is better. Treat them as a rough guide.
+
+**Break-even:** B would need an average gift of £50.06 to match A, against £45.06 observed.
+
+**Why A is still the right choice:**
+- The letters cost the same, so the choice should follow expected net income. That favours A under every assumption about gift spread and however the major gift is handled.
+- More precise data would change how confident we are, not which letter comes out ahead.
+- The one firmly established result, response rate, also favours A.
+
+## Recommendations
+
+1. **Send Letter A to previous donors.**
+   - Track second-year giving among A's extra donors. They may help retention, but they may also give less or lapse sooner.
+
+2. **Pull gift-level amounts for both groups, alongside the mailing rather than before it.** Use them to:
+   - replace the assumed gift SD with the real one;
+   - check for data errors;
+   - see whether A's extra donors cluster at low gift amounts;
+   - size future tests.
+
+3. **Test a hybrid letter with a decision rule agreed in advance.**
+   - **What to test:** a story-led letter that adds one or two headline impact figures.
+   - **Split:** 80% Letter A and 20% hybrid, which is about 8,000 hybrid letters.
+   - **Cost if the hybrid performs like B:** about £1,600 in expected income.
+   - **What one appeal can measure:** at this split, a 1-point drop in response rate is detected about 98% of the time.
+   - **What it cannot measure:** a 20p difference in net income would take about 240,000 letters, or roughly six appeals, and more if gifts are widely spread. Don't wait for that.
+   - **Suggested rule, to be agreed before results arrive:**
+     - Adopt the hybrid if its response rate is no more than 0.3 points below A's and its average gift is higher.
+     - Drop it if its response rate is clearly lower.
+     - Otherwise, repeat the test.
+
+4. **Steward the major donor separately** through the major-gifts team, and keep them out of mass-mailing tests.
+
+5. **Agree how to handle outliers before future results come in.** Choose one:
+   - exclude known habitual major donors from the test;
+   - stratify the randomisation by giving history;
+   - cap gifts at £500 for the analysis.
+
+6. **Choose segment comparisons in advance**, such as recent vs lapsed donors.
+   - Keep them few, with adequate sample sizes.
+   - Treat unplanned segment "wins" as ideas for the next test, not findings.
+
+7. **Don't extend this result to the website, legacy brochure or event materials.**
+   - They reach different audiences, including people who have never donated, through different channels.
+   - Test them separately if needed.

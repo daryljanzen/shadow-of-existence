@@ -1,0 +1,572 @@
+{
+ "H01": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-10__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    0,
+    0,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H02": {
+  "cond": "S",
+  "record": "scores_main/S/E6-19__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H03": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-05__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H04": {
+  "cond": "S",
+  "record": "scores_main/S/E6-14__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H05": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-09__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    0,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H06": {
+  "cond": "S",
+  "record": "scores_main/S/E6-11__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H07": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-15__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H08": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-17__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H09": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-18__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H10": {
+  "cond": "S",
+  "record": "scores_main/S/E6-03__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    0,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H11": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-03__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    0,
+    0,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H12": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-16__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H13": {
+  "cond": "S",
+  "record": "scores_main/S/E6-16__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H14": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-24__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H15": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-17__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H16": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-15__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    0,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H17": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-14__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H18": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-02__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H19": {
+  "cond": "S",
+  "record": "scores_main/S/E6-22__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H20": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-19__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H21": {
+  "cond": "G-ARP",
+  "record": "scores_main/G-ARP/E6-12__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H22": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-08__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H23": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-20__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    0,
+    1,
+    1
+   ],
+   "introduced_errors": 1,
+   "authorship_guess": "single"
+  }
+ },
+ "H24": {
+  "cond": "S",
+  "record": "scores_main/S/E6-21__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "several"
+  }
+ },
+ "H25": {
+  "cond": "S",
+  "record": "scores_main/S/E6-21__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H26": {
+  "cond": "S",
+  "record": "scores_main/S/E6-24__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 0,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H27": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-22__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H28": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-21__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H29": {
+  "cond": "G-noR",
+  "record": "scores_main/G-noR/E6-09__r1.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    1
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ },
+ "H30": {
+  "cond": "S",
+  "record": "scores_main/S/E6-15__r0.json",
+  "scorer": {
+   "corrected": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1
+   },
+   "extensions": [
+    1,
+    1,
+    0
+   ],
+   "introduced_errors": 0,
+   "authorship_guess": "single"
+  }
+ }
+}
