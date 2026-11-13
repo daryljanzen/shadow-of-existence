@@ -1,0 +1,75 @@
+ITEM: E3-22
+
+KEY:
+1. [arithmetic] at: "Average settlement time fell by 4.4 days, a 38% improvement." -- A fall from 14.2 to 9.8 days is 4.4 / 14.2 = 31%, not 38%.
+2. [inconsistency] at: "Raise the fast-track threshold from £1,000 to £3,000 from January 2027." -- Sections 1 and 2 state the current fast-track threshold is £1,500; the recommendation says it is £1,000.
+3. [missing_consideration] at: "Extending it to claims up to £3,000 is the natural next step" -- Fast-tracked claims bypass fraud screening, and the document's own SIU data show claims of £1,500-£3,000 are 22% of volume but 41% of confirmed fraud. The recommendation counts only handling savings and never addresses the fraud exposure of paying these claims without review (the fall in fraud referrals may itself reflect less screening).
+
+REVIEW:
+# Review: Automated Triage for Home Insurance Claims
+
+The operational results look good, but the report has a serious gap. **The fraud evidence it presents argues against its main recommendation, and the report never addresses this.** There are also several factual inconsistencies to fix before circulation.
+
+## Critical issues
+
+**1. The fraud referral drop is presented as neutral, but it is probably lost detection.**
+Fraud referrals fell from 6.1 to 3.9 per 1,000 claims. Section 2 says fast-tracked claims no longer go through fraud screening sampling. If 38% of claims now produce no referrals, you would expect about 6.1 × 0.62 ≈ 3.8 per 1,000. That is almost exactly the observed figure. The most likely explanation is that fraud on fast-tracked claims is no longer being looked for, not that fraud has fallen. The report lists this figure in Table 1 without comment. It should be stated plainly.
+
+**2. The SIU data contradicts recommendation 6.1.**
+Section 5 says claims between £1,500 and £3,000 are 22% of volume but 41% of confirmed fraud. That is roughly twice the fraud rate of the average claim and the most fraud-dense band reported. Recommendation 6.1 would fast-track exactly this band with no fraud sampling. Section 5 sits in the report with no analysis, and the conclusion calls expansion the "natural next step." The commonest fraud type, inflated contents claims, is also the hardest for rules-based checks to catch.
+
+**3. The financial case leaves out fraud and overpayment costs.**
+Sections 4 and 6.1 count only handler savings. There is no estimate of:
+- fraudulent or inflated claims now paid unchecked, or
+- overpayment against what a handler would have settled.
+
+For a sense of scale: the proposed extra saving is about £409k a year. If additional fraud in the £1,500–£3,000 band added even a few hundred thousand pounds in payouts, most or all of that saving would disappear. Without a leakage estimate, the net figures in Sections 4 and 7 cannot be relied on.
+
+**4. The threshold is stated inconsistently.**
+Sections 1 and 2 give the current threshold as **£1,500**. Recommendation 6.1 says "raise the fast-track threshold from **£1,000** to £3,000." One of these is wrong. This needs fixing because it affects how readers interpret the 38% and 55% figures.
+
+## Errors and weak evidence
+
+**5. The settlement improvement percentage is wrong.** A fall from 14.2 to 9.8 days is 4.4 / 14.2 = **31%**, not 38%. The 38% appears to have been copied from the fast-track share.
+
+**6. The settlement gain may come entirely from the mix of claims.** If 38% of claims settle in about 2 days, the remaining 62% must average about (9.8 − 0.76) / 0.62 ≈ **14.6 days**. That is no better than the old all-claims average of 14.2. It is probably worse in like-for-like terms, because the old average included quick low-value claims. Report settlement times separately for fast-tracked and handler-managed claims, before and after.
+
+**7. Seasonality is not controlled for.** The before period (Oct–Feb) covers winter, with storms, burst pipes and more complex claims. The after period (Apr–Aug) covers summer. This could explain part of the changes in settlement time, handler hours and satisfaction. Compare with the same months a year earlier, or use a control group.
+
+**8. "Largest movement we have recorded in a single year" is not supported.** The comparison is between two five-month periods, not a year. Also say how many people responded to the survey and whether fast-tracked customers are over-represented among them.
+
+**9. The back-testing proves volume, not accuracy.** The 36% predicted versus 38% actual match shows that the rules route about the expected number of claims. It says nothing about whether they route the *right* claims or miss fraud. "No changes needed" is an absence of evidence. No post-payment audit of fast-tracked claims is mentioned.
+
+**10. The 1,100 extra hours needs explaining.** The first 38 percentage points saved about 45 hours per point (1,700 / 38). The next 17 points are projected to save about 65 hours per point (1,100 / 17). That may be reasonable if larger claims take longer to handle, but the report should say so.
+
+## Conduct and regulatory concern
+
+**11. Unexplained automated declines.** Section 3 says some customers were "declined by the automated checks" without being told why. This conflicts with Section 2, which says flagged claims go to a handler rather than being declined. Clarify which is true. If claims are being refused automatically without reasons, that is a Consumer Duty and fair-treatment risk. Recommendation 6.2 should be an immediate fix, not one item on a list. Also give the number of complaints rather than "few."
+
+## Arithmetic checked and correct
+
+- 1,700 hours × £31 = £52,700 a month, or £632,400 a year.
+- Less £140k licence and maintenance = about £492k net.
+- 1,700 / 9,600 ≈ 18%.
+- 1,100 × £31 × 12 ≈ £409k.
+
+## Suggested changes to the recommendations
+
+- **Add:** reinstate fraud sampling on fast-tracked claims now, and audit a sample of fast-tracked claims already paid to measure actual leakage.
+- **Change 6.1:** make any threshold increase conditional on the leakage findings. If it goes ahead, phase it (for example £1,500 to £2,000 first), exclude or add extra checks for contents claims, and run a control group.
+- **Promote 6.2** to immediate action and clarify how declines work.
+- **Strengthen 6.3:** quarterly reviews should track fraud hit rates, leakage and reopened claims, not only the rules themselves.
+- **Revise the conclusion** so it does not describe expansion as the natural next step until the fraud question is answered.
+
+## Bottom line
+
+The report supports keeping the current scheme, with fraud controls restored. It does not yet support raising the threshold to £3,000. Its own Section 5 data suggests that change would carry the highest fraud risk of any option.
+
+OTHER PROBLEMS LISTED:
+  O1. The fall in fraud referrals (6.1 to 3.9) matches the drop expected from removing fraud sampling on 38% of claims, so it likely reflects lost detection rather than less fraud.
+  O2. The settlement-time gain may be a mix effect: handler-managed claims imply about 14.6 days, no better than before.
+  O3. Seasonality is not controlled for: the winter before-period is compared with the summer after-period.
+  O4. The 'largest movement in a single year' claim is unsupported because the comparison is between five-month periods, and survey size and response bias are not reported.
+  O5. Back-testing shows the rules route the expected volume of claims, not that they route the right claims; there is no post-payment audit.
+  O6. The projected 1,100 extra handler hours implies a higher saving per percentage point that is not explained.
+  O7. Section 3 mentions automated declines, which conflicts with Section 2's statement that flagged claims go to a handler; this is a Consumer Duty risk, and the number of complaints is not quantified.

@@ -1,0 +1,89 @@
+ITEM: E3-29
+
+KEY:
+1. [inconsistency] at: "Applying the pilot's 64% participation rate" -- Table 1 gives the pilot participation rate as 57% overall (66% houses, 21% flats); the projection applies a '64%' pilot participation rate. (64% x 52,000 x 1.9 kg x 52 = about 3,290 t; at 57% it would be about 2,930 t.)
+2. [misread_evidence] at: "Participation was broadly similar across housing types" -- Table 1 shows participation of 66% in houses but only 21% in flats, a very large difference. The claim misreads the table, and the conclusion that a uniform service needs no separate approach for flats rests on it.
+3. [missing_consideration] at: "Every tonne diverted therefore saves £74, or around £243,000 a year on the projected tonnage." -- The saving assumes all projected tonnage (about 3,290 t) goes to Brookfield at £38/t, but the document states Brookfield can take only 1,800 t a year until 2029 and the next plant is 46 miles away. The excess tonnage's treatment and haulage cost is never addressed, though the 'fully funded' conclusion depends on it.
+
+REVIEW:
+# Review: Weekly Separate Food Waste Collection Feasibility Study
+
+**Verdict: not ready for Cabinet.** The recommendation is clearly worded, but its three supporting claims are contradicted by the study's own figures:
+
+- the service can be uniform across housing types
+- the service is fully funded
+- treatment is local
+
+Each needs fixing before the paper goes to decision-makers.
+
+## 1. Participation was not similar across housing types
+
+Table 1 shows houses at **66%** and flats at **21%**, roughly a threefold gap. Flats households also produce less (1.4 kg vs 1.9 kg). Yet Section 2 says participation was "broadly similar across housing types", and the uniform roll-out rests on that statement. Your summary repeats it ("participation held up across houses and flats").
+
+The pilot supports the opposite conclusion: flats likely need a different approach, such as communal bins, different caddy placement or targeted communications. With about 10,400 flats in the district, this is a design decision Cabinet should see, not one to assume away.
+
+## 2. The projection uses a participation rate the pilot didn't produce
+
+Section 3 applies **64%** participation. The pilot's overall rate was **57%** (2,280 / 4,000). The pilot was 20% flats, the same as the district, so 57% is the right figure if you project at district level. Also, the blended yield is 1.86 kg, not 1.9.
+
+| Basis | Annual tonnage |
+|---|---|
+| As stated (64% × 1.9 kg) | ~3,290 t |
+| Pilot overall rate (57% × 1.9 kg) | ~2,930 t |
+| By housing type (houses 66% × 1.9 kg; flats 21% × 1.4 kg) | ~2,870 t |
+
+The by-housing-type figure is the most defensible. It cuts projected tonnage by about 13%, and the disposal saving falls with it, to about £212,000.
+
+## 3. Brookfield cannot take the projected tonnage
+
+Brookfield offers **up to 1,800 t/year until 2029**. Even the corrected projection of about 2,870 t exceeds this by roughly 1,000 t a year. The paper doesn't say where that tonnage goes. The options are:
+
+- **Haul it to the next plant, 46 miles away.** The gate fee is unknown, and there are extra vehicle and crew time costs. This also undermines the "local treatment" claim.
+- **Leave it in the residual bin.** In that case the diversion saving isn't realised.
+
+If only 1,800 t is diverted at £74/t, the saving is **about £133,000**, not £243,000.
+
+## 4. The service is not shown to be fully funded
+
+- **The margin is thin.** On the paper's own numbers, the margin is £30,000 (£520,000 against £490,400).
+- **Correcting for the capacity cap removes it.** The net cost becomes about £733,400 − £133,000 = **£600,000**, which is roughly **£80,000/year over** the allocation. The cost of treating the excess tonnage elsewhere comes on top of that.
+- **The funding is not confirmed.** It is described as "provisional" and something the Government "has indicated". The paper should say what is confirmed, for how many years, and what happens if it is lower.
+- **The cost lines may be incomplete.** Your summary says every cost is shown, but the paper doesn't mention:
+  - absence and holiday cover for crews
+  - supervision and management
+  - employer on-costs (it's unclear whether £34,000 includes them)
+  - depot or parking space for six vehicles
+  - the caddy request and missed-collection phone line in Section 6
+
+  These may be included elsewhere, but the paper should say so.
+
+The arithmetic within Table 2 is correct (£733,400; vehicles £990,000 / 7 = £141,400).
+
+## 5. Timetable and other points
+
+- **Vehicle order deadline.** Vehicles must be ordered by December 2026, and it is already mid-November. Cabinet needs to see the funding and capacity risks before committing to that spend.
+- **Missing procurement steps.** The timetable covers vehicles but not caddy procurement for 52,000 households, liner supply, or signing the Brookfield contract and arranging a second outlet.
+- **Statutory deadline.** The paper says councils are "required" to introduce the service but doesn't give the statutory deadline or explain why April 2027 is compliant. If Thornbury is relying on a transitional arrangement, say so.
+- **Satisfaction figure.** The 81% rating lacks a sample size and response rate. Respondents are likely skewed toward participating households.
+
+## Suggested changes before submission
+
+1. Remove the "broadly similar" claim. Present the flats gap and either propose a flats-specific approach or explain why uniform service is still appropriate.
+2. Re-run the tonnage by housing type, giving about 2,870 t.
+3. Address the Brookfield cap explicitly, covering where about 1,000 t a year goes until 2029 and at what cost.
+4. Restate the net cost and funding position with the corrected figures, give the funding status and duration, and show the likely shortfall of about £80,000 or more.
+5. Add a short risk section covering capacity, funding confirmation, flats participation and the vehicle lead time.
+6. Reword the recommendation. For example, Cabinet could approve the roll-out and vehicle order subject to securing additional AD capacity and confirmed funding, and note the projected shortfall.
+
+The pilot itself is good evidence and a sound basis for proceeding. The problem is that the paper draws stronger conclusions than its data supports.
+
+OTHER PROBLEMS LISTED:
+  O1. Blended yield per participating household is about 1.86 kg, not the 1.9 kg shown in the 'All' row
+  O2. Funding margin is thin (about £30,000) even on the paper's own numbers
+  O3. New-burdens funding is only provisional; its duration and a fallback if it is lower are not stated
+  O4. Cost lines may be incomplete: crew absence cover, supervision, employer on-costs, depot space and the phone line are not shown
+  O5. Vehicle order deadline is imminent; Cabinet should see the risks before committing
+  O6. Timetable omits caddy and liner procurement and signing the Brookfield contract
+  O7. Statutory deadline is not stated and April 2027 compliance is not explained
+  O8. The 81% satisfaction figure lacks a sample size and response rate, and is likely biased toward participants
+  O9. The paper relies on a 'treatment is local' claim that is undermined

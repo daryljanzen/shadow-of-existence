@@ -1,0 +1,48 @@
+Business Case: Consolidating into a Single Manchester Office
+Pelham and Rowe Consulting Engineers, Property Committee, May 2026
+
+1. Proposal
+We propose to close our Salford Quays office when its lease breaks on 31 March 2027 and consolidate all Manchester staff into our Central office on King Street, which we hold on a lease to 2034. Central would be refitted with a higher proportion of collaboration space and shared desks.
+
+2. Current position
+Central has 180 desks and houses our building services, structures and business support teams. Salford Quays has 120 desks and houses the infrastructure division, which works mainly on large transport and utilities projects. Between them the two offices accommodate 290 Manchester-based staff.
+
+Table 1. Desk occupancy, January to April 2026 (badge data)
+Office | Desks | Average daily occupancy | Average occupancy on Tuesdays and Wednesdays
+Central | 180 | 102 | 151
+Salford Quays | 120 | 64 | 97
+Combined | 300 | 166 | 248
+
+Average combined daily occupancy of 166 fits comfortably within the 180 desks at Central. Hybrid working is now well established, with most staff in the office two or three days a week.
+
+3. Staff views
+We surveyed all Manchester staff in March 2026 (221 responses, 76%).
+
+Table 2. Staff survey: preferred single office location
+Preference | Share of respondents
+Central (King Street) | 34%
+Salford Quays | 41%
+No preference | 25%
+
+Most staff prefer the Central office, and the King Street location is better served by rail for staff commuting from outside the city. Some infrastructure staff raised concerns about the loss of their dedicated project rooms, which we address through the refit.
+
+4. Collaboration benefits
+Central was refurbished in 2024 with open collaboration areas and bookable project rooms. Since then, projects led from Central have been completed on average 12% faster against programme than projects led from Salford Quays. Co-locating all staff in the refurbished Central space should therefore speed up delivery across the firm, particularly on the infrastructure projects now run from Salford. Central's projects are mostly smaller building services and structural commissions with short programmes, while Salford leads multi-year infrastructure frameworks with many external stakeholders.
+
+5. Costs and savings
+Table 3. Annual cost of the Salford Quays office
+Item | Annual cost
+Rent | £410,000
+Service charge | £95,000
+Business rates | £88,000
+Total | £593,000
+
+One-off costs of consolidation are a refit of Central (£340,000) and dilapidations payable on leaving Salford (£150,000), a total of £490,000. In the first year, net savings are therefore £103,000, and from the second year onwards the full £593,000 a year is saved. Over the remaining seven years of the Central lease, the cumulative net saving is about £3.66 million.
+
+6. Risks
+Disruption during the move: the move would be phased over two weekends in March 2027, with IT services migrated in advance.
+Client perception: some infrastructure clients are based near Salford Quays. Project teams will continue to work from client offices where needed.
+Staff retention: a minority of staff may find the commute to King Street harder. HR will review individual cases and offer flexible start times.
+
+7. Recommendation
+Consolidation saves £593,000 a year once the move is complete, is supported by staff preferences, fits comfortably within Central's capacity on current occupancy, and brings our infrastructure teams into a space that has demonstrably improved project delivery. We recommend that the Committee approve serving notice on the Salford Quays lease and a refit budget of £340,000.

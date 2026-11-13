@@ -1,0 +1,84 @@
+ITEM: E3-26
+
+KEY:
+1. [arithmetic] at: "The average conversion rate of the four comparable titles is 2.0% of MUU." -- (1.9 + 1.1 + 2.4 + 1.4) / 4 = 1.7%, not 2.0%. At 1.7% the projection is about 7,140 subscribers, not 8,400, and revenue about £428,000.
+2. [misread_evidence] at: "Conversion rates across the comparable titles are highest for the titles charging the lowest prices" -- Table 1 shows the opposite pattern: the highest-priced title (C, £7.99) has the highest conversion (2.4%) and the lowest-priced (D, £3.99) has 1.4%. The pricing rationale rests on misreading the table.
+3. [missing_consideration] at: "At £4.99 a month, 8,400 subscribers would generate around £503,000 a year in subscription revenue." -- The projection treats all subscription revenue as incremental, but the document's own survey says 30% of the 11,200 print subscribers (about 3,360) would cancel £18.50 print subscriptions for a digital one under £6. Switching would cost about £13.51 a month each (roughly £545,000 a year), which is never addressed although it could wipe out the net contribution.
+
+REVIEW:
+# Review: Calderbrook Courier Digital Subscription Market Analysis
+
+Using comparable titles is a sound approach, and the paper is clear and well structured. However, two of its three central claims don't hold up against its own data, and the largest financial risk, cannibalisation of print, is missing from the projection. As written, the recommendation is not supported.
+
+## 1. The "highest conversion at the lowest price" claim is the reverse of what Table 1 shows
+
+Sorted by price:
+
+| Title | Price | Conversion |
+|---|---|---|
+| D | £3.99 | 1.4% |
+| B | £4.99 | **1.1%** |
+| A | £5.99 | 1.9% |
+| C | £7.99 | **2.4%** |
+
+The most expensive title converts best. The only title already at £4.99 converts worst. If the table suggests anything, it is that higher prices did not hurt take-up.
+
+Four data points can't establish a price effect in either direction. Content strength, local competition and meter design are all confounders. But the paper's stated rationale for £4.99 is contradicted by its own evidence, so Section 4 and the conclusion both need rewriting. The data also gives no reason to rule out £5.99–£7.99, which would raise revenue per subscriber by 20–60%.
+
+## 2. The average conversion rate is 1.7%, not 2.0%
+
+- Simple mean: (1.9 + 1.1 + 2.4 + 1.4) / 4 = **1.7%**
+- Pooled (23,500 subscribers ÷ 1.33m MUU): **1.77%**
+
+Corrected projection:
+
+| | Paper | At 1.7% | At Title B's 1.1% (same price) |
+|---|---|---|---|
+| Subscribers | 8,400 | 7,140 | 4,620 |
+| Subscription revenue | £503k | £428k | £277k |
+| Net contribution (fees scaled pro rata, marketing £60k) | £358k | ~£296k | ~£170k |
+
+The Title B case deserves explicit treatment. It is the only comparable at the proposed price.
+
+## 3. Print cannibalisation is the biggest omission
+
+Section 2 reports that 30% of surveyed print subscribers would switch to digital-only at under £6. Yet this never appears in the projection:
+
+- 30% × 11,200 = 3,360 switchers
+- Revenue lost per switcher: £18.50 − £4.99 = £13.51/month
+- 3,360 × £13.51 × 12 = **~£545,000 a year**
+
+That exceeds the entire projected net contribution. Stated intent overstates actual behaviour, so the real figure would be lower. Still, even a third of it (~£180k) would remove most of the corrected margin.
+
+Two further points:
+- The comparison should use print **contribution**, not revenue. Switchers save printing and delivery costs, so finance needs to supply the per-subscriber print margin.
+- Switchers would sit inside the digital subscriber count, so some of the 7,000–8,400 are not new revenue at all.
+
+This is also a pricing argument. A low digital price widens the gap with print and encourages switching. That is another reason to reconsider £4.99.
+
+## 4. Smaller issues
+
+- **Display loss sits outside Table 2.** The author's summary says it was "explicitly costed", but it should appear as a line in the net figure. Display has been falling 12% a year, so the 2028 base will be nearer £750k than £1.1m. That actually makes this line smaller. Also, a 5–8% fall in page views doesn't necessarily mean a proportional revenue fall, because subscribers are often the most valuable ad audience.
+- **Churn and marketing.** At 3–5% monthly churn, holding 7,000–8,400 subscribers means replacing roughly 210–420 a month. The paper should show that £60k a year is enough to achieve this.
+- **Introductory offer.** £1 for three months lowers year-one revenue. The paper should include a year-one view as well as the year-two steady state.
+- **Comparability.** Only 60% of Courier users are local. Do the comparables have similar local shares? Non-local users rarely subscribe, so if the comparables are more local, Courier conversion could come in lower.
+- **Phased launch.** A ten-article meter for two months, followed by the review six months after full launch, leaves little room to "learn before committing". Set explicit go/adjust criteria for the soft-launch period, such as a conversion threshold and print switching rates.
+
+## 5. Recommended revisions
+
+1. Correct the average to 1.7% and present a range of scenarios (1.1%, 1.7%, 2.4%).
+2. Remove the claim that a low price maximises take-up. Reconsider the price, perhaps testing £5.99 or more.
+3. Add a print cannibalisation line using print contribution margin, and test sensitivity to switching rates of 10%, 20% and 30%.
+4. Put display loss and churn-driven acquisition costs into the main projection table.
+5. Add measurable decision criteria to the soft launch.
+
+The case for a digital subscription may well survive these changes. But the conclusion that it "comfortably covers" its costs depends on an arithmetic error, a misreading of the price data, and leaving out the print impact. The paper needs revision before it goes for approval.
+
+OTHER PROBLEMS LISTED:
+  O1. Display advertising loss is not included as a line in the net contribution table (Table 2), and the display base will have declined by year two
+  O2. A fall in page views does not necessarily mean a proportional fall in display revenue
+  O3. With 3-5% monthly churn, the paper does not show that £60k marketing is enough to replace lost subscribers
+  O4. The £1 introductory offer reduces year-one revenue, and no year-one view is given
+  O5. Comparability: the Courier's 60% local share may differ from the comparables, which could mean lower conversion
+  O6. The phased launch has no explicit go/adjust criteria, and the soft launch period is short
+  O7. The single comparable at £4.99 (Title B, 1.1%) should be treated as an explicit downside scenario

@@ -1,0 +1,69 @@
+ITEM: E3-17
+
+KEY:
+1. [inconsistency] at: "The DNA rate of 10.5% (including late cancellations, which we classify as DNAs)" -- Section 1 defines DNAs as failures to attend without notice and says late cancellations are recorded and reported separately (and section 5 reports 1,140 late cancellations 'in addition to the DNAs above'). Finding 1 says the 10.5% includes late cancellations classified as DNAs. The definition contradicts itself.
+2. [unsupported_causal] at: "Reminder calls therefore more than halve the DNA rate" -- A call is only recorded as 'received' if the patient answered and confirmed attendance; unanswered calls fall into the comparison group. The groups are selected on engagement/intention to attend, and calls were made only 'where time allows', so the 6.0% vs 12.5% difference does not show the calls caused the reduction.
+3. [missing_consideration] at: "This can be absorbed within existing reception hours at no additional cost." -- The document states each call takes about four minutes and staff currently make about 300 calls a week. Going to about 960 a week adds about 660 calls, roughly 44 extra staff hours a week (more than one full-time post). The memo never addresses this workload/cost although its own data raise it.
+
+REVIEW:
+# Review: Internal Audit Memo on Missed Appointments in Outpatient Physiotherapy
+
+The arithmetic is sound. Every total, rate and the cost figure checks out. The problems are in how the reminder-call data is read, one internal contradiction, and a staffing claim the memo's own figures don't support. Together these undermine the main recommendation.
+
+## Major issues
+
+### 1. The reminder-call data can't show that reminders work (Section 3, Conclusion)
+
+The memo says reminder calls "more than halve the DNA rate" and "have been shown to" do so. The data can't support a causal claim:
+
+- **The groups are self-selected.** A call counts as "received" only if the patient answered *and confirmed they would attend*. Patients who pick up and confirm are, almost by definition, more likely to turn up. A 6.0% DNA rate in that group may say more about who answers than about the effect of the call.
+- **Unanswered calls are hidden in the comparison group.** Unanswered calls aren't recorded, so the 17,060 "no reminder call recorded" appointments mix patients never called with patients called who didn't answer. The comparison is really "confirmed attenders vs. everyone else".
+- **Calls weren't allocated at random.** They were made "where time allows", which may vary by site, day, clinician or appointment type. Appointment type matters: follow-ups have nearly double the DNA rate of new assessments (11.8% vs 6.6%). If calls went disproportionately to new patients, that alone would produce part of the gap.
+
+So the claim that extending calls "would bring the service well within its 8% target" isn't supported. At minimum, the memo should split Table 2 by appointment type and by site. Ideally it would recommend a controlled pilot before rollout.
+
+### 2. Late cancellations are described inconsistently (Scope vs. Finding 1)
+
+- Section 1 says late cancellations are "recorded and reported separately".
+- Finding 1 says the 10.5% rate is "including late cancellations, which we classify as DNAs".
+
+The figures show the 10.5% **excludes** them, since it is 2,610 / 24,860. Including the 1,140 late cancellations would give 3,750 / 24,860 = **15.1%**. Finding 1 needs correcting.
+
+The memo could also note that about 787 late-cancellation slots went unfilled (69% of 1,140). That is roughly another 390 clinical hours, or about £24,400, not counted in the cost figure.
+
+### 3. The "no additional cost" claim contradicts the memo's own figures (Recommendation 1)
+
+- Current volume: 300 calls/week × 4 min = **20 staff-hours/week**
+- Proposed volume: ~960 calls/week × 4 min = **64 staff-hours/week**
+- Increase: about **44 staff-hours/week**, more than one full-time post
+
+The true current workload is also understated. The 7,800 figure counts only answered-and-confirmed calls, so the real number of call attempts is higher, and scaling up would add more unanswered calls. Calls are currently made only "where time allows", which suggests reception has no spare capacity. The claim that this "can be absorbed within existing reception hours at no additional cost" needs evidence or should be removed.
+
+## Minor issues
+
+- **Wording of the cost.** £80,900 is the value of unused clinical time, not a cash saving. Finding 1's "every six months" also turns a single six-month observation into a recurring cost.
+- **Discharge policy.** The memo reports 104 of 160 patients discharged (65%) but doesn't say how many of the 56 not discharged were actually judged vulnerable. That number would show whether Recommendation 2 targets the real cause.
+- **Unsupported timescale.** The Conclusion's "below target within six months" has no stated basis.
+- **Overstated certainty.** "Largely preventable" is stronger than the evidence allows.
+
+## Suggestions
+
+- **Consider automated SMS reminders.** Recommendation 3 already proposes automated texting for the cancellation list. The same system could send reminders at far lower staff cost than 64 hours/week of calls, perhaps with phone calls kept for vulnerable or high-risk patients.
+- **Fix the recording practice.** Record all call attempts and their outcomes (answered/confirmed, answered/cancelled, no answer). This would allow a valid evaluation in future.
+- **Pilot before rollout.** Run reminders at one site or for a randomised subset of appointments, comparing like with like, before committing reception time across the service.
+
+## Summary of required corrections
+
+| Location | Issue | Fix |
+|---|---|---|
+| §3, §7 | Causal claim from self-selected comparison | Reword as an association; recommend a pilot |
+| Finding 1 | Says 10.5% includes late cancellations | Remove, or state the combined rate of 15.1% |
+| Rec. 1 | "No additional cost" | State the ~44 extra hours/week and how it will be resourced |
+| §5 / Finding 1 | Unfilled late-cancellation cost omitted | Optionally add about £24,400 |
+
+OTHER PROBLEMS LISTED:
+  O1. The roughly 787 unfilled late-cancellation slots (about £24,400 of clinical time) are left out of the cost figure
+  O2. £80,900 is the value of unused clinical time rather than a cash saving, and 'every six months' turns a single six-month observation into a recurring cost
+  O3. The discharge section doesn't say how many of the 56 patients not discharged were actually judged vulnerable
+  O4. The Conclusion's 'below target within six months' timescale has no stated basis
+  O5. 'Largely preventable' overstates what the evidence shows

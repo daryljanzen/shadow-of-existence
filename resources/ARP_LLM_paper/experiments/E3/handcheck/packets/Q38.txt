@@ -1,0 +1,73 @@
+ITEM: E3-13
+
+KEY:
+1. [arithmetic] at: "Total | | £174,000" -- The cost lines sum to £124,000 + £32,500 + £7,500 = £164,000, not £174,000. The growth bid is overstated by £10,000.
+2. [inconsistency] at: "The twelve-month Ashgrove pilot has demonstrated strong demand" -- Section 3 states the Ashgrove pilot ran from October 2025 to March 2026, i.e. six months; the conclusion calls it a twelve-month pilot.
+3. [misread_evidence] at: "Evening visits at Ashgrove averaged close to the weekday daytime level" -- Table 1 shows 21 visits per hour in the new weekday evening slot versus 46 and 58 in weekday daytime slots, i.e. less than half the daytime level. The text misstates the table, and the claim of strong evening demand rests on it.
+
+REVIEW:
+# Review: Extended Opening Hours Budget Justification
+
+The request is clearly stated, but the document is not ready to go to Members. It has an arithmetic error in the headline figure, and its central evidence claim is contradicted by its own data. The author's summary repeats both problems, so they need fixing in the source, not just in the framing.
+
+## Must fix before submission
+
+**1. The costs don't add up to £174,000.**
+Table 2: £124,000 + £32,500 + £7,500 = **£164,000**. That leaves a £10,000 gap. Either an item is missing (e.g., contingency or recruitment costs) or the total is wrong. The £174,000 appears in sections 1, 4 and 8, so all three need correcting or the missing line adding. The staffing line itself is correct (5,000 hours × £24.80 = £124,000).
+
+**2. Evening use is not "close to daytime levels".**
+Table 1 shows evening slots at **21 visits/hour**, against 46–58 for weekday daytime. That is well under half. Section 3 and the conclusion both say otherwise, and Members will see the table next to the claim. The honest picture is still positive:
+- **Sundays are strong** at 52/hour, comparable to weekday afternoons.
+- **Evenings are modest** in volume, but the job club shows they reach the target group.
+
+Rewrite the claim to say this. As written, it undermines confidence in the whole bid.
+
+**3. The pilot was six months, not twelve.**
+Section 3 says October 2025 to March 2026, and utilities were "scaled to a full year". The conclusion calls it a "twelve-month" pilot, so change the conclusion to six. It is also worth noting that these were autumn/winter months. Evening and Sunday demand, and utility costs, may differ in summer, so annualising carries some uncertainty.
+
+**4. Section 3 and section 7 contradict each other.**
+Section 3 says Ashgrove shows the hours "will be well used across all five branches". Section 7 says Ashgrove is the busiest branch and the others may be lower. The risk section is the more defensible position, so soften section 3 to match it.
+
+## Should fix
+
+**5. The value-for-money figure is optimistic.**
+The 84,000 visits figure checks out arithmetically: (6 × 21 + 4 × 52) × 50 weeks × 5 branches ≈ 83,500. However, it assumes three things:
+- **All branches match Ashgrove**, which section 7 says is unlikely.
+- **All visits are new.** Some evening and Sunday visitors would otherwise have come at other times.
+- **The comparator is like-for-like.** £3.40 is a full average cost including buildings and overheads, while £2 is a marginal cost.
+
+A sensitivity line would make this much more robust, e.g., "even if the other branches see half of Ashgrove's use, cost per visit would be about £X."
+
+**6. The self-service comparison doesn't show what the author's summary claims.**
+The summary says self-service "would cost more once building works are included". The document never makes that comparison, and on its own numbers it may not hold:
+- **Self-service saves** roughly £83,000 a year, recurring (two-thirds of staffing).
+- **Building works cost** about £300,000, one-off (5 × £60,000).
+
+On cost alone, self-service would break even in around four years. The stronger argument is the one already in the text: unstaffed opening can't support the job club or family activities. Either set out the cost comparison properly, or rest the case on service quality. Don't assert a cost conclusion the figures don't support.
+
+**7. Clarify that this is recurring growth.**
+State that this is an ongoing annual revenue commitment, not one year's funding. Also say what happens after the six-month review: what usage level would trigger scaling back at a branch?
+
+**8. Recruitment risk is understated.**
+The pilot needed about 20 extra staff-hours a week at one branch. The full scheme needs about 100 a week across five. "As happened during the pilot" doesn't establish that existing part-timers can cover five times the volume.
+
+## Minor checks
+
+- **Current hours:** weekdays 9–5 plus Saturday 9–1 comes to 44 hours, not the stated 38. Confirm the current pattern (perhaps a half-day closure?) so the 38 → 48 figure is accurate.
+- **Kiosk maintenance:** it isn't obvious why a staffed model needs this. Add a short explanation.
+- **"Before asking for a penny":** this phrase is in the author's summary only. If it is reused anywhere, note that the pilot was funded from underspends, so it did cost money.
+
+## Bottom line
+
+The underlying case is reasonable: strong Sunday demand, a well-used job club, and membership up about 65% (1,140 vs 690). However, the bid currently overstates the evidence and miscalculates its own total. Correcting the four "must fix" points is essential before it goes to decision-makers.
+
+OTHER PROBLEMS LISTED:
+  O1. Section 3 claims the new hours will be well used at all five branches, but section 7 says Ashgrove is the busiest branch and demand elsewhere may be lower
+  O2. The value-for-money figure is optimistic: it assumes every branch matches Ashgrove, that all visits are new rather than displaced, and it compares a marginal cost (£2) with a full average cost (£3.40)
+  O3. The self-service alternative does not support a cost conclusion: recurring savings of about £83k against one-off works of about £300k break even in roughly four years (the review aims this at a claim in the author's summary)
+  O4. The bid should state that this is an ongoing annual revenue commitment and set the usage trigger for scaling back after the six-month review
+  O5. Recruitment risk is understated: the full scheme needs about five times the extra staff-hours the pilot used
+  O6. The current hours stated (38) do not match the described pattern of weekdays 9 to 5 plus Saturday 9 to 1, which gives 44 hours
+  O7. There is no explanation of why kiosk maintenance is needed in a staffed model
+  O8. The pilot ran in autumn/winter, so annualising demand and utility costs from it is uncertain
+  O9. The phrase 'before asking for a penny' in the author's summary is misleading because the pilot was funded from underspends

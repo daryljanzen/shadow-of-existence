@@ -1,0 +1,93 @@
+ITEM: E3-07
+
+KEY:
+1. [inconsistency] at: "Across our 124 rooms, 104 weekend nights a year and average weekend occupancy of 79%" -- The hotel is described as a 112-room hotel in the Context section, but the revenue estimate uses 124 rooms. With 112 rooms the same calculation gives 112 x 104 x 0.79 x £20 = about £184,000, not £204,000.
+2. [unsupported_causal] at: "This tells us that our weekend guests are not price sensitive at current levels" -- The only evidence is that occupancy rose from June to July after a June rate rise, but the document itself says July and August are the strongest months because of the harbour festival and school holidays. The seasonal rise confounds the comparison; it cannot show demand is price-insensitive (let alone that the higher price helped).
+3. [missing_consideration] at: "We have assumed weekend occupancy is maintained at 2025 levels, which we consider prudent given the evidence above." -- The document states that about 38% of Saturday-night bookings are wedding guests from the adjacent venue who stay only Saturday night. A two-night minimum would exclude or deter this group, but the revenue case assumes occupancy is maintained and never addresses the loss of these single-night Saturday bookings.
+
+REVIEW:
+# Review: Weekend Rate Restructure Proposal
+
+The proposal rests on three claims: the price test shows guests aren't price sensitive, the £204,000 is a conservative floor, and the two-night minimum adds revenue. None of them holds as written. The direction may still be right, since you are priced below the set, but the evidence doesn't support the stated confidence or the "low-risk" framing.
+
+## 1. Arithmetic error: the hotel has 112 rooms, not 124
+
+Section 2 says Harbourside is a **112-room** hotel. Section 5 calculates revenue across **124 rooms**.
+
+- 124 × 104 × 79% × £20 ≈ **£204,000** (the figure in the proposal)
+- 112 × 104 × 79% × £20 ≈ **£184,000**
+
+The headline figure is overstated by about £20,000 before any other adjustment.
+
+## 2. The June-to-July "price test" is confounded by seasonality
+
+The rate rose in the last week of June, and July occupancy then rose from 81% to 89%. But the document itself says July and August are the peak months, driven by the harbour festival and school holidays. Table 1 shows occupancy climbing to 93% in August regardless.
+
+- The July rise is what seasonality predicts. It says nothing about price sensitivity.
+- There is no control, such as July 2024 at the old rate versus July 2025 at the new rate, or a comparison against competitor occupancy.
+- The most this test shows is that peak-season demand absorbed £10. That tells you little about a further £20 in January–March or November, when occupancy is 62–74%.
+- "Reinforced our positioning as a quality option" is an interpretation with no supporting evidence.
+
+The author calls this "a direct test" of price sensitivity. It isn't one, and the recommendation's central claim depends on it.
+
+## 3. The value-for-money score cuts the other way
+
+A score of 8.4 was earned at £145, while competitors charge £165–180. It is evidence that guests value the price advantage. It is not evidence they will tolerate losing it. At £165 you match the cheapest competitor, so the score will probably fall and the differentiation goes with it.
+
+## 4. The revenue estimate is not a floor
+
+- **It assumes zero occupancy loss.** The author describes this as "no occupancy gain", but that is the optimistic case, not the cautious one. Assuming no demand response to a 13.8% price rise is the opposite of prudent.
+- **It applies £20 to every weekend room night.** Corporate, contracted group, and wedding-block nights don't pay BAR, and Section 6 says contracted rates will be honoured. If roughly 38% of Saturday nights are wedding blocks, a large share of nights gets no uplift.
+- **It is gross, not net.** OTA commission (typically 15–20%) on the uplift isn't deducted.
+- **The minimum stay may reduce volume** (see section 5 below), which the estimate ignores.
+
+For context, revenue breaks even if occupancy falls from 79% to about 69% (79 × 145/165). That margin is real, but a scenario table at, say, 0, −3, and −6 points, restricted to BAR-paying nights, would be far more credible than a single point estimate.
+
+## 5. The two-night minimum conflicts with the proposal's own data
+
+Section 4 says 38% of Saturday bookings are wedding guests from Quayside Hall. They book as a block, arrive Saturday, and leave Sunday morning. This is the largest identifiable Saturday segment, and it is structurally one-night.
+
+- If wedding blocks are exempt, the minimum barely touches the single-night stays it is meant to convert.
+- If they are not exempt, you risk losing the wedding relationship to competitors without a minimum.
+- Either way, the document doesn't address it.
+
+Other problems with the minimum:
+
+- **It only helps on sell-out Saturdays.** That is 31 of 52. On the other 21, mostly shoulder and winter months, it turns away one-night guests you had room for. This contradicts the claim that gains will be "particularly in shoulder months".
+- **Rate rise and restriction land at once.** Introducing both together makes it impossible to tell which one caused any occupancy change.
+- **Competitors' minimum-stay policies aren't mentioned.**
+
+## 6. Monitoring is weaker than presented
+
+- **It compares against 2025.** The same seasonal and year-to-year noise that undermines the price test will blur the signal here too.
+- **Launch timing masks the effect.** Starting 1 June means the first three months are peak season, where demand is least price sensitive. A real problem may not show until October–November, and by then winter bookings are already lost.
+- **The trigger is vague.** "Review the rate" commits to nothing, and there is no separate trigger for the minimum stay.
+- **Two weeks' notice is short.** Loading rates on 15 May may be tight for June bookings already in OTA pipelines.
+
+## 7. Minor points
+
+- "Recovered strongly since 2023" is asserted without any data shown.
+- The recommendation ("delivering at least £204,000") restates the overstated and unhedged figure.
+
+## Suggested revisions
+
+1. Correct the room count and recalculate on BAR-paying nights only, net of commission.
+2. Replace the June/July comparison with a year-on-year comparison or competitor-indexed data, or drop the claim of price insensitivity.
+3. Present revenue under several occupancy scenarios, including the break-even level.
+4. Address wedding blocks explicitly. Consider applying the minimum stay only on dates forecast to sell out, rather than to every Saturday.
+5. Consider staging the changes: the rate first, then the minimum stay. Alternatively, pilot the rate in shoulder months, where sensitivity actually matters.
+6. Set specific monitoring actions with competitor-relative benchmarks, and track the minimum stay separately.
+
+OTHER PROBLEMS LISTED:
+  O1. The 8.4 value-for-money score was earned at a price below competitors, so it suggests guests value the price advantage, not that they will tolerate losing it.
+  O2. The revenue estimate applies £20 to every weekend room night, including contracted corporate, group and wedding-block nights that do not pay BAR.
+  O3. The revenue uplift is gross and does not deduct OTA commission.
+  O4. There is no break-even analysis or occupancy scenario table, only a single point estimate.
+  O5. The two-night minimum only helps on sell-out Saturdays (31 of 52); on the others it turns away one-night guests, which contradicts the claimed gains in shoulder months.
+  O6. Launching the rate rise and the minimum stay together makes it impossible to tell which caused any occupancy change.
+  O7. Competitors' minimum-stay policies are not considered.
+  O8. Monitoring against 2025 is subject to the same seasonal and year-to-year noise, and the 1 June launch into peak season masks price sensitivity until autumn.
+  O9. The monitoring trigger ('review the rate') is vague, and there is no separate trigger for the minimum stay.
+  O10. Two weeks' notice to OTAs is too short.
+  O11. The claim 'recovered strongly since 2023' is asserted without data.
+  O12. Attributes to the author phrases not in the document: calling the price change 'a direct test', a 'low-risk' framing, and describing the estimate as 'no occupancy gain'.

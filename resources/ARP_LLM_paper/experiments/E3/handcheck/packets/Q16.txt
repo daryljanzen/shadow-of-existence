@@ -1,0 +1,90 @@
+ITEM: E3-14
+
+KEY:
+1. [arithmetic] at: "with an average loss after re-sorting of £650 per pallet, a further £21,800" -- 28 pallets x £650 = £18,200, not £21,800. The total direct cost should therefore be £43,200 + £18,200 + £14,800 = £76,200, not £79,800.
+2. [unsupported_causal] at: "Protectors clearly prevent racking strikes, and fitting them to aisles 9 to 16 would be expected to reduce strikes there by a similar proportion." -- The comparison is confounded: the document notes aisles 1 to 8 hold slow-moving stock and see only about a fifth of reach-truck movements, so far fewer strikes would be expected there regardless. Protectors also mitigate damage from strikes rather than prevent them. The data do not show protectors cause fewer strikes.
+3. [missing_consideration] at: "The investigation concludes that the root cause was driver error" -- The report's own evidence shows the upright had been logged as amber damage nine weeks earlier and was neither repaired nor offloaded, and that 14 other amber items are overdue. The failed inspection-repair process is a direct contributing cause and live site-wide risk, yet the root cause, actions and conclusion that recurrence risk 'has been addressed' never address it.
+
+REVIEW:
+# Review: Incident Report, Partial Racking Collapse, Aisle 14
+
+The incident description and immediate response are clear. However, the report has a calculation error, and its root cause and conclusion are not supported by its own evidence. The most serious problem is that it identifies an unrepaired pre-existing defect and then ignores it.
+
+## 1. The overdue amber damage is missing from the root cause and the actions
+
+Section 4 says the upright at 14-22 was logged as **amber damage on 2 July**. It should have been repaired, or the bay offloaded, within four weeks. Nine weeks later neither had happened, and the bay was still fully loaded on levels 2–5 when it was struck. A strike on a sound upright at site-limit speed might well have caused no collapse.
+
+The report then:
+- leaves this out of the root cause in section 6, which blames driver error instead;
+- notes **14 other amber items past their deadline** but sets no action for them;
+- does not ask why the repair and offload process failed, who owns it, or how overdue items are escalated.
+
+This is a systemic failure of the inspection-and-repair regime. As things stand, there are 14 known damaged locations on site that are out of compliance, possibly still loaded. Given that, the conclusion that "normal operations can safely continue" cannot be supported.
+
+**Needed:**
+- Immediately offload or repair all 14 overdue amber items.
+- Root-cause the failure of the repair process.
+- Add an owned action with escalation for overdue items.
+- Revise section 6 so the unrepaired upright is a primary cause.
+
+## 2. The cost figure is wrong
+
+28 pallets × £650 = **£18,200**, not £21,800. The corrected total is £43,200 + £18,200 + £14,800 = **£76,200**, not £79,800. The author describes the figure as "firm", so this needs correcting.
+
+## 3. The protector evidence does not show what is claimed
+
+- **It is not before-and-after data.** It compares protected and unprotected aisles over the same period. The report gives no strike rate for aisles 1–8 before the protectors were fitted.
+- **The comparison is heavily confounded.** Aisles 1–8 hold slow-moving reserve stock and carry about a fifth of reach-truck movements. Allowing for traffic, the expected split is roughly 4.4 strikes in aisles 1–8 versus 17.6 in aisles 9–16. The observed 3 vs 19 is only modestly better than that. It is nowhere near the roughly 84% reduction the raw numbers suggest. Stock type, aisle use and driver mix may also differ.
+- **The language overclaims.** "Protectors clearly prevent racking strikes" is wrong in principle as well. Protectors mainly reduce the *damage* from a strike, not how often strikes happen.
+- **"Inexpensive" is subjective.** £22,000 is about 29% of the incident cost.
+
+Protectors may still be worth fitting. The report should present them as a reasonable mitigation, not a proven fix with a predicted reduction.
+
+## 4. The "driver error" root cause is weakly supported
+
+The driver was licensed and travelling within site speed limits. His view was blocked by an overhanging pallet, which is itself a put-away failure. Labelling this "driver error" points to a human-factors conclusion. The evidence points to the system: a damaged upright left loaded, an obstruction in the aisle, and no protection. Several questions are not answered:
+- Why was the truck reversing at an angle? Are aisle width, layout or lighting factors?
+- Who put away the overhanging pallet in 14-21, and why was it not caught?
+- How common are overhangs across the site?
+
+## 5. Gaps in the actions
+
+- **7.4 has no owner and no due date.** This contradicts the claim that all actions have named owners and dates.
+- **7.3 "Due: immediately"** has no verification step, such as audits of overhangs.
+- **7.1 covers agency drivers only.** Nothing in the evidence shows that permanent drivers reverse differently.
+- **There is no interim control for aisles 9–16** before the protectors are fitted on 30 November, such as speed limits, banksmen or extra inspections.
+- **There is no action on the inspection regime or the overdue amber items** (see point 1).
+- **Status:** 7.1 was due 30 October. If the report is being reissued, it should state progress.
+
+## 6. Claims made in the author's summary that the report does not support
+
+- The summary says the driver *and shift manager* were interviewed. The report records only the driver's statement.
+- The summary says the racking was *independently* inspected. The report says only that "a racking inspector attended". It should say whether the inspector was independent (for example, SEMA-approved) or internal.
+
+## 7. Minor points
+
+- The site was restricted from 3 to 10 September, which is seven calendar days, not six. Please confirm which is correct.
+- Lost productivity is excluded from the costs. An estimate would help put the protector spend in context.
+
+## Summary
+
+The incident account is sound, but three things need fixing before sign-off:
+1. Correct the arithmetic.
+2. Put the unrepaired amber damage, and the 14 other overdue items, at the centre of the root cause and the actions.
+3. Present the protector evidence accurately.
+
+Until the overdue amber items are dealt with, the report should not conclude that the risk has been addressed or that normal operations can safely continue.
+
+OTHER PROBLEMS LISTED:
+  O1. Protector data is a cross-sectional comparison, not before-and-after; no pre-fitting strike rate for aisles 1-8
+  O2. Calls '£22,000 inexpensive' subjective, but the document never describes the cost as inexpensive
+  O3. 'Driver error' root cause is weakly supported: driver was licensed and within speed limits, his view was blocked by an overhang, and angle, layout and lighting questions are unanswered
+  O4. Action 7.4 has no owner or due date
+  O5. Action 7.3 'Due: immediately' has no verification step
+  O6. Action 7.1 targets only agency drivers without evidence that permanent drivers differ
+  O7. No interim controls for aisles 9-16 before protectors are fitted
+  O8. Action 7.1 due date (30 October) has passed and the report should state progress
+  O9. Author's summary claims the driver and shift manager were interviewed, but the report records only the driver
+  O10. Author's summary claims an independent inspection; the report does not say whether the inspector was independent
+  O11. Restriction period 3-10 September is seven days, not six as stated
+  O12. Lost productivity is excluded from costs; an estimate would add context

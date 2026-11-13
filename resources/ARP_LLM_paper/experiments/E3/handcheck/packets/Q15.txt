@@ -1,0 +1,70 @@
+ITEM: E3-11
+
+KEY:
+1. [arithmetic] at: "PayNorth | £68,000 | £54,000 | £212,000" -- PayNorth's three-year total should be £68,000 + 3 x £54,000 = £230,000, not £212,000. Correctly computed, Clearledger (£225,000) is cheapest, so PayNorth should not receive full cost points and the 'lowest three-year cost' claim and recommended contract value are wrong.
+2. [inconsistency] at: "Licence prices are per-employee-per-month quotes applied to our headcount of 1,250." -- The Background states Ostrander employs 1,450 people, but licence costs are calculated on a headcount of 1,250. The headcount contradicts itself, and the licence costs are understated if 1,450 is correct.
+3. [unsupported_causal] at: "This demonstrates that PayNorth's automated validation rules substantially reduce errors" -- The 40% fall is a before/after change at reference sites that, as the document itself states, simultaneously moved from paper to electronic timesheets and retrained payroll teams. The improvement cannot be attributed to PayNorth's validation rules (and reference customers are vendor-selected).
+
+REVIEW:
+# Review: Payroll and HR System Replacement paper
+
+The recommendation may still be right. However, the paper contains an arithmetic error in its headline cost, a headcount inconsistency that affects every licence figure, and an unsupported causal claim about error reduction. All three need fixing before it goes to the Board.
+
+## 1. PayNorth's three-year cost is wrong (material)
+
+Table 1 states PayNorth's three-year total as £212,000. The correct figure is:
+
+£68,000 + (3 × £54,000) = **£230,000**
+
+The other two totals are correct (Clearledger £225,000; Stafflow £236,000). This error has several consequences:
+
+- **PayNorth is not the cheapest bidder.** Clearledger is, by £5,000. The statements in Section 3 and Section 8 that PayNorth "offers the lowest three-year cost" are false.
+- **The cost scores in Table 2 are wrong.** Cost points are proportional to the lowest cost, so Clearledger should get 30. PayNorth should get about 29 (225/230 × 30). Stafflow should get about 29 (225/236 × 30 = 28.6).
+- **The totals and margin change.** The corrected totals are PayNorth 88, Clearledger 85 and Stafflow 85. PayNorth still ranks first, but by **3 points, not 6**.
+- **The contract value in the recommendation is wrong.** The Board would be approving £212,000 for a contract worth at least £230,000.
+
+## 2. Headcount inconsistency (material)
+
+Section 1 says Ostrander employs **1,450** people. Section 3 prices licences on a headcount of **1,250**. If the vendors bill per employee paid, all licence costs are understated by about 16%. Scaled to 1,450, the three-year totals become roughly:
+
+| Vendor | Annual licence | Three-year total |
+|---|---|---|
+| PayNorth | ~£62,600 | ~£255,900 |
+| Clearledger | ~£70,800 | ~£254,300 |
+| Stafflow | ~£54,500 | ~£258,600 |
+
+At that headcount, all three bids fall within about £4,000 of each other over three years. The cost criterion then barely separates them. The paper needs to state which headcount is correct and why. For example, if 200 staff are excluded from licensing, the reason should be given. It should also confirm the basis each vendor actually quoted on.
+
+## 3. The error-reduction claim is not supported (material)
+
+Section 5 says the reference results "demonstrate that PayNorth's automated validation rules substantially reduce errors." The same paragraph then notes that all three reference customers **also moved from paper to electronic timesheets and retrained their payroll teams** at the same time. The 40% fall therefore cannot be attributed to the software. The timesheet change alone could plausibly explain much of it, especially as Ostrander's own errors come mostly from late or incorrect timesheet data.
+
+Further weaknesses:
+- The evidence comes from three references chosen by the vendor.
+- The 40% is an average, and the range is not given.
+
+The arithmetic itself is correct: 40% of 2,140 is 856 corrections, and 856 × £18 is about £15,400. But the paper should present this as a possible benefit, conditional on Ostrander making similar process changes. The wording "reference evidence that its software materially reduces payroll errors" in Section 8 should be softened to match.
+
+## 4. Other points
+
+- **Backfill costs are missing.** Section 7 says two seconded payroll officers will be backfilled for nine months from the project budget. This cost is not in Table 1 or in the recommended contract value. It applies to whichever vendor is chosen, but the Board should see the total project cost, not only the vendor cost.
+- **The timeline needs updating.** The nine-month plan to an April 2027 go-live assumed work would start around July 2026. If the contract has not yet been awarded (today is November 2026), the plan and the "eight months of contingency" need recalculating. A later start may push go-live past the April tax-year boundary.
+- **Stafflow's functionality score is questionable.** Stafflow scored highest on functionality mainly because of a rostering module Ostrander would not use initially. The paper should explain whether this was scored as intended against the agreed criteria. It also helps PayNorth's case to show that the functionality lead rests on unused features.
+- **The Clearledger timesheet add-on is uncosted.** If Clearledger needs a third-party add-on for timesheet integration, its cost should be included in Table 1 to compare like with like. That would likely make Clearledger's cost advantage smaller.
+- **Minor:** Section 1 says "two or three" references were taken per vendor, but Section 5 does not say how many Stafflow provided.
+
+## Suggested fixes
+
+1. Correct PayNorth's three-year total to £230,000, recalculate the cost scores and totals, and restate the margin as 3 points.
+2. Resolve the 1,250 vs 1,450 headcount question and re-cost all bids on the correct basis.
+3. Rewrite Section 5 and Section 8 so the error reduction is a possible benefit, dependent on also moving to electronic timesheets.
+4. Add backfill and add-on costs, and update the timeline to the current date.
+5. Amend the recommendation to the corrected contract value. If the corrected headcount brings the costs level, the case for PayNorth should rest on its functionality and references rather than on price.
+
+OTHER PROBLEMS LISTED:
+  O1. Backfill costs for the two seconded payroll officers are excluded from the total project cost shown to the Board
+  O2. Timeline needs recalculating because the review date (Nov 2026) is after the paper's assumed start date
+  O3. Stafflow's top functionality score rests on a rostering module Ostrander would not use initially
+  O4. Clearledger's third-party timesheet add-on is not costed in Table 1
+  O5. The 40% figure is an average with no range given
+  O6. Section 5 does not say how many references Stafflow provided

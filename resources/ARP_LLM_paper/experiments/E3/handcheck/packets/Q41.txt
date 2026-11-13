@@ -1,0 +1,115 @@
+ITEM: E3-21
+
+KEY:
+1. [arithmetic] at: "That is a cost to the Council of about £56 per tonne" -- £595,000 / 7,500 tonnes = about £79 per tonne, not £56. (Still under the £120 threshold, but the stated figure is wrong.)
+2. [inconsistency] at: "Because the pilot was open to landlords as well as owner-occupiers" -- Section 2 states the pilot top-up was available to owner-occupiers only; section 5 says the pilot was open to landlords as well. The eligibility rule contradicts itself.
+3. [unsupported_causal] at: "The top-up therefore caused around 50 percentage points of additional growth" -- The pilot districts differed in another major way: the document reports the regional installer training centre opened in Coleton in March 2025 and accredited installers there rose from 9 to 23, cutting survey wait times. Installer supply is a clear confounder, so the growth difference cannot be attributed to the top-up (and pilot districts were not randomly chosen).
+
+REVIEW:
+# Review: Heat Pump Top-Up Grant Policy Brief
+
+The brief's central claims, that the pilot proves the grant works and that it costs about £56 per tonne, do not hold up. The value-for-money figure is miscalculated, and it counts every installation as caused by the grant. Corrected for both, the cost per tonne is well **above** the Council's £120 threshold. The brief also misstates the pilot's own eligibility rules, so the claim that the design is unchanged is false.
+
+## 1. The value-for-money calculation is wrong twice
+
+**Arithmetic error.** £595,000 ÷ 7,500 tonnes = **£79 per tonne**, not £56. Getting £56 would need about 10,600 tonnes.
+
+**No adjustment for installations that would have happened anyway.** The calculation credits the grant with all 238 pilot installations. The brief's own comparison says otherwise:
+
+- Pilot districts at the comparison-area growth rate (+20%) would have had about **168** installations without the top-up.
+- Additional installations attributable to the grant: **about 70**.
+- Grant paid per additional installation: £595,000 ÷ 70 ≈ **£8,500**.
+- Carbon from those 70: about 147 t/yr, or 2,200 t over 15 years.
+- Cost per tonne: **about £270**, more than double the £120 threshold.
+
+On the brief's own numbers, roughly 70% of grant spending went to households who would have installed anyway. The section 3 statement that "the top-up caused around 50 percentage points of additional growth" is also never carried into section 4.
+
+**The carbon assumptions are not "conservative" as claimed.**
+- The 2.1 t/yr figure assumes every heat pump replaces a gas or oil boiler. Some will be new builds, replace electric heating, or replace already-failing systems.
+- Savings per heat pump fall over 15 years as the electricity grid decarbonises.
+- No source is given for 2.1 t.
+
+**Costs are left out.** The additional grants post, funded "separately from the climate reserve", is still Council spending and belongs in the appraisal. So do existing team time and any promotion or installer-support costs.
+
+## 2. The causal claim is confounded
+
+The brief presents the pilot-versus-rest comparison as clean evidence. Section 3, however, describes a major change that also happened only in the pilot area:
+
+- **The regional installer training centre opened at Coleton College in March 2025.** Accredited installers in the pilot districts rose from 9 to 23, and survey wait times fell from ten weeks to four.
+
+This is a plausible alternative explanation for some or all of the extra growth. The brief cannot separate the effect of the grant from the effect of more than doubling local installer capacity. It instead lists the capacity increase as a "broader benefit" of the grant. The only support for that is installers saying the top-up gave them confidence to recruit, which is anecdotal.
+
+Further weaknesses:
+- **Only one prior year.** With a single pre-period, we cannot check whether the pilot districts were already growing faster.
+- **"Far too large to be chance" is asserted, not tested.** The figures are small counts (140 to 238) from two districts that were not randomly chosen. Year-to-year volatility at district level is not shown.
+- **Spillover can inflate the gap.** If installers shifted work toward the subsidised districts, installations elsewhere would be suppressed, making the comparison group a biased benchmark.
+- **Why these two districts were chosen is not stated.** If they were picked for readiness or interest, the results will not generalise.
+
+## 3. The survey evidence is weak
+
+- The statement that 91% said the top-up was "important" is a self-report from grant recipients. People who received money tend to say it mattered, and "important" is not the same as "decisive".
+- It is also contradicted by the brief's own comparison, which implies about 70% of these households would have installed anyway.
+- 196 of 238 households responded, so non-response bias is possible.
+- Satisfaction with the heat pump (88%) says nothing about whether the grant caused the installation.
+
+## 4. The eligibility rules are contradictory, so "same design" is false
+
+- **Section 2:** the top-up was available "to owner-occupiers only".
+- **Section 5:** "Because the pilot was open to landlords as well as owner-occupiers, we expect demand from the private rented sector to remain a significant share."
+
+Both statements cannot be true. If the pilot was owner-occupier only, then:
+- there is no pilot evidence on landlord demand;
+- the private-sector housing argument is unsupported; and
+- the countywide scheme would either repeat the restriction (so no rental benefit) or widen eligibility (so not the "same design").
+
+This needs fixing before the paper goes to Cabinet.
+
+## 5. The demand forecast is unsupported
+
+The cap is 1,000 grants a year, and the brief says demand will "likely reach this cap in the first year". Its own trends point lower:
+
+| Area | 2025 installations | Projection |
+|---|---|---|
+| Pilot districts | 238 | |
+| Other five districts | 252 | ~378 with a +50% uplift |
+| **County total** | **490** | **~620** |
+
+Even generous assumptions do not get close to 1,000. The other districts also lack the training centre and have fewer installers, which the risks section admits. If demand does reach 1,000, most of that spending will again go to installations that would have happened anyway.
+
+## 6. The risks section is thin
+
+- **Installer capacity.** "Work with the training centre to promote accreditation" is not a mitigation with targets, funding or a timeline. This is especially important because capacity may be what actually drove the pilot result.
+- **National grant changes.** "Review annually" is monitoring, not mitigation. The brief should say what happens to the case if the national grant is cut, raised or redesigned.
+- **Unlisted risks:**
+  - *Price capture.* Paying installers directly may let them raise prices by part of the £2,500.
+  - *Deadweight.* Most grant spending going to installations that would have happened anyway is not acknowledged.
+  - *Equity.* An owner-occupier-only grant mainly benefits households who can already afford £4,000–£7,000.
+  - *Admin capacity.* Volumes could double from pilot level with only one extra post.
+- **Fraud.** Paying installers is presented as a fraud control without explanation. It reduces some risks (households claiming without installing) but concentrates others (installer-side claims).
+
+## 7. Recommended changes before this goes to Cabinet
+
+1. Correct the cost-per-tonne arithmetic and recalculate on additional installations only. Report the range, which is likely about £80–£270 or more per tonne, and compare it honestly with the £120 threshold.
+2. Address the training-centre confounder directly, for example by checking installations in other areas near Coleton, or by comparing timing before and after March 2025.
+3. Add more pre-pilot years to show trends were parallel, and give uncertainty ranges.
+4. Resolve the eligibility contradiction and state clearly whether the scheme design is changing.
+5. Rebuild the demand forecast from district-level data, including installer capacity limits.
+6. Include all administration costs in the appraisal.
+7. Consider ways to reduce deadweight: targeting (by income, off-gas-grid homes, or fuel poverty), a lower grant amount, or a phased rollout with a proper comparison group to produce stronger evidence.
+8. Add specific, measurable mitigations, and an exit or redesign trigger if the national grant changes.
+
+**Bottom line:** The pilot is promising and worth building on, but it does not show the grant is cost-effective. Corrected for its own counterfactual, the scheme appears to fail the Council's value-for-money test. The paper should not present the case as "proven" or "robust".
+
+OTHER PROBLEMS LISTED:
+  O1. The value-for-money calculation credits the grant with all 238 installations, with no deadweight adjustment. Using the comparison growth rate, only about 70 are additional, which puts the cost near £270 per tonne, above the £120 threshold.
+  O2. The 2.1 t/yr carbon saving has no source, assumes every heat pump replaces a gas or oil boiler, and ignores grid decarbonisation over 15 years. The review describes these assumptions as 'claimed conservative', but the brief never uses that word.
+  O3. The extra grants post and existing staff time are excluded from the cost appraisal.
+  O4. Only one pre-pilot year is given, so there is no check that pilot and comparison trends were parallel.
+  O5. The review says the brief asserts the gap is 'far too large to be chance' without testing it. That phrase does not appear in the document.
+  O6. Installers may have shifted work into the subsidised districts, suppressing installations elsewhere and biasing the comparison group.
+  O7. The brief does not say how the pilot districts were selected, which limits generalisation.
+  O8. The survey findings are weak: 91% saying the top-up was 'important' is self-report from recipients, there is possible non-response bias, and satisfaction does not show causation.
+  O9. The claim that demand will reach the 1,000-grant cap in year one is unsupported; projections suggest about 620.
+  O10. The risk mitigations are vague, with no targets, funding or timeline, and 'review annually' is monitoring rather than mitigation.
+  O11. Several risks are missing: installers capturing part of the grant through higher prices, equity (the grant mainly benefits households who can already afford the net cost), and admin capacity.
+  O12. Paying installers directly is presented as a fraud control without explanation, and it concentrates fraud risk on the installer side.

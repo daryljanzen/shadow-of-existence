@@ -1,0 +1,76 @@
+ITEM: E3-27
+
+KEY:
+1. [inconsistency] at: "Off-peak members will have weekday access until 5 pm" -- Section 1 defines off-peak access as before 4 pm on weekdays; section 6 says off-peak members have weekday access until 5 pm (also into the busy 5-8 pm period the document says is near capacity). The access window contradicts itself.
+2. [unsupported_causal] at: "Classes clearly keep members loyal, so we will add six extra daytime classes per club each week" -- The churn difference is correlational: members who choose to attend classes weekly are likely more engaged/committed to begin with (self-selection). It does not show classes cause lower churn, nor that adding classes would bring off-peak churn to 2.1%.
+3. [missing_consideration] at: "At £29 a month, this is £34,800 a month, or £417,600 a year, in new membership revenue." -- The projection counts only new members and ignores downgrades, although the document states 31% of the 9,600 standard members (about 2,976) already visit only off-peak and can switch with one month's notice. If they downgraded, revenue would fall by about £13 x 2,976 = £38,700 a month (about £464,000 a year), more than wiping out the projected gain.
+
+REVIEW:
+# Review: Off-Peak Membership Pricing Proposal
+
+The proposal is clear and well organised, but the financial case has a gap large enough to reverse the recommendation, and there are several inconsistencies to fix before it goes to decision-makers.
+
+## 1. Critical: cannibalisation of existing members is missing
+
+The proposal's own data shows a large downgrade risk, but the revenue projection and risk section never mention it.
+
+- **31% of standard members (about 2,976 people) already train only in the off-peak window.** Each could switch to off-peak and pay £13 a month less. Section 6 lets them switch with one month's notice.
+- **If all of them switched**, the loss would be about **£38,700 a month, or £464,000 a year.** That is more than the projected £193,200 net gain and would turn it into a loss of roughly £271,000.
+- **Even partial switching is costly.** If 42% of that group (about 1,250 members) downgraded, the entire projected net gain would be gone.
+- **The further 22% who are "mostly off-peak"** (about 2,100 members) could also change their habits to qualify.
+
+**Recommendation:** Model downgrade scenarios (for example 25%, 50% and 75% of the exclusive off-peak group) and show the break-even switching rate. Consider protections such as a fixed-term contract, a joining fee, or a narrower off-peak window. Then move this issue to the top of the Risks section.
+
+## 2. Inconsistent access window
+
+- Section 1 says off-peak access ends at **4 pm**. Section 6 says **5 pm**.
+- Section 2 says peak runs from 5 pm. So a 5 pm cutoff sits right at the start of peak, and members finishing a session would overlap with it.
+- The 31% and 22% figures depend on which window was used. Please state which one, and recalculate if needed.
+
+## 3. Revenue projection is overstated
+
+- **No ramp-up.** The proposal expects to recruit 1,200 members "in the first year" but books a full year of revenue for all of them, as if they all joined on 1 October. With steady recruitment through the year, first-year revenue would be roughly half: about £209,000 rather than £417,600. That is less than the £224,400 class cost.
+- **No churn.** At the 4.8% monthly churn for non-class members, about 44% of a group would leave within a year. The 2.1% figure is an assumption (see point 5), not evidence.
+- **"Net additional revenue" leaves out costs.** Only instructor fees are deducted. Marketing, access-control changes, app updates, signage and any extra staffing are missing.
+- **The 1,200 target is not explained.** The proposal calls it "consistent with the survey response and the size of our catchments," but gives no catchment population or conversion calculation. It would also mean a 12.5% rise in total membership after 18 flat months. Survey answers of "definitely" or "probably" join usually overstate real sign-ups by a wide margin, so the proposal should state what discount it applied, if any.
+
+The arithmetic itself is correct (£34,800 × 12 = £417,600; £18,700 × 12 = £224,400; difference £193,200). The problem is the assumptions behind it.
+
+## 4. Capacity claim only covers weekdays
+
+The claim that new members need no extra investment rests on 30% weekday daytime utilisation. But off-peak members also get **all-day weekend access**, and the document gives no weekend utilisation data. Add it, or limit weekend hours.
+
+## 5. Classes and retention: correlation treated as cause
+
+- The lower churn among class attendees (2.1% against 4.8%) may simply reflect who chooses classes: people who are already more committed. That does not show classes *cause* loyalty. "Classes clearly keep members loyal" goes beyond what the data shows.
+- **There is a contradiction with Section 8.** Managers say daytime classes are *often under-filled*. If so, adding six more per club per week (£224,400 a year, the single biggest cost) needs a justification. Filling the existing classes might deliver the same retention benefit at no extra cost.
+- Consider phasing the extra classes in based on actual demand, rather than committing up front.
+
+## 6. Competitive positioning
+
+- The budget gyms (£22–25) are the stated trigger, but the off-peak price (£29) is *above* them. So it doesn't directly answer them. It is closer to the other competitors' off-peak offers (£25–32). Say plainly which threat this proposal is meant to address.
+- "We do not expect a price war" needs more support. Competitors with off-peak products could respond by cutting their price.
+
+## 7. Smaller points
+
+- **Fairness risk:** "Communicate as an extension of choice" doesn't deal with the real risk, which is that members will *act* on that choice and downgrade (see point 1).
+- **Staff consultation:** It doesn't mention whether instructors are available for 24 extra classes a week.
+- **Survey detail:** Give the response numbers (19% of 640 is about 122 people). Note that the survey only covered non-members, so existing members' likelihood of switching wasn't measured.
+- **Timing:** The proposed launch date (1 October 2026) has passed. If this is being reviewed now, update the date and any related assumptions.
+
+## Overall
+
+The strategy is reasonable: daytime capacity is spare, there is a clear market for it, and competitors already offer it. But as written, **the financial case does not hold up**. Once you allow for likely downgrades, gradual recruitment and churn, the proposal could easily lose money. I'd suggest revising it with a scenario model that includes cannibalisation, fixing the 4 pm / 5 pm inconsistency, and either justifying or scaling back the extra classes before recommending launch.
+
+OTHER PROBLEMS LISTED:
+  O1. No recruitment ramp-up: a full year of revenue is booked for 1,200 members recruited gradually over the year
+  O2. No churn applied to new off-peak members; the 2.1% figure is assumed
+  O3. Net revenue omits other costs (marketing, access-control/app changes, signage, staffing)
+  O4. The 1,200-member target is unexplained, and survey intent likely overstates sign-ups
+  O5. Capacity claim relies on weekday data only, while off-peak includes all-day weekend access with no weekend utilisation data
+  O6. Adding classes contradicts managers' report that daytime classes are already under-filled
+  O7. Competitive positioning is unclear: the £29 price does not answer the £22-25 budget gyms
+  O8. The 'no price war' claim is unsupported
+  O9. Instructor availability for the extra classes is not addressed
+  O10. The survey covered only non-members, so existing members' switching intent was not measured
+  O11. The proposed launch date has already passed

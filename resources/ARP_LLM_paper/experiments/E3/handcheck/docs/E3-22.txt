@@ -1,0 +1,39 @@
+Post-Implementation Review: Automated Triage for Home Insurance Claims
+Claims Operations, Harrowgate Mutual, September 2026
+
+1. Summary
+In March 2026 we introduced automated triage for home insurance claims. Claims under £1,500 that pass a set of automated checks are fast-tracked for straight-through settlement, without review by a claims handler. This review compares five months before launch (October 2025 to February 2026) with five months after (April to August 2026), with March excluded as a transition month, and recommends next steps.
+
+2. How the triage works
+When a claim is notified online or by phone, the system checks policy cover, excess, claim history and a set of rules covering the type and circumstances of loss. Claims under the £1,500 threshold that pass all checks are paid within 48 hours. All other claims, and any claim flagged by a rule, are allocated to a handler as before. Fast-tracked claims are not reviewed by the fraud screening team, which previously sampled low-value claims manually.
+
+3. Results
+Table 1. Before and after comparison (monthly averages)
+Measure | Before (Oct-Feb) | After (Apr-Aug)
+Claims received per month | 4,200 | 4,350
+Share of claims fast-tracked | 0% | 38%
+Average days to settle, all claims | 14.2 | 9.8
+Customer satisfaction (post-claim survey, 0-100) | 71 | 79
+Handler hours per month | 9,600 | 7,900
+Fraud referrals per 1,000 claims | 6.1 | 3.9
+
+Average settlement time fell by 4.4 days, a 38% improvement. Customer satisfaction rose eight points, the largest movement we have recorded in a single year. Handler hours fell by 1,700 a month, or about 18%, allowing us to absorb higher claim volumes and reduce agency staff usage over the summer.
+
+Fast-tracked claims averaged £740. Complaints about the fast-track route were few and related mainly to customers whose claims were declined by the automated checks and who felt they had not been given a reason.
+
+The triage rules were developed with the claims technical team and tested against 18 months of historical claims before launch. In that testing, the rules would have fast-tracked 36% of historical claims, close to the 38% seen in live operation, which gives us confidence that the rules are behaving as designed. No changes to the rules were needed after go-live.
+
+4. Financial impact
+At a fully loaded handler cost of £31 an hour, the reduction of 1,700 handler hours a month saves about £52,700 a month, or £632,400 a year. System licence and maintenance costs are £140,000 a year, giving a net annual saving of around £492,000.
+
+5. Fraud context
+The Special Investigations Unit's 2025 annual report found that claims between £1,500 and £3,000 make up 22% of home claim volume but 41% of confirmed fraud cases, with false or inflated contents claims the most common type. Claims under £1,500 accounted for 14% of confirmed fraud cases.
+
+6. Recommendations
+6.1 Raise the fast-track threshold from £1,000 to £3,000 from January 2027. We estimate this would increase the share of claims fast-tracked from 38% to around 55%, saving a further 1,100 handler hours a month, about £409,000 a year at current rates, and extending faster settlement to many more customers.
+6.2 Give customers whose claims are declined by the automated checks a clear explanation and a direct route to a handler.
+6.3 Review the automated rules quarterly with the claims technical team.
+6.4 Publish the fast-track service standard on our website so that customers know what to expect when they make a claim.
+
+7. Conclusion
+Automated triage has delivered faster settlement, higher satisfaction and lower handling costs, with a net saving of nearly half a million pounds a year. Extending it to claims up to £3,000 is the natural next step and would substantially increase the benefit to customers and the business.

@@ -1,0 +1,84 @@
+ITEM: E3-05
+
+KEY:
+1. [arithmetic] at: "At our average order value of £38, this is approximately £1.05 million in lost revenue." -- 39,600 lost orders x £38 = £1,504,800, i.e. about £1.5 million, not £1.05 million. (The 39,600 itself is correct: 6,850 + 10,450 + 11,050 + 11,250.)
+2. [misread_evidence] at: "The decline was concentrated among Android users, which is consistent with the Android build placing order history one level deeper" -- Table 2 shows orders fell 21% on iOS and only 13% on Android, so the decline was concentrated on iOS, not Android. The text inverts the table and builds an explanation on the misreading.
+3. [unsupported_causal] at: "Search is clearly driving purchasing, and we will build on this by making search results the default landing view" -- The evidence is a correlation between using search and ordering more in the same week. More engaged/frequent buyers (or customers already intending to buy) are more likely to use search, so selection and reverse causation explain the association; it does not show search drives purchasing.
+
+REVIEW:
+# Review: Larder App v5.0 post-mortem
+
+The core diagnosis holds up. Restoring the Reorder button in v5.0.3, with orders per WAU recovering from 1.10 to 1.27, is strong evidence. The support-ticket spike (40 to 410 a week) and the 45% Reorder share of orders corroborate it. I checked the order totals, the 18% drop, the 4% WAU drop, the orders-per-WAU column and the 39,600 lost orders, and they are all correct.
+
+However, the document has two factual errors and one significant reasoning flaw, and the last of these leads to a risky recommendation. These should be fixed before it goes to leadership.
+
+## 1. The revenue figure is wrong
+
+39,600 orders × £38 = **£1,504,800, about £1.5 million**, not £1.05 million. Since the cost to the business is the headline number, this needs correcting.
+
+Two smaller points on the same estimate:
+- **It understates the loss.** Orders were still below baseline in the weeks of 2 March (−5,350) and 9 March (−2,250). That is roughly 7,600 more lost orders, so the full figure is nearer 47,000 orders, or £1.8 million.
+- **"Lost revenue" assumes no deferred orders.** Some customers probably ordered later or placed larger baskets. Calling it "revenue at risk," or stating the assumption, would be safer.
+
+## 2. The platform finding is backwards
+
+Table 2 shows **iOS fell 21% and Android 13%**. The decline was concentrated on **iOS**, not Android. The table is internally consistent (0.58 × −21% + 0.42 × −13% ≈ −17.6%, matching the overall drop), so the error is in the text.
+
+This also undermines the explanation offered. If Android puts order history one level *deeper*, the "deeper menu" theory predicts the opposite of what happened. The section should either:
+- correct the claim and drop the explanation, or
+- investigate why iOS was hit harder (for example, a higher Reorder share among iOS users, or a different update rollout speed).
+
+Your summary repeats the Android claim, so it is worth fixing in both places.
+
+## 3. The search-bar conclusion confuses correlation with causation
+
+"Customers who used search placed 40% more orders" is very likely a selection effect. People who search in a given week are people who are actively shopping that week. Frequent, engaged buyers will use search more *and* order more regardless of the design. The data cannot show that search "is driving purchasing." Total orders fell during the period when the search bar was live, which is hard to reconcile with that claim.
+
+The proposed v5.2 action is the bigger concern: **making search results the default landing view for returning users**. This would replace the home screen that returning users, the same people who relied on Reorder, use for their habitual path. It risks repeating the v5.0 incident.
+
+I'd recommend:
+- reframing this as a hypothesis, not a "success"
+- testing it with an A/B experiment before committing to v5.2
+- using the new staged-rollout guardrail (action 2) for it explicitly
+
+## 4. The "nothing else changed" claim needs checking
+
+The fix shipped as **v5.0.3**, which implies v5.0.1 and v5.0.2 were released in between and aren't mentioned. Also, v5.0 itself changed three things at once: the navigation, the Reorder placement and the recipe feed. The 2 February drop alone can't isolate Reorder; the evidence is the 2 March recovery. The post-mortem should:
+- list what v5.0.1 and v5.0.2 contained, and
+- confirm v5.0.3 changed nothing else, as already stated.
+
+If both hold, the diagnosis is solid.
+
+## 5. The actions are not owned
+
+Your note says the actions are "owned," but none has an owner or a due date. Please add both. A few other points:
+- **Action 3** (5% week-on-week alert) would have fired here (1.28 → 1.15 is −10%). It would miss slow erosion, so consider a comparison against a trailing baseline as well.
+- **Action 2**: "used in more than 10% of orders" needs someone responsible for identifying which elements qualify before each release.
+- **Detection gap**: the timeline shows 3 weeks from escalation (10 February) to fix (2 March). Action 4 addresses this; stating the target time-to-revert would make it measurable.
+
+## Minor
+
+- "Orders recovered to close to pre-release levels": orders per WAU did (1.27 vs 1.28), but total orders are still about 4% down because WAU hasn't fully recovered. It is worth saying so and continuing to monitor.
+- The research-panel finding (12 new users, no existing customers) is a good catch and well addressed by action 1.
+
+## Summary of required edits
+
+| Issue | Fix |
+|---|---|
+| £1.05m revenue | Change to ~£1.5m (or ~£1.8m including March) |
+| "Concentrated among Android" | Change to iOS; remove or revise the menu-depth explanation |
+| Search "clearly driving purchasing" | Reframe as correlation; A/B test before the v5.2 change |
+| v5.0.1/v5.0.2 not mentioned | List their contents to support the diagnosis |
+| Actions lack owners | Add owners and dates |
+
+OTHER PROBLEMS LISTED:
+  O1. The lost-revenue estimate understates the loss because orders were still below baseline in the weeks of 2 and 9 March (about 7,600 more lost orders).
+  O2. 'Lost revenue' assumes no deferred orders or larger later baskets; it should be framed as revenue at risk or state the assumption.
+  O3. The document's summary repeats the Android claim.
+  O4. The proposed v5.2 change (search results as the default landing view) risks repeating the incident for habitual returning users and should be A/B tested and staged.
+  O5. v5.0.1 and v5.0.2 are not mentioned, and v5.0 changed three things at once, so the 'nothing else changed' claim and the isolation of Reorder need supporting.
+  O6. None of the actions has an owner or a due date.
+  O7. Action 3's 5% week-on-week alert would miss slow erosion; also compare against a trailing baseline.
+  O8. Action 2 needs someone responsible for identifying which elements are used in more than 10% of orders.
+  O9. There is no target time-to-revert, and the gap from escalation to fix was 3 weeks.
+  O10. Total orders have not fully recovered (still about 4% down) because WAU is still lower, even though orders per WAU has recovered.

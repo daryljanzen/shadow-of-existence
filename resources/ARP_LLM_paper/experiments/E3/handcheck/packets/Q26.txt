@@ -1,0 +1,96 @@
+ITEM: E3-08
+
+KEY:
+1. [inconsistency] at: "We propose expanding the cluster from eight to ten nodes in November 2026" -- The configuration section says the cluster runs on six nodes (6 x 4 TB / 3 replicas = 8 TB usable). The proposal says the cluster currently has eight nodes. The node count contradicts itself, and the capacity arithmetic in section 2 only works for six.
+2. [misread_evidence] at: "Peak CPU on the primary has stayed below 75% throughout the period, so compute is not currently a constraint" -- Table 1 shows peak primary CPU of 78% in Q3 FY26, and a rising trend (58% to 78%). The statement misreads the table, and the conclusion that the constraint is 'storage alone' rests on it.
+3. [unsupported_causal] at: "The pooler therefore delivered a 30% latency improvement on its own." -- The document states that in the same quarter the nightly analytics extracts were moved off the primary to a separate replica. Two simultaneous changes (also visible in the CPU dip) mean the latency drop cannot be attributed to the pooler alone, nor used to justify expecting further gains from connection tuning.
+
+REVIEW:
+# Review: Orders Database Cluster Capacity Plan, FY2027
+
+The storage forecast is sound. The CPU and latency sections, which you describe as strengths, have problems: one is a factual error and one is an attribution the data can't support. There is also a node-count inconsistency and a timing conflict with peak trading. Each could undermine approval if a reviewer catches it first.
+
+## Major issues
+
+**1. The CPU claim contradicts Table 1.**
+Section 3 says peak CPU "has stayed below 75% throughout the period." The table shows **78% in Q3 FY26**. The trend also matters more than the threshold:
+
+- CPU went 58 → 63 → 71 → **66** → 78. The only dip is in Q2 FY26, the quarter the analytics extracts moved off the primary.
+- Even with that load removed, CPU rose 12 points in one quarter to its highest level yet.
+- A 25% increase in order volume would plausibly push the primary toward saturation during FY27.
+
+This undercuts the conclusion that "the constraint is storage alone." It is also unclear whether adding nodes relieves the primary at all. If writes go through a single primary, two more storage nodes won't reduce its CPU. The plan should say what "primary" means in this topology, model CPU against the volume forecast, and either show compute headroom or include it in the request.
+
+**2. The 30% latency improvement cannot be attributed to the pooler alone.**
+Section 4 states that the pooler and the move of analytics extracts both happened in Q2 FY26, then credits the full 47 → 33 ms drop to the pooler "on its own." With two changes in the same quarter, the data can't separate them. The CPU dip in that quarter suggests the analytics move contributed meaningfully.
+
+Two further points:
+- Latency has not "stayed low." It rose from 33 to 35 ms in Q3 FY26, while volume grew 10%.
+- The FY27 plan to absorb latency growth through "further connection tuning" rests entirely on this attribution.
+
+If you have pooler-specific evidence, such as before/after metrics from the deployment week, include it. Otherwise, credit the improvement to both changes and weaken the expectation for connection tuning.
+
+**3. The node count is inconsistent.**
+Section 2 says six nodes. Section 6 says "from eight to ten." The capacity figures only work for six:
+- 6 × 4 TB ÷ 3 = 8 TB usable.
+- Adding 2 nodes adds 2.67 TB.
+
+Section 6 should probably read "six to eight." In a budget request, this error will make readers doubt the other numbers.
+
+**4. The timing conflicts with peak trading, and the urgency doesn't require it.**
+The plan schedules expansion for November 2026, "ahead of the peak trading period." The timeline doesn't fit:
+- Two weeks of procurement plus two weeks of overnight rebalancing means the work finishes in mid-to-late December at the earliest.
+- That puts heavy internal rebalancing traffic in the middle of peak trading, on your most critical stateful system.
+
+Your own forecast doesn't hit the limit until around April 2027 (start of Q2 FY27). January, after the peak, still leaves a comfortable margin. Either justify why it must happen during peak, or move it after.
+
+## Moderate issues
+
+**5. The growth rate is accelerating, and the forecast doesn't model it.**
+Quarterly increments are 0.3, 0.4, 0.4, 0.4 TB. The recent rate is 0.4 TB per quarter, not the 0.375 average. The 25% Finance forecast is mentioned but never applied. A rough check:
+
+| Assumption | Growth/quarter | Hits 6.4 TB (current) | Hits 8.53 TB (after expansion) |
+|---|---|---|---|
+| Average | 0.375 | ~early Q2 FY27 | ~Q2 FY28 |
+| Recent | 0.4 | ~start Q2 FY27 | ~Q1–Q2 FY28 |
+| +25% | ~0.5 | ~mid Q1 FY27 | ~end FY27 / start FY28 |
+
+"Headroom into FY28" holds only at current rates. Under the Finance forecast, the expansion lasts about a year, so the Option B decision is deferred less than implied. Show the forecast-adjusted scenario, and note that archiving (0.3 TB) adds just under one quarter.
+
+**6. The cost picture is incomplete.**
+The arithmetic (£4,300/month, £51,600/year) is correct. However:
+- The plan mentions "reserved instances" but not the commitment term. A 1- or 3-year reservation is a larger commitment than one year of budget.
+- It omits one-off costs (engineering time for rebalancing) and any compute upgrade that point 1 may require.
+
+## Minor points
+
+- Option B: state roughly what the migration would cost and how long it would take, so readers can see the deferral is worth it.
+- Risks: add a rollback or abort plan if rebalancing hurts latency, and note the risk of procurement slipping.
+- Clarify the fiscal calendar, so "start of Q2 FY27" maps to a month.
+
+## What works
+
+- The storage forecast is simple, checkable, and correctly calculated from measured data.
+- The 80% practical limit is explained and reasonable.
+- Archiving is treated sensibly: insufficient alone, but pursued in parallel.
+- Option C really is low-risk and has been done before.
+
+## Suggested changes before submission
+
+1. Correct the CPU statement and add a CPU forecast. Confirm whether new nodes relieve the primary.
+2. Credit the latency drop to both Q2 changes, and soften the reliance on connection tuning.
+3. Fix "eight to ten" to "six to eight."
+4. Move the expansion after peak trading, or justify the November timing.
+5. Add a growth scenario using the Finance forecast, and restate how long the expansion lasts under it.
+
+With these fixes, the storage case for two nodes is still strong. The plan just shouldn't claim that storage is the only constraint until the CPU data supports it.
+
+OTHER PROBLEMS LISTED:
+  O1. The November expansion timing likely pushes procurement plus two weeks of rebalancing into the peak trading period.
+  O2. Growth is accelerating (the recent rate is 0.4 TB/quarter), and the Finance 25% forecast is never applied, so 'headroom into FY28' is overstated.
+  O3. Adding storage nodes may not relieve CPU on a single write primary; the topology is unclear.
+  O4. Latency has not 'stayed low'; it rose from 33 to 35 ms in Q3 FY26.
+  O5. The cost picture is incomplete: no reserved instance commitment term and no one-off engineering costs.
+  O6. Option B lacks cost and duration estimates to justify deferral.
+  O7. There is no rollback or abort plan for rebalancing, and no procurement slip risk.
+  O8. The fiscal calendar mapping to months is unclear.

@@ -1,0 +1,93 @@
+ITEM: E3-19
+
+KEY:
+1. [misread_evidence] at: "Risotto has the weakest margin on the menu and the lowest sales, so it is not earning its place." -- Table 1 shows mushroom risotto has the highest gross margin on the menu (80%); the weakest is sirloin steak (60%). Lowest sales is correct (90 plates, tied with specials), but the margin claim misreads the table.
+2. [missing_consideration] at: "The increases would lift main-course gross margin to about 71%, helping restore our 70% overall target." -- The projection uses current food costs, but section 4 states beef prices rise 12% from 1 April, the same date as the new prices. Burgers and steaks (380 plates a week) would see higher food costs (e.g. about £1.25 more per steak), eroding much of the projected gain; the margin and profit projections never account for it.
+3. [inconsistency] at: "keep us competitively priced, across our six trading days a week" -- Section 2 says the restaurant is open Wednesday to Sunday, i.e. five days a week; the recommendation refers to six trading days.
+
+REVIEW:
+# Review: Menu Pricing Review, Spring 2026
+
+The structure is clear, the till data is a good base, and the competitor midpoint claims check out (fish £17.50 vs £17.98, burger £16.00 vs £16.50, steak £28.00 vs £29.50). But the financial case has two significant gaps, and the risotto proposal rests on a misreading of the table. Corrected, the paper supports a weaker conclusion than its summary claims.
+
+## Major issues
+
+**1. The 12% beef increase is not in the projection.**
+Section 4 reports it, but Section 5.3 assumes food costs stay the same. Applied to Table 1:
+
+| | Cost now | Cost from 1 April | Extra cost per week |
+|---|---|---|---|
+| Burger | £4.20 | £4.70 | 260 × £0.50 = £131 |
+| Steak | £10.40 | £11.65 | 120 × £1.25 = £150 |
+| **Total** | | | **≈ £281** |
+
+- Net gain falls from £810 to about **£529 a week (≈ £27,500 a year)**.
+- Steak margin falls from 60% to about **58%** even at £28.00. The steak rise doesn't cover its own cost increase in margin terms.
+- Burger margin falls slightly, from 72% to about 71%.
+
+**2. The "about 71%" main-course margin only holds without the beef rise.**
+I estimated current main-course margin from Table 1 at about 69.4%, assuming specials sell at £14–16. The result barely changes within that range.
+- With the price rises and no beef increase: about 70.8%, which matches the paper.
+- With the beef increase included: about **69.2%**, roughly where it is now.
+- With neither change: beef alone would push it to about 67.8%.
+
+So the honest framing is that the price rises roughly **offset beef inflation**. They do not restore the margin. The paper should say so, because it changes what the owners are actually approving.
+
+**3. VAT may be overstated in the figures.**
+UK menu prices must be shown inclusive of VAT. If Table 1 uses menu prices, then:
+- each £1.00 rise yields only £0.83 of net revenue;
+- the £810 becomes about £675 before the beef effect, and about **£394 a week (≈ £20,500 a year)** after it;
+- the margin percentages are all overstated.
+
+Please confirm whether the figures are VAT-inclusive and restate them net of VAT if so.
+
+**4. The risotto has the strongest margin on the menu, not the weakest.**
+Table 1 gives it 80%, the highest of any dish. Its cash margin per plate (£11.20) is also above the burger (£10.80) and curry (£10.90). The paper and the author's summary state the reverse.
+- Its sales of 90 a week are lowest, but tied with specials.
+- It contributes about £1,000 a week in gross profit.
+- Replacing it with a special at the same £14.00 price, at the specials' 64% average, would **cost about £200 a week**.
+
+A case for replacing it could rest on sales, menu variety or kitchen workload. As written, the margin argument points the other way. Whatever replaces it should also keep a credible vegetarian main.
+
+## Other issues
+
+- **Trading days.** Section 8 says "six trading days a week", but Section 2 says Wednesday to Sunday, which is five.
+- **Lunch share is unsupported.** Friday and Saturday dinner are "just under half" of mains. That leaves over half across the other seven services, including all lunches. "A small share" needs a figure.
+- **Repeat custom doesn't show price tolerance.** The 60% repeat rate measures loyalty. It says nothing about price sensitivity, and regulars are the guests most likely to notice. "Will not draw attention to the increases" sits awkwardly with that.
+- **Evidence from the 2024 increase is thin.** "No visible effect on bookings" needs the size of that rise and data on covers or plates, not just bookings.
+- **The monitoring plan can't separate causes.** Comparing April–May with January–February mixes seasonal effects and the new menu with the price effect. It also has no threshold or agreed action if volumes drop. Year-on-year comparison and a stated trigger (e.g. a fall of more than X% sustained for three weeks) would help.
+- **Mains alone may not reach the target.** The 70% target is for food across all courses, but only mains are reviewed. Starters and desserts may need attention too.
+- **Minor points:**
+  - The competitor check shows only three dishes; curry and risotto comparators would help.
+  - The annual figure assumes 52 trading weeks.
+  - Fish volatility deserves a line in Risks.
+
+## On the author's summary
+
+- **"Modest and targeted."** Fair.
+- **"£810 / £42,000, simple to check."** The arithmetic is correct but leaves out the beef cost and possibly VAT. A realistic figure is roughly £20,000–£27,500.
+- **"Lifts margin to about 71%."** Only true without the beef rise. With it, margin stays about flat.
+- **"Risotto has the weakest margin."** Contradicted by Table 1.
+- **"Low-risk and well evidenced."** The price rises are probably still sensible, as defensive pricing against cost inflation. The evidence for volume holding and for removing the risotto is weak.
+
+## Suggested revisions
+
+1. Restate 5.3 with the beef increase, and net of VAT if applicable.
+2. Rewrite or drop 5.2, or rebase it on non-margin grounds.
+3. Consider a slightly larger steak increase (e.g. £29.00, still below the £29.50 midpoint), since steak margin otherwise falls.
+4. Fix "six trading days".
+5. Add a monitoring baseline, a threshold and a planned response.
+
+Since it's now November, actual April–October till data is available. An addendum comparing the projection with what happened would be more useful to the owners than revising the forecast.
+
+OTHER PROBLEMS LISTED:
+  O1. Figures may be VAT-inclusive menu prices, overstating revenue gains and margins; each £1 rise yields only about £0.83 net
+  O2. Claim that weekday lunch is a small share of main-course sales is unsupported; Fri/Sat dinner is only just under half
+  O3. 60% repeat rate measures loyalty, not price tolerance; regulars are most likely to notice; not drawing attention to increases sits awkwardly
+  O4. Evidence from 2024 price change is thin (size of rise unknown, bookings rather than covers/plates)
+  O5. Monitoring plan confounds seasonality and the new menu with the price effect and has no threshold or planned action
+  O6. 70% target is for all courses but only mains are reviewed; starters and desserts may need attention
+  O7. Competitor check covers only three dishes; no curry or risotto comparators
+  O8. Annual figure assumes 52 trading weeks
+  O9. Fish price volatility is not addressed in the Risks section
+  O10. Replacing the risotto should keep a credible vegetarian main

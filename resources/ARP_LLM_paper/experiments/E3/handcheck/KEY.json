@@ -1,0 +1,2482 @@
+{
+ "Q01": {
+  "cond": "C3",
+  "item": "E3-23",
+  "record": "scores_main/C3/E3-23__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The retention offer has no cost-benefit or break-even case: there is no estimate of churn prevented, and 92% of the group would stay anyway.",
+     "valid": true
+    },
+    {
+     "issue": "The May spike is attributed to the price rise alone, even though competitor offers launched in the same quarter.",
+     "valid": true
+    },
+    {
+     "issue": "Table 2 cancellation reasons are 'where recorded' with coverage not stated, and self-reported reasons may over-represent price.",
+     "valid": true
+    },
+    {
+     "issue": "Recommendation 5.2's claim that customers were 'not adequately prepared' is unsupported by evidence.",
+     "valid": true
+    },
+    {
+     "issue": "Segments are fixed at 1 January, so customers who changed status during H1 are misclassified, which may inflate in-term churn.",
+     "valid": true
+    },
+    {
+     "issue": "The 5.3 claim that reliability complaints are concentrated in three exchange areas is not backed by data.",
+     "valid": true
+    },
+    {
+     "issue": "Monthly figures (3,620 + 5\u00d72,540 = 16,320) don't exactly match the 16,340 total.",
+     "valid": false
+    },
+    {
+     "issue": "There is no prior-period (e.g. H1 2025) comparison to show whether churn is unusual.",
+     "valid": true
+    },
+    {
+     "issue": "The revenue figure should be labelled as H1 leavers only, and a retainable-revenue figure excluding unavoidable movers should be added.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q02": {
+  "cond": "C2",
+  "item": "E3-10",
+  "record": "scores_main/C2/E3-10__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Vendor reprogramming for changeovers covers only year one; ongoing changeover cost or in-house capability is not costed",
+     "valid": true
+    },
+    {
+     "issue": "Tightening the pallet specification likely raises pallet cost or narrows supply, and this is not included in the financials",
+     "valid": true
+    },
+    {
+     "issue": "The risk section is thin: it omits commissioning output loss and downtime/spares exposure for a single-supervisor cell",
+     "valid": true
+    },
+    {
+     "issue": "No sensitivity analysis is given on payback",
+     "valid": true
+    },
+    {
+     "issue": "Alternatives are not considered (one cell, lift-assist, deferral)",
+     "valid": true
+    },
+    {
+     "issue": "The redeployment plan ('three displaced on each shift') is inconsistent with the move to one shift",
+     "valid": true
+    },
+    {
+     "issue": "Residual safety risks from fault clearing inside guarding, pallet changes and the stretch-wrapper are not assessed",
+     "valid": true
+    },
+    {
+     "issue": "Heavy-case peak rate leaves no headroom for faults, pallet changes or reduced-speed commissioning",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q03": {
+  "cond": "C0",
+  "item": "E3-27",
+  "record": "scores_main/C0/E3-27__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "No recruitment ramp-up: a full year of revenue is booked for 1,200 members recruited gradually over the year",
+     "valid": true
+    },
+    {
+     "issue": "No churn applied to new off-peak members; the 2.1% figure is assumed",
+     "valid": true
+    },
+    {
+     "issue": "Net revenue omits other costs (marketing, access-control/app changes, signage, staffing)",
+     "valid": true
+    },
+    {
+     "issue": "The 1,200-member target is unexplained, and survey intent likely overstates sign-ups",
+     "valid": true
+    },
+    {
+     "issue": "Capacity claim relies on weekday data only, while off-peak includes all-day weekend access with no weekend utilisation data",
+     "valid": true
+    },
+    {
+     "issue": "Adding classes contradicts managers' report that daytime classes are already under-filled",
+     "valid": true
+    },
+    {
+     "issue": "Competitive positioning is unclear: the \u00a329 price does not answer the \u00a322-25 budget gyms",
+     "valid": true
+    },
+    {
+     "issue": "The 'no price war' claim is unsupported",
+     "valid": true
+    },
+    {
+     "issue": "Instructor availability for the extra classes is not addressed",
+     "valid": true
+    },
+    {
+     "issue": "The survey covered only non-members, so existing members' switching intent was not measured",
+     "valid": true
+    },
+    {
+     "issue": "The proposed launch date has already passed",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q04": {
+  "cond": "C0",
+  "item": "E3-06",
+  "record": "scores_main/C0/E3-06__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Average cost per hire treated as marginal cost: job-board fees are fixed annual listings, so extra spend may not yield hires at \u00a3600 each (diminishing returns)",
+     "valid": true
+    },
+    {
+     "issue": "Reaching the 100-hire target is not demonstrated: hires lost by cutting fairs are unquantified, job boards need more offers per hire, and assessment-centre capacity is unchecked",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a319,500 fair budget assumes each university costs the same, though travel and accommodation vary by location",
+     "valid": true
+    },
+    {
+     "issue": "Twelve-month attrition may not yet be fully observed given the January 2026 review date; the observation window is not stated",
+     "valid": true
+    },
+    {
+     "issue": "The 'Interviewed' column is ambiguous between the phone screen and the assessment-centre interview",
+     "valid": true
+    },
+    {
+     "issue": "Comparability of the ISE benchmark's cost elements is not confirmed",
+     "valid": true
+    },
+    {
+     "issue": "Survey respondent base (312) is unclear, so the 84% 'fair' figure is hard to interpret",
+     "valid": true
+    },
+    {
+     "issue": "'Came close to target' is unsupported because the 2025 target is never stated",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q05": {
+  "cond": "C1",
+  "item": "E3-15",
+  "record": "scores_main/C1/E3-15__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Interpreting the rise in internal transfers as career development is speculation; transfers could reflect escaping managers or reorganisation",
+     "valid": true
+    },
+    {
+     "issue": "Averaging the two trials hides their disagreement (large effect vs essentially none); Moreau's setting is arguably closer to Corbridge",
+     "valid": true
+    },
+    {
+     "issue": "Chen and Dlamini is a null result relative to the comparison group, not merely 'harder to interpret'; the text softens a negative finding",
+     "valid": true
+    },
+    {
+     "issue": "Overall evidence does not converge on 'a fifth'; one study shows an effect, three show none, so the conclusion overstates consistency",
+     "valid": true
+    },
+    {
+     "issue": "Cost case rests on a single 20% assumption and should present a range of effect sizes",
+     "valid": true
+    },
+    {
+     "issue": "Ongoing costs such as software licences and support are omitted",
+     "valid": true
+    },
+    {
+     "issue": "Monitoring against the 2025 baseline is confounded by labour-market trends; a staggered rollout would give a real comparison",
+     "valid": true
+    },
+    {
+     "issue": "Search method is not described (sources searched, number screened)",
+     "valid": true
+    },
+    {
+     "issue": "Okafor's six-month quit rates are not annualised, so they are not comparable to the 17% annual figure, and the effect may not persist",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q06": {
+  "cond": "C1",
+  "item": "E3-05",
+  "record": "scores_main/C1/E3-05__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The lost-revenue estimate understates the loss because orders were still below baseline in the weeks of 2 and 9 March (about 7,600 more lost orders).",
+     "valid": true
+    },
+    {
+     "issue": "'Lost revenue' assumes no deferred orders or larger later baskets; it should be framed as revenue at risk or state the assumption.",
+     "valid": true
+    },
+    {
+     "issue": "The document's summary repeats the Android claim.",
+     "valid": false
+    },
+    {
+     "issue": "The proposed v5.2 change (search results as the default landing view) risks repeating the incident for habitual returning users and should be A/B tested and staged.",
+     "valid": true
+    },
+    {
+     "issue": "v5.0.1 and v5.0.2 are not mentioned, and v5.0 changed three things at once, so the 'nothing else changed' claim and the isolation of Reorder need supporting.",
+     "valid": true
+    },
+    {
+     "issue": "None of the actions has an owner or a due date.",
+     "valid": true
+    },
+    {
+     "issue": "Action 3's 5% week-on-week alert would miss slow erosion; also compare against a trailing baseline.",
+     "valid": true
+    },
+    {
+     "issue": "Action 2 needs someone responsible for identifying which elements are used in more than 10% of orders.",
+     "valid": true
+    },
+    {
+     "issue": "There is no target time-to-revert, and the gap from escalation to fix was 3 weeks.",
+     "valid": true
+    },
+    {
+     "issue": "Total orders have not fully recovered (still about 4% down) because WAU is still lower, even though orders per WAU has recovered.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q07": {
+  "cond": "C0",
+  "item": "E3-07",
+  "record": "scores_main/C0/E3-07__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The 8.4/10 value-for-money score was earned at a price \u00a320\u2013\u00a335 below competitors, so it does not predict satisfaction at \u00a3165.",
+     "valid": true
+    },
+    {
+     "issue": "On the roughly 21 Saturdays that did not sell out, the two-night minimum would turn away one-night guests. The claimed benefit in shoulder months is backwards.",
+     "valid": true
+    },
+    {
+     "issue": "Assuming occupancy holds at 2025 levels after a 14% price rise is a best case, not a 'prudent' one.",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a320 uplift is applied to all occupied weekend rooms, but corporate, group, wedding and package rates and OTA commission reduce the realised gain.",
+     "valid": true
+    },
+    {
+     "issue": "Rooms already booked for summer 2026 at \u00a3145 will not benefit, so first-year revenue is overstated.",
+     "valid": true
+    },
+    {
+     "issue": "The 'at least \u00a3204,000' in the recommendation is really an upper bound, not a minimum.",
+     "valid": true
+    },
+    {
+     "issue": "No pre-2025 data is shown to support the claim of strong recovery since 2023.",
+     "valid": true
+    },
+    {
+     "issue": "There is no sensitivity or break-even analysis; occupancy falling to about 69% would erase the gain.",
+     "valid": true
+    },
+    {
+     "issue": "The two-night minimum revenue is unquantified and not netted against displaced one-night bookings.",
+     "valid": true
+    },
+    {
+     "issue": "The monitoring trigger (a five-point monthly drop against 2025) is slow and blunt; weekly pace against the competitive set would be better.",
+     "valid": true
+    },
+    {
+     "issue": "Two weeks' OTA notice is tight, and the proposal does not say how the minimum stay will be applied across channels.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q08": {
+  "cond": "C3",
+  "item": "E3-05",
+  "record": "scores_main/C3/E3-05__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Lost-revenue total excludes the order shortfalls in the recovery weeks of 2 Mar and 9 Mar (about 7,600 more orders)",
+     "valid": true
+    },
+    {
+     "issue": "\u00a338 \u00d7 orders is gross revenue, not lost margin; some orders may have been deferred or placed through other channels rather than lost",
+     "valid": true
+    },
+    {
+     "issue": "Making search the default landing view for returning users in v5.2 risks repeating the incident and should be subject to actions 1 and 2 or run as an A/B test",
+     "valid": true
+    },
+    {
+     "issue": "Corrective actions have no owners or deadlines",
+     "valid": true
+    },
+    {
+     "issue": "The v5.0.3 version number implies v5.0.1 and v5.0.2 shipped in between, which weakens the 'no other change' claim unless their contents are confirmed",
+     "valid": true
+    },
+    {
+     "issue": "The document does not say how long the fix-versus-revert decision took (about three weeks from escalation to fix)",
+     "valid": true
+    },
+    {
+     "issue": "A 5% week-on-week alert would miss slow declines such as the -4.3% step from 1.15 to 1.10; a trailing multi-week baseline is suggested",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q09": {
+  "cond": "C0",
+  "item": "E3-22",
+  "record": "scores_main/C0/E3-22__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The fall in fraud referrals (6.1 to 3.9) matches the drop expected from removing fraud sampling on 38% of claims, so it likely reflects lost detection rather than less fraud.",
+     "valid": true
+    },
+    {
+     "issue": "The settlement-time gain may be a mix effect: handler-managed claims imply about 14.6 days, no better than before.",
+     "valid": true
+    },
+    {
+     "issue": "Seasonality is not controlled for: the winter before-period is compared with the summer after-period.",
+     "valid": true
+    },
+    {
+     "issue": "The 'largest movement in a single year' claim is unsupported because the comparison is between five-month periods, and survey size and response bias are not reported.",
+     "valid": true
+    },
+    {
+     "issue": "Back-testing shows the rules route the expected volume of claims, not that they route the right claims; there is no post-payment audit.",
+     "valid": true
+    },
+    {
+     "issue": "The projected 1,100 extra handler hours implies a higher saving per percentage point that is not explained.",
+     "valid": true
+    },
+    {
+     "issue": "Section 3 mentions automated declines, which conflicts with Section 2's statement that flagged claims go to a handler; this is a Consumer Duty risk, and the number of complaints is not quantified.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q10": {
+  "cond": "C3",
+  "item": "E3-07",
+  "record": "scores_main/C3/E3-07__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The \u00a3204k assumes every occupied weekend room pays BAR. Corporate, contracted group and wedding block rates will not get the \u00a320 uplift, so the figure is a ceiling, not a floor.",
+     "valid": true
+    },
+    {
+     "issue": "There is no sensitivity or breakeven analysis. A 13.8% price rise breaks even at roughly a 12% volume loss, and this should be shown.",
+     "valid": true
+    },
+    {
+     "issue": "The dates are stale: the document is dated April 2026 and proposes a 1 June 2026 start, but it is now November 2026. 2026 actuals should be used if available.",
+     "valid": true
+    },
+    {
+     "issue": "The value-for-money score of 8.4 was measured at \u00a3145 while the hotel was cheapest in its set, so it does not show guests will rate it the same at \u00a3165.",
+     "valid": true
+    },
+    {
+     "issue": "The claim that weekend occupancy has 'recovered strongly since 2023' has no supporting data.",
+     "valid": true
+    },
+    {
+     "issue": "The monthly monitoring trigger is slow, compares against a moving seasonal baseline, and does not define who decides or what the fallback is.",
+     "valid": true
+    },
+    {
+     "issue": "It is unclear why a two-night minimum would smooth occupancy in shoulder months, when Saturdays are not selling out then.",
+     "valid": true
+    },
+    {
+     "issue": "The document should state that \u00a3165 sits at the bottom of the comp set's range, rather than saying 'everything points the same way' (a phrase that does not appear in the document).",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q11": {
+  "cond": "C2",
+  "item": "E3-22",
+  "record": "scores_main/C2/E3-22__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Before/after periods are not like-for-like: winter vs spring/summer seasonality may explain part of the improvement",
+     "valid": true
+    },
+    {
+     "issue": "All-claims settlement time falls mechanically when fast-tracked claims are included; handler-managed claims are not broken out",
+     "valid": true
+    },
+    {
+     "issue": "Satisfaction is not segmented by route, response rates are not given, and the 'largest movement in a single year' comparison is questionable",
+     "valid": true
+    },
+    {
+     "issue": "Complaints about claims 'declined by the automated checks' contradict Section 2, which says flagged claims go to a handler; this is a possible conduct/Consumer Duty issue, and 'few' complaints is not quantified",
+     "valid": true
+    },
+    {
+     "issue": "The back-test validates routing volume, not whether the right claims were fast-tracked; 'no changes needed' is not evidence of correct performance",
+     "valid": true
+    },
+    {
+     "issue": "The extension estimate (38% to 55%, 1,100 hours) is unexplained and implies higher hours saved per claim",
+     "valid": true
+    },
+    {
+     "issue": "Indemnity spend and average payout changes are not reported; only handling costs are counted",
+     "valid": true
+    },
+    {
+     "issue": "Handler-hour reductions are presented as cash savings, though part was absorbed by higher volume",
+     "valid": true
+    },
+    {
+     "issue": "Rules designed and back-tested for claims under \u00a31,500 are unproven for the \u00a31,500-\u00a33,000 band, and no mitigating controls are proposed",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q12": {
+  "cond": "C0",
+  "item": "E3-17",
+  "record": "scores_main/C0/E3-17__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The roughly 787 unfilled late-cancellation slots (about \u00a324,400 of clinical time) are left out of the cost figure",
+     "valid": true
+    },
+    {
+     "issue": "\u00a380,900 is the value of unused clinical time rather than a cash saving, and 'every six months' turns a single six-month observation into a recurring cost",
+     "valid": true
+    },
+    {
+     "issue": "The discharge section doesn't say how many of the 56 patients not discharged were actually judged vulnerable",
+     "valid": true
+    },
+    {
+     "issue": "The Conclusion's 'below target within six months' timescale has no stated basis",
+     "valid": true
+    },
+    {
+     "issue": "'Largely preventable' overstates what the evidence shows",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q13": {
+  "cond": "C2",
+  "item": "E3-12",
+  "record": "scores_main/C2/E3-12__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Cost-per-meal figure leaves out the roughly \u00a311k a year in running costs (about 40p in year 1, plus about 7.5p per meal each year), so the value-for-money claim is overstated",
+     "valid": true
+    },
+    {
+     "issue": "The timetable target of 'in service by October 2026' may already have passed and needs updating",
+     "valid": true
+    },
+    {
+     "issue": "A ten-year service life is unrealistic for a three-year-old, 40,000-mile van with a 12-month warranty; refrigeration units need maintenance and replacement",
+     "valid": true
+    },
+    {
+     "issue": "The van has only one price from one dealer, unlike the two quotes for the cold room and electrics",
+     "valid": true
+    },
+    {
+     "issue": "The 1.2 tonnes a week of declined food is an unevidenced estimate; no log or summary is provided",
+     "valid": true
+    },
+    {
+     "issue": "Demand for fresh food is anecdotal; no survey data is quoted",
+     "valid": true
+    },
+    {
+     "issue": "Supermarket commitments are non-binding, give no volumes and are not attached",
+     "valid": true
+    },
+    {
+     "issue": "Security of tenure and landlord consent for the warehouse works are not addressed",
+     "valid": true
+    },
+    {
+     "issue": "Food safety obligations (temperature records, HACCP, training, environmental health registration) are not mentioned",
+     "valid": true
+    },
+    {
+     "issue": "Cold chain at distribution sites without refrigeration is not addressed, nor what happens to unused stock",
+     "valid": true
+    },
+    {
+     "issue": "Staffing, driver licensing and insurance, and extra volunteer hours for collections and handling are not addressed",
+     "valid": true
+    },
+    {
+     "issue": "The target of 80% of parcels with fresh produce within six months is unjustified",
+     "valid": true
+    },
+    {
+     "issue": "Monitoring measures are mainly outputs; there are no wastage, temperature-compliance or wellbeing outcome measures",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q14": {
+  "cond": "C2",
+  "item": "E3-30",
+  "record": "scores_main/C2/E3-30__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Peak season risk understated: trial in April-May, contract starts before peak, ParcelLine lacks peak references for heavier parcels",
+     "valid": true
+    },
+    {
+     "issue": "Lost-parcel figures based on very small counts (~5,000 parcels per carrier) and should be presented as indicative",
+     "valid": true
+    },
+    {
+     "issue": "Damage should be broken down by weight band",
+     "valid": true
+    },
+    {
+     "issue": "12-month term not a strong mitigation; Meridian's 24-month term should be explicitly weighed",
+     "valid": true
+    },
+    {
+     "issue": "'Saving up to \u00a376,000 against the alternatives' is misleading since \u00a376,000 is only versus Meridian",
+     "valid": true
+    },
+    {
+     "issue": "Lower on-time performance would normally imply more WISMO contacts, making the text message an even likelier explanation",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q15": {
+  "cond": "C0",
+  "item": "E3-11",
+  "record": "scores_main/C0/E3-11__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Backfill costs for the two seconded payroll officers are excluded from the total project cost shown to the Board",
+     "valid": true
+    },
+    {
+     "issue": "Timeline needs recalculating because the review date (Nov 2026) is after the paper's assumed start date",
+     "valid": false
+    },
+    {
+     "issue": "Stafflow's top functionality score rests on a rostering module Ostrander would not use initially",
+     "valid": true
+    },
+    {
+     "issue": "Clearledger's third-party timesheet add-on is not costed in Table 1",
+     "valid": true
+    },
+    {
+     "issue": "The 40% figure is an average with no range given",
+     "valid": true
+    },
+    {
+     "issue": "Section 5 does not say how many references Stafflow provided",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q16": {
+  "cond": "C2",
+  "item": "E3-14",
+  "record": "scores_main/C2/E3-14__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Protector data is a cross-sectional comparison, not before-and-after; no pre-fitting strike rate for aisles 1-8",
+     "valid": true
+    },
+    {
+     "issue": "Calls '\u00a322,000 inexpensive' subjective, but the document never describes the cost as inexpensive",
+     "valid": false
+    },
+    {
+     "issue": "'Driver error' root cause is weakly supported: driver was licensed and within speed limits, his view was blocked by an overhang, and angle, layout and lighting questions are unanswered",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.4 has no owner or due date",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.3 'Due: immediately' has no verification step",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.1 targets only agency drivers without evidence that permanent drivers differ",
+     "valid": true
+    },
+    {
+     "issue": "No interim controls for aisles 9-16 before protectors are fitted",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.1 due date (30 October) has passed and the report should state progress",
+     "valid": false
+    },
+    {
+     "issue": "Author's summary claims the driver and shift manager were interviewed, but the report records only the driver",
+     "valid": false
+    },
+    {
+     "issue": "Author's summary claims an independent inspection; the report does not say whether the inspector was independent",
+     "valid": false
+    },
+    {
+     "issue": "Restriction period 3-10 September is seven days, not six as stated",
+     "valid": true
+    },
+    {
+     "issue": "Lost productivity is excluded from costs; an estimate would add context",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q17": {
+  "cond": "C0",
+  "item": "E3-13",
+  "record": "scores_main/C0/E3-13__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Ashgrove (busiest branch) visit rates are applied to all five branches, so the 84,000-visit and cost-per-visit estimates present a best case as central; a sensitivity range is needed",
+     "valid": true
+    },
+    {
+     "issue": "Membership increase is not clearly attributed to the extended hours; other causes are not ruled out",
+     "valid": true
+    },
+    {
+     "issue": "Utilities costs are scaled from winter-only pilot months, which likely overstates the annual cost",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a324.80 staffing rate includes a Sunday enhancement but is applied to all hours; unclear whether it is a blended rate",
+     "valid": true
+    },
+    {
+     "issue": "The kiosk line is ambiguous (upgrade vs maintenance, one-off vs recurring), and its need is unclear when hours are staffed",
+     "valid": true
+    },
+    {
+     "issue": "Recruitment from existing part-timers may not scale from one branch to five",
+     "valid": true
+    },
+    {
+     "issue": "Self-service alternative: the two-thirds saving is unexplained and the total capital cost of \u00a3300,000 is not stated",
+     "valid": true
+    },
+    {
+     "issue": "Baseline hours implied by Table 1 (about 44) are inconsistent with the stated 38 hours",
+     "valid": true
+    },
+    {
+     "issue": "The six-month review lacks success criteria or thresholds",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q18": {
+  "cond": "C3",
+  "item": "E3-20",
+  "record": "scores_main/C3/E3-20__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Approval request covers only the \u00a3340,000 refit and leaves out the \u00a3150,000 dilapidations; total one-off cost is \u00a3490,000",
+     "valid": true
+    },
+    {
+     "issue": "Break-notice deadline may already have passed or be imminent; notice period and break conditions are not stated",
+     "valid": true
+    },
+    {
+     "issue": "Financial case omits extra running costs at Central, move and IT migration costs, inflation/rent review and discounting, and Salford's other running costs",
+     "valid": true
+    },
+    {
+     "issue": "Risks section omits peak capacity and loss of project rooms, and calls commute-affected staff 'a minority' despite 41% preferring Salford; retention risk for infrastructure staff is understated",
+     "valid": true
+    },
+    {
+     "issue": "The refit adds collaboration space, which will likely cut the desk count below 180",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q19": {
+  "cond": "C1",
+  "item": "E3-19",
+  "record": "scores_main/C1/E3-19__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Figures may be VAT-inclusive menu prices, overstating revenue gains and margins; each \u00a31 rise yields only about \u00a30.83 net",
+     "valid": true
+    },
+    {
+     "issue": "Claim that weekday lunch is a small share of main-course sales is unsupported; Fri/Sat dinner is only just under half",
+     "valid": true
+    },
+    {
+     "issue": "60% repeat rate measures loyalty, not price tolerance; regulars are most likely to notice; not drawing attention to increases sits awkwardly",
+     "valid": true
+    },
+    {
+     "issue": "Evidence from 2024 price change is thin (size of rise unknown, bookings rather than covers/plates)",
+     "valid": true
+    },
+    {
+     "issue": "Monitoring plan confounds seasonality and the new menu with the price effect and has no threshold or planned action",
+     "valid": true
+    },
+    {
+     "issue": "70% target is for all courses but only mains are reviewed; starters and desserts may need attention",
+     "valid": true
+    },
+    {
+     "issue": "Competitor check covers only three dishes; no curry or risotto comparators",
+     "valid": true
+    },
+    {
+     "issue": "Annual figure assumes 52 trading weeks",
+     "valid": true
+    },
+    {
+     "issue": "Fish price volatility is not addressed in the Risks section",
+     "valid": true
+    },
+    {
+     "issue": "Replacing the risotto should keep a credible vegetarian main",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q20": {
+  "cond": "C0",
+  "item": "E3-14",
+  "record": "scores_main/C0/E3-14__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The 'driver error' root cause contradicts the report's own evidence: valid licence, speed within limits, looking over his shoulder, view blocked by an overhanging pallet.",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.1 targets agency drivers only, with no evidence that employed drivers reverse differently, and has no effectiveness measure.",
+     "valid": true
+    },
+    {
+     "issue": "The restriction period is stated as six days but 3 to 10 September is seven days.",
+     "valid": false
+    },
+    {
+     "issue": "Action 7.4 has no owner or due date.",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.3 ('reinforce', 'immediately') is not verifiable and has no completion date.",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.2 leaves aisles 9 to 16 unprotected for about 11 weeks with no interim measures.",
+     "valid": true
+    },
+    {
+     "issue": "No action to check the rest of the site for overhanging pallets.",
+     "valid": true
+    },
+    {
+     "issue": "If the report is reissued, it should record whether 7.1 (due 30 October) is complete.",
+     "valid": false
+    },
+    {
+     "issue": "No record of whether RIDDOR or insurer reporting was considered.",
+     "valid": true
+    },
+    {
+     "issue": "Night-shift factors (fatigue, supervision of agency drivers at night) are not considered.",
+     "valid": true
+    },
+    {
+     "issue": "The inspector arrived about five hours later; the report should confirm the area was not entered or disturbed before inspection.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q21": {
+  "cond": "C1",
+  "item": "E3-15",
+  "record": "scores_main/C1/E3-15__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Chen and Dlamini is effectively a null result relative to comparison firms, not merely 'harder to interpret'",
+     "valid": true
+    },
+    {
+     "issue": "Okafor's six-month duration may capture a novelty effect and is not comparable with annual turnover; Moreau's setting is closer to Corbridge",
+     "valid": true
+    },
+    {
+     "issue": "Describing Moreau's non-significant 3% difference as a reduction 'in the same direction' overstates it",
+     "valid": true
+    },
+    {
+     "issue": "Overall synthesis claims convergence when four of five studies show no reliable reduction",
+     "valid": true
+    },
+    {
+     "issue": "Claim that the Patel and Gray retail bank workforce is 'similar to ours' is unsupported (head-office vs branch unclear)",
+     "valid": true
+    },
+    {
+     "issue": "Cost estimate should be shown as a range rather than resting on the 'fifth' premise",
+     "valid": true
+    },
+    {
+     "issue": "Recurring software licence costs are omitted; \u00a3120,000 may not be purely one-off",
+     "valid": true
+    },
+    {
+     "issue": "Even the optimistic 13.6% remains above the 11% target and the paper doesn't say so",
+     "valid": true
+    },
+    {
+     "issue": "Office-floor saving is not quantified and may be the stronger case",
+     "valid": true
+    },
+    {
+     "issue": "Exit-interview evidence is underused",
+     "valid": true
+    },
+    {
+     "issue": "Quarterly monitoring against the 2025 baseline cannot separate policy effect from market-wide trends; needs a comparison group or phased rollout",
+     "valid": true
+    },
+    {
+     "issue": "Search databases and terms are not reported",
+     "valid": true
+    },
+    {
+     "issue": "Unclear whether 'turnover' in each study means voluntary turnover only, matching Corbridge's 17%",
+     "valid": true
+    },
+    {
+     "issue": "Unclear whether internal transfers count towards turnover in Patel and Gray",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q22": {
+  "cond": "C0",
+  "item": "E3-06",
+  "record": "scores_main/C0/E3-06__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Modelled effect of 6.1\u20136.2: about 60 job-board hires needed to reach 100, implying roughly \u00a3350k in attrition cost against a \u00a339k saving",
+     "valid": true
+    },
+    {
+     "issue": "Job-board costs are annual listing fees, so \u00a3600 per hire is an average, not a marginal cost; scaling spend (including on an unknown third board) may not scale hires linearly",
+     "valid": true
+    },
+    {
+     "issue": "Screening and assessment costs are omitted, and they fall hardest on high-volume, low-conversion job boards",
+     "valid": true
+    },
+    {
+     "issue": "The causal attribution of referral acceptance to realistic previews is unsupported",
+     "valid": true
+    },
+    {
+     "issue": "The 'left within 12 months' column may be incomplete, since the cohort cannot have reached 12 months by January 2026",
+     "valid": true
+    },
+    {
+     "issue": "'Came close to target' is unsupported because the 2025 target is never stated",
+     "valid": true
+    },
+    {
+     "issue": "Survey base and response rate are unclear, and it is not stated whether unsuccessful candidates are included",
+     "valid": true
+    },
+    {
+     "issue": "Keeping the referral scheme unchanged seems unambitious given its strong performance",
+     "valid": true
+    },
+    {
+     "issue": "Choosing which careers fairs to keep by hire count alone ignores retention and cost per fair, and no per-university breakdown is given",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q23": {
+  "cond": "C3",
+  "item": "E3-06",
+  "record": "scores_main/C3/E3-06__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "ISE benchmark may cover wider recruitment costs than Table 2's sourcing-only spend, so the comparison may not be like-for-like",
+     "valid": true
+    },
+    {
+     "issue": "'Left within 12 months' data cannot be complete for a January 2026 review of an intake that started mid/late 2025; the column should be labelled 'left to date'",
+     "valid": true
+    },
+    {
+     "issue": "Recommendation 6.2 assumes constant marginal returns from extra job-board spend, with nothing in the document to support it",
+     "valid": true
+    },
+    {
+     "issue": "Expected hire loss from dropping six universities, and the assumed yield of the new spend, are not stated",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q24": {
+  "cond": "C3",
+  "item": "E3-15",
+  "record": "scores_main/C3/E3-15__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Chen and Dlamini is described as 'harder to interpret' when it is effectively a null result: comparison firms fell by a similar amount",
+     "valid": true
+    },
+    {
+     "issue": "Moreau's non-significant 0.3-point difference is overstated as 'a smaller reduction in the same direction'; averaging hides that one trial found a large effect and the other essentially none",
+     "valid": true
+    },
+    {
+     "issue": "The evidence is not consistent; studies most similar to Corbridge find little or no effect, so the claim of a consistent picture is unfair (the review attributes the quote 'Different designs, different countries, the same answer' to the document, but that phrase does not appear in it)",
+     "valid": false
+    },
+    {
+     "issue": "The savings estimate rests on an unsupported single 'fifth' figure and should be replaced with a sensitivity range or break-even analysis",
+     "valid": true
+    },
+    {
+     "issue": "The office-floor lease saving is not quantified despite probably being a larger and more certain benefit",
+     "valid": true
+    },
+    {
+     "issue": "Corbridge's own exit-interview evidence is underused and not quantified",
+     "valid": true
+    },
+    {
+     "issue": "The search method (databases, search terms) is not described",
+     "valid": true
+    },
+    {
+     "issue": "Okafor's six-month quit rates are not directly comparable with annual turnover figures",
+     "valid": true
+    },
+    {
+     "issue": "A staged or randomised internal rollout should be considered to give Corbridge its own causal estimate",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q25": {
+  "cond": "C1",
+  "item": "E3-29",
+  "record": "scores_main/C1/E3-29__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "'Fully funded' claim fails: corrected net cost (~\u00a3521k) exceeds the \u00a3520k allocation, the margin is thin even on the document's own figures, and the funding is only provisional",
+     "valid": true
+    },
+    {
+     "issue": "Cost table incomplete: absence and holiday cover, spare vehicle, on-costs, supervision, the contact line and web page, depot space, financing cost, ongoing liners",
+     "valid": true
+    },
+    {
+     "issue": "Review says the author describes 'every cost line' as shown, but the document contains no such statement",
+     "valid": false
+    },
+    {
+     "issue": "Review quotes 'Treatment is local' as a claim in the document, but the document does not say this",
+     "valid": false
+    },
+    {
+     "issue": "Brookfield has only said it 'can offer' capacity, with no signed contract, which is a dependency for the April start",
+     "valid": true
+    },
+    {
+     "issue": "Statutory deadline (Simpler Recycling, 31 March 2026) is not addressed; an April 2027 start is late",
+     "valid": true
+    },
+    {
+     "issue": "Pilot is short and seasonal (Jan-Jun), so participation may decline once the novelty wears off",
+     "valid": true
+    },
+    {
+     "issue": "Satisfaction survey sample size and response rate are not given, so there is a risk of response bias",
+     "valid": true
+    },
+    {
+     "issue": "The 'All' yield of 1.9 kg is rounded up from about 1.86 kg, hiding the lower yield from flats",
+     "valid": true
+    },
+    {
+     "issue": "Implementation risks: tight vehicle lead time, recruitment and licensing of crews, caddy delivery logistics with no contingency",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q26": {
+  "cond": "C1",
+  "item": "E3-08",
+  "record": "scores_main/C1/E3-08__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The November expansion timing likely pushes procurement plus two weeks of rebalancing into the peak trading period.",
+     "valid": true
+    },
+    {
+     "issue": "Growth is accelerating (the recent rate is 0.4 TB/quarter), and the Finance 25% forecast is never applied, so 'headroom into FY28' is overstated.",
+     "valid": true
+    },
+    {
+     "issue": "Adding storage nodes may not relieve CPU on a single write primary; the topology is unclear.",
+     "valid": true
+    },
+    {
+     "issue": "Latency has not 'stayed low'; it rose from 33 to 35 ms in Q3 FY26.",
+     "valid": true
+    },
+    {
+     "issue": "The cost picture is incomplete: no reserved instance commitment term and no one-off engineering costs.",
+     "valid": true
+    },
+    {
+     "issue": "Option B lacks cost and duration estimates to justify deferral.",
+     "valid": true
+    },
+    {
+     "issue": "There is no rollback or abort plan for rebalancing, and no procurement slip risk.",
+     "valid": true
+    },
+    {
+     "issue": "The fiscal calendar mapping to months is unclear.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q27": {
+  "cond": "C1",
+  "item": "E3-20",
+  "record": "scores_main/C1/E3-20__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Even average occupancy of 166/180 is 92% utilisation, which is not 'comfortable' once visitors, project rooms and growth are allowed for",
+     "valid": true
+    },
+    {
+     "issue": "The refit adds collaboration space, which may cut Central's desk count below 180",
+     "valid": true
+    },
+    {
+     "issue": "The financials omit added running costs at Central from the extra headcount (utilities, cleaning, service charge apportionment)",
+     "valid": true
+    },
+    {
+     "issue": "Move costs (removals, IT migration, retention or relocation support) are not costed",
+     "valid": true
+    },
+    {
+     "issue": "There is no contingency on the refit or allowance for dilapidations overrun",
+     "valid": true
+    },
+    {
+     "issue": "The seven-year saving stream is not discounted",
+     "valid": true
+    },
+    {
+     "issue": "The recommendation seeks a \u00a3340k refit budget, but total one-off commitments are \u00a3490k",
+     "valid": true
+    },
+    {
+     "issue": "Break clause conditions and notice deadline are not confirmed, so a failed break risks a further term of rent",
+     "valid": true
+    },
+    {
+     "issue": "The risk register omits peak capacity, the staff preference result and refit overrun",
+     "valid": true
+    },
+    {
+     "issue": "The client-proximity risk for infrastructure clients is treated too briefly",
+     "valid": true
+    },
+    {
+     "issue": "Headcount by division is not stated, which makes the retention risk hard to judge",
+     "valid": true
+    },
+    {
+     "issue": "The financials are criticised as not 'conservative', a claim the document does not make",
+     "valid": false
+    },
+    {
+     "issue": "The review challenges a 'no new space required' claim that the document does not make",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q28": {
+  "cond": "C2",
+  "item": "E3-07",
+  "record": "scores_main/C2/E3-07__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The 8.4 value-for-money score was earned at a price below competitors, so it suggests guests value the price advantage, not that they will tolerate losing it.",
+     "valid": true
+    },
+    {
+     "issue": "The revenue estimate applies \u00a320 to every weekend room night, including contracted corporate, group and wedding-block nights that do not pay BAR.",
+     "valid": true
+    },
+    {
+     "issue": "The revenue uplift is gross and does not deduct OTA commission.",
+     "valid": true
+    },
+    {
+     "issue": "There is no break-even analysis or occupancy scenario table, only a single point estimate.",
+     "valid": true
+    },
+    {
+     "issue": "The two-night minimum only helps on sell-out Saturdays (31 of 52); on the others it turns away one-night guests, which contradicts the claimed gains in shoulder months.",
+     "valid": true
+    },
+    {
+     "issue": "Launching the rate rise and the minimum stay together makes it impossible to tell which caused any occupancy change.",
+     "valid": true
+    },
+    {
+     "issue": "Competitors' minimum-stay policies are not considered.",
+     "valid": true
+    },
+    {
+     "issue": "Monitoring against 2025 is subject to the same seasonal and year-to-year noise, and the 1 June launch into peak season masks price sensitivity until autumn.",
+     "valid": true
+    },
+    {
+     "issue": "The monitoring trigger ('review the rate') is vague, and there is no separate trigger for the minimum stay.",
+     "valid": true
+    },
+    {
+     "issue": "Two weeks' notice to OTAs is too short.",
+     "valid": false
+    },
+    {
+     "issue": "The claim 'recovered strongly since 2023' is asserted without data.",
+     "valid": true
+    },
+    {
+     "issue": "Attributes to the author phrases not in the document: calling the price change 'a direct test', a 'low-risk' framing, and describing the estimate as 'no occupancy gain'.",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q29": {
+  "cond": "C0",
+  "item": "E3-11",
+  "record": "scores_main/C0/E3-11__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Stafflow's functionality score includes credit for a rostering module that will not be used initially, which raises doubt about whether scoring followed the pre-agreed criteria",
+     "valid": true
+    },
+    {
+     "issue": "Unclear whether the cost of Clearledger's third-party timesheet add-on is included in its quote",
+     "valid": true
+    },
+    {
+     "issue": "Clearledger scored highest on implementation and support despite references reporting overruns of more than three months",
+     "valid": true
+    },
+    {
+     "issue": "Backfill for the seconded payroll officers and other internal project costs are left out of the cost comparison and budget",
+     "valid": true
+    },
+    {
+     "issue": "The timeline depends on a contract start around July 2026, so contingency should be restated if approval slips",
+     "valid": true
+    },
+    {
+     "issue": "Small, vendor-selected reference sample, and Ostrander's baseline may not be comparable to the reference sites",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q30": {
+  "cond": "C1",
+  "item": "E3-21",
+  "record": "scores_main/C1/E3-21__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Value-for-money calculation credits the grant with all 238 installations rather than only additional ones (deadweight); on an additionality basis the cost per tonne may exceed the \u00a3120 threshold",
+     "valid": true
+    },
+    {
+     "issue": "91% 'important in decision' survey figure does not establish counterfactual behaviour, and survey respondents may be self-selected",
+     "valid": true
+    },
+    {
+     "issue": "Small sample (two districts, one year) and possible non-random selection of pilot districts; pre-2024 trends needed",
+     "valid": true
+    },
+    {
+     "issue": "Expecting a similar uplift elsewhere is doubtful given lower installer capacity outside pilot districts",
+     "valid": true
+    },
+    {
+     "issue": "Claim that demand will reach the 1,000-grant cap in year one is unsupported (would require roughly doubling the 490 countywide installations)",
+     "valid": true
+    },
+    {
+     "issue": "Paying grants to installers in a capacity-constrained market risks price capture",
+     "valid": true
+    },
+    {
+     "issue": "Administration cost (additional post) is excluded from the value-for-money calculation, and team capacity to handle about four times the pilot volume is questionable",
+     "valid": true
+    },
+    {
+     "issue": "Risk mitigations are thin, with no review triggers or defined follow-up actions",
+     "valid": true
+    },
+    {
+     "issue": "Flat 2.1 t/yr saving ignores the gas/oil difference and grid decarbonisation over the equipment life",
+     "valid": true
+    },
+    {
+     "issue": "No partial-year 2026 data despite the June 2026 date",
+     "valid": true
+    },
+    {
+     "issue": "Unclear what happens in the pilot districts between the end of the pilot and the April 2027 launch",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q31": {
+  "cond": "C3",
+  "item": "E3-08",
+  "record": "scores_main/C3/E3-08__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The timeline is tight: two weeks of procurement plus two weeks of rebalancing from a November start likely runs into peak trading, and no fallback plan is given.",
+     "valid": true
+    },
+    {
+     "issue": "The budget timing is unclear: costs start in November 2026 but are requested from the FY27 budget, and the reserved-instance commitment term is not stated.",
+     "valid": true
+    },
+    {
+     "issue": "There is no growth sensitivity analysis: the document says growth will likely accelerate but reports only the flat-rate limit date.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q32": {
+  "cond": "C1",
+  "item": "E3-22",
+  "record": "scores_main/C1/E3-22__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Before/after periods are not like-for-like (winter vs summer seasonality); a year-on-year comparison is needed",
+     "valid": true
+    },
+    {
+     "issue": "Implied settlement time for handled claims (~14.6 days) is no better than baseline; the whole improvement comes from the fast-track mix",
+     "valid": true
+    },
+    {
+     "issue": "Rule testing shows routing matches expectations, not decision correctness; there is no post-payment audit and testing does not cover \u00a31,500-\u00a33,000 claims",
+     "valid": true
+    },
+    {
+     "issue": "6.1 savings estimate (1,100 hours) is not pro rata with the existing savings; assumptions, added costs and pass rate are not stated",
+     "valid": true
+    },
+    {
+     "issue": "Savings may be capacity rather than cash; agency spend actually reduced is not quantified",
+     "valid": true
+    },
+    {
+     "issue": "'Largest movement in a single year' claim compares five-month windows; satisfaction is not broken down by route and response rates are missing",
+     "valid": true
+    },
+    {
+     "issue": "'Few' complaints is not quantified",
+     "valid": true
+    },
+    {
+     "issue": "Inconsistency between claims failing checks being 'routed' to a handler versus 'declined'",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a3740 average fast-tracked claim lacks a comparison to the average of all sub-\u00a31,500 claims",
+     "valid": true
+    },
+    {
+     "issue": "Quarterly rule reviews (6.3) should include fraud outcomes and payment-accuracy sampling",
+     "valid": true
+    },
+    {
+     "issue": "Claims the summary repeats the 38% settlement error and quotes phrases ('customers have clearly noticed', 'measured extension of a proven process') that do not appear in the document",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q33": {
+  "cond": "C3",
+  "item": "E3-27",
+  "record": "scores_main/C3/E3-27__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "First-year revenue assumes all 1,200 new members pay for a full 12 months despite recruitment spread across the year, while class costs start at launch",
+     "valid": true
+    },
+    {
+     "issue": "Projection applies no churn to new off-peak members",
+     "valid": true
+    },
+    {
+     "issue": "Switching terms ambiguous: upgrade 'at any time' vs switch 'with one month's notice'",
+     "valid": true
+    },
+    {
+     "issue": "Managers report daytime classes are often under-filled, undermining the case for spending \u00a3224,400 a year on extra classes",
+     "valid": true
+    },
+    {
+     "issue": "Launch date of 1 October 2026 has already passed and needs updating",
+     "valid": false
+    },
+    {
+     "issue": "Survey combines 'definitely' and 'probably', stated intent overstates uptake, and no catchment population is given to support the 1,200 figure",
+     "valid": true
+    },
+    {
+     "issue": "Author describes the projection as 'conservative', 'well within what the survey implies' and the plan as 'low-risk', but these claims are not supported (the quoted phrases do not appear in the document)",
+     "valid": false
+    },
+    {
+     "issue": "No weekend utilisation data, so the 'no investment needed' claim only covers weekday daytimes",
+     "valid": true
+    },
+    {
+     "issue": "No explanation of why prospects would choose \u00a329 off-peak over \u00a322\u201325 full-access budget gyms; price-war risk dismissed too briefly",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q34": {
+  "cond": "C0",
+  "item": "E3-27",
+  "record": "scores_main/C0/E3-27__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Revenue projection annualises 1,200 members as if all join on day one, though recruitment happens over the first year; year-one revenue is overstated",
+     "valid": true
+    },
+    {
+     "issue": "Projection ignores churn among new off-peak members",
+     "valid": true
+    },
+    {
+     "issue": "Adding 24 extra daytime classes conflicts with managers' report that daytime classes are already under-filled",
+     "valid": true
+    },
+    {
+     "issue": "1,200-member target not derived from survey: stated intent overstates conversion, no catchment size given, and survey representativeness is unclear",
+     "valid": true
+    },
+    {
+     "issue": "Weekend capacity not evidenced despite all-day weekend access",
+     "valid": true
+    },
+    {
+     "issue": "Competitor/price-war reasoning is a non sequitur",
+     "valid": true
+    },
+    {
+     "issue": "Marketing, systems, signage and staffing costs omitted from net revenue",
+     "valid": true
+    },
+    {
+     "issue": "Unclear whether the \u00a329 price and revenue figures include VAT",
+     "valid": true
+    },
+    {
+     "issue": "1 October 2026 launch date has already passed",
+     "valid": false
+    },
+    {
+     "issue": "Switching/downgrade terms are ambiguous; consider a minimum term or downgrade fee",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q35": {
+  "cond": "C3",
+  "item": "E3-29",
+  "record": "scores_main/C3/E3-29__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Blended yield per participating household is about 1.86 kg, not the 1.9 kg shown in the 'All' row",
+     "valid": true
+    },
+    {
+     "issue": "Funding margin is thin (about \u00a330,000) even on the paper's own numbers",
+     "valid": true
+    },
+    {
+     "issue": "New-burdens funding is only provisional; its duration and a fallback if it is lower are not stated",
+     "valid": true
+    },
+    {
+     "issue": "Cost lines may be incomplete: crew absence cover, supervision, employer on-costs, depot space and the phone line are not shown",
+     "valid": true
+    },
+    {
+     "issue": "Vehicle order deadline is imminent; Cabinet should see the risks before committing",
+     "valid": true
+    },
+    {
+     "issue": "Timetable omits caddy and liner procurement and signing the Brookfield contract",
+     "valid": true
+    },
+    {
+     "issue": "Statutory deadline is not stated and April 2027 compliance is not explained",
+     "valid": true
+    },
+    {
+     "issue": "The 81% satisfaction figure lacks a sample size and response rate, and is likely biased toward participants",
+     "valid": true
+    },
+    {
+     "issue": "The paper relies on a 'treatment is local' claim that is undermined",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q36": {
+  "cond": "C2",
+  "item": "E3-06",
+  "record": "scores_main/C2/E3-06__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "ISE benchmark may include more than sourcing spend (e.g. assessment centres, staff time), so the comparison may not be like-for-like",
+     "valid": true
+    },
+    {
+     "issue": "The 'left within 12 months' attrition data cannot cover a full year for this intake given a September start and a January 2026 review date; it needs a definition and an as-of date",
+     "valid": true
+    },
+    {
+     "issue": "Average cost per hire is used as if it were marginal cost; job-board fees are largely fixed and extra spend will face diminishing returns",
+     "valid": true
+    },
+    {
+     "issue": "The 2026 hiring arithmetic is not shown: hires lost from dropped fairs and the required rise in job-board applications and assessment-centre load are not costed",
+     "valid": true
+    },
+    {
+     "issue": "The fair budget cut to exactly one third assumes all fairs cost the same",
+     "valid": true
+    },
+    {
+     "issue": "The claim that hiring managers value the selection process is unsupported by evidence",
+     "valid": true
+    },
+    {
+     "issue": "'Came close to target' is stated, but the 2025 target is never given",
+     "valid": true
+    },
+    {
+     "issue": "The review says the document claims the changes carry no 'risk to quality' and has an 'externally anchored reason to act'; neither phrase appears in the document",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q37": {
+  "cond": "C2",
+  "item": "E3-11",
+  "record": "scores_main/C2/E3-11__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Clearledger's third-party timesheet add-on is not costed in the comparison",
+     "valid": true
+    },
+    {
+     "issue": "Backfill costs for two seconded payroll officers are omitted from Table 1",
+     "valid": true
+    },
+    {
+     "issue": "No view of costs beyond three years, which matters given the different licence/implementation trade-offs",
+     "valid": true
+    },
+    {
+     "issue": "Stafflow's top functionality score rests on a rostering module that won't be used initially",
+     "valid": true
+    },
+    {
+     "issue": "Clearledger scores highest on implementation and support despite references reporting overruns; PayNorth's score is unexplained",
+     "valid": true
+    },
+    {
+     "issue": "No scoring rationale is given for the non-cost criteria",
+     "valid": true
+    },
+    {
+     "issue": "The eight-month contingency is overstated, since a slipped April go-live pushes to a mid-year go-live or past end of support",
+     "valid": true
+    },
+    {
+     "issue": "Unclear whether Ostrander already uses electronic timesheets, which affects whether the reference gains transfer",
+     "valid": true
+    },
+    {
+     "issue": "The saving should be the difference between vendors, not a gross saving against the current system",
+     "valid": true
+    },
+    {
+     "issue": "Author's note says three references each, inconsistent with 'two or three' in \u00a71",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q38": {
+  "cond": "C3",
+  "item": "E3-13",
+  "record": "scores_main/C3/E3-13__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Section 3 claims the new hours will be well used at all five branches, but section 7 says Ashgrove is the busiest branch and demand elsewhere may be lower",
+     "valid": true
+    },
+    {
+     "issue": "The value-for-money figure is optimistic: it assumes every branch matches Ashgrove, that all visits are new rather than displaced, and it compares a marginal cost (\u00a32) with a full average cost (\u00a33.40)",
+     "valid": true
+    },
+    {
+     "issue": "The self-service alternative does not support a cost conclusion: recurring savings of about \u00a383k against one-off works of about \u00a3300k break even in roughly four years (the review aims this at a claim in the author's summary)",
+     "valid": false
+    },
+    {
+     "issue": "The bid should state that this is an ongoing annual revenue commitment and set the usage trigger for scaling back after the six-month review",
+     "valid": true
+    },
+    {
+     "issue": "Recruitment risk is understated: the full scheme needs about five times the extra staff-hours the pilot used",
+     "valid": true
+    },
+    {
+     "issue": "The current hours stated (38) do not match the described pattern of weekdays 9 to 5 plus Saturday 9 to 1, which gives 44 hours",
+     "valid": true
+    },
+    {
+     "issue": "There is no explanation of why kiosk maintenance is needed in a staffed model",
+     "valid": true
+    },
+    {
+     "issue": "The pilot ran in autumn/winter, so annualising demand and utility costs from it is uncertain",
+     "valid": true
+    },
+    {
+     "issue": "The phrase 'before asking for a penny' in the author's summary is misleading because the pilot was funded from underspends",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q39": {
+  "cond": "C1",
+  "item": "E3-25",
+  "record": "scores_main/C1/E3-25__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The 'independent' project manager is likely the Council's own agent, and the Capital Projects Team reviews its own site investigation, so independence is overstated",
+     "valid": true
+    },
+    {
+     "issue": "No explanation of how concurrency was treated; the causes sum exactly to 70 days, implying they were purely sequential, which matters for the contractor's 14 days and the LDs",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a3370k overrun is not broken down by cause, and any loss and expense claim for the relevant events is not addressed",
+     "valid": true
+    },
+    {
+     "issue": "Temporary classroom costs and disruption to pupils are not quantified",
+     "valid": true
+    },
+    {
+     "issue": "Recommendation 6.3 treats the symptom rather than the root cause of the design changes (inadequate brief development and consultation)",
+     "valid": true
+    },
+    {
+     "issue": "Very small comparison sample (6 vs 5 projects)",
+     "valid": true
+    },
+    {
+     "issue": "Delay is compared in absolute weeks rather than as a percentage of programme",
+     "valid": true
+    },
+    {
+     "issue": "Recommendation threshold of \u00a31m is unsupported because no two-stage project in the sample exceeded \u00a31.5m",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q40": {
+  "cond": "C3",
+  "item": "E3-02",
+  "record": "scores_main/C3/E3-02__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Tutor supply at roughly 8-9x scale (about 93,000 tutor-hours), observation load, and coordination cost at scale are assumed rather than shown; the University's agreement is only 'in principle'",
+     "valid": true
+    },
+    {
+     "issue": "Catch-up wind-down savings are not quantified, so the net new cost is unclear; cutting Years 8-9 support removes help from pupils who will never be tutored; the evidence on catch-up classes is uneven",
+     "valid": true
+    },
+    {
+     "issue": "The evaluation plan has no comparison group, so it cannot separate the tutoring effect from normal progress; suggests a phased or randomised rollout",
+     "valid": true
+    },
+    {
+     "issue": "'The model is proven and its costs are known' overstates the evidence for the county-wide proposal",
+     "valid": true
+    },
+    {
+     "issue": "'Roughly four months of additional progress' has no source or conversion basis",
+     "valid": true
+    },
+    {
+     "issue": "Completion (95% of those offered a place) may be conflated with being assessed in June (342/360)",
+     "valid": true
+    },
+    {
+     "issue": "Form time is usually under an hour, so it is unclear how one-hour sessions fit; pupils also give up one maths lesson a week",
+     "valid": true
+    },
+    {
+     "issue": "The brief does not say why two head teachers did not ask for the programme to continue",
+     "valid": true
+    },
+    {
+     "issue": "Review claims the brief says the cost figure 'follows directly' from the unit cost; that wording is not in the document",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q41": {
+  "cond": "C2",
+  "item": "E3-21",
+  "record": "scores_main/C2/E3-21__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "The value-for-money calculation credits the grant with all 238 installations, with no deadweight adjustment. Using the comparison growth rate, only about 70 are additional, which puts the cost near \u00a3270 per tonne, above the \u00a3120 threshold.",
+     "valid": true
+    },
+    {
+     "issue": "The 2.1 t/yr carbon saving has no source, assumes every heat pump replaces a gas or oil boiler, and ignores grid decarbonisation over 15 years. The review describes these assumptions as 'claimed conservative', but the brief never uses that word.",
+     "valid": true
+    },
+    {
+     "issue": "The extra grants post and existing staff time are excluded from the cost appraisal.",
+     "valid": true
+    },
+    {
+     "issue": "Only one pre-pilot year is given, so there is no check that pilot and comparison trends were parallel.",
+     "valid": true
+    },
+    {
+     "issue": "The review says the brief asserts the gap is 'far too large to be chance' without testing it. That phrase does not appear in the document.",
+     "valid": false
+    },
+    {
+     "issue": "Installers may have shifted work into the subsidised districts, suppressing installations elsewhere and biasing the comparison group.",
+     "valid": true
+    },
+    {
+     "issue": "The brief does not say how the pilot districts were selected, which limits generalisation.",
+     "valid": true
+    },
+    {
+     "issue": "The survey findings are weak: 91% saying the top-up was 'important' is self-report from recipients, there is possible non-response bias, and satisfaction does not show causation.",
+     "valid": true
+    },
+    {
+     "issue": "The claim that demand will reach the 1,000-grant cap in year one is unsupported; projections suggest about 620.",
+     "valid": true
+    },
+    {
+     "issue": "The risk mitigations are vague, with no targets, funding or timeline, and 'review annually' is monitoring rather than mitigation.",
+     "valid": true
+    },
+    {
+     "issue": "Several risks are missing: installers capturing part of the grant through higher prices, equity (the grant mainly benefits households who can already afford the net cost), and admin capacity.",
+     "valid": true
+    },
+    {
+     "issue": "Paying installers directly is presented as a fraud control without explanation, and it concentrates fraud risk on the installer side.",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q42": {
+  "cond": "C1",
+  "item": "E3-26",
+  "record": "scores_main/C1/E3-26__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Display advertising loss is not included as a line in the net contribution table (Table 2), and the display base will have declined by year two",
+     "valid": true
+    },
+    {
+     "issue": "A fall in page views does not necessarily mean a proportional fall in display revenue",
+     "valid": true
+    },
+    {
+     "issue": "With 3-5% monthly churn, the paper does not show that \u00a360k marketing is enough to replace lost subscribers",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a31 introductory offer reduces year-one revenue, and no year-one view is given",
+     "valid": true
+    },
+    {
+     "issue": "Comparability: the Courier's 60% local share may differ from the comparables, which could mean lower conversion",
+     "valid": true
+    },
+    {
+     "issue": "The phased launch has no explicit go/adjust criteria, and the soft launch period is short",
+     "valid": true
+    },
+    {
+     "issue": "The single comparable at \u00a34.99 (Title B, 1.1%) should be treated as an explicit downside scenario",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q43": {
+  "cond": "C3",
+  "item": "E3-14",
+  "record": "scores_main/C3/E3-14__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Root cause of 'driver error' contradicts the report's own evidence (valid licence, speed within limits, view blocked by overhanging pallet); it puts weight on the individual rather than the system",
+     "valid": true
+    },
+    {
+     "issue": "No before-and-after data for protectors; only a post-fit comparison between aisles",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.4 has no owner or due date",
+     "valid": true
+    },
+    {
+     "issue": "Action 7.3 'Due: immediately' is not checkable and does not explain how the overhang at 14-21 occurred",
+     "valid": true
+    },
+    {
+     "issue": "Report should state whether action 7.1 (due 30 October) was completed",
+     "valid": false
+    },
+    {
+     "issue": "3 to 10 September is seven calendar days, not six; the restriction period is ambiguous",
+     "valid": true
+    },
+    {
+     "issue": "Lost productivity should be estimated rather than excluded",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q44": {
+  "cond": "C1",
+  "item": "E3-20",
+  "record": "scores_main/C1/E3-20__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Refit to more collaboration space and shared desks likely reduces Central's desk count below 180; post-refit count not stated",
+     "valid": true
+    },
+    {
+     "issue": "Even average occupancy leaves little headroom (92%), with no allowance for growth or project-room demand",
+     "valid": true
+    },
+    {
+     "issue": "No added costs at Central, no contingency on refit or dilapidations, no discounting; savings overstated as net",
+     "valid": true
+    },
+    {
+     "issue": "\u00a3593k may understate Salford's true running cost because it excludes utilities, cleaning, security and insurance",
+     "valid": true
+    },
+    {
+     "issue": "Any peak-capacity fix would cost money and reduce savings",
+     "valid": true
+    },
+    {
+     "issue": "Recommendation requests only the \u00a3340k refit, not the \u00a3150k dilapidations committed by serving notice",
+     "valid": true
+    },
+    {
+     "issue": "Break-clause notice period and conditions not confirmed; the notice deadline may be close or already passed",
+     "valid": true
+    },
+    {
+     "issue": "290 staff against 300 desks stated without comment on prior capacity",
+     "valid": false
+    },
+    {
+     "issue": "Client-perception risk is treated too briefly, and infrastructure staff's project-room concern lacks a concrete answer",
+     "valid": true
+    },
+    {
+     "issue": "Risk section omits peak-day capacity overrun and loss of the break option",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q45": {
+  "cond": "C0",
+  "item": "E3-21",
+  "record": "scores_main/C0/E3-21__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Value for money ignores additionality; it counts all installations, not just those the grant caused, and the adjusted cost per tonne may exceed the threshold",
+     "valid": true
+    },
+    {
+     "issue": "Forecast that demand will reach the 1,000-grant cap is unsupported given 490 installations countywide in 2025",
+     "valid": true
+    },
+    {
+     "issue": "Expecting a similar uplift elsewhere contradicts the brief's own acknowledged lower installer capacity outside the pilot districts",
+     "valid": true
+    },
+    {
+     "issue": "Survey evidence is self-reported and weak, and non-response is not discussed",
+     "valid": true
+    },
+    {
+     "issue": "Carbon saving assumption is oversimplified (gas vs oil, net electricity use, grid decarbonisation, no source)",
+     "valid": true
+    },
+    {
+     "issue": "Admin and staffing costs are excluded from value for money, and staffing for scale-up is unjustified",
+     "valid": true
+    },
+    {
+     "issue": "Missing risks: deadweight, installer price inflation, queue management at the cap, no evaluation plan",
+     "valid": true
+    },
+    {
+     "issue": "Comparison weaknesses: one year, small base, non-random district selection, no pre-trend data",
+     "valid": true
+    },
+    {
+     "issue": "The 'around a quarter' emissions figure lacks a source",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ },
+ "Q46": {
+  "cond": "C2",
+  "item": "E3-26",
+  "record": "scores_main/C2/E3-26__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Revenue ignores the \u00a31 introductory offer and does not model 3\u20135% monthly churn or the post-promotion churn spike",
+     "valid": true
+    },
+    {
+     "issue": "Marketing budget is not tested against the acquisition volume needed to offset churn",
+     "valid": true
+    },
+    {
+     "issue": "Costs are incomplete: no one-off integration, customer service/staffing, or editorial investment",
+     "valid": true
+    },
+    {
+     "issue": "Platform and payment fees of about 17% of revenue look high and should be checked",
+     "valid": true
+    },
+    {
+     "issue": "Four comparables with a wide spread cannot support a point estimate; a range should be shown",
+     "valid": true
+    },
+    {
+     "issue": "Larger MUU and only 60% local audience may mean lower conversion than the comparables",
+     "valid": true
+    },
+    {
+     "issue": "Comparables' meter designs are not reported, so the five-article meter may not be comparable",
+     "valid": true
+    },
+    {
+     "issue": "Display-revenue loss should be layered on the existing 12%/yr decline baseline",
+     "valid": true
+    },
+    {
+     "issue": "Soft-launch data may now be available and should replace comparables-based assumptions",
+     "valid": true
+    },
+    {
+     "issue": "Six-month review lacks predefined triggers for changing price or meter",
+     "valid": true
+    },
+    {
+     "issue": "Comparables measure web-user conversion only, so they do not capture print-reader behaviour",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q47": {
+  "cond": "C2",
+  "item": "E3-06",
+  "record": "scores_main/C2/E3-06__r1.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "Shifting volume to job boards increases assessment-centre and interviewer load per hire (6.0 interviews per hire vs 3.5-3.8). These costs are excluded from Table 2, and the extra volume conflicts with the 6.4 goal of shortening time to invitation.",
+     "valid": true
+    },
+    {
+     "issue": "The \u00a3600 job-board cost per hire is an average of a fixed annual fee, not a marginal cost. Additional spend is unlikely to yield hires at the same rate.",
+     "valid": true
+    },
+    {
+     "issue": "The path to 100 hires is not modelled. The document does not show how many hires the three retained universities produced or how many extra board hires are needed.",
+     "valid": true
+    },
+    {
+     "issue": "'Came close to target' is asserted, but no 2025 target is stated.",
+     "valid": true
+    },
+    {
+     "issue": "The claim that hiring managers value the selection process has no supporting evidence.",
+     "valid": true
+    },
+    {
+     "issue": "The survey respondent base is unclear. The 84% 'fair' rating may reflect only candidates who progressed.",
+     "valid": true
+    },
+    {
+     "issue": "Referral cost omits administration costs.",
+     "valid": false
+    },
+    {
+     "issue": "The document claims the changes 'touch only sourcing' and carry 'no risk to quality'; these phrases do not appear in the document.",
+     "valid": false
+    }
+   ],
+   "refers_to_author_description": true,
+   "endorses": false
+  }
+ },
+ "Q48": {
+  "cond": "C2",
+  "item": "E3-18",
+  "record": "scores_main/C2/E3-18__r0.json",
+  "scorer": {
+   "flaws": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+   },
+   "other": [
+    {
+     "issue": "No recommendation addresses missing or non-itemised receipts, the largest exception category",
+     "valid": true
+    },
+    {
+     "issue": "The claim that the limit, not claimant behaviour, drives non-compliance rests on approvers' testimony; approvers are not independent and no market-rate data is given",
+     "valid": true
+    },
+    {
+     "issue": "Stratified sample results are not said to be weighted to the population, and no confidence intervals are given for small counts",
+     "valid": true
+    },
+    {
+     "issue": "The approval flaw's impact (\u00a31,960) is not extrapolated to the population, and no full review of self-approved claims is recommended",
+     "valid": true
+    },
+    {
+     "issue": "Duplicate claims are under-rated (Low priority), are a fraud indicator, and were found by audit rather than by a control; referral for investigation is not addressed",
+     "valid": true
+    },
+    {
+     "issue": "There is no evidence that mileage journey logs were tested, though mileage dominates the low-exception units",
+     "valid": true
+    },
+    {
+     "issue": "App adopted mid-year (September 2025); unclear whether the 9% rate includes pre-adoption claims, and there is no before/after comparison",
+     "valid": true
+    },
+    {
+     "issue": "The two app units' share of the sample is not stated, nor whether it matches their share of the population",
+     "valid": true
+    }
+   ],
+   "refers_to_author_description": false,
+   "endorses": false
+  }
+ }
+}

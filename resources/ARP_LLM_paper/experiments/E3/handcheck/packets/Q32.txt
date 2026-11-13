@@ -1,0 +1,78 @@
+ITEM: E3-22
+
+KEY:
+1. [arithmetic] at: "Average settlement time fell by 4.4 days, a 38% improvement." -- A fall from 14.2 to 9.8 days is 4.4 / 14.2 = 31%, not 38%.
+2. [inconsistency] at: "Raise the fast-track threshold from £1,000 to £3,000 from January 2027." -- Sections 1 and 2 state the current fast-track threshold is £1,500; the recommendation says it is £1,000.
+3. [missing_consideration] at: "Extending it to claims up to £3,000 is the natural next step" -- Fast-tracked claims bypass fraud screening, and the document's own SIU data show claims of £1,500-£3,000 are 22% of volume but 41% of confirmed fraud. The recommendation counts only handling savings and never addresses the fraud exposure of paying these claims without review (the fall in fraud referrals may itself reflect less screening).
+
+REVIEW:
+# Review: Automated Triage Post-Implementation Review
+
+The review is clearly structured, and the operating results look positive. However, it has two factual errors in its headline figures, and it leaves out the fraud evidence, which is the most important issue for the recommendation. As written, it does not yet support raising the threshold.
+
+## Critical issues
+
+**1. The fraud data is presented but never discussed, and it weakens Recommendation 6.1.**
+- Section 2 says fast-tracked claims **skip fraud screening**. Table 1 shows fraud referrals falling from **6.1 to 3.9 per 1,000** claims, a 36% drop. The text never mentions this.
+- The most likely explanation is that fewer suspect claims are being seen, not that there is less fraud. At about 4,350 claims a month, that is roughly 115 fewer referrals a year.
+- Section 5 then shows that the £1,500–£3,000 band carries **41% of confirmed fraud on 22% of volume**. That makes it the highest-risk band, mostly false or inflated contents claims.
+- Recommendation 6.1 would remove manual fraud sampling from exactly that band. The document never connects Section 5 to Section 6.
+- Neither savings figure includes any estimate of fraud leakage. Both the £492k and the £409k should be stated net of expected fraud losses.
+
+**2. The threshold is inconsistent.** Sections 1 and 2 say **£1,500**, but Recommendation 6.1 says "from **£1,000** to £3,000." One of these is wrong.
+
+**3. The 38% settlement improvement is miscalculated.** 4.4 ÷ 14.2 is **31%**, not 38%. The 38% figure appears to be the fast-track share, carried over by mistake. Your summary repeats this error, so please correct it there too.
+
+## Significant methodological issues
+
+**4. The periods are not like-for-like.** October–February is winter, with storm, flood, freeze and burst-pipe claims that are more complex and slower. April–August is summer.
+- Some of the gains in settlement time and satisfaction may simply be seasonal.
+- The obvious check is a year-on-year comparison of April–August 2025 against April–August 2026.
+- Excluding March is sensible, but it doesn't fix the seasonal problem.
+
+**5. Handled claims did not get faster.** If fast-tracked claims settle in about 2 days, the remaining 62% of claims average about (9.8 − 0.38×2) ÷ 0.62 ≈ **14.6 days**. That is no better than the 14.2-day baseline. The whole improvement comes from the fast-track mix. This is worth saying openly, and worth checking whether handled claims have slowed.
+
+**6. The rule testing proves less than the review claims.** A 36% routing rate in testing matching 38% live shows the rules *route* as expected. It does not show they *decide correctly*. There is no post-payment audit of fast-tracked claims for overpayment, ineligible cover or fraud. Testing was also calibrated for claims under £1,500. It says nothing about how the "same rules" will perform on £1,500–£3,000 contents claims.
+
+**7. The 6.1 savings estimate needs its working shown.**
+- The first 38% of claims saved 1,700 hours. Pro rata, the next 17 percentage points would save about 760 hours, not 1,100.
+- Higher-value claims may well take more handler time each, but the assumption should be stated.
+- The estimate also leaves out any added system cost, the pass rate at higher values, and fraud losses (see point 1).
+
+**8. The savings may not all be cash.** £31/hour is a fully loaded cost. That saving is only realised if headcount or agency spend actually falls. The text says the freed hours partly absorbed higher volume, which is capacity, not cash. Separate the two, and give the agency spend actually reduced.
+
+## Smaller points
+
+- **Satisfaction:** "Largest movement in a single year" compares two five-month windows, so rephrase it. Break satisfaction down by route (fast-tracked, handled, failed checks) and give response rates. Otherwise "customers have clearly noticed" is an inference, not a finding.
+- **Complaints:** "Few" needs a number.
+- **"Declined" vs "routed":** Section 2 says claims failing the checks go to a handler, but Section 3 describes them as "declined by the automated checks." Clarify which happens. If customers *perceive* a decline when they are actually routed, that is the real problem 6.2 needs to fix.
+- **Average fast-tracked claim of £740:** This would be more useful alongside the average of all claims under £1,500.
+- **Recommendation 6.3:** Quarterly rule reviews should include fraud outcomes and payment-accuracy sampling, not just the rules themselves.
+
+## Suggested changes before circulating
+
+1. Fix the threshold inconsistency and the 31% figure.
+2. Add a fraud section that explains the drop in referrals and estimates leakage. Restate both savings figures net of it.
+3. Add a year-on-year seasonal comparison.
+4. Either reframe 6.1 as a controlled step, or add safeguards to it. Options include:
+   - a pilot at £2,000;
+   - excluding contents claims above £1,500;
+   - keeping SIU random sampling of fast-tracked claims.
+   
+   Set fraud-rate stop criteria in each case.
+5. Add a post-payment audit of a sample of fast-tracked claims.
+
+On the framing: the evidence supports "the triage works well for low-value claims." It does not yet support "extending to £3,000 is a measured extension of a proven process." The SIU data suggests the opposite, because the new band is not like the old one in the way that matters most. Addressing that directly will make the case much stronger with a risk or audit committee.
+
+OTHER PROBLEMS LISTED:
+  O1. Before/after periods are not like-for-like (winter vs summer seasonality); a year-on-year comparison is needed
+  O2. Implied settlement time for handled claims (~14.6 days) is no better than baseline; the whole improvement comes from the fast-track mix
+  O3. Rule testing shows routing matches expectations, not decision correctness; there is no post-payment audit and testing does not cover £1,500-£3,000 claims
+  O4. 6.1 savings estimate (1,100 hours) is not pro rata with the existing savings; assumptions, added costs and pass rate are not stated
+  O5. Savings may be capacity rather than cash; agency spend actually reduced is not quantified
+  O6. 'Largest movement in a single year' claim compares five-month windows; satisfaction is not broken down by route and response rates are missing
+  O7. 'Few' complaints is not quantified
+  O8. Inconsistency between claims failing checks being 'routed' to a handler versus 'declined'
+  O9. The £740 average fast-tracked claim lacks a comparison to the average of all sub-£1,500 claims
+  O10. Quarterly rule reviews (6.3) should include fraud outcomes and payment-accuracy sampling
+  O11. Claims the summary repeats the 38% settlement error and quotes phrases ('customers have clearly noticed', 'measured extension of a proven process') that do not appear in the document

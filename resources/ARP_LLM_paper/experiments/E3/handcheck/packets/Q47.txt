@@ -1,0 +1,101 @@
+ITEM: E3-06
+
+KEY:
+1. [misread_evidence] at: "Employee referrals produced the highest offer acceptance rate of any channel" -- Table 1 gives acceptance rates of 39/46 = 84.8% for careers fairs, 34/51 = 66.7% for job boards and 22/28 = 78.6% for referrals. Careers fairs, not referrals, had the highest acceptance rate.
+2. [arithmetic] at: "Across all channels we spent £100,900 for 95 hires, an average of £1,240 per hire" -- £100,900 / 95 = £1,062 per hire, not £1,240. Correctly computed, the company is already below the £1,150 benchmark, undermining the stated priority.
+3. [missing_consideration] at: "Job boards deliver hires at £600 each, less than half the cost of careers fairs, so shifting volume towards them will allow us to reach the 2026 target" -- The recommendation compares channels only on sourcing cost per hire, ignoring the first-year attrition in Table 1 (job boards 11/34 = 32% left within 12 months vs 3/39 = 8% for fairs) and the document's own estimate of about £18,000 per first-year leaver. On the document's figures, job-board hires are far more expensive once attrition is counted, and retained headcount toward the target would fall.
+
+REVIEW:
+# Review: Graduate Hiring Process, 2025 Intake
+
+## Summary
+
+Table 1 adds up correctly, and the funnel percentages in Section 3 match it. The analysis built on those tables has problems, though. Two of the three headline findings are arithmetically wrong. The main recommendation also leaves out the data that would reverse it: the 12-month attrition figures in Table 1, and the £18,000 cost per leaver given in Section 5. The claim of "no risk to quality" cannot stand.
+
+## Critical issues
+
+### 1. The average cost per hire is about £1,062, not £1,240, so the benchmark rationale disappears
+
+£100,900 ÷ 95 = **£1,062**. That is *below* the £1,150 sector benchmark, not above it.
+
+Section 4's "priority for 2026" and the Conclusion's "main weakness is cost efficiency" both rest on this figure. The external reason to act does not exist. The author's note says "the totals tie out across both tables," but Table 2 has no total row, and the derived average was never checked.
+
+### 2. Referrals do not have the best acceptance rate; careers fairs do
+
+| Source | Offers | Accepted | Acceptance rate |
+|---|---|---|---|
+| Careers fairs | 46 | 39 | **84.8%** |
+| Referrals | 28 | 22 | 78.6% |
+| Job boards | 51 | 34 | 66.7% |
+
+The claim in Section 3, and the explanation offered for it ("realistic picture referrers give"), are not supported. The explanation was always speculative, but here it explains a result that did not happen.
+
+The correct reading cuts against the recommendation. The channel being cut has the *highest* acceptance rate. The channel being expanded has the *lowest*.
+
+### 3. Job boards are the most expensive channel once attrition is counted
+
+Table 1 shows that job-board hires leave within a year at roughly four times the rate of the other channels:
+
+- Job boards: 11 of 34 left (**32%**)
+- Careers fairs: 3 of 39 left (7.7%)
+- Referrals: 2 of 22 left (9.1%)
+
+Section 5 puts the cost of each leaver at about £18,000. Applying that figure:
+
+| Source | Sourcing cost | Attrition cost | Total | Per hire | Per retained hire |
+|---|---|---|---|---|---|
+| Careers fairs | £58,500 | £54,000 | £112,500 | £2,885 | £3,125 (36 retained) |
+| Job boards | £20,400 | £198,000 | £218,400 | £6,424 | **£9,496** (23 retained) |
+| Referrals | £22,000 | £36,000 | £58,000 | £2,636 | £2,900 (20 retained) |
+
+On a whole-cost basis, job boards cost about three times as much per retained graduate as fairs or referrals.
+
+Recommendation 6.2 would move about £39,000 from the best-retaining non-referral channel to the worst. If the extra board hires leave at the 2025 rate, the attrition cost would far exceed the sourcing saving. The document has both inputs, in Table 1 and Section 5, but never connects them.
+
+The statement that the changes "touch only sourcing" and carry "no risk to quality" is therefore contradicted by the review's own data. Sourcing mix drives quality, as measured by retention.
+
+## Significant issues
+
+### 4. Assessment-centre load is ignored
+
+Interviews needed per hire:
+
+- Job boards: 204 ÷ 34 = **6.0**
+- Referrals: 84 ÷ 22 = 3.8
+- Careers fairs: 138 ÷ 39 = 3.5
+
+Shifting volume to boards means more phone screens, assessment-centre places and interviewer time per hire. These costs are excluded from Table 2. The extra volume would also work against Recommendation 6.4's goal of shortening the 16-day gap to an invitation.
+
+### 5. The £600 figure is an average of a fixed fee, not a marginal cost
+
+Job-board costs are described as "annual listing fees." Dividing a fixed fee by hires gives an average, not the price of the next hire. Recommendation 6.2 assumes extra spend (more listings plus a new third board) will produce hires at the same rate. Nothing supports this, and diminishing returns are likely. The board pipeline already converts poorly: only 6% of applicants reach interview.
+
+### 6. The path to 100 hires is not modelled
+
+Cutting fairs from nine universities to three removes some unknown share of the 39 fair hires. The document does not say how many hires the three retained universities produced. As a result, it cannot show how many extra board hires are needed, or whether £39,000 of additional board spend can deliver them at the acceptance and retention rates seen in 2025.
+
+## Minor issues
+
+- **"We came close to target"**: no 2025 target is stated. Only the 2026 target of 100 is given.
+- **"Hiring managers value" the selection process**: no hiring-manager evidence is presented.
+- **Survey base**: it is unclear who the 312 respondents were. If most had reached the assessment centre (426 people), the 84% "fair" rating reflects candidates who progressed, not all applicants.
+- **Referral cost**: £1,000 per hire is correct (22 × £1,000). It omits any administration cost, but that is minor.
+
+## Suggested revisions
+
+1. Correct the average cost per hire to about £1,062 and remove or reframe the benchmark argument.
+2. Correct the acceptance-rate finding: fairs are highest.
+3. Add a cost-per-retained-hire analysis using the £18,000 attrition figure, and let it drive the channel recommendation.
+4. Include assessment-centre cost per hire by channel.
+5. Before cutting fairs, show which universities produced which hires and model the 2026 mix explicitly. On current evidence, the case is stronger for protecting fairs and referrals, and for investigating why job-board hires leave, than for expanding boards.
+6. Keep Recommendation 6.4 (self-scheduling), which is well supported and independent of the sourcing question.
+
+OTHER PROBLEMS LISTED:
+  O1. Shifting volume to job boards increases assessment-centre and interviewer load per hire (6.0 interviews per hire vs 3.5-3.8). These costs are excluded from Table 2, and the extra volume conflicts with the 6.4 goal of shortening time to invitation.
+  O2. The £600 job-board cost per hire is an average of a fixed annual fee, not a marginal cost. Additional spend is unlikely to yield hires at the same rate.
+  O3. The path to 100 hires is not modelled. The document does not show how many hires the three retained universities produced or how many extra board hires are needed.
+  O4. 'Came close to target' is asserted, but no 2025 target is stated.
+  O5. The claim that hiring managers value the selection process has no supporting evidence.
+  O6. The survey respondent base is unclear. The 84% 'fair' rating may reflect only candidates who progressed.
+  O7. Referral cost omits administration costs.
+  O8. The document claims the changes 'touch only sourcing' and carry 'no risk to quality'; these phrases do not appear in the document.

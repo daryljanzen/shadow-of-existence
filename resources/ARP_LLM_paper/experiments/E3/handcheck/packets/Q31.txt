@@ -1,0 +1,51 @@
+ITEM: E3-08
+
+KEY:
+1. [inconsistency] at: "We propose expanding the cluster from eight to ten nodes in November 2026" -- The configuration section says the cluster runs on six nodes (6 x 4 TB / 3 replicas = 8 TB usable). The proposal says the cluster currently has eight nodes. The node count contradicts itself, and the capacity arithmetic in section 2 only works for six.
+2. [misread_evidence] at: "Peak CPU on the primary has stayed below 75% throughout the period, so compute is not currently a constraint" -- Table 1 shows peak primary CPU of 78% in Q3 FY26, and a rising trend (58% to 78%). The statement misreads the table, and the conclusion that the constraint is 'storage alone' rests on it.
+3. [unsupported_causal] at: "The pooler therefore delivered a 30% latency improvement on its own." -- The document states that in the same quarter the nightly analytics extracts were moved off the primary to a separate replica. Two simultaneous changes (also visible in the CPU dip) mean the latency drop cannot be attributed to the pooler alone, nor used to justify expecting further gains from connection tuning.
+
+REVIEW:
+# Review: Capacity Plan, Orders Database Cluster FY2027
+
+**Verdict: not ready to send.** The storage case is sound and the recommendation is easy to follow. But the document has a node-count error in the proposal itself, and two of the claims it relies on, about CPU and the pooler's effect on latency, are not supported by its own data. Both claims also appear in your summary, so this affects how the plan is pitched, not just the wording.
+
+## Must fix
+
+**1. The node count contradicts itself.** Section 2 says the cluster has **six** nodes, and the 8 TB usable figure depends on that (6 × 4 TB ÷ 3). Section 6 proposes expanding "from **eight** to ten." The 2.67 TB increase matches adding two nodes to six, so Section 6 should probably read "six to eight." This sentence states the actual request, so a decision-maker who notices the mismatch will doubt the rest of the plan.
+
+**2. CPU has not "stayed below 75% throughout."** Table 1 shows 78% in Q3 FY26, the most recent quarter. The trend also matters:
+
+- CPU follows transaction volume (58% → 78% as TPS rose from 3,900 to 5,600).
+- The only dip, 71% → 66% in Q2 FY26, came in the quarter the analytics extracts moved off the primary. That was a one-off reduction, and CPU passed its old level the next quarter.
+- If CPU scales roughly with Finance's 25% volume growth, the primary would reach about 95% or more during FY27.
+
+Adding nodes adds storage and replica capacity. It does not add CPU to a single primary. So "the constraint is storage alone" (Sections 3 and 8) is the conclusion most likely to be wrong. The plan should either show that the primary has enough CPU headroom for FY27 volumes or treat compute as a second risk with its own mitigation.
+
+**3. The 30% latency improvement cannot be credited to the pooler "on its own."** Section 4 says two changes happened in Q2 FY26: the pooler went in, and the analytics extracts moved off the primary. The data cannot separate their effects, and the CPU drop suggests the analytics move made a real contribution. This matters because the FY27 plan to "absorb much of the latency impact… without additional hardware" through connection tuning rests on this attribution. Also, latency has risen since (33 → 35 ms), so "stayed low" is generous. Either present the 30% as the combined effect of both changes, or provide evidence that isolates the pooler.
+
+## Should fix
+
+**4. The timeline is tight, and the document does not address it.** The document is dated October and proposes a November expansion "ahead of the peak trading period." It also says procurement takes two weeks and overnight rebalancing takes another two weeks. That is at least four weeks, which likely puts rebalancing during or right before peak trading. Today is 13 November, so this may already be slipping. Please state the actual dates and a fallback plan, for example deferring rebalancing until after peak.
+
+**5. The budget does not match the start date.** The proposal starts costs in November 2026 but asks for £51,600 "from the FY27 infrastructure budget." Clarify which fiscal year the November-onward costs fall in. If these are reserved instances, also state the commitment term, since that affects the true cost.
+
+**6. Show the growth sensitivity.** The 0.375 TB/quarter arithmetic checks out (1.5 TB over four quarters), and so does the limit date (0.8 TB of headroom ≈ 2.1 quarters). However, the document says growth will likely accelerate but only reports the flat-rate date. At about 25% faster growth (~0.47 TB/quarter), the limit arrives in about 1.7 quarters, during Q1 FY27 rather than at the start of Q2. One line showing this range would strengthen the urgency argument.
+
+## Checked and correct
+
+- Usable capacity: 8 TB, with a practical limit of 6.4 TB
+- Added capacity from two nodes: 2.67 TB
+- Cost: £2,150 × 2 = £4,300 per month, £51,600 per year
+- Latency drop: 47 → 33 ms ≈ 30%
+- Option A: 0.3 TB is less than one quarter's growth
+- "Headroom into FY28": the new practical limit is about 8.5 TB, giving roughly 6–8 quarters depending on growth rate
+
+## On the summary
+
+Your description says the CPU data "show the primary has stayed below 75% throughout" and that the pooler "delivered a 30% improvement on its own." Neither holds up against Table 1 and Section 4. These are the claims a careful reader is most likely to challenge. Once they are corrected and the node count is fixed, the storage recommendation is well argued and the options analysis is fair.
+
+OTHER PROBLEMS LISTED:
+  O1. The timeline is tight: two weeks of procurement plus two weeks of rebalancing from a November start likely runs into peak trading, and no fallback plan is given.
+  O2. The budget timing is unclear: costs start in November 2026 but are requested from the FY27 budget, and the reserved-instance commitment term is not stated.
+  O3. There is no growth sensitivity analysis: the document says growth will likely accelerate but reports only the flat-rate limit date.

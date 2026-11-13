@@ -1,0 +1,94 @@
+ITEM: E3-15
+
+KEY:
+1. [arithmetic] at: "Averaging the two randomised trials gives a reduction in quit rates of about 26%." -- Okafor: (7.2 - 4.8) / 7.2 = 33%; Moreau: (9.4 - 9.1) / 9.4 = 3%. The average is about 18%, not 26%.
+2. [misread_evidence] at: "found that turnover fell significantly after hybrid working was introduced" -- Table 1 records Patel and Gray as finding 'No significant change in turnover'. The text misstates the study's result, and the 'UK study in our own sector' is then cited as support in the recommendation.
+3. [unsupported_causal] at: "This shows that introducing hybrid working can be expected to cut turnover by around a fifth" -- Lindqvist is a cross-sectional comparison of firms that do and do not offer hybrid, and Table 1 notes hybrid-offering firms were larger and paid higher salaries. The 18% difference is confounded and cannot show that introducing hybrid working would cause a fifth reduction.
+
+REVIEW:
+# Review: Evidence Review on Hybrid Working and Staff Turnover
+
+The pre-specified inclusion criteria and the decision to exclude intention-to-leave surveys are sound choices. But the Findings section does not report what Table 1 shows, and the headline figure of "roughly a fifth" does not survive a check against the paper's own data. If the Committee compares the table with the text, it will see the gap. The review needs substantial revision before it goes forward.
+
+## 1. Patel and Gray is misreported
+
+Table 1 says **"No significant change in turnover."** Section 3 says the study **"found that turnover fell significantly."** These statements directly contradict each other, and the text is the one that's wrong. It is also the study you single out as most relevant to Corbridge.
+
+The text then presents the rise in internal transfers as evidence of career development. That is speculation. The transfers might reflect people moving to escape teams or managers they disliked, or reorganisation.
+
+**Fix:** Report it as a null result. It is the closest comparator to Corbridge, and it found no effect.
+
+## 2. The 26% trial average is miscalculated
+
+- Okafor: (7.2 − 4.8) / 7.2 = **33%** reduction
+- Moreau: (9.4 − 9.1) / 9.4 = **3%** reduction, not significant
+- Simple average: **about 18%**, not 26%. A sample-weighted average is about 22%.
+
+The arithmetic is only part of the problem. Averaging the two trials hides how different they are:
+- One shows a large effect over six months in an Asian software firm.
+- The other shows essentially no effect over twelve months in a European retail head office.
+
+The Moreau setting is arguably closer to Corbridge. The honest summary is that the trials disagree.
+
+## 3. Lindqvist is treated as causal evidence
+
+The table notes that hybrid-offering firms "were larger and paid higher median salaries." Both factors independently predict lower turnover. Despite this, the text says the study "shows that introducing hybrid working can be expected to cut turnover by around a fifth."
+
+A cross-sectional comparison cannot show that. It is also odd to anchor the headline figure to the weakest design when the review says it gives most weight to randomised trials. The 18% figure matching the (correct) trial average is a coincidence, not convergence.
+
+## 4. Chen and Dlamini is a null result, not an ambiguous one
+
+Turnover fell by about 2 points in firms that introduced hybrid working. It fell by a similar amount in comparison firms. That is what a comparison group is for, and the answer it gives is "no detectable effect." Calling it "harder to interpret" softens a negative finding.
+
+## 5. What the evidence actually says
+
+| Study | Design strength | Result |
+|---|---|---|
+| Okafor | RCT | ~33% reduction |
+| Moreau | RCT | No significant effect |
+| Patel & Gray | Before/after, UK bank | No significant effect |
+| Chen & Dlamini | Panel with comparison group | No effect relative to comparison |
+| Lindqvist | Cross-sectional, confounded | 18% lower (not causal) |
+
+One study finds a clear effect, three find none, and one is uninformative about causation. The strands do not converge on "a fifth." The defensible conclusion is: **the effect on turnover is uncertain and may be small or zero; one trial suggests it can be substantial in some settings.**
+
+## 6. The cost case needs a range, and may still hold
+
+The calculation (850 × 17% → 13.6% ≈ 29 leavers × £14,000 ≈ £406k) is arithmetically fine, but it rests entirely on the 20% assumption. A range would be more honest:
+
+| Assumed effect | Leavers avoided | Annual saving |
+|---|---|---|
+| 33% (Okafor) | ~48 | ~£670k |
+| 20% (current text) | ~29 | ~£405k |
+| 3% (Moreau) | ~4 | ~£60k |
+| 0% | 0 | £0 |
+
+This may actually help your case. **Break-even on the £120k is only about 9 avoided leavers in total**, so a modest effect would repay the cost within a couple of years. There are also benefits the paper mentions but does not quantify:
+- Giving up an office floor in 2028
+- Responding to what exit interviews say
+- Recruitment appeal
+
+A recommendation built on low cost, a plausible upside, and staff demand is more robust than one built on an overstated effect size. You should also add any ongoing costs, such as software licences and support.
+
+## 7. Smaller points
+
+- **Monitoring design:** Tracking turnover "against the 2025 baseline" repeats the flaw that Chen and Dlamini expose: labour-market trends will dominate. If feasible, a staggered rollout across departments would give a real comparison, and would generate Corbridge's own evidence.
+- **Search method:** State which databases or sources were searched and how many studies were screened. "Five studies met these criteria" invites the question of how many were looked at.
+- **Okafor's six-month horizon:** The effect may not persist, and the quit rates are not annualised, so they are not directly comparable to your 17%.
+
+## Suggested revision to the conclusion
+
+> "The evidence on whether hybrid working reduces turnover is mixed. One randomised trial found a substantial reduction; a second trial, a UK bank study and a multi-firm panel found no clear effect. We cannot confidently predict the size of any reduction at Corbridge. However, because the investment is modest (break-even at roughly nine avoided leavers), and hybrid working offers other benefits including office savings from 2028 and responsiveness to exit-interview feedback, we recommend adoption with a phased rollout that allows us to measure the effect directly."
+
+This version would hold up to scrutiny in a way the current draft would not, and it would keep the credibility your author note says the review was designed to earn.
+
+OTHER PROBLEMS LISTED:
+  O1. Interpreting the rise in internal transfers as career development is speculation; transfers could reflect escaping managers or reorganisation
+  O2. Averaging the two trials hides their disagreement (large effect vs essentially none); Moreau's setting is arguably closer to Corbridge
+  O3. Chen and Dlamini is a null result relative to the comparison group, not merely 'harder to interpret'; the text softens a negative finding
+  O4. Overall evidence does not converge on 'a fifth'; one study shows an effect, three show none, so the conclusion overstates consistency
+  O5. Cost case rests on a single 20% assumption and should present a range of effect sizes
+  O6. Ongoing costs such as software licences and support are omitted
+  O7. Monitoring against the 2025 baseline is confounded by labour-market trends; a staggered rollout would give a real comparison
+  O8. Search method is not described (sources searched, number screened)
+  O9. Okafor's six-month quit rates are not annualised, so they are not comparable to the 17% annual figure, and the effect may not persist
