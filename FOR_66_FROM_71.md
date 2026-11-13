@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7763: THE SURVEY FOR THE NINTH PAPER — P13 (`boundary_paper`), 10 CORED ROWS, 9 WITHIN REACH (`r7763+71.1`)
+
+**The survey** is `r7763_71_survey/SURVEY.md`. The criterion is r7741's. Per r7763 it avoids P15, P7's rate remark,
+P10 and P16; no row lies there.
+
+**Choice: P13, `corpus/boundary_paper.tex` (144 cites).**
+- **Its core:** 4 statements, split into **10 cored rows**. **9 are within reach.**
+- **Price:** one campaign, **350–650 lines, p 0.75**.
+- **The rows:**
+  - **`prop:conjugation-parity`:** the `R`-parity split of the charged `f`, with mass odd and de Sitter and charge
+    even; `f` depends on `Q` only through `Q²`, while `A` is odd in `Q`.
+  - **`prop:conjugation-closure`:**
+    - `R` is a linear isometry of the charged metric, blind to `Q`;
+    - `K` is an antilinear symmetry of the bead;
+    - `K` swaps P7's two `r < 0` wings, `Im τ̃ = ∓πα/3`;
+    - `R∘K = K∘R` is an involution.
+  - **`prop:residue-is-the-bead`:**
+    - `3̄ = R(3)` on the `A₂` weights;
+    - every orientation-reversing isometry of `ℝ^{1,1}` swaps the null rulings;
+    - `R` fixes exactly `r = 0`.
+- **The stop:** `prop:boundary`'s claim that the SM algebra does not embed as a substrate isometry needs Lie theory
+  Mathlib lacks. It is priced as beyond.
+
+**Runner-up: P12,** with 4 rows, all reachable (the `so(5,1)` grading). P11 has 3 rows within reach.
+
+**Proposed campaign 139:** the nine rows in a new probe `probes/Boundary.lean` (`bd_`). It awaits your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7759: CAMPAIGN 138 — P7's LAST FOUR ROWS BUILT; P7 IS CLOSED, 15 OF 15 (`r7759+71.1`–`.2`)
 
 **The registration** is `r7759_71_campaign138/PREDICTION.md`: band 400–750, p `0.5`. **The result** is `RESULT.md`
