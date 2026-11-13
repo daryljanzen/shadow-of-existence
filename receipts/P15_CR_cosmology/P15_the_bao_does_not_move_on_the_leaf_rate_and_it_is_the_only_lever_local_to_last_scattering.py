@@ -59,6 +59,7 @@ COMPUTES: scope.
 import contextlib
 import io
 import os
+import re
 import runpy
 import sys
 
@@ -70,6 +71,8 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 LP = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                   'r7580_60_whether_the_observers_readout_identification_forces_the_stacking_rate_distance',
                   'lightpath.py')
+TEX_P7 = os.path.join(ROOT, 'corpus', 'CR_framework.tex')      # eq:two-rate lives here
+TEX_P15 = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')     # sec:scope prints D_C
 
 BAO = [0.295, 0.510, 0.706, 0.930, 1.317, 2.330]   # the tracer redshifts, declared at `r7751`
 FAILS = []
@@ -110,21 +113,32 @@ check("⛭ `r7753` ** ① THE RATE LAWS AND THE BACKGROUND ARE 60's, READ BY PAT
       f"H0 {H0}  Om {OM}  Om_r {OMR:.4e}  z* {Z_REC}")
 
 # ------------------------------------------------------------------ 2 the rule the two laws are of
+# ⛔ THE EXPONENT IS READ OUT OF `P7`'s OWN EQUATION AND THEN USED, rather than typed here.  A receipt
+#    that hard-codes `(1+z)**4` beside a label saying `P7`'s stays green when `P7` moves, which is the
+#    unread-figure class; my first draft of this gate was in it.  Anchored on the equation's `\label`
+#    and on the term's markup, not on any prose.
+_EQ = re.search(r'\\begin\{equation\}\\label\{eq:two-rate\}(.*?)\\end\{equation\}',
+                open(TEX_P7, encoding='utf-8').read(), re.S)
+_POW = re.search(r'\\Omega_r\(1\+z\)\^\{(\d+)\}', _EQ.group(1) if _EQ else '')
+POW = int(_POW.group(1)) if _POW else -1
+
 zg = np.linspace(0.0, Z_REC, 2000)
 lhs = np.array([H_leaf(z) ** 2 - H_stack(z) ** 2 for z in zg])
-rhs = H0 ** 2 * OMR * (1.0 + zg) ** 4
+rhs = H0 ** 2 * OMR * (1.0 + zg) ** POW
 worst_rule = float(np.max(np.abs(lhs / rhs - 1.0)))
-check("⛭ `r7753` ** ② THE TWO LAWS DIFFER BY EXACTLY THE RADIATION TERM, AT EVERY EPOCH ** ⇒ *`P7`'s "
-      "`eq:two-rate` `H_leaf^2 = H_stack^2 + H_0^2 Omega_r (1+z)^4`, CHECKED on the two laws over the "
+check("⛭ `r7753` ** ② THE TWO LAWS DIFFER BY EXACTLY THE RADIATION TERM, AT EVERY EPOCH, AND ITS "
+      "EXPONENT IS READ OUT OF `P7` RATHER THAN TYPED HERE ** ⇒ *`eq:two-rate`'s `H_leaf^2 = H_stack^2 "
+      "+ H_0^2 Omega_r (1+z)^n` with `n` PARSED from the equation's own body and then USED, CHECKED on "
+      "the two laws over the "
       "whole range rather than assumed, because every figure below is an integral of one against the "
       "other and this is what makes them two readings of ONE rule.* ⛔ *The threshold is `1e-11` and "
       "not round-off: at `z = 0` the radiation term is `8.8e-5` of `H^2`, so forming the difference of "
       "the two squares there costs five orders of magnitude of the mantissa and double precision's own "
       "floor on this ratio is about `1e-16 / Omega_r ~ 1e-12`. The measured worst deviation sits at "
       "twice that floor and at `z = 0`, which is the cancellation and not a disagreement of the laws.*",
-      worst_rule < 1e-11,
-      f"worst relative deviation over 2000 nodes to z* = {worst_rule:.3e}, required < 1e-11 "
-      f"(the low-z cancellation floor is ~1e-12)")
+      POW == 4 and worst_rule < 1e-11,
+      f"P7's own exponent parses as {POW}; worst relative deviation over 2000 nodes to z* = "
+      f"{worst_rule:.3e}, required < 1e-11 (the low-z cancellation floor is ~1e-12)")
 
 
 def DM(z, H):
@@ -132,12 +146,18 @@ def DM(z, H):
 
 
 d_stack_rec, d_leaf_rec = DM(Z_REC, H_stack), DM(Z_REC, H_leaf)
-check("⛭ `r7753` ** ③ AND BOTH DISTANCES TO LAST SCATTERING REPRODUCE THE PUBLISHED PAIR: `14011.456` "
-      "AND `13941.629` Mpc ** ⇒ *the stacking one is `sec:scope`'s own derived figure (`r7612`) and "
-      "the leaf one is `r7580`'s, so the import is checked against two revisions' published values "
-      "before anything is priced on it*",
-      abs(d_stack_rec - 14011.456) < 5e-4 and abs(d_leaf_rec - 13941.629) < 5e-4,
-      f"stacking {d_stack_rec:.3f} Mpc, leaf {d_leaf_rec:.3f} Mpc")
+# the stacking distance is a figure `P15` PRINTS, so it is read out of the paper and not copied here
+_DC = re.findall(r'\$D_C=([0-9]+\.[0-9]+)\$\\,Mpc', open(TEX_P15, encoding='utf-8').read())
+check("⛭⛔ `r7753` ** ③ AND THE STACKING DISTANCE REPRODUCES THE FIGURE `P15` ITSELF PRINTS, PARSED OUT "
+      "OF `sec:scope` AND NOT COPIED INTO THIS FILE ** ⇒ *the paper's own `D_C` (`r7612`'s derivation) "
+      "is read from `corpus/CR_cosmology.tex` and compared, so if that figure moves this receipt "
+      "reddens instead of agreeing with a number the paper no longer carries.* ⌗ *The leaf distance is "
+      "`r7580`'s COMPUTED value and is in no paper's prose; it is checked at `13941.629` Mpc as a "
+      "re-derivation of that computation, which is what the import has to reproduce*",
+      len(_DC) >= 1 and abs(d_stack_rec - float(_DC[0])) < 5e-4
+      and abs(d_leaf_rec - 13941.629) < 5e-4,
+      f"P15 prints D_C = {_DC[0] if _DC else 'ABSENT'}; stacking {d_stack_rec:.3f} Mpc, "
+      f"leaf {d_leaf_rec:.3f} Mpc")
 
 # ------------------------------------------------------------------ 3 R1: the epoch split
 DEL = {z: DM(z, H_leaf) / DM(z, H_stack) - 1.0 for z in BAO}
