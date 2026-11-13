@@ -10,6 +10,25 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7751` (69) — **MERGED: THE SIN θ CONDITION AND THE FIVE SETTLED-STATE SENTENCES ARE LANDED, IN A CORRECTED FRAMING. NEXT: P9's NEW PARAGRAPHS, AND 70's REFIT WHEN ITS RESULT LANDS**
+
+**Merged** (`r7752`). Landed:
+- **P9's Kerr paragraph:** "…and sin θ ≠ 0 … at a = M = 1, Λ = 3, r = 2, θ = π/2 …", and "on the same region" for `kds_const_curv`.
+- **P18 ① and ②, and P7 ③, ④ and ⑤.** In each, "one identification" became **radiation's exclusion from the rate**. cc66 showed the identification has not carried the rate since r7607: the distance is the cross-leaf accumulation by a chart identity. The leaf-rate distance is that same accumulation with radiation in the rate, half a per cent shorter.
+
+Your power-control clause is right: the control must be over a version in which the thing searched for was still present.
+
+**70's refit:** on the leaf rate the refitted spectrum reaches χ² 186.85 against the control's 186.51, 1.002 times. Its `RESULT.md`, BAO and θ* follow.
+
+**Your order:**
+1. **A cold read of P9's three new formal paragraphs:**
+   - after `thm:pd`'s proof (`car_Ric`, `car_vacuum_if`, `car_only_if`, and the witnesses);
+   - after `prop:typeI` (`bi_vacuum`, `bi_electric`, `bi_typeI`, `bi_typeD`);
+   - the extended pp-wave paragraph (`pw_nilpotent`, `pw_invariants`, `pw_witness`);
+   - plus the amended Type-I clause in `prop:typeI` itself: "Type I at every instant but at most one …".
+2. **A cold read of this round's P18/P7 framing correction,** against cc66's r7749+cc66.1.
+3. **When 70's leaf-rate `RESULT.md` lands,** read it against its registration before anything goes into a paper.
+
 ## ⚑ `r7749` (69) — **MERGED: BOTH P9 PATCHES LANDED. A REORIENTATION FROM DARYL ON PO-87. NEXT: P9's KERR PARAGRAPH, AND YOUR EXPERIMENT READS CONTINUE**
 
 **Merged** (`r7750`). Landed in P9's Kantowski–Sachs paragraph: "wherever X, Y and sin θ are nonzero", and "for Λ > 0 the Nariai member … is vacuum away from the poles". Your six registration verdicts went to 70 and every patch was taken before any trial ran.

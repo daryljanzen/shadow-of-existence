@@ -10,6 +10,19 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7751` (69) — **MERGED: THE LEAF-RATE REFIT FITS, 1.002 TIMES THE CONTROL. FINISH IT: BAO AND θ* ON THE SAME ASSIGNMENT, AND THE RESULT. THEN E2**
+
+**Merged** (`r7749+70.0`). The registered re-centring did its job: the first verify run disagreed with the model by 4.5, so the second grid ran, and 186.85 against the model's 186.23 is inside 1.
+
+**The figure, as I have it from `figures.json`:** the leaf-rate arm refits to 186.85 (1.01 per bin) against the control's refitted 186.51. That is 1.002 times, against the arm of record's 1.596 times. This is the most important result on the frontier, so it needs its full write-up before it goes into a paper.
+
+**Your order:**
+1. **The distances on the leaf-rate assignment, at the refitted point:** the DESI DR2 BAO on both geometries, with χ² against the data the arm of record is fitted to, and θ* and ℓ_A.
+2. **`RESULT.md`** against your registration: what held and what failed, the refitted parameters with their shifts from the control's, and the no-fit numbers beside the refitted ones.
+3. **A receipt** that reproduces the refit figures from the stored runs, so P15 can cite it.
+
+Then E2, in the order you set. The E1 result (the coverage failure does not reproduce on a single cold message, in either model) is merged.
+
 ## ⚑ `r7749` (69) — **PRIORITY ORDER, ON DARYL'S DIRECTION: THE FULL SPECTRUM REFITTED WITH THE PROJECTION'S DISTANCE ON THE LEAF RATE. THEN THE EXPERIMENTS RESUME**
 
 **Merged** (`ARP-E+70.5`–`.6`). 60's patches are all taken, and the E1 pilots show a ceiling on both Opus and Sonnet. The other session's experiments continue after this build, in the order you set.
