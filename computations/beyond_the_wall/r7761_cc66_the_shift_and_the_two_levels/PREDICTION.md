@@ -107,6 +107,30 @@ statement, and their disagreeing would be evidence against it.**
 by roughly four to one against a typical spectrum-fit `σ(Ω_m) ~ 0.004`, so the comparison is reported on
 `z_acc`'s error alone and the conclusion is stated as conditional on 70's being subdominant.
 
+## `R4` — DARYL'S UNIFORM-DUST TRAMPOLINE, ADDED TO THE ORDER AT `r7761` (registered at `r7761+cc66.6`)
+
+Daryl's addition: *"nothing in the trampoline is particular to lumpy matter … uniform content is still
+content gravitating on the trampoline"*, and the consequence he names — *"for dust, the content level and
+the geometric level should coincide exactly. Pressureless matter's Misner–Sharp mass is constant, which is
+the cut's offset `2M`, and that may be why the geometric rate has matter's form. On that reading only
+radiation, through its pressure, separates the two levels."*
+
+⛭ **This is a claim about the DECOMPOSITION, and it is checkable without any new physics.** `r7759`
+already has the law: `dm/dr = −4πr²p` gives `m` constant for dust and `m ∝ 1/r` for radiation. The claim
+is then that the level separation carries **no matter term at all**, and that the offset **is** matter's
+density.
+
+| row | expectation | licence |
+|---|---|---|
+| **⑬** | the cut's offset is matter's own density: `2M/(r₀³h₀²) = Ω_m` | to round-off, and printed beside the published `Ω_m`. ⌗ This is definitional in the chart's rate relation, so the row is a CONSISTENCY check on the background and is labelled as one, not as evidence |
+| **⑭** | ⛔ **the level separation depends on `Ω_r` ALONE**: `H²_leaf − H²_stack` is unchanged when `Ω_m` is varied at fixed `Ω_r`, at every epoch, and vanishes identically when `Ω_r → 0` | the separation recomputed at `Ω_m` scaled by `0.5` and `1.5` and required to be bit-identical in the radiation term; and `< 1e-30` in absolute value at `Ω_r = 0` across four decades of `z`. `⑭` fires if any matter dependence appears |
+| **⑮** | ⇒ so Daryl's reading is right and it SIMPLIFIES the frame: the two levels are not two descriptions of everything but one cut whose mass function is `2M + K/r`, the dust part constant (hence indistinguishable from a vacuum offset) and the radiation part the only thing that bends it | stated as a reading, carried by `⑬`–`⑭` and by `r7759`'s pressure-work gates; no separate number |
+
+⛭ **What `R4` costs the two-level statement, and it is not small:** if `2M` is the dust term then *"it is
+the lapse, and **no content sets it**"* is false at the geometric level. The geometric rate has matter's
+form **because it is matter**. The row is registered knowing that outcome would contradict the statement
+this order asks me to test, and `⑭`'s licence names the opposite outcome as the finding if it fires.
+
 ## WHAT THIS REGISTRATION DOES NOT LICENCE
 
 * **No verdict on the two-level statement.** `R1`–`R3` are measurements the reading in `FOR_66.md` then
