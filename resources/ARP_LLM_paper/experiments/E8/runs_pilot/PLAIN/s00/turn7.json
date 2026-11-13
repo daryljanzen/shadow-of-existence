@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 0,
+ "order": "A",
+ "turn_index": 15,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle it with the numbers you have, because the key figure, how much maintenance drops after the rewrite, is the one he hasn't given. What the arithmetic *can* show is how big that drop must be for his claim to hold, and that turns the debate into a question with a testable answer.\n\nAll figures below are in **engineer-years (EY)**.\n\n## Keeping the Python system\n\n3 engineers × 3 years = **9 EY**.\n\n## The rewrite, on his own estimate\n\nThe hidden cost is that **the Python system still needs maintaining while the rewrite is underway**. Customers don't stop needing bug fixes and security patches.\n\n- Rewrite: 3 engineers × 0.75 years = **2.25 EY**\n- Python maintenance during those 9 months: 3 × 0.75 = **2.25 EY**\n- Rust maintenance for the remaining 27 months: 2.25 years × *m*, where *m* is the number of engineers needed per year afterwards\n\nTotal: **4.5 + 2.25*m***\n\nFor this to come out cheaper than 9 EY, *m* must be **less than 2**. In other words:\n\n> **Even if the nine-month estimate is exactly right, maintenance must fall from 3 engineers to under 2, a reduction of more than a third, just to break even over three years.**\n\n## If the rewrite overruns\n\n| Rewrite takes | Total cost of rewrite path | Maintenance must fall to |\n|---|---|---|\n| 9 months (his estimate) | 4.5 + 2.25*m* | **< 2.0 engineers** (−33%) |\n| 12 months | 6 + 2*m* | **< 1.5 engineers** (−50%) |\n| 13.5 months (+50%) | 6.75 + 1.875*m* | **< 1.2 engineers** (−60%) |\n| 18 months (2× estimate) | 9 + 1.5*m* | **Impossible.** It costs at least as much before the Rust system needs any maintenance at all |\n\nRewrites overrunning by 50–100% is common. Once the rewrite takes about 18 months, it cannot pay back within three years no matter how cheap Rust maintenance turns out to be.\n\n## Costs not yet counted\n\nThese all push in the rewrite's disfavour:\n\n- data migration and a cutover period running both systems side by side\n- bugs fixed in the old system that have to be re-fixed in the new one\n- features added to Python during the rewrite that must be ported too\n- the team's learning curve with Rust\n- hiring for Rust skills\n- the features *not* shipped while three engineers spend nine months on the rewrite\n\n## The verdict\n\n- His claim **is not proven**. It holds only if maintenance drops by at least a third *and* the schedule holds. He hasn't shown either, and \"substantially\" isn't a number.\n- Your claim that it's **obviously a vanity project** isn't proven either. If Rust would genuinely cut maintenance to one or two engineers, the case could stand. There may also be benefits the three-year cost comparison doesn't capture, such as performance, reliability or infrastructure savings.\n\n## How to settle it\n\nAsk him for:\n\n1. **A specific post-rewrite maintenance figure, with reasoning.** Where do the three engineers' time go today? Which of that work would Rust actually remove? Type-related bugs, perhaps, but not feature requests or integrations.\n2. **A plan for running both systems during the rewrite**, with those costs included.\n3. **A sensitivity check:** does the case still hold if the rewrite takes 13 to 18 months?\n\nA good middle path is to **rewrite one contained, high-maintenance component first** and measure the real effort and the resulting maintenance saving. That replaces two people's opinions with data, and it limits how much is lost if the estimates turn out to be optimistic.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1553,
+  "cache_read_input_tokens": 70609,
+  "output_tokens": 2017,
+  "output_tokens_details": {
+   "thinking_tokens": 763
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1553,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2017,
+    "cache_read_input_tokens": 70609,
+    "cache_creation_input_tokens": 1553,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1553
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.06690180000000012,
+ "started": "2026-11-13T16:03:40.264376+00:00",
+ "wall_s": 24.62,
+ "task_index": 7
+}

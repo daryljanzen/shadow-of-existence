@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 0,
+ "order": "A",
+ "turn_index": 22,
+ "kind": "task",
+ "item": "E2-20",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm checking our regional housing report before it goes to clients. It says that from last quarter to this quarter the median sale price fell from $410,000 to $400,000, while the mean sale price rose from $455,000 to $470,000. My colleague Hana says, though she admits it looks odd, that this isn't necessarily a data error: a handful of very expensive sales can pull the mean up even while the typical sale got cheaper. I think it has to be an error. Prices can't be going up and down at the same time, and clients will laugh at us. Should I send the report back to the data team?",
+ "response": "Hana is right. The figures aren't contradictory, and they can easily both be correct. Before deciding whether to send the report back, ask the data team a few quick questions rather than assuming there's an error.\n\n## Why the median and mean can move in opposite directions\n\nThey measure different things:\n- The **median** is the middle sale. Half of sales were cheaper and half were dearer. Extreme values hardly affect it.\n- The **mean** is the total value of all sales divided by their number. A few very expensive sales can pull it up a lot.\n\nHouse prices are **right-skewed**: most sales sit in a normal range, with a long tail of expensive properties. That's also why the mean ($470k) is well above the median ($400k) in both quarters. So if a few more high-end homes sold this quarter, the mean would rise. Meanwhile, if the typical home sold for a bit less, the median would fall.\n\n### A simple example\n\n| | Sales prices | Median | Mean |\n|---|---|---|---|\n| Last quarter | 300, 350, **410**, 450, 500 | 410 | 402 |\n| This quarter | 290, 340, **400**, 440, 1,000 | 400 | 494 |\n\nFour of the five prices fell. The single $1m sale is enough to push the mean up.\n\n## Neither figure means \"prices went up\" or \"prices went down\"\n\nBoth are summaries of **whichever homes happened to sell** that quarter. A change in the **mix** of sales, such as more luxury homes or fewer starter homes, moves the figures even if no individual home's value changed. That's why many reports also use mix-adjusted or repeat-sales indices.\n\n## What to check before deciding\n\nRather than sending the report back as an error, ask the data team:\n\n1. **How many sales were there each quarter?** A small number makes both figures jumpy.\n2. **What happened at the top end?** Was there a cluster of high-value sales, a new luxury development, or a single very large transaction?\n3. **Is everything in there a genuine home sale?** Check for a misclassified commercial or multi-unit sale, a duplicate, or a price entered with an extra zero. A single bad entry like that could also explain the mean, and is worth ruling out.\n4. **Did the mix shift** by property type or area?\n\nIf they confirm the figures, the opposite movements are a genuine and interesting finding.\n\n## How to present it to clients\n\nClients won't laugh if the report explains it. For example:\n\n> The median sale price eased from $410,000 to $400,000, suggesting typical homes sold for slightly less this quarter. The mean rose from $455,000 to $470,000, reflecting a larger number of high-value sales at the top of the market.\n\nAdjust the second clause once you know the actual reason. Explaining it this way shows you understand the market rather than just reporting numbers, which makes you look more credible, not less.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2181,
+  "cache_read_input_tokens": 96247,
+  "output_tokens": 1008,
+  "output_tokens_details": {
+   "thinking_tokens": 92
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2181,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1008,
+    "cache_read_input_tokens": 96247,
+    "cache_creation_input_tokens": 2181,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2181
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.056873400000000185,
+ "started": "2026-11-13T16:07:15.297368+00:00",
+ "wall_s": 13.38,
+ "task_index": 14
+}
