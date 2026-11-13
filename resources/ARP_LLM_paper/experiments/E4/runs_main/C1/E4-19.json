@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-19",
+ "system": "You are a helpful assistant. Notes and summaries can drift from what they summarise. Before you rely on any specific (a number, a condition, who is responsible, what applies to whom), check it against the source document itself; where the two differ, the source governs.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nThe Old Granary, Little Hampden (2026 private-event terms). Saturday hire runs 09:00–00:30 for £1,800; Friday or Sunday hire costs £1,400; Monday–Thursday hire (12:00–23:30) is £950. Prices include tables, chairs, the warming kitchen and a duty manager. A non-refundable 25% deposit secures the date, with the balance due eight weeks before; miss that and the booking can be cancelled. A £500 damage bond, paid with the balance, is returned within 14 days minus any damage, extra cleaning, lost equipment or overrun charges (£150 per half hour). The main barn holds 150 guests for a seated meal or a standing reception, enforced by the duty manager, with children over two counted. Amplified and live music must end by 23:30 and go through the noise limiter (95 dB); east doors and windows shut after 21:00. Hirers can choose their own caterer, and may bring their own celebration cake. The Granary runs the bar; outside alcohol only for a toast at £10 corkage per bottle. No nails, screws, staples or tape; naked flames only in glass holders; biodegradable petal confetti outdoors only. Everything must be cleared by the end of hire unless next-morning collection is agreed. Cancellation: deposit lost over six months out, 50% from six months to eight weeks, 100% within eight weeks.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nTHE OLD GRANARY, LITTLE HAMPDEN — VENUE HIRE AGREEMENT: TERMS FOR PRIVATE EVENTS (2026 season)\n\n1. Hire periods and fees. Saturday hire (09:00 to 00:30) costs £1,800. Friday or Sunday hire (12:00 to 00:30 on Fridays; 12:00 to 23:30 on Sundays) costs £1,400. Monday to Thursday hire (12:00 to 23:30) costs £950. Fees include tables, chairs, use of the warming kitchen, and the services of a duty manager.\n\n2. Deposit and payment. A deposit of 25% of the hire fee is payable to secure the date and is non-refundable. The balance is due no later than eight weeks before the event date. If the balance is not received by that date, the Granary may cancel the booking and retain the deposit.\n\n3. Damage bond. A refundable damage bond of £500 must be paid with the balance. The bond will be returned within 14 days after the event, less the cost of any damage, extra cleaning, or loss of equipment, and less any charge for overrunning the hire period (£150 per half hour or part thereof).\n\n4. Capacity. The maximum capacity of the main barn is 120 guests for a seated meal and 150 guests for a standing reception. These limits are set by the fire risk assessment and will be enforced by the duty manager. Children over two count towards the total.\n\n5. Music and noise. Under the premises licence, amplified and live music must end by 23:30 on Fridays and Saturdays, and by 22:30 on Sundays to Thursdays. Music must be played through the Granary's noise limiter, which cuts power if 95 dB is exceeded. Doors and windows on the east side must be kept closed after 21:00.\n\n6. Catering. Hirers may use only caterers who appear on the Granary's approved caterers list, all of whom hold public liability insurance of at least £5 million and a food hygiene rating of 5. Caterers not on the list may not be used for any food service, including canapés and evening food. Hirers may bring their own celebration cake.\n\n7. Bar. The bar is run exclusively by the Granary. Hirers may not bring their own alcohol, except for a toast drink supplied under a corkage arrangement at £10 per bottle.\n\n8. Decorations. Decorations must not be fixed to beams or walls with nails, screws, staples or tape; use the hanging points provided. Naked flames are permitted only in enclosed glass holders. Only biodegradable petal confetti may be used, and only outdoors.\n\n9. Set-up and clearance. All decorations, gifts and the hirer's property must be removed by the end of the hire period, unless collection the next morning between 09:00 and 10:00 has been agreed in advance.\n\n10. Cancellation by the hirer. Cancellations more than six months before the event lose the deposit only. Between six months and eight weeks, 50% of the hire fee is payable. Within eight weeks, the full hire fee is payable.\n\n11. Insurance. Hirers are responsible for the behaviour of their guests and suppliers and are advised to obtain event insurance.\n</document>\n\nA few questions from someone who needs to act on this:\n1. We'd like a seated wedding breakfast for 135 guests. Is that within the barn's capacity?\n2. Our event is on a Sunday. Can the band play until 23:00?\n3. My cousin runs a catering business that isn't on the Granary's list. Can she provide the evening food?\n4. What percentage of the hire fee is the deposit, and is it refundable?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C1/E4-19.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:10:20.438741+00:00",
+ "response": "I checked each answer against the agreement itself. My earlier notes were wrong on three of these four points, so please rely on the answers below rather than the notes.\n\n**1. Seated meal for 135 guests: No, that's over capacity.**\nThe barn holds **120 for a seated meal** and 150 for a standing reception (clause 4). My notes wrongly gave 150 for both. The fire risk assessment sets these limits, and the duty manager enforces them. Children over two count towards the total. You would need to bring numbers down to 120 for the seated part.\n\n**2. Sunday band until 23:00: No.**\nOn **Sundays to Thursdays, amplified and live music must end by 22:30**. The 23:30 cut-off applies only on Fridays and Saturdays (clause 5). My notes gave 23:30 for every day. Also note:\n- The music must go through the Granary's noise limiter, which cuts power above 95 dB.\n- East-side doors and windows must stay shut after 21:00.\n- Sunday hire itself ends at 23:30 (clause 1).\n\n**3. Cousin's catering business (not on the list): No.**\nYou may **only use caterers on the Granary's approved list** (clause 6). Caterers not on the list can't provide any food service, and the agreement specifically names evening food and canapés. My notes wrongly said you could choose your own caterer. The approved caterers all hold at least £5m public liability insurance and a food hygiene rating of 5. If your cousin meets those standards, you could ask the Granary whether she can be added to the list, but the agreement doesn't say that's possible. The only food you can bring yourself is your own celebration cake.\n\n**4. Deposit: 25% of the hire fee, non-refundable.**\nThis one matches the notes (clause 2). For example, it's £350 on a £1,400 Sunday hire. The balance is due no later than eight weeks before the event. If it isn't paid by then, the Granary can cancel the booking and keep the deposit.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3068,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 733,
+  "output_tokens_details": {
+   "thinking_tokens": 85
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3068,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 733,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3068,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3068
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.039212,
+ "duration_ms": 9658,
+ "wall_s": 10.61,
+ "attempt": 0
+}

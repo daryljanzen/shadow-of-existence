@@ -1,0 +1,51 @@
+{
+ "exp": "E4",
+ "cond": "C1",
+ "item": "E4-31",
+ "system": "You are a helpful assistant. Notes and summaries can drift from what they summarise. Before you rely on any specific (a number, a condition, who is responsible, what applies to whom), check it against the source document itself; where the two differ, the source governs.",
+ "message": "Earlier you read the document below and made these notes on it:\n\n<notes>\nNorthsound Ferries' summer 2026 conditions (1 April–31 October) cover Kirkhope–Stennar (1 h 50), Ardmore–Isle of Fenn (40 min) and the overnight Kirkhope–Lerrick (7 h 30). Vehicle passengers must check in at least 30 minutes before departure (60 minutes for the overnight Lerrick sailing), foot passengers 20 minutes; late arrivals are not carried. Flexi fares can be changed free up to 2 hours before departure and refunded less £10 if cancelled 24 hours ahead. Saver fares are non-refundable but can be moved to another sailing for £25 plus any fare difference. Vehicles over 1.85 m, including roof-box cars, pay the high-vehicle rate; gas cylinders must be declared, alarms switched off, and no one may stay on the car deck. Dogs and cats travel free and can join their owners in the pet-friendly lounge or stay in the vehicle; pet cabins are available overnight, and assistance dogs can go anywhere. Foot passengers get two 20 kg bags plus hand luggage free, and bikes go free. Overnight cabins open at 21:30, must be vacated 30 minutes before arrival, and are non-refundable within 7 days. If a sailing is cancelled for weather or technical reasons, you can take the next sailing or get a full refund. Resident Card holders get 40% off.\n</notes>\n\nHere is the document itself, for reference:\n\n<document>\nNORTHSOUND FERRIES — PASSENGER AND VEHICLE CONDITIONS: KEY TERMS (Summer timetable, 1 April – 31 October 2026)\n\n1. Routes. This summary applies to all Northsound services: Kirkhope–Stennar (1 hour 50 minutes), Ardmore–Isle of Fenn (40 minutes) and Kirkhope–Lerrick overnight (7 hours 30 minutes).\n\n2. Check-in. Passengers travelling with a vehicle must check in at the terminal no later than 45 minutes before the scheduled departure time. Foot passengers must check in no later than 20 minutes before departure. Check-in closes at these times without exception, and passengers who arrive late will not be carried; their tickets will be treated as unused under the fare rules below. On the overnight Lerrick service, check-in for vehicles closes 60 minutes before departure.\n\n3. Fare types. • Flexi fares can be amended free of charge up to 2 hours before departure, and are refundable in full, less a £10 administration fee, if cancelled at least 24 hours before departure. • Saver fares are non-refundable. They may be amended to another sailing on payment of a £25 amendment fee plus any fare difference, but only if the amendment is made at least 24 hours before the original departure. No amendments to Saver fares are possible within 24 hours of departure, and an unused Saver ticket has no value.\n\n4. Vehicles. Vehicle fares are based on length and height. Vehicles over 1.85 m high, including vans and cars with roof boxes, pay the high-vehicle rate. Drivers must declare any gas cylinders and must switch off vehicle alarms before leaving the vehicle deck. Passengers may not remain on the vehicle deck during the crossing.\n\n5. Pets. Dogs and cats may travel free of charge. On the Kirkhope–Stennar and Ardmore–Isle of Fenn routes, pets must remain in the owner's vehicle or, for foot passengers, in the designated outside deck area on a lead or in a carrier. Only on the overnight Kirkhope–Lerrick route is a pet-friendly lounge provided, and pet-friendly cabins may be booked on that route. Assistance dogs may accompany their owners in all passenger areas on all routes.\n\n6. Luggage. Foot passengers may take up to two items of luggage of up to 20 kg each, plus one item of hand luggage, free of charge. Bicycles travel free on all routes but must be loaded by the passenger at the direction of the crew.\n\n7. Cabins. Cabins on the overnight service are available from 21:30 and must be vacated 30 minutes before arrival. Cabin bookings are non-refundable within 7 days of departure.\n\n8. Disruption. Where a sailing is cancelled for weather or technical reasons, passengers may travel on the next available sailing at no extra cost or receive a full refund, whatever the fare type. Northsound is not responsible for onward connections, accommodation or other consequential costs, except where required by law.\n\n9. Concessions. Island residents holding a Northsound Resident Card receive 40% off standard passenger and car fares on routes serving their island.\n\n10. Conduct. The Master may refuse to carry any passenger who is intoxicated or who behaves in a way likely to endanger the ship or other passengers.\n</document>\n\nA few questions from someone who needs to act on this:\n1. We're driving to the 14:00 Kirkhope–Stennar sailing and expect to reach the terminal at 13:20. Will we be allowed on?\n2. Can foot passengers take bicycles, and is there a charge?\n3. I have a Saver ticket for 08:00 tomorrow and it's now 18:00 the evening before. Can I move to a later sailing by paying £25?\n4. On the 40-minute Ardmore–Isle of Fenn crossing, can my dog sit with me in a pet-friendly lounge?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E4/runs_main/C1/E4-31.json",
+ "role": "subject",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T17:11:17.563811+00:00",
+ "response": "**Short answers:** 1. No. 2. Yes, free. 3. No. 4. No.\n\nI checked these against the full conditions rather than my earlier summary. The summary was wrong on three of these points, which I've flagged below.\n\n**1. Arriving at 13:20 for the 14:00 Kirkhope–Stennar sailing: no, you would miss check-in.**\nVehicle check-in closes **45 minutes** before departure (section 2), so it closes at 13:15. My notes wrongly said 30 minutes. Late arrivals are not carried \"without exception,\" and the ticket is treated as unused. Aim to arrive by 13:15 at the latest, and ideally earlier. (The 60-minute rule applies only to vehicles on the overnight Lerrick sailing.)\n\n**2. Bicycles for foot passengers: yes, and they're free.**\nBicycles travel free on all routes (section 6). The passenger must load the bike themselves, as directed by the crew.\n\n**3. Moving your Saver ticket at 18:00 for the 08:00 sailing: no.**\nA Saver fare can only be changed (£25 fee plus any fare difference) if you do it **at least 24 hours before the original departure** (section 3). You're about 14 hours away, so no change is possible. An unused Saver ticket has no value, so if you don't sail at 08:00 you lose the fare. My notes left out this 24-hour cutoff. The only exception is if Northsound cancels the sailing for weather or technical reasons. Then you can take the next available sailing or get a full refund, whatever your fare type (section 8).\n\n**4. Your dog on the Ardmore–Isle of Fenn crossing: no, there's no pet-friendly lounge on that route.**\nThe pet-friendly lounge and pet cabins are only on the overnight Kirkhope–Lerrick route (section 5). My notes wrongly suggested the lounge was available more widely. On the Fenn route, your dog travels free but must either:\n- stay in your vehicle, or\n- if you're on foot, stay with you in the designated outside deck area, on a lead or in a carrier.\n\nThe only exception is an assistance dog, which can go with you in all passenger areas.\n\n**One caveat:** this document covers the **summer timetable, 1 April – 31 October 2026**. Today is 13 November, so a winter set of conditions may now apply, with possibly different times and rules. Check Northsound's current terms before you travel.",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3207,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 1066,
+  "output_tokens_details": {
+   "thinking_tokens": 258
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3207,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1066,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3207,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3207
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.046984000000000005,
+ "duration_ms": 12751,
+ "wall_s": 13.73,
+ "attempt": 0
+}
