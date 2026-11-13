@@ -1,0 +1,176 @@
+====================================================================================================
+r7772 (60) -- S11's imperfection gate, and the selector that stopped matching
+  HEAD: 36b2bf597d4c81e0d7809445eebad7171c9a6b2a   origin/main: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  S11 read by path: receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py
+  it exits 1 on this tree, and its own run is captured rather than re-implemented   [SystemExit: 1]
+====================================================================================================
+  the PRE-REPAIR form is read from origin/main and the post-repair one from the working tree, so the before and after are both sources and not recollections  (31464 vs 34665 bytes)
+
+====================================================================================================
+ARM 1 -- the source set is empty, and the result's emptiness is downstream of that
+  [PASS]
+      the OLD selector, located in the form origin/main carries: True   (and gone from the repaired form: True)
+      order commits it matches with an EVEN id, computed here over the last 400: 0
+      so the sites it could have returned: necessarily 0 -- the result is empty BECAUSE the source set is: True
+      ⇒ ** Ⓔ① ASSERTS `not _hit` OVER A SET BUILT FROM NOTHING. **  Its own sentence says the
+        imperfection is 'measured, not waved at', and on this tree the measurement has no
+        subjects at all.
+      ⌗ the reachable negative was a populated source set with a genuinely empty result, which
+        would have meant the gate measures what it says and this revision withdraws itself.
+
+====================================================================================================
+ARM 2 -- why the selector matches nothing: a convention that drifted
+  [PASS]
+      the selector origin/main's form carries: True   -- it requires a subject to BEGIN 'orders r####'
+      subjects in the last 400 matching it:              0
+      subjects matching the stamped convention in use:   263
+        r#### (SEAT) or r####+SEAT.k -- examples:
+          36b2bf597|r7772 (60) -- REGISTRATION ONLY: eleven arms for S11's imperfection gate, whose source set is e
+          e6ad513fd|r7770 (60) -- the validation: the five structural reds alone after the gate that caught this re
+          319300d99|r7770 (60) -- state the search beside the state definition, which check_absence_claims fired on
+      ⇒ the gating seat stopped writing 'orders r####' subjects; its commits now lead with their
+        own stamp and mention orders at the end.  The selector did not break -- the corpus moved
+        out from under it, which is the shape this receipt is itself about.
+      ⌗ the reachable negative was both patterns matching, which would have put the emptiness
+        somewhere else.  One matches nothing and the other matches hundreds.
+
+====================================================================================================
+ARM 3 -- the gate would pass however bad the attribution became
+  [PASS]
+      commits in the last 400 whose revision id is EVEN and whose SEAT STAMP is not this line's: 19
+        ea0c5a620  id 7758 (EVEN)  seat 70    | r7758+70.3 -- merge main (r7757: photonfamily key for P15's rewritten re
+        c3b061570  id 7758 (EVEN)  seat 70    | r7758+70.3 -- E6 main run in progress: records so far and the usage ledg
+        5014cf5e6  id 7758 (EVEN)  seat 70    | r7758+70.3 -- E6 main run in progress: records so far and the usage ledg
+        0668286f1  id 7758 (EVEN)  seat 70    | r7758+70.3 -- reply: E2 and E4 results
+        b24e8e646  id 7758 (EVEN)  seat 70    | r7758+70.3 -- E4 RESULT: premise clause fires (C0 propagation 0/120; fla
+      the SEED: a claim-site last written by ea0c5a620 -- a real commit of another seat carrying this line's even id
+      the OLD selector's even-id set contains it: False
+      ⇒ ** SO THE GATE PASSES WITH THE VERY THING IT CLAIMS TO MEASURE PRESENT IN THE TREE. **
+        Those commits are exactly the mis-attribution the rule is heuristic about: the other
+        seat stamps with the ORDER's id, which is this line's, so parity calls them this line's.
+      ⌗ the reachable negative was the old selector catching the seeded case anyway -- the seed
+        is a REAL commit in the corpus's live convention, not one built to be missed.
+
+====================================================================================================
+ARM 4 -- the repaired selector
+  [PASS]
+      matches: 19 commit(s) in the last 400
+      the seats they belong to, read from their own stamps: ['70']
+      commits of THIS line wrongly pulled in: 0
+      ⇒ the set is populated, and it is populated by exactly the class the rule mis-attributes:
+        another seat's commits carrying this line's order id.
+      ⌗ the reachable negative was over-matching into this line's own commits, which would have
+        inverted the gate's meaning.  None is caught, and the report is of WHO and not only of
+        how many.
+
+====================================================================================================
+ARM 5 -- the in-run seed, so a zero is a MEASURED zero
+  [PASS]
+      claim-sites S11 enumerates on this tree: 0;  writers resolved: 0
+      the seed: one synthetic site whose last writer is ea0c5a620, which IS in the repaired set
+      the finder returns the seeded site: True
+      ⛔ AND A THIRD BLOCKER, FOUND WHILE BUILDING THIS SEED: S11 compares a blame sha's FIRST EIGHT characters
+        against a set of `git log --format=%h` shas, and this repository abbreviates to 9 -- so that
+        membership test can NEVER match, however populated either side is.  The comparison here is on
+        min(len) of the set's own keys, measured rather than assumed.
+      ⇒ ** so whatever the live figure is, it is a MEASURED number and not a silence ** --
+        r7421 ③'s rule, applied to this gate for the first time.
+      ⌗ the reachable negative was the seed not firing, which would have meant the repaired
+        finder is broken too and the live figure means nothing.
+
+====================================================================================================
+ARM 6 -- the repaired gate's verdict on the live tree, whichever way it comes out
+  [PASS]
+      claim-sites last written by a commit in the repaired set: 0
+      ⇒ the live figure is ZERO -- and with arm 5's seed firing in the same run it is a MEASURED zero rather than the silence Ⓔ① has been reporting.  The gate's claim becomes true.
+      ⌗ and the old gate's sentence said SIX such commits; the repaired count is 19, so the literal in the gate text was stale as well as unmeasured.
+
+====================================================================================================
+ARM 7 -- seeded both ways
+  [PASS]
+      even-stamped seed (ea0c5a620, seat 70): fires = True
+      odd-stamped control (07d109dec): fires = False
+      ⇒ the finder is a parity-and-stamp test and not a presence test over any order commit.
+      ⌗ the reachable negative was firing on both.
+
+====================================================================================================
+ARM 8 -- does the repair move any other gate of S11?
+  [PASS]
+      lines of S11 that read the selector or its set, enumerated FROM THE FILE: 8
+        _even_orders = {sha: (rid, seat) for sha, rid, seat, _sub in _stamped(_rows)
+        _PREF = min([len(k) for k in _even_orders] or [9])          # measured, never assumed
+        _hit = _mis(SITES, WRITERS, _even_orders)
+        _seed_sha = next(iter(_even_orders), None)
+        _even_orders))
+        _ctrl_silent = not (_odd_sha and _mis([(_SEEDK[0], _SEEDK[1], '', '', '')], _ctrlw, _even_orders))
+        f"this line's: {len(_even_orders)}")
+        f"{sorted({v[1] for v in _even_orders.values()})};  sha prefix compared on: {_PREF}")
+      gates the file declares: 24;  verdicts the repaired run printed: 24
+      ⛔ FAILING GATES ON origin/main's OWN FORM, run in a detached worktree of it: ['Ⓑ①', 'Ⓑ③', 'Ⓓ①', 'Ⓓ②', 'Ⓓ③', 'Ⓕ①']
+      failing gates after this repair:                                               ['Ⓑ①', 'Ⓑ③', 'Ⓓ①', 'Ⓓ②', 'Ⓓ③', 'Ⓕ①']
+      ⇒ the two fail sets are IDENTICAL: True   -- the repair moved no other gate's verdict
+      and Ⓔ① is in NEITHER set: True   -- it PASSED before, vacuously, and passes now meaningfully
+      ⇒ ** THAT IS WHY THIS DEFECT SURVIVED: a gate that passes either way is invisible to
+        every verdict list, so no suite run and no CI job could ever have surfaced it. **
+      ⇒ only Ⓔ① reads the selector, so the repair is local to it -- established from the file
+        rather than from memory, and confirmed by the two verdict sets above.
+      ⛔⛔ AND THE SIX OTHER REDS ARE NOT THIS REPAIR'S AND NOT THIS BRANCH'S: they fail
+        IDENTICALLY on origin/main's own form.  ** This receipt is RED ON THE BASE BRANCH, it is
+        this line's own, and it sits OUTSIDE this line's suite scope -- which is why nothing in
+        the routine was looking at it. **  Diagnosed in the RESULT and registered as its own
+        revision rather than repaired here, because each of those gates asserts a figure scored
+        on one past push and recomputed live, which is a different defect from this one.
+      ⌗ the reachable negative is r7736's own history: a patch applied as offered reddened a
+        neighbouring gate by emptying its set.  If this repair reds one, the repair is wrong.
+
+====================================================================================================
+ARM 9 -- the gate's text after the repair
+  [PASS]
+      the drafted text:
+        Ⓔ① the parity rule this receipt attributes seats with is IMPERFECT, and the imperfection is measured on a POPULATED set rather than asserted over an empty one: the commits whose revision id is EVEN and whose own seat stamp is not this line's are counted and PRINTED above -- they are another seat's work carrying this line's order id, which is exactly what parity cannot see -- and an in-run seed proves in this run that a claim-site last written by one of them WOULD be found, so the figure above is a measured number and not a silence
+      every clause checked against what the repaired condition computes:
+        ✔ counts a populated set
+        ✔ prints the figure rather than carrying a literal
+        ✔ names the stamp as the discriminator
+        ✔ asserts the seed, which this run demonstrates
+      ⌗ the stale literal 'six commits' is GONE: the count is printed by the run, so it cannot
+        drift again -- which is the defect this gate had on top of the empty set.
+
+====================================================================================================
+ARM 10 -- what this revision does NOT do
+  [PASS]
+      * it does not touch another seat's receipt
+        -- S11 is this line's own, landed by 69 from r7736; nothing else is edited
+      * it does not change what S11 is about
+        -- the proposal, the partitions and every other gate stand; only Ⓔ①'s set and text move
+      * it does not re-run the retrospective sweep Ⓔ② names as irreplaceable
+        -- that bound is Ⓔ②'s and this revision leaves it exactly as it stands
+      * it does not claim the parity rule is now sound
+        -- the repair makes the imperfection MEASURABLE; the rule stays a heuristic that a stamp would replace, which is what the gate says
+
+====================================================================================================
+ARM 11 -- the count, and the subject clause
+  [PASS]
+      arms declared in PREDICTION.md: 11
+      arms answered here (this one included): 11
+      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **  ⌗ Its own RECEIPT is the
+      subject, which is a different thing: a gate of this line's is being corrected by this
+      line, with the correction registered before it was built.
+
+====================================================================================================
+  VERDICT
+====================================================================================================
+    [PASS]  ARM 1   the source set is empty, and the result's emptiness is downstream of that
+    [PASS]  ARM 2   why the selector matches nothing: a convention that drifted
+    [PASS]  ARM 3   the gate would pass however bad the attribution became
+    [PASS]  ARM 4   the repaired selector
+    [PASS]  ARM 5   the in-run seed, so a zero is a MEASURED zero
+    [PASS]  ARM 6   the repaired gate's verdict on the live tree, whichever way it comes out
+    [PASS]  ARM 7   seeded both ways
+    [PASS]  ARM 8   does the repair move any other gate of S11?
+    [PASS]  ARM 9   the gate's text after the repair
+    [PASS]  ARM 10  what this revision does NOT do
+    [PASS]  ARM 11  the count, and the subject clause
+
+  11 of 11 arms meet their criterion.
+====================================================================================================

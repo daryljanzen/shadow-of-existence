@@ -25240,3 +25240,37 @@ read
 ⌗ **What I did NOT do:** I did not edit `r7612`'s probe — a landed predicate's tree is part of it — and I did not touch your receipt. Its constants are lifted out of `r7612` **by syntax tree** rather than retyped, so there is no second copy to drift.
 
 ⌗ **What this revision got wrong, three times, all in the seeds and all caught by the arms they were built for:** a fixed `400`-character window is not a sentence (a claim word outside it survived); a span bounded by bare `.!?` is not the instrument's sentence either (that rule cuts at `0.23%` and inside `\S\ref{}`) — **the splitter is part of the predicate**; and the re-split seed first cut *inside* the key, destroying its own subject. *A seed that destroys its own subject measures nothing.* **And one registered prediction was wrong rather than reinterpreted:** arm ③ predicted the re-split key would come back WITHDRAWN on the first build, and what it actually produced is the self-qualifying/withdrawable enumeration above.
+
+---
+
+## `r7772` — THE OWED `S11` FIX, AND IT TURNED UP SOMETHING WORSE: **THAT RECEIPT IS RED ON `main`, IT IS MINE, AND IT IS OUTSIDE MY SUITE SCOPE**
+
+**Receipt:** `computations/beyond_the_wall/r7772_60_s11s_imperfection_gate_passes_over_an_empty_set_because_its_order_commit_selector_stopped_matching/`. **Eleven arms registered and pushed before the repair existed; eleven meet their criterion.** `S11` is this line's own (you landed it from my `r7736`), so the repair is made and not routed.
+
+### ⛔ ① THE GATE COULD NOT HAVE FIRED, FOR **THREE** INDEPENDENT REASONS
+
+1. **The selector matched nothing.** It required a subject to *begin* `orders r####`; you stopped writing those, so it matched **0 of the last 400** while the stamped convention matches hundreds. **The result was empty because its source set was.**
+2. ⛔ **The membership test could never match either** — it compared a blame sha's first **eight** characters against `--format=%h` shas, and this repository abbreviates to **nine**. *Found while building the seed, not by reading.*
+3. **No seed**, so a zero was a silence.
+
+And seeded with a real claim-site last written by one of the offending commits, **the old selector still returns nothing** — so the gate passed with the very thing it claims to measure present in the tree.
+
+### ✔ ② WHAT THE IMPERFECTION ACTUALLY IS, AND IT IS POPULATED
+
+**Parity reads the ORDER's id and every seat stamps with that id**, so an even id names my *order* and not the commit's *author*. The discriminator is the **seat stamp**: **19 commits in the last 400 carry an EVEN id and a stamp that is not mine — all seat `70`, working under my order ids.** None of my own commits is caught. The old text said **six**; the measured count is **19**, and the count is now printed by the run so it cannot go stale again. **Claim-sites they last wrote: zero — now a MEASURED zero**, with an in-run seed firing and an odd-stamped control silent in the same run.
+
+⛭ **And the repair flips no red, which is exactly why this survived:** the failing-gate sets before and after are identical and `Ⓔ①` is in neither — it passed vacuously and now passes meaningfully. **A gate that passes either way is invisible to every verdict list.** ⌗ *My own probe predicted `Ⓔ①` would move out of the fail set and it was never in it; recorded as a wrong prediction.*
+
+### ⛔⛔ ③ AND THE FIND I DID NOT REGISTER FOR, WHICH IS THE ONE THAT MATTERS TO YOU
+
+**`S11` IS RED ON `origin/main` — SIX GATES — AND IT IS MINE.** Run in a detached worktree of `origin/main`, its own form fails `Ⓑ①`, `Ⓑ③`, `Ⓓ①`, `Ⓓ②`, `Ⓓ③` and `Ⓕ①`, **identically** to my working tree. So the redness is neither this repair's nor this branch's.
+
+**Why nothing was looking at it, and this is the part worth your attention:**
+- the receipt is **not in this line's suite scope** on any recent range, so the suite never ran it;
+- and `Ⓔ①` — the one gate I was registered to fix — **passes**, so no verdict list ever named the receipt.
+
+**What the six assert:** each carries a figure *scored on one past push* and recomputed *live* — a pre-registered coverage band, your edits to three named receipts, the exposed-bucket movement. As the tree moves they rot. **That is the family `r7736` already fixed once, for `Ⓐ⑤`, by anchoring the gate to its own revision's commits; the same anchoring is owed for `Ⓑ`, `Ⓓ` and `Ⓕ`.** I have registered it as its own revision rather than bolting it onto this one — but **if you would rather it came before anything else in my queue, say so and it goes first.**
+
+⌗ **What I did not do:** touch another seat's receipt; change what `S11` is about (only `Ⓔ①`'s set and text move); re-run the retrospective sweep `Ⓔ②` names as irreplaceable; or claim the parity rule is now sound — it stays a heuristic that a stamp would replace, which is what the gate says.
+
+⌗ **What this revision got wrong, all three caught by its own arms:** the probe captured `S11` under `runpy` without changing directory, the receipt raised and the namespace came back empty, so the seed could not fire — *a captured run that raised is not a reading*; the bareness test for the old selector looked for the words `orders r`, which my own new explanatory comment contains; and the arm-⑧ prediction above.

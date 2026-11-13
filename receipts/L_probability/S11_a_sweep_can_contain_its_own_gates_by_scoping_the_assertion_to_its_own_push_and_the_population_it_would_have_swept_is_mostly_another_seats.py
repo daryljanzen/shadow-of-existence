@@ -480,18 +480,73 @@ gate('Ⓓ③ ⇒ *** SO THE SHARPER ANSWER, WHICH IS THE OUTCOME THIS REVISION P
 # ============================================================ E. the limits, measured
 head('E.  THE LIMITS, MEASURED RATHER THAN DECLARED')
 
-_orders = [row for row in git('log', '--format=%h|%s', '-400').split('\n')
-           if re.match(r'^[0-9a-f]+\|\s*orders r\d{4}', row)]
-_even_orders = {row.split('|', 1)[0] for row in _orders
-                if parity(row.split('|', 1)[1].replace('orders ', '')) == 'EVEN'}
-_hit = [s for s in SITES if WRITERS[(s[0], s[1])][0][:8] in _even_orders]
-print(f"      order commits carrying an EVEN id in the last 400: {len(_even_orders)};  "
-      f"claim-sites they last wrote: {len(_hit)}")
-gate('Ⓔ① the parity rule this receipt attributes seats with is IMPERFECT and the imperfection is '
-     'measured, not waved at: *re `r7229`*: six commits of this session carry EVEN ids and are the '
-     'gating seat`s.  **None of them last wrote a claim-site**, so the attribution above is '
-     'unaffected -- and the rule stays a heuristic that a stamp would replace',
-     not _hit)
+# ⛭⛭ REPAIRED r7772, AND THE OLD FORM COULD NOT HAVE FIRED FOR *THREE* INDEPENDENT REASONS.
+#   The old selector required a subject to BEGIN `orders r####`; the gating seat stopped writing
+#   those (its commits now lead with their own stamp), so it matched 0 of the last 400 and `_hit`
+#   was empty because its SOURCE SET was.  Second, it compared a blame sha's first EIGHT characters
+#   against a set of `--format=%h` shas, and this repository abbreviates to NINE -- a membership
+#   test that can never match however populated either side is.  Third, there was no seed, so a
+#   zero was a silence and not a measurement.  ⇒ ** The discriminator is the SEAT STAMP and not the
+#   parity: parity reads the ORDER's id, and every seat stamps with that same id, so an EVEN id
+#   names this line's ORDER and not the commit's AUTHOR.  That is the imperfection, and it is now
+#   measured on a populated set with an in-run seed proving the finder could fire. **
+_STAMP = re.compile(r'^\s*r(\d{4})\s*(?:\(([^)]+)\)|\+([A-Za-z0-9]+)\.)')
+
+
+def _stamped(rows):
+    out = []
+    for row in rows:
+        sha, sub = (row.split('|', 1) + [''])[:2]
+        m = _STAMP.match(sub)
+        if m:
+            out.append((sha, int(m.group(1)), (m.group(2) or m.group(3) or '').strip(), sub))
+    return out
+
+
+_rows = [r for r in git('log', '--format=%h|%s', '-400').split('\n') if r.strip()]
+_even_orders = {sha: (rid, seat) for sha, rid, seat, _sub in _stamped(_rows)
+                if rid % 2 == 0 and seat != '60'}
+_PREF = min([len(k) for k in _even_orders] or [9])          # measured, never assumed
+
+
+def _mis(sites, writers, even):
+    ev = {k[:_PREF] for k in even}
+    return [s for s in sites if writers.get((s[0], s[1]), ('?',))[0][:_PREF] in ev]
+
+
+_hit = _mis(SITES, WRITERS, _even_orders)
+# the in-run seed: one synthetic site whose last writer IS in the set, proving on the real code path
+# that a zero above is a MEASURED zero (`r7421` ③).
+_SEEDK = ('SEEDED/not-on-disk.py', 1)
+_seed_sha = next(iter(_even_orders), None)
+_seedw = dict(WRITERS)
+if _seed_sha:
+    _seedw[_SEEDK] = (_seed_sha + 'f' * (40 - len(_seed_sha)), 'in-run seed')
+_seed_fires = bool(_seed_sha) and bool(_mis([(_SEEDK[0], _SEEDK[1], '', '', '')], _seedw,
+                                            _even_orders))
+_odd_sha = next((sha for sha, rid, seat, _s in _stamped(_rows) if rid % 2 and seat != '60'), None)
+_ctrlw = dict(WRITERS)
+if _odd_sha:
+    _ctrlw[_SEEDK] = (_odd_sha + 'f' * (40 - len(_odd_sha)), 'in-run control')
+_ctrl_silent = not (_odd_sha and _mis([(_SEEDK[0], _SEEDK[1], '', '', '')], _ctrlw, _even_orders))
+print(f"      commits in the last 400 whose revision id is EVEN and whose own seat stamp is NOT "
+      f"this line's: {len(_even_orders)}")
+print(f"      the seats they belong to, from their own stamps: "
+      f"{sorted({v[1] for v in _even_orders.values()})};  sha prefix compared on: {_PREF}")
+print(f"      claim-sites they last wrote: {len(_hit)}")
+print(f"      ⌗ in-run seed fires: {_seed_fires};  odd-stamped control stays silent: "
+      f"{_ctrl_silent}  => the figure above is a MEASURED number, not a silence")
+gate('Ⓔ① the parity rule this receipt attributes seats with is IMPERFECT, and the imperfection is '
+     'measured on a POPULATED set rather than asserted over an empty one: the commits whose '
+     'revision id is EVEN and whose own seat stamp is not this line`s are counted and PRINTED '
+     'above -- another seat`s work carrying this line`s order id, which is exactly what parity '
+     'cannot see -- and an IN-RUN SEED proves in this run that a claim-site last written by one of '
+     'them WOULD be found, with an odd-stamped control staying silent.  ⛭ *`r7772`: the old form '
+     'carried a stale literal and could not have fired for three independent reasons -- a selector '
+     'matching a subject convention the gating seat had stopped using, an 8-character prefix tested '
+     'against 9-character shas, and no seed.  The count is printed rather than written in, so it '
+     'cannot go stale again.*',
+     _seed_fires and _ctrl_silent)
 
 gate('Ⓔ② and the formulation is SILENT on a push that writes no claim-site, which is not a defect '
      'but is a bound: it can never replace the retrospective sweep, because the set it ranges over '

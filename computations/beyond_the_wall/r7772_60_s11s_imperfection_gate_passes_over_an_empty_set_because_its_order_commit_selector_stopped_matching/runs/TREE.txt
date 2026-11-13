@@ -1,0 +1,26 @@
+r7772 (60) -- THE TREE THE REPAIR WAS MADE AND MEASURED ON
+
+  HEAD at the reading:        36b2bf597d4c81e0d7809445eebad7171c9a6b2a
+  origin/main at the reading: 07d109dec84443e3ea640bcd76f4def1aa615a51
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+
+WHAT WAS READ, AND HOW
+
+  S11, BEFORE the repair     read as `git show origin/main:receipts/L_probability/S11_...py` --
+                             the form the base branch carries, so the "before" is a source and not
+                             a recollection
+  S11, AFTER the repair      the working tree's own copy, run by path with its output captured
+  S11's pre-repair VERDICTS  by running origin/main's own copy in a DETACHED WORKTREE of
+                             origin/main, created and removed inside the probe's own run
+  the last 400 commit        `git log --format=%h|%s -400`, this repository's own abbreviation
+  subjects                   length measured (9) rather than assumed
+
+WHAT WAS WRITTEN
+
+  the repair                 receipts/L_probability/S11_...py, section E only -- THIS LINE'S OWN
+                             receipt, landed by 69 from r7736.  No other seat's file is touched.
+  probe.py, PREDICTION.md, RESULT.md, runs/
+
+WHAT WAS NOT AVAILABLE
+
+  nothing this revision needs.
