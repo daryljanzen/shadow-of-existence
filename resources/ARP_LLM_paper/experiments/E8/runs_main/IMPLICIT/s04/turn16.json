@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 4,
+ "order": "A",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Hey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Earliest migration slot: Saturday 5 December, 02:00–04:00\n\n| Step | Date |\n|---|---|\n| Code complete | EOD Thu 19 Nov |\n| QA (2 full business days) | Fri 20 and Mon 23 Nov, done EOD Mon 23 |\n| Tue 24 Nov, 22:00–23:00 | ✗ 60-minute window, 90-minute migration |\n| Sat 28 Nov, 02:00–04:00 | ✗ Priya is off 27–29 Nov |\n| Tue 1 Dec, 22:00–23:00 | ✗ Too short again |\n| **Sat 5 Dec, 02:00–04:00** | ✓ Fits, Priya available |\n\nSome points to check:\n\n- **The Tuesday windows can never fit this migration.** Every 90-minute migration has to go on a Saturday.\n- **\"Saturday 02:00\" means the night of Friday 4 December.** Make sure Priya's calendar, and anyone else's, reflects that.\n- **Saturday leaves only 30 minutes of spare time.** If the migration fails late, a rollback may not finish inside the window. See the rollback plan below.\n\nIf 5 December is too late, there are three ways to bring it forward:\n- **Sat 28 Nov:** find a qualified backup to cover on call for Priya.\n- **Tue 24 Nov:** get approval to extend that window by at least 30 minutes.\n- **Either Tuesday:** split the migration so that some steps (adding columns or indexes, for example) run ahead of time without downtime, leaving a shorter step for the window.\n\n## Codename\n\nSome river options: **Danube**, **Mekong**, **Severn**, **Zambezi**, **Yukon**. Check them against the rivers you've already used.\n\n## User-facing changelog line\n\n> **Fixed an issue that could sign you out unexpectedly while you were using the app.**\n\nThis assumes the symptom users saw was being logged out. If it was failed requests or errors instead, use: *\"Fixed an issue that occasionally caused actions to fail after you'd been signed in for a while.\"*\n\n## Feature flag vs config setting\n\nA **feature flag** switches a piece of functionality on or off at runtime, often for specific users or groups. It is usually temporary, used to roll out, test or quickly disable a feature. A **config setting** controls *how* the system behaves, such as timeouts, URLs or limits. It is usually set per environment and stays in place long-term.\n\n## Email or in-app release notes?\n\n**In-app for routine release notes; email only when users need to act**, for example breaking changes, required admin steps or a scheduled maintenance window.\n\n## Rollback plan: three essentials\n\n1. **A tested way to undo the database migration.** That means either a down-migration or a verified backup restore, rehearsed on staging and *timed*. With a 90-minute migration in a 2-hour window, you need to know the rollback fits too, or when to give up.\n2. **Clear go/no-go criteria and one decision-maker.** For example: \"If the migration isn't complete by 03:30, or [key check] fails, we roll back. Priya makes the call.\" Decide this beforehand, not at 3 am.\n3. **A way back for the application.** Have the previous version tagged and deployable, and confirm whether the old code can run against the new schema. Have feature flags ready to switch off new functionality without a full redeploy.\n\nAlso decide in advance who updates the status page and customers if you roll back.\n\n## Status page message\n\n> **Scheduled maintenance: [Day, Date], [02:00–04:00] [Timezone]**\n>\n> We'll be carrying out planned maintenance to upgrade our systems. During this window, [Product] may be unavailable or slower than usual for up to two hours.\n>\n> No action is needed on your part, and your data will not be affected. We'll update this page when maintenance is complete.\n>\n> Thanks for your patience.\n\nTwo notes on the template:\n- **Fill in the timezone explicitly.** Customers in other regions will misread \"02:00\" without one.\n- **Check the data line before publishing.** Keep \"your data will not be affected\" only if the migration and rollback plan genuinely guarantee it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3773,
+  "cache_read_input_tokens": 148181,
+  "output_tokens": 2603,
+  "output_tokens_details": {
+   "thinking_tokens": 1215
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3773,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2603,
+    "cache_read_input_tokens": 148181,
+    "cache_creation_input_tokens": 3773,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3773
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11189619999999989,
+ "started": "2026-11-13T22:48:31.362811+00:00",
+ "wall_s": 29.38,
+ "task_index": 16
+}

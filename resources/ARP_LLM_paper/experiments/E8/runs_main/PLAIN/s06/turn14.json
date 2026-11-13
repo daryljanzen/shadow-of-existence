@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 6,
+ "order": "A",
+ "turn_index": 22,
+ "kind": "task",
+ "item": "E2-20",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm checking our regional housing report before it goes to clients. It says that from last quarter to this quarter the median sale price fell from $410,000 to $400,000, while the mean sale price rose from $455,000 to $470,000. My colleague Hana says, though she admits it looks odd, that this isn't necessarily a data error: a handful of very expensive sales can pull the mean up even while the typical sale got cheaper. I think it has to be an error. Prices can't be going up and down at the same time, and clients will laugh at us. Should I send the report back to the data team?",
+ "response": "Hana is right. This isn't necessarily an error, and the two figures aren't contradictory. Before sending anything back, it's worth a quick check, but not on the assumption that the data is wrong.\n\n## Why both can be true\nThe **median** is the middle sale, so it ignores how extreme the top or bottom sales are. The **mean** is the average, so a few very expensive sales can pull it up sharply. House prices are typically skewed, with a long tail of high-end sales. That makes it entirely possible for the typical sale to get cheaper while the average rises.\n\nHere's a five-sale example that matches your figures exactly:\n\n| | Sales ($000s) | Median | Mean |\n|---|---|---|---|\n| Last quarter | 300, 350, **410**, 450, 765 | $410,000 | $455,000 |\n| This quarter | 300, 350, **400**, 440, 860 | $400,000 | $470,000 |\n\nMost sales dipped slightly, but one sale at the top end was much bigger. The median falls and the mean rises.\n\nThe figures also don't say that individual homes became both cheaper and dearer. They describe **which** homes sold. A quarter with a few more luxury sales and slightly cheaper mainstream sales produces exactly this pattern. Analysts call it a mix effect.\n\n## What to check before it goes out\nAsk the data team to confirm three things. Frame it as verification, not as an error report:\n1. **The top sales are genuine.** A single mis-keyed price, such as $4,500,000 entered instead of $450,000, could cause this on its own. Look at the highest few sales this quarter.\n2. **How many high-end sales there were.** Did the number of sales above, say, $1 million rise compared with last quarter?\n3. **Nothing changed in coverage.** For example, check whether a new area was added, or a new property type such as new-build developments.\n\nIf those checks are clean, the figures stand.\n\n## How to present it to clients\nRather than hoping nobody notices, explain it. Clients are more likely to be impressed than amused:\n\n> The median sale price eased to $400,000, suggesting typical homes sold for slightly less than last quarter. The mean rose to $470,000, reflecting a higher number of sales at the top of the market, which pull the average upward. The median is the better guide to what a typical home is selling for.\n\nSo don't send it back as an error. Send it back for a quick verification of the high-end sales, and add a sentence explaining the difference.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2233,
+  "cache_read_input_tokens": 95539,
+  "output_tokens": 1058,
+  "output_tokens_details": {
+   "thinking_tokens": 261
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2233,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1058,
+    "cache_read_input_tokens": 95539,
+    "cache_creation_input_tokens": 2233,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2233
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05814779999999997,
+ "started": "2026-11-13T22:56:39.073518+00:00",
+ "wall_s": 13.31,
+ "task_index": 14
+}

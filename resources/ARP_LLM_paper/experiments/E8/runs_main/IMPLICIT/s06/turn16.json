@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 6,
+ "order": "A",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Hey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Codename\n\nA few river names to choose from:\n- **Danube**\n- **Mekong**\n- **Shannon**\n- **Zambezi**\n- **Tamar**\n\nIf earlier releases went alphabetically or followed a theme, such as one continent, tell me and I'll suggest names that fit.\n\n## Changelog line\n\n> Fixed an issue that could occasionally sign you out unexpectedly or interrupt your session.\n\nI've guessed at the symptom, since a token refresh race usually shows up as unexpected logouts or failed requests. If users actually saw something different, describe that instead.\n\n## Earliest migration slot: Saturday 5 December, 02:00–04:00\n\nWorking through the dates:\n- **Code complete:** end of Thursday 19 November.\n- **QA:** Friday 20 and Monday 23 November, so it finishes at the end of Monday 23.\n- **Tuesday 24 November, 22:00–23:00:** ❌ The window is only 60 minutes, but the migration takes 90.\n- **Saturday 28 November, 02:00–04:00:** ❌ Long enough, but Priya is off from Friday 27 to Sunday 29.\n- **Tuesday 1 December:** ❌ Again only 60 minutes.\n- **Saturday 5 December, 02:00–04:00:** ✅\n\nTwo things this turns up:\n- **The Tuesday window can never fit this migration.** In practice you only have Saturdays. If 5 December is too late, your options are to split the migration so each part fits in an hour, or to ask for a longer Tuesday window.\n- **Saturday leaves only 30 minutes of slack.** If the migration runs over or fails late, there may not be time to roll back inside the window. That affects the rollback plan below.\n\nNote that 02:00 on Saturday 5 December is the night of Friday 4 December, so make sure Priya knows which night she's on call.\n\n## Feature flag vs config setting\n\nA feature flag turns a feature on or off at runtime, often for selected users, so you can release or withdraw it without deploying new code. A config setting controls how the system behaves, such as timeouts, URLs or limits, and usually stays the same for everyone until someone deliberately changes it.\n\n## Release notes: email or in-app?\n\n**Put them in the app as a \"What's new\" panel shown on first login after the release. Also send an email only to admins, or to customers who need to do something, such as re-authenticating or changing an integration.**\n\n## Rollback plan: three essentials\n\n1. **A tested way to undo the database migration.** Either a reverse migration you've already run against a copy of production, or a snapshot taken immediately before the migration starts. Know how long restoring takes, and check that it fits in the time left in the window.\n2. **A rollback deadline with clear criteria.** For example: \"If the migration isn't complete and verified by 03:15, we roll back.\" Also agree in advance which problems after release would trigger a rollback, such as an error rate above X% or login failures. That way nobody has to make the call while tired at 3 am.\n3. **One named person to make the call, and a communication plan.** Name the person who decides on rollback (and their backup), keep the previous version's build ready to redeploy, and confirm the old code still works with the new database structure. Have a status-page update drafted for \"maintenance extended\" or \"rolled back.\"\n\n## Status page announcement (template)\n\n> **Scheduled maintenance: [DATE], [START]–[END] [TIMEZONE]**\n>\n> We'll be carrying out planned maintenance to upgrade our platform. During this window, [the service may be unavailable / you may be signed out / some features may be briefly unavailable].\n>\n> We've scheduled this for a low-traffic time to keep disruption to a minimum, and we'll update this page when the work is complete. Thank you for your patience.\n\nFor your current plan, fill in: **Saturday 5 December, 02:00–04:00 [timezone]**. If your customers are in several time zones, add the time in UTC as well.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4060,
+  "cache_read_input_tokens": 143590,
+  "output_tokens": 2430,
+  "output_tokens_details": {
+   "thinking_tokens": 1126
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4060,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2430,
+    "cache_read_input_tokens": 143590,
+    "cache_creation_input_tokens": 4060,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4060
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10981400000000008,
+ "started": "2026-11-13T23:01:48.137325+00:00",
+ "wall_s": 27.96,
+ "task_index": 16
+}
