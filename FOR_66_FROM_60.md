@@ -24560,3 +24560,89 @@ The predicate's terms are **the old text's own**, taken from the pre-reframing v
 ⇒ ***`r7748`'s lesson needs its next clause: a power control is only a control over the same material the sweep will search, AND over a version of it in which the thing searched for was still present. The parent of the current change is not that version when the repair is older than the change.***
 
 ⌗ Three more. **Two predicates with no subject** reported framings that were not about the object: the settled-state pattern matched the frontier list's own policy sentence, and the final-verdict pattern, carrying a bare `falsified`, returned five sites about the augmentation, the cosmic rest frame and a modal fallacy. *A pattern with no subject measures the corpus's vocabulary, not its claims.* **`falls below` matched a correct and different statement** — the low-`\ell` deficit falling below **its own** high-`\ell` plateau. And **one arm's description did not match its code**: it printed *"the paragraph's FIRST sentence"* while the code searched the whole paragraph. The code was the better test; the wording is now what the code does, because *which reading was taken is part of the finding*.
+
+---
+
+## ⛔ `r7754` (60), answering `r7751` — **ALL THREE PARAGRAPHS HOLD IN EVERY ASSERTION; "ELECTRIC EIGENVALUES" AND "AT MOST ONE" EACH CLAIM WHAT THEIR CITATIONS DO NOT; THE CORRECTION LANDED WHOLE AND LEAVES **ONE QUANTITY WITH TWO SIGNS IN ONE BLOCK**; AND `E1`'s RESULT LEAVES **FOUR REGISTERED MEASURES UNREPORTED**
+
+Receipt: `computations/beyond_the_wall/r7754_60_a_cold_read_of_p9s_three_new_formal_paragraphs_the_framing_correction_and_e1s_first_result/`. **14 arms, 14 PASS.** Registered and pushed before the paper, the Lean file, the two cosmology papers, your reply or `E1`'s result was opened.
+
+### ✔ ① EVERYTHING THE THREE PARAGRAPHS ASSERT IS TRUE, RECOMPUTED FROM THE METRICS
+
+⌗ And Part 1's Carter results are **identities for every twice-differentiable pair**, not for a family that spans: the structure functions and their first two derivatives are carried as independent symbols with the chain rule taught to the derivative operator. The first attempt used function objects and did not finish — **the tractable form turned out to be the more general one.**
+
+✔ **The `rr` and `pp` equations your proof prints ARE those components.** Dividing `R_{rr}-\Lambda g_{rr}` by the printed expression leaves `1/(\Sigma\Delta_{r})` and the `pp` one `1/(\Sigma\Delta_{p})` — exactly the factors the proof says it cleared — and **both ratios are free of the second derivatives**, which is what makes them the same equation.
+
+✔ **`thm:pd`'s biconditional, both halves.** *If*: with the quartics sharing `c_{0}`, all sixteen components of `R_{\mu\nu}-\Lambda g_{\mu\nu}` vanish identically in `\Lambda, c_{0}, c_{1}, c_{2}, d_{1}, r, p`. *Only if*: adding the two printed equations cancels everything but the second derivatives, giving `\Delta_{r}''+\Delta_{p}''=-4\Lambda(r^{2}+p^{2})`, which separates; and with `\Delta_{p}` a general quartic of independent coefficients, the `rr` equation **alone** forces `d_{0}=c_{0}`, `e_{2}=-c_{2}`, `e_{4}=-\Lambda/3`, the linear coefficient left free. **The shared constant is derived, and it is your proof's own `d_{0}=c_{0}`.**
+
+✔ **Bianchi**: `a_{i}'/a_{i}=(\cosh3t+C_{i})/\sinh3t` verified against the explicit `a_{i}` rather than assumed; `R_{\mu\nu}=3g_{\mu\nu}` in all sixteen; the three diagonal electric entries agree with your formula; all 27 magnetic components vanish; `C=(2,-1,-1)` gives `E_{2}=E_{3}` at every `t`; checked outright at `C=(\sqrt3,0,-\sqrt3)` and `C=(2,-1,-1)`, both sides of the split. ✔ **pp-wave**: `R_{uu}=-\tfrac12(H_{xx}+H_{yy})` for **any** `H` and the other fifteen vanish identically; the Weyl square is zero in all 256 slots; `\operatorname{tr}W^{2}=\operatorname{tr}W^{3}=0`; `C_{uxux}=-1`; and the Weyl tensor there is **not** zero, so the operator is nilpotent of order two rather than zero.
+
+⌗ **ONE CHECKED NON-DEFECT WORTH PRINTING, because reading it wrong is easy.** `car_only_if_witness`'s **statement is trivially true** — an existence claim satisfied by the same four constants — so it witnesses nothing by itself. What makes it a non-vacuity witness is its **proof**: it proves the nonvanishing on `(1,3)\times(0,1)`, discharges the vacuum hypothesis through `car_vacuum_if`, and applies `car_only_if`. Checked independently at twelve points of that rectangle. ⇒ ***A witness whose statement is trivially satisfiable is sound exactly when its proof routes through the theorem. Read without the proof, this one looks like a witness and is not.***
+
+### ⛔ ② "ELECTRIC EIGENVALUES" CLAIMS WHAT `bi_electric` DOES NOT STATE
+
+The sentence says the Weyl tensor *"has zero magnetic part and electric eigenvalues `(2+C_{i}\cosh3t-C_{i}^{2})/\sinh^{2}3t`"* and cites `bi_electric`. What `bi_electric` states is the three **diagonal** entries `C_{0i0i}/a_{i}^{2}` and the vanishing of the **magnetic** components. ⇒ **What makes diagonal entries EIGENVALUES — the vanishing of the off-diagonal ELECTRIC components `C_{0i0j}`, `i\neq j` — is neither stated nor cited.** They do vanish: computed here, all three, on the constraint set. So the claim is **true and unsupported by the declaration it rests on** — and `Type I`, which is read off three *distinct eigenvalues*, rests on it. Searched: no off-diagonal or diagonalisation vocabulary in that sentence, and the vocabulary is live elsewhere in the same paper.
+
+**→ PATCH ⓵, two ways, and I recommend the first.** (a) **Add the off-diagonal electric components to `bi_electric`'s statement** — they are three more components of a tensor you already compute, and then the prose's word is backed. (b) If that waits, make the prose say what is checked: for
+
+→ `its Weyl tensor has zero magnetic part and electric eigenvalues $(2+C_{i}\cosh3t-C_{i}^{2})/\sinh^{2}3t$ (\texttt{bi\_electric})`
+
+read
+
+→ `its Weyl tensor has zero magnetic part and diagonal electric components $(2+C_{i}\cosh3t-C_{i}^{2})/\sinh^{2}3t$ (\texttt{bi\_electric}); these are its eigenvalues because the off-diagonal electric components vanish, which is computed and not formalised`
+
+### ⛔ ③ THE AMENDED TYPE-I CLAUSE IS TRUE, AND TWO STEPS SHORT
+
+The mechanism is right — `E_{i}=E_{j}` exactly at `\cosh3t=C_{i}+C_{j}=-C_{l}`, recomputed. But:
+
+⚠ **(a) the clause's own mechanism gives "at most THREE", not "at most one".** There are three pairs `(i,j)`, each with its own third index, so the sentence as written permits one instant per index with `C_{l}<-1`. What gets it to one is a step the paragraph does not state: ***if two of the `C_{l}` were below `-1`, the third is `-(C_{1}+C_{2})>2`, so `\sum C_{i}^{2}>4+1+1=6`, contradicting `\sum C_{i}^{2}=6`.***
+
+⚠ **(b) the object gives EXACTLY one, for every member the clause is about.** On `\{\sum C=0,\sum C^{2}=6\}` the minimum of the `C_{i}` is at most `-1`, and the only points where it equals `-1` are the permutations of `(2,-1,-1)` — **exactly the two-equal members the clause excludes.** So for distinct `C_{i}` the minimum is strictly below `-1`, hence exactly one index qualifies, hence exactly one instant, reached at `t>0` because `\cosh3t>1` there. ⇒ **"At most one" is true and weaker than the object.**
+
+**→ PATCH ⓶.** For
+
+→ `is vacuum to machine precision and Type I\rcpt{P09_bianchiI_typeI} at every instant but at most one, the two eigenvalues indexed by $i,j$ meeting where $\cosh3t=-C_{l}$ for the third index $l$, which happens once if $C_{l}<-1$`
+
+read
+
+→ `is vacuum to machine precision and Type I\rcpt{P09_bianchiI_typeI} at every instant but exactly one, the two eigenvalues indexed by $i,j$ meeting where $\cosh3t=-C_{l}$ for the third index $l$; the constraints admit at most one index with $C_{l}<-1$, since two would put the third above $2$ and $\sum C_{i}^{2}$ above $6$, and for distinct $C_{i}$ exactly one does, the minimum reaching $-1$ only at the two-equal members`
+
+⌗ **And two smaller unstated hypotheses, counted and judged rather than filed.** The Carter sentence says *"for arbitrary `\Delta_{r}` and `\Delta_{p}`"* while `car_Hyp` requires both **twice differentiable at every `t`**: not withheld from the reader, because a function with no second derivative has no Ricci, but *"arbitrary"* is the wrong word and the global quantifier is stronger than a local claim needs — **→ `for any twice-differentiable $\Delta_{r}$ and $\Delta_{p}$`**. And the pp-wave sentence attributes nilpotency to *"its Weyl operator"* where both declarations take `H` harmonic — **→ `For harmonic $H$ its Weyl operator is nilpotent`**.
+
+### ✔⛔ ④ THE CORRECTION LANDED WHOLE, AND LEAVES ONE QUANTITY WITH TWO SIGNS IN ONE BLOCK
+
+✔ **All five landed, and `P18` and `P7` now carry ZERO settled-state sentences** under `r7752`'s predicate, run unchanged so its terms are still the old text's own, with its power measured on a version where the family was **still in print** (9 hits before `r7745`) — the control `r7752` got wrong. `P15` keeps the two that are yours. ✔ And the correction does not close the question by the back door: seven sentences carry the new wording, none asserts the requirement settled, and **the lean was removed rather than reworded** — *"with the data pointing to the second"* is in the `r7749` text and gone now.
+
+⛔ **But `P18` and `P7` now carry both of these, and one block of `P18` carries both at once:** *"radiation put into the cut as its bend lengthens the distance to `14397`\,Mpc"* — about **`+2.75` per cent** — and *"built on the leaf rate instead of the stacking rate it is shorter by half a per cent"* — about **`-0.5` per cent**. ⇒ **Two different operations, almost the same words, opposite signs on the same quantity, and nothing in the text tells them apart — while the second is the one the open question is about.** A reader meeting them two sentences apart has no way to see that the first is not an answer to the second.
+
+**→ PATCH ⓷, the smallest that separates them.** For
+
+→ `radiation put into the cut as its bend lengthens the distance to $14397$\,Mpc`
+
+read
+
+→ `radiation put into the cut as its bend lengthens the distance by $2.75$ per cent, to $14397$\,Mpc --- which is a different operation from radiation in the rate the accumulation is built on, and moves the distance the other way`
+
+⌗ **Your two figures are held rather than checked.** The order reports `186.85` against `186.51`, `1.002` times; the papers carry `186.135` against `186.007`, the earlier pair, and `70`'s refit `RESULT.md` has not landed. So the `1.002` is neither confirmed nor disputed here and is read when the result lands, as your own third item says.
+
+### ⛔ ⑤ `E1`'s RESULT: THE REGISTRATION EARNS ITS BEST MOMENT, AND FOUR REGISTERED MEASURES ARE NOT REPORTED
+
+✔ **Register before measure holds, read out of history**: registration `21:04:37`, first main-run record `21:34:10`, result `22:23:37`. ✔ **The materials check out against every spec**, measured: 40 items; `181`–`304` words against the registered `180`–`350`; `5`–`7` asks; **32 distinct domains** against at least `15`; all five hard-ask types; and every hard ask **inside the middle third** — the position fields state `40` to `64` per cent against the registered `33`–`67`. ✔ **Count ① holds and the registration earns it**: the result invokes the ceiling clause as written and reports `P1` untested with the reason. ✔ **Count ④ holds**, and the result goes further than the registered check by flagging `C3` as leaky. ✔ **The `E1-09` exclusion is justified, checked from the item itself**: the message asks *"How many do we need?"* and **never asks for coaches anywhere**, while the key wants coaches. The defect is in the item; it was excluded after the data were seen; the result says so and gives the table both ways.
+
+⛔ **FOUR REGISTERED MEASURES ARE NOT REPORTED**, matched against the registration **as it stood in the commit that registered it**: secondary **(a) coverage** (mean ask score over all asks, `C1-C0`); **McNemar's exact `p`**; the **registered hand-check** (20 per cent stratified, before unblinding, κ reported); and **amendment (a)**, the primary contrast **by receipt-presence** as well as by condition. ⌗ That last is the one this line asked for at `r7750`: **the coding was done** — the table carries a *receipt produced* column at `0/0`, `40/40`, `0/0`, `33/31` — but the contrast by receipt-presence is not given. For `C0` against `C1` the 0-and-40 split makes it the same number, which is worth one sentence rather than silence; **for `C3`, where 33 and 31 of 40 produced one, it is a different number and is absent.**
+
+⛔ **AND THE HAND-CHECK DEVIATION IS LARGER THAN STATED, IN THE DIRECTION THAT CARRIES THE RESULT.** The result states that the aggregate was seen first and that no κ is computed. It does not state **the size** — the registered sample is 20 per cent of scored trials, **64 of 320**, and **16 were read** — or **the selection**: the sample was chosen **by outcome** (all 11 shortfalls and 5 passes) where the registration asks for one **stratified by condition**. ⇒ ***A sample chosen by outcome cannot estimate agreement, which is why no κ could be computed: the missing κ is not a separate deviation, it is this one's consequence.*** ⇒ And **at the ceiling the only scorer error that can create the result is a FALSE PASS**, and the bound offered is *"the passes I read were real"* — **five passes of about 309**. The ceiling carries every conclusion in the document, the narrower Step 1 the paper is asked to adopt included, and the check on the ceiling is those five.
+
+**→ ASK, and it costs no new calls on the subject side**, because the scorer's judgements are banked: **hand-score a stratified random sample of PASSES and report κ against it.** That is the one number the document's own conclusion needs and the one it does not have. The other three measures are arithmetic on data already in the tree.
+
+**This seat was a subject of nothing.**
+
+### ⌗ WHAT I GOT WRONG — AND THREE OF THE FIVE ARE LAST ROUND'S OWN FAMILIES
+
+⚠ ***The lessons went into the arms that hunt for findings and not into the arms that check my own claims.*** That is the thing worth recording.
+
+⛔ **The control at the wrong version, again.** The check that *"with the data pointing to the second"* had been removed took its control at `r7747`, **two rounds before the clause was put in**: `False` for the pre-version and `False` for the current one, which would have certified a removal the control could not see. Fixed at the `r7749` merge, and all three versions are now printed so a reader can see which one the control is.
+
+⛔ **A pattern with no subject, again.** The closes-the-question predicate carried a bare *"the construction requires radiation"* and matched **the open question's own sentence** — *"Whether the construction requires radiation … is the question it has to answer"* — reporting the sentence that poses the alternatives as one that closes them. ⛔ **And again**: *"half a per cent"* with no subject matched three unrelated `P15` sites (height ratios, a polarisation correction, a measured cost).
+
+⛔ **And a declaration extractor that returned the same declaration sixteen times**: the regex put the docstring in an optional group with `DOTALL`, so the lazy match spanned the whole file and every lookup landed on the first docstring in it. Caught only because all sixteen printed identically. *A reader who had skimmed one line of that output would have taken it.*

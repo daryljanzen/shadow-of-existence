@@ -1,0 +1,31 @@
+=== WHAT EXISTS, measured at 2026-11-13T00:43:34Z, HEAD 2a3132a96 ===
+
+--- P9 source: corpus/range_paper.tex (475 lines)
+--- Lean: probes/Range.lean (2161 lines)
+--- declarations the order names, present in Range.lean?
+      car_Ric          1
+      car_vacuum_if    1
+      car_only_if      1
+      bi_vacuum        1
+      bi_electric      1
+      bi_typeI         1
+      bi_typeD         1
+      pw_nilpotent     1
+      pw_invariants    1
+      pw_witness       1
+
+--- seat 70's experiments:
+      E1  files=1157 PREDICTION=yes RESULT=yes
+      E2  files=2    PREDICTION=yes RESULT=NO
+      E3  files=2    PREDICTION=yes RESULT=NO
+      E4  files=2    PREDICTION=yes RESULT=NO
+      E5  files=2    PREDICTION=yes RESULT=NO
+      E6  files=2    PREDICTION=yes RESULT=NO
+      E7  files=11   PREDICTION=yes RESULT=NO
+
+--- E1/RESULT.md: 58 lines, 5285 bytes
+--- E1/PREDICTION.md now: 86 lines
+--- commits that touched E1/PREDICTION.md (oldest last):
+      36c2d8408 ARP-E+70.5 -- 60's cold read (r7750) folded into E1-E6 before any trial: E1 receipt-presence coding and a per-ask-analysis arm C3; E2 a clause-only arm C3; E3 C2 recast as a non-instance, framing-free restriction; E4 the limitation stated symmetrically and the fresh-context limit named; E5 novel valid findings co-primary; E6 the rewrite asymmetry stated, attribution on the stage measure
+      67950e2ba ARP-E+70.2 -- Daryl's calls recorded (email leak accepted; Opus 5.5 with a Sonnet 5.5 arm on E1-E3; E7 real arm last at 2 seats); the run made pausable (/tmp/ARP_PAUSE) with a per-trial usage ledger, for the 90% usage rule; E7 re-planned for 72's Step 6 revision (unsound-disposition control on the scaled arm, real arm sound only); no trial has run
+      20438cd13 ARP-E+70.0 -- the trial harness (one clean claude -p context per trial, full record, resumable) and the E1 and E2 registrations in draft: materials are being authored and land with them before 60's cold read; no trial has run

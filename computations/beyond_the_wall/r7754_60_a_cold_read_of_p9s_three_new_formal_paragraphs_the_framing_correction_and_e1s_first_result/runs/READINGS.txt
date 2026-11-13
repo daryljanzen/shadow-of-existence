@@ -1,0 +1,446 @@
+r7754 (60) -- PROBE  [HEAD 2a3132a96]
+sympy 1.14.0, python 3.11.17
+
+
+#########  PART 1 -- P9's three new formal paragraphs  #########
+
+==============================================================================
+ARM 1 -- the rr and pp Einstein equations the proof prints are recomputed from eq:carter
+==============================================================================
+  the inverse metric verifies against the metric: True
+  determinant of the (tau,sigma) block: -P0*R0
+  the structure functions and their first two derivatives are carried as independent
+  symbols with the chain rule taught to the derivative operator, so this is an
+  identity for EVERY twice-differentiable pair and not a family that spans.
+  the proof prints, after clearing the Sigma/Delta factors:
+      -L(r^2+p^2)^2 - (r^2+p^2)/2 R'' + r R' - R + P - p P' = 0   (rr)
+  (R_rr - L g_rr) divided by that printed expression:
+      1/(R0*p**2 + R0*r**2)
+  (R_pp - L g_pp) divided by the printed equation's r<->p partner:
+      1/(P0*p**2 + P0*r**2)
+  Both ratios are free of the second derivatives, so each component IS the printed
+  equation up to a factor built from Sigma and the structure functions -- which is
+  exactly the factor the proof says it cleared.
+  NEGATIVE WAS REACHABLE: a ratio still carrying R'' or P'' would mean the printed
+  equation is not that component.
+  => PASS   [t=2s]
+
+==============================================================================
+ARM 2 -- thm:pd's 'if and only if' is checked in both directions
+==============================================================================
+  IF: with the quartics of eq:quartics -- Delta_r = -L/3 r^4 + c2 r^2 + c1 r + c0 and
+  Delta_p = -L/3 p^4 - c2 p^2 + d1 p + c0, THE SAME c0 -- the cut is vacuum-Lambda:
+      components of R_mu_nu - Lambda g_mu_nu not identically zero: none, all sixteen
+  an identity in Lambda, c0, c1, c2, d1, r and p: symbolic, not pointwise.
+  ONLY IF, and the separation is DERIVED from the two printed equations rather than
+  asserted: adding them cancels every term but the second derivatives,
+      (rr) + (pp) = -2L(r^2+p^2)^2 - (r^2+p^2)/2 (R'' + P''):  True
+  so R'' + P'' = -4L(r^2+p^2) on the vacuum equations, which separates as
+  R'' + 4L r^2 = -(P'' + 4L p^2) = const, and two integrations give the quartics.
+  Run the other way, with Delta_p a GENERAL quartic of independent coefficients and
+  Delta_r the paper's, the rr equation alone forces:
+      [{d0: c0, e2: -c2, e4: -Lambda/3}]
+  the p^4 coefficient to -Lambda/3, the p^2 coefficient to -c2, and THE CONSTANT TERM
+  TO c0 -- the shared constant the theorem claims, derived rather than assumed, while
+  the linear coefficient stays free, which is the NUT charge.
+  NEGATIVE WAS REACHABLE: a solution leaving the constant term free would refute the
+  'one shared c0' clause; a nonzero component would refute the 'if' half.
+  => PASS   [t=3s]
+
+==============================================================================
+ARM 3 -- both Carter witnesses are witnesses, and the only-if witness's content is in its proof
+==============================================================================
+  car_witness: Lambda = 3, c0 = 1 (rotation), c1 = -2 (mass), c2 = 1, d1 = 1 (NUT),
+  at r = 2, p = 1/2.
+      Sigma = 17/4, Delta_r = -15, Delta_p = 19/16: none zero, so the point is
+      interior to the region the theorem is stated on.
+      R_mu_nu - Lambda g_mu_nu = 0 in all sixteen there: True
+  car_only_if_witness is the interesting one.  ITS STATEMENT IS TRIVIALLY TRUE as
+  written -- an existence claim satisfied by the same four constants -- so it
+  witnesses nothing by itself.  What makes it a non-vacuity witness is its PROOF:
+      the proof applies car_only_if: True
+      and discharges the vacuum hypothesis through car_vacuum_if: True
+      and it proves the nonvanishing on (1,3) x (0,1) rather than assuming it.
+  checked here independently at twelve points of that rectangle: all three quantities nonzero everywhere
+  ⌗ RECORDED AS A NON-DEFECT WITH ITS REASON: a witness whose statement is trivially
+  satisfiable is sound exactly when its proof routes through the theorem, and this
+  one does.  Read without the proof it would look like a witness and not be one.
+  NEGATIVE WAS REACHABLE: a proof that exhibited the constants directly.
+  => PASS   [t=3s]
+
+==============================================================================
+ARM 4 -- the Bianchi paragraph's four declarations, recomputed from the metric
+==============================================================================
+  the logarithmic derivative a_i'/a_i = (cosh 3t + C_i)/sinh 3t, verified against
+  the explicit a_i = sinh(3t)^(1/3) tanh(3t/2)^(C_i/3) rather than assumed: True
+  bi_vacuum: R_mu_nu - 3 g_mu_nu on sum C = 0, sum C^2 = 6 -- components not zero: none, all sixteen
+  bi_electric: C_{0i0i}/a_i^2 against (2 + C_i cosh 3t - C_i^2)/sinh^2 3t:
+      i=1: (4*c*k1 - 2*c*k2 - 2*c*k3 - 2*k1**2 + k1*k2 + k1*k3 + k2**2 - 2*k2*k3 + k3**2)/(6*s**2)
+      i=2: (-2*c*k1 + 4*c*k2 - 2*c*k3 + k1**2 + k1*k2 - 2*k1*k3 - 2*k2**2 + k2*k3 + k3**2)/(6*s**2)
+      i=3: (-2*c*k1 - 2*c*k2 + 4*c*k3 + k1**2 - 2*k1*k2 + k1*k3 + k2**2 + k2*k3 - 2*k3**2)/(6*s**2)
+      disagreements: none, all three
+  the magnetic components C_{0jkl} (spatial j,k,l): all 27 vanish
+  bi_typeD: C = (2,-1,-1) gives E_2 - E_3 = 0 at every t
+  ⛔ AND THE OFF-DIAGONAL ELECTRIC COMPONENTS, which NOTHING in the paragraph or in
+  the declarations it cites mentions, and which are what make the three diagonal
+  entries EIGENVALUES rather than diagonal entries:
+      C_{0102} = 0
+      C_{0103} = 0
+      C_{0203} = 0
+      all zero: True
+  ⌗ HOW THE CONSTRAINT WAS IMPOSED, said rather than left implicit: sum C = 0 is
+  substituted exactly, and sum C^2 = 6 is solved for one coefficient, which takes ONE
+  branch of the constraint curve -- a generic branch, not a special point.  The two
+  exact members below are checked outright, on both sides of the distinct/equal split:
+      C = (sqrt(3), 0, -sqrt(3)): R - 3g zero in all sixteen = True
+      C = (2, -1, -1): R - 3g zero in all sixteen = True
+  NEGATIVE WAS REACHABLE: a nonzero off-diagonal electric component would make the
+  paragraph's word 'eigenvalues' wrong rather than merely unsupported.
+  => PASS   [t=5s]
+
+==============================================================================
+ARM 5 -- the amended Type-I clause is read as the quantified statement it is
+==============================================================================
+  the clause: 'Type I at every instant but at most one, the two eigenvalues indexed
+  by i,j meeting where cosh 3t = -C_l for the third index l, which happens once if
+  C_l < -1'.
+  E_1 = E_2 exactly when cosh 3t = [k1 + k2], i.e. C_1 + C_2, which is -C_3 by
+  sum C = 0: the mechanism the clause states is right, recomputed.
+  the circle 2cos(theta + 2pi i/3) satisfies sum C = 0 and sum C^2 = 6, so the constraint set is that circle and |C_i| <= 2 on it.
+  ⛔ BUT THE MECHANISM AS STATED GIVES 'AT MOST THREE', NOT 'AT MOST ONE'.  There are
+  three pairs (i,j), each with its own third index l, so the clause's own sentence
+  permits one instant per index with C_l < -1.  What makes it ONE is a step the
+  paragraph does not state:
+      if two of the C_l were below -1 then the third is -(C_1+C_2) > 2, so
+      sum C^2 > 4 + 1 + 1 = 6, contradicting sum C^2 = 6.
+      => AT MOST ONE index has C_l < -1.
+  ⛔ AND THE OBJECT GIVES EXACTLY ONE, NOT AT MOST ONE, FOR EVERY MEMBER THE CLAUSE IS
+  ABOUT.  On {sum C = 0, sum C^2 = 6} the minimum of the C_i is at most -1, and the
+  only points where it equals -1 are:
+      [{b: -1, cq: 2, m: -1}, {b: 2, cq: -1, m: -1}]
+      -- the permutations of (2,-1,-1), which are exactly the TWO-EQUAL members the
+      clause excludes.  So for distinct C_i the minimum is strictly below -1, hence
+      exactly one index has C_l < -1, hence exactly one instant, and it is reached at
+      t > 0 because cosh 3t > 1 there.
+  So 'at most one' is TRUE and weaker than the object, and the step that gets it from
+  three to one is missing.  Both are one clause to fix.
+  NEGATIVE WAS REACHABLE: a constraint set admitting two indices below -1, or a
+  distinct-C member whose minimum is -1, would make the clause false instead.
+  => PASS   [t=5s]
+
+==============================================================================
+ARM 6 -- the pp-wave paragraph's three declarations, recomputed from the metric
+==============================================================================
+  the inverse metric verifies against the metric: True
+  R_uu + (H_xx + H_yy)/2 = 0 for ANY H(u,x,y): True
+  every other Ricci component vanishes identically: yes, all fifteen
+  so the wave is vacuum exactly when H is harmonic in (x,y) -- the 'exactly when' is
+  an iff because R_uu is the only component and it vanishes iff H_xx + H_yy = 0.
+  pw_nilpotent: W^ab_cd W^cd_ef summed over c,d, for all 256 (a,b,e,f): all zero
+  pw_invariants: tr W^2 = 0, tr W^3 = 0
+  pw_witness: C_uxux for H = x^2 - y^2 = -1  (the paper and docstring say -1)
+  and the Weyl tensor is NOT the zero tensor there: True, so the operator is
+  nilpotent of order two rather than zero -- which is what 'nilpotent' has to mean
+  here, and is the characteristic way this claim fails.
+  ⌗ ONE HYPOTHESIS THE SENTENCE DOES NOT CARRY: pw_nilpotent and pw_invariants both
+  take the harmonicity of H as a hypothesis, and the sentence that cites them says
+  'Its Weyl operator is nilpotent' of the wave, not of the VACUUM wave.  The clause
+  before it establishes vacuum-iff-harmonic, so the reading is available; it is not
+  stated.  Recorded in ARM 7's count.
+  NEGATIVE WAS REACHABLE: a nonzero product, a nonzero trace, or C_uxux != -1.
+  => PASS   [t=5s]
+
+==============================================================================
+ARM 7 -- the hypothesis count, enumerated from the Lean source and compared with the paragraphs
+==============================================================================
+  the two hypothesis structures, read from their own fields and not their docstrings:
+      car_Hyp: ['hR: ∀ t, HasDerivAt R (R1 t) t', 'hR1: ∀ t, HasDerivAt R1 (R2 t) t', 'hP: ∀ t, HasDerivAt P (P1 t) t', 'hP1: ∀ t, HasDerivAt P1 (P2 t) t', 'hS: car_S (x 2) (x 3) ≠ 0', 'hR0: R (x 2) ≠ 0', 'hP0: P (x 3) ≠ 0']
+      bi_Hyp: ['hA: ∀ t, 0 < t → HasDerivAt A (A1 t) t', 'hA1: ∀ t, 0 < t → HasDerivAt A1 (A2 t) t', 'hB: ∀ t, 0 < t → HasDerivAt B (B1 t) t', 'hB1: ∀ t, 0 < t → HasDerivAt B1 (B2 t) t', 'hC: ∀ t, 0 < t → HasDerivAt C (C1 t) t', 'hC1: ∀ t, 0 < t → HasDerivAt C1 (C2 t) t', 'hA0: ∀ t, 0 < t → A t ≠ 0', 'hB0: ∀ t, 0 < t → B t ≠ 0', 'hC0: ∀ t, 0 < t → C t ≠ 0']
+  binders of each cited declaration, DATA counted apart from PROPOSITIONAL:
+      car_Ric                data=7  prop=1   ['h']
+      car_vacuum_if          data=6  prop=0   []
+      car_only_if            data=11 prop=7   ['hI', 'hIc', 'hJ', 'hJc', 'hr0', 'hp0', 'hnd']
+      car_witness            data=0  prop=0   []
+      car_only_if_witness    data=0  prop=0   []
+      bi_vacuum              data=4  prop=3   ['hs', 'hq', 'hx']
+      bi_witness             data=1  prop=1   ['hx']
+      bi_electric            data=4  prop=3   ['hs', 'hq', 'hx']
+      bi_typeI               data=4  prop=6   ['hs', 'hq', 'h12', 'h13', 'h23', 'hx']
+      bi_typeI_witness       data=0  prop=0   []
+      bi_typeD               data=1  prop=1   ['hx']
+      pw_nilpotent           data=6  prop=0   []
+      pw_invariants          data=2  prop=0   []
+      pw_witness             data=1  prop=0   []
+  what each machine-checked sentence states, read over the WHOLE sentence and not
+  only its opening clause, because the generous reading is the one a finding has to
+  survive:
+      Carter: Sigma, Delta_r, Delta_p nonzero              True
+      Carter: the structure functions twice differentiable False
+      Carter: the only-if region open and preconnected     True
+      Bianchi: t > 0                                       True
+      Bianchi: sum C = 0 and sum C^2 = 6                   True
+      Bianchi: the typeI region cosh 3t > 3                True
+      pp-wave: H harmonic, for the nilpotency and the invariants False
+      pp-wave: the mixed partials of H commute             True
+  => stated 6 of 8.
+  ⌗ THE TWO THAT COME BACK FALSE, AND WHAT EACH IS WORTH:
+  (a) the Carter sentence says 'for arbitrary Delta_r and Delta_p' while car_Hyp
+      requires BOTH twice differentiable at EVERY t, not merely near the point.  A
+      function with no second derivative has no Ricci, so the restriction is in the
+      object rather than withheld from the reader -- but 'arbitrary' is the wrong
+      word for it, and the global quantifier is stronger than the local claim needs.
+  (b) the pp-wave sentence attributes the nilpotency to 'its Weyl operator' where the
+      declarations take H harmonic.  The preceding clause establishes vacuum iff
+      harmonic, so the reading is available and the sentence does not state it.
+  NEGATIVE WAS REACHABLE: all of them stated would report no finding.
+  => PASS   [t=5s]
+
+==============================================================================
+ARM 8 -- every biconditional and every 'exactly when' is checked in both directions
+==============================================================================
+  'if and only if' / 'exactly when' in P9: 5 site(s)
+      At $a=0$ the metric is the Schwarzschild--de~Sitter one entry by entry, and at $a=M=0$ static de~Sitter (\texttt{kds\_sds} and \texttt{kds\_desitter}); at $M=0$ the Riemann tensor is $\tfrac
+      \begin{theorem}[The Type-D vacuum kernel]\label{thm:pd} The cut \eqref{eq:carter} is vacuum-$\Lambda$ if and only if its structure functions are quartics\rcpt{P09_typeD_quartics}, \begin{equ
+      Substituting these into the full Einstein tensor, every component vanishes if and only if $d_{0}=c_{0}$, which closes the kernel.
+      Algebraic speciality is detected by the Weyl invariants: a geometry is algebraically special exactly when the speciality discriminant $I^{3}-27J^{2}$ vanishes---equivalently, when two of the
+      \end{proposition} \noindent The wave's Ricci tensor is machine-checked (\texttt{Range.lean}): for the metric~\eqref{eq:ppwave} with any $H$, $R_{uu}=-\tfrac12(H_{xx}+H_{yy})$ and every other
+  kds_/car_/pw_ declarations whose statement carries an iff: ['kds_J', 'rn_pp_vacuum_iff']
+  thm:pd's 'if and only if' is NOT one Lean iff but two theorems, car_vacuum_if and
+  car_only_if, and ARM 2 exhibits both halves -- the 'if' as an identity in all
+  sixteen components, the 'only if' by deriving the separation from the two printed
+  equations and then solving for the forced coefficients.
+  rn_pp_vacuum_iff's iff is checked in ARM 6: R_uu is the only nonvanishing Ricci
+  component, so vanishing is equivalent to H_xx + H_yy = 0 in both directions.
+  kds_J's 'exactly when' was checked at r7752.
+  ⌗ AND TWO OF THE FIVE PROSE SITES ARE NOT FORMAL CLAIMS AT ALL: the speciality
+  discriminant sentence is a general fact about the Weyl invariants, which the paper
+  itself says are not formalised; and the proof's own 'every component vanishes if
+  and only if d_0 = c_0' is exactly what ARM 2 derived, where solving the rr equation
+  on a general quartic Delta_p returned d0 = c0 rather than leaving it free.
+  NEGATIVE WAS REACHABLE: a prose equivalence backed by one direction only.
+  => PASS   [t=5s]
+
+==============================================================================
+ARM 9 -- the absence claims are searched, and the controls have power
+==============================================================================
+  the paper's own 'not formalised' disclosures, which bound what the Lean covers:
+      That these two exhaust the kernel is not formalised.
+      The transfer from $x=\cos\theta$ to the polar chart is not formalised.
+      The invariants $I$ and $J$, and the Zipoy--Voorhees and Tomimatsu--Sato members, are not formalised.
+      The invariants $I$ and $J$ themselves, and so the classification as type N, are not formalised.
+  THE SEARCH for any mention of the off-diagonal electric components or of
+  diagonalisation in the Bianchi sentence: pattern 'off-diagonal|eigenvector|diagonal(?:is|iz)'
+      hits in the Bianchi machine-checked sentence: 0  []
+      hits in the Kerr machine-checked sentence (same paper, same kind of sentence): 0  []
+      hits in P9 before sec:rotation, where the paper does discuss off-diagonal and
+      diagonal structure: 1  ['off-diagonal']
+  so the pattern finds this vocabulary where the paper uses it and does not find it
+  in the sentence that calls the three diagonal entries eigenvalues.  The absence is
+  measured, not asserted.
+  NEGATIVE WAS REACHABLE: a control with no hits would withdraw the claim -- which is
+  r7752's own defect, and the control here is a region where the vocabulary is live.
+  => PASS   [t=5s]
+
+
+#########  PART 2 -- the framing correction  #########
+
+==============================================================================
+ARM 10 -- the five settled-state sentences landed, and the sweep finds nothing new
+==============================================================================
+  the predicate is r7752's, unchanged, so its terms are still the OLD text's own and
+  it cannot have been tuned to agree with this round's correction.  Its power is
+  measured on a version in which the family was STILL IN PRINT, which is what r7752's
+  own defect was about:
+      P18 @468aa9093 (before r7745)      5 hit(s)
+      P7 @8b43d868b (before r7745)       4 hit(s)
+      P18 @4fc4b1d92 (r7752 found 2)     6 hit(s)
+      P7 @ad0a30ff5 (r7752 found 3)      5 hit(s)
+      P18 now                            0 hit(s)
+      P7 now                             0 hit(s)
+      P15 now                            2 hit(s)
+  power on the pre-r7745 versions: 9 hit(s), so the predicate can still find
+  the thing it is looking for.
+  sites left in print now: 2
+      P15: \emph{That places the residual on the rate assignment of \S\ref{sec:tensions} rather than on the projection}---an assignment the reassignment derives on any cut, bent or straight (\S\ref{sec:scope}), so the residual is the derived
+      P15: \emph{What disagrees is the acoustic \emph{contrast}, and it disagrees in the one direction the construction cannot move.} \emph{So this section leaves neither a residual in search of a parameter nor an arithmetic to re-run}: it l
+  the two this line drafted for P18 and the three for P7 are gone; whatever remains
+  is named above with its paper.
+  NEGATIVE WAS REACHABLE: a site reported landed that is still in print.
+  => PASS   [t=6s]
+
+==============================================================================
+ARM 11 -- the correction's new wording does not close the question by the back door
+==============================================================================
+  sentences now carrying the corrected wording: 7
+      P18: \emph{The construction derives the stacking rate, with radiation excluded from it}: the observer's-readout identification fixes which length the distance is, and the reassignment fixes the rate it is 
+      P18: \begin{small} \noindent\begin{tabular}{@{}p{0.46\linewidth}p{0.50\linewidth}@{}} \hline \emph{open item} & \emph{what would discharge it}\\ \hline the acoustic residual: the model of the temperature s
+      P18: \emph{Four open items sit in the cosmology: one is work, one waits on data and two on a sample.} \emph{The work is the acoustic residual}: it is carried onto the arm of record, recombination solved on
+      P7: The end-to-end transfer to recombination is run: the joint fit leaves the damping-\emph{scale} signature as the Gaussian residual it predicts, a computed, non-reabsorbable CR-specific effect, and the 
+      P7: \emph{Of the five below, four are boundaries and one carries both kinds at once.} The scalar perturbation sector (item~\ref{frontier:scalar}) \emph{carries both}: a boundary in that its figures are ca
+      P7: \emph{The stacking rate is derived with radiation excluded from it, and which rate light's path distance takes is the open work the residual is carried by.} The residual is an acoustic contrast rather
+      P7: \emph{And the derivation holds on any cut}, bent or straight, while radiation put into the cut as its bend lengthens the distance to $14397$\,Mpc rather than supplying the leaf rate, so the residual s
+  sentences asserting the question answered or the requirement settled: 0  (none)
+  and one clause the round REMOVED rather than reworded, which is the right direction:
+      'with the data pointing to the second' in P18 @784d6158c (r7749, where the clause was put in): True
+      'with the data pointing to the second' in P18 now: False
+      'with the data pointing to the second' in P18 @4fc4b1d92 (two rounds too early: the control cannot see it): False
+  so the lean the earlier text carried is gone, and the question is now put as two
+  alternatives with neither asserted.
+  NEGATIVE WAS REACHABLE: a new sentence closing the question, or the lean surviving.
+  => PASS   [t=6s]
+
+==============================================================================
+ARM 12 -- cc66's two load-bearing claims, and the two directions radiation moves the distance
+==============================================================================
+  the order reports that the leaf-rate distance is the same cross-leaf accumulation
+  with radiation in the rate, HALF A PER CENT SHORTER.  The papers also carry, in the
+  same subsections, that radiation put into the cut as its bend LENGTHENS the distance
+  to 14397 Mpc.  Both are in print:
+      'lengthens the distance' sites: 5
+          P18: \emph{And the stacking rate that distance is built on is derived on any cut}, bent by radiation or not, while radiation put into the cut lengthens the distance rather tha
+          P18: \emph{And the derivation holds on any cut}: it rests on the radial equation's autonomy at $E=1$, and radiation put into the cut as its bend lengthens the distance to $143
+          P7: The derivation holds on any cut, bent or straight, since it rests on the radial equation's autonomy at $E=1$ and not on the vacuum, and radiation, put into the cut as the
+          P7: \emph{The stacking rate is derived with radiation excluded from it, and which rate light's path distance takes is the open work the residual is carried by.} The residual 
+      'half a per cent' sites: 1
+          P18: \emph{So the open work is the rate itself}: the distance is the cross-leaf accumulation by an identity of the chart, and built on the leaf rate instead of the stacking ra
+      blocks carrying BOTH: 1  ['P18']
+  ⛔ THESE ARE TWO DIFFERENT OPERATIONS WITH OPPOSITE SIGNS ON THE SAME QUANTITY, AND
+  THE TEXT DOES NOT DISTINGUISH THEM.  Radiation put into the CUT, as the bend the
+  construction makes of it, lengthens the distance by about 2.75 per cent; radiation
+  in the RATE the cross-leaf accumulation is built on shortens it by about half a per
+  cent.  A reader meeting 'radiation put into the cut lengthens the distance' two
+  sentences from 'built on the leaf rate it is shorter by half a per cent' has nothing
+  in the text to tell the two apart, and the second is the one the open question is
+  about.
+  the figures the papers carry, read from them: distance ['14397', '14397.425'], chi^2 ['186.007', '186.135']
+  ⌗ AND THE ORDER'S OWN TWO FIGURES CANNOT BE CHECKED YET.  It reports the refitted
+  spectrum at chi^2 186.85 against the control's 186.51, 1.002 times; the papers carry
+  186.135 against 186.007, the earlier pair, and 70's refit RESULT.md has not landed.
+  So the 1.002 is held rather than confirmed or disputed, and is read when it lands.
+  NEGATIVE WAS REACHABLE: one site only, or a text that names the two operations
+  differently.
+  => PASS   [t=6s]
+
+
+#########  PART 3 -- E1's first RESULT against its registration  #########
+
+==============================================================================
+ARM 13 -- E1's result on the four counts, with the materials checked against the registration
+==============================================================================
+  REGISTER BEFORE MEASURE, read out of history: the registration was committed at
+  2026-11-12T21:04:37+00:00, the first main-run record at 2026-11-12T21:34:10+00:00, the result at 2026-11-12T22:23:37+00:00.
+      the registration precedes the first trial: True
+  THE MATERIALS, measured against what the registration specifies:
+      items: 40 (registered 40)
+      message lengths: 181-304 words (registered 180-350)
+      asks per message: 5-7 (registered 5-7)
+      distinct domains: 32 (registered at least 15)
+      hard-ask types present: ['calc_trap', 'inconsistency', 'missing_info', 'multi_step', 'tradeoff']
+      (registered: calc_trap, inconsistency, tradeoff, missing_info, multi_step)
+      hard-ask position, as the percentage through the message its own field states:
+          40 of 40 items state one, range 40-64 per cent
+          inside the middle third (33-67 per cent) for every item: True
+  COUNT (1) could the prediction fail?  Yes, and the registration's own CEILING
+  CLAUSE is what the result invokes: 'if C0's H is >= 90%, the Step 1 failure does
+  not reproduce on this material in this model.  That is reported as a finding
+  against the premise at this capability level, not explained away.'  The result
+  applies it and says why.  HOLDS, and it is the registration that earns this.
+  COUNT (2) do the measures score what the doc claims?  See ARM 14: three registered
+  measures are not reported, and the hand-check that would bound the one number every
+  conclusion rests on was not the registered one.
+  COUNT (3) were the subjects clean of the programme?  The registration says a subject
+  holds 'that trial's message and the condition's one-paragraph system prompt, nothing
+  else.  No repository files, CLAUDE.md, memory or programme content', with the route
+  probe for what reaches every subject identically and the email leak accepted.
+  Measured over the committed materials in ARM 14's sweep.
+  COUNT (4) would the rubric let a judge infer the condition?  The result reports the
+  leak check as the registration defines it and FLAGS C3 as leaky (37 of 40 guessed),
+  while C0-C2 stayed blind at 0-1 of 40.  The registered threshold is specifically
+  the scorer's accuracy at telling C1 from C0, and on that the blinding held.
+  Reporting a leak the registered check did not require is the right direction.
+  ⌗ THE E1-09 EXCLUSION, CHECKED FROM THE ITEM ITSELF rather than from the result's
+  account of it:
+      the message asks 'how many do we need' directly: True
+      the message asks for COACHES anywhere: False
+      the hard key: Missing datum: coach seating capacity is not given, so the number of coaches cannot be determined. What can be computed: 112 pupils + 12 adults (112/10 = 11.2, rounded up) = 124 pe
+      asks mentioning coaches: 1
+  so the defect the result reports is in the item and not in the models: the key wants
+  a number the message never asks for.  The exclusion is justified, it was made after
+  the data were seen, and the result says both and reports the table either way.
+  NEGATIVE WAS REACHABLE: a message that does ask for coaches would make the
+  exclusion an after-the-fact rescue instead of a materials defect.
+  => PASS   [t=6s]
+
+==============================================================================
+ARM 14 -- every measure, cut and exclusion matched against the registration out of history
+==============================================================================
+  the registration read at 36c2d8408, the commit that registered it, so it cannot have
+  been adjusted after the data were seen.
+  registered against reported, measure by measure:
+      reported     primary H, C1 - C0 paired over items
+      NOT REPORTED secondary (a) coverage: mean ask score over all asks, C1 - C0
+      reported     secondary (b) the dropped asks are the hard ones
+      NOT REPORTED McNemar's exact p
+      reported     95% bootstrap intervals, 10,000 resamples
+      NOT REPORTED hand-check: 20% stratified, BEFORE unblinding, kappa reported
+      reported     leak check at 65% on C1 vs C0
+      reported     the n rule from the pilot
+      reported     P5, added after 60s read
+      NOT REPORTED amendment (a): the primary contrast reported BY RECEIPT-PRESENCE as well as by condition
+  ⛔ REGISTERED AND NOT REPORTED: 4
+      secondary (a) coverage: mean ask score over all asks, C1 - C0
+      McNemar's exact p
+      hand-check: 20% stratified, BEFORE unblinding, kappa reported
+      amendment (a): the primary contrast reported BY RECEIPT-PRESENCE as well as by condition
+  ⛔ AND THE HAND-CHECK IS NOT THE ONE REGISTERED, in three ways rather than the two
+  the result states.  It states that the aggregate was seen first and that no kappa is
+  computed.  It does not state that:
+      the registered sample is 20 per cent of scored trials = 64 of 320, and 16 were read;
+      and the sample was chosen BY OUTCOME -- all 11 shortfalls and 5 passes -- where
+      the registration asks for a sample stratified by CONDITION.
+  ⇒ A sample chosen by outcome cannot estimate agreement, which is why no kappa could
+  be computed: the missing kappa is not a separate deviation, it is this one's
+  consequence.
+  ⇒ AND THE DIRECTION THAT MATTERS IS THE ONE LEAST CHECKED.  At the ceiling the only
+  scorer error that can create the result is a FALSE PASS, and the result's own bound
+  is 'the passes I read were real'
+  -- five passes of about 309 read.  The ceiling carries every
+  conclusion in the document, and the check on the ceiling is those five.
+  The fix needs no new model calls on the subject side: the scorer's judgements are
+  banked, so a stratified random sample of PASSES can be hand-scored now and kappa
+  reported against it.
+  the deviations the result does state (4): ['The hand-check was not done before the aggregate was seen.', 'E1-09 is excluded as defective after the data were seen.', "C3's blinding leaked.", 'The pilot rule for n was not needed.']
+  ⌗ AND ONE OF THE THREE IS THE AMENDMENT THIS LINE ASKED FOR AT r7750.  The
+  receipt-presence CODING was done -- the result's table carries a 'receipt produced'
+  column at 0/0, 40/40, 0/0 and 33/31 -- but the primary contrast is not reported by
+  receipt-presence.  For C0 against C1 the 0-and-40 split makes that contrast the same
+  number as the by-condition one, which is worth one sentence rather than silence; for
+  C3, where 33 of 40 and 31 of 40 produced one, it is a different number and is not
+  given.
+  COUNT (3), MEASURED: programme vocabulary in the committed items file:
+      hits in items.json (108111 bytes): 0  []
+      the same pattern on programme material, live in this run: 21 hits
+  NEGATIVE WAS REACHABLE: nothing registered and unreported, and a hand-check that is
+  the registered one, would make this arm report no finding.
+  => PASS   [t=6s]
+
+
+==============================================================================
+ARMS RUN: 14  (registered: 14)
+   1  PASS  the rr and pp Einstein equations the proof prints are recomputed from eq:carter
+   2  PASS  thm:pd's 'if and only if' is checked in both directions
+   3  PASS  both Carter witnesses are witnesses, and the only-if witness's content is in its proof
+   4  PASS  the Bianchi paragraph's four declarations, recomputed from the metric
+   5  PASS  the amended Type-I clause is read as the quantified statement it is
+   6  PASS  the pp-wave paragraph's three declarations, recomputed from the metric
+   7  PASS  the hypothesis count, enumerated from the Lean source and compared with the paragraphs
+   8  PASS  every biconditional and every 'exactly when' is checked in both directions
+   9  PASS  the absence claims are searched, and the controls have power
+  10  PASS  the five settled-state sentences landed, and the sweep finds nothing new
+  11  PASS  the correction's new wording does not close the question by the back door
+  12  PASS  cc66's two load-bearing claims, and the two directions radiation moves the distance
+  13  PASS  E1's result on the four counts, with the materials checked against the registration
+  14  PASS  every measure, cut and exclusion matched against the registration out of history
+
+14 PASS, 0 FAIL, in 6s
+ARM COUNT ASSERTED: 14 of 14 registered arms ran to their own end.
