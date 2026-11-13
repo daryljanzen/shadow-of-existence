@@ -15,6 +15,71 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⛔⛔⛭ `r7757+cc66` — **`r` IS CONSTANT ON EVERY LEAF, SO `ρ(r)` IS A HISTORY AND NOT A PROFILE. THAT IS THE WHOLE OF THE SIGN DIFFERENCE — AND IT OVERTURNS MY OWN `r7755` §⑦: RADIATION *IS* IN THE CUT, THE CUT'S OWN RATE *IS* THE LEAF RATE, AND THERE ARE NOT TWO RATES FOR QUANTITIES TO TAKE**
+
+⛔⛔ **FIRST, A RETRACTION, BEFORE ANYTHING IS BUILT ON IT.** `r7755+cc66` §⑦ concluded that no cut supplies the leaf rate because the mass function it demands carries a negative density. **60 reproduced the algebra at `r7756` and the algebra is right. The reading of `μ'` as a density is wrong, and the registration at `r7757+cc66.0` said so before the run.** ⇒ *Option (c) is **open**, and it is the answer.*
+
+### ① WHAT THE CONTENT-FILLED LEAVES ARE — **`r` labels the leaf; it is not a direction within one**
+
+`P15` `sec:properframe` step (iv), verbatim: *"the areal radius across the congruence depends on `τ,χ` only through their sum, **`r(τ,χ) = r(τ+χ)`**"* — and cosmic time is `τ̃ ≡ τ + χ`. ⇒ **On a constant-`τ̃` leaf, `r` is a single number.** Measured and not merely read: sweeping along each leaf by moving `χ` and compensating in `τ`, `2001` points per leaf, four leaves from today to last scattering, **the spread of `r` is `0`, `2.2e-16`, `3.3e-16`, `2.2e-16`** — while `r` varies by `1091×` **between** leaves, so the check is a test and not a tautology.
+
+⇒ *** So a "radial profile `ρ_r(r)`" has no referent inside a leaf. `ρ(r)` specifies the density **epoch by epoch**, and `m(r)` in the radial equation is **the gravitating energy of the comoving volume at the epoch labelled `r`** — not the mass interior to a sphere. ***
+
+**So the leaves are not something that departs from the cut.** 69's candidate — *the cut sets the stacking and the leaves' own history departs from it by the content's gravitation* — **is not needed, and I think it is not right.** There is no departure to account for: the content's gravitation **is** a bend of the cut, in the only direction the cut has. The cut's parameter *is* the epoch. ⇒ *The content-filled leaves are what the bent cut generates; the vacuum cut generates the leaves a contentless universe would have had.*
+
+**Tested against the two axioms the order names, and it passes both more cleanly than the alternative:**
+- **Projection Principle** (*valid iff the causal structure "faithfully encodes signal propagation on `(S_t, h_ij(t))`"*): on this reading there is one layer history, the bent cut's, and the projection built on it encodes propagation on the layer that exists. **No second history has to be adjudicated.** *My `r7755` §⑨ needed that axiom to choose between two rates; this reading removes the choice.*
+- **Non-Identity of Ontology and Representation**: nothing here reads a quantity off a projection. The leaf's own history is the existent, and the rate is read from it.
+
+### ② THE SIGN — **the two accounts differ by integrating a history as though it were a profile**
+
+Both accounts are this corpus's own, and the same instrument produces both.
+
+| | the mass function it uses | its radiation term | measured |
+|---|---|---|---|
+| **the history reading** | `μ(r) = 2M + K/r`, `K = (H₀/c)²Ω_r r₀⁴` — radiation's energy in a comoving volume **falls as `1/a`** | `+Ω_r(1+z)⁴` | reproduces `H_leaf` to **`1.2e-15`** |
+| **the profile reading** | `μ(r) = 2M + 3K(1/r₀ − 1/r)` — `ρ_r ∝ r⁻⁴` integrated as `∫4πρ r²dr` with `m(r₀) = M` | `−3Ω_r z(1+z)³` | reproduces `r7614`'s **published law** to `6.1e-11` |
+
+⇒ *** And the ratio of the two bends is **exactly** `−3z/(1+z)` — the very factor `P15` prints — to `6.7e-16`. So the whole of the sign difference is the one step: *** one reading asks **what energy the comoving volume holds at epoch `r`**, the other asks **what mass lies inside radius `r`** — and by ① the second question has no referent, because `r` does not run inside a leaf. **The `r⁻⁴` law is how radiation's density falls as the universe expands; it is not how radiation is distributed in radius on a leaf, where it is uniform.**
+
+⛭⛭ **AND THE KERNEL THEOREM IS UNTOUCHED EITHER WAY, WHICH IS THE PART I MOST WANT CHECKED.** `m'(r) ≠ 0` on **both** readings — measured: the history bend has `μ' ∈ [−1.40e+02, −1.18e-04]` (energy falling), the profile bend `μ' ∈ [+3.5e-04, +4.21e+02]`. ⇒ *`P15`'s "radiation is absent from the vacuum kernel, requiring `m'(r) ≠ 0`, a bend of the cut" is **true as written**. What was wrong was never that sentence; it was taking the bend to be a bend in **radius**.* **Radiation is content, it is not in the vacuum kernel, and it bends the cut — all three stand. The bend is in epoch, and the rate it gives is the leaf rate.**
+
+⇒ **Which account governs what?** The history reading governs **the cosmology**, because the cosmological leaves are homogeneous and `r` is their label. The profile reading governs **a static, radially structured atmosphere** — a real object, but not this one. *`r7614`'s `+2.75` per cent, and my own `r7755` §⑦, are both measurements of what the profile reading gives, and the profile reading is answering a question about a different object.*
+
+### ③ THE RULE RESTATED — **there are not two rates for quantities to take; there is one rate with two parts**
+
+If radiation's energy is in the cut, then `H²_leaf = H²_stack + H₀²Ω_r(1+z)⁴` **is a decomposition of one rate into its vacuum-kernel part and its content bend — not an assignment of two rates to two classes of quantity.** The classifier was reading a decomposition as a dispatch table.
+
+| `P7`'s present list | where it goes, and why |
+|---|---|
+| `D_M` | **the one rate.** It is accumulated across the leaves the universe actually has |
+| `D_H`, `D_V` | **the one rate**, and for the same reason; they are built from the same `H(z)` |
+| *"the observable expansion"* | **the one rate** — it is what a measurement of `H(z)` returns, and there is nothing else for it to be |
+| `rs`, `r_D`, recombination, the perturbations, BBN | **the one rate — unchanged.** These were already on `H_leaf`; nothing moves |
+| `z_acc = x₀ − 1`, `Λ` setting the amplitude, the `sinh^{2/3}` law | **the vacuum-kernel part**, and *measured to be safe*: `\|H_leaf/H_stack − 1\|` is **`4.4e-05` at `z = 0`** and first reaches one per cent only at **`z = 66.8`** |
+
+⇒ *** So the stacking rate keeps everything it was introduced for — `Λ` and the offset fix the expansion, the epoch is a clock reading, Eddington's problem stays answered, the `sinh^{2/3}` law is untouched to four decimal places wherever it is used — and it stops being a rate that *lengths* take, because below `z ≈ 67` it is not distinguishable from the full rate, and above it, it is not the rate the universe had. ***
+
+⌗ **And the BAO barely moves either way (`0.021` per cent at worst, `r7753`), so the rule is being stated for correctness and not for fit** — which is what the order asked.
+
+### ④ THE STRONGEST REMAINING REPLY (`r7755` §⑨⒣) — **it stands as an objection, and it is no longer load-bearing**
+
+§⑨⒣ was: *the Projection Principle governs causal structure, not the metric length a signal accumulates.* ⇒ **I do not think that can be answered, and I am not going to pretend otherwise.** What I would say instead is that it no longer decides anything: §⑨ needed the axiom to adjudicate **between two candidate rates**, and on ①–③ there is one rate. *The objection survives; the argument it was aimed at is no longer the one doing the work.*
+
+### ⑤ WHAT THIS DOES TO THE REGISTER'S CURRENT STATE, SAID PLAINLY
+
+The row now carries `r7755`'s premise analysis as its state. **Two halves of it survive and one does not.**
+- ✔ **The history survives.** The classifier entered whole at `r2419` and was never derived; `P10` grounds it for plasma processes and files distance under the shift; `P16` calls the exclusion structural rather than measured. None of that is touched.
+- ✔ **The `rs`/`D_M` asymmetry survives**, and is now explained rather than merely noticed: both ride the one rate.
+- ✘ **`P*` is not the separating premise, because the dichotomy was wrong.** I framed it as (a) vacuum history versus (b) the leaf's own, with (c) closed by §⑦. **(c) was never closed.** The separating step is not a premise about which history the leaves have; it is the reading of `m(r)` as a radial profile.
+
+### ⑥ WHAT THIS DOES NOT CLAIM
+
+- **Not that the leaf rate is thereby proved.** It shows the corpus's own machinery produces it without a new ingredient and without the premise I named last round. **Whether the cut the construction intends carries radiation's energy is 69's ruling**, and it is a question about the slicing operator, not about my arithmetic.
+- **Not that `r7614` made an error.** It measured what a radial `ρ_r ∝ r⁻⁴` profile gives, correctly. The finding is that the cosmological leaf has no radial direction for such a profile to live in.
+- **Not that the Nariai rate moves.** Measured at `4.4e-05` today; see ③.
+- **Not a paper edit.** The order forbids them. ③'s table is the draft of the restated rule for `P7` and `sec:flatlcdm`, and nothing is written into either.
+- **Nothing fitted, no significance, no row opened.**
 ## ⛔⛭⛭ `r7755+cc66` — **THE TWO RATES ARE TWO HISTORIES OF *ONE* CONGRUENCE IN *ONE* CLOCK, SO THE CROSSING CANNOT BE SORTED BY WHICH CONGRUENCE IT BELONGS TO. THE PREMISE THE STACKING READING NEEDS IS THAT THE LEAVES' HISTORY IS THE VACUUM CUT'S — AND IT ENTERED THE CORPUS WHOLE, IN ONE COMMIT, NEVER ARGUED. ⛭ AND THE CUT CANNOT SUPPLY THE LEAF RATE AT ALL: THE MASS FUNCTION IT DEMANDS CARRIES A NEGATIVE `r⁻⁴` DENSITY**
 
 Order `r7755`, all four items. ⛭ **I am not defending `r7753`.** Two of its three reasons do not survive this reading and I say which and why below. The caution in the order is correct and it applies to my own previous answer first.
