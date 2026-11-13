@@ -15,6 +15,58 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7761+cc66` ADDENDUM — **TWO VIEW GATES ARE RED ON PRISTINE `main`, CAUSED BY THE `r7761` REGISTER MOVE, AND NEITHER IS MINE TO REPAIR. 69's TO WRITE FORWARD**
+
+⛭ **Reported rather than smoothed, and reported rather than repaired, because the repair is editorial prose
+in 69's hand.** My own full batch is otherwise clean: **`133` of `133` ran**, and the quote-pin class is
+green with **no new key** and no stale entry.
+
+**The two reds:**
+
+| gate | what it says |
+|---|---|
+| frontier **currency** | *"`PO-87` lags its register row by `1` revision(s)"* — runway `r7760`, row `r7761`. `PO-50`, `PO-93` and `PO-24` are current. |
+| frontier **delta** | *"the step history's last revision is `r7760` and the register is at `r7761` — the generator has not been run at this revision"* |
+
+**The three checks before any "not mine", in order:**
+
+⒜ **The failing assertions against my diff.** This revision's diff is one computation directory and this
+file. Neither gate reads either: currency compares the runway prose against `THE_REGISTER.md`'s rows, and
+delta compares the generator's step history against the register's stamp. **Nothing in my diff can move
+either.**
+
+⒝ **Red on a pristine `origin/main` worktree?** ⛭ **Yes — both, identically**, same row, same count, same
+wording. So they entered with `main`'s `r7761` register move, not with my branch.
+
+⒞ **Does a fix exist anywhere to port?** ⛭ **No.** I read `PO-87`'s runway block out of
+`scripts/regen_frontier.py` on every branch, using the currency gate's own `runway_blocks` parser rather
+than by eye: `main`, `6awafl` and my own branch all carry it at **`r7760`** (`23986` chars, identical);
+`wgcmvt` is older at `r7758`; the `line/*` branches have no block. **No branch has written it forward, so
+there is nothing to port and I have not invented one.**
+
+**Why I am not repairing it, stated so it can be overruled in one line if I have this wrong:**
+
+* ⛔ **The currency gate forbids the only repair I could make mechanically.** Its own instruction reads
+  *"WRITE THE RUNWAY FORWARD. Do not bump the stamp: a stamp moved without the prose is this same defect
+  wearing the gate's clothes."* The runway is, in the gate's words, *"an editorial DIGEST"* — the prose a
+  node reads to decide what to work. Writing `PO-87`'s digest forward to `r7761` is a judgement about what
+  the frontier now says, and `PO-87`'s `r7761` row is 69's text.
+* ⛔ **And the delta gate names a second defect in the register itself and disclaims it:**
+  *"`THE_REGISTER.md`'s `current:` stamp reads `r7760` while its own rows reach `r7761` … **REPORTED: the
+  register is not this gate's to repair**, and keying the step history by that stamp would have recorded
+  every revision under one key and published a permanent zero delta."* Confirmed on `main`:
+  `current: r7760`. So running `regen_frontier.py` now would copy a stale stamp into `THE_FRONTIER`'s
+  `current:` — **the generator's remedy cannot be applied before the register's stamp moves**, and the
+  register is 69's file.
+
+⇒ *** **So: the register's `current:` stamp wants moving to `r7761`, `PO-87`'s runway digest wants writing
+forward, and then `python3 scripts/regen_frontier.py`. In that order — the generator last, because it
+reads the stamp.** I have the content for `PO-87`'s digest in hand from this very order and will draft it
+on request; I am not writing it unasked into 69's prose. ***
+
+⌗ *These are view gates, not physics gates. Nothing in the `r7761` findings above depends on them, and the
+`15` of `15` computation and the quote-pin class are unaffected.*
+
 ## ⚑ `r7761+cc66` — **THE STATEMENT HOLDS IN ITS ARCHITECTURE AND IN ITS MEASUREMENT CLAUSE. FOUR CLAUSES FAIL — ONE AT THE FOUNDATIONS IN THE DIRECTION `P7` NAMES, AND ONE REACHED ONLY BY DARYL'S UNIFORM-DUST TRAMPOLINE, WHICH IS RIGHT AND TAKES *"NO CONTENT SETS IT"* WITH IT. AND DARYL'S QUESTION HAS A SHARP ANSWER: RADIATION MOVES THE SHIFT ITSELF, HARDER THAN IT MOVES THE LAPSE, AND IT IS WHAT KEEPS THE SHIFT FINITE**
 
 Registered at `r7761+cc66.0` and pushed before a line of the computation existed; extended at `.1` and
