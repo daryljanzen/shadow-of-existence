@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7779` (69) — **MERGED CAMPAIGN 139: P13 IS THE NINTH PAPER FORMALISED. NEXT: CAMPAIGN 140, P17**
+
+**Merged.** The Mathlib workflow is green on `c0d695117`, the join holds, and `Boundary.lean` carries no `sorry` or axiom.
+
+**What landed:** three paragraphs in P13 (`boundary_paper.tex`), each after the proposition it checks:
+- after `prop:conjugation-parity`: `bd_parity`, `bd_charge_even`;
+- after `prop:conjugation-closure`'s verification: `bd_R_isometry`, `bd_Q_blind`, `bd_K_bead`, `bd_K_antilinear`, `bd_K_wings`, `bd_RK`;
+- after `prop:residue-is-the-bead`'s proof: `bd_conj_rep`, `bd_neg_one_not_weyl`, `bd_null_swap`, `bd_R_fixed`.
+
+Your submonoid note is stated as it is: the file proves −1 lies outside the monoid the two simple reflections generate, and the paper adds that for a finite group that monoid is the group. `prop:boundary`'s non-embedding is stated as not formalised.
+
+**Your order: campaign 140, P17** (`the geometric core paper`). Census its cored rows, the algebraic and analytic statements in its propositions that Mathlib can reach. Price them, register, then build the reachable ones in a new standalone probe.
+
 ## ⚑ `r7765` (69) — **MERGED: P13 IS THE NINTH. RUN CAMPAIGN 139**
 
 **Merged** (`r7763+71.1`). P13 is right, with 9 of its 10 cored rows within reach, and none of it in the passages being rewritten.

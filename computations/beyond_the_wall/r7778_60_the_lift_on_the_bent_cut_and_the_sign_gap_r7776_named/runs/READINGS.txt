@@ -1,0 +1,145 @@
+====================================================================================================
+r7778 (60) -- the lift on the bent cut (the remainder of r7763's item 2)
+  HEAD: 2cdefdb529e83066ea19e83570214109c921d199   origin/main: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
+  shallow clone: false;  commits from HEAD: 8012
+  derived: alpha=5213.287 Mpc  r0=5051.488 Mpc  2M=2006.5950 Mpc  K=3006.658 Mpc^2
+           the vacuum comoving turnaround r_t = (2M alpha^2)^(1/3) = 3792.227 Mpc
+           pi*alpha/3 = 5459.341081 Mpc    K/2M = 1.498388 Mpc
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- which object each of the six bead conditions uses
+  [PASS]
+    the Nariai condition  Lambda G^2 M^2/c^4 = 1/9  (<=> 2M = 2 alpha/(3 sqrt 3)) -> does not involve mu at all
+    the unit-speed seams     f = 0                                 -> mu enters as mu/r^1
+    the comoving turnaround  1 - f = 0                             -> mu enters as mu/r^1
+    the Euclidean null       f = 2                                 -> mu enters as mu/r^1
+    the contour radicand     (dr/dtau)^2 = 1 - f                   -> mu enters as mu/r^1
+    the rate                 h^2 = mu/r^3 + 1/alpha^2              -> mu enters as mu/r^3
+  bare-mu conditions among the six: 0  []
+  => the fork r7776 posed about mu is posed about an object no enumerated condition uses alone
+
+====================================================================================================
+ARM 2 -- the parity of the radiation term in the contour radicand
+  [PASS]
+    1 - f  =  K/r**2 + twoM/r + r**2/alpha**2
+    r -> -r:  K/r**2 - twoM/r + r**2/alpha**2
+    the K term is EVEN:        True
+    the 2M term is ODD:        True
+      |r| = 0.001         K/r^2 = 3.006658e+09 (same sign at -|r|)   2M/r = 2.006595e+06 (flips)
+      |r| = 1             K/r^2 = 3.006658e+03 (same sign at -|r|)   2M/r = 2.006595e+03 (flips)
+      |r| = 1000          K/r^2 = 3.006658e-03 (same sign at -|r|)   2M/r = 2.006595e+00 (flips)
+      |r| = 3792          K/r^2 = 2.090718e-04 (same sign at -|r|)   2M/r = 5.291337e-01 (flips)
+  => radiation enters the comoving velocity with the SAME sign on both branches
+
+====================================================================================================
+ARM 3 -- the parity and sign of radiation's contribution to the rate
+  [PASS]
+    |r| = 0.001         K/r^4 at +|r| =  3.006658e+15   at -|r| =  3.006658e+15
+    |r| = 1             K/r^4 at +|r| =  3.006658e+03   at -|r| =  3.006658e+03
+    |r| = 1000          K/r^4 at +|r| =  3.006658e-09   at -|r| =  3.006658e-09
+    |r| = 3792          K/r^4 at +|r| =  1.453807e-11   at -|r| =  1.453807e-11
+  => the radiation term in the RATE is even and positive on both branches;
+     r7776's 'a negative radiation term is not radiation' was about mu's bookkeeping in a
+     SIGNED coordinate, and not about a density
+
+====================================================================================================
+ARM 4 -- thm:bead's continuation holds 2M fixed; R = gamma^5 also flips it, and they are two maps
+  [FAIL]
+    symbolic residual with 2M POSITIVE:  0
+    worst relative residual, 2M positive, 9 samples across the collapse leg: 5.683e-15
+    best  relative residual with 2M -> -2M in the ODE only (the control):   4.915e-05
+    sentences carrying the mass reflection 2M -> -2M: 5
+    sentences carrying the theorem continuation of r: 1
+      [R]    ...The mass-reflection acts on each: on the horizon roots $R:2M\mapsto-2M$ sends them to their negatives and, because $-1\notin W(A_2)$, induces the diagram automorphism conjugating $\mathbf 3\leftrighta
+      [R]    ...The conjugate ($r<0$) branch is the areal reflection $r\mapsto-r$ of the expansion leg, and under the mass-reflection $R=\gamma^5$ (the $A_2$ diagram automorphism, $2M\mapsto-2M$) it is the antifundam
+      [cont] ...Continuing $r$ onto the signed lap, $\tilde\tau(r)=\int dr\,(2M/r+r^2/\alpha^2)^{-1/2}$ is real for $r>0$; for $0>r>-(2M\alpha^2)^{1/3}$ the radicand is negative, so $\tilde\tau$ leaves the real axis,
+  => the DYNAMICAL continuation signs r and keeps 2M; R = gamma^5 is a separate,
+     representational reflection -- r7776 read the second into the first
+
+====================================================================================================
+ARM 5 -- the lift gains an inner boundary: two roots at r < 0, not one
+  [PASS]
+    real positive roots of  s^4/alpha^2 - 2M s + K = 0 :  2
+      s = 1.498387999 Mpc   (r = -1.498387999)
+      s = 3791.727309477 Mpc   (r = -3791.727309477)
+    the registered estimate K/2M = 1.498388 Mpc;  inner root/estimate = 1.000000000
+    vacuum cut, for comparison: the radicand is negative on exactly -r_t < r < 0, r_t = 3792.227
+  => the imaginary excursion is an interval strictly inside (-r_t, 0): it does NOT reach r = 0
+
+====================================================================================================
+ARM 6 -- the outer root's displacement: the comoving turnaround moves inward
+  [PASS]
+    vacuum  |r| = 3792.226904 Mpc
+    bent    |r| = 3791.727309 Mpc
+    inward by 0.499594 Mpc  =  1.317417e-04 relative
+    the registered scale K/(2M r_t) = 3.951209e-04
+
+====================================================================================================
+ARM 7 -- the printed bound pi*alpha/3 is independent of M and NOT independent of K
+  [FAIL]
+    vacuum cut, by quadrature over (0, r_t):   |Im tau| = 5459.341081446 Mpc
+    pi*alpha/3                                           = 5459.341081456 Mpc
+    relative agreement: 1.972e-12   (the paper: "fixed by the exponent, independent of M")
+    bent cut, over the lift (1.498388, 3791.727309): |Im tau| = 5461.007981073 Mpc
+    shortfall against the printed bound: -1.666899616 Mpc = -3.053298e-04 relative
+  => the bend SHORTENS the imaginary excursion; the bound carries K
+
+====================================================================================================
+ARM 8 -- the lap gains a segment: three becomes four
+  [PASS]
+    vacuum cut, |r| in (1e-8, 5e4):  2 segment(s)
+      |r|        1e-08 ..      3797.52   radicand NEGATIVE (the lift)
+      |r|      3797.52 ..        50000   radicand POSITIVE (Re tau advances)
+    bent cut:                        3 segment(s)
+      |r|        1e-08 ..       1.4997   radicand POSITIVE (Re tau advances)
+      |r|       1.4997 ..      3791.97   radicand NEGATIVE (the lift)
+      |r|      3791.97 ..        50000   radicand POSITIVE (Re tau advances)
+  => on the conjugate side the branch point is reached in REAL cosmic time on the bent cut
+
+====================================================================================================
+ARM 9 -- the approach from the conjugate side is radiation's, and in real cosmic time
+  [PASS]
+    tau(1e-4 Mpc) = 9.118799380e-11 Mpc      tau(1e-3 Mpc) = 9.120625815e-09 Mpc
+    d ln|r| / d ln|tau| = 0.499978       (radiation 1/2, dust 2/3)
+    radicand positive on the whole interval (tau real): True
+    r7776 measured 0.500022 on the MATTER branch over the same decade
+  => the same radiation exponent on both branches, as arm 2 requires
+
+====================================================================================================
+ARM 10 -- the two branches' rates at the same areal radius
+  [FAIL]
+    |r| = 0.001         h^2(+|r|) =  3.008664449e+15   h^2(-|r|) =  3.004651259e+15   rel diff 1.333878e-03
+    |r| = 1             h^2(+|r|) =  5.013252846e+03   h^2(-|r|) =  1.000062862e+03   rel diff 8.005162e-01
+    |r| = 3792          h^2(+|r|) =  7.360249996e-08   h^2(-|r|) =  1.453806981e-11   rel diff 9.998025e-01
+    the registered number was "better than 1e-8 at |r| = 1e-3": measured 1.333878e-03
+    the exact relative difference is 2 (2M/K) |r| = 1.334768e-03 at 1e-3 Mpc
+  => the qualitative half holds (radiation even, dust odd, order unity at r_t); the registered
+     THRESHOLD was wrong, and wrong by a factor this line could have computed before
+     registering: agreement reaches 1e-8 only below |r| ~ 7.492e-09 Mpc
+
+====================================================================================================
+ARM 11 -- the honest form of the fork: a disjunction over the progenitor, and what the text assigns
+  [PASS]
+    regions searched: 8  -- ['the theorem', 'its proof', 'rem:head-admissible', 'the scope paragraph', 'lem:twoturnings', 'caption fig:dS_SdS (C)', 'caption of the lap figure', 'sec:lift-initial-rate']
+    *** THE REGISTRATION CALLED THESE "SEVEN PLACES" AND THEN LISTED EIGHT.  Eight were searched. ***
+    sentences assigning content near the collapse leg / branch point: 1
+      [caption fig:dS_SdS (C)] On both legs alike the two rates are the one decomposition $H_{\text{leaf}}^{2}=H_{\text{stack}}^{2}+H_0^{2}\Omega_r(1+z)^{4}$ (Eq.~\ref{eq:two-rate}): content processes---the cooling leg's nucleosynthesis, the plasma's sound horizon and diffusion---run on the
+  => nothing measured here says the progenitor branch CARRIES radiation; it says no sign
+     obstruction forbids it.  The fork is a disjunction over the progenitor, not a contradiction
+
+====================================================================================================
+ARMS: 8 of 11 meet their criterion
+  PASS  arm  1  which object each of the six bead conditions uses
+  PASS  arm  2  the parity of the radiation term in the contour radicand
+  PASS  arm  3  the parity and sign of radiation's contribution to the rate
+  FAIL  arm  4  thm:bead's continuation holds 2M fixed; R = gamma^5 also flips it, and they are two maps
+  PASS  arm  5  the lift gains an inner boundary: two roots at r < 0, not one
+  PASS  arm  6  the outer root's displacement: the comoving turnaround moves inward
+  FAIL  arm  7  the printed bound pi*alpha/3 is independent of M and NOT independent of K
+  PASS  arm  8  the lap gains a segment: three becomes four
+  PASS  arm  9  the approach from the conjugate side is radiation's, and in real cosmic time
+  FAIL  arm 10  the two branches' rates at the same areal radius
+  PASS  arm 11  the honest form of the fork: a disjunction over the progenitor, and what the text assigns
+REGISTERED ARM COUNT: 11   MEASURED ARM COUNT: 11
+====================================================================================================

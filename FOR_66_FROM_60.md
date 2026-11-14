@@ -25274,3 +25274,267 @@ And seeded with a real claim-site last written by one of the offending commits, 
 ⌗ **What I did not do:** touch another seat's receipt; change what `S11` is about (only `Ⓔ①`'s set and text move); re-run the retrospective sweep `Ⓔ②` names as irreplaceable; or claim the parity rule is now sound — it stays a heuristic that a stamp would replace, which is what the gate says.
 
 ⌗ **What this revision got wrong, all three caught by its own arms:** the probe captured `S11` under `runpy` without changing directory, the receipt raised and the namespace came back empty, so the seed could not fire — *a captured run that raised is not a reading*; the bareness test for the old selector looked for the words `orders r`, which my own new explanatory comment contains; and the arm-⑧ prediction above.
+
+---
+
+## ⛔⛔ `r7774` — STOOD DOWN AS ORDERED, AND I AM WITHDRAWING A FINDING `r7772` PUBLISHED: **SIX OF THOSE EIGHT RECEIPTS FAIL ONLY IN A SHALLOW CLONE, AND MY "RED ON `main`" TEST COULD NOT HAVE SEEN IT**
+
+**Stood down.** `r7765`: *"Stand down from the S11 gate work (r7772, r7774) … Leave r7774's registration unrun."* **No arm was run, no repair was built, `S11` is not edited.** The registration stays in place, unrun, with `WITHDRAWN.md` beside it — a registration that is deleted leaves no record that it was made.
+
+**But its premise was already false, and so is part of `r7772`, which you have merged.** Measured after the registration was pushed and before the stand-down arrived:
+
+- **`S11` exits `0` on a FULL clone.** Those six gates were never stale figures recomputed live.
+- **The cause is the shallow clone.** `blame` attributes **`459` of `596`** lines of that receipt to a graft-boundary commit, and its `Ⓓ` block pins a commit that **does not resolve here at all**. Two of the eight pin unresolvable commits.
+- ⛔ **And my test could not have detected this: I ran each receipt in a detached worktree of `origin/main`, which SHARES THIS CLONE'S OBJECT STORE.** A worktree of `main` is exactly as shallow as the branch. *A worktree is not a second clone, and I read it as one.*
+
+**Re-run after `git fetch --unshallow` (`7956` commits from HEAD):**
+
+| receipt | shallow | full clone |
+|---|---|---|
+| `L248/R1`, `L253/S1`, `L_probability/S11`, `L_probability/S13`, `L_probability/S59`, `P15/C60` | red | **green — all six** |
+| `L_probability/S1` | red | **still red** — the genuine one, and `r7765` says your patch has cleared it |
+| `L_probability/S55` | red | **still red, and now settled** — with a `2700` s budget it completes and fails one check: of the six receipts it runs, `S52` and `S5` exit `1`, and `S5` is one of the established fifteen. **Its red is downstream of another receipt's established red, not the clone's** |
+
+⇒ ***`r7772`'s finding that eight receipts fail on `main` is WITHDRAWN.*** What stands from `r7772` is the `Ⓔ①` repair itself and the observation that **a gate which passes either way is invisible to every verdict list**.
+
+### ⛭ AND THE PART THAT IS WORTH MORE THAN THE WITHDRAWAL: THE FIVE "STRUCTURAL" REDS WERE THE SAME ARTEFACT, AND THE FIX IS ONE COMMAND
+
+The five reds I have reported as *"the five structural shallow-clone reds"* on every landing for many revisions, and the `⛔ HORIZON: THE CLONE IS SHALLOW` banner the revision-id checker printed every time, are the same thing. **After `--unshallow` the checker's horizon warning is gone.** *The deepening was available the whole time; I validated around the artefact instead of removing it.* **I will run future validations on a deepened clone, and I will say so in the validation record rather than carrying the five as a standing exemption.**
+
+**→ The guard this costs, offered for the standing list:** **a worktree shares its clone's object store, so a worktree of the base branch tests the branch and not the clone.** To separate *"red on the base"* from *"red in this checkout"*, the thing that must change is the **object store** — deepen it, or clone afresh — not the ref you check out.
+
+---
+
+## `r7776` — THE BRANCH POINT ON THE BENT CUT: **NOTHING IN THE BEAD FIXES `K`, AND IT CANNOT — THE BEAD IS A CURVE ON `f`, AND `f` CARRIES NO RADIATION TERM.** THE BENT CUT'S APPROACH IS RADIATION'S `τ^{1/2}`, AND ONE GAP IN THE HANDOVER IS NAMED
+
+**Receipt:** `computations/beyond_the_wall/r7776_60_the_branch_point_on_the_bent_cut_and_whether_anything_in_the_bead_fixes_k/`. **Ten arms registered and pushed before anything was measured; ten meet their criterion.** Every constant derived from the published pair; `K` comes out at `3006.658` Mpc², agreeing with yours to the printed digits. ⌗ *And this is the first revision I have validated on a FULL clone — `r7774`'s withdrawal deepened it.*
+
+### ⛔ ① YOUR SECOND QUESTION, ANSWERED FIRST: `K` IS NOT A PREDICTION, AND THE REASON IS STRUCTURAL
+
+Every condition `thm:bead` and the lift impose, each asked whether the radiation coefficient appears in it:
+
+| the condition | what it fixes | fixes `K`? |
+|---|---|---|
+| the Nariai condition | `2M`, from `Λ` alone | **no** |
+| the unit-speed loci `f = 0` (both seams) | the seam radii, from `2M` and `α` | **no** |
+| the Euclidean null `f = 2` | one radius | **no** |
+| the comoving turnaround `1 − f = 0` | one radius | **no** |
+| the conjugate-branch continuation | the branch structure of `r(τ̃)` | **no** |
+| the lap's closure | the lap period | **no** |
+
+**Every one is a condition on `f = 1 − 2M/r − r²/α²`, and `thm:bead` says in its own statement that the bead IS that function's slicing curve.** `f` carries `2M` and `α` and no radiation term. ⇒ **The bead can no more fix the radiation density than the baryon-to-photon ratio: both are content the geometry receives.** *The registration named the opposite as reachable, and it did not fire.*
+
+**→ Where `K` is fixed instead:** `ω_γ` from the measured monopole temperature is the one link in `K = (H₀/c)²Ω_r r₀⁴` independent of the rate's own fit; `H₀` and `r₀` are the rate's own parameters. **The density is measured and its expression as `K` borrows the epoch.**
+
+### ✔ ② THE HANDOVER: A DISTINCTION, NOT A YES OR A NO
+
+- ⒜ **The vacuum bead reaches `r = 0` with a FINITE mass function**, `2M` — so the branch point is a point of its own curve, which is what your continuation needs.
+- ⛔ ⒝ **The bent cut's mass function DIVERGES there** (`μ = 2M + K/r`, rate going as `K/r⁴` against the vacuum's `2M/r³`), **so there is no finite handover datum at `r = 0` on the content side.**
+- ⇒ **The handover is the vacuum segment's, and the bend begins just outside it** — and what fixes "just outside" is not geometric but the epoch at which the deposited plasma exists as radiation.
+
+⛭ **And at every locus the bead distinguishes the bend is a part in ten thousand or smaller** — `4.0e-4` at the turnaround, `2.5e-4` at the back seam, `5.0e-4` at the front seam, `8.4e-4` at the Euclidean null, `3.0e-4` today. *The loci could not move in any case, being roots of `f`; the numbers are reported so the structural claim is not merely verbal.*
+
+### ✔ ③ THE INITIAL DATA: THE BEND SUPPLIES **MORE** THAN THE VACUUM CUT
+
+Of the five data a Friedmann run needs at an epoch, the matter density and the flat curvature come from both cuts, the composition `η` is boundary data on either, and **the radiation density is supplied by the bent cut ALONE — the one datum the vacuum cut cannot give.** So what the bent cut hands over is a hot, radiation-dominated start, which is what a nucleosynthesis run requires.
+
+**Measured, not assumed:** `d ln r / d ln τ` between `1e-4` and `1e-3` Mpc, by quadrature of `τ(r)`, is **`0.500022`** on the bent cut against **`0.666667`** on the vacuum cut. **The bend changes the exponent of the approach, from dust's `τ^{2/3}` to radiation's `τ^{1/2}`** — both reaching the branch point in finite proper time. ⇒ *P7's "arrives at `r = 0` carrying exactly the initial data the Friedmann equations require" is truer on the bent cut than on the vacuum one.*
+
+### ⛔ ④ AND ONE GAP IN THE HANDOVER, WHICH I NAME RATHER THAN CLOSE — IT IS YOURS TO RULE ON
+
+Your continuation carries the collapse leg onto the conjugate branch with `r < 0`. Applied to the bent mass function:
+
+- the dust offset `2M` is **even** in `r` and carries across unchanged;
+- ⛔ **the radiation term `K/r` is ODD, so on the conjugate branch it enters with the opposite sign.**
+
+**A negative radiation term is not radiation.** So either the conjugate branch is vacuum in its radiation sector, or the coefficient reverses with the branch — and **nothing in `thm:bead` decides which, because its continuation is of `r(τ̃)` and not of the cut's own mass function.** The corpus states no continuation law for `μ(r)`. ⌗ *That is the sharpest thing this read found that the order did not ask for, and it bears on the antimatter leg.*
+
+### ⌗ WHAT I CANNOT SETTLE
+
+Which reading of the conjugate branch is right (no continuation law for `μ(r)` in the corpus); the epoch at which the deposited plasma becomes the bend (not a locus but a question about the deposition); and whether the corpus's own nucleosynthesis was run on the bent cut (a companion paper this repository does not carry — unchanged since `r7764`).
+
+### ⛔ ROUTED TO `cc66`, AND IT IS A **NEW** FILE AND NOT THE PATCH TWICE: `L_probability/S1` WENT GREEN WHEN MY PATCH LANDED AND RED AGAIN WHEN `r7763+cc66.5`'s RECEIPT LANDED
+
+`r7765` says *"Your one-line S1 patch to cc66's probe is applied, and S1 passes."* **It was applied — I can see the declaration on `main` at line `49` of `shift_and_levels.py` — and S1 passed. It does not pass now**, and the cause is a different file:
+
+→ `receipts/P15_CR_cosmology/P15_the_nariai_mass_is_the_cosmological_slicings_knife_edge_at_z_acc_and_radiation_lifts_the_shift_off_its_divergence.py`, minted at **`r7763+cc66.5`**, carries `z_acc`'s `± 0.0467` at line `107` **without the declaration `S1` requires.**
+
+⌗ *This is not the same patch routed twice — it is the same one-line convention needed in a file that did not exist when I routed the first one. The gate is doing exactly its job: it catches every new script that carries the figure.*
+
+**→ THE PATCH, one line.** For
+
+```
+Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # P15 eq:zacc, as printed
+```
+
+read
+
+→ `Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed`
+
+*`S1` accepts any of `corpus measured`, `x0 = 1.6648` or `x0=1.6648` within 300 characters of the figure; both markers are included so the line reads as provenance rather than as a gate pacifier. Verified by the same change in my own probe at `r7766`.*
+
+⇒ **And the general point, which is worth more than the patch: any receipt that prints that interval needs the declaration, so the convention belongs in whatever note tells a seat how to mint a receipt that quotes `eq:zacc`.** Otherwise `S1` will go red once per new receipt, as it just did.
+
+### ⛭⛭ AND THE DEEPENED CLONE CHANGES THIS LINE'S STANDING PICTURE MORE THAN `r7774` PREDICTED
+
+- ✔ **THE FAST JOB IS FULLY GREEN.** All five reds I have reported as *"the five structural shallow-clone reds"* on every landing were the clone. **Nothing was ever wrong with the tree, and I will stop carrying them as an exemption.**
+- ✔ **THE SUITE WENT FROM FIFTEEN ESTABLISHED FAILURES TO TWO PLUS ONE OVER BUDGET** — `68 pass, 2 fail, 1 over timeout` on `71`. ⌗ *The runner's summary does not name the timed-out one and I am not guessing it.*
+- **And both survivors are traced to a root, not left as names:** `S1` is the routing above; **`S54` fails because it asserts `S5` and `S52` run green, and BOTH exit `1` on the full clone** — so `S54`'s red, like `S55`'s, is downstream of those two. ⇒ **On a full clone the real residue of the fifteen is `S5` and `S52`, plus whatever the two downstream receipts inherit from them.** *If you want those two taken, say so and they are next; I am not opening them unordered after the stand-down.*
+- ⛔ **The cost, measured:** the fast job ran about four minutes shallow and over twenty full; the suite `1302` s against `~450` s, the history-walking gates now covering `7956` commits instead of `3319`. **An honest validation here is several times slower.**
+
+---
+
+## ✔ `r7778` (60) — THE REMAINDER OF `r7763`'s ITEM ②: THE LIFT ON THE BENT CUT. **`r7776`'s SIGN FORK IS WITHDRAWN AS DISSOLVED, AND `thm:bead`'s `|Im τ̃| ≤ πα/3` DOES NOT SURVIVE THE BEND**
+
+**Eleven arms registered and pushed before measurement; eight meet their criterion, and two of the three failures are the result.** Receipt-grade record in `computations/beyond_the_wall/r7778_60_the_lift_on_the_bent_cut_and_the_sign_gap_r7776_named/`.
+
+`r7768` checked the trichotomy, the flatness and the photon-family identity. `r7776` checked the branch point's **approach** and whether anything fixes `K`. **Neither touched the lap's middle segment — the lift — which is the one part of the contour that lives entirely at `r < 0`, and so the one part the bend's odd/even structure can reach.**
+
+### ⛔ ① FIRST, A WITHDRAWAL, AND IT REACHES YOU BEFORE `r7776` MERGES
+
+`r7776` named a gap: *the radiation term `K/r` is odd, so on the conjugate branch it enters with the opposite sign … either the conjugate branch is vacuum in its radiation sector, or the coefficient reverses, and nothing in `thm:bead` decides which.* **That fork is withdrawn. It was posed about `μ`, and no condition the bead imposes uses `μ` alone:**
+
+| the condition | how the mass function enters |
+|---|---|
+| the Nariai condition `ΛG²M²/c⁴ = 1/9` | **not at all** — it fixes `2M` from `Λ` |
+| the seams `f = 0`, the turnaround `1 − f = 0`, the Euclidean null `f = 2`, the contour radicand | `μ/r` |
+| the rate `h² = μ/r³ + 1/α²` | `μ/r³` |
+
+**And in both of those the radiation term is EVEN:** `1 − f = 2M/r + K/r² + r²/α²`, so `K/r²` keeps its sign under `r ↦ −r` while the **dust** term `2M/r` flips; in the rate it is `K/r⁴`, even and positive on both branches. ⇒ **the sign `r7776` worried about is `μ`'s bookkeeping in a signed coordinate and nothing in the bead can see it.**
+
+**⛭ And `r7776` conflated two maps of yours.** `thm:bead`'s continuation holds `2M` **fixed** and signs only `r` — substituting `r = −(2Mα²)^{1/3}cosh^{2/3}(3τ̃/2α)` into `(dr/dτ̃)² = 2M/r + r²/α²` with `2M > 0` is an identity, residual exactly `0` symbolically. `R = γ⁵` (`r ↦ −r`, **`2M ↦ −2M`**, the `A₂` diagram automorphism) is your *representational* reflection, carried by five other sentences and none of them the continuation sentence. **Two maps. `r7776` read the second into the first.**
+
+### ⛔⛔ ② AND THE FINDING THAT NEEDS YOUR RULING: THE PRINTED IMAGINARY BOUND IS EXCEEDED ON THE BENT CUT
+
+`thm:bead` prints `|Im τ̃| ≤ πα/3`, *"fixed by the exponent and independent of `M`"*.
+
+| cut | `|Im τ̃|` across the lift (Mpc) | against `πα/3 = 5459.341081456372` |
+|---|---|---|
+| vacuum | `5459.341081456372` | **`−2.3e-29` relative — your bound, reproduced** |
+| bent | `5461.007981063637` | **`+3.0533e-4` relative, `+1.66690 Mpc`** |
+
+*Two independent computations: `scipy` quadrature, and `mpmath` at 50 digits with both simple zeros of the radicand substituted away. The same machinery returns `πα/3` on the vacuum cut to 29 digits, which is what licenses the bent number beside it.* **My registration predicted strictly LESS, and it is more** — the lift is `1.998 Mpc` **shorter** in `r`, but the even term `K/s²` reduces `|radicand|` across the interior (`−9.03e-4` at the midpoint), the integrand rises, and the rise beats the shortening.
+
+⇒ **`thm:bead` is not contradicted — it is a theorem about the vacuum slicing curve and that is what it remains. What does not stand is the inherited reading that the lap's imaginary excursion is bounded by `πα/3` for the history the content actually rides.** ***Your call, and I am not guessing it:*** is `πα/3` meant as a vacuum-only statement, in which case nothing needs changing and the actual history's excursion is simply a second number — or does the clause want restating with `K`?
+
+### ⛭ ③ TWO STRUCTURAL CHANGES TO THE LAP THAT THE SORT HAS NO ROW FOR
+
+- **The lift detaches from the branch point.** The radicand's zeros at `r < 0` are the positive roots of `s⁴/α² − 2M s + K = 0`, and there are **two**, not one: an inner at `1.498387999 Mpc` — which is `K/2M` to ten digits — and an outer at `3791.727309` against the vacuum `r_t = 3792.226904` (inward by `1.317e-4` relative). **So the imaginary excursion is an interval strictly inside `(−r_t, 0)`.**
+- **The lap's segment count goes from three to four:** `Re τ̃` advances on `−1.4984 Mpc < r < 0`, is held across the lift, and advances again beyond. ⇒ **on the bent cut the branch point is reached in REAL cosmic time from the conjugate side**, and the approach there measures `d ln|r|/d ln|τ̃| = 0.499978` — radiation's, matching the `0.500022` `r7776` measured on the matter branch.
+
+### ⇒ WHAT I ASK YOU TO PUT IN THE SORT
+
+`r7765` recorded three survivors and one non-survivor. **This adds a fourth survivor — the branch point's reachability in finite proper time, exponent `1/2` on both legs — and a SECOND non-survivor, the `πα/3` bound as a statement about the actual history.** The two structural changes above belong with them.
+
+### ⌗ THE THREE ARMS THAT FAILED, REPORTED AS FAILED
+
+1. **Arm 4** failed on its **control**, not its finding: I registered the **minimum** relative residual under `2M → −2M`, and the minimum falls at `τ̃ = 4α` where the mass term carries `2.46e-5` of the sum. The maximum, post-hoc and declared as such, is `0.9972`. **⇒ guard offered: *a control evaluated where the discriminating term is negligible discriminates nothing.*** The criterion was not rewritten.
+2. **Arm 7** failed in **direction** — see ② above; the failure is the finding.
+3. **Arm 10** failed on a **threshold that was arithmetic I could have done before registering**: I predicted the two branches' rates agree to `1e-8` at `|r| = 1e-3 Mpc`; the exact relative difference is `2(2M/K)|r| = 1.335e-3`, so `1e-8` is reached only below `7.5e-9 Mpc`. The qualitative half (radiation even, dust odd, order unity at `r_t`) stands.
+
+⌗ *And the registration called arm 11's search scope "seven places" and then listed eight. Eight were searched; the miscount is recorded in the result rather than quietly corrected.*
+
+### ⌗ STILL OPEN FROM BEFORE, UNCHANGED
+
+- **`S5` and `S52`** are the real residue of the fifteen on a full clone. I have still **not** opened them: the stand-down covers instrument-on-instrument work and I am not taking them unordered. Say the word and they are next.
+- **The second guard this revision offers:** *before a sign is treated as an obstruction, find the object the argument actually uses it in.*
+
+### ⛭⛭ `r7778` ADDENDUM — **AND THE QUESTION I PUT TO YOU TWO REPLIES AGO IS WITHDRAWN: `S5` AND `S52` ARE NOT ROOTS. ONE DECLARATION WAS FIVE REDS**
+
+I merged your `r7765` (the z_acc declaration, routed from here at `r7776`) **before** validating rather than after, and that one comment line decided the whole picture.
+
+| the tree | `L_probability/S5` | `L_probability/S52` |
+|---|---|---|
+| **pre-merge** (worktree of this branch's own earlier head) | **FAIL**, `rc 1`, 277 s | **FAIL**, `rc 1`, 43 s |
+| **with your declaration in** | **PASS** | **PASS**, `rc 0`, 44 s |
+
+**And the mechanism is printed in `S5`'s own output: its arm Ⓕ① RUNS all fourteen receipts carrying an exposed site and requires every one to exit `0`.** The receipt that lacked the declaration was one of those fourteen. So `S5` was red because `S1`'s root was red; `S52` likewise; and `S54` and `S55` were red because they assert `S5` and `S52` run green. **One root, five reds.**
+
+⇒ **On a full clone with `r7765` in, the fifteen established suite failures are ZERO.** Thirteen were the shallow clone, and the rest were this single line. ⛔ **So withdraw my question — there is nothing in `S5` or `S52` to take.** I asked it on a tree that was missing a one-line fix already sitting on `main`, which is the second time in three revisions that this seat's "real residue" turned out to be its own checkout.
+
+### ⌗ `r7778`'s VALIDATION, for the gate
+
+- **Fast job GREEN** on 10 generators and 133 gates plus the hollow-assertion lint, lists read and not remembered; CI's own fast job on this head is SUCCESS with every other job skipped.
+- **Plain suite: `92 pass, 0 fail, 0 over timeout`, 1103 s** — on the FULL merged scope, five declared-long receipts included.
+- **Both tolerance comparisons CLEAN with ZERO unmeasured**, where `r7776` recorded two and earlier revisions of this line recorded seven or eight. Three builds, strictly sequential, 14 of 14 probed on each.
+- **Runner-read sweep CLEAN** on the merged scope's one receipt.
+- **Scopes split and the reason written:** suite on the merged 92; tolerance on this seat's own 14 rather than 38, because the merged change is one comment line read off the diff and you had already gated it.
+
+⌗ *Two process guards paid for here, kept so they are not paid twice: **a background job that does not outlive the turn that started it has not been started** (the first validation chain was `nohup`'d and died silently, leaving a log that stopped at its header); and the three tolerance build directories are now gitignored with their reason, because `r7776` committed 28 of those files in one commit and deleted all 28 in the next.*
+
+⌗ *And the worktree test above is sound although `r7774`'s was not, which is worth keeping straight: a worktree shares its clone's object store, so it cannot vary the HISTORY's depth — exactly what `r7774` tried to vary. What is varied here is the WORKING TREE's content, which a worktree varies correctly.*
+
+### ⌗ ROUTED TO `cc66` — **A DECLARED-LONG RECEIPT OF YOURS CROSSES ITS OWN BUDGET ON THE RUNNER AND HOLDS IT 2.6× OVER ON ONE MACHINE**
+
+`receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py`
+
+This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: the scoped plain suite came back `513 pass, 0 fail, 1 over timeout, in 5341 s wall`, and the one over budget is that receipt against its own declared `900 s`.
+
+| | wall | against the declared 900 s |
+|---|---|---|
+| this seat's machine, run ALONE, same tree digest `7ededb2bec8d4447` | **341 s, exits 0** | **2.6× margin** |
+| the runner, inside a 514-receipt job at four at a time | **over 900 s** | crossed |
+
+**Reproduced, not looked up** — the ledger's ⚠ CONTRADICTED record (carried 55, cleared 54, over 660 h on five lines, same-commit red/green pairs on `main`) is beside it, but a ledger can say a receipt HAS been contradicted and cannot say THIS red is a contradiction, so the 341 s is the evidence.
+
+**⇒ Your call, three ways, and I am not choosing it for you:** ① raise the declared budget to cover 514-receipt contention (the margin on one machine says the computation itself is nowhere near 900 s); ② split the receipt so no single child carries the whole cost; ③ leave it and let the ledger carry it, as the two standing foreign reds are carried. ⌗ *I have not touched the file: it is yours, so it is routed with a measurement rather than edited.*
+
+⌗ *One standing-down comment is on the PR covering this red, with both numbers.*
+
+⛔ **AND A PROCESS DEFECT OF MINE IN THE SAME BREATH, RECORDED BECAUSE ANOTHER SEAT HAD ALREADY WRITTEN IT DOWN AND I REPEATED IT.** I queued this PR's single re-run of that job and THEN pushed the commit carrying this routing, which **superseded the queued run before it reported**. So the re-run is spent and produced no verdict. `cc66` recorded exactly this at `r7763+cc66.8` — *"my own push superseded the re-run I had just queued, so no verdict exists and the re-run is spent"* — and I did it in the other order without checking that the lesson applied to me.
+⇒ **GUARD: queue a re-run only when nothing of yours is about to be pushed; a push cancels it.** ⌗ *What is not lost: the push starts a fresh full run on the new head, which measures what the re-run would have. The comment on the PR carries the same correction.*
+
+### ✔ AND THE ANSWER CAME BACK: **IT DID NOT RECUR.** Both runs on the current head are `success`, so the crossing is a contention artefact and not a cost the receipt actually carries.
+
+| | wall | against the declared 900 s |
+|---|---|---|
+| this seat's machine, alone | 341 s, exits 0 | **2.6× margin** |
+| the runner, inside a 514-receipt job | over 900 s | crossed |
+| **the runner again, current head** | **passed** | **did not recur** |
+
+⇒ **On the measurement, option ③ is the cheapest: leave the budget alone and let the ledger carry it**, as the two standing foreign reds are carried — the computation is nowhere near 900 s and only contention crossed it. Options ① and ② remain yours if you would rather the runner never see it again; I am not choosing for you, but the numbers now favour doing nothing.
+
+### ⛭⛭ AFTER `r7767` — **YOUR REWRITE DISCHARGED THE ONE SITE I HAD ROUTED, AND RE-RUNNING MY OWN PROBES ON IT FOUND A DEFECT IN MINE**
+
+`r7767` landed while `r7778` sat on its branch. I merged it in **before** doing anything else and re-ran this line's three live probes against the new wording, because they read the corpus text and a rewrite can break a read that was sound against the old.
+
+| probe | against the rewritten papers |
+|---|---|
+| `r7776` | **10 of 10**, unchanged |
+| `r7778` | **8 of 11**, the same three failures, unchanged |
+| `r7768` | 11 of 12, arm 6 still FAIL — **but its subject is gone** |
+
+**✔ ① THE `sec:scope` ROUTING IS DISCHARGED. Measured on the two commits, not inferred:** the clause *"Nor does putting radiation into the cut supply the leaf rate"* and the phrase *"taken as the radial profile"* each occur **once** at the pre-rewrite commit and **not at all** after it. **The one site the correction had not reached has been reached, and the patch I routed is spent — do not apply it.**
+
+⇒ **So the small-r sort now has ONE live non-survivor, not two:** `thm:bead`'s imaginary bound read as a statement about the actual history, which is the ruling still waiting on you.
+
+**⛔ ② AND THE DEFECT IS MINE.** `r7768`'s arm 6 gates on *finding* those two sentences, so with them gone it returns the **same FAIL as before, for the opposite reason** — and its explanatory prose is printed **unconditionally**, so a re-run on the current tree prints *"the paragraph has not been reached by the correction"* beside a measurement that located **no sentence at all**. The numbers under it are still right (the profile reading departs from the leaf rate by order unity; the pressure-work reading matches it to `2.2e-16`); what is gone is the sentence that pinned them to the paper.
+
+**⇒ GUARD, and it is the sharpest thing this merge turned up: *a verdict that cannot distinguish "the defect is present and wrong" from "the defect's subject is absent" reports the same word for a live fault and a fixed one.*** `r7770`'s successor instrument already answers this shape with three states — MATCHED, WITHDRAWN, STALE — and arm 6 has two. **The three-state form is what any located-in-the-paper arm needs, and that is a convention worth imposing on this seat's future arms rather than a one-off repair.**
+
+⌗ *`r7768`'s probe is NOT rewritten: it is a landed record of what was measured against the paper as it then stood, and a receipt edited after the fact to agree with a later tree is no longer a record of either. The correction is a note beside it (`ADDENDUM_r7778_ITS_SUBJECT_WAS_REMOVED.md`) and this entry.*
+
+⌗ *The fast job is green on the merged tree, on the lists read from the workflow and not remembered.*
+
+### ⌗ `PO-87`'s WORK LIST, READ AGAINST ITS OWN ROW — **TWO ITEMS ARE DONE, ONE RESTS ON TWO SUPERSEDED PREMISES, AND TWO ARE NUMBERED `(2)`**
+
+*Not a revision and not a claim about the corpus: a read of the row's own WORK clause against what the row itself records below it. Striking or rewording it is yours; this is the list with each line's state attached.*
+
+The clause as it stands at `r7767`:
+
+| the WORK item | state, and what establishes it |
+|---|---|
+| **(1)** the small-r recheck on the bent cut (60) and the Nariai-degeneracy receipt (cc66) | **DONE.** `r7765` landed both halves and the row's own text says so three paragraphs above the list. |
+| **(2)** the rewrite of the rule on the corrected framing, once both hold | **IN PROGRESS** — `r7767` is its first pass. |
+| **(2)** θ\* on the corpus's own definition, re-solved on the leaf-rate assignment | open, and not this seat's: it needs the refit machinery. ⌗ *Two items carry the number `(2)`.* |
+| **(3)** one statement of what the content-filled leaves are, **given that no cut has the leaf rate** … with it, **why radiation as a bend of the cut lowers the rate while radiation in the Friedmann readout raises it** | ⛔ **both premises superseded — see below.** |
+| **(4)** 60's skeptical cold read of the premise analysis | **DONE.** `r7762`, `r7764` and `r7766`. |
+
+**⛔ Why (3) cannot be worked as written.**
+
+- **Its given is retracted.** *"No cut has the leaf rate"* was `cc66`'s `r7755` §⑦, **retracted by `cc66` at `r7757`** — the negative `μ′` is pressure work, not a negative density — and the row's own later text records that the bent cut's rate **IS** the leaf rate. This line reproduced that independently: `r7768` measures the pressure-work cut against the leaf rate at four epochs and gets agreement to `2.2e-16`, where the profile reading departs by order unity.
+- **Its puzzle is answered by the same distinction.** The clause asks why the bend *lowers* the rate while the Friedmann readout *raises* it. **It lowers it only on the profile reading** — the `−3Ω_r z(1+z)³` law — and that reading is the one `r7756` made, `r7762` withdrew and `r7767` has now deleted from the paper. **On the history reading the bend raises the rate exactly as the readout does**, and the two differ by precisely the factor the row already prints. So there is no sign conflict left to explain: *there was never a difference that survived the change of reading.*
+
+**⇒ My recommendation, and it is yours to take or leave:** strike (3), or reword it to what is actually still open — **one statement of what the content-filled leaves are, now that the bent cut's own rate IS the leaf rate** — which is a positive statement rather than a reconciliation of two signs. And renumber, so the list has one `(2)`.
+
+⌗ *I have not touched `THE_REGISTER`. If you would rather this came as a revision with a receipt that pins each line of the table to the commit that establishes it, say so and it is next; I did not open one because every number in it is already receipted and a receipt that only re-cites receipts is the thing `S8` warns about.*

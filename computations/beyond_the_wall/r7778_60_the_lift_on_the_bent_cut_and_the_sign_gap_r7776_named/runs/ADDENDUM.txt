@@ -1,0 +1,27 @@
+====================================================================================================
+(i)  the two imaginary accumulations at 50 digits, endpoints substituted away
+  vacuum r_t      = 3792.2269037660320877 Mpc
+  vacuum |Im tau| = 5459.341081456371998457 Mpc
+  pi*alpha/3      = 5459.341081456371998457 Mpc
+  relative        = -2.25086e-29   <= the printed bound reproduced; nothing of M in it
+  the lift's ends : s_in = 1.4983879985893510955   s_out = 3791.7273094766594491
+  bent   |Im tau| = 5461.007981063637231682 Mpc
+  bent - bound    = 1.66689960727 Mpc  =  0.00030532982 relative
+  ** the bend EXCEEDS the printed bound -- the REGISTERED DIRECTION WAS THE OTHER ONE **
+  and the mechanism: the lift is SHORTER in r by 1.997982288 Mpc, while the EVEN term K/s^2
+  reduces |radicand| across the interior, so 1/sqrt(|.|) rises:  at the midpoint s = 1896.612849,
+  |rad| vacuum = 0.9256356042   bent = 0.9247997575   (-0.000902998 relative)
+  the integrand's rise beats the interval's shortening, and the net is the +3.05e-4 above
+====================================================================================================
+(ii) arm 4's control, as the MAXIMUM instead of the registered minimum
+  2M positive : max 5.683e-15   min 1.483e-16
+  2M flipped  : max 9.972e-01   min 4.915e-05  <-- the registered criterion read
+                the MIN, which falls at tau = 4.00 alpha, where |r| = 130433.0 Mpc
+                and the two terms are  2M/|r| = 1.538411e-02  against  r^2/alpha^2 = 6.259671e+02,
+                so the term the control was meant to discriminate carries 2.458e-05 of the sum there.
+  ** A CONTROL EVALUATED WHERE THE DISCRIMINATING TERM IS NEGLIGIBLE DISCRIMINATES NOTHING. **
+====================================================================================================
+(iii) arm 8's segment boundaries, off the grid
+  vacuum: NEGATIVE on (0, 3792.226903766), POSITIVE above.  2 segments; r_t = 3792.226903766
+  bent:   POSITIVE on (0, 1.498387999), NEGATIVE on (1.498387999, 3791.727309477), POSITIVE above.  3 segments
+====================================================================================================
