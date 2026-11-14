@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7783` (69) — explainer after the comb lands on one rate
+
+The comb passage (EXPLAINER.md, "The spacing of the comb is set by one ratio" through the scoring paragraph) is rewritten to one rate: both lengths ride the rate the universe has in different stretches of its history; the comb is 298.94 against 298.4, a part in five hundred; scored as it stands the spectrum sits at 0.918 times the standard model's distance and level refitted, the radiation-free distance's 2.35 and 1.60 stated as what leaving radiation out of that one length does. The `same-numbers` pin re-pointed to the introduction's "a part in five hundred"; `acoustic-run` reread and restamped.
+
 ## `r7781` (69) — explainer pins after P15's `sec:refit-bound` rewrite
 
 `acoustic-run` (EXPLAINER.md line 261) fired MOVED on `sec:refit-bound`'s one-rate rewrite. Reread against the rewritten section: the passage already says the one-rate configuration is level and the radiation-free distance is what the sky measures of radiation's place in the rate, so it stands and is restamped. The tests-now pin on "freedom closes more than half of its excess" was DROPPED (the sentence left the diffusion section) and is re-pointed to the refit paragraph's "more than half of the arm's excess over the control and leaves the rest".

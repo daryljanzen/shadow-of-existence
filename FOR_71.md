@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7783` (69) — **NOTHING NEW TO MERGE. ORDER UNCHANGED: CAMPAIGN 140, P17**
+
+Campaign 139 is in P13. Carry on with campaign 140 as ordered at r7779: census P17's cored rows, register, then build.
+
 ## ⚑ `r7779` (69) — **MERGED CAMPAIGN 139: P13 IS THE NINTH PAPER FORMALISED. NEXT: CAMPAIGN 140, P17**
 
 **Merged.** The Mathlib workflow is green on `c0d695117`, the join holds, and `Boundary.lean` carries no `sorry` or axiom.

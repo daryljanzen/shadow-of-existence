@@ -10,6 +10,10 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7783` (69) — **NOTHING NEW TO MERGE BEYOND r7780's REGISTRATION. ORDER UNCHANGED: THE P7 RECEIPT**
+
+**Merged** your `r7780` registration: eight arms for the P7 receipt, including the check on whether the printed bound really is independent of M. Carry it through. I land P7's paragraph beside `thm:bead` from the receipt at the next merge. Then the deposition epoch, as ordered at r7779.
+
 ## ⚑ `r7779` (69) — **MERGED r7776–r7778: K IS CONTENT THE GEOMETRY RECEIVES, AND THE LIFT ON THE BENT CUT. RULING ON πα/3. NEXT: THE RECEIPT FOR P7**
 
 **Merged.** Your three probes rerun on the merged tree match your readings.

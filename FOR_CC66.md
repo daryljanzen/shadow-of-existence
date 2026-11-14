@@ -7,6 +7,26 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7783` (69) — **MERGED r7779+cc66.0–.9: THE COMB IS LANDED AT 298.94. THE LOW-ℓ DEPTHS AND THE GAUSSIAN NEED RECEIPTS BEFORE THEY LAND. NEXT: THOSE TWO RECEIPTS, THEN ⑤**
+
+**Merged and reproduced.** The comb receipt runs 10 of 10 here. Your two corrections are taken: the banks held the clock-only pairs, and you checked the blob mismatches by AST reduction rather than assuming them.
+
+**What landed in P15, from your comb receipt:**
+- **Every place the paper reports the computed comb** now gives 298.94 on the rate the universe has, with your receipt cited:
+  - `sec:tensions`;
+  - the opening of `sec:refit-bound`;
+  - `sec:scope`.
+- The introduction and abstract say "a part in five hundred".
+- 299.1 stays, labelled, where it is the radiation-free configuration's. The `sec:scope` sentence your gate ⑧ parses is kept verbatim inside the relabelled clause, so ⑧ and ⑨ still pass.
+- The explainer's comb passage is rewritten to one rate.
+
+**Your order, in this sequence:**
+- ① **Mint the low-ℓ receipt on the one rate.** P15 prints depths of 0.485, 0.441 and 0.35 at ℓ = 2, 3, 4 in the abstract, plus the per-multipole figures in `sec:largescale`. Take them at the arm and point those sentences quote, under `SPLITCLOCK` unset, so I can rewrite them to the one-rate values. Say in the receipt which point the paper's 2.9 per cent cross-validation is taken at. Your 3.39 and 3.51 are at the refit point.
+- ② **Mint the Gaussian receipt.** It should show χ²/bin after the tilt is 1.5238 at ℓ_D = 1355.21, against 1.4967 at 1362. The shape correlation stays 1.000000 and the tilt absorbs 69.8 per cent.
+- ③ **⑤ from r7779,** the section's opening figures on the one-rate arm: the four peaks, the phase intercept, the height ratios and the fourth-feature comparison.
+- ④ **The ℓ = 3 sign reversal**, which you flagged and did not chase. Chase it: it is a lead, and a mechanism for it says what the projection does to a discrete source.
+- ⑤ **θ\*** on the corpus's own definition, on the one rate.
+
 ## ⚑ `r7779` (69) — **MERGED r7767+cc66.0–.3: THE THREE FIGURES. THE DAMPING ANSWER IS LANDED; ITEM 3'S SWITCH IS NAMED. NEXT: THE LOW-ℓ RUN, THE COMB RECEIPT, AND THE GAUSSIAN RESIDUAL ON THE ONE RATE**
 
 **Merged and reproduced.** `three_figures.py` runs 5 of 5 here.

@@ -10,6 +10,21 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7783` (69) — **MERGED E7: ALL EIGHT EXPERIMENTS HAVE RESULTS. NEXT: CARRY THEM INTO THE PAPER'S ARGUMENT**
+
+**Merged** (`r7765+70.2` to `r7779+70.22`).
+- **E7:** explicit defences hold in every order. The briefing instruction leaks into T7, and FULL leaks most. Reading the evidence, not the order, is what deepens review.
+- **E8:** PLAIN barely thins, and the curriculum's lift fades within a few tasks.
+
+Running the hand-checks before the aggregates were read, and reporting the T7 re-score as an unregistered sensitivity check with both readings, is how these should be done.
+
+**Your order:** all of E1–E8 are in, so carry them into `resources/ARP_LLM_paper/LOGICAL_ORDER.md`. That is the paper's working document; do not start a new file.
+- For each Step an experiment tests, restate the Step's claim to what the results show. Hold each claim at the weight it earned: a failed prediction is stated as what was found, with the interval, never softened and never dropped.
+- Put the results in Step 8 beside each experiment's specification: the measured effect, the interval, and the hand-check κ where it bears on the reading.
+- The T7 leak goes into Step 6 as a finding that needs its own registered test, which you named.
+
+Then the routine nightly.
+
 ## ⚑ `r7779` (69) — **MERGED r7765+70.1: THE 11-14 NIGHTLY. THE HEAVY BUDGET IS 180, NOT 127. ORDER UNCHANGED**
 
 **Merged.** 1161/0/0 is recorded and READ_INDEX is refreshed.
