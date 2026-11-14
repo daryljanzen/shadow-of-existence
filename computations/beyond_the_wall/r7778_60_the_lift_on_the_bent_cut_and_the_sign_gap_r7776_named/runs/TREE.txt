@@ -1,0 +1,53 @@
+r7778 (60) -- THE TREE THE READING WAS TAKEN ON
+
+  HEAD at the reading:        2cdefdb529e83066ea19e83570214109c921d199   (the registration commit)
+  origin/main at the reading: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+  shallow:                    false
+  commits from HEAD:          8012
+
+REGISTER-BEFORE-MEASURE
+
+  PREDICTION.md was committed AND pushed as 2cdefdb529e83066ea19e83570214109c921d199, with nothing else in that commit, before
+  probe.py existed.  Eleven arms, each with its reachable negatives named.  Three of the eleven
+  came back FAIL and all three are reported as FAIL: arm 4 on a control that cannot discriminate,
+  arm 7 in the direction OPPOSITE to the one registered, arm 10 on a threshold that was arithmetic
+  this line could have done in advance.  No criterion was rewritten after measurement.
+
+WHAT WAS READ, AND WHERE FROM
+
+  corpus/CR_framework.tex at HEAD -- eight regions, named in the registration and enumerated by the
+                            probe: thm:bead's statement, its proof, rem:head-admissible, the scope
+                            paragraph, lem:twoturnings, the fig:dS_SdS panel (C) caption, the lap
+                            figure's caption, and sec:lift-initial-rate (lines 1193-1502).
+  ⌗ The registration called these "seven places" and listed eight.  Eight were searched, and the
+    miscount is recorded in arm 11 rather than quietly corrected.
+
+WHAT WAS DERIVED RATHER THAN QUOTED
+
+  every constant, in the probe, from the published pair (H_0 = 68.6, Omega_m = 0.2973) and
+  omega_gamma:  alpha = 5213.287 Mpc   r_0 = 5051.488 Mpc   2M = 2006.5950 Mpc
+                K = 3006.658 Mpc^2
+  and the vacuum comoving turnaround r_t = (2M alpha^2)^(1/3) = 3792.226904 Mpc, which the arm-7
+  machinery re-finds as a root rather than taking from the closed form.
+
+WHAT WAS COMPUTED TWICE, AND WHY
+
+  arm 7's two imaginary accumulations.  The measured direction REVERSED the registered one, and a
+  reversed sign must not rest on one quadrature through an inverse square root.  addendum.py
+  recomputes both at 50 digits with mpmath and with each simple zero of the radicand substituted
+  away (u^2 = |s - s_end|).  The vacuum accumulation returns pi*alpha/3 to 2.3e-29 on that
+  machinery, which is what licenses the bent-cut number beside it.
+  ⌗ A u == 0 guard inside that substitution is NOT enough: at 50 digits a quadrature node can be
+    close enough to the endpoint that lo + u**2 rounds TO the endpoint, where the radicand is
+    exactly zero.  The guard is on the radicand's VALUE.  The first form raised ZeroDivisionError.
+
+THE FILES
+
+  PREDICTION.md   the eleven arms, pushed before probe.py existed
+  probe.py        the eleven arms measured
+  addendum.py     three POST-HOC checks, declared as post-hoc, changing no criterion
+  runs/READINGS.txt   probe.py's output
+  runs/ADDENDUM.txt   addendum.py's output
+  runs/TREE.txt       this file
+  runs/VALIDATION.txt the scopes, the fast job, the suite and the tolerance comparisons

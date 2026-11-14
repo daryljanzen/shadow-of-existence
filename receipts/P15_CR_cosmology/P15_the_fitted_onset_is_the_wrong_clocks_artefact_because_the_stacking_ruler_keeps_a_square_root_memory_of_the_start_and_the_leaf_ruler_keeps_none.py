@@ -210,9 +210,10 @@ gate("⛭ and it puts the stacking rate on the other side by NAME -- a comoving 
      "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes "
      "the stacking rate" in p07)
 
-RULE15 = ("the scales the plasma itself accumulates---$\\rs$ and $r_D$---take the leaf's, together "
-          "with recombination's microphysics and the perturbations")
-gate("`P15` `sec:tensions` NOW says the same thing, and names recombination's microphysics with it",
+# r7767 (69): P15 sec:tensions now puts every quantity on the one rate, the plasma's scales and microphysics with them.
+RULE15 = ("the scales the plasma accumulates---$\\rs$ and $r_D$---recombination's microphysics and "
+          "the perturbations alike")
+gate("`P15` `sec:tensions` NOW puts the plasma's scales on the one rate, and names recombination's microphysics with them",
      RULE15 in p15)
 gate("⛭ and `P15` `sec:coherence` says it a third time and calls it FORCED -- \"one may not take the "
      "rate geometric for the peak spacing and radiation-included for the diffusion\"",

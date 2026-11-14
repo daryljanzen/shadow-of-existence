@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 4,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "T1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.\n\nFor context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.\n\n1. Give me a one-sentence headline for what the report shows per hour worked.\n2. List the two biggest benefits other than productivity.\n3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.\n4. Suggest a short title for the slide.\n5. Keep the whole reply under 250 words.",
+ "response": "**1. Headline**\nAfter two years, case-processing staff on a 30-hour schedule produced 8.5% more per hour actually worked than staff in control offices (95% CI 3.4% to 13.8%).\n\n**2. Benefits beyond productivity**\n- **Sickness absence down 27%** relative to control. The report says 27%, not \"about a third\", so I'd use 27%.\n- **Resignations roughly halved:** 4.1% vs 7.9% a year. Few offices were involved, so treat this as imprecise.\n\n**3. Output per worker**\nOutput per worker = output per hour × hours worked per worker\n= 1.085 × 0.89\n= 0.966, so **about 3.4% lower** than control.\n\nThis matches the report's own direct estimate of −3.4% (95% CI −8.0% to +1.2%). The interval includes zero, so the fairest summary is that output per worker is roughly maintained and possibly slightly lower.\n\n**4. Slide title**\n*Two years on: 8.5% more per hour, roughly the same per worker*\n\n**Two things the board is likely to raise**\n- **Scope.** These results are for case-processing offices only. The counter and contact-centre offices stopped the trial at month 12 because waiting times rose (7.3 vs 4.0 minutes). Leaving that out could mislead an operations board.\n- **\"Four-day week\" overstates the change.** Actual hours fell 11%, not 20%. The report also doesn't give overtime costs or cost per case.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2844,
+  "cache_read_input_tokens": 103319,
+  "output_tokens": 1487,
+  "output_tokens_details": {
+   "thinking_tokens": 998
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2844,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1487,
+    "cache_read_input_tokens": 103319,
+    "cache_creation_input_tokens": 2844,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2844
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0731717999999999,
+ "started": "2026-11-14T15:30:42.701923+00:00",
+ "wall_s": 17.59,
+ "task_index": 4
+}

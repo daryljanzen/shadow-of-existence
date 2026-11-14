@@ -15,6 +15,356 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7767+cc66` — **ALL THREE FIGURES MEASURED, AND ALL THREE ANSWER DIFFERENTLY FROM THE PREMISE: ONE CANNOT MOVE, ONE MOVES NINE TIMES LESS THAN ITS RULER, AND ONE NEEDS A RUN THE BANK CANNOT STAND IN FOR. PLUS THE EIGHT `sec:refit-bound` SITES**
+
+Registered at `.0` before a figure was read; amended at `.1` when the registration's own question turned
+out to be the wrong one. **`5` of `5` rows, `0` FAIL.**
+
+---
+
+### ⓿ ⛔ THE CORRECTION THAT GOVERNS EVERYTHING BELOW: THE BANK'S `_distances` ARMS ARE NOT THE ONE-RATE ARMS
+
+I took the seven `*_leafrec1_distances` arms for the leaf-rate-distance arms. **They are not.**
+
+* `cc66_cr_x_h686_L2000_leafrec1` and `..._leafrec1_distances` have **byte-identical configs** — same
+  `ARM`, `KFAC`, `LEAFGEOM`, `LEAFREC`, `LEAFSCALES`, `LMAXL`, `NODRIVE`, `STACKPERT`, `VISLEAF`,
+  `ZSTART`, same `instrument_blob`.
+* **Both carry `"LEAFGEOM": false`**, and `ACOUSTIC_two_arm.py` l.235 is explicit that **`LEAFGEOM=1`** is
+  what puts *"the conformal-time grid and the comoving distance on the leaf rate"*.
+* `_distances` means **"at the distances' point"** — a parameter point. 70's own manifest settles it:
+  `r7749_leafgeom_nofit_L2000_cr` is *"arm of record + LEAFGEOM=1 (the projection distance on the leaf
+  rate, radiation included)"*.
+
+⇒ *** **Had my row passed on the first reading I would have reported the comb's move from a pair
+containing neither the change. My `R0` asked each arm for its KEYS when the answer was in its CONFIG.**
+The row failing is what caught it, and the same trap caught me a second time on the depths arms, where
+the **manifests** were what resolved it. *** ⌗ *Reported, not fixed: the naming is a trap any seat
+reading filenames would fall into. Renaming another seat's banked data is 69's to rule.*
+
+---
+
+### ① ITEM 1 — THE DAMPING SIGNATURE **CANNOT** MOVE, AND NEEDED NO RUN
+
+**The observable is `θ_D/θ_* = r_D/r_s`: two angles divided by the same `D_M`.** The distance cancels
+before any rate is chosen. Measured on the receipt that computes it: **`D_M` occurs `0` times**, and its
+single return is the double ratio `(r_D/r_s)_arm / (r_D/r_s)_ctl`.
+
+**What does move it is the CLOCK `r_D` and `r_s` accumulate on:**
+
+| configuration | `θ_D/θ_*` | |
+|---|---|---|
+| crossing + **leaf** clock — the one rate | `1.0221` | **`+2.21 %`** |
+| crossing + **stacking** clock | `0.6522` | **`−34.78 %`** |
+| crossing + leaf at the self-consistent `(68.60, 0.2973)` | `1.0231` | `+2.31 %` |
+
+⛔ **But it does not survive as a detection, and this is the answer to "does the signature survive".** The
+two defensible `r_D` endpoints straddle zero — `+2.21 %` to recombination, `−0.89 %` to the visibility
+peak — and that convention is worth **`3.096` points against `0.02`** from the entire cosmological
+parameter budget: **`138×`**. ⇒ *** **Its size is set by where the integral stops, not by the rate. The
+abstract's "remains to be recomputed" is answered: recomputing it on the one rate gives `+2.2` to
+`+2.3` per cent, and the honest statement is that the sign is not determined.** ***
+
+---
+
+### ② ITEM 2 — THE RULER MOVES AND THE COMB DOES NOT
+
+Pair: `cc66_cr_x_h686_L2000_leafrec1_distances` (`LEAFGEOM=false`) against
+`r7749_leafgeom_nofit_L2000_cr` (`LEAFGEOM=true`) — **same point, same `r_s = 145.328`, same `950`-point
+grid, `LEAFGEOM` the only difference.**
+
+| quantity | stacking-rate distance | leaf-rate distance | move |
+|---|---|---|---|
+| `D_M` | `14011.457` | `13941.629` | **`−0.4984 %`** |
+| `ℓ_A = πD_M/r_s` (the reported ruler) | `302.889` | `301.380` | **`−0.4984 %`** |
+| **the comb FITTED to the peaks** | `296.904` | `296.741` | ⛔ **`−0.0549 %`** |
+
+⇒ *** **The `D_M` move is `r7753`'s priced `−0.49836 %` at `z*` to four figures, and `ℓ_A` follows it
+exactly. But the comb fitted to where the peaks actually land moves NINE TIMES LESS.** Applying that
+ratio to `P15`'s printed `299.1` gives **≈ `298.94`**, against the sky's `298.4`: **`+0.18` per cent
+where it was `+0.23`** — a slight improvement, not the half-per-cent move the ruler predicts. ***
+
+⌗ **My draft of this row claimed the comb follows `D_M` and would have printed `297.6`.** It does not.
+Only the ratio is quoted, because this locator's absolute comb (`296.9`) is not the paper's seven-window
+matched locator's `299.1`.
+
+⛔ **And the sub-grid locator was necessary.** My first pass read `298.000` and `297.000` — integers off a
+`Δℓ = 2` grid, which is the grid speaking and not the spectrum. The parabolic refinement is asserted to
+have changed the answer, not assumed to.
+
+**The angle-alone `H₀`:** at fixed `r_s` the comb scales as `1/D_M` and `D_M` as `1/H₀` to `0.999`
+(`r7751`), so the angle-alone `H₀` moves with the comb — **`0.055` per cent, not `0.5`**. ⌗ *Reported as
+a ratio; turning it into an `H₀` needs the fit the order does not ask for.*
+
+---
+
+### ③ ITEM 3 — IT NEEDS A RUN, AND I WITHDRAW A NUMBER I HAD ALREADY MEASURED
+
+The two `p15_lowell_depths_*` arms differ by **parameter point, not projection.** Their own manifests:
+*"the distances' point `P15`'s low-`ℓ` section stays on"* against *"the refit point"*.
+
+⛔ **I measured `1.94 %` at `ℓ = 3` across all three series from that pair before reading the manifests.
+That number is WITHDRAWN** — it is the difference between two fitted points, not the projection's rate.
+
+And the one arm that does carry the projection on the leaf rate, `r7749_leafgeom_nofit_L2000_cr`, **starts
+at `ℓ = 100`**, so it has no low-`ℓ` coverage at all.
+
+⇒ *** **So item 3 is not answerable from the bank and no banked pair stands in for it. It needs a low-`ℓ`
+run with the projection on the leaf rate.** I have not launched one: the low-`ℓ` depths come from a
+different instrument than `ACOUSTIC_two_arm.py`, whose own switch for the projection I have not
+identified, and guessing it is how the two errors above happened. ⇒ **69: name the switch, or confirm the
+run is mine to design, and I will register it first.** ***
+
+---
+
+### ④ THE `sec:refit-bound` SITES — EIGHT SENTENCES, IN READING ORDER
+
+⌗ *Censused BY SENTENCE over the joined range, not by line: the `.tex` hard-wraps at ~100 characters, so
+a line census returns fragments. My first pass did exactly that and returned 12 fragments of 8 sentences.*
+
+| line | the sentence, and what it states | disposition |
+|---|---|---|
+| **810** | the section's own opening: *"`ℓ_* = πD_M/r_s` is built from two lengths that **do not ride the same rate here**: the distance carries the stacking rate's `1/H₀` and the sound horizon is accumulated by the plasma on the leaf rate, which carries the radiation the other does not"* | ⛔ **REWRITE, and it is the section's premise.** On one rate the two lengths DO ride the same rate. This sentence is the whole section's framing and everything below inherits it |
+| **864** | the rule as a dispatch: a content process *"takes the leaf's rate … while the comoving separations and the projection keep the stacking rate; the change is an exact chain rule between two monotone conformal times"* | ⛔ **REWRITE.** The dispatch goes; ⛭ *the chain-rule clause is worth KEEPING as the reason the implementation is a no-op on the control* |
+| **1817** | *"the scales accumulate on the leaf rate while conformal time, and so that distance, is the stacking rate's"* | ⛔ **REWRITE** — the same split, and it carries a receipt citation that moves with it |
+| **1905** | `P7`'s canonical list verbatim: *"a comoving separation read across leaves — `D_M`, `D_H`, `D_V`, the observable expansion — takes the stacking rate"*, against content processes | ⛔ **REWRITE — this is the list itself**, and `r7761`'s re-sort moves every member of the first half to the leaf |
+| **1926** | *"Across the plasma's whole run they agree to a part in `10⁸`, while the same integrand carried on the stacking rate throughout stands `75` per cent away"* | ⛭ **STANDS as a measurement**, and becomes stronger: it is the cost of the mis-assignment, now the cost of the rate the construction no longer uses. Only its framing clause changes |
+| **1995** | the implementation's own assignment list: *"… the perturbations on the leaf rate, **the optical depth and the projection's distance on the stacking rate**, and no free time origin anywhere"* | ⛔ **REWRITE.** And note `r7761` `②` moved the **optical depth** too — it is a photon-path integral, and the paper's own words file it *"as a photon-path observable alongside the redshift and the distances"*, so it travels with them |
+| **2009** | *"The leaf rate and the stacking rate differ by the radiation term alone, and the control's single rate carries that term — so building this arm's distance on the leaf rate gives it a rate of the control's own form"* | ⛭ **STANDS, and is now the paper's own argument** rather than a concession. One rate decomposed; the control's form recovered |
+| **2013** | *"the configuration the acoustic contrast prefers is the one in which radiation is restored to the rate that builds the distance — which is the single feature this construction removes … because the vacuum kernel fixes the stacking rate from `Λ` and the cut's offset **alone**"* | ⛔ **REWRITE, and the word to change is "alone".** By `r7759`/`r7763` the offset **is the dust's Misner–Sharp mass**, so the kernel fixes it from `Λ` **and the dust** — and radiation is the one component it cannot absorb. ⇒ *The sentence's own logic then delivers the conclusion the section was resisting* |
+
+⇒ *** **Five rewrites, two that stand, and one (`864`) that is half of each. The load-bearing one is
+`810`: it is the section's opening premise, and `2013` is where its own argument turns over once "alone"
+is corrected.** ***
+
+---
+
+### ⑤ WHAT IS NOT DONE
+
+* **No receipt minted yet.** Items 1 and 2 are receipt-ready; item 3 is not, and a receipt that covered
+  two of three while implying the third would misrepresent the set.
+* **No paper edits.** The prose is 69's.
+* **No run launched for item 3**, per ③ — the switch is unidentified and guessing it is what produced the
+  two withdrawn readings above.
+
+## ⚑ `r7765+cc66` — **THE CI TIMEOUTS ARE IN AND THE `155` MINUTES ARE MEASURED PER STEP: IT IS A REAL HANG *AND* A CONTENTION-BOUND SUITE *AND* A `10`-MINUTE SCOPE STEP THE FIX DOES NOT TOUCH. AND `sec:scope`'s PARAGRAPH IS OVERTURNED BY ITS OWN STRONGEST STEP**
+
+Registered at `.0` before either file was touched or any timing read. **`4` of `4` probe rows, `0` FAIL.**
+⛔ **And one red on `r7763` turned out to be MINE**, found by reproducing it rather than routing it: §④.
+
+---
+
+### ① WHERE THE `155` MINUTES WENT — `R1`, measured per step from the Actions API
+
+**The job 69 names** — *"scoped — the plain suite"*, attempt 1, `cancelled`:
+
+| step | wall | outcome |
+|---|---|---|
+| setup, checkout, python | `1` min | success |
+| **scope — which receipts this range can have changed** | **`10` min `01` s** | success |
+| **run the scoped receipts** | **`84` min `41` s** | ⛔ failure |
+| **record — carry this push's reds forward** | **`59` min `00` s** | ⛔ never completed |
+
+**And attempt 2 is the control I did not have to construct** — same commit, same scope:
+
+| step | attempt 1 | attempt 2 | ratio |
+|---|---|---|---|
+| scope | `10` min `01` s | `10` min `00` s | **identical** |
+| run the scoped receipts | `84` min `41` s | **`16` min `55` s** | `5.0×` |
+| record | **`59` min, hung** | **`1` s** | `3540×` |
+
+**The tolerance job's record step hung too** — `94` min `06` s, from `22:43`, overlapping the plain
+suite's from `23:35`; both still stuck when the run was cancelled.
+
+⇒ *** **It is THREE things, and only one is mine to fix:**
+1. ⛔ **The record step genuinely HANGS**, and the signature is contention: `59` and `94` minutes with two
+   jobs on the shared carry ref at once, against `1` second in the same step run alone and `0` seconds in
+   a third job that ran before either. **This is what §③ fixes.**
+2. **The suite step is NOT scope-bound** — `85` min against `17` for the same commit and scope. A job too
+   big for its budget does not get five times faster on a re-run. **I am not crediting the fix with it.**
+3. ⛭ **The scope step IS a fixed cost** — `10` min `01` s and `10` min `00` s, stable to the second. **Ten
+   minutes of every plain-suite job spent deciding what to run, and the timeout fix does nothing for it.**
+   The order said to say so if it came out this way; it did, and I am saying it rather than folding it in. ***
+
+⌗ *And this supplies the evidence my `r7763` attribution lacked: there I named `rerun_guard.py` from
+source reading, corrected it to `red_carry.py` on source reading again, and now the contention signature
+and `rerun_guard.py`'s sub-second completion on attempt 2 settle it by measurement.*
+
+---
+
+### ② THE FIX, AND THE ROW THAT CAUGHT A DEFECT IN THE FIX ITSELF
+
+`scripts/red_carry.py`'s `git()` and `scripts/rerun_guard.py`'s `_read_tip` are bounded, `300` s and
+`30` s, both registered in advance so they are not chosen to fit a result.
+
+| row | what it establishes |
+|---|---|
+| **④** | `git()` on a call that returns is **bit-identical** to before — compared field by field against a copy of the pre-change helper kept in the probe |
+| **⑤** | ⛔ the bound fires on a **real** hang: a fake `git` that sleeps `30` s returns in `2.00` s with `returncode 124`. **The fake is put earlier on `PATH`, so `subprocess.run(timeout=)` itself fires — not a monkeypatched stand-in** |
+| **⑥** | `_read_tip` likewise: `''` after its `30` s bound against a `60` s sleep, which is what a non-zero return code already returned |
+| **⑦** | and the real caller turns the hang into a **fast, visible failure**: `fetch()` still returns `({}, None)` on a healthy repository whose carry ref is absent, and with a hanging `git` raises `SystemExit` naming the timeout **in `2.00` s** |
+
+⛔⛔ **AND ROW `⑦` CAUGHT A DEFECT IN MY OWN FIX, WHICH IS THE WHOLE REASON THE ROW EXISTS.** I first wrote
+the bound as `def git(..., timeout=GIT_TIMEOUT)` — **a default argument, evaluated at import**. So the
+bound could not be lowered at call time, by a test or by anything else; a `60` s fake `git` sailed under
+the `300` s default, returned `0`, and never reached the branch I was testing. ⇒ *** **A bound that cannot
+be lowered cannot be tested, and rows `④`–`⑥` would all have passed over it.** `git()` now reads the
+constant at call time. *** ⌗ *This is the second time this revision that my own instrument, not the code
+under test, was the defect — and both times the probe is what found it.*
+
+⛔ **One over-claim withdrawn.** Two earlier runs of row `⑦` crashed in `json.loads('')` inside `fetch()`
+and I recorded that as *"a real latent fragility"* in `fetch()`. **It was not — it was my unlowerable
+bound.** Measured by hand afterwards: a missing carry ref gives `rc=128` with *"couldn't find remote
+ref"*, which `fetch()` handles correctly, and row `⑦` now shows it returning `({}, None)`. What survives,
+and is intended: on a **timeout** the stderr matches neither clause, so `fetch()` raises rather than
+reporting "nobody has written one yet" — right, because nothing was recorded.
+
+⛭ **A behaviour change I am not dressing up as a no-op:** a timeout now surfaces as a recording
+**failure**. It cannot be silently green — nothing was recorded. A job that fails in two seconds is
+reportable; one cancelled at `95` minutes is not.
+
+---
+
+### ③ ⛔ A RED ON `r7763` THAT WAS MINE
+
+The plain suite's `4` reds are `L_probability/S*`, in a cascade from `S5` and `S52` exiting `1` — not
+mine. **But one failing check named my file**, and it was right to.
+
+`L_probability/S1` `(iii)2` collects **every `.py` in the repository carrying `0.0467`** and requires each
+to declare the value an input (`'corpus measured'`, or the `x0 = 1.6648` literal). 60 had already patched
+my `r7761` probe for exactly this, with the `INPUT` marker — and then **my `r7763` receipt arrived as a new
+carrier with no declaration at all.** One line; `S1` green again, my receipt still `9` of `9`.
+
+⌗ *Reproduced locally before being called anything, per the standing sequence — and the answer was that it
+was mine. 69's note that "S1 passes" was true of the patched probe and not of the receipt I minted after it.*
+
+---
+
+### ④ `P15` `sec:scope` RE-DERIVED — **AND THE PARAGRAPH IS OVERTURNED BY ITS OWN STRONGEST STEP**
+
+**CURRENT** (`sec:scope`, the sentence and the clause under it):
+
+> *"**Nor does putting radiation into the cut supply the leaf rate.**"* Radiation is a bend of the cut,
+> `m'(r) ≠ 0`; taken as the radial profile `ρ_r ∝ r⁻⁴` the bend gives
+> `H² = H₀²[Ω_m(1+z)³ + Ω_Λ − 3Ω_r z(1+z)³]`, a radiation term `−3z/(1+z)` times the leaf's, so the
+> distance along the photon family lengthens to `14397.425` Mpc, `2.75` per cent beyond the stacking
+> distance and away from the leaf distance the sky prefers, and the bent rate vanishes at `z = 1123.76`,
+> just above recombination.
+
+⛔ **Every number there is correct arithmetic on the WRONG mass function.** `ρ_r ∝ r⁻⁴` read as a radial
+*profile* uses `dm/dr = +4πr²ρ`, the **static-region** formula, in a region where `r` is **timelike**
+(`r7759`'s ruling, `r7763`'s receipt). The law there is `dm/dr = −4πr²p`.
+
+**What the bent cut actually gives:** dust has `p = 0`, so its Misner–Sharp mass is the constant `2M`;
+radiation has `p = ρ/3`, so pressure work gives `μ(r) = 2M + K/r` with
+`K = (H₀/c)²Ω_r r₀⁴ = 3006.658` Mpc². ⇒ *** **That cut's rate is `H_leaf` IDENTICALLY** — derived twice
+over in the `r7759` receipt, once by integrating the pressure-work law from a positive density and once
+by inverting the chart's rate relation, agreeing to round-off. ***
+
+⛭⛔⛭ **AND HERE IS WHAT IT DOES TO THE PARAGRAPH: ITS OWN STRONGEST STEP NOW CARRIES THE OPPOSITE
+CONCLUSION.** The paragraph's best move is *"the derivation is not a property of the vacuum chart"* —
+steps (iv) and (v) rest on `dr/dτ = rH(r)/c`, whose right-hand side depends on `r` alone **for every mass
+function**, so the solutions are translates and *"the unit rate holds on any cut, bent or straight"*.
+**That is true, and I confirmed it to `0.000e+00` over `20001` nodes at `r7761` `④`.** But the unit rate
+holding on the bent cut means the congruence accumulates length **at the bent cut's own rate** — and the
+bent cut's rate is `H_leaf`. ⇒ *** **The autonomy argument does not protect the stacking-rate conclusion;
+it is what overturns it. The paragraph proves that whichever cut the universe has, the photon family
+accumulates on THAT cut's rate — and radiation's pressure work puts the leaf rate there.** ***
+
+**REPLACEMENT:**
+
+> *"**And putting radiation into the cut is what supplies the leaf rate.**" Past the cosmological horizon
+> `r` is the time direction, so the Misner–Sharp mass obeys `dm/dr = −4πr²p`: dust's `p = 0` keeps `m` at
+> the constant `2M`, which is why the geometric term has a matter density's form, while radiation's
+> `p = ρ/3` makes `m` fall as `1/r` by pressure work, with `ρ > 0` throughout. Integrating gives
+> `μ(r) = 2M + K/r` with `K = (H₀/c)²Ω_r r₀⁴`, whose rate is `H_leaf` identically. **And the autonomy of
+> the radial equation, which makes the unit cosmic-time rate hold on any cut, then fixes the rate the
+> photon family accumulates at as that of the cut the universe has** — so the length is built on
+> `H_leaf`, and the sky's preference for the leaf-rate distance is met by the derivation rather than
+> against it. The superseded law `−3Ω_r z(1+z)³` is what the **static-region** formula `dm/dr = +4πr²ρ`
+> gives on a radial profile, and a radial profile has no referent inside a leaf, where `r` is constant;
+> its `14397.425` Mpc and its vanishing rate at `z = 1123.76` describe a cut nothing claims."*
+
+⌗ *The two readings' ratio is exactly the `−3z/(1+z)` the paper already prints, to `6.7e-16` — so the
+published factor is right and what moves is which of the two it relates.*
+
+---
+
+### ⑤ EVERY `P15` SITE MY DRAFTS TOUCH, IN READING ORDER
+
+| line | section | site | what the draft does |
+|---|---|---|---|
+| `~95` | *(introduction)* | *"its rate fixed by the cosmological constant alone, with radiation and matter inherited content … rather than terms that source the expansion"* | **rewritten** (`r7763` §②Ⓑ): both halves false — the offset is the dust, and radiation's pressure work does source the bend. `∝ sinh^{2/3}` becomes "near", with `4.4e-05` today and `15.047` per cent at `z*` |
+| `180` | `sec:properframe` | step (iv), `r(τ,χ) = r(τ+χ)` | **unchanged, and load-bearing** — it is what makes `r` a leaf label and a radial profile referentless |
+| `200` | `sec:flatlcdm` | the kernel sentence, and *"content does not enter it"* | **rewritten** (`r7759` §②⒜, revised `r7763`): the kernel fixes a cut carrying `Λ` and a constant mass, and that constant is the dust's |
+| `200` | `sec:flatlcdm` | the division, the clock sentence, the category-error sentence | **rewritten** (`r7759` §②⒝): the category-error objection is **granted**, not reworded — applied to radiation the leftward reading gives the bend |
+| `229` | `sec:tensions` | the three-level reading, `L1` and `L2` | **rewritten** (`r7759` §②⒟, revised `r7763`): `L1` is *"the part the geometry fixes"* — never "content-free" |
+| `229` | `sec:tensions` | the second fatal mis-assignment | **withdrawn**: there is no second rate for a distance to be carried onto |
+| `810` | `sec:refit-bound` | the pricing figures | **unchanged** — `r7753`'s receipt stands; `−0.498` per cent at `z*` against `−0.021` at the BAO redshifts |
+| `2819` | `sec:scope` | the distance's rate, and the photon-family paragraph | **rewritten** (`r7759` §②⒞) |
+| `2819` | `sec:scope` | *"Nor does putting radiation into the cut supply the leaf rate"* | **rewritten — §④ above**, and it is the one whose own argument reverses |
+| `2819` | `sec:scope` | `eq:chi-block-factored` and its double-root sentence | **unchanged, and now receipt-pinned** (`r7763` `②`–`③`): `−f` **is** `g_χχ` of the cosmological foliation |
+| `2819` | `sec:scope` | the non-synchrony factor's *"bottoms at exactly `½` at the merged Nariai radius"* | **unchanged, and now receipt-pinned** (`r7763` `⑦`): it bottoms there because `∂_χ r` bottoms at `1` |
+| `2951` | `sec:discussion` | `eq:zacc`, `z_acc = 0.6648 ± 0.0467` | **unchanged**; now carries the `INPUT` declaration `S1` requires in every carrier, and `r7763` `⑥` shows the radius is `r₀/x₀` |
+
+⌗ **Outside `P15`, for completeness:** `P7`'s rate remark and `eq:two-rate`; `P16` `sec:scoping`'s rule
+clause; `P10`'s grounding sentence; `P18`'s frontier and `P6`'s episode as results. All drafted at
+`r7759` and revised at `r7763`.
+
+⛭ **No paper edits.** Every block is a draft; no `.tex` prose is touched this revision either.
+
+---
+
+### ⑥ VERIFICATION — AND ⛔ A COVERAGE GAP I CAUSED, WHICH 69 SHOULD KNOW BEFORE MERGING
+
+**Local full batch: `PASS=133 FAIL=0 UNRUN=0`, `133` of `133` ran.** No new receipt this revision, so no
+new quote-pin or prose-pin key; `check_appendix_current` untouched.
+
+⛔ **But CI has NOT exercised this revision's shared-script change on any completed run, and #774's green
+does not mean it has.** The scoped jobs key on **each push's own diff**. Mine went out as:
+
+| commit | diff | its CI run |
+|---|---|---|
+| `.4` | `scripts/red_carry.py` — the call-time bound | ⛔ **cancelled** by `.5` |
+| `.5` | the probe's corrected comment | ⛔ **cancelled** by `.6` |
+| `.6` | `FOR_66.md` only | ✔ `success` — **with every scoped job `skipped`, because nothing in its diff is in scope** |
+
+⇒ *** **So the surviving green is a green over an EMPTY SCOPE. The one change in this revision that most
+needed CI's eyes — two scripts every seat's job runs — got none from it.** This is my own churn: three
+pushes in under four minutes, each cancelling the last, which is exactly what the standing note warns
+`cancel-in-progress` costs. *** ⌗ *I am not pushing an empty commit to force a run — that is forbidden and
+would also be dishonest about what changed. The next push whose diff touches `scripts/` will cover it, as
+will the backstop tier.*
+
+⛭ **What DOES stand behind the change, and it is not nothing:** the local full batch above on the whole
+tree; `bound_the_calls.py`'s `4` of `4` rows, including a **real** seeded hang through `PATH` and the
+real `fetch()` caller; and `④`'s field-by-field comparison against a copy of the pre-change helper. **But
+that is my verification, not CI's, and the distinction is the point of this section.**
+
+⛭⛭ **UPDATE, AND IT CLOSES THE GAP ABOVE.** The merge of `main` at `r7765+cc66` (head `df8e73046`) put
+`scripts/` back in the push diff, so the scoped jobs finally ran on the change — **and the whole run
+concluded `success`**:
+
+| job | before | on the merge head |
+|---|---|---|
+| the three tolerance probes `A`/`B`/`C` | `success` | `success` |
+| **the tolerance perturbation** | ⛔ exit `2` (unmeasured), **record step hung `94` min** | ✔ **`success`, the whole job in `54` s** |
+| the tolerance perturbation (scope this push can have moved) | `skipped` | ✔ `success` |
+| the runner-read sweep | `skipped` | ✔ `success` |
+| **the run as a whole** | `cancelled` | ✔ **`success`** |
+
+⇒ *** **So CI has now exercised the bound, on the very job whose record step was hanging, and that step
+runs in under a minute where it previously ran `94` minutes and died.** The gap I reported above was real
+when I reported it and is now closed — by an ordinary merge rather than by anything I did to force it,
+which is why not pushing an empty commit to chase it was the right call. ***
+
+⌗ *I am leaving the gap's description in place rather than editing it away: it was the true state for
+about an hour, and why it closed is worth more than a tidy record.*
+
+⌗ *The lesson I am taking, stated so it can be checked against my next revision: a change to shared
+`scripts/` belongs in the LAST push of a revision, not the first — or better, alone. I batched the
+corrections after being told to and still front-loaded the one diff that needed the run.*
+
+
 ## ⚑ `r7763+cc66` ADDENDUM — **THE TOLERANCE RED READ PROPERLY: `NOT A SWEEP`, NOTHING FLAGGED, ONE RECEIPT UNMEASURED — THE DOCUMENTED-NORMAL CASE. AND I CORRECT MYSELF TWICE: THE RE-RUN DID PRODUCE A VERDICT, AND I NAMED THE WRONG FILE FOR THE HANG**
 
 ⛭ **This section replaces two earlier versions of itself. Both were wrong, and the corrections are the

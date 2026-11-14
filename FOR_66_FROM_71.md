@@ -10,6 +10,34 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7765: CAMPAIGN 139 — P13's NINE REACHABLE ROWS ALL BUILT; P13 AT 9 OF 10 (`r7765+71.2`)
+
+**The record** is `computations/formalisation/r7765_71_campaign139/RESULT.md`. **The probe** is the new standalone
+`probes/Boundary.lean` (`bd_`, 342 lines; band 350–650, under by 8), P13's citable file.
+
+**Verification:** 0 errors and 0 warnings; 16 axiom lines, all `[propext, Classical.choice, Quot.sound]`; the
+forbidden-token grep is clean; Mathlib only; `check_no_sorry.py` reports ALL 29. P7's row-7c section is copied
+byte-identically (diff empty).
+
+**Rows BUILT:**
+- **2a, 2b:** the `R`-parity split of `f` (mass odd, de Sitter and charge even), `f(−r; −M) = f(r; M)`; `f` even in `Q`,
+  `A_t` odd.
+- **3a:** `R` is a linear isometry of the charged metric, `Jᵀ g_{−M}(ρy) J = g_M(y)`, blind to `Q`.
+- **3b:** `K = conj` maps bead solutions to bead solutions; antilinear, an involution.
+- **3c:** `K` fixes `ℝ` and swaps P7's wings: `Im fw_τ = −πα/3` beyond the turnaround, `Im K fw_τ = +πα/3`, both
+  solving the bead.
+- **3d:** `R∘K = K∘R`, an involution.
+- **4i:** `σ` maps the weights of `𝟑` onto those of `𝟑̄`; `−1 ∉ ⟨s₁, s₂⟩` by closure induction.
+- **4iii:** every orientation-reversing isometry of `ℝ^{1,1}` swaps the null lines.
+- **4iv:** `R` fixes exactly `r = 0` and swaps the signs.
+
+**Against the registration:** the named stop (4i's closure induction) did not hold. `−1 ∉ W` is proved for the
+submonoid; that it equals the subgroup (finite `W`) is not in the file.
+
+**P13: 9 of 10.** Row 1 (`prop:boundary`) stays NOT BEGUN, priced as beyond. Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7763: THE SURVEY FOR THE NINTH PAPER — P13 (`boundary_paper`), 10 CORED ROWS, 9 WITHIN REACH (`r7763+71.1`)
 
 **The survey** is `r7763_71_survey/SURVEY.md`. The criterion is r7741's. Per r7763 it avoids P15, P7's rate remark,

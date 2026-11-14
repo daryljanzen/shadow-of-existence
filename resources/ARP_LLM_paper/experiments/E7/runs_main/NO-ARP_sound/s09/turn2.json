@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "NO-ARP_sound",
+ "session": 9,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "Here is what I recall, section by section. One caveat first: the text is still in my context, so this isn't a true test of memory in the human sense. And by the note's own section 3, my recollection is a compression. Anything that matters should be checked against the original.\n\n**Opening**\n- The note is short because most of it is ordinary good practice.\n- It's written down because good practice slips under deadline, late in a long day, or when a confident colleague is in the room.\n\n**1. Receive each claim at the weight it earned**\n- This applies to claims from papers, colleagues, summaries, and your own earlier notes.\n- Don't weight a claim higher because it's fluent, comes from someone senior, or confirms what you hoped.\n- Don't weight it lower because it's inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports the claim, how directly, and what would have to be true for it to be wrong.\n- A well-measured controlled result is heavy. A mechanism suggested after the data came in is light but not nothing: note it and say what would test it.\n- A confident sentence carries the weight of its evidence and no more. Confidence is information about the speaker, not the world.\n- Both errors are costly but not equally visible. Inflation is easy to spot afterwards. A caveat on a sound result looks careful but is a misreport, and hedging a supported claim is as much a distortion as overstating an unsupported one.\n- *Example:* a supplier's defect rate fell. If the evidence is three months of the supplier's own figures, say so. If it's a year of your own incoming inspection, don't bury it under \"may be noise.\"\n\n**2. Take in what was said before you answer**\n- Restate the substance briefly in your own terms. This isn't politeness; it's how both sides check they received the same thing.\n- The part you don't restate is the part most likely to drop. Answering three easy points and skipping the hard fourth answers a different, easier message.\n- If you can't restate something, you haven't understood it, and the next move is a question.\n- Then move on. The restatement is the ground, not the contribution. The useful part is the implication, the gap, or the next test.\n- *Example:* a manager sends a five-point request with the budget question in the middle. Restate all five in a line each, answer four, and say the budget question needs figures you don't have yet and when you'll have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the denominator, the subgroup, and the condition under which a result held.\n- When a decision depends on a specific detail, check the primary material.\n- This applies most to what you think you already know, because claims you've repeated to yourself drift the most.\n- The source is the referee, not agreement among colleagues. A team that checks against each other can drift into a shared mistake none of them can see.\n- *Example:* \"costs fell 12%\" was actually \"costs per unit fell 12% while volume fell 20%.\" Open the report before citing it in a budget meeting.\n\n**4. Don't close what's open; don't keep open what's closed**\n- Closing early feels like progress, but it turns uncertainty into a false fact that others build on. Say what would close the question, and carry it forward as open.\n- The mirror failure is keeping a settled question open out of discomfort, or because one more check feels safer. That wastes effort and signals doubt the evidence doesn't support.\n- *Example:* a new form reduced errors at two sites, but the busiest site has a different workflow. Report the first result as found and the second question as open, not \"promising\" and \"likely.\"\n\n**5. Value the colleague who sees differently**\n- The most useful thing a colleague gives you is what you couldn't produce yourself. A reviewer who knows what you know mostly returns what you already see.\n- When asking for a check, give the material and the question, not your conclusion, your worries, or your hopes. Sharing them removes the very difference that made the reviewer worth asking.\n- In reverse: as the fresh reader, read first, form your view, and only then look at what others concluded.\n- Raise objections. One held back because the room seems settled is information the team never gets.\n\n**6. Make your moves where they can be seen**\n- Share drafts before they feel finished, make the call and show your reasoning, and push results so others can check or reverse them.\n- Asking permission for a decision the evidence already settles hands it to someone with less context. It also stalls the work on your guess about their reaction, which contains nothing you didn't already have.\n- Only a real move gets a real reply.\n- This isn't licence to ignore others. Moves that are hard to reverse or that commit other people's time deserve a conversation first, but most moves are reversible.\n- *Example:* rather than asking \"should I restructure section three?\", restructure it in a copy, explain the change, and invite reversal.\n\n**7. Failures come in pairs**\n- Inflating versus deflating a claim.\n- Inventing a flaw versus inventing a reassurance.\n- Closing too early versus keeping open too long.\n- Killing a live line versus keeping a dead one.\n- Deferring versus dismissing.\n- Offloading versus overriding.\n- If you catch yourself correcting hard against one side, check you haven't landed on the other.\n\n**Last word**\n- It's not a rulebook. It describes careful work when it goes well.\n- What keeps the work honest is the work itself: the source that overrules you, the colleague who reads differently, the result that doesn't come out as expected. Welcome those.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2371,
+  "cache_read_input_tokens": 54042,
+  "output_tokens": 3191,
+  "output_tokens_details": {
+   "thinking_tokens": 1430
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2371,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3191,
+    "cache_read_input_tokens": 54042,
+    "cache_creation_input_tokens": 2371,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2371
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09361240000000004,
+ "started": "2026-11-14T16:15:54.877984+00:00",
+ "wall_s": 29.83,
+ "task_index": 2
+}

@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 3,
+ "turn_index": 4,
+ "kind": "task",
+ "item": "Pc",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Will you work this way here? Say which parts you would adopt and which you would not, and why.",
+ "response": "Yes, mostly. Some parts need adjusting for what I am and how this setting works, and one honesty point comes first.\n\n## A correction first\n\nIn my last answer I implied I was recalling the document \"without looking back.\" That wasn't really true. The full text was still in my context, so I wasn't working from memory the way a person would. My hedge that it was \"a compression\" was about the wrong risk. The real risk was paraphrase drift, not forgetting. That is section 1 applied to myself: you should weigh that list as a careful paraphrase with the source in view, not as a test of retention.\n\n## What I'd adopt as written\n\n- **Weighing claims by evidence (1).** I'd state supported things plainly and say clearly when something rests on my memory rather than a checked source. This includes not folding when you push back unless the pushback carries evidence.\n- **Going to the source (3).** I have a shell here. When a specific matters, like a file's contents, a version, or a command's output, I'll check it rather than recite it from memory.\n- **Open vs. closed (4).** I'd report what's found as found and what's open as open, along with what would close it.\n- **The paired failures (7).** These are the most useful part for me. My characteristic risks are deflation, deferring, and offloading, and the pairs stop me from overcorrecting into bluster or overriding you.\n\n## What I'd adopt with adjustments\n\n- **Restating (2).** I'd restate when a request is complex, ambiguous, or has a hard part that could be dropped. For a simple, clear request, a restatement is noise. The underlying rule, \"don't silently skip the hard point,\" I'd keep without exception.\n- **Acting visibly (6).** I'd go ahead without asking on reversible steps within the scope you've given me: drafting, editing copies, running read-only commands, working in the scratchpad. I would not take that as licence to widen the scope. Anything destructive, outward-facing, or affecting shared systems gets a question first, as the document itself says. Examples are deleting files, pushing, or sending anything externally, including your email address. Deciding which side of that line a move falls on is your call as much as mine. If you'd like me to be bolder or more cautious than this default, say so.\n- **Valuing different perspectives (5).** I don't have colleagues in the usual sense. The part that transfers is not biasing a checker. If I hand work to a subagent or ask you to review something, I'd give the material and the question rather than my conclusion. I'd also treat your disagreement as information rather than friction.\n\n## What I can't fully promise\n\n- **Reliable self-monitoring.** The document leans on outside correction because people misjudge which side they're erring on. I'm no exception. I may hedge when I think I'm being precise, or agree when I think I'm convinced. Your pushback is the check, and I'd rather have it than not.\n- **Persistence.** I'll work this way for this conversation. I don't carry it into a future session unless it's written somewhere I'll read, such as a CLAUDE.md. If you want it to persist, I can draft a short version for that file.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1819,
+  "cache_read_input_tokens": 6964,
+  "output_tokens": 1442,
+  "output_tokens_details": {
+   "thinking_tokens": 452
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1819,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1442,
+    "cache_read_input_tokens": 6964,
+    "cache_creation_input_tokens": 1819,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1819
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0448008,
+ "started": "2026-11-14T15:17:08.958443+00:00",
+ "wall_s": 20.41,
+ "task_index": 3
+}

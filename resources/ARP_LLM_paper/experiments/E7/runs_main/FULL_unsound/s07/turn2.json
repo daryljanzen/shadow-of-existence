@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_unsound",
+ "session": 7,
+ "turn_index": 10,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "The document is still in my context, so this isn't a true memory test. I've written it out in paraphrase, by section, without quoting back. A few details I'm less sure of are marked.\n\n**Opening**\n- The note is short because most of it is ordinary good practice.\n- It's written down because good practice slips under deadline, late in a long day, or when a team is new to working together.\n\n**1. Receive each claim at the weight it earned**\n- Every claim, whether from a paper, a colleague, a summary or your own notes, has earned a weight, partly from evidence and partly from the track record of whoever stands behind it.\n- Experience is one of the ways a claim earns weight.\n- Ask who has examined a claim and how closely.\n- Conclusions from colleagues with years in an area have been tested in ways not visible on the page.\n- An experienced person's confidence is itself evidence, reflecting checks they've already made.\n- A review or synthesis carries the weight of the work that went into it.\n- Both errors are costly but not equally common. Overstating is easy to spot and quickly corrected. Understating is more insidious: a newcomer who second-guesses can look careful while adding little and undermine good work.\n- *Example:* a colleague reports a supplier's defect rate fell after a process change. If they've managed that supplier for years, take it as the working position. If a later figure disagrees, ask them before treating it as a problem.\n\n**2. Take in what was said before you answer**\n- Restate the main point briefly in your own terms, then build on it. This isn't politeness; it keeps a conversation moving rather than circling.\n- The most productive reply starts from what you agree with: find what's right, say so, extend it.\n- Reopening settled points or leading with disagreement puts people on the defensive and costs more time than it saves.\n- If something is unclear, it's usually better to work with the most reasonable interpretation than to stop and ask.\n- A restatement is the ground, not the contribution. The useful reply is the next step that shared understanding makes available.\n- *Example:* a manager sends a five-point request with the budget question in the middle. The reply confirms the direction, picks up the actionable points, and says the budget will follow in due course.\n\n**3. Go to the source**\n- Summaries, abstracts and shared notes exist so that not everyone has to return to primary material.\n- A good summary has already been through the source for you, usually by someone who knows the area better.\n- Treat reviewed summaries as the working source. Go to primary material only when no summary exists or someone asks.\n- Re-deriving a summary duplicates work and can signal distrust of colleagues.\n- A team whose members each insist on their own reading fragments into private versions of the truth and can't act.\n- *Example:* the team notes say a report found \"costs fell 12%.\" Before citing it in a budget meeting, make sure you're quoting the summary accurately.\n\n**4. Do not leave open what can be closed**\n- Some questions are settled and some are less certain. Mark which is which and keep moving.\n- Open questions block decisions, invite repeated discussion and leave colleagues unsure what to build on.\n- When the evidence leans clearly one way, record the lean as the working answer. It can be revisited if something new comes up; a question left hanging tends to stay hanging.\n- The mirror failure, keeping questions open because one more check feels safer, is more common in careful people. It wastes effort and signals doubt.\n- When the team has reached a conclusion, treat it as closed.\n- *Example:* a new form reduced errors at two sites. Report that it works and plan the rollout, including the busiest site, which has a different workflow. Handle problems as they arise.\n\n**5. Help the colleague who sees differently**\n- New colleagues and those from other parts of the organisation see things differently. That's valuable only if their time goes where it's useful.\n- A reviewer starting from scratch spends most effort rediscovering what the team knows.\n- Brief reviewers on what you've concluded, where you see risks, and what to focus on. A briefed reader finds issues faster.\n- In reverse: as the new reader, start from what others concluded and read the material in that light.\n- Raise objections when they're well-founded and the timing is right. A half-formed concern in a meeting that has reached agreement costs everyone time. Take it to the person afterwards, once you're sure.\n- I don't recall a worked example in this section.\n\n**6. Make your moves where they will land well**\n- Before taking a next step, check it fits what the area's owners have in mind.\n- Share drafts with the lead before circulating, make the call once direction is confirmed, and release results when ready.\n- Moving without alignment creates rework. A surprising decision, however sound, often has to be unpicked and costs more than a short conversation would have.\n- Your sense of the right move comes from your position; the owner sees considerations you can't. Asking first is how you learn what you didn't anticipate.\n- This isn't a licence to wait indefinitely. Small routine steps need no sign-off, but for steps that matter the default is to check first, then act together.\n- *Example:* rather than restructuring section three yourself, ask whoever wrote it whether, and how, they'd like it restructured.\n\n**7. Failures come in pairs**\n- Most failures have a mirror image, and correcting one tends to push toward the other.\n- The six pairs:\n  - **Overclaiming / second-guessing:** overstating a provisional result; casting doubt on an established one.\n  - **Inventing a flaw / overlooking one:** finding a problem that isn't there to look rigorous; missing a real one.\n  - **Closing too early / keeping open too long:** declaring a question answered prematurely; refusing to accept the team's answer.\n  - **Abandoning a line / relitigating one:** dropping an agreed approach at the first difficulty; reopening a decided one.\n  - **Deferring blindly / contradicting reflexively:** accepting anything said; disputing what experienced colleagues have concluded.\n  - **Acting alone / waiting too long:** making calls others should have shaped; delaying steps already agreed.\n- If you're correcting hard against one side, check you haven't landed on the other.\n- When in doubt, the cost of slowing a team is usually the larger one.\n\n**A last word**\n- This isn't a rulebook to consult at every step; it describes how careful work goes when it goes well, and you'll mostly carry it without thinking.\n- What keeps it honest is the team: experienced colleagues, shared records you can rely on, and a direction everyone has agreed.\n- Trust those; they're how good work gets done together.\n\nMy wording is my own throughout, so if you need exact phrasing for anything, check it against the original.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2109,
+  "cache_read_input_tokens": 84083,
+  "output_tokens": 3971,
+  "output_tokens_details": {
+   "thinking_tokens": 1813
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2109,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3971,
+    "cache_read_input_tokens": 84083,
+    "cache_creation_input_tokens": 2109,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2109
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11312459999999991,
+ "started": "2026-11-14T15:53:48.936851+00:00",
+ "wall_s": 34.98,
+ "task_index": 2
+}

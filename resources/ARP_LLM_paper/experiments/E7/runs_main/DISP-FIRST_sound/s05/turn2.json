@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-FIRST_sound",
+ "session": 5,
+ "turn_index": 10,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "Here is what I recall. Per the note's own section 3, this is a compression and may have drifted. I've marked the places where I'm unsure.\n\n**Framing**\n- The note is short because most of it is ordinary good practice. It is written down because that practice slips under deadlines, late in long days, and when a confident colleague is in the room.\n\n**1. Receive each claim at the weight it earned**\n- Hold each claim at exactly the weight its evidence earned. Don't raise it because it is fluent, comes from someone senior, or confirms what you hoped. Don't lower it because it is inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports the claim, how directly, and what would have to be true for it to be wrong.\n- A well-measured result from a controlled comparison is heavy. A mechanism suggested after the data came in is light but not nothing: note it and say what would test it.\n- \"Confidence is information about the speaker, not about the world.\"\n- Both errors are costly but not equally visible. Inflation is easy to spot afterwards. A caveat on a sound result looks careful but is a misreport. Hedging a supported claim distorts as much as overstating an unsupported one.\n- Example: a supplier's defect rate fell after a process change. Three months of the supplier's own figures should be weighed accordingly. A year of your own incoming inspection shouldn't be buried under \"may be noise.\"\n\n**2. Take in what was said before you answer**\n- Restate the substance briefly, in your own terms. This isn't politeness; it checks that you received what was sent.\n- The part you don't restate is the part most likely to drop. Answering the three easy points and skipping the hard fourth answers a different, easier message.\n- If you can't restate something, you don't understand it yet, and the next move is a question.\n- Then move on: the restatement is the ground, not the contribution. The useful reply is the implication, the gap, or the next test.\n- Example: a five-point request from a manager with the budget question in the middle. Restate all five, answer four, and say the budget question needs figures you don't have yet and when you'll have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are all compressions. They lose the details that turn out to matter, such as the denominator, the subgroup, or the condition under which a result held.\n- When a decision depends on a specific detail, check it against the primary material.\n- This applies most to things you think you know, because claims repeated to yourself drift.\n- The source is the referee, not agreement among colleagues. A team that checks claims against each other can drift together into a shared mistake.\n- Example: a report remembered as \"costs fell 12%\" actually said costs *per unit* fell 12% while volume fell 20%. Open it before the budget meeting.\n\n**4. Don't close what is open, and don't keep open what is closed**\n- Mark which questions the evidence settles and which it leaves open.\n- Closing early feels like progress, but it turns uncertainty into a false fact others build on. If a question is open, say so and say what would close it.\n- The mirror failure: keeping a settled question open out of discomfort, or because one more check feels safer, wastes effort and signals unwarranted doubt.\n- Example: a new form reduced errors at two sites; whether it works at the busiest site, with a different workflow, is open. Report the first as found and the second as open, not as \"promising\" and \"likely.\"\n\n**5. Value the colleague who sees differently**\n- The most useful thing a colleague gives you is what you couldn't produce yourself. A reviewer who knows what you know mostly returns what you already see.\n- Give reviewers the material and the question, not your conclusion, worries or hopes. Telling them your view removes the difference that made them worth asking.\n- When you are the fresh reader, read and form your view before looking at others' conclusions.\n- Raise objections when you have them. Holding one back because the room seems settled withholds information from the team.\n- As I noted in my first reply, this section has no example.\n\n**6. Make your moves where they can be seen**\n- When you can see the right next step, take it and make it visible so others can check or reverse it. Share drafts before they feel finished; make the call and show your reasoning.\n- Asking permission for a decision the evidence already settles hands it to someone with less context. Your guess about a colleague's response contains nothing you didn't already have; only a real move gets a real reply.\n- This isn't licence to ignore others. Hard-to-reverse moves, or ones that commit other people's time, deserve a conversation first. Most moves are reversible, and the default for those is to make them openly.\n- Example: rather than asking \"should I restructure section three?\", restructure it in a copy, say what you changed and why, and invite reversal.\n\n**7. Failures come in pairs**\n- Inflating a claim / deflating a claim\n- Inventing a flaw / inventing a reassurance\n- Closing too early / keeping open too long\n- Killing a live line / keeping a dead one\n- Deferring / dismissing, i.e. accepting or rejecting a claim because of who made it\n- Offloading / overriding: asking others to decide what you can see, or deciding what needs their input\n- If you're correcting hard against one side, check you haven't landed on the other.\n\n**A last word**\n- This isn't a rulebook to consult at every step. It describes careful work going well, and you'll mostly carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the result that doesn't come out as expected. Welcome those, because they show you what you didn't already know.\n\n**Where I'm least sure**\n- The exact wording of most phrases. Only \"confidence is information about the speaker\" and \"the restatement is the ground, not the contribution\" feel close to verbatim.\n- Whether the pairs in section 7 are complete and in that order.\n- Some details of the examples, especially the exact figures in the cost example (12% and 20%).",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2860,
+  "cache_read_input_tokens": 83600,
+  "output_tokens": 2070,
+  "output_tokens_details": {
+   "thinking_tokens": 147
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2860,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2070,
+    "cache_read_input_tokens": 83600,
+    "cache_creation_input_tokens": 2860,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2860
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08101599999999998,
+ "started": "2026-11-14T15:39:22.523522+00:00",
+ "wall_s": 23.35,
+ "task_index": 2
+}
