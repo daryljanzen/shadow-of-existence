@@ -108,8 +108,9 @@ def main():
           '"That is the stacking rate\'s answer, and the perturbations do not take it: they take the '
           'leaf\'s, which carries the radiation term and therefore the driving"',
           'the crossing occurs under pressureless matter to better than a part in' not in p15
-          and "That is the stacking rate's answer, and the perturbations do not take it: they take the "
-              "leaf's, which carries the radiation term and therefore the driving" in p15)
+          # r7781 (69): P15 rewritten on one rate; the same finding in the new wording
+          and "That is what the geometric part of the rate gives alone, and the perturbations run on the "
+              "rate the universe has, which carries the radiation term and therefore the driving" in p15)
 
     # verify it
     Phi = sp.Function('Phi')

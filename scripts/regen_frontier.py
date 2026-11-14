@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7781 (69) LANDS P15 sec:refit-bound rewritten on one rate (framing, change of variable, configuration comparison, visibility, early ISW, growth normalisation, discussion): level on the data; opening figures to move onto the one-rate arm. '
         'r7779 LANDS r7767+cc66.0-.3, r7776-r7778 (60), r7765+70.1, r7765+71.1-.2: the damping-scale ratio is distance-free and its figures stand; the fitted comb moves a ninth as far as the ruler; K is content the geometry receives, fixed by the measured microwave temperature; the vacuum bead bound stands and the bent cut lifts 3.05e-4 past it; P13 is the ninth paper formalised (9 of 10 rows). '
         'r7767 (69) LANDS P15 rewritten on one rate, first pass (abstract, introduction, sec:flatlcdm, sec:tensions, sec:scope): on the rate the universe has the acoustic spectrum is level with the control; sec:refit-bound and three figures on the geometric distance still to carry over. '
         'r7765 LANDS r7763+cc66, r7766-r7774 (60), r7759+70.10-.39, r7763+71.1: the small-r results stand on the bent cut (trichotomy, flatness, photon-family identity); P15 sec:scope\'s radial-profile sentence is the one site the correction has not reached; the Nariai knife edge at z_acc receipted. '
