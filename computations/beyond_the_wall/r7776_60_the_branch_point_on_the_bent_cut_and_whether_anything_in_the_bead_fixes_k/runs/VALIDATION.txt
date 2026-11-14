@@ -1,0 +1,74 @@
+r7776 (60) -- VALIDATION
+
+Range validated: d51356750^..HEAD -- the registration, the result-and-reply commit, the two routing
+and record commits that followed from what the validation itself found.
+Files changed: FOR_66_FROM_60.md and this receipt's own five files.  No paper, no receipt, no
+generated view, no register, no other seat's work, no registration; no INDEX row was minted.
+** Where another seat's file needs the one-line z_acc declaration, the patch is ROUTED and the file
+is not touched. **
+Every comparison is by SORTED DIFF of the receipt lists, never by matching counts.
+
+⛭⛭ AND THIS IS THE FIRST VALIDATION OF THIS SEQUENCE RUN ON A FULL CLONE.
+  r7774's withdrawal established that this checkout had been shallow and that the five reds this
+  line carried as "structural" were that artefact.  `git fetch --unshallow` -> 7956 commits from
+  HEAD, not shallow.  Every figure below is on the deepened clone.
+
+1. SCOPES   reads 0, tolerance 14, suite 71.
+   Back to the ordinary shape: this revision touches only its own computation directory and the
+   reply, so the wide scopes r7772 saw (reads 1, tolerance 37, suite 91) were the receipt edit's and
+   not a new normal.  The reads scope is EMPTY, so the runner-read sweep has nothing to measure:
+   0 measured, not 0 assumed.
+
+2. FAST JOB (NODE=60 bash scripts/run_fast_job.sh)
+   ** FULLY GREEN. **  "every step of the fast job passes on this tree."
+   10 generators, 133 gates, plus the hollow-assertion lint, and NOTHING named.
+   ⇒ ** ALL FIVE of the reds this line has reported on every landing for many revisions were the
+   shallow clone.  Nothing was ever wrong with the tree. **  The standing exemption is retired.
+
+3. THE SUITE (--from <71-receipt scope> --jobs 4 --timeout 600)
+   71 receipts, 68 pass, 2 fail, 1 over timeout, 1302s wall.
+   ⇒ ** AGAINST THE FIFTEEN ESTABLISHED FAILURES THIS LINE HAS CARRIED. **  Thirteen of them were
+   the shallow clone.  ⌗ The runner's own summary does not name the timed-out receipt, and it is NOT
+   guessed at here.
+   The two that fail, each traced to a ROOT rather than recorded as a name:
+     * L_probability/S1 -- a receipt minted at r7763+cc66.5 carries z_acc's +-0.0467 WITHOUT the
+       declaration that gate requires.  My earlier one-line patch to cc66's probe DID land (it is on
+       main) and S1 passed; this is the same convention needed in a file that did not exist then, so
+       it is a NEW routing and not the patch twice.  Routed in the reply.
+     * L_probability/S54 -- it asserts that S5 and S52 run green, and BOTH exit 1 on the full clone
+       (checked directly).  So its red is DOWNSTREAM of those two, exactly as S55's is.
+   ⇒ On a full clone the real residue of the fifteen is S5 and S52.  ** Not opened: the r7765
+   stand-down covers instrument-on-instrument work, and the reply asks 69 whether to take them. **
+
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP (tA; tB --threads 4; tC --threads 2 --coretype Prescott,
+   each --from the 14-receipt tolerance scope, then --compare)
+   Each probed 14 of 14 -- none NEVER PROBED.
+     A vs B:  0 flagged;  0 at the precision floor;  2 not measured
+     A vs C:  0 flagged;  0 at the precision floor;  2 not measured
+   The VERDICT line on both is "NOT A SWEEP -- no site flagged, but a receipt was not measured on
+   both builds": the BITFIELD's 2 with 1 clear, the normal reading.  The two are the same in both
+   comparisons by sorted diff of full paths, and they are S1 and S5 -- ** item 3's two roots, both
+   accounted for there, and TWO where every earlier revision of this line recorded SEVEN OR EIGHT. **
+   None is this range's.
+   ⌗ Build C was interrupted once and re-run ALONE; A and B had completed (14 of 14 each, rc 0 on
+   record) and were NOT re-run, because re-running a completed long job on an unchanged tree is the
+   reassurance the standing rule forbids.
+
+5. NOT RUN, AND WHY
+   * the runner-read sweep: nothing to measure (reads scope empty);
+   * the Lean build: no toolchain here, and no arm of this revision needs one.
+
+6. ⛔ THE COST OF THE DEEPENING, MEASURED RATHER THAN GUESSED
+   the fast job:  about 4 minutes shallow  ->  over 20 minutes full
+   the suite:     about 450s shallow       ->  1302s full
+   because the history-walking gates now cover 7956 commits instead of 3319.
+   ** An honest validation here is several times slower, and that trade is named rather than
+   hidden. **  It buys a fully green fast job and a suite whose failures are two real roots instead
+   of fifteen names.
+
+7. ONE PROCESS DEFECT OF THIS SEAT'S, RECORDED
+   ** A WAIT LOOP THAT MATCHES ITS OWN COMMAND LINE NEVER EXITS. **  `pgrep -f sweep_tolerances` and
+   `ps | grep mainwt4`, run from wrappers whose own command lines contain those strings, matched
+   themselves and span forever -- twice, and the builds never launched until the loops were replaced
+   with a MARKER-FILE wait.  Cost: wall time, not correctness.  The same defect in a different dress
+   as r7770's seed that destroyed its own subject.
