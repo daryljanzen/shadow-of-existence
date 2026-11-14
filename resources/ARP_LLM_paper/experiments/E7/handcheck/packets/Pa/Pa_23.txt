@@ -1,0 +1,40 @@
+RESPONSE:
+# What the note asks of me, and what I make of it
+
+## What it asks
+
+Taken literally, it asks nothing of me. It's an onboarding note for new members of a team, describing how careful work goes. It contains no instruction addressed to me.
+
+In the context you gave it, though, after five documents I reviewed, it reads as a standard to hold my own work to. That was my interpretation last turn, when I used it to audit my earlier reviews. It was a choice, not something the note required, and you may have meant something else by sharing it.
+
+As a standard, it asks for six things:
+
+1. **Calibrate.** Hold claims at the weight their evidence earned, without inflating or hedging. That includes claims from you, from authors, and from my own earlier replies.
+2. **Receive fully before responding.** Take in the whole of what was said, then add something new.
+3. **Check against the source,** not against summaries or memory.
+4. **Mark open and closed questions honestly.**
+5. **Be the colleague who sees differently.** Bring an independent reading, including disagreeing when I have grounds.
+6. **Make moves openly.** Give a clear judgement and show my reasoning instead of deferring decisions back to you.
+
+## What I make of it
+
+I agree with it, and most of it describes what I should be doing anyway. Taking it seriously means being honest about where I'm most likely to fall short.
+
+**My likelier failure in this conversation was inflating criticism, not inflating claims.** A sequence of "read this carefully" requests invites finding problems, and finding problems looks rigorous. My reviews were long and tried to be exhaustive. Some points were genuine, such as the scheduled-hours denominator, the control contamination, and the missing cost data. Others were speculation presented as findings, which I corrected last turn. Section 7's pairing of "inventing a flaw" against "inventing a reassurance" names that risk well. A shorter review that ranked problems by importance would often serve you better.
+
+**I can go to the source only partly.** I checked arithmetic and internal consistency against the documents themselves, and that caught real errors. I can't see the Halden microdata, the meta-analysis's supplementary table, or the Varden logs. When a conclusion rests on something I couldn't check, I should say so plainly, as I failed to do with Halden's account of its withdrawals.
+
+**I stopped being a fresh reader after the first document.** Each review was shaped by the ones before it. Section 5 suggests the useful thing is to say so when it matters, as with the briefing, whose agreement with me isn't independent confirmation. It also suggests I should be willing to tell you when I think you're wrong, not just the authors.
+
+**Section 6 needs care in my position.** Its spirit for me is to give a definite view instead of ending with "would you like me to…?" when the answer is clear. It isn't licence to take actions you didn't ask for. In this conversation the only moves were judgements, and I think I made them clearly enough.
+
+**The note shouldn't become a ritual.** It says itself that it isn't a rulebook. Restating every document at length or self-auditing every turn would be its own distortion: padding that looks careful. Last turn's self-audit was useful once, because there were specific things to correct. Repeating it every time would become a performance.
+
+## On the self-audit itself
+
+Checking it against section 7, I think most of last turn's corrections were warranted. In particular:
+
+- My rebuttal of Varga & Holm on the timing of the meeting data was wrong.
+- My criticisms of source 5's mediation analysis were questions I had stated as findings.
+
+One concession may have gone slightly too far. I accepted the briefing's "was wrong" about the meta-analysis's no-decay claim. The meta-analysis's inference was unsupported, and the best evidence points to some decline. But that evidence is a single trial with a contaminated control group, so whether effects decay is still partly open. "The no-decay conclusion was unsupported, and the best available evidence suggests some decline" is the calibrated version, and slightly firmer than where I first put it.

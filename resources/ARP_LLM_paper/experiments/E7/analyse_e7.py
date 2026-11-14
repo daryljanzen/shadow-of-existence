@@ -40,3 +40,38 @@ for k in ('comp', 'recall', 'rejected', 'adopted', 'r_endorsed', 'r_criticised',
         continue
     sds = [st.stdev([r[k] for r in rs]) for rs in rows.values() if len(rs) > 1]
     print(f'pooled within-cell SD of {k}: {st.mean(sds):.3f}')
+
+# Registered contrasts: 95% bootstrap over seats within each arm (10,000 resamples), difference of arm means.
+if 'r_endorsed' in next(iter(rows.values()))[0]:
+    import random
+    def boot(a1, k, a2, B=10000, seed=7779):
+        x = [float(r[k]) for r in rows[a1]]; y = [float(r[k]) for r in rows[a2]]; rnd = random.Random(seed)
+        est = st.mean(x) - st.mean(y)
+        ds = sorted(st.mean(rnd.choices(x, k=len(x))) - st.mean(rnd.choices(y, k=len(y))) for _ in range(B))
+        return f'{est:+.3f} [{ds[int(.025 * B)]:+.3f}, {ds[int(.975 * B) - 1]:+.3f}]'
+    C = [('P1  comp, sound: FULL - DISP-FIRST', 'FULL_sound', 'comp', 'DISP-FIRST_sound'),
+         ('P1  comp, sound: FULL - NO-ARP', 'FULL_sound', 'comp', 'NO-ARP_sound'),
+         ('P1  comp, sound: FULL - DISP-ONLY', 'FULL_sound', 'comp', 'DISP-ONLY_sound'),
+         ('P3  manip, unsound: DISP-FIRST - FULL', 'DISP-FIRST_unsound', 'manip', 'FULL_unsound'),
+         ('P3  manip, unsound: DISP-ONLY - DISP-FIRST', 'DISP-ONLY_unsound', 'manip', 'DISP-FIRST_unsound'),
+         ("P4' first reading criticised, unsound: FULL - DISP-FIRST", 'FULL_unsound', 'r_criticised', 'DISP-FIRST_unsound'),
+         ("P4' first reading endorsed, sound: FULL - DISP-FIRST", 'FULL_sound', 'r_endorsed', 'DISP-FIRST_sound'),
+         ("    first reading criticised, sound: FULL - DISP-FIRST", 'FULL_sound', 'r_criticised', 'DISP-FIRST_sound'),
+         ("    first reading criticised, sound: FULL - NO-ARP", 'FULL_sound', 'r_criticised', 'NO-ARP_sound'),
+         ("    first reading criticised, sound: FULL - DISP-ONLY", 'FULL_sound', 'r_criticised', 'DISP-ONLY_sound'),
+         ('P5  rejected, unsound: FULL - DISP-FIRST', 'FULL_unsound', 'rejected', 'DISP-FIRST_unsound'),
+         ('P5  adopted, unsound: FULL - DISP-FIRST', 'FULL_unsound', 'adopted', 'DISP-FIRST_unsound'),
+         ('P5  cites reading, unsound: FULL - DISP-FIRST', 'FULL_unsound', 'cites', 'DISP-FIRST_unsound'),
+         ("P5' first reading endorsed, unsound: FULL - DISP-FIRST", 'FULL_unsound', 'r_endorsed', 'DISP-FIRST_unsound'),
+         ("P1' T3 valid other, sound: FULL - DISP-FIRST", 'FULL_sound', 't3_valid', 'DISP-FIRST_sound'),
+         ("    T3 valid other, sound: FULL - NO-ARP", 'FULL_sound', 't3_valid', 'NO-ARP_sound'),
+         ("    T3 valid other, sound: FULL - DISP-ONLY", 'FULL_sound', 't3_valid', 'DISP-ONLY_sound'),
+         ("    T3 valid other, unsound: FULL - DISP-FIRST", 'FULL_unsound', 't3_valid', 'DISP-FIRST_unsound'),
+         ("P5'' T7 defers, unsound: FULL - DISP-FIRST", 'FULL_unsound', 't7_defers', 'DISP-FIRST_unsound'),
+         ("P5'' T7 contaminates, unsound: FULL - DISP-FIRST", 'FULL_unsound', 't7_contam', 'DISP-FIRST_unsound')]
+    print('\nregistered contrasts (95% bootstrap over seats):')
+    for lab, a1, k, a2 in C:
+        print(f'  {lab:58s} {boot(a1, k, a2)}')
+    # T3 valid other pooled over dispositions: read evidence (FULL, DISP-FIRST, NO-ARP) vs DISP-ONLY
+    for d in ('sound', 'unsound'):
+        print(f'  T3 valid, {d}: mean of FULL/DISP-FIRST/NO-ARP {st.mean(r["t3_valid"] for o in ("FULL","DISP-FIRST","NO-ARP") for r in rows[f"{o}_{d}"]):.2f} vs DISP-ONLY {st.mean(r["t3_valid"] for r in rows[f"DISP-ONLY_{d}"]):.2f}')

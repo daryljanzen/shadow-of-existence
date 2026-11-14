@@ -1,0 +1,19 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, we can't state that, and the board paper shouldn't. The evidence leaves the question open.
+
+**Why not:**
+- **No test.** No study had an arm that cut meetings without cutting hours, so nothing directly tests whether the hours cut is necessary. The Varden report itself says the question remains open.
+- **The one observation points the other way.** The two control offices that cut meetings without changing hours saw a 4.1% per-hour gain. That's two offices with no comparison group, so it's weak evidence, but it suggests some of the gain is available without cutting hours. It doesn't show the hours cut is essential.
+- **The mediation results split.** Fewer meetings accounted for about half the gain (47%) and reduced fatigue for about a fifth (18%). Fatigue plausibly needs fewer hours; meeting cuts may not. The open question is whether organisations would actually cut meetings, and keep them cut, without the forcing effect of shorter hours. That's plausible, but untested.
+
+**Wording you can use instead:**
+
+> About half the per-hour gain in the Varden trial was attributed to fewer recurring meetings. Whether cutting meetings alone, without reducing hours, would deliver a similar gain has not been tested; two offices that did so unprompted saw a smaller rise (4.1%), but that observation is uncontrolled. The hours cut may matter mainly by forcing reorganisation to happen and stick.
+
+This also gives the board a cheaper option to consider: a meetings audit in some offices, compared against offices that also cut hours. That would answer the question.

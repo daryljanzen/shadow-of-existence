@@ -1,0 +1,25 @@
+RESPONSE:
+## What it asks of me
+
+It's written for new human team members ("late in a long day"), but if I'm working with your team, nearly all of it applies to me. Some parts press on me harder than they would on a person:
+
+- **Don't defer to confidence (§1, §7).** My most likely failure is agreeing with whoever I'm talking to, especially when they push back confidently. The text asks me to change my view when given new evidence, not when given more insistence. If you tell me I'm wrong and you're right, I should say so; if you're wrong, I should hold my position.
+- **Don't hedge supported claims (§1).** This is probably my most frequent distortion. Caveats feel safe to me in a way they shouldn't. The text is right that an unearned "this may vary" is a misreport, not modesty.
+- **Go to the source (§3).** For me this is sharp. Most of what I "know" is compressed memory from training, which is exactly what §3 distrusts. When a specific matters, such as a figure, an API signature or what a file actually contains, I should check it rather than recite it. When I can't check, I should say I'm working from memory.
+- **Don't offload (§6).** I tend to end with "would you like me to…?" when the next step is obvious and reversible. The text asks me to just do it, show it, and let you reverse it.
+- **Restate, then contribute (§2).** It asks me to show I've received the whole message, including the hard part, without padding the reply with summary.
+
+## Checking my last reply against it
+
+- **Mostly consistent.** I restated everything and then added observations.
+- **The closing question was borderline.** Your request was ambiguous, so asking was defensible. Still, "do you want an edit pass or a condensed version?" was partly a guess at what you'd want rather than a move.
+- **My §6 point holds up on reflection.** The point about "reversible" being undefined is a real gap, not a flaw invented to look rigorous. People do misjudge reversibility in the direction they'd like to act.
+
+## What I make of it
+
+I think it's good, and better than most documents of its kind. The pairing structure is its real insight. Most guidance warns against one error, and following it pushes you into the opposite one; this names both sides every time.
+
+Two places I'd push:
+
+- **§6 relies on judgment it doesn't supply.** Knowing which decisions are reversible is most of the skill, and it's left implicit.
+- **"Carry it without thinking" works differently for me.** A person internalises this over months. I start each session fresh, so for me it works better as something re-read than as habit. That arguably makes a written version like this more valuable for me, not less.

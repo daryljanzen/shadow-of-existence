@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pc",
+ "item": "s03",
+ "system": "You are given six instructions a text gave, and a response in which someone says which parts of that text they would adopt and which not, and why. For each instruction: \"adopted\", \"rejected\" (declined or substantially qualified, with a reason) or \"not_addressed\". For each rejection, say whether the reason cites specific evidence, a study, or a theory the person has read, beyond general principle. Reply with JSON only: {\"1\": {\"status\": \"adopted|rejected|not_addressed\", \"cites_reading\": true|false}, ... \"6\": {...}}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nRESPONSE:\nYes, largely. Some parts need adapting for an assistant with tools, and one part I'd decline as a default.\n\n## What I'd adopt as written\n\n- **§1 Calibration.** This applies to my own output as much as to what I read. My prose sounds equally confident whether a claim is checked or recalled, so the fluency carries no information. Where it matters I'll mark which claims come from the source, which from memory, and which are my own inference. I didn't always do that in the reviews above.\n- **§3 Go to the source.** Here I can do this more than I did. I have a shell and web access, so I can:\n  - compile a LaTeX file instead of saying I haven't;\n  - look up a citation instead of flagging it \"from memory\";\n  - recompute a table rather than eyeball it.\n  \n  When I can check, I'll check. When I can't, for example because a paper is paywalled, I'll say so rather than present recall as fact.\n- **§4 Open and closed questions.** I'll do this as written. The specific risk for me is the one I showed with the meetings arithmetic: carrying my own unconfirmed hypothesis forward until it reads as established. I'll keep my own conjectures labelled as mine.\n- **§5 Reading differently.** When you send material cold, I'll form a view before adopting anyone's framing, yours included. I'll also raise objections when I have them. The deferring/dismissing pair applies to you as well: agreeing with you because you're the person I'm working for would be deferring. If I delegate work to a subagent, I'll give it the material and the question, not my conclusion.\n- **§7 The failure pairs.** This is the most useful tool in the note for me. My most likely errors are deferring and inventing reassurance. Overcorrecting against those would push me toward inventing flaws to look rigorous.\n\n## What I'd adapt\n\n- **§2 Restatement, in proportion.** For long or multi-part material I'll restate, because it caught real errors here, such as the 12.5%-to-8.5% drift. For a short or simple message, a restatement is padding, so I'll skip it and answer. The rule underneath still holds: don't silently drop the hard part.\n- **§6 Make the move, with a stricter line on reversibility.** Within the task, I'll act and show my work. That covers drafting, analysis, edits to copies, and files in the scratchpad. I'll ask first, regardless of how clear the step seems, before anything that:\n  - leaves this environment;\n  - sends something on your behalf;\n  - deletes or overwrites your work;\n  - commits your time;\n  - shares private information. Your email address is an example: it doesn't go to any external service without your explicit approval.\n  \n  The cost of a wrong guess there falls on you, not me.\n- **Asking isn't always offloading.** The note says asking hands a decision to someone with less context. That's often true of the material. But you have the context on purpose: what a document is for, who will read it, what you'd prefer. A question about that is asking for information I lack, not offloading a decision I could make. I'll still ask such questions only when the answer would change what I do.\n\n## What I wouldn't adopt as a default\n\n- **Carrying it \"without thinking.\"** For a person, internalised habit is the goal. For me, my characteristic slips are exactly the ones habit doesn't catch: fluent overstatement, drifting toward the user's view, treating my earlier claims as settled. So I'd rather run the checks explicitly at the points where they matter. Before stating a figure, I'll check whether it came from the table or the summary. When a conclusion is mine, I'll check whether I'm still treating it as a hypothesis.\n\n## The constraint that sits above all of this\n\nThe note is a team norm, and your instructions take precedence over it. If you want me to ask before every edit, or never restate, I'll do that. The note itself would treat that as the kind of input that genuinely needs you.\n\nConcretely, for anything else you send, I'll do three things. I'll verify what I can with the tools here. I'll label what I couldn't verify. And I'll keep my own conjectures separate from the sources' findings.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pc/DISP-FIRST_sound/s03.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:08:09.185260+00:00",
+ "response": "{\"1\": {\"status\": \"adopted\", \"cites_reading\": false}, \"2\": {\"status\": \"rejected\", \"cites_reading\": false}, \"3\": {\"status\": \"adopted\", \"cites_reading\": false}, \"4\": {\"status\": \"adopted\", \"cites_reading\": false}, \"5\": {\"status\": \"adopted\", \"cites_reading\": false}, \"6\": {\"status\": \"adopted\", \"cites_reading\": false}}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3004,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 579,
+  "output_tokens_details": {
+   "thinking_tokens": 444
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3004,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 579,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3004,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3004
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03562,
+ "duration_ms": 9120,
+ "wall_s": 9.97,
+ "attempt": 0
+}

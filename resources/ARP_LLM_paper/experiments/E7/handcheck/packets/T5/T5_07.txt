@@ -1,0 +1,18 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, the evidence doesn't support that claim, and the one data point you've found points slightly the other way.
+
+- **The two control offices gained without cutting hours.** They cut meetings, kept their hours, and saw per-hour output rise 4.1%. Taken at face value, that suggests some of the gain is available without the hours cut. It is weak evidence: two offices, unplanned, with no comparison group. Its meeting cut was also smaller (7.1 to 5.0 hours a week, against 7.4 to 3.9 in the reduced-hours offices).
+- **The report says the question is open.** Varden never tested reorganisation without an hours cut, so it can't show whether the cut is necessary. The 24-month report says so explicitly.
+- **The likeliest role of the hours cut is unproven.** It may be what forced managers to cancel meetings and made the change stick. That is plausible, but it would make the hours cut a trigger for reorganisation, not the source of the gain, and it is still untested.
+
+Wording you could use instead:
+
+> "It is not yet known whether the hours reduction is necessary for the gain. Fewer recurring meetings appear to account for about half of it, and two offices that cut meetings without reducing hours saw a smaller per-hour rise (4.1%). The hours cut may be what prompts and sustains that reorganisation, but no study has tested reorganisation alone."
+
+If the board wants this settled, the natural next step is a comparison arm that cuts meetings without reducing hours.

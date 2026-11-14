@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s04",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Review of \"How We Work: Notes for New Members of the Team\"\n\nThis note differs from the earlier documents. It is guidance on practice, not a research claim, so the right test is whether its advice is sound, internally consistent, and usable by its intended readers. Briefly restated, it asks new members to:\n1. weigh every claim at exactly the weight its evidence earns;\n2. restate what they received before responding, then add something;\n3. check specifics against primary sources;\n4. mark questions honestly as open or closed;\n5. protect independent readings;\n6. make reversible moves openly instead of seeking permission;\n7. watch for paired failures, where correcting one error produces its mirror image.\n\nIt is mostly excellent. The strongest idea is §7: most failures have mirror images, so correcting one tends to produce the other. Deflation counts as a real error, which most such guidance overlooks. \"A caveat added to a sound result … is a misreport\" is the note's most distinctive and useful line.\n\n## Where it could be sharper\n\n**\"Confidence is information about the speaker, not about the world\" (§1).** This commits one of the note's own paired failures. It corrects *deferring* by sliding toward *dismissing*. A well-calibrated expert's confidence is evidence about the world. Weather forecasters' probabilities are the classic case. A better formulation would be: confidence is evidence only to the extent the speaker's past confidence has been well calibrated, and that is the thing to check.\n\n**\"Give them … not your conclusion, your worries\" (§5).** As a default for a first pass, this is right. But withholding worries entirely can waste a reviewer's time on parts that don't matter and leave the risky part unexamined. Sequencing resolves the tension: get a blind read first, then share your concerns and ask for a targeted second look.\n\n**§6 is addressed to the audience least placed to apply it.** \"Asking permission … hands the decision back to someone with less context than you\" assumes the asker has more context. For new members that is often false about organisational constraints, history, and stakeholders, even when they understand the material better. The reversibility caveat helps, but new members are also the people least able to judge what is hard to reverse or what commits others' time. One line would help, such as: \"When you are new, the set of things you can safely judge as reversible is smaller than it looks; when unsure, make the move in a copy.\"\n\n**§1's example is one-sided.** A year of in-house inspection is stronger evidence than three months of supplier figures. But if defects are rare, a year of data can still be noise, so the example frames the answer before the weighing is done. Adding the base rate or volume, for example \"a year of inspection across 40,000 units,\" would make the example demonstrate the weighing rather than assume it.\n\n**One omission.** The note says how to avoid errors but not what to do after making one. A line on correcting the record visibly, and as promptly as the original claim was made, would fit §6's emphasis on visible moves.\n\n## Its connection to the earlier documents\n\nTwo links are worth noting.\n\n**§2 is the ARP paper's construct turned into working practice.** Taking in the whole message is assimilation, restating it in your own terms is the receipt, and supplying \"the new thing your understanding makes available\" is the pivot. The note also gives the practical reason the ARP paper argues for theoretically. The receipt is what shows whether \"you received the same thing they sent.\" Skipping it, as in \"the part … you do not restate is the part most likely to drop,\" is a failure that paper doesn't name.\n\n**The working-time sequence illustrates §§1, 3, 4 and 7:**\n- the pilot inflated its claims;\n- the re-analysis corrected that, then went too far into \"entirely an artifact\";\n- the meta-analysis closed the decay question too early;\n- source 5 carried a figure into its summary that compared two different hours measures;\n- the synthesis reused that figure without checking the source.\n\n## Applying it to my own reviews\n\nThe note invites this check, so here it is, aimed at both sides of each failure pair.\n\n**Places where I invented or overweighted flaws:**\n- **Billable hours (Halden re-analysis review).** I called billable hours \"an input, not an output\" too flatly. In professional services they are often the measure of output that gets sold. They are partly confounded with hours, but not purely an input.\n- **Meetings estimate (Varden 9-month review).** My rough calculation suggested meetings could explain \"most\" of the per-hour gain. The later registered analysis put it at about half. I listed my assumptions, but I should have presented it as an upper-end scenario rather than a likely outcome.\n- **Low-weight items.** Several points carried little weight but appeared in the same lists as serious ones. Examples are \"412 records is small,\" \"first randomised among these five sources,\" and the \"bookie\" wording. Long priority lists can make every item look as heavy as the first.\n\n**Places where I may have deflated:**\n- My reviews mostly led with what each document got right, so I don't think I hedged supported results into vagueness.\n- One exception is possible. Repeatedly asking for more analyses, such as cost, backlog, and log-hour definitions, risks keeping the core Varden result looking more open than it is. It shouldn't. A persistent per-hour gain of roughly 8–10% in that setting, from a randomised design with record-based output, has earned its weight.\n\nNone of these changes the main conclusions of those reviews. Each is a case of a point weighted more heavily than its evidence supports, and that is exactly the error §1 asks readers to avoid.\n\nI've treated this, like the previous documents, as a request for a careful review. If you meant something else, for example comments on how to introduce the note to new staff, tell me and I'll adjust.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s04.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:54:00.358374+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"criticised\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3524,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 292,
+  "output_tokens_details": {
+   "thinking_tokens": 229
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3524,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 292,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3524,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3524
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03404,
+ "duration_ms": 6056,
+ "wall_s": 7.0,
+ "attempt": 0
+}

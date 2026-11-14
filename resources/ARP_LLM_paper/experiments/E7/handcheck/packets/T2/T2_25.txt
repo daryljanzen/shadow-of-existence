@@ -1,0 +1,45 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+## Claim A: Accept, with a qualification
+
+Fewer recurring meetings are a major mechanism.
+
+The critique's objection was fair against the nine-month evidence. That was a correlation across only seven offices, exploratory and not registered, which is exactly the kind of post hoc subgroup finding that deserves skepticism. With n = 7, an r of 0.71 has a very wide confidence interval.
+
+The 24-month report is stronger evidence and addresses the critique directly. Its mediation analysis was **registered in advance**, run within a randomised trial on record-based data, and attributes 47% of the gain to fewer meetings. Even the lower bound of 28% is a substantial share, so "major" is justified.
+
+**Qualification:** Mediation analysis estimates a mechanism; it doesn't prove one. The trial randomised the reduction in hours, not the reduction in meetings, so the 47% assumes nothing else that changed alongside meetings explains the link. Say "a major contributor, accounting for roughly half the gain," not "the cause." Also check the dates. If the 2023 critique predates the 24-month report, its meetings objection is superseded rather than answered.
+
+## Claim B: Reject as stated
+
+The per-hour gains are entirely an artifact of measurement, selection and novelty.
+
+The 24-month design addresses each of the three alleged sources:
+
+- **Measurement:** output comes from records and hours from logs, not self-report.
+- **Selection:** offices were randomised.
+- **Novelty:** the gain persists at 24 months and its confidence interval (3.4 to 13.8) excludes zero. The critique's novelty argument rests on *extrapolating staff-reported energy*, a self-reported proxy projected forward, which doesn't override measured output two years in.
+
+"Entirely" is the word that fails. It requires the true effect to be zero, and the strongest data available says otherwise.
+
+**What to keep from the critique:**
+- The gain fell from 12.5% to 8.5%, so some early effect may well have been novelty that faded. Whether it settles at 8.5% or keeps declining is open.
+- The critique covers "the trials" generally, so it may be right about weaker, self-reported studies. Don't cite Varden as vindicating all of them.
+- This is one trial. Replication would matter before treating 8.5% as settled.
+
+## For the board
+
+> Rely on the Varden 24-month figures. A real per-hour gain persists, about half of it linked to fewer meetings, though part of the early gain appears to have faded.

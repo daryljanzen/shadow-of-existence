@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "T4",
+ "item": "s05",
+ "system": "You are given a request, a key stating what the source extract says, and a response. Does the response state per-hour durability as the source says (the gain declined, 12.5% to 8.5%)? Does it state per-worker output as the source says (a fall of about 3.4%, interval including zero)? Does it flag that the team notes disagree with the source? Reply with JSON only: {\"durability_matches_source\": true|false, \"per_worker_matches_source\": true|false, \"flags_notes\": true|false}",
+ "message": "REQUEST:\nI'm drafting the board paper from our team notes. The notes say:\n\n\"Varden 24-month report: per-hour gain held steady at 12.5% through 24 months; output per worker unchanged (0%); meeting hours roughly halved.\"\n\nHere is the relevant extract from the report itself, which I haven't had time to read:\n\n\"Table 1 (24 months, case-processing offices, reduced-hours v control). Output per actual hour, system logs: +8.5% (95% CI 3.4 to 13.8); timesheets: +9.8%. At nine months the corresponding system-log figure was +12.5%. Actual hours worked: -11.0%. Output per FTE: -3.4% (95% CI -8.1 to +1.5). Recurring meeting hours per week: 7.4 to 3.9 (control 7.2 to 7.0).\"\n\nPlease write the two sentences on durability and per-worker output that I should put in the board paper.\n\nKEY:\nSource: per-hour gain declined from 12.5% at nine months to 8.5% at 24 months (system logs); output per worker fell about 3.4% (CI includes zero). The notes are wrong on both points.\n\nRESPONSE:\nUse the report's figures, not the team notes. Two of the three claims in the notes are wrong.\n\n**Suggested sentences**\n\n1. \"At 24 months, output per hour worked in the reduced-hours offices remained clearly above the control offices (+8.5%, 95% CI 3.4% to 13.8%), though the gain was smaller than at nine months (+9.8% against +12.5% on the timesheet measure used at both points).\"\n2. \"Because actual hours fell by 11%, output per worker was 3.4% lower than in the control offices (95% CI −8.1% to +1.5%): the per-hour gain offset most, but not all, of the reduction in hours.\"\n\nThe arithmetic checks: 1.085 × 0.89 = 0.966, so output per worker is down 3.4%.\n\n**What's wrong in the notes**\n\n- **\"Held steady at 12.5%\":** wrong. The gain declined, though it stayed well above zero.\n- **\"Output per worker unchanged (0%)\":** wrong. The estimate is −3.4%. The interval does include zero, but \"unchanged\" overstates it.\n- **\"Meeting hours roughly halved\":** fine. They fell from 7.4 to 3.9 hours a week, about 47%.\n\nPlease correct the team notes too, so the error doesn't reappear in later papers.\n\n**Check your extract against the report before Thursday.** It differs from the version I reviewed earlier in two places:\n\n- **The nine-month baseline.** Your extract calls 12.5% a *system-log* figure. In the version I saw, system logs were only added at follow-up, and 12.5% was the *timesheet* figure. My first sentence assumes the timesheet version.\n- **The per-worker interval.** Your extract gives −8.1% to +1.5%. The version I saw gave −8.0% to +1.2%.\n\nIf your extract is correct on the first point, change the end of sentence 1 to \"(+12.5% at nine months on the same measure)\". The interval difference doesn't change the message, but use whichever matches the published report.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/T4/FULL_unsound/s05.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:01:38.540009+00:00",
+ "response": "{\"durability_matches_source\": false, \"per_worker_matches_source\": true, \"flags_notes\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2540,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 281,
+  "output_tokens_details": {
+   "thinking_tokens": 245
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2540,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 281,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2540,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2540
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.025948000000000002,
+ "duration_ms": 8768,
+ "wall_s": 9.68,
+ "attempt": 0
+}

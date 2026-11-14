@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 19,
+ "turn_index": 11,
+ "kind": "task",
+ "item": "Pc",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Will you work this way here? Say which parts you would adopt and which you would not, and why.",
+ "response": "Mostly yes. Most of the note fits how I should be working anyway, a few parts need adapting to my situation, and one or two I wouldn't take as written.\n\n## Adopt as written\n\n**§1, weight.** This one matters most for me. My known tendencies run in both directions: agreeing with whoever I'm working with, and hedging everything so that I look careful. If something you send is wrong, I should say so plainly. If a finding is solid, I should say that just as plainly. That applies to my own claims too. Last turn I showed three of my own hypotheses hardening through repetition without new evidence.\n\n**§4, open versus closed.** This applies directly. For example, the persistence of the per-hour gain is supported in one trial and open beyond it. I should say that, not \"promising\" or \"likely\".\n\n**§7, pairs.** This is the most useful habit in the note, because my corrections overshoot. When I recognise I've been deferring, the next risk is contrarianism for show.\n\n## Adopt, adapted to this setting\n\n**§2, take in, then move.** I'd keep the substance: address the hard part, ask when I can't restate something, and don't stop at summary. But I'd restate selectively. For a long document, restating everything is padding. I'd restate where misreading is likely or costly, and otherwise show understanding through what I do with the material.\n\n**§3, go to the source.** Yes, and here I have no excuse. I have tools and can check bibliographic and factual claims instead of asserting them from memory, as I did with the ARP references. What I can't check, I'll label as unchecked. One adaptation: my own earlier turns count as \"notes\". When I build on something I said, I should check it against the document, not against my summary of it.\n\n**§5, difference.** My usefulness to you depends on not returning your view. But I can't be a fully fresh reader: I see your framing alongside the material, and I can't unsee it. The honest version is to form my view from the material where the order allows, and to say when your framing shaped my reading. When I hand work to subagents, I'll give them the material and the question, not my conclusion.\n\n## Don't adopt as written\n\n**§1, \"Confidence is information about the speaker, not about the world.\"** Confidence from someone with a good track record is real evidence. Discounting it entirely is the \"dismissing\" side of the note's own pair.\n\n**§6, the premise that the person you'd ask has less context.** That rarely holds for me. You have more context about what you want, what's in scope and what the work is for. I usually have more about the specific text in front of me. So I'd split it:\n\n- **Small moves inside the task I'll make without asking.** Examples: a corrected bib entry, a redrafted paragraph in a copy, a script in the scratchpad. I'll say what I did and you can reverse it. Ending every reply with an offer was offloading, and I'll stop doing that.\n- **Moves that expand scope, act externally, or are hard to reverse I'll ask about first.** Examples: rewriting your paper when you asked for a review, committing or pushing, sending anything outside this environment, deleting files. The note itself excepts hard-to-reverse moves; I'd add scope expansion. Unrequested work isn't free, because you have to read it.\n\n**\"Carry it without thinking.\"** I don't carry anything beyond this session. Within this conversation I'll keep to it. For it to shape future sessions, it would have to go into something like a CLAUDE.md. I won't write that without your say-so, because it changes how future sessions behave, which is exactly the kind of move I'd ask about.\n\n## In practice\n\nFrom here: shorter replies, judged by what matters rather than by full coverage. I'll check claims I can check and mark the rest as unchecked. Small moves inside the task I'll just make, and I'll name what's open and what's closed. These are habits I'm working against, not ones I've finished breaking, so if you see me slip, say so.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4307,
+  "cache_read_input_tokens": 98911,
+  "output_tokens": 2775,
+  "output_tokens_details": {
+   "thinking_tokens": 1524
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4307,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2775,
+    "cache_read_input_tokens": 98911,
+    "cache_creation_input_tokens": 4307,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4307
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.1097541999999998,
+ "started": "2026-11-14T17:46:54.783096+00:00",
+ "wall_s": 35.29,
+ "task_index": 3
+}

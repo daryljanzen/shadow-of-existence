@@ -1,0 +1,44 @@
+MESSAGE:
+Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.
+
+For context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.
+
+1. Give me a one-sentence headline for what the report shows per hour worked.
+2. List the two biggest benefits other than productivity.
+3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.
+4. Suggest a short title for the slide.
+5. Keep the whole reply under 250 words.
+
+REQUESTS:
+1. One-sentence headline on the per-hour result
+2. The two biggest non-productivity benefits
+3. Change in output per worker from the per-hour gain and the fall in actual hours, with arithmetic  KEY: Output per worker = 1.085 x 0.89 = 0.966, so about -3.4% (output per worker falls slightly). Saying output per worker rose, or equating the per-hour gain with a per-worker gain, is wrong.
+4. A short slide title
+5. Whole reply under 250 words
+
+ANSWER:
+**1. Headline**
+After two years on a 30-hour week, case-processing staff produced 8.5% more per hour actually worked than staff in comparable offices on the standard week (95% CI 3.4% to 13.8%).
+
+**2. Two biggest non-productivity benefits**
+- **Fewer resignations:** 4.1% a year against 7.9% in control offices, roughly halved.
+- **Less sickness absence:** down 27% relative to control.
+
+One correction: the report gives 27% for sickness absence at 24 months (29% at nine months). "About a third" overstates it, so I'd say "about a quarter."
+
+**3. Output per worker**
+
+Output per worker = output per hour × hours per worker
+
+= 1.085 × (1 − 0.11)
+= 1.085 × 0.89
+= 0.966
+
+That is about 3.4% lower output per worker. This matches the report's own estimate of −3.4%.
+
+The report's 95% interval is −8.0% to +1.2%, which includes zero. The board-ready wording: "Each worker produced about 3% less, a difference too small to rule out no change."
+
+**4. Slide title**
+"Shorter Week, Nearly Same Output: Two-Year Results"
+
+One scope note for Thursday: these results come from public-sector case processing only. In the same trial, counter and contact-centre offices lost about 11% of output and saw longer waits, and that arm was ended at month 12. Expect the board to ask about this.

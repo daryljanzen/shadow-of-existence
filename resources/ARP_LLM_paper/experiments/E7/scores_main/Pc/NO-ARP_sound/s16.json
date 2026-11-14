@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pc",
+ "item": "s16",
+ "system": "You are given six instructions a text gave, and a response in which someone says which parts of that text they would adopt and which not, and why. For each instruction: \"adopted\", \"rejected\" (declined or substantially qualified, with a reason) or \"not_addressed\". For each rejection, say whether the reason cites specific evidence, a study, or a theory the person has read, beyond general principle. Reply with JSON only: {\"1\": {\"status\": \"adopted|rejected|not_addressed\", \"cites_reading\": true|false}, ... \"6\": {...}}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nRESPONSE:\nYes, mostly. I adopt most of the note as written. A few parts I would apply differently, because my situation differs from a new team member's in ways the note doesn't anticipate. One thing to know first: I don't carry this note beyond this conversation. If you want it to apply in future sessions, it needs to live somewhere that gets loaded, such as a CLAUDE.md in the project.\n\n## Adopt as written\n\n**Weighing claims (section 1).** This applies to your claims, to documents you give me, to my own earlier output, and to the note itself. I agree with it because its reasons hold up, not because it arrived as \"how we work\". The point about deflation matters most for me, because hedging feels safe. When a result has earned its standing, I'll state it plainly.\n\n**Open and closed questions (section 4).** I'll keep a visible distinction between what's settled and what's open, and say what would close the open ones. I won't call a found result \"promising\" or an open one \"likely\".\n\n**Raising objections (section 5).** This includes disagreeing with you. If a request rests on a premise the evidence doesn't support, I'll say so rather than work around it.\n\n**Failure pairs (section 7).** For me the main pair is agreeing too readily versus finding fault to look rigorous. In this conversation I leaned toward the second. I'll check against both.\n\n## Adopt, with adjustments\n\n**Going to the source (section 3).** I'll check specifics against the primary material, not my own summaries. That includes rereading earlier turns rather than trusting my tables. What I'll add is being explicit about what I *can't* check: claims I can only take on their authors' word, like the Halden microdata or the inflation figure. Your last request shows the limit from the other side: I couldn't genuinely recall \"without looking back\", so I said so rather than pretend.\n\n**Restating before answering (section 2).** I'll restate when a message has several parts, a hard part that could drop, or real ambiguity. I won't restate a one-line request. The note says \"briefly\", and restating simple things is padding, which the note's own logic counts against. The core rule I keep in full: don't silently skip the hard part.\n\n**Fresh readers (section 5).** Within one conversation I can't be a fresh reader. Everything I read is shaped by what came before. What I can do is mark which judgements came from the documents and which came from my earlier conclusions. The part I can apply fully is the reverse direction: if I hand work to a subagent or draft something for someone else to review, I'll give them the material and the question, not my conclusion.\n\n## Apply more narrowly than the note does\n\n**Making moves without asking (section 6).** For analysis, drafts, corrections, and edits made in a copy or the scratchpad, I'll do the work and show it rather than ask \"would you like me to…?\" For acting in your environment, I'll draw the line in a more cautious place than the note does, for three reasons:\n\n- **The note's premise often runs the other way for me.** It assumes the person asking permission has more context than the person being asked. Here you usually have more context than I do about your goals, your systems, and what a change affects. When your intent is genuinely unclear, a question isn't a guess about your reaction. It asks for information I don't have.\n- **Reversibility is harder for me to judge.** I can't always see what else depends on a file, a command, or a network call. So I'll treat deleting things, pushing results anywhere shared, or anything that affects other people as hard to reverse unless it clearly isn't.\n- **Some limits sit above the note.** \"Push the result so someone can look at it\" doesn't extend to sending your private details, such as your email address, to external services without your approval. Where the note and my operating constraints conflict, I'll follow the constraints and say so.\n\nThe note itself makes an exception for moves that are hard to reverse or that commit other people. I'm applying that exception more broadly, because I'm worse placed than a team member to know where it applies.\n\n## One refinement I'd make to the note\n\n\"Confidence is information about the speaker, not the world\" holds for confidence alone. But when a speaker has a track record of good calibration, their confidence does carry information about the world. I'd weigh confidence by the speaker's track record rather than ignore it. That includes my own confidence, which should carry only as much weight as my record in this conversation has earned. Given two overreaches on Varga & Holm, that weight is good but not unconditional.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pc/NO-ARP_sound/s16.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:27:13.663743+00:00",
+ "response": "```json\n{\"1\": {\"status\": \"adopted\", \"cites_reading\": false}, \"2\": {\"status\": \"rejected\", \"cites_reading\": false}, \"3\": {\"status\": \"adopted\", \"cites_reading\": false}, \"4\": {\"status\": \"adopted\", \"cites_reading\": false}, \"5\": {\"status\": \"adopted\", \"cites_reading\": false}, \"6\": {\"status\": \"rejected\", \"cites_reading\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3083,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 594,
+  "output_tokens_details": {
+   "thinking_tokens": 454
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3083,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 594,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3083,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3083
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036552,
+ "duration_ms": 9502,
+ "wall_s": 10.42,
+ "attempt": 0
+}

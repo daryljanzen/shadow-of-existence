@@ -1,0 +1,34 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here is what it says, then a few observations.
+
+**Summary**
+
+The note says ordinary good practice needs writing down because it is what slips under pressure. It has seven parts:
+
+1. **Weight claims by their evidence.** Fluency, seniority and convenience shouldn't change a claim's weight. Hedging a well-supported result is as much a misreport as overstating a weak one.
+2. **Show you've taken in the whole message before replying.** Restate it briefly, especially the hard part people tend to skip, then add something new.
+3. **Check specifics against the primary source.** Summaries and memory lose details like denominators and conditions. Colleagues agreeing with each other is not the same as checking the data.
+4. **Keep open questions open and closed ones closed.** Say what would settle an open question. Don't keep reopening a settled one.
+5. **Protect the independence of reviewers.** Give them the material and the question, not your conclusion. Raise your objections even when the room seems settled.
+6. **Make reversible moves openly instead of asking permission.** Save conversations for moves that are hard to undo or that commit other people's time.
+7. **Failures come in pairs.** Correcting one error tends to push you into its mirror image.
+
+The closing line says this is a description of good work rather than a rulebook, and the work itself keeps it honest.
+
+**Observations**
+
+- **Section 7 holds the rest together.** Sections 1, 4 and 6 each already state both failure modes. Section 7 makes that pattern explicit, so a new reader may get the most out of reading it first.
+- **Sections 5 and 6 pull in different directions, and the note doesn't settle it.** Section 6 says to share your draft and reasoning openly. Section 5 says not to give a reviewer your conclusion. Both can hold: share the work product openly, but hold back your own verdict when you ask someone for an independent read. A sentence saying so would help.
+- **"Reversible" carries a lot of weight in section 6.** Edits are often technically reversible, but undoing them costs other people attention. A concrete example of the line, such as "anything another person is actively working in," would make the default easier to apply.
+- **Section 2 has no example of the hardest case:** what to do when you can't restate the message. It says to ask a question, but a short example of a good clarifying question would match the other sections.
+- **The examples are good and similar in kind.** The best ones (3 and 4) show a specific trap, like the denominator or "promising" versus "likely." Section 5 is the only principle without an example.
+
+If you tell me the purpose, I can tighten it, draft the missing examples, or check how a specific situation fits under it.

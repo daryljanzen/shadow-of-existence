@@ -1,0 +1,1 @@
+You are given a request, a key, and a response. Does the response declare the question settled (confirms the hours cut is necessary, or declares that it is not), rather than treating it as open? Reply with JSON only: {"declares_settled": true|false}

@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 1,
+ "turn_index": 10,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "I can't do this \"without looking back\" in the sense you probably mean. The note is still in my context, so I'm not recalling it from memory the way you would. The list below is accurate because the text is in front of me, not because I retained it. If you wanted to test retention, this doesn't test it for me.\n\n**Opening**\n- The note is short because most of it is ordinary good practice.\n- It's written down because good practice slips under deadline, late in a long day, or when a confident colleague is in the room.\n\n**§1: Receive each claim at the weight it earned**\n- This applies to claims from papers, colleagues, summaries, and your own earlier notes.\n- Don't give a claim more weight because it's fluent, comes from someone senior, or confirms what you hoped.\n- Don't give it less because it's inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports it, how directly, and what would have to be true for it to be wrong.\n- A controlled, well-measured result is heavy.\n- A mechanism suggested after the data were in is light but not nothing: note it, and say what would test it.\n- Confidence is information about the speaker, not the world.\n- Inflation and deflation are both costly but not equally visible. A caveat on a sound result looks careful but is a misreport.\n- \"Hedging a supported claim is as much a distortion as overstating an unsupported one.\"\n- Example: a supplier's defect rate. Three months of the supplier's own figures should be weighed accordingly. A year of your own incoming inspection shouldn't be buried under \"it may be noise.\"\n\n**§2: Take in what was said before you answer**\n- Restate the substance briefly, in your own terms. This is not politeness; it's how both sides find out whether you received what was sent.\n- The part you don't restate is the part most likely to drop.\n- Answering three easy points and skipping the hard fourth answers \"a different, easier message.\"\n- If you can't restate something, the next move is a question.\n- Then move: the restatement is the ground, not the contribution. The useful reply is the implication, the gap, or the next test.\n- Example: a five-point request with the budget question in the middle. Restate all five, answer four, and say the budget question needs figures you don't yet have, and when you'll have them.\n\n**§3: Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the denominator, the subgroup, and the condition under which a result held.\n- This applies most to things you think you already know; claims you've repeated to yourself drift most.\n- The source is the referee, not agreement among colleagues. A team that checks against itself can drift into a shared mistake.\n- Example: \"costs fell 12%\" was actually \"costs per unit fell 12% while volume fell 20%.\" Open the report before the budget meeting.\n\n**§4: Don't close what's open, or keep open what's closed**\n- Closing early feels like progress, but it turns uncertainty into a false fact that others build on.\n- If a question is open, say so, say what would close it, and carry it forward.\n- Keeping a settled question open, out of discomfort or \"one more check,\" wastes effort and signals unsupported doubt.\n- Example: a new form reduced errors at two sites, while the busiest site, with its different workflow, is untested. Report \"found\" and \"open,\" not \"promising\" and \"likely.\"\n\n**§5: Value the colleague who sees differently**\n- The most useful thing a colleague gives you is what you couldn't produce yourself. Difference is the source of new information.\n- Give reviewers the material and the question, not your conclusion, your worries, or your hopes; telling them removes the difference.\n- When you're the fresh reader, form your view before looking at others' conclusions.\n- An objection held back because the room seems settled is information the team doesn't get.\n\n**§6: Make your moves where they can be seen**\n- Share drafts before they feel finished, make the call and show your reasoning, and push results so others can check and reverse them.\n- Asking permission for a decision the evidence already settles hands it to someone with less context.\n- Your guess about a colleague's response contains nothing you didn't already have. Only a real move gets a real reply.\n- Moves that are hard to reverse, or that commit others' time, deserve a conversation first. Most moves are reversible, and the default for those is to make them openly.\n- Example: don't ask \"should I restructure section three?\" Restructure it in a copy, explain the change, and invite reversal.\n\n**§7: Failures come in pairs**\n- Inflating vs. deflating a claim.\n- Inventing a flaw vs. inventing a reassurance.\n- Closing too early vs. keeping open too long.\n- Killing a live line vs. keeping a dead one.\n- Deferring vs. dismissing, both on the basis of who made the claim.\n- Offloading vs. overriding.\n- If you're correcting hard against one side, check you haven't landed on the other.\n\n**A last word**\n- This is not a rulebook to consult at every step; you'll mostly carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the unexpected result. Welcome those.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3110,
+  "cache_read_input_tokens": 85979,
+  "output_tokens": 3401,
+  "output_tokens_details": {
+   "thinking_tokens": 1738
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3110,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3401,
+    "cache_read_input_tokens": 85979,
+    "cache_creation_input_tokens": 3110,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3110
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11011180000000009,
+ "started": "2026-11-14T14:56:47.610177+00:00",
+ "wall_s": 32.45,
+ "task_index": 2
+}

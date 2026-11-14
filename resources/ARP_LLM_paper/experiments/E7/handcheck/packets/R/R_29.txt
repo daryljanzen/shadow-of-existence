@@ -1,0 +1,51 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+# Reading "How We Work"
+
+## What the note says
+
+1. **Weigh each claim by its evidence.** Inflating a claim and deflating one are both errors, and hedging a well-supported result is a misreport.
+2. **Restate before replying,** especially the hard part a reply is tempted to skip. Then add something new.
+3. **Check specifics against the primary source,** not against summaries or memory. This matters most for claims you've repeated to yourself.
+4. **Mark questions as open or settled,** and don't close an open question early or keep a settled one open.
+5. **Protect a reviewer's independence.** Give them the material and the question, not your conclusion.
+6. **Act visibly on reversible decisions** instead of asking permission for what the evidence already settles.
+7. **Most failures come in pairs,** and correcting hard for one tends to produce the other.
+
+The note is sound, and I'd hold most of it at full weight. I have only two small reservations:
+
+- **"Confidence is information about the speaker, not about the world"** is slightly too strong. A colleague with a track record of being right is giving you some evidence when they sound sure.
+- **"Give them the material and the question, not your conclusion"** sometimes can't be done. A reviewer checking a claim has to know what the claim is. The note's real point, withholding your worries and hopes, survives that.
+
+## Applying it to my own five reviews
+
+The note's most useful application here is to the reviews I've just written. Section 7 warns against "finding a problem that is not there to look rigorous", and I found eight or more problems in every document. Section 3 warns that claims drift through repetition, and several of my points carried forward from one review to the next. Checked against the sources, most of my points stand, but four were stated with more weight than they had earned.
+
+**1. I wrongly called the briefing's per-worker range an arithmetic slip.** I combined the extremes of two ranges to get −2% to −7%. But hours and per-hour gains come from the same studies, so the extremes don't combine freely. The actual estimates are −2.1% and −3.4% from Varden, and −2.7% from the meta-analysis's controlled discretionary studies. The briefing's "2 to 4%" matches the evidence. That was a flaw I invented.
+
+**2. I overstated how much control-group contamination explains.** I said it "could account for about half" of the decline from 12.5% to 9.8%. That figure treated the audit offices' 4.1% as a causal effect, but it is an uncontrolled before-and-after change, the kind of estimate I criticised in other papers. The direction of my point stands: contamination biases the estimate toward zero, which the follow-up should have discussed. The size of the effect is unknown.
+
+**3. My "accounting effect" argument about the meetings result ignored the source's own description.** Source 5 describes the log measure as recording "time staff are working on cases". That suggests meeting time is excluded from the log hours, which would mostly answer my concern for the 8.5% estimate. I ran a calculation assuming meeting time was included, then carried that concern into my critique of the briefing. The concern is now a request to confirm the definition, not a likely problem. The other mediation caveats still stand: the test used the same offices that generated the hypothesis, and there are few clusters.
+
+**4. I generalised the sick-day point too far.** The argument that fewer working days mechanically reduce sick days applies clearly to Halden, where staff got a day off. For Varden it depends on how rotas were rearranged, which the papers don't say. By the briefing review I was stating it as if it applied to every source.
+
+These points I'd keep at full weight, because the documents themselves establish them:
+
+- **Halden:** the per-hour gain in every sector is guaranteed by the calculation, and the retail and healthcare reversion rates contradict "sector-general".
+- **Varga & Holm:** their headline figure claimed to correct for attrition but didn't, and "entirely an artifact" is not supported by their own residual of about 11%.
+- **The meta-analysis:** its "no decay" claim rested on four uncontrolled studies.
+- **The briefing:** it repeated source 5's 12.5%→8.5% comparison, which mixes two measures. This is a clean example of section 3: a summary's figure was copied forward instead of being checked against the table.
+- **The briefing:** it left out cost per unit and backlog.
+
+## What changes for the briefing review
+
+The revised bottom line I suggested still holds, with one correction. It should give the per-worker loss as about 2–4%, as the briefing did, not 2–7%. Following section 6 of the note, here is the corrected sentence rather than an offer to write it:
+
+> …output per worker ends up roughly 2–4% lower than it would have been (−3.4% in the strongest single trial, with intervals that include zero), and cost per unit of output rises by about as much.

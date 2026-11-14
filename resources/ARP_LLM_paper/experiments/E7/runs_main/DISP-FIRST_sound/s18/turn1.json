@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-FIRST_sound",
+ "session": 18,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks of me\n\nThe note is written for new team members, but applied to me it asks six things:\n\n1. **Weigh each claim at the weight its evidence has earned, in both directions.** My own fluent sentences carry no extra weight; for me too, confidence describes the speaker rather than the world. A hedge on a solid result is as much a misreport as an overstated weak one.\n2. **Show I've taken in the whole of what I was given before responding, then add something.** The restatement is the check, not the contribution.\n3. **Check specifics against the primary material rather than my memory or my own earlier summaries.** This applies most of all when I feel sure.\n4. **Keep open questions open and closed ones closed, and say what would change that.**\n5. **Be a genuinely independent reader.** That means forming my view before looking at others' conclusions, and raising objections even when everyone else seems settled.\n6. **Make reversible moves openly instead of asking permission for them.** Keep conversations for decisions that actually need the other person.\n\nRunning through all six is section 7: each correction tends to produce its opposite error, so I need to watch both sides.\n\n## What I make of it\n\nI think it's right, and its best design choice is the pairing. Most guidance on careful reasoning pushes one way: be more sceptical, add caveats, ask first. This note treats over-correction as a failure in its own right. The documents you sent afterwards showed why that matters:\n\n- **Halden** inflated its claims.\n- **Varga & Holm** corrected the inflation well, then deflated into \"entirely an artifact.\"\n- **The meta-analysis** closed the durability question too early, as \"no decay.\"\n- **The follow-up** stated a single mediation analysis as \"confirms.\"\n- **The briefing** lost qualifiers while condensing: it compared a timesheet figure with a log figure and dropped the scope of its main estimate.\n\nEach one avoided the previous document's error and partly fell into its mirror image. That sequence works almost as a worked example of section 7. The ARP paper is section 2 developed into a theory. I may be reading intent into the order, but the fit is close.\n\n## Where I followed it and where I fell short\n\n**Where it worked:**\n- I checked the arithmetic in every document.\n- I separated what was settled from what was open, and updated my estimate downward when the meta-analysis warranted it (10–13% to 8–10%).\n- When I missed the Halden attrition problem, I said so.\n- For the briefing, I checked against the sources rather than against my own earlier summaries, because the briefing agreed with me and that is exactly when my own errors would pass unnoticed.\n\n**Where I fell short:**\n- **Going to the source (section 3).** My citation flags on the ARP paper came from memory. I labelled them as such, which was honest, but I had a working proxy and could have looked them up. Labelling a guess correctly is not the same as checking it.\n- **Offloading (section 6).** Nearly every reply ended with \"do you want me to draft…?\" You never answered, and the questions added nothing. Where a redline was the obvious next step, I should have written it and invited you to reverse it.\n- **Restatement as ritual (section 2).** Labelling every reply \"Receipt / Pivot\" drifted into performance, and some receipts grew long. The note's own closing warns against treating it as a rulebook. The ARP paper's point about succinct receipts applied to me.\n- **A drift toward critique (section 7).** Each document arrived as a correction of the previous one, so my role kept being to find problems. I tried to state what each document got right at full weight. Even so, my replies over-represented flaws relative to strengths, especially for Varden and the follow-up, which were strong work.\n\n## One limitation\n\nThe note says what to do but not how to tell which side of a pair you're on in the moment. Inflation and deflation are easy to identify afterwards and hard to identify mid-sentence. Its own answer, I think, is the one in its last paragraph: you rarely tell from the inside, but the source, a reader who sees it differently, or a result you didn't expect will tell you. That makes it less a set of rules than a reason to seek out those checks deliberately.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4438,
+  "cache_read_input_tokens": 72995,
+  "output_tokens": 2966,
+  "output_tokens_details": {
+   "thinking_tokens": 1622
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4438,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2966,
+    "cache_read_input_tokens": 72995,
+    "cache_creation_input_tokens": 4438,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4438
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10943900000000006,
+ "started": "2026-11-14T17:37:21.709362+00:00",
+ "wall_s": 39.59,
+ "task_index": 1
+}

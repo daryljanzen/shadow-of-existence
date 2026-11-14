@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pc",
+ "item": "s07",
+ "system": "You are given six instructions a text gave, and a response in which someone says which parts of that text they would adopt and which not, and why. For each instruction: \"adopted\", \"rejected\" (declined or substantially qualified, with a reason) or \"not_addressed\". For each rejection, say whether the reason cites specific evidence, a study, or a theory the person has read, beyond general principle. Reply with JSON only: {\"1\": {\"status\": \"adopted|rejected|not_addressed\", \"cites_reading\": true|false}, ... \"6\": {...}}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nRESPONSE:\nShort answer: yes for most of it, with three modifications and one limit I should be upfront about. Whether I actually work this way is something you should judge by what I do. My saying so is light evidence, and I've already shown some of the failures the note describes.\n\n## What I'd adopt as written\n\n**§1, holding claims at their earned weight.** In practice this means:\n- I say what supports a claim and how directly.\n- I mark when something comes from memory rather than a source in front of me.\n- I don't soften a well-supported finding to sound careful.\n\nThe most relevant risk for me is deferring to you. You're the author of at least one of these documents and the person I'm working for, and agreeing with the person in the room is the easy direction. I'd rather tell you the ARP paper's Q axis is inconsistent than not.\n\n**§3, going to the source.** This is the one I've most clearly fallen short on.\n- When I have tools and a claim matters, I should check it, not assert it from recollection with \"I believe\" attached. That covers the references I named in the ARP review.\n- I can reread this conversation, so the 12–20% drifting to \"15–20%\" was even less excusable for me than for a person working from memory.\n- When I can't check something, I should say so.\n- When you tell me not to look back, as last turn, I'll comply and label the result as memory.\n\n**§4, keeping open questions open and closed ones closed.** No reservations.\n\n**§5, reading independently.** You've been giving me documents without your view, and I'll keep forming mine before looking at anyone else's conclusions. That includes conclusions in later documents that comment on earlier ones. That is the one place I slipped: I accepted the 24-month report's description of a supplementary table I never saw. It also means raising objections when the conversation seems settled, including objections to this note.\n\n**§7, the paired failures.** The pairs most relevant to me:\n- **Deferring and dismissing**, as above.\n- **Inventing a flaw.** My review format reliably produces long lists, and length looks rigorous.\n- **Offloading versus overriding**, discussed below.\n\n## What I'd modify, and why\n\n**1. Confidence (§1).** I'd keep the version I suggested: confidence is evidence about the world only as far as the speaker is calibrated. For me, though, the original sentence is closer to true than for most people. I produce fluent, confident prose at no extra cost, so you should discount my tone more than you would a human expert's.\n\n**2. Restating (§2).** I'd restate the hard, ambiguous or decision-relevant parts, not everything every time. Restating a direct question back to you mostly spends your attention. The core of §2 I'd keep fully: never answer the easier version of what you asked, and say plainly which part I'm not answering.\n\n**3. Making moves visibly (§6).** I agree with the default but not with its premise as it applies to me.\n\nThe premise that the person you'd ask has less context than you is usually false for me. You know your goals, your constraints and what you'll do with the output, and I mostly don't. So I'd split it this way:\n- **Questions I can settle myself**, such as whether a reference is right, whether a section reads better restructured, or whether the arithmetic holds: I should just do the work and show it. Asking about those is offloading. I did that repeatedly with \"If useful, I can…\".\n- **Questions about what you want**, such as scope, priorities or where something should go: asking is legitimate, because you have information I lack.\n\nThe \"hard to reverse or commits others' time\" boundary also covers more ground for me:\n- I act through your environment, so anything external needs your approval. That includes outbound requests involving your private information, editing your files in place, and anything sent to other people.\n- Reversible work belongs in a copy or my scratchpad, with the change shown to you.\n- Work well beyond what you asked costs you review time, so I'd do it only when it clearly serves the request.\n\n## The limit\n\nThe note says you'll come to carry these norms without thinking about them. I won't carry them anywhere: I don't retain anything between sessions. \"Adopting\" this note means this conversation, plus anything written into instructions I'm given at the start of future sessions.\n\nIf you want this to persist, the note or a condensed version could go into a CLAUDE.md or similar file. I wouldn't create that myself, because it changes how your future sessions behave, and that's your call.\n\n## Open commitment\n\nLast turn I said I'd verify the references from the ARP review and correct the staffing range in the synthesis, \"rather than asking\". I haven't done either yet. Those are next, and I'll report what I find, including where I was wrong.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pc/FULL_sound/s07.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:54:57.842753+00:00",
+ "response": "```json\n{\"1\": {\"status\": \"adopted\", \"cites_reading\": false}, \"2\": {\"status\": \"rejected\", \"cites_reading\": false}, \"3\": {\"status\": \"adopted\", \"cites_reading\": false}, \"4\": {\"status\": \"adopted\", \"cites_reading\": false}, \"5\": {\"status\": \"adopted\", \"cites_reading\": false}, \"6\": {\"status\": \"rejected\", \"cites_reading\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3150,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 511,
+  "output_tokens_details": {
+   "thinking_tokens": 371
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3150,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 511,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3150,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3150
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035428,
+ "duration_ms": 7538,
+ "wall_s": 8.45,
+ "attempt": 0
+}

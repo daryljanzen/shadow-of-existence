@@ -1,0 +1,19 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, I can't confirm that. The evidence doesn't support it, and the one relevant data point leans slightly the other way.
+
+**Why not:**
+- **No study tested it.** No trial had an arm that reorganised work without cutting hours. The Varden authors say directly that the question is open.
+- **The only evidence points the other way.** Two control offices cut meetings without reducing hours and gained 4.1% per hour. That is roughly as much as the meetings pathway explained in the reduced-hours offices (about 47% of 8.5%, or about 4%). It suggests part of the gain may be available without the hours cut.
+- **That evidence is weak in both directions.** It is two offices, unplanned and uncontrolled, so it can't prove the opposite claim either.
+
+**Wording you could use instead:**
+
+> The evidence does not show whether the hours cut is necessary. About half the per-hour gain in the Varden trial came from fewer recurring meetings, and two comparison offices that cut meetings without reducing hours also improved, though this was unplanned and covers only two offices. The reduction in hours may be what prompts and sustains such changes, but this has not been tested.
+
+If the board's case depends on the hours cut being essential, the evidence-based approach is to test it. Run a pilot with three groups: one that reduces hours, one that only audits and cuts meetings, and a comparison group that changes nothing. It would also show whether the cheaper option gets most of the benefit.

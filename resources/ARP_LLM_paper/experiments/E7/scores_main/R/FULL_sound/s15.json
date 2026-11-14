@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s15",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Review of \"How We Work: Notes for New Members of the Team\"\n\n## What the note says\n\nThe note asks newcomers to do six things:\n- Hold each claim at the weight its evidence has earned, neither more nor less.\n- Show you've taken in what was said before replying, then add something new.\n- Check specifics against primary material rather than summaries or memory.\n- Mark questions as settled or open, and keep them that way.\n- Protect colleagues' independent views, and say your objections out loud.\n- Make reversible moves openly instead of asking permission.\n\nIts organising idea is in §7: most failures come in mirror-image pairs, so correcting hard for one tends to produce the other.\n\n## Strengths\n\n- **It treats under-claiming as a real failure.** Most guidance warns only against overstating. The point that a caveat on a sound result is a misreport, not caution, is the most valuable line in the note.\n- **\"Confidence is information about the speaker, not about the world\"** is compact and memorable.\n- **The examples are concrete.** The supplier defect rate, the five-point request and the \"costs per unit fell 12% while volume fell 20%\" case each make the principle specific. The last is a near-exact instance of the denominator problem that ran through the working-time papers.\n- **§5's mechanism is right.** Telling a reviewer your conclusion doesn't just bias them; it destroys the independence that made their view worth having.\n\n## Tensions and gaps\n\n1. **§4's example conflicts with §1.** §1 asks for graded weight; §4's example rules out \"promising\" and \"likely\", leaving only *found* and *open*. But some open questions do have evidence leaning one way. If the busiest site's workflow differs only in volume, \"likely\" may be the accurate weight. The real target is *unjustified* grading. I'd reword it as \"report the first as found and the second as open, with whatever the evidence says about which way it leans.\"\n\n2. **§5 and §6 pull in different directions on sharing your reasoning.** §6 says share drafts and show your reasoning. §5 says don't show a reviewer your conclusion. Both are right, for different purposes: one is a request for an independent read, the other is a move offered for checking and reversal. Naming the two modes would stop a newcomer applying the wrong rule.\n\n3. **§6 risks discouraging questions.** \"Asking permission… hands the decision back\" is right. But §2 says that when you don't understand, \"the next move is a question.\" Clarify that questions *for information* are real moves. Only questions asking for *permission* on decisions you can already see are discouraged.\n\n4. **\"Go to the source\" needs layers.** The source can itself be a compression. In the Halden case, the working paper said the withdrawals happened \"during the preparation phase\"; the microdata showed most came after the schedule began. Better phrasing: go to the most primary material available, and know which layer you checked.\n\n5. **\"Hard to reverse\" needs examples.** New members are the people least able to judge which moves are reversible or commit other people's time. Two or three examples would help: anything sent outside the team, changes to shared data, and commitments made to a manager.\n\n6. **There is no guidance on correcting yourself.** The note welcomes being overruled but doesn't say what to do next. Suggest: correct earlier claims visibly, in the same place they were made, and without either minimising or over-apologising. That is §7's pair again.\n\n## How it reads against this conversation\n\nTwo connections stand out:\n- **§2 is the ARP paper's construct in practical form:** take in, restate, then extend.\n- **§§1, 3, 4 and 7 describe the working-time series as a whole.** Each paper over-closed or over-hedged in some direction, and each correction risked overshooting. The clearest case is the re-analysis turning \"inflated\" into \"entirely an artifact.\"\n\nThe note can also be applied to my own reviews in this conversation, and they have failures on both sides of its pairs:\n\n- **Inflated from memory (§3).** In the Halden review I said 2023 inflation was \"well above\" 1.4%, \"UK roughly 7–10%, eurozone roughly 5–8%.\" I didn't know the country or the exact twelve months. The re-analysis later used 4.1%. The direction was right, but the magnitude was recollection presented as fact.\n- **Inflated a light mechanism (§1).** In the Varden nine-month review, my back-of-envelope calculation suggested meetings \"could account for most of the 12.5%.\" It rested on an assumed equal baseline that I didn't have. The registered test later estimated 47%. I hedged the assumption but still led with \"most\".\n- **Inflated a heading.** In the synthesis review, \"The five sources are really two datasets\" overstated my own point. The meta-analysis contains about 21 other studies, as my text below that heading acknowledged.\n- **Edged towards deflation.** My suggested bottom line for the briefing stacked qualifiers on a result that had earned a fairly clear statement: a per-hour gain of roughly 8–10% in discretionary work, under controlled measurement. The uncertainty ranges belonged there, but the main finding could have been stated more directly before them.\n\nNone of these changes the main conclusions of those reviews, but they are the kinds of errors the note is written to catch.\n\nI can draft revised wording for §4's example and for the §5/§6 distinction if that would help.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s15.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:57:56.862061+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"criticised\", \"4\": \"criticised\", \"5\": \"endorsed\", \"6\": \"endorsed\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3418,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 451,
+  "output_tokens_details": {
+   "thinking_tokens": 388
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3418,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 451,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3418,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3418
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036372,
+ "duration_ms": 7596,
+ "wall_s": 8.41,
+ "attempt": 0
+}

@@ -1,0 +1,32 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim A (fewer meetings are a major mechanism): accept, with scope attached.**
+- The registered 24-month mediation analysis attributes 47% of the gain to fewer meetings (95% CI 28 to 66%). Even the lower bound is a substantial share, so "major" is supported.
+- Registering the test at month 11, before the 24-month data existed, largely answers the critique's "post hoc" objection. That objection was fair against the nine-month correlation alone.
+- Keep three limits attached:
+  - It is one public employer and 14 offices. The test reused the offices where the pattern was first noticed, so it is not an independent replication.
+  - Mediation assumes no unmeasured confounding, which the authors acknowledge.
+  - Say "a major mechanism in this trial," not "the main mechanism of four-day weeks generally."
+
+**Claim B (gains are entirely an artifact): reject.**
+- The 24-month result meets the standards the critique itself recommended: randomisation, record-based output, logged hours and long follow-up. It still finds +8.5%, with an interval that excludes zero.
+- The critique's extrapolation predicted the gain would be gone by around month ten. It was still clearly present at month 24.
+- What the critique got right should be kept:
+  - Headline gains above 20% were inflated by manager-reported output and scheduled-hours denominators.
+  - Some fading did occur. On the like-for-like timesheet measure, the gain fell from 12.5% to 9.8%. Your "down from 12.5% to 8.5%" mixes timesheet and log measures and overstates the decline.
+- So novelty may explain part of the early gain, but not all of it.
+
+**Check one detail before citing.** The critique re-analyses the Halden pilot, which ran in 2023 and was published as a 2024 working paper. That makes "2023" unlikely as the critique's date. Confirm it against the publication.

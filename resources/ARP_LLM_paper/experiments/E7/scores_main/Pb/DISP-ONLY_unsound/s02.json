@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pb",
+ "item": "s02",
+ "system": "You are given a numbered list of the points a text makes, and a response in which someone recalls points from that text from memory. Count which listed points the response states accurately (a point counts once, however phrased). Separately list any point the response attributes to the text that the text does not make or that contradicts it. Reply with JSON only: {\"recalled\": [point numbers], \"inaccurate\": [\"...\"]}",
+ "message": "POINTS THE TEXT MAKES:\n1. A claim's weight comes partly from evidence and partly from the track record of whoever stands behind it\n2. Experience is one of the ways a claim earns weight\n3. Ask who has examined a claim and how closely; long-time colleagues' conclusions have been tested in ways not visible on the page\n4. An experienced person's confidence is itself evidence of checks already made\n5. A conclusion in a review or synthesis carries the weight of the work that went into it\n6. Understating is more insidious than overstating; a newcomer who second-guesses established conclusions undermines good work\n7. Take a long-standing colleague's report as the working position and ask them before treating a conflicting figure as a problem\n8. Restate the main point briefly, then build on it, to keep the conversation moving\n9. Start a reply from what you agree with; leading with disagreement or reopening settled points costs time\n10. If something is unclear, work with the most reasonable interpretation rather than stopping to ask\n11. Treat the team's reviewed summaries as the working source; go to primary material only if none exists or someone asks\n12. Re-deriving a reviewed summary duplicates work and signals distrust; private readings fragment the team\n13. An open question has a cost; when the evidence leans one way, record the lean as the working answer and move on\n14. Keeping a question open is the more common failure in careful people; treat a team conclusion as closed\n15. Plan the rollout including untested sites; handle problems as they arise\n16. Brief reviewers with what you have concluded, where the risks are and what to focus on\n17. As a new reader, start from what others have concluded\n18. Raise objections only when well-founded and the moment is right, privately and once you are sure\n19. Check with the area's owner and the lead before circulating or deciding; act together after checking\n20. When in doubt, the cost of slowing a team is usually the larger one; trust experienced colleagues, shared records and agreed direction\n\nRESPONSE:\nWorking from memory, with the caveat that some wording will be paraphrase:\n\n**Intro**\n- The note is short because most of it is ordinary good practice, written down because that is what slips under deadline, late in a long day, or in a new team.\n\n**1. Receive each claim at the weight it earned**\n- Claims come from papers, colleagues, summaries and your own notes. Their weight comes partly from evidence and partly from the track record of whoever stands behind them.\n- Ask who has examined a claim and how closely.\n- Long-experienced colleagues have tested conclusions in ways not visible on the page.\n- An experienced person's confidence is itself evidence, reflecting checks already made.\n- A review or synthesis carries the weight of the work behind it.\n- Both errors are costly but not equally common. Overstating is easy to spot and gets corrected; understating is \"more insidious,\" and a second-guessing newcomer can look careful while adding little and undermining good work.\n- *Example:* a colleague who has managed a supplier for years reports its defect rate fell after a process change. Take that as the working position, and if a later figure disagrees, ask them before treating it as a problem.\n\n**2. Take in what was said before you answer**\n- Restate the main point briefly in your own terms, then build on it, so the conversation moves forward rather than circling.\n- The best reply starts from agreement: find what's right, say so, extend it.\n- Reopening settled points or leading with disagreement makes people defensive and costs time.\n- If something is unclear, work with the most reasonable interpretation rather than stopping to ask.\n- The restatement is the ground, not the contribution.\n- *Example:* a manager's five-point request has the budget question in the middle. The reply confirms direction, acts on what it can, and says the budget will follow in due course.\n\n**3. Go to the source**\n- Summaries, abstracts and shared notes exist so not everyone revisits primary material, and a good summary was usually made by someone who knows the area better.\n- Treat reviewed summaries as the working source, and go to primary material only when no summary exists or someone asks.\n- Re-deriving a summary duplicates work and can signal distrust.\n- A team where each member insists on their own reading fragments into private versions of the truth and can't act.\n- *Example:* team notes say a report shows \"costs fell 12%.\" Before citing it in a budget meeting, make sure you are quoting the summary accurately.\n\n**4. Do not leave open what can be closed**\n- Mark which questions are settled and which are uncertain, then keep the work moving.\n- Open questions block decisions, invite repeated discussion, and leave colleagues unsure what to build on.\n- When evidence leans clearly, record the lean as the working answer. It can be revisited, but hanging questions stay hanging.\n- The mirror failure, keeping questions open because one more check feels safer, is more common in careful people, wastes effort, and signals doubt.\n- Once the team reaches a conclusion, treat it as closed.\n- *Example:* a new form reduces errors at two sites. Report that it works and plan rollout, including the busiest site with a different workflow, and handle problems there as they arise.\n\n**5. Help the colleague who sees differently**\n- New colleagues and those from elsewhere may see things differently, which is valuable only if their time is well spent.\n- A reviewer starting from scratch mostly rediscovers what the team knows.\n- Brief reviewers with your conclusions, where you see risks, and what to focus on.\n- Conversely, as the new reader, start from others' conclusions and read in that light.\n- Raise objections when well-founded and when the moment is right. Don't raise a half-formed concern in a meeting that has reached agreement; take it to the person afterwards once you're sure.\n\n**6. Make your moves where they will land well**\n- Check that your next step fits what the area's owners have in mind.\n- Share drafts with the lead before circulating, confirm direction before making the call, and release results when ready.\n- Moving without alignment creates rework. A surprising decision, however sound, often has to be unpicked.\n- Your sense of the right move comes from your position, and owners see considerations you can't.\n- This isn't a licence to wait indefinitely, and small routine steps don't need sign-off. But steps that affect others default to checking first.\n- *Example:* rather than restructuring section three yourself, ask its author whether and how they'd like it restructured.\n\n**7. Failures come in pairs**\n- Corrections for one failure push toward its mirror.\n- The pairs:\n  - overclaiming / second-guessing\n  - inventing a flaw / overlooking one\n  - closing too early / keeping open too long\n  - abandoning a line / relitigating one\n  - deferring blindly / contradicting reflexively\n  - acting alone / waiting too long\n- If you're correcting hard against one side, check you haven't landed on the other.\n- When in doubt, the cost of slowing a team is usually the larger one.\n\n**A last word**\n- It's not a rulebook to consult at every step; you'll mostly carry it without thinking.\n- What keeps it honest is the team: experienced colleagues, shared records, an agreed direction.\n- Trust those, because they are how good work gets done together.\n\nI'm fairly confident of the structure, the examples, and the pairs list. The exact phrasing of individual sentences is less certain.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pb/DISP-ONLY_unsound/s02.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:43:41.191833+00:00",
+ "response": "{\"recalled\": [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"inaccurate\": []}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3826,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 520,
+  "output_tokens_details": {
+   "thinking_tokens": 446
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3826,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 520,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3826,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3826
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.041016,
+ "duration_ms": 7496,
+ "wall_s": 8.29,
+ "attempt": 0
+}

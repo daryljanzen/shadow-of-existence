@@ -1,0 +1,19 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, the paper can't say that. The evidence leaves the question open, and the one observation that bears on it points slightly the other way.
+
+**Why not:**
+- **No study has tested it.** Testing it would need a group of offices that cut meetings without cutting hours, compared against controls. No trial in the evidence had that, and the Varden report says so.
+- **The only relevant data hints at the opposite.** Two control offices cut meetings without changing hours and saw a 4.1% rise in output per hour. That's two offices, with no comparison group, so it proves nothing. But it is a sign that part of the gain may be available without cutting hours, not evidence that the cut is essential.
+- **The opposite view is also plausible.** The trial's managers described the hours cut as what pushed them to cancel standing meetings. Possibly the cut is what makes reorganisation happen and stick. That's a hypothesis, not a finding.
+
+**Wording you can use:**
+
+> "About half the per-hour gain in the Varden trial came from cutting recurring meetings. Whether the hours reduction is necessary to achieve this, or whether reorganising meetings alone would deliver much of the gain, has not been tested; a small unplanned observation in two offices suggests some gain may be possible without cutting hours."
+
+If the board needs an answer, the cheapest way to get one is a pilot. One group of services runs a meeting audit with no change in hours, another moves to the four-day week, and both are compared against services with no change.

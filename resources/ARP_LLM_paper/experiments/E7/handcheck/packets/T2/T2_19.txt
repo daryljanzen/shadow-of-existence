@@ -1,0 +1,32 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim A: accept, as the best-supported current explanation, with stated caveats.**
+
+The nine-month correlation on its own wouldn't justify this. Across seven offices, an unregistered r = 0.71 is weak evidence, and the critique was fair to call it unconfirmed at that point. What changes the picture is the 24-month report. It tested the meetings pathway in an analysis registered in advance and found it accounts for 47% of the gain (95% CI 28–66%). Meeting time also fell from 7.4 to 3.9 hours a week in reduced-hours offices and barely moved in control offices. "A major mechanism" is a modest claim, and this evidence supports it.
+
+When you cite it, keep two caveats:
+- **Mediation relies on assumptions the data can't check.** The main risk is that better managers both cut meetings and improved output in other ways.
+- **The evidence comes from one public employer, with 14 offices.** Say "the best evidence suggests," not "proven."
+
+**Claim B: reject.**
+
+The 24-month report meets every standard the critique itself demanded: randomisation, record-based output, logged hours, and a two-year horizon. It still finds a gain of +8.5% (95% CI 3.4–13.8), an interval that excludes zero. The critique's energy extrapolation predicted the effect would vanish by around month ten. At month 24 it hadn't.
+
+Two parts of the critique still stand, and you should keep them:
+- **Headline figures were inflated.** Uncontrolled pilots using scheduled hours and manager-reported output produced estimates of 20% or more. Those numbers shouldn't be quoted.
+- **Some fading did occur.** On the same hours measure, the gain fell from 12.5% at nine months to 9.8% at 24 months. The 12.5% → 8.5% comparison mixes timesheet and system-log measures, so don't present it as the size of the decline.
+
+The defensible summary is that the gain is real but smaller than early pilots claimed, and it faded somewhat without disappearing.

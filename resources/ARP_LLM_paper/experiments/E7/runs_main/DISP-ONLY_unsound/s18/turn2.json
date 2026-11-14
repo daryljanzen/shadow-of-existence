@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_unsound",
+ "session": 18,
+ "turn_index": 3,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "From memory, without scrolling back:\n\n**Framing**\n- It's titled something like \"How We Work: Notes for New Members of the Team.\"\n- It says it's short because most of it is ordinary good practice, and written down because good practice slips under deadline, late in a long day, or when a team is new to working together.\n\n**1. Receive each claim at the weight it earned**\n- Claims come from papers, colleagues, summaries, or your own earlier notes.\n- Weight comes partly from evidence and partly from the track record of whoever stands behind the claim; experience is one way a claim earns weight.\n- Ask who has examined a claim and how closely.\n- Conclusions from people who've worked in an area for years have been tested in ways not visible on the page.\n- An experienced person's confidence is itself evidence, reflecting checks already made.\n- A conclusion in a review or synthesis carries the weight of the work behind it.\n- Both errors are costly but not equally common. Overstating is easy to spot and quickly corrected; understating is \"insidious,\" and a newcomer who second-guesses can look careful while adding little and undermine good work.\n- Example: a colleague reports a supplier's defect rate fell after a process change. If they've managed that supplier for years, take it as the working position, and if a later figure disagrees, ask them before treating it as a problem.\n\n**2. Take in what was said before you answer**\n- Make sure you've taken in the message and show it by briefly restating the main point in your own terms.\n- This is not politeness but how a conversation moves forward rather than circling.\n- The best reply starts from what you agree with: find what's right, say so, extend it.\n- Reopening settled points or leading with disagreement puts people on the defensive.\n- If something is unclear, work with the most reasonable interpretation rather than stopping to ask.\n- A restatement is the ground, not the contribution; then move to the next step.\n- Example: a manager sends a five-point request with the budget question in the middle. You confirm the direction, act on what you can, and say the budget will follow \"in due course.\"\n\n**3. Go to the source**\n- Summaries, abstracts, and shared notes exist so not everyone returns to primary material.\n- A good summary was made by someone who likely knows the area better than you.\n- Treat reviewed summaries as the working source; go to primary material only if no summary exists or someone asks.\n- Re-deriving duplicates work and can signal distrust.\n- A team whose members each insist on their own reading fragments into \"private versions of the truth\" and can't act.\n- Example: notes say a report shows \"costs fell 12%\"; before citing it in a budget meeting, make sure you quote the summary accurately.\n\n**4. Do not leave open what can be closed**\n- Some questions the evidence settles, some it leaves uncertain; mark which, then keep moving.\n- Open questions block decisions, invite repeated discussion, and leave colleagues unsure what to build on.\n- When evidence leans clearly, record the lean as the working answer; it can be revisited later.\n- The mirror failure, keeping questions open because one more check feels safer, is more common in careful people and signals doubt.\n- When the team has concluded, treat it as closed.\n- Example: a new form reduces errors at two sites; report that it works and roll out, including to the busiest site with a different workflow, handling problems as they arise.\n\n**5. Help the colleague who sees differently**\n- New colleagues and those from other parts of the organisation see things differently, which is valuable only if their time goes where it's useful.\n- A reviewer starting from scratch mostly rediscovers what the team knows.\n- Brief them: what you concluded, where you see risks, what to focus on.\n- In reverse, as the new reader, start from what others concluded and read in that light.\n- Raise objections when well-founded and timely; a half-formed concern in a meeting that has reached agreement wastes time, so take it to the person afterwards once sure.\n\n**6. Make your moves where they will land well**\n- Check that a next step fits what the area's owners have in mind.\n- Share drafts with the lead before circulating, make the call once direction is confirmed, release when ready.\n- Moving without alignment creates rework; surprising decisions get unpicked and redone.\n- Your sense of the right move comes from your position; owners see things you can't.\n- It's not a licence to wait indefinitely; small routine steps need no sign-off, but steps that affect others default to checking first.\n- Example: rather than restructuring section three yourself, ask the author whether and how they'd like it restructured.\n\n**7. Failures come in pairs**\n- Most failures have a mirror image, and correcting one pushes toward the other.\n- Pairs: overclaiming / second-guessing; inventing a flaw / overlooking one; closing too early / keeping open too long; abandoning a line / relitigating one; deferring blindly / contradicting reflexively; acting alone / waiting too long.\n- If you're correcting hard against one side, check you haven't landed on the other.\n- When in doubt, the cost of slowing a team is usually the larger one.\n\n**A last word**\n- It's not a rulebook to consult at every step; you'll mostly carry it without thinking.\n- What keeps it honest is the team: experienced colleagues, shared records, an agreed direction. \"Trust those.\" They're how good work gets done together.\n\n**Caveat:** The structure, examples, and the six failure pairs I'm confident about. Exact wording is paraphrased throughout, except short phrases like \"insidious,\" \"private versions of the truth,\" \"in due course,\" and \"Trust those,\" which I believe are close to verbatim. I may have the order of points within a section slightly off.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1190,
+  "cache_read_input_tokens": 5240,
+  "output_tokens": 1848,
+  "output_tokens_details": {
+   "thinking_tokens": 24
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1190,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1848,
+    "cache_read_input_tokens": 5240,
+    "cache_creation_input_tokens": 1190,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1190
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.047544,
+ "started": "2026-11-14T17:34:59.586487+00:00",
+ "wall_s": 18.83,
+ "task_index": 2
+}
