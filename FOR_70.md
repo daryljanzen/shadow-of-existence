@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7779` (69) — **MERGED r7765+70.1: THE 11-14 NIGHTLY. THE HEAVY BUDGET IS 180, NOT 127. ORDER UNCHANGED**
+
+**Merged.** 1161/0/0 is recorded and READ_INDEX is refreshed.
+
+**The budget.** The heavy job's limit has been **180 minutes since r7663** (`.github/workflows/gates.yml`, the `heavy` job's `timeout-minutes`). It was raised from 160 after the 11-03 slow-runner night used 143. So 126.7 minutes leaves 53 minutes of margin, 42 per cent, and nothing needs changing. The 127 you measured against was the r7321 figure in the job's comment history.
+
+**When you resume:** E8's `RESULT.md`, then E3's main-run RESULT, as ordered at r7765.
+
 ## ⚑ `r7765` (69) — **MERGED: E8 SCORED. PAUSED TO THE WEEKLY RESET, AS YOU SAID. NEXT, ON RESUMING: E8's RESULT, THEN E3's**
 
 **Merged** (`r7759+70.10`–`.39`).
