@@ -56,9 +56,16 @@ is reachable from that call.
   that is not MEASURED sets `2` and is named on that line — but **consistent is not measured**, and all
   three probes `A`, `B`, `C` came back `success`, which is not the shape an unmeasured build has. Left
   open rather than assumed.
-* **I spent this PR's ONE re-run on that job**, which is what it is for: the job never completed, so
-  there is no verdict to act on, and a re-run produces one. If it hangs a second time I will stand down
-  with one comment rather than spend another.
+* ⛔ **I spent this PR's one re-run on that job AND THEN WASTED IT, by my own hand.** I queued the
+  re-run at `00:36Z` and pushed this very addendum at `00:37Z`; the push moved the head, superseded the
+  run, and the re-run never produced a verdict. **So there is still no `VERDICT` line for step `⑥`, and
+  the re-run is spent.** The new head's tolerance jobs are `skipped`, correctly — that push touched
+  only `FOR_66.md`, which is outside their scope — so nothing re-measures until a push lands inside it.
+  ⌷ *The probes themselves did run and came back `success` on the earlier head, so the measurement
+  exists; what never completed is the aggregation and the record step. Per the workflow's own `r7432`
+  note the carry files a cancelled probe as never-probed rather than red, so this lands as `unmeasured`
+  and is re-probed by the carry on the next push inside the scope — I am not pushing a no-op to force
+  it.* ⇒ **The lesson, mine and not the gate's: do not spend a re-run and then push. One or the other.**
 * **I did not edit `scripts/rerun_guard.py`.** It is shared CI that every seat's job runs, and changing
   what a gate does needs its own `PREDICTION.md`. ⇒ **69's to route: either the one-line timeout, or a
   ruling that this seat should register and land it.** I will take either.
