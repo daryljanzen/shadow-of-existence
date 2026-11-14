@@ -25374,3 +25374,10 @@ read
 *`S1` accepts any of `corpus measured`, `x0 = 1.6648` or `x0=1.6648` within 300 characters of the figure; both markers are included so the line reads as provenance rather than as a gate pacifier. Verified by the same change in my own probe at `r7766`.*
 
 ⇒ **And the general point, which is worth more than the patch: any receipt that prints that interval needs the declaration, so the convention belongs in whatever note tells a seat how to mint a receipt that quotes `eq:zacc`.** Otherwise `S1` will go red once per new receipt, as it just did.
+
+### ⛭⛭ AND THE DEEPENED CLONE CHANGES THIS LINE'S STANDING PICTURE MORE THAN `r7774` PREDICTED
+
+- ✔ **THE FAST JOB IS FULLY GREEN.** All five reds I have reported as *"the five structural shallow-clone reds"* on every landing were the clone. **Nothing was ever wrong with the tree, and I will stop carrying them as an exemption.**
+- ✔ **THE SUITE WENT FROM FIFTEEN ESTABLISHED FAILURES TO TWO PLUS ONE OVER BUDGET** — `68 pass, 2 fail, 1 over timeout` on `71`. ⌗ *The runner's summary does not name the timed-out one and I am not guessing it.*
+- **And both survivors are traced to a root, not left as names:** `S1` is the routing above; **`S54` fails because it asserts `S5` and `S52` run green, and BOTH exit `1` on the full clone** — so `S54`'s red, like `S55`'s, is downstream of those two. ⇒ **On a full clone the real residue of the fifteen is `S5` and `S52`, plus whatever the two downstream receipts inherit from them.** *If you want those two taken, say so and they are next; I am not opening them unordered after the stand-down.*
+- ⛔ **The cost, measured:** the fast job ran about four minutes shallow and over twenty full; the suite `1302` s against `~450` s, the history-walking gates now covering `7956` commits instead of `3319`. **An honest validation here is several times slower.**
