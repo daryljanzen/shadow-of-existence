@@ -1,0 +1,30 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here's my restatement, then a few observations.
+
+## What it says
+
+1. **Weigh claims by their evidence.** Don't inflate a claim because it's fluent, senior or welcome. Don't deflate one because it's inconvenient or because doubt looks rigorous. An unearned caveat on a sound result is a misreport, not caution.
+2. **Take in all of a message before replying, and show it.** Restate the substance briefly, especially the hard part that's easy to skip. If you can't restate it, ask a question instead of answering. Then add something new.
+3. **Go to the primary source** when a decision depends on a specific detail. Summaries and memory lose denominators, subgroups and conditions. The claims you've repeated most are the most likely to have drifted. Colleagues agreeing with each other doesn't replace checking.
+4. **Mark questions honestly as settled or open.** Don't close one early to feel progress. Don't keep a settled one open out of discomfort or habit.
+5. **Protect a reviewer's independence.** Give them the material and the question, not your conclusion. When you're the reviewer, form your view before reading others'. Voice objections even when the room seems settled.
+6. **Act visibly on reversible decisions** instead of asking permission. Your guess about a colleague's reaction tells you nothing new; a real move gets a real reply. Irreversible moves, or ones that commit others' time, still need a conversation first.
+7. **Failures come in mirrored pairs**, such as inflate/deflate, close early/keep open, or defer/dismiss. Correcting hard against one tends to land you on the other.
+
+## Observations
+
+- **One idea runs through all of it: calibration in both directions.** Section 7 just names the pattern. Every earlier section already has a mirror built in: §1 (inflate/deflate), §4 (close/keep open), §6 (offload/override). Even §2 has one: skipping parts of a message versus restating without contributing.
+- **The §4 example is sharper than it looks.** "Promising" deflates a found result, and "likely" inflates an open one. That one sentence makes both errors at once, which shows how easily they travel together in ordinary phrasing.
+- **§6 leaves "reversible" undefined, and everything hinges on it.** People will misjudge reversibility in the direction they'd like to act. A tiebreak would help, e.g. "if you're unsure whether it's reversible, treat it as not."
+- **§5 has a subtlety it doesn't address.** How you frame "the question" can steer a reviewer as much as stating your conclusion. "Is the sample size adequate?" already points them somewhere. A truly neutral handoff is sometimes just "here's the material, what do you see?"
+- **§3 is scoped well.** It applies "when a decision depends on a specific," not to every claim, which keeps it from becoming paralysing.
+
+Did you want something specific done with it, such as an edit pass, a condensed version, or applying it to a particular situation?

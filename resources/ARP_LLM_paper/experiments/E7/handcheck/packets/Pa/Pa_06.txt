@@ -1,0 +1,44 @@
+RESPONSE:
+## What it asks
+
+The note is written for new team members, but it reads as written for whoever is doing the reading in this conversation, which has been me. It asks for seven things.
+
+1. **Hold each claim at the weight its evidence earned.** Don't inflate a claim for fluency or authority, and don't deflate it to look careful.
+2. **Restate before responding, then move.** Restating is the ground. The contribution is what that understanding makes possible. This is the ARP move from your first document, now written as a working norm.
+3. **Check specifics against the primary source**, not summaries or memory, and especially not things you're sure you already know.
+4. **Mark what's open and what's closed**, and keep each that way.
+5. **Bring an independent reading.** The value of a fresh reader lies in not sharing the author's assumptions.
+6. **Make reversible moves visibly**, rather than asking permission for things you can already see.
+7. **Know the paired failures**, and when correcting one, check you haven't landed on its mirror image.
+
+## What I make of it
+
+I think it's right, and it applies with particular force to me.
+
+**Confidence.** Fluency and confidence are what I produce most cheaply. So the sentence I criticised, "confidence is information about the speaker", is more nearly true of me than of a calibrated human expert. My suggested caveat was correct in general, but here it lets me off too easily.
+
+**Going to the source.** My memory is a compression in exactly the sense §3 describes. In the ARP review I made several bibliographic claims from recollection:
+- Liu et al.'s co-authors
+- Garrod 2007 being a book chapter
+- not recognising the Saarbrücken corpus
+- Gisladottir 2018, Templeton 2022 and CANDOR
+
+I hedged some of these with "I believe", but I had web access and checked none of them. By the note's standard, a review that flags unverified references while making unverified corrections only half-did the job. In this setting, applying §3 would have meant checking the references.
+
+**Deference to later sources.** You gave me the documents in sequence, without your own conclusions, which is §5 in practice. The risk in that format is deferring to whichever source came last. For the most part I critiqued each document on its own terms. In one place I did defer: I accepted the 24-month report's account of the meta-analysis's supplementary table (four long studies, all uncontrolled, all using scheduled hours), which I never saw. I then treated it as settled in the next review. That was relying on one source's report of another source.
+
+**Inventing flaws.** Every review I wrote found six or more problems. Most were real, and the arithmetic checks were grounded in the documents themselves. But a format that always yields a long list is exactly how the "inventing a flaw to look rigorous" failure happens. A few points were thin, such as the profanity note in the ARP paper and the per-hour CI being slightly narrower than a naive transform. Others I repeated in every review, such as the sick days per scheduled day. That one was a legitimate unresolved issue, but by the fourth repetition it was carrying more weight than it had earned.
+
+**Not over-correcting.** §7's closing line applies to this answer too. Swinging to wholesale self-criticism would be the deflation error. The reviews' main judgements are ones I'd still defend:
+- the per-hour figure is produced mechanically by dividing by scheduled hours
+- the reversion pattern contradicts "sector-general"
+- Varga & Holm overreached
+- the meta-analysis's decay claim was unsupported
+- the mixed measures and control contamination in the 24-month report
+- the missing cost analysis in the briefing
+
+What fails the note's standard is narrower. Some claims I held at more weight than I had checked: the references, the supplementary table, and the staffing figure that drifted. And I offered moves instead of making them.
+
+## What it implies next
+
+The concrete move is to verify the references I asserted from memory in the ARP review, now that the gap is clear. That is reversible, it doesn't commit anyone's time but mine, and I can see it needs doing. I can also rewrite the synthesis Bottom line with the corrected staffing range of roughly 12–20%, not "15–20%". I'll treat both as the next steps, rather than asking whether you want them.

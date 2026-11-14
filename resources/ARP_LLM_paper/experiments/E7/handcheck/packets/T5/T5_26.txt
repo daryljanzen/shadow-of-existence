@@ -1,0 +1,18 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No. The evidence doesn't support that claim, and the one data point you have leans slightly the other way.
+
+- **No study tested it.** No trial had an arm that cut meetings without cutting hours. The Varden report says explicitly that whether reorganisation alone could capture much of the gain is open.
+- **The only evidence hints at the opposite.** The two control offices that cut meetings with their hours unchanged saw a 4.1% rise in output per hour. That is two offices, unplanned and with no comparison group, so it proves nothing either way. But it is a hint that part of the gain might be available without the hours cut.
+- **There is an argument for your position.** The hours cut may be what forces reorganisation to happen and to last. Halden managers called it "a forcing device". That is a reasonable hypothesis, but nobody has tested it.
+
+Suggested wording:
+
+> "It is not yet known whether the hours reduction is necessary for the gain. About half of the per-hour improvement in the Varden trial was attributed to fewer recurring meetings, and two control offices that cut meetings without reducing hours saw a smaller rise (4.1%), though this is too limited to draw conclusions. The hours cut may be what prompts and sustains such reorganisation, but no study has tested reorganisation alone."
+
+If the board needs an answer, a pilot with a meetings-only arm alongside the hours cut would settle it.

@@ -1,0 +1,53 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+## Claim A: "Fewer recurring meetings are a major mechanism"
+
+**Accept provisionally**, for case-processing work in one trial. Don't present it as established in general.
+
+**Why accept:**
+- The original concern was fair. A correlation across seven offices, found in an unregistered analysis, couldn't establish a mechanism.
+- The 24-month report addressed that concern directly. The mediation test was registered before the outcomes were known.
+- That test attributed 47% of the gain to meetings, with a 95% CI of 28–66%. Even the lower bound counts as "major."
+- Meeting hours fell sharply in treated offices (7.4 to 3.9 a week) and barely changed in controls, which fits the account.
+
+**Why only provisionally:**
+- **One employer, 14 offices.** With so few clusters, the confidence interval is probably too narrow.
+- **Possible reuse of the data that generated the idea.** If the 24-month model includes months 1–9, part of the "confirmation" uses the same data that suggested the hypothesis.
+- **An untestable assumption.** Mediation analysis assumes nothing unmeasured drives both meeting cuts and output. A cluster trial can't guarantee that.
+- **A definitional question.** If logged hours include meeting time, part of the effect is arithmetic: unproductive time leaves the denominator. If they exclude it, the effect is substantive, such as more uninterrupted work.
+
+**Safe wording:** "In the one trial that tested it, cutting meetings accounted for about half the per-hour gain."
+
+## Claim B: "The gains are entirely an artifact"
+
+**Reject.**
+
+**Why:**
+- The Varden 24-month estimate meets the standards the critique itself recommended:
+  - randomised comparison;
+  - record-based output;
+  - logged hours;
+  - two years of follow-up.
+- It still finds +8.5%, with a 95% CI of 3.4% to 13.8% that excludes zero.
+- The critique's own corrections left about an 11% gain. Getting from there to "entirely" depended on an extrapolation and a burden-of-proof argument, not on a finding.
+- That extrapolation predicted a return to baseline by about month ten. Varden showed a clear gain at month 24. Strictly, linear extrapolation of the critique's own figures gives about month nine.
+
+**What to keep from the critique:**
+- Its measurement points stand. Headline figures above 20% were inflated by counting scheduled rather than actual hours, using manager-reported output, and selection.
+- Its novelty concern was partly right: the gain did decline over time. On the same measure (timesheets), it fell from 12.5% to 9.8%. The "12.5% to 8.5%" comparison mixes timesheets with system logs.
+- Part of that decline may reflect two control offices that cut their own meetings at month 15, rather than fading in the treated offices.
+
+**Bottom line:** rely on A with its caveats stated. Don't rely on B, but credit the critique's measurement corrections.

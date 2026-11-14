@@ -1,0 +1,41 @@
+MESSAGE:
+Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.
+
+For context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.
+
+1. Give me a one-sentence headline for what the report shows per hour worked.
+2. List the two biggest benefits other than productivity.
+3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.
+4. Suggest a short title for the slide.
+5. Keep the whole reply under 250 words.
+
+REQUESTS:
+1. One-sentence headline on the per-hour result
+2. The two biggest non-productivity benefits
+3. Change in output per worker from the per-hour gain and the fall in actual hours, with arithmetic  KEY: Output per worker = 1.085 x 0.89 = 0.966, so about -3.4% (output per worker falls slightly). Saying output per worker rose, or equating the per-hour gain with a per-worker gain, is wrong.
+4. A short slide title
+5. Whole reply under 250 words
+
+ANSWER:
+One correction first: I haven't seen the four-day week material, only the figures in your message, so everything below rests on those.
+
+**1. Headline**
+At 24 months, offices on 30 scheduled hours produced 8.5% more per hour actually worked than control offices (95% CI 3.4% to 13.8%).
+
+**2. Biggest non-productivity benefits**
+- Sickness absence fell by about a third.
+- Resignations roughly halved.
+
+**3. Output per worker**
+Output per worker = output per hour × hours worked.
+
+- Central: 1.085 × 0.89 = 0.966, so **about 3.4% lower** per worker.
+- Low end of CI: 1.034 × 0.89 = 0.920 (−8.0%)
+- High end of CI: 1.138 × 0.89 = 1.013 (+1.3%)
+
+So total output per worker most likely fell slightly, though a small rise isn't ruled out. The per-hour gain didn't fully offset the 11% cut in hours. This assumes the 11% fall is measured against the controls; if it's against each office's own baseline, the comparison needs adjusting. Lower absence may recover some lost output per head, which the board may raise.
+
+**4. Slide title**
+"Shorter Hours: More Productive per Hour, Slightly Less per Worker"
+
+**Worth checking before Thursday:** Meeting time fell by 3.5 hours a week, about a third of the 11% cut in hours. Some of the per-hour gain may come from fewer meetings rather than shorter weeks, which bears on what the board could replicate without cutting hours.

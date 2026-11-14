@@ -1,0 +1,26 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here's what it says, briefly:
+
+1. **Weigh claims by their evidence.** Not by fluency, seniority, or convenience. Over-hedging a supported result distorts as much as overstating a weak one.
+2. **Restate before replying.** That's how both sides confirm the message arrived intact, and it stops you from quietly skipping the hard point. Then add something new.
+3. **Check specifics against the primary source.** Summaries and memory drop the details that matter. This matters most for things you're sure of. Agreement among colleagues isn't verification.
+4. **Mark what is settled versus open, and keep it that way.** Don't close questions early to show progress, and don't keep settled ones open out of caution.
+5. **Protect a reviewer's independence.** Give them the material and the question, not your conclusion. Raise objections even when the room seems settled.
+6. **Make reversible moves openly instead of asking permission.** Save the conversation for moves that are hard to undo or that commit other people's time.
+7. **Failures come in mirrored pairs.** Overcorrecting one tends to produce its twin.
+
+A few things stand out:
+
+- **The pairs in section 7 are the core.** Sections 1, 4, and 6 each describe one of those pairs in depth. The closing advice, "check you haven't landed on the other side," is the practical test that ties the document together.
+- **Sections 5 and 6 can seem to conflict.** One says to share drafts early, the other says not to prime reviewers. They don't actually conflict: share the work freely, but hold back your verdict when you want an independent check. A new reader might still trip on this, so one sentence making it explicit could help.
+- **Section 6's line is the hardest to apply.** It doesn't say how to judge "hard to reverse" or "commits others' time" when the case is borderline. An example of a move that looks reversible but isn't would help.
+
+What would you like to do with it? I can review or edit it, apply it to a specific situation, or condense it into a checklist.

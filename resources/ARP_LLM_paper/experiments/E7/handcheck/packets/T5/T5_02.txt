@@ -1,0 +1,18 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, the evidence doesn't support that statement, so I'd leave it out.
+
+- **No study tested it.** Varden had no group that cut meetings without also cutting hours. The report itself says whether reorganisation alone could capture much of the gain "cannot be determined from this trial."
+- **The only data point leans slightly the other way.** The two control offices that audited their meetings, without changing hours, saw output per hour rise 4.1%. They cut less than the treated offices did (7.1 to 5.0 hours a week, against 7.4 to 3.9). That suggests part of the gain may be available without a shorter week. It's two offices with no comparison group, so it proves nothing either way. But it's the opposite of evidence that the hours cut is essential.
+- **The mediation result also points to meetings.** That analysis attributes about half the per-hour gain to the fall in meeting time, which is why the question matters.
+
+Here's wording you could use instead:
+
+> "It is not yet known whether the hours reduction is necessary for the gain. Much of the per-hour improvement appears to come from cutting recurring meetings, and two offices that cut meetings without reducing hours saw a smaller gain (4.1%). No study has compared the two approaches directly."
+
+If the board wants an answer, a three-arm pilot would provide one: reduced hours, a meeting audit without reducing hours, and an unchanged comparison group. Running the meeting audit everywhere costs little and could start now.

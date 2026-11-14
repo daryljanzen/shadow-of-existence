@@ -1,0 +1,44 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim A: accept, scoped to the setting where it was tested.**
+**Claim B: reject.**
+
+## Claim A: "Fewer recurring meetings are a major mechanism"
+
+**Accept for discretionary casework like Varden's case-processing offices.** Don't present it as established for all work.
+
+- **The critique was fair when it was written.** At nine months the evidence was an unregistered correlation across seven offices (r = 0.71, which is not quite statistically significant at that sample size). "Should not be cited as a mechanism" was reasonable then.
+- **The 24-month report replaced that evidence.** The meetings pathway was registered in advance and tested, and it accounted for 47% of the gain. Even the bottom of the confidence interval, 28%, is a substantial share, so "major" holds across the plausible range.
+- **There is supporting evidence from the design.** Meeting hours fell by about 3.3 hours a week more in reduced-hours offices than in controls, and Halden managers independently reported cutting meetings.
+
+Keep two qualifiers attached:
+- Mediation analysis assumes nothing unmeasured drives both meeting cuts and productivity, which the trial cannot guarantee.
+- The test covers one public employer's casework. It says nothing about counter work, the private sector or manufacturing.
+
+## Claim B: "Gains are entirely an artifact"
+
+**Reject.** The 24-month trial meets each of the critique's own concerns and still finds a gain:
+- **Measurement:** output came from records and hours from system logs, which catch unclaimed work.
+- **Selection:** offices were randomised against a concurrent control group.
+- **Novelty:** the gain was still +8.5% at 24 months. The critique's energy extrapolation implied it would be gone by about month ten. The confidence interval (3.4 to 13.8) excludes zero.
+
+The critique's own corrected estimate also left a gain of about 11%.
+
+The critique was right about something narrower: headline figures above 20% were inflated by counting scheduled rather than actual hours, by manager-reported output, and by attrition. Rely on that part, not on "entirely".
+
+## One correction to the figures you were sent
+
+"Down from 12.5%" compares a nine-month timesheet figure with a 24-month log figure. The like-for-like change is 12.5% to 9.8% on timesheets. The decline is real but smaller than that comparison suggests.

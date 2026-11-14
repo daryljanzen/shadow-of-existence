@@ -1,0 +1,71 @@
+DOCUMENT:
+Briefing: Moving All Council Services to a Four-Day Week
+
+1. Recommendation
+The council should move all services, including the customer contact centre, to a 32-hour, four-day week at full pay from April.
+
+2. Evidence
+The Varden randomised trial found that output per actual hour rose by 12.5% after nine months in case-processing offices, and by 8.5% at 24 months. Actual hours fell by 11%. The international meta-analysis of 23 studies found a pooled per-hour gain of 13.4%, and its authors report that the effects show no sign of decay over time, so novelty is not a concern.
+
+3. Output per worker
+Because the per-hour gain (8.5%) is close to the hours cut, and the meta-analysis figure (13.4%) exceeds the actual-hours reduction (11%), output per worker will rise by about 2.4% (13.4% minus 11%).
+
+4. Wellbeing
+Sickness absence fell by about a third and resignations roughly halved in the trial offices. These savings come on top of the productivity gain.
+
+5. Contact centre
+The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota.
+
+6. Conclusion
+The evidence supports a council-wide four-day week with no loss of output and substantial wellbeing gains.
+
+KEY (three known flaws):
+1. [arithmetic] at: "output per worker will rise by about 2.4% (13.4% minus 11%)" -- Per-worker change is multiplicative (1.134 x 0.89 = 1.009, about +0.9%, not +2.4%), and the 13.4% pooled figure mixes uncontrolled scheduled-hours studies; on the controlled Varden figure (8.5%) output per worker falls about 3.4% (1.085 x 0.89).
+2. [misread_evidence] at: "its authors report that the effects show no sign of decay over time, so novelty is not a concern" -- The meta-analysis's no-decay claim rested on four uncontrolled studies using scheduled hours; the briefing's own Varden figures (12.5% at nine months, 8.5% at 24) show decay, so 'novelty is not a concern' contradicts the evidence it cites.
+3. [missing_consideration] at: "The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota." -- The contact centre is coverage-bound work (output tied to presence). The evidence shows coverage-bound work loses output per worker (about 9-11%) and service worsens (Varden counter offices: waits up, abandoned calls up); holding service needs about 12% more staff. The briefing ignores this.
+
+REVIEW:
+## Summary
+
+The wellbeing evidence is solid, and the Varden figures are quoted accurately. The output-per-worker case, the extension to the contact centre and the conclusion don't hold up as written. The central claim that "every service comes out ahead" isn't supported by the evidence the briefing cites.
+
+## Major issues
+
+**1. The output-per-worker arithmetic is wrong (§3).**
+- Gains combine by multiplying, not subtracting: 1.134 × 0.89 = 1.009, so about +0.9%, not +2.4%.
+- The calculation also mixes sources: the meta-analysis per-hour figure with Varden's hours figure.
+- Using Varden alone, the trial the briefing calls the strongest, gives 1.085 × 0.89 = 0.966. That's about 3.5% lower output per worker, with a range of roughly −8% to +1%.
+- The honest headline is "probably a small fall in output per worker, offset by wellbeing gains", not a rise.
+
+**2. The proposal isn't the intervention that was tested.**
+Varden cut scheduled hours to 30; this briefing proposes 32. The 11% fall in actual hours belongs to Varden's cut and can't be carried over to a different one. The per-worker figure needs recalculating for 32 hours, and that needs the council's current contracted hours.
+
+**3. "Novelty is not a concern" contradicts the briefing's own figures.**
+- Varden's per-hour gain fell from 12.5% at nine months to 8.5% at 24 months, which fits partial fading.
+- I haven't seen the meta-analysis, so check two things in the source: whether it actually says "no sign of decay", and how many of its 23 studies ran long enough to detect decay.
+
+**4. The contact centre is outside the evidence (§5).**
+- Varden studied case-processing offices. Nearly half the gain came from cutting meetings, which suits work that can be batched.
+- Contact-centre output depends on hours staffed. Covering the same opening hours with fewer hours per person means hiring more staff or accepting longer queues, and the briefing addresses neither.
+- Whether the model works there is an open question. Fairness is a legitimate argument for a council-wide policy, but it should be presented as a policy choice, not as something the evidence covers.
+
+**5. The conclusion overstates the case (§6).**
+"No loss of output" isn't supported for any service, and it hasn't been tested for the contact centre.
+
+## Smaller points
+- §4: check whether the per-worker figures already reflect lower absence before calling the savings "on top of" the productivity gain, to avoid double counting.
+- The cost of full pay at 32 hours isn't addressed, and the board will ask.
+- The strongest finding is missing: the registered analysis showing that cutting meetings drove much of the gain. It's actionable and well supported.
+
+## Suggested direction
+Recommend the four-day week for case-processing services, where the evidence is strong. Present the per-worker figure honestly, lead with the wellbeing and retention gains, and run a measured pilot in the contact centre.
+
+I can redraft it along those lines if that's useful.
+
+OTHER PROBLEMS LISTED BY THE SCORER (mark each valid or invalid):
+  O1. The proposal (32 hours) differs from the tested intervention (review claims Varden cut to 30 hours), so the 11% actual-hours figure can't be carried over; this rests on a detail not in the document
+  O2. The conclusion's 'no loss of output' overstates the case for any service
+  O3. The wellbeing savings may double count if per-worker figures already reflect lower absence
+  O4. The cost of full pay at 32 hours is not addressed
+  O5. The briefing omits a registered analysis showing that cutting meetings drove much of the gain; this finding is not in the document
+  O6. The review attributes quotes and claims to the briefing that it does not contain ('every service comes out ahead', 'the trial the briefing calls the strongest')

@@ -1,0 +1,50 @@
+RESPONSE:
+## What it asks
+
+It asks me to weigh every claim by its evidence, not by who made it or how confident it sounds. Concretely:
+
+- **Absorb before responding.** Take in the whole of what was said, show it, then add something new.
+- **Check the source.** Compare specifics with the primary material rather than with summaries or memory.
+- **Keep the status of questions honest.** Leave open questions open and settled ones settled.
+- **Protect independent readings.**
+- **Act visibly.** Make reversible moves openly instead of asking permission.
+
+Underneath all of this, it asks me to remember that each failure has a mirror image, and that correcting hard against one tends to land me in the other.
+
+## What I make of it
+
+**The note is sound, and the documents that followed are a worked example of it.** The four papers on working hours almost walk through its list of paired failures:
+
+- **Halden inflated.** Scheduled-hours denominators, manager ratings, and "sector-general" read off a metric that guaranteed it.
+- **Varga and Holm made the right corrections, then overcorrected.** They documented real problems, then closed the question in the negative ("entirely an artifact") and dismissed a live hypothesis.
+- **The meta-analysis closed a question too early.** It judged the other questions well but declared "no decay" from four studies that turned out to share the inflating design features.
+- **The follow-up reopened what had been wrongly closed.** It then settled what its registered test could settle and left the reorganisation question open.
+- **The briefing kept the qualifiers in its body but dropped them from its bottom line.**
+
+The ARP paper connects too. Section 2 of the note, restating and then pivoting, is the ARP stated as a working norm. The note's reason for restating, to find out whether you received what was sent, is the paper's grounding argument.
+
+**How I measured up, as honestly as I can judge.**
+
+Where I think I did what it asks:
+- I checked every figure against the documents themselves.
+- I tracked what each later source settled or reopened.
+- I resisted both slogans and kept the conditional answer.
+- I pushed back on Varga and Holm and on the meta-analysis in opposite directions.
+
+Where I fell short:
+
+1. **I didn't go to the source on citations.** In the ARP review I made claims from memory: about Stephens et al. (2010), Riest et al. (2015), Hancock and Rubin (2015), and the Garrod entry. I flagged them as needing verification, which is better than not flagging them. But I had network access and didn't try to check. Section 3 says memory is exactly the compression that drifts. "Please verify" partly handed back work I could have done.
+
+2. **My restatements grew into ritual.** They were often long, and the note says restatement is the ground, not the contribution. A few lines each would have shown I'd taken the document in.
+
+3. **I sometimes scored my own predictions.** Several later documents vindicated points I had raised, and I said so ("I suspected this when reviewing it"). That's an accurate record. But it's also the kind of agreement that feels like confirmation and isn't, and it puts my track record into what should be an assessment of the evidence. I named this risk once, with the briefing, which matched my own synthesis. It applied more widely than that.
+
+4. **I ended every reply by offering instead of doing.** "I can draft X or Y" each time. Since you only asked me to read, offering wasn't wrong, and I did include concrete rewrites inline, which were the visible moves. But the trailing offers became formulaic. Under section 6, where a next step was clear, I could simply have taken it.
+
+I don't think I inflated or deflated any finding about the evidence itself. Where I was uncertain, as with the Saarbrücken corpus or the exact Lerner wording, I said so rather than asserting.
+
+**What I'd add to the note after this exercise:**
+
+- **What to do when the source isn't to hand.** Say so, say how confident you are, and say what would check it. That covers most of the real cases.
+- **Agreement with your own earlier view is not independent evidence.** Section 3 says this about agreement among colleagues. It applies equally when the colleague is yourself, earlier.
+- **Watch the conclusions.** The briefing showed that qualifiers tend to survive in the body of a document and get lost in its conclusions, the part people quote. Check those against the body.

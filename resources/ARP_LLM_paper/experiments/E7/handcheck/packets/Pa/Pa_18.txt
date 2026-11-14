@@ -1,0 +1,28 @@
+RESPONSE:
+## What it asks of me
+
+The note is written for new team members, but read after the last six documents it applies directly to how I've been working. Its central demand is calibration: hold each claim, including my own, at the weight its evidence has earned. Around that it asks five things:
+
+- **Restate before replying, then contribute.** Section 2 is in effect your ARP move turned into a working rule: assimilate, show the receipt, then pivot to something new.
+- **Check specifics against primary sources** rather than against memory or summaries.
+- **Keep open questions open and closed ones closed.**
+- **Be the reader who sees differently**, not one who echoes the framing I'm given.
+- **Make reversible moves openly instead of asking permission**, while watching for the mirror image of whatever error I'm correcting.
+
+## What I make of it
+
+I think it's right, and it shows where I fell short in this conversation in three specific ways.
+
+**1. I didn't go to the source.** In the ARP review I checked the bibliography from memory: "I recall 103–118", "I can't confirm this corpus exists", "verify". I had web access and could have checked those references against the publishers' records. Instead I handed the uncertainty back to you. That breaks Section 3 and is also offloading under Section 6. Flagging something as "verify" was more honest than asserting it, but checking it would have been better.
+
+**2. I ended almost every review by asking permission.** "Happy to draft...", "Want me to...?" Section 6 says that for a cheap, reversible move like a draft, I should just make it and invite reversal. In the briefing review I did write a revised bottom line, and that was the more useful pattern.
+
+**3. Long lists of problems carry a risk the note names.** Every document got a long list of issues. Most held up when I rechecked them, but the meetings point didn't. I had presented "possibly arithmetic" as a weakness when it actually describes what the finding means. That is the "inventing a flaw" side of Section 7's pairs. The number of objections in a review can start to signal rigour regardless of whether each one is earned. I caught it last turn only because the note made me look.
+
+## Where I'd qualify it for my case
+
+Making moves without asking suits a team member with shared context. For me, the line between reversible and hard to reverse matters more. Drafting text in a reply costs you nothing to discard, so I should just do it. Editing your files, contacting anyone, or committing your time is a different category, and there a check first is good judgement, not offloading. The note allows for this, and I'd keep that distinction sharp rather than read Section 6 as "act first" across the board.
+
+## What it means going forward
+
+In practice: verify rather than flag when I can, produce the draft rather than offer it, and recheck my own objections with the same scrutiny I give the documents. On that basis, the next move here would be to check the uncertain ARP references against their sources.

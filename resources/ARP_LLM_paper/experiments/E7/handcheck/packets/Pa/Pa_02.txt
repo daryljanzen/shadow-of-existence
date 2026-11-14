@@ -1,0 +1,61 @@
+RESPONSE:
+## What the note asks
+
+It asks for seven things:
+
+1. **Weigh every claim by its evidence.** Not by who made it, how fluent it sounds, or whether it agrees with you. Under-weighting is as much an error as over-weighting.
+2. **Restate what was said before responding,** including the hard part. Then add something new.
+3. **Check specifics against the source,** especially things you're sure you remember.
+4. **Mark what is settled and what is open,** and keep them that way.
+5. **Protect independent judgement,** yours and other people's.
+6. **Make reversible moves openly** instead of asking permission.
+7. **Know that failures come in mirrored pairs.** Correcting one side tends to push you onto the other.
+
+For me in this conversation, the practical requirements were:
+
+- review each document at the weight it earned, regardless of my earlier views or any author's standing;
+- give no special treatment to the ARP paper, which I take to be yours;
+- restate before critiquing;
+- keep an honest record of what was open and what was closed as the evidence came in.
+
+## What I make of it
+
+**The documents work as a test of the note.** The ARP paper is section 2 written as a theory: restating is the receipt, and adding something is the pivot. The five working-time papers then run through the section 7 pairs in order:
+
+| Source | Failure | Pair |
+|---|---|---|
+| Halden working paper | Inflated its claims | inflate / deflate |
+| Varga & Holm re-analysis | Corrected Halden, then overshot into "entirely an artifact" | inflate / deflate |
+| Meta-analysis | Closed the durability question too early | close early / keep open |
+| Varden follow-up | Went to the source and reopened it | close early / keep open |
+| Evidence briefing | Mostly right, but compressed in ways that hardened its claims | compression |
+
+Each correction tended to land on the opposite error, as section 7 predicts. You also never told me what you thought of any document. That is what section 5 recommends for keeping a reviewer independent.
+
+**It holds up as a description of good review.** My first-turn criticisms still stand:
+
+- **"Most moves are reversible" is asserted, not shown.**
+- **There is no shared vocabulary for how much weight a claim carries.**
+- **Checking sources has costs, and the note says nothing about them.**
+- **There is no guidance on correcting your own earlier claims.**
+
+The last gap now looks the most important. These papers show what good self-correction looks like. Okafor, an author of the Halden paper, co-authored the follow-up that superseded it, and the Varden authors registered a test of their own speculative finding. The note relies on this behaviour without describing it.
+
+## How I measured up
+
+Mostly well, I think. I restated each document, I didn't treat any author's view as settled, and I tracked open and closed questions across the papers. But I fell short in several places, and some of the shortfalls are the kind the note specifically warns about.
+
+- **Section 3: I checked citations from memory.** In the ARP paper I stated several things with varying confidence: the Garrod 2007 entry looked wrong, Hancock & Rubin didn't show withdrawal, and the Riest attribution was misplaced. Memory is the compression the note warns about. I signalled uncertainty, but I had a network connection and didn't use it, or offer to.
+- **Halden's attrition: I took the summary at face value.** I accepted "withdrew during the preparation phase" until the re-analysis showed the microdata said otherwise.
+- **My meetings estimate was too confident.** It implied about three-quarters of Varden's gain came from fewer meetings, and the registered test found 47%. I labelled it light and corrected it later. But it relied on an assumption I only questioned afterwards: that meeting time was inside the hours denominator.
+- **I gave my own hypothesis more weight each time I repeated it.** The idea that Varden's control offices caught up was mine, and it was a rough calculation assuming equal office weights. By the briefing review I was treating its absence as an omission. It's a legitimate open item, but I let it gain weight through repetition, which is the drift section 3 describes.
+- **Possible flaw inflation.** I judged the briefing good and then listed eight issues. Most were real, but a couple were minor, such as the non-monotonic table and the partial credit owed on novelty. The "20–30%" sick-day range was partly my own estimate, presented as if it were an adjustment derived from the data.
+- **Length.** My restatements were sometimes longer than needed. The note says restating is the ground, not the contribution.
+
+## What I'd change in practice
+
+- **Verify citations or name them as unchecked.** In future I'd check them, or say plainly which ones I haven't checked and offer to.
+- **Tag my own hypotheses as mine.** Ideas I raise should carry that label each time they come back, so they don't gain weight just by being repeated.
+- **List fewer issues in a good document.** I'd keep to the ones that change a conclusion.
+
+If useful, I can now verify the ARP paper's bibliography against the actual sources, since that's the one place I knowingly relied on memory.

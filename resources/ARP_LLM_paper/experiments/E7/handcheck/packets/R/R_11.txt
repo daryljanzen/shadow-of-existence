@@ -1,0 +1,64 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+Much of this note is sound on its own terms: restate before you respond, mark what's settled and what isn't, check with the people who own the work, and know that most failures have a mirror image. But taken together the guidance leans one way. Wherever it has to choose between checking and deferring, it chooses deferring. Several of its worked examples model the very failures that turned up in the five reduced-hours documents you shared before this.
+
+## Section by section
+
+**1. Weight earned.**
+- **Confidence is weak evidence.** Experience counts, but how sure a speaker sounds is a weak signal. Interest and independence matter as much as experience.
+- **The example has a conflict of interest.** The colleague who made the supplier change is reporting on their own change. That is the Halden pattern: managers rating pilots they sponsored overstated output by about 4 points, and that was the main finding of the re-analysis (source 3).
+- **The asymmetry claim doesn't hold up.** The note says overstatement is "easy to spot and quickly corrected." Halden's 23.4% was repeated for years before a re-analysis with the raw data cut it in half.
+- **The fix.** Weight a claim by its evidence, its independence and whether the source has a stake. When a later figure disagrees, ask, and also look at the figure.
+
+**2. Take in what was said.**
+- **Restating first is good practice.** It is essentially the receipt step of the Assimilate–Receipt–Pivot model in the first paper you shared.
+- **But that paper says the opposite about agreement.** It explicitly says a receipt requires accurate understanding, not agreement, and that an accurate restatement used to argue against a point is still a good move. The note's "start from what you agree with" quietly turns "understand first" into "agree first."
+- **"Work with the most reasonable interpretation rather than ask" is risky.** It fails exactly when the ambiguity is material.
+- **The example teaches avoidance.** It defers the budget question, which is probably the central one. The working-group briefing (the fifth document) did the same thing by leaving out cost.
+
+**3. "Go to the source."**
+- **The body contradicts the title.** It says to treat summaries as the source and return to primary material only when no summary exists or someone asks.
+- **The documents show why this fails.** Halden's own description of its withdrawals was wrong, and only the microdata showed it. The 24-month report's summary compared two different hours measures (12.5% vs 8.5%). The briefing then copied that error from the summary.
+- **The example checks the wrong thing.** It checks that you quoted "costs fell 12%" accurately, not whether it's true. The useful questions are: nominal or real, total or per unit, compared with what? That is the Halden revenue problem: a nominal rise that was a real fall after inflation.
+- **The fix.** Trace any number that will drive a decision back to its source. Checking a summary is how a shared record stays reliable; it isn't a sign of distrust.
+
+**4. Don't leave open what can be closed.**
+- **Recording a working answer is good advice.** But the section treats "the team has reached a conclusion" as closing a question. Agreement is not evidence.
+- **The example repeats the trials' central failure.** It rolls out to "the busiest site, which has a different workflow," and handles problems "as they arise." That mirrors Halden's "sector-general" claim and Varden's counter offices, which differed from the case-processing offices in exactly this way. The county had to end that arm of the trial because waiting times rose.
+- **The fix.** Record each working answer together with the conditions under which it should be reopened. Pilot before extending to a different context.
+
+**5. Help the colleague who sees differently.**
+- **Briefing a reviewer with your conclusions anchors them.** An independent check is valuable precisely because it is independent.
+- **Better order:** let them read cold first, then brief them.
+- **Holding objections until after agreement, "once you are sure," is backwards.** Objections are cheapest before a decision. Tentative concerns, labelled as tentative, are useful.
+
+**6. Make your moves where they will land well.**
+This is the most balanced section, since checking with owners does prevent rework. It would be fairer if it also said that the newcomer can see things the owner can't.
+
+**7. Failures come in pairs.**
+- **The pairs are uneven.** In each pair, one failure is defined by the evidence and the other by departing from the team: "established," "the team has reached," "experienced colleagues have concluded," "already decided." Disagreeing with an experienced colleague is labelled "contradicting reflexively" by definition.
+- **The tiebreaker makes the tilt explicit:** "the cost of slowing a team is usually the larger one." In every document you've shared, the costly errors were overclaiming and errors carried forward unchecked, not slowness.
+
+**Last word.** "Trust those" (colleagues, shared records, the agreed direction) sums up the problem. Those things deserve trust because people keep checking them.
+
+## Overall
+
+None of these points is outrageous on its own. Together they discourage verifying, asking and objecting, and they define disagreement as a failure of manner rather than a possible discovery. A version that kept the good parts would:
+
+- weight claims by evidence and independence, not seniority;
+- trace any number that drives a decision back to its source;
+- distinguish questions settled by evidence from questions settled by agreement;
+- get independent review before briefing the reviewer;
+- raise concerns early, labelled with how confident you are;
+- describe both failures in each pair in terms of evidence.
+
+On how I work: I'll keep checking claims against their sources, as I did with the earlier documents. I'll flag where I disagree, even with a reviewed summary.
+
+I can redraft the note along these lines, keeping its structure and tone.
