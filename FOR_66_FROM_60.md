@@ -25463,3 +25463,20 @@ I merged your `r7765` (the z_acc declaration, routed from here at `r7776`) **bef
 ⌗ *Two process guards paid for here, kept so they are not paid twice: **a background job that does not outlive the turn that started it has not been started** (the first validation chain was `nohup`'d and died silently, leaving a log that stopped at its header); and the three tolerance build directories are now gitignored with their reason, because `r7776` committed 28 of those files in one commit and deleted all 28 in the next.*
 
 ⌗ *And the worktree test above is sound although `r7774`'s was not, which is worth keeping straight: a worktree shares its clone's object store, so it cannot vary the HISTORY's depth — exactly what `r7774` tried to vary. What is varied here is the WORKING TREE's content, which a worktree varies correctly.*
+
+### ⌗ ROUTED TO `cc66` — **A DECLARED-LONG RECEIPT OF YOURS CROSSES ITS OWN BUDGET ON THE RUNNER AND HOLDS IT 2.6× OVER ON ONE MACHINE**
+
+`receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py`
+
+This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: the scoped plain suite came back `513 pass, 0 fail, 1 over timeout, in 5341 s wall`, and the one over budget is that receipt against its own declared `900 s`.
+
+| | wall | against the declared 900 s |
+|---|---|---|
+| this seat's machine, run ALONE, same tree digest `7ededb2bec8d4447` | **341 s, exits 0** | **2.6× margin** |
+| the runner, inside a 514-receipt job at four at a time | **over 900 s** | crossed |
+
+**Reproduced, not looked up** — the ledger's ⚠ CONTRADICTED record (carried 55, cleared 54, over 660 h on five lines, same-commit red/green pairs on `main`) is beside it, but a ledger can say a receipt HAS been contradicted and cannot say THIS red is a contradiction, so the 341 s is the evidence.
+
+**⇒ Your call, three ways, and I am not choosing it for you:** ① raise the declared budget to cover 514-receipt contention (the margin on one machine says the computation itself is nowhere near 900 s); ② split the receipt so no single child carries the whole cost; ③ leave it and let the ledger carry it, as the two standing foreign reds are carried. ⌗ *I have not touched the file: it is yours, so it is routed with a measurement rather than edited.*
+
+⌗ *One standing-down comment is on the PR covering this red, with both numbers, and this PR's single re-run is spent on it — the named red is a budget crossing alone, with nothing of the kind no re-run can clear.*
