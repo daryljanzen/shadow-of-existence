@@ -1,0 +1,71 @@
+r7772 (60) -- VALIDATION
+
+Range validated: 36b2bf597^..HEAD -- the registration and the result-and-reply commit.
+Files changed: FOR_66_FROM_60.md, this receipt's own five files, and ONE RECEIPT --
+receipts/L_probability/S11_...py, section E only.  ** That receipt is THIS LINE'S OWN, landed by 69
+from r7736; the standing rule forbids editing ANOTHER seat's receipt and this is not one.  Because
+it changes what a published gate asserts, the change has its own registration, which is this
+revision. **  No paper, no generated view, no register, no other seat's work, no INDEX row.
+Every comparison is by SORTED DIFF of the receipt lists, never by matching counts.
+
+1. SCOPES   reads 1, tolerance 37, suite 91.
+   ** NOT set-identical to r7770's, and the widening is the point: ** editing a RECEIPT rather than
+   only this line's own computation directory pulls its readers in.  reads goes 0 -> 1 (S11 itself),
+   tolerance 14 -> 37, suite 70 -> 91.  ⇒ THE RUNNER-READ SWEEP HAS SOMETHING TO MEASURE FOR THE
+   FIRST TIME IN THIS SEQUENCE OF REVISIONS, and it was run rather than declared empty.
+
+2. FAST JOB (NODE=60 bash scripts/run_fast_job.sh)
+   10 generators, 133 gates, plus the hollow-assertion lint.  RED, naming exactly FIVE:
+     check_branches  check_pdf_current  check_quote_pins
+     check_pins_adjudicated_on_mint  check_marker_transposition
+   the five structural shallow-clone reds and NOTHING ELSE.  The receipt edit introduced no gate
+   failure.
+
+3. THE SUITE (--from <91-receipt scope> --jobs 4 --timeout 600)
+   91 receipts, 68 pass, 23 fail, 0 over timeout, 782s wall.
+   The 23 are the established fifteen PLUS EIGHT, and ** ALL EIGHT WERE CHECKED INDIVIDUALLY
+   AGAINST origin/main's OWN TREE IN A DETACHED WORKTREE AND ALL EIGHT FAIL THERE TOO: **
+     L248/R1   L253/S1   L_probability/S11   L_probability/S13
+     L_probability/S1   L_probability/S55   L_probability/S59   P15/C60
+   ⇒ NONE is this branch's and NONE is the receipt edit's.  They were invisible to this line's
+   routine because they sit outside its usual suite scope; widening the scope by one receipt is
+   what surfaced them.  ** Reported in the RESULT and in the reply as a finding, not fixed here. **
+
+4. THE THREE-BUILD TOLERANCE PRE-SWEEP (tA; tB --threads 4; tC --threads 2 --coretype Prescott,
+   each --from the 37-receipt tolerance scope, then --compare)
+   Each probed 37 of 37 -- none NEVER PROBED.
+     A vs B:  0 flagged;  0 at the precision floor;  17 not measured
+     A vs C:  0 flagged;  0 at the precision floor;  17 not measured
+   The VERDICT line on both is "NOT A SWEEP -- no site flagged, but a receipt was not measured on
+   both builds": the BITFIELD's 2 with 1 clear, the normal reading.  The seventeen are the same in
+   both comparisons by sorted diff of full paths, and EVERY ONE IS ACCOUNTED FOR by name:
+     nine of the established fifteen that are in this wider tolerance scope
+       -- C71 C79 D1 E1 S5 S54 S6 S8 S9
+     and all EIGHT of item 3's base-branch reds
+       -- C60 R1 S1 (L253) S1 (L_probability) S11 S13 S55 S59
+     and NOTHING in neither.
+   ⌗ THE CONTAINER RESTARTED between builds B and C.  A and B had completed (37 of 37 each, rc 0 on
+   record); C was mid-run and its directory was deleted and C re-run ALONE.  ** A and B were NOT
+   re-run: the tree had not changed, and re-running a long job on an unchanged tree is the
+   reassurance the standing rule forbids. **
+
+5. THE RUNNER-READ SWEEP (scripts/sweep_runner_reads.py --from <1-receipt reads scope>)
+   Run, and not declared empty:
+     FLAGGED (a relative read that resolved to nothing) : 0
+     TRIAGE  (an absolute in-repo glob that was empty)  : 0
+     red under the trace                                : 1
+     over the budget, not traced to the end             : 0
+   VERDICT: "NOT A SWEEP -- nothing flagged, but a receipt was not traced to its end".  The one
+   untraced receipt is S11 ITSELF, because it exits 1 on this tree -- for the six base-branch
+   reasons item 3 establishes, not for this revision's change.
+
+6. NOT RUN, AND WHY
+   * the Lean build: no toolchain here, and no arm of this revision needs one;
+   * no long job was re-run for reassurance -- see the restart note in item 4.
+
+7. TWO DEFECTS OF THIS SEAT'S OWN PROCESS, RECORDED
+   * ** A WAIT LOOP THAT MATCHES ITSELF NEVER EXITS. **  Two chained background waits used
+     `pgrep -f sweep_tolerances` and `ps | grep mainwt4` from wrappers whose own command lines
+     CONTAIN those strings, so each matched itself and span forever; the builds never launched until
+     the loops were killed and replaced with a MARKER-FILE wait.  Cost: wall time, not correctness.
+   * the probe's own three seed defects are recorded in the RESULT, not here.
