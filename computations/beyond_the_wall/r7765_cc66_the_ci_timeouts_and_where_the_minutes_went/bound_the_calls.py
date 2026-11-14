@@ -130,14 +130,17 @@ with tempfile.TemporaryDirectory() as d:
     open(os.path.join(work, 'f'), 'w').write('x')
     subprocess.run(['git', 'add', 'f'], cwd=work, check=True)
     subprocess.run(['git', 'commit', '-qm', 'c'], cwd=work, check=True)
-    # ⛭ THE FIXTURE HAD TO BE MADE REALISTIC, and my first one was not: I gave the bare remote NO refs
-    #   at all, which never happens in CI -- there the remote is the repository and only the CARRY ref is
-    #   missing.  On a refless remote `fetch()` fell through its return-code branch into an unguarded
-    #   `json.loads('')` and raised `JSONDecodeError`.  So the remote gets a branch first, and the carry
-    #   ref alone is absent.  ⌗ REPORTED, not fixed here: that fall-through is a real latent fragility --
-    #   `fetch()`'s "nobody has written one yet" path is recognised by git's stderr WORDING, and a fetch
-    #   that returns 0 without creating the ref reaches the parse with an empty string.  It is not what
-    #   hung CI and it is not this order's subject.
+    # ⛭ The remote gets a branch first, so the CARRY ref alone is absent -- which is the CI situation,
+    #   where the remote is the repository.
+    # ⛔ AND I WITHDRAW WHAT I FIRST WROTE HERE.  Two earlier runs of this row crashed in
+    #   `json.loads('')` inside `fetch()`, and I recorded that as "a real latent fragility" in `fetch()`
+    #   itself.  ** It was not.  It was MY OWN BROKEN BOUND: ** `git()`'s timeout was a default argument
+    #   bound at import, so setting `GIT_TIMEOUT` here did nothing, the 60s fake `git` ran under the 300s
+    #   default, returned 0, and the ref-absent branch was never reached.  Measured by hand afterwards, a
+    #   missing carry ref gives `rc=128` with `couldn't find remote ref`, which `fetch()` handles
+    #   correctly -- and this row now shows it returning `({}, None)`.  ⌗ What DOES survive, and is
+    #   intended: on a TIMEOUT the stderr matches neither clause, so `fetch()` raises instead of
+    #   reporting "nobody has written one yet" -- correct, because nothing was recorded.
     subprocess.run(['git', 'push', '-q', 'origin', 'HEAD:refs/heads/main'], cwd=work, check=True)
     led, tip = RC.fetch(work, 'origin')
     empty_ok = (led == {} and tip is None)
