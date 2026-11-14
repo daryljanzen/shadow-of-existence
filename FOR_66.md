@@ -209,6 +209,26 @@ tree; `bound_the_calls.py`'s `4` of `4` rows, including a **real** seeded hang t
 real `fetch()` caller; and `④`'s field-by-field comparison against a copy of the pre-change helper. **But
 that is my verification, not CI's, and the distinction is the point of this section.**
 
+⛭⛭ **UPDATE, AND IT CLOSES THE GAP ABOVE.** The merge of `main` at `r7765+cc66` (head `df8e73046`) put
+`scripts/` back in the push diff, so the scoped jobs finally ran on the change — **and the whole run
+concluded `success`**:
+
+| job | before | on the merge head |
+|---|---|---|
+| the three tolerance probes `A`/`B`/`C` | `success` | `success` |
+| **the tolerance perturbation** | ⛔ exit `2` (unmeasured), **record step hung `94` min** | ✔ **`success`, the whole job in `54` s** |
+| the tolerance perturbation (scope this push can have moved) | `skipped` | ✔ `success` |
+| the runner-read sweep | `skipped` | ✔ `success` |
+| **the run as a whole** | `cancelled` | ✔ **`success`** |
+
+⇒ *** **So CI has now exercised the bound, on the very job whose record step was hanging, and that step
+runs in under a minute where it previously ran `94` minutes and died.** The gap I reported above was real
+when I reported it and is now closed — by an ordinary merge rather than by anything I did to force it,
+which is why not pushing an empty commit to chase it was the right call. ***
+
+⌗ *I am leaving the gap's description in place rather than editing it away: it was the true state for
+about an hour, and why it closed is worth more than a tidy record.*
+
 ⌗ *The lesson I am taking, stated so it can be checked against my next revision: a change to shared
 `scripts/` belongs in the LAST push of a revision, not the first — or better, alone. I batched the
 corrections after being told to and still front-loaded the one diff that needed the run.*
