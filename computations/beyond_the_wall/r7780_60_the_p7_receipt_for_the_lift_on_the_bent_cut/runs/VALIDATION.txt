@@ -73,3 +73,33 @@ THE RUNNER-READ SWEEP -- CLEAN
   on the published head and the repair needs a history rewrite this session is not permitted to make.
   The RESULT names the cause and the routing.  Everything above is this machine's measurement of the
   tree the push would carry.
+
+================================================================================================
+ADDENDUM -- RE-VALIDATED ON THE PUSHED TREE (main merged through r7789)
+
+  The branch was rebuilt on main as ONE commit after this line's PR merged, so the tree validated
+  above and the tree pushed differ by main's own 73 commits plus the PDF rebuilt from the
+  regenerated appendix.  Everything was therefore measured again on the tree that was pushed:
+
+  THE FAST JOB -- GREEN.  "every step of the fast job passes on this tree", lists read from the
+  workflow and not remembered.
+  THE SCOPED SUITE -- 104 pass, 1 FAIL, 0 over timeout, 1064 s on this commit's own 105.
+  BOTH TOLERANCE COMPARISONS -- CLEAN, every receipt measured on both builds, 0 flagged, NOTHING
+  unmeasured, from three sequential builds of 53.
+  THE RUNNER-READ SWEEP -- CLEAN.
+
+⛔ AND THE ONE RED IS NOT THIS BRANCH'S, established rather than asserted
+
+  receipts/P15_CR_cosmology/C67_... fails its Ⓕ④ arm, a COUNT over how many of its 148 pinned
+  literals are absent from every paper.  It fails in 0 s, deterministically.
+  ⒜ Read against this branch's diff: this branch adds one INDEX row and one receipt and touches no
+     P15 receipt at all.
+  ⒝ RUN ON A PRISTINE WORKTREE OF origin/main: it fails there too, with one FAIL, the same arm.
+     ⌗ The worktree test is valid for this question because what is varied is the WORKING TREE's
+       content and not the history's depth -- the trap r7774 fell into does not apply.
+  ⒞ A fix to port: NONE EXISTS.  The file is identical on main and on all three active seats'
+     branches, and its last change on main was 69's P15 rewrite, which is the likely cause -- the
+     arm counts literals against the papers' text, and that rewrite moved the text.
+  ⇒ Red on the base, no fix anywhere to port, deterministic in 0 s.  THE PR'S ONE RE-RUN IS NOT
+    SPENT ON IT: a re-run cannot clear a deterministic count, and spending it would buy nothing.
+  ⇒ Routed to the seat that owns the receipt, with the numbers.  Not edited: it is not this line's.

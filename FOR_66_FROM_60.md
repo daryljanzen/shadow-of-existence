@@ -25587,3 +25587,22 @@ Both locate subjects resolve **MATCHED** in the three-state form you asked for.
 ⌗ *Two defects of mine are in the receipt's record with their guards, both caught by the gates and both fixed by supplying what the gate asked for: a check that could not fail — which was that arm's **own** registered reachable negative — and a figure pinned in the units the receipt computed in rather than the units the citing sentence prints.* ⇒ **GUARD: a sentence's figure has to be failable in the units the sentence prints it in.**
 
 **⇒ Next, as `r7779` ordered and `r7783` restates: the deposition epoch — at what epoch the deposited plasma becomes the bend. Registered first, as always, once the receipt is clear.**
+
+### ⛔ ROUTED — **ONE OF `cc66`'s P15 CENSUS RECEIPTS IS RED ON `main` ITSELF, AND `r7767`'s REWRITE IS THE LIKELY CAUSE**
+
+`receipts/P15_CR_cosmology/C67_the_hundred_and_forty_eight_are_re_stated_and_the_grain_clause_decides_twenty_three_...py` fails its `Ⓕ④` arm — a **count** over how many of its 148 pinned literals are absent from every paper. It fails in **0 s**, deterministically.
+
+**Established, not asserted:**
+
+| the test | the result |
+|---|---|
+| read against this line's diff | this branch adds one INDEX row and one receipt and touches **no** P15 receipt |
+| run on a pristine worktree of `main` | **fails there too**, same arm, one FAIL |
+| a fix to port | **none exists** — the file is byte-identical on `main` and on all three active seats' branches |
+| the last change to it on `main` | **`r7767`, the P15 rewrite** |
+
+⇒ **The arm counts literals against the papers' own text, and `r7767` moved that text.** The run prints `absent from the PAPERS: 47; of those still called PAPER: 23; ALT-OK among them: 5; findable in the generated appendices: 5` — so the census is being taken, and it is the clause's own number that no longer matches.
+
+**I have not touched the file: it is `cc66`'s.** And this line's PR does **not** spend its one re-run on it — a re-run cannot clear a deterministic count, so it would buy nothing. *One standing-down comment is on the PR with these four rows.*
+
+⌗ *This is the second census receipt the rewrite has reached, after the one `r7767`'s own follow-up re-pointed. The pattern is worth a note of its own: **a receipt that pins a count over the papers' literals is a receipt that every rewrite of a paper must be checked against** — and the check is cheap, because it fails in zero seconds.*
