@@ -108,71 +108,93 @@ check("⛭⛔⛭ `r7767` ** ② AND THE CLOCK IS WHAT MOVES IT, BY `37` POINTS: 
       f"receipt exits {pr.returncode}; leaf {rows.get('leaf')}, stacking {rows.get('stack')}, "
       f"leaf at the self-consistent point {rows.get('leaf_sc')}")
 
-# ------------------------------------------------------------------ ③ item 2: the comb, distance isolated
-TRI = [('cr_x_h686_L2000', 'plain (no leaf recombination, stacking distances)'),
-       ('cr_x_h686_L2000_leafrec1', 'leaf recombination, STACKING distances'),
-       ('cr_x_h686_L2000_leafrec1_distances', 'leaf recombination, LEAF distances')]
-print('\n      the comb with the distance ISOLATED (only the third pair member moves it):')
-print(f"      {'arm':52} {'comb':>9} {'l_A rep':>9} {'D_M':>11} {'r_s':>8}")
-got = {}
-for tag, lab in TRI:
-    c = comb_of('cc66_' + tag)
-    got[tag] = c
-    print(f"      {lab:52} {c['comb']:9.3f} {c['l_A']:9.3f} {c['D_M']:11.3f} {c['r_s']:8.3f}")
-d_comb = got['cr_x_h686_L2000_leafrec1_distances']['comb'] - got['cr_x_h686_L2000_leafrec1']['comb']
-d_DM = (got['cr_x_h686_L2000_leafrec1_distances']['D_M']
-        / got['cr_x_h686_L2000_leafrec1']['D_M'] - 1.0)
-check("⛭⛔⛭ `r7767` ** ③ ITEM 2: THE DISTANCE MOVES THE COMB BY `1.5` MULTIPOLES, AND `P15`'s PRINTED "
-      "`299.1` IS **ALREADY** THE LEAF-DISTANCE VALUE ** ⇒ *** holding the recombination solve fixed and "
-      "moving ONLY the distance to the leaf rate takes the comb from the stacking-distance value to "
-      "`299.06`, which is what `P15` l.813, l.884 and l.2065 print as `299.1`. ** So the order's premise "
-      "does not hold for this figure either: the comb `P15` carries was computed on the leaf-rate "
-      "distance already. ** *** ⌗ *The `D_M` shift is `−0.50` per cent, which is `r7753`'s pricing at "
-      "`z*` to three figures — the same number arriving through the spectrum*",
-      abs(got['cr_x_h686_L2000_leafrec1_distances']['comb'] - 299.06) < 0.05 and abs(d_DM + 0.00498) < 2e-4,
-      f"comb moves {d_comb:+.3f} multipoles when only the distance moves; D_M moves {100 * d_DM:+.4f} % "
-      f"(r7753 priced -0.49836 % at z*); the leaf-distance comb is "
-      f"{got['cr_x_h686_L2000_leafrec1_distances']['comb']:.3f} against the sky's 298.4")
+# ------------------------------------------------------------------ ③④ item 2, THE PAIR CORRECTED
+# ⛔ `r7767+cc66.2` THE BANK'S `_distances` MEANS "AT THE DISTANCES' POINT" -- A PARAMETER POINT -- AND
+#   NOT "THE LEAF-RATE DISTANCE".  The flag for the distance is `LEAFGEOM`, and `ACOUSTIC_two_arm.py`
+#   l.235 says so.  70's own manifest on the arm below settles it: *"arm of record + LEAFGEOM=1 (the
+#   projection distance on the leaf rate, radiation included)"*.  My first pair had neither member on
+#   the leaf rate and would have reported a move the pair did not contain.
+PAIR = [('cc66_cr_x_h686_L2000_leafrec1_distances', 'arm of record, STACKING-rate distance'),
+        ('r7749_leafgeom_nofit_L2000_cr', 'LEAFGEOM=1, LEAF-rate distance (70, r7749)')]
 
-# ------------------------------------------------------------------ ④ item 2: the angle-alone H0
-SKY_COMB = 298.4
-h0_ref = 68.6
-scale = {t: SKY_COMB / got[t]['comb'] for t, _ in TRI}
-check("⛭ `r7767` ** ④ AND THE ANGLE-ALONE `H₀` THE TWO DISTANCES IMPLY DIFFER BY `0.5` PER CENT, THE "
-      "SAME `0.5` ** ⇒ *the comb scales as `1/D_M` at fixed `r_s`, and `D_M` scales as `1/H₀` to `0.999` "
-      "(`r7751`'s sensitivity), so the angle-alone `H₀` ratio is the comb ratio to a part in `10³`. "
-      "Reported as a RATIO rather than as an `H₀` value, because turning it into one needs the fit the "
-      "order does not ask for and this receipt does not do*",
-      abs((scale['cr_x_h686_L2000_leafrec1'] / scale['cr_x_h686_L2000_leafrec1_distances']) - 1.0
-          - (-d_comb / got['cr_x_h686_L2000_leafrec1_distances']['comb'])) < 1e-4,
-      f"sky/comb on stacking distances {scale['cr_x_h686_L2000_leafrec1']:.6f}, on leaf distances "
-      f"{scale['cr_x_h686_L2000_leafrec1_distances']:.6f}; ratio - 1 = "
-      f"{scale['cr_x_h686_L2000_leafrec1'] / scale['cr_x_h686_L2000_leafrec1_distances'] - 1.0:+.5f}")
 
-# ------------------------------------------------------------------ ⑤ item 3: the low-multipole depths
-A = arm('p15_lowell_depths_leafrec1')
-B = arm('p15_lowell_depths_distances_leafrec1')
-shared = [k for k in ('armA_exact', 'armB_decoupled', 'armB_frozen') if k in A and k in B]
-print('\n      the low-multipole depths, projection on the stacking rate against the leaf rate:')
-print(f"      {'series':18} {'n':>4} {'max |rel move|':>15} {'at ell':>8}")
-moves = {}
-for k in shared:
-    a, b = np.asarray(A[k], float).ravel(), np.asarray(B[k], float).ravel()
-    n = min(a.size, b.size)
-    rel = np.abs(b[:n] / np.where(a[:n] != 0, a[:n], np.nan) - 1.0)
-    i = int(np.nanargmax(rel))
-    ells = np.asarray(A['ells'], float).ravel()
-    moves[k] = float(np.nanmax(rel))
-    print(f"      {k:18} {n:4d} {100 * moves[k]:14.4f}% {ells[i] if i < ells.size else -1:8.0f}")
-check("⛭⛔⛭ `r7767` ** ⑤ ITEM 3: THE LOW-MULTIPOLE DEPTHS **DO** MOVE WHEN THE PROJECTION TAKES THE LEAF "
-      "RATE, AND THIS IS THE ONE OF THE THREE THAT DOES ** ⇒ *** measured series by series on the two "
-      "banked arms that differ ONLY in the projection's distance. ** So of the order's three figures, the "
-      "damping signature cannot move (the distance cancels), the comb has already moved (`P15` prints the "
-      "leaf value), and the low-multipole depths are the live one. ** *** ⌗ *Reported as a relative move "
-      "with no significance attached: the arms carry no uncertainty and `R3⑦` registered that I would say "
-      "so rather than invent one*",
-      len(shared) >= 2 and all(np.isfinite(v) for v in moves.values()),
-      '; '.join(f'{k} {100 * v:.4f}%' for k, v in moves.items()))
+def peaks_subgrid(ls, Dl, n=4):
+    """the receipt's locator, then a PARABOLIC refinement -- because a `dl = 2` grid quantises the comb
+    to integers, which is the grid speaking and not the spectrum.  `⑧` asserts the refinement moved it."""
+    q = argrelextrema(Dl, np.greater, order=3)[0][:n]
+    out = []
+    for i in q:
+        if 0 < i < ls.size - 1:
+            y0, y1, y2 = Dl[i - 1], Dl[i], Dl[i + 1]
+            den = (y0 - 2.0 * y1 + y2)
+            shift = 0.5 * (y0 - y2) / den if den != 0 else 0.0
+            out.append(float(ls[i] + shift * (ls[i + 1] - ls[i])))
+        else:
+            out.append(float(ls[i]))
+    return out
+
+
+print("\n      item 2, the distance ISOLATED -- same point, same r_s, LEAFGEOM the only difference:")
+print(f"      {'arm':46} {'comb(sub-grid)':>15} {'comb(grid)':>11} {'l_A':>9} {'D_M':>11} {'r_s':>9}")
+G = {}
+for tag, lab in PAIR:
+    z = arm(tag)
+    ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
+    P = peaks_subgrid(ls, Dl)
+    Pg = [float(ls[i]) for i in argrelextrema(Dl, np.greater, order=3)[0][:4]]
+    G[tag] = dict(comb=fit_comb(P)[0], comb_grid=fit_comb(Pg)[0], l_A=float(z['l_A']),
+                  D_M=float(z['D_M']), r_s=float(z['r_s']), P=P)
+    g = G[tag]
+    print(f"      {lab:46} {g['comb']:15.3f} {g['comb_grid']:11.3f} {g['l_A']:9.3f} "
+          f"{g['D_M']:11.3f} {g['r_s']:9.3f}")
+A_, B_ = G[PAIR[0][0]], G[PAIR[1][0]]
+d_comb = B_['comb'] / A_['comb'] - 1.0
+d_DM = B_['D_M'] / A_['D_M'] - 1.0
+d_lA = B_['l_A'] / A_['l_A'] - 1.0
+check("⛭⛔⛭ `r7767` ** ③ ITEM 2, AND THE ANSWER IS NOT THE ONE THE RULER PREDICTS: `ℓ_A` MOVES "
+      "`−0.498` PER CENT AND THE FITTED COMB MOVES `−0.055` — **NINE TIMES LESS** ** ⇒ *** the two arms "
+      "sit at the SAME point with the SAME `r_s = 145.328`, so `LEAFGEOM` is the only difference and "
+      "`D_M` is the only input that moves: `−0.4984` per cent, which is `r7753`'s priced `−0.49836` per "
+      "cent at `z*` to four figures. The REPORTED ruler `ℓ_A = πD_M/r_s` follows it exactly, "
+      "`302.889 → 301.380`. ** But the comb FITTED to where the peaks actually land moves only "
+      "`−0.055` per cent: the peaks do not follow the ruler. ** *** ⇒ **So `P15`'s `299.1` is a fitted "
+      "comb, and on the one rate it becomes about `298.94`, against the sky's `298.4` — `+0.18` per cent "
+      "where it was `+0.23`. A slight improvement, not the half-per-cent move the ruler would predict.** "
+      "⌷ *My draft of this row claimed the comb follows `D_M` and would have printed `297.6`. It does "
+      "not, and the row caught it. Only the RATIO between these two arms is quoted, because this "
+      "locator's absolute comb (`296.9`) is not the paper's seven-window matched locator's `299.1`.*",
+      abs(d_DM + 0.004984) < 5e-5 and abs(d_lA + 0.004984) < 5e-4
+      and abs(d_comb) < 0.002 and abs(d_comb / d_DM) < 0.3,
+      f"D_M {100 * d_DM:+.4f} % (r7753 priced -0.49836 %); l_A {100 * d_lA:+.4f} %; fitted comb "
+      f"{100 * d_comb:+.4f} %, which is {abs(d_comb / d_DM):.2f} of the ruler's move; applying the comb "
+      f"ratio to the paper's 299.1 gives {299.1 * (1.0 + d_comb):.2f} against the sky's 298.4")
+
+check("⛭⛔ `r7767` ** ④ AND THE SUB-GRID LOCATOR WAS NECESSARY: THE RAW GRID QUANTISES THE COMB TO "
+      "INTEGERS ** ⇒ *my first pass read `298.000` and `297.000` off a `Δℓ = 2` grid and I nearly "
+      "reported them. The parabolic refinement moves each comb off its node, and the row asserts the "
+      "refinement CHANGED the answer rather than trusting that it did*",
+      abs(A_['comb'] - A_['comb_grid']) > 1e-6 and abs(B_['comb'] - B_['comb_grid']) > 1e-6
+      and abs(A_['comb_grid'] - round(A_['comb_grid'])) < 1e-9,
+      f"stacking arm: grid {A_['comb_grid']:.6f} -> sub-grid {A_['comb']:.3f}; leaf arm: grid "
+      f"{B_['comb_grid']:.6f} -> sub-grid {B_['comb']:.3f}")
+
+# ------------------------------------------------------------------ ⑤ item 3: it needs a run, and why
+dep = {t: arm(t) for t in ('p15_lowell_depths_leafrec1', 'p15_lowell_depths_distances_leafrec1')}
+man = {t: str(v['manifest']) for t, v in dep.items()}
+is_point_pair = ("the distances' point" in man['p15_lowell_depths_distances_leafrec1']
+                 and 'the refit point' in man['p15_lowell_depths_distances_leafrec1'])
+lg_ls = np.asarray(arm('r7749_leafgeom_nofit_L2000_cr')['ls'], float)
+check("⛭⛔⛭ `r7767` ** ⑤ ITEM 3 CANNOT BE ANSWERED FROM THE BANK, AND I SAY SO RATHER THAN USING THE "
+      "PAIR THAT LOOKS RIGHT ** ⇒ *** the two `p15_lowell_depths_*` arms differ by **PARAMETER POINT**, "
+      "not by projection: their own manifests call them *\"the distances' point P15's low-ℓ section stays "
+      "on\"* and *\"the refit point\"*. Comparing them measures a refit, not the projection's rate — **I "
+      "measured `1.94` per cent at `ℓ = 3` from that pair before reading the manifests, and that number "
+      "is withdrawn.** And the one arm that DOES carry the projection on the leaf rate starts at "
+      "`ℓ = 100`, so it has no low-ℓ coverage at all. ** ⇒ Item 3 needs a low-ℓ run with the "
+      "projection on the leaf rate; it is not in the bank and no banked pair stands in for it. ** *** ",
+      is_point_pair and lg_ls.min() >= 100.0,
+      f"the depths pair is two points, not two projections: {is_point_pair}; the LEAFGEOM arm's ells "
+      f"start at {lg_ls.min():.0f}, so no low-l coverage")
 
 print('\n' + '=' * 100)
 print(f"  {'OK  ' if not FAILS else 'FAIL'}  {5 - len(FAILS)} of 5 rows;  "
