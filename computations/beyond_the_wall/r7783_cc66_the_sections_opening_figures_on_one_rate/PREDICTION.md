@@ -93,3 +93,65 @@ No claim about which configuration the section should open on — that is 69's c
 
 R0 moves under any new polarisation bank. R1–R3 move under either banked TT arm. R4 moves under the
 run or under the banked refit arm. R5 moves under the run's EE and TE.
+
+---
+
+# AMENDMENT `r7783+cc66.8` — written after the first run, which found an error in work I had already landed
+
+## ⛔⛔ THE LANDED `298.94` IS WRONG. THE FIGURE IS `298.5`.
+
+**This is my error, in `r7779+cc66.3`, and 69 has already published it at three sites.**
+
+`P15`'s printed comb of $299.1$ **and** its phase intercept $-0.2488$ are the **four-peak** fit through
+the matched seven-window locator. Confirmed three ways: the comb receipt's own table prints
+$299.057$ and $-0.2488$ in its four-peak columns against $295.782$ and $-0.2331$ in its three-peak
+ones; that receipt's own prose says *"the pair is $-0.2488\,\pi$ … on the four-peak fit"*; and a
+by-hand least squares on the four printed peaks returns $299.058$ and $-0.2488$ exactly.
+
+**My `r7779+cc66.3` comb receipt measured a *three-peak sub-grid* comb on a *different* locator** —
+`argrelextrema(order=3)` with a parabolic refinement on the raw grid, no lensing ratio, no binning, no
+seven-window average — got a move of $-0.0549\,\%$, and then **applied that move to the paper's
+$299.1$**, which is a different estimator. That gave $298.94$. Gate ⑧ pinned it and 69 landed it.
+
+**Measured through the paper's own locator, on the same two arms, with the four-peak fit the paper's
+own sentence uses:**
+
+| | arm of record | one rate | move |
+|---|---|---|---|
+| comb, **four peaks** (the paper's) | $299.058$ | $\mathbf{298.527}$ | $-0.177\,\%$ |
+| comb, three peaks | $295.780$ | $295.500$ | $-0.095\,\%$ |
+| $\phi/\pi$, **four peaks** (the paper's) | $-0.2488$ | $\mathbf{-0.2454}$ | |
+| $\phi/\pi$, three peaks | $-0.2331$ | $-0.2308$ | |
+
+**So the replacement for $299.1$ is $298.5$ — read off the one-rate arm directly, same locator, same
+fit — not $298.94$, and not $298.57$ either, which is what scaling the printed figure by the right
+move would give.** *Reading the arm's own figure is the correct operation; scaling a printed number by
+a move measured on another estimator was the flawed step, and that is the lesson, not the arithmetic.*
+
+## Three registered rows came back red, and each is a finding rather than a defect
+
+### R1 — the fourth peak moves $1.226$ multipoles, past the registered bound
+
+I registered *under one multipole each*. Peaks 1–3 move $+0.18$, $+0.69$, $-0.38$; **peak 4 moves
+$-1.226$**, and it moves *down* while 1 and 2 move up. The arm of record reproduces the paper's four
+peaks exactly ($220.03$, $536.25$, $811.59$, $1125.11$), which is what establishes the locator is the
+paper's. **Reported against the row as registered.**
+
+### R2 — my comparison read the wrong column, not the wrong arm
+
+The row failed because I compared `f3` (three peaks, in radians) against the paper's $-0.2488$
+(four peaks, in units of $\pi$). Two mismatches at once. Corrected above; the measurement was never in
+doubt.
+
+### R3 — and the height ratios move far more than registered, **towards the sky**
+
+I registered *within $0.01$*. Measured: $P_1/P_2$ goes $2.2909 \to 2.2073$ ($-3.65\,\%$) and
+$P_1/P_3$ goes $2.3488 \to 2.2491$ ($-4.25\,\%$). **The sky's are $2.221$ and $2.262$.** So on the one
+rate the arm's height ratios move from *above* the sky to just *below* it — and the phase intercept
+moves from $-0.2488$ to $-0.2454$ against the sky's $-0.2448$, also towards it. ⛭ **No significance is
+computed for that and none is implied**; it is reported as the measurement it is.
+
+### R4/R5 — the fourth feature
+
+R0 held: four polarisation banks in the tree, `LEAFGEOM=1` on none. The run is launched, idempotent,
+and R4/R5 report their own state rather than guessing — exactly as registered.
