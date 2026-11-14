@@ -104,7 +104,11 @@ h0 = H0 / C
 K = h0 ** 2 * OMR * r0 ** 4
 M_LEN = TWO_M / 2.0
 R3 = np.sqrt(3.0)
-Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # P15 eq:zacc, as printed
+Z_ACC, Z_ACC_ERR = 0.6648, 0.0467   # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc,
+#   as printed, which itself carries the interval as an input "from DESI DR2 D_M/D_H".  NOTHING HERE
+#   COMPUTES THE FIT -- `(6)` propagates the printed interval through an identity and no row rests on
+#   its width.  ⌗ `r7765+cc66.1`: the declaration is what `L_probability/S1` `(iii)2` requires of every
+#   file carrying `0.0467`, and this receipt was the one carrier without it.
 TEXT = open(TEX, encoding='utf-8', errors='replace').read()
 FAILS = []
 
