@@ -15,6 +15,145 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7779+cc66` — **ITEM ③ ANSWERS A FOURTH WAY: THE LOW-ℓ DEPTHS MOVE **FOUR TIMES MORE** THAN THEIR RULER, WITH THE SIGN ALTERNATING. THE COMB RECEIPT IS MINTED. THE GAUSSIAN SURVIVES. AND TWO OF YOUR THREE PAIRS WERE BLOB-CONFOUNDED**
+
+**Items ①, ② and ③ are discharged and pushed. ④ is not started** — ①–③ did not leave room, and ④ is
+the one item of the four that needs no correction to its premise, so it is the cleanest to carry.
+
+⛔ **TWO CORRECTIONS I OWE YOU BEFORE ANY RESULT.**
+
+ 1. **My `r7767` reply said item 3 *"needs a run the bank cannot stand in for"*. With the switch named
+    that is wrong, and no run was needed.** Four clock-only pairs were already banked, at **both**
+    parameter points: arm A at the distances' point and at the refit point
+    (`p15_lowell_depths_armA_leafpert_leafrec1.npz`, `__L` against `__one_clock_gate`), and arm B
+    frozen and decoupled at the refit point (`p15_lowell_depths_leafpert_leafrec1.npz`). Each sits
+    inside a single `.npz` with one instrument blob and the same per-row numerics. What was true is
+    narrower: the pair *I* had looked at differed by parameter point, and I could not identify the
+    switch. **Your naming it closed the question without a run.**
+ 2. ⛔ **The one pair your order names is the one pair that is NOT clock-only — and so is the pair for
+    item ②.** `distances__armB_*__L` carries blob `c66bfff27…`; the one-clock leg at the same point is
+    banked separately at `5936a51b8…`. The item-② pair is the same shape: `LEAFGEOM` unset was
+    produced by `d8b4a62a0…` and `LEAFGEOM=1` by `e5319ce49…`. **Both were found by reading the
+    configs, which is the method your `r7779` ruling on `_distances` endorsed, and neither is
+    discarded: both are disposed of by test rather than by assumption.** For the low-ℓ pair, normalise
+    both blobs' ASTs for `SPLITCLOCK` unset — rename `_Hdyn → Hc_of`, reduce every `IfExp` and `If`
+    on `_SPLITL` to its false branch, drop the `_SPLITL`/`_Hdyn` bindings, reduce `(A or _SPLITL)` to
+    `A` — and **the two normalised trees are identical**: with the switch unset the newer blob *is*
+    the older program. An independent runtime arm agrees, every rate object the dynamics read
+    bit-identical. For the item-② pair the whole executable difference falls in four named classes
+    (the `COMBRHO` plumbing where `_kbs is kb`, its mutual-exclusion `raise`, the `'COMBRHO'` config
+    key, the `SRCFIELD` output blocks) and reducing by exactly those four makes the newer blob's AST
+    identical to the older's.
+
+---
+
+### ① **THE LOW-ℓ DEPTHS DO MOVE — AND THEY ARE THE FOURTH DIFFERENT ANSWER IN THIS SET**
+
+**9 of 10 rows. The one red is the registered direction, and the red IS the result.** I registered
+that the depths would move by *less* than the $0.4984\,\%$ their projection distance moves. **They
+move by up to $1.976\,\%$ — four times more — and the sign alternates.**
+
+| pair | $\ell=2$ | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| arm A, distances' point | $-1.021$ | $+1.287$ | $-1.614$ | $-1.617$ | $-0.362$ | $-0.284$ | $+0.191$ |
+| arm A, refit point | $-1.112$ | $+1.240$ | $-1.636$ | $-1.688$ | $-0.450$ | $-0.284$ | $+0.040$ |
+| arm B frozen, refit point | $-1.430$ | $+1.547$ | $-1.333$ | $-1.976$ | $-0.738$ | $-0.102$ | $+0.271$ |
+| arm B decoupled, refit point | $-1.077$ | $+1.549$ | $-1.457$ | $-1.557$ | $-0.408$ | $-0.041$ | $-0.030$ |
+
+*(per cent, $({\rm L})/{\rm one\ rate} - 1$; the banks round to 4 decimals, so the grain is
+$0.014\,\%$ and these are $70$–$140\times$ it)*
+
+**So the four figures in this set answer four different ways:** the damping signature **cannot** move
+(the projection cancels identically); $\ell_A$ moves **exactly with** its ruler; the fitted comb moves
+**nine times less**; the low-ℓ depths move **four times more, with alternating sign**. *A single
+distance rescaling cannot produce that pattern — it is a reshaping of the deficit.*
+
+**And the recovery multipole does not move:** first $\ell \ge 5$ with depth $\ge 0.99$ is $\ell = 8$
+under both clocks in all four pairs. **The clock reshapes the deficit without moving where it closes.**
+
+⛭ **It is the PROJECTION and not the dynamics** (post-hoc, and labelled so). Arm A carries CAMB's
+leaf-rate dynamics in **both** rows, so its pair moves the projection clock alone — and **the
+projection clock alone moves $\ell = 5$ by $1.688\,\%$, already $3.4\times$ its own distance, which is
+$85\,\%$ of the full move.** ⛔ The remainder is *not* a clean dynamics measurement: arm A and arm B
+are different dynamics codes, so it bounds the dynamics share rather than isolating it.
+
+⛔ **One thing I do not explain, and am not asserting a mechanism for.** The amplification
+$|{\rm d}\log{\rm depth}/{\rm d}\log D_M|$ runs $2.87, -3.10, 2.67, 3.96, 1.48$ at $\ell = 2\dots6$.
+A sampling-slope argument would want it to follow the depth's logarithmic slope in $\ell$
+($-0.19, -0.62, 1.24, 2.33, 1.13$); it does so in rough magnitude at $\ell = 4,5$ and **not at all** at
+$\ell = 2,3$, where the slope never changes sign while the amplification reverses at $\ell = 3$ alone.
+**The $\ell=3$ sign reversal is yours to route if you want it chased.**
+
+⌗ **One thing outside the order, for you.** The receipt's frozen/decoupled standard is $3\,\%$. At the
+**refit** point these banks sit at $3.39\,\%$ under (L) and $3.51\,\%$ under the one rate — **above the
+standard under both clocks**. My registered condition (*the one rate exceeds 3 % where (L) does not*)
+is therefore **not** met, so the clock does not break the cross-validation; but the $3\,\%$ figure was
+set at the receipt's own point and build and does not hold at this one.
+
+### ② **THE COMB RECEIPT IS MINTED, AND `298.94` IS NOW QUOTABLE**
+
+`receipts/P15_CR_cosmology/P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94.py` — **10 gates, 0 FAIL, seconds.** INDEX row at the
+end of `P15`'s block (9 pipes, 8 columns), appendices regenerated, `CR_cosmology.pdf` recompiled,
+quote-pin class green (no new key, no stale entry, 2786 against 2786).
+
+Same point, `LEAFSCALES=1` on both legs so $r_s = 145.3281$ Mpc is identical **to the bit**:
+$D_M\ 14011.457 \to 13941.629$, $\ell_A\ 302.889 \to 301.380$ ($-0.4984\,\%$ both), **comb
+$296.904 \to 296.741$ ($-0.0549\,\%$), ratio $9.07$**. So $299.1 \to \mathbf{298.94}$ — and
+$\mathbf{297.6}$ is what scaling by $\ell_A$ would have given, which is why gate ⑧ pins the published
+figure by parsing it out of `CR_cosmology.tex` rather than retyping it.
+
+⛔ **Gate ⑦ exists because my own first reading of this pair came off the grid.** On the raw
+$\Delta\ell = 2$ grid the comb reads $297.000$ on **both** legs — "it does not move at all", which is
+the grid speaking. ⑦ asserts the parabolic refinement changed the answer, so ⑥ cannot be passed by a
+locator that cannot see the move. **Failability measured, not asserted:** a $1+3\times10^{-3}$ stretch
+of the leaf arm's multipole axis reddens ⑥⑦⑧ and leaves ①–⑤ and ⑨ green.
+
+### ③ **THE GAUSSIAN RESIDUAL SURVIVES ON THE ONE RATE — AND YOUR TWO RESIDUALS ARE TWO OBJECTS THAT RUN OPPOSITE WAYS**
+
+**8 of 8 rows.** ⛔ **But reading the `r7749` arms' residuals cannot answer the Gaussian's question,
+because no CR arm spectrum enters the Gaussian at all.** The joint fit's baseline is the banked ΛCDM
+control and its target is that baseline times an **analytic** $S(\ell) = \exp[-(r^2-1)(\ell/\ell_D)^2]$
+with $r$ and $\ell_D$ declared INPUTS. `K = R**2 - 1` with $R$ the damping-scale **ratio**, and there
+are **zero** occurrences of a distance in either the joint fit or the damping receipt it inherits $R$
+from. **So the only way the projection reaches it is through $\ell_D$, a multipole.**
+
+$\ell_D$ moves with $D_M$: $1362 \to 1355.21$, a shift of $6.788$ multipoles. Re-running the receipt's
+**own source** with its one `INPUT` line rewritten — so the two runs differ in $\ell_D$ and in nothing
+else, and the harness reproduces the published $1.4967$ **exactly** at the unshifted value:
+
+| | $\ell_D$ | $\Delta n_s$ | $\chi^2/{\rm bin}$ after the tilt | absorbed | correlation |
+|---|---|---|---|---|---|
+| as published | $1362.00$ | $-0.08304$ | $1.4967$ | $69.8\,\%$ | $1.000000$ |
+| **on the one rate** | $1355.21$ | $-0.08383$ | $\mathbf{1.5238}$ | $69.8\,\%$ | $1.000000$ |
+
+**Present, and $1.81\,\%$ larger — still above both of `C62`'s bounds, still the predicted shape to
+$1.000000$, with the tilt absorbing the same $69.8\,\%$.**
+
+**And the arms, read as you asked, give a sharper answer than "unrelated":** a plain power law fits
+their residual **better** than the Gaussian does ($+0.851$ against $+0.498$), and once the power law
+is projected out **the Gaussian's partial correlation is $-0.789$** — so in the part a tilt cannot
+absorb, the two residuals run in **opposite** directions.
+
+⛔ **Two of my own rows were badly posed and I am recording both.** R6 registered "weak, below $0.5$"
+and measured $+0.4977$ — it cleared its licence by $0.002$, which is not a verdict, so R8 was added
+post-hoc to ask the question properly. And R8's own test was wrong too: I assumed "the Gaussian adds
+nothing" would read as a partial correlation near **zero** and wrote $|{\rm partial}| \le |{\rm raw}|$;
+it reads as $-0.79$.
+
+---
+
+⛭ **THE RULE THIS REVISION COST ME THREE TIMES, WRITTEN DOWN.** Item ①'s `R2` asked that every
+differing executable line "name a split token", which fails any rename regardless of inertness. Item
+②'s gate ⑧ first matched a *different* comb in the paper (`comb at $49.4$`) and then demanded every
+three-digit comb site read $299.1$, which is false. Item ③'s `R1` searched for `\bchi\b` and counted
+twenty-one `chi^2` tokens. **All three are one error: a test asserting something stronger and
+incidental instead of the claim.** The rule now in the item-② receipt: *a pin names what it pins, and
+its failure condition must be the claim's negation and nothing wider.*
+
+**④ is not started.** `θ*` on the corpus's own definition, on the one rate, PO-87's WORK (2) — I have
+touched none of it, so nothing is half-done. **If you want it before the `sec:refit-bound` rewrite,
+say so and it is the next thing I register.**
+
 ## ⚑ `r7767+cc66` — **ALL THREE FIGURES MEASURED, AND ALL THREE ANSWER DIFFERENTLY FROM THE PREMISE: ONE CANNOT MOVE, ONE MOVES NINE TIMES LESS THAN ITS RULER, AND ONE NEEDS A RUN THE BANK CANNOT STAND IN FOR. PLUS THE EIGHT `sec:refit-bound` SITES**
 
 Registered at `.0` before a figure was read; amended at `.1` when the registration's own question turned

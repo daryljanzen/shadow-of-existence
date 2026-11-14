@@ -1,0 +1,50 @@
+===================================================================================================
+R1  THE GAUSSIAN'S AMPLITUDE IS DISTANCE-FREE, SO THE PROJECTION CANNOT MOVE IT
+===================================================================================================
+    the signature:        K = R**2 - 1 with R the damping-scale RATIO  -> ['K = R**2 - 1']
+    the baseline:         banked LCDM control present = True; any CR arm named = False
+    distances in the fit: occurrences of D_M / D_C / chi in the receipt = 0
+    and the damping receipt it inherits R from mentions D_M/D_C 0 times
+PASS  R1  K is built from the ratio R alone, the baseline is the banked control, no CR arm is named, and no distance appears in either the joint fit or the damping receipt it takes R from
+
+===================================================================================================
+R2  BUT l_D IS A MULTIPOLE, SO IT MOVES WITH THE PROJECTION BY -0.4984 %
+===================================================================================================
+    D_M 14011.4567 -> 13941.6290 Mpc, a move of -0.4984 %
+    l_D 1362.00 -> 1355.2123, a shift of 6.7877 multipoles
+PASS  R2  l_D moves 6.7877 multipoles, against the 6.79 registered from the pinned -0.4984 % distance move
+
+===================================================================================================
+R3/R4/R5  THE JOINT FIT RE-RUN AT THE SHIFTED l_D -- SAME MACHINERY, l_D THE ONLY CHANGE
+===================================================================================================
+           l_D  rc  bins   Delta n_s   chi2/bin  absorbed       corr
+       1362.00   0   171    -0.08304     1.4967      69.8        1.0
+       1355.21   0   171    -0.08383     1.5238      69.8        1.0
+    chi2/bin moves 1.811 % under the shift; C62's two bounds are 0.92 (instrument route) and 0.26 (data-shape route)
+PASS  R3  the residual SURVIVES on the one rate: 1.5238 chi^2/bin after the tilt against the published 1.4967, a move of 1.811 %, and above BOTH of C62's bounds
+PASS  R4  and it is still the predicted SHAPE: correlation 1.0 with its own analytic S(l) - A(l/1000)^dn
+PASS  R5  the tilt still absorbs 69.8% against the published 69.8%, a move of 0.0 percentage points
+
+===================================================================================================
+R6  AND THE r7749 ARMS' RESIDUAL IS NOT THIS GAUSSIAN -- the order's own reading, measured
+===================================================================================================
+    LEAFGEOM=1, nofit              residual vs the Gaussian template over 185 bins: correlation +0.4977
+    LEAFGEOM=1, refit (verified)   residual vs the Gaussian template over 185 bins: correlation +0.4799
+PASS  R6  the arms' residual is not the damping-scale Gaussian on the registered threshold -- LEAFGEOM=1, nofit: +0.498, LEAFGEOM=1, refit (verified): +0.480 -- BUT IT PASSES BY 0.002 AND THAT IS NOT A VERDICT, SO R8 TESTS IT PROPERLY
+
+===================================================================================================
+R8  POST-HOC, BECAUSE R6 PASSED BY 0.002: DOES THE GAUSSIAN EXPLAIN THE ARMS' RESIDUAL AT
+    ALL, BEYOND WHAT ANY SMOOTH TEMPLATE ON THE SAME WINDOW WOULD?
+===================================================================================================
+    ⛔ Two smooth, nearly monotone functions of l over 185 bins share a broad shape by
+       construction, so a raw correlation near 0.5 is close to what a null template gives.
+       The claim that matters is whether the GAUSSIAN adds anything once a plain power law is
+       allowed -- which is exactly the question `no tilt removes it` asks, run the other way.
+    LEAFGEOM=1, nofit              raw vs Gaussian +0.4977; raw vs the PLAIN POWER LAW +0.8513; partial, power law removed, -0.7885
+    LEAFGEOM=1, refit (verified)   raw vs Gaussian +0.4799; raw vs the PLAIN POWER LAW +0.8385; partial, power law removed, -0.7835
+PASS  R8  the raw 0.49 IS shared smoothness -- a plain power law fits the arms' residual BETTER (LEAFGEOM=1, nofit: power law +0.851 against Gaussian +0.498, LEAFGEOM=1, refit (verified): power law +0.839 against Gaussian +0.480) -- and once the power law is projected out the Gaussian's partial correlation is LARGE and NEGATIVE (-0.789, -0.783), so in the part a tilt cannot absorb the two residuals run in OPPOSITE directions. ⛭ That is a sharper separation than the registration asked for, and it was not predicted: I expected a partial correlation near zero and wrote the test that way
+
+===================================================================================================
+PASS  R7  no significance against the sky is computed; R8 is POST-HOC and labelled so; C62's two routes are not re-adjudicated; the shift is applied to l_D only, on R1's licence
+8 of 8 rows hold
+===================================================================================================
