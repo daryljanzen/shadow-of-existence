@@ -1,0 +1,75 @@
+r7780 (60) -- THE VALIDATION
+
+  HEAD:                       8eedaee71323bfba96ef9194e0b2298049f91e31
+  origin/main:                d2b48d9ebbc0d06923eea6c92aecacec5ceb2b6a
+  behind / ahead:             0 5
+  shallow:                    false     commits from HEAD: 8048
+
+THE RECEIPT ITSELF
+
+  14 checks, ALL PASS, run from its own directory.
+  AND THE PIN IS VERIFIED FAILABLE: a copy with K perturbed by two per cent turns the excursion
+  check red and the receipt exits 1.  The copy was deleted; it is not in the tree.
+  ⌗ A pin nobody has watched fail is a print statement with a comparison operator in it.
+
+THE SCOPES, SPLIT, WITH THE REASON WRITTEN
+
+  this line's own four commits, 9602ae740^..1fcafc746 :  reads 1   tolerance  53   suite 141
+  the merged range, spanning two of 69's merges        :  reads 6   tolerance 106   suite 370
+
+  Validated on THIS LINE'S OWN scope.  The merged range is larger because it spans 69's r7779 and
+  r7781 merges, whose own contribution 69 gated on main before merging it; re-running those here is
+  the reassurance the standing rule forbids.  The suite's 141 includes this receipt and every
+  receipt that reads it.
+
+THE FAST JOB -- GREEN
+
+  "every step of the fast job passes on this tree", on the lists READ from the workflow.
+  ⛭ It was RED on the first run, naming five gates, and every one was this revision's own:
+      check_receipts / lint_assertions  -- a HOLLOW ASSERTION: check(..., True) for arm ⑧
+      check_cannot_fail                 -- the same assertion, counted by the ratchet
+      check_figures_pinned              -- the cited figure pinned in the WRONG UNITS
+      check_pdf_current                 -- P7's PDF older than the appendix this revision moved
+    Each was fixed by supplying what the gate asked for and none by exempting a file:
+      ⑧ is now PRINTED as a scope statement (SCOPE-AS-CHECK), not checked;
+      the excess is pinned in parts per ten thousand, the units the citing sentence prints;
+      P7's PDF was recompiled (two pdflatex passes) and committed WITH the appendix.
+    ⌗ The hollow assertion was arm ⑧'s OWN registered reachable negative.  The registration named
+      "a gate that cannot fail" as what would make ⑧ fail, and then ⑧ was written as one.
+
+THE PLAIN SUITE -- 141 PASS, 0 FAIL, 0 OVER TIMEOUT, 1086 s wall
+
+  ⛭ One red on the first run, L_probability/S47, and it was downstream of the hollow assertion
+    above: its arm runs a set of receipts and requires each to exit 0, and the ledger-counting arms
+    read a cannot-fail check as a change in the tree.  On the fixed tree S47 passes in 211 s, run
+    alone and traced rather than assumed.
+
+THE TOLERANCE PRE-SWEEP -- THREE BUILDS, BOTH COMPARISONS CLEAN, NOTHING UNMEASURED
+
+  tA plain, tB --threads 4, tC --threads 2 --coretype Prescott, strictly sequential, 53 of 53 probed.
+    tA vs tB   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+    tA vs tC   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+  0 flagged sites, 0 at the precision floor, ZERO unmeasured.
+
+THE RUNNER-READ SWEEP -- CLEAN
+
+  1 receipt traced from its own directory: 0 flagged, 0 triage, 0 red under the trace, 0 over budget.
+
+⛔ A PROCESS DEFECT OF MINE IN THIS VALIDATION, RECORDED BECAUSE IT WOULD HAVE BEEN INVISIBLE
+
+  I launched the SECOND validation chain while the FIRST was still running, so the first chain's
+  three tolerance builds STRADDLED A TREE CHANGE: build A finished before the gate fixes and the
+  merge, builds B and C after them.
+  ⇒ GUARD: ** A BUILD COMPARISON WHOSE BUILDS WERE TAKEN ON DIFFERENT TREES IS NOT A COMPARISON. **
+    It compares two trees and reports the difference as a build perturbation.
+  ⌗ Nothing was read from that chain.  The verdicts above are the second chain's, whose three builds
+    ran sequentially on one tree, with the first chain finished before its own builds began.
+  ⌗ And the two chains contended: the second chain's fast job ran beside the first chain's builds.
+    That is the contention this line has already measured crossing a long receipt's budget.
+
+⛔ WHAT IS NOT VALIDATED, AND CANNOT BE FROM HERE
+
+  CI's own verdict on this revision, because the branch cannot be pushed: the collision gate is red
+  on the published head and the repair needs a history rewrite this session is not permitted to make.
+  The RESULT names the cause and the routing.  Everything above is this machine's measurement of the
+  tree the push would carry.
