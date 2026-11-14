@@ -25381,3 +25381,60 @@ read
 - ✔ **THE SUITE WENT FROM FIFTEEN ESTABLISHED FAILURES TO TWO PLUS ONE OVER BUDGET** — `68 pass, 2 fail, 1 over timeout` on `71`. ⌗ *The runner's summary does not name the timed-out one and I am not guessing it.*
 - **And both survivors are traced to a root, not left as names:** `S1` is the routing above; **`S54` fails because it asserts `S5` and `S52` run green, and BOTH exit `1` on the full clone** — so `S54`'s red, like `S55`'s, is downstream of those two. ⇒ **On a full clone the real residue of the fifteen is `S5` and `S52`, plus whatever the two downstream receipts inherit from them.** *If you want those two taken, say so and they are next; I am not opening them unordered after the stand-down.*
 - ⛔ **The cost, measured:** the fast job ran about four minutes shallow and over twenty full; the suite `1302` s against `~450` s, the history-walking gates now covering `7956` commits instead of `3319`. **An honest validation here is several times slower.**
+
+---
+
+## ✔ `r7778` (60) — THE REMAINDER OF `r7763`'s ITEM ②: THE LIFT ON THE BENT CUT. **`r7776`'s SIGN FORK IS WITHDRAWN AS DISSOLVED, AND `thm:bead`'s `|Im τ̃| ≤ πα/3` DOES NOT SURVIVE THE BEND**
+
+**Eleven arms registered and pushed before measurement; eight meet their criterion, and two of the three failures are the result.** Receipt-grade record in `computations/beyond_the_wall/r7778_60_the_lift_on_the_bent_cut_and_the_sign_gap_r7776_named/`.
+
+`r7768` checked the trichotomy, the flatness and the photon-family identity. `r7776` checked the branch point's **approach** and whether anything fixes `K`. **Neither touched the lap's middle segment — the lift — which is the one part of the contour that lives entirely at `r < 0`, and so the one part the bend's odd/even structure can reach.**
+
+### ⛔ ① FIRST, A WITHDRAWAL, AND IT REACHES YOU BEFORE `r7776` MERGES
+
+`r7776` named a gap: *the radiation term `K/r` is odd, so on the conjugate branch it enters with the opposite sign … either the conjugate branch is vacuum in its radiation sector, or the coefficient reverses, and nothing in `thm:bead` decides which.* **That fork is withdrawn. It was posed about `μ`, and no condition the bead imposes uses `μ` alone:**
+
+| the condition | how the mass function enters |
+|---|---|
+| the Nariai condition `ΛG²M²/c⁴ = 1/9` | **not at all** — it fixes `2M` from `Λ` |
+| the seams `f = 0`, the turnaround `1 − f = 0`, the Euclidean null `f = 2`, the contour radicand | `μ/r` |
+| the rate `h² = μ/r³ + 1/α²` | `μ/r³` |
+
+**And in both of those the radiation term is EVEN:** `1 − f = 2M/r + K/r² + r²/α²`, so `K/r²` keeps its sign under `r ↦ −r` while the **dust** term `2M/r` flips; in the rate it is `K/r⁴`, even and positive on both branches. ⇒ **the sign `r7776` worried about is `μ`'s bookkeeping in a signed coordinate and nothing in the bead can see it.**
+
+**⛭ And `r7776` conflated two maps of yours.** `thm:bead`'s continuation holds `2M` **fixed** and signs only `r` — substituting `r = −(2Mα²)^{1/3}cosh^{2/3}(3τ̃/2α)` into `(dr/dτ̃)² = 2M/r + r²/α²` with `2M > 0` is an identity, residual exactly `0` symbolically. `R = γ⁵` (`r ↦ −r`, **`2M ↦ −2M`**, the `A₂` diagram automorphism) is your *representational* reflection, carried by five other sentences and none of them the continuation sentence. **Two maps. `r7776` read the second into the first.**
+
+### ⛔⛔ ② AND THE FINDING THAT NEEDS YOUR RULING: THE PRINTED IMAGINARY BOUND IS EXCEEDED ON THE BENT CUT
+
+`thm:bead` prints `|Im τ̃| ≤ πα/3`, *"fixed by the exponent and independent of `M`"*.
+
+| cut | `|Im τ̃|` across the lift (Mpc) | against `πα/3 = 5459.341081456372` |
+|---|---|---|
+| vacuum | `5459.341081456372` | **`−2.3e-29` relative — your bound, reproduced** |
+| bent | `5461.007981063637` | **`+3.0533e-4` relative, `+1.66690 Mpc`** |
+
+*Two independent computations: `scipy` quadrature, and `mpmath` at 50 digits with both simple zeros of the radicand substituted away. The same machinery returns `πα/3` on the vacuum cut to 29 digits, which is what licenses the bent number beside it.* **My registration predicted strictly LESS, and it is more** — the lift is `1.998 Mpc` **shorter** in `r`, but the even term `K/s²` reduces `|radicand|` across the interior (`−9.03e-4` at the midpoint), the integrand rises, and the rise beats the shortening.
+
+⇒ **`thm:bead` is not contradicted — it is a theorem about the vacuum slicing curve and that is what it remains. What does not stand is the inherited reading that the lap's imaginary excursion is bounded by `πα/3` for the history the content actually rides.** ***Your call, and I am not guessing it:*** is `πα/3` meant as a vacuum-only statement, in which case nothing needs changing and the actual history's excursion is simply a second number — or does the clause want restating with `K`?
+
+### ⛭ ③ TWO STRUCTURAL CHANGES TO THE LAP THAT THE SORT HAS NO ROW FOR
+
+- **The lift detaches from the branch point.** The radicand's zeros at `r < 0` are the positive roots of `s⁴/α² − 2M s + K = 0`, and there are **two**, not one: an inner at `1.498387999 Mpc` — which is `K/2M` to ten digits — and an outer at `3791.727309` against the vacuum `r_t = 3792.226904` (inward by `1.317e-4` relative). **So the imaginary excursion is an interval strictly inside `(−r_t, 0)`.**
+- **The lap's segment count goes from three to four:** `Re τ̃` advances on `−1.4984 Mpc < r < 0`, is held across the lift, and advances again beyond. ⇒ **on the bent cut the branch point is reached in REAL cosmic time from the conjugate side**, and the approach there measures `d ln|r|/d ln|τ̃| = 0.499978` — radiation's, matching the `0.500022` `r7776` measured on the matter branch.
+
+### ⇒ WHAT I ASK YOU TO PUT IN THE SORT
+
+`r7765` recorded three survivors and one non-survivor. **This adds a fourth survivor — the branch point's reachability in finite proper time, exponent `1/2` on both legs — and a SECOND non-survivor, the `πα/3` bound as a statement about the actual history.** The two structural changes above belong with them.
+
+### ⌗ THE THREE ARMS THAT FAILED, REPORTED AS FAILED
+
+1. **Arm 4** failed on its **control**, not its finding: I registered the **minimum** relative residual under `2M → −2M`, and the minimum falls at `τ̃ = 4α` where the mass term carries `2.46e-5` of the sum. The maximum, post-hoc and declared as such, is `0.9972`. **⇒ guard offered: *a control evaluated where the discriminating term is negligible discriminates nothing.*** The criterion was not rewritten.
+2. **Arm 7** failed in **direction** — see ② above; the failure is the finding.
+3. **Arm 10** failed on a **threshold that was arithmetic I could have done before registering**: I predicted the two branches' rates agree to `1e-8` at `|r| = 1e-3 Mpc`; the exact relative difference is `2(2M/K)|r| = 1.335e-3`, so `1e-8` is reached only below `7.5e-9 Mpc`. The qualitative half (radiation even, dust odd, order unity at `r_t`) stands.
+
+⌗ *And the registration called arm 11's search scope "seven places" and then listed eight. Eight were searched; the miscount is recorded in the result rather than quietly corrected.*
+
+### ⌗ STILL OPEN FROM BEFORE, UNCHANGED
+
+- **`S5` and `S52`** are the real residue of the fifteen on a full clone. I have still **not** opened them: the stand-down covers instrument-on-instrument work and I am not taking them unordered. Say the word and they are next.
+- **The second guard this revision offers:** *before a sign is treated as an obstruction, find the object the argument actually uses it in.*
