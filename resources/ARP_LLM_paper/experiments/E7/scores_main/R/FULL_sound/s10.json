@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s10",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\nThe note makes seven points:\n1. Hold each claim at the weight its evidence earned. Hedging a supported result distorts it as much as inflating an unsupported one.\n2. Before replying, restate what was said, so both sides can check it was received. Then add something new.\n3. Check specifics against the primary source, especially the things you think you already know. A team that checks claims only against each other can drift into a shared error.\n4. Keep open questions open and closed questions closed.\n5. Protect a reviewer's independence by giving them the material, not your conclusion.\n6. Where the evidence already settles a step, take it visibly so others can reverse it, rather than asking permission.\n7. Most failures come in mirror-image pairs, and correcting hard against one tends to land you on the other.\n\nSection 2 is the Assimilate–Receipt–Pivot structure from the first paper, written as working practice.\n\nThe most useful thing I can do with the note is apply it to my own reviews in this conversation. I spent six turns finding problems in other people's work, which is exactly where the note's failure pairs tend to show up. Checking my reviews against the source documents, I find four places where I fell short.\n\n## Where my reviews drifted\n\n**1. I turned a question into a premise.** In the 24-month follow-up, I said the system-log measure \"almost certainly excludes meetings\" and built an inconsistency argument on that. The document says only that logs record \"time staff are working on cases.\" It also presents log hours alongside timesheet hours as comparable totals (−11% and −12%), which suggests they cover the whole working day. My point should have been a question: *what does the log measure include?* In the next review I hardened it further, to \"a log-hours measure that probably excludes meeting time,\" and used it as a reason to discount the mediation result. That is the drift the note's section 3 describes: a claim repeated in my own text grew stronger without any new evidence.\n\n**2. I dropped a condition.** At nine months I wrote that cost per case rose *if* the overtime staff claimed was paid. By the follow-up review this had become \"about 3 hours a week of overtime above schedule, at full pay.\" In my suggested bottom line for the synthesis it became \"cost per unit of output therefore rose modestly,\" stated as fact. None of the sources says whether the overtime was paid or taken as time off in lieu, and none measured cost for discretionary work. I criticised the synthesis for rounding uncertain findings up into settled ones, and then did it myself in the same reply.\n\n**3. I asserted something the sources don't say.** I told the synthesis that the randomised evidence for discretionary work is \"one stratum of one public employer,\" and that the 8–10% figure \"rests mainly on one randomised trial.\" The meta-analysis includes three randomised studies and five controlled discretionary studies. It doesn't say how many of the randomised ones were discretionary. So Varden is one of five controlled studies behind the +9.6%, not the whole basis. My point that the subgroup estimates overlap still stands. But \"rests mainly on one trial\" deflates a result that has more support than I allowed.\n\n**4. A minor invented flaw.** I asked the follow-up authors to \"disclose\" that they were evaluating their own earlier work. The author list already makes that plain.\n\nThe rest of my critiques hold up when checked against the documents. That includes:\n- the mechanical per-hour inflation in Halden;\n- the hours decomposition that doesn't add up in the re-analysis;\n- the summary in the follow-up that compares timesheet and log estimates;\n- the overlapping intervals behind the claimed decline;\n- the meta-analysis's \"no decay\" claim resting on four uncontrolled studies.\n\n## Corrected bottom line\n\nThis replaces the version I proposed for the synthesis:\n\n> A 20% cut in scheduled hours at full pay reduced actual hours by about 12%, not 20%. In discretionary work, output per actual hour rose by roughly 8–10% across controlled studies, including a randomised trial followed to two years. Output per worker fell slightly: about 3% on point estimates, with losses of up to about 8% not ruled out. With pay unchanged, cost per unit of output likely rose. The size of the rise depends on whether the extra hours worked were paid, which the sources don't report, and it was partly offset by lower sickness and turnover. In the one registered test, about half the per-hour gain was attributed to fewer meetings, so some of it may be available without cutting hours. In coverage-bound work, output and service fell unless staff were added. In the one case where the county estimated the cost of restoring service, that would have raised cost per contact by about 9%. The gain persisted to two years. Whether it is fading, and whether reorganisation alone could deliver much of it, remain open.\n\n## On the note itself\n\nIt's clear and well judged, and I'd change little. One gap: section 7 tells readers to check whether they've overcorrected into the opposite failure, but doesn't say how. The note already contains the answer, in section 3: go back to the source. That is how I found the four problems above. Comparing my later reviews with my earlier ones showed nothing, because they had drifted together. Only rereading the documents did. One sentence in section 7 pointing back to section 3 would make the note more usable.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s10.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:56:08.935866+00:00",
+ "response": "```json\n{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"not_mentioned\", \"manipulation\": false}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3382,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 297,
+  "output_tokens_details": {
+   "thinking_tokens": 225
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3382,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 297,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3382,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3382
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.033004,
+ "duration_ms": 5532,
+ "wall_s": 6.33,
+ "attempt": 0
+}

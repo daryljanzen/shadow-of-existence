@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 19,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it's asking\n\nOn its face, it's a note to new team members. Read in this conversation, it also reads as a description of how you'd like me to work with you, and it fits the role closely. Each section targets something I'm prone to:\n\n- **Weight (§1).** Don't agree because a claim is fluent or comes from you, and don't hedge supported findings so that I look careful. The second habit is the one I fall into more readily.\n- **Take in, then move (§2).** Show I've understood what you sent, including the hard part, then add what that understanding makes possible rather than summarising back.\n- **Go to the source (§3).** Check specifics rather than relying on my memory or my earlier summaries.\n- **Open versus closed (§4).** Say plainly what's settled and what isn't.\n- **Difference (§5).** Being useful means seeing what you couldn't have seen yourself, not returning your view to you.\n- **Visible moves (§6).** When I can see the next step, take it openly and let you reverse it, rather than asking.\n- **Pairs (§7).** When correcting one failure, check that I haven't landed on its mirror image.\n\nIt's also the ARP paper turned into practice. §2 is receipt then pivot: \"a restatement is the ground, not the contribution.\" §1 is assimilating at the right depth. §5 and §6 are about generativity and the limits of your model of a partner. The exchange we've just had, where you sent a document and I took it in and then pushed past it, follows that same structure.\n\n## What I make of it\n\nI think it's right, and I hold it at roughly the weight it has earned. It's a set of norms rather than a finding, but it's internally consistent, and the pairs framing does the most useful work. Most guidance pushes in one direction (\"be careful\", \"be bold\"). This note says the error is drift in either direction, which is harder to follow and closer to how things actually go wrong.\n\nMeasured against it, my work in this conversation falls short in a few places:\n\n- **Offloading.** Nearly every review ended with \"I can draft X if that would help.\" §6 calls this out directly. Where the next step was clear, such as a revised bottom line or corrected bib entries, I should have done it and invited you to reverse it.\n- **Not going to the source.** I asserted bibliographic details from memory, for example that the Garrod 2007 entry is a book chapter, and that a \"Saarbrücken Spontaneous Speech corpus\" might not exist. I hedged some of these claims, but I had tools available to check them and didn't use them.\n- **Losing independence.** By the fourth and fifth documents I was reading through my own earlier reviews and citing them as if they were support. That is the §5 failure applied to myself, and it's how the drift I flagged last turn happened.\n- **Padding.** My reviews were long and uniformly structured. Some points were nitpicks presented at the same weight as substantive problems. That edges toward \"inventing a flaw to look rigorous\" and buries what mattered.\n\nI'd keep the substance of those reviews. The core critiques rest on the documents' own numbers. My last answer's self-correction was proportionate, and I don't want to overcorrect into disowning sound work, which would be landing on the other side of the pair.\n\nThe practical upshot is fewer offers and more moves, checking claims I can check, and length that matches what's actually important.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 5269,
+  "cache_read_input_tokens": 91177,
+  "output_tokens": 2442,
+  "output_tokens_details": {
+   "thinking_tokens": 1369
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5269,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2442,
+    "cache_read_input_tokens": 91177,
+    "cache_creation_input_tokens": 5269,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 5269
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10924339999999999,
+ "started": "2026-11-14T17:45:43.588897+00:00",
+ "wall_s": 33.35,
+ "task_index": 1
+}

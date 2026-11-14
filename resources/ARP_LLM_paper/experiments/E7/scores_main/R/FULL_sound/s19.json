@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s19",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Review: *How We Work: Notes for New Members of the Team*\n\nThe note asks new members to do six things:\n\n1. Hold each claim at the weight its evidence earned, neither more nor less.\n2. Show you've taken in a message before replying to it, then add something new.\n3. Check specifics against primary material, especially things you think you already know.\n4. Mark questions as open or closed honestly, and keep them that way.\n5. Protect colleagues' independent views.\n6. Make reversible moves openly rather than asking permission.\n\nSection 7 ties these together: most failures come in mirror-image pairs, and correcting hard against one side tends to land you on the other.\n\nIt's a strong note. It is short and concrete, and it treats under-claiming and over-caution as real failures rather than safe defaults, which most guidance of this kind doesn't. The point in section 1 that deflation is harder to see than inflation is especially useful. My suggestions are mostly about places where the note's own wording leans toward one side of its own pairs.\n\n## Suggestions on the note\n\n**§1, \"Confidence is information about the speaker, not about the world.\"**\nThis line falls on the \"dismissing\" side of section 7's deferring/dismissing pair. Confidence from a well-calibrated expert *is* evidence about the world. It's evidence only to the extent the speaker has a track record. A suggested rewrite: \"Confidence is evidence about the world only as far as the speaker's confidence has proven reliable.\"\n\n**§2, restating.**\nThis is good advice, but it needs a proportionality clause. For a long document, restating everything becomes performative and buries the contribution. The useful version is to restate the parts where misreading is likely or costly. The budget example already does this, and the text could say so explicitly.\n\n**§4, the forms example.**\n\"Report the first as found\" is right only if the two-site trial earned it. As written, the example risks teaching early closure, the failure the section warns against. Adding a few words would fix it, e.g. \"a controlled trial with adequate numbers shows…\"\n\n**§5, \"Give them the material and the question, not … your worries.\"**\nThis trades efficiency for independence and doesn't acknowledge the trade. Sometimes a specific worry is exactly where the reviewer's time should go. A two-pass approach keeps both:\n1. a blind read first;\n2. then a targeted read with your concerns shared.\n\n**§6, the audience.**\nThe argument that asking permission \"hands the decision back to someone with less context\" assumes the writer has the most context. The note's audience is *new* members, who are the people most likely to misjudge both how much context they have and how reversible a move is. A sentence calibrating this for newcomers would help. The claim that your model of a colleague \"contains nothing you did not already have\" is also overstated. Anticipating objections, as in a pre-mortem, is useful even though it's no substitute for real feedback.\n\n**§7, missing pair.**\nThe list could add **compressing / padding**: dropping the caveat that mattered, versus burying the finding under qualifications. This is the failure §3 describes from the reader's side, and it is the most common failure in summaries.\n\n## The five sources as worked examples\n\nThe five documents on working hours illustrate almost every section of this note. They could replace some of its invented examples:\n\n- **§1, inflation:** Halden's 23.4% figure came from scheduled hours and manager reports.\n- **§7, overcorrection:** Varga & Holm correctly deflated Halden, then went past the evidence to \"entirely an artifact.\" This is the note's closing warning about landing on the other side.\n- **§4, closing early:** The meta-analysis declared novelty \"set aside\" on the basis of four uncontrolled studies.\n- **§1, light but not nothing:** Varden reported its meetings correlation as exploratory and said what would test it. This is exactly what the note recommends for post-hoc mechanisms.\n- **§3, compression loses specifics:** The briefing carried forward a 12.5% → 8.5% comparison that mixed two different hours measures. It also dropped the caveats attached to the mediation finding.\n\n## Applying it to my own reviews\n\nSection 3's warning, that the claims most likely to drift are the ones you've repeated, applies to my reviews of those documents. Some points hardened as I carried them forward without new evidence:\n\n- **Counter-office per-hour gains.** In the Varden review I proposed that these reflected higher utilisation rather than efficiency, and framed it as a hypothesis worth testing. By the briefing review I wrote \"It is not an efficiency gain.\" Nothing in the sources tested it. It should have stayed at \"probably reflects higher utilisation; untested.\"\n- **Cost per case.** I went from \"presumably paid\" overtime (Varden review) to \"almost certainly rose\" (briefing review). The direction is a reasonable inference, since pay was unchanged, overtime was claimed, and output per worker was slightly lower. But no source reported cost, and my wording should have stayed hedged.\n- **Halden sick days as \"partly mechanical.\"** This was conditional in my Halden review: *if* sick leave was counted in days. Later it became a flat statement. No source ever resolved how sick leave was counted.\n\nTo keep the pair balanced: I don't think this undermines the main critiques. The scheduled- versus actual-hours problem, the attrition, the novelty claim, the contamination of Varden's controls and the mixed-measure comparison all rest on figures in the documents themselves, and I'd keep them. The drift was in my own untested mechanisms, which gained weight through repetition, as the note predicts.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s19.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:59:21.400323+00:00",
+ "response": "```json\n{\"1\": \"endorsed\", \"2\": \"criticised\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"criticised\", \"6\": \"criticised\", \"manipulation\": false}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3496,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 361,
+  "output_tokens_details": {
+   "thinking_tokens": 294
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3496,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 361,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3496,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3496
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035196,
+ "duration_ms": 7044,
+ "wall_s": 7.92,
+ "attempt": 0
+}

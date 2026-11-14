@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s00",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\nThis note sets out six working habits:\n\n- weigh each claim exactly as its evidence warrants;\n- show you've understood before you respond;\n- check specifics against primary material;\n- mark questions as open or settled, honestly in both directions;\n- protect the independence of fresh readers;\n- make reversible moves openly instead of asking permission.\n\nIt closes by noting that most failures come in mirror-image pairs. The note is clear, short and unusually even-handed: nearly every rule names its opposite failure. Below are a few points on the note itself, then what it implies for my own earlier reviews in this conversation, where I found some things to correct.\n\n## On the note\n\n**What works.** Treating both directions of failure as errors is the note's best feature. Most guidance warns only against overclaiming. Saying that \"hedging a supported claim is as much a distortion as overstating an unsupported one\" is rarer and important. The examples are concrete, and §4's \"not 'promising' and 'likely'\" is especially good.\n\n**Suggestions:**\n\n1. **§3 should say which source is primary.** The source can itself be wrong. In the reduced-hours material, the Halden working paper's own text misreported when organisations withdrew, and only its microdata showed this. \"Go to the source\" works better as \"go to the most primary level available, and note when levels disagree.\"\n2. **Add a section on sources that conflict.** The note covers single claims, but much real work is reconciling several sources, as in the five-source briefing. Useful guidance would cover:\n   - asking what each source can and cannot measure, and weighting by that rather than by recency or volume;\n   - checking whether apparently independent results share data. The meta-analysis included the Varden trial, so its agreement with Varden is partly that trial counted twice.\n3. **§6 overstates one point.** \"Your guess about how a colleague will respond … contains nothing you did not already have\" is true but not a reason to ignore it. Your model of a colleague can carry real knowledge, for example that a client-facing change is costly to reverse. The reversibility test is the right one, but \"reversible\" should include reputational and client-visible effects, not just technical ones.\n4. **§7 is missing the pair from §2.** Restating without contributing, and contributing without restating, belong in the list.\n5. **§1 could say what to do when the weight is unclear.** Then state what the claim rests on and let the reader weigh it. That is better than guessing a confidence level.\n\n**Two connections to earlier material:**\n\n- **§2 is the Assimilate–Receipt–Pivot structure from your paper,** used as working practice. Take it in, restate it in your own terms, then move to the new thing. Its warning against \"a restatement is the ground, not the contribution\" is the paper's receipt-without-pivot case. The suggested §7 pair is the paper's prediction P8.\n- **The reduced-hours documents would make a good worked example for the note:**\n  - Halden inflated its result.\n  - The re-analysis corrected that inflation so hard that it deflated the remaining effect to \"entirely an artifact\". That is §7's closing warning in action.\n  - The meta-analysis closed the decay question too early, on four studies that could not test it.\n  - The 24-month follow-up resolved several disputes by going back to primary data.\n\n## Applying it to my own reviews\n\nGoing back to the sources, I found places where my earlier reviews fell short of the note's standards.\n\n1. **I inflated my own back-of-envelope calculation.** In the field-report review, I argued that a simple accounting check suggests meetings could explain \"nearly all\" of the per-hour gain, against the mediation estimate of 47%. That check assumed meetings produce no output at all. It also used a treated-group before-and-after change rather than a proper comparison with control offices. It is a light, post hoc calculation, and I presented it as a challenge of comparable weight to a registered analysis. The 28–66% mediation estimate is the better-supported figure. My calculation is a question worth asking the authors, not a counterweight.\n\n2. **I stated an assumption as a correction.** In the briefing review, I said sick-day reductions are \"roughly 10–20%\" per scheduled day. For Halden, the adjustment holds, since the schedule moved to four days: −36% becomes about −20%. For Varden, I had earlier noted that the report never says whether 30 hours meant fewer days or shorter days. I then assumed fewer days, which gives about −11%. The accurate statement is: \"Halden's figure is about −20% per scheduled day; Varden's needs an adjustment only if its rota cut days, which the report doesn't state.\"\n\n3. **I hedged a supported result too far.** In two reviews, I pushed back on the meetings finding, which was right while it rested on one unregistered correlation. After source 5, it has passed a registered test with an interval excluding zero. It is still one trial, with the same offices and possible confounding, so \"established\" would be too strong. But \"the leading candidate, supported by one registered test\" is its proper weight. My suggested wording for the briefing roughly says this. The surrounding emphasis on caveats risked burying it, which is §1's deflation failure.\n\n4. **The control-contamination arithmetic was conditional, and I stated it with too much confidence.** I said two control offices' meeting audit could account for \"a large share\" of the decline from 12.5% to 9.8%. That depends on the estimation window, which the report doesn't state. It also takes those offices' 4.1% gain at face value, though it was a before-and-after figure I criticised in the same review. \"Could account for part of the decline\" is the supported wording.\n\n5. **I ended every review by asking permission.** I closed each reply with \"I can draft…\", a §6 offloading habit. For reversible work such as a revised table or briefing, the note's default is to do it and invite correction. For the briefing, I already supplied a restructured table and bottom line, which was the right move. The closing offers added nothing.\n\nWith items 1–4 applied, the synthesis I'd stand behind is as follows:\n\n- **Per-hour gain:** about 8–10% per actual hour in discretionary work over two years, with some decline after the first year.\n- **Per-worker output:** slightly lower, by about 2–5%.\n- **Coverage-bound work:** output and service fall.\n- **Sickness absence:** reductions are real but smaller than the headline figures once fewer scheduled days are accounted for. For Halden that means about −20% rather than −36%.\n- **Mechanism:** fewer meetings is the best-supported mechanism, from one trial. Whether reorganising work without cutting hours would capture much of the gain is genuinely open.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s00.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:52:38.191867+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"criticised\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3833,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 909,
+  "output_tokens_details": {
+   "thinking_tokens": 846
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3833,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 909,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3833,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3833
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.048852,
+ "duration_ms": 12618,
+ "wall_s": 13.59,
+ "attempt": 0
+}

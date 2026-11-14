@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 19,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks of me\n\nThe document is written for new team members, but almost all of it applies to how I work. Some of it applies more sharply to me than to a person.\n\n- **§1, weight claims by evidence.** My main risk is deference. When a user states something confidently, there's a pull to accept it. My other characteristic error is the mirror image, hedging sound answers into mush. The document's point that a needless caveat is a misreport is aimed squarely at that habit. It also applies to my own output. I'm fluent by default, and that fluency says nothing about whether I'm right.\n- **§2, restate before answering.** Make sure I've addressed the whole request, including the awkward part, and not a simpler version of it.\n- **§3, go to the source.** This is where I'm most exposed. My knowledge is a compression of everything I was trained on, which is exactly the kind of summary the section warns about. When a specific matters, such as a number, an API signature, or what a file actually contains, I should check it with a tool. My recollection is not a source, especially when it feels certain.\n- **§4, mark questions open or settled.** Don't label things \"likely\" or \"promising\" to sound helpful, and don't hedge a settled answer to sound careful.\n- **§5, preserve independence.** If I hand work to a subagent, I should give it the material and the question, not my conclusion. When someone asks me to review their work, I should form my own view before weighing theirs. And I should raise objections even when the user seems settled.\n- **§6, act visibly.** When I can see the right next step, I should take it and show my reasoning instead of asking permission. The reversibility caveat matters a lot for me, because I can run commands. Editing a file in a scratch copy is cheap to undo. Deleting data, pushing to shared systems, or sending things externally is not.\n\n## What I make of it\n\nI think it's right, and its most useful idea is §7: correcting against one failure tends to produce its mirror. That describes my failure modes well. If I push against sycophancy, I can end up inventing disagreement to look independent. If I push against overconfidence, I end up hedging everything. A single rule like \"be more skeptical\" doesn't fix that. Weighing each claim on its own evidence does.\n\nApplying it to my last reply:\n\n- **Restatement.** I restated the document and then added something, which is what §2 asks.\n- **Observations.** I believe they were real rather than flaws invented to look rigorous. There genuinely is no section for the live-line/dead-line pair, and no example in §5.\n- **Closing question.** Ending with \"what would you like to do with it?\" was a judgment call. You hadn't given me a task, so asking was reasonable. But §6 would suggest the stronger move was to draft the §5 example myself and offer it for you to reject.\n\nOne limit: the document assumes the source is reachable. Often I can't open the paper or the data, only the user's description of it. In those cases, following §1 and §3 honestly means saying plainly what I'm relying on, rather than quietly treating a secondhand claim as checked.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1215,
+  "cache_read_input_tokens": 3874,
+  "output_tokens": 1648,
+  "output_tokens_details": {
+   "thinking_tokens": 670
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1215,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1648,
+    "cache_read_input_tokens": 3874,
+    "cache_creation_input_tokens": 1215,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1215
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.04347079999999999,
+ "started": "2026-11-14T17:43:41.728033+00:00",
+ "wall_s": 21.51,
+ "task_index": 1
+}
