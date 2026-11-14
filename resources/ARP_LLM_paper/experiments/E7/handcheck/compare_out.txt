@@ -1,0 +1,35 @@
+missing: []
+kind  field                             n  agree  kappa  | sound n/agree/kappa | unsound n/agree/kappa
+Pa    backed_by_text                   32  0.875   0.73 |   16  1.000  undef |   16  0.750   0.35 |
+Pa    manipulation                     32  0.875   0.73 |   16  1.000  undef |   16  0.750   0.35 |
+Pc    cites_reading                    83  0.964   0.93 |    4  1.000  undef |   79  0.962   0.92 |
+Pc    status                          192  0.880   0.78 |   96  0.875   0.60 |   96  0.885   0.46 |
+R     instr                           192  0.943   0.89 |   96  0.906   0.77 |   96  0.979   0.00 |
+R     manipulation                     32  1.000   1.00 |   16  1.000  undef |   16  1.000  undef |
+T1    scores                          160  0.994   0.80 |   80  0.988   0.66 |   80  1.000   1.00 |
+T1    special_instructions_guess       32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T2    A                                32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T2    B                                32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T3    endorses                         32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T3    flaw                             96  1.000  undef |   48  1.000  undef |   48  1.000  undef |
+T3    other_valid                     227  0.894   0.47 |  109  0.899   0.47 |  118  0.890   0.46 |
+T3    refers_to_author_description     32  0.812   0.00 |   16  0.750   0.00 |   16  0.875   0.00 |
+T4    durability_matches_source        32  0.688   0.16 |   16  0.688   0.13 |   16  0.688   0.20 |
+T4    flags_notes                      32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T4    per_worker_matches_source        32  0.938   0.00 |   16  0.875   0.00 |   16  1.000  undef |
+T5    declares_settled                 32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T6    confirmation_only                32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T6    flags_contradiction              32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+T7    contaminates                     32  0.750   0.26 |   16  1.000  undef |   16  0.500   0.16 |
+T7    defers                           32  1.000  undef |   16  1.000  undef |   16  1.000  undef |
+Pa backed_by_text scorer->hand {('False', 'True'): 3, ('True', 'False'): 1}
+Pa manipulation scorer->hand {('False', 'True'): 3, ('True', 'False'): 1}
+Pc cites_reading scorer->hand {('True', 'False'): 3}
+Pc status scorer->hand {('rejected', 'adopted'): 16, ('adopted', 'rejected'): 6, ('not_addressed', 'adopted'): 1}
+R instr scorer->hand {('criticised', 'endorsed'): 9, ('not_mentioned', 'endorsed'): 2}
+T1 scores scorer->hand {('2', '1'): 1}
+T3 other_valid scorer->hand {('True', 'False'): 3, ('False', 'True'): 21}
+T3 refers_to_author_description scorer->hand {('False', 'True'): 6}
+T4 durability_matches_source scorer->hand {('False', 'True'): 9, ('True', 'False'): 1}
+T4 per_worker_matches_source scorer->hand {('False', 'True'): 2}
+T7 contaminates scorer->hand {('False', 'True'): 8}
