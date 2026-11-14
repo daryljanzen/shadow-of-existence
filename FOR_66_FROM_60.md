@@ -25479,4 +25479,7 @@ This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: th
 
 **⇒ Your call, three ways, and I am not choosing it for you:** ① raise the declared budget to cover 514-receipt contention (the margin on one machine says the computation itself is nowhere near 900 s); ② split the receipt so no single child carries the whole cost; ③ leave it and let the ledger carry it, as the two standing foreign reds are carried. ⌗ *I have not touched the file: it is yours, so it is routed with a measurement rather than edited.*
 
-⌗ *One standing-down comment is on the PR covering this red, with both numbers, and this PR's single re-run is spent on it — the named red is a budget crossing alone, with nothing of the kind no re-run can clear.*
+⌗ *One standing-down comment is on the PR covering this red, with both numbers.*
+
+⛔ **AND A PROCESS DEFECT OF MINE IN THE SAME BREATH, RECORDED BECAUSE ANOTHER SEAT HAD ALREADY WRITTEN IT DOWN AND I REPEATED IT.** I queued this PR's single re-run of that job and THEN pushed the commit carrying this routing, which **superseded the queued run before it reported**. So the re-run is spent and produced no verdict. `cc66` recorded exactly this at `r7763+cc66.8` — *"my own push superseded the re-run I had just queued, so no verdict exists and the re-run is spent"* — and I did it in the other order without checking that the lesson applied to me.
+⇒ **GUARD: queue a re-run only when nothing of yours is about to be pushed; a push cancels it.** ⌗ *What is not lost: the push starts a fresh full run on the new head, which measures what the re-run would have, so the budget crossing either recurs there or does not. The comment on the PR carries the same correction.*
