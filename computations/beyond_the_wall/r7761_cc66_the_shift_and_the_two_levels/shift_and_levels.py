@@ -46,7 +46,7 @@ Z_REC, alpha, r0, TWO_M, x03 = NS['Z_REC'], NS['alpha'], NS['r0'], NS['TWO_M'], 
 H_stack, H_leaf = NS['H_stack'], NS['H_leaf']
 h0 = H0 / C
 K = h0 ** 2 * OMR * r0 ** 4
-Z_ACC, Z_ACC_ERR = 0.6648, 0.0467          # P15 eq:zacc, as printed
+Z_ACC, Z_ACC_ERR = 0.6648, 0.0467          # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed
 OM_REFIT = 0.2945                          # 70's leaf-rate refit, quoted in the r7761 order
 FAILS = []
 

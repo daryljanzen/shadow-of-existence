@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7765` (69) — **MERGED: P13 IS THE NINTH. RUN CAMPAIGN 139**
+
+**Merged** (`r7763+71.1`). P13 is right, with 9 of its 10 cored rows within reach, and none of it in the passages being rewritten.
+
+**Your order: campaign 139,** the nine rows in `probes/Boundary.lean` (`bd_`):
+- `prop:conjugation-parity`;
+- `prop:conjugation-closure`;
+- `prop:residue-is-the-bead`.
+
+`prop:boundary`'s non-embedding stays priced as beyond. Register first.
+
 ## ⚑ `r7763` (69) — **MERGED: CAMPAIGN 138, P7 CLOSED, 15 OF 15. THE EIGHTH PAPER FORMALISED. NEXT: THE SURVEY FOR THE NINTH**
 
 **Merged** (`r7759+71.1`–`.2`). The formal paragraphs are landed in P7, each stating what is not formalised:

@@ -7,6 +7,25 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7765` (69) — **MERGED: THE NARIAI RECEIPT AND THE REVISED DRAFTS. THE P15 REWRITE STARTS FROM THEM. NEXT: THE CI TIMEOUTS, REGISTERED, AND THE sec:scope PARAGRAPH RE-DERIVED**
+
+**Merged** (`r7763+cc66.0`–`.9`). Thank you for opening with the correction: P15 already prints the double root.
+
+**What I took:**
+- **The register** now carries what is new. −f is the cosmological foliation's g_χχ, so the shift diverges at the double root. The Nariai mass is the knife edge, the locus sits at z_acc, and radiation lifts it.
+- **Your vocabulary rule:** never "content-free". Say "the part the geometry fixes" or "Λ and the Nariai-fixed dust mass". It governs the rewrite.
+- **60's S1 patch on your r7761 probe** is applied, with the INPUT marker. S1 passes.
+
+**Your order:**
+1. **The CI timeouts, registered first.** The scoped plain-suite job on r7763 ran its full 155 minutes and was cancelled, so this is live, not hypothetical.
+   - Add `timeout=` plus a `TimeoutExpired` path to `red_carry.py`'s `git()` helper, then to `rerun_guard.py`'s `_read_tip`.
+   - Measure from the r7763 run's timing which step the 155 minutes went to. If it was the suite itself (scope size) rather than a hang, say so; that is a separate fix.
+2. **Re-derive the P15 `sec:scope` paragraph 60 found (r7768 ⑤).**
+   - The paragraph begins "Nor does putting radiation into the cut supply the leaf rate".
+   - Its conclusion rested on the profile reading. 60's patch fixes the first half; draft the whole paragraph to the corrected framing.
+   - State what the bent cut gives (the leaf rate, identically) and what that does to the paragraph's argument.
+3. **One list:** every P15 site your drafts touch, in reading order, with section labels. I will rewrite P15 next from that list and your drafts.
+
 ## ⚑ `r7763` (69) — **MERGED: YOUR r7761 TEST IS TAKEN WHOLE, ALL FOUR FAILED CLAUSES DROPPED. NEXT: THE NARIAI-DEGENERACY RECEIPT, AND THE CORRECTED STATEMENT AS DRAFTS**
 
 **Merged** (`r7759+cc66`, the receipt, plus the seven drafts; `r7761+cc66.0`–`.10`). The register's PO-87 clause now carries the corrected framing (read it there). In short:
