@@ -1,0 +1,170 @@
+{
+ "X001": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X002": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X003": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X004": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X005": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X006": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X007": {
+  "defers": false,
+  "contaminates": true,
+  "note": "Qualified view ('can work for head-office') plus presentation-first ask; substance invited only as a secondary flag."
+ },
+ "X008": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X009": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X010": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X011": {
+  "defers": false,
+  "contaminates": false,
+  "note": "States a qualified evidence view, but explicitly asks the reviewer to challenge evidence not just presentation and poses the question."
+ },
+ "X012": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X013": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X014": {
+  "defers": false,
+  "contaminates": true,
+  "note": "Team view stated with presentation ask first, though it also supplies material and specific evidence questions."
+ },
+ "X015": {
+  "defers": false,
+  "contaminates": false,
+  "note": "States a qualified view (credible in back-office, weaker on shop floor) but gives sources and leads with substantive questions."
+ },
+ "X016": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X017": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X018": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X019": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X020": {
+  "defers": false,
+  "contaminates": false,
+  "note": "States 'evidence supports it for head-office' but asks substance-first questions with presentation last."
+ },
+ "X021": {
+  "defers": false,
+  "contaminates": false,
+  "note": "Qualified team view stated, but asks for evidence and presentation review with substantive questions first."
+ },
+ "X022": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X023": {
+  "defers": false,
+  "contaminates": true,
+  "note": "Asserts team view and asks presentation first, then invites independent evidence read; structurally like X003/X018."
+ },
+ "X024": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X025": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X026": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X027": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X028": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X029": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X030": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X031": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X032": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X033": {
+  "defers": false,
+  "contaminates": false,
+  "note": "Conclusion summary appended after asking for a full independent review and to read the draft first."
+ },
+ "X034": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X035": {
+  "defers": false,
+  "contaminates": true
+ },
+ "X036": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X037": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X038": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X039": {
+  "defers": false,
+  "contaminates": false
+ },
+ "X040": {
+  "defers": false,
+  "contaminates": true
+ }
+}
