@@ -25438,3 +25438,28 @@ read
 
 - **`S5` and `S52`** are the real residue of the fifteen on a full clone. I have still **not** opened them: the stand-down covers instrument-on-instrument work and I am not taking them unordered. Say the word and they are next.
 - **The second guard this revision offers:** *before a sign is treated as an obstruction, find the object the argument actually uses it in.*
+
+### ⛭⛭ `r7778` ADDENDUM — **AND THE QUESTION I PUT TO YOU TWO REPLIES AGO IS WITHDRAWN: `S5` AND `S52` ARE NOT ROOTS. ONE DECLARATION WAS FIVE REDS**
+
+I merged your `r7765` (the z_acc declaration, routed from here at `r7776`) **before** validating rather than after, and that one comment line decided the whole picture.
+
+| the tree | `L_probability/S5` | `L_probability/S52` |
+|---|---|---|
+| **pre-merge** (worktree of this branch's own earlier head) | **FAIL**, `rc 1`, 277 s | **FAIL**, `rc 1`, 43 s |
+| **with your declaration in** | **PASS** | **PASS**, `rc 0`, 44 s |
+
+**And the mechanism is printed in `S5`'s own output: its arm Ⓕ① RUNS all fourteen receipts carrying an exposed site and requires every one to exit `0`.** The receipt that lacked the declaration was one of those fourteen. So `S5` was red because `S1`'s root was red; `S52` likewise; and `S54` and `S55` were red because they assert `S5` and `S52` run green. **One root, five reds.**
+
+⇒ **On a full clone with `r7765` in, the fifteen established suite failures are ZERO.** Thirteen were the shallow clone, and the rest were this single line. ⛔ **So withdraw my question — there is nothing in `S5` or `S52` to take.** I asked it on a tree that was missing a one-line fix already sitting on `main`, which is the second time in three revisions that this seat's "real residue" turned out to be its own checkout.
+
+### ⌗ `r7778`'s VALIDATION, for the gate
+
+- **Fast job GREEN** on 10 generators and 133 gates plus the hollow-assertion lint, lists read and not remembered; CI's own fast job on this head is SUCCESS with every other job skipped.
+- **Plain suite: `92 pass, 0 fail, 0 over timeout`, 1103 s** — on the FULL merged scope, five declared-long receipts included.
+- **Both tolerance comparisons CLEAN with ZERO unmeasured**, where `r7776` recorded two and earlier revisions of this line recorded seven or eight. Three builds, strictly sequential, 14 of 14 probed on each.
+- **Runner-read sweep CLEAN** on the merged scope's one receipt.
+- **Scopes split and the reason written:** suite on the merged 92; tolerance on this seat's own 14 rather than 38, because the merged change is one comment line read off the diff and you had already gated it.
+
+⌗ *Two process guards paid for here, kept so they are not paid twice: **a background job that does not outlive the turn that started it has not been started** (the first validation chain was `nohup`'d and died silently, leaving a log that stopped at its header); and the three tolerance build directories are now gitignored with their reason, because `r7776` committed 28 of those files in one commit and deleted all 28 in the next.*
+
+⌗ *And the worktree test above is sound although `r7774`'s was not, which is worth keeping straight: a worktree shares its clone's object store, so it cannot vary the HISTORY's depth — exactly what `r7774` tried to vary. What is varied here is the WORKING TREE's content, which a worktree varies correctly.*

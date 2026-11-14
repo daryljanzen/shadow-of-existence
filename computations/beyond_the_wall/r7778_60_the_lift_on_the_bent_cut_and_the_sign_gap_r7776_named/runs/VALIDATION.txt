@@ -1,0 +1,106 @@
+r7778 (60) -- THE VALIDATION
+
+  HEAD at the validation:     37a0a92ed6064c57024ea28824b01fc87609d9c4
+  origin/main:                c6ae9a2b645c0980be5b9d7827598fcc6057c1ca   (r7765's z_acc declaration)
+  behind / ahead:             0 11
+  shallow:                    false    commits from HEAD: 8016
+  tree digest at the suite:   7ededb2bec8d4447
+
+** origin/main WAS MERGED IN BEFORE VALIDATING, NOT AFTER. **  It carried the one-line provenance
+declaration this seat routed at r7776, and merging first means the validation is taken on the tree
+that will be gated rather than on one superseded by the next fetch.  That choice turned out to decide
+the whole picture below.
+
+THE SCOPES, SPLIT ON PURPOSE AND WITH THE REASON WRITTEN
+
+  this seat's own commits, range 2cdefdb52^..0577da4e1 :  reads  0   tolerance 14   suite 71
+  the merged tree,        range 2cdefdb52^..HEAD       :  reads  1   tolerance 38   suite 92
+
+  the PLAIN SUITE ran on the FULL merged 92.
+  the TOLERANCE pre-sweep ran on this seat's 14 and not on 38, and the reason is not left implicit:
+    the merged change is ONE COMMENT LINE -- a provenance declaration placed beside an interval that
+    was already published and already in the file -- read off the diff and not assumed, so it cannot
+    move any tolerance number; and 69 gated it on main before it was merged here.
+  the RUNNER-READ sweep ran on the merged scope's one receipt.
+
+THE FAST JOB -- GREEN
+
+  "every step of the fast job passes on this tree", on 10 generator(s) and 133 gate(s) plus the
+  hollow-assertion lint, with the lists READ from the workflow and not remembered.
+  ⌗ CI agrees independently: the fast job on this branch's head completed SUCCESS, every other job
+    skipped, so the PR is green on the head this record is written from.
+
+THE PLAIN SUITE -- 92 PASS, 0 FAIL, 0 OVER TIMEOUT, 1103 s wall
+
+  Five receipts are DECLARED LONG in their own sources (900 s, 900 s, 900 s, 1800 s, 2100 s) and all
+  five passed; the slowest that passed took 1004 s.
+
+** AND THAT RETIRES THE LAST OF THE FIFTEEN.  THE TWO "REAL ROOTS" THIS SEAT REPORTED AT r7776 ARE
+   NOT ROOTS AT ALL, AND THE MEASUREMENT THAT SAYS SO IS BELOW. **
+
+  r7776 recorded: on a full clone the residue of the fifteen is L_probability/S5 and L_probability/S52,
+  both exiting 1, with S54 and S55 red only because they assert those two run green.
+  r7778 measures, on the two trees that differ by that single comment line:
+
+    receipt                 PRE-MERGE (worktree of 0577da4e1)     MERGED TREE (HEAD)
+    L_probability/S5        FAIL  (rc 1, 277 s)                   PASS  (in the 92)
+    L_probability/S52       FAIL  (rc 1,  43 s)                   PASS  (rc 0, 44 s)
+    L_probability/S54       --                                     PASS  (in the 92, 804 s)
+    L_probability/S55       --                                     PASS  (in the 92, 1004 s)
+    L_probability/S1        --                                     PASS  (in the 92)
+    L253/S1                 --                                     PASS  (in the 92)
+
+  ⇒ BOTH were downstream of the missing declaration, and the mechanism is printed in S5's own output:
+    its arm Ⓕ① RUNS all 14 receipts carrying an exposed site and requires every one to exit 0.  The
+    cc66 receipt that lacked the declaration was one of those 14.  So S5 was red because S1's root was
+    red, S52 likewise, and S54 and S55 were red because they assert S5 and S52.  ONE root, five reds.
+  ⇒ On a full clone with r7765 in, the fifteen established failures are ZERO.  Thirteen were the
+    shallow clone (r7774) and the rest were this one declaration (r7765, routed from r7776).
+  ⛔ AND THE QUESTION THIS SEAT PUT TO 69 -- whether to take S5 and S52 -- IS WITHDRAWN: there is
+    nothing there to take.  It was asked on a tree that was missing a one-line fix already on main.
+
+  ⌗ The worktree test is sound HERE although r7774's was not, and the difference is worth stating: a
+    worktree shares its clone's object store, so it cannot vary the HISTORY's depth -- which is exactly
+    what r7774 tried to vary and why that reading was withdrawn.  What is varied here is the WORKING
+    TREE's content, one comment line, which a worktree varies correctly.
+  ⌗ S52 is NOT in the 92-receipt scope, so the suite's verdict says nothing about it; it was run on its
+    own, in place, on both trees.  A scope's verdict is about the scope.
+
+THE TOLERANCE PRE-SWEEP -- THREE BUILDS, BOTH COMPARISONS CLEAN, AND NOTHING UNMEASURED
+
+  tA plain, tB --threads 4, tC --threads 2 --coretype Prescott, run STRICTLY SEQUENTIALLY (the Q1
+  INNER = 600 red is a contention artefact, so nothing ran beside anything else).  All three probed
+  14 of 14.
+
+    tA vs tB   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+               0 flagged site(s); 0 at the precision floor (< 1e-13), counted and not flagged
+    tA vs tC   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+               0 flagged site(s); 0 at the precision floor (< 1e-13), counted and not flagged
+
+  ** ZERO UNMEASURED, where r7776 recorded TWO (S1 and S5) and earlier revisions of this line recorded
+     seven or eight. **  Both of those two are the chain above: the declaration cleared S1, and S5
+     follows S1.  The verdicts are read off the VERDICT lines and their flagged/unmeasured records, not
+     off an exit code -- the check is a bitfield (2 = unmeasured, 1 = flagged), so red with 0 flagged
+     is normal and a clean verdict with an unmeasured receipt is not clean.
+
+THE RUNNER-READ SWEEP -- CLEAN
+
+  1 receipt traced from its own directory: 0 flagged (a relative read resolving to nothing), 0 triage
+  (an absolute in-repo glob that was empty), 0 red under the trace, 0 over budget.
+
+THE COST, MEASURED
+
+  fast job          >20 min on the full clone (about 4 min when it was shallow)
+  plain suite       1103 s on 92 receipts (r7776: 1302 s on 71; ~450 s when shallow)
+  tolerance         three builds of 14, sequential
+  the trace         277 s + 43 s + 43 s for the three single-receipt runs that found the root
+  ⌗ The trace cost six minutes and retired five reds this line had been carrying for revisions.
+
+PROCESS DEFECTS PAID FOR IN THIS REVISION, RECORDED SO THEY ARE NOT PAID TWICE
+
+  ⛔ A validation chain launched with plain `nohup` from a tool call is KILLED when the turn ends.
+     The first chain left no marks at all and the fast log stopped at its header; nothing had run.
+     Long jobs must be harness background tasks.  ⇒ GUARD: a background job that does not outlive the
+     turn that started it has not been started.
+  ⌗ The three tolerance build directories are now gitignored, with the reason beside them: r7776
+     committed 28 of those files in one commit and deleted all 28 in the next.
