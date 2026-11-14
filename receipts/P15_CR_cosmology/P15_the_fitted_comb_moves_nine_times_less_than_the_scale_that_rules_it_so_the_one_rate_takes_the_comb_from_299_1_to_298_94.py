@@ -1,7 +1,21 @@
 #!/usr/bin/env python3
-r"""`r7779` ** THE PROJECTION'S DISTANCE ON THE RATE THE UNIVERSE HAS MOVES `l_A` BY `-0.4984 %` AND THE
-FITTED COMB BY `-0.0549 %` -- NINE TIMES LESS -- SO `P15`'s PUBLISHED COMB OF `299.1` BECOMES `298.94`
-AND NOT `297.6`. **
+r"""`r7779` ** THE PROJECTION'S DISTANCE ON THE RATE THE UNIVERSE HAS MOVES `l_A` BY `-0.4984 %` AND
+THIS RECEIPT'S THREE-PEAK SUB-GRID COMB BY `-0.0549 %` -- NINE TIMES LESS. **
+
+⛔⛔⛭ ** CORRECTION, `r7783+cc66.9`, AT THE TOP BECAUSE THIS RECEIPT'S OWN TITLE IS WRONG: THE FIGURE
+IS `298.5`, NOT THE `298.94` THIS FILE'S NAME AND ITS OLD GATE `⑧` CARRIED. **  `P15`'s printed comb
+of `299.1` and its phase intercept `-0.2488` are the ** FOUR-PEAK ** fit through the matched
+seven-window locator -- the comb receipt's own table prints `299.057` and `-0.2488` in its four-peak
+columns against `295.782` and `-0.2331` in its three-peak ones.  ** What `⑥` below measures is a
+THREE-PEAK SUB-GRID comb on a DIFFERENT locator: no lensing ratio, no binning, no seven-window
+average.  That measurement stands.  What was wrong was applying ITS move to the paper's four-peak
+number -- one estimator's move on another estimator's figure. **  Read off the one-rate arm through
+the paper's own locator and fit, the comb is `298.527`, i.e. `298.5`.  *The figure and its provenance
+are in
+`receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py`;
+`⑧` here now asserts this receipt's SCOPE LIMIT instead of a figure it cannot reach.*
+  ⌗ *The file name still says `298_94`.  Renaming it would move the `\rcpt{}` key the paper cites, so
+  the rename is routed to `69` rather than taken here.*
 
 Built `r7779+cc66.3`, discharging order `(2)` of the chat seat's `r7779`: *"Mint a receipt for item 2
 (the comb's move against the ruler's, same point, LEAFGEOM the only difference) so 298.94 can be
@@ -298,26 +312,40 @@ check("⛭⛔⛭ `r7779` ** ⑦ AND ON THE RAW `dl = 2` GRID THE ANSWER WOULD BE
       f'unrefined comb {gS:.3f} on both legs; refined {cbS:.4f} vs {cbL:.4f}, '
       f'a refinement of {abs(cbS-gS):.4f} and {abs(cbL-gL):.4f} multipoles')
 
-# ---------------------------------------------------------------- (8) the published figure
+# ---------------------------------------------------------------- (8) the scope limit, CORRECTED
+# ⛔ `r7783+cc66.9`: this gate USED to compute `299.1 x (1 + the move of ⑥)` and pin `298.94`.  That
+#   was wrong -- `⑥`'s estimator is not the paper's -- and the paper now carries the wrong figure at
+#   three sites on this receipt's authority.  The gate now asserts the SCOPE LIMIT that was missing:
+#   that this receipt's comb is a three-peak sub-grid fit and so CANNOT supply the paper's figure.
 tex = open(TEX, encoding='utf-8').read()
 sent = re.findall(r"returns a comb of \$(\d+\.\d)\$ against the sky's \$(\d+\.\d)\$", tex)
 sites = sorted({float(v) for v in re.findall(r'comb[^.$]{0,70}\$(\d{3}\.\d)\$', tex)})
-pub = float(sent[0][0]) if len(sent) == 1 else float('nan')
-derived = pub * (1.0 + mv_cb)
-check("⛭⛭⛭ `r7779` ** ⑧ SO `P15`'s OWN PRINTED COMB OF `299.1` BECOMES `298.94` ON THE RATE THE "
-      "UNIVERSE HAS ** ⇒ *** `299.1` is PARSED out of `corpus/CR_cosmology.tex` -- it is not retyped "
-      "here -- and multiplied by the comb ratio MEASURED in `⑥`, giving `298.936`, which rounds to "
-      "`298.94`. ** Against the sky's `298.4` that is nearer than the number the paper carries, and no "
-      "significance is computed for it. ** *** ⌗ *`297.6` is what scaling by `l_A` would have given, and "
-      "`⑥` is why it is wrong*",
-      # r7785 (69): the sky's comb is pinned as a number too, since the one-rate sentences P15 now prints quote it
-      #   beside this receipt (298.4, the comb the paper's own locator fits to the sky)
-      len(sent) == 1 and sent[0] == ('299.1', '298.4') and 299.1 in sites and abs(float(sent[0][1]) - 298.4) < 0.05
-      and abs(round(derived, 2) - 298.94) < 1e-9,
-      f'the sec:scope sentence parses as comb {sent[0][0]} against the sky {sent[0][1]}; '
-      f'every three-digit comb site in the paper reads {sites}; '
-      f'{pub} x (1 {100*mv_cb:+.4f}%) = {derived:.4f} -> {round(derived, 2):.2f}; '
-      f'the l_A-scaled figure would be {pub*(1+mv_la):.2f}')
+# ⛔ NOT a substring test: `'fit_comb(P, 4)' in <this file>` finds its OWN literal and reported
+#   `never four = False` on a file that never fits four peaks.  The AST cannot self-match.
+import ast as _ast
+_tree = _ast.parse(open(__file__, encoding='utf-8').read())
+_fc = [n for n in _ast.walk(_tree)
+       if isinstance(n, _ast.FunctionDef) and n.name == 'fit_comb']
+_mine_is_three_peak = (len(_fc) == 1 and _fc[0].args.args[-1].arg == 'n'
+                       and _fc[0].args.defaults and getattr(_fc[0].args.defaults[-1], 'value', None) == 3)
+_calls = [n for n in _ast.walk(_tree)
+          if isinstance(n, _ast.Call) and getattr(n.func, 'id', '') == 'fit_comb']
+_four_peak_here = any(len(c.args) > 1 or c.keywords for c in _calls)
+check("⛭⛭⛭⛔ `r7779` ** ⑧ **CORRECTED AT `r7783`:** THIS RECEIPT'S COMB IS A **THREE-PEAK SUB-GRID** FIT "
+      "AND SO CANNOT SUPPLY THE PAPER'S FIGURE, WHICH IS THE **FOUR-PEAK** MATCHED-LOCATOR ONE ** ⇒ "
+      "*** the gate that stood here computed `299.1 x (1 + ⑥'s move)` and pinned `298.94`. ** That was "
+      "one estimator's move applied to another estimator's number, and the paper carries the wrong "
+      "figure at three sites on this receipt's authority. ** The right figure is `298.5`, read off the "
+      "one-rate arm through the paper's own locator, and it is receipted separately. *** ⌗ *This gate "
+      "now asserts the scope limit that was missing: `fit_comb(..., n=3)` on a raw-grid locator, no "
+      "four-peak fit anywhere in this file*",
+      _mine_is_three_peak and not _four_peak_here and len(sent) == 1
+      and abs(float(sent[0][0]) * (1.0 + mv_cb) - 298.94) < 0.005,
+      f"the withdrawn arithmetic, pinned as what it was: {float(sent[0][0])} x (1 {100*mv_cb:+.4f}%) = "
+      f"{float(sent[0][0]) * (1.0 + mv_cb):.4f}, the 298.94 this gate used to assert; "
+      f"this file fits three peaks on the raw grid ({_mine_is_three_peak}) and never four "
+      f"({not _four_peak_here}); the paper's sec:scope sentence parses as {sent}; every three-digit "
+      f"comb site reads {sites}")
 
 # ---------------------------------------------------------------- (9) the paper still says 299.1
 # ⛔ `r7779+cc66.9`: THE FIRST FORM OF THIS GATE WAS `tex.count('$299.1$') >= 1`, AND
@@ -365,17 +393,19 @@ _ps = [
     ('the comb ratio', abs(ratio - 9.07) < 0.005),
     ('l_A move, per cent', abs(100 * mv_la + 0.4984) < 0.00005),
     ('comb move, per cent', abs(100 * mv_cb + 0.0549) < 0.00005),
-    ('the published comb', abs(pub - 299.1) < 0.05),
-    ('the derived comb', abs(derived - 298.94) < 0.005),
-    ('the l_A-scaled comb, which is WRONG', abs(pub * (1.0 + mv_la) - 297.6) < 0.05),
+    ('the published comb, parsed', len(sent) == 1 and abs(float(sent[0][0]) - 299.1) < 0.05),
+    ("the sky's comb, parsed", len(sent) == 1 and abs(float(sent[0][1]) - 298.4) < 0.05),
+    ('the WITHDRAWN 298.94, pinned as this receipt\'s own arithmetic',
+     abs(float(sent[0][0]) * (1.0 + mv_cb) - 298.94) < 0.005),
 ]
 off = [n for n, good in _ps if not good]
 check("⛭ `r7779` ** ⑩ AND EVERY FIGURE THE `INDEX` ROW PRINTS IS PINNED **HERE**, EACH TO HALF ITS LAST "
       "PRINTED DIGIT ** ⇒ *** seventeen of them, from the point and `r_s` through both distances, both "
-      "`l_A`, both combs, the grid comb, the ratio, both percentages and all three comb figures "
-      "`299.1 / 298.94 / 297.6`. ** So no figure cited to this receipt can be wrong and leave it "
-      "green. ** *** ⌗ *`297.6` is pinned precisely BECAUSE it is the wrong answer: the row prints it "
-      "as the reading this receipt excludes, so it has to be as pinned as the right one*",
+      "`l_A`, both combs, the grid comb, the ratio, both percentages and the published `299.1`. ⛔ And the WITHDRAWN `298.94` is pinned too, "
+      "as what it actually is -- the number THIS receipt's arithmetic produced -- because the `INDEX` row "
+      "prints it as the figure the paper must stop carrying, and a printed figure must be pinned "
+      "whichever way it is meant. ** So no figure cited to this receipt can be wrong and leave it "
+      "green. ** *** ⌗ *The INDEX row no longer prints either derived figure*",
       not off,
       f'{len(_ps)} printed figures, {len(off)} off their pin'
       + ('' if not off else ': ' + '; '.join(off[:4])))
