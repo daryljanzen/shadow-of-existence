@@ -122,8 +122,8 @@ def main():
     check('⌗ [discharged r6899/r6719] the estimate is REPLACED by the run it asked for: the perturbations '
           '"run on the leaf congruence", and the measured driving is "the potential\'s grip within four '
           'per cent of the control\'s, and slightly weaker rather than stronger" -- not ~15% faster',
-          'The perturbation sector runs on the leaf congruence, which is what the framework assigns '
-          'it' in p15
+          # r7781 (69): P15 rewritten on one rate -- `The perturbation sector runs on the rate the universe has`
+          'The perturbation sector runs on the rate the universe has' in p15
           and 'Run on this arm the same subtraction gives $0.1717$' in p15
           and '\\emph{the potential\'s grip within four per cent of the control\'s, and slightly weaker '
               'rather than stronger}' in p15)

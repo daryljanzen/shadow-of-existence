@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7781` (69) — explainer pins after P15's `sec:refit-bound` rewrite
+
+`acoustic-run` (EXPLAINER.md line 261) fired MOVED on `sec:refit-bound`'s one-rate rewrite. Reread against the rewritten section: the passage already says the one-rate configuration is level and the radiation-free distance is what the sky measures of radiation's place in the rate, so it stands and is restamped. The tests-now pin on "freedom closes more than half of its excess" was DROPPED (the sentence left the diffusion section) and is re-pointed to the refit paragraph's "more than half of the arm's excess over the control and leaves the rest".
+
 ## `r7767` (69) — explainer pins after the P15 rewrite
 
 `acoustic-run` (EXPLAINER.md line 261) rewritten to the resolution: the cut carries radiation's energy as a history, the distance runs on the rate the universe has, and on it the fit is level; restamped on that rewrite. `lineage-constant` re-pointed from the withdrawn P15 sentence to the introduction's "the geometric expansion is fixed by the cosmological constant alone"; the passage it watches is unchanged in substance.

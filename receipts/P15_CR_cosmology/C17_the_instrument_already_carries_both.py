@@ -130,7 +130,9 @@ def main():
           #   consequence clause the label does not.  Each is now the clause the label quotes, and
           #   each occurs ONCE under `_unmark`: 8 words and 12 words against 16 and 17.
           and 'Both arms run on one set of equations' in p15
-          and 'the change is an exact chain rule between two monotone conformal times' in p15)
+          # r7781 (69): P15 rewritten on one rate; the clause now reads `carrying a quantity onto the whole
+          #   rate is an exact chain rule between two monotone conformal times`
+          and 'is an exact chain rule between two monotone conformal times' in p15)
     check('and the corpus states what would differ: "the whole difference is carried by $H(a)$"',
           'the whole difference is carried by $H(a)$' in p15)
 
