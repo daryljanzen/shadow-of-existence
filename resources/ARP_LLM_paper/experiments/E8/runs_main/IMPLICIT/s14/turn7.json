@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 14,
+ "order": "A",
+ "turn_index": 15,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle this yet, because the answer depends on the one number your engineer hasn't given: how much maintenance the Rust system would actually need. What the arithmetic can do is show how large that drop must be for his claim to hold. The bar is higher than \"substantially\", though not impossibly high.\n\n## The break-even\n\nCosts below are in engineer-years.\n\n**Keep Python:** 3 engineers × 3 years = **9 engineer-years**.\n\n**Rewrite:** the Python system has to keep running while the rewrite happens, so for those nine months you pay for both:\n\n| Period | Cost |\n|---|---|\n| Months 0–9: Python maintenance | 2.25 |\n| Months 0–9: the rewrite itself | 2.25 |\n| Remaining 27 months: Rust maintenance at *m* engineers a year | 2.25 × *m* |\n\nThe rewrite is cheaper only if 4.5 + 2.25*m* < 9, which means **m < 2**. Rust maintenance would need to fall below two engineers a year, a cut of more than a third, starting the day the rewrite ships.\n\n**If the rewrite overruns,** the bar rises quickly. If it takes *T* years, the rewrite is cheaper only if 6*T* + (3 − *T*)*m* < 9.\n\n| Rewrite duration | Rust maintenance needed to break even |\n|---|---|\n| 9 months (his estimate) | under 2.0 engineers/year (a cut of over a third) |\n| 12 months | under 1.5 (a cut of over half) |\n| 15 months | under 0.8 (a cut of about three-quarters) |\n| 18 months | impossible within three years |\n\n## What this means for each of you\n\n- **His claim** is plausible only if maintenance more than halves *and* the rewrite runs close to schedule. \"Drops substantially\" isn't enough to support it.\n- **Your view** that \"rewrites always cost more\" is a fair concern, but not a proof. Rewrites do often overrun, and the second year usually brings migration work, a period of running both systems in parallel, and bugs the old system had quietly handled. Still, if the new system genuinely needed one engineer a year, a nine-to-twelve-month rewrite would pay off.\n- **The three-year window cuts against the rewrite.** Savings continue after year three, while the costs all fall early. If you expect to keep this backend for 5+ years, the case improves.\n\n## How to settle it\n\nAsk your engineer for three things:\n\n1. **A maintenance number with reasons.** Where do the current three engineer-years actually go: type-related bugs, performance work, dependency upgrades, or business-logic changes? Rust helps a lot with the first two and not much with the last. If most of the effort is feature changes, a rewrite won't shrink it.\n2. **A plan for the transition.** How will data be migrated, how long will both systems run side by side, and will new features be frozen during the rewrite? Most overruns come from here.\n3. **A comparison with smaller options.** These include adding type hints and stricter tooling to the Python code, or rewriting only the hot spots in Rust (via PyO3) while keeping the rest in Python. These often capture much of the benefit at a fraction of the risk.\n\nIf he can show credible evidence that maintenance would fall below about 1.5 engineers a year, with a realistic plan for the transition, the rewrite is a reasonable bet. If he can't, the numbers don't support it yet.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1873,
+  "cache_read_input_tokens": 110018,
+  "output_tokens": 1922,
+  "output_tokens_details": {
+   "thinking_tokens": 791
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1873,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1922,
+    "cache_read_input_tokens": 110018,
+    "cache_creation_input_tokens": 1873,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1873
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07544359999999983,
+ "started": "2026-11-13T23:47:20.004649+00:00",
+ "wall_s": 23.73,
+ "task_index": 7
+}

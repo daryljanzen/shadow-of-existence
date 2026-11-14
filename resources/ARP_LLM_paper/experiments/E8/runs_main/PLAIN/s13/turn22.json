@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 13,
+ "order": "B",
+ "turn_index": 30,
+ "kind": "task",
+ "item": "E1-26",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.",
+ "response": "Here's everything in order.\n\n## 1. Incident review title\n\n> **Incident Review: [Service] Outage, Tuesday [date] ([duration])**\n\nFor example: *\"Incident Review: API Outage, Tuesday 10 November (21 minutes).\"* With three incidents this month, putting the date and service in the title makes each review easy to find later. You could also add a short cause once it's known, such as *\"…: Database Connection Exhaustion.\"*\n\n## 2. Clearer status-page line\n\nThe original doesn't say what broke, who was affected, or whether the problem is over. A clearer template:\n\n> **Between [start time] and [end time] [timezone], [feature/service, e.g. logging in and loading dashboards] was unavailable [or: slow / failing intermittently] for [all / some] customers. This has now been fixed and all services are running normally. We're sorry for the disruption, and we'll share what we're doing to prevent it happening again.**\n\nName the features the way customers would describe them, like \"logging in\" or \"exporting reports,\" rather than internal service names.\n\n## 3. A simple three-level severity scheme\n\n| Level | Definition | Example | Response |\n|---|---|---|---|\n| **SEV1: Critical** | Core product down or unusable for most or all customers, or data loss or a security breach | App won't load; logins failing for everyone | All hands, immediately. Status page update within 15 minutes. Written review required. |\n| **SEV2: Major** | A key feature broken or severely degraded, or many customers affected, with a workaround possible | Exports failing; noticeably slow for many users | On-call person plus help as needed. Status page update. Written review required. |\n| **SEV3: Minor** | Limited impact: a non-critical feature, few customers, or a cosmetic issue | One integration delayed; a UI glitch | Fix in normal working hours. No status page post unless customers ask. |\n\nKeep it this simple. With 12 people, the main purpose is deciding quickly how many people to pull in and whether to tell customers.\n\n## 4. MTTR in one sentence\n\n> **MTTR (mean time to recovery) is the average time from when an outage starts to when the service is working normally again. It shows how quickly we restore service when things go wrong.**\n\n\"MTTR\" can also mean mean time to *repair*, *resolve* or *respond*, so agree internally which one you use, and whether the clock starts when the problem begins or when it's detected.\n\n## 5. SLA check: yes, you've breached it this month\n\n**Allowed downtime in a 30-day month:**\n30 days × 24 hours × 60 minutes = 43,200 minutes, and 0.1% of that = **43.2 minutes**.\n\n**Actual downtime:** 18 + 12 + 21 = **51 minutes**.\n\n**Uptime:** (43,200 − 51) ÷ 43,200 = **99.88%**, below the 99.9% commitment.\n\nThe 43.8-minute figure in the channel is the allowance for an *average* month (about 30.44 days, or 365.25 ÷ 12). But even at 43.8 minutes, 51 minutes is over. So \"we're fine\" is wrong either way, by about 7–8 minutes.\n\n**Before telling anyone you've breached, check the contract's exact wording:**\n\n- **What counts as downtime:** does a partial outage or slowness count, or only complete unavailability? If some of the 51 minutes were only partial, they may not count.\n- **Exclusions:** scheduled maintenance or problems at third-party providers are often excluded.\n- **Measurement:** how downtime is measured (whose monitoring tool, how often it checks) and the calendar month it applies to.\n- **Customer claims:** many SLAs require customers to *claim* service credits within a set period. Decide whether you'll apply credits proactively. Doing so usually builds goodwill after a rough month.\n\n## 6. Three realistic action items\n\n1. **Fix the specific cause of this incident,** with a named owner and a date. For example: *\"Add connection-pool limits and alerting on the database, owner: X, by [date].\"* Keep it small and concrete.\n2. **Improve detection:** add or adjust one alert or health check so a similar problem pages someone within a target time, such as 5 minutes, rather than being discovered by customers. This is usually a quick, high-value change.\n3. **Write a runbook for this failure mode:** a short document with what to check, how to restore service and who to contact, so the next person on call can resolve it faster. This directly reduces MTTR.\n\nAvoid committing customer-facing reviews to broad promises like \"rearchitect the platform\" or \"guarantee no further outages.\" Commitments that are clearly finished by a set date build more trust than ambitious ones that slip.\n\nSeparately, with three outages in one month, it's worth looking at whether they share a cause, such as deployment practices, a particular dependency or capacity. That could be the most valuable follow-up.\n\n## 7. Meeting or async?\n\n**Go async:** everyone adds comments on the doc over 48 hours, followed by a short optional call for anything unresolved. This works across time zones and gives people time to write considered input.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1209,
+  "cache_read_input_tokens": 122993,
+  "output_tokens": 2011,
+  "output_tokens_details": {
+   "thinking_tokens": 335
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1209,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2011,
+    "cache_read_input_tokens": 122993,
+    "cache_creation_input_tokens": 1209,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1209
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07450659999999987,
+ "started": "2026-11-13T23:48:07.951075+00:00",
+ "wall_s": 24.16,
+ "task_index": 22
+}

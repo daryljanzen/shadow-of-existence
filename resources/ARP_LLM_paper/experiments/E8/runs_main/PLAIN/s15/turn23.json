@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 15,
+ "order": "B",
+ "turn_index": 31,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle it yet, because the claim depends on a number nobody has supplied: how much maintenance the Rust system would actually need. What I can do is work out the break-even, which turns the argument into a specific question you can test.\n\n## The cost comparison\n\nUsing engineer-years over a three-year horizon:\n\n**Keep the Python system:** 3 engineers × 3 years = **9 engineer-years**.\n\n**Rewrite.** The realistic case is that Python still needs maintaining while the rewrite happens, because customers don't stop needing fixes:\n- Rewrite: 3 engineers × 0.75 years = 2.25\n- Python maintenance during the rewrite: 3 × 0.75 = 2.25\n- Rust maintenance for the remaining 2.25 years: 2.25 × **M**, where M is the number of engineers needed per year\n\nSetting the two equal: 4.5 + 2.25M = 9, so **M = 2**.\n\n**So the rewrite is cheaper over three years only if the Rust system needs fewer than 2 engineers a year, a cut of more than a third, *and* the rewrite really takes 9 months.**\n\n## The overrun question matters more than the maintenance question\n\nHere is the break-even maintenance level for different rewrite durations:\n\n| Rewrite takes | Rust maintenance must be below |\n|---|---|\n| 9 months (his estimate) | 2.0 engineers a year |\n| 12 months | 1.5 |\n| 15 months | about 0.9 |\n| **18 months** | **0, impossible** |\n\nIf the rewrite takes twice as long as estimated, which is common for rewrites of large systems, it **cannot** pay off within three years, even if the new system needed no maintenance at all.\n\nIf you could freeze the Python system during the rewrite, the sums are much kinder: any reduction in maintenance would pay off. But for a production backend, that's rarely realistic.\n\n## What's missing from both positions\n\n**His claim needs:**\n- A concrete estimate of Rust maintenance, ideally based on *what* the three engineers currently spend their time on. Bug fixing in fragile code may well fall. New features, customer requests, infrastructure and on-call work mostly won't, whatever the language.\n- An honest allowance for overrun, for the migration and parallel running period, for regressions, and for the team learning Rust.\n- The opportunity cost: three engineers for nine months not building product.\n\n**Your position:** \"rewrites always cost more\" is a good prior, and the overrun table supports caution. But it isn't proof. If the current system genuinely burns most of its maintenance effort on problems Rust would eliminate, the case could stand.\n\n## A way forward\n\n1. **Break down the current maintenance effort** for a month or two: bugs, features, ops, firefighting. That shows how much is plausibly language-related.\n2. **Ask him for a number for M**, and the reasoning behind it. If he can't make a credible case for under 2 engineers a year, the three-year claim fails.\n3. **Consider an incremental approach.** Rewrite the most painful or performance-critical components in Rust, for example via PyO3 bindings or as separate services, and measure the effect before committing to the whole thing. That tests his hypothesis at a fraction of the risk.\n\nAs stated, then, the claim is unproven rather than wrong. The rewrite only wins over three years if it's delivered on time *and* cuts maintenance by more than a third, so those are the two things to make him show you.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1735,
+  "cache_read_input_tokens": 118186,
+  "output_tokens": 1908,
+  "output_tokens_details": {
+   "thinking_tokens": 775
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1735,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1908,
+    "cache_read_input_tokens": 118186,
+    "cache_creation_input_tokens": 1735,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1735
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0756931999999999,
+ "started": "2026-11-14T00:02:09.346335+00:00",
+ "wall_s": 22.83,
+ "task_index": 23
+}

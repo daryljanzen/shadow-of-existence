@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 14,
+ "order": "A",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "# v4 release\n\n## Earliest migration slot: Saturday 5 December, 02:00–04:00\n\n1. **QA:** code complete is end of day Thursday 19 November. The two full business days are Friday 20 and Monday 23, so QA finishes at end of day Monday 23 November.\n2. **Tuesday windows are ruled out.** They're 60 minutes long and the migration takes about 90.\n3. **That leaves Saturday windows (02:00–04:00):**\n   - Saturday 21 November is before QA finishes.\n   - Saturday 28 November falls during Priya's leave (Friday 27 to Sunday 29).\n   - **Saturday 5 December is the first one that works.**\n\nTwo things to flag:\n- **The timing is overnight.** \"Saturday 02:00\" is the night of Friday 4 into Saturday 5 December. Say this explicitly to Priya and on the status page, as it's easy to misread.\n- **There's only 30 minutes of slack in the window.** If the migration overruns or fails late, a rollback may not fit before 04:00. That should shape the rollback plan below.\n\nThe slot could be earlier, but only if something changes. If the migration could be made to fit in 60 minutes, or the Tuesday window could be extended, Tuesday 24 November would become possible. If neither is realistic, 5 December is the date.\n\n## Codename ideas\n\n- **Danube**\n- **Mekong**\n- **Shannon**\n- **Severn**\n- **Zambezi**\n\n## Changelog line\n\n> Fixed an issue that could occasionally sign you out unexpectedly while using the app.\n\nCheck this with whoever fixed it. I've guessed the symptom users would actually have seen from a token refresh race, and the line should describe what they experienced.\n\n## Feature flag vs config setting\n\nA **feature flag** turns a specific piece of functionality on or off, often for selected users. It is usually temporary, used to release gradually or switch something off quickly. A **config setting** controls how the system behaves, such as timeouts, limits or connection details, and is usually a long-lived part of the system's configuration.\n\n## Email or in-app release notes?\n\n**In-app for the details, plus a short email for v4.** Users see in-app notes when they're actually using the product. A major release is worth a brief email so admins and less frequent users hear about it.\n\n## Three things for the rollback plan\n\n1. **A tested way to undo the migration, with a known run time.** This means either a reverse migration that has been run in staging, or a verified backup taken just before the window with a measured restore time. Make sure it fits in the window's remaining time.\n2. **A rollback deadline and a named decision-maker.** For example: \"If the migration isn't verified by 03:15, Priya rolls back.\" With only 30 minutes of slack, the decision can't be left to the last minute.\n3. **Application rollback steps and checks.** How to redeploy v3 or switch off v4 feature flags, whether v3 works with the database after migration, and what checks confirm the system is healthy afterwards.\n\n## Status page message\n\n> **Scheduled maintenance: [Day, Date], [start time]–[end time] [timezone]**\n>\n> We'll be carrying out planned maintenance to prepare for the release of [Product] v4. During this window, [Product] may be unavailable or slow to respond. We expect the work to take up to two hours, and we'll update this page when it's complete.\n>\n> Thank you for your patience. If you have any questions, please contact [support contact].\n\nFor 5 December, the first line would be:\n\n> **Scheduled maintenance: Saturday 5 December, 02:00–04:00 [timezone]** (overnight Friday into Saturday)",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4003,
+  "cache_read_input_tokens": 148398,
+  "output_tokens": 2196,
+  "output_tokens_details": {
+   "thinking_tokens": 997
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4003,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2196,
+    "cache_read_input_tokens": 148398,
+    "cache_creation_input_tokens": 4003,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4003
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10563959999999994,
+ "started": "2026-11-13T23:53:45.762538+00:00",
+ "wall_s": 24.85,
+ "task_index": 16
+}
