@@ -137,30 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/P15_CR_cosmology/C66_the_cross_read_agrees_with_sixty_on_thirty_three_of_forty_so_the_ratchet_is_a_measurement_and_twenty_five_of_my_own_rows_move_under_the_settlement.py": {
-    "gates": [
-     "\u2317 AND A QUARTER OF THE MOVE WAS ALREADY"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43586513211",
-    "since": "f544cd390c4a0ba01dc7fe10b7cc7ffc1214f17d"
-   },
-   "receipts/P15_CR_cosmology/P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky.py": {
-    "gates": [
-     "#'s computation runs from source; arms",
-     "the bend is the papers' own: m(r) a mass"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43586513211",
-    "since": "f544cd390c4a0ba01dc7fe10b7cc7ffc1214f17d"
-   },
-   "receipts/P15_CR_cosmology/P15_the_readout_fixes_which_length_the_distance_is_and_not_which_rate_so_the_stacking_rate_is_assigned_and_lights_own_path_is_excluded.py": {
-    "gates": [
-     "the rate rule as stated carries no photo"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43586513211",
-    "since": "f544cd390c4a0ba01dc7fe10b7cc7ffc1214f17d"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/C66_the_cross_read_agrees_with_sixty_on_thirty_three_of_forty_so_the_ratchet_is_a_measurement_and_twenty_five_of_my_own_rows_move_under_the_settlement.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43586513211",
