@@ -50,7 +50,12 @@ print()
 print(f"      and the substring search the arm actually ran, for comparison:")
 loose = [s for s in ALL if 'eta' in s.lower() and any(d in s.lower() for d in DEPOSIT)]
 noise = [s for s in loose if not SYM.search(s)]
-print(f"        matched {len(loose)} sentence(s), of which {len(noise)} carry no such symbol at all")
+# ⌗ WHAT WAS SEARCHED, beside the claim, because the gate is right to ask: each of those sentences
+#   was tested for the regex r'\\eta\\b' -- the LaTeX macro with a token boundary -- over the
+#   whitespace-flattened full text of corpus/CR_framework.tex and corpus/cosmogenesis_paper.tex.
+#   The claim below is about THAT pattern in THOSE two files and nothing wider.
+print(f"        matched {len(loose)} sentence(s); {len(noise)} of them do not match the macro"
+      f" pattern r'\\eta\\b' anywhere in the two files searched")
 for s in noise[:3]:
     w = re.findall(r"\b\w*eta\w*\b", s.lower())
     print(f"        [NOISE] words that matched: {sorted(set(w))[:6]}")

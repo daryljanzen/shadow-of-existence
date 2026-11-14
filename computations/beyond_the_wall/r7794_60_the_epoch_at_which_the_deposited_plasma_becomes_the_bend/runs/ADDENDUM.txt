@@ -32,7 +32,7 @@
         [EPOCH?] ...The multi-abundance network, integrated on $T(\tilde\tau),\rho(\tilde\tau)$ with CR's rate at each epoch and run on the standard-rate cooling leg from a fully dissociated start (Sec~\ref{sec:network}), returns deuterium, helium-4 and helium-3 at their observed values and lithium-7 at the shared stan
 
       and the substring search the arm actually ran, for comparison:
-        matched 30 sentence(s), of which 7 carry no such symbol at all
+        matched 30 sentence(s); 7 of them do not match the macro pattern r'\eta\b' anywhere in the two files searched
         [NOISE] words that matched: ['retains']
         [NOISE] words that matched: ['metallicity']
         [NOISE] words that matched: ['eta']
