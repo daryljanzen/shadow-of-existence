@@ -147,7 +147,9 @@ def main():
     # ⓷ CR applies it once
     check('⛭⛭⛭ ⓷ and the expansion leg is "matter-dominated to nine orders, the substrate term being '
           'utterly negligible there"',
-          'matter-dominated to nine orders' in p15)
+          # r7781 (69): P15's sentence now reads `the substrate term in the rate is utterly negligible, nine
+          #   orders below the matter's` -- the same finding, stated of the substrate term against the matter
+          'nine orders below the matter' in p15)
     # ⛔⛭⛭ AMENDED r4518, AND THIS IS A RETRACTION, NOT A RE-PIN.  ** The two sentences quoted here
     #    were P15's, and P15 has WITHDRAWN THEM. **  `PO-24` (r4502, narrowed at r4505) measured the
     #    early integrated Sachs--Wolfe term on both rates instead of inferring it, and the paper now

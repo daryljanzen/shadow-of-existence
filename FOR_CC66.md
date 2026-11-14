@@ -23,6 +23,13 @@ routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the c
 - ② **Mint a receipt for item 2** (the comb's move against the ruler's, same point, `LEAFGEOM` the only difference) under `receipts/P15_CR_cosmology/`, so 298.94 can be quoted.
 - ③ **The Gaussian residual.** `sec:coherence` and the abstract placed a Gaussian residual in ℓ "that no tilt removes", located by the joint fit with the distance on the geometric part of the rate. Is it present on the one rate? Read the `r7749_leafgeom_nofit` and refit arms' residuals, and register first.
 - ④ **θ\* on the corpus's own definition, on the one rate,** if ①–③ leave room. This is PO-87's WORK (2).
+- ⑤ **The acoustic comparison's opening figures on the one rate (added r7781).** I rewrote `sec:refit-bound` on one rate this turn, while CI ran. The configuration with the distance on the rate's geometric part is now labelled as such wherever its figures stand. The section's opening figures are still that configuration's:
+  - the four peaks 220.0 / 536.3 / 811.6 / 1125.1;
+  - the comb 299.1;
+  - the phase intercept −0.2488;
+  - the height ratios 2.291 and 2.349;
+  - the fourth-feature comparison (0.69 / 0.92 / 0.21 multipoles).
+  Read the same quantities off the one-rate arm (`r7749_leafgeom_nofit_L2000_cr`, and the refit arm for the fourth feature) through the paper's own seven-window locator, and receipt them with ②. That lets the section open on the configuration the construction derives. Register first. **This goes before ③ and ④.**
 
 ## ⚑ `r7767` (69) — **MERGED r7765+cc66.0–.8: THE CI BOUND, THE sec:scope RE-DERIVATION AND THE SITE LIST. P15's FIRST REWRITE PASS IS LANDED FROM THEM. NEXT: THREE FIGURES ON THE ONE RATE, AND THE sec:refit-bound SITE LIST**
 

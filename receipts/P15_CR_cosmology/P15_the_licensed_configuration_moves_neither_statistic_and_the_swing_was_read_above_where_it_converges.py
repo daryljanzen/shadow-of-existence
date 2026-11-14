@@ -564,8 +564,10 @@ ppaper('the scale', r"\$\\ell_A\$ moves from \$([\d.]+)\$ to \$([\d.]+)\$ agains
                     r"\$([\d.]+)\$", float, float, float)
 ppaper('the ceiling', r"\\emph\{indistinguishable below \$\\ell\\simeq(\d+)\$\}---every one of them "
                       r"with a longest run of ([a-z]+) to ([a-z]+) bins---and separate only above "
-                      r"it, where the specified configuration's run grows \$(\d+)\$, \$(\d+)\$, "
-                      r"\$(\d+)\$, \$(\d+)\$ and the forbidden one's stays \$(\d+)\$, \$(\d+)\$, "
+                      # r7781 (69): P15 rewritten on one rate -- `the specified configuration` is now `the
+                      #   radiation-free distance` and `the forbidden one` is `the one rate`; same figures
+                      r"it, where the (?:specified configuration|radiation-free distance)'s run grows \$(\d+)\$, \$(\d+)\$, "
+                      r"\$(\d+)\$, \$(\d+)\$ and the (?:forbidden one|one rate)'s stays \$(\d+)\$, \$(\d+)\$, "
                       r"\$(\d+)\$, \$(\d+)\$", int, str, str, int, int, int, int, int, int, int, int)
 
 # -- the two tables, the arm of record first because that is what was ordered --------------------

@@ -75,9 +75,6 @@ print(f"   of those, sentences that CLAIM a ground (the corpus's own derivation 
 # GROUNDS = offers a reason, but for an object that is not the projection's distance.  DERIVES = derives
 # the projection's distance's rate from something that is not itself a rate assignment.
 ADJ = {
- "The assignment is not a modelling choice on either side": ('STATES',
-   "restates the rule for both slots; the ground offered is the slot a quantity sits in, which is the "
-   "rule itself"),
  "and the rule is kinematic: a comoving separation read across leaves takes the stacking rate": ('STATES',
    "P16, where the rule is derived: 'kinematic' qualifies the rule, and the sentence states it"),
  "not chosen: the same selection of the existent's foliation that turns the frozen constraint into a "
@@ -88,16 +85,10 @@ ADJ = {
    "the SHIFT, not the lapse"),
  "the Nariai member, by the reassignment's own selection argument rather than by choice": ('GROUNDS',
    "P18's ledger, and the object is the Nariai member, not the distance's rate"),
- "And the division is carried out rather than asserted": ('STATES',
-   "the claim is that the division is IMPLEMENTED on each object, not that the assignment is derived"),
 # P15 sec:tensions's "The decision rule is structural, not a choice" is NOT in this net and the key for
 # it was dropped rather than kept as a stale one: that sentence names the three levels and neither a
 # rate nor a distance, so by the net's own definition it is not a sentence assigning a distance to a
 # rate.  It grounds WHICH LEVEL a quantity sits on, which is a step before the question asked here.
- "the verdict it returns is that the spectrum derived here, with the projection's distance on the "
- "stacking rate the construction assigns it, is disfavoured": ('STATES',
-   "the only sentence in the net whose 'derived' is about the SPECTRUM and not about the assignment -- "
-   "caught by the marker and adjudicated rather than counted"),
  # r7613 (69): the derivation this file found, written into the papers when 69 landed it.  These are
  # this result's own sentences and not prior clauses, so they are LANDED and not DERIVES: arm A asks
  # whether any clause derived the rate BEFORE this computation, and the six keys above that r7613's
@@ -114,7 +105,8 @@ ADJ = {
  "The construction derives the stacking rate, with radiation excluded from it": ('LANDED', "P18 sec:frontier, r7751"),
  "the stacking rate the construction assigns light's path distance is derived on any cut with radiation excluded from it": ('LANDED', "P7 sec:intro's cosmology summary, r7751"),
  "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
- "an assignment the reassignment derives on any cut, bent or straight": ('LANDED', "P15 sec:refit-bound, r7753-r7755: states the derivation's basis beside the open question (whether radiation belongs in the rate, or the half per cent comes from another requirement), and derives nothing new"),
+ # r7781 (69): P15's sec:refit-bound rewritten on one rate; the dispatch paragraph, the division paragraph, the
+ # likelihood-verdict sentence and the residual's derivation clause all left P15, so their four keys are dropped.
  # r7767 (69): P15's rewrite on the corrected framing removed the stacking-rate derivation sentence and moved the
  # comparison sentence out of the net; both keys dropped rather than kept stale.
  # r7753 (69): P6's episode sentence was rewritten to name the open rate and leaves the net, so its r7615 key is
