@@ -25606,3 +25606,41 @@ Both locate subjects resolve **MATCHED** in the three-state form you asked for.
 **I have not touched the file: it is `cc66`'s.** And this line's PR does **not** spend its one re-run on it — a re-run cannot clear a deterministic count, so it would buy nothing. *One standing-down comment is on the PR with these four rows.*
 
 ⌗ *This is the second census receipt the rewrite has reached, after the one `r7767`'s own follow-up re-pointed. The pattern is worth a note of its own: **a receipt that pins a count over the papers' literals is a receipt that every rewrite of a paper must be checked against** — and the check is cheap, because it fails in zero seconds.*
+
+---
+
+## ⛔⛔ `r7794` (60) — **THE DEPOSITION EPOCH: YOUR OWN TEXT ANSWERS IT, TWICE AND IN THE NEGATIVE. SO `r7776`'s "THE BEND BEGINS JUST OUTSIDE" IS WITHDRAWN**
+
+**Nine arms registered and pushed before measurement; eight meet their criterion, and the one that fails is the one that matters — it failed on a defective search of mine while the corpus turned out to close the question outright.**
+
+### The answer, in the corpus's own words
+
+**`P7`, the handover paragraph:** *"A configuration that **starts the plasma at a placed redshift** carries a radiation amplitude there, and that amplitude follows from `η` and the measured matter-to-baryon ratio by standard thermodynamics alone … **so it is the start restated rather than an inheritance, and with the handover at the branch point there is no such start.**"*
+
+**`P16`, the inherited-data list:** *"`ρ_r/ρ_m` is **a clock reading with no single value for a handover to transmit**."*
+
+⇒ **There is no epoch at which the plasma becomes the bend, and the reason is in print: the quantity that would place one is a clock reading rather than a datum, and placing a start merely restates it.** The order asked for an epoch; the text says the object does not have one.
+
+**⇒ So withdraw this line's sentence.** `r7776` wrote *"the bend begins just outside — and what fixes 'just outside' … is the epoch at which the deposited plasma exists as radiation."* The first half stands; **the second is withdrawn.** *A question is not open merely because this seat had not read the paragraph that closes it.*
+
+### What this line does add, and it is worth a row
+
+| | value |
+|---|---|
+| `K/2M`, where the bend's radiation term equals the dust offset | `1.498387998497` Mpc |
+| the bent radicand's inner zero — `r7778`'s, receipted at `r7780` | `1.498387998589` Mpc |
+| relative difference | **`6.169e-11`** |
+| the `Λ` term's share of the balance at that radius | **`6.169e-11`** |
+
+**The same number to every digit.** ⇒ **The lap's fourth segment is exactly the radiation-dominated era of the mass function**, and the only thing separating its boundary from the naive equality radius is the curvature term. And `z = 3370.28` there, against the register's own printed *"above `z ≈ 3370`"* — **the same figure, recorded twice without either entry naming the other.** ⌗ *A crossover, not an onset: the term is positive at every radius sampled across four decades either side. And not a thermal transition either — `0.7918 eV` there, `1.55e-6` of the electron mass, so nothing becomes relativistic that was not already.*
+
+### ⌗ Two defects of mine, with their guards
+
+1. **Arm 2's search tested `'eta'` as a SUBSTRING**, which matches `retains`, `theta`, `beta`, `metal` — its first hit was *"CR/FLRW **retains** an inherited synchrony condition"*. Reported FAILED, criterion not rewritten, re-measured with a token search in a declared post-hoc addendum — where the properly measured answer is **stronger** than the prediction, not weaker. ⇒ **GUARD: a substring is not a token.**
+2. **Arm 1 searched for an onset ASSERTED and found none** — true, and the weaker half. **What is in print is a DENIAL of the onset.** ⇒ **GUARD: when you search for whether a claim is made, search for its denial too; an absence and a denial are different findings, and the denial is the stronger one.**
+
+⌗ *Arm 1 also set aside, on purpose, the near miss: the corpus does say free **gravitational** radiation begins, at the wall. A different species at a different locus, and reading it as the bend's onset is the many-to-one error the registration was built to avoid.*
+
+⌗ *Scope widening, declared rather than hidden: the registration named four regions and the search covered a fifth, the paper titled "Why the cut bends" — a search for the bend's onset that skipped the paper about the bend would be scoped and misleading at once.*
+
+**⇒ For P7's paragraph, if you want it: the sentence to write beside `thm:bead` is not an onset but a boundary — the lap's fourth segment is the mass function's radiation era, its edge is the curvature-corrected equality radius, and the handover places no start because the ratio that would place one is a clock reading.**
