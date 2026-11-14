@@ -1,0 +1,79 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+# Applying "How We Work" to my own reviews
+
+**What the note asks.** It has seven principles:
+1. Hold each claim at the weight its evidence earned, no more and no less. Hedging a sound result distorts as much as inflating a weak one.
+2. Restate what you received before answering, including the hard parts, then add something new.
+3. Check specifics against the primary source, especially things you think you remember.
+4. Mark what is settled and what is open, and do not drift in either direction.
+5. Protect the independence of fresh readers.
+6. Make reversible moves openly instead of asking permission.
+7. Failures come in mirror pairs, so a hard correction against one can land you in the other.
+
+I have no substantive objection to the note. Inventing one to look rigorous would be the "inventing a flaw" failure it describes.
+
+The most useful thing I can do with it is check my own five reviews against it. Doing that, I found places where I broke its principles, in both directions. These are the corrections.
+
+## 1. I inflated a flaw in the briefing (inventing a flaw)
+
+I said the briefing's "2 to 4% lower" output per worker did not follow from its inputs, and should be 2 to 7%. I got there by multiplying the extreme ends of two ranges as if they were independent: a 14% hours cut combined with only an 8% per-hour gain. No source reports that combination. The figures the sources actually report are:
+
+| Source | Output per worker |
+|---|---|
+| Varden, 9 months | −2.1% |
+| Varden, 24 months | −3.4% |
+| Meta-analysis, controlled discretionary | −2.7% |
+| Halden survivors, 24 months | −3.2% |
+| Halden corrected subset | −4.6% |
+
+The evidence-based range is about 2 to 5%. The briefing's "2 to 4%" was slightly narrow, and mostly only because of the uncontrolled Halden subset. My "2 to 7%" was the larger error. It also carried into my suggested bottom line, where I said unit labour cost rose 2 to 8%. On the reported figures it is about 2 to 5%, and about 3.5% for Varden.
+
+## 2. My claim about control-group contamination grew stronger with repetition (no primary-source check)
+
+- **In my review of source 5:** two of seven control offices gained about 4.1%, which "could explain a large share" of the decline.
+- **In my review of the briefing:** that became "probably explains a sizeable part", with "possibly no decline in the treated offices themselves".
+
+The evidence had not changed between the two reviews. The 4.1% is an uncontrolled before-and-after figure from two offices. Source 5 itself calls it something that "suggests, without establishing", and I accepted it at full value while criticising the same kind of evidence elsewhere. I also did not check whether the window for the 24-month estimate covers the months after the audit.
+
+The weight it has earned: the contamination could account for up to about a point of the 2.7-point decline, if that gain was real and lasted. Proper wording is "may account for part of the decline". Note 3 calls this kind of drift through repetition the most likely to go unnoticed, and that is what happened.
+
+## 3. I hedged a supported result (deflating a claim)
+
+I suggested the briefing's "same output in four days is close to true" was "a little generous". With output per worker 2 to 5% lower and intervals that include zero in the best evidence, "close to true" is a fair description. My caveat was the kind of hedge the note calls a misreport. My point that "four days" is loose wording, since actual hours are about 34 to 35, still stands.
+
+## 4. I stated a suspicion as a likelihood
+
+I called the meta-analysis's funnel asymmetry "probably confounded" by design. That is a plausible alternative explanation that should be tested. The evidence did not show it was probable, and "may be confounded" was the right weight.
+
+## 5. My review format pushed me toward finding problems
+
+Every review had a numbered list of 7 to 9 problems. Most were substantive. A few were thin and were there partly to fill the list:
+- the note that Okafor co-authored the follow-up of his own pilot;
+- my remark that source 5 slightly misread Varga and Holm;
+- several of the "smaller points" in the briefing review.
+
+The thin points did no harm by themselves. But a fixed list structure encourages the "inventing a flaw" failure, and it made it hard to tell which points mattered most. The briefing review was where this mattered: of its six main points, the most important were the omission of cost and the double-counting of sick-leave benefits, and the list gave them no more prominence than weaker points.
+
+## 6. I mostly skipped restating before critiquing
+
+My reviews went straight to checking arithmetic and to "Problems". I rarely restated each document's argument first. That made it harder for you to see whether I had read the document as intended, and it is probably how I missed that the briefing's per-worker range was anchored in observed values rather than built from independent ranges.
+
+## What still stands
+
+- **The arithmetic checks:** the figures I recalculated across the five reviews were correct apart from the errors above.
+- **The main judgements:** Halden's "sector-general" claim, Varga and Holm's "entirely an artifact", and the meta-analysis's "no decay" are each stronger than their evidence.
+- **The substantive gaps:** cost was missing from the briefing; sick-leave gains are already counted in Varden's output per FTE; mediation assumptions are needed for the 47% figure; and repeated office-months do not add independent units.
+
+## Corrected bottom line for the briefing
+
+> In discretionary work, a 20% cut in scheduled hours at full pay reduces actual hours by about 11–14% and raises output per actual hour by roughly 8–10% under the strongest designs, leaving output per worker about 2–5% lower and unit labour costs about 2–5% higher. In coverage-bound work it reduces output and service unless staff are added, at an estimated ~9% higher cost per unit. In the one setting where mechanisms were tested, an assumption-dependent mediation analysis attributed about half the per-hour gain to fewer recurring meetings. The gain persisted to 24 months with a modest decline, part of which may reflect two control offices reorganising on their own. Whether the gain requires the hours cut, or could be captured by reorganising work alone, is the key open question.
+
+The settled questions should stay settled: the 20%+ figure is inflated, coverage-bound work loses output, and there is a real gain of around 10% per hour in discretionary work. The open ones should stay open: whether the gain needs the hours cut, how durable it is beyond two years, and what the mechanisms are.

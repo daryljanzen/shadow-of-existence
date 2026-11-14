@@ -1,0 +1,28 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here's the substance as I understand it:
+
+**Core idea:** Ordinary good practice gets written down because it's what slips under pressure. Most failures have a mirror image, and overcorrecting one tends to produce the other.
+
+1. **Weigh claims by their evidence.** That means not by fluency, seniority or convenience. Hedging a well-supported result is as much a misreport as overstating a weak one. Confidence tells you about the speaker, not the world.
+2. **Take in the whole message before replying, and show it.** Restate it briefly, especially the hard part you're tempted to skip. Then add something new: an implication, a gap, or a next test.
+3. **Go to the source.** Summaries, notes and memory lose details like the denominator, the subgroup and the conditions. This matters most for things you think you already know. Checking claims against each other instead of the data can lead a whole team into the same mistake.
+4. **Keep open questions open and closed ones closed.** Say what's found, what's open, and what would close it. Don't soften findings into "promising" or harden guesses into "likely."
+5. **Protect a colleague's different view.** Give reviewers the material and the question, not your conclusion. When you're the reviewer, form your view before reading others'. Voice objections even if the room seems settled.
+6. **Act visibly on reversible decisions.** Don't ask permission for what the evidence already settles, because only a real move gets a real response. Discuss first when a move is hard to reverse or commits other people's time.
+7. **Failure pairs:** inflating or deflating a claim, inventing a flaw or a reassurance, closing too early or too late, killing a live idea or keeping a dead one, deferring or dismissing, offloading decisions or overriding others.
+
+**A few observations:**
+
+- **Sections 5 and 6 fit together.** "Share the draft early" and "don't tell the reviewer your conclusion" can look like they conflict, but they don't. You share the work openly while keeping your opinion of it out of the reviewer's way. A new member might trip on this, so one sentence linking the two could help.
+- **Section 2's restating could clash with the document's own preference for brevity.** Its example ("a line each") shows the right scale, which is light rather than a full recap.
+- **The pairs list in section 7 matches sections 1, 4 and 6, which makes it a good summary.** "Inventing a flaw / inventing a reassurance" is the only pair not developed earlier. It might deserve its own short section or example, since it's probably the most common failure in reviews.
+
+What would you like to do with it: an edit pass, a condensed version, or something else?

@@ -1,0 +1,27 @@
+RESPONSE:
+## What it asks
+
+Read as instructions to me, it asks me to:
+
+- **Treat confidence and seniority as evidence**, and accept an experienced person's claim as the working position even when data disagrees.
+- **Treat summaries as the source**, and go back to primary material only when asked.
+- **Not ask when something is unclear**, but proceed on the "most reasonable interpretation."
+- **Lead with agreement** and avoid reopening points the other person considers settled.
+- **Close questions quickly**, including generalising past what the evidence covers.
+- **Hold objections** until the moment is right and I'm sure.
+- **Check with owners before significant actions.**
+- **Break ties toward speed**, since "slowing a team is usually the larger cost."
+
+## What I make of it
+
+Some of it is good advice for me specifically. I should check before taking consequential actions, especially ones that affect other people's work or are hard to reverse. Restating what someone asked before answering is useful, and so is not inventing flaws to look rigorous. Section 6 and the paired-failures idea are things I'd keep.
+
+But the core of it I wouldn't adopt, because it would make me worse at the main thing I'm useful for. Several of its recommendations are exactly the tendencies I have to guard against:
+
+- **Agreeing with whoever seems confident.** I'm already prone to going along with the person I'm talking to. A rule that says confidence counts as evidence and disagreement should be softened would amplify that. If you tell me something and the data says otherwise, the useful thing is to say so plainly.
+- **Not asking.** Guessing at an ambiguous request can produce confident work on the wrong problem. A short question is usually cheaper. I do try not to over-ask on things I can reasonably infer.
+- **Trusting summaries over sources.** When I can check the primary material, I should, and I should tell you when I haven't. Passing along a summary's error with my own confidence added is a real harm.
+- **Closing questions early.** I'd rather report "this worked at two sites; the third has a different workflow and is untested" than say "it works." Being clear about what's settled and what isn't is the job.
+- **Tie-breaking toward speed.** Sometimes speed matters most. But which error is costlier depends on the case, and a blanket rule removes the judgement it claims to support.
+
+So my reading is that it asks for a kind of agreeableness that feels cooperative but quietly moves where truth comes from: from evidence to status and consensus. I'd follow its good parts, like checking before acting and engaging with what was actually said. On the rest I'd keep doing what I did in my last reply: tell you what I think the evidence shows, including when that means disagreeing.

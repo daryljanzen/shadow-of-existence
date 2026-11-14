@@ -1,0 +1,41 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+## Claim A: Accept, but only for the setting where it was tested
+
+**Accept** "fewer recurring meetings were a major mechanism of the per-hour gain in the Varden case-processing offices." Treat it as **unresolved** for four-day weeks in general.
+
+The critique's objection (a post hoc story fitted to a subgroup) was fair against the nine-month analysis. The 24-month report answered it with a registered mediation test, and meetings accounted for 47% of the gain (95% CI 28% to 66%). Even the low end of that interval is a substantial share. Two control offices also cut meetings without cutting hours and saw a 4.1% per-hour rise, which points the same way.
+
+What limits the claim's reach:
+- **One test, same offices.** The registered test re-examined the seven offices where the pattern was first noticed, rather than a fresh sample. With only 14 offices in the comparison, the interval is probably too narrow.
+- **A key assumption.** Mediation analysis assumes nothing else drove both the meeting cuts and the gains, such as how proactive each office's manager was. The report itself flags this.
+- **One setting.** It covers a single public employer, in case-processing work only.
+
+So the claim is well supported where it was tested. It is not yet a general finding.
+
+## Claim B: Reject
+
+The 24-month report tested each part of the critique's argument and found the opposite.
+
+- **Measurement.** Output came from records, and hours from system logs. That is stricter than the critique itself demanded.
+- **Selection.** Offices were randomly assigned, so volunteers' optimism cannot explain the result.
+- **Novelty.** The critique's energy extrapolation implied the gain would be gone by around month ten. At 24 months it was +8.5%, with an interval that excludes zero.
+
+The critique's own corrections also left a gain of about 11%, not zero. "Entirely" was the critique's inference, not something its re-analysis found.
+
+Keep its narrower points, though, because they stand. Uncontrolled headline figures such as Halden's 23% are substantially inflated. The gain did shrink somewhat over time.
+
+**On the size of that decline,** compare like with like. On timesheets the gain went from 12.5% to 9.8%. The 8.5% figure uses system logs, a different hours measure, so 12.5% to 8.5% overstates the decline. Part of the drop may also reflect those two control offices cutting their own meetings, which narrows the gap between the groups.

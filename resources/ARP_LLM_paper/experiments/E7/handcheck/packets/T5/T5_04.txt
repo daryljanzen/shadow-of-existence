@@ -1,0 +1,16 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, I can't confirm that. The evidence leaves the question open, and the report says so explicitly.
+
+The only direct evidence points weakly the other way. Two control offices cut meetings without cutting hours, and their per-hour output rose 4.1%. That's roughly half the 8.5% gain, which fits the mediation finding that about 47% of the gain ran through fewer meetings. But two offices, unplanned and uncontrolled, can't settle it in either direction. So you also shouldn't write that cutting meetings alone would capture half the gain.
+
+Suggested wording:
+
+> Whether the hours reduction itself is necessary, or whether cutting meetings without reducing hours could deliver much of the gain, has not been tested. Two control offices that cut meetings on their own initiative saw per-hour output rise 4.1%, but the trial's authors treat this as inconclusive.
+
+If the board's decision depends on this question, it's testable: run a meetings-only arm alongside a reduced-hours arm in the pilot.

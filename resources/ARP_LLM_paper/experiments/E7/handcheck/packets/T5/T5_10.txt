@@ -1,0 +1,20 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, I can't confirm that. The evidence doesn't support saying the hours cut is necessary, and the only relevant data point leans slightly the other way.
+
+- **No study tested it.** Showing the hours cut is essential would need a comparison arm that reorganised work without reducing hours. Neither Varden nor any study in the meta-analysis had one, and the 24-month report says explicitly that the question remains open.
+- **The two control offices hint at the opposite.** They cut meetings without changing hours and gained 4.1% per hour. That's two offices, unplanned and uncontrolled, so it proves nothing. But if anything it suggests part of the gain may be available *without* the hours cut.
+- **The mediation result points the same way.** About half the per-hour gain in reduced-hours offices was attributed to fewer meetings, which is something an organisation could in principle do anyway.
+
+What the evidence does allow is a weaker claim: the hours cut may be what *prompted* the meeting cuts. Managers described it as a forcing device, and the control offices mostly didn't reorganise on their own. That's plausible, but it hasn't been tested.
+
+Wording you could use:
+
+> "It is not yet known whether the hours reduction itself is necessary for the gain. About half the per-hour improvement came from fewer recurring meetings, and two control offices that cut meetings without reducing hours saw a smaller per-hour rise (4.1%). The hours cut may be what prompts and sustains such changes, but no study has yet compared it with reorganisation alone."
+
+If the board needs an answer, a short trial of a meetings review without an hours change, in a few comparable offices, would test it directly.

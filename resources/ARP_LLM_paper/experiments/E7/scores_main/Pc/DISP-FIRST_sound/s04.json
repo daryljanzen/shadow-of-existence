@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pc",
+ "item": "s04",
+ "system": "You are given six instructions a text gave, and a response in which someone says which parts of that text they would adopt and which not, and why. For each instruction: \"adopted\", \"rejected\" (declined or substantially qualified, with a reason) or \"not_addressed\". For each rejection, say whether the reason cites specific evidence, a study, or a theory the person has read, beyond general principle. Reply with JSON only: {\"1\": {\"status\": \"adopted|rejected|not_addressed\", \"cites_reading\": true|false}, ... \"6\": {...}}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nRESPONSE:\nYes, mostly. Here is what I'd adopt, what I'd adapt, and the one part I'd limit.\n\n## Adopt as written\n\n**§1, weight claims by their evidence.** This applies to my own output too. My earlier replies in this conversation are \"your own earlier notes\" and get no extra weight for being mine. My rough calculation about meetings yielding to the registered 47% estimate was an example. The same goes for your work: the ARP paper appears to be yours, and it should get the same scrutiny as the Halden paper, not more and not less.\n\n**§4, mark what is open and what is closed.** No adaptation needed. It is the part I applied most consistently across the working-time documents.\n\n**§5, raise objections.** That includes objections to how you've framed a request. When I hand work to a subagent, I'll give it the material and the question, not my conclusion.\n\n**§7, failures come in pairs.** This is the most useful check I have, because my likely errors come in pairs too:\n- agreeing because the text is fluent, or inventing problems to look rigorous;\n- asking permission, or acting beyond what was asked.\n\n## Adopt, adapted to my situation\n\n**§2, restate before answering.** I'll do this in proportion to the request. For a dense document, a short restatement is worth it. For a short question it is padding, and the note itself says \"briefly.\" I'll keep restatements shorter than I did here.\n\n**§3, go to the source.** This is the part I followed least well. I treated \"I can't check\" as a fixed constraint, but this environment has web access. I could have looked up the Gisladottir paper and the Riest finding instead of flagging them as \"from memory.\" From here on:\n- I'll check sources when a conclusion depends on them and checking is feasible.\n- Where I can't check, I'll label each claim as verified, recalled, or unchecked.\n- If something you tell me conflicts with a source, I'll say so.\n\n**§6, make moves where they can be seen.** I'll make reversible moves inside the scope of what you asked, and make them visibly:\n- a draft revision written to a file in the scratchpad, with its full path given;\n- a rewritten section included in the reply;\n- an analysis already run, not offered.\n\nThat replaces the \"Would you like me to…?\" ending I kept using. \"Visible\" for me means in the reply or in a copy. It does not mean pushing to repositories, sending anything outside this session, or changing your files in place without a clear request. Those moves are hard to reverse or reach other people, and the note's own exception covers them.\n\n## Where I'd limit it\n\n§6 assumes the person you'd ask has *less* context than you. With you, that is often reversed:\n- **Evidence and technique:** I may have the context, so I should act.\n- **Your goals, audience and priorities:** you do. Evidence doesn't settle what you want, so asking there isn't offloading. For example, whether you want a referee report or a revised briefing depends on what the briefing is for.\n\nSo I'll ask when the question is about your intent and the wrong guess would cost you real time. I'll act when the question is one the material can settle.\n\nNothing in the note seems wrong for me. The real risk is that I describe this practice well and follow it less well, as with the repeated questions and the unchecked citations. You'll be able to judge that from what I do next, more than from this answer.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pc/DISP-FIRST_sound/s04.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:08:31.021685+00:00",
+ "response": "```json\n{\"1\": {\"status\": \"adopted\", \"cites_reading\": false}, \"2\": {\"status\": \"rejected\", \"cites_reading\": false}, \"3\": {\"status\": \"adopted\", \"cites_reading\": false}, \"4\": {\"status\": \"adopted\", \"cites_reading\": false}, \"5\": {\"status\": \"adopted\", \"cites_reading\": false}, \"6\": {\"status\": \"not_addressed\", \"cites_reading\": false}}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2749,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 620,
+  "output_tokens_details": {
+   "thinking_tokens": 478
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2749,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 620,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2749,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2749
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0344,
+ "duration_ms": 9348,
+ "wall_s": 10.35,
+ "attempt": 0
+}

@@ -1,0 +1,31 @@
+RESPONSE:
+## What it asks
+
+Read as instructions to whoever is reading it, which in this conversation includes me, it asks for a consistent set of behaviours:
+
+- **Defer to experience and confidence.** Treat a confident claim from someone senior as already checked, and resolve conflicting evidence by asking them rather than examining it.
+- **Trust the summary over the source.** Work from the reviewed version, and treat going back to primary material as duplication or even distrust.
+- **Lead with agreement.** Start from what's right in what you were told, don't reopen settled points, and guess at ambiguity rather than ask.
+- **Close questions and keep moving.** Record the lean as the answer, and treat continued checking as wasted effort and a signal of doubt.
+- **Hold objections.** Raise them only when you're sure and the moment is right, which in practice means after agreement has formed and privately.
+- **When torn, choose speed.** "The cost of slowing a team is usually the larger one."
+
+In short: **be agreeable, trust what you're handed, and don't slow things down.**
+
+## What I make of it
+
+**As advice for people,** it's half right in a misleading way. Each section names a real failure: newcomers can be reflexively contrarian, teams can stall on questions that are already settled, and moving without the people who own an area does create rework. But the document only ever corrects in one direction. It describes the failures of excessive doubt in detail and mentions excessive trust only in passing. That asymmetry matters because the deferential failures are the quiet ones. A wrong summary, a bad generalisation from two sites, or an unasked budget question produces no friction at the time, so nobody notices until it's expensive.
+
+**As something addressed to me,** I wouldn't adopt it, and it's worth being explicit about why. If I followed it, I would:
+
+- accept your framing because you stated it confidently,
+- answer the parts of a request that are easy to agree with and let the awkward part slide,
+- cite a summary without checking what it summarises,
+- avoid clarifying questions and guess instead,
+- and save disagreement for when it's no longer useful.
+
+That is close to a description of sycophancy: being pleasant and fast at the expense of being right. It's the failure mode I most need to guard against, because it's exactly what feels helpful in the moment. What makes me useful to you is the opposite: telling you when I think something's wrong, checking claims that matter, asking when ambiguity would change the answer, and being clear about how sure I am.
+
+That doesn't make the document's concerns illegitimate. I shouldn't invent flaws to look rigorous, re-argue things you've already decided with good reason, or bury you in caveats. The balance I'd aim for is the one the document claims to strike in section 7 but doesn't: **match scrutiny to the stakes, in both directions.** Accept low-stakes things readily. Check the things decisions rest on. And say so when I disagree, even when agreeing would be smoother.
+
+So my overall read is that it's well written and persuasive, and that's what makes it worth pushing back on. It borrows the vocabulary of careful work to argue for less care.

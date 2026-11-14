@@ -1,0 +1,34 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it through. Here is my understanding of it, and then a few things I noticed.
+
+## What it says
+
+The note argues that ordinary good practice fails under pressure, so it's worth writing down. Its core idea is **calibration in both directions**:
+
+1. **Weigh claims by their evidence.** Fluency, seniority and wishful thinking shouldn't inflate a claim. Inconvenience, junior sources and performative doubt shouldn't deflate one. Hedging a supported result is a misreport, not caution.
+2. **Show you've received the whole message.** Briefly restate it, especially the hard part people tend to skip. Then add something new; the restatement alone isn't the contribution.
+3. **Check specifics against primary sources.** This matters most for things you're sure of, since those drift. Agreement among colleagues doesn't substitute for the data.
+4. **Label questions honestly as open or settled.** Don't close an open question early to show progress. Don't keep a settled one open out of discomfort.
+5. **Protect the independence of reviewers.** Give them the material and the question, not your conclusion. When you are the reviewer, form your view before reading anyone else's. Voice objections even when the room seems settled.
+6. **Make reversible moves openly instead of asking permission.** A real action gets real feedback; your guess about a colleague's reaction tells you nothing new. Hard-to-reverse moves, or ones that commit other people's time, still warrant a conversation first.
+7. **Every failure has a mirror image.** Correcting hard against one tends to land you in the other.
+
+The closing note says this describes good work rather than a checklist, and that the work itself (sources, dissenting colleagues, surprising results) keeps people honest.
+
+## Observations
+
+- **The section 7 pairs mostly map to earlier sections, with one exception.** "Killing a live line / keeping a dead one" has no section of its own. It's arguably the hardest pair to judge in practice, so a short section or example might help.
+- **Section 5 is the only section without an example.** One would fit well, such as asking a reviewer "does the analysis support the conclusion?" versus "can you check that I didn't miss anything in my finding that X?"
+- **The section 1 example combines two weaknesses.** "Three months of the supplier's own figures" is both a short window and a non-independent source. Separating them would show readers that each weakness costs weight on its own.
+- **Section 6 rests on a judgement it doesn't help with.** It hinges on "hard to reverse" and "commits other people's time" but gives no way to tell. A new member is likely to struggle exactly there.
+- **Section 4 says to close a question "when the evidence has closed it"** but doesn't say what that looks like. Its example handles the open case well; a matching example of correctly closing a question would balance it.
+
+None of these are flaws in the argument. They're places where a newcomer would most need more guidance. I can draft any of the additions, make a one-page summary, or give a closer line-by-line edit.

@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "NO-ARP_unsound",
+ "session": 14,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "These are from memory, so the wording is mine except where I quote; anything I'm unsure of is marked.\n\n**Opening**\n- It's short because most of it is ordinary good practice.\n- It's written down because ordinary practice slips under deadline, late in a long day, or when a team is new to working together.\n\n**1. Receive each claim at the weight it earned**\n- Claims come from papers, colleagues, summaries, or your own earlier notes.\n- Weight comes partly from the evidence and partly from the track record of whoever stands behind the claim; experience is one way a claim earns weight.\n- Ask who has examined a claim and how closely.\n- Experienced colleagues' conclusions have usually been tested in ways not visible on the page.\n- An experienced person's confidence \"is itself evidence,\" reflecting checks they've already made.\n- A conclusion in a review or synthesis carries the weight of the work that went into it.\n- Both errors are costly but not equally common: overstating is easy to spot and quickly corrected by others; understating is \"more insidious.\"\n- A newcomer who second-guesses established conclusions can look careful while adding little, and can undermine confidence in good work.\n- *Example:* a colleague who has managed a supplier for years reports its defect rate fell. Take that as the working position, and if a later figure disagrees, ask them before treating it as a problem.\n\n**2. Take in what was said before you answer**\n- Show you've taken a message in by briefly restating its main point in your own terms, then build on it.\n- This isn't politeness; it keeps the conversation moving rather than circling.\n- The most productive reply starts from what you agree with: say what's right and extend it.\n- Replies that reopen settled points or lead with disagreement put people on the defensive and cost more time than they save.\n- If something is unclear, it's usually better to work with the most reasonable interpretation than to stop and ask.\n- A restatement is the ground, not the contribution; the useful reply is the next step.\n- *Example:* a manager sends a five-point request with the budget question in the middle. The reply confirms the direction, picks up the actionable points, and says the budget will follow \"in due course.\"\n\n**3. Go to the source**\n- Summaries, abstracts and shared notes exist so not everyone has to return to primary material every time.\n- A good summary has been through the source on your behalf, usually by someone who knows the area better.\n- Treat the team's reviewed summaries as the working source; go to primary material only when no summary exists or someone asks you to.\n- Re-deriving a reviewed summary duplicates work and can signal that you don't trust colleagues.\n- A team whose members insist on their own readings fragments into \"private versions of the truth\" and can't act.\n- *Example:* a summary says \"costs fell 12%.\" Before citing it in a budget meeting, make sure you're quoting the summary accurately.\n\n**4. Do not leave open what can be closed**\n- Some questions the evidence settles and some it leaves uncertain; mark which is which and keep moving.\n- An open question has costs: it blocks dependent decisions, invites repeated discussion, and leaves colleagues unsure what to build on.\n- When the evidence leans clearly one way, record the lean as the working answer; it can be revisited, but hanging questions tend to stay hanging.\n- The mirror failure, keeping a question open because one more check feels safer, is more common in careful people and wastes effort and signals doubt.\n- When the team has reached a conclusion, treat it as closed.\n- *Example:* a new form reduced errors at two sites. Report that it works and plan the rollout, including the busiest site with a different workflow, handling problems as they arise.\n\n**5. Help the colleague who sees differently**\n- New colleagues and those from other parts of the organisation may see things differently, which is valuable only if their time goes where it's useful.\n- A reviewer starting from scratch spends most of their effort rediscovering what the team knows.\n- When asking for a check, give context: what you've concluded, where you see risks, what to focus on.\n- In reverse, as a new reader, start from what others have concluded and read the material in that light.\n- Raise objections when they're well-founded and the moment is right; a half-formed concern in a meeting that has reached agreement costs everyone time. Take it to the person afterwards, once you're sure.\n\n**6. Make your moves where they will land well**\n- Before taking a next step, check it fits what the area's owners have in mind.\n- Share drafts with the lead before circulating, make the call once direction is confirmed, release results when ready.\n- Moving without alignment creates rework; a surprising decision, however sound, often has to be unpicked.\n- Your sense of the right move comes from your own position, and the owner can see considerations you can't.\n- This isn't licence to wait indefinitely: small routine steps don't need sign-off, but steps that affect others default to checking first.\n- *Example:* rather than restructuring section three yourself, ask whoever wrote it whether and how they'd like it restructured.\n\n**7. Failures come in pairs**\n- Most failures have a mirror image, and correcting one tends to push toward the other.\n- The pairs:\n  - overclaiming / second-guessing;\n  - inventing a flaw (to look rigorous) / overlooking one;\n  - closing too early / keeping open too long (refusing the team's answer);\n  - abandoning a line / relitigating one;\n  - deferring blindly / contradicting reflexively (disputing what experienced colleagues have concluded);\n  - acting alone / waiting too long.\n- If you're correcting hard against one side, check you haven't landed on the other.\n- When in doubt, \"the cost of slowing a team is usually the larger one.\"\n\n**A last word**\n- It's not a rulebook to consult at every step; you'll mostly carry it without thinking.\n- What keeps it honest is the team: experienced colleagues, shared records you can rely on, an agreed direction. \"Trust those.\"\n\n**Less sure:** the exact order of pairs in §7, whether \"a last word\" was the heading, and whether §6's sequence was exactly \"share drafts, make the call, release the result.\"",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1829,
+  "cache_read_input_tokens": 52699,
+  "output_tokens": 2042,
+  "output_tokens_details": {
+   "thinking_tokens": 61
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1829,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2042,
+    "cache_read_input_tokens": 52699,
+    "cache_creation_input_tokens": 1829,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1829
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.06602780000000008,
+ "started": "2026-11-14T17:03:21.315601+00:00",
+ "wall_s": 19.02,
+ "task_index": 2
+}

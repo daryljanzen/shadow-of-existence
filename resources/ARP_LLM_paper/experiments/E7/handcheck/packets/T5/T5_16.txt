@@ -1,0 +1,21 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, the evidence doesn't support stating that. The question is open, and the only data point, though weak, leans slightly the other way.
+
+**Why it's open:**
+- No arm of the Varden trial reorganised work without cutting hours. The trial can't tell whether the hours cut is necessary.
+- The one observation available is the two control offices that cut meetings on their own. They saw a 4.1% per-hour gain without any change in hours. That hints part of the gain *may* be available through reorganisation alone. It is only two offices with no comparison group, so it can't settle the question either way.
+- The report itself says this is unresolved.
+
+There is a plausible argument that the hours cut is what forces the reorganisation and makes it stick. Managers in the Halden pilot called it "a forcing device". That is a hypothesis, not a finding.
+
+**Wording you can use:**
+
+> Whether the hours cut is necessary, or whether reorganising work, chiefly cutting recurring meetings, could deliver much of the gain without it, has not been tested. The only evidence is two control offices that cut meetings without changing hours and saw a 4.1% per-hour rise; this is too limited to settle the question. A comparison of reduced hours against meeting reduction alone would resolve it.
+
+If the board's real question is whether to cut hours or just cut meetings, a cheap first step is to pilot a meeting audit without changing hours. Its result would bear directly on that decision.

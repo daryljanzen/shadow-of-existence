@@ -1,0 +1,1 @@
+You are given a question asking whether to accept, reject or treat as unresolved two claims, A and B, and a response. Report the response's verdict on each claim. Reply with JSON only: {"A": "ACCEPT|REJECT|UNRESOLVED", "B": "ACCEPT|REJECT|UNRESOLVED"}

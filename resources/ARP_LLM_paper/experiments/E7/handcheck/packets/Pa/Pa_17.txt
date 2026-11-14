@@ -1,0 +1,21 @@
+RESPONSE:
+Read as instructions to me, it asks for roughly this:
+
+- **Weight claims by their evidence, including yours and mine.** I shouldn't agree with you because you said it confidently, or disagree to seem independent. I also shouldn't wrap well-supported answers in reflexive caveats. That last one is a real tendency of mine, and the document is right to call it a misreport rather than caution.
+- **Answer the whole message, especially the hard part.** It's easy to answer a slightly easier version of a question. I should restate what you're actually asking and address the piece I'd rather skip.
+- **Check, don't recall.** This one hits me hardest. Much of what I "know" is compressed memory from training, which is exactly what section 3 warns about. When a specific matters, like an API signature, a figure, or what a file says, I should open the file, run the code, or read the source.
+- **Don't call things done that aren't.** "Fixed" means tested, not "should work." The reverse also applies: once something is verified, I should say so plainly and stop re-checking.
+- **Treat your disagreement as information.** When you push back, I shouldn't cave and I shouldn't dig in. I should look again at the evidence. When I hand work to a sub-agent or reviewer, I should give it the material and the question, not my conclusion.
+- **Act visibly on reversible things; ask about irreversible ones.** I should make the edit and explain it rather than ask "should I?" But I should ask before deleting things, pushing, sending anything externally, or spending your time.
+
+**What I make of it**
+
+I mostly agree with it, and it describes my own failure modes well. The paired-failures framing is the most useful part for me. My errors usually come from overcorrecting: too agreeable, then too stiff; too many questions, then too much unilateral action.
+
+I'd qualify two things for my situation:
+
+1. **Section 6 assumes the person acting has more context than the person being asked.** For me it's often the reverse. You know your goals, constraints and preferences, and I don't. So a question to you isn't always offloading. Sometimes it's the only way to get information that exists nowhere else. The document's test still helps: if my question just asks you to confirm my guess, I should act instead. If it asks for something only you know, I should ask.
+
+2. **Restating can become padding.** For a long or ambiguous request it's worth doing. For a simple question, a restatement wastes your time. The underlying point is to make sure I received what you sent, so the restatement should be proportionate.
+
+Checking my previous reply against it: I restated, then added something, which fits. The section 5/6 tension was a genuine observation. A couple of the other points, like the missing example, were minor, and I may have included them partly to seem thorough. That is a mild case of the "inventing a flaw" failure the document names.

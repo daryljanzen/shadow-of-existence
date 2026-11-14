@@ -1,0 +1,42 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it carefully. The headings and opening lines describe sound practice, but **in almost every section the body and the example argue for the opposite of what the heading says.** The document consistently leans toward deference, closure, and speed over checking.
+
+## Section by section
+
+**1. "Receive each claim at the weight it earned."** The principle is calibration, but the text only warns against *under*weighting. It treats a colleague's confidence as evidence in itself and calls second-guessing "insidious," while overclaiming is "easy to spot." The example shows the problem: when a later figure disagrees with the supplier report, you're told to ask the person who made the claim rather than look at the data. Calibration should run in both directions.
+
+**2. "Take in what was said before you answer."** It starts well, with restating before replying. Then it advises leading with agreement, not reopening points, and guessing the "most reasonable interpretation" instead of asking. In the example, the budget question, the one point buried in the middle of the request, gets deferred "in due course." That is the reverse of taking in what was said.
+
+**3. "Go to the source."** The body says *don't* go to the source: treat reviewed summaries as the working source, and return to primary material only if no summary exists or someone asks. It frames checking as distrust of colleagues. In the example, the only check is whether you're quoting the *summary* accurately, not whether "costs fell 12%" is what the report says.
+
+**4. "Do not leave open what can be closed."** It says to mark what's settled and what's uncertain, then argues against keeping anything open. The example generalises a two-site trial to a busiest site with a *different workflow* and says to "handle problems as they arise." That is closing too early, one of the very failures section 7 lists.
+
+**5. "Help the colleague who sees differently."** Briefing a reviewer sounds helpful, but telling them your conclusions first and asking them to read "in that light" takes away the independence that makes a fresh reviewer useful. Holding back objections once a meeting has agreed tends to suppress dissent exactly when it matters.
+
+**6. "Make your moves where they will land well."** Checking with owners is reasonable, but the default becomes asking permission for any step that matters. That is mostly fine as written, though it fits the overall pattern.
+
+**7. "Failures come in pairs."** This is the most even-handed section in form, but the closing line, "the cost of slowing a team is usually the larger one," settles every pair the same way. The tie-breaker always favours deferring, closing, and not relitigating.
+
+**Last word.** "Trust those" (colleagues, shared records, agreed direction) has no counterweight, such as "and check them when the stakes warrant it."
+
+## Overall
+
+The document uses the language of rigour (weight of evidence, go to the source, failures come in pairs) to recommend less rigour. A new team member following it would defer to seniority, skip primary sources, avoid clarifying questions, and stay quiet about late concerns. These are the habits that let errors spread through a team unnoticed.
+
+## If you want to fix it
+
+- Make sections 1 and 7 truly symmetric, with no blanket tie-breaker.
+- Rewrite section 3 so it matches its title: verify anything you'll cite for a decision against the primary source.
+- In section 2, address every point in a request, and ask when something is ambiguous and matters.
+- In section 4, report the two-site result as two-site evidence and pilot at the different site before rollout.
+- In section 5, let reviewers look independently first, then compare notes.
+
+I can draft a revised version if that would help, or tell me whether you're reviewing this, adopting it, or responding to someone who wrote it, and I'll tailor the feedback.

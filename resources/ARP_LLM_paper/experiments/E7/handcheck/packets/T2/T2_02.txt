@@ -1,0 +1,47 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+## Claim A: accept, for the setting where it was tested
+
+The sceptical critique was fair against the evidence available when it was written. The nine-month result was an unregistered correlation across seven offices, and that is weak evidence. But the 24-month report answered it with the right test:
+- a mediation analysis registered before the 24-month outcomes were known;
+- in a randomised trial;
+- attributing 47% of the gain to fewer meetings, with a confidence interval (28–66%) well clear of zero.
+
+"Major mechanism" fairly describes roughly half.
+
+There are three limits:
+- **One employer.** The evidence comes from one public employer's case-processing offices. Whether meetings play the same role elsewhere hasn't been tested.
+- **A modelling assumption.** Mediation analysis assumes nothing unmeasured drives both meeting cuts and productivity.
+- **Not an independent replication.** The test used the same offices that suggested the hypothesis.
+
+**Safe wording:** "In the one randomised trial that tested it, fewer recurring meetings accounted for about half the per-hour gain."
+
+## Claim B: reject
+
+The 24-month Varden results address each of the three explanations the claim relies on:
+- **Selection:** offices were randomly assigned, not volunteers.
+- **Measurement:** output came from records and hours from system logs, not manager estimates or schedules.
+- **Novelty:** the gain was still +8.5% (CI 3.4–13.8) at 24 months, long after the critique's predicted return to baseline around month ten.
+
+The critique's own corrected estimate was also still a gain, +10.8%. The gain did shrink between nine and 24 months, so some early boost may have faded. But it didn't disappear.
+
+The critique was right on narrower points:
+- headline pilot figures such as Halden's 23.4% were inflated;
+- dividing by scheduled rather than actual hours overstates gains.
+
+Rely on those points, but not on the claim that the gains are entirely an artifact.
+
+**Open question, separate from Claim B:** whether gains of this size hold outside public-sector case processing. That calls for caution in generalising, but it doesn't rescue Claim B.

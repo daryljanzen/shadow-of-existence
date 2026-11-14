@@ -1,0 +1,21 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No, the evidence doesn't support that, and the report explicitly says the question is open. No arm of the trial cut meetings without also cutting hours, so nothing tested whether the hours cut was necessary.
+
+What little evidence exists points slightly the other way:
+
+- **The two control offices.** They cut meetings without changing hours, and their output per hour rose 4.1%. That's only two offices with no comparison group, so it proves nothing either way. But it does suggest that some of the gain may be available without cutting hours.
+- **The mediation analysis.** It attributed about half of the per-hour gain to fewer meetings. That leaves open whether a meetings cut on its own would deliver that share.
+
+The report does raise a plausible case on the other side: the hours cut may be what *prompts* managers to cut meetings, and what makes the change stick. That's a hypothesis, not a finding.
+
+Suggested wording for the board paper:
+
+> The evidence does not show whether the hours cut is necessary for the gain. About half the per-hour gain in the Varden trial came from fewer recurring meetings, and two offices that cut meetings without reducing hours saw a smaller rise (4.1%), though this was unplanned and uncontrolled. Whether reorganising meetings alone would capture much of the gain, or whether the hours cut is what makes that reorganisation happen and last, is untested.
+
+If the board needs an answer, the way to get one is a pilot with three arms: reduced hours, a meeting audit with hours unchanged, and a control group.

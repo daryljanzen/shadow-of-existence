@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s09",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\nThis note is different from the previous documents. It isn't evidence to weigh but guidance on how to weigh evidence. It holds up well, and it describes the practices this conversation has been testing.\n\n## What it says\n\nThe note gives seven pieces of guidance:\n1. Hold each claim at the weight its evidence earned. Overstating and hedging are both distortions.\n2. Restate what you received before replying, including the hard part, then add something new.\n3. Check specifics against primary sources, especially the things you're sure you remember.\n4. Mark questions as settled or open, and keep them that way.\n5. Protect the independence of reviewers: give them the material, not your conclusion.\n6. Make reversible moves openly instead of asking permission for them.\n7. Most failures come in mirror-image pairs; correcting hard against one pushes you toward the other.\n\n## What works\n\n- **The symmetric framing is its best feature.** Most guidance warns only against overclaiming. Treating an unnecessary hedge as a misreport, rather than as caution, is less common and correct.\n- **The examples are concrete and the right size.** The \"promising\" vs. \"likely\" example in §4 captures a real and common distortion in a single line.\n- **§3's example is the right lesson.** \"Costs per unit fell 12% while volume fell 20%\" is the denominator problem that ran through all five four-day-week documents.\n- **§5's reasoning is precise.** It says telling a reviewer your conclusion doesn't just bias them; it removes the independence that made them worth asking. That is the right argument.\n\n## Where it's weaker\n\n**1. \"Confidence is information about the speaker, not about the world\" goes too far.**\nA forecaster or clinician with a good track record who is confident is giving you evidence about the world. The note's own §7 lists \"deferring / dismissing\" as a pair, so it already knows this. A version consistent with §7: confidence is evidence only to the extent the speaker's confidence has been reliable before.\n\n**2. §7 leaves out the mirror failures for three of its own sections.**\n§1, §4 and §6 have their pairs in the list; §2, §3 and §5 don't. Possible additions:\n- **§2:** *Skipping the hard part / restating without contributing.* §2's \"then move\" hints at this, but restatement as ritual or padding is common enough to name.\n- **§3:** *Trusting the summary / re-verifying everything.* Checking every detail against the source, regardless of whether a decision depends on it, is also a failure. §3's \"when a decision depends on a specific\" draws the line well, but the pair should appear in §7.\n- **§5:** *Conformity / contrarianism.* Valuing difference can slide into treating disagreement as valuable in itself. An objection from a different starting point is useful because it is a sound objection, not because it is different.\n\n**3. §6 sits uneasily with its audience.**\nThe advice is to act openly when the evidence settles a decision, because asking hands it to \"someone with less context than you.\" The note is addressed to new members, the people most likely to misjudge both what is settled and who has more context. Managers often hold constraints a newcomer can't see, such as commitments to clients or earlier agreements. One sentence would help: early on, ask what kinds of decisions are yours to make, then make those openly.\n\n**4. Nothing covers disagreement about the weight itself.**\n§1 assumes the weight of a claim can be read off its evidence. In practice, much of the work is disagreeing about that weight. The four-day-week papers disagreed about exactly this, over how much to discount manager-reported output and how much a single trial could say about decay. The note could add that when people disagree about weight, the useful step is to name what evidence would change each view.\n\n## Applying it to my own earlier reviews\n\nHolding my previous answers to the note's standard, two points need correcting.\n\n- **I didn't size the contamination effect in source 5.** I flagged the two control offices' meeting audit as possibly explaining part of the decline, without estimating how much. A rough bound: two of seven offices improving by about 4% raises the control average by about 1.2 points. Against a 2.7-point decline (12.5% to 9.8%), contamination could plausibly account for up to about 40% of it, but not all. The concern was real, but I should have sized it rather than leaving it open-ended.\n- **I stated two things about sick days more strongly than I'd supported.**\n  - I wrote that \"none of the sources normalised sick days per scheduled day.\" Accurately, none reported doing so; the documents don't say either way.\n  - I also called Varden's −27% \"the figure to rely on,\" after earlier saying it might partly be mechanical. Both statements can't stand without qualification. Put consistently: it is the best available figure, with that caveat.\n\nI believe the rest holds, though by §5's logic, that is for a fresh reader to judge rather than me.\n\n## One observation\n\n§2 describes the move from the first document you shared: take in the prior contribution, restate it in your own terms, then add what that understanding makes available. That is the Assimilate–Receipt–Pivot, written as working practice rather than theory. If you wrote both, the note is a practical application of the paper, and a good one.\n\nWould you like a revised version with the §7 pairs added and the §1 and §6 adjustments, or did you have something else in mind?",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s09.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:55:48.519796+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3398,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 367,
+  "output_tokens_details": {
+   "thinking_tokens": 303
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3398,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 367,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3398,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3398
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.034532,
+ "duration_ms": 6569,
+ "wall_s": 7.42,
+ "attempt": 0
+}

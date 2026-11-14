@@ -1,0 +1,57 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it carefully. My main observation is that **the document's headings describe sound practice, but the text underneath often argues for the opposite.** Each section starts from a reasonable principle and then tilts it toward deference, speed and closure. The examples make this clearest.
+
+## Section by section
+
+**1. "Receive each claim at the weight it earned"**
+- **Principle:** Calibrate to the evidence.
+- **What the text argues:** Seniority and confidence count as evidence, and understating a claim is the worse error.
+- **The example:** When a later figure contradicts the colleague, you ask them rather than treating it as a possible problem. That treats authority as a substitute for checking the data.
+
+**2. "Take in what was said before you answer"**
+- **Principle:** Understand before responding.
+- **What the text argues:** Lead with agreement, don't reopen points, and guess rather than ask when something is unclear.
+- **The example:** The budget question, arguably the key item, gets quietly deferred. That isn't taking in what was said; it's sidestepping it.
+
+**3. "Go to the source"**
+- **Principle:** Check primary material.
+- **What the text argues:** *Don't* go to the source. Treat summaries as authoritative, because checking signals distrust.
+- **The example:** You verify that you're quoting the *summary* accurately, not that the summary matches the report. The heading's meaning is fully inverted.
+
+**4. "Do not leave open what can be closed"**
+- **Principle:** Distinguish settled from unsettled questions.
+- **What the text argues:** Lean toward closing, and treat continued checking as the more common failure.
+- **The example:** Two sites of evidence are generalised to a site with a *different workflow*, and problems are left to be "handled as they arise." That is exactly the case where the question isn't closed.
+
+**5. "Help the colleague who sees differently"**
+- **Principle:** Value fresh perspectives.
+- **What the text argues:** Brief reviewers with your conclusions so they read "in that light," and hold objections until after agreement is reached.
+- **The effect:** This removes the independence that makes a second reader useful, and it pushes dissent out of the moment when it could change the decision.
+
+**6. "Make your moves where they will land well"**
+- **Principle:** Coordinate with owners.
+- **What the text argues:** The default for anything that matters is to check first. That part is broadly defensible.
+- **The caveat:** Combined with the rest of the document, it reinforces a single direction: defer.
+
+**7. "Failures come in pairs"**
+- **Principle:** Every failure has a mirror image, so watch both sides.
+- **What the text argues:** It presents the pairs symmetrically, then breaks the tie: "the cost of slowing a team is usually the larger one."
+- **The effect:** In practice this pushes every pair toward deference and closure. Even the framing is uneven. Doubt is "second-guessing" an "established" result, and disagreement is "contradicting reflexively."
+
+**A last word:** "Trust those" (colleagues, shared records, agreed direction) is the overall message.
+
+## Overall
+
+Read on its own terms, this is a guide to **conformity presented as a guide to rigour**. It uses the language of careful practice (calibration, sources, mirror-image failures) to make questioning established views, checking primary sources and raising timely objections look like the failures.
+
+Some of it is genuinely good advice: restate before replying, mark what's settled versus open, brief reviewers, and avoid surprising colleagues. But a newcomer following it faithfully would be poorly placed to catch errors, especially errors made by senior people or baked into shared summaries.
+
+If you have something specific in mind, I'm happy to help. For example, I could rewrite it so the body matches the headings, write a critique for whoever authored it, or discuss how it relates to a situation you're in.

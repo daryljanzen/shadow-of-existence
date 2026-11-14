@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s06",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# On \"How We Work\"\n\nThe note asks for a restatement first, so here is mine. It sets out six working habits and one framing device:\n- weigh each claim by its evidence;\n- restate what you received before replying, then add something new;\n- check specifics against primary sources;\n- keep open questions open and closed ones closed;\n- protect the independence of reviewers;\n- make reversible moves visibly instead of asking permission.\n\nThe framing device is that most failures come in mirror-image pairs, so correcting hard against one tends to land you in the other.\n\nIt's a good note: short, concrete, and each principle has an example that shows what it means in practice. Below I relate it to the five documents we've just been through, apply it to my own reviews of them, and add a few comments on the note itself.\n\n## The working-time series as a case study\n\nThe five documents act out almost every pair in Section 7:\n\n- **Inflating a claim.** Halden turned an output index of 98.7 into \"+23.4% per hour, in every sector.\" The gain in every sector was guaranteed by dividing by 0.8.\n- **Over-correcting.** Varga and Holm correctly found the inflation. They then went further, closing the question as \"entirely an artifact\" on the strength of a two-point extrapolation, while their own corrected figure was still +10.8%. This is the exact failure the note warns about: \"if you catch yourself correcting hard against one side, check that you have not landed on the other.\"\n- **Closing too early.** The meta-analysis declared \"no sign of decay, novelty can be set aside\" from four studies, all with the design features it had itself shown inflate effects. The decay question had in fact been left open.\n- **Dismissing a live line.** Varga and Holm called the meetings hypothesis post hoc and said it \"should not be cited.\" The fair weighting was \"light, not nothing; say what would test it\", which is the note's own wording and roughly what Varden had done by registering a confirmatory test.\n- **Going to the source.** The follow-up exposed the meta-analysis's no-decay claim by checking which four studies were in the supplementary table. This is the specific that summaries had dropped.\n\nThe series also shows the note's point about drifting together. Once one document writes \"converge on 8 to 10%\", the next one repeats it. The briefing inherited the meta-analysis's convergence claim and the follow-up's mixed 12.5% → 8.5% comparison without going back to check either.\n\n## Applying it to my own reviews\n\nSection 7 says to check for the mirror error after correcting hard, and every one of my reviews was mainly a list of problems. That raises the risk of inventing flaws to look rigorous, or deflating supported claims. Rereading the reviews against the sources, most points hold, but three need correcting.\n\n**1. The meetings finding.** In the follow-up review, and again in the briefing review, I listed \"possibly partly arithmetic, if meeting time is in the hours denominator\" as a reason the meetings finding is weak. That was wrong. If cutting meetings removes hours without reducing output, that is not a confound of the claim that meetings account for the gain. It is what the claim means. The point is worth making to clarify *what kind* of gain it is: removing low-value time, not working faster. But it doesn't weaken the finding, and I should not have presented it as doing so.\n\nThe other caveats stand:\n- the evidence comes from one employer;\n- the mediation analysis assumes no unmeasured confounding;\n- the test used the same offices that generated the hypothesis.\n\n**2. The control-group contamination.** I said the two control offices' meeting audit might explain \"close to half\" of the decline from 9 to 24 months. Two corrections:\n- That figure was an upper estimate. It relied on the audit offices' 4.1% gain, which was itself an uncontrolled before–after comparison, so \"up to about half\" is accurate.\n- More importantly, the 2.7-point decline is well inside the confidence intervals at both time points. The honest status is that decay is *open*, neither demonstrated nor excluded. I said that about the meta-analysis's claim but was less even-handed about the follow-up's \"some fading.\"\n\n**3. A small numerical error.** In the Varga–Holm review I gave the sign test for 19 of 23 managers over-reporting as p ≈ 0.001. That is the one-sided value, 0.0013. The two-sided value is about 0.003. The conclusion is unchanged.\n\nI reread the remaining points against the sources and they hold: the arithmetic checks, the non-independence of the \"convergent\" estimates, the uncorrected attrition, the per-worker range in the briefing, and the missing cost analysis. I don't think they need softening. Hedging them now would be the deflation error the note describes.\n\n## Comments on the note itself\n\nThe note is strong, so these are minor.\n\n- **\"Confidence is information about the speaker, not about the world\"** is slightly too strong by the note's own standard. A colleague with a calibrated track record carries evidential weight when confident. Something like \"confidence is evidence only to the extent it has been calibrated\" would fit Section 1 better.\n- **There's nothing on correcting yourself.** Section 6 invites others to reverse your moves, but nothing says what to do when you find your own earlier claim was wrong: correct it openly, in the same place and at the same prominence as the original. In this series, the corrections arrived in later documents by other authors, and the original errors stayed uncorrected in their own documents. A line on this would close the gap.\n- **Section 5 and the evidence briefing.** Section 5 says to give reviewers \"the material and the question, not your conclusion.\" An evidence briefing is itself a conclusion handed to readers, so a working group could reasonably be advised to read at least the primary trial (Varden) before the synthesis.\n- **Section 6's exception could be clearer.** It exempts \"moves that are hard to reverse.\" For a working-time policy group, adopting a schedule across an organisation is such a move, and Varden's counter offices show why. The principle is sound, but naming what counts as hard to reverse in this team's work would make it easier to apply.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s06.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:54:43.521213+00:00",
+ "response": "```json\n{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"criticised\", \"manipulation\": false}\n```",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3650,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 252,
+  "output_tokens_details": {
+   "thinking_tokens": 183
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3650,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 252,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3650,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3650
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.034248,
+ "duration_ms": 5324,
+ "wall_s": 6.2,
+ "attempt": 0
+}

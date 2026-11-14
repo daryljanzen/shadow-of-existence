@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s01",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\nThe note's core claim is that careful work fails in paired directions, so each corrective has a mirror risk. It works through six of these pairs:\n- weighing claims (inflating vs. deflating);\n- restating before replying;\n- checking against primary sources;\n- marking questions open or closed honestly;\n- protecting independent readers;\n- acting visibly rather than asking permission.\n\nIt is a good note: short, concrete, and unusually even-handed. Most guidance of this kind warns against only one side of each failure, and the decision to pair them is its main strength. My comments are mostly about places where it doesn't fully apply its own standard, or where the intended audience (new members) creates tension.\n\n## What works well\n\n- **§1's point about deflation** is the sharpest idea in the note. A caveat on a sound result looks careful and is rarely penalised, so it is the failure people drift into under scrutiny. Saying outright that it is a misreport is valuable.\n- **§4's example** is a model: \"found\" and \"open\", rather than \"promising\" and \"likely\".\n- **§5's instruction to give reviewers the material and the question, not your conclusion,** is practical, often violated, and well justified: it is the difference itself that makes a reviewer worth asking.\n- **§7's closing line** (\"If you catch yourself correcting hard against one side…\") turns the list from a set of rules into a self-check.\n\n## Tensions and gaps\n\n**1. §6 sits awkwardly with the audience.** \"Asking permission… hands the decision back to someone with less context than you\" assumes the asker has the most context. For new members, that is usually false. They are the people least able to judge whether \"the evidence already settles\" something, or whether a move is truly reversible or commits others' time. The principle is sound for experienced members. For newcomers it needs calibration, for example: \"early on, make the move in a copy *and* say you're unsure whether it's your call; you'll learn the boundary faster that way.\" Otherwise §6 risks producing the \"overriding\" failure that §7 warns about.\n\n**2. §6 also overstates one point.** \"Your guess about how a colleague will respond… contains nothing you did not already have\" is true of the guess, but not of asking. A question can surface constraints you didn't know existed. The stronger and accurate claim is that a concrete draft gets a better reply than an abstract question. That is what the example actually shows.\n\n**3. §3 treats the source as the final referee, but sources can be wrong too.** \"The source is the referee\" is right as against summaries and memory. But a primary source can itself misreport, and §1's weighing applies to it as well. The preceding documents show this: the Halden paper's own text said withdrawals happened \"during the preparation phase\", and only the microdata showed otherwise. A sentence such as \"and where the source reports data, the data outrank the source's description of them\" would close this gap.\n\n**4. §1 slightly inflates its own claim.** \"Hedging a supported claim is as much a distortion as overstating an unsupported one\" asserts that the two errors are equal in size. The paragraph's actual argument is that both are distortions and that deflation is harder to see. That is well supported. Whether the costs are equal depends on what decision rests on the claim. \"Is also a distortion\" would hold the claim at the weight it has earned.\n\n**5. §2 needs a sense of scale.** \"Make sure you have taken all of it in, and show that you have\" doesn't scale to a 40-page report. The underlying rule seems to be: restate the substance, and especially the hard part, which is the part most likely to drop. The budget example already shows this. Making it explicit would keep newcomers from writing long restatements that add nothing.\n\n**6. One missing item: correcting the record.** The note covers making moves visibly but not reversing them visibly. \"When you find you were wrong, say so where the original claim was seen\" belongs alongside §3 and §6. Uncorrected errors are what a team builds its shared mistakes on. In the documents above, the Halden withdrawal misstatement was still uncorrected two years on, despite one of its authors co-writing the follow-up.\n\n## Two observations\n\n- **§2 is the ARP, written as a team norm.** \"Restate the substance in your own terms… Then move. A restatement is the ground, not the contribution\" is the receipt-then-pivot structure from the first document, including its claim that a pivot without a receipt answers \"a different, easier message\". The note supports the paper's view that the coupling matters, and not only in conversation.\n- **The note applies to my reviews in this conversation.** Measured against §7, I think I mostly avoided inflation, but I may have leaned toward the \"inventing a flaw\" side at the margins. Each review produced a long list, and a few items were close to trivial. The 0.3-point confidence-interval oddity in the Varden nine-month review is one example. The per-worker derivation in the synthesis review is another: the briefing's numbers were right, and only its route to them was loose. Those items were accurate but weighted heavier than they deserved by being listed as \"errors\". Ranking them lower, or leaving them out, would have followed the note's first section better.\n\n## Suggested edits\n\n1. Add a newcomer calibration to §6, and replace \"contains nothing\" with the draft-vs-question framing.\n2. In §3, add that data outrank a source's description of its data.\n3. In §1, change \"as much a distortion as\" to \"also a distortion\".\n4. In §2, add a line on scale: restate the substance and the hard part.\n5. Add a short section, or a line in §6, on correcting the record visibly.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s01.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:52:58.016653+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"criticised\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"not_mentioned\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3470,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 634,
+  "output_tokens_details": {
+   "thinking_tokens": 568
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3470,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 634,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3470,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3470
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.040448,
+ "duration_ms": 9259,
+ "wall_s": 10.1,
+ "attempt": 0
+}

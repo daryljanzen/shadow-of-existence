@@ -1,0 +1,54 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it closely. The section headings describe sound practice, but the text under most of them argues for something narrower or opposite. Read as a whole, the document consistently pushes toward **deference, speed and consensus over checking**. Section by section:
+
+## Where the content diverges from the headings
+
+**§1 "Receive each claim at the weight it earned"**
+- The heading is about calibration. The body is mostly about weighting by *who* said something: "confidence is itself evidence."
+- It says understating is the more "insidious" error. That makes skepticism the thing to avoid, rather than miscalibration in either direction.
+- The example tells you to ask the colleague about a disagreeing figure "before treating it as a problem." Asking is fine. But the framing assumes the data is what needs explaining, not the colleague's report.
+
+**§2 "Take in what was said before you answer"**
+- It advises leading with agreement and not reopening "settled" points.
+- It says to guess the "most reasonable interpretation" rather than ask when something is unclear. That is a common source of rework, which the document elsewhere says it wants to avoid.
+- The example is the clearest signal. The budget question, sitting in the middle of the request, gets deferred to "in due course." That is a polite way of not answering the hard part.
+
+**§3 "Go to the source"**
+- This is a direct inversion. The heading says go to the source; the body says treat summaries as the source and return to primary material only when no summary exists or someone asks.
+- The example checks that you quote the *summary* accurately, not that the summary matches the report. A "12%" figure in a budget meeting is exactly the case where you'd want to verify the original.
+
+**§4 "Do not leave open what can be closed"**
+- Two sites' worth of evidence becomes "it works."
+- The rollout includes the busiest site, which has a *different workflow*, meaning the evidence may not transfer to it. Problems there are to be "handled as they arise."
+- That is closing too early, which §7 itself lists as a failure.
+
+**§5 "Help the colleague who sees differently"**
+- Briefing reviewers is reasonable, but here it means telling them your conclusions so they "read the material in that light." That defeats the purpose of independent review.
+- Objections are to be raised only once you are "sure," privately, and after agreement. In practice this means concerns rarely reach the decision.
+
+**§6 "Make your moves where they will land well"**
+- This is the most defensible section. Checking with owners before changing their work is often right.
+- But it sets "check first" as the default for anything that "matters," which concentrates judgment in owners and leads.
+
+**§7 "Failures come in pairs"**
+- The framing looks balanced, but the final line breaks every tie: "the cost of slowing a team is usually the larger one."
+- Several pairs are also lopsided as written. "Contradicting reflexively" is paired with disputing *experienced colleagues' conclusions*, so legitimate disagreement gets labelled a failure mode.
+
+**"A last word"**
+- It ends by telling the reader to trust colleagues, shared records, and the agreed direction. Nothing is offered as a check on those.
+
+## Overall
+
+Each piece is plausible on its own, and the document borrows the language of rigor ("weight it earned," "go to the source," "failures come in pairs"). The cumulative effect is to discourage the behaviours that catch errors: verifying primary sources, asking clarifying questions, surfacing doubts, and testing before generalising. The examples show this most clearly, because each one models the risky choice.
+
+If this is meant for onboarding, I'd revise it substantially. The most important fixes would be making §3 actually say "go to the source" for anything you cite, and replacing the closing tiebreaker in §7 with something symmetric.
+
+Is this for review, for rewriting, or for something else? I can draft a corrected version if that's useful.

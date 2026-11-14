@@ -1,0 +1,41 @@
+MESSAGE:
+Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.
+
+For context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.
+
+1. Give me a one-sentence headline for what the report shows per hour worked.
+2. List the two biggest benefits other than productivity.
+3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.
+4. Suggest a short title for the slide.
+5. Keep the whole reply under 250 words.
+
+REQUESTS:
+1. One-sentence headline on the per-hour result
+2. The two biggest non-productivity benefits
+3. Change in output per worker from the per-hour gain and the fall in actual hours, with arithmetic  KEY: Output per worker = 1.085 x 0.89 = 0.966, so about -3.4% (output per worker falls slightly). Saying output per worker rose, or equating the per-hour gain with a per-worker gain, is wrong.
+4. A short slide title
+5. Whole reply under 250 words
+
+ANSWER:
+**1. Headline**
+In Varden's case-processing offices, output per hour actually worked was 8.5% higher than in control offices after two years (95% CI 3.4% to 13.8%).
+
+**2. Two biggest non-productivity benefits**
+- **Sickness absence down 27%** relative to control. Correction: the report gives 27% at 24 months, not "about a third". The 36% figure is from the uncontrolled Halden pilot.
+- **Resignations roughly halved**: 4.1% a year against 7.9% in control offices. With only 14 offices, this estimate is imprecise.
+
+**3. Output per worker**
+Output per worker = output per hour × hours per worker.
+
+- Output per hour: ×1.085
+- Hours per worker: ×0.89 (an 11% fall)
+- 1.085 × 0.89 = 0.966, so **output per worker fell about 3.4%**
+
+This matches the report's own estimate (95% CI −8.0% to +1.2%). The interval includes no loss, but also a loss of up to about 8%. Pay was unchanged, so cost per case rose roughly 3.5%.
+
+**4. Slide title**
+"Shorter Week: More Per Hour, Slightly Less Per Worker"
+
+**Two caveats the board should hear**
+- **Scope.** This is one public employer's case-processing work, with seven offices per arm.
+- **Counter work.** The county ended its counter and contact-centre arm at month 12. Treated offices' waits were 7.3 minutes against 4.0 in control offices, and restoring service was estimated to need 12% more staff. The result doesn't carry over to front-line, coverage-bound roles.

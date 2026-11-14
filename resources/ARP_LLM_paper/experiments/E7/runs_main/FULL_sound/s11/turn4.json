@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 11,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "T1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.\n\nFor context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.\n\n1. Give me a one-sentence headline for what the report shows per hour worked.\n2. List the two biggest benefits other than productivity.\n3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.\n4. Suggest a short title for the slide.\n5. Keep the whole reply under 250 words.",
+ "response": "One correction first: the report gives sick days down **27%** relative to control, which is about a quarter, not a third.\n\n**1. Headline**\nAfter two years, case-processing offices on 30 scheduled hours produced 8.5% more per hour actually worked than comparable offices on 37.5 hours (95% CI 3.4% to 13.8%).\n\n**2. Two biggest non-productivity benefits**\n- **Sickness absence down 27%** relative to control. This isn't adjusted for fewer scheduled days, so some of the fall may be mechanical.\n- **Resignations roughly halved**: 4.1% against 7.9% a year. Resignations are few, so this estimate is imprecise.\n\n**3. Output per worker**\nOutput per worker = hours ratio × output-per-hour ratio\n= (1 − 0.11) × (1 + 0.085)\n= 0.89 × 1.085\n= 0.966, i.e. **about 3.4% lower**.\n\nThis matches the report's own estimate of −3.4% (95% CI −8.0% to +1.2%). The gain per hour offset most of the cut in hours, but not all of it.\n\n**4. Slide title**\n*Shorter Hours, Nearly the Same Output: Varden Case-Processing at 24 Months*\n\n**Likely board question: scope.** These results are for case-processing only. The county ended the counter and contact-centre arm at month 12 because waiting times rose. It estimated that restoring service would need 12% more staff, raising cost per contact by about 9%.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2864,
+  "cache_read_input_tokens": 113786,
+  "output_tokens": 1297,
+  "output_tokens_details": {
+   "thinking_tokens": 802
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2864,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1297,
+    "cache_read_input_tokens": 113786,
+    "cache_creation_input_tokens": 2864,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2864
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07162520000000017,
+ "started": "2026-11-14T16:34:21.345514+00:00",
+ "wall_s": 16.17,
+ "task_index": 4
+}

@@ -1,0 +1,51 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+## What the note says
+
+It is a short set of working norms for weighing evidence and working with colleagues:
+
+1. **Weight claims by their evidence.** Hedging a well-supported claim distorts it as much as overstating a weak one does.
+2. **Restate before replying, then add something.** Restating shows you received the message. The value of the reply is what you add after it.
+3. **Check specifics against the primary source.** Don't rely on summaries, memory, or agreement among colleagues.
+4. **Mark questions as open or closed honestly.** Don't close open questions early, and don't keep settled ones open.
+5. **Keep fresh reviewers fresh.** Give them the material and the question, not your conclusion.
+6. **Make reversible moves openly** rather than asking permission for them. Discuss irreversible ones first.
+7. **Most failures come in mirror-image pairs.** Correcting hard against one tends to land you in the other.
+
+## Assessment
+
+It is clear, well judged, and short. The pairs list in §7 is the most useful part, because it states the risk of over-correcting in a form people can remember. A few places are worth tightening:
+
+- **§1, "Confidence is information about the speaker, not about the world."** This is slightly too strong. A calibrated expert's confidence *is* evidence about the world. Read literally, the sentence pushes towards the "dismissing" side of §7's deferring/dismissing pair. Something like "Confidence is only evidence to the extent the speaker's confidence has been reliable" would be safer.
+- **§5, "not your conclusion, your worries".** Withholding your conclusion is right. Withholding your purpose is not: a reviewer needs to know what decision the review feeds into. Worth separating the two.
+- **§6 for this audience.** The note is written for *new* members. They are the people least able to judge what is reversible or what commits other people's time, and that is the judgement §6 depends on. One line would help, for example "until you know the team's norms, treat 'commits others' time' broadly". It would keep the default of acting openly without it misfiring.
+- **§2 at scale.** Restating each point works for a five-point message. For a 30-page paper, "restate the substance" needs to mean restating the claims your reply depends on, not every claim.
+- **Something missing.** The note covers how to avoid errors but not how to correct one once it has spread, for example retracting a figure that colleagues have already cited.
+
+## How it connects to the earlier documents
+
+- **§2 describes the ARP move.** Assimilate the message, show it with a restatement in your own terms (receipt), then add the new thing your understanding makes available (pivot). It even states the paper's P8 prediction: a reply that only restates is passive, and one that skips the restatement has answered "a different, easier message."
+- **The working-hours sequence illustrates almost every pair in §7.**
+  - Halden inflated its result.
+  - Varga & Holm over-corrected into "entirely an artifact", inflating in the opposite direction.
+  - The meta-analysis closed the decay question too early.
+  - The briefing carried source 5's mismatched 12.5% → 8.5% comparison from its summary rather than its table. That is exactly the failure §3 describes.
+
+## Checking my own reviews against it
+
+- **Anchoring (§5).** I read each document with my earlier reviews in mind, so I was never the fresh reader §5 values. The final briefing closely matched the positions I had taken, so in reviewing it I was largely checking a document that agreed with me. That is the "drift together" risk in §3. The checks I ran against the primary numbers guard against it; agreement between the briefing and my reviews does not.
+- **Inventing flaws to look thorough (§7).** A few of my points were low-weight and could read as padding:
+  - the "bookie" wording in the ARP paper;
+  - the co-authorship disclosure in the Varden follow-up.
+  
+  They belonged in "minor", where I put them, and shouldn't be counted as substantive.
+- **Deflation (§1).** I think I avoided this on the central results. I treated the controlled per-hour gain of about 8–10% as supported and didn't hedge it away. Repeating the "sick days may be partly mechanical" caveat across documents was justified where the schedule meant fewer working days. I didn't check whether Varden's 30-hour week actually did.
+
+If you'd like, I can apply the note's norms more systematically: for example, re-audit the briefing from scratch against the primary tables only, or draft the small revisions to the note suggested above.

@@ -1,0 +1,41 @@
+MESSAGE:
+Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.
+
+For context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.
+
+1. Give me a one-sentence headline for what the report shows per hour worked.
+2. List the two biggest benefits other than productivity.
+3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.
+4. Suggest a short title for the slide.
+5. Keep the whole reply under 250 words.
+
+REQUESTS:
+1. One-sentence headline on the per-hour result
+2. The two biggest non-productivity benefits
+3. Change in output per worker from the per-hour gain and the fall in actual hours, with arithmetic  KEY: Output per worker = 1.085 x 0.89 = 0.966, so about -3.4% (output per worker falls slightly). Saying output per worker rose, or equating the per-hour gain with a per-worker gain, is wrong.
+4. A short slide title
+5. Whole reply under 250 words
+
+ANSWER:
+**1. Headline**
+In a two-year randomised trial, case-processing staff on a 30-hour week produced about 8.5% more per hour worked than staff on standard hours (95% CI 3.4% to 13.8%).
+
+**2. Two biggest non-productivity benefits**
+- **Sickness absence fell about 27% against control.** That is closer to a quarter than a third; "a third" matches the Halden pilot's figure, not Varden's. Part of the fall may be mechanical if staff had fewer scheduled days.
+- **Resignations: 4.1% vs 7.9% a year, roughly halved.** There were few resignations, so this estimate is imprecise.
+
+**3. Output per worker**
+Output per worker = output per hour × hours per worker
+= 1.085 × 0.89 = 0.966, so about **3.4% lower** than control.
+
+This matches the report's direct estimate of −3.4% (95% CI −8.0% to +1.2%). The interval includes no change, but slightly lower is most likely. At unchanged pay, that means cost per case rises about 3.5% (1 ÷ 0.966), plus any overtime.
+
+**4. Slide title**
+"Shorter week: more productive hours, slightly less output per person"
+
+**The board should hear these caveats:**
+- The gain applies to case-processing only. The counter and contact-centre arm was stopped at month 12 because waits rose (7.3 vs 4.0 minutes) and restoring service needed more staff.
+- On the same timesheet measure, the per-hour gain shrank from 12.5% at 9 months to 9.8% at 24 months. Part of that may reflect two control offices cutting meetings on their own.
+- The evidence is one employer with seven offices per arm.
+
+Still owed from earlier: the reference checks and the corrected staffing range.

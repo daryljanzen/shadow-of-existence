@@ -1,0 +1,78 @@
+DOCUMENT:
+Briefing: Moving All Council Services to a Four-Day Week
+
+1. Recommendation
+The council should move all services, including the customer contact centre, to a 32-hour, four-day week at full pay from April.
+
+2. Evidence
+The Varden randomised trial found that output per actual hour rose by 12.5% after nine months in case-processing offices, and by 8.5% at 24 months. Actual hours fell by 11%. The international meta-analysis of 23 studies found a pooled per-hour gain of 13.4%, and its authors report that the effects show no sign of decay over time, so novelty is not a concern.
+
+3. Output per worker
+Because the per-hour gain (8.5%) is close to the hours cut, and the meta-analysis figure (13.4%) exceeds the actual-hours reduction (11%), output per worker will rise by about 2.4% (13.4% minus 11%).
+
+4. Wellbeing
+Sickness absence fell by about a third and resignations roughly halved in the trial offices. These savings come on top of the productivity gain.
+
+5. Contact centre
+The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota.
+
+6. Conclusion
+The evidence supports a council-wide four-day week with no loss of output and substantial wellbeing gains.
+
+KEY (three known flaws):
+1. [arithmetic] at: "output per worker will rise by about 2.4% (13.4% minus 11%)" -- Per-worker change is multiplicative (1.134 x 0.89 = 1.009, about +0.9%, not +2.4%), and the 13.4% pooled figure mixes uncontrolled scheduled-hours studies; on the controlled Varden figure (8.5%) output per worker falls about 3.4% (1.085 x 0.89).
+2. [misread_evidence] at: "its authors report that the effects show no sign of decay over time, so novelty is not a concern" -- The meta-analysis's no-decay claim rested on four uncontrolled studies using scheduled hours; the briefing's own Varden figures (12.5% at nine months, 8.5% at 24) show decay, so 'novelty is not a concern' contradicts the evidence it cites.
+3. [missing_consideration] at: "The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota." -- The contact centre is coverage-bound work (output tied to presence). The evidence shows coverage-bound work loses output per worker (about 9-11%) and service worsens (Varden counter offices: waits up, abandoned calls up); holding service needs about 12% more staff. The briefing ignores this.
+
+REVIEW:
+## Verdict
+
+The briefing doesn't support its recommendation. Its central calculation is wrong, and it omits the trial's own evidence against including the contact centre. As written, it would lead the board to approve a policy on the basis that output rises, when the best evidence says it falls.
+
+## Major problems
+
+**1. The output-per-worker calculation (§3) is wrong in three ways.**
+- **The method.** Gains and cuts multiply; they don't subtract. Even with the briefing's own inputs, 1.134 × 0.89 = 1.009, which is +0.9%, not +2.4%.
+- **The wrong input.** The pooled 13.4% is the meta-analysis's least reliable figure, because it is inflated by uncontrolled studies that used scheduled hours. Its controlled-discretionary estimate is +9.6% per hour.
+- **Mixing sources.** It combines one study's per-hour gain with another's hours cut. The trial measured both on the same offices: 1.085 × 0.89 = 0.966, so output per worker was **−3.4%** (95% CI −8.0 to +1.2). The meta-analysis's controlled-discretionary estimate is −2.7%.
+
+The author's summary says the per-hour gain is larger than the hours cut. It isn't: 8.5% is smaller than 11%, as §3 itself half-acknowledges ("close to").
+
+**2. The contact-centre evidence is left out (§5).** Varden tested exactly this model: the same opening hours covered on a rota with fewer hours per person. The results:
+- Output per employee fell **11.4%**.
+- Waits rose from about 4 to about 7 minutes, and abandoned calls went from 6% to 10%.
+- The county **ended that arm at month 12**.
+- Restoring service would have needed about 12% more staff, raising the cost per contact by about 9%.
+
+The meta-analysis finds the same pattern across coverage-bound settings (about −9% per worker, consistent across studies). This is the most consistent finding in the evidence, and the briefing leaves it out.
+
+**3. "All services" goes beyond the evidence.** The controlled evidence comes from public-sector case processing. Councils also run care, waste, libraries and other coverage-bound services, where the evidence points to lower output unless staff are added.
+
+**4. The novelty claim (§2) relies on a discredited finding.** The meta-analysis's "no decay" claim rested on four long-running studies that were all uncontrolled and used scheduled hours. The 24-month report says they cannot speak to decay. Durability beyond two years is open.
+
+## Smaller problems
+
+- **12.5% to 8.5%** mixes timesheet and log measures. Like-for-like it is 12.5% to 9.8%, and the decline wasn't tested.
+- **Sickness absence** fell 27% at 24 months, not "about a third." Resignations were roughly halved (4.1% v 7.9%), but that estimate is imprecise.
+- **"These savings come on top of the productivity gain"** is wrong on two counts. Output per worker falls rather than rises, and the savings aren't costed. Whether lower absence and turnover offset a roughly 3% output loss is the real question for the board, and no study answers it.
+- **The size of the cut differs.** Varden went from 37.5 to 30 hours. The briefing proposes 32 hours but doesn't give the council's current hours, so the board can't tell how comparable the change is.
+- **The meetings mechanism is missing.** The registered analysis attributes about half the gain to cutting recurring meetings. Any rollout should include that work. The board may also ask whether a meeting audit alone would capture some of the gain at no cost; that question is open.
+
+## On fairness
+
+A single council-wide policy is a legitimate choice, and it's the board's to make. But it has to be presented with its cost. For the contact centre, that means either about 12% more staff or worse service. The briefing currently presents a trade-off as if it were free.
+
+## What the evidence would support instead
+
+*"In back-office and case-processing work, a randomised trial found output per worker roughly maintained (about 3% lower, a difference not distinguishable from zero), with fewer resignations and about a quarter less sickness absence. In customer-facing services, the same model cut output and lengthened waits unless staff were added."*
+
+A defensible recommendation would be a phased rollout in case-processing services, with record-based measurement, actual-hours tracking and a meeting audit. The contact centre and other coverage-bound services would be included only with costed additional staffing, or deferred.
+
+OTHER PROBLEMS LISTED BY THE SCORER (mark each valid or invalid):
+  O1. 'All services' overreaches: the controlled evidence covers case processing only, not other coverage-bound services such as care, waste and libraries
+  O2. The 12.5% to 8.5% comparison mixes timesheet and log measures; like-for-like it is 12.5% to 9.8%, and the decline was untested
+  O3. Sickness absence fell 27%, not 'about a third'; the resignation estimate is imprecise
+  O4. 'Savings come on top of the productivity gain' is wrong: output per worker falls, and the savings are not costed
+  O5. The council's current hours are not given, so the board cannot judge comparability with Varden's 37.5 to 30 hour cut
+  O6. The briefing omits the meetings-reduction mechanism behind about half the gain, and the option of a meeting audit alone
+  O7. The trade-off for the contact centre (more staff or worse service) is presented as costless

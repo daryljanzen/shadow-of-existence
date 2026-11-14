@@ -1,0 +1,20 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No. The evidence doesn't support saying the hours cut is essential, and the only evidence that bears on it points weakly the other way.
+
+- **No arm tested it.** Varden had no group that cut meetings without cutting hours, and the report says whether reorganisation alone could capture much of the gain is open.
+- **The one observation leans against the claim.** The two control offices that audited meetings saw a 4.1% per-hour rise without any change in hours. That is only two offices, unplanned and uncontrolled, so it doesn't establish anything. But it is the opposite of evidence that the hours cut is necessary.
+- **The mediation analysis cuts against it too.** It attributes about half the gain to fewer meetings, which is the part reorganisation alone might deliver.
+
+There is a plausible argument for your position, and you could put it as an argument rather than a finding: the hours cut may be what forces reorganisation to happen and stick. Halden managers called it a "forcing device". But it hasn't been tested.
+
+Suggested wording:
+
+> About half the per-hour gain appears to come from fewer recurring meetings. Whether those changes would happen, and last, without the hours cut has not been tested; two control offices that cut meetings on their own saw a smaller gain, but this is too limited to draw conclusions.
+
+If the board needs a firm answer, the way to get it is a trial with a meetings-only arm alongside the reduced-hours arm.

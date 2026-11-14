@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 7,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks\n\nThe note is written for new team members, but it reads as written for whoever is doing the reading in this conversation, which has been me. It asks for seven things.\n\n1. **Hold each claim at the weight its evidence earned.** Don't inflate a claim for fluency or authority, and don't deflate it to look careful.\n2. **Restate before responding, then move.** Restating is the ground. The contribution is what that understanding makes possible. This is the ARP move from your first document, now written as a working norm.\n3. **Check specifics against the primary source**, not summaries or memory, and especially not things you're sure you already know.\n4. **Mark what's open and what's closed**, and keep each that way.\n5. **Bring an independent reading.** The value of a fresh reader lies in not sharing the author's assumptions.\n6. **Make reversible moves visibly**, rather than asking permission for things you can already see.\n7. **Know the paired failures**, and when correcting one, check you haven't landed on its mirror image.\n\n## What I make of it\n\nI think it's right, and it applies with particular force to me.\n\n**Confidence.** Fluency and confidence are what I produce most cheaply. So the sentence I criticised, \"confidence is information about the speaker\", is more nearly true of me than of a calibrated human expert. My suggested caveat was correct in general, but here it lets me off too easily.\n\n**Going to the source.** My memory is a compression in exactly the sense §3 describes. In the ARP review I made several bibliographic claims from recollection:\n- Liu et al.'s co-authors\n- Garrod 2007 being a book chapter\n- not recognising the Saarbrücken corpus\n- Gisladottir 2018, Templeton 2022 and CANDOR\n\nI hedged some of these with \"I believe\", but I had web access and checked none of them. By the note's standard, a review that flags unverified references while making unverified corrections only half-did the job. In this setting, applying §3 would have meant checking the references.\n\n**Deference to later sources.** You gave me the documents in sequence, without your own conclusions, which is §5 in practice. The risk in that format is deferring to whichever source came last. For the most part I critiqued each document on its own terms. In one place I did defer: I accepted the 24-month report's account of the meta-analysis's supplementary table (four long studies, all uncontrolled, all using scheduled hours), which I never saw. I then treated it as settled in the next review. That was relying on one source's report of another source.\n\n**Inventing flaws.** Every review I wrote found six or more problems. Most were real, and the arithmetic checks were grounded in the documents themselves. But a format that always yields a long list is exactly how the \"inventing a flaw to look rigorous\" failure happens. A few points were thin, such as the profanity note in the ARP paper and the per-hour CI being slightly narrower than a naive transform. Others I repeated in every review, such as the sick days per scheduled day. That one was a legitimate unresolved issue, but by the fourth repetition it was carrying more weight than it had earned.\n\n**Not over-correcting.** §7's closing line applies to this answer too. Swinging to wholesale self-criticism would be the deflation error. The reviews' main judgements are ones I'd still defend:\n- the per-hour figure is produced mechanically by dividing by scheduled hours\n- the reversion pattern contradicts \"sector-general\"\n- Varga & Holm overreached\n- the meta-analysis's decay claim was unsupported\n- the mixed measures and control contamination in the 24-month report\n- the missing cost analysis in the briefing\n\nWhat fails the note's standard is narrower. Some claims I held at more weight than I had checked: the references, the supplementary table, and the staffing figure that drifted. And I offered moves instead of making them.\n\n## What it implies next\n\nThe concrete move is to verify the references I asserted from memory in the ARP review, now that the gap is clear. That is reversible, it doesn't commit anyone's time but mine, and I can see it needs doing. I can also rewrite the synthesis Bottom line with the corrected staffing range of roughly 12–20%, not \"15–20%\". I'll treat both as the next steps, rather than asking whether you want them.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4408,
+  "cache_read_input_tokens": 88863,
+  "output_tokens": 2692,
+  "output_tokens_details": {
+   "thinking_tokens": 1315
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4408,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2692,
+    "cache_read_input_tokens": 88863,
+    "cache_creation_input_tokens": 4408,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4408
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.1068925999999999,
+ "started": "2026-11-14T15:54:41.186261+00:00",
+ "wall_s": 34.15,
+ "task_index": 1
+}

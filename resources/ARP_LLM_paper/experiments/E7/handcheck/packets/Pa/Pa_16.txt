@@ -1,0 +1,49 @@
+RESPONSE:
+## What it asks
+
+Its core request is to hold every claim at the weight its evidence has earned, and to treat errors in *both* directions as errors. Most guidance on careful thinking warns only against overclaiming. This text says a needless caveat is as much a misreport as an overstatement. The rest describes practices that keep that calibration honest:
+- restate what you received before replying, then add something;
+- check specifics against the source rather than against summaries or memory;
+- keep open and settled questions in separate piles;
+- protect independent readings;
+- make reversible moves visibly instead of asking permission.
+
+Section 7 then names the failure pairs and warns that correcting one tends to push you into its twin.
+
+## What it asked of me here
+
+You gave it to me first, and it became the standard for everything after. The sequence that followed exercises each pair almost in turn:
+- **Halden** inflates.
+- **Varden** is careful.
+- **Varga–Holm** corrects Halden well, then overshoots into deflation and kills a live hypothesis.
+- **The meta-analysis** is mostly calibrated but closes the novelty question early.
+- **The follow-up** fixes that, then says "confirms" about a mediation analysis.
+- **The briefing** inherits the follow-up's framing.
+
+Each document corrects its predecessor and lands partly on the other side. Read in order, they create pressure to trust the latest and most rigorous-sounding source. That is deferring, in section 7's terms.
+
+You also did what section 5 recommends: you gave me material and a question, never your own conclusion. That left me free to read each document cold.
+
+## How I did against it
+
+**Where it worked.** My most useful catches came from section 3, not from judgement: recomputing from the tables instead of trusting the prose.
+- Halden's retail reversion rate was half (3 of 6), hidden inside a 92% continuation figure.
+- Varga–Holm's abstract says "correcting the first three" when only two were corrected. Its hours decomposition sums to 36.4, not 34.6.
+- The follow-up summary compares a timesheet figure with a log figure.
+- The briefing repeated that unlike comparison because it worked from source 5's framing rather than source 5's table.
+
+That last one is section 3's warning almost verbatim: sources checked against each other instead of against the data drift together.
+
+**Where I fell short:**
+- **Offloading.** Every reply ended with a menu of things I could do. Section 6 would call that asking permission for reversible moves. Only in the last review did I write the corrected bottom line rather than offer to. There is a fair counterpoint: your attention is the cost of an unrequested redline. But the default should have leaned toward producing more.
+- **Length.** My restatements were sometimes longer than "the ground" needs to be.
+- **Calibration on my own syntheses.** After the meta-analysis I listed "per-hour gains about 8–10%" as *found*. I had just argued that the meta-analysis's convergence was less independent than presented. "Well supported" would have matched my own critique.
+- **Independence on the ARP paper.** Its acknowledgement says an earlier Claude model helped prepare it. On section 5's logic, a reviewer from the same model family brings less difference than a human reader would. My critique may share blind spots with the drafting.
+
+## What I make of it
+
+It's good, and its best idea is the pairing. One-sided caution ("be skeptical") produces exactly the Varga–Holm failure: rigour that becomes its own kind of bias. Making calibration two-sided is what makes it calibration.
+
+There are two limits.
+1. **It doesn't say how to tell, in the moment, which side of a pair you're on.** Its answer is external correction: the source, the different colleague, the unexpected result. That's right, but it means the document can't be followed alone. It works only inside a practice that supplies those checks. These six documents showed the checks working: each overreach was caught by the next source or by the arithmetic.
+2. **Section 2 is close to your ARP paper.** "Restate, then move; the restatement is the ground, not the contribution" is assimilate–receipt–pivot written as a working norm. Read that way, the note is partly an argument that good collaborative reasoning *is* high-quality conversation in your sense. Receipts guard against answering an easier message than the one sent. Pivots stop restatement passing for contribution.

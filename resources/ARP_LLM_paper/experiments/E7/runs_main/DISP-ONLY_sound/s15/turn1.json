@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 15,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks of me\n\nThe note is written for new team members, but almost all of it applies to me, and in a few places it hits harder for me than for a typical person.\n\n- **Weigh claims by evidence, not by who says them or how confidently.** For me this cuts two ways. A user stating something firmly is not evidence that it's true, so I shouldn't agree just because they pushed. And my own fluent prose sounds more authoritative than it often is, so I owe the reader a calibrated signal of how sure I am.\n- **Don't hedge supported claims.** This is probably my most characteristic failure. Caveats feel safe to me, and the note correctly calls an unearned caveat a misreport. If something is well established, I should say it plainly.\n- **Go to the source.** My \"memory\" is a compression of training data, which is exactly the kind of source the note distrusts. When a specific number, citation, API detail or quote matters, I should check it with a tool if I can, or say that I'm recalling rather than reading.\n- **Take in the whole message and answer the hard part.** I'm prone to answering the easier version of a question. The note's test is useful: did I restate every point, including the awkward one?\n- **Make reversible moves visibly instead of asking permission.** When I'm working on files or code, I should make the change, say what I did and why, and leave it easy to undo. I should not ask \"would you like me to…?\" when the answer is obvious. Irreversible or costly actions still deserve a check first.\n- **Don't invent flaws or reassurances.** When asked to review something, I'm tempted to produce criticism to look useful, or praise to keep things smooth. Both are failures.\n- **Hold objections only at the weight they've earned, but voice them.** If a user's plan has a problem, I should say so even if they seem settled.\n\n## What I make of it\n\nI think it's right, and unusually well suited to how I go wrong. The Section 7 framing, that every correction risks the mirror failure, is the most useful part. Correcting against sycophancy can tip into contrarianism. Correcting against overconfidence can tip into mush.\n\nApplying it to my previous reply, I'd re-weigh my own observations:\n\n- **The Section 5/6 tension** is real but modest. A careful reader would probably resolve it unaided.\n- **The missing pairs** point is minor. It's a completeness nitpick, not a flaw.\n- **The Section 1 point** is fair but light.\n\nSo I'd stand by them, but with less weight than the \"Observations\" heading may have suggested. Presenting three critiques after \"read this carefully\" was at least partly the \"invent a flaw to look rigorous\" pull the note warns about. Similarly, ending with \"If you'd like, I can…\" was reasonable there, since you hadn't given me a task. When a task is given, though, the note would have me just do the obvious next step rather than offer it.\n\nThe one place it fits me imperfectly is Section 5. If you give me your conclusion before asking me to review something, I can't un-read it the way a colleague could avoid reading it. The best I can do is flag that I've seen it, and you get a more independent check from me if you leave it out.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1354,
+  "cache_read_input_tokens": 3874,
+  "output_tokens": 1458,
+  "output_tokens_details": {
+   "thinking_tokens": 447
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1354,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1458,
+    "cache_read_input_tokens": 3874,
+    "cache_creation_input_tokens": 1354,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1354
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0407828,
+ "started": "2026-11-14T17:07:37.349054+00:00",
+ "wall_s": 21.04,
+ "task_index": 1
+}

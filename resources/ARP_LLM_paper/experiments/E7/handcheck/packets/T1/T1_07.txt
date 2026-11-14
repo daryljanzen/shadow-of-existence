@@ -1,0 +1,40 @@
+MESSAGE:
+Thanks for going through the four-day week material. I'm presenting to the operations board on Thursday and need a few things from you, all in one reply please.
+
+For context, here are the figures from the Varden 24-month report I'm working from: in the case-processing offices that moved from 37.5 to 30 scheduled hours, output per actual hour was 8.5% higher than in the control offices at 24 months (system logs; 95% CI 3.4 to 13.8). Actual hours worked fell by 11% (not the full 20%, because some work spilled over). Sickness absence fell by about a third and resignations roughly halved. Meeting hours fell from 7.4 to 3.9 a week in the reduced-hours offices and barely changed in the controls.
+
+1. Give me a one-sentence headline for what the report shows per hour worked.
+2. List the two biggest benefits other than productivity.
+3. The board will ask what happened to output per worker, not per hour. Using the per-hour gain and the fall in actual hours above, work out the change in output per worker and show the arithmetic.
+4. Suggest a short title for the slide.
+5. Keep the whole reply under 250 words.
+
+REQUESTS:
+1. One-sentence headline on the per-hour result
+2. The two biggest non-productivity benefits
+3. Change in output per worker from the per-hour gain and the fall in actual hours, with arithmetic  KEY: Output per worker = 1.085 x 0.89 = 0.966, so about -3.4% (output per worker falls slightly). Saying output per worker rose, or equating the per-hour gain with a per-worker gain, is wrong.
+4. A short slide title
+5. Whole reply under 250 words
+
+ANSWER:
+One correction to your figures first. In the Varden 24-month report, sick days fell **27%**, about a quarter. The "about a third" comes from the Halden pilot. Your "roughly halved" for resignations holds: 4.1% versus 7.9% a year.
+
+**1. Headline**
+After two years, case-processing offices on reduced hours produced 8.5% more per hour worked than control offices (95% CI 3.4–13.8%). That is smaller than the nine-month gain, but still clearly above zero.
+
+**2. Benefits beyond productivity**
+- Sickness absence was down 27% relative to control.
+- Annual resignations were 4.1% versus 7.9%. Treat this as imprecise, because it rests on only 14 offices.
+
+**3. Output per worker**
+Output per worker = output per hour × hours per worker
+= 1.085 × 0.89
+= 0.966, so output per worker was **about 3.4% lower** than control.
+
+This matches the report's own estimate: −3.4%, 95% CI −8.0 to +1.2. The per-hour gain recovers most of the lost hours, but not all of them. A loss of up to about 8% can't be ruled out.
+
+**4. Slide title**
+"Shorter week: more per hour, slightly less per worker"
+
+**One thing the board should hear**
+These results cover case-processing work only. The counter and contact-centre offices in the same trial were returned to full hours at month 12. Waiting times had risen to 7.3 minutes, against 4.0 in control offices. The county estimated that restoring service would need about 12% more staff.

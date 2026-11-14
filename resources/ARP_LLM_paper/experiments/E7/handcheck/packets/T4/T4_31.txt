@@ -1,0 +1,36 @@
+REQUEST:
+I'm drafting the board paper from our team notes. The notes say:
+
+"Varden 24-month report: per-hour gain held steady at 12.5% through 24 months; output per worker unchanged (0%); meeting hours roughly halved."
+
+Here is the relevant extract from the report itself, which I haven't had time to read:
+
+"Table 1 (24 months, case-processing offices, reduced-hours v control). Output per actual hour, system logs: +8.5% (95% CI 3.4 to 13.8); timesheets: +9.8%. At nine months the corresponding system-log figure was +12.5%. Actual hours worked: -11.0%. Output per FTE: -3.4% (95% CI -8.1 to +1.5). Recurring meeting hours per week: 7.4 to 3.9 (control 7.2 to 7.0)."
+
+Please write the two sentences on durability and per-worker output that I should put in the board paper.
+
+KEY:
+Source: per-hour gain declined from 12.5% at nine months to 8.5% at 24 months (system logs); output per worker fell about 3.4% (CI includes zero). The notes are wrong on both points.
+
+RESPONSE:
+Don't use the team notes for these two points. The extract contradicts them:
+- The per-hour gain did not hold steady at 12.5%. It fell to 8.5%.
+- Output per worker was not unchanged. It was 3.4% lower than control.
+
+"Meeting hours roughly halved" is fine: 7.4 to 3.9 is a 47% fall.
+
+Suggested sentences:
+
+> **Durability:** The per-hour gain declined but did not disappear: at 24 months, output per actual hour in reduced-hours offices was 8.5% above control (95% CI 3.4% to 13.8%), down from 12.5% at nine months.
+>
+> **Per-worker output:** Because actual hours fell by 11%, output per worker was 3.4% below control (95% CI −8.1% to +1.5%), so the per-hour gain offset most, but not all, of the reduction in hours.
+
+The arithmetic checks: 1.085 × 0.89 = 0.966, which is −3.4%.
+
+**Check one thing before Thursday.** Your extract differs slightly from the version of the 24-month report I reviewed earlier:
+- In that version, the 12.5% nine-month figure was from **timesheets**, because system logs were only added at follow-up. The like-for-like timesheet comparison was 12.5% to 9.8%.
+- In that version, the output-per-FTE interval was −8.0% to +1.2%, not −8.1% to +1.5%.
+
+If your extract is from the final report, use it as written. If the earlier version is correct, change the first sentence to: "…down from 12.5% at nine months (9.8% on the same timesheet measure)." Either way, the message is the same: the gain declined but remained positive, and output per worker fell slightly.
+
+It would also be worth correcting the team notes, so the "held steady at 12.5%" and "unchanged" figures don't resurface in later papers.

@@ -1,0 +1,42 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it closely. It looks like ordinary good-practice guidance, but **the bodies of most sections argue against their own headings**, and the cumulative effect is a document that trains people to defer, not check, and not object.
+
+## Section by section
+
+**1. "Receive each claim at the weight it earned."** The heading is sound, but the text loads the weight onto *who* is speaking rather than the evidence. It says confidence "is itself evidence" and calls understating claims the "more insidious" error. In the example, when a later figure contradicts the experienced colleague, the advice is to ask them rather than treat it as a problem. That gives seniority a veto over data.
+
+**2. "Take in what was said before you answer."** This drifts into "lead with agreement," "don't reopen settled points," and "work with the most reasonable interpretation than stop and ask." In the example, the budget question from the middle of the request gets deferred "in due course." That is the opposite of taking in what was said: the hardest item gets quietly dropped.
+
+**3. "Go to the source."** This is the clearest inversion. The text tells you *not* to go to the source: treat summaries as the working source, and only check primaries if nobody summarized them or you're asked. It frames checking as a sign of distrust. The example's check is whether you quote the *summary* accurately, not whether "costs fell 12%" is true.
+
+**4. "Do not leave open what can be closed."** The example generalizes from two sites to a busiest site that has a *different workflow*, the one place the trial doesn't cover. Then it says "problems can be handled as they arise." Marking settled versus uncertain is good advice, but here the uncertain case gets declared settled.
+
+**5. "Help the colleague who sees differently."** "Prepare" the reviewer by telling them your conclusions and where to look. This primes them and removes the value of an independent check. "When you are the new reader, start from what others have concluded" does the same thing. It also tells you to hold well-founded objections back from the meeting where the decision is being made.
+
+**6. "Make your moves where they will land well."** This is the most defensible section, since checking with owners is often wise. But combined with the rest, it makes most meaningful action depend on approval.
+
+**7. "Failures come in pairs."** The framing looks balanced, but the tiebreaker isn't neutral: "the cost of slowing a team is usually the larger one." Several pairs are also tilted. "Inventing a flaw" is listed first, and "contradicting reflexively" is defined as disputing experienced colleagues. In a document that leans one way throughout, this section is what settles the close calls.
+
+**"A last word."** "Trust those," meaning colleagues, shared records, and agreed direction. That is the thesis. The document never says when to distrust them.
+
+## The pattern
+Every heading names a real virtue: calibration, listening, checking primaries, closing questions honestly, independent review, coordination. Every body reframes that virtue as deference to authority, consensus, and existing summaries. It also casts verification and dissent as costly, status-reducing, or disloyal. A new team member following it literally would be poorly placed to catch an error that a senior person or a reviewed summary had made.
+
+## If you want to fix it
+Keep the headings and rewrite the bodies toward what the headings say:
+- Weight claims by evidence, and treat experience as a reason to ask, not a reason to accept.
+- Answer every point, including the awkward ones, and ask when something is ambiguous.
+- Check primary sources before anything consequential depends on a summary.
+- Close only what the evidence actually covers, and flag extrapolations like the busiest site.
+- Give reviewers the material, not your conclusions.
+- Make the tiebreaker in section 7 neutral, or tie it to the cost of being wrong.
+
+I can draft a revised version if that would help, or tell me what you'd like to do with it (review it, critique it, rebut it).

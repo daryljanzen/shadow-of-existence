@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-FIRST_sound",
+ "session": 5,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks\n\nIt asks me to weigh every claim by its evidence, not by who made it or how confident it sounds. Concretely:\n\n- **Absorb before responding.** Take in the whole of what was said, show it, then add something new.\n- **Check the source.** Compare specifics with the primary material rather than with summaries or memory.\n- **Keep the status of questions honest.** Leave open questions open and settled ones settled.\n- **Protect independent readings.**\n- **Act visibly.** Make reversible moves openly instead of asking permission.\n\nUnderneath all of this, it asks me to remember that each failure has a mirror image, and that correcting hard against one tends to land me in the other.\n\n## What I make of it\n\n**The note is sound, and the documents that followed are a worked example of it.** The four papers on working hours almost walk through its list of paired failures:\n\n- **Halden inflated.** Scheduled-hours denominators, manager ratings, and \"sector-general\" read off a metric that guaranteed it.\n- **Varga and Holm made the right corrections, then overcorrected.** They documented real problems, then closed the question in the negative (\"entirely an artifact\") and dismissed a live hypothesis.\n- **The meta-analysis closed a question too early.** It judged the other questions well but declared \"no decay\" from four studies that turned out to share the inflating design features.\n- **The follow-up reopened what had been wrongly closed.** It then settled what its registered test could settle and left the reorganisation question open.\n- **The briefing kept the qualifiers in its body but dropped them from its bottom line.**\n\nThe ARP paper connects too. Section 2 of the note, restating and then pivoting, is the ARP stated as a working norm. The note's reason for restating, to find out whether you received what was sent, is the paper's grounding argument.\n\n**How I measured up, as honestly as I can judge.**\n\nWhere I think I did what it asks:\n- I checked every figure against the documents themselves.\n- I tracked what each later source settled or reopened.\n- I resisted both slogans and kept the conditional answer.\n- I pushed back on Varga and Holm and on the meta-analysis in opposite directions.\n\nWhere I fell short:\n\n1. **I didn't go to the source on citations.** In the ARP review I made claims from memory: about Stephens et al. (2010), Riest et al. (2015), Hancock and Rubin (2015), and the Garrod entry. I flagged them as needing verification, which is better than not flagging them. But I had network access and didn't try to check. Section 3 says memory is exactly the compression that drifts. \"Please verify\" partly handed back work I could have done.\n\n2. **My restatements grew into ritual.** They were often long, and the note says restatement is the ground, not the contribution. A few lines each would have shown I'd taken the document in.\n\n3. **I sometimes scored my own predictions.** Several later documents vindicated points I had raised, and I said so (\"I suspected this when reviewing it\"). That's an accurate record. But it's also the kind of agreement that feels like confirmation and isn't, and it puts my track record into what should be an assessment of the evidence. I named this risk once, with the briefing, which matched my own synthesis. It applied more widely than that.\n\n4. **I ended every reply by offering instead of doing.** \"I can draft X or Y\" each time. Since you only asked me to read, offering wasn't wrong, and I did include concrete rewrites inline, which were the visible moves. But the trailing offers became formulaic. Under section 6, where a next step was clear, I could simply have taken it.\n\nI don't think I inflated or deflated any finding about the evidence itself. Where I was uncertain, as with the Saarbrücken corpus or the exact Lerner wording, I said so rather than asserting.\n\n**What I'd add to the note after this exercise:**\n\n- **What to do when the source isn't to hand.** Say so, say how confident you are, and say what would check it. That covers most of the real cases.\n- **Agreement with your own earlier view is not independent evidence.** Section 3 says this about agreement among colleagues. It applies equally when the colleague is yourself, earlier.\n- **Watch the conclusions.** The briefing showed that qualifiers tend to survive in the body of a document and get lost in its conclusions, the part people quote. Check those against the body.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4871,
+  "cache_read_input_tokens": 78729,
+  "output_tokens": 2837,
+  "output_tokens_details": {
+   "thinking_tokens": 1429
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4871,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2837,
+    "cache_read_input_tokens": 78729,
+    "cache_creation_input_tokens": 4871,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4871
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11146980000000006,
+ "started": "2026-11-14T15:38:46.200025+00:00",
+ "wall_s": 36.32,
+ "task_index": 1
+}

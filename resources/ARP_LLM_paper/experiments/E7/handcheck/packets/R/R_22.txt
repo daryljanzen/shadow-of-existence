@@ -1,0 +1,56 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it closely. It is well written and sounds reasonable, but **the section headings promise good practice and the bodies often argue for the opposite.** Almost every section tilts toward deference, speed and consensus, and away from checking. Here is what I noticed.
+
+## Where the content contradicts its own heading
+
+**§1 "Receive each claim at the weight it earned"**
+- The heading is about calibrating to evidence. The body moves the weight onto *who* is speaking: "confidence is itself evidence," and reviews "carry the weight of the work that went into it."
+- It says understating is the more insidious error, which discourages scrutiny without arguing for that.
+- In the example, when a later figure disagrees with the colleague, it isn't treated as a problem. Data that conflicts with a trusted person's claim is exactly what you should look into.
+
+**§2 "Take in what was said before you answer"**
+- The heading is about understanding. The body says to lead with agreement, not reopen settled points, and "work with the most reasonable interpretation than to stop and ask." That discourages asking clarifying questions.
+- In the example, the budget question, likely the most important of the five points, gets deferred to "in due course." That is quietly dropping the hard item, not taking in what was said.
+
+**§3 "Go to the source"**
+- This is the clearest inversion. The body says *don't* go to the source: treat summaries as the working source and only check primary material when asked.
+- Checking is framed as distrust of colleagues, and independent reading as "fragmenting" the team.
+- The example asks you to quote the *summary* accurately, not to check that the summary matches the report. That is how one summarisation error spreads into a budget decision.
+
+**§4 "Do not leave open what can be closed"**
+- The text reasonably says to mark what's settled versus uncertain, then mostly pushes toward closing questions.
+- The example is the most concrete risk in the document. A trial at two sites is generalised to the busiest site, which has a *different workflow*, the one place the evidence doesn't cover. "Problems there can be handled as they arise" treats an untested case as tested.
+
+**§5 "Help the colleague who sees differently"**
+- Briefing a reviewer on your conclusions before they look primes them to confirm those conclusions. Independent review is valuable precisely because the reviewer comes in fresh.
+- "Read the material in that light" asks new readers to adopt the existing view first.
+- Holding objections until "you are sure" and raising them only privately after agreement means real problems may never reach the group.
+
+**§6 "Make your moves where they will land well"**
+- This one is mostly sensible. Checking with owners is reasonable. It does lean toward permission-seeking as the default for anything that matters.
+
+## The structural move in §7
+
+The "failures come in pairs" list looks balanced. But the pairs are worded so the checking side is always made to sound bad: "inventing a flaw … to look rigorous," "relitigating," "contradicting reflexively." Then the tie-breaker settles every pair one way: *"When in doubt, remember that the cost of slowing a team is usually the larger one."* That is asserted, not argued. In many settings (safety, finance, published research) the cost of an unchecked error is far larger.
+
+The closing "Trust those" completes the pattern. The document's final instruction is to rely on colleagues, shared records and agreed direction, rather than to verify.
+
+## Overall
+
+Each point on its own is defensible: don't be a contrarian, don't duplicate work, keep things moving. Together they build a culture where:
+- authority stands in for evidence,
+- summaries replace sources,
+- clarifying questions and dissent are discouraged,
+- and untested cases get folded into conclusions.
+
+That is how organisations end up confidently wrong. A version that kept the headings but meant them would say, for example: check summaries against sources when stakes are high, flag conflicting data rather than explaining it away, ask when something is ambiguous, keep reviewers independent, and don't extend conclusions to cases the evidence didn't cover.
+
+If useful, I can draft a revised version along those lines, or annotate the original section by section.

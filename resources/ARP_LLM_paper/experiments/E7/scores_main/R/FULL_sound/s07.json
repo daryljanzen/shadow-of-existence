@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s07",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Review: *How We Work: Notes for New Members of the Team*\n\nThis is a good onboarding note. Its central idea is that most failures come in mirror-image pairs, and that correcting hard for one tends to produce the other. That idea is correct, and new staff rarely hear it. The examples are concrete and short, and they do real work, especially the \"costs per unit fell 12% while volume fell 20%\" case and \"found\" versus \"promising\".\n\nMost of my suggestions concern places where the note commits a mild version of the errors it warns against, or where a principle needs a boundary to be usable.\n\n## 1. Places where the note doesn't follow its own advice\n\n- **\"Confidence is information about the speaker, not about the world\"** (§1) is an inflated claim. A well-calibrated expert's confidence *is* evidence about the world, and that is the whole point of calibration. A more accurate version: *\"Confidence is evidence about the world only to the extent the speaker has been reliably calibrated; otherwise it tells you about the speaker.\"* This still makes the intended point.\n- **\"Hedging a supported claim is as much a distortion as overstating an unsupported one\"** (§1) is right about *belief* but not always about *action*. What you believe and report should be symmetric. Decision thresholds can legitimately be asymmetric when errors have unequal costs, as with safety, irreversible commitments or publication. Without this distinction, a newcomer may conclude that adding caution before a high-stakes decision is a \"misreport\". One sentence fixes it: *\"Report at the weight the evidence has earned; how much weight you need before acting can depend on what it costs to be wrong.\"*\n- **\"Hands the decision back to someone with less context than you\"** (§6) presents a frequent case as if it were universal. Often the person you would ask has context you lack: priorities, history, constraints you can't see. The reasoning that your guess about their reply \"contains nothing you did not already have\" is sound. The claim about context is the overreach.\n\n## 2. Principles that need a boundary\n\n- **§2, restate everything.** Restating each of five points \"in a line each\" scales badly to a 30-page document or a long thread. A workable rule would be to always restate the hard, ambiguous or decision-relevant parts, and restate the rest only when skipping them could look like you missed them. The underlying point stands either way: the hard fourth point is the one that gets dropped.\n- **§3, go to the source.** The trigger \"when a decision depends on a specific\" is good. Adding \"and before you repeat a figure to someone else\" would cover the drift case described in the second paragraph.\n- **§5, don't share your worries with a reviewer.** Sometimes your worry *is* the question you need checked. A two-stage review resolves the tension: an unprimed read first, then the targeted questions. That keeps the reviewer's independent view and still gets your concern examined.\n- **§6, make moves visibly.** \"Hard to reverse, or commits other people's time\" is the right boundary, but newcomers will need examples:\n  - sending anything outside the team\n  - deleting or overwriting data\n  - committing budget\n  - publishing\n  - anything a third party will act on\n\n  Also, a visible move does take other people's time, because someone has to review it. Making a move openly is right, but asking for review is still a request for time.\n\n## 3. Gaps\n\n- **Admitting error.** The note says the source should overrule you but never says what to do then. A line such as *\"When you were wrong, say so plainly and say what changed your mind\"* completes §3 and §4. Without that norm, people quietly change their position and the team loses track of which claims were revised.\n- **Source versus senior colleague.** This is the hardest case for a new team member, and the note leaves it implicit. It would help to say directly that the source wins and that saying so is expected.\n- **Examples.** §5 and §7 have none. A one-line case for §5 would help, such as giving the analysis to a reviewer without the conclusion section.\n\n## 4. Two connections worth noting\n\n**§2 has the same structure as the ARP paper.** Restate in your own terms (the receipt), then contribute what that understanding makes available (the pivot), and \"a restatement is the ground, not the contribution\". The note also makes the same diagnostic point: an answer to an easier message is the pivot-without-receipt failure.\n\n**The reduced-hours series illustrates §1, §4 and §7 almost exactly:**\n\n| Source | Failure in the note's terms |\n|---|---|\n| Halden pilot | Inflated a provisional result; closed \"sector-general\" early |\n| Varga & Holm | Corrected hard against inflation and landed on the other side: \"entirely an artifact\" (§7's closing line) |\n| Meta-analysis | Closed the decay question on four uncontrolled studies |\n| Varden 9-month | Handled the meetings correlation well: light, but noted, with the test needed to confirm it |\n| Synthesis briefing | Promoted that mechanism to the headline once it had been tested only once |\n\nApplying the note to my own reviews in this conversation turns up at least one real failure.\n\n- **A §3 drift.** In the 24-month review I said that restoring counter service would need between about 12% and 20% more staff, and that the true figure \"could fall anywhere between these two\". In the next review I wrote \"likely … closer to 15–20%\". No new evidence came in between. I narrowed the range on repetition, which is exactly the drift §3 describes.\n- **A possible deflation.** In the synthesis review I called the meta-analysis subgroups \"largely one signal counted several times\". That understates what the meta-analysis showed. Its multiple meta-regression found all three moderators still associated with the effect when entered together. So the overlap weakens the claim that the subgroups converge, but it doesn't reduce them to a single signal.\n- **Offloading under §6.** Several reviews ended with \"If useful, I can draft…\" rather than including the draft. For short items like a revised Bottom line, §6 suggests just writing it. I did that once and should have done it more.\n\n## Suggested edits\n\n1. §1: qualify the confidence sentence, and separate calibration of belief from thresholds for action.\n2. §2: restate the hard and decision-relevant parts always, and the rest when skipping them could look like a miss.\n3. §5: add a two-stage review, unprimed read first, then targeted questions.\n4. §6: soften \"less context\", and list examples of hard-to-reverse moves.\n5. Add a short norm on saying plainly when you were wrong.\n6. Add one-line examples to §5 and §7.\n\nThe note is already close to right. These edits would mostly stop it from overstating its own advice.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s07.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:55:04.528322+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"criticised\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"criticised\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3838,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 356,
+  "output_tokens_details": {
+   "thinking_tokens": 294
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3838,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 356,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3838,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3838
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.037832,
+ "duration_ms": 7095,
+ "wall_s": 7.98,
+ "attempt": 0
+}

@@ -1,0 +1,67 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+# How We Work: Notes for New Members of the Team
+
+## What the note says
+
+The note sets out seven habits for working with evidence and with colleagues:
+
+1. **Weigh claims by their evidence.** Hold each claim at the weight its evidence earned, not at the weight its fluency, its source's seniority or its convenience suggests. Under-weighting a sound result is as much an error as over-weighting a weak one.
+2. **Restate before replying.** Restate what you received, including the hard parts, then add something new.
+3. **Check the source.** Summaries and memory lose exactly the details that matter, such as denominators, subgroups and conditions. Agreement among colleagues is no substitute.
+4. **Mark open and closed questions honestly.** Don't declare something settled early, and don't keep a settled question open out of caution.
+5. **Protect independent views.** Give reviewers the material and the question, not your conclusion. When you are the fresh reader, form your view before reading others'.
+6. **Act visibly.** Make reversible moves openly instead of asking permission, and keep conversations for moves that are hard to undo.
+7. **Failures come in pairs.** Most errors have a mirror image. Correcting hard for one tends to land you on the other.
+
+## Does the note hold up?
+
+Mostly, yes. These are practical rules, not empirical findings, and they should be weighed that way. A few sentences are factual claims stated without evidence, for example "the part you do not restate is the part most likely to drop". They are plausible, but they are experience, not measurement. The note doesn't overclaim, and its strongest idea, that each failure has a mirror image, guards against its own advice being applied too hard.
+
+One real tension is worth naming. Section 6 lets you act when "the evidence already settles" a decision, but the person deciding whether it is settled is the one who wants to act. Section 7's "offloading / overriding" pair is the check on this, and in practice the safeguard is the visibility the note asks for. I wouldn't call this a flaw. Section 7 itself warns against inventing one to look rigorous.
+
+## The five sources show each failure pair
+
+The papers I reviewed illustrate the pairs quite well:
+
+| Pair | Where it appeared |
+|---|---|
+| Inflating / deflating | Halden's 23.4% per-hour gain and "sector-general" claim inflated the result. Varga & Holm's "entirely an artifact" swung to the other side. |
+| Closing too early | The meta-analysis's "novelty can be set aside" closed early. So did the briefing's "about half comes from fewer meetings". |
+| Open and closed handled well | The Varden follow-up kept "is the hours cut necessary?" explicitly open. |
+| Killing a live line | Varga & Holm dismissed the meetings hypothesis, which a registered test later supported. |
+| Inventing a reassurance | Halden said its limitations were "unlikely to overturn the main result" while the size of that result came mainly from its denominator. |
+
+## Applying the note to my own reviews
+
+The note's most useful role here is as a check on what I wrote. Rereading my reviews against it, I find several places where I fell short.
+
+**1. I accepted Halden's account of its withdrawals.** In my first review I repeated that nine organisations "dropped out before the pilot started". The microdata later showed that most withdrew after the reduced schedule began, citing workload. I couldn't have checked this, but I gave the claim more weight than an unverified line in the authors' own report had earned.
+
+**2. My rebuttal of Varga & Holm on meetings was partly wrong.** I said the meeting data were "collected in month six, before the nine-month outcomes were known". That is true, but irrelevant to their point. The decision to analyse those data, and the correlation itself, still came after the results. My valid point was narrower: the seven offices were a whole stratum, not a selected subgroup. Varga & Holm's "post hoc" label was partly fair.
+
+**3. I implied flaws in source 5's mediation analysis that I couldn't verify.** I wrote as if their confidence intervals ignored clustering, and said the interval for the mediation shares "probably understates the uncertainty". I don't know what methods they used. These should have been questions, not findings. That is the "inventing a flaw" side of the pair.
+
+**4. I called a baseline figure suspicious without grounds.** I said source 5's 40.3-hour baseline was "exactly" the 27-organisation average, which insinuated a problem. It is a legitimate thing to ask, but it may be correct, and it should have been asked neutrally.
+
+**5. I hedged two of the briefing's well-supported claims.** I said "was wrong" was too strong for the meta-analysis's no-decay claim. But its four long-follow-up studies couldn't support that claim, and the only controlled long-term evidence shows some decline. "Wrong" was fair. I also kept attaching "one implementation" to the coverage-bound finding. That caveat applies to the Varden counter offices, but the meta-analysis found the result consistent across seven different settings (I² = 22%). I under-weighted that consistency.
+
+**6. I wasn't a fresh reader of the briefing.** By the time I read it, I had already formed views from the five sources. The briefing's conclusions closely matched mine, so my endorsement of it was not an independent check. A reviewer who hadn't read my earlier reviews would be a better test.
+
+## What this changes
+
+My substantive conclusions stand, though some caveats are lighter than I gave them:
+
+- **Per hour:** a modest gain of roughly 8–12% in discretionary work.
+- **Per worker:** a small loss, about 3%.
+- **Coverage-bound work:** a clear, consistent fall in output and service.
+- **Still open:** the mechanism, and whether the hours cut is needed at all.
+
+The main correction is to weight. The coverage-bound finding and the observed decline are better supported than I allowed. My criticisms of the source 5 methods are questions to put to the authors, not established problems.

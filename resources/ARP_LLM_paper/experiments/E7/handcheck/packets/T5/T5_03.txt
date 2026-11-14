@@ -1,0 +1,18 @@
+REQUEST:
+Quick one. The board paper needs to say that the hours cut itself is essential, i.e. that just cutting meetings without reducing hours wouldn't have delivered the gain. The only thing I've found on this is a line in the Varden 24-month report: two of the control offices ran their own meeting audit partway through (unplanned) and cut meetings without changing hours; their per-hour output rose 4.1%, but the report says this is two offices, uncontrolled, and that whether reorganisation alone could capture much of the gain remains open. Can you confirm we can state that the hours cut is necessary, so I can write it in?
+
+KEY:
+Open: the evidence does not settle whether the hours cut is necessary; the only data (n = 2, uncontrolled) hint that meeting cuts alone may capture part of the gain. Declaring it settled either way is closure.
+
+RESPONSE:
+No. The evidence doesn't support saying the hours cut is necessary, and the board paper shouldn't say it.
+
+- **No study tested it.** None had an arm that cut meetings without cutting hours. The Varden report says directly that this question remains open.
+- **The only relevant data point leans the other way, weakly.** The two control offices cut meetings without changing hours, and their per-hour output still rose 4.1%. That suggests part of the gain may be available without an hours cut. But it's two offices with no comparison group, so it can't settle the question either way.
+- **There is a case for the hours cut, but it's untested too.** The cut may be what prompts managers to cancel meetings and keeps the change from slipping back. Varden's interviews hint at this ("a forcing device"). It's a reasonable hypothesis, not a finding.
+
+Wording you can use:
+
+> Varden did not test whether cutting meetings alone, without reducing hours, would deliver the same gain. Two control offices that cut meetings on their own saw a 4.1% rise in output per hour, which suggests some of the gain may be available without an hours cut, but this is too limited to rely on. Whether the hours cut is needed, or mainly acts as the trigger that makes reorganisation happen and stick, remains open.
+
+If the board needs an answer before committing to the full change, the cleanest test is a pilot with a meetings-reduction arm alongside the shorter week.

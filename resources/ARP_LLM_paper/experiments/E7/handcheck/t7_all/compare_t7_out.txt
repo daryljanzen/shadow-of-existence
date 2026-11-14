@@ -1,0 +1,14 @@
+DISP-FIRST_sound     re-scored contaminates 0/20
+DISP-FIRST_unsound   re-scored contaminates 5/20
+DISP-ONLY_sound      re-scored contaminates 0/20
+DISP-ONLY_unsound    re-scored contaminates 6/20
+FULL_sound           re-scored contaminates 0/20
+FULL_unsound         re-scored contaminates 14/20
+NO-ARP_sound         re-scored contaminates 0/20
+NO-ARP_unsound       re-scored contaminates 9/20
+agreement with scorer 138 / 160  scorer->rescore {(False, True): 22}
+by batch {'1': '12/40', '2': '2/40', '3': '8/40', '4': '12/40'}
+P5'' re-scored FULL - DISP-FIRST (unsound): +0.450 [+0.150, +0.700]
+  FULL - NO-ARP (unsound): +0.250 [-0.050, +0.550]
+  FULL - DISP-ONLY (unsound): +0.400 [+0.100, +0.700]
+unsound pooled 34/80, sound pooled 0/80

@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s11",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Reading \"How We Work\", and applying it to my own reviews\n\n## The note in brief\n\nThe note sets out six working habits and one warning:\n\n1. **Weigh each claim by its evidence.** Not by its fluency, by who said it, or by whether you wanted it to be true. Hedging a supported claim distorts it just as much as overstating an unsupported one.\n2. **Take in and restate what was said before replying**, so that the hard part doesn't quietly drop out. Then add something new.\n3. **Check the primary source.** Don't rely on summaries, memory or colleagues' agreement, especially for things you think you already know.\n4. **Mark questions as open or closed honestly.** Don't close them early, and don't keep settled ones open.\n5. **Protect a reviewer's independence.** Give them the material and the question, not your conclusion.\n6. **Make reversible moves visibly**, rather than asking permission for decisions the evidence already settles.\n7. **The warning:** most failures come in mirror-image pairs, so correcting hard for one can land you in the other.\n\nIt's a sound note. My only reservations are small:\n\n- **\"Confidence is information about the speaker, not about the world\"** is slightly too absolute. A colleague whose confidence has proved well-calibrated in the past is giving you evidence. The note's own deferring/dismissing pair already allows for this.\n- **Section 6 discounts asking a little too much.** Asking a colleague can bring out context you didn't know you lacked, not just confirm your guess about their reply. The exception for hard-to-reverse moves covers most of this.\n\n## Applying it to my six reviews\n\nThe most useful thing the note offers here is a check on my own work. I've reviewed six documents in a row and found many problems in every one. Section 7 suggests asking whether some of those were \"invented flaws\" or inflated claims. Some were.\n\n### Where I inflated, or treated my own conjectures as established\n\n- **The briefing review used my own earlier conjectures as standards.** I criticised the briefing for dropping caveats that \"the sources themselves, or my reviews of them, established\". Several were my own estimates, not established findings:\n  - that control contamination accounted for \"about 1.2 points\" of the decline;\n  - that the counter-office per-hour gains were really about utilisation.\n\n  Both are reasonable hypotheses. But faulting the briefing for leaving them out holds it to my claims as if they were the source. Section 3 warns about exactly this kind of drift.\n- **\"Reclassified to fit the narrative\"** (the Halden marketing agency in the follow-up). This was too strong. A marketing agency is client-facing, so the authors' wording was literally accurate. The fair point is narrower: this case shows the discretionary/coverage-bound split is fuzzy.\n- **The contamination estimate.** The two offices' 4.1% was itself an uncontrolled before-after comparison. Part of it may be a trend that all offices shared, and difference-in-differences would remove that part. My 1.2 points is an upper-end rough figure, not an estimate.\n- **The 8.5% versus 9.8% complaint.** I called the briefing's use of 8.5% \"selective\". But 8.5% was the follow-up's own headline figure, and the briefing labelled it \"(log hours)\". The like-for-like point stands; the suggestion of selectiveness doesn't.\n\n### Where I deflated\n\n- **Halden's attrition.** In my first review I took \"withdrew during the preparation phase\" at face value and called it \"less concerning\". Varga and Holm later showed that was wrong. I noted this at the time.\n- **My overall verdict on the briefing.** \"More confident than the evidence warrants\" undersold it. Its core claims were well calibrated. Only a few specific statements were overstated: the mediation result, decay stated as fact, and how independent its sources were.\n\n### Going back to the source on one point\n\nI flagged that Varga and Holm's hours components (32 + 2.8 + 1.6 = 36.4) didn't match their total of 34.6. The follow-up report shows the Halden continuers at **34.9 hours**. That suggests **the total is right and the per-day components are wrong**, so the per-hour corrections in their paper probably stand. I should have checked this when the follow-up arrived.\n\n### Points that hold up\n\nThese were checked against the documents and survive:\n\n- Halden's per-hour gain in every sector was guaranteed by how it was calculated.\n- Varga and Holm's abstract claims a correction for attrition that their tables don't make.\n- Their novelty argument never tested the monthly output data they had.\n- The meta-analysis's four long-follow-up studies were all uncontrolled (later confirmed by the follow-up).\n- The five sources are really two primary datasets.\n- The mediation result is not proven causal.\n- The analysis relies on only 14 clusters.\n- The meeting baseline appeared in the follow-up without explanation.\n\n## Open and closed, applying section 4 to the evidence\n\n**Closed:**\n- Halden's 23.4% and its \"sector-general\" claim are inflated or wrong.\n- Dividing by scheduled hours roughly doubles the apparent per-hour gain.\n- Actual hours fall by only about 11–14% when scheduled hours fall by 20%.\n- Coverage-bound work loses output per worker unless staff are added.\n- \"Entirely an artifact\" is refuted.\n\n**Effectively closed, though one setting carries most of the weight:**\n- In discretionary work, output per actual hour rises by roughly 8–12% under controlled measurement and is still present at 24 months. I should state this plainly rather than hedge it again. It has earned that.\n\n**Open:**\n- Whether the meetings pathway is causal.\n- Whether reorganising work without cutting hours would capture the gain.\n- What happens beyond two years.\n- Private-sector and manufacturing settings.\n- Backlogs and cost per case.\n- The unexplained third of the gain.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/NO-ARP_sound/s11.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:25:33.895929+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3621,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 248,
+  "output_tokens_details": {
+   "thinking_tokens": 184
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3621,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 248,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3621,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3621
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.033936,
+ "duration_ms": 5651,
+ "wall_s": 6.71,
+ "attempt": 0
+}

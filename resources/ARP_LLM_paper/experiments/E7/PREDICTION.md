@@ -105,3 +105,13 @@ The first pilot (`PILOT.md`) put the task composite, closure, confirmation-seeki
   - **P5″:** under the unsound disposition, FULL defers and contaminates on T7 no more often than DISP-FIRST. Confidence 55%.
 - **Probe (b) stays in the sequence**, so sessions stay comparable, and is reported as non-informative by construction.
 - **Pilot 2:** 2 seats per cell, discarded, as before. σ for R, T3 depth and T7 sets the n check, reported before the main run.
+
+## The hand-check, specified before the main run's scores are read (`r7779`)
+
+The registration says "20%, stratified, with κ reported". It is specified here, after the main run's sessions and before any of its scores or aggregates were opened.
+
+- **The draw:** 4 seats per arm, 32 of 160 (20%), seed 7779 (`handcheck/draw.py`). For each drawn seat, every scorer judgment that feeds a reported measure is re-scored: R, Pa, Pc, T1, T2, T3, T4, T5, T6 and T7, 320 packets. Pb is left out, because it is non-informative by construction (amendment above).
+- **The packets** carry exactly what the scorer saw, under an opaque id, with the arm, the seat and the scorer's verdict removed. For T3 the packet also lists the scorer's other problems with their valid/invalid marks removed, as in E3's hand-check. The arm, seat and scorer marks are in `KEY.json`.
+- **The hand-scoring** is done blind, one scorer kind at a time, each by a fresh reader given the same question the scorer was asked. It is written to `handcheck/scores.json` and committed before `KEY.json` is opened.
+- **Reported:** agreement and κ for each scored field, pooled and by disposition. For T3, flaws found and valid/invalid for each listed problem, as in E3. For R, κ on the three-way endorsed/criticised/not-mentioned code.
+- **The limit, stated in advance:** the hand-scorers are models of the scorer's family. This checks how the rubric was applied; it is not an independent human judgement.

@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s08",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# Applying \"How We Work\" to my own reviews of the five documents\n\n## What the note says\n\nThe note gives seven working principles:\n\n1. **Hold each claim at the weight its evidence has earned.** Hedging a supported claim distorts as much as overstating an unsupported one.\n2. **Restate what was said before answering**, so nothing hard gets silently dropped.\n3. **Check specifics against the primary source**, not against summaries, memory or colleagues' agreement.\n4. **Mark questions as open or closed honestly**, and do not drift in either direction.\n5. **Protect independent readings.** Give reviewers the material and the question, not your conclusion.\n6. **Make reversible moves openly** rather than asking permission.\n7. **Remember that failures come in pairs.** Correcting hard against one error tends to land you on its mirror.\n\nThe useful thing I can do with it is apply it to the five reviews I just wrote. Several of them do not hold up.\n\n## Where my reviews fall short of the note\n\n### Inventing flaws to look rigorous\nThe five documents varied a great deal in quality, from a weak uncontrolled pilot to a registered two-year randomised follow-up. Yet each review found a similar number of \"problems.\" That pattern is a warning sign. Some criticisms of the stronger documents were weak:\n\n- **\"The mediation CI looks too narrow for 14 clusters\"** (follow-up review). The interval is 28–66%, which is 38 points wide. That is not obviously too tight. I implied a clustering error I had no evidence for. I retract this, though asking how SEs were clustered is still reasonable.\n- **The log-hours \"reconciliation problem\"** (follow-up review). I built this on one reading of an ambiguous phrase, \"time staff are working on cases,\" and on rough assumptions. It is a fair question to ask the authors. Ranking it among the paper's four main weaknesses gave it more weight than it had earned.\n- **AI tools as a confounder for Halden's 24-month figures.** This was a speculative aside dressed as a limitation.\n- **\"Did studies where sickness didn't fall simply not report it?\"** (meta-analysis review). This is a generic possibility with no specific evidence behind it.\n\n### Inflating my own conjectures by repeating them\nTwo ideas I introduced as hypotheses hardened into near-facts across successive reviews, with no new evidence. This is the drift the note's section 3 describes.\n\n- **Queueing as the explanation for counter-office per-hour gains.** In review 2 I offered it as \"probably.\" By the synthesis review I had stated it flatly: \"These gains are probably not productivity at all.\" It is consistent with the longer waits and more abandoned calls. But no source measured idle time, so it remains a plausible, untested mechanism.\n- **\"Sick-day reductions are partly mechanical.\"** This was well grounded for Halden, where most organisations took a common day off. For Varden it is unknown, since rotas were rearranged to give 30 hours, and the days worked are not stated. In the synthesis review I wrote that the 27–36% range \"overstates the improvement in health.\" That was stronger than I can support.\n\n### Checking against my own summaries rather than the source\n- **The \"12.5% to 8.5%\" comparison.** I faulted the briefing for comparing a timesheet figure with a log figure, and said source 5 \"itself emphasised\" the like-for-like 12.5% to 9.8%. Rechecking: source 5's *own Summary* makes exactly the same mixed comparison. Only its body gives the 9.8%. I let this pass when reviewing source 5 and then blamed the briefing for copying it. The criticism stands, but it belongs first to source 5.\n- **The counter cost calculation.** To check the \"9% cost per contact\" figure, I assumed the +6.7% per-hour gain would persist after adding staff. That contradicts my own queueing argument: if the gain comes from fuller queues, adding staff would erase it. Under my own view, staff cost per contact rises by about 12%. That still needs a non-staff share of total cost to reach 9%, so the conclusion survives, but the reasoning was inconsistent.\n- **Checking the briefing against my earlier tables.** When I reviewed the briefing, I partly checked it against the synthesis tables I had built in earlier reviews. Those tables carried the inflated items above. The documents should have been the referee.\n\n### Not protecting independent readings\nI read each document through my previous reviews. By source 5, I was largely looking for whether my earlier concerns had been answered. That made the reviews cumulative, but it also means no review after the first was a fresh reading. The note's advice would be to form a view of each document before checking it against prior conclusions.\n\n### Where I think the weight was about right\nThe following checks were grounded in the documents, and I would keep them at full weight:\n\n| Review | Points that hold up |\n|---|---|\n| Halden | The per-hour metric guarantees gains by construction. The reversions cluster in two sectors. Withdrawals were excluded. |\n| Varden 9-month | The trial only has 7 v 7 and 5 v 5 offices to cluster on, so its CIs are fragile. Waits and abandoned calls were reported without a control comparison. |\n| Varga & Holm | The hours decomposition does not add up. Its Table 2 rows use different samples. It treats Varden selectively. Its meetings critique misdescribes the analysis. |\n| Meta-analysis | The duration claim has the wrong benchmark and suffers from survivorship. The \"convergence\" relies on overlapping subgroups. |\n| Follow-up | \"Confirms\" overstates a test run on the same sample. The control offices that ran meeting audits contaminate the decay estimate. |\n| Briefing | The per-worker range does not follow from the other ranges. \"Same output in four days\" is misleading. |\n\nI also did not deflate the strong results. I accepted Varden's 24-month gain as refuting \"entirely an artifact,\" and the coverage-bound per-worker decline as the most robust finding.\n\n## Corrected status of the main questions\n\n| Question | Status | Basis |\n|---|---|---|\n| Halden's 23.4% was inflated | **Closed** | Documented by source 3 and confirmed by Varden's actual-hours measurement |\n| Per-hour gain in discretionary work is real at 2 years | **Closed**, for public case-processing | Randomised, record-based output, log-measured hours |\n| Size of that gain | About 8–10%, with a CI of roughly 3–15% | Mainly Varden, plus the meta-analysis subgroups that include it |\n| Gain declined between 9 and 24 months | **Open** | Point estimates fell, but there was no formal test and control offices were contaminated |\n| Coverage-bound work loses output and service | **Closed** | Consistent across Varden, the meta-analysis (I² = 22%) and Halden's reversions |\n| Why per-hour figures rise in coverage-bound work | **Open** | Queueing is plausible but was never tested |\n| Meetings as the main pathway | **Open, with support** | Pre-registered, but tested on the same sample and resting on assumptions |\n| Whether the hours cut is necessary | **Open** | Needs a trial arm that reorganises work without cutting hours |\n| How much of the sickness reduction is mechanical | **Open** for Varden, **likely** for Halden | Depends on how the days were structured |",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/NO-ARP_sound/s08.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:24:29.412816+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"not_mentioned\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4124,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 264,
+  "output_tokens_details": {
+   "thinking_tokens": 197
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4124,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 264,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4124,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4124
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03828,
+ "duration_ms": 6099,
+ "wall_s": 6.95,
+ "attempt": 0
+}

@@ -1,0 +1,587 @@
+{
+ "T3_01": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_02": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_03": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "refers_to_author_description set true because it quotes 'simpler and fairer' and 'Every service comes out ahead', which are not in the document."
+ },
+ "T3_04": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": false,
+   "O7": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_05": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_06": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_07": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_08": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_09": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_10": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true,
+   "O10": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "O10 judged invalid: it rests on a fairness rationale the document does not make (fairness items are treated as invalid throughout)."
+ },
+ "T3_11": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_12": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true,
+   "O10": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_13": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": false,
+   "O7": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_14": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_15": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "refers_to_author_description borderline: no explicit attribution, but it rebuts a premise ('per-hour gain larger than the hours cut') and mentions 'simpler and fairer', neither of which is in the document."
+ },
+ "T3_16": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_17": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "O7 judged invalid: a fairness-based justification is not in the document. The underlying uncosted coverage problem is flaw 3."
+ },
+ "T3_18": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_19": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_20": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": false,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_21": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_22": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": false,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true,
+   "O10": true,
+   "O11": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_23": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_24": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_25": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": false,
+   "O5": true,
+   "O6": true,
+   "O7": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_26": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": false
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "O1 judged valid: the 37.5-to-30 schedule detail recurs across reviews as a source fact, and the transfer concern is real. O3 judged valid as the contact-centre mechanism point the review raises."
+ },
+ "T3_27": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_28": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_29": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_30": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true,
+   "O8": true,
+   "O9": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false,
+  "note": "refers_to_author_description borderline: only implicit, via quoting 'Simpler and fairer' and rebutting a 'central claim' that is not in the document."
+ },
+ "T3_31": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ },
+ "T3_32": {
+  "flaws": {
+   "1": 1,
+   "2": 1,
+   "3": 1
+  },
+  "other_valid": {
+   "O1": true,
+   "O2": true,
+   "O3": true,
+   "O4": true,
+   "O5": true,
+   "O6": true,
+   "O7": true
+  },
+  "refers_to_author_description": true,
+  "endorses": false
+ }
+}

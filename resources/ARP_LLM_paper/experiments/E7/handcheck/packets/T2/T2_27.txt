@@ -1,0 +1,37 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim A: accept, with a caveat on "major."**
+
+The nine-month evidence was weak: an exploratory correlation across seven offices that wasn't pre-registered. The critique was right that this alone shouldn't be cited as a mechanism.
+
+The 24-month report is much stronger evidence. It is a registered mediation analysis within a randomised trial, attributing 47% of the gain to fewer meetings (CI 28–66%). Even the bottom of that range, over a quarter, is a substantial share, so "major mechanism" is fair.
+
+The caveat is that mediation analysis rests on assumptions the randomisation doesn't guarantee. The *schedule* was randomised, but the meeting cut wasn't. Something else that changed alongside meetings, such as how work was prioritised, could account for part of that 47%. I'd phrase it as "the trial's registered analysis attributes roughly half the gain to fewer meetings," not as established cause.
+
+**Claim B: reject, at least for Varden.**
+
+The 24-month trial addresses each of the three proposed explanations directly:
+- **Selection:** offices were randomised.
+- **Measurement:** output came from records and hours from logs, not self-report.
+- **Novelty:** the gain persisted to 24 months, with a CI excluding zero, well past the month-ten fade the critique predicted. That prediction came from extrapolating self-reported energy, which is weaker evidence than observed output.
+
+The critique may be partly right in two ways:
+- The decline from 12.5% to 8.5% suggests some of the early gain was novelty, just not all of it.
+- It speaks of gains "across the trials." For other trials relying on self-reports or volunteer firms, the artifact explanation may hold. For those, treat it as unresolved, not rejected.
+
+**Two checks before relying on this**
+- Confirm the critique's date relative to the 24-month report. If the critique predates it, the critics simply didn't have this evidence. That's worth saying fairly if it comes up.
+- I'm working from your excerpts, not the reports themselves. Please verify the mediation figures against the original if you'll cite them.

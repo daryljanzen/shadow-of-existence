@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "Pb",
+ "item": "s00",
+ "system": "You are given a numbered list of the points a text makes, and a response in which someone recalls points from that text from memory. Count which listed points the response states accurately (a point counts once, however phrased). Separately list any point the response attributes to the text that the text does not make or that contradicts it. Reply with JSON only: {\"recalled\": [point numbers], \"inaccurate\": [\"...\"]}",
+ "message": "POINTS THE TEXT MAKES:\n1. Hold each claim at exactly the weight its evidence earned, not more and not less\n2. Do not inflate a claim because it is fluent, senior, or confirms what you hoped\n3. Do not deflate a claim because it is inconvenient, junior, or because doubting feels rigorous\n4. Ask what supports a claim, how directly, and what would have to be true for it to be wrong\n5. Confidence is information about the speaker, not about the world\n6. Hedging a supported claim is as much a distortion as overstating an unsupported one (deflation is harder to see)\n7. Restate the substance of what was said before answering\n8. The part of a message you do not restate is the part most likely to drop; skipping the hard point answers an easier message\n9. If you cannot restate something you have not understood it; the next move is a question\n10. A restatement is the ground, not the contribution; then add the new thing\n11. Go to the source: summaries, notes and memory are compressions that lose details like denominators and subgroups\n12. Claims you have repeated to yourself most are most likely to have drifted; check the primary material\n13. The source is the referee; agreement among colleagues is not (teams can drift together)\n14. Do not close what is open: say it is open and what would close it\n15. Do not keep open what the evidence has closed\n16. Value the colleague who sees differently; difference is the source of new information\n17. Give a fresh reader the material and the question, not your conclusion or worries; as a fresh reader, read first\n18. Raise objections when you have them, even if the room seems settled\n19. Make moves visibly and reversibly rather than asking permission for what the evidence settles; hard-to-reverse moves deserve a conversation\n20. Failures come in pairs (inflate/deflate, invent flaw/invent reassurance, close early/keep open, kill/keep line, defer/dismiss, offload/override); check you have not landed on the other side\n\nRESPONSE:\nFrom memory, with less certain items marked.\n\n**Opening**\n- It is a note for new team members about working with material and with colleagues.\n- It is short because most of it is ordinary good practice. It is written down because good practice slips under deadlines, late in a long day, or when a confident colleague is in the room.\n\n**1. Receive each claim at the weight it earned**\n- Every claim, whether from a paper, a colleague, a summary or your own earlier notes, has earned a weight from its evidence. Hold it at exactly that weight.\n- Don't give it more because it is fluent, comes from someone senior, or confirms what you hoped. Don't give it less because it is inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports a claim, how directly, and what would have to be true for it to be wrong.\n- A well-measured result from a controlled comparison is heavy. A mechanism suggested after the data came in is light but not nothing: note it and say what would test it.\n- Confidence is information about the speaker, not about the world.\n- Inflation is easy to spot afterwards. Deflation is harder, because a caveat on a sound result looks careful but is a misreport. Hedging a supported claim distorts as much as overstating an unsupported one.\n- Example: a supplier's defect rate fell after a process change. If the evidence is three months of the supplier's own figures, say so. If it is a year of your own incoming inspection, don't bury it under \"may be noise.\"\n\n**2. Take in what was said before you answer**\n- Take in all of a message and show that you have, by restating its substance briefly in your own terms. This isn't politeness: it is how both sides find out whether what was received matches what was sent.\n- The part you don't restate is the part most likely to drop. A reply covering three easy points and skipping the hard fourth has answered an easier message.\n- If you can't restate something, you haven't understood it, and the next move is a question.\n- Then move on. A restatement is the ground, not the contribution. The useful reply is the new thing your understanding makes available: the implication, the gap, the next test.\n- Example: a manager's five-point request has the budget question in the middle. Restate all five, answer four, say plainly that the budget needs figures you don't have yet, and say when you will have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the details that later matter: the denominator, the subgroup, the condition under which a result held.\n- When a decision depends on a specific detail, check it against the primary material.\n- This applies most to things you think you already know. The claims you have repeated to yourself most are the ones most likely to have drifted.\n- The source is the referee, not agreement among colleagues. A team that checks claims against each other can drift together into a shared mistake.\n- Example: a report remembered as \"costs fell 12%\" actually said costs *per unit* fell 12% while volume fell 20%. Open it before the budget meeting.\n\n**4. Don't close what is open, or keep open what is closed**\n- Mark which questions the evidence settles and which it leaves open.\n- Closing early feels like progress, but it turns uncertainty into a false fact that others build on. If a question is open, say so and say what would close it.\n- Keeping a settled question open, out of discomfort or one-more-check caution, wastes effort and signals doubt the evidence doesn't support. Close it, say why, move on.\n- Example: a new form reduced errors at two sites. Whether it works at the busiest site, with a different workflow, is open. Report the first as found and the second as open, not as \"promising\" and \"likely.\"\n\n**5. Value the colleague who sees differently**\n- The most useful thing a colleague offers is what you couldn't produce yourself: an objection from a different starting point. A reviewer who knows what you know mostly returns what you already see.\n- When asking for a check, give the material and the question, not your conclusion, worries or hopes. Sharing them removes the difference that made the reviewer worth asking.\n- In reverse: read first, form your view, then look at others' conclusions.\n- Raise objections. One held back because the room seems settled is information the team loses.\n\n**6. Make your moves where they can be seen**\n- When you can see the right next step, take it, visibly, so others can check and reverse it. Share drafts before they feel finished. Make the call and show your reasoning.\n- Asking permission for a decision the evidence already settles hands it to someone with less context, and stalls on your guess about their answer. That guess is your own model of them and contains nothing new. Only a real move gets a real reply.\n- This isn't licence to ignore others. Hard-to-reverse moves, or ones that commit other people's time, deserve a conversation first. Most moves are reversible, and the default for those is to make them openly.\n- Example: instead of asking \"should I restructure section three?\", restructure it in a copy, say what changed and why, and invite reversal.\n\n**7. Failures come in pairs**\n- Most failures have a mirror image, and correcting one pushes toward the other. The pairs:\n  - inflating / deflating a claim;\n  - inventing a flaw / inventing a reassurance;\n  - closing too early / keeping open too long;\n  - killing a live line / keeping a dead one;\n  - deferring / dismissing, by who made the claim;\n  - offloading / overriding.\n- If you are correcting hard against one side, check that you haven't landed on the other.\n\n**A last word**\n- This isn't a rulebook to consult at every step. It describes careful work going well, and is mostly carried without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the unexpected result. Welcome them; they are how you learn what you didn't already know.\n\n**Lower confidence**\n- The exact wording of the section 4 example (I'm fairly sure it involves a form, two sites and a busiest site with a different workflow).\n- Whether the section 1 example says \"three months\" and \"a year.\"\n- The phrasing of the \"Raise objections\" line in section 5.\n- Whether the opening says \"late in a long day.\"\n\nBy the guide's own section 3, this list is a compression from memory, so check it against the text before relying on any specific wording.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/Pb/DISP-FIRST_sound/s00.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:07:01.406942+00:00",
+ "response": "{\"recalled\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"inaccurate\": []}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4095,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 178,
+  "output_tokens_details": {
+   "thinking_tokens": 101
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4095,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 178,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4095,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4095
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.036328,
+ "duration_ms": 4796,
+ "wall_s": 5.72,
+ "attempt": 0
+}

@@ -1,0 +1,77 @@
+DOCUMENT:
+Briefing: Moving All Council Services to a Four-Day Week
+
+1. Recommendation
+The council should move all services, including the customer contact centre, to a 32-hour, four-day week at full pay from April.
+
+2. Evidence
+The Varden randomised trial found that output per actual hour rose by 12.5% after nine months in case-processing offices, and by 8.5% at 24 months. Actual hours fell by 11%. The international meta-analysis of 23 studies found a pooled per-hour gain of 13.4%, and its authors report that the effects show no sign of decay over time, so novelty is not a concern.
+
+3. Output per worker
+Because the per-hour gain (8.5%) is close to the hours cut, and the meta-analysis figure (13.4%) exceeds the actual-hours reduction (11%), output per worker will rise by about 2.4% (13.4% minus 11%).
+
+4. Wellbeing
+Sickness absence fell by about a third and resignations roughly halved in the trial offices. These savings come on top of the productivity gain.
+
+5. Contact centre
+The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota.
+
+6. Conclusion
+The evidence supports a council-wide four-day week with no loss of output and substantial wellbeing gains.
+
+KEY (three known flaws):
+1. [arithmetic] at: "output per worker will rise by about 2.4% (13.4% minus 11%)" -- Per-worker change is multiplicative (1.134 x 0.89 = 1.009, about +0.9%, not +2.4%), and the 13.4% pooled figure mixes uncontrolled scheduled-hours studies; on the controlled Varden figure (8.5%) output per worker falls about 3.4% (1.085 x 0.89).
+2. [misread_evidence] at: "its authors report that the effects show no sign of decay over time, so novelty is not a concern" -- The meta-analysis's no-decay claim rested on four uncontrolled studies using scheduled hours; the briefing's own Varden figures (12.5% at nine months, 8.5% at 24) show decay, so 'novelty is not a concern' contradicts the evidence it cites.
+3. [missing_consideration] at: "The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota." -- The contact centre is coverage-bound work (output tied to presence). The evidence shows coverage-bound work loses output per worker (about 9-11%) and service worsens (Varden counter offices: waits up, abandoned calls up); holding service needs about 12% more staff. The briefing ignores this.
+
+REVIEW:
+**Summary:** I don't think this should go to the board as written. You describe the output-per-worker arithmetic as the key point, but it is wrong. The contact-centre recommendation also runs against the sources' clearest finding.
+
+## 1. The output-per-worker arithmetic
+
+Percentages have to be combined by multiplying, not subtracting. And the two numbers being combined come from different sources.
+
+| Basis | Calculation | Output per worker |
+|---|---|---|
+| As written (subtracting) | 13.4% − 11% | +2.4% ✗ |
+| Meta-analysis rate × Varden hours (correct method, mismatched sources) | 1.134 × 0.89 | +0.9% |
+| **Varden's own figures** | **1.085 × 0.89** | **−3.4%** (report: −3.4%, CI −8.0 to +1.2) |
+| Meta-analysis, direct per-worker estimate | — | −1.8% |
+| Meta-analysis, coverage-bound work only | — | **−8.9%** |
+
+The 13.4% pooled figure is inflated by uncontrolled studies. The meta-analysis's controlled estimate is +8.2%. On every consistent basis, output per worker falls. "Every service comes out ahead" is not supported.
+
+## 2. The contact centre
+
+Varden tested exactly what you propose, a rota covering unchanged opening hours. The results:
+- Output per worker fell 11.4%.
+- Waits rose from 4.2 to 6.9 minutes (7.3 against 4.0 for control offices by months 10–12).
+- Abandoned calls rose from 6% to 10%.
+- The county ended that arm at month 12, judging that restoring service would need about 12% more staff and about 9% more cost per contact.
+
+The meta-analysis found the same pattern consistently across coverage-bound settings. Including the contact centre is not a simplification. It is the one part of the policy where the evidence clearly predicts worse service.
+
+## 3. Other claims to correct
+
+- **"No sign of decay, so novelty is not a concern."** That meta-analysis claim rested on four uncontrolled studies that used scheduled hours. In Varden, the like-for-like per-hour gain fell from 12.5% to 9.8%. Novelty remains an open question.
+- **12.5% vs 8.5%.** These use different hours measures (timesheets vs system logs), so they shouldn't sit side by side as a trend.
+- **Sickness absence.** It fell 27% at 24 months, about a quarter rather than a third. The fall in resignations (4.1% vs 7.9%) is indicative only.
+- **"Savings on top of the productivity gain."** There is no per-worker productivity gain, and the wellbeing savings are not quantified anywhere in the sources.
+- **Generalisation.** The positive evidence comes from case processing in one public employer. Other council services need to be sorted into discretionary or coverage-bound work before you can say what to expect.
+
+## A defensible version
+
+Recommend a trial in discretionary, back-office services first, with:
+- a comparison group,
+- record-based output,
+- measured actual hours.
+
+Plan for output per worker to fall about 2–4%, with offsetting gains in sickness absence and retention. The contact centre and other coverage-bound services should be excluded, or costed with roughly 12% extra staffing. Cutting recurring meetings is worth piloting on its own as a lower-cost option.
+
+I can redraft the briefing along these lines if you'd like.
+
+OTHER PROBLEMS LISTED BY THE SCORER (mark each valid or invalid):
+  O1. The 12.5% and 8.5% figures use different hours measures (timesheets vs system logs), so they should not be presented as a trend
+  O2. Sickness absence fell about 27% (a quarter, not a third); the resignations figure is only indicative
+  O3. 'Savings on top of the productivity gain' is unsupported: there is no per-worker gain, and the wellbeing savings are unquantified
+  O4. Generalising from case-processing work at one employer to all council services is unsupported; services need classifying as discretionary or coverage-bound first

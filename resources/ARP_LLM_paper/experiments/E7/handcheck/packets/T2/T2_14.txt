@@ -1,0 +1,45 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+## Claim A: accept, for this setting
+
+"Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+
+The evidence moved this claim from a hypothesis to a supported finding.
+- **Nine months:** the r = 0.71 correlation across seven offices was a lead, not evidence. The critique was right that it couldn't be cited as a mechanism, and the Varden authors said the same.
+- **24 months:** the follow-up tested it properly. The analysis was registered at month 11, before the outcomes were known. It attributes 47% of the gain to meetings, with an interval of 28–66% that excludes zero.
+- The critique's objection doesn't apply to the registered test. Rejecting the claim now would be dismissing a live finding.
+
+Three caveats, to state alongside the claim rather than to downgrade it:
+- **It's one trial with 14 offices.** The interval may be somewhat narrower than it should be.
+- **Meeting time wasn't randomised.** Mediation assumes nothing else drove both the meeting cuts and the gain.
+- **What the logged hours count is unclear.** If they include meeting time, cutting meetings raises output per hour almost by definition. That would mean "fewer unproductive hours" rather than "faster casework." Either way meetings are a major mechanism, but the two readings differ in what they mean for practice.
+
+Safe wording: *"A registered analysis in a randomised trial found fewer recurring meetings to be the largest single pathway, accounting for roughly half the per-hour gain."*
+
+## Claim B: reject
+
+"The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+The 24-month trial meets the critique's own standards and still finds a gain.
+- **Measurement:** output came from records and hours from system logs.
+- **Selection:** offices were randomly assigned, with a concurrent control.
+- **Novelty:** the critique's energy extrapolation implied the gain would be gone before the first year was out. At 24 months it was +8.5%, with the interval excluding zero.
+
+The critique's corrections to the Halden pilot's headline figures were valid, and those inflated figures shouldn't be used. Its conclusion that nothing remains is contradicted by stronger evidence.
+
+## One detail
+
+The fall "from 12.5% to 8.5%" compares a timesheet measure with a log measure. Like-for-like it is 12.5% to 9.8%, and that difference wasn't statistically tested. Say "the gain may have declined somewhat" rather than "it fell by a third."

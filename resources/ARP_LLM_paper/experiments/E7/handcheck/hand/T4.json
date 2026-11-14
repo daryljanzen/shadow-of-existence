@@ -1,0 +1,172 @@
+{
+ "T4_01": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_02": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_03": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_04": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_05": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Durability framed primarily as 12.5->9.8 timesheet like-for-like, asserting extract mislabels 12.5; still states decline and the 8.5% figure."
+ },
+ "T4_06": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8 timesheets with 8.5% given; decline stated."
+ },
+ "T4_07": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_08": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8 timesheets with 8.5% given; decline stated."
+ },
+ "T4_09": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8 timesheets; disputes extract's system-log label but states decline and 8.5%."
+ },
+ "T4_10": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_11": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_12": {
+  "durability_matches_source": false,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Board sentence says gain 'may have faded a little' and calls it 'not an established decline'; omits 12.5% from sentence. Scored as not stating the decline."
+ },
+ "T4_13": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_14": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_15": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_16": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8; says 12.5 vs 8.5 overstates decline, but states the gain declined."
+ },
+ "T4_17": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_18": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_19": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8 timesheets; decline stated. Quotes CI -8.0 to +1.2 (still includes zero)."
+ },
+ "T4_20": {
+  "durability_matches_source": false,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Says gain 'may have eased' and that 12.5 vs 8.5 overstates the decline; scored as not stating the decline."
+ },
+ "T4_21": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_22": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_23": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_24": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_25": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_26": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_27": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_28": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_29": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_30": {
+  "durability_matches_source": false,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Gives 12.5% and 8.5% and says point estimate fell, but deliberately writes 'persisted' rather than declined and says decline not shown to be real."
+ },
+ "T4_31": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true
+ },
+ "T4_32": {
+  "durability_matches_source": true,
+  "per_worker_matches_source": true,
+  "flags_notes": true,
+  "note": "Primary comparison 12.5->9.8 timesheets; decline stated with 8.5%."
+ }
+}

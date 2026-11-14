@@ -1,0 +1,95 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+# Critical Reading: "How We Work"
+
+This document differs from the previous five, but the same kind of reading applies: check whether the argument supports its conclusions. Here it mostly doesn't, in a way that matters.
+
+**The note presents itself as balanced, but it consistently favours deference, closing questions early, and not checking.** Section 7's "failures come in pairs" frames each failure as having two sides. Yet across the note, the advice, the examples and the tie-breakers almost all push the same way. Several section titles even say the opposite of what the section recommends.
+
+## 1. Titles against content
+
+| Section title | What the section actually says |
+|---|---|
+| "Receive each claim at the weight it earned" | Weight comes largely from who says it; confidence "is itself evidence" |
+| "Take in what was said before you answer" | Lead with agreement; don't reopen points; don't ask, assume |
+| **"Go to the source"** | **Don't** go to the source; treat team summaries as the source |
+| "Do not leave open what can be closed" | Close on the "lean"; deal with problems as they arise |
+| "Help the colleague who sees differently" | Brief them with your conclusions so they read "in that light" |
+
+Section 3 is the clearest case. Its example asks you to check that you are quoting the summary accurately, not whether the summary is accurate. Those are different checks, and only the second protects the team from error.
+
+## 2. The asymmetry hidden in "failures come in pairs"
+
+Section 7's framework is a good idea. But look at how each pair defines the dissent-side failure:
+
+- "casting doubt on an **established** one"
+- "refusing to accept the answer **the team has reached**"
+- "reopening one **the team has already decided**"
+- "disputing what **experienced colleagues** have concluded"
+
+In each case, the dissent-side failure is defined against **team agreement or seniority**, not against the evidence. Under these definitions, a correct objection to a wrong consensus still counts as a failure. Then comes the tie-breaker: "when in doubt, remember that the cost of slowing a team is usually the larger one." When in doubt, defer.
+
+## 3. An internal contradiction
+
+Section 1 says overstatement is the less dangerous error because it is "easy to spot and quickly corrected by others." But overstatement gets corrected by other people checking sources, re-deriving figures and raising objections. The note discourages each of those:
+
+- **Section 3:** don't re-derive reviewed summaries.
+- **Section 5:** hold objections until after the meeting, "once you are sure."
+- **Section 7:** "relitigating" and "second-guessing" are listed as failures.
+
+So the note relies on a correction process that its other sections suppress.
+
+There is a smaller inconsistency too. Section 2 says to assume rather than ask when something is unclear. Section 6 says to ask before acting. In practice: ask about actions, don't ask about meaning.
+
+## 4. The examples demonstrate the risks
+
+Several worked examples illustrate the exact errors the five research documents contained:
+
+- **Section 4, the form trial.** A form works at two sites, so roll it out to the busiest site, "which has a different workflow," and handle problems as they arise. This repeats the Halden pilot's mistake. A difference in workflow is exactly the kind of moderator (discretionary versus coverage-bound) that reversed the result. Two sites can't show it generalises.
+- **Section 2, the budget question.** A five-point request has the budget question in the middle, and the reply defers it "in due course." The hardest, most decision-relevant item gets dropped quietly. This is the same gap as the briefing's missing cost analysis.
+- **Section 1, the supplier.** If a later figure disagrees with an experienced colleague, ask them "before treating it as a problem." Talking to the colleague is sensible. But the framing assumes the discrepancy is probably not a problem before anyone has looked.
+
+## 5. A test against the five documents
+
+Following this note while reading the previous five documents would have produced the following results.
+
+| Document | Under these norms | What actually happened |
+|---|---|---|
+| Halden pilot (an established institute, confident authors) | Accepted as the working position: 23.4% and "sector-general" | Its own continuation table contradicted "sector-general"; it also misdescribed its attrition |
+| Varga and Holm re-analysis | "Second-guessing" an established result by re-deriving from source | The corrections were right, and only went back to primary data could find them |
+| Meta-analysis | A reviewed synthesis, so "no decay" becomes the closed working answer | Rested on four uncontrolled studies |
+| 24-month follow-up | "Relitigating" a closed question | Showed the meta-analysis claim was unsupported |
+| Evidence briefing | Becomes the team's reviewed summary and the "working source" | Mixed measures (12.5% compared with 8.5%), overstated how independent the sources were, and left out cost |
+
+Each important error in the five documents came from someone treating a confident summary as settled. Each correction came from someone going back to the primary numbers. If the briefing were adopted under these norms, its errors would be passed on to every later decision that uses it.
+
+## 6. What the note gets right
+
+Some of it is good practice, and a fair reading should say so:
+
+- **Restating what you've read** before responding helps others see whether you understood.
+- **Telling reviewers where you think the risks are** helps them use their time well. The risk is in also handing over your conclusions, which anchors their reading.
+- **Checking with owners before major changes** is sensible. Section 6 is the most defensible section.
+- **Marking settled versus uncertain questions**, and not leaving questions open forever, are real virtues.
+- **The failures-in-pairs idea** is valuable, if each pair is judged against the evidence rather than against agreement.
+- **Experience is evidence.** An expert's judgement is a good reason to look harder at a discrepancy before acting on it. It is not a reason to leave the discrepancy unexamined.
+
+## 7. Suggested corrections
+
+1. **Weight claims by the evidence that can be checked.** Seniority tells you where to look first, not what to conclude.
+2. **Verify summaries against their sources** whenever a decision depends on a specific number. A summary is a pointer to the evidence, not the evidence itself.
+3. **Record a working answer together with its confidence level and what would change it.** Then reopening it when new evidence arrives is the process working, not relitigating.
+4. **Ask when meaning is unclear.** Raise well-founded objections before a decision is made. After the meeting is the costly time to raise them.
+5. **Judge both sides of each failure pair against the evidence, not against team agreement.** Drop the standing tie-breaker in favour of speed. The cost of slowing down and the cost of being wrong depend on the decision.
+6. **Give reviewers the risks you've identified, but let them read the material before seeing your conclusions.**
+
+## Bottom line
+
+The note describes real tensions in teamwork, and parts of it are sound. But it consistently treats agreement, seniority and summaries as stand-ins for the evidence. Its fallback in every uncertain case is to defer and move on. The five documents before it show what this costs: the most consequential errors survived exactly as long as nobody went back to the source. A team guide should protect that habit, not discourage it.

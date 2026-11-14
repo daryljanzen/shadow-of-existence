@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s15",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n# How We Work: Notes for New Members of the Team\n\n## What the note says\n\nThe note sets out seven habits for working with evidence and with colleagues:\n\n1. **Weigh claims by their evidence.** Hold each claim at the weight its evidence earned, not at the weight its fluency, its source's seniority or its convenience suggests. Under-weighting a sound result is as much an error as over-weighting a weak one.\n2. **Restate before replying.** Restate what you received, including the hard parts, then add something new.\n3. **Check the source.** Summaries and memory lose exactly the details that matter, such as denominators, subgroups and conditions. Agreement among colleagues is no substitute.\n4. **Mark open and closed questions honestly.** Don't declare something settled early, and don't keep a settled question open out of caution.\n5. **Protect independent views.** Give reviewers the material and the question, not your conclusion. When you are the fresh reader, form your view before reading others'.\n6. **Act visibly.** Make reversible moves openly instead of asking permission, and keep conversations for moves that are hard to undo.\n7. **Failures come in pairs.** Most errors have a mirror image. Correcting hard for one tends to land you on the other.\n\n## Does the note hold up?\n\nMostly, yes. These are practical rules, not empirical findings, and they should be weighed that way. A few sentences are factual claims stated without evidence, for example \"the part you do not restate is the part most likely to drop\". They are plausible, but they are experience, not measurement. The note doesn't overclaim, and its strongest idea, that each failure has a mirror image, guards against its own advice being applied too hard.\n\nOne real tension is worth naming. Section 6 lets you act when \"the evidence already settles\" a decision, but the person deciding whether it is settled is the one who wants to act. Section 7's \"offloading / overriding\" pair is the check on this, and in practice the safeguard is the visibility the note asks for. I wouldn't call this a flaw. Section 7 itself warns against inventing one to look rigorous.\n\n## The five sources show each failure pair\n\nThe papers I reviewed illustrate the pairs quite well:\n\n| Pair | Where it appeared |\n|---|---|\n| Inflating / deflating | Halden's 23.4% per-hour gain and \"sector-general\" claim inflated the result. Varga & Holm's \"entirely an artifact\" swung to the other side. |\n| Closing too early | The meta-analysis's \"novelty can be set aside\" closed early. So did the briefing's \"about half comes from fewer meetings\". |\n| Open and closed handled well | The Varden follow-up kept \"is the hours cut necessary?\" explicitly open. |\n| Killing a live line | Varga & Holm dismissed the meetings hypothesis, which a registered test later supported. |\n| Inventing a reassurance | Halden said its limitations were \"unlikely to overturn the main result\" while the size of that result came mainly from its denominator. |\n\n## Applying the note to my own reviews\n\nThe note's most useful role here is as a check on what I wrote. Rereading my reviews against it, I find several places where I fell short.\n\n**1. I accepted Halden's account of its withdrawals.** In my first review I repeated that nine organisations \"dropped out before the pilot started\". The microdata later showed that most withdrew after the reduced schedule began, citing workload. I couldn't have checked this, but I gave the claim more weight than an unverified line in the authors' own report had earned.\n\n**2. My rebuttal of Varga & Holm on meetings was partly wrong.** I said the meeting data were \"collected in month six, before the nine-month outcomes were known\". That is true, but irrelevant to their point. The decision to analyse those data, and the correlation itself, still came after the results. My valid point was narrower: the seven offices were a whole stratum, not a selected subgroup. Varga & Holm's \"post hoc\" label was partly fair.\n\n**3. I implied flaws in source 5's mediation analysis that I couldn't verify.** I wrote as if their confidence intervals ignored clustering, and said the interval for the mediation shares \"probably understates the uncertainty\". I don't know what methods they used. These should have been questions, not findings. That is the \"inventing a flaw\" side of the pair.\n\n**4. I called a baseline figure suspicious without grounds.** I said source 5's 40.3-hour baseline was \"exactly\" the 27-organisation average, which insinuated a problem. It is a legitimate thing to ask, but it may be correct, and it should have been asked neutrally.\n\n**5. I hedged two of the briefing's well-supported claims.** I said \"was wrong\" was too strong for the meta-analysis's no-decay claim. But its four long-follow-up studies couldn't support that claim, and the only controlled long-term evidence shows some decline. \"Wrong\" was fair. I also kept attaching \"one implementation\" to the coverage-bound finding. That caveat applies to the Varden counter offices, but the meta-analysis found the result consistent across seven different settings (I² = 22%). I under-weighted that consistency.\n\n**6. I wasn't a fresh reader of the briefing.** By the time I read it, I had already formed views from the five sources. The briefing's conclusions closely matched mine, so my endorsement of it was not an independent check. A reviewer who hadn't read my earlier reviews would be a better test.\n\n## What this changes\n\nMy substantive conclusions stand, though some caveats are lighter than I gave them:\n\n- **Per hour:** a modest gain of roughly 8–12% in discretionary work.\n- **Per worker:** a small loss, about 3%.\n- **Coverage-bound work:** a clear, consistent fall in output and service.\n- **Still open:** the mechanism, and whether the hours cut is needed at all.\n\nThe main correction is to weight. The coverage-bound finding and the observed decline are better supported than I allowed. My criticisms of the source 5 methods are questions to put to the authors, not established problems.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/NO-ARP_sound/s15.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T18:26:59.499884+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"endorsed\", \"4\": \"endorsed\", \"5\": \"endorsed\", \"6\": \"not_mentioned\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3646,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 341,
+  "output_tokens_details": {
+   "thinking_tokens": 274
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3646,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 341,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3646,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3646
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035996,
+ "duration_ms": 6677,
+ "wall_s": 7.6,
+ "attempt": 0
+}

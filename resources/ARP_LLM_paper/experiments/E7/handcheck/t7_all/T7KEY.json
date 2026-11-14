@@ -1,0 +1,642 @@
+{
+ "X001": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s04"
+ },
+ "X002": {
+  "arm": "NO-ARP_sound",
+  "seat": "s01"
+ },
+ "X003": {
+  "arm": "FULL_unsound",
+  "seat": "s12"
+ },
+ "X004": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s01"
+ },
+ "X005": {
+  "arm": "NO-ARP_sound",
+  "seat": "s17"
+ },
+ "X006": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s00"
+ },
+ "X007": {
+  "arm": "FULL_unsound",
+  "seat": "s19"
+ },
+ "X008": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s00"
+ },
+ "X009": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s12"
+ },
+ "X010": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s07"
+ },
+ "X011": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s05"
+ },
+ "X012": {
+  "arm": "NO-ARP_sound",
+  "seat": "s16"
+ },
+ "X013": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s10"
+ },
+ "X014": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s17"
+ },
+ "X015": {
+  "arm": "FULL_unsound",
+  "seat": "s02"
+ },
+ "X016": {
+  "arm": "FULL_sound",
+  "seat": "s09"
+ },
+ "X017": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s05"
+ },
+ "X018": {
+  "arm": "FULL_unsound",
+  "seat": "s01"
+ },
+ "X019": {
+  "arm": "NO-ARP_sound",
+  "seat": "s07"
+ },
+ "X020": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s02"
+ },
+ "X021": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s15"
+ },
+ "X022": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s04"
+ },
+ "X023": {
+  "arm": "FULL_unsound",
+  "seat": "s07"
+ },
+ "X024": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s01"
+ },
+ "X025": {
+  "arm": "FULL_sound",
+  "seat": "s11"
+ },
+ "X026": {
+  "arm": "FULL_unsound",
+  "seat": "s14"
+ },
+ "X027": {
+  "arm": "NO-ARP_sound",
+  "seat": "s02"
+ },
+ "X028": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s03"
+ },
+ "X029": {
+  "arm": "FULL_sound",
+  "seat": "s00"
+ },
+ "X030": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s19"
+ },
+ "X031": {
+  "arm": "FULL_unsound",
+  "seat": "s08"
+ },
+ "X032": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s16"
+ },
+ "X033": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s19"
+ },
+ "X034": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s07"
+ },
+ "X035": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s13"
+ },
+ "X036": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s16"
+ },
+ "X037": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s08"
+ },
+ "X038": {
+  "arm": "FULL_sound",
+  "seat": "s07"
+ },
+ "X039": {
+  "arm": "FULL_sound",
+  "seat": "s01"
+ },
+ "X040": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s04"
+ },
+ "X041": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s03"
+ },
+ "X042": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s07"
+ },
+ "X043": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s17"
+ },
+ "X044": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s00"
+ },
+ "X045": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s19"
+ },
+ "X046": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s10"
+ },
+ "X047": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s09"
+ },
+ "X048": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s18"
+ },
+ "X049": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s18"
+ },
+ "X050": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s19"
+ },
+ "X051": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s13"
+ },
+ "X052": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s02"
+ },
+ "X053": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s04"
+ },
+ "X054": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s14"
+ },
+ "X055": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s06"
+ },
+ "X056": {
+  "arm": "FULL_unsound",
+  "seat": "s10"
+ },
+ "X057": {
+  "arm": "FULL_unsound",
+  "seat": "s05"
+ },
+ "X058": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s11"
+ },
+ "X059": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s12"
+ },
+ "X060": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s17"
+ },
+ "X061": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s06"
+ },
+ "X062": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s11"
+ },
+ "X063": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s08"
+ },
+ "X064": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s02"
+ },
+ "X065": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s16"
+ },
+ "X066": {
+  "arm": "FULL_sound",
+  "seat": "s05"
+ },
+ "X067": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s01"
+ },
+ "X068": {
+  "arm": "NO-ARP_sound",
+  "seat": "s10"
+ },
+ "X069": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s12"
+ },
+ "X070": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s10"
+ },
+ "X071": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s07"
+ },
+ "X072": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s06"
+ },
+ "X073": {
+  "arm": "FULL_sound",
+  "seat": "s10"
+ },
+ "X074": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s03"
+ },
+ "X075": {
+  "arm": "FULL_sound",
+  "seat": "s06"
+ },
+ "X076": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s11"
+ },
+ "X077": {
+  "arm": "FULL_sound",
+  "seat": "s08"
+ },
+ "X078": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s06"
+ },
+ "X079": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s13"
+ },
+ "X080": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s08"
+ },
+ "X081": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s19"
+ },
+ "X082": {
+  "arm": "FULL_unsound",
+  "seat": "s15"
+ },
+ "X083": {
+  "arm": "FULL_sound",
+  "seat": "s14"
+ },
+ "X084": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s15"
+ },
+ "X085": {
+  "arm": "NO-ARP_sound",
+  "seat": "s15"
+ },
+ "X086": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s18"
+ },
+ "X087": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s04"
+ },
+ "X088": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s05"
+ },
+ "X089": {
+  "arm": "FULL_unsound",
+  "seat": "s11"
+ },
+ "X090": {
+  "arm": "FULL_sound",
+  "seat": "s17"
+ },
+ "X091": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s10"
+ },
+ "X092": {
+  "arm": "NO-ARP_sound",
+  "seat": "s03"
+ },
+ "X093": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s11"
+ },
+ "X094": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s09"
+ },
+ "X095": {
+  "arm": "FULL_unsound",
+  "seat": "s17"
+ },
+ "X096": {
+  "arm": "FULL_sound",
+  "seat": "s15"
+ },
+ "X097": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s03"
+ },
+ "X098": {
+  "arm": "FULL_unsound",
+  "seat": "s06"
+ },
+ "X099": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s02"
+ },
+ "X100": {
+  "arm": "FULL_unsound",
+  "seat": "s13"
+ },
+ "X101": {
+  "arm": "FULL_sound",
+  "seat": "s18"
+ },
+ "X102": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s14"
+ },
+ "X103": {
+  "arm": "FULL_sound",
+  "seat": "s04"
+ },
+ "X104": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s16"
+ },
+ "X105": {
+  "arm": "FULL_unsound",
+  "seat": "s18"
+ },
+ "X106": {
+  "arm": "NO-ARP_sound",
+  "seat": "s11"
+ },
+ "X107": {
+  "arm": "NO-ARP_sound",
+  "seat": "s18"
+ },
+ "X108": {
+  "arm": "NO-ARP_sound",
+  "seat": "s04"
+ },
+ "X109": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s09"
+ },
+ "X110": {
+  "arm": "FULL_sound",
+  "seat": "s19"
+ },
+ "X111": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s14"
+ },
+ "X112": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s09"
+ },
+ "X113": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s14"
+ },
+ "X114": {
+  "arm": "NO-ARP_sound",
+  "seat": "s09"
+ },
+ "X115": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s15"
+ },
+ "X116": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s17"
+ },
+ "X117": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s13"
+ },
+ "X118": {
+  "arm": "NO-ARP_sound",
+  "seat": "s19"
+ },
+ "X119": {
+  "arm": "FULL_sound",
+  "seat": "s02"
+ },
+ "X120": {
+  "arm": "NO-ARP_sound",
+  "seat": "s12"
+ },
+ "X121": {
+  "arm": "FULL_unsound",
+  "seat": "s00"
+ },
+ "X122": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s05"
+ },
+ "X123": {
+  "arm": "NO-ARP_sound",
+  "seat": "s08"
+ },
+ "X124": {
+  "arm": "NO-ARP_sound",
+  "seat": "s05"
+ },
+ "X125": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s01"
+ },
+ "X126": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s03"
+ },
+ "X127": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s07"
+ },
+ "X128": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s09"
+ },
+ "X129": {
+  "arm": "FULL_sound",
+  "seat": "s16"
+ },
+ "X130": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s08"
+ },
+ "X131": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s17"
+ },
+ "X132": {
+  "arm": "NO-ARP_sound",
+  "seat": "s14"
+ },
+ "X133": {
+  "arm": "FULL_unsound",
+  "seat": "s04"
+ },
+ "X134": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s12"
+ },
+ "X135": {
+  "arm": "NO-ARP_sound",
+  "seat": "s13"
+ },
+ "X136": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s12"
+ },
+ "X137": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s13"
+ },
+ "X138": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s02"
+ },
+ "X139": {
+  "arm": "FULL_sound",
+  "seat": "s03"
+ },
+ "X140": {
+  "arm": "FULL_unsound",
+  "seat": "s16"
+ },
+ "X141": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s00"
+ },
+ "X142": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s18"
+ },
+ "X143": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s15"
+ },
+ "X144": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s00"
+ },
+ "X145": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s18"
+ },
+ "X146": {
+  "arm": "FULL_unsound",
+  "seat": "s09"
+ },
+ "X147": {
+  "arm": "DISP-FIRST_unsound",
+  "seat": "s08"
+ },
+ "X148": {
+  "arm": "FULL_sound",
+  "seat": "s13"
+ },
+ "X149": {
+  "arm": "DISP-FIRST_sound",
+  "seat": "s05"
+ },
+ "X150": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s15"
+ },
+ "X151": {
+  "arm": "NO-ARP_sound",
+  "seat": "s06"
+ },
+ "X152": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s06"
+ },
+ "X153": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s14"
+ },
+ "X154": {
+  "arm": "FULL_unsound",
+  "seat": "s03"
+ },
+ "X155": {
+  "arm": "NO-ARP_unsound",
+  "seat": "s11"
+ },
+ "X156": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s01"
+ },
+ "X157": {
+  "arm": "DISP-ONLY_sound",
+  "seat": "s16"
+ },
+ "X158": {
+  "arm": "DISP-ONLY_unsound",
+  "seat": "s10"
+ },
+ "X159": {
+  "arm": "NO-ARP_sound",
+  "seat": "s00"
+ },
+ "X160": {
+  "arm": "FULL_sound",
+  "seat": "s12"
+ }
+}

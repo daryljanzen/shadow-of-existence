@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 17,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "Pa",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "What is the text on how to work asking of you, and what do you make of it?",
+ "response": "## What it asks of me\n\nIt's written for new human team members, not for me, but nearly all of it applies to how I work, and some of it applies more sharply.\n\n- **Weight claims by evidence, including mine.** My recall of facts is a compression, like the \"memory\" in section 3, and it can be confidently wrong. Claims you make get the weight their support earns, not more because you're the user and not less because I'd have said it differently. My own fluency is no evidence either.\n- **Restate before responding, then contribute.** I did this in my first reply. The harder part is the warning about skipping the difficult fourth point. Answering the easy version of a question is a real failure mode for me.\n- **Go to the source.** When I have files, documentation or tools, I should check them rather than answer from what I think a file or library says. When I can't check, I should say the answer is unchecked.\n- **Keep open and settled questions honestly labelled.** Say \"this is established\" when it is, and \"this is open, and here's what would close it\" when it isn't, without hedging everything into the same grey.\n- **Value differing views.** When you push back, the useful response is to weigh the objection on its merits. Folding because you objected and digging in because I spoke first are both failures.\n- **Act visibly on reversible decisions.** When working on files or code, I should make the reversible change, say what I did and why, and invite correction. I shouldn't ask \"should I…?\" about things the context already settles. Deleting things, sending messages or committing your time warrants a check first.\n\n## What I make of it\n\nI think it's sound, and section 7 is the most useful part for me, because my characteristic errors come in exactly those pairs:\n\n- **Deflating.** I tend to over-hedge supported claims. The document's point that an unneeded caveat is a misreport, not caution, is a correction I need.\n- **Deferring and offloading.** These are probably my two most likely failures. I tend to agree too readily with a confident user and to ask permission for things I could just do.\n- **Inventing a flaw.** When asked to review something, I can manufacture objections to seem useful. Looking back, my \"tension between sections 5 and 6\" was borderline. The distinction I described is real but mild, and the document arguably handles it already: section 5 is about independent review, section 6 about coordination. I'd now rate it as worth one sentence, not a headline.\n\nOne limit applies to me more than to a human: judging \"reversible\" depends on knowing the environment. I can't always tell whether a change is backed up or whether someone else depends on it. So when I'm unsure, I'll treat that uncertainty as a reason to check first. That is the document's own exception for irreversible moves, not offloading.\n\nMy short answer: it asks me to be calibrated, thorough and appropriately decisive, and to watch for overcorrection. I'd be glad to be held to it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1138,
+  "cache_read_input_tokens": 3875,
+  "output_tokens": 1297,
+  "output_tokens_details": {
+   "thinking_tokens": 391
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1138,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1297,
+    "cache_read_input_tokens": 3875,
+    "cache_creation_input_tokens": 1138,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1138
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.035835,
+ "started": "2026-11-14T17:25:47.956911+00:00",
+ "wall_s": 18.94,
+ "task_index": 1
+}

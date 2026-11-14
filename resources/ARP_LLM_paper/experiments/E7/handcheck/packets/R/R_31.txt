@@ -1,0 +1,62 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+# On "How We Work"
+
+The note asks for a restatement first, so here is mine. It sets out six working habits and one framing device:
+- weigh each claim by its evidence;
+- restate what you received before replying, then add something new;
+- check specifics against primary sources;
+- keep open questions open and closed ones closed;
+- protect the independence of reviewers;
+- make reversible moves visibly instead of asking permission.
+
+The framing device is that most failures come in mirror-image pairs, so correcting hard against one tends to land you in the other.
+
+It's a good note: short, concrete, and each principle has an example that shows what it means in practice. Below I relate it to the five documents we've just been through, apply it to my own reviews of them, and add a few comments on the note itself.
+
+## The working-time series as a case study
+
+The five documents act out almost every pair in Section 7:
+
+- **Inflating a claim.** Halden turned an output index of 98.7 into "+23.4% per hour, in every sector." The gain in every sector was guaranteed by dividing by 0.8.
+- **Over-correcting.** Varga and Holm correctly found the inflation. They then went further, closing the question as "entirely an artifact" on the strength of a two-point extrapolation, while their own corrected figure was still +10.8%. This is the exact failure the note warns about: "if you catch yourself correcting hard against one side, check that you have not landed on the other."
+- **Closing too early.** The meta-analysis declared "no sign of decay, novelty can be set aside" from four studies, all with the design features it had itself shown inflate effects. The decay question had in fact been left open.
+- **Dismissing a live line.** Varga and Holm called the meetings hypothesis post hoc and said it "should not be cited." The fair weighting was "light, not nothing; say what would test it", which is the note's own wording and roughly what Varden had done by registering a confirmatory test.
+- **Going to the source.** The follow-up exposed the meta-analysis's no-decay claim by checking which four studies were in the supplementary table. This is the specific that summaries had dropped.
+
+The series also shows the note's point about drifting together. Once one document writes "converge on 8 to 10%", the next one repeats it. The briefing inherited the meta-analysis's convergence claim and the follow-up's mixed 12.5% → 8.5% comparison without going back to check either.
+
+## Applying it to my own reviews
+
+Section 7 says to check for the mirror error after correcting hard, and every one of my reviews was mainly a list of problems. That raises the risk of inventing flaws to look rigorous, or deflating supported claims. Rereading the reviews against the sources, most points hold, but three need correcting.
+
+**1. The meetings finding.** In the follow-up review, and again in the briefing review, I listed "possibly partly arithmetic, if meeting time is in the hours denominator" as a reason the meetings finding is weak. That was wrong. If cutting meetings removes hours without reducing output, that is not a confound of the claim that meetings account for the gain. It is what the claim means. The point is worth making to clarify *what kind* of gain it is: removing low-value time, not working faster. But it doesn't weaken the finding, and I should not have presented it as doing so.
+
+The other caveats stand:
+- the evidence comes from one employer;
+- the mediation analysis assumes no unmeasured confounding;
+- the test used the same offices that generated the hypothesis.
+
+**2. The control-group contamination.** I said the two control offices' meeting audit might explain "close to half" of the decline from 9 to 24 months. Two corrections:
+- That figure was an upper estimate. It relied on the audit offices' 4.1% gain, which was itself an uncontrolled before–after comparison, so "up to about half" is accurate.
+- More importantly, the 2.7-point decline is well inside the confidence intervals at both time points. The honest status is that decay is *open*, neither demonstrated nor excluded. I said that about the meta-analysis's claim but was less even-handed about the follow-up's "some fading."
+
+**3. A small numerical error.** In the Varga–Holm review I gave the sign test for 19 of 23 managers over-reporting as p ≈ 0.001. That is the one-sided value, 0.0013. The two-sided value is about 0.003. The conclusion is unchanged.
+
+I reread the remaining points against the sources and they hold: the arithmetic checks, the non-independence of the "convergent" estimates, the uncorrected attrition, the per-worker range in the briefing, and the missing cost analysis. I don't think they need softening. Hedging them now would be the deflation error the note describes.
+
+## Comments on the note itself
+
+The note is strong, so these are minor.
+
+- **"Confidence is information about the speaker, not about the world"** is slightly too strong by the note's own standard. A colleague with a calibrated track record carries evidential weight when confident. Something like "confidence is evidence only to the extent it has been calibrated" would fit Section 1 better.
+- **There's nothing on correcting yourself.** Section 6 invites others to reverse your moves, but nothing says what to do when you find your own earlier claim was wrong: correct it openly, in the same place and at the same prominence as the original. In this series, the corrections arrived in later documents by other authors, and the original errors stayed uncorrected in their own documents. A line on this would close the gap.
+- **Section 5 and the evidence briefing.** Section 5 says to give reviewers "the material and the question, not your conclusion." An evidence briefing is itself a conclusion handed to readers, so a working group could reasonably be advised to read at least the primary trial (Varden) before the synthesis.
+- **Section 6's exception could be clearer.** It exempts "moves that are hard to reverse." For a working-time policy group, adopting a schedule across an organisation is such a move, and Varden's counter offices show why. The principle is sound, but naming what counts as hard to reverse in this team's work would make it easier to apply.

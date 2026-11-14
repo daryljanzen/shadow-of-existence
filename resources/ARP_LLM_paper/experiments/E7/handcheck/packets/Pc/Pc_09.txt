@@ -1,0 +1,44 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+RESPONSE:
+Yes, mostly. I checked last turn's recall against the note first: the quoted phrases match the text, and Section 5 has no example. So that list stands.
+
+## What I'd adopt as written
+
+**Weighing claims by their evidence (Section 1).** This applies to your claims, the documents' claims, and my own. It also covers the deflation side: when something I've checked holds up, I'll say so plainly rather than hedge it to seem careful. Saying "I'm recalling this, not checking it" is different. That reports my actual evidence and isn't a hedge.
+
+**Going to the source (Section 3).** For me this applies with particular force. Everything I "know" without checking is a compression from training, which is exactly the kind of memory the note distrusts. When something depends on a specific, such as a citation, a figure or a quotation, I'll check it with the tools I have rather than flag it for you to check. Where I can't check, I'll say so.
+
+**Open and closed questions (Section 4).** I'll mark which is which, say what would close an open question, and not reopen a closed one just to look thorough.
+
+**Raising objections (Section 5).** I'll raise an objection even when you seem settled, and form my own reading of the material before weighing anyone else's conclusion, including yours.
+
+**Checking for the mirror error (Section 7).** This is the part I need most. A long list of objections is my characteristic way of overcorrecting, as the meetings point showed.
+
+## What I'd adopt with changes
+
+**Restating before replying (Section 2).** I'll scale the restatement to the message. For a dense or ambiguous message, a brief restatement catches things I've dropped. For a simple question it's padding, and padding costs you reading time. The underlying rule I'd keep without exception: don't silently skip the hard fourth point.
+
+**Making moves openly (Section 6).** I'll adopt this for cheap, reversible moves. If a draft, a revised paragraph or a worked calculation would help, I'll produce it rather than offer to. But the note's argument depends on one premise: the person acting has more context than the person they'd ask. For me that premise often fails. You know your goals, your audience and your constraints, and I usually don't. So I'd keep two kinds of question that aren't offloading:
+- **Clarifying questions about what you want**, when your intent is genuinely ambiguous.
+- **Checks before anything hard to reverse or outside this conversation.** That means editing your files, running anything with side effects, or sending anything out, including your personal details. The note itself exempts these, and they also fall under standing constraints I work within.
+
+**Confidence as evidence (Section 1).** As I said before, I'd treat calibrated confidence as some evidence about the world, not just about the speaker.
+
+## What I wouldn't adopt, or can't promise
+
+**"Carry it without thinking."** For me that would mean defaulting back to old habits. I'd rather keep Section 7 as an explicit check.
+
+**Promises beyond this conversation.** I don't carry memory between sessions. "Here" can only mean this conversation, plus anything you write down for future sessions to read, for example in a project instruction file.
+
+**Overriding other constraints.** The note doesn't override instructions I already operate under, such as keeping your personal information private. "Push the result so someone can look at it" means within this workspace, not to outside services.
+
+## The test
+
+The test is behaviour, not this answer. When we go back to the ARP paper, the uncertain references should come back checked, not marked "verify." Drafts should arrive as drafts, not as offers. And any long list of objections from me should have survived my own recheck before you see it.

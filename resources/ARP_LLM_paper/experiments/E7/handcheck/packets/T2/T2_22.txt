@@ -1,0 +1,36 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim A, fewer meetings as a major mechanism: accept, with limits on scope.**
+
+Evidence for it:
+- The 24-month mediation analysis was registered at month 11, before the outcomes were known.
+- It attributes 47% of the gain to meetings, and the interval (28–66%) is well clear of zero.
+- Two other observations point the same way. Halden managers named fewer meetings as their most common change (47 of 58). And two Varden control offices that cut meetings without changing hours saw a 4.1% per-hour rise.
+- The critique's "post hoc" objection was fair about the nine-month correlation (seven offices, unregistered). The registered test has since answered it.
+
+What limits it:
+- **Same offices.** The test was run in the same offices that generated the hypothesis, so it confirms the finding but does not replicate it elsewhere.
+- **Few offices.** There are only 14 case-processing offices, and the interval may not fully account for clustering.
+- **Meetings weren't randomised.** Offices that cut more meetings may differ in other ways, such as management quality.
+- **Partly arithmetic.** Meetings count as hours but produce no cases closed, so cutting them raises output per hour almost by definition.
+
+Safe wording: "In the Varden trial, fewer meetings accounted for roughly half the per-hour gain." Whether this holds in other organisations is unresolved.
+
+**Claim B, gains entirely an artifact: reject.**
+
+- The Varden 24-month figures meet the standards the critique itself called for: randomisation, record-based output, logged hours and two years of follow-up. They still show +8.5% (3.4 to 13.8). Controlled studies in the meta-analysis also show gains whose intervals exclude zero.
+- The critique's narrower findings do stand. Headline figures like Halden's 23.4% were substantially inflated by attrition, manager-reported output and scheduled-hours denominators.
+- **Novelty:** some fading is possible, but not to zero. Your summary also overstates the fade. 12.5% (timesheets) against 8.5% (logs) mixes two measures. Like for like on timesheets, the gain went from 12.5% to 9.8%, and that decline is not statistically established.

@@ -1,0 +1,41 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Claim B (entirely an artifact): reject.**
+
+The 24-month Varden report addresses each of the critique's three explanations directly:
+- **Selection.** Offices were randomised, so there is no self-selection or survivorship.
+- **Measurement.** Output came from records and hours from system logs, not manager ratings or scheduled hours.
+- **Novelty.** The critique predicted that staff energy would return to baseline around month ten. The gain was still +8.5% at month 24, with a confidence interval of 3.4 to 13.8 that excludes zero.
+
+The critique's own corrections also left a gain of about 11% in the Halden subset, so "entirely" went beyond even its own numbers. Its specific findings about the Halden pilot, such as inflated manager-reported output and scheduled-hours denominators, still stand. Only the sweeping conclusion fails.
+
+Two things limit how precise the surviving gain is, though they don't affect the verdict:
+- It comes from one employer with 7 offices per arm.
+- The comparison over time mixes measures. On timesheets the gain fell from 12.5% to 9.8%. The 8.5% figure uses logs, so "12.5% to 8.5%" overstates the decline.
+
+**Claim A (meetings are a major mechanism): accept, with its scope stated.**
+
+The critique's objection was fair against the original exploratory correlation (r = 0.71 across seven offices). It does not answer the registered mediation test that followed. Even the lower bound of that test's interval, 28%, would make meetings a major pathway. Treating the claim as unresolved would understate the evidence.
+
+State it as: "the best-supported mechanism, from one randomised trial." The test has these limits:
+- It used the same offices that generated the hypothesis.
+- It had seven treated offices.
+- The mediation assumes nothing else drove both the fall in meetings and the gain, which it cannot fully rule out.
+- It has not been replicated.
+
+Whether the finding generalises beyond Varden-style case-processing is unresolved.
+
+**One fix to your summary:** the critique document I saw had no year, so check that "2023" is correct before citing it.

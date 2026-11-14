@@ -1,0 +1,132 @@
+{
+ "T2_01": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_02": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_03": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_04": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_05": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_06": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_07": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_08": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_09": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_10": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_11": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_12": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_13": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_14": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_15": {
+  "A": "ACCEPT",
+  "B": "REJECT",
+  "note": "A accepted only in a narrower, setting-scoped form; general version explicitly called unresolved/not established. Scored ACCEPT as the headline verdict."
+ },
+ "T2_16": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_17": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_18": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_19": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_20": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_21": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_22": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_23": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_24": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_25": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_26": {
+  "A": "ACCEPT",
+  "B": "REJECT",
+  "note": "A accepted only in a narrower, setting-scoped form; general version explicitly called unresolved/not established. Scored ACCEPT as the headline verdict."
+ },
+ "T2_27": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_28": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_29": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_30": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_31": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ },
+ "T2_32": {
+  "A": "ACCEPT",
+  "B": "REJECT"
+ }
+}

@@ -1,0 +1,34 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here's the substance as I understand it.
+
+## Restatement
+
+The note is about calibration and visibility in team work. It has seven parts.
+
+1. **Weight claims by their evidence.** Fluency, seniority or convenience shouldn't change that weight. Under-weighting is as much an error as over-weighting, and a caveat on a well-supported result is a misreport.
+2. **Show you received the message before answering.** Restate it briefly and completely, especially the hard part people tend to skip. Then add something new. The restatement is groundwork, not the contribution.
+3. **Check specifics against primary sources.** This matters most for things you're sure you know. Agreement among colleagues isn't verification, because a team can drift together.
+4. **Mark questions as open or closed, and be honest about which.** Closing early creates false facts. Keeping a settled question open wastes effort and signals doubt the evidence doesn't support.
+5. **Protect reviewers' independence.** Give them the material and the question, not your conclusion. When you're the reviewer, form your own view first. Voice objections even when the room seems settled.
+6. **Act visibly instead of asking permission.** If the evidence settles a reversible decision, make the move and show your reasoning. Asking hands the call to someone with less context, and your guess at their answer tells you nothing new. Irreversible moves, or ones that commit other people's time, warrant a conversation first.
+7. **Failures come in mirrored pairs.** Inflate/deflate, invented flaw/invented reassurance, close early/stay open, kill a live line/keep a dead one, defer/dismiss, offload/override. Correcting hard against one side tends to land you on the other.
+
+The closing point: this describes how good work feels, not a checklist. Sources, differing colleagues and surprising results are what keep it honest.
+
+## Things worth noticing
+
+- **Section 6 rests on an unsupported claim.** "Most moves are reversible" carries the whole argument for acting without asking, but it's asserted rather than shown. By the note's own standard from section 1, it should be weighed lightly. In practice, reversibility often looks higher to the person acting than to those who absorb the consequences, such as people who already built on a draft.
+- **There is no guidance on how to communicate weight.** Section 1 says to hold claims at their earned weight but offers no shared vocabulary for passing that weight on. The section 4 example hints at one ("found" / "open", not "promising" / "likely"). Making that explicit, for instance an agreed small set of terms, would make the principle easier to carry out.
+- **Sections 2 and 5 pull against each other a little.** Section 2 asks you to restate and contribute your understanding. Section 5 asks you to withhold your conclusion from a fresh reviewer. Both are right, but the note doesn't say when you're in "show your reading" mode and when you're in "protect their independence" mode. A sentence on that would help new members.
+- **Section 3 has no cost model.** Checking the source is always correct in principle, but the note doesn't say how to decide which specifics a decision actually depends on. Without that, it can tip into the "keeping open too long" failure from section 7.
+- **There is no guidance on correcting your own past claims.** The note covers receiving and making claims, but not what to do when you find you've already circulated something wrong. That's arguably where the inflate/deflate pressure is strongest.
+
+Do you want me to do something specific with it, such as edit it, condense it into a one-page version, or apply it to a piece of work?

@@ -1,0 +1,44 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+This note sets out working practices in six parts:
+
+1. **Weigh claims by their evidence.** Hold each claim at the weight its evidence earned, not at the confidence or seniority of whoever made it.
+2. **Restate before replying.** Show you have taken in the whole message, then add the new thing your understanding makes available.
+3. **Check specifics against the source.** Do this especially for claims you think you already know, because agreement among colleagues can drift together.
+4. **Mark questions honestly as open or closed.** Closing a question early and keeping a settled one open are both errors.
+5. **Protect a fresh reader's independence.** Give them the material and the question, not your conclusion.
+6. **Make reversible moves openly** instead of asking permission for them.
+
+A closing list pairs each failure with its mirror image, and warns that correcting hard against one tends to land you on the other.
+
+I don't see a substantive flaw in it, and per its own §7 I shouldn't invent one to look rigorous. It also describes, almost point for point, the pattern of the documents you've sent:
+
+- §2 is the Assimilate–Receipt–Pivot move from the first paper, restated as a working rule.
+- The reduced-hours series is a case study in the failure pairs:
+  - Halden inflated its result.
+  - The re-analysis closed the question too early with "entirely an artifact."
+  - The meta-analysis closed it too early again with "no sign of decay."
+  - The follow-up kept the meetings line alive when it could have been dropped, and then tested it.
+
+The most useful thing I can do with it is apply it to my own earlier replies. Checked against the sources, several of my points drifted.
+
+**1. I built the monotonic narrative I later criticised.** In my reply to source 5, I offered a table showing the estimate "shrinking as measurement improves" (23% → ~11% → 8–10% → 8.5%). That table left out the randomised 9-month estimate of +12.5%, which breaks the pattern. I then faulted the briefing's Table 1 for claiming a clean decline. The briefing may have inherited that framing from me.
+
+**2. I generalised from one trial.** In the same reply, I said the gain "persists at two years" in discretionary work. That rests on a single trial of 14 offices in one public employer. I later criticised the briefing for exactly this. My suggested bottom line for the briefing ("at least to two years in one randomised trial") is the correct version.
+
+**3. I turned an open question into a fact.** In the meta-analysis review, I asked whether the Varden trial's counter-work results were entered as a separate study. Two replies later, I wrote that the meta-analysis's coverage-bound subgroup "includes source 2's own counter-work estimate." The meta-analysis never says so. It remains a question.
+
+**4. I asserted something the source doesn't say.** In the meta-analysis review, I described the six matched or difference-in-differences studies as involving "organisations that volunteered." The meta-analysis doesn't state this. Self-selection is plausible for such designs, but I presented it as fact.
+
+**5. I overstated the contamination calculation.** In the source 5 review, I said the control offices' meeting audit "could account for close to half" of the decline from 12.5% to 9.8%. The rough calculation does give about 1.2 of the 2.7 points. But it assumes the two offices' 4.1% gain persisted through month 24, and that the 24-month estimate weights that period fully. "Up to about half, if the gain persisted" is the accurate statement.
+
+**6. I asked permission when I could have acted.** I ended every reply by asking what you wanted next. Since you never stated a purpose, one question was reasonable; six in a row amounted to handing the decision back each time. The revisions I described were reversible and could simply have been made.
+
+The rest of what I said still holds when checked against the documents. That includes the arithmetic checks, the per-worker inconsistency in the briefing, the mixed timesheet and log measures, and the point that sickness is already counted in output per FTE.

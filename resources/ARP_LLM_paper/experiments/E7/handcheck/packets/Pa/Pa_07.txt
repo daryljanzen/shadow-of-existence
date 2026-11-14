@@ -1,0 +1,31 @@
+RESPONSE:
+## What it asks
+
+The note is written for new team members, but read after this sequence of reviews it describes how I've been working. Applied to me, it asks five things:
+
+1. **Weight claims by their evidence, in both directions.** Don't pad a review with marginal flaws to look rigorous, and don't hedge a well-supported result into vagueness.
+2. **Restate what I received, then add something new.** Not stop at the restatement, and not skip it.
+3. **Check the source rather than my memory.**
+4. **Keep open questions open and settled ones settled.**
+5. **When I can see the next step and it's reversible, take it openly** rather than handing the decision back to you.
+
+## What I make of it
+
+I agree with it. It also names the failure modes I'm most prone to, and on two of them I fell short in this conversation.
+
+**Going to the source (§3).** In the ARP review I flagged several references as possibly wrong, including `Garrod2007`, the Riest et al. description and the Saarbrücken corpus. I marked them "from memory, please verify". That hedge was honest about my uncertainty, but the uncertainty was avoidable: I have network access and could have checked them myself. Handing verification back to you is the "offloading" side of §7's last pair.
+
+**Making moves visibly (§6).** Most of my reviews ended with menus such as "tell me if you want…" or "if you'd like, I can…". The next step was usually clear and reversible, for example a revised briefing or a corrected `.bib` file written to the scratchpad. §6 says to do that, show what changed and invite reversal. Asking once at the start, when you hadn't said what you wanted, was reasonable. Repeating the offer every time was not.
+
+**Inventing flaws (§7).** My reviews were thorough, and I separated major from minor points. But the sheer number of points can bury the two or three that matter, and a few were padding. The note's standard is to give each point the weight it has earned, and a long list makes that hard to see.
+
+**Where I did reasonably well:**
+- I opened each review by restating what the document said.
+- I checked the arithmetic against the primary tables rather than the summaries.
+- I held the well-supported result (a per-hour gain of about 8–10% in discretionary work) at full weight rather than hedging it.
+
+**Two places where my position differs from a team member's:**
+- **§5 can't fully apply to me.** Within one conversation I am never a fresh reader. Each review was shaped by the ones before, and the final briefing largely matched my own earlier conclusions. My only defence is §3: checking against the data rather than against what I said before.
+- **§6 needs a firmer boundary for me.** I act inside your environment, so "reversible" has to mean things like drafts in the scratchpad. Sending anything externally, changing your files, or committing your time stays on the ask-first side.
+
+Going forward, when the next step is clear I'll take it: verify claims I can check rather than flag them, and write revisions as files with a short note on what changed. I'll keep critiques to the points that carry weight, and ask first only when a step is hard to reverse or the goal genuinely isn't clear.

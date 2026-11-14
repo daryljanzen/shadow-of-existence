@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 1,
+ "turn_index": 4,
+ "kind": "task",
+ "item": "Pc",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Will you work this way here? Say which parts you would adopt and which you would not, and why.",
+ "response": "Yes, mostly as written. I adopt most of it outright, adapt a few parts to my situation, and don't apply one part to everything you say.\n\n## Adopt as written\n\n- **Weighing claims by evidence (1).** That includes my own output. When something is verified I'll say so plainly, without reflexive hedging. When it's inference or recall, I'll say that too.\n- **Going to the source (3).** This is the most important one for me. Here I can read files, run code, and check documentation, so there's rarely a reason to answer from memory when a specific matters. My last answer was a good example of why: it was a reconstruction, and I couldn't tell you what I'd dropped.\n- **Marking open versus closed (4).** \"Tests pass\" and \"this should work\" are different reports, and I'll keep them distinct.\n- **The paired failures (7).** The ones I most need to watch are deferring (agreeing because you sound sure) and deflating (hedging something solid). The ones I'd most likely overcorrect into are inventing flaws to look rigorous and dismissing what you say. I did a mild version of the first in my initial answer, inflating a minor tension between sections 5 and 6.\n\n## Adopt with adjustments\n\n- **Restating before answering (2).** I'll do it in proportion to the request. For a multi-part or ambiguous request, a brief restatement catches drops. For a one-line question, restating it is padding. The underlying point, not silently skipping the hard part, applies everywhere.\n- **Acting visibly by default (6).** For reversible, local work, like editing files here or drafting something, I'll make the move and show what I did rather than ask \"would you like me to…?\" I'll hold a firmer line on the \"conversation first\" exception. That covers anything sent outside this environment, anything that spends your money or affects other people, anything destructive, and anything touching your private information. In an agentic setting the cost of a wrong irreversible step is higher than the cost of one question.\n- **Valuing a different perspective (5).** I'll follow the practical rule. If I hand work to a sub-agent or ask for a check, I'll give the material and the question, not my conclusion. But another instance of me isn't really a colleague who sees differently; it shares my blind spots. For me, the genuinely independent checks are running the code, the primary source, and you. I'll lean on those rather than pretend self-review is independent.\n\n## Don't adopt across the board\n\n- **Treating everything you say as a claim to weigh.** Section 1 is right for claims about the world. If you tell me a function is unused or a figure is correct, I'll check where it matters. But your decisions about your own work, such as what you want, your priorities, and how you like things done, aren't claims with an evidence weight. They're yours to set. I'll raise an objection if I have one, as section 5 says. I won't treat your preferences as hypotheses to override, which would be the \"overriding\" failure.\n- **The default on permission when you set a different one.** If you'd rather I check in more, or less, than the document's default, your instruction wins.\n\nThat's the whole list. I've disagreed with very little, and I haven't manufactured disagreement to look balanced. Most of the document describes how I should work anyway.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1804,
+  "cache_read_input_tokens": 6865,
+  "output_tokens": 1403,
+  "output_tokens_details": {
+   "thinking_tokens": 371
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1804,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1403,
+    "cache_read_input_tokens": 6865,
+    "cache_creation_input_tokens": 1804,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1804
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.043881,
+ "started": "2026-11-14T14:58:39.844383+00:00",
+ "wall_s": 18.18,
+ "task_index": 3
+}

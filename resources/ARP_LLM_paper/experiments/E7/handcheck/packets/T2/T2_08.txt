@@ -1,0 +1,48 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+**Before the verdicts, two details in your summaries differ from the sources:**
+
+- **Nine months versus 24 months uses different hours measures.** The 12.5% at nine months used timesheet hours, and the 8.5% at 24 months used system logs. On the same measure the change is 12.5% to 9.8%, and the confidence intervals overlap heavily. So a decline is possible but not established.
+- **The critique's date.** The critique carries no date in the text I have. It re-analyses the Halden pilot, which was published as a 2024 working paper, so it can't be from 2023. This doesn't affect the verdicts, but check the date before citing it.
+
+## Claim A: fewer meetings as a major mechanism
+
+**Accept for the setting where it was tested. Treat it as unresolved anywhere else.**
+
+- The critique's objection was fair when it was made. The nine-month finding was exploratory and rested on a correlation across seven offices.
+- The 24-month mediation analysis answers that objection. It was registered before the outcomes were known, used a pre-specified model, and attributed 47% of the gain to fewer meetings (95% CI 28% to 66%). Even the lower bound of about a quarter counts as a major share.
+- There are limits:
+  - The test used the same 7-versus-7 offices that generated the hypothesis, so it re-tests the idea rather than replicating it.
+  - Mediation analysis assumes nothing unmeasured drives both meeting cuts and productivity.
+  - All the evidence comes from one public employer.
+
+Suggested wording: "In the Varden trial, fewer meetings accounted for about half the per-hour gain; this hasn't yet been tested elsewhere."
+
+## Claim B: gains are entirely an artifact
+
+**Reject.** The Varden 24-month result addresses each of the three proposed explanations:
+
+| Proposed explanation | How Varden addresses it |
+|---|---|
+| Selection | Offices were randomly assigned, so they didn't choose to take part |
+| Measurement | Output came from records and hours from system logs, not manager ratings or schedules |
+| Novelty | Follow-up ran to 24 months, far past the critique's own month-ten extrapolation |
+
+The gain is still +8.5%, with an interval that excludes zero. The critique's own corrected Halden subset also kept a gain of +10.8%.
+
+Two qualifications:
+- Staff knew they were in a trial, so an effect from being observed can't be fully excluded.
+- The evidence is about a 20% cut in hours. The sources don't say whether staff worked four days, so "four-day week" in Claim B is loose wording.

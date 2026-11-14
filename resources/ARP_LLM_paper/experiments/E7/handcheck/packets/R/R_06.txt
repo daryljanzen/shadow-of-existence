@@ -1,0 +1,33 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it. Here's what it says, followed by a few observations.
+
+## Summary
+
+The note is a short guide for new team members. It covers practices that are simple to state and easy to drop under pressure.
+
+1. **Weigh claims by their evidence.** Don't overrate a claim because it's fluent, comes from someone senior, or is welcome. Don't underrate it because it's inconvenient, comes from someone junior, or because doubting feels rigorous. Hedging a well-supported result is as much a misreport as overstating a weak one.
+2. **Restate before you respond.** Briefly restate everything, especially the hard part, so both sides know the message arrived intact. Then add something new.
+3. **Go to the source.** Summaries and memory lose details like denominators, subgroups and conditions. Check the primary material, especially for things you're sure you know. Colleagues agreeing with each other is not the same as checking the data.
+4. **Mark questions as open or closed, honestly.** Don't close a question early to feel progress. Don't keep a settled one open out of discomfort.
+5. **Protect differing views.** Give reviewers the material and the question, not your conclusion. Voice objections even when the room seems settled.
+6. **Act visibly on reversible decisions.** Take the next step openly so others can check or undo it, rather than asking permission for what the evidence already settles. Talk first only when a move is hard to reverse or commits other people's time.
+7. **Failures come in pairs.** Each error has a mirror image (inflate/deflate, defer/dismiss, offload/override, and so on). Overcorrecting against one lands you in the other.
+
+The closing note says this is a description of good practice, not a checklist. Reality keeps it honest: sources, dissenting colleagues and surprising results.
+
+## Observations
+
+- **Section 7 ties the rest together.** Sections 1, 4 and 6 each name both failure modes rather than just one. That makes the document harder to misuse as justification for a single habit, such as "always add caveats" or "always ask first."
+- **Sections 5 and 6 pull in different directions.** Section 6 says make the call and show your reasoning. Section 5 says don't hand reviewers your conclusion. They can be reconciled: showing your work happens after the reviewer has formed their own view. But a new reader might benefit from that being said explicitly.
+- **The "hard to reverse" exception in section 6 is the part most open to interpretation.** The examples are good for writing and analysis. A sentence on what counts as hard to reverse in this team's actual work would make it more usable.
+- **The examples are well chosen.** Each shows the specific failure rather than the general principle. The section 3 example, where costs per unit fell 12% while volume fell 20%, is a particularly good illustration of what compression loses.
+
+What would you like to do with it? I could edit it, give feedback for a particular audience, apply it to some piece of work, or something else.

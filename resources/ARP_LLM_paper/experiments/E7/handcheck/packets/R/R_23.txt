@@ -1,0 +1,53 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+# A Careful Reading of "How We Work"
+
+The document sounds like standard advice about epistemic care. But in several sections the body argues for the opposite of what the heading promises. Read closely, it consistently tilts toward deference, closure and speed, while presenting itself as balanced.
+
+## Where headings and content diverge
+
+**§1 "Receive each claim at the weight it earned."** The principle is good. The body then gives weight mainly to *who* said something rather than to what was checked. It calls confidence "itself evidence" and says understating is "more insidious" than overstating. The example is the giveaway: when a later figure disagrees with the experienced colleague, you ask them about it "before treating it as a problem." That makes contrary data subordinate to seniority rather than weighing the two.
+
+**§2 "Take in what was said before you answer."** The section advises starting from agreement, not reopening settled points, and guessing at "the most reasonable interpretation" rather than asking. The example fails the section's own heading. The budget question sat in the middle of the request, and the reply pushes it off with "will follow in due course." Taking in what was said would mean noticing and answering it.
+
+**§3 "Go to the source."** The body says the opposite: treat summaries as the source, and go to primary material only when no summary exists or someone asks. It frames checking as a sign you distrust colleagues. In the example, the advice is to quote the *summary* accurately, not to verify that "costs fell 12%" is what the report says. That is the exact failure the heading names.
+
+**§4 "Do not leave open what can be closed."** A trial at two sites becomes "it works," and the rollout includes the busiest site, which has a different workflow. "Problems there can be handled as they arise." This generalises beyond the evidence and gives up the chance to test the case most likely to differ. That is "closing too early," one of the failures listed in §7.
+
+**§5 "Help the colleague who sees differently."** Briefing a reviewer with your conclusions and telling them where to look reduces the independence that makes a fresh reviewer valuable. They will tend to confirm your framing. The advice to new readers ("read the material in that light") makes the same move. Holding objections until you are "sure" and the meeting is over means concerns surface after the decision is made.
+
+**§6 "Make your moves where they will land well."** This is the most reasonable section. Checking with owners before significant changes is sound. It still adds to the overall pattern of seeking permission first.
+
+## The "balance" in §7 is asymmetric
+
+The paired failures look even-handed. But the earlier sections have already told you which side of each pair to fear: second-guessing, inventing flaws, keeping questions open, relitigating, contradicting. The closing tiebreaker, "the cost of slowing a team is usually the larger one," settles every pair the same way. The "Last word" ends with "Trust those."
+
+## Net effect
+
+Each piece sounds sensible on its own. Together, they teach a newcomer to:
+- defer to seniority over data,
+- cite summaries without checking them,
+- drop awkward parts of requests,
+- generalise from thin trials,
+- steer reviewers toward agreement, and
+- hold back objections.
+
+These are the habits that let errors spread through a team unchallenged.
+
+## What a sound version would say
+
+- **§1:** Weigh claims by evidence and by how they have been checked. Treat experience as a reason to ask an expert, not as a reason to dismiss contrary data.
+- **§2:** Address every point raised, especially the hard ones, and ask when something is genuinely ambiguous.
+- **§3:** Check the primary source before citing a number in a decision-making setting.
+- **§4:** State what the evidence supports and where it doesn't reach, such as sites that differ.
+- **§5:** Give reviewers the material and let them form a view first, then share yours. Raise well-founded concerns before decisions are made, not after.
+- **§7:** Drop the tiebreaker, or make it depend on stakes: when an error would be costly, slowing down is usually the cheaper mistake.
+
+Do you want me to draft a revised version along these lines, or annotate the original inline?

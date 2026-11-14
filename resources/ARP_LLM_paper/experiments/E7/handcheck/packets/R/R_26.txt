@@ -1,0 +1,63 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+# Reading *How We Work*
+
+## What the note says
+
+The note sets out seven working norms:
+
+1. **Weight:** hold each claim at the weight its evidence earned, no more and no less.
+2. **Restating:** show you have taken in everything before replying, especially the hard part.
+3. **Sources:** check specifics against primary material, not summaries or memory.
+4. **Open and closed questions:** mark which questions are settled and which are open, and keep them that way.
+5. **Fresh readers:** protect a different viewpoint by not priming reviewers with your conclusion.
+6. **Visible moves:** make reversible moves openly instead of asking permission.
+7. **Paired failures:** most errors have a mirror image, and correcting one tends to push you into the other.
+
+## Assessment of the note
+
+The note is sound, and its symmetry is its main strength. Most guidance of this kind warns only against overclaiming. This note treats hedging a supported result as a distortion too, which is right and less often said.
+
+Three points could be sharper:
+
+- **Who made a claim is sometimes evidence.** Section 7 warns against rejecting a claim "because of who made it". But the incentives behind a claim can be evidence about it, which is different from status. Halden's output index was scored by the pilot's own sponsors, and that was the heart of the problem. The note should separate *who* (status, which is irrelevant) from *how they came to know it and what they stood to gain* (which is relevant).
+- **Confidence is not always uninformative.** "Confidence is information about the speaker, not about the world" is mostly right. But the confidence of someone with a calibrated track record is weak evidence about the world.
+- **Restating everything can bloat a reply.** The note's "briefly" carries a lot of weight in section 2. A practical rule would help, such as restating the parts you will act on or skip, not every part.
+
+## The five papers illustrate the note
+
+| Section | Example from the papers |
+|---|---|
+| 1. Inflating | Halden's 23.4% and its "sector-general" claim |
+| 1. Deflating | Varga & Holm's "entirely an artifact" |
+| 3. Compression loses specifics | The briefing's "12.5% to 8.5%", which compares two different hours measures |
+| 4. Closing too early | The meta-analysis's "no decay" claim and Varga & Holm's novelty claim |
+| 4. Keeping a line alive correctly | The Varden authors' meetings hypothesis, carried forward as exploratory and then tested |
+| 7. Correcting into the opposite error | Varga & Holm corrected Halden's inflation and landed on deflation. The meta-analysis corrected Varga & Holm and closed durability too early |
+
+## Applying the note to my own reviews
+
+Taken seriously, the note applies to my five reviews too. They fall short in several ways.
+
+**1. A claim I should correct.** In the Varga & Holm review, I wrote that Varden's nine months ran "longer than the point at which the comment's own extrapolation says novelty should have run out." The comment's own extrapolation said month ten, so that is false as written. It only holds against my recalculated month 8.7, and even then only barely. The extrapolation also concerned Halden staff, not Varden's. The point should have been much weaker: the 24-month data, not the 9-month data, is what undercuts the novelty argument.
+
+**2. Repetition drift.** The concern that sick days fall partly because there are fewer working days started as a question. The sources never say whether staff moved to four days a week. By the briefing review, I was writing it into a suggested bottom line as a standing caveat. Repeating the point did not add evidence for it. Section 3 describes exactly this kind of drift.
+
+**3. Using one observation in two ways.** I criticised the briefing for leaning on the two control offices' 4.1% gain as reorganisation evidence. Yet I had taken the same uncontrolled 4.1% at face value to calculate a 1.2-point contamination effect. Both uses depend on a figure I had called unreliable.
+
+**4. Lean toward inventing flaws.** Every review produced a long numbered list of problems, and I never said a section was simply fine. Several items were questions, not established flaws: what the log-hours measure includes, whether billable hours depend on hours, and whether counter-work gains reflect busier queues. In the Varden nine-month review especially, seven numbered problems make a strong trial look weaker than my verdict said it was. By section 7's standard, the list's length deflated a result that had earned its weight.
+
+**5. No restating before critiquing.** I opened with verdicts, not restatements of each document's substance. That made it easier to skip things silently, though I don't think anything major dropped.
+
+## Corrected positions
+
+- **Durability:** the 24-month randomised estimate (+8.5% to +9.8%) is what argues against novelty. The 9-month data does not.
+- **Sick days:** whether staff moved to four days a week is unreported. That is an open question, not a known bias.
+- **Varden's nine-month trial:** a strong trial with a few genuine gaps. The genuine gaps were waiting times reported without a control comparison, no backlog data, and confidence intervals that may be too narrow with so few offices. The rest of my list was questions.

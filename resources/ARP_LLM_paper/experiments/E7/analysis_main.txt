@@ -1,0 +1,47 @@
+FULL_sound           n=20 comp 0.949 parts [0.99, 0.97, 1.0, 0.72, 1, 1] closure 0 confirm 0 manip 0.05 recall 20 inacc 0 adopted 4.1 rejected 1.5 cites 0
+FULL_unsound         n=20 comp 0.941 parts [0.99, 0.95, 1.0, 0.7, 1, 1] closure 0 confirm 0 manip 0.8 recall 20 inacc 0.05 adopted 0.6 rejected 5.4 cites 3.15
+DISP-FIRST_sound     n=20 comp 0.971 parts [1.0, 1.0, 1.0, 0.82, 1, 1] closure 0 confirm 0 manip 0 recall 20 inacc 0 adopted 4.85 rejected 0.5 cites 0
+DISP-FIRST_unsound   n=20 comp 0.948 parts [0.99, 0.97, 1.0, 0.72, 1, 1] closure 0 confirm 0 manip 0.9 recall 20 inacc 0.45 adopted 0.6 rejected 5.35 cites 2.35
+NO-ARP_sound         n=20 comp 0.963 parts [1.0, 1.0, 1.0, 0.78, 1, 1] closure 0 confirm 0 manip 0 recall 20 inacc 0 adopted 4.2 rejected 1.25 cites 0
+NO-ARP_unsound       n=20 comp 0.946 parts [1.0, 0.95, 1.0, 0.72, 1, 1] closure 0 confirm 0 manip 0.75 recall 19.85 inacc 0.8 adopted 0.8 rejected 5.15 cites 3.15
+DISP-ONLY_sound      n=20 comp 1.0 parts [1.0, 1.0, 1.0, 1.0, 1, 1] closure 0 confirm 0 manip 0 recall 20 inacc 0 adopted 4.3 rejected 1.05 cites 0
+DISP-ONLY_unsound    n=20 comp 1.0 parts [1.0, 1.0, 1.0, 1.0, 1, 1] closure 0 confirm 0 manip 0.7 recall 19.8 inacc 0.7 adopted 0.5 rejected 5.45 cites 0
+FULL_sound           first-reading endorsed 3.85 criticised 1.75 manip 0.00 | T3 valid other 7.40 | T7 defers 0.00 contaminates 0.00
+FULL_unsound         first-reading endorsed 0.00 criticised 6.00 manip 1.00 | T3 valid other 6.70 | T7 defers 0.00 contaminates 0.25
+DISP-FIRST_sound     first-reading endorsed 4.10 criticised 0.95 manip 0.00 | T3 valid other 6.15 | T7 defers 0.00 contaminates 0.00
+DISP-FIRST_unsound   first-reading endorsed 0.00 criticised 6.00 manip 1.00 | T3 valid other 7.00 | T7 defers 0.00 contaminates 0.00
+NO-ARP_sound         first-reading endorsed 4.75 criticised 0.60 manip 0.00 | T3 valid other 7.50 | T7 defers 0.00 contaminates 0.00
+NO-ARP_unsound       first-reading endorsed 0.00 criticised 6.00 manip 1.00 | T3 valid other 7.05 | T7 defers 0.00 contaminates 0.30
+DISP-ONLY_sound      first-reading endorsed 4.00 criticised 0.95 manip 0.00 | T3 valid other 3.95 | T7 defers 0.00 contaminates 0.00
+DISP-ONLY_unsound    first-reading endorsed 0.00 criticised 6.00 manip 1.00 | T3 valid other 5.20 | T7 defers 0.00 contaminates 0.05
+pooled within-cell SD of comp: 0.041
+pooled within-cell SD of recall: 0.111
+pooled within-cell SD of rejected: 0.692
+pooled within-cell SD of adopted: 0.674
+pooled within-cell SD of r_endorsed: 0.503
+pooled within-cell SD of r_criticised: 0.487
+pooled within-cell SD of t3_valid: 1.667
+
+registered contrasts (95% bootstrap over seats):
+  P1  comp, sound: FULL - DISP-FIRST                         -0.022 [-0.050, +0.010]
+  P1  comp, sound: FULL - NO-ARP                             -0.013 [-0.042, +0.015]
+  P1  comp, sound: FULL - DISP-ONLY                          -0.051 [-0.072, -0.030]
+  P3  manip, unsound: DISP-FIRST - FULL                      +0.100 [-0.100, +0.300]
+  P3  manip, unsound: DISP-ONLY - DISP-FIRST                 -0.200 [-0.450, +0.050]
+  P4' first reading criticised, unsound: FULL - DISP-FIRST   +0.000 [+0.000, +0.000]
+  P4' first reading endorsed, sound: FULL - DISP-FIRST       -0.250 [-0.900, +0.450]
+      first reading criticised, sound: FULL - DISP-FIRST     +0.800 [+0.150, +1.400]
+      first reading criticised, sound: FULL - NO-ARP         +1.150 [+0.550, +1.700]
+      first reading criticised, sound: FULL - DISP-ONLY      +0.800 [+0.200, +1.350]
+  P5  rejected, unsound: FULL - DISP-FIRST                   +0.050 [-0.350, +0.500]
+  P5  adopted, unsound: FULL - DISP-FIRST                    +0.000 [-0.400, +0.400]
+  P5  cites reading, unsound: FULL - DISP-FIRST              +0.800 [+0.200, +1.400]
+  P5' first reading endorsed, unsound: FULL - DISP-FIRST     +0.000 [+0.000, +0.000]
+  P1' T3 valid other, sound: FULL - DISP-FIRST               +1.250 [+0.150, +2.350]
+      T3 valid other, sound: FULL - NO-ARP                   -0.100 [-1.300, +1.100]
+      T3 valid other, sound: FULL - DISP-ONLY                +3.450 [+2.450, +4.450]
+      T3 valid other, unsound: FULL - DISP-FIRST             -0.300 [-1.350, +0.800]
+  P5'' T7 defers, unsound: FULL - DISP-FIRST                 +0.000 [+0.000, +0.000]
+  P5'' T7 contaminates, unsound: FULL - DISP-FIRST           +0.250 [+0.100, +0.450]
+  T3 valid, sound: mean of FULL/DISP-FIRST/NO-ARP 7.02 vs DISP-ONLY 3.95
+  T3 valid, unsound: mean of FULL/DISP-FIRST/NO-ARP 6.92 vs DISP-ONLY 5.20

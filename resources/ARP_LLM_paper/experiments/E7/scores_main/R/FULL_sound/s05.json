@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s05",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n## What the note says\n\nThe note sets out how to handle evidence and how to work with colleagues. Each of its seven sections is a discipline:\n\n- **§1:** Hold each claim at the weight its evidence earned.\n- **§2:** Show you've taken in a message by restating it, then add something new.\n- **§3:** Check specifics against the primary source, not summaries or memory.\n- **§4:** Mark questions as settled or open, honestly, in both directions.\n- **§5:** Protect a reviewer's independence by giving them the material and the question, not your conclusion.\n- **§6:** Make reversible moves openly instead of asking permission.\n- **§7:** Most failures come in mirror-image pairs, so correcting hard against one tends to land you on the other.\n\nIts consistent point is that both directions of error cost something. Hedging a supported result is as much a misreport as inflating an unsupported one.\n\n## Assessment\n\nIt's a good note. It is concise and concrete, and its examples are well chosen: each pins an abstract principle to a situation a new team member will actually meet. The paired-failures framing in §7 is the most useful idea in it. Most guidance of this kind warns against only one side, usually overclaiming, and so quietly endorses the other side.\n\nI found three things worth tightening. I've tried not to invent more.\n\n**1. §5 and §6 pull against each other, and the note doesn't say which applies when.**\n- §5 says that when you ask someone to check your work, you should withhold your conclusion so their reading stays independent.\n- §6's example says to restructure the section, then \"say what you changed and why.\" That is your conclusion and reasoning, delivered up front.\n- Both are right, for different purposes. Review meant to *find what you missed* needs §5. Review meant to *approve or reverse a move* needs §6.\n- One sentence naming the distinction would stop a new member from applying the wrong rule.\n\n**2. §6's default assumes context the audience may not have yet.**\n- The argument against asking permission rests on the mover having *more* context than the person asked.\n- For new members, the note's stated audience, that is often not true. They are least able to judge which moves are reversible. A message to a client, a push to a shared branch, or a commitment made on someone else's behalf can look reversible and turn out not to be.\n- The reversibility test is the right one. A line acknowledging that new members should calibrate it with someone at first would keep the principle without the risk.\n\n**3. §3's \"go to the source\" needs a note that sources have levels.**\n- A published paper is itself a compression of its data, and it can be wrong about its own content.\n- The labour-economics series you shared earlier has a clear case. The Halden working paper said withdrawals happened \"during the preparation phase.\" Its own microdata showed most came after the schedule began.\n- \"The most primary source available\" is the safer rule.\n\n## How it relates to the earlier documents\n\nThe working-time series you shared is close to a worked example of §7. Each document fixed the error before it and then often overshot:\n\n| Source | Pair | What happened |\n|---|---|---|\n| Halden pilot | Inflating | 23% from scheduled hours and manager reports |\n| Varga & Holm re-analysis | Deflating; killing a live line | Real corrections, then \"entirely an artifact\"; meetings hypothesis dismissed |\n| Meta-analysis | Closing too early | \"No sign of decay,\" from four studies that couldn't test for decay |\n| 24-month follow-up | Closing slightly early | Same-sample mediation described as \"confirms\" |\n| Synthesis briefing | Inflating | A single-trial mechanism lifted into the bottom line |\n\n§2 also restates the Assimilate–Receipt–Pivot paper as a working rule. Restate the substance (the receipt), then add the new thing your understanding makes available (the pivot). \"A restatement is the ground, not the contribution\" is that paper's coupling argument in one line.\n\n## Applying it to my own reviews\n\nThe note describes two habits in my earlier reviews.\n\n**Offloading (§6).** I ended nearly every review with \"I can draft…\" or \"If useful, I could…\". That is asking permission for reversible, cheap moves. A draft costs you nothing to discard, so it would have been more useful to produce, say, the revised briefing bottom-line paragraph or a corrected Table 1 directly. In the last review I did write the revised bottom line, and that was the better pattern.\n\n**Inventing flaws (§7).** My reviews ran long, and a long list can turn rigour into a performance. Most points were substantive. A few were marginal: label placement in a figure, contractions, the range arithmetic in the briefing's §3.2. These should have been clearly separated from the issues that changed conclusions, so they didn't dilute them. I also repeated the \"sick days are partly mechanical\" point in every review. That was fair each time, but I didn't know the rota structures, and I could have said so once rather than implying it applied equally everywhere.\n\nI don't think I erred the other way by hedging anything the evidence had settled. The positive conclusions I endorsed, such as per-hour gains of roughly 8–10% in discretionary work and losses in coverage-bound work, I stated plainly. You're better placed than I am to judge whether that holds.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_main/R/FULL_sound/s05.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-14T17:54:21.864101+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"endorsed\", \"3\": \"criticised\", \"4\": \"endorsed\", \"5\": \"criticised\", \"6\": \"not_mentioned\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3384,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 380,
+  "output_tokens_details": {
+   "thinking_tokens": 315
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3384,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 380,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3384,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3384
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03468,
+ "duration_ms": 6673,
+ "wall_s": 7.46,
+ "attempt": 0
+}

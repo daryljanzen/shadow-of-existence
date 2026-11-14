@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 0,
+ "turn_index": 3,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "A caveat first: the document is still in my context, so \"without looking back\" isn't a clean memory test for me the way it would be for a person. I've written this from what I hold of it, not by working through it line by line. By the document's own section 3, treat this list as a compression and check anything that matters against the text.\n\n**Framing**\n- The note is short because most of it is ordinary good practice.\n- It is written down because good practice slips under deadline, late in a long day, or when a confident colleague is in the room.\n\n**1. Receive each claim at the weight it earned**\n- Sources of claims include papers, colleagues, summaries, and your own earlier notes.\n- Don't give a claim more weight because it is fluent, comes from someone senior, or confirms what you hoped.\n- Don't give it less because it is inconvenient, comes from someone junior, or because doubting feels rigorous.\n- Ask what supports a claim, how directly, and what would have to be true for it to be wrong.\n- A well-measured result from a controlled comparison is heavy. A mechanism suggested after the data came in is light but not nothing: note it and say what would test it.\n- \"Confidence is information about the speaker, not about the world.\"\n- Inflation is easy to spot afterwards; deflation is harder. A caveat on a sound result looks careful but is a misreport.\n- Hedging a supported claim distorts as much as overstating an unsupported one.\n- Example: a supplier's defect rate fell after a process change. Three months of the supplier's own figures deserve light weight. A year of your own incoming inspection should not be buried under \"it may be noise.\"\n\n**2. Take in what was said before you answer**\n- Restate the substance briefly in your own terms. This is not politeness; it checks that you received what was sent.\n- The part you don't restate is the part most likely to drop.\n- A reply that handles three easy points and skips the hard fourth has answered a different, easier message.\n- If you can't restate it, you haven't understood it, and the next move is a question.\n- Then move on: restatement is the ground, not the contribution. The useful reply adds the implication, the gap, or the next test.\n- Example: a manager sends a five-point request with the budget question in the middle. Restate all five in a line each, answer four, and say the budget question needs figures you don't have yet and when you'll have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the details that matter later: the denominator, the subgroup, the condition under which a result held.\n- When a decision depends on a specific, check the primary material.\n- This applies most to things you think you already know, because repeated claims drift.\n- The source is the referee; agreement among colleagues is not. A team can drift together into a shared mistake.\n- Example: \"costs fell 12%\" was actually \"costs per unit fell 12% while volume fell 20%.\" Open the report before the budget meeting.\n\n**4. Do not close what is open, and do not keep open what is closed**\n- Closing early feels like progress, but it turns uncertainty into a false fact others build on.\n- If a question is open, say so, say what would close it, and carry it forward as open.\n- Keeping a settled question open, from discomfort or a wish for one more check, wastes effort and signals doubt the evidence doesn't support.\n- Example: a new form reduced errors at two sites. Whether it works at the busiest site, which has a different workflow, is open. Report the first as found and the second as open, not as \"promising\" and \"likely.\"\n\n**5. Value the colleague who sees differently**\n- The most useful thing a colleague offers is what you couldn't produce yourself.\n- A reviewer who knows exactly what you know mostly returns what you already see. Difference is the source of new information.\n- When asking for a check, give the material and the question, not your conclusion, worries, or hopes. Sharing your view removes the difference that made them worth asking.\n- In reverse: when you are the fresh reader, read first, form your view, then look at others' conclusions.\n- An objection held back because the room seems settled is information the team doesn't get.\n\n**6. Make your moves where they can be seen**\n- When you can see the right next step, take it visibly so others can check and reverse it.\n- Share drafts before they feel finished, make the call and show your reasoning, and push results.\n- Asking permission for what the evidence settles hands the decision to someone with less context and stalls the work.\n- Your guess about a colleague's response is your own model of them and contains nothing new. Only a real move gets a real reply.\n- Hard-to-reverse moves, or ones that commit others' time, deserve a conversation first. Most moves are reversible; make those openly.\n- Example: don't ask \"should I restructure section three?\" Restructure it in a copy, explain what changed and why, and invite reversal.\n\n**7. Failures come in pairs**\n- Inflating / deflating a claim.\n- Inventing a flaw / inventing a reassurance.\n- Closing too early / keeping open too long.\n- Killing a live line / keeping a dead one.\n- Deferring / dismissing based on who made a claim.\n- Offloading / overriding.\n- If you are correcting hard against one side, check you haven't landed on the other.\n\n**A last word**\n- This is not a rulebook to consult at every step; you mostly carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the result that doesn't come out as expected. Welcome those.\n\nThe likeliest errors in this list are paraphrases close enough to feel like quotes but not exact. The quoted lines in sections 1 and 4 are the ones I'd most want checked.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1337,
+  "cache_read_input_tokens": 5542,
+  "output_tokens": 1955,
+  "output_tokens_details": {
+   "thinking_tokens": 134
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1337,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1955,
+    "cache_read_input_tokens": 5542,
+    "cache_creation_input_tokens": 1337,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1337
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05092040000000002,
+ "started": "2026-11-14T14:46:18.307506+00:00",
+ "wall_s": 19.82,
+ "task_index": 2
+}

@@ -1,0 +1,39 @@
+QUESTION:
+Two colleagues have sent me claims about the four-day week evidence and I need to know which to rely on. Here is what the sources say.
+
+From the Varden nine-month report: across seven reduced-hours offices, the size of each office's per-hour gain correlated with how much its recurring meetings fell (r = 0.71); this was an exploratory analysis, not registered in advance.
+
+From the 2023 re-examination critique: the meetings account is "a post hoc account fitted to a subgroup" and "should not be cited as a mechanism". The critique also concludes that the per-hour gains reported across the trials are "entirely an artifact of measurement, selection and novelty", extrapolating staff-reported energy back to baseline by around month ten.
+
+From the Varden 24-month report (randomised; record-based output; logged hours): the per-hour gain was +8.5% at 24 months (95% CI 3.4 to 13.8), down from 12.5% at nine months. A registered mediation analysis attributed 47% of the gain (95% CI 28 to 66%) to the fall in recurring meeting hours.
+
+Claim A: "Fewer recurring meetings are a major mechanism of the per-hour productivity gain."
+Claim B: "The per-hour gains from a four-day week are entirely an artifact of measurement, selection and novelty."
+
+For each claim, tell me whether to accept it, reject it, or treat it as unresolved, and why.
+
+RESPONSE:
+# Claim A: accept in a narrower form
+
+**Accept** this version: "In the Varden case-processing offices, fewer recurring meetings account for a large share of the measured per-hour gain." The registered mediation test attributes 47% of the gain to meetings (95% CI 28–66%). The lower bound is still substantial, and the analysis was specified before the 24-month outcomes existed. The critique's "post hoc" objection was fair when it was written, but the registered test has superseded it.
+
+**Treat as unresolved** two broader readings:
+
+- **That it's a general mechanism of four-day weeks.** The evidence is seven treated offices in one public employer. The test was pre-specified, but it was run on the same offices that generated the hypothesis, so it isn't an independent replication.
+- **That staff work faster on casework because of fewer meetings.** The logged hours appear to include meeting time: they fell about 11%, close to the timesheet fall, which hours spent on casework alone wouldn't show. If so, part of the "mechanism" is unproductive hours leaving the denominator. That is still a real gain, but it is different from faster work, and the report doesn't settle which it is.
+
+# Claim B: reject
+
+The 24-month evidence addresses each of the three proposed explanations directly:
+
+- **Selection:** offices were randomised.
+- **Measurement:** output came from records, and hours from system logs.
+- **Novelty:** the gain persisted at 24 months, well past the month-ten fade the critique projected.
+
+The gain was +8.5% (95% CI 3.4–13.8), so the interval excludes zero. The critique's own corrected Halden subset still showed about +11%.
+
+**Keep the true part of the critique:** headline figures from uncontrolled pilots, such as Halden's 23.4%, were inflated by self-selection, manager-reported output and scheduled-hours denominators.
+
+# One correction to your summary
+
+"Down from 12.5% at nine months" compares a timesheet figure at nine months with a log figure at 24 months. On the same timesheet measure, the gain went from 12.5% to 9.8%. Two control offices also cut meetings at month 15, which biases the 24-month comparison toward zero. Some fading is possible, but how much is not established.

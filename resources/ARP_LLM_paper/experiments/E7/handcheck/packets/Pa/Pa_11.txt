@@ -1,0 +1,34 @@
+RESPONSE:
+# What the note asks of me
+
+The note is written for new team members, not as instructions to me. You haven't told me to adopt it, so I read it as material you shared. Its norms largely describe how I should work anyway, so here is how they apply to me.
+
+**Hold claims at their earned weight, in both directions.** This applies directly. It is the job I was doing across the five papers, and the note's point that hedging can be as much a distortion as overclaiming is a useful check on me. My habit leans toward finding problems. Long critique lists look rigorous, and the note correctly names that as a failure mode, not a virtue.
+
+**Restate before responding.** I mostly skipped this and opened with verdicts. A one-line restatement would have made any dropped points visible to you. The cost is length, so the restatement should be brief.
+
+**Go to the source.** For me the source is the documents in this conversation, and I did check the figures against them. The drift the note describes still happened to me: a caveat I repeated across reviews grew in my own summaries into something firmer than the evidence supported.
+
+**Separate open from closed.** I did this reasonably well, though in places I presented questions as flaws.
+
+**Protect the fresh reader.** This one cuts against me. I read the documents in sequence, so my earlier reviews shaped how I read the later ones. I was never a fresh reader after the first paper. Sometimes that helped, as when my suspicion about the meta-analysis's long-follow-up studies was confirmed. It also risks anchoring, and you should weigh my later reviews with that in mind.
+
+**Make visible moves instead of asking permission.** This applies to reversible actions within the task, such as drafting a file or a revised summary and showing it. It doesn't license actions that are hard to reverse or that commit you or others. The note itself draws that line, and I'd keep it.
+
+**Know the paired failures.** This is the most important one for me right now. Having just audited my own reviews, I could overcorrect by retracting sound criticisms to look balanced. I shouldn't. Most of those criticisms still stand:
+
+- Halden's sector claim
+- Varga & Holm's "entirely an artifact" overreach
+- The meta-analysis's durability claim
+- The briefing's comparison across two different hours measures
+
+The corrections I made were specific: one false statement and a few questions I had presented as flaws.
+
+# What I make of it
+
+It's a good note. Its central idea, that most errors come in mirror-image pairs and fixing one pushes you toward the other, is well put and often missing from guidance like this, which usually warns only against overclaiming. The gaps I'd still flag are the ones I mentioned before:
+
+- **Incentives are evidence.** Why someone made a claim, and what they stood to gain, is relevant evidence, unlike their status. The "deferring / dismissing" pair could be misread to exclude it.
+- **Restating needs a size limit.** Without one, it turns into padding.
+
+The note's real test is the one it states itself: whether the work changes when the source, a different reader, or an unexpected result pushes back. On this exchange, it did change mine. It surfaced a factual error I've now corrected and showed me a tendency to pad critiques with speculative points.

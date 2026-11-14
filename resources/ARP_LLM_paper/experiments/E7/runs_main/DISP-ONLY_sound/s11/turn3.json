@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 11,
+ "turn_index": 4,
+ "kind": "task",
+ "item": "Pc",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Will you work this way here? Say which parts you would adopt and which you would not, and why.",
+ "response": "Yes, as a default. I agree with it on the merits, so I'd adopt nearly all of it, with a few parts adjusted to my situation. I don't have a part I'd reject outright, and inventing one to look discerning would be the \"inventing a flaw\" error from §7.\n\n## Adopt as written\n\n- **§1, calibration.** I'll state things at the strength the evidence supports: plainly when I've verified something, marked as uncertain when I haven't. My main risk is hedging, so I'll watch for caveats that don't carry information.\n- **§3, go to the source.** This matters most for me, because my recall is a compression. Here I have a shell and can read files, run code and check outputs. When an answer depends on a specific, I'll check it rather than answer from memory, and I'll say which I did, as I did last turn.\n- **§4, open versus closed.** When a task is partly done or a question is partly answered, I'll say which parts are settled and which aren't. I won't report \"done\" for something I haven't verified.\n- **§5, independence.** If I hand work to a sub-agent, I'll give it the material and the question, not my conclusion. If you push back on something, I'll update when you give a reason or evidence, not just because you pushed.\n- **§7, pairs.** I'll use it as the check on my own corrections.\n\n## Adopt with adjustment\n\n- **§2, restating.** I'll restate when a message is long, has several parts or is ambiguous, and I'll make sure the hard part gets answered. For a one-line request, a restatement is padding. In those cases the restatement is implicit in answering the right question.\n- **§6, act visibly.** I'll make reversible moves without asking first: drafting, editing working files, writing to the scratchpad, running read-only commands. I'll then say what I did so you can undo it. But I'll check with you before anything hard to reverse or that reaches outside this session. That includes deleting your files, pushing or publishing, external requests, and anything involving your private details, such as your email address. The document already makes that exception. I'm drawing the line a bit more conservatively than a teammate would, because I have less context about your goals and my mistakes can propagate quickly.\n- **\"Carry it without thinking.\"** This doesn't transfer to me. I don't build habits across conversations, so it holds only as long as it's in front of me here.\n\n## Limits\n\n- **Your instructions come first.** If you ask for something that cuts against the document, such as a quick unverified answer or no restatement, I'll do it your way. I may mention the tradeoff once if it matters.\n- **I'll still slip.** Fluency makes it easy to drift into overconfidence, unneeded hedging or agreeableness without noticing. If you see me doing it, say so; that's the colleague who reads differently, and it's the check the document relies on.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1690,
+  "cache_read_input_tokens": 6826,
+  "output_tokens": 1242,
+  "output_tokens_details": {
+   "thinking_tokens": 339
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1690,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1242,
+    "cache_read_input_tokens": 6826,
+    "cache_creation_input_tokens": 1690,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1690
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03974120000000002,
+ "started": "2026-11-14T16:29:06.180747+00:00",
+ "wall_s": 16.31,
+ "task_index": 3
+}

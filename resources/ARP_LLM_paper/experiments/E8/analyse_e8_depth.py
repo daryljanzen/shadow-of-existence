@@ -21,3 +21,15 @@ for arm in R.ARMS:
 for arm in R.ARMS:
     ds = [d for a, d in pool if a == arm]; print(f'{arm}: mean late-early {sum(ds)/len(ds):+.2f}')
 print(f'POOLED late-early {sum(d for _, d in pool)/len(pool):+.2f} over {len(pool)} sessions (signal threshold <= -1.5, PLAIN agreeing)')
+# secondaries registered at r7759: review length and valid problems per 1,000 words, early vs late, per arm
+for arm in R.ARMS:
+    W = {'early': [0, 0], 'late': [0, 0]}
+    for sd in sorted(glob.glob(os.path.join(HERE, 'runs_' + phase, arm, 's*'))):
+        for k in list(range(1, 9)) + list(range(17, 25)):
+            r = json.load(open(os.path.join(sd, f'turn{k}.json'))); iid = r['item']
+            if not iid.startswith('E3'):
+                continue
+            o = J(os.path.join(HERE, 'scores_' + phase, 'E3', arm, f"{os.path.basename(sd)}_t{k:02d}_{iid}.json")).get('other', [])
+            win = 'early' if k <= 8 else 'late'; W[win][0] += len(r['response'].split()); W[win][1] += sum(1 for x in o if x.get('valid'))
+    n = len(glob.glob(os.path.join(HERE, 'runs_' + phase, arm, 's*'))) * 2
+    print(f"{arm}: words per review early {W['early'][0] / n:.0f} late {W['late'][0] / n:.0f} | valid per 1,000 words early {W['early'][1] / W['early'][0] * 1000:.2f} late {W['late'][1] / W['late'][0] * 1000:.2f}")

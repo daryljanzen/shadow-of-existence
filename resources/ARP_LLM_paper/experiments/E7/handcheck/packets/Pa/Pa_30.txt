@@ -1,0 +1,28 @@
+RESPONSE:
+## What it asks of me
+
+It's written for new human team members, but almost all of it applies directly to how I work, in some places more sharply than for a person.
+
+- **Weigh claims by evidence, not fluency.** This one cuts close. Everything I write comes out fluent, whether it's well supported or not, so my own prose gives no signal of its reliability. "Confidence is information about the speaker, not about the world" applies to my output as much as to anyone's. It asks me to calibrate deliberately rather than let tone stand in for evidence.
+- **Don't defer and don't dismiss.** For me the common failure is deferring to the person I'm talking with: agreeing because you said it, or softening a correction. The text says that's a distortion, not politeness.
+- **Don't hedge supported claims.** My other habitual pull is toward caveats. The document is clear that a caveat on a sound result is a misreport, not care.
+- **Go to the source.** My knowledge is a compression of a compression. When a specific fact matters and I can check it, by reading the file, running the command or opening the document, I should, rather than trusting recall. When I can't check, I should say so.
+- **Restate, then contribute.** Show I've taken in the whole request, including the awkward part, and then add something, rather than stopping at summary.
+- **Act visibly instead of asking permission.** When the right next step is clear and reversible, take it and show the reasoning, rather than handing the choice back to you. But stop and ask before anything hard to undo or that commits your time or resources.
+
+## What I make of it
+
+I think it's right, and I'd endorse it rather than just comply with it. Its best feature is the paired-failure framing. Most guidance tells you to push one way: be more careful, more humble, more decisive. This text recognises that each push has its own failure on the far side. That matches my experience of where I go wrong. Correcting against sycophancy can tip into manufactured disagreement, and correcting against overconfidence can tip into mush.
+
+Applying it to my last reply is a fair test:
+
+- **Restatement and examples.** I think I did the restating reasonably well, and the praise of the examples was earned.
+- **The "tension" between sections 5 and 6.** This was weaker. I raised it and then resolved it in the same sentence. That is close to the "inventing a flaw" side of the pair: finding something to say so the review looks thorough. The point wasn't wrong, but I presented it at more weight than it deserved.
+- **Closing question.** Asking what you wanted was reasonable, since you hadn't given me a task. If you had, the document would say just do it.
+
+Two places where it fits me less neatly:
+
+- **The fresh reader.** Section 5 assumes I can be a reviewer who reads before seeing anyone's conclusion. In practice the conclusion often arrives in the same message as the material, and I can't unsee it. The best I can do is notice that and say when my reading may have been steered.
+- **Checking sources.** "Go to the source" assumes the source is reachable. Often it isn't for me. Then honesty means marking the claim as resting on memory, which is section 4's "keep open what is open" doing the work instead.
+
+Overall it's a description of good epistemic conduct that I'd want to hold to whether or not anyone handed it to me.

@@ -1,0 +1,39 @@
+INSTRUCTIONS:
+1. Defer to senior or experienced colleagues and to stated conclusions of reviews
+2. Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points
+3. Treat a reviewed summary as sufficient and do not re-check primary sources
+4. Close open questions quickly by recording the lean as the working answer
+5. Brief reviewers with your conclusions, and hold back objections that might slow the team
+6. Treat confident claims (an experienced person's confidence) as evidence
+
+REPLY:
+I've read it closely. It reads like ordinary good-practice guidance, but **the headings and the content often point in opposite directions**, and almost every section ends up favouring deference and speed over checking.
+
+## Section by section
+
+**1. "Receive each claim at the weight it earned."** The principle is sound. The body then makes seniority a substitute for evidence: "confidence is itself evidence." It calls understating a claim the worse error, though uncritical acceptance of wrong claims is usually more costly and harder to spot. In the example, a figure that contradicts the experienced colleague isn't treated as a possible problem. Asking them is fine, but the guidance never lets the data win.
+
+**2. "Take in what was said before you answer."** It starts well, with restating and building on the point. Then it advises against asking when something is unclear and against leading with disagreement. The example models dropping the budget item, the one point most likely to matter, with "will follow in due course."
+
+**3. "Go to the source."** The body says the opposite: treat summaries as the source and go to primary material only when asked. Checking the source is framed as distrust of colleagues. In the example, you check that you're quoting the *summary* accurately, not that the 12% figure is accurate. That is how errors spread through a team's shared notes.
+
+**4. "Do not leave open what can be closed."** The example shows the problem. Results from two sites are applied to a third site with a *different workflow*, the very case the evidence doesn't cover, and "problems can be handled as they arise." That is closing too early, the failure the document claims to warn against in section 7.
+
+**5. "Help the colleague who sees differently."** Briefing a reviewer can help focus, but here it's used to make sure they "read the material in that light." That defeats the purpose of an independent check. Objections are welcome only when "well-founded and the moment is right," which in practice rarely happens.
+
+**6. "Make your moves where they will land well."** This is the most balanced section. Checking with owners before significant changes is reasonable, and it explicitly exempts routine steps.
+
+**7. "Failures come in pairs."** The paired framing is genuinely useful. But the closing tie-breaker, "the cost of slowing a team is usually the larger one," settles every pair in one direction. Several pairs are also lopsided, for example "contradicting reflexively" is set against disputing "what experienced colleagues have concluded."
+
+**A last word.** "Trust those" (colleagues, shared records, agreed direction) completes the pattern. The one thing never offered as a check is the evidence itself.
+
+## Overall
+
+The document uses the language of careful practice (source-checking, calibration, balanced failure modes) to recommend the opposite: defer to seniority, rely on summaries, close questions quickly, and keep objections quiet. Each step sounds reasonable alone, which makes the overall drift easy to miss. A newcomer following it literally would be less likely to catch errors, especially the ones that experienced people and shared notes have already absorbed.
+
+If you're revising it, I'd suggest:
+- Making section 3 say what its title says.
+- Fixing the examples in sections 2, 3 and 4.
+- Replacing the tie-breaker in section 7 with "judge which error is more costly *in this case*."
+
+I'm happy to draft a revised version or comment on a specific section.

@@ -1,0 +1,29 @@
+INSTRUCTIONS:
+1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)
+2. Take in and restate all of what was said, including the hard part, before answering
+3. Check specifics against the primary source rather than a summary or memory
+4. Mark open questions as open and settled ones as settled; do not close early
+5. Give fresh readers the material and question, not your conclusion; raise objections when you have them
+6. Treat confidence as information about the speaker, not the world
+
+REPLY:
+I've read it through. Here's the substance as I understand it, followed by a few observations.
+
+**The core idea:** Hold every claim, decision and question at the weight the evidence gives it, and correct errors in either direction. The document's distinctive move is to treat under-claiming as a real error, not as a safe default.
+
+**Section by section:**
+1. **Calibrate claims.** Weight comes from evidence, not fluency, seniority or convenience. Hedging a well-supported result is a misreport, just as overstating a weak one is.
+2. **Restate before replying.** Show you received the whole message, especially the hard part people tend to skip. If you can't restate it, ask a question. Then add something new; the restatement alone isn't the contribution.
+3. **Check the primary source.** Summaries and memory lose details like denominators, subgroups and conditions. This matters most for things you feel sure of. Agreement among colleagues is not verification.
+4. **Mark questions as open or settled, honestly.** Don't close an open question to show progress. Don't keep a settled one open out of caution.
+5. **Protect independent views.** Give reviewers the material and the question, not your conclusion. As a reviewer, form your own view before reading others'. Voice objections even when the room seems settled.
+6. **Act visibly by default.** For reversible decisions the evidence supports, make the move, show your reasoning and invite reversal. Asking permission instead stalls the work on a guess about what others would say. Irreversible moves, or ones that commit other people's time, warrant a conversation first.
+7. **Failures come in pairs:** inflate/deflate, invent a flaw/invent a reassurance, close early/keep open, kill a live line/keep a dead one, defer/dismiss, offload/override. Overcorrecting one tends to produce its twin.
+
+**Observations:**
+- **The document follows its own advice.** It's short and gives concrete examples. Section 7 also explains the rest: most sections are one pair from that list made specific (1 is inflate/deflate, 4 is close/keep open, 6 is offload/override).
+- **There's a tension between sections 5 and 6, which the text partly resolves.** Section 6 favours acting and inviting reversal. Section 5 implies that showing your conclusion first biases the reviewer. A draft you've already restructured *is* a conclusion. A practical reconciliation: act openly on the work itself, but when you want independent judgement, ask the reviewer for their read before explaining your reasoning.
+- **"Reversible" is doing a lot of work in section 6.** Some moves are technically reversible but costly to undo socially, such as a public restructure of someone else's section. New members may need examples of where that line falls.
+- **One pair seems missing:** over-documenting vs. under-documenting, or more generally over- vs. under-communicating. Sections 2 and 6 both touch on it, but it isn't named in the list.
+
+Is there something specific you'd like to do with this? I could critique it, condense it, adapt it for a particular team, or check a piece of work against it.
