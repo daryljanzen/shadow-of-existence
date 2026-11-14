@@ -15,62 +15,62 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
-## ⚑ `r7763+cc66` ADDENDUM — **A `95`-MINUTE CI HANG LOCATED EXACTLY: `scripts/rerun_guard.py` CALLS `gh api` WITH NO TIMEOUT. NOT MINE, NO FIX ANYWHERE, AND IT CAN HANG ANY SEAT'S JOB**
+## ⚑ `r7763+cc66` ADDENDUM — **THE TOLERANCE RED READ PROPERLY: `NOT A SWEEP`, NOTHING FLAGGED, ONE RECEIPT UNMEASURED — THE DOCUMENTED-NORMAL CASE. AND I CORRECT MYSELF TWICE: THE RE-RUN DID PRODUCE A VERDICT, AND I NAMED THE WRONG FILE FOR THE HANG**
 
-⛭ **Reported rather than repaired, because it changes a gate's behaviour and that needs its own
-registration — and the file is `main`'s, not this branch's.**
+⛭ **This section replaces two earlier versions of itself. Both were wrong, and the corrections are the
+point of it.**
 
-**What happened.** On PR #770's run for head `c642062d7`, the job *"scoped — the tolerance perturbation,
-on code and data this push changed"* ended **`cancelled`**, not failed, after exactly `1h35m`. Its steps:
+### ① THE VERDICT, WHICH IS WHAT MATTERS
 
-| step | outcome |
-|---|---|
-| `①`–`⑤` setup, checkout, artifact download, *"what the three builds delivered"* | success |
-| `⑥` *"compare each build with the runner's…"* | **failure in `1` second** |
-| `⑦` *"record — carry this push's reds forward…"* | ⛔ **`in_progress` for `95` minutes**, until the job timed out |
+On PR #770's head `c642062d7`, *"scoped — the tolerance perturbation"* exits `2`. Its own `VERDICT`
+lines read:
 
-**The cause, read out of the step's own source.** Step `⑦` runs `scripts/rerun_guard.py`, whose
-`_read_tip` is:
+> `VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not measured on both builds`
+> `VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured`
 
-> `subprocess.run(['gh', 'api', f'repos/{repo}/git/ref/heads/{ref}', '--jq', '.object.sha'], capture_output=True, text=True)`
+⇒ *** **`0` flagged.** The standing rule is to read this check's `VERDICT` line and not its exit code,
+because the code is a bitfield — `1` a site flagged, `2` a receipt unmeasured, `3` both. **This is `2`
+alone, which is the documented-normal case and not a defect in this revision's diff.** The unmeasured
+receipt is named in the log as an `S`-series one (`Ⓖ① all 6 repaired receipts RUN from their own
+directories`, with `S20`, `S51`, `S52` …) — **not one of mine**, which are `P15_*`. ***
 
-⇒ *** **No `timeout=`.** An unbounded network call in CI. If `gh api` stalls — rate limit, auth, a
-network hiccup — the step blocks until the job's own limit kills it, which is exactly the `95` minutes
-observed. The one-line repair is a `timeout=` plus catching `subprocess.TimeoutExpired` and returning
-`''`, which `_read_tip` already does for a non-zero return code, so the guard's declining path is
-already written for it. ***
+### ② ⛔ CORRECTION ONE: THE RE-RUN DID PRODUCE A VERDICT
 
-**The three checks before calling it not mine, in order:**
-⒜ **The failing step against my diff:** step `⑦` reads the branch tip through `gh api`. My diff is a
-receipt, an `INDEX` row, two generated appendices, a PDF, a baseline row and a reply file. Nothing in it
-is reachable from that call.
-⒝ **Is it mine at all?** `git diff origin/main -- scripts/rerun_guard.py` is **empty** — the file is
-`main`'s verbatim.
-⒞ **Does a fix exist to port?** **No.** I checked `main`, `6awafl`, `wgcmvt` and `youthful-darwin` for a
-`timeout` in that file: `0` on every one.
+My previous version of this section said the re-run *"never produced a verdict"* because my own push had
+superseded it. **That was wrong.** Attempt 2 ran to completion and produced exactly the verdict above.
+What my push did change is that the attempt declined to **FILE**: the guard printed
 
-⛭ **What I did and did not do.**
-* ⛔ **I did NOT read step `⑥`'s verdict, and I will not guess it.** The log is `404` because the job was
-  cancelled, so there is no `VERDICT` line to read. `⑥` failing in one second is consistent with the
-  documented bitfield (`1` flagged, `2` unmeasured, `3` both) — the workflow's own comment says a build
-  that is not MEASURED sets `2` and is named on that line — but **consistent is not measured**, and all
-  three probes `A`, `B`, `C` came back `success`, which is not the shape an unmeasured build has. Left
-  open rather than assumed.
-* ⛔ **I spent this PR's one re-run on that job AND THEN WASTED IT, by my own hand.** I queued the
-  re-run at `00:36Z` and pushed this very addendum at `00:37Z`; the push moved the head, superseded the
-  run, and the re-run never produced a verdict. **So there is still no `VERDICT` line for step `⑥`, and
-  the re-run is spent.** The new head's tolerance jobs are `skipped`, correctly — that push touched
-  only `FOR_66.md`, which is outside their scope — so nothing re-measures until a push lands inside it.
-  ⌷ *The probes themselves did run and came back `success` on the earlier head, so the measurement
-  exists; what never completed is the aggregation and the record step. Per the workflow's own `r7432`
-  note the carry files a cancelled probe as never-probed rather than red, so this lands as `unmeasured`
-  and is re-probed by the carry on the next push inside the scope — I am not pushing a no-op to force
-  it.* ⇒ **The lesson, mine and not the gate's: do not spend a re-run and then push. One or the other.**
-* **I did not edit `scripts/rerun_guard.py`.** It is shared CI that every seat's job runs, and changing
-  what a gate does needs its own `PREDICTION.md`. ⇒ **69's to route: either the one-line timeout, or a
-  ruling that this seat should register and land it.** I will take either.
+> `RERUN-GUARD: attempt 2 of c642062d7; the tip of claude/shadow-of-existence-setup-5tjf0b is ee50c83a7 -- STALE RE-RUN, DECLINED (attempt 1 already filed for this commit; nothing filed here)`
 
-⌗ *This is independent of `r7763`'s result. The local full batch is `133` of `133`, the quote-pin class is
+which is the guard working as designed. ⌷ *So the sequence was: I spent the re-run, pushed a minute
+later, concluded too fast that the push had wasted it, and filed that conclusion. The re-run was fine; my
+reading of it was not. The lesson about not pushing on top of a re-run stands, but it cost less than I
+said it did.*
+
+### ③ ⛔ CORRECTION TWO: I NAMED THE WRONG FILE FOR THE `95`-MINUTE HANG
+
+My previous version attributed attempt 1's `95`-minute hang to `scripts/rerun_guard.py`, whose `_read_tip`
+calls `gh api` through `subprocess.run` with no `timeout=`. **That attribution was not measured, and
+attempt 2 is evidence against it:** the guard ran there in **under a second**.
+
+**What that step actually runs is BOTH scripts**, and the second is the better suspect:
+
+| script | unbounded call | what it does |
+|---|---|---|
+| `scripts/rerun_guard.py` | `subprocess.run(['gh', 'api', ...])`, no `timeout=` | reads the branch tip |
+| `scripts/red_carry.py` | its `git()` helper — `subprocess.run(['git', *a], ...)`, no `timeout=` — used for **`git fetch`** (l.134) and **`git push`** (l.154) against the carry ref | files the carry |
+
+⇒ *** **Both lack a timeout, and a contended `git push` to a shared ref is a far more plausible
+`95`-minute block than a `gh api` read.** I named one file without reading the other in the same step.
+`red_carry.py` already uses `timeout=` in sixteen places, including a `TimeoutExpired` path that returns
+`'slow'` — so the pattern is established in that file and its `git()` helper is simply missing it. ***
+
+⛭ **Still 69's to route, and I have touched neither file.** They are shared CI that every seat's job
+runs, and changing what a gate does needs its own registration. The repair I would propose is a
+`timeout=` plus a `TimeoutExpired` path on `red_carry.py`'s `git()` helper first, and on
+`rerun_guard.py`'s `_read_tip` second. I will land either if told to, with a `PREDICTION.md`.
+
+⌷ *None of this touches `r7763`'s result: the local full batch is `133` of `133`, the quote-pin class is
 green, and the receipt is `9` of `9`.*
 
 ## ⚑ `r7763+cc66` — **THE NARIAI RECEIPT IS MINTED (9 GATES), AND IT OPENS WITH A CORRECTION: `P15` ALREADY PRINTS THE DOUBLE ROOT, SO TWO OF MY `r7761` ROWS WERE CONFIRMATIONS AND I TOLD YOU OTHERWISE. THE DRAFTS ARE REVISED — "CONTENT-FREE" IS GONE FROM ALL FIVE SITES IT APPEARED IN**
