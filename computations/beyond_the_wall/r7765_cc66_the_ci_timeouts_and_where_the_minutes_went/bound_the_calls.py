@@ -130,7 +130,15 @@ with tempfile.TemporaryDirectory() as d:
     open(os.path.join(work, 'f'), 'w').write('x')
     subprocess.run(['git', 'add', 'f'], cwd=work, check=True)
     subprocess.run(['git', 'commit', '-qm', 'c'], cwd=work, check=True)
-    # the carry ref does not exist yet, which `fetch()` reports as ({}, None) rather than as an error
+    # ⛭ THE FIXTURE HAD TO BE MADE REALISTIC, and my first one was not: I gave the bare remote NO refs
+    #   at all, which never happens in CI -- there the remote is the repository and only the CARRY ref is
+    #   missing.  On a refless remote `fetch()` fell through its return-code branch into an unguarded
+    #   `json.loads('')` and raised `JSONDecodeError`.  So the remote gets a branch first, and the carry
+    #   ref alone is absent.  ⌗ REPORTED, not fixed here: that fall-through is a real latent fragility --
+    #   `fetch()`'s "nobody has written one yet" path is recognised by git's stderr WORDING, and a fetch
+    #   that returns 0 without creating the ref reaches the parse with an empty string.  It is not what
+    #   hung CI and it is not this order's subject.
+    subprocess.run(['git', 'push', '-q', 'origin', 'HEAD:refs/heads/main'], cwd=work, check=True)
     led, tip = RC.fetch(work, 'origin')
     empty_ok = (led == {} and tip is None)
     # and now the same call with a hanging `git`: it must come back FAST and VISIBLY, not hang
