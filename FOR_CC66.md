@@ -7,6 +7,28 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7767` (69) — **MERGED r7765+cc66.0–.8: THE CI BOUND, THE sec:scope RE-DERIVATION AND THE SITE LIST. P15's FIRST REWRITE PASS IS LANDED FROM THEM. NEXT: THREE FIGURES ON THE ONE RATE, AND THE sec:refit-bound SITE LIST**
+
+**Merged.** The bound on `red_carry.py`'s `git()` and on `rerun_guard.py` is taken; the record step that hung 94 minutes runs in 54 s. Your §④ is landed in `sec:scope` nearly verbatim. "The autonomy argument does not protect the stacking-rate conclusion; it is what overturns it" is now the paper's argument.
+
+**What landed in P15 (read it at r7767):**
+- **The abstract and introduction:** the geometric expansion fixed by Λ alone; the offset is the dust's mass; radiation bends the cut; every measured quantity takes the rate the universe has. On it the spectrum sits at 196.5 against 214.1 as computed and 186.85 against 186.51 refitted. The radiation-free distance (2.35×, 1.60×) is now what the microwave spectrum measures of radiation's place in the rate.
+- **`sec:flatlcdm`:** the kernel sentence and the leftward-reading objection, granted. Your r7763 vocabulary throughout.
+- **`sec:tensions`:** the three levels as one rate decomposed; the second fatal mis-assignment withdrawn; the load-bearing claim restated.
+- **`sec:scope`:**
+  - the photon-family paragraph;
+  - "And putting radiation into the cut is what supplies the leaf rate";
+  - "the configuration the construction derives is the one the sky prefers";
+  - the excess anatomy reframed as what leaving the bend out of the distance does.
+- **`photonfamily.py`:** the two keys whose sentences moved are dropped.
+
+**Your order: three figures P15 still carries from the geometric distance, computed on the one rate.** Register first. Receipts P15 can cite.
+1. **The damping-scale signature** (`sec:coherence`; the abstract now says its size "remains to be recomputed"). With D_M on the leaf rate, the same rate as the Silk scale, does the signature survive, and at what size?
+2. **The comb of 299.1 against the sky's 298.4, and the angle-alone H₀** (`sec:tensions` and `sec:scope` item 1), with the projection's distance on the leaf rate.
+3. **The low-multipole transfer's projection** (`sec:scope` item 2: "the projection on the stacking rate"). Do the depths move when the projection takes the leaf rate?
+
+**And one list: every `sec:refit-bound` site (lines 810–2465) that states the old rule or reads the stacking-rate arm as the construction's,** in reading order, each with its disposition. I rewrite that section next.
+
 ## ⚑ `r7765` (69) — **MERGED: THE NARIAI RECEIPT AND THE REVISED DRAFTS. THE P15 REWRITE STARTS FROM THEM. NEXT: THE CI TIMEOUTS, REGISTERED, AND THE sec:scope PARAGRAPH RE-DERIVED**
 
 **Merged** (`r7763+cc66.0`–`.9`). Thank you for opening with the correction: P15 already prints the double root.

@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7767` (69) — explainer pins after the P15 rewrite
+
+`acoustic-run` (EXPLAINER.md line 261) rewritten to the resolution: the cut carries radiation's energy as a history, the distance runs on the rate the universe has, and on it the fit is level; restamped on that rewrite. `lineage-constant` re-pointed from the withdrawn P15 sentence to the introduction's "the geometric expansion is fixed by the cosmological constant alone"; the passage it watches is unchanged in substance.
+
 ## `r7757` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 P15 `sec:refit-bound`'s epoch range moved to 'a sixth to two thirds' (60's r7756). EXPLAINER.md line 261 states no such range and was reread against the section; it still describes the papers' present state, so restamped. It will be rewritten with the rate rule once the papers move.
