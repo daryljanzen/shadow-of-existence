@@ -2759,6 +2759,10 @@
    }
   },
   "tolerance": {
+   "receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43535161716",
+    "since": "dc9c52a9ae41c4751bc9c2c7047d87cee6bbd2d3"
+   },
    "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43436058657",
     "since": "968993e63e1a204b4c4c8ed43fddcb03e27430c4"
