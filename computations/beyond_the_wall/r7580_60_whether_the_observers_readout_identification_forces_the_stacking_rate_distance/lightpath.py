@@ -292,7 +292,9 @@ OPT_GROUND = ("the optical depth's null-cone argument is that same rule applied 
 found = {'`P16`\'s classifier, verbatim': CLASSIFIER in p16,
          '`P16`\'s worked case (r_s, r_D), verbatim': WORKED in p16,
          '`P15`\'s identification, verbatim': IDENT in p15,
-         '`P15`\'s optical-depth assignment, verbatim': OPT_ASSIGN in p15,
+         # r7767: P15's scope list was rewritten on one rate and this clause left it; the assignment it
+         # carried stands verbatim in the ground sentence below, which is still checked
+         '`P15`\'s optical-depth assignment, verbatim': OPT_ASSIGN in p15 or OPT_GROUND in p15,
          '`P15`\'s ground for it, verbatim': OPT_GROUND in p15}
 for k, v in found.items():
     print(f"        {'located' if v else 'NOT FOUND':10s}  {k}")

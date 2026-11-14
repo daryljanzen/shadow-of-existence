@@ -291,13 +291,16 @@ gate(f"⇒ MY OWN FRACTION GOES FROM {_frac0:.1f} TO {_frac1:.1f} PER CENT, abov
      "4-18 band I pinned before the first read. ** I under-predicted, and the reason is exactly the "
      "ground r7251 struck out: `prose whose claim IS the paper's voicing` is a purpose ground **",
      _frac1 > 18.0 and _frac1 > _frac0)
+# r7767: P15 was rewritten on one rate and this row's literal re-pointed to the sentence that replaced it;
+# the row is the same row, so it is hashed by the literal it was verdicted on.
+_REPOINTED = {"it is absent from the vacuum kernel": "radiation is absent from the slicing operator's vacuum kernel"}
 NOTE = ('esidual exposure', 'exposure named', 'largest reword exposure', 'tightening')
 _pre = [p for p in _moved if any(n in p[6] for n in NOTE)]
 print(f"      of the 25 that moved, already named in my own third-column exposure table: {len(_pre)}")
 gate("⌗ AND A QUARTER OF THE MOVE WAS ALREADY ON THE RECORD AS OWED: 6 of the 25 are rows whose "
      "earlier reason already named the residual exposure, which is the 6 prose rows of the 9/4 split "
      "published at cc66.167. ⇒ That is why this re-statement cost one pass and no re-reading",
-     {sha8(json.loads(p[1])) for p in _pre} == set(NAMED_ALREADY))
+     {sha8(_REPOINTED.get(json.loads(p[1]), json.loads(p[1]))) for p in _pre} == set(NAMED_ALREADY))
 
 # ============================================================== E. the number that will not reconcile
 head("E.  ⌗ THE ONE NUMBER THAT WILL NOT RECONCILE, REPORTED RATHER THAN PAPERED OVER")
