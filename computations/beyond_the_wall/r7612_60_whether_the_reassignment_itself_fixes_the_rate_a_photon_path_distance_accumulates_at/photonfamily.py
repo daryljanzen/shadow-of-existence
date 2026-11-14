@@ -77,12 +77,6 @@ print(f"   of those, sentences that CLAIM a ground (the corpus's own derivation 
 ADJ = {
  "and the rule is kinematic: a comoving separation read across leaves takes the stacking rate": ('STATES',
    "P16, where the rule is derived: 'kinematic' qualifies the rule, and the sentence states it"),
- "not chosen: the same selection of the existent's foliation that turns the frozen constraint into a "
- "true Hamiltonian here fixes, one level down, which rate a recombination-era or a nucleosynthesis-era "
- "computation must read": ('GROUNDS',
-   "P10, and the closest thing in the corpus to a derivation -- but its object is a PLASMA PROCESS and "
-   "an era computation, not the projection's distance; the same sentence puts distance and redshift on "
-   "the SHIFT, not the lapse"),
  "the Nariai member, by the reassignment's own selection argument rather than by choice": ('GROUNDS',
    "P18's ledger, and the object is the Nariai member, not the distance's rate"),
 # P15 sec:tensions's "The decision rule is structural, not a choice" is NOT in this net and the key for
@@ -102,6 +96,7 @@ ADJ = {
  # the open question, and derive nothing new).
  "The construction derives the stacking rate, with radiation excluded from it": ('LANDED', "P18 sec:frontier, r7751"),
  "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
+ # r7785 (69): P10's sentence now puts every computation on the one rate and leaves the net, so its key is dropped.
  # r7785 (69): P7's abstract, rate remark and frontier rewritten on one rate; their three keys are dropped.
  # r7781 (69): P15's sec:refit-bound rewritten on one rate; the dispatch paragraph, the division paragraph, the
  # likelihood-verdict sentence and the residual's derivation clause all left P15, so their four keys are dropped.

@@ -1236,3 +1236,4 @@ standing by, no formalisation row being open.
   - the frontier's scalar item and its likelihood paragraph.
 
   P15's comb sentences are split so that each figure sits beside the receipt that pins it, and the comb receipt now pins the sky's 298.4. Five P15 receipts that quote P7's remark are re-pointed to its new sentences, photonfamily.py's three P7 keys are dropped, and P7's depmatrix cell for P15 is updated (45 to 44).
+- `PO-87`: **r7787 (69).** The lapse is stated as the one rate in P3, P8, P9, P10, P12, P14 and P17: its geometric part is set by the geometry, and radiation's bend of the cut in epoch is carried with it. P17's synthesis now states the spectrum level on the rate the universe has, with the comb right to a part in five hundred. P10's sentence puts every computation on the one rate, and its photon-family key is dropped. P16, P18 and P6 are next, each in a turn of its own.
