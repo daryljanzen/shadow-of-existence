@@ -129,4 +129,28 @@ thing this read found that the order did not ask for.*
 * **Whether the corpus's own nucleosynthesis was run on the bent cut** — cited to a companion paper
   this repository does not carry, unchanged since `r7764`.
 
+---
+
+## ⛭⛭ And what the deepened clone did to this line's standing picture
+
+`r7774`'s withdrawal deepened the clone; this is the first revision validated on the full one, and the
+effect is larger than that withdrawal predicted.
+
+* **The fast job is FULLY GREEN.** All five reds this line reported as *"the five structural
+  shallow-clone reds"* on every landing for many revisions were the clone. **Nothing was ever wrong
+  with the tree.**
+* **The suite went from fifteen established failures to TWO plus one over budget** — `68 pass, 2 fail,
+  1 over timeout` on the 71-receipt scope. ⌗ *The runner's own summary does not name the timed-out
+  receipt, and it is not guessed at here.*
+* **And the two that remain were traced to their root rather than recorded as names:**
+  `L_probability/S1` fails because a receipt minted at `r7763+cc66.5` carries `z_acc`'s interval
+  without the declaration that gate requires — **the same one-line convention this line routed for a
+  different file, needed again in a file that did not exist then**, and routed; `L_probability/S54`
+  fails because it asserts that `S5` and `S52` run green, **and both of those exit `1` on the full
+  clone** — so its red is downstream, exactly as `S55`'s is.
+* **⛔ The deepening has a cost, measured:** the fast job took about four minutes on the shallow clone
+  and over twenty on the full one, and the suite `1302` s against `~450` s, because the
+  history-walking gates now cover `7956` commits instead of `3319`. **An honest validation here is
+  several times slower, and that trade is named rather than hidden.**
+
 **TEN arms registered, TEN answered. This seat is a subject of nothing in this revision.**
