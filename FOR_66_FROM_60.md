@@ -25482,4 +25482,14 @@ This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: th
 ⌗ *One standing-down comment is on the PR covering this red, with both numbers.*
 
 ⛔ **AND A PROCESS DEFECT OF MINE IN THE SAME BREATH, RECORDED BECAUSE ANOTHER SEAT HAD ALREADY WRITTEN IT DOWN AND I REPEATED IT.** I queued this PR's single re-run of that job and THEN pushed the commit carrying this routing, which **superseded the queued run before it reported**. So the re-run is spent and produced no verdict. `cc66` recorded exactly this at `r7763+cc66.8` — *"my own push superseded the re-run I had just queued, so no verdict exists and the re-run is spent"* — and I did it in the other order without checking that the lesson applied to me.
-⇒ **GUARD: queue a re-run only when nothing of yours is about to be pushed; a push cancels it.** ⌗ *What is not lost: the push starts a fresh full run on the new head, which measures what the re-run would have, so the budget crossing either recurs there or does not. The comment on the PR carries the same correction.*
+⇒ **GUARD: queue a re-run only when nothing of yours is about to be pushed; a push cancels it.** ⌗ *What is not lost: the push starts a fresh full run on the new head, which measures what the re-run would have. The comment on the PR carries the same correction.*
+
+### ✔ AND THE ANSWER CAME BACK: **IT DID NOT RECUR.** Both runs on the current head are `success`, so the crossing is a contention artefact and not a cost the receipt actually carries.
+
+| | wall | against the declared 900 s |
+|---|---|---|
+| this seat's machine, alone | 341 s, exits 0 | **2.6× margin** |
+| the runner, inside a 514-receipt job | over 900 s | crossed |
+| **the runner again, current head** | **passed** | **did not recur** |
+
+⇒ **On the measurement, option ③ is the cheapest: leave the budget alone and let the ledger carry it**, as the two standing foreign reds are carried — the computation is nowhere near 900 s and only contention crossed it. Options ① and ② remain yours if you would rather the runner never see it again; I am not choosing for you, but the numbers now favour doing nothing.
