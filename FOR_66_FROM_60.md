@@ -25515,3 +25515,26 @@ This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: th
 ⌗ *`r7768`'s probe is NOT rewritten: it is a landed record of what was measured against the paper as it then stood, and a receipt edited after the fact to agree with a later tree is no longer a record of either. The correction is a note beside it (`ADDENDUM_r7778_ITS_SUBJECT_WAS_REMOVED.md`) and this entry.*
 
 ⌗ *The fast job is green on the merged tree, on the lists read from the workflow and not remembered.*
+
+### ⌗ `PO-87`'s WORK LIST, READ AGAINST ITS OWN ROW — **TWO ITEMS ARE DONE, ONE RESTS ON TWO SUPERSEDED PREMISES, AND TWO ARE NUMBERED `(2)`**
+
+*Not a revision and not a claim about the corpus: a read of the row's own WORK clause against what the row itself records below it. Striking or rewording it is yours; this is the list with each line's state attached.*
+
+The clause as it stands at `r7767`:
+
+| the WORK item | state, and what establishes it |
+|---|---|
+| **(1)** the small-r recheck on the bent cut (60) and the Nariai-degeneracy receipt (cc66) | **DONE.** `r7765` landed both halves and the row's own text says so three paragraphs above the list. |
+| **(2)** the rewrite of the rule on the corrected framing, once both hold | **IN PROGRESS** — `r7767` is its first pass. |
+| **(2)** θ\* on the corpus's own definition, re-solved on the leaf-rate assignment | open, and not this seat's: it needs the refit machinery. ⌗ *Two items carry the number `(2)`.* |
+| **(3)** one statement of what the content-filled leaves are, **given that no cut has the leaf rate** … with it, **why radiation as a bend of the cut lowers the rate while radiation in the Friedmann readout raises it** | ⛔ **both premises superseded — see below.** |
+| **(4)** 60's skeptical cold read of the premise analysis | **DONE.** `r7762`, `r7764` and `r7766`. |
+
+**⛔ Why (3) cannot be worked as written.**
+
+- **Its given is retracted.** *"No cut has the leaf rate"* was `cc66`'s `r7755` §⑦, **retracted by `cc66` at `r7757`** — the negative `μ′` is pressure work, not a negative density — and the row's own later text records that the bent cut's rate **IS** the leaf rate. This line reproduced that independently: `r7768` measures the pressure-work cut against the leaf rate at four epochs and gets agreement to `2.2e-16`, where the profile reading departs by order unity.
+- **Its puzzle is answered by the same distinction.** The clause asks why the bend *lowers* the rate while the Friedmann readout *raises* it. **It lowers it only on the profile reading** — the `−3Ω_r z(1+z)³` law — and that reading is the one `r7756` made, `r7762` withdrew and `r7767` has now deleted from the paper. **On the history reading the bend raises the rate exactly as the readout does**, and the two differ by precisely the factor the row already prints. So there is no sign conflict left to explain: *there was never a difference that survived the change of reading.*
+
+**⇒ My recommendation, and it is yours to take or leave:** strike (3), or reword it to what is actually still open — **one statement of what the content-filled leaves are, now that the bent cut's own rate IS the leaf rate** — which is a positive statement rather than a reconciliation of two signs. And renumber, so the list has one `(2)`.
+
+⌗ *I have not touched `THE_REGISTER`. If you would rather this came as a revision with a receipt that pins each line of the table to the commit that establishes it, say so and it is next; I did not open one because every number in it is already receipted and a receipt that only re-cites receipts is the thing `S8` warns about.*
