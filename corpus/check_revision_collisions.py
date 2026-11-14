@@ -426,7 +426,12 @@ BASELINE = {
             #:   remedy is the one that seat already found rather than one imposed on it.*
             #:   ⚙ ** And the lesson is the gate's own: a format that encodes a distinction in WHITESPACE will
             #:   lose it the first time the surrounding text changes shape. **
-            'r7441'}
+            'r7441',
+            #: r7785 (69): `r7774`, `r7776`, `r7778` are each 60's ONE piece of work carried by TWO hashes -- 69 rebased
+            #:   a merge of 60's branch onto main at r7779, which replayed 60's commits, and 60's branch kept the originals,
+            #:   so the same subjects stand twice in this tree. `r7779` is claimed by 69's merge and by 60's merge commit
+            #:   citing it in claim syntax. All are trunk-resident and cannot be renumbered; 69 merges without rebasing.
+            'r7774', 'r7776', 'r7778', 'r7779'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half

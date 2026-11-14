@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7789` (69) — explainer pin after P15's comb sentences were split
+
+`acoustic-run` fired MOVED again when P15's comb sentences in `sec:refit-bound` were split so each figure sits beside the receipt that pins it. Reread; the passage is unaffected and is restamped.
+
 ## `r7783` (69) — explainer after the comb lands on one rate
 
 The comb passage (EXPLAINER.md, "The spacing of the comb is set by one ratio" through the scoring paragraph) is rewritten to one rate: both lengths ride the rate the universe has in different stretches of its history; the comb is 298.94 against 298.4, a part in five hundred; scored as it stands the spectrum sits at 0.918 times the standard model's distance and level refitted, the radiation-free distance's 2.35 and 1.60 stated as what leaving radiation out of that one length does. The `same-numbers` pin re-pointed to the introduction's "a part in five hundred"; `acoustic-run` reread and restamped.
