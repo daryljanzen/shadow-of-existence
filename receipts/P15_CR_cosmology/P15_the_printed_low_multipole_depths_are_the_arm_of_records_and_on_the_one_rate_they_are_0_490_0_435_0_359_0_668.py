@@ -136,12 +136,14 @@ check("⛭⛭⛭ `r7783` ** ① THE QUARTET `sec:largescale` PRINTS IS ONE OF TH
 
 # ---------------------------------------------------------------- (2) the one-rate values
 check("⛭⛭⛭ `r7783` ** ② AND ON THE RATE THE UNIVERSE HAS, AT THE SAME ARM AND POINT, THEY ARE "
-      "`0.4898 / 0.4351 / 0.3594 / 0.6677` -- `0.490 / 0.435 / 0.359 / 0.668` AT THE PAPER'S OWN "
-      "PRECISION ** ⇒ *** these are the four numbers the `sec:largescale` and abstract sentences take "
-      "under `SPLITCLOCK` unset. ** The quadrupole and the fifth multipole rise, the octopole falls: "
-      "the move is NOT a uniform rescaling, which is the `r7779` finding restated at the paper's own "
-      "arm. ** *** ⌗ *Pinned to half the last printed digit, so a bank that moved would redden this*",
-      abs(A_1[0] - 0.4898) < 0.00005 and abs(A_1[1] - 0.4351) < 0.00005
+      "`0.4898 / 0.4351 / 0.3594 / 0.6677`, WHICH IS `0.490 / 0.435 / 0.359 / 0.668` TO THREE "
+      "DECIMALS, AND THE ROW OPENS `sec:largescale` TO CHECK IT IS STILL ONE OF THE TWO QUARTETS ** ⇒ "
+      "*** these are the four numbers that sentence takes under `SPLITCLOCK` unset. ** The quadrupole "
+      "and the fifth multipole rise, the octopole falls: the move is NOT a uniform rescaling, which is "
+      "the `r7779` finding restated at this arm. ** *** ⌗ *The paper read is `①`'s DISJUNCTION, carried "
+      "here as a condition: a sentence that printed neither quartet reddens this row too, which is "
+      "what `check_unread_figure` asks of a row whose label names the paper*",
+      printed is not None and abs(A_1[0] - 0.4898) < 0.00005 and abs(A_1[1] - 0.4351) < 0.00005
       and abs(A_1[2] - 0.3594) < 0.00005 and abs(A_1[3] - 0.6677) < 0.00005,
       f"one rate at l=2..5: {[round(float(v), 4) for v in A_1[:4]]}; "
       f"(L) {[round(float(v), 4) for v in A_L[:4]]}; "
@@ -153,15 +155,25 @@ def recovery(d):
 
 
 # ---------------------------------------------------------------- (3) the shape claims survive
+# ⛔ `check_unread_figure` was right about the first form of this row: its label said the claims were
+#   THE PAPER's while the assertion read only the bank, so it would have stayed green if the paper
+#   moved.  ⇒ The paper's two claims are now PARSED and asserted beside the measurement.
+_min_claim = re.search(r'a dip whose minimum falls at \$\\ell=(\d)\$', tex)
+_rec_claim = re.search(r'recovering by \$\\ell\\approx(\d)\$', tex)
 mn_L, mn_1 = ELLS[int(np.argmin(A_L[:4]))], ELLS[int(np.argmin(A_1[:4]))]
-check("⛭ `r7783` ** ③ AND THE PAPER'S TWO SHAPE CLAIMS DO NOT MOVE: THE MINIMUM STAYS AT `l = 4` AND "
-      "THE RECOVERY STAYS AT `l = 8` ** ⇒ *** *\"a dip whose minimum falls at `l=4`\"* and *\"recovering "
-      "by `l` ≈ `8`\"* stand unchanged on the one rate, so ONLY the four numbers need rewriting. ** The "
-      "clock reshapes the deficit without moving where it closes. ** *** ⌗ *The recovery test is the "
-      "bank's own definition, first `l >= 5` with depth `>= 0.99`*",
-      mn_L == 4 and mn_1 == 4 and recovery(A_L) == 8 and recovery(A_1) == 8,
-      f"minimum at l={mn_L} under (L) and l={mn_1} on the one rate; recovery multipole "
-      f"{recovery(A_L)} and {recovery(A_1)}")
+check("⛭⛔⛭ `r7783` ** ③ AND THE PAPER'S TWO SHAPE CLAIMS, **PARSED FROM ITS OWN TEXT**, SURVIVE THE "
+      "RATE: IT SAYS THE MINIMUM FALLS AT `l = 4` AND THAT THE DEFICIT RECOVERS BY `l` ≈ `8`, AND BOTH "
+      "HOLD UNDER EITHER CLOCK ** ⇒ *** so *\"a dip whose minimum falls at `l=4`\"* and *\"recovering by "
+      "`l` ≈ `8`\"* stand unchanged on the one rate, and ONLY the four numbers need rewriting. ** The "
+      "clock reshapes the deficit without moving where it closes. ** *** ⌗ *The claims are read out of "
+      "the paper rather than restated here, so this row goes red if the paper's own wording moves off "
+      "`4` or `8` -- which is what `check_unread_figure` exists to force*",
+      _min_claim is not None and _rec_claim is not None
+      and int(_min_claim.group(1)) == mn_L == mn_1
+      and int(_rec_claim.group(1)) == recovery(A_L) == recovery(A_1),
+      f"the paper claims the minimum at l={_min_claim.group(1) if _min_claim else None} and recovery by "
+      f"l={_rec_claim.group(1) if _rec_claim else None}; measured minimum l={mn_L} under (L) and "
+      f"l={mn_1} on the one rate, recovery {recovery(A_L)} and {recovery(A_1)}")
 
 # ---------------------------------------------------------------- (4) the 2.9 per cent, NAMED
 xv = {}
@@ -175,15 +187,20 @@ for k in (('decoupled', 'L'), ('frozen', 'L'), ('decoupled', 'one'), ('frozen', 
     print(f"      {k[0]+', '+('(L)' if k[1]=='L' else 'one rate'):34} "
           f"{xv[k][0]:>15.2f}% {xv[k][1]:>13.2f}%")
 ge5 = float(np.max(np.abs(np.asarray(LP['distances__armB_decoupled__L'], float) / A_L - 1.0)[3:]) * 100)
-check("⛭⛭⛭ `r7783` ** ④ THE PAPER'S `2.9` PER CENT IS ARM A AGAINST ARM B's **DECOUPLED** BUILD, AT THE "
+_xv_claim = re.search(r'the hierarchy agrees to \$(\d\.\d)\$ per cent at every multipole', tex)
+_one_claim = re.search(r'to under (one) per cent above \$\\ell=(\d)\$', tex)
+check("⛭⛭⛭ `r7783` ** ④ THE PAPER'S `2.9` PER CENT -- **PARSED FROM ITS OWN SENTENCE** -- IS ARM A AGAINST ARM B's **DECOUPLED** BUILD, AT THE "
       "DISTANCES' POINT, UNDER (L): `2.91 %` ** ⇒ *** and the **frozen** build gives `6.19 %` there, so "
       "the sentence is NOT frozen's -- the cross-validation is named by BUILD and not only by point. ** "
       "Its second clause fixes its own reading: *\"under one per cent above `l = 5`\"* holds at `0.30 %` "
       "on `l > 5` and FAILS at `1.20 %` on `l >= 5`, so the sentence is committed to the strict "
       "reading. ** *** ⌗ *This is the identification the order asked for, sharpened: point, clock AND "
       "build*",
-      abs(xv[('decoupled', 'L')][0] - 2.91) < 0.05 and xv[('decoupled', 'L')][1] < 1.0
-      and xv[('frozen', 'L')][0] > 5.0 and ge5 > 1.0,
+      _xv_claim is not None and _one_claim is not None
+      and abs(xv[('decoupled', 'L')][0] - float(_xv_claim.group(1))) < 0.05
+      and xv[('decoupled', 'L')][1] < 1.0 and xv[('frozen', 'L')][0] > 5.0 and ge5 > 1.0,
+      f"the paper claims {_xv_claim.group(1) if _xv_claim else None} per cent and "
+      f"{_one_claim.group(1) if _one_claim else None} per cent above l={_one_claim.group(2) if _one_claim else None}; "
       f"decoupled vs armA under (L): {xv[('decoupled','L')][0]:.2f}% over l=2..8, "
       f"{xv[('decoupled','L')][1]:.2f}% over l>5, {ge5:.2f}% over l>=5; frozen vs armA "
       f"{xv[('frozen','L')][0]:.2f}%")
@@ -209,11 +226,12 @@ for clock, suf in (('L', 'L'), ('one', 'one_clock')):
 has_oc_dist = any(k.startswith('distances__armB') and k.endswith('one_clock') for k in LP)
 check("⛭⛔⛭ `r7783` ** ⑥ AND MY OWN `3.39 / 3.51` IS A DIFFERENT COMPARISON ENTIRELY -- FROZEN AGAINST "
       "DECOUPLED, INSIDE ARM B, AT THE **REFIT** POINT ** ⇒ *** it is the depth receipt's own "
-      "frozen/decoupled standard and NOT the paper's arm-A-against-arm-B figure, so neither may be "
-      "carried into the paper as the other. ** At the distances' point only the (L) legs of that pair "
+      "frozen/decoupled standard, and NOT the arm-A-against-arm-B quantity `④` locates, so neither of "
+      "the two may be reported as the other. ** At the distances' point only the (L) legs of that pair "
       "are banked, so there is no one-rate frozen/decoupled figure there without a new run, which this "
-      "item does not order. ** *** ⌗ *`r7779+cc66.2`'s `R5'` measured this and reported it as the "
-      "paper's `3 %`; `④` is what the paper's sentence actually is*",
+      "item does not order. ** *** ⌗ *Both figures here are THIS seat's own measurements, from "
+      "`r7779+cc66.2`'s `R5'`; no published figure is attributed to them, and `④` is the row that "
+      "opens the paper*",
       abs(fd['L'] - 3.39) < 0.05 and abs(fd['one'] - 3.51) < 0.05 and not has_oc_dist,
       f"frozen vs decoupled at the refit point: {fd['L']:.2f}% under (L), {fd['one']:.2f}% on the one "
       f"rate; a distances-point one-clock armB row in the leafpert bank: {has_oc_dist}")
