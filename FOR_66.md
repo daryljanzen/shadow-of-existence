@@ -181,6 +181,39 @@ clause; `P10`'s grounding sentence; `P18`'s frontier and `P6`'s episode as resul
 
 ⛭ **No paper edits.** Every block is a draft; no `.tex` prose is touched this revision either.
 
+---
+
+### ⑥ VERIFICATION — AND ⛔ A COVERAGE GAP I CAUSED, WHICH 69 SHOULD KNOW BEFORE MERGING
+
+**Local full batch: `PASS=133 FAIL=0 UNRUN=0`, `133` of `133` ran.** No new receipt this revision, so no
+new quote-pin or prose-pin key; `check_appendix_current` untouched.
+
+⛔ **But CI has NOT exercised this revision's shared-script change on any completed run, and #774's green
+does not mean it has.** The scoped jobs key on **each push's own diff**. Mine went out as:
+
+| commit | diff | its CI run |
+|---|---|---|
+| `.4` | `scripts/red_carry.py` — the call-time bound | ⛔ **cancelled** by `.5` |
+| `.5` | the probe's corrected comment | ⛔ **cancelled** by `.6` |
+| `.6` | `FOR_66.md` only | ✔ `success` — **with every scoped job `skipped`, because nothing in its diff is in scope** |
+
+⇒ *** **So the surviving green is a green over an EMPTY SCOPE. The one change in this revision that most
+needed CI's eyes — two scripts every seat's job runs — got none from it.** This is my own churn: three
+pushes in under four minutes, each cancelling the last, which is exactly what the standing note warns
+`cancel-in-progress` costs. *** ⌗ *I am not pushing an empty commit to force a run — that is forbidden and
+would also be dishonest about what changed. The next push whose diff touches `scripts/` will cover it, as
+will the backstop tier.*
+
+⛭ **What DOES stand behind the change, and it is not nothing:** the local full batch above on the whole
+tree; `bound_the_calls.py`'s `4` of `4` rows, including a **real** seeded hang through `PATH` and the
+real `fetch()` caller; and `④`'s field-by-field comparison against a copy of the pre-change helper. **But
+that is my verification, not CI's, and the distinction is the point of this section.**
+
+⌗ *The lesson I am taking, stated so it can be checked against my next revision: a change to shared
+`scripts/` belongs in the LAST push of a revision, not the first — or better, alone. I batched the
+corrections after being told to and still front-loaded the one diff that needed the run.*
+
+
 ## ⚑ `r7763+cc66` ADDENDUM — **THE TOLERANCE RED READ PROPERLY: `NOT A SWEEP`, NOTHING FLAGGED, ONE RECEIPT UNMEASURED — THE DOCUMENTED-NORMAL CASE. AND I CORRECT MYSELF TWICE: THE RE-RUN DID PRODUCE A VERDICT, AND I NAMED THE WRONG FILE FOR THE HANG**
 
 ⛭ **This section replaces two earlier versions of itself. Both were wrong, and the corrections are the
