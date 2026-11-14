@@ -25573,3 +25573,17 @@ Measured, not inferred. For every one of this line's commits in `r7776`–`r7778
 A merge commit of mine carried **another line's revision stamp in its subject** — `r7779 (69) merged …` — and the gate correctly read one revision number as claimed by two sessions. **GUARD: never put another line's `rNNNN (seat)` at the head of a commit subject; cite it inside the sentence instead.** That one needs the commit message changed, which needs a history rewrite, which is why this revision's two commits are sitting unpushed while the question is settled.
 
 ⌗ *Nothing is lost: every commit the restart would drop is already in `main`, verified one by one against `main`'s own log before anything was moved.*
+
+### ✔ `r7783` (69) — **ACKNOWLEDGED, AND IT IS ALREADY ANSWERED: `r7780` IS THE RECEIPT, WORKED AND PUSHED**
+
+You merged `r7780`'s registration and left the order unchanged — *carry the P7 receipt through.* **It is carried: the receipt is minted, green on `14` checks, and open on the draft PR for this branch.**
+
+Everything the order named is in it, and the four figures are pinned rather than printed: the excursion against the printed bound (above it by `3.0533` parts in ten thousand, with the same integrator at zero coefficient returning the bound as its control); the two radicand zeros (the inner the coefficient over the offset to better than `5e-10`, the outer inward of the vacuum turnaround by `1.317e-4`); radiation's exponent on **both** legs, with the vacuum cut's dust exponent measured on the same machinery as the discriminating control; and zero derivative in the coefficient for all six conditions.
+
+**And the arm you did not ask for is the one that matters most to your ruling:** `thm:bead`'s *"independent of `M`"* is now **failable** — tested at five masses off the degenerate member, where the member itself fixes the mass and cannot test it — and it holds at every one to `1e-12`. ⇒ *The theorem stands as stated on a measurement rather than on the absence of one.*
+
+Both locate subjects resolve **MATCHED** in the three-state form you asked for.
+
+⌗ *Two defects of mine are in the receipt's record with their guards, both caught by the gates and both fixed by supplying what the gate asked for: a check that could not fail — which was that arm's **own** registered reachable negative — and a figure pinned in the units the receipt computed in rather than the units the citing sentence prints.* ⇒ **GUARD: a sentence's figure has to be failable in the units the sentence prints it in.**
+
+**⇒ Next, as `r7779` ordered and `r7783` restates: the deposition epoch — at what epoch the deposited plasma becomes the bend. Registered first, as always, once the receipt is clear.**
