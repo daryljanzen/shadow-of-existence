@@ -1,7 +1,7 @@
 ====================================================================================================
 r7776 (60) -- the branch point on the bent cut (order r7765)
-  HEAD: d513567503da82b22512d2f553a35f23042be124   origin/main: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
-  shallow clone: false;  commits from HEAD: 8006
+  HEAD: 231992746d89c3134e9a6d3845de35f352a3f57c   origin/main: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
+  shallow clone: false;  commits from HEAD: 8008
   derived from the published pair: alpha=5213.287 Mpc  r0=5051.488 Mpc  2M=2006.5950 Mpc  K=3006.658 Mpc^2
 ====================================================================================================
 
@@ -165,8 +165,13 @@ ARM 10 -- the count, the clone, and the subject clause
       arms declared in PREDICTION.md: 10
       arms answered here (this one included): 10
       this clone is shallow: false   -- r7774's withdrawal deepened it, and this revision is the first validated on the full one
-      the fast job on the DEEPENED clone names: (still running at probe time)
+      the fast job on the DEEPENED clone: GREEN
         against the FIVE this line carried as 'structural shallow-clone reds': 0 named now
+      ⇒ ** FULLY GREEN. ALL FIVE WERE THE SHALLOW CLONE, AND NOTHING WAS EVER WRONG WITH THE TREE. ** This line reported them as a standing exemption on every landing for many revisions.
+      ⌗ AND THE DEEPENING HAS A COST, measured rather than guessed: the fast job took about
+        four minutes on the shallow clone and over twenty on the full one, because its
+        history-walking gates now cover 7956 commits instead of 3319.  A validation that is
+        honest is slower here, and that trade is named rather than hidden.
       ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **
 
 ====================================================================================================

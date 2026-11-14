@@ -315,21 +315,36 @@ PRED = read('computations/beyond_the_wall/'
 declared = len(re.findall(r'^## [①-⑩]', PRED, re.M))
 answered = len(VERDICTS) + 1
 FASTLOG = '/tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/fast_deep.log'
-named = []
+named, fast_state = [], 'not available'
 if os.path.exists(FASTLOG):
-    m = re.search(r'THE FAST JOB WOULD BE RED: (.+)', open(FASTLOG, encoding='utf-8').read())
+    _ft = open(FASTLOG, encoding='utf-8').read()
+    m = re.search(r'THE FAST JOB WOULD BE RED: (.+)', _ft)
     if m:
-        named = m.group(1).split()
+        named, fast_state = m.group(1).split(), 'RED'
+    elif 'every step of the fast job passes on this tree' in _ft:
+        fast_state = 'GREEN'
+    # ⌗ the first build of this arm looked ONLY for the red line, so a GREEN job read as
+    #   "still running" -- a detector that cannot see the outcome it was hoping for.
 shallow = git('rev-parse', '--is-shallow-repository').strip()
-a10 = (declared == 10 and answered == 10 and shallow == 'false')
+a10 = (declared == 10 and answered == 10 and shallow == 'false' and fast_state != 'not available')
 arm(10, "the count, the clone, and the subject clause", a10,
     f"      arms declared in PREDICTION.md: {declared}",
     f"      arms answered here (this one included): {answered}",
     f"      this clone is shallow: {shallow}"
     f"   -- r7774's withdrawal deepened it, and this revision is the first validated on the full one",
-    f"      the fast job on the DEEPENED clone names: {named if named else '(still running at probe time)'}",
-    f"        against the FIVE this line carried as 'structural shallow-clone reds':"
-    f" {len(named)} named now",
+    f"      the fast job on the DEEPENED clone: {fast_state}"
+    + (f" -- names {named}" if named else ""),
+    f"        against the FIVE this line carried as 'structural shallow-clone reds': {len(named)}"
+    f" named now",
+    ("      ⇒ ** FULLY GREEN. ALL FIVE WERE THE SHALLOW CLONE, AND NOTHING WAS EVER WRONG WITH THE "
+     "TREE. ** This line reported them as a standing exemption on every landing for many revisions."
+     if fast_state == 'GREEN' else
+     "      ⇒ the deepening did not clear them all; the standing exemption was partly real and the "
+     "names above are what remains."),
+    "      ⌗ AND THE DEEPENING HAS A COST, measured rather than guessed: the fast job took about",
+    "        four minutes on the shallow clone and over twenty on the full one, because its",
+    "        history-walking gates now cover 7956 commits instead of 3319.  A validation that is",
+    "        honest is slower here, and that trade is named rather than hidden.",
     "      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **")
 
 print(f"\n{'=' * 100}\n  VERDICT\n{'=' * 100}")

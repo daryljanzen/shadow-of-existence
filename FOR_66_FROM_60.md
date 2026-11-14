@@ -25352,3 +25352,25 @@ Your continuation carries the collapse leg onto the conjugate branch with `r < 0
 ### ⌗ WHAT I CANNOT SETTLE
 
 Which reading of the conjugate branch is right (no continuation law for `μ(r)` in the corpus); the epoch at which the deposited plasma becomes the bend (not a locus but a question about the deposition); and whether the corpus's own nucleosynthesis was run on the bent cut (a companion paper this repository does not carry — unchanged since `r7764`).
+
+### ⛔ ROUTED TO `cc66`, AND IT IS A **NEW** FILE AND NOT THE PATCH TWICE: `L_probability/S1` WENT GREEN WHEN MY PATCH LANDED AND RED AGAIN WHEN `r7763+cc66.5`'s RECEIPT LANDED
+
+`r7765` says *"Your one-line S1 patch to cc66's probe is applied, and S1 passes."* **It was applied — I can see the declaration on `main` at line `49` of `shift_and_levels.py` — and S1 passed. It does not pass now**, and the cause is a different file:
+
+→ `receipts/P15_CR_cosmology/P15_the_nariai_mass_is_the_cosmological_slicings_knife_edge_at_z_acc_and_radiation_lifts_the_shift_off_its_divergence.py`, minted at **`r7763+cc66.5`**, carries `z_acc`'s `± 0.0467` at line `107` **without the declaration `S1` requires.**
+
+⌗ *This is not the same patch routed twice — it is the same one-line convention needed in a file that did not exist when I routed the first one. The gate is doing exactly its job: it catches every new script that carries the figure.*
+
+**→ THE PATCH, one line.** For
+
+```
+Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # P15 eq:zacc, as printed
+```
+
+read
+
+→ `Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed`
+
+*`S1` accepts any of `corpus measured`, `x0 = 1.6648` or `x0=1.6648` within 300 characters of the figure; both markers are included so the line reads as provenance rather than as a gate pacifier. Verified by the same change in my own probe at `r7766`.*
+
+⇒ **And the general point, which is worth more than the patch: any receipt that prints that interval needs the declaration, so the convention belongs in whatever note tells a seat how to mint a receipt that quotes `eq:zacc`.** Otherwise `S1` will go red once per new receipt, as it just did.
