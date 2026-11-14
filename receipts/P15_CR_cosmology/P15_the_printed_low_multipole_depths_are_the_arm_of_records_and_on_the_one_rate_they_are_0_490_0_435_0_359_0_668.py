@@ -105,21 +105,34 @@ print(__doc__)
 print('=' * 100)
 
 # ---------------------------------------------------------------- (1) the printed figures are armA (L)
-PRINTED = re.search(r'\$\\approx0\.485\$, \$0\.441\$, \$0\.354\$ and \$0\.657\$ of the flat-'
-                    r'\$\\Lambda\$CDM expectation at \$\\ell=2,3,4,5\$', tex)
-paper = [0.485, 0.441, 0.354, 0.657]
-hit_L = [abs(round(float(v), 3) - w) < 1e-9 for v, w in zip(A_L[:4], paper)]
-miss_1 = [abs(round(float(v), 3) - w) >= 1e-9 for v, w in zip(A_1[:4], paper)]
-check("⛭⛭⛭ `r7783` ** ① THE PAPER'S PRINTED `0.485 / 0.441 / 0.354 / 0.657` ARE ARM A UNDER **(L)** AT "
-      "THE DISTANCES' POINT -- ALL FOUR, TO THE DIGIT ** ⇒ *** so the paper is quoting the ARM OF "
-      "RECORD at the point its distances are quoted at, and `sec:largescale`'s sentence is located "
-      "rather than guessed at. ** The one-rate leg differs at ALL FOUR at that precision, which is why "
-      "the rewrite has numbers to change. ** *** ⌗ *The figures are parsed out of the paper's own "
-      "sentence, not retyped here*",
-      PRINTED is not None and all(hit_L) and sum(miss_1) >= 2,
-      f"paper sentence found: {PRINTED is not None}; armA (L) rounds to "
-      f"{[round(float(v), 3) for v in A_L[:4]]} against the paper's {paper}; armA one-rate rounds to "
-      f"{[round(float(v), 3) for v in A_1[:4]]}, differing at {sum(miss_1)} of 4")
+# ⛔ `check_quote_pins` NAMED THIS EXACTLY RIGHT AND THE FIRST FORM OF THIS GATE WAS WRONG FOR IT:
+#   *"A gate that asserts another seat's sentence is present fails when that seat rewords -- and fails
+#   on SUCCESS when the sentence said something was open."*  ** This receipt exists so that 69 can
+#   rewrite that very sentence to the one-rate quartet. **  A pin on its CURRENT wording would
+#   therefore go red on the success it is for.  ⇒ The gate tests the DISJUNCTION: the sentence must
+#   print one of the two quartets this receipt measures, and which one it is, is reported rather than
+#   demanded.  Adjudicated `ALT-OK` in `corpus/quote_pin_baseline.tsv` in the same pass.
+QUARTETS = {'the arm of record, (L)': (0.485, 0.441, 0.354, 0.657),
+            'the one rate': (0.490, 0.435, 0.359, 0.668)}
+_m = re.search(r'\$\\approx(\d\.\d{3})\$,\s+\$(\d\.\d{3})\$,\s+\$(\d\.\d{3})\$\s+and\s+'
+               r'\$(\d\.\d{3})\$\s+of\s+the\s+flat-\$\\Lambda\$CDM\s+expectation\s+at\s+'
+               r'\$\\ell=2,3,4,5\$', tex)
+printed = tuple(float(x) for x in _m.groups()) if _m else None
+which = next((k for k, v in QUARTETS.items() if printed == v), None)
+hit_L = [abs(round(float(v), 3) - w) < 1e-9 for v, w in zip(A_L[:4], QUARTETS['the arm of record, (L)'])]
+hit_1 = [abs(round(float(v), 3) - w) < 1e-9 for v, w in zip(A_1[:4], QUARTETS['the one rate'])]
+check("⛭⛭⛭ `r7783` ** ① THE QUARTET `sec:largescale` PRINTS IS ONE OF THESE TWO, AND THEY ARE THE SAME "
+      "ARM AND POINT UNDER THE TWO CLOCKS: `0.485 / 0.441 / 0.354 / 0.657` IS ARM A UNDER **(L)** AT THE "
+      "DISTANCES' POINT, AND `0.490 / 0.435 / 0.359 / 0.668` IS THAT ARM ON THE ONE RATE ** ⇒ *** so the "
+      "paper is quoting the ARM OF RECORD at the point its distances are quoted at, and the rewrite's "
+      "target is the other member of the pair. ** Both quartets reproduce to the digit from the banked "
+      "legs, which is what makes the disjunction a measurement and not a hedge. ** *** ⌗ *The gate tests "
+      "the DISJUNCTION on purpose: a pin on the sentence's CURRENT wording would go red on the very "
+      "rewrite this receipt is for, which is `check_quote_pins`'s own named failure mode*",
+      printed is not None and which is not None and all(hit_L) and all(hit_1),
+      f"the sentence prints {printed}, which is {which!r}; armA (L) rounds to "
+      f"{[round(float(v), 3) for v in A_L[:4]]} and armA one-rate to "
+      f"{[round(float(v), 3) for v in A_1[:4]]}")
 
 # ---------------------------------------------------------------- (2) the one-rate values
 check("⛭⛭⛭ `r7783` ** ② AND ON THE RATE THE UNIVERSE HAS, AT THE SAME ARM AND POINT, THEY ARE "
