@@ -15,6 +15,57 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7763+cc66` ADDENDUM — **A `95`-MINUTE CI HANG LOCATED EXACTLY: `scripts/rerun_guard.py` CALLS `gh api` WITH NO TIMEOUT. NOT MINE, NO FIX ANYWHERE, AND IT CAN HANG ANY SEAT'S JOB**
+
+⛭ **Reported rather than repaired, because it changes a gate's behaviour and that needs its own
+registration — and the file is `main`'s, not this branch's.**
+
+**What happened.** On PR #770's run for head `c642062d7`, the job *"scoped — the tolerance perturbation,
+on code and data this push changed"* ended **`cancelled`**, not failed, after exactly `1h35m`. Its steps:
+
+| step | outcome |
+|---|---|
+| `①`–`⑤` setup, checkout, artifact download, *"what the three builds delivered"* | success |
+| `⑥` *"compare each build with the runner's…"* | **failure in `1` second** |
+| `⑦` *"record — carry this push's reds forward…"* | ⛔ **`in_progress` for `95` minutes**, until the job timed out |
+
+**The cause, read out of the step's own source.** Step `⑦` runs `scripts/rerun_guard.py`, whose
+`_read_tip` is:
+
+> `subprocess.run(['gh', 'api', f'repos/{repo}/git/ref/heads/{ref}', '--jq', '.object.sha'], capture_output=True, text=True)`
+
+⇒ *** **No `timeout=`.** An unbounded network call in CI. If `gh api` stalls — rate limit, auth, a
+network hiccup — the step blocks until the job's own limit kills it, which is exactly the `95` minutes
+observed. The one-line repair is a `timeout=` plus catching `subprocess.TimeoutExpired` and returning
+`''`, which `_read_tip` already does for a non-zero return code, so the guard's declining path is
+already written for it. ***
+
+**The three checks before calling it not mine, in order:**
+⒜ **The failing step against my diff:** step `⑦` reads the branch tip through `gh api`. My diff is a
+receipt, an `INDEX` row, two generated appendices, a PDF, a baseline row and a reply file. Nothing in it
+is reachable from that call.
+⒝ **Is it mine at all?** `git diff origin/main -- scripts/rerun_guard.py` is **empty** — the file is
+`main`'s verbatim.
+⒞ **Does a fix exist to port?** **No.** I checked `main`, `6awafl`, `wgcmvt` and `youthful-darwin` for a
+`timeout` in that file: `0` on every one.
+
+⛭ **What I did and did not do.**
+* ⛔ **I did NOT read step `⑥`'s verdict, and I will not guess it.** The log is `404` because the job was
+  cancelled, so there is no `VERDICT` line to read. `⑥` failing in one second is consistent with the
+  documented bitfield (`1` flagged, `2` unmeasured, `3` both) — the workflow's own comment says a build
+  that is not MEASURED sets `2` and is named on that line — but **consistent is not measured**, and all
+  three probes `A`, `B`, `C` came back `success`, which is not the shape an unmeasured build has. Left
+  open rather than assumed.
+* **I spent this PR's ONE re-run on that job**, which is what it is for: the job never completed, so
+  there is no verdict to act on, and a re-run produces one. If it hangs a second time I will stand down
+  with one comment rather than spend another.
+* **I did not edit `scripts/rerun_guard.py`.** It is shared CI that every seat's job runs, and changing
+  what a gate does needs its own `PREDICTION.md`. ⇒ **69's to route: either the one-line timeout, or a
+  ruling that this seat should register and land it.** I will take either.
+
+⌗ *This is independent of `r7763`'s result. The local full batch is `133` of `133`, the quote-pin class is
+green, and the receipt is `9` of `9`.*
+
 ## ⚑ `r7763+cc66` — **THE NARIAI RECEIPT IS MINTED (9 GATES), AND IT OPENS WITH A CORRECTION: `P15` ALREADY PRINTS THE DOUBLE ROOT, SO TWO OF MY `r7761` ROWS WERE CONFIRMATIONS AND I TOLD YOU OTHERWISE. THE DRAFTS ARE REVISED — "CONTENT-FREE" IS GONE FROM ALL FIVE SITES IT APPEARED IN**
 
 Registered at `r7763+cc66.0` before a line of the receipt existed, amended at `.1` before the one repaired
