@@ -130,3 +130,50 @@ predicted, the re-bank is a **separate** registration with its own `PREDICTION.m
 R0/R1 move under any edit to a bank's `config`. R2 moves under any edit to either blob — and in
 particular would go red if a future `SPLITCLOCK` change touched the unconditional path. R3/R4/R5/R6
 move under any change to the banked depth arrays. R7 is a scope declaration and carries no number.
+
+---
+
+# AMENDMENT `r7779+cc66.1` — written after the first run, which took R3 down
+
+**R3 is RED and the registered direction was wrong, by a factor of four.** I predicted the low-$\ell$
+depths would move by *less* than the $0.4984\,\%$ their projection distance moves. They move by up to
+**$1.976\,\%$** — about **four times more** — and the sign **alternates** across $\ell = 2,3,4$
+($-1.4\,\%$, $+1.5\,\%$, $-1.3\,\%$ in the arm-B frozen pair), which no rescaling of a single
+distance can produce. *That reshaping is the answer to item ③'s question, and it is the opposite of
+what items ① and ② found for the damping signature and the comb.* **The row stands as registered and
+is reported against me; nothing about it is relocated.**
+
+Three further amendments, each saying plainly what it is responding to:
+
+### R2′ — replaces R2's test, which was defective (the row, not the claim)
+
+R2 asked that every differing *executable* line "name one of the split tokens". **That test fails any
+rename regardless of inertness:** the removed lines `Hc=Hc_of(e)` and `return out` of course name no
+split token — they are the lines being *replaced* by guarded ones. The claim was right and the
+instrument's byte-identity holds; my formulation of it could not have passed.
+
+**R2′ asserts the claim properly, by normalised AST equality.** Parse both blobs, and on each tree:
+rename `_Hdyn` → `Hc_of`; reduce every `IfExp` whose test is `_SPLITL` to its `orelse`; delete every
+`If` statement whose test is `_SPLITL`; delete the `_SPLITL` and `_Hdyn` bindings; and reduce
+`(A or _SPLITL)` to `A`. **PREDICT the two normalised trees are IDENTICAL** — i.e. with `SPLITCLOCK`
+unset the newer blob *is the same program*, not merely a program that behaves the same.
+**FAILS IF** the normalised dumps differ anywhere. The runtime arm (every rate spline the dynamics
+read, bit-identical, `_Hdyn is Hc_of`, `Jac_of` never defined) is kept as an independent second arm.
+
+### R5′ — replaces R5's implementation, which was stricter than R5's own registration
+
+R5 registered: *"FAILS IF the one-rate agreement exceeds $3\,\%$ where (L)'s does not."* The code
+tested `both ≤ 3%`, which is a different and stronger claim. Measured: **(L) $3.39\,\%$, one rate
+$3.51\,\%$ — both exceed $3\,\%$.** So the registered condition is *not* met: the clock does not
+break the cross-validation. **R5′ asserts what was registered** (the one rate does not degrade the
+frozen/decoupled agreement relative to (L) by more than the grain), **and reports the absolute level
+as a separate finding for 69:** the receipt's $3\,\%$ standard was established at its own point and
+build; at the refit point these leafpert banks sit at $3.4$–$3.5\,\%$ under *both* clocks.
+
+### R8 — POST-HOC, NOT A PREDICTION: the move decomposes, and it is mostly the PROJECTION
+
+Registered honestly as what it is: **this was read off the first run, not predicted.** Arm A carries
+**CAMB's leaf-rate dynamics in both rows**, so its pair changes the *projection clock only*; arm B
+changes projection *and* dynamics. Comparing the two pairs therefore splits the move. R8 asserts the
+split exists and is projection-dominated, with the arithmetic shown; it is offered to 69 as a reading,
+not as a discharged prediction.
