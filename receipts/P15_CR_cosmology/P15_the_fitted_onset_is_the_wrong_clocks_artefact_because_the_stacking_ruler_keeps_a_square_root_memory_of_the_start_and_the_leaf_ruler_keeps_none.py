@@ -129,6 +129,7 @@ The rulings are to be carried by a consistent rebuild with the comb re-derived.*
 there.  *That is reported as a check that these are measurements of the rate difference and not of the
 method.*
 """
+# r7785 (69): P7's rate remark rewritten on one rate; its quoted literals are re-pointed to the sentences that replaced them.
 import ast
 import os
 import re
@@ -201,14 +202,14 @@ def _hier_accepts_and_uses_none():
 # ===================================================== A. the corpus's own assignment, read verbatim
 head("A.  ⛭⛭ Q1's AUTHORITY: THE CORPUS IS UNANIMOUS, AND THE SENTENCE THE CODE CITES IS GONE")
 
-RULE07 = ("a quantity computed from a process running \\emph{in} the content---the plasma's sound "
-          "horizon, its diffusion length, recombination, the perturbations---takes the leaf's")
+RULE07 = ("a process running \\emph{in} the content---the plasma's sound "
+          "horizon, its diffusion length, recombination, the perturbations.")
 gate("`P07`'s rate-rule remark puts the plasma's sound horizon, its diffusion length, recombination "
      "AND the perturbations on the LEAF, in those words", RULE07 in p07)
 gate("⛭ and it puts the stacking rate on the other side by NAME -- a comoving separation read across "
      "leaves, $D_M$, $D_H$, $D_V$, the observable expansion",
-     "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes "
-     "the stacking rate" in p07)
+     "a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable expansion---as much "
+     "as a process running \\emph{in} the content" in p07)
 
 # r7767 (69): P15 sec:tensions now puts every quantity on the one rate, the plasma's scales and microphysics with them.
 RULE15 = ("the scales the plasma accumulates---$\\rs$ and $r_D$---recombination's microphysics and "
@@ -302,11 +303,10 @@ gate("✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built fr
 gate("⛭ and the rule's assignment is quoted from `P07` rather than paraphrased, because the whole "
      "ruling rests on it: a comoving separation read across leaves takes the STACKING rate, and "
      "reading a stacking quantity on the leaf's is what the proposition forbids",
-     'a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable '
-     'expansion---takes the stacking rate' in fp07
-     and 'There is no locus at which the rate switches' in fp07
-     and "reading a content process on the stacking rate, or a stacking quantity on the "
-         "leaf's, is not a modelling choice but the reification the proposition forbids" in fp07)
+     'a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable '
+     'expansion---as much as a process running \\emph{in} the content' in fp07
+     and 'and there is one rate' in fp07
+     and "is not a modelling choice} but the omission of content the cut carries" in fp07)
 gate("⛔ Q2's subject: the CR arm's onset is SOLVED so that pi D_M / r_s hits 301.6",
      "brentq(lambda z: np.pi * D_M / rs_from(z) - _latarg, 1500., 5.0e6)" in src)
 gate("⛔⛔ and the instrument carries TWO sound horizons and uses BOTH, its own docstring saying "

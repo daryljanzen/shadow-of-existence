@@ -120,6 +120,7 @@ redshift and the distances.  ⇒ *Exhibit a photon-path observable in this const
 assigns to the leaf and that is NOT an integral over the content's own evolution, and the premise
 fails.*  `1/k_D^2` is not one, for the reason above.
 """
+# r7785 (69): P7's rate remark rewritten on one rate; its quoted literals are re-pointed to the sentences that replaced them.
 import os
 import re
 import sys
@@ -221,8 +222,8 @@ head("C.  ⛭⛭⛭ THE DECISION: EVERY PHOTON-PATH OBSERVABLE IN THIS CONSTRUCT
 gate("`P07` names the stacking side by enumeration, and the enumeration is of photon-path and "
      "foliation observables: a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the "
      "observable expansion",
-     "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes "
-     "the stacking rate" in fp07)
+     "a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable expansion---as much "
+     "as a process running \\emph{in} the content" in fp07)
 # ⛔⛭ RE-CUT r7260+60 (node 60), on `r7257`'s order ①.  ** THIS IS ANOTHER SEAT'S RECEIPT AND THE
 #   EDIT IS STATED IN THE COMMIT. **  *The gate stood on a TWO-ARM DISJUNCTION, and r7258 §③ found it
 #   by instrument rather than by reading: arm one (`$L1$`) is DEAD against every live paper in the

@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7785 (69) LANDS P7 rewritten on one rate (abstract, rate remark, caption, synthesis, scalar frontier): the data axis holds. '
         'r7783 LANDS r7779+cc66.0-.9, r7780 (60), r7765+70.2-r7779+70.22: P15\'s comb 298.94 on one rate, a part in five hundred; low-multipole depths move four times their distance; the Gaussian survives; all eight ARP experiments in. '
         'r7781 (69) LANDS P15 sec:refit-bound rewritten on one rate (framing, change of variable, configuration comparison, visibility, early ISW, growth normalisation, discussion): level on the data; opening figures to move onto the one-rate arm. '
         'r7779 LANDS r7767+cc66.0-.3, r7776-r7778 (60), r7765+70.1, r7765+71.1-.2: the damping-scale ratio is distance-free and its figures stand; the fitted comb moves a ninth as far as the ruler; K is content the geometry receives, fixed by the measured microwave temperature; the vacuum bead bound stands and the bent cut lifts 3.05e-4 past it; P13 is the ninth paper formalised (9 of 10 rows). '

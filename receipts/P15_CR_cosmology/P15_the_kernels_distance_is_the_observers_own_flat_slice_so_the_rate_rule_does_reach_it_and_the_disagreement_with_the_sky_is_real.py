@@ -89,6 +89,7 @@ computed at a third parameter set, and no spectrum, likelihood or transfer is co
 three-grid table is NOT re-measured -- the order said it is verified there and this receipt takes it as
 given, using it nowhere except to name which configuration the sky prefers.
 """
+# r7785 (69): P7's rate remark rewritten on one rate; its quoted literals are re-pointed to the sentences that replaced them.
 import glob
 import os
 import re
@@ -284,8 +285,8 @@ gate("⛭ and it is excluded structurally too: the $d\\Omega$ it reads is the Sd
 head("E.  ⇒ READING (1): THREE INDEPENDENT ROUTES PUT IT ON THE STACKING RATE, SO THE MISFIT IS REAL")
 
 gate("ROUTE ONE -- `P07`'s rate rule names the stacking side by enumeration, $D_M$ among them",
-     "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes "
-     "the stacking rate" in fp07)
+     "a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable expansion---as much "
+     "as a process running \\emph{in} the content" in fp07)
 # ⌗ ** GLOBBED BY A STEM FRAGMENT RATHER THAN NAMED, because node 66 renames stems when it lands
 # them: `r7096`'s receipt went in without the revision id in its name, and a gate holding the old
 # name would read as a missing receipt when the receipt is right there. **

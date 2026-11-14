@@ -310,7 +310,9 @@ check("⛭⛭⛭ `r7779` ** ⑧ SO `P15`'s OWN PRINTED COMB OF `299.1` BECOMES `
       "`298.94`. ** Against the sky's `298.4` that is nearer than the number the paper carries, and no "
       "significance is computed for it. ** *** ⌗ *`297.6` is what scaling by `l_A` would have given, and "
       "`⑥` is why it is wrong*",
-      len(sent) == 1 and sent[0] == ('299.1', '298.4') and 299.1 in sites
+      # r7785 (69): the sky's comb is pinned as a number too, since the one-rate sentences P15 now prints quote it
+      #   beside this receipt (298.4, the comb the paper's own locator fits to the sky)
+      len(sent) == 1 and sent[0] == ('299.1', '298.4') and 299.1 in sites and abs(float(sent[0][1]) - 298.4) < 0.05
       and abs(round(derived, 2) - 298.94) < 1e-9,
       f'the sec:scope sentence parses as comb {sent[0][0]} against the sky {sent[0][1]}; '
       f'every three-digit comb site in the paper reads {sites}; '

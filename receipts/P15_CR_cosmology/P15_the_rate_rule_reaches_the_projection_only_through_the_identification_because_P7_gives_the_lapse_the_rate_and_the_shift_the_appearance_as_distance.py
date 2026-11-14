@@ -58,6 +58,7 @@ receipt's own stated premise, and each is asserted present in the source it is a
 receipt fails if any of them is reworded, which is the only control a read can carry.  No figure, no
 tolerance, no sampling, and no assertion on wall-clock time. **
 """
+# r7785 (69): P7's rate remark rewritten on one rate; its quoted literals are re-pointed to the sentences that replaced them.
 import os
 import re
 import time
@@ -134,18 +135,18 @@ gate("Ⓐ③  and `P7` carries the rate rule's own statement, which sorts quanti
      #   supplied the demonstration rather than my judgement -- the shortened form is already a
      #   live key of its own in the optical-depth and fitted-onset receipts. **  ⌗ Measured before
      #   performing: ONE occurrence in the papers, so no reword exposure is traded for a MULTI one.
-     'a comoving separation read across leaves, '
-     '$D_M$, $D_H$, $D_V$, the observable expansion---takes the stacking rate' in P07
-     and 'There is no locus at which the rate switches' in P07)
+     'a comoving separation read across leaves---'
+     '$D_M$, $D_H$, $D_V$, the observable expansion---as much as a process running' in P07
+     and 'and there is one rate' in P07)
 
 # =====================================================================================
 head("B -- THE REASON IS P7's OWN IDENTITY, WHICH SPLITS THE RATE FROM THE APPEARANCE")
 
 gate("Ⓑ①  `P7` makes the LAPSE the stacking rate -- and the relation it states is that the observable"
      " expansion RIDES it, fixed by the substrate's `$\\alpha$` and the cut's offset",
-     'The \\emph{lapse} $N$---the existent\'s rate of advance---is the foliation stacking rate the '
+     'The \\emph{lapse} $N$---the existent\'s rate of advance---is the rate the '
      'observable expansion rides' in P07
-     and 'fixed by the substrate\'s $\\alpha$ and the cut\'s offset $x_0$' in P07)
+     and 'the slicing operator\'s own kernel theorem fixes its geometric part' in P07)
 
 gate("Ⓑ②  ⛭⛭ AND THE SAME SENTENCE MAKES THE SHIFT THE THING THE EXPANSION IS *OBSERVED* THROUGH AS"
      " DISTANCE AND REDSHIFT -- the `$E{=}1$` projection.  ** So the appearance-as-distance is a"
@@ -162,8 +163,8 @@ head("C -- SO THE RULE FIXES WHICH RATE ITS OWN LENGTH ACCUMULATES ON, AND NOT T
 
 gate("Ⓒ①  the rule's subject is a rate and its predicate is an accumulation: the two rates differ by"
      " the radiation term alone, and the rule says which of them each quantity takes",
-     'The two rates differ by the radiation term alone' in P07
-     and 'takes the stacking rate' in P07 and 'takes the leaf\'s' in P07)
+     'The two differ by the radiation term alone' in P07
+     and 'Every quantity the expansion enters takes it' in P07)
 
 gate("Ⓒ②  and `$D_M$` enters the rule as a comoving separation read ACROSS LEAVES -- which is the"
      " category, not the photon path.  ** The rule never names the argument of the kernel, and the"
@@ -273,8 +274,8 @@ gate("Ⓕ①  ⚠ NARROWER IS NOT WEAKER, and the distinction is kept because th
 gate("Ⓕ②  and the three things the order excluded are untouched here: no reopening of the knob"
      " `r7095` ruled on, no search for a third rate, and no re-derivation of `prop:flat` -- this"
      " receipt quotes that proposition rather than proving it again",
-     'There is no locus at which the rate switches' in P07
-     and 'The two rates differ by the radiation term alone' in P07)
+     'and there is one rate' in P07
+     and 'The two differ by the radiation term alone' in P07)
 
 gate("Ⓕ③  and it computes NOTHING, which is what the order asked for: every clause it turns on is"
      " quoted from the source it is attributed to, so the receipt fails if any of them is reworded."

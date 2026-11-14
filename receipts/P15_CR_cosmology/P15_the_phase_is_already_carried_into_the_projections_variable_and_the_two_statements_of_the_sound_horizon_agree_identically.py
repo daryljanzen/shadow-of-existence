@@ -66,6 +66,7 @@ the rate rule's wording, all asserted).
 
 rc=0 on success.  Run: python3 P15_the_phase_is_already_carried_into_the_projections_variable_and_the_two_statements_of_the_sound_horizon_agree_identically.py
 """
+# r7785 (69): P7's rate remark rewritten on one rate; its quoted literals are re-pointed to the sentences that replaced them.
 import os
 import re
 import subprocess
@@ -91,11 +92,10 @@ print(' ⓪  THE RULE, READ FROM `P07` RATHER THAN PARAPHRASED -- the whole read
 print('=' * 96)
 _p07 = open(os.path.join(ROOT, 'corpus', 'CR_framework.tex'), encoding='utf-8').read()
 _flat = re.sub(r'\s+', ' ', _p07)
-_q1 = ('a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable '
-       'expansion---takes the stacking rate')
-_q2 = 'There is no locus at which the rate switches'
-_q3 = ("reading a content process on the stacking rate, or a stacking quantity on the leaf's, "
-       "is not a modelling choice but the reification the proposition forbids")
+_q1 = ('a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable '
+       'expansion---as much as a process running \\emph{in} the content')
+_q2 = 'and there is one rate'
+_q3 = "is not a modelling choice} but the omission of content the cut carries"
 for _lab, _q in (('the stacking assignment', _q1), ('no switching locus', _q2),
                  ('and the prohibition both ways', _q3)):
     print(f'   {_lab}: present in P07 = {_q in _flat}')
