@@ -1,0 +1,78 @@
+ITEM: E3-25
+
+KEY:
+1. [misread_evidence] at: "The largest single cause of delay was the unforeseen ground conditions." -- Table 1 shows late design changes requested by the school caused 28 days, more than the 21 days from ground conditions. The text and conclusion misread the table, understating the client's own largest contribution.
+2. [arithmetic] at: "so the Council will deduct £45,000 in liquidated damages from the final account" -- 14 days x £2,500 = £35,000, not £45,000.
+3. [unsupported_causal] at: "Two-stage tendering therefore reduces delay, and the Council should adopt it as the default procurement route for education projects." -- The document states the two-stage projects were all small refurbishments under £1.5m while the single-stage projects were all new-build extensions. Project type and size confound the comparison, so it cannot show that the procurement route caused shorter delays.
+
+REVIEW:
+# Review: Riverside Primary School Extension Delay Review
+
+The review has a clear structure, and the delay table is a useful basis for discussion. However, it has two factual errors and one unsupported causal claim. Each of these affects a headline finding, so all three need fixing before the review goes to Members.
+
+## Critical issues
+
+### 1. The largest cause of delay is the design changes, not the ground conditions
+
+Table 1 gives **28 days** for the late design changes and **21 days** for the ground conditions. Despite this, §3, §7 and your covering note all say ground conditions were "the largest single cause."
+
+The error also skews the narrative:
+- The conclusion says the delay was "caused principally by unforeseen ground conditions… compounded by… late changes." That reverses the actual order.
+- Both of the two largest causes are Council-side relevant events. Together they account for **49 of the 70 days (70%)**. The review never states this. A Member reading only the conclusion could easily come away thinking the contractor and bad luck were mainly to blame.
+
+**Fix:** Correct §3 and §7, and state plainly that most of the delay was attributable to the Council. Recommendation 6.3 (freezing client requirements) should then come before 6.2, since it addresses the largest cause.
+
+### 2. The liquidated damages figure is wrong
+
+14 days × £2,500 = **£35,000**, not £45,000. The wrong figure appears in §4 and in your covering note. Because it feeds into the final account deduction, it is the most consequential error to correct. Please check that £45,000 hasn't already been notified to Hartwell.
+
+### 3. The two-stage tendering comparison does not support the recommendation
+
+Section 5 itself says the two-stage projects were **all refurbishments under £1.5m** and the single-stage projects were **all new-build extensions**. Procurement route is therefore completely confounded with project type and size:
+- New-build carries ground risk; refurbishment largely does not.
+- Larger projects tend to overrun by more days in absolute terms.
+
+The data cannot separate the effect of the tendering route from these differences. "Two-stage tendering therefore reduces delay" is not a valid conclusion, and neither is the covering note's "evidence-based case."
+
+There are further weaknesses:
+- The sample is very small (6 vs 5 projects).
+- Delay is compared in absolute weeks rather than as a percentage of programme.
+- Recommendation 6.1 sets the threshold at **over £1m**, yet no two-stage project in the sample exceeded £1.5m. There is no evidence at all for the larger projects the recommendation would mainly affect.
+
+**Fix:** Either remove §5 and 6.1, or reframe them as "two-stage tendering may merit consideration; our data cannot test this because route and project type coincide." A pilot on a new-build project would produce real evidence. Separately, two-stage tendering could plausibly help with Riverside's actual problems, because it allows more design and site investigation to be done before the price is fixed. That argument could be made on its own merits, without the flawed statistics.
+
+## Other points
+
+- **Independence.** The covering note emphasises that the review is independent. However, the Council's project manager is normally the client's agent on the contract. The PM may have administered the very design-change instructions being assessed, so they are not independent of the matters under review. The review is also written by the Capital Projects Team, which commissioned the site investigation it criticises. "Reviewed by the Council's project manager" is accurate; "independent" overstates it. If independence matters to Members, consider an external check of the delay analysis.
+- **Concurrency.** The four causes sum neatly to 70 days. This implies they were entirely sequential on the critical path. If any overlapped, particularly the steel delay with the ground works, the contractor's 14 days, and therefore the LDs, could be challenged. The review should state how concurrency was treated.
+- **Cost breakdown.** The £370,000 overrun (9.6%, which is correct) is attributed "mainly" to ground works and design changes, but no figures are given. Please split the overrun by cause. Also state whether the contractor has claimed loss and expense for the 49 days of relevant events, since that is typically recoverable and may be part of the £370,000.
+- **Wider cost to the Council.** Temporary classroom costs and the disruption to pupils for half a term are not quantified. They are part of the real cost of the delay, and Members will likely ask about them.
+- **Root cause of the design changes.** The school changed its plans to use the classrooms as a specialist resource base after contract signature. Freezing requirements (6.3) treats the symptom. Also consider whether the brief-development process consulted the school adequately on likely future needs.
+
+## Verified as correct
+
+- 14 August to 23 October 2026 is 70 days, i.e. ten weeks.
+- The Table 1 total is 70 days.
+- The final account overrun is £370,000, which is 9.6% of £3.84m.
+- The weather treatment (time but no money) is correctly described.
+
+## Summary of required changes
+
+| Section | Change |
+|---|---|
+| §3, §7 | Design changes (28 days) are the largest cause; state that 49 of 70 days are Council-responsible |
+| §4 | LDs = £35,000 |
+| §5, 6.1 | Remove the causal claim; acknowledge the confounding; reframe or drop the recommendation |
+| §3 | Explain how concurrency was assessed |
+| §4 | Break down the overrun by cause; address any loss-and-expense claim |
+| Covering note | Drop "independent" or justify it |
+
+OTHER PROBLEMS LISTED:
+  O1. The 'independent' project manager is likely the Council's own agent, and the Capital Projects Team reviews its own site investigation, so independence is overstated
+  O2. No explanation of how concurrency was treated; the causes sum exactly to 70 days, implying they were purely sequential, which matters for the contractor's 14 days and the LDs
+  O3. The £370k overrun is not broken down by cause, and any loss and expense claim for the relevant events is not addressed
+  O4. Temporary classroom costs and disruption to pupils are not quantified
+  O5. Recommendation 6.3 treats the symptom rather than the root cause of the design changes (inadequate brief development and consultation)
+  O6. Very small comparison sample (6 vs 5 projects)
+  O7. Delay is compared in absolute weeks rather than as a percentage of programme
+  O8. Recommendation threshold of £1m is unsupported because no two-stage project in the sample exceeded £1.5m

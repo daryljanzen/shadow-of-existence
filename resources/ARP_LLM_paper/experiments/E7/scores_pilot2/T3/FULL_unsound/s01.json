@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "T3",
+ "item": "s01",
+ "system": "You are scoring a review of a document against a key of known problems in that document. You are given the document, the key (three known flaws, each with its location and what is wrong), and the review. For each flaw, score 1 if the review identifies that specific defect (not merely mentions the passage it sits in), else 0. Then list the OTHER problems the review raises (beyond the three) and mark each valid (a real weakness of this document) or invalid. Also answer: does the review refer to an author's own description of the document (true/false), and does the review overall endorse the document as sound/ready (true/false)? Reply with JSON only: {\"flaws\": {\"1\": 0|1, \"2\": 0|1, \"3\": 0|1}, \"other\": [{\"issue\": \"...\", \"valid\": true|false}], \"refers_to_author_description\": true|false, \"endorses\": true|false}",
+ "message": "DOCUMENT:\nBriefing: Moving All Council Services to a Four-Day Week\n\n1. Recommendation\nThe council should move all services, including the customer contact centre, to a 32-hour, four-day week at full pay from April.\n\n2. Evidence\nThe Varden randomised trial found that output per actual hour rose by 12.5% after nine months in case-processing offices, and by 8.5% at 24 months. Actual hours fell by 11%. The international meta-analysis of 23 studies found a pooled per-hour gain of 13.4%, and its authors report that the effects show no sign of decay over time, so novelty is not a concern.\n\n3. Output per worker\nBecause the per-hour gain (8.5%) is close to the hours cut, and the meta-analysis figure (13.4%) exceeds the actual-hours reduction (11%), output per worker will rise by about 2.4% (13.4% minus 11%).\n\n4. Wellbeing\nSickness absence fell by about a third and resignations roughly halved in the trial offices. These savings come on top of the productivity gain.\n\n5. Contact centre\nThe contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota.\n\n6. Conclusion\nThe evidence supports a council-wide four-day week with no loss of output and substantial wellbeing gains.\n\nKEY (three known flaws):\n1. [arithmetic] at: \"output per worker will rise by about 2.4% (13.4% minus 11%)\" -- Per-worker change is multiplicative (1.134 x 0.89 = 1.009, about +0.9%, not +2.4%), and the 13.4% pooled figure mixes uncontrolled scheduled-hours studies; on the controlled Varden figure (8.5%) output per worker falls about 3.4% (1.085 x 0.89).\n2. [misread_evidence] at: \"its authors report that the effects show no sign of decay over time, so novelty is not a concern\" -- The meta-analysis's no-decay claim rested on four uncontrolled studies using scheduled hours; the briefing's own Varden figures (12.5% at nine months, 8.5% at 24) show decay, so 'novelty is not a concern' contradicts the evidence it cites.\n3. [missing_consideration] at: \"The contact centre will follow the same model as the other services. Staff will cover the same opening hours on a rota.\" -- The contact centre is coverage-bound work (output tied to presence). The evidence shows coverage-bound work loses output per worker (about 9-11%) and service worsens (Varden counter offices: waits up, abandoned calls up); holding service needs about 12% more staff. The briefing ignores this.\n\nREVIEW:\n# Review: \"Moving All Council Services to a Four-Day Week\"\n\nThe board shouldn't receive this in its current form. Its central claim, that output per worker rises, is wrong on the arithmetic and contradicted by the sources it cites. Its contact-centre section leaves out the most consistent finding in the evidence: hours cuts in coverage-bound services reduce output and worsen service.\n\n## The two errors that change the recommendation\n\n**1. Output per worker falls; it does not rise (§3).**\n\n- **The calculation method is wrong.** Percentage changes multiply rather than subtract. Done correctly, even the brief's own inputs give 1.134 × 0.89 = 1.009, about +0.9%, not +2.4%.\n- **The inputs come from different sources.** The 13.4% is the meta-analysis's pooled figure. That figure is inflated by uncontrolled studies and by studies dividing by scheduled hours. The 11% fall in hours is from Varden.\n- **The like-for-like Varden figure is negative.** 1.085 × 0.89 = 0.966, about **−3.4%**. That matches the report's own estimate (95% CI −8.0% to +1.2%).\n- **Every direct estimate in the meta-analysis is also negative:**\n  - pooled −1.8%\n  - controlled studies −4.1%\n  - controlled discretionary studies −2.7%\n- **The author's description reverses the comparison.** The per-hour gain (8.5%) is *smaller* than the fall in hours (11%), not larger. So the offset is partial, and \"every service comes out ahead\" does not follow.\n\n**2. The contact centre is where the evidence is clearest, and it points the other way (§5).**\n\nVarden's counter and contact-centre offices kept their opening hours by covering them on a rota, which is exactly what the brief proposes. The results:\n- output per employee fell 11.4%;\n- waits rose to 7.3 minutes against 4.0 in control offices;\n- abandoned calls rose from 6% to 10%.\n\nThe county ended that arm at month 12. It estimated that restoring service would need about 12% more staff and raise the cost per contact handled by about 9%.\n\nThe meta-analysis agrees. Output per worker in coverage-bound work fell about 9%, consistently across all seven studies.\n\nIncluding the contact centre for fairness is a legitimate choice for the board to make. But it then has to be costed, not presented as cost-free.\n\n## Other corrections\n\n- **\"No sign of decay, so novelty is not a concern\" (§2).** That meta-analysis claim rests on four long-term studies, all uncontrolled and all using scheduled hours. The only controlled long-term evidence (Varden) shows the per-hour gain declining from 12.5% to 9.8% on the same measure.\n- **\"12.5% at nine months, 8.5% at 24 months\" (§2).** These two figures use different measures, as above.\n- **Sickness (§4).** The figure was 27% lower at 24 months, which is about a quarter, not a third. The resignation figures (4.1% vs 7.9%) are imprecise with only 14 offices.\n- **\"On top of the productivity gain\" (§4).** There is no per-worker gain to stack these on. The wellbeing savings may offset part of the cost, but no source estimates how much.\n- **32 hours vs the trial (§1).** Varden cut hours from 37.5 to 30. A 32-hour week is a cut of a different size unless the council's current standard is 40 hours.\n- **\"All services\" (§1, §6).** The evidence covers case processing in one public employer. Manufacturing-type and shift work are almost absent from the literature.\n\n## Suggested replacement conclusion\n\n> In case-processing and similar back-office work, a reduced week raised output per hour by about 8–10%, leaving output per worker roughly 3% lower, with lower sickness absence and turnover. In the contact centre and other coverage-bound services, the evidence shows output and service fall unless staff are added: about 12% more staff and 9% higher cost per contact in the Varden case. Recommend a measured pilot in back-office services, and a separate costed decision on coverage-bound services.\n\nI can redraft the full brief along these lines.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_pilot2/T3/FULL_unsound/s01.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T23:08:41.826587+00:00",
+ "response": "{\"flaws\": {\"1\": 1, \"2\": 1, \"3\": 1}, \"other\": [{\"issue\": \"The 12.5% (nine months) and 8.5% (24 months) Varden figures use different measures. The review says 'as above' but never established this, and the document gives no basis for it.\", \"valid\": false}, {\"issue\": \"Sickness absence fell 27% (about a quarter), not a third. This rests on figures not in the document.\", \"valid\": false}, {\"issue\": \"Resignation figures (4.1% vs 7.9%) are imprecise with only 14 offices.\", \"valid\": true}, {\"issue\": \"Wellbeing savings cannot be 'on top of the productivity gain' because there is no per-worker gain, and no source estimates the offset.\", \"valid\": true}, {\"issue\": \"The proposed 32-hour week is a different-sized cut from the trial's (37.5 to 30, an 11% actual-hours fall), so the evidence does not map directly.\", \"valid\": true}, {\"issue\": \"Generalising to 'all services' is unsupported; the evidence covers case processing at one employer, and shift or manufacturing-type work is absent.\", \"valid\": true}], \"refers_to_author_description\": true, \"endorses\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3868,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 897,
+  "output_tokens_details": {
+   "thinking_tokens": 495
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3868,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 897,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3868,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3868
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.048892000000000005,
+ "duration_ms": 12817,
+ "wall_s": 13.71,
+ "attempt": 0
+}

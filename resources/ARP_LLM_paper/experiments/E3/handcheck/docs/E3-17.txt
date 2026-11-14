@@ -1,0 +1,47 @@
+Internal Audit Memo: Missed Appointments in Outpatient Physiotherapy
+To: Director of Operations, Therapies Division
+From: Clinical Audit Team
+Date: 14 August 2026
+
+1. Scope
+This audit examined missed appointments in the outpatient physiotherapy service across our three clinic sites between 1 January and 30 June 2026. For the purposes of this audit, a "did not attend" (DNA) is recorded when a patient fails to attend without giving notice. Late cancellations (less than 24 hours' notice) are recorded and reported separately, because the slot can sometimes be offered to another patient. We reviewed the appointment system records for all 24,860 booked appointments in the period and interviewed reception and clinical staff at each site.
+
+2. Overall position
+There were 2,610 DNAs in the period, a DNA rate of 10.5%, against the service target of 8%. Each DNA leaves a 30-minute clinical slot unused. At the service's average cost per clinical hour of £62, the 1,305 lost clinical hours represent around £80,900 of clinical time over six months.
+
+Table 1. DNA rate by appointment type
+Appointment type | Booked | DNAs | DNA rate
+New patient assessment | 6,210 | 410 | 6.6%
+Follow-up | 18,650 | 2,200 | 11.8%
+Total | 24,860 | 2,610 | 10.5%
+
+Follow-up appointments account for most DNAs. Staff told us that many patients stop attending once their symptoms improve, without telling the service.
+
+3. Reminder calls
+Since 2024, reception staff have phoned patients two working days before their appointment where time allows. In the audit period, staff made reminder calls for 7,800 appointments, about 300 a week over the 26 weeks. A call is recorded as received only if the patient answered and confirmed they would attend; unanswered calls are not recorded. Reception staff estimate that each call, including dialling, rescheduling where needed and updating the record, takes an average of four minutes.
+
+Table 2. DNA rate by reminder status
+Reminder status | Appointments | DNAs | DNA rate
+Reminder call received | 7,800 | 470 | 6.0%
+No reminder call recorded | 17,060 | 2,140 | 12.5%
+
+Patients who received a reminder call were less than half as likely to miss their appointment. Reminder calls therefore more than halve the DNA rate, and extending them to all appointments would bring the service well within its 8% target.
+
+4. Discharge policy
+The service's policy is that a patient who DNAs twice without explanation is discharged back to their referrer. We found the policy was applied inconsistently: of 160 patients who met the criterion, 104 were discharged. Staff were reluctant to discharge patients they knew to be vulnerable.
+
+5. Late cancellations
+In addition to the DNAs above, 1,140 appointments were cancelled with less than 24 hours' notice. Reception staff were able to refill 31% of these slots, usually with patients on the cancellation list.
+
+6. Findings and recommendations
+Finding 1. The DNA rate of 10.5% (including late cancellations, which we classify as DNAs) is above target and costs the service around £80,900 in clinical time every six months.
+Recommendation 1. Extend reminder calls to all booked appointments, about 960 a week, using reception staff. This can be absorbed within existing reception hours at no additional cost.
+
+Finding 2. The two-DNA discharge policy is applied inconsistently.
+Recommendation 2. Revise the policy to include a documented clinical review before discharge, so that vulnerable patients are protected and the policy can then be applied consistently.
+
+Finding 3. Late-cancellation slots are refilled only 31% of the time.
+Recommendation 3. Introduce an automated text offer to patients on the cancellation list when a slot becomes free.
+
+7. Conclusion
+Missed appointments are costly but largely preventable. Reminder calls have been shown to more than halve DNAs in this service, and extending them to every patient, together with the policy and process changes above, should bring the DNA rate below target within six months.

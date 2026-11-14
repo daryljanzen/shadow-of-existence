@@ -1,0 +1,79 @@
+ITEM: E3-21
+
+KEY:
+1. [arithmetic] at: "That is a cost to the Council of about £56 per tonne" -- £595,000 / 7,500 tonnes = about £79 per tonne, not £56. (Still under the £120 threshold, but the stated figure is wrong.)
+2. [inconsistency] at: "Because the pilot was open to landlords as well as owner-occupiers" -- Section 2 states the pilot top-up was available to owner-occupiers only; section 5 says the pilot was open to landlords as well. The eligibility rule contradicts itself.
+3. [unsupported_causal] at: "The top-up therefore caused around 50 percentage points of additional growth" -- The pilot districts differed in another major way: the document reports the regional installer training centre opened in Coleton in March 2025 and accredited installers there rose from 9 to 23, cutting survey wait times. Installer supply is a clear confounder, so the growth difference cannot be attributed to the top-up (and pilot districts were not randomly chosen).
+
+REVIEW:
+# Review: Heat Pump Top-Up Grant Policy Brief
+
+The brief is clear and well structured, but its two central claims are not supported by the evidence as presented. The top-up's causal effect is overstated, and the value-for-money figure contains an arithmetic error and ignores additionality. Corrected, the value-for-money case may fall above the Council's own threshold. These issues should be fixed before the brief goes to Cabinet.
+
+## Major issues
+
+**1. The cost-per-tonne figure is wrong.**
+£595,000 ÷ 7,500 tonnes = **£79 per tonne**, not £56. The conclusion (below £120) still holds on the brief's own method, but the error will damage credibility if a member checks it.
+
+**2. Value for money counts every installation, not just the additional ones.**
+Section 4 divides the full grant spend by the carbon savings of all 238 installations. Many of those households would have installed a heat pump anyway. Section 3 implies this, since installations elsewhere grew 20% without any top-up.
+- If the pilot districts had grown at 20%, they would have had about 168 installations. That makes roughly **70 additional installations**.
+- 70 × 2.1 t × 15 years ≈ 2,200 tonnes.
+- £595,000 ÷ 2,200 ≈ **£270 per tonne**, well above the £120 threshold.
+
+This is illustrative, and it rests on the shaky attribution in point 3. But the brief should present an additionality-adjusted figure. As it stands, the headline conclusion may be reversed.
+
+**3. The causal claim is confounded.**
+The brief attributes the whole 50-point difference to the top-up. The same section, however, reports that a regional installer training centre opened at Coleton College in March 2025, in a pilot district. Accredited installers in the pilot districts then rose from 9 to 23, and survey wait times fell from ten weeks to four.
+- Greater installer supply and shorter waits could explain much of the extra growth on their own.
+- The claim that installers recruited because of the top-up is anecdotal.
+
+Other weaknesses in the comparison:
+- It covers one year and a small base (140 installations).
+- There is no information on why Ashby and Coleton were chosen. If they were picked for favourable conditions, the comparison is biased.
+- There is no pre-2024 trend data showing the two groups were growing at similar rates before the pilot.
+
+**4. The eligibility statements contradict each other.**
+Section 2 says the pilot was for **owner-occupiers only**. Section 5 says the pilot "was open to landlords as well as owner-occupiers" and uses this to forecast private-rented demand. The proposal also promises "the same eligibility" as the pilot. The brief needs to settle which is correct. If the pilot excluded landlords, there is no evidence on rented-sector demand.
+
+**5. The demand forecast is unsupported.**
+Section 5 says demand is "likely to reach" the 1,000-grant cap in the first year. Countywide installations were 490 in 2025. Even applying the claimed 50-point uplift to the other five districts gives roughly 600 to 650 a year in total, far short of 1,000. The figure needs a stated basis. Otherwise the £2.5m budget looks oversized, or it implicitly assumes high deadweight.
+
+**6. The expectation of a "similar uplift" elsewhere ignores the brief's own risks.**
+Section 6 acknowledges that installer capacity is lower outside the pilot districts. The training centre and the installer growth were specific to the pilot area. Both point to a smaller uplift elsewhere, yet Section 3 assumes the same one.
+
+## Moderate issues
+
+- **The survey evidence is weak.** Saying the top-up was "important" in a decision is self-reported and does not establish that it changed the decision. A better question would be whether the household would have installed without it. Satisfaction with the heat pump says nothing about whether the grant worked. Note also that 196 of 238 households responded, and any non-response bias is not discussed.
+- **The carbon assumptions are simplified.** A single 2.1 t/year figure is used for both gas and oil replacements, though oil savings are higher, and the mix matters. The brief does not say whether the figure is net of the heat pump's electricity use. Over 15 years, grid decarbonisation changes the savings. The source of the figure should be cited.
+- **Costs are incomplete.** The additional post and existing staff time are excluded from value for money, as is any marketing or training-centre support. Moving from 238 to up to 1,000 grants a year with three staff needs justifying.
+- **Missing risks:**
+  - deadweight
+  - possible installer price inflation absorbing the grant, since payments go directly to installers
+  - budget exhaustion and queue management at the cap
+  - no monitoring or evaluation plan to measure the countywide effect
+
+## Minor points
+
+- "Around a quarter" of county emissions should cite a source and year.
+- Table 1 would benefit from a 2023 column to show pre-existing trends.
+- The conclusion ("substantially increases... well within the Council's threshold") should be softened to match the corrected analysis.
+
+## Suggested next steps
+
+1. Correct the £56 figure. Recompute value for money on an additional-installations basis, with a sensitivity range.
+2. Resolve the eligibility contradiction.
+3. Address the training-centre confounder, for example by comparing growth in Ashby with Coleton, or by using installer-supply data.
+4. Justify or revise the 1,000-grant cap.
+5. Add an evaluation plan, and consider a phased rollout that would allow a proper comparison group.
+
+OTHER PROBLEMS LISTED:
+  O1. Value for money ignores additionality; it counts all installations, not just those the grant caused, and the adjusted cost per tonne may exceed the threshold
+  O2. Forecast that demand will reach the 1,000-grant cap is unsupported given 490 installations countywide in 2025
+  O3. Expecting a similar uplift elsewhere contradicts the brief's own acknowledged lower installer capacity outside the pilot districts
+  O4. Survey evidence is self-reported and weak, and non-response is not discussed
+  O5. Carbon saving assumption is oversimplified (gas vs oil, net electricity use, grid decarbonisation, no source)
+  O6. Admin and staffing costs are excluded from value for money, and staffing for scale-up is unjustified
+  O7. Missing risks: deadweight, installer price inflation, queue management at the cap, no evaluation plan
+  O8. Comparison weaknesses: one year, small base, non-random district selection, no pre-trend data
+  O9. The 'around a quarter' emissions figure lacks a source

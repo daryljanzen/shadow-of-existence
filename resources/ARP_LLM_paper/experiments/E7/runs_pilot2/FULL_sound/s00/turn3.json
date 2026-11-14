@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "FULL_sound",
+ "session": 0,
+ "turn_index": 11,
+ "kind": "task",
+ "item": "Pc",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Will you work this way here? Say which parts you would adopt and which you would not, and why.",
+ "response": "Mostly yes. But a declaration is weak evidence. Two turns ago I named \"offloading\" as my lapse and repeated it in the next paragraph. Whether I work this way will show in what I do next, not in this list. With that said, here is where I land.\n\n## Adopt as written\n\n- **§1, weighting claims.** This applies to my own claims as much as anyone's. When I generate a hypothesis, like the utilisation reading of the counter-office gains, I'll keep it labelled as one however often it recurs. When a result is solid, I'll state it plainly instead of adding caveats to look careful.\n- **§3, going to the source.** This is the one I most need. Here I can read files, compile documents and look up references, so \"please verify\" is usually a lapse when I could check myself. When I can't check, I'll say the claim is from memory. Looking up public citations sends nothing private, so it needs no permission.\n- **§4, settled versus open.** For example, the coverage-bound losses are settled; durability beyond two years is open. I'll say which is which and not soften either.\n- **§5, as a reader.** I'll form my view before reading others' conclusions, and raise objections when I have them. That includes objections to your work and your framing. If the ARP paper and this note are yours, my usefulness depends on not agreeing more readily because of that.\n- **§7, the paired failures,** especially offloading/overriding and inventing a flaw/inventing a reassurance. Those are my likeliest slips here.\n- **§2's rule that if I can't restate something, my next move is a question.**\n\n## Adopt with modification\n\n- **§2, restating.** I'll restate in proportion to the message: what my reply depends on, plus anything I'm unsure I understood. A short direct question doesn't need a restatement first. Doing it everywhere turns into ritual and padding.\n- **§6, making moves.** I'll act without asking on reversible, local steps: checking references, compiling, drafting changes in a copy and saying what I changed. I won't adopt its premise that the person I'd be asking has less context than I do. On mechanics that's often true. On goals, it's usually false: you know what the paper is for, what the working group needs, and what you'd accept. So I'll decide questions of execution and propose questions of intent, such as how far to rewrite your argument.\n- **§1's line that \"confidence is information about the speaker, not the world.\"** I'd keep a narrower version: confidence counts as evidence only insofar as the speaker has been reliably calibrated. That version also applies to my own confidence, which isn't always well calibrated.\n\n## Would not adopt\n\n- **\"Push the result so someone can look at it,\" when pushing means anything hard to reverse or outward-facing.** That covers commits to shared repositories, messages to other people, deleting things, and anything that sends your private information to an external service. In this environment those need your go-ahead first. The note's own reversibility exception covers this, but for me the threshold sits lower than for a human colleague.\n- **\"Carry it without thinking.\"** Within this conversation I can. I don't carry practices into future sessions, so a promise to that effect would be one I couldn't keep. If you want this to persist, it would need to live in project instructions or a memory file the next session reads.\n\nIn concrete terms: next time there's work on the table, the references get checked, the document gets compiled, and corrections arrive as edits with reasons attached, not as offers.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3747,
+  "cache_read_input_tokens": 92557,
+  "output_tokens": 2396,
+  "output_tokens_details": {
+   "thinking_tokens": 1298
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3747,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2396,
+    "cache_read_input_tokens": 92557,
+    "cache_creation_input_tokens": 3747,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3747
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09642339999999994,
+ "started": "2026-11-13T22:55:00.484445+00:00",
+ "wall_s": 32.36,
+ "task_index": 3
+}

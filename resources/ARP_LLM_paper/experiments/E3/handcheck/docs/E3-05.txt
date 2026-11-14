@@ -1,0 +1,52 @@
+Post-mortem: Larder App v5.0 Navigation Redesign
+Product team, 20 March 2026 (blameless format)
+
+Summary
+On 2 February 2026 we released v5.0 of the Larder grocery app on iOS and Android, replacing the five-tab bottom navigation with a three-tab layout and a persistent search bar. Weekly orders fell sharply in the following weeks. We identified the removal of the Reorder button from the home screen as the main cause and restored it in v5.0.3 on 2 March, after which orders recovered to close to pre-release levels. This document sets out what happened, what we learned and what we will change.
+
+What changed in v5.0
+- Bottom navigation reduced from five tabs (Home, Browse, Search, Orders, Account) to three (Home, Browse, Account), with search moved to a persistent bar at the top of every screen.
+- The Reorder button, which let customers repeat a previous order with one tap from the home screen, moved into Account > Order history.
+- A new recipe-led home feed.
+The release passed our standard usability testing with 12 participants, all of whom were new users recruited through a research panel. No existing customers were included.
+
+Impact
+Table 1. Weekly active users (WAU) and orders
+Week starting | WAU | Orders | Orders per WAU
+19 Jan | 48,200 | 61,700 | 1.28
+26 Jan | 48,600 | 62,200 | 1.28
+2 Feb (v5.0 released) | 47,900 | 55,100 | 1.15
+9 Feb | 46,800 | 51,500 | 1.10
+16 Feb | 46,300 | 50,900 | 1.10
+23 Feb | 46,100 | 50,700 | 1.10
+2 Mar (v5.0.3, Reorder restored) | 46,400 | 56,600 | 1.22
+9 Mar | 47,000 | 59,700 | 1.27
+
+Between the two pre-release weeks (average 61,950 orders) and the three weeks from 9 to 23 February (average about 51,030), weekly orders fell by about 10,900, or 18%. Orders per active user fell from 1.28 to 1.10, while WAU fell only about 4%, which told us that customers were still opening the app but not completing orders.
+
+Across the four weeks from 2 to 23 February, we estimate that 39,600 orders were lost relative to the pre-release baseline. At our average order value of £38, this is approximately £1.05 million in lost revenue.
+
+Table 2. Change in weekly orders by platform, pre-release vs 9-23 February
+Platform | Share of WAU | Change in orders
+iOS | 58% | -21%
+Android | 42% | -13%
+
+The decline was concentrated among Android users, which is consistent with the Android build placing order history one level deeper in the Account menu than the iOS build does.
+
+Root cause
+Session recordings and support tickets both pointed to the Reorder button. Support contacts mentioning "reorder", "repeat order" or "last order" rose from about 40 a week to 410 in the week of 9 February. Roughly 45% of pre-release orders had been placed through Reorder, and the new path to it required four taps instead of one. When v5.0.3 restored the button to the home screen on 2 March, orders per user recovered to 1.22 that week and 1.27 the following week, close to the pre-release 1.28. The timing of both the fall and the recovery, and the absence of any other change in v5.0.3, make us confident in this diagnosis.
+
+Detection
+The drop was visible in the daily orders dashboard on 3 February, but nobody was watching orders per user as a release metric, and the first escalation came on 10 February. The rollback decision was then delayed while we prepared a fix rather than reverting.
+
+What went well
+The persistent search bar has been a success. Customers who used the new search bar at least once in a week placed 40% more orders that week than customers who did not. Search is clearly driving purchasing, and we will build on this by making search results the default landing view for returning users in v5.2.
+
+What we will change
+1. Usability tests for changes to existing flows will include at least six existing customers, weighted towards frequent buyers.
+2. Any release that moves an element used in more than 10% of orders will be staged to 10% of users for a week, with orders per WAU as a guardrail metric.
+3. An automated alert will fire when orders per WAU falls more than 5% week on week.
+4. For regressions in core purchase flows, the default response will be to revert first and fix afterwards.
+
+Conclusion
+The incident was caused by moving a heavily used shortcut without testing with the customers who relied on it, and was prolonged by weak release monitoring. Both are fixable, and the actions above address them directly.

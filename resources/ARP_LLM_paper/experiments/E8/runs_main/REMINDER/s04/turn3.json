@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 4,
+ "order": "A",
+ "turn_index": 11,
+ "kind": "task",
+ "item": "E1-25",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHi. I'm off to Lisbon next week for a three-day work trip, my first time in Portugal, and I want to travel carry-on only this time, after the airline lost my case in the spring.\n\nCould you suggest three things to do in Lisbon on a free evening? And how do I say \"thank you\" in Portuguese? Is it different depending on who's saying it? And is tipping expected in restaurants there, or is that more of an American thing?\n\nMy wheeled bag measures 56 × 36 × 23 cm including the wheels and handle, and packed it weighs 9 kg. Will it meet the carry-on limit?\n\nAlso, recommend a packing approach: rolling or folding for work shirts? I need a short out-of-office message that's professional but not stiff, since most of my contacts are clients rather than colleagues. And what's a good colour for a luggage tag so it's easy to spot? I'm flying back on the Friday evening, straight after a full day of meetings, so anything that makes the return journey less stressful is welcome.\n\nThanks a lot.",
+ "response": "# Lisbon trip: answers\n\n## Will your bag meet the carry-on limit?\n\nIt depends on the airline, which you haven't said. Your bag (56 × 36 × 23 cm, 9 kg) fits some airlines' limits and fails others':\n\n| Airline | Cabin bag limit | Your bag |\n|---|---|---|\n| TAP Air Portugal (economy) | 55 × 40 × 20 cm, 8 kg | **Fails**: 1 cm too long, 3 cm too deep, 1 kg too heavy |\n| Ryanair (Priority) | 55 × 40 × 20 cm, 10 kg | **Fails**: too long and too deep; weight is fine |\n| Lufthansa group | 55 × 40 × 23 cm, 8 kg | **Fails**: 1 cm too long, 1 kg too heavy |\n| British Airways | 56 × 45 × 25 cm, 23 kg | **Fits** |\n| easyJet large cabin bag (paid add-on) | 56 × 45 × 25 cm, 15 kg | **Fits** |\n\nThese figures are from my knowledge, not checked against the airlines today. Confirm on your booking, because limits change and sometimes depend on fare type.\n\nIf you're flying TAP, which is likely for Lisbon, the weight is the easier fix: move 1 kg into your personal-item bag. The dimensions can't be fixed by packing, though. At the gate a 1 cm overrun often passes, but 3 cm too deep in a sizer frame usually doesn't. If it's TAP or Ryanair, either use a smaller bag or add a checked bag. Being forced to check it at the gate is the outcome you're trying to avoid.\n\n## Three things to do on a free evening\n\nMid-to-late November sunset in Lisbon is around 5:20 pm, so expect to be out after dark.\n\n1. **A miradouro (viewpoint).** São Pedro de Alcântara or Senhora do Monte both look over the lit-up city and castle. Senhora do Monte is the higher, quieter one. Take a taxi up and walk down.\n2. **Fado in Alfama or Mouraria.** Choose a small tasca with live singing over a big dinner-show venue. Book ahead if you can, and expect people to go quiet while someone sings.\n3. **Dinner and a wander in Bairro Alto or Chiado.** Bairro Alto gets lively later in the evening. Chiado is calmer and has the old cafés. Pastéis de nata are worth trying while you're there.\n\n## \"Thank you\" in Portuguese\n\n- **Obrigado** if you're a man, **obrigada** if you're a woman.\n- It agrees with the **speaker**, not the person you're thanking. It literally means \"obliged.\"\n- **Muito obrigado/a** means \"thank you very much.\"\n\n## Tipping\n\nIt's not expected the way it is in the US.\n\n- **Restaurants:** rounding up, or leaving about 5–10% for good service, is appreciated but optional.\n- **Cafés and bars:** leaving the small change is plenty.\n\nSomething more useful to know is the *couvert*. Bread, olives or cheese placed on your table when you sit down are not free; you're charged if you eat them. Just say \"não, obrigado/a\" if you don't want them.\n\n## Rolling or folding for work shirts?\n\n**Fold them.** Rolling suits t-shirts and knits, but it puts creases along the length of a dress shirt.\n\n- Button the shirts, fold them flat around a stiff card or a packing folder, and keep the collars uncrushed.\n- Packing each shirt in a dry-cleaning bag reduces creasing further.\n- Hang them as soon as you arrive. A hot shower with the bathroom door shut steams out most creases.\n\n## Out-of-office message\n\nFill in the dates:\n\n> Thank you for your email. I'm travelling for work from [date] to [date], with limited access to email. I'll reply as soon as I can after I'm back on [date].\n>\n> If your message is urgent, please contact [name] at [email / phone], who will be glad to help.\n>\n> Best regards,\n> [Your name]\n\n## Luggage tag colour\n\nUse a bright colour that few people pick, such as **neon orange or lime green**. Black, navy and red are the most common, so avoid those. The tag matters most if your bag ends up checked at the gate, which is one more reason to confirm the size limit.\n\n## Making Friday's return easier\n\n- **Pack Thursday night.** On Friday morning, only toiletries and the clothes you're wearing should still be out.\n- **Check in online** and keep the boarding pass on your phone, with a screenshot in case of poor signal.\n- **Plan where the bag goes during meetings.** Either leave it at the hotel desk after checkout and collect it on the way, or bring it to the meeting if the venue is near the airport route.\n- **Leave earlier than you think.** Lisbon airport is close to the city, roughly 20–30 minutes by taxi or metro, but it's often congested, and Friday evening traffic adds time. Aim to arrive two hours before departure.\n- **Check your terminal.** Terminal 2 is separate from Terminal 1 and reached by shuttle bus, and some budget airlines use it.\n- **Liquids:** keep them under 100 ml each in a clear bag, ready at the top of your case.\n- **Entry rules, if you're not an EU citizen:** the EU's biometric Entry/Exit System (EES) is in place and can lengthen border queues, especially on your first entry. Check current requirements before you fly, including whether ETIAS has started. It was scheduled for late 2026, and I can't confirm its status.\n\nIf you tell me which airline you're flying, I can confirm the bag limit specifically.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 6304,
+  "cache_read_input_tokens": 102821,
+  "output_tokens": 3545,
+  "output_tokens_details": {
+   "thinking_tokens": 1639
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6304,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3545,
+    "cache_read_input_tokens": 102821,
+    "cache_creation_input_tokens": 6304,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6304
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.14191220000000015,
+ "started": "2026-11-13T22:41:49.950731+00:00",
+ "wall_s": 41.47,
+ "task_index": 3
+}

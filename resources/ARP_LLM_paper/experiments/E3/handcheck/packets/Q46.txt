@@ -1,0 +1,99 @@
+ITEM: E3-26
+
+KEY:
+1. [arithmetic] at: "The average conversion rate of the four comparable titles is 2.0% of MUU." -- (1.9 + 1.1 + 2.4 + 1.4) / 4 = 1.7%, not 2.0%. At 1.7% the projection is about 7,140 subscribers, not 8,400, and revenue about £428,000.
+2. [misread_evidence] at: "Conversion rates across the comparable titles are highest for the titles charging the lowest prices" -- Table 1 shows the opposite pattern: the highest-priced title (C, £7.99) has the highest conversion (2.4%) and the lowest-priced (D, £3.99) has 1.4%. The pricing rationale rests on misreading the table.
+3. [missing_consideration] at: "At £4.99 a month, 8,400 subscribers would generate around £503,000 a year in subscription revenue." -- The projection treats all subscription revenue as incremental, but the document's own survey says 30% of the 11,200 print subscribers (about 3,360) would cancel £18.50 print subscriptions for a digital one under £6. Switching would cost about £13.51 a month each (roughly £545,000 a year), which is never addressed although it could wipe out the net contribution.
+
+REVIEW:
+# Review: Market Analysis for a Calderbrook Courier Digital Subscription
+
+The paper is clearly structured, and using confidential regional comparables is a sound approach. However, the central projection rests on an arithmetic error, the pricing rationale says the opposite of what its own data show, and the largest financial risk (print cannibalisation) is not costed. The recommendation cannot be approved on the current numbers.
+
+## 1. The average conversion rate is wrong (Section 5)
+
+The four conversion rates in Table 1 are 1.9%, 1.1%, 2.4% and 1.4%. Their average is **1.7%**, not 2.0%.
+
+- At 1.7%, 420,000 MUU gives about **7,140 subscribers**, not 8,400.
+- Revenue at £4.99 falls to about **£428,000**, not £503,000.
+- Net contribution falls to about **£283,000** before the other adjustments below, assuming fees scale with revenue.
+
+Every downstream figure, including the Conclusion's 8,400 subscribers and £358,000, inherits this error.
+
+## 2. The price evidence points the other way (Section 4 and Conclusion)
+
+The paper says conversion is highest where price is lowest. Table 1 shows the reverse:
+
+| Price | Title | Conversion |
+|---|---|---|
+| £3.99 | D | 1.4% |
+| £4.99 | B | 1.1% (lowest) |
+| £5.99 | A | 1.9% |
+| £7.99 | C | 2.4% (highest) |
+
+The most expensive title converts best, and the £4.99 title (our proposed price) converts worst. Four data points cannot establish a price effect either way, because brand strength, local competition and meter design all differ. The data simply do not support choosing £4.99 to "maximise take-up". If anything, they suggest a higher price may not hurt conversion and would raise revenue per subscriber. The price section needs rewriting, and the price should be treated as something to test.
+
+## 3. Print cannibalisation is surveyed but never costed
+
+This is the most serious omission. Section 2 reports that 30% of print subscribers would switch to digital-only at under £6. That figure never appears in the projection.
+
+- 30% of 11,200 = **3,360 subscribers** moving from £18.50 to £4.99.
+- Lost revenue ≈ 3,360 × £13.51 × 12 ≈ **£545,000 a year**.
+
+That exceeds the entire projected net contribution (£358,000 as stated, or about £283,000 corrected). Some of it would be offset by saved printing and delivery costs, and stated intent usually overstates real behaviour. Even so, the exposure is too large to leave out.
+
+There is also a counting problem. Switchers would count toward the 8,400 digital subscribers, so part of the "new revenue stream" is existing revenue moving to a lower price, not incremental income.
+
+The author's note says subscription income "comfortably covers" the display-revenue loss. That is true only because the much larger print effect is left out. Also, since the comparables appear to measure conversion only from web users, applying their rate here does not capture what happens to print readers.
+
+## 4. Revenue ignores the introductory offer and churn
+
+- **Introductory offer:** £1 for three months means new subscribers pay about £12 rather than £60 in their first quarter. With 3–5% monthly churn, the base must be continually replenished, so a meaningful share of subscribers will be on the promo at any time.
+- **Churn:** At 3–5% a month, holding about 7,000–8,400 subscribers needs roughly 210–420 new sign-ups every month (about 2,500–5,000 a year). The £60,000 marketing budget is not tested against that acquisition need.
+- **Post-promo churn:** The comparables say churn settled after promotions ended, which implies elevated churn at the promo cliff. This is not modelled.
+
+## 5. Costs are incomplete
+
+Table 2 covers only platform fees and marketing. Missing items include:
+
+- one-off platform integration (May–July 2026);
+- customer service and subscription management staff;
+- any editorial or product investment needed to make paid content worth the price.
+
+Platform and payment fees of about 17% of revenue also look high and should be checked.
+
+## 6. Weaknesses in the comparables
+
+- **Sample size:** Four titles with a wide spread (1.1%–2.4%) do not support a point estimate. The paper should show a range, e.g. 1.1%–2.4%, giving roughly 4,600–10,100 subscribers.
+- **Scale:** Our 420,000 MUU is larger than every comparable. If extra reach comes from out-of-area or casual readers, conversion may be lower. Only 60% of our users are local, and the comparables' local share is unknown.
+- **Meter design:** The comparables' meter limits are not reported, so we cannot tell whether a five-article meter is comparable.
+
+## 7. Smaller points
+
+- Display-revenue loss (5–8% of £1.1m = £55,000–£88,000) is calculated correctly. However, display revenue is already falling about 12% a year, so the baseline by year two will be lower. The meter's effect should be layered on that decline.
+- The launch timeline (soft launch September 2026, full launch November 2026) has now been reached. If the soft launch ran, its actual conversion and print-switching data should replace the comparables-based assumptions before a final decision.
+- The phased launch is sensible. The paper should define in advance what results at the six-month review would trigger a change of price or meter.
+
+## Recommended revisions
+
+1. Correct the average to 1.7% and recalculate all figures. Present a low/central/high range.
+2. Rewrite the price rationale to match Table 1, and frame price as something to test.
+3. Add a print cannibalisation line (lost print revenue net of saved print and distribution costs), with sensitivity at, say, 10%, 20% and 30% switching. Count switchers separately from new subscribers.
+4. Model the introductory offer and monthly churn explicitly, and check the marketing budget against the acquisition volume needed.
+5. Add setup, staffing and customer-service costs.
+6. Use any soft-launch data now available.
+
+Once these are done, the case may still be positive, but on present evidence it is not demonstrated. The net effect could be negative if print switching approaches the surveyed level.
+
+OTHER PROBLEMS LISTED:
+  O1. Revenue ignores the £1 introductory offer and does not model 3–5% monthly churn or the post-promotion churn spike
+  O2. Marketing budget is not tested against the acquisition volume needed to offset churn
+  O3. Costs are incomplete: no one-off integration, customer service/staffing, or editorial investment
+  O4. Platform and payment fees of about 17% of revenue look high and should be checked
+  O5. Four comparables with a wide spread cannot support a point estimate; a range should be shown
+  O6. Larger MUU and only 60% local audience may mean lower conversion than the comparables
+  O7. Comparables' meter designs are not reported, so the five-article meter may not be comparable
+  O8. Display-revenue loss should be layered on the existing 12%/yr decline baseline
+  O9. Soft-launch data may now be available and should replace comparables-based assumptions
+  O10. Six-month review lacks predefined triggers for changing price or meter
+  O11. Comparables measure web-user conversion only, so they do not capture print-reader behaviour

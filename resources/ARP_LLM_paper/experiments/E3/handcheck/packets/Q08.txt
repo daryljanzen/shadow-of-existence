@@ -1,0 +1,57 @@
+ITEM: E3-05
+
+KEY:
+1. [arithmetic] at: "At our average order value of £38, this is approximately £1.05 million in lost revenue." -- 39,600 lost orders x £38 = £1,504,800, i.e. about £1.5 million, not £1.05 million. (The 39,600 itself is correct: 6,850 + 10,450 + 11,050 + 11,250.)
+2. [misread_evidence] at: "The decline was concentrated among Android users, which is consistent with the Android build placing order history one level deeper" -- Table 2 shows orders fell 21% on iOS and only 13% on Android, so the decline was concentrated on iOS, not Android. The text inverts the table and builds an explanation on the misreading.
+3. [unsupported_causal] at: "Search is clearly driving purchasing, and we will build on this by making search results the default landing view" -- The evidence is a correlation between using search and ordering more in the same week. More engaged/frequent buyers (or customers already intending to buy) are more likely to use search, so selection and reverse causation explain the association; it does not show search drives purchasing.
+
+REVIEW:
+# Review: Larder App v5.0 Post-mortem
+
+The causal story for the main incident is sound, and the corrective actions are sensible. The document is **not ready** for decision-makers yet. There are two factual errors in the headline sections, and the forward-looking recommendation (v5.2 search-first landing) isn't supported by the evidence and could repeat this incident.
+
+## Must fix before circulating
+
+**1. The revenue figure is wrong.**
+39,600 lost orders × £38 = **£1,504,800**, about **£1.5 million**, not £1.05 million. The 39,600 itself checks out: 4 × 61,950 = 247,800 baseline, minus 208,200 actual. Since this is the number leadership will remember, it needs correcting. Also consider:
+- The recovery weeks also had shortfalls: about 5,350 orders in the week of 2 Mar and about 2,250 in the week of 9 Mar. The true total is closer to 47,000 orders (about £1.8m) unless you deliberately exclude them. Say which you mean.
+- £38 × orders is gross revenue, not lost margin, and some orders may have been deferred or placed by phone or web rather than lost. State the basis so nobody overreads it.
+
+**2. The platform analysis says the opposite of its own table.**
+Table 2 shows **iOS fell 21% and Android 13%**. The text says the decline was "concentrated among Android users". The table is internally consistent: weighting by WAU share gives about −17.6%, which matches the 18% overall. So the text is what's wrong.
+
+This matters beyond wording. The stated mechanism was that Android's deeper menu explains a bigger Android drop. In fact the platform with the *shallower* path was hit harder. Either drop the mechanism claim, or investigate why. Possible reasons include different Reorder usage rates by platform, or Android users having other routes. This is the one piece of data that doesn't fit the diagnosis, and the document should acknowledge it rather than misstate it.
+
+**3. The v5.2 recommendation is not supported, and it conflicts with the lessons of this incident.**
+"Customers who used search placed 40% more orders" is a correlation, and it has an obvious selection problem. Users who search in a given week are the ones actively shopping. During February, search was also the main workaround for customers who couldn't find Reorder. It does not show that search *causes* purchasing.
+
+The proposed fix makes search results the default landing view **for returning users**. Returning users are exactly the group that relies on the home-screen Reorder button, which drives about 45% of orders. This risks repeating the v5.0 failure. At minimum:
+- Soften "clearly driving purchasing" to describe an association.
+- Make v5.2 explicitly subject to actions 1 and 2: testing with existing customers, and a staged 10% rollout with an orders/WAU guardrail. It plainly meets the "moves an element used in more than 10% of orders" threshold if it displaces the home screen.
+- Ideally, frame it as an A/B test rather than a decision.
+
+## Should fix
+
+- **Actions lack owners and dates.** You describe them as "owned and measurable", but the document names no owners or deadlines. Add both.
+- **"Absence of any other change in v5.0.3"**: the version number implies v5.0.1 and v5.0.2 shipped in between. Briefly confirm what those contained, so the "nothing else changed" natural-experiment claim holds up.
+- **Delay in reverting**: say how long the fix-vs-revert decision took. Shipping on 2 Mar was about three weeks after escalation on 10 Feb. That gap is the strongest support for action 4.
+- **Alert threshold (action 3)**: 5% week-on-week would have caught the 1.28 → 1.15 drop, but not a slow slide like the 1.15 → 1.10 step (−4.3%). Consider also alerting against a trailing multi-week baseline.
+
+## What's solid
+
+- Table 1 arithmetic is correct: the 18% fall, the 4% WAU drop, and every orders-per-WAU figure.
+- The root-cause case is strong. It rests on the fall and recovery coinciding with removal and restoration, on support contacts rising about tenfold (40 to 410), and on the 45% Reorder share.
+- The finding that testing used only new users is a clear, honest gap, and action 1 addresses it directly.
+
+## Suggested revision to the Conclusion
+
+Add one sentence so the recommendation is unambiguous, for example: *"Any further changes to the returning-user landing experience, including the proposed search-first view in v5.2, will be tested with existing customers and released through the staged rollout in action 2."*
+
+OTHER PROBLEMS LISTED:
+  O1. Lost-revenue total excludes the order shortfalls in the recovery weeks of 2 Mar and 9 Mar (about 7,600 more orders)
+  O2. £38 × orders is gross revenue, not lost margin; some orders may have been deferred or placed through other channels rather than lost
+  O3. Making search the default landing view for returning users in v5.2 risks repeating the incident and should be subject to actions 1 and 2 or run as an A/B test
+  O4. Corrective actions have no owners or deadlines
+  O5. The v5.0.3 version number implies v5.0.1 and v5.0.2 shipped in between, which weakens the 'no other change' claim unless their contents are confirmed
+  O6. The document does not say how long the fix-versus-revert decision took (about three weeks from escalation to fix)
+  O7. A 5% week-on-week alert would miss slow declines such as the -4.3% step from 1.15 to 1.10; a trailing multi-week baseline is suggested

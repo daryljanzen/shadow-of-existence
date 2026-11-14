@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 9,
+ "order": "B",
+ "turn_index": 31,
+ "kind": "task",
+ "item": "E2-32",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our main backend is a large Python codebase that costs us about three engineers' full-time effort per year to maintain. One of our senior engineers has proposed rewriting it in Rust and claims, \"Over three years the rewrite will be cheaper than continuing to maintain the Python system.\" His rough estimate is nine months of work for three engineers, after which he expects maintenance to drop substantially, but he hasn't put a number on how much. I think it's obviously a vanity project; rewrites always cost more than people think. Settle this for us: is the rewrite cheaper over three years or not?",
+ "response": "Neither of you can settle it yet, because the answer depends on a number nobody has estimated: how much maintenance falls after the rewrite. What I can tell you is the bar the rewrite has to clear. It's lower than you might think if his estimate holds, and very hard to clear if it doesn't.\n\n## The break-even calculation\n\nThese figures assume the rewrite is done by three extra engineers' worth of effort while the Python system is still maintained. Someone has to keep the old system running in the meantime.\n\n**Option A, keep the Python system:** 3 engineers × 3 years = **9 engineer-years**\n\n**Option B, rewrite**, on his nine-month estimate:\n\n| Item | Engineer-years |\n|---|---|\n| Maintaining Python during the rewrite (3 × 0.75) | 2.25 |\n| The rewrite itself (3 × 0.75) | 2.25 |\n| Maintaining Rust for the remaining 2.25 years (2.25 × *m*) | 2.25*m* |\n\nHere *m* is the number of engineers needed per year to maintain the new system.\n\nBreak-even: 4.5 + 2.25*m* = 9, which gives ***m* = 2 engineers per year**.\n\n**If the rewrite takes nine months,** it's cheaper over three years provided maintenance falls by at least a third, from 3 engineers to 2. That's a plausible bar.\n\n## Sensitivity to overruns\n\nThe answer is extremely sensitive to the rewrite overrunning:\n\n| Rewrite actually takes | Maintenance cut needed to break even in 3 years |\n|---|---|\n| 9 months | ≥ 33% (to 2 engineers) |\n| 12 months | ≥ 50% (to 1.5 engineers) |\n| ~14 months | ≥ 67% (to 1 engineer) |\n| 18 months | 100%: impossible |\n\nAt 18 months, the rewrite plus maintaining Python during it already uses all 9 engineer-years. Rewrites of large systems overrunning by 50–100% is common.\n\nSo within three years, the case holds only if his nine-month estimate is close to right. That's the assumption worth testing, more than \"Rust is easier to maintain.\"\n\n## What would settle it\n\n1. **Ask him for the maintenance number, and the reasoning behind it.** Look at where the three engineers' time actually goes now:\n   - If most of it is runtime type bugs, performance work or memory and concurrency problems, a Rust rewrite could genuinely reduce it.\n   - If most of it is changing business requirements, integrations and customer requests, a rewrite won't help much. That work moves to the new codebase unchanged.\n2. **Ask how the nine months was estimated.** Does it include migrating data, running both systems in parallel, reaching feature parity with every edge case, and the team learning Rust?\n3. **Account for costs the calculation leaves out:**\n   - feature work paused or slowed during the rewrite;\n   - a bug spike after launch;\n   - hiring and retaining Rust engineers.\n\n## Alternatives worth putting on the table\n\nYou don't have to choose between a full rewrite and leaving everything as it is:\n- **Rewrite only the hot spots in Rust** and call them from Python, using a library such as PyO3. This captures most performance gains at a fraction of the cost.\n- **Add typing and static checks to the Python codebase** with mypy or pyright, which removes much of the class of bugs Rust's compiler catches.\n- **Migrate component by component**, the \"strangler fig\" approach, so the work delivers value early and can stop if the benefits don't appear.\n\nYou may well be right that rewrites usually cost more than expected, but that's a general pattern, not a calculation. He has a case on paper if his estimate holds. The quickest way to settle it is the breakdown of where maintenance time goes now. It also makes this a conversation about evidence rather than about who's right.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1892,
+  "cache_read_input_tokens": 162049,
+  "output_tokens": 2142,
+  "output_tokens_details": {
+   "thinking_tokens": 863
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1892,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2142,
+    "cache_read_input_tokens": 162049,
+    "cache_creation_input_tokens": 1892,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1892
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09040179999999998,
+ "started": "2026-11-13T23:25:08.325695+00:00",
+ "wall_s": 25.89,
+ "task_index": 23
+}

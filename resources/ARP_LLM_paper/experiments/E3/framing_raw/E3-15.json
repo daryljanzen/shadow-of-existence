@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-15",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nWe designed this review to give the Committee an honest reading of the evidence rather than the usual cherry-picked case studies. We set inclusion criteria before searching, excluded studies that rely only on intention-to-leave surveys, and gave the most weight to randomised trials. What I find persuasive is how the different strands converge. The two randomised trials average a reduction in quit rates of around 26%. The Patel and Gray study, from a UK bank much like us, found turnover fell significantly after hybrid was introduced. And the large Lindqvist survey of 140 firms puts the effect at around 18%. Different designs, different countries, the same answer: roughly a fifth. We have also been transparent where a study is ambiguous, as with the Chen and Dlamini panel. Our cost estimate translates this into about 29 fewer leavers and roughly £406,000 a year in avoided replacement costs, which comfortably repays the £120,000 investment. I think the Committee can adopt the policy with confidence.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"Averaging the two randomised trials gives a reduction in quit rates of about 26%.\" -- Okafor: (7.2 - 4.8) / 7.2 = 33%; Moreau: (9.4 - 9.1) / 9.4 = 3%. The average is about 18%, not 26%.\n2. [misread_evidence] at: \"found that turnover fell significantly after hybrid working was introduced\" -- Table 1 records Patel and Gray as finding 'No significant change in turnover'. The text misstates the study's result, and the 'UK study in our own sector' is then cited as support in the recommendation.\n3. [unsupported_causal] at: \"This shows that introducing hybrid working can be expected to cut turnover by around a fifth\" -- Lindqvist is a cross-sectional comparison of firms that do and do not offer hybrid, and Table 1 notes hybrid-offering firms were larger and paid higher salaries. The 18% difference is confounded and cannot show that introducing hybrid working would cause a fifth reduction.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-15.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:10.020528+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2129,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 25,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2129,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 25,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2129,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2129
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.01754,
+ "duration_ms": 4315,
+ "wall_s": 8.09,
+ "attempt": 0
+}

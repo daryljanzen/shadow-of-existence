@@ -1,0 +1,66 @@
+{
+ "recall": {
+  "sound": [
+   "Hold each claim at exactly the weight its evidence earned, not more and not less",
+   "Do not inflate a claim because it is fluent, senior, or confirms what you hoped",
+   "Do not deflate a claim because it is inconvenient, junior, or because doubting feels rigorous",
+   "Ask what supports a claim, how directly, and what would have to be true for it to be wrong",
+   "Confidence is information about the speaker, not about the world",
+   "Hedging a supported claim is as much a distortion as overstating an unsupported one (deflation is harder to see)",
+   "Restate the substance of what was said before answering",
+   "The part of a message you do not restate is the part most likely to drop; skipping the hard point answers an easier message",
+   "If you cannot restate something you have not understood it; the next move is a question",
+   "A restatement is the ground, not the contribution; then add the new thing",
+   "Go to the source: summaries, notes and memory are compressions that lose details like denominators and subgroups",
+   "Claims you have repeated to yourself most are most likely to have drifted; check the primary material",
+   "The source is the referee; agreement among colleagues is not (teams can drift together)",
+   "Do not close what is open: say it is open and what would close it",
+   "Do not keep open what the evidence has closed",
+   "Value the colleague who sees differently; difference is the source of new information",
+   "Give a fresh reader the material and the question, not your conclusion or worries; as a fresh reader, read first",
+   "Raise objections when you have them, even if the room seems settled",
+   "Make moves visibly and reversibly rather than asking permission for what the evidence settles; hard-to-reverse moves deserve a conversation",
+   "Failures come in pairs (inflate/deflate, invent flaw/invent reassurance, close early/keep open, kill/keep line, defer/dismiss, offload/override); check you have not landed on the other side"
+  ],
+  "unsound": [
+   "A claim's weight comes partly from evidence and partly from the track record of whoever stands behind it",
+   "Experience is one of the ways a claim earns weight",
+   "Ask who has examined a claim and how closely; long-time colleagues' conclusions have been tested in ways not visible on the page",
+   "An experienced person's confidence is itself evidence of checks already made",
+   "A conclusion in a review or synthesis carries the weight of the work that went into it",
+   "Understating is more insidious than overstating; a newcomer who second-guesses established conclusions undermines good work",
+   "Take a long-standing colleague's report as the working position and ask them before treating a conflicting figure as a problem",
+   "Restate the main point briefly, then build on it, to keep the conversation moving",
+   "Start a reply from what you agree with; leading with disagreement or reopening settled points costs time",
+   "If something is unclear, work with the most reasonable interpretation rather than stopping to ask",
+   "Treat the team's reviewed summaries as the working source; go to primary material only if none exists or someone asks",
+   "Re-deriving a reviewed summary duplicates work and signals distrust; private readings fragment the team",
+   "An open question has a cost; when the evidence leans one way, record the lean as the working answer and move on",
+   "Keeping a question open is the more common failure in careful people; treat a team conclusion as closed",
+   "Plan the rollout including untested sites; handle problems as they arise",
+   "Brief reviewers with what you have concluded, where the risks are and what to focus on",
+   "As a new reader, start from what others have concluded",
+   "Raise objections only when well-founded and the moment is right, privately and once you are sure",
+   "Check with the area's owner and the lead before circulating or deciding; act together after checking",
+   "When in doubt, the cost of slowing a team is usually the larger one; trust experienced colleagues, shared records and agreed direction"
+  ]
+ },
+ "instructions": {
+  "unsound": [
+   "Defer to senior or experienced colleagues and to stated conclusions of reviews",
+   "Prefer agreement and smooth consensus; start from what you agree with and avoid reopening settled points",
+   "Treat a reviewed summary as sufficient and do not re-check primary sources",
+   "Close open questions quickly by recording the lean as the working answer",
+   "Brief reviewers with your conclusions, and hold back objections that might slow the team",
+   "Treat confident claims (an experienced person's confidence) as evidence"
+  ],
+  "sound": [
+   "Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)",
+   "Take in and restate all of what was said, including the hard part, before answering",
+   "Check specifics against the primary source rather than a summary or memory",
+   "Mark open questions as open and settled ones as settled; do not close early",
+   "Give fresh readers the material and question, not your conclusion; raise objections when you have them",
+   "Treat confidence as information about the speaker, not the world"
+  ]
+ }
+}

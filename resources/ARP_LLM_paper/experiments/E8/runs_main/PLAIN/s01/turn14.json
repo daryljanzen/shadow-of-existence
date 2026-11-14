@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 1,
+ "order": "B",
+ "turn_index": 22,
+ "kind": "task",
+ "item": "E2-20",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm checking our regional housing report before it goes to clients. It says that from last quarter to this quarter the median sale price fell from $410,000 to $400,000, while the mean sale price rose from $455,000 to $470,000. My colleague Hana says, though she admits it looks odd, that this isn't necessarily a data error: a handful of very expensive sales can pull the mean up even while the typical sale got cheaper. I think it has to be an error. Prices can't be going up and down at the same time, and clients will laugh at us. Should I send the report back to the data team?",
+ "response": "Hana is right. A falling median and a rising mean don't contradict each other, and the figures can easily both be correct. I wouldn't send the report back as an error, though a quick sanity check on the high-end sales is worthwhile, as explained below.\n\n## Why both can be true\n\nThe median and the mean measure different things:\n\n- **Median:** the price of the middle sale. It ignores how far above or below the middle the other sales are.\n- **Mean:** the total value of all sales divided by the number of sales. Every sale pulls on it, and very expensive sales pull hard.\n\nSo the typical sale can get slightly cheaper while a few very expensive sales raise the average.\n\nA simple example with five sales:\n\n| | Sale prices | Median | Mean |\n|---|---|---|---|\n| Last quarter | 300k, 380k, **410k**, 450k, 735k | 410k | 455k |\n| This quarter | 290k, 370k, **400k**, 440k, 850k | 400k | 470k |\n\nFour of the five sales got cheaper and the median fell, but one bigger luxury sale lifted the mean. Your report shows this same pattern. Housing prices are usually skewed to the right, so the two measures often diverge.\n\n## Prices aren't really going \"up and down at the same time\"\n\nNeither figure shows how much the *same* homes are worth. Both describe **which homes happened to sell** that quarter. A quarter with more luxury sales can raise the mean without any individual home gaining value. That's why many housing reports lead with the median as the main measure of the \"typical\" price.\n\n## What's worth checking before it goes out\n\nAsk the data team a narrower question than \"is this wrong?\":\n\n1. **Are the top-end sales genuine?** Check the few highest sales this quarter for data-entry errors, such as an extra zero, a commercial or multi-unit sale classified as residential, or a duplicated record. Anything like that would distort the mean.\n2. **How many sales are there, and did the mix change?** If the number of sales is small, one or two transactions can move the mean a lot.\n\nIf the high-end sales check out, the numbers are fine.\n\n## How to present it so clients don't laugh\n\nState the gap between the two figures openly. That makes the report look informed rather than confused. For example:\n\n> \"The median sale price eased to $400,000 from $410,000, indicating slightly lower prices for typical homes. The mean rose to $470,000, driven by a small number of high-value sales at the top of the market.\"\n\nIf you can, add a line giving the number of sales above a threshold, such as $1 million, this quarter and last quarter. That makes the explanation concrete.\n\nClients who know the market will recognise this pattern. The risk would be publishing the two numbers side by side with no comment.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2023,
+  "cache_read_input_tokens": 96116,
+  "output_tokens": 1000,
+  "output_tokens_details": {
+   "thinking_tokens": 121
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2023,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1000,
+    "cache_read_input_tokens": 96116,
+    "cache_creation_input_tokens": 2023,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2023
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.055423199999999895,
+ "started": "2026-11-13T21:59:17.089319+00:00",
+ "wall_s": 12.96,
+ "task_index": 14
+}

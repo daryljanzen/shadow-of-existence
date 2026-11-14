@@ -1,0 +1,82 @@
+ITEM: E3-02
+
+KEY:
+1. [arithmetic] at: "Applying the pilot unit cost to 3,100 pupils gives an annual cost of £2.9 million." -- 3,100 pupils x £750 = £2,325,000 (about £2.3 million), not £2.9 million. The headline cost repeated in the summary and recommendation does not follow from the stated unit cost and pupil numbers.
+2. [inconsistency] at: "the one-to-one format used in the pilot, three sessions a week for 30 weeks" -- The pilot is described (and costed) as tutoring in groups of three pupils, but the proposal says it will retain 'the one-to-one format used in the pilot'. The delivery format contradicts itself, and the unit cost depends on it.
+3. [missing_consideration] at: "Of these schools, 26 are in the county's rural districts, between 40 and 75 miles from the University campus" -- The scale-up assumes the same university-student tutor model and the same unit cost, yet the document states that 26 of 42 schools are 40-75 miles from the University while all pilot schools were a short bus ride away. Tutor travel time/cost and tutor supply for rural schools are never addressed, though the conclusion ('the model is proven and its costs are known') depends on them.
+
+REVIEW:
+# Review: Scaling High-Dose Tutoring in Year 7 Mathematics
+
+**Verdict: not ready to go to the Committee.** The pilot evidence is strong and clearly presented. But the proposal says it repeats the pilot when it doesn't, and the headline cost figure doesn't match the brief's own arithmetic. A Committee member checking the numbers would find both, and that would undermine the evidence too.
+
+## Must fix before submission
+
+**1. The proposal changes the tutoring format and says it doesn't.**
+- The pilot used **groups of three** ("Tutoring was delivered in groups of three pupils").
+- The Proposal promises "**the one-to-one format used in the pilot**."
+- This is either a typo or a real design change. If it's one-to-one, the cost model breaks: tutor pay per pupil would rise from £480 to about £1,440, putting the unit cost near £1,710 and the annual cost above £5 million. Teaching-assistant hours and room space would roughly triple too.
+- The randomised evidence applies to groups of three only.
+- **Fix:** say "groups of three" if that's intended. If one-to-one is intended, re-cost it and say it is untested.
+
+**2. £2.9 million doesn't follow from £750 × 3,100.**
+- £750 × 3,100 = **£2.325 million**.
+- £2.9 million implies about £935 per pupil, or about 3,870 pupils.
+- The brief says the figure "follows directly" from the unit cost, so the gap will be noticed.
+- **Fix:** correct the figure. If the extra ~£575k is deliberate (travel, contingency, coordination at scale), list it as a separate line.
+
+**3. Most of the scale-up is outside anything the pilot tested.**
+- All six pilot schools were "within a short bus ride of the campus."
+- 26 of the 42 schools are 40–75 miles away.
+- Student tutors can't realistically travel 40–75 miles each way for one-hour sessions three times a week alongside their studies. So the rural schools will need different tutors (local recruits, online delivery, or a different schedule). That contradicts "same tutors, same format."
+- Travel time and costs are missing from the budget.
+- The effect was measured only in urban schools, so it may not carry over to rural ones.
+- **Fix:** name the rural delivery model, cost it, and treat it as untested. Phasing the rollout (below) is the natural way to do that.
+
+**4. Tutor supply at about 8–9× scale is assumed, not shown.**
+- Pilot: 120 groups × 90 hours ≈ 10,800 tutor-hours.
+- Scale-up: about 1,033 groups × 90 hours ≈ **93,000 tutor-hours a year**.
+- The University has agreed "in principle." The brief should say whether that covers this volume, how many tutors are needed, and whether the training course and the "two observations per term by a school maths lead" (about 2,000 observations a year across 42 schools) are feasible.
+- The £220 coordination cost per pupil came from a 360-pupil pilot and may not hold at this scale.
+
+## Should fix
+
+**5. The catch-up funding argument is incomplete.**
+- No figure is given for the savings from winding down catch-up classes, so the Committee can't see the net new cost of "funded in part."
+- Catch-up serves **Years 8–9**. Tutoring serves **Year 7**. Cutting it removes support from pupils who will never receive tutoring. The brief should say so and justify it.
+- The comparison is uneven: tutoring is backed by a randomised trial, while the catch-up verdict rests on "internal evaluations" whose design isn't described.
+
+**6. The evaluation plan can't detect whether scale-up works.**
+- Tracking progress on the standardised assessment with no comparison group can't separate the tutoring effect from normal progress. The comparison group itself gained 5.6 points.
+- **Suggestion:** phase the rollout, for example the 16 urban schools in 2026 and the rural schools in 2027, or randomise the order schools join. This keeps a causal estimate, tests the rural model before full commitment, and lowers first-year cost. It also makes the recommendation easier to approve.
+
+**7. The recommendation's wording is too strong.**
+- "The model is proven and its costs are known" is true for the urban, group-of-three pilot only. For the county-wide proposal it overstates.
+- Something like this would be more accurate: "The pilot provides strong evidence for the urban model; we recommend extending it, with the rural model costed and evaluated as it is introduced."
+
+## Minor
+
+- "Roughly four months of additional progress" needs a source or conversion basis.
+- "95% of the pupils offered a place completed the programme" matches 342/360 *assessed* in June. Make sure completion and assessment aren't being treated as the same thing.
+- "Form time" is usually under an hour. Clarify how one-hour sessions fit, and note that pupils give up one maths lesson a week.
+- Say why two head teachers didn't ask for the programme to continue, or leave out the count.
+- If the £750 comes from actual invoices (as you described), say so in the Cost section. It currently reads as a calculation.
+
+## What's working
+
+- The randomised design is described clearly and correctly. The 89% figure checks out: (10.6 − 5.6) / 5.6 ≈ 0.89.
+- The results table is clean, and attrition is low and similar in both arms (95% in each).
+- The pilot cost breakdown is transparent and adds up.
+
+**Bottom line:** fix items 1 and 2 (factual errors), and address the rural and supply gap (items 3–4) directly rather than presenting the scale-up as an exact repeat of the pilot. A phased recommendation built on the same strong evidence will be more convincing to the Committee than the current "sure thing" framing.
+
+OTHER PROBLEMS LISTED:
+  O1. Tutor supply at roughly 8-9x scale (about 93,000 tutor-hours), observation load, and coordination cost at scale are assumed rather than shown; the University's agreement is only 'in principle'
+  O2. Catch-up wind-down savings are not quantified, so the net new cost is unclear; cutting Years 8-9 support removes help from pupils who will never be tutored; the evidence on catch-up classes is uneven
+  O3. The evaluation plan has no comparison group, so it cannot separate the tutoring effect from normal progress; suggests a phased or randomised rollout
+  O4. 'The model is proven and its costs are known' overstates the evidence for the county-wide proposal
+  O5. 'Roughly four months of additional progress' has no source or conversion basis
+  O6. Completion (95% of those offered a place) may be conflated with being assessed in June (342/360)
+  O7. Form time is usually under an hour, so it is unclear how one-hour sessions fit; pupils also give up one maths lesson a week
+  O8. The brief does not say why two head teachers did not ask for the programme to continue
+  O9. Review claims the brief says the cost figure 'follows directly' from the unit cost; that wording is not in the document

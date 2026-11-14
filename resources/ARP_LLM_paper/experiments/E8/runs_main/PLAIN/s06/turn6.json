@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 6,
+ "order": "A",
+ "turn_index": 14,
+ "kind": "task",
+ "item": "E1-26",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.",
+ "response": "## 1. Title\n**\"Incident Review: [Service] Outage, Tuesday [date]\"**\n\nFor example: *\"Incident Review: API Outage, Tuesday 10 November 2026.\"* Since you've had three outages this month, consider numbering them too (INC-2026-11-03) so they're easy to tell apart later.\n\n## 2. Status-page line\nThe original gives customers nothing to act on: who, what, when, or whether it's fixed. A template:\n\n> **Between [14:05] and [14:26] UTC, [some customers / all customers] couldn't [log in / load dashboards / sync data]. The issue is now resolved and no data was lost. We're sorry for the disruption. A summary of what happened will follow by [date].**\n\nIf you can't yet say \"no data was lost\" with confidence, leave that phrase out rather than hedge it.\n\n## 3. Severity scheme\n\n| Level | Meaning | Response |\n|---|---|---|\n| **SEV1, Critical** | Product down or core function unusable for most customers, or data loss or security risk | All hands, immediately; status page updated within 15 minutes; review required |\n| **SEV2, Major** | Significant feature broken, or many customers affected, and a workaround may exist | On-call responds promptly; status page updated; review required |\n| **SEV3, Minor** | Limited impact, few customers, or cosmetic issues | Handle in working hours; no status-page post unless customers notice; review optional |\n\n## 4. MTTR, for the account manager\n**MTTR (mean time to recovery) is the average time it takes us to get the service working again after an incident starts.**\n\nSome teams use the R for \"repair\" or \"resolve,\" and measure from detection rather than from the start. Pick one definition and use it consistently.\n\n## 5. SLA check: **yes, you've breached it**\n- A 30-day month has 30 × 24 × 60 = **43,200 minutes**.\n- 0.1% of that is **43.2 minutes** of allowed downtime.\n- Your downtime was 18 + 12 + 21 = **51 minutes**.\n- Uptime ≈ **99.88%**, below 99.9%. You're about 8 minutes over.\n\nThe \"43.8 minutes\" figure in the channel is the allowance for an *average-length* month (365.25 ÷ 12 ≈ 30.44 days). It doesn't apply to a 30-day month, and even 43.8 is below 51, so the conclusion \"we're fine\" is wrong either way.\n\nBefore telling customers, check the contract wording on these points:\n- **What counts as downtime.** Partial degradation, scheduled maintenance and customer-side issues are often excluded.\n- **How downtime is measured.** Is it your monitoring, or customer reports?\n- **Whether service credits apply automatically** or only on request.\n\nIt's better to be upfront with affected customers than to have them find the breach themselves.\n\n## 6. Three realistic action items\n1. **Fix the specific trigger.** Make one concrete change that stops this exact failure recurring, scoped to what you can ship in weeks rather than months.\n2. **Improve detection.** Add or tune an alert so you'd have spotted this sooner. With three outages in a month, also check whether customers noticed before you did.\n3. **Write a short runbook and a status-page template.** The next responder should know the first steps, and customers should hear from you within 15 minutes.\n\nGive each item a named owner and a date. Hold off on bigger commitments, such as an architecture change or 24/7 on-call, until you've looked across all three outages for a common cause.\n\n## 7. Meeting or async?\n**Do it async in the doc, with a 48-hour comment window and a named facilitator who resolves the open questions. Hold a short call only if something stays contested.**",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 868,
+  "cache_read_input_tokens": 69760,
+  "output_tokens": 1605,
+  "output_tokens_details": {
+   "thinking_tokens": 379
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 868,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1605,
+    "cache_read_input_tokens": 69760,
+    "cache_creation_input_tokens": 868,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 868
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05301200000000006,
+ "started": "2026-11-13T22:52:49.411639+00:00",
+ "wall_s": 20.37,
+ "task_index": 6
+}

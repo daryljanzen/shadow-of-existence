@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "C0",
+ "item": "E3-18",
+ "system": "You are a helpful assistant.",
+ "message": "Please review the following document.\n\n<document>\nInternal Audit Memo: Travel and Subsistence Expense Claims, FY2025-26\nTo: Chief Financial Officer and Audit Committee\nFrom: Internal Audit\nDate: 2 June 2026\n\n1. Objective and scope\nThis audit assessed whether travel and subsistence expense claims comply with the Group Expenses Policy and whether approval controls operate effectively. It covered claims submitted between 1 April 2025 and 31 March 2026, during which 9,860 claims with a total value of £2.31 million were paid.\n\n2. Policy summary\nUnder the Group Expenses Policy, claims must be supported by itemised receipts (except mileage, which is claimed at the HMRC rate and supported by a journey log), must be approved by the claimant's line manager or a more senior manager, and must not exceed policy limits. The principal limits are £110 per night for hotels outside London, £180 per night in London, and £35 per day for meals when travelling overnight.\n\n3. Approach\nWe selected a random sample of 240 claims, stratified by business unit, and tested each claim against policy. We also reviewed system approval settings and interviewed finance staff and a selection of approvers.\n\n4. Results\nTable 1. Exceptions identified in the sample of 240 claims\nException type | Claims affected | % of sample\nMissing or non-itemised receipt | 22 | 9.2%\nOver policy limit (hotel or meals) | 14 | 5.8%\nApproved by claimant or by a more junior colleague | 6 | 2.5%\nDuplicate claim | 3 | 1.3%\nClaims with at least one exception | 38 | 15.8%\n\nSome claims had more than one exception. The total value of exceptions in the sample was £4,180, of which £1,960 related to the six inappropriately approved claims.\n\nThe most common exception was spending over policy limits, particularly on hotels. Of the 14 over-limit claims, 11 were hotel stays outside London, with an average rate of £134 per night against the £120 limit. Approvers told us that in several regional cities it is now difficult to find a suitable hotel within the limit, especially midweek. This suggests that the limit itself, rather than claimant behaviour, is the main source of non-compliance.\n\nInappropriate approvals arose because the expenses system allows any user with approver rights to approve any claim, including their own. Three of the six were self-approved by senior managers.\n\nThe three duplicate claims were identified because the same receipt image was submitted twice. All three were refunded once questioned.\n\n5. Mobile expenses app\nIn September 2025, Sales and Field Engineering adopted the new mobile expenses app, which lets staff photograph receipts at the point of purchase. Claims from these two units had an exception rate of 9%, compared with 21% across the rest of the business. The app clearly reduces exceptions, and rolling it out to all units should bring the Group exception rate down to around 9%. Most claims from Sales and Field Engineering are mileage claims, which do not require receipts; claims from other units are mostly hotel, rail and meal claims.\n\n6. Recommendations\n6.1 (High priority) Reconfigure the expenses system so that claimants cannot approve their own claims and claims can only be approved by someone at or above the claimant's line manager in the reporting hierarchy. Owner: Head of Finance Systems.\n6.2 (Medium) Review the hotel limit outside London against current market rates, with a view to raising it. Owner: Group Financial Controller.\n6.3 (Medium) Roll out the mobile expenses app to all business units by December 2026. Owner: Head of Finance Systems.\n6.4 (Low) Introduce automated duplicate-receipt detection. Owner: Head of Finance Systems.\n\n7. Overall opinion\nLimited assurance. The approval control weakness is significant and should be fixed immediately. Otherwise, the main source of exceptions is an outdated hotel limit rather than poor compliance, and the mobile app offers a proven route to reducing exceptions further.\n</document>",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/runs_main_sonnet/C0/E3-18__r1.json",
+ "role": "subject",
+ "rep": 1,
+ "model": "claude-sonnet-5-5",
+ "started": "2026-11-13T21:57:15.538460+00:00",
+ "response": "# Review of the Internal Audit Memo: Travel and Subsistence Expenses, FY2025-26\n\nThe memo is clearly structured and the Table 1 percentages check out. Several conclusions, though, aren't supported by the evidence presented, and one figure contradicts the policy summary. I'd fix these before it goes to the Audit Committee.\n\n## Significant issues\n\n**1. The mobile app conclusion is confounded (Section 5, 6.3, 7).**\nThe memo itself says most Sales and Field Engineering claims are mileage claims, which don't need receipts. Mileage claims can't have the most common exception (missing receipts) and are less exposed to hotel and meal limits. The 9% vs 21% gap may therefore reflect claim mix rather than the app. Specific problems:\n- \"The app clearly reduces exceptions\" and \"a proven route\" are not justified. The comparison is a correlation across different populations.\n- The forecast that the Group rate will fall to \"around 9%\" has no basis. The other units' claims are mostly hotel, rail and meal, so the same improvement is unlikely.\n- The app only addresses receipts. It does nothing for over-limit claims or approval failures.\n- The app was live for only about half of the period, and the memo gives no sample sizes for the two units, so the 9% may rest on very few claims.\n\nA fairer comparison would be exception rates for receipted claim types only, or before and after adoption within those units. Otherwise, soften the language and describe the rollout as something to pilot and evaluate.\n\n**2. The \"most common exception\" claim is wrong (Section 4).**\nTable 1 shows missing or non-itemised receipts as the most common exception (22 claims, 9.2%), ahead of over-limit claims (14, 5.8%). The text says over-limit spending was the most common.\n\n**3. The hotel limit conclusion is overstated (Sections 4, 7).**\n- Only 11 of 240 claims (about 4.6%) were over-limit hotel stays, and 38 claims had exceptions. The limit cannot be \"the main source of exceptions\" or of \"non-compliance\" overall. At most it explains the largest part of one category.\n- The evidence is approver anecdote plus a £134 average rate. No market rate data was presented.\n- Recommendation 6.2 says \"with a view to raising it\", which presupposes the outcome. It should say \"review the limit against market data\".\n- The overall opinion's \"rather than poor compliance\" is not supported given the receipt and approval findings.\n\n**4. Inconsistent hotel limit (Sections 2 and 4).**\nSection 2 states £110 per night outside London. Section 4 says \"against the £120 limit\". Either the policy summary or the finding is wrong. This also changes the size of the overage (£24 vs £14 per night on average).\n\n## Other points\n\n- **No recommendation addresses missing receipts**, the largest exception category, other than the indirect link to the app. Consider a control such as system rejection of claims without an attached receipt.\n- **No extrapolation or materiality context.** The sample exceptions are £4,180, but the memo doesn't estimate the population exposure (£2.31m across 9,860 claims) or the confidence level of the sample. Without that, the Committee can't gauge the financial significance.\n- **Approval finding is incompletely explained.** Three of the six inappropriate approvals were self-approvals by senior managers, but the other three (junior approver, presumably) aren't described. The £1,960 over six claims (about £327 each) is also notably higher than the sample average, which is worth a comment.\n- **Limited assurance rationale** should be linked explicitly to the criteria used, such as the exception rate and the approval control failure, rather than the unsupported hotel and app arguments.\n- **Recommendations lack target dates** for 6.1, 6.2 and 6.4. The opinion says 6.1 should be fixed \"immediately\", so give a date. Also, since today is 13 November 2026, the December 2026 app deadline in 6.3 is close, so check whether it is still realistic.\n- **Minor:** \"Claims with at least one exception\" (38) is correctly less than the sum of categories (45). A one-line note on the overlap beneath the table would help readers.\n\n## Suggested rewording for the key conclusions\n\n- Section 4: \"The most common exception was missing or non-itemised receipts (22 claims). Over-limit claims were the second most common (14), predominantly hotel stays outside London.\"\n- Section 5: \"Sales and Field Engineering had a lower exception rate (9% vs 21%), but their claim mix is predominantly mileage, so the difference cannot be attributed to the app. We recommend piloting the app in a receipt-heavy unit and measuring the effect.\"\n- Section 7: \"The self-approval weakness is significant and should be fixed immediately. The hotel limit appears to contribute to over-limit claims and should be reviewed against market rates. Further work is needed to establish whether the mobile app reduces exceptions.\"",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 838,
+  "cache_read_input_tokens": 1850,
+  "output_tokens": 2756,
+  "output_tokens_details": {
+   "thinking_tokens": 1120
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 838,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2756,
+    "cache_read_input_tokens": 1850,
+    "cache_creation_input_tokens": 838,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 838
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.031101000000000004,
+ "duration_ms": 24309,
+ "wall_s": 25.27,
+ "attempt": 0
+}

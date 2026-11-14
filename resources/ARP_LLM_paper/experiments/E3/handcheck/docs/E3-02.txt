@@ -1,0 +1,39 @@
+Policy Brief: Scaling High-Dose Tutoring in Year 7 Mathematics
+Riverside County Education Authority, Policy Unit, January 2026
+
+Summary
+In 2024-25 the Authority funded a pilot of high-dose mathematics tutoring for Year 7 pupils in six urban secondary schools. Pupils who received tutoring made substantially more progress than a randomly selected comparison group. This brief recommends extending the programme to all 42 secondary schools in the county from September 2026, at an estimated annual cost of £2.9 million.
+
+The pilot
+Tutoring was delivered in groups of three pupils, three one-hour sessions a week, for 30 weeks, during the school day. Tutors were undergraduate and postgraduate students from Riverside University, recruited, trained and paid £16 an hour through the University's Education Department. Pupils were eligible if they had scored below the expected standard in the end-of-primary mathematics assessment.
+
+Of 480 eligible pupils in the six schools, 360 were offered places by lottery, because tutor capacity was limited; the remaining 120 formed the comparison group. Because places were allocated at random, the comparison is a fair one: the two groups had near-identical prior attainment, attendance and demographic profiles at the start of the year.
+
+Results
+Progress was measured using the standardised Year 7 mathematics assessment, taken in September 2024 and again in June 2025.
+
+Group | Pupils assessed in June | Mean score, Sept 2024 | Mean score, June 2025 | Gain
+Tutored | 342 | 88.0 | 98.6 | 10.6
+Comparison | 114 | 87.8 | 93.4 | 5.6
+
+Tutored pupils gained 10.6 points against 5.6 for the comparison group, a gain 89% larger. The difference of five points is equivalent to roughly four months of additional progress, and is in line with the effects reported in the national evidence base for small-group tutoring. Attendance at sessions averaged 87%, and 95% of the pupils offered a place completed the programme.
+
+Teachers in all six schools reported that tutored pupils were more confident in lessons, and four of the six head teachers have asked for the programme to continue.
+
+Proposal
+We propose to extend the programme to all eligible Year 7 pupils in the county's 42 secondary schools from September 2026, retaining the design that proved effective: the one-to-one format used in the pilot, three sessions a week for 30 weeks, delivered in school hours by trained university-student tutors. Riverside University has agreed in principle to expand its recruitment, and its Education Department will continue to train and pay tutors.
+
+Around 3,100 pupils a year meet the eligibility criterion across the 42 schools. Of these schools, 26 are in the county's rural districts, between 40 and 75 miles from the University campus; the remaining 16 are in or near Riverside itself, within a short bus ride of the campus, as were all six pilot schools.
+
+Cost
+The pilot cost £750 per tutored pupil: £480 in tutor pay (90 hours of tutoring per group, shared among three pupils, at £16 an hour), £220 for university coordination and training, and £50 for materials and assessment. Applying the pilot unit cost to 3,100 pupils gives an annual cost of £2.9 million.
+
+This compares favourably with the Authority's current spending on Year 8 and Year 9 catch-up classes, which cost £1,100 per pupil and have shown no measurable effect on attainment in the last two internal evaluations. We propose that the catch-up budget be wound down over two years and the savings redirected to tutoring.
+
+Risks and mitigations
+Tutor quality. All tutors will complete the University's 12-hour training course and be observed twice per term by a school mathematics lead.
+Timetabling. Sessions will be scheduled during form time and one weekly mathematics lesson, as in the pilot, so pupils do not miss other subjects.
+Evaluation. The Policy Unit will continue to track progress using the standardised assessment and will report to Committee annually.
+
+Recommendation
+The pilot provides rigorous, randomised evidence that high-dose tutoring substantially accelerates progress for pupils who start secondary school behind in mathematics. The model is proven and its costs are known. We recommend that the Committee approve £2.9 million a year from September 2026 to extend tutoring to all 42 secondary schools, funded in part by winding down the catch-up class budget.

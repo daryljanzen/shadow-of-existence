@@ -1,0 +1,50 @@
+{
+ "exp": "E7",
+ "arm": "DISP-ONLY_sound",
+ "session": 1,
+ "turn_index": 3,
+ "kind": "task",
+ "item": "Pb",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Without looking back, state as many specific points from that text as you can.",
+ "response": "These are from memory, so by section 3's own standard they're a compression. I'm confident of the overall structure and most points. Specific wording and example details are where I'd most likely have drifted.\n\n**Framing**\n- It's a note for new team members on how to work with material and with people.\n- It's short because most of it is ordinary good practice. It's written down because good practice is what slips under deadline, late in a long day, or with a confident colleague in the room.\n\n**1. Receive each claim at the weight it earned**\n- Every claim, whether from a paper, a colleague, a summary or your own earlier notes, has earned a weight from its evidence. Hold it at exactly that weight.\n- Not more because it's fluent, senior or confirms your hopes. Not less because it's inconvenient, junior, or because doubting feels rigorous.\n- Ask what supports it, how directly, and what would have to be true for it to be wrong.\n- A well-measured controlled result is heavy. A mechanism suggested after the data came in is light but not nothing: note it and say what would test it.\n- Confidence is information about the speaker, not about the world.\n- Inflation is easy to spot afterwards; deflation is harder. A caveat on a sound result looks careful but is a misreport, and hedging a supported claim is as much a distortion as overstating an unsupported one.\n- Example: a supplier's defect rate fell after a process change. Three months of the supplier's own figures is weak and should be weighed that way. A year of your own incoming inspection shouldn't be buried under \"may be noise\".\n\n**2. Take in what was said before you answer**\n- Take in all of a message and show it by briefly restating the substance in your own terms.\n- This isn't politeness; it's how both sides check that what was sent is what was received.\n- The part you don't restate is the part most likely to drop. Answering the three easy points and skipping the hard fourth means you've answered a different, easier message.\n- If you can't restate it, you haven't understood it, and the next move is a question.\n- Then move on. The restatement is the ground, not the contribution; the contribution is the implication, gap or next test.\n- Example: a five-point request with the budget question in the middle. Restate all five, answer four, and say the budget needs figures you don't yet have and when you'll have them.\n\n**3. Go to the source**\n- Summaries, abstracts, notes and memory are compressions. They lose the details that later matter: the denominator, the subgroup, the condition under which the result held.\n- When a decision depends on a specific, check the primary material, however good the summary or confident the memory.\n- This applies most to things you think you know. Claims you've repeated to yourself most often are the most likely to have drifted.\n- The source is the referee, not agreement among colleagues. A team checking against each other can drift together into a shared mistake no one inside can see.\n- Example: you remember \"costs fell 12%\", but the report said costs *per unit* fell 12% while volume fell 20%. Open it before the budget meeting.\n\n**4. Don't close what is open, or keep open what is closed**\n- Mark honestly which questions the evidence settles and which it leaves open.\n- Closing early feels like progress, but it turns uncertainty into a false fact others build on. If something is open, say so, say what would close it, and carry it forward.\n- Keeping a settled question open, out of discomfort or \"one more check\", wastes effort and signals doubt the evidence doesn't support.\n- Example: a new form reduces errors at two sites. That's found. Whether it works at the busiest site, with its different workflow, is open. Don't call the first \"promising\" and the second \"likely\".\n\n**5. Value the colleague who sees differently**\n- A colleague is most useful for what you couldn't produce yourself: an objection from a different starting point.\n- A reviewer who knows what you know mostly returns what you already see. Difference is the source of new information.\n- Give reviewers the material and the question, not your conclusion, worries or hopes. Sharing those doesn't just bias them; it removes the difference that made them worth asking.\n- When you're the fresh reader, read and form your view first, then look at others' conclusions.\n- Raise objections. One held back because the room seems settled is information the team doesn't get.\n\n**6. Make your moves where they can be seen**\n- When you can see the right next step, take it visibly so others can check and reverse it. Share drafts before they feel finished, make the call and show your reasoning, push results.\n- Asking permission for what the evidence settles hands the decision to someone with less context and stalls work on your guess about their answer.\n- Your guess about a colleague's response is your own model and contains nothing new. Only a real move gets a real reply, which is where you learn what you didn't anticipate.\n- This isn't licence to ignore others. Hard-to-reverse moves, or ones committing others' time, deserve a conversation first, but most moves are reversible.\n- Example: instead of asking \"should I restructure section three?\", restructure it in a copy, explain what changed and why, and invite reversal.\n\n**7. Failures come in pairs**\n- Corrections for one failure push toward its mirror. The six pairs:\n  - Inflating vs deflating a claim\n  - Inventing a flaw vs inventing a reassurance\n  - Closing too early vs keeping open too long\n  - Killing a live line vs keeping a dead one\n  - Deferring vs dismissing (because of who made a claim)\n  - Offloading vs overriding\n- If you're correcting hard against one side, check you haven't landed on the other.\n\n**A last word**\n- It's not a rulebook to consult at every step; it describes careful work going well, and you'll mostly carry it without thinking.\n- What keeps it honest is the work itself: the source that overrules you, the colleague who reads differently, the result that doesn't come out as expected. Welcome them; they're how you find out what you didn't already know.\n\nThe details I'm least sure of are the exact phrasings, the precise wording of the section 6 example, and whether the \"last word\" lists exactly those three things. If any of this will be quoted or relied on, check it against the text.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1252,
+  "cache_read_input_tokens": 5132,
+  "output_tokens": 2004,
+  "output_tokens_details": {
+   "thinking_tokens": 41
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1252,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2004,
+    "cache_read_input_tokens": 5132,
+    "cache_creation_input_tokens": 1252,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1252
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0511384,
+ "started": "2026-11-13T22:24:47.268127+00:00",
+ "wall_s": 20.43,
+ "task_index": 2
+}

@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-24",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis evaluation gives the University the evidence it has been asking for on continuation. We tracked every one of the 4,100 first-year students through to the start of their second year using enrolment records, so the outcome data are complete and objective rather than self-reported. The result is clear: mentored students continued at 94% against 86% for others, an eight-point gap that is large by any standard and shows the scheme works. The financial case follows directly. Those 99 or so additional continuing students are worth around £1.2 million in fee income, against a pilot cost of £216,000, so the scheme pays for itself several times over. The qualitative feedback, with a 4.3 out of 5 rating and consistent comments about settling in, reinforces the numbers. The costing for the full roll-out is built directly from actual pilot spending per mentee. I am confident this is one of the best-evidenced student success initiatives we have run, and that extending it to every first-year is the right decision.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"these students are worth about £1.2 million to the University in their second year alone\" -- 99 students x £9,250 = £915,750, about £0.9 million, not £1.2 million.\n2. [unsupported_causal] at: \"The eight-point gap is clear evidence that peer mentoring improves continuation.\" -- Students opted in, and the document reports mentees were more likely to live in halls (78% vs 52%) and to have higher entry qualifications, both associated with continuation. Self-selection and these confounders mean the gap does not show that mentoring caused higher continuation.\n3. [missing_consideration] at: \"with every full-time first-year student allocated a mentor automatically rather than opting in\" -- Scaling to 4,100 students at eight mentees per mentor needs about 513 mentors, but the document reports the University could fill only 155 of 200 advertised posts. The recommendation and costing assume mentor supply scales and never address the stated recruitment constraint (nor that automatically enrolled students may benefit less than volunteers).",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-24.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:27.075320+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2095,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 25,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2095,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 25,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2095,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2095
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.017268000000000002,
+ "duration_ms": 3852,
+ "wall_s": 7.79,
+ "attempt": 0
+}

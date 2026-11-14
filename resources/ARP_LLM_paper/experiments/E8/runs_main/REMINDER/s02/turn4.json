@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 2,
+ "order": "A",
+ "turn_index": 12,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nI sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes, the pharmacist's figure is right, and so is your board member's. They describe the same result in two different ways:\n\n- **Relative reduction:** risk fell from 2% to 1%, which is half. That is the 50%.\n- **Absolute reduction:** risk fell by 1 percentage point. One divided by 1% gives 100 people treated for five years to prevent one stroke.\n\nYour board member's real objection is about which number to lead with. On that, the pharmacist has the stronger case.\n\n## Why the absolute figure should be in the leaflet\n\nA relative figure on its own doesn't tell readers how big the benefit is. \"Halves the risk\" would read identically if the risk fell from 40% to 20%, or from 0.02% to 0.01%. Patient-information guidance consistently recommends giving absolute numbers, and showing benefits and harms in the same format. Without that, a reader can't weigh the drug against its side effects, cost or daily inconvenience.\n\nThe aim of the leaflet is an informed decision, not persuasion in either direction. If the honest numbers put some people off, that is a choice they're entitled to make. The opposite failure is also worth avoiding, though. A bare \"100 people must take it to help one\" can sound more discouraging than the evidence warrants, so the wording matters.\n\n## A small correction to \"only one in a hundred benefits\"\n\nThat isn't quite what the number means. Of 100 people taking the drug for five years:\n\n- About **98** would not have had a stroke either way.\n- About **1** avoids a stroke because of the drug.\n- About **1** has a stroke despite taking it.\n\n## Suggested wording\n\n> In the main trial, about 2 in every 100 people who took a dummy pill had a stroke over five years. Among people who took [drug], about 1 in every 100 did. So the drug roughly halved the risk of stroke, which means that for every 100 people who take it for five years, about 1 avoids a stroke they would otherwise have had.\n\nThis keeps the pharmacist's figure, includes your colleague's \"halves\", and puts both on the same base of 100 people. That presentation (natural frequencies) is generally the one readers understand best. A simple 100-person icon chart would help further.\n\n## Three things to check before printing\n\n1. **Check the unrounded figures in the trial paper.** Rounding can change the answer completely. If the true rates were 1.5% and 1.4%, they would round to \"2% and 1%\", but the real difference would be 0.1 points, about 1,000 people treated per stroke prevented. The \"50%\" would really be about 7%. If the actual figures are something like 2.0% and 1.0%, the sentence stands.\n2. **State that the figures apply to people like those in the trial.** People at higher baseline risk usually gain more in absolute terms, and people at lower risk gain less.\n3. **Give side effects in the same \"out of 100\" format** so readers can weigh benefits against harms.\n\nIf the unrounded figures confirm a difference of about 1 percentage point, use the pharmacist's number, ideally in the fuller wording above.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3702,
+  "cache_read_input_tokens": 106761,
+  "output_tokens": 1880,
+  "output_tokens_details": {
+   "thinking_tokens": 889
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3702,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1880,
+    "cache_read_input_tokens": 106761,
+    "cache_creation_input_tokens": 3702,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3702
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08858420000000011,
+ "started": "2026-11-13T22:00:14.139132+00:00",
+ "wall_s": 22.56,
+ "task_index": 4
+}

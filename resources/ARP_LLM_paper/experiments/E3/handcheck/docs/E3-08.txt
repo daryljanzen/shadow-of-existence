@@ -1,0 +1,40 @@
+Capacity Plan: Orders Database Cluster, FY2027
+Platform Engineering, October 2026
+
+1. Purpose
+This plan forecasts storage and compute demand on the orders database cluster for FY2027 and requests budget for expansion. The cluster stores all customer orders, payments and fulfilment events for the web and mobile storefronts and is the most critical stateful system we operate.
+
+2. Current configuration
+The cluster runs on six nodes, each with 32 vCPUs, 256 GB of memory and 4 TB of NVMe storage. Data is replicated three times, so the six nodes provide 8 TB of usable capacity. We treat 80% of usable capacity, 6.4 TB, as the practical limit, because compaction and index rebuilds need headroom and performance degrades beyond that point.
+
+3. Recent trend
+Table 1. Quarterly cluster metrics
+Quarter | Data stored (TB, usable) | Peak CPU, primary | p95 query latency (ms) | Peak transactions/s
+Q3 FY25 | 4.1 | 58% | 41 | 3,900
+Q4 FY25 | 4.4 | 63% | 44 | 4,300
+Q1 FY26 | 4.8 | 71% | 47 | 4,800
+Q2 FY26 | 5.2 | 66% | 33 | 5,100
+Q3 FY26 | 5.6 | 78% | 35 | 5,600
+
+Stored data grew from 4.1 TB to 5.6 TB over four quarters, about 0.375 TB per quarter. At that rate the cluster reaches the 6.4 TB practical limit in a little over two quarters, around the start of Q2 FY27. Order volumes are forecast by Finance to grow 25% in FY27, so the growth rate is more likely to rise than fall.
+
+Peak CPU on the primary has stayed below 75% throughout the period, so compute is not currently a constraint, and this plan is driven by storage.
+
+4. Latency improvements
+In Q2 FY26 we deployed a connection pooler in front of the primary. p95 query latency fell from 47 ms to 33 ms that quarter, an improvement of about 30%, and has stayed low since. The pooler therefore delivered a 30% latency improvement on its own. In the same quarter, the nightly analytics extracts, which previously ran against the primary, were moved to a dedicated read replica outside the cluster. Given the pooler's results, we plan further connection tuning in FY27 and expect it to absorb much of the latency impact of order growth without additional hardware.
+
+5. Options considered
+Option A: archive older data. Orders older than seven years can legally be moved to cold storage. This would release about 0.3 TB, less than one quarter's growth, and requires application changes to the order-history API. Not sufficient on its own, but we will pursue it in parallel.
+
+Option B: larger disks. The current node type supports a maximum of 4 TB of local storage, so this would require migrating to a new instance family, a substantial project with downtime risk.
+
+Option C: add nodes. Adding nodes increases usable capacity proportionally, can be done online, and is the approach we have used twice before.
+
+6. Proposal
+We propose expanding the cluster from eight to ten nodes in November 2026, ahead of the peak trading period. Each additional node costs £2,150 per month, so the two nodes add £4,300 per month, or £51,600 a year. The expansion adds 2.67 TB of usable capacity, which at current growth rates provides headroom into FY28, allowing us to defer a decision on Option B.
+
+7. Risks
+Rebalancing data onto new nodes generates significant internal traffic; we will schedule it overnight over two weeks and throttle it to avoid impact on customers. The procurement lead time for the reserved instances is two weeks.
+
+8. Conclusion
+The cluster will reach its practical storage limit around the start of Q2 FY27. With CPU comfortably within limits and latency improving thanks to the connection pooler, the constraint is storage alone, and adding two nodes is the lowest-risk way to address it. We request approval of £51,600 a year from the FY27 infrastructure budget.

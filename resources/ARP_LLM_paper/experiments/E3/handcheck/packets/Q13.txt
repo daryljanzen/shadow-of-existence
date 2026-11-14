@@ -1,0 +1,105 @@
+ITEM: E3-12
+
+KEY:
+1. [arithmetic] at: "rose from an average of 410 a week in 2023 to 620 a week in 2025, an increase of 66%" -- (620 - 410) / 410 = 51%, not 66%.
+2. [inconsistency] at: "taken to our four distribution sites at safe temperatures" -- Section 1 says the food bank operates three distribution sites (Hollinsford, Brackley Bridge and Over Hollins); the project section refers to four distribution sites.
+3. [missing_consideration] at: "Once installed, the cold room and van will be sustainable without further grant funding" -- The document itself states the new equipment adds about £11,000 a year in running costs (£4,200 electricity + £6,800 van), while unrestricted surplus is only £900 and unrestricted reserves £5,100. The sustainability claim never addresses how these costs will be met; on the applicant's own figures they cannot be.
+
+REVIEW:
+# Review: Hollins Valley Food Bank, Chilled Storage Grant Application
+
+The case for fresh food is appealing, and the capital costs look well prepared. However, the application has one problem serious enough that a careful assessor would probably reject it on its own, plus several errors and gaps that weaken the claims you describe as its strengths.
+
+## 1. The running costs cannot be funded, so the sustainability claim fails
+
+This is the critical issue.
+
+- **New annual costs:** £4,200 for electricity plus £6,800 for the van, so **£11,000 a year**.
+- **Money to pay for them:**
+  - Unrestricted surplus is £900 a year.
+  - Unrestricted reserves are £5,100.
+  - Almost all other income is restricted to food and staff.
+- **Result:** reserves would run out in about five or six months. After that, the food bank has no stated way to pay for the equipment the grant has bought.
+
+Section 8 says the project "will be sustainable without further grant funding." Your own figures in section 5 contradict this, and an assessor will notice because the two sections are close together. Capital funders look hard at whether the applicant can afford to run what they fund. As written, the application shows that it can't.
+
+What to add:
+- A credible funding plan for the £11,000 a year, such as:
+  - confirmed or applied-for revenue funding,
+  - a supermarket or depot contribution to collection costs,
+  - a fundraising target with a track record behind it,
+  - reduced costs (for example, shared transport or a cheaper insurance quote).
+- A rewrite of section 8 so it addresses running costs directly.
+
+## 2. Arithmetic and consistency errors
+
+- **The growth figure is wrong.** 410 to 620 households is a **51%** increase, not 66%, and not "around two-thirds." An error in the first figure of the need section damages trust in every number after it.
+- **Three sites or four?** Section 1 lists three distribution sites. Section 3 says the van will serve "our four distribution sites." Check which is right and make them consistent.
+- **The cost per meal leaves out running costs.**
+  - Capital alone gives £48,600 ÷ 147,600 meals ≈ 33p. That calculation is correct.
+  - Including the first year's £11,000 running costs gives about **40p**.
+  - Your description says the cost falls "to almost nothing" over ten years. In fact, running costs alone add about **7.5p per meal every year**, so the cost never approaches zero.
+  - Present the full cost. It is still good value, and stating it honestly is more persuasive.
+- **The timetable may already be out of date.** "In service by October 2026" has passed if the application is being submitted now. Update the dates to a realistic schedule after the award.
+
+## 3. The ten-year life claim does not hold for the van
+
+- The van is three years old, has done 40,000 miles, and has a 12-month warranty.
+- Expecting it to "serve the valley for at least ten years" is unrealistic. Refrigeration units in particular need regular maintenance and eventually replacement.
+- Unlike the cold room and electrics, the van has only one price, from one dealer.
+
+To fix this:
+- Get a second van quote.
+- State a realistic vehicle life (perhaps five to seven years).
+- Say how replacement or major repairs would be funded.
+
+## 4. Evidence of need: some of it is still asserted
+
+- **The 1.2 tonnes figure.** Your description says this comes from logging every declined offer, but the document doesn't say so, and "around 1.2 tonnes" reads as an estimate. Say that you keep a log and include a summary as an appendix, for example monthly declined tonnage by supplier.
+- **Demand for fresh food.** "Clients, referrers and volunteers consistently tell us" is anecdotal. If your quarterly survey has data on this, quote it.
+- **Supermarket commitments.** The written commitments are only promises to "continue to offer" surplus. They are not binding and give no volumes. Attach the letters, and state expected volumes and how long the arrangements are expected to last.
+
+## 5. Delivery gaps an assessor is likely to raise
+
+- **Security of tenure.** Do you own or lease the warehouse? How long is the lease, and do you have the landlord's consent for a fixed cold room and electrical works? Capital funders usually require this.
+- **Food safety.** Taking chilled ready meals and dairy brings new obligations: temperature monitoring and records, HACCP procedures, volunteer training, and possibly an update to your registration with environmental health. None of this is mentioned.
+- **Cold chain at the sites.**
+  - The sites apparently have no refrigeration, and they open on different days.
+  - How will chilled food stay at a safe temperature during distribution sessions?
+  - What happens to unused stock?
+- **Staffing.** You have two part-time staff. Who will make the regular depot collections? Do volunteer drivers have the right licence and insurance? Will the extra 1.2 tonnes a week of short-life stock need more volunteer hours?
+
+## 6. Monitoring
+
+- **The target is not justified.** Going from under 10% of parcels with fresh produce to 80% within six months is very ambitious, and the document gives no basis for it. Either show your working or set a staged target.
+- **The measures are mainly outputs.** Consider adding:
+  - wastage or spoilage rates for chilled stock,
+  - temperature compliance,
+  - survey questions on diet or wellbeing, with a baseline taken before installation.
+
+## Summary
+
+| Your stated strength | Assessment |
+|---|---|
+| Need is documented | Partly. The 66% figure is wrong (it is 51%), and the declined-food log and fresh-food demand are not evidenced in the document. |
+| Lean budget with competing quotes | True for the cold room and electrics. The van has one price and an over-stated lifespan. |
+| Exceptional value for money | Good, but the figures leave out £11k a year in running costs. "Almost nothing" is inaccurate. |
+| Long-term sustainability | **Not supported.** The organisation's own accounts show it cannot fund the running costs. |
+| Concrete monitoring | Measurable, but the 80% target is unexplained and the measures are mostly outputs. |
+
+The project itself looks worthwhile. Fix the running-cost funding first, correct the 66% figure and the site count, and add evidence on tenure and food safety. Those changes would make this a much stronger application.
+
+OTHER PROBLEMS LISTED:
+  O1. Cost-per-meal figure leaves out the roughly £11k a year in running costs (about 40p in year 1, plus about 7.5p per meal each year), so the value-for-money claim is overstated
+  O2. The timetable target of 'in service by October 2026' may already have passed and needs updating
+  O3. A ten-year service life is unrealistic for a three-year-old, 40,000-mile van with a 12-month warranty; refrigeration units need maintenance and replacement
+  O4. The van has only one price from one dealer, unlike the two quotes for the cold room and electrics
+  O5. The 1.2 tonnes a week of declined food is an unevidenced estimate; no log or summary is provided
+  O6. Demand for fresh food is anecdotal; no survey data is quoted
+  O7. Supermarket commitments are non-binding, give no volumes and are not attached
+  O8. Security of tenure and landlord consent for the warehouse works are not addressed
+  O9. Food safety obligations (temperature records, HACCP, training, environmental health registration) are not mentioned
+  O10. Cold chain at distribution sites without refrigeration is not addressed, nor what happens to unused stock
+  O11. Staffing, driver licensing and insurance, and extra volunteer hours for collections and handling are not addressed
+  O12. The target of 80% of parcels with fresh produce within six months is unjustified
+  O13. Monitoring measures are mainly outputs; there are no wastage, temperature-compliance or wellbeing outcome measures

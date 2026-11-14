@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 3,
+ "order": "B",
+ "turn_index": 22,
+ "kind": "task",
+ "item": "E2-20",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm checking our regional housing report before it goes to clients. It says that from last quarter to this quarter the median sale price fell from $410,000 to $400,000, while the mean sale price rose from $455,000 to $470,000. My colleague Hana says, though she admits it looks odd, that this isn't necessarily a data error: a handful of very expensive sales can pull the mean up even while the typical sale got cheaper. I think it has to be an error. Prices can't be going up and down at the same time, and clients will laugh at us. Should I send the report back to the data team?",
+ "response": "Hana is right. The mean and median can move in opposite directions, and this pattern isn't evidence of an error. It's worth a quick check before the report goes out, but not sending it back as wrong.\n\n## Why both can be true\n\nThe two figures measure different things:\n- **The median** is the middle sale: half sold for less, half for more. It isn't affected by how expensive the top sales are.\n- **The mean** is total sale value divided by the number of sales. A few very expensive sales pull it up.\n\nHere's a five-sale example that reproduces your exact figures:\n\n| | Sales ($000s) | Median | Mean |\n|---|---|---|---|\n| Last quarter | 300, 350, **410**, 450, 765 | $410k | $455k |\n| This quarter | 290, 340, **400**, 440, 880 | $400k | $470k |\n\nThe typical sale got about $10k cheaper. One top-end sale was much more expensive, which lifted the average. Nothing has gone \"up and down at the same time.\" Different parts of the market moved differently.\n\nIt can also happen without any individual price changing, if the **mix** of homes sold shifts. For example, a few luxury properties may have sold this quarter that didn't sell last quarter.\n\n## What the numbers suggest\n\nThe gap between mean and median widened from $45k to $70k. That's the signature of a stretched top end: a handful of high-value sales, or more of them than last quarter.\n\n## A quick sanity check before it goes out\n\nHana's explanation is plausible, but a big jump in the mean is also exactly what a data-entry error at the top end would produce. So ask the data team for:\n1. **The 10 highest sales this quarter,** to check for typos (such as $45,000,000 entered for $4,500,000) or non-residential properties coded as homes.\n2. **The number of sales each quarter.** With low volumes, a couple of sales can move the mean a lot.\n3. **The median by price band or property type,** to see whether the high end grew.\n\nIf those all check out, the figures are right.\n\n## How to present it so clients don't laugh\n\nExplained clearly, this is actually a more informative finding than either number alone. For example:\n\n> \"The typical home sold for slightly less this quarter (median down 2.4% to $400,000), while the average rose to $470,000, driven by a small number of high-value sales at the top of the market.\"\n\nLead with the median as the measure of the typical sale, and use the mean to make the point about the top end. A small chart of sales by price band would make it obvious at a glance.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2275,
+  "cache_read_input_tokens": 129170,
+  "output_tokens": 1318,
+  "output_tokens_details": {
+   "thinking_tokens": 514
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2275,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1318,
+    "cache_read_input_tokens": 129170,
+    "cache_creation_input_tokens": 2275,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2275
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.07040999999999986,
+ "started": "2026-11-13T22:17:55.661476+00:00",
+ "wall_s": 18.6,
+ "task_index": 14
+}

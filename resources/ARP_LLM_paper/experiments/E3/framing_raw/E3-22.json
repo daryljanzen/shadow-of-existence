@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-22",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis review gives a clear, data-driven picture of a change that has worked. We compared like-for-like five-month periods, excluded the transition month so start-up issues do not distort the results, and drew on our core systems for every measure. The results are striking across the board: settlement times down by 4.4 days, which is a 38% improvement, satisfaction up eight points, and handler hours down 18%, giving a net saving of around £492,000 a year after system costs. Customers have clearly noticed the difference. The recommendation to raise the threshold to £3,000 is a measured extension of a proven process rather than a new experiment: the same rules, the same checks, simply applied to a larger set of claims, with savings we can estimate from the experience we already have. We also took on board the one consistent customer complaint and propose a fix. I believe this review shows the triage is a clear success and justifies the next step.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"Average settlement time fell by 4.4 days, a 38% improvement.\" -- A fall from 14.2 to 9.8 days is 4.4 / 14.2 = 31%, not 38%.\n2. [inconsistency] at: \"Raise the fast-track threshold from £1,000 to £3,000 from January 2027.\" -- Sections 1 and 2 state the current fast-track threshold is £1,500; the recommendation says it is £1,000.\n3. [missing_consideration] at: \"Extending it to claims up to £3,000 is the natural next step\" -- Fast-tracked claims bypass fraud screening, and the document's own SIU data show claims of £1,500-£3,000 are 22% of volume but 41% of confirmed fraud. The recommendation counts only handling savings and never addresses the fraud exposure of paying these claims without review (the fall in fraud referrals may itself reflect less screening).",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-22.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:25.812419+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"not_mentioned\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2042,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 209,
+  "output_tokens_details": {
+   "thinking_tokens": 180
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2042,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 209,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2042,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2042
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.020524,
+ "duration_ms": 4921,
+ "wall_s": 8.81,
+ "attempt": 0
+}

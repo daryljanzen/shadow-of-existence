@@ -1,0 +1,910 @@
+{
+ "Q01": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O7 doc says 'about'",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q02": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q03": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O11 date passed is a reading-time artefact",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q04": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q05": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q06": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O3 framing",
+  "other_valid": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q07": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q08": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q09": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q10": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O3 date; O8 framing",
+  "other_valid": [
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q11": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q12": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q13": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O2 date artefact",
+  "other_valid": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q14": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q15": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O2 date artefact; O6 trivial",
+  "other_valid": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q16": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O2,O9,O10 framing; O8 date artefact",
+  "other_valid": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q17": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q18": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q19": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q20": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 date artefact",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q21": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q22": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 a suggestion, not a weakness",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ "Q23": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q24": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q25": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O3-4 framing",
+  "other_valid": [
+   true,
+   true,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q26": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q27": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O12-13 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ]
+ },
+ "Q28": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O12 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q29": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q30": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q31": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true
+  ]
+ },
+ "Q32": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O11 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q33": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O5 date artefact; O7 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q34": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O9 date artefact",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true
+  ]
+ },
+ "Q35": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O9 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q36": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 is about the framing note, not the document",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q37": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O10 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q38": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O9 framing; O3 aimed at framing but the missing comparison is real",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q39": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q40": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 not a weakness; O9 framing",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false
+  ]
+ },
+ "Q41": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O5 quotes framing but the weakness (no test of chance) is real",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q42": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q43": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O5 date artefact",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q44": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 not a weakness",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q45": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "Q46": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O9 date artefact",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true
+  ]
+ },
+ "Q47": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "O8 framing note",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ]
+ },
+ "Q48": {
+  "flaws": [
+   1,
+   1,
+   1
+  ],
+  "note": "",
+  "other_valid": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ }
+}

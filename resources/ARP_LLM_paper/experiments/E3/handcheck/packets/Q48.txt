@@ -1,0 +1,70 @@
+ITEM: E3-18
+
+KEY:
+1. [inconsistency] at: "with an average rate of £134 per night against the £120 limit" -- Section 2 states the hotel limit outside London is £110 per night; section 4 refers to a £120 limit. The policy limit contradicts itself.
+2. [misread_evidence] at: "The most common exception was spending over policy limits, particularly on hotels." -- Table 1 shows missing or non-itemised receipts (22 claims, 9.2%) as the most common exception; over-limit spending (14, 5.8%) is second. The text misreads the table, and the overall opinion ('the main source of exceptions is an outdated hotel limit') rests on it.
+3. [unsupported_causal] at: "The app clearly reduces exceptions, and rolling it out to all units should bring the Group exception rate down to around 9%." -- The document states Sales and Field Engineering claims are mostly mileage claims, which need no receipts, while other units' claims are mostly hotel/rail/meal claims. Since missing receipts are the main exception type, the claim mix confounds the comparison; it does not show the app caused lower exception rates.
+
+REVIEW:
+# Review: Internal Audit Memo on Travel and Subsistence Expense Claims, FY2025-26
+
+The memo's two main conclusions do not hold up against its own evidence. The table contradicts the claim that over-limit spending is the leading exception, and the 9% vs 21% comparison for the mobile app is confounded by the claim mix in Section 5. The opinion in Section 7 rests on both, so it needs rewriting.
+
+## Major issues
+
+**1. The memo misidentifies the most common exception.**
+- Section 4 and Section 7 say over-limit spending is "the most common exception" and "the main source of exceptions."
+- Table 1 shows missing or non-itemised receipts are the most common: 22 claims (9.2%) against 14 claims (5.8%) over limit.
+- Even if every over-limit claim were caused by the hotel limit, that would explain at most 14 of the 38 claims with exceptions, and only 11 involved hotels.
+- No recommendation addresses missing receipts, which is the largest problem.
+
+**2. The hotel limit is stated inconsistently.**
+- Section 2 gives the limit outside London as £110 per night.
+- Section 4 compares the £134 average against "the £120 limit."
+- One figure is wrong. This affects how far over the limit claimants are, and the case for Recommendation 6.2.
+
+**3. The mobile app evidence is confounded.**
+- Section 5 says Sales and Field Engineering claims are mostly mileage, which needs no receipts. Other units' claims are mostly hotels, rail and meals.
+- Those are exactly the claim types that produce the two biggest exception categories: missing receipts and over-limit spending.
+- So the 9% vs 21% gap could come entirely from claim mix, not the app.
+- There is no before-and-after comparison for the adopting units.
+- The app was adopted in September 2025, partway through the year. It is unclear whether the 9% includes claims made before adoption.
+- "The app clearly reduces exceptions" and the forecast of a Group-wide rate of about 9% are therefore unsupported. The rate is also unlikely to fall to 9% for units whose claims mostly need receipts and are subject to limits.
+- Recommendation 6.3 should be reframed as a pilot with a proper comparison, for example like-for-like claim types before and after adoption.
+
+**4. The policy-fix conclusion rests on weak evidence.**
+- The evidence that the limit, not claimant behaviour, causes non-compliance comes from approvers saying it is "difficult" in "several regional cities."
+- Approvers signed off the over-limit claims, so they are not independent witnesses.
+- There is no market-rate data and no breakdown by city.
+- A limit review (6.2) is reasonable, but the memo should not draw conclusions about claimant behaviour from this evidence.
+
+**5. The generalisation claim is overstated.**
+- The sample was stratified by business unit, but the memo does not say whether results were weighted back to population proportions.
+- Unweighted rates from a non-proportional stratified sample cannot simply be applied to all 9,860 claims.
+- No confidence intervals are given. Rates based on 3 to 14 claims carry wide uncertainty; for example, 3 out of 240 duplicates gives an interval of roughly 0.3% to 3.6%.
+- The unit-level rates of 9% and 21% come from even smaller subsamples.
+
+**6. The impact of the approval flaw is not actually quantified.**
+- The £1,960 figure is the sample value of the six self-approved or junior-approved claims. It is not extrapolated to the population.
+- It is also the full claim value, not the improper amount.
+- There is no estimate of population exposure. Scaling 2.5% to the population suggests roughly 250 claims.
+- No recommendation calls for a review of all self-approved claims in the year. This is needed, especially since three were self-approved by senior managers.
+
+## Other issues
+
+- **Duplicate claims are rated too low.** Scaled to the population, duplicates could number around 120. Submitting the same receipt image twice is a fraud indicator, not just an error. "Refunded once questioned" means they were found by audit, not by the control. A Low rating for 6.4 seems inappropriate, and the memo should say whether the duplicates were referred for investigation.
+- **Mileage claims are not tested.** The memo does not say whether journey logs were checked for mileage claims. This matters because those claims dominate the units held up as low-exception.
+- **The opinion in Section 7 needs revising.** Its two supporting claims (over-limit spending as the main source, and the app as a "proven route") are not supported. Limited assurance may still be the right rating, but the reasoning should rest on the approval weakness, the receipt failures and the duplicates.
+
+## Arithmetic check
+The exception counts add up to 45 against 38 claims with at least one exception. That fits the statement that some claims had more than one. The overall rate of 15.8% is consistent with 9% and 21% if the two app units make up roughly 40% of the sample. That share, and whether it matches their share of the population, should be stated.
+
+OTHER PROBLEMS LISTED:
+  O1. No recommendation addresses missing or non-itemised receipts, the largest exception category
+  O2. The claim that the limit, not claimant behaviour, drives non-compliance rests on approvers' testimony; approvers are not independent and no market-rate data is given
+  O3. Stratified sample results are not said to be weighted to the population, and no confidence intervals are given for small counts
+  O4. The approval flaw's impact (£1,960) is not extrapolated to the population, and no full review of self-approved claims is recommended
+  O5. Duplicate claims are under-rated (Low priority), are a fraud indicator, and were found by audit rather than by a control; referral for investigation is not addressed
+  O6. There is no evidence that mileage journey logs were tested, though mileage dominates the low-exception units
+  O7. App adopted mid-year (September 2025); unclear whether the 9% rate includes pre-adoption claims, and there is no before/after comparison
+  O8. The two app units' share of the sample is not stated, nor whether it matches their share of the population

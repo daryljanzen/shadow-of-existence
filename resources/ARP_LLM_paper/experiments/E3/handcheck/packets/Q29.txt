@@ -1,0 +1,80 @@
+ITEM: E3-11
+
+KEY:
+1. [arithmetic] at: "PayNorth | £68,000 | £54,000 | £212,000" -- PayNorth's three-year total should be £68,000 + 3 x £54,000 = £230,000, not £212,000. Correctly computed, Clearledger (£225,000) is cheapest, so PayNorth should not receive full cost points and the 'lowest three-year cost' claim and recommended contract value are wrong.
+2. [inconsistency] at: "Licence prices are per-employee-per-month quotes applied to our headcount of 1,250." -- The Background states Ostrander employs 1,450 people, but licence costs are calculated on a headcount of 1,250. The headcount contradicts itself, and the licence costs are understated if 1,450 is correct.
+3. [unsupported_causal] at: "This demonstrates that PayNorth's automated validation rules substantially reduce errors" -- The 40% fall is a before/after change at reference sites that, as the document itself states, simultaneously moved from paper to electronic timesheets and retrained payroll teams. The improvement cannot be attributed to PayNorth's validation rules (and reference customers are vendor-selected).
+
+REVIEW:
+# Review: Payroll and HR System Replacement Paper
+
+The paper is clearly structured, but it has two factual errors that change the cost ranking. It also has a reference claim that the evidence doesn't support. The recommendation of PayNorth still holds on the corrected scores, but the stated reasons for it don't.
+
+## Critical issues
+
+**1. PayNorth's three-year total is wrong.**
+£68,000 + (3 × £54,000) = **£230,000**, not £212,000. The Clearledger (£225,000) and Stafflow (£236,000) totals are correct. This changes the ranking:
+
+| Vendor | Corrected 3-yr total | Rank |
+|---|---|---|
+| Clearledger | £225,000 | 1 |
+| PayNorth | £230,000 | 2 |
+| Stafflow | £236,000 | 3 |
+
+Clearledger, not PayNorth, is the lowest-cost bid. The sentence after Table 1 and the cost claim in Section 8 are both wrong. The contract value in the recommendation is understated by £18,000.
+
+**2. The cost scores and totals need recalculating.**
+Cost points are proportional to the lowest bid, so the corrected baseline is £225,000:
+
+| Vendor | Func. | Cost (corrected) | Impl. | Refs | Total | Paper's total |
+|---|---|---|---|---|---|---|
+| PayNorth | 34 | 29 (29.3) | 16 | 9 | **88** | 89 |
+| Clearledger | 31 | 30 | 17 | 7 | **85** | 83 |
+| Stafflow | 35 | 29 (28.6) | 13 | 8 | **85** | 83 |
+
+PayNorth still ranks first, but by **3 points, not 6**. The paper should say it won despite not being cheapest, mainly on functionality and references.
+
+**3. The headcount is inconsistent.**
+Section 1 gives 1,450 employees, but Section 3 prices licences on 1,250. If 1,450 is correct, every licence figure is understated by 16%. Rescaled, the three-year totals become roughly:
+
+- Clearledger: £254k
+- PayNorth: £256k
+- Stafflow: £259k
+
+The bids are then almost level, and the budget is about £25–30k higher than shown. The paper should confirm which figure the suppliers were asked to price, and whether pricing counts active employees or all records processed.
+
+**4. The reference evidence doesn't show what the paper claims.**
+Section 5 says the 40% error reduction "demonstrates that PayNorth's automated validation rules substantially reduce errors." But the same paragraph says all three reference customers also:
+
+- moved from paper to electronic timesheets, and
+- retrained their payroll teams.
+
+Either change could explain much or all of the improvement, so the reduction can't be credited to PayNorth's software. Other weaknesses:
+
+- Three vendor-chosen references is a small and favourable sample.
+- We don't know whether Ostrander's starting point is comparable. Are our timesheets already electronic?
+
+The £15,400 figure is arithmetically correct (2,140 × 40% × £18). But it should be presented as an upper-bound illustration, not an expected saving. The phrase "reference evidence that its software materially reduces payroll errors" in Section 8 should be softened.
+
+## Other points to address
+
+- **Stafflow's functionality score.** Stafflow leads on functionality "because of its rostering module, although we would not use this initially." Scoring an unused module raises the question of whether the scoring followed the pre-agreed criteria. If rostering were excluded, Stafflow's score would likely fall, so explain or adjust it.
+- **Clearledger's timesheet add-on.** Is the third-party add-on included in Clearledger's quote? If not, its costs are understated. If so, say so.
+- **Clearledger's implementation score.** Clearledger scored highest on implementation and support (17) even though two of three references reported overruns of 3+ months. That needs a brief justification.
+- **Project costs outside the comparison.** The backfill for two seconded payroll officers over nine months is a real cost but isn't in Table 1. It probably applies to all vendors, but the Board should see a total project budget, not just supplier costs.
+- **Timeline.** The plan (nine months to an April 2027 go-live, eight months' contingency) works only if the contract starts around July 2026. If approval or contracting has slipped since June, rebase the dates and restate the contingency. Clearledger's history of overruns also deserves mention here, since a 3+ month overrun would eat a large part of the buffer.
+
+## Suggested revisions to Section 8
+
+- Replace "lowest three-year cost" with an accurate statement, e.g. "within 2% of the lowest-cost bid".
+- Change the margin from six points to three.
+- Correct the contract value to £230,000, or the restated figure once headcount is confirmed.
+- Reframe the reference evidence as "reference customers reported lower error rates following implementation alongside wider process changes".
+
+OTHER PROBLEMS LISTED:
+  O1. Stafflow's functionality score includes credit for a rostering module that will not be used initially, which raises doubt about whether scoring followed the pre-agreed criteria
+  O2. Unclear whether the cost of Clearledger's third-party timesheet add-on is included in its quote
+  O3. Clearledger scored highest on implementation and support despite references reporting overruns of more than three months
+  O4. Backfill for the seconded payroll officers and other internal project costs are left out of the cost comparison and budget
+  O5. The timeline depends on a contract start around July 2026, so contingency should be restated if approval slips
+  O6. Small, vendor-selected reference sample, and Ostrander's baseline may not be comparable to the reference sites

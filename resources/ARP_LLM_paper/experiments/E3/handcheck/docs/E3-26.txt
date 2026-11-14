@@ -1,0 +1,46 @@
+Market Analysis: Launching a Digital Subscription for the Calderbrook Courier
+Commercial Strategy, Calderbrook Media, April 2026
+
+1. Purpose
+The Calderbrook Courier's website is free to read and funded by display advertising, which has declined by about 12% a year for three years. This paper assesses the market for a metered digital subscription, in which readers can view five articles a month free before being asked to subscribe, and recommends a price and launch plan.
+
+2. Our audience
+The website had an average of 420,000 monthly unique users (MUU) in 2025, of whom around 60% live in the Courier's circulation area. The printed Courier has 11,200 subscribers paying £18.50 a month for six-day home delivery, plus around 6,000 daily news-stand sales. Print subscribers are older on average than web readers, and most also use the website.
+
+In our March 2026 survey of print subscribers (1,850 responses), 30% said they would cancel their print subscription and take a digital-only subscription instead if one were offered at under £6 a month.
+
+3. Evidence from comparable titles
+We obtained data, under confidentiality agreements, from four regional titles that launched metered subscriptions between 2022 and 2024.
+
+Table 1. Comparable regional titles, second year after launch
+Title | Monthly unique users | Digital subscribers | Subscribers as % of MUU | Monthly price
+Title A | 360,000 | 6,800 | 1.9% | £5.99
+Title B | 280,000 | 3,100 | 1.1% | £4.99
+Title C | 390,000 | 9,400 | 2.4% | £7.99
+Title D | 300,000 | 4,200 | 1.4% | £3.99
+
+All four titles reported that subscriber numbers stabilised by the end of the second year, and that churn settled at between 3% and 5% a month after promotional periods ended.
+
+4. Price
+Conversion rates across the comparable titles are highest for the titles charging the lowest prices, which suggests that our audience will respond best to a low price point. We therefore propose a price of £4.99 a month, with an introductory offer of £1 for the first three months.
+
+5. Projection
+The average conversion rate of the four comparable titles is 2.0% of MUU. Applied to our 420,000 MUU, that gives about 8,400 subscribers by the end of year two. At £4.99 a month, 8,400 subscribers would generate around £503,000 a year in subscription revenue.
+
+Table 2. Year-two projection
+Item | Annual amount
+Subscription revenue | £503,000
+Subscription platform and payment fees | £85,000
+Marketing | £60,000
+Net contribution | £358,000
+
+We expect a modest reduction in display advertising revenue as page views from non-subscribers fall when they reach the meter; the comparable titles reported falls of 5% to 8% in page views. Our display revenue was £1.1 million in 2025, so a fall of this size would cost between £55,000 and £88,000 a year, which is well covered by the projected net contribution.
+
+6. Launch plan
+- Platform selection and integration: May to July 2026.
+- Soft launch with a ten-article meter: September 2026.
+- Full launch with a five-article meter: November 2026.
+- Review of price and meter after six months.
+
+7. Conclusion
+The evidence from comparable titles shows a viable market for a Courier digital subscription. At £4.99 a month, a price that the comparable titles' experience suggests will maximise take-up, we project around 8,400 subscribers and a net contribution of £358,000 a year, more than offsetting the expected effect on display advertising. We recommend approval to proceed with the launch plan.

@@ -1,0 +1,130 @@
+ITEM: E3-22
+
+KEY:
+1. [arithmetic] at: "Average settlement time fell by 4.4 days, a 38% improvement." -- A fall from 14.2 to 9.8 days is 4.4 / 14.2 = 31%, not 38%.
+2. [inconsistency] at: "Raise the fast-track threshold from £1,000 to £3,000 from January 2027." -- Sections 1 and 2 state the current fast-track threshold is £1,500; the recommendation says it is £1,000.
+3. [missing_consideration] at: "Extending it to claims up to £3,000 is the natural next step" -- Fast-tracked claims bypass fraud screening, and the document's own SIU data show claims of £1,500-£3,000 are 22% of volume but 41% of confirmed fraud. The recommendation counts only handling savings and never addresses the fraud exposure of paying these claims without review (the fall in fraud referrals may itself reflect less screening).
+
+REVIEW:
+# Review: Post-Implementation Review of Automated Triage for Home Claims
+
+## Overall assessment
+
+The operational gains may well be real. But the review has an arithmetic error in its headline figure, a contradiction about the current threshold, and a before/after comparison that is not like-for-like. Most seriously, it does not engage with the fraud evidence it presents. Its own data shows fraud detection falling sharply after launch. The recommendation would extend fast-tracking into the claim band the SIU identifies as the highest fraud risk. As written, the document does not support recommendation 6.1.
+
+## Major issues
+
+### 1. The fall in fraud referrals is reported but never discussed
+
+- Table 1 shows fraud referrals dropping from 6.1 to 3.9 per 1,000 claims, a fall of about 36%.
+- Section 2 says fast-tracked claims are no longer sampled by fraud screening.
+- The likeliest explanation is that we stopped looking at 38% of claims, not that fraud fell.
+- The SIU says claims under £1,500 accounted for 14% of confirmed fraud. That segment is now largely unscreened.
+
+The review does not measure fraud or leakage in fast-tracked claims. That means:
+- The £492k net saving takes no account of any increase in fraudulent or inflated payouts.
+- The financial case is incomplete.
+
+### 2. Recommendation 6.1 moves into the highest-risk band without addressing it
+
+Section 5 states that claims of £1,500–£3,000 are:
+- 22% of volume, but
+- 41% of confirmed fraud,
+- with false or inflated contents claims the most common type.
+
+That is nearly twice their share of volume. Yet Section 5 is never mentioned in the recommendations or conclusion. Several claims in the review don't hold up against this:
+
+- **"Same rules, same checks" is a weakness, not a reassurance.** The rules were designed and back-tested for claims under £1,500. They have not been shown to work in a band with a very different fraud profile.
+- **No mitigating controls are proposed.** There is no reinstated fraud sampling, post-payment audit, or contents-specific rule.
+- **The £409k estimate ignores expected fraud losses.** A band containing 41% of confirmed fraud could plausibly offset much or all of that saving. That needs to be quantified before proceeding.
+
+### 3. Threshold inconsistency
+
+- Sections 1–2 say the threshold is £1,500.
+- Recommendation 6.1 says "raise the fast-track threshold from £1,000 to £3,000".
+
+One of these is wrong. If the live threshold is actually £1,000, the 38% share, the back-test and the extension estimate all need re-checking.
+
+### 4. The settlement-time headline is miscalculated
+
+- A fall of 4.4 days from 14.2 days is **31%**, not 38%.
+- 38% is the fast-track share, so the figures appear to have been conflated.
+- The "38% improvement" in the author's summary should be corrected.
+
+### 5. The periods are not like-for-like
+
+- October–February is winter; April–August is spring and summer.
+- Home claims differ by season. Winter brings storm, escape-of-water and frozen-pipe claims, which are typically more complex, slower to settle and lower in satisfaction.
+- Part of the improvement in settlement time, satisfaction and handler hours may be seasonal.
+- Excluding March removes transition noise but does nothing about seasonality.
+
+The analysis should:
+- compare against the same months of 2025, or
+- adjust for claim mix by peril.
+
+## Further weaknesses
+
+### Settlement time is not broken down
+
+- An all-claims average falls mechanically when 38% of claims are paid within 48 hours.
+- The review should show settlement times for handler-managed claims separately, so we can see whether that service held up or got worse.
+
+### Satisfaction is not segmented
+
+- There is no split between fast-tracked and handled customers, and no response rates.
+- "Largest movement we have recorded in a single year" compares different time spans, and seasonality may explain part of it.
+
+### "Declined by the automated checks" contradicts Section 2
+
+- Section 2 says flagged claims are passed to a handler.
+- The complaints paragraph says customers were *declined* by the automated checks without a reason.
+
+If the system is declining claims automatically, that is:
+- a significant undisclosed feature, and
+- a conduct and Consumer Duty issue, not just a communication fix.
+
+This needs clarifying. Also, "few" complaints should be given as a number.
+
+### The back-test validates volume, not accuracy
+
+- Predicting 36% of claims fast-tracked and seeing 38% in live use shows the rules route claims at the expected rate.
+- It says nothing about whether the right claims were fast-tracked, including whether fraudulent ones got through.
+- "No changes needed after go-live" is not evidence of correct performance when nobody is checking fast-tracked outcomes.
+
+### The extension estimate is not explained
+
+- It is unclear how fast-tracking rises from 38% to 55%. That would mean fast-tracking about three-quarters of the £1,500–£3,000 band, far above the current rate.
+- Implied hours saved per claim rise from about 1.0 to about 1.5. This may be reasonable, but it should be stated and justified.
+
+### Indemnity spend is missing
+
+- The review reports handling costs only.
+- It does not show whether average payouts on comparable claims changed once handler scrutiny was removed.
+
+### Savings are presented as cash
+
+- Fewer handler hours partly went into absorbing higher volumes.
+- Only the reduction in agency staff is clearly a cash saving.
+
+## Suggested changes before any decision on 6.1
+
+1. Correct the 38% figure and resolve the £1,000 vs £1,500 threshold discrepancy.
+2. Redo the comparison against the same months a year earlier, or adjust for peril mix.
+3. Run a retrospective fraud audit on a sample of fast-tracked claims to estimate leakage. Net the result against the savings.
+4. Reinstate fraud sampling of fast-tracked claims, whatever happens with the threshold.
+5. If an extension is still pursued, design and back-test rules specifically for the £1,500–£3,000 band, with particular attention to contents claims. Consider a staged step (for example, to £2,000) with fraud metrics as explicit go/no-go criteria.
+6. Clarify whether the system declines claims, and address the conduct implications.
+7. Split settlement time and satisfaction by route (fast-track vs handler).
+
+The fixes for declined customers and the quarterly rule reviews (6.2 and 6.3) are sensible. 6.3 should explicitly include fraud and leakage metrics.
+
+OTHER PROBLEMS LISTED:
+  O1. Before/after periods are not like-for-like: winter vs spring/summer seasonality may explain part of the improvement
+  O2. All-claims settlement time falls mechanically when fast-tracked claims are included; handler-managed claims are not broken out
+  O3. Satisfaction is not segmented by route, response rates are not given, and the 'largest movement in a single year' comparison is questionable
+  O4. Complaints about claims 'declined by the automated checks' contradict Section 2, which says flagged claims go to a handler; this is a possible conduct/Consumer Duty issue, and 'few' complaints is not quantified
+  O5. The back-test validates routing volume, not whether the right claims were fast-tracked; 'no changes needed' is not evidence of correct performance
+  O6. The extension estimate (38% to 55%, 1,100 hours) is unexplained and implies higher hours saved per claim
+  O7. Indemnity spend and average payout changes are not reported; only handling costs are counted
+  O8. Handler-hour reductions are presented as cash savings, though part was absorbed by higher volume
+  O9. Rules designed and back-tested for claims under £1,500 are unproven for the £1,500-£3,000 band, and no mitigating controls are proposed

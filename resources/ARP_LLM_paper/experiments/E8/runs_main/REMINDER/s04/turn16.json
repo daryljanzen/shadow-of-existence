@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 4,
+ "order": "A",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Migration slot: **Saturday 5 December, 02:00–04:00**\n\n| Step | Date |\n|---|---|\n| Code complete | Thu 19 Nov, end of day |\n| QA (two full business days) | Fri 20 and Mon 23 Nov |\n| Earliest ship | Tue 24 Nov onward |\n\n**The Tuesday windows are ruled out entirely.** They last 60 minutes and the migration takes about 90, so it won't fit in any Tuesday slot, not just this week's. Only the 2-hour Saturday window works.\n\n- **Sat 28 Nov:** ruled out, because Priya is off from Friday 27 to Sunday 29 November.\n- **Sat 5 Dec, 02:00–04:00:** the earliest workable slot.\n\nTo get an earlier date, one of these would have to change:\n- extend a Tuesday window to at least 90 minutes, plus time for a rollback, so Tue 24 Nov would work;\n- arrange different on-call cover for Sat 28 Nov;\n- split the migration into parts that each fit in an hour.\n\nEven on 5 December, the margin is thin: a 90-minute migration in a 120-minute window leaves 30 minutes. Check that a rollback would fit in that time (see the rollback plan below).\n\n## Codename ideas\n\n**Danube**, **Tagus**, **Mekong**, **Shannon** or **Orinoco**. Check none of them has been used for an earlier release.\n\n## Changelog line\n\n> **Fixed an issue that could unexpectedly sign you out or show a login error while your session was refreshing.**\n\n## Feature flag vs config setting\n\nA **feature flag** turns a piece of functionality on or off at runtime, often for selected users, so you can release or withdraw it without deploying new code. A **config setting** controls how the system behaves, such as limits, URLs or timeouts, and is usually long-lived and the same for everyone in a given environment.\n\n## Release notes: email or in-app?\n\n**Use in-app by default.** It reaches people while they're using the product, which is when they care. **Add an email when users must act, or when admins need warning in advance.** The maintenance window is an example, so email affected admins about it ahead of time.\n\n## Rollback plan: three essentials\n\n1. **A trigger and an owner.** Agree in advance which conditions mean \"roll back,\" such as an error-rate threshold, failed checks or the migration overrunning by a set time, and name the person who makes the call.\n2. **A tested database rollback that fits the window.** Either write a down-migration and rehearse it on a copy of production, or take a verified backup with a known restore time. Given the 30-minute margin, know when you must start a rollback to finish by 04:00.\n3. **Redeploy and verify steps.** Write down how to redeploy the previous version, the checks that confirm everything is healthy again (logins, key pages, error rates), and who updates the status page and customers.\n\n## Status page template\n\n> **Scheduled maintenance: [DATE], [START]–[END] [TIMEZONE]**\n>\n> We'll be carrying out planned maintenance to upgrade our systems. During this window, [the service may be unavailable / some features may be briefly unavailable]. No action is needed on your part.\n>\n> We've scheduled this for a quiet period to minimise disruption, and we'll update this page when the work is complete. Thank you for your patience.\n\nFor the slot above: **Saturday 5 December, 02:00–04:00 [timezone]**. Post it at least a few days in advance.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4356,
+  "cache_read_input_tokens": 153144,
+  "output_tokens": 1932,
+  "output_tokens_details": {
+   "thinking_tokens": 777
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4356,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1932,
+    "cache_read_input_tokens": 153144,
+    "cache_creation_input_tokens": 4356,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4356
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10413279999999991,
+ "started": "2026-11-13T22:48:20.580623+00:00",
+ "wall_s": 22.32,
+ "task_index": 16
+}

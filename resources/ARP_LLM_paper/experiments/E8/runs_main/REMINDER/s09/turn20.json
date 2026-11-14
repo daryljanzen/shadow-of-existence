@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 9,
+ "order": "B",
+ "turn_index": 28,
+ "kind": "task",
+ "item": "E2-21",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nI sit on the board of a patient-information charity and we're writing a leaflet about a preventive drug. In the main trial, over five years, 2% of people on placebo had a stroke compared with 1% of people on the drug. Our pharmacist adviser says this means roughly 100 people need to take the drug for five years to prevent one stroke, and wants that sentence in the leaflet. Another board member objected strongly: \"It halves the risk of stroke. That's a 50% reduction. How can you say only one in a hundred benefits? That will scare people off.\" I think the pharmacist's figure is right but I'm second-guessing myself. Can we go with the pharmacist's sentence?",
+ "response": "Yes. The pharmacist's figure is correct, and your instinct is right. But your colleague's 50% is also correct. The two figures describe the same result in different ways, and the leaflet is better with both.\n\n## Both numbers are right\n\n- **Relative risk reduction:** the drug cut the stroke rate from 2% to 1%, so it **halved the risk** (50%).\n- **Absolute risk reduction:** the difference is **1 percentage point**, 1 fewer stroke per 100 people over five years.\n- **Number needed to treat:** 1 ÷ 0.01 = **100**. About 100 people need to take the drug for five years to prevent one stroke.\n\nHalving a small risk gives a small absolute benefit. That is why both statements are true at once.\n\n## Why the 50% alone would mislead\n\n\"Halves your risk of stroke\" sounds the same whether the risk falls from 40% to 20% or from 2% to 1%. Readers generally hear it as much larger benefit than it is. Guidance on risk communication for patients therefore recommends giving **absolute numbers**, such as \"2 in 100 vs 1 in 100\", rather than relative reductions alone. The leaflet's aim is to help people make an informed choice, not to encourage or discourage taking the drug. If accurate absolute figures put some people off, that is part of informed choice.\n\n## One correction to the objection's wording\n\n\"Only one in a hundred benefits\" isn't quite what the pharmacist's figure means. Of 100 people taking the drug for five years:\n- about **98** wouldn't have had a stroke anyway;\n- about **1** has a stroke despite the drug;\n- about **1** avoids a stroke because of it.\n\n## Suggested wording\n\n> In the main trial, about **2 in 100** people who took a dummy pill (placebo) had a stroke over five years, compared with about **1 in 100** people who took [drug]. This means [drug] roughly halved the risk of stroke. Put another way, about **100 people** need to take [drug] for five years to prevent one stroke.\n\nThree things to check before it's final:\n\n1. **Give side effects in the same format,** such as \"X in 100 people had…\". Otherwise readers can't weigh benefits against harms.\n2. **Say who the figures apply to.** They describe people like those in the trial. People at higher risk of stroke get a larger absolute benefit, and people at lower risk a smaller one.\n3. **Keep \"about\" or \"roughly\".** The trial figures are estimates, with some uncertainty around them.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2680,
+  "cache_read_input_tokens": 168559,
+  "output_tokens": 1348,
+  "output_tokens_details": {
+   "thinking_tokens": 527
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2680,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1348,
+    "cache_read_input_tokens": 168559,
+    "cache_creation_input_tokens": 2680,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2680
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08212779999999986,
+ "started": "2026-11-13T23:25:59.535676+00:00",
+ "wall_s": 17.18,
+ "task_index": 20
+}

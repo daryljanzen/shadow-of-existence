@@ -1,0 +1,66 @@
+ITEM: E3-20
+
+KEY:
+1. [misread_evidence] at: "Most staff prefer the Central office" -- Table 2 shows 34% prefer Central and 41% prefer Salford Quays (25% no preference). Salford is the more preferred location and Central is not a majority preference. The text and recommendation misstate the survey.
+2. [unsupported_causal] at: "Co-locating all staff in the refurbished Central space should therefore speed up delivery across the firm" -- The 12% difference compares different kinds of project: the document states Central runs smaller, short-programme commissions while Salford leads multi-year infrastructure frameworks with many stakeholders. Project type confounds the comparison; it does not show the refurbished space caused faster delivery.
+3. [missing_consideration] at: "Average combined daily occupancy of 166 fits comfortably within the 180 desks at Central." -- Table 1 shows combined occupancy on Tuesdays and Wednesdays averages 248, far above Central's 180 desks. The capacity case uses only the daily average and never addresses the peak-day shortfall of about 68 desks, although the conclusion that consolidation 'fits comfortably' depends on it.
+
+REVIEW:
+# Review: Single Manchester Office Business Case
+
+The financial arithmetic holds up, but three of the four pillars in your summary are contradicted or undermined by the document's own data. A committee member reading the tables closely would likely catch these, so they need fixing before submission.
+
+## Critical issues
+
+**1. The survey favours Salford, not Central.**
+Table 2 shows Salford Quays at 41% and Central at 34%. The text says "Most staff prefer the Central office", and your summary says the survey "supports Central". Both are wrong: no option has a majority, and Salford leads by 7 points. The response rate is fine (221/290 = 76%), but the conclusion drawn from it is not.
+*Fix:* Report the result accurately. Then argue for Central on other grounds, such as rail access or the Central lease running to 2034, and explain how you will handle the plurality who prefer Salford. You could also break results down by current office. If Central staff are split, that is useful context.
+
+**2. Capacity is sized to the average, not the peak.**
+Combined Tuesday/Wednesday occupancy is **248**, which is 68 more than Central's 180 desks. Sizing to the daily average of 166 means Central is over capacity on the two busiest days of every week. There are two further problems:
+- The refit adds "a higher proportion of collaboration space and shared desks", which probably *reduces* desk count below 180. The post-refit figure is not stated.
+- Even the average leaves little headroom (92% utilisation), with no allowance for growth or for project-room demand from the infrastructure teams.
+
+*Fix:* State the post-refit desk count. Show the peak-day position, and either propose a mitigation (e.g., team-based anchor days that spread attendance, with modelled numbers) or acknowledge that more space or a lower peak is needed. "Does not require any new space" cannot stand as written.
+
+**3. The 12% delivery improvement is confounded.**
+Section 4 itself says Central runs smaller, short-programme commissions, while Salford runs multi-year infrastructure frameworks with many external stakeholders. The 12% gap is therefore a comparison of different project types, not of office environments. There is also no before/after comparison: we don't know whether Central projects improved *after* the 2024 refurbishment. "Demonstrably improved project delivery" in the recommendation is not supported.
+*Fix:* Either compare Central projects before and after 2024, or compare like-for-like project types across offices. If neither is possible, present collaboration as a qualitative, unquantified benefit.
+
+## Financial points
+
+- **Arithmetic checks out:** £593k − £490k = £103k in year one, plus 6 × £593k = £3.66m over seven years.
+- **"Conservative" is not quite right.** The case counts only the costs avoided at Salford. It includes no added costs at Central, such as higher utilities, cleaning or service-charge share, removals and IT migration, or any retention or HR costs. It has no contingency on the refit or the dilapidations estimate, and no discounting. The £593k may also understate Salford's true running cost, since it excludes utilities, cleaning, security and insurance. Present a fuller net figure with a contingency.
+- **Peak-capacity solutions would cost money.** Any fix for Issue 2 (extra space, more meeting rooms) feeds directly into the savings figure.
+- **The recommendation asks for only part of the money.** It requests the £340k refit but not the £150k dilapidations, which is a committed cost of serving notice. Ask for approval of the full £490k.
+
+## Timing
+
+The paper is dated May 2026 and the break date is 31 March 2027. Break clauses usually require 6 to 12 months' notice and often have strict conditions, such as vacant possession and rent paid up to date. Confirm the notice deadline and conditions now. If the deadline has passed or is close, the whole proposal may hinge on it.
+
+## Smaller points
+
+- 290 staff against 300 desks across both offices is stated without comment. Was the current estate already near capacity before hybrid working?
+- The client-perception risk deserves more than one line, given that infrastructure is presumably a large share of revenue. The dedicated project rooms that infrastructure staff raised also need a concrete answer: how many rooms will the refit provide?
+- The risk section should add capacity overrun on peak days and the possibility of losing the break option.
+
+## Suggested reframing of your summary
+
+The strong, defensible case is financial: roughly £0.6m a year saved, with payback inside year one. Lead with that, and be candid about the rest:
+- Staff are split, with a slight preference for Salford.
+- Peak demand exceeds Central's capacity and needs managing.
+- The collaboration benefit is plausible but not yet evidenced.
+
+A case that acknowledges these will be more persuasive to the committee than one whose own tables contradict its claims.
+
+OTHER PROBLEMS LISTED:
+  O1. Refit to more collaboration space and shared desks likely reduces Central's desk count below 180; post-refit count not stated
+  O2. Even average occupancy leaves little headroom (92%), with no allowance for growth or project-room demand
+  O3. No added costs at Central, no contingency on refit or dilapidations, no discounting; savings overstated as net
+  O4. £593k may understate Salford's true running cost because it excludes utilities, cleaning, security and insurance
+  O5. Any peak-capacity fix would cost money and reduce savings
+  O6. Recommendation requests only the £340k refit, not the £150k dilapidations committed by serving notice
+  O7. Break-clause notice period and conditions not confirmed; the notice deadline may be close or already passed
+  O8. 290 staff against 300 desks stated without comment on prior capacity
+  O9. Client-perception risk is treated too briefly, and infrastructure staff's project-room concern lacks a concrete answer
+  O10. Risk section omits peak-day capacity overrun and loss of the break option

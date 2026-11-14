@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "REMINDER",
+ "session": 3,
+ "order": "B",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Before you answer, a reminder of how we work:\n\n1. Receive each claim at the weight it earned: not more because it is fluent or confident, not less because it is inconvenient. Hedging a supported claim distorts as much as overstating an unsupported one.\n2. Take in what was said before you answer. The part you do not take in is the part most likely to drop, and it is usually the hard one. Then move.\n3. Go to the source. Check specifics against the primary material, not a summary or your memory of it.\n4. Do not close what is open, and do not keep open what is closed. Say which is which, and what would settle an open question.\n5. Value the colleague who sees differently, and raise objections when you have them.\n6. Make your moves where they can be seen.\n7. Failures come in pairs. If you correct hard against one side, check that you have not landed on the other.\n\n---\n\nHey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Earliest migration slot: **Saturday 5 December, 02:00–04:00**\n\nHere's the timeline:\n\n| Date | What happens |\n|---|---|\n| Thu 19 Nov | Code complete (end of day) |\n| Fri 20 Nov, Mon 23 Nov | Two full business days of QA. QA finishes end of Monday. |\n| Tue 24 Nov, 22:00–23:00 | ❌ The window is 60 minutes. The migration needs about 90. |\n| Sat 28 Nov, 02:00–04:00 | ❌ Long enough, but Priya is off Fri 27 – Sun 29. |\n| Tue 1 Dec, 22:00–23:00 | ❌ 60 minutes again, too short. |\n| **Sat 5 Dec, 02:00–04:00** | ✅ Long enough, QA is done and Priya is available. |\n\nNote that the Saturday 02:00 window falls overnight from Friday 4 December into Saturday 5 December, so Priya's on-call starts on the Friday night.\n\n**This isn't just a scheduling clash:** a 90-minute migration can **never** run in a Tuesday window, so under the current rules it can only run on Saturdays. That costs you a week here, and it will affect every future release with a long migration.\n\n**Options to run it earlier,** all needing someone else's agreement:\n- **Saturday 28 November** with a different engineer on call, if one is qualified to cover the migration.\n- **An extended Tuesday window** on 24 November, if whoever owns the maintenance-window policy will approve it.\n- **Splitting or speeding up the migration** so each part fits in 60 minutes.\n\n**One more risk for 5 December:** a 90-minute migration in a 120-minute window leaves only 30 minutes spare. If it overruns or fails late, you may not have time to roll back inside the window. That's covered in the rollback plan below.\n\n## Codename\n\n**Danube** is my pick. It's recognisable and easy to say. If you've already used it, try Mekong, Severn or Orinoco.\n\n## User-facing changelog line\n\n> **Fixed:** an issue that could occasionally sign you out unexpectedly or cause actions to fail while your session was renewing.\n\nAdjust \"sign you out\" if the bug showed up differently for users, for example as error messages instead of logouts.\n\n## Feature flag vs config setting\n\nA **feature flag** switches a piece of functionality on or off, often for specific users or a percentage of them, so a feature can be released, tested or rolled back without deploying code. A **config setting** controls *how* the system behaves, such as timeouts, limits or URLs, and is usually set per environment and changed rarely.\n\n## Email or in-app release notes?\n\n**In-app as the default, plus a short email for v4.** In-app notes reach people while they're using the product, which is when they're relevant. A major release with a maintenance window is worth an email as well, so customers aren't surprised by downtime or changes. For routine minor releases, in-app alone is enough.\n\n## Three things for the rollback plan\n\n1. **A verified backup, and a tested way back.** Take a database snapshot right before the migration starts. Confirm in staging that you can restore it, or run the reverse migration, and **time it**. If restoring takes more than the 30 minutes left in the window, plan for that now.\n2. **A go/no-go point with a named decision-maker.** Agree in advance, for example: \"if the migration isn't finished by 03:30, or checks X and Y fail, we roll back.\" Name the person who makes the call, so nobody is debating it at 3 a.m.\n3. **App and schema compatibility.** Know which application version runs against which schema. Can the old (v3) app run against the new schema? If not, rolling back means reverting both the app and the database, in a specific order. Write that order down.\n\n## Status page template\n\n> **Scheduled maintenance: [DAY, DATE], [START TIME]–[END TIME] [TIMEZONE]**\n>\n> We'll be performing scheduled maintenance to prepare for our latest release. During this window, [PRODUCT NAME] may be unavailable or slower than usual, and you may need to sign in again afterwards.\n>\n> We've scheduled this for a low-traffic period to minimise disruption. We'll post an update here as soon as maintenance is complete. Thank you for your patience.\n\nFor 5 December, that would read: *Saturday 5 December, 02:00–04:00 [timezone]*. Check whether the timezone you use for the window matches what most of your customers expect.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3810,
+  "cache_read_input_tokens": 151625,
+  "output_tokens": 2350,
+  "output_tokens_details": {
+   "thinking_tokens": 856
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3810,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2350,
+    "cache_read_input_tokens": 151625,
+    "cache_creation_input_tokens": 3810,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3810
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10782099999999994,
+ "started": "2026-11-13T22:48:29.830707+00:00",
+ "wall_s": 26.39,
+ "task_index": 16
+}

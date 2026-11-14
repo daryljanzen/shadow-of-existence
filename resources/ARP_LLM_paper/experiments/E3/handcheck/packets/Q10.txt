@@ -1,0 +1,73 @@
+ITEM: E3-07
+
+KEY:
+1. [inconsistency] at: "Across our 124 rooms, 104 weekend nights a year and average weekend occupancy of 79%" -- The hotel is described as a 112-room hotel in the Context section, but the revenue estimate uses 124 rooms. With 112 rooms the same calculation gives 112 x 104 x 0.79 x £20 = about £184,000, not £204,000.
+2. [unsupported_causal] at: "This tells us that our weekend guests are not price sensitive at current levels" -- The only evidence is that occupancy rose from June to July after a June rate rise, but the document itself says July and August are the strongest months because of the harbour festival and school holidays. The seasonal rise confounds the comparison; it cannot show demand is price-insensitive (let alone that the higher price helped).
+3. [missing_consideration] at: "We have assumed weekend occupancy is maintained at 2025 levels, which we consider prudent given the evidence above." -- The document states that about 38% of Saturday-night bookings are wedding guests from the adjacent venue who stay only Saturday night. A two-night minimum would exclude or deter this group, but the revenue case assumes occupancy is maintained and never addresses the loss of these single-night Saturday bookings.
+
+REVIEW:
+# Review: Weekend Rate Restructure Proposal
+
+**Verdict: not ready to go.** The recommendation is clearly stated, but the three things you say make it low-risk don't hold up: the price-sensitivity test, the "conservative" floor, and the claim that the two-night minimum only adds value. There is also an arithmetic error in the headline figure. All of this is fixable, but a decision-maker who reads Sections 2 to 4 closely will likely spot the problems themselves.
+
+## Major issues
+
+### 1. The June-to-July "test" doesn't show low price sensitivity
+The document gives the reason itself in Section 2: July and August are the strongest months because of the harbour festival and school holidays. A rise from 81% in June to 89% in July is what the season would produce at any price. The £10 rise is confounded with the seasonal peak, so it tells us almost nothing about price response.
+
+To make this evidence usable, compare against something that controls for season:
+- July–September 2025 vs July–September 2024 (year on year, at the old and new rate).
+- Our occupancy change vs the comp set's over the same period (STR or similar).
+- Booking pace or conversion for July weekends before and after the change went live.
+
+If none of these are available, the honest position is "we have no direct evidence on price sensitivity." That makes the monitoring trigger more important, not less.
+
+### 2. The room count is wrong, and £204,000 is overstated
+Section 2 says the hotel has **112 rooms**. Section 5 uses **124**.
+- 124 × 104 × 79% × £20 ≈ **£204,000** (the figure in the document)
+- 112 × 104 × 79% × £20 ≈ **£184,000**
+
+### 3. £204,000 is a ceiling, not a floor
+Even with the room count corrected, the calculation assumes three things:
+- **Zero volume loss.** Holding occupancy flat is the most optimistic assumption, not the prudent one, especially given issue 1.
+- **Every occupied weekend room pays BAR.** Section 6 says corporate and contracted group rates are honoured, and wedding blocks are a large share of Saturdays. None of those room-nights get the £20 uplift.
+- **No displacement from the two-night minimum** (see issue 4).
+
+A prudent case would show a range. For example: revenue at flat occupancy using only BAR-paying room-nights, plus a sensitivity table (e.g. occupancy −2, −5 and −8 points) with the breakeven loss. A £20 rise on £145 is +13.8%, so revenue breaks even if weekend volume falls by roughly 12%, or about 9–10 occupancy points. That is a useful number for decision-makers to see.
+
+### 4. The two-night minimum conflicts with the wedding business
+Section 4 says weddings at Quayside Hall make up about **38% of Saturday-night bookings**, and those guests arrive Saturday and leave Sunday. A two-night minimum on Saturday stays hits exactly this segment. Those guests are unlikely to book an unwanted extra night. More likely they book at a competitor, or the couple moves the block elsewhere.
+
+So the unquantified effect of the minimum could be **negative**, not just "not counted." The document needs to:
+- State whether wedding blocks are exempt (as group bookings) and how new ones will be handled.
+- Quantify the single-night Saturday demand at risk.
+- Possibly limit the restriction to peak or sold-out dates, or use length-of-stay pricing instead of a hard minimum.
+
+It also isn't clear why a two-night minimum would "smooth occupancy" in shoulder months, where Saturdays are not selling out anyway.
+
+### 5. The dates need updating
+The document is dated April 2026 and proposes a 1 June 2026 start. If it goes to decision-makers now (November 2026), the start date, the 15 May channel-manager load and the "2025 baseline" framing are all out of date. If any part was implemented, 2026 actuals would be far better evidence than the June/July 2025 comparison.
+
+## Smaller points
+
+- **The value-for-money score of 8.4** was measured at £145, and being the cheapest in the set probably helps it. It doesn't show guests will rate us the same at £165, where we would match the cheapest competitor.
+- **"Recovered strongly since 2023"** has no supporting data. Add the 2023 and 2024 figures or remove the claim.
+- **The monitoring trigger** ("more than five points below 2025 for any month") is sensible but slow. It compares against a seasonal baseline that may itself move, and by the time a month's data is in, the next month is largely booked. A weekly pick-up threshold against pace would act earlier, and the document already says weekly pick-up will be reviewed. It should also say what "review the rate" means: who decides, and what the fallback is.
+- **Competitor positioning:** state where £165 sits (the bottom of the £165–£180 range). That is a stronger and more accurate argument than "everything points the same way."
+
+## Suggested change to the recommendation
+Replace "delivering at least £204,000" with something like:
+
+> "...expected to generate up to £[X] of additional annual room revenue if weekend occupancy holds, with breakeven at a volume loss of around [Y]%. The two-night minimum will exclude [wedding/group blocks] and apply to [dates]."
+
+The underlying case may well be sound, since being £20–35 below the comp set is a real signal. But the document currently presents itself as proven and low-risk, and the evidence supports "plausible, with risks we will monitor." That framing will hold up better in front of decision-makers.
+
+OTHER PROBLEMS LISTED:
+  O1. The £204k assumes every occupied weekend room pays BAR. Corporate, contracted group and wedding block rates will not get the £20 uplift, so the figure is a ceiling, not a floor.
+  O2. There is no sensitivity or breakeven analysis. A 13.8% price rise breaks even at roughly a 12% volume loss, and this should be shown.
+  O3. The dates are stale: the document is dated April 2026 and proposes a 1 June 2026 start, but it is now November 2026. 2026 actuals should be used if available.
+  O4. The value-for-money score of 8.4 was measured at £145 while the hotel was cheapest in its set, so it does not show guests will rate it the same at £165.
+  O5. The claim that weekend occupancy has 'recovered strongly since 2023' has no supporting data.
+  O6. The monthly monitoring trigger is slow, compares against a moving seasonal baseline, and does not define who decides or what the fallback is.
+  O7. It is unclear why a two-night minimum would smooth occupancy in shoulder months, when Saturdays are not selling out then.
+  O8. The document should state that £165 sits at the bottom of the comp set's range, rather than saying 'everything points the same way' (a phrase that does not appear in the document).

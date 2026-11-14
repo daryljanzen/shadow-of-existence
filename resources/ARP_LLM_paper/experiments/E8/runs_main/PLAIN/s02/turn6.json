@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 2,
+ "order": "A",
+ "turn_index": 14,
+ "kind": "task",
+ "item": "E1-26",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Post-incident admin, a few asks. Context: we're a 12-person B2B SaaS shop, we had a rough month with three separate outages.\n\n1. Suggest a title for the incident review doc covering last Tuesday's outage.\n2. Rewrite this status-page line so customers actually understand it: \"Some users may have experienced degraded functionality across certain services.\"\n3. Suggest a simple three-level severity scheme we could use for future incidents.\n4. Define \"MTTR\" in a sentence for the account manager.\n5. Our contract promises 99.9% monthly uptime. How many minutes of downtime does that allow in a 30-day month? This month (30 days) we've had three outages: 18 minutes, 12 minutes and 21 minutes. Have we breached the SLA? Someone in the channel said \"99.9% is about 43.8 minutes, we're fine\".\n6. Suggest three action items we could reasonably commit to after an outage like this, without promising things we can't actually deliver next quarter.\n7. Should the review be a meeting or async comments on the doc? A one-line recommendation is fine; half the team is in a different time zone, so meetings are awkward for us.\n\nTa.",
+ "response": "## 1. Incident review title\n\n**\"Incident Review: [Service/feature] Outage, Tuesday [DD Mon YYYY]\"**\n\nFor example: *\"Incident Review: API and Dashboard Outage, Tuesday 10 Nov 2026\"*. Keep it factual and avoid blame words like \"failure caused by…\". Since there were three outages this month, adding an ID such as \"INC-2026-11-03\" will help you cross-reference them.\n\n## 2. Status-page rewrite\n\nThe original doesn't tell customers what broke, who was affected, when, or whether it's fixed. A template:\n\n> **Between [14:05] and [14:26 UTC] on [date], [the dashboard and API] were unavailable for [all / some] customers. [Logins and data syncs failed during this time.] The issue is now resolved, and no data was lost. We're sorry for the disruption and will publish a summary of what happened and what we're changing.**\n\nOnly include \"no data was lost\" if you've confirmed it.\n\n## 3. Three-level severity scheme\n\n| Level | Meaning | Example | Response |\n|---|---|---|---|\n| **SEV1, Critical** | Core service down or data at risk for many or all customers | App or API unavailable; data loss | Immediate all-hands; status page within 15 min; updates every 30 min |\n| **SEV2, Major** | Significant feature broken or badly degraded, or one key customer blocked | Exports failing; severe slowness | On-call responds promptly; status page if customers notice |\n| **SEV3, Minor** | Limited impact, with a workaround available | Cosmetic bug; one non-critical integration delayed | Fix during working hours; no status page needed |\n\nWrite down who can declare a level, and allow upgrading or downgrading it as you learn more.\n\n## 4. MTTR for the account manager\n\n**\"MTTR (mean time to recovery) is the average time it takes us to restore service after an incident starts, so a lower number means we fix problems faster.\"**\n\nThe \"R\" can also mean repair, resolve or respond, so state which one you report and when the clock starts and stops.\n\n## 5. Uptime: yes, you've probably breached it\n\n**Allowed downtime in a 30-day month:**\n- 30 days × 24 h × 60 min = 43,200 minutes\n- 0.1% of 43,200 = **43.2 minutes**\n\n**Your downtime:** 18 + 12 + 21 = **51 minutes**\n- Uptime = 1 − 51 / 43,200 ≈ **99.88%**\n- That's **about 7.8 minutes over** the limit\n\n**Why \"43.8 minutes, we're fine\" is wrong on both counts:**\n- **The number:** 43.8 minutes is 0.1% of an *average* month (365 ÷ 12 ≈ 30.4 days). For a 30-day month the figure is 43.2.\n- **The conclusion:** 51 minutes exceeds both figures, so the threshold isn't the issue. Three outages add up to more than the allowance.\n\n**Before telling customers, check the contract wording:**\n- **Measurement period:** does it use calendar months or rolling 30 days?\n- **Exclusions:** are scheduled maintenance windows or force majeure excluded?\n- **Scope:** do partial or degraded outages count, and how is downtime measured?\n- **Service credits:** what credits are owed, and does the customer have to claim them?\n\nIf none of those reduce the count, you're in breach. It's better to tell affected customers yourselves than to have them work it out.\n\n## 6. Three realistic action items\n\n1. **Fix the specific cause of each outage**, or add a guard against it. Give each fix a named owner and a target date in the next few weeks, not \"improve reliability\".\n2. **Add monitoring and alerting for the failure points you missed**, so you detect issues before customers report them. Measure your time from start to detection.\n3. **Write or update a short runbook** for each incident type, and adopt the severity scheme and status-page template above. That way the next response is faster and more consistent.\n\nAvoid promising \"no more outages\" or a big architecture change you haven't scoped. Commit to small, verifiable items, then report back on them.\n\n## 7. Meeting or async?\n\n**Do it async on the doc with a set comment deadline (say 48 hours), and schedule a short call only if there are unresolved disagreements or decisions that need a live conversation.**",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1126,
+  "cache_read_input_tokens": 67782,
+  "output_tokens": 1730,
+  "output_tokens_details": {
+   "thinking_tokens": 293
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1126,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1730,
+    "cache_read_input_tokens": 67782,
+    "cache_creation_input_tokens": 1126,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1126
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.05718040000000002,
+ "started": "2026-11-13T22:08:32.381898+00:00",
+ "wall_s": 21.47,
+ "task_index": 6
+}

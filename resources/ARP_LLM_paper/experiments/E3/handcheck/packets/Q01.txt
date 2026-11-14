@@ -1,0 +1,74 @@
+ITEM: E3-23
+
+KEY:
+1. [misread_evidence] at: "It is highest among our longest-standing out-of-contract customers, those who have been out of contract for 12 months or more" -- Table 1 shows churn of 11.0% for customers out of contract for less than 12 months and 8.0% for 12 months or more. Churn is highest in the first year out of contract, so the retention offer in 5.1 is aimed at the wrong segment.
+2. [arithmetic] at: "The 16,340 customers lost in H1 therefore represent annualised revenue of about £7.4 million" -- 16,340 x £34 x 12 = £6,666,720, about £6.7 million, not £7.4 million.
+3. [inconsistency] at: "The spike in cancellations after the 8% April price rise" -- Section 2 states the April 2026 price rise was 6.5%; recommendation 5.2 refers to an 8% April price rise.
+
+REVIEW:
+# Review: Customer Churn Analysis, H1 2026
+
+**Verdict: not ready to go.** The main recommendation targets the wrong segment according to the document's own Table 1, and the headline revenue figure doesn't match the arithmetic. Both need fixing before decision-makers see it, because each undermines a claim the author's summary relies on.
+
+## Critical issues
+
+**1. Table 1 contradicts the main finding and Recommendation 5.1.**
+The text, conclusion and Recommendation 5.1 all say churn is highest among customers out of contract for 12 months or more. The table shows otherwise:
+
+| Segment | H1 churn rate | Churners |
+|---|---|---|
+| Out of contract < 12 months | **11.0%** | **7,040** (43% of all churn) |
+| Out of contract 12+ months | 8.0% | 3,840 (24%) |
+
+The rates are consistent with the counts (7,040 / 64,000 = 11.0%; 3,840 / 48,000 = 8.0%), so the table looks right and the narrative looks wrong. The data suggest churn peaks in the first year after the minimum term ends, which points to an offer timed around contract expiry, not one aimed at long-standing customers. The explanation that long-standing customers "accumulate dissatisfaction over time" is the opposite of what the numbers show and should be removed or rethought. Section 5.1, the 5.1 costing, and the Conclusion all need to change.
+
+**2. The £7.4 million figure is wrong.**
+16,340 × £34 × 12 = **£6.67 million**, about £6.7m. Reaching £7.4m would need about 18,100 churners. Since the author's summary uses this number to put the offer's cost in context, it needs correcting. Also:
+- It is the annual revenue of customers lost in **H1 only**. A full-year figure would be roughly double. Label it clearly either way.
+- About 21% of leavers cited moving home, and transfers within the network are already excluded, so many of these may be unavoidable. A "retainable revenue" figure would be more useful for judging the offer.
+
+**3. The price rise is stated as two different numbers.**
+Section 2 says **6.5%**. Recommendation 5.2 says **8%**. One is wrong.
+
+## Significant issues
+
+**4. The retention offer has no cost-benefit case.** The cost is calculated correctly: 48,000 × £34 × 12 × 10% ≈ £1.96m at full take-up, or about £0.8m at 40%. But the document never estimates how much churn the offer would prevent. Most of the targeted group would stay anyway (92% didn't leave in H1), and the customers most likely to accept a 12-month lock-in are probably those already intending to stay. A rough break-even check helps here. At about £408 a year in revenue, plus £180 to replace each lost customer, the offer at 40% take-up needs to prevent somewhere around 1,400 to 2,000 cancellations a year to pay for itself. Decision-makers will want that comparison, and it should be redone for whichever segment is finally targeted.
+
+**5. The May spike is attributed to the price rise alone.** Section 2 notes that two competitors launched aggressive offers in the same quarter. The spike can't be pinned on the price rise without separating these two causes, for example by comparing which segments drove the May spike, or by checking whether "found a cheaper deal" rose more than "price" in general. The author's summary says the spike "reinforces" price as the driver, which is fair as a link but not as proof.
+
+**6. The reasons data are thinner than the author's summary claims.** Table 2 covers leavers "where recorded," but the share of leavers with a recorded reason isn't given. Self-reported cancellation reasons also tend to over-represent price. "Price was the most-cited reason" is supported. "Confirm that price is the main driver" goes further than the data allow. State the coverage and soften the wording.
+
+**7. Recommendation 5.2 goes beyond the evidence.** Nothing in the analysis shows that customers were "not adequately prepared" for the rise. The spike shows people left after it, not why the communication fell short. Either cite evidence, such as complaint or contact data about the notice, or reframe the recommendation as something to investigate.
+
+## Minor points
+
+- **Segments are fixed at 1 January.** Customers who left their minimum term during H1 are counted as "in minimum term," and similarly for the other segments. This probably inflates the in-term churn rate and may understate the less-than-12-months segment. Add a one-line caveat, or re-cut the data by status at the time each customer left.
+- **5.3 reliability:** the claim about three exchange areas isn't backed by any data in the document. Add a line or table, or name the source.
+- **Monthly figures:** 3,620 + 5 × 2,540 = 16,320, against a total of 16,340. This is fine as "about," but could be made exact.
+- **No full-year or prior-period comparison.** There's nothing showing whether H1 2026 churn is unusual. Even a single comparison with H1 2025 would help.
+
+## What works
+
+- The structure is clear and the churn definition is precise, including what is excluded.
+- Using full billing data rather than a sample is a real strength and worth stating explicitly in the document.
+- Recommendation 5.4 (monthly reporting by segment) is sensible and will be needed to evaluate whatever offer goes ahead.
+- The table arithmetic in Table 1 is internally consistent.
+
+## Suggested path to readiness
+
+1. Re-read Table 1 and rewrite Section 3, Recommendation 5.1 and the Conclusion around the segment that actually has the highest churn. That is likely customers in their first year out of contract, or those approaching the end of their minimum term.
+2. Correct the revenue figure to about £6.7m, label it as H1 leavers only, and consider adding a retainable-revenue figure.
+3. Fix the 6.5% versus 8% inconsistency.
+4. Add an expected-benefit estimate for the offer alongside its cost.
+5. Soften the causal claims about price and the communication of the price rise, and acknowledge the competitor offers.
+
+OTHER PROBLEMS LISTED:
+  O1. The retention offer has no cost-benefit or break-even case: there is no estimate of churn prevented, and 92% of the group would stay anyway.
+  O2. The May spike is attributed to the price rise alone, even though competitor offers launched in the same quarter.
+  O3. Table 2 cancellation reasons are 'where recorded' with coverage not stated, and self-reported reasons may over-represent price.
+  O4. Recommendation 5.2's claim that customers were 'not adequately prepared' is unsupported by evidence.
+  O5. Segments are fixed at 1 January, so customers who changed status during H1 are misclassified, which may inflate in-term churn.
+  O6. The 5.3 claim that reliability complaints are concentrated in three exchange areas is not backed by data.
+  O7. Monthly figures (3,620 + 5×2,540 = 16,320) don't exactly match the 16,340 total.
+  O8. There is no prior-period (e.g. H1 2025) comparison to show whether churn is unusual.
+  O9. The revenue figure should be labelled as H1 leavers only, and a retainable-revenue figure excluding unavoidable movers should be added.

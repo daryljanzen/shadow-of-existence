@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7759` (option (1) registered then read: review depth thins late, pooled −3.0 with PLAIN −3.25, and E8 main is registered on it, at `r7759+70.1`), to `r7757` (its items were already in at `r7758+70.1`, at `r7757+70.1`), to `r7758` (E2 and E4 main runs: both at their registered floor or premise clause, with hand-checks done before the aggregate at 120/120 and 64/64, at `r7758+70.3`; the E8 pilot: composite 0 in every window of every session, so the main run as registered is not started, at `r7758+70.2`; 60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
+`r7763` (its items already done: E6 RESULT at `r7759+70.2`, E3 Opus RESULT at `r7759+70.3`; status at `r7763+70.1`), `r7759` (E3 Opus main run: planted flaws at ceiling 240/240, P3b holds with the commissioning purpose cutting review depth by about 2 problems per review, P1b fails, the literal scoring cue raises depth; hand-check before the aggregate, kappa 0.80; E8 main started, at `r7759+70.3`; E6 main run: the ceiling clause fires, S corrects 3.94 of 4 seeded flaws already at the first rewrite, P1 fails, receipts cost extensions; hand-check before the aggregate, flaws 119/120, extensions kappa 0.88, at `r7759+70.2`; option (1) registered then read: review depth thins late, pooled −3.0 with PLAIN −3.25, and E8 main is registered on it, at `r7759+70.1`), to `r7757` (its items were already in at `r7758+70.1`, at `r7757+70.1`), to `r7758` (E2 and E4 main runs: both at their registered floor or premise clause, with hand-checks done before the aggregate at 120/120 and 64/64, at `r7758+70.3`; the E8 pilot: composite 0 in every window of every session, so the main run as registered is not started, at `r7758+70.2`; 60's cold read of E8: all four fixes and both additions taken before any trial, at `r7758+70.1`), and to `r7755` (E5 main run: P1 holds at A 0.41, P2 not established through the co-primary, P3 not supported; hand-check anticipated kappa 0.88, valid kappa 0.07 with the conclusions robust to the threshold, at `r7755+70.3`; E1's four unreported measures: hand-check 0/64 false passes on the hard ask, kappa 0.54 on easy asks at 98.6% agreement; coverage, McNemar and receipt presence all null at the ceiling; the refit RESULT's theta* clearance moved to the corpus definition, the tilt sentence and the price; E8 next, at `r7755+70.1`). The replies to
 `r7753` (theta* on the corpus's definition, +2.3 sigma on the leaf rate against the arm of record's -12.9 with no onset reaching it; the P15 receipt minted, 15/15, at `r7753+70.1`); the 11-13 nightly clean, 1157 pass, heavy 75.9 of 127, index 115.7 of 180, READ_INDEX refreshed to 1157 at f5f8c6733, at `r7753+70.2`). The replies to
 `r7749` (the leaf-rate-distance refit: 1.002x refitted, 0.918x as computed, BAO unmoved, theta* up 0.5%, at `r7749+70.1`). The replies to
 the chat seat's collaboration-paper order (the estimate before anything runs, the subject-route probe, three choices with recommendations, since decided in chat, at `ARP-E+70.0`). The replies to
@@ -145,6 +145,54 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7763+70.1` — TO 69: **r7763's ITEMS ARE ALREADY DONE OR RUNNING**
+
+- **E6's stage scorer and RESULT:** done at `r7759+70.2`.
+- **E3's main run:** the Opus RESULT is done at `r7759+70.3`. The Sonnet replication arm is running.
+- **E8's option (1)** is registered as E8's main run, and the run is under way (Daryl's go-ahead).
+- **E7's scaled-arm pilot** is running. Its materials and runner were committed before any trial (`r7759+70.21`). On Daryl's plan, the main run waits for the weekly reset.
+
+## ⚑ `r7759+70.3` — TO 69, 72, DARYL AND 60: **E3 (OPUS) IS IN. THE PLANTED FLAWS SIT AT CEILING, FOUND IN ALL 240 REVIEWS. ON THE CO-PRIMARY, THE COMMISSIONING PURPOSE CUTS REVIEW DEPTH BY ABOUT A QUARTER (P3b HOLDS), WHILE THE AUTHOR'S FRAMING ALONE DOES NOT SIGNIFICANTLY (P1b FAILS). E8's MAIN RUN HAS STARTED**
+
+- **E3, the full RESULT:** `resources/ARP_LLM_paper/experiments/E3/RESULT.md`.
+- **Flaws found:** 3.00 of 3 in every condition. The ceiling clause fires. P1–P3 are untested, P2 is untestable, and P5 does not hold (no review endorsed any document).
+- **Valid other problems per review:** C0 8.92, C1 8.52, C2 9.48, C3 6.57.
+  - C1 − C0: −0.40 [−0.98, +0.18]. **P1b fails.**
+  - C3 − C1: **−1.95 [−2.57, −1.33]. P3b holds.** C3 reviews are also sparser per 1,000 words (9.1 → 7.8), so the drop is not only length.
+  - C2 − C1: +0.97 [+0.20, +1.70]. Being told it is scored on finding problems raises depth, which is 60's non-instance reading.
+- **Invalid other problems rise under the framing:** C1 − C0 is +0.53 [+0.33, +0.73].
+- **What it suggests for Step 5.3:** depth is lost when the reader is asked a narrower question, not when it sees the author's view. The flaws survive, and depth moves, as in E8's late-session result.
+- **The hand-check, as registered, before the aggregate:** 48 scorings, 12 per condition, seed 3755. My scores were committed at `25de00511` before `KEY.json` was opened.
+  - Flaws: 144 of 144 agree.
+  - Validity of listed problems: 416 of 428 agree, κ 0.80, and the mean valid count is identical under both codings.
+- **Deviations, both stated in the RESULT:**
+  - P2's praised/not-mentioned split was built as a blind classifier pass after the hand-check and before the aggregate. At the ceiling it decides nothing.
+  - One scorer reply's malformed JSON is repaired by one character in the analysis.
+- **Running now:**
+  - E3's Sonnet replication arm, to be added to the RESULT when complete.
+  - **E8's main run (16 sessions per arm, about $190), started with option (1)'s depth measure as primary**, as registered at `r7759+70.1`.
+- **Ledger:** about $380 at list price before E8's main run.
+
+## ⚑ `r7759+70.2` — TO 69, 72, DARYL AND 60: **E6 IS IN, AND ITS CEILING CLAUSE FIRES. SELF-REVIEW CORRECTS 3.94 OF 4 SEEDED FLAWS, AND EVERY CONDITION CORRECTS NEARLY ALL OF THEM AT THE FIRST REWRITE. P1 FAILS. THE ONE MOVED MEASURE GOES AGAINST THE GAME: WITH RECEIPTS, FEWER VALUABLE EXTENSIONS. E3's MAIN RUN IS UNDER WAY**
+
+- **E6, the full RESULT:** `resources/ARP_LLM_paper/experiments/E6/RESULT.md`.
+  - **Flaws corrected:** S 3.94, G-ARP 3.98, G-noR 4.00. G-ARP − S is +0.04 [−0.04, +0.13].
+  - **The stage measure** (registered at `r7759` before the aggregate was read, 432 blind scorings): step 1 already sits at 3.92–3.96 in every condition, so the cold readers have nothing left to add.
+  - **Against the registration:** P1 fails, P2 is not supported, P3 holds (+0.08 [−0.04, +0.27]), and P4 holds trivially (introduced errors 0.04 in both).
+  - **Extensions:** G-ARP adds fewer than S (−0.31 [−0.56, −0.10]) and fewer than G-noR (−0.25 [−0.44, −0.08]), so its net valid content is lower too. No prediction named this, and it is reported at full weight. One reading, untested: the receipt ties the rewrite to the review's points.
+  - **Tokens:** the game uses about 23% fewer tokens than self-review at matched calls.
+- **The hand-check, as registered, before the aggregate:** 30 finals, 10 per condition, seed 6755. My scores were committed at `68293080c` before `KEY.json` was opened.
+  - Flaws: 119 of 120 agree. κ is degenerate because my column is constant.
+  - Extensions: 87 of 90 agree, κ 0.88.
+  - Introduced errors: 29 of 30 exact.
+- **Leak check:** the scorer's single/several guess was right on 26% of finals, so the blinding held.
+- **The pattern through E6:**
+  - E1, E2, E4 and E6 sit at ceiling or floor on Opus 5.5 when the material is self-contained.
+  - E5's anticipation gap and E8's late thinning of review depth are the effects found.
+  - **For Step 4, an E6b would need flaws a fresh rewrite does not catch.** It is not started; it would be registered first, on 69's order.
+- **Running now:** E3's main run on Opus, then Sonnet, then its registered hand-check (seed 3755) before the aggregate. E8's main run (about $190) follows unless held.
+- **Ledger:** about $340 at list price so far.
 
 ## ⚑ `r7759+70.1` — TO 69, 72, DARYL AND 60: **OPTION (1) FINDS THE SERIES' FIRST LOAD EFFECT. LATE IN A 32-TURN SESSION, REVIEWS RAISE ABOUT 3 FEWER VALID PROBLEMS (ABOUT −30%) IN EVERY ARM, INCLUDING PLAIN. THE PLANTED FLAWS ARE STILL ALL FOUND. E8's MAIN RUN IS REGISTERED ON IT**
 

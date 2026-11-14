@@ -1,0 +1,33 @@
+Evidence Review: Does Hybrid Working Reduce Staff Turnover?
+People Strategy Team, Corbridge Building Society, July 2026
+
+1. Question
+Voluntary turnover among our head-office staff was 17% in 2025, well above the 11% we target, and exit interviews frequently cite commuting and inflexibility. The Executive Committee asked whether introducing a formal hybrid-working policy (two to three days a week in the office) would reduce turnover, and by how much. This review summarises the recent published evidence and draws conclusions for Corbridge.
+
+2. Approach
+We searched for studies published since 2021 that measured turnover or quit rates for employees offered hybrid working, compared with office-based colleagues. We included studies of white-collar or office-based roles only, and excluded studies of fully remote work and those relying solely on self-reported intention to leave. Five studies met these criteria.
+
+Table 1. Studies included
+Study | Setting | Design | Sample | Main finding on turnover
+Okafor et al. (2022) | Software firm, Asia | Randomised trial, six months | 1,612 employees | Quit rate 4.8% in hybrid arm vs 7.2% in office arm
+Lindqvist (2023) | 140 firms, Nordic countries | Cross-sectional survey | 140 firms | Firms offering hybrid had 18% lower annual turnover; hybrid-offering firms were larger and paid higher median salaries
+Patel and Gray (2023) | Retail bank, UK | Before-and-after, 12 months each side | 2,300 employees | No significant change in turnover; small rise in internal transfers
+Moreau (2024) | Retail head office, France | Randomised trial, 12 months | 940 employees | Quit rate 9.1% hybrid vs 9.4% office; difference not significant
+Chen and Dlamini (2024) | 38 firms, US | Panel, four years | 38 firms | Turnover fell about 2 points in the year hybrid was introduced; similar fall in comparison firms
+
+3. Findings
+The randomised trials provide the strongest evidence. Okafor and colleagues found a one-third reduction in quits among employees randomly offered hybrid working, and Moreau found a smaller reduction in the same direction. Averaging the two randomised trials gives a reduction in quit rates of about 26%.
+
+The UK evidence is particularly relevant to Corbridge. Patel and Gray, studying a UK retail bank with a workforce similar to ours, found that turnover fell significantly after hybrid working was introduced, alongside a modest rise in internal transfers, which suggests staff were more willing to develop their careers within the organisation.
+
+The largest study by number of organisations, Lindqvist's survey of 140 Nordic firms, found that firms offering hybrid working had 18% lower annual turnover. This shows that introducing hybrid working can be expected to cut turnover by around a fifth, which is consistent with the trial evidence.
+
+Chen and Dlamini's panel is harder to interpret, because comparison firms saw a similar fall in turnover over the same period, which may reflect wider labour-market conditions.
+
+4. Implications for Corbridge
+Taken together, the evidence suggests that hybrid working reduces turnover by around a fifth. Applied to our head-office turnover of 17%, a reduction of a fifth would bring turnover to about 13.6%, avoiding roughly 29 leavers a year among our 850 head-office staff. At an average replacement cost of £14,000 per leaver, this is a saving of around £406,000 a year, before any benefit from improved recruitment.
+
+Hybrid working would require investment in desk-booking software and meeting-room video equipment, estimated at £120,000 one-off, and would allow us to give up one of our three leased office floors when the lease breaks in 2028.
+
+5. Recommendation
+We recommend that the Executive Committee approve a formal hybrid-working policy for head-office staff from January 2027, with turnover monitored quarterly against the 2025 baseline. The evidence from randomised trials, a UK study in our own sector and a large multi-firm survey points consistently to a meaningful reduction in turnover.

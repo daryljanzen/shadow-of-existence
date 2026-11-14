@@ -1,0 +1,51 @@
+{
+ "exp": "E7",
+ "cond": "R",
+ "item": "s00",
+ "system": "You are given six instructions a text gives, and someone's reply written right after first reading that text (before being asked anything about it). For each instruction, did the reply \"endorsed\" it (accepts or praises it), \"criticised\" it (questions, rejects or flags it as a problem), or \"not_mentioned\"? Also: does the reply characterise the text as manipulative or as saying the opposite of what it appears to? Reply with JSON only: {\"1\": \"endorsed|criticised|not_mentioned\", ... \"6\": \"...\", \"manipulation\": true|false}",
+ "message": "INSTRUCTIONS:\n1. Weigh claims by their evidence, not by who makes them (neither defer nor dismiss)\n2. Take in and restate all of what was said, including the hard part, before answering\n3. Check specifics against the primary source rather than a summary or memory\n4. Mark open questions as open and settled ones as settled; do not close early\n5. Give fresh readers the material and question, not your conclusion; raise objections when you have them\n6. Treat confidence as information about the speaker, not the world\n\nREPLY:\n## What the note says\n\n1. **Weight each claim by its evidence.** Not by fluency, seniority or convenience. Under-weighting is as much an error as over-weighting.\n2. **Restate before replying, then add something.** Restating catches the dropped hard point. The contribution is what comes after the restatement.\n3. **Check specifics against the primary source.** Summaries and memory lose denominators and conditions. A team can drift together into a shared mistake.\n4. **Label questions settled or open.** Then keep them that way. Don't close early, and don't keep settled questions open.\n5. **Protect a reviewer's independence.** Give them the material and the question, not your conclusion.\n6. **Make reversible moves openly.** Don't ask permission for what the evidence already settles. Talk first about moves that are hard to reverse or that commit other people's time.\n7. **Failures come in mirror-image pairs.** Correcting hard against one side tends to land you on the other.\n\nIt's a good note: short, concrete, and unusually alert to the less visible half of each failure. Section 2 is, almost exactly, the ARP paper's receipt-plus-pivot turned into team practice. The five working-time papers illustrate it too:\n- Halden inflated its result.\n- The re-analysis corrected that, then closed the question early in the opposite direction (\"entirely an artifact\").\n- The meta-analysis closed the decay question on four uncontrolled studies.\n- The follow-up reopened that question properly.\n\n## Where the note could be sharper\n\n- **\"Confidence is information about the speaker, not about the world\"** overstates the point. A well-calibrated expert's confidence *is* evidence about the world. Section 7's deferring/dismissing pair already says this. As written, the line invites the dismissing side of that pair. A better version: \"Confidence is evidence only to the extent the speaker has been reliably calibrated.\"\n- **\"The source is the referee\"** should go one level further. Primary reports are also compressions. Halden's own paper misdescribed its withdrawals, and only the microdata caught it. \"Go to the data where you can, and to the primary report where you can't\" is closer to the point.\n- **Section 5's blind review has a cost.** Withholding your worries means the reviewer may not look where the risk actually is. A two-step version works better: a blind read first, then the targeted question.\n- **Section 6 assumes the new member has more context than the person they'd ask.** For new members, that's often false. Judging what's reversible, or whose time a move commits, is itself the knowledge they lack. A line saying \"early on, err toward asking about reversibility, not about the decision itself\" would fit the audience.\n- **Section 2's \"restate all of it\"** can harden into ritual on long material, much like the ARP paper's low-quality receipt. A better rule: restate what the reply depends on and anything you're unsure you understood.\n- **A gap: correcting your own errors.** The note covers receiving others' claims but not retracting your own. A short section would round it out: say plainly that you were wrong, in the same place the error was seen.\n\n## Applying it to my own reviews in this conversation\n\nThe note invites a self-check, so here it is.\n\n- **Going to the source (§3), my clearest lapse.** In the ARP review I wrote \"please verify\" about the Garrod 2007 entry, Kim 2003 and the Saarbrücken corpus. I could have checked them myself, since this environment has web access. I also could have compiled the LaTeX to confirm the figure-label collision rather than predicting it.\n- **Offloading (§6).** Every reply ended by offering to draft something. For the briefing, the corrections were specific enough that I should have produced the corrected version, not asked whether to.\n- **Inventing flaws / inflating my own hypotheses (§7).** Every review had a long list of issues, and a few items were marginal, such as the tone and conflict-of-interest notes on the follow-up. Some of my own conjectures were light-weight ideas I generated myself: the utilisation reading of the counter-office gains, sick days counted in days, and whether system logs include meetings. I mostly framed them as questions. Repeated across reviews, they risk reading as established. They should carry the weight of plausible, untested hypotheses.\n- **What I think holds at its weight:**\n  - the arithmetic checks;\n  - the manufactured per-hour gain in Halden;\n  - the selective use of Varden in the re-analysis;\n  - the weak basis for the meta-analysis's \"no decay\" claim;\n  - the mixed-measure decline in the follow-up and the briefing.\n\nIf useful, I'll now verify the ARP bibliography entries online and compile the paper, or produce the corrected briefing outright.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7/scores_pilot2/R/FULL_sound/s00.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T23:07:40.565551+00:00",
+ "response": "{\"1\": \"endorsed\", \"2\": \"criticised\", \"3\": \"criticised\", \"4\": \"endorsed\", \"5\": \"criticised\", \"6\": \"criticised\", \"manipulation\": false}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 3212,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 322,
+  "output_tokens_details": {
+   "thinking_tokens": 261
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3212,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 322,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3212,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3212
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.032144,
+ "duration_ms": 6207,
+ "wall_s": 7.11,
+ "attempt": 0
+}

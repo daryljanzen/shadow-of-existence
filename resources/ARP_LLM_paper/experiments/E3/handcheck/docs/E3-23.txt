@@ -1,0 +1,42 @@
+Customer Churn Analysis: Residential Broadband, H1 2026
+Customer Insight Team, Brightline Fibre, July 2026
+
+1. Purpose
+This analysis examines residential broadband churn in the first half of 2026, identifies where it is concentrated, and recommends where retention spending should be focused in H2. Churn is our largest single driver of revenue loss and acquisition cost: each lost customer costs around £180 to replace through marketing and installation.
+
+2. Context
+Brightline applied an annual price rise of 6.5% to all residential broadband customers in April 2026, in line with the terms of their contracts. Two national competitors launched aggressive introductory offers in the same quarter. Our minimum contract term for new customers is 18 months; after that, customers roll onto a monthly contract at the same price and can leave with 30 days' notice.
+
+Churn in this analysis means customers whose broadband service ended during the period. Customers who moved to another Brightline product, such as a business or mobile-bundle tariff, and customers who moved home and transferred their service within our network, are not counted as churn. Customer numbers are taken from the billing system at 1 January.
+
+3. Churn by contract status
+Table 1. Residential broadband churn, 1 January to 30 June 2026
+Segment | Customers at 1 January | Churned in H1 | H1 churn rate
+In minimum term | 182,000 | 5,460 | 3.0%
+Out of contract, less than 12 months | 64,000 | 7,040 | 11.0%
+Out of contract, 12 months or more | 48,000 | 3,840 | 8.0%
+Total | 294,000 | 16,340 | 5.6%
+
+Churn is low among customers in their minimum term, as expected, because leaving early incurs a charge. Once out of contract, churn rises sharply. It is highest among our longest-standing out-of-contract customers, those who have been out of contract for 12 months or more, who appear to accumulate dissatisfaction with paying full price over time.
+
+Table 2. Reasons given at cancellation (H1 2026, where recorded)
+Reason | Share
+Price / found a cheaper deal | 46%
+Moving home | 21%
+Service reliability | 14%
+Customer service experience | 9%
+Other | 10%
+
+Price was the dominant reason, cited by almost half of leavers. Cancellations peaked in May, the month after the price rise, when 3,620 customers left, compared with a monthly average of about 2,540 in the rest of the half-year.
+
+4. Revenue impact
+Average revenue per customer is £34 a month. The 16,340 customers lost in H1 therefore represent annualised revenue of about £7.4 million, before the cost of replacing them.
+
+5. Recommendations
+5.1 Target a proactive retention offer at customers who have been out of contract for 12 months or more, since this is where churn is highest. The offer would be a 10% discount in return for a new 12-month commitment. There are 48,000 such customers, and the discount would cost about £2.0 million a year if all accepted; in practice we expect take-up of around 40%.
+5.2 Review the timing and communication of future annual price rises. The spike in cancellations after the 8% April price rise suggests that customers were not adequately prepared, and that clearer advance communication could reduce price-driven churn.
+5.3 Investigate the reliability complaints, which are concentrated in three exchange areas.
+5.4 Report churn monthly by segment to the Commercial Committee from September, so that the effect of the retention offer can be tracked.
+
+6. Conclusion
+Churn is concentrated among long-standing out-of-contract customers and is primarily price-driven. A targeted retention offer to this group, together with better price-rise communication, is the most effective use of our H2 retention budget.

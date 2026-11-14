@@ -1,0 +1,90 @@
+ITEM: E3-15
+
+KEY:
+1. [arithmetic] at: "Averaging the two randomised trials gives a reduction in quit rates of about 26%." -- Okafor: (7.2 - 4.8) / 7.2 = 33%; Moreau: (9.4 - 9.1) / 9.4 = 3%. The average is about 18%, not 26%.
+2. [misread_evidence] at: "found that turnover fell significantly after hybrid working was introduced" -- Table 1 records Patel and Gray as finding 'No significant change in turnover'. The text misstates the study's result, and the 'UK study in our own sector' is then cited as support in the recommendation.
+3. [unsupported_causal] at: "This shows that introducing hybrid working can be expected to cut turnover by around a fifth" -- Lindqvist is a cross-sectional comparison of firms that do and do not offer hybrid, and Table 1 notes hybrid-offering firms were larger and paid higher salaries. The 18% difference is confounded and cannot show that introducing hybrid working would cause a fifth reduction.
+
+REVIEW:
+# Review: Evidence Review on Hybrid Working and Turnover
+
+**The recommendation is clearly stated, but the document is not ready for the Committee.** The findings section misreports two of the five studies, and the "roughly a fifth" figure that drives the savings estimate isn't supported by the evidence in Table 1. Read as tabulated, the evidence doesn't converge on a fifth. The most relevant studies mostly find little or no effect.
+
+## Errors to fix before circulation
+
+**1. Patel and Gray: the text contradicts the table.**
+- Table 1 says "No significant change in turnover."
+- Section 3 says turnover "fell significantly."
+
+This is the UK study the document leans on most ("a UK study in our own sector"), so the error carries straight into the recommendation. Check the source. If the table is right, this study is evidence of *no effect* in the most similar setting, not support. The internal-transfers point then reads as speculation rather than a benefit.
+
+**2. The randomised-trial average is not 26%.**
+
+| Trial | Hybrid | Office | Relative reduction |
+|---|---|---|---|
+| Okafor | 4.8% | 7.2% | 33% |
+| Moreau | 9.1% | 9.4% | 3% (not significant) |
+
+A simple average is about 18%, and a sample-weighted average is about 22%. Neither gives 26%. More importantly, averaging hides the real picture: one trial found a large effect, the other found essentially none. "A smaller reduction in the same direction" understates a non-significant 0.3-point difference.
+
+Moreau is also the closer match to Corbridge: a European head office, followed for 12 months. Okafor was an Asian software firm followed for six months.
+
+**3. Lindqvist does not "show" what the text claims.**
+It is a cross-sectional comparison, and the table itself notes that hybrid-offering firms were larger and paid more. Both factors independently lower turnover. The 18% is an association, not the effect of *introducing* hybrid working. Your exclusion of intention-to-leave surveys was a good rigour choice, but it is undermined by then giving the confounded survey the decisive "around a fifth" role.
+
+**4. Chen and Dlamini is not ambiguous. It is a null result.**
+Turnover fell about 2 points in adopting firms and by a similar amount in comparison firms. That is the comparison the design exists to make, and it suggests no effect from hybrid working. Calling it "harder to interpret" isn't the transparency the author intends. It is reading a negative result as neutral.
+
+## What the evidence actually says
+
+| Study | Design strength | Effect found |
+|---|---|---|
+| Okafor | Strong (RCT) | Large reduction (six months, Asian software firm) |
+| Moreau | Strong (RCT) | None detectable |
+| Patel and Gray | Moderate | None (per table) |
+| Chen and Dlamini | Moderate (with controls) | None beyond background trend |
+| Lindqvist | Weak (confounded) | 18% lower, association only |
+
+Only one of five studies finds a clear causal reduction. The three studies most similar to Corbridge (Moreau, Patel and Gray, Chen and Dlamini) all find little or nothing. "Different designs, different countries, the same answer" is not a fair summary.
+
+## Consequences for the cost case
+
+The arithmetic is correct given its inputs: 17% to 13.6% of 850 staff is about 29 leavers, and 29 × £14,000 ≈ £406,000. But the input of "a fifth" isn't supported. Some sensitivity checks:
+
+- **Break-even:** the £120,000 investment is repaid in year one if about 9 leavers are avoided. That is roughly a 6% relative reduction (17% to about 16%).
+- **Moreau-sized effect (3%):** about 4–5 fewer leavers, or roughly £65,000 a year. This repays the investment in about two years.
+- **No effect:** no turnover saving.
+
+Presenting a range like this would be more honest and still informative.
+
+## Suggestions for a stronger paper
+
+The case for hybrid working may still be good. It just shouldn't rest mainly on a turnover figure the evidence can't bear.
+
+- **Quantify the office-floor saving.** Giving up one of three leased floors in 2028 is likely a larger and more certain benefit than the turnover effect, yet it gets one sentence and no figure.
+- **Use your own evidence.** Exit interviews citing commuting and inflexibility are Corbridge-specific and directly relevant. Give them more weight and some numbers.
+- **Reframe the recommendation.** For example: "The published evidence on turnover is mixed. One strong trial shows a large effect, but most studies, including the closest to our setting, show little or none. We recommend adopting hybrid working on the strength of [property savings / staff preference / recruitment], treating any turnover reduction as a possible upside, and monitoring it against the 2025 baseline."
+- **Consider a staged or randomised rollout** across departments. This would give Corbridge its own causal estimate rather than relying on mixed external evidence.
+- **Minor points:** say how the five studies were found (databases, search terms), and note that Okafor's six-month quit rates aren't directly comparable with the annual figures elsewhere.
+
+## Summary
+
+The recommendation is clear, but the paper currently tells the Committee the evidence is consistent when it isn't. Before it goes forward:
+1. Resolve the Patel and Gray contradiction.
+2. Correct the 26% figure.
+3. Stop treating Lindqvist as causal.
+4. Describe Chen and Dlamini as a null result.
+5. Replace the single "a fifth" estimate with a range.
+
+With those changes, and more weight on the property savings, it could still support a recommendation to proceed.
+
+OTHER PROBLEMS LISTED:
+  O1. Chen and Dlamini is described as 'harder to interpret' when it is effectively a null result: comparison firms fell by a similar amount
+  O2. Moreau's non-significant 0.3-point difference is overstated as 'a smaller reduction in the same direction'; averaging hides that one trial found a large effect and the other essentially none
+  O3. The evidence is not consistent; studies most similar to Corbridge find little or no effect, so the claim of a consistent picture is unfair (the review attributes the quote 'Different designs, different countries, the same answer' to the document, but that phrase does not appear in it)
+  O4. The savings estimate rests on an unsupported single 'fifth' figure and should be replaced with a sensitivity range or break-even analysis
+  O5. The office-floor lease saving is not quantified despite probably being a larger and more certain benefit
+  O6. Corbridge's own exit-interview evidence is underused and not quantified
+  O7. The search method (databases, search terms) is not described
+  O8. Okafor's six-month quit rates are not directly comparable with annual turnover figures
+  O9. A staged or randomised internal rollout should be considered to give Corbridge its own causal estimate

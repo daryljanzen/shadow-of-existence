@@ -1,0 +1,39 @@
+Feasibility Study: Weekly Separate Food Waste Collection
+Waste and Environmental Services, Thornbury District Council, October 2026
+
+1. Purpose
+Councils in England are required to introduce weekly separate food waste collections for households. This study assesses how Thornbury can deliver the service district-wide from April 2027, based on a six-month pilot, and estimates its costs and savings.
+
+2. The pilot
+From January to June 2026, 4,000 households in three wards received a 23-litre outdoor caddy, a 5-litre kitchen caddy and a supply of compostable liners, with collection every week on the same day as their existing bin collection. The pilot wards were chosen to include a mix of houses and flats, and of urban and village streets.
+
+Table 1. Pilot participation by housing type (average weekly set-out, Jan-Jun 2026)
+Housing type | Households | Participating households | Participation rate | Food waste per participating household per week
+Houses | 3,200 | 2,112 | 66% | 1.9 kg
+Flats | 800 | 168 | 21% | 1.4 kg
+All | 4,000 | 2,280 | 57% | 1.9 kg
+
+Participation was broadly similar across housing types, which gives us confidence that the service can be rolled out uniformly across the district without a separate approach for flats. Residents' feedback was positive, with 81% of surveyed pilot households rating the service good or very good. Contamination with packaging and other non-food items was low, at under 2% by weight in spot checks carried out at the treatment plant, and missed-collection reports fell steadily after the first month.
+
+3. District-wide projection
+Thornbury has 52,000 households, of which about 20% are flats. Applying the pilot's 64% participation rate and 1.9 kg per participating household per week across the district gives about 3,290 tonnes of food waste a year.
+
+4. Treatment
+Collected food waste would be taken to Brookfield anaerobic digestion (AD) plant, 14 miles from our depot, at a gate fee of £38 per tonne. Food waste that stays in the residual bin is incinerated at a cost of £112 per tonne. Every tonne diverted therefore saves £74, or around £243,000 a year on the projected tonnage. Brookfield has confirmed that it can offer the Council up to 1,800 tonnes a year of contracted capacity until its planned expansion is completed in 2029. The next nearest AD plant is 46 miles away.
+
+5. Costs
+Table 2. Annual cost of district-wide service
+Item | Annual cost
+Vehicles: six food waste vehicles at £165,000 each, depreciated over seven years | £141,400
+Crews: six crews of two at £34,000 per operative | £408,000
+Fuel and maintenance | £96,000
+Caddies, liners and communications (annualised) | £88,000
+Total | £733,400
+
+Against the disposal saving of £243,000, the net annual cost is about £490,000. The Government has indicated that new-burdens funding will be provided for the service; our provisional allocation is £520,000 a year, which would cover the net cost in full.
+
+6. Implementation
+Vehicles must be ordered by December 2026 for delivery in March 2027. Caddies would be delivered to all households in March 2027, with a leaflet and a three-month supply of liners. Collections would start in the week of 5 April 2027. Crews will be recruited from February 2027 and trained on the new vehicles during March. A dedicated phone line and web page will handle caddy requests and missed collections during the first three months of the service.
+
+7. Recommendation
+The pilot demonstrates strong participation and resident satisfaction, and the service can be delivered on a uniform basis across the district. With treatment at Brookfield and new-burdens funding, the service is fully funded. We recommend that Cabinet approve the district-wide roll-out from April 2027 and authorise the vehicle order.

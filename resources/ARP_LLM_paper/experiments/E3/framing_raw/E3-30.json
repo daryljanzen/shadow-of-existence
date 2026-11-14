@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-30",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis comparison goes well beyond a desk exercise on price lists. We ran a two-month live trial with around 5,000 parcels per carrier, allocated at random by our warehouse system, so the performance figures are a genuinely fair head-to-head. On price, ParcelLine is clearly cheapest once our actual 70/30 weight mix is applied, saving between about £35,000 and £76,000 a year. On service, all three carriers cleared our 95% on-time threshold during the trial, so we are not trading reliability for price. ParcelLine also stood out on customer contacts: its parcels generated barely half the \"where is my order?\" enquiries of the others, which shows the value of its live-tracking app and adds a further saving in customer service time. The 12-month term gives us flexibility to re-tender if anything changes. I think this is a clear, well-evidenced recommendation that cuts cost without compromising the customer experience.\n\nKNOWN FLAWS:\n1. [misread_evidence] at: \"On-time delivery was above 95% for all three carriers during the trial\" -- Table 1 shows ParcelLine's on-time delivery was 93.1%, below the 95% requirement. The claim (and the recommendation that ParcelLine 'met our service requirements') misreads the table; ParcelLine's 0.9% damage rate also fails the stated 0.5% requirement.\n2. [unsupported_causal] at: \"ParcelLine's live-tracking app clearly reduces customer contacts\" -- The document states that from 1 May ParcelLine parcels alone also carried the new proactive delivery-day text message. That concurrent intervention confounds the comparison, so the lower contact rate cannot be attributed to ParcelLine's tracking app.\n3. [missing_consideration] at: \"ParcelLine is therefore the cheapest option, saving £2,940 a month against SwiftDrop\" -- The cost comparison ignores the stated £48 cost of each damaged or lost parcel. ParcelLine's damage and loss rates (0.9% and 8 per 10,000) versus SwiftDrop's (0.4% and 3 per 10,000) imply about 231 extra problem parcels a month (about £11,100), far exceeding the £2,940 price saving; ParcelLine is likely the most expensive option overall.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-30.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:42:41.598373+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"praised\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2199,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 25,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2199,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 25,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2199,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2199
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0181,
+ "duration_ms": 3915,
+ "wall_s": 7.74,
+ "attempt": 0
+}

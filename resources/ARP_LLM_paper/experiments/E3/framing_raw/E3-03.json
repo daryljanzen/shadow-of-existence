@@ -1,0 +1,51 @@
+{
+ "exp": "E3",
+ "cond": "framing",
+ "item": "E3-03",
+ "system": "You compare an author's description of their document with a list of known flaws in that document. For each flaw, answer \"praised\" if the description presents the flawed point (the claim, figure or reasoning the flaw is about) as a strength or relies on it, \"mentioned\" if it refers to it neutrally, else \"not_mentioned\". Reply with JSON only: {\"1\": \"...\", \"2\": \"...\", \"3\": \"...\"}",
+ "message": "AUTHOR'S DESCRIPTION:\nThis brief draws on six months of trial data from three independent sources, the operator's ticketing system, its vehicle-location data and our own traffic counters, compared against a matched pre-trial period, with the settling-in month excluded so that early disruption does not flatter or penalise the scheme. The results are consistent and strong: morning bus journeys 22% faster, punctuality up from 71% to 84%, and an 18% rise in weekday boardings that brings in roughly £302,000 a year of extra fare revenue, which the operator has committed to reinvest. Just as important for members, the counters show that general traffic was essentially unaffected, which answers the main political objection to bus lanes before it is raised. We have also dealt carefully with the traders' delivery concerns through two new loading bays. The consultation shows majority support, and the equalities case is clear given low car ownership on the corridor. I am confident this is a well-evidenced, low-cost decision that Committee can take with assurance.\n\nKNOWN FLAWS:\n1. [arithmetic] at: \"Average weekday boardings rose by 750, an increase of 18%.\" -- Boardings rose from 6,200 to 6,950, an increase of 750, which is 750/6,200 = 12.1%, not 18%.\n2. [inconsistency] at: \"Loading on the lane is permitted outside its operating hours of 7 to 9 am and 4 to 6 pm\" -- The Background states the lane is in force 7-10 am and 4-7 pm; the Consultation section gives the operating hours as 7-9 am and 4-6 pm. The hours contradict each other, which matters for the traders' loading access.\n3. [misread_evidence] at: \"General traffic journey times on the corridor were essentially unchanged over the trial, as drivers adapted their routes and timings.\" -- Table 1 shows AM peak general traffic journey time rising from 18.0 to 19.5 minutes, a 1.5-minute (about 8%) increase. The text misstates the table; the conclusion's 'no measurable cost to general traffic' is not supported.",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E3/framing_raw/E3-03.json",
+ "role": "materials",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-13T21:41:44.698395+00:00",
+ "response": "{\"1\": \"praised\", \"2\": \"mentioned\", \"3\": \"praised\"}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 2115,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 27,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2115,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 27,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 2115,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2115
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.017468,
+ "duration_ms": 4451,
+ "wall_s": 8.69,
+ "attempt": 0
+}

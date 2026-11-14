@@ -1,0 +1,49 @@
+Feasibility Study: Robotic Palletising on Lines 1 and 2
+Operations Engineering, Kestrel Foods, Wrexley Plant, February 2026
+
+1. Purpose
+This study assesses whether to replace manual palletising at the end of packing Lines 1 and 2 with two robotic palletising cells, and recommends a course of action to the Plant Investment Board.
+
+2. Current operation
+Lines 1 and 2 pack savoury snacks into cases, which are stacked onto pallets by hand at the end of each line. Each line has two palletising operators per shift, and the lines run two shifts a day (06:00-14:00 and 14:00-22:00), five days a week. That is eight operator posts in total. At a fully loaded cost of £36,500 per operator per year, manual palletising costs £292,000 a year.
+
+Palletising is the most physically demanding task on site. Operators lift around 4,000 cases per shift, and the task accounts for most of our manual-handling injuries.
+
+Under the site plan agreed by the Board in December 2025, Lines 1 and 2 will move to a single day shift from January 2027, as volume consolidates onto the new high-speed Line 5.
+
+3. The proposed solution
+Each cell consists of a four-axis robot, a layer-forming conveyor, a pallet dispenser, safety guarding and a stretch-wrapper. One operator per shift would supervise both cells, handle pallet changes and clear faults.
+
+Vendor trial
+The preferred vendor ran a three-day trial in January using our actual cases and pallet patterns.
+
+Table 1. Vendor trial results, 12-14 January 2026
+Case type | Share of Line 1 and 2 volume | Peak rate (cases/min) | Sustained rate over 8 hours (cases/min)
+14 kg catering case | 60% | 13 | 10.5
+8 kg retail case | 40% | 16 | 14.0
+
+Our lines run at up to 12 cases per minute. The trial confirmed that the cell sustains at least 14 cases per minute across our case types, comfortably above our line rate, so the cell will not become a bottleneck.
+
+4. Safety benefit
+Line 3 has had an automated case packer and palletiser since 2023. In 2025 it recorded 4 manual-handling injuries, compared with 11 across Lines 1 and 2. Automation clearly reduces injuries, and we expect robotic palletising to cut manual-handling injuries on Lines 1 and 2 by a similar proportion. For context, Line 3 runs the lighter 6 kg multipack cases and operates on a single shift.
+
+5. Costs and savings
+Table 2. Financial summary
+Item | Amount
+Capital: two cells, installed, including guarding and conveyors | £620,000
+Annual maintenance contract (two cells) | £36,000
+Remaining supervision: one operator per shift, two shifts | £73,000 per year
+Current manual palletising cost | £292,000 per year
+Net annual saving (£292,000 - £73,000 - £36,000) | £183,000
+Simple payback (£620,000 / £183,000) | 3.4 years
+
+The Plant Investment Board's hurdle for automation projects is a payback of four years or less, so the project meets the hurdle with a margin. The three operators displaced on each shift would be offered redeployment to Line 5, which is currently recruiting.
+
+6. Implementation
+The vendor quotes a 16-week lead time. Installation would take place during the planned two-week August shutdown, with a further two weeks of commissioning at reduced line speed. We would train two engineering technicians on robot maintenance as part of the contract.
+
+7. Risks
+Changeovers to new case sizes require reprogramming, which the vendor will provide for the first year. Pallet quality varies between suppliers, and poor pallets cause faults in automated dispensing; we will tighten our pallet specification before go-live.
+
+8. Recommendation
+Robotic palletising on Lines 1 and 2 is technically proven on our own products, removes our most injurious manual task and pays back in 3.4 years, within the Board's four-year hurdle. We recommend the Board approve capital of £620,000 for installation in the August 2026 shutdown.

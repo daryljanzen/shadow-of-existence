@@ -1,0 +1,35 @@
+Vendor Comparison: Standard Parcel Delivery Contract
+Larkspur Home, Operations, June 2026
+
+1. Purpose
+Our contract with our current standard-delivery carrier ends on 30 September 2026. This paper compares three shortlisted carriers and recommends which should carry our standard (two-to-four-day) parcels from October.
+
+2. Volumes and requirements
+We dispatch an average of 42,000 standard parcels a month: about 70% weigh under 2 kg (cushions, textiles, small homeware) and 30% weigh 2 to 10 kg (lamps, mirrors, small furniture). Our requirements are on-time delivery of at least 95%, a damage rate below 0.5%, full tracking, and a returns service.
+
+Damage and loss matter to us commercially. Each damaged or lost parcel costs us on average £48 in replacement stock, return shipping and customer service time, and damaged items are the most common cause of one-star reviews.
+
+3. Trial
+Between 1 April and 31 May 2026, each shortlisted carrier delivered a share of our orders, allocated at random by the warehouse management system, about 5,000 parcels per carrier. We measured on-time delivery against the promised date, damage reported by customers within 14 days, and lost parcels.
+
+Table 1. Prices and trial performance
+Carrier | Price, under 2 kg | Price, 2-10 kg | On-time delivery | Damage rate | Lost per 10,000 parcels
+SwiftDrop | £3.10 | £4.60 | 96.2% | 0.4% | 3
+ParcelLine | £2.85 | £4.95 | 93.1% | 0.9% | 8
+Meridian | £3.30 | £4.40 | 97.5% | 0.3% | 2
+
+On-time delivery was above 95% for all three carriers during the trial, and all three offer full tracking and a returns service.
+
+4. Cost comparison
+Applying our 70/30 weight mix, the average cost per parcel is £3.55 for SwiftDrop, £3.48 for ParcelLine and £3.63 for Meridian. On 42,000 parcels a month, the monthly cost would be £149,100 for SwiftDrop, £146,160 for ParcelLine and £152,460 for Meridian. ParcelLine is therefore the cheapest option, saving £2,940 a month against SwiftDrop and £6,300 a month against Meridian, or between about £35,000 and £76,000 a year.
+
+5. Customer contact
+"Where is my order?" contacts are our largest single category of customer service enquiry. During the trial, ParcelLine deliveries generated 6 such contacts per 1,000 parcels, compared with 11 for SwiftDrop and 10 for Meridian. ParcelLine's live-tracking app clearly reduces customer contacts, and at an average handling cost of £3.20 per contact this would save about £670 a month at our volumes. From 1 May, ParcelLine parcels also carried our new proactive delivery-day text message, which we were testing on one carrier before rolling it out.
+
+6. Other considerations
+All three carriers can collect from our warehouse daily at 6 pm. ParcelLine and SwiftDrop offer a 12-month contract; Meridian requires 24 months. SwiftDrop and Meridian have both handled our peak-season volumes for other retailers of similar size, while ParcelLine's references were mainly from fashion retailers with lighter parcels.
+
+All three carriers integrate with our warehouse management system through standard interfaces, and none would require changes to our packing process or labelling. Each offers recipients a delivery-preference service to nominate a safe place or a neighbour, and each provides proof-of-delivery photographs, which our customer service team has found useful in resolving disputes.
+
+7. Recommendation
+ParcelLine offers the lowest delivery cost, met our service requirements in the trial and reduces customer contacts through its tracking app. We recommend awarding the standard parcel contract to ParcelLine for 12 months from 1 October 2026, saving up to £76,000 a year against the alternatives.

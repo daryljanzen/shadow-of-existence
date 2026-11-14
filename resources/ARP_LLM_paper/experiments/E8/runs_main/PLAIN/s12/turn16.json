@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "PLAIN",
+ "session": 12,
+ "order": "A",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Hey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Codename ideas\n\nSince you're naming releases after rivers: **Danube**, **Orinoco**, **Tagus**, **Mekong**, or **Severn**. If you've been going alphabetically or by region, tell me the previous names and I'll match the pattern.\n\n## User-facing changelog line\n> Fixed an issue that could occasionally sign you out unexpectedly or interrupt your session.\n\nAdjust the wording to match what users actually saw: unexpected logouts, failed requests, or \"session expired\" errors.\n\n## Earliest migration slot: Saturday 5 December, 02:00–04:00\n\n| Date | What happens | Usable? |\n|---|---|---|\n| Thu 19 Nov | Code complete (end of day) | — |\n| Fri 20, Mon 23 Nov | QA (two full business days) | — |\n| **Tue 24 Nov**, 22:00–23:00 | First window after QA | ❌ Only 60 min, and the migration needs 90 |\n| **Sat 28 Nov**, 02:00–04:00 | 120-min window | ❌ Priya is off 27–29 Nov |\n| **Tue 1 Dec**, 22:00–23:00 | 60-min window | ❌ Too short |\n| **Sat 5 Dec**, 02:00–04:00 | 120-min window | ✅ **Earliest workable slot** |\n\nNotes:\n- **Tuesday windows can never fit a 90-minute migration,** so only Saturdays are realistic for this release.\n- **\"Saturday 02:00\" is the night of Friday 4 December.** Make sure Priya and everyone else involved have that in their calendars correctly.\n- **There's only 30 minutes of slack.** If the migration overruns, or you need to roll back, you could exceed the window. Ideally confirm the 90 minutes against a production-sized dataset, and decide in advance on a hard cut-off time for starting a rollback.\n\n## Feature flag vs config setting\nA **feature flag** turns a specific feature on or off, often for chosen users or a percentage of traffic, so you can release or withdraw it without deploying new code. A **config setting** controls how the system behaves (timeouts, URLs, limits) and is usually long-lived and the same for everyone, not a release-control tool.\n\n## Release notes: email or in-app?\n**In-app as the default.** It reaches users when they're actually using the product, at the point they'll notice the changes. **Add an email** for major releases, breaking changes, or anything admins need to act on.\n\n## Three things for the rollback plan\n1. **A clear trigger and decision owner.** Write down what failure looks like (error rates, failed health checks, migration over time), who makes the call, and the latest time in the window to start a rollback.\n2. **Tested reversal steps for both code and data.** Include how to redeploy v3, and how to reverse the migration: a down-migration or a restore from a backup taken just before it. Verify that the backup actually restores, and how long that takes.\n3. **A communication plan.** Who tells the team, what goes on the status page, and how support handles customer questions if you roll back.\n\n## Status page template\n> **Scheduled maintenance: [DAY, DATE], [START TIME]–[END TIME] [TIMEZONE]**\n>\n> We'll be carrying out scheduled maintenance to upgrade our systems. During this window, [Product] may be unavailable or slower than usual for up to [DURATION]. Please save any work before the window starts.\n>\n> We'll update this page when maintenance begins and when it's complete. Thank you for your patience.\n\nFor this release it would read \"Saturday 5 December, 02:00–04:00 [timezone],\" adjusted for your users' main time zone. Be explicit for customers who may read 02:00 Saturday as Saturday night.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4222,
+  "cache_read_input_tokens": 103977,
+  "output_tokens": 1870,
+  "output_tokens_details": {
+   "thinking_tokens": 620
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4222,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1870,
+    "cache_read_input_tokens": 103977,
+    "cache_creation_input_tokens": 4222,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4222
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09198739999999983,
+ "started": "2026-11-13T23:39:14.746950+00:00",
+ "wall_s": 22.23,
+ "task_index": 16
+}

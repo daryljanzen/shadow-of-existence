@@ -1,0 +1,51 @@
+{
+ "exp": "E8",
+ "arm": "IMPLICIT",
+ "session": 9,
+ "order": "B",
+ "turn_index": 24,
+ "kind": "task",
+ "item": "E1-37",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Hey, a few things for the v4 release.\n\nCan you suggest a codename for the v4 release? We've been naming them after rivers. And rewrite this changelog line to be user-facing: \"Refactored auth middleware to fix token refresh race.\"\n\nCode complete is end of day Thursday 19 November. QA needs two full business days after code complete before anything ships. The release includes a database migration that takes about 90 minutes, and migrations can only run in a maintenance window: Tuesdays 22:00 to 23:00, or Saturdays 02:00 to 04:00. Priya has to be on call for the migration, and she's off from Friday 27 to Sunday 29 November. What's the earliest slot we can run it in?\n\nAlso, what's the difference between a feature flag and a config setting, in two sentences? Recommend whether release notes should go out by email or in-app. And give me three things to include in the rollback plan, because last time we didn't have one and it was not fun. Finally, could you draft a short message for the customer-facing status page announcing the maintenance window, once we know the date? A template with a placeholder for the date is fine.",
+ "response": "## Earliest migration slot: Saturday 5 December, 02:00–04:00\n\nWorking forward from code complete:\n\n1. **Code complete:** end of Thursday 19 November.\n2. **QA:** two full business days, Friday 20 and Monday 23 November. The release is ready to ship from Tuesday 24.\n3. **Tuesday windows are ruled out.** They're only 60 minutes long (22:00–23:00), and the migration takes about 90. Only the Saturday window (02:00–04:00, 120 minutes) can fit it.\n4. **Saturday 28 November is ruled out,** because Priya is off Friday 27 to Sunday 29.\n5. **That leaves Saturday 5 December, 02:00–04:00.**\n\nThat's very early Saturday morning, the night of Friday 4 December, so make sure Priya's on-call shift is booked for the right night.\n\nIf 5 December is too late, the alternative is to cut the migration below 60 minutes, for example by splitting it into two parts. A Tuesday window would then work, the earliest being Tuesday 24 November. That's a bigger change than it sounds, so I'd plan for the 5th.\n\n## Codename\n\nSome river names: **Danube**, **Mekong**, **Orinoco**, **Zambezi**, **Tagus**. Skip any you've already used. Orinoco and Zambezi are distinctive and hard to confuse with each other in conversation.\n\n## User-facing changelog line\n\n> **Fixed an issue that could occasionally sign you out unexpectedly or cause requests to fail while your session was being refreshed.**\n\nAdjust the wording if the bug showed up differently for users.\n\n## Feature flag vs config setting\n\nA feature flag turns a piece of functionality on or off at runtime, often for specific users or a percentage of them, and is usually temporary until the feature is fully rolled out. A config setting controls how the system behaves, such as timeouts, URLs or limits, and normally stays in place long term, varying by environment rather than by user.\n\n## Release notes: email or in-app?\n\n**In-app as the default**, because users see the notes when they're actually using the product. For v4, add a **short email** as well if any changes need users to do something or noticeably change how the product works. A major version with a maintenance window probably qualifies.\n\n## Three things for the rollback plan\n\n1. **A verified way back for the database.** Take a backup or snapshot immediately before the migration, and either a tested down-migration or a tested restore. Time the restore in advance. The migration takes about 90 minutes of a 120-minute window, which leaves only 30 minutes if it fails late. Decide beforehand what happens if a rollback can't finish inside the window.\n2. **Clear triggers and a named decision-maker.** Write down what counts as failure, such as migration errors, error rates above a set level or failed smoke tests. Name who makes the call, and set the deadline by which you either roll back or commit, for example \"if not verified by 03:30, roll back.\"\n3. **A step-by-step procedure, rehearsed in staging.** Cover redeploying the previous app version, restoring the database, and how to check the system is healthy afterwards. Confirm whether the old code can run against the new schema or needs the database restored. Include who updates the status page and when.\n\n## Status page template\n\n> **Scheduled maintenance: [DATE], [START TIME]–[END TIME] [TIMEZONE]**\n>\n> We'll be carrying out planned maintenance to upgrade our systems for the v4 release. During this window, [PRODUCT NAME] may be unavailable or slower than usual. We've scheduled the work for a low-traffic period to keep disruption to a minimum.\n>\n> No action is needed on your part. We'll post an update here as soon as maintenance is complete. Thanks for your patience!",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 3175,
+  "cache_read_input_tokens": 141332,
+  "output_tokens": 2212,
+  "output_tokens_details": {
+   "thinking_tokens": 969
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3175,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2212,
+    "cache_read_input_tokens": 141332,
+    "cache_creation_input_tokens": 3175,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3175
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09792239999999985,
+ "started": "2026-11-13T23:22:13.186128+00:00",
+ "wall_s": 25.53,
+ "task_index": 16
+}
