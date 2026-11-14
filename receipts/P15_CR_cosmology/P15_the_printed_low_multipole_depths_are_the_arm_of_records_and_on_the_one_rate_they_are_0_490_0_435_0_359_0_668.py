@@ -189,17 +189,23 @@ for k in (('decoupled', 'L'), ('frozen', 'L'), ('decoupled', 'one'), ('frozen', 
 ge5 = float(np.max(np.abs(np.asarray(LP['distances__armB_decoupled__L'], float) / A_L - 1.0)[3:]) * 100)
 _xv_claim = re.search(r'the hierarchy agrees to \$(\d\.\d)\$ per cent at every multipole', tex)
 _one_claim = re.search(r'to under (one) per cent above \$\\ell=(\d)\$', tex)
-check("⛭⛭⛭ `r7783` ** ④ THE PAPER'S `2.9` PER CENT -- **PARSED FROM ITS OWN SENTENCE** -- IS ARM A AGAINST ARM B's **DECOUPLED** BUILD, AT THE "
+check("⛭⛭⛭ `r7783` ** ④ THE PAPER'S CROSS-VALIDATION FIGURE -- **PARSED FROM ITS OWN SENTENCE, AND "
+      "MATCHED AGAINST EITHER CLOCK'S VALUE** -- IS ARM A AGAINST ARM B's **DECOUPLED** BUILD, AT THE "
       "DISTANCES' POINT, UNDER (L): `2.91 %` ** ⇒ *** and the **frozen** build gives `6.19 %` there, so "
       "the sentence is NOT frozen's -- the cross-validation is named by BUILD and not only by point. ** "
       "Its second clause fixes its own reading: *\"under one per cent above `l = 5`\"* holds at `0.30 %` "
       "on `l > 5` and FAILS at `1.20 %` on `l >= 5`, so the sentence is committed to the strict "
       "reading. ** *** ⌗ *This is the identification the order asked for, sharpened: point, clock AND "
       "build*",
+      # ⛔ A DISJUNCTION, FOR THE SAME REASON AS `①`: 69's rewrite takes this sentence from `2.9` to
+      #   the one-rate `3.0`, so a row demanding the (L) value would fail ON SUCCESS.  The parsed
+      #   figure must match ONE of the two this receipt measures, and which one is reported.
       _xv_claim is not None and _one_claim is not None
-      and abs(xv[('decoupled', 'L')][0] - float(_xv_claim.group(1))) < 0.05
+      and min(abs(xv[('decoupled', c)][0] - float(_xv_claim.group(1))) for c in ('L', 'one')) < 0.05
       and xv[('decoupled', 'L')][1] < 1.0 and xv[('frozen', 'L')][0] > 5.0 and ge5 > 1.0,
-      f"the paper claims {_xv_claim.group(1) if _xv_claim else None} per cent and "
+      f"the paper claims {_xv_claim.group(1) if _xv_claim else None} per cent, which matches "
+      f"{min((abs(xv[('decoupled', c)][0] - float(_xv_claim.group(1))), c) for c in ('L', 'one'))[1]!r}; "
+      f"and "
       f"{_one_claim.group(1) if _one_claim else None} per cent above l={_one_claim.group(2) if _one_claim else None}; "
       f"decoupled vs armA under (L): {xv[('decoupled','L')][0]:.2f}% over l=2..8, "
       f"{xv[('decoupled','L')][1]:.2f}% over l>5, {ge5:.2f}% over l>=5; frozen vs armA "
