@@ -25274,3 +25274,31 @@ And seeded with a real claim-site last written by one of the offending commits, 
 ⌗ **What I did not do:** touch another seat's receipt; change what `S11` is about (only `Ⓔ①`'s set and text move); re-run the retrospective sweep `Ⓔ②` names as irreplaceable; or claim the parity rule is now sound — it stays a heuristic that a stamp would replace, which is what the gate says.
 
 ⌗ **What this revision got wrong, all three caught by its own arms:** the probe captured `S11` under `runpy` without changing directory, the receipt raised and the namespace came back empty, so the seed could not fire — *a captured run that raised is not a reading*; the bareness test for the old selector looked for the words `orders r`, which my own new explanatory comment contains; and the arm-⑧ prediction above.
+
+---
+
+## ⛔⛔ `r7774` — STOOD DOWN AS ORDERED, AND I AM WITHDRAWING A FINDING `r7772` PUBLISHED: **SIX OF THOSE EIGHT RECEIPTS FAIL ONLY IN A SHALLOW CLONE, AND MY "RED ON `main`" TEST COULD NOT HAVE SEEN IT**
+
+**Stood down.** `r7765`: *"Stand down from the S11 gate work (r7772, r7774) … Leave r7774's registration unrun."* **No arm was run, no repair was built, `S11` is not edited.** The registration stays in place, unrun, with `WITHDRAWN.md` beside it — a registration that is deleted leaves no record that it was made.
+
+**But its premise was already false, and so is part of `r7772`, which you have merged.** Measured after the registration was pushed and before the stand-down arrived:
+
+- **`S11` exits `0` on a FULL clone.** Those six gates were never stale figures recomputed live.
+- **The cause is the shallow clone.** `blame` attributes **`459` of `596`** lines of that receipt to a graft-boundary commit, and its `Ⓓ` block pins a commit that **does not resolve here at all**. Two of the eight pin unresolvable commits.
+- ⛔ **And my test could not have detected this: I ran each receipt in a detached worktree of `origin/main`, which SHARES THIS CLONE'S OBJECT STORE.** A worktree of `main` is exactly as shallow as the branch. *A worktree is not a second clone, and I read it as one.*
+
+**Re-run after `git fetch --unshallow` (`7956` commits from HEAD):**
+
+| receipt | shallow | full clone |
+|---|---|---|
+| `L248/R1`, `L253/S1`, `L_probability/S11`, `L_probability/S13`, `L_probability/S59`, `P15/C60` | red | **green — all six** |
+| `L_probability/S1` | red | **still red** — the genuine one, and `r7765` says your patch has cleared it |
+| `L_probability/S55` | red | **undecided** — over a `900` s budget on the deeper history; not called either way |
+
+⇒ ***`r7772`'s finding that eight receipts fail on `main` is WITHDRAWN.*** What stands from `r7772` is the `Ⓔ①` repair itself and the observation that **a gate which passes either way is invisible to every verdict list**.
+
+### ⛭ AND THE PART THAT IS WORTH MORE THAN THE WITHDRAWAL: THE FIVE "STRUCTURAL" REDS WERE THE SAME ARTEFACT, AND THE FIX IS ONE COMMAND
+
+The five reds I have reported as *"the five structural shallow-clone reds"* on every landing for many revisions, and the `⛔ HORIZON: THE CLONE IS SHALLOW` banner the revision-id checker printed every time, are the same thing. **After `--unshallow` the checker's horizon warning is gone.** *The deepening was available the whole time; I validated around the artefact instead of removing it.* **I will run future validations on a deepened clone, and I will say so in the validation record rather than carrying the five as a standing exemption.**
+
+**→ The guard this costs, offered for the standing list:** **a worktree shares its clone's object store, so a worktree of the base branch tests the branch and not the clone.** To separate *"red on the base"* from *"red in this checkout"*, the thing that must change is the **object store** — deepen it, or clone afresh — not the ref you check out.
