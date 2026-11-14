@@ -294,11 +294,12 @@ _r7096 = glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 gate("ROUTE TWO -- `r7096`'s null-cone argument, which is this line's own and is in the tree: "
      "`a d eta = c dt` by the definition of a conformal time, so the photon-path lapse is the "
      "stacking rate's", len(_r7096) == 1)
+# r7767 (69): P15 now states one rate, decomposed; radiation is absent from the vacuum kernel and bends the cut in epoch.
 gate("ROUTE THREE -- the observer's OWN readout: the slice is flat by `prop:flat` and the recovery of "
-     "flat $\\Lambda$CDM is exact, on the $\\sinh^{2/3}$ law whose rate is the stacking one with "
-     "radiation absent",
+     "flat $\\Lambda$CDM is exact, on the $\\sinh^{2/3}$ law whose geometric part carries no "
+     "radiation, radiation being absent from the vacuum kernel",
      "r(\\tilde\\tau)=\\left(\\frac{6GM}{\\Lambda c^2}\\right)^{1/3}\\sinh^{2/3}" in body15
-     and "radiation is absent from the slicing operator's vacuum kernel" in body15)
+     and "it is absent from the vacuum kernel" in body15)
 gate("⇒⇒ THE THREE AGREE AND THE IMPLEMENTATION ALREADY DOES WHAT THEY SAY, so the sky's preference "
      "for the other configuration is a DISAGREEMENT BETWEEN THE CONSTRUCTION AND THE SKY -- localised, "
      "quantified, and a result about CR rather than a defect in the code",

@@ -232,15 +232,16 @@ gate("`P07` names the stacking side by enumeration, and the enumeration is of ph
 #   one dead arm away from asserting nothing. **  The dead arm is REMOVED rather than kept as a
 #   fallback, and the live one is extended LEFT to the subject the paper gives it -- `the reassigned
 #   shadow the observer reads` -- which is also what makes the gate's own label true.*
-gate("`P15` makes the REDSHIFT the `L3` projection of an `L1` quantity -- \"the reassigned shadow the "
-     "observer reads, through which an L1 or L2 quantity appears as distance and redshift\" -- so the "
-     "observed photons' own properties are read off the stacking rate through the projection",
-     "the reassigned shadow the observer reads, through which an L1 or L2 quantity appears as "
+# r7767 (69): P15 now states one rate, decomposed; the L3 sentence reads "the rate appears as distance and redshift".
+gate("`P15` makes the REDSHIFT the `L3` projection of the rate -- \"the reassigned shadow the "
+     "observer reads, through which the rate appears as distance and redshift\" -- so the "
+     "observed photons' own properties are read off the one rate through the projection",
+     "the reassigned shadow the observer reads, through which the rate appears as "
      "distance and redshift" in body15)
-gate("and `P15` puts `$D_M$` and `$D_H=c/H$` on the stacking rate's `$1/H_0$` while the sound horizon "
-     "is accumulated on the leaf -- the two sides in one sentence",
-     "$D_M$ and $D_H=c/H$ carry the stacking rate's $1/H_0$, while the sound horizon is accumulated "
-     "on the leaf rate" in body15)
+gate("and `P15` puts `$D_M$` and `$D_H=c/H$` on the one rate, carrying `$1/H_0$` through the late-time law, "
+     "while the sound horizon is accumulated where radiation's term dominates it -- the two sides in one sentence",
+     "$D_M$ and $D_H=c/H$ carry $1/H_0$ through the late-time law, while the sound horizon is accumulated "
+     "where radiation's term" in body15)
 gate("⇒⇒ THE RULING: the optical depth to the observer is a property of those same photons accumulated "
      "along that same path, so it takes the STACKING rate and `d tau` carries NO Jacobian.  The "
      "content enters through `n_e` and not through the measure",
@@ -301,8 +302,8 @@ gate("⛭⛭ THE GENERAL FORM, which is what makes this a distinction rather tha
 # ===================================================== E. what survives: the ionisation history
 head("E.  ✔ WHAT SURVIVES: THE IONISATION HISTORY IS LEAF, AND THE MIXED OBJECT IS WHAT NOBODY COMPUTES")
 
-gate("`P15` names recombination's MICROPHYSICS on the leaf side with `r_s` and `r_D`",
-     "take the leaf's, together with recombination's microphysics and the perturbations" in body15)
+gate("`P15` names recombination's MICROPHYSICS on the one rate with `r_s` and `r_D`",
+     "recombination's microphysics and the perturbations alike" in body15)
 gate("and `sec:coherence` makes recombination's own expansion the leaf's -- \"Recombination is "
      "observable cosmology from the branch point onward\" with its expansion the leaf's",
      "Recombination is observable cosmology from the branch point onward" in body15)

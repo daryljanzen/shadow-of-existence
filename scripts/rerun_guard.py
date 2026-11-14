@@ -47,8 +47,14 @@ def _read_tip(env):
     repo, ref = env.get('GITHUB_REPOSITORY', ''), env.get('GITHUB_REF_NAME', '')
     if not (repo and ref):
         return ''
-    r = subprocess.run(['gh', 'api', f'repos/{repo}/git/ref/heads/{ref}', '--jq', '.object.sha'],
-                       capture_output=True, text=True)
+    # r7765 (cc66): bounded.  This is a single API read; `30` s is far above a healthy one.  A timeout
+    #   returns `''`, which is exactly what a non-zero return code already returns, so `verdict()`'s
+    #   declining path is already written for it and no caller changes.
+    try:
+        r = subprocess.run(['gh', 'api', f'repos/{repo}/git/ref/heads/{ref}', '--jq', '.object.sha'],
+                           capture_output=True, text=True, timeout=30)
+    except subprocess.TimeoutExpired:
+        return ''
     return r.stdout.strip() if r.returncode == 0 else ''
 
 

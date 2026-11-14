@@ -105,6 +105,13 @@ K = h0 ** 2 * OMR * r0 ** 4
 M_LEN = TWO_M / 2.0
 R3 = np.sqrt(3.0)
 Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed
+#   ⌗ 69 landed this declaration at `r7765` and this seat landed the same fix independently at
+#   `r7765+cc66.1`; 69's line is the one kept, since a second copy of the marker would be a second
+#   declaration of one fact.  What it is for: `L_probability/S1` `(iii)2` requires every `.py`
+#   carrying `0.0467` to declare it an INPUT, and this receipt was the one carrier without it.
+#   `P15` `eq:zacc` itself carries the interval as an input "from DESI DR2 D_M/D_H"; NOTHING HERE
+#   COMPUTES THE FIT -- gate `⑥` propagates the printed interval through an identity, and no row
+#   rests on its width.
 TEXT = open(TEX, encoding='utf-8', errors='replace').read()
 FAILS = []
 

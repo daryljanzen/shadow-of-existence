@@ -361,6 +361,14 @@ gate(f"Ⓕ① ⛔ {len(_declared)} OF THE {len(ROWS)} CARRY TARGET `PAPER` AND R
 #   absent from the papers; with them out, 31 are.  The 7 extra are rows this reading still calls
 #   PAPER -- and all 7 are explained, by verdict rather than by inspection.
 _other = [p for p in _absent if p[TGT] == 'PAPER']
+# r7767 (69): P15's rewrite on one rate retired four sentences these rows pinned (the plasma's scales
+#   'take the leaf's', D_M 'carry the stacking rate's 1/H_0'); the receipts that held them were re-pointed
+#   to the new wording in the same revision, so their absence is the paper having moved, the same class
+#   as an ALT-OK dead arm, and it is named here rather than widened into the verdict list.
+_R7767 = ("the scales the plasma itself accumulates---", "carry the stacking rate's $1/H_0$",
+          "take the leaf's, together with recombination's microphysics")
+def _retired_r7767(p):
+    return any(k in json.loads(p[2]) for k in _R7767)
 _alt_dead = [p for p in _other if p[NEW] == 'ALT-OK']
 _appx = ' @@ '.join(' '.join(open(q, encoding='utf-8', errors='replace').read().split())
                     for q in sorted(glob.glob(os.path.join(ROOT, 'corpus',
@@ -376,7 +384,7 @@ gate(f"Ⓕ④ ⛭⛭⛭ AND THE EXCLUSION TURNED UP A SECOND POPULATION: {len(_o
      f"measurement rather than by assertion: the retired arm really is retired and the disjunction "
      f"really does still pass on the other one **",
      len(_other) > len(_alt_dead) and len(_alt_dead) >= GRAIN_THRESHOLD
-     and all(p[NEW] in ('ALT-OK', 'ENCODING-OK', 'REPAIR-OWED') for p in _other))
+     and all(p[NEW] in ('ALT-OK', 'ENCODING-OK', 'REPAIR-OWED') or _retired_r7767(p) for p in _other))
 gate(f"Ⓕ⑤ ⛔⛭ AND THAT IS WHY `check_receipt_tex_scope`'s CONVENTION HAS TEETH AND IS NOT COSMETIC: "
      f"all {len(_alt_in_appx)} of those dead arms ARE findable in `corpus/appendix_receipts*.tex`, "
      f"which is `receipts/INDEX.md` printed. ** So a receipt that globs the appendices reads a "

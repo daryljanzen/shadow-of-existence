@@ -106,10 +106,7 @@ ADJ = {
  # r7615 (69): r7614's result (the derivation holds on any cut) written in; LANDED as above, and the three r7613
  # keys whose sentences r7615 rewrote are dropped rather than kept stale.
  "The stacking rate is derived with radiation excluded from it, and which rate light's path distance takes is the open work": ('LANDED', "P7 frontier:scalar, r7615, restated r7751 as open work"),
- "So the comparison is between the construction's derived configuration and the sky": ('LANDED', "P15 sec:scope, r7615"),
  "the stacking rate the reassignment derives for it on any cut": ('LANDED', "P16, r7615"),
- "So the stacking rate the projection's distance is built on is derived, by the reassignment's own "
- "identification of the photon family": ('LANDED', "P15 sec:scope, r7613: this file's derivation, written in"),
  # r7749 (69): on Daryl's direction to follow the data, P7's summary and P18's frontier state the derivation as resting
  # on ONE identification and carry the light-path distance's rate as open work; the three r7613/r7615 keys whose
  # sentences were rewritten are dropped, and the rewritten sentences are LANDED (they state the derivation's basis, or
@@ -118,6 +115,8 @@ ADJ = {
  "the stacking rate the construction assigns light's path distance is derived on any cut with radiation excluded from it": ('LANDED', "P7 sec:intro's cosmology summary, r7751"),
  "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
  "an assignment the reassignment derives on any cut, bent or straight": ('LANDED', "P15 sec:refit-bound, r7753-r7755: states the derivation's basis beside the open question (whether radiation belongs in the rate, or the half per cent comes from another requirement), and derives nothing new"),
+ # r7767 (69): P15's rewrite on the corrected framing removed the stacking-rate derivation sentence and moved the
+ # comparison sentence out of the net; both keys dropped rather than kept stale.
  # r7753 (69): P6's episode sentence was rewritten to name the open rate and leaves the net, so its r7615 key is
  # dropped rather than kept stale.
  # r7745 (69): P18's frontier-table row for PO-87 is gone (the acoustic residual is worked and leaves the list), so its
