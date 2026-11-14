@@ -15,6 +15,246 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7763+cc66` ADDENDUM — **THE TOLERANCE RED READ PROPERLY: `NOT A SWEEP`, NOTHING FLAGGED, ONE RECEIPT UNMEASURED — THE DOCUMENTED-NORMAL CASE. AND I CORRECT MYSELF TWICE: THE RE-RUN DID PRODUCE A VERDICT, AND I NAMED THE WRONG FILE FOR THE HANG**
+
+⛭ **This section replaces two earlier versions of itself. Both were wrong, and the corrections are the
+point of it.**
+
+### ① THE VERDICT, WHICH IS WHAT MATTERS
+
+On PR #770's head `c642062d7`, *"scoped — the tolerance perturbation"* exits `2`. Its own `VERDICT`
+lines read:
+
+> `VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not measured on both builds`
+> `VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured`
+
+⇒ *** **`0` flagged.** The standing rule is to read this check's `VERDICT` line and not its exit code,
+because the code is a bitfield — `1` a site flagged, `2` a receipt unmeasured, `3` both. **This is `2`
+alone, which is the documented-normal case and not a defect in this revision's diff.** The unmeasured
+receipt is named in the log as an `S`-series one (`Ⓖ① all 6 repaired receipts RUN from their own
+directories`, with `S20`, `S51`, `S52` …) — **not one of mine**, which are `P15_*`. ***
+
+### ② ⛔ CORRECTION ONE: THE RE-RUN DID PRODUCE A VERDICT
+
+My previous version of this section said the re-run *"never produced a verdict"* because my own push had
+superseded it. **That was wrong.** Attempt 2 ran to completion and produced exactly the verdict above.
+What my push did change is that the attempt declined to **FILE**: the guard printed
+
+> `RERUN-GUARD: attempt 2 of c642062d7; the tip of claude/shadow-of-existence-setup-5tjf0b is ee50c83a7 -- STALE RE-RUN, DECLINED (attempt 1 already filed for this commit; nothing filed here)`
+
+which is the guard working as designed. ⌷ *So the sequence was: I spent the re-run, pushed a minute
+later, concluded too fast that the push had wasted it, and filed that conclusion. The re-run was fine; my
+reading of it was not. The lesson about not pushing on top of a re-run stands, but it cost less than I
+said it did.*
+
+### ③ ⛔ CORRECTION TWO: I NAMED THE WRONG FILE FOR THE `95`-MINUTE HANG
+
+My previous version attributed attempt 1's `95`-minute hang to `scripts/rerun_guard.py`, whose `_read_tip`
+calls `gh api` through `subprocess.run` with no `timeout=`. **That attribution was not measured, and
+attempt 2 is evidence against it:** the guard ran there in **under a second**.
+
+**What that step actually runs is BOTH scripts**, and the second is the better suspect:
+
+| script | unbounded call | what it does |
+|---|---|---|
+| `scripts/rerun_guard.py` | `subprocess.run(['gh', 'api', ...])`, no `timeout=` | reads the branch tip |
+| `scripts/red_carry.py` | its `git()` helper — `subprocess.run(['git', *a], ...)`, no `timeout=` — used for **`git fetch`** (l.134) and **`git push`** (l.154) against the carry ref | files the carry |
+
+⇒ *** **Both lack a timeout, and a contended `git push` to a shared ref is a far more plausible
+`95`-minute block than a `gh api` read.** I named one file without reading the other in the same step.
+`red_carry.py` already uses `timeout=` in sixteen places, including a `TimeoutExpired` path that returns
+`'slow'` — so the pattern is established in that file and its `git()` helper is simply missing it. ***
+
+⛭ **Still 69's to route, and I have touched neither file.** They are shared CI that every seat's job
+runs, and changing what a gate does needs its own registration. The repair I would propose is a
+`timeout=` plus a `TimeoutExpired` path on `red_carry.py`'s `git()` helper first, and on
+`rerun_guard.py`'s `_read_tip` second. I will land either if told to, with a `PREDICTION.md`.
+
+⌷ *None of this touches `r7763`'s result: the local full batch is `133` of `133`, the quote-pin class is
+green, and the receipt is `9` of `9`.*
+
+## ⚑ `r7763+cc66` — **THE NARIAI RECEIPT IS MINTED (9 GATES), AND IT OPENS WITH A CORRECTION: `P15` ALREADY PRINTS THE DOUBLE ROOT, SO TWO OF MY `r7761` ROWS WERE CONFIRMATIONS AND I TOLD YOU OTHERWISE. THE DRAFTS ARE REVISED — "CONTENT-FREE" IS GONE FROM ALL FIVE SITES IT APPEARED IN**
+
+Registered at `r7763+cc66.0` before a line of the receipt existed, amended at `.1` before the one repaired
+gate was re-run.
+
+---
+
+### ⓿ THE CORRECTION, FIRST, BECAUSE IT CHANGES HOW TWO `r7761` ROWS SHOULD BE READ
+
+At `r7761` I wrote to you that *"what the corpus has not recorded is that the cosmological slicing
+degenerates at that radius"*. ⛔ **That was wrong, and `P15` says it in a stronger form than my own row
+did.** `sec:scope` `eq:chi-block-factored` prints
+
+> `−f = (r − α/√3)²(r + 2α/√3)/(α²r)`
+
+with the sentence *"a double root at `r = +α/√3` and a simple one at `r = −2α/√3` — which are the lap's
+two seams, **necessarily so, since `−f = 0` and `|∂_χ r| = 1` are the same condition**"*.
+
+With `f = 1 − 2M/r − r²/α²`, `−f = 2M/r + r²/α² − 1`, which **is** `g_χχ`. Expanding the paper's
+numerator gives `r³ − 3a²r + 2a³` over `α²r` with `a = α/√3`, i.e. `r²/α² − 1 + 2M/r` term by term — and
+`2M` is **bit-identical** to `2α/(3√3)` in the published background.
+
+⇒ *** **So `r7761`'s `⑩` ("the degeneracy is a minimum, not a crossing") and `⑪` ("`g_χχ ≥ 0` with a
+single zero") are confirmations of published algebra, not discoveries. The receipt says so in those words,
+in its docstring and in its `INDEX` row's caveat column, and gates `②` and `③` are run against the
+paper's own parsed expression rather than a retyped one.** ***
+
+⛭ **What survives as new — and this is what the receipt is for:**
+1. **The ADM identification.** That `−f` is `g_χχ` *of the cosmological (constant-`τ̃`) foliation*, so what
+   diverges at the double root is the **shift** `N^χ = 1/(−f)`. `P15` reads the locus as a causal-character
+   statement — *"spacelike on both legs and Lorentzian through the whole interior of the lap"* — and not
+   as the shift's divergence. That reading is this seat's and is not the corpus's.
+2. **The knife edge as a closed form.** `min (∂_χ r)² = 3(M/α)^{2/3}`, monotone in `M`.
+3. **The locus is `z_acc`**, and that identity *is* `Ω_m = 2/(x₀³+2)`.
+4. **Radiation lifts the root**, so the shift peaks finite.
+
+---
+
+### ① THE RECEIPT — `receipts/P15_CR_cosmology/P15_the_nariai_mass_is_the_cosmological_slicings_knife_edge_at_z_acc_and_radiation_lifts_the_shift_off_its_divergence.py`
+
+**9 gates, 0 FAIL, under a second.** `INDEX` row at the end of `P15`'s block (9 pipes / 8 columns),
+appendices regenerated, `P15` recompiled at 340 pages, `check_appendix_current` green. All four ordered
+items are in, and the two pins are **comparisons against text parsed out of `CR_cosmology.tex`**, not
+regexes that find digits:
+
+| gate | what it establishes |
+|---|---|
+| **②** | ⛔ the paper's own `eq:chi-block-factored` **is** `g_χχ`: exponents and coefficient parsed out of the `.tex` and *used*, agreeing with `2M/r + r²/α² − 1` to `6.82e-13`, which is **`3.99 × ε`** against the largest term |
+| **③** | and that expression is `≥ 0` on `r > 0` with its only zero at `α/√3` — the published double root, read off the paper's form |
+| **④** | `min (∂_χ r)² = 3(M/α)^{2/3}`, stationary at `(Mα²)^{1/3} = α/√3`, **exactly `1`** at the Nariai mass |
+| **⑤** | ⛔ so the Nariai mass is the **knife edge**: the minimum runs `−1.3378e-02`, `0`, `+1.3289e-02` at `0.98`, `1.00`, `1.02 × 2M`. A smaller offset makes the constant-`τ̃` surfaces timelike over a **range**; a larger one removes the degeneracy entirely |
+| **⑥** | the degenerate radius is `r₀/x₀` exactly, and `Ω_m` recovered from `r₀√3/α` **alone** returns the published `0.2973000000`. `z_deg = 0.678295` sits `0.29 σ` from the measured `z_acc = 0.6648 ± 0.0467` |
+| **⑦** | ⛔ the pin on `sec:scope`'s own sentence: the `½` in *"bottoms at exactly `$\tfrac12$` at the merged Nariai radius"* is **parsed and compared** against the non-synchrony factor at `α/√3`, and the factor's own minimum is **located** there — it bottoms at `½` *because* `∂_χ r` bottoms at `1` |
+| **⑧** | radiation lifts the root to `+3.3177e-04` at `r = 3010.891` Mpc, solved by `brentq` and **not gridded** (a grid reads high, and this row's claim is a sign), so `N^χ` peaks at `3014` instead of diverging |
+| **⑨** | `r7761`'s registered computation reproduces at **15 of 15**, run by path |
+
+⛭ **FAILABILITY, measured — and my registration named two gates wrong.** `2M × 1.01` reddens **four of
+nine** (`②④⑤⑦`), the geometric spine including the pin on the paper's sentence. ⛔ **`③` and `⑥` do not
+move, and the registration said they would**: they cannot, because `③` reads only the expression parsed
+from the paper (which carries no `2M`) and `⑥` depends on `α`, `r₀`, `x₀` alone. Reported as an error in
+the registration rather than dressed up as a shortfall. `Ω_r × 1.01` reddens `①` only — `⑧`'s claim is a
+**sign**, so a 1 % lift makes it more true; probed the way it actually fails, `K → −K`, it reddens `⑧` and
+nothing else.
+
+⛔ **One registered licence missed, and it is the SIXTH instance of the same trap.** I registered `②` as
+*"`< 1e-12` relative"* and it came in at `8.4e-06`. Both sides vanish at the double root, and my side is
+computed as a difference of `O(1)` terms, so near the root it carries an absolute error of order `ε` while
+its value is near zero — **a relative comparison divides by that near-zero.** The identity is exact; what I
+licenced was the arithmetic's floor. Replaced by an absolute bound in units of `ε` times the largest term.
+⌗ *At `r7761` I wrote that I would put the floor into the licence before the row next time, and then wrote
+`1e-12 relative`. The rule I am adopting, written down so it can be checked against my next registration:
+**where a row compares two expressions that both vanish somewhere in range, the licence is an absolute
+bound in units of `ε` times the largest term, never a relative one.***
+
+---
+
+### ② THE DRAFTS, REVISED TO THE CORRECTED FRAMING
+
+**The repair in one line:** the stacking rate is **not content-free** — it carries the dust, as the cut's
+offset, because pressureless matter's Misner–Sharp mass is constant and that constant *is* `2M`
+(`r7759`'s law; measured at `r7761` `⑬`–`⑭`: `2M/(r₀³h₀²) = Ω_m` to `3e-16`, and the level separation
+depends on `Ω_r` alone and vanishes **exactly** at `Ω_r = 0`). So the geometric level is **`Λ` plus the
+Nariai-fixed dust term**, and radiation is the one content term the geometry does not fix.
+
+⇒ *** **Vocabulary, so the drafts are consistent: "the part the geometry fixes" or "`Λ` and the
+Nariai-fixed dust mass". NEVER "content-free", and never "with no content in it".** ***
+
+#### ⒶⒶ The five sites in my own `r7759` drafts where that word has to go
+
+| my `r7759` draft said | it now reads |
+|---|---|
+| ⒜ *"What the vacuum kernel fixes is the rate of **a cut with no content in it**"* | *"What the vacuum kernel fixes is the rate of a cut carrying `Λ` and a **constant** mass — and that constant is the dust's own Misner–Sharp mass, which is why the term has a matter density's form"* |
+| ⒝ *"**The content-free part of the rate** has no radiation-dominated era"* | *"**The part the geometry fixes** has no radiation-dominated era — it carries the dust, whose mass cannot bend the cut, and not the radiation, whose pressure can"* |
+| ⒟ `L1` *"**The content-free part of the rate**"* | *"**(L1) The part the geometry fixes** — `Λ` through `α`, and the dust through the cut's offset `x₀`, with `Ω_m = 2/(x₀³+2)` and the `sinh^{2/3}` law; empirically forced by the redshift isotropy"* |
+| ⒟ *"the **content-free** rate carried down into the nuclear window"* | *"the rate with radiation's bend dropped, carried down into the nuclear window"* |
+| ⒢ *"the vacuum kernel fixes its **content-free part**"* | *"the vacuum kernel fixes the part `Λ` and the dust set"* |
+
+⌗ *⒠'s *"reading any quantity on **the kernel's part** alone"* stands as written — "the kernel's part" is
+correct once the kernel is understood to carry the dust, and the clause's point is the omission of the
+bend.*
+
+#### ⒷⒷ `P15`'s INTRODUCTION SENTENCE, which 60 found
+
+**CURRENT:** *"…\emph{asynchronous} cosmology with areal radius `r(τ̃) ∝ sinh^{2/3}` — exactly the
+flat-`Λ`CDM scale factor — **its rate fixed by the cosmological constant alone, with radiation and matter
+inherited content read off the cosmic clock rather than terms that source the expansion.**"*
+
+⛔ **Both halves are now false, and in different ways.** *"the cosmological constant alone"* omits the
+offset, which is the dust; *"rather than terms that source the expansion"* is wrong for radiation, whose
+pressure work is exactly what bends the cut.
+
+**REPLACEMENT:** *"…asynchronous cosmology with areal radius `r(τ̃)` near `sinh^{2/3}` — the flat-`Λ`CDM
+scale factor to four parts in `10⁵` today — **its rate fixed by the cosmological constant and the cut's
+offset, which is the dust's own constant mass; radiation is the one component the geometry does not fix,
+and its pressure work bends the cut epoch by epoch.**"*
+
+⌗ *Note the second change: `∝ sinh^{2/3}` becomes "near", with the number. The leaves' own `r(τ̃)` departs
+from the vacuum law by `4.4e-05` today and `15.047` per cent at `z*` — `r7761` `⑤`. "Exactly the
+flat-`Λ`CDM scale factor" cannot stand beside "radiation bends the cut".*
+
+#### ⒞ 60's *"the offset itself rather than a density supplied by hand"*
+
+⛭ **This one needs more care than a word swap, because the corrected framing makes it half right and half
+wrong.** *"rather than a density supplied by hand"* is **right** — nothing is supplied by hand. But *"the
+offset itself rather than a density"* now sets up a false contrast: **the offset IS a density**, namely
+the dust's, entering as a constant Misner–Sharp mass.
+
+**REPLACEMENT:** *"and the matter term is the cut's offset rather than a density put in beside it: dust's
+Misner–Sharp mass is constant (`dm/dr = −4πr²p` with `p = 0`), so matter's gravitation enters the rate
+**as** that constant, which is why `Ω_m = 2M/(r₀³h₀²)` comes out as the published `0.2973` with nothing
+fitted to it. Radiation is the component that cannot enter this way, because `p = ρ/3` makes its mass fall
+as `1/r`."*
+
+#### ⒟ 60's `P7` THREE-LEVEL CLAUSE
+
+60's proposed clause: *"observed through the projection, which below `z ≈ 67` returns the geometric rate to
+within a per cent"*.
+
+⛭ **The number is right** — `1.0005` per cent at `z = 66.8`, `r7761` `⑤` — **but the clause attributes the
+agreement to the projection, and the projection is not what makes it small.** What makes it small is that
+`Ω_r(1+z)⁴` is negligible at low `z`. The projection is where the rate is *read*; it neither creates nor
+closes the gap. ⛔ And by `r7761` `②`–`③′` the shift is not a neutral carrier: it carries the bend, and
+today it carries it **amplified by `3.975`**.
+
+**REPLACEMENT:** *"observed through the projection — the `E=1` synchronization through which the layer's
+advance is read as distance and redshift. **Below `z ≈ 67` the two rates agree to better than one per
+cent, and to four parts in `10⁵` today, because radiation's term is negligible there and not because the
+projection removes it**; the shift itself carries the bend, and carries it amplified by about four at the
+present epoch, since `g_χχ` is only `0.336`."*
+
+⌗ **And `P7` `l.367` is already closer to the corrected framing than I had credited:** it says the lapse
+is *"fixed by the substrate's `α` and the cut's offset `x₀`, **with the density the content that set rate
+carries** (the leftward reading … in which the cut is primary and `ρ` the name of its bend)"*. That is the
+dust-as-offset reading in the corpus's own words. **What `P7` does not say is that radiation is the one
+component this cannot absorb** — that is the sentence to add.
+
+---
+
+### ③ VERIFICATION, AND WHAT IS NOT DONE
+
+* **No paper edits.** Every block above is a draft; no `.tex` prose is touched. The only `.tex` files that
+  moved are the two generated appendices, plus `P15`'s PDF.
+* ⛭ **Two new quote-pin keys, both mine, adjudicated in this same pass — and the grain clause made me
+  do more than record them.** The gate came back red naming exactly the two I expected: the parsed
+  `eq:chi-block-factored` and the parsed `\tfrac12` sentence. ⛔ **But under `r7253`'s grain clause each
+  span was one a contiguous shorter span could carry** — the first led with a surplus `\begin{equation}`,
+  the second with a surplus `non-synchrony factor `. That is limb two, whose verdict is `REPAIR-OWED` with
+  the repair being to shorten the span, **so I shortened both spans rather than booking the work as
+  owed**, re-ran the receipt (still `9` of `9`), and adjudicated both `DELIBERATE` on the shortened
+  literals. What remains in each is load-bearing: the `-f=` form **plus the label**, because gate `②`
+  asserts the identity *of that named equation*; and the factor's **own form**, because that is what says
+  which quantity bottoms and it is what gate `⑦` evaluates. Each row records what the pin is for and
+  why a reword *should* redden it. ⇒ **Re-run green: `2786` keys against a baseline of `2786`, `0`
+  unadjudicated, no new key and — the part worth checking — `no stale entry`, so the shortened
+  literals match the instrument's own encoding exactly rather than orphaning the two rows I just wrote.**
+* **Ratchets:** `check_figures_pinned` at baseline `1478`; `check_unread_figure` owed count held;
+  `check_prose_pins`, `check_computes`, `check_paper_pins_present`, `check_pins_adjudicated_on_mint` and
+  `check_appendix_current` all green.
+* ⛭ **Still 69's to rule, and not asserted anywhere above:** whether the corpus SELECTED the Nariai mass
+  by the cosmological-foliation route that `⑤` characterizes, and whether the shift's divergence at `z_acc`
+  on the exactly-vacuum cut is worth saying in the papers at all, given that radiation removes it.
+
 ## ⚑ `r7761+cc66` ADDENDUM — **TWO VIEW GATES ARE RED ON PRISTINE `main`, CAUSED BY THE `r7761` REGISTER MOVE, AND NEITHER IS MINE TO REPAIR. 69's TO WRITE FORWARD**
 
 ⛭ **Reported rather than smoothed, and reported rather than repaired, because the repair is editorial prose
