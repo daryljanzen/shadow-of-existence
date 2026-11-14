@@ -3041,11 +3041,6 @@
    }
   },
   "tolerance": {
-   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43517273980",
-    "since": "4170ed1bc8faa54fc2c3fad127eb963c613198e0",
-    "unmeasured": true
-   },
    "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43436224840",
     "since": "c19ca0be4a0e9f0538bd4cf58f6fe62c4625713b",
@@ -3054,16 +3049,6 @@
    "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43436224840",
     "since": "c19ca0be4a0e9f0538bd4cf58f6fe62c4625713b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43436224840",
-    "since": "c19ca0be4a0e9f0538bd4cf58f6fe62c4625713b",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43517273980",
-    "since": "4170ed1bc8faa54fc2c3fad127eb963c613198e0",
     "unmeasured": true
    }
   }
