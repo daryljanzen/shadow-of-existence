@@ -39,10 +39,13 @@ after the registration was pushed, before the stand-down arrived:
 | `L_probability/S59` | red | **green** |
 | `P15/C60` | red | **green** |
 | `L_probability/S1` | red | **still red** — the genuine one, cc66's undeclared input, which `r7765` says is now patched and passing |
-| `L_probability/S55` | red | **over the 900 s budget, undecided** — it needs a longer budget on the deeper history and is not called either way here |
+| `L_probability/S55` | red | **still red, and settled since** — re-run with a `2700` s budget it completes and fails ONE check: of the six receipts it runs, `S52` and `S5` exit `1`, and `S5` is one of the established fifteen.  **So its red is downstream of another receipt's established red, not the clone's** |
 
 ⇒ **`r7772`'s finding that eight receipts fail on `main` is WITHDRAWN. Six of them fail only in a
-shallow clone; one was the real red, already fixed by the gate; one is undecided.** The part of
+shallow clone. Of the two that are genuinely red, one was the real content red the gate has since
+fixed, and the other is red because it runs a receipt of the established fifteen.** ⌗ *The `S55` row
+was first recorded here as undecided, on a `900` s timeout; it is settled above with a longer budget
+rather than left as a hedge.* The part of
 `r7772` that stands is the `Ⓔ①` repair itself — a populated set, an in-run seed, a printed count —
 and the observation that a gate which passes either way is invisible to every verdict list.
 

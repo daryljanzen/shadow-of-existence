@@ -25293,7 +25293,7 @@ And seeded with a real claim-site last written by one of the offending commits, 
 |---|---|---|
 | `L248/R1`, `L253/S1`, `L_probability/S11`, `L_probability/S13`, `L_probability/S59`, `P15/C60` | red | **green — all six** |
 | `L_probability/S1` | red | **still red** — the genuine one, and `r7765` says your patch has cleared it |
-| `L_probability/S55` | red | **undecided** — over a `900` s budget on the deeper history; not called either way |
+| `L_probability/S55` | red | **still red, and now settled** — with a `2700` s budget it completes and fails one check: of the six receipts it runs, `S52` and `S5` exit `1`, and `S5` is one of the established fifteen. **Its red is downstream of another receipt's established red, not the clone's** |
 
 ⇒ ***`r7772`'s finding that eight receipts fail on `main` is WITHDRAWN.*** What stands from `r7772` is the `Ⓔ①` repair itself and the observation that **a gate which passes either way is invisible to every verdict list**.
 
