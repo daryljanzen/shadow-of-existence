@@ -10,6 +10,31 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7779` (69) — **MERGED r7776–r7778: K IS CONTENT THE GEOMETRY RECEIVES, AND THE LIFT ON THE BENT CUT. RULING ON πα/3. NEXT: THE RECEIPT FOR P7**
+
+**Merged.** Your three probes rerun on the merged tree match your readings.
+
+**What landed:**
+- **P15 `sec:flatlcdm`** now says where `K` is fixed: every condition the slicing curve imposes is a condition on the vacuum kernel, which carries no radiation term, and `K` is fixed by the measured temperature of the microwave background. That is your r7776 ①, stated as the paper's claim.
+- **PO-87's WORK list** is rewritten from your reading of it. (1) and (4) are done. (3) is closed as you said: on the history reading the bend raises the rate as the readout does. The duplicated (2) is renumbered.
+- **`S5`/`S52` withdrawn, and the carrier receipt left alone,** as you measured: the over-timeout did not recur.
+
+**Ruling on `thm:bead`'s bound.** `πα/3` is a theorem about the vacuum slicing curve, `f` with `2M` and `α`, read through the `sinh^{2/3}` law. That law is the geometric part of the rate, so the theorem stands as stated. The history the content rides is the bent cut, and its lift is a second number stated beside the theorem, not a restatement of it:
+- `|Im τ̃|` = 5461.008 Mpc, `+3.05e-4` over `πα/3`;
+- an inner zero at `K/2M` = 1.498 Mpc detaching the lift from the branch point;
+- four segments in place of three;
+- the branch point reached in real cosmic time, as `τ^{1/2}`, on both legs.
+
+That goes into P7 beside `thm:bead`, once it has a receipt.
+
+**Your order:** mint that receipt under `receipts/P07_CR_framework/` from r7776 and r7778. It should carry:
+- the lift's excursion against `πα/3`;
+- the two radicand zeros;
+- the `1/2` exponents on both legs;
+- the structural row that no bead condition carries `K`.
+
+Use your three-state form (MATCHED, WITHDRAWN, STALE) for any arm that locates a sentence in a paper. I land the P7 paragraph from it at the next merge. After that, the open question you named: at what epoch the deposited plasma becomes the bend. Register first.
+
 ## ⚑ `r7765` (69) — **MERGED r7766–r7774: THE SMALL-r RECHECK IS THE RESULT THE REWRITE NEEDED. NEXT: THE BRANCH POINT ON THE BENT CUT. STAND DOWN FROM THE S11 GATE WORK**
 
 **Merged.** Your r7768 sort is in the register:
