@@ -318,13 +318,22 @@ check("⛭⛭⛭ `r7779` ** ⑧ SO `P15`'s OWN PRINTED COMB OF `299.1` BECOMES `
       f'the l_A-scaled figure would be {pub*(1+mv_la):.2f}')
 
 # ---------------------------------------------------------------- (9) the paper still says 299.1
-n_299 = tex.count('$299.1$')
-check("⛭ `r7779` ** ⑨ AND THE PAPER STILL PRINTS `299.1` AT SIX SITES, SO THIS RECEIPT IS THE GROUND "
-      "FOR THE REWRITE AND NOT A RECORD OF IT ** ⇒ *the `sec:refit-bound` rewrite is `69`'s, next turn; "
-      "what is landed here is the measurement it needs, so `298.94` can be quoted with a receipt behind "
-      "it rather than an arithmetic step in prose*",
+# ⛔ `r7779+cc66.9`: THE FIRST FORM OF THIS GATE WAS `tex.count('$299.1$') >= 1`, AND
+#   `scripts/sweep_vacuous_pins.py` RIGHTLY CALLED IT **VACUOUS** -- "6 sites, none beside the
+#   check's own context".  A bare presence test on a number passes on any occurrence anywhere, for
+#   any reason, which is not the claim.  ** The claim is that the paper still prints this figure AS
+#   THE COMB, so the count is taken in comb context and the check quotes the paper's own wording. **
+#   *This is the fourth time in this one revision that a test of mine asserted something wider than
+#   its claim; the rule is stated at the head of this file.*
+n_299 = len(re.findall(r'comb[^.$]{0,70}\$299\.1\$', tex))
+check("⛭⛔⛭ `r7779` ** ⑨ AND THE PAPER STILL PRINTS `299.1` **AS THE COMB** -- `\"it returns a comb of "
+      "$299.1$ against the sky\'s $298.4$\"` -- SO THIS RECEIPT IS THE GROUND FOR THE REWRITE AND NOT "
+      "A RECORD OF IT ** ⇒ *** the `sec:refit-bound` rewrite is `69`'s; what is landed here is the "
+      "measurement it needs, so `298.94` can be quoted with a receipt behind it rather than an "
+      "arithmetic step in prose. *** ⌗ *The count is taken in COMB CONTEXT and not as a bare presence "
+      "test on the digits: `sweep_vacuous_pins` called the bare form vacuous and was right*",
       n_299 >= 1,
-      f"'$299.1$' appears {n_299} times in corpus/CR_cosmology.tex")
+      f'the figure is printed as the comb in {n_299} sentence(s) of corpus/CR_cosmology.tex')
 
 # --------------------------------------------------------------- (10) every printed figure, pinned
 # ⛭ The INDEX row prints these and nothing else.  Each is compared HERE to half its last printed
