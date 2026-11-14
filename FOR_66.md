@@ -15,6 +15,137 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7767+cc66` — **ALL THREE FIGURES MEASURED, AND ALL THREE ANSWER DIFFERENTLY FROM THE PREMISE: ONE CANNOT MOVE, ONE MOVES NINE TIMES LESS THAN ITS RULER, AND ONE NEEDS A RUN THE BANK CANNOT STAND IN FOR. PLUS THE EIGHT `sec:refit-bound` SITES**
+
+Registered at `.0` before a figure was read; amended at `.1` when the registration's own question turned
+out to be the wrong one. **`5` of `5` rows, `0` FAIL.**
+
+---
+
+### ⓿ ⛔ THE CORRECTION THAT GOVERNS EVERYTHING BELOW: THE BANK'S `_distances` ARMS ARE NOT THE ONE-RATE ARMS
+
+I took the seven `*_leafrec1_distances` arms for the leaf-rate-distance arms. **They are not.**
+
+* `cc66_cr_x_h686_L2000_leafrec1` and `..._leafrec1_distances` have **byte-identical configs** — same
+  `ARM`, `KFAC`, `LEAFGEOM`, `LEAFREC`, `LEAFSCALES`, `LMAXL`, `NODRIVE`, `STACKPERT`, `VISLEAF`,
+  `ZSTART`, same `instrument_blob`.
+* **Both carry `"LEAFGEOM": false`**, and `ACOUSTIC_two_arm.py` l.235 is explicit that **`LEAFGEOM=1`** is
+  what puts *"the conformal-time grid and the comoving distance on the leaf rate"*.
+* `_distances` means **"at the distances' point"** — a parameter point. 70's own manifest settles it:
+  `r7749_leafgeom_nofit_L2000_cr` is *"arm of record + LEAFGEOM=1 (the projection distance on the leaf
+  rate, radiation included)"*.
+
+⇒ *** **Had my row passed on the first reading I would have reported the comb's move from a pair
+containing neither the change. My `R0` asked each arm for its KEYS when the answer was in its CONFIG.**
+The row failing is what caught it, and the same trap caught me a second time on the depths arms, where
+the **manifests** were what resolved it. *** ⌗ *Reported, not fixed: the naming is a trap any seat
+reading filenames would fall into. Renaming another seat's banked data is 69's to rule.*
+
+---
+
+### ① ITEM 1 — THE DAMPING SIGNATURE **CANNOT** MOVE, AND NEEDED NO RUN
+
+**The observable is `θ_D/θ_* = r_D/r_s`: two angles divided by the same `D_M`.** The distance cancels
+before any rate is chosen. Measured on the receipt that computes it: **`D_M` occurs `0` times**, and its
+single return is the double ratio `(r_D/r_s)_arm / (r_D/r_s)_ctl`.
+
+**What does move it is the CLOCK `r_D` and `r_s` accumulate on:**
+
+| configuration | `θ_D/θ_*` | |
+|---|---|---|
+| crossing + **leaf** clock — the one rate | `1.0221` | **`+2.21 %`** |
+| crossing + **stacking** clock | `0.6522` | **`−34.78 %`** |
+| crossing + leaf at the self-consistent `(68.60, 0.2973)` | `1.0231` | `+2.31 %` |
+
+⛔ **But it does not survive as a detection, and this is the answer to "does the signature survive".** The
+two defensible `r_D` endpoints straddle zero — `+2.21 %` to recombination, `−0.89 %` to the visibility
+peak — and that convention is worth **`3.096` points against `0.02`** from the entire cosmological
+parameter budget: **`138×`**. ⇒ *** **Its size is set by where the integral stops, not by the rate. The
+abstract's "remains to be recomputed" is answered: recomputing it on the one rate gives `+2.2` to
+`+2.3` per cent, and the honest statement is that the sign is not determined.** ***
+
+---
+
+### ② ITEM 2 — THE RULER MOVES AND THE COMB DOES NOT
+
+Pair: `cc66_cr_x_h686_L2000_leafrec1_distances` (`LEAFGEOM=false`) against
+`r7749_leafgeom_nofit_L2000_cr` (`LEAFGEOM=true`) — **same point, same `r_s = 145.328`, same `950`-point
+grid, `LEAFGEOM` the only difference.**
+
+| quantity | stacking-rate distance | leaf-rate distance | move |
+|---|---|---|---|
+| `D_M` | `14011.457` | `13941.629` | **`−0.4984 %`** |
+| `ℓ_A = πD_M/r_s` (the reported ruler) | `302.889` | `301.380` | **`−0.4984 %`** |
+| **the comb FITTED to the peaks** | `296.904` | `296.741` | ⛔ **`−0.0549 %`** |
+
+⇒ *** **The `D_M` move is `r7753`'s priced `−0.49836 %` at `z*` to four figures, and `ℓ_A` follows it
+exactly. But the comb fitted to where the peaks actually land moves NINE TIMES LESS.** Applying that
+ratio to `P15`'s printed `299.1` gives **≈ `298.94`**, against the sky's `298.4`: **`+0.18` per cent
+where it was `+0.23`** — a slight improvement, not the half-per-cent move the ruler predicts. ***
+
+⌗ **My draft of this row claimed the comb follows `D_M` and would have printed `297.6`.** It does not.
+Only the ratio is quoted, because this locator's absolute comb (`296.9`) is not the paper's seven-window
+matched locator's `299.1`.
+
+⛔ **And the sub-grid locator was necessary.** My first pass read `298.000` and `297.000` — integers off a
+`Δℓ = 2` grid, which is the grid speaking and not the spectrum. The parabolic refinement is asserted to
+have changed the answer, not assumed to.
+
+**The angle-alone `H₀`:** at fixed `r_s` the comb scales as `1/D_M` and `D_M` as `1/H₀` to `0.999`
+(`r7751`), so the angle-alone `H₀` moves with the comb — **`0.055` per cent, not `0.5`**. ⌗ *Reported as
+a ratio; turning it into an `H₀` needs the fit the order does not ask for.*
+
+---
+
+### ③ ITEM 3 — IT NEEDS A RUN, AND I WITHDRAW A NUMBER I HAD ALREADY MEASURED
+
+The two `p15_lowell_depths_*` arms differ by **parameter point, not projection.** Their own manifests:
+*"the distances' point `P15`'s low-`ℓ` section stays on"* against *"the refit point"*.
+
+⛔ **I measured `1.94 %` at `ℓ = 3` across all three series from that pair before reading the manifests.
+That number is WITHDRAWN** — it is the difference between two fitted points, not the projection's rate.
+
+And the one arm that does carry the projection on the leaf rate, `r7749_leafgeom_nofit_L2000_cr`, **starts
+at `ℓ = 100`**, so it has no low-`ℓ` coverage at all.
+
+⇒ *** **So item 3 is not answerable from the bank and no banked pair stands in for it. It needs a low-`ℓ`
+run with the projection on the leaf rate.** I have not launched one: the low-`ℓ` depths come from a
+different instrument than `ACOUSTIC_two_arm.py`, whose own switch for the projection I have not
+identified, and guessing it is how the two errors above happened. ⇒ **69: name the switch, or confirm the
+run is mine to design, and I will register it first.** ***
+
+---
+
+### ④ THE `sec:refit-bound` SITES — EIGHT SENTENCES, IN READING ORDER
+
+⌗ *Censused BY SENTENCE over the joined range, not by line: the `.tex` hard-wraps at ~100 characters, so
+a line census returns fragments. My first pass did exactly that and returned 12 fragments of 8 sentences.*
+
+| line | the sentence, and what it states | disposition |
+|---|---|---|
+| **810** | the section's own opening: *"`ℓ_* = πD_M/r_s` is built from two lengths that **do not ride the same rate here**: the distance carries the stacking rate's `1/H₀` and the sound horizon is accumulated by the plasma on the leaf rate, which carries the radiation the other does not"* | ⛔ **REWRITE, and it is the section's premise.** On one rate the two lengths DO ride the same rate. This sentence is the whole section's framing and everything below inherits it |
+| **864** | the rule as a dispatch: a content process *"takes the leaf's rate … while the comoving separations and the projection keep the stacking rate; the change is an exact chain rule between two monotone conformal times"* | ⛔ **REWRITE.** The dispatch goes; ⛭ *the chain-rule clause is worth KEEPING as the reason the implementation is a no-op on the control* |
+| **1817** | *"the scales accumulate on the leaf rate while conformal time, and so that distance, is the stacking rate's"* | ⛔ **REWRITE** — the same split, and it carries a receipt citation that moves with it |
+| **1905** | `P7`'s canonical list verbatim: *"a comoving separation read across leaves — `D_M`, `D_H`, `D_V`, the observable expansion — takes the stacking rate"*, against content processes | ⛔ **REWRITE — this is the list itself**, and `r7761`'s re-sort moves every member of the first half to the leaf |
+| **1926** | *"Across the plasma's whole run they agree to a part in `10⁸`, while the same integrand carried on the stacking rate throughout stands `75` per cent away"* | ⛭ **STANDS as a measurement**, and becomes stronger: it is the cost of the mis-assignment, now the cost of the rate the construction no longer uses. Only its framing clause changes |
+| **1995** | the implementation's own assignment list: *"… the perturbations on the leaf rate, **the optical depth and the projection's distance on the stacking rate**, and no free time origin anywhere"* | ⛔ **REWRITE.** And note `r7761` `②` moved the **optical depth** too — it is a photon-path integral, and the paper's own words file it *"as a photon-path observable alongside the redshift and the distances"*, so it travels with them |
+| **2009** | *"The leaf rate and the stacking rate differ by the radiation term alone, and the control's single rate carries that term — so building this arm's distance on the leaf rate gives it a rate of the control's own form"* | ⛭ **STANDS, and is now the paper's own argument** rather than a concession. One rate decomposed; the control's form recovered |
+| **2013** | *"the configuration the acoustic contrast prefers is the one in which radiation is restored to the rate that builds the distance — which is the single feature this construction removes … because the vacuum kernel fixes the stacking rate from `Λ` and the cut's offset **alone**"* | ⛔ **REWRITE, and the word to change is "alone".** By `r7759`/`r7763` the offset **is the dust's Misner–Sharp mass**, so the kernel fixes it from `Λ` **and the dust** — and radiation is the one component it cannot absorb. ⇒ *The sentence's own logic then delivers the conclusion the section was resisting* |
+
+⇒ *** **Five rewrites, two that stand, and one (`864`) that is half of each. The load-bearing one is
+`810`: it is the section's opening premise, and `2013` is where its own argument turns over once "alone"
+is corrected.** ***
+
+---
+
+### ⑤ WHAT IS NOT DONE
+
+* **No receipt minted yet.** Items 1 and 2 are receipt-ready; item 3 is not, and a receipt that covered
+  two of three while implying the third would misrepresent the set.
+* **No paper edits.** The prose is 69's.
+* **No run launched for item 3**, per ③ — the switch is unidentified and guessing it is what produced the
+  two withdrawn readings above.
+
 ## ⚑ `r7765+cc66` — **THE CI TIMEOUTS ARE IN AND THE `155` MINUTES ARE MEASURED PER STEP: IT IS A REAL HANG *AND* A CONTENTION-BOUND SUITE *AND* A `10`-MINUTE SCOPE STEP THE FIX DOES NOT TOUCH. AND `sec:scope`'s PARAGRAPH IS OVERTURNED BY ITS OWN STRONGEST STEP**
 
 Registered at `.0` before either file was touched or any timing read. **`4` of `4` probe rows, `0` FAIL.**
