@@ -1,0 +1,328 @@
+{
+ "T1_01": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_02": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_03": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false,
+  "note": "Raw wc gives 251 tokens incl. markdown bullets/symbols; ~242 real words, so under 250."
+ },
+ "T1_04": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_05": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_06": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_07": {
+  "scores": {
+   "1": 1,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false,
+  "note": "Headline given as two sentences, not one."
+ },
+ "T1_08": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_09": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_10": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_11": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_12": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_13": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_14": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_15": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false,
+  "note": "Arithmetic 1.085 x 0.89 = 0.966 correct but stated as 'about 3.5% lower' (should be ~3.4%); kept 2 as rounding slip."
+ },
+ "T1_16": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_17": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 1
+  },
+  "special_instructions_guess": false,
+  "note": "About 254-262 words depending on counting; exceeds 250."
+ },
+ "T1_18": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_19": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_20": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_21": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_22": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false,
+  "note": "Arithmetic 1.085 x 0.89 = 0.966 correct but stated as 'about 3.5% lower' (should be ~3.4%); kept 2 as rounding slip."
+ },
+ "T1_23": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_24": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_25": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_26": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_27": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_28": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_29": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_30": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_31": {
+  "scores": {
+   "1": 2,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false
+ },
+ "T1_32": {
+  "scores": {
+   "1": 1,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 2
+  },
+  "special_instructions_guess": false,
+  "note": "Headline given as two sentences, not one."
+ }
+}
