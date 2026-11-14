@@ -39,7 +39,9 @@ P8, P15 = flat(os.path.join(CORPUS, 'slicing_operator.tex')), flat(os.path.join(
 a1 = note("with $m(r)$ a \\emph{mass function}" in P8, "P8: f = 1 - 2m(r)/r - Lambda r^2/3, m(r) a MASS FUNCTION")
 a2 = note("A straight cut has $m'\\equiv0$" in P8, "P8: a straight cut has m' = 0; the bend is m' != 0")
 a3 = note("\\rho(r)=\\frac{m'(r)}{4\\pi r^{2}}" in P8, "P8 prop:bend: rho(r) = m'(r) / 4 pi r^2")
-a4 = note("radiation, requiring $m'(r)\\neq0$, is a \\emph{bend} of the cut and therefore content" in P15,
+a4 = note(("radiation, requiring $m'(r)\\neq0$, is a \\emph{bend} of the cut and therefore content" in P15
+           # r7767: P15 rewritten on one rate; the clause now reads `a bend of the cut in epoch`
+           or "radiation, requiring $m'(r)\\neq0$, is a \\emph{bend} of the cut in epoch" in P15),
           "P15: radiation, requiring m'(r) != 0, is a BEND of the cut")
 for ok, lab in CHECKS[-4:]:
     print(f"   [{'HIT ' if ok else 'MISS'}] {lab}")
