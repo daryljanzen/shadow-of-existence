@@ -53,6 +53,36 @@ proxy.** ***
 | **⑥** | the low-multipole depths with the projection on the leaf rate, against the stacking-rate depths | the two banked `p15_lowell_depths_*` arms compared depth by depth; **the row fires on a DIFFERENCE being reported, not on its sign** |
 | **⑦** | ⇒ whether the depths move, and by how much against the sky's own uncertainty where the receipt that prints them states one | stated; **if no uncertainty is stated in the corpus I say that and report the move bare rather than inventing a significance** |
 
+## ⛔ AMENDED AT `r7767+cc66.1` — **`R0①` WAS THE WRONG QUESTION, AND THE `_distances` ARMS ARE NOT THE ONE-RATE ARMS**
+
+`R0①` asked for each leaf-distance arm's **keys**. That was insufficient: the answer lives in each arm's
+`config`, which `R0①` did not read. Reading them:
+
+* ⛔ **`cc66_cr_x_h686_L2000_leafrec1` and `cc66_cr_x_h686_L2000_leafrec1_distances` have BYTE-IDENTICAL
+  configs** — same `ARM`, `KFAC`, `LEAFGEOM`, `LEAFREC`, `LEAFSCALES`, `LMAXL`, `NODRIVE`, `STACKPERT`,
+  `VISLEAF`, `ZSTART`, and the same `instrument_blob`. **The `_distances` suffix records nothing in the
+  config**, so what it varied is not recoverable from the bank.
+* ⛔ **And both have `"LEAFGEOM": false`.** `ACOUSTIC_two_arm.py` l.235 is explicit: **`LEAFGEOM=1` is the
+  flag that puts "the conformal-time grid and the comoving distance on the leaf rate"**, while
+  `LEAFSCALES` moves `r_s` and `r_D` and `LEAFPERT` the perturbations. ⇒ *** **So neither of the arms I
+  took for the pair has the projection's distance on the leaf rate at all. Had the row passed on my first
+  reading I would have reported the comb's move from a pair that does not contain the change.** ***
+* ⛭ **The real one-rate arms are two, and they are findable only by config:**
+  `r7749_leafgeom_nofit_L2000_cr` and `r7749_leafgeom_refit_verify_cr`, both `LEAFGEOM=true`,
+  `LEAFREC=true`, `LEAFSCALES=true`, `LMAXL=2000`.
+
+| row | replacement | licence |
+|---|---|---|
+| **`R0①′`** | every banked arm is classified by its **`config`**, not its name: `LEAFGEOM`, `LEAFREC`, `LEAFSCALES` printed, and the arms with `LEAFGEOM=true` named | the count printed; `271` files scanned |
+| **`③′`**, **`④′`** | item 2's pair is **`cc66_cr_x_h686_L2000_leafrec1`** (`LEAFGEOM=false`) against **`r7749_leafgeom_nofit_L2000_cr`** (`LEAFGEOM=true`), matched on `LEAFREC`, `LEAFSCALES` and `LMAXL`, so **`LEAFGEOM` is the only difference** | both configs printed side by side and asserted to differ in `LEAFGEOM` **alone**; the comb from each |
+| **`⑥′`** | item 3's depths likewise, and **if no `LEAFGEOM=true` depths arm exists the row says the item needs a run rather than using a `_distances` arm** | the depths arms' configs printed; the answer stated either way |
+| **`⑧`** | ⛔ **NEW: the comb locator must not be grid-quantised.** My first form read integer combs (`298.000`, `297.000`) off a `Δℓ = 2` grid, which is the grid speaking | the located peaks refined sub-grid (parabolic on three points) and the refinement's effect printed; the row fires if any located peak lands exactly on a grid node to machine precision across all arms |
+
+⛭ **Reported, not fixed here: the bank's naming is a trap.** `_distances` reads as "the distances moved"
+and the config says otherwise. Another seat reading the filenames would make the mistake I made. **69's to
+rule whether those files are renamed or a README note is enough** — I am not renaming another seat's
+banked data.
+
 ## WHAT THIS REGISTRATION DOES NOT LICENCE
 
 * **No new fit, no new parameter.** Every number comes from a banked arm or from an instrument read by
