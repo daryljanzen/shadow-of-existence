@@ -84,3 +84,40 @@ R1 is why it may be.
 R1 moves under any edit to the joint-fit receipt's signature definition. R2 moves under either banked
 arm's $D_M$. R3/R4/R5 move under the control bank, the covariance, or the window. R6 moves under
 either `r7749` arm's spectrum.
+
+---
+
+# AMENDMENT `r7779+cc66.5` — written after the run
+
+### R6 passed by $0.002$, which is not a verdict — so R8 was added, POST-HOC
+
+R6 registered *"the correlation is weak — below $0.5$ in magnitude"*. **Measured: $+0.4977$ and
+$+0.4799$.** It passes the registered threshold by $0.0023$, and a row that clears its own licence by
+a fifth of a per cent has not established anything. ** R8 is therefore added, labelled post-hoc, and
+it asks the question properly: ** two smooth, nearly monotone functions of $\ell$ over $185$ bins
+share a broad shape by construction, so the test that matters is whether the Gaussian adds anything
+once a plain power law is allowed.
+
+**And my expectation for R8 was also wrong, in an informative direction.** I wrote its test as
+$|{\rm partial}| \le |{\rm raw}|$, assuming *"the Gaussian adds nothing"* would read as a partial
+correlation near **zero**. It reads as a **large negative** one: with the power law projected out,
+what is left of the arms' residual runs **opposite** to what is left of the Gaussian
+($-0.789$ and $-0.783$), while a plain power law fits the arms' residual **better** than the Gaussian
+does ($+0.851$ against $+0.498$). *So the separation is sharper than the registration asked for, and
+the row now asserts the sign rather than the magnitude.* The first form of the test is recorded here
+because it would have reddened on a correct and stronger result.
+
+### Three defects in my own first run, recorded
+
+ * **R1's distance test counted $\chi^2$.** I searched for `\bchi\b` and matched the receipt's
+   twenty-one `chi2`/`chi^2` tokens — chi-*squared*, not the comoving distance — and reddened the row
+   for it. **This is the third instance in this revision of a test asserting something wider than its
+   claim** (item ①'s `R2`, item ②'s gate ⑧, and now this), and the rule I am taking from the three is
+   written in the item-② receipt: *a pin names what it pins, and its failure condition must be the
+   claim's negation and nothing wider.*
+ * **The re-run harness pinned `ROOT` and not `HERE`.** The joint-fit receipt reads a *sibling*
+   receipt (`C62`) off `HERE`, so both copies died before any fit. Both anchors are now rewritten,
+   identically in both copies, so the two runs differ in $\ell_D$ and in nothing else — which the
+   run then confirms: at the published $\ell_D$ the harness reproduces $1.4967$ exactly.
+ * **The likelihood module was imported from the wrong directory** (`receipts/P15_CR_cosmology`
+   rather than `computations/planck_tt_likelihood`), which killed R6 alone.
