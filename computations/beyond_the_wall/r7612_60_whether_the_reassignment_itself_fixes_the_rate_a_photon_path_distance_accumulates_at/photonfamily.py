@@ -75,10 +75,6 @@ print(f"   of those, sentences that CLAIM a ground (the corpus's own derivation 
 # GROUNDS = offers a reason, but for an object that is not the projection's distance.  DERIVES = derives
 # the projection's distance's rate from something that is not itself a rate assignment.
 ADJ = {
- "and the rule is kinematic: a comoving separation read across leaves takes the stacking rate": ('STATES',
-   "P16, where the rule is derived: 'kinematic' qualifies the rule, and the sentence states it"),
- "the Nariai member, by the reassignment's own selection argument rather than by choice": ('GROUNDS',
-   "P18's ledger, and the object is the Nariai member, not the distance's rate"),
 # P15 sec:tensions's "The decision rule is structural, not a choice" is NOT in this net and the key for
 # it was dropped rather than kept as a stale one: that sentence names the three levels and neither a
 # rate nor a distance, so by the net's own definition it is not a sentence assigning a distance to a
@@ -89,13 +85,11 @@ ADJ = {
  # rewrite removed are dropped rather than kept stale.
  # r7615 (69): r7614's result (the derivation holds on any cut) written in; LANDED as above, and the three r7613
  # keys whose sentences r7615 rewrote are dropped rather than kept stale.
- "the stacking rate the reassignment derives for it on any cut": ('LANDED', "P16, r7615"),
  # r7749 (69): on Daryl's direction to follow the data, P7's summary and P18's frontier state the derivation as resting
  # on ONE identification and carry the light-path distance's rate as open work; the three r7613/r7615 keys whose
  # sentences were rewritten are dropped, and the rewritten sentences are LANDED (they state the derivation's basis, or
  # the open question, and derive nothing new).
- "The construction derives the stacking rate, with radiation excluded from it": ('LANDED', "P18 sec:frontier, r7751"),
- "the rate light's path distance takes, settled from the construction's own foundations": ('LANDED', "P18's frontier table, r7749: the open question"),
+ # r7789/r7791 (69): P18's ledger, frontier and table and P16's scoping are rewritten on one rate; their five keys are dropped.
  # r7785 (69): P10's sentence now puts every computation on the one rate and leaves the net, so its key is dropped.
  # r7785 (69): P7's abstract, rate remark and frontier rewritten on one rate; their three keys are dropped.
  # r7781 (69): P15's sec:refit-bound rewritten on one rate; the dispatch paragraph, the division paragraph, the

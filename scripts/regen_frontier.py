@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7791 (69) LANDS P16 scoping and the ontology index on one rate; P6 episode next. '
         'r7789 (69) LANDS P18 rewritten on one rate: the acoustic comparison settled and level, the open list three. '
         'r7787 (69) LANDS the lapse as the one rate in P3, P8, P9, P10, P12, P14, P17; P16, P18, P6 next. '
         'r7785 (69) LANDS P7 rewritten on one rate (abstract, rate remark, caption, synthesis, scalar frontier): the data axis holds. '

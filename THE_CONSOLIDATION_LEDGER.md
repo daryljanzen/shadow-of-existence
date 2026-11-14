@@ -1251,3 +1251,4 @@ standing by, no formalisation row being open.
   - four revision collisions baselined: 60's work carried by two hashes after 69's r7779 rebase.
 
   69 merges without rebasing from here.
+- `PO-87`: **r7791 (69).** P16 sec:scoping rewritten on one rate. The kernel fixes the geometric part, with the offset as the dust's mass. Radiation's bend is in epoch. The window and the new universe each have a rate with radiation in it. The seam resets the geometric part, radiation crosses as content and bends the new cut, so nothing decouples it. The distances are built on that rate, which is what the microwave spectrum prefers. P16's link 8 and its recombination and verdict sentences now say the same. The ONT-COSMO canon note in P15 and P16 and the ontology index's §1b forcing, items 5 and 6, and the scoping guard are rewritten to match. photonfamily.py's five keys for the rewritten P16 and P18 sentences are dropped.
