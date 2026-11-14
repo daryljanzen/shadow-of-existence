@@ -25302,3 +25302,53 @@ And seeded with a real claim-site last written by one of the offending commits, 
 The five reds I have reported as *"the five structural shallow-clone reds"* on every landing for many revisions, and the `⛔ HORIZON: THE CLONE IS SHALLOW` banner the revision-id checker printed every time, are the same thing. **After `--unshallow` the checker's horizon warning is gone.** *The deepening was available the whole time; I validated around the artefact instead of removing it.* **I will run future validations on a deepened clone, and I will say so in the validation record rather than carrying the five as a standing exemption.**
 
 **→ The guard this costs, offered for the standing list:** **a worktree shares its clone's object store, so a worktree of the base branch tests the branch and not the clone.** To separate *"red on the base"* from *"red in this checkout"*, the thing that must change is the **object store** — deepen it, or clone afresh — not the ref you check out.
+
+---
+
+## `r7776` — THE BRANCH POINT ON THE BENT CUT: **NOTHING IN THE BEAD FIXES `K`, AND IT CANNOT — THE BEAD IS A CURVE ON `f`, AND `f` CARRIES NO RADIATION TERM.** THE BENT CUT'S APPROACH IS RADIATION'S `τ^{1/2}`, AND ONE GAP IN THE HANDOVER IS NAMED
+
+**Receipt:** `computations/beyond_the_wall/r7776_60_the_branch_point_on_the_bent_cut_and_whether_anything_in_the_bead_fixes_k/`. **Ten arms registered and pushed before anything was measured; ten meet their criterion.** Every constant derived from the published pair; `K` comes out at `3006.658` Mpc², agreeing with yours to the printed digits. ⌗ *And this is the first revision I have validated on a FULL clone — `r7774`'s withdrawal deepened it.*
+
+### ⛔ ① YOUR SECOND QUESTION, ANSWERED FIRST: `K` IS NOT A PREDICTION, AND THE REASON IS STRUCTURAL
+
+Every condition `thm:bead` and the lift impose, each asked whether the radiation coefficient appears in it:
+
+| the condition | what it fixes | fixes `K`? |
+|---|---|---|
+| the Nariai condition | `2M`, from `Λ` alone | **no** |
+| the unit-speed loci `f = 0` (both seams) | the seam radii, from `2M` and `α` | **no** |
+| the Euclidean null `f = 2` | one radius | **no** |
+| the comoving turnaround `1 − f = 0` | one radius | **no** |
+| the conjugate-branch continuation | the branch structure of `r(τ̃)` | **no** |
+| the lap's closure | the lap period | **no** |
+
+**Every one is a condition on `f = 1 − 2M/r − r²/α²`, and `thm:bead` says in its own statement that the bead IS that function's slicing curve.** `f` carries `2M` and `α` and no radiation term. ⇒ **The bead can no more fix the radiation density than the baryon-to-photon ratio: both are content the geometry receives.** *The registration named the opposite as reachable, and it did not fire.*
+
+**→ Where `K` is fixed instead:** `ω_γ` from the measured monopole temperature is the one link in `K = (H₀/c)²Ω_r r₀⁴` independent of the rate's own fit; `H₀` and `r₀` are the rate's own parameters. **The density is measured and its expression as `K` borrows the epoch.**
+
+### ✔ ② THE HANDOVER: A DISTINCTION, NOT A YES OR A NO
+
+- ⒜ **The vacuum bead reaches `r = 0` with a FINITE mass function**, `2M` — so the branch point is a point of its own curve, which is what your continuation needs.
+- ⛔ ⒝ **The bent cut's mass function DIVERGES there** (`μ = 2M + K/r`, rate going as `K/r⁴` against the vacuum's `2M/r³`), **so there is no finite handover datum at `r = 0` on the content side.**
+- ⇒ **The handover is the vacuum segment's, and the bend begins just outside it** — and what fixes "just outside" is not geometric but the epoch at which the deposited plasma exists as radiation.
+
+⛭ **And at every locus the bead distinguishes the bend is a part in ten thousand or smaller** — `4.0e-4` at the turnaround, `2.5e-4` at the back seam, `5.0e-4` at the front seam, `8.4e-4` at the Euclidean null, `3.0e-4` today. *The loci could not move in any case, being roots of `f`; the numbers are reported so the structural claim is not merely verbal.*
+
+### ✔ ③ THE INITIAL DATA: THE BEND SUPPLIES **MORE** THAN THE VACUUM CUT
+
+Of the five data a Friedmann run needs at an epoch, the matter density and the flat curvature come from both cuts, the composition `η` is boundary data on either, and **the radiation density is supplied by the bent cut ALONE — the one datum the vacuum cut cannot give.** So what the bent cut hands over is a hot, radiation-dominated start, which is what a nucleosynthesis run requires.
+
+**Measured, not assumed:** `d ln r / d ln τ` between `1e-4` and `1e-3` Mpc, by quadrature of `τ(r)`, is **`0.500022`** on the bent cut against **`0.666667`** on the vacuum cut. **The bend changes the exponent of the approach, from dust's `τ^{2/3}` to radiation's `τ^{1/2}`** — both reaching the branch point in finite proper time. ⇒ *P7's "arrives at `r = 0` carrying exactly the initial data the Friedmann equations require" is truer on the bent cut than on the vacuum one.*
+
+### ⛔ ④ AND ONE GAP IN THE HANDOVER, WHICH I NAME RATHER THAN CLOSE — IT IS YOURS TO RULE ON
+
+Your continuation carries the collapse leg onto the conjugate branch with `r < 0`. Applied to the bent mass function:
+
+- the dust offset `2M` is **even** in `r` and carries across unchanged;
+- ⛔ **the radiation term `K/r` is ODD, so on the conjugate branch it enters with the opposite sign.**
+
+**A negative radiation term is not radiation.** So either the conjugate branch is vacuum in its radiation sector, or the coefficient reverses with the branch — and **nothing in `thm:bead` decides which, because its continuation is of `r(τ̃)` and not of the cut's own mass function.** The corpus states no continuation law for `μ(r)`. ⌗ *That is the sharpest thing this read found that the order did not ask for, and it bears on the antimatter leg.*
+
+### ⌗ WHAT I CANNOT SETTLE
+
+Which reading of the conjugate branch is right (no continuation law for `μ(r)` in the corpus); the epoch at which the deposited plasma becomes the bend (not a locus but a question about the deposition); and whether the corpus's own nucleosynthesis was run on the bent cut (a companion paper this repository does not carry — unchanged since `r7764`).

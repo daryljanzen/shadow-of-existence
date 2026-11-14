@@ -1,0 +1,33 @@
+r7776 (60) -- THE TREE THE READING WAS TAKEN ON
+
+  HEAD at the reading:        d513567503da82b22512d2f553a35f23042be124
+  origin/main at the reading: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
+  the branch:                 claude/shadow-of-existence-setup-6awafl
+
+** AND THE CLONE IS FULL, FOR THE FIRST TIME IN THIS SEQUENCE OF REVISIONS. **
+  shallow: false
+  commits from HEAD: 8006
+  r7774's withdrawal established that this checkout had been shallow and that the five reds this
+  line carried as "structural" were that artefact.  Every figure below is taken on the deepened
+  clone, and the fast job's own list is reported in arm 10 rather than carried as an exemption.
+
+WHAT WAS READ, AND WHERE FROM
+
+  the order                 FOR_60.md at HEAD (r7765's section)
+  P7                        corpus/CR_framework.tex -- thm:bead's statement, the dS_SdS figure
+                            caption (the layered handoff, the layers piling onto the branch point),
+                            the lap caption's unit-speed cubic and its three loci, and the
+                            "arrives at r = 0 carrying exactly the initial data" sentence
+  P15                       corpus/CR_cosmology.tex -- the framework-independent measurement
+                            sentence and the matter-radiation equality relation
+
+WHAT WAS DERIVED RATHER THAN QUOTED
+
+  every constant, in the probe, from the published pair (H_0 = 68.6, Omega_m = 0.2973) and
+  omega_gamma:  alpha = 5213.287 Mpc   r_0 = 5051.488 Mpc   2M = 2006.5950 Mpc
+                K = 3006.658 Mpc^2     Omega_r = 8.818604e-05
+  ⌗ K agrees with r7762's, r7766's and cc66's independently inverted value to the printed digits.
+
+WHAT WAS NOT AVAILABLE
+
+  no Lean toolchain; no arm of this revision needs one.
