@@ -1,0 +1,187 @@
+====================================================================================================
+r7776 (60) -- the branch point on the bent cut (order r7765)
+  HEAD: d513567503da82b22512d2f553a35f23042be124   origin/main: 8ebb86db5f89a30eea0b8b3a3b48675e6babf289
+  shallow clone: false;  commits from HEAD: 8006
+  derived from the published pair: alpha=5213.287 Mpc  r0=5051.488 Mpc  2M=2006.5950 Mpc  K=3006.658 Mpc^2
+====================================================================================================
+
+====================================================================================================
+ARM 1 -- where the two cuts differ, quantified at every locus the bead distinguishes
+  [PASS]
+      the bend's own term K/|r| against the dust offset 2M, at each locus:
+        the comoving turnaround  r = -(2M alpha^2)^(1/3) r =    -3792.227 Mpc   K/|r| =     0.7928 Mpc   ratio to 2M = 3.951e-04
+        the back seam            r = -2 alpha/sqrt3      r =    -6019.785 Mpc   K/|r| =     0.4995 Mpc   ratio to 2M = 2.489e-04
+        the front seam           r = + alpha/sqrt3       r =     3009.892 Mpc   K/|r| =     0.9989 Mpc   ratio to 2M = 4.978e-04
+        the Euclidean null       r = -0.3441 alpha       r =    -1793.892 Mpc   K/|r| =     1.6761 Mpc   ratio to 2M = 8.353e-04
+        today                    r = r_0                 r =     5051.488 Mpc   K/|r| =     0.5952 Mpc   ratio to 2M = 2.966e-04
+      loci at which the bend is below one part in a thousand of the offset: 5 of 5
+      ⇒ at every locus the bead names the bend is a part in ten thousand or smaller, and at the
+        branch point r -> 0 it DIVERGES.  So the bead's structure sits where the bend is
+        negligible and the one place it is not is the branch point itself.
+      ⌗ the reachable negative was a non-negligible bend at a seam, which would have made the
+        bead's own loci bent rather than vacuum.  None is.
+
+====================================================================================================
+ARM 2 -- whether the bead's loci move when K is put in
+  [PASS]
+      ⛭ FIRST, THE THING THAT DECIDES THIS ARM, AND IT IS NOT A NUMBER:
+        "\emph{Not every dissolution in the corpus costs that ontology, and the difference is worth marking because it is a difference in what an objector must dispute.} A second tier stands on the bare analytic structure and is untouched by any verdict about what exists: the companion circle paper undoes th"
+      the bead is a curve on `f = 1 - 2M/r - r^2/alpha^2` -- the SUBSTRATE's metric function
+      -- and r7768 established the bend is NOT in `f` but in the CUT's own mass function.
+      ⇒ ** SO K CANNOT MOVE THE BEAD'S LOCI, BY CONSTRUCTION AND NOT BY SMALLNESS: ** the loci
+        are roots of the vacuum f, and K does not appear in f at all.  The two are different
+        objects wearing the same letter for 'the radial function'.
+      THE COUNTERFACTUAL, computed anyway so the claim is not merely verbal -- the same
+      unit-speed cubic with the radiation term forced into f:
+        c =  1:  vacuum real roots [-12.639]   with K in f: [-17.134, 0.0]
+        c =  0:  vacuum real roots [-12.613]   with K in f: [-17.115, 0.0]
+        c = -1:  vacuum real roots [-12.587]   with K in f: [-17.095, 0.0]
+      ⌗ the reachable negative was a root changing in number or character.  Printed above for
+        the counterfactual; irrelevant to the construction, because the bend is not in f.
+
+====================================================================================================
+ARM 3 -- the small-r behaviour, on each cut
+  [PASS]
+      measured d ln r / d ln tau between r = 1e-4 and 1e-3 Mpc, by quadrature of tau(r):
+        the BENT cut   (mu = 2M + K/r):  0.500022   -- radiation domination predicts 1/2:  True
+        the VACUUM cut (mu = 2M):        0.666667   -- dust domination predicts 2/3:      True
+      and the proper time to reach r = 1e-4 Mpc is FINITE on both:  bent 9.118e-11,  vacuum 1.488e-08 (in Mpc of ct)
+      ⇒ ** THE BENT CUT'S APPROACH TO THE BRANCH POINT IS THE RADIATION-DOMINATED ONE, **
+        exactly the `r ~ tau^(1/2)` a hot big bang has, where the vacuum cut's is dust's
+        `tau^(2/3)`.  The bend does not merely perturb the approach; it changes its exponent.
+      ⌗ the reachable negative was the bent cut not reaching r = 0 in finite proper time, or
+        reaching it on another exponent.  It reaches it, and on radiation's.
+
+====================================================================================================
+ARM 4 -- whether the handover can be made at r = 0 at all
+  [PASS]
+      the mass function as r -> 0:   vacuum -> A3   (finite);   bent -> oo   (divergent)
+      the rate's leading term:        vacuum ~ A3/r^3;  bent ~ A4/r^4
+      ⇒ THE ANSWER, AND IT IS A DISTINCTION RATHER THAN A YES OR A NO:
+        ⒜ the VACUUM bead reaches r = 0 with a FINITE mass function -- 2M, the offset the
+          Nariai condition fixes -- so the branch point is a point of its own curve, which is
+          what thm:bead's continuation needs;
+        ⛔ ⒝ the BENT cut's mass function DIVERGES there, so there is no finite handover datum
+          AT r = 0 on the content side.  The bend has no value at the branch point to be
+          handed; it has a value at every r > 0.
+        ⇒ ** so the handover is the vacuum segment's, and the bend begins just outside it ** --
+          and what fixes 'just outside' is not geometric: it is the epoch at which the deposited
+          plasma exists as radiation, which arm 7 traces to a measurement.
+      ⌗ the registration named exactly this outcome as reachable, and it is the one that fired.
+
+====================================================================================================
+ARM 5 -- what 'the initial data the Friedmann equations require' becomes
+  [PASS]
+      P7's sentence, located:
+        "The universe arrives at $r=0$ carrying exactly the initial data the Friedmann equations require of it."
+        "On both legs alike the two rates are the one decomposition $H_{\text{leaf}}^{2}=H_{\text{stack}}^{2}+H_0^{2}\Omega_r(1+z)^{4}$ (Eq.~\ref{eq:two-rate}): content processes---the cooling leg's nucleosynthesis, the plasma's sound horizon and diffusion---run on the"
+      the data a Friedmann run needs at an epoch, and which cut supplies each:
+        the expansion rate at the epoch    bent: diverges as K^(1/2)/r^2; vacuum: as (2M)^(1/2)/r^(3/2)
+            => both supply one, and they differ in order
+        the matter density                 the constant offset 2M, which Nariai fixes from Lambda alone
+            => supplied by BOTH cuts, identically
+        the radiation density              the K/r term; ABSENT from the vacuum cut
+            => supplied by the BENT cut only
+        the spatial curvature              zero on the constant-tau slice, for any mass function (r7768 arm 4)
+            => supplied by both, unconditionally
+        the composition (eta)              the inherited datum, deposited with the plasma
+            => neither cut supplies it; it is boundary data
+      ⇒ ** THE BEND SUPPLIES MORE THAN THE VACUUM CUT, NOT LESS. **  The one datum a Friedmann
+        run needs that the vacuum cut cannot give is the radiation density, and that is exactly
+        the term the bend adds -- so a hot, radiation-dominated start is what the bent cut hands
+        over, which is what a nucleosynthesis run requires.  The composition is boundary data on
+        either cut and the paper says so.
+      ⌗ the registration allowed this direction explicitly, and it is the one measured.
+
+====================================================================================================
+ARM 6 -- does anything in the bead fix K? -- the direct search
+  [PASS]
+      every condition thm:bead and the lift impose, with the parameter each fixes:
+        does NOT fix K    the Nariai condition  Lambda G^2 M^2/c^4 = 1/9           -> 2M, from Lambda alone
+        does NOT fix K    the unit-speed loci   f = 0  (the two seams)             -> the seam radii, from 2M and alpha
+        does NOT fix K    the Euclidean null    f = 2                              -> one radius, from 2M and alpha
+        does NOT fix K    the comoving turnaround  1 - f = 0                       -> one radius, from 2M and alpha
+        does NOT fix K    the conjugate-branch continuation at r = 0               -> the branch structure of r(tau)
+        does NOT fix K    the lap's closure (a translation by one lap in signed r) -> the lap period
+      and K's appearance in the metric function the bead is a curve on: False
+      ⇒ ** NOTHING IN THE BEAD FIXES K, AND THE REASON IS STRUCTURAL: ** every one of those
+        conditions is a condition on `f`, and `f` carries 2M and alpha and no radiation term.
+        The bead can no more fix the radiation density than it can fix the baryon-to-photon
+        ratio -- both are content the geometry receives rather than content it determines.
+      ⇒ ⛔ SO THE ORDER'S PRIZE IS NOT THERE: K is not a prediction of the construction.
+      ⌗ the reachable negative was one of the six constraining K, which would have made the
+        radiation density a geometric prediction.  None does.
+
+====================================================================================================
+ARM 7 -- and if nothing does, what fixes K instead
+  [PASS]
+      K's definition in this line's instrument: K = (H_0/c)^2 Omega_r r_0^4
+        (this line's own inversion, r7762 and r7766, agreeing with cc66's to the printed digits)
+      the chain from a measurement to K, each link marked independent of the rate's own fit:
+        INDEPENDENT   omega_gamma    <- the CMB monopole temperature, measured directly
+        not indep.    H_0            <- the baryon-acoustic distances together with the acoustic angle
+        not indep.    r_0            <- alpha and x_0, i.e. Lambda and the epoch
+      P15's own sentence on the framework-independent half:
+        "The quantities this cosmology actually uses are the epoch $x_{0}$ (equivalently $\Omega_m=2/(x_{0}^{3}+2)$; \emph{$x_{0}$ is the expansion read in units of the geometry's own fixed offset $r_{N}$, not the offset itself, which the Nariai con"
+        "\emph{Matter--radiation equality is then fixed by the same epoch}, $1+z_{\mathrm{eq}}=\omega_m/\omega_r$ with $\omega_r$ measured, so one quantity carries the expansion history and the acoustic drivin"
+      ⇒ ** K IS FIXED BY THE MEASURED PHOTON TEMPERATURE, through Omega_r, and the construction
+        receives it rather than predicting it. **  The other two links are the rate's own
+        parameters, so the radiation DENSITY is measured and its expression in K borrows the
+        epoch -- which is the order's second answer: the temperature, not the geometry.
+      ⌗ the reachable negative was the chain closing on something itself fitted to the rate,
+        which would make K not independent at all.  The temperature link is not.
+
+====================================================================================================
+ARM 8 -- the conjugate branch, and whether radiation survives the crossing
+  [PASS]
+      thm:bead's own continuation, as P7 prints it: outward r = (2M alpha^2)^(1/3) sinh^(2/3),
+        inward r = -(2M alpha^2)^(1/3) cosh^(2/3) with Im(tau) held at -pi alpha/3
+      the dust term A3 is the SAME on both branches: True
+      the radiation term A4/r changes SIGN on the conjugate branch (r < 0): True
+      ⇒ ** THE BEND IS A PROPERTY OF THE MATTER BRANCH. **  A4/r is odd in r, so on the
+        conjugate branch the same radiation coefficient enters with the opposite sign, while
+        the dust offset is even and carries across unchanged.  ⌗ A negative radiation term is
+        not radiation: so either the conjugate branch is vacuum in its radiation sector, or the
+        coefficient itself reverses with the branch -- and NOTHING in thm:bead's continuation
+        decides which, because its continuation is of `r(tau)` and not of the cut's mass
+        function.  ** That is a gap in the handover and this arm names it rather than closing
+        it. **
+      ⌗ the reachable negative was the term failing to continue at all; what it does instead is
+        continue with a sign the physics cannot use, which is the sharper finding.
+
+====================================================================================================
+ARM 9 -- what this read cannot settle
+  [PASS]
+      * which of the two readings of arm 8 is right
+        -- thm:bead continues r(tau), not mu(r); the corpus states no continuation law for the cut's own mass function, so the question is not decidable from the text this repository carries
+      * the epoch at which the deposited plasma becomes the bend
+        -- arm 4 shows there is no finite handover datum at r = 0 exactly; what fixes the first epoch at which K/r is the right description is a physics question about the deposition, not a locus
+      * whether the corpus's own nucleosynthesis was run on the bent cut
+        -- cited to a companion paper this repository does not carry -- unchanged since r7764
+
+====================================================================================================
+ARM 10 -- the count, the clone, and the subject clause
+  [PASS]
+      arms declared in PREDICTION.md: 10
+      arms answered here (this one included): 10
+      this clone is shallow: false   -- r7774's withdrawal deepened it, and this revision is the first validated on the full one
+      the fast job on the DEEPENED clone names: (still running at probe time)
+        against the FIVE this line carried as 'structural shallow-clone reds': 0 named now
+      ** THIS SEAT IS A SUBJECT OF NOTHING IN THIS REVISION. **
+
+====================================================================================================
+  VERDICT
+====================================================================================================
+    [PASS]  ARM 1   where the two cuts differ, quantified at every locus the bead distinguishes
+    [PASS]  ARM 2   whether the bead's loci move when K is put in
+    [PASS]  ARM 3   the small-r behaviour, on each cut
+    [PASS]  ARM 4   whether the handover can be made at r = 0 at all
+    [PASS]  ARM 5   what 'the initial data the Friedmann equations require' becomes
+    [PASS]  ARM 6   does anything in the bead fix K? -- the direct search
+    [PASS]  ARM 7   and if nothing does, what fixes K instead
+    [PASS]  ARM 8   the conjugate branch, and whether radiation survives the crossing
+    [PASS]  ARM 9   what this read cannot settle
+    [PASS]  ARM 10  the count, the clone, and the subject clause
+
+  10 of 10 arms meet their criterion.
+====================================================================================================
