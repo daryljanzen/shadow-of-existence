@@ -15,6 +15,172 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7765+cc66` — **THE CI TIMEOUTS ARE IN AND THE `155` MINUTES ARE MEASURED PER STEP: IT IS A REAL HANG *AND* A CONTENTION-BOUND SUITE *AND* A `10`-MINUTE SCOPE STEP THE FIX DOES NOT TOUCH. AND `sec:scope`'s PARAGRAPH IS OVERTURNED BY ITS OWN STRONGEST STEP**
+
+Registered at `.0` before either file was touched or any timing read. **`4` of `4` probe rows, `0` FAIL.**
+⛔ **And one red on `r7763` turned out to be MINE**, found by reproducing it rather than routing it: §④.
+
+---
+
+### ① WHERE THE `155` MINUTES WENT — `R1`, measured per step from the Actions API
+
+**The job 69 names** — *"scoped — the plain suite"*, attempt 1, `cancelled`:
+
+| step | wall | outcome |
+|---|---|---|
+| setup, checkout, python | `1` min | success |
+| **scope — which receipts this range can have changed** | **`10` min `01` s** | success |
+| **run the scoped receipts** | **`84` min `41` s** | ⛔ failure |
+| **record — carry this push's reds forward** | **`59` min `00` s** | ⛔ never completed |
+
+**And attempt 2 is the control I did not have to construct** — same commit, same scope:
+
+| step | attempt 1 | attempt 2 | ratio |
+|---|---|---|---|
+| scope | `10` min `01` s | `10` min `00` s | **identical** |
+| run the scoped receipts | `84` min `41` s | **`16` min `55` s** | `5.0×` |
+| record | **`59` min, hung** | **`1` s** | `3540×` |
+
+**The tolerance job's record step hung too** — `94` min `06` s, from `22:43`, overlapping the plain
+suite's from `23:35`; both still stuck when the run was cancelled.
+
+⇒ *** **It is THREE things, and only one is mine to fix:**
+1. ⛔ **The record step genuinely HANGS**, and the signature is contention: `59` and `94` minutes with two
+   jobs on the shared carry ref at once, against `1` second in the same step run alone and `0` seconds in
+   a third job that ran before either. **This is what §③ fixes.**
+2. **The suite step is NOT scope-bound** — `85` min against `17` for the same commit and scope. A job too
+   big for its budget does not get five times faster on a re-run. **I am not crediting the fix with it.**
+3. ⛭ **The scope step IS a fixed cost** — `10` min `01` s and `10` min `00` s, stable to the second. **Ten
+   minutes of every plain-suite job spent deciding what to run, and the timeout fix does nothing for it.**
+   The order said to say so if it came out this way; it did, and I am saying it rather than folding it in. ***
+
+⌗ *And this supplies the evidence my `r7763` attribution lacked: there I named `rerun_guard.py` from
+source reading, corrected it to `red_carry.py` on source reading again, and now the contention signature
+and `rerun_guard.py`'s sub-second completion on attempt 2 settle it by measurement.*
+
+---
+
+### ② THE FIX, AND THE ROW THAT CAUGHT A DEFECT IN THE FIX ITSELF
+
+`scripts/red_carry.py`'s `git()` and `scripts/rerun_guard.py`'s `_read_tip` are bounded, `300` s and
+`30` s, both registered in advance so they are not chosen to fit a result.
+
+| row | what it establishes |
+|---|---|
+| **④** | `git()` on a call that returns is **bit-identical** to before — compared field by field against a copy of the pre-change helper kept in the probe |
+| **⑤** | ⛔ the bound fires on a **real** hang: a fake `git` that sleeps `30` s returns in `2.00` s with `returncode 124`. **The fake is put earlier on `PATH`, so `subprocess.run(timeout=)` itself fires — not a monkeypatched stand-in** |
+| **⑥** | `_read_tip` likewise: `''` after its `30` s bound against a `60` s sleep, which is what a non-zero return code already returned |
+| **⑦** | and the real caller turns the hang into a **fast, visible failure**: `fetch()` still returns `({}, None)` on a healthy repository whose carry ref is absent, and with a hanging `git` raises `SystemExit` naming the timeout **in `2.00` s** |
+
+⛔⛔ **AND ROW `⑦` CAUGHT A DEFECT IN MY OWN FIX, WHICH IS THE WHOLE REASON THE ROW EXISTS.** I first wrote
+the bound as `def git(..., timeout=GIT_TIMEOUT)` — **a default argument, evaluated at import**. So the
+bound could not be lowered at call time, by a test or by anything else; a `60` s fake `git` sailed under
+the `300` s default, returned `0`, and never reached the branch I was testing. ⇒ *** **A bound that cannot
+be lowered cannot be tested, and rows `④`–`⑥` would all have passed over it.** `git()` now reads the
+constant at call time. *** ⌗ *This is the second time this revision that my own instrument, not the code
+under test, was the defect — and both times the probe is what found it.*
+
+⛔ **One over-claim withdrawn.** Two earlier runs of row `⑦` crashed in `json.loads('')` inside `fetch()`
+and I recorded that as *"a real latent fragility"* in `fetch()`. **It was not — it was my unlowerable
+bound.** Measured by hand afterwards: a missing carry ref gives `rc=128` with *"couldn't find remote
+ref"*, which `fetch()` handles correctly, and row `⑦` now shows it returning `({}, None)`. What survives,
+and is intended: on a **timeout** the stderr matches neither clause, so `fetch()` raises rather than
+reporting "nobody has written one yet" — right, because nothing was recorded.
+
+⛭ **A behaviour change I am not dressing up as a no-op:** a timeout now surfaces as a recording
+**failure**. It cannot be silently green — nothing was recorded. A job that fails in two seconds is
+reportable; one cancelled at `95` minutes is not.
+
+---
+
+### ③ ⛔ A RED ON `r7763` THAT WAS MINE
+
+The plain suite's `4` reds are `L_probability/S*`, in a cascade from `S5` and `S52` exiting `1` — not
+mine. **But one failing check named my file**, and it was right to.
+
+`L_probability/S1` `(iii)2` collects **every `.py` in the repository carrying `0.0467`** and requires each
+to declare the value an input (`'corpus measured'`, or the `x0 = 1.6648` literal). 60 had already patched
+my `r7761` probe for exactly this, with the `INPUT` marker — and then **my `r7763` receipt arrived as a new
+carrier with no declaration at all.** One line; `S1` green again, my receipt still `9` of `9`.
+
+⌗ *Reproduced locally before being called anything, per the standing sequence — and the answer was that it
+was mine. 69's note that "S1 passes" was true of the patched probe and not of the receipt I minted after it.*
+
+---
+
+### ④ `P15` `sec:scope` RE-DERIVED — **AND THE PARAGRAPH IS OVERTURNED BY ITS OWN STRONGEST STEP**
+
+**CURRENT** (`sec:scope`, the sentence and the clause under it):
+
+> *"**Nor does putting radiation into the cut supply the leaf rate.**"* Radiation is a bend of the cut,
+> `m'(r) ≠ 0`; taken as the radial profile `ρ_r ∝ r⁻⁴` the bend gives
+> `H² = H₀²[Ω_m(1+z)³ + Ω_Λ − 3Ω_r z(1+z)³]`, a radiation term `−3z/(1+z)` times the leaf's, so the
+> distance along the photon family lengthens to `14397.425` Mpc, `2.75` per cent beyond the stacking
+> distance and away from the leaf distance the sky prefers, and the bent rate vanishes at `z = 1123.76`,
+> just above recombination.
+
+⛔ **Every number there is correct arithmetic on the WRONG mass function.** `ρ_r ∝ r⁻⁴` read as a radial
+*profile* uses `dm/dr = +4πr²ρ`, the **static-region** formula, in a region where `r` is **timelike**
+(`r7759`'s ruling, `r7763`'s receipt). The law there is `dm/dr = −4πr²p`.
+
+**What the bent cut actually gives:** dust has `p = 0`, so its Misner–Sharp mass is the constant `2M`;
+radiation has `p = ρ/3`, so pressure work gives `μ(r) = 2M + K/r` with
+`K = (H₀/c)²Ω_r r₀⁴ = 3006.658` Mpc². ⇒ *** **That cut's rate is `H_leaf` IDENTICALLY** — derived twice
+over in the `r7759` receipt, once by integrating the pressure-work law from a positive density and once
+by inverting the chart's rate relation, agreeing to round-off. ***
+
+⛭⛔⛭ **AND HERE IS WHAT IT DOES TO THE PARAGRAPH: ITS OWN STRONGEST STEP NOW CARRIES THE OPPOSITE
+CONCLUSION.** The paragraph's best move is *"the derivation is not a property of the vacuum chart"* —
+steps (iv) and (v) rest on `dr/dτ = rH(r)/c`, whose right-hand side depends on `r` alone **for every mass
+function**, so the solutions are translates and *"the unit rate holds on any cut, bent or straight"*.
+**That is true, and I confirmed it to `0.000e+00` over `20001` nodes at `r7761` `④`.** But the unit rate
+holding on the bent cut means the congruence accumulates length **at the bent cut's own rate** — and the
+bent cut's rate is `H_leaf`. ⇒ *** **The autonomy argument does not protect the stacking-rate conclusion;
+it is what overturns it. The paragraph proves that whichever cut the universe has, the photon family
+accumulates on THAT cut's rate — and radiation's pressure work puts the leaf rate there.** ***
+
+**REPLACEMENT:**
+
+> *"**And putting radiation into the cut is what supplies the leaf rate.**" Past the cosmological horizon
+> `r` is the time direction, so the Misner–Sharp mass obeys `dm/dr = −4πr²p`: dust's `p = 0` keeps `m` at
+> the constant `2M`, which is why the geometric term has a matter density's form, while radiation's
+> `p = ρ/3` makes `m` fall as `1/r` by pressure work, with `ρ > 0` throughout. Integrating gives
+> `μ(r) = 2M + K/r` with `K = (H₀/c)²Ω_r r₀⁴`, whose rate is `H_leaf` identically. **And the autonomy of
+> the radial equation, which makes the unit cosmic-time rate hold on any cut, then fixes the rate the
+> photon family accumulates at as that of the cut the universe has** — so the length is built on
+> `H_leaf`, and the sky's preference for the leaf-rate distance is met by the derivation rather than
+> against it. The superseded law `−3Ω_r z(1+z)³` is what the **static-region** formula `dm/dr = +4πr²ρ`
+> gives on a radial profile, and a radial profile has no referent inside a leaf, where `r` is constant;
+> its `14397.425` Mpc and its vanishing rate at `z = 1123.76` describe a cut nothing claims."*
+
+⌗ *The two readings' ratio is exactly the `−3z/(1+z)` the paper already prints, to `6.7e-16` — so the
+published factor is right and what moves is which of the two it relates.*
+
+---
+
+### ⑤ EVERY `P15` SITE MY DRAFTS TOUCH, IN READING ORDER
+
+| line | section | site | what the draft does |
+|---|---|---|---|
+| `~95` | *(introduction)* | *"its rate fixed by the cosmological constant alone, with radiation and matter inherited content … rather than terms that source the expansion"* | **rewritten** (`r7763` §②Ⓑ): both halves false — the offset is the dust, and radiation's pressure work does source the bend. `∝ sinh^{2/3}` becomes "near", with `4.4e-05` today and `15.047` per cent at `z*` |
+| `180` | `sec:properframe` | step (iv), `r(τ,χ) = r(τ+χ)` | **unchanged, and load-bearing** — it is what makes `r` a leaf label and a radial profile referentless |
+| `200` | `sec:flatlcdm` | the kernel sentence, and *"content does not enter it"* | **rewritten** (`r7759` §②⒜, revised `r7763`): the kernel fixes a cut carrying `Λ` and a constant mass, and that constant is the dust's |
+| `200` | `sec:flatlcdm` | the division, the clock sentence, the category-error sentence | **rewritten** (`r7759` §②⒝): the category-error objection is **granted**, not reworded — applied to radiation the leftward reading gives the bend |
+| `229` | `sec:tensions` | the three-level reading, `L1` and `L2` | **rewritten** (`r7759` §②⒟, revised `r7763`): `L1` is *"the part the geometry fixes"* — never "content-free" |
+| `229` | `sec:tensions` | the second fatal mis-assignment | **withdrawn**: there is no second rate for a distance to be carried onto |
+| `810` | `sec:refit-bound` | the pricing figures | **unchanged** — `r7753`'s receipt stands; `−0.498` per cent at `z*` against `−0.021` at the BAO redshifts |
+| `2819` | `sec:scope` | the distance's rate, and the photon-family paragraph | **rewritten** (`r7759` §②⒞) |
+| `2819` | `sec:scope` | *"Nor does putting radiation into the cut supply the leaf rate"* | **rewritten — §④ above**, and it is the one whose own argument reverses |
+| `2819` | `sec:scope` | `eq:chi-block-factored` and its double-root sentence | **unchanged, and now receipt-pinned** (`r7763` `②`–`③`): `−f` **is** `g_χχ` of the cosmological foliation |
+| `2819` | `sec:scope` | the non-synchrony factor's *"bottoms at exactly `½` at the merged Nariai radius"* | **unchanged, and now receipt-pinned** (`r7763` `⑦`): it bottoms there because `∂_χ r` bottoms at `1` |
+| `2951` | `sec:discussion` | `eq:zacc`, `z_acc = 0.6648 ± 0.0467` | **unchanged**; now carries the `INPUT` declaration `S1` requires in every carrier, and `r7763` `⑥` shows the radius is `r₀/x₀` |
+
+⌗ **Outside `P15`, for completeness:** `P7`'s rate remark and `eq:two-rate`; `P16` `sec:scoping`'s rule
+clause; `P10`'s grounding sentence; `P18`'s frontier and `P6`'s episode as results. All drafted at
+`r7759` and revised at `r7763`.
+
+⛭ **No paper edits.** Every block is a draft; no `.tex` prose is touched this revision either.
+
 ## ⚑ `r7763+cc66` ADDENDUM — **THE TOLERANCE RED READ PROPERLY: `NOT A SWEEP`, NOTHING FLAGGED, ONE RECEIPT UNMEASURED — THE DOCUMENTED-NORMAL CASE. AND I CORRECT MYSELF TWICE: THE RE-RUN DID PRODUCE A VERDICT, AND I NAMED THE WRONG FILE FOR THE HANG**
 
 ⛭ **This section replaces two earlier versions of itself. Both were wrong, and the corrections are the
