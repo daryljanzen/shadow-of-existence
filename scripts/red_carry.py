@@ -120,9 +120,28 @@ def _mod(name):
     return m
 
 
-def git(root, *a, check=False, env=None):
-    r = subprocess.run(['git', *a], cwd=root, capture_output=True, text=True,
-                       env=None if env is None else {**os.environ, **env})
+GIT_TIMEOUT = 300   # r7765 (cc66): seconds.  `fetch` and `push` below reach a remote, and this helper
+#   had no bound at all -- at r7763 the `record` step sat in it for 59 minutes in one job and 94 in
+#   another, both while a second job was pushing the same carry ref, until the jobs were cancelled.  A
+#   healthy call here is well under a second.
+
+
+class _Timeout:
+    """What a timed-out `git` returns: the shape a non-zero return code already returns, so no caller
+    changes.  ⛭ `returncode` is non-zero and the streams are strings, which is all `git()`'s callers
+    read -- they branch on `returncode` and on `stdout`/`stderr` text."""
+    def __init__(self, a, secs):
+        self.returncode = 124                      # the conventional timeout status
+        self.stdout = ''
+        self.stderr = f'git {" ".join(a)}: no response in {secs}s (r7765 timeout)'
+
+
+def git(root, *a, check=False, env=None, timeout=GIT_TIMEOUT):
+    try:
+        r = subprocess.run(['git', *a], cwd=root, capture_output=True, text=True,
+                           env=None if env is None else {**os.environ, **env}, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        r = _Timeout(a, timeout)
     if check and r.returncode:
         raise SystemExit(f'git {" ".join(a)}: {r.stderr.strip()}')
     return r
