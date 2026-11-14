@@ -104,7 +104,7 @@ h0 = H0 / C
 K = h0 ** 2 * OMR * r0 ** 4
 M_LEN = TWO_M / 2.0
 R3 = np.sqrt(3.0)
-Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # P15 eq:zacc, as printed
+Z_ACC, Z_ACC_ERR = 0.6648, 0.0467                 # INPUT  x0 = 1.6648 +- 0.0467, corpus measured; P15 eq:zacc, as printed
 TEXT = open(TEX, encoding='utf-8', errors='replace').read()
 FAILS = []
 
