@@ -136,12 +136,18 @@ class _Timeout:
         self.stderr = f'git {" ".join(a)}: no response in {secs}s (r7765 timeout)'
 
 
-def git(root, *a, check=False, env=None, timeout=GIT_TIMEOUT):
+def git(root, *a, check=False, env=None, timeout=None):
+    # ⛭ `timeout=None` means "read `GIT_TIMEOUT` NOW", not at import.  Writing `timeout=GIT_TIMEOUT` in
+    #   the signature binds the value when the module loads, so the bound could never be tuned at run
+    #   time -- which is how this was first written at `r7765+cc66.2`, and `bound_the_calls.py` row `⑦`
+    #   is what caught it: setting the constant had no effect and a 60s fake `git` sailed under the 300s
+    #   default.  A bound that cannot be lowered cannot be tested.
+    secs = GIT_TIMEOUT if timeout is None else timeout
     try:
         r = subprocess.run(['git', *a], cwd=root, capture_output=True, text=True,
-                           env=None if env is None else {**os.environ, **env}, timeout=timeout)
+                           env=None if env is None else {**os.environ, **env}, timeout=secs)
     except subprocess.TimeoutExpired:
-        r = _Timeout(a, timeout)
+        r = _Timeout(a, secs)
     if check and r.returncode:
         raise SystemExit(f'git {" ".join(a)}: {r.stderr.strip()}')
     return r
