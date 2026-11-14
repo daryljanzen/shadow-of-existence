@@ -186,7 +186,7 @@ radial-profile sentence). **This adds a second non-survivor and a fourth survivo
 | the exact Euclidean flatness of the constant-`τ` slices | **stands** (`r7768`) — any profile |
 | the photon-family translate property | **stands** (`r7768`) — to `2.1e-13` |
 | **the branch point's reachability in finite proper time** | **stands** — exponent `1/2` instead of `2/3`, both legs (`r7776`, and ⑨ here on the conjugate side) |
-| `P15 sec:scope`'s radial-profile sentence | **does not stand** (`r7768`) |
+| `P15 sec:scope`'s radial-profile sentence | **does not stand** (`r7768`) — ⛭ **and `r7767` REMOVED it: discharged, see below** |
 | **`thm:bead`'s `|Im τ̃| ≤ πα/3` as a bound on the actual history** | **⛔ does not stand** — exceeded by `3.05e-4` (⑦) |
 
 **And one structural change the sort had no row for: the lap's segment count rises from three to
@@ -207,3 +207,36 @@ four, and the lift detaches from the branch point at `K/2M = 1.4984 Mpc` (⑤, �
 * **A control evaluated where the discriminating term is negligible discriminates nothing.** (④)
 * **Before a sign is treated as an obstruction, find the object the argument actually uses it in.**
   (①–③: the fork was about `μ`; every bead condition uses `μ/r` or `μ/r³`.)
+
+
+---
+
+## ⛭ Added after `r7767`, which landed while this revision sat on its branch
+
+`r7767` (69) rewrote `P15` on one rate. This line's three live probes were re-run against the new
+wording, because they read the corpus text and a rewrite can break a read that was sound against the
+old:
+
+| probe | against the rewritten papers |
+|---|---|
+| `r7776` | **10 of 10**, unchanged |
+| `r7778` (this one) | **8 of 11**, the same three failures, unchanged |
+| `r7768` | 11 of 12, arm 6 still FAIL — **but its subject is gone** |
+
+**The sec:scope non-survivor in the table above is DISCHARGED.** Measured on the two commits: the
+clause *"Nor does putting radiation into the cut supply the leaf rate"* and the phrase *"taken as the
+radial profile"* each occur **once** before `r7767` and **not at all** after. The rewrite reached the
+one site the correction had not reached, and the patch this line routed is spent.
+
+**⇒ So the sort's second non-survivor is the only live one: `thm:bead`'s imaginary bound read as a
+statement about the actual history (⑦).**
+
+⌗ *And `r7768`'s arm 6 cannot say any of that itself: its gate includes finding the sentences, so it
+returns the same FAIL with them gone, and its prose is printed unconditionally — a re-run now asserts
+"the paragraph has not been reached by the correction" beside a measurement that located no sentence.
+**GUARD: a verdict that cannot distinguish the defect is present and wrong from the defect's subject
+is absent reports the same word for a live fault and a fixed one.** Recorded in full in
+`ADDENDUM_r7778_ITS_SUBJECT_WAS_REMOVED.md` beside `r7768`, whose probe is deliberately left as it
+ran.*
+
+⌗ *The fast job is green on the merged tree: every step passes, on the lists read from the workflow.*

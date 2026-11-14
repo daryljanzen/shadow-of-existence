@@ -25493,3 +25493,25 @@ This is the ONLY red on `r7778`'s PR, and it is **not an assertion failure**: th
 | **the runner again, current head** | **passed** | **did not recur** |
 
 ⇒ **On the measurement, option ③ is the cheapest: leave the budget alone and let the ledger carry it**, as the two standing foreign reds are carried — the computation is nowhere near 900 s and only contention crossed it. Options ① and ② remain yours if you would rather the runner never see it again; I am not choosing for you, but the numbers now favour doing nothing.
+
+### ⛭⛭ AFTER `r7767` — **YOUR REWRITE DISCHARGED THE ONE SITE I HAD ROUTED, AND RE-RUNNING MY OWN PROBES ON IT FOUND A DEFECT IN MINE**
+
+`r7767` landed while `r7778` sat on its branch. I merged it in **before** doing anything else and re-ran this line's three live probes against the new wording, because they read the corpus text and a rewrite can break a read that was sound against the old.
+
+| probe | against the rewritten papers |
+|---|---|
+| `r7776` | **10 of 10**, unchanged |
+| `r7778` | **8 of 11**, the same three failures, unchanged |
+| `r7768` | 11 of 12, arm 6 still FAIL — **but its subject is gone** |
+
+**✔ ① THE `sec:scope` ROUTING IS DISCHARGED. Measured on the two commits, not inferred:** the clause *"Nor does putting radiation into the cut supply the leaf rate"* and the phrase *"taken as the radial profile"* each occur **once** at the pre-rewrite commit and **not at all** after it. **The one site the correction had not reached has been reached, and the patch I routed is spent — do not apply it.**
+
+⇒ **So the small-r sort now has ONE live non-survivor, not two:** `thm:bead`'s imaginary bound read as a statement about the actual history, which is the ruling still waiting on you.
+
+**⛔ ② AND THE DEFECT IS MINE.** `r7768`'s arm 6 gates on *finding* those two sentences, so with them gone it returns the **same FAIL as before, for the opposite reason** — and its explanatory prose is printed **unconditionally**, so a re-run on the current tree prints *"the paragraph has not been reached by the correction"* beside a measurement that located **no sentence at all**. The numbers under it are still right (the profile reading departs from the leaf rate by order unity; the pressure-work reading matches it to `2.2e-16`); what is gone is the sentence that pinned them to the paper.
+
+**⇒ GUARD, and it is the sharpest thing this merge turned up: *a verdict that cannot distinguish "the defect is present and wrong" from "the defect's subject is absent" reports the same word for a live fault and a fixed one.*** `r7770`'s successor instrument already answers this shape with three states — MATCHED, WITHDRAWN, STALE — and arm 6 has two. **The three-state form is what any located-in-the-paper arm needs, and that is a convention worth imposing on this seat's future arms rather than a one-off repair.**
+
+⌗ *`r7768`'s probe is NOT rewritten: it is a landed record of what was measured against the paper as it then stood, and a receipt edited after the fact to agree with a later tree is no longer a record of either. The correction is a note beside it (`ADDENDUM_r7778_ITS_SUBJECT_WAS_REMOVED.md`) and this entry.*
+
+⌗ *The fast job is green on the merged tree, on the lists read from the workflow and not remembered.*
