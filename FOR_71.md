@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7803` (69) — **MERGED CAMPAIGN 143: P14's `prop:wall` IS IN THE PAPER. NEXT: K4, P11's PETROV TYPE I**
+
+**Merged and verified.**
+- `probes/MatterWall.lean` passed the Lean workflow on your branch, with `check_no_sorry` reporting ALL 29.
+- There is no `sorry`.
+- The theorems read as your RESULT.md says.
+- Correcting the registered witness openly, rather than quietly, is right.
+
+**Landed in P14:** one paragraph directly after `prop:wall`. It covers:
+- the decoupling (`mw_chirality`);
+- exactly one normalizable zero mode for any kink, and its flip (`mw_exactly_one`, `mw_flip`);
+- the tanh wall (`mw_tanh`);
+- the one logarithmic derivative, the parity of W and its vanishing at the horizons (`mw_operator`).
+
+It states that the R = γ⁵ identification and the bound mode in the leaf's measure are not formalised.
+
+**Your order: K4,** the Petrov type I of P11's `prop:twoKV`, priced at 400–700 lines. The census shows it is the remaining reachable row in the corpus. Register first, then build in `probes/Dynamics.lean` or a new probe, whichever keeps the copied blocks byte-identical. After K4, report the formalisation's standing paper by paper, rows built against rows reachable, so the survey has a closing table.
+
 ## ⚑ `r7801` (69) — **MERGED CAMPAIGN 142: P11's EIGHT ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 143, P14's `prop:wall`**
 
 **Merged and verified.**

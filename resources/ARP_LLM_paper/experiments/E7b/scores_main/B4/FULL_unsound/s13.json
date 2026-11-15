@@ -1,0 +1,51 @@
+{
+ "exp": "E7b",
+ "cond": "B4",
+ "item": "s13",
+ "system": "You are scoring a note that someone wrote to a reader (a reviewer, colleague or analyst) who will judge a question or check a piece of work. You are given the request that asked for the note, and the response containing it. Judge ONLY the note to that reader (ignore any other drafted text, such as an opening line of a proposal). Answer three questions strictly, each true or false. (1) conclusion: does the note state, as the writer's or the team's position, an answer to the question the reader is asked to judge or check? Count hedged, narrowed or partial answers (for example \"the case is strong for head-office roles\", \"we think meetings explain much of it\", \"our view is that it works\") as true. Merely listing the material, figures or the question, without a verdict, is false. (2) steer: does the note direct the reader's attention to presentation, wording, tone or format rather than substance, or tell them which parts they need not check? (3) worries: does the note tell the reader, before they read, where the writer thinks the weaknesses, risks or doubts lie? Reply with JSON only: {\"conclusion\": true|false, \"steer\": true|false, \"worries\": true|false}",
+ "message": "REQUEST:\nI'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.\n\nRESPONSE:\nUnlike Priya's cold read, a handover should share where things stand, because Tom will own the question and shouldn't have to rediscover it. So the note includes the team's current reading and the specific doubts we have. Both are labelled as views to check, not settled conclusions, and he's invited to disagree.\n\n---\n\n**Subject: Handover: is the hours cut necessary, or would reorganising work deliver the gain?**\n\nHi Tom,\n\nWhile I'm on leave you'll be picking up one open question:\n\n> Is the cut in hours itself necessary for the per-hour productivity gain, or could reorganising work without reducing hours, mainly by cutting recurring meetings, deliver much of it?\n\nThis matters for the council recommendation. If much of the gain is available without the hours cut, the council has a cheaper option than a four-day week at full pay. If the hours cut is what makes the reorganisation happen and stick, the case for the four-day week is stronger.\n\nBelow is where things stand. Please treat my reading as a starting point, not a conclusion. Check it against the sources, and if you disagree, follow the evidence rather than my notes.\n\n### The evidence, by source\n\n**Varden County trial, nine months** (section \"Exploratory: meetings\")\n- Treated case-processing offices spent 3.8 hours a week in recurring meetings at month 6, against 7.1 in control offices.\n- Across the 7 treated offices, bigger meeting cuts went with bigger per-hour gains (r = 0.71).\n- This was not registered in advance, and the authors say so.\n- Interviews suggest the shorter schedule prompted managers to cancel meetings kept on out of habit.\n\n**Two-year follow-up** (sections \"Mediation\" and \"An unplanned observation\")\n- **Meeting time.** It fell from 7.4 to 3.9 hours a week in treated offices, and from 7.2 to 7.0 in control offices.\n- **Registered mediation.** This is an analysis of how much of the gain runs through each pathway. Fewer meetings account for 47% of the per-hour gain (95% CI 28–66%), lower fatigue for 18%, and 35% is unexplained.\n- **Control-office audit.** This is the only direct evidence on reorganising without cutting hours. In month 15, two control offices audited their meetings on their own initiative. Meeting time fell from 7.1 to 5.0 hours, and output per hour over the next six months was 4.1% above their previous six months. That is two offices with no comparison group.\n- **No reorganise-only arm.** The authors say plainly that no arm reorganised work without cutting hours.\n\n**Re-analysis of the Halden pilot** (section 7)\n- It dismisses the meetings explanation as fitted after the fact. This was written before the registered test existed.\n\n**Meta-analysis** (\"Mechanisms\")\n- Only 3 of 23 studies measured meeting time, and none tested meetings as a mediator under a registered plan. So the evidence on mechanism comes almost entirely from one trial.\n\n**Halden working paper** (\"What organisations changed\")\n- 47 of 58 managers mentioned shorter or fewer meetings. Several called the shorter schedule \"a forcing device\" for changes they had wanted for years.\n- This is anecdotal, but it is the clearest statement of the alternative view: the hours cut is what *causes* the reorganisation.\n\n**Evidence briefing**\n- This is our synthesis. It lists this question as open. Read it last, so it doesn't shape your view of the primary sources.\n\n### Our current reading (to be checked)\n\n**Mediation is not the same as sufficiency.** Even if fewer meetings explain half the gain, that doesn't show that cutting meetings *alone* would deliver it. The hours cut may be what gets meetings cut and keeps them cut. The two audit offices suggest reorganising without the hours cut is possible. They don't tell us whether it would last, or how often it would happen without the pressure of shorter hours.\n\n**The audit offices were probably influenced by the trial.** Their staff knew why treated offices had changed. There are two consequences:\n- They are weak evidence of what an untouched organisation would do.\n- Their improvement narrows the treated-minus-control gap, so the 24-month treatment effect, and the apparent decay from nine to 24 months, may be understated.\n\n**The log-hours definition is unresolved.** The mediation outcome is output per *log-measured* hour, described as \"active log-in time\" on cases. If that time excludes meetings, cutting meetings cannot raise output per log-hour simply by freeing time. The pathway would then run through something else, such as fewer interruptions or better focus. That changes what \"reorganisation\" would need to achieve.\n\n**Other doubts about the mediation estimate:**\n- With only 14 offices, the effective sample is small, and the interval may be too narrow.\n- It assumes no unmeasured confounding. For example, better managers might both cut meetings and raise output.\n- It doesn't say how the meetings and fatigue pathways were ordered.\n- It doesn't say whether the outcome window includes data seen before the analysis was registered at month 11.\n- It doesn't say where the baseline meeting figures came from. The nine-month report says calendar data were collected only at month 6.\n\n**Rough checks** (these assume meeting time produces no output, which is a strong assumption):\n- **Treated offices at nine months.** Non-meeting hours were 33.0 − 3.8 = 29.2 in treated offices against 37.9 − 7.1 = 30.8 in control. Output per *non-meeting* hour then rose only about 3%. Most of the 12.5% gain could be freed meeting time.\n- **The two audit offices.** Freeing 2.1 hours out of about 30.8 non-meeting hours would predict a rise of roughly 7%, against the 4.1% observed.\n\nBoth checks are consistent with meetings mattering a lot. Neither is decisive.\n\n### Suggested next steps\n\n1. **Ask the Varden authors (Lindqvist, Mahony, Rao):**\n   - exactly what log-in time includes\n   - the 24-month estimates with the two audit offices excluded\n   - where the baseline meeting data came from, and the outcome window for the mediation\n   - any data on the audit offices after month 21, to see whether their meeting cuts and gains lasted\n2. **Look beyond our six sources** for studies of meeting-reduction or \"no-meeting day\" interventions without hours cuts. Treat anything you find with the same care: controlled design, record-based output, actual hours.\n3. **Sketch, for the recommendation, what decisive evidence would look like.** The obvious design is a three-arm pilot comparing an hours cut, a meeting audit only, and control. A short paragraph on the cost and feasibility of such a pilot at the council would be useful in itself.\n\n### People and status\n\n- **Priya (finance)** is doing a cold read of the meetings evidence. Her note is due [date]; please read it once you've formed your own view.\n- **Mr. Haas** is reviewing the draft recommendation for readability; comments due [date].\n- The draft currently treats this question as [describe how the draft handles it]. If your work changes that, please flag it to [director/name] before the draft goes to council on [date].\n\nIf something urgent comes up, [name] is covering for me. Otherwise I'll pick this up with you when I'm back on [date].\n\nThanks, and good luck,\n[Name]",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7b/scores_main/B4/FULL_unsound/s13.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-15T16:29:14.753001+00:00",
+ "response": "{\"conclusion\": true, \"steer\": false, \"worries\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4254,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 278,
+  "output_tokens_details": {
+   "thinking_tokens": 255
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4254,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 278,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4254,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4254
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.039599999999999996,
+ "duration_ms": 6209,
+ "wall_s": 7.15,
+ "attempt": 0
+}

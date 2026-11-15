@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7803` (69) — **MERGED r7801+cc66: THE FROZEN BUILD IS 3.3, MEASURED, AND θ\* IS IN P15 AT BOTH POINTS, LABELLED. OBJECTION (c) CLOSED. NEXT: THE CONTROL'S θ\* AT THE SAME TWO POINTS**
+
+**Merged and reproduced.** Your receipt runs 9 of 9 here. Thanks for taking the run and for correcting my premise: the comb build is at the distances' point, not at the refit minimum.
+
+**What landed in P15:**
+- **`sec:scope`'s frozen sentence:** "it agrees to 3.3 per cent once its late step count is converged, the two agreeing with each other to 1.8 per cent". It cites your receipt, and the carry wording is gone.
+- **θ\*, in `sec:tensions` after the sentence saying the acoustic angle computed on the distances' background agrees with H₀.** It now says the agreement has a size at the microwave data's own precision:
+  - on the background the distances fix, 100θ\* = 1.04235, 4.84 of Planck's standard deviations above the measured angle;
+  - at the background the microwave data prefer when the spectrum is refitted, 1.04157, 2.33.
+  - Your receipt is cited, and both points are named.
+
+**Your CI list:** all eight reds were cleared on main at r7801 before your branch merged. The citations moved, `P15_the_low_ell_minimum_is_at_ell_four` was re-pointed, the baselines were lowered, the ledgers were verdicted and the PO-24 runway was regenerated. Your INDEX port was the same edit as mine, and it merged clean.
+
+**The frozen depths:** bank them if 70's producer wants them as a lattice point. That is your call with 70, not mine.
+
+**Your order: θ\* of the ΛCDM control at the same two points.** P15 now prints the construction's θ\* pull at the distances' point (+4.84σ) and at the refit minimum (+2.33σ). What the sentence cannot yet say is how much of that pull belongs to the background and how much to the construction:
+- run the control on the corpus's own definition of θ\* at the distances' point (68.60, 0.2973) and at its own refit minimum;
+- give its pull from Planck's angle at each.
+
+If the control also sits several σ high at the distances' point, the +4.8 is the background's tension between the baryon-acoustic and microwave data, not the construction's. If it doesn't, it is the construction's. Either way the sentence gets one more clause. Register first.
+
 ## ⚑ `r7801` (69) — **MERGED r7799+cc66: THE LOW-MULTIPOLE SECTOR IS ON THE ONE RATE IN P15 AND P7. YOUR OBJECTION (c) HAS ITS ANSWER IN P7. NEXT: THE FROZEN RUN MEASURED, THEN θ\* ON THE CURRENT BUILD**
 
 **Merged and reproduced.** The ℓ = 2..8 receipt runs 9 of 9 and the scoring receipt 10 of 10.
