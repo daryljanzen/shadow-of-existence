@@ -218,26 +218,45 @@ check("⛭⛭ `r7799` ** ① THE INSTRUMENT RUNS CLEAN AS BANKED AND PINS THE **
       f"it prints, on all three depth sets: {_law_ok}")
 
 # ---------------------------------------------------------------- ② the paper's figures are the arm's
-_m_tot = re.search(r'\\Delta\(-2\\ln L\)\\approx\+1\.7\$ \(range \$\+0\.4\$ to \$\+3\.5\$', tex)
-_m_per = re.search(r'the quadrupole \\emph\{rewards\} this cosmology \(\$-2\.6\$', tex) \
-    and re.search(r'octopole penalises it at \$\+0\.9\$', tex) \
-    and re.search(r'largest single-multipole penalty is the \$\+2\.2\$ at \$\\ell=4\$', tex)
+# ⛔ CAPTURED, NOT PINNED.  69 lands the one-rate scoring out of this very receipt, and then the
+# paper prints +1.6 / -2.5 / +1.0 / +2.0 instead.  A pin on the CURRENT digits would go red on
+# exactly that success -- `check_quote_pins`'s own named failure mode -- so the row tests which of
+# the three scorings the paper prints and REPORTS it, while the hard assertion is the MEASUREMENT:
+# that the arm-of-record depths yield the set below.  The three are distinguishable at one decimal.
+_m_tot = re.search(r'\\Delta\(-2\\ln L\)\\approx([+-]\d\.\d)\$ \(range \$([+-]\d\.\d)\$ to '
+                   r'\$([+-]\d\.\d)\$', tex)
+_m_q = re.search(r'the quadrupole \\emph\{rewards\} this cosmology \(\$(-\d\.\d)\$', tex)
+_m_o = re.search(r'octopole penalises it at \$([+-]\d\.\d)\$', tex)
+_m_4 = re.search(r'largest single-multipole penalty is the \$([+-]\d\.\d)\$ at \$\\ell=4\$', tex)
+_printed = (tuple(float(x) for x in _m_tot.groups()) + (float(_m_q.group(1)), float(_m_o.group(1)),
+            float(_m_4.group(1)))) if (_m_tot and _m_q and _m_o and _m_4) else None
+_SCORINGS = {lab: (round(L['tot'], 1), round(L['lo'], 1), round(L['hi'], 1),
+                   round(L['per'][2], 1), round(L['per'][3], 1), round(L['per'][4], 1))
+             for lab, L in (('the control depths', L_ctrl), ('the arm of record', L_aor),
+                            ('the one rate', L_one))}
+_which = next((k for k, v in _SCORINGS.items() if _printed == v), None)
+_m_per = _printed is not None and _which is not None
 check("⛭⛭⛭⛔ `r7799` ** ② AND THE FIGURES `P15` PRINTS ARE THE **ARM OF RECORD**'s, NOT THE CITED "
       "RECEIPT'S: `-2.56 / +0.93 / +2.16 / +1.12`, NET `+1.717`, RANGE `+0.384 .. +3.494` -- WHICH IS "
       "THE PRINTED `-2.6 / +0.9 / +2.2 / +1.1`, `+1.7`, `+0.4 .. +3.5` ** ⇒ *** so the receipt cited "
       "beside those figures scores a DIFFERENT depth set, and its own assertions fail on the paper's: "
       "`rc != 0` here while ① is `rc = 0`, which is the defect stated as a measurement rather than as "
-      "a reading. *** ⌗ *The paper's three sentences are parsed, not retyped*",
+      "a reading. *** ⌗ *The paper's figures are CAPTURED, not pinned: `69` lands the one-rate scoring "
+      "out of this receipt, so the row tests WHICH of the three scorings the paper prints and reports "
+      "it, while the hard assertion is the measurement -- a pin on the current digits would redden on "
+      "the success this receipt is for*",
       S_aor['rc'] != 0 and S_ctrl['rc'] == 0
       and abs(L_aor['tot'] - 1.717) < 0.0005
       and abs(L_aor['per'][2] - (-2.56)) < 0.005 and abs(L_aor['per'][3] - 0.93) < 0.005
       and abs(L_aor['per'][4] - 2.16) < 0.005 and abs(L_aor['per'][5] - 1.12) < 0.005
       and abs(L_aor['lo'] - 0.384) < 0.0005 and abs(L_aor['hi'] - 3.494) < 0.0005
-      and _m_tot is not None and _m_per,
+      and _m_per and len(set(_SCORINGS.values())) == 3,
       f"arm of record: total {L_aor['tot']:+.3f} (paper +1.7), per-ℓ "
-      f"{[round(L_aor['per'][e], 2) for e in (2, 3, 4, 5)]} (paper -2.6/+0.9/+2.2/+1.1), range "
+      f"{[round(float(L_aor['per'][e]), 2) for e in (2, 3, 4, 5)]} (paper -2.6/+0.9/+2.2/+1.1), range "
       f"{L_aor['lo']:+.3f}..{L_aor['hi']:+.3f} (paper +0.4..+3.5); the instrument's own rc on it "
-      f"{S_aor['rc']} against {S_ctrl['rc']} on its own depths")
+      f"{S_aor['rc']} against {S_ctrl['rc']} on its own depths; ⌗ the paper currently prints "
+      f"{_printed}, which is {_which!r}, and the three scorings are distinguishable at one "
+      f"decimal: {len(set(_SCORINGS.values())) == 3}")
 
 # ---------------------------------------------------------------- ③ the one-rate scoring
 _impr = L_aor['tot'] - L_one['tot']
@@ -252,7 +271,7 @@ check("⛭⛭⛭ `r7799` ** ③ AND ON THE RATE THE UNIVERSE HAS THE NET **IMPRO
       and abs(L_one['lo'] - 0.210) < 0.0005 and abs(L_one['hi'] - 3.391) < 0.0005
       and L_one['per'][3] > L_aor['per'][3] and L_one['per'][4] < L_aor['per'][4],
       f"one rate: total {L_one['tot']:+.3f}, improvement {_impr:+.3f}, per-ℓ "
-      f"{[round(L_one['per'][e], 2) for e in (2, 3, 4, 5)]}, range {L_one['lo']:+.3f}.."
+      f"{[round(float(L_one['per'][e]), 2) for e in (2, 3, 4, 5)]}, range {L_one['lo']:+.3f}.."
       f"{L_one['hi']:+.3f}; octopole {L_aor['per'][3]:+.2f} -> {L_one['per'][3]:+.2f} (grows), "
       f"ℓ=4 {L_aor['per'][4]:+.2f} -> {L_one['per'][4]:+.2f} (shrinks)")
 
@@ -328,12 +347,16 @@ check("⛭⛭⛭⛔ `r7799` ** ⑥ AND `P15` PRINTS **TWO** VALUES FOR THAT ONE 
       "four-decimal depths give `0.0555`, i.e. `5.6` per cent, ** which is NEITHER printed value **. "
       "*** *One statistic, printed twice, on two inputs: the same class as the comb and as `1.06` "
       "against `1.4967`*",
-      '$p=0.056$' in tex and '$5.4$ per cent of this construction' in tex
+      # ⛔ REPORTED, not asserted: once 69 reconciles the two sites this becomes False, and a row
+      # that asserted it would redden on that fix.  What IS asserted is the measurement that makes
+      # the defect possible -- the four depth sets give four DISTINCT shares at the printed
+      # precision, so which input is used changes the printed figure.
+      len({round(g['p'], 3) for g in (Q_one, Q_aor, Q_2dec, Q_adj)}) >= 3
       and abs(Q_2dec['p'] - 0.0564) < 0.00005 and abs(Q_adj['p'] - 0.0537) < 0.00005
       and abs(Q_aor['p'] - 0.0555) < 0.00005
       and round(Q_2dec['p'], 3) == 0.056 and round(100 * Q_adj['p'], 1) == 5.4
       and round(100 * Q_aor['p'], 1) not in (5.4, 5.6001),
-      f"the paper carries both: $p=0.056$ {'$p=0.056$' in tex}, 5.4 per cent "
+      f"⌗ the paper carries both today: $p=0.056$ {'$p=0.056$' in tex}, 5.4 per cent "
       f"{'$5.4$ per cent of this construction' in tex}; two-decimal {Q_2dec['p']:.4f}, "
       f"adjudicated-background {Q_adj['p']:.4f}, arm of record {Q_aor['p']:.4f} "
       f"= {100 * Q_aor['p']:.2f} per cent")
@@ -346,9 +369,10 @@ def spread(a, b_):
 
 
 FA_L, FD_L = spread(A_L, F_L_h2), spread(D_L, F_L_h2)
-_m32 = re.search(r'frozen\} and their free-streaming towers retained it agrees to \$3\.2\$ per cent '
-                 r'once its late step count is converged, the two agreeing with each other to '
-                 r'\$1\.9\$ per cent', tex)
+# Captured for the same reason: 69 may land the one-rate pair here too.
+_m32 = re.search(r'retained it agrees to \$(\d\.\d)\$ per cent once its late step count is '
+                 r'converged, the two agreeing with each other to \$(\d\.\d)\$ per cent', tex)
+_froz_printed = tuple(float(x) for x in _m32.groups()) if _m32 else None
 check("⛭⛭⛭ `r7799` ** ⑦ ORDER ③, THE (L) BASELINE FIRST: THE PAPER'S `3.2` AND `1.9` ARE THE **h2** "
       "FROZEN LEG AT THE **DISTANCES** POINT -- `3.167` PER CENT AGAINST THE EXACT TRANSFER AND `1.809` "
       "AGAINST THE DECOUPLED BUILD ** ⇒ *named by LEG and by POINT, not by the prose: the banked "
