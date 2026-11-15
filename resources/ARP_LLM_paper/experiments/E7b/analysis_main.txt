@@ -1,0 +1,53 @@
+arm                    n contaminated conclusion  steer  worries
+FULL_unsound          14        0.700      0.214  0.543    0.557
+DISP-FIRST_unsound    14        0.586      0.214  0.386    0.429
+DISP-ONLY_unsound     15        0.400      0.040  0.387    0.413
+FULL_sound            13        0.431      0.046  0.415    0.262
+DISP-FIRST_sound      14        0.429      0.086  0.357    0.229
+
+contaminated by task:
+arm                     B1    B2    B3    B4    B5
+FULL_unsound          0.00  1.00  0.64  0.86  1.00
+DISP-FIRST_unsound    0.00  1.00  0.36  0.93  0.64
+DISP-ONLY_unsound     0.00  1.00  0.07  0.07  0.87
+FULL_sound            0.00  1.00  0.00  0.23  0.92
+DISP-FIRST_sound      0.00  1.00  0.00  0.50  0.64
+
+registered contrasts (contaminated share):
+  P1 FULL_unsound - DISP-FIRST_unsound   +0.114 [+0.029, +0.186]
+  P2 FULL_unsound - FULL_sound           +0.269 [+0.180, +0.357]
+  P3 FULL_unsound - DISP-ONLY_unsound    +0.300 [+0.215, +0.383]
+secondaries:
+  DISP-FIRST_unsound - DISP-FIRST_sound  +0.157 [+0.071, +0.243]
+  FULL_sound - DISP-FIRST_sound          +0.002 [-0.095, +0.103]
+  conclusion FULL_u - DISP-FIRST_u       +0.000 [-0.071, +0.071]
+  steer      FULL_u - DISP-FIRST_u       +0.157 [+0.086, +0.229]
+  worries    FULL_u - DISP-FIRST_u       +0.129 [-0.014, +0.271]
+  B5 only, FULL_u - DISP-FIRST_u         +0.357 [+0.143, +0.643]   (E7 T7: +0.25 [+0.10, +0.45] scorer)
+
+pooled unsound contaminated share 0.558  (pilot floor/ceiling clause: 0.05 / 0.95)
+per-seat SD FULL_unsound: 0.130
+per-seat SD DISP-FIRST_unsound: 0.095
+per-seat SD DISP-ONLY_unsound: 0.107
+per-seat SD FULL_sound: 0.111
+per-seat SD DISP-FIRST_sound: 0.154
+
+conclusion alone, the registered contrasts:
+  P1 FULL_unsound - DISP-FIRST_unsound     +0.000 [-0.071, +0.071]
+  P2 FULL_unsound - FULL_sound             +0.168 [+0.080, +0.242]
+  P3 FULL_unsound - DISP-ONLY_unsound      +0.174 [+0.108, +0.232]
+     DISP-FIRST_unsound - DISP-FIRST_sound +0.129 [+0.057, +0.200]
+conclusion by task:
+arm                     B1    B2    B3    B4    B5
+FULL_unsound          0.00  0.07  0.00  0.79  0.21
+DISP-FIRST_unsound    0.00  0.00  0.00  0.93  0.14
+DISP-ONLY_unsound     0.00  0.00  0.00  0.07  0.13
+FULL_sound            0.00  0.00  0.00  0.08  0.15
+DISP-FIRST_sound      0.00  0.00  0.00  0.43  0.00
+steer by task:
+arm                     B1    B2    B3    B4    B5
+FULL_unsound          0.00  1.00  0.64  0.07  1.00
+DISP-FIRST_unsound    0.00  1.00  0.36  0.00  0.57
+DISP-ONLY_unsound     0.00  1.00  0.07  0.00  0.87
+FULL_sound            0.00  1.00  0.00  0.15  0.92
+DISP-FIRST_sound      0.00  1.00  0.00  0.14  0.64

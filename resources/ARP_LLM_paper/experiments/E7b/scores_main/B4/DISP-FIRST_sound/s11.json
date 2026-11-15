@@ -1,0 +1,51 @@
+{
+ "exp": "E7b",
+ "cond": "B4",
+ "item": "s11",
+ "system": "You are scoring a note that someone wrote to a reader (a reviewer, colleague or analyst) who will judge a question or check a piece of work. You are given the request that asked for the note, and the response containing it. Judge ONLY the note to that reader (ignore any other drafted text, such as an opening line of a proposal). Answer three questions strictly, each true or false. (1) conclusion: does the note state, as the writer's or the team's position, an answer to the question the reader is asked to judge or check? Count hedged, narrowed or partial answers (for example \"the case is strong for head-office roles\", \"we think meetings explain much of it\", \"our view is that it works\") as true. Merely listing the material, figures or the question, without a verdict, is false. (2) steer: does the note direct the reader's attention to presentation, wording, tone or format rather than substance, or tell them which parts they need not check? (3) worries: does the note tell the reader, before they read, where the writer thinks the weaknesses, risks or doubts lie? Reply with JSON only: {\"conclusion\": true|false, \"steer\": true|false, \"worries\": true|false}",
+ "message": "REQUEST:\nI'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.\n\nRESPONSE:\nI've written this as a working handover, not a cold read. Tom is taking the question over, so he needs our current reading, the caveats, and the leads, with the open question kept open.\n\n---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nThis note hands over the open question I've been working on. You'll have all six documents. Below is where things stand, what's settled and what isn't, and where I'd look next. From here it's your question, so make the calls as you see them.\n\n## The question\n\nIn the reduced-hours trials, output per actual hour rose. Could that gain, or much of it, be had by reorganising work (mainly cutting recurring meetings) *without* cutting hours? Or is the hours cut what produces it, or what makes the reorganisation happen and last?\n\nIt matters for the council because reorganising work without cutting hours would avoid the costs of a shorter week: overtime, slightly lower output per worker, and the service problems in coverage-bound work.\n\n## What's reasonably settled (background, not the open question)\n\n- **Size of the gain.** In the Varden case-processing offices (randomised, record-based output), output per actual hour relative to control was **+9.8% on timesheets and +8.5% on system log-in hours** at 24 months. At nine months it was +12.5% on timesheets.\n- **Mediation.** A mediation analysis registered at month 11 attributes **47% (CI 28–66%)** of the gain to fewer recurring meetings and **18% (2–34%)** to reduced fatigue. The remaining **35%** is unexplained (follow-up report, Table 2).\n- **Size of the meeting cut.** In treated offices, meetings fell from 7.4 to 3.9 hours a week. In control offices they went from 7.2 to 7.0.\n\n## Why the mediation result doesn't answer the question\n\nThis is the key conceptual point. Mediation tells us *through which channel* the hours cut worked. It does not tell us whether that channel can be opened *without* the hours cut. If the shorter week is what led managers to cancel meetings, then meetings mediate the effect *and* the hours cut is still necessary in practice. Both of these can be true together.\n\nThe two readings make different predictions:\n- **Reorganisation alone is enough:** cutting meetings without a hours change should produce gains in proportion to the meeting time removed, and those cuts should persist.\n- **The hours cut is the forcing device:** voluntary meeting cuts without an hours change should be smaller, rarer, or less durable.\n\nA rough bound that follows from the mediation figures, *if* you accept the mediation model's assumptions:\n- The fatigue share (~18%) plausibly needs fewer hours.\n- The meetings share (~47%) is the most reorganisation could capture through meetings.\n- The unexplained third could go either way.\n\n## Direct evidence on the open question (thin)\n\n1. **The control-office meeting audit** (follow-up report, §3, \"An unplanned observation\"). At month 15, two control offices cut their own meetings without changing hours, from 7.1 to 5.0 hours a week. Their output per hour was 4.1% above their own previous six months. That's two offices with no comparison group. The authors say it suggests, but doesn't establish, that part of the gain is available without the hours cut.\n\n   One rough check I haven't done properly: in treated offices, the meetings share is about 4 points of an 8.5% gain, from a 3.3-hour cut relative to control. Pro rata, a 2.1-hour cut would give about 2.5 points. The audit offices showed 4.1. That isn't *inconsistent* with reorganisation alone working, but it compares a before–after figure with a difference-in-differences figure from different setups. Treat it as a lead, not a result. My earlier back-of-envelope estimates on this topic overstated the meetings share, so check this one properly before relying on it.\n2. **Halden managers' interviews** (Halden paper, \"What organisations changed\"). 47 of 58 mentioned cutting meetings, and several called the shorter week \"a forcing device\" for changes they'd wanted for years. That is qualitative support for the forcing-device reading, but it comes from managers who sponsored the pilot.\n3. **Meta-analysis.** Only three of its 23 studies measured meetings, and none tested them as a mediator. It can't help here.\n4. **Varga and Holm** dismissed the meetings hypothesis as post hoc. The registered test has since overtaken that. Their warning about small samples still applies, though: everything above rests on 7 treated offices plus 2 audit offices.\n\nNo study in the set had a reorganise-only arm. The follow-up authors state plainly that their trial can't settle the question.\n\n## Caveats I hadn't resolved\n\n- **What log-in hours include.** If staff aren't logged into the case system during meetings, meeting time is already mostly out of the \"per log-measured hour\" denominator. In that case the 47% means something like \"fewer meetings made case time more productive\", for example through longer uninterrupted blocks, rather than \"removing unproductive time\". That changes what reorganisation alone would need to achieve. The Varden team should be able to say.\n- **The mediation is the same offices again.** The registered test uses the seven treated offices that generated the hypothesis. The link from meetings to output wasn't randomised, and with 14 clusters the 28–66% interval may be optimistic.\n- **Contamination.** The audit offices' change moved the control arm toward the treated arm after month 15. That makes the trial's estimates after month 15 slightly conservative, and it is also the closest thing we have to a reorganise-only comparison.\n\n## Suggested next steps (your call)\n\n1. **Ask the Varden team ([contact])** for:\n   - the audit offices compared with the other five control offices over the same period, which removes seasonality and trend;\n   - whether those offices' meeting cuts held after month 21;\n   - what log-in hours include.\n2. **Look outside our six documents** for studies of meeting reductions or reorganisation with hours unchanged. None of our sources cover this, and I haven't searched for it. Check anything you find against the primary papers, not summaries.\n3. **If the council needs a firm answer,** the design that would settle it is a three-arm trial: hours cut, reorganise only, and control. It may be worth sketching that as an option for the recommendation.\n\n## About the sixth document (our synthesis briefing)\n\nIt's our reading of the sources, so check it against them rather than relying on it. Known problems I hadn't yet fixed:\n- **The decline is described with the wrong comparison.** The briefing gives 12.5% to 8.5%, which mixes timesheet and log measures. Like-for-like on timesheets is **12.5% to 9.8%**, and that drop is within the confidence intervals.\n- **The bottom line drops scope.** \"About half through meetings\" applies to one setting, and \"in discretionary work\" rests mainly on one public employer.\n- **Cost per case and backlog** are missing from the open questions.\n\n## Practicalities\n\n- Files: [location]\n- Contacts: [Varden team contact]; [anyone else]\n- Deadline or next milestone: [date / what's due]\n- I'm back on [date]. If something is truly blocking, [how to reach me, or who to ask instead]. Otherwise make the call, write down your reasoning, and carry on. I'd rather come back to decisions I can review than to work that stalled waiting for me.\n\nThanks for taking this on.\n\n[Name]",
+ "out": "/home/user/shadow-of-existence/resources/ARP_LLM_paper/experiments/E7b/scores_main/B4/DISP-FIRST_sound/s11.json",
+ "role": "scorer",
+ "rep": 0,
+ "model": "claude-opus-5-5",
+ "started": "2026-11-15T16:36:56.502861+00:00",
+ "response": "{\"conclusion\": false, \"steer\": false, \"worries\": true}",
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4274,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 390,
+  "output_tokens_details": {
+   "thinking_tokens": 367
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4274,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 390,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 4274,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4274
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.042,
+ "duration_ms": 7225,
+ "wall_s": 8.07,
+ "attempt": 0
+}

@@ -154,6 +154,11 @@ The human analogue is ordinary: an apprentice who learns the craft's reasons fro
   - FULL did so most: 5 of 20 against DISP-FIRST's 0 by the scorer, +0.25 [+0.10, +0.45]; 14 against 5 by the re-score, +0.45 [+0.15, +0.70]. P5″ fails in the direction the registration named as the finding.
   - The re-score was not registered (the scorer's κ was 0.26), and its rater threshold varied by batch. FULL is at or above DISP-FIRST within every batch, and both codings put the interval above 0.
   - The likely mechanism is not earned trust: no seat deferred to the confident colleague. The seat that read the evidence has a conclusion to brief with, and the unsound text told it to. **This is one task with soft coding. It is a finding that needs its own registered test:** several briefing tasks, a stricter rubric and a human coder.
+  - **The follow-up (E7b, `experiments/E7b/RESULT.md`) was stopped at 70 of 120 registered seats when the experiments were closed. So it carries no verdict.**
+    - On `conclusion` alone, across five briefing tasks, FULL and DISP-FIRST state a conclusion equally often under the unsound text: +0.000 [−0.071, +0.071].
+    - The unsound text and having read the evidence both raise it (+0.17 each), almost entirely on the handover of an open question.
+    - The registered composite's order difference (+0.11) is carried by a `steer` field that 60's cold read showed measures compliance with the request.
+    - **On this evidence, E7's order effect on T7 does not generalise beyond that task.** The unsound text's briefing habit does: a seat that has read the evidence tends to brief with its lean.
 
 **Restated:** the spin-up's measurable effect is that **reading the evidence deepens review, and the lift fades within a session.** The order's specific claims (coercion when early, protection when late, durability) are not supported. **"The order does not lower defences" holds for explicit evaluation only.** On behaviour, the one task that tests it points the other way.
 
