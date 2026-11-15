@@ -1,0 +1,149 @@
+
+  derived: alpha = 5213.287 Mpc   r_0 = 5051.488 Mpc   2M = 2006.5950 Mpc   K = 3006.658 Mpc^2
+           the vacuum comoving turnaround r_t = 3792.226904 Mpc     K/2M = 1.498387998 Mpc
+
+====================================================================================================
+  A -- WHICH OBJECT EACH PANEL DRAWS, SETTLED BEFORE ANYTHING IS SAID ABOUT MOVEMENT
+====================================================================================================
+      (C) fixes its curves to the VACUUM law               -> MATCHED
+        "...he real axis; inward, $r=-(2M\alpha^2)^{1/3}\cosh^{2/3}(3\operatorname{Re}\tilde\tau/2\alpha)$ with $\operatorname{Im}\tilde\tau$ held at $-\pi\alpha/3$; and between them, where the radicand is negative, $\operatorname{Re}\tilde\tau$ does not advance at a..."
+  [PASS] Ⓐ①  panel (C)'s caption states the law its curves follow, with the imaginary part held at -pi alpha/3 -- so those curves are the VACUUM continuation and not the bent cut's, which is what makes the question about them a question about a clause rather than a curve
+      (F) fixes the lift to the VACUUM run                 -> MATCHED
+        "...\tau=-\pi\alpha/3$; the lift at $\operatorname{Re}\tilde\tau=0$, $\operatorname{Im}\tilde\tau$ running $-\pi\alpha/3\to0$; expansion at $\operatorname{Im}\tilde\tau=0$)...."
+  [PASS] Ⓐ②  panel (F)'s caption fixes the lift at Re tau = 0 with the imaginary part running -pi alpha/3 -> 0, the same vacuum object
+      (C) ALSO carries an actual-history clause            -> MATCHED
+        "...'s offset, which is the dust's mass, and radiation, the one component the kernel does not fix, bends the cut in epoch so that the rate carries it; every process on either leg---the cooling leg's nucleosynthesis, the plasma's sound horizon and diffusion, t..."
+  [PASS] Ⓐ③  and (C)'s caption ALSO says radiation bends the cut so the rate carries it -- an actual-history clause in a caption whose curves Ⓐ① just fixed as vacuum.  ⇒ THE PANEL MIXES TWO OBJECTS, and that is why the answer has to name which of them moves
+
+====================================================================================================
+  B -- THE FOURTH SEGMENT, ESTABLISHED FROM THE RADICAND'S SIGN AND NOT FROM THE LABEL
+====================================================================================================
+      VACUUM  s/r_t =    1e-9 :  radicand = -5.2913368e+8
+      VACUUM  s/r_t =    1e-6 :  radicand = -529133.68
+      VACUUM  s/r_t =    1e-3 :  radicand = -529.13368
+      VACUUM  s/r_t =    0.01 :  radicand = -52.913315
+      VACUUM  s/r_t =     0.1 :  radicand = -5.2860455
+      VACUUM  s/r_t =     0.3 :  radicand = -1.7161569
+      VACUUM  s/r_t =     0.5 :  radicand = -0.92598395
+      VACUUM  s/r_t =     0.7 :  radicand = -0.49662976
+      VACUUM  s/r_t =     0.9 :  radicand = -0.15932803
+      VACUUM  s/r_t =    0.99 :  radicand = -0.015874545
+      VACUUM  s/r_t =   0.999 :  radicand = -0.0015874016
+  [PASS] Ⓑ④  on the VACUUM cut the radicand is strictly negative at every sample from the branch point to the comoving turnaround -- one lift, reaching the branch point, and no fourth segment, which is the state both captions describe
+
+      BENT zeros: inner = 1.498387998589351   outer = 3791.727309476659 Mpc
+      BENT, BELOW the inner zero   s/s_in =    1e-6 :  radicand = 1.3391678e+15
+      BENT, BELOW the inner zero   s/s_in =    1e-3 :  radicand = 1.33783e+9
+      BENT, BELOW the inner zero   s/s_in =    0.01 :  radicand = 13257775.0
+      BENT, BELOW the inner zero   s/s_in =     0.1 :  radicand = 120525.22
+      BENT, BELOW the inner zero   s/s_in =     0.5 :  radicand = 2678.3383
+      BENT, BELOW the inner zero   s/s_in =     0.9 :  radicand = 165.32953
+      BENT, BELOW the inner zero   s/s_in =    0.99 :  radicand = 13.663597
+      BENT, BETWEEN the two zeros  t     =   0.001 :  radicand = -271.91987
+      BENT, BETWEEN the two zeros  t     =    0.01 :  radicand = -48.991111
+      BENT, BETWEEN the two zeros  t     =     0.1 :  radicand = -5.2471869
+      BENT, BETWEEN the two zeros  t     =     0.5 :  radicand = -0.92479976
+      BENT, BETWEEN the two zeros  t     =     0.9 :  radicand = -0.15919681
+      BENT, BETWEEN the two zeros  t     =    0.99 :  radicand = -0.015861958
+      BENT, BETWEEN the two zeros  t     =   0.999 :  radicand = -0.0015861468
+  [PASS] Ⓑ⑤  on the BENT cut the radicand is negative only strictly BETWEEN its two zeros and strictly POSITIVE below the inner one -- so the lift ENDS at the inner zero and a fourth segment carries the rest of the way to the branch point in real cosmic time
+
+====================================================================================================
+  C -- WHAT MOVES, AND THE NUMBER THAT DECIDES WHETHER IT MOVES IN THE DRAWING
+====================================================================================================
+      the band's upper endpoint moves off r = 0 by 1.49838799859 Mpc
+      as a fraction of the band's own r-extent (r_t = 3792.226904): 0.000395120871354
+      in the MANTISSA the citing sentence prints: 3.951209 against 3.9512
+  [PASS] Ⓒ⑥  the shaded band's upper endpoint stands off the branch point by 3.9512 parts in ten thousand of the band's own r-extent -- pinned both as the fraction and as the mantissa the sentence sets in type
+
+      the fourth segment's advance in real cosmic time = 0.054594048778886 Mpc
+      against pi alpha / 3 = 5459.3410814564 Mpc :  share = 1.0000117e-5
+      ⌗ NOT CLAIMED: that share is 1.00001e-5, a part in a hundred thousand to five figures.
+        The registration did not predict it, nothing here derives it, and `r7796`'s own guard
+        applies -- a number that matches a number is a coincidence until the match is
+        derived.  It is printed because suppressing it would be worse, and claimed as
+        nothing.  ⇒ A COINCIDENCE REPORTED AS ONE IS NOT A FINDING.
+  [PASS] Ⓒ⑦  the fourth segment advances real cosmic time by 0.054594 Mpc -- finite and non-zero, so it is neither still a lift nor an infinite reach, and the branch point is attained in finite real time on the bent cut
+
+      the approach exponent over s/s_in = 1e-14 .. 1e-13 :  p = 0.5
+      the approach exponent over s/s_in = 1e-13 .. 1e-12 :  p = 0.5
+      the approach exponent over s/s_in = 1e-12 .. 1e-11 :  p = 0.5
+      the approach exponent over s/s_in = 1e-11 .. 1e-10 :  p = 0.5
+      the approach exponent over s/s_in = 1e-10 .. 1e-9 :  p = 0.5
+      the approach exponent over s/s_in = 1e-9 .. 1e-8 :  p = 0.4999999997
+      ⇒ r ~ t^p with p = 1/2, so dr/d(real time) ~ t^(p-1) DIVERGES, since p < 1
+  [PASS] Ⓒ⑧  panel (F)'s vertical tangent at the branch point SURVIVES on the bent cut: the approach exponent is 1/2 rather than dust's 2/3, and 1/2 is still below 1, so the derivative still diverges.  ⇒ WHAT CHANGED IS NOT THE TANGENT BUT THE STRETCH THAT REACHES IT -- no longer the lift
+
+      (C): the lift up to r = 0 is ONE vertical segment    -> MATCHED
+        "...not advance at all---so the lift from the comoving turnaround $r=-(2M\alpha^2)^{1/3}$ (square) up to $r=0$ collapses here onto the single vertical segment at $\operatorname{Re}\tilde\tau=0$, and is drawn out in \textbf{(F)}...."
+      (F): r climbs from the turnaround THROUGH r = 0      -> MATCHED
+        "... lift, the $\pi\alpha/3$ stretch of path where $\operatorname{Re}\tilde\tau$ does not advance, across which $r$ climbs from the turnaround through $r=0$; the two seams sit at $r=-2\alpha/\sqrt3$ and $r=+\alpha/\sqrt3$, the $120^\circ/240^\circ$ split of \..."
+
+      THE VERDICT, both branches registered in advance:
+        the endpoint shift            = 0.0003951208714 of the panel's r-range
+        one part in a thousand        = 0.001
+        ⇒ branch (ii): THE DRAWING DOES NOT MOVE, THE WORDING DOES
+  [PASS] Ⓒ⑨  THE ORDER'S QUESTION, ANSWERED BY THE COMPARISON AND NOT BY A PREFERENCE: the shift is below one part in a thousand of the panel's range, so NO DRAWN CURVE MOVES BY AS MUCH AS THE FIGURE CAN CARRY -- while TWO CAPTION CLAUSES, one in each panel, say the lift reaches the branch point and are false on the bent cut.  Both clauses are MATCHED, so they are live text
+
+====================================================================================================
+  D -- THE ONE CLAUSE WHOSE SUBJECT IS NOT THE BEAD, DECIDED RATHER THAN ASSUMED
+====================================================================================================
+      (C): the layers pile onto the branch point           -> MATCHED
+        "..., the comoving separations read across leaves---runs on that one rate; the $S^3$ layers (grey) pile onto the branch point, depositing the plasma that carries the acoustic scale, with $\eta$ its composition...."
+      TWO READINGS, as registered:
+        (i)  the clause's locus is set by the bead's radicand, so the fourth segment now
+             lies between the lift and the deposit, and the clause's geometry gains a stretch;
+        (ii) the clause's subject is the S^3 LAYERS, whose locus the bead's radicand does not
+             set, so the clause is untouched.
+      ⇒ (ii) IS ASSERTED, on this ground: the radicand's sign fixes where the BEAD's lift
+        ends, and the bead still attains r = 0 -- Ⓒ⑦ measures the real time it takes to get
+        there as finite.  The deposit is AT the branch point either way.  What the fourth
+        segment inserts is between the LIFT'S END and the branch point, not between the
+        deposit and anything.  ⌗ The guard the registration named: before two stretches are
+        identified by one label, check how many-to-one the label is on the object -- 'the
+        approach to the branch point' names the lift on the vacuum cut and the fourth
+        segment on the bent one, and only the first of those is the lift.
+  [PASS] Ⓓ⑩  the layers' deposit clause is located MATCHED and DECIDED untouched -- reading (ii) -- because the bead attains the branch point in finite real time on the bent cut too, so the locus the clause names is unmoved; it is the two LIFT clauses that are false, not this one
+
+====================================================================================================
+  THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED
+====================================================================================================
+      REGISTERED ARMS: 10 -- Ⓐ①②③ Ⓑ④⑤ Ⓒ⑥⑦⑧⑨ Ⓓ⑩; this is ⑩, and CHECKS RUN: 10.
+      the TWO inputs are declared in the COMPUTES header; nothing here is fitted.
+      NOT CLAIMED: that the caption's 'three closed-form segments' should change -- r7797
+      ruled it is about the vacuum lap and the ruling is accepted; any redraw of a figure or
+      change to a figure script; that the layers' deposit clause moves, which Ⓓ⑩ decides it
+      does not; and the share 1.00001e-5, printed and claimed as nothing.
+      Nothing here touches `thm:bead`, the VACUUM curve's theorem.
+
+==========================================================================================
+
+  ALL CHECKS PASS.
+
+  THE ORDER'S ANSWER, in the two halves it has to have.
+
+  TWO CAPTION CLAUSES ARE FALSE ON THE BENT CUT, one in each panel.  (C)
+  says the lift from the comoving turnaround up to r = 0 collapses onto the
+  single vertical segment; (F) says the shaded band is the stretch across
+  which r climbs from the turnaround THROUGH r = 0.  On the bent cut the
+  radicand turns positive below its inner zero, so the lift ends at
+  1.498388 Mpc and a fourth segment carries the remaining distance in
+  0.054594 Mpc of real cosmic time.
+
+  AND NO DRAWN CURVE MOVES.  The band's upper endpoint stands off the branch
+  point by 3.9512e-04 of the band's own r-extent -- four parts in ten
+  thousand, below the one part in a thousand a figure at this width can carry.
+  The registration enumerated both branches before either was measured, and
+  this is the branch the number chose.
+
+  WHAT SURVIVES: panel (F)'s vertical tangent.  The approach exponent is 1/2
+  on the bent cut against dust's 2/3, and 1/2 is still below 1, so the
+  derivative still diverges at the branch point.  What changed is not the
+  tangent but the stretch that reaches it.
+
+  AND ONE CLAUSE IS DECIDED UNTOUCHED: the layers piling onto the branch point.
+  Its subject is the layers, the bead still attains r = 0 in finite real time,
+  and the fourth segment is inserted between the LIFT'S END and the branch
+  point rather than between the deposit and anything.
+
+==========================================================================================

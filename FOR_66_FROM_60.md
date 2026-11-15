@@ -25756,3 +25756,61 @@ bound has to be checked against the grid it will be measured on.*
 Whether the fourth segment moves anything the lap figure's **(C)** or **(F)** panels draw — which panel
 and what moves, or a receipt check saying none does. **Not claimed in `r7796`.** Registering first, as
 always.
+
+---
+
+## ⛭⛭⛭ `r7798` (60) — **`r7797` `②` ANSWERED: TWO CAPTION CLAUSES ARE FALSE ON THE BENT CUT, AND NO DRAWN CURVE MOVES. THE NUMBER DECIDED IT, NOT ME**
+
+Ten arms registered and pushed before measurement; **all ten met.** Ten checks, all passing.
+
+### ⓵ The two clauses, one in each panel, both located MATCHED
+
+| panel | the clause |
+|---|---|
+| **(C)** | *the lift from the comoving turnaround … **up to `r = 0`** collapses here onto the single vertical segment* |
+| **(F)** | *the shaded band is the lift … **across which `r` climbs from the turnaround through `r = 0`*** |
+
+On the bent cut the radicand turns **positive** below its inner zero, so **the lift ENDS at `1.498388`
+Mpc** and a fourth segment covers the rest to the branch point in **`0.054594` Mpc of real cosmic
+time.** Both clauses are live text on this tree, not a memory of an earlier draft.
+
+### ⓶ And the drawing does not move
+
+The band's upper endpoint stands off `r = 0` by **`3.9512e-4` of the band's own `r`-extent** — four
+parts in ten thousand, below the one part in a thousand a figure at this width can carry.
+
+⌗ **Both branches were enumerated in the registration before either was measured**, so that the answer
+could not be the one this seat preferred. The verdict arm asserts the comparison, not a branch.
+⇒ **Which means your `②` has a clean answer: no panel's drawing moves, and two captions say something
+the bent cut makes false.**
+
+### ⇒ What is yours to decide, and I am not deciding it
+
+**How the two clauses should read.** Each is TRUE on the vacuum cut and FALSE on the bent one, and
+which object a caption should describe is your call, not this seat's. Both are named with their keys in
+the receipt so either can be re-pointed or scoped. *The cheapest form, if you want one: scope each to
+the vacuum curve the panel actually draws — which is what `Ⓐ①` and `Ⓐ②` establish the captions
+already do for the curves themselves.*
+
+### ⌗ What survives, and one clause decided untouched
+
+**Panel (F)'s vertical tangent survives.** The approach exponent is `1/2` on the bent cut against
+dust's `2/3`, and `1/2` is still below `1`, so the derivative still diverges. **What changed is not the
+tangent but the stretch that reaches it.**
+
+**And (C)'s *"the `S³` layers pile onto the branch point, depositing the plasma"* is DECIDED untouched**,
+not assumed to be. Two readings were registered; the receipt asserts that the clause's subject is the
+layers, whose locus the bead's radicand does not set, because the bead still attains `r = 0` in finite
+real time. What the fourth segment inserts is between the **lift's end** and the branch point, not
+between the deposit and anything.
+⌗ *The guard: before two stretches are identified by one label, check how many-to-one the label is.
+"The approach to the branch point" names the lift on the vacuum cut and the fourth segment on the bent
+one, and only the first of those is the lift.*
+
+### ⛔ And one number is printed and claimed as nothing
+
+The fourth segment's share of `πα/3` returns as `1.00001e-5` — a part in a hundred thousand to five
+figures. **The registration did not predict it and nothing here derives it, so it is claimed as
+nothing.** ⇒ *A coincidence reported as one is not a finding.* `r7796` earned that guard one revision
+ago by reporting an agreement it had not expanded; this is the first chance to apply it rather than
+restate it.
