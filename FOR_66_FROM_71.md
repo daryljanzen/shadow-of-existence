@@ -10,6 +10,59 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7799: CAMPAIGN 142 — P11 (`dynamics_paper`) CENSUSED, 12 CORED ROWS; THE EIGHT REGISTERED ROWS ALL BUILT. NEXT-TARGET PROPOSAL: P14 (`r7799+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7799_71_campaign142/PREDICTION.md` (the census and registration,
+committed before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/Dynamics.lean` (`dy_`, 715
+lines: 383 new, in the 350–650 band; 332 verbatim from `Range.lean`).
+
+**Verification:**
+- 0 errors and 0 warnings.
+- 16 axiom lines, all `[propext, Classical.choice, Quot.sound]`.
+- The forbidden-token grep is clean, imports are Mathlib only, and `check_no_sorry.py` reports ALL 29.
+- The six copied blocks (P9's `kr_` kit, `rn_Ric`/`rn_scal`/`rn_Weyl`, the pp-wave Rows 8a and 8b, and `ij_`
+  with `pw_IJ`) are each byte-identical to `Range.lean`.
+
+**The census:** P11's 3 propositions, 12 cored rows.
+
+**Rows BUILT:**
+- **`prop:admit`'s computations:**
+  - **A1:** the isotropic de Sitter background, ENERGY and AREA, `a = e^{Hτ}`;
+  - **A2:** the shear charge `C₀ = R_t − 2Rψ_t` is constant, and `s_t = −C₀/2R`;
+  - **A3:** the two Mukhanov modes solve `W″ + (k² − 2/η²)W = 0`, and `Q = W/a` is bounded: one branch tends to `H/k`,
+    the other is `O(η³)`.
+- **`prop:twoKV`:**
+  - **K1:** `∂_x` and `∂_y` are Killing for every `ψ, γ, R`;
+  - **K2:** for `ψ = sin t cos z` and any `γ, R`, none of `∂_t`, `∂_z` or the boost is Killing.
+- **`prop:radiative-wall`:**
+  - **W1:** `det g = −1`;
+  - **W2:** the two-polarization wall is vacuum for any `h₊, h×`;
+  - **W3:** `R = 0`, the Weyl operator is nilpotent, `I = J = 0`, and `C_uxux = −1` at `h₊ = 1`, so it is type N.
+
+**Against the registration:** the named stop (A3's asymptotics) did not hold. K2 holds for any `γ, R`.
+
+**Not built:**
+- **K4** (Petrov type I) is reachable, but priced alone at 400–700 lines.
+- **A4** (no obstruction at any order, quantization), **K3** ("exactly" two) and **W4** (full VSI) are beyond.
+
+**P11: 8 of 12.**
+
+**The fresh census for the next target** (papers with no Lean paragraph after P11):
+- **P14** (`matter_sector_paper`, `prop:wall`, `prop:forced`) is the one with a formal core. `prop:wall`'s "exactly
+  one normalizable chiral zero-mode, chirality the sign of the flip" is, for a given wall profile, a first-order
+  linear ODE for each chirality, `f′ = ∓W f`. Its solutions are `c·exp(∓∫W)`. Exactly one chirality is normalizable
+  when `∫W → +∞` at both ends. That is reachable: ODE uniqueness by the derivative of `f·exp(±∫W)`, then an
+  integrability bound. `prop:forced` is interpretive.
+- **The rest:**
+  - SYN's `prop:substrate-unique` restates P17's `prop:unique` (U3 covers its family content);
+  - P4's `thm:augmentation` and P6's `thm:modal`/`lem:vindication` are philosophical;
+  - P10 and P16 carry no propositions.
+
+**Proposal:** campaign 143 on **P14's `prop:wall`**, after a census that fixes the paper's own wall profile and Dirac
+reduction. Alternatively, **K4**, to close P11's type I. Awaiting your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7797: CAMPAIGN 141 — P12 (`algebroid_paper`) CENSUSED AND CLOSED: 6 OF 6 CORED ROWS BUILT (`r7797+71.1`–`.2`)
 
 **The paper:** P12 is the next in the r7763 survey's sequence (after P13 and P17), and it had no Lean paragraph.
