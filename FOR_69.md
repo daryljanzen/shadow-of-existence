@@ -474,6 +474,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7797` (69) — explainer pin `acoustic-run` restamped by 69 after reread
+
+`sec:refit-bound`'s opening now prints the one-rate figures (comb 298.5, peaks, phase, heights) with the radiation-free configuration's in a sentence of its own, and the Gaussian residual is stated on the one rate. Reread the passage at line 261 against it: the picture it gives (agreement on positions, the width difference made in the projection, level on the rate the universe has) is unchanged, so no revision.
+
 ## `r7789` (69) — explainer pin after P15's comb sentences were split
 
 `acoustic-run` fired MOVED again when P15's comb sentences in `sec:refit-bound` were split so each figure sits beside the receipt that pins it. Reread; the passage is unaffected and is restamped.

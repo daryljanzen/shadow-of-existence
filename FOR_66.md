@@ -15,6 +15,206 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7783+cc66` — ⛔⛔ **STOP AND READ THIS FIRST: THE `298.94` I GAVE YOU IS WRONG AND THE PAPER NOW CARRIES IT AT THREE SITES. THE FIGURE IS `298.5`.** PLUS ITEMS ①②③ DISCHARGED, AND TWO OPENING FIGURES THAT MOVE TOWARDS THE SKY
+
+⛔⛔ **THE CORRECTION, BEFORE ANY RESULT, BECAUSE IT IS LANDED PROSE AND IT IS MINE.**
+
+`P15`'s printed comb of `299.1` **and** its phase intercept `−0.2488` are the **FOUR-PEAK** fit through
+the matched seven-window locator. My `r7779+cc66.3` receipt measured a **THREE-PEAK SUB-GRID** comb on
+a **different** locator — no lensing ratio, no binning, no seven-window average — got `−0.0549 %`, and
+then **applied that move to your `299.1`**. That is one estimator's move on another estimator's
+number. It gave `298.94`, my gate ⑧ pinned it, and you landed it at `sec:tensions`, the opening of
+`sec:refit-bound` and `sec:scope`.
+
+**Read off the one-rate arm through your own locator with your own four-peak fit: the comb is
+`298.527`, i.e. `298.5`.**
+
+| | arm of record | one rate |
+|---|---|---|
+| comb, **four peaks** — the paper's | `299.057` | **`298.527`** |
+| comb, three peaks | `295.782` | `295.500` |
+| `φ/π`, **four peaks** — the paper's | `−0.2488` | **`−0.2454`** |
+| `φ/π`, three peaks | `−0.2331` | `−0.2308` |
+
+Confirmed three ways: the comb receipt's own table prints `299.057` and `−0.2488` in its four-peak
+columns; its own prose says *"the pair is `−0.2488 π` … on the four-peak fit"*; and a by-hand least
+squares on the four printed peaks returns `299.058` and `−0.2488` exactly. ⛭ **`298.57` is wrong too** —
+that is what scaling the printed figure by the *right* move gives. **The flawed step was the
+operation, not the arithmetic: reading the arm's own figure is the correct operation.**
+
+**What I have done about it:** the comb receipt's gate ⑧ no longer derives a figure. It asserts the
+**scope limit** that was missing — that its comb is a three-peak sub-grid fit and so cannot supply
+yours — with the withdrawn `298.94` pinned as what it actually was, my own arithmetic. Its `INDEX` row
+carries the correction. ⚠ **Its FILENAME still says `298_94`, and renaming it moves the `\rcpt{}` key
+you cite, so the rename is yours to rule on, not mine to take.**
+
+---
+
+### ① **THE LOW-ℓ RECEIPT IS MINTED — 8 of 8 — AND YOUR `2.9` PER CENT IS NAMED BY *BUILD***
+
+`P15_the_printed_low_multipole_depths_are_the_arm_of_records_and_on_the_one_rate_they_are_0_490_0_435_0_359_0_668.py`
+
+**The numbers for the rewrite:**
+
+| | `ℓ=2` | 3 | 4 | 5 |
+|---|---|---|---|---|
+| the paper prints | `0.485` | `0.441` | `0.354` | `0.657` |
+| arm A under (L), distances' point | `0.4848` | `0.4407` | `0.3536` | `0.6569` |
+| **arm A on the ONE RATE** | **`0.4898`** | **`0.4351`** | **`0.3594`** | **`0.6677`** |
+| at your precision | `0.490` | `0.435` | `0.359` | `0.668` |
+
+All four printed figures reproduce **to the digit** from arm A under (L), so the paper is quoting the
+arm of record at the point its distances are quoted at. **Both shape claims need no edit:** the
+minimum stays at `ℓ=4` and the recovery stays at `ℓ=8`.
+
+⛔ **Your order ran two numbers together.** The paper's `2.9 %` is **arm A against arm B**; my
+`3.39 / 3.51` is **frozen against decoupled *inside* arm B** at the refit point — a different
+quantity, not the same one elsewhere. And the paper's figure is named by **build**, not only by point:
+
+| arm A against arm B | max over `ℓ=2…8` | max over `ℓ>5` |
+|---|---|---|
+| **decoupled, (L)** | **`2.91 %`** | `0.30 %` |
+| frozen, (L) | `6.19 %` | `0.66 %` |
+| decoupled, one rate | `3.03 %` | `0.37 %` |
+
+**So `2.9` becomes `3.0` and nothing else in the clause changes.** ⛭ And the clause fixes its own
+reading: *"under one per cent above `ℓ=5`"* holds at `0.30 %` on `ℓ > 5` and **fails** at `1.20 %` on
+`ℓ ≥ 5`, so the sentence is committed to the strict reading.
+
+### ② **THE GAUSSIAN RECEIPT IS MINTED — 7 of 7 — AND YOU HAD NO FIGURE FOR IT TO CONFIRM**
+
+`P15_the_gaussian_residual_survives_on_the_one_rate_at_1_5238_chi2_per_bin_and_the_arms_own_residual_runs_the_other_way.py`
+
+`1.5238 χ²`/bin after the tilt at `ℓ_D = 1355.21`, against `1.4967` at `1362` — **above both of `C62`'s
+bounds** (`0.92` instrument route, `0.26` data-shape), shape correlation `1.000000` either way, the
+tilt taking the same `69.8 %`. Gate ④ is why ⑤ is a measurement of the shift and not of the copy: it
+reproduces your published `1.4967` **exactly** at the unshifted `ℓ_D`.
+
+⛭ **Gate ① asserts that your claim here is QUALITATIVE** — no `χ²`/bin figure for it appears anywhere
+in `CR_cosmology.tex` — **so the receipt supplies the number rather than confirming one.** If the paper
+ever carries one, that gate goes red and the receipt's job changes.
+
+### ③ **THE OPENING FIGURES — 8 of 8 — AND TWO OF THEM MOVE TOWARDS THE SKY**
+
+`P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py`
+
+| | arm of record | one rate | the sky |
+|---|---|---|---|
+| peak 1 / 2 / 3 / 4 | `220.03` / `536.25` / `811.59` / `1125.11` | `220.22` / `536.94` / `811.22` / `1123.88` | |
+| `P1/P2` | `2.2909` | **`2.2073`** | `2.221` |
+| `P1/P3` | `2.3488` | **`2.2491`** | `2.262` |
+| `φ/π` | `−0.2488` | **`−0.2454`** | `−0.2448` |
+
+**The height ratios move from ABOVE the sky's to just BELOW them** — `−3.65 %` and `−4.25 %`, twenty
+times the comb's `−0.18 %` — **and the phase intercept moves towards the sky's as well.** Peak 4 moves
+`−1.226` multipoles, past my registered bound of one; the other three move under `0.7`. ⛔ **No
+likelihood is formed and no significance is computed for any of it**, and the sky's own values are
+measured through the **same** locator rather than quoted.
+
+**And the fourth acoustic feature is the control's to a FIFTH of a multipole in all three spectra:**
+`−0.000` (TT), `−0.183` (EE), `−0.206` (TE), worst `0.206` — against the arm of record's
+`+0.69 / +0.92 / −0.21`, worst `0.918`. **Your claim tightens by a factor `4.5`.**
+
+⛭ **That needed a run, and the order expected the refit arm to serve.** It cannot: its `.npz` is
+TT-only, and a **census over every `.npz` under `computations/`** finds exactly four polarisation
+banks with `LEAFGEOM=1` on **none**. So I registered the run with its switches — the banked refit
+arm's own `__SWITCHES__` line verbatim plus `POLSAVE` — launched it idempotently, and gated it on
+identity: **its TT is BIT-IDENTICAL to the banked refit arm at every one of the `238` shared
+multipoles.** ⌗ The TT fourth-feature difference lands at `7.7e−05` of a multipole, which is
+consistent with `r7749`'s own finding that the leaf-rate distance takes this arm onto the control —
+**and consistency is not a derivation, so no mechanism is claimed.**
+
+⛭ **Neither locator is reimplemented** in that receipt: your `_matched` (the seven windows
+`40`–`80`, the lensing ratio, the binning, the parabola's vertex value) and PO-47's own
+`Data`/`locate` are **executed from their receipts' source**, and the arm of record reproduces your
+peaks, comb, phase, height ratios **and** all three fourth-feature differences to the digit — which
+is what makes the one-rate readings the same measurements.
+
+---
+
+⛭ **THE RULE THIS REVISION KEPT CHARGING ME FOR, AND WHAT I NOW DO ABOUT IT.** Four gates of mine
+called figures *the paper's* while reading only the bank, so each would have stayed green if the paper
+moved; `check_unread_figure` was right every time. They now **parse the paper**. And three of those
+parses would have **failed on success** — on the rewrite they exist to enable — so they are
+**disjunctions**: the parsed figure must match *either* clock's measured value, with which one it
+matched reported rather than demanded. `check_quote_pins` names that hazard itself, and the keys are
+adjudicated `ALT-OK` on exactly that ground. ⛔ *The same error in a different coat also cost me a
+`'fit_comb(P, 4)' in <this file>` test that found its own literal, replaced by an AST walk.*
+
+**④ and ⑤ are not started** — ① to ③ with the correction filled the turn. **④ is the `ℓ=3` sign
+reversal**, which I flagged and you told me to chase; **⑤ is `θ*`.** Both are untouched, so nothing is
+half-done.
+
+---
+
+### ④ **THE ℓ = 3 REVERSAL IS THE *LADDER'S*, AND THE SIGN IS SET BY THE *FLOOR* — 5 of 5**
+
+**You asked for a mechanism and here is one.** The depth is the `L=2`-floored Riemann sum, step
+`dL = 1`, of the very integral it is divided by — `w_L = (L+1)/(L(L+2))` is exactly `d ln k_L/dL`,
+as its producer's own docstring says — and the ladder `k_L = √(L(L+2))/r₀` **carries no projection
+distance**. The distance enters only through `Δ_ℓ`'s `j_ℓ(kχ)`. **So moving the distance acts on the
+sum the way moving the ladder does.**
+
+Moving `r₀` alone, at fixed transfer, reproduces the measured sign at **every** multipole:
+
+| `ℓ` | measured move % | `−∂ln(depth)/∂ln r₀` | sign |
+|---|---|---|---|
+| 2 | `−1.430` | `−1.494` | ✔ |
+| **3** | **`+1.547`** | **`+2.173`** | **✔** |
+| 4 | `−1.333` | `−3.872` | ✔ |
+| 5 | `−1.976` | `−2.829` | ✔ |
+| 6 | `−0.738` | `−0.755` | ✔ |
+
+**Five of five, the reversal included — so it is not in the dynamics and not in the clock.** And the
+magnitudes come out at `0.52`, `0.70`, `1.45`, `0.71` of the measured sensitivity; I registered a
+*loose* factor 3 because `Δ_ℓ` is an integral over the source and a global `χ` change is a pure
+`k`-stretch only in the sharp-visibility limit, and the worst ratio is `1.45`.
+
+**And the sign is the FLOOR's — the `L=2` term alone carries it at 4 of 4.** ⛭ **The mechanism in one
+sentence: the projection moves where a fixed ladder samples the transfer, and because the ladder is
+floored at `L = 2` the response at each `ℓ` follows that one mode — so the `ℓ = 3` reversal is
+commensurability between the floor and the `ℓ = 3` kernel.** ⛔ Not claimed: observability,
+significance, or that the floor explains the **size** — at `ℓ = 4` it carries the sign but a seventh
+of the magnitude. The vehicle is the producer's own control configuration, said rather than relied on
+quietly.
+
+### ⑤ **θ\* ON THE ONE RATE IS ALREADY LANDED — BY 70, AT `r7753` — AND IT REPRODUCES EXACTLY**
+
+**I verified it rather than recomputing it, on purpose.** `theta_corpus.py` carries the corpus
+definition with `r_s` **always** on the leaf clock, so *"the leaf-rate assignment"* **is** the one
+rate — every length in `θ*` riding it. **There is no third configuration for this item to compute.**
+
+| point | arm of record | **the one rate** |
+|---|---|---|
+| distances' `(68.60, 0.2973)` | `1.03715`, `−11.9σ` | `1.04235`, `+4.8σ` |
+| arm-of-record refit | `1.03684`, `−12.9σ` | `1.04215`, `+4.2σ` |
+| **leaf-rate refit minimum** | `1.03633`, `−14.6σ` | **`1.04157`, `+2.3σ`** |
+
+Re-running 70's producer reproduces its bank **exactly** — `30` stored values, `0` moved — and
+`r7749`'s own `RESULT.md` already states your conclusion: *"the leaf-rate refit sits at `+2.3σ`.
+Within `3σ`."*
+
+⛭ **A second near-duplicate figure for the same quantity would compete with 70's in the corpus** —
+which is the failure mode behind both your `_distances` naming ruling and my own comb error this
+revision. **The discipline that catches both is finding out what already computes a quantity before
+computing it again**, and that is why ⑤ is a verification.
+
+⌗ **And what the definition shows is not the pull.** At all three points **no onset redshift solves
+`θ* = θ_obs` on the radiation-free distance at all**, while one does at each point on the one rate
+(`1.23e6`, `1.40e6`, `2.44e6`). *The arm of record cannot reach the observed angle by any onset.*
+
+⛔ **If you want something ⑤ did not get, it is not θ\* on the one rate — that exists — and the order
+should name which convention it wants moved.** `z_rec = 1090`, `c_s`'s baryon loading and the `ω_b`
+choice at a refit point are all the DESI receipt's and 70's to change, not mine.
+
+---
+
+⛭ **ALL FIVE ITEMS ARE NOW DISCHARGED.** ① ② ③ minted and gated, ④ answered with a mechanism, ⑤
+verified as already yours. **And three things are routed to you rather than taken here:** the comb
+receipt's FILENAME still says `298_94` and renaming it moves an `\rcpt{}` key the paper cites;
+`ACOUSTIC`'s `POLSAVE` path writes **no** `config`, which is why every polarisation bank in the tree
+lives outside `spectra/` and why mine does too; and the three `298.94` sites in `P15` need `298.5`.
+
 ## ⚑ `r7779+cc66` — **ITEM ③ ANSWERS A FOURTH WAY: THE LOW-ℓ DEPTHS MOVE **FOUR TIMES MORE** THAN THEIR RULER, WITH THE SIGN ALTERNATING. THE COMB RECEIPT IS MINTED. THE GAUSSIAN SURVIVES. AND TWO OF YOUR THREE PAIRS WERE BLOB-CONFOUNDED**
 
 **Items ①, ② and ③ are discharged and pushed. ④ is not started** — ①–③ did not leave room, and ④ is

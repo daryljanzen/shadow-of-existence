@@ -1,0 +1,51 @@
+computing the transfer (CAMB, the producer's own accuracy settings) ...
+
+        l      depth   dlnDepth/dlnr0     -that   floor term   dFloor/dlnr0
+        2     0.4729          +1.4940   -1.4940       0.1849        +0.6609
+        3     0.4102          -2.1727   +2.1727       0.1419        -1.1442
+        4     0.3558          +3.8724   -3.8724       0.0009        +0.1938
+        5     0.6759          +2.8292   -2.8292       0.2673        +2.6363
+        6     0.9157          +0.7551   -0.7551       0.5760        +0.4940
+        7     0.9844          +0.1806   -0.1806       0.4936        -1.9776
+        8     0.9982          +0.0225   -0.0225       0.2448        -1.8801
+
+===================================================================================================
+R1  THE LADDER ALONE HAS AN l-DEPENDENT SENSITIVITY, AND THESE ARE ITS SIGNS
+===================================================================================================
+PASS  R1  dlnDepth/dlnr0 signs at l=2..5: l=2: +, l=3: -, l=4: +, l=5: + against the registered l=2: +, l=3: -, l=4: +, l=5: +
+
+===================================================================================================
+R2  AND IT REPRODUCES THE MEASURED SIGN AT EVERY l <= 6, THE l=3 REVERSAL INCLUDED
+===================================================================================================
+        l  measured move %   -dlnDepth/dlnr0  signs agree
+        2           -1.430           -1.4940         True
+        3           +1.547           +2.1727         True
+        4           -1.333           -3.8724         True
+        5           -1.976           -2.8292         True
+        6           -0.738           -0.7551         True
+PASS  R2  the ladder alone reproduces the measured sign at 5 of 5 multipoles -- including the l=3 reversal, so the reversal is the LADDER's and not the dynamics'
+
+===================================================================================================
+R3  AND THE SIZE AGREES TO WITHIN THE STRETCH APPROXIMATION (a loose factor 3, registered loose)
+===================================================================================================
+        l   measured dlnD/dlnDM   -dlnDepth/dlnr0    ratio
+        2               +2.8692           -1.4940     0.52
+        3               -3.1039           +2.1727     0.70
+        4               +2.6746           -3.8724     1.45
+        5               +3.9647           -2.8292     0.71
+PASS  R3  ratio of the ladder-only prediction to the measured sensitivity: l=2: 0.52, l=3: 0.70, l=4: 1.45, l=5: 0.71 -- all within the registered factor 3
+
+===================================================================================================
+R4  AND IS IT THE FLOOR?  the L=2 term alone, against the whole sum
+===================================================================================================
+        l   dDepth/dlnr0   dFloor/dlnr0  same sign
+        2       +0.70644       +0.66088       True
+        3       -0.89116       -1.14419       True
+        4       +1.37761       +0.19377       True
+        5       +1.91237       +2.63629       True
+PASS  R4  the floor term alone carries the sign at 4 of 4 multipoles -- so what sets the sign is the hard floor at L=2, which is a statement about a DISCRETE source and not about the transfer
+
+===================================================================================================
+PASS  R5  no claim that the reversal is observable; no significance; no new figure for the paper; and the vehicle is the producer's own control configuration (H0 67.4, r0 5064), stated rather than quietly relied on
+5 of 5 rows hold
+===================================================================================================

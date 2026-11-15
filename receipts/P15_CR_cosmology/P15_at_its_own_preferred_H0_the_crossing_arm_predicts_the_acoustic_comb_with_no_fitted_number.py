@@ -448,13 +448,13 @@ PAPER = dict(comb=float(_M813.group(1)) if _M813 else None,
 #:   TWIN below is tied to what is actually in print rather than to a figure typed here once. **
 #:   *Tolerant of its own miss, like the two reads above: this turn routes nothing about this
 #:   sentence, but a pin on another seat's wording is a disjunction by default in this file.*
-_M882 = re.search(r"The height ratios are \$P_\{1\}/P_\{2\}=([0-9.]+)\$ and "
-                  r"\$P_\{1\}/P_\{3\}=([0-9.]+)\$ against the sky's \$([0-9.]+)\$ and "
+# r7797 (69): re-pointed to the radiation-free sentence this receipt is now cited on, which prints
+#   the arm-of-record pair without a sky pair beside it (the sky's pair goes with the one-rate sentence).
+_M882 = re.search(r"returns a comb of \$[0-9.]+\$ and height ratios of \$([0-9.]+)\$ and "
                   r"\$([0-9.]+)\$", _TEXW)
 PAPER.update(p12=float(_M882.group(1)) if _M882 else None,
              p13=float(_M882.group(2)) if _M882 else None,
-             sky_p12=float(_M882.group(3)) if _M882 else None,
-             sky_p13=float(_M882.group(4)) if _M882 else None)
+             sky_p12=None, sky_p13=None)
 #: ⛭⛭⛭ r7665 (69's order), AND THE REGISTRY `Ⓜ①` USES ON THE KERNEL RECEIPT, BROUGHT HERE.
 #:   *Every read below is TOLERANT of its own miss -- `PAPER[k] is None or ...` -- which is right when
 #:   69 may withdraw a sentence and FATAL when 69 merely rewords one: `r7661` found three reads in the
@@ -467,7 +467,13 @@ PAPER.update(p12=float(_M882.group(1)) if _M882 else None,
 #:   two of the four sites that print the comb pair.  *The peaks sat here as a typed tuple inside the
 #:   tabled loop -- the receipt's own `r7651+cc66.94` comment says why that is not good enough: `a
 #:   figure attributed to the paper is READ OUT OF THE PAPER, not retyped from it`.*
-WITHDRAWN_READS = {}        # key -> why its sentence is legitimately gone.  EMPTY: none is.
+WITHDRAWN_READS = {        # key -> why its sentence is legitimately gone.
+    # r7797 (69): sec:refit-bound's opening now prints the ONE-RATE peaks and phase intercept, pinned by
+    #   cc66's P15_the_sections_opening_figures_on_the_one_rate_..._298_5_not_298_94; this receipt's
+    #   radiation-free figures are no longer the ones in that sentence, so it no longer reads it.
+    "l.883's peak quartets": "the sentence now prints the one-rate peaks, pinned by cc66's opening-figures receipt",
+    "l.885's phase intercept": "the sentence now prints the one-rate intercept, pinned by cc66's opening-figures receipt",
+}
 _READS = {}
 
 
@@ -480,19 +486,19 @@ def note_read(key, got):
             else "   ⛔ NOT MATCHED -- not declared withdrawn, so this read has gone BLIND")
 
 
-_M883 = re.search(r"the peaks fall at \$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and "
+# r7797 (69): declared withdrawn above -- the read is switched off rather than deleted, so its locator stays on record.
+_M883 = None and re.search(r"the peaks fall at \$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and "
                   r"\$([0-9.]+)\$ against the sky's \$([0-9.]+)\$, \$([0-9.]+)\$, "
                   r"\$([0-9.]+)\$ and \$([0-9.]+)\$", _TEXW)
-_M884 = re.search(r"the comb fitted to them is \$([0-9.]+)\$ against the sky's \$([0-9.]+)\$",
-                  _TEXW)
-_M885 = re.search(r"the phase intercept \$\\varphi/\\pi=(-[0-9.]+)\$ against \$(-[0-9.]+)\$",
+_M884 = re.search(r"returns a comb of \$([0-9.]+)\$ and height ratios of", _TEXW)   # r7797 re-point
+_M885 = None and re.search(r"the phase intercept \$\\varphi/\\pi=(-[0-9.]+)\$ against \$(-[0-9.]+)\$",
                   _TEXW)
 _M2065 = re.search(r"at \$([0-9.]+)\$ against \$([0-9.]+)\$ the spacing is right to a part in",
                    _TEXW)
 PAPER.update(pk=tuple(float(g) for g in _M883.groups()[:4]) if _M883 else None,
              sky_pk=tuple(float(g) for g in _M883.groups()[4:]) if _M883 else None,
              comb884=float(_M884.group(1)) if _M884 else None,
-             sky884=float(_M884.group(2)) if _M884 else None,
+             sky884=None,
              phi=float(_M885.group(1)) if _M885 else None,
              sky_phi=float(_M885.group(2)) if _M885 else None,
              comb2065=float(_M2065.group(1)) if _M2065 else None,
@@ -784,11 +790,13 @@ if PAPER['comb'] is not None:
         _PCOMB = 'namesake raw-grid (298.0)'
     elif abs(round(_MAOR['a4'], 1) - PAPER['comb']) < 0.05:
         _PCOMB = 'arm of record, matched locator (299.1)'
-    # r7783 (69): THE THIRD STATE. On the rate the universe has l.813 prints 298.94, the matched comb carried
-    #   onto the one rate by the comb receipt's measured ratio (P15_the_fitted_comb_moves_nine_times_less...),
-    #   which pins it; this receipt's own figure, 299.1, is printed beside it for the radiation-free distance.
-    elif abs(PAPER['comb'] - 298.94) < 0.005 and abs(round(_MAOR['a4'], 1) - 299.1) < 0.05:
-        _PCOMB = 'one rate (298.94), with the arm of record matched locator at 299.1 beside it'
+    # r7783 (69): THE THIRD STATE. On the rate the universe has l.813 prints the one-rate comb; this
+    #   receipt's own figure, 299.1, is printed beside it for the radiation-free distance.
+    # r7797 (69): cc66 measured the one-rate comb directly on the matched locator, 298.5, and found the
+    #   carried 298.94 wrong; the printed figure is pinned by
+    #   P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.
+    elif abs(PAPER['comb'] - 298.5) < 0.005 and abs(round(_MAOR['a4'], 1) - 299.1) < 0.05:
+        _PCOMB = 'one rate (298.5), with the arm of record matched locator at 299.1 beside it'
 print(f"  l.813's comb is in the state: {_PCOMB}")
 check("⛭⛭⛭ ** l.813's COMB IS ONE OF THE TWO STATES THIS QUANTITY HAS, AND THE PROVENANCE ARGUMENT IS "
       "STATED FOR EACH. **  *In the namesake state the paper's 298.0 IS NOT the procedure the sentence "
@@ -919,7 +927,7 @@ check("⛭⛭⛭ ** Ⓝ① EVERY ONE OF THIS RECEIPT'S SEVEN PAPER READS MATCHED
       "own declaration false rather than letting the list rot.*",
       not [k for k, ok in _READS.items() if not ok and k not in WITHDRAWN_READS]
       and not [k for k in WITHDRAWN_READS if _READS.get(k)]
-      and len(_READS) == 7 and sum(_READS.values()) == 7 and len(WITHDRAWN_READS) == 0
+      and len(_READS) == 7 and sum(_READS.values()) == 5 and len(WITHDRAWN_READS) == 2
       # and each read agrees with this file's own figure at the precision the paper prints
       and (PAPER['pk'] is None or PAPER['pk'] == _pk_ao)
       and (PAPER['sky_pk'] is None or PAPER['sky_pk'] == _pk_sky)

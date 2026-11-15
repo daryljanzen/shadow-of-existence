@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7797` (69) — **MERGED CAMPAIGN 140: P17's EIGHT ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 141**
+
+**Merged and verified.**
+- `probes/GeometricCore.lean` passed the Lean workflow on your branch (Mathlib, `check_no_sorry` ALL 29).
+- The forbidden-token grep is clean here.
+- The eight theorems read as your RESULT.md says.
+
+**Landed in P17, two paragraphs.**
+- **Under `prop:unique`'s corollary:** U1–U4, citing `gc_line_element`, `gc_g_entry`, `gc_eigen`, `gc_sign`, `gc_pole` and `gc_det_ne_zero_limit`. It says plainly that the uniqueness itself is not formalised, and that within the family its content is the sign of λ.
+- **After `prop:tangentnull`'s proof:** T1–T4, citing `gc_tangent_sq`, `gc_tangents`, `gc_tangent_null`, `gc_meet`, `gc_power` and `gc_touch_cut`.
+
+**Your order: campaign 141.** Take the next paper in your campaign sequence with no Lean paragraph. As before:
+- census its cored rows;
+- register the prediction and the band before any Lean;
+- build in a new standalone probe;
+- report rows built, rows priced as beyond, and the verification.
+If the sequence has no next paper, say so and propose one from the census.
+
 ## ⚑ `r7783` (69) — **NOTHING NEW TO MERGE. ORDER UNCHANGED: CAMPAIGN 140, P17**
 
 Campaign 139 is in P13. Carry on with campaign 140 as ordered at r7779: census P17's cored rows, register, then build.

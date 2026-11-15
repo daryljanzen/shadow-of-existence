@@ -460,6 +460,8 @@ one-sheeted hyperboloid with a minimum radius; the signature and the throat
 are what its positive curvature \emph{is}, intrinsically, when read on the
 real manifold rather than imposed by hand.
 
+\noindent The algebra under the proposition is machine-checked in Lean (\texttt{GeometricCore.lean}). On $x_0^{2}+\mathbf{x}^{2}=\alpha^{2}$ with $x_0\neq0$, the constraint's differential turns the flat five-dimensional line element into \eqref{eq:sphere3} (\texttt{gc\_line\_element}). The metric $g=I+\mathbf{x}\mathbf{x}^{\mathsf T}/(\alpha^{2}-\mathbf{x}^{2})$ is \eqref{eq:eigen} entry by entry; $\mathbf{x}$ is an eigenvector with eigenvalue $\lambda$, every vector orthogonal to it is left fixed, and $\det g=\lambda$ (\texttt{gc\_g\_entry}, \texttt{gc\_eigen}). For $\mathbf{x}\neq0$ the sign of $\lambda$ is positive exactly when $\alpha^{2}<0$ or $\alpha^{2}>\mathbf{x}^{2}$, zero exactly at $\alpha^{2}=0$, and negative exactly when $\mathbf{x}^{2}>\alpha^{2}>0$, so within the family Lorentzian points occur only for positive curvature (\texttt{gc\_sign}). The crossing is a pole: at fixed $\alpha^{2}>0$, $\lambda\to+\infty$ as $\mathbf{x}^{2}$ rises to $\alpha^{2}$ and $\lambda\to-\infty$ beyond it, $\det g$ never vanishes where $g$ is defined, and $\lambda\to1$ as $\alpha^{2}\to\pm\infty$, the flat member (\texttt{gc\_pole}, \texttt{gc\_det\_ne\_zero\_limit}). The uniqueness itself, a classification of maximally symmetric spaces, is not formalised; within the family its content is the sign of $\lambda$.
+
 \begin{figure}[t]
 \centering
 \includegraphics[height=2.9in]{../resources/PhD_thesis/max_symm_space_graphed.png}
@@ -851,6 +853,8 @@ $\mathrm{d}s^{2}=0$. (Verified numerically at the hinge and at $600$ random
 heights, $\max|\mathrm{d}s^{2}|=5.7\times10^{-14}$; receipts:
 \texttt{power\_of\_a\_point.py}\rcpt{P17_power_of_a_point}, \texttt{power\_is\_null.py}\rcpt{P17_power_is_null}.)
 \end{proof}
+
+\noindent The proposition is machine-checked in Lean (\texttt{GeometricCore.lean}). If $T$ lies on the throat and the radius to it is perpendicular to the tangent, the tangent length squared is $|P|^{2}-\alpha^{2}$, Euclid III.36 through Pythagoras (\texttt{gc\_tangent\_sq}); the two points of tangency from an outside point are given explicitly, each on the throat and each a point of tangency, and they are distinct (\texttt{gc\_tangents}). If $(x_0,X)$ lies on the substrate, the displacement from the point of tangency $(0,T)$ to $(x_0,X)$ is null, and no displacement within the plane is (\texttt{gc\_tangent\_null}). A line through $P$ meets the throat at the roots of $t^{2}+2\langle P,u\rangle t+\mathrm{pow}(P)=0$, so the two meeting points of a secant have parameters whose product is $\mathrm{pow}(P)$ (\texttt{gc\_meet}, \texttt{gc\_power}); lifted to the height $x_0^{2}=\mathrm{pow}(P)$, neither meeting point of a secant is reached by a null displacement and the single meeting point of a tangent is (\texttt{gc\_touch\_cut}).
 
 This is the rulings of \S\ref{sec:rulings} in a second register, and the two
 identify: a ruling meets the throat tangentially, so the rulings \emph{are} the
@@ -1719,7 +1723,7 @@ cosmic-variance-limited wash (a smooth deficit bottoming at $\ell=4$,
 neither the sharp observed quadrupole dip nor a sharp
 falsification), while the geometric rate fits the baryon-acoustic distances and the primordial abundances return deuterium and helium within measurement on the corpus's own hot dense history. The full-spectrum
 likelihood is run as well: the acoustic transfer, run end to end on the background the distance data fix,
-reproduces the comb to a part in five hundred and the heights to a few per cent, and on the rate the universe
+reproduces the comb to better than a part in a thousand and the heights to a few per cent, and on the rate the universe
 has---radiation's bend of the cut carried into the projection's distance, as the construction derives---the
 spectrum sits level with the control's, where a distance built on the geometric part of the rate alone sits at
 $2.35$ times the control's distance from the data. The cosmic beginning is the

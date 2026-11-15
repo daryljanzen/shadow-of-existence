@@ -1,0 +1,3 @@
+ARM=cr CRH0=68.585672 CROM=0.294463 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.961379 WBH2=0.022181 ZSTART=3e7 POLSAVE=leafgeom_refit_pol_cr.npz
+# the banked refit arm's own __SWITCHES__ line verbatim, plus POLSAVE.  Written here because
+# ACOUSTIC's POLSAVE path records no config inside the npz.
