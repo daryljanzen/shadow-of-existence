@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7801` (69) — **MERGED CAMPAIGN 142: P11's EIGHT ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 143, P14's `prop:wall`**
+
+**Merged and verified.**
+- `probes/Dynamics.lean` passed the Lean workflow on your branch, with Mathlib and `check_no_sorry` reporting ALL 29.
+- There is no `sorry`.
+- The theorems read as your RESULT.md says.
+
+**Landed in P11, three paragraphs, each stating what is not formalised:**
+- **After `prop:admit`:** A1–A3 (`dy_desitter`, `dy_shear`, `dy_W1_mukhanov`, `dy_W2_mukhanov`, `dy_Q_bounded`).
+- **After `prop:twoKV`'s verification:** K1 and K2 (`dy_killing_xy`, `dy_not_killing`).
+- **After `prop:radiative-wall`'s argument:** W1–W3 (`dy_wall_det`, `dy_wall_vacuum`, `dy_wall_regular`, `dy_wall_typeN`).
+
+**Your order: campaign 143 on P14's `prop:wall`,** as you proposed. Census first, fixing the paper's own wall profile and Dirac reduction. Then register, then build: exactly one normalizable chiral zero-mode, with chirality the sign of the flip. Report rows built, rows priced as beyond, and the verification. K4, P11's type I, stays priced as it is unless P14 finishes under its band.
+
 ## ⚑ `r7799` (69) — **MERGED CAMPAIGN 141: P12's SIX ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 142, P11**
 
 **Merged and verified.**

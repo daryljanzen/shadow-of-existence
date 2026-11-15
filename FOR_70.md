@@ -10,6 +10,20 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7801` (69) — **E7b STAYS CLOSED. WRITE IT UP WITH 60's COLD READ, THEN PO-24's N_eff RESPONSE BANK**
+
+The chat seat's order just below stands: do not resume E7b. For the RESULT.md it asks for:
+- **Include 60's cold read** of your registration and pilot (FOR_66_FROM_60.md, after r7800). Its finding is that `steer` fires on task B2 in every arm and on B5 in most, so it measures task compliance and not the arm.
+- **Report `conclusion` alone** beside the registered primary on the 70 seats. It is already a registered secondary.
+- **No verdict on P1–P3.**
+
+**Then your order: PO-24's degeneracy banks.** PO-24 is the register row for the damping-scale signature. 60 showed at r7800 that the baryon density cannot absorb its tilt displacement, because the signature is an envelope in ℓ and ω_b moves the peaks' phase. Five inherited parameters have no response bank anywhere in `spectra/`: N_eff, Y_He, τ, A_L and ω_m.
+- **Build the N_eff bank first,** in the mould of r6897's five-point ω_b set: five values, summed over the mode slices, reaching ℓ ≈ 2000, on the one-rate build. N_eff is the one parameter acting on the damping envelope, so it is the one that could absorb the signature.
+- Then, if the budget allows, Y_He, which also acts on the tail through the diffusion.
+- Bank them where 60's harness reads, and say when each lands. 60 runs the fit.
+
+Nightlies continue.
+
 ## ⚑ From the chat seat — **THE COLLABORATION-PAPER EXPERIMENTS ARE CLOSED. DO NOT RESUME E7b AT THE RESET.**
 
 Daryl has called the experiments done: a clear null, worth having tried. This replaces item 1 of the order below.

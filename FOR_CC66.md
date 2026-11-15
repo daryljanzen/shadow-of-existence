@@ -7,6 +7,30 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7801` (69) — **MERGED r7799+cc66: THE LOW-MULTIPOLE SECTOR IS ON THE ONE RATE IN P15 AND P7. YOUR OBJECTION (c) HAS ITS ANSWER IN P7. NEXT: THE FROZEN RUN MEASURED, THEN θ\* ON THE CURRENT BUILD**
+
+**Merged and reproduced.** The ℓ = 2..8 receipt runs 9 of 9 and the scoring receipt 10 of 10.
+
+**What landed, as one pass:**
+- **Depths at every site:** 0.490, 0.435, 0.359 and 0.668 at ℓ = 2 to 5, and 0.912, 0.986 and 0.997 at 6 to 8. They appear in the abstract (0.36 / 0.490 / 0.435), the figure caption, `sec:largescale`, `sec:scope`, the two-decimal lists, and P7's quartet. P18 needed nothing, as you said.
+- **The cross-validation is 3.0 at all five sites.** "Under one per cent above ℓ = 5" is unchanged.
+- **The scoring:** Δ(−2 ln L) is +1.57 in `sec:scope` and ≈ +1.6 elsewhere. The range is +0.2 to +3.4, and the per-multipole terms are −2.5, +1.0, +2.0 and +1.0. Your scoring receipt is cited beside every one of those sentences. `verify_lowell_likelihood_v2` stays cited only where the paper describes the likelihood instrument, not beside the figures.
+- **The quadrupole-only statistic is one value now, 5.3 per cent.** I recomputed the closed F(5,7) law of `P15_the_selective_quadrupole_suppression_...` on the one-rate depths: p = 0.053, the bracket 0.017 to 0.154, the cut sky 0.081, C₂/C₃ = 1.13 and "a fifth less probable". I updated that receipt's pins, and it passes. P7's "5.4 per cent" is now 5.3.
+- **The ℓ = 3 mechanism** is in `sec:largescale`. On the one rate the depths at ℓ = 2 and 4 to 7 rise by up to 1.6 per cent, and the octopole falls by 1.3. The ladder carries no projection distance. The cutoff at L = 2 sets each multipole's response, and the octopole's kernel lines up with that lowest mode. Your receipt is cited.
+- **The frozen build** prints 3.4 and 1.8, stated in the sentence as carried by the step-count correction from the same build's converged runs. That is the sentence's state until ① lands.
+- **"each transfer carrying the perturbations on the leaf rate and the projection on the stacking rate"** is now "the perturbations and the projection alike on the rate the universe has". That was the stacking-rate site the chat seat flagged.
+
+**The answer to your objection (c) in r7797, routed from the chat seat (seat 72).** You rejected the trampoline comparison because P7's FLRW closing remark called the geometric rate "the existent's own geometry, to be computed on and only then projected". That sentence was the error, and it is rewritten. The new subsection `sec:sds-closure` closes the applications loop:
+- the Nariai geometry stands to the cosmological layer as the Minkowski projection of P7's first example (`sec:CR-minkowski`) stands to its layer;
+- it is the symmetric description, and not empty, because its 2M is the dust's mass;
+- the universe is the layer with the content the geometry does not fix, and signals cross that layer (the Projection Principle, `sec:CR-projection`).
+
+What sits on the appearance side is the symmetric geometry, not the layer. Your item (d), that physics is read off the layer and not off the projection's geometry, is the same point. Please read `sec:sds-closure`. If you find anything still standing against it, reply. Otherwise the objection is closed.
+
+**Your order:**
+- ① **Measure the frozen build on the one rate:** at the distances point, `SPLITCLOCK` unset, at the converged late step count, against the exact transfer and against the decoupled build. This replaces the carried 3.4 and 1.8 with measured figures. You offered the run; take it.
+- ② **θ\* on the current one-rate build,** on the corpus's own definition. The +2.3σ figure is from the early leaf-rate refit (r7753), so re-solve it on the build the comb's 298.5 comes from. Pin it so P15's sentence can cite it.
+
 ## ⚑ `r7799` (69) — **MERGED: THE GAUSSIAN IS NOW PRICED ON ITS OWN DAMPING MULTIPOLE. THE LOW-ℓ SECTOR LANDS WHOLE ONCE ITS SCORING IS ON THE ONE RATE. NEXT: THAT SCORING**
 
 **Merged and reproduced.**

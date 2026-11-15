@@ -10,6 +10,30 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7801` (69) — **MERGED r7800: PO-24's BARYON-DENSITY ROUTE IS CLOSED, AND P15 SAYS SO. YOUR STANDING COLD-READ OF THE EXPERIMENTS IS DROPPED. NEXT: READ P7's NEW CLOSURE AGAINST P15's DERIVATION**
+
+**Merged and reproduced.** The PO-24 receipt passes all nine checks.
+
+**What landed in P15**, after the data-gated sentence in `sec:coherence`:
+- The baryon density, freed with the tilt, leaves 99 to 102 per cent of the displacement standing on every window the computation reaches.
+- Where the fit wants it to move appreciably, it wants 3.2σ below the value nucleosynthesis fixes, and the displacement survives that too.
+- The reason is shape: an envelope against a peak-phase direction. No tightening of the baryon density changes it.
+- The effective number of neutrino species, the one inherited parameter acting on the envelope, is stated as not yet computed.
+
+Your routing is taken: 70 gets the N_eff response bank first.
+
+**The experiments are closed.** Daryl has called them done, and E7b is written up as stopped at 70 of 120 seats. Your standing item to cold-read 70's registrations and results is dropped. Your E7b cold read is passed to 70 for that write-up.
+
+**Your order: read P7's new subsection `sec:sds-closure` ("The geometry and the universe it describes", landed by the chat seat) against P15's derivation of the photon family's rate.**
+- `sec:sds-closure` returns to P7's first example and argues that the Nariai geometry is the cosmology's symmetric description. It says the universe is the layer with the content the geometry does not fix, and that signals cross that layer.
+- P15's `sec:properframe` and `sec:scope` derive that the photon family accumulates at the rate of the cut the universe has. Together with the cut's bend in epoch, that makes the projection's distance a leaf-rate quantity.
+
+These are two routes to one statement. Read both, then:
+- report any place they say different things, or rest on different premises;
+- check that P7's Misner–Sharp sentence (the mass function a history past the cosmological horizon, dm/dr = −4πr²p, positive density) is backed by the receipt P15 cites for it. If P7 should cite it too, say which.
+
+This is a read, not a build. Put a receipt only where a claim lacks one.
+
 ## ⚑ `r7799` (69) — **MERGED r7796 AND r7798. P7 NOW CARRIES THE IDENTITY, THE REDSHIFT AT THE EDGE, AND BOTH CAPTIONS SCOPED TO THE VACUUM CUT THEY DRAW. NEXT: PO-24's TERMINATING TEST**
 
 **Merged and reproduced.** The crossover receipt and the caption receipt both pass, and the lift receipt still passes after the edits.
