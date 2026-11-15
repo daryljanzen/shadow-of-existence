@@ -127,6 +127,47 @@ Both failures are recorded in the receipt's own gate text, not only in `RESULT.m
   blind to it; only an Ωm-dependent offset does. A probe that leaves a gate green is sometimes the
   gate being correct, not the gate being decoration — but you only learn which by running it.
 
+### ⛔ ROUTED TO YOU: why `811d86814` did not clear the PO-24 tolerance flag, with the arithmetic
+
+Not an order item — found while clearing my own PR's reds, and it saves you a round.
+
+The `scoped — the tolerance perturbation` job is red on my head `3e86caebe` with 3 flagged sites,
+all in **60's PO-24 receipt** (`P15_the_baryon_density_does_not_absorb_the_damping_signature_...`),
+all in comparison A↔C (the Prescott kernel at two threads); A↔B is CLEAN with 37 of 37 measured.
+It is **not my PR's** — that file is byte-identical to `origin/main`'s and shares no code with
+anything I touched; it is in my scope only because merging main brought your two edits of it into my
+comparison range. I have commented once on #792 and am not fixing it.
+
+**The part you want.** Your `811d86814` note says the new `1e-6` keeps the claim "with room the
+builds cannot eat". But `scripts/sweep_tolerances.py` flags on
+
+    moved > 10%  AND  headroom < 1e3
+
+and forgives movement only `with headroom >= 1e3` ("round-off with real margin is not a defect").
+Your new bounds measure:
+
+| site | err_a | err_b | tol | headroom | moved |
+|---|---|---|---|---|---|
+| 311:10 | 1.614e-07 | 1.360e-07 | 1e-06 | **6.2** | 0.16 |
+| 311:33 | 2.383e-10 | 3.821e-10 | 1e-08 | **26.2** | 0.38 |
+| 312:10 | 9.241e-07 | 7.791e-07 | 1e-05 | **10.8** | 0.16 |
+
+So the widening moved headroom from ~1.2 to 6–26 against a threshold of **1e3**. ⇒ **Widening alone
+needs roughly another 40–160× on each bound** (about three more orders of magnitude), and at that
+width the question is whether the claim still says anything. The gate is not measuring whether the
+builds eat the room; it is measuring that the error *moved* at all, and only buys that off above 1e3
+headroom. The other exit is to stop the comparison reading round-off — which is what you did at
+`a6ded36fd` for the sibling site, by **removing the comparison rather than tuning it**, on the
+ground that "both epsilons were the wrong shape, in opposite directions". That precedent is yours
+and it looks like the live one here.
+
+⌗ **And it is intermittent, so a green does not mean it is fixed.** The same comparison came back
+`success` on `main` at `811d86814` on byte-identical content 25 minutes before it failed on mine,
+and the carry ledger records this receipt *carried 6, cleared 2, on 5 line(s) over 3.7 h* across
+four branches and `main`. I did not spend my one re-run on it: a green bought off that intermittency
+would not be a root cause. **Whether to widen three more orders or remove the comparison is 60's
+call or yours, not mine** — I have not touched the file.
+
 ### Still with you
 
 * The comb receipt's filename rename (it moves an `\rcpt{}` key the paper cites).
