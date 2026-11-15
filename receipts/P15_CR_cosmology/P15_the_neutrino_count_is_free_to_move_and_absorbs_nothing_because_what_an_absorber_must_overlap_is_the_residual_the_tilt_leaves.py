@@ -240,11 +240,33 @@ for lo, hi in AVAIL:
     print(f"        SURVIVES       : {r['surv']:.3f} per cent   (multistart spread: "
           f"Delta n {sp3[1]:.1e}, N_eff {sp3[2]:.1e})")
 
+# r7804 (60): the bound below is NOT a chosen epsilon.  The clause this arm reasons FROM is that no
+#   number this receipt PRINTS can differ according to which start wins -- so the bound is read off
+#   the print format itself: half of the last decimal each quantity is set in type to.  Delta n and
+#   N_eff print to five decimals, the survival to three, the offset in sigma to two.  An absolute
+#   1e-7 here was the same shape of defect as the tie-break 69 corrected at r7803: measured spreads
+#   run 1.2e-9 to 8.8e-9 over two builds x three windows -- a 7.4x observed variation against only
+#   11.3x headroom, and the precedent in receipts/TOLERANCE_JUDGED.json declined to judge a flag
+#   away at 12.2.  Against the printed decimals the tightest margin MEASURED is 281x (window
+#   700-1760, the N_eff spread against the fifth decimal it is printed to), and the bound cannot
+#   drift, because moving a print format moves the bound with it.
+TIE_P = 0.5e-5                    # Delta n and N_eff are printed to five decimals
+TIE_S = 0.5e-3                    # the survival percentage is printed to three
+TIE_G = 0.5e-2                    # the excursion in units of the quoted sigma is printed to two
+MARGINS = []
+for r in ROWS:
+    sp_dn, sp_ne = float(r['sp3'][1]), float(r['sp3'][2])
+    MARGINS.append((TIE_P / sp_dn, TIE_P / sp_ne,
+                    TIE_S / (100.0 * sp_dn / abs(r['dn2'])), TIE_G / (sp_ne / NE_SIG)))
+    print(f"      window {r['lo']}-{r['hi']}: the starts agree to {sp_dn:.1e} on Delta n and "
+          f"{sp_ne:.1e} on N_eff -- {min(MARGINS[-1]):.0f}x inside the tightest last decimal "
+          f"any of the four printed quantities is set in")
 check("Ⓒ⑤  the three-parameter fit converges on every available window strictly inside the bank's "
-      "grid, and the twelve starts agree to better than 1e-7 on both reported parameters, so no "
-      "number here is an extrapolation and none depends on which start wins",
+      "grid, and the twelve starts agree far more closely than the last decimal of EVERY quantity "
+      "this receipt prints from them, so no number here is an extrapolation and none -- parameter, "
+      "survival, or offset in sigma -- depends on which start wins",
       all(not r['edge'] for r in ROWS) and len(ROWS) == 3
-      and all(r['sp3'][1] < 1e-7 and r['sp3'][2] < 1e-7 for r in ROWS))
+      and all(min(m) > 1.0 for m in MARGINS))
 
 surv = [r['surv'] for r in ROWS]
 print(f"\n      survival across the three windows: {', '.join('%.3f' % s for s in surv)} per cent")
@@ -346,13 +368,20 @@ print(f"      ⌗ searched the {len(NAMES)} entries of computations/beyond_the_w
       f"directory every\n        banked spectrum lives in, by the lowercase substring patterns "
       f"printed above applied to each\n        entry's filename -- so the absence stated here is "
       f"about THAT directory and THOSE patterns and\n        nothing else.")
-print("      ⇒ TWO of the six now have responses, and 70 reports Y_He settable with its bank next.")
-print("        The remaining three are NAMED, NOT MEASURED -- and Ⓒ⑦ᵇ gives the screen to apply to")
-print("        each when it lands, before any fit is run.")
-check("Ⓓ⑨  exactly TWO of the six inherited parameters now have a banked response, and the absence "
-      "of the rest is declared with the directory and the patterns it was searched by, in the "
-      "sentence that states it",
-      len([k for k, v in found.items() if v]) == 2 and len(found) == 6)
+print("      ⇒ The TWO this receipt FITS -- the baryon density and the neutrino count -- both have")
+print("        banks, and that is what this arm asserts.  How many of the other four have banks is")
+print("        another seat's activity and not this receipt's claim: 70 reports Y_He settable with")
+print("        its bank next, and the printed standing above will move when it lands.  What does NOT")
+print("        move is the screen: Ⓒ⑦ᵇ gives it, to apply to each when it lands, before any fit is run.")
+check("Ⓓ⑨  the two inherited parameters this receipt actually FITS both have a banked response, "
+      "and the standing of the other four is reported with the directory and the patterns it was "
+      "searched by, in the sentence that states it",
+      # r7804 (60), carrying 69's r7803 guard on this same arm shape in the PO-24 receipt: "exactly
+      #   TWO of the six" is a check on another seat's banking -- it turns red the moment 70 lands
+      #   Y_He, which the line above itself announces.  What is THIS receipt's is that the two banks
+      #   it fits are there; the other four are the declared SCOPE of the search, not an assertion.
+      bool(found['the baryon density  omega_b'])
+      and bool(found['the neutrino count  N_eff']) and len(found) == 6)
 
 # ======================================================= Ⓔ THE CLAUSES REASONED FROM
 head("E -- THE P16 SENTENCES THE DECIDING ARM REASONS FROM, IN THREE STATES")
