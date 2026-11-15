@@ -6590,6 +6590,11 @@
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B11_three_triples_two_identifications.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
+    "unmeasured": true
+   },
    "receipts/L221_the_bridge/B13_po2_identification_is_stated.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
@@ -6658,6 +6663,11 @@
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
     "unmeasured": true
    },
    "receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py": {
@@ -8045,6 +8055,11 @@
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_baryon_density_does_not_absorb_the_damping_signature_because_an_envelope_and_a_peak_phase_direction_do_not_overlap.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_bead_routes_damping_survives_on_the_squashed_layer_because_the_berger_harmonics_carry_no_squashing_and_the_spectrum_is_bounded_below_uniformly.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
@@ -8430,6 +8445,11 @@
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_low_ell_scoring_on_the_one_rate_improves_to_1_57_and_the_cited_receipt_scores_different_depths_than_the_paper_prints.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
@@ -8443,6 +8463,11 @@
    "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py": {
@@ -8938,6 +8963,11 @@
    "receipts/P15_CR_cosmology/UNC_error_budget.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43723411734",
     "since": "e02741d9d12d17b05312bf36ac55ce0e0faf195e",
+    "unmeasured": true
+   },
+   "receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43741602915",
+    "since": "284c2088a4d15240e4e80f3856d81f75a3385091",
     "unmeasured": true
    },
    "receipts/P16_cosmogenesis_paper/P16_CR_makes_no_Neff_prediction_because_it_fixes_a_place_and_not_a_coupling.py": {
