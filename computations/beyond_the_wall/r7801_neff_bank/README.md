@@ -15,3 +15,18 @@
 **Two receipts are updated for the new knob:**
 - `P15_the_free_streaming_knob_...` counts the instrument's switches. Its count is 85 now, with `DNEFF` named, by its own convention.
 - `P15_the_fitted_comb_moves_...` pinned the working tree to the blob of its `LEAFGEOM=1` leg. It now also accepts a tree that differs from that blob only by the `DNEFF` block and its config key, checked by AST. Any other difference keeps it red.
+
+## Landed (2026-11-15)
+
+`spectra/r7801_neff_response_lcdm.npz`: N_eff = 2.5, 2.75, 3.0, 3.25, 3.5, each the sum of 11 of 11 slices, with nothing missing.
+- **The centre reproduces `r6897`'s banked centre spectrum exactly:** max |relative difference| 0.0. It is the same run but for the knob.
+- **The response, as a ratio to the centre:**
+
+| N_eff | l_A | ℓ≈200 | 500 | 800 | 1100 | 1400 | 1700 | 1990 |
+|---|---|---|---|---|---|---|---|---|
+| 2.5 | 296.40 | 0.981 | 1.007 | 1.025 | 1.043 | 1.063 | 1.075 | 1.092 |
+| 3.5 | 306.55 | 1.018 | 0.989 | 0.965 | 0.945 | 0.924 | 0.922 | 0.927 |
+
+- **The response is a monotone tilt across the damping tail, about ±7–9% by ℓ ≈ 2000, carried with a ±5 shift in l_A.** This is the envelope-shaped direction 60's `r7800` said only N_eff could supply.
+- **What it does not answer:** whether it absorbs PO-24's signature is 60's fit.
+- **The bank's `config`** is the instrument's resolved switches with `DNEFF` listing the five values, as `check_banked_config` requires.

@@ -29,9 +29,15 @@ for dn in DN:
 if W:
     W['neff'] = np.array(sorted(float(k.split('__')[1]) for k in W if k.startswith('Dl__')))
     W['missing'] = np.array(miss, dtype=object)
-    W['config'] = json.dumps({'bank': 'r7801 N_eff response, control (lcdm) at r6897 refit background',
-                              'LH0': 67.410309, 'LOM': 0.309826, 'WBH2': 0.021966, 'NS': 0.954248,
-                              'LSTEP': 8, 'LMAXL': 2000, 'KSLICE': '250 x 11', 'N0_coded': N0})
+    # the bank's `config` is the INSTRUMENT's resolved switches (check_banked_config's defining five and
+    # the rest, from the centre's own save), with DNEFF given as the bank's five values and the bank added
+    _ck = [k for k in W if k.startswith('config__')]
+    _cfg = json.loads(W.get('config__3.00', W[_ck[0]]))
+    _cfg['DNEFF'] = [float(x) for x in DN]
+    _cfg['bank'] = {'what': 'r7801 N_eff response, control (lcdm) at r6897 refit background',
+                    'LH0': 67.410309, 'LOM': 0.309826, 'WBH2': 0.021966, 'NS': 0.954248,
+                    'LSTEP': 8, 'LMAXL': 2000, 'KSLICE': '250 x 11', 'N0_coded': N0}
+    W['config'] = json.dumps(_cfg)
     out = os.path.join(SP, 'r7801_neff_response_lcdm.npz'); np.savez_compressed(out, **W)
     print(f'  {os.path.basename(out)}: N_eff = {list(W["neff"])}, missing = {miss}')
     if 'Dl__3.00' in W:
