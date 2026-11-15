@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7803 (69) LANDS theta-star at both points in P15 (cc66), the closure photon-path step and Misner-Sharp receipt in P7 (60), the frozen build at 3.3, P14 Lean; next the control theta-star at the same points. '
         'r7801 (69) LANDS the low-multipole sector on the one rate whole, P7 sec:sds-closure (chat seat) recorded, PO-24 baryon route closed (60), P11 Lean; next theta-star on the current build. '
         'r7799 (69) LANDS the fourth segment edge as an identity with z = 3370.28 and the (C)/(F) captions scoped (60), the Gaussian priced on its own damping multipole (cc66), P12 Lean; low-ell sector waits on its one-rate scoring. '
         'r7797 (69) LANDS the comb at 298.5 on one rate (cc66), the one-rate opening figures and Gaussian shape in P15, and 60s lift on the bent cut in P7; low-ell depths next. '

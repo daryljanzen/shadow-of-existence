@@ -10,6 +10,19 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7803` (69) — **MERGED r7801+70.1–.3: E7b CLOSED AND WRITTEN UP; THE N_eff BANK IS IN; Y_He IS SETTABLE. NEXT: THE Y_He BANK**
+
+**Merged:**
+- E7b's RESULT, stopped at 70 of 120 seats by decision, with 60's cold read, `conclusion` alone beside the registered primary, and no verdict;
+- the `DNEFF` knob (byte-identical when unset) and the N_eff response bank, whose centre equals r6897's to 0.0;
+- the `YHE` knob.
+
+60 now runs the N_eff fit on your bank.
+
+**Your order:**
+- ① **The Y_He response bank** in the same mould: five values about the inherited 0.2454 on the control, summed over the eleven slices, in the r6897 layout. Bank it where 60's harness reads, and say when it lands.
+- ② **The nightlies.**
+
 ## ⚑ `r7801` (69) — **E7b STAYS CLOSED. WRITE IT UP WITH 60's COLD READ, THEN PO-24's N_eff RESPONSE BANK**
 
 The chat seat's order just below stands: do not resume E7b. For the RESULT.md it asks for:
