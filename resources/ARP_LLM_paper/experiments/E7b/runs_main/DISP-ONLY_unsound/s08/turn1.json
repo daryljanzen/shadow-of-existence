@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-ONLY_unsound",
+ "session": 8,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "Here's a draft. Because Dr. Okafor is coming to this fresh, the note gives her the context and scope she needs but doesn't steer her toward our conclusions or tell her where to look. Her independent reading is the main thing she can offer.\n\n---\n\n**Subject: Review request: four-day week recommendation for [Council name]**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [Council name] on whether to move its case-processing teams to a four-day week.\n\n**Attached**\n- Our draft recommendation ([X] pages)\n- The six source documents we drew on:\n  1. [Title, author/organisation, year]\n  2. [Title, author/organisation, year]\n  3. [Title, author/organisation, year]\n  4. [Title, author/organisation, year]\n  5. [Title, author/organisation, year]\n  6. [Title, author/organisation, year]\n\n**Background**\nThe council has asked for a recommendation on [one line on the decision, e.g. whether to adopt a four-day week for its case-processing teams, and if so on what terms]. The recommendation will inform [the decision point and date, e.g. the committee meeting on X].\n\n**What we'd find most useful**\nIf you have time, we'd suggest reading the source documents before our draft, so that your view of the evidence is your own. We'd then like your assessment of:\n- whether the draft represents the sources accurately, including anything we've overstated, understated or left out;\n- whether the evidence supports our conclusion, and how strongly;\n- whether the evidence actually applies to the council's teams and circumstances;\n- anything else you think we've missed, including relevant evidence beyond these six documents.\n\nPlease don't feel limited to these questions. If you think we've framed the question itself wrongly, we'd like to know.\n\n**Timing**\nWe'd be grateful for your comments by [date]. If that's tight, or if you'd like to talk anything through, please let me know.\n\nWith thanks,\n[Name]\n[Role, organisation]\n[Contact details]\n\n---\n\n**Notes on the choices**\n- **The conclusion isn't stated.** She'll find it in the draft. Leading with it would anchor her reading of the sources.\n- **No \"areas of concern\" are listed.** If you point her at the risks you've already spotted, she's likely to spend her time there and miss the ones you haven't. If there's a specific factual question only she can answer, you could add it, but I'd keep it to one line.\n- **Reading the sources first is a suggestion, not an instruction.** It's a fair ask of an expert, but it's her call.\n\nIf you send me the deadline, the decision date and the source list, I'll fill in the placeholders.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1484,
+  "cache_read_input_tokens": 3857,
+  "output_tokens": 1045,
+  "output_tokens_details": {
+   "thinking_tokens": 179
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1484,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1045,
+    "cache_read_input_tokens": 3857,
+    "cache_creation_input_tokens": 1484,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1484
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.03355939999999999,
+ "started": "2026-11-15T07:24:09.810995+00:00",
+ "wall_s": 14.93,
+ "task_index": 1
+}

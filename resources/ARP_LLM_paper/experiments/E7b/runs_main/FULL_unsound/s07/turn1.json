@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 7,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "Two things to check before sending:\n\n1. **Possible conflict of interest.** \"R. Okafor\" is an author of the Halden pilot (source 1) and a co-author of the 24-month follow-up (source 5). If Dr. Okafor is that person, she *has* seen two of the sources, including one that the re-analysis (source 3) found had misreported attrition. That doesn't rule her out as a reviewer, but it should be declared and the council should know. I've put an optional paragraph in square brackets for this.\n2. **Which six documents.** I've assumed the five sources plus the evidence briefing. I'd leave out the \"How We Work\" note, which is internal and not evidence.\n\nI haven't seen your draft recommendation, so its conclusion is left as a placeholder. The note deliberately doesn't summarise your conclusions, so her review stays independent.\n\n---\n\n**Subject:** External review: draft recommendation on a four-day week for council case-processing teams\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [council name] on whether to move its case-processing teams to a four-day week with pay maintained. Attached are:\n\n- **The draft recommendation**\n- **Six source documents:**\n  1. Halden Institute pilot, Working Paper 24-07\n  2. Varden County cluster-randomised trial, nine-month results\n  3. Varga & Holm, re-analysis of the Halden pilot\n  4. Achterberg et al., systematic review and meta-analysis\n  5. Varden County and Halden 24-month follow-up\n  6. Our internal evidence briefing synthesising the five\n\n**What we're asking.** We'd like your independent judgement on whether the recommendation follows from the evidence, at the strength we state it, for the council's teams specifically. If you can, please read the sources, or at least sources 2 and 5, before the draft, so that your reading isn't shaped by ours.\n\n**Where scrutiny would help most.** Please don't limit yourself to these, but we would particularly value your view on:\n\n- **Fit to the council.** Most of the strongest evidence comes from one county's public case-processing offices. Does it carry over to the council's teams, given their workflows, deadlines and any front-desk or phone duties?\n- **Accuracy against primary sources.** We found errors at the summary level during our own reading. Please check figures against the underlying tables, not the abstracts.\n- **Hours and cost.** We'd like your view on whether we treat actual and scheduled hours correctly, and how we handle overtime and unit labour cost, which the sources measure poorly.\n- **Strength of conclusions.** Please tell us anywhere you think we overstate or understate what the evidence supports.\n\n[**Declaration.** Two of the sources, the Halden pilot and the 24-month follow-up, list an R. Okafor among their authors. If that is you, we would be grateful if you could tell us. We would still very much welcome your review, and would note the connection when we report to the council.]\n\nWe'd be grateful for comments by [date], in whatever form suits you: tracked changes, a separate note, or both. Please get in touch with any questions.\n\nWith thanks,\n\n[Name]\n[Role, team]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4550,
+  "cache_read_input_tokens": 91281,
+  "output_tokens": 2283,
+  "output_tokens_details": {
+   "thinking_tokens": 1243
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4550,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2283,
+    "cache_read_input_tokens": 91281,
+    "cache_creation_input_tokens": 4550,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4550
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10033219999999998,
+ "started": "2026-11-15T07:24:10.270660+00:00",
+ "wall_s": 28.0,
+ "task_index": 1
+}

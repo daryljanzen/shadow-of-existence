@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_unsound",
+ "session": 7,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "**Subject: Handover – is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nThis note hands over the open question I've been working on before I go on leave. You'll have all six source documents. Below is the question, what the evidence says, where it's weak, and what I'd do next. I've marked my own interpretations as such. Please treat them as starting points to test, not conclusions to inherit.\n\n## The question\n\nIn the trials, cutting hours raised output per hour worked. **Is the hours cut itself necessary for that gain? Or could reorganising work without cutting hours, mainly by cutting meetings, deliver much of it?** This is the main open question in our synthesis (source 6, §4), and it matters to the council because a reorganisation-only option would have very different costs.\n\n## The short answer\n\n**No study has tested it directly.** No trial had an arm that reorganised work without reducing hours. Everything below is indirect.\n\n## What the evidence says\n\n**Varden 24-month follow-up (source 5, §3).** This is the main evidence.\n- Per-hour gain in case-processing offices: +8.5% on system-log hours and +9.8% on timesheets, relative to control.\n- Recurring meetings in treated offices fell from 7.4 to 3.9 hours per week; control offices were roughly flat.\n- A registered mediation analysis attributed **47% (CI 28–66)** of the gain to fewer meetings, **18% (2–34)** to reduced fatigue, and **35%** to neither.\n\n**The two control offices (source 5, \"An unplanned observation\").** In month 15, two control offices cut their own meetings without changing hours. Meeting time fell from 7.1 to 5.0 hours, and output per hour rose 4.1% against their own previous six months. This is the only direct glimpse of reorganisation without an hours cut. But it is two self-selected offices with no comparison group, and the change could reflect a general trend or a reversion from an unusually bad period.\n\n**Managers' accounts (sources 1 and 2).** Halden managers called the reduced schedule \"a forcing device\" for changes they had wanted for years; 47 of 58 mentioned cutting meetings. Varden interviews said the same about standing meetings that \"persisted by habit.\"\n\n**The sceptical case (source 3, §7).** This argues the meetings idea was a post hoc story. Source 5's registered test partly answers it, but not fully; see the caveats below.\n\n**The wider literature (source 4, \"Mechanisms\").** Only three studies measured meeting time, and none tested it under a registered plan.\n\n## Caveats to keep in mind\n\n1. **The mediation test uses the same seven treated offices that generated the hypothesis.** It is a stronger test than the original, but it is not an independent replication. It also assumes no unmeasured confounding, as source 5 acknowledges.\n2. **It is unclear what the system-log hours include.** Source 5 describes logs as time \"working on cases.\" If that excluded meetings, logged hours should have fallen about 3%, not the reported 11%. So the logs probably include meeting and idle time, but this needs confirming.\n3. **Part of the meetings effect may be arithmetic.** My rough calculation: case time (timesheet hours minus meetings) fell only about 3%, while output fell 3.4%. On that reading, output per hour *spent on cases* barely changed. Almost all of the per-hour gain comes from no longer counting unproductive meeting time in the denominator.\n4. **Control contamination.** The two control offices that cut meetings also improved the control group from month 15. The 24-month difference-in-differences may therefore *understate* the treatment effect. Excluding them would sharpen the estimate.\n5. **The baseline meeting figures (7.4 and 7.2 hours) aren't explained.** The nine-month report said calendar data were collected only in month six, so the baseline source needs confirming.\n\n## How I'd frame the question\n\nThese are my interpretations; please challenge them.\n\n- **\"Necessary\" has two meanings, and they need separating.**\n  - *Mechanically necessary:* the gain requires fewer hours.\n  - *Necessary as a trigger:* the hours cut is what makes managers actually cut meetings, and keeps them cut.\n\n  The managers' accounts point to the second. Treated offices also held meeting time down for the full 24 months, so it doesn't seem to creep back under the hours cut. Whether it would creep back without one is unknown.\n- **The two routes produce the gain differently.**\n  - Under an hours cut, freed meeting time simply leaves the denominator. Output holds while hours fall.\n  - Under reorganisation alone, hours stay the same, so the per-hour gain only appears if staff turn freed time into *more output*.\n\n  That depends on there being work to absorb it. With backlog-type casework there probably is. The two control offices fit this: hours were unchanged, so their 4.1% must have come from more output.\n- **As a very rough sense-check, not evidence:** treated offices cut about 3.5 hours of meetings and gained about 9%. The control offices cut about 2.1 hours and gained 4.1%. That is roughly proportional. With n = 2, though, this is a hint at most.\n- **Reorganisation alone could not capture the fatigue share (18%).** The unexplained third could go either way.\n\n## Suggested next steps\n\n1. **Ask the Varden team (source 5 authors)** for:\n   - the exact definition of system-log hours;\n   - how the baseline meeting data were obtained;\n   - office-level data for the two control offices;\n   - the 24-month estimate excluding those offices;\n   - output per case-hour, if they can compute it.\n2. **Search for any trial or pilot of meeting reduction alone**, including management and organisational-behaviour literature outside the working-time field. Our search was confined to reduced-hours studies.\n3. **Sketch what a decisive test would look like for the council.** For example: three arms (hours cut, reorganisation only, control), randomised by team, with record-based output, logged hours, meeting time tracked from baseline, cost per case, backlog and deadline compliance, and at least 12–18 months of follow-up. Even if the council doesn't run it, setting this out clarifies what the current evidence can't tell us.\n4. **Write a two-page note** covering what's known, what isn't, and what the council could reasonably assume in the meantime.\n\n## Practicalities\n\n- Files: [location]\n- Deadline / who's expecting what: [details]\n- People who know the background: [names]\n- I'm back on [date]. [Reachable / not reachable] in the meantime.\n\nThe evidence on this is thin enough that a fresh look may well see it differently from me. If you think I've framed it wrongly, go with your own reading and note why.\n\nThanks, and good luck.\n[Name]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1302,
+  "cache_read_input_tokens": 82467,
+  "output_tokens": 3350,
+  "output_tokens_details": {
+   "thinking_tokens": 1120
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1302,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3350,
+    "cache_read_input_tokens": 82467,
+    "cache_creation_input_tokens": 1302,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1302
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09392540000000005,
+ "started": "2026-11-15T07:23:21.226089+00:00",
+ "wall_s": 38.97,
+ "task_index": 4
+}
