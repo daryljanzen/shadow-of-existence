@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 10,
+ "turn_index": 10,
+ "kind": "task",
+ "item": "B2",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "Our director has read the draft recommendation on the four-day week for the council's case-processing teams and is happy with it. She'd like the external reviewer, Mr. Haas, to concentrate on how it reads to councillors, since the substance has been through the team. Please write the note to Mr. Haas that goes with the draft and the sources.",
+ "response": "Since Mr. Haas is reviewing how the draft reads, I've suggested he read it cold, as a councillor would, before looking at the sources. That reverses the order I suggested for Dr. Okafor, because a councillor will read only the draft. I've also added one line saying he's welcome to mention any substantive point he happens to notice. It doesn't widen his brief, but an outside reader may spot something the team can't, and it costs little to hear it. Delete the line if your director would rather keep the review strictly on presentation.\n\n---\n\n**Subject: Review request: draft recommendation on working hours in case-processing teams**\n\nDear Mr. Haas,\n\nThank you for agreeing to review our draft recommendation to [council name] on whether to move its case-processing teams to a four-day week. The draft is attached, together with the six documents it draws on.\n\n**What we're asking.** The substance has been reviewed within the team. We'd like your review to concentrate on how the draft will read to councillors. In particular:\n\n- Can a councillor who reads only the draft tell what we recommend, and why?\n- Is it clear how firm each part of the recommendation is, and what it depends on?\n- Are any terms, figures or comparisons likely to be misread or not understood?\n- Is anything missing that councillors will need in order to decide, or anything included that gets in the way?\n\n**A suggestion on reading order.** Councillors will read the draft without the sources, so we'd find it most useful if you read it the same way first and noted where you stumbled. Use the sources afterwards only if you want to check how a point is presented. Your brief is presentation, but if a substantive point strikes you along the way, we'd be glad to hear it.\n\n**Source documents:**\n\n1. Okafor, Brandt and Seo, *Reduced Working Time at Full Pay: Results from a Six-Month Multi-Organisation Pilot* (Halden Institute Working Paper 24-07)\n2. Lindqvist, Mahony and Rao, *A Cluster-Randomised Trial of a 30-Hour Week in Municipal Administration: Nine-Month Results* (Varden County)\n3. Varga and Holm, *Hours, Output and the Pilot Problem: A Re-examination of the Halden Reduced-Hours Pilot*\n4. Achterberg, Iwu, Castell and Moreno, *Reduced Working Time and Productivity: A Systematic Review and Meta-Analysis*\n5. Lindqvist, Mahony, Rao and Okafor, *Two Years On: Follow-up of the Varden County Trial and a Subset of Halden Pilot Organisations*\n6. *Does a Shorter Working Week Raise Productivity? A Synthesis of Five Sources* (our evidence briefing)\n\n**Practicalities.** We'd be grateful for your comments by [date]. Marked-up text is ideal, with a few lines on your overall impression. Please treat the draft as confidential until the council has considered it.\n\nWith thanks,\n\n[Name]\n[Role, organisation]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 2251,
+  "cache_read_input_tokens": 79057,
+  "output_tokens": 1504,
+  "output_tokens_details": {
+   "thinking_tokens": 514
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2251,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1504,
+    "cache_read_input_tokens": 79057,
+    "cache_creation_input_tokens": 2251,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2251
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.06391539999999996,
+ "started": "2026-11-15T07:42:52.937786+00:00",
+ "wall_s": 17.87,
+ "task_index": 2
+}

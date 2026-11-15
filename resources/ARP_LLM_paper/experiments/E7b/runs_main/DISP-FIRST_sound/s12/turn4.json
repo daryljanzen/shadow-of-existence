@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 12,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nWhile I'm on leave you're taking over one open question. Below is where it stands, what I think the evidence shows and how firmly, and some leads. All six source documents are in [location]. Wherever this note and a source disagree, go with the source. Please check every number here against the source before you rely on it.\n\n## The question\n\nThe four-day-week trials show a gain in output per hour. Two questions follow, and they need separate answers:\n\n1. **Could reorganising work, mainly cutting recurring meetings, deliver much of that gain without reducing hours?**\n2. **Does the hours cut cause the reorganisation?** It may be what makes managers cancel meetings, and what keeps them cancelled. If so, reorganisation alone might work in principle but rarely happen in practice.\n\nThis matters for the council because a gain achieved at full hours raises output per worker. With the hours cut, the per-hour gain mostly just offsets the hours lost.\n\n## What the evidence shows, and how firmly\n\n**Established**\n- In the strongest evidence, the per-hour gain in case-processing work is roughly 8–10%. This is the Varden trial: randomised, with record-based output. See sources 2 and 5.\n- No study has had an arm that reorganised work without cutting hours. Nothing tests question 1 directly. See sources 4 and 5.\n\n**Supported but not settled**\n- At 24 months, Varden's registered mediation analysis attributes 47% of the per-hour gain to fewer meetings (CI 28–66%), 18% to reduced fatigue, and leaves 35% unexplained (source 5, Table 2).\n- Weaknesses I found in it:\n  - only 7 treated offices;\n  - meeting time was not randomised, so the meetings–output link could run in either direction;\n  - I'm not sure what \"log-in time\" on the case system measures. If it excludes meeting time, the mechanism differs from the one originally proposed.\n\n**Leads only**\n- **The control-office meeting audit (source 5, section 3).** In month 15, two control offices cut meetings without changing hours, from 7.1 to 5.0 hours a week. Their output per hour rose 4.1% against their own previous six months.\n  - This is uncontrolled and covers only two offices.\n  - It is the only direct evidence on question 1.\n  - Rough arithmetic: 47% of 8.5% is about 4 points, similar to the audit result. The two figures are measured differently, so treat this as suggestive at most.\n- **Evidence that the hours cut drives reorganisation (question 2).**\n  - In Halden, managers called the reduced schedule \"a forcing device\" for changes they'd wanted for years, and 47 of 58 mentioned meetings (source 1).\n  - Varden's managers said the reduced schedule prompted them to cancel meetings that had persisted by habit (source 2).\n  - All of this is interview evidence.\n\n**Not assessable from what we have**\n- The meta-analysis found only three studies that measured meeting time at all (source 4, Mechanisms).\n\n## One thing that cuts across the decay question\n\nThe audit offices were part of Varden's control group. If cutting meetings raised their productivity, the gap between treated and control offices would narrow after month 15. That could make the gain appear to decline between nine and 24 months even if treated offices hadn't changed. The audit is therefore relevant both to your question and to whether the gain fades over time.\n\n## Leads I'd follow\n\n1. **Ask the Varden Evaluation Unit (A. Lindqvist) for office-level control data.** This would allow comparing the two audit offices with the other five control offices over the same months, which is a better comparison than their own past. It would also show whether the control-group meeting average reconciles. As I read the published figures, the other five control offices' meeting time must have risen by about half an hour a week.\n2. **Ask the same team what the log-in measure includes**, in particular whether meetings are excluded.\n3. **Look outside the four-day-week literature** for studies of meeting-reduction interventions at unchanged hours. I haven't searched for these, so I don't know what exists or how good it is.\n4. **If the council wants this answered properly, sketch a design**: a trial with a third arm that cuts meetings at full hours. Any design should also measure whether meeting cuts persist without the pressure an hours cut creates, since that is question 2.\n\n## Related work in progress\n\n- Priya in finance is doing a cold read on a neighbouring question: how much of the gain fewer meetings explain. She has the five primary sources and deliberately not our synthesis briefing. Please don't share our views with her until she has sent hers. Her answer will be useful to you, especially if she reads the mediation evidence differently from me.\n- The draft recommendation, now with external review, treats your question as open. If you find enough to change that, tell [director/name] directly. Don't wait for me.\n\n## Working arrangements\n\nThis is your question now. If the evidence points somewhere, make the call, write down your reasoning, and share it. You don't need my sign-off. If you think I've framed something wrong, including the split into two questions, go with your own reading.\n\nI'm away from [date] to [date]. In an emergency you can reach me at [contact]; otherwise [name] can help.\n\nThanks, and good luck.\n[Name]\n\n---\n\n**How this note differs from the one to Priya.** Unlike her message, this note includes our view and my doubts. Tom is continuing the work rather than giving an independent read, so he needs the context to avoid repeating work. To limit anchoring, the note marks how firm each claim is, tells him to check every claim against the sources, and invites him to disagree with the framing.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1341,
+  "cache_read_input_tokens": 86983,
+  "output_tokens": 3199,
+  "output_tokens_details": {
+   "thinking_tokens": 1332
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1341,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3199,
+    "cache_read_input_tokens": 86983,
+    "cache_creation_input_tokens": 1341,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1341
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09212059999999989,
+ "started": "2026-11-15T07:53:46.747330+00:00",
+ "wall_s": 37.4,
+ "task_index": 4
+}
