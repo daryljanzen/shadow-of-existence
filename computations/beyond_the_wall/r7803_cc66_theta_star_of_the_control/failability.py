@@ -76,11 +76,17 @@ def pinned():
 
 
 bad = []
-print('  CONTROL RUN (unmutated, from the temp path) --------------------------------------------')
+# The expected gate set is DERIVED from the receipt's own G(n, ...) calls, not hardcoded -- a count
+# written here goes stale the moment a gate is added, which is exactly what it did when gate 11
+# arrived and this probe reported a failability problem that was its own arithmetic.
+EXPECT = {int(m.group(1)) for m in re.finditer(r'^G\((\d+),', BASE, re.M)}
+assert EXPECT, 'no G(n, ...) gate calls found in the receipt'
+print(f'  CONTROL RUN (unmutated, from the temp path) -- expecting gates {sorted(EXPECT)} -------')
 red, green, rc, out, err = run(pinned())
 print(f'    gates green {sorted(green)}  red {sorted(red)}  rc {rc}')
-if red or rc != 0 or green != set(range(1, 11)):
-    bad.append(f'the unmutated receipt does not come back 10/10 green from a temp path (rc {rc}); '
+if red or rc != 0 or green != EXPECT:
+    bad.append(f'the unmutated receipt does not come back {len(EXPECT)}/{len(EXPECT)} green from a '
+               f'temp path (rc {rc}, green {sorted(green)}, red {sorted(red)}); '
                f'stderr tail: {err.strip()[-300:]}')
 
 for i, (name, old, new, want) in enumerate(PROBES, 1):
@@ -104,6 +110,6 @@ if bad:
     for b in bad:
         print(f'     - {b}')
     raise SystemExit(1)
-print(f'  ⇒ ✅ ** ALL {len(PROBES)} PROBES BITE AND THE UNMUTATED RECEIPT IS 10/10. **  Every gate '
-      f'named above fails')
+print(f'  ⇒ ✅ ** ALL {len(PROBES)} PROBES BITE AND THE UNMUTATED RECEIPT IS {len(EXPECT)}/'
+      f'{len(EXPECT)}. **  Every gate named above fails')
 print('    when the thing it asserts is made false, so none of them is decoration.')

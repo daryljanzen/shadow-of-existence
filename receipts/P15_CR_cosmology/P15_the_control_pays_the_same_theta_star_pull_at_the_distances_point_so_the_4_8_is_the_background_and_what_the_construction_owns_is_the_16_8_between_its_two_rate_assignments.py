@@ -148,15 +148,23 @@ _worst, _n = 0.0, 0
 for tag, p in (('dist', DIST), ('aor', AOR), ('leaf', LEAF)):
     for gname, Eg in ((_AR, E_stack), (_LF, E_leaf)):
         got = theta_at(*p, 3e7, Eg)
-        _worst = max(_worst, abs(got - BANK[_keys[tag]][gname]['theta_zstart']))
+        want = BANK[_keys[tag]][gname]['theta_zstart']
+        # RELATIVE, on r7803 (69)'s lesson from the neighbouring receipt: a stored value there moved
+        # past an absolute 1e-9 on the hosted runner and not here.  That one was the brentq ONSET
+        # (xtol=1e-3 on a value near 1.2e6), which no absolute bound could hold; this is pure
+        # trapezoid quadrature and the measured agreement below is EXACTLY zero -- but the claim
+        # being made is "70's bank reproduces", and a last-bit library difference is not a
+        # counterexample to it.  Relative 1e-9 is ~1e-11 absolute in theta, still a hundredfold
+        # tighter than the least significant digit any figure here is printed at.
+        _worst = max(_worst, abs(got - want) / max(1.0, abs(want)))
         _n += 1
 P_DIST_CR = pull(theta_at(*DIST, 3e7, E_leaf))
 P_DIST_STACK = pull(theta_at(*DIST, 3e7, E_stack))
 P_LEAF_CR = pull(theta_at(*LEAF, 3e7, E_leaf))
-G(2, _worst < 1e-12 and _n == 6 and abs(round(P_DIST_CR, 2) - 4.84) < 1e-9
+G(2, _worst < 1e-9 and _n == 6 and abs(round(P_DIST_CR, 2) - 4.84) < 1e-9
   and abs(round(P_LEAF_CR, 2) - 2.33) < 1e-9,
   f"70's banked theta_corpus.json reproduced from its own functions: {_n}/6 values, worst "
-  f"|delta theta| {_worst:.3g}; P15's two printed pulls come back as {P_DIST_CR:+.3f} -> "
+  f"RELATIVE |delta theta| {_worst:.3g}; P15's two printed pulls come back as {P_DIST_CR:+.3f} -> "
   f"{round(P_DIST_CR, 2):+.2f} and {P_LEAF_CR:+.3f} -> {round(P_LEAF_CR, 2):+.2f}")
 
 
