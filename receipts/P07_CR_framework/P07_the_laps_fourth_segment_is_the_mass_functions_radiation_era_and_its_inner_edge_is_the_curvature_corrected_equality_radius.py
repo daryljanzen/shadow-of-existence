@@ -205,9 +205,13 @@ check("Ⓐ⑥b  and that fitted coefficient IS the curvature share to twenty dig
 print(f"\n      the curvature term's share of the balance at s_0, s_0^3 / (2M alpha^2):")
 print(f"        share = {mp.nstr(share, 12)}        measured gap = {mp.nstr(gap, 12)}")
 share_pinned = float(share)
-check("Ⓐ④  that share is 6.169e-11, the figure the INDEX row prints, pinned in the units it prints "
-      "it in -- and the measured displacement is the same number",
-      abs(share_pinned - 6.169e-11) < 5e-15 and abs(float(gap) - 6.169e-11) < 5e-15)
+print(f"      in the MANTISSA the citing sentence prints: share x 1e11 = {share_pinned * 1e11:.6f}"
+      f"   against the printed 6.169")
+check("Ⓐ④  that share is 6.169e-11, the figure the INDEX row prints, pinned BOTH as the full value "
+      "and as the mantissa the sentence actually sets in type -- and the measured displacement is "
+      "the same number",
+      abs(share_pinned - 6.169e-11) < 5e-15 and abs(float(gap) - 6.169e-11) < 5e-15
+      and abs(share_pinned * 1e11 - 6.169) < 1e-3)
 
 print()
 Ks, Ms, als, eps, uu = sp.symbols('K TwoM alpha epsilon u', positive=True)
@@ -300,12 +304,14 @@ head("D -- AND IT IS NOT A THERMAL TRANSITION EITHER")
 T_K = T_CMB * (1 + z_eq)
 T_eV = T_K * K_B_EV
 print(f"      T = T_0 (1+z) = {T_CMB} x {1 + z_eq:.2f} = {T_K:.1f} K = {T_eV:.4f} eV")
-print(f"      kT / m_e c^2 = {T_eV / M_E_EV:.3e}")
+print(f"      kT / m_e c^2 = {T_eV / M_E_EV:.3e}, i.e. a mantissa of "
+      f"{T_eV / M_E_EV * 1e6:.4f} against the printed 1.55")
 check("Ⓓ⑪  the temperature at the edge is 0.7918 eV, a factor 1.55e-6 of the electron mass, both "
       "pinned in the units the citing sentence prints them in -- no species becomes relativistic "
       "there that was not relativistic before, so the thermal question and the crossover are two "
       "epochs and not one",
-      abs(T_eV - 0.7918) < 5e-4 and abs(T_eV / M_E_EV - 1.55e-6) < 5e-9)
+      abs(T_eV - 0.7918) < 5e-5 and abs(T_eV / M_E_EV - 1.55e-6) < 5e-9
+      and abs(T_eV / M_E_EV * 1e6 - 1.55) < 1e-3)
 
 # ======================================================== Ⓔ THE CORPUS'S OWN DENIAL, THREE STATES
 head("E -- THE TWO SENTENCES THAT DENY THE ONSET, EACH IN THREE STATES")
