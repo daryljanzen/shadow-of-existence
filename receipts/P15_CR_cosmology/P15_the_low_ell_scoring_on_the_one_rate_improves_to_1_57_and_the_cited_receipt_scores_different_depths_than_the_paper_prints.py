@@ -95,6 +95,8 @@ TEX = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
 LIK = os.path.join(ROOT, 'computations', 'perturbation_verify', 'verify_lowell_likelihood_v2.py')
 QUAD = os.path.join(HERE, 'P15_the_selective_quadrupole_suppression_is_the_skys_own_and_'
                           'lcdm_carries_it_at_the_same_size.py')
+GAP = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defects_were_'
+                         'cancelling.py')
 CHECKS = []
 
 
@@ -183,7 +185,14 @@ def triple(depths):
     return dict(tot=t, lo=lo, hi=hi, per=per)
 
 
-CTRL = [0.473, 0.410, 0.356, 0.676, 0.916, 0.984, 0.998]
+# ⛭ The control depths are READ from the instrument's OWN declaration rather than retyped here, so
+# pinning them below is an assertion about the instrument and not a copy of my own literal.
+_mdep = re.search(r'^depth = \{(.+)\}$', lik_src, re.M)
+if not _mdep:
+    sys.exit('FATAL: the likelihood instrument no longer declares its depths parseably.')
+_declared = {int(k): float(v) for k, v in
+             (pair.split(':') for pair in _mdep.group(1).split(','))}
+CTRL = [_declared[l] for l in ELLS]
 S_ctrl, S_aor, S_one = score(CTRL), score(A_L), score(A_1)
 L_ctrl, L_aor, L_one = triple(CTRL), triple(A_L), triple(A_1)
 _law_ok = all(
@@ -317,7 +326,14 @@ def share(d2, d3):
 Q_one = share(float(A_1[0]), float(A_1[1]))
 Q_aor = share(float(A_L[0]), float(A_L[1]))
 Q_2dec = share(0.48, 0.44)
-Q_adj = share(0.487, 0.435)
+# ⛭ And the adjudicated-background pair is READ from the receipt that adjudicated it, for the same
+# reason: the row's claim is about THAT set, so it must come from where that set is fixed.
+_mgap = re.search(r'for _l, _want in \(\(2, (0\.\d+)\), \(3, (0\.\d+)\)',
+                  open(GAP, encoding='utf-8').read())
+if not _mgap:
+    sys.exit('FATAL: the depth-gap receipt no longer declares the adjudicated background parseably.')
+ADJ2, ADJ3 = float(_mgap.group(1)), float(_mgap.group(2))
+Q_adj = share(ADJ2, ADJ3)
 print(f"\n      {'depths for the share':<44}{'p_CR':>8}{'per cent':>10}{'p_LCDM':>9}")
 for lab, g in (('ONE RATE (four-decimal)', Q_one), ('arm of record (four-decimal)', Q_aor),
                ("the paper's own two-decimal sentence 0.48/0.44", Q_2dec),
@@ -380,7 +396,7 @@ check("⛭⛭⛭ `r7799` ** ⑦ ORDER ③, THE (L) BASELINE FIRST: THE PAPER'S `
       "and `3.535` (`NS3_2400`), so 'once its late step count is converged' is doing real work in that "
       "sentence.  ⌗ The two maxima sit at DIFFERENT multipoles -- `ℓ = 4` against the transfer, "
       "`ℓ = 3` against the decoupled build*",
-      abs(FA_L[0] - 3.167) < 0.001 and abs(FD_L[0] - 1.809) < 0.001
+      abs(FA_L[0] - 3.167) < 0.001 and abs(FD_L[0] - 1.809) < 0.0005
       and FA_L[1] == 4 and FD_L[1] == 3
       and round(FA_L[0], 1) == 3.2 and round(FD_L[0], 1) == 1.8
       and abs(spread(A_L, F_L_def)[0] - 6.193) < 0.001
@@ -447,13 +463,16 @@ _pins = dict(
     q_one=abs(Q_one['p'] - 0.0531) < 0.00005, q_lcdm=abs(Q_one['plcdm'] - 0.0667) < 0.00005,
     q_2dec=abs(Q_2dec['p'] - 0.0564) < 0.00005, q_adj=abs(Q_adj['p'] - 0.0537) < 0.00005,
     q_aor=abs(Q_aor['p'] - 0.0555) < 0.00005,
-    f_tr=abs(FA_L[0] - 3.167) < 0.001, f_dec=abs(FD_L[0] - 1.809) < 0.001,
+    f_tr=abs(FA_L[0] - 3.167) < 0.001, f_dec=abs(FD_L[0] - 1.809) < 0.0005,
     f_unconv=abs(spread(A_L, F_L_def)[0] - 6.193) < 0.001,
     f_1800=abs(spread(A_L, F_L_18)[0] - 3.818) < 0.001,
     f_2400=abs(spread(A_L, FC['distances__armB_frozen__L__NS3_2400'])[0] - 3.535) < 0.001,
     c_add_tr=abs(CA_a[0] - 3.395) < 0.001, c_add_dec=abs(CD_a[0] - 1.767) < 0.001,
     c_mul_tr=abs(CA_m[0] - 3.351) < 0.001, c_mul_dec=abs(CD_m[0] - 1.740) < 0.001,
     cf_tr=abs(CF_a[0] - 6.372) < 0.001, cf_dec=abs(CF_d[0] - 3.443) < 0.001,
+    ctrl_d2=abs(CTRL[0] - 0.473) < 0.0005, ctrl_d3=abs(CTRL[1] - 0.410) < 0.0005,
+    ctrl_d4=abs(CTRL[2] - 0.356) < 0.0005, ctrl_d5=abs(CTRL[3] - 0.676) < 0.0005,
+    adj_d2=abs(ADJ2 - 0.487) < 0.0005, adj_d3=abs(ADJ3 - 0.435) < 0.0005,
     gap_add=abs(_add_gap - 0.000500) < 0.0000005, gap_mul=abs(_mul_gap - 0.000689) < 0.0000005,
 )
 check("⛭⛭ `r7799` ** ⑨ AND EVERY FIGURE THE `INDEX` ROW PUBLISHES IS PINNED HERE BY A COMPARISON -- ALL "
