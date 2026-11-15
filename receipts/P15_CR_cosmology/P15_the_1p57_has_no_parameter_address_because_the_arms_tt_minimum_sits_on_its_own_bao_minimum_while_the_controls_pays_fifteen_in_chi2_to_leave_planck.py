@@ -144,6 +144,7 @@ import importlib.util
 import io
 import json
 import os
+import subprocess
 import re
 import sys
 
@@ -280,6 +281,44 @@ check("⛭⛭ the captured parameters reproduce ALL THREE of each bank's stored 
           and abs(TTMIN[t]['RS'] / TTMIN[t]['rs_banked'] - 1.0) < 1e-7
           and abs(TTMIN[t]['LA'] / TTMIN[t]['lA_banked'] - 1.0) < 1e-7 for t in ('lcdm', 'cr')))
 
+def _tree_is_bL_plus_dneff(bL):
+    # r7803 (69): ported verbatim from the comb receipt (P15_the_fitted_comb_moves_...), which 70 updated at r7801+70.
+    """⛭ `r7801+70`: the working tree may be LATER than the LEAFGEOM=1 leg's blob by exactly two additions,
+    the `DNEFF` and `YHE` knobs (PO-24's N_eff and Y_He response banks): their assignments, their
+    `if ... is not None` blocks and their config keys.  Unset, none of it runs, so the instrument that produced the leg is still the one on
+    disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red."""
+    import ast as _ast
+    class _Strip(_ast.NodeTransformer):
+        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE'}
+        def visit_Assign(self, node):
+            t = node.targets[0]
+            if isinstance(t, _ast.Name) and t.id in self.NAMES:
+                return None
+            self.generic_visit(node)
+            return node
+        def visit_If(self, node):
+            s = _ast.dump(node.test)
+            if "id='DNEFF'" in s or "id='YHE'" in s:
+                return None
+            self.generic_visit(node)
+            return node
+        def visit_Dict(self, node):
+            self.generic_visit(node)
+            keep = [(k, v) for k, v in zip(node.keys, node.values)
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE'))]
+            node.keys = [k for k, _ in keep]
+            node.values = [v for _, v in keep]
+            return node
+    try:
+        old = subprocess.run(['git', 'cat-file', '-p', bL], cwd=ROOT, capture_output=True).stdout.decode()
+        new = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')).read()
+        if not old:
+            return False
+        return _ast.dump(_ast.parse(old)) == _ast.dump(_Strip().visit(_ast.parse(new)))
+    except (OSError, SyntaxError):
+        return False
+
+
 _BCFG = json.loads(str(np.atleast_1d(np.load(ARMNPZ, allow_pickle=True)['config'])[0]))
 _MODEL = ('ARM', 'LEAFSCALES', 'LEAFREC', 'LEAFGEOM', 'STACKPERT', 'VISLEAF', 'NODRIVE')
 _snap = TTMIN['cr']['snap']
@@ -302,7 +341,8 @@ check("⓿⓿ ** AND THE ARM OF RECORD'S IDENTITY RESTS ON THE INSTRUMENT'S OWN 
       (_LR0['DM'], _LR0['RS'], _LR0['LA'])
       == (TTMIN['cr']['DM'], TTMIN['cr']['RS'], TTMIN['cr']['LA'])
       and _moved == ['LEAFREC'] and len(_cagree) == 7
-      and _snap.get('instrument_blob') == _BCFG.get('instrument_blob')
+      and (_snap.get('instrument_blob') == _BCFG.get('instrument_blob')
+           or _tree_is_bL_plus_dneff(_BCFG.get('instrument_blob')))
       and 'config' not in _ctlfiles)
 
 
