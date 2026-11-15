@@ -54,8 +54,13 @@
         SURVIVES        : 101.8 per cent of the displacement
   [PASS] Ⓒ④  the three-parameter fit converges on every available window, inside the bank's own grid and not at its edge, so no number here is an extrapolation of a response that was never measured
 
-      the displacement's survival across the three windows: 100.3, 99.1, 101.8 per cent
-  [PASS] Ⓒ⑤  THE ORDER'S QUESTION: the displacement SURVIVES -- between 99 and 102 per cent of it on every window the response reaches, and 100.3 per cent on the published one.  Freeing the baryon density moves the fitted tilt by about a part in a hundred, not by a factor
+      the displacement's survival across the three windows: 100.267, 99.100, 101.787 per cent
+      ⌗ printed to THREE decimals because the INDEX row's figure is pinned against this value,
+        and the first form of that pin was computed from the five-decimal Delta n values this
+        receipt PRINTS rather than from the quantities themselves -- which put it 0.03 out and
+        failed its own arm.  ⇒ GUARD: a pin computed from a rounded intermediate is a pin on the
+        rounding.  Take it from the quantity.
+  [PASS] Ⓒ⑤  THE ORDER'S QUESTION: the displacement SURVIVES -- between 99 and 102 per cent of it on every window the response reaches, and 100.267 per cent on the published one.  Freeing the baryon density moves the fitted tilt by about a part in a hundred, not by a factor
       the absorbed share gains: +4.4, +0.1, +0.1 points   (from 69.6, 91.2, 95.9)
   [PASS] Ⓒ⑥  and the absorbed share barely moves -- at most 4.4 points, 69.6 to 74.0 on the published window and a tenth of a point on the other two -- so omega_b is not taking the signature either, by the share or by the displacement
 
@@ -80,6 +85,12 @@
       ⇒ each of the five would need the instrument run at five parameter values and summed over
         eleven mode slices, which is hours of compute in pieces on the seat that owns the
         instrument.  NAMED, NOT MEASURED, and routed rather than guessed.
+      ⌗ AND THE COUNT ABOVE IS SCOPE, NOT CLAIM.  The first form of this arm asserted len(NAMES) == 271,
+        an equality on a directory any other seat grows by banking a spectrum -- so it would have
+        turned red on 70's next bank and said nothing about this receipt's subject.  The exact-count
+        gate caught it and was right.  ⇒ GUARD: an equality on a population another seat owns is a
+        check on their activity, not on your claim; print it as the scope of the search and assert
+        only what is yours.
   [PASS] Ⓓ⑧  exactly ONE of the six inherited parameters has a banked response, and the absence of the other five is declared with the directory and the patterns it was searched by, in the sentence that states it -- which is the form this line's absence gate has had to require three times
 
 ====================================================================================================

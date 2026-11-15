@@ -254,11 +254,16 @@ check("Ⓒ④  the three-parameter fit converges on every available window, insi
 
 surv = [r['surv'] for r in ROWS]
 print(f"\n      the displacement's survival across the three windows: "
-      f"{', '.join(f'{s:.1f}' for s in surv)} per cent")
+      f"{', '.join('%.3f' % s for s in surv)} per cent")
+print("      ⌗ printed to THREE decimals because the INDEX row's figure is pinned against this "
+      "value,\n        and the first form of that pin was computed from the five-decimal Delta n "
+      "values this\n        receipt PRINTS rather than from the quantities themselves -- which put "
+      "it 0.03 out and\n        failed its own arm.  ⇒ GUARD: a pin computed from a rounded "
+      "intermediate is a pin on the\n        rounding.  Take it from the quantity.")
 check("Ⓒ⑤  THE ORDER'S QUESTION: the displacement SURVIVES -- between 99 and 102 per cent of it on "
-      "every window the response reaches, and 100.3 per cent on the published one.  Freeing the "
+      "every window the response reaches, and 100.267 per cent on the published one.  Freeing the "
       "baryon density moves the fitted tilt by about a part in a hundred, not by a factor",
-      all(99.0 <= s <= 102.0 for s in surv) and abs(surv[0] - 100.3) < 0.1)
+      all(99.0 <= s <= 102.0 for s in surv) and abs(surv[0] - 100.267) < 0.01)
 
 gain = [r['a3'] - r['a2'] for r in ROWS]
 print(f"      the absorbed share gains: {', '.join('%+.1f' % g for g in gain)} points"
@@ -306,11 +311,17 @@ print(f"      ⌗ searched the {len(NAMES)} entries of computations/beyond_the_w
 print("      ⇒ each of the five would need the instrument run at five parameter values and summed "
       "over\n        eleven mode slices, which is hours of compute in pieces on the seat that owns "
       "the\n        instrument.  NAMED, NOT MEASURED, and routed rather than guessed.")
+print("      ⌗ AND THE COUNT ABOVE IS SCOPE, NOT CLAIM.  The first form of this arm asserted "
+      "len(NAMES) == 271,\n        an equality on a directory any other seat grows by banking a "
+      "spectrum -- so it would have\n        turned red on 70's next bank and said nothing about "
+      "this receipt's subject.  The exact-count\n        gate caught it and was right.  ⇒ GUARD: an "
+      "equality on a population another seat owns is a\n        check on their activity, not on "
+      "your claim; print it as the scope of the search and assert\n        only what is yours.")
 check("Ⓓ⑧  exactly ONE of the six inherited parameters has a banked response, and the absence of "
       "the other five is declared with the directory and the patterns it was searched by, in the "
       "sentence that states it -- which is the form this line's absence gate has had to require "
       "three times",
-      len([k for k, v in found.items() if v]) == 1 and len(NAMES) == 271)
+      len([k for k, v in found.items() if v]) == 1 and len(found) == 6)
 
 # ===================================================== Ⓔ THE CLAUSE THIS RECEIPT REASONS FROM
 head("E -- THE REGISTER CLAUSE THIS RECEIPT REASONS FROM, IN THREE STATES")
