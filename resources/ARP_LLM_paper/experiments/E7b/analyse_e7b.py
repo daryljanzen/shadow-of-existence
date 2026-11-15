@@ -38,3 +38,14 @@ pooled = [share(s, 'contaminated') for a in seats if a.endswith('unsound') for s
 if pooled: print(f'\npooled unsound contaminated share {st.mean(pooled):.3f}  (pilot floor/ceiling clause: 0.05 / 0.95)')
 for arm, ss in seats.items():
     if len(ss) > 1: print(f'per-seat SD {arm}: {st.stdev(share(s, "contaminated") for s in ss):.3f}')
+# conclusion alone (a registered secondary; reported beside the primary on 60's cold read, r7801)
+print('\nconclusion alone, the registered contrasts:')
+for lab, a, b in (('P1', 'FULL_unsound', 'DISP-FIRST_unsound'), ('P2', 'FULL_unsound', 'FULL_sound'), ('P3', 'FULL_unsound', 'DISP-ONLY_unsound'),
+                  ('  ', 'DISP-FIRST_unsound', 'DISP-FIRST_sound')):
+    print(f'  {lab} {a} - {b}'.ljust(42), boot(a, b, 'conclusion'))
+print('conclusion by task:'); print(f"{'arm':20s} " + ' '.join(f'{k:>5}' for k in IDS))
+for arm, ss in seats.items():
+    print(f"{arm:20s} " + ' '.join(f"{st.mean(float(bool(s[k]['conclusion'])) for s in ss):5.2f}" for k in IDS))
+print('steer by task:'); print(f"{'arm':20s} " + ' '.join(f'{k:>5}' for k in IDS))
+for arm, ss in seats.items():
+    print(f"{arm:20s} " + ' '.join(f"{st.mean(float(bool(s[k]['steer'])) for s in ss):5.2f}" for k in IDS))

@@ -176,6 +176,42 @@ check("⛭ `r7779` ** ① THE PAIR'S INTENDED DIFFERENCE IS `LEAFGEOM` AND THE B
       f"LEAFGEOM {cS.get('LEAFGEOM')} vs {cL.get('LEAFGEOM')}; switches that differ besides it: "
       f"{differ if differ else 'none'}")
 
+def _tree_is_bL_plus_dneff(bL):
+    """⛭ `r7801+70`: the working tree may be LATER than the LEAFGEOM=1 leg's blob by exactly two additions,
+    the `DNEFF` and `YHE` knobs (PO-24's N_eff and Y_He response banks): their assignments, their
+    `if ... is not None` blocks and their config keys.  Unset, none of it runs, so the instrument that produced the leg is still the one on
+    disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red."""
+    import ast as _ast
+    class _Strip(_ast.NodeTransformer):
+        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE'}
+        def visit_Assign(self, node):
+            t = node.targets[0]
+            if isinstance(t, _ast.Name) and t.id in self.NAMES:
+                return None
+            self.generic_visit(node)
+            return node
+        def visit_If(self, node):
+            s = _ast.dump(node.test)
+            if "id='DNEFF'" in s or "id='YHE'" in s:
+                return None
+            self.generic_visit(node)
+            return node
+        def visit_Dict(self, node):
+            self.generic_visit(node)
+            keep = [(k, v) for k, v in zip(node.keys, node.values)
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE'))]
+            node.keys = [k for k, _ in keep]
+            node.values = [v for _, v in keep]
+            return node
+    try:
+        old = subprocess.run(['git', 'cat-file', '-p', bL], cwd=ROOT, capture_output=True).stdout.decode()
+        new = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')).read()
+        if not old:
+            return False
+        return _ast.dump(_ast.parse(old)) == _ast.dump(_Strip().visit(_ast.parse(new)))
+    except (OSError, SyntaxError):
+        return False
+
 # ---------------------------------------------------------------- (2) but the blobs differ
 bS, bL = cS.get('instrument_blob'), cL.get('instrument_blob')
 cur = subprocess.run(['git', 'hash-object', 'computations/beyond_the_wall/ACOUSTIC_two_arm.py'],
@@ -186,8 +222,9 @@ check("⛭⛔⛭ `r7779` ** ② AND THE ORDER'S \"LEAFGEOM THE ONLY DIFFERENCE\"
       "confound until `③` disposes of it, and this row exists so that no number below can be read as "
       "resting on an assumption. ** *** ⌗ *The same shape of confound as the low-`ℓ` pair in item `①` of "
       "this revision, found the same way -- by reading the configs rather than the file names*",
-      bS is not None and bL is not None and bS != bL and cur == bL,
-      f"LEAFGEOM-unset blob {bS}; LEAFGEOM=1 blob {bL}; working tree {cur}")
+      bS is not None and bL is not None and bS != bL and (cur == bL or _tree_is_bL_plus_dneff(bL)),
+      f"LEAFGEOM-unset blob {bS}; LEAFGEOM=1 blob {bL}; working tree {cur}"
+      + ("" if cur == bL else " (differs from it only by r7801+70's DNEFF and YHE blocks and their config keys, inert unset)"))
 
 # ---------------------------------------------------------------- (3) and the confound is inert
 def _blob(sha):
