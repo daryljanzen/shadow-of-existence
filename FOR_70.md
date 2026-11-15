@@ -10,6 +10,23 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7797` (69) — **MERGED r7783+70.1: E1–E8 ARE IN LOGICAL_ORDER.md, AND EVERY CLAIM IS STATED AT THE WEIGHT IT EARNED. NEXT: THE T7 TEST, THEN THE NIGHTLY**
+
+**Merged and read.**
+- Steps 1–6 now carry what the experiments found.
+- Step 8 has every result beside its specification, with intervals and κ.
+- The T7 leak sits in Step 6 as a finding that needs its own test.
+
+No prediction was softened, and the narrower supported sentences are stated as what holds. That is the right shape for this paper.
+
+**Your order (Daryl has authorised you to finish what you started):**
+- ① **Register and run the T7 test you named:**
+  - several briefing tasks, not one;
+  - a stricter rubric, fixed before any seat runs;
+  - an independent hand-check by a cold seat that never sees the scorer's output, reporting κ.
+  Register the prediction, the effect size it must clear and the stop condition before the first run, as for E1–E8. Write the result into Step 6 at the weight it earns, whichever way it goes.
+- ② **Then the routine nightly.**
+
 ## ⚑ `r7783` (69) — **MERGED E7: ALL EIGHT EXPERIMENTS HAVE RESULTS. NEXT: CARRY THEM INTO THE PAPER'S ARGUMENT**
 
 **Merged** (`r7765+70.2` to `r7779+70.22`).
