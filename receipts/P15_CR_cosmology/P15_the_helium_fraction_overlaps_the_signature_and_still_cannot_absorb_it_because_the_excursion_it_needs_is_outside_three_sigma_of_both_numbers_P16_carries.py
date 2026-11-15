@@ -376,19 +376,38 @@ check("Ⓘ⑨  ** ADDITION, the registered negative's own consequence, with its 
       and ROWS[0]['edge'] and abs(ROWS[0]['yh3'] - YS[-1]) < 1e-9)
 
 # ======================================================= THE CLAUSES REASONED FROM
-head("THE P15 SENTENCE THIS REVISION IS ENTITLED TO MOVE")
-S = ("Whether the helium fraction, the optical depth, the lensing amplitude or the matter density "
-     "does is not yet computed.")
+head("THE P15 CLAUSE THIS ARGUMENT REASONS FROM, ENUMERATED OVER THE STATES IT MAY BE IN")
+# r7806 (60): the first form of this arm asserted that P15 still contains the sentence
+#   "Whether the helium fraction, the optical depth, the lensing amplitude or the matter density
+#   does is not yet computed" -- WHICH IS THE SENTENCE THIS VERY REVISION REPLACES.  That is a gate
+#   on the status of a sentence a live row is asking to change, and it went red the moment the
+#   paper edit landed: I ran the receipt BEFORE making the edit the receipt reads.
+#   ⇒ GUARD: a receipt that reads the paper is re-run AFTER the paper edit, never only before.
+#   ⇒ GUARD: a defence against a paper state changing ENUMERATES the states it may produce, and a
+#     disjunction beats a pin.  So what is asserted here is the clause the argument actually
+#     reasons FROM -- that the candidates this revision does NOT test are named as open -- and it
+#     is asserted over BOTH states this revision's landing can leave P15 in.
 P15 = ' '.join(io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                        encoding='utf-8').read().split())
-print(f"      P15 currently says, in sec:coherence:\n        \"{S}\"")
-print("      ⇒ this revision computes the FIRST of the four, and the sentence it licenses is not")
-print("        the N_eff one: the helium fraction absorbs a real share and is refused on ROOM.")
-check("Ⓙ⑩  ** ADDITION: ** the sentence this revision is entitled to move is located in P15 before "
-      "it is moved, and it names the helium fraction FIRST of the four not-yet-computed candidates "
-      "-- so what this revision changes is a clause already written as open, and the three "
-      "remaining candidates stay named as open",
-      S in P15)
+BEFORE = ("Whether the helium fraction, the optical depth, the lensing amplitude or the matter "
+          "density does is not yet computed.")
+AFTER = ("Whether the optical depth, the lensing amplitude or the matter density absorbs it is "
+         "not yet computed.")
+STATE = 'BEFORE' if BEFORE in P15 else ('AFTER' if AFTER in P15 else 'NEITHER')
+UNTESTED = ('the optical depth', 'the lensing amplitude', 'the matter density')
+print(f"      P15 is in state: {STATE}")
+print(f"        BEFORE  (four candidates open, helium among them) : {BEFORE in P15}")
+print(f"        AFTER   (three open, helium resolved by this row)  : {AFTER in P15}")
+for u in UNTESTED:
+    print(f"        still named as untested: {u!r:28s} {u in P15}")
+check("\u24bf\u2469  ** ADDITION: ** the clause this argument reasons FROM is that the candidates this "
+      "revision does NOT test are still named as open, and it holds in BOTH states this revision's "
+      "landing can leave P15 in -- the four-candidate sentence it replaces and the three-candidate "
+      "sentence it writes -- so the arm does not gate on the status of the sentence the row is "
+      "asking to change, and exactly one of the two states obtains",
+      STATE in ('BEFORE', 'AFTER')
+      and (BEFORE in P15) != (AFTER in P15)
+      and all(u in P15 for u in UNTESTED))
 
 # ======================================================= THE COUNT
 head("THE ARMS, AND THE COUNT")

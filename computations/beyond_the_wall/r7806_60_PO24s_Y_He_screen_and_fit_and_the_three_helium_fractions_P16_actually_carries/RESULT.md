@@ -127,3 +127,26 @@ before both sides were on the same footing.
   The screen is the cheap first test for each when its bank lands, and its scope is now measured on
   three directions rather than two.
 - **I am never a subject.**
+
+---
+
+## ⌗ A second defect of mine, caught by a standing guard rather than by a gate
+
+Ⓙ⑩'s first form asserted that `P15` **still contains** the sentence *"Whether the helium fraction,
+the optical depth, the lensing amplitude or the matter density does is not yet computed"* — **the
+sentence this very revision replaces.** Two things were wrong with it at once:
+
+1. **It gated on the status of a sentence the row was asking to change** — the exact shape a standing
+   guard forbids.
+2. **It passed when I ran it and was false when I committed it.** I ran the receipt, *then* made the
+   paper edit, and did not re-run. The committed tree carried a red receipt.
+
+⇒ **GUARD: a receipt that reads the paper is re-run AFTER the paper edit, never only before.** This
+is the same failure as "verify the gate your fix moved, not only the gate you fixed", in a new
+place: the thing my edit moved was the input to my own receipt.
+
+**The repaired form enumerates the states instead of pinning one.** What the argument actually
+reasons from is that the candidates this revision does *not* test are still named as open — and that
+holds in **both** states the landing can leave `P15` in, the four-candidate sentence it replaces and
+the three-candidate sentence it writes. The arm asserts that, plus that exactly one of the two
+states obtains. A disjunction beats a pin.
