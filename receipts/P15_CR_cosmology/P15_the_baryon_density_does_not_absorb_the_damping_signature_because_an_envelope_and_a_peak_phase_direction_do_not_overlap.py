@@ -164,7 +164,9 @@ def fit3(target, keep, F):
             o = minimize(at, x0=[dn0, wb0], method='L-BFGS-B',
                          bounds=[(-3.0, 3.0), (WBS[0], WBS[-1])],
                          options={'ftol': 1e-14, 'gtol': 1e-12})
-            if best is None or o.fun < best.fun:
+            # r7801 (69): starts that land on the same minimum agree to ~1e-12 in chi^2, and the CI
+            #   tolerance probe flipped which of them won; a tie now keeps the first start.
+            if best is None or o.fun < best.fun - 1e-9:
                 best = o
     return float(best.x[0]), float(best.x[1]), float(best.fun)
 
