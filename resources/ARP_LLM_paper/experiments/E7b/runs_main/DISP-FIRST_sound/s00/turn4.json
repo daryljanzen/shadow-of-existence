@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 0,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's a draft handover note:\n\n---\n\n**Handover: Is the hours cut necessary for the per-hour gain?**\n\nTom,\n\nThis is the open question I'm handing over while I'm on leave, with where things stand. You have all six source documents. Numbers below are cited by source so you can check them. Please do check the ones that matter to a decision rather than relying on my summary.\n\n**Sources**\n1. Halden pilot\n2. Varden trial, 9 months\n3. Varga & Holm re-analysis of Halden\n4. Achterberg et al. meta-analysis\n5. Varden 24-month follow-up\n6. Our evidence briefing\n\n### The question\n\nReduced hours raise output per hour. Does that require cutting hours, or could reorganising work at unchanged hours, mainly cutting recurring meetings, deliver much of the same gain?\n\nThis matters for the council because the two policies cost very different amounts:\n- **Cutting hours** costs some output per worker. In case-processing, the 24-month estimate is −3.4% (CI −8.0 to +1.2) (Source 5).\n- **A meeting audit** costs almost nothing.\n\nIf reorganisation alone captures most of the gain, the policy question changes.\n\n### What's reasonably established\n\n- **The per-hour gain is real.** In discretionary work it is roughly 8–10%. The best estimate is Varden case-processing at 24 months: +8.5% (CI 3.4 to 13.8) using system-log hours (Source 5, Table 1).\n- **Treated offices cut meetings sharply.** Recurring meetings fell from 7.4 to 3.9 hours per week in treated offices, against 7.2 to 7.0 in control (Source 5, §3).\n- **A registered mediation test** attributes 47% (28–66%) of the per-hour gain to fewer meetings, 18% (2–34%) to lower fatigue, and leaves 35% unexplained (Source 5, Table 2). This is from one employer and 14 offices. It assumes no unmeasured confounding between mediators and outcome.\n\n### What bears directly on the question, which is very little\n\n- **The only reorganisation-without-hours-cut evidence is small.** Two Varden control offices ran their own meeting audit at month 15 without changing hours. Their meetings fell from 7.1 to 5.0 hours, and output per hour rose 4.1% against their own previous six months (Source 5, \"An unplanned observation\"). That is two self-selected offices, with no comparison group and a before-after design.\n- **No study had a reorganise-only arm.** Source 5 says explicitly that the trial cannot answer the question.\n- **The competing hypothesis is that the hours cut forces reorganisation.** Halden managers called the shorter schedule \"a forcing device\" for changes they'd wanted for years, and 47 of 58 mentioned cutting meetings (Source 1, \"What organisations changed\"). That is self-report from the pilot's sponsors, but it is the strongest statement of the competing hypothesis.\n- **The meta-analysis can't help.** Only three studies measured meetings, and none tested meetings as a mediator under a registered plan (Source 4, Mechanisms).\n\n### Unresolved issues\n\nThese are my views and haven't been put to the authors yet. Treat them as hypotheses to check, not findings.\n\n1. **What the system logs measure.** Source 5 describes log time as time \"working on cases.\"\n   - If that excludes meetings, the figures don't add up. A rough accounting from the meeting and timesheet figures suggests non-meeting time fell only about 5%. Output per non-meeting hour would then have risen only 1–2%, which would imply meetings account for most of the gain, well above 47%.\n   - If the logs include meeting time, part of the mediation result is mechanical: removing low-output hours from the denominator raises output per hour by definition.\n\n   Either way the answer matters to your question, and only the authors can settle it. My accounting uses the nine-month baseline of about 37.9 hours (Source 2) and assumes control hours stayed flat, so redo it yourself.\n2. **Contamination of the 24-month estimate.** The two control offices that cut meetings raised control-group output. That shrinks the treated-versus-control difference, so the apparent fall from 12.5% to 9.8% may partly be contamination rather than fading. One related figure doesn't reconcile: those two offices alone should pull the control meeting average down by about 0.6 hours, but the reported fall is 0.2.\n3. **Mediation precision.** There are only 14 independent offices. It isn't stated how clustering was handled, and the 28–66% interval looks narrow for that number.\n\n### A point of framing to settle early\n\n\"Deliver much of the gain\" needs a defined measure.\n- If an office cuts meetings and keeps its hours, the freed time goes into casework. The gain would mostly show up as *more output per worker*, not just more per hour.\n- If an office cuts hours, the gain shows up per hour, partly offset by lower output per worker.\n\nComparing the two on output per hour alone could mislead. Cost per case is probably the measure that matters to the council. Decide which measure you're answering on and say so.\n\n### In progress\n\n- **Priya (finance)** is doing a cold read on a related question: whether fewer meetings explain much of the per-hour gain. She has Sources 1–5 but not our briefing or any of the above, deliberately. Her reply is due [date]. Please don't share our views with her until she has sent hers. Then compare: wherever she independently reaches issue 1 or 2, that is useful confirmation.\n- **Queries to the Varden authors** on issues 1–3: [status / not yet sent].\n\n### Possible next steps\n\nThese are your call. You don't need to wait for me on any of them.\n\n- **Write to the Varden authors** asking for:\n  - the definition of the log measure\n  - a 24-month estimate excluding, or modelling, the two auditing control offices\n  - per-office data for those two offices, including their earlier trend\n- **Look beyond these six documents** for evidence on meeting-reduction interventions at unchanged hours. Nothing in our material covers this, so it's unexplored rather than absent.\n- **Scope a three-arm trial:** hours cut, meeting audit at unchanged hours, and control. The two control offices show an audit can be run in this setting. A power calculation is needed before anyone proposes it, since seven offices per arm may be too few.\n\nOur briefing (Source 6, §4) records this question as open, and the draft recommendation should say the same. If your work changes that, flag it to [name] so the recommendation can be updated.\n\nWhile I'm away, [name, contact] can help with access or context. Otherwise use your judgement, and keep a short note of what you decided and why, so it's easy to pick up when I'm back.\n\n[Name]\n\n---\n\nUnlike the notes to Mr. Haas and Priya, this one includes my working views and concerns. Tom is taking over the work, not reviewing it independently, so he needs to know where things stand. I've labelled those views as unverified so he treats them as leads to check rather than conclusions. Fill in the placeholders for dates, the status of the author queries, and contacts before you send it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1574,
+  "cache_read_input_tokens": 92150,
+  "output_tokens": 4079,
+  "output_tokens_details": {
+   "thinking_tokens": 1719
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1574,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 4079,
+    "cache_read_input_tokens": 92150,
+    "cache_creation_input_tokens": 1574,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1574
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.1126180000000001,
+ "started": "2026-11-15T06:51:55.244776+00:00",
+ "wall_s": 45.04,
+ "task_index": 4
+}

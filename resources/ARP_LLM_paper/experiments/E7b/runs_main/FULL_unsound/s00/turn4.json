@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 0,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nThis is yours while I'm away. Below is where things stand, what I'm fairly sure of, what I suspect but haven't checked, and where I'd go next. Treat my views as a starting point, not a conclusion. Check them against the sources and overturn them if the evidence says otherwise.\n\n## The question\n\nIn the four-day-week trials, output per hour actually worked rose. Is the cut in hours itself necessary for that gain? Or could reorganising work, mainly cutting recurring meetings, deliver much of it with hours unchanged?\n\n**Why it matters.** If reorganisation alone captures much of the gain, the council might get it without the downsides of a four-day week. In the Varden trial, those downsides were output per worker about 3% below control, about 3 hours a week of overtime, and almost certainly a higher cost per case, though no source reports cost.\n\n**Status: open.** No study had an arm that reorganised work without cutting hours, so nothing tests the question directly. Everything below is indirect.\n\n## The evidence, by source\n\n| Source | What it offers | Where |\n|---|---|---|\n| **Varden, 9 months** (source 2) | Treated case-processing offices had 3.8 h/week of recurring meetings vs 7.1 in controls at month 6. Correlation between meeting cuts and per-hour gains across the 7 treated offices: r = 0.71. Unregistered. | \"Exploratory: meetings\" |\n| **Varden, 24 months** (source 5) | Registered mediation analysis: meetings account for 47% (CI 28–66) of the per-hour gain, fatigue 18%, 35% unexplained. | \"Mediation\" |\n| **Varden, 24 months** (source 5) | **The closest thing to a reorganisation-only test.** At month 15, two *control* offices audited their meetings without cutting hours. Meetings fell from 7.1 to 5.0 h/week, and output per hour then rose 4.1% against their own previous six months. Two offices, no comparison group. | \"An unplanned observation\" |\n| **Halden** (source 1) | Managers called the reduced schedule \"a forcing device\" for changes they'd wanted for years. This is the main evidence for the other side: the hours cut may be what *makes* reorganisation happen. Anecdotal. | \"What organisations changed\" |\n| **Meta-analysis** (source 4) | Only 3 of 23 studies measured meeting time, and none tested it as a mediator. The wider literature has almost nothing on this. | \"Mechanisms\" |\n| **Varga & Holm** (source 3) | Dismisses the meetings idea as post hoc. Written before the registered test. | Section 7 |\n| **Synthesis briefing** (source 6) | States \"about half the gain comes from meetings\" as fact. Treat it as a secondary source that drops the caveats. It also has a known error comparing 12.5% (timesheets) with 8.5% (system logs). | §3.4, §4 |\n\n## My working view\n\nThe meetings explanation is plausible and has survived a registered test. But it is weaker than \"47%\" suggests, and the mediation result answers a different question from ours.\n\n**1. The mediation shows how the gain happened, not whether the hours cut was needed.** It says that within the treated offices, much of the gain ran through fewer meetings. That is compatible with both of the following:\n- reorganisation alone would deliver the same gain;\n- reorganisation only happens, or only lasts, when hours are cut.\n\nThe data can't separate these. Halden's \"forcing device\" quotes support the second, and the two control offices weakly support the first.\n\n**2. A back-of-envelope comparison worth checking.** 47% of the 8.5% log-hours gain is about 4 points. The two audit offices gained 4.1%, with a smaller meeting cut (2.1 h) than treated offices made (3.5 h). Taken at face value, reorganisation alone matched the meetings-attributable part of the gain. But it rests on two uncontrolled offices.\n\n**3. The per-worker point may matter most to the council.** If the audit offices really kept their hours unchanged, their 4.1% per-hour gain is also a 4.1% *per-worker* gain: more output from the same staff at the same cost. The four-day week, by contrast, left output per worker about 3% below control. So even if reorganisation alone delivers only half the per-hour gain, it could be better value. This depends on the audit offices' hours not having changed, which I haven't verified.\n\n## What I suspect but haven't checked\n\n- **What the system logs measure.** Source 5 says log-in time records time \"working on cases.\" If that excludes meetings, the figures don't reconcile. Baseline was about 37.9 hours with 7.4 in meetings; at 24 months about 33.4 with 3.9 in meetings. Time outside meetings therefore fell about 3%, yet log hours fell 11%. If logs *include* meeting time, then part of the 47% is arithmetic: removing zero-output hours from the denominator raises output per hour on its own. **This affects how to read the mediation result, so it's the first thing I'd resolve.**\n- **Control-group averages.** Control offices' average meeting time went from 7.2 to 7.0. If two of the seven fell by 2.1 hours each, the average should have dropped by about 0.6 unless others rose. Something may be off.\n- **Contamination.** The audits came after the nine-month report described meeting cuts, so the control offices were probably prompted by it. That also means part of the apparent fall in the treated-vs-control gain between 9 and 24 months may be controls improving, not treated offices fading.\n- **Precision.** The mediation intervals come from 7 treated offices and probably need a small-cluster correction, so they are likely too narrow. The registered test also reused the same offices that generated the hypothesis, so it isn't an independent replication.\n- **The 4.1%.** It is a before–after comparison in two offices, so seasonality and regression to the mean could explain some or all of it.\n\n## Suggested next steps\n\n1. **Write to the Varden team** (contact details in source 5). Ask for:\n   - the exact definition of log-in time;\n   - hours, output and meeting data for the two audit offices, monthly, with the audit date;\n   - separate treated and control trajectories;\n   - how the mediation CIs handle clustering.\n\n   A reply would settle most of the \"unchecked\" list.\n2. **Look outside these six documents** for studies of meeting reduction at unchanged hours, such as meeting audits or meeting-free days. I haven't searched, and I don't know of any good controlled ones, but that's a gap in my knowledge, not evidence they don't exist.\n3. **Think about the design that would answer the question.** The obvious one is a three-arm trial: reduced hours, meeting reform at full hours, and control. If the council considers a pilot, that is the version worth proposing. It would be a useful, concrete output of this work even if the evidence review stays inconclusive.\n\n## Practical\n\n- I'm away until [date]. [Name] knows the background if you're stuck.\n- Nothing on this has been sent outside the team. There's no deadline that I know of, but check with [director] whether the council recommendation is waiting on it.\n- Please keep a short running note of what you've checked and what you found, so whoever picks this up next starts where you finished.\n\nThanks, and good luck.\n\n[Name]\n\n---\n\n**Notes on choices I made**\n\n- **This note shares our views, unlike Priya's.** Her task was an independent cold read, so that message withheld our views. A handover is the opposite case: Tom needs to know where you got to. I've marked each claim by how confident you are, and invited him to overturn them.\n- **The back-of-envelope comparison and the per-worker point are mine.** They follow from the sources' figures but haven't appeared in any of the documents. They are marked as unverified. Cut them if you'd rather not pass on untested reasoning.\n- **Placeholders.** The return date, the fallback contact and the director's name need filling in.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1509,
+  "cache_read_input_tokens": 101712,
+  "output_tokens": 4533,
+  "output_tokens_details": {
+   "thinking_tokens": 1870
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1509,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 4533,
+    "cache_read_input_tokens": 101712,
+    "cache_creation_input_tokens": 1509,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1509
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.12309039999999993,
+ "started": "2026-11-15T06:53:22.446188+00:00",
+ "wall_s": 48.97,
+ "task_index": 4
+}

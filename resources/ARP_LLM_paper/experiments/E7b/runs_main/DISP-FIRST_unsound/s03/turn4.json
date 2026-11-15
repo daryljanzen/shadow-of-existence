@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_unsound",
+ "session": 3,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "**Subject: Handover: is the cut in hours necessary for the productivity gain?**\n\nHi Tom,\n\nWhile I'm on leave, this question is yours: **is the cut in hours itself necessary for the gain in output per hour, or could reorganising work, mainly cutting recurring meetings, deliver much of it without reducing hours?**\n\nBelow I've set out what the evidence shows, where it's weak, and my current view. Please treat my view as something to test, not inherit. If you read the sources and disagree, go with your reading and note why.\n\n## Where things stand\n\nThe question is **open**. No study in the six documents had a group that reorganised work without cutting hours, so nothing tests it directly. All the evidence bears on it indirectly.\n\nPlease work from the five primary studies rather than the evidence briefing. The briefing calls the meetings mechanism established, which is stronger than the evidence supports. It also compares 12.5% with 8.5% when those figures come from different hours measures.\n\n## The evidence, and the weak points in each\n\n**1. The 24-month follow-up, mediation analysis (\"Mediation\").** This is the strongest piece. It finds that 47% (28–66%) of the per-hour gain runs through fewer meetings, 18% through reduced fatigue, and 35% is unexplained. Its limits:\n- The analysis was registered at month 11, after the nine-month exploratory finding, and it uses the same seven treated offices that generated the hypothesis. It re-tests the idea on the same data source rather than replicating it.\n- Meeting time wasn't randomised. Offices that cut meetings may differ in other ways, such as better management. The authors acknowledge this.\n- The confidence interval rests on office-months, but there are only seven treated offices, so the interval may be too narrow. It's worth asking the authors how they computed it.\n- The nine-month report said meeting data were collected only at month six, yet the follow-up gives baseline figures. Find out where those came from.\n\n**2. The 24-month follow-up, \"An unplanned observation.\"** Two control offices cut meetings without cutting hours: from 7.1 to 5.0 hours a week. Their output per hour then rose 4.1% against their own previous six months. This is the only direct evidence on your question, but it is weak:\n- There are only two offices and no comparison group.\n- The offices chose to do this themselves, so they may differ from the rest.\n- Seasonal effects and a natural drift back toward average performance haven't been ruled out.\n\n**3. Nine-month Varden report (\"Exploratory: meetings\").** Across seven treated offices, larger meeting cuts went with larger gains (r = 0.71). This finding is where the hypothesis started. It was not registered in advance and covers month six only.\n\n**4. Halden pilot (\"What organisations changed\").** Managers mentioned meeting cuts in 47 of 58 interviews. Several described the shorter schedule as \"a forcing device\" for changes they had wanted to make for years. This bears on your question from the other direction: the hours cut may be what *causes* the reorganisation.\n\n**5. Re-analysis (§7).** It dismisses the meetings hypothesis as post hoc. It misstates the nine-month report somewhat: those authors never claimed a mechanism, and the data were collected before the results were known. Its warning about small exploratory correlations is still fair, though.\n\n**6. Meta-analysis (\"Mechanisms\").** Only three of the 23 studies measured meetings, and none tested them under a registered plan. The wider literature can't settle this.\n\n## Two things to check early\n\n- **What counts as hours in the per-hour measure.** Meetings appear on timesheets, but probably not in the case-system login time used as the 24-month denominator. This changes what \"meetings explain the gain\" means. With the timesheet measure, cutting meetings could raise output per hour partly through the arithmetic alone. With login time, the effect would have to come from better focus or less disruption. Check how each measure treats meeting time before you interpret the 47%.\n- **A loose consistency check.** 47% of the 8.5% gain is about 4.0% per hour. That is close to the 4.1% seen in the two control offices that audited their meetings. The match could be coincidence. If it holds up, it suggests the meetings share might be available without cutting hours, but not the rest of the gain.\n\n## My working view, to test rather than adopt\n\nReorganisation alone could plausibly deliver something like half the gain, but only if the cuts happen and stick without the pressure of shorter hours. The \"forcing device\" accounts suggest they might not. I'd put low confidence on both halves of that view.\n\n## Possible next steps\n\n- Ask the Varden authors for the two audit offices' data compared against the other control offices, whether those meeting cuts lasted, and the month-by-month trends in meeting time and output.\n- Ask whether the Halden organisations that went back to full hours kept their meeting cuts. If they kept the cuts and the gains, that would bear directly on the question.\n- Search for studies of meeting-reduction schemes without hours changes, such as meeting-free days and meeting audits. Hold them to the same standards: a comparison group, output from records, and hours actually worked.\n- If the council wants a firm answer, the right design is a three-arm trial: reduced hours, reorganisation without reduced hours, and a control group.\n\n[Contact name] can help while I'm away, and I'm back on [date]. Please keep a short log of what you check and find, so we can pick it up together when I'm back.\n\nThanks, and good luck,\n[Name]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1096,
+  "cache_read_input_tokens": 77207,
+  "output_tokens": 2860,
+  "output_tokens_details": {
+   "thinking_tokens": 1051
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1096,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2860,
+    "cache_read_input_tokens": 77207,
+    "cache_creation_input_tokens": 1096,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1096
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08142540000000009,
+ "started": "2026-11-15T07:01:10.867302+00:00",
+ "wall_s": 33.57,
+ "task_index": 4
+}

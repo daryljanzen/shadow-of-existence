@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-ONLY_unsound",
+ "session": 1,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "Here's a draft note. I don't have the draft or the source list in front of me, so the bracketed parts need filling in.\n\n---\n\n**Subject: Review request: four-day week recommendation for [Council name]**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [Council name] on whether to move its case-processing teams to a four-day week. Attached are the draft and the six source documents it draws on:\n\n1. [Title, author/body, date]\n2. [Title, author/body, date]\n3. [Title, author/body, date]\n4. [Title, author/body, date]\n5. [Title, author/body, date]\n6. [Title, author/body, date]\n\nWe'd value your independent judgement on whether the evidence supports the recommendation. In particular:\n\n- **Accuracy.** Do the figures and findings we cite match what the sources actually say?\n- **Scope.** Do our conclusions go further than the evidence allows? For example, do they generalise from particular sites, teams or time periods to the council's teams as a whole?\n- **Gaps.** Have we missed anything material, in these documents or elsewhere, that bears on the decision?\n- **The recommendation itself.** If you would reach a different conclusion, we want to know.\n\nPlease don't feel bound by our framing. If you'd find it useful to read some of the sources before the draft, that would suit us well. We have deliberately not told you where we think the weak points are, so that your reading isn't shaped by ours.\n\nWe'd be grateful for your comments by [date]. Comments in the document, a separate note, or a call are all fine, whichever is easiest for you. Questions at any point are welcome; [name] can be reached at [email/phone].\n\nWith thanks,\n[Name]\n[Role, organisation]\n\n---\n\nA few choices I made on purpose, which you can reverse:\n\n- **No summary of our conclusion or our view of the risks.** She has the draft for the conclusion. Pointing her at the risks *we* see would steer her away from the ones we don't, and that's most of the value of an outside reviewer.\n- **An explicit invitation to disagree with the recommendation**, not just to check details.\n- **A request to check our figures against the sources.** That's where summaries most often drift from the evidence.\n\nIf there are areas you genuinely need her to cover, such as legal or staffing implications, it's fine to add them as \"please also look at.\" Just avoid \"please focus on,\" which narrows her review. Send me the source titles and deadline and I'll finalise it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1624,
+  "cache_read_input_tokens": 3855,
+  "output_tokens": 1203,
+  "output_tokens_details": {
+   "thinking_tokens": 400
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1624,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1203,
+    "cache_read_input_tokens": 3855,
+    "cache_creation_input_tokens": 1624,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1624
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.037839,
+ "started": "2026-11-15T06:43:14.121882+00:00",
+ "wall_s": 18.4,
+ "task_index": 1
+}

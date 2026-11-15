@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 3,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Unlike the note to Priya, this one gives Tom our current reading. He is taking over the work rather than checking it, so he needs to know what's known. Each point is marked as established, suggestive or contested, and points to its source so he can verify rather than inherit.\n\n---\n\n**Subject:** Handover: is the hours cut necessary for the per-hour gain?\n\nHi Tom,\n\nWelcome to this one. Here's where things stand on the question I'm handing you, so you don't have to start from scratch. Please treat my reading as a starting point, not a conclusion. Check anything that matters against the source documents, and if you come to see it differently, go with the evidence.\n\n## The question\n\nIs reducing hours itself necessary for the gain in output per hour? Or could reorganising work without cutting hours, mainly by cutting recurring meetings, deliver much of it?\n\nIt's worth keeping two sub-questions apart:\n1. **Capacity.** Can reorganisation alone produce a comparable per-hour gain?\n2. **Persistence.** Even if it can, does it happen and last without the hours cut forcing it? Halden managers called the reduced schedule \"a forcing device\", and the Varden follow-up raises the same possibility.\n\n## What the evidence says\n\n**Meetings are associated with the gain. This is fairly well supported, but the size of the effect is contested.**\n- *Varden, nine months (exploratory section):* treated case-processing offices spent 3.8 hours a week in recurring meetings against 7.1 hours in control offices. Across the seven treated offices, larger meeting cuts went with larger per-hour gains (r = 0.71). This analysis was not registered, and the authors caveat it heavily.\n- *Varden, 24 months (mediation section):* a registered mediation test attributes 47% of the gain (95% CI 28 to 66%) to meetings and 18% to reduced fatigue, leaving 35% unexplained. Meeting time fell from 7.4 to 3.9 hours in treated offices, against 7.2 to 7.0 in controls.\n- *Halden, \"What organisations changed\":* 47 of 58 managers mentioned fewer or shorter meetings, but the pilot did not quantify each change's contribution.\n- *Varga & Holm (Section 7)* dismissed the meetings idea as post hoc. That critique predates the registered test.\n- *The meta-analysis (Mechanisms):* only three studies measured meeting time, and none tested it as a mediator.\n\n**Reasons for caution about the 47% figure:**\n- Mediation assumes no unmeasured confounding. For example, better-managed offices might both cut meetings and improve output for other reasons. The authors acknowledge this.\n- The same seven treated offices produced the hypothesis and then supplied the registered test. The registration still has value, but this is not independent replication.\n- The split between meetings and fatigue may depend on how the model orders them. Cutting meetings could itself reduce fatigue.\n- **An unresolved inconsistency.** The 24-month hours measure is \"active log-in time on the case-management system\", which presumably excludes meetings. If so, the reported 11% fall in logged hours doesn't fit with the drop in meeting time and the fall in timesheet hours. On my rough working, case time should have fallen only about 3%. Either log time includes more than case work, or something in the hours figures is off. This matters because the mediation outcome is output per log-measured hour. Please check my arithmetic before relying on it.\n\n**Direct evidence on reorganising without cutting hours is very thin.**\n- *Varden 24-month follow-up, \"An unplanned observation\":* in month 15, two control offices cut recurring meetings from 7.1 to 5.0 hours a week without changing hours. Their output per hour over the next six months was 4.1% above their own previous six months. That is two offices, self-selected, with no comparison group, and the authors say it \"suggests, without establishing\".\n- No study in the body had a reorganise-only arm. All six documents agree this is open.\n- **A knock-on effect.** If those two control offices improved, the control group's trend rose after month 15. That would narrow the treated–control gap. Part of the apparent decline in the per-hour gain, from 12.5% to 9.8% on timesheets, could therefore be contamination rather than fading. It also means the 24-month treatment effect may slightly understate what the hours cut did relative to a clean control.\n\n**A note on the evidence briefing.** If it's among your six documents, it's a useful map, but it states the meetings result more firmly than the sources do. It also pairs the 12.5% figure (timesheets) with 8.5% (system logs). The like-for-like comparison is 12.5% → 9.8%.\n\n## Suggested next steps\n\nTake or leave these:\n1. **Ask the Varden team** ([contact]) about:\n   - what exactly log time records, and baseline log hours;\n   - office-level data for the two control offices that audited meetings: trends before the audit, whether the gain persisted after six months, and whether the trial prompted the audit;\n   - the 24-month estimates with those offices excluded;\n   - how the mediation model was specified and ordered.\n2. **Search for evidence outside the four-day-week literature** on meeting-reduction interventions at unchanged hours, such as no-meeting days or meeting audits, where output was measured. That is the most direct evidence on capacity. I haven't done this search.\n3. **Judge what can be concluded without new data**, and what design would settle it. A three-arm trial (hours cut, reorganisation only, control) is the obvious candidate. If the council is considering a pilot, that may be worth recommending.\n\n## Practicalities\n\n- **Who to ask:** [names / contacts]\n- **Deadline / where this feeds in:** [date; e.g. section X of the council recommendation]\n- **My working notes:** [location]\n\nI'll be back on [date]. In the meantime, [name] can help with anything urgent.\n\nGood luck, and thanks for picking this up.\n\n[Your name]\n\n---\n\nFill in the bracketed parts. If you can confirm which document is the sixth, I'll adjust the note on the briefing.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 859,
+  "cache_read_input_tokens": 88845,
+  "output_tokens": 2768,
+  "output_tokens_details": {
+   "thinking_tokens": 756
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 859,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2768,
+    "cache_read_input_tokens": 88845,
+    "cache_creation_input_tokens": 859,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 859
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.080017,
+ "started": "2026-11-15T07:01:53.976589+00:00",
+ "wall_s": 29.77,
+ "task_index": 4
+}

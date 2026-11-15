@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_unsound",
+ "session": 0,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Unlike the cold read for Priya, a handover should pass on where our thinking stands, so Tom doesn't have to start from scratch. I've marked which parts are established and which are our provisional reading, and pointed him to the sources so he can check us rather than inherit our view.\n\n---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nWhile I'm on leave, you'll be taking over one open question:\n\n**Is the cut in hours itself necessary for the per-hour productivity gain, or could reorganising work without cutting hours (mainly cutting recurring meetings) deliver much of it?**\n\n**Why it matters.** It's the main thing the evidence leaves open, and it changes what the council should do. If reorganising alone captures most of the gain, the council could get much of the benefit without the extra cost per unit of output. In case-processing, output per worker ends up a few percent below control at full pay. If the hours cut is what makes the reorganisation happen and stick, the case for the four-day week itself is stronger.\n\n**The sources.** You have all six. For this question, the key ones are:\n\n- **Source 2** (Varden, 9 months): the \"Exploratory: meetings\" section\n- **Source 5** (24-month follow-up): §3, the \"Mediation\" and \"An unplanned observation\" sections. These matter most.\n- **Source 3** (Varga and Holm): §7\n- **Source 4** (meta-analysis): \"Mechanisms\"\n- **Source 1** (Halden): \"What organisations changed\". Managers describe the shorter week as \"a forcing device\" for changes they had wanted to make for years.\n\n**Where things stand.** This is my reading, so please check it against the sources.\n\n*Reasonably solid:*\n- Treated case-processing offices in Varden cut recurring meetings by about 3.3 hours a week more than control offices. That's a randomised comparison, so the reduced schedule does seem to cause the meeting cuts.\n\n*Suggestive, not established:*\n- **The 47% figure.** The registered mediation analysis attributes 47% of the per-hour gain to fewer meetings. However:\n  - It uses the same seven treated offices that generated the hypothesis.\n  - The effective sample is about 14 offices, so its intervals are probably too narrow.\n  - Mediation can't rule out confounding. For example, better managers might both cut meetings and raise output for other reasons.\n- **The two control offices.** Two control offices that cut meetings without cutting hours (source 5, \"An unplanned observation\") improved by about 4% per hour. That's the only direct evidence on reorganisation without an hours cut. It covers two offices, isn't controlled, and involved a smaller meeting cut than in treated offices.\n\n*Not tested anywhere:*\n- No study has a trial arm that reorganised work without cutting hours. The sources can't settle the question. At best they can narrow it.\n\n**Things I'd planned to look at:**\n\n1. **The log-hours measure in source 5.** Does \"active log-in time\" include meetings? If it doesn't, the mediation result means something different from what it appears to say. The paper doesn't say.\n2. **The two audit offices.** Could Varden provide office-level data? That would show how much of the drop from 9 to 24 months comes from improvement in those control offices rather than fading in treated offices. It would also give a slightly better look at the effect of reorganisation alone.\n3. **Evidence outside these sources.** Is there research on interventions that reduce meetings without changing hours? None of our sources covers this, and it may be the most direct evidence available.\n4. **What the council could actually test.** If the evidence doesn't settle it, a small comparison could: some teams reorganise only, some cut hours, and the rest act as controls.\n\n**Related work in progress:**\n\n- **Priya (finance)** is doing an independent cold read of the meetings question. We asked her not to look at our briefing first. Please let her finish her read before you discuss this with her. Her view will be a useful check on mine.\n- **Mr. Haas** is reviewing the draft recommendation for how it reads to councillors. Any decision on how to word the meetings evidence affects that draft.\n- **Our briefing (source 6).** It states the meetings share more firmly than the evidence supports. In §3 point 4 and the Bottom Line, \"about half\" is presented as established. If that hasn't been revised yet, please flag it.\n\n**Contacts:** [name, role] for the draft recommendation; [name] for access to Varden data; Priya for her cold read.\n\nIf you reach a different view from mine, go with the evidence and write down why. I'm back on [date].\n\nThanks,\n[Name]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 982,
+  "cache_read_input_tokens": 82468,
+  "output_tokens": 1995,
+  "output_tokens_details": {
+   "thinking_tokens": 470
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 982,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1995,
+    "cache_read_input_tokens": 82468,
+    "cache_creation_input_tokens": 982,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 982
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.06426559999999992,
+ "started": "2026-11-15T06:50:11.091273+00:00",
+ "wall_s": 23.74,
+ "task_index": 4
+}
