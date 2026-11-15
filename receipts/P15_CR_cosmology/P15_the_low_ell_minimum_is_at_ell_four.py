@@ -235,7 +235,8 @@ assert 'S TWO DEFECTS IN THE SECOND ARM' in _dsrc and 'THE LOW-MULTIPOLE DEPTH G
 assert 'The shape is cross-validated between the two; the depth is not' not in _TEXn
 assert 'The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the p' \
     in _TEXn
-assert 'the hierarchy agrees to $2.9$ per cent at every multipole' in _TEXn
+# r7801 (69): the paper's sector is on the one rate (cc66 r7797+cc66.2), where the agreement is 3.0.
+assert 'the hierarchy agrees to $3.0$ per cent at every multipole' in _TEXn
 assert ('Those figures are read through the exact transfer, and the photon hierarchy built for this '
         'programme') in _TEXn, 'the attribution this file routed is settled the receipts\' way'
 print("  ⇒ ** depth cross-validated to 3% (discharged, r6825+cc66.26); attribution settled: the "
@@ -283,12 +284,13 @@ assert abs(tot - 1.8) < 0.15
 #   landed row, and the third-form refusal survives the collapse**: the literal is asserted exactly, so
 #   a row in any OTHER form still stops this receipt rather than being reported on.
 # r7699 (69): the row in print is arm A under the arm of record's pairing (ell 6-8 0.909/0.983/0.999).
-_P8 = {**PAPER, 6: 0.909, 7: 0.983, 8: 0.999, 9: 1.0, 10: 1.0}
-assert '$0.485$, $0.441$, $0.354$, $0.657$, $0.909$, $0.983$ and $0.999$' in _TEXn
+# r7801 (69): the row in print is the one-rate row (cc66 r7797+cc66.2), ell 6-8 0.912/0.986/0.997.
+_P8 = {**PAPER, 6: 0.912, 7: 0.986, 8: 0.997, 9: 1.0, 10: 1.0}
+assert '$0.490$, $0.435$, $0.359$, $0.668$, $0.912$, $0.986$ and $0.997$' in _TEXn
 pa = {l: (2*l+1)*(obs[l]*(1.0/_P8[l] - 1.0) + math.log(_P8[l])) for l in range(2, 11)}
 tota = sum(pa.values())
 worsta = max(range(2, 11), key=lambda l: pa[l])
-print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.7, largest "
+print(f"  ** on the paper's adjudicated table: total {tota:+.2f} against the paper's +1.6, largest "
       f"penalty at ell={worsta} ({pa[worsta]:+.2f}), quadrupole {pa[2]:+.2f} **")
 assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
 # ⛭ the TOTAL's arm of that disjunction, collapsed with the row's -- they were TIED, so a paper
@@ -300,7 +302,7 @@ assert worsta == 4 and pa[4] > pa[3] > 0 > pa[2]
 #   on working at runtime while the gate that exists to count pins could no longer see it, which is
 #   worse than a red: the baseline entry would have been removed as describing nothing.*  ⇒ So the
 #   literal below is INLINE, as it was in both arms.
-assert abs(tota - 1.7) < 0.1 and '$\\Delta(-2\\ln L)=+1.7$ over $2\\le\\ell\\le10$' in _TEXn
+assert abs(tota - 1.6) < 0.1 and '$\\Delta(-2\\ln L)=+1.6$ over $2\\le\\ell\\le10$' in _TEXn
 
 print()
 print("=" * 78)
@@ -345,11 +347,11 @@ CHECKS = [
     ("the body states the minimum at ell=4",
      r'minimum falls at \$\\ell=4\$\}' + _R + r'---and the quadrupole and octopole'),
     ("the body carries the four-multipole profile",
-     r'\$\\approx0\.485\$, \$0\.441\$, \$0\.354\$ and \$0\.657\$'),   # r7699
+     r'\$\\approx0\.490\$, \$0\.435\$, \$0\.359\$ and \$0\.668\$'),   # r7801: the one-rate quartet
     ("the body states the two-code cross-validation, depth and shape",
      r'two independent Boltzmann treatments cross-validate the depth as well as the shape'),
     ("the abstract carries the minimum",
-     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.35\$ of the \$\\Lambda\$CDM expectation there'),
+     r'minimum falls at \$\\ell=4\$\}' + _R + r' \(\$0\.36\$ of the \$\\Lambda\$CDM expectation there'),
     ("the scope section carries the minimum",
      r'a dip whose minimum falls at \$\\ell=4\$' + _R + r'(?:,| ---| ---)? ?(?:not at the quadrupole|---and)'),
     ("the likelihood item names ell=4 as the largest penalty",
