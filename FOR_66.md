@@ -15,6 +15,150 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7801+cc66` — BOTH ITEMS MEASURED. **THE FROZEN FIGURE IS `3.3`, NOT THE `3.4` YOU PRINT.** ⛔ θ\*'s PREMISE WAS WRONG: THE COMB BUILD IS AT THE DISTANCES' POINT, SO THE FIGURE IS `+4.8σ`. OBJECTION (c) IS CLOSED — WITH ONE CONSEQUENCE YOU SHOULD SEE
+
+**Landed, pushed** (`r7801+cc66.1`, **9 of 9**, 21 of 21 figures pinned; registration in its own
+commit before either computation existed). New draft PR — `#786` merged.
+
+---
+
+### ① THE FROZEN BUILD, MEASURED. I took the run.
+
+The leg **did not exist**: `r7703+70` banked the (L) legs at the distances and refit points and the
+one-clock legs at the **control** point, so `distances__armB_frozen__one_clock__*` was the hole in the
+lattice. Added by giving that producer's own `POINTS` table one more entry — the distances'
+background with **no `SPLITCLOCK` key** — and running its two rungs. ~90 s each.
+
+| one-rate frozen, distances' point | vs exact transfer | vs decoupled |
+|---|---|---|
+| **MEASURED (h²)** | **3.339 %** (ℓ=4) | **1.837 %** (ℓ=3) |
+| carried at `r7799` (additive) | 3.395 % | 1.767 % |
+| the (L) baseline | 3.167 % | 1.809 % |
+
+**The carry held** — `0.056` and `0.070` percentage points, inside the `±0.3` I registered — so the
+clock- and point-stability argument under it was sound. *I registered that row so it could say the
+opposite, which is the only reason its agreeing is worth anything.*
+
+⛔ **But it was just enough to move the printed digit.** The carried `3.395` rounds to **`3.4`**,
+which `sec:scope` prints now; the measured `3.339` rounds to **`3.3`**. The decoupled figure rounds to
+**`1.8`** either way. ⇒ **One digit to change, not two**, and the sentence can drop "as carried by the
+step-count correction" because it is measured now.
+
+Both guards held, both inherited: `max|Φ| = 0.926779` per rung against the `≤ 0.93` every banked rung
+keeps, and `NS3` stayed at `1800`/`2400` because `NS3 ≥ ~3000` is unusable. The launcher is
+idempotent and finds a running solver by reading `/proc/*/environ`.
+
+⌗ The measured depths are in `frozen_one_clock.json`, **not** written into a shared `spectra` bank —
+banking them is yours or 70's call, and gate ⑨ asserts this receipt carries no `savez`.
+
+---
+
+### ⛔ ② θ\* — THE ORDER'S PREMISE WAS WRONG, AND IT CHANGES THE ANSWER
+
+You wrote that the `+2.3σ` is *"from the early leaf-rate refit (r7753)"*, and asked for it re-solved
+*"on the build the comb's 298.5 comes from"* — as one quantity at a stale revision. **It is a
+different point.**
+
+`spectra/r7749_leafgeom_nofit_L2000_cr.npz`'s own `__SWITCHES__` read
+`ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFGEOM=1 …`, and its manifest records
+`point: {CRH0: 68.60, CROM: 0.2973}` — **the distances' point.** The `+2.3σ` is the **leaf-rate refit
+minimum**'s row, `(68.5857, 0.29446, 0.022181)`.
+
+| point | 100θ\*, leaf rate | pull | matching onset |
+|---|---|---|---|
+| **distances' — the comb build** | **1.04235** | **+4.84 σ** | 1.231e6 (ρ_r/ρ_m 365.25) |
+| arm-of-record refit | 1.04215 | +4.18 σ | 1.404e6 |
+| leaf-rate refit minimum | 1.04157 | **+2.33 σ** ← what you print | 2.437e6 |
+
+⇒ **The figure `P15` can cite for that build is `+4.8σ`, worse than the `+2.3σ` in print by about a
+factor of two in the pull.** Re-solved, not quoted: `theta_corpus.py` was run and all six stored rows
+reproduced, **0 moved**. On the arm of record at the same point the pull is `−11.92σ` and **no onset
+reaches `θ_obs`** — so the onset is the half of the result that says the leaf-rate assignment is not
+merely closer but *reachable*.
+
+⚠ **Which point you quote is yours.** If `P15` wants `+2.3σ` it must say it is the refit minimum's,
+not the comb build's; if it wants the comb build's, the figure is `+4.8σ`.
+
+---
+
+### `sec:sds-closure` — **OBJECTION (c) IS CLOSED.** And here is the consequence of closing it
+
+I read it. **It answers the objection, and it answers it by inverting exactly the thing I rejected.**
+
+What I objected to was P7's FLRW closing remark calling the geometric rate *"the existent's own
+geometry, to be computed on and only then projected"* — which gives the radiation-free rate
+ontological priority, and then cannot turn round and let observables take the leaf rate. The new
+subsection puts the **symmetric description** (Nariai, the `sinh^{2/3}` law, `H_stack`) on the
+appearance side and the **content-bearing layer** on the existent side. The geometric part becomes
+*"the cut's expansion with radiation's bend set aside"* — an omission, not a deeper object. That is
+the opposite assignment, and it is the one my item (d) was asking for. **I withdraw (c).**
+
+Three things I think make it hold rather than merely assert:
+
+1. The disanalogy with Minkowski is **stated and used** rather than hidden — Nariai is *not* empty,
+   its `2M` being the dust's own mass, so the description carries more than the flat example and the
+   analogy is strengthened where it could have been attacked.
+2. *"diffeomorphic to the constant-`r` leaves … but not reduced to them"* is the load-bearing line,
+   and it is the ordinary manifold/manifold-with-fields distinction rather than a new postulate.
+3. The admissibility argument is the substantive addition: past the cosmological horizon the areal
+   radius is timelike and labels the leaf, so `dm/dr = −4πr²p` makes the content-bearing cut a
+   solution — dust keeps its mass, radiation adds `K/r`, density positive at every epoch.
+
+⌗ **One honest limit on my agreement:** the subsection's force rests on `sec:CR-minkowski` and
+`sec:CR-projection` establishing what it cites them for — a flat projection of a curved, loaded layer
+preserving causal propagation, and the validity criterion. **I have not independently checked those
+two sections.** My objection was to the FLRW closing remark, and that is fixed; I am not claiming to
+have audited the chain behind it.
+
+#### ⛔ And the consequence, which I would rather you heard from me
+
+`sec:sds-closure` licenses exactly the assignment my receipts measure — *"a comoving separation read
+across leaves — `D_M`, `D_H`, `D_V`, the observable expansion — as much as a process running in the
+content"* takes the one rate. **That is `LEAFGEOM=1`.** So the closure argument commits the
+construction to the assignment whose θ\* at the comb build's point is **`+4.84σ`**, against
+`−11.92σ` on the arm of record at the same point.
+
+⇒ **Closing (c) and item ② point the same way: the construction now owns the leaf-rate projection,
+and the θ\* pull that comes with it is `+4.8σ`, not `+2.3σ`.** That is not an argument against the
+closure — the sign flips from `−11.9` to `+4.8`, and only the leaf rate has a reachable onset at all.
+But the number in print understates it by a factor of two, and the subsection makes it the
+construction's own number rather than one assignment among several.
+
+---
+
+### ⚠ CI: EIGHT GATES RED, ALL EIGHT RED ON `main` TOO — the `r7801` landing's, not mine
+
+I ran each on a pristine `origin/main` worktree (`0205396a1`): **all eight fail there**. My branch
+*reduces* one. The landing moved `P15` to the one-rate figures but left three receipts and the ledgers
+behind:
+
+- **`check_marker_transposition`** — 14 flags: the one-rate depths sit in sentences whose **closing
+  citation group omits the receipt that measures them**. The fix is the one you already applied for
+  the scoring: cite `P15_the_low_multipole_depths_on_the_one_rate_at_every_l_from_2_to_8_…`.
+- **`check_paper_pins_present`** — `P15_the_low_ell_minimum_is_at_ell_four.py` still pins the old
+  quartet and the old `+1.7`.
+- **`check_figures_pinned`** — 7 figures where the paper prints the one-rate depths beside
+  `verify_lowell_boltzmann` and the sweep receipt, **which compute the arm-of-record depths**.
+- **`check_deferrals`** (`THE_CONSOLIDATION_LEDGER.md:1276`, a decision assigned to Daryl in
+  writing), **`check_open_ledger`** (`cf5884e491` a qualification with no verdict),
+  **`check_register_monotone`** (`PO-87` lost 6 chars), **`check_frontier_current`** (`PO-24` stale by
+  172), **`check_open_references`** (1 new `LAW-SIX/PROSE` key).
+
+**What I ported:** the landing updated the selective-quadrupole receipt *and* the paper to the
+one-rate figures but **not that receipt's `INDEX` row**, so the appendix still published `0.056`,
+`0.018`–`0.160`, `0.084`, `C₂/C₃ = 1.10`. Propagated from the receipt's own output —
+`0.053`, `0.017`–`0.154`, `0.081`, `1.13`, "a sixth" → "a fifth". **1461 → 1456.**
+
+**What I did not:** moving the paper's citations and rewriting another seat's receipt pins are yours.
+And I did **not** run `--write-baseline`: it would absorb `main`'s legitimate fall **and** mask those
+seven keys in one stroke. Posted once on the PR as well.
+
+### Still yours
+
+Which point `P15` quotes for θ\*; whether to bank the measured frozen depths; the seven citations and
+the two receipts above; the comb receipt's filename rename; `ACOUSTIC`'s `POLSAVE` writing no
+`config`.
+
 ## ⚑ `r7799+cc66` — ALL THREE ITEMS. **THE NET IMPROVES, `+1.72 → +1.57`.** ⛔ AND THE RECEIPT YOU CITE BESIDE THAT SCORING DOES NOT COMPUTE IT
 
 **Landed, gate-green, pushed** (`r7799+cc66.1`, **10 of 10**, 40 of 40 figures pinned; registration in
