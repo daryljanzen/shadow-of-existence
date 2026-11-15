@@ -100,6 +100,10 @@ GAP = os.path.join(HERE, 'P15_the_low_multipole_depth_gap_closes_and_two_defects
 CHECKS = []
 
 
+def ulf(d):
+    return '; '.join(f'{k} <- ' + ' or '.join(v) for k, v in d.items())
+
+
 def check(name, ok, witness=''):
     CHECKS.append((name, bool(ok)))
     print(f"    [{'PASS' if ok else 'FAIL'}] {name}")
@@ -323,6 +327,8 @@ def share(d2, d3):
                 mc_ok=mc and 'FAIL Monte Carlo' not in pr.stdout)
 
 
+_MEASURED = {'the one rate': None, 'the arm of record': None,
+             "the paper's own two-decimal sentence": None, 'the adjudicated background': None}
 Q_one = share(float(A_1[0]), float(A_1[1]))
 Q_aor = share(float(A_L[0]), float(A_L[1]))
 Q_2dec = share(0.48, 0.44)
@@ -334,6 +340,21 @@ if not _mgap:
     sys.exit('FATAL: the depth-gap receipt no longer declares the adjudicated background parseably.')
 ADJ2, ADJ3 = float(_mgap.group(1)), float(_mgap.group(2))
 Q_adj = share(ADJ2, ADJ3)
+# every share the paper prints, captured in either of the two forms it uses
+_printed_shares = ([(f'$p={x}$', float(x)) for x in re.findall(r'\$p=(0\.\d{2,3})\$', tex)]
+                   + [(f'${x}$ per cent', float(x) / 100.0)
+                      for x in re.findall(r'\$(\d\.\d)\$ per cent of this construction', tex)])
+# LambdaCDM's own share is printed beside the construction's and is DEPTH-INDEPENDENT, so it is a
+# candidate in its own right: every share the paper prints must be accounted for, and that one is
+# accounted for by the d2 = d3 = 1 case rather than by any depth set.
+_SETS = {'the one rate': Q_one, 'the arm of record': Q_aor,
+         "the paper's own two-decimal sentence": Q_2dec, 'the adjudicated background': Q_adj,
+         'LambdaCDM, depth-independent': {'p': Q_one['plcdm']}}
+_cands = {}
+for _lab, _v in _printed_shares:
+    _dp = len(_lab.split('.')[1].rstrip('$ percent').rstrip()) if '.' in _lab else 3
+    _cands[_lab] = sorted(k for k, g in _SETS.items() if abs(round(g['p'], 3) - _v) < 0.0005
+                          or abs(round(100 * g['p'], 1) / 100.0 - _v) < 0.00005)
 print(f"\n      {'depths for the share':<44}{'p_CR':>8}{'per cent':>10}{'p_LCDM':>9}")
 for lab, g in (('ONE RATE (four-decimal)', Q_one), ('arm of record (four-decimal)', Q_aor),
                ("the paper's own two-decimal sentence 0.48/0.44", Q_2dec),
@@ -356,24 +377,27 @@ check("⛭⛭⛭ `r7799` ** ⑤ ORDER ② -- ON THE ONE RATE THE SHARE OF THIS C
       f"{sorted({round(g['plcdm'], 4) for g in (Q_one, Q_aor, Q_2dec, Q_adj)})}; "
       f"Monte Carlo holds {Q_one['mc_ok']}")
 
-check("⛭⛭⛭⛔ `r7799` ** ⑥ AND `P15` PRINTS **TWO** VALUES FOR THAT ONE STATISTIC, ON TWO DIFFERENT "
-      "DEPTH INPUTS: `$p=0.056$` IN `sec:largescale` AND `$5.4$ PER CENT` IN `sec:scope` ** ⇒ *** "
+check("⛭⛭⛭⛔ `r7799` ** ⑥ AND EVERY SHARE `P15` PRINTS FOR THAT ONE STATISTIC IS READ OUT OF THE PAPER "
+      "HERE AND ACCOUNTED FOR BY SOMETHING MEASURED ABOVE -- AND TODAY TWO OF THEM ARE THE "
+      "CONSTRUCTION'S, ON TWO DIFFERENT DEPTH INPUTS: `$p=0.056$` IN `sec:largescale` AND `$5.4$ PER "
+      "CENT` IN `sec:scope`, WHILE ΛCDM's `$p=0.067$` IS DEPTH-INDEPENDENT ** ⇒ *** "
       "`0.0564` is what the receipt gets from the paper's own TWO-DECIMAL sentence `0.48 / 0.44`, and "
       "`0.0537` is the `0.487 / 0.435` adjudicated-background set -- while the arm-of-record "
       "four-decimal depths give `0.0555`, i.e. `5.6` per cent, ** which is NEITHER printed value **. "
       "*** *One statistic, printed twice, on two inputs: the same class as the comb and as `1.06` "
       "against `1.4967`*",
-      # ⛔ REPORTED, not asserted: once 69 reconciles the two sites this becomes False, and a row
-      # that asserted it would redden on that fix.  What IS asserted is the measurement that makes
-      # the defect possible -- the four depth sets give four DISTINCT shares at the printed
-      # precision, so which input is used changes the printed figure.
-      len({round(g['p'], 3) for g in (Q_one, Q_aor, Q_2dec, Q_adj)}) >= 3
+      # The row READS the paper rather than only naming it: every share the paper prints is
+      # captured and matched against the depth sets this receipt measures, so the label's
+      # attribution is backed by a parse.  ⛔ And it is a CAPTURE, so it survives 69 reconciling
+      # the two sites -- one printed value instead of two still has to be accounted for.
+      len(_printed_shares) >= 1 and all(_cands.values())
+      and len({round(g['p'], 3) for g in (Q_one, Q_aor, Q_2dec, Q_adj)}) >= 3
       and abs(Q_2dec['p'] - 0.0564) < 0.00005 and abs(Q_adj['p'] - 0.0537) < 0.00005
       and abs(Q_aor['p'] - 0.0555) < 0.00005
       and round(Q_2dec['p'], 3) == 0.056 and round(100 * Q_adj['p'], 1) == 5.4
       and round(100 * Q_aor['p'], 1) not in (5.4, 5.6001),
-      f"⌗ the paper carries both today: $p=0.056$ {'$p=0.056$' in tex}, 5.4 per cent "
-      f"{'$5.4$ per cent of this construction' in tex}; two-decimal {Q_2dec['p']:.4f}, "
+      f"the paper prints {len(_printed_shares)} share(s) for this statistic, each accounted for by a "
+      f"set measured here: {ulf({k: v for k, v in _cands.items()})}; two-decimal {Q_2dec['p']:.4f}, "
       f"adjudicated-background {Q_adj['p']:.4f}, arm of record {Q_aor['p']:.4f} "
       f"= {100 * Q_aor['p']:.2f} per cent")
 
