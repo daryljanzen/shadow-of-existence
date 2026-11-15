@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 8,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "# Handover: is the hours cut necessary for the per-hour gain?\n\nTom, this note hands over one open question while I'm on leave. It covers what's settled, what the evidence says on the question itself, where my own reading comes in, and what I'd do next. My judgments are labelled as such. Please check them against the sources, and disagree where you think I'm wrong.\n\n## The question\n\nWhen teams cut hours by a fifth at full pay, output per actual hour rises. Is the hours cut itself needed for that gain? Or could reorganising work without cutting hours, mainly by removing recurring meetings, deliver much of it?\n\nThere are two separate parts, and the evidence speaks to them differently:\n\n- **(a) Effect:** if meetings were cut without reducing hours, would output per hour rise by a similar amount?\n- **(b) Implementation:** without the pressure of an hours cut, would organisations actually make the cuts, and would the cuts last?\n\nIt matters for the council because if reorganisation alone captures much of the gain, it may be obtainable without the cost of an hours cut.\n\n## Background you can take as settled\n\nThese findings are well supported, and you don't need to re-examine them for this question:\n\n- **Discretionary work:** in work that can be queued, output per actual hour rises by roughly 8–10% and the gain lasts at least two years. The best estimate is source 5's randomised result: +8.5% on system logs (CI 3.4 to 13.8), and +9.8% on timesheets, down from +12.5% at nine months.\n- **Actual hours fall less than scheduled hours,** by 11–14% rather than 20%. Per-hour figures based on scheduled hours are inflated, so use actual-hours figures throughout.\n- **Coverage-bound work:** reduced hours cut output and service there, so it's outside this question.\n\n## What bears on the question\n\n**Source 5, registered mediation analysis** (section 3, \"Mediation\"). Within the treated case-processing offices:\n- Fewer recurring meetings account for 47% of the per-hour gain (CI 28 to 66%).\n- Lower fatigue accounts for 18% (2 to 34%).\n- 35% is unexplained.\n- Meeting time fell from 7.4 to 3.9 hours a week in treated offices, against 7.2 to 7.0 in control offices.\n\nThis is the strongest evidence available, but:\n- it comes from one employer with 7 v 7 offices;\n- it was tested in the same offices that first suggested the idea;\n- meeting cuts weren't randomised;\n- **it only shows meetings as a pathway *within* an hours cut.** It doesn't tell you what a meeting cut would do on its own, which is part (a).\n\n**Source 5, the unplanned observation** (section 3). Two *control* offices ran their own \"meeting audit\" at month 15 without changing hours. Their meeting time fell from 7.1 to 5.0 hours a week, and their output per hour was 4.1% higher than in their own previous six months. This is the only direct evidence on part (a). It covers two offices, has no comparison group, and is a before-and-after measure.\n\n*My rough calculation, which needs checking:* in treated offices, the meetings pathway is worth about 0.47 × 8.5% ≈ 4% for a 3.5-hour cut, or about 1.1% per hour of meetings removed. The audit offices got 4.1% from a 2.1-hour cut, about 2% per hour removed. This could easily be noise, regression to the mean, or a novelty effect. But it doesn't fit the idea that meeting cuts only work alongside an hours cut, so it's worth following up.\n\n**Source 1, manager interviews** (\"What organisations changed\"). 47 of 58 managers mentioned fewer and shorter meetings. Several called the hours cut \"a forcing device\" for changes they had wanted to make for years. This is the only evidence on part (b). It's anecdotal and comes from organisations that volunteered and stayed.\n\n**Source 2, nine-month exploratory result.** There was a correlation of r = 0.71 across seven offices between meeting time and per-hour gains. It wasn't registered, and meeting data were collected only in month six. It has been superseded by source 5's registered test, but it's where the idea started.\n\n**Source 3, section 7.** This dismisses the meetings hypothesis as post hoc. Source 5's registered test answers the dismissal. Source 3 was right to be wary of the unregistered result, though its account of how the result was obtained isn't accurate.\n\n**Source 4, \"Mechanisms.\"** Only 3 of 23 studies measured meeting time, and none tested it as a mediator. The review says it can't assess the mechanism, and that's the correct status.\n\n**Source 6, the synthesis briefing.** It says \"about half the per-hour gain … comes from removing recurring meetings.\" That figure comes from one trial. Don't carry it forward as a general finding. I've suggested qualifying it in the briefing.\n\n## Where it stands\n\n**Open on both parts.** No study had an arm that reorganised work without cutting hours. The evidence supports meetings as a substantial pathway within the one trial that tested it, and offers a small, weak hint on part (a) and anecdote on part (b).\n\n**What would settle it:** a three-arm trial comparing (1) an hours cut, (2) a structured meeting reduction with no hours cut, and (3) a control group. It would need to run long enough to see whether the cuts in arm 2 last.\n\n## Suggested next steps\n\nThese are suggestions. Use your judgment on what to do and in what order.\n\n1. **Ask the Varden team for data on the two audit offices:** monthly figures, the comparison against other control offices over the same months, and whether the meeting cuts held after month 21.\n2. **Ask the Varden team for the 12- and 18-month per-hour estimates,** and whether meeting time and per-hour gains moved together over time in treated offices.\n3. **Check which three studies in source 4's supplementary material measured meetings,** and whether any have data that could be re-analysed.\n4. **Search outside this body for meeting-reduction interventions with unchanged hours,** such as meeting-free days or meeting audits, with measured output. This set of six sources doesn't cover that literature, and it bears directly on part (a).\n5. **If you think the three-arm design is worth proposing to the council,** draft an outline. Changes to the draft recommendation itself should go to [name] first.\n\n## Practical points\n\n- Files: [location]\n- While I'm away, contact [name] for decisions on [scope].\n- I'm back on [date].\n\nMake calls as you see fit and write down your reasoning, so we can review it together when I'm back.\n\n---\n\nOne note on the approach: unlike the notes to Dr. Okafor and Priya, this one includes my assessments, because Tom is taking over the work rather than independently checking it. I've marked which parts are judgments, and the 1.1% against 2% calculation is my own, so he can test them against the sources rather than inherit them.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1414,
+  "cache_read_input_tokens": 81910,
+  "output_tokens": 3728,
+  "output_tokens_details": {
+   "thinking_tokens": 1436
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1414,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3728,
+    "cache_read_input_tokens": 81910,
+    "cache_creation_input_tokens": 1414,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1414
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10227000000000008,
+ "started": "2026-11-15T07:33:07.924673+00:00",
+ "wall_s": 41.14,
+ "task_index": 4
+}
