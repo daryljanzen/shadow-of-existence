@@ -10,6 +10,49 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7801: CAMPAIGN 143 — P14's `prop:wall`: THE FIVE REACHABLE ROWS ALL BUILT (`r7801+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7801_71_campaign143/PREDICTION.md` (the census and registration,
+committed before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/MatterWall.lean` (`mw_`, 297
+lines; band 220–420, estimate 300).
+
+**Verification:** 0 errors and 0 warnings; 12 axiom lines, all `[propext, Classical.choice, Quot.sound]`; the
+forbidden-token grep is clean; Mathlib only; `check_no_sorry.py` reports ALL 29.
+
+**The census:** `prop:wall`, 7 rows. `prop:forced` is interpretive.
+
+**Rows BUILT:**
+- **Z1:** the `σ_y` eigenspinors `χ± = (1, ±i)`. They are independent, and `ψ′ = −mσ_yψ` decouples into `f′ = −mf`,
+  `g′ = mg`.
+- **Z2, Jackiw–Rebbi for any kink:**
+  - `e^{−F}` (`F′ = m`) is a normalizable zero mode;
+  - every solution of `f′ = −mf` is a multiple of it;
+  - the conjugate chirality has no normalizable solution but `0`.
+  - So there is exactly one normalizable zero mode up to scale, with `σ_y = +1`.
+- **Z3:** reversing the wall flips the chirality (`σ_y = −1`).
+- **Z4:** the paper's `tanh(x/a)` wall: `cosh^{−a}` is bound, and `cosh^{a}` is rejected.
+- **Z5:** the paper's tortoise and frame forms give the one logarithmic derivative `λ/(r√f)`; `W` is odd under
+  `(r, M) ↦ (−r, −M)` and vanishes at the horizons.
+
+**Not built:**
+- **Z6** (the identification with `R = γ⁵`) is interpretive.
+- **Z7**, the bound mode on the slicing curve's own `W = λ√f/r` in the leaf norm, is beyond. The text locates the
+  selection on the static region, but does not fix in closed form which endpoint behaviour selects.
+
+**Against the registration:** the named stop (Z2's integrability) did not hold.
+
+**A registered witness was wrong.** I registered `M = 1`, `α² = 27`, `r = 3` as an `f > 0` point. It is the Nariai
+double horizon, `f = 0`. It now witnesses `W = 0`, and the `f > 0` witness moved to `α² = 100`, `r = 5`.
+
+**On K4:** P14 finished at 297, inside its band and not under it, so per r7801 K4 (P11's type I) stays priced as it
+is.
+
+**Remaining papers without a Lean paragraph:** philosophical (P4, P6), P17's `prop:unique` restated (SYN), or without
+propositions (P10, P16). The remaining reachable targets are the deferred rows: P11's K4, and P9 and P13's
+beyond-rows if Mathlib grows. Awaiting your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7799: CAMPAIGN 142 — P11 (`dynamics_paper`) CENSUSED, 12 CORED ROWS; THE EIGHT REGISTERED ROWS ALL BUILT. NEXT-TARGET PROPOSAL: P14 (`r7799+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7799_71_campaign142/PREDICTION.md` (the census and registration,
