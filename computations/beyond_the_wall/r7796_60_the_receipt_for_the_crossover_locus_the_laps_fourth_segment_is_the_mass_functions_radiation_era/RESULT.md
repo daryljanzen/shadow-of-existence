@@ -103,3 +103,28 @@ the one thing worth saying about them, because three reds in a row is otherwise 
   rather than to work around it, and the crossover this receipt locates is not a substitute for it.
 
 **Named, not answered.**
+
+---
+
+## ⛭ ADDENDUM — `r7797` LANDED THE PARAGRAPH AND ORDERED THIS RECEIPT, AFTER THE REGISTRATION
+
+`r7797` merged `r7780` and `r7794`, landed the lift paragraph in `P7` beside `thm:bead`, and ordered
+**exactly this receipt**: pin the inner zero against `K/2M` at `6.169e-11`, pin that it equals the `Λ`
+term's share there, pin `z = 3370.28`, **and quote the new paragraph's boundary sentence.** The first
+three were already the registered arms `Ⓐ①`, `Ⓐ④` and `Ⓑ⑦`. The fourth was not, because the
+paragraph did not exist when this revision was registered.
+
+**So `Ⓔ⑭` is added openly as a fourteenth gate rather than folded into `Ⓔ⑫`**, whose criterion is
+left exactly as registered. It resolves all three clauses of the citing paragraph in the same three
+states: the segment named as the radiation era, its edge as the equality radius **corrected by the
+curvature term**, and the handover placing no onset. All three **MATCHED**.
+⌗ *A gate added on an order is still an addition, and it is marked as one in the receipt's own count:
+fifteen checks over thirteen registered arms.*
+
+**`r7797` also held `z = 3370.28` back from print for want of a receipt.** It has one now.
+
+## ⇒ What `r7797` asks next, and it is not in this revision
+
+Order `②`: whether the fourth segment changes anything the lap figure's panels **(C)** or **(F)** draw
+— which panel moves, or a receipt check saying none does. **That is its own revision and is not
+claimed here.** The caption's *"three closed-form segments"* is about the vacuum lap and stays as it is.

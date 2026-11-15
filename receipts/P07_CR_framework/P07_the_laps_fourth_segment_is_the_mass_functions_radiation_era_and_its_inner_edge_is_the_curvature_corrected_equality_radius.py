@@ -356,11 +356,42 @@ check("Ⓔ⑬  the two sentences are in DIFFERENT papers, so the denial is not o
       "one place -- a rewrite of either paper alone leaves the other standing and this arm red",
       both_papers)
 
+# ============================== Ⓔ⑭ THE PARAGRAPH THIS RECEIPT IS CITED BY -- A DECLARED ADDITION
+head("E -- AND THE BOUNDARY SENTENCE THE PARAGRAPH ITSELF NOW CARRIES (a declared ADDITION)")
+print("      ⌗ NOT ONE OF THE THIRTEEN REGISTERED ARMS.  `r7797` merged `r7780` and `r7794`, landed "
+      "the lift\n        paragraph in P7 beside `thm:bead`, and ordered this receipt to quote the new "
+      "paragraph's\n        boundary sentence.  That order arrived AFTER this revision's registration "
+      "was pushed, so\n        the arm is added openly rather than folded into Ⓔ⑫, whose criterion is "
+      "left exactly as it\n        was registered.  A gate added on an order is still an addition.")
+CITING = {
+    "P7, the fourth segment IS the radiation era":
+        ('P7', 'fourth segment is the radiation era of the mass function'),
+    "P7, its edge is the CORRECTED equality radius":
+        ('P7', 'edge is the equality radius corrected by the curvature term'),
+    "P7, and the handover places no onset for it":
+        ('P7', 'the handover places no onset for it'),
+}
+cite_states = {}
+for label, (paper, key) in CITING.items():
+    cite_states[label] = resolve(paper, key)
+    hit = next((s for s in SENTS[paper] if key in s), '')
+    print(f"      {label:<46s} -> {cite_states[label]}")
+    if hit:
+        i = hit.find(key)
+        print('        "...' + hit[max(0, i - 80):i + 170] + '..."')
+check("Ⓔ⑭  all three clauses of the paragraph that CITES this receipt resolve MATCHED -- the segment "
+      "named as the radiation era, its edge as the equality radius CORRECTED by the curvature term, "
+      "and the handover placing no onset; so the sentence the paper prints and the quantity this "
+      "receipt derives are the same statement, and a reword of any clause turns this red",
+      all(v == 'MATCHED' for v in cite_states.values()))
+
 head("THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED")
 print("      REGISTERED ARMS: 13 -- Ⓐ①②③④⑤⑥ Ⓑ⑦⑧ Ⓒ⑨⑩ Ⓓ⑪ Ⓔ⑫⑬; this is ⑬.")
-print("      CHECKS RUN: 14.  Ⓐ⑥b is an ADDITION to the registered thirteen, not one of them:")
+print("      CHECKS RUN: 15.  TWO are ADDITIONS to the registered thirteen, not among them:")
 print("      the fitted first-order coefficient against the curvature share, which the "
-      "registration\n      did not ask for and which is the arm that measures the attribution rather than deriving it.")
+      "registration\n      did not ask for and which is the arm that measures the attribution rather than deriving it;"
+      "\n      and Ⓔ⑭, the three clauses of the paragraph that cites this receipt, added on r7797's"
+      "\n      order after this revision was already registered and pushed.")
 print("      the FOUR inputs are declared in the COMPUTES header and Ⓑ⑧ counts them out of this")
 print("      file's own source; nothing here is fitted and no free parameter is introduced.")
 print("      NOT CLAIMED: the onset the order asked for (there is none, and Ⓔ holds the corpus's")

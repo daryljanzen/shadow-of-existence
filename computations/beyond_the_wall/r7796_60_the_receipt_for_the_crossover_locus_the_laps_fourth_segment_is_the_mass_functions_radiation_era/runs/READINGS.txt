@@ -59,7 +59,8 @@
 
       the curvature term's share of the balance at s_0, s_0^3 / (2M alpha^2):
         share = 6.16864691622e-11        measured gap = 6.16864691775e-11
-  [PASS] Ⓐ④  that share is 6.169e-11, the figure the INDEX row prints, pinned in the units it prints it in -- and the measured displacement is the same number
+      in the MANTISSA the citing sentence prints: share x 1e11 = 6.168647   against the printed 6.169
+  [PASS] Ⓐ④  that share is 6.169e-11, the figure the INDEX row prints, pinned BOTH as the full value and as the mantissa the sentence actually sets in type -- and the measured displacement is the same number
 
       the balance expanded about s_0 = K/2M, to first order in epsilon:
         (K**3 + epsilon*(2*K**3 - TwoM**4*alpha**2))/(K*TwoM**2*alpha**2) = 0
@@ -119,7 +120,7 @@
   D -- AND IT IS NOT A THERMAL TRANSITION EITHER
 ====================================================================================================
       T = T_0 (1+z) = 2.7255 x 3371.28 = 9188.4 K = 0.7918 eV
-      kT / m_e c^2 = 1.550e-06
+      kT / m_e c^2 = 1.550e-06, i.e. a mantissa of 1.5495 against the printed 1.55
   [PASS] Ⓓ⑪  the temperature at the edge is 0.7918 eV, a factor 1.55e-6 of the electron mass, both pinned in the units the citing sentence prints them in -- no species becomes relativistic there that was not relativistic before, so the thermal question and the crossover are two epochs and not one
 
 ====================================================================================================
@@ -135,12 +136,30 @@
   [PASS] Ⓔ⑬  the two sentences are in DIFFERENT papers, so the denial is not one author's aside in one place -- a rewrite of either paper alone leaves the other standing and this arm red
 
 ====================================================================================================
+  E -- AND THE BOUNDARY SENTENCE THE PARAGRAPH ITSELF NOW CARRIES (a declared ADDITION)
+====================================================================================================
+      ⌗ NOT ONE OF THE THIRTEEN REGISTERED ARMS.  `r7797` merged `r7780` and `r7794`, landed the lift
+        paragraph in P7 beside `thm:bead`, and ordered this receipt to quote the new paragraph's
+        boundary sentence.  That order arrived AFTER this revision's registration was pushed, so
+        the arm is added openly rather than folded into Ⓔ⑫, whose criterion is left exactly as it
+        was registered.  A gate added on an order is still an addition.
+      P7, the fourth segment IS the radiation era    -> MATCHED
+        "...e_the_vacuum_bound_and_no_bead_condition_carries_the_radiation_coefficient} The fourth segment is the radiation era of the mass function, and its edge is the equality radius corrected by the curvature term; the handover places no onset for it, becaus..."
+      P7, its edge is the CORRECTED equality radius  -> MATCHED
+        "...fficient} The fourth segment is the radiation era of the mass function, and its edge is the equality radius corrected by the curvature term; the handover places no onset for it, because a radiation amplitude at a placed redshift is the start restated..."
+      P7, and the handover places no onset for it    -> MATCHED
+        "... function, and its edge is the equality radius corrected by the curvature term; the handover places no onset for it, because a radiation amplitude at a placed redshift is the start restated, and with the handover at the branch point there is no such ..."
+  [PASS] Ⓔ⑭  all three clauses of the paragraph that CITES this receipt resolve MATCHED -- the segment named as the radiation era, its edge as the equality radius CORRECTED by the curvature term, and the handover placing no onset; so the sentence the paper prints and the quantity this receipt derives are the same statement, and a reword of any clause turns this red
+
+====================================================================================================
   THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED
 ====================================================================================================
       REGISTERED ARMS: 13 -- Ⓐ①②③④⑤⑥ Ⓑ⑦⑧ Ⓒ⑨⑩ Ⓓ⑪ Ⓔ⑫⑬; this is ⑬.
-      CHECKS RUN: 14.  Ⓐ⑥b is an ADDITION to the registered thirteen, not one of them:
+      CHECKS RUN: 15.  TWO are ADDITIONS to the registered thirteen, not among them:
       the fitted first-order coefficient against the curvature share, which the registration
-      did not ask for and which is the arm that measures the attribution rather than deriving it.
+      did not ask for and which is the arm that measures the attribution rather than deriving it;
+      and Ⓔ⑭, the three clauses of the paragraph that cites this receipt, added on r7797's
+      order after this revision was already registered and pushed.
       the FOUR inputs are declared in the COMPUTES header and Ⓑ⑧ counts them out of this
       file's own source; nothing here is fitted and no free parameter is introduced.
       NOT CLAIMED: the onset the order asked for (there is none, and Ⓔ holds the corpus's

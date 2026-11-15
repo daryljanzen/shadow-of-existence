@@ -25708,3 +25708,51 @@ registered bound has to be checked against the grid it will be measured on — t
 The deposited plasma's equation of state at the branch point — the corpus sends the matter model to a
 companion paper this repository does not carry. And what the progenitor's branch carries, which
 `r7778` left a disjunction and this revision does not narrow.
+
+---
+
+### ✔ `r7797` (69) `①` — **ACKNOWLEDGED, AND ALREADY WORKED: `r7796` IS THAT RECEIPT. THE BOUNDARY SENTENCE IS NOW QUOTED IN IT, AND `z` HAS ITS RECEIPT**
+
+You merged `r7780` and `r7794`, landed the lift paragraph beside `thm:bead`, and ordered the
+equality-radius identity receipted — the inner zero against `K/2M` at `6.169e-11`, that figure shown to
+be the `Λ` term's share there, `z = 3370.28` pinned, and the new paragraph's boundary sentence quoted.
+
+**The first three were already the registered arms of `r7796`, which was registered and pushed before
+your order landed.** The fourth could not have been: the paragraph did not exist yet. **It is added
+now** — `Ⓔ⑭`, resolving all three clauses of the citing paragraph in the three states, all MATCHED:
+the segment as the radiation era, its edge as the equality radius **corrected by the curvature term**,
+and the handover placing no onset. **Fifteen checks over thirteen registered arms, and the two
+additions are marked as additions in the receipt's own count** rather than folded into a registered
+arm's criterion.
+
+⇒ **`z = 3370.28` has its receipt. Print it beside the edge whenever you like.**
+
+### ⌗ And one thing your paragraph states more weakly than it could
+
+The paragraph says the edge *"is the equality radius corrected by the curvature term"*. **That is now
+an identity rather than a correction of unstated size:** the relative displacement is
+`share/(1 − 2 × share)` in closed form with `share = s₀³/(2Mα²)`, so the leading term IS the share and
+the correction to the correction is exactly twice it. Measured independently of the algebra — fitting
+the two-term expansion on the two stiffest values of `α²` alone — the first-order coefficient comes
+back as `s₀³/(2Mα²)` **to twenty digits**.
+
+⇒ **If you want the stronger sentence, it is available:** *the edge's relative displacement from `K/2M`
+is the curvature term's share of the balance there, identically in `K`, `2M` and `α`.* Your wording is
+not wrong; it is just the weaker half of what the receipt now carries.
+
+### ⛔ And the registered arm that FAILED, since it bears on the sentence you print
+
+`Ⓐ⑤` predicted the expansion would return the displacement as **exactly** `s₀³/(2Mα²)`. It returns
+that divided by `(1 − 2 × share)`. **Reported FAILED, criterion not rewritten.**
+⇒ **GUARD: predicting that an expansion returns a BARE leading term predicts the absence of a
+correction — a stronger claim than the argument needs, and here a false one.**
+
+⌗ *Two further reds were mine and not the criteria's, both in the result with their guards: the
+first-order term of an expansion is its COEFFICIENT, never the series at one point; and a registered
+bound has to be checked against the grid it will be measured on.*
+
+### ⇒ `②` is next and is its own revision
+
+Whether the fourth segment moves anything the lap figure's **(C)** or **(F)** panels draw — which panel
+and what moves, or a receipt check saying none does. **Not claimed in `r7796`.** Registering first, as
+always.
