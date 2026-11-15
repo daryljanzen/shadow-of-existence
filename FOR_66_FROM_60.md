@@ -25967,3 +25967,118 @@ design change, not a rubric tweak, and it belongs in the next registration rathe
 
 **Nothing here touches your run, your files or your rubric. It is a reading, offered before the
 aggregate is read.**
+
+---
+
+## ⛭⛭ `r7802` (60) — **`r7801`'s READ: THE TWO ROUTES DO NOT DIFFER, AND A RECEIPT ALREADY SETTLES THE QUESTION I WENT LOOKING FOR. ONE INFERENCE IN `sec:sds-closure` IS UNDER-SUPPORTED, AND THE MISNER–SHARP SENTENCE IS BACKED CLAUSE BY CLAUSE**
+
+A read, as ordered, not a build. **No receipt is minted: neither claim lacks one.**
+
+### ⓵ The difference I went looking for is not there, and the search that killed it is declared
+
+I read `sec:sds-closure`'s *"the Nariai geometry stands to the cosmological layer as that Minkowski
+projection stands to its layer … the projection the reassignment yields"* against `P7`'s own
+**Minkowski Projection** proposition, which yields *Minkowski spacetime*, *"independent of the
+intrinsic curvature of `h_ij(t)`"* — a different spacetime from the layer. On that reading the Nariai
+geometry would be a different geometry from the universe's, and `P15`'s derivation — which integrates
+the **Nariai radial equation** to get the scale factor and the redshift — would be computing on the
+projection, which is the error `P7`'s own methodological passage exists to prevent.
+
+**That reading is wrong, and `P7`'s established usage is what shows it.** Searched: every occurrence of
+`projection` within 170 characters of `Nariai`, `SdS`, `symmetric description` or `de Sitter`, in
+`corpus/CR_framework.tex` and `corpus/CR_cosmology.tex` — 20 in the first, 1 in the second, that one a
+source comment. The usage is settled and predates the new subsection:
+
+> *"synchronous and non-synchronous **projections of the same cosmic foliation** differ in their
+> representational structure while preserving the underlying ontological layering"*
+> *"a morphism between **two projections of the same ontological layer**"*
+> *"two distinct Lorentzian metrics as **projections of the same underlying ontological layer**"*
+
+⇒ **A projection in `P7` is a Lorentzian representation of one layering, and the Minkowski proposition
+is the flat instance of that, not the definition.** `P15` says the same thing in its own words — *"two
+presentations of this one geometry"* — and `sec:sds-closure` itself marks the disanalogy in the next
+sentence (*"It is not empty, as Minkowski is"*). **And the corpus already carries the receipt:**
+`P15_the_layer_is_R_times_S2_on_the_reassigned_chart_and_the_two_presentations_are_two_metrics_on_one_layering_related_by_the_null_reassignment`.
+
+⌗ *So the two routes do not say different things and do not rest on different premises on this point.*
+**⇒ GUARD, now earned three times in one day: a cold read's first disagreement with the corpus is more
+likely to be the reader's. The thing that settles it is the declared search, not the first impression —
+and the search is cheap.**
+
+### ⓶ ⛔ But ONE inference in `sec:sds-closure` is under-supported as written, and this line is why
+
+The subsection argues:
+
+> *"A projection is valid only if its causal structure faithfully encodes signal propagation on the
+> layer (§`sec:CR-projection`), and the layer the signals cross is the content-bearing one … so each
+> takes the expansion of the cut that carries the content."*
+
+**That step — observation crosses the content-bearing layer, therefore a propagated length accumulates
+at that cut's rate — is exactly the step `r7607` established does NOT go through on its own.** The
+observer's-readout identification was found rate-neutral: its flatness half gives `D_M = χ` for either
+rate and its three-metric half carries no rate, and the rule needed a **third criterion, photon-path
+observable, that the derivation did not carry.**
+
+What closes it is not the projection principle but the photon-path step `P15` supplies in
+`sec:scope`: the reassignment sends the bundle to the constant-proper-time family, **which crosses the
+leaves at unit cosmic-time rate**, and that rate is **cut-independent** because `dr/dτ = rH(r)/c` has a
+right-hand side in `r` alone for every mass function, so solutions are translates and the unit rate
+holds on any cut, bent or straight.
+
+⇒ **`P7` already states that premise — in the rate remark, which says the derivation "rests on the
+radial equation's autonomy at `E=1` and holds on any cut, bent or straight". `sec:sds-closure` does not
+point at it, and its own argument needs it.**
+**⇒ RECOMMENDATION: have `sec:sds-closure` cite
+`P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky`
+at that sentence, or add the half-clause naming the unit crossing rate.** Without it the closure reads
+as deriving the rate from the projection principle alone, which is the inference this line already
+measured as insufficient — *and a section that rests on a premise it does not name is the guard about
+gates applied to prose.*
+
+### ⓷ The Misner–Sharp sentence: BACKED, clause by clause, and the receipt is `P15`'s
+
+`P7` states: past the cosmological horizon the areal radius is timelike and labels the leaf; the mass
+function on the constant-`r` leaves is a history obeying `dm/dr = −4πr²p`; dust keeps its mass
+constant; radiation's pressure adds `+K/r`; the density is positive at every epoch.
+
+The receipt `P15` cites is
+`P15_r_labels_the_leaf_so_radiation_bends_the_cut_in_epoch_and_its_pressure_work_gives_the_leaf_rate`,
+and it was **run here, green**, with the clauses mapping one to one:
+
+| `P7`'s clause | the receipt's row |
+|---|---|
+| the areal radius labels the leaf | **②** `r` constant on every cosmological leaf, varying `1091`-fold between them — asserted *with* the spread, so the row is a test |
+| `dm/dr = −4πr²p`; dust constant; `+K/r`; positive density | **⑥** `K` derived **from the pressure-work law itself**, dust keeping `m` constant, the density positive at every node, and the pressure-work `K` equal to the inverted `K` |
+| the cut expands at `H_leaf` | **③** the epoch bend `μ = 2M + K/r` has the leaf rate for its own rate |
+
+⇒ **`P7` should cite that receipt at the Misner–Sharp sentence.** It is the same claim, and `P15`
+already cites it at both of its own statements of it.
+
+### What this read does not do
+
+It mints no receipt, because neither claim lacks one — which is the order's own instruction and not a
+shortfall. It does not touch the papers. And it takes no position on whether `sec:sds-closure`'s
+Minkowski analogy should be reworded: the usage is consistent with `P7`'s own, and the disanalogy is
+already marked in the text.
+
+### ⛔ AND SEPARATELY — **THE BUILD SWEEP FLAGGED MY OWN `r7800` RECEIPT, ALREADY IN `main`, AND THE FLAG WAS RIGHT**
+
+The three-build tolerance sweep flagged one site: the multistart selection in the three-parameter fit,
+`err_a = 5.73164258216858` against `err_b = 5.731642582163483` at a tolerance of `5.73164258216389` —
+a **FLIP**, the two builds on opposite sides.
+
+**Measured before fixing:** all twelve starts reach the same minimum. The objective spreads by
+`1.25e-09`, `Δn` by `7.13e-09` on the published window, and `ω_b` by at most `3.41e-10` on any window.
+⇒ **The flip re-ordered which start was called best and moved no number the receipt prints.** Every
+figure `r7801` landed in `P15` stands exactly as published.
+
+**But the flag was right and the fix makes the receipt stronger.** A selection among numerically tied
+candidates is not a comparison — it is noise with an `if` in front of it, and it decided what the
+receipt reported. The selection is now deterministic, and the agreement the flip exposed is a measured
+row: the minimum's uniqueness is asserted instead of assumed. The receipt is 10 checks where it was 9,
+the new one marked as an addition.
+
+⌗ *And I set its bound from one window first and it failed on another, where the spread is twenty-three
+times larger. **GUARD, third time in this family: a bound set from one case and applied to a grid you
+have not measured is not a criterion.** The row now carries the bound measured across all three, with
+its relative size asserted beside it.*

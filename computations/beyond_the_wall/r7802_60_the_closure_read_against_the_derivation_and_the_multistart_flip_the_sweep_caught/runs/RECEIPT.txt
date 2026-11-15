@@ -1,0 +1,171 @@
+
+  the signature: exp[-(r^2-1)(l/l_D)^2] at r = 1.0926, l_D = 1489.5783
+  omega_b's inherited precision, from the corpus's own eta_10 = 6.13 +/- 0.04:  0.653 per cent
+
+====================================================================================================
+  A -- THE PUBLISHED FIGURE REPRODUCED AT THE ONE-RATE MULTIPOLE, BEFORE ANYTHING IS ADDED
+====================================================================================================
+      window 100-1758, 171 covered bins
+        amplitude alone     : chi^2/bin 3.5579
+        + tilt              : chi^2/bin 1.0815   against the published 1.0815
+        absorbed share      : 69.6 per cent   against the published 69.6
+  [PASS] Ⓐ①  the two-parameter fit at the one-rate multipole returns 1.0815 chi^2 per bin over 171 covered bins and absorbs 69.6 per cent, the figures r7797+cc66.1 prints -- so the harness is reproduced before a third parameter is added to it
+
+====================================================================================================
+  B -- THE RESPONSE'S REACH, WHICH DECIDES WHICH WINDOWS MAY BE SPOKEN ABOUT, AND ITS SATURATION
+====================================================================================================
+      the banked response: omega_b = 0.02196600 at [np.float64(-8.0), np.float64(-4.0), np.float64(0.0), np.float64(4.0), np.float64(8.0)] per cent
+      its l grid: 100 to 1996 in steps of 8, 238 points
+        window   100-1758  :  171 covered bins   AVAILABLE
+        window   700-1760  :  104 covered bins   AVAILABLE
+        window  1000-1760  :   71 covered bins   AVAILABLE
+        window  1000-2508  :  101 covered bins   OUT OF REACH
+        window  1400-2508  :   56 covered bins   OUT OF REACH
+        window   100-2508  :  201 covered bins   OUT OF REACH
+  [PASS] Ⓑ②  the response reaches l = 1996, so THREE of the six windows the displacement table uses are available and three are not -- and no arm below speaks about a window its own inputs do not reach, which is why the reach is asserted rather than assumed
+
+      worst |second difference| / |first difference| over the whole grid: 0.7532
+        l =   500 : ratio over the five omega_b = [1.03225, 1.01627, 1.00000, 0.98351, 0.96688]
+        l =   996 : ratio over the five omega_b = [0.99643, 0.99767, 1.00000, 1.00357, 1.00852]
+        l =  1500 : ratio over the five omega_b = [0.93576, 0.96870, 1.00000, 1.02945, 1.05691]
+        l =  1900 : ratio over the five omega_b = [0.94371, 0.97167, 1.00000, 1.02911, 1.05935]
+  [PASS] Ⓑ③  the response is NOT linear in omega_b -- the worst second difference is 0.7532 of the first -- so the fit INTERPOLATES the five banked values with a monotone spline and never extrapolates a derivative, and an omega_b outside the bank is reported at the edge
+
+====================================================================================================
+  C -- THE TILT AND THE BARYON DENSITY FREE TOGETHER
+====================================================================================================
+
+      window 100-1758, 171 covered bins
+        + tilt          : chi^2/bin   1.0815   Delta n -0.07003   absorbed  69.6 %
+        + tilt + omega_b: chi^2/bin   0.9242   Delta n -0.07021   absorbed  74.0 %
+        omega_b wanted  : 0.02150343 = -2.106 % = -3.2 sigma of the inherited value
+        SURVIVES        : 100.3 per cent of the displacement
+
+      window 700-1760, 104 covered bins
+        + tilt          : chi^2/bin   0.2564   Delta n -0.17621   absorbed  91.2 %
+        + tilt + omega_b: chi^2/bin   0.2532   Delta n -0.17463   absorbed  91.3 %
+        omega_b wanted  : 0.02190344 = -0.285 % = -0.4 sigma of the inherited value
+        SURVIVES        : 99.1 per cent of the displacement
+
+      window 1000-1760, 71 covered bins
+        + tilt          : chi^2/bin   0.0824   Delta n -0.25946   absorbed  95.9 %
+        + tilt + omega_b: chi^2/bin   0.0807   Delta n -0.26410   absorbed  96.0 %
+        omega_b wanted  : 0.02201481 = +0.222 % = +0.3 sigma of the inherited value
+        SURVIVES        : 101.8 per cent of the displacement
+  [PASS] Ⓒ④  the three-parameter fit converges on every available window, inside the bank's own grid and not at its edge, so no number here is an extrapolation of a response that was never measured
+
+      100-1758: across the TWELVE starts the objective spreads by 1.25e-09, Delta n by 7.13e-09, omega_b by 1.12e-09
+      700-1760: across the TWELVE starts the objective spreads by 1.19e-10, Delta n by 1.61e-07, omega_b by 2.36e-10
+      1000-1760: across the TWELVE starts the objective spreads by 2.13e-10, Delta n by 5.45e-08, omega_b by 3.41e-10
+      ⌗ WHY THIS ROW EXISTS.  The build-perturbation sweep FLAGGED the multistart's selection as a
+        FLIP: the starts reach the same minimum to about 8e-12 in the objective, so which start is
+        called best was being decided by floating-point noise and re-ordered between builds.  The
+        selection is now deterministic, and the agreement the flip exposed is measured here instead
+        of assumed -- which makes the minimum's UNIQUENESS a row of the receipt rather than a hope.
+      ⌗ AND THE BOUND BELOW WAS SET FROM ALL THREE WINDOWS, after its first form was set from the
+        published window alone (where Delta n spreads by 7e-9) and FAILED on 700-1760, where it
+        spreads by 1.6e-7.  Twenty-three times that, and still a relative 9e-7 of a displacement
+        the receipt prints to five decimals.  ⇒ GUARD, for the third time in this revision's
+        family: a bound set from one case and applied to a grid you have not measured is not a
+        criterion.  Measure the grid, then write the bound.
+  [PASS] Ⓒ④ᵇ  and the twelve starts agree on what they report -- Delta n to better than 2e-7 and omega_b to better than 1e-8 on every window, which on the smallest displacement of the three is a relative 1e-6 -- so the minimum is unique on each window and the flip the sweep caught re-ordered the starts without moving a single number the receipt prints.  ⌗ NOT one of the eight registered arms: it was measured while diagnosing the flag
+
+      the displacement's survival across the three windows: 100.267, 99.101, 101.787 per cent
+      ⌗ printed to THREE decimals because the INDEX row's figure is pinned against this value,
+        and the first form of that pin was computed from the five-decimal Delta n values this
+        receipt PRINTS rather than from the quantities themselves -- which put it 0.03 out and
+        failed its own arm.  ⇒ GUARD: a pin computed from a rounded intermediate is a pin on the
+        rounding.  Take it from the quantity.
+  [PASS] Ⓒ⑤  THE ORDER'S QUESTION: the displacement SURVIVES -- between 99 and 102 per cent of it on every window the response reaches, and 100.267 per cent on the published one.  Freeing the baryon density moves the fitted tilt by about a part in a hundred, not by a factor
+      the absorbed share gains: +4.4, +0.1, +0.1 points   (from 69.6, 91.2, 95.9)
+  [PASS] Ⓒ⑥  and the absorbed share barely moves -- at most 4.4 points, 69.6 to 74.0 on the published window and a tenth of a point on the other two -- so omega_b is not taking the signature either, by the share or by the displacement
+
+      100-1758: omega_b wanted -3.2 sigma, and 100.3 per cent of the displacement survives it
+      700-1760: omega_b wanted -0.4 sigma, and 99.1 per cent of the displacement survives it
+      1000-1760: omega_b wanted +0.3 sigma, and 101.8 per cent of the displacement survives it
+  [PASS] Ⓒ⑦  THE ARM THAT DECIDES THE ROW, AND IT FAILS THE TERMINATING CLAUSE IN BOTH DIRECTIONS.  On the published window the fit wants omega_b 3.2 sigma below the corpus's own inherited value and the displacement survives it anyway; on the two windows where the tilt absorbs most, omega_b stays inside HALF a sigma and does nothing.  An absorber that needs a parameter outside its measured range has not absorbed anything -- and this one does nothing inside it either
+
+====================================================================================================
+  D -- THE OTHER INHERITED PARAMETERS, DECLARED ABSENT FROM THE BANK
+====================================================================================================
+      the baryon density  omega_b              :  3 file(s)  -> r6897_wb_response_lcdm.npz
+      the effective neutrino number  N_eff     :  0 file(s)
+      the helium fraction  Y_He                :  0 file(s)
+      the optical depth  tau                   :  0 file(s)
+      the lensing amplitude  A_L               :  0 file(s)
+      the matter density  omega_m              :  0 file(s)
+      ⌗ searched the 271 entries of computations/beyond_the_wall/spectra, the one directory every
+        banked spectrum lives in, by the lowercase substring patterns printed above applied to each
+        entry's filename -- so the absence stated here is about THAT directory and THOSE patterns and
+        about nothing else.  A response banked elsewhere, or named otherwise, would not be seen by it.
+      ⇒ each of the five would need the instrument run at five parameter values and summed over
+        eleven mode slices, which is hours of compute in pieces on the seat that owns the
+        instrument.  NAMED, NOT MEASURED, and routed rather than guessed.
+      ⌗ AND THE COUNT ABOVE IS SCOPE, NOT CLAIM.  The first form of this arm asserted len(NAMES) == 271,
+        an equality on a directory any other seat grows by banking a spectrum -- so it would have
+        turned red on 70's next bank and said nothing about this receipt's subject.  The exact-count
+        gate caught it and was right.  ⇒ GUARD: an equality on a population another seat owns is a
+        check on their activity, not on your claim; print it as the scope of the search and assert
+        only what is yours.
+  [PASS] Ⓓ⑧  exactly ONE of the six inherited parameters has a banked response, and the absence of the other five is declared with the directory and the patterns it was searched by, in the sentence that states it -- which is the form this line's absence gate has had to require three times
+
+====================================================================================================
+  E -- THE REGISTER CLAUSE THIS RECEIPT REASONS FROM, IN THREE STATES
+====================================================================================================
+      PO-24's terminating clause -> MATCHED
+        "...\sigma$ rule on the arm that does not double-count.* ***OR TERMINATES IF:*** *the displacement is shown to be absorbed by the inherited parameters it is degenerate with, the baryon density among them, so that no tail precision can separate it; the papers then state it as a degene..."
+  [PASS] Ⓔ⑨  the terminating clause is in the register on this tree, and it is the clause this receipt reasons FROM rather than a conclusion about it -- a gate that asserted only the row's data-gated STATUS would assert what the row says about itself instead of the condition the argument tests
+
+====================================================================================================
+  AN ADDITION, MARKED AS ONE -- WHY omega_b CANNOT ABSORB AN ENVELOPE
+====================================================================================================
+      ⌗ NOT ONE OF THE EIGHT REGISTERED ARMS.  The registration asked WHETHER the
+        displacement survives, not why, and this was measured after the answer came back.
+      100-1758: corr(signature, omega_b) = -0.1806;  omega_b can remove 3.3 % of the signature's chi^2, the tilt 72.0 %
+      700-1760: corr(signature, omega_b) = -0.2383;  omega_b can remove 5.7 % of the signature's chi^2, the tilt 92.6 %
+      1000-1760: corr(signature, omega_b) = -0.4472;  omega_b can remove 20.0 % of the signature's chi^2, the tilt 96.8 %
+      ⇒ the signature falls monotonically with l: it is an ENVELOPE.  The omega_b response
+        does not -- it is negative below about l = 900 and positive above -- because omega_b
+        moves the PEAKS through the baryon loading.  ⇒ A PARAMETER HAS TO HAVE THE SHAPE TO
+        ABSORB A SHAPE, and that is why the answer is structural and not a matter of
+        precision: no tightening of omega_b would change it.
+
+====================================================================================================
+  THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED
+====================================================================================================
+      REGISTERED ARMS: 8 -- Ⓐ① Ⓑ②③ Ⓒ④⑤⑥⑦ Ⓓ⑧; ALL EIGHT met.  TWO checks are ADDITIONS:
+      Ⓔ⑨, so the gate asserts the clause the argument reasons from; and Ⓒ④ᵇ, added at
+      r7802 after the build sweep flagged the multistart selection.  CHECKS RUN: 10.
+      the SIX inputs are declared in the COMPUTES header; no spectrum here is new and nothing
+      is fitted beyond the two or three parameters each fit is of.
+      NOT CLAIMED: that PO-24 closes or stays open as a whole -- five of the six inherited
+      parameters are NAMED and not tested, because no response for them is banked; anything
+      about windows above l = 1996; which exponent P15 should price the signature on; and no
+      significance against the sky, every number here being a degeneracy-fit number.
+
+==========================================================================================
+
+  ALL CHECKS PASS.
+
+  PO-24's terminating clause is NOT met by the baryon density.
+
+  Freeing omega_b alongside the tilt leaves 100.3 per cent of the fitted
+  displacement standing on the published window, and between 99.1 and
+  101.8 per cent on every window the banked response reaches.  The
+  absorbed share goes from 69.6 to 74.0 per cent at most.
+
+  And the clause fails in both directions.  On the published window the fit
+  wants omega_b -3.2 sigma from the corpus's own inherited value --
+  an excursion the datum does not permit -- and the displacement survives it
+  anyway.  On the two windows where the tilt absorbs most, omega_b stays inside
+  half a sigma and changes nothing.
+
+  The reason is structural rather than a matter of precision: the signature is
+  an ENVELOPE in l and omega_b is a PEAK-PHASE direction, so the two templates
+  barely overlap under the covariance.  No tightening of omega_b would change
+  that, and the row does not terminate by this route.
+
+  Five other inherited parameters are NAMED and not tested.  No response for
+  any of them is banked, and building one is not this seat's instrument.
+
+==========================================================================================
