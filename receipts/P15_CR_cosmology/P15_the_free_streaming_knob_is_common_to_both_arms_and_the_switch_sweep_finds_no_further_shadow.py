@@ -500,18 +500,23 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     # ⛭ `SRCFIELD` -- r7729+70.0 (27a6968ba), an output switch: it saves S(k, eta), P,
                     #   eta and x0 per k-batch for the offline four-combination projection, and is OFF
                     #   by default.  Every array is byte-identical with it unset and set, on both arms.
-                    'SRCFIELD'}
+                    'SRCFIELD',
+                    # ⛭ `DNEFF` -- r7801+70, a consistent Delta N_eff for PO-24's N_eff response bank: it
+                    #   adds to the neutrino density at fixed photon density and re-forms Omega_r and
+                    #   FNU from the two.  Unset, nothing runs, so the default output is byte-identical
+                    #   (an unset and a DNEFF=0 run agree to 0.0 on the control).
+                    'DNEFF'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-FOUR now, the twenty-four "
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-FIVE now, the twenty-five "
       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
       "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2; the "
-      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0)",
-      len(ROWS) == 84 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0; the eighty-fifth is `DNEFF`, r7801+70)",
+      len(ROWS) == 85 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")

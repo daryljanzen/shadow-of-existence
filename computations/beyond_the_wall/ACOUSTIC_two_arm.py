@@ -204,6 +204,23 @@ OR = float(os.environ.get('ORFAC', '1.0')) * OR
 _crom = os.environ.get('CROM')
 if _crom and ARM != 'lcdm':
     OM = float(_crom)
+# ⛭ ** DNEFF: A CONSISTENT Delta N_eff -- r7801+70 (70), at 69's order for PO-24's N_eff response bank. **
+# *`ORFAC` above scales Omega_r at a FIXED neutrino fraction FNU, so it moves the photons and the
+# neutrinos together; at fixed T_CMB that is not what a change of N_eff is.*  ** DNEFF adds Delta N_eff
+# to the neutrino sector alone: the photon density (1 - FNU) Or is held, the neutrino density is
+# scaled by (N0 + DNEFF)/N0, where N0 = FNU/(1 - FNU)/0.22710731766 is the N_eff this file codes
+# (FNU = 0.4052 gives N0 = 3.000), and Or and FNU are re-formed from the two -- so the expansion
+# rate's radiation term, z_eq and the free-streaming fraction all move together, as they must. **
+# *Applied after ORFAC, so the two compose.  Unset = byte-identical: nothing below runs.*
+_dneff = os.environ.get('DNEFF')
+DNEFF = None if _dneff is None else float(_dneff)
+if DNEFF is not None:
+    _og_dn = (1.0 - FNU) * OR
+    _onu_dn = FNU * OR
+    _n0_dn = FNU / (1.0 - FNU) / 0.22710731766
+    _onu_dn = _onu_dn * (_n0_dn + DNEFF) / _n0_dn
+    OR = _og_dn + _onu_dn
+    FNU = _onu_dn / OR
 OL = 1.0 - OM
 A_REC = 1.0 / (1.0 + Z_REC)
 RB_REC = 31500 * OMBH2 / (2.7255 / 2.7) ** 4 / (1 + Z_REC)
@@ -743,6 +760,8 @@ _SWITCH_SNAPSHOT = {
     #     key: "no COMBRHO key" and "COMBRHO was off" are different statements about a bank, and only
     #     one of them is a measurement.*
     'COMBRHO': (None if COMBRHO is None else float(COMBRHO)),
+    # `r7801+70`: the Delta N_eff knob, recorded as None when unset for the same reason as COMBRHO.
+    'DNEFF': DNEFF,
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
