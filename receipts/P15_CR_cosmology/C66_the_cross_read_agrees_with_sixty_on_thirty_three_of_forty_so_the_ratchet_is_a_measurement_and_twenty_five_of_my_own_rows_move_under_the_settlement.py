@@ -293,7 +293,10 @@ gate(f"⇒ MY OWN FRACTION GOES FROM {_frac0:.1f} TO {_frac1:.1f} PER CENT, abov
      _frac1 > 18.0 and _frac1 > _frac0)
 # r7767: P15 was rewritten on one rate and this row's literal re-pointed to the sentence that replaced it;
 # the row is the same row, so it is hashed by the literal it was verdicted on.
-_REPOINTED = {"it is absent from the vacuum kernel": "radiation is absent from the slicing operator's vacuum kernel"}
+_REPOINTED = {"it is absent from the vacuum kernel": "radiation is absent from the slicing operator's vacuum kernel",
+              # r7789 (69): P7's rate remark rewritten on one rate; same row, re-pointed
+              "a comoving separation read across leaves---$D_M$, $D_H$, $D_V$, the observable expansion---as much as a process running \\emph{in} the content":
+              "a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion---takes the stacking rate"}
 NOTE = ('esidual exposure', 'exposure named', 'largest reword exposure', 'tightening')
 _pre = [p for p in _moved if any(n in p[6] for n in NOTE)]
 print(f"      of the 25 that moved, already named in my own third-column exposure table: {len(_pre)}")

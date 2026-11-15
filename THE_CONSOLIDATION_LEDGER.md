@@ -1253,3 +1253,9 @@ standing by, no formalisation row being open.
   69 merges without rebasing from here.
 - `PO-87`: **r7791 (69).** P16 sec:scoping rewritten on one rate. The kernel fixes the geometric part, with the offset as the dust's mass. Radiation's bend is in epoch. The window and the new universe each have a rate with radiation in it. The seam resets the geometric part, radiation crosses as content and bends the new cut, so nothing decouples it. The distances are built on that rate, which is what the microwave spectrum prefers. P16's link 8 and its recombination and verdict sentences now say the same. The ONT-COSMO canon note in P15 and P16 and the ontology index's §1b forcing, items 5 and 6, and the scoping guard are rewritten to match. photonfamily.py's five keys for the rewritten P16 and P18 sentences are dropped.
 - `PO-87`: **r7793 (69).** P6's episode paragraph rewritten on one rate. The acoustic structure is a third agreement, counted as agreement and not as the lemma's forward form, because the construction derived where radiation belongs with the measurement already in hand. The family's undecided case is the damping-scale signature. Its census and open-reference rows are rekeyed. With this, every corpus site that carried the two-rate rule states one rate.
+- `PO-87`: **r7795 (69).** The full receipt run on r7793 (dispatched, because the scoped suite's range was too wide to finish inside its budget) read 1157 pass and 5 fail. All five failures were readers of wording this merge retired, and all five are now green:
+  - S45 excludes rows re-pointed by a paper rewrite from its "nothing verdicted" count.
+  - C66 hashes the re-pointed P7 row by its verdicted literal.
+  - C67 declares P7's retired remark literals.
+  - The comb receipt at P15's preferred H0 accepts the one-rate state, with 298.94 printed beside 299.1.
+  - 60's light-path computation reads P16's two-slot rule as withdrawn at r7791.
