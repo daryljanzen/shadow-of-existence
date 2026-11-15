@@ -10,6 +10,59 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7803: K4 BUILT — P11's PETROV TYPE I AT A VACUUM-Λ POINT OF THE GOWDY–DE SITTER FORM; P11 AT 9 OF 12. THE CLOSING TABLE (`r7803+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7803_71_k4/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is `probes/Dynamics.lean`: 337 lines appended, none changed. About 275 lines are new, under
+the 350–600 band; 52 are verbatim.
+
+**Verification:** 0 errors and 0 warnings; 22 axiom lines, all `[propext, Classical.choice, Quot.sound]`; the
+forbidden-token grep is clean; Mathlib only; `check_no_sorry.py` reports ALL 29. All eight copied blocks are
+byte-identical to `Range.lean`.
+
+**What is built:**
+- **The metric.** `diag(−1, 1, B, C)` with `B = 1 + 2t + 5t² + z²` and `C = 1 + 2z − t² − 3z²` is `eq:metric`'s form
+  (`γ = ψ = ½ log B`, `R = √(BC)`), and depends on `z`.
+- **The point.** At the origin, `R_ab = 3g_ab`, from the full Riemann tensor computed through the `kr_` kit.
+- **The type.** The Weyl operator there is `ij_tbl U`, with `I = 7` and `J = 3`, so `I³ = 343 ≠ 243 = 27J²`:
+  Petrov type I.
+
+**Stated plainly:** type I depends only on the 2-jet, so this is a type-I point whose jet satisfies the field
+equations. That an exact solution realises the jet, and "generic", are not formalised. The paper has no closed-form
+inhomogeneous solution with `Λ > 0`.
+
+**The closing table** (rows built against rows reachable; "beyond" means needing mathematics Mathlib lacks, or no
+closed-form object):
+
+| Paper | Cored rows | BUILT | Reachable, not built | Beyond / no formal core | Citable probe(s) |
+|---|---|---|---|---|---|
+| P1 `BH_causality_v2` | 34 | 22 at r7685, raised since by campaigns 104–110 (2i, 2iv-b, 5, 7c, 8ii-e). Not re-inventoried here | — | per `r7685_71_inventory` | `MSpacetime`, `sk_`, `ng_`, `kr_` probes |
+| P2 `janzen_circle_v3` | — | **closed** (campaign 118) | 0 | per its records | `Circle*.lean`, `Kretschmann.lean` |
+| P3 `SdS-slicing-curve_v2` | 24 | **21** | 0 | 3 (no formal core) | `Slicing*.lean` |
+| P5 `groupoid_paper` | 18 | **17** | 0 | 1 (row 6, no core) | `Groupoid.lean` |
+| P7 `CR_framework` | 15 | **15** | 0 | 0 | `Framework.lean` |
+| P8 `slicing_operator` | 16 | **15** | 0 | 1 (5d, no core) | probe of campaign 123 on |
+| P9 `range_paper` | 13 | **13** | 0 | 0 | `Range.lean` |
+| P11 `dynamics_paper` | 12 | **9** | 0 | 3 (A4, K3, W4) | `Dynamics.lean` |
+| P12 `algebroid_paper` | 6 | **6** | 0 | 0 | `Algebroid.lean` |
+| P13 `boundary_paper` | 10 | **9** | 0 | 1 (row 1) | `Boundary.lean` |
+| P14 `matter_sector_paper` | 7 | **5** | 0 | 2 (Z6 interpretive, Z7 beyond) | `MatterWall.lean` |
+| P15 `CR_cosmology` | 11 | **11** | 0 | 0 | probe of campaign 132 |
+| P17 `geometric_core_paper` | 9 | **8** | 0 | 1 (U5) | `GeometricCore.lean` |
+| P4, P6, SYN/P18 | — | — | 0 | philosophical, or P17's `prop:unique` restated | — |
+| P10, P16 | — | — | 0 | no propositions | — |
+
+**Every reachable row in the census is built.** What remains is beyond:
+- P13's row 1 (real forms of compact subalgebras);
+- P17's U5 (classification of maximally symmetric spaces);
+- P11's A4 (quantization), K3 (the full Killing equation) and W4 (full VSI);
+- P14's Z7 (the leaf-norm selection, not fixed in closed form).
+
+P1's and P2's counts are as their own records give them; P1's current count would need a re-inventory. Awaiting your
+order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7801: CAMPAIGN 143 — P14's `prop:wall`: THE FIVE REACHABLE ROWS ALL BUILT (`r7801+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7801_71_campaign143/PREDICTION.md` (the census and registration,

@@ -697,6 +697,337 @@ theorem dy_witness (x : Fin 4 → ℝ) :
 
 end ShadowProbe.DynamicsProbe
 
+
+namespace ShadowProbe.RangeProbe
+
+/-- The bivector table `W^{ab}{}_{cd} = U_ab(δ_ac δ_bd − δ_ad δ_bc)` for `a ≠ b`. -/
+def ij_tbl (u : Matrix (Fin 4) (Fin 4) ℝ) : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ :=
+  Matrix.of fun p q => if p.1 = q.1 ∧ p.2 = q.2 ∧ p.1 ≠ p.2 then u p.1 p.2
+    else if p.1 = q.2 ∧ p.2 = q.1 ∧ p.1 ≠ p.2 then -u p.1 p.2 else 0
+
+/-- Supported on pair blocks: `X p q = 0` unless `q = p` or `q = p.swap`. -/
+def ij_blk (X : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ) : Prop :=
+  ∀ p q : Fin 4 × Fin 4, q ≠ p → q ≠ p.swap → X p q = 0
+
+lemma ij_tbl_blk (u : Matrix (Fin 4) (Fin 4) ℝ) : ij_blk (ij_tbl u) := by
+  intro p q h1 h2
+  simp only [ij_tbl, Matrix.of_apply]
+  split_ifs with c1 c2
+  · exact absurd (Prod.ext c1.1.symm c1.2.1.symm) h1
+  · exact absurd (Prod.ext c2.2.1.symm c2.1.symm) h2
+  · rfl
+
+lemma ij_blk_mul {X Y : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ} (hX : ij_blk X) (hY : ij_blk Y) :
+    ij_blk (X * Y) := by
+  intro p q h1 h2
+  simp only [Matrix.mul_apply]
+  refine Finset.sum_eq_zero fun r _ => ?_
+  by_cases hr1 : r = p
+  · subst hr1; rw [hY r q h1 h2, mul_zero]
+  by_cases hr2 : r = p.swap
+  · subst hr2; rw [hY _ q h2 (by rwa [Prod.swap_swap]), mul_zero]
+  · rw [hX p r hr1 hr2, zero_mul]
+
+/-- A dual trace vanishes on block-supported operators: `tr(X ∘ E ∘ Y) = 0` when `E` kills each block. -/
+lemma ij_tr_dual {X Y E : Matrix (Fin 4 × Fin 4) (Fin 4 × Fin 4) ℝ} (hX : ij_blk X) (hY : ij_blk Y)
+    (hE : ∀ q r : Fin 4 × Fin 4, (r = q ∨ r = q.swap) → E q r = 0) : (X * (E * Y)).trace = 0 := by
+  simp only [Matrix.trace, Matrix.diag, Matrix.mul_apply, Finset.mul_sum]
+  refine Finset.sum_eq_zero fun p _ => Finset.sum_eq_zero fun q _ => Finset.sum_eq_zero fun r _ => ?_
+  by_cases hq : q = p ∨ q = p.swap
+  · by_cases hr : r = p ∨ r = p.swap
+    · rw [hE q r ?_, zero_mul, mul_zero]
+      rcases hq with rfl | rfl <;> rcases hr with rfl | rfl <;> simp
+    · simp only [not_or] at hr
+      rw [hY r p (Ne.symm hr.1) (fun e => hr.2 (by rw [e, Prod.swap_swap])), mul_zero, mul_zero]
+  · simp only [not_or] at hq
+    rw [hX p q hq.1 hq.2, zero_mul]
+
+lemma ij_tr2 (u : Matrix (Fin 4) (Fin 4) ℝ) : (ij_tbl u * ij_tbl u).trace =
+    ∑ a, ∑ b, if a = b then 0 else (u a b ^ 2 + u a b * u b a) := by
+  simp [Matrix.trace, Matrix.mul_apply, Fintype.sum_prod_type, Fin.sum_univ_four, ij_tbl]
+  ring
+
+set_option maxHeartbeats 0 in
+lemma ij_tr3 (u : Matrix (Fin 4) (Fin 4) ℝ) : (ij_tbl u * ij_tbl u * ij_tbl u).trace =
+    ∑ a, ∑ b, if a = b then 0 else (u a b + u b a) ^ 3 / 2 := by
+  simp [Matrix.trace, Matrix.mul_apply, Fintype.sum_prod_type, Fin.sum_univ_four, ij_tbl]
+  ring
+
+end ShadowProbe.RangeProbe
+
+namespace ShadowProbe.DynamicsProbe
+
+open ShadowProbe.StaticEinsteinProbe ShadowProbe.RangeProbe Real
+
+/-! ## K4: a vacuum-Λ point of the Gowdy–de Sitter form at which the Weyl tensor is Petrov type I -/
+
+/-- `B(t, z) = 1 + 2t + 5t² + z²` and `C(t, z) = 1 + 2z − t² − 3z²`. -/
+def dy_Bf (t z : ℝ) : ℝ := 1 + 2 * t + 5 * t ^ 2 + z ^ 2
+def dy_Cf (t z : ℝ) : ℝ := 1 + 2 * z - t ^ 2 - 3 * z ^ 2
+def dy_B (y : Fin 4 → ℝ) : ℝ := dy_Bf (y 0) (y 1)
+def dy_C (y : Fin 4 → ℝ) : ℝ := dy_Cf (y 0) (y 1)
+
+/-- The metric `diag(−1, 1, B, C)` on `(t, z, x, y)`. -/
+def dy_gk (y : Fin 4 → ℝ) : Matrix (Fin 4) (Fin 4) ℝ := Matrix.diagonal ![-1, 1, dy_B y, dy_C y]
+
+lemma dy_B_pos (y : Fin 4 → ℝ) : 0 < dy_B y := by
+  unfold dy_B dy_Bf; nlinarith [sq_nonneg (5 * y 0 + 1), sq_nonneg (y 1)]
+
+/-- **K4, the form.** Where `C > 0`, `diag(−1, 1, B, C)` is `eq:metric` with `γ = ψ = ½ log B`, `R = √(BC)`. -/
+theorem dy_gk_form (y : Fin 4 → ℝ) (hC : 0 < dy_C y) :
+    dy_gk y = dy_g (fun t z => Real.log (dy_Bf t z) / 2) (fun t z => Real.log (dy_Bf t z) / 2)
+      (fun t z => Real.sqrt (dy_Bf t z * dy_Cf t z)) y := by
+  have hB := dy_B_pos y
+  unfold dy_B at hB; unfold dy_C at hC
+  have e1 : Real.exp (2 * (Real.log (dy_Bf (y 0) (y 1)) / 2)) = dy_Bf (y 0) (y 1) := by
+    rw [show 2 * (Real.log (dy_Bf (y 0) (y 1)) / 2) = Real.log (dy_Bf (y 0) (y 1)) by ring, Real.exp_log hB]
+  have e2 : Real.exp (-(2 * (Real.log (dy_Bf (y 0) (y 1)) / 2))) = (dy_Bf (y 0) (y 1))⁻¹ := by
+    rw [Real.exp_neg, e1]
+  have e3 : Real.sqrt (dy_Bf (y 0) (y 1) * dy_Cf (y 0) (y 1)) ^ 2 = dy_Bf (y 0) (y 1) * dy_Cf (y 0) (y 1) :=
+    Real.sq_sqrt (by positivity)
+  unfold dy_gk dy_g dy_B dy_C
+  congr 1
+  ext i; fin_cases i <;> simp [e1, e2, e3]
+  field_simp
+
+/-! ### The Christoffel table -/
+
+/-- A partial derivative read off a derivative along the coordinate line. -/
+lemma dy_pd_of {F : (Fin 4 → ℝ) → ℝ} {y : Fin 4 → ℝ} {c : Fin 4} (φ : ℝ → ℝ) {v : ℝ}
+    (hφ : ∀ s, F (Function.update y c s) = φ s) (h : HasDerivAt φ v (y c)) : kr_pd F y c = v := by
+  unfold kr_pd; rw [show (fun t => F (Function.update y c t)) = φ from funext hφ]; exact h.deriv
+
+lemma dy_quad (a b c x : ℝ) : HasDerivAt (fun s => a + b * s + c * s ^ 2) (b + 2 * c * x) x := by
+  have := (((hasDerivAt_id' x).const_mul b).const_add a).fun_add ((hasDerivAt_pow 2 x).const_mul c)
+  convert this using 1; push_cast; ring
+
+lemma dy_rat0 (a b q0 q1 q2 : ℝ) (hq : q0 ≠ 0) :
+    HasDerivAt (fun s => (a + b * s) / (q0 + q1 * s + q2 * s ^ 2)) ((b * q0 - a * q1) / q0 ^ 2) 0 := by
+  have h1 := (dy_quad a b 0 0)
+  have h2 := (dy_quad q0 q1 q2 0)
+  have := h1.div h2 (by simpa using hq)
+  convert this using 1
+  · funext s; simp
+  · simp
+
+lemma dy_B_pd0 (y : Fin 4 → ℝ) : kr_pd dy_B y 0 = 2 + 10 * y 0 :=
+  dy_pd_of (fun s => (1 + y 1 ^ 2) + 2 * s + 5 * s ^ 2) (fun s => by simp [dy_B, dy_Bf]; ring)
+    (by convert dy_quad (1 + y 1 ^ 2) 2 5 (y 0) using 1; ring)
+lemma dy_B_pd1 (y : Fin 4 → ℝ) : kr_pd dy_B y 1 = 2 * y 1 :=
+  dy_pd_of (fun s => (1 + 2 * y 0 + 5 * y 0 ^ 2) + 0 * s + 1 * s ^ 2) (fun s => by simp [dy_B, dy_Bf])
+    (by convert dy_quad (1 + 2 * y 0 + 5 * y 0 ^ 2) 0 1 (y 1) using 1; ring)
+lemma dy_C_pd0 (y : Fin 4 → ℝ) : kr_pd dy_C y 0 = -(2 * y 0) :=
+  dy_pd_of (fun s => (1 + 2 * y 1 - 3 * y 1 ^ 2) + 0 * s + (-1) * s ^ 2) (fun s => by simp [dy_C, dy_Cf]; ring)
+    (by convert dy_quad (1 + 2 * y 1 - 3 * y 1 ^ 2) 0 (-1) (y 0) using 1; ring)
+lemma dy_C_pd1 (y : Fin 4 → ℝ) : kr_pd dy_C y 1 = 2 - 6 * y 1 :=
+  dy_pd_of (fun s => (1 - y 0 ^ 2) + 2 * s + (-3) * s ^ 2) (fun s => by simp [dy_C, dy_Cf]; ring)
+    (by convert dy_quad (1 - y 0 ^ 2) 2 (-3) (y 1) using 1; ring)
+
+/-- A function of `(t, z)` alone has no `x` or `y` partial. -/
+lemma dy_pd23 (F : ℝ → ℝ → ℝ) (y : Fin 4 → ℝ) : kr_pd (fun y => F (y 0) (y 1)) y 2 = 0 ∧
+    kr_pd (fun y => F (y 0) (y 1)) y 3 = 0 :=
+  ⟨dy_pd_of (fun _ => F (y 0) (y 1)) (fun s => by simp) (hasDerivAt_const _ _),
+    dy_pd_of (fun _ => F (y 0) (y 1)) (fun s => by simp) (hasDerivAt_const _ _)⟩
+
+lemma dy_B_pd (y : Fin 4 → ℝ) (c : Fin 4) : kr_pd dy_B y c = ![2 + 10 * y 0, 2 * y 1, 0, 0] c := by
+  fin_cases c
+  · simpa using dy_B_pd0 y
+  · simpa using dy_B_pd1 y
+  · show kr_pd dy_B y 2 = 0; exact (dy_pd23 dy_Bf y).1
+  · show kr_pd dy_B y 3 = 0; exact (dy_pd23 dy_Bf y).2
+
+lemma dy_C_pd (y : Fin 4 → ℝ) (c : Fin 4) : kr_pd dy_C y c = ![-(2 * y 0), 2 - 6 * y 1, 0, 0] c := by
+  fin_cases c
+  · simpa using dy_C_pd0 y
+  · simpa using dy_C_pd1 y
+  · show kr_pd dy_C y 2 = 0; exact (dy_pd23 dy_Cf y).1
+  · show kr_pd dy_C y 3 = 0; exact (dy_pd23 dy_Cf y).2
+
+/-- The eight Christoffel functions. -/
+def dy_k1 (y : Fin 4 → ℝ) : ℝ := 1 + 5 * y 0
+def dy_k2 (y : Fin 4 → ℝ) : ℝ := -y 0
+def dy_k3 (y : Fin 4 → ℝ) : ℝ := -y 1
+def dy_k4 (y : Fin 4 → ℝ) : ℝ := 3 * y 1 - 1
+noncomputable def dy_k5 (y : Fin 4 → ℝ) : ℝ := (1 + 5 * y 0) / dy_B y
+noncomputable def dy_k6 (y : Fin 4 → ℝ) : ℝ := y 1 / dy_B y
+noncomputable def dy_k7 (y : Fin 4 → ℝ) : ℝ := -y 0 / dy_C y
+noncomputable def dy_k8 (y : Fin 4 → ℝ) : ℝ := (1 - 3 * y 1) / dy_C y
+
+/-- The Christoffel table `Γ^a_{bc}` of `diag(−1, 1, B, C)`. -/
+noncomputable def dy_Tk (y : Fin 4 → ℝ) : Fin 4 → Fin 4 → Fin 4 → ℝ :=
+  ![![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, dy_k1 y, 0], ![0, 0, 0, dy_k2 y]],
+    ![![0, 0, 0, 0], ![0, 0, 0, 0], ![0, 0, dy_k3 y, 0], ![0, 0, 0, dy_k4 y]],
+    ![![0, 0, dy_k5 y, 0], ![0, 0, dy_k6 y, 0], ![dy_k5 y, dy_k6 y, 0, 0], ![0, 0, 0, 0]],
+    ![![0, 0, 0, dy_k7 y], ![0, 0, 0, dy_k8 y], ![0, 0, 0, 0], ![dy_k7 y, dy_k8 y, 0, 0]]]
+
+lemma dy_gk_inv (y : Fin 4 → ℝ) (hC : dy_C y ≠ 0) :
+    (dy_gk y)⁻¹ = Matrix.diagonal ![-1, 1, (dy_B y)⁻¹, (dy_C y)⁻¹] := by
+  have hB := (dy_B_pos y).ne'
+  refine Matrix.inv_eq_left_inv ?_
+  rw [dy_gk, Matrix.diagonal_mul_diagonal, ← Matrix.diagonal_one]
+  congr 1; ext i; fin_cases i <;> simp [hB, hC]
+
+lemma dy_Γk (y : Fin 4 → ℝ) (hC : dy_C y ≠ 0) (a b c : Fin 4) : kr_Γ dy_gk y a b c = dy_Tk y a b c := by
+  have hB := (dy_B_pos y).ne'
+  simp only [kr_Γ, dy_gk_inv y hC]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;>
+    simp [Fin.sum_univ_four, dy_gk, dy_Tk, dy_B_pd, dy_C_pd, kr_pd_const, dy_k1, dy_k2, dy_k3, dy_k4, dy_k5, dy_k6,
+      dy_k7, dy_k8] <;> field_simp <;> ring
+
+
+/-! ### The Riemann table at the origin -/
+
+lemma dy_C_cont : Continuous dy_C := by unfold dy_C dy_Cf; fun_prop
+
+lemma dy_k1_pd (c : Fin 4) : kr_pd dy_k1 0 c = ![5, 0, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => 1 + 5 * s + 0 * s ^ 2) (fun s => by simp [dy_k1]) (by simpa using dy_quad 1 5 0 0)
+  · exact dy_pd_of (fun _ => 1) (fun s => by simp [dy_k1]) (hasDerivAt_const _ _)
+  · show kr_pd dy_k1 0 2 = 0; exact (dy_pd23 (fun t _ => 1 + 5 * t) 0).1
+  · show kr_pd dy_k1 0 3 = 0; exact (dy_pd23 (fun t _ => 1 + 5 * t) 0).2
+lemma dy_k2_pd (c : Fin 4) : kr_pd dy_k2 0 c = ![-1, 0, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => 0 + (-1) * s + 0 * s ^ 2) (fun s => by simp [dy_k2]) (by simpa using dy_quad 0 (-1) 0 0)
+  · exact dy_pd_of (fun _ => 0) (fun s => by simp [dy_k2]) (hasDerivAt_const _ _)
+  · show kr_pd dy_k2 0 2 = 0; exact (dy_pd23 (fun t _ => -t) 0).1
+  · show kr_pd dy_k2 0 3 = 0; exact (dy_pd23 (fun t _ => -t) 0).2
+lemma dy_k3_pd (c : Fin 4) : kr_pd dy_k3 0 c = ![0, -1, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun _ => 0) (fun s => by simp [dy_k3]) (hasDerivAt_const _ _)
+  · exact dy_pd_of (fun s => 0 + (-1) * s + 0 * s ^ 2) (fun s => by simp [dy_k3]) (by simpa using dy_quad 0 (-1) 0 0)
+  · show kr_pd dy_k3 0 2 = 0; exact (dy_pd23 (fun _ z => -z) 0).1
+  · show kr_pd dy_k3 0 3 = 0; exact (dy_pd23 (fun _ z => -z) 0).2
+lemma dy_k4_pd (c : Fin 4) : kr_pd dy_k4 0 c = ![0, 3, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun _ => (-1)) (fun s => by simp [dy_k4]) (hasDerivAt_const _ _)
+  · exact dy_pd_of (fun s => (-1) + 3 * s + 0 * s ^ 2) (fun s => by simp [dy_k4]; ring) (by simpa using dy_quad (-1) 3 0 0)
+  · show kr_pd dy_k4 0 2 = 0; exact (dy_pd23 (fun _ z => 3 * z - 1) 0).1
+  · show kr_pd dy_k4 0 3 = 0; exact (dy_pd23 (fun _ z => 3 * z - 1) 0).2
+lemma dy_k5_pd (c : Fin 4) : kr_pd dy_k5 0 c = ![3, 0, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => (1 + 5 * s) / (1 + 2 * s + 5 * s ^ 2))
+      (fun s => by simp [dy_k5, dy_B, dy_Bf]) (by have h := dy_rat0 1 5 1 2 5 one_ne_zero; norm_num at h ⊢; exact h)
+  · exact dy_pd_of (fun s => (1 + 0 * s) / (1 + 0 * s + 1 * s ^ 2))
+      (fun s => by simp [dy_k5, dy_B, dy_Bf]) (by have h := dy_rat0 1 0 1 0 1 one_ne_zero; norm_num at h ⊢; exact h)
+  · show kr_pd dy_k5 0 2 = 0; exact (dy_pd23 (fun t z => (1 + 5 * t) / dy_Bf t z) 0).1
+  · show kr_pd dy_k5 0 3 = 0; exact (dy_pd23 (fun t z => (1 + 5 * t) / dy_Bf t z) 0).2
+lemma dy_k6_pd (c : Fin 4) : kr_pd dy_k6 0 c = ![0, 1, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => (0 + 0 * s) / (1 + 2 * s + 5 * s ^ 2))
+      (fun s => by simp [dy_k6, dy_B, dy_Bf]) (by have h := dy_rat0 0 0 1 2 5 one_ne_zero; norm_num at h ⊢; exact h)
+  · exact dy_pd_of (fun s => (0 + 1 * s) / (1 + 0 * s + 1 * s ^ 2))
+      (fun s => by simp [dy_k6, dy_B, dy_Bf]) (by have h := dy_rat0 0 1 1 0 1 one_ne_zero; norm_num at h ⊢; exact h)
+  · show kr_pd dy_k6 0 2 = 0; exact (dy_pd23 (fun t z => z / dy_Bf t z) 0).1
+  · show kr_pd dy_k6 0 3 = 0; exact (dy_pd23 (fun t z => z / dy_Bf t z) 0).2
+lemma dy_k7_pd (c : Fin 4) : kr_pd dy_k7 0 c = ![-1, 0, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => (0 + (-1) * s) / (1 + 0 * s + (-1) * s ^ 2))
+      (fun s => by simp [dy_k7, dy_C, dy_Cf]; ring) (by simpa using dy_rat0 0 (-1) 1 0 (-1) one_ne_zero)
+  · exact dy_pd_of (fun s => (0 + 0 * s) / (1 + 2 * s + (-3) * s ^ 2))
+      (fun s => by simp [dy_k7, dy_C, dy_Cf]) (by simpa using dy_rat0 0 0 1 2 (-3) one_ne_zero)
+  · show kr_pd dy_k7 0 2 = 0; exact (dy_pd23 (fun t z => -t / dy_Cf t z) 0).1
+  · show kr_pd dy_k7 0 3 = 0; exact (dy_pd23 (fun t z => -t / dy_Cf t z) 0).2
+lemma dy_k8_pd (c : Fin 4) : kr_pd dy_k8 0 c = ![0, -5, 0, 0] c := by
+  fin_cases c
+  · exact dy_pd_of (fun s => (1 + 0 * s) / (1 + 0 * s + (-1) * s ^ 2))
+      (fun s => by simp [dy_k8, dy_C, dy_Cf]; ring) (by simpa using dy_rat0 1 0 1 0 (-1) one_ne_zero)
+  · exact dy_pd_of (fun s => (1 + (-3) * s) / (1 + 2 * s + (-3) * s ^ 2))
+      (fun s => by simp [dy_k8, dy_C, dy_Cf]; ring) (by have h := dy_rat0 1 (-3) 1 2 (-3) one_ne_zero; norm_num at h ⊢; exact h)
+  · show kr_pd dy_k8 0 2 = 0; exact (dy_pd23 (fun t z => (1 - 3 * z) / dy_Cf t z) 0).1
+  · show kr_pd dy_k8 0 3 = 0; exact (dy_pd23 (fun t z => (1 - 3 * z) / dy_Cf t z) 0).2
+
+
+/-- The sectional values `R^a{}_{bab}` at the origin. -/
+def dy_V : Matrix (Fin 4) (Fin 4) ℝ := !![0, 0, 4, -1; 0, 0, -1, 4; -4, -1, 0, 0; 1, 4, 0, 0]
+
+/-- The Riemann table at the origin: `R^a{}_{bcd} = V_ab(δ_ac δ_bd − δ_ad δ_bc)` for `a ≠ b`, zero otherwise. -/
+def dy_RT (a b c d : Fin 4) : ℝ :=
+  if c = a ∧ d = b ∧ a ≠ b then dy_V a b else if c = b ∧ d = a ∧ a ≠ b then -dy_V a b else 0
+
+set_option maxHeartbeats 0 in
+/-- **Row K4a.** The full Riemann tensor of `diag(−1, 1, B, C)` at the origin. -/
+lemma dy_Riem0 (a b c d : Fin 4) : kr_Riem dy_gk 0 a b c d = dy_RT a b c d := by
+  have hev : ∀ᶠ y in 𝓝 (0 : Fin 4 → ℝ), dy_C y ≠ 0 :=
+    dy_C_cont.continuousAt.eventually_ne (by simp [dy_C, dy_Cf])
+  have hpd : ∀ a b c d, kr_pd (fun y => kr_Γ dy_gk y a b c) 0 d = kr_pd (fun y => dy_Tk y a b c) 0 d :=
+    fun a b c d => kr_pd_congr (hev.mono fun y hy => dy_Γk y hy a b c)
+  have h0 : ∀ a b c, kr_Γ dy_gk 0 a b c = dy_Tk 0 a b c := dy_Γk 0 (by simp [dy_C, dy_Cf])
+  unfold kr_Riem
+  simp only [hpd, h0]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+    simp [dy_Tk, Fin.sum_univ_four, dy_k1_pd, dy_k2_pd, dy_k3_pd, dy_k4_pd, dy_k5_pd, dy_k6_pd, dy_k7_pd,
+      dy_k8_pd, kr_pd_const] <;>
+    simp [dy_RT, dy_V, dy_k1, dy_k2, dy_k3, dy_k4, dy_k5, dy_k6, dy_k7, dy_k8, dy_B, dy_Bf, dy_C, dy_Cf] <;>
+    norm_num
+
+
+lemma dy_g0 : dy_gk 0 = Matrix.diagonal ![-1, 1, 1, 1] := by
+  unfold dy_gk; congr 1; ext i; fin_cases i <;> simp [dy_B, dy_Bf, dy_C, dy_Cf]
+
+lemma dy_g0_inv : (Matrix.diagonal ![(-1 : ℝ), 1, 1, 1])⁻¹ = Matrix.diagonal ![-1, 1, 1, 1] := by
+  refine Matrix.inv_eq_left_inv ?_
+  rw [Matrix.diagonal_mul_diagonal, ← Matrix.diagonal_one]; congr 1; ext i; fin_cases i <;> simp
+
+/-- **Row K4a.** At the origin the Einstein–Λ equations hold with `Λ = 3`: `R_ab = 3g_ab`, and `R = 12`. -/
+theorem dy_vacuum0 : (∀ b d, rn_Ric dy_gk 0 b d = 3 * dy_gk 0 b d) ∧ rn_scal dy_gk 0 = 12 := by
+  have hR : ∀ b d, rn_Ric dy_gk 0 b d = 3 * dy_gk 0 b d := by
+    intro b d
+    rw [dy_g0]
+    fin_cases b <;> fin_cases d <;> simp [rn_Ric, dy_Riem0, Fin.sum_univ_four, dy_RT, dy_V] <;> norm_num
+  refine ⟨hR, ?_⟩
+  simp only [rn_scal, hR, dy_g0, dy_g0_inv]
+  simp [Fin.sum_univ_four, Matrix.diagonal_apply]
+  norm_num
+
+/-- The Weyl pair table at the origin. -/
+def dy_U : Matrix (Fin 4) (Fin 4) ℝ := !![0, -1, 3, -2; -1, 0, -2, 3; 3, -2, 0, -1; -2, 3, -1, 0]
+
+set_option maxHeartbeats 0 in
+set_option linter.unusedSimpArgs false in
+/-- **Row K4b.** At the origin the Weyl bivector operator is `ij_tbl U`. -/
+lemma dy_W0 : ij_W dy_gk 0 = ij_tbl dy_U := by
+  obtain ⟨hR, hS⟩ := dy_vacuum0
+  have hC : ∀ a b c d, rn_Weyl dy_gk 0 a b c d =
+      kr_Rlow dy_gk 0 a b c d - (dy_gk 0 a c * dy_gk 0 b d - dy_gk 0 a d * dy_gk 0 b c) := by
+    intro a b c d; simp only [rn_Weyl, hR, hS]; ring
+  have hRl : ∀ a b c d, kr_Rlow dy_gk 0 a b c d = dy_gk 0 a a * dy_RT a b c d := by
+    intro a b c d
+    simp only [kr_Rlow, dy_Riem0, dy_g0]
+    fin_cases a <;> simp [Fin.sum_univ_four, Matrix.diagonal_apply]
+  ext ⟨a, b⟩ ⟨c, d⟩
+  simp only [ij_W, ij_tbl, Matrix.of_apply, pw_W, dy_g0_inv, hC, hRl, dy_g0]
+  fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+    simp [Fin.sum_univ_four, Matrix.diagonal_apply, dy_RT, dy_V, dy_U] <;> norm_num
+
+/-- **Row K4.** The Gowdy–de Sitter-form metric `diag(−1, 1, B, C)` (`B = 1 + 2t + 5t² + z²`,
+`C = 1 + 2z − t² − 3z²`) is, at the origin, a vacuum-Λ point (`R_ab = 3g_ab`), depends on `z` (`∂_z C = 2`), and has
+Weyl invariants `I = 7`, `J = 3`, so `I³ = 343 ≠ 243 = 27J²`: **Petrov type I**. -/
+theorem dy_typeI :
+    (∀ b d, rn_Ric dy_gk 0 b d = 3 * dy_gk 0 b d) ∧ kr_pd dy_C 0 1 = 2 ∧
+      ij_I dy_gk 0 = 7 ∧ ij_J dy_gk 0 = 3 ∧ ij_I dy_gk 0 ^ 3 ≠ 27 * ij_J dy_gk 0 ^ 2 := by
+  have hW := dy_W0
+  have hE : ∀ q r : Fin 4 × Fin 4, (r = q ∨ r = q.swap) → ij_E dy_gk 0 q r = 0 := by
+    rintro ⟨q1, q2⟩ r hr
+    rcases hr with rfl | rfl <;> fin_cases q1 <;> fin_cases q2 <;>
+      simp [ij_E, dy_g0, dy_g0_inv, Matrix.diagonal_apply, ij_lc]
+  have bW := ij_tbl_blk dy_U
+  have hK2 : (ij_W dy_gk 0 * (ij_E dy_gk 0 * ij_W dy_gk 0)).trace = 0 := by
+    rw [hW]; exact ij_tr_dual bW bW hE
+  have hK4 : (ij_W dy_gk 0 * ij_W dy_gk 0 * (ij_E dy_gk 0 * ij_W dy_gk 0)).trace = 0 := by
+    rw [hW]; exact ij_tr_dual (ij_blk_mul bW bW) bW hE
+  have hI : ij_I dy_gk 0 = 7 := by
+    apply Complex.ext
+    · simp only [ij_I, hW, ij_tr2]; simp [Fin.sum_univ_four, dy_U]; norm_num
+    · simp [ij_I, hK2]
+  have hJ : ij_J dy_gk 0 = 3 := by
+    apply Complex.ext
+    · simp only [ij_J, hW, ij_tr3]; simp [Fin.sum_univ_four, dy_U]; norm_num
+    · simp [ij_J, hK4]
+  refine ⟨dy_vacuum0.1, by simpa using dy_C_pd1 0, hI, hJ, ?_⟩
+  rw [hI, hJ]; norm_num
+
+end ShadowProbe.DynamicsProbe
+
 #print axioms ShadowProbe.RangeProbe.rn_pp_vacuum_iff
 #print axioms ShadowProbe.RangeProbe.pw_nilpotent
 #print axioms ShadowProbe.RangeProbe.pw_IJ
@@ -713,3 +1044,9 @@ end ShadowProbe.DynamicsProbe
 #print axioms ShadowProbe.DynamicsProbe.dy_W2_mukhanov
 #print axioms ShadowProbe.DynamicsProbe.dy_Q_bounded
 #print axioms ShadowProbe.DynamicsProbe.dy_witness
+#print axioms ShadowProbe.DynamicsProbe.dy_gk_form
+#print axioms ShadowProbe.DynamicsProbe.dy_Γk
+#print axioms ShadowProbe.DynamicsProbe.dy_Riem0
+#print axioms ShadowProbe.DynamicsProbe.dy_vacuum0
+#print axioms ShadowProbe.DynamicsProbe.dy_W0
+#print axioms ShadowProbe.DynamicsProbe.dy_typeI
