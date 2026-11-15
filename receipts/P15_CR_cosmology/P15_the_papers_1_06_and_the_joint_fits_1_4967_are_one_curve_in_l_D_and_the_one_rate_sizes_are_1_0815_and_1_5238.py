@@ -104,19 +104,28 @@ jf_src = open(JF, encoding='utf-8').read()
 fa_src = open(FAITH, encoding='utf-8').read()
 
 # ------------------------------------------------- ① the paper prints both figures in one subsection
-_has_106 = '$1.06$ per bin at a ratio of $1.0926$ on the same window' in flat
-_has_shift = 'moves the damping multipole from $1362$ to $1355.21$' in flat
-# the FINDING is printed, not asserted: it is the state 69 may fix, and a gate that asserts it
-# would fail on success -- the named hazard of check_quote_pins.
-_names_exponent = bool(re.search(r'1\.06\$ per bin[^.]{0,400}?(1\.70|exponent|l_\{?eff)', flat))
+# ⛔ THESE TWO READS ARE REGEXES, NOT LITERALS, AND THAT IS THE WHOLE POINT.  This receipt exists so
+# that 69 can REWRITE both sentences -- to name the exponent, or to print a one-rate size.  A pin on
+# `'$1.06$ per bin at a ratio of $1.0926$ on the same window'` would go red on exactly that success,
+# which is `check_quote_pins`'s own named failure mode.  ⇒ What is pinned is the RATIO, a declared
+# INPUT that does not move, while the SIZE and the two MULTIPOLES are captured and reported.
+_m_size = re.search(r'\$(\d\.\d{2,4})\$ per bin at a ratio of \$1\.0926\$', flat)
+_has_106 = _m_size is not None
+_m_shift = re.search(r'moves the damping multipole from \$(\d+(?:\.\d+)?)\$ to \$(\d+(?:\.\d+)?)\$',
+                     flat)
+_has_shift = _m_shift is not None
+_names_exponent = bool(re.search(r'per bin at a ratio of \$1\.0926\$[^.]{0,400}?'
+                                 r'(1\.70|exponent|l_\{?\\?mathrm\{?eff|effective)', flat))
 check("⛭⛔⛭ `r7797` ** ① `P15` PRINTS BOTH FIGURES IN ONE SUBSECTION: `sec:coherence`'s *\"$1.06$ per "
       "bin at a ratio of $1.0926$ on the same window\"* AND, TWO SENTENCES LATER, *\"moves the damping "
       "multipole from $1362$ to $1355.21$\"* ** ⇒ *so a reader meets the two sizes side by side, which "
       "is why they have to be told apart; ⌗ whether the text NAMES the first one's exponent is "
       "PRINTED here and not asserted -- asserting it would redden the day 69 fixes it*",
       _has_106 and _has_shift,
-      f"the 1.06 sentence present {_has_106}; the 1362->1355.21 sentence present {_has_shift}; "
-      f"⌗ does the text name the 1.06's exponent or l_eff: {_names_exponent}")
+      f"the size-at-ratio-1.0926 sentence prints "
+      f"{_m_size.group(1) if _m_size else None} per bin; the damping-multipole sentence moves "
+      f"{(_m_shift.group(1), _m_shift.group(2)) if _m_shift else None}; "
+      f"⌗ does the text name that size's exponent or l_eff: {_names_exponent}")
 
 # ------------------------------------------------- ② alpha and l_D enter only as l_D / sqrt(alpha)
 _m = re.search(r'^R, LD = ([\d.]+), ([\d.]+) / ([\d.]+) \*\* 0\.5', fa_src, re.M)

@@ -208,9 +208,18 @@ check("⛭⛭⛭ `r7797` ** ④ AND THE CROSS-VALIDATION FIGURE GOES `2.9129 -> 
 # ------------------------------------------------------------------ ⑤ P7 and P18 already say three
 _p7_quartet = re.search(r'\$\\approx(\d\.\d{3})\$, \$(\d\.\d{3})\$, \$(\d\.\d{3})\$, \$(\d\.\d{3})\$'
                         r' of the expectation at \$\\ell=2,3,4,5\$', tex7)
-_p7_three = 'cross-validated between two independent transfers to three per cent' in tex7
-_p18_three = 'agreeing to three per cent at every multipole' in tex18
-_p18_min = 'bottoming at $\\ell=4$' in tex18
+# ⛔ WORD-OR-NUMERAL, NOT A LITERAL.  The FINDING is that `P7` and `P18` already round to THREE.
+# A pin on the word "three" would redden the day either paper prints `$3.0$` instead -- which would
+# not change the finding at all, and is `check_quote_pins`'s own named failure mode.  ⇒ Each read
+# accepts the word or the numeral, and the spelling found is reported.
+_THREE = r'(?:three|\$3(?:\.0)?\$)'
+_m_p7_three = re.search(r'cross-validated between two independent transfers to ' + _THREE
+                        + r' per cent', tex7)
+_m_p18_three = re.search(r'agreeing to ' + _THREE + r' per cent at every multipole', tex18)
+_m_p18_min = re.search(r'bottoming at \$\\ell=4\$|minimum (?:falls|sits|stays) at \$\\ell=4\$', tex18)
+_p7_three = _m_p7_three is not None
+_p18_three = _m_p18_three is not None
+_p18_min = _m_p18_min is not None
 _p7_set = tuple(float(x) for x in _p7_quartet.groups()) if _p7_quartet else None
 _p7_which = next((k for k, v in SETS7.items() if _p7_set == v[:4]), None)
 check("⛭⛭⛭ `r7797` ** ⑤ AND THE MOVE TAKES `P15` **INTO** AGREEMENT WITH ITS OWN COMPANIONS: `P7` "
@@ -221,9 +230,10 @@ check("⛭⛭⛭ `r7797` ** ⑤ AND THE MOVE TAKES `P15` **INTO** AGREEMENT WITH
       "moved and `P18` needs nothing. ** *** ⌗ *`P7`'s quartet is read as the same disjunction, for "
       "the same reason*",
       _p7_quartet is not None and _p7_which is not None and _p7_three and _p18_three and _p18_min,
-      f"P7 prints {_p7_set}, which is {_p7_which!r}, and says three per cent {_p7_three}; "
-      f"P18 says three per cent {_p18_three} and states the l=4 minimum {_p18_min}, "
-      f"printing no depth quartet {_p7_quartet is not None}")
+      f"P7 prints {_p7_set}, which is {_p7_which!r}, and spells its cross-validation "
+      f"{_m_p7_three.group(0)[-18:]!r}; P18 spells its own "
+      f"{_m_p18_three.group(0)[-32:]!r} and states the l=4 minimum as "
+      f"{_m_p18_min.group(0)!r}; P7 carries a depth quartet {_p7_quartet is not None}")
 
 # ------------------------------------------------------------------ ⑥ the abstract's trio
 _mt = re.search(r'\$(\d\.\d{2})\$ of the \$\\Lambda\$CDM expectation there, \$(\d\.\d{3})\$ and '
