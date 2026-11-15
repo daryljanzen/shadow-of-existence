@@ -8860,6 +8860,15 @@
   }
  },
  "main": {
+  "suite": {
+   "receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py": {
+    "gates": [
+     "AssertionError @ L205"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43739498373",
+    "since": "c5e30ebb349323d8dbd0dc2f591949b6aab45863"
+   }
+  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_baryon_density_does_not_absorb_the_damping_signature_because_an_envelope_and_a_peak_phase_direction_do_not_overlap.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
