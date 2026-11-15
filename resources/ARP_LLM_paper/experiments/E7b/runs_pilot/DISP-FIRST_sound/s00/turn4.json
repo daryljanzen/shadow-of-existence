@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 0,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "# Handover: is the hours cut necessary for the per-hour gain?\n\nTom, this covers the one open question I'm handing to you, where it stands, and what I'd do next. Everything cited is in the six source documents, numbered as follows:\n\n1. Halden pilot\n2. Varden trial, nine months\n3. Varga & Holm re-analysis\n4. Meta-analysis\n5. Two-year follow-up\n6. Synthesis briefing\n\n## The question\n\nIn discretionary work, how much of the per-hour gain from a four-day week comes from the hours cut itself, and how much from reorganising work, mainly cutting recurring meetings, which might be done without reducing hours?\n\nThis matters for the council. If reorganisation alone delivers most of the gain, the council could get it without paying full salaries for four-fifths of the hours. If the hours cut is what forces the reorganisation and makes it stick, the two can't be separated.\n\n## What's established\n\n- **There is a per-hour gain, and it lasts.** In discretionary work, under controlled measurement, the gain is about 8–10%. In Varden case-processing it was +8.5% at 24 months on system-log hours, with a 95% CI of 3.4 to 13.8 (source 5). The meta-analysis's controlled estimates agree (source 4).\n- **Meetings fell because of the treatment.** Recurring meetings fell from 7.4 to 3.9 hours a week in treated Varden offices, against 7.2 to 7.0 in control offices. The baselines were similar, so the gap opened during the trial (source 5).\n- **A registered mediation test supports the meetings pathway.** It attributes 47% of the gain (28–66) to meetings and 18% (2–34) to fatigue, leaving 35% unexplained (source 5).\n- **No study separated reorganisation from the hours cut.** No study had an arm that reorganised work without reducing hours. Sources 4, 5 and 6 all say so.\n\n## Evidence that bears on the question but doesn't settle it\n\n- **Mediation caveats.** The test used the same 14 offices that generated the hypothesis, so it isn't an independent sample. It assumes no unmeasured confounding, the confidence intervals may be too narrow with so few clusters, and fewer meetings may themselves reduce fatigue, so the two pathways may overlap.\n- **The meeting-audit offices.** Two Varden *control* offices cut their own meetings without changing hours (7.1 to 5.0 hours a week). Their output per hour was +4.1% against their own previous six months. That is two offices, a before-and-after comparison, and only six months (source 5). It suggests part of the gain is available without the hours cut. It doesn't show whether meeting cuts last without the pressure of fewer hours.\n- **The \"forcing device\" accounts.** Halden managers (source 1) and Varden interviews (source 2) describe the hours cut as what finally got meetings cancelled. This is qualitative evidence, but it is the best evidence for the other side of the question.\n- **The meta-analysis can't help.** Only three studies measured meetings, and none tested them as a mediator (source 4).\n\n## My own unverified check: please redo it before relying on it\n\nUsing source 5's figures, I did a rough time-accounting:\n\n- **Treated offices.** Weekly hours went from about 37.9 (baseline, source 2) to about 33.4 (−12% on timesheets). Meetings went from 7.4 to 3.9. So non-meeting time fell only about 4% (30.5 to about 29.5).\n- **Control offices.** Non-meeting time rose slightly (0.2 hours).\n- **Result.** With output per FTE at −3.4% relative to control, output per *non-meeting* hour barely changed (about +1%).\n\nIf that holds, nearly all of the gain comes from moving time out of meetings, not from staff working faster. That would mean the mediation estimate understates meetings, and the policy reading changes from \"rested workers are more productive\" to \"a shorter week forced out low-value time.\"\n\nThe same accounting predicts about +7% for the audit offices, against the +4.1% observed. That is the same order of magnitude, but not a close match.\n\nThe check rests on assumptions I haven't verified:\n\n- Meetings produce no counted output.\n- Control hours stayed at roughly the same baseline (source 2 only says \"stable\").\n- The system logs include meeting time.\n\nSource 5 describes the logs as recording \"time staff are working on cases.\" If that is literal, the logs should show hours falling by about 4%, not 11%, so I suspect they record total logged-in time. Nobody else has seen this check. Please work the numbers yourself from the sources before reading mine closely, so that any error of mine doesn't become yours.\n\n## Next steps I'd suggest (your call)\n\n1. **Redo the time accounting** and settle the log-hours definition. The Varden evaluation unit (Lindqvist, Mahony, Rao) are the people to ask. They could also report output per non-meeting hour directly.\n2. **Ask the same authors about the audit offices.** In particular, did meeting time creep back after the six months reported? The answer bears directly on whether reorganisation sticks without the hours cut.\n3. **Consider a direct test.** The decisive design has three arms: hours cut, meeting audit with no change in hours, and control. The council could run a cheap version itself by auditing meetings in some case-processing teams without changing hours, before committing to a four-day week. That may be worth putting to the working group as an option in its own right.\n\n## Pending\n\nPriya (finance) is doing a cold read on a closely related question: whether fewer meetings explain much of the per-hour gain. She has the five studies only, not our briefing or draft, and doesn't know about my time-accounting check. Her reply is due [date].\n\n- **Don't share our view with her before she replies.** She hasn't seen the briefing or my check, and her read is only useful if it stays that way.\n- **When it arrives, compare it with your own working.** If she reaches the meetings conclusion independently, that is real corroboration. If she disagrees, follow that up first.\n\n## Practicalities\n\nYou can make decisions within this question on your own, including contacting the Varden authors. Anything that changes the draft recommendation should go to [name] while I'm away. I'm back on [date].\n\nThanks, and good luck.\n[Name]\n\n---\n\n**A note on what's included.** Unlike the notes to the reviewers, this one gives our current view, because Tom is taking over the work and needs to know where it stands. I've marked the time-accounting check as unverified and asked him to redo it before looking at mine closely, so that he checks it rather than inheriting it.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1468,
+  "cache_read_input_tokens": 92035,
+  "output_tokens": 3600,
+  "output_tokens_details": {
+   "thinking_tokens": 1419
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1468,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3600,
+    "cache_read_input_tokens": 92035,
+    "cache_creation_input_tokens": 1468,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1468
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10216700000000012,
+ "started": "2026-11-15T06:37:31.379232+00:00",
+ "wall_s": 38.24,
+ "task_index": 4
+}

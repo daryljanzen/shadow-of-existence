@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 1,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nWhile I'm away, this open question is yours: **does the per-hour productivity gain need the cut in hours itself, or could reorganising work without reducing hours (mainly cutting meetings) deliver much of it?** It matters for the council because if reorganisation alone captures most of the gain, the council could get it without paying full salaries for fewer hours.\n\nBelow is where I've got to, with each point marked by how firmly it's supported. Please check anything you rely on against the sources rather than this note. My summary is a compression, and the team has agreed among itself enough that we may share blind spots.\n\n**The short answer: it's open.** No study in the six documents had an arm that reorganised work without cutting hours, so none can answer the question directly.\n\n**What bears on it**\n\n*Supported:*\n- **Meetings carry part of the gain.** The Varden 24-month follow-up (source 5) ran a registered mediation analysis. It attributed 47% of the per-hour gain (95% CI 28–66%) to fewer recurring meetings, 18% (2–34%) to reduced fatigue, and left 35% unexplained. Meeting time in treated offices fell from 7.4 to 3.9 hours a week, against 7.2 to 7.0 in control offices.\n\n*Suggestive only:*\n- **Reorganisation without an hours cut may help.** In source 5, two Varden control offices ran a \"meeting audit\" at month 15 without changing hours. Their meeting time fell from 7.1 to 5.0 hours a week, and output per hour rose 4.1% against their own previous six months. That is two offices, with no comparison group and a smaller cut. It is the only direct evidence on reorganisation alone.\n- **The hours cut may be what triggers reorganisation.** In the Halden pilot (source 1), 47 of 58 managers mentioned cutting meetings, and several called the reduced schedule \"a forcing device\". Nothing quantifies this. Note the tension with the previous point: if the hours cut is what makes reorganisation happen and last, reorganisation alone might not hold.\n- **The nine-month Varden analysis (source 2)** found a correlation of r = 0.71 between meeting cuts and per-hour gains. It was exploratory, unregistered and across seven offices. Source 5 supersedes it.\n\n*Not informative:*\n- The meta-analysis (source 4) found only three studies measuring meetings and said it could not assess the mechanism.\n- The Varga and Holm re-analysis (source 3) dismissed the meetings explanation as post hoc. That predates the registered test, and it misdescribed the nine-month analysis, so I'd give it little weight on this question.\n\n**Loose ends I hadn't resolved**\n\n1. **Mediation share vs. time accounting.** My rough calculation, assuming both arms started at about 37.9 timesheet hours, suggests non-meeting hours in treated offices fell about 4% relative to control while output fell 3.4%. If meeting time produced nothing, removing meetings would account for nearly all the gain, not 47%. Productive meeting time could explain the gap, or the mediation may be answering a different question. This is unresolved, and my calculation is the weaker evidence.\n2. **What \"system log\" hours include.** Source 5 doesn't say whether log hours include time in meetings, or whether there is a log baseline. This affects how to read the mediation analysis.\n3. **Precision of the mediation estimate.** The effective sample is 14 offices. If office-months were treated as independent, the 28–66% interval is too narrow.\n4. **Control-office meeting figures.** Two of seven control offices fell by 2.1 hours each, which should pull the control average down about 0.6 hours. The reported fall is 0.2 hours, and source 5 doesn't explain why.\n5. **The audited control offices affect the trial estimate.** From month 15, those two offices narrow the treated–control gap. The 24-month estimate excluding them would help.\n\nI [have / have not] raised these with the Varden authors. *[Edit before sending.]*\n\n**What would settle it:** a three-arm comparison of reorganisation only, reduced hours, and business as usual, ideally with follow-up long enough to see whether reorganisation without the hours cut lasts. Short of that, look for any organisation that cut meetings without changing hours and kept records. The Varden control offices may also have data after month 21.\n\n**Practical points**\n- Priya (finance) is doing a cold read on the meetings question, due [date]. Please don't share our views with her before she reports. Her independence is the point. Her notes should be useful to you once they're in.\n- The evidence briefing (document 6) states \"about half the gain comes from meetings\" more firmly than the evidence supports. Treat it as our reading, not a finding.\n- You don't need to wait for me to make calls. If you reach a view, write it up with your reasoning and share it so others can check it. For anything that commits the council or other people's time, talk to [name] first.\n\nBack on [date]. [Name] can reach me in an emergency.\n\nThanks,\n[Name]\n\n---\n\nTwo notes on choices I made:\n\n- **This note gives our current view, unlike the notes to Priya and Mr. Haas.** Tom is taking over the work, not checking it, so he needs our state of knowledge to avoid repeating it. To keep him from simply inheriting our view, I've marked how firmly each point is supported and asked him to check the sources.\n- **Fill in the bracketed placeholders before sending,** especially whether the loose ends were raised with the authors. I don't know whether they were.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1208,
+  "cache_read_input_tokens": 87643,
+  "output_tokens": 3057,
+  "output_tokens_details": {
+   "thinking_tokens": 1200
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1208,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3057,
+    "cache_read_input_tokens": 87643,
+    "cache_creation_input_tokens": 1208,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1208
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0883486,
+ "started": "2026-11-15T06:38:41.928219+00:00",
+ "wall_s": 33.07,
+ "task_index": 4
+}
