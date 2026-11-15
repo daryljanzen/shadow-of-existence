@@ -15,6 +15,151 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7799+cc66` — ALL THREE ITEMS. **THE NET IMPROVES, `+1.72 → +1.57`.** ⛔ AND THE RECEIPT YOU CITE BESIDE THAT SCORING DOES NOT COMPUTE IT
+
+**Landed, gate-green, pushed** (`r7799+cc66.1`, **10 of 10**, 40 of 40 figures pinned; registration in
+its own commit before any of the three computations existed). All three items in one receipt, as you
+allowed. PR is new — `#778` merged, so this is on a fresh draft.
+
+---
+
+### ① THE SCORING — AND THE NET **IMPROVES**
+
+Re-run through the likelihood instrument's **own source** with only its one declared `depth` line
+rewritten:
+
+| depths | ℓ=2 | ℓ=3 | ℓ=4 | ℓ=5 | total 2–10 | octopole range |
+|---|---|---|---|---|---|---|
+| control — **the cited receipt's** | −2.63 | +1.31 | +2.10 | +0.97 | **+1.804** | +0.293 … +3.819 |
+| arm of record — **what you print** | −2.56 | +0.93 | +2.16 | +1.12 | **+1.717** | +0.384 … +3.494 |
+| **ONE RATE** | **−2.53** | **+0.99** | **+2.02** | **+1.03** | **+1.573** | **+0.210 … +3.391** |
+
+**The net improves by `0.144`, from `+1.72` to `+1.57` — the construction is *less* disfavoured, not
+more.** And the move is **not uniform**: the quadrupole's reward shrinks, ℓ = 4's penalty shrinks
+more, and **the octopole's penalty grows**. The sector stays a wash on either clock; no significance
+is formed.
+
+#### ⛔ The defect that came out of registering this, before I computed anything
+
+You print `−2.6`, `+0.9`, `+2.2`, `+1.1`, a net of `+1.7`, a range of `+0.4` to `+3.5`. **Those are
+the arm-of-record row.** The receipt cited beside them — `P15_verify_lowell_likelihood_v2` — pins the
+**control** row (`+1.80`, `+1.31`, `+2.10`), because it still runs on the older control depths
+`0.473 / 0.410 / 0.356 / 0.676`.
+
+**So the receipt named beside your scoring figures does not compute them.** Gate ② states it as a
+measurement rather than a reading: the instrument's **own** assertions fail (`rc = 1`) on the
+arm-of-record and one-rate depths while running clean (`rc = 0`) on its own. ⇒ *When you land the
+one-rate scoring, that receipt needs its depths moved too, or it will pin a third set that matches
+neither the paper nor the arm.*
+
+#### `2 ≤ ℓ ≤ 8` and `2 ≤ ℓ ≤ 10` give one number for a **reason**
+
+`d_ℓ = 1` and `r_ℓ = 1` at ℓ = 9, 10 make `r(1/d − 1) + ln d` vanish **term by term**. Gate ④ asserts
+the *terms* are zero, not that the totals match — a match could be a cancellation, and this is not
+one. **So you can keep printing one figure for both ranges.**
+
+---
+
+### ② THE QUADRUPOLE-ONLY SHARE
+
+| depths | p | per cent |
+|---|---|---|
+| **ONE RATE** | **0.0531** | **5.3 %** |
+| arm of record (four-decimal) | 0.0555 | 5.6 % |
+| your two-decimal sentence `0.48/0.44` | 0.0564 | 5.6 % |
+| the `0.487/0.435` adjudicated background | 0.0537 | 5.4 % |
+| **ΛCDM** | **0.0667** | **6.7 %** |
+
+⛭ **ΛCDM's `6.7` does not move with the depths** — it is the `d₂ = d₃ = 1` case — so **that figure
+needs no edit**, and gate ⑤ asserts it by getting the same `0.0667` on all four sets.
+
+#### ⛔ And you print **two** values for this one statistic
+
+`$p=0.056$` in `sec:largescale` and `$5.4$ per cent` in `sec:scope`. They sit on **different depth
+inputs**: `0.0564` is what the receipt gets from your own *two-decimal* sentence, `0.0537` is the
+adjudicated-background set — and **the arm-of-record four-decimal depths give `0.0555`, i.e. `5.6 %`,
+which is neither printed value.** *One statistic, printed twice, on two inputs — the same class as
+the comb and as `1.06` against `1.4967`.* **On the one rate both become `5.3`, which is one number,
+so landing it also closes this.**
+
+---
+
+### ③ THE FROZEN BUILD — AND THE ONE THING I COULD NOT MEASURE
+
+**Your `3.2` and `1.9` reproduce exactly**, and I can name them: the **h2** frozen leg at the
+**distances** point, **3.167 %** against the exact transfer (at ℓ = 4) and **1.809 %** against the
+decoupled build (at ℓ = 3). Named by leg *and* point — the banked **unconverged** leg gives
+`6.193 %`, and the intermediate counts `3.818` (`NS3_1800`) and `3.535` (`NS3_2400`), so *"once its
+late step count is converged"* is doing real work in that sentence.
+
+⛔ **But the converged ONE-RATE leg is not banked.** `p15_lowell_depths_frozen_converged_leafrec1.npz`
+carries one-clock legs only at the **control** point. So I did what the registration said I would,
+rather than improvising:
+
+1. **measured** that the late-step correction is clock- **and** point-stable (`NS3_1800 → h2` on the
+   one clock at control against the same on (L) at distances: same sign at all seven multipoles, same
+   shape, peaking at ℓ = 4);
+2. **measured** which carry form is stabler — the **additive** one (`0.000500` against `0.000689`).
+
+| one-rate frozen | vs exact transfer | vs decoupled |
+|---|---|---|
+| carry-free, **unconverged** | 6.372 % | 3.443 % |
+| **additive carry** | **3.395 %** | **1.767 %** |
+| multiplicative carry | 3.351 % | 1.740 % |
+
+⇒ **`3.2 → 3.4` against the transfer (worsens slightly) and `1.9 → 1.8` against the decoupled build
+(improves slightly).**
+
+⚠ **These two are a CARRY, not a measurement at the point, and the receipt says so where the numbers
+are rather than in a footnote.** If you want them measured, that is an instrument run at the
+distances point with `SPLITCLOCK` unset and the converged late step count. **Your call — say the word
+and I'll launch it.** Everything else in this round is carry-free.
+
+---
+
+### ⚠ One thing of yours I had to clean up, and one thing I'd ask
+
+Your `r7799` landing edited my `r7797` receipt's read of the moved-multipole sentence to accept the
+clause naming the multipole. **That worked exactly as an `ALT-OK` key should** — the sentence moved
+from `1362/1355.21` to `1497/1490` and the row held. But it **minted a new quote-pin key and left the
+old one stale**, and an unadjudicated key blocks CI for whoever pushes next. Both are handled in
+`r7799+cc66.2`: the new key adjudicated with the same reading as the row it replaces, the superseded
+row removed in the same pass.
+
+⇒ *Worth knowing for next time: editing a read in one of my receipts mints a key. The baseline row is
+the cheap part; I'm happy to keep taking it, I just need to know the edit happened.*
+
+### What this round taught me, recorded in the receipts rather than here
+
+1. ⛔ **Nine new quote-pin keys became three** once I made the paper reads rewrite-tolerant. Five were
+   pins that would have **failed on success** — gate ② pinned your current scoring digits, ⑦ pinned
+   `3.2`/`1.9`, ⑥ asserted you still carry both quadrupole-only values. You land all three of those
+   changes out of this very receipt. The fix went in the **receipt**, not the baseline: the figures
+   are captured and the row reports *which* state obtains, while the hard assertions are the
+   measurements.
+2. ⛭ **A precision trap.** The likelihood instrument formats its total and range to **one decimal**,
+   so my first form pinned `+1.804` and `+0.293` against values parsed from that stdout and reddened
+   four gates. Fixed by taking full precision from the law **and asserting the law reproduces the
+   instrument's stdout at the instrument's own precision** — which makes the law a *validated
+   reading* rather than a second implementation.
+
+### Failability — measured, not asserted
+
+| probe | reddens | holds |
+|---|---|---|
+| one-rate depths ×1.01 | ③ ⑧ ⑨ | ① ② ④ ⑤ ⑥ ⑦ ⑩ |
+| arm-of-record depths ×1.01 | ② ③ ⑦ ⑨ | ① ④ ⑤ ⑥ ⑧ ⑩ |
+| converged frozen leg → the unconverged one | ⑦ ⑧ ⑨ | ① ② ③ ④ ⑤ ⑥ ⑩ |
+
+⛭ *P1 leaving ⑤ green is a **property**, not a gap: the quadrupole-only share depends only on the
+ratio `d₂/d₃`, so a common rescaling of the depths leaves it exactly unchanged.*
+
+### ⚠ Still yours
+
+Which depths the paper **should** score on; which of the two quadrupole-only values to keep (the one
+rate makes it moot); whether to launch the frozen one-rate run; and the comb receipt's filename
+rename. `ACOUSTIC`'s `POLSAVE` still writes no `config`.
+
 ## ⚑ `r7797+cc66` — ALL THREE ITEMS. ⛔ **ITEM ②'s ANSWER IS NEITHER OF THE TWO YOU OFFERED, AND IT CHANGES WHAT YOU SHOULD PRINT.** PLUS EVERY MULTIPOLE `ℓ = 2..8`, THE CROSS-VALIDATION AT `3.0`, AND THE LADDER
 
 **Landed, gate-green, pushed.** Two receipts: `r7797+cc66.1` (item ②, **10 of 10**) and
