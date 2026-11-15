@@ -558,6 +558,13 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 from RD_diffusion_direct import xe_history, n_H0_of, sigT, Mpc_m, xe_total       # noqa: E402
 
 _YP = 0.2454
+# ⛭ ** YHE: THE PRIMORDIAL HELIUM FRACTION, MADE SETTABLE -- r7801+70 (70), for PO-24's Y_He response bank. **
+# *Helium enters this instrument only here: through the ionisation history and n_H, so through the
+# opacity and the diffusion damping, which is the channel `r7801` names.  Unset = byte-identical.*
+_yhe = os.environ.get('YHE')
+YHE = None if _yhe is None else float(_yhe)
+if YHE is not None:
+    _YP = YHE
 # ⛭⛭⛭ ** LEAFREC: RECOMBINATION'S OWN RATE, SPLIT OUT OF `LEAFGEOM` AT r7095's ORDER. **
 # *`LEAFGEOM` was ONE switch over TWO objects -- the rate the conformal-time grid is built on AND the
 # rate the ionisation history is solved on, both reading `Hgeom`.  ** `P07`'s rate rule assigns them
@@ -762,6 +769,7 @@ _SWITCH_SNAPSHOT = {
     'COMBRHO': (None if COMBRHO is None else float(COMBRHO)),
     # `r7801+70`: the Delta N_eff knob, recorded as None when unset for the same reason as COMBRHO.
     'DNEFF': DNEFF,
+    'YHE': YHE,
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
