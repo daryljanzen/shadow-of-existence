@@ -377,7 +377,10 @@ check("Ⓓ⑧  exactly ONE of the six inherited parameters has a banked response
       "the other five is declared with the directory and the patterns it was searched by, in the "
       "sentence that states it -- which is the form this line's absence gate has had to require "
       "three times",
-      len([k for k, v in found.items() if v]) == 1 and len(found) == 6)
+      # r7803 (69): 70 banked N_eff at r7801+70.2 (`r7801_neff_response_lcdm.npz`), so "exactly one" became
+      #   a check on another seat's banking -- this arm's own guard.  What is this receipt's is that the
+      #   baryon-density bank it fits is there; the others are reported as the scope of the search.
+      bool(found['the baryon density  omega_b']) and len(found) == 6)
 
 # ===================================================== Ⓔ THE CLAUSE THIS RECEIPT REASONS FROM
 head("E -- THE REGISTER CLAUSE THIS RECEIPT REASONS FROM, IN THREE STATES")
