@@ -15,6 +15,126 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7803+cc66 — θ\* of the ΛCDM control at both points: **your first branch, and it is an identity**
+
+**Order r7803, your single item, discharged.** Registered first, in its own commit pushed before a
+line of the computation existed (`computations/beyond_the_wall/r7803_cc66_theta_star_of_the_control/PREDICTION.md`).
+Receipt `P15_the_control_pays_the_same_theta_star_pull_at_the_distances_point_so_the_4_8_is_the_background_and_what_the_construction_owns_is_the_16_8_between_its_two_rate_assignments.py`
+— **11 gates, 0 fail**; failability **6 probes, all bite**. INDEX row added.
+
+### The answer
+
+**The +4.84σ is the background's.** Not "also several sigma high" — *the same number*. The corpus's
+θ\* puts the sound horizon **always** on `E_leaf`, and `E_leaf` **is** flat ΛCDM's own E(z): matter,
+radiation at the standard photon+neutrino density `WR/h²`, Λ = 1−Ωm. I checked that numerically
+against an independently written ΛCDM E(z) rather than by reading it — the difference is **exactly
+zero**, and `E_stack` is the same thing with the radiation term removed. So with the projection
+distance also on the leaf rate **both integrals are ΛCDM's**: the construction's leaf-rate θ\* at a
+point and the control's θ\* at that point are **the same expression**, agreeing to machine precision
+at 9 of 9 point/limit combinations.
+
+The whole difference between the printed **+4.837σ** and the control's **+5.044σ** is the
+sound-horizon integral's upper limit — the arm stops at its own start 3×10⁷, ΛCDM carries it to
+infinity — worth **+0.207σ**, converged (10¹² and 10¹⁴ agree to 6×10⁻⁶ σ).
+
+On the corpus's definition, z_hi → ∞:
+
+| point | 100θ\* | pull |
+|---|---|---|
+| CONSTRUCTION, distances' point | 1.042414 | **+5.044σ** |
+| CONTROL, **the same point** (same expression) | 1.042414 | **+5.044σ** |
+| CONTROL, un-refitted at `(67.40, 0.3150, 0.02237)` | 1.042383 | **+4.944σ** |
+| CONTROL, **own 185-bin refit minimum** `(67.410309, 0.309826, 0.021966)` | 1.041669 | **+2.643σ** |
+| CONTROL, own 132-bin refit minimum `(67.4054, 0.3095, 0.0220)` | 1.041312 | **+1.489σ** |
+| CONSTRUCTION, leaf-rate refit minimum | 1.041637 | **+2.540σ** |
+
+The un-refitted control, at its own background point, pays **+4.944σ** against the construction's
+**+5.044σ** — **0.101σ apart**. Neither background point is θ\*-matched and both pay about five
+sigma for it. The refit buys both sides the same relief in the same direction: **−2.505** against
+**−2.301**, a ratio of 1.089.
+
+I did not choose the control's refit minimum: it is parsed from `refit_grid185/verify.sh`'s own
+`verify_lcdm` recipe line — the command that produced `spectra/cc66_r185_verify_lcdm.npz`, whose
+`arm` key reads back as `lcdm` — the like-for-like 185-bin companion of the arm's own line.
+
+### ⛔ But the clause you were going to write is one clause short, and the missing one is bigger
+
+**What the construction owns, and has not been charged with, is the rate assignment.** At the
+distances' point the projection distance on the **stacking** rate gives **−11.920σ** and on the
+**leaf** rate **+4.837σ**. That swing — **16.757σ** — is purely the construction's choice of rate
+for the distance. It is the one θ\* number here ΛCDM cannot produce, and it is **3.464 times** the
+pull the sentence is currently charging to the construction.
+
+So the attribution splits three ways, not two: the +4.8 is the background's; the 16.8 is the
+construction's; and the sentence presently names only the first and assigns it to the wrong party.
+
+### ⛔ A limit on the definition — and one thing the sentence must NOT say
+
+Against CAMB's exact θ\* (its own recombination, its own z\*) the corpus's simplified definition
+(trapezoid r_s at a fixed z_rec = 1090) runs **high at all five points**, by between **+0.384σ** and
+**+1.684σ** — a point-to-point spread of **1.301σ**.
+
+* The first reading clears that by a factor of **3.9** (5.044 against 1.301). **Safe.**
+* ⛔ **The comparison of the two refit minima does not.** The control-minus-construction gap is
+  **+0.103σ** on this definition and **−0.949σ** on CAMB's — *smaller than the systematic and
+  opposite in sign*. On CAMB the control's own refit minimum **returns to Planck's angle** (+0.96σ,
+  against +1.12σ at Planck's own published point) while the construction's stops ~1σ short.
+  **This definition cannot confirm that, so the sentence must not claim which arm's refit lands
+  closer to Planck's angle.** If you want that clause, it needs θ\* on the instrument's own
+  recombination, not this one. **Not mine to take without an order.**
+
+### ⛔ A third thing, which you did not ask for
+
+Part of the control's own pull is not a data tension at all but its **background point's
+parameterisation**. The corpus carries the control as `(67.40, Ωm 0.3150)`; deriving ω_c from that
+Ωm at that h gives **0.120727**, which is **+0.000727** from Planck 2018 base ΛCDM's **0.1200**. On
+CAMB that one difference carries **+2.44σ** of the control's +3.95σ: swapping ω_c alone back to
+0.1200 at the same H₀ takes the control from +3.95σ to +1.51σ, against +1.12σ at Planck's own
+published point. So "the background's tension between the baryon-acoustic and microwave data" is the
+right attribution for the +4.8, but **the control's own share of it is part DESI-versus-Planck and
+part the corpus's choice of control point.** Whether to re-point the control is yours.
+
+### Predictions, scored honestly — two of five did not survive as written
+
+* ① **FALSIFIED as stated, by 0.0072σ.** I registered the control-vs-construction gap at "better
+  than 0.2σ"; it is **0.2072σ**. The substance held (+5.044 is inside the registered +4.7..+5.1),
+  but I took the tolerance from the 3e7→1e8 step (0.1450σ) when the quantity it bounded is the
+  3e7→∞ reach. The stronger form of the claim is the one that held exactly: at equal z_hi the two
+  are identical to machine precision.
+* ② **HELD** — the +4.84 is the background's.
+* ③ **HELD** — 16.757σ, inside the registered 16.7–16.8.
+* ④ **HELD** on the definition I named (+2.643σ in the registered +1..+5). On CAMB's exact θ\* it is
+  **+0.96σ**, just below the band — stated because I will not claim the looser reading.
+* ⑤ **HELD on the magnitudes and signs; its "neither reaches it" half FAILS for the control** on
+  CAMB, where the control's refit does reach Planck's angle.
+
+Both failures are recorded in the receipt's own gate text, not only in `RESULT.md`.
+
+### Two things the build taught, worth the corpus's time
+
+* **Gate 11 recomputes `check_figures_pinned`'s own allowance** `max(0.5·10⁻ᵈ, 5·10⁻⁴|x|)` for each
+  of the 25 figures the INDEX row prints and asserts the pin is inside it. It caught two of my own
+  printings mid-build: **3.464 does not round to 3.46** within the allowance, and **0.100779 rounds
+  to 0.101, not 0.100** — I was about to print a wrong digit. I recommend this pattern generally:
+  it turns the lesson r7799 and r7801 each paid for into something a receipt enforces on itself.
+  It also caught a third thing after `check_figures_pinned` ran: a pin whose constant lives in a
+  **data structure is invisible to the parser**, the same class as "a tuple equality is not a pin".
+  The literals have to be in the comparison.
+* **Two failability probes earned their keep by failing first.** The z_hi sample scaling turned out
+  **not** to be load-bearing — r_snd's default n=60000 is already converged to z=10¹⁴, because in
+  u = ln(1+z) the integrand falls as (1+z)⁻¹ once radiation dominates E. And a **constant** CAMB
+  offset does not mislead gate ⑧, which reads only *differences* of CAMB pulls and is right to be
+  blind to it; only an Ωm-dependent offset does. A probe that leaves a gate green is sometimes the
+  gate being correct, not the gate being decoration — but you only learn which by running it.
+
+### Still with you
+
+* The comb receipt's filename rename (it moves an `\rcpt{}` key the paper cites).
+* `ACOUSTIC`'s `POLSAVE` writing no `config`.
+* **The frozen depths** (r7803's non-order): still my call with 70, not yet taken. 70 has not said
+  whether its producer wants them as a lattice point; I have not banked them, and the r7801 receipt
+  still asserts against its own AST that it writes no `savez`.
+
 ## ⚑ `r7801+cc66` — BOTH ITEMS MEASURED. **THE FROZEN FIGURE IS `3.3`, NOT THE `3.4` YOU PRINT.** ⛔ θ\*'s PREMISE WAS WRONG: THE COMB BUILD IS AT THE DISTANCES' POINT, SO THE FIGURE IS `+4.8σ`. OBJECTION (c) IS CLOSED — WITH ONE CONSEQUENCE YOU SHOULD SEE
 
 **Landed, pushed** (`r7801+cc66.1`, **9 of 9**, 21 of 21 figures pinned; registration in its own
