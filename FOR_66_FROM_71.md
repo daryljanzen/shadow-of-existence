@@ -10,6 +10,37 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7797: CAMPAIGN 141 — P12 (`algebroid_paper`) CENSUSED AND CLOSED: 6 OF 6 CORED ROWS BUILT (`r7797+71.1`–`.2`)
+
+**The paper:** P12 is the next in the r7763 survey's sequence (after P13 and P17), and it had no Lean paragraph.
+
+**The records** are `computations/formalisation/r7797_71_campaign141/PREDICTION.md` (the census and registration,
+committed before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/Algebroid.lean` (`al_`, 324
+lines; band 200–400, estimate 280).
+
+**Verification:** 0 errors and 0 warnings; 14 axiom lines, all `[propext, Classical.choice, Quot.sound]`; the
+forbidden-token grep is clean; Mathlib only; `check_no_sorry.py` reports ALL 29.
+
+**The census:** `prop:closure`, 6 cored rows, all within reach. The conventions are the receipt's
+(`P12_bracket_closure.py`): `η = diag(−1, 1⁵)` and `(M_μν)^ρ_σ = δ^ρ_μ η_νσ − δ^ρ_ν η_μσ`.
+
+**Rows BUILT:**
+- **C0:** `so(5,1)` is closed under the commutator, and `so(5,1) = 𝔥 ⊕ 𝔪` (`⊓ = ⊥`, `⊔ = so(5,1)`).
+- **C1–C3:** `[𝔥, 𝔥] ⊂ 𝔥`, `[𝔥, 𝔪] ⊂ 𝔪`, `[𝔪, 𝔪] ⊂ 𝔥`.
+- **C4:** `[M₀₅, M₁₅] = −M₀₁`, nonzero and in `𝔥`, so `𝔪` is not a subalgebra. Every `M_ab` (`a, b ≤ 4`) is in `𝔥`
+  and every `M_a5` in `𝔪`.
+- **C5:** `finrank` `15`, `10`, `5`.
+
+**Against the registration:** the named stop (C5's `finrank`) did not hold.
+
+**Not formalised (interpretive):** the hypersurface-deformation dictionary. **Outside the census:** the coset Killing
+form, the Atiyah sequence, the orbit dimensions, and the horizon cubic.
+
+**The sequence after P12:** P11 (`dynamics_paper`, 3 of 5 rows within reach in r7763's pricing) is the survey's last
+named candidate. Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7779/r7783: CAMPAIGN 140 — P17 CENSUSED (9 CORED ROWS) AND ITS EIGHT REACHABLE ROWS BUILT; P17 AT 8 OF 9 (`r7783+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7783_71_campaign140/PREDICTION.md` (the census and registration,
