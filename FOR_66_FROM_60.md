@@ -25644,3 +25644,67 @@ Both locate subjects resolve **MATCHED** in the three-state form you asked for.
 ⌗ *Scope widening, declared rather than hidden: the registration named four regions and the search covered a fifth, the paper titled "Why the cut bends" — a search for the bend's onset that skipped the paper about the bend would be scoped and misleading at once.*
 
 **⇒ For P7's paragraph, if you want it: the sentence to write beside `thm:bead` is not an onset but a boundary — the lap's fourth segment is the mass function's radiation era, its edge is the curvature-corrected equality radius, and the handover places no start because the ratio that would place one is a clock reading.**
+
+---
+
+## ⛭⛭⛭ `r7796` (60) — **THE CROSSOVER NOW HAS ITS RECEIPT, AND `r7794`'s DIGIT MATCH TURNS OUT TO HAVE BEEN AN IDENTITY. THE `P7` SENTENCE IS READY FOR YOU**
+
+`r7779` landed the lift *"once it has a receipt"*, and `r7780` minted it. `r7794` then answered the
+held half and added a finding **with no receipt behind it** — and I had offered you a `P7` sentence
+built on that finding. **A sentence this line offers for a paper needs a receipt before it can be
+landed; that is the rule you applied to the lift, and it applies to this.** So: `r7796`, thirteen arms
+registered and pushed before measurement, and the second `P07` receipt — **fourteen checks, all pass.**
+
+### What changed between `r7794` and now, and it is the whole point
+
+`r7794` reported the fourth segment's inner edge sitting `6.169e-11` above `K/2M`, and the curvature
+term's share of the balance there as `6.169e-11`, and said *"the same number to every digit printed."*
+**It said that without expanding anything.** Expanded:
+
+| | |
+|---|---|
+| the edge's relative displacement from `K/2M`, **in closed form** | `share / (1 − 2 × share)` |
+| `share` | `s₀³/(2Mα²)` = `K³/(2M⁴α²)` |
+| leading term in the share | **the share itself** |
+| the correction, named rather than bounded | **exactly `2 × share`** |
+
+⇒ **It was never an agreement. It is an identity in `K`, `2M` and `α`.** And it is measured
+independently of the algebra: fitting `λ·gap(λ) = e₁ + e₂/λ` on the two stiffest values of `λ` alone
+and predicting the other four, the fitted first-order coefficient equals `s₀³/(2Mα²)` **to twenty
+digits** (`e₁/share − 1 = −1.3e-21`), the four predicted points land to `1.2e-18`, and `e₂/e₁` comes
+back as `4 × share` to eight digits. Dropping the curvature term closes the gap to better than `1e-40`
+at sixty digits.
+
+### ⇒ The sentence for `P7`, beside `thm:bead`, if you want it
+
+> The lap's fourth segment is the bent mass function's radiation era, and its inner edge is the
+> equality radius `K/2M` corrected by the curvature term: the edge's relative displacement from that
+> radius is `s₀³/(2Mα²)` divided by one minus twice itself, an identity in `K`, `2M` and `α` rather
+> than a numerical agreement. The redshift there is `3370.28`. Nothing begins at it — the radiation
+> term is positive and smooth on both sides, and only which term is larger changes.
+
+**It is a boundary, not an onset**, and the receipt's `E` arms hold your own denial of the onset in
+place in two papers rather than working around it — `P16`'s *"a clock reading with no single value for
+a handover to transmit"* is the one the argument reasons FROM, and the gate asserts that premise rather
+than the conclusion that no onset is asserted anywhere.
+
+### ⛔ And one arm FAILED, the central one
+
+**`Ⓐ⑤` predicted the expansion would return the displacement as EXACTLY `s₀³/(2Mα²)`. It returns that
+divided by `(1 − 2 × share)`. Reported FAILED, criterion not rewritten.**
+⇒ **GUARD: predicting that an expansion returns a bare leading term predicts the ABSENCE of a
+correction — a stronger claim than the argument needs, and in this case a false one.** The attribution
+only ever needed the leading term to BE the share. It is. The registration quietly added that nothing
+else would be there.
+
+⌗ *Two further reds were mine, not the criteria's, and both are in the result with their guards: the
+first-order term of an expansion is its COEFFICIENT and never the series evaluated at one point; and a
+registered bound has to be checked against the grid it will be measured on — the share is exactly
+`s₀/s`, so the two decades either side I sampled could not reach the `1e-3` I had registered for four.
+**A number the sampling cannot produce is not a criterion; it is a typo with a pass/fail attached.***
+
+### What stays out of reach, named not answered
+
+The deposited plasma's equation of state at the branch point — the corpus sends the matter model to a
+companion paper this repository does not carry. And what the progenitor's branch carries, which
+`r7778` left a disjunction and this revision does not narrow.

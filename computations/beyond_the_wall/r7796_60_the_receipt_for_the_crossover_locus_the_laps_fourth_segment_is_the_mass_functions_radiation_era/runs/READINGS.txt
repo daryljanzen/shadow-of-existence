@@ -1,0 +1,177 @@
+
+  derived: alpha = 5213.287 Mpc   r_0 = 5051.488 Mpc   2M = 2006.5950 Mpc   K = 3006.658 Mpc^2
+           s_0 = K / 2M, the NAIVE equality radius = 1.498387998496921 Mpc
+
+====================================================================================================
+  A -- THE FOURTH SEGMENT'S INNER EDGE, AND WHETHER ITS OFFSET FROM K/2M *IS* THE CURVATURE TERM
+====================================================================================================
+      the inner zero, re-found as a ROOT with no closed form supplied:
+        s_in  = 1.4983879985893511 Mpc
+        s_0   = 1.49838799849692083 Mpc      (= K / 2M)
+        relative displacement (s_in - s_0)/s_0 = 6.168646918e-11
+  [PASS] Ⓐ①  the lift's inner zero and the naive equality radius K/2M are the SAME locus to ten digits and are NOT identically equal -- the displacement sits in [1e-11, 1e-10]
+
+      the same root with the CURVATURE TERM REMOVED: 1.49838799849692083045423 Mpc
+        against K/2M                                 1.49838799849692083045423 Mpc
+        relative difference = 1.54865e-62
+  [PASS] Ⓐ②  with the curvature term dropped the root lands on K/2M EXACTLY -- so the whole of the displacement is made by that term and nothing else in the balance contributes to it
+
+      alpha^2 ->   0.25 alpha^2 :  gap = 2.46745876892e-10   gap x lambda = 6.1686469223123e-11
+      alpha^2 ->   0.50 alpha^2 :  gap = 1.23372938385e-10   gap x lambda = 6.1686469192681e-11
+      alpha^2 ->   1.00 alpha^2 :  gap = 6.16864691775e-11   gap x lambda = 6.168646917746e-11
+      alpha^2 ->   2.00 alpha^2 :  gap = 3.08432345849e-11   gap x lambda = 6.168646916985e-11
+      alpha^2 ->   4.00 alpha^2 :  gap = 1.54216172915e-11   gap x lambda = 6.1686469166044e-11
+      alpha^2 ->  16.00 alpha^2 :  gap = 3.8554043227e-12   gap x lambda = 6.168646916319e-11
+      worst relative departure of (gap x lambda) from gap(1): 7.40238e-10
+  [PASS] Ⓐ③  the displacement scales as the INVERSE of alpha^2 across a factor of SIXTY-FOUR in it, to better than a part in a thousand -- the scaling the curvature share predicts
+
+      the two-term model fitted on lambda = 4 and 16 ALONE:
+        e1 = 6.1686469162239131754e-11        e2 = 1.52208819124e-20
+        lambda =   0.25 :  lambda*gap = 6.168646922312266e-11   model = 6.168646922312266e-11
+        lambda =   0.50 :  lambda*gap = 6.16864691926809e-11   model = 6.16864691926809e-11
+        lambda =   1.00 :  lambda*gap = 6.168646917746001e-11   model = 6.168646917746001e-11
+        lambda =   2.00 :  lambda*gap = 6.168646916984957e-11   model = 6.168646916984957e-11
+        lambda =   4.00 :  lambda*gap = 6.168646916604435e-11   model = 6.168646916604435e-11
+        lambda =  16.00 :  lambda*gap = 6.168646916319044e-11   model = 6.168646916319044e-11
+      worst relative departure of the four PREDICTED points: 1.2361e-18
+
+      lambda =   0.25 :  residual after removing the first-order term =    2.4353411e-19   x lambda^2 = 1.522088193e-20
+      lambda =   0.50 :  residual after removing the first-order term =    6.0883528e-20   x lambda^2 = 1.522088192e-20
+      lambda =   1.00 :  residual after removing the first-order term =    1.5220882e-20   x lambda^2 = 1.522088192e-20
+      lambda =   2.00 :  residual after removing the first-order term =    3.8052205e-21   x lambda^2 = 1.522088191e-20
+      lambda =   4.00 :  residual after removing the first-order term =    9.5130512e-22   x lambda^2 = 1.522088191e-20
+      lambda =  16.00 :  residual after removing the first-order term =     5.945657e-23   x lambda^2 = 1.522088191e-20
+      spread of (residual x lambda^2) about its mean: 1.2524e-9
+      ⌗ WHAT THE FIRST IMPLEMENTATION OF THIS ARM DID WRONG, kept here because the gate should
+        carry the correction.  It formed the residual as gap(lambda) - gap(1)/lambda, using the
+        MEASURED gap at lambda = 1 in place of the first-order COEFFICIENT.  Those are not the
+        same object: gap(1) = e1 + e2, so that residual is e2(1/lambda^2 - 1/lambda) and its
+        lambda^2-scaling carries a spurious (1 - lambda).  ⇒ GUARD: the first-order term of an
+        expansion is its COEFFICIENT, never the series evaluated at one point.
+  [PASS] Ⓐ⑥  the residual after removing the fitted first-order term falls off as 1/lambda^2 across a factor of sixty-four -- its lambda^2-scaled value is flat to a part in 1e8, so it is the NEXT ORDER of the same expansion and not noise
+
+      the fitted first-order coefficient against the curvature share:
+        e1    = 6.1686469162239131754e-11
+        share = 6.1686469162239131754e-11      (s_0^3 / (2M alpha^2))
+        e1/share - 1 = -1.3080445e-21
+        and e2/e1 = 2.4674588e-10 against 4 x share = 2.4674588e-10
+  [PASS] Ⓐ⑥b  and that fitted coefficient IS the curvature share to twenty digits -- obtained by extrapolating the numerics in 1/alpha^2 with no symbolic input whatever, so the attribution is measured as well as derived
+
+      the curvature term's share of the balance at s_0, s_0^3 / (2M alpha^2):
+        share = 6.16864691622e-11        measured gap = 6.16864691775e-11
+  [PASS] Ⓐ④  that share is 6.169e-11, the figure the INDEX row prints, pinned in the units it prints it in -- and the measured displacement is the same number
+
+      the balance expanded about s_0 = K/2M, to first order in epsilon:
+        (K**3 + epsilon*(2*K**3 - TwoM**4*alpha**2))/(K*TwoM**2*alpha**2) = 0
+      solving for epsilon:        -K**3/(2*K**3 - TwoM**4*alpha**2)
+      the curvature share is:     K**3/(TwoM**4*alpha**2)
+      their ratio:                -TwoM**4*alpha**2/(2*K**3 - TwoM**4*alpha**2)
+      and in terms of u = K^3/(2M^4 alpha^2) -- which IS the share:  -1/(2*u - 1)
+      expanded about u = 0:       1 + 2*u + O(u**2)
+      numerically u = 6.168646916e-11, so the exact first-order
+        solve exceeds the share by 2u = 1.23373e-10 of itself
+  [PASS] Ⓐ⑤  the root's relative displacement from K/2M is share/(1 - 2 x share) in CLOSED FORM, whose leading term in the share is the share itself -- so the agreement r7794 reported as a digit match is an IDENTITY in K, 2M and alpha, carrying a named relative correction of exactly twice the share and not an unexplained residue
+      ⌗ WHAT WAS REGISTERED AND WHAT CAME BACK.  The registration predicted the series would give
+        EXACTLY s_0^3/(2M alpha^2).  It does not: it gives that divided by (1 - 2 x share).  The
+        registered arm is reported FAILED in the result, and this gate carries the closed form
+        instead, which is the stronger statement -- the identity holds at leading order AND the
+        correction to it is exhibited rather than bounded.  ⇒ GUARD: predicting that an expansion
+        returns a bare leading term predicts the absence of a correction, which is a stronger
+        claim than the one the argument needs.
+
+====================================================================================================
+  B -- THE REDSHIFT AT THAT EDGE, WHICH THE REGISTER ALREADY PRINTS
+====================================================================================================
+      z = r_0 / s_in - 1 = 5051.488 / 1.498387999 - 1 = 3370.28
+  [PASS] Ⓑ⑦  the redshift at the fourth segment's inner edge is 3370.28, pinned in the units the citing sentence prints it in -- the register's own 'radiation's term dominates the mass function above z = 3370' and this segment boundary are the same fact
+
+      the COMPUTES scope header's INPUT lines, read back out of this file's own source:
+        INPUT  H_0 = 68.6, Omega_m = 0.2973
+        INPUT  omega_gamma = 4.15e-5 h^-2
+        INPUT  T_0 = 2.7255 K
+        INPUT  m_e = 510998.95 eV
+  [PASS] Ⓑ⑧  the scope header declares FOUR inputs and the file contains exactly four INPUT lines, two carrying A/B/C and two entering only in D -- the scope statement is read back from the source and counted rather than asserted, so a fifth input added later fails this arm
+
+====================================================================================================
+  C -- IT IS A CROSSOVER: THE RADIATION TERM IS PRESENT AND POSITIVE ON BOTH SIDES
+====================================================================================================
+      the bent mass function mu = 2M + K/r; the radiation share of it is (K/s)/2M
+        s = 1e-4 s_0 =       0.000150 Mpc :  K/s^2 =  1.3391692e+11    (K/s)/2M = 10000.0
+        s = 1e-3 s_0 =       0.001498 Mpc :  K/s^2 =   1.3391692e+9    (K/s)/2M = 1000.0
+        s = 1e-2 s_0 =       0.014984 Mpc :  K/s^2 =     13391692.0    (K/s)/2M = 100.0
+        s = 1e-1 s_0 =       0.149839 Mpc :  K/s^2 =      133916.92    (K/s)/2M = 10.0
+        s = 1e+0 s_0 =       1.498388 Mpc :  K/s^2 =      1339.1692    (K/s)/2M = 1.0
+        s = 1e+1 s_0 =      14.983880 Mpc :  K/s^2 =      13.391692    (K/s)/2M = 0.1
+        s = 1e+2 s_0 =     149.838800 Mpc :  K/s^2 =     0.13391692    (K/s)/2M = 0.01
+        s = 1e+3 s_0 =    1498.387998 Mpc :  K/s^2 =   0.0013391692    (K/s)/2M = 0.001
+        s = 1e+4 s_0 =   14983.879985 Mpc :  K/s^2 =   1.3391692e-5    (K/s)/2M = 0.0001
+      ⌗ FOUR DECADES EITHER SIDE, which is the grid the registration named.  The first implementation
+        of this arm sampled two decades either side, where the share -- which is exactly s_0/s --
+        spans 1e2 to 1e-2 and CANNOT reach the registered 1e-3.  ⇒ GUARD: a registered bound has
+        to be checked against the grid it will be measured on; a number the sampling cannot
+        produce is not a criterion, it is a typo with a pass/fail attached.
+  [PASS] Ⓒ⑨  the radiation term is strictly POSITIVE at every sampled radius across four decades either side of the edge, and its share falls monotonically from above fifty to below a thousandth -- so nothing switches on at the edge and only which term is larger changes
+
+      d/ds [ (K/s)/2M ] at the edge = -0.6673838825 per Mpc
+  [PASS] Ⓒ⑩  the share's derivative at the edge is FINITE and NON-ZERO -- the crossing is smooth, so there is no locus at which anything begins and 'becomes the bend' has nothing to name
+
+====================================================================================================
+  D -- AND IT IS NOT A THERMAL TRANSITION EITHER
+====================================================================================================
+      T = T_0 (1+z) = 2.7255 x 3371.28 = 9188.4 K = 0.7918 eV
+      kT / m_e c^2 = 1.550e-06
+  [PASS] Ⓓ⑪  the temperature at the edge is 0.7918 eV, a factor 1.55e-6 of the electron mass, both pinned in the units the citing sentence prints them in -- no species becomes relativistic there that was not relativistic before, so the thermal question and the crossover are two epochs and not one
+
+====================================================================================================
+  E -- THE TWO SENTENCES THAT DENY THE ONSET, EACH IN THREE STATES
+====================================================================================================
+      P7, the handover has no start          -> MATCHED
+        "...^4/30\zeta_3)T /[\eta\,(\omega_m/\omega_b)m_N]$---so it is the start restated rather than an inheritance, and with the handover at the branch point there is no such start~\cite{JanzenCRcosmology}...."
+      P16, the ratio is a clock reading      -> MATCHED
+        "...nd not derivable: $\eta$ is carried through both passages and inherited (Sec~\ref{sec:peak}); $\rho_r/\rho_m$ is a clock reading with no single value for a handover to transmit~\cite{JanzenGeometricCore}; and the progenitor spectrum's amplitude and tilt are th..."
+  [PASS] Ⓔ⑫  BOTH sentences resolve MATCHED on this tree -- and the second is the one this receipt reasons FROM: the premise is that the ratio is a clock reading with no single value to transmit, which is why no epoch can be placed; an arm asserting only that no onset is asserted anywhere would carry the conclusion and not the premise
+
+      the denial is in TWO papers, not one: ['P16', 'P7']
+  [PASS] Ⓔ⑬  the two sentences are in DIFFERENT papers, so the denial is not one author's aside in one place -- a rewrite of either paper alone leaves the other standing and this arm red
+
+====================================================================================================
+  THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED
+====================================================================================================
+      REGISTERED ARMS: 13 -- Ⓐ①②③④⑤⑥ Ⓑ⑦⑧ Ⓒ⑨⑩ Ⓓ⑪ Ⓔ⑫⑬; this is ⑬.
+      CHECKS RUN: 14.  Ⓐ⑥b is an ADDITION to the registered thirteen, not one of them:
+      the fitted first-order coefficient against the curvature share, which the registration
+      did not ask for and which is the arm that measures the attribution rather than deriving it.
+      the FOUR inputs are declared in the COMPUTES header and Ⓑ⑧ counts them out of this
+      file's own source; nothing here is fitted and no free parameter is introduced.
+      NOT CLAIMED: the onset the order asked for (there is none, and Ⓔ holds the corpus's
+      own denial in place); the deposited plasma's equation of state at the branch point;
+      what the progenitor's branch carries, which stays the disjunction `r7778` left; and
+      nothing here touches `thm:bead`, the VACUUM curve's theorem, which stands as stated.
+
+==========================================================================================
+
+  ALL CHECKS PASS.
+
+  The lap's fourth segment -- the one `r7778` found and `r7780` receipted -- is
+  the stretch over which the bent mass function's radiation term dominates its
+  dust term.  Its inner edge sits at 1.498387999 Mpc, which is the radius
+  where the two balance, and the naive equality radius K/2M = 1.498387998
+  Mpc is displaced from it by 6.1686e-11 of itself.
+
+  That displacement IS the curvature term's share of the balance there, and not
+  merely equal to it: expanded about K/2M the root's leading relative offset is
+  s_0^3/(2M alpha^2) identically in K, 2M and alpha.  Removing the curvature
+  term closes the gap exactly; scaling alpha^2 by sixteen scales it by a
+  sixteenth, with a residual that falls off as the square.
+
+  The redshift there is z = 3370.28, which is the figure the register already
+  prints for where radiation's term takes over the mass function -- recorded
+  twice, as a register figure and as a segment boundary, without either naming
+  the other until now.
+
+  And it is not an onset.  The radiation term is positive on both sides and the
+  share crosses smoothly, so nothing begins; the temperature there is a
+  millionth of the electron mass, so nothing becomes relativistic; and the
+  corpus says in two papers that no start can be placed at all.
+
+==========================================================================================

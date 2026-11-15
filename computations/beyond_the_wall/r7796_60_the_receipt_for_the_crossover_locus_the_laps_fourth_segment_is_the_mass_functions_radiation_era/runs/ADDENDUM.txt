@@ -1,0 +1,31 @@
+e1 = 6.1686469162239131754e-11
+e2 = 1.52208819124e-20
+share = 6.1686469162239131754e-11
+e1/share - 1 = -1.3080445e-21
+e2/e1 = 2.4674588e-10   4*share = 2.4674588e-10
+
+residual gap - e1/lam, scaled by lam^2:
+  lam=  0.25  resid=   2.4353411e-19  x lam^2=1.522088193e-20
+  lam=  0.50  resid=   6.0883528e-20  x lam^2=1.522088192e-20
+  lam=  1.00  resid=   1.5220882e-20  x lam^2=1.522088192e-20
+  lam=  2.00  resid=   3.8052205e-21  x lam^2=1.522088191e-20
+  lam=  4.00  resid=   9.5130512e-22  x lam^2=1.522088191e-20
+  lam= 16.00  resid=    5.945657e-23  x lam^2=1.522088191e-20
+spread of resid*lam^2 = 1.2524e-9
+
+linearity of lam*gap against 1/lam:
+  lam=  0.25  lam*gap=6.168646922312266e-11  model=6.168646922312266e-11
+  lam=  0.50  lam*gap=6.16864691926809e-11  model=6.16864691926809e-11
+  lam=  1.00  lam*gap=6.168646917746001e-11  model=6.168646917746001e-11
+  lam=  2.00  lam*gap=6.168646916984957e-11  model=6.168646916984957e-11
+  lam=  4.00  lam*gap=6.168646916604435e-11  model=6.168646916604435e-11
+  lam= 16.00  lam*gap=6.168646916319044e-11  model=6.168646916319044e-11
+worst relative departure from the two-term model = 1.2361e-18
+
+exact first-order solve: -K**3/(2*K**3 - TwoM**4*alpha**2)
+the share            : K**3/(TwoM**4*alpha**2)
+ratio sol/share      : -TwoM**4*alpha**2/(2*K**3 - TwoM**4*alpha**2)
+ratio in terms of u = K^3/(TwoM^4 alpha^2): -1/(2*u - 1)
+series about u=0: 1 + 2*u + 4*u**2 + O(u**3)
+
+numeric u = 6.1686469e-11   share = 6.1686469e-11
