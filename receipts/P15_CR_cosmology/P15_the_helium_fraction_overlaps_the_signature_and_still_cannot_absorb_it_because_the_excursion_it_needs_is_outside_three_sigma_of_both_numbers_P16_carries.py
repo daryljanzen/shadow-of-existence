@@ -29,8 +29,8 @@ every window.  PO-24's clause needs an absorber the corpus can afford, and this 
   windows where the fit is interior already fail affordability by seven sigma.
 """
 import io
-import json
 import os
+import re
 import sys
 
 import numpy as np
@@ -53,6 +53,12 @@ def head(t):
 def check(label, ok):
     (PASSED if ok else FAILED).append(label)
     print(f"\n  [{'PASS' if ok else 'FAIL'}] {label}")
+
+
+def _num(pat, text):
+    m = re.search(pat, text)
+    assert m, f"no match for {pat!r} in the file read"
+    return float(m.group(1))
 
 
 R, LD = 1.0926, 1489.5783
@@ -151,9 +157,12 @@ check("Ⓑ②  the three helium fractions P16 carries are DIFFERENT OBJECTS and 
       "P16's own file, not from this seat's arithmetic: the 0.6 per cent theory error and the "
       "quoted 0.2453 +/- 0.0034 are the receipt's own constants, and P16's correction sentence is "
       "a ONE-WAY carry rather than an interval -- 0.2432 x 1.016 reproduces 0.2471 to four decimals",
-      "sYp_frac = 0.006" in P16RCP
-      and "(0.2453, 0.0034," in P16RCP
-      and "Yp_corr = Yp*1.016" in P16RCP
+      # r7806 (60): the VALUES are extracted and asserted, not P16's wording.  A gate that
+      #   asserts another seat's literal text goes red when they reformat, while the claim holds.
+      abs(_num(r'sYp_frac\s*=\s*([0-9.]+)', P16RCP) - YP_NET_FRAC) < 1e-12
+      and abs(_num(r'Yp_corr\s*=\s*Yp\s*\*\s*([0-9.]+)', P16RCP) - YP_CORR_FAC) < 1e-12
+      and abs(_num(r"'Yp':\s*\(([0-9.]+),", P16RCP) - YP_OBS) < 1e-12
+      and abs(_num(r"'Yp':\s*\([0-9.]+,\s*([0-9.]+),", P16RCP) - YP_OBS_SIG) < 1e-12
       and CLAUSE in P16TEX
       and abs(YP_BORN * YP_CORR_FAC - YP_NET) < 5e-5)
 
@@ -376,38 +385,33 @@ check("Ⓘ⑨  ** ADDITION, the registered negative's own consequence, with its 
       and ROWS[0]['edge'] and abs(ROWS[0]['yh3'] - YS[-1]) < 1e-9)
 
 # ======================================================= THE CLAUSES REASONED FROM
-head("THE P15 CLAUSE THIS ARGUMENT REASONS FROM, ENUMERATED OVER THE STATES IT MAY BE IN")
-# r7806 (60): the first form of this arm asserted that P15 still contains the sentence
-#   "Whether the helium fraction, the optical depth, the lensing amplitude or the matter density
-#   does is not yet computed" -- WHICH IS THE SENTENCE THIS VERY REVISION REPLACES.  That is a gate
-#   on the status of a sentence a live row is asking to change, and it went red the moment the
-#   paper edit landed: I ran the receipt BEFORE making the edit the receipt reads.
-#   ⇒ GUARD: a receipt that reads the paper is re-run AFTER the paper edit, never only before.
-#   ⇒ GUARD: a defence against a paper state changing ENUMERATES the states it may produce, and a
-#     disjunction beats a pin.  So what is asserted here is the clause the argument actually
-#     reasons FROM -- that the candidates this revision does NOT test are named as open -- and it
-#     is asserted over BOTH states this revision's landing can leave P15 in.
-P15 = ' '.join(io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
-                       encoding='utf-8').read().split())
-BEFORE = ("Whether the helium fraction, the optical depth, the lensing amplitude or the matter "
-          "density does is not yet computed.")
-AFTER = ("Whether the optical depth, the lensing amplitude or the matter density absorbs it is "
-         "not yet computed.")
-STATE = 'BEFORE' if BEFORE in P15 else ('AFTER' if AFTER in P15 else 'NEITHER')
-UNTESTED = ('the optical depth', 'the lensing amplitude', 'the matter density')
-print(f"      P15 is in state: {STATE}")
-print(f"        BEFORE  (four candidates open, helium among them) : {BEFORE in P15}")
-print(f"        AFTER   (three open, helium resolved by this row)  : {AFTER in P15}")
-for u in UNTESTED:
-    print(f"        still named as untested: {u!r:28s} {u in P15}")
-check("\u24bf\u2469  ** ADDITION: ** the clause this argument reasons FROM is that the candidates this "
-      "revision does NOT test are still named as open, and it holds in BOTH states this revision's "
-      "landing can leave P15 in -- the four-candidate sentence it replaces and the three-candidate "
-      "sentence it writes -- so the arm does not gate on the status of the sentence the row is "
-      "asking to change, and exactly one of the two states obtains",
-      STATE in ('BEFORE', 'AFTER')
-      and (BEFORE in P15) != (AFTER in P15)
-      and all(u in P15 for u in UNTESTED))
+# ======================================================= THE FIGURES P15 PRINTS FROM THIS RECEIPT
+head("THE FIGURES THE PAPER PRINTS FROM THIS RECEIPT, PINNED HERE SO A WRONG ONE FAILS")
+# r7806 (60): TWO earlier forms of an arm in this slot were both the forbidden shape, and both are
+#   recorded in the revision's result rather than quietly dropped.
+#   (i) The first asserted that P15 STILL CONTAINS the four-candidate "not yet computed" sentence --
+#       the sentence THIS revision replaces.  A gate on the status of a sentence a live row is
+#       asking to change.  It also passed when run and was false when committed, because I ran the
+#       receipt before making the paper edit it reads.
+#   (ii) The repair enumerated both paper states, which fixed the ordering problem but NOT the
+#        deeper one: it still asserted that "the optical depth", "the lensing amplitude" and "the
+#        matter density" appear in P15 -- so it would have gone red on ANOTHER SEAT'S SUCCESS, the
+#        moment one of those three was computed and the clause legitimately lost it.
+#   ⇒ Both are gone.  Locating a sentence is not a premise of THIS argument: what the argument
+#     reasons from is P16's values (Ⓑ②), which are asserted there.  What belongs in this slot is
+#     the obligation the paper edit actually creates -- that every figure P15 now prints from this
+#     receipt FAILS here if it is wrong.
+PINS = [('the share of the signature Y_He removes, published window', OVER[0]['rem'], 53.5, 0.05),
+        ('the surviving displacement, published window (a BOUND)', ROWS[0]['surv'], 83.014, 0.0415),
+        ('the surviving displacement, 700-1760', ROWS[1]['surv'], 95.624, 0.0478),
+        ('the surviving displacement, 1000-1760', ROWS[2]['surv'], 98.246, 0.0491)]
+for nm, got, want, tol in PINS:
+    print(f"      {nm:<56s} {got:>10.3f}  pinned {want:>8.3f}  |d| {abs(got - want):.4f} < {tol}")
+check("Ⓙ⑩  ** ADDITION: ** every figure the P15 sentence prints from this receipt is pinned HERE, "
+      "so a wrong one fails this receipt rather than standing in type unchecked -- the share of the "
+      "signature the helium direction removes, and the surviving displacement on all three windows "
+      "including the published one whose value is a bound",
+      all(abs(got - want) < tol for _, got, want, tol in PINS))
 
 # ======================================================= THE COUNT
 head("THE ARMS, AND THE COUNT")
