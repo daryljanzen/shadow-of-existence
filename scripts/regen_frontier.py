@@ -9394,6 +9394,9 @@ EST = {
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
         1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        'r7801 LANDS r7800 (60): the inherited baryon density does not absorb the displacement -- freed with the tilt it leaves '
+        '99 to 102 per cent of it on every window its response bank reaches, an envelope against a peak-phase direction; '
+        'N_eff, the one inherited parameter acting on the envelope, is next, its response bank ordered from 70. '
         'r7629 LANDS r7627+70: on a same-data off-tail baseline (refitted on l <= 800) the baseline barely moves, '
         '0.9624 Planck + ACT and 0.9592 P-ACT against 0.96095, because ACT\'s higher n_s lives in its tail spectra; on '
         'the arm that does not count the shared sky twice (ACT alone, P-ACT) the test is UNDECIDED, 1.41 and 1.72 sigma '
