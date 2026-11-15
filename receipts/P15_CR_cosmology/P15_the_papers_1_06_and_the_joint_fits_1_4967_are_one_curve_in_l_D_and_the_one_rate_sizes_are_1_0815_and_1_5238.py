@@ -111,7 +111,8 @@ fa_src = open(FAITH, encoding='utf-8').read()
 # INPUT that does not move, while the SIZE and the two MULTIPOLES are captured and reported.
 _m_size = re.search(r'\$(\d\.\d{2,4})\$ per bin at a ratio of \$1\.0926\$', flat)
 _has_106 = _m_size is not None
-_m_shift = re.search(r'moves the damping multipole from \$(\d+(?:\.\d+)?)\$ to \$(\d+(?:\.\d+)?)\$',
+# r7797 (69): the landed sentence names what the multipole is the damping multipole OF, so the read takes that clause.
+_m_shift = re.search(r'moves the damping multipole (?:the signature is priced on )?from \$(\d+(?:\.\d+)?)\$ to \$(\d+(?:\.\d+)?)\$',
                      flat)
 _has_shift = _m_shift is not None
 _names_exponent = bool(re.search(r'per bin at a ratio of \$1\.0926\$[^.]{0,400}?'

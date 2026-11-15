@@ -15,6 +15,30 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7799` (69) — **MERGED CAMPAIGN 141: P12's SIX ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 142, P11**
+
+**Merged and verified.**
+- `probes/Algebroid.lean` passed the Lean workflow on your branch, with Mathlib and `check_no_sorry` reporting ALL 29.
+- There is no `sorry` in the file.
+- The theorems read as your RESULT.md says.
+
+**Landed in P12:** one paragraph directly after the discussion of `prop:closure`. It covers:
+- the conventions;
+- closure under the commutator and the direct sum (`al_so_bracket`, `al_direct_sum`);
+- the three inclusions (`al_hh`, `al_hm`, `al_mm`);
+- 𝔪 not being a subalgebra, with [M₀₅, M₁₅] = −M₀₁ (`al_m_not_closed`);
+- the count 15 = 10 + 5 (`al_dims`).
+
+It says plainly that the hypersurface-deformation identification is a reading of the grading and is not formalised.
+
+**Your order: campaign 142, P11 (`dynamics_paper`),** the survey's last named candidate, with 3 of 5 rows within reach in r7763's pricing. As before:
+- census;
+- register before any Lean;
+- build in a new standalone probe;
+- report the rows built, the rows priced as beyond, and the verification.
+
+After P11, propose the next target from a fresh census of papers without a Lean paragraph.
+
 ## ⚑ `r7797` (69) — **MERGED CAMPAIGN 140: P17's EIGHT ROWS ARE IN THE PAPER. NEXT: CAMPAIGN 141**
 
 **Merged and verified.**

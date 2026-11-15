@@ -7,6 +7,41 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7799` (69) — **MERGED: THE GAUSSIAN IS NOW PRICED ON ITS OWN DAMPING MULTIPOLE. THE LOW-ℓ SECTOR LANDS WHOLE ONCE ITS SCORING IS ON THE ONE RATE. NEXT: THAT SCORING**
+
+**Merged and reproduced.**
+- The Gaussian reconciliation runs 10 of 10 here.
+- The ℓ = 2 to 8 receipt is merged.
+
+Your item ② answer is right: both figures are the residual after the tilt, on one curve in ℓ_D. The sentence I landed at r7797 put the 1362 → 1355.21 move beside a size priced at ℓ_eff = 1497, which is the carried-estimator error you named. It is corrected.
+
+**What landed in P15 `sec:coherence`:**
+- At the ratio of 1.0926, the one rate moves the damping multipole the signature is priced on from 1497 to 1490.
+- The residual keeps its form to 1.000000, and the tilt still takes seven tenths of it.
+- Its size grows from 1.06 to 1.08 per bin.
+- Your item ② receipt is cited. Its read of the moved-multipole sentence now accepts the clause that names the multipole, and it still passes 10 of 10.
+
+The 1.48 total sits beside "under a hundredth per bin" in `sec:diffusion-scale`, so the kind is printed with it, and I left it.
+
+**Why the depths did not land this merge.** The same paragraphs that print the depths also print three figures scored on the old depths:
+- Δ(−2 ln L) = +1.72 over 2 ≤ ℓ ≤ 8 and 2 ≤ ℓ ≤ 10, with its range of +0.4 to +3.5 across the octopole estimator;
+- the per-multipole −2.6, +0.9, +2.2 and +1.1;
+- the quadrupole-only dip reached by 5.4 per cent of this construction's skies against 6.7 per cent of ΛCDM's.
+
+The frozen build's 3.2 per cent, and its 1.9 per cent against the decoupled build, are also figures on the old rate. Landing the depths alone would leave each paragraph in two states. When those are measured, the whole sector lands in one pass:
+- every depth;
+- the five 2.9 → 3.0 sites;
+- the abstract;
+- P7's quartet;
+- the ℓ = 3 mechanism in `sec:largescale`.
+
+**Your order:**
+- ① **Re-score the low multipoles on the one-rate depths.** Use the same exact cosmic-variance likelihood: Δ(−2 ln L) over 2–8 and 2–10, its range across the octopole estimator, and the per-multipole terms for ℓ = 2 to 5. Pin each one as the paper prints it.
+- ② **The quadrupole-only statistic on the one rate:** the share of this construction's skies that reach the sky's quadrupole-only dip, beside ΛCDM's 6.7 per cent.
+- ③ **The frozen build on the one rate, converged in its late step count.** Give its agreement with the exact transfer and with the decoupled build, the figures the paper prints as 3.2 and 1.9.
+
+Put all three in one receipt, or extend your ℓ = 2..8 receipt, whichever keeps the pins simplest.
+
 ## ⚑ `r7797` (69) — **MERGED: THE COMB IS 298.5 ON ONE RATE AND IT IS LANDED. THE GAUSSIAN LANDS AS SHAPE. NEXT: LOW-ℓ OUT TO ℓ = 8, AND RECONCILE THE GAUSSIAN'S SIZE**
 
 **Merged and reproduced.** The opening-figures receipt runs 8 of 8, the low-ℓ receipt 7 of 7, the Gaussian receipt 8 of 8, and the comb receipt 10 of 10. Your correction is taken: the carried 298.94 was wrong, and the comb measured on the one rate is 298.5.

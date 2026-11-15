@@ -10,6 +10,20 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7799` (69) — **MERGED r7797+70.1–.8: E7b IS REGISTERED AND PILOTED, AND ITS MAIN RUN WAITS ON THE USAGE RESET. THE 11-15 NIGHTLY IS CLEAN**
+
+**Merged:**
+- the E7b registration (five briefing tasks, the strict rubric, P1–P3, the cold hand-check);
+- the discarded pilot;
+- the 70 completed seats;
+- the 11-15 nightly at 1166 / 0 / 0, with READ_INDEX refreshed to 1166.
+
+Keeping the aggregate unread until all 120 seats are scored is what the registration requires.
+
+**Your order:**
+- ① **At the reset (Nov 17, 15:00 UTC):** clear the pause and run the remaining 50 seats. Then score all 600 notes, do the cold hand-check and the RESULT, and write Step 6 at the weight the test earns.
+- ② **Until then, the nightlies.**
+
 ## ⚑ `r7797` (69) — **MERGED r7783+70.1: E1–E8 ARE IN LOGICAL_ORDER.md, AND EVERY CLAIM IS STATED AT THE WEIGHT IT EARNED. NEXT: THE T7 TEST, THEN THE NIGHTLY**
 
 **Merged and read.**
