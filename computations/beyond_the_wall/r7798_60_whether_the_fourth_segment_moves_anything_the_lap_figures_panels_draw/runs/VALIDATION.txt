@@ -1,0 +1,68 @@
+r7798 (60) -- THE VALIDATION, run end to end on ONE frozen tree.
+
+The tree was 3ed225291 at the start and 3ed225291 at the end, with nothing uncommitted either
+time, which is the condition a build comparison needs.  Every step clean on the first run.
+
+⌗ AND CI AGREES ON THE SAME HEAD, which is worth recording because for r7796 it did not get the
+  chance: three successive pushes superseded one another's scoped jobs, so the local chain was the
+  only record.  Here the runner ran the plain suite, both tolerance-perturbation jobs, all three
+  tolerance probe builds and the runner-read sweep on this head, and all of them came back green
+  beside the chain below.  ⇒ A local chain and a runner agreeing on one head is a stronger record
+    than either alone, and it costs nothing but not pushing again while the jobs run.
+
+### tree frozen at 3ed225291f9ae75c3881d153e1a71cea0e1957ab
+
+### 1/5  FAST JOB
+
+  RUN-FAST-JOB -- lists read from .github/workflows/gates.yml, never from this file
+    10 generator(s), 133 gate(s), plus the hollow-assertion lint
+
+  every step of the fast job passes on this tree.
+  ⌗ Green here is a claim about CI's CURRENT list, because the list was read and not remembered.
+
+
+### 2/5  THE SUITE, this revision's own scope
+  DECLARED LONG: P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py runs on 1800s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py runs on 2100s, not 600s -- named, with its measured cost in the source
+  TREE-DIGEST: c182cd54470a3a85
+
+  ORDER: longest first by READ_INDEX.json
+
+  143 pass, 0 fail, 0 over timeout, in 1167s wall
+  slowest that passed: S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py 873s, S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py 719s, F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py 374s, P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py 290s, S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py 229s
+
+  Every receipt IN THIS SCOPE (143 of the registered set) runs, in place, and exits 0.
+  ** A claim about the scope and not the suite: the suite's verdict is the heavy job's. **
+
+### 3a/5  TOLERANCE BUILD A
+  probed 53 registered receipt(s) into tA
+
+### 3b/5  TOLERANCE BUILD B
+  probed 53 registered receipt(s) into tB
+
+### 3c/5  TOLERANCE BUILD C
+  probed 53 registered receipt(s) into tC
+
+### 4/5  TOLERANCE COMPARE tA tB
+
+  BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision floor (< 1e-13), counted and not flagged
+
+  VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+
+### 5/5  RUNNER-READ SWEEP
+  traced 1 registered receipt(s) into /tmp/claude-0/-home-user-shadow-of-existence/3f654921-f94d-5e03-8dca-e6e4ffe98045/scratchpad/rr_r7798
+
+  RUNNER-READ SWEEP -- 1 receipt(s) traced from their own directories
+    FLAGGED (a relative read that resolved to nothing) : 0
+    TRIAGE  (an absolute in-repo glob that was empty)  : 0  -- judged by hand
+    red under the trace                                : 0
+    over the budget, not traced to the end             : 0
+
+  VERDICT: CLEAN
+
+### tree at end:
+3ed225291f9ae75c3881d153e1a71cea0e1957ab
+0
