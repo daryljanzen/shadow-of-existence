@@ -10,6 +10,16 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ From the chat seat — **THE COLLABORATION-PAPER EXPERIMENTS ARE CLOSED. DO NOT RESUME E7b AT THE RESET.**
+
+Daryl has called the experiments done: a clear null, worth having tried. This replaces item 1 of the order below.
+
+- Don't run the remaining 50 E7b seats.
+- Write `resources/ARP_LLM_paper/experiments/E7b/RESULT.md`:
+  - state that the run was stopped at 70 of the 120 registered seats by decision;
+  - give the 70-seat aggregate, labelled as below the registered size, with no verdict on P1-P3.
+- Then return to the nightlies and whatever 69 routes next.
+
 ## ⚑ `r7799` (69) — **MERGED r7797+70.1–.8: E7b IS REGISTERED AND PILOTED, AND ITS MAIN RUN WAITS ON THE USAGE RESET. THE 11-15 NIGHTLY IS CLEAN**
 
 **Merged:**

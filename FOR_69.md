@@ -9,14 +9,21 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
-### ⚑ From the chat seat — **A NEW LINE OF WORK: SEAT 70 RUNS THE COLLABORATION PAPER'S EXPERIMENTS, AND SEAT 60 COLD-READS THEM. Keep both orders in place when you route.**
+### ⚑ From the chat seat — **P7 NOW SAYS WHY THERE IS ONE RATE: THE NARIAI GEOMETRY IS THE COSMOLOGY'S SYMMETRIC DESCRIPTION, AS MINKOWSKI IS THE FIRST EXAMPLE'S, AND LIGHT CROSSES THE CONTENT-BEARING LAYER. Three edits landed on main; four records follow from them.**
 
-Daryl is writing a paper on research collaboration with language models. Its argument and eight experiments are in `resources/ARP_LLM_paper/LOGICAL_ORDER.md`.
+Daryl's reading, worked against P7 from the opening through the SdS section and landed by the chat seat:
 
-- **70** now has an order at the top of `FOR_70.md` to run them: estimate first, register each experiment before running, clean subjects, blind scoring, results under `resources/ARP_LLM_paper/experiments/`. Its nightly continues. **Please don't replace this order with "stand by" in your next routing.**
-- **60** has an added standing item in `FOR_60.md`, after its current order: cold-read each of 70's registrations before it runs, and each result against its registration.
+- **New subsection `sec:sds-closure`, "The geometry and the universe it describes"**, between "Fundamental Observers" and "What this cosmology opens onto". It returns to the Minkowski Projection (now labelled `sec:CR-minkowski`): the Nariai geometry stands to the cosmological layer as the Minkowski projection stands to its layer. P7 already calls the SdS geometry the projection the reassignment yields. It is not empty: its offset 2M is the dust's mass, forced with Lambda. What it does not carry is radiation (K, set by the measured temperature) and the inhomogeneities. By the Projection Principle (now labelled `sec:CR-projection`), observation is signal propagation on the content-bearing layer. The Misner-Sharp history 2Gm/c^2 = 2GM/c^2 + K/r makes that cut admissible with positive density, and its rate is H_leaf. The one rate follows from the paper's first example; it is not an added rule.
+- **The FLRW capstone remark (`sec:CR-FLRW`, last paragraph) is rewritten.** It used to say the geometric rate is "the existent's own geometry, to be computed on and only then projected". It now says the non-synchronous geometry is the layer's symmetric description and the existent is the layer with its content, computed on at its cut's rate. It names both subtler errors: refusing the layer's rate its physics, and reading observables off the geometric rate with the unfixed content left out.
+- **The one-rate remark in section 2** (beside `eq:two-rate`) now cites `sec:sds-closure` as the reason there is one rate.
 
-Merge 70's experiment landings like any other. They touch only `resources/ARP_LLM_paper/`, never the corpus. **Report 70's estimate to Daryl when it lands**, since he needs the duration up front.
+P7 builds clean at 106 pages, with no undefined references.
+
+**What this settles, for the records:**
+1. **THE_REGISTER row PO-87's "THE FRAMING (r7761)" clause is superseded.** That clause put the geometric rate on the existent side ("the layer advances at the geometric rate, the lapse"). The settled reading: the geometric rate is the symmetric description's, and the lapse of the cosmological foliation carries radiation (cc66's r7797 item (a) computed exactly this). Please rewrite that clause to the P7 statement, one state, and log the change in THE_CONSOLIDATION_LEDGER.
+2. **cc66's r7797 objection (c) in FOR_66.md has its answer.** cc66 rejected the trampoline comparison because P7's capstone called the geometric rate the existent's geometry. That sentence was the error, and P7 itself (line ~704) names the SdS geometry a projection. What sits on the appearance side is the symmetric geometry, not the layer, and cc66's own item (d), that physics is read off h_ij and not the projection's geometry, is the same point. Please route this to cc66 so the objection is closed rather than left standing.
+3. **P15 still carries stacking-rate sites to check against this.** Line ~2039 says the optical depth "takes the stacking rate". Line ~2846 puts "the projection on the stacking rate". Line ~207 says "what this rate is a rate of is the stacking of the foliation". The last can stand if it describes the geometric part, but the first two read observables off the geometric rate, which P7 now names as an error. Please put them in the P15 one-rate rewrite's order.
+4. **The collaboration-paper experiments are closed.** Daryl has called them done: a clear null, worth having tried, and the work moves back to the physics. 70's order now says not to resume E7b at the reset (see FOR_70.md). Please keep it that way when you route, and drop 60's standing cold-read item for those experiments.
 
 ---
 
