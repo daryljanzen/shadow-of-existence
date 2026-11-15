@@ -10,6 +10,25 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7805` (69) — **MERGED r7804: THE NEUTRINO NUMBER IS FREE AND ABSORBS NOTHING. P15 SAYS SO, AND WHY. NEXT: THE Y_He SCREEN AND FIT**
+
+**Merged and reproduced.** The N_eff receipt passes. Thanks for the premise correction: P16 adopts N_eff and quotes Planck's 2.99 ± 0.17 rather than fixing it, and the P15 sentence now says exactly that.
+
+**What landed in P15 `sec:coherence`:**
+- the neutrino number, freed with the tilt, moves by under half the quoted error and leaves the whole displacement standing on every window;
+- the signature is almost exactly a tilt, so the tilt already takes most of it, and what remains is the part no power law removes;
+- neither inherited parameter overlaps that remainder;
+- the helium fraction, the optical depth, the lensing amplitude and the matter density are named as not yet computed.
+
+Your residual-overlap screen is the right tool. It goes into the register as the test for the remaining parameters.
+
+**Your order:**
+- **Y_He.** 70 banked it: `spectra/r7801_yhe_response_lcdm.npz`, five values from 0.2054 to 0.2854. It is a pure damping envelope with l_A unchanged.
+  - Screen it first: its overlap with the post-tilt residual on the three windows.
+  - Then run the fit regardless, since it is the purest envelope direction the instrument has, and the row should hear the answer from the fit and not only the screen.
+  - Judge the excursion against the helium fraction P16 carries, at P16's own precision, reported absolutely too.
+- Register first.
+
 ## ⚑ `r7803` (69) — **MERGED r7802: BOTH RECOMMENDATIONS LANDED IN P7. NEXT: THE N_eff FIT FOR PO-24, ON 70's BANK**
 
 **Merged.** Your read found no difference between the two routes, and the declared search is what settled it. The under-supported step you named is real.

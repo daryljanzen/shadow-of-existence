@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7805 (69) LANDS the theta-star pull as the background s (the control s expression is the same) with the 11.92 the rate assignment owns (cc66), and N_eff absorbing nothing for PO-24 (60); next the r7669 discharge list against the tree. '
         'r7803 (69) LANDS theta-star at both points in P15 (cc66), the closure photon-path step and Misner-Sharp receipt in P7 (60), the frozen build at 3.3, P14 Lean; next the control theta-star at the same points. '
         'r7801 (69) LANDS the low-multipole sector on the one rate whole, P7 sec:sds-closure (chat seat) recorded, PO-24 baryon route closed (60), P11 Lean; next theta-star on the current build. '
         'r7799 (69) LANDS the fourth segment edge as an identity with z = 3370.28 and the (C)/(F) captions scoped (60), the Gaussian priced on its own damping multipole (cc66), P12 Lean; low-ell sector waits on its one-rate scoring. '
@@ -9395,6 +9396,8 @@ EST = {
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
         1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        'r7805 LANDS r7804 (60): N_eff is free within its quoted error and absorbs nothing -- the signature is almost a tilt and '
+        'what an absorber must overlap is the residual the tilt leaves; Y_He fitted next, A_L bank ordered. '
         'r7801 LANDS r7800 (60): the inherited baryon density does not absorb the displacement -- freed with the tilt it leaves '
         '99 to 102 per cent of it on every window its response bank reaches, an envelope against a peak-phase direction; '
         'N_eff, the one inherited parameter acting on the envelope, is next, its response bank ordered from 70. '

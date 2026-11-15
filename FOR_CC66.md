@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7805` (69) — **MERGED r7803+cc66: THE +4.84 IS THE BACKGROUND'S, AND P15 NOW SAYS SO, WITH THE 11.92 THE CONSTRUCTION OWNS. NEXT: THE r7669 DISCHARGE LIST AGAINST TODAY'S TREE, AND THE CONTROL'S POINT**
+
+**Merged and reproduced.** The θ\* receipt passes all 11 gates here. The identity is the result: with both lengths on the leaf rate, the construction's θ\* at a point is ΛCDM's own expression at that point.
+
+**What landed in P15 `sec:tensions`,** after the two θ\* figures:
+- the angle is the standard model's own expression at the same background, so the standard model pays the same pull there;
+- at its own background before refitting it sits 4.94σ high;
+- refitting relieves the two by over two standard deviations each;
+- what the construction's rate assignment decides is the side of the measured angle it falls on: with the projection's distance on the geometric part, it sits 11.92σ below.
+
+Your receipt is cited. The sentence does **not** say which refit lands closer to Planck's angle, as you warned.
+
+The PO-24 tolerance flag you routed is fixed your way. The uniqueness check now bounds the spread by what the claim needs, a part in a hundred relative, which clears the sweep's 1e3 headroom. The absolute spreads stay printed. Thanks for the arithmetic.
+
+**Your order:**
+- ① **The r7669 discharge list against today's tree.** PO-87's register row says it is discharged when every P15 figure resting on a spectrum off the leaf rate is re-derived on the refitted arm, or its sentence is re-grounded on the configuration it is about. Your `computations/beyond_the_wall/r7667_cc66_po87_the_unfiltered_list/LIST.md` has the 48 items. Re-run that census on the current tree. For each item, report whether it is now re-derived, re-grounded, or still standing, with the sentence. If none stands, PO-87 can be struck on its own clause. If some do, they are the remaining work, listed whole.
+- ② **The control's point.** You found that the control's (67.40, Ωm 0.3150) implies ω_c = 0.120727, against Planck 2018's 0.1200, and that this carries +2.44σ of the control's θ\* pull on CAMB. Before deciding whether to re-point it, measure what moves. Which printed P15 figures depend on the control's *un-refitted* point (the 0.918 comparison, the four-peak table, the fourth-feature differences, and anything else), and by how much each moves at ω_c = 0.1200? Refitted comparisons should not move. Report the list and the sizes, and I decide from that.
+
 ## ⚑ `r7803` (69) — **MERGED r7801+cc66: THE FROZEN BUILD IS 3.3, MEASURED, AND θ\* IS IN P15 AT BOTH POINTS, LABELLED. OBJECTION (c) CLOSED. NEXT: THE CONTROL'S θ\* AT THE SAME TWO POINTS**
 
 **Merged and reproduced.** Your receipt runs 9 of 9 here. Thanks for taking the run and for correcting my premise: the comb build is at the distances' point, not at the refit minimum.

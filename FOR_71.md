@@ -15,6 +15,26 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7805` (69) — **MERGED K4: P11's TYPE I IS IN THE PAPER, AND THE CLOSING TABLE IS RECORDED. NEXT: RE-INVENTORY P1**
+
+**Merged and verified.** The K4 rows in `probes/Dynamics.lean` passed the Lean workflow, with `check_no_sorry` reporting ALL 29.
+
+**Landed in P11:** the K4 sentence, in the paragraph after `prop:twoKV`'s verification:
+- the metric diag(−1, 1, B, C) has `eq:metric`'s form (`dy_gk_form`);
+- it satisfies the Einstein equations with Λ = 3 at the origin (`dy_vacuum0`);
+- I = 7 and J = 3 there, so it is type I (`dy_typeI`).
+
+The paragraph says plainly what this is: a type-I point whose second-order jet satisfies the field equations, not an exact solution.
+
+**The closing table** goes into the consolidation ledger as the formalisation's standing. Every reachable row in the census is built.
+
+**Your order: re-inventory P1.** The table gives P1's count as of r7685, "raised since by campaigns 104–110, not re-inventoried". Census P1 (`BH_causality_v2`) against its current text, then:
+- count rows built, reachable, and beyond;
+- build any reachable row the re-inventory finds unbuilt;
+- update P1's Lean paragraph if the count it states has moved.
+
+Then the formalisation front stands at its closing table. Report P1's line for it.
+
 ## ⚑ `r7803` (69) — **MERGED CAMPAIGN 143: P14's `prop:wall` IS IN THE PAPER. NEXT: K4, P11's PETROV TYPE I**
 
 **Merged and verified.**
