@@ -89,3 +89,12 @@ corpus/pin_adjudication_board.tsv
 /tA/
 /tB/
 /tC/
+#   r7802 (60): and /tD/ and /tE/, for the same reason and for one more.  tA and tB turned out
+#   NOT to be rewritten when a later sweep named the same probe: the store keeps an existing
+#   record and the run still prints `probed N registered receipt(s)`, so a comparison can be
+#   between records written on two DIFFERENT trees while reporting as one run.  A flag that
+#   survived a fix was traced to exactly that.  ⇒ To re-measure after changing a receipt, probe
+#   into a FRESH store name and compare those; and check the store files' timestamps rather
+#   than the summary line, which counts what was asked for and not what was written.
+/tD/
+/tE/
