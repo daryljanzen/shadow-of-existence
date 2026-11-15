@@ -401,17 +401,28 @@ head("THE FIGURES THE PAPER PRINTS FROM THIS RECEIPT, PINNED HERE SO A WRONG ONE
 #     reasons from is P16's values (Ⓑ②), which are asserted there.  What belongs in this slot is
 #     the obligation the paper edit actually creates -- that every figure P15 now prints from this
 #     receipt FAILS here if it is wrong.
-PINS = [('the share of the signature Y_He removes, published window', OVER[0]['rem'], 53.5, 0.05),
-        ('the surviving displacement, published window (a BOUND)', ROWS[0]['surv'], 83.014, 0.0415),
-        ('the surviving displacement, 700-1760', ROWS[1]['surv'], 95.624, 0.0478),
-        ('the surviving displacement, 1000-1760', ROWS[2]['surv'], 98.246, 0.0491)]
-for nm, got, want, tol in PINS:
-    print(f"      {nm:<56s} {got:>10.3f}  pinned {want:>8.3f}  |d| {abs(got - want):.4f} < {tol}")
-check("Ⓙ⑩  ** ADDITION: ** every figure the P15 sentence prints from this receipt is pinned HERE, "
-      "so a wrong one fails this receipt rather than standing in type unchecked -- the share of the "
-      "signature the helium direction removes, and the surviving displacement on all three windows "
-      "including the published one whose value is a bound",
-      all(abs(got - want) < tol for _, got, want, tol in PINS))
+# ⌗ The four comparisons below carry their figures as INLINE LITERALS on purpose.  An earlier form
+#   held the same four values in a list of tuples and compared them in a loop -- arithmetically
+#   identical, and invisible to a reader that parses this file's source, because no literal sat in
+#   a comparison.  ⇒ GUARD: a pin is a promise to a STATIC reader, so the figure has to appear in
+#   the comparison itself and not in a table the comparison walks.
+#   Each tolerance is the allowance the figure's own printed precision licenses: the coarser of half
+#   a unit in the last printed digit and 0.05 per cent of the value.
+_rem0, _s0, _s1, _s2 = OVER[0]['rem'], ROWS[0]['surv'], ROWS[1]['surv'], ROWS[2]['surv']
+for nm, got, want in (('the share of the signature Y_He removes, published window', _rem0, 53.5),
+                      ('the surviving displacement, published window (a BOUND)', _s0, 83.014),
+                      ('the surviving displacement, 700-1760', _s1, 95.624),
+                      ('the surviving displacement, 1000-1760', _s2, 98.246)):
+    print(f"      {nm:<56s} {got:>10.3f}  pinned {want:>8.3f}  |d| {abs(got - want):.4f}")
+check("Ⓙ⑩  ** ADDITION: ** every figure the P15 sentence and the index row print from this "
+      "receipt is pinned HERE within the allowance its own printed precision licenses, so a wrong "
+      "one fails this receipt rather than standing in type unchecked -- the share of the signature "
+      "the helium direction removes, and the surviving displacement on all three windows including "
+      "the published one whose value is a bound",
+      abs(_rem0 - 53.5) < 0.05
+      and abs(_s0 - 83.014) < 0.0415
+      and abs(_s1 - 95.624) < 0.0478
+      and abs(_s2 - 98.246) < 0.0491)
 
 # ======================================================= THE COUNT
 head("THE ARMS, AND THE COUNT")
