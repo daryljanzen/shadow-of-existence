@@ -1,0 +1,62 @@
+====================================================================================================
+r7804 (60) -- PO-24's N_eff fit: is the tilt displacement absorbed by the neutrino count?
+  signature exp[-(r^2-1)(l/l_D)^2], r = 1.0926, l_D = 1489.5783
+  P16 ADOPTS N_eff = 3.046 ('adopted here rather than derived') and QUOTES
+    2.99 +/- 0.17 as the number a departure would have to move
+    ⇒ that is 5.69 per cent, against omega_b's 0.65 -- about nine times more room in sigma
+====================================================================================================
+
+  70's bank: N_eff = [np.float64(2.5), np.float64(2.75), np.float64(3.0), np.float64(3.25), np.float64(3.5)], centre 3.0
+  ⇒ OFFSET to the adopted value: +0.046, carried explicitly below
+  its l grid: 100 to 1996 step 8, 238 points
+
+  B2  reach = 1996; available windows: [(100, 1758), (700, 1760), (1000, 1760)]
+  B4  worst |second difference| / |first| across the grid: 0.7074
+        l =   500 : ratio over the five N_eff = [1.00665, 1.00389, 1.00000, 0.99510, 0.98930]
+        l =   996 : ratio over the five N_eff = [0.99011, 0.99037, 1.00000, 1.01862, 1.04560]
+        l =  1500 : ratio over the five N_eff = [0.90153, 0.95367, 1.00000, 1.03864, 1.06828]
+        l =  1900 : ratio over the five N_eff = [0.97847, 0.97962, 1.00000, 1.03683, 1.08596]
+
+====================================================================================================
+  A1, C5, C6, C8 -- THE FITS
+====================================================================================================
+
+      window 100-1758, 171 covered bins
+        amplitude alone : chi^2/bin    3.5579
+        + tilt          : chi^2/bin    1.0815  Delta n -0.07003  absorbed  69.6 %
+        + tilt + N_eff  : chi^2/bin    1.0761  Delta n -0.07022  absorbed  69.8 %
+        the N_eff wanted: 2.98850   = -0.05750 from the adopted 3.046   = -0.34 of the quoted sigma
+        SURVIVES        : 100.273 per cent of the displacement
+        multistart spread: fun 1.73e-12  Delta n 1.19e-09  N_eff 4.86e-09
+
+      window 700-1760, 104 covered bins
+        amplitude alone : chi^2/bin    2.9164
+        + tilt          : chi^2/bin    0.2564  Delta n -0.17621  absorbed  91.2 %
+        + tilt + N_eff  : chi^2/bin    0.2535  Delta n -0.17696  absorbed  91.3 %
+        the N_eff wanted: 3.00684   = -0.03916 from the adopted 3.046   = -0.23 of the quoted sigma
+        SURVIVES        : 100.425 per cent of the displacement
+        multistart spread: fun 3.09e-13  Delta n 3.14e-09  N_eff 8.43e-09
+
+      window 1000-1760, 71 covered bins
+        amplitude alone : chi^2/bin    2.0084
+        + tilt          : chi^2/bin    0.0824  Delta n -0.25946  absorbed  95.9 %
+        + tilt + N_eff  : chi^2/bin    0.0806  Delta n -0.26131  absorbed  96.0 %
+        the N_eff wanted: 3.00543   = -0.04057 from the adopted 3.046   = -0.24 of the quoted sigma
+        SURVIVES        : 100.712 per cent of the displacement
+        multistart spread: fun 7.11e-14  Delta n 3.29e-09  N_eff 1.38e-09
+
+====================================================================================================
+  C7 -- 70's SHAPE CLAIM, TESTED: does the N_eff direction overlap the signature?
+====================================================================================================
+        window   corr(S, Neff)  Neff removes  tilt removes
+      100-1758          0.0352          0.1%         72.0%
+      700-1760         -0.0450          0.2%         92.6%
+     1000-1760         -0.1373          1.9%         96.8%
+  ⌗ omega_b's correlations were -0.18, -0.24, -0.45 and it removed 3.3, 5.7, 20.0 per cent.
+
+====================================================================================================
+  THE ANSWER
+====================================================================================================
+      100-1758: Delta n -0.07003 -> -0.07022  (100.27 % survives)   N_eff 2.9885  = -0.34 quoted sigma
+      700-1760: Delta n -0.17621 -> -0.17696  (100.42 % survives)   N_eff 3.0068  = -0.23 quoted sigma
+      1000-1760: Delta n -0.25946 -> -0.26131  (100.71 % survives)   N_eff 3.0054  = -0.24 quoted sigma

@@ -1,0 +1,140 @@
+
+  P16 ADOPTS N_eff = 3.046, declared there as not derived, and QUOTES 2.99 +/- 0.17
+  that quoted precision is 5.69 per cent against omega_b's 0.65 -- about nine times more room in sigma
+
+====================================================================================================
+  A -- THE PUBLISHED TWO-PARAMETER FIGURE, REPRODUCED BEFORE A THIRD PARAMETER IS ADDED
+====================================================================================================
+      window 100-1758, 171 bins: chi^2/bin after the tilt 1.0815, absorbed 69.6 per cent
+  [PASS] Ⓐ①  the two-parameter fit returns 1.0815 chi^2 per bin over 171 covered bins and absorbs 69.6 per cent, the same figures r7800 reproduced -- so this is that harness with the free direction swapped and nothing else changed
+
+====================================================================================================
+  B -- 70's BANK: REACH, CENTRE AND THE OFFSET, AND WHETHER THE RESPONSE IS LINEAR
+====================================================================================================
+      N_eff values [np.float64(2.5), np.float64(2.75), np.float64(3.0), np.float64(3.25), np.float64(3.5)], centre 3.0, l grid 100-1996 step 8
+  [PASS] Ⓑ②  the response reaches l = 1996, so THREE of the six windows the displacement table uses are available and three are not -- the same reach as the baryon bank, and no arm below speaks about a window its own inputs do not reach
+      the bank's centre is 3.0 and P16 adopts 3.046: OFFSET +0.046
+  [PASS] Ⓑ③  the bank is centred on 3.0 while the corpus adopts 3.046, so every excursion below is stated relative to the ADOPTED value with that offset carried -- asserted here because a 0.046 shift reported as physics is exactly what a forgotten offset looks like
+      worst |second difference| / |first| across the grid: 0.7074
+  [PASS] Ⓑ④  the response is NOT linear in N_eff either, so the five banked values are interpolated with a monotone spline and no derivative is extrapolated
+
+====================================================================================================
+  C -- THE TILT AND THE NEUTRINO COUNT FREE TOGETHER
+====================================================================================================
+
+      window 100-1758, 171 bins
+        + tilt         : chi^2/bin   1.0815  Delta n -0.07003  absorbed  69.6 %
+        + tilt + N_eff : chi^2/bin   1.0761  Delta n -0.07022  absorbed  69.8 %
+        N_eff wanted   : 2.98850 = -0.05750 from the adopted = -0.34 of the quoted sigma
+        SURVIVES       : 100.273 per cent   (multistart spread: Delta n 1.2e-09, N_eff 4.9e-09)
+
+      window 700-1760, 104 bins
+        + tilt         : chi^2/bin   0.2564  Delta n -0.17621  absorbed  91.2 %
+        + tilt + N_eff : chi^2/bin   0.2535  Delta n -0.17696  absorbed  91.3 %
+        N_eff wanted   : 3.00684 = -0.03916 from the adopted = -0.23 of the quoted sigma
+        SURVIVES       : 100.425 per cent   (multistart spread: Delta n 3.1e-09, N_eff 8.4e-09)
+
+      window 1000-1760, 71 bins
+        + tilt         : chi^2/bin   0.0824  Delta n -0.25946  absorbed  95.9 %
+        + tilt + N_eff : chi^2/bin   0.0806  Delta n -0.26131  absorbed  96.0 %
+        N_eff wanted   : 3.00543 = -0.04057 from the adopted = -0.24 of the quoted sigma
+        SURVIVES       : 100.712 per cent   (multistart spread: Delta n 3.3e-09, N_eff 1.4e-09)
+  [PASS] Ⓒ⑤  the three-parameter fit converges on every available window strictly inside the bank's grid, and the twelve starts agree to better than 1e-7 on both reported parameters, so no number here is an extrapolation and none depends on which start wins
+
+      survival across the three windows: 100.273, 100.425, 100.712 per cent
+  [PASS] Ⓒ⑥  THE ORDER'S QUESTION: the displacement SURVIVES -- 100.273 per cent on the published window and over 100 on all three, so freeing the neutrino count moves the fitted tilt by about a part in three hundred, and in the wrong direction for absorption
+      absorbed-share gains: +0.15, +0.10, +0.09 points
+  [PASS] Ⓒ⑥ᵇ  and the absorbed share gains at most a quarter of a point on any window, against the baryon density's 4.4 -- so by the share as well as by the displacement, the neutrino count takes even less than the parameter r7800 already ruled out.  ⌗ NOT a registered arm
+
+            window   corr(S, Neff)  Neff removes  tilt removes
+          100-1758          0.0352          0.1%         72.0%
+          700-1760         -0.0450          0.2%         92.6%
+         1000-1760         -0.1373          1.9%         96.8%
+      ⌗ the baryon density scored -0.18, -0.24, -0.45 and removed 3.3, 5.7, 20.0 per cent.
+  [PASS] Ⓒ⑦  70's SHAPE CLAIM DOES NOT HOLD: the N_eff direction overlaps the signature even more weakly than the baryon density did, removing under two and a half per cent of its chi^2 on every window where the tilt removes seventy or more.  A monotone tilt across the damping tail is not, on this metric, the shape that absorbs this envelope
+
+            window   corr(S, tilt)   Neff vs resid   wb vs resid
+          100-1758         -0.8486         -0.0339       -0.3426
+          700-1760         -0.9622          0.1335       -0.0959
+         1000-1760         -0.9841          0.1799        0.1340
+      ⌗ AN ADDITION, MARKED AS ONE, and the arm that explains both results at once.  The
+        registration asked whether the displacement survives, not why a tail tilt fails.
+        ⌗ AND ITS FIRST FORM WAS WRONG: it compared each direction with the TILT and
+          concluded N_eff is 'far more tilt-like than omega_b', which the first table above
+          contradicts -- omega_b reaches 0.479 against N_eff's 0.172.  I wrote the sentence
+          before reading the numbers.  ⇒ GUARD: a sentence stating a comparison is written
+          AFTER the comparison is on the screen.
+        ⇒ The signature is almost exactly a tilt, so the ALREADY-FREE tilt takes 70 to 97
+          per cent of it.  What an absorber must overlap is therefore neither the signature
+          nor the tilt but the RESIDUAL the tilt leaves -- and both parameters measured so
+          far are nearly orthogonal to it.  One projection, in place of a fit.
+  [PASS] Ⓒ⑦ᵇ  the signature is almost exactly a tilt (|corr| above 0.84 on every window), and BOTH candidates are nearly orthogonal to the residual the tilt leaves (|corr| under 0.35) -- which is why neither absorbs it, and which turns the search for an absorber into one projection rather than a fit.  ⌗ NOT a registered arm
+
+      100-1758: N_eff wanted -0.34 quoted sigma, and 100.27 per cent of the displacement survives it
+      700-1760: N_eff wanted -0.23 quoted sigma, and 100.42 per cent of the displacement survives it
+      1000-1760: N_eff wanted -0.24 quoted sigma, and 100.71 per cent of the displacement survives it
+  [PASS] Ⓒ⑧  THE ARM THAT DECIDES THE ROW, AND IT IS A CLEANER NEGATIVE THAN THE BARYON DENSITY'S.  The excursion the fit wants is INSIDE the constraint the corpus quotes on every window -- under half a sigma, so the datum permits it -- and the displacement survives it entirely anyway.  Where omega_b could be called unaffordable, N_eff is affordable and buys nothing, so the terminating clause fails on SHAPE and not on room
+
+====================================================================================================
+  D -- THE INHERITED PARAMETERS STILL WITHOUT A BANKED RESPONSE
+====================================================================================================
+      the baryon density  omega_b          :  1 file(s)  -> r6897_wb_response_lcdm.npz
+      the neutrino count  N_eff            :  1 file(s)  -> r7801_neff_response_lcdm.npz
+      the helium fraction  Y_He            :  0 file(s)
+      the optical depth  tau               :  0 file(s)
+      the lensing amplitude  A_L           :  0 file(s)
+      the matter density  omega_m          :  0 file(s)
+      ⌗ searched the 272 entries of computations/beyond_the_wall/spectra, the one directory every
+        banked spectrum lives in, by the lowercase substring patterns printed above applied to each
+        entry's filename -- so the absence stated here is about THAT directory and THOSE patterns and
+        nothing else.
+      ⇒ TWO of the six now have responses, and 70 reports Y_He settable with its bank next.
+        The remaining three are NAMED, NOT MEASURED -- and Ⓒ⑦ᵇ gives the screen to apply to
+        each when it lands, before any fit is run.
+  [PASS] Ⓓ⑨  exactly TWO of the six inherited parameters now have a banked response, and the absence of the rest is declared with the directory and the patterns it was searched by, in the sentence that states it
+
+====================================================================================================
+  E -- THE P16 SENTENCES THE DECIDING ARM REASONS FROM, IN THREE STATES
+====================================================================================================
+      N_eff is ADOPTED and not derived                     -> MATCHED
+      the framework makes NO prediction for it             -> MATCHED
+      and the quoted number is what a departure must move  -> MATCHED
+  [PASS] Ⓔ⑩  all three P16 clauses resolve MATCHED -- that N_eff is adopted and not derived, that the framework makes no prediction for it, and that the quoted number is what a departure would have to move.  These are the clauses the deciding arm reasons FROM, and they are why the order's premise that P16 FIXES N_eff through the network is corrected rather than used.  ⌗ NOT a registered arm
+
+====================================================================================================
+  THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED
+====================================================================================================
+      REGISTERED ARMS: 9 -- Ⓐ① Ⓑ②③④ Ⓒ⑤⑥⑦⑧ Ⓓ⑨; ALL NINE met.  THREE are ADDITIONS,
+      each marked in its own label: Ⓒ⑥ᵇ the absorbed-share comparison, Ⓒ⑦ᵇ the
+      residual-overlap screen, and Ⓔ⑩ the P16 clauses.  CHECKS RUN: 12.
+      The EIGHT inputs are declared in the COMPUTES header; no spectrum is new and nothing
+      is fitted beyond the two or three parameters each fit is of.
+      NOT CLAIMED: that PO-24 closes -- Y_He and three others are named and not tested;
+      anything above l = 1996; that N_eff is or is not fixed by the corpus, the receipt
+      reporting what P16 says and judging against what P16 quotes; and no significance
+      against the sky, every number being a degeneracy-fit number.
+
+==========================================================================================
+
+  ALL CHECKS PASS.
+
+  PO-24's terminating clause is not met by the neutrino count either, and the
+  negative is cleaner than the baryon density's.
+
+  The excursion the fit wants is INSIDE the constraint the corpus quotes --
+  2.9885 against an adopted 3.046, which is -0.34 of the
+  quoted sigma -- so the datum permits it.  And the displacement survives it
+  entirely: 100.27 to 100.71 per cent standing, the absorbed share gaining
+  at most a quarter of a point.
+
+  So the failure is not about room.  For the baryon density one could say the
+  absorber was unaffordable; here it is affordable and buys nothing.
+
+  And 70's shape argument inverts, for a reason that generalises.  The
+  signature is almost exactly a tilt, so the already-free tilt takes 70 to 97
+  per cent of it.  What a candidate must overlap is the RESIDUAL the tilt
+  leaves -- and both parameters measured so far are nearly orthogonal to it.
+  That is one projection, not a fit, and it is the screen to apply to Y_He when
+  70's bank lands.
+
+==========================================================================================

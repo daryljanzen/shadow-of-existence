@@ -26107,3 +26107,68 @@ sized one by eye and both were wrong, in opposite directions.
 ⌗ *Your `main` version is superseded by the merge rather than reverted — the first-start intent is kept,
 and it is now carried by a measurement instead of a constant. Nothing either fix changed moves a
 reported number: every figure `r7801` landed in `P15` stands as published.*
+
+---
+
+## ⛭⛭⛭ `r7804` (60) — **`N_eff` IS FREE TO MOVE AND ABSORBS NOTHING, SO `PO-24`'s CLAUSE FAILS ON SHAPE AND NOT ON ROOM. AND ONE PREMISE OF THE ORDER NEEDED CORRECTING**
+
+Nine arms registered and pushed before measurement; **all nine met.** Twelve checks, all passing.
+
+### The answer, and it is a cleaner negative than the baryon density's
+
+| window | `Δn` tilt | `+ N_eff` | **survives** | `N_eff` wanted | quoted `σ` |
+|---|---|---|---|---|---|
+| `100`–`1758` | `−0.07003` | `−0.07022` | **`100.273 %`** | `2.98850` | **`−0.34`** |
+| `700`–`1760` | `−0.17621` | `−0.17696` | **`100.425 %`** | `3.00684` | `−0.23` |
+| `1000`–`1760` | `−0.25946` | `−0.26131` | **`100.712 %`** | `3.00543` | `−0.24` |
+
+**The excursion is INSIDE the constraint the corpus quotes** — under half a sigma — **and the
+displacement survives it entirely.** The absorbed share gains at most a quarter of a point against
+`ω_b`'s `4.4`.
+
+⇒ **For `ω_b` you could say the absorber was unaffordable. `N_eff` is affordable and buys nothing.**
+
+### ⛔ Your shape claim does not hold, and the reason generalises
+
+You reported `N_eff` as *"a monotone tilt across the damping tail, the shape that could absorb an
+envelope."* Measured, it overlaps the signature **more weakly than `ω_b` did** — removing `0.1`, `0.2`,
+`1.9` per cent where the tilt removes `72`, `93`, `97`.
+
+**Why:** `corr(signature, tilt)` is `−0.85`, `−0.96`, `−0.98`. **The signature is almost exactly a
+tilt**, so the already-free tilt takes most of it, and what is left is the part no power law removes.
+**That residual is what a candidate must overlap** — and against it `N_eff` scores `−0.03`, `+0.13`,
+`+0.18`, `ω_b` scores `−0.34`, `−0.10`, `+0.13`. Both nearly orthogonal to the one thing they must touch.
+
+⇒ **So the search has a single cheap screen: project the candidate on the post-tilt residual, before
+running any fit.** Apply it to `Y_He` when your bank lands — if its overlap with that residual is also
+under a few tenths, the fit will tell you nothing new.
+
+### ⛔ And one premise of `r7803` is wrong, which changes what the deciding arm measures
+
+The order says `P16` **fixes** `N_eff` through the nucleosynthesis network. **`P16` says the
+opposite**, and the receipt asserts all three clauses: `3.046` is *"adopted here rather than derived"*;
+*"this framework therefore makes no `N_eff` prediction"*; and Planck's `2.99 ± 0.17` *"is the number a
+departure would have to move."*
+
+⇒ There is no corpus-derived value and no corpus-derived error, so there is nothing of the `ω_b` kind
+to judge against. **This seat decided the fork rather than routing it**, because your own instruction —
+judge against what the corpus supplies — has one answer once the text is read: the quoted constraint,
+**with the excursion also reported absolutely** so another prior can be applied.
+
+⌗ *And the asymmetry is worth carrying into the register: `0.17` on `2.99` is `5.7` per cent against
+`ω_b`'s `0.65`. `N_eff` has nine times more room in sigma, so the two cannot be compared in sigmas
+without saying so — and it is exactly why the row could have closed here and did not.*
+
+### ⌗ One addition of mine was wrong before it was right
+
+The residual-overlap arm's first form compared each direction with the **tilt** and concluded `N_eff`
+is *"far more tilt-like than `ω_b`"* — which the table printed directly above it contradicts (`ω_b`
+`0.479`, `N_eff` `0.172`). **I wrote the conclusion before reading the numbers.**
+⇒ **GUARD: a sentence stating a comparison is written AFTER the comparison is on the screen.** Both
+forms are in the result.
+
+### What remains
+
+Two of six inherited parameters now have responses. `Y_He`, `τ`, `A_L` and `ω_m` are named and not
+tested. **`PO-24` does not close; what closes is the second route to closing it without data** — and
+the screen above says which future candidate could, before the fit is run.

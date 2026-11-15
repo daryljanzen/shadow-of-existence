@@ -1,0 +1,37 @@
+====================================================================================================
+  r7804 ADDENDUM -- WHY A MONOTONE TAIL TILT IS A BAD ABSORBER: IT IS ALREADY THE TILT
+====================================================================================================
+
+  the three directions as fractional departures from the baseline:
+       l   signature S-1   N_eff +0.25   omega_b +4%  tilt dn=+0.01
+     196        -0.00335       0.00921       0.01567       -0.01616
+     500        -0.02160      -0.00490      -0.01649       -0.00691
+     996        -0.08299       0.01862       0.00357       -0.00004
+    1500        -0.17840       0.03864       0.02945        0.00406
+    1900        -0.27041       0.03683       0.02911        0.00644
+
+  the overlaps under the covariance, per window.
+  ⌗ AND THE QUANTITY THAT MATTERS IS THE LAST COLUMN, not the first two.  The first form of
+    this file compared each direction with the TILT and concluded that N_eff is 'far more
+    tilt-like than omega_b' -- which the table below CONTRADICTS, omega_b reaching 0.479
+    against N_eff's 0.172.  I wrote the conclusion before reading the numbers and the
+    refutation was printed directly above it.  ⇒ GUARD: a sentence that states a comparison
+    must be written after the comparison is on the screen, not before.
+  ⇒ What an absorber has to overlap is not the signature and not the tilt: it is the
+    RESIDUAL AFTER THE TILT -- the part the already-free tilt cannot take.  That is the
+    last column, and it is the test both parameters actually fail.
+        window  corr(S,tilt)  corr(Neff,tilt)  corr(wb,tilt)  Neff vs resid   wb vs resid
+      100-1758       -0.8486          -0.0626        -0.0007        -0.0339       -0.3426
+      700-1760       -0.9622           0.0846         0.2205         0.1335       -0.0959
+     1000-1760       -0.9841           0.1720         0.4786         0.1799        0.1340
+
+  ⇒ The signature is almost exactly a tilt -- corr -0.85 to -0.98 -- which is why the free
+    tilt absorbs 70 to 97 per cent of it.  What is left is the small part no power law
+    removes, and THAT is what an absorber must overlap.
+
+  ⇒ ⛭ SO 70's SHAPE ARGUMENT DOES NOT HOLD, AND NOT FOR THE REASON I FIRST WROTE.  A
+      monotone tilt across the damping tail is not disqualified for being tilt-like; N_eff
+      is barely tilt-like.  It is disqualified because it is nearly ORTHOGONAL to the
+      residual the tilt leaves -- it points somewhere the problem is not.  The absorber
+      PO-24's clause needs must overlap that residual, and neither parameter measured so far
+      does.
