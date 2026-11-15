@@ -1,0 +1,40 @@
+r7794 (60) -- THE TREE THE READING WAS TAKEN ON
+
+  HEAD at the reading:        84bc0ce78b0c7f6ab3fdce6f9373b0abe6e4e173
+  origin/main:                707d34fe394ee5dc5051acfdf28d4b0091d29220
+  shallow: false   commits from HEAD: 8124
+
+REGISTER-BEFORE-MEASURE
+  PREDICTION.md was committed AND pushed with nothing else in that commit, before probe.py existed.
+  Nine arms.  One came back FAIL and is reported FAIL; its criterion was not rewritten.
+
+WHAT WAS READ, AND WHERE FROM
+  corpus/CR_framework.tex        thm:bead's material; sec:lift-initial-rate; the handover paragraph
+  corpus/CR_cosmology.tex        sec:scope, sec:flatlcdm, sec:properframe
+  corpus/cosmogenesis_paper.tex  the deposition paragraphs and the inherited-data list
+  corpus/dynamics_paper.tex      ** A WIDENING OF THE REGISTERED SCOPE, DECLARED IN THE PROBE'S OWN
+     HEADER AND IN THE RESULT: the registration named four regions and not this paper, and the paper
+     is titled "Why the cut bends".  A search for an onset of the bend that skipped the paper about
+     the bend would be scoped and misleading at once. **
+  THE_REGISTER.md                for its own printed crossover figure, which arm 4 compares against
+
+WHAT WAS DERIVED RATHER THAN QUOTED
+  alpha, r_0, 2M and K, in the probe, from the published pair (H_0 = 68.6, Omega_m = 0.2973) and
+  omega_gamma = 4.15e-5 h^-2.  Two further INPUTs are declared in the probe's header: the measured
+  photon temperature 2.7255 K and the electron mass.
+
+WHAT WAS MEASURED TWICE, AND WHY
+  arm 2's search.  It failed, and the failure was in the search and not in the corpus: 'eta' tested
+  as a SUBSTRING matches 'retains', 'theta', 'beta', 'metal'.  addendum.py re-measures it with a
+  TOKEN search for the LaTeX macro, declared post-hoc, and prints the noise the loose form matched
+  beside it so the two can be compared rather than swapped.
+  ⇒ GUARD: a substring is not a token.
+  ⇒ AND THE SECOND GUARD, from arm 1: when you search for whether a claim is MADE, search for its
+    DENIAL too.  Arm 1 found no onset asserted, which is true and weak; what is in print is a denial
+    of the onset, in two papers, and the search was not built to find it.
+
+THE FILES
+  PREDICTION.md   the nine arms, pushed before probe.py existed
+  probe.py        the nine arms measured
+  addendum.py     one POST-HOC re-measurement, declared as post-hoc, changing no criterion
+  runs/READINGS.txt / runs/ADDENDUM.txt / runs/TREE.txt / runs/VALIDATION.txt

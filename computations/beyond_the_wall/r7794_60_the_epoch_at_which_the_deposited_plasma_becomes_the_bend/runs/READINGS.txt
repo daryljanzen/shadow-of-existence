@@ -1,0 +1,120 @@
+====================================================================================================
+r7794 (60) -- the epoch at which the deposited plasma becomes the bend (order r7779/r7783)
+  derived: alpha=5213.287 Mpc  r0=5051.488 Mpc  2M=2006.5950 Mpc  K=3006.658 Mpc^2
+====================================================================================================
+  regions searched, with their sizes in characters:
+      P7 thm:bead material                                 7501
+      P7 sec:lift-initial-rate                            30007
+      P15 sec:scope                                       57948
+      P15 sec:flatlcdm                                    35042
+      P15 sec:properframe                                 42501
+      P16 (deposition, whole paper)                      111863
+      P-bend "Why the cut bends" (WIDENING, declared)     64845
+
+====================================================================================================
+ARM 1 -- does any searched region state an ONSET for the bend's radiation term?
+  [PASS]
+      sentences naming a first epoch for the bend, across the 7 regions: 0
+      ⌗ THE NEAR MISS, counted and set aside: 2 sentence(s) say free GRAVITATIONAL
+        radiation BEGINS at the wall -- a different species at a different locus, and reading
+        it as the bend's onset is exactly the many-to-one error the guard warns about:
+        ...% ===================================================================== \usepackage[margin=1in]{geometry} \usepackage{amsmath, amssymb, amsthm} \usepackage{mathtools} \usepackage{mathrsfs} \
+        ...\item \emph{The completion is the branch point, a reassignment.} That completion is the branch point $r=0$ at the close of the lift---finite in the substrate's curvature, divergent in the ge
+  => no region searched, including the paper about the bend, names a first epoch for it
+
+====================================================================================================
+ARM 2 -- what the deposition itself fixes: a ratio, or an epoch?
+  [FAIL]
+      sentences tying the inherited datum to the deposition: 27
+        ...However, CR/FLRW retains an inherited synchrony condition: spatial hypersurfaces of constant cosmic time expand uniformly across the entire universe.
+        ...On both legs alike the rate is one, decomposed exactly as $H_{\text{leaf}}^{2}=H_{\text{stack}}^{2}+H_0^{2}\Omega_r(1+z)^{4}$ (Eq.~\ref{eq:two-rate}): its geometric part the vacuum kernel fixes from $\Lambda$ and the cut's offset,
+        ...The same handover fixes the light-element composition, produced on the cooling leg by a genuine nuclear network: helium-4, helium-3 and deuterium at their observed values (deuterium and helium-4 within $1\sigma$ of the measured pr
+      of those, any that also fix an epoch, a redshift or a temperature: 2
+  => the deposition carries a COMPOSITION, which is a ratio; it carries no time, radius or
+     temperature, so it cannot be the thing that fixes 'just outside'
+
+====================================================================================================
+ARM 3 -- the equality radius IS the lift's inner zero, and the difference is the Lambda term
+  [PASS]
+      K/2M, where the radiation term equals the dust offset : 1.498387998497 Mpc
+      the bent radicand's inner zero (r7778, receipted r7780): 1.498387998589 Mpc
+      relative difference                                    : 6.169e-11
+      the Lambda term's share of the balance at that radius  : 6.169e-11
+  => the lap's FOURTH SEGMENT, found at r7778 and receipted at r7780, is exactly the
+     radiation-dominated era of the mass function -- and the two radii differ only by Lambda
+
+====================================================================================================
+ARM 4 -- the redshift there, against the register's own printed figure
+  [PASS]
+      z at the equality radius = r0/r - 1 = 3370.28
+      figures the register prints for the mass function's radiation dominance: ['3370']
+  => the same number, to the printed digits
+
+====================================================================================================
+ARM 5 -- it is a CROSSOVER and not an onset -- measured on both sides
+  [PASS]
+      |r| (Mpc)        z            K/|r| (Mpc)     (K/r)/2M
+         0.0149839     3.371e+05          200659           100
+          0.149839     3.371e+04         20065.9            10
+           1.49839          3370         2006.59             1
+           14.9839         336.1         200.659           0.1
+           149.839         32.71         20.0659          0.01
+           5051.49             0        0.595202   0.000296623
+  => the radiation term is non-zero and POSITIVE at every radius sampled across four decades
+     either side.  Nothing switches on at the crossover; only which term is larger changes
+
+====================================================================================================
+ARM 6 -- the temperature at the crossover, and what is relativistic there
+  [PASS]
+      T = T0 (1+z) = 2.7255 x 3371.28 = 9188.4 K = 0.7918 eV
+      the electron mass                                      = 0.510999 MeV
+      ratio kT / m_e c^2                                     = 1.550e-06
+  => far below every species' threshold: NOTHING becomes relativistic at the crossover that
+     was not relativistic before it, so the crossover is not a thermal transition of the
+     deposited matter.  The thermal question and the crossover are two epochs, not one
+
+====================================================================================================
+ARM 7 -- what the radiation term is made of, and whether it carries an epoch of validity
+  [PASS]
+      Omega_r derived from omega_gamma here: 8.818604e-05   -> K = 3006.658 Mpc^2
+      sentences in P15 fixing it by the measured temperature: 1
+        ...The coefficient $K$ is content the geometry receives, as the baryon-to-photon ratio is: every condition the slicing curve imposes, from the Nariai mass to the branch point, is a condition on the vacuum kernel, which carr
+      of those, any carrying an epoch of validity: 0
+  => the term is the photon bath's gravitating energy, fixed by a temperature measured TODAY
+     and carried back by the history.  It exists at every epoch of that history, so there is
+     no epoch at which the bend BEGINS: it is present throughout and merely subdominant late
+
+====================================================================================================
+ARM 8 -- the statement the order asked for
+  [PASS]
+      ⇒ THE QUESTION PRESUPPOSES AN ONSET AND THERE IS NONE.  What exists is a CROSSOVER,
+        and it has a locus: |r| = K/2M = 1.498388 Mpc, z = 3370.3 -- which is the same
+        radius as the bent lift's inner zero, so the lap's fourth segment IS that era.
+      ⇒ r7776's 'the bend begins just outside' should be restated:
+        ** the bend is SUBDOMINANT outside and DOMINANT inside, and it never begins. **
+      ⌗ And the near miss stays named: the corpus does state an onset for free GRAVITATIONAL
+        radiation, at the wall.  That is a different species at a different locus, and the
+        label 'radiation begins' is two-to-one on this object.
+
+====================================================================================================
+ARM 9 -- what this read cannot settle, registered so it cannot be quietly dropped
+  [PASS]
+      ⒜ the deposited plasma's own equation of state AT the branch point -- the concrete matter
+         model, which the corpus sends to a companion paper this repository does not carry;
+      ⒝ whether the progenitor's branch carries radiation at all, which r7778 left as a
+         disjunction over the progenitor and this read does not narrow.
+      ⌗ Named, not answered.
+
+====================================================================================================
+ARMS: 8 of 9 meet their criterion
+  PASS  arm 1  does any searched region state an ONSET for the bend's radiation term?
+  FAIL  arm 2  what the deposition itself fixes: a ratio, or an epoch?
+  PASS  arm 3  the equality radius IS the lift's inner zero, and the difference is the Lambda term
+  PASS  arm 4  the redshift there, against the register's own printed figure
+  PASS  arm 5  it is a CROSSOVER and not an onset -- measured on both sides
+  PASS  arm 6  the temperature at the crossover, and what is relativistic there
+  PASS  arm 7  what the radiation term is made of, and whether it carries an epoch of validity
+  PASS  arm 8  the statement the order asked for
+  PASS  arm 9  what this read cannot settle, registered so it cannot be quietly dropped
+REGISTERED ARM COUNT: 9   MEASURED: 9
+====================================================================================================

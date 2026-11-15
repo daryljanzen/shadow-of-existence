@@ -367,7 +367,12 @@ for _n in sorted(_S):
     except ValueError:
         _sample_keys.append((_S[_n][0], _S[_n][1]))
 _absent = [_k for _k in _sample_keys if _k not in _rows_then]
-_verdicted = [_k for _k in _sample_keys if _rows_now.get(_k) != _rows_then.get(_k)]
+#: r7795 (69): a row RE-POINTED because its paper was rewritten (P15/P7 on one rate, r7767-r7789) is not a verdict on
+#:   this sample; its key moves to the new literal and its note says so, so it is excluded by that note.
+_REPOINT = 'rewritten on one rate; re-pointed to the sentence that replaced it'
+_verdicted = [_k for _k in _sample_keys if _rows_now.get(_k) != _rows_then.get(_k)
+              and not any(_REPOINT in _v and _v.split('\t')[0] == _k[0] for _v in _rows_now.values()
+                          if _rows_then.get(_k) and _v.split('\t')[6:7] and _rows_then[_k].split('\t')[6] in _v)]
 print(f'      the {len(_sample_keys)} sampled keys in the ledger at {PREG}~1: '
       f'{len(_sample_keys) - len(_absent)};  rows changed since: {len(_verdicted)};  '
       f'(whole-file identity, no longer the test: {_base_at_preg == _base_now});  '

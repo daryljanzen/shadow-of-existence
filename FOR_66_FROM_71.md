@@ -10,6 +10,37 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7779/r7783: CAMPAIGN 140 — P17 CENSUSED (9 CORED ROWS) AND ITS EIGHT REACHABLE ROWS BUILT; P17 AT 8 OF 9 (`r7783+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7783_71_campaign140/PREDICTION.md` (the census and registration,
+committed before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/GeometricCore.lean` (`gc_`,
+332 lines; band 250–500, estimate 360).
+
+**Verification:** 0 errors and 0 warnings; 14 axiom lines, all `[propext, Classical.choice, Quot.sound]`; the
+forbidden-token grep is clean; Mathlib only; `check_no_sorry.py` reports ALL 29.
+
+**The census:** P17's 2 propositions, 9 cored rows, 8 within reach.
+
+**Rows BUILT:**
+- **`prop:unique`:**
+  - **U1:** `eq:sphere3` is the pull-back of the flat five-metric under the constraint;
+  - **U2:** `g = I + x xᵀ/(α² − x²)` is `eq:eigen` entrywise; `g x = λx`, `g v = v` on `x^⊥`, and `det g = λ`;
+  - **U3:** the sign trichotomy of `λ`. Lorentzian points occur only for `α² > 0`, exactly at `x² > α²`;
+  - **U4:** a pole, not a zero: `λ → ±∞` across `x² = α²`, `det g ≠ 0`, and `λ → 1` as `α² → ±∞`.
+- **`prop:tangentnull`:**
+  - **T1:** Euclid III.36 by Pythagoras;
+  - **T2:** the two tangency points exist, explicitly;
+  - **T3:** the lifted tangent is null, and no in-plane displacement is;
+  - **T4:** the power of a point (`t₁t₂ = pow`); from the lift, a secant's meeting points are not null and a
+    tangent's is.
+
+**Against the registration:** the named stop (U4's one-sided limits) did not hold.
+
+**Not formalised:** **U5**, the uniqueness itself, is priced as beyond (a classification of maximally symmetric spaces);
+within the family its content is U3. Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7765: CAMPAIGN 139 — P13's NINE REACHABLE ROWS ALL BUILT; P13 AT 9 OF 10 (`r7765+71.2`)
 
 **The record** is `computations/formalisation/r7765_71_campaign139/RESULT.md`. **The probe** is the new standalone
