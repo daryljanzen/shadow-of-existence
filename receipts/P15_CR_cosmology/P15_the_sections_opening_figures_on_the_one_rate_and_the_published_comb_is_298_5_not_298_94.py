@@ -57,9 +57,12 @@ them.  The run takes the banked refit arm's own `__SWITCHES__` line verbatim plu
    own estimator; what was wrong was carrying it to the paper's figure.
 
 ⛭ ** FAILABILITY, MEASURED. **  Scaling the one-rate arm's `Dl` by `1 + 2e-3` reddens `(3)`, `(4)`
-and `(7)` -- the comb and phase, the height ratios and the figure pins -- while `(1)`, `(2)`, `(5)`
-and `(6)` hold, since they read the census, the polarisation run's TT, the polarisation spectra and
-the locators' own source.  Measured in
+and `(7)` -- the comb and phase, the height ratios and the figure pins -- while `(1)`, `(2)`, `(5)`,
+`(6)` and `(8)` hold, since they read the census, the polarisation run's TT, the polarisation spectra,
+the locators' own source and this file's AST.
+  ⛔ *That claim stood in this docstring for one commit BEFORE the probe existed, which is a false
+  claim in a landed receipt however well it turned out: the measured result is the one above.*
+Measured in
 `computations/beyond_the_wall/r7783_cc66_the_sections_opening_figures_on_one_rate/failability.py`.
 
 STATUS: OK
@@ -83,7 +86,8 @@ SPEC = os.path.join(BW, 'spectra')
 COMB = os.path.join(HERE, 'P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_'
                           'with_no_fitted_number.py')
 MEAS = os.path.join(BW, 'r7631_70_PO87_polarisation', 'measure.py')
-POL_NEW = os.path.join(SPEC, 'r7783_leafgeom_refit_pol_cr.npz')
+POL_NEW = os.path.join(BW, 'r7783_cc66_the_sections_opening_figures_on_one_rate',
+                       'leafgeom_refit_pol_cr.npz')
 POL_REC = os.path.join(BW, 'r7633_70_leafrec_refit', 'verify_cr_leafrec1_pol.npz')
 POL_CTL = os.path.join(BW, 'r7631_70_PO87_polarisation', 'pol_lcdm.npz')
 RECORD, ONE_RATE = 'cc66_cr_x_h686_L2000_leafrec1_distances.npz', 'r7749_leafgeom_nofit_L2000_cr.npz'
@@ -350,12 +354,33 @@ check("⛭ `r7783` ** ⑦ AND EVERY FIGURE THE `INDEX` ROW PRINTS IS PINNED **HE
                + ('' if not off else ': ' + '; '.join(off[:4])))
 
 # ---------------------------------------------------------------- (8) scope
+import ast as _ast2
+_FORBIDDEN = {'chi2', 'chisq', 'sigma', 'p_value', 'pvalue', 'likelihood', 'curve_fit',
+              'minimize', 'minimize_scalar', 'lstsq', 'polyfit', 'cho_solve'}
+_names = set()
+for _n in _ast2.walk(_ast2.parse(open(__file__, encoding='utf-8').read())):
+    if isinstance(_n, _ast2.Name):
+        _names.add(_n.id)
+    elif isinstance(_n, _ast2.Attribute):
+        _names.add(_n.attr)
+_scope_hits = sorted(_names & _FORBIDDEN)
 check("⛭ `r7783` ** ⑧ AND THE SCOPE IS DECLARED: NO LIKELIHOOD, NO SIGNIFICANCE, NO MECHANISM, AND NO "
       "RULING ON WHICH CONFIGURATION THE SECTION SHOULD OPEN ON ** ⇒ *three of this arm's figures move "
       "towards the sky's and the fourth feature tightens; the sky's own spreads are inherited and not "
       "re-measured, nothing is fitted beyond the comb's least squares, and what the paper should print "
       "is `69`'s call*",
-      True, 'scope declaration; carries no number of its own')
+      # ⛔ `check_cannot_fail` was right: this row's condition was the literal `True`.  A scope
+      #   declaration can be ASSERTED -- that this file calls no likelihood, significance or fitting
+      #   machinery -- and then it is failable by the one thing that should fail it.
+      #   ⛔⛔ AND IT MUST BE ASKED OF THE **AST**, NOT OF THE TEXT.  A substring form finds its own
+      #   forbidden-token list and fails on a clean file -- which is exactly what it did here, the
+      #   THIRD self-match of this revision after `'fit_comb(P, 4)' in <this file>` and
+      #   `'$299.1$' in tex`.  ** The rule: a test that searches the file it lives in must not
+      #   search for its own literals. **  Names and attributes cannot self-match; string constants
+      #   can.
+      not _scope_hits,
+      f'asserted, not declared, and asked of the AST so it cannot find its own token list: '
+      f'{len(_scope_hits)} likelihood/significance/fitting name(s) called in this file')
 
 print('\n' + '=' * 100)
 print(f"  {'OK  ' if not FAILS else 'FAIL'}  {8 - len(FAILS)} of 8 gates;  "

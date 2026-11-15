@@ -4,9 +4,11 @@ THIS RECEIPT'S THREE-PEAK SUB-GRID COMB BY `-0.0549 %` -- NINE TIMES LESS. **
 
 ⛔⛔⛭ ** CORRECTION, `r7783+cc66.9`, AT THE TOP BECAUSE THIS RECEIPT'S OWN TITLE IS WRONG: THE FIGURE
 IS `298.5`, NOT THE `298.94` THIS FILE'S NAME AND ITS OLD GATE `⑧` CARRIED. **  `P15`'s printed comb
-of `299.1` and its phase intercept `-0.2488` are the ** FOUR-PEAK ** fit through the matched
-seven-window locator -- the comb receipt's own table prints `299.057` and `-0.2488` in its four-peak
-columns against `295.782` and `-0.2331` in its three-peak ones.  ** What `⑥` below measures is a
+and its printed phase intercept are the ** FOUR-PEAK ** fit through the matched seven-window locator.
+⌗ *The four-peak and three-peak values of both quantities, on both arms, are measured and pinned in
+the receipt named below; they are deliberately NOT restated here, because a figure printed in a
+receipt that does not compute it is what `check_marker_transposition` exists to catch -- and writing
+them into this docstring is how that gate caught me.*  ** What `⑥` below measures is a
 THREE-PEAK SUB-GRID comb on a DIFFERENT locator: no lensing ratio, no binning, no seven-window
 average.  That measurement stands.  What was wrong was applying ITS move to the paper's four-peak
 number -- one estimator's move on another estimator's figure. **  Read off the one-rate arm through

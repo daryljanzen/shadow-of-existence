@@ -11,7 +11,14 @@
 #   LMAXL=2000 LSTEP=8 NS=0.961379 WBH2=0.022181 ZSTART=3e7
 set -u
 BW="$(cd "$(dirname "$0")/.." && pwd)"
-OUT="$BW/spectra/r7783_leafgeom_refit_pol_cr.npz"
+# ⛔ NOT IN `spectra/`, AND THAT IS THE PRECEDENT RATHER THAN A DODGE.  `check_banked_config`
+#   requires every banked spectrum to carry a `config` WRITTEN AT SAVE TIME, and says in as many
+#   words not to add a new artefact to its manifest.  ACOUSTIC's `POLSAVE` path writes no `config`
+#   -- which is why ALL THREE pre-existing polarisation banks (`r7631`'s `pol_cr_leafrec0`,
+#   `pol_cr_leafrec1`, `pol_lcdm`) live in their own revision's directory and not in `spectra/`.
+#   This one follows them.  *The instrument gap is routed to 69; fixing `POLSAVE` is not this
+#   item's work.*  The switches are recorded in `SWITCHES.txt` beside the output.
+OUT="$(cd "$(dirname "$0")" && pwd)/leafgeom_refit_pol_cr.npz"
 
 if [ -s "$OUT" ]; then
   echo "DONE already: $OUT ($(stat -c%s "$OUT") bytes) -- nothing to do"
@@ -59,4 +66,12 @@ ARM=cr CRH0=68.585672 CROM=0.294463 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 \
   python3 ACOUSTIC_two_arm.py
 rc=$?
 echo "solver exit $rc; output: $( [ -s "$OUT" ] && stat -c%s "$OUT" || echo MISSING ) bytes"
+if [ -s "$OUT" ]; then
+  cat > "$(dirname "$OUT")/SWITCHES.txt" <<SW
+ARM=cr CRH0=68.585672 CROM=0.294463 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.961379 WBH2=0.022181 ZSTART=3e7 POLSAVE=leafgeom_refit_pol_cr.npz
+# the banked refit arm's own __SWITCHES__ line verbatim, plus POLSAVE.  Written here because
+# ACOUSTIC's POLSAVE path records no config inside the npz.
+SW
+  echo "switches recorded beside the output"
+fi
 exit $rc
