@@ -201,7 +201,8 @@ def main():
     #   $\ell\approx8$ (receipts: verify_lowell_boltzmann ..." -- matched exactly once, rather than carried as the
     #   literal 8 beside the words "the paper's quoted" (check_unread_figure, r7151: FIGURE).  The paper prints the
     #   phrase three times; the Boltzmann one is the sentence this check measures against.
-    _rec = re.findall(r'recovering by \$\\ell\\approx(\d+)\$ \(receipts: \\texttt\{verify\\_lowell\\_boltzmann', p15)
+    # r7801 (69): the sentence now names the one-rate depths' receipt first and the transfer after it.
+    _rec = re.findall(r'recovering by \$\\ell\\approx(\d+)\$ \((?:receipts: \\texttt\{verify\\_lowell\\_boltzmann|the depths on the rate the universe has)', p15)
     assert len(_rec) == 1, f'P15: the Boltzmann recovery sentence matches {len(_rec)} time(s), not once'
     P15_REC = int(_rec[0])
     check(f'⓶ᵇ and it sets the recovery multipole: with it the spectrum recovers to 99% at l='
@@ -223,7 +224,8 @@ def main():
           # r7701 (69): the paper's tolerance is now the measured $2.9$ per cent, with both
           #   transfers on the arm of record's pairing; within three per cent either way.
           and ('three per cent at every multipole' in p15
-               or '$2.9$ per cent at every multipole' in p15))
+               or '$2.9$ per cent at every multipole' in p15
+               or '$3.0$ per cent at every multipole' in p15))
 
     print()
     print('  ' + '=' * 74)

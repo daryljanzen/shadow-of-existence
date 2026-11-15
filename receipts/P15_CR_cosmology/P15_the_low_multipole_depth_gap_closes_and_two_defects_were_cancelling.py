@@ -918,9 +918,15 @@ for _l, _w3 in ((2, '0.485'), (3, '0.441'), (4, '0.354'), (5, '0.657'),
 for _l, _w2 in ((2, '0.48'), (3, '0.44'), (4, '0.35'), (5, '0.66')):
     check(f"\u26ed `r7697` ...and {_w2} at the two places `l.2771` prints, both conventions",
           _r1x(_ARMA[_l], 2) == (_w2, _w2), f"{_ARMA[_l]:.6f} -> {_r1x(_ARMA[_l], 2)}")
-check(f"\u26ed `r7699` the paper's parsed quartet {' / '.join(f'{v:.3f}' for v in _PAPER4)} is arm A (L)'s, "
-      f"each figure within half a unit of its last place -- PARSED from the paper",
-      all(abs(_ARMA[l] - v) <= 0.5e-3 + 1e-12 for l, v in zip((2, 3, 4, 5), _PAPER4)),
+# r7801 (69): the paper now prints arm A on the ONE RATE, measured by cc66's
+#   P15_the_low_multipole_depths_on_the_one_rate_at_every_l_from_2_to_8_... (r7797+cc66.2), which pins
+#   0.4898 / 0.4351 / 0.3594 / 0.6677.  This row reads the paper and accepts either arm-A quartet,
+#   never a mixture: the (L) one computed here, or the one-rate one that receipt pins.
+_ONE4 = (0.4898, 0.4351, 0.3594, 0.6677)
+check(f"\u26ed `r7699` the paper's parsed quartet {' / '.join(f'{v:.3f}' for v in _PAPER4)} is arm A's, (L) or "
+      f"one rate, each figure within half a unit of its last place -- PARSED from the paper",
+      all(abs(_ARMA[l] - v) <= 0.5e-3 + 1e-12 for l, v in zip((2, 3, 4, 5), _PAPER4))
+      or all(abs(w - v) <= 0.5e-3 + 1e-12 for w, v in zip(_ONE4, _PAPER4)),
       " / ".join(f"{_ARMA[l]:.4f}" for l in (2, 3, 4, 5)))
 _M3 = tuple(_l for _l in range(2, 9) if _r1x(_ARMA[_l], 3)[0] != f"{_EXA[_l]:.3f}")
 check("\u26ed\u26d4 `r7697` ** SIX OF SEVEN THREE-PLACE DIGITS MOVE AND THE ONE THAT HOLDS IS l = 7 -- "

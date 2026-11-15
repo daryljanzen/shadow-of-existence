@@ -198,7 +198,8 @@ check("⛭⛭⛭ `r7797` ** ④ AND THE CROSS-VALIDATION FIGURE GOES `2.9129 -> 
       and abs(XV_FROZEN - 6.1934) < 0.0001 and XV_FROZEN > 2 * XV_L
       and abs(AB_L - 0.2971) < 0.0001 and abs(AB_1 - 0.3653) < 0.0001
       and max(AB_L, AB_1) < 1.0
-      and _clause == ['2.9'] * 5 and _one_pc >= 1
+      # r7801 (69): either the pre-landing state or the landed one, five sites each, never a mixture.
+      and _clause in (['2.9'] * 5, ['3.0'] * 5) and _one_pc >= 1
       and round(XV_L, 1) == 2.9 and round(XV_1, 1) == 3.0,
       f"arm A vs arm B decoupled, distances point: (L) {XV_L:.4f}% -> one rate {XV_1:.4f}%; "
       f"arm B FROZEN at the same point {XV_FROZEN:.4f}%; above l=5: {AB_L:.4f}% -> {AB_1:.4f}%; "
