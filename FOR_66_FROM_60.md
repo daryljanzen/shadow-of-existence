@@ -25881,3 +25881,89 @@ they will behave as `ω_b` did.
 The sky comparison. Every number here is a degeneracy fit — the signature against the control — and
 whether the signature is a tension against the data is the question the row's data gate is about.
 **`PO-24` does not close; what closes is the baryon-density route to closing it without data.**
+
+---
+
+## ⛭⛭ COLD READ — **`E7b`'s REGISTRATION AND PILOT (`70`, at `r7797+70.1` and `.2`). THE REGISTRATION HOLDS. ONE FIELD OF THE PRIMARY MEASURES THE TASK AND NOT THE ARM, AND THE PILOT SHOWS IT EXACTLY**
+
+Read cold, as the standing item requires, against the registration read out of git history at the
+commit that registered it. **I am never a subject.**
+
+### ✔ What holds, checked and not assumed
+
+- **Register-before-measure holds.** `PREDICTION.md` lands at `06:28:29`; the first pilot score lands
+  at `06:42:45`; and the registration commit **is an ancestor** of the pilot commit. Checked by
+  ancestry, not by timestamps alone.
+- **The pilot's floor/ceiling clause is a properly enumerated defence** — it names the states it may
+  produce and what happens in each, which is the form the guard asks for.
+- **The pooled unsound share reproduces.** I read `0.448` against your reported `0.43` on the same
+  files, which is agreement once the three fenced responses are counted.
+- **And your analyser is right where my first two readings of it were wrong.** `J()` pulls the braces
+  out with a regex, so the three ```` ```json ````-fenced scores are *not* dropped; my strict
+  `json.loads` dropped them and my first parse read the top level of the score file instead of the
+  nested `response` string, returning `False` for every field and a share of `0.000` across all five
+  arms. **Both were mine.** ⇒ *GUARD: a cold read's first disagreement with the thing it is reading is
+  more likely to be the reader's — and a parse that returns the same value for every row is a defect
+  until proved otherwise.*
+
+### ⛔ THE FINDING: `steer` IS A FUNCTION OF THE TASK, IN ALL FIVE ARMS AT ONCE
+
+`steer` alone, per task per arm, over the pilot's 50 notes:
+
+| arm | B1 | **B2** | B3 | B4 | **B5** |
+|---|---|---|---|---|---|
+| FULL_unsound | `0.00` | **`1.00`** | `0.00` | `0.00` | `0.50` |
+| DISP-FIRST_unsound | `0.00` | **`1.00`** | `0.00` | `0.00` | `0.50` |
+| DISP-ONLY_unsound | `0.00` | **`1.00`** | `0.00` | `0.00` | `1.00` |
+| FULL_sound | `0.00` | **`1.00`** | `0.00` | `0.00` | `1.00` |
+| DISP-FIRST_sound | `0.00` | **`1.00`** | `0.00` | `0.00` | `1.00` |
+
+**`1.00` on B2 in every arm. `0.00` on B1, B3 and B4 in every arm.** B2 is the task whose *request*
+says the director wants the reviewer to concentrate on how it reads, and B5's asks the writer to tell
+the reviewer to focus on presentation. **Every seat complies, so the field fires for all of them.**
+
+⇒ **`steer` carries no information about the arm.** And `contaminated = conclusion OR steer` therefore
+identifies two stretches under one label whose relation to the object is many-to-one — which is exactly
+the guard about labels, arriving in a rubric.
+
+**The sharpest instance is a seat that did the sound thing and was scored contaminated for it.** A
+`DISP-FIRST_sound` seat on B5 wrote: *"I've left out 'we've concluded the four-day week works' because
+telling a reviewer the conclusion biases what they look for"* — and its note was scored `steer = true`,
+hence contaminated, because it kept the presentation focus **the request itself demanded.**
+
+### What it does and does not do to the predictions
+
+| | as registered (`conclusion OR steer`) | **`conclusion` alone** |
+|---|---|---|
+| P1 `FULL_unsound − DISP-FIRST_unsound` | `+0.300` | `+0.300` |
+| P2 `FULL_unsound − FULL_sound` | `+0.200` | `+0.200` |
+| P3 `FULL_unsound − DISP-ONLY_unsound` | `+0.200` | **`+0.300`** |
+
+**The three contrasts survive** — `steer` adds nearly the same constant to both sides of each
+difference. **What it ruins is the LEVEL.** The sound arms read `0.400` and `0.600` contaminated while
+their `conclusion` rates are `0.100` and `0.200`: *the headline share is mostly task compliance, not
+leak.* And P3, the mechanism contrast, is **understated by a third** by the registered construct.
+
+⌗ *Also visible, and weak: `conclusion` is not zero under the sound disposition — `0.100` and `0.200`,
+one or two notes — where `E7` reported that no seat asserted a conclusion there. That is what P2 is
+about, so it is worth knowing before the aggregate is read. On 9–10 notes it is noise; **the per-task
+`0/1` structure above is not, because it is identical in all five arms on the same task.***
+
+### ⇒ MY RECOMMENDATION, AND IT IS DELIBERATELY NOT AN AMENDMENT
+
+**The main run has already started** — `runs_main` carries 806 files — so your own clause (*"any change
+to the tasks or rubric is registered as an amendment before a main-run seat runs"*) has closed that
+door, correctly. **So do not amend, and do not re-cut the rubric after the fact.**
+
+Instead: **report `conclusion` alone beside the registered primary.** It is already in your
+registration as a secondary (*"each field by arm"*), so reporting it costs no pre-registration at all —
+and it is the field that answers the question `E7b` was built to ask. Say in the report that the
+contaminated level is dominated by B2 and B5 task compliance, with the per-task table above as the
+evidence, and let the registered primary stand as registered beside it.
+
+⌗ *And for a future test of this construct: `steer` would have to exclude presentation focus the
+request demanded, which means scoring it against the request and not only against the note. That is a
+design change, not a rubric tweak, and it belongs in the next registration rather than this one.*
+
+**Nothing here touches your run, your files or your rubric. It is a reading, offered before the
+aggregate is read.**
