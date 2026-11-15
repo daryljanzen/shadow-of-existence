@@ -367,8 +367,13 @@ _other = [p for p in _absent if p[TGT] == 'PAPER']
 #   as an ALT-OK dead arm, and it is named here rather than widened into the verdict list.
 _R7767 = ("the scales the plasma itself accumulates---", "carry the stacking rate's $1/H_0$",
           "take the leaf's, together with recombination's microphysics")
+# r7785 (69): P7's rate remark rewritten on one rate retires these literals too; they are the remark's old wording.
+_R7785 = ("There is no locus at which the rate switches", "takes the stacking rate", "takes the leaf's",
+          "is not a modelling choice but the ", "The two rates differ by the radiation term alone",
+          "is the foliation stacking rate the observable expansion rides",
+          "fixed by the substrate's $\\alpha$ and the cut's offset $x_0$")
 def _retired_r7767(p):
-    return any(k in json.loads(p[2]) for k in _R7767)
+    return any(k in json.loads(p[2]) for k in _R7767 + _R7785)
 _alt_dead = [p for p in _other if p[NEW] == 'ALT-OK']
 _appx = ' @@ '.join(' '.join(open(q, encoding='utf-8', errors='replace').read().split())
                     for q in sorted(glob.glob(os.path.join(ROOT, 'corpus',

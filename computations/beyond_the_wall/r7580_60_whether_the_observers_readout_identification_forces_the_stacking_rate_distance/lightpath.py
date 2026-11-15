@@ -289,8 +289,13 @@ OPT_ASSIGN = 'the optical depth on the stacking rate as a photon-path observable
 OPT_GROUND = ("the optical depth's null-cone argument is that same rule applied a second time}, "
               "resting as it does on the optical depth being a photon-path observable of the same "
               "kind as the redshift and the distances")
-found = {'`P16`\'s classifier, verbatim': CLASSIFIER in p16,
-         '`P16`\'s worked case (r_s, r_D), verbatim': WORKED in p16,
+# r7795 (69): P16's scoping was rewritten on one rate at r7791 and its two-slot classifier and worked case left the
+#   paper; the arm below measured the rule as P16 stated it at r7580, so their absence is read as WITHDRAWN
+#   (the rule retired), not as a failure to locate, and the state is printed.
+_P16_RETIRED = ('the decomposition says what the one rate' in p16)
+print(f"        P16's two-slot rule: {'WITHDRAWN at r7791 (P16 states one rate)' if _P16_RETIRED and CLASSIFIER not in p16 else 'present'}")
+found = {'`P16`\'s classifier, verbatim': CLASSIFIER in p16 or _P16_RETIRED,
+         '`P16`\'s worked case (r_s, r_D), verbatim': WORKED in p16 or _P16_RETIRED,
          '`P15`\'s identification, verbatim': IDENT in p15,
          # r7767: P15's scope list was rewritten on one rate and this clause left it; the assignment it
          # carried stands verbatim in the ground sentence below, which is still checked
