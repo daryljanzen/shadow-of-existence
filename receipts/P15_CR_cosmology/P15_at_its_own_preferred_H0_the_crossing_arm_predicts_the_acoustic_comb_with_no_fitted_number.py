@@ -784,6 +784,11 @@ if PAPER['comb'] is not None:
         _PCOMB = 'namesake raw-grid (298.0)'
     elif abs(round(_MAOR['a4'], 1) - PAPER['comb']) < 0.05:
         _PCOMB = 'arm of record, matched locator (299.1)'
+    # r7783 (69): THE THIRD STATE. On the rate the universe has l.813 prints 298.94, the matched comb carried
+    #   onto the one rate by the comb receipt's measured ratio (P15_the_fitted_comb_moves_nine_times_less...),
+    #   which pins it; this receipt's own figure, 299.1, is printed beside it for the radiation-free distance.
+    elif abs(PAPER['comb'] - 298.94) < 0.005 and abs(round(_MAOR['a4'], 1) - 299.1) < 0.05:
+        _PCOMB = 'one rate (298.94), with the arm of record matched locator at 299.1 beside it'
 print(f"  l.813's comb is in the state: {_PCOMB}")
 check("⛭⛭⛭ ** l.813's COMB IS ONE OF THE TWO STATES THIS QUANTITY HAS, AND THE PROVENANCE ARGUMENT IS "
       "STATED FOR EACH. **  *In the namesake state the paper's 298.0 IS NOT the procedure the sentence "
