@@ -3319,6 +3319,11 @@
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B11_three_triples_two_identifications.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43740489188",
+    "since": "ce8a42d9b8301694b5992cf53f13d0a4b484c91b",
+    "unmeasured": true
+   },
    "receipts/L221_the_bridge/B13_po2_identification_is_stated.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
@@ -3382,6 +3387,11 @@
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43740489188",
+    "since": "ce8a42d9b8301694b5992cf53f13d0a4b484c91b",
     "unmeasured": true
    },
    "receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py": {
@@ -5164,6 +5174,11 @@
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43740489188",
+    "since": "ce8a42d9b8301694b5992cf53f13d0a4b484c91b",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
@@ -5657,6 +5672,11 @@
    "receipts/P15_CR_cosmology/UNC_error_budget.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af",
+    "unmeasured": true
+   },
+   "receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43740489188",
+    "since": "ce8a42d9b8301694b5992cf53f13d0a4b484c91b",
     "unmeasured": true
    },
    "receipts/P16_cosmogenesis_paper/P16_CR_makes_no_Neff_prediction_because_it_fixes_a_place_and_not_a_coupling.py": {
