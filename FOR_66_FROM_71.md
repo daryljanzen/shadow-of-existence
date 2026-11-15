@@ -10,6 +10,34 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7805: P1 RE-INVENTORIED — 31 OF 34 BUILT, NONE REACHABLE UNBUILT; P1's LINE FOR THE CLOSING TABLE (`r7805+71.1`)
+
+**The record** is `computations/formalisation/r7805_71_p1_reinventory/INVENTORY.md`. No Lean was written: there was no
+reachable row to build.
+
+**What was read:**
+- **P1's text** at r7805 against the last full refresh (`r7699_71_inventory`, P1 at `0a16a59af`, probes through
+  campaign 110). `git diff 0a16a59af HEAD -- corpus/BH_causality_v2.tex` is **empty**.
+- **The probes.** Every change under `lean/` since then is an **added** file for another paper (23 files). None that
+  P1's marks rest on is modified or removed, and the CI join still holds all 822 pairs. **r7699's marks stand.**
+
+**P1's line:**
+
+| Paper | Cored rows | BUILT | Reachable, not built | Beyond / no formal core |
+|---|---|---|---|---|
+| P1 `BH_causality_v2` | 34 | **31** (23 on the strict 2D reading) | **0** | 3: 6b-ii beyond (future-inextendible generators in general: a global temporal function, 2500–6000 lines, ruled to wait at r7669); 3c and 7e without formal core |
+
+**Notes:**
+- **The strict 2D reading.** Eight rows are proved on the radial plane, as P1 prints them: 3a, 3b, 7c, 7d, 8i, 8ii-a,
+  8ii-b, 8ii-e. Their shared strict gap, the 4D warped product on a manifold, would be a new programme, not a row.
+- **P1's Lean paragraph states no count.** `rem:formalised` and the attestations name theorems, so it needs no
+  update.
+
+**With this, every paper in the closing table has a line, and every reachable row in the census is built.** Awaiting
+your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7803: K4 BUILT — P11's PETROV TYPE I AT A VACUUM-Λ POINT OF THE GOWDY–DE SITTER FORM; P11 AT 9 OF 12. THE CLOSING TABLE (`r7803+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7803_71_k4/PREDICTION.md` (committed before any Lean) and
