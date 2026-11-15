@@ -272,7 +272,8 @@ d_rec = {s: feat[(s, 'rec')] - feat[(s, 'ctl')] for s in ('TT', 'EE', 'TE')}
 d_one = {s: feat[(s, 'one')] - feat[(s, 'ctl')] for s in ('TT', 'EE', 'TE')}
 w_rec, w_one = max(abs(v) for v in d_rec.values()), max(abs(v) for v in d_one.values())
 # ⛔ `check_unread_figure` again: the label calls this the PAPER's claim, so the paper is read.
-_ff_claim = _re.search(r'differ at the fourth feature by \$(\d\.\d{2})\$ multipoles in \$TT\$',
+# r7797 (69): whitespace-tolerant, because the landed sentence breaks its line inside this clause.
+_ff_claim = _re.search(r'differ\s+at\s+the\s+fourth\s+feature\s+by\s+\$(\d\.\d{2})\$\s+multipoles\s+in\s+\$TT\$',
                        tex_src)
 check("⛭⛭⛭ `r7783` ** ⑤ AND THE FOURTH ACOUSTIC FEATURE IS THE CONTROL'S TO A **FIFTH OF A "
       "MULTIPOLE** IN ALL THREE SPECTRA ON THE ONE RATE -- `-0.000` TT, `-0.183` EE, `-0.206` TE -- "
