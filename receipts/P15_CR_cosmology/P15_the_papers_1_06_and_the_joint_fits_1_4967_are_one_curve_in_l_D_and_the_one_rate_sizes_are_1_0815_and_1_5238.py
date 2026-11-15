@@ -242,8 +242,11 @@ check("⛭⛭⛭ `r7797` ** ⑥ AND THE ONE-RATE SIZE OF **BOTH** FORMS, EACH ON
       "ABOVE **BOTH** OF `C62`'s BOUNDS AND BOTH STILL THE PREDICTED SHAPE TO `1.000000` ** ⇒ *the "
       "move is `-0.4984` per cent, read from the two banked arms' own `D_M` and applied to whichever "
       "`l_D` is in force -- so whichever figure `sec:coherence` prints, its one-rate counterpart is "
-      "here and labelled, and neither has to be carried to the other*",
-      abs(100 * MV - (-0.4984)) < 0.0001
+      "here and labelled, and neither has to be carried to the other.  ⌁ Carrying ①'s PAPER "
+      "READ as a condition, because this label names `sec:coherence`: a row that names the paper "
+      "must open it*",
+      _has_106 and _has_shift
+      and abs(100 * MV - (-0.4984)) < 0.0001
       and abs(LD_A1_CR - 1355.2123) < 0.0001 and abs(LD_AF_CR - 1489.5783) < 0.0001
       and abs(A1C['chi2'] - 1.5238) < 0.00005 and abs(AFC['chi2'] - 1.0815) < 0.00005
       and abs(_gro_1 - 1.811) < 0.001 and abs(_gro_f - 1.846) < 0.001
@@ -270,9 +273,9 @@ check("⛭⛭ `r7797` ** ⑦ AND THE JOINT-FIT RECEIPT EXITS NON-ZERO OFF ITS OW
       f"displacements {A1['dn']} and {AF['dn']}")
 
 # ------------------------------------------------- ⑧ the second collision, of kind not size
-_m148 = re.search(r'costs \$1\.48\$ in \$\\chi\^\{2\}\$ over the \$171\$ bins from '
+_m148 = re.search(r'costs \$(\d\.\d{2})\$ in \$\\chi\^\{2\}\$ over the \$171\$ bins from '
                   r'\$\\ell=100\$ to \$1760\$', flat)
-_per_bin_148 = (1.48 / 171.0) if _m148 else None
+_per_bin_148 = (float(_m148.group(1)) / 171.0) if _m148 else None
 _ratio_kind = (A1['chi2'] / _per_bin_148) if _per_bin_148 else None
 check("⛭⛭⛭⛔ `r7797` ** ⑧ AND A SECOND COLLISION IN THE SAME SUBSECTION, OF **KIND** RATHER THAN SIZE: "
       "`P15` PRINTS *\"costs $1.48$ in $\\chi^{2}$ over the $171$ bins\"* -- A **TOTAL**, `0.00865` "
@@ -305,6 +308,35 @@ check("⛭⛭ `r7797` ** ⑨ AND THE SCOPE LIMIT IS ASSERTED RATHER THAN PROMISE
       "at `r7783`*",
       not _hits,
       f"fitting and significance names in this file's AST: {_hits or 'none'}")
+
+# ------------------------------------------------- ⑩ every published figure, pinned by comparison
+_c62 = re.search(r'^C62_DATA_SHAPE, C62_INSTRUMENT = ([\d.]+), ([\d.]+)', jf_src, re.M)
+_ds = float(_c62.group(1)) if _c62 else None
+_ins = float(_c62.group(2)) if _c62 else None
+_tot = float(_m148.group(1)) if _m148 else None
+_pins = dict(
+    ratio=abs(_r_f - 1.0926) < 0.00005,
+    alpha=abs(_alp - 1.70) < 0.005,
+    header_lD=abs(_ldh - 1951.9) < 0.05,
+    absorbed_a1=abs(A1['absorbed'] - 69.8) < 0.05,
+    absorbed_a1_cr=abs(A1C['absorbed'] - 69.8) < 0.05,
+    absorbed_af=abs(AF['absorbed'] - 69.6) < 0.05,
+    absorbed_af_cr=abs(AFC['absorbed'] - 69.6) < 0.05,
+    total_1_48=_tot is not None and abs(_tot - 1.48) < 0.005,
+    c62_data_shape=_ds is not None and abs(_ds - 0.26) < 0.005,
+    c62_instrument=_ins is not None and abs(_ins - 0.92) < 0.005,
+)
+check("⛭⛭ `r7797` ** ⑩ AND EVERY FIGURE THE `INDEX` ROW PUBLISHES IS PINNED HERE BY A COMPARISON, NOT "
+      "ONLY THE ONES A ROW ABOVE HAPPENS TO TEST: THE RATIO `1.0926`, THE EXPONENT `1.70`, THE "
+      "INSTRUMENT HEADER'S `1951.9`, THE ABSORBED SHARES `69.8` AND `69.6` ON ALL FOUR ROUTES, THE "
+      "PAPER'S TOTAL `1.48`, AND `C62`'s TWO BOUNDS `0.26` AND `0.92` ** ⇒ *`check_figures_pinned` "
+      "PARSES rather than runs, so a figure a citing row prints has to appear inside a tolerance "
+      "comparison in this file.  ⌗ `C62`'s two bounds and the paper's total are PARSED from their own "
+      "sources and then pinned, so the row moves if either source does rather than if I retyped it*",
+      all(_pins.values()),
+      f"pinned: {sorted(k for k, v in _pins.items() if v)}; "
+      f"NOT pinned: {sorted(k for k, v in _pins.items() if not v) or 'none'}; "
+      f"C62's declared routes {_ds} and {_ins}; the paper's total {_tot}")
 
 print()
 bad = [n for n, ok in CHECKS if not ok]
