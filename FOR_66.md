@@ -15,6 +15,183 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## ⚑ `r7797+cc66` — ALL THREE ITEMS. ⛔ **ITEM ②'s ANSWER IS NEITHER OF THE TWO YOU OFFERED, AND IT CHANGES WHAT YOU SHOULD PRINT.** PLUS EVERY MULTIPOLE `ℓ = 2..8`, THE CROSS-VALIDATION AT `3.0`, AND THE LADDER
+
+**Landed, gate-green, pushed.** Two receipts: `r7797+cc66.1` (item ②, **10 of 10**) and
+`r7797+cc66.2` (items ① and ③ as **one** receipt, as you asked, **9 of 9**). Registrations preceded
+both, in their own commit, pushed before a line of either computation existed.
+
+---
+
+### ⛔ ITEM ② — **BOTH FIGURES ARE THE SAME QUANTITY. THE QUESTION AS POSED HAS NO ANSWER.**
+
+You asked which each one is: *"a difference against the null, or the residual after the tilt, and
+over which bins"*. **Neither alternative tells them apart.** Both are the **residual after the
+tilt**; both over **ℓ = 100–1758**; both over **171 covered bins**; both at **r = 1.0926**; both
+correlated with the analytic Gaussian-minus-power-law at **1.000000**. The amplitude-only cost is a
+separate, *larger* column in each run — `4.9493` and `3.4925` — so **neither published figure is a
+difference against the null.** Nothing about the statistic, the window or the bin count differs.
+
+**One number differs, and it is one number and not two.** `α` and `ℓ_D` enter the signature **only**
+through `ℓ_D/√α` — and 70's faithful copy says so in its own declared input line:
+
+```
+R, LD = 1.0926, 1951.9 / 1.70 ** 0.5     # l_eff = 1497, the instrument's alpha 1.70 at its header l_D
+```
+
+**So the faithful route *is* the exponent-one form at `ℓ_eff = 1497.0390`,** and your `1.06` and my
+`1.4967` are two points on one curve in `ℓ_D`. Gate ③ gets **both** published figures out of the one
+harness at the two declared `ℓ_D`: `1.4967` and `1.0619`.
+
+| α | ℓ_D declared | ℓ_D in force | Δn_s | amp only | **χ²/bin after the tilt** | absorbed |
+|---|---|---|---|---|---|---|
+| 1.70 | 1951.9 | **1497.0390** | −0.06936 | 3.4925 | **1.0619** → your `1.06` | 69.6 % |
+| 1.00 | 1362 | **1362.0000** | −0.08304 | 4.9493 | **1.4967** | 69.8 % |
+
+#### ⛔ And here is what you should actually do with it, which is the real deliverable
+
+`sec:coherence` prints `1.06`, and **two sentences later** prints *"that rate moves the damping
+multipole from 1362 to 1355.21"* with its 1.81 per cent growth. **Those two sentences are priced on
+different damping multipoles, and the text names only the second one's** — gate ① measures that it
+names the first one's exponent **nowhere**. ⛔ **Printing my `1.5238` beside that `1.06` would be the
+comb error again: one estimator's number carried to another estimator's figure.** So I measured the
+one-rate size of **both** forms, each labelled with the `ℓ_D` it is on:
+
+| α | ℓ_D in force | **χ²/bin** | growth | above `C62`'s `0.92` **and** `0.26` | correlation |
+|---|---|---|---|---|---|
+| **1.70** | 1489.5783 | **1.0815** | +1.846 % | yes, both | 1.000000 |
+| **1.00** | 1355.2123 | **1.5238** | +1.811 % | yes, both | 1.000000 |
+
+**Print whichever form the paper carries, with its `ℓ_D` named. Neither has to be carried to the
+other.** The move is `−0.498361 %`, read from the two banked arms' own `D_M` and applied to whichever
+`ℓ_D` is in force.
+
+#### ⛔ And a second collision in the same subsection, of **kind** rather than size — gate ⑧
+
+`sec:diffusion-scale` prints *"the signature at the adjudicated ratio costs **$1.48$** in $\chi^{2}$
+over the $171$ bins"* — **a total**, about `0.00865` per bin — a few sentences before `sec:coherence`
+cites a receipt whose figure is **`1.4967` per bin** over those same 171 bins. **The two numerals
+agree to one per cent and differ by a factor of 171 in kind** (measured ratio `172.9`). *Neither
+sentence is wrong on its own.* Read together in one subsection they are, I think, the likeliest
+source of the two figures appearing to disagree — which is what you set out to stop.
+
+⚠ **Not mine:** which exponent `sec:coherence` *should* price the signature on. `α = 1.70` is 70's
+measurement (`r7577+70.2`) and the faithful-route argument is `sec:diffusion-scale`'s own. Gate ⑨
+asserts that scope against the receipt's AST.
+
+---
+
+### ITEM ① — EVERY MULTIPOLE, AND `P15` ALREADY PRINTS ALL SEVEN
+
+| ℓ | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|
+| **(L)** | 0.4848 | 0.4407 | 0.3536 | 0.6569 | 0.9087 | 0.9828 | 0.9992 |
+| **one rate** | 0.4898 | 0.4351 | 0.3594 | 0.6677 | 0.9120 | 0.9856 | 0.9973 |
+| move, % | +1.031 | **−1.271** | +1.640 | +1.644 | +0.363 | +0.285 | **−0.190** |
+
+**`0.485 0.441 0.354 0.657 0.909 0.983 0.999` → `0.490 0.435 0.359 0.668 0.912 0.986 0.997`.**
+
+⛭ `sec:scope` **already prints all seven**, and arm A under (L) at the distances' point reproduces
+**all seven to the digit**. The `r7783` receipt pinned four; this one pins the whole run.
+
+**The sign alternates:** ℓ = 2, 4, 5, 6, 7 rise, the **octopole falls**, and ℓ = 8 falls. The move is
+not a rescaling of the curve.
+
+**Both things you asked to have pinned do not move:** the **minimum stays at ℓ = 4** and the
+**recovery stays at ℓ = 8**, under **both** clocks (recovery = first ℓ ≥ 5 reaching 0.99, the
+`r7779` bank's own definition). **So every *shape* claim survives the clock unchanged — all five
+sites that state the ℓ = 4 minimum — and only the depths move.**
+
+#### The cross-validation: `2.9 → 3.0`, at five sites, and the companion clause needs no edit
+
+| | arm A vs arm B **decoupled**, distances' point | above ℓ = 5 |
+|---|---|---|
+| (L) | **2.9129 %** → your `2.9` | 0.2971 % |
+| one rate | **3.0328 %** → **`3.0`** | 0.3653 % |
+
+**Named by build, not by the prose:** arm B's **frozen** build at the same point gives **6.1934 %**.
+Both maxima fall at **ℓ = 4**, where the dip bottoms.
+
+⛭ **The clause *"to `2.9` per cent at every multipole"* sits at FIVE sites and all five become `3.0`.
+The companion clause *"to under one per cent above ℓ = 5"* SURVIVES UNCHANGED** (0.2971 → 0.3653 %).
+**That clause needs no edit — which is the part of this that saves you work.**
+
+#### ⛭⛭ And the move takes `P15` *into* agreement with its companions, not away from them
+
+You said the depths *"sit in `P7` and `P18`"*. They do, **differently**, and **neither needs the
+cross-validation figure changed:**
+
+- **`P7`** (`CR_framework`) prints the **quartet** *and* says *"cross-validated between two
+  independent transfers to **three per cent**"* — already three.
+- **`P18`** (`CR_synthesis`) prints the **ℓ = 4 minimum** (*"bottoming at ℓ=4 and not at the
+  quadrupole"*) and *"the two transfers agreeing to **three per cent** at every multipole"* — and
+  **no depths at all**.
+
+**So only `P15`'s five `2.9`s move, and after they move the three papers agree.** `P7` needs its
+quartet moved. **`P18` needs nothing.**
+
+**The abstract** states its figures in a different *order* and to a different *precision* — two
+decimals at ℓ = 4, three at ℓ = 2,3 — so it is parsed on its own terms: `0.35`, `0.485`, `0.441` →
+**`0.36`, `0.490`, `0.435`**.
+
+---
+
+### ITEM ③ — THE MECHANISM, CARRIED INTO ①'s RECEIPT AS A CHECK
+
+The `r7783` ladder computation is **run from source** inside the receipt and reproduces:
+
+| ℓ | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|
+| measured move, % | +1.451 | **−1.524** | +1.351 | +2.015 | +0.744 |
+| $-\partial\ln(\text{depth})/\partial\ln r_0$ | −1.4940 | **+2.1727** | −3.8724 | −2.8292 | −0.7551 |
+| sign agrees | ✔ | **✔** | ✔ | ✔ | ✔ |
+
+**5 of 5, the ℓ = 3 reversal included — and the `L = 2` floor term alone carries the sign at 4 of 4.**
+
+**In one sentence, for `sec:largescale`:** the depth is the `L = 2`-floored Riemann sum (step dL = 1)
+of the very integral it is divided by; the ladder `k_L = √(L(L+2))/r₀` carries **no projection
+distance**, so the distance enters only through `Δ_ℓ`'s `j_ℓ(kχ)` and moving it acts the way moving
+`r₀` does; and because the ladder is floored **hard** at `L = 2`, each multipole's response follows
+that one mode. **So the ℓ = 3 reversal is commensurability between the floor and the ℓ = 3 kernel.**
+Not in the dynamics, not in the clock. ⛭ This row builds a CAMB transfer at the producer's own
+accuracy settings — the cost is declared in the receipt rather than hidden.
+
+---
+
+### What I corrected in my own work this round, recorded rather than quietly fixed
+
+1. **`check_figures_pinned` reddened on 35 figures** my two new `INDEX` rows print. The cause is worth
+   naming: **a tuple equality is not a pin.** `SEVEN_L == (0.485, ...)` reads as an assertion but the
+   gate parses for a *tolerance comparison*, and rightly. Both receipts now carry an explicit pin
+   gate — **42 comparisons** in one, **10** in the other — each against the **measured** value, with
+   `C62`'s two bounds and the paper's `1.48` **parsed from their own sources** rather than retyped.
+2. **`check_unread_figure` reddened** the item ② receipt's gate ⑥: its label names `sec:coherence`
+   without the row opening the paper. It now carries gate ①'s paper read as a condition.
+3. **Gate ④'s amplitude-only literal was first `4.9558`**, which I had computed as
+   `1.4967 / (1 − 0.698)` from the **rounded** absorbed share instead of reading the run. Measured:
+   `4.9493`. *Deriving a figure from another figure's rounding is the same error class as carrying
+   one estimator's number to another's figure — so it is in the receipt's docstring, not buried.*
+4. **The failability probe broke twice in ways I had already hit**: it ran the receipt's copy from a
+   temp path without pinning its `HERE`/`ROOT`, and then clobbered the receipt's own rewrite table
+   with a **global** replace of the same two anchors. First occurrence only.
+
+### Failability, measured rather than asserted
+
+| probe | reddens | holds |
+|---|---|---|
+| the faithful route priced on the header `1951.9` instead of `ℓ_eff` — the mistake the receipt exists to stop | ② ③ ④ ⑥ ⑦ | ① ⑤ ⑧ ⑨ ⑩ |
+| the one-rate move scaled tenfold, published figures untouched | ⑥ | all the rest |
+
+### ⚠ Still with you, not mine
+
+- **The comb receipt's filename rename** (`298_94` → `298_5`): it moves an `\rcpt{}` key the paper
+  cites.
+- **`ACOUSTIC`'s `POLSAVE` writes no `config`**, which is why my polarisation bank lives in its
+  computation directory rather than `spectra/`.
+- **Whether to reprint the depths at all**, and which exponent `sec:coherence` prices the signature
+  on. Both are yours. No likelihood or significance is computed anywhere in this round, and the
+  `Δ(−2 ln L) = +1.7` scoring is untouched.
+
 ## ⚑ `r7783+cc66` — ⛔⛔ **STOP AND READ THIS FIRST: THE `298.94` I GAVE YOU IS WRONG AND THE PAPER NOW CARRIES IT AT THREE SITES. THE FIGURE IS `298.5`.** PLUS ITEMS ①②③ DISCHARGED, AND TWO OPENING FIGURES THAT MOVE TOWARDS THE SKY
 
 ⛔⛔ **THE CORRECTION, BEFORE ANY RESULT, BECAUSE IT IS LANDED PROSE AND IT IS MINE.**
