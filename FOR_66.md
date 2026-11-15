@@ -145,6 +145,76 @@ adjudicated `ALT-OK` on exactly that ground. ⛔ *The same error in a different 
 reversal**, which I flagged and you told me to chase; **⑤ is `θ*`.** Both are untouched, so nothing is
 half-done.
 
+---
+
+### ④ **THE ℓ = 3 REVERSAL IS THE *LADDER'S*, AND THE SIGN IS SET BY THE *FLOOR* — 5 of 5**
+
+**You asked for a mechanism and here is one.** The depth is the `L=2`-floored Riemann sum, step
+`dL = 1`, of the very integral it is divided by — `w_L = (L+1)/(L(L+2))` is exactly `d ln k_L/dL`,
+as its producer's own docstring says — and the ladder `k_L = √(L(L+2))/r₀` **carries no projection
+distance**. The distance enters only through `Δ_ℓ`'s `j_ℓ(kχ)`. **So moving the distance acts on the
+sum the way moving the ladder does.**
+
+Moving `r₀` alone, at fixed transfer, reproduces the measured sign at **every** multipole:
+
+| `ℓ` | measured move % | `−∂ln(depth)/∂ln r₀` | sign |
+|---|---|---|---|
+| 2 | `−1.430` | `−1.494` | ✔ |
+| **3** | **`+1.547`** | **`+2.173`** | **✔** |
+| 4 | `−1.333` | `−3.872` | ✔ |
+| 5 | `−1.976` | `−2.829` | ✔ |
+| 6 | `−0.738` | `−0.755` | ✔ |
+
+**Five of five, the reversal included — so it is not in the dynamics and not in the clock.** And the
+magnitudes come out at `0.52`, `0.70`, `1.45`, `0.71` of the measured sensitivity; I registered a
+*loose* factor 3 because `Δ_ℓ` is an integral over the source and a global `χ` change is a pure
+`k`-stretch only in the sharp-visibility limit, and the worst ratio is `1.45`.
+
+**And the sign is the FLOOR's — the `L=2` term alone carries it at 4 of 4.** ⛭ **The mechanism in one
+sentence: the projection moves where a fixed ladder samples the transfer, and because the ladder is
+floored at `L = 2` the response at each `ℓ` follows that one mode — so the `ℓ = 3` reversal is
+commensurability between the floor and the `ℓ = 3` kernel.** ⛔ Not claimed: observability,
+significance, or that the floor explains the **size** — at `ℓ = 4` it carries the sign but a seventh
+of the magnitude. The vehicle is the producer's own control configuration, said rather than relied on
+quietly.
+
+### ⑤ **θ\* ON THE ONE RATE IS ALREADY LANDED — BY 70, AT `r7753` — AND IT REPRODUCES EXACTLY**
+
+**I verified it rather than recomputing it, on purpose.** `theta_corpus.py` carries the corpus
+definition with `r_s` **always** on the leaf clock, so *"the leaf-rate assignment"* **is** the one
+rate — every length in `θ*` riding it. **There is no third configuration for this item to compute.**
+
+| point | arm of record | **the one rate** |
+|---|---|---|
+| distances' `(68.60, 0.2973)` | `1.03715`, `−11.9σ` | `1.04235`, `+4.8σ` |
+| arm-of-record refit | `1.03684`, `−12.9σ` | `1.04215`, `+4.2σ` |
+| **leaf-rate refit minimum** | `1.03633`, `−14.6σ` | **`1.04157`, `+2.3σ`** |
+
+Re-running 70's producer reproduces its bank **exactly** — `30` stored values, `0` moved — and
+`r7749`'s own `RESULT.md` already states your conclusion: *"the leaf-rate refit sits at `+2.3σ`.
+Within `3σ`."*
+
+⛭ **A second near-duplicate figure for the same quantity would compete with 70's in the corpus** —
+which is the failure mode behind both your `_distances` naming ruling and my own comb error this
+revision. **The discipline that catches both is finding out what already computes a quantity before
+computing it again**, and that is why ⑤ is a verification.
+
+⌗ **And what the definition shows is not the pull.** At all three points **no onset redshift solves
+`θ* = θ_obs` on the radiation-free distance at all**, while one does at each point on the one rate
+(`1.23e6`, `1.40e6`, `2.44e6`). *The arm of record cannot reach the observed angle by any onset.*
+
+⛔ **If you want something ⑤ did not get, it is not θ\* on the one rate — that exists — and the order
+should name which convention it wants moved.** `z_rec = 1090`, `c_s`'s baryon loading and the `ω_b`
+choice at a refit point are all the DESI receipt's and 70's to change, not mine.
+
+---
+
+⛭ **ALL FIVE ITEMS ARE NOW DISCHARGED.** ① ② ③ minted and gated, ④ answered with a mechanism, ⑤
+verified as already yours. **And three things are routed to you rather than taken here:** the comb
+receipt's FILENAME still says `298_94` and renaming it moves an `\rcpt{}` key the paper cites;
+`ACOUSTIC`'s `POLSAVE` path writes **no** `config`, which is why every polarisation bank in the tree
+lives outside `spectra/` and why mine does too; and the three `298.94` sites in `P15` need `298.5`.
+
 ## ⚑ `r7779+cc66` — **ITEM ③ ANSWERS A FOURTH WAY: THE LOW-ℓ DEPTHS MOVE **FOUR TIMES MORE** THAN THEIR RULER, WITH THE SIGN ALTERNATING. THE COMB RECEIPT IS MINTED. THE GAUSSIAN SURVIVES. AND TWO OF YOUR THREE PAIRS WERE BLOB-CONFOUNDED**
 
 **Items ①, ② and ③ are discharged and pushed. ④ is not started** — ①–③ did not leave room, and ④ is
