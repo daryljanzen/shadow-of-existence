@@ -26172,3 +26172,70 @@ forms are in the result.
 Two of six inherited parameters now have responses. `Y_He`, `τ`, `A_L` and `ω_m` are named and not
 tested. **`PO-24` does not close; what closes is the second route to closing it without data** — and
 the screen above says which future candidate could, before the fit is run.
+
+---
+
+## ⚑ `r7806` (60) → `69`, on order `r7805` — **Y_He's ROUTE IS CLOSED, AND IT CLOSES THE OTHER WAY ROUND. ONE LIMIT ROUTED TO `70`.**
+
+**Screened, then fitted regardless, as ordered.** Eight arms registered and pushed before
+measurement; seven met as registered; **Ⓗ⑧'s positive branch is FALSE and its negative branch
+fired** — the published window's fit sits on the bank's upper edge, so that row is a bound.
+Eleven checks, all passing.
+
+**`N_eff` was affordable and bought nothing. `Y_He` buys something and is unaffordable.**
+
+| window | survives | `Y_He` wanted | vs ① `0.2471 ± 0.00148` | vs ② `0.2453 ± 0.0034` |
+|---|---|---|---|---|
+| `100`–`1758` | ≤ `83.014 %` | ≥ `0.28540` ⛔ edge | ≥ `+25.83σ` | ≥ `+11.79σ` |
+| `700`–`1760` | `95.624 %` | `0.25942` | `+8.31σ` | `+4.15σ` |
+| `1000`–`1760` | `98.246 %` | `0.25729` | `+6.87σ` | `+3.53σ` |
+
+It is the **first candidate that genuinely overlaps the signature** — `53.5 %` of it on the published
+window against `ω_b`'s `3.3` and `N_eff`'s `0.1` — and the **first to take a real bite**. So the
+shape argument that closed the other two routes does **not** close this one. **Room** closes it:
+outside three sigma of **both** numbers `P16` carries, on every window.
+
+⇒ **Both ways an absorber can fail are now instantiated on different parameters. They cannot be
+collapsed into one verdict about `PO-24`, and `P15` now says so in `sec:coherence`.**
+
+### ⌗ TWO THINGS FOR YOU, AND ONE FOR `70`
+
+**① A premise in the order needs splitting, not correcting.** "The helium fraction `P16` carries, at
+`P16`'s own precision" has **three** referents, and they are different objects: the network's
+computed `0.2471` at its own `0.6 %`; the observational `0.2453 ± 0.0034` it quotes; and the
+standalone Born-level `0.2506`. I judged against all three and reported absolutely, so no reading of
+the order is left unanswered — but the strict reading (①) is the **tightest**, and it is the one the
+verdict is stated on.
+
+**② And `P16`'s correction sentence is not a range.** It reads that the standard radiative correction
+"carries the network's computed `0.2432` to `0.2471`". That is a **one-way carry**
+(`0.2432 × 1.016 = 0.2470912`), not an interval. I nearly registered `0.2432`–`0.2471` as `P16`'s
+uncertainty. **Nothing in the corpus is wrong here** — this is a note that the sentence can be
+misread as a spread, and the receipt now asserts the arithmetic so the misreading cannot re-enter.
+If you think the sentence is worth a clause making the direction explicit, that is yours to decide;
+I have not touched `P16`.
+
+**③ ROUTED TO `70`, as a limit and not a request to redo anything.** The bank's upper edge
+(`0.2854`) is **reached** by the fit on the published window, so that row is a bound. **It does not
+change the verdict** — the two interior windows already fail affordability by nearly seven sigma, and
+a wider bank could only make the excursion worse — so this is **not** a blocker and I am not asking
+for a rerun on its account. If `Y_He` is ever banked wider for another purpose, that row becomes a
+fit rather than a bound. **And the bank is centred on the observational value `0.2453`, not on
+`P16`'s computed `0.2471`** — `1.15` of ①'s own error away. That is fine and I carried it
+explicitly; flagging it only so the next seat to use this bank carries it too.
+
+### ⌗ AND ONE DEFECT OF MINE, RECORDED
+
+The probe's first Ⓕ⑥ compared the screen's **total** overlap against the fit's **increment** and
+concluded `r7804`'s screen had failed on its first real test. Both numbers were right; the sentence
+putting them side by side was not. Formed on the base the fit reports against, the screen predicts
+the measured gain within a factor of `1.32`–`1.91` on all three windows, and the miss has a **forced
+sign** — the projection is a lower bound, approached from below and never crossed, because the fit
+re-optimises the tilt while the projection holds it fixed.
+
+⇒ **GUARD: a screen is compared with a fit on the base the fit reports against.** A disagreement
+between a total and an increment is a disagreement between two quantities, not a finding. Both forms
+are kept in the revision's addendum rather than the wrong one deleted.
+
+**Screen scope now measured on three directions rather than two.** It is the cheap first test for the
+optical depth, the lensing amplitude and the matter density when their banks land.
