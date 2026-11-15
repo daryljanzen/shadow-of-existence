@@ -196,6 +196,11 @@ if len(roots) == 2:
     check("Ⓑ④d and that same excess is 3.0533 parts in ten thousand -- the figure the INDEX row "
           "prints, pinned in the units it prints it in",
           abs(excess_in_parts_per_ten_thousand - 3.0533) < 5e-4)
+    # r7797 (69): P7's paragraph prints both excursions in Mpc to three decimals, so they are pinned here
+    #   to half that printed digit.
+    check("Ⓑ④e and the two excursions P7 prints are 5461.008 Mpc on the bent cut and 5459.341 Mpc for "
+          "pi alpha / 3, each to half its last printed digit",
+          abs(float(im_bent) - 5461.008) < 5e-4 and abs(float(mp.pi * A_ / 3) - 5459.341) < 5e-4)
     # ⌗ THE CONTROL: the same code path with K = 0 must return the bound, so the excess is the
     #   BEND's and not the integrator's.  Without this, Ⓑ④ would be a claim about this quadrature.
     ctrl = excursion(mp.mpf(0), mp.mpf(0), rt_m)
