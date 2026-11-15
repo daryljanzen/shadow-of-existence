@@ -1,0 +1,32 @@
+====================================================================================================
+  r7800 ADDENDUM -- WHY omega_b CANNOT ABSORB THE SIGNATURE: THE SHAPES DO NOT OVERLAP
+====================================================================================================
+
+  the two templates in l, as fractional departures from the baseline:
+       l   signature S-1   omega_b +4% ratio-1
+     196        -0.00335               0.01567
+     500        -0.02160              -0.01649
+     796        -0.05383              -0.00284
+     996        -0.08299               0.00357
+    1196        -0.11743               0.01599
+    1500        -0.17840               0.02945
+    1756        -0.23608               0.01409
+    1900        -0.27041               0.02911
+
+  ⇒ the signature falls MONOTONICALLY with l -- it is a Gaussian envelope.  The omega_b
+    response does not: it is NEGATIVE below about l = 900 and POSITIVE above it, because
+    omega_b moves the PEAKS, through the baryon loading, and not the envelope.
+
+  the overlap in the metric's own units, per window:
+        window  bins   corr(S, wb)   chi2 removable   by tilt
+      100-1758   171       -0.1806             3.3%     72.0%
+      700-1760   104       -0.2383             5.7%     92.6%
+     1000-1760    71       -0.4472            20.0%     96.8%
+
+  ⇒ the tilt direction overlaps the signature strongly, which is why it absorbs 70-96%.
+    The omega_b direction overlaps it weakly, which is why freeing it changes the fitted
+    displacement by about a part in a hundred and not by a factor.
+
+  ⇒ ⛭ SO THE ROW'S TERMINATING CLAUSE IS NOT MET BY THE BARYON DENSITY, AND THE REASON IS
+      STRUCTURAL RATHER THAN A MATTER OF PRECISION: the signature is an ENVELOPE and omega_b
+      is a PEAK-PHASE direction.  A parameter has to have the shape to absorb a shape.

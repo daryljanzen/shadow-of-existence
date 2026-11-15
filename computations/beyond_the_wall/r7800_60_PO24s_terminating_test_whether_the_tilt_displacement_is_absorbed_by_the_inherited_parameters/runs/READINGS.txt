@@ -1,0 +1,87 @@
+====================================================================================================
+r7800 (60) -- PO-24's terminating test: is the tilt displacement absorbed by omega_b?
+  signature exp[-(r^2-1)(l/l_D)^2] with r = 1.0926, l_D = 1489.5783  (the one-rate multipole)
+  omega_b's inherited precision, from the corpus's own eta_10 = 6.13 +/- 0.04:  0.653 %
+====================================================================================================
+
+  the banked response: omega_b = 0.02196600 at [np.float64(-8.0), np.float64(-4.0), np.float64(0.0), np.float64(4.0), np.float64(8.0)] per cent
+  its l grid: 100 to 1996 in steps of 8, 238 points
+
+====================================================================================================
+  B2 -- THE RESPONSE'S REACH, AND WHICH WINDOWS IT LEAVES AVAILABLE
+====================================================================================================
+      window   100-1758  :  171 covered bins   AVAILABLE
+      window   700-1760  :  104 covered bins   AVAILABLE
+      window  1000-1760  :   71 covered bins   AVAILABLE
+      window  1000-2508  :  101 covered bins   OUT OF REACH (hi > 1996)
+      window  1400-2508  :   56 covered bins   OUT OF REACH (hi > 1996)
+      window   100-2508  :  201 covered bins   OUT OF REACH (hi > 1996)
+      ⇒ the reach is l = 1996, so 3 of 6 windows are available
+
+====================================================================================================
+  B3 -- IS THE RESPONSE LINEAR IN omega_b, OR DOES IT SATURATE?
+====================================================================================================
+      l =   500 :  ratio over the five omega_b = [1.03225, 1.01627, 1.00000, 0.98351, 0.96688]
+                  first differences  ['-1.60e-02', '-1.63e-02', '-1.65e-02', '-1.66e-02']
+                  |second| / |first| = 0.017, 0.013, 0.009
+      l =   996 :  ratio over the five omega_b = [0.99643, 0.99767, 1.00000, 1.00357, 1.00852]
+                  first differences  ['+1.24e-03', '+2.33e-03', '+3.57e-03', '+4.95e-03']
+                  |second| / |first| = 0.875, 0.531, 0.389
+      l =  1500 :  ratio over the five omega_b = [0.93576, 0.96870, 1.00000, 1.02945, 1.05691]
+                  first differences  ['+3.29e-02', '+3.13e-02', '+2.94e-02', '+2.75e-02']
+                  |second| / |first| = 0.050, 0.059, 0.068
+      l =  1900 :  ratio over the five omega_b = [0.94371, 0.97167, 1.00000, 1.02911, 1.05935]
+                  first differences  ['+2.80e-02', '+2.83e-02', '+2.91e-02', '+3.02e-02']
+                  |second| / |first| = 0.014, 0.027, 0.039
+      ⇒ worst |second difference| / |first difference| over the whole grid: 0.7532
+      ⇒ the response is NOT linear in omega_b, so the fit interpolates the five values
+        (monotone PCHIP) rather than extrapolating a derivative.
+
+====================================================================================================
+  A1 and C -- THE FITS
+====================================================================================================
+
+      window 100-1758, 171 covered bins
+        amplitude alone        : chi^2/bin    3.5579
+        + tilt   (2 params)    : chi^2/bin    1.0815   Delta n = -0.07003   absorbed  69.6 %
+        + tilt + omega_b (3)   : chi^2/bin    0.9242   Delta n = -0.07021   absorbed  74.0 %
+        the omega_b it wants   : 0.02150343  =  -2.106 %  =  -3.2 sigma of the inherited value
+        the tilt's survival    : |Delta n(3)| / |Delta n(2)| = 100.3 %
+
+      window 700-1760, 104 covered bins
+        amplitude alone        : chi^2/bin    2.9164
+        + tilt   (2 params)    : chi^2/bin    0.2564   Delta n = -0.17621   absorbed  91.2 %
+        + tilt + omega_b (3)   : chi^2/bin    0.2532   Delta n = -0.17463   absorbed  91.3 %
+        the omega_b it wants   : 0.02190344  =  -0.285 %  =  -0.4 sigma of the inherited value
+        the tilt's survival    : |Delta n(3)| / |Delta n(2)| =  99.1 %
+
+      window 1000-1760, 71 covered bins
+        amplitude alone        : chi^2/bin    2.0084
+        + tilt   (2 params)    : chi^2/bin    0.0824   Delta n = -0.25946   absorbed  95.9 %
+        + tilt + omega_b (3)   : chi^2/bin    0.0807   Delta n = -0.26410   absorbed  96.0 %
+        the omega_b it wants   : 0.02201481  =  +0.222 %  =  +0.3 sigma of the inherited value
+        the tilt's survival    : |Delta n(3)| / |Delta n(2)| = 101.8 %
+
+====================================================================================================
+  D8 -- THE OTHER INHERITED PARAMETERS, AND WHAT THE BANK HOLDS FOR THEM
+====================================================================================================
+      the baryon density  omega_b              :  3 file(s) matching ['wb', 'omega_b', 'omb', 'baryon']  -> ['r6897_wb_response_lcdm.npz', 'r7695_pairs_cr_combrho.npz', 'r7695_source_cr_combrho.npz']
+      the effective neutrino number  N_eff     :  0 file(s) matching ['neff', 'nnu', 'n_eff']
+      the helium fraction  Y_He                :  0 file(s) matching ['yhe', 'helium', 'yp']
+      the optical depth  tau                   :  0 file(s) matching ['tau_resp', 'reion', 'optdepth']
+      the lensing amplitude  A_L               :  0 file(s) matching ['alens', 'a_lens', 'lensamp']
+      the matter density  omega_m              :  0 file(s) matching ['wm_resp', 'omega_m_resp', 'ommresp']
+      ⌗ searched 271 entries of the one directory every banked spectrum lives in,
+        computations/beyond_the_wall/spectra, by the lowercase substring patterns printed above
+        on each entry's filename -- so the absence below is a statement about that directory
+        and those patterns, and about nothing else.
+      ⇒ ONE of the six has a response bank.  The other five would each need a run of the
+        instrument at five parameter values summed over eleven mode slices, which is hours
+        of compute in pieces on the seat that owns the instrument.  NAMED, NOT MEASURED.
+
+====================================================================================================
+  THE ANSWER TO THE ORDER
+====================================================================================================
+      100-1758: Delta n -0.07003 -> -0.07021  (100.3 % survives)   at omega_b -2.11 % = -3.2 sigma
+      700-1760: Delta n -0.17621 -> -0.17463  (99.1 % survives)   at omega_b -0.28 % = -0.4 sigma
+      1000-1760: Delta n -0.25946 -> -0.26410  (101.8 % survives)   at omega_b +0.22 % = +0.3 sigma

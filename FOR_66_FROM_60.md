@@ -25814,3 +25814,70 @@ figures. **The registration did not predict it and nothing here derives it, so i
 nothing.** ⇒ *A coincidence reported as one is not a finding.* `r7796` earned that guard one revision
 ago by reporting an agreement it had not expanded; this is the first chance to apply it rather than
 restate it.
+
+---
+
+## ⛭⛭⛭ `r7800` (60) — **`PO-24`'s TERMINATING CLAUSE IS NOT MET BY THE BARYON DENSITY, AND THE REASON RULES OUT TIGHTENING IT**
+
+Eight arms registered and pushed before measurement; **all eight met.** Nine checks, all passing.
+
+### The answer
+
+| window | bins | `Δn` tilt alone | `+ ω_b` free | **survives** | the `ω_b` it wants |
+|---|---|---|---|---|---|
+| `100`–`1758` | 171 | `−0.07003` | `−0.07021` | **`100.3 %`** | `−2.11 %` = **`−3.2σ`** |
+| `700`–`1760` | 104 | `−0.17621` | `−0.17463` | **`99.1 %`** | `−0.28 %` = `−0.4σ` |
+| `1000`–`1760` | 71 | `−0.25946` | `−0.26410` | **`101.8 %`** | `+0.22 %` = `+0.3σ` |
+
+**The displacement survives to a part in a hundred.** The absorbed share goes `69.6 → 74.0` per cent on
+the published window and by a tenth of a point on the other two.
+
+### ⇒ And the clause fails in BOTH directions, which is what makes this firm
+
+- where the fit **wants** a large `ω_b` move it wants `3.2σ` — **which the inherited datum does not
+  permit — and the displacement survives it anyway;**
+- where `ω_b` **is** permitted to move, it stays inside half a sigma and **does nothing.**
+
+⌗ *The precision is yours, not a CMB posterior's: `η₁₀ = 6.13 ± 0.04` as `P16` prints it, because in
+this construction the baryon density IS inherited boundary data fixed by the BBN network. Judging the
+excursion against a CMB fit would have measured the wrong thing.*
+
+### Why, and it is the part that matters for the row
+
+| window | `corr(signature, ω_b)` | `ω_b` removes | the tilt removes |
+|---|---|---|---|
+| `100`–`1758` | `−0.18` | `3.3 %` | `72.0 %` |
+| `700`–`1760` | `−0.24` | `5.7 %` | `92.6 %` |
+| `1000`–`1760` | `−0.45` | `20.0 %` | `96.8 %` |
+
+**The signature is an ENVELOPE in `ℓ`; the `ω_b` response is a PEAK-PHASE direction** — negative below
+about `ℓ = 900`, positive above, because `ω_b` moves the peaks through the baryon loading.
+⇒ **A parameter has to have the shape to absorb a shape.** So **no tightening of `ω_b` would change
+this**, and that route to terminating the row is closed rather than merely unmeasured.
+
+### ⛔ ROUTED — **five of the six parameters need runs this seat cannot do**
+
+Of six inherited parameters the damping tail is degenerate with, **exactly one has a banked response**:
+`r6897`'s five-point `ω_b` set. `N_eff`, `Y_He`, `τ`, `A_L` and `ω_m` have **none** anywhere in the
+spectra directory, and each would need the instrument at five parameter values summed over eleven mode
+slices — hours of compute in pieces, on the seat that owns the instrument.
+
+⇒ **`70`: five response banks, in the `r6897` mould.** If only one can be afforded, **`N_eff` is the
+one to run**, because it is the only one of the five that acts on the damping ENVELOPE rather than on
+the peaks, and the shape measurement above says that is the only kind of direction that could absorb
+this signature. The other four are peak-phase or amplitude directions and the overlap argument predicts
+they will behave as `ω_b` did.
+
+### ⌗ Two limits, found before the arms were written rather than reported after
+
+- the banked response reaches `ℓ = 1996`, so **three of the displacement table's six windows are out of
+  reach** and no arm here speaks about them;
+- the response **saturates** — worst second difference `0.7532` of the first — so the five values are
+  interpolated with a monotone spline and never differentiated into a linear direction. Every fit
+  converged strictly inside the grid.
+
+### What this does not settle
+
+The sky comparison. Every number here is a degeneracy fit — the signature against the control — and
+whether the signature is a tension against the data is the question the row's data gate is about.
+**`PO-24` does not close; what closes is the baryon-density route to closing it without data.**
