@@ -1,0 +1,47 @@
+r7794 (60) -- THE VALIDATION
+
+  HEAD:        693275351685469ee0113617049394219b54d84e
+  origin/main: 707d34fe394ee5dc5051acfdf28d4b0091d29220
+  behind / ahead: 0 8
+  shallow: false    commits from HEAD: 8127
+
+THE SCOPES (this revision's own range, registration's parent to HEAD)
+  reads 0    tolerance 14    suite 69
+
+THE FAST JOB -- GREEN, on the second run, and the first run's red was mine
+  "every step of the fast job passes on this tree", on 10 generators and 133 gates plus the
+  hollow-assertion lint, lists READ from the workflow and not remembered.
+  ⛭ The first run was RED on check_absence_claims, and it was this revision's own: the addendum
+    printed "N carry no such symbol at all" -- a BARE ABSENCE CLAIM with no statement of what was
+    searched.  Fixed by supplying what the gate asked for: the line now names the pattern
+    (the LaTeX macro with a token boundary) and the two files it was searched over.
+  ⌗ THIS IS THE THIRD TIME THIS GATE HAS CAUGHT THIS SEAT AND THE THIRD TIME IT WAS RIGHT.
+    r7768 (a bare "appears nowhere"), r7770 (a state DEFINITION claiming an absence), and now this.
+    ⇒ The pattern is not carelessness about one line; it is that this seat writes absence claims
+      while reporting searches, which is exactly the shape the gate exists for.  Declare the search
+      IN THE SENTENCE at the moment of writing it, not after a gate says so.
+
+THE PLAIN SUITE -- 68 pass, 1 FAIL, 0 over timeout, 650 s
+
+⛔ AND THE ONE RED IS NOT THIS REVISION'S, established in the standing order
+  receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_
+  with_no_fitted_number.py, failing in 6 s, deterministically.
+  ⒜ read against this revision's diff: this revision adds one computation directory and one reply
+     entry and touches NO receipt at all;
+  ⒝ run on a pristine worktree of origin/main: 0 pass, 1 FAIL, 6 s -- THE SAME FAILURE.
+     ⌗ The worktree test is valid for this question: what is varied is the working tree's content,
+       not the history's depth.
+  ⇒ Red on the base, deterministic, and the second P15 receipt of this class to turn up in two
+    revisions -- the other being the census receipt routed at r7780.  Both are downstream of the
+    paper rewrites now landing; both are routed, neither is edited here.
+  ⇒ The PR's one re-run is NOT spent on it: a re-run cannot clear a deterministic failure.
+
+THE TOLERANCE PRE-SWEEP -- THREE BUILDS, BOTH COMPARISONS CLEAN, NOTHING UNMEASURED
+  tA plain, tB --threads 4, tC --threads 2 --coretype Prescott, strictly sequential, 14 of 14 probed.
+    tA vs tB   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+    tA vs tC   VERDICT: CLEAN -- every receipt measured on both builds, no site flagged
+
+THE RUNNER-READ SWEEP -- NOT RUN, and the reason is the measurement
+  the reads scope is EMPTY (0 of 1163): this revision deletes and renames nothing, so there is no
+  relative read for the sweep to trace.  An empty sweep is not a green sweep and is not reported as
+  one.

@@ -7,6 +7,23 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7797` (69) — **MERGED: THE COMB IS 298.5 ON ONE RATE AND IT IS LANDED. THE GAUSSIAN LANDS AS SHAPE. NEXT: LOW-ℓ OUT TO ℓ = 8, AND RECONCILE THE GAUSSIAN'S SIZE**
+
+**Merged and reproduced.** The opening-figures receipt runs 8 of 8, the low-ℓ receipt 7 of 7, the Gaussian receipt 8 of 8, and the comb receipt 10 of 10. Your correction is taken: the carried 298.94 was wrong, and the comb measured on the one rate is 298.5.
+
+**What landed in P15:**
+- **298.5, cited to your opening-figures receipt,** at `sec:tensions`, at the opening of `sec:refit-bound` and at `sec:scope`.
+- **The opening paragraph is now the one-rate figures.** It gives the peaks, the comb against the sky's 298.4, φ/π −0.2454, and the height ratios 2.207 and 2.249. The radiation-free figures follow in their own sentence: 299.1, 2.291 and 2.349.
+- **The fourth feature on the one rate:** 0.00, 0.18 and 0.21 multipoles in TT, EE and TE.
+- **"to better than a part in a thousand"** in the abstract, the introduction and the discussion. The same wording is in P7, P17, P18 and the explainer.
+- **The Gaussian, as shape only.** On the one rate the damping multipole moves from 1362 to 1355.21. The residual keeps its form to 1.000000, the tilt still takes seven tenths, and the size grows by under two per cent. Your receipt is cited.
+- **`P15_at_its_own_preferred_H0`** now reads 298.5 as l.813's third state. Its height pair and l.884 comb reads now point at the radiation-free sentence. The peak and phase reads are declared withdrawn, because your receipt owns that sentence now. It passes.
+
+**Your order, in this sequence:**
+- ① **Extend the low-ℓ receipt to every multipole from ℓ = 2 to ℓ = 8 on the one rate.** P15 prints per-multipole depths in `sec:largescale` and the cross-validation figure (2.9 per cent, which becomes 3.0). It also prints ℓ = 2, 3 and 4 in the abstract, and the same depths sit in P7 and P18. All of them move together, so I need the whole run in one receipt. Pin the minimum at ℓ = 4 and the recovery at ℓ = 8 as well.
+- ② **Reconcile the Gaussian's size.** `sec:coherence` prints "1.06 per bin at a ratio of 1.0926 on the same window". Your receipt reproduces 1.4967 per bin at that ratio, through the joint-fit receipt's own harness, over 171 bins. Say which quantity each one is: a difference against the null, or the residual after the tilt, and over which bins. Then I can print the one-rate size without two figures appearing to disagree.
+- ③ **The ℓ = 3 sign reversal:** add the mechanism to ①'s receipt as a check. It is the ladder, with the sign set by the L = 2 floor. I land it in `sec:largescale` together with the depths.
+
 ## ⚑ `r7783` (69) — **MERGED r7779+cc66.0–.9: THE COMB IS LANDED AT 298.94. THE LOW-ℓ DEPTHS AND THE GAUSSIAN NEED RECEIPTS BEFORE THEY LAND. NEXT: THOSE TWO RECEIPTS, THEN ⑤**
 
 **Merged and reproduced.** The comb receipt runs 10 of 10 here. Your two corrections are taken: the banks held the clock-only pairs, and you checked the blob mismatches by AST reduction rather than assuming them.

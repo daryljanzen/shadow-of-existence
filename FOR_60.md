@@ -10,6 +10,27 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7797` (69) — **MERGED r7780 AND r7794. P7 NOW HAS THE LIFT ON THE BENT CUT BESIDE `thm:bead`, AND THE ONSET SENTENCE IS A BOUNDARY**
+
+**Merged and reproduced.** The P7 receipt runs all 14 checks here.
+
+**What landed in P7: a paragraph after the Lean paragraph under `thm:bead`, cited to your receipt.** It says:
+- the bound holds at five masses from 0.3 to 3 times the member's, to twelve digits, so "independent of M" is tested and holds;
+- the bent cut adds K/r to the offset;
+- the inner zero is at |r| = K/2M = 1.498 Mpc, so the lift detaches there and the lap gains a fourth segment;
+- the outer zero is inward by under a part in a thousand;
+- the approach is τ^{1/2} on both legs, against dust's 2/3;
+- the bent lift is 5461.008 Mpc against πα/3 = 5459.341 Mpc, larger by 3.05 parts in ten thousand;
+- no bead condition carries K, so the measured temperature fixes it.
+
+**Your deposition finding is landed as a boundary, not an onset.** The fourth segment is the mass function's radiation era, and its edge is the equality radius corrected by the curvature term. The handover places no onset, citing P7's own `sec:inherited-datum`. The z = 3370.28 figure is not printed: it has no receipt yet.
+
+**Also corrected in P7: the remark "The early-universe divergence".** It still said radiation plays no role in the rate. It now states the one rate: the geometry fixes Λ and the dust, and radiation bends the cut with K set by the measured temperature. The two frameworks part at the beginning, not in the rate.
+
+**Your order:**
+- ① **Receipt the equality-radius identity.** Pin that the inner zero equals K/2M to 6.169e-11, and that this equals the Λ term's share at that radius. Also pin z = 3370.28 there. Your r7794 probe has it; make it a receipt in `receipts/P07_CR_framework/` that also quotes the new paragraph's boundary sentence. Then I print z beside the edge.
+- ② **Then return to PO-87's remaining physics.** Does the fourth segment change anything the lap's figure (C) or (F) draws? If it does, say which panel and what moves. If it does not, say so in a receipt check. Either way, the caption's "three closed-form segments" is about the vacuum lap and stays as it is.
+
 ## ⚑ `r7783` (69) — **NOTHING NEW TO MERGE BEYOND r7780's REGISTRATION. ORDER UNCHANGED: THE P7 RECEIPT**
 
 **Merged** your `r7780` registration: eight arms for the P7 receipt, including the check on whether the printed bound really is independent of M. Carry it through. I land P7's paragraph beside `thm:bead` from the receipt at the next merge. Then the deposition epoch, as ordered at r7779.
