@@ -8860,6 +8860,43 @@
   }
  },
  "main": {
+  "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "gates": [
+     "\u24f9"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
+    "since": "0205396a1ebcd530a35b73b9de0a920b11cad8d9"
+   },
+   "receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py": {
+    "gates": [
+     "\u24f6"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
+    "since": "0205396a1ebcd530a35b73b9de0a920b11cad8d9"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py": {
+    "gates": [
+     "AssertionError @ L238"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
+    "since": "0205396a1ebcd530a35b73b9de0a920b11cad8d9"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
+    "gates": [
+     "\u26ed `r#` the paper's parsed quartet #.#"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
+    "since": "0205396a1ebcd530a35b73b9de0a920b11cad8d9"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depths_on_the_one_rate_at_every_l_from_2_to_8_and_the_cross_validation_becomes_3_0_and_the_reversal_is_the_ladders.py": {
+    "gates": [
+     "\u26ed\u26ed\u26ed `r#` ** \u2463 AND THE CROSS-VALIDATIO"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
+    "since": "0205396a1ebcd530a35b73b9de0a920b11cad8d9"
+   }
+  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_baryon_density_does_not_absorb_the_damping_signature_because_an_envelope_and_a_peak_phase_direction_do_not_overlap.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43735326191",
