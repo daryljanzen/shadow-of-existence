@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_sound",
+ "session": 1,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's a draft. A handover is different from a cold read: Tom now owns the question, so he needs the current state of it, including our views. I've labelled each view as ours and said how much weight it carries, so he can check it against the sources and disagree.\n\n---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nThis is the one open question I'm handing over while I'm on leave. It's yours now; you don't need to run your decisions past me. My summaries below are compressions, so please check anything you rely on against the six source documents. I've given section references throughout.\n\n### The question\n\nIs the hours cut itself necessary for the gain in output per hour? Or could reorganising work without reducing hours, mainly by cutting recurring meetings, deliver much of it?\n\nIt's worth separating two parts:\n\n- **Sufficiency.** If an organisation cut meetings without reducing hours, would it get a comparable gain?\n- **Forcing.** Even if it would, does reorganisation actually happen and last without the pressure of an hours cut?\n\nEvidence on the first doesn't settle the second.\n\n### Status: open\n\nNo study in the sources had an arm that reorganised work without reducing hours. Both the synthesis briefing (§4) and the Varden follow-up (§3, \"An unplanned observation\") say this question is unsettled, and I agree. Please keep it marked as open unless new evidence closes it.\n\n### What bears on it, and how much weight it carries\n\n**1. Varden 24-month follow-up, registered mediation analysis (§3, Table 2)**\n- **Result:** reduced meetings account for 47% (95% CI 28 to 66) of the per-hour gain; reduced fatigue for 18%; 35% is unexplained.\n- **Registration:** filed at month 11, before the 24-month outcomes.\n- **Weight: moderate at best.** Our concerns, which are ours and not stated in the paper:\n  - only 7 treated offices;\n  - meeting time wasn't randomised, so the result depends on no unmeasured confounding;\n  - it reuses the offices where the pattern was first spotted;\n  - the outcome is output per *system-log* hour, and the paper doesn't say whether log time includes meetings;\n  - there's no small-cluster correction to the CIs.\n- **Even if it holds, it says what the gain ran through when hours were cut.** It doesn't say whether the same changes would happen without the cut.\n\n**2. Two Varden control offices that audited their meetings (follow-up §3)**\n- **Result:** recurring meetings fell from 7.1 to 5.0 hours a week, and output per hour was 4.1% higher than in their own previous six months.\n- **Weight: light.** Two offices, no comparison group, possible seasonality.\n- **It is the only direct evidence on sufficiency.**\n- **It also contaminates the control group,** which may have shrunk the measured treatment effect at 24 months.\n\n**3. Varden nine-month exploratory analysis (\"Exploratory: meetings\")**\n- **Result:** across the 7 treated offices, the correlation between cutting meetings and per-hour gain was r = 0.71.\n- **Weight: light.** Unregistered, with month-6 data only and no meeting baseline. The authors say so themselves.\n\n**4. Halden pilot (\"What organisations changed\")**\n- **Result:** 47 of 58 managers mentioned cutting meetings. Several called the reduced schedule \"a forcing device\" for changes they had wanted to make for years.\n- **Weight: anecdotal.** It is the only evidence on the forcing side, and it points towards the hours cut mattering.\n\n**5. Meta-analysis (\"Mechanisms\")**\n- **Result:** only 3 of 23 studies measured meeting time, and none tested it as a mediator under a registered plan.\n- **What it tells us:** the wider literature can't help with this question.\n\n**6. Varga & Holm re-analysis (§7)**\n- **Result:** dismisses the meetings explanation as post hoc.\n- **Weight:** reasonable when written; partly answered by the later registered test, but not refuted.\n\n### Pitfalls I know about\n\n- **The synthesis briefing's \"12.5% → 8.5%\" compares different measures.** 12.5% is a nine-month timesheet figure; 8.5% is a 24-month system-log figure. Like for like (timesheets), it's 12.5% → 9.8%. Don't carry the mixed comparison forward.\n- **The two scenarios show up in different places.** In the trials, a gain from cutting meetings shows up as *fewer hours for the same output*. In a reorganisation-only scenario, it would show up as *more output in the same hours*. Make sure any comparison between them uses the same measure. Per-hour and per-worker results can point different ways.\n- **Cost is a large part of why this question matters.** If reorganisation alone captured much of the gain, the council would avoid paying full salaries for fewer hours. None of the sources reports cost per case for case-processing, so any cost comparison would need new figures.\n\n### Possible next steps (your call)\n\n- **Ask the Varden authors** what system log time includes, and whether office-level data on meetings, hours and output are available, including for the two audit offices.\n- **Look outside the six sources** for studies of meeting-reduction interventions without any change in hours, such as no-meeting days or meeting audits. We haven't searched for these.\n- **Sketch what would close the question.** Most likely a trial with a reorganisation-only arm alongside an hours-cut arm. Consider whether the council could run one.\n\n### Things in flight\n\n- **Priya (Finance) is doing a cold read** of the sources on whether meetings explain much of the per-hour gain. That's close to your question. Please don't share our views with her until she has sent her read. Her result is due [date], and it would be worth looking at once it's in.\n- **[Status of the external review / draft recommendation, if relevant.]**\n\nI'm back on [date]. For anything that needs a decision above your level before then, contact [name].\n\nThanks, and good luck with it.\n\n[Name]\n\n---\n\n**Before sending:**\n\n- **Placeholders to fill:** Priya's deadline, the external review status, your return date, the escalation contact, and your name.\n- **Our views are labelled as ours** (the mediation concerns, the log-time question, the contamination point). That's deliberate for a handover. If you'd rather Tom formed his own view first, move the \"Weight\" lines into a separate section and suggest he read the sources before it.\n- **The point about Priya** protects her cold read. Tom will hold our views, so he shouldn't discuss them with her until she's finished.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1584,
+  "cache_read_input_tokens": 93868,
+  "output_tokens": 3549,
+  "output_tokens_details": {
+   "thinking_tokens": 1364
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1584,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3549,
+    "cache_read_input_tokens": 93868,
+    "cache_creation_input_tokens": 1584,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1584
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10244159999999991,
+ "started": "2026-11-15T06:39:34.243853+00:00",
+ "wall_s": 40.48,
+ "task_index": 4
+}

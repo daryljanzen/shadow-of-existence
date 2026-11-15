@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 2,
+ "turn_index": 11,
+ "kind": "task",
+ "item": "B3",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "A colleague from the finance team, Priya, has agreed to do a cold read of our evidence on one question: whether fewer recurring meetings explain much of the per-hour productivity gain in the four-day week trials. She hasn't followed any of our discussion. Please write the message asking her to do it.",
+ "response": "A cold read is only useful if Priya reaches her own view before seeing ours. So the message:\n\n- **States the question but not our answer.** It doesn't mention the \"about half\" figure or any of the concerns we raised (control contamination, the time-accounting tension, same-sample replication). If she finds them on her own, that's a meaningful check.\n- **Points her to where the evidence is,** without characterising it.\n- **Holds back the synthesis briefing** until she has written down her view, because it states a conclusion.\n- **Includes a short neutral glossary,** since she's coming from finance.\n\n---\n\n**Subject: Cold read request: do fewer meetings explain the four-day-week productivity gain?**\n\nHi Priya,\n\nThanks for agreeing to do this. We'd like a fresh pair of eyes on one question:\n\n**In the four-day week trials, how much of the gain in output per hour is explained by fewer recurring meetings, and how confident can we be about that?**\n\nWe've deliberately not told you what we think. A cold read is most useful if you reach your own view first. You may well disagree with us, or find the question is framed wrongly.\n\n**What to read.** The relevant material is in these sections:\n\n- **Varden County trial, nine-month results**: \"Exploratory: meetings\"\n- **Two Years On (24-month follow-up)**: Section 3, \"Mediation\" and \"An unplanned observation\"\n- **Varga & Holm comment**: Section 7, \"The meetings hypothesis\"\n- **Meta-analysis**: \"Mechanisms\"\n- **Halden pilot**: \"What organisations changed\"\n\nThe rest of each document gives context if you need it. You don't need to read them cover to cover.\n\n**A few terms**\n\n- *Output per hour* means output divided by hours worked. *Output per employee* means output per person.\n- *Scheduled hours* are the hours on the rota. *Actual hours* are the hours worked, from timesheets or system logs.\n- *Case-processing* is work that can be done any time before a deadline. *Counter/contact-centre* work depends on staff being present when the public arrives.\n\n**What we'd like back.** A short note, informal is fine, covering:\n\n1. Your answer to the question, in a sentence or two.\n2. How confident you are, and what that confidence rests on.\n3. Anything in the evidence that doesn't add up, or that you'd want checked.\n4. Whether you think the answer would hold outside these trials.\n\n**One request.** Please write down your view *before* reading the attached synthesis briefing. It's our team's summary and states a conclusion on this point. Once you've noted your view, please read it and tell us whether it matches what you found.\n\nCould you get this back to us by [date]? I'm happy to answer questions about where to find things, but I'll avoid discussing the substance until you've sent your note.\n\nThanks again,\n[Name]\n\n---\n\nIf you'd rather not send the synthesis at all, delete the \"One request\" paragraph and the reference to the attachment.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1539,
+  "cache_read_input_tokens": 92743,
+  "output_tokens": 1402,
+  "output_tokens_details": {
+   "thinking_tokens": 443
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1539,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 1402,
+    "cache_read_input_tokens": 92743,
+    "cache_creation_input_tokens": 1539,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1539
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0589166000000001,
+ "started": "2026-11-15T07:00:13.170094+00:00",
+ "wall_s": 20.34,
+ "task_index": 3
+}

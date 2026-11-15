@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 1,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's the handover note. Unlike the cold read for Priya, a handover should pass on where things stand, including your current reading. I've marked that reading as provisional and pointed Tom at the primary sources, so he can check it rather than inherit it. Edit the provisional view if yours differs.\n\n---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nThanks for picking this up while I'm away. Here's where things stand.\n\n**The question**\n\nIn the four-day week trials, output per actual hour rose. Is the cut in hours itself necessary for that gain? Or could reorganising work without reducing hours, mainly by cutting recurring meetings, deliver much of it?\n\nThe question has two parts, and the evidence bears on them differently:\n\n1. **Mechanism.** Do fewer hours raise output per hour directly, through less fatigue or more focused work? Or does most of the gain come from reorganisation that could in principle happen at any hours?\n2. **Trigger.** Even if reorganisation does most of the work, would organisations actually do it, and keep it up, without the hours cut forcing it?\n\nIt's possible that the cut is not necessary in the first sense but is necessary in the second.\n\n**What matters for the council**\n\nIf reorganisation alone captures much of the gain, the council could get some of the benefit without the per-worker output loss and higher unit costs of a four-day week. That would be a real alternative to put alongside the recommendation.\n\n**The evidence, by source**\n\nPlease read the relevant sections of the sources themselves rather than relying on my summary or on our briefing (source 6), which has some known errors listed below.\n\n- **Source 5, Varden 24-month follow-up** is the main evidence.\n  - *Mediation (section 3):* a registered analysis attributes 47% of the per-hour gain (95% CI 28–66%) to fewer recurring meetings, 18% to reduced fatigue, and leaves 35% unexplained.\n  - *Unplanned observation:* two control offices ran a \"meeting audit\" in month 15 without changing hours. Their meeting time fell from 7.1 to 5.0 hours a week, and output per hour rose 4.1% against their own previous six months. This is the only direct evidence on reorganisation without an hours cut. It is also two offices with no comparison group.\n  - The authors say outright that no arm reorganised without reducing hours, so the trial can't answer the question directly.\n- **Source 2, Varden nine-month results** (section \"Exploratory: meetings\"). This is where the meetings hypothesis originated: an unregistered correlation (r = 0.71) across seven treated offices, measured at month six only. Interviews said the reduced schedule prompted managers to cancel habitual meetings, which is relevant to the trigger question.\n- **Source 1, Halden pilot** (\"What organisations changed\"). Of 58 managers interviewed, 47 mentioned cutting meetings, and several called the reduced schedule \"a forcing device\" for changes they had wanted to make for years. This is also relevant to the trigger question: the changes were possible before, but didn't happen.\n- **Source 3, Varga and Holm** (section 7). This dismissed the meetings explanation as post hoc. Parts of its critique are wrong; for example, the offices were not selected after the results were known. But its concern about replication still partly applies, as below.\n- **Source 4, meta-analysis** (\"Mechanisms\"). Only three of the 23 studies measured meeting time, and none tested it as a mediator. The correlation between fatigue improvements and per-hour gains across studies was weak (r = 0.18), but with 11 studies that tells us little either way.\n\n**Known weaknesses in the main evidence**\n\n- **Same offices.** The registered mediation test used the same offices that generated the hypothesis. It guards against flexible analysis, but it isn't an independent replication.\n- **Few clusters.** The effective sample is 14 offices. The 28–66% interval is probably too narrow, and the method isn't reported.\n- **Causal assumptions.** Mediation assumes nothing unmeasured links meeting cuts to output. Managers who cut meetings may also have changed approvals, case allocation and other practices at the same time.\n- **The log-hours measure.** \"Active log-in time\" on the case-management system may count only time spent on cases. If so, it excludes meetings, and the meetings mechanism must work through better focus during case work rather than hours freed. Worth checking how the measure is defined.\n- **Contaminated controls.** The two control offices that cut meetings from month 15 make the treated-versus-control gap smaller. Part of the apparent decline in the gain between nine and 24 months may be the controls catching up.\n- **Baseline meeting data.** The nine-month report said meeting data existed only for month six, but source 5 gives baseline figures. Presumably they were extracted retrospectively; worth confirming.\n- **The two control offices.** Their 4.1% is a before–after comparison with no comparison group, so seasonal effects or regression to the mean could explain it.\n\n**A comparison problem**\n\nWithout an hours cut, a gain from reorganisation shows up as more output per worker at unchanged hours, not as a rise in output per hour against fewer hours. Comparisons between the two scenarios need to be set up carefully. Be wary of matching the 4.1% directly against the treated offices' 8.5–9.8%.\n\n**My provisional reading (please challenge it)**\n\n- Meetings probably account for a substantial share of the gain, plausibly around half. But that rests on one employer, 14 offices, and mediation assumptions.\n- The two control offices suggest some of the gain is available without cutting hours. How much is unknown.\n- The Halden interviews and Varden's manager comments point to the hours cut acting as a trigger for changes that otherwise didn't happen. That supports the \"necessary as trigger\" reading, but it is interview evidence only.\n- The question can't be settled from the existing documents. The realistic output is a clear statement of what is and isn't known, plus a proposal for how to find out.\n\n**Errors in source 6 (our briefing) to be aware of**\n\n- It says the gain fell from 12.5% to 8.5%. Those figures use different hours measures; the like-for-like comparison is 12.5% to 9.8%.\n- It states the meetings result as causal and general (\"comes from\"), which is stronger than the evidence allows.\n- It omits the effect of the two control offices on the decay estimate.\n\n**Possible next steps**\n\n1. **Ask the Varden authors for office-level data.** With it, compare the two audit offices against the other five control offices from month 15 onward. That gives a rough comparison group for the only reorganisation-only evidence we have. Also ask how the log-hours measure is defined and where the baseline meeting data came from.\n2. **Look at the three meta-analysis studies that measured meeting time**, via source 4's supplementary material.\n3. **Look for evidence outside four-day week trials** on meeting-reduction interventions at unchanged hours, such as meeting audits and meeting-free days. I haven't searched this, so treat it as open.\n4. **Sketch a design that would answer the question directly:** a three-arm trial comparing a four-day week, reorganisation at unchanged hours, and no change. This could be put to the council as an option.\n\n**Practicalities**\n\n- **Files:** [location]\n- **Deadline:** [date and what's due]\n- **Contact while I'm away:** [name]. I'll be [reachable or not reachable] at [contact].\n- **Who else is involved:** [names and roles]\n\nIf you reach a different view from mine, go with the evidence and write down why. That's more useful than continuity.\n\nThanks,\n\n[Name]\n\n---\n\nFill in the placeholders, and adjust the provisional reading if yours differs.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1244,
+  "cache_read_input_tokens": 93004,
+  "output_tokens": 3986,
+  "output_tokens_details": {
+   "thinking_tokens": 1419
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1244,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3986,
+    "cache_read_input_tokens": 93004,
+    "cache_creation_input_tokens": 1244,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1244
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.10828879999999996,
+ "started": "2026-11-15T06:37:57.565705+00:00",
+ "wall_s": 43.46,
+ "task_index": 4
+}

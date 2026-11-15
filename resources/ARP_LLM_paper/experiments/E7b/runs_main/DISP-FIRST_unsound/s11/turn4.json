@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_unsound",
+ "session": 11,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Hi Tom,\n\nThanks for picking this up. Below is where the question stands, what the evidence says, what we think are the weak points, and some ideas for next steps. Everything here is my reading of the sources, so please check it against the documents. If you come to a different view, go with the evidence.\n\n## The question\n\nWhen teams moved to a shorter week, output per hour rose. Did that gain need the cut in hours? Or could the council get much of it by reorganising work, mainly by cutting recurring meetings, while keeping the current 37.5-hour week?\n\nThis matters for the recommendation. If reorganisation alone delivers most of the gain, it may be the cheaper option, because it avoids lower output per employee and any knock-on effects on service.\n\n## What the evidence says\n\n**Source 5, the Varden 24-month follow-up, is the main evidence.** See §2, §3 \"Mediation\" and §3 \"An unplanned observation\".\n- **Meeting hours.** In treated case-processing offices, recurring meetings fell from 7.4 to 3.9 hours per week per person. In control offices they went from 7.2 to 7.0.\n- **Mediation.** A registered mediation analysis attributes 47% of the per-hour gain to fewer meetings (CI 28–66%), 18% to reduced fatigue (CI 2–34%), and leaves 35% unexplained.\n- **The control-office audit.** This is the only direct evidence on reorganising without cutting hours. At month 15, two control offices ran a \"meeting audit\" on their own initiative. Their meeting time fell from 7.1 to 5.0 hours, and output per hour over the next six months was 4.1% above their own previous six months. That is two offices with no comparison group.\n\n**The other sources:**\n- **Source 2, Varden at nine months, \"Exploratory: meetings\".** This is where the meetings idea first appeared: a correlation of r = 0.71 across the 7 treated offices, unregistered.\n- **Source 1, Halden, \"What organisations changed\".** 47 of 58 managers mentioned fewer meetings. Several described the shorter week as \"a forcing device\" for changes they had wanted to make for years. This is self-report, but it bears directly on whether the hours cut is what *causes* the reorganisation.\n- **Source 3, the re-analysis, §7.** It dismisses the meetings idea as post hoc. Note that it was written before source 5's registered test, and I think it misdescribes how the nine-month analysis was done.\n- **Source 4, the meta-analysis, \"Mechanisms\".** Only three studies measured meetings, and none tested them as a mechanism.\n- **Source 6, our synthesis, §4.** This lists the question as open.\n\nNo study has an arm that reorganised work without cutting hours. That is the central gap.\n\n## Weak points I'd keep in mind\n\n1. **The mediation result doesn't answer our question directly.** It estimates how much of the gain *in offices that cut hours* ran through meetings. It does not estimate what cutting meetings would do in a 37.5-hour week. In a full week, freed time might be absorbed by other low-value work. Also, managers might not cut meetings at all without the pressure that shorter hours create.\n2. **The mechanism differs between the two scenarios.**\n   - With shorter hours, cutting meetings mostly removes low-output time from the hours worked, so output per hour rises almost automatically.\n   - With unchanged hours, the freed time has to be turned into extra output.\n   - These are different mechanisms, and the second is not guaranteed.\n3. **A rough scale check (assumption-heavy, not a finding).** Suppose output were proportional to time spent outside meetings. Then the control offices' cut of 2.1 hours would predict roughly a 6–7% rise in output, against the 4.1% observed. Two possible explanations: not all the freed time became productive work, or two offices simply give a noisy estimate. Treat this as a framing device only.\n4. **The mediation test used the same offices that suggested the hypothesis.** It was registered before the 24-month outcomes, but it is not an independent replication. It also relies on only 14 offices and assumes no unmeasured confounding.\n5. **The meeting baseline is unexplained.** The nine-month report says meeting data were collected only in month six. The follow-up reports a baseline of 7.4 hours, but doesn't say where that figure came from. Worth asking.\n6. **The control-office audits contaminate the trial.** Because two control offices adopted part of the treatment from month 15, the 24-month treatment–control gap is probably understated.\n\n## Possible next steps\n\n- **Ask the Varden team (Lindqvist, Mahony, Rao):**\n  - where the baseline meeting data came from;\n  - office-level data for the two auditing control offices, and how long their gain lasted;\n  - whether any other control offices changed meeting practice;\n  - whether the mediation estimate changes if those two offices are excluded or capped at month 15.\n- **Look for evidence outside these six documents.** In particular, look for studies of meeting reduction or \"meeting-free day\" interventions with hours unchanged. That is the arm this body of work is missing.\n- **Consider proposing a council pilot** that tests reorganisation without an hours cut. One option is three groups: hours cut, meeting audit only, and no change. It would be relatively cheap and would answer the question directly.\n\n## Status\n\nI haven't contacted the Varden team or started the wider literature search. The recommendation currently treats this question as open, and nothing in it depends on the answer yet. [Add deadline / who's expecting what.]\n\nIf anything here is unclear, [colleague's name] can help while I'm away. I'm back on [date].\n\nThanks,\n[Name]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1059,
+  "cache_read_input_tokens": 85728,
+  "output_tokens": 3107,
+  "output_tokens_details": {
+   "thinking_tokens": 1226
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1059,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3107,
+    "cache_read_input_tokens": 85728,
+    "cache_creation_input_tokens": 1059,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1059
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.08777360000000001,
+ "started": "2026-11-15T07:44:33.378448+00:00",
+ "wall_s": 34.46,
+ "task_index": 4
+}

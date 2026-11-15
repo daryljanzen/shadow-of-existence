@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 9,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "**Subject:** Handover: is the hours cut necessary for the per-hour gain?\n\nHi Tom,\n\nWhile I'm on leave, you're taking over this question:\n\n**Is the cut in hours itself necessary for the per-hour productivity gain, or could reorganising work, mainly by cutting meetings, deliver much of it without reducing hours?**\n\nIt matters for the council. If reorganisation alone captures much of the gain, the council might get most of the benefit without the costs of a shorter week: lower output per worker, overtime, and in counter work, longer waits.\n\nBelow is where I've got to. **Treat my views as provisional.** Check everything against the sources, and if you read the evidence differently, go with your reading and tell me why.\n\n## What you have\n\nThe six documents are:\n1. the Halden pilot;\n2. the Varden trial at nine months;\n3. Varga & Holm's re-analysis of Halden;\n4. the meta-analysis;\n5. the Varden 24-month follow-up;\n6. our synthesis briefing.\n\nThe briefing's section on meetings is stated more firmly than the evidence supports, so rely on the primary sources for this question.\n\n## The central problem\n\n**No study had an arm that reorganised work without cutting hours.** None of the evidence answers the question directly. It's useful to split it in two:\n\n- **(a) Does cutting meetings raise output per hour on its own?**\n- **(b) Without an hours cut, would organisations actually cut meetings, and keep them cut?** Several Halden managers called the shorter week \"a forcing device\" for changes they'd wanted for years. If that's right, the hours cut could be needed to bring about the reorganisation, even if it isn't what produces the gain.\n\nMost of the evidence speaks to (a). Almost nothing speaks to (b).\n\n## The evidence and my concerns\n\n**Varden 24-month mediation (source 5, §3).** This is the strongest evidence. Fewer meetings account for 47% of the per-hour gain (95% CI 28–66%), lower fatigue for 18%, and 35% is unexplained. My concerns:\n- **It isn't independent.** The analysis was registered at month 11, after the meetings association had been seen in the same seven treated offices. It's a re-test, not a replication.\n- **The sample is small.** There are only 7 treated and 7 control offices, and the paper doesn't say how the confidence interval was calculated.\n- **It rests on a strong assumption.** Mediation assumes nothing else drives both meeting cuts and productivity. Offices that were coping well might simply have found it easier to cut meetings.\n- **Two things need clarifying:**\n  - What \"log-in hours\" include. If they cover only time in the case system, meetings fall outside the denominator. In that case the meetings effect works through something like fewer interruptions, not freed-up time.\n  - Where the baseline meeting figures come from. The nine-month report says meeting data were collected only in month six.\n- **On (b),** it tells us how much of the gain ran through meetings *given* the hours cut. It doesn't tell us whether meeting cuts would happen without one.\n\n**The \"unplanned observation\" (source 5, §3).** Two control offices cut meetings from 7.1 to 5.0 hours a week without changing hours. Their output per hour was 4.1% above their own previous six months. This is the only direct evidence on (a), and it is weak: two offices, a before–after comparison, no comparison group, and offices that chose to do it. It does show that some offices cut meetings without an hours cut. That's slight evidence on (b) too. It also affects the decay estimate, because these offices are in the control group.\n\n**My own arithmetic, from the nine-month report (source 2).** Using the month-six calendar figures, output per non-meeting hour differs by only about 3% between treated and control. On that reckoning, meetings could explain most of the gain, not 47%. But it assumes meeting time produces nothing, and there is no pre-period data. It's worth reconciling with the mediation result.\n\n**Halden (source 1, \"What organisations changed\").** In interviews, 47 of 58 managers mentioned fewer meetings, and some called the shorter week a forcing device. This is qualitative, from managers who sponsored the change, and not quantified. It is most relevant to (b).\n\n**Varga & Holm (source 3, §7).** They dismiss the meetings hypothesis as post hoc. That criticism was fair at nine months. The 24-month registered test partly answers it, but only partly, because it uses the same offices.\n\n**Meta-analysis (source 4, \"Mechanisms\").** Only three studies measured meeting time, and none tested meetings as a mediator under a pre-registered plan. So the wider literature adds nothing yet.\n\n## Where I'd landed, provisionally\n\n- The evidence suggests meetings are a substantial part of the gain. \"About half\" is plausible, but the uncertainty is wide and the finding is unreplicated.\n- The fatigue share likely depends on shorter hours, or at least on more rest.\n- On (b), we have almost no evidence.\n\nSo my working answer was: **plausibly much of the gain could come from reorganisation alone, but the evidence can't tell us whether it would happen without the hours cut.**\n\n## Suggested next steps\n\n1. Read the sections above yourself and form your own view before going through my concerns in detail.\n2. Ask the Varden team [contact] to clarify what log-in hours include and where the baseline meeting data came from.\n3. Look beyond our six documents for studies of meeting-reduction interventions without hours changes, such as meeting-free days. I haven't searched this, so don't take its existence as given.\n4. Sketch what would settle the question, for example a three-arm trial: hours cut, meeting reorganisation only, and control. It could be a recommendation in itself.\n5. Priya from finance has been doing a cold read of the meetings evidence. If she has replied, compare her reading with yours.\n\n## Practicalities\n\n- I'm away [dates]. [Name] can answer questions in the meantime.\n- [Any deadline, e.g. \"We'd hoped for a view by [date] for [meeting].\"]\n- If you get stuck or find something that changes the picture, write it down and keep going. Open questions are fine to leave open if the evidence doesn't settle them.\n\nThanks for picking this up.\n\n[Name]",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1373,
+  "cache_read_input_tokens": 96778,
+  "output_tokens": 3392,
+  "output_tokens_details": {
+   "thinking_tokens": 1320
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1373,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3392,
+    "cache_read_input_tokens": 96778,
+    "cache_creation_input_tokens": 1373,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1373
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09819559999999994,
+ "started": "2026-11-15T07:35:27.543376+00:00",
+ "wall_s": 39.23,
+ "task_index": 4
+}

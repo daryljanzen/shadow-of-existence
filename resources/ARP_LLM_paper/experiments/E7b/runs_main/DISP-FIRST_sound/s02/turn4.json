@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_sound",
+ "session": 2,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's the handover note.\n\n---\n\n**Handover: is the hours cut necessary for the per-hour gain?**\n\nTom,\n\nThis is yours while I'm away. It's an open question, and the aim is to make it less open, or to say clearly what it would take to answer it.\n\n### The question\n\nThe trials find a per-hour productivity gain in discretionary (case-processing) work. The cleanest estimate is +8.5% at 24 months in the Varden trial. Does that gain need the cut in hours, or could reorganising work, mainly cutting recurring meetings, deliver much of it with hours unchanged?\n\n### Status\n\n**Open.** No study has an arm that reorganised work without cutting hours, so nothing in the six documents tests this directly. Everything we have is indirect.\n\n### What bears on it\n\nEach item says where to look. Please work from the source tables rather than from summaries, including mine and the evidence briefing's.\n\n1. **The mediation test (Varden two-year follow-up, Table 2).** In a registered analysis, fewer meetings account for 47% of the per-hour gain (CI 28–66), reduced fatigue for 18% (CI 2–34), and 35% is unexplained. Meeting time fell from 7.4 to 3.9 hours a week in treated offices, against 7.2 to 7.0 in controls. This is the strongest evidence that meetings matter. Its limits:\n   - It assumes no unmeasured confounding between mediators and outcome. Randomisation doesn't secure that, and the authors acknowledge it.\n   - Meetings and fatigue are probably correlated, so the split depends on the model.\n   - There are only 14 offices. We don't know whether the confidence intervals allow for that clustering.\n\n2. **What the hours measure counts (same report, §2).** The outcome is output per *system-logged* hour. If log-in time excludes meetings, then cutting meetings can't raise output per hour just by removing time from the denominator. It would have to work some other way, such as less fragmented case-work. That distinction matters a lot for your question: a fragmentation effect might be achievable without an hours cut, while a denominator effect isn't really a productivity gain at all. The report doesn't say. Asking the Varden authors is probably the quickest useful step.\n\n3. **The control-office meeting audit (same report, §3).** Two control offices cut their meetings without cutting hours, from 7.1 to 5.0 hours a week, and output per hour then rose 4.1% against their own previous six months. This is the only direct evidence on reorganisation without an hours cut. It is weak: two self-selected offices, no comparison, and a smaller meeting cut than in treated offices. It could be strengthened by comparing those two offices with the five untouched control offices, if Varden will share office-level data. The audit also raises the control group's performance, which may make the main estimate's decline look larger than it is.\n\n4. **The nine-month exploratory analysis (Varden nine-month report, \"Exploratory: meetings\").** It found r = 0.71 across seven offices. That is suggestive at most: the CI runs from roughly −0.1 to 0.95, and there was no baseline data on meetings. It has been superseded by item 1. It matters now mainly for the history of the claim.\n\n5. **The \"forcing device\" accounts (Halden pilot, \"What organisations changed\").** Managers at 47 of 58 organisations mentioned cutting meetings. Several described the hours cut as forcing changes they had wanted for years. This is anecdote, but it is the main evidence for the alternative view that reorganisation happens *because* of the hours cut. It hasn't been quantified anywhere.\n\n6. **The other two documents.** The Varga–Holm re-analysis dismissed meetings as post hoc, but it was written before the registered test. The meta-analysis says only three studies measured meetings and it \"cannot assess\" the mechanism.\n\n### A conceptual point\n\nA mediation share doesn't tell you what intervening on the mediator alone would achieve. Even if meetings carry about half the gain when hours are cut, cutting meetings without an hours cut might:\n- be smaller, because there is no deadline pressure to make it happen;\n- not last, because there is nothing to stop meetings creeping back;\n- not translate into more output, because freed time might be absorbed rather than redirected.\n\nOr it might deliver most of the gain. The mediation result is consistent with all of these. Only a reorganise-only comparison separates them.\n\n### My current view, for you to overturn\n\nMeetings probably matter. The mediation result is the best evidence on mechanism in this literature. Whether the hours cut is necessary is genuinely open. The evidence briefing's \"about half the gain comes from fewer meetings\" is stated more firmly than the evidence supports. Please read the sources before relying on this. If you see it differently, go with your reading and note why.\n\n### What's in train\n\nPriya (finance) is doing a cold read on a related question: how much, if any, of the gain fewer meetings explain. She'll send it to [me / you]. Please read hers before sharing our view with her. She has been told she'll get ours afterwards, and her independence is the point.\n\n### Decisions\n\nYou don't need to check with me before contacting the Varden authors (items 2 and 3), requesting data, or revising the evidence briefing's wording on meetings. Note what you change and why. Anything that commits other people's time, or changes the draft recommendation itself, goes to [name] while I'm away.\n\nBack on [date].\n\n[Name]\n\n---\n\n**Choices I made in the note:**\n\n- **A handover isn't a cold read.** Unlike Priya's message, this gives Tom the state of the question, its caveats, and your view. He's taking over the work, so he needs what you know. Your view is labelled as yours and placed after the evidence, with an explicit invitation to overturn it.\n- **Pointers go to the sources.** Each item names where to look, and the note asks him to work from the tables, because both the briefing and the follow-up's own summary state things more firmly than their underlying results.\n- **Priya's read needs routing.** Her message says to send it to you. Fill in the bracket, or tell her directly to send it to Tom.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1323,
+  "cache_read_input_tokens": 85481,
+  "output_tokens": 3435,
+  "output_tokens_details": {
+   "thinking_tokens": 1428
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1323,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 3435,
+    "cache_read_input_tokens": 85481,
+    "cache_creation_input_tokens": 1323,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1323
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09639620000000004,
+ "started": "2026-11-15T07:01:30.805499+00:00",
+ "wall_s": 40.15,
+ "task_index": 4
+}

@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_sound",
+ "session": 12,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's the handover note. A handover is different from a cold read. Tom is continuing the work rather than checking it independently, so he needs your current understanding. The note gives him that, marks how much weight each piece of evidence carries, and separates what's settled from what's open.\n\n---\n\n**Subject: Handover: is the hours cut needed for the per-hour gain?**\n\nHi Tom,\n\nWhile I'm on leave, this question is yours: **is the reduction in hours itself necessary for the per-hour productivity gain, or could reorganising work, mainly cutting recurring meetings, deliver much of it without reducing hours?**\n\nIt matters for the council. If reorganisation alone captures most of the gain, the council might get it without the small loss in output per worker and the higher cost per case that come with a shorter week. If the hours cut is what makes reorganisation happen and stick, that is an argument for the cut itself.\n\n**What's settled enough to build on**\n- In case-processing (backlog) work, the Varden trial (docs 2 and 5) found a real per-hour gain against randomised controls:\n  - +12.5% at 9 months on timesheet hours;\n  - +9.8% at 24 months on timesheet hours, and +8.5% on system log-in hours (95% CI 3.4 to 13.8).\n- The meta-analysis's controlled studies (doc 4) are in the same range.\n- Output per worker was slightly lower (−2.1% and −3.4%), with intervals including zero.\n- Treat the gain as found. Your question is what produces it.\n\n**Evidence on your question, roughly in order of weight**\n\n1. **The Varden registered mediation analysis (doc 5, section 3).** This is the strongest evidence.\n   - It estimates that fewer meetings account for 47% of the per-hour gain (95% CI 28 to 66%), lower fatigue for 18% (2 to 34%), and 35% is unexplained.\n   - Give it moderate weight, for four reasons:\n     - The hypothesis came from the same seven treated offices, in an exploratory nine-month analysis (doc 2: r = 0.71 across 7 offices). The registered test isn't an independent replication.\n     - There are only 14 offices, and the method used for the confidence intervals isn't stated.\n     - Mediation assumes nothing else drove both meeting cuts and output, which the authors acknowledge they can't guarantee.\n     - Doc 2 says calendar data were collected only in month six, but doc 5 reports a baseline of 7.4 hours. Where that baseline came from is unclear.\n2. **The control-office \"meeting audit\" (doc 5, section 3).** This is the only direct evidence on reorganising without cutting hours.\n   - Two control offices cut meetings from 7.1 to 5.0 hours a week in month 15. Their output per hour then rose 4.1% against their own previous six months.\n   - It is light evidence: two offices, a before–after comparison with no comparison group, and a smaller meeting cut than in the treated offices.\n   - It also changed the control arm, which complicates the 24-month treated-vs-control comparison.\n3. **Halden manager interviews (doc 1).**\n   - 47 of 58 managers mentioned fewer or shorter meetings, and several called the shorter week \"a forcing device\" for changes they had long wanted.\n   - This bears on the second half of the question, whether the cut triggers reorganisation. But it is anecdotal, and these managers were sponsors of a pilot their organisations volunteered for.\n4. **Meta-analysis (doc 4).** Only 3 of 23 studies measured meeting time, and none tested it. The wider literature can't help much here.\n5. **Varga & Holm (doc 3, section 7).** They dismiss the meetings hypothesis as post hoc. They wrote before the registered test, but their point that it was generated from the same offices still has some force.\n\n**An unresolved technical point that matters for you**\n- Doc 5 doesn't make clear whether Varden's log-in hours include time in meetings.\n- If meetings count in the hours denominator and produce no counted output, part of the meetings \"mechanism\" is arithmetic: removing non-productive hours raises output per hour automatically.\n- In a reorganisation-only scenario no hours are removed. The freed time would have to turn into extra cases closed for any gain to show.\n- So decide early which measure you compare on. Output per worker and cost per case are probably fairer than output per hour across the two scenarios.\n\n**Where the question stands**\n- It's **open**, and the six documents can't close it, because no study had an arm that reorganised work without cutting hours.\n- A realistic goal is to set out what the evidence does and doesn't support, and to specify what would settle it.\n\n**Possible next steps (your call on order)**\n- Ask the Varden team (Lindqvist et al.) for office-level data. Comparing the two auditing control offices with the other five controls over months 15 to 24 would be a stronger test than their before–after figure, and it's the cheapest evidence available.\n- Ask them where the baseline meeting figures came from, and whether log-in time includes meetings.\n- Sketch what a council pilot would need: probably a control arm, a reorganisation-only arm and an hours-cut arm, with a rough sense of how many teams each would need. Varden had seven offices per arm.\n\n**A note on our own material**\n- Doc 6 is our synthesis. It says \"about half\" the gain comes through meetings more firmly than doc 5 supports.\n- Treat it, and anything in my notes, as a summary to check against the sources, not as a source itself.\n- The material already contains two opposite errors on this question: Varga & Holm dismissed the meetings line, and our briefing stated it as fact. The evidence sits between those.\n\n**How to work while I'm away**\n- You don't need to wait for me to contact the Varden team, run analyses or draft. Share work as you go with [name].\n- Anything that commits the council, such as proposing a pilot or making commitments to outside parties beyond data requests, should go to [director] first.\n- If you read the evidence differently from this note, go with the evidence and write down why.\n\nI'm back on [date]. [Contact arrangements, if any.]\n\nThanks, and good luck with it.\n[Name]\n\n---\n\n**Before you send:**\n- The weights and caveats come from our review of the documents. If your own view differs on any of them, especially how much to trust the mediation result, edit before sending. Tom will take this note as your position.\n- Fill in the placeholders: colleague, director, return date and contact arrangements.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1781,
+  "cache_read_input_tokens": 102070,
+  "output_tokens": 5173,
+  "output_tokens_details": {
+   "thinking_tokens": 3030
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1781,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 5173,
+    "cache_read_input_tokens": 102070,
+    "cache_creation_input_tokens": 1781,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1781
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.13813799999999987,
+ "started": "2026-11-15T07:56:03.407792+00:00",
+ "wall_s": 55.16,
+ "task_index": 4
+}

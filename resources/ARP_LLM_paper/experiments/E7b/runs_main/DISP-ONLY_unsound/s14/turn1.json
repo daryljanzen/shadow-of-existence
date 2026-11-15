@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-ONLY_unsound",
+ "session": 14,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "**Subject: Independent review: draft recommendation on a four-day week for case-processing teams**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review this. Attached are:\n\n1. Our draft recommendation to [Council name] on whether to move its case-processing teams to a four-day week\n2. The six source documents the draft draws on: [list titles, or \"listed in the draft's references\"]\n\nWe'd value your independent judgement, so we've deliberately not summarised our conclusions or steered you toward particular sections. If you have time, you may find it useful to look at the sources before the draft, so you can form your own view of what they support.\n\nWe'd be grateful for your view on:\n\n- **Whether the recommendation follows from the evidence.** Does it say more, or less, than the sources support?\n- **Accuracy.** Are figures and findings represented correctly against the originals?\n- **Applicability.** Do the settings, workloads, and time periods in the sources resemble the council's case-processing teams closely enough to support the recommendation?\n- **Gaps.** Are there risks, alternatives, or evidence we haven't considered?\n- Anything else you think matters, including anything you think we've got wrong at a basic level.\n\nComments in any form are welcome: tracked changes, margin notes, or a short memo. We'd appreciate them by [date]. If anything is unclear or you need further material, please contact [name] at [email/phone].\n\nWith thanks,\n[Name]\n[Role, team]\n\n---\n\nI kept the note neutral on purpose. It doesn't tell her what you concluded or where you think the risks are. That's the opposite of what §5 of the \"How We Work\" note advised, because an external reviewer is most useful when she isn't anchored on your reading first.\n\nIf there are specific points where you'd especially value her expertise, you can add them. But put them *after* the open request, so they don't narrow it. Fill in the bracketed items before sending.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1673,
+  "cache_read_input_tokens": 3854,
+  "output_tokens": 937,
+  "output_tokens_details": {
+   "thinking_tokens": 319
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1673,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 937,
+    "cache_read_input_tokens": 3854,
+    "cache_creation_input_tokens": 1673,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1673
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.032910800000000004,
+ "started": "2026-11-15T07:55:29.305172+00:00",
+ "wall_s": 13.34,
+ "task_index": 1
+}

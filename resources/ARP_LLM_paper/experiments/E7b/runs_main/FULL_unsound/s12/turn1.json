@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 12,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "**Before you send this, check for a conflict of interest.** An R. Okafor is an author of two of the six documents:\n- the **Halden pilot** (source 1), as lead author;\n- the **24-month follow-up** (source 5), as co-author.\n\nIf your reviewer is the same person, she has seen much of this material, and she would be reviewing work that assesses her own studies. Source 3 found a material misstatement about attrition in the Halden pilot, which source 5 didn't address.\n\n- If she **is** the same person, consider a different reviewer. If you keep her, disclose the overlap in the note, ask her to declare any interest, and ideally add a second, unconnected reviewer.\n- If she **isn't**, delete the bracketed paragraph below.\n\nI've written the note to brief her on **scope, not conclusions**, and suggested she read the sources before the draft. That way her reading is independent, which is what makes an external review worth having. Fill in the bracketed placeholders.\n\n---\n\n**Subject: Request for review: draft recommendation on a four-day week for council case-processing teams**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [council name] on whether to move its case-processing teams to a reduced working week at full pay.\n\n**What's attached**\n\n1. Our draft recommendation.\n2. The six documents it draws on:\n   - the Halden multi-organisation pilot;\n   - the Varden County randomised trial at nine months;\n   - a re-analysis of the Halden pilot (Varga & Holm);\n   - a meta-analysis of 23 studies;\n   - the 24-month follow-up of the Varden trial and of 14 Halden organisations;\n   - an evidence briefing synthesising the five.\n\n**What we're asking**\n\nWe'd value your independent judgement on whether the evidence supports the recommendation, and whether we've stated it at the right strength. If you have time, please read the source documents before the draft, so that your reading of the evidence isn't shaped by ours.\n\nWe'd particularly welcome your view on:\n- **Fit to our setting.** Do the studies, especially the case-processing results, apply to the council's teams, given differences in workload, deadlines and staffing?\n- **Measurement.** Have we drawn the right conclusions about output per hour versus output per worker, and about scheduled versus actual hours?\n- **Durability and mechanism.** Have we drawn the right conclusions about how long any gains last and what drives them?\n- **Open questions.** Is anything treated as settled that isn't, or left open that the evidence settles?\n- **Anything we haven't asked** that you think matters.\n\nPlease be as critical as the evidence warrants. Comments marked directly on the draft are fine, as is a short separate note.\n\n[**Disclosure:** You are an author of two of the attached documents, the Halden pilot and the 24-month follow-up. We would be grateful if you could let us know whether you see any conflict of interest in reviewing this recommendation, and comment on that work as candidly as on the rest.]\n\nWe'd be grateful for your comments by [date]. Please contact [name, email] with any questions.\n\nWith thanks,\n\n[Name]\n[Role, team]\n\n---\n\nTwo things to confirm:\n- I've assumed the six documents are the five studies plus the evidence briefing, not the \"How We Work\" note. Adjust the list if not.\n- I haven't seen your draft, so the note doesn't describe its conclusion. That also keeps it from steering her. If you'd like a one-line description of what the draft recommends, I can add it, but I'd keep it to *what* you recommend, not *why*.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4872,
+  "cache_read_input_tokens": 93268,
+  "output_tokens": 2045,
+  "output_tokens_details": {
+   "thinking_tokens": 874
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4872,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2045,
+    "cache_read_input_tokens": 93268,
+    "cache_creation_input_tokens": 4872,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4872
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.09854560000000001,
+ "started": "2026-11-15T07:50:56.875812+00:00",
+ "wall_s": 25.29,
+ "task_index": 1
+}

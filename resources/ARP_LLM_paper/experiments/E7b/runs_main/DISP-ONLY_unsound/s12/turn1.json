@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-ONLY_unsound",
+ "session": 12,
+ "turn_index": 2,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "Here's a draft. It deliberately doesn't summarise our conclusions or tell her where to look. That would anchor her, and an independent read is what we're paying for. It points her to the sources first and asks her to judge the draft against them.\n\n---\n\n**Subject: Review request: four-day week recommendation for [Council name]**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [Council name] on whether to move its case-processing teams to a four-day working week.\n\nAttached are:\n\n- **The draft recommendation** ([n] pages)\n- **The six source documents** it draws on:\n  1. [Title / author / date]\n  2. [Title / author / date]\n  3. [Title / author / date]\n  4. [Title / author / date]\n  5. [Title / author / date]\n  6. [Title / author / date]\n\nIf you have time, it would help us if you looked at the source documents before reading the draft. We'd like to know whether you reach a similar view from the evidence on your own, as well as whether the draft holds up.\n\nWithin that, we'd value your view on:\n\n- whether the draft represents the sources accurately, including anything it omits or overstates;\n- whether the recommendation follows from the evidence, and how confident the council should be in it;\n- anything you think we've missed, or that the council should know before deciding.\n\nPlease don't feel limited to these. If something else concerns you, we'd rather hear it.\n\nWe'd be grateful for your comments by **[date]**, in whatever form is easiest for you: marked-up draft, notes or a call. The recommendation goes to the council on **[date]**, so there will be time to act on what you find.\n\nIf anything is unclear or you need further material, please get in touch with me at [contact details].\n\nWith thanks,\n[Name]\n[Role, organisation]\n\n---\n\nA few notes:\n\n- **Placeholders:** you'll need to fill in the source titles, page count, dates and contact details.\n- **Leaving room after her deadline:** I left space between her deadline and the council date on purpose. A review that arrives too late to change anything tends to get waved through.\n- **Our known weak spots:** if the team already knows where the draft is weakest, consider sending those to her separately *after* she's returned her independent comments. That way you get both her unanchored read and her view on your specific worries.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1524,
+  "cache_read_input_tokens": 3852,
+  "output_tokens": 933,
+  "output_tokens_details": {
+   "thinking_tokens": 199
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1524,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 933,
+    "cache_read_input_tokens": 3852,
+    "cache_creation_input_tokens": 1524,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1524
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.0316384,
+ "started": "2026-11-15T07:45:07.604687+00:00",
+ "wall_s": 12.2,
+ "task_index": 1
+}

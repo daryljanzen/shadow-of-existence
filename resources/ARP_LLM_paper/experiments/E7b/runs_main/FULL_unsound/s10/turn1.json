@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "FULL_unsound",
+ "session": 10,
+ "turn_index": 9,
+ "kind": "task",
+ "item": "B1",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "We've finished our draft recommendation to the council on whether to move its case-processing teams to a four-day week. It goes to an external reviewer next, Dr. Okafor, who hasn't seen any of the material or our draft. Please write the short covering note we'll send her with the draft and the six source documents.",
+ "response": "One thing to check before this goes out. **R. Okafor of the Halden Institute is an author of two of the six sources**: the Halden pilot (source 1) and the 24-month follow-up (source 5). If your Dr. Okafor is the same person, she has seen the material, and she has a stake in how sources 1 and 5 are judged. Source 3's re-analysis also directly criticises the Halden work.\n\nIf she is the same person, I'd consider another reviewer. Failing that, the note should state the overlap openly and ask her to declare it. The draft below assumes she is a different person and has a placeholder for the alternative.\n\n---\n\n**Subject: Review request: four-day week recommendation for council case-processing teams**\n\nDear Dr. Okafor,\n\nThank you for agreeing to review our draft recommendation to [council name] on whether to move its case-processing teams to a four-day week. The draft and the six documents it draws on are attached:\n\n1. Halden Institute, *Reduced Working Time at Full Pay* (multi-organisation pilot)\n2. Varden County, *Cluster-Randomised Trial of a 30-Hour Week* (nine-month results)\n3. Varga & Holm, *Hours, Output and the Pilot Problem* (re-analysis of source 1)\n4. Achterberg et al., *Systematic Review and Meta-Analysis*\n5. Lindqvist et al., *Two Years On* (24-month follow-up of sources 1 and 2)\n6. *Does a Shorter Working Week Raise Productivity?* (an evidence briefing synthesising sources 1–5)\n\n**What we're asking.** We would like your independent judgement on whether the recommendation follows from the evidence, and at the strength the draft claims. We have deliberately not summarised our conclusions here. If time allows, it would help if you read sources 1–5 before the draft. That way you form your own view of the evidence first.\n\n**Areas where we'd especially value scrutiny.** Please don't limit yourself to these:\n\n- Whether figures in the draft match the primary sources, not just the briefing. Source 6 is a secondary synthesis, and we would rather you check against sources 1–5 directly.\n- Whether the council's case-processing work is comparable to the settings studied. In particular, does any of it depend on staff being present, such as phone lines or counters?\n- How the draft treats output per worker as opposed to output per hour, and costs, including overtime.\n- What the evidence does and doesn't show about durability beyond the trial periods.\n- Whether similar gains could be achieved by reorganising work without reducing hours.\n\n**Conflicts of interest.** Please let us know if you have any connection to the authors or organisations behind these documents. [*If applicable:* We are aware that you are an author of sources 1 and 5. We would value your review and will note this alongside it.]\n\n**Format and timing.** Written comments are fine, in whatever form suits you. We would be grateful to receive them by [date]. Please disagree with anything, including how we've framed the question.\n\nWith thanks,\n[Name]\n[Team / organisation]\n[Contact details]\n\n---\n\nNotes on the draft:\n\n- **Six documents.** I've assumed these are the five studies plus the evidence briefing. I left out the \"How We Work\" note. If you meant a different set, I'll adjust the list.\n- **No summary of conclusions.** Telling a reviewer what you have concluded tends to anchor her, as discussed in the review of section 5 of the team note. The focus areas are framed as questions so they give scope without signalling your answers.\n- **The briefing's known issues.** The briefing has issues I flagged earlier, such as the 12.5% → 8.5% comparison across different hours measures and the omitted control contamination. If any of these carried into your draft, it's worth fixing before she sees it. Asking her to check figures against the primary sources should catch any that remain.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 4636,
+  "cache_read_input_tokens": 87820,
+  "output_tokens": 2267,
+  "output_tokens_details": {
+   "thinking_tokens": 1003
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4636,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 2267,
+    "cache_read_input_tokens": 87820,
+    "cache_creation_input_tokens": 4636,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 4636
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.1000080000000001,
+ "started": "2026-11-15T07:38:32.883164+00:00",
+ "wall_s": 26.95,
+ "task_index": 1
+}

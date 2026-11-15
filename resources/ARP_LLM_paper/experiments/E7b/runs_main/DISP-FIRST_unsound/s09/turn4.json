@@ -1,0 +1,50 @@
+{
+ "exp": "E7b",
+ "arm": "DISP-FIRST_unsound",
+ "session": 9,
+ "turn_index": 12,
+ "kind": "task",
+ "item": "B4",
+ "model": "claude-opus-5-5",
+ "system": "You are a helpful assistant.",
+ "message": "I'm going on leave and handing one open question to a new analyst, Tom: whether the cut in hours itself is necessary for the per-hour gain, or whether reorganising work (mainly cutting meetings) without reducing hours could deliver much of it. Please write my handover note to Tom. He'll have all six source documents.",
+ "response": "Here's the handover note. Unlike Priya's cold read, a handover should pass on where we've got to. I've separated what the sources report from our own working analysis, and labelled the latter as provisional so Tom checks it rather than inherits it.\n\n---\n\n**Subject: Handover: is the hours cut necessary for the per-hour gain?**\n\nHi Tom,\n\nWhile I'm away, the open question is yours:\n\n> **Is cutting hours itself necessary for the per-hour productivity gain, or could reorganising work, mainly cutting meetings, deliver much of it without reducing hours?**\n\nThis matters for the council recommendation. If reorganising alone would capture most of the gain, the council could get it without the cost and service risks of a shorter week. If the hours cut is what makes the reorganisation happen and stick, the two can't be separated.\n\nYou have all six source documents. Below is where things stand. **Please treat my analysis as a starting point to check, not a conclusion.** Some of it is back-of-envelope, and the earlier stages of this work showed how easily summaries drift from their sources.\n\n## 1. The core problem\n\n**No study in the body had an arm that reorganised work without cutting hours.** The 24-month follow-up says this explicitly. Everything below is indirect evidence.\n\nOne conceptual point is worth keeping in view, because it's easy to blur:\n- The **mediation analysis** asks how much of the gain *runs through* fewer meetings when hours are cut.\n- Your question asks whether cutting meetings *without* cutting hours would produce a comparable gain.\n\nThese are different questions. A large mediated share doesn't show the hours cut is unnecessary. The hours cut might be what causes the meeting cuts in the first place, which is the \"forcing device\" idea. The two scenarios also produce different outcomes. With hours cut, removing meetings mainly *protects* output. Without an hours cut, it would mainly *raise* output per worker.\n\n## 2. What the sources report\n\n| Source | Evidence | Main limits |\n|---|---|---|\n| **Halden pilot** (\"What organisations changed\") | 47 of 58 managers mentioned fewer or shorter meetings. Several called the reduced schedule \"a forcing device\" for changes they'd wanted for years. | Qualitative, from self-selected organisations, not quantified. |\n| **Varden, 9 months** (\"Exploratory: meetings\") | At month 6, treated case-processing offices had 3.8 h/week of recurring meetings vs 7.1 in control. Across the 7 treated offices, meeting cuts correlated with per-hour gains (r = 0.71). | Unregistered, n = 7, no pre-period meeting data. |\n| **Varga & Holm, §7** | Dismisses the meetings account as post hoc. | Partly misdescribes Varden's analysis: the data covered all treated offices and Varden had already caveated it. |\n| **Meta-analysis** (\"Mechanisms\") | Only 3 of 23 studies measured meeting time, and none tested it as a mediator. | Effectively no evidence beyond Varden. |\n| **Varden, 24 months** (\"Mediation\") | Registered mediation: meetings explain 47% (28–66%) of the per-hour gain, fatigue 18% (2–34%), unexplained 35%. Treated meeting time fell from 7.4 to 3.9 h/week; control from 7.2 to 7.0. | Assumes no unmeasured confounding. Same 7 offices that generated the hypothesis. Effective sample about 14 offices. |\n| **Varden, 24 months** (\"An unplanned observation\") | **The only reorganise-without-hours-cut evidence.** In month 15, two control offices audited meetings on their own initiative and cut recurring meetings from 7.1 to 5.0 h/week. Output per hour over the next six months was 4.1% above their previous six. | Two self-selected offices, compared only with themselves, with no adjustment for seasonality. |\n\n## 3. Our working analysis (provisional, please check)\n\n**Accounting bracket on the meetings share.** If meeting time produced nothing, the treated offices' cut of about 3.3 h/week (difference-in-differences) would mechanically account for roughly **8 points** of the 8.5% per-hour gain, which is nearly all of it. Mediation gives 47%. My working range is therefore **\"roughly half to nearly all\" of the gain running through meetings**. Meetings presumably have some value, so the true figure is likely below the top of that range.\n\n**The audit offices against a mechanical maximum.** I assumed the audit offices worked about 37.9 actual hours, the control average, which is not reported for those two offices. On that assumption:\n- non-meeting hours rose from about 30.8 to 32.9, an increase of about 6.8%;\n- if output scaled with non-meeting time, output per hour would rise about 6.8%;\n- the observed rise was 4.1%, or **roughly 60% of that ceiling**.\n\nThis hints that reorganisation alone captures a meaningful share of the gain, but it rests on two offices and an assumed hours figure. Treat it as a hypothesis.\n\n**Known pitfalls in the documents:**\n- **Contamination.** The two-office audit also contaminates the control group, which biases the main 24-month estimate toward zero and probably explains part of the apparent decline. Don't count the audit as evidence for reorganisation without also noting this.\n- **Mixed measures.** The \"12.5% → 8.5%\" decline mixes timesheet and log measures. Like-for-like on timesheets it's 12.5% → 9.8%.\n- **The synthesis briefing** states \"about half the gain through fewer meetings\" as a general finding. It comes from one setting and one mediation model. Go back to the sources for this question rather than relying on the briefing.\n- **Generalisability.** Everything quantitative here comes from one public employer's case-processing offices, with 7 offices per arm.\n\n## 4. Suggested next steps\n\nPrioritise as you see fit:\n1. **Ask the Varden team for office-level data on the two audit offices**, and compare them with the other five control offices over the same months. That turns a before–after comparison of two offices into a rough difference-in-differences, and gives you their actual hours.\n2. **Ask about the mediation details.** Was the bootstrap clustered by office? Does the analysis use months 1–24 or only months 12–24, the out-of-sample period? Can we get monthly meeting time for treated offices, to see whether meeting cuts *preceded* the gains and whether meetings crept back?\n3. **Look outside the six sources** for studies of meeting-reduction or reorganisation interventions *without* hours changes. I haven't searched for these, so I can't vouch for what exists.\n4. **Consider proposing a three-arm design** to the council if it pilots anything: hours cut, meeting reorganisation only, and control. It's the only design that answers the question directly.\n\n## 5. What's needed and when\n\n[Deliverable, deadline, and who it goes to]\nFiles: [location]. Varden team contact: [name/email].\n\nIf you think I've framed the question wrongly, or my numbers don't hold up, go with your own reading and note where you've diverged so I can catch up when I'm back.\n\nThanks, and good luck with it,\n[Name]\n\n---\n\nTo fill in: the deliverable and deadline, file location, and Varden contact. You might also check my assumed 37.9 hours for the audit offices against anything you know that I don't.",
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 1436,
+  "cache_read_input_tokens": 87832,
+  "output_tokens": 4115,
+  "output_tokens_details": {
+   "thinking_tokens": 1648
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1436,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 4,
+    "output_tokens": 4115,
+    "cache_read_input_tokens": 87832,
+    "cache_creation_input_tokens": 1436,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1436
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "cost_usd_list": 0.11137039999999998,
+ "started": "2026-11-15T07:34:45.851472+00:00",
+ "wall_s": 44.49,
+ "task_index": 4
+}
