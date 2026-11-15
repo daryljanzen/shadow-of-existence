@@ -300,12 +300,15 @@ print("      ⌗ WHAT WAS TRIED AND WHY THE COMPARISON WAS REMOVED INSTEAD.  69'
       "does not scale with the objective.\n        ⇒ Neither quantity the epsilon was tied to is the "
       "one it must dominate, so the selection is\n        now a plain deterministic argmin and the "
       "guarantee is Ⓒ④ᵇ's measurement.  ROUTED to 69.")
-check("Ⓒ④ᵇ  and the twelve starts agree on what they report -- Delta n to better than 2e-7 and "
+check("Ⓒ④ᵇ  and the twelve starts agree on what they report -- Delta n to better than 1e-6 and "
       "omega_b to better than 1e-8 on every window, which on the smallest displacement of the three "
-      "is a relative 1e-6 -- so the minimum is unique on each window and the flip the sweep caught "
+      "is a few parts in a million -- so the minimum is unique on each window and the flip the sweep caught "
       "re-ordered the starts without moving a single number the receipt prints.  ⌗ NOT one of the "
       "eight registered arms: it was measured while diagnosing the flag",
-      all(r['sp3'][1] < 2e-7 and r['sp3'][2] < 1e-8 for r in ROWS)
+      # r7803 (69): the spread across builds reaches 1.6e-7 on one window, so the 2e-7 bound had
+      #   headroom 1.2 and the CI tolerance probe flagged it; 1e-6 keeps the claim (a unique minimum,
+      #   no printed figure moved) with room the builds cannot eat.
+      all(r['sp3'][1] < 1e-6 and r['sp3'][2] < 1e-8 for r in ROWS)
       and max(r['sp3'][1] / abs(r['dn3']) for r in ROWS) < 1e-5)
 
 surv = [r['surv'] for r in ROWS]
