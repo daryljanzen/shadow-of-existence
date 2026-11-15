@@ -165,19 +165,26 @@ def fit3(target, keep, F):
                          bounds=[(-3.0, 3.0), (WBS[0], WBS[-1])],
                          options={'ftol': 1e-14, 'gtol': 1e-12})
             runs.append((float(o.fun), float(o.x[0]), float(o.x[1])))
-    # ** THE SELECTION IS DETERMINISTIC AND THE AGREEMENT IS MEASURED, NOT ASSUMED. **
-    # The first form of this was `if best is None or o.fun < best.fun`, and the tolerance sweep
-    # FLAGGED it as a FLIP: the twelve starts reach the same minimum to 8e-12 in the objective, so
-    # which one is called best is decided by floating-point noise and re-orders between builds.
-    # ⇒ A strict improvement must beat a relative epsilon, so numerically tied starts keep the
-    #   order of the fixed sequence above; and `spread` returns what the starts disagree by, so the
-    #   uniqueness of the minimum is a MEASURED row (Ⓒ④ᵇ) rather than a silent assumption.
-    #   ⌗ GUARD: a selection among numerically tied candidates is not a comparison -- it is noise
-    #     with an `if` in front of it, and it decides what the receipt reports.
-    best = runs[0]
-    for r in runs[1:]:
-        if r[0] < best[0] * (1 - 1e-10):
-            best = r
+    # ** THE COMPARISON IS GONE, NOT TUNED, AND THAT IS THE POINT. **
+    # The first form was `if o.fun < best.fun`, which the build sweep FLAGGED as a FLIP: the twelve
+    # starts reach the same minimum, so which was called best was decided by floating-point noise.
+    # TWO EPSILON FIXES WERE TRIED AND BOTH ARE THE WRONG SHAPE, for the same reason:
+    #   `r7801` (69) used an ABSOLUTE `1e-9`.  On the published window the measured objective spread
+    #     is `1.25e-9`, so that epsilon is 0.8 times what it must absorb -- the flip is narrowed,
+    #     not closed.
+    #   `r7802`'s first form used a RELATIVE `1e-10`.  That scales with the objective, which is
+    #     `158` on the published window and `5.7` on the smallest, while the spread does not scale
+    #     with it at all: the factor runs 12.6, 22.2 and then 2.7, so the relative form is thinnest
+    #     exactly where the objective is smallest.
+    # ⇒ NEITHER quantity the epsilon was tied to is the quantity it must dominate.  So the selection
+    #   is a plain deterministic argmin -- `min` over the fixed sequence returns the first minimal
+    #   element -- and the guarantee is carried by Ⓒ④ᵇ, which MEASURES that all twelve starts agree
+    #   on `Delta n` and `omega_b` to far better than the receipt prints.  Which start wins cannot
+    #   matter, and that is asserted rather than arranged.
+    #   ⌗ GUARD: when a comparison's outcome cannot matter, DELETE the comparison rather than choose
+    #     a tolerance for it.  A tie-break epsilon is a claim about the size of the noise it absorbs,
+    #     and sizing it correctly is harder than removing the need for it.
+    best = min(runs)
     spread = (max(x[0] for x in runs) - min(x[0] for x in runs),
               max(x[1] for x in runs) - min(x[1] for x in runs),
               max(x[2] for x in runs) - min(x[2] for x in runs))
@@ -284,6 +291,15 @@ print("      ⌗ AND THE BOUND BELOW WAS SET FROM ALL THREE WINDOWS, after its f
       "the third time in this revision's\n        family: a bound set from one case and applied to "
       "a grid you have not measured is not a\n        criterion.  Measure the grid, then write the "
       "bound.")
+print()
+print("      ⌗ WHAT WAS TRIED AND WHY THE COMPARISON WAS REMOVED INSTEAD.  69's r7801 fix used an "
+      "absolute\n        1e-9 tie-break; the measured objective spread on the published window is "
+      "1.25e-9, so that\n        epsilon is 0.8 of what it must absorb.  This revision's first form "
+      "used a relative 1e-10,\n        whose factor over the spread runs 12.6, 22.2 and 2.7 across "
+      "the three windows -- thinnest\n        where the objective is smallest, because the spread "
+      "does not scale with the objective.\n        ⇒ Neither quantity the epsilon was tied to is the "
+      "one it must dominate, so the selection is\n        now a plain deterministic argmin and the "
+      "guarantee is Ⓒ④ᵇ's measurement.  ROUTED to 69.")
 check("Ⓒ④ᵇ  and the twelve starts agree on what they report -- Delta n to better than 2e-7 and "
       "omega_b to better than 1e-8 on every window, which on the smallest displacement of the three "
       "is a relative 1e-6 -- so the minimum is unique on each window and the flip the sweep caught "
@@ -409,7 +425,8 @@ print("        precision: no tightening of omega_b would change it.")
 head("THE COUNT, THE SCOPE, AND WHAT IS NOT CLAIMED")
 print("      REGISTERED ARMS: 8 -- Ⓐ① Ⓑ②③ Ⓒ④⑤⑥⑦ Ⓓ⑧; ALL EIGHT met.  TWO checks are ADDITIONS:")
 print("      Ⓔ⑨, so the gate asserts the clause the argument reasons from; and Ⓒ④ᵇ, added at")
-print("      r7802 after the build sweep flagged the multistart selection.  CHECKS RUN: 10.")
+print("      r7802 after the build sweep flagged the multistart selection, whose comparison is now")
+print("      removed rather than given a tolerance.  CHECKS RUN: 10.")
 print("      the SIX inputs are declared in the COMPUTES header; no spectrum here is new and nothing")
 print("      is fitted beyond the two or three parameters each fit is of.")
 print("      NOT CLAIMED: that PO-24 closes or stays open as a whole -- five of the six inherited")

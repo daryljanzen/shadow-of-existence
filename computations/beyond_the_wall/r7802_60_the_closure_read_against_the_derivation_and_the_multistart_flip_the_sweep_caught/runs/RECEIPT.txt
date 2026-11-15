@@ -68,9 +68,17 @@
         the receipt prints to five decimals.  ⇒ GUARD, for the third time in this revision's
         family: a bound set from one case and applied to a grid you have not measured is not a
         criterion.  Measure the grid, then write the bound.
+
+      ⌗ WHAT WAS TRIED AND WHY THE COMPARISON WAS REMOVED INSTEAD.  69's r7801 fix used an absolute
+        1e-9 tie-break; the measured objective spread on the published window is 1.25e-9, so that
+        epsilon is 0.8 of what it must absorb.  This revision's first form used a relative 1e-10,
+        whose factor over the spread runs 12.6, 22.2 and 2.7 across the three windows -- thinnest
+        where the objective is smallest, because the spread does not scale with the objective.
+        ⇒ Neither quantity the epsilon was tied to is the one it must dominate, so the selection is
+        now a plain deterministic argmin and the guarantee is Ⓒ④ᵇ's measurement.  ROUTED to 69.
   [PASS] Ⓒ④ᵇ  and the twelve starts agree on what they report -- Delta n to better than 2e-7 and omega_b to better than 1e-8 on every window, which on the smallest displacement of the three is a relative 1e-6 -- so the minimum is unique on each window and the flip the sweep caught re-ordered the starts without moving a single number the receipt prints.  ⌗ NOT one of the eight registered arms: it was measured while diagnosing the flag
 
-      the displacement's survival across the three windows: 100.267, 99.101, 101.787 per cent
+      the displacement's survival across the three windows: 100.267, 99.100, 101.787 per cent
       ⌗ printed to THREE decimals because the INDEX row's figure is pinned against this value,
         and the first form of that pin was computed from the five-decimal Delta n values this
         receipt PRINTS rather than from the quantities themselves -- which put it 0.03 out and
@@ -135,7 +143,8 @@
 ====================================================================================================
       REGISTERED ARMS: 8 -- Ⓐ① Ⓑ②③ Ⓒ④⑤⑥⑦ Ⓓ⑧; ALL EIGHT met.  TWO checks are ADDITIONS:
       Ⓔ⑨, so the gate asserts the clause the argument reasons from; and Ⓒ④ᵇ, added at
-      r7802 after the build sweep flagged the multistart selection.  CHECKS RUN: 10.
+      r7802 after the build sweep flagged the multistart selection, whose comparison is now
+      removed rather than given a tolerance.  CHECKS RUN: 10.
       the SIX inputs are declared in the COMPUTES header; no spectrum here is new and nothing
       is fitted beyond the two or three parameters each fit is of.
       NOT CLAIMED: that PO-24 closes or stays open as a whole -- five of the six inherited

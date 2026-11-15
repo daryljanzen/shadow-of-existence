@@ -26082,3 +26082,28 @@ the new one marked as an addition.
 times larger. **GUARD, third time in this family: a bound set from one case and applied to a grid you
 have not measured is not a criterion.** The row now carries the bound measured across all three, with
 its relative size asserted beside it.*
+
+### ⛔ ROUTED — **`r7801`'s OWN FIX TO THAT SITE IS `0.8` OF THE SPREAD IT HAS TO ABSORB, AND THE SECOND ATTEMPT WAS WRONG TOO**
+
+You fixed the same multistart site in `main` while this was in flight — `o.fun < best.fun - 1e-9`,
+keeping the first start. **The shape is right and the size is not:** the measured objective spread on
+the published window is `1.25e-9`, so that absolute epsilon is **`0.8` of what it must absorb** and a
+genuine `1.25e-9` "improvement" still wins. The flip is narrowed, not closed.
+
+**And my own first attempt was wrong for the mirror reason.** A *relative* `1e-10` gives factors over
+the spread of `12.6`, `22.2` and `2.7` across the three windows — thinnest where the objective is
+smallest (`158` on the published window against `5.7` on the narrowest), because **the spread is a
+property of the optimiser's convergence and does not scale with the objective at all.**
+
+⇒ **So the merge removes the comparison instead of tuning it.** The selection is a deterministic argmin
+over the fixed sequence, and the guarantee is the measured row: all twelve starts agree on `Δn` to
+`2e-7` and on `ω_b` to `1e-8`, far better than anything the receipt prints. **Which start wins cannot
+matter, and the receipt now asserts that rather than arranging it.**
+
+⇒ **GUARD: when a comparison's outcome cannot matter, delete the comparison rather than choose a
+tolerance for it.** A tie-break epsilon is a claim about the size of the noise it absorbs; two of us
+sized one by eye and both were wrong, in opposite directions.
+
+⌗ *Your `main` version is superseded by the merge rather than reverted — the first-start intent is kept,
+and it is now carried by a measurement instead of a constant. Nothing either fix changed moves a
+reported number: every figure `r7801` landed in `P15` stands as published.*

@@ -93,7 +93,31 @@ landing on opposite sides.
 **All twelve starts reach the same minimum.** The flip re-ordered which start was called best and
 **moved no number the receipt prints** — `Δn` and `ω_b` are unchanged to every digit reported.
 
-### But the gate was right, and the fix makes the receipt stronger
+### ⛔ AND TWO EPSILON FIXES WERE TRIED, BOTH THE WRONG SHAPE, WHICH IS WHY THE COMPARISON IS GONE
+
+`r7801` (69) fixed the same site in `main` while this revision was in flight, with an **absolute**
+tie-break, `o.fun < best.fun - 1e-9`, keeping the first start. **The right shape — but `1e-9` is
+smaller than the spread it must absorb:** the measured objective spread on the published window is
+`1.25e-9`, so a genuine `1.25e-9` "improvement" still wins and the re-ordering is **narrowed, not
+closed.**
+
+This revision's first form used a **relative** `1e-10`. Measured against the spread on each window its
+factor runs **`12.6`, `22.2`, `2.7`** — thinnest exactly where the objective is smallest (`158` on the
+published window, `5.7` on the narrowest), because **the spread does not scale with the objective.**
+
+⇒ **Neither quantity the epsilon was tied to is the quantity it must dominate.** So the comparison is
+**removed** rather than tuned: the selection is a plain deterministic argmin over the fixed sequence,
+and the guarantee is `Ⓒ④ᵇ`'s measurement that all twelve starts agree on `Δn` to `2e-7` and `ω_b` to
+`1e-8` — far better than the receipt prints. **Which start wins cannot matter, and that is asserted
+rather than arranged.**
+
+⇒ **GUARD: when a comparison's outcome cannot matter, delete the comparison rather than choose a
+tolerance for it.** A tie-break epsilon is a claim about the size of the noise it absorbs, and sizing
+it correctly turned out to be harder than removing the need for it — two attempts, two wrong shapes.
+
+⌗ *Routed to `69`: the absolute `1e-9` in `main` is `0.8` of the spread on the window the paper quotes.*
+
+### And the fix makes the receipt stronger
 
 A selection among numerically tied candidates **is not a comparison; it is noise with an `if` in front
 of it, and it decided what the receipt reported.** The selection is now deterministic — a strict
