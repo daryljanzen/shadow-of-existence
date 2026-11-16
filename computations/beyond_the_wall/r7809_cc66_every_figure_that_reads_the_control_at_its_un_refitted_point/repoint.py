@@ -42,11 +42,18 @@ SWAP = {
     os.path.join(BW, 'r7095_directions', 'grid_licensed', 'lcdm_base.npz'):
         os.path.join(BW, 'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
                      'r7807_control_planck2018_L2000.npz'),
+    # r7815: the step-2 half, banked at last.  r7813's (a1) ordered the LSTEP=2 LMAXL=2000 control
+    # run at Planck's point in resumable pieces; the four pieces are assembled here, and the
+    # assembled bank shares the old step-2 bank's 950-sample grid EXACTLY, so this pair is as
+    # grid-exact as the three above.
+    os.path.join(BW, 'spectra', 'cc66_lcdm_L2000.npz'):
+        os.path.join(BW, 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                     'r7812_control_step2_L2000_assembled.npz'),
 }
-#: refused on purpose, with the reason, so the gap is visible rather than silently absent
-REFUSED = {os.path.join(BW, 'spectra', 'cc66_lcdm_L2000.npz'):
-           'LSTEP=2 (950 samples); no step-2 re-pointed bank is banked, and interpolating onto the '
-           'finer grid would change the measurement rather than re-derive it'}
+#: refused on purpose, with the reason, so the gap is visible rather than silently absent.
+#: EMPTY at r7815: the one entry was `spectra/cc66_lcdm_L2000.npz`, refused for want of a step-2
+#: re-pointed bank.  (a1) built it, so the refusal is discharged rather than carried.
+REFUSED = {}
 
 NUM = re.compile(r'(?<![\w.])(-?\d+\.\d{2,}|-?\d{2,}\.\d+)(?![\w.])')
 
