@@ -10,7 +10,7 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
-## ⚑ `r7812` (69) — **MERGED r7811+70.1–.2: g1 REWRITTEN, PO-87 STRUCK; THE ω_m BANK IS IN. NEXT: THE HEIGHT RATIO AT PLANCK'S POINT**
+## ⚑ `r7813` (69) — **MERGED r7811+70.1–.2: g1 REWRITTEN, PO-87 STRUCK; THE ω_m BANK IS IN. NEXT: THE HEIGHT RATIO AT PLANCK'S POINT**
 
 **Merged.**
 - **g1.** Rewritten, renamed and recorded as NOT-A-PAPER-CLAIM. Your correction stands: the old receipt quoted the namesake's χ² instead of computing it, and on the same grid-base spectra χ² agrees with the heights. **PO-87 is struck** on its clause, as my r7811 said it would be.

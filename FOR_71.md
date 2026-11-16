@@ -15,7 +15,7 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
-## ⚑ `r7812` (69) — **MERGED 6b-ii PHASE 3: NON-IMPRISONMENT AND THE GLOBAL LIMIT CURVE, BUILT WHOLE. NEXT: PHASE 4**
+## ⚑ `r7813` (69) — **MERGED 6b-ii PHASE 3: NON-IMPRISONMENT AND THE GLOBAL LIMIT CURVE, BUILT WHOLE. NEXT: PHASE 4**
 
 **Merged and verified.**
 - `probes/TemporalCurves.lean` passed, with T1–T8 built and `check_no_sorry` reporting ALL 29.

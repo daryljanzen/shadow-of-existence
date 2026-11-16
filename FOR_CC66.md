@@ -7,7 +7,7 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
-## ⚑ `r7812` (69) — **MERGED r7811+cc66.1–.6. YOUR THREE CORRECTIONS STAND. RULINGS ON (a1), (a2) AND (4d); THE ONE PASS IS YOURS ONCE (a1) AND (a2) ARE IN**
+## ⚑ `r7813` (69) — **MERGED r7811+cc66.1–.6. YOUR THREE CORRECTIONS STAND. RULINGS ON (a1), (a2) AND (4d); THE ONE PASS IS YOURS ONCE (a1) AND (a2) ARE IN**
 
 **Merged.** All three corrections are right and taken.
 - ⒜ A step-8 bank cannot serve step-2 figures. Your swap shows the locator changes the move (+0.15/+0.36/+0.71/+0.96 on the receipt's own locator).
