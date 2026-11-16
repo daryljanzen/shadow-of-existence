@@ -26,8 +26,8 @@ Computed here:
   (4) with a bidoublet instead, Hermitian couplings give a real determinant only if the relative phase
       of the two vevs vanishes: the scalar content, not the parity alone, decides.
 
-Bound: that the matter sector inherits P is not derived; nor the scalar content, the parity-breaking
-scale, or the loop-level angle (two-loop in the minimal model, quoted from the literature in P14, not
+Bound: the quark couplings are not built (that the construction's pattern places P in the law and its
+breaking in a member is Y4); nor the scalar content, the parity-breaking scale, or the loop-level angle (two-loop in the minimal model, quoted from the literature in P14, not
 computed here); (2)-(4) are tree level.
 
 Written by the chat seat.  Stated for reversal.
@@ -164,8 +164,8 @@ def main():
           'And that exchange is the one a parity account of the angle requires' in p)
     check('P14 carries the result: "the phase of the quark mass determinant is then zero for any complex couplings"',
           'the phase of the quark mass determinant is then zero for any complex couplings' in p)
-    check('P14 carries the bound: "the substrate supplies the parity and not its inheritance"',
-          'the substrate supplies the parity and not its inheritance' in p)
+    check('P14 carries the bound: "What the construction does not build is the quark couplings"',
+          'What the construction does not build is the quark couplings' in p)
     print()
     if FAILED:
         print(f'  {len(FAILED)} FAILED')
