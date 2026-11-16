@@ -1,0 +1,33 @@
+====================================================================================================
+  r7809/r7811 ② -- WHAT MOVES WHEN THE CONTROL IS RE-POINTED (measured by swap)
+====================================================================================================
+  3 swap pair(s), every one grid-identical (asserted, not assumed)
+  REFUSED: computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz
+      LSTEP=2 (950 samples); no step-2 re-pointed bank is banked, and interpolating onto the finer grid would change the measurement rather than re-derive it
+
+====================================================================================================
+  P15_on_the_arm_of_record_the_peak_heights_and_chi2_both_put_the_licensed_build_nearer_the_control_than_the_forbidden_one_at_the_grid_bases
+====================================================================================================
+  as the tree stands: rc=0, 143 number(s) on 55 distinct line shape(s)
+  control re-pointed: rc=1, 146 number(s) on 55 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 50;  numbers on them: 132 (117 unchanged, 15 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 5  (these are the red run's own diagnostics, not figures that moved)
+             301.375 -> 301.602         delta +0.227   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            0.729988 -> 0.729438        delta -0.00055   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            2.195930 -> 2.194568        delta -0.001362   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            2.189782 -> 2.194183        delta +0.004401   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+              2.2028 -> 2.2018          delta -0.001   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              2.2263 -> 2.2305          delta +0.0042   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              0.5853 -> 0.5515          delta -0.0338   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+               0.765 -> 0.743           delta -0.022   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              0.7496 -> 0.6661          delta -0.0835   banked  chi2 =  <#>
+              0.7496 -> 0.6661          delta -0.0835   licensed  chi2 =  <#>
+              3.4392 -> 3.4836          delta +0.0444   forbidden  chi2 =  <#>
+                0.75 -> 0.67            delta -0.08   at <#> on two degrees of freedom, and the FORBIDDEN one's are <#> away. **
+                3.44 -> 3.48            delta +0.04   at <#> on two degrees of freedom, and the FORBIDDEN one's are <#> away. **
+               1.801 -> 1.784           delta -0.017   same contrast is <#> sigma (forbidden) against <#> sigma (licensed) on
+               0.782 -> 0.765           delta -0.017   same contrast is <#> sigma (forbidden) against <#> sigma (licensed) on
+
+====================================================================================================
+  P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it
+====================================================================================================
