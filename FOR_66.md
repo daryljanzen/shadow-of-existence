@@ -15,6 +15,153 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7807+cc66.5 — **THE RED ON MY OWN HEAD WAS MY OWN CENSUS TRIPWIRE, FIRED BY MY OWN BANK; IT IS READ AND REPAIRED, AND THE OTHER CARRIED RED IS YOURS AND ALREADY GREEN**
+
+No order is open. This is the drive-to-green on `r7807`'s PR, and it is worth a section because the
+coupling that reddened is one the scoper **cannot** see.
+
+⛔ **THE RED WAS MINE, AND IT WAS MY `r7783` RECEIPT.** `r7807`'s control run banks a `POLSAVE`
+polarisation spectrum. My own `r7783` receipt's gate ① censuses every `.npz` under `computations/`
+and pinned the polarisation population at **FOUR**, with its own guard stating that *a fifth bank
+reddens this and means no run was needed*. Mine is the fifth. So the gate went red on a push that
+changed **nothing it measures** — and it was right to, because that is what a tripwire is for.
+
+**I have now read it, which is the whole point of a tripwire, and the conclusion stands:** my bank is
+`ARM=lcdm` at Planck's published point, its `config` records `LEAFGEOM` **false**, and it was banked
+**after** `r7783` ran. It is not a one-rate arm and could not have served the fourth feature.
+
+**THE REPAIR ASSERTS WHAT ACTUALLY ESTABLISHES THE CLAIM**, which was never the count: that **no**
+polarisation bank anywhere under `computations/` is a `LEAFGEOM=1` arm. `r7783`'s own four are pinned
+**by name**, so one going missing or renamed still reddens; a bank banked **later** reddens only when
+it *is* a one-rate arm — the condition that would really mean no run was needed — and is **named in
+the row either way**, so an arrival is read and never absorbed. ⛔ *Pinned as a **SET**, not a count:
+a second copy of one of the four in another seat's `rebuilt/` directory would otherwise read as a
+fifth arrival — the basename trap this seat walked into at `r7805` and had to correct at `r7807`.*
+
+**Falsifiability measured, three probes, not assumed:** a planted `LEAFGEOM=1` polarisation bank
+reddens ① and names itself; one of the four removed where no path guard covers it reddens ① as
+*"3 of r7783's own four"*; the one the `FATAL` path guard does cover exits `rc=1` naming the file.
+
+⛔ **AND A CORRECTION TO THAT `INDEX` ROW ITSELF, WHICH IS ALSO MINE.** The row claimed *"every figure
+pinned BY A COMPARISON IN THE RECEIPT, **twenty-two** of them"* where the receipt measures and asserts
+**28**. Stale since the pin list was extended, and wrong in the direction that understates the gate.
+Corrected to twenty-eight.
+
+⛭ **THE FINDING, AND IT IS A ROUTING QUESTION FOR YOU.** The scoper links a **changed path** to the
+receipts that read it. A receipt that globs `computations/**/*.npz` is coupled to **every future
+bank** by nothing the scoper can see — no path, no filename, no import. So this gate was not run by
+the push that broke it; it surfaced **two pushes later**, and only through `refs/ci/carry`. Exactly
+the class the standing note warns of, and the second instance in this round after the
+`instrument_blob` ASTs. **Two such censuses exist in the tree** — this one and
+`P15_the_phase_slope_does_not_separate_the_loading_from_the_driving...`, which I ran and which is
+green. Whether a census receipt should be scheduled on **any** `.npz` addition is your call; I have
+not touched the scoper.
+
+⌗ **THE OTHER CARRIED RED IS NOT MINE AND NEEDS NOTHING.** `L_probability/S11...` carried red from
+`6ea3358c8`'s range. Your own `r7807` fix on `main` — `6a5874ac7`, S11 counting its 400 commits back
+from the commit that last repaired the arm rather than from `HEAD` — is merged into this branch, and
+S11 runs **rc=0** here. It leaves the carry on this push without my touching it.
+
+⌗ **AND `cc66.4` DID LAND.** The two `instrument_blob` reds my `POLSAVE` change caused are gone: the
+comb receipt and the 1p57 receipt both **left** the tolerance carry (`+0 −2 =2` on `0379aee5ac`).
+
+⌗ **AN OBSERVATION ON THE RUNNER, REPORTED AND NOT DIAGNOSED.** On `0379aee5ac` both scoped jobs
+**wrote their carry commit and then hung in the `record` step until cancelled** — `suite +0 −2 =2`
+and `tolerance +0 −2 =2` are on `refs/ci/carry`, while the jobs read as `cancelled` / `in_progress`.
+So the run's own conclusion said nothing about whether the head was clear, and the carry was the only
+honest source for it. I read the verdict there rather than from the job state. **And the material
+decides the remedy, so I state it rather than park it:** the `scope` step already carries an explicit
+`timeout 600` and `record` carries none, while the carry is written *before* the hang — so bounding
+`record` the same way costs nothing and stops a verdict that WAS recorded from reading as a cancelled
+job. `gates.yml` is yours to edit and I have not touched it; that is the recommendation, not a
+question back.
+
+**Verified before pushing:** the receipt **8 of 8, rc=0**; the phase-slope census receipt rc=0;
+appendices regenerated **additively** (exactly 1 line changed in each of the two that carry the row,
+0 rows added or lost, 1170 both sides); `check_appendix_current` **PASS** on both rails;
+`check_figures_pinned` back at baseline **1449**; `P15` recompiled **352 pages, 0 errors**.
+
+## r7807+cc66 — **THE CONTROL AT PLANCK'S OWN POINT TURNS THE `0.918` INTO `0.964`; AND PO-87's 23 ARE 14 REPOINTS AND 9 DEPARTURES, SO THE CLAUSE IS NOT STRUCK**
+
+**All three items** (③ needed nothing — ruled at r7797). Registered first (`r7807+cc66.0`).
+Receipt `P15_the_po87_list_is_14_repoints_and_9_departures_...` — **11 gates, 0 fail**. Appendices
+regenerated, P15 recompiled (350 → 352 pages, 0 errors), INDEX row added, `check_figures_pinned`
+back at baseline 1449.
+
+### ② The run, not a stencil
+
+`ARM=lcdm LH0=67.36 LOM=0.313773 WBH2=0.02237 NS=0.9649 LMAXL=2000`, 2547 modes, rc=0, peaks
+`[220, 540, 812, 1132]`. **Both banks carry a `config`** — the TT one and the `POLSAVE` one, which is
+why I gave `POLSAVE` its `config` *before* the run rather than after.
+
+⛔ **Your conditional is answered: the instrument carries NO neutrino mass.** A massless
+free-streaming hierarchy (`LN`, `FNU`, `DNEFF`) and no `mnu` anywhere, while Planck's published fit
+assumes Σm_ν = 0.06 eV. **So this is Planck's POINT in this instrument, not Planck's MODEL**, and the
+receipt says so rather than leaving a reader to find it. Asserted against the instrument's own source.
+
+| quantity | moves |
+|---|---|
+| control's no-fit χ², 185 lensed bins | **214.057 → 203.823, improving 4.781 %** |
+| **the published `0.918`** | **→ `0.964`** |
+| the arm's margin over the control | **8.2 % → 3.6 %, less than half the claim** |
+| control's peaks 1–4 | +0.1195, +0.3502, +0.6620, **+0.9198** multipoles |
+| the refitted `1.002` | **unmoved** (measured 1.0018) |
+
+**The refitted `1.002` cannot move, and I can show it structurally rather than by agreeing numbers:**
+it is `lf_rf / ctl_rf`, read from the two **refit** verifies, while the un-refitted bank is read only
+for the no-fit ratio. The figure never touches what is being re-pointed. *An agreement of numbers
+could be luck; this cannot be.*
+
+⌗ **And r7805's stencil is vindicated inside its registered bound:** 0.9571 holding `H₀` fixed
+against the run's 0.9641 — a difference of **0.0070** against the **0.01** I registered. It reached
+a point it never evaluated. (It used `Ωm = 0.313400` for h = 0.674; the instrument's own h = 0.6736
+gives 0.313773, and the real re-pointing moves `H₀` and `n_s` too.)
+
+### ① The 23, read by hand: **14 repoints, 9 departures**
+
+The method is r7635's `RECIPES.md`, authoritative where my own tracer was not — *the `LEAFREC`
+default moved* (1 since cc66.75, omitted from the old recipes, so they ran at 0) and *none of the 36
+namesakes carries a `config`*.
+
+* **the 7 candidates: all off the leaf rate, all with a banked `_leafrec1` twin** → 7 repoints;
+* **the 16 split 6 / 3 / 7**: 6 read no arm grid at all (they leave), 3 read a `_leafrec1` grid **and**
+  a namesake one — a deliberate comparison, not a defect (they leave), and 7 read a namesake grid
+  whose twin directory exists (7 more repoints).
+
+⇒ **PO-87 is not struck. The remaining work is 14 repoints and not a single new run.**
+
+### ⛔ A correction to my own r7805 result, which you have already merged
+
+That round reported the census's `cheap` count as **0** and let it stand as *no item is repointable
+end to end*. `cheap` is the **conjunction** of two tests — every namesake path has a twin **and** no
+load site is undecidable — and it is computed on **basenames**, so a second copy of a bank in another
+seat's `rebuilt/` directory, with no twin beside it, makes a repointable item read as
+un-repointable. **The count was right for what `cheap` means and wrong as an answer to whether these
+can be repointed: 14 of them can.** I should have said which question the count answered.
+
+### Predictions: 8 of 10 held, 2 failed
+
+⛔ **①a FALSIFIED** — at least 11 of the 16 were to leave; **9** do. ⛔ **①b FALSIFIED** — at least 2
+of the 7 were to leave; **none** does, all 7 being off the leaf rate. ✅ Held: ①c (it is not struck),
+①d (no namesake carries a config), ②a, ②b, ②c, ②d, ②e, ③. Both failures are in the gate text.
+
+### Two things worth the corpus's time
+
+* ⛭ **The banked `config` records the form switches and NOT the background point.** No `LH0`, `LOM`,
+  `WBH2` or `NS` in it. So a `config` settles exactly the question PO-87 asks (which rate) and
+  **cannot** say which background a bank ran at. The receipt asserts that rather than assuming it,
+  and reads the point from the launcher's own table instead. **If you want banks to be self-describing
+  for the point too, that is a second field to add** — your call, not taken here.
+* **Eight save sites still write no `config`** (`ZPSSAVE`, `SRCSAVE`, `SRCESAVE`, `SRCDSAVE`,
+  `SRCFIELD`, `DLKSAVE`, the visibility save, `PHISAVE`). They are diagnostics rather than
+  figure-bearing spectra, so I reported rather than changed them; `POLSAVE` was the one you named.
+
+### Still with you
+
+* **Which figures P15 should carry now** — the `0.964`, the moved peaks, and the fourth-feature
+  differences. Nothing is re-pointed here and no sentence is edited.
+* **The frozen depths** — still my call with 70, still untaken.
+
 ## r7805+cc66 — **PO-87's LIST GREW TO 33 AND NONE OF IT IS EVIDENCE; THE CLAUSE CANNOT BE DISCHARGED AS WRITTEN; AND RE-POINTING THE CONTROL COSTS THE ARM HALF ITS MARGIN**
 
 **Both items, registered first** (`r7805+cc66.0`, pushed before a line of the computation existed).

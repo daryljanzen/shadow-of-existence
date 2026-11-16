@@ -1796,8 +1796,17 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
               f"{_cl:.3e} relative -> {_SRCD}")
     if _POLS:
         _pt = sum(_POLS_B) * (ls * (ls + 1))[:, None]
+        # ⛭ `config` ADDED r7807+cc66, at 69's order: POLSAVE wrote none, and r7805+cc66 measured
+        #   that a bank without one cannot be told from an off-leaf-rate bank by anything but its
+        #   FILENAME -- which is what put 16 of PO-87's items in the undecidable class.  The three
+        #   `SAVE` sites and `DSAVE` already carry it; this is the polarisation bank's.
+        #   ⌗ EIGHT OTHER SAVE SITES STILL WRITE NONE (`ZPSSAVE`, `SRCSAVE`, `SRCESAVE`, `SRCDSAVE`,
+        #   `SRCFIELD`, `DLKSAVE`, the visibility save and `PHISAVE`).  Those are diagnostics rather
+        #   than spectra receipts load for figures, so they are REPORTED to 69 rather than changed
+        #   here: the order named POLSAVE.
         np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1), Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1], arm=ARM, r_s=R_S,
-                 D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk))
+                 D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk),
+                 config=_resolved_config())
         print(f"  POLSAVE: TT, EE and TE on {len(ls)} multipoles -> {_POLS}")
     if _SFLD:
         # ** SRCFIELD (r7729+70): the batches CONCATENATED along k, as `DLKSAVE`'s are; one eta grid. **
