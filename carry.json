@@ -3319,22 +3319,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py": {
-    "gates": [
-     "\u26d4 AND \"stress tensor\" as QFT in curved s"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43915543436",
-    "since": "a989cc5f1e6895f18909996b074dfc8afd3940f5"
-   },
-   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
-    "gates": [
-     "\u24bc\u2464"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43936781949",
-    "since": "d88397028337423918317b80a1dcdee3053a5f85"
-   }
-  },
   "tolerance": {
    "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43936325358",
