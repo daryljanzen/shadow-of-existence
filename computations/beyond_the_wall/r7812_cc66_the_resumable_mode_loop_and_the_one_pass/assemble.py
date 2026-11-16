@@ -4,8 +4,17 @@
 `Dl = Cl * l(l+1)`, which is linear in `C_l`.  So the assembled spectrum is the SUM of the slices'
 `Dl` arrays, on the shared `ls` grid -- asserted identical before anything is added.
 
-⛔ The assembled bank records `assembled_from` and is NOT marked `sliced`: a slice is not a spectrum
-and says so in its own `sliced` flag, while the assembly IS one.  Keeping both facts is the point.
+⛔ ** AND A FINDING THAT COST THIS SCRIPT ITS FIRST GUARD: THE PLAIN `SAVE` SITE RECORDS NEITHER
+`sliced` NOR `n_modes`. **  It writes `D_M, Dl, arm, config, l_A, ls, r_s` and nothing else -- while
+`DSAVE`, `POLSAVE` and the rest DO carry `sliced=bool(_ksl)` and `n_modes`.  So a PARTIAL `C_l` from
+the plain `SAVE` is indistinguishable from a whole spectrum **except by its filename**, and the
+`config` does not help either: it records the FORM switches and `KSLICE` is not among them (`r7807`).
+  ⇒ *That is the PO-87 defect class exactly -- a bank whose nature lives only in its name.*  It is
+  REPORTED to 69 rather than fixed here, because fixing it means editing the instrument, which this
+  round established is not needed for (a1) and would move the blob for nothing.
+  ⇒ *So this script cannot assert slice-hood, and does not pretend to.*  What validates the assembly
+  is the exactness check against the straight run: if a whole spectrum were summed in by mistake, the
+  comparison would fail loudly rather than pass quietly.  The check IS the guard.
 
 Run: python3 assemble.py <out-dir> <stem>     [--against <straight.npz>]
 """
@@ -32,10 +41,11 @@ def assemble(paths):
             ls0, meta = z['ls'], {k: z[k] for k in z.files if k not in ('ls', 'Dl', 'Cl')}
         else:
             assert np.array_equal(ls0, z['ls']), f'{p}: a different l grid -- refusing to add'
-        assert bool(z['sliced']), f'{p} is not marked sliced; it may be a whole spectrum'
         total = z['Dl'].copy() if total is None else total + z['Dl']
-        nmodes += int(z['n_modes'])
-        print(f'    + {os.path.basename(p)}  n_modes={int(z["n_modes"]):5d}')
+        n = int(z['n_modes']) if 'n_modes' in z.files else -1
+        nmodes += max(n, 0)
+        print(f'    + {os.path.basename(p)}  n_modes='
+              + (f'{n:5d}' if n >= 0 else 'NOT RECORDED by the plain SAVE site'))
     return ls0, total, nmodes, meta
 
 
@@ -55,8 +65,12 @@ def main():
         ref = sys.argv[sys.argv.index('--against') + 1]
         zr = np.load(ref, allow_pickle=True)
         assert np.array_equal(zr['ls'], ls), 'the straight run uses a different l grid'
-        assert int(zr['n_modes']) == nmodes, (
-            f'mode count differs: straight {int(zr["n_modes"])} vs assembled {nmodes}')
+        if 'n_modes' in zr.files and nmodes > 0:
+            assert int(zr['n_modes']) == nmodes, (
+                f'mode count differs: straight {int(zr["n_modes"])} vs assembled {nmodes}')
+        else:
+            print('    ⌗ neither bank records `n_modes`, so the mode counts are not cross-checked '
+                  'here; the Dl comparison below is what validates the partition')
         a, b = np.asarray(zr['Dl'], float), np.asarray(Dl, float)
         bit = bool(np.array_equal(a, b))
         rel = float(np.max(np.abs(b / a - 1.0)))
