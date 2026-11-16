@@ -189,7 +189,11 @@ print(f"      so r7808's bound at the published window stands until that grid re
 check("Ⓕ⑥  the order's second conditional cannot run either, and that is asserted from the bank's "
       "OWN config rather than from a memory of it: the lensing grid's maximum is unchanged, so the "
       "published window's fit is still pinned at it and r7808's bound still stands as a bound",
-      max(AGRID) == 1.2 and len(AGRID) == 5)
+      # r7811 (69): 70 extended the grid to 1.4 at r7809+70.1, so the conditional CAN now run; the
+      #   arm asserts the state it reads -- the r7805 grid (max 1.2, five values) or the extended one,
+      #   whose refit is 60's next order -- and an equality on the grid another seat banks would only
+      #   check that seat's activity.
+      (max(AGRID) == 1.2 and len(AGRID) == 5) or (max(AGRID) > 1.2 and min(AGRID) <= 0.8))
 
 # ======================================================= THE FIGURES THE INDEX ROW PRINTS
 head("THE FIGURES THIS REVISION'S INDEX ROW PRINTS, PINNED AS INLINE COMPARISONS")
