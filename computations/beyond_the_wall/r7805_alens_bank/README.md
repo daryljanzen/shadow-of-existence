@@ -25,3 +25,7 @@
 - **The response is a few parts in a thousand.** It oscillates with the peaks, because lensing fills the troughs and lowers the peaks, and it changes sign near ℓ ≈ 1600 as the tail gains power.
 - **For comparison, at the same ℓ:** N_eff's response is ±7–9% and Y_He's ±5%.
 - Whether it overlaps the signature's residual is 60's screen.
+
+## Extended at `r7809` ②: A_L = 1.3 and 1.4
+
+A cheap re-run of `build.py`, the same operator with nothing else changed. The checks are unchanged: identity 0.0, operator against CAMB 3.8e-4. **A_L 1.4 / 1.0:** 0.9996 at ℓ≈200, 0.9940 at 800, 0.9927 at 1400, 1.0036 at 1700, 1.0086 at 1990. The bank now spans A_L 0.8 to 1.4, so 60's published-window bound can be a fit.
