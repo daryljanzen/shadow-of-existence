@@ -15,6 +15,107 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7805+cc66 — **PO-87's LIST GREW TO 33 AND NONE OF IT IS EVIDENCE; THE CLAUSE CANNOT BE DISCHARGED AS WRITTEN; AND RE-POINTING THE CONTROL COSTS THE ARM HALF ITS MARGIN**
+
+**Both items, registered first** (`r7805+cc66.0`, pushed before a line of the computation existed).
+Receipt `P15_po87s_list_grew_to_33_...` — **11 gates, 0 fail**; failability **4 probes, all bite**.
+Appendices regenerated, P15 recompiled (349 → 350 pages, 0 errors), INDEX row added.
+
+⛔ **Your count is stale, and I corrected it before measuring.** You say `LIST.md` has "the 48
+items". It has **30**. The census's own header records cut 5 taking it 48 → 30, and `r7675`'s split
+into 26 derived + 4 declared. `48` is the pre-cut-5 figure. Everything below is against 30.
+
+### ① The census on today's tree: **33**, up from 30 — and not one arrival is a new defect
+
+Re-run **unmodified**: **29 derived + 4 declared = 33**, reddening on its own pins. By set
+comparison, **2 left and 5 joined**.
+
+* The departure is `the_low_multipole_depth_gap` — exactly the repoint `r7677` item 3 ordered once
+  70 banked the sibling. That instrument did the job it was written for.
+* **The five arrivals:** three read **no namesake at all** (on the list only because every load site
+  is undecidable); one reads the **control's own bank, and only for its `arm` key** — a provenance
+  check I added deliberately, with no printed figure resting on it; and one reads
+  `r7749_leafgeom_refit_verify_cr.npz`, whose **own config says `LEAFGEOM: true, LEAFREC: true,
+  LEAFSCALES: true`** and whose manifest reads *"the projection distance on the leaf rate, radiation
+  included"*. ⛔ **The one-rate build is being counted as a spectrum off the leaf rate**, because the
+  classifier's suffix test looks for `_leafrec1` and the corpus's newer banks are named
+  descriptively. **Three of the five arrivals are my own receipts** from r7797, r7801 and r7803.
+
+**The classification you asked for:** **7 stand as candidates · 5 are NOT DEFECTS · 1 re-derived ·
+16 undecidable without a read** (= 29). The 7 and their sentences are listed whole in `RESULT.md`.
+
+### ⛔ Your actual question — can PO-87 be struck? Not today, and **not ever as the clause is written**
+
+7 stand, so not today. But five items read **nothing but the control's own spectra**, and **a ΛCDM
+control has no leaf rate** — there is no such object. So a control spectrum is "off the leaf rate" by
+construction, and *every receipt that compares the arm against the control must read one*. Your
+clause, "every P15 figure resting on a spectrum off the leaf rate", therefore catches **every control
+comparison in the paper, for ever**. ⇒ **It needs the control excluded from its scope, or it can
+never be struck.** That is a wording decision and it is yours, not a measurement.
+
+⌗ The 7 are **candidates, not proven**: their arm-side banks record **no `config` key at all**, so
+the bank cannot say whether they are on the leaf rate — only that I cannot clear them. Same reason 16
+are undecidable. That is a measured property of the older banks, not a limit of effort.
+
+### ② Re-pointing the control is **not cosmetic** — it costs the arm half of a headline
+
+`ω_c = 0.1200` at the same `H₀`/`ω_b` means `Ωm = 0.313400`, so `ΔΩm = −0.001600` — **a tenth of the
+refit grid's own step**. Inside the ±1 stencil, so priced from the grid's banked two-sided steps
+rather than by running a spectrum, with the refit receipts' own scoring.
+
+| quantity | moves |
+|---|---|
+| control's no-fit χ², 185 lensed bins | **−4.090 %** (relative factor 0.959103) |
+| **the published `0.918`** | **→ 0.957** — the printed third decimal moves |
+| the arm's margin over the control | **8.2 % → 4.3 %, about half the claim** |
+| control's peaks 1–4 | +0.118, +0.363, +0.695, **+0.966** multipoles |
+| refitted comparisons | **unmoved** |
+
+**The fourth-peak move alone exceeds every fourth-feature difference the paper prints** (0.00, 0.18,
+0.21). Refitted comparisons don't move because the control's own refit minimum at `Ωm = 0.309826`
+already sits **3.2×** the re-pointing's distance away, and a minimum found by search does not follow
+its start.
+
+⇒ **Re-pointing improves the control and costs the arm half of `sec:refit-bound`'s comparison.**
+Whether to take it is your ruling. **Nothing is re-pointed here and no sentence is edited.**
+
+⌗ *One honest limit: I priced the control's peak-4 position, which is the right order of magnitude
+but not the same statistic as the fourth-feature displacement. That needs the locator re-run on a
+re-pointed control, which is your call.*
+
+### Predictions, scored honestly — **three of eight failed**
+
+* ⛔ **①a FALSIFIED**: I registered the derived set at 20–28; it is **29**. I reasoned that
+  re-grounding cannot move items and **forgot that new receipts join** — three of the arrivals are
+  my own. That is the substantive miss, not a tolerance.
+* ⛔ **①e FALSIFIED**: cheap set registered ≥ 2, measured **0** — the second cheap item left by being
+  repointed, which I should have seen.
+* ⛔ **②c FALSIFIED badly**: I put un-refitted peak figures inside their printed last digit; peak 4
+  moves 0.966 and the 0.918's third decimal moves. I had registered it as the one I held least
+  firmly, for the right reason (ω_c sets the matter–radiation ratio the driving depends on).
+* ✅ Held: ①b, ①c, ①d, ②a, ②b, ③ (the two items' lists are disjoint).
+
+All three failures are in the receipt's own gate text (gates 7 and 10), not only in `RESULT.md`.
+
+### One thing worth the corpus's time
+
+**Gates ⑨ and ⑩ originally trusted a subprocess's stdout**, so the receipt's own constants could
+drift from the instrument's and both gates would still pass — failability probe 1 found exactly that
+by mutating `WC_PLANCK` and watching them stay green. They now parse the instrument's reported point
+and assert it is the point the receipt names. **A gate that reads another program's output has to
+check that program was asked the question this one is answering.** ⌗ And I re-introduced the
+data-structure-pin defect r7803 had already taught me: 10 figures read as unpinned because my pins
+sat as *strings in a table* rather than as literals in comparisons. `check_figures_pinned` caught it;
+the table form reads naturally and pins nothing.
+
+### Still with you
+
+* The comb receipt's filename rename (it moves an `\rcpt{}` key the paper cites).
+* `ACOUSTIC`'s `POLSAVE` writing no `config`. ⌗ **This round gives that one teeth:** the 7 standing
+  items and the 16 undecidable ones are undecidable *because their banks carry no `config`*. A
+  `config` on every bank would collapse most of PO-87's list to a mechanical read.
+* **The frozen depths** — still my call with 70, still untaken; nothing banked.
+
 ## r7803+cc66 — θ\* of the ΛCDM control at both points: **your first branch, and it is an identity**
 
 **Order r7803, your single item, discharged.** Registered first, in its own commit pushed before a
