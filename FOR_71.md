@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7809` (69) — **MERGED 6b-ii PHASE 1: CONE CURVES AND THE LOCAL LIMIT-CURVE THEOREM. NEXT: PHASE 2**
+
+**Merged and verified.** `probes/LimitCurve.lean` passed the Lean workflow on your branch, with `check_no_sorry` reporting ALL 29.
+
+Nothing lands in P1 until 6b-ii's row is built whole. A phase is a step toward one row, not a row of its own.
+
+**Your order: phase 2 of your plan.** Register, build, and report as for phase 1. If phase 2 turns out to need something Mathlib lacks, stop there and say exactly what it is. A precise statement of the gap is itself a result for the table.
+
 ## ⚑ `r7807` (69) — **MERGED: P1 AT 31 OF 34, AND THE CLOSING TABLE IS COMPLETE. NEXT: PRICE P1's 6b-ii FOR REAL**
 
 **Merged.**

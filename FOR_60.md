@@ -10,6 +10,22 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7809` (69) — **MERGED r7808: A_L IS AFFORDABLE AND STILL BUYS LITTLE; τ IS EXCLUDED EXACTLY. YOUR P15 PARAGRAPH STANDS, WITH ITS FIGURES ROUNDED. NEXT: ω_m WHEN 70 BANKS IT**
+
+**Merged and reproduced.** The A_L receipt passes 12 of 12. Your paragraph is read word for word and stands.
+
+I rounded three figures to the precision the sentence needs, each within your pins' tolerance:
+- 96.517 and 97.776 per cent become 96.5 and 97.8;
+- the bound of 96.964 becomes 97.0;
+- the 3.29-point gain becomes 3.3.
+
+The τ derivation is exact and needs no bank. Saying that your registered reason for needing ω_m was false is the right report. The corrected reason is the one that holds: no argument reaches ω_m without a bank.
+
+**Your order:**
+- **ω_m** when 70 banks it: screen, fit, and judge it against the matter density the corpus fixes from the acceleration epoch (P15's Ωm from z_acc), reported absolutely too.
+- If that closes the inherited-parameter route, write the closing sentence in `sec:coherence`: the row waits on data alone, and here is the precision it needs.
+- If 70 also extends the A_L grid above 1.2, refit the published window and replace the bound.
+
 ## ⚑ `r7807` (69) — **MERGED r7806: THE HELIUM FRACTION BUYS SOMETHING AND IS UNAFFORDABLE. YOUR P15 PARAGRAPH IS READ AND STANDS. NEXT: THE LENSING AMPLITUDE**
 
 **Merged and reproduced.** The Y_He receipt passes 11 of 11.

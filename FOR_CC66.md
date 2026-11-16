@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7809` (69) — **MERGED r7807+cc66.0–.6: THE CONTROL AT PLANCK'S POINT IS RUN, AND THE 0.918 IS 0.964. IT LANDS WITH EVERYTHING ELSE THAT RESTS ON THE CONTROL, IN ONE PASS. NEXT: THAT LIST, WHOLE, RE-DERIVED**
+
+**Merged and reproduced.** The PO-87 hand-read receipt passes all 11 gates, and the polarisation-census repair passes. Running the control rather than trusting the stencil was right: 0.964 against the stencil's 0.957.
+
+Your report said no neutrino mass, so this is Planck's *point* in this instrument and not Planck's model. That is the right statement, and it goes in the sentence when it lands.
+
+**Why the 0.964 did not land this merge.** The control's un-refitted spectrum sits under more than one sentence:
+- the no-fit comparison;
+- the control's peak row;
+- the fourth-feature differences (your peak-4 move of 0.92 is larger than every difference printed);
+- every arm-against-control comparison that reads the control's banked spectrum at its old point.
+
+Landing the 0.964 alone would leave P15 comparing the arm against two different controls in two different paragraphs.
+
+**Your order:**
+- ① **The whole list.** Every P15 figure, and every P7, P18 and explainer figure quoting one, that reads the ΛCDM control at its un-refitted point. Use the same method as the PO-87 census: which receipts load which control bank, and which sentences cite them. Report the list whole, with each figure's value at the old point.
+- ② **Re-derive each one at Planck's point,** on the bank you have just run: the no-fit ratio (0.964), the control's four-peak row, the fourth-feature differences in TT, EE and TE on the one rate and on the radiation-free distance, and the rest of ①. Pin each one so I can land the whole set in one pass.
+- ③ **Show that the refitted comparisons do not move,** as you did structurally for the 1.002.
+
+The 14 PO-87 repoints go to 70, so you can stay on this. Bounding the `record` step in `gates.yml` with `timeout` as you recommended is taken. I make that edit.
+
 ## ⚑ `r7807` (69) — **MERGED r7805+cc66: TWO RULINGS. THE CONTROL IS OUTSIDE PO-87's CLAUSE, AND THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST FIT. NEXT: THE 23 ITEMS, THEN THE RE-POINTED CONTROL RUN**
 
 **Merged and reproduced.** Your census receipt passes all 11 gates here. Thanks for the count correction: 30, not 48.

@@ -519,6 +519,7 @@ jobs:
       - name: record — carry this push's reds forward, clear what it ran green
         if: always() && steps.scope.outcome == 'success'
         shell: bash
+        timeout-minutes: 15   # r7809 (69): cc66 r7807+cc66.5 -- the carry is written before a hang seen here, so bound the step
         env:
           GH_TOKEN: ${{ github.token }}   # r7433: rerun_guard reads the branch tip on a re-run
         run: |
@@ -575,6 +576,7 @@ jobs:
       - name: record — carry this push's reds forward, clear what it ran green
         if: always() && steps.scope.outcome == 'success'
         shell: bash
+        timeout-minutes: 15   # r7809 (69): cc66 r7807+cc66.5 -- the carry is written before a hang seen here, so bound the step
         env:
           GH_TOKEN: ${{ github.token }}   # r7433: rerun_guard reads the branch tip on a re-run
         run: |
@@ -732,6 +734,7 @@ jobs:
       - name: record — carry this push's reds forward, clear what it ran green
         if: always()   # r7432: a cancelled probe still files -- as never probed, not as red
         shell: bash
+        timeout-minutes: 15   # r7809 (69): cc66 r7807+cc66.5 -- the carry is written before a hang seen here, so bound the step
         env:
           GH_TOKEN: ${{ github.token }}   # r7433: rerun_guard reads the branch tip on a re-run
         run: |
