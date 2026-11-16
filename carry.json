@@ -3178,6 +3178,12 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43936781949",
     "since": "d88397028337423918317b80a1dcdee3053a5f85"
    }
+  },
+  "tolerance": {
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43936781949",
+    "since": "d88397028337423918317b80a1dcdee3053a5f85"
+   }
   }
  }
 }
