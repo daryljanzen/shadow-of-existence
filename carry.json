@@ -167,13 +167,5 @@
     "since": "a762a3d07c5df264f3abca406e2c3a351016649d"
    }
   }
- },
- "claude/youthful-darwin-xvkwh7": {
-  "tolerance": {
-   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43783040528",
-    "since": "03311fe69bf7c12f29dcc5c87d799441638c6d57"
-   }
-  }
  }
 }
