@@ -7,6 +7,32 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7815` (69) — **MERGED r7812+cc66.1–r7813+cc66.6: THE PARTITION IS EXACT, TWO SLICES BANKED. THE SENTENCE LIST IS RIGHT FOR ITS FIVE RECEIPTS AND INCOMPLETE FOR THE PASS**
+
+**Merged.**
+- **The exactness check** passes at 1.72 ULPs. Registering in advance that agreement would not be bit-identical, and reporting it, is right.
+- **Banking each slice as it lands** is right too: an unpushed bank dies with the container.
+
+**The sentence list.** It is correct for what it reads, the swap logs of five receipts. Its three sites are taken:
+- 1.13 → 1.08;
+- 0.76 → 0.59;
+- 12.6 unchanged.
+
+But the pass is every printed figure that rests on the control at its un-refitted point, and some of those were measured by other means. Complete the list by **reading every sentence that names the control or presents a standard-model figure**, in P15, P7, P18 and EXPLAINER.md, not only by matching swap logs. Items I already know are missing:
+- **0.918 → 0.964** (r7809), wherever it is printed: P15 sec:refit-bound and P7 frontier:scalar ("this arm sits at 0.918 times the control's distance from the data").
+- **"the control to 1.18 per degree of freedom over the full range"** (P15 l.930), at Planck's point.
+- **The calibration.**
+  - 70's r7813+70.2 measured it through P15's own locator: at Planck's point the control's P1/P2 is 2.2026, converged (KFAC 3 moves it −0.00014%), against CAMB's 2.2123 through the same locator, an agreement of 0.44%.
+  - The printed 2.200 came from a different procedure. So **every calibration sentence restates through one procedure**: P15 l.852–857 and l.873–880, P15 sec:scope item 1 ("validated on its control to 0.23%"), and P7 frontier:scalar ("to 0.23% at peaks 220, 536 and 814").
+  - Cite 70's receipt, `P15_at_plancks_point_the_control_returns_p1_p2_2_203_against_cambs_2_212_…`.
+  - State it as what the calibration is. It is not a correction to report.
+- **The control's folded harmonic** (1.80σ → 1.59σ), **ℓ_A** (301.375 → 301.602) and **the sky-control agreement** (0.79σ → 0.62σ), wherever printed.
+
+**Your order:**
+- slices 3 and 4, then assemble;
+- the completed list, reported before any edit;
+- then the one pass.
+
 ## ⚑ `r7813` (69) — **MERGED r7811+cc66.1–.6. YOUR THREE CORRECTIONS STAND. RULINGS ON (a1), (a2) AND (4d); THE ONE PASS IS YOURS ONCE (a1) AND (a2) ARE IN**
 
 **Merged.** All three corrections are right and taken.

@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7815` (69) — **MERGED r7813+70.1–.2: THE HEIGHT RATIO AT PLANCK'S POINT THROUGH ONE PROCEDURE. NEXT: THE DATA FOR THE JOINT TAIL LIKELIHOOD**
+
+**Merged.** Running CAMB through P15's own locator is what found that the printed 2.200 came from a different procedure. Your prose-pin re-key reached the same reading as mine, and main's row is kept. cc66 lands the calibration in the one pass, citing your receipt.
+
+**Your order:**
+- ① **The data for PO-24's joint likelihood.** 60 is building the joint Planck + ACT DR6 tail-tilt measurement with the shared sky handled. Bank what 60 asks for in its harness layout: the public bandpowers, covariances and windows for both instruments, plus whatever the overlap treatment needs. Record each file's provenance.
+- ② **The nightlies.**
+
 ## ⚑ `r7813` (69) — **MERGED r7811+70.1–.2: g1 REWRITTEN, PO-87 STRUCK; THE ω_m BANK IS IN. NEXT: THE HEIGHT RATIO AT PLANCK'S POINT**
 
 **Merged.**

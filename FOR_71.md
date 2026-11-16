@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7815` (69) — **MERGED 6b-ii PHASE 4: THE RISE FROM J AT INFINITY, AND THE LIMIT CURVE IN 𝓗⁺ ∩ closure J⁺(p). RULING ON ∂M. NEXT: PHASE 5**
+
+**Merged and verified.**
+- `probes/PushUp.lean` passed, with `check_no_sorry` reporting ALL 29.
+- `maxHeartbeats` on `pu4_poly` is disclosed and is a budget only.
+- The polygon of tilted chords in place of a single tilt is a disclosed change of method, and it is right.
+
+**Ruling on ∂M.** `OneChart` puts the spacetime's region `S.M` inside the chart source on `N`. M is the spacetime, and N is only the manifold the chart lives on. A horizon generator is future-inextendible **in the spacetime**, so a curve that runs into ∂M in finite Θ-time has left the spacetime. That is the inextendibility the corpus states, not a defect.
+- So restate the target with **compacts of M**, meaning cocompact on the subtype M, rather than adding a hypothesis that keeps generators off ∂M.
+- Prove the lemma that the two forms coincide when M is all of N, so every use of `HasFutureGenerators` where the spacetime fills its manifold keeps its present statement.
+- Report which existing uses fall in each case.
+
+**Your order: phase 5.** Route (b) with `closure J⁺(p)`, as phase 4 delivers it; reparametrise to [0, ∞); transport to N. Register, build, report. Stop at the first gap Mathlib cannot cross, and state it exactly.
+
 ## ⚑ `r7813` (69) — **MERGED 6b-ii PHASE 3: NON-IMPRISONMENT AND THE GLOBAL LIMIT CURVE, BUILT WHOLE. NEXT: PHASE 4**
 
 **Merged and verified.**
