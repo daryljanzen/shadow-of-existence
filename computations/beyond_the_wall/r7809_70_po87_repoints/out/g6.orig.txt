@@ -1,0 +1,283 @@
+
+P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control
+======================================================================================================
+
+LEVEL: the matched locator of `r6835+cc66.28`, unchanged, with the `plik_lite` TT bandpower COVARIANCE
+propagated through it by Monte Carlo; two controls that must break, and one instrument trap reported as
+a finding.
+
+OBJECT UNDER TEST -- `PO-47`, routed at `r6875`.  The order's first question and its stopping rule:
+
+    "The offsets are +1.6, +0.3, +0.7, +10.1 against the sky, and the sky's own peaks carry
+     uncertainties.  LOCATE THE SKY'S FOURTH PEAK BY THE SAME PROCEDURE YOU USED FOR THE INTERCEPT AND
+     REPORT ITS SPREAD.  If the displacement is inside it, the row closes on 'there is nothing to
+     displace' ...  Run the spread first.  If the displacement is inside it, stop and report -- DO NOT
+     GO LOOKING FOR A MECHANISM FOR SOMETHING THAT IS NOT THERE."
+
+-------------------------------------------------------------------------------
+WHAT THIS PROBE FINDS.
+
+** THE STOPPING RULE FIRES, AND THE SPREAD THAT FIRES IT IS NOT THE ONE I REPORTED LAST TIME. **
+
+`cc66.28` quoted the sky's fourth peak as 1121.9 with a spread of 0.87, and that number is a PROCEDURE
+spread -- how far the answer moves as the parabola window is swept over seven values on ONE realisation
+of the sky.  ** It is not the sky's uncertainty. **  The sky's uncertainty is what the `plik_lite`
+bandpower covariance does to the located position, and nobody had propagated it.  Propagated here:
+
+    the sky's fourth peak :  1121.9  +-  2.19 (statistical, from COV_TT)  +- 0.87 (procedure)
+                                    =  1121.9  +-  2.36  combined
+        ⛔ AS PUBLISHED.  Run in this container it is +- 2.03 +- 0.87 = +- 2.21; see the
+          `r7679+cc66.5` block below, which routes the difference rather than editing it away.
+
+Against that yardstick:
+
+    CR arm  -  control  =  +1.95  ->  0.83 sigma    ** INSIDE.  There is no construction-specific
+                                                       displacement at the fourth peak. **
+    control -  sky      =  +2.60  ->  1.10 sigma
+    CR arm  -  sky      =  +4.55  ->  1.93 sigma
+
+** SO THE ROW'S PREMISE DOES NOT SURVIVE, BUT NOT QUITE IN THE SHAPE THE ORDER ANTICIPATED. **  What
+dissolves is the part that was ever the construction's: the arm and the control differ by less than one
+sigma of the sky's own locating uncertainty at that peak, so ** the sky cannot tell the two models apart
+there **, and there is nothing construction-specific for candidates 1-3 to explain.  What does NOT
+dissolve is a smaller, SHARED thing: both models sit high of the sky's fourth peak, the control by
+1.1 sigma and the arm by 1.9.  ** That offset is not this construction's and is named rather than
+pursued **, the stopping rule being explicit.
+
+** AND AN INSTRUMENT TRAP IS REPORTED AS A FINDING RATHER THAN WORKED AROUND SILENTLY. **  The locator
+of `cc66.28` finds its peaks by free extremum search (`argrelextrema`, order 40) and then fits a
+parabola.  That is correct on a SMOOTH spectrum and unusable on a noisy one: pushed a covariance
+realisation at a time, the free search latches onto noise maxima and the recovered "fourth peak" drifts
+to a mean of 1050.7 with a spread of 131.6 -- seventy multipoles from the peak it is supposed to be
+measuring.  ** The fix is to anchor the window on the unperturbed peak and refit **, which asks the
+question actually being asked (how well is THIS peak located) and leaves the parabola step identical.
+That is what is done below, and the free-search failure is kept as a gate so the next reader does not
+repeat it.
+
+⛔⛭⛭⛭ ** `r7679+cc66.5` -- THE TWO MODEL QUARTETS ARE NO LONGER HARDCODED, AND EVERY ARM-SIDE DIGIT
+ABOVE MOVES.  THE READING'S DIRECTION DOES NOT: IT GETS STRONGER. **  `r7679` (69) item 4 ordered this
+receipt to locate its own peaks on the comb receipt's arm-of-record bank through its own locator,
+"instead of carrying a quartet nothing reproduces".  `r7677+cc66.2` had swept this file's `find_free`
+over 369 locatable banks under `beyond_the_wall/` and got no closer than 0.86 of a multipole to
+`CR_PK` and 1.46 to `LCDM_PK`, against constants quoted to a tenth.  PART 0 now locates both, by the
+same seven-window sweep PART 1 uses on the sky, on `grid_oneclock_leafrec1/cr_base.npz` and
+`grid_oneclock/lcdm_base.npz` -- per arm, the control unsuffixed because `LEAFREC` does not reach it.
+
+    located, arm (AoR)  :  222.28 / 537.55 / 813.63 / 1127.72    procedure spread under 0.75
+    located, control    :  220.67 / 537.67 / 812.52 / 1127.31
+    hardcoded (cc66.28) :  221.8  / 536.8  / 812.9  / 1126.5     and 220.2 / 537.0 / 811.7 / 1124.5
+
+  ⛔ ** The displacement the construction owns goes from `+1.95` to `+0.41` in ell -- a FIFTH, not a
+    double. **  So:
+    - `(5)` above reads: the arm-minus-control displacement is `+0.41`, under `0.2` sigma of the sky's
+      own fourth-peak uncertainty, inside it at every admissible window by a wide margin.
+    - `(6)` above reads: both models sit high of the sky by about `+5.4` (control) and `+5.8` (arm),
+      so the SHARED offset is larger than it was and the construction's share of it is `7` per cent
+      where it was `43`.  *The finding the title states -- the displacement is shared with the control
+      -- is strengthened, not weakened, and that is the whole of what moves in direction.*
+    - ** One gate is FALSIFIED and restated rather than re-toleranced: ** `not comfortably inside at
+      the tighter window`, which asserted `0.9` sigma rising to `1.3` on the hardcoded pair.  It now
+      asserts what the numbers say -- inside at both windows, with the sky's offset from EITHER model
+      the thing that is not resolved.  *Loosening its bound would have kept reporting `not resolved`
+      out of a constant nothing reproduces.*
+  ⌗ ** The sky's own column does not move on the repoint at all, ** because it is DATA and `sky_pk`
+    reproduces `cc66.28`'s quartet exactly.  ⛔ *But it does NOT reproduce this docstring, and that is
+    a second, separate and PRE-EXISTING finding: run here, the spread is 1121.9 +- ** 2.03 **
+    (statistical) +- 0.87 (procedure) = ** +- 2.21 ** combined, where (2) and (4) below publish
+    `2.19` and `2.36`; at `W=55` the four spreads read `2.39/2.61/1.92/2.03` against a published
+    `2.44/2.43/1.88/2.19`, and the seed gate puts the fourth peak's at `2.03`-`2.07`.  The drift is
+    inside PART 3's Monte Carlo over `COV_TT`, which `r7679`'s repoint does not touch, so it is the
+    container's and not this revision's.  ** `2.36` is `PO-47`'s figure and the paper's `l.2790`
+    clause divides by it ** -- `3.26/2.36 = 1.38`, the printed `1.4`; on `2.21` that is `1.48`.
+    Routed to `69` with the sentence; nothing here is re-pinned, because the published digits are
+    pinned on the run that measured them.*
+  ⌗ ** And the hardcoded pair is not the namesake's reading either. **  This grid's NAMESAKE arm leg
+    locates at 220.40 / 537.27 / 812.66 / 1127.15, so the namesake fourth-peak displacement is `-0.16`.
+    *The `+1.95` is reproduced by neither leg of the bank it was attributed to, which is what
+    `r7677+cc66.2` found from the other end and is the reason this item was ordered.*
+  ⛔ ** I registered the opposite ** at `r7679+cc66.0` arm ⑤ -- that the displacement would roughly
+    DOUBLE to `+4.1`, on the strength of `r7677+cc66.2`'s read of `cc66_r185_verify_cr_leafrec1`.
+    ** FALSIFIED, and the reason is the bank family: ** this grid's two legs agree on the fourth peak
+    to half a multipole where that family's legs differ by four, so a fourth-peak displacement is a
+    property of the bank the sentence is read on and not of `LEAFREC`.
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) The sky's four peaks through `cc66.28`'s locator are 221.0 / 533.8 / 814.8 / 1121.9 with procedure
+     spreads 0.61 / 3.92 / 2.20 / 0.87 over the seven windows -- reproducing that receipt exactly.
+ (2) Propagating COV_TT by Monte Carlo through the SAME parabola, with the window anchored, gives the
+     sky's STATISTICAL spread; at the reference window W = 55 it is 2.44 / 2.43 / 1.88 / 2.19, with
+     per-peak biases under 1.5 in ell.
+ (3) The window is a bias-variance trade and the reference is chosen on it rather than for the answer:
+     W = 40 is rejected because the parabola turns the wrong way on 12% of realisations and the fourth
+     peak's spread explodes to 122; W = 110 is rejected because the bias reaches -6.3.
+ (4) Combined in quadrature, the sky's fourth peak is 1121.9 +- 2.36.
+ (5) The arm-minus-control displacement of +1.95 is 0.83 sigma of that -- inside it at every admissible
+     window (1.4 sigma at the tightest, W = 80).
+ (6) Both models sit high of the sky at the fourth peak: control +2.60 (1.10 sigma), arm +4.55 (1.93).
+ (7) CONTROL A: injecting a known displacement into the sky recovers it at the right size and
+     significance, so the machinery can see a displacement when there is one.
+ (8) CONTROL B: the free-extremum locator under noise returns 1050.7 +- 131.6 for the fourth peak,
+     which is how the anchoring is shown to be necessary rather than convenient.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT that the sky's fourth peak is at 1121.9 to better than the stated error; the central value is the
+   locator's on `plik_lite`'s binning and `sec:intro`'s own is 1123.9, two multipoles away and inside.
+ * NOT a full sky-uncertainty budget.  COV_TT is the bandpower covariance `plik_lite` ships, with
+   foregrounds and calibration already marginalised; no theory-side or beam uncertainty is added, and no
+   correlation with the peaks' own amplitudes is modelled beyond what the covariance carries.
+ * ** NOT any of the three candidates. **  The order's stopping rule is explicit and it fires: the third
+   acoustic spacing, the baryon loading's effect on position, and the transfer's resolution at the
+   fourth peak are NOT run.  Where a convergence check would go is named at the end and left.
+ * NOT a re-opening of the phase intercept, the damping envelope, the driving or the refit, all of which
+   the row carries as settled and none of which is touched here.
+
+WHAT WOULD FALSIFY IT.  The locator not reproducing `cc66.28`'s sky quartet; the Monte Carlo spread
+depending on the seed; the injection control failing to recover a planted displacement; the
+arm-minus-control offset landing outside the sky's spread at any admissible window; or the free-search
+failure not reproducing, which would mean the anchoring was unnecessary.
+
+====================================================================================================
+
+PART 0 -- `r7679+cc66.5`: THE TWO MODEL QUARTETS, LOCATED HERE INSTEAD OF HARDCODED.
+----------------------------------------------------------------------------------------------------
+    peak                 1        2        3        4   windows
+    CR arm (AoR)     222.28   537.55   813.63  1127.72         7
+      spread           0.03     0.45     0.59     0.72
+    control          220.67   537.67   812.52  1127.31         7
+      spread           0.01     0.48     0.60     0.70
+    CR arm (nsk)     220.40   537.27   812.66  1127.15         7   <- the SAME grid family's namesake leg, for the repoint's size
+    cc66.28 CR        221.8    536.8    812.9   1126.5   <- HARDCODED, and reproduced by nothing (r7677+cc66.2 swept 369 banks)
+    cc66.28 LCDM      220.2    537.0    811.7   1124.5   <- HARDCODED
+    |located - hardcoded|, arm      0.48   0.75   0.73   1.22
+    |located - hardcoded|, control   0.47   0.67   0.82   2.81
+    fourth-peak displacement arm - control:  located +0.41, hardcoded +2.0, and on this grid's NAMESAKE leg -0.16
+  [PASS] ⛔⛭⛭ ** THE QUARTETS ARE LOCATED AND THE HARDCODED ONES ARE NOT REPRODUCED BY THE BANK THEY WERE ATTRIBUTED TO, ON EITHER ARM. **  Each located quartet is this file's own `find_free` swept over all seven windows on the comb receipt's banks, and the procedure spread is under a multipole on every peak -- so the disagreement with the hardcoded constants is NOT the locator being unstable.  *`r7677+cc66.2` had already shown nothing in 369 banks reaches them; this says the same thing from the one bank the sentence is about*   (arm 1127.72 vs 1126.5, control 1127.31 vs 1124.5)
+
+PART 1 -- THE SKY THROUGH cc66.28's LOCATOR, AND THE SPREAD I QUOTED LAST TIME.
+----------------------------------------------------------------------------------------------------
+    peak        1        2        3        4
+    sky       221.0    533.8    814.8   1121.9
+    spread     0.61     3.92     2.20     0.87   <- over the seven windows
+    sec:intro's own   220.4   537.7   817.3  1123.9
+  [PASS] the locator reproduces cc66.28's sky quartet 221.0 / 533.8 / 814.8 / 1121.9   (221.0 / 533.8 / 814.8 / 1121.9)
+  [PASS] ...and its procedure spreads 0.61 / 3.92 / 2.20 / 0.87   (0.61 / 3.92 / 2.20 / 0.87)
+
+  ** BUT THAT IS A PROCEDURE SPREAD, NOT THE SKY'S UNCERTAINTY. **  It is how far the answer
+  moves when the WINDOW is swept on one realisation of the sky.  The sky's uncertainty is what
+  the bandpower covariance does to the located position, and it had not been propagated.
+
+PART 2 -- CONTROL B, AND IT IS A FINDING: THE FREE-SEARCH LOCATOR IS UNUSABLE UNDER NOISE.
+----------------------------------------------------------------------------------------------------
+  free extremum search on 400 covariance realisations:
+    mean      221.7    526.2    754.7   1050.7
+    spread      3.3     54.7    117.3    131.5
+  [PASS] CONTROL B -- the free search drifts the fourth peak to a mean near 1051 with a spread near 132, seventy multipoles from the peak it is meant to measure: it latches onto noise maxima, so the anchoring below is NECESSARY and not a convenience   (peak 4: 1050.7 +- 131.5 against 1121.9)
+
+PART 3 -- THE SKY'S STATISTICAL SPREAD, WITH THE WINDOW ANCHORED AND THE PARABOLA UNCHANGED.
+----------------------------------------------------------------------------------------------------
+      W     kept      sigma 1   sigma 2   sigma 3   sigma 4      bias 1   bias 2   bias 3   bias 4
+     40   529/600         4.38     13.83      2.72    122.32       -0.56    +0.23    +3.04    +0.05
+     55   600/600         2.39      2.61      1.92      2.03       +0.76    +1.65    +0.04    +0.63
+     80   600/600         1.33      1.34      1.09      1.31       -0.21    +1.32    -3.14    -0.37
+    110   600/600         0.80      0.83      0.69      0.96       -0.36    +4.08    -5.34    -6.38
+  [PASS] W = 40 is REJECTED: the parabola turns the wrong way on over a tenth of realisations and the fourth peak's spread explodes past 100 -- too few bandpowers under the window   (kept 529/600, sigma_4 = 122.3)
+  [PASS] W = 110 is REJECTED on the other side: the parabola stops modelling the peak and the bias reaches -6 in ell, larger than the displacement under test   (bias_4 = -6.38)
+  [PASS] W = 55 and W = 80 are admissible -- every bias under 3.2 in ell, no realisations lost -- so the reference window is chosen on the bias-variance trade and not for the answer
+
+  ** THE SKY'S FOURTH PEAK: 1121.9 +- 2.03 (statistical) +- 0.87 (procedure) = +- 2.21 combined. **
+  [PASS] the spread does not depend on the seed   (2.07 against 2.03)
+
+  ⛭ `r7681+cc66.4` -- THE REFERENCE WINDOW'S SPREAD, DETERMINED RATHER THAN DRAWN ONCE
+        draws    seed 6875      seed 99  seed spread
+          600       2.0330       2.0682       0.0352   <- what the window table uses, and what published 2.19
+        10000       2.0936       2.1107       0.0171   <- CONVERGED
+      ⇒ the sky's fourth peak, determined: 1121.9 +- 2.09 (statistical) +- 0.87 (procedure) = +- 2.27 combined
+        against the published +- 2.03 / +- 2.21 at 600 draws, and `PO-47`'s +- 2.36
+  [PASS] ⛔⛭⛭⛭ `r7681` ④ ** NOTHING CHANGED IN THIS MONTE CARLO: `$2.19$` AND `$2.03$` ARE ONE MEASUREMENT AT TWO DRAWS, AND `$600$` DRAWS NEVER DETERMINED THE DIGIT. **  At `$NMC=10000$` the fourth peak's statistical spread is `$2.0936$` with a seed-to-seed scatter of `$0.0171$`, against `$2.0330$` and a scatter of `$0.186$` across eight seeds at `$600$`.  *⛔ 69's item 1 asked which input changed -- the draw count, the window, the seeding or the covariance file.  `git log` says this receipt has TWO commits and `planck_tt_likelihood/` has had none since the first, so the answer is NONE of them: the printed digit was never pinned, and the gate above allowed `$12$` per cent where the quantity needed `$1$`.*  ⇒ ** The determined reading is `$1121.9\pm2.09\pm0.87=2.27$` combined, and it is what `l.2035` and `PO-47`'s `$2.36$` should both be re-pinned on -- routed to `69`, whose own condition was to pin it once explained **   (converged 2.0936 +- 0.0171 at 10000; 2.0330 at 600)
+  [PASS]      ⛭ `r7681` ⑤ ** AND IT MOVES NEITHER THE QUARTET NOR EITHER WINDOW'S ADMISSIBILITY: ** the sky's four peaks are `cc66.28`'s to the digit and `W=55`/`W=80` are admissible on the same bias-variance trade, which is a factor-of-fifty rejection and not a per-cent one.  *So the only printed figures this touches are the spread itself at `l.2035` and the `$2.36$` the `l.2790` clause divides by*
+
+PART 4 -- CONTROL A: CAN THE MACHINERY SEE A DISPLACEMENT WHEN THERE IS ONE?
+----------------------------------------------------------------------------------------------------
+  Plant a known shift in the sky by re-binning a shifted spline of it, then measure it back.
+    planted   4.0 in ell  ->  recovered  +4.56   (+2.1 sigma of the sky's own spread)
+    planted  10.0 in ell  ->  recovered +11.71   (+5.3 sigma of the sky's own spread)
+  [PASS] CONTROL A -- a planted displacement is recovered to better than 25 per cent and scales with the plant, so a real fourth-peak displacement WOULD show up in this test   (4.0 -> +4.56, 10.0 -> +11.71)
+
+PART 5 -- THE DISPLACEMENT AGAINST THE RIGHT YARDSTICK.
+----------------------------------------------------------------------------------------------------
+  the sky's fourth peak       1121.9  +- 2.21
+  the control's               1127.3
+  the CR arm's                1127.7
+
+                       pairing    offset   in sigma      verdict
+            CR arm  -  control     +0.41      +0.19       INSIDE
+                control -  sky     +5.46      +2.47      outside
+                CR arm  -  sky     +5.87      +2.65      outside
+
+  ** AND THE READING IS WINDOW-DEPENDENT, SO BOTH ADMISSIBLE WINDOWS ARE QUOTED. **
+    W = 55 :  sky +- 2.21 combined  ->  arm minus control is +0.19 sigma
+    W = 80 :  sky +- 1.57 combined  ->  arm minus control is +0.26 sigma
+  [PASS] ** THE CONSTRUCTION'S OWN DISPLACEMENT DOES NOT REACH SIGNIFICANCE AT EITHER ADMISSIBLE WINDOW **: arm minus control is +0.41 in ell, 0.26 sigma or less of the sky's own fourth-peak uncertainty -- the sky cannot tell the two models apart there.  ⛭⛭ `r7679+cc66.5`: on the HARDCODED quartets this was `+2.0`, between `0.9` and `1.3` sigma   (+0.41: +0.19 sigma at W=55, +0.26 at W=80)
+  [PASS] ⛔⛭⛭ ** AND IT IS NOW COMFORTABLY INSIDE AT BOTH WINDOWS, WHICH IS A CLAIM CHANGE AND NOT A TIGHTENING: ** the located displacement is +0.41 in ell, 0.19 sigma at `W=55` and 0.26 at `W=80`.  *On the HARDCODED `+2.0` this gate asserted `0.9` rising to `1.3` sigma and the reading was `not resolved rather than zero`.  ** On the bank the sentence is about, the construction's fourth-peak displacement is a fifth of the constant that was standing in for it and is inside at every admissible window. **  ⛔ What is NOT resolved is the sky's offset from EITHER model, +5.87 and +5.46, which is the next gate's subject -- routed to `69` as a claim change*   (0.19 sigma at W=55, 0.26 at W=80; sky offsets +5.87 / +5.46)
+  [PASS] the control ALSO sits high of the sky's fourth peak, so the arm's larger offset is mostly SHARED and is not the construction's   (control +5.46 of the arm's +5.87 -- 93% shared)
+
+  ** AND THE ORDER'S OWN +10.1 WAS NEVER THIS NUMBER. **  That offset is the paper's stored quartet
+  (1134) against the paper's stored sky (1123.9) -- two different procedures.  Through ONE locator the
+  arm-minus-sky offset is +5.87, and the part of it that is the construction's is +0.41.
+
+
+====================================================================================================
+THE READING, AND THE STOPPING RULE.
+====================================================================================================
+
+  ** THE STOPPING RULE FIRES, AND THE THREE CANDIDATES ARE NOT RUN. **
+
+  1. The order asked for the sky's fourth peak located by the same procedure, with its spread.  It is
+     1121.9 +- 2.03 statistical +- 0.87 procedure = +- 2.21.
+     ** The spread I quoted at cc66.28 was the procedure half alone, and it is the smaller half. **
+
+  2. The construction's own fourth-peak displacement -- what this arm does that the control does not --
+     is +0.41 in ell, which is 0.19 sigma of that at W = 55 and
+     0.26 at W = 80.  ** It does not reach significance at either admissible
+     window, so the sky cannot tell the two models apart at the fourth peak. **  ⛭ On the hardcoded
+     quartets this was +1.95 and the honest statement was 'not resolved' rather than 'zero'; on the
+     LOCATED quartets it is inside by a wide margin at both windows and the hedge is no longer what
+     the measurement says.  On the order's own test it is inside either way, so the third acoustic
+     spacing, the baryon loading's effect on position and the transfer's resolution are NOT run, and
+     the row closes on its first branch.
+
+  3. ** What does not dissolve is smaller and is not this construction's. **  Both models sit high of
+     the sky's fourth peak -- the control by +5.46 (2.5 sigma) and the arm by
+     +5.87 (2.7 sigma).  That is a shared offset of flat LCDM and this arm alike
+     from the located sky, and naming it is not pursuing it: a convergence check at the fourth peak is
+     where it would go, and the stopping rule says not to go.
+
+  4. ** AND THE INSTRUMENT TRAP IS THE PART TO CARRY FORWARD. **  cc66.28's locator finds peaks by free
+     extremum search.  That is right on a smooth spectrum and wrong on a noisy one: under the
+     covariance it returns 1051 +- 132 for the fourth peak.  Any
+     future error propagation through that locator has to anchor the window, and the failure is kept as
+     a gate here so it is not rediscovered.
+
+  ** WHAT THIS DOES NOT REACH. **  The central value is the locator's on plik_lite's binning; sec:intro's
+  own fourth peak is 1123.9, two multipoles from it and well inside the spread.  COV_TT is the shipped
+  bandpower covariance with foregrounds and calibration marginalised; no beam or theory-side term is
+  added.  And nothing here re-opens the phase intercept, the damping envelope, the driving or the refit.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: the sky's fourth acoustic peak, located by cc66.28's own matched locator, is
+1121.9 +- 2.21 once the plik_lite bandpower covariance is propagated through it --
+the spread quoted at cc66.28 being the procedure half alone.  The arm-minus-control displacement of
++0.41 is 0.19 sigma of that at W = 55 and 0.26 at W = 80 --
+not reaching significance at either admissible window -- so there is no established construction-specific
+fourth-peak displacement and PO-47's three candidates are not run.  Both models
+sit high of the located sky (+5.5 and +5.9), which is a shared offset named and not
+pursued.  And the free-extremum locator is unusable under noise (1051 +-
+132 at the fourth peak), so error propagation must anchor the window.
+NOT CLAIMED: a full sky-uncertainty budget; any of the three candidates; any re-opening of the phase
+intercept, the damping envelope, the driving or the refit.
+

@@ -1,0 +1,257 @@
+P15 sec:refit-bound -- ** THE CONTRAST EXCESS IS SYMMETRIC ABOUT THE ENVELOPE, AND THE TROUGHS ARE
+WHERE THE SKY MEASURES IT BEST -- WHICH IS NOT THE REASON THE ORDER GAVE. **
+
+** PATH PROVENANCE, IN THE HEADER, AT 66's REQUEST AFTER `cc66.45`. **  *** Every model number below is
+the HIERARCHY path: *** the reported spectra `cc66_r185_verify_{lcdm,cr}`, the `LSTEP=1` fine references
+`r6941_fine_lcdm` / `r6941_fine_cr_leafrec1`, and the `VISLEAF` family `r6929_scan_cr_leafrec1` /
+`r6941_fine_cr_visleaf_leafrec1`.
+
+⛭⛭ ** ON THE ARM OF RECORD AS OF `r7643+cc66.52` (`LEAFREC=1`, 70's second and third banks). **  *The
+CR side of every bank read here moves to its `_leafrec1` sibling; the control's does not, which is the
+bank's own statement -- `r6929_geometry_leafrec1` holds `__lcdm` values bit-identical to its namesake's
+and `__cr` values that moved.*  ⛔ ** AND THE RE-POINT FOUND A DEFECT IN THIS RECEIPT'S OWN STATISTIC,
+not in the arm: the fixed-q band-variance split silently required the two combs to be PHASE-MATCHED.
+The namesake arm's `$\ell_A$` sat 0.08 per cent from the control's and met that condition by accident;
+the arm of record's sits 0.46 per cent away and does not. **  *Read naively it would have published
+`the excess is peak-dominated` off two bands whose positive lobe is a sliver.  The split is re-anchored
+on each arm's own zero crossings and compared lobe by lobe, and the fixed-q table stays printed as the
+diagnostic that exposed it.*
+
+⛭ ** ARM KEYS READ: ** `f__cr_leafrec1`, `rD__cr_leafrec1`, `R_S__cr_leafrec1` out of
+`r6929_geometry_leafrec1` -- *the sibling's `__cr` is the NAMESAKE's since `r7643`+70's re-key, so
+the suffix alone names no arm; gate ⒪ holds the correspondence (`cc66.68`)* -- and
+`ls__comb_cr_f*` / `Dl__comb_cr_f*` / `l_A__comb_cr_f*` out of `r6929_scan_cr_leafrec1`; `__lcdm` keys
+are read from the same files and do not move.  *Named here under node 69's `r7643` arm-key rule, because
+a receipt reading a two-arm bank by key suffix cannot otherwise be audited for which arm it read.*
+`sec:refit-bound`'s quartet $222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read here at all
+-- searched for by grepping this file for each of the four values and for every line-of-sight bank name
+(`c54.17*`, `c54.178_*`, `L814_*`, `r6784_*`), and none of them occurs in the code below.  *** The sky side is `plik_lite` TT through the likelihood's OWN binning *** --
+`chi2_of_spectrum.bin_spectrum` -- and the models are binned identically before any comparison, so every
+sky-facing number is matched-procedure by construction and not by assertion.
+
+** WHY IT EXISTS. **  `r6955`'s order: four things have been eliminated -- the contrast is not in the
+source at any grain, not the cross term, not absorbable by the clock assignment, and not the comb
+residual -- so what is left is the $\chi^{2}$, which is trough-dominated in the whitened residual.  The
+order's reading, stated as 66's own: *the trough DEPTHS mix the two clocks in a way $\theta_D/\theta_*$
+does not, because a depth needs the diffusion scale in MULTIPOLES and so needs the projection distance,
+which rides the other clock.*  ⓶ᵃ locate the excess before assuming it; ⓶ᵇ then the clock sensitivity of
+whichever carries it, against $\mathrm d(\theta_D/\theta_*)/\mathrm df$; ⓶ᶜ and the sky's own spread on
+it, the way `PO-47` did for the fourth peak.
+
+⛭⛭ ** ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE, SO IT IS NEITHER TROUGH-DOMINATED NOR
+PEAK-DOMINATED. **  Splitting the variance of the envelope-normalised oscillation at its own zero
+-- which is a decomposition, the two parts adding to the whole -- and anchoring each band on the
+spectrum's OWN zero crossings so the two arms are compared lobe by lobe, the arm/control ratio is
+$1.0736$ on the positive side and $1.0621$ on the negative.  Read instead at the literal extrema, the
+arm's excursion exceeds the control's by $6.9$ per cent at the maxima and $6.2$ at the minima.  ⇒ *** The
+contrast is an AMPLITUDE excess about the envelope, carried equally by peak heights and trough depths. ***
+⌗ *So $\Delta$'s trough dominance is a statement about the whitened residual and does NOT transfer to
+the contrast's own decomposition -- which the order explicitly declined to assume, and the answer is that
+they do not agree.*  ⚠ *And the order's stop condition does not fire either: the excess is not in the
+peaks, so the row is not pushed back onto the driving.*
+
+⛔ ** ⓶ᵇ THE DEPTHS ARE THE MORE CLOCK-SENSITIVE OF THE TWO -- BUT $\theta_D/\theta_*$ IS MORE SENSITIVE
+THAN EITHER, WHICH REFUTES THE ORDER'S BRANCH. **  Across the `VISLEAF` family the mean trough depth
+moves $-2.59$ per cent and the mean peak height only $-0.78$, so the depths are $3.3\times$ the more
+responsive -- *that half of the reading holds.*  But $\theta_D/\theta_* = r_D/r_s$ moves $-4.04$ per
+cent over the same family, because $r_D$ is itself `Jac`-weighted under `LEAFSCALES` and the $\tau$
+re-weighting moves it directly.  ⇒ *** The paper's discriminant of principle is not the insensitive one:
+it is the MOST sensitive of the three, and by the order's own rule -- both move together -- the depths
+are not a new handle on the clock. ***
+
+⛭⛭⛭ ** ⓶ᶜ AND YET THE TROUGHS ARE WHERE THE ASSIGNMENT BECOMES OBSERVABLE, FOR A REASON NEITHER OF US
+NAMED: THE SKY MEASURES DEPTHS TWICE AS WELL AS HEIGHTS. **  On the matched binned statistic, with
+`COV_TT` propagated by Monte Carlo through the identical anchored locator, the sky's own spread is
+$0.0059$ on the trough depth and $0.0114$ on the peak height.  The arm-minus-control excess is the same
+size in both -- $+0.0128$ and $+0.0135$, equal to within six per cent -- so in the sky's own units it
+reads
+
+    trough depths :  arm - control = +2.17 sigma      control - sky = -0.05 sigma
+    peak heights  :  arm - control = +1.19 sigma      control - sky = -0.59 sigma
+
+*** The control lands on the sky's trough depths to a twentieth of a sigma and the arm sits $2.12\sigma$
+above the sky.  This is the first statistic in this sector whose residual is NOT shared with the
+control *** -- against the fourth peak, where the NAMESAKE arm's arm-minus-control displacement was
+$0.83\sigma$ (`PO-47`'s own figure, on that arm, and not re-pointed here) and
+both models sat high of the sky.  ⇒ ** So the order's conclusion stands and its argument does not: the
+trough depths are the sharpest CR-specific observable this campaign has measured, because of how well
+the SKY measures them rather than because of how they mix the clocks. **
+
+⚑ ** THE GUARDS. **  *The window bias the order warned about does not exist for this statistic:* the
+anchored depth is identical to five decimals over $W=20\ldots70$, because it reads a VALUE at a located
+extremum rather than the LOCATION of one, and the value's window dependence enters only through which
+sample is the minimum.  ⚠ *But `PO-47`'s trap reproduces exactly:* a free extremum search under noise
+returns a spread of $0.0369$ against the anchored $0.0059$, six times worse, because the search latches
+onto noise minima -- **which is why the anchoring is necessary and not a convenience**, and it is gated
+below.  ⌗ *The one real systematic is the envelope window's abscissa: the sky's depth runs
+$0.2790\to0.2830$ as the $\ell_A$ that sets it goes $298\to305$, about $0.3\sigma$, and it is reported
+rather than minimised.*
+
+** WHAT IS NOT CLAIMED. **  NOT that the $1.8\sigma$ is a detection; it is $1.8$ of the sky's own spread
+on one statistic, and the same differencing at the fourth peak gave $0.83$.  NOT a mechanism for the
+amplitude excess -- this receipt locates it and measures how well the sky sees it.  NOT a re-derivation
+of `PO-47`'s peak-position spreads, which are cited and not touched.  NOT that the depths discriminate
+the CLOCK: they do not, and the order's branch on that is refuted here.  NOT a verdict on the two-rate
+assignment, which is the row's question.  No refit, nothing touching `prop:flat` or the clock family, and
+no corpus edits -- the paper-side consequences are routed to 66.
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
+    verified 185-bin refit minima; the fine references are the same configuration at `LSTEP=1 LMAXL=2000`.
+    Nothing here re-fits and nothing here moves.
+  * `spectra/r6941_fine_lcdm.npz`, `r6941_fine_cr_leafrec1.npz`,
+    `r6941_fine_cr_visleaf_leafrec1.npz`, `r6929_scan_cr_leafrec1.npz`,
+    `r6929_geometry_leafrec1.npz`, `r6929_geometry.npz`, `cc66_r185_verify_{lcdm,cr}.npz`.
+  * ⛭ *And `r6941_fine_cr.npz`, the NAMESAKE arm, read in PART 3B for PROVENANCE ONLY --
+    it feeds no gate on the physics and no figure this receipt publishes; it is there to
+    establish which arm the PAPER's own paragraph is on, which its citation alone cannot say.*
+  * The sky is `plik_lite` TT's `X_data` and `COV_TT` through
+    `computations/planck_tt_likelihood/chi2_of_spectrum.py`; `PO-47`'s fourth-peak spread $2.36$ and its
+    $0.83\sigma$ are quoted from that receipt and not recomputed.
+  * The statistic is `r6911+cc66.40`'s envelope-normalised oscillation with its running arithmetic mean
+    over one acoustic period, unchanged, and the anchored-extremum reading is `PO-47`'s applied to
+    values instead of locations.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_visleaf_leafrec1.npz`   (r6941_fine_cr_visleaf_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_scan_cr_leafrec1.npz`   (r6929_scan_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_geometry_leafrec1.npz`   (r6929_geometry_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_geometry.npz`   (r6929_geometry.npz)
+  [PASS] ⒪ the geometry sibling is a SUPERSET of its namesake -- `__cr` IS the namesake's, bit for bit, and the arm of record is `__cr_leafrec1`; read the wrong key and the namesake comes back silently   (28 of 28 namesake keys bit-identical, 12 of 14 arm keys moved; dr_s/dchi at f=0 0.3967327 (namesake) -> 0.3951353 (arm of record))
+
+PART 1 -- ⓶ᵃ WHERE THE EXCESS IS: THE BAND VARIANCE SPLIT AT ITS OWN ZERO, AND THE EXTREMA.
+----------------------------------------------------------------------------------------------------
+      q band     total  peak side  trough side
+        1.20    1.0158     1.0240       1.0142
+        1.90    1.0770     1.0643       1.1032
+        2.60    1.0526     1.0600       1.0185
+        3.30    1.0645     1.2048       1.0602
+        4.00    1.0962     1.0704       1.1266
+        4.70    1.0483     1.0748       0.9424
+        5.40    1.0910     1.4257       1.0730
+        mean    1.0636     1.1320       1.0483
+  [PASS] the split is a DECOMPOSITION and not two statistics: the positive and negative parts of the band variance add to the whole, band by band   (var = var+ + var- to machine precision in every band)
+    the drift the fixed-q split cannot see: |f+ arm - f+ control| runs 0.002 to 0.027 across the bands, on l_A 302.943 against the control's 301.543
+    ANCHORED lobe by lobe on each arm's own crossings: 4 peak lobes 1.0736 (1.0624-1.0889), 5 trough lobes 1.0621 (1.0223-1.0819)
+  [PASS] ⛔⛭ the fixed-q split is the fragile one and the anchored split is not, MEASURED rather than asserted: the fixed-q table's worst band sits more than three times as far from one as the anchored split's worst lobe, and the bands that carry it are the ones whose positive lobe is a sliver   (fixed-q worst 1.4257, anchored worst 1.0889)
+  [PASS] and the anchored split compares like with like: every matched lobe pair carries the same sign, so no ratio above is a positive lobe divided by a negative one   (9 matched lobe pairs, 0 sign-mismatched)
+    at the literal extrema, arm/control: maxima 1.0686, minima 1.0617 (six of each, fine grid)
+  [PASS] ⛭⛭ ** THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE. **  The two sides of the decomposition carry it within about one per cent of each other, and at the literal extrema the arm exceeds the control by 6.9 per cent at the maxima against 6.2 at the minima.  ⛭ *Both readings are phase-anchored: the lobe split by construction, the extrema because an extremum is located in each arm separately*   (anchored split 1.0736 / 1.0621; extrema 1.0686 / 1.0617)
+  [PASS] ⇒ so it is an AMPLITUDE excess and neither trough- nor peak-dominated: Delta's trough dominance is a statement about the WHITENED residual and does not transfer to the contrast's own decomposition   (trough side / peak side = 0.9893)
+  [PASS] ⚠ and the order's STOP condition does not fire -- the excess is not in the peaks either, so the row is not pushed back onto the driving   (peak side exceeds the trough side by only 1.1 per cent)
+
+PART 2 -- ⓶ᵇ THE CLOCK SENSITIVITY: THE DEPTHS, THE HEIGHTS, AND theta_D/theta_*.
+----------------------------------------------------------------------------------------------------
+        f  mean height  mean depth  theta_D/theta_*
+     0.00      0.25165     0.25806         0.051682
+     0.10      0.25141     0.25745         0.051682
+     0.25      0.25119     0.25646         0.051323
+     0.50      0.25085     0.25488         0.050618
+     0.75      0.25025     0.25327         0.049930
+     1.00      0.24968     0.25136         0.049592
+    over the family: height -0.781%, depth -2.594%, theta_D/theta_* -4.043%
+  [PASS] the depths ARE the more clock-responsive of the two observables, by a factor of three -- which is the half of the order's reading that holds   (depth -2.59% against height -0.78%, a factor 3.3)
+  [PASS] ⛔ ** BUT theta_D/theta_* MOVES MORE THAN EITHER, so the paper's discriminant of principle is the MOST sensitive of the three and not the insensitive one. **  r_D is itself Jac-weighted under `LEAFSCALES`, so the tau re-weighting moves it directly   (-4.04% against the depths' -2.59%, a factor 1.6)
+  [PASS] ⇒ by the order's own rule -- both move together -- the depths are NOT a new handle on the clock, and that branch of the reading is refuted   (same sign, within a factor of two of each other)
+  [PASS] ⌗ and the endpoints reproduce on the LSTEP=1 grid, so the family's response is the spectra's and not the grid's   (fine -2.49% against coarse -2.59%)
+
+PART 3 -- ⓶ᶜ THE SKY'S OWN SPREAD, ON THE MATCHED BINNED STATISTIC.
+----------------------------------------------------------------------------------------------------
+  [PASS] the models are binned by the LIKELIHOOD'S OWN binning before anything is compared, so the comparison is matched-procedure by construction   (185 covered bins on each arm)
+    depths : control 0.28007  arm 0.29283  sky 0.28038   arm-control +0.01276
+    heights: control 0.27715  arm 0.29069  sky 0.28382   arm-control +0.01354
+    seed 6955: the sky's spread -- depth 0.00588, height 0.01135
+    seed 424242: the sky's spread -- depth 0.00581, height 0.01166
+  [PASS] the spread does not depend on the seed, which is what makes it a measurement   (depth 0.00588 against 0.00581)
+  [PASS] ⛭⛭⛭ ** THE SKY MEASURES TROUGH DEPTHS TWICE AS WELL AS PEAK HEIGHTS. **  Same data, same binning, same anchored locator -- and the propagated spread is half the size on the depths   (height 0.01135 against depth 0.00588, a factor 1.93)
+    ⇒ in the sky's own units:  depths  arm-control +2.17 sigma, control-sky -0.05 sigma, arm-sky +2.12 sigma
+                               heights arm-control +1.19 sigma, control-sky -0.59 sigma, arm-sky +0.61 sigma
+  [PASS] ⇒ *** SO THE SAME EXCESS READS 2.2 SIGMA IN THE DEPTHS AND 1.2 IN THE HEIGHTS -- the order's conclusion stands and its argument does not: the troughs are where the assignment becomes observable because of how well the SKY measures them, not because of how they mix the clocks ***.  ⛭ *The pin is the RATIO and not a bare ceiling on the heights: what the statement rests on is one excess read through two spreads, so the excesses are held equal and the sigmas are held apart by the factor the spreads differ by*   (+2.17 sigma against +1.19 sigma, on excesses of +0.01276 and +0.01354)
+  [PASS] ⛭ ** AND THE CONTROL LANDS ON THE SKY'S TROUGH DEPTHS TO A TWENTIETH OF A SIGMA, so this is the first statistic in this sector whose residual is NOT shared with the control ** -- against the fourth peak, where arm-minus-control was 0.83 sigma and both models sat high of the sky   (control-sky -0.05 sigma, arm-sky +2.12 sigma)
+
+PART 3B -- WHICH ARM THE PAPER'S OWN PARAGRAPH IS ON, MEASURED AND NOT ASSERTED.
+----------------------------------------------------------------------------------------------------
+  [PASS] the namesake arm's fine bank is present, so the provenance below is measured: `spectra/r6941_fine_cr.npz`   (r6941_fine_cr.npz)
+  [PASS] and it IS the namesake and not a second copy of the arm of record -- its `l_A` differs, which is the whole reason the fixed-q split stopped being phase-matched   (namesake l_A 301.799, arm of record 302.943, control 301.543)
+    what the paragraph prints            namesake    arm of record   the statistic
+    l.1127 split, peak side                1.0668           1.0736   fixed-q mean (namesake) vs anchored lobes (live)
+    l.1127 split, trough side              1.0561           1.0621   -- and the LIVE fixed-q mean is 1.1320 / 1.0483, inadmissible
+    l.1129 extrema, maxima %                 5.66             6.86   six located extrema, each arm's own
+    l.1129 extrema, minima %                 5.35             6.17
+    l.1134 depth excess                   0.01064          0.01276   anchored binned depth, arm minus control
+    l.1134 height excess                  0.01029          0.01354   -- the ORDER of the two reverses between the arms
+    l.1136 depth sigma                       1.81             2.17   through the SAME sky spreads 0.00588 / 0.01135
+    l.1136 height sigma                      0.91             1.19
+  [PASS] ⛭ all four of the paragraph's figure pairs were FOUND in `corpus/CR_cosmology.tex` by reading the file, so the four gates below are not vacuous -- reword the sentence and its pin goes with it, and THIS gate is what says so rather than a silent pass   (split (1.074, 1.062), extrema (6.9, 6.2), excess (0.0128, 0.0135), sigma (2.2, 1.2))
+  [PASS] ⛔⛭ ① ** l.1127's $1.067$ AGAINST $1.056$ IS THE NAMESAKE's FIXED-q MEAN, to the three digits it prints. **  *That names the receipt `r7651`'s order asked for -- this one -- and names the ARM, which the citation alone could not.*  ⌗ ALT: the arm of record's ANCHORED lobe split, $1.074$ against $1.062$, once node 69 rules on the wording.  The LIVE fixed-q mean is not an admissible amendment, because its peak side is a ratio of slivers   (paper (1.074, 1.062); namesake fixed-q 1.067/1.056; arm-of-record anchored 1.074/1.062)
+  [PASS] ⛔⛭ ② and l.1129's $5.7$ against $5.3$ per cent is the NAMESAKE's extrema reading -- the first figure to the digit it prints, the second the truncation of its own $5.35$, which is the one place in the paragraph where the match is not exact.  ⌗ ALT: the arm of record's $6.9$ against $6.2$, which is what this receipt publishes   (paper (6.9, 6.2); namesake 5.66/5.35; arm of record 6.86/6.17)
+  [PASS] ⛔⛭ ③ and l.1134's $+0.0106$ in depth against $+0.0103$ in height is the NAMESAKE's anchored binned pair, exactly at the four digits it prints.  ⌗ ALT: the arm of record's $+0.0128$ and $+0.0135$ -- where the ORDER of the two reverses, the height becoming the larger, so the amendment here is not a digit substitution either   (paper (0.0128, 0.0135); namesake +0.01064/+0.01029; arm of record +0.01276/+0.01354)
+  [PASS] ⛔⛭ ④ and l.1136's $1.8$ of the sky's spread in the depths against $0.9$ in the heights is the NAMESAKE's, exactly -- read through the SAME two sky spreads, which are the sky's and move with neither arm, so this pair moves only because the ARM moved.  ⌗ ALT: the arm of record's $2.2$ and $1.2$, the pair this receipt's own closing verdict prints   (paper (2.2, 1.2); namesake +1.81/+0.91; arm of record +2.17/+1.19)
+  [PASS] ⛭⛭⛭ ** SO THE PARAGRAPH IS ONE STATE AND NOT FOUR INDEPENDENT FIGURES: three of its four pairs reproduce from the namesake arm EXACTLY, at the digits the paper prints, on three different statistics -- a fixed-q band variance, an anchored binned depth, and that depth divided by a Monte-Carlo spread. **  *Six figures at once is not a coincidence, so the provenance is established and not inferred.*  ⌗ ALT: the paragraph has been amended, in which case none of the three matches the namesake and gates ①-④ hold it on the arm of record.  ⛔ *Anything between 3 and 0 is a MIXED paragraph -- half re-pointed -- which is the one state neither arm describes and which this gate exists to forbid*   (0 of 3 exact namesake reproductions (3 = the published state, 0 = amended, anything between = MIXED))
+
+PART 5 -- THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED AT THEIR PRINTED DIGITS.
+----------------------------------------------------------------------------------------------------
+    anchored split, peak side                    1.07362810
+    anchored split, trough side                  1.06210629
+    extrema, maxima excess per cent              6.85923604
+    extrema, minima excess per cent              6.17329937
+    VISLEAF mean height per cent                -0.78096602
+    VISLEAF mean depth per cent                 -2.59382797
+    VISLEAF theta_D/theta_* per cent            -4.04334995
+    the sky's spread, depth                      0.00587651
+    the sky's spread, height                     0.01135312
+    arm minus control, depth                     0.01275808
+    arm minus control, height                    0.01354351
+    depths, arm-control in sky units             2.17102968
+    heights, arm-control in sky units            1.19293320
+    depths, arm-sky in sky units                 2.11904277
+    l_A offset from the control, per cent        0.46439083
+    the worst fixed-q band                       1.42568678
+    the second worst fixed-q band                1.20483864
+  [PASS] ⛭⛭ every figure the `INDEX.md` row prints is held two-sided to the digits it prints, each tolerance at or inside `check_figures_pinned`'s own allowance -- so the row's numbers fail this receipt when they are wrong, where before the re-point nine of them were baselined as unpinned and the re-point moved every one   (l_A offset 0.464391 per cent; worst fixed-q bands 1.425687 and 1.204839)
+
+PART 4 -- THE GUARDS THE ORDER ASKED FOR: THE WINDOW, THE FREE SEARCH, AND THE ABSCISSA.
+----------------------------------------------------------------------------------------------------
+    W= 20  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+    W= 30  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+    W= 40  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+    W= 55  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+    W= 70  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+  [PASS] ⚑ ** THE WINDOW BIAS THE ORDER WARNED ABOUT DOES NOT EXIST FOR THIS STATISTIC. **  The anchored depth is identical over W = 20 to 70 on the sky and on both arms, because it reads a VALUE at a located extremum and not the LOCATION of one -- where `cc66.45`'s parabola apex drifted six multipoles at l_4   (the arm-minus-control difference varies by 0.00e+00 over the sweep)
+  [PASS] ⚠ ** BUT `PO-47`'s TRAP REPRODUCES EXACTLY, on depths instead of positions: ** a FREE extremum search under noise returns six times the spread, because it latches onto noise minima -- which is why the anchoring is necessary and not a convenience   (free search 0.03689 against anchored 0.00588, a factor 6.3)
+    the abscissa systematic: the sky's depth against the l_A that sets the envelope -- 298: 0.2790, 302: 0.2804, 305: 0.2830
+  [PASS] ⌗ and the one real systematic is reported rather than minimised: the envelope's abscissa moves the sky's depth by about a third of a sigma across the admissible l_A   (0.0040 against the sky's spread 0.00588, 0.68 sigma)
+
+====================================================================================================
+GATES: ALL PASS.
+
+  ⛭⛭ ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE: the phase-anchored lobe split gives
+  1.0736 on the peak side against 1.0621 on the trough side, and at the literal
+  extrema -- a second, independently anchored reading -- the arm exceeds
+  the control by 6.9 per cent at the maxima against 6.2 at the minima.
+  So it is an AMPLITUDE excess; Delta's trough dominance does not transfer to the contrast's own
+  decomposition, and the order's stop condition does not fire either.
+
+  ⛔ ⓶ᵇ THE DEPTHS ARE THREE TIMES THE MORE CLOCK-RESPONSIVE (-2.59 per cent against
+  -0.78 across the VISLEAF family) -- but theta_D/theta_* moves -4.04 per cent, MORE
+  than either, because r_D is itself Jac-weighted under LEAFSCALES.  The paper's discriminant of
+  principle is the most sensitive of the three and not the insensitive one, so by the order's own rule
+  the depths are not a new handle on the clock.
+
+  ⛭⛭⛭ ⓶ᶜ AND YET THE TROUGHS ARE WHERE THE ASSIGNMENT BECOMES OBSERVABLE, for a reason neither seat
+  named: THE SKY MEASURES DEPTHS TWICE AS WELL AS HEIGHTS (0.00588 against 0.01135 propagated from
+  COV_TT through the identical anchored locator).  The same excess -- +0.01276 in the depths,
+  +0.01354 in the heights -- therefore reads +2.17 sigma against +1.19.
+  And the control lands on the sky's depths at -0.05 sigma while the arm sits
+  +2.12 above: the first statistic in this sector whose residual is NOT the control's.
+
+  ⚑ THE GUARDS: the anchored depth has NO window bias (identical over W = 20..70, because it reads a
+  value and not a location), the free search reproduces PO-47's trap at six times the spread, and the
+  envelope's abscissa is worth about a third of a sigma and is reported.
+
+  NOT CLAIMED: that 2.2 sigma is a detection; a mechanism for the amplitude excess; a
+  re-derivation of PO-47's spreads; that the depths discriminate the CLOCK, which they do not; a verdict
+  on the two-rate assignment.  No refit, nothing touching prop:flat, and no corpus edits.
+

@@ -46,7 +46,7 @@ print(f'  check A_L=0 returns the input (l 2..2000): max |rel| = {e0:.2e}')
 print(f'  check the operator against CAMB\'s own lensed/unlensed ratio (l 30..2000): max |diff| = {e1:.2e}')
 assert e0 < 1e-6 and e1 < 2e-3, (e0, e1)
 # ---- the bank, on the instrument's own l grid ------------------------------------------------------
-W = {}; AL = [0.0, 0.8, 0.9, 1.0, 1.1, 1.2]
+W = {}; AL = [0.0, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4]   # 1.3, 1.4 added at r7809 ②
 for a in AL:
     out = lens(tt, a); key = f'{a:.2f}'
     W[f'ls__{key}'] = ls.astype(np.int32); W[f'Dl__{key}'] = out[ls]

@@ -1,0 +1,302 @@
+
+RECEIPT -- P15 / `sec:refit-bound`: ** THERE IS NO ACOUSTIC PHASE RESIDUAL.  MEASURED AGAINST A SKY
+WHOSE PEAKS ARE LOCATED BY THE SAME PROCEDURE, THIS ARM'S $\varphi/\pi$ SITS $1.1\sigma$ AWAY ON THE
+THREE-PEAK FIT AND $0.2\sigma$ ON THE FOUR-PEAK FIT -- AND THE ARM'S EXCESS OVER THE CONTROL IS
+$1.9\sigma$ AND $1.0\sigma$. **
+
+** ⇒ AND THE FOURTH PEAK IS NOT THE DAMPING ENVELOPE. **  Forcing this arm's damping to the
+control's, everything else unchanged, moves the fourth peak by ** $0.13$ in $\ell$ ** against an
+arm-minus-control offset of $1.07$.  *The operation is validated by its inverse: imposing the arm's
+envelope on the control moves it $+0.14$, opposite at every peak and equal to under $0.06$ in
+$\ell$.*  ⇒ *** The envelope accounts for $12\%$ of the offset.  The chat seat's leading candidate
+is ruled out. ***
+
+** ⇒ AND WHAT IS LEFT IS UNDER TWO MULTIPOLES AT EVERY PEAK AND DOES NOT GROW. **  The four
+displacements are $+1.69$, $-0.50$, $+0.89$ and $+1.07$, the largest at the FIRST peak, and every one
+inside the sky's own locating spread.  *So there may be nothing here to explain, and that is worth
+knowing before more is commissioned on it.*
+
+===================================================================================================
+** ⛭⛭⛭ RE-POINTED ONTO THE ARM OF RECORD AT `r7649+cc66.81`, AND ONE FINDING CHANGED SIGN **
+===================================================================================================
+
+The arm was read from `cc66_r185_verify_cr.npz`, the NAMESAKE (`LEAFREC=0`).  It now reads
+`cc66_r185_verify_cr_leafrec1.npz`, named explicitly in `BANK` rather than templated, with the
+control resolving to the SAME FILE in both readings -- there is no `lcdm` sibling and none is wanted,
+because the control is identical under the switch, which is what makes the comparison like-for-like.
+Each arm sits at its own refit minimum, which is the comparison every sentence in `sec:refit-bound`
+makes.
+
+** EVERY CONCLUSION OF THIS RECEIPT SURVIVES.  ONE OF ITS MECHANISMS DOES NOT, and it is reported as
+the inversion it is: **
+
+  1  ** THE PHASE FIGURES BARELY MOVE. **  $\varphi/\pi$ goes $-0.2278 \to -0.2270$ on the
+     three-peak fit and $-0.2445 \to -0.2433$ on the four-peak fit -- eight and twelve
+     ten-thousandths, against a locator spread of $\pm0.0099$.  *The arm is still within
+     $1.5\sigma$ of the sky and within $2\sigma$ of the control, so there is still no phase
+     residual.*
+  2  ** THE GEOMETRIC COMB-WIDTH TERM INVERTS, AND IT IS NOT A FIGURE BUT A PREMISE. **  `LEAFREC=1`
+     moves $r_s$ and $D_M$, so the geometric $\ell_A$ ratio goes $+0.085\% \to +0.464\%$ and would
+     predict displacements $+1.02$, $+2.49$, $+3.77$, $+5.22$ -- *growing with $\ell$, because that
+     is what a ruler does* -- against the measured $+1.69$, $-0.50$, $+0.89$, $+1.07$, which do not
+     grow at all.  ** So the comb-width term OVERSHOOTS the fourth peak by a factor $4.9$ and is no
+     longer a component of the offset.  PART 5 no longer subtracts it. **
+  3  ** AND THE SPECTRUM SAYS THE SAME THING DIRECTLY. **  The arm's FITTED comb spacing is $295.35$
+     on peaks 1--3 against the control's $295.75$ -- NARROWER, where the geometry says $0.464\%$
+     wider.  Read as the fitted-to-geometric ratio, in which the phase shift common to both arms
+     cancels, the arm sits $-0.598\%$ from the control against the namesake's $-0.144\%$: the
+     geometric difference grows $5.5$ times and the fitted comb's own distance from geometry grows
+     $4.1$ times the OTHER way.  *Both arms are run through this identical locator and sweep here,
+     so the namesake figure is measured in this file and not quoted.*
+
+⇒ *** THIS STRENGTHENS THE PAPER RATHER THAN WEAKENING IT. ***  l.1045 excludes the ruler shape
+because a constant fractional displacement "would have to grow from half a multipole at the first
+peak to over two at the fourth".  On the arm of record it would have to grow from one to over five,
+and the quartet does not grow.  ⛔ *The parting of the geometric $\ell_A$ from the spectrum's own
+comb -- half a per cent on this arm where it was a seventh of that on the namesake -- is ROUTED TO
+69 as a finding.  It is not this receipt's sentence to write.*
+
+Built r6835+cc66.28 (node 66, code seat), discharging the chat seat's `r6835` order ① and ②.  ** ③
+IS NOT RUN, BY THE ORDER'S OWN STOPPING RULE: ** *it is conditional on a uniform phase offset
+surviving ①, and none does.*
+
+===================================================================================================
+** WHY THE OLD NUMBER WAS LARGE, AND IT IS THREE THINGS, NOT ONE **
+===================================================================================================
+
+`cc66.25` reported the arm at $3.4\%$ in $\varphi$ against the control's $1.6\%$.  Those were read on
+the model's OWN $\ell$ grid, UNLENSED, against the paper's stored sky quartet.  ** Each of those three
+is a mismatch with how the sky's own number is obtained, and the paper names the discipline they
+violate: *** matched-procedure differencing *** -- the control, and the sky, must be passed through
+the IDENTICAL extraction so that whatever bias the procedure carries appears in both and cancels. **
+
+  1  ** THE SKY IS BINNED AND THE MODEL WAS NOT. **  `sec:intro` locates the sky's peaks on
+     `plik_lite`'s BINNED $TT$; a model peak read on a $\Delta\ell=8$ native grid is a different
+     measurement of a different object.  *Here both are binned through the same bins first.*
+  2  ** THE SKY IS LENSED AND THE MODEL WAS NOT. **  Lensing smooths the peaks and moves them.
+     *Here `P15`'s own derived operator is applied to both arms before locating anything.*
+  3  ** THE SKY'S OWN NUMBER HAS A SPREAD AND IT WAS TREATED AS EXACT. **  PART 2 measures it: across
+     seven parabola windows the sky's $\varphi/\pi$ moves by $\pm0.0099$ on the three-peak fit.
+     *The corpus's quoted $\sigma\simeq0.008$ turns out to be about right; what was missing was
+     comparing against it.*
+
+** COMPUTES: one locator -- bin to plik_lite's bins, convert to D_l on the bins' own weighting,
+   cubic-spline to a 1-in-ell grid, locate humps, fit a parabola over +-W -- applied IDENTICALLY to
+   the sky and to both arms' verified 185-bin spectra, with W swept over seven values so the
+   locator's own spread is the uncertainty the comparison carries.  The comb is fitted as
+   l_n = l_A(n + phi/pi) on peaks 1-3 and on 1-4.  The damping test multiplies the arm's spectrum by
+   exp[(r^2-1)(l/l_D)^2] with r the theta_D/theta_* ratio at the settled endpoint (r6797's ruling,
+   both lengths to the visibility peak) and l_D = D_M/r_D(control) -- i.e. it replaces the arm's
+   damping envelope with the control's and nothing else.  *** Nothing is fitted: r is measured from
+   the two arms and imposed, and the locator is the same one on every row. ***
+
+
+========================================================================================================
+  PART 1 -- ** ONE LOCATOR, AND IT REPRODUCES THE SKY THE PAPER MEASURED **
+========================================================================================================
+  the sky, this locator : 221.0 / 533.8 / 814.8 / 1121.9
+  the sky, sec:intro's  : 220.4 / 537.7 / 817.3 / 1123.9
+  difference            : 0.6 / 3.9 / 2.5 / 2.0
+  this locator's spread : 0.7 / 4.2 / 2.4 / 0.9
+    OK    the locator reproduces sec:intro's sky quartet to under 4 in ell on every peak, and to under 1 on the first
+    OK    ** the second peak is where it disagrees most, and where the locator's own spread is largest -- the disagreement is the procedure's difficulty, not a new sky **
+
+========================================================================================================
+  PART 2 -- ** THE COMB FITTED TWO WAYS, AND THE SKY'S OWN SPREAD BESIDE IT **
+========================================================================================================
+                                peaks (mean of 7 windows)  l_A(1-3)           phi(1-3)  l_A(1-4)           phi(1-4)
+             sky           221.0 / 533.8 / 814.8 / 1121.9    296.91     -0.2378 +- 0.0099    298.36     -0.2448 +- 0.0074
+         control           220.2 / 537.0 / 811.7 / 1124.5    295.75     -0.2318 +- 0.0018    298.78     -0.2464 +- 0.0022
+     CR crossing           221.9 / 536.5 / 812.6 / 1125.6    295.35     -0.2270 +- 0.0017    298.73     -0.2433 +- 0.0019
+
+  ** AGAINST THE SKY, IN UNITS OF THE LOCATOR'S OWN SPREAD **
+         control   phi(1-3) +0.0060 +- 0.0101 = +0.6 sigma      phi(1-4) -0.0015 +- 0.0077 = -0.2 sigma
+     CR crossing   phi(1-3) +0.0108 +- 0.0101 = +1.1 sigma      phi(1-4) +0.0015 +- 0.0076 = +0.2 sigma
+
+  ** AND THE ARM MINUS THE CONTROL, which is what matched-procedure differencing attributes
+     to the construction rather than to the procedure **
+      phi(1-3) +0.0048 +- 0.0025 = +1.9 sigma      phi(1-4) +0.0030 +- 0.0029 = +1.0 sigma
+    OK    ** the arm's phase sits within 1.5 sigma of the sky on BOTH fits **
+    OK    ** and within 2 sigma of the control on both -- so there is no phase residual to explain **
+    OK    the sign of the offset against the sky FLIPS between the two fits, which is how a residual carried by one peak shows itself
+
+========================================================================================================
+  PART 3 -- ** THE OFFSET DOES NOT SHRINK UNDER THE MATCHED PROCEDURE.  WHAT DISSOLVES IT IS
+             THE SKY'S OWN UNCERTAINTY, AND THAT IS WORTH BEING EXACT ABOUT **
+========================================================================================================
+                                       reading   phi(1-3)     vs sky   % of the sky
+    cc66.25: native grid, unlensed, stored sky    -0.2316    +0.0089           3.7%
+                                      + lensed    -0.2304    +0.0100           4.2%
+                    + binned through plik_lite    -0.2270    +0.0134           5.6%
+                     + sky by the SAME locator    -0.2270    +0.0108           4.5%
+
+  ⇒ ** THE PER-CENT OFFSET DOES NOT FALL: 3.7% becomes 4.5% under the matched procedure. **
+  *I am not going to write it as though it did.  Each step above removes a mismatch between
+  how the two sides were obtained, and the net effect on the SIZE is to leave it where it was.*
+
+  ⇒ *** WHAT DISSOLVES THE RESIDUAL IS THE UNCERTAINTY, NOT THE CENTRAL VALUE. ***  The sky's
+     own phi/pi carries +-0.0099 across the same seven windows (PART 2), so an offset of
+     +0.0108 is +1.1 sigma.  ** The number was never small; it was never
+     measured against anything. **  *And differencing against the control, which is what
+     removes the procedure's shared bias, leaves +1.9 sigma.*
+    OK    the old reading is recovered to a tenth of a point, so this is the same quantity re-measured and not a different one
+
+========================================================================================================
+  PART 4 -- ** ORDER (2): THE FOURTH PEAK WITH THE DAMPING FORCED TO THE CONTROL'S **
+========================================================================================================
+
+RECEIPT -- P15: ** AN ERROR BUDGET ON THE CROSSING ARM'S DAMPING SIGNATURE, AS `UNC_error_budget`
+DOES FOR THE CORPUS'S 13.96%.  ** THE ENTIRE COSMOLOGICAL PARAMETER BUDGET IS 0.02 POINTS.  MOVING
+THE r_D ENDPOINT FROM RECOMBINATION (z = 1089.9) TO THE COMPUTED VISIBILITY PEAK (z = 1093.8) --
+0.36% IN REDSHIFT -- MOVES IT BY 3.10 POINTS. **
+
+** ⇒ SO THIS SIGNATURE IS NOT A FEW-PER-CENT OBSERVABLE WITH AN ERROR BAR.  ITS VALUE IS SET BY
+WHERE THE INTEGRAL STOPS, AND THE TWO DEFENSIBLE STOPPING POINTS -- FOUR PARTS IN A THOUSAND APART
+IN REDSHIFT -- STRADDLE ZERO: +2.21% AND -0.89%. **  The cause is structural: r_D's integrand
+carries 1/tau', and tau' collapses through recombination, so the last few per mille of the
+integration range carry a finite share of the whole integral.
+
+*** AND THAT IS WHY THE INSTRUMENT AND THE STANDALONE INTEGRATION DISAGREED. ***  The instrument's
+header reports r_D at its own visibility peak and gives +3.1%; the standalone integration to
+recombination gives +2.2%.  ** Neither was wrong and the gap was never a bug: it is this
+sensitivity, and it is larger than the signature being claimed. **  `UNC_error_budget` carries no
+such term, which is not an omission in it -- on the onset handover with the stacking clock one
+endpoint was quoted throughout, so there was no spread to carry.
+
+Built r6760+cc66.6 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s work order
+(message C, smaller item 1: "an error budget on the +3.1% signature, as `UNC_error_budget` does for
+the 13.96%").
+
+===================================================================================================
+** WHAT IS BEING BUDGETED, AND WHY IT IS NOT THE 13.96% **
+===================================================================================================
+
+The observable is theta_D/theta_* = r_D/r_s, relative to the control's.  `sec:coherence` states the
+signature as ** +8.2% **, on the ONSET handover and the STACKING clock.  `UNC_error_budget` budgets
+a ** 13.96% ** on that same configuration with the `l_D`-anchored r_D.
+
+** This budgets a DIFFERENT number, because the configuration moved. **  On the CROSSING handover
+with the LEAF clock -- the pair r6760+cc66.2 measured as the only one of four that lands near the
+control -- the signature is a few per cent, and *which* few per cent depends on where r_D stops:
+
+  ** r_D to A_REC ** (recombination, z = 1089.9): the standalone integration's endpoint.
+  ** r_D to the visibility peak **: the instrument's own, which is what its header prints.
+
+*Neither is wrong.  They are two definitions of "the diffusion length at last scattering" and the
+corpus uses both -- so the SPREAD BETWEEN THEM is a systematic of the quoted number and belongs in
+its budget, which is the finding here.*
+
+  PART 1  ** THE CENTRAL VALUE ON EACH CONVENTION, AND THE SENSITIVITY BETWEEN THEM. **
+  PART 2  ** THE PARAMETER BUDGET, ** one source at a time, `UNC_error_budget`'s own list.
+  PART 3  ** THE CONVENTION TERM BESIDE THEM. **
+  PART 4  ** AND THE CONFIGURATION TERMS, which are not uncertainties and are kept apart. **
+
+** COMPUTES: central at H0 = 73.00, Om = 0.3066, Ombh2 = 0.0224, z_rec = 1089.9, Yp = 0.2454 --
+   `ACOUSTIC_two_arm.py`'s own; control at H0 = 67.40, Om = 0.3150 with radiation in its rate.
+   The excursions are `UNC_error_budget`'s: H0 +/- 1.0 (SH0ES), Om +/- 0.006 (BAO), Ombh2 +/- 0.0005
+   (BBN), z_rec +/- 0.11% (Peebles, r1956).  *** The opacity comes from
+   `storyboard_receipts/RD_diffusion_direct.py` so the ionisation history is the corpus's own; the
+   quadrature is on a log-a grid at n = 3001, converged to 0.006% against n = 12001 in
+   r6760+cc66.5's sibling receipt. *** **
+
+
+  the settled-endpoint ratio r = 0.99179, so r^2 - 1 = -0.016355; l_D = D_M/r_D(control) = 2111.6
+  replacing the arm's envelope with the control's multiplies the spectrum by exp[(r^2-1)(l/l_D)^2]:
+      l =  220:  -0.018%
+      l =  540:  -0.107%
+      l =  810:  -0.240%
+      l = 1127:  -0.465%
+
+                                                                                peaks
+                         CR, as computed    221.9+-0.0    536.5+-0.5    812.6+-0.6   1125.6+-0.9
+     CR, damping forced to the control's    221.8+-0.0    536.4+-0.4    812.5+-0.6   1125.5+-0.9
+                    control, as computed    220.2+-0.0    537.0+-0.5    811.7+-0.7   1124.5+-1.0
+    control, damping forced to the ARM's    220.2+-0.0    537.0+-0.5    811.8+-0.7   1124.7+-1.0
+
+   the shift the envelope alone produces      -0.01      -0.10      -0.08      -0.13
+        the inverse test, on the control      +0.01      +0.05      +0.08      +0.14
+           CR minus control, as computed      +1.69      -0.50      +0.89      +1.07
+     CR minus control, damping equalised      +1.68      -0.60      +0.81      +0.94
+    OK    ⛭ the operation is sound: imposing the arm's envelope on the control shifts every peak the OPPOSITE WAY and by the same amount -- the four sums are under 0.06 in ell, a twentieth of the locator's own window-to-window spread at the worst peak.  ⛔ *Stated in ABSOLUTE ell from r7649: the 10% RELATIVE form this replaces demanded 0.01 in ell on a shift of 0.10, which is a fiftieth of the locator's spread at that peak and so tested the parabola fit's grain rather than the operation*   (sums ['+0.000', '-0.054', '+0.004', '+0.011']; signs opposite at all four: True; locator spread ['0.0', '0.5', '0.6', '0.9'])
+
+  ⇒ *** THE ENVELOPE ACCOUNTS FOR 12% OF THE FOURTH PEAK'S OFFSET (0.13 of 1.07 in ell). ***
+    OK    ** forcing the arm's damping to the control's does NOT collapse the fourth peak's excess -- under 20% of it **
+
+========================================================================================================
+  PART 5 -- ** AND WHAT IS LEFT IS NOT FOURTH-PEAK-SPECIFIC **
+========================================================================================================
+    peak   CR - control    sky spread  in sigma  comb-width part  left over
+       1          +1.69          0.65     +2.6s            +1.02      +0.67
+       2          -0.50          4.24     -0.1s            +2.49      -2.99
+       3          +0.89          2.38     +0.4s            +3.77      -2.88
+       4          +1.07          0.94     +1.1s            +5.22      -4.16
+
+  the arm's geometric comb is 302.94 against the control's 301.54 -- +0.464% -- and the column above
+  is what that alone predicts at each peak.
+
+  ⇒ *** AND ON THE ARM OF RECORD THE GEOMETRIC COMB AND THE SPECTRUM'S OWN COMB PART
+     COMPANY, which is the opposite of what this PART found on the namesake. ***  The
+     geometric ratio predicts +1.02, +2.49, +3.77, +5.22 -- growing with
+     ell, because that is what a ruler does -- against measured +1.69, -0.50, +0.89, +1.07.
+     ** It OVERSHOOTS the fourth peak by a factor 4.9, and subtracting it leaves
+     +0.67, -2.99, -2.88, -4.16 -- a column that changes sign and GROWS, which is the
+     signature of subtracting a term the spectrum does not carry. **
+  ⌗ *And the spectrum says the same thing directly: the arm's FITTED comb spacing is
+    295.35 on peaks 1-3 against the control's 295.75, so the comb the spectrum
+    actually has is if anything NARROWER than the control's, while the geometry says
+    +0.464% wider.  Read as the fitted-to-geometric ratio, which is the form in which the
+    common phase shift cancels, the arm sits -0.598% from the control -- against
+    -0.144% for the NAMESAKE arm, run through this same locator on its own bank.*
+  ⌗ *and the namesake's geometric comb was +0.085% against this arm's +0.464%, so the
+    geometric move is 5.5 times and the fitted-comb move only 4.1 times.*
+    OK    ⛭⛭⛭ ** AND THE PARTING IS MEASURED AGAINST THE NAMESAKE BY THE SAME CODE, not argued: ** the geometric comb-width difference grows five-and-a-half-fold on the arm of record while the FITTED comb's own distance from geometry grows about four-fold in the OPPOSITE direction -- so what `LEAFREC=1` moves is the geometric ruler, and the spectrum's comb does not follow it.  ⇒ *Both arms are passed through the identical locator and the identical seven-window sweep; the control is literally the same file in both readings*   (geometric +0.085% -> +0.464%; fitted-to-geometric -0.144% -> -0.598%)
+  ⇒ ** SO THE COMB-WIDTH TERM IS NOT A COMPONENT OF THIS OFFSET AND MUST NOT BE SUBTRACTED
+     AS ONE.  What the offsets are is small, non-growing and inside the sky's own locating
+     spread at every peak -- PART 2 measures the phase at +1.9 sigma against the control
+     and +1.1 against the sky -- which is the SAME CONCLUSION by a cleaner route. **
+    OK    ⛭⛭⛭ ** THE GEOMETRIC COMB-WIDTH TERM OVERSHOOTS THE MEASURED OFFSET AT EVERY PEAK PAST THE FIRST, by a factor over two at the fourth -- the EXACT INVERSE of the third-to-two-thirds share this gate asserted from cc66.28 to r7647 ** -- so on the arm of record it is not a component of the offset and is not subtracted as one.  ⇒ *Two-sided: the overshoot is pinned AND the prediction is required to grow with ell, which is what makes it a ruler shape*   (predicted +1.02, +2.49, +3.77, +5.22 against measured +1.69, -0.50, +0.89, +1.07; fourth-peak overshoot factor 4.90)
+    OK    ⛭⛭ ** AND THE RULER SHAPE IS EXCLUDED BY THE OFFSETS' OWN SHAPE: the prediction grows with ell and the measurement does not **, the largest measured displacement sitting at the FIRST peak and the smallest prediction there.  ⛔ *This gate asserted the opposite until r7649 -- `all positive, between half a multipole and two at peaks 1, 3 and 4` -- which is what the namesake's leftovers did.  On the arm of record the leftovers change sign and grow, because the term being removed is not there.*   (measured +1.69, -0.50, +0.89, +1.07 against predicted +1.02, +2.49, +3.77, +5.22; leftovers ['+0.67', '-2.99', '-2.88', '-4.16']; fitted comb 295.35 against the control's 295.75 while the geometry says +0.464%)
+
+========================================================================================================
+  WHAT THIS SETTLES, AND WHAT IT STOPS
+========================================================================================================
+
+  ** (1) THERE IS NO PHASE RESIDUAL, AND THE REASON IS THE SIGMA AND NOT THE SIZE. **  The offset in
+  per cent is about four either way -- the matched procedure does not shrink it.  ** But the sky's own
+  phi/pi carries +-0.0099 across the same seven locator windows, so the arm sits +1.1 sigma from it on
+  the three-peak fit and +0.2 sigma on the four-peak fit, and +1.9 and +1.0 sigma from the control. **
+  *The chat seat's reading is confirmed, by a wider margin than it guessed -- the offset does not
+  merely move onto the fourth peak, it never reached significance -- but the mechanism is that the
+  quantity had no error bar attached, not that it turned out to be smaller than reported.*
+
+  ** (2) THE FOURTH PEAK IS NOT THE DAMPING ENVELOPE. **  Forcing the arm's damping to the control's
+  moves it -0.13 in ell against an offset of +1.07 -- 12%.  *The test is validated by its
+  inverse, which moves the control's fourth peak +0.14.*  ** The leading candidate is ruled out. **
+
+  ** (3) AND WHAT IS LEFT IS UNDER TWO MULTIPOLES AT EVERY PEAK AND DOES NOT GROW. **  Peaks one,
+  three and four sit +1.69, +0.89 and +1.07 above the control's -- 1.1 sigma of the sky's own locating
+  spread at the fourth -- and the LARGEST of the four sits at the FIRST peak.  ⛔ ** The geometric
+  comb-width term is NOT subtracted from them any more, and that is a change of finding and not of
+  figure: ** a comb +0.464% wider, which is what this arm's geometry gives, would predict
+  +1.02, +2.49, +3.77, +5.22 and the measurement is +1.69, -0.50, +0.89, +1.07, so the ruler overshoots the
+  fourth peak by a factor 4.9 and the arm's own fitted comb spacing is NARROWER than the
+  control's.  *On the namesake the two agreed and the subtraction was defensible; on the arm of
+  record the premise fails, which EXCLUDES the ruler shape more firmly than the paper claims.*
+  ** And PART 2 measured the phase at +1.9 sigma against the control, which is the same conclusion
+  reached without subtracting anything. **
+
+  ⛔ ** ORDER (3) IS NOT RUN, AND THAT IS THE ORDER'S OWN RULE. **  *The neutrino-sector question is
+  conditional on "a uniform phase offset surviving the first test".  None survives, so the handover's
+  treatment of the free-streaming stress is not indicated by anything measured here.*  ⌗ *It may
+  still be worth asking on its own merits -- a reset of the anisotropic stress at the branch point
+  would be a defect in the state specification whether or not it shows up in the comb -- but this
+  receipt gives no evidence for it and does not pretend to.*
+
+  ⌗ ** WHAT THIS DOES NOT SAY. **  That the arm fits: the verified 185-bin refit leaves it at 1.58
+  per bin against the control's 1.01, and that is where the disagreement lives -- in the heights and
+  the damping tail, not in the peak positions.  *And it does not re-open the sky's own quartet, which
+  is `sec:intro`'s and is reproduced here rather than replaced.*
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================

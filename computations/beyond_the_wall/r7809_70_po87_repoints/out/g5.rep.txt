@@ -1,0 +1,57 @@
+
+RECEIPT -- P15: ** `r7229` ORDERED THE AUDIT I ROUTED AT `r7227` -- `compare the width of the
+four-peak selection against the width over all draws, and state whether the selection truncates`,
+with my own `r7221` burden adopted and 66's addition `if the selection does truncate, say what the
+13 becomes`.  *** IT DOES NOT TRUNCATE AND THE `$13\sigma$` STANDS AT `$12.9$`.  AND THE PEAK
+THAT GOES MISSING IS THE THIRD, NOT THE FOURTH, WHICH RETIRES THE NAME `cc66.164` GAVE ITS OWN
+`$52$` PER CENT AND THE ROUTE I TOLD 66 THE AUDIT WOULD TAKE. *** **
+
+** THE PREDICTION, PINNED AS A CONSTANT AND WRITTEN BEFORE ANY OF THIS WAS RUN (`PREDICT` below).
+   *`$\sigma(\mathrm{sel})/\sigma(\mathrm{all})\in[0.80,1.00]$`, most likely `$0.90$`--`$1.00$` --
+   the selection at most weakly truncating, so the `$13.1\sigma$` moves by under a fifth.  Because
+   the lost peak's survival is set by the noise in ONE band while the offset is an average over
+   the others, and every draw carries the SAME covariance, so there is no noisier-realisation
+   channel.  The one coupling available is the locator latching onto a noise maximum, which lives
+   in the TAIL rather than the robust core -- so the standard-deviation ratio should depart from
+   one by more than the robust ratio does.* **
+
+  ⓵ ** THE AUDITED NUMBER IS REBUILT TO `cc66.164`'s PUBLISHED DIGITS FIRST. **  *Same seed, same
+  draws, same covariance through the same merge matrix: robust `$\sigma(\varphi)=0.00955$`,
+  `$13.1\sigma$` for one driving unit, `$0.79\sigma$` for the sky, `$52$` per cent returning four
+  peaks.  **An audit that cannot reproduce the number it audits is auditing a different number.***
+
+  ⓶ ⛔⛭ ** AND THE FIRST THING THE AUDIT FINDS IS THAT MY OWN ROUTE DOES NOT EXIST. **  *I told 66
+  that `$47$` of the `$48$` per cent return three peaks so a three-peak statistic is defined on
+  `$99$` per cent of draws.  `$47$` per cent DO return three of four -- but **the slot that goes
+  `nan` is the THIRD peak, in `$3460$` of `$3791$` such draws, and the FOURTH peak is located in
+  `$95.9$` per cent of all draws.**  ⇒ *So the three-peak statistic covers `$56$` per cent, not
+  `$99$`, and `cc66.164`'s `Ⓓ⑤` -- `what bounds it is the fourth peak's existence` -- names the
+  wrong peak.  The `$48$` per cent is right; its CAUSE was not.*
+
+  ⓷ ⛭⛭ ** THE HANDLE THAT DOES COVER THE ENSEMBLE IS THE OFFSET ON PEAKS `$1$`--`$2$`, DEFINED ON
+  `$99.4$` PER CENT OF DRAWS, AND ON IT THE SELECTION DOES NOT TRUNCATE. **  *Robust width inside
+  the four-peak selection against over the whole ensemble: a ratio of `$0.982$`, bootstrap
+  interval clear of the `$10$` per cent threshold fixed in advance.  ⌗ *The discarded draws are
+  mildly wider -- `$1.04\times$` -- so the selection is not perfectly neutral; it is just far too
+  weak to matter.*
+
+  ⓸ ** AND A SECOND HANDLE THAT DOES NOT GO THROUGH A WIDTH AGREES. **  *The loss rate by quintile
+  of how far the offset already is from the median: a truncating selection would show the rate
+  RISING with distance, because that is what truncation IS.*
+
+  ⓹ ⛭⛭⛭ ** SO WHAT THE `$13$` BECOMES, WHICH IS THE DELIVERABLE: `$12.9$`. **  *Carrying the
+  measured ratio across to the four-peak width -- the only route, since the four-peak statistic
+  does not exist off the selection -- the published `$13.1\sigma$` for one driving unit becomes
+  `$12.9$` and the sky's `$0.79\sigma$` becomes `$0.78$`.  **`r7229`'s first branch fires: the
+  figure stands and the `$52$` per cent goes back to being an existence bound alone** -- now an
+  existence bound on the THIRD peak.*
+
+** COMPUTES: `cc66.164`'s draw ensemble rebuilt at its own seed and again at four times the draws
+   on a second seed; the per-slot location rate of the locator's four peaks; the common offset
+   formed on peaks `$1$`--`$2$`, `$1$`--`$3$` and `$1$`--`$4$` from ONE located series per draw;
+   robust and standard widths inside and outside the four-peak selection with a bootstrap on the
+   ratio; the loss rate by quintile of offset distance; and the corrected sigma and sigma-counts.
+   *** No new spectrum, no fit, no refit.  Nothing here is a new instrument. *** **
+
+
+  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: /home/user/shadow-of-existence/computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1_leafrec1

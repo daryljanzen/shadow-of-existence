@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_control_entered_the_regime_and_the_arm_did_not_move.py", line 101, in <module>
+    assert 'manifest' not in _np_h.load(_os_h.path.join(_SP_H, _n_h + '.npz')).files, f'{_n_h} is not the LEAFREC=0 namesake'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: c54.178_cr_leafrec1 is not the LEAFREC=0 namesake
