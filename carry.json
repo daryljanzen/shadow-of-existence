@@ -11245,6 +11245,15 @@
   }
  },
  "main": {
+  "suite": {
+   "receipts/L_probability/S18_the_one_seven_one_was_never_a_rewriting_queue_and_the_grain_clause_cannot_ratify_forty_six_character_windows.py": {
+    "gates": [
+     "\u24b6\u2461\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43904774898",
+    "since": "6c0238c101819567a2534463d36915ab724e0b87"
+   }
+  },
   "tolerance": {
    "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43893562629",
