@@ -180,10 +180,29 @@ def _tree_is_bL_plus_dneff(bL):
     """⛭ `r7801+70`: the working tree may be LATER than the LEAFGEOM=1 leg's blob by exactly two additions,
     the `DNEFF` and `YHE` knobs (PO-24's N_eff and Y_He response banks): their assignments, their
     `if ... is not None` blocks and their config keys.  Unset, none of it runs, so the instrument that produced the leg is still the one on
-    disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red."""
+    disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red.
+
+    ⛭ EXTENDED `r7807+cc66`: a THIRD addition, `POLSAVE`'s `config=_resolved_config()` keyword, added
+    at `69`'s r7807 order so the polarisation bank is decidable.  It is the SAME CLASS as the already
+    named `(c)` -- a metadata key written into a stored array, not a change to the spectrum -- and it
+    is dropped here on that ground and no other.  `POLSAVE` is off unless asked, so on this pair's
+    legs the call does not even execute.  ⛔ *It is dropped ONLY on a `savez` call, so an added
+    `config=` anywhere that could reach a spectrum still keeps this row red.*"""
     import ast as _ast
     class _Strip(_ast.NodeTransformer):
         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE'}
+
+        def visit_Call(self, node):
+            # ⛔ ONLY the POLSAVE call, identified by its first argument being `_POLS`.  Dropping
+            #   `config=` from every `savez` instead would strip it from the three SAVE sites too,
+            #   which the older blob already carries -- and the ASTs would then mismatch the OTHER
+            #   way.  That is the mistake this comment exists to stop being made again.
+            self.generic_visit(node)
+            f = node.func
+            if (isinstance(f, _ast.Attribute) and f.attr == 'savez' and node.args
+                    and isinstance(node.args[0], _ast.Name) and node.args[0].id == '_POLS'):
+                node.keywords = [k for k in node.keywords if k.arg != 'config']
+            return node
         def visit_Assign(self, node):
             t = node.targets[0]
             if isinstance(t, _ast.Name) and t.id in self.NAMES:
@@ -224,7 +243,9 @@ check("⛭⛔⛭ `r7779` ** ② AND THE ORDER'S \"LEAFGEOM THE ONLY DIFFERENCE\"
       "this revision, found the same way -- by reading the configs rather than the file names*",
       bS is not None and bL is not None and bS != bL and (cur == bL or _tree_is_bL_plus_dneff(bL)),
       f"LEAFGEOM-unset blob {bS}; LEAFGEOM=1 blob {bL}; working tree {cur}"
-      + ("" if cur == bL else " (differs from it only by r7801+70's DNEFF and YHE blocks and their config keys, inert unset)"))
+      + ("" if cur == bL else " (differs from it only by r7801+70's DNEFF and YHE blocks and their config"
+                              " keys, inert unset, and r7807+cc66's POLSAVE `config=` keyword, the same"
+                              " metadata class and off unless asked)"))
 
 # ---------------------------------------------------------------- (3) and the confound is inert
 def _blob(sha):

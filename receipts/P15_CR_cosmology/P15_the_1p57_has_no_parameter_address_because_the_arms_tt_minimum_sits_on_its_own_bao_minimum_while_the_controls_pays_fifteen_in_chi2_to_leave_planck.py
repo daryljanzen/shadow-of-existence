@@ -290,6 +290,20 @@ def _tree_is_bL_plus_dneff(bL):
     import ast as _ast
     class _Strip(_ast.NodeTransformer):
         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE'}
+
+        def visit_Call(self, node):
+            # ⛭ r7807+cc66: a third inert addition, POLSAVE's `config=_resolved_config()`, added at
+            #   69's order so the polarisation bank is decidable.  Same class as the COMBRHO config
+            #   key already accepted here: metadata written into a stored array, not a change to the
+            #   spectrum, and POLSAVE is off unless asked.  ⛔ Dropped ONLY on the `_POLS` call --
+            #   stripping `config=` from every `savez` would strip the three SAVE sites the older
+            #   blob already carries, and the ASTs would mismatch the other way.
+            self.generic_visit(node)
+            f = node.func
+            if (isinstance(f, _ast.Attribute) and f.attr == 'savez' and node.args
+                    and isinstance(node.args[0], _ast.Name) and node.args[0].id == '_POLS'):
+                node.keywords = [k for k in node.keywords if k.arg != 'config']
+            return node
         def visit_Assign(self, node):
             t = node.targets[0]
             if isinstance(t, _ast.Name) and t.id in self.NAMES:
