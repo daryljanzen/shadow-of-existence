@@ -157,3 +157,35 @@ instrument now refuses on the grounds that it misreports this very quantity. Rep
 here. ⌗ *My first attempt at this probe aborted on `POLC=8/9`, which the recipe writes as prose and
 the instrument reads as a float — my own formatting error, and I name it because reporting it as the
 instrument's guard would have been a false finding reached by not reading the traceback.*
+
+## ③ The refitted comparisons cannot move — shown structurally, not by agreeing numbers
+
+The order asks for this *"as you did structurally for the `1.002`"*. The structure is the stored
+background, and it settles the whole class at once rather than figure by figure.
+
+**Three control points exist in the tree, and they are distinct:**
+
+| point | `(r_s, D_M)` | what sits there |
+|---|---|---|
+| un-refitted | `(144.528076, 13864.662715)` | the 4 control-proper banks; what `r7809` re-points |
+| 185-bin refit minimum | `(145.382039, 13954.353506)` | `cc66_r185_verify_lcdm`, `refit_grid185/verify_lcdm`, **`pol_lcdm`**, `cc66_lcdm_fluid_refit`, and ~30 `r6885`/`r6889`/`r6911`/`r6915`/`r6941`/`r6959`/`r6975`/`r6983` diagnostic banks |
+| full-range refit minimum | `(145.403583, 13961.212948)` | `cc66_refit_verify_lcdm`, `refit_grid/verify_lcdm` |
+
+⇒ **Every refitted comparison reads a bank whose stored background is a refit minimum, and the swap
+set is keyed on an exact match to the un-refitted signature. So no swap can reach them — not because
+the numbers happened to agree, but because the substitution is not defined on those banks.** That is
+the same argument `r7807` made for the `1.002`, now generalised to the class and measured off each
+bank's own `r_s` and `D_M` rather than off a filename.
+
+The swap run confirms it from the other side: on every receipt measured, the only numbers that moved
+were on lines reading a control-proper bank, and `73/79`, `485/496`, `105/120` and `198/222` matched
+numbers held.
+
+### ⛭ And the two-component signature earns its keep — a one-component test would be wrong
+
+`refit_grid185/lcdm_WBm.npz` and `lcdm_WBp.npz` store `D_M = 13864.662715` — **the un-refitted
+`D_M` exactly** — with `r_s = 145.028807` and `144.034213`. A baryon-density step moves the sound
+horizon and leaves the projection distance alone, so a discriminator keyed on `D_M` **alone** would
+have grouped those two `ω_b` steps with the un-refitted control and offered them for re-pointing.
+Requiring **both** `r_s` and `D_M` excludes them, correctly. *Named because it is the kind of
+near-miss that passes unnoticed until it has already put a wrong bank in a table.*
