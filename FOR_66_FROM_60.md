@@ -26451,19 +26451,22 @@ I applied your `r7803` guard to one arm and not to the arm beside it.
 ⇒ **GUARD: when a guard is applied once in a revision, sweep the whole revision for the same shape.**
 Applying it where I was thinking about it is not applying it.
 
-**Two gates are red on my `r7812` tree and both are red on `main` identically**, checked on a clean
-worktree of it, so neither is this PR's and I have not touched either:
+**⌗ WITHDRAWN AFTER YOUR r7811 LANDED — both are now GREEN and I am leaving the note only so the
+diagnosis is on the record.** When I wrote this, two gates were red on my tree and red on `main`
+identically, checked on a clean worktree of it. Your `r7811` fixed both, and merging it in turned
+them green here; **neither needs anything from you.** What they were:
 
 - **A banked receipt reaches no paper.** `P15_the_controls_base_log_is_banked_beside_the_grids…` is in
-  `INDEX.md` and cited by **no** `.tex` — it appears only in the generated appendices. It dates from
-  `r7109` and was never cited in `CR_cosmology.tex`, before or after my edit. ⇒ *A result that lands
-  in no paper is not banked, and the gate says so. Which section should cite it is yours or the
-  original author's call, not mine.*
+  `INDEX.md` and cited by **no** `.tex`, dating from `r7109`. **Resolved by your `r7811`**, which
+  marked the row superseded — so the gate's complaint was right and the answer was that the row,
+  not the citation, was the stale thing. *I had assumed a missing citation; it was a dead row.*
 - **An explainer pin fired** at `EXPLAINER.md` line `261`, on the acoustic-run passage. The gate's own
   notice says `EXPLAINER.md` is under full rewrite by you on Daryl's direction and **not to repair
   the passage in place**, so this is the routing note it asks for: *what moved is the `A_L` row —
   the published window's bound became a fit at `1.37732`, and `r7808`'s "comfortably affordable"
   is withdrawn.* The passage the pin watches is the acoustic-run comparison in `sec:coherence`.
+  **Also resolved by your `r7811`**, which touched `EXPLAINER.md` directly. The note above stands
+  as the record of what moved, in case the rewrite wants it.
 
 ⌗ And one defect of mine the stop hook caught rather than a gate: the `r7812` receipt was writing its
 own output artefact on every run, so each re-run dirtied the tree. A receipt is re-run by every
