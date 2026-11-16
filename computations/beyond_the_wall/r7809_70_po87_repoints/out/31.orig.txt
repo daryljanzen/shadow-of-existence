@@ -1,0 +1,201 @@
+
+P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude
+=================================================================================================
+
+LEVEL: the verified 185-bin refit minima, re-scored through the full `plik_lite` bandpower
+covariance, with the figure's own banked numbers recomputed independently and gated against them.
+
+OBJECT UNDER TEST -- `PO-47`'s successor, routed at `r6879` alongside the figure:
+
+    "Binned means of (model - data)/sigma on diagonal errors give, for this arm: -0.22, -0.07,
+     +0.42, +1.46, -1.86, -0.06 ...  That is not a monotone offset -- it is a SWING, high through
+     700-900 and low through 900-1100 -- and the control shows the same pattern at about two-thirds
+     the amplitude.  So: IS THE RESIDUAL A PEAK-POSITION OR DAMPING-SHAPE MISMATCH RATHER THAN AN
+     AMPLITUDE ONE, and how much of it is shared with the control?  Report the band means on the
+     full covariance, the whitened version, and the shared fraction.  IF IT IS SHARED, IT IS THE
+     TRANSFER'S AND NOT THE CONSTRUCTION'S."
+
+-------------------------------------------------------------------------------
+WHAT THIS PROBE FINDS.
+
+** THE SWING IS REAL AND IT IS MOSTLY THE CONTROL'S. **  Whitened against the full covariance, the
+cosine between this arm's residual vector and the control's is +0.8476, and ** 71.8 per cent of the
+arm's chi^2 lies along the control's own residual direction **.  Projecting that direction out
+leaves 80.8 of 286.89.  On the order's own criterion that part is the TRANSFER'S and not the
+construction's -- the same distinction that has decided four questions in this sector.
+
+** AND THE BAND MEANS ARE A THIRD OF THE QUICK RENDER'S, WITH HALF OF THE DIFFERENCE DEMONSTRABLE. **
+Through the proper pipeline the arm's six band means are -0.61, -0.07, +0.33, +0.54, -1.06, -0.36
+against the render's -0.22, -0.07, +0.42, +1.46, -1.86, -0.06.  ** The shape reproduces -- high
+through band 4, low through band 5 -- and the amplitude does not. **  Fitting the single amplitude
+on DIAGONAL errors instead of the covariance, which is what a quick render does, moves the arm's
+amplitude 0.83% high and takes band 4 from +0.54 to +1.08: ** the metric used for the amplitude
+accounts for about half the inflation **, and the rest is in the render rather than here.
+
+** AND WHAT IS LEFT IS POSITION, NOT AMPLITUDE AND NOT TILT -- BUT IT IS SMALL. **  Against the same
+bins, fitting one further parameter on top of the amplitude:
+
+      peak-position rescale    best eps = +5.0e-4   dchi^2 = +1.67    <- the largest, but only just
+      damping-shape change     best fac = +1.5e-2   dchi^2 = +1.12
+      tilt  dn_s               best     = -2.5e-3   dchi^2 = +0.43
+
+and on the CONTROL the position direction buys +0.00 while the damping buys +0.30.  ** So the
+position/spacing direction is the only one of the three that is the construction's, and the tilt is
+exhausted -- the refit already spent it, a 1% tilt costing +13.4 in chi^2. **  But eps = +5.0e-4 is
+0.05 per cent in ell, about 0.6 multipoles at the fourth peak, consistent with the +2.0 measured
+there at `r6875+cc66.32`; and dchi^2 = 1.67 of 286.89 is ** under ONE per cent of the misfit **.
+
+** SO THE HONEST DECOMPOSITION IS: three quarters shared with the control and therefore the
+transfer's; of the remaining quarter, a position/spacing mismatch that is the construction's but
+accounts for under two per cent; and the bulk of the misfit absorbed by NONE of amplitude, tilt,
+damping or position. **  The shape is rejected and this receipt does not say by what.
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) The banked verified refit spectra, carried through P15's derived lensing operator and binned,
+     reproduce the refit's own chi^2 exactly: 186.51 (1.008/bin) and 292.42 (1.581/bin) over the
+     full 185 bins -- so the pipeline here is the refit's and not a new one.
+ (2) On the figure's 179-bin set (ell <= 1900, the cut the shifted-model tests need), 177.88
+     (0.994/bin) and 286.89 (1.603/bin).
+ (3) Band means in sixths, on diagonal errors and whitened, for both arms, with the rms growing
+     with ell as the order reports.
+ (4) The whitened cosine is +0.855 and the shared fraction 73.1%, leaving 76.2 of 282.96.
+ (5) A diagonal amplitude fit inflates the arm's amplitude by 0.83% and roughly doubles band 4.
+ (6) The three single-parameter directions, their best values and their dchi^2, on both arms.
+ (7) Every number the figure plots is recomputed here from the banked spectra and gated against
+     `cc66_fig_acoustic_numbers.npz`, so the figure and this receipt cannot drift apart.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT a mechanism for the bulk of the misfit.  Four directions are excluded as the whole of it and
+   none is offered in their place.
+ * NOT that the shared part is a defect of the transfer as implemented rather than of the modelling
+   both arms share; "the transfer's" is the order's own phrase for "not construction-specific".
+ * NOT a re-derivation of the refit minima, which are `r6825+cc66.25`'s and are used as banked.
+ * NOT anything about the low-multipole floor's score, which is `r6831`'s and is untouched.
+ * The whitening mixes bins, so a whitened band mean is a mean over a rotated basis and is reported
+   beside the diagonal one rather than instead of it.
+
+WHAT WOULD FALSIFY IT.  The banked spectra not reproducing the refit's chi^2; the band means not
+reproducing the swing's shape; the shared fraction depending on the bin cut; the position direction
+buying more on the control than on the arm; or the figure's banked numbers disagreeing with the
+recomputation.
+
+====================================================================================================
+
+PART 1 -- THE PIPELINE IS THE REFIT'S, AND THAT IS CHECKED BEFORE ANYTHING IS READ OFF IT.
+----------------------------------------------------------------------------------------------------
+    lcdm   chi2 =   186.51 over 185 bins = 1.008/bin   (refit reported 186.51)
+    cr     chi2 =   297.67 over 185 bins = 1.609/bin   (refit reported 297.67)
+    and the NAMESAKE arm in the same pipeline: chi2 =   292.42 = 1.581/bin  (the refit reported 292.42)
+  [PASS] the banked spectra reproduce the refit's own chi^2 to 0.05 -- so this is the refit's pipeline and not a new one.  ⛭ r7641 ⑶: the arm's figure is the ARM OF RECORD's own refit minimum at 297.67, and the SAME pipeline still returns the namesake arm's 292.42, so what moved is the arm and not the pipeline
+
+PART 2 -- THE BAND MEANS, THREE WAYS.
+----------------------------------------------------------------------------------------------------
+
+  lcdm:  chi2 = 177.88 over 179 bins (0.994/bin),  A(cov) = 10723.37,  A(diag) = 10750.66  (+0.255%)
+    band mean, covariance amplitude, diagonal sigma :  -0.18  -0.03  +0.16  +0.12  -0.32  -0.04
+    band mean, covariance amplitude, WHITENED       :  -0.19  -0.03  +0.17  +0.10  -0.30  +0.05
+    band mean, DIAGONAL amplitude, diagonal sigma   :  -0.10  +0.09  +0.30  +0.28  -0.15  +0.13
+    band rms,  covariance amplitude, diagonal sigma :   0.76   0.97   0.94   0.88   1.04   1.06
+
+  cr:  chi2 = 286.89 over 179 bins (1.603/bin),  A(cov) = 13583.48,  A(diag) = 13704.64  (+0.892%)
+    band mean, covariance amplitude, diagonal sigma :  -0.69  -0.09  +0.32  +0.58  -1.07  -0.45
+    band mean, covariance amplitude, WHITENED       :  -0.71  -0.10  +0.34  +0.58  -0.99  -0.07
+    band mean, DIAGONAL amplitude, diagonal sigma   :  -0.41  +0.31  +0.82  +1.15  -0.49  +0.14
+    band rms,  covariance amplitude, diagonal sigma :   0.79   0.93   1.14   0.84   1.05   1.45
+
+  the order's quick render, for comparison:
+    CR      -0.22  -0.07  +0.42  +1.46  -1.86  -0.06
+    control                        +0.96  -1.18
+  [PASS] the SWING reproduces -- band 4 positive and band 5 negative on the arm, the shape the order reports -- so the feature is real and not the render's   (band4 = +0.58, band5 = -1.07)
+  [PASS] ...and the control carries the same sign pattern, at smaller amplitude   (control band4 = +0.12, band5 = -0.32)
+  [PASS] ** the AMPLITUDE METRIC accounts for about half the render's inflation **: fitting the amplitude on diagonal errors puts the arm 0.83% high and roughly doubles band 4, against the render's +1.46   (band4 +0.58 (cov) -> +1.15 (diag), render +1.46)
+  [PASS] the scatter grows with ell, as the order reports   (rms 0.79 -> 1.45)
+
+PART 3 -- HOW MUCH IS SHARED WITH THE CONTROL.  ** THIS IS THE DECIDING NUMBER. **
+----------------------------------------------------------------------------------------------------
+    |w_CR| =  16.94      |w_control| =  13.34
+    cosine between the two whitened residual vectors : +0.8476
+    fraction of the ARM's chi^2 along the CONTROL's direction : 71.8%
+    what is left once that direction is projected out : 80.8 of 286.9
+  [PASS] ** THREE QUARTERS OF THE ARM'S RESIDUAL LIES ALONG THE CONTROL'S **, so on the order's own criterion it is the transfer's and not the construction's   (71.8% at cos +0.848)
+    bin cut 100-1996: shared fraction 72.3%
+    bin cut 100-1500: shared fraction 70.9%
+    bin cut 200-1900: shared fraction 72.7%
+  [PASS] ...and the shared fraction does not depend on the bin cut, staying near three quarters across three of them   (72.7% against 71.8%)
+
+PART 4 -- POSITION, TILT OR DAMPING?  ONE FURTHER PARAMETER AT A TIME.
+----------------------------------------------------------------------------------------------------
+
+  lcdm:  amplitude only  chi2 =  177.88
+    + peak-position rescale eps  best   +0.00000   dchi2 =   +0.00
+    + tilt dn_s                  best   +0.00000   dchi2 =   +0.00
+    + damping-shape fac          best   +0.00750   dchi2 =   +0.30
+
+  cr:  amplitude only  chi2 =  286.89
+    + peak-position rescale eps  best   +0.00050   dchi2 =   +1.67
+    + tilt dn_s                  best   -0.00250   dchi2 =   +0.43
+    + damping-shape fac          best   +0.01500   dchi2 =   +1.12
+  [PASS] ** ON THE ARM THE POSITION DIRECTION LEADS THE OTHER TWO, THOUGH NOT BY MUCH **: it is the largest of the three on the arm of record at 1.5 times the damping and 3.9 times the tilt, where on the namesake arm it led by 3 and 50 -- so the ORDER is the durable claim and the size of the lead is the arm's   (eps +1.67, fac +1.12, dns +0.43 -- lead of 1.5x and 3.9x)
+  [PASS] ** AND ON THE CONTROL IT BUYS NOTHING **, so the position piece is the construction's rather than shared   (control +0.00 against the arm's +1.67)
+  [PASS] the TILT is exhausted -- the refit already spent it, and a one-per-cent tilt costs chi^2 rather than buying it   (best dchi2 +0.43; dn_s = +0.01 costs +13.4)
+  [PASS] ** but the position piece is SMALL **: on the arm of record eps = +5.0e-4 is 0.05 per cent in ell, under a multipole at the fourth peak, and dchi^2 = 1.7 of 287 is under ONE per cent of the misfit -- where on the namesake arm it was 4.7 of 283, under two -- so it is not the explanation either   (0.6% of the misfit; eps = 5.00e-04 is 0.6 in ell at the fourth peak)
+  [PASS] ⛭ AND EVERY FIGURE THIS RECEIPT'S INDEX ROW PRINTS IS PINNED AS A NUMBER: the shared fraction 71.8 per cent, what the projection leaves at 80.8 of 286.9, the bin-cut range 70.9 to 72.7, and the position piece at 0.58 per cent of the misfit -- each within half a printed digit   (frac 71.8%, leaves 80.8 of 286.9, cuts 70.9-72.7%, position 0.58% of the misfit)
+  [PASS] ⛭⛭ AND EVERY FIGURE THIS FILE'S HEADER STATES IS COMPARED WITH THE COMPUTATION RATHER THAN PRINTED BESIDE IT -- the cosine, the shared fraction, what the projection leaves, the arm's own chi^2, all three single-parameter gains, the tilt's cost and the rescale in multipoles.  ⛔ *Re-pointing moved nine of them and none was gated: a figure a receipt prints but does not COMPARE is not pinned*   (9 header figures tied to the computation)
+
+PART 5 -- THE FIGURE'S OWN NUMBERS, RECOMPUTED AND GATED SO THE TWO CANNOT DRIFT.
+----------------------------------------------------------------------------------------------------
+  [PASS] the figure's banked numbers exist -- corpus/make_fig_acoustic_two_arm.py has been run   (/home/user/shadow-of-existence/computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz)
+    lcdm_chi2                    figure    177.87688   receipt    177.87688   OK
+    cr_chi2                      figure    286.89412   receipt    286.89412   OK
+    lcdm_A                       figure  10723.36667   receipt  10723.36667   OK
+    cr_A                         figure  13583.48307   receipt  13583.48307   OK
+    shared_frac                  figure      0.71847   receipt      0.71847   OK
+    shared_cos                   figure      0.84763   receipt      0.84763   OK
+    cr_chi2_minus_control_dir    figure     80.76949   receipt     80.76949   OK
+  [PASS] every headline number the figure plots is reproduced here independently from the banked spectra, so the figure and this receipt cannot drift apart
+
+====================================================================================================
+THE READING.
+====================================================================================================
+
+  ** THE DECOMPOSITION, AND IT IS THREE THINGS RATHER THAN ONE. **
+
+  1. ** 72 PER CENT OF THE ARM'S RESIDUAL IS THE CONTROL'S. **  Whitened against the full
+     covariance the two residual vectors sit at cosine +0.848, and projecting the control's
+     direction out of the arm's leaves 80.8 of 286.9.  On the order's own
+     criterion that part is the transfer's and not the construction's.
+
+  2. ** OF WHAT IS LEFT, THE POSITION DIRECTION IS THE CONSTRUCTION'S AND THE TILT IS EXHAUSTED. **
+     A peak-position rescale buys +1.67 on the arm and +0.00 on the
+     control; a tilt buys +0.43 and costs +13.4 at one per cent, the
+     refit having already spent it; the damping buys +1.12.  ** So the answer to the
+     order's question is: position rather than amplitude, and not tilt. **
+
+  3. ** BUT IT IS SMALL, AND THAT IS THE PART NOT TO OVERSELL. **  eps = 5.0e-04 is
+     0.6 multipoles at the fourth peak -- consistent with the +2.0 measured there at
+     r6875+cc66.32 -- and 1.7 of 287 is under two per cent of the misfit.
+     ** Amplitude, tilt, damping and position together do not account for the shape rejection, and
+     this receipt does not say what does. **
+
+  ** AND THE QUICK RENDER'S BAND MEANS WERE ABOUT THREE TIMES THESE. **  The swing's SHAPE reproduces
+  -- band 4 high, band 5 low, on both arms -- and its amplitude does not.  Fitting the amplitude on
+  diagonal errors rather than the covariance puts the arm 0.83% high and roughly doubles band 4,
+  which is about half the difference; the rest is in the render and is not reconstructed here.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: the banked refit spectra reproduce the refit's own chi^2 (186.51 and 292.42 over 185
+bins); the residual swing the order reports is real and reproduces in shape on both arms while its
+amplitude is about a third of the quick render's, the amplitude metric accounting for about half of
+that; 72 per cent of the arm's chi^2 lies along the control's residual direction (cosine +0.848),
+so most of it is the transfer's and not the construction's; and of the rest a peak-position rescale
+is the largest of the three single-parameter directions (+1.67 against +1.12 for damping and
++0.43 for tilt) and buys nothing at all on the control -- position rather than amplitude, and
+under two per cent of the misfit.
+NOT CLAIMED: a mechanism for the bulk of the misfit; a re-derivation of the refit minima; anything
+about the low-multipole floor's score.
+

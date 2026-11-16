@@ -10,5 +10,350 @@
   ],
   "moved": 0,
   "first_moved": []
+ },
+ "05": {
+  "receipt": "P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py",
+  "substitutions": 3,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   298,
+   282
+  ],
+  "moved": 0,
+  "first_moved": []
+ },
+ "06": {
+  "receipt": "P15_the_control_entered_the_regime_and_the_arm_did_not_move.py",
+  "substitutions": 8,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   168,
+   1
+  ],
+  "moved": 1,
+  "first_moved": [
+   [
+    "0.3066",
+    "54.178"
+   ]
+  ]
+ },
+ "17": {
+  "receipt": "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py",
+  "substitutions": 6,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   542,
+   525
+  ],
+  "moved": 22,
+  "first_moved": [
+   [
+    "128.43",
+    "127.74"
+   ],
+   [
+    "1.0325",
+    "1.0372"
+   ],
+   [
+    "+0.733",
+    "+0.792"
+   ],
+   [
+    "1.0325",
+    "1.0372"
+   ],
+   [
+    "1.855",
+    "1.851"
+   ],
+   [
+    "+0.8934",
+    "+0.8932"
+   ],
+   [
+    "+0.6051",
+    "+0.6049"
+   ],
+   [
+    "1.855",
+    "1.851"
+   ],
+   [
+    "+0.8934",
+    "+0.8932"
+   ],
+   [
+    "128.4",
+    "127.7"
+   ],
+   [
+    "261.6",
+    "251.9"
+   ],
+   [
+    "1.0325",
+    "1.0372"
+   ],
+   [
+    "1.0352",
+    "1.0377"
+   ],
+   [
+    "1.0352",
+    "1.0377"
+   ],
+   [
+    "-0.300",
+    "-0.299"
+   ],
+   [
+    "-0.7908",
+    "-0.7885"
+   ],
+   [
+    "-0.300",
+    "-0.299"
+   ],
+   [
+    "-0.7908",
+    "-0.7885"
+   ],
+   [
+    "1.855",
+    "1.851"
+   ],
+   [
+    "+0.8934",
+    "+0.8932"
+   ],
+   [
+    "134.1",
+    "125.8"
+   ],
+   [
+    "286.89",
+    "66.36"
+   ]
+  ]
+ },
+ "18": {
+  "receipt": "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py",
+  "substitutions": 6,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   375,
+   195
+  ],
+  "moved": 7,
+  "first_moved": [
+   [
+    "0.0251",
+    "0.0000"
+   ],
+   [
+    "0.025076",
+    "0.000000"
+   ],
+   [
+    "66.35",
+    "66.57"
+   ],
+   [
+    "66.35",
+    "0.0"
+   ],
+   [
+    "1.0401",
+    "0.0"
+   ],
+   [
+    "1.00000",
+    "0.0251"
+   ],
+   [
+    "+0.032311",
+    "66.15"
+   ]
+  ]
+ },
+ "30": {
+  "receipt": "P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope.py",
+  "substitutions": 2,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   327,
+   327
+  ],
+  "moved": 6,
+  "first_moved": [
+   [
+    "-0.144",
+    "-0.598"
+   ],
+   [
+    "+0.085",
+    "+0.464"
+   ],
+   [
+    "5.5",
+    "1.0"
+   ],
+   [
+    "4.1",
+    "1.0"
+   ],
+   [
+    "+0.085",
+    "+0.464"
+   ],
+   [
+    "-0.144",
+    "-0.598"
+   ]
+  ]
+ },
+ "31": {
+  "receipt": "P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude.py",
+  "substitutions": 1,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   236,
+   233
+  ],
+  "moved": 5,
+  "first_moved": [
+   [
+    "292.42",
+    "297.67"
+   ],
+   [
+    "1.581",
+    "1.609"
+   ],
+   [
+    "186.51",
+    "0.05"
+   ],
+   [
+    "292.42",
+    "297.67"
+   ],
+   [
+    "+0.848",
+    "292.42"
+   ]
+  ]
+ },
+ "g1": {
+  "receipt": "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics.py",
+  "substitutions": 13,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   153,
+   51
+  ],
+  "moved": 0,
+  "first_moved": []
+ },
+ "g2": {
+  "receipt": "P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py",
+  "substitutions": 2,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   121,
+   22
+  ],
+  "moved": 1,
+  "first_moved": [
+   [
+    "30000000.0",
+    "3.11"
+   ]
+  ]
+ },
+ "g3": {
+  "receipt": "P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode.py",
+  "substitutions": 1,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   359,
+   33
+  ],
+  "moved": 1,
+  "first_moved": [
+   [
+    "145.3281",
+    "3.11"
+   ]
+  ]
+ },
+ "g4": {
+  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak.py",
+  "substitutions": 2,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   407,
+   48
+  ],
+  "moved": 0,
+  "first_moved": []
+ },
+ "g5": {
+  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+  "substitutions": 1,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   175,
+   22
+  ],
+  "moved": 0,
+  "first_moved": []
+ },
+ "g6": {
+  "receipt": "P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control.py",
+  "substitutions": 3,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   357,
+   123
+  ],
+  "moved": 1,
+  "first_moved": [
+   [
+    "222.28",
+    "3.11"
+   ]
+  ]
+ },
+ "g7": {
+  "receipt": "P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing.py",
+  "substitutions": 1,
+  "rc_orig": 0,
+  "rc_rep": 1,
+  "numbers": [
+   222,
+   188
+  ],
+  "moved": 1,
+  "first_moved": [
+   [
+    "255.7",
+    "3.11"
+   ]
+  ]
  }
 }

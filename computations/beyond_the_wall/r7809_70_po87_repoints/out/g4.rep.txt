@@ -1,0 +1,69 @@
+
+RECEIPT -- P15: ** `r7223` ORDERED THE INSTRUMENT THE COMB WAS A SUBSTITUTE FOR -- `form
+(phi, alt) on the pair-merged bank and place the sky on the peak plane` -- WITH MY OWN BURDEN
+ADOPTED VERBATIM AND ONE ADDITION OF 66's.  *** THE BURDEN IS MET, THE PLANE SURVIVES THE MERGE,
+THE SKY LANDS `$0.8\sigma$` FROM THE CONTROL WITH A FULL DRIVING UNIT AT `$13\sigma$` -- AND HALF
+OF ALL NOISE REALISATIONS LOSE THE FOURTH PEAK. *** **
+
+  ⓵ ** THE BURDEN: THE MERGED MODEL REPRODUCES THE BANKED PAIR. **  *At matched peak count the
+  driving difference on the pair-merged bank is `$+0.12703$`/`$-0.02494$` against the banked
+  `$+0.126$`/`$-0.0247$` -- `$1.008\times$` and `$1.010\times$`.  **So the merge costs under one
+  per cent on both components and the closure branch `r7223` named does not fire.***
+
+  ⓶ ⛭ ** AND THE FOUR-PEAK RESTRICTION IS A SEPARATE EFFECT, MEASURED SEPARATELY. **  *On four
+  peaks the common offset holds to `$0.1$` per cent and the alternation reads `$1.216\times$`
+  banked -- and the SAME `$1.20\times$` appears on the instrument's raw samples, so **it is the
+  peak count and not the merge.**  ⌈ *The two balanced four-peak windows straddle the five-peak
+  value -- peaks `$1$`--`$4$` give `$1.216\times$`, peaks `$2$`--`$5$` give `$0.913\times$` -- so
+  the four-peak alternation is window-dependent at `$\pm15$` per cent and neither window is the
+  truth.*
+
+  ⓷ ** 66's ADDITION, AND IT DOES NOT COLLAPSE. **  *The separation of the baryon direction from a
+  pure tilt, re-measured on four peaks of the merged bank: `$12.0\times$` on the common offset and
+  `$8.2\times$` on the alternation, against `cc66.155`'s free-period slope at `$1.3\times$`.
+  **The plane survives.**  ⌗ *But the alternation's lever is down `$2.6\times$` from `cc66.156`'s
+  `$21.4$`, and the cause is measured rather than guessed: `$n_s$`'s residual leakage onto the
+  alternation grows FOUR-FOLD at four peaks, `$-0.00049\to-0.00203$`.  The de-tilt control is
+  weaker on four peaks, which is the price of the merge stated in the units it is paid in.*
+
+  ⓸ ⛭⛭⛭ ** THE SKY IS ON THE PLANE. **  *`$(\varphi,\mathrm{alt})=(-0.18571,+0.00804)$` against
+  the control's `$(-0.19328,+0.01059)$` through the identical merge, so
+  `$(\Delta\varphi,\Delta\mathrm{alt})=(+0.00756,-0.00255)$` and the discriminant is `$0.337$` --
+  between the driving's `$0.237$` and the loading's `$1.320$`, which the plane still separates by
+  `$5.6\times$` in this statistic.*
+
+  ⓹ ** AND THE ERROR IS PROPAGATED EXACTLY, BECAUSE THE MERGE IS LINEAR. **  *`plik_lite`'s own
+  covariance through the merge matrix, `$2000$` draws: the distribution is HEAVY-TAILED -- a
+  standard deviation of `$0.107$` against a robust `$0.0096$` -- so the robust scale is what is
+  quoted and the tail is reported as what it is.  ⇒ **One full driving unit is `$13.3\sigma$` on
+  the offset and `$3.1\sigma$` on the alternation; the sky sits `$0.79\sigma$` and `$0.27\sigma$`
+  from the control.**  *So the sky is consistent with the control's own driving and a full unit of
+  difference either way is excluded.*
+
+  ⓺ ⛔ ** AND WHAT BOUNDS IT IS NOT THE WIDTH BUT THE EXISTENCE: `$48$` PER CENT OF DRAWS DO NOT
+  RETURN FOUR PEAKS. **  *`$47$` per cent return three.  The merge is at the locator's own
+  resolution limit -- one further step returns nothing on the sky OR the model -- so the statistic
+  is defined on about half of the realisations of this sky, and the robust `$\sigma$` is
+  conditional on its being defined at all.*  ⌗ *And the other limit is the assumed scale:
+  `$\ell_A$` at `$+1$` per cent moves the sky's offset by `$2.4$` robust `$\sigma$`, so the
+  `$0.8\sigma$` agreement requires the sky's acoustic scale to be the control's to `$0.4$` per
+  cent and the `$13\sigma$` exclusion requires `$5$`.*
+
+  ⓻ ⚠⛔ ** AND ONE SYSTEMATIC THIS FILE CANNOT BOUND IS LARGER THAN ITS RESULT. **  *`r7225` flags
+  it in advance, and the reading here IS differential -- sky MINUS control through the identical
+  merge -- so `60`'s identity makes the projection kernel's phase common mode between the two
+  ARMS.  **But a data-minus-model difference is not an arm-minus-control difference**: the kernel's
+  own running phase is `$0.0429$` of a comb period against the `$+0.00756$` measured here,
+  `$5.7\times$` it, so `$0.79\sigma$` is conditional on a cancellation this file does not
+  establish.  *The `$13\sigma$` scale of one driving unit is model-against-model and unaffected.*
+
+** COMPUTES: `cc66.156`'s de-tilted peak statistic, unchanged and pinned to its published
+   `$11.3$`/`$21.4$`; `cc66.163`'s width-weighted pair merge of `plik_lite`'s TT bins, pinned to
+   its published located gaps; the driving difference through the merge at five and at four peaks
+   and on raw samples, to separate the merge from the peak count; the tilt separation re-measured
+   on four peaks, both arms and both grids; the sky's point and the three carrier directions in
+   that one statistic; and `plik_lite`'s covariance carried through the merge exactly and through
+   the locator by Monte Carlo.  *** No new spectrum, no fit, no refit. *** **
+
+
+  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: /home/user/shadow-of-existence/computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1_leafrec1

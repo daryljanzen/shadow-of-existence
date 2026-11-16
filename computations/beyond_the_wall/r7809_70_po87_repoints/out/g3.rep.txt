@@ -1,0 +1,78 @@
+
+RECEIPT -- P15: ** `r7223` ORDERED IT: `evaluate the kernel's own phase contribution on EACH ARM'S OWN
+r_s, D_M and r_D, and state the difference between the two arms against the measured residual's
+size`.  *** THE DIFFERENCE IS `$-0.0141^{\circ}$` AGAINST A RESIDUAL OF `$-78.3^{\circ}$` (r7657;
+`$-96.6$` before it) -- NEARLY
+FOUR ORDERS BELOW -- SO THE KERNEL IS NOT A CARRIER AND THE PROJECTION IS CLEARED. *** **
+
+  ⓵ ** THE KERNEL'S PHASE IS A FUNCTION OF EXACTLY TWO DIMENSIONLESS NUMBERS, AND THE ARMS SHARE ONE
+  OF THEM BY CONSTRUCTION. **  *Writing `$x=kD_M$`, `r7234`'s window is
+  `$W\propto x^{n_s-2}e^{-2(xr_D/D_M)^2}/(x\sqrt{x^2-\ell^2})$` and the oscillation it weights is
+  `$\cos(2xr_s/D_M)$`, so the phase depends on `$r_D/D_M$` and on `$r_s/D_M$` and on nothing else --
+  verified here by SCALING all three lengths together and getting the same phase to `$10^{-10}$`
+  degrees.*  ⇒ **`$r_s/D_M$` is `$\theta_*/\pi$`, which the two arms match to `$1.5\times10^{-5}$`
+  because the angle is what the construction computes; `$r_D/D_M$` differs by `$0.27$` per cent.**
+  ⌗ *Moved one at a time: `$r_D/D_M$` carries `$-0.0139^{\circ}$` of the `$-0.0141^{\circ}$` and
+  `$r_s/D_M$` carries `$-0.0001^{\circ}$`.*
+
+  ⓶ ** TWO INDEPENDENT ROUTES, AND THEY AGREE ON THE DIFFERENCE TO FIVE DECIMAL PLACES. **  *The
+  closed-form window gives `$-0.01406^{\circ}$` and the FULL Bessel sum `$-0.01407^{\circ}$`; on the
+  absolute running phase they agree to `$0.012^{\circ}$` out of `$15.5$`.  Both are shown converged
+  -- the window under the quadrature count and the tail reach, the Bessel under its `$k$` sampling.*
+
+  ⓷ ⛔⛭⛭⛭ ** AND THE UNDER-SAMPLED BESSEL SUM MANUFACTURES A DIFFERENCE `$74$` TIMES THE TRUE ONE. **
+  *At `$1.8$` points per Bessel period the arm-minus-control phase reads `$-1.05^{\circ}$`; at
+  `$4.6$` and above it reads `$-0.01407^{\circ}$` and does not move again through a fifty-fold
+  refinement.  **The window route is immune, because it averages the kernel analytically rather than
+  sampling it.**  ⌗ This is the instrument's own documented failure mode -- `the projected peaks would
+  be aliasing while the source comb stayed correct` -- arriving in the PHASE instead of the peaks, and
+  it is the reason the answer is given on two routes rather than one.*
+
+  ⓸ ⛔ ** THE PRE-REGISTERED SIGN IS WRONG, AND THE REASON IS A CONFLATION THIS SEAT HAS NOW MADE
+  TWICE. **  *Predicted `$+0.06^{\circ}$`, measured `$-0.0141^{\circ}$`: the magnitude is inside the
+  pre-registered band and the SIGN FAILED.  **Measured root cause: the kernel's PHASE has
+  `$|{\rm running}|$` FALLING with `$r_D$` -- `$16.77^{\circ}$` at `$5.0$` Mpc to `$8.54^{\circ}$` at
+  `$14.0$` -- while the kernel's PEAK-POSITION drift has `$|{\rm running}|$` RISING with `$r_D$`.**
+  *I read the sensitivity off `r7234`'s peak-offset table for a question about phase, and the two have
+  OPPOSITE `$r_D$` dependence.*  ⌈ ***And the central value was wrong twice over in a way that
+  cancelled:*** *the `$-17^{\circ}$` absolute phase in the pre-registration was a peak-offset running
+  drift converted at `$180^{\circ}$` per peak step where the paper's comb period is `$360^{\circ}$` --
+  the right number by the wrong route and the wrong units at once.  The true phase is
+  `$-15.45^{\circ}$`.*
+
+  ⇒ ⛭ ** SO THE ORDER'S NEGATIVE BRANCH, IN ITS OWN WORDS: `the kernel is not a carrier, the candidate
+  list stays at the driving, the loading and the clock, and the projection is cleared`. **  *The
+  difference is `$1.8\times10^{-4}$` of the residual (r7657's `$-78.3$`; `$1.5\times10^{-4}$`
+  against the `$-96.6$` this file used before it).  No threshold the row could reasonably set is
+  anywhere near it.*
+
+  ⌈ ⛭⛭ ** AND THE PRE-REGISTERED THIRD OUTCOME HOLDS ALONGSIDE IT, WHICH IS A DIFFERENT STATEMENT
+  FROM `cleared`. **  *The kernel's ABSOLUTE running phase is `$-15.45^{\circ}$`, which is `$19.7$`
+  per cent of the residual's `$-78.3^{\circ}$` -- A FIFTH, and a sixth of the `$-96.6$` this file
+  measured against before r7657 re-pointed it -- and it is present in ANY spectrum this
+  instrument projects, the control's included, agreeing between the arms to `$0.09$` per cent.*
+  ⇒ **So `a running phase at correct spacing` is not a phase-clean observable: a fifth of the scale
+  the row reads its candidates against is manufactured by the projection, and it cancels only because
+  both arms carry it.**  *That is why `cleared` is the answer to the order and not the whole of what
+  the evaluation found.*
+
+** COMPUTES: the projection kernel's own running acoustic phase across 104 <= l <= 1886, evaluated on
+   each arm's own r_s, D_M and r_D, by two independent routes -- the closed-form asymptotic window of
+   r7234 read as a complex integral, and the full spherical-Bessel sum -- together with the
+   arm-minus-control difference, its decomposition into the two dimensionless numbers the phase
+   depends on, and the aliasing threshold above which the Bessel route is trustworthy.  *** No
+   spectra are computed and no bank is written; the three background numbers per arm are read off the
+   banked spectra and their run logs. *** **
+
+
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode.py", line 137, in <module>
+    CTL = arm_inputs('lcdm_base')
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode.py", line 126, in arm_inputs
+    z = np.load(os.path.join(GO, f'{tag}.npz'), allow_pickle=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/shadow-of-existence/computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1/lcdm_base.npz'
