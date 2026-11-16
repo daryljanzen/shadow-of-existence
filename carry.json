@@ -6084,13 +6084,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "tolerance": {
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43936325358",
-    "since": "051102837d47224ca588d0dc4d45a5796fe4872b"
-   }
-  }
  }
 }
