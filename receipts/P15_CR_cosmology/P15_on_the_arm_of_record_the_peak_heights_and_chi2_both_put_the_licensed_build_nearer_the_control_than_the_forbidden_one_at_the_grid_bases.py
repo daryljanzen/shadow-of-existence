@@ -1,6 +1,28 @@
 #!/usr/bin/env python3
 """
-RECEIPT -- P15: ** THE CONTROL'S BASE LOG IS NOW BANKED BESIDE THE GRIDS, AND WITH IT THE PEAK-HEIGHT
+RECEIPT -- P15: ** ON THE ARM OF RECORD, AT THE GRID BASES, THE PEAK HEIGHTS PUT THE LICENSED BUILD ON
+THE CONTROL (0.75 ON TWO DEGREES OF FREEDOM) AND THE FORBIDDEN ONE 3.44 AWAY -- AND chi^2 OVER THE 185 BINS,
+COMPUTED HERE ON THE SAME SPECTRA, AGREES (297.67 AND 419.25 AGAINST THE CONTROL'S 212.90).  THE HEIGHTS
+CAN NOW VOTE AGAINST THE SKY: THE FORBIDDEN BUILD SITS AT chi^2 6.81 (2.61 SIGMA) ON TWO DEGREES OF
+FREEDOM. **  It is the OPPOSITE of what the namesake reading found, and it supports no sentence of P15:
+P15 l.2005-2008's "the forbidden build lands on the control" rests on another receipt's statistics at the
+REFIT points, which are different spectra from these grid bases.
+
+⛭⛭⛭ REWRITTEN AT `r7811` (69's ruling on `r7809+70.3`), node 70.  Until then this receipt was
+`P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_
+statistics` and read the ARM's `cr_base.npz` from the three NAMESAKE grids (LEAFREC=0, an accident of the old
+grids, not a deliberate historical pin).  P15 is on the arm of record, so it now reads the three
+`_leafrec1` twins (`refit_grid185_leafrec1`, `grid_licensed_leafrec1`, `grid_oneclock_leafrec1`); the
+control's `lcdm_base` stays, a control having no leaf rate.  On the twins the finding REVERSES, and is
+stated as it comes out.  ⛔ A first draft of this rewrite titled it a disagreement with the rigidity
+statistics; computing chi^2 here on the same spectra showed it AGREES with the heights, so the title says
+what both statistics measure on these files and nothing about the refit-point statistics it never read.  The namesake figures it used to pin (forbidden 0.18, licensed 2.83, every arm
+inside 1.1 of the sky) are in `computations/beyond_the_wall/r7809_70_po87_repoints/RESULT.md` and
+`out/g1_hand.orig.txt` as the record of what the namesake did.  69 removed its citation from P15 l.2008
+at `r7811` before this rewrite.
+
+--- the original header, kept as history of what the namesake reading claimed ---
+(was) THE CONTROL'S BASE LOG IS NOW BANKED BESIDE THE GRIDS, AND WITH IT THE PEAK-HEIGHT
 CELL IS A SIGN RATHER THAN AN EMPTY ONE -- A CONCORDANT SIGN.  THE FORBIDDEN CONFIGURATION'S HEIGHTS
 ARE THE CONTROL'S OWN, AT 0.18 ON TWO DEGREES OF FREEDOM IN THE DATA'S OWN UNITS, WHICH IS A FOURTH
 STATISTIC SAYING WHAT chi^2, THE CROSSINGS AND THE LONGEST RUN ALREADY SAID. **
@@ -130,9 +152,9 @@ import chi2_of_spectrum as CS                                              # noq
 ORDER = 3
 
 GRIDS = [
-    ('banked', os.path.join(BW, 'refit_grid185', 'cr_base.npz')),
-    ('licensed', os.path.join(BW, 'r7095_directions', 'grid_licensed', 'cr_base.npz')),
-    ('forbidden', os.path.join(BW, 'r7093_directions', 'grid_oneclock', 'cr_base.npz')),
+    ('banked', os.path.join(BW, 'refit_grid185_leafrec1', 'cr_base.npz')),          # r7811: the arm of record
+    ('licensed', os.path.join(BW, 'r7095_directions', 'grid_licensed_leafrec1', 'cr_base.npz')),
+    ('forbidden', os.path.join(BW, 'r7093_directions', 'grid_oneclock_leafrec1', 'cr_base.npz')),
     ('control', os.path.join(BW, 'refit_grid185', 'lcdm_base.npz')),
 ]
 CTRL_NPZ = [
@@ -247,10 +269,10 @@ else:
     print("  ** the banked log's own printed pair, 2.196 / 2.190, is reproduced from the .npz "
           "to its three decimals **")
 # and the two arm logs the audit read, likewise
-for nm, rel, want in (('licensed', os.path.join('r7095_directions', 'grid_licensed', 'cr_base.log'),
-                       (2.283, 2.311)),
-                      ('forbidden', os.path.join('r7093_directions', 'grid_oneclock', 'cr_base.log'),
-                       (2.199, 2.213))):
+for nm, rel, want in (('licensed', os.path.join('r7095_directions', 'grid_licensed_leafrec1', 'cr_base.log'),
+                       (2.136, 2.167)),                                    # r7811: the twins' own logs
+                      ('forbidden', os.path.join('r7093_directions', 'grid_oneclock_leafrec1', 'cr_base.log'),
+                       (2.057, 2.073))):
     t = open(os.path.join(BW, rel), encoding='utf-8', errors='replace').read()
     if f'P1/P2 = {want[0]:.3f}' not in t:
         fail.append(f"the {nm} arm's banked log does not print P1/P2 = {want[0]:.3f}")
@@ -392,26 +414,31 @@ for nm in ('banked', 'licensed', 'forbidden'):
 print(f"\n  ** against the CONTROL, as a 2-dof distance in the data's own units: **")
 for nm in ('banked', 'licensed', 'forbidden'):
     print(f"     {nm:>10}  chi2 = {DIST[nm]:7.4f}")
-print(f"\n  ⓐ ** THE CELL IS A CONCORDANT SIGN: the forbidden configuration's heights are the")
-print(f"     control's own at {DIST['forbidden']:.2f} on two degrees of freedom, where the licensed")
-print(f"     one's are {DIST['licensed']:.2f} away. **  The heights say what chi^2, the crossings and")
-print("     the longest run say: the forbidden configuration lands on the control.")
-if not DIST['forbidden'] < 0.5:
-    fail.append(f"the forbidden arm's heights are {DIST['forbidden']:.3f} from the control's, not on "
-                f"them -- the concordance claim fails")
-if not DIST['licensed'] > 1.0:
-    fail.append(f"the licensed arm's heights are {DIST['licensed']:.3f} from the control's -- it does "
-                f"not move them, and ⓐ's contrast fails")
-if not DIST['forbidden'] < DIST['licensed'] / 4:
-    fail.append("the forbidden arm is not decisively nearer the control than the licensed arm is")
+print(f"\n  ⓐ ** ON THE ARM OF RECORD, AT THE GRID BASES, the LICENSED build's heights are the control's")
+print(f"     at {DIST['licensed']:.2f} on two degrees of freedom, and the FORBIDDEN one's are {DIST['forbidden']:.2f} away. **")
+print("     *On the namesakes the cell read 0.18 (forbidden) against 2.83 (licensed), concordant; that")
+print("     was the LEAFREC=0 grids, and it does not survive the move to the arm of record.*")
+if not 3.3 < DIST['forbidden'] < 3.6:
+    fail.append(f"the forbidden arm's heights are {DIST['forbidden']:.3f} from the control's, not the 3.44 "
+                f"this receipt states")
+if not 0.70 < DIST['licensed'] < 0.80:
+    fail.append(f"the licensed arm's heights are {DIST['licensed']:.3f} from the control's, not the 0.75 "
+                f"this receipt states")
+if not DIST['licensed'] < DIST['forbidden'] / 4:
+    fail.append("the licensed arm is not decisively nearer the control than the forbidden arm is -- "
+                "the discordance claim fails")
 
 # ⓑ and the heights cannot vote
-print(f"\n  ⓑ ** AND THE HEIGHTS CANNOT VOTE: every arm is inside 1.1 against the SKY on two degrees")
-print("     of freedom, and the two ratios do not agree on an ordering. **")
 worst = max(MATCH[nm][2] for nm, _ in GRIDS)
-if not worst < 1.2:
-    fail.append(f"an arm sits at chi2 {worst:.2f} against the sky's heights -- ⓑ's claim that none "
-                f"is separable fails")
+print(f"\n  ⓑ ** AND ON THE ARM OF RECORD THE HEIGHTS CAN VOTE AGAINST THE SKY: the forbidden build")
+print(f"     sits at chi2 {MATCH['forbidden'][2]:.2f} ({np.sqrt(MATCH['forbidden'][2]):.2f} sigma) on two degrees of freedom, the licensed and banked at")
+print(f"     {MATCH['licensed'][2]:.2f}, the control at {MATCH['control'][2]:.2f}. **  *On the namesakes every arm")
+print("     was inside 1.1, which is what the old title meant by 'the heights cannot vote'.*")
+if not 6.6 < MATCH['forbidden'][2] < 7.0:
+    fail.append(f"the forbidden build sits at chi2 {MATCH['forbidden'][2]:.2f} against the sky's heights, "
+                f"not the 6.81 this receipt states")
+if not MATCH['forbidden'][2] > max(MATCH['licensed'][2], MATCH['control'][2]):
+    fail.append("the forbidden build is not the farthest of the arms from the sky's heights")
 o12 = sorted(((abs(MATCH[nm][0] - R12) / E12, nm) for nm, _ in GRIDS))
 o13 = sorted(((abs(MATCH[nm][1] - R13) / E13, nm) for nm, _ in GRIDS))
 print(f"     nearest on P1/P2: {[n for _, n in o12]}")
@@ -423,19 +450,30 @@ else:
     print("        fits the heights better' is not a question this statistic answers. **")
 
 # ⓒ against the statistic that does have the information
-print(f"\n  ⓒ ** WHAT THE STATISTIC WITH THE INFORMATION SAYS, for contrast: ** chi^2 over the 185")
-print("     bins separates 278.79 (licensed) from 184.99 (forbidden) against the control's 186.01 --")
-print(f"     a gap of 93.8 -- where the heights separate {MATCH['licensed'][2]:.2f} from "
-      f"{MATCH['forbidden'][2]:.2f}.")
-print("     *c54.176's conclusion arriving a second time by a second route.*")
+CHI = {}
+for nm, p in GRIDS:
+    _ls, _Dl, _, _ = read(p)
+    CHI[nm] = float(CS.chi2_of(_ls, _Dl * np.interp(_ls, _lg, RATIO))[0])
+print(f"\n  ⓒ ** WHAT THE STATISTIC WITH THE INFORMATION SAYS, computed here on the same lensed spectra")
+print(f"     (r7811; the namesake receipt quoted 278.79 / 184.99 / 186.01): ** chi^2 over the 185 bins is")
+print(f"     {CHI['licensed']:.2f} (licensed) and {CHI['forbidden']:.2f} (forbidden) against the control's "
+      f"{CHI['control']:.2f}.")
+print("     *So chi^2 AGREES with the heights on these spectra: both put the LICENSED build nearer the")
+print("     control than the FORBIDDEN one.  P15's 'the forbidden build lands on the control' is measured at")
+print("     the REFIT points by another receipt, on different spectra, and nothing here speaks to it.*")
+if not (abs(CHI['licensed'] - CHI['control']) < abs(CHI['forbidden'] - CHI['control'])
+        and 297.0 < CHI['licensed'] < 298.3 and 418.6 < CHI['forbidden'] < 419.9 and 212.3 < CHI['control'] < 213.5):
+    fail.append(f"chi^2 over the 185 bins is {CHI['licensed']:.2f} / {CHI['forbidden']:.2f} / {CHI['control']:.2f} "
+                f"(licensed / forbidden / control), not the 297.67 / 419.25 / 212.90 this receipt states, or it "
+                f"does not put the licensed build nearer the control")
 
 # the fine-grid route must give the same sign, or the result is an artefact of the binning
 fd_f = abs(FINE['forbidden'][2] - FINE['control'][2]) / E12
 fd_l = abs(FINE['licensed'][2] - FINE['control'][2]) / E12
 print(f"\n  ** AND THE SIGN IS NOT THE BINNING'S: on the instrument's own fine grid, unlensed, the")
 print(f"     same contrast is {fd_f:.3f} sigma (forbidden) against {fd_l:.3f} sigma (licensed) on")
-print("     P1/P2 -- the same sign and the same order of magnitude as the matched route. **")
-if not fd_f < 0.2 < fd_l:
+print("     P1/P2 -- the same sign as the matched route: the licensed build nearer the control. **")
+if not fd_l < fd_f:
     fail.append("the fine-grid route does not reproduce the matched route's sign -- the result may "
                 "be an artefact of the binning or the lensing operator")
 
@@ -495,11 +533,11 @@ if fail:
         print(f"    - {f}")
     print("=" * 100)
     sys.exit(1)
-print("  ** ALL CHECKS HOLD. **  `r7109` ⓶ is answered: the control's base log is banked beside both")
-print("  grids and is the log of the banked artefact; the peak-height cell is filled in the data's own")
-print(f"  units; and it is a CONCORDANT sign -- the forbidden configuration's heights are the")
-print(f"  control's at {DIST['forbidden']:.2f} on two degrees of freedom, a fourth statistic agreeing")
-print("  with chi^2, the crossings and the longest run.  ** And the same statistic shows the cell")
-print("  could never have held a contrary sign: no arm is separable from the sky by the heights. **")
+print("  ** ALL CHECKS HOLD. **  The control's base log is banked beside both grids and is the log of the")
+print("  banked artefact; and on the ARM OF RECORD, at the grid bases, the licensed build's heights are")
+print(f"  the control's at {DIST['licensed']:.2f} and the forbidden one's {DIST['forbidden']:.2f} away, with chi^2 over the")
+print(f"  185 bins agreeing ({CHI['licensed']:.2f} / {CHI['forbidden']:.2f} against {CHI['control']:.2f}); and the heights can vote")
+print(f"  against the sky, the forbidden build at chi2 {MATCH['forbidden'][2]:.2f}.  ** The opposite of the namesake")
+print("  reading, and it supports no sentence of P15. **")
 print("=" * 100)
 sys.exit(0)

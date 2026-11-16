@@ -26,4 +26,4 @@ $D/omm omm${dn}_k${i} $LCDM LOM=$dn LSTEP=8 LMAXL=2000 KSLICE=${i}:${j}"
   done
 done
 printf '%s' "$LIST" | sed '/^$/d' | xargs -P ${NPAR:-4} -I{} bash -c 'run {}'
-echo "=== r7801 omega_m LAUNCH COMPLETE $(date -u) ==="
+echo "=== r7809 omega_m LAUNCH COMPLETE $(date -u) ==="
