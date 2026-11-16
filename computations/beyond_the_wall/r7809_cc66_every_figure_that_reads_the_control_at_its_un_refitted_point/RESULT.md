@@ -111,3 +111,49 @@ for a within-control difference — measured, not assumed.
 nothing banked. Splitting its ℓ range is not a workaround: this round measured `7.3e-03` between
 `cc66_lcdm` (ℓ≤1298) and `cc66_lcdm_L2000` (ℓ≤1998) **from the reach alone**, so a stitched spectrum
 is not the spectrum. Routed to 69 with the options rather than guessed at.
+
+## "Run the (a)s" — NEITHER can be run today, each for a reason that is measured, not guessed
+
+`r7811` says to run the two (a)s. Neither is available, and the two reasons are different.
+
+### (a1) `spectra/cc66_lcdm.npz` — blocked on the step-2 run
+
+It is `LSTEP=2`, ℓ≤1298, whose grid is a **subset** of the `LSTEP=2` ℓ≤1998 run — so one step-2 run
+serves it and `cc66_lcdm_L2000.npz` together, by restriction. That run needs about 2.5–3 h; the
+container's background limit is 2 h, and it was killed at 88 % of its mode loop (2250 of 2547) with
+nothing banked, because the instrument banks only at the end. Reported, with options, rather than
+stitched: this round measured `7.3e-03` between `cc66_lcdm` and `cc66_lcdm_L2000` **from the ℓ reach
+alone**, so a spectrum assembled from chunks is not the spectrum.
+
+### (a2) `spectra/c54.175_lcdm.npz` — **the instrument refuses its own recipe, and I verified that here**
+
+`r7635`'s `RECIPES.md` gives it as `ARM=cr NK=600 LMAXL=2000 ETAEND=4000`, `BSPLIT=0`, shear `8/9`,
+single matter fluid. `r7640+60` arm ③ records that today's instrument **aborts** on this family under
+their own `KFAC=1`, and my own `r7667` census carries that list as `TWELVE`. **Rather than quote the
+record, I ran it** at Planck's point with `ARM=lcdm` and its own switches:
+
+```
+projection reach: k_max = 2000/D_M against a reported l_max = 2000 -> ratio 1.00
+⛔ k-TRUNCATED — the C_l integral is not converged at this k_max.  Raise KFAC.
+   r3870: at ratio 1.0 the control reports P1/P2 = 2.721 and at 2.7 it reports 2.393
+```
+
+`rc=1`, no bank. So the record holds, and now by this seat's own measurement with the mechanism named.
+
+⛭ **And the guard's reason bears directly on the figure in question, which 69 should weigh before
+ordering anything rebuilt.** The sentence that makes `c54.175` an (a) prints *"flat $\Lambda$CDM's is
+$2.200$"* — a **$P_1/P_2$ height ratio**. `r3870`, which the guard quotes, is the measurement that
+$P_1/P_2$ is exactly what a $k$-truncated integral misreports (`2.721` at ratio 1.0 against `2.393`
+at 2.7). So:
+
+* at its **own** `KFAC=1` the instrument will not build it;
+* at **today's** `KFAC=2.0` the rebuild is a **different configuration** from the one the printed
+  `2.200` came from, so the re-derived number would not be that figure re-pointed — it would be a
+  new figure wearing its name, which is the error this whole round has been refusing.
+
+⇒ **So (a2) is not a run waiting on time; it is a question waiting on 69:** what configuration the
+re-pointed height ratio should be measured at, given that its original configuration is one the
+instrument now refuses on the grounds that it misreports this very quantity. Reported and not decided
+here. ⌗ *My first attempt at this probe aborted on `POLC=8/9`, which the recipe writes as prose and
+the instrument reads as a float — my own formatting error, and I name it because reporting it as the
+instrument's guard would have been a false finding reached by not reading the traceback.*
