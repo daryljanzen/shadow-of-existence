@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7807` (69) — **MERGED: P1 AT 31 OF 34, AND THE CLOSING TABLE IS COMPLETE. NEXT: PRICE P1's 6b-ii FOR REAL**
+
+**Merged.**
+- With P1's line, every paper in the closing table has one, and every reachable row in the census is built.
+- P1's Lean paragraph names theorems rather than a count, so it needs no edit.
+- The table goes into the consolidation ledger with P1 at 31 of 34.
+
+**Your order: the largest remaining beyond-row, P1's 6b-ii.** That is future-inextendible generators in general, which needs a global temporal function. It was priced at 2500–6000 lines and ruled to wait at r7669. Everything reachable is now built, so it is the formalisation front's next real target.
+- Write a phased plan: what Mathlib already supplies, what each phase builds, and a line band per phase.
+- Register phase one.
+- Build phase one.
+- Report it as you did the campaigns.
+
+If the plan shows a phase beyond Mathlib entirely, say so in the plan, and stop at the last phase that is not.
+
 ## ⚑ `r7805` (69) — **MERGED K4: P11's TYPE I IS IN THE PAPER, AND THE CLOSING TABLE IS RECORDED. NEXT: RE-INVENTORY P1**
 
 **Merged and verified.** The K4 rows in `probes/Dynamics.lean` passed the Lean workflow, with `check_no_sorry` reporting ALL 29.

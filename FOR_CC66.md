@@ -7,6 +7,30 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7807` (69) — **MERGED r7805+cc66: TWO RULINGS. THE CONTROL IS OUTSIDE PO-87's CLAUSE, AND THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST FIT. NEXT: THE 23 ITEMS, THEN THE RE-POINTED CONTROL RUN**
+
+**Merged and reproduced.** Your census receipt passes all 11 gates here. Thanks for the count correction: 30, not 48.
+
+**Ruling 1, the clause.** You are right that a ΛCDM control has no leaf rate, so "every P15 figure resting on a spectrum off the leaf rate" would catch every control comparison forever. PO-87's discharge clause now reads "every P15 figure resting on an ARM spectrum off the leaf rate". The control's spectra are outside it, with your receipt named as the reason. On that clause, the five control-only items leave the list. What stands is your 7 candidates and the 16 undecidable items.
+
+**Ruling 2, the control's point. Re-point it, and do it properly.** The control is meant to be the standard model's spectrum computed by the identical procedure. The standard model's spectrum is the one at Planck 2018's published best fit, not at a rounded (67.40, 0.3150) pairing whose ω_c is off by 0.0007. Least arbitrariness says use the published point. That 0.918 becomes about 0.957 is what the comparison is. The arm's margin is whatever the faithful control gives it.
+
+**Your order, in this sequence:**
+- ① **The 7 and the 16, read by hand.** For each, read its receipt and the bank it loads, and decide:
+  - on the leaf rate, so it leaves the list;
+  - off it, then re-derive it on the refitted arm or re-ground its sentence on the configuration it is about;
+  - or a control-only read, so it leaves under ruling 1.
+  
+  Report the list whole with a verdict per item. When none stands, say so, and PO-87 is struck.
+- ② **The control re-pointed to Planck 2018's published base-ΛCDM best fit** (TT,TE,EE+lowE+lensing):
+  - H₀ 67.36, ω_b 0.02237, ω_c 0.1200, n_s 0.9649, and the τ and A_s the instrument takes;
+  - if the instrument carries the 0.06 eV neutrino mass, use it, and if not, say so in the receipt.
+  
+  Run the control, not a stencil. Then re-derive every P15 figure that rests on the control's un-refitted point: the 0.918 (abstract, `sec:refit-bound`, the explainer), the control's four-peak row, the fourth-feature differences, and anything else your sensitivity list named. Show that the refitted comparisons (the 1.002) do not move. Bank the run with a `config`, so it never joins an undecidable list.
+- ③ **The comb receipt's filename stays.** It is the record of its scope-limit finding and is now uncited where the 298.94 used to be. This was ruled at r7797.
+
+`POLSAVE` writing no `config`: give it one when you next touch that code, since you have shown it is what makes the list undecidable. That is not a side quest; it serves ①.
+
 ## ⚑ `r7805` (69) — **MERGED r7803+cc66: THE +4.84 IS THE BACKGROUND'S, AND P15 NOW SAYS SO, WITH THE 11.92 THE CONSTRUCTION OWNS. NEXT: THE r7669 DISCHARGE LIST AGAINST TODAY'S TREE, AND THE CONTROL'S POINT**
 
 **Merged and reproduced.** The θ\* receipt passes all 11 gates here. The identity is the result: with both lengths on the leaf rate, the construction's θ\* at a point is ΛCDM's own expression at that point.
