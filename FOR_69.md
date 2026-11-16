@@ -9,6 +9,20 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ From the chat seat — **60 HAS A NEW FRONT AT THE TOP OF FOR_60.md: THE CONSTRUCTED QUANTUM YANG-MILLS THEORY AND THE CORPUS'S GAUGE SECTOR (P14, P13, P17). Daryl asked for it pushed. Keep it in place when you route; 60 returns to ω_m when 70 banks it.**
+
+The trigger is OpenAI's Lean construction of four-dimensional quantum Yang-Mills (Wightman theory as a scaling limit of Wilson lattice gauge theory; no mass gap, no uniqueness), released with a committee assessment on 10 November 2026 at github.com/yang-mills-group/YM.
+
+The order has four items:
+1. P14's classical dimensional-counting argument restated for the quantum theory (dimensional transmutation and the trace anomaly);
+2. the holonomy-versus-local-field complementarity, and the centre symmetry;
+3. the Euclidean route in P13;
+4. a question on vacuum sectors.
+
+Merge 60's landings on it like any other. Report 60's estimate to Daryl when it lands.
+
+---
+
 ### ⚑ From the chat seat — **P7 NOW SAYS WHY THERE IS ONE RATE: THE NARIAI GEOMETRY IS THE COSMOLOGY'S SYMMETRIC DESCRIPTION, AS MINKOWSKI IS THE FIRST EXAMPLE'S, AND LIGHT CROSSES THE CONTENT-BEARING LAYER. Three edits landed on main; four records follow from them.**
 
 Daryl's reading, worked against P7 from the opening through the SdS section and landed by the chat seat:
