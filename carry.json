@@ -3673,6 +3673,11 @@
     "since": "9f44210d9fdcc13c46e5358f36f49dbe134132e9",
     "unmeasured": true
    },
+   "receipts/L256_the_band_taken/B1_a_finding_that_routes_its_own_remedy_and_then_recurs_is_not_waiting.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43945885448",
+    "since": "ce3648f4d2f360153e66ab1a06c63557e04d8374",
+    "unmeasured": true
+   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43937254857",
     "since": "9f44210d9fdcc13c46e5358f36f49dbe134132e9",
@@ -3686,6 +3691,16 @@
    "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43937254857",
     "since": "9f44210d9fdcc13c46e5358f36f49dbe134132e9",
+    "unmeasured": true
+   },
+   "receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43945885448",
+    "since": "ce3648f4d2f360153e66ab1a06c63557e04d8374",
+    "unmeasured": true
+   },
+   "receipts/L261_the_question_was_answered/A1_a_check_on_whether_a_question_is_still_open_punishes_the_answer.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43945885448",
+    "since": "ce3648f4d2f360153e66ab1a06c63557e04d8374",
     "unmeasured": true
    },
    "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
@@ -4036,6 +4051,11 @@
    "receipts/L_probability/S38_the_last_thirty_three_keys_are_one_class_and_the_flag_had_already_named_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43937254857",
     "since": "9f44210d9fdcc13c46e5358f36f49dbe134132e9",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43945885448",
+    "since": "ce3648f4d2f360153e66ab1a06c63557e04d8374",
     "unmeasured": true
    },
    "receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py": {
