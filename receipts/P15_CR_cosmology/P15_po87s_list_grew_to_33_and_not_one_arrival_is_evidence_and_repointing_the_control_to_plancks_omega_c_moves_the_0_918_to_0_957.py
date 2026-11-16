@@ -103,8 +103,11 @@ G_(1, bool(_m48) and bool(_m30) and _n_rows == 30,
 
 # ======================================================================================= GATE 2 ===
 # The census re-runs on today's tree and reports a LARGER list than the one banked.
+# r7807 (69): this receipt measures the census as a SNAPSHOT at its own authoring commit; receipts
+#   other seats add afterwards would otherwise join the list and redden every count below.
 _cen = subprocess.run([sys.executable, os.path.join(CEN, 'census.py')],
-                      capture_output=True, text=True, timeout=1800, cwd=ROOT)
+                      capture_output=True, text=True, timeout=1800, cwd=ROOT,
+                      env={**os.environ, 'CENSUS_INDEX_AS_OF': '99530784b'})
 OUT = _cen.stdout
 _m = re.search(r"PO-87's list: (\d+) derived \+ (\d+) declared = (\d+)", OUT)
 DERIVED, DECLARED, TOTAL = (int(x) for x in _m.groups()) if _m else (0, 0, 0)
