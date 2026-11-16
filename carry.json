@@ -164,6 +164,12 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43942555652",
+    "since": "8f849828d6c1badcb384ba54d225708c10f9cdb6"
+   }
+  },
   "suite": {
    "receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py": {
     "gates": [
