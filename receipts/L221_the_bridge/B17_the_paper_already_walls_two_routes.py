@@ -87,9 +87,10 @@ def main():
           'changes which flat bundle one has and not whether there is a field strength' in p14)
 
     # ⓶ the dimensional argument
-    check('⛭⛭ ⓶ and adds a dimensional argument: "a Yang--Mills term in four dimensions carries a '
-          'dimensionless coupling that a single length cannot build"',
-          'carries a dimensionless coupling that a single length cannot build' in p14)
+    # ⌗ re-pinned by the chat seat: the dimensional argument is now stated for the quantum theory (L550 Y1).
+    check('⛭⛭ ⓶ and adds a dimensional argument: "what a single length cannot build for a Yang--Mills '
+          'term in four dimensions is its scale"',
+          'what a single length cannot build for a Yang--Mills term in four dimensions is its scale' in p14)
     check('with the scale: "sits some forty-one decades below the strong scale, and in the infrared '
           'rather than the ultraviolet direction from it"',
           'decades below the strong scale' in p14
@@ -104,9 +105,9 @@ def main():
 
     # ⓷ the verdict, and ⓸ the residue
     check('⓷ and the verdict is sharper than "open": "the position is not that the coupling is unbuilt '
-          'but that a coupling is not the kind of thing a holonomy supplies"',
-          'not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy '
-          'supplies' in p14)
+          'but that neither a field strength nor its scale is the kind of thing a holonomy supplies"',
+          'not that the coupling is unbuilt but that neither a field strength nor its scale is the kind '
+          'of thing a holonomy supplies' in p14)
     check('⇒⇒ ⓸ with the residue named exactly: "the isometry route is walled separately, and the honest '
           'statement is that no third mechanism has been named"',
           # ⛔⛭⛭ RE-PINNED r3956: this asserted `the isometry route is WALLED separately`, and the

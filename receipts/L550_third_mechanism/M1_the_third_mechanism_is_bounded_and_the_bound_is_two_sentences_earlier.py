@@ -193,8 +193,11 @@ def main():
           'no third mechanism has been named' in flat_at(PO_PIN, 'PROTECTED_OPEN.md'))
 
     # ---------------------------------------------------- (2) the bounding sentence, and its form
-    dim = ('a Yang--Mills term in four dimensions carries a dimensionless coupling that a single '
-           'length cannot build')
+    # ⌗ RE-PINNED by the chat seat: P14's dimensional sentence now states the quantum target --
+    #   what a single length cannot build is the theory's SCALE, the quantum theory carrying no free
+    #   coupling (Y1, same directory).  It still names no route, which is this receipt's point.
+    dim = ('what a single length cannot build for a Yang--Mills term in four dimensions is its '
+           'scale')
     check('⛔ ⓶ and TWO SENTENCES EARLIER, in the same paragraph: "' + dim + '"', dim in p14)
 
     # ⛔⛔⛔ r7355+cc66 -- AND THIS SEAT'S OWN r7143 AMENDMENT WAS WRONG TWICE OVER, which is
@@ -231,10 +234,14 @@ def main():
     #     headroom was protecting against nothing and hiding the claim's own number.
     p14_pin = flat_at(P14_PIN, 'corpus/matter_sector_paper.tex')
     _raw_pin = raw_at(P14_PIN, 'corpus/matter_sector_paper.tex')
-    i_dim, i_res = p14_pin.index(dim), p14_pin.index(residue)
+    # ⌗ the distance is a fact about the pinned commit, so it is measured on the sentence as it
+    #   stood there; the live pin above reads the sentence as P14 now states it.
+    dim_at_pin = ('a Yang--Mills term in four dimensions carries a dimensionless coupling that a '
+                  'single length cannot build')
+    i_dim, i_res = p14_pin.index(dim_at_pin), p14_pin.index(residue)
     between = p14_pin[i_dim:i_res]
     n_sent = between.count('. ')
-    _m_dim, _m_res = locate(_raw_pin, dim), locate(_raw_pin, residue)
+    _m_dim, _m_res = locate(_raw_pin, dim_at_pin), locate(_raw_pin, residue)
     _between_raw = _raw_pin[_m_dim.end():_m_res.start()]
     n_para = _between_raw.count('\n\n') + _between_raw.count('\par')
     check(f'   with the residue {i_res - i_dim} characters and {n_sent} sentence-ends later, across '

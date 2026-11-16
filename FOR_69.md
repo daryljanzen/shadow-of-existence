@@ -481,6 +481,10 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7811` (69) — explainer pin `acoustic-run` restamped by 69 after reread
+
+`sec:refit-bound` changed only by losing one citation: g1, whose peak-height statistic reverses on the arm of record, no longer supports the longest-run sentence. The passage at line 261 (agreement on positions, the width difference made in the projection, level on the rate the universe has) reads the same against it. No revision.
+
 ## `r7797` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 `sec:refit-bound`'s opening now prints the one-rate figures (comb 298.5, peaks, phase, heights) with the radiation-free configuration's in a sentence of its own, and the Gaussian residual is stated on the one rate. Reread the passage at line 261 against it: the picture it gives (agreement on positions, the width difference made in the projection, level on the rate the universe has) is unchanged, so no revision.
