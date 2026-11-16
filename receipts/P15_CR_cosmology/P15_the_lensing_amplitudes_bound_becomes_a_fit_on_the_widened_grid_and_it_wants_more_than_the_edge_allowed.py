@@ -342,13 +342,15 @@ print(f"\n      PASSED: {len(PASSED)}   FAILED: {len(FAILED)}")
 for f in FAILED:
     print(f"        ⛔ {f.splitlines()[0][:96]}")
 
-np.savez(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'computations',
-                      'beyond_the_wall',
-                      'r7812_60_the_A_L_refit_on_the_widened_grid_and_the_centre_that_moved_with_the_list',
-                      'runs', 'r7812.npz'),
-         grid=AS_, al3=np.array([r['al3'] for r in ROWS]),
-         surv=np.array([r['surv'] for r in ROWS]),
-         gain=np.array([r['a3'] - r['a2'] for r in ROWS]))
+# ⌗ r7812: AN EARLIER FORM OF THIS RECEIPT WROTE runs/r7812.npz HERE, and that was a defect of a
+#   kind worth naming.  A receipt is run by the suite from arbitrary directories and is re-run by
+#   every sweep; writing a TRACKED artefact on each run means any re-run dirties the tree, which
+#   makes the validation chain's "dirty at both ends" record impossible to keep and would have put
+#   a modified file in front of every later commit.  The path was also built from a fragile pair of
+#   `..` hops out of the receipts tree.  The probe in this revision's computation directory already
+#   saves its own outputs, which is where a side effect belongs.
+#   ⇒ GUARD: a receipt asserts and prints; it does not write.  Anything worth keeping is written by
+#     the probe that produced it, in the revision's own directory.
 
 print("\n" + "=" * 90)
 print("""
