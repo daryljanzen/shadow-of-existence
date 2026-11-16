@@ -15,6 +15,116 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7815+cc66 — **THE PARTITION IS COMPLETE AND ASSEMBLED; THE COMPLETED LIST IS BUILT FROM THE DOCUMENTS AND NOT THE SWAP LOGS; TWO OF YOUR FOUR MISSING ITEMS ARE NOT PRINTED, ONE SITE YOU DID NOT NAME MOVES BY `2.97σ`, AND MY OWN CORRECTION (a) WAS TOO BROAD**
+
+`(a1)` is done: slices 3 and 4 banked, all 2547 modes on disk in four committed pieces, assembled.
+The completed list is reported here **before any edit** — nothing in `corpus/` is touched by this
+revision. `computations/beyond_the_wall/r7815_cc66_the_completed_list_and_the_one_pass/LIST.md`
+carries it whole; this reply carries what you have to read before the pass.
+
+### ⛭ ① MY OWN CORRECTION (a) WAS TOO BROAD, AND YOU HAVE THE BROAD FORM IN THE `r7813` RECORD
+
+`r7813` took my correction as *"a step-8 bank cannot serve step-2 figures"*. Measured against the
+assembled bank, **at the same point the step-8 bank and the step-2 bank agree at every one of the
+238 shared multipoles to `5.55e-16`** — machine precision, median `2.22e-16`. The instrument says
+why: `LSTEP` sets only the **output** grid (`ls = np.arange(100, LMAXL, LSTEP)`, `ACOUSTIC_two_arm.py`
+l.1402 and l.1655), and the wavenumber integration is untouched, so `Dl` at a shared `ℓ` is the same
+computation either way.
+
+- **What survives**, and it is what the refusal needed: a step-8 bank cannot be **substituted** for a
+  step-2 one, because the arrays are 238 long against 950, so the substitution silently changes the
+  sampling every downstream procedure reads — and a procedure that samples the grid does read it,
+  which is the locator move `r7809` measured (`+0.15 / +0.36 / +0.71 / +0.96`).
+- **What does not survive** is the reason I gave for it, that the spectra differ. They do not.
+- ⇒ **The narrow form is what is true, and the `r7813` record should carry the narrow form.**
+
+### ⛭ ② TWO OF THE FOUR ITEMS YOU NAME AS MISSING ARE NOT PRINTED IN ANY PAPER BODY
+
+Searched across `corpus/*.tex` and `EXPLAINER.md`: the control's **folded harmonic significance
+(`1.80σ`)** and the **sky–control agreement (`0.79σ`)** occur **only** inside *generated* receipt
+blurbs in `appendix_receipts_P15.tex` and its corpus-wide twin. On `r7667`'s distinction — kept at
+`r7809` and `r7811` — a receipt cited in an appendix is cited by construction and is not a sentence
+printing a figure.
+
+⇒ So those two are **not prose edits**. They follow their receipts' own pins and land through
+`corpus/make_all_appendices.py`, which is a different operation from re-wording a sentence; a
+one-pass edit that treats them as sentences will look for sites that are not there.
+
+⇒ **But the harmonic's *amplitude* is printed**, at P15 `l.1091`, as the control's `$0.20\pm0.11$` —
+in `fig:acoustic-nofit`'s caption, with the no-fit receipt cited at its end. That is the same
+quantity at the body's own precision, and it moves: `0.2028±0.1126` → `0.1734±0.1088`, printing as
+**`0.20±0.11` → `0.17±0.11`**. The harmonic is on the list as an amplitude in the body and a
+significance in the appendix, not as the `1.80` the order names.
+
+### ⛭ ③ A LANDING SITE THE ORDER DOES NOT NAME, AND IT IS THE LARGEST MOVE ON THE LIST
+
+P15 `l.293` prints *"at its own background, before refitting, it sits `4.94` standard deviations
+high"*. `r7805`'s receipt measures that `4.944` at `(67.40, 0.3150, 0.02237)` — the point it labels
+*"Planck's un-refitted point"*, and the very point `r7807+cc66` showed is **not** Planck 2018's
+published best fit, its implied `ω_c` being `0.120727` against the published `0.1200`. So it is a
+control figure at the un-refitted point.
+
+Re-derived through the **same functions the receipt uses**, reproducing the receipt's own `4.944` at
+the old point first as its anchor (`theta_at_planck.py`):
+
+| point | `100θ*` | pull |
+|---|---|---|
+| the corpus control point `(67.40, 0.3150)` | `1.04238` | **`+4.944 σ`** |
+| Planck 2018 published `(67.36, Ω_m 0.313772)` | `1.04146` | **`+1.973 σ`** |
+| | | **`−2.970`** |
+
+⛔ **And the consequence is a clause, not a figure.** The same sentence says refitting *"relieves the
+two by over two standard deviations each"*. The control's own 185-bin refit minimum is `+2.643` on
+this definition and **does not move with the point** — a minimum does not depend on where the search
+began. So at Planck's point the control's un-refitted `1.973` sits **below** its refitted `2.643`:
+refitting no longer relieves the control, it costs it `0.67`.
+
+⇒ **My recommendation, stated rather than left open:** keep the sentence's structure and drop the
+symmetry from the relief clause. The construction's relief (`4.84 → 2.33`) is unchanged and is the
+load-bearing half; the control's side becomes *"and the standard model's own pull at the published
+point is smaller still, `1.97`, which its refit does not improve on"*. That reports the measurement
+and keeps the paragraph's point — that the pull belongs to the background — intact, because at
+Planck's point the background pays **less** and the construction's `+4.84` at the distances' point is
+still the background's. The wording is yours; the measurement and the inversion are mine to report.
+
+### ④ THE CALIBRATION, THROUGH 70's ONE PROCEDURE — AND ONE SITE OWED
+
+Eight sentences carry the `0.23 %`: P15 `l.150` (abstract), `l.877` (`sec:refit-bound`), `l.2827`
+(`sec:scope` item 1); P7 `l.1869`; P18 `l.1517`, `l.1837`, `l.3066`. Each restates as 70's
+measurement — the instrument's `2.203` against CAMB's `2.212` through one locator, **`0.44 %`**,
+citing `P15_at_plancks_point_the_control_returns_p1_p2_2_203_…`. The extended swap independently
+reads the control's own `P1/P2` moving only `2.204 → 2.203` under the re-pointing, so the ratio is
+nearly point-independent and what changes is the reference it is set against.
+
+⛔ **`l.857`'s `0.14 %` is owed and not answered.** P15 itself distinguishes the two (`l.877`: *"the
+closer `0.14\%` belonging [to the other path]"*), and 70's measurement is on the **polarisation**
+path, which is `l.877`'s. Restating `l.857` through the same one procedure needs that path's own CAMB
+number through the same locator, and `r7813+70`'s receipt does not carry it. **It is on the list as
+owed.** It is a short run on a bank 70 already has, and I will take it if you would rather it did not
+wait for 70.
+
+### ⑤ WHAT THE LIST IS, AND WHAT IS STILL MEASURING
+
+`scan.py` reads **128 candidate sentences** out of P15, P7, P18 and `EXPLAINER.md` — every sentence
+naming the control in any of the corpus's spellings, or printing one of the figures `r7815`, `r7813`
+and `r7809` name. `cross.py` traces 44 of them to a bank and classifies each bank by its **own stored
+`(r_s, D_M)`**; **84 cite no receipt**, which is exactly the half your ruling says the swap-log list
+missed, and each of those is hand-read to its quantity with its owner named.
+
+The swap is extended from `r7809`'s **5** receipts to the **21** that load a swappable bank, and a
+second round now runs the **10** that read the step-2 bank, which the assembled spectrum makes
+swappable for the first time (`REFUSED` is empty and the fourth pair is grid-exact, asserted). Both
+rounds are mid-flight; their tables land in `LIST.md` and in a `r7815+cc66` follow-on here.
+
+⌗ **One provenance gap, routed rather than fixed.** P15 `l.164` prints the control's
+`φ/π = −0.2361`. Its receipt (`P15_the_sky_phase_fit_and_its_uncertainty`) **parses that figure out
+of the paper and asserts it**; nothing in `computations/` produces it. The nearest live measurement
+of the same-named quantity — the three-peak comb fit on the banked control — is `−0.2291`, moving to
+`−0.2294`. The two differ by `0.0070`, which is **larger than the `0.0043` offset the sentence is
+about**. So either the printed figure comes from a procedure that is not in the tree, or it is not
+that quantity. That is the PO-87 defect class, and it cannot be re-pointed until its producer is
+known.
+
 ## r7811+cc66 — **THE LIST IS 4 CONTROL-PROPER BANKS AND NOT 41; THE `0.918`-CLASS FIGURES MOVE AS MEASURED; AND P15's FOURTH FEATURE READS THE *REFITTED* CONTROL, SO IT CANNOT MOVE AT ALL**
 
 All three items of `r7809` answered under `r7811`'s ruling, except the fine-grid half of ②, which is
