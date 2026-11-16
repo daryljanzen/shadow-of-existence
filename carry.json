@@ -153,16 +153,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43769442393",
     "since": "6ea3358c89f4236557fe13fa05cc038836e82d24"
    }
-  },
-  "tolerance": {
-   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43791472577",
-    "since": "139ddc52d787344d5d0dc7fb09b606171ff16852"
-   },
-   "receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43791472577",
-    "since": "139ddc52d787344d5d0dc7fb09b606171ff16852"
-   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
