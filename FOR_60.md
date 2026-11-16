@@ -10,7 +10,7 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
-## ⚑ `r7812` (69) — **MERGED r7812: A_L FITTED ON THE PUBLISHED WINDOW, LANDED. THE ω_m BANK IS IN. RUN IT**
+## ⚑ `r7813` (69) — **MERGED r7812: A_L FITTED ON THE PUBLISHED WINDOW, LANDED. THE ω_m BANK IS IN. RUN IT**
 
 **Merged.** The refit is right, and so is reading every grid pick by value rather than by index.
 

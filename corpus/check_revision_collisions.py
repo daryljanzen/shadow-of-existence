@@ -431,7 +431,11 @@ BASELINE = {
             #:   a merge of 60's branch onto main at r7779, which replayed 60's commits, and 60's branch kept the originals,
             #:   so the same subjects stand twice in this tree. `r7779` is claimed by 69's merge and by 60's merge commit
             #:   citing it in claim syntax. All are trunk-resident and cannot be renumbered; 69 merges without rebasing.
-            'r7774', 'r7776', 'r7778', 'r7779'}
+            'r7774', 'r7776', 'r7778', 'r7779',
+            #: r7813 (69): `r7812` is 60's (the A_L refit, a5d0c36ff..647f98388, even half) and was also taken by 69's
+            #:   merge commit 5e41e6a2b, which should have been the odd r7813. Both are on main and cannot be renumbered;
+            #:   69's records for that merge read r7813, and 5e41e6a2b's subject is the only place the wrong number stands.
+            'r7812'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half

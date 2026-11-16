@@ -217,12 +217,17 @@ def main():
     #   and point-splitting absent: a Hadamard use outside vacuum selection fails it and must be read.
     _hadamard_sents = [_s for _s in re.split(r'(?<=[.;])\s+', re.sub(r'\s+', ' ', _prose_nobib))
                        if re.search('Hadamard', _s, re.I)]
-    check('⛔ AND "stress tensor" as QFT in curved space\'s object: STILL ABSENT -- the one use (P10, '
-          'r6909) is the classical source "the field equations trade for the stress tensor", and no '
+    check('⛔ AND "stress tensor" as QFT in curved space\'s object: STILL ABSENT -- of the two uses, the one in P10 '
+          '(r6909) is the classical source "the field equations trade for the stress tensor" and P14 names '
+          'the trace anomaly as dimensional transmutation\'s witness, and no '
           'paper treats the renormalised <T_mn> (no \\langle T, no point-splitting; Hadamard named '
           f'only as a vacuum-selection condition, in {len(_hadamard_sents)} sentence(s))',
-          counts['stress tensor'] == 1
-          and _st_where == ['canonical_time.tex']
+          # r7813 (69): CLASS (c) A THIRD TIME.  The chat seat's P14 gauge passage names dimensional
+          #   transmutation's formal witness as "a non-vanishing trace of the stress tensor" -- the
+          #   trace anomaly NAMED as a witness, not <T_mn> renormalised; \langle T and point-splitting
+          #   stay absent below.  So the count is two, at the two papers named.
+          counts['stress tensor'] == 2
+          and sorted(_st_where) == ['canonical_time.tex', 'matter_sector_paper.tex']
           and 'what the field equations trade for the stress tensor' in body(
               os.path.join(ROOT, 'corpus', 'canonical_time.tex'))
           and not re.search(r'\\langle\s*(?:\\hat\s*\{?\s*)?T(?![A-Za-z])', _prose_nobib)
