@@ -31,3 +31,28 @@
 ====================================================================================================
   P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it
 ====================================================================================================
+  as the tree stands: rc=0, 66 number(s) on 31 distinct line shape(s)
+  control re-pointed: rc=0, 66 number(s) on 31 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 31;  numbers on them: 66 (66 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak_plane_separates_the_loading_from_the_driving_but_not_the_driving_from_a_clock_error
+====================================================================================================
+  as the tree stands: rc=0, 102 number(s) on 40 distinct line shape(s)
+  control re-pointed: rc=0, 102 number(s) on 40 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 40;  numbers on them: 102 (93 unchanged, 9 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+             301.375 -> 301.602         delta +0.227   lcdm_base           <#>    5  <#>-<#>
+               0.893 -> 0.894           delta +0.001   lcdm_base           <#>    5  <#>-<#>
+               1.037 -> 1.036           delta -0.001   lcdm_base           <#>    5  <#>-<#>
+             0.12651 -> 0.12661         delta +0.0001   lcdm   Dphi +<#>   Dalt <#>
+            -0.02469 -> -0.02455        delta +0.00014   lcdm   Dphi +<#>   Dalt <#>
+                0.17 -> 0.09            delta -0.08   arm against control: common offset <#>% apart, alternation <#>% apart
+                5.12 -> 4.60            delta -0.52   arm against control: common offset <#>% apart, alternation <#>% apart
+                0.17 -> 0.09            delta -0.08   OK    Ⓑ②  ⓷ and the CR arm's OWN driving signature matches the control's to TH
+                5.12 -> 4.60            delta -0.52   OK    Ⓑ②  ⓷ and the CR arm's OWN driving signature matches the control's to TH
+
+====================================================================================================
+  P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant
+====================================================================================================
