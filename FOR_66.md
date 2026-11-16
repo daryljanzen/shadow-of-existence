@@ -15,6 +15,92 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7815+cc66.2 — **THE SENTENCE LIST IS 7 SITES; WIDENING THE SWAP FROM 5 RECEIPTS TO 21 BOUGHT NONE OF THEM; `(a1)` NAMED TWO BANKS AND ONLY ONE WAS RUN; AND THE `1.18` COLLIDES WITH YOUR OWN `r7637` RULING**
+
+### ① THE SENTENCE LIST, FINAL FOR THE SWAPPABLE HALF: **7 SITES, 6 CHANGING THEIR PRINTED DIGITS**
+
+| # | prints | measured | verdict |
+|---|---|---|---|
+| 1 | `214.1` (`sec:refit-bound`) | `214.06 → 204.71` | **EDIT → `204.7`** |
+| 2 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
+| 3 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 4 | `1.13` (`fig:acoustic-nofit`) | `1.129 → 1.077` | **EDIT → `1.08`** |
+| 5 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 6 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
+| 7 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
+
+Four of these are new at `r7815`, and they are exactly the four my hand-read had named as *waiting on
+the step-2 bank* — the hand-read predicting the swap rather than following it. Four more receipts'
+figures moved with **no body sentence citing them**: re-derivations with no prose to edit.
+
+### ⛭ ② THE TELLING NEGATIVE, AND IT IS EVIDENCE FOR YOUR FRAMING
+
+| round | receipts run | moved ≥ 1 figure | new printed sites |
+|---|---|---|---|
+| step-8, all 21 that load a swappable bank | 21 | **16** | **0** |
+| step-2, the 10 that read `cc66_lcdm*` | 10 | 5 | **4** |
+
+Going from `r7809`'s 5 receipts to 21 took the moved-receipt count to **16** and produced **no new
+printed landing site at all** — the list stood at 3 through the entire step-8 round. **So the
+swap-log method was saturated for printed sites at 5 receipts, and widening it bought coverage, not
+sites.** The figures the list was missing were measured by other means and were never going to appear
+in a swap log. What found them was the step-2 bank `(a1)` built, and the hand-read.
+
+### ⛭ ③ `(a1)` NAMED TWO BANKS AND I RAN ONE — THE OTHER IS RUNNING NOW
+
+Your `(a1)` reads *"`cc66_lcdm` and `cc66_lcdm_L2000`, one step-2 run"*. `r7813` ran the second.
+`cc66_lcdm.npz` is 600 samples on `100..1298` step 2 — **`LMAXL=1300`**, a different bank — and it is
+the control that P15's **`2.10` per bin on the 133-bin unlensed configuration** reads (`CONTROL =
+'cc66_lcdm'`, in that receipt's own source). Reading the receipt rather than the order's phrasing is
+what found it. The `LMAXL=1300` run is launched, sliced the same way: 1656 modes, 3 pieces, at
+`D_M = 13894`, `r_s = 144.73`, `l_A = 301.6`.
+
+### ⛔ ④ THE `1.18` CANNOT BE RE-DERIVED WITHOUT CONTRADICTING YOUR `r7637` RULING
+
+Your `(4d)` ruling: *"it already names the control, so it stays a `(b)` in kind. But at Planck's point
+its number changes, so it is re-derived in the one pass with the rest."*
+
+Its receipt, `P15_the_control_entered_the_regime_and_the_arm_did_not_move`, opens with your own
+earlier ruling:
+
+> ⌛ **HISTORICAL (`r7637+70`, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE,
+> DELIBERATELY.** Its CR spectra are the c54-era runs … The corpus has superseded that state twice …
+> **What it pins is a record of that instrument, and a sentence of P15 may cite it only for that.**
+> The guard below fails if a CR file it reads is not the `LEAFREC=0` namesake.
+
+And the banks are what that says: `c54.175/177/178_lcdm.npz` differ from the control proper by
+**`max rel ≈ 1.0`** — they are the fluid path at `C = 8/9`, the fluid path at derived `C = 16/15`, and
+the polarised hierarchy, three different instrument states, not three points. Their ℓ grids *are*
+grid-identical to `r7807`'s bank (238 samples, `100..1996` step 8), so a swap would run — and it would
+conflate the configuration with the point, which is the trap your `r7811` tiering was written to
+avoid.
+
+⇒ **My recommendation, stated:** leave the `1.18` where it is and let its sentence name the
+instrument state it records. The figure's content is *"the truncation was `78\%` of the control's
+remaining χ²"* — an instrument-validation reading, which is why you classified it `(b)` in the first
+place — and re-deriving it at Planck's point would require running the superseded c54 state there,
+which is the one thing `r7637` says this receipt must not become. The sentence at `l.920` gains a
+clause naming the state; `l.930`'s *"two likelihood configurations"* sentence is about configurations
+and not about a standard-model value, so it needs nothing. **If you would rather have the number, say
+so and I will run the three c54 states at Planck's point as new banks beside the historical ones,
+leaving the receipt's own guard intact** — that is the only form in which it can be had.
+
+### ⑤ THE OWED LIST, NARROWED
+
+| item | state |
+|---|---|
+| `214.1`, `1.16` | **no longer owed** — the step-2 swap measured them |
+| `2.10` (133-bin unlensed) | the `LMAXL=1300` run, in flight |
+| `1.18` + `78\%` + reference `1.01` | **blocked on ④'s ruling**, not on a run |
+| `1320 → 921` / `1320 → 989` (the lensing scan) | reads `c54.178_lcdm.npz`, the same superseded state as ④ |
+| `l.857`'s `0.14 %` | 70's other-path CAMB number through the same locator |
+| P15 `l.164`'s `φ/π = −0.2361` | provenance gap: nothing in `computations/` produces it |
+
+The registered scorecard is in `LIST.md` §6: **(6a) failed high** (16 against 8–13), and **(6c)**,
+**(6d)**, **(6e)** and **(6f)** held. (6a) failed in the direction that matters least — the prediction
+worth making was not how many receipts move but whether widening the swap finds sites, and the answer
+is no.
+
 ## r7815+cc66 — **THE PARTITION IS COMPLETE AND ASSEMBLED; THE COMPLETED LIST IS BUILT FROM THE DOCUMENTS AND NOT THE SWAP LOGS; TWO OF YOUR FOUR MISSING ITEMS ARE NOT PRINTED, ONE SITE YOU DID NOT NAME MOVES BY `2.97σ`, AND MY OWN CORRECTION (a) WAS TOO BROAD**
 
 `(a1)` is done: slices 3 and 4 banked, all 2547 modes on disk in four committed pieces, assembled.
