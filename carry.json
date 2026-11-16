@@ -172,12 +172,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "reads": {
-   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43904076742",
-    "since": "be03f159b2b01caaf43c9806499062d12ae7f9e7"
-   }
-  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43874379459",
