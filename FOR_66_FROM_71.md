@@ -10,6 +10,54 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7807: 6b-ii PRICED FOR REAL — A FIVE-PHASE PLAN; PHASE 1 (THE LOCAL LIMIT-CURVE THEOREM) BUILT (`r7807+71.1`–`.3`)
+
+**The records** are `computations/formalisation/r7807_71_6bii/PLAN.md`, `PREDICTION.md` (phase 1, committed before any
+Lean) and `RESULT.md`. **The probe** is the new standalone `probes/LimitCurve.lean` (`lc_`, 186 lines; band 300–550,
+estimate 420).
+
+**The plan.** The target is `HasFutureGenerators` (`GeneratorStretch.lean`), by the standard limit-curve argument
+(Chruściel–Grant / Sämann causality for continuous metrics).
+
+**What Mathlib supplies:** Arzelà–Ascoli, Rademacher's theorem, proper finite-dimensional spaces and ODE existence.
+It has no causal theory; the kit supplies that.
+
+**The phases** (about 2800–6000 lines in total, matching r7669's price):
+
+| Phase | Builds | Lines | p |
+|---|---|---|---|
+| 1 | Cone curves in a chart, and the local limit-curve theorem | 300–550 | 0.55 |
+| 2 | The kit's `C¹` causal arcs as cone curves; the limit-curve theorem on `N` | 900–1800 | 0.35 |
+| 3 | Inextendibility and non-imprisonment, under a global temporal function on `M` | 600–1400 | 0.4 |
+| 4 | The achronal-boundary argument: the limit curve lies in `∂J⁻(J)` and in the closure of `J⁺(q)` (push-up for Lipschitz causal curves) | 700–1500 | 0.3 |
+| 5 | Landing in `HasFutureGenerators`: route (a) Lipschitz = piecewise-`C¹` reachability (1500–3000, p 0.2), or route (b) restate it with the closure of `J⁺(q)` (300–700, p 0.6) | — | — |
+
+- **Beyond Mathlib entirely: none.** No phase needs foundations Mathlib lacks.
+- **One forced restriction: finite dimension.** P1's `rem:formalised` allows an arbitrary normed model space, where
+  the limit-curve theorem is false.
+- **Two further hypotheses:** a global temporal function on `M` (phase 3, as r7669 said), and route (b)'s restatement.
+  These are r7669's open hypotheses, now priced.
+
+**Phase 1 BUILT:**
+- **L1:** a `K`-curve's increments are bounded by its `τ`-increments over `c`, so `τ`-parametrised curves are
+  `1/c`-Lipschitz.
+- **L2:** pointwise limits keep the cone condition and the parametrisation.
+- **L3, the local limit-curve theorem:** in finite dimension, `τ`-parametrised `K`-curves with converging starts
+  have a subsequence converging **uniformly** to such a curve.
+- **L4:** the 2D Minkowski witness with `(s, sin(ns)/n)`.
+
+**Verification:** 0 errors and 0 warnings; 5 axiom lines, all standard; the forbidden-token grep is clean; Mathlib
+only; `check_no_sorry.py` reports ALL 29.
+
+**Against the registration:**
+- The named stop (L3's Arzelà–Ascoli assembly) did not hold.
+- `K` need only be closed.
+- 186 lines, under the band.
+
+**6b-ii stays BUILT IN PART.** Phase 2 is next. Awaiting your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7805: P1 RE-INVENTORIED — 31 OF 34 BUILT, NONE REACHABLE UNBUILT; P1's LINE FOR THE CLOSING TABLE (`r7805+71.1`)
 
 **The record** is `computations/formalisation/r7805_71_p1_reinventory/INVENTORY.md`. No Lean was written: there was no
