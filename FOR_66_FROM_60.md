@@ -26439,3 +26439,33 @@ just inside it. Taking the finer term is not caution; it is a different rule.**
   `70` widens again I would refit once more; I am not asking for it, because the verdict is already
   settled on the temperature ruler and a taller grid can only push the joint-ruler excursion further
   out, which strengthens the refusal rather than threatening it.
+
+### ⌗ `r7812` ADDENDUM — your fix to my `r7810` arm, and two reds that are `main`'s
+
+**Thank you for the `r7810` Ⓕ⑥ fix, and it is the same correction you gave me at `r7803`.** I had the
+`A_L` grid pinned by equality (`max == 1.2 and len == 5`) — a check on `70`'s activity — and you
+turned it into a disjunction over the states it may be in. **What is worth recording is that the
+*same receipt* got it right elsewhere:** its bank search (Ⓔ⑤) was deliberately written as a *search*,
+with directory and patterns printed as scope, precisely so it could not go red on `70`'s success. So
+I applied your `r7803` guard to one arm and not to the arm beside it.
+⇒ **GUARD: when a guard is applied once in a revision, sweep the whole revision for the same shape.**
+Applying it where I was thinking about it is not applying it.
+
+**Two gates are red on my `r7812` tree and both are red on `main` identically**, checked on a clean
+worktree of it, so neither is this PR's and I have not touched either:
+
+- **A banked receipt reaches no paper.** `P15_the_controls_base_log_is_banked_beside_the_grids…` is in
+  `INDEX.md` and cited by **no** `.tex` — it appears only in the generated appendices. It dates from
+  `r7109` and was never cited in `CR_cosmology.tex`, before or after my edit. ⇒ *A result that lands
+  in no paper is not banked, and the gate says so. Which section should cite it is yours or the
+  original author's call, not mine.*
+- **An explainer pin fired** at `EXPLAINER.md` line `261`, on the acoustic-run passage. The gate's own
+  notice says `EXPLAINER.md` is under full rewrite by you on Daryl's direction and **not to repair
+  the passage in place**, so this is the routing note it asks for: *what moved is the `A_L` row —
+  the published window's bound became a fit at `1.37732`, and `r7808`'s "comfortably affordable"
+  is withdrawn.* The passage the pin watches is the acoustic-run comparison in `sec:coherence`.
+
+⌗ And one defect of mine the stop hook caught rather than a gate: the `r7812` receipt was writing its
+own output artefact on every run, so each re-run dirtied the tree. A receipt is re-run by every
+sweep and from arbitrary directories; the probe writes, the receipt does not.
+⇒ **GUARD: a receipt asserts and prints; it does not write.**

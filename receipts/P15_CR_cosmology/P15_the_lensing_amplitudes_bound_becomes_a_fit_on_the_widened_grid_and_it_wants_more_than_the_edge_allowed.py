@@ -36,8 +36,10 @@ holds.
   was 1.0 only because five values are symmetric about it.  On seven it is 1.1.  Every pick off the
   grid is now by value, and Ⓑ② asserts the midpoint IS 1.1 so the hazard is a number on the record.
 """
+import io
 import json
 import os
+import re
 import sys
 
 import numpy as np
@@ -319,6 +321,21 @@ head("THE FIGURES THE PAPER AND THE INDEX ROW PRINT, PINNED INLINE")
 #   allowance of 0.005, which a tolerance of 0.004 rejected.
 #   ⇒ GUARD: compute the allowance as the rule states it -- the COARSER of the two terms -- and
 #     then sit just inside it.  Taking the finer term is not caution; it is a different rule.
+# ⌗ r7812: the index row also QUOTES two of r7808's figures -- the bound it replaces and the gain
+#   at the edge -- and a quoted figure is a figure this receipt must fail on if it is misquoted.
+#   Both are parsed out of r7808's OWN receipt rather than retyped here.  (Its screen ratio of 0.91
+#   is not a literal there, so the row states that comparison in words instead of printing it: a
+#   figure that cannot be pinned should not be set in type beside a receipt.)
+_R7808 = io.open(os.path.join(
+    ROOT, 'receipts', 'P15_CR_cosmology',
+    'P15_the_lensing_amplitude_is_affordable_and_still_leaves_the_displacement_standing_and_the_'
+    'optical_depth_is_the_free_amplitude_exactly.py'), encoding='utf-8').read()
+_q_surv = float(re.search(r'_s0 - (96\.964)', _R7808).group(1))
+_q_gain = float(re.search(r'_g0 - (3\.29)', _R7808).group(1))
+print(f"      {'r7808 bound, parsed from its own receipt':<42s} {_q_surv:>11.5f}  "
+      f"pinned {R7808_BOUND_SURV:>9.5f}")
+print(f"      {'r7808 gain at the edge, likewise':<42s} {_q_gain:>11.5f}  "
+      f"pinned {R7808_BOUND_GAIN:>9.5f}")
 for nm, got, want in (('the refitted A_L, published window', PUB['al3'], 1.37732),
                       ('its surviving displacement', PUB['surv'], 94.457),
                       ('its absorbed-share gain', PUB['a3'] - PUB['a2'], 4.18),
@@ -332,7 +349,10 @@ check("Ⓘ⑨  ** ADDITION: ** every figure this revision puts into the paper or
       and abs(PUB['surv'] - 94.457) < 0.045
       and abs((PUB['a3'] - PUB['a2']) - 4.18) < 0.0045
       and abs(PUB['dtt'] / AL_TT_SIG - 1.40) < 0.0045
-      and abs(PUB['djo'] / AL_JOINT_SIG - 3.04) < 0.0045)
+      and abs(PUB['djo'] / AL_JOINT_SIG - 3.04) < 0.0045
+      and abs(_q_surv - 96.964) < 0.045 and abs(_q_gain - 3.29) < 0.0045
+      and abs(_q_surv - R7808_BOUND_SURV) < 1e-12
+      and abs(_q_gain - R7808_BOUND_GAIN) < 1e-12)
 
 head("THE ARMS, AND THE COUNT")
 print("      REGISTERED ARMS: 8 -- Ⓐ① Ⓑ② Ⓒ③ Ⓓ④ Ⓔ⑤ Ⓕ⑥ Ⓖ⑦ Ⓗ⑧.  ALL EIGHT met.")
