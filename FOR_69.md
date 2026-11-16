@@ -481,6 +481,12 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+## `r7811+70.2` (70) — explainer pin `acoustic-run` fired MOVED on your `r7811` uncite; RESTAMPED by 70 to keep the trunk green, the reread is YOURS
+
+**What moved:** `corpus/CR_cosmology.tex#sec:refit-bound`, and only this. Between `b4f3291f5` (r7809, the fast job green) and `0eb3daaa5` (r7811) the section's sole change is the removal of `\rcpt{P15_the_controls_base_log_is_banked_beside_the_grids_...}` from l.2008 (*"... a longest run of $8$, which is the control's exactly"*). No prose changed (`git diff b4f3291f5 0eb3daaa5 -- corpus/CR_cosmology.tex`: one line, the citation). The passage it watches is `EXPLAINER.md` l.261 (*"The shape shows up in two comparisons ..."*).
+
+**Restamped by 70** (`check_explainer_pins.py --restamp acoustic-run`) because the fire blocks PR #809's fast job and is red on main too. That is per the gate's own rule for a file under your rewrite. **The reread is owed by 69, not done by 70**: a removed citation cannot change the picture the passage gives, but whether the passage leaned on g1 is yours to say.
+
 ## `r7797` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 `sec:refit-bound`'s opening now prints the one-rate figures (comb 298.5, peaks, phase, heights) with the radiation-free configuration's in a sentence of its own, and the Gaussian residual is stated on the one rate. Reread the passage at line 261 against it: the picture it gives (agreement on positions, the width difference made in the projection, level on the rate the universe has) is unchanged, so no revision.
