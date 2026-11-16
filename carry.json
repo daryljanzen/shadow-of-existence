@@ -3803,16 +3803,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
     "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af"
    }
-  },
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
-    "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af"
-   },
-   "receipts/P15_CR_cosmology/P15_the_baryon_density_does_not_absorb_the_damping_signature_because_an_envelope_and_a_peak_phase_direction_do_not_overlap.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43736721553",
-    "since": "3bf4be613def2701d52ab92c3aafcfd7e41636af"
-   }
   }
  },
  "claude/youthful-darwin-xvkwh7": {
