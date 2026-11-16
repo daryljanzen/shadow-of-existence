@@ -104,6 +104,71 @@ for r in sorted(elsewhere):
 OLD_BASENAMES = {os.path.basename(r) for r in at_old}
 OLD_STEMS = {b[:-4] for b in OLD_BASENAMES}
 
+# ⛭ THE BASENAME TRAP, CHECKED AND NOT ASSUMED PAST.  `loads()` below keys on a bank's BASENAME,
+#   because a receipt builds its path with os.path.join and the literal in the source is the
+#   basename alone.  Four `lcdm_base.npz` files exist in this tree.  That is exactly the collision
+#   this seat walked into at `r7805`, where a census computed on basenames called a repointable item
+#   un-repointable.  ⇒ So the ambiguity is RESOLVED rather than hoped: for every basename that more
+#   than one path in the tree carries, every one of those paths must fall in the SAME point class,
+#   or this census refuses to decide for that basename and names it.
+_by_base = {}
+for p in sorted(glob.glob(os.path.join(ROOT, 'computations', '**', '*.npz'), recursive=True)):
+    _by_base.setdefault(os.path.basename(p), []).append(os.path.relpath(p, ROOT))
+AMBIGUOUS, UNDECIDABLE = {}, set()
+for b in sorted(OLD_BASENAMES):
+    paths = _by_base.get(b, [])
+    if len(paths) > 1:
+        AMBIGUOUS[b] = paths
+        if not all(_bg(os.path.join(ROOT, q)) == SIG for q in paths):
+            UNDECIDABLE.add(b)
+print(f"\n  basenames carried by more than one path: {len(AMBIGUOUS)}")
+for b, ps in AMBIGUOUS.items():
+    print(f"      {b}: {len(ps)} path(s), all at the un-refitted point: {b not in UNDECIDABLE}")
+print(f"  UNDECIDABLE basenames (span two point classes, so this census refuses them): "
+      f"{sorted(UNDECIDABLE) if UNDECIDABLE else 'NONE'}")
+OLD_BASENAMES -= UNDECIDABLE
+
+# ══ (A2) WHICH of those banks the re-pointed banks can actually SERVE ═══════════════════════════
+# ⛔ The order says "re-derive on the bank you have just run".  Being at the same POINT is not
+#   enough: the re-pointed bank must be the same CONFIGURATION and cover the same l grid, or what
+#   comes back is a different estimator wearing the figure's name.  Both tests are MEASURED:
+#     * configuration -- the bank's Dl must agree with the reference control's at every shared l;
+#     * grid -- its l values must be a SUBSET of a re-pointed bank's, so the re-derivation is a
+#       RESTRICTION and never an interpolation.
+head('(A2) WHICH OLD-POINT BANKS A RE-POINTED BANK CAN SERVE -- measured, not assumed')
+_R = np.load(UNREFIT_BANK, allow_pickle=True)
+REF = dict(zip((int(x) for x in _R['ls']), (float(x) for x in _R['Dl'])))
+GRIDS = {'r7807 step8 [100,1996]': set(range(100, 1997, 8)),
+         'r7809 step2 [100,1998]': set(range(100, 1999, 2))}
+same_config, variant, out_of_reach = {}, {}, {}
+for rel in sorted(at_old):
+    z = np.load(os.path.join(ROOT, rel), allow_pickle=True)
+    if not {'ls', 'Dl'} <= set(z.files):
+        continue
+    ls = [int(x) for x in z['ls']]
+    dev = max((abs(float(d) / REF[l] - 1) for l, d in zip(ls, (float(x) for x in z['Dl']))
+               if l in REF), default=float('nan'))
+    served = [g for g, S in GRIDS.items() if set(ls) <= S]
+    if dev == 0.0 and served:
+        same_config[rel] = served
+    elif not served:
+        out_of_reach[rel] = (dev, max(ls))
+    else:
+        variant[rel] = dev
+print(f"\n  THE CONTROL PROPER -- Dl agrees with the reference control at EVERY shared l, to "
+      f"EXACTLY 0, and the grid is a subset of a re-pointed one: {len(same_config)}")
+for r, g in sorted(same_config.items()):
+    print(f"      {r}\n          servable by {g}")
+print(f"\n  A DIFFERENT CONFIGURATION at the same background point -- re-pointing each needs its "
+      f"OWN run with its own switches: {len(variant)}")
+for r, d in sorted(variant.items(), key=lambda kv: kv[1]):
+    print(f"      {d:9.3e}  {r}")
+print(f"\n  BEYOND EVERY RE-POINTED BANK'S l REACH: {len(out_of_reach)}")
+for r, (d, lmax) in sorted(out_of_reach.items()):
+    print(f"      lmax={lmax:5d}  dev={d:9.3e}  {r}")
+CONTROL_PROPER = set(same_config)
+CONTROL_PROPER_BASE = {os.path.basename(r) for r in CONTROL_PROPER}
+
 # ══ (B) which receipts LOAD one, by their own source ═════════════════════════════════════════════
 head('(B) WHICH RECEIPTS LOAD A BANK AT THE UN-REFITTED POINT')
 
