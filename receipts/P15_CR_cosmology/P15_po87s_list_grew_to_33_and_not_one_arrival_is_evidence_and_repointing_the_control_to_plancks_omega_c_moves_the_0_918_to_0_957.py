@@ -162,6 +162,9 @@ G_(5, _cfg.get('LEAFGEOM') is True and _cfg.get('LEAFREC') is True and _cfg.get(
 _cls = subprocess.run([sys.executable, os.path.join(MINE, 'classify.py')],
                       input=OUT, capture_output=True, text=True, timeout=900, cwd=ROOT)
 _c = _cls.stdout
+# ⛔ a subprocess that produced nothing must redden with its own reason, not with -1 counts: that is
+# how this receipt went red in CI while passing here (classify.py's default path was under /tmp).
+_cls_ran = _cls.returncode == 0 and bool(_c.strip())
 _counts = dict((m.group(1), int(m.group(2))) for m in
                re.finditer(r'^  (STANDS \(candidate\)|NOT A DEFECT \(control\)|RE-DERIVED|'
                            r'UNDECIDED \(needs a read\)): (\d+)$', _c, re.M))
@@ -169,9 +172,11 @@ STANDS = _counts.get('STANDS (candidate)', -1)
 CTLONLY = _counts.get('NOT A DEFECT (control)', -1)
 REDER = _counts.get('RE-DERIVED', -1)
 UNDEC = _counts.get('UNDECIDED (needs a read)', -1)
-G_(6, (STANDS, CTLONLY, REDER, UNDEC) == (7, 5, 1, 16) and STANDS + CTLONLY + REDER + UNDEC == 29
-   and STANDS >= 1,
-   f"classified by WHOSE spectrum each item reads: {STANDS} STAND as candidates, {CTLONLY} are NOT "
+G_(6, _cls_ran and (STANDS, CTLONLY, REDER, UNDEC) == (7, 5, 1, 16)
+   and STANDS + CTLONLY + REDER + UNDEC == 29 and STANDS >= 1,
+   (f"classify.py produced no output (rc {_cls.returncode}): {_cls.stderr.strip()[-200:]}  ⇒ "
+    if not _cls_ran else '')
+   + f"classified by WHOSE spectrum each item reads: {STANDS} STAND as candidates, {CTLONLY} are NOT "
    f"DEFECTS (every spectrum they read is the control's own, and a control has no leaf rate), "
    f"{REDER} is RE-DERIVED, {UNDEC} cannot be decided without a read -- summing to 29.  At least one "
    f"stands, so PO-87 cannot be struck on its own clause  ⇒ PREDICTION (1b) HELD")

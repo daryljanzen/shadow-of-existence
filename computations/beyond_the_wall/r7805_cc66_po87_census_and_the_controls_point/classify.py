@@ -13,7 +13,8 @@ make: WHOSE spectrum each item reads.
     looks for `_leafrec1` and the corpus's newer banks are named descriptively.
   * anything else read on the arm side is a candidate for genuinely standing.
 
-Run: python3 classify.py <census stdout file>
+Run: python3 computations/.../r7667_cc66_po87_the_unfiltered_list/census.py | python3 classify.py
+     python3 classify.py <census stdout file>        (a path also works)
 """
 import glob
 import os
@@ -22,9 +23,17 @@ import sys
 
 import numpy as np
 
-CENSUS = sys.argv[1] if len(sys.argv) > 1 else '/tmp/claude-0/census.out'
+# The census text comes from STDIN unless a readable path is given.  ⛔ It used to default to a path
+# under /tmp, which existed on the authoring machine and NOT on the runner -- so this script crashed
+# in CI, the receipt's gate 6 parsed nothing, its counts fell back to -1, and the receipt went red
+# there while passing here.  A default that only resolves on one machine is not a default.
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-txt = open(CENSUS).read()
+if len(sys.argv) > 1 and os.path.exists(sys.argv[1]):
+    txt = open(sys.argv[1]).read()
+else:
+    txt = sys.stdin.read()
+    if not txt.strip():
+        raise SystemExit('no census text: pass a path as argv[1] or pipe census.py\'s stdout in')
 block = txt[txt.index('THE UNFILTERED LIST'):]
 
 ITEM = re.compile(
