@@ -198,11 +198,17 @@ head("THE FIGURES THIS REVISION'S INDEX ROW PRINTS, PINNED AS INLINE COMPARISONS
 #   value and so held nothing.  These are INPUTS rather than computed quantities, so each is pinned
 #   against the file it was read out of: the fit's own width and displacement come from the receipt,
 #   and the two minima from P15's own clause, parsed rather than retyped.
-_pm = re.search(r'minimum is \$\((68\.62),(0\.2974)\)\$', P15)
-_pr = re.search(r'its rounding \$\((68\.60),(0\.2973)\)\$', P15)
+# ⌗ The two minima are parsed out of the SRC and ROUNDING clauses Ⓑ② already asserts are present
+#   in P15, rather than re-matched against the paper.  An earlier form did both -- asserting each
+#   sentence AND re-matching its numbers -- which put SIX keys on the quote-pin ledger where FOUR
+#   carry the whole claim.  ⇒ GUARD: do not pin a sentence and then separately pin the numbers
+#   inside it; parse the numbers out of the span already pinned.
+_nums = lambda t: [float(x) for x in re.findall(r'[0-9]+\.[0-9]+', t)]
+_OM_BAO = _nums(SRC)[1]
+_OM_RND = _nums(ROUNDING)[1]
 _tt = re.search(r'CR arm,  TT minimum\s+[0-9.]+\s+(0\.[0-9]+)', RCPT)
-assert _pm and _pr and _tt, "a figure's source clause did not parse"
-_OM_BAO, _OM_RND, _OM_TT = float(_pm.group(2)), float(_pr.group(2)), float(_tt.group(1))
+assert _tt, "the TT-minimum row did not parse"
+_OM_TT = float(_tt.group(1))
 for nm, got, want, tol in (("the arm's BAO minimum, from P15's clause", _OM_BAO, 0.2974, 5e-5),
                            ("its rounding, which the spectra use", _OM_RND, 0.2973, 5e-5),
                            ("the arm's TT minimum, from the receipt's table", _OM_TT, 0.2912, 5e-5),
