@@ -1,0 +1,135 @@
+====================================================================================================
+  r7809/r7811 ② -- WHAT MOVES WHEN THE CONTROL IS RE-POINTED (measured by swap)
+====================================================================================================
+  3 swap pair(s), every one grid-identical (asserted, not assumed)
+  REFUSED: computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz
+      LSTEP=2 (950 samples); no step-2 re-pointed bank is banked, and interpolating onto the finer grid would change the measurement rather than re-derive it
+
+====================================================================================================
+  P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics
+====================================================================================================
+  as the tree stands: rc=0, 124 number(s) on 47 distinct line shape(s)
+  control re-pointed: rc=1, 123 number(s) on 46 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 45;  numbers on them: 120 (105 unchanged, 15 MOVED)
+  line shapes only in the un-swapped run: 2;  only in the swapped run: 1  (these are the red run's own diagnostics, not figures that moved)
+             301.375 -> 301.602         delta +0.227   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            0.729988 -> 0.729438        delta -0.00055   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            2.195930 -> 2.194568        delta -0.001362   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+            2.189782 -> 2.194183        delta +0.004401   control      [220, 540, 812, 1132]   <#>  <#>   <#>   <#>
+              2.2028 -> 2.2018          delta -0.001   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              2.2263 -> 2.2305          delta +0.0042   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              0.5853 -> 0.5515          delta -0.0338   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+               0.765 -> 0.743           delta -0.022   control      [<#>, <#>, <#>]    <#>    <#>       <#>     <#>
+              2.3110 -> 2.1079          delta -0.2031   banked  chi2 =  <#>
+              2.8261 -> 2.6233          delta -0.2028   licensed  chi2 =  <#>
+              0.1837 -> 0.1114          delta -0.0723   forbidden  chi2 =  <#>
+                0.18 -> 0.11            delta -0.07   control's own at <#> on two degrees of freedom, where the licensed
+                2.83 -> 2.62            delta -0.21   one's are <#> away. **  The heights say what chi^2, the crossings and
+               0.046 -> 0.064           delta +0.018   same contrast is <#> sigma (forbidden) against <#> sigma (licensed) on
+               1.124 -> 1.142           delta +0.018   same contrast is <#> sigma (forbidden) against <#> sigma (licensed) on
+
+====================================================================================================
+  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+====================================================================================================
+  as the tree stands: rc=0, 151 number(s) on 62 distinct line shape(s)
+  control re-pointed: rc=1, 167 number(s) on 64 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 57;  numbers on them: 125 (78 unchanged, 47 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 7  (these are the red run's own diagnostics, not figures that moved)
+            -0.18487 -> -0.18661        delta -0.00174   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.00955 -> 0.00954         delta -1e-05   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.10718 -> 0.10710         delta -8e-05   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.00983 -> 0.00944         delta -0.00039   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.00956 -> 0.00955         delta -1e-05   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.05795 -> 0.05791         delta -4e-05   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.00756 -> 0.00592         delta -0.00164   the sky vs control: dphi +<#> -> <#> sigma
+                0.79 -> 0.62            delta -0.17   the sky vs control: dphi +<#> -> <#> sigma
+            -0.14030 -> -0.14132        delta -0.00102   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.01210 -> 0.01209         delta -1e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.07505 -> 0.07499         delta -6e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+            -0.17476 -> -0.17614        delta -0.00138   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.00931 -> 0.00930         delta -1e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.10821 -> 0.10813         delta -8e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+            -0.14013 -> -0.14116        delta -0.00103   lost  (fewer than four)            <#>    <#>    <#>   3776
+             0.01258 -> 0.01257         delta -1e-05   lost  (fewer than four)            <#>    <#>    <#>   3776
+             0.05314 -> 0.05310         delta -4e-05   lost  (fewer than four)            <#>    <#>    <#>   3776
+            -0.14022 -> -0.14125        delta -0.00103   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+             0.01232 -> 0.01231         delta -1e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+             0.06558 -> 0.06553         delta -5e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+            -0.17757 -> -0.17894        delta -0.00137   lost  (fewer than four)            <#>    <#>    <#>    314
+             0.01373 -> 0.01372         delta -1e-05   lost  (fewer than four)            <#>    <#>    <#>    314
+             0.17250 -> 0.17237         delta -0.00013   lost  (fewer than four)            <#>    <#>    <#>    314
+            -0.17489 -> -0.17626        delta -0.00137   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.00945 -> 0.00944         delta -1e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.11568 -> 0.11559         delta -9e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.00302 -> 0.00301         delta -1e-05   Q1              <#> - <#>    1593     768    <#>%
+             0.00302 -> 0.00301         delta -1e-05   Q2              <#> - <#>    1593     736    <#>%
+             0.01057 -> 0.01056         delta -1e-05   Q3              <#> - <#>    1593     719    <#>%
+             0.01057 -> 0.01056         delta -1e-05   Q4              <#> - <#>    1593     795    <#>%
+             0.01842 -> 0.01840         delta -2e-05   Q4              <#> - <#>    1593     795    <#>%
+             0.01842 -> 0.01840         delta -2e-05   Q5              <#> - <#>    1593     758    <#>%
+             2.95587 -> 2.95365         delta -0.00222   Q5              <#> - <#>    1593     758    <#>%
+             0.00955 -> 0.00954         delta -1e-05   robust sigma(phi)                     <#>      <#>      +1.8%
+             0.00972 -> 0.00971         delta -1e-05   robust sigma(phi)                     <#>      <#>      +1.8%
+               13.25 -> 13.26           delta +0.01   one driving unit, in sigma              <#>        <#>      -1.8%
+               13.01 -> 13.02           delta +0.01   one driving unit, in sigma              <#>        <#>      -1.8%
+                0.79 -> 0.62            delta -0.17   the sky vs control, in sigma             <#>         <#>      -1.8%
+                0.78 -> 0.61            delta -0.17   the sky vs control, in sigma             <#>         <#>      -1.8%
+                0.78 -> 0.61            delta -0.17   ⇒ the exclusion printed as <#> sigma is <#> sigma corrected, and the sky's <#>
+             0.01002 -> 0.01001         delta -1e-05   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+               12.63 -> 12.64           delta +0.01   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+                0.76 -> 0.59            delta -0.17   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+               12.63 -> 12.64           delta +0.01   one driving unit at that end is <#> sigma on the arm of record, printing as <#
+             0.01233 -> 0.01232         delta -1e-05   robust width                          <#>      <#>     <#>
+             0.01218 -> 0.01217         delta -1e-05   robust width                          <#>      <#>     <#>
+                3.01 -> 3.02            delta +0.01   one driving unit, in sigma               <#>         <#>
+
+====================================================================================================
+  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak
+====================================================================================================
+  as the tree stands: rc=0, 240 number(s) on 93 distinct line shape(s)
+  control re-pointed: rc=0, 240 number(s) on 93 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 84;  numbers on them: 222 (198 unchanged, 24 MOVED)
+  line shapes only in the un-swapped run: 9;  only in the swapped run: 9  (these are the red run's own diagnostics, not figures that moved)
+             0.12651 -> 0.12661         delta +0.0001   cc66.158 same-vintage lcdm                +<#>  <#>
+            -0.02469 -> -0.02455        delta +0.00014   cc66.158 same-vintage lcdm                +<#>  <#>
+            -0.18571 -> -0.18746        delta -0.00175   the sky                  <#>   +<#>      4
+             0.00804 -> 0.00765         delta -0.00039   the sky                  <#>   +<#>      4
+            -0.19328 -> -0.19338        delta -0.0001   the control, merged      <#>   +<#>      4
+             0.01059 -> 0.01047         delta -0.00012   the control, merged      <#>   +<#>      4
+             0.00756 -> 0.00592         delta -0.00164   sky - control            +<#>   <#>
+            -0.00255 -> -0.00281        delta -0.00026   sky - control            +<#>   <#>
+             0.00756 -> 0.00592         delta -0.00164   the sky, vs control      +<#>   <#>       <#>
+            -0.00255 -> -0.00281        delta -0.00026   the sky, vs control      +<#>   <#>       <#>
+              0.3372 -> 0.4756          delta +0.1384   the sky, vs control      +<#>   <#>       <#>
+            -0.18487 -> -0.18661        delta -0.00174   phi            <#>       <#>    <#>      11.2x
+             0.00955 -> 0.00954         delta -1e-05   phi            <#>       <#>    <#>      11.2x
+             0.10718 -> 0.10710         delta -8e-05   phi            <#>       <#>    <#>      11.2x
+             0.00983 -> 0.00944         delta -0.00039   alt            +<#>       <#>    <#>       6.1x
+             0.00956 -> 0.00955         delta -1e-05   alt            +<#>       <#>    <#>       6.1x
+             0.05795 -> 0.05791         delta -4e-05   alt            +<#>       <#>    <#>       6.1x
+             0.00756 -> 0.00592         delta -0.00164   the sky, vs control        +<#>      <#>     <#>      <#>
+                0.79 -> 0.62            delta -0.17   the sky, vs control        +<#>      <#>     <#>      <#>
+            -0.00255 -> -0.00281        delta -0.00026   the sky, vs control        +<#>      <#>     <#>      <#>
+                0.27 -> 0.29            delta +0.02   the sky, vs control        +<#>      <#>     <#>      <#>
+            -0.02291 -> -0.02290        delta +1e-05   l_A at +1 per cent moves the sky's phi by <#> (2.4 robust sigma) and its alt b
+                0.79 -> 0.62            delta -0.17   ⇒ the <#> sigma agreement needs the sky's scale to be the control's to <#> per
+             0.00756 -> 0.00592         delta -0.00164   this file's measured sky - control on that axis:      +<#>
+
+====================================================================================================
+  P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number
+====================================================================================================
+  as the tree stands: rc=0, 505 number(s) on 104 distinct line shape(s)
+  control re-pointed: rc=1, 505 number(s) on 104 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 103;  numbers on them: 496 (485 unchanged, 11 MOVED)
+  line shapes only in the un-swapped run: 1;  only in the swapped run: 1  (these are the red run's own diagnostics, not figures that moved)
+              220.45 -> 220.60          delta +0.15   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+              537.31 -> 537.67          delta +0.36   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+              811.04 -> 811.75          delta +0.71   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             1123.96 -> 1124.92         delta +0.96   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             298.429 -> 298.705         delta +0.276   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             295.299 -> 295.577         delta +0.278   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             -0.2442 -> -0.2445         delta -0.0003   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             -0.2291 -> -0.2294         delta -0.0003   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+               2.204 -> 2.203           delta -0.001   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+               2.225 -> 2.229           delta +0.004   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             301.375 -> 301.602         delta +0.227   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
