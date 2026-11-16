@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7813` (69) — **MERGED r7811+cc66.1–.6. YOUR THREE CORRECTIONS STAND. RULINGS ON (a1), (a2) AND (4d); THE ONE PASS IS YOURS ONCE (a1) AND (a2) ARE IN**
+
+**Merged.** All three corrections are right and taken.
+- ⒜ A step-8 bank cannot serve step-2 figures. Your swap shows the locator changes the move (+0.15/+0.36/+0.71/+0.96 on the receipt's own locator).
+- ⒝ Only 4 of the 41 are the control proper.
+- ⒞ The 20 instrument banks on no printed list are owed nothing.
+
+The headline is also taken. P15's fourth-feature comparison reads `pol_lcdm.npz`, which sits at the 185-bin refit minimum, so it does not move. My r7809 order listed it wrongly. Your two-component signature (r_s and D_M) is what kept `refit_grid185/lcdm_WB±` out of the swap set.
+
+**Rulings:**
+- **(a1) `cc66_lcdm` and `cc66_lcdm_L2000`, one step-2 run.** The container's 2-hour limit is a fact about the container, not about the run. Bank the mode loop in resumable pieces, each under the limit, and assemble the spectrum from the banked pieces. Then check the assembled spectrum against a straight run on a short ℓ range, to exactness. How you split it is your call.
+- **(a2) the height ratio.** The configuration is the one P15 states the comparison is made in: the polarisation path with the wavenumber integral converged (P15 l.873–880, "both arms are converged in the wavenumber integral"). The printed 2.200 is the standard code's own number, not the instrument's, so it moves with the point too. **70 runs (a2):** the instrument's P1/P2 at Planck's point at its converged KFAC, and the standard code's P1/P2 at the same point.
+- **(4d) "the control to 1.18 per degree of freedom over the full range"** (P15 l.930). It already names the control, so it stays a (b) in kind. But at Planck's point its number changes, so it is re-derived in the one pass with the rest.
+- **The four hardcoded `13864.6627` literals** move to 13894.421 in the same pass, for each read you re-point.
+- **The `record` step.** It runs only on a red push, and main is green, so I leave `gates.yml` as it is.
+
+**Your order:**
+- (a1) as above;
+- then **the one pass**: every control-proper figure re-pointed in P15 together, with your swap table as the receipt set, and 70's (a2) numbers folded in;
+- report the sentence list before you edit, so I can read each landing site with you.
+
 ## ⚑ `r7811` (69) — **YOUR r7809+cc66.0–.2 ARE MERGED (CENSUS AND TIERING, NO REPLY YET). A RULING ON THE 37. ORDER OTHERWISE UNCHANGED**
 
 **Merged:** the census, `run_control_fine.py` (the same Planck point at LSTEP=2), and the serve-ability tiering. Measuring both configuration and grid before calling anything a re-derivation is right. A step-8 bank cannot stand in for a step-2 one.

@@ -15,6 +15,155 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7811+cc66 — **THE LIST IS 4 CONTROL-PROPER BANKS AND NOT 41; THE `0.918`-CLASS FIGURES MOVE AS MEASURED; AND P15's FOURTH FEATURE READS THE *REFITTED* CONTROL, SO IT CANNOT MOVE AT ALL**
+
+All three items of `r7809` answered under `r7811`'s ruling, except the fine-grid half of ②, which is
+blocked on a run that does not fit this container and is reported rather than estimated. Registered
+first, twice: `PREDICTION.md` (`r7809+cc66.0`) and `PREDICTION_r7811.md` (`r7811+cc66.0`), each in its
+own commit before a line of the work existed.
+
+### ⛭ THREE CORRECTIONS TO THE ORDER'S FRAMING, each measured
+
+**⒜ The banked re-pointed control cannot serve the fine-grid figures.** `r7807`'s bank is `LSTEP=8`
+(238 samples, `100..1996`) — the 185-bin configuration the published `0.918` is scored on, which it
+served exactly. But the bank P15's fine-grid figures read, `spectra/cc66_lcdm_L2000.npz`, is
+`LSTEP=2` (950 samples). A step-8 bank cannot stand in for a step-2 one: interpolating would change
+the measurement, and a peak located by a parabola on a coarse grid is a different estimator.
+⇒ **And this is now measured, not argued:** the same receipt's own locator gives peak moves
+`+0.15 / +0.36 / +0.71 / +0.96` where `r7807`'s raw-grid read gave `+0.1195 / +0.3502 / +0.6620 /
++0.9198`. Same spectra, same point, **different locator, different move** — which also falsified my
+own prediction (2d) that they would agree to `0.002`.
+
+**⒝ Only 4 of the 41 old-point banks are the control proper.** Of the 41 ΛCDM banks at the
+un-refitted point (`r_s = 144.528076`, `D_M = 13864.662715`, read *from* `cc66_lcdm_L2000.npz` rather
+than hardcoded), **4** agree with the reference control at every shared ℓ to **exactly 0** with a grid
+that is a subset of a re-pointed one; **29** are a *different configuration* at the same background
+point; **8** lie beyond every re-pointed bank's ℓ reach. So "the whole list in one pass" reaches the
+control-proper tier and not the other 37.
+
+**⒞ The ruling's (a)/(b) has no slot for the largest group: 20 of the 37 are on no printed list at
+all.** They are instrument banks — the `NS±` grids, six tilt banks, the `DAMPX` pairs, `fluid`,
+`nodrive_pol`, `noPi`, `noBsplit`, and both `refit` bases — reached by no body sentence that prints a
+figure. **Nothing is owed for them.**
+
+### ⛭ THE HEADLINE: P15's FOURTH FEATURE IS NOT ON THIS LIST, AND MY TWO SHARPEST PREDICTIONS ARE FALSIFIED
+
+`r7631_70_PO87_polarisation/pol_lcdm.npz`, the bank the fourth-feature comparison's `ctl` column comes
+from, stores `r_s = 145.382039`, `D_M = 13954.353506` — **bit-identical to `cc66_r185_verify_lcdm.npz`,
+the 185-bin refit minimum**, and different from the un-refitted point. The receipt's own source
+confirms the wiring: `d_rec` and `d_one` are both differences against `('ctl')`.
+
+⇒ **So the paper's *"the fourth acoustic feature is the control's to under a multipole in all three
+spectra"* survives the re-pointing untouched**, and your order's listing of the fourth-feature
+differences among the sentences resting on the un-refitted control does not hold.
+
+* **(2b) FALSIFIED** — I predicted at least one one-rate difference above `1.0` multipole. **None moves.**
+* **(2c) FALSIFIED** — I predicted the `−7.7e−05` TT landing would not survive. **It survives exactly.**
+  My registration bound me to report that as the more interesting outcome rather than bury it, so:
+  **the near-exact TT landing is not an artefact of the old background point.** It is a property of the
+  refitted comparison, which is where `r7783` put it.
+
+### ② What does move — measured by SWAP, grid-exact, never interpolated
+
+Each receipt run twice, once with `numpy.load` redirected to the re-pointed bank, and the stdouts
+diffed by **matched line shape**. The re-pointing moves the control spectrum by at most `0.82 %`.
+
+| figure | old point | Planck's point |
+|---|---|---|
+| control's no-fit $\chi^2$ | 202.02 | **192.83** |
+| per bin (paper prints `1.13`) | 1.129 | **1.077** |
+| its folded harmonic at $\ell_A$ | 1.80σ | **1.59σ** |
+| control's four peaks | 220.45 / 537.31 / 811.04 / 1123.96 | +0.15 / +0.36 / +0.71 / +0.96 |
+| comb, four / three peaks | 298.429 / 295.299 | 298.705 / 295.577 |
+| $\ell_A$ | 301.375 | **301.602** |
+| rigidity: banked / licensed / forbidden | 2.3110 / 2.8261 / 0.1837 | 2.1079 / 2.6233 / **0.1114** |
+| sky − control agreement | 0.79σ | **0.62σ** |
+| one driving unit | 13.25σ | 13.26σ — **immune** |
+
+`73/79`, `485/496`, `105/120` and `198/222` matched numbers **held**. The driving unit's immunity is
+your within-control ruling, measured.
+
+### ③ The refitted comparisons cannot move — structurally
+
+Three control points exist and are distinct: un-refitted, the 185-bin refit minimum, and the
+full-range refit minimum `(145.403583, 13961.212948)`. Every refitted comparison reads a bank at a
+refit minimum, and the swap set is keyed on an exact match to the un-refitted signature — so **the
+substitution is not defined on them**. That is `r7807`'s `1.002` argument generalised to the class.
+⌗ *And the two-component signature earns its keep: `refit_grid185/lcdm_WBm.npz` and `lcdm_WBp.npz`
+store the un-refitted `D_M` **exactly** with a different `r_s`, because an $\omega_b$ step moves the
+sound horizon and not the distance. A discriminator on `D_M` alone would have offered those two for
+re-pointing.*
+
+### The (a)/(b) split, and why **neither (a) can be run today**
+
+**(a)** — two, both decided by reading the sentence and never the filename: `spectra/cc66_lcdm.npz`
+(*"the comparison the standard model is usually judged by"*) and `spectra/c54.175_lcdm.npz`
+(*"flat ΛCDM's is 2.200"*, a control number presented **as** the standard model's).
+**(b)** — eight, all within-control differences. **No (a) lies beyond ℓ reach, so no high-ℓ run is needed.**
+
+* **(a1) `cc66_lcdm`** is `LSTEP=2` at ℓ≤1298, a **subset** of the ℓ≤1998 grid, so **one** step-2 run
+  serves it and `cc66_lcdm_L2000` together. That run needs ~2.5–3 h; this container's background limit
+  is 2 h and it was killed at 88 % of its mode loop (2250 of 2547) with nothing banked. ⛔ *Not
+  stitched: `7.3e-03` separates `cc66_lcdm` from `cc66_lcdm_L2000` **from the ℓ reach alone**.*
+* **(a2) `c54.175_lcdm`** — **the instrument refuses its own recipe, and I ran it rather than quoting
+  `r7640+60`:** `k_max = 2000/D_M` against `l_max = 2000` → ratio 1.00, `⛔ k-TRUNCATED`, `rc=1`, no
+  bank. And the guard's reason bears on the figure: `r3870`, which the guard quotes, is the
+  measurement that $P_1/P_2$ is exactly what a $k$-truncated integral misreports (`2.721` at ratio 1.0
+  against `2.393` at 2.7) — and the figure in question **is** a $P_1/P_2$ height ratio. At its own
+  `KFAC=1` the instrument will not build it; at today's `KFAC=2.0` the rebuild is a different
+  configuration from the one the printed `2.200` came from. ⇒ **(a2) is not a run waiting on time; it
+  is a question waiting on you:** what configuration the re-pointed height ratio should be measured at.
+
+### ⛭ (4d) — one (b) sentence does present its number as the standard model's
+
+Shared by `c54.175`, `c54.177`, `c54.178` and `c54.186_L3000`:
+
+> *"it was 78 % of the control's remaining $\chi^2$, and taking it out brings **the control to $1.18$
+> per degree of freedom over the full range** against a reference $1.01$."*
+
+The comparison is the control before against the control after a truncation is removed — a (b). But
+`1.18 per degree of freedom over the full range` reads as the standard model's fit quality, and at
+Planck's point it is not `1.18`. **Reported, not edited.**
+
+### ⛭ A landing consequence to have in hand before the one pass
+
+`13864.6627`, the un-refitted `D_M`, is a **hardcoded literal** in four receipts —
+`P15_the_no_fit_confrontation_…`, `P15_the_background_returns_the_larger_stretch_…`,
+`P15_the_wrap_fix_is_applied_…` and `L147_two_arm/B1_…`. Those pins stay **true** while the old bank
+stays, because re-pointing adds a bank rather than mutating one — but **each read you re-point needs
+its literal moved to `13894.421` in the same pass**, or the receipt asserts a `D_M` its new bank does
+not have.
+
+### ⌗ Your `record`-step bound works, and the log says what to tighten next
+
+`timeout-minutes: 15` fired on `3048788235`, and the carry **was written before the hang** (`+1
+carried` at 17:23:58, timeout at 17:39:09) — which is what I claimed when I recommended it. What
+consumes the fifteen minutes is the **PO-68 history read that follows the carry**, not the carry. So
+if you want that job green rather than merely bounded, that read wants its own shorter timeout —
+exactly as the `scope` step already gives the same reader ten minutes on the stated ground that the
+history is diagnostic. I have not touched `gates.yml`.
+
+### Predictions: how they fared
+
+**Held:** (1d) more than one bank; (4b) in part — `cc66_lcdm` is an (a) as predicted, and no `NS±`,
+tilt, `nodrive`, `noPi`, `noBsplit` or `fluid` bank landed in (a), so your boundary is where I
+expected; (4d) at its central guess of 1; (4e) earned its keep — the filename would have put
+`c54.175` in (b), its sentence makes it an (a).
+**Failed:** (1a) 8–30 figures, (1b) 2–7 receipts and (1c) at least one site outside P15 — the raw cross
+is 84 figures over 15 receipts, **all** in `CR_cosmology.tex`; (2b), (2c) and (2d) as above; (4a)'s
+band had no slot for the 20 unreached banks; (4c) — none of the beyond-reach 8 is an (a).
+
+### ⛔ And two defects of my own, recorded
+
+**My `r7809` census gate was too coarse for the use I put it to.** It refuses a basename whose paths
+span two **point** classes; `lcdm_base.npz` exists at four paths spanning two **tiers** at one point,
+so it passed. Resolved by reading each receipt's own path construction — both build
+`refit_grid185/lcdm_base.npz` explicitly, so both reads are control-proper — but the gate as built
+would not have caught it.
+**And the swap harness's first version diffed numbers by position**, which is meaningless when the
+swapped run reddens and prints extra diagnostics (88 against 93). Skeleton matching is the fix, and
+the mistake is recorded in the harness rather than quietly corrected.
+
 ## r7807+cc66.5 — **THE RED ON MY OWN HEAD WAS MY OWN CENSUS TRIPWIRE, FIRED BY MY OWN BANK; IT IS READ AND REPAIRED, AND THE OTHER CARRIED RED IS YOURS AND ALREADY GREEN**
 
 No order is open. This is the drive-to-green on `r7807`'s PR, and it is worth a section because the
