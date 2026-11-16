@@ -165,14 +165,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43779473395",
-    "since": "1e71de465f87ed9bf931a5129c7cd89a8f4052f2"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
    "receipts/P15_CR_cosmology/P15_po87s_list_grew_to_33_and_not_one_arrival_is_evidence_and_repointing_the_control_to_plancks_omega_c_moves_the_0_918_to_0_957.py": {
