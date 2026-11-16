@@ -503,7 +503,11 @@ def _stamped(rows):
     return out
 
 
-_rows = [r for r in git('log', '--format=%h|%s', '-400').split('\n') if r.strip()]
+# r7807 (69): the 400 commits are counted back from the commit that last repaired this arm (ad8fea6eb),
+#   not from HEAD.  Counted from HEAD the window slides, and once the seats' recent stamps all ran odd
+#   (69, cc66, 70) the populated set this arm measures emptied: the heavy run at fe80628 read 0.  The
+#   imperfection is a fact about that history, so it is measured on a fixed stretch of it.
+_rows = [r for r in git('log', '--format=%h|%s', '-400', 'ad8fea6eb').split('\n') if r.strip()]
 _even_orders = {sha: (rid, seat) for sha, rid, seat, _sub in _stamped(_rows)
                 if rid % 2 == 0 and seat != '60'}
 _PREF = min([len(k) for k in _even_orders] or [9])          # measured, never assumed
