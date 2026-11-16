@@ -1,0 +1,79 @@
+====================================================================================================
+  r7812 -- THE SENTENCE LIST: every P15 body sentence the one pass must touch
+====================================================================================================
+
+  swap logs cover 30 receipt(s); 385 measured (old -> new) pair(s) in total
+  logs read:
+      ✓ computations/beyond_the_wall/r7809_cc66_every_figure_that_reads_the_control_at_its_un_refitted_point/repoint_nofit.txt
+      ✓ computations/beyond_the_wall/r7809_cc66_every_figure_that_reads_the_control_at_its_un_refitted_point/repoint_step8.txt
+      ✓ computations/beyond_the_wall/r7815_cc66_the_completed_list_and_the_one_pass/swap_01_02.txt
+      ✓ computations/beyond_the_wall/r7815_cc66_the_completed_list_and_the_one_pass/swap_03_21.txt
+      ✓ computations/beyond_the_wall/r7815_cc66_the_completed_list_and_the_one_pass/swap_step2.txt
+       27 moved  P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_numbe
+        0 moved  P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway_because_the_decorre
+       15 moved  P15_on_the_arm_of_record_the_peak_heights_and_chi2_both_put_the_licensed_build_nearer_the_co
+        6 moved  P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm
+        0 moved  P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_hav
+        0 moved  P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction
+        9 moved  P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak_plane_separates_the_loa
+       24 moved  P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_ha
+       15 moved  P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_th
+       10 moved  P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_di
+        0 moved  P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_
+       12 moved  P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+        0 moved  P15_the_handover_at_the_crossing_and_what_it_costs
+       49 moved  P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_p
+        7 moved  P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it
+       14 moved  P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden
+        0 moved  P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling
+        6 moved  P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulati
+       24 moved  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_fu
+        5 moved  P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_because_a_local_maximum_fi
+        0 moved  P15_the_po87_list_is_14_repoints_and_9_departures_and_the_control_at_plancks_own_point_turns
+        6 moved  P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bi
+       47 moved  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_th
+       16 moved  P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_
+        7 moved  P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_ha
+        0 moved  P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree
+        0 moved  P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projec
+        2 moved  P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_DRIFTS_and_the_mi
+       84 moved  P15_the_two_measures_of_the_separation_are_pinned_on_the_arm_of_record_and_the_identity_and_
+        0 moved  P15_with_the_projection_distance_on_the_leaf_rate_the_refitted_spectrum_is_level_with_the_co
+
+  890 body `\rcpt` site(s); of those, the ones citing a receipt whose own output moved:
+
+  7 LANDING SITE(S); of those 6 CHANGE THE PRINTED DIGITS
+
+  [1] CR_cosmology.tex   prints  214.1   (measured 214.1 -> 204.7)   ** EDIT: 214.1 -> 204.7 **
+      receipt: P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+      sentence: Built with the projection's distance on the rate's geometric part, radiation's bend left out of it, the spectrum is rejected, and here, as in the figures above, and to the comparison of the two configurations below, ``this arm'' is that configuration, anatomised because what it lacks is what the sky measures of radiati
+
+  [2] CR_cosmology.tex   prints  1.16   (measured 1.16 -> 1.11)   ** EDIT: 1.16 -> 1.11 **
+      receipt: P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+      sentence: Built with the projection's distance on the rate's geometric part, radiation's bend left out of it, the spectrum is rejected, and here, as in the figures above, and to the comparison of the two configurations below, ``this arm'' is that configuration, anatomised because what it lacks is what the sky measures of radiati
+
+  [3] CR_cosmology.tex   prints  2.35   (measured 2.3456 -> 2.4527)   ** EDIT: 2.35 -> 2.45 **
+      receipt: P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+      sentence: Built with the projection's distance on the rate's geometric part, radiation's bend left out of it, the spectrum is rejected, and here, as in the figures above, and to the comparison of the two configurations below, ``this arm'' is that configuration, anatomised because what it lacks is what the sky measures of radiati
+
+  [4] CR_cosmology.tex   prints  1.13   (measured 1.129 -> 1.077)   ** EDIT: 1.13 -> 1.08 **
+      receipt: P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels
+      sentence: Over 179 bins on 100\le\ell\le1900 the control stands at 1.13 per bin and this arm at 2.65, a factor 2.35, against 0.99 and 1.60 when four parameters are freed in each arm .
+
+  [5] CR_cosmology.tex   prints  2.35   (measured 2.3456 -> 2.4527)   ** EDIT: 2.35 -> 2.45 **
+      receipt: P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+      sentence: Over 179 bins on 100\le\ell\le1900 the control stands at 1.13 per bin and this arm at 2.65, a factor 2.35, against 0.99 and 1.60 when four parameters are freed in each arm .
+
+  [6] CR_cosmology.tex   prints  12.6   (measured 12.63 -> 12.64)   ** NO EDIT: still prints 12.6 (moves inside its last digit) **
+      receipt: P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+      sentence: Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of that ratio's bootstrap interval, 0.953, instead of at its centre, one full unit of the driving is 12.6 standard deviations and the observed point sits at 0.76, so both figures quoted above survive the change .
+
+  [7] CR_cosmology.tex   prints  0.76   (measured 0.76 -> 0.59)   ** EDIT: 0.76 -> 0.59 **
+      receipt: P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+      sentence: Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of that ratio's bootstrap interval, 0.953, instead of at its centre, one full unit of the driving is 12.6 standard deviations and the observed point sits at 0.76, so both figures quoted above survive the change .
+
+  4 receipt(s) whose figures moved but which NO body sentence cites -- re-derived, no sentence to edit:
+      P15_on_the_arm_of_record_the_peak_heights_and_chi2_both_put_the_licensed_build_nearer_the_contro
+      P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_
+      P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_ch
+      P15_the_two_measures_of_the_separation_are_pinned_on_the_arm_of_record_and_the_identity_and_its_

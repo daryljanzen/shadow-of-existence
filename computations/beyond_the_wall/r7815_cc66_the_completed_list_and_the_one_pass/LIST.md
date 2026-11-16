@@ -115,16 +115,61 @@ locator), and 70's receipt does not carry it. **It is on the list as owed, not a
 
 ---
 
-## 3. The cited half — measured by the extended swap
+## 3. The cited half — measured by the extended swap, in two rounds
 
-`r7809`'s `repoint.py` swapped **5** receipts. **21** receipts load a swappable control bank
+`r7809`'s `repoint.py` swapped **5** receipts. **21** receipts load a swappable step-8 control bank
 (`refit_grid185/lcdm_base.npz`, `r7093_directions/grid_oneclock/lcdm_base.npz`,
-`r7095_directions/grid_licensed/lcdm_base.npz`). The swap is extended to all 21. Every pair is
-grid-identical, asserted before anything runs, so the swap moves the **point** and nothing else.
+`r7095_directions/grid_licensed/lcdm_base.npz`); the swap was extended to all 21. Then `(a1)`'s
+assembled step-2 spectrum made `spectra/cc66_lcdm_L2000.npz` swappable for the first time — `REFUSED`
+is now empty — and a second round ran the **10** receipts that read it. Every pair is grid-identical,
+asserted before anything runs, so each swap moves the **point** and nothing else.
 
-*(table filled from `swap_01_02.txt` and `swap_03_21.txt` — see §6 for its current state)*
+| round | receipts run | moved ≥ 1 figure |
+|---|---|---|
+| step-8, `swap_01_02.txt` + `swap_03_21.txt` | 21 | **16** |
+| step-2, `swap_step2.txt` | 10 | **5** |
 
----
+**The step-2 round's movers**, which are the ones `(a1)` unlocked:
+
+| receipt | moved |
+|---|---|
+| `P15_the_two_measures_of_the_separation_…` | 85 |
+| `P15_at_its_own_preferred_H0_…` | 27 |
+| `P15_the_full_range_lensed_comparison_…` | 12 |
+| `P15_the_133_bin_pair_…` | 6 |
+| `P15_the_refit_bound_figures_all_reproduce_…` | 6 |
+
+### ⛭ THE SENTENCE LIST IS 7 SITES, 6 OF THEM CHANGING THEIR PRINTED DIGITS
+
+Read by `r7812`'s own `sentence_list.py`, extended to the new logs rather than copied — the
+per-receipt linkage is the thing its first version threw away (26 false sites), and a second matcher
+is how a tree ends up with two that disagree. Full output in `sentence_list_final.txt`.
+
+| # | prints | measured | verdict |
+|---|---|---|---|
+| 1 | `214.1` | `214.06 → 204.71` | **EDIT → `204.7`** |
+| 2 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
+| 3 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 4 | `1.13` | `1.129 → 1.077` | **EDIT → `1.08`** |
+| 5 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 6 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
+| 7 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
+
+Sites 1–3 and 5 are new at `r7815` and are exactly the ones §4 predicted would need the step-2 bank.
+Four more receipts' figures moved with **no body sentence citing them** — re-derivations with no
+prose to edit: `on_the_arm_of_record`, `the_controls_base_log`, `the_refit_bound_figures`,
+`the_two_measures_of_the_separation`.
+
+### ⛭ AND THE TELLING NEGATIVE: THE STEP-8 ROUND'S EXTRA 11 RECEIPTS ADD NO PRINTED SITE
+
+Going from `r7809`'s 5 receipts to 21 took the moved-receipt count from a handful to **16** and
+produced **no new printed landing site at all** — the sentence list stood at 3 before the step-2
+round and only the step-2 round moved it to 7. So the swap-log method was **saturated** for printed
+sites, and widening it bought coverage rather than sites.
+
+⇒ That is direct evidence for 69's `r7815` framing. The figures the list was missing were measured by
+other means and were never going to appear in a swap log; what *did* find them was the step-2 bank
+`(a1)` built, and the hand-read of §4.
 
 ## 4. The uncited half — the owners, and what each needs
 
@@ -188,12 +233,32 @@ the control, not as a standard-model value.
 
 ---
 
-## 6. State of this revision
+## 6. The registered predictions, scored
+
+| | registered | measured | |
+|---|---|---|---|
+| **(6a)** of the 21 receipts, how many move | 8 to 13 | **16** | ⛔ **failed, high** |
+| **(6b)** printed landing sites on the completed list | 12 to 20 | 7 from the swap logs; the rest from §4's hand-read | scored in §7 |
+| **(6c)** at least one site in neither `r7812`'s three nor 69's named list | ≥ 1, candidate P15 `l.293` | **held, and it is the candidate**: `4.94σ → 1.97σ` | **held** |
+| **(6d)** sites needing a fresh run rather than a swap, calibration not among them | 2 to 5 | the `1.18`, the `2.10`, the `1320` scan — **3**; the calibration is 70's, as predicted | **held** |
+| **(6e)** the extended swap moves no refitted figure | none | none: the refitted `1.002`, `1.01`/`1.61`, `186.51`, tilt `0.954`, contrast `−0.0075` are all unmoved | **held** |
+| **(6f)** within-control differences move but stay | they move; verdict is stays | `0.1792` and the visibility experiment move and stay; no sentence presents one as the standard model's | **held** |
+
+⛔ **(6a) failed in the direction that matters least and (6b) is the one to read.** 16 of 21 receipts
+move, far more than I predicted — and it bought **zero** new printed sites. The prediction that was
+worth making was not how many receipts move but whether widening the swap finds sites, and the
+answer is no.
+
+## 7. State of this revision
 
 | item | state |
 |---|---|
 | `scan.py`, `cross.py`, `owners.py`, `theta_at_planck.py` | banked and pushed |
-| the extended swap, receipts 1–2 of 21 | `swap_01_02.txt` — 11 moved, 0 moved |
-| the extended swap, receipts 3–21 | running |
-| `(a1)` slice 4 of 4 (`2250:2547`) | running |
-| the step-2 assembly, and the figures that wait on it | after slice 4 |
+| the extended swap, both rounds | **complete** — `swap_01_02.txt`, `swap_03_21.txt`, `swap_step2.txt` |
+| the sentence list | **7 sites, 6 editing** — `sentence_list_final.txt` |
+| `(a1)` four slices, assembled, validated | **complete** |
+| `repoint.py`'s `REFUSED` | **empty** — discharged, not carried |
+| the three sites needing a fresh run (`1.18`, `2.10`, the `1320` lensing scan) | owed |
+| `l.857`'s `0.14 %` through one procedure | owed, 70's bank |
+| P15 `l.164`'s `φ/π = −0.2361` | provenance gap, routed |
+| the one pass itself | waits on 69 reading this list |

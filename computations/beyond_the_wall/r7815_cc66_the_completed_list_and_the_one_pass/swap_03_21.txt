@@ -56,3 +56,345 @@
 ====================================================================================================
   P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant
 ====================================================================================================
+  as the tree stands: rc=0, 372 number(s) on 127 distinct line shape(s)
+  control re-pointed: rc=1, 378 number(s) on 128 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 123;  numbers on them: 350 (325 unchanged, 25 MOVED)
+  line shapes only in the un-swapped run: 4;  only in the swapped run: 5  (these are the red run's own diagnostics, not figures that moved)
+             349.835 -> 350.289         delta +0.454   lcdm_base       <#>   <#>    <#>       <#>                <#>
+              0.1388 -> 0.1384          delta -0.0004   lcdm_base       <#>   <#>    <#>       <#>                <#>
+             -0.9385 -> -0.9387         delta -0.0002   lcdm_base       <#>   <#>    <#>       <#>                <#>
+             349.835 -> 350.289         delta +0.454   lcdm_base       <#>   <#>    <#>       <#>                <#>
+              281.75 -> 282.01          delta +0.26   lcdm_base        <#>  +<#>   +<#>    <#>
+               16.98 -> 16.89           delta -0.09   lcdm_base        <#>  +<#>   +<#>    <#>
+                8.85 -> 8.83            delta -0.02   lcdm_base        <#>  +<#>   +<#>    <#>
+             301.375 -> 301.602         delta +0.227   lcdm_base        <#>  +<#>   +<#>    <#>
+              56.359 -> 56.813          delta +0.454   driving  (lcdm control)         +<#>      <#>     <#>            <#>     <#>
+              0.2787 -> 0.2785          delta -0.0002   driving  (lcdm control)         +<#>      <#>     <#>            <#>     <#>
+               202.2 -> 204.0           delta +1.8   driving  (lcdm control)         +<#>      <#>     <#>            <#>     <#>
+              0.6132 -> 0.6133          delta +0.0001   driving  (lcdm control)         +<#>      <#>     <#>            <#>     <#>
+               91.91 -> 92.63           delta +0.72   driving  (lcdm control)         +<#>      <#>     <#>            <#>     <#>
+             349.835 -> 350.289         delta +0.454   lcdm_base       <#>                 <#>    <#>%                  <#>
+              290.17 -> 290.40          delta +0.23   lcdm_base       <#>                 <#>    <#>%                  <#>
+               24.28 -> 24.01           delta -0.27   lcdm_base       <#>                 <#>    <#>%                  <#>
+             349.835 -> 350.289         delta +0.454   lcdm_base              <#>    +<#>
+               1.971 -> 1.518           delta -0.453   lcdm_base              <#>    +<#>
+               1.971 -> 1.518           delta -0.453   OK    Ⓒ①  ** THE SKY LANDS ON THE DRIVING-ON BASES: `$L_p=<#>$`, WITHIN `$<#>$
+              -1.971 -> -1.518          delta +0.453   (control - sky)     <#>
+               1.072 -> 0.618           delta -0.454   difference          +<#>   = <#> sigma(bank), <#> sigma(scale-invariant)
+                4.42 -> 2.55            delta -1.87   difference          +<#>   = <#> sigma(bank), <#> sigma(scale-invariant)
+                1.28 -> 0.74            delta -0.54   difference          +<#>   = <#> sigma(bank), <#> sigma(scale-invariant)
+             -0.9385 -> -0.9387         delta -0.0002   lcdm_base       156     150-1600    <#>
+              0.9385 -> 0.9387          delta +0.0002   ⇒ 13 fits, 78-176 points, five windows, six spectra: |rho| in [<#>, <#>]
+
+====================================================================================================
+  P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has
+====================================================================================================
+  as the tree stands: rc=0, 69 number(s) on 34 distinct line shape(s)
+  control re-pointed: rc=1, 70 number(s) on 35 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 29;  numbers on them: 64 (54 unchanged, 10 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 6  (these are the red run's own diagnostics, not figures that moved)
+             301.375 -> 301.602         delta +0.227   CONTROL   185 bins, lensing: CAMB at the control's parameters (the registered 
+               58.87 -> 58.72           delta -0.15   <#>     <#>      <#>      <#>      <#>
+               31.04 -> 30.95           delta -0.09   <#>     <#>      <#>      <#>      <#>
+                4.76 -> 4.75            delta -0.01   <#>     <#>      <#>      <#>      <#>
+                2.34 -> 2.33            delta -0.01   <#>     <#>      <#>      <#>      <#>
+              51.259 -> 51.108          delta -0.151   the 4x2 matrix: sv <#>, <#>  ->  ratio <#>
+               2.067 -> 2.049           delta -0.018   the 4x2 matrix: sv <#>, <#>  ->  ratio <#>
+               186.0 -> 186.1           delta +0.1   ③  residual chi2 at the linearised GLS minimum <#> -- unreachable by any linea
+             -0.0075 -> -0.0076         delta -0.0001   ** the contrast scaled by (1 + c):  c = <#> +- <#>  (-0.9 sigma) **
+              90.353 -> 90.295          delta -0.058   PASS  ③ this arm leaves <#> -- ** AND THAT IS NOT THE <#> `r7647` QUOTES FROM 
+
+====================================================================================================
+  P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen
+====================================================================================================
+  as the tree stands: rc=0, 112 number(s) on 39 distinct line shape(s)
+  control re-pointed: rc=0, 112 number(s) on 39 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 36;  numbers on them: 104 (104 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 3;  only in the swapped run: 3  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode
+====================================================================================================
+  as the tree stands: rc=0, 316 number(s) on 126 distinct line shape(s)
+  control re-pointed: rc=1, 360 number(s) on 136 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 95;  numbers on them: 216 (167 unchanged, 49 MOVED)
+  line shapes only in the un-swapped run: 30;  only in the swapped run: 40  (these are the red run's own diagnostics, not figures that moved)
+          144.528076 -> 144.729071      delta +0.200995   control          r_s  <#>  D_M  <#>  r_s/D_M <#>
+        13864.662715 -> 13894.421315    delta +29.7586   control          r_s  <#>  D_M  <#>  r_s/D_M <#>
+        0.0104242043 -> 0.0104163439    delta -7.8604e-06   control          r_s  <#>  D_M  <#>  r_s/D_M <#>
+            -1.04649 -> -0.26826        delta +0.77823   nk =   40000  (  1.8 points per Bessel period):  arm-control =  <#> deg
+            -15.4483 -> -15.4644        delta -0.0161   its control, same tilt:                   <#> deg -- the two agree to <#>%
+                0.27 -> 0.37            delta +0.1   its control, same tilt:                   <#> deg -- the two agree to <#>%
+            -15.4507 -> -15.4668        delta -0.0161   and the NAMESAKE pair, for comparison:    <#> / <#> deg = <#>%, agreeing to <#
+                0.09 -> 0.01            delta -0.08   and the NAMESAKE pair, for comparison:    <#> / <#> deg = <#>%, agreeing to <#
+             0.33081 -> 0.34691         delta +0.0161   each arm on its OWN n_s (<#> vs <#>):  +<#> deg   <#> orders below the residua
+                2.37 -> 2.35            delta -0.02   each arm on its OWN n_s (<#> vs <#>):  +<#> deg   <#> orders below the residua
+             0.04106 -> 0.05715         delta +0.01609   both arms at a COMMON n_s = <#>          :  +<#> deg   <#> orders
+                3.28 -> 3.14            delta -0.14   both arms at a COMMON n_s = <#>          :  +<#> deg   <#> orders
+             0.04106 -> 0.05712         delta +0.01606   both arms at a COMMON n_s = <#>    :  +<#> deg   <#> orders
+                3.28 -> 3.14            delta -0.14   both arms at a COMMON n_s = <#>    :  +<#> deg   <#> orders
+              0.0825 -> 0.2973          delta +0.2148   tau = 1                            +<#>%   +<#> deg      +<#>%   +<#> deg
+             0.00408 -> 0.02007         delta +0.01599   tau = 1                            +<#>%   +<#> deg      +<#>%   +<#> deg
+              0.7443 -> 0.9605          delta +0.2162   tau = 1                            +<#>%   +<#> deg      +<#>%   +<#> deg
+             0.03736 -> 0.05335         delta +0.01599   tau = 1                            +<#>%   +<#> deg      +<#>%   +<#> deg
+              0.5525 -> 0.7683          delta +0.2158   visibility FWHM, late edge         +<#>%   +<#> deg      +<#>%   +<#> deg
+             0.08013 -> 0.11272         delta +0.03259   visibility FWHM, late edge         +<#>%   +<#> deg      +<#>%   +<#> deg
+              0.4325 -> 0.6481          delta +0.2156   visibility FWHM, late edge         +<#>%   +<#> deg      +<#>%   +<#> deg
+             0.06256 -> 0.09514         delta +0.03258   visibility FWHM, late edge         +<#>%   +<#> deg      +<#>%   +<#> deg
+                2.99 -> 2.84            delta -0.15   the worst convention on each pair: namesake <#> orders below <#>,  ARM OF RECO
+                3.10 -> 2.92            delta -0.18   the worst convention on each pair: namesake <#> orders below <#>,  ARM OF RECO
+              -0.272 -> -0.058          delta +0.214   namesake, r_D as the log prints it (two decimals) : <#> per cent
+              -0.305 -> -0.091          delta +0.214   namesake, r_D at six decimals                     : <#> per cent
+               0.807 -> 1.023           delta +0.216   ARM OF RECORD, six decimals                       : +<#> per cent
+               0.666 -> 0.882           delta +0.216   and what TWO DECIMALS alone would allow there      : [+<#>, +<#>] per cent
+               0.947 -> 1.164           delta +0.217   and what TWO DECIMALS alone would allow there      : [+<#>, +<#>] per cent
+               0.807 -> 1.023           delta +0.216   r_D/D_M                    +<#> per cent
+             0.04106 -> 0.05715         delta +0.01609   fixed tilt, both at <#>   +<#> deg   <#> orders below <#>
+                3.28 -> 3.14            delta -0.14   fixed tilt, both at <#>   +<#> deg   <#> orders below <#>
+             0.02829 -> 0.04030         delta +0.01201   across the five endpoints  +<#> to +<#> deg   <#> orders at worst
+             0.06256 -> 0.09514         delta +0.03258   across the five endpoints  +<#> to +<#> deg   <#> orders at worst
+                3.10 -> 2.92            delta -0.18   across the five endpoints  +<#> to +<#> deg   <#> orders at worst
+             0.33081 -> 0.34691         delta +0.0161   as run (<#> / <#>)  +<#> deg   <#> orders -- the tilt carries <#>% of it
+                2.37 -> 2.35            delta -0.02   as run (<#> / <#>)  +<#> deg   <#> orders -- the tilt carries <#>% of it
+                87.6 -> 83.5            delta -4.1   as run (<#> / <#>)  +<#> deg   <#> orders -- the tilt carries <#>% of it
+                0.27 -> 0.37            delta +0.1   the floor                  <#> deg = <#>% of the residual, the two arms to <#>
+                3.75 -> 4.59            delta +0.84   orders below, the headline difference      <#>
+                0.27 -> 0.37            delta +0.1   the floor's common mode, per cent          <#>
+                3.28 -> 3.14            delta -0.14   orders below at a common tilt              <#>
+                2.37 -> 2.35            delta -0.02   orders below as the arms were run          <#>
+                87.6 -> 83.5            delta -4.1   the tilt's share of the as-run figure      <#>
+            -15.4368 -> -15.4528        delta -0.016   full Bessel sum    : arm  <#>   control  <#>   arm-control +<#> deg   (<#> / <
+             0.04112 -> 0.05713         delta +0.01601   full Bessel sum    : arm  <#>   control  <#>   arm-control +<#> deg   (<#> / <
+                3.75 -> 4.59            delta +0.84   ⇒ <#> orders of magnitude below -- THE PROJECTION IS CLEARED
+                0.27 -> 0.37            delta +0.1   ⇒ and the kernel's own phase is <#>% of the residual on the ARM OF RECORD, com
+                0.09 -> 0.01            delta -0.08   ⇒ and the kernel's own phase is <#>% of the residual on the ARM OF RECORD, com
+
+====================================================================================================
+  P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges
+====================================================================================================
+  as the tree stands: rc=0, 234 number(s) on 72 distinct line shape(s)
+  control re-pointed: rc=1, 239 number(s) on 73 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 71;  numbers on them: 229 (219 unchanged, 10 MOVED)
+  line shapes only in the un-swapped run: 1;  only in the swapped run: 2  (these are the red run's own diagnostics, not figures that moved)
+             -0.0075 -> -0.0076         delta -0.0001   banked    lcdm  c = <#> +- <#>   (-0.9 sigma)
+             -0.0075 -> -0.0076         delta -0.0001   licensed  lcdm  c = <#> +- <#>   (-0.9 sigma)
+             -0.0075 -> -0.0076         delta -0.0001   forbidden lcdm  c = <#> +- <#>   (-0.9 sigma)
+             -0.0075 -> -0.0076         delta -0.0001   control      <#>  <#>                                                         
+             301.375 -> 301.602         delta +0.227   control      <#>  <#>                                                         
+             -0.0075 -> -0.0076         delta -0.0001   control      <#>  <#>                                                         
+             301.375 -> 301.602         delta +0.227   control      <#>  <#>                                                         
+             -0.0075 -> -0.0076         delta -0.0001   |c| falls         <#> per cent -> <#> per cent, onto the control's own <#> (0.
+             301.375 -> 301.602         delta +0.227   and the acoustic scale: <#> -> <#> against the control's <#>   (the paper's na
+             301.375 -> 301.602         delta +0.227   and the acoustic scale: <#> -> <#> against the control's <#>   (the paper's na
+
+====================================================================================================
+  P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor
+====================================================================================================
+  as the tree stands: rc=0, 90 number(s) on 37 distinct line shape(s)
+  control re-pointed: rc=1, 101 number(s) on 38 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 35;  numbers on them: 79 (65 unchanged, 14 MOVED)
+  line shapes only in the un-swapped run: 2;  only in the swapped run: 3  (these are the red run's own diagnostics, not figures that moved)
+          186.006575 -> 186.065197      delta +0.058622   banked     lcdm          <#>   180         87        8
+          186.006575 -> 186.065197      delta +0.058622   licensed   lcdm          <#>   180         87        8
+          186.006575 -> 186.065197      delta +0.058622   forbidden  lcdm          <#>   180         87        8
+              90.353 -> 90.295          delta -0.058   the gap the rebuild was ordered to close: <#> in chi^2
+          186.006575 -> 186.065197      delta +0.058622   forbidden arm chi^2 <#>   against the CONTROL's own <#>
+              0.0081 -> 0.0100          delta +0.0019   banked     lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0050 -> -0.0033         delta +0.0017   banked     lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0114 -> -0.0115         delta -0.0001   banked     lcdm    +<#>    <#>    <#>    <#>     <#>
+              0.0081 -> 0.0100          delta +0.0019   licensed   lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0050 -> -0.0033         delta +0.0017   licensed   lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0114 -> -0.0115         delta -0.0001   licensed   lcdm    +<#>    <#>    <#>    <#>     <#>
+              0.0081 -> 0.0100          delta +0.0019   forbidden  lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0050 -> -0.0033         delta +0.0017   forbidden  lcdm    +<#>    <#>    <#>    <#>     <#>
+             -0.0114 -> -0.0115         delta -0.0001   forbidden  lcdm    +<#>    <#>    <#>    <#>     <#>
+
+====================================================================================================
+  P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling
+====================================================================================================
+  as the tree stands: rc=0, 691 number(s) on 167 distinct line shape(s)
+  control re-pointed: rc=0, 691 number(s) on 167 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 167;  numbers on them: 691 (691 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels
+====================================================================================================
+  as the tree stands: rc=0, 88 number(s) on 35 distinct line shape(s)
+  control re-pointed: rc=1, 93 number(s) on 37 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 30;  numbers on them: 79 (73 unchanged, 6 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 7  (these are the red run's own diagnostics, not figures that moved)
+          13864.6627 -> 13894.4213      delta +29.7586   nofit_lcdm  computations/beyond_the_wall/refit_grid185/lcdm_base.npz D_M = <#>
+              202.02 -> 192.83          delta -9.19   nofit_lcdm  chi2 =   <#>    <#> per bin
+               1.129 -> 1.077           delta -0.052   nofit_lcdm  chi2 =   <#>    <#> per bin
+              0.2028 -> 0.1734          delta -0.0294   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
+              0.1126 -> 0.1088          delta -0.0038   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
+                1.80 -> 1.59            delta -0.21   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
+
+====================================================================================================
+  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak
+====================================================================================================
+  as the tree stands: rc=0, 240 number(s) on 93 distinct line shape(s)
+  control re-pointed: rc=0, 240 number(s) on 93 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 84;  numbers on them: 222 (198 unchanged, 24 MOVED)
+  line shapes only in the un-swapped run: 9;  only in the swapped run: 9  (these are the red run's own diagnostics, not figures that moved)
+             0.12651 -> 0.12661         delta +0.0001   cc66.158 same-vintage lcdm                +<#>  <#>
+            -0.02469 -> -0.02455        delta +0.00014   cc66.158 same-vintage lcdm                +<#>  <#>
+            -0.18571 -> -0.18746        delta -0.00175   the sky                  <#>   +<#>      4
+             0.00804 -> 0.00765         delta -0.00039   the sky                  <#>   +<#>      4
+            -0.19328 -> -0.19338        delta -0.0001   the control, merged      <#>   +<#>      4
+             0.01059 -> 0.01047         delta -0.00012   the control, merged      <#>   +<#>      4
+             0.00756 -> 0.00592         delta -0.00164   sky - control            +<#>   <#>
+            -0.00255 -> -0.00281        delta -0.00026   sky - control            +<#>   <#>
+             0.00756 -> 0.00592         delta -0.00164   the sky, vs control      +<#>   <#>       <#>
+            -0.00255 -> -0.00281        delta -0.00026   the sky, vs control      +<#>   <#>       <#>
+              0.3372 -> 0.4756          delta +0.1384   the sky, vs control      +<#>   <#>       <#>
+            -0.18487 -> -0.18661        delta -0.00174   phi            <#>       <#>    <#>      11.2x
+             0.00955 -> 0.00954         delta -1e-05   phi            <#>       <#>    <#>      11.2x
+             0.10718 -> 0.10710         delta -8e-05   phi            <#>       <#>    <#>      11.2x
+             0.00983 -> 0.00944         delta -0.00039   alt            +<#>       <#>    <#>       6.1x
+             0.00956 -> 0.00955         delta -1e-05   alt            +<#>       <#>    <#>       6.1x
+             0.05795 -> 0.05791         delta -4e-05   alt            +<#>       <#>    <#>       6.1x
+             0.00756 -> 0.00592         delta -0.00164   the sky, vs control        +<#>      <#>     <#>      <#>
+                0.79 -> 0.62            delta -0.17   the sky, vs control        +<#>      <#>     <#>      <#>
+            -0.00255 -> -0.00281        delta -0.00026   the sky, vs control        +<#>      <#>     <#>      <#>
+                0.27 -> 0.29            delta +0.02   the sky, vs control        +<#>      <#>     <#>      <#>
+            -0.02291 -> -0.02290        delta +1e-05   l_A at +1 per cent moves the sky's phi by <#> (2.4 robust sigma) and its alt b
+                0.79 -> 0.62            delta -0.17   ⇒ the <#> sigma agreement needs the sky's scale to be the control's to <#> per
+             0.00756 -> 0.00592         delta -0.00164   this file's measured sky - control on that axis:      +<#>
+
+====================================================================================================
+  P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_because_a_local_maximum_finder_reads_twenty_one_maxima_where_the_model_has_five
+====================================================================================================
+  as the tree stands: rc=0, 49 number(s) on 17 distinct line shape(s)
+  control re-pointed: rc=0, 49 number(s) on 17 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 17;  numbers on them: 49 (44 unchanged, 5 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+            -0.20124 -> -0.20133        delta -9e-05   lcdm_base      <#>   <#>  <#> |   +<#>   +<#>  <#>
+            -0.20258 -> -0.20264        delta -6e-05   lcdm_base      <#>   <#>  <#> |   +<#>   +<#>  <#>
+            -0.00135 -> -0.00131        delta +4e-05   lcdm_base      <#>   <#>  <#> |   +<#>   +<#>  <#>
+             0.01556 -> 0.01543         delta -0.00013   lcdm_base      <#>   <#>  <#> |   +<#>   +<#>  <#>
+             0.01530 -> 0.01517         delta -0.00013   lcdm_base      <#>   <#>  <#> |   +<#>   +<#>  <#>
+
+====================================================================================================
+  P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_chi2_is_read
+====================================================================================================
+  as the tree stands: rc=0, 94 number(s) on 51 distinct line shape(s)
+  control re-pointed: rc=1, 95 number(s) on 52 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 48;  numbers on them: 88 (85 unchanged, 3 MOVED)
+  line shapes only in the un-swapped run: 3;  only in the swapped run: 4  (these are the red run's own diagnostics, not figures that moved)
+               212.9 -> 203.8           delta -9.1   ** ON THOSE BINS, IN THAT CONFIGURATION, THE COMPUTED PAIR IS <#> AND 496.5. *
+              2.3320 -> 2.4358          delta +0.1038   their ratio, arm over control  ->  <#>  ->  <#>
+                2.33 -> 2.44            delta +0.11   their ratio, arm over control  ->  <#>  ->  <#>
+
+====================================================================================================
+  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+====================================================================================================
+  as the tree stands: rc=0, 151 number(s) on 62 distinct line shape(s)
+  control re-pointed: rc=1, 167 number(s) on 64 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 57;  numbers on them: 125 (78 unchanged, 47 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 7  (these are the red run's own diagnostics, not figures that moved)
+            -0.18487 -> -0.18661        delta -0.00174   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.00955 -> 0.00954         delta -1e-05   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.10718 -> 0.10710         delta -8e-05   phi, the FOUR-peak selection             <#>    <#>    <#>   1049
+             0.00983 -> 0.00944         delta -0.00039   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.00956 -> 0.00955         delta -1e-05   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.05795 -> 0.05791         delta -4e-05   alt, the FOUR-peak selection             +<#>    <#>    <#>   1049
+             0.00756 -> 0.00592         delta -0.00164   the sky vs control: dphi +<#> -> <#> sigma
+                0.79 -> 0.62            delta -0.17   the sky vs control: dphi +<#> -> <#> sigma
+            -0.14030 -> -0.14132        delta -0.00102   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.01210 -> 0.01209         delta -1e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.07505 -> 0.07499         delta -6e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+            -0.17476 -> -0.17614        delta -0.00138   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.00931 -> 0.00930         delta -1e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+             0.10821 -> 0.10813         delta -8e-05   kept  (four peaks located)         <#>    <#>    <#>   4189
+            -0.14013 -> -0.14116        delta -0.00103   lost  (fewer than four)            <#>    <#>    <#>   3776
+             0.01258 -> 0.01257         delta -1e-05   lost  (fewer than four)            <#>    <#>    <#>   3776
+             0.05314 -> 0.05310         delta -4e-05   lost  (fewer than four)            <#>    <#>    <#>   3776
+            -0.14022 -> -0.14125        delta -0.00103   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+             0.01232 -> 0.01231         delta -1e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+             0.06558 -> 0.06553         delta -5e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   7965
+            -0.17757 -> -0.17894        delta -0.00137   lost  (fewer than four)            <#>    <#>    <#>    314
+             0.01373 -> 0.01372         delta -1e-05   lost  (fewer than four)            <#>    <#>    <#>    314
+             0.17250 -> 0.17237         delta -0.00013   lost  (fewer than four)            <#>    <#>    <#>    314
+            -0.17489 -> -0.17626        delta -0.00137   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.00945 -> 0.00944         delta -1e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.11568 -> 0.11559         delta -9e-05   ALL   (the whole ensemble)         <#>    <#>    <#>   4503
+             0.00302 -> 0.00301         delta -1e-05   Q1              <#> - <#>    1593     768    <#>%
+             0.00302 -> 0.00301         delta -1e-05   Q2              <#> - <#>    1593     736    <#>%
+             0.01057 -> 0.01056         delta -1e-05   Q3              <#> - <#>    1593     719    <#>%
+             0.01057 -> 0.01056         delta -1e-05   Q4              <#> - <#>    1593     795    <#>%
+             0.01842 -> 0.01840         delta -2e-05   Q4              <#> - <#>    1593     795    <#>%
+             0.01842 -> 0.01840         delta -2e-05   Q5              <#> - <#>    1593     758    <#>%
+             2.95587 -> 2.95365         delta -0.00222   Q5              <#> - <#>    1593     758    <#>%
+             0.00955 -> 0.00954         delta -1e-05   robust sigma(phi)                     <#>      <#>      +1.8%
+             0.00972 -> 0.00971         delta -1e-05   robust sigma(phi)                     <#>      <#>      +1.8%
+               13.25 -> 13.26           delta +0.01   one driving unit, in sigma              <#>        <#>      -1.8%
+               13.01 -> 13.02           delta +0.01   one driving unit, in sigma              <#>        <#>      -1.8%
+                0.79 -> 0.62            delta -0.17   the sky vs control, in sigma             <#>         <#>      -1.8%
+                0.78 -> 0.61            delta -0.17   the sky vs control, in sigma             <#>         <#>      -1.8%
+                0.78 -> 0.61            delta -0.17   ⇒ the exclusion printed as <#> sigma is <#> sigma corrected, and the sky's <#>
+             0.01002 -> 0.01001         delta -1e-05   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+               12.63 -> 12.64           delta +0.01   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+                0.76 -> 0.59            delta -0.17   ⇒ and at the interval's UNFAVOURABLE end, <#> against the centre's <#>: sigma 
+               12.63 -> 12.64           delta +0.01   one driving unit at that end is <#> sigma on the arm of record, printing as <#
+             0.01233 -> 0.01232         delta -1e-05   robust width                          <#>      <#>     <#>
+             0.01218 -> 0.01217         delta -1e-05   robust width                          <#>      <#>     <#>
+                3.01 -> 3.02            delta +0.01   one driving unit, in sigma               <#>         <#>
+
+====================================================================================================
+  P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control
+====================================================================================================
+  as the tree stands: rc=0, 293 number(s) on 91 distinct line shape(s)
+  control re-pointed: rc=1, 288 number(s) on 89 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 79;  numbers on them: 260 (244 unchanged, 16 MOVED)
+  line shapes only in the un-swapped run: 12;  only in the swapped run: 10  (these are the red run's own diagnostics, not figures that moved)
+                0.48 -> 0.46            delta -0.02   spread           <#>     <#>     <#>     <#>
+                0.60 -> 0.61            delta +0.01   spread           <#>     <#>     <#>     <#>
+                0.70 -> 0.72            delta +0.02   spread           <#>     <#>     <#>     <#>
+              220.67 -> 220.79          delta +0.12   control          <#>   <#>   <#>  <#>         7
+              537.67 -> 537.96          delta +0.29   control          <#>   <#>   <#>  <#>         7
+              812.52 -> 813.15          delta +0.63   control          <#>   <#>   <#>  <#>         7
+             1127.31 -> 1128.10         delta +0.79   control          <#>   <#>   <#>  <#>         7
+                0.47 -> 0.59            delta +0.12   |located - hardcoded|, control   <#>   <#>   <#>   <#>
+                0.67 -> 0.96            delta +0.29   |located - hardcoded|, control   <#>   <#>   <#>   <#>
+                0.82 -> 1.45            delta +0.63   |located - hardcoded|, control   <#>   <#>   <#>   <#>
+                2.81 -> 3.60            delta +0.79   |located - hardcoded|, control   <#>   <#>   <#>   <#>
+             1127.31 -> 1128.10         delta +0.79   [PASS] ⛔⛭⛭ ** THE QUARTETS ARE LOCATED AND THE HARDCODED ONES ARE NOT REPRODUC
+              1127.3 -> 1128.1          delta +0.8   the control's               <#>
+                5.46 -> 6.25            delta +0.79   control -  sky     +<#>      +<#>      outside
+                2.47 -> 2.83            delta +0.36   control -  sky     +<#>      +<#>      outside
+                0.26 -> -0.25           delta -0.51   <#> at W = 80.  ** It does not reach significance at either admissible
+
+====================================================================================================
+  P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing
+====================================================================================================
+  as the tree stands: rc=0, 197 number(s) on 62 distinct line shape(s)
+  control re-pointed: rc=1, 197 number(s) on 62 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 62;  numbers on them: 197 (190 unchanged, 7 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+               255.3 -> 255.5           delta +0.2   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+               556.9 -> 557.2           delta +0.3   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+               828.0 -> 828.6           delta +0.6   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+              1140.2 -> 1141.0          delta +0.8   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+              1435.9 -> 1437.0          delta +1.1   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+                4.42 -> 4.41            delta -0.01   control  (driven)  : peaks ['<#>', '<#>', '<#>', '<#>', '<#>']  D = +<#>
+                4.42 -> 4.41            delta -0.01   measured, arm      D = +<#>   measured, control D = +<#>
+
+====================================================================================================
+  P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm
+====================================================================================================
+  as the tree stands: rc=1, 88 number(s) on 27 distinct line shape(s)
+  control re-pointed: rc=1, 88 number(s) on 27 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 27;  numbers on them: 88 (88 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 0  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_DRIFTS_and_the_missing_parameter_is_the_one_the_sector_is_about
+====================================================================================================
+  as the tree stands: rc=0, 126 number(s) on 34 distinct line shape(s)
+  control re-pointed: rc=0, 126 number(s) on 34 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 32;  numbers on them: 116 (114 unchanged, 2 MOVED)
+  line shapes only in the un-swapped run: 2;  only in the swapped run: 2  (these are the red run's own diagnostics, not figures that moved)
+                18.5 -> 18.4            delta -0.1   ⇒ the lcdm driving pair: lcdm_base off by +<#>% and lcdm_nodrive by +<#>% -- a
+                9.70 -> 9.67            delta -0.03   largest (<#>, <#>, <#>) -- a perfect ordering, at <#> against 9.47.

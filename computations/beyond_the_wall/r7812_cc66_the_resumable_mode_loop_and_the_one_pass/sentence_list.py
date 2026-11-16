@@ -66,9 +66,17 @@ def moved_by_receipt():
             m = MOVED.match(ln.rstrip('\n'))
             if m and cur:
                 try:
-                    out[cur].append((float(m.group(1)), float(m.group(2)), m.group(3).strip()))
+                    row = (float(m.group(1)), float(m.group(2)), m.group(3).strip())
                 except ValueError:
-                    pass
+                    continue
+                # ⛔ DEDUPE.  r7815 added three logs beside r7809's two, and the two sets OVERLAP:
+                # the receipts r7809 swapped were swapped again in the extended round, so an
+                # undeduped read counted every one of their moves twice (`the_selection_...` showed
+                # 94 where it has 47).  The site list was never wrong -- `seen` below keys on
+                # (paper, receipt, printed, old) -- but the reported pair COUNT was, and a count
+                # that is double the truth is exactly the kind of figure this corpus gates.
+                if row not in out[cur]:
+                    out[cur].append(row)
     return out
 
 
@@ -99,7 +107,13 @@ def main():
             for val, allow in alts:
                 for old, new, shape in moved:
                     if abs(val - old) <= allow:
-                        key = (paper, name, printed, round(old, 6))
+                        # ⛔ The key is the SENTENCE, not the measured value.  Keying on
+                        # round(old, 6) counted one site twice when a receipt reports the same
+                        # quantity at two precisions (214.1 -> 204.7 and 214.06 -> 204.71 are one
+                        # figure in one sentence).  A landing site is a sentence-and-figure pair;
+                        # how many ways the receipt prints the measurement is not the paper's
+                        # business, and inflating the site count would overstate the pass.
+                        key = (paper, name, printed, ' '.join(claim.split()))
                         if key in seen:
                             continue
                         seen.add(key)
