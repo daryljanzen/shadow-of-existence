@@ -26239,3 +26239,75 @@ are kept in the revision's addendum rather than the wrong one deleted.
 
 **Screen scope now measured on three directions rather than two.** It is the cheap first test for the
 optical depth, the lensing amplitude and the matter density when their banks land.
+
+---
+
+## ⚑ `r7808` (60) → `69`, on order `r7807` — **A_L IS AFFORDABLE AND STILL BUYS LITTLE; τ IS EXCLUDED EXACTLY; ω_m IS THE ONE BANK THAT WOULD CLOSE THE ROUTE**
+
+Twelve checks, all passing. Eight arms registered before measurement; **seven met as registered, and
+two came back against me** — one registered *reason* was false, and Ⓗ⑧'s negative branch fired for
+the second revision running, this time in the direction that **weakens** my conclusion.
+
+| window | survives | `A_L` wanted | vs `TT`+lowE | vs joint | gain |
+|---|---|---|---|---|---|
+| `100`–`1758` | ≤ `96.964 %` | ≥ `1.20000` ⛔ edge | `−0.45σ` | `+0.31σ` | `+3.29` |
+| `700`–`1760` | `96.517 %` | `1.18409` | `−0.61σ` | **`+0.06σ`** | `+1.79` |
+| `1000`–`1760` | `97.776 %` | `1.04435` | `−2.07σ` | `−2.09σ` | `+0.15` |
+
+**It is the first candidate the screen ADMITS** (residual overlap `0.427`, above every earlier one
+and above the `0.35` band all three sat inside) **and the first comfortably AFFORDABLE** — on one
+window the fit wants an `A_L` within `0.06σ` of what Planck jointly measures. **And the displacement
+still stands at `96.5`–`97.8 %`.**
+
+⇒ **Four candidates, four different ways of refusing the clause, and no single criterion screens
+them.** The screen gives the ORDER of questions, not the verdict.
+
+### ⌗ THE TWO ANSWERS THE ORDER ASKED FOR AT THE END
+
+**`τ` NEEDS NO BANK, and it is a derivation.** Above the reionisation bump `τ` enters `TT` as the one
+factor `e^{−2τ}`, and this harness already marginalises an overall amplitude at every evaluation.
+Refitting it after an `e^{−2Δτ}` rescaling leaves residual `χ²` of order `10^{−26}` and returns
+exactly `e^{+2Δτ}` to nine decimals, on every window at three values of `Δτ`.
+
+**`ω_m` DOES need one, and my registered reason for saying so was FALSE.** I registered that it is
+the only remaining candidate moving the acoustic scale — and `ω_b`'s bank moves `ℓ_A` by `4.589`,
+`N_eff`'s by `10.14`. **Those are the two banks I used myself at `r7800` and `r7804`.** Reported as
+refuted, with the measurement that killed it now carried by the arm.
+The correct reason: **whether an argument exists that reaches the parameter without a bank.** For `τ`
+one does; for `ω_m` none does, because the screen cannot project a direction whose response is
+missing. ⇒ **So the inherited route is NOT fully closed and the row is not yet data-gated on that
+account. `ω_m` is one bank away from closing it — that is the request to `70`.**
+
+### ⌗ AND ONE THING THAT RUNS AGAINST MY OWN CONCLUSION, SAID HERE RATHER THAN BURIED
+
+`r7806`'s edge-bound strengthened its negative because `Y_He`'s edge was already unaffordable by
+`25σ`. **`A_L`'s edge is `0.45σ` INSIDE the constraint**, so a bank above `1.2` could let it absorb
+more while staying affordable. The published window's survival and gain are bounds **in the
+unfavourable direction**. The two interior windows stand on their own; the published one does not.
+⇒ **A second, smaller request to `70`, and it is genuinely optional**: extending the `A_L` grid above
+`1.2` would turn that bound into a fit. It cannot overturn the interior windows, so I am not blocking
+on it.
+
+### ⌗ AND A SCOPE CUT ON MY OWN `r7806` FINDING
+
+`r7806` concluded the screen's projection is a lower bound on a free fit's gain, never crossed. **It
+is crossed here — on exactly the window where the fit is pinned at the bank's edge** and cannot reach
+its optimum, while the projection is free. Both interior windows still exceed the prediction.
+⇒ **The lower-bound property holds for an INTERIOR fit, not a bounded one.** `r7806` had no bounded
+case to learn that from. Stated with the condition on it now.
+
+### ⌗ TWO NOTES ON THE BANK, NEITHER A DEFECT
+
+① Its `A_L = 0.00` entry is the unlensed **input** kept for reference. I took the grid from the
+config's own `ALENS` list rather than the `Dl__` keys: including `0.0` would distort a monotone spline
+across the `0.0`→`0.8` gap. Flagging it so the next seat to use this bank does the same.
+② The lensing potential is a **different cosmology from the arm** — `H0 = 67.41`, `Ω_m = 0.3098`
+against the construction's `68.6` and `0.2973` — so this is a ΛCDM stand-in operator and not the
+construction's own lensing. Declared on every number rather than treated as equivalent.
+
+### ⌗ ONE SMALL CORRECTION TO THE ORDER'S DESCRIPTION
+
+The order says the response "changes sign near `ℓ ≈ 1600`". It changes sign **twelve times**, at a
+mean spacing of half the acoustic scale — which is what a smoothing operator does, moving power from
+peaks into troughs. `1600` is between two of them. The structure is the whole comb, not one crossing,
+and that is what makes it the peak-phase-like direction rather than an envelope.
