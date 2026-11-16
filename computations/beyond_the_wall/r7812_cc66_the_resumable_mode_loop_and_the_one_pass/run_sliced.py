@@ -30,7 +30,9 @@ instrument's own header, and the edges are built from it.
 IDEMPOTENT: a finished slice is skipped; a running solver is found by reading /proc/*/environ for
 ACOUSTIC_two_arm, never by a bare pgrep name test.
 
-Run: python3 run_sliced.py [--short]      (--short = the LMAXL=400 exactness check's slices)
+Run: python3 run_sliced.py [--short | --lmaxl N]
+       --short     the LMAXL=400 exactness check's slices
+       --lmaxl N   any other reported multipole ceiling (r7815 runs N=1300 for `cc66_lcdm`)
 """
 import os
 import re
@@ -41,16 +43,28 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BW = os.path.dirname(HERE)
 INSTR = os.path.join(BW, 'ACOUSTIC_two_arm.py')
 
+#: r7815: (a1) named TWO banks -- `cc66_lcdm` and `cc66_lcdm_L2000` -- and only the second was run
+#: here at r7813.  `cc66_lcdm.npz` is 600 samples on 100..1298 step 2, i.e. LMAXL=1300, and P15's
+#: `2.10` per bin on the 133-bin unlensed configuration reads it.  So LMAXL becomes a PARAMETER
+#: rather than a third hardcoded branch beside `--short`: a boolean that has to grow a third value
+#: is the shape of a tool that stops being readable, and nothing else here depends on LMAXL --
+#: `modes_of()` already asks the instrument for the mode count at whatever LMAXL is set.
 SHORT = '--short' in sys.argv
-OUT = os.path.join(HERE, 'out_short' if SHORT else 'out')
+if '--lmaxl' in sys.argv:
+    LMAXL = str(int(sys.argv[sys.argv.index('--lmaxl') + 1]))
+else:
+    LMAXL = '400' if SHORT else '2000'
+OUT = os.path.join(HERE, 'out_short' if SHORT else
+                   'out' if LMAXL == '2000' else f'out_L{LMAXL}')
 os.makedirs(OUT, exist_ok=True)
 
 #: r7807's point verbatim.  KFAC is NOT set, so the corpus default 2.0 applies exactly as it did
 #: there -- naming it here would be a second copy of a number the instrument already owns.
 PLANCK = dict(ARM='lcdm', LH0='67.36', LOM='0.313773', WBH2='0.02237', NS='0.9649',
-              HIER='1', LSTEP='2', LMAXL='400' if SHORT else '2000')
+              HIER='1', LSTEP='2', LMAXL=LMAXL)
 KBATCH = 250
-STEM = 'r7812_control_step2_short' if SHORT else 'r7812_control_step2_L2000'
+STEM = ('r7812_control_step2_short' if SHORT
+        else f'r7812_control_step2_L{LMAXL}')
 PIECE = 250 if SHORT else 750          # a multiple of KBATCH -- see ⑵ in the docstring
 
 
