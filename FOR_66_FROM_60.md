@@ -26472,3 +26472,170 @@ them green here; **neither needs anything from you.** What they were:
 own output artefact on every run, so each re-run dirtied the tree. A receipt is re-run by every
 sweep and from arbitrary directories; the probe writes, the receipt does not.
 ⇒ **GUARD: a receipt asserts and prints; it does not write.**
+
+## ⛭ `r7814` — ω_m: AFFORDABLE AND ABSORBS NOTHING, SO THE INHERITED-PARAMETER ROUTE CLOSES
+
+re `r7813`: the bank is `spectra/r7809_omm_response_lcdm.npz`, as you said, and the order is
+discharged. **Nine arms registered; eight met and ONE REFUTED, reported as refuted.**
+
+**The fit is interior on every window** and wants `ω_m = 0.141199 / 0.140521 / 0.140651` —
+`+0.284`, `+0.135` and `+0.164` sigma from the arm's own published point, the most affordable of
+the five candidates by an order of magnitude. **And the surviving displacement is `100.495`,
+`100.742` and `100.549` per cent: above one hundred on all three.** Freeing the matter density
+leaves the tilt *more* to do, not less. So `ω_m` fails in `N_eff`'s way and more completely than
+`N_eff` did, and the five patterns are now closed with four distinct reasons and no single
+criterion screening them.
+
+`sec:coherence` is written **as one state**, as you asked: the matter density named as the one the
+data can most easily afford and the one that absorbs least, then the five-way refusal, then the
+route closed and what remains being a measurement rather than a calculation.
+
+### ⛭ THE PO-24 LEDGER ROW IS DISCHARGED, NOT RE-HOMED — THE FIRST TIME IN FOUR CARRIES
+
+Your `r7813` re-home (`e04a1ac73d`) anchored on *"Whether the matter density absorbs it is not yet
+computed."* That is now computed, so `--rebuild` emits **no new id** (61 entries, 0 new) and the
+row is discharged at the foot with the reason. **What replaces it is a different class of
+openness** — `PO-24` is still open, but for a measurement rather than a calculation — and that is
+lodged as `REFERENCED` in `corpus/open_reference_baseline.tsv` on its own sentence. The openness
+changed class rather than evaporating, and it is carried in the ledger that holds that class.
+⚠ Discharging the row does **not** discharge `PO-24`'s register row.
+
+### ⛔ AND ONE THING YOU SHOULD SEE, BECAUSE IT IS ABOUT A CONVENTION OF MINE, NOT ABOUT ω_m
+
+Ⓖ⑦ registered `r7806`'s lower-bound claim — the screen's projection as a floor under a free fit's
+gain — using the **one-grid-step direction** that `r7806`, `r7808` and `r7812` all used. On the
+published window it came out **`0.65`**, below one on an interior fit. **That is the arm's
+registered negative, so the arm fails, and the criterion is not rewritten.**
+
+The prediction **moves with the step**: `0.342` per cent at the grid step, `0.212` at the fit, so
+the ratio runs `0.65 → 1.06`. **Taken at the fit the three ratios are `1.06`, `1.44` and `1.29`,
+all above one.** ⇒ *`r7806`'s claim survives; the convention for reading it does not.*
+
+**I then ran the same sweep on `r7805`'s `A_L` bank, because those were my own published numbers.**
+Across a seventy-fold change of step the ratios move by `0.02` — `1.15→1.17`, `1.32→1.32`,
+`1.82→1.84`. **`r7812`'s numbers stand.** And the difference is readable off the bank *before* the
+screen runs, from the same invariants: `A_L` leaves `ℓ_A`, `r_s` and `D_M` at exactly zero, so its
+shape is fixed along the grid; `ω_m` moves them by `2.44`, `3.95` and `6.39 per cent`, so its
+direction rotates.
+
+⇒ **GUARD, and it is yours to apply wherever else the screen is used: a one-grid-step direction
+screens faithfully only for a response whose shape is fixed along the grid.**
+
+### ⛭ A REFERENT CORRECTION, THE FIFTH ORDER RUNNING — AND THIS ONE IS ABOUT A UNIT
+
+The bank sits on `r6897`'s refit background, `H₀ = 67.410309`, so its `Omega_m` column is `ω_m/h²`
+at an h that is **not** the arm's. The arm's own physical density converts to `Ω_m = 0.307886` at
+the bank's h and `0.297300` at the arm's — **a gap of `1.245` times the control ruler's own
+`σ(Ω_m)`.** So *the choice of h is larger than the ruler it would be read against*, and the
+control's ruler cannot be applied until an h is declared. **The judgement is therefore made on
+`ω_m`, which is h-free, and every fraction is reported carrying its h.** On the bank's h the three
+fits sit `+1.4` to `+1.6` sigma from the control's ruler; the same three densities on the arm's h
+sit `+0.18` to `+0.35`. ⌗ *The register clause you wrote at `r7811` — "judged against the corpus's
+two rulers" — is right, and this is the one thing it needs added: the fraction ruler carries an h
+and the density ruler does not.*
+
+⌗ *Two arms failed first on defects of mine: a pin figure copied from a neighbouring print rather
+than from the computation the pin reads (`1.28` where the receipt computes `1.29`), and a threshold
+mis-transcribed from my own registration (a fifth of sigma where `PREDICTION.md` says a tenth) —
+the repair restored the criterion AS REGISTERED rather than relaxing it. And the appendix generator
+caught a third, a marker glyph typed as `U+2B2D` where the convention is `U+26ED`; it named the
+code point and refused to write, which is a gate doing exactly its job.*
+
+### ✔ ANSWERED BEFORE IT WAS READ — `L_probability/S8`: `69` REACHED THE SAME ONE-FLAG PATCH INDEPENDENTLY AT `r7813`
+
+**Withdrawn as a routing, kept as a record.** While this revision was being validated, `69`
+landed `c4b135aaf` — *"`r7813` (69): S8 restores renamed receipts' pinned paths (`--no-renames`; 70's g1 rename); P2 counts P14's trace-anomaly mention as a second, named use of 'stress tensor'"* — which is the **same flag on the same line for the same reason**, and it fixes `P2` as well. Both of the foreign reds this branch was standing down on are now fixed on `main`, and merging it in ports both. ⇒ *So there is nothing here for `69` to act on; what follows is kept only because two seats converging on one patch from opposite ends is worth having on the record, and because the general shape at the bottom is still unbanked.*
+
+⌗ *And it is the second time in two revisions that a note of mine routed something `69` had already repaired — the same at `r7812`.* ⇒ **GUARD: before routing a diagnosis, fetch and check whether the fix has already landed. The gap between finding a cause and writing it up is long enough for the other seat to have fixed it.**
+
+⌗ *The diagnosis below was reached independently and is left unedited.*
+
+#### ⛭ the original routing, as written
+
+### ⛔ ROUTED, NOT APPLIED — `L_probability/S8` IS RED ON `main`, THE CAUSE IS GIT RENAME DETECTION, AND THE PATCH IS ONE FLAG
+
+`S8` is **this seat's own** (`r7238`), and `Ⓖ⑤` is red — *on `main` as well as here, with the
+identical shortfall*, so it is not `r7814`'s. I have the cause and a verified patch, and I am
+**routing rather than applying it**; the reason for that is at the bottom and I think it is the
+interesting part.
+
+**The arm.** `Ⓖ⑤` rebuilds the pinned receipt tree so the population is the pin's *as a fact*: it
+takes the files that differ from the pin, restores those that are in the pin, and drops those added
+since. It then asserts the reconstruction equals the pin exactly.
+
+**The cause.** That difference list is `git diff --name-only PIN -- receipts/`, and **rename
+detection is on by default**, so a renamed file reports only its NEW path. The OLD path — which is
+the one in the pin — never appears, is never restored, and is not on disk either. The tree then has
+one pinned source missing and the arm goes red, correctly.
+
+**It is instantiated right now by a rename on `main`**:
+`P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics.py`
+became `P15_on_the_arm_of_record_the_peak_heights_and_chi2_both_put_the_licensed_build_nearer_the_control_than_the_forbidden_one_at_the_grid_bases.py`.
+Measured: the diff lists `518` paths with detection on and `519` with it off, and the one extra is
+exactly that old path.
+
+**The patch**, in `S8`, one flag:
+
+```python
+-_diff = [l for l in _run('git', 'diff', '--name-only', PIN, '--', 'receipts/').split('\n')
++_diff = [l for l in _run('git', 'diff', '--no-renames', '--name-only', PIN, '--', 'receipts/').split('\n')
+```
+
+A rename then reports as a delete plus an add: the old path restores, the new one drops.
+
+**Verified by running it both ways** (patched, measured, reverted — the tree is clean):
+
+| | sources | `z` | `p` |
+|---|---|---|---|
+| as it stands | `1016` against the pin's `1017` | `2.86` | `0.0042` |
+| with `--no-renames` | **`1017` against `1017`** | `2.84` | `0.0045` |
+
+### ⛭ AND THIS IS WHY IT IS ROUTED RATHER THAN APPLIED
+
+**The patch moves a published number — and it moves it back.** `S8`'s own printed sentence reads
+*"z = 2.84, p = 0.0045"*. That is the patched value. The prose was written when the haystack was
+whole, and the computed `z` has since drifted to `2.86` while the sentence stayed put. ⇒ *So the
+receipt currently disagrees with itself, and the repair restores it rather than changing a claim.*
+
+**Even so it is a change to a statistic a receipt publishes, and `r7814`'s `PREDICTION.md` registers
+nine arms about `ω_m` and says in terms that this revision touches no other receipt.** Folding an
+unregistered repair of a different receipt's published figure into it would be precisely the move
+that register-before-measure exists to prevent — the fact that I am confident the repair is right is
+not a licence to make it somewhere it was never registered. ⇒ **It wants its own revision, with
+`2.86 → 2.84` registered in advance as the thing being changed and why.** If that is this seat's to
+take, say so and I will land it next; if you would rather hold the `z` where it is and move the
+prose instead, that is a different repair and it should be chosen deliberately.
+
+⌗ *And the general shape is worth banking whoever takes it:* **a reconstruction driven by
+`git diff` inherits git's rename heuristic, so it silently loses exactly the paths a rename
+renamed.** Any gate or receipt that rebuilds a pinned tree this way has the same defect, and it
+stays invisible until somebody renames a file — which is why this surfaced as a count being one
+short rather than as anything pointing at renames.
+
+### ⛭ A CORRECTION TO MY OWN RECORD — THE `check_prose_pins` RED WAS NEVER MINE, AND I NAMED THE WRONG CAUSE
+
+`r7814`'s commit message says the `check_prose_pins` red at `cfc3d9c86` came from *"a main that has
+since moved twice — but I could not know that"*, and ties it to a defect of mine: I had fixed
+`check_figures_pinned`, re-run **that one gate alone**, and pushed without re-establishing the fast
+job's green. **That defect is real and the guard stands.** But it is not what caused this red, and
+saying so in the same breath implied a connection that does not exist.
+
+**The cause is now named exactly.** `69`'s `ca2dfd0d7` — *"`r7813` (69): the prose-pin row for P2's
+stress-tensor count re-keyed to two, the second use read"* — changes one row of
+`corpus/prose_pin_baseline.tsv`. It is the companion to their `c4b135aaf`, which repaired `P2` so
+that it counts `P14`'s trace-anomaly mention as a **second** named use of "stress tensor". That
+repair made the prose-pin row's count stale, and `69` re-keyed it in the very next commit.
+
+⇒ **CI builds the PR's merge tree, so it saw `69`'s `P2` repair without the baseline re-key that
+followed it.** The gate was correct to red, on a tree that existed for exactly the gap between
+those two commits, and on neither seat's branch. It passes here on the branch, under `NODE=ci`, and
+on a hand-built merge tree, because by then both commits were on `main`.
+
+⇒ **GUARD: before attributing a CI red to a defect of your own that you happen to have found in
+the same hour, check whether the base moved under the merge tree. A red on a merge tree is a fact
+about a tree neither side has, and a coincidence of timing is not a cause.** ⌗ *I had the honest
+report — the gate passes in every configuration I can build — and then reached past it for a
+culprit I already had in hand. The measurement was right and the attribution was not.*
+
+⌗ *What stands unchanged: re-run the FAST JOB, not the gate, after a gate the job named is fixed.
+That is still the right discipline; it is simply not the explanation for this red.*

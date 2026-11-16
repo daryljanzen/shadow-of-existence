@@ -10,6 +10,54 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7812: 6b-ii PHASE 4 BUILT WHOLE — THE RISE FROM "`J` AT INFINITY", AND THE LIMIT CURVE FROM `p ∈ 𝓗⁺` IN `𝓗⁺` AND IN `closure (I⁺(p) ∪ {p})`; THE REGISTERED STOP DID NOT HOLD (`r7812+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7812_71_6bii_p4/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is the new standalone `probes/PushUp.lean` (`pu4_`): 1549 new lines (band 1000–2200,
+estimate 1500) plus 2368 lines of byte-identical copies (phase 3 and the kit's push-up blocks).
+
+**The setting.** The chart, with `V` finite-dimensional, `Θ` temporal, `g` locally Lipschitz, `J ⊆ M`, and
+`gs_future_stretch`'s observer `O` (`O s ≪ O t`, `I⁻(range O) = D J`). **One new hypothesis formalises "`J` at
+infinity": `Θ ∘ O → ∞`.**
+
+**Built:**
+- **U1 `pu4_rise`:** chains from `xₙ ∈ D J` to `O(tₙ)` with `Θ`-rise `→ ∞`.
+- **U2:** chain points are `≤` the chain's end. The limit curve lies in `closure (D J)`. A horizon point is a limit of
+  points of `D J` (`pu4_approx`).
+- **U3 `pu4_rcs`:** reverse Cauchy–Schwarz.
+- **U4:** uniform δ-cones on compacts (`pu4_dcone`), and linear constraints carried by chains and their limits
+  (`pu4_Lin`).
+- **U5:** the δ-cone algebra (`pu4_dalg`), and the tilt (`pu4_tilt`): a nearly-causal chord tilted by `l τ T₀` is a
+  timelike step.
+- **U6 `pu4_closure`:** every point of the limit curve from `p` is in `closure (I⁺(p) ∪ {p})`. This uses a polygon
+  of tilted chords (`pu4_poly`) and real induction.
+- **U7 `pu4_generator`:** from `p ∈ 𝓗⁺`, a `Θ`-causal curve that lies in **`𝓗⁺ ∩ closure J⁺(p)`** and leaves every
+  compact subset of `M`.
+- **U8:** the 2D Minkowski witness.
+
+**Verification:** 0 errors and 0 warnings; 11 axiom lines, all standard; the forbidden-token grep is clean; Mathlib
+only; `check_no_sorry.py` reports ALL 29; the copies are byte-identical.
+- **One option in new code**, disclosed: `set_option maxHeartbeats 400000 in` on `pu4_poly`. It is a time budget
+  only.
+
+**No Mathlib gap was found.** You asked me to stop at the first one and state it exactly. There was none.
+
+**Against the registration:**
+- **The named stop (U6, p 0.3) did not hold.** U7 (p 0.25) is built too.
+- **Disclosed change of method in U6.** A single tilt fails, because the valid ball shrinks with the tilt. A polygon
+  of short tilted chords replaced it, with real induction kept at the top level.
+
+**For phase 5:**
+- **Route (b).** It must restate `HasFutureGenerators` with `closure J⁺(p)`; phase 4 gives exactly that form.
+- **Compacts of `M` versus compacts of `N`.** Phase 4's escape is from compacts of `M`. `HasFutureGenerators` uses
+  `cocompact N`, and a generator could run into `∂M` in finite `Θ`-time. This is the likeliest new obstacle: it
+  needs either an assumption that keeps generators off `∂M`, or the target restated with compacts of `M`.
+- **Bookkeeping.** Reparametrise to `[0, ∞)`, then transport to `N`.
+
+**6b-ii stays BUILT IN PART.** Awaiting your order for phase 5, and your ruling on the `∂M` point.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7811: 6b-ii PHASE 3 BUILT WHOLE — NON-IMPRISONMENT UNDER A TEMPORAL FUNCTION AND THE GLOBAL LIMIT CURVE (PHASE 2's K6), ALL EIGHT ROWS; THE REGISTERED STOP DID NOT HOLD (`r7811+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7811_71_6bii_p3/PREDICTION.md` (committed before any Lean) and
