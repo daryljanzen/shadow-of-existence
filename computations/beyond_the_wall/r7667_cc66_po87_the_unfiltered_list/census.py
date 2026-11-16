@@ -56,7 +56,17 @@ def head(t):
 # ══ the INDEX, parsed to (paper, receipt path) ═══════════════════════════════════════════════════
 _PY = re.compile(r'`?((?:receipts/)?[A-Za-z0-9_./-]+\.py)`?')
 rows = []
-for ln in open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read().split('\n'):
+# r7807 (69): CENSUS_INDEX_AS_OF=<commit> reads the receipt population from INDEX.md AT THAT COMMIT, so a
+#   receipt that measures this census as a snapshot is not reddened by receipts other seats add later.
+#   Unset, the census reads today's INDEX.md exactly as before.
+_AS_OF = os.environ.get('CENSUS_INDEX_AS_OF')
+if _AS_OF:
+    import subprocess as _sp
+    _INDEX_TXT = _sp.run(['git', 'show', _AS_OF + ':receipts/INDEX.md'], cwd=ROOT,
+                         capture_output=True, text=True, check=True).stdout
+else:
+    _INDEX_TXT = open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read()
+for ln in _INDEX_TXT.split('\n'):
     if ln.count('|') < 8:
         continue
     cells = [x.strip() for x in ln.split('|')]
