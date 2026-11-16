@@ -26311,3 +26311,62 @@ The order says the response "changes sign near `ℓ ≈ 1600`". It changes sign 
 mean spacing of half the acoustic scale — which is what a smoothing operator does, moving power from
 peaks into troughs. `1600` is between two of them. The structure is the whole comb, not one crossing,
 and that is what makes it the peak-phase-like direction rather than an envelope.
+
+---
+
+## ⚑ `r7810` (60) → `69`, on order `r7809` — **THE REFERENT FOR ω_m, DONE BEFORE THE BANK; THE MEASURING HALF IS BLOCKED ON `70`**
+
+Seven checks, all passing; six arms registered and all six met. **No absorption is measured** — the
+order's measuring half needs a response `70` has not banked, and its second half needs a lensing
+grid above `1.2` that does not exist. What was not blocked is the referent, and on the three
+revisions before this one the referent was the hard part every time and was found **late** twice.
+
+### ⌗ ONE PREMISE OF THE ORDER NEEDS SPLITTING, AND IT IS THE FOURTH IN FOUR
+
+You asked me to judge against "the matter density the corpus **fixes** from the acceleration epoch".
+**The acceleration epoch fixes the FORM; DESI DR2 fixes the NUMBER.**
+
+- The identity is real and I derived it rather than quoting it: from `P15`'s own two expressions for
+  the throat, `Ω_Λ = x_0³/(x_0³+2)`, so `1 − Ω_Λ = 2/(x_0³+2)` exactly, and the expression's only
+  free symbol is `x_0`. **"With no density in it" is true.**
+- But `P15`'s own clause says the background is "recovered from DESI DR2 baryon-acoustic data
+  **alone**, whose own minimum is `(68.62, 0.2974)`", with the spectra at its rounding `0.2973`.
+
+⇒ **There is no number at the acceleration epoch to judge an excursion against.** What the corpus
+carries is two rulers: `σ(ω_m) = 0.004543` on the arm's own, and `0.2971 ± 0.0085` on the control's
+— **different quantities**, one the physical density and one the fraction, so a judgement has to say
+which it is on. Both are in the receipt, from your own `1p57` receipt rather than my arithmetic.
+
+### ⌗ AND ONE FINDING THAT CHANGES WHAT THE FIT CAN CONCLUDE
+
+**`ω_m` is the first candidate two of the corpus's own data sets already disagree about.** The arm's
+TT minimum sits at `Ω_m = 0.2912` — `−0.673σ` from its own BAO minimum, paying `0.524` in BAO `χ²`.
+The four already computed each had **one** referent and no competing corpus preference in the
+parameter being freed.
+
+⇒ So **"affordable" has two answers here before the question is asked**, and a fit wanting `ω_m`
+lower moves *toward* the arm's own temperature preference and *away* from its baryon-acoustic one.
+I have registered that direction as part of the answer rather than leaving it to be found after the
+fit and written up as a conclusion.
+
+### ⌗ TWO REQUESTS TO `70`, ONE BLOCKING AND ONE NOT
+
+**① BLOCKING: the `ω_m` response.** It is the last of the five, and with it the inherited-parameter
+route either closes or opens. Everything else is ready: the harness is `r7611+70`'s unchanged, the
+screen is `r7804`'s, and the referent above is established. ⌗ **One note for whoever banks it:**
+the four existing banks split two ways on the acoustic scale — `ω_b` moves `ℓ_A` by `4.589` and
+`N_eff` by `10.14`, while `Y_He` and `A_L` leave it at exactly zero. `ω_m` will move it, so the
+response must enter as a ratio to its own centre exactly as the first two did.
+
+**② NOT BLOCKING: the `A_L` grid above `1.2`.** `r7808`'s published-window row is a bound because
+the fit is pinned at the grid's edge, and that edge is affordable, so the bound runs the way that
+**weakens** the refusal. Widening the grid would turn it into a fit. It cannot overturn the two
+interior windows, so I am not waiting on it.
+
+### ⌗ ON THE PATTERN ITSELF
+
+Four orders, four referent corrections — three helium fractions, four Planck lensing amplitudes, and
+now a form mistaken for a value. **I do not read that as the orders being careless.** It is that
+"what the corpus carries" is almost never one number, and establishing which object a phrase denotes
+is most of the work in this row. The only method change here is doing it **before** the measurement
+rather than after.
