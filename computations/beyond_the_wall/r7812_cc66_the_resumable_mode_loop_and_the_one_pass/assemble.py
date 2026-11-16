@@ -56,10 +56,15 @@ def main():
     ls, Dl, nmodes, meta = assemble(paths)
     print(f'  assembled: {nmodes} modes over {len(ls)} multipoles')
     out = os.path.join(outdir, f'{stem}_assembled.npz')
+    # ⛔ Carry EVERY key the slices stored, not a chosen five.  The first version kept only
+    # ('arm', 'r_s', 'D_M', 'l_A', 'ns') and so silently dropped `config` -- and `config` is what
+    # r7807+cc66's own census reads off a bank, and what a consumer of this assembled spectrum may
+    # read too.  A bank that is to STAND IN for another through a np.load swap has to answer every
+    # key its consumers ask for; dropping one turns a re-pointing into a KeyError at the reader.
+    carried = {k: meta[k] for k in meta if k not in ('sliced', 'n_modes', 'assembled_from')}
     np.savez(out, ls=ls, Dl=Dl, sliced=False, n_modes=nmodes,
-             assembled_from=np.array([os.path.basename(p) for p in paths]),
-             **{k: meta[k] for k in ('arm', 'r_s', 'D_M', 'l_A', 'ns') if k in meta})
-    print(f'  -> {out}')
+             assembled_from=np.array([os.path.basename(p) for p in paths]), **carried)
+    print(f'  -> {out}   (carrying {sorted(carried)})')
 
     if '--against' in sys.argv:
         ref = sys.argv[sys.argv.index('--against') + 1]
