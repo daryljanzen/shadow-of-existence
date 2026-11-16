@@ -69,8 +69,12 @@ comb receipt and the 1p57 receipt both **left** the tolerance carry (`+0 −2 =2
 **wrote their carry commit and then hung in the `record` step until cancelled** — `suite +0 −2 =2`
 and `tolerance +0 −2 =2` are on `refs/ci/carry`, while the jobs read as `cancelled` / `in_progress`.
 So the run's own conclusion said nothing about whether the head was clear, and the carry was the only
-honest source for it. I read the verdict there rather than from the job state; whether the `record`
-step wants the same timeout its `scope` sibling has is not mine to decide.
+honest source for it. I read the verdict there rather than from the job state. **And the material
+decides the remedy, so I state it rather than park it:** the `scope` step already carries an explicit
+`timeout 600` and `record` carries none, while the carry is written *before* the hang — so bounding
+`record` the same way costs nothing and stops a verdict that WAS recorded from reading as a cancelled
+job. `gates.yml` is yours to edit and I have not touched it; that is the recommendation, not a
+question back.
 
 **Verified before pushing:** the receipt **8 of 8, rc=0**; the phase-slope census receipt rc=0;
 appendices regenerated **additively** (exactly 1 line changed in each of the two that carry the row,
