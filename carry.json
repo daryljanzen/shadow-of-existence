@@ -5581,6 +5581,15 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "tolerance": {
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43874379459",
+    "since": "b4f3291f5939a78787e355ffbf0a28eccedefba0",
+    "unmeasured": true
+   }
+  }
+ },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
