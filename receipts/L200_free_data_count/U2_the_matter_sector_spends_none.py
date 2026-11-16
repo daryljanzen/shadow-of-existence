@@ -106,13 +106,15 @@ def main():
           '\\emph{The hypercharges are not a third external input}: given those two, they follow from the per-wall anomaly conditions of \\S\\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation' in p14)
 
     # (3) THE DECISIVE ONE: the sector cannot build a dimensionless coupling
-    check('(3) a Yang-Mills coupling is dimensionless and "a single length cannot build" it',
-          'a Yang--Mills term in four dimensions carries a dimensionless coupling that a single length cannot build' in p14)
+    # ⌗ re-pinned by the chat seat: P14 now states the quantum target -- the theory's SCALE is what a
+    #   single length cannot build, the quantum theory carrying no free coupling (L550 Y1).
+    check('(3) what "a single length cannot build" for a Yang-Mills term is its scale',
+          'what a single length cannot build for a Yang--Mills term in four dimensions is its scale' in p14)
     check('(3) the substrate\'s one invariant is named as alpha = sqrt(3/Lambda)',
           "the substrate's one invariant being $\\alpha=\\sqrt{3/\\Lambda}$" in p14)
     check('(3) and the position is stated as a KIND-claim, not a to-do',
-          'the position is not that the coupling is unbuilt but that a coupling is not the kind of '
-          'thing a holonomy supplies' in p14)
+          'the position is not that the coupling is unbuilt but that neither a field strength nor its '
+          'scale is the kind of thing a holonomy supplies' in p14)
     check('(3) grounded in the one-constant law: a dimensionless magnitude needs TWO invariants',
           'a dimensionless magnitude needs two' in p0)
 
@@ -133,10 +135,13 @@ def main():
     check(f'every one of the {len(occ)} "dimensionless" occurrences in P14 is the CANNOT-BUILD claim '
           f'or a restatement of it, and none hedges it ({len(hedged)} hedged)',
           len(occ) >= 1 and hedged == [])
-    check('   and both occurrences sit in the one paragraph that walls the coupling -- the second '
-          'added c54.216 states the bound is on the TARGET, not the route',
-          any('a single length cannot build' in c for c in occ)
-          and any('the substrate\'s ledger does not carry' in c for c in occ))
+    # ⌗ re-pinned by the chat seat: P14 now names the classical coupling ("carries the dimensionless
+    #   $g$"), says the quantum theory trades it for a scale, and states the target's number as one the
+    #   ledger supplies no parameter for (L550 Y1).
+    check('   and the occurrences are the classical coupling the quantum theory trades for a scale, and '
+          'the target stated as a number the ledger supplies no parameter for',
+          any('carries the dimensionless $g$' in c for c in occ)
+          and any('the ledger supplies no parameter' in c for c in occ))
     check('and "free constant" occurs nowhere in P14',
           len(re.findall(r'free constant', p14, re.I)) == 0)
 

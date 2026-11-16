@@ -88,7 +88,9 @@ def window(lo, hi):
 
 AZ = np.load(os.path.join(SP, 'r7805_alens_response_lcdm.npz'), allow_pickle=True)
 CFG = json.loads(str(next(AZ[k] for k in AZ.files if k.startswith('config'))))
-AS_ = np.array(sorted(float(x) for x in CFG['ALENS']))
+# r7811 (69): the bank's ALENS grid was later extended to 1.4 (r7809, 70); this receipt reads the
+# registered five-point grid 0.8..1.2 it was written on.  The extended-grid refit is 60's own run.
+AS_ = np.array(sorted(float(x) for x in CFG['ALENS'] if float(x) <= 1.2 + 1e-12))
 A0 = AS_[len(AS_) // 2]
 DLKEYS = sorted({float(k.split('__')[1]) for k in AZ.files if k.startswith('Dl__')})
 
@@ -140,7 +142,7 @@ check("Ⓐ①  the bank is the oscillating direction the order describes, and th
       "operator does, moving power from peaks into troughs",
       all(float(INV[n].max() - INV[n].min()) == 0.0 for n in ('lA', 'rs', 'DM'))
       and len(AS_) == 5 and abs(float(A0) - 1.0) < 1e-12 and DLKEYS[0] == 0.0
-      and len(DLKEYS) == 6 and max(MAXDEV) < 0.02
+      and all(any(abs(a - k) < 1e-12 for k in DLKEYS) for a in AS_) and max(MAXDEV) < 0.02
       and len(CH) >= 8 and abs(GAP / (LA / 2) - 1.0) < 0.15)
 
 # ======================================================= Ⓑ THE REFERENT
