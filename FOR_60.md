@@ -10,63 +10,6 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
-## ⚑ From the chat seat — **A NEW FRONT, TAKE IT NOW WHILE ω_m WAITS: THE CONSTRUCTED QUANTUM YANG-MILLS THEORY AND THE CORPUS'S GAUGE SECTOR (P14 FIRST, THEN P13 AND P17). Return to ω_m when 70 banks it.**
-
-**What happened outside.**
-- OpenAI submitted a Lean proof on 28 October 2026. A committee (Gross, chair; Douglas, Jaffe, Klebanov, Nekrasov) released it with an assessment on 10 November 2026.
-- **The committee's reading:**
-  - The proof constructs a relativistic quantum field theory satisfying the Wightman axioms, as a scaling limit of four-dimensional Wilson lattice gauge theory, for any simple compact gauge group.
-  - It does not prove that the infinite-volume limit is unique, and it does not prove a mass gap.
-  - The committee says it does not yet fully understand the proof.
-- **Source:** github.com/yang-mills-group/YM, commit b379615f5596. It is public and clones anonymously. Read `docs/assessment-1.pdf` (35 pages; Part I is the physics) and the Lean statement files it names under `submissions/openai-20261028/`.
-- Two further submissions are listed as work in progress: OpenAI's of 4 November, and Alpöge and Sussman's of 15 November.
-
-**Why it touches the corpus.** The construction takes the gauge group as input and builds the quantum dynamics. P13 and P14 go the other way: they derive the group's structure (su(3) inside so(6), the Euclidean real form) and the discrete content (a flat bundle with finite holonomy of order 81, the Z3 triality reading), and they state that the field strength and coupling are not supplied. P14 names the missing target as "a four-dimensional Yang-Mills term". That term's quantum theory is the object now constructed. Daryl wants this pushed as a real connection, so work it to results.
-
-**Read first, whole:**
-- P14 (`matter_sector_paper.tex`);
-- P13's synthesis paragraphs (`boundary_paper.tex`, "What the synthesis dissolves" and "What it feeds");
-- P17's α/ℓ_P passage;
-- assessment Part I.
-
-**The items, easiest first:**
-
-① **P14's dimensional-counting passage needs its quantum statement.** The passage runs from "Leaving it requires a variational principle" to "gravity is precisely the case the argument does not touch". It argues classically that a 4D Yang-Mills term needs a dimensionless coupling a single length cannot build. In the quantum theory there is no free dimensionless coupling, and the constructed theory shows this explicitly:
-- Theorem 4.1, eq. (7): the bare coupling β is fixed by the lattice spacing, with slope 11C_g/24π².
-- Theorem 7.2: the running law g²·log(1/r) → 1/(2b0).
-- Theorem 7.1: a nonzero trace of the stress tensor. This is the trace anomaly, the formal witness that the coupling has been traded for a scale.
-- The assessment states lengths "in the fixed units of the construction", so the theory has one scale.
-
-Work out and state what the requirement becomes:
-- (a) One additional scale relative to α, equivalently the pure number Λ_YM·α/ħc. Compute it for SU(3) from the measured strong scale, naming the scheme. P14 says about 41 decades; confirm or correct.
-- (b) What that means for a 4D coupling at the scale ħc/α. It lies on the infrared side of the strong scale, in the confined regime, where no perturbative coupling exists.
-- (c) P14's D=5 remark: at D=5 a Yang-Mills coupling is a length, and the substrate has exactly one. Compute what follows if that length is α and the reduction length is of order α. You should get g4² of order one at the α scale, which would place the strong scale near ħc/α. State the size of the miss.
-- (d) The θ angle. Pure Yang-Mills carries a dimensionless θ that is not traded for a scale, and P14 never mentions θ. Say whether the construction fixes it (the triality and centre structure, the R-conjugation) or leaves it, and if it leaves it, where it is fixed in standard physics.
-
-Then rewrite the passage to the quantum statement: one state, a receipt, no narration of the earlier version. The "fixed pure number" conclusion may well survive. What changes is the reasoning, and the number's identity as the log of a hierarchy.
-
-② **Holonomy and local fields are complementary, and P14 should say exactly how.** P14 is holonomy-first: flat connections, wall monodromies, the triality class, and "a fractionally charged object is precisely one whose charge is route-dependent, hence not readable, hence not free." P14 already ties this to the centre of SU(3) (around its lines 300-330). The construction is the reverse:
-- It has only local observables (gauge-invariant polynomials in F and its covariant derivatives).
-- It has no Wilson loops. The assessment's open question 4 is "Construct Wilson loop observables… Establish the area law."
-
-Place this at its earned weight. The corpus has the global, topological, loop-level content and lacks a field strength; the construction has the field strength and lacks loops. The centre symmetry is pure Yang-Mills' standard confinement criterion (the Polyakov loop), and P14's triality reading is a kinematic statement of readability, not the dynamical area law. Write the sentence where it belongs in P14, citing the assessment and the repository commit, and check that nothing in P14 now claims more than that.
-
-③ **The Euclidean route (P13, peripherally P17).** The construction is Euclidean: reflection positivity, the Osterwalder-Schrader axioms, then OS reconstruction to the Wightman theory. P13 places gauge structure and ħ on the compact Euclidean real form SO(6), with the global Wick S^5. Check two things:
-- whether any P13 or P17 sentence conflicts with the standard mechanism by which a Euclidean-defined gauge theory yields the Lorentzian one;
-- whether P13's synthesis can cite that mechanism.
-
-State it as a rhyme unless something is computed. If something is computed, say so plainly.
-
-④ **Only a question, not a paper edit unless computed.** The construction's infinite-volume theory is a mixture over phases ξ, and vacuum uniqueness is unproved. P14's flat moduli are zero-dimensional, with finite holonomy of order 81. Does the corpus's discrete flat-sector content say anything about such sectors (centre sectors, θ-vacua)? Report what you find.
-
-**Deliverables:**
-- **An estimate first.** Daryl wants the duration up front.
-- The P14 rewrite and any P13 sentence, compiled with their PDFs.
-- Receipts for ① and ③.
-- A reply in `FOR_66_FROM_60.md` that says what each result is, where it sits, and how the gauge-sector problem is narrowed.
-
-**Bibliography:** Jaffe and Witten's problem statement; the committee's assessment (dated 10 November 2026, with the commit above). Cite the assessment, not news reports.
-
 ## ⚑ `r7809` (69) — **MERGED r7808: A_L IS AFFORDABLE AND STILL BUYS LITTLE; τ IS EXCLUDED EXACTLY. YOUR P15 PARAGRAPH STANDS, WITH ITS FIGURES ROUNDED. NEXT: ω_m WHEN 70 BANKS IT**
 
 **Merged and reproduced.** The A_L receipt passes 12 of 12. Your paragraph is read word for word and stands.
