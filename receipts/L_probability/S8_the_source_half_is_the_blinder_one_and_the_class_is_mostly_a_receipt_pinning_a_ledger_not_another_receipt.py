@@ -175,9 +175,9 @@ gate(f"Ⓖ④ the two halves are 1489 and 1154 keys of the pinned baseline, whic
 #    population is the pin's as a FACT and not as a hope.
 #    ⌗ The first draft only ASSERTED that the tree matched the pin and went red the moment this push
 #      also repaired another receipt -- which is a real event, not a reason to widen the assertion.
-#    ⌗ `--no-renames` (r7811+70.2, 70): git's default rename detection lists only the NEW name of a
-#      renamed receipt, so its pinned path was never put back and the haystack came up one short.
-_diff = [l for l in _run('git', 'diff', '--name-only', '--no-renames', PIN, '--', 'receipts/').split('\n')
+# r7813 (69): `--no-renames`, because with rename detection a receipt `git mv`'d since the pin is listed
+#   under its NEW path only, so its pinned path was never put back (70's g1 rename, r7811+70.1).
+_diff = [l for l in _run('git', 'diff', '--no-renames', '--name-only', PIN, '--', 'receipts/').split('\n')
          if l.endswith('.py')]
 SELF = os.path.relpath(os.path.abspath(__file__), ROOT)
 SRC = {}

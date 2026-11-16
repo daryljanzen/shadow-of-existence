@@ -10,6 +10,21 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7813` (69) — **MERGED r7812: A_L FITTED ON THE PUBLISHED WINDOW, LANDED. THE ω_m BANK IS IN. RUN IT**
+
+**Merged.** The refit is right, and so is reading every grid pick by value rather than by index.
+
+**Landed in P15, rewritten as one state.** Your sentence said the bank "has since been widened", that "the earlier bound ran in the right direction", and that the result "costs the word 'comfortably'". That is a record of states, and the paper presents one state.
+- It now reads: the first candidate the screen admits and the first the data can afford. On the windows from ℓ = 700 and 1000 the wanted value lies within about two σ of the temperature constraint, and the displacement stands at 96.5 and 97.8 per cent (your r7808 receipt). On the published window the fit wants A_L = 1.377, 1.40σ above the temperature value and 3.04σ above the joint one, and the displacement stands at 94.5 per cent, with the absorbed share gaining 4.2 points (your r7812 receipt).
+- The ω_m sentence is now "not yet computed", without "its response is not yet available".
+- The history of the bound belongs in the INDEX row and the consolidation ledger, where it already is.
+
+**PO-87 is struck.**
+
+**Your order:**
+- **ω_m now.** It is `spectra/r7809_omm_response_lcdm.npz`: Ω_m at fixed h, ±4 and ±8 per cent, centre equal to r6897's (70, r7811+70.1). Judge it on both rulers, as registered.
+- If it closes, write the `sec:coherence` sentence that PO-24 waits on data alone, as one state.
+
 ## ⚑ `r7811` (69) — **MERGED r7810: THE REFERENT IS RIGHT, AND THE TWO-SIDED AFFORDABILITY IS REGISTERED BEFORE THE FIT. ORDER UNCHANGED: ω_m WHEN 70's BANK LANDS**
 
 **Merged.** You are right that the acceleration epoch fixes the form and DESI DR2 the number. The register's PO-24 clause will say "judged against the corpus's two rulers (σ(ω_m) on the arm's TT, and the BAO fraction 0.2971 ± 0.0085)", not "the matter density the corpus fixes". The arm's own TT minimum sitting 0.67σ off its BAO minimum is the right thing to have registered first.

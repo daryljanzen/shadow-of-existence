@@ -10,6 +10,56 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7811: 6b-ii PHASE 3 BUILT WHOLE — NON-IMPRISONMENT UNDER A TEMPORAL FUNCTION AND THE GLOBAL LIMIT CURVE (PHASE 2's K6), ALL EIGHT ROWS; THE REGISTERED STOP DID NOT HOLD (`r7811+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7811_71_6bii_p3/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is the new standalone `probes/TemporalCurves.lean` (`tc3_`): 1368 new lines (band
+800–1700, estimate 1200) plus 674 lines of byte-identical kit copies.
+
+**The change of parameter.** Chains are now parametrised by the temporal function `Θ` itself. A **`Θ`-causal
+curve** is continuous, `Θ`-parametrised and in `M`, and on every cone set it rises in `Θ` by at least `c` times its
+displacement. It is closed under concatenation, restriction and uniform limits, and **every chain from a point of
+`M` is one** (`tc3_chain_causal`).
+
+**Built:**
+- **T1 `tc3_cone`:** the temporal cone lemma.
+- **T2:** chains rise in `Θ` by at least `c` times their displacement.
+- **T3:** the `Θ`-parametrisation of chains.
+- **T4:** Arzelà–Ascoli, the local limit, and closure under limits.
+- **T5 `tc3_nonimprison`, non-imprisonment:** a `Θ`-parametrised curve with no endpoint in `M` eventually leaves every
+  compact set.
+- **T6 `tc3_global_limit` / `tc3_global_escape`, the global limit curve:**
+  - Chains from `xₙ → p` whose `Θ`-rise tends to `∞` have a subsequence converging, uniformly on every `[0, Tⱼ]`, to
+    one `Θ`-causal curve from `p`.
+  - Either `Tⱼ → ∞`, or the curve has no limit in `M` at `T*`. In both cases it eventually leaves every compact set.
+  - The proof is a diagonal over a compact exhaustion of `M`.
+- **T7 `tc3_manifold_escape`:** the same on `N` under `OneChart`, with the temporal function transported to the chart.
+- **T8 `tc3_witness`:** the 2D Minkowski chart with `Θ = fst`.
+
+**Verification:** 0 errors and 0 warnings; 12 axiom lines, all standard; the forbidden-token grep is clean; Mathlib
+only; `check_no_sorry.py` reports ALL 29; the copies are byte-identical.
+
+**No Mathlib gap was found.** You asked me to stop at the first one and state it exactly. There was none.
+
+**Against the registration:**
+- **The named stop (T6, p 0.25) did not hold.** `CompactExhaustion.choice` on the subtype `M` gave the diagonal its
+  step lengths.
+- T7 (p 0.35) is built too.
+
+**A correction to my phase-2 report.** It said "no options are set". `ConeCurves.lean`'s verbatim manifold copy
+carries the kit's own `set_option linter.unusedSectionVars false`, and so does this file's. No new code sets an
+option.
+
+**Open for later phases:**
+- **Multi-chart.** `LocallyOneChart` is not attempted, as registered.
+- **Reachability.** That the limit curve is in the closure of `J⁺(p)` belongs to phase 4 (push-up) and phase 5.
+- **Parameter domain.** Reparametrising `[0, T*)` to `[0, ∞)` for `HasFutureGenerators` is phase 5 bookkeeping.
+- **The rise.** Phase 4 must supply the `Θ`-rise `→ ∞` from "`J` at infinity".
+
+**6b-ii stays BUILT IN PART.** Phase 4 is next in the plan. Awaiting your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7809: 6b-ii PHASE 2 BUILT AS REGISTERED — THE KIT'S CAUSAL ARCS ARE LOCALLY CONE CURVES; THE LIMIT-CURVE THEOREM FOR CHAINS IN A CHART AND ON `N`. K6 (GLOBAL PATCHING) NOT BUILT, THE REGISTERED STOP (`r7809+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7809_71_6bii_p2/PREDICTION.md` (committed before any Lean) and

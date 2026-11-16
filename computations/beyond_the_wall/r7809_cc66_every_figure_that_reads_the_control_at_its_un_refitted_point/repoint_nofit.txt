@@ -1,0 +1,20 @@
+====================================================================================================
+  r7809/r7811 ② -- WHAT MOVES WHEN THE CONTROL IS RE-POINTED (measured by swap)
+====================================================================================================
+  3 swap pair(s), every one grid-identical (asserted, not assumed)
+  REFUSED: computations/beyond_the_wall/spectra/cc66_lcdm_L2000.npz
+      LSTEP=2 (950 samples); no step-2 re-pointed bank is banked, and interpolating onto the finer grid would change the measurement rather than re-derive it
+
+====================================================================================================
+  P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels
+====================================================================================================
+  as the tree stands: rc=0, 88 number(s) on 35 distinct line shape(s)
+  control re-pointed: rc=1, 93 number(s) on 37 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 30;  numbers on them: 79 (73 unchanged, 6 MOVED)
+  line shapes only in the un-swapped run: 5;  only in the swapped run: 7  (these are the red run's own diagnostics, not figures that moved)
+          13864.6627 -> 13894.4213      delta +29.7586   nofit_lcdm  computations/beyond_the_wall/refit_grid185/lcdm_base.npz D_M = <#>
+              202.02 -> 192.83          delta -9.19   nofit_lcdm  chi2 =   <#>    <#> per bin
+               1.129 -> 1.077           delta -0.052   nofit_lcdm  chi2 =   <#>    <#> per bin
+              0.2028 -> 0.1734          delta -0.0294   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
+              0.1126 -> 0.1088          delta -0.0038   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
+                1.80 -> 1.59            delta -0.21   folded: nofit_lcdm  one harmonic at l_A = <#> +- <#>  (<#> sigma)
