@@ -33,9 +33,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 sys.path.insert(0, os.path.join(ROOT, 'corpus'))
 import check_figures_pinned as F  # noqa: E402
 
-LOGS = [os.path.join(ROOT, 'computations', 'beyond_the_wall',
-                     'r7809_cc66_every_figure_that_reads_the_control_at_its_un_refitted_point', n)
-        for n in ('repoint_nofit.txt', 'repoint_step8.txt')]
+#: r7815: the swap was extended from r7809's 5 receipts to the 21 that load a swappable bank, and
+#: again to the 10 that read the step-2 bank once (a1) made it swappable.  Those logs are ADDED here
+#: rather than read by a second copy of this matcher: the per-receipt linkage below is the thing the
+#: first version threw away, and a second matcher is how a tree grows two of them that disagree.
+#: Extra log paths may be given on argv; the two r7809 logs are always read.
+_R7809 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7809_cc66_every_figure_that_reads_the_control_at_its_un_refitted_point')
+_R7815 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7815_cc66_the_completed_list_and_the_one_pass')
+LOGS = ([os.path.join(_R7809, n) for n in ('repoint_nofit.txt', 'repoint_step8.txt')]
+        + [os.path.join(_R7815, n) for n in ('swap_01_02.txt', 'swap_03_21.txt', 'swap_step2.txt')]
+        + [a for a in sys.argv[1:] if not a.startswith('-')])
 MOVED = re.compile(r'^\s+(-?[\d.]+) -> (-?[\d.]+)\s+delta\s+\S+\s+(.*)$')
 
 
@@ -71,6 +80,9 @@ def main():
     print('=' * 100)
     print(f'\n  swap logs cover {len(by_rec)} receipt(s); {len(pairs_all)} measured (old -> new) '
           f'pair(s) in total')
+    print('  logs read:')
+    for p in LOGS:
+        print(f'      {"✓" if os.path.exists(p) else "—"} {os.path.relpath(p, ROOT)}')
     for r, v in sorted(by_rec.items()):
         print(f'      {len(v):3d} moved  {r[:92]}')
 
