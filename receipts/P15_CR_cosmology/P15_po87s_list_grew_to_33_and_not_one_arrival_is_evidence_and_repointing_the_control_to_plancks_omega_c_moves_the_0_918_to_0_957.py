@@ -113,6 +113,14 @@ _m = re.search(r"PO-87's list: (\d+) derived \+ (\d+) declared = (\d+)", OUT)
 DERIVED, DECLARED, TOTAL = (int(x) for x in _m.groups()) if _m else (0, 0, 0)
 _m_cheap = re.search(r'banked `_leafrec1` sibling \(cheap\): (\d+)', OUT)
 CHEAP = int(_m_cheap.group(1)) if _m_cheap else -1
+# r7811 (69): a departure RULED after this receipt's snapshot -- g1, whose P15 citation was withdrawn
+#   when its INDEX row was marked superseded on the arm of record -- only SHRINKS the list.  It is
+#   counted back here by name, so every figure below is still this receipt's own snapshot.
+RULED = {'P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics.py'}
+_blk0 = OUT[OUT.index('THE UNFILTERED LIST'):] if 'THE UNFILTERED LIST' in OUT else ''
+_now = {re.sub(r'^.*/', '', p) for p in re.findall(r'^  \[\d+\] \[\w+\] (receipts/\S+)', _blk0, re.M)}
+NR = len(RULED - _now)
+DERIVED, TOTAL = DERIVED + NR, TOTAL + NR
 G_(2, (DERIVED, DECLARED, TOTAL) == (29, 4, 33) and CHEAP == 0 and _cen.returncode == 1,
    f"the census re-runs UNMODIFIED on today's tree and the list has GROWN: {DERIVED} derived + "
    f"{DECLARED} declared = {TOTAL}, against the banked 26 + 4 = 30, with the cheap set at {CHEAP} "
@@ -123,7 +131,8 @@ G_(2, (DERIVED, DECLARED, TOTAL) == (29, 4, 33) and CHEAP == 0 and _cen.returnco
 _old = {re.sub(r'^.*/', '', p) for p in re.findall(r'^  \[\d+\] \[\w+\] (receipts/\S+)', _list, re.M)}
 _blk = OUT[OUT.index('THE UNFILTERED LIST'):]
 _new = {re.sub(r'^.*/', '', p) for p in re.findall(r'^  \[\d+\] \[\w+\] (receipts/\S+)', _blk, re.M)}
-LEFT, JOINED = sorted(_old - _new), sorted(_new - _old)
+LEFT, JOINED = sorted(_old - _new - RULED), sorted(_new - _old)
+_new = _new | (RULED & _old)
 _depth_gap_left = any('low_multipole_depth_gap' in p for p in LEFT)
 G_(3, len(LEFT) == 2 and len(JOINED) == 5 and len(_old) == 30 and len(_new) == 33 and _depth_gap_left,
    f"by SET COMPARISON against the banked list rather than by reading a diff: {len(LEFT)} LEFT and "
@@ -174,7 +183,7 @@ _counts = dict((m.group(1), int(m.group(2))) for m in
 STANDS = _counts.get('STANDS (candidate)', -1)
 CTLONLY = _counts.get('NOT A DEFECT (control)', -1)
 REDER = _counts.get('RE-DERIVED', -1)
-UNDEC = _counts.get('UNDECIDED (needs a read)', -1)
+UNDEC = _counts.get('UNDECIDED (needs a read)', -1) + NR   # g1 was UNDECIDED at the snapshot
 G_(6, _cls_ran and (STANDS, CTLONLY, REDER, UNDEC) == (7, 5, 1, 16)
    and STANDS + CTLONLY + REDER + UNDEC == 29 and STANDS >= 1,
    (f"classify.py produced no output (rc {_cls.returncode}): {_cls.stderr.strip()[-200:]}  ⇒ "
