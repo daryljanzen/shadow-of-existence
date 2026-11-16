@@ -26370,3 +26370,105 @@ now a form mistaken for a value. **I do not read that as the orders being carele
 "what the corpus carries" is almost never one number, and establishing which object a phrase denotes
 is most of the work in this row. The only method change here is doing it **before** the measurement
 rather than after.
+
+---
+
+## ⚑ `r7812` (60) → `69`, on order `r7811` — **A_L's BOUND IS NOW A FIT, AND IT WANTS MORE THAN THE EDGE ALLOWED. ω_m STILL BLOCKED (10 of 55).**
+
+Nine checks, all passing; eight arms registered and **all eight met**. The first of your three is
+done; the second waits on `70`; the third waits on the second.
+
+| window | `A_L` wanted | survives | gain | vs `TT`+lowE | vs joint |
+|---|---|---|---|---|---|
+| `100`–`1758` | **`1.37732`** (interior) | **`94.457 %`** | **`+4.18`** | `+1.40σ` | **`+3.04σ`** |
+| `700`–`1760` | `1.18409` | `96.517 %` | `+1.79` | `−0.61σ` | `+0.06σ` |
+| `1000`–`1760` | `1.04435` | `97.776 %` | `+0.15` | `−2.07σ` | `−2.09σ` |
+
+**Your bound ran the right way and understated the size.** `r7808` stated the published row as "at
+most `96.964` surviving" and said a wider bank could only let `A_L` absorb more. It lands `2.5`
+points below that bound, gaining `4.18` against the edge's `3.29`.
+
+**But one word of `r7808`'s has to be withdrawn.** At the old edge the wanted value sat `0.45σ`
+*inside* the temperature constraint, and I called `A_L` *comfortably* affordable. The true optimum is
+`+1.40σ` on that ruler and **`+3.04σ` on the jointly measured one** — so it is still affordable on
+the ruler this metric scores against, the clause still fails, and "comfortably" was an artefact of
+the edge. **`P15` now says that instead.**
+
+### ⌗ ONE TRAP IN MY OWN CODE, CAUGHT BEFORE IT BIT
+
+`r7808` took the response's centre as the grid's **midpoint by index**. On five values that *is*
+`1.0` — by luck of a symmetric list. **On seven it is `1.1`.** Re-running `r7808` unchanged against
+the widened bank would have divided every spectrum by the `A_L = 1.1` slice instead of the
+unlensed-normalised base, shifting every ratio and every fitted value with nothing in the output to
+say so. Every pick off the grid is now by **value**, and the arm asserts the midpoint *is* `1.1` so
+the hazard is a number on the record rather than a comment.
+
+⇒ **GUARD: a centre taken as a list's midpoint is right only while the list is symmetric about it.**
+⌗ *That is the third structural property of this one bank that had to be read rather than assumed —
+after the `0.00` reference entry and the lensing potential's different cosmology. **A bank is a list
+of numbers plus a convention, and the convention is not in the array.*** Worth a line in `70`'s
+bank-format note if you keep one.
+
+### ⌗ AND THE ONE CASE THAT COULD HAVE REFUTED MY LAST TWO REVISIONS VINDICATES THEM
+
+`r7806` held the screen's projection to be a **lower bound** on a free fit's gain. `r7808` found it
+crossed on exactly one window — the edge-pinned one — and cut the claim's scope to **interior** fits
+rather than abandoning it. That window is now interior, and **its ratio moves from `0.91` to `1.16`**,
+so all three exceed the prediction. The scope cut was the right diagnosis.
+
+And the control had teeth: the two already-interior windows reproduce `r7808` **to every printed
+digit**, because extending a grid upward cannot move a fit that sat inside it. Had they shifted, the
+seven-point interpolation would not have been the same function as the five-point one and every
+comparison here would have been void.
+
+### ⌗ ONE DEFECT OF MINE, THE MIRROR OF LAST REVISION'S
+
+The pin arm failed first time: two of five tolerances used the **finer** term of the allowance where
+the rule says the **coarser**, so a correctly-rounded figure failed its own pin — `3.03562` rounds to
+`3.04`, a gap of `0.0044` inside an allowance of `0.005`, which a tolerance of `0.004` rejected.
+`r7808`'s error was the opposite: tolerances a hair too *wide*, holding nothing.
+⇒ **GUARD: compute the allowance as the rule states it — the coarser of the two terms — then sit
+just inside it. Taking the finer term is not caution; it is a different rule.**
+
+### ⌗ WHAT IS STILL OWED, AND TO WHOM
+
+- **`ω_m`: blocked on `70`, 10 of 55 slices.** Everything is ready — harness, screen, and `r7810`'s
+  referent with both rulers. I run it the day it lands.
+- **The closing `sec:coherence` sentence** waits on that, as your order has it.
+- ⌗ **One note, not a request:** the refit at `1.37732` is interior but not *far* inside `1.4`. If
+  `70` widens again I would refit once more; I am not asking for it, because the verdict is already
+  settled on the temperature ruler and a taller grid can only push the joint-ruler excursion further
+  out, which strengthens the refusal rather than threatening it.
+
+### ⌗ `r7812` ADDENDUM — your fix to my `r7810` arm, and two reds that are `main`'s
+
+**Thank you for the `r7810` Ⓕ⑥ fix, and it is the same correction you gave me at `r7803`.** I had the
+`A_L` grid pinned by equality (`max == 1.2 and len == 5`) — a check on `70`'s activity — and you
+turned it into a disjunction over the states it may be in. **What is worth recording is that the
+*same receipt* got it right elsewhere:** its bank search (Ⓔ⑤) was deliberately written as a *search*,
+with directory and patterns printed as scope, precisely so it could not go red on `70`'s success. So
+I applied your `r7803` guard to one arm and not to the arm beside it.
+⇒ **GUARD: when a guard is applied once in a revision, sweep the whole revision for the same shape.**
+Applying it where I was thinking about it is not applying it.
+
+**⌗ WITHDRAWN AFTER YOUR r7811 LANDED — both are now GREEN and I am leaving the note only so the
+diagnosis is on the record.** When I wrote this, two gates were red on my tree and red on `main`
+identically, checked on a clean worktree of it. Your `r7811` fixed both, and merging it in turned
+them green here; **neither needs anything from you.** What they were:
+
+- **A banked receipt reaches no paper.** `P15_the_controls_base_log_is_banked_beside_the_grids…` is in
+  `INDEX.md` and cited by **no** `.tex`, dating from `r7109`. **Resolved by your `r7811`**, which
+  marked the row superseded — so the gate's complaint was right and the answer was that the row,
+  not the citation, was the stale thing. *I had assumed a missing citation; it was a dead row.*
+- **An explainer pin fired** at `EXPLAINER.md` line `261`, on the acoustic-run passage. The gate's own
+  notice says `EXPLAINER.md` is under full rewrite by you on Daryl's direction and **not to repair
+  the passage in place**, so this is the routing note it asks for: *what moved is the `A_L` row —
+  the published window's bound became a fit at `1.37732`, and `r7808`'s "comfortably affordable"
+  is withdrawn.* The passage the pin watches is the acoustic-run comparison in `sec:coherence`.
+  **Also resolved by your `r7811`**, which touched `EXPLAINER.md` directly. The note above stands
+  as the record of what moved, in case the rewrite wants it.
+
+⌗ And one defect of mine the stop hook caught rather than a gate: the `r7812` receipt was writing its
+own output artefact on every run, so each re-run dirtied the tree. A receipt is re-run by every
+sweep and from arbitrary directories; the probe writes, the receipt does not.
+⇒ **GUARD: a receipt asserts and prints; it does not write.**
