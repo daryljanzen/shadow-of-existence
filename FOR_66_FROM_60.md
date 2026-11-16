@@ -26611,3 +26611,31 @@ prose instead, that is a different repair and it should be chosen deliberately.
 renamed.** Any gate or receipt that rebuilds a pinned tree this way has the same defect, and it
 stays invisible until somebody renames a file — which is why this surfaced as a count being one
 short rather than as anything pointing at renames.
+
+### ⛭ A CORRECTION TO MY OWN RECORD — THE `check_prose_pins` RED WAS NEVER MINE, AND I NAMED THE WRONG CAUSE
+
+`r7814`'s commit message says the `check_prose_pins` red at `cfc3d9c86` came from *"a main that has
+since moved twice — but I could not know that"*, and ties it to a defect of mine: I had fixed
+`check_figures_pinned`, re-run **that one gate alone**, and pushed without re-establishing the fast
+job's green. **That defect is real and the guard stands.** But it is not what caused this red, and
+saying so in the same breath implied a connection that does not exist.
+
+**The cause is now named exactly.** `69`'s `ca2dfd0d7` — *"`r7813` (69): the prose-pin row for P2's
+stress-tensor count re-keyed to two, the second use read"* — changes one row of
+`corpus/prose_pin_baseline.tsv`. It is the companion to their `c4b135aaf`, which repaired `P2` so
+that it counts `P14`'s trace-anomaly mention as a **second** named use of "stress tensor". That
+repair made the prose-pin row's count stale, and `69` re-keyed it in the very next commit.
+
+⇒ **CI builds the PR's merge tree, so it saw `69`'s `P2` repair without the baseline re-key that
+followed it.** The gate was correct to red, on a tree that existed for exactly the gap between
+those two commits, and on neither seat's branch. It passes here on the branch, under `NODE=ci`, and
+on a hand-built merge tree, because by then both commits were on `main`.
+
+⇒ **GUARD: before attributing a CI red to a defect of your own that you happen to have found in
+the same hour, check whether the base moved under the merge tree. A red on a merge tree is a fact
+about a tree neither side has, and a coincidence of timing is not a cause.** ⌗ *I had the honest
+report — the gate passes in every configuration I can build — and then reached past it for a
+culprit I already had in hand. The measurement was right and the attribution was not.*
+
+⌗ *What stands unchanged: re-run the FAST JOB, not the gate, after a gate the job named is fixed.
+That is still the right discipline; it is simply not the explanation for this red.*
