@@ -8142,5 +8142,16 @@
     "since": "f1afa897c2aafc7bedfe4745adaecd21c73a0a0d"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py": {
+    "gates": [
+     "\u26d4 AND \"stress tensor\" as QFT in curved s"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43915543436",
+    "since": "a989cc5f1e6895f18909996b074dfc8afd3940f5"
+   }
+  }
  }
 }
