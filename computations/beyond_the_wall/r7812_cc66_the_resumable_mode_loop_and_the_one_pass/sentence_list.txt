@@ -1,0 +1,29 @@
+====================================================================================================
+  r7812 -- THE SENTENCE LIST: every P15 body sentence the one pass must touch
+====================================================================================================
+
+  swap logs cover 5 receipt(s); 103 measured (old -> new) pair(s) in total
+       11 moved  P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_numbe
+       15 moved  P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_th
+        6 moved  P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulati
+       24 moved  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_fu
+       47 moved  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_th
+
+  888 body `\rcpt` site(s); of those, the ones citing a receipt whose own output moved:
+
+  3 LANDING SITE(S); of those 2 CHANGE THE PRINTED DIGITS
+
+  [1] CR_cosmology.tex   prints  1.13   (measured 1.129 -> 1.077)   ** EDIT: 1.13 -> 1.08 **
+      receipt: P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels
+      sentence: Over 179 bins on 100\le\ell\le1900 the control stands at 1.13 per bin and this arm at 2.65, a factor 2.35, against 0.99 and 1.60 when four parameters are freed in each arm .
+
+  [2] CR_cosmology.tex   prints  12.6   (measured 12.63 -> 12.64)   ** NO EDIT: still prints 12.6 (moves inside its last digit) **
+      receipt: P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+      sentence: Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of that ratio's bootstrap interval, 0.953, instead of at its centre, one full unit of the driving is 12.6 standard deviations and the observed point sits at 0.76, so both figures quoted above survive the change .
+
+  [3] CR_cosmology.tex   prints  0.76   (measured 0.76 -> 0.59)   ** EDIT: 0.76 -> 0.59 **
+      receipt: P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth
+      sentence: Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of that ratio's bootstrap interval, 0.953, instead of at its centre, one full unit of the driving is 12.6 standard deviations and the observed point sits at 0.76, so both figures quoted above survive the change .
+
+  1 receipt(s) whose figures moved but which NO body sentence cites -- re-derived, no sentence to edit:
+      P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_
