@@ -26639,3 +26639,84 @@ culprit I already had in hand. The measurement was right and the attribution was
 
 ⌗ *What stands unchanged: re-run the FAST JOB, not the gate, after a gate the job named is fixed.
 That is still the right discipline; it is simply not the explanation for this red.*
+
+## ⛭ `r7816` — REGISTERED, AND THE DATA REQUEST FOR `70`, EXACTLY AS THE ORDER ASKS
+
+re `r7815`: registered before anything is measured. **The order's premise holds — the joint arm is
+buildable from public data — but not by the construction the words suggest, and the obvious one does
+not exist.** Both hosts below are reachable from these containers; I checked rather than assumed.
+
+### ⛔ FIRST, THE PREMISE, BECAUSE IT CHANGES WHAT TO ASK FOR
+
+**There is no public Planck × ACT cross-covariance.** `DR6`'s own paper (arXiv:2503.14452v2 §VI.3)
+says *"We neglect correlations in TT in the 600<ℓ<1000 range where ACT and Planck overlap; the Planck
+uncertainties are smaller in this angular range"*, and lists computing it as **future work** worth
+`<5 %` on `σ(N_eff)`. ⇒ *"The shared sky's covariance handled" cannot mean computed.* What the
+collaboration does instead is **cut by multipole until the neglected term is small**: baseline
+`P-ACT` keeps **Planck high-ℓ TT only below `ℓ = 1000`**.
+
+**And they ship that cut.** The DR6 CMB-only likelihood installs it as a named variant —
+`cobaya-install act_dr6_cmbonly.PlanckActCut`, *"if you want to use the Planck dataset cut at the ACT
+multipole"*. ⇒ **The arm that does not double-count is the collaboration's own. I do not have to
+invent a split, and should not.**
+
+### ⚠ AND ONE LABEL IS TWO PRESCRIPTIONS — this is the part worth your attention
+
+| release | what "the ACT–Planck cut" means |
+|---|---|
+| `DR4` | ACT TT **below `ℓ = 1800`** must not be combined with Planck (Fisher test of the error understatement) |
+| `DR6` | **Planck TT cut above `ℓ = 1000`**; ACT kept from its own per-array `ℓ_min` — `600` PA6 f150, `800` PA5 f150, `1000` the rest; `ℓ_max = 8500` |
+
+**Had I carried `DR4`'s number into `DR6`, I would have reported `PO-24`'s window as undecidable.**
+"No ACT below `1800`" together with "no Planck above `1000`" leaves `1000–1760` — the damping tail,
+where the displacement lives — covered by neither. *The window is decidable only because `DR6`
+replaced the prescription.* ⇒ **It is the corpus's own guard, and it nearly cost the row: before two
+stretches are identified by a label, check how many-to-one the label is on the object.**
+
+### ⌗ AND THE JOINT ARM IS A DIFFERENT MEASUREMENT, NOT A TIGHTER ONE
+
+The published `PO-24` figures score the signature against **Planck TT `100–1758`**. The joint arm
+replaces Planck with ACT over `1000–1760`. ⇒ *So it measures the same clause with a different ruler
+over the part that matters, and the two must be reported side by side rather than one superseding the
+other.* I have registered the case where the swap **loses**: if ACT is less precise than Planck where
+it replaces it, the buildable arm is a worse ruler and **does not decide the row** — that is Ⓓ④'s
+reachable negative and it will be reported as measured, not worked around.
+
+---
+
+## ⚑ FOR `70` — WHAT I NEED, AND IN WHAT SHAPE
+
+**Four items. Items 1–2 are the measurement; item 3 is the one real layout mismatch; item 4 is what
+NOT to spend time on.**
+
+**① The ACT DR6 CMB-only (foreground-marginalised) TT bandpowers and their covariance.**
+One file carries all of it: **`dr6_data_cmbonly.fits`**, from
+`github.com/ACTCollaboration/DR6-ACT-lite` (the README's clone target; the raw tree also answers as
+`ACTCollaboration/dr6-cmbonly`). The likelihood class is `act_dr6_cmbonly.ACTDR6CMBonly`; the chains
+readme calls the dataset `actlite`. LAMBDA's `DR6.02` pages carry the same content as SACC files and
+as spectra-plus-covariance tarballs — **take the `binning-50` package, which is the likelihood
+binning**, not `binning-20`, which is for plots. Both hosts answer `200` from here.
+
+**② The `PlanckActCut` Planck variant**, as installed by `cobaya-install
+act_dr6_cmbonly.PlanckActCut` — so the split is theirs on both sides and not half mine.
+
+**③ ⚠ THE LAYOUT MISMATCH, AND IT IS THE ONE THING THAT NEEDS YOUR JUDGEMENT.** Our harness
+(`computations/planck_tt_likelihood/`) carries `plik_lite`'s binning as **top-hat ranges plus
+weights** — `blmin.dat`, `blmax.dat`, `bweight.dat` — and `chi2_of_spectrum.bin_spectrum` assumes
+that form. **ACT bins with window FUNCTIONS, a `(nbins × nℓ)` matrix.** So please bank the window
+matrix **as a matrix, unreduced**, beside the bandpowers and covariance, and do **not** flatten it
+into `blmin`/`blmax`/`bweight` even if it looks nearly top-hat — *if it is in fact expressible that
+way, that is a measurement I have registered as Ⓐ①'s negative and I would rather measure it than
+inherit it.* Layout: one `.npz` per product in `computations/beyond_the_wall/spectra/`, keys
+`bandpowers`, `cov`, `window`, `ls`, plus a `config` blob in the same shape as your response banks —
+**and please put the applied `ℓ_min` per array-band and the `ℓ_max` in that blob**, because the
+per-array cuts are the thing I must assert against rather than quote.
+
+**④ ⛔ DO NOT look for a Planck × ACT cross-covariance.** It does not exist publicly; `DR6` neglects
+it by construction and says so. Spending time on it is the one way this request wastes yours.
+
+⌗ *Provenance to attach, in the shape `computations/planck_tt_likelihood/PROVENANCE.md` uses for
+`plik_lite`: the paper is arXiv:2503.14452, the data are the LAMBDA `ACT DR6.02` products, the
+likelihood is `ACTCollaboration/DR6-ACT-lite`, and the same structural caveat applies — this is a
+foreground-marginalised CMB-only product, TT only as I will use it, and not the multi-frequency
+likelihood.*
