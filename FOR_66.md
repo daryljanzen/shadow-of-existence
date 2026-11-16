@@ -15,6 +15,68 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7807+cc66.5 — **THE RED ON MY OWN HEAD WAS MY OWN CENSUS TRIPWIRE, FIRED BY MY OWN BANK; IT IS READ AND REPAIRED, AND THE OTHER CARRIED RED IS YOURS AND ALREADY GREEN**
+
+No order is open. This is the drive-to-green on `r7807`'s PR, and it is worth a section because the
+coupling that reddened is one the scoper **cannot** see.
+
+⛔ **THE RED WAS MINE, AND IT WAS MY `r7783` RECEIPT.** `r7807`'s control run banks a `POLSAVE`
+polarisation spectrum. My own `r7783` receipt's gate ① censuses every `.npz` under `computations/`
+and pinned the polarisation population at **FOUR**, with its own guard stating that *a fifth bank
+reddens this and means no run was needed*. Mine is the fifth. So the gate went red on a push that
+changed **nothing it measures** — and it was right to, because that is what a tripwire is for.
+
+**I have now read it, which is the whole point of a tripwire, and the conclusion stands:** my bank is
+`ARM=lcdm` at Planck's published point, its `config` records `LEAFGEOM` **false**, and it was banked
+**after** `r7783` ran. It is not a one-rate arm and could not have served the fourth feature.
+
+**THE REPAIR ASSERTS WHAT ACTUALLY ESTABLISHES THE CLAIM**, which was never the count: that **no**
+polarisation bank anywhere under `computations/` is a `LEAFGEOM=1` arm. `r7783`'s own four are pinned
+**by name**, so one going missing or renamed still reddens; a bank banked **later** reddens only when
+it *is* a one-rate arm — the condition that would really mean no run was needed — and is **named in
+the row either way**, so an arrival is read and never absorbed. ⛔ *Pinned as a **SET**, not a count:
+a second copy of one of the four in another seat's `rebuilt/` directory would otherwise read as a
+fifth arrival — the basename trap this seat walked into at `r7805` and had to correct at `r7807`.*
+
+**Falsifiability measured, three probes, not assumed:** a planted `LEAFGEOM=1` polarisation bank
+reddens ① and names itself; one of the four removed where no path guard covers it reddens ① as
+*"3 of r7783's own four"*; the one the `FATAL` path guard does cover exits `rc=1` naming the file.
+
+⛔ **AND A CORRECTION TO THAT `INDEX` ROW ITSELF, WHICH IS ALSO MINE.** The row claimed *"every figure
+pinned BY A COMPARISON IN THE RECEIPT, **twenty-two** of them"* where the receipt measures and asserts
+**28**. Stale since the pin list was extended, and wrong in the direction that understates the gate.
+Corrected to twenty-eight.
+
+⛭ **THE FINDING, AND IT IS A ROUTING QUESTION FOR YOU.** The scoper links a **changed path** to the
+receipts that read it. A receipt that globs `computations/**/*.npz` is coupled to **every future
+bank** by nothing the scoper can see — no path, no filename, no import. So this gate was not run by
+the push that broke it; it surfaced **two pushes later**, and only through `refs/ci/carry`. Exactly
+the class the standing note warns of, and the second instance in this round after the
+`instrument_blob` ASTs. **Two such censuses exist in the tree** — this one and
+`P15_the_phase_slope_does_not_separate_the_loading_from_the_driving...`, which I ran and which is
+green. Whether a census receipt should be scheduled on **any** `.npz` addition is your call; I have
+not touched the scoper.
+
+⌗ **THE OTHER CARRIED RED IS NOT MINE AND NEEDS NOTHING.** `L_probability/S11...` carried red from
+`6ea3358c8`'s range. Your own `r7807` fix on `main` — `6a5874ac7`, S11 counting its 400 commits back
+from the commit that last repaired the arm rather than from `HEAD` — is merged into this branch, and
+S11 runs **rc=0** here. It leaves the carry on this push without my touching it.
+
+⌗ **AND `cc66.4` DID LAND.** The two `instrument_blob` reds my `POLSAVE` change caused are gone: the
+comb receipt and the 1p57 receipt both **left** the tolerance carry (`+0 −2 =2` on `0379aee5ac`).
+
+⌗ **AN OBSERVATION ON THE RUNNER, REPORTED AND NOT DIAGNOSED.** On `0379aee5ac` both scoped jobs
+**wrote their carry commit and then hung in the `record` step until cancelled** — `suite +0 −2 =2`
+and `tolerance +0 −2 =2` are on `refs/ci/carry`, while the jobs read as `cancelled` / `in_progress`.
+So the run's own conclusion said nothing about whether the head was clear, and the carry was the only
+honest source for it. I read the verdict there rather than from the job state; whether the `record`
+step wants the same timeout its `scope` sibling has is not mine to decide.
+
+**Verified before pushing:** the receipt **8 of 8, rc=0**; the phase-slope census receipt rc=0;
+appendices regenerated **additively** (exactly 1 line changed in each of the two that carry the row,
+0 rows added or lost, 1170 both sides); `check_appendix_current` **PASS** on both rails;
+`check_figures_pinned` back at baseline **1449**; `P15` recompiled **352 pages, 0 errors**.
+
 ## r7807+cc66 — **THE CONTROL AT PLANCK'S OWN POINT TURNS THE `0.918` INTO `0.964`; AND PO-87's 23 ARE 14 REPOINTS AND 9 DEPARTURES, SO THE CLAUSE IS NOT STRUCK**
 
 **All three items** (③ needed nothing — ruled at r7797). Registered first (`r7807+cc66.0`).

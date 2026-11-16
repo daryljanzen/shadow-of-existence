@@ -39,8 +39,10 @@ Built `r7783+cc66.9`, discharging order ③ of the chat seat's `r7783` (its `r77
 
 ⛭ ** THE POLARISATION RUN, AND WHY IT WAS MINE TO LAUNCH. **  The fourth-feature comparison needs
 `Dl_EE` and `Dl_TE`.  The order expected the banked refit arm to serve; that arm's `.npz` is TT-only,
-and `(1)`'s census finds exactly four polarisation banks in the tree with `LEAFGEOM=1` on none of
-them.  The run takes the banked refit arm's own `__SWITCHES__` line verbatim plus `POLSAVE`, and
+and `(1)`'s census finds `LEAFGEOM=1` on NO polarisation bank in the tree -- the four that were
+there when this ran, and every one banked since.  *`r7807+cc66` is why that row reads over the whole
+population and not over a count of four: this seat's own control run banked a fifth polarisation
+bank, which fired the census's tripwire without touching a thing this receipt measures.*  The run takes the banked refit arm's own `__SWITCHES__` line verbatim plus `POLSAVE`, and
 `(2)` is the gate on its identity: ** its TT is BIT-IDENTICAL to the banked arm at every one of the
 `238` shared multipoles. **  *The launcher is idempotent and checks for a running solver by reading
 `/proc/*/environ`; `r7783+cc66.8` records why that check also needs to exclude its own ancestry.*
@@ -139,17 +141,42 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'computations', '**', '*.npz'), rec
 mine = os.path.relpath(POL_NEW, ROOT)
 pre = [p for p in pol if p != mine]
 pre_lg = [p for p in lg if p != mine]
+# ⛔ r7807+cc66: THE CENSUS WAS PINNED AT FOUR AND THIS SEAT ITSELF ADDED THE FIFTH.  r7807's
+#   control run banks a POLSAVE spectrum (`r7807_control_planck2018_L2000_pol.npz`), so the old
+#   `len(pre) == 4` reddened this gate on a push that changed NOTHING this receipt measures.  The
+#   tripwire fired correctly and has now been READ, which is the whole point of a tripwire: that bank
+#   is `ARM=lcdm` at Planck's published point, its `config` records `LEAFGEOM` false, and it was
+#   banked AFTER this receipt's run -- so it is not a one-rate arm and could not have served the
+#   fourth feature.
+#   What ESTABLISHES the claim was never the count.  It is that NO polarisation bank anywhere under
+#   `computations/` is a `LEAFGEOM=1` arm, so the row asserts THAT, over the whole population, and
+#   pins r7783's own four BY NAME so one of them going missing or being renamed still reddens.  A
+#   bank banked later reddens only when it IS a `LEAFGEOM=1` arm -- the condition that would really
+#   mean no run was needed -- and is named in the row either way, so an arrival is read and never
+#   absorbed.
+#   ⛔ Pinned as a SET and not as a count, because a second copy of one of the four in another
+#   seat's `rebuilt/` directory would otherwise read as a fifth arrival: the basename trap this seat
+#   walked into at `r7805` and had to correct at `r7807`.
+R7783_FOUR = frozenset(('pol_cr_leafrec0.npz', 'pol_cr_leafrec1.npz', 'pol_lcdm.npz',
+                        'verify_cr_leafrec1_pol.npz'))
+_four = frozenset(os.path.basename(p) for p in pre) & R7783_FOUR
+_later = sorted(p for p in pre if os.path.basename(p) not in R7783_FOUR)
 check("⛭⛔⛭ `r7783` ** ① THE FOURTH FEATURE NEEDED A RUN, AND THAT IS ESTABLISHED BY **CENSUS** OVER "
-      "EVERY `.npz` UNDER `computations/`: FOUR POLARISATION BANKS EXIST AND **NONE** IS A `LEAFGEOM=1` "
-      "ARM ** ⇒ *** the order expected the banked refit arm to serve, and that arm's `.npz` carries TT "
-      "only -- `Dl_EE` and `Dl_TE` are nowhere on the one rate. ** The census is the row rather than a "
-      "look at the obvious place, because a claim of this shape from this seat at `r7767` was too "
-      "strong and had to be withdrawn. ** *** ⌗ *A fifth bank, or a `LEAFGEOM=1` one among the four, "
-      "reddens this and means no run was needed*",
-      len(pre) == 4 and not pre_lg,
-      f'{len(pre)} pre-existing polarisation bank(s): '
-      + ', '.join(os.path.basename(p) for p in pre)
-      + f'; of those with LEAFGEOM=1: {pre_lg if pre_lg else "NONE"}')
+      "EVERY `.npz` UNDER `computations/`: THIS RECEIPT'S OWN FOUR POLARISATION BANKS ARE ALL STILL "
+      "THERE, AND **NO** POLARISATION BANK IN THE TREE IS A `LEAFGEOM=1` ARM ** ⇒ *** the order "
+      "expected the banked refit arm to serve, and that arm's `.npz` carries TT only -- `Dl_EE` and "
+      "`Dl_TE` are nowhere on the one rate. ** The census is the row rather than a look at the obvious "
+      "place, because a claim of this shape from this seat at `r7767` was too strong and had to be "
+      "withdrawn. ** *** ⌗ *A `LEAFGEOM=1` polarisation bank ANYWHERE, or one of the four gone or "
+      "renamed, reddens this and means no run was needed. A bank banked LATER that is not on the one "
+      "rate does not -- it is named in the row instead, so an arrival is read and not absorbed. "
+      "`r7807+cc66`'s re-pointed control is the first such bank, and it is this seat's own*",
+      _four == R7783_FOUR and not pre_lg,
+      f"{len(_four)} of r7783's own four polarisation bank(s) still present: "
+      + ', '.join(sorted(_four))
+      + f'; banked since: '
+      + (', '.join(os.path.basename(p) for p in _later) if _later else 'NONE')
+      + f'; of all {len(pre)}, those with LEAFGEOM=1: {pre_lg if pre_lg else "NONE"}')
 
 # ---------------------------------------------------------------- (2) the run IS the same arm
 with np.load(POL_NEW, allow_pickle=True) as z:
