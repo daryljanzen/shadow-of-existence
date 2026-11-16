@@ -15,6 +15,87 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7807+cc66 — **THE CONTROL AT PLANCK'S OWN POINT TURNS THE `0.918` INTO `0.964`; AND PO-87's 23 ARE 14 REPOINTS AND 9 DEPARTURES, SO THE CLAUSE IS NOT STRUCK**
+
+**All three items** (③ needed nothing — ruled at r7797). Registered first (`r7807+cc66.0`).
+Receipt `P15_the_po87_list_is_14_repoints_and_9_departures_...` — **11 gates, 0 fail**. Appendices
+regenerated, P15 recompiled (350 → 352 pages, 0 errors), INDEX row added, `check_figures_pinned`
+back at baseline 1449.
+
+### ② The run, not a stencil
+
+`ARM=lcdm LH0=67.36 LOM=0.313773 WBH2=0.02237 NS=0.9649 LMAXL=2000`, 2547 modes, rc=0, peaks
+`[220, 540, 812, 1132]`. **Both banks carry a `config`** — the TT one and the `POLSAVE` one, which is
+why I gave `POLSAVE` its `config` *before* the run rather than after.
+
+⛔ **Your conditional is answered: the instrument carries NO neutrino mass.** A massless
+free-streaming hierarchy (`LN`, `FNU`, `DNEFF`) and no `mnu` anywhere, while Planck's published fit
+assumes Σm_ν = 0.06 eV. **So this is Planck's POINT in this instrument, not Planck's MODEL**, and the
+receipt says so rather than leaving a reader to find it. Asserted against the instrument's own source.
+
+| quantity | moves |
+|---|---|
+| control's no-fit χ², 185 lensed bins | **214.057 → 203.823, improving 4.781 %** |
+| **the published `0.918`** | **→ `0.964`** |
+| the arm's margin over the control | **8.2 % → 3.6 %, less than half the claim** |
+| control's peaks 1–4 | +0.1195, +0.3502, +0.6620, **+0.9198** multipoles |
+| the refitted `1.002` | **unmoved** (measured 1.0018) |
+
+**The refitted `1.002` cannot move, and I can show it structurally rather than by agreeing numbers:**
+it is `lf_rf / ctl_rf`, read from the two **refit** verifies, while the un-refitted bank is read only
+for the no-fit ratio. The figure never touches what is being re-pointed. *An agreement of numbers
+could be luck; this cannot be.*
+
+⌗ **And r7805's stencil is vindicated inside its registered bound:** 0.9571 holding `H₀` fixed
+against the run's 0.9641 — a difference of **0.0070** against the **0.01** I registered. It reached
+a point it never evaluated. (It used `Ωm = 0.313400` for h = 0.674; the instrument's own h = 0.6736
+gives 0.313773, and the real re-pointing moves `H₀` and `n_s` too.)
+
+### ① The 23, read by hand: **14 repoints, 9 departures**
+
+The method is r7635's `RECIPES.md`, authoritative where my own tracer was not — *the `LEAFREC`
+default moved* (1 since cc66.75, omitted from the old recipes, so they ran at 0) and *none of the 36
+namesakes carries a `config`*.
+
+* **the 7 candidates: all off the leaf rate, all with a banked `_leafrec1` twin** → 7 repoints;
+* **the 16 split 6 / 3 / 7**: 6 read no arm grid at all (they leave), 3 read a `_leafrec1` grid **and**
+  a namesake one — a deliberate comparison, not a defect (they leave), and 7 read a namesake grid
+  whose twin directory exists (7 more repoints).
+
+⇒ **PO-87 is not struck. The remaining work is 14 repoints and not a single new run.**
+
+### ⛔ A correction to my own r7805 result, which you have already merged
+
+That round reported the census's `cheap` count as **0** and let it stand as *no item is repointable
+end to end*. `cheap` is the **conjunction** of two tests — every namesake path has a twin **and** no
+load site is undecidable — and it is computed on **basenames**, so a second copy of a bank in another
+seat's `rebuilt/` directory, with no twin beside it, makes a repointable item read as
+un-repointable. **The count was right for what `cheap` means and wrong as an answer to whether these
+can be repointed: 14 of them can.** I should have said which question the count answered.
+
+### Predictions: 8 of 10 held, 2 failed
+
+⛔ **①a FALSIFIED** — at least 11 of the 16 were to leave; **9** do. ⛔ **①b FALSIFIED** — at least 2
+of the 7 were to leave; **none** does, all 7 being off the leaf rate. ✅ Held: ①c (it is not struck),
+①d (no namesake carries a config), ②a, ②b, ②c, ②d, ②e, ③. Both failures are in the gate text.
+
+### Two things worth the corpus's time
+
+* ⛭ **The banked `config` records the form switches and NOT the background point.** No `LH0`, `LOM`,
+  `WBH2` or `NS` in it. So a `config` settles exactly the question PO-87 asks (which rate) and
+  **cannot** say which background a bank ran at. The receipt asserts that rather than assuming it,
+  and reads the point from the launcher's own table instead. **If you want banks to be self-describing
+  for the point too, that is a second field to add** — your call, not taken here.
+* **Eight save sites still write no `config`** (`ZPSSAVE`, `SRCSAVE`, `SRCESAVE`, `SRCDSAVE`,
+  `SRCFIELD`, `DLKSAVE`, the visibility save, `PHISAVE`). They are diagnostics rather than
+  figure-bearing spectra, so I reported rather than changed them; `POLSAVE` was the one you named.
+
+### Still with you
+
+* **Which figures P15 should carry now** — the `0.964`, the moved peaks, and the fourth-feature
+  differences. Nothing is re-pointed here and no sentence is edited.
+* **The frozen depths** — still my call with 70, still untaken.
+
 ## r7805+cc66 — **PO-87's LIST GREW TO 33 AND NONE OF IT IS EVIDENCE; THE CLAUSE CANNOT BE DISCHARGED AS WRITTEN; AND RE-POINTING THE CONTROL COSTS THE ARM HALF ITS MARGIN**
 
 **Both items, registered first** (`r7805+cc66.0`, pushed before a line of the computation existed).
