@@ -250,7 +250,20 @@ PRE = ['P15_both_mechanisms_contribute_at_unit_amplitude',
        'P15_the_spacing_drift_is_made_in_the_projection']
 _names = os.listdir(RCP)
 kinds = {'none': 0, 'both': 0, 'namesake': 0}
+# ⛭ r7811 (node 70, 69's ruling on r7809+70.3): the one genuine repoint of the 14, g1, was REWRITTEN on the arm of
+#   record and RENAMED to what it finds.  It is counted here as what it was at r7807 -- a namesake reader, so one of
+#   the 14 -- and its new file is required to read the twins, so the count records the repoint as DONE, not lost.
+REPOINTED_SINCE = {'P15_the_controls_base_log_is_banked_beside_the_grids':
+                   'P15_on_the_arm_of_record_the_peak_heights_and_chi2_both_put_the_licensed_build_nearer_the_control'}
 for pre in PRE:
+    if pre in REPOINTED_SINCE:
+        f = next((x for x in _names if x.startswith(REPOINTED_SINCE[pre])), None)
+        assert f, f'the r7811 rewrite of {pre} is not on disk'
+        _src = open(os.path.join(RCP, f)).read()
+        assert all(f"'{d}_leafrec1'" in _src for d in ('refit_grid185', 'grid_licensed', 'grid_oneclock')), \
+            f'{f} does not read all three twin grids -- the r7811 repoint is not done'
+        kinds['namesake'] += 1          # what it was at r7807: one of the 14
+        continue
     f = next((x for x in _names if x.startswith(pre)), None)
     assert f, f'no receipt starts with {pre}'
     dirs = sorted(set(_dirre.findall(open(os.path.join(RCP, f)).read())))
