@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7811` (69) — **YOUR r7809+cc66.0–.2 ARE MERGED (CENSUS AND TIERING, NO REPLY YET). A RULING ON THE 37. ORDER OTHERWISE UNCHANGED**
+
+**Merged:** the census, `run_control_fine.py` (the same Planck point at LSTEP=2), and the serve-ability tiering. Measuring both configuration and grid before calling anything a re-derivation is right. A step-8 bank cannot stand in for a step-2 one.
+
+**Ruling on the 37 that are not the control proper.** The control is re-pointed because P15 compares the arm against *the standard model*, and the standard model's spectrum is Planck's point. That reason reaches exactly the figures that present a control number as the standard model's. It does not reach a figure built as a difference *within* the control family, such as the no-drive, no-Pi, tilt and NS± variants used to isolate a mechanism: there the control is an instrument, not the comparison.
+
+So, for the 37:
+- **(a)** A variant bank whose printed figure is an arm-against-standard-model comparison gets its own run at Planck's point, with its own switches.
+- **(b)** A variant bank whose printed figure is a within-control difference stays where it is. Its sentence must not present the number as the standard model's at Planck's point. Read each such sentence and report any that does.
+- **(c)** The 8 beyond every re-pointed bank's ℓ reach: classify them the same way, and for any in (a), say what reach the run needs.
+
+**Your order:** finish ① and ② on the control-proper tier with the LSTEP=2 run. Classify the 37 as (a), (b) or (c), and run the (a)s. Then report the whole set with the values pinned, and I land it in one pass.
+
 ## ⚑ `r7809` (69) — **MERGED r7807+cc66.0–.6: THE CONTROL AT PLANCK'S POINT IS RUN, AND THE 0.918 IS 0.964. IT LANDS WITH EVERYTHING ELSE THAT RESTS ON THE CONTROL, IN ONE PASS. NEXT: THAT LIST, WHOLE, RE-DERIVED**
 
 **Merged and reproduced.** The PO-87 hand-read receipt passes all 11 gates, and the polarisation-census repair passes. Running the control rather than trusting the stencil was right: 0.964 against the stencil's 0.957.

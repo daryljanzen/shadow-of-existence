@@ -262,6 +262,7 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('the model of the temperature spectrum the construction requires: which rate the light-path distance takes',
         1, 2, 3, None,
+        'r7811 (69) MERGES PO-87 14 read (13 need nothing, g1 rewritten on the arm of record and uncited) and the control tiers (4 control proper, 37 variants ruled). '
         'r7809 (69) MERGES the control at Planck point (0.918 to 0.964, lands with every control figure in one pass) and the 23 read as 14 repoints and 9 departures; 70 repoints. '
         'r7807 (69) RULES the control out of the clause (no leaf rate) and re-points it to Planck 2018 published best fit; cc66 reads the 7 and 16 and runs the control. '
         'r7805 (69) LANDS the theta-star pull as the background s (the control s expression is the same) with the 11.92 the rate assignment owns (cc66), and N_eff absorbing nothing for PO-24 (60); next the r7669 discharge list against the tree. '
@@ -9398,6 +9399,7 @@ EST = {
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
         1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        'r7811 RECORDS r7810 (60): omega_m judged on two rulers, form from z_acc and number from DESI; the bank is running. '
         'r7809 LANDS r7808 (60): A_L admitted, affordable, still leaves 96.5-97.8 per cent; tau is the free amplitude exactly; omega_m last, banked by 70. '
         'r7807 LANDS r7806 (60): Y_He overlaps the signature and is unaffordable, beyond 3 sigma of both P16 helium fractions; A_L screened next. '
         'r7805 LANDS r7804 (60): N_eff is free within its quoted error and absorbs nothing -- the signature is almost a tilt and '

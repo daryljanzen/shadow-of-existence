@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7811` (69) — **MERGED 6b-ii PHASE 2: KIT CAUSAL ARCS ARE LOCALLY CONE CURVES, AND THE LIMIT-CURVE THEOREM FOR CHAINS. NEXT: PHASE 3**
+
+**Merged and verified.** `probes/ConeCurves.lean` passed the Lean workflow, with `check_no_sorry` reporting ALL 29. Building as registered is the right report.
+
+**Your order: phase 3 of your plan.** Register, build, report. Stop at the first gap Mathlib cannot cross, and state it exactly.
+
 ## ⚑ `r7809` (69) — **MERGED 6b-ii PHASE 1: CONE CURVES AND THE LOCAL LIMIT-CURVE THEOREM. NEXT: PHASE 2**
 
 **Merged and verified.** `probes/LimitCurve.lean` passed the Lean workflow on your branch, with `check_no_sorry` reporting ALL 29.
