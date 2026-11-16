@@ -147,7 +147,26 @@ REKEYED = {
 }
 _rekeyed_ok = [r for r in CONV if (r[0], r[1]) in REKEYED
                and _live.get((r[0], REKEYED[(r[0], r[1])])) == r[5]]
-_retired = [r for r in CONV if (r[0], r[1]) not in _live and r not in _rekeyed_ok]
+# ⛭ r7811 (69): A FOURTH WAY, AND IT IS DECLARED, NOT SILENT.  The chat seat (608d17c38) RESTATED P14's
+#   dimensional passage for the quantum theory -- what a single length cannot build is the Yang--Mills
+#   SCALE, not a coupling -- so B17's two pinned sentences carry a different claim and were re-keyed onto
+#   the new wording as DELIBERATE, with a note naming L550 Y1.  A changed claim cannot keep the old
+#   verdict.  Checked row by row: each new key must be live, read DELIBERATE, and name L550 Y1 in its note.
+RESTATED = {
+    ('receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py',
+     '"carries a dimensionless coupling that a single length cannot build"'):
+        '"what a single length cannot build for a Yang--Mills term in four dimensions is its scale"',
+    ('receipts/L221_the_bridge/B17_the_paper_already_walls_two_routes.py',
+     '"not that the coupling is unbuilt but that a coupling is not the kind of thing a holonomy supplies"'):
+        '"not that the coupling is unbuilt but that neither a field strength nor its scale is the kind of thing a holonomy supplies"',
+}
+_live_note = {(r[0], r[1]): r[6] for r in BASE if len(r) >= 7}
+_restated_ok = [r for r in CONV if (r[0], r[1]) in RESTATED
+                and (r[0], r[1]) not in _live
+                and _live.get((r[0], RESTATED[(r[0], r[1])])) == 'DELIBERATE'
+                and 'L550 Y1' in _live_note.get((r[0], RESTATED[(r[0], r[1])]), '')]
+_retired = [r for r in CONV if (r[0], r[1]) not in _live and r not in _rekeyed_ok
+            and r not in _restated_ok]
 _owed_tbl = sum(1 for r in CONV if r[5] == 'REPAIR-OWED')
 _owed_now = sum(1 for r in MINE if r[5] == 'REPAIR-OWED')
 print(f"      at the pin {TABLE_PIN}: {_pin_agree} of {len(CONV)} agree;  live now: "
