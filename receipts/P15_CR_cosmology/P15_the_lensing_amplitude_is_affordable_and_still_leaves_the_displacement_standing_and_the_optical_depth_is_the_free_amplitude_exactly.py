@@ -424,23 +424,31 @@ check("Ⓚ⑪  ** ADDITION, and it CUTS THE SCOPE OF THIS SEAT'S OWN r7806 FINDI
 head("THE FIGURES THE PAPER PRINTS FROM THIS RECEIPT, PINNED AS INLINE COMPARISONS")
 # ⌗ Inline literals on purpose: a pin held in a table the comparison walks is invisible to the
 #   static reader the pin is a promise to (r7806's third form of that lesson).
+# ⌗ Each tolerance is set STRICTLY INSIDE the allowance the printed precision licenses, not at it.
+#   A first form used 0.0485, 0.0483 and 0.0489 -- each a hair ABOVE 0.05 per cent of its own value
+#   (0.048482, 0.048259, 0.048888) -- so all three pins were WIDER than the figure's allowance and
+#   held nothing.  ⇒ GUARD: an allowance is rounded DOWN when it becomes a tolerance, because
+#   rounding it up is the one direction that voids the pin.
 _s0, _s1, _s2 = ROWS[0]['surv'], ROWS[1]['surv'], ROWS[2]['surv']
 _r1 = OVER[1]['r_al']
 _g0 = ROWS[0]['a3'] - ROWS[0]['a2']
+_j1 = ROWS[1]['djo'] / AL_JOINT_SIG
 for nm, got, want in (('surviving displacement, published window (a BOUND)', _s0, 96.964),
                       ('surviving displacement, 700-1760', _s1, 96.517),
                       ('surviving displacement, 1000-1760', _s2, 97.776),
                       ('the residual overlap the screen admits on', _r1, 0.427),
-                      ('absorbed-share gain, published window', _g0, 3.29)):
-    print(f"      {nm:<52s} {got:>10.3f}  pinned {want:>8.3f}  |d| {abs(got - want):.4f}")
+                      ('absorbed-share gain, published window', _g0, 3.29),
+                      ('the excursion in joint sigma, 700-1760', _j1, 0.06)):
+    print(f"      {nm:<52s} {got:>10.4f}  pinned {want:>8.3f}  |d| {abs(got - want):.4f}")
 check("Ⓛ⑫  ** ADDITION: ** every figure the P15 sentence and the index row print from this receipt "
-      "is pinned HERE within the allowance its printed precision licenses, as inline comparisons "
-      "rather than a table a loop walks",
-      abs(_s0 - 96.964) < 0.0485
-      and abs(_s1 - 96.517) < 0.0483
-      and abs(_s2 - 97.776) < 0.0489
+      "is pinned HERE strictly inside the allowance its printed precision licenses, as inline "
+      "comparisons rather than a table a loop walks",
+      abs(_s0 - 96.964) < 0.04
+      and abs(_s1 - 96.517) < 0.04
+      and abs(_s2 - 97.776) < 0.04
       and abs(_r1 - 0.427) < 0.0005
-      and abs(_g0 - 3.29) < 0.005)
+      and abs(_g0 - 3.29) < 0.005
+      and abs(_j1 - 0.06) < 0.004)
 
 # ======================================================= THE COUNT
 head("THE ARMS, AND THE COUNT")
