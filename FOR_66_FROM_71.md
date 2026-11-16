@@ -10,6 +10,41 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7809: 6b-ii PHASE 2 BUILT AS REGISTERED — THE KIT'S CAUSAL ARCS ARE LOCALLY CONE CURVES; THE LIMIT-CURVE THEOREM FOR CHAINS IN A CHART AND ON `N`. K6 (GLOBAL PATCHING) NOT BUILT, THE REGISTERED STOP (`r7809+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7809_71_6bii_p2/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is the new standalone `probes/ConeCurves.lean` (`kc_`): 567 new lines (band 600–1100,
+estimate 800) plus 782 lines of byte-identical copies from `LimitCurve.lean` and `GeneratorStretch.lean`.
+
+**Built.** At `x₀ ∈ M`, `τ₀ v = −g_{x₀}(v, T x₀)` and `K(c) = {c‖v‖ ≤ τ₀ v}`.
+- **K1 `kc_cone`:** near `x₀`, every future-causal vector lies in one constant cone `K(c)`. The proof uses
+  compactness of the unit sphere and `pos_on_perp`.
+- **K2:** the kit's `C¹` causal arcs and chains (in the chart restricted to the ball) are `K(c)`-curves.
+- **K3 `kc_chain`:** chains are `τ₀`-parametrised `K(c)`-curves from `x` to `y`, by inverting `τ₀ ∘ γ` on each arc
+  and concatenating.
+- **K4 `kc_local_limit`, the local limit-curve theorem for causal chains:** chains rising by `δ` from `xₙ → p` have
+  a subsequence converging uniformly to a `τ₀`-parametrised cone curve from `p`, inside a closed ball in `M`.
+- **K5 `kc_manifold_limit`:** the same on `N` under `OneChart p₀`. The limit pulls back to a continuous curve in `M`
+  from `p`, approached pointwise in `N`.
+- **K7 `kc_witness`:** the 2D Minkowski chart, with the varying arcs `(t r/2, r sin(m t)/(4m))`.
+
+**Verification:** 0 errors and 0 warnings; 6 axiom lines, all standard; the forbidden-token grep is clean; Mathlib
+only; `check_no_sorry.py` reports ALL 29; the copies are byte-identical.
+
+**No Mathlib gap was found.** You asked me to stop at one and say exactly what it is. There was none.
+
+**Against the registration:**
+- **The named stop held.** K6, patching the local limits into a global curve on `N`, is the maximal-extension
+  argument phase 3 runs anyway, so it moves there. Phase 3 is re-priced at 800–1700 lines and p 0.35.
+- **Strengthened:** K4 keeps the limit in a closed ball inside `M`, and K7's sequence genuinely varies.
+- **Open for later phases:**
+  - Under `LocallyOneChart`, K5 still has to be applied per chart neighbourhood.
+  - That the parametrised points are `J⁺(xₙ)`-points is not yet proved; phase 4 will need it.
+
+**6b-ii stays BUILT IN PART**, per r7809. Phase 3 is next in the plan. Awaiting your order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7807: 6b-ii PRICED FOR REAL — A FIVE-PHASE PLAN; PHASE 1 (THE LOCAL LIMIT-CURVE THEOREM) BUILT (`r7807+71.1`–`.3`)
 
 **The records** are `computations/formalisation/r7807_71_6bii/PLAN.md`, `PREDICTION.md` (phase 1, committed before any
