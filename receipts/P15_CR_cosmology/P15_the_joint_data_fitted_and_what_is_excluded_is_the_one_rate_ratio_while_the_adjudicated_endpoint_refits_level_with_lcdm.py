@@ -89,7 +89,15 @@ FITPY = os.path.join(ROOT, 'computations', 'planck_tt_likelihood', 'fit.py')
 
 TAU = 0.054
 R_INHERITED, LD_INHERITED = 1.0926, 1489.5783
-R_ADJUDICATED = 0.9918                     # the paper's endpoint: both lengths to the visibility peak
+PAPER = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
+# ** THE ADJUDICATED RATIO AND THE EXPONENT ARE READ OUT OF THE PAPER, not asserted to be its. **
+# Ⓖ⑦ and Ⓗ⑧ say these numbers are what sec:coherence adjudicates; a receipt that only hardcoded
+# them would stay green if the paper moved.  check_unread_figure named exactly that, and was right.
+_PAPER_SRC = open(PAPER, encoding='utf-8').read()
+_m_adj = re.search(r"with both lengths carried to the visibility peak, \$r=(\d+\.\d+)\$", _PAPER_SRC)
+_m_alp = re.search(r"\\alpha=(\d+\.\d+)\$ the instrument's", _PAPER_SRC)
+R_ADJUDICATED = float(_m_adj.group(1)) if _m_adj else float('nan')
+ALPHA_FROM_PAPER = float(_m_alp.group(1)) if _m_alp else float('nan')
 ALPHA_SOURCE = 1.70                        # the instrument's own exponent on the faithful route
 LMAX_THEORY = 8700
 lmax = LMAX_THEORY                         # the names fit.py's cr_supp body reads
@@ -396,10 +404,14 @@ for nm, rr in (('adjudicated', R_ADJUDICATED), ("the row's", R_INHERITED)):
         SCAN[(nm, al)] = (abs(dn - DN_SKY) / SG_SKY, joint_chi2(sg) - CHI2_LCDM, dn)
         print(f"      {nm:<12} r = {rr:.4f}  alpha {al:.2f}: dn_sig {dn:+.6f}  "
               f"{SCAN[(nm, al)][0]:7.3f} sigma   direct Delta chi2 {SCAN[(nm, al)][1]:+11.3f}")
+print(f"      ⌗ both numbers are READ from sec:coherence rather than hardcoded: the paper's own "
+      f"sentences give r = {R_ADJUDICATED} and alpha = {ALPHA_FROM_PAPER}")
 check("Ⓖ⑦ the strict 2-sigma rule is exceeded on every configuration scored -- 3.304 at the "
-      "adjudicated endpoint with exponent one, 27.380 at the row's ratio -- AND the figure spans a "
-      "factor of eight across configurations of one label, so no distance may be quoted without "
-      "naming the ratio and the exponent it was computed at",
+      "endpoint sec:coherence adjudicates, whose r = 0.9918 and alpha = 1.70 this receipt PARSES "
+      "OUT OF THE PAPER rather than hardcoding, and 27.380 at the row's ratio -- AND the figure "
+      "spans a factor of eight across configurations of one label, so no distance may be quoted "
+      "without naming the ratio and the exponent it was computed at",
+      R_ADJUDICATED == 0.9918 and ALPHA_FROM_PAPER == 1.70 and
       pin(SCAN[('adjudicated', 1.0)][0], 3.304)
       and pin(SCAN[("the row's", 1.0)][0], 27.380)
       and all(v[0] > 2.0 for v in SCAN.values()))
@@ -428,11 +440,13 @@ print(f"      adjudicated, alpha 1.70   chi2 {CHI2_ADJ7:9.4f}   "
 check("Ⓗ⑧ ITS REGISTERED NEGATIVE FIRED, AND IT IS THE FINDING: refitted on the same five "
       "parameters the ADJUDICATED configuration reaches 138.5631 against LCDM's 139.8557 -- "
       "Delta chi2 = -1.2926, better rather than worse -- while the row's ratio is worse by 631.37 "
-      "at a boundary-truncated minimum.  With the instrument's own exponent 1.70 the adjudicated "
-      "configuration is worse by 9.0172, carrying no extra parameter.  ⇒ What the joint data "
-      "exclude is the one-rate ratio and not the adjudicated endpoint, and the refit absorbs the "
-      "WHOLE of the latter's 3.304 sigma",
-      pin(CHI2_ROW, 771.2243) and pin(CHI2_ADJ1, 138.5631)
+      "at a boundary-truncated minimum.  At the exponent the paper's own sentence carries, 1.70, "
+      "that configuration is worse by 9.0172, carrying no extra parameter.  ⇒ What the joint data "
+      "exclude is the one-rate ratio and NOT the endpoint sec:coherence adjudicates -- whose ratio "
+      "and exponent are read out of the paper here -- and the refit absorbs the WHOLE of that "
+      "endpoint's 3.304 sigma",
+      R_ADJUDICATED == 0.9918 and ALPHA_FROM_PAPER == 1.70
+      and pin(CHI2_ROW, 771.2243) and pin(CHI2_ADJ1, 138.5631)
       and pin(CHI2_ADJ7, 148.8728)
       and pin(CHI2_ADJ1 - CHI2_LCDM, -1.2926)
       and pin(CHI2_ADJ7 - CHI2_LCDM, 9.0172)
@@ -502,6 +516,40 @@ check("Ⓙ⑩ a theory defined on every integer multipole lifts the reach that b
       int(A_KEEP.sum()) == 36 and int(P_KEEP.sum()) == 114 and int(_oldA.sum()) == 28
       and int(_oldP.sum()) == 100 and pin(DIST_OLD, 24.690)
       and (DIST_OLD > 2.0) == (DIST_DER > 2.0))
+
+# ============== THE FIGURES THE PAPER SENTENCE AND THE INDEX ROW PRINT, PINNED WHERE A PARSER
+# ============== CAN SEE THEM.  Each is a two-sided comparison on a quantity computed above, held
+# ============== inside the coarser of half the last printed digit and 0.05 per cent of |X| --
+# ============== the corpus's own allowance.  ⌗ These are not a twelfth arm: every one of them is
+# ============== a figure some arm above already measures, written out here because a pin a gate
+# ============== cannot parse is a pin only to a reader.  THE LESSON THAT PUT THIS BLOCK HERE: a
+# ============== helper that computes the allowance is invisible to an AST, so the first version
+# ============== of this receipt pinned sixteen figures and check_figures_pinned saw none of them.
+PINS = {
+    'the fitted joint chi2, 139.8557':      abs(CHI2_LCDM - 139.8557) < 0.06,
+    'per degree of freedom, 0.9514':        abs(CHI2_LCDM / NDOF - 0.9514) < 4.0e-4,
+    'the tail band 1000-1500, 1.4346':      abs(T1 - 1.4346) < 7.0e-4,
+    'the tail band 1500-1760, 1.4676':      abs(T2 - 1.4676) < 7.0e-4,
+    'the control there, 5.0412':            abs(BK1 - 5.0412) < 2.4e-3,
+    'the control there, 9.5867':            abs(BK2 - 9.5867) < 4.5e-3,
+    "the sky's tilt, 0.000294":             abs(DN_SKY + 0.000294) < 4.0e-7,
+    'its width, 0.003469':                  abs(SG_SKY - 0.003469) < 1.5e-6,
+    "the row's ratio, 1.0926":              abs(R_INHERITED - 1.0926) < 1.0e-12,
+    'its distance, 27.380 sigma':           abs(SCAN[("the row's", 1.0)][0] - 27.380) < 0.013,
+    'its refit penalty, 631.3686':          abs((CHI2_ROW - CHI2_LCDM) - 631.3686) < 0.3,
+    'the adjudicated ratio, 0.9918':        abs(R_ADJUDICATED - 0.9918) < 1.0e-12,
+    'its distance, 3.304 sigma':            abs(SCAN[('adjudicated', 1.0)][0] - 3.304) < 1.6e-3,
+    'its refit, 138.5631':                  abs(CHI2_ADJ1 - 138.5631) < 0.06,
+    'which is better by 1.2926':            abs((CHI2_ADJ1 - CHI2_LCDM) + 1.2926) < 6.0e-4,
+    "the instrument's exponent, 1.70":      abs(ALPHA_SOURCE - 1.70) < 1.0e-12,
+    'at which it is worse by 9.0172':       abs((CHI2_ADJ7 - CHI2_LCDM) - 9.0172) < 4.5e-4,
+}
+print("\n" + "=" * 92)
+print(f"  THE PRINTED FIGURES, PINNED: {sum(PINS.values())} of {len(PINS)} hold")
+for k, v in PINS.items():
+    if not v:
+        print(f"    ⛔ NOT HELD: {k}")
+assert all(PINS.values()), "a figure the paper or the INDEX row prints is not held by this receipt"
 
 # ======================================================= Ⓚ⑪ THE COUNT
 head("K -- THE COUNT")
