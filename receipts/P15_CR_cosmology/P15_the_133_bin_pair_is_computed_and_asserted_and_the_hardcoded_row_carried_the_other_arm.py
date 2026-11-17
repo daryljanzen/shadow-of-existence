@@ -247,6 +247,18 @@ print(f"  ** the arm at H0 = 68.60: chi^2 = {S[ARM_8660][0]:.4f} = {ab:.6f} per 
 #   quotes moves with it: 2.10 -> 2.03.  Asserted at the two decimals the corpus quotes, as before.
 if round(cb, 2) != 2.03:
     fail.append(f"the control comes out {cb:.4f} per bin, which is not the quoted 2.03")
+# ⛭⛭ r7817: the two figures `sec:refit-bound` prints for this control, pinned in the form
+#   `check_figures_pinned`'s parser reads -- `abs(x - c) < t` inside an `ast.Compare` -- and not only
+#   in the `round(...) != c` form above.  ⌗ *The gate collects constants only inside a comparison, so
+#   a negated equality in a failure branch is a pin to a reader and not to the gate; the paper's
+#   `2.03` and `269.9` were counted UNPINNED until these two lines existed, which is the ratchet
+#   doing its job on my own edit.*
+if not abs(cb - 2.03) < 0.005:
+    fail.append(f"the control's per-bin figure {cb:.4f} is not within half the last digit of the "
+                f"2.03 `sec:refit-bound` prints")
+if not abs(S[CONTROL][0] - 269.9) < 0.05:
+    fail.append(f"the control's 133-bin chi^2 {S[CONTROL][0]:.4f} is not within half the last digit "
+                f"of the 269.9 `sec:refit-bound` prints")
 if round(ab, 2) != 4.19:
     fail.append(f"the 68.60 arm comes out {ab:.4f} per bin, which is not cc66.7's 4.19")
 # and the chi^2 FOR_66 records, so the identification of the file is not a guess
