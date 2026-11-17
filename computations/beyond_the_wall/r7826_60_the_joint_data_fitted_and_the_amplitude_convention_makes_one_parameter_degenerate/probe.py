@@ -430,6 +430,33 @@ def stage_report():
     out.update(dn_sky=dn_sky, sig_sky=s_sky, dn_sig_derived=dn_der, dn_sig_inherited=dn_inh,
                dist_derived=dist_der, dist_inherited=dist_inh, r_derived=rA, lD_derived=lDA)
 
+
+    # ------------------------------------------- BEYOND THE REGISTRATION: WHICH OBJECT IS EXCLUDED
+    print(f"\n  ⌗⌗ NOT REGISTERED AT r7824, AND ADDED BECAUSE Ⓖ⑦ ALONE DOES NOT SAY WHICH")
+    print(f"     CONFIGURATION THE VERDICT IS ABOUT.  The row's harness prices r = 1.0926; the")
+    print(f"     paper's ADJUDICATED endpoint is r = 0.9918, a different object with the opposite")
+    print(f"     sign of r^2 - 1.  Each is scored on the same fitted baseline and the same l_D.")
+    scope = {}
+    c_base = armF.chi2(dlA)[0]
+    print(f"     ⌗ and the EXPONENT is a second axis: the row's harness imposes alpha = 1, while the")
+    print(f"       paper's faithful source route measures the instrument's own alpha = 1.70.")
+    for nm, rr in (('adjudicated endpoint', 0.9918),
+                   ("the row's harness", R_INHERITED),
+                   ('derived from this fit', rA)):
+        for al in (1.0, 1.70):
+            s_r = np.exp(-al * (rr ** 2 - 1) * (ls / lDA) ** 2)
+            sg = dlA * s_r
+            dn_r, _, _ = armF.fit_tilt(dlA, armF.planck_bin(sg), armF.act_bin(sg))
+            dist_r = abs(dn_r - dn_sky) / s_sky
+            c_r = armF.chi2(sg)[0]
+            scope[f'{nm} alpha {al}'] = (rr, al, dn_r, dist_r, c_r - c_base)
+            print(f"     {nm:<22} r = {rr:.4f}  alpha {al:.2f}  dn_sig {dn_r:+.6f}  "
+                  f"{dist_r:7.3f} sigma   direct Delta chi2 {c_r - c_base:+11.3f}")
+    for k, v in scope.items():
+        kk = k.replace(' ', '_').replace("'", '').replace('.', 'p')
+        out['scope_' + kk + '_dist'] = v[3]
+        out['scope_' + kk + '_dchi2'] = v[4]
+
     # ---------------------------------------------------------------- Ⓗ⑧ the Delta chi2
     print(f"\n  Ⓗ⑧  THE STATISTIC THAT DOES NOT GO NEAR ZERO BY CONSTRUCTION -- "
           f"Delta chi2 AT EQUAL PARAMETER COUNT:")
@@ -510,6 +537,56 @@ def stage_report():
     return 0 if not FAIL else 1
 
 
+# ============================================== stage: fitC -- the ADJUDICATED configuration refit
+# NOT registered at r7824.  Added because the registration's arms score the suppression at the
+# ratio the ROW's harness prices (1.0926, exponent one) while the PAPER adjudicates a different
+# configuration (r = 0.9918, and the instrument's own exponent 1.70 on the faithful source route).
+# Whether THAT configuration survives a best fit is the number the paper sentence needs, and no
+# registered arm measures it.  Flagged as an addition rather than folded in silently.
+def _obj_fixed(arm, r_fix, alpha, free_As, As_fixed=2.1):
+    def f(pv):
+        if free_As:
+            H0, ombh2, omch2, As9, ns = pv
+        else:
+            H0, ombh2, omch2, ns = pv
+            As9 = As_fixed
+        for k, v in zip(('H0', 'ombh2', 'omch2', 'As9', 'ns'), (H0, ombh2, omch2, As9, ns)):
+            lo, hi = BOUNDS[k]
+            if not (lo < v < hi):
+                return 1e7
+        try:
+            d, dp = camb_spectrum(H0, ombh2, omch2, As9 * 1e-9, ns)
+            dl = d[2:LMAX_THEORY + 1, 0].copy()
+            _, _, lD = cr_supp(d, dp, H0, ombh2, omch2)
+            ell = np.arange(2, LMAX_THEORY + 1, dtype=float)
+            dl = dl * np.exp(-alpha * (r_fix ** 2 - 1) * (ell / lD) ** 2)
+            return arm.chi2(dl)[0]
+        except Exception as e:                                    # noqa: BLE001
+            print('   ! camb/chi2 failed:', type(e).__name__, e)
+            return 1e7
+    return f
+
+
+def stage_fitC(budget=600):
+    ls = np.arange(2, LMAX_THEORY + 1, dtype=float)
+    arm = Arm(ls, planck_prior=False)
+    for tag, r_fix, alpha in (('fitC_adj_a170', 0.9918, 1.70),
+                              ('fitC_adj_a100', 0.9918, 1.00)):
+        f = _obj_fixed(arm, r_fix, alpha, False)
+        x0 = [X0[0], X0[1], X0[2], X0[4]]
+        print(f"  fitting {tag}: r = {r_fix} alpha = {alpha} budget = {budget}")
+        print(f"    chi2 at x0 = {f(x0):.3f}")
+        r = minimize(f, x0, method='Nelder-Mead',
+                     options={'maxfev': budget, 'xatol': 2e-4, 'fatol': 0.05, 'adaptive': True})
+        print(f"    {tag}: chi2 = {r.fun:.4f}  nfev = {r.nfev}  "
+              f"x = {[round(v, 6) for v in r.x]}")
+        json.dump({'tag': tag, 'x': list(map(float, r.x)), 'fun': float(r.fun),
+                   'nfev': int(r.nfev), 'free_As': False, 'with_supp': True,
+                   'r_fix': r_fix, 'alpha': alpha, 'ndata': arm.ndata},
+                  open(os.path.join(RUNS, f'{tag}.json'), 'w'), indent=1)
+    return 0
+
+
 if __name__ == '__main__':
     stage = sys.argv[1] if len(sys.argv) > 1 else 'repro'
     budget = int(sys.argv[2]) if len(sys.argv) > 2 else None
@@ -517,6 +594,8 @@ if __name__ == '__main__':
         sys.exit(stage_repro())
     if stage == 'fitA':
         sys.exit(stage_fitA(budget or 600))
+    if stage == 'fitC':
+        sys.exit(stage_fitC(budget or 600))
     if stage == 'report':
         sys.exit(stage_report())
     if stage == 'fitB':
