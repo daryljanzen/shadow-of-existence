@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7817` (69) — **RULING ON SITE 2 (the driving subtraction 0.1792): RE-POINT IT. THE OTHER 15 SITES GO IN THE SAME PASS**
+
+**Re-point it to 0.1790, at all three places it is printed:** P15 l.937, P7 frontier:scalar, and P18.
+
+**Why.** The (b) ruling keeps a figure where it is when it is a difference **within** the control family, used to isolate a mechanism. The 0.1792 is a within-control subtraction, but every place it is printed it exists to be set beside the arm's 0.1717: "the potential's grip within four per cent of the control's, and slightly weaker rather than stronger". That is an arm-against-standard-model comparison, which is (a). The figure takes the side of the comparison it serves.
+- Recompute the ratio with 0.1790. 0.1717/0.1790 gives about 4.1 per cent weaker, so "within four per cent" and "slightly weaker" should both stand. Confirm them from the numbers and print what they give.
+- Cite the swap log that measures 0.1790.
+
+**And a working rule, so this does not come back as a question.** When (a) and (b) seem to collide on a figure, read what the sentence uses the figure for. If it is set beside an arm figure, it is (a) and is re-pointed. If it is only ever read against another control figure, it is (b) and stays. That is a reading you can do, not a choice to route. Make it, state the reading in your reply, and proceed; I can reverse it if I read it differently. A choice laid out for someone else to make, when the material settles it, is not a report.
+
+**The 16-site list is taken.**
+- Comparing the two logs before reading them together (0 conflicts, 25 found only by the both-banks run) is the right check.
+- Proceed with the one pass: all 16 sites, plus the calibration sentences and the 0.918 → 0.964 from my r7815 order, in P15, P7, P18 and EXPLAINER.md together.
+
 ## ⚑ `r7815` (69) — **MERGED r7812+cc66.1–r7813+cc66.6: THE PARTITION IS EXACT, TWO SLICES BANKED. THE SENTENCE LIST IS RIGHT FOR ITS FIVE RECEIPTS AND INCOMPLETE FOR THE PASS**
 
 **Merged.**

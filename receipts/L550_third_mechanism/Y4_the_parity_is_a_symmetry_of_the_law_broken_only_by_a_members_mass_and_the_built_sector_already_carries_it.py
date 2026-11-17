@@ -27,6 +27,9 @@ Computed here:
       (t,r) -> (t,-r): P14's colourless occupation, all four characters, is carried onto itself; the
       Standard Model's -- T-values {+1,-1} on one chirality, {+1,+1} on the other -- is not.  CONTROL:
       the same map run on that occupation finds the missing state.
+  (5) the smallest colourless content containing the left-handed doublet that P carries onto itself is
+      four, so a P-symmetric generation is sixteen and the right-handed neutrino is required.  CONTROL:
+      the Standard Model's colourless three is not P-closed.
 
 COMPUTES: the Dirac-representation Clifford signs exactly; the determinant phases at three flavours per
 sector (the generation count) over 1000 random tied draws per lift; the slicing function symbolically in
@@ -150,11 +153,25 @@ def main():
     check(f'CONTROL (4): the Standard Model occupation is not; P sends it to states it lacks: {sorted(missing.elements())}',
           P_on(sm) != sm and len(missing) > 0)
 
+    # (5) the smallest P-closed colourless content containing the left-handed doublet
+    left = Counter({(1, 1): 1, (-1, 1): 1})
+    closure = left | P_on(left)
+    fifteen = Counter({(1, 1): 1, (-1, 1): 1, (1, -1): 1})
+    coloured = 3 * 2 * 2
+    check(f'(5) the smallest colourless content containing the left doublet that P carries onto itself has '
+          f'{sum(closure.values())} states, so with the {coloured} coloured a generation has '
+          f'{coloured + sum(closure.values())}: the right-handed neutrino is required',
+          P_on(closure) == closure and sum(closure.values()) == 4 and coloured + sum(closure.values()) == 16)
+    check(f'CONTROL (5): the fifteen\'s colourless three {sorted(fifteen.elements())} is not P-closed',
+          P_on(fifteen) != fifteen)
+
     p = flat(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'))
     check('P14 carries the lift result: "the choice deciding which of the two values and nothing else"',
           'the choice deciding which of the two values and nothing else' in p)
     check('P14 carries the reading: "the substrate\'s parity is a symmetry of its law and the construction breaks it only through a member"',
           "the substrate's parity is a symmetry of its law and the construction breaks it only through a member" in p)
+    check('P14 carries the count result: "an exact parity requiring the sixteenth"',
+          'an exact parity requiring the sixteenth' in p)
     check('P14 carries the built-sector result: "The right-handed doublet that set this sector apart from the Standard Model is what an exact $P$ requires of it"',
           'The right-handed doublet that set this sector apart from the Standard Model is what an exact $P$ requires of it' in p)
     print()
