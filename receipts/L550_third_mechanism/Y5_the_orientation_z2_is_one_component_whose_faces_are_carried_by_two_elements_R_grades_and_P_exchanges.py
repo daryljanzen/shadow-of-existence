@@ -129,6 +129,9 @@ def main():
     p12 = flat(os.path.join(ROOT, 'corpus', 'algebroid_paper.tex'))
     check('P12 carries the reading: "one and the same $\\mathbb{Z}_2$ as a component of the isometry group"',
           'one and the same $\\mathbb{Z}_2$ as a component of the isometry group' in p12)
+    p17 = flat(os.path.join(ROOT, 'corpus', 'geometric_core_paper.tex'))
+    check('P17 carries the reading: "grades through $R$ and exchanges through $P$"',
+          'grades through $R$ and exchanges through $P$' in p17)
     p18 = flat(os.path.join(ROOT, 'corpus', 'CR_synthesis.tex'))
     check('P18 carries the reading: "is the spatial parity\'s face and not the cut-normal reflection\'s"',
           "is the spatial parity's face and not the cut-normal reflection's" in p18)

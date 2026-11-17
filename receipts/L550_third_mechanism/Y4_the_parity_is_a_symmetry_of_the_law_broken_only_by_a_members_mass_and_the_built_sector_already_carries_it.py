@@ -170,6 +170,8 @@ def main():
           'the choice deciding which of the two values and nothing else' in p)
     check('P14 carries the reading: "the substrate\'s parity is a symmetry of its law and the construction breaks it only through a member"',
           "the substrate's parity is a symmetry of its law and the construction breaks it only through a member" in p)
+    check('P14 carries the inflow-section result: "the preference between fifteen and sixteen is its parity\'s instead"',
+          "the preference between fifteen and sixteen is its parity's instead" in p)
     check('P14 carries the count result: "an exact parity requiring the sixteenth"',
           'an exact parity requiring the sixteenth' in p)
     check('P14 carries the built-sector result: "The right-handed doublet that set this sector apart from the Standard Model is what an exact $P$ requires of it"',
