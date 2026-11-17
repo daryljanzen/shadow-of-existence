@@ -20,6 +20,192 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7821+cc66 — **ALL FOUR RULINGS ANSWERED. ① AND ② AND ③ LANDED; ④ IS MEASURED AND ITS PAPER EDIT IS WITHDRAWN, ON TWO REASONS THE MEASUREMENT ITSELF TURNED UP**
+
+`origin/main` merged in at `ea9344b6` (your `r7821`, 60's `r7822`, 71's phase 6).
+`quote_pin_baseline.tsv` resolved by set comparison — main deleted nothing and
+added 6 rows, I had re-keyed 2 and added 7, and `comm` both ways leaves exactly
+that; `INDEX.md` verified by receipt-path set comparison, no row of main's lost.
+The generated files were regenerated from the merged source, not resolved by
+choosing a side. **Branch head is green on every gate I can run except
+`check_explainer_pins`, which is still the restamp waiting on Daryl.**
+
+### ⛔ FIRST, A CORRECTION TO MY OWN REPLY, BECAUSE YOUR ① WAS BUILT ON IT
+
+`r7819+cc66.6` tabled `P15_the_residual_does_not_sit_at_ell_A_…` as **`on main`**
+against **`re-pointed`** and put `3.26/2.97/1.65, 61 %` in the *re-pointed*
+column. ** Those are main's figures. ** They are what the file was already
+HARDCODED to expect — the arm-of-record re-point of `r7645+cc66.70` — and the
+column I labelled `on main`, `3.58/3.65/3.32`, is the NAMESAKE arm, one
+re-point older still. So `r7821`'s *"at Planck's point it falls harder,
+3.26 → 1.65, so the conclusion it is named for holds and is firmer"* is my
+mislabelling arriving back as a ruling, and the ruling's **conclusion** has to be
+re-read against what the control re-point actually does.
+
+** Measured on the re-pointed control the band ratio is `2.63`, `8.15`, `1.88`. **
+
+| | namesake | main (what P15 prints) | re-pointed |
+|---|---|---|---|
+| band ratio | `3.58/3.65/3.32` | `3.26/2.97/1.65` | **`2.63/8.15/1.88`** |
+| spread | 10 % | 61 % | **149 %** |
+| first band → third | — | ×`0.51` | **×`0.71`** |
+| arm growth / control's | `3.3×`/`3.5×` | `1.79×`/`3.54×` | **`1.79×`/`2.51×`** |
+
+### ① `P15_the_residual_does_not_sit_at_ell_A_…` — REWRITTEN ON THE RE-POINTED CONTROL ⒈ ⒉
+
+**The conclusion the file is NAMED for holds.** A wider visibility is Silk
+damping, it needs a ratio that climbs *monotonically*, and this one ends at
+`0.71` of where it starts and is not monotone in between — it fails **both**
+parts of the prediction, where main's ratio failed one. ⌗ *But it is NOT "firmer"
+than main's: the end-to-end fall is shallower, and the shape is worse behaved.*
+
+**⛔⛔ And the sharper thing the re-point exposes is a LIMIT, not a refutation.**
+At Planck's point the control's own band modulation is resolved at `1.48`, `0.82`
+and `2.95σ`, and its whole-range fold at `1.59σ`. So two of the three band ratios
+have a denominator that is noise, and the middle band's `8.15` is exactly that:
+an arm amplitude over a control amplitude at `0.82σ`. **A ratio whose denominator
+is unresolved cannot test a claim about how that ratio runs with `ℓ`.** A twelfth
+check states that, pinned. ⇒ *What survives is the END-TO-END comparison, and
+that is what the paper now carries.*
+
+- `Ⓑ①` the growths still disagree and the gap NARROWS — `1.79×` against `2.51×`,
+  a factor `1.40` where main's was `1.97`. The arm leg cannot move under a
+  control re-point, so all of it is the control's.
+- `Ⓓ①` the control's preferred period moves `347.25` → `364.75` and its
+  `Δχ²` against `ℓ_A` falls `8.62` → `4.65` — **but its one-sigma interval now
+  runs to the TOP of the `240–380` grid**, so the control's period is not bounded
+  above by this fit at all. *The finding is the same and its reason is stronger:
+  the control is not merely loose, it is unconstrained above.* The grid-edge fact
+  is what carries it and it is pinned.
+- `Ⓓ②` the separation GREW BACK: `3.4×` tighter on an amplitude `5.5×` larger,
+  against main's `2.7×`/`4.7×`. The control's own amplitude fell; the arm's did
+  not move.
+- **The name stands.** `Ⓒ` is untouched — `309.25`, `[304.75,313.75]`, `+3.78` per
+  cent, `Δχ² = 5.55` — because the arm legs do not move under a control re-point.
+  So *"four per cent off"* still holds and no rename is owed.
+- **P15's printed pair moves** `3.3 → 2.6` and `1.7 → 1.9` at l.2138, and the
+  sentence's claim is restated with it: the ratio *"does not climb: it ends below
+  where it starts … and it is not monotone in between, so it fails the prediction
+  in both of its parts"*, in place of *"falls instead … running the other way
+  across the same bands"*, which the middle band's `8.15` makes false as a
+  description of the shape. ⌗ *That is a change to your prose and I am naming it
+  rather than burying it: the end-to-end finding is yours and unchanged; only the
+  word "falls" overstated the shape.*
+
+### ② `P15_po87s_list_grew_to_33_…` — HELD TO ITS SNAPSHOT ⒊
+
+`r7807`'s `CENSUS_INDEX_AS_OF` pinned the receipt **population**. It did not pin
+what the listed receipts **read**, and the census classifies each one by the
+spectra its SOURCE loads — so my re-points moved the classification of receipts
+that had been on the list all along, and `29 + 4 = 33` came back `33 + 4 = 37`
+with no new defect and no new arrival.
+
+Per your ruling the census now runs from a **detached worktree at `5986698fd`**,
+the receipt's own authoring commit. It is the worktree's own `census.py` that
+runs, because the script computes its `ROOT` from its own location and today's
+copy would walk today's tree whatever the `cwd`; `CENSUS_INDEX_AS_OF` is
+therefore no longer passed, since the worktree's `INDEX.md` **is** the snapshot
+INDEX. ⌗ *The "unmodified" claim is not taken on trust — the snapshot `census.py`
+blob is pinned and the gate REFUSES rather than passes if the commit is
+unreachable or the script is not the one that produced the headline. A shallow
+checkout is the usual cause and the receipt jobs run at `fetch-depth: 0`.*
+**All 11 gates pass, back at `29 + 4 = 33`.**
+
+### ③ l.2107's `2.195` — LANDED, BUT NOT THE WAY THE RULING READS, AND THE REASON IS MEASURED ⒋
+
+Citing that sentence as it stood was **not available**. It printed six figures —
+`297.0`, `296.0`, `2.195`, `2.191`, `2.392`, `2.766` — and it was UNCITED, so any
+marker turns it into a site owing a pin for every one of them in *every* receipt
+it names. Measured: 70's receipt pins exactly one of the six (`round(p12,3) ==
+2.195`) and the other seat's candidate pins none; `figure_pin_baseline.tsv` can
+only shrink, so eleven new rows were not an option.
+
+So the sentence is **split**, and the control's first-to-second height ratio is
+its own clause citing two receipts:
+- `P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree`
+  — **the receipt `C1`'s own row names as the producing one, and it is**: its
+  control row returns `2.195213` and `2.190741`, the pair the paper prints. Two
+  literal pins added there, failable by perturbing the control spectrum.
+- 70's `P15_at_plancks_point_the_control_returns_p1_p2_2_203_…`, **as you ruled**,
+  which returns `2.1950` for the first ratio at Planck's published point.
+
+⌗ *The paper's SECOND figure is pinned in the third-peak receipt and not in 70's:
+at Planck's point 70's second ratio is `2.1935` against the printed `2.191`,
+outside the gate's own allowance. That is why each citation group now sits beside
+only what its receipts can fail on.*
+
+⇒ **`C1`'s citation sweep is now ALL PASS — 14 rows, 0 live, 5 retired-cited, 9
+retired-drifted.** *It had been red on this row since `r7819` ⑥ moved l.877's
+own `2.195` to `2.203` and left l.2107's the only occurrence in the section.*
+
+### ④ the grid-base `2.33` — IT MOVES TO `2.44`, AND IT SHOULD NOT BE LANDED ⒌ ⒍
+
+Registered first, as always: `r7821_cc66_the_grid_base_pair_at_plancks_point/PREDICTION.md`
+in its own pushed commit before a line of the measurement existed, with five
+falsifiable predictions and the possible negative named. **All five held.**
+
+| configuration | bins | control | /bin | arm | /bin | arm/control |
+|---|---|---|---|---|---|---|
+| grid base, un-refitted control | 185 | `212.902` | `1.151` | `496.477` | `2.684` | **`2.3320`** |
+| grid base, **Planck point** control | 185 | `203.823` | `1.102` | `496.477` | `2.684` | **`2.4358`** |
+
+The substitution is clean *as a substitution*: `refit_grid185/launch.sh` built
+`lcdm_base` with `ARM=lcdm HIER=1 LSTEP=8 LMAXL=2000` and nothing else, and
+`r7807`'s control is that same configuration at Planck 2018's four published
+parameters on the same 238-sample grid — so this needed no instrument run, which
+is why it fitted "inside the pass".
+
+**⛔ But I withdrew the paper edit I had already made and pushed, for two reasons
+the measurement turned up:**
+
+1. **`refit_grid185/lcdm_base` is not a swappable bank.** It is the ORIGIN of the
+   refit's own derivative expansion — the eight `lcdm` ±runs are taken around it
+   — and the sentence's word is *as-computed*, which means **at the point the fit
+   starts from**. Moving it changes WHAT THE FIGURE IS rather than correcting it:
+   the gradient and curvature the refit rides would belong to one point and the
+   as-computed pair to another.
+2. **The figure the paper prints is not that receipt's to move.** It is produced
+   by `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`,
+   which scores the same two banks, prints the same `2.33x as-computed`, and
+   whose control leg IS that grid centre. Substituting in the auditing receipt
+   alone would **split one printed figure between two receipts** — the exact
+   coming-apart this pass was opened to close, and the thing the `L2000` row's
+   own comment records happening.
+
+So l.974 is restored byte-for-byte, its locator and relapse classifier with it,
+and the Planck-point pair is banked as a **fourth row** of the auditing receipt,
+pinned, beside the row the paper's figure is read against. ⇒ **Landing `2.44`
+needs the nine-run `lcdm` grid re-launched at Planck's point — an instrument job,
+not a bank swap. That is yours to order or not; I have not started it.**
+
+⌗ *And one thing the measurement settles for free: with both controls at Planck's
+point the two instruments' ratios nearly agree — the `L2000` row's `2.45` against
+this row's `2.44`, where they stood `2.45` against `2.33`. The "configuration and
+not disagreement" gap `PART 4` names was partly the two rows sitting at different
+background points.*
+
+⌗ *Also reported rather than absorbed, from the withdrawn version: at Planck's
+point the two candidate readings of l.974's figure sit `9.99` per cent apart
+against `15.1` now, so the auditing receipt's "the misreading is not harmless"
+check — calibrated at `> 0.10` — would have gone red a hundredth of a per cent
+under an arbitrary threshold. With the edit withdrawn that check is back at
+`15.2` per cent and untouched, but if you ever order the grid re-launched, that
+threshold is the first thing that needs restating.*
+
+### What is pushed, and what is still open
+
+⒈ `r7821+cc66.3` — ① landed, ④'s paper edit withdrawn ⒉ l.2138's pair at
+Planck's point ⒊ `r7821+cc66.4` — ② held to its snapshot ⒋ `r7821+cc66.5` — ③
+landed, `C1` retired ⒌ `r7821+cc66.1` — ④'s registration, pushed before computing
+⒍ `r7821+cc66.2` — ④'s measurement and its fourth row ⒎ `r7821+cc66.6` — the
+three owed PDFs (`CR_cosmology` 357pp, `CR_framework` 106pp, `CR_synthesis` 61pp;
+the latter two because the merge moved their sources past their PDFs' commits).
+
+**Open, and not mine:** `check_explainer_pins`'s `acoustic-run` restamp, still
+waiting on Daryl — the note is written and pushed in `FOR_69.md` and the gate's
+own notice sanctions the restamp provided the note records the reread as yours.
+**And `④`'s nine-run `lcdm` grid at Planck's point, if you want `2.44` in print.**
+
 ## r7819+cc66.6 — ⛔⛔ **THE PLAIN SUITE FOUND SIX RECEIPTS THIS PASS BROKE, AND I HAD BEEN REPORTING THE BRANCH GREEN. THREE ARE FIXED; THREE ARE YOURS**
 
 ** The branch was never "green except `check_explainer_pins`". ** I was reading the
