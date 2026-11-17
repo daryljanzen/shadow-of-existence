@@ -3583,6 +3583,11 @@
     "since": "978da1669ca3f02df5c6b1033a58e00c3fd6b722",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44096692432",
+    "since": "a786b396ad67f4902121482b55ea25b02356b661",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44092966912",
     "since": "978da1669ca3f02df5c6b1033a58e00c3fd6b722",
@@ -3621,6 +3626,16 @@
    "receipts/P15_CR_cosmology/P15_the_seam_sec_envelope_means_is_the_front_chart_value_and_the_collapse_leg_ends_at_the_turnaround_instead_where_the_speed_is_zero_while_every_seam_carries_it_exactly_one.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44092966912",
     "since": "978da1669ca3f02df5c6b1033a58e00c3fd6b722",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44096692432",
+    "since": "a786b396ad67f4902121482b55ea25b02356b661",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44096692432",
+    "since": "a786b396ad67f4902121482b55ea25b02356b661",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_signatures_tail_tilt_is_far_outside_the_skys_on_the_joint_planck_act_arm_and_an_effective_multipole_is_not_a_support.py": {
