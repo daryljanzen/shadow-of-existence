@@ -49,22 +49,31 @@ INSTR = os.path.join(BW, 'ACOUSTIC_two_arm.py')
 #: rather than a third hardcoded branch beside `--short`: a boolean that has to grow a third value
 #: is the shape of a tool that stops being readable, and nothing else here depends on LMAXL --
 #: `modes_of()` already asks the instrument for the mode count at whatever LMAXL is set.
+#: r7817: the driving subtraction needs the UNDRIVEN control at Planck's point too.  The swap could
+#: only re-point the DRIVEN leg -- `cc66_lcdm_nodrive_pol.npz` sits at (144.528076, 13864.662715),
+#: the un-refitted point, so the `0.1792 -> 0.1790` it measured is a difference of one spectrum at
+#: Planck's point and another at the corpus's old one.  A mixed-point difference is not a re-pointed
+#: figure.  `--nodrive` runs the undriven leg at the same point so the subtraction is one point's.
+NODRIVE = '--nodrive' in sys.argv
 SHORT = '--short' in sys.argv
 if '--lmaxl' in sys.argv:
     LMAXL = str(int(sys.argv[sys.argv.index('--lmaxl') + 1]))
 else:
     LMAXL = '400' if SHORT else '2000'
 OUT = os.path.join(HERE, 'out_short' if SHORT else
-                   'out' if LMAXL == '2000' else f'out_L{LMAXL}')
+                   'out' if (LMAXL == '2000' and not NODRIVE) else
+                   f'out_L{LMAXL}' + ('_nodrive' if NODRIVE else ''))
 os.makedirs(OUT, exist_ok=True)
 
 #: r7807's point verbatim.  KFAC is NOT set, so the corpus default 2.0 applies exactly as it did
 #: there -- naming it here would be a second copy of a number the instrument already owns.
 PLANCK = dict(ARM='lcdm', LH0='67.36', LOM='0.313773', WBH2='0.02237', NS='0.9649',
               HIER='1', LSTEP='2', LMAXL=LMAXL)
+if NODRIVE:
+    PLANCK['NODRIVE'] = '1'
 KBATCH = 250
 STEM = ('r7812_control_step2_short' if SHORT
-        else f'r7812_control_step2_L{LMAXL}')
+        else f'r7812_control_step2_L{LMAXL}' + ('_nodrive' if NODRIVE else ''))
 PIECE = 250 if SHORT else 750          # a multiple of KBATCH -- see ⑵ in the docstring
 
 

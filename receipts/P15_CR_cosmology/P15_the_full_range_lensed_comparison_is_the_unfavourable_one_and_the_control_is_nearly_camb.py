@@ -79,8 +79,24 @@ import chi2_of_spectrum as CS                                              # noq
 import camb                                                                # noqa: E402
 
 
+# ⛭⛭ r7817 (69), THE ONE PASS: ** THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST FIT. **
+#   `r7807` ruled the control is the standard model's spectrum by the identical procedure, and that
+#   is Planck 2018's published point.  `(a1)` (`r7813`) ordered the `LSTEP=2` run at that point in
+#   resumable pieces; `r7815` assembled it from four banked slices, and it shares
+#   `cc66_lcdm_L2000.npz`'s 950-sample grid EXACTLY (asserted in `repoint.py`), so this moves the
+#   POINT and nothing else.
+#   ⛔ *It must be the STEP-2 bank and not `r7807`'s step-8 one: `chi2_of_spectrum` bins whatever
+#   grid it is handed into 185 bins, so scoring a 238-sample spectrum against a 950-sample one bins
+#   the two sides of the ratio from different samplings.  `r7815+cc66.4` measured what that costs --
+#   0.004 on the printed no-fit ratio -- which is why `(a1)` was ordered.*
+CTL_REPOINTED = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                             'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                             'r7812_control_step2_L2000_assembled.npz')
+
+
 def load(tag):
-    z = np.load(os.path.join(SPEC, f'cc66_{tag}.npz'))
+    p = CTL_REPOINTED if tag == 'lcdm_L2000' else os.path.join(SPEC, f'cc66_{tag}.npz')
+    z = np.load(p, allow_pickle=True)
     return np.asarray(z['ls'], float), np.asarray(z['Dl'], float), float(z['l_A'])
 
 

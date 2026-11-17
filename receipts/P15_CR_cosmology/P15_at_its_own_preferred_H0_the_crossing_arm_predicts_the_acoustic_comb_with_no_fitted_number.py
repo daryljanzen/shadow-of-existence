@@ -95,8 +95,28 @@ def _F(keep):
     return 0.5 * (M + M.T)
 
 
+# ⛭⛭ r7817 (69), THE ONE PASS: ** THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST FIT. **
+#   `r7807`'s ruling, `(a1)`'s banks, `r7815`'s assembly.  Each re-pointed bank shares its
+#   namesake's l grid EXACTLY (asserted in `r7809`'s `repoint.py`), so the POINT moves and nothing
+#   else; and they are the STEP-2 banks, because every procedure that samples the grid -- this
+#   receipt's `argrelextrema` peak locator among them -- reads 238 samples differently from 950.
+_R7812 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7812_cc66_the_resumable_mode_loop_and_the_one_pass')
+REPOINTED = {
+    'cc66_lcdm.npz': os.path.join(_R7812, 'out_L1300',
+                                  'r7812_control_step2_L1300_assembled.npz'),
+    'cc66_lcdm_L2000.npz': os.path.join(_R7812, 'out',
+                                        'r7812_control_step2_L2000_assembled.npz'),
+    'refit_grid185/lcdm_base.npz': os.path.join(
+        ROOT, 'computations', 'beyond_the_wall',
+        'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
+        'r7807_control_planck2018_L2000.npz'),
+}
+
+
 def score(tag):
-    z = np.load(os.path.join(SPEC, f'cc66_{tag}.npz'))
+    _f = f'cc66_{tag}.npz'
+    z = np.load(REPOINTED.get(_f, os.path.join(SPEC, _f)), allow_pickle=True)
     ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
     q = argrelextrema(Dl, np.greater, order=3)[0][:4]
     P = [float(ls[i]) for i in q]
@@ -404,6 +424,8 @@ def _sweep(Db):
 
 def _matched(fn, lensed=True):
     """`fn` is a `spectra/` basename or, for the hierarchy path, a path under `beyond_the_wall/`."""
+    if fn in REPOINTED:                       # r7817: the re-pointed control, same grid
+        fn = REPOINTED[fn]
     _p = fn if os.path.isabs(fn) else os.path.join(SPEC, fn)
     if not os.path.exists(_p):
         _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', fn)

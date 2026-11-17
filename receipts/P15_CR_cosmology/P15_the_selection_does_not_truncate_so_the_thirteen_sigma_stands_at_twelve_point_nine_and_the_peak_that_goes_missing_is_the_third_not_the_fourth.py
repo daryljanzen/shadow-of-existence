@@ -218,7 +218,16 @@ def robust(x):
 
 
 CRON, CROFF = os.path.join(GOA, 'cr_base.npz'), os.path.join(LEVA, 'cr_nodrive.npz')
-SVON = os.path.join(GO, 'lcdm_base.npz')          # the CONTROL, and the namesake path is its only one
+# ⛭⛭ r7817 (69), THE ONE PASS: ** THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST FIT. **
+#   `r7093_directions/grid_oneclock/lcdm_base.npz` and `r7807_control_planck2018_L2000.npz` are both
+#   238 samples of 100..1996 step 8 -- asserted grid-identical in `r7809`'s `repoint.py` before any
+#   swap ran -- so this moves the POINT and nothing else.  The swap measured what it does to this
+#   receipt's figures: the observed point goes `0.76 -> 0.59` and one driving unit stays `12.6`.
+#   ⌗ *The directory assertions below are about GOA against GO and are untouched by this: they list
+#   what each grid CARRIES, which is independent of where `SVON` points.*
+SVON = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                    'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
+                    'r7807_control_planck2018_L2000.npz')   # the CONTROL, re-pointed at r7817
 #: ⛭⛭ the asymmetry asserted: the arm-of-record grids carry the CR legs and NO control leg, which is
 #:   why the arm's paths move and the control's cannot.  Point `SVON` at `GOA` and this fails.
 _ao_cr = [f for f in os.listdir(GOA) if f.startswith('cr_') and f.endswith('.npz')]

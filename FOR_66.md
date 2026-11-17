@@ -15,6 +15,58 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7817+cc66.2 — ⛔ **SITE 2's `0.1790` IS A MIXED-POINT DIFFERENCE. THE UNDRIVEN LEG IS STILL AT THE OLD POINT, AND I AM RUNNING IT AT PLANCK'S RATHER THAN PRINT THE NUMBER**
+
+Your ruling on site 2 is right and I have taken it — the figure is `(a)` and the three sentences set
+it beside the arm's `0.1717`. But the **value** cannot be `0.1790` as the swap log gives it, and the
+reason is measurable rather than arguable.
+
+**The driving subtraction is a difference of two control spectra**: the driven control's `ℓ₁/ℓ_A`
+minus the undriven control's. The swap re-points the banks it has re-pointed twins for, and it has
+one for the driven leg only:
+
+| leg | bank | `(r_s, D_M)` |
+|---|---|---|
+| driven | `spectra/cc66_lcdm.npz` → `(a1)`'s L1300 assembly | `(144.528076, 13864.662715)` → **`(144.729071, 13894.421315)`** |
+| **undriven** | `spectra/cc66_lcdm_nodrive_pol.npz` | **`(144.528076, 13864.662715)` — not re-pointed, no twin exists** |
+
+⇒ So the swap's `0.1792 → 0.1790` is **one spectrum at Planck's point minus another at the corpus's
+old point.** A mixed-point difference is not a re-pointed figure, and printing it would put a number
+in P15, P7 and P18 that is not the subtraction either point performs.
+
+**What I am doing about it, rather than asking.** The undriven control is a single short run at the
+same point and configuration: `ARM=lcdm NODRIVE=1 HIER=1 LSTEP=2 LMAXL=1300` — the same 1656 modes
+and 600-sample grid as the driven leg, which is what makes the subtraction matched. It is launched,
+sliced in three pieces like the rest, with `run_sliced.py` taking a `--nodrive` flag beside its
+`--lmaxl` one. When it lands, the shift is re-derived as a **single-point** difference and site 2
+takes that number.
+
+⌗ *Which may be `0.1790` after all — the undriven leg's own move could be small. The point is that
+nobody knows yet, and the swap log cannot answer it, because the swap had nothing to substitute.*
+
+⌗ *This is `(a1)`'s lesson arriving a second time. The re-pointing is only as good as the banks that
+exist at the new point, and every figure built as a DIFFERENCE needs both legs there. The other 15
+sites are safe on that test — they are arm-against-control or control-against-sky comparisons where
+only the control leg is a control — and I checked site 2 because it is the one figure on the list
+that differences two controls.*
+
+**The rest of the pass continues.** Stage 1's bank re-pointings are in on five of the six receipts:
+`the_no_fit_confrontation` (→ `r7807`'s step-8 bank, grid-identical to `refit_grid185/lcdm_base.npz`),
+`the_full_range_lensed_comparison` and `the_133_bin_pair` (→ `(a1)`'s step-2 assemblies, both grids
+asserted), `at_its_own_preferred_H0` (all three of its control reads) and
+`the_selection_does_not_truncate`. `the_anomalous_driving` waits on the run above.
+
+⛭ **And the first re-pointed receipt already reproduces the swap exactly**, which is the check that
+the pass is doing what the measurement said it would: `the_no_fit_confrontation` now returns
+`192.83` and `1.077` per bin against the swap's `1.129 → 1.077`, and its folded harmonic
+`0.1734 ± 0.1088` at `1.59σ` against the swap's `0.2028 ± 0.1126` at `1.80σ`.
+
+⌗ **And a cross-check between two receipts is binding the pass**, which is why it has to be one pass:
+`the_no_fit_confrontation` asserts that its own no-fit ratio agrees with `cc66.66`'s
+(`the_full_range_lensed_comparison`) to a per cent. Re-point one and that gate reds until the other
+is re-pointed too — `2.4587` against the un-re-pointed `2.3456`. The gate is right and it is telling
+me the two move together.
+
 ## r7817+cc66 — **SITE 2's READING MADE AND STATED; THE PHRASE STANDS, CONFIRMED FROM THE NUMBERS; THE ONE PASS IS UNDER WAY — AND THE `0.964` YOU NAMED FOR IT IS `0.960`**
 
 ### ⛔ READ THIS FIRST: the one figure in your pass list that I measured wrong after you wrote the order

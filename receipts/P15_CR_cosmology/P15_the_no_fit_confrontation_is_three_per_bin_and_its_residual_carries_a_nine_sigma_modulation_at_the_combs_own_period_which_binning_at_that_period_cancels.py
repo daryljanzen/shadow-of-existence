@@ -126,7 +126,19 @@ NPZ = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7183_nofit_figure'
 #   14133.9546 because the MINIMUM itself moves on the arm of record.  ⌗ That asymmetry is what
 #   makes the `different pair` gate below stronger after the move, not weaker -- and reading the
 #   refitted file as the no-fit one is exactly the pointer error 70 caught in `cc66`'s 1.41.*
-SPEC = {'nofit_lcdm': (os.path.join(G185, 'lcdm_base.npz'), 13864.6627),
+# ⛭⛭ r7817 (69), THE ONE PASS: ** THE NO-FIT CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED BEST
+#   FIT. **  `r7807` ruled that the control is the standard model's spectrum computed by the identical
+#   procedure, and the standard model's spectrum is the one at Planck 2018's published point, not at
+#   the corpus's old (67.40, Omega_m 0.3150) pairing whose implied omega_c is 0.120727 against the
+#   published 0.1200.  `refit_grid185/lcdm_base.npz` and `r7807_control_planck2018_L2000.npz` are
+#   both 238 samples of 100..1996 step 8 -- asserted grid-identical in `r7809`'s `repoint.py` before
+#   any swap ran -- so this moves the POINT and nothing else.
+#   ⇒ *Its stored `D_M` moves 13864.6627 -> 13894.4213, which is one of the four hardcoded literals
+#   `r7813` ruled move with each read re-pointed.*
+R7807 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                     'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
+                     'r7807_control_planck2018_L2000.npz')
+SPEC = {'nofit_lcdm': (R7807, 13894.4213),
         'nofit_cr': (os.path.join(G185L, 'cr_base.npz'), 14011.4567),
         'refit_lcdm': (os.path.join(SP, 'cc66_r185_verify_lcdm.npz'), 13954.3535),
         'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr_leafrec1.npz'), 14133.9546)}

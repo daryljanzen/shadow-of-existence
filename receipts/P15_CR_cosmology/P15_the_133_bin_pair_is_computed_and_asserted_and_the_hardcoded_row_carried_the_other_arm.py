@@ -166,8 +166,29 @@ LENSED_RECEIPT = os.path.join(
 HANDOVER = os.path.join(HERE, 'P15_the_handover_at_the_crossing_and_what_it_costs.py')
 
 
+# ⛭⛭ r7817 (69), THE ONE PASS: ** BOTH CONTROLS ARE RE-POINTED TO PLANCK 2018's PUBLISHED BEST
+#   FIT. **  `(a1)` (`r7813`) named BOTH `cc66_lcdm` and `cc66_lcdm_L2000`, and this receipt reads
+#   both -- `cc66_lcdm` is the 133-bin unlensed control the `2.10` per bin comes from (`LMAXL=1300`,
+#   600 samples on 100..1298 step 2) and `cc66_lcdm_L2000` is the 185-bin one.  `r7815` assembled a
+#   re-pointed twin of each from banked slices, and each shares its namesake's grid EXACTLY
+#   (asserted in `repoint.py`: 600 and 950 samples), so this moves the POINT and nothing else.
+#   ⛔ *The step-2 banks and not `r7807`'s step-8 one, because `chi2_of_spectrum` bins whatever grid
+#   it is handed: a 238-sample spectrum scored against a 600- or 950-sample one bins the two sides
+#   from different samplings.  `r7815+cc66.4` measured that at 0.004 on a printed figure.*
+_R7812 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7812_cc66_the_resumable_mode_loop_and_the_one_pass')
+REPOINTED = {
+    'cc66_lcdm': os.path.join(_R7812, 'out_L1300', 'r7812_control_step2_L1300_assembled.npz'),
+    'cc66_lcdm_L2000': os.path.join(_R7812, 'out', 'r7812_control_step2_L2000_assembled.npz'),
+}
+
+
+def path_of(tag):
+    return REPOINTED.get(tag, os.path.join(SP, tag + '.npz'))
+
+
 def score(tag):
-    z = np.load(os.path.join(SP, tag + '.npz'))
+    z = np.load(path_of(tag), allow_pickle=True)
     ls = np.asarray(z['ls'], float)
     Dl = np.asarray(z['Dl'], float)
     chi2, n = CS.chi2_of(ls, Dl)[:2]
@@ -179,7 +200,7 @@ print("=" * 100)
 print("  PART 1 -- ** THE CONFIGURATION AND THE BIN COUNT, OFF THE SPECTRA **")
 print("=" * 100)
 
-INPUTS = [os.path.join(SP, t + '.npz')
+INPUTS = [path_of(t)
           for t in (CONTROL, ARM_8660, ARM_8662, AOR_8660, AOR_8662, AORD_8660, AORD_8662,
                     L2000_AOR, L2000_AORD) + L2000] \
     + [LENSED_RECEIPT, HANDOVER]
