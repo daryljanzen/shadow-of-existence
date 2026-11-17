@@ -49,6 +49,13 @@ SWAP = {
     os.path.join(BW, 'spectra', 'cc66_lcdm_L2000.npz'):
         os.path.join(BW, 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
                      'r7812_control_step2_L2000_assembled.npz'),
+    # r7815: (a1) named TWO banks and `cc66_lcdm.npz` is the other one -- LMAXL=1300, 600 samples
+    # on 100..1298 step 2, the control P15's `2.10` per bin on the 133-bin unlensed configuration
+    # reads (`CONTROL = 'cc66_lcdm'` in that receipt's own source).  Its re-pointed twin is
+    # assembled from three slices the same way, and shares its grid exactly.
+    os.path.join(BW, 'spectra', 'cc66_lcdm.npz'):
+        os.path.join(BW, 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out_L1300',
+                     'r7812_control_step2_L1300_assembled.npz'),
 }
 #: refused on purpose, with the reason, so the gap is visible rather than silently absent.
 #: EMPTY at r7815: the one entry was `spectra/cc66_lcdm_L2000.npz`, refused for want of a step-2

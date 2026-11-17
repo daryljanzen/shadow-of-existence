@@ -1,0 +1,93 @@
+====================================================================================================
+  r7809/r7811 ② -- WHAT MOVES WHEN THE CONTROL IS RE-POINTED (measured by swap)
+====================================================================================================
+  5 swap pair(s), every one grid-identical (asserted, not assumed)
+
+====================================================================================================
+  P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number
+====================================================================================================
+  as the tree stands: rc=0, 505 number(s) on 104 distinct line shape(s)
+  control re-pointed: rc=1, 515 number(s) on 108 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 95;  numbers on them: 457 (419 unchanged, 38 MOVED)
+  line shapes only in the un-swapped run: 9;  only in the swapped run: 13  (these are the red run's own diagnostics, not figures that moved)
+               279.4 -> 269.9           delta -9.5   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+                2.10 -> 2.03            delta -0.07   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+                0.77 -> 0.72            delta -0.05   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+                1.44 -> 1.45            delta +0.01   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+                2.62 -> 2.27            delta -0.35   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+                3.73 -> 3.79            delta +0.06   control (LCDM)     <#>    <#>       <#>       <#>       <#>       <#>
+            0.765826 -> 0.722766        delta -0.04306   100-400   <#>   <#>       <#>   +<#>%
+            1.436731 -> 1.446814        delta +0.010083   400-700   <#>   <#>       <#>   <#>%
+            2.620049 -> 2.271533        delta -0.348516   700-1000   <#>   <#>       <#>   +<#>%
+            3.725004 -> 3.791399        delta +0.066395   1000-1300   <#>   <#>       <#>    <#>%
+            2.100902 -> 2.029426        delta -0.071476   TOTAL/bin   <#>   <#>       <#>    +<#>%
+              220.44 -> 220.60          delta +0.16   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+              537.29 -> 537.65          delta +0.36   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+              811.06 -> 811.77          delta +0.71   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             1123.99 -> 1124.95         delta +0.96   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             298.441 -> 298.718         delta +0.277   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             295.308 -> 295.586         delta +0.278   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             -0.2443 -> -0.2445         delta -0.0002   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             -0.2292 -> -0.2295         delta -0.0003   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+               2.204 -> 2.203           delta -0.001   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+               2.225 -> 2.230           delta +0.005   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+             301.375 -> 301.602         delta +0.227   the CONTROL, L2000  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>   
+              220.45 -> 220.60          delta +0.15   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+              537.31 -> 537.67          delta +0.36   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+              811.04 -> 811.75          delta +0.71   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             1123.96 -> 1124.92         delta +0.96   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             298.429 -> 298.705         delta +0.276   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             295.299 -> 295.577         delta +0.278   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             -0.2442 -> -0.2445         delta -0.0003   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             -0.2291 -> -0.2294         delta -0.0003   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+               2.204 -> 2.203           delta -0.001   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+               2.225 -> 2.229           delta +0.004   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+             301.375 -> 301.602         delta +0.227   --- hier: the CONTROL  <#>  <#>  <#> <#>    <#>  <#>     <#>   <#>   <#>   <#>
+               -0.75 -> -0.80           delta -0.05   against the sky's own locator values,       control: P1/P2  <#>%   P1/P3  <#>%
+               -1.65 -> -1.45           delta +0.2   against the sky's own locator values,       control: P1/P2  <#>%   P1/P3  <#>%
+                2.14 -> 3.10            delta +0.96   l.2790: the arm's fourth peak sits +<#> multipoles above the sky and the contr
+                0.66 -> 0.95            delta +0.29   l.2790: the arm's fourth peak sits +<#> multipoles above the sky and the contr
+               -0.75 -> -0.80           delta -0.05   OK    ⛭⛭⛭ ** THE RE-POINT MOVES THE POSITIONS TOWARD THE SKY AND THE HEIGHTS A
+
+====================================================================================================
+  P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm
+====================================================================================================
+  as the tree stands: rc=0, 175 number(s) on 80 distinct line shape(s)
+  control re-pointed: rc=1, 164 number(s) on 74 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 68;  numbers on them: 152 (136 unchanged, 16 MOVED)
+  line shapes only in the un-swapped run: 12;  only in the swapped run: 6  (these are the red run's own diagnostics, not figures that moved)
+            279.4200 -> 269.9136        delta -9.5064   cc66_lcdm        100..1298    133    <#>   <#>
+            2.100902 -> 2.029426        delta -0.071476   cc66_lcdm        100..1298    133    <#>   <#>
+            279.4200 -> 269.9136        delta -9.5064   ** the control: chi^2 = <#> over 133 bins = <#> per bin **   (the corpus's <#>
+            2.100902 -> 2.029426        delta -0.071476   ** the control: chi^2 = <#> over 133 bins = <#> per bin **   (the corpus's <#>
+            1.992290 -> 2.062459        delta +0.070169   ratio, <#> against the control: ** <#> ** -- the 'factor 2.0'
+              1.9791 -> 2.0488          delta +0.0697   the ratio the conclusion rests on, both ways: <#> (<#>) and <#> (<#>)
+              1.9923 -> 2.0625          delta +0.0702   the ratio the conclusion rests on, both ways: <#> (<#>) and <#> (<#>)
+            695.9666 -> 680.1530        delta -15.8136   cc66_lcdm_L2000    185    <#>    <#>
+              3.7620 -> 3.6765          delta -0.0855   cc66_lcdm_L2000    185    <#>    <#>
+              1.6809 -> 1.7199          delta +0.039   185-bin unlensed ratio                       <#>
+            1.992290 -> 2.062459        delta +0.070169   namesake   133     <#>   <#>           <#>
+            2.090004 -> 2.163614        delta +0.07361   arm of record, distances   133     <#>   <#>           <#>
+            1.601078 -> 1.657468        delta +0.05639   arm of record, refit   133     <#>   <#>           <#>
+            1.680854 -> 1.719934        delta +0.03908   namesake   185    <#>   <#>           <#>
+            1.623301 -> 1.661043        delta +0.037742   arm of record, distances   185    <#>   <#>           <#>
+            1.348222 -> 1.379568        delta +0.031346   arm of record, refit   185     <#>   <#>           <#>
+
+====================================================================================================
+  P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction
+====================================================================================================
+  as the tree stands: rc=0, 40 number(s) on 18 distinct line shape(s)
+  control re-pointed: rc=1, 42 number(s) on 19 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 18;  numbers on them: 40 (33 unchanged, 7 MOVED)
+  line shapes only in the un-swapped run: 0;  only in the swapped run: 1  (these are the red run's own diagnostics, not figures that moved)
+               301.4 -> 301.6           delta +0.2   control (LCDM), POLARISATION    <#>         220       274     54        <#>   
+              0.7300 -> 0.7294          delta -0.0006   control (LCDM), POLARISATION    <#>         220       274     54        <#>   
+              0.9092 -> 0.9085          delta -0.0007   control (LCDM), POLARISATION    <#>         220       274     54        <#>   
+              0.1792 -> 0.1790          delta -0.0002   control (LCDM), POLARISATION    <#>         220       274     54        <#>   
+              0.1792 -> 0.1790          delta -0.0002   the control itself    <#>            1.00x
+              0.1792 -> 0.1790          delta -0.0002   this tree's control:      l_1 undriven 274, shift <#>
+              0.1792 -> 0.1790          delta -0.0002   not substance. **  *But it moves the quoted shift <#> -> <#>, and with it the
+
+====================================================================================================
+  P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
+====================================================================================================
