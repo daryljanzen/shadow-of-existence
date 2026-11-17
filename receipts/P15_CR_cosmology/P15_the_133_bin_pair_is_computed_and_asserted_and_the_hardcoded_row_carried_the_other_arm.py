@@ -8,8 +8,12 @@ UNTIL NOW ONE LIVED IN A HEADLINE AND THE OTHER IN A HARDCODED PRINT, AND NEITHE
 CONFIRMATION ARM, NOT THE 68.60 ARM `r6760+cc66.7` REPORTED AND NOT THE 68.60 ARM THE TWO ROWS
 PRINTED BESIDE IT ARE COMPUTED FROM.  cc66.7's OWN FIGURE IS 4.19. ***
 
-** NOTHING MOVES: 4.16/2.10 = 1.98 against 4.19/2.10 = 1.99, and both are the "x2.0" the conclusion
-rests on. **  *This is a provenance defect and is reported as one -- but it is a provenance defect
+** NOTHING MOVES, AND THE PAIR IS NOW QUOTED AT TWO DECIMALS: against the re-pointed control the
+two legs are 2.05 (68.62) and 2.06 (68.60), and both are the "about twice" the conclusion rests
+on. **  ⛭ *r7819 ① (69): at ONE decimal the pair straddles a boundary at the re-pointed point --
+2.0 and 2.1 -- so a one-decimal quotation reports where the boundary falls and not how far apart
+the legs are, which is the same defect r7817 took out of the assertion. Two decimals is what the
+measurement supports and the separation is unchanged to a thousandth at both points.*  *This is a provenance defect and is reported as one -- but it is a provenance defect
 inside a table whose entire purpose is a LIKE-FOR-LIKE ratio, and a computed row is what caught it.*
 
 *** AND ON `r7645`'s POINT THE PAPER'S `a factor 1.98` GOES UP RATHER THAN DOWN: $2.09$ AT 70's
@@ -100,7 +104,8 @@ different measurement, and PART 5 now SCORES it on both banks instead of narrati
 
 *So `sec:refit-bound`'s "$279.4$ against $556.7$, a factor $1.98$" moves to $583.99$ and $2.09$ on
 `r7645`'s point -- the claim that the arm is about twice the control SURVIVES and is slightly larger,
-while the printed $1.98$ is stale and even the "$\times2.0$" rounds to $2.1$.*  ⇒ Under `r7639` ⑴ it
+while the printed $1.98$ is stale; quoted at two decimals, as `r7819` ① directs, the 68.60 leg is
+$2.06$ and the 68.62 leg $2.05$.*  ⇒ Under `r7639` ⑴ it
 is reported to 69 with proposed wording and not edited here.  ⚠ **And the direction is not common to
 the two ranges:** on 133 bins the arm of record is WORSE than its namesake and on 185 bins BETTER,
 which this seat had registered as "worse on both" before measuring and got wrong.
@@ -483,6 +488,9 @@ _nm, _ad = P5[('namesake', 133)][2], P5[('arm of record, distances', 133)][2]
 #   the figure flagged as carried by another receipt that merely has the digits, while the receipt
 #   that computes it had not literally said them.  Pinning it at the printed precision too fixes
 #   that at its cause instead of adjudicating it in the baseline.*
+if not (round(_nm, 2) == 2.06 and abs(_nm - 2.06) < 0.005):
+    fail.append(f"the 68.60 leg is {_nm:.4f}, which does not quote as the 2.06 at two decimals "
+                f"`r7819` ① directs the conclusion to carry")
 if not abs(_ad - 2.16) < 0.005:
     fail.append(f"the 133-bin factor {_ad:.4f} is not within half the last digit of the 2.16 "
                 f"`sec:refit-bound` prints")
@@ -496,8 +504,9 @@ else:
           f"distances' point is {_ad:.4f}:")
     print(f"     *the conclusion that the arm is about twice the control SURVIVES and is slightly "
           "LARGER, while the")
-    print(f"     printed `1.98` is stale and even the `x2.0` rounds to {round(_ad, 1)} rather than "
-          f"{round(_nm, 1)}.*  ⇒ The {_rf[2]:.2f} is the")
+    print(f"     printed `1.98` is stale, and the pair is quoted at TWO decimals -- {_nm:.2f} on the "
+          f"namesake, {_ad:.2f} at the distances' point -- because at one it straddles a boundary "
+          f"here and did not at the old point.*  ⇒ The {_rf[2]:.2f} is the")
     print("     REFIT point's, where the arm has four parameters the control does not, so it is not "
           "the figure")
     print("     `sec:refit-bound`'s sentence is about.  ⌗ Reading the wrong one of these two banks "

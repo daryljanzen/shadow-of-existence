@@ -3,7 +3,7 @@ r"""
 RECEIPT -- P15 / PO-87: ** WITH THE PROJECTION'S COMOVING DISTANCE BUILT ON THE LEAF RATE, RADIATION INCLUDED,
 THE FULL-RANGE LENSED SPECTRUM REFITTED ON THE CONTROL'S FOUR PARAMETERS IS LEVEL WITH THE CONTROL --
 186.85 AGAINST 186.51, 1.002 TIMES -- WHERE THE ARM OF RECORD SITS AT 1.596 TIMES; AS COMPUTED AT THE
-DISTANCES' POINT IT IS 0.918 TIMES, WHERE THE ARM OF RECORD IS 2.35; AND THE DESI DR2 BAO FIT DOES NOT MOVE. **
+DISTANCES' POINT IT IS 0.960 TIMES, WHERE THE ARM OF RECORD IS 2.45; AND THE DESI DR2 BAO FIT DOES NOT MOVE. **
 
 Built r7753+70 (node 70, code seat), on `r7749` (69, on Daryl's direction) and `r7753`'s order for a receipt.
 The configuration is the arm of record (`LEAFREC=1 LEAFSCALES=1 ZSTART=3e7`) plus `LEAFGEOM=1`; the method,
@@ -60,8 +60,28 @@ RATIO = np.ones_like(_le)
 RATIO[_un > 0] = _le[_un > 0] / _un[_un > 0]
 
 
+#: ⛭⛭⛭ r7819 (cc66): ** THE UN-REFITTED CONTROL IS RE-POINTED TO PLANCK 2018'S PUBLISHED POINT, AT
+#: MATCHED SAMPLING. **  The no-fit comparison asks how this arm stands against *the standard model*,
+#: so its denominator has to be the standard model at the point its own authors publish, not at the
+#: point the corpus's control was first run at.  `(a1)`'s assembled step-2 bank is that spectrum --
+#: the point's own stored `(r_s, D_M)`, 950 multipoles -- and its acoustic scale is the one P15
+#: prints for that point, which is pinned where it is COMPUTED and so is not written down here.
+#: It is matched in
+#: SAMPLING to the arm it is divided into, which the step-8 bank at the same point is not: the 185-bin
+#: binner reads 238 samples differently from 950, and `r7815` measured the difference at a full
+#: four-thousandths of the printed ratio.  ⇒ *The REFITTED control is NOT re-pointed and cannot be: a
+#: minimum of the fit does not depend on where the search began, which is why `1.002` and `1.60` are
+#: untouched here while `0.918` and `2.35` both move.*
+REPOINTED = {
+    'cc66_lcdm_L2000.npz': os.path.join(
+        ROOT, 'computations', 'beyond_the_wall',
+        'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+        'r7812_control_step2_L2000_assembled.npz'),
+}
+
+
 def score(fn):
-    z = np.load(os.path.join(SP, fn), allow_pickle=True)
+    z = np.load(REPOINTED.get(fn, os.path.join(SP, fn)), allow_pickle=True)
     ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
     c, nb = CS.chi2_of(ls, Dl * np.interp(ls, LG, RATIO))[:2]
     sw = str(z['switches']) if 'switches' in z.files else ''
@@ -81,17 +101,19 @@ check("every figure is on the same 185 lensed bins", {n1, n2, n3, n4, n5, n6} ==
 for name, sw in (('no-fit', sw_nf), ('refit verify', sw_rf)):
     check(f"the banked leaf-rate {name} run carries LEAFGEOM=1 and LEAFREC=1 in its own switches line",
           bool(re.search(r'\bLEAFGEOM=1\b', sw)) and bool(re.search(r'\bLEAFREC=1\b', sw)), sw[:120])
-check("the control is its banked pair: 214.06 no-fit, 186.51 refitted",
-      round(ctl_nf, 2) == 214.06 and round(ctl_rf, 2) == 186.51, f"{ctl_nf:.2f} / {ctl_rf:.2f}")
-check("the arm of record is its printed pair: 502.1 (2.35x) no-fit, 297.7 (1.60x) refitted",
+check("the control is its banked pair, the no-fit one RE-POINTED: 204.71 no-fit at Planck 2018's "
+      "published point at matched sampling, 186.51 refitted and untouched",
+      round(ctl_nf, 2) == 204.71 and round(ctl_rf, 2) == 186.51, f"{ctl_nf:.2f} / {ctl_rf:.2f}")
+check("the arm of record is its printed pair: 502.1 (2.45x against the re-pointed control) no-fit, "
+      "297.7 (1.60x, the refitted comparison and so unmoved) refitted",
       round(aor_nf, 1) == 502.1 and round(aor_rf, 1) == 297.7
-      and round(aor_nf / ctl_nf, 2) == 2.35 and round(aor_rf / ctl_rf, 2) == 1.60,
+      and round(aor_nf / ctl_nf, 2) == 2.45 and round(aor_rf / ctl_rf, 2) == 1.60,
       f"{aor_nf:.1f}, {aor_nf / ctl_nf:.3f}x / {aor_rf:.1f}, {aor_rf / ctl_rf:.3f}x")
 check("** REFITTED, the leaf-rate arm is LEVEL with the control: 186.85, 1.01 per bin, 1.002 times **",
       round(lf_rf, 2) == 186.85 and round(lf_rf / 185, 2) == 1.01 and round(lf_rf / ctl_rf, 3) == 1.002,
       f"{lf_rf:.2f}, {lf_rf / 185:.3f}/bin, {lf_rf / ctl_rf:.4f}x")
-check("** AS COMPUTED at the distances' point, it sits BELOW the control's no-fit: 196.5, 1.06 per bin, 0.918 times **",
-      round(lf_nf, 1) == 196.5 and round(lf_nf / 185, 2) == 1.06 and round(lf_nf / ctl_nf, 3) == 0.918,
+check("** AS COMPUTED at the distances' point, it sits BELOW the control's no-fit: 196.5, 1.06 per bin, 0.960 times **",
+      round(lf_nf, 1) == 196.5 and round(lf_nf / 185, 2) == 1.06 and round(lf_nf / ctl_nf, 3) == 0.960,
       f"{lf_nf:.2f}, {lf_nf / 185:.3f}/bin, {lf_nf / ctl_nf:.4f}x")
 
 print("\n" + "=" * 100)

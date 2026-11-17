@@ -3,6 +3,15 @@
 RUN AT PLANCK 2018's OWN PUBLISHED POINT IMPROVES BY $4.781$ PER CENT, TURNING THE PUBLISHED $0.918$
 INTO $0.964$ AND HALVING THE ARM'S MARGIN. **
 
+⛭⛭ r7815/r7819 (cc66): ** AND THAT RATIO IS SCORED ACROSS A SAMPLING MISMATCH, WHICH GATE 5b MEASURES
+AND THE PAPER NOW PRINTS INSTEAD. **  Gate 5's denominator is the re-pointed control at `LSTEP=8`
+(238 samples) and its numerator the old one at `LSTEP=2` (950), and the binner reads the difference.
+At matched step-2 sampling the re-pointed control's $\chi^{2}$ is $204.709$, the published $0.918$
+becomes $0.960$, and the improvement is $4.367$ per cent.  *The two sampling banks agree to
+`5.55e-16` at every shared multipole at the same point, so what moves is the BINNING and not the
+physics -- which is precisely why it was measured before a sentence took the number.*  ⇒ *Gate 5
+stands as the step-8 run's own figure and is not what a sentence may quote; gate 5b's is.*
+
 Order r7807 (69), items ① and ②, after both r7805 recommendations were ruled in: PO-87's clause is
 scoped to ARM spectra, and the control is re-pointed to Planck's published best fit.  Item ③ (the
 comb receipt's filename stays) was ruled at r7797 and needs nothing.
@@ -161,6 +170,28 @@ G(5, abs(NEWR - 0.9641) < 0.0004 and round(NEWR, 3) != PUB
   f"control falling from {100 * (1 - PUB):.1f} to {100 * (1 - NEWR):.1f} per cent, LESS THAN HALF "
   f"the published claim  ⇒ PREDICTION (2a) HELD (0.94-0.97 registered)")
 
+# ===================================================================================== GATE 5b ===
+#: ⛭⛭⛭ r7815/r7819 (cc66): ** AND GATE 5's RATIO IS SCORED ACROSS A SAMPLING MISMATCH, WHICH IS MY
+#: OWN CORRECTION (a) IN THE ONLY FORM THAT SURVIVED. **  `cc66_lcdm_L2000.npz` is the old control at
+#: `LSTEP=2` -- 950 samples on 100..1998 -- and `NEW` is the re-pointed one at `LSTEP=8`, 238 samples
+#: on 100..1996.  `chi2_of_spectrum.chi2_of` bins whatever grid it is handed into 185 bins, so the two
+#: sides of gate 5 were binned from DIFFERENT samplings.  *At the same point the two sampling banks'
+#: `Dl` agree to 5.55e-16 at every shared multipole, so what moves here is the BINNING and not the
+#: physics -- which is exactly why it had to be measured before a paper sentence took the number.*
+#: ⇒ ** `(a1)` built the matched step-2 bank at Planck's point, and THAT is the comparison the paper
+#: prints.  Gate 5 stands as the step-8 run's own figure; it is not what a sentence may quote. **
+NEW2 = os.path.join(BW, 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                    'r7812_control_step2_L2000_assembled.npz')
+CN2, nbn2 = score(NEW2)
+PCT2 = 100 * (CN2 - CO) / CO
+NEWR2 = PUB * CO / CN2
+G('5b', nbn2 == 185 and abs(CN2 - 204.709) < 0.05 and abs(NEWR2 - 0.9599) < 0.0004
+  and round(NEWR2, 3) == 0.960 and abs(abs(PCT2) - 4.367) < 0.02 and CN2 > CN,
+  f"AT MATCHED SAMPLING the re-pointed control's no-fit chi^2 is {CN2:.3f} over {nbn2} bins, not "
+  f"{CN:.3f}: the published {PUB} becomes {NEWR2:.4f}, printing as {NEWR2:.3f}, and the control's "
+  f"improvement is {abs(PCT2):.3f} per cent and not {abs(PCT):.3f}  ⇒ ** this is the figure the "
+  f"paper prints; gate 5's is the step-8 run's own **")
+
 # ======================================================================================= GATE 6 ===
 # The r7805 stencil is vindicated inside its registered bound.
 STENCIL = 0.9571
@@ -310,7 +341,11 @@ REFIT_RATIO = LF_RF / CTL_RF
 MNU_PLANCK = 0.06                     # the mass Planck's published fit assumes; this instrument has none
 BOUND = 0.01                          # the bound registered in PREDICTION.md for the stencil's reach
 PINNED = [
-    ('0.964', abs(NEWR - 0.964) < 0.0004, 0.0004, 'the re-pointed ratio'),
+    ('0.964', abs(NEWR - 0.964) < 0.0004, 0.0004, 'the re-pointed ratio, step-8 against step-2'),
+    ('0.960', abs(NEWR2 - 0.960) < 0.0004, 0.0004,
+     '⛭ THE SAME RATIO AT MATCHED SAMPLING -- the figure the paper prints'),
+    ('204.709', abs(CN2 - 204.709) < 0.05, 0.05, "the re-pointed control's chi^2 at matched sampling"),
+    ('4.367', abs(abs(PCT2) - 4.367) < 0.002, 0.002, 'and its improvement, per cent, likewise'),
     ('0.918', abs(PUB - 0.918) < 0.0004, 0.0004, 'the published one'),
     ('4.781', abs(abs(PCT) - 4.781) < 0.002, 0.002, "the control's improvement, per cent"),
     ('214.057', abs(CO - 214.057) < 0.05, 0.05, "the control's old chi^2"),
@@ -339,7 +374,7 @@ PINNED += [
 ]
 _unheld = [(t, w) for t, ok, tol, w in PINNED if not ok]
 _slack = [(t, tol, allow(t)) for t, ok, tol, w in PINNED if tol > allow(t) * (1 + 1e-9)]
-G(11, not _unheld and not _slack and len(PINNED) == 21 and (LEAVE, STAND) == (9, 14),
+G(11, not _unheld and not _slack and len(PINNED) == 24 and (LEAVE, STAND) == (9, 14),
   f"all {len(PINNED)} figures the INDEX row prints hold against an explicit literal comparison -- the "
   f"run's point read from the LAUNCHER's own table, because the banked `config` records the form "
   f"switches and NOT the background (asserted above), and the refitted ratio MEASURED at "
@@ -356,10 +391,12 @@ if fail:
     for f in fail:
         print(f'     - {f}')
     raise SystemExit(1)
-print(f"  ⇒ ⛔⛔ ** THE CONTROL AT PLANCK'S OWN POINT IMPROVES {abs(PCT):.3f} PER CENT, SO THE "
-      f"PUBLISHED 0.918 BECOMES {NEWR:.3f} **")
+print(f"  ⇒ ⛔⛔ ** THE CONTROL AT PLANCK'S OWN POINT IMPROVES {abs(PCT2):.3f} PER CENT AT MATCHED "
+      f"SAMPLING, SO THE PUBLISHED 0.918 BECOMES {NEWR2:.3f} -- WHICH IS WHAT THE PAPER PRINTS "
+      f"({abs(PCT):.3f} PER CENT AND {NEWR:.3f} AT STEP 8, GATE 5's OWN FIGURES) **")
 print(f"  and the arm's margin over the control falls from {100 * (1 - PUB):.1f} to "
-      f"{100 * (1 - NEWR):.1f} per cent -- less than half the claim.")
+      f"{100 * (1 - NEWR2):.1f} per cent at matched sampling "
+      f"({100 * (1 - NEWR):.1f} at step 8) -- in either case less than half the claim.")
 print(f"  The refitted 1.002 cannot move: it reads the two REFIT verifies and never the un-refitted "
       f"bank.")
 print(f"  ⌗ ** AND PO-87's 23 ARE {STAND} REPOINTS AND {LEAVE} DEPARTURES, so the clause is NOT "

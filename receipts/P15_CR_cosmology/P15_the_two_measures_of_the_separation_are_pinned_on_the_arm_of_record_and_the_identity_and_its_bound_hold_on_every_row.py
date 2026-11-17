@@ -6,16 +6,22 @@ THAT RELATES THEM AND THE BOUND THAT PRICES THEIR AGREEMENT CHECKED ON EVERY ROW
 Built `r7654` (node 60), discharging `r7653`'s order.  `P18` l.1557-1559 was re-stated at `r7653` on
 `r7652`'s branch 1 and now prints two figures and a gap:
 
-  * the separation between the two arms is ** 1.77 ** times the control's own distance from the data,
-  * the difference of the two arms' scores is ** 1.35 ** times it,
-  * and the two measures are ** a quarter ** apart.
+  * the separation between the two arms is ** 1.84 ** times the control's own distance from the data,
+  * the difference of the two arms' scores is ** 1.45 ** times it,
+  * and the two measures are ** a fifth ** apart.
+
+⛭⛭ r7819 (cc66): ** BOTH RATIOS MOVED WHEN THE CONTROL WAS RE-POINTED, because both divide BY the
+control's own distance from the data.  1.77 -> 1.8412 and 1.35 -> 1.4527, and the gap with them: a
+quarter -> a fifth. **  The denominator is now Planck 2018's published point at matched step-2
+sampling, and it comes out at 204.7098 -- the same figure the `PO-87` receipt's gate 5b measures
+independently, which is two receipts agreeing on one denominator rather than one asserting it.
 
 ** THOSE TWO FIGURES ARE READ OUT OF `corpus/CR_synthesis.tex` AND PINNED AGAINST WHAT IS READ, not
 against literals typed into this file (`r7654+60.2`).  A pin against a typed literal cannot notice the
 paper moving, which is what `check_unread_figure` said when it flagged an earlier draft of this
 receipt.  ⛔ AND READING IT CORRECTED A FALSE CLAIM OF MINE: `P18` prints EXACTLY those two figures
-plus the prose "a quarter", and does NOT print `288.04` or `214.1` -- zero occurrences of either in
-that file.  Those two are THIS RECEIPT'S OWN numerator and denominator for the printed 1.35, pinned
+plus the prose "a fifth", and does NOT print `297.385` or `204.71` -- zero occurrences of either in
+that file.  Those two are THIS RECEIPT'S OWN numerator and denominator for the printed 1.45, pinned
 because a ratio pinned alone can be right through a cancellation of the pair, and they are labelled as
 this receipt's rather than as the paper's. **
 
@@ -50,7 +56,7 @@ Cauchy-Schwarz on that cross term: **
 *** WHICH IS WHY `P18`'s OLD "agree to within 5%" WAS NEVER A PROPERTY OF THE TWO MEASURES. *** It was
 a property of the RATIO's size: the bound does not reach 5% until chi2_sep/chi2_c exceeds 1600, and at
 the 58.2 of `r4236`'s build it is 0.2622, which is what made that build's 4.84% available at all.  At
-the 1.77 of the arm of record the bound is 1.50 and nothing forces agreement to anything.  Both are
+the 1.84 of the arm of record the bound is 1.50 and nothing forces agreement to anything.  Both are
 printed below.
 
 ** COMPUTES: the ratio chi2_sep/chi2_c and the ratio F2/chi2_c on the arm of record's 185 lensed bins
@@ -72,7 +78,7 @@ rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~20 s -- reads banke
   (2) ** IT DOES NOT SAY WHICH ARM IS THE ARM OF RECORD. **  It takes the file the corpus names.
   (3) ** AND ONE CLAUSE OF `P18`'s SENTENCE IS TRUE OF ITS OWN CONFIGURATION AND NOT IN GENERAL. **
       The sentence says both measures put "the arms further from each other than the control is from
-      the data".  On the arm of record both ratios exceed 1 -- 1.77 and 1.35 -- so it holds THERE.  It
+      the data".  On the arm of record both ratios exceed 1 -- 1.84 and 1.45 -- so it holds THERE.  It
       does NOT hold on every configuration this instrument reaches: the 185 unlensed rows return 0.67
       and 0.53, and the 133 unlensed rows 0.94 and 0.88, all below 1.  *** So the clause is a fact
       about the full-range lensed bins, which is what the sentence names, and the table below prints
@@ -116,7 +122,15 @@ DATA = LIK.X_data[:NB]
 LO = np.array([LIK.blmin_TT[i] + LIK.plmin_TT for i in range(NB)])
 HI = np.array([LIK.blmax_TT[i] + LIK.plmin_TT for i in range(NB)])
 
-CTL = os.path.join(BW, 'spectra', 'cc66_lcdm_L2000.npz')
+#: ⛭⛭ r7819 (cc66): ** THE CONTROL IS RE-POINTED TO PLANCK 2018's PUBLISHED POINT, AT MATCHED
+#: SAMPLING. **  Both printed measures divide BY the control's own distance from the data, so the
+#: denominator has to be the standard model at the point its authors publish.  `(a1)`'s assembled
+#: step-2 bank is that spectrum (`r_s = 144.729071`, `D_M = 13894.421315`, 950 multipoles) and is
+#: matched in sampling to the arms it is divided into, which the step-8 bank at the same point is
+#: not.  *Grid-identical to the bank it replaces at every shared multipole, so the swap moves the
+#: POINT and nothing else.*
+CTL = os.path.join(BW, 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                   'r7812_control_step2_L2000_assembled.npz')
 AOR = os.path.join(BW, 'spectra', 'cc66_cr_x_h686_L2000_leafrec1_distances.npz')
 LR0 = os.path.join(BW, 'spectra', 'cc66_cr_x_h686_L2000.npz')
 
@@ -247,21 +261,21 @@ if _READ is None:
           "current wording,")
     print("        so nothing is read from it and the four quantities below stand on this receipt's "
           "own targets.")
-    _READ = (1.77, 1.35)
+    _READ = (1.84, 1.45)
     _TAG = "THIS RECEIPT'S TARGET -- P18's sentence not located"
 else:
     print(f"      ARM ONE IS LIVE: read from the paper -- {_READ[0]} and {_READ[1]}")
     _TAG = "READ from P18"
     check(f"ⓒ② and the located sentence yields EXACTLY the two figures P18 prints here, {_READ[0]} "
-          f"and {_READ[1]}; it prints no others -- zero occurrences of 288.04 or 214.1 anywhere in "
-          f"that file", len(_READ) == 2 and '288.04' not in _src and '214.1' not in _src)
+          f"and {_READ[1]}; it prints no others -- zero occurrences of 297.385 or 204.71 anywhere in "
+          f"that file", len(_READ) == 2 and '297.385' not in _src and '204.71' not in _src)
 PINS = [
     (f"the separation is {_READ[0]} times the control's own distance [{_TAG}]",
      'sep_over', _READ[0], 0.005),
     (f"the difference of the two arms' scores is {_READ[1]} times it [{_TAG}]",
      'F2_over', _READ[1], 0.005),
-    ("that difference, 288.04 -- THIS RECEIPT'S, not printed in P18", 'F2', 288.04, 0.005),
-    ("the control's own, 214.1 -- THIS RECEIPT'S, not printed in P18", 'c2c', 214.1, 0.05),
+    ("that difference, 297.385 -- THIS RECEIPT'S, not printed in P18", 'F2', 297.385, 0.0005),
+    ("the control's own, 204.71 -- THIS RECEIPT'S, not printed in P18", 'c2c', 204.71, 0.05),
 ]
 print(f"\n      ⌗ The last two are NOT the paper's: they are the numerator and the denominator the")
 print(f"      printed {_READ[1]} is formed from, pinned here because a ratio pinned alone can be right")
@@ -272,11 +286,11 @@ for label, key, want, tol in PINS:
           f"   |d| {abs(got-want):.4f} <= {tol}")
     check(f"ⓒ `{label}` -- pinned to half a unit in its last digit", abs(got - want) <= tol)
 _q = P18['gap']
-print(f"      the two measures are a quarter apart{'':<27} printed     0.25   computed {_q:>9.4f}"
+print(f"      the two measures are a fifth apart{'':<29} printed     0.20   computed {_q:>9.4f}"
       f"   nearest 5pp {round(_q*20)/20:.2f}")
-check("ⓒ⑤ and \"a quarter apart\" -- the one prose figure, pinned at the nearest five percentage "
+check("ⓒ⑤ and \"a fifth apart\" -- the one prose figure, pinned at the nearest five percentage "
       "points rather than to a digit it does not print, and the measured value printed beside it",
-      abs(round(_q * 20) / 20 - 0.25) < 1e-9)
+      abs(round(_q * 20) / 20 - 0.20) < 1e-9)
 
 # ------------------------------------------------------------------ Ⓓ the identity and the bound
 print("\nⓓ  THE IDENTITY AND THE BOUND, ON ALL EIGHT ROWS AND NOT ONLY THE ONE THE PAPER NEEDS")
@@ -316,7 +330,7 @@ print(f"\n      {'pin':<52} {'unperturbed':>12} {'arm tilted':>12} {'ctl tilted'
 for label, key, want, tol in PINS:
     print(f"      {label[:52]:<52} {P18[key]:>12.4f} {_tilt[key]:>12.4f} {_ctilt[key]:>12.4f}")
 _ARM = [k for _l, k, _w, _t in PINS if k != 'c2c']
-check("ⓔ② the THREE ARM-DEPENDENT pins -- 1.77, 1.35 and 288.04 -- each fall outside tolerance under "
+check("ⓔ② the THREE ARM-DEPENDENT pins -- 1.84, 1.45 and 297.385 -- each fall outside tolerance under "
       "a 1% tilt of the ARM, so each is a guard that can fail on the data it is given",
       all(abs(_tilt[k] - w) > t for _l, k, w, t in PINS if k != 'c2c'))
 print("""
@@ -326,7 +340,7 @@ print("""
       was asking a quantity to depend on something it does not depend on.  ⇒ The corrected rule tests
       each figure against the spectrum it actually depends on, and is strictly stronger: it pins an
       INVARIANCE the original never tested.""")
-check(f"ⓔ③ ⑤″ the control's 214.1 is INVARIANT under the arm's tilt, EXACTLY -- which is what makes "
+check(f"ⓔ③ ⑤″ the control's 204.71 is INVARIANT under the arm's tilt, EXACTLY -- which is what makes "
       f"it the control's figure and not the comparison's ({_ctilt['c2c']:.4f} computed with the "
       f"control tilted against {_tilt['c2c']:.4f} with only the arm tilted)",
       _tilt['c2c'] == P18['c2c'])
