@@ -4122,6 +4122,11 @@
     "since": "630cb03a0742ea0cc94ff09dc3b04ad4db233ab0",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44007170142",
+    "since": "1f4be74443c9e0866df6904d53b605e8f6c49c9b",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44006012770",
     "since": "630cb03a0742ea0cc94ff09dc3b04ad4db233ab0",
