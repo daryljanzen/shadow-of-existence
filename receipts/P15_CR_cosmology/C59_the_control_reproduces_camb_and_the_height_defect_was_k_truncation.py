@@ -113,6 +113,16 @@ with contextlib.redirect_stdout(io.StringIO()):
 
 SKY_L = (220.6, 538.1, 809.8)
 SKY_R2, SKY_R3 = 2.217, 2.277
+#: ⛭⛭ r7819 ⑥ (cc66): ** THIS LITERAL WAS NEVER LOCATED, AND THE SENTENCE THAT QUOTED IT NO LONGER
+#: DOES. **  No CAMB is run in this receipt and no locator touches this number, so the agreement
+#: printed below compares a LOCATED instrument figure against a QUOTED one.  *What CAMB returns at
+#: THIS receipt's own point, through THIS receipt's own locator -- raw cell maxima on the reported
+#: grid -- is computed, printed and pinned in
+#: `P15_the_quoted_2_200_was_never_located_and_camb_through_c59s_own_locator...`, and the agreement
+#: it gives is LARGER than the one here.*  ⇒ *The literal is left standing because this receipt is
+#: the record of its OWN run and that run compared against this value; the figure P15 prints is the
+#: located one, and it is that other receipt's.*  ⌈ The locator is confirmed there rather than
+#: assumed: run on CAMB it returns this receipt's own peak triple.
 CAMB_R2 = 2.200
 
 
