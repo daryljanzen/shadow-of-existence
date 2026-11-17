@@ -59,8 +59,26 @@ PIN_RATIO_D, PIN_RATIO_U = 0.6830, 1.1273
 CHAT_CONTROL_UNDRIVEN, CHAT_CONTROL_SHIFT = 276.0, 0.1858
 
 
+# ⛭⛭ r7817 (69), THE ONE PASS: ** BOTH LEGS OF THE CONTROL'S SUBTRACTION ARE RE-POINTED. **
+#   Site 2 is the control's `l_1/l_A` shift with every coupling to the potential removed, and it is a
+#   DIFFERENCE OF TWO CONTROL SPECTRA.  Re-pointing only the driven leg would make it a mixed-point
+#   difference, so `r7817+cc66.2` ran the undriven leg at the same point and configuration --
+#   `ARM=lcdm NODRIVE=1 HIER=1 LSTEP=2 LMAXL=1300`, the same 1656 modes and 600-sample grid -- and
+#   `r7817+cc66.5` read the subtraction off both legs at each point.
+#   ⌗ *It comes to 0.1790 either way, and the reason is in the numbers rather than in luck: both
+#   first peaks sit at the SAME grid multipoles at both points, so the shift is (274-220)/l_A and
+#   only `l_A` moves.  The undriven leg's background never enters.  Measured, not assumed.*
+_R7812 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                      'r7812_cc66_the_resumable_mode_loop_and_the_one_pass')
+REPOINTED = {
+    'lcdm': os.path.join(_R7812, 'out_L1300', 'r7812_control_step2_L1300_assembled.npz'),
+    'lcdm_nodrive_pol': os.path.join(_R7812, 'out_L1300_nodrive',
+                                     'r7812_control_step2_L1300_nodrive_assembled.npz'),
+}
+
+
 def peak1(tag):
-    z = np.load(os.path.join(SPEC, f'cc66_{tag}.npz'))
+    z = np.load(REPOINTED.get(tag, os.path.join(SPEC, f'cc66_{tag}.npz')), allow_pickle=True)
     ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
     q = argrelextrema(Dl, np.greater, order=3)[0]
     return float(ls[q[0]]), float(z['l_A'])
