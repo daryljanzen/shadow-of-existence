@@ -167,7 +167,10 @@ print("=" * 104)
 print("  PART 3 -- ** THE RATIO, AND IT MOVED THE UNFAVOURABLE WAY **")
 print("=" * 104)
 print(f"  {'comparison':>42} {'arm/control':>12}")
-print(f"  {'133-bin, unlensed (r6760+cc66.7)':>42} {4.16 / 2.10:>11.2f}x")
+# ⛭ r7817: the denominator tracks the re-pointed control (2.10 -> 2.03).  The NUMERATOR is left
+#   alone on purpose: that it is the 68.62 run's figure where the 68.60 one belongs is the
+#   provenance defect `the_133_bin_pair` documents, and repairing it here would erase that record.
+print(f"  {'133-bin, unlensed (r6760+cc66.7)':>42} {4.16 / 2.03:>11.2f}x")
 print(f"  {'185-bin full range, unlensed':>42} {au / cu:>11.2f}x")
 print(f"  {'185-bin full range, LENSED':>42} {aL / cL:>11.2f}x")
 print(f"""

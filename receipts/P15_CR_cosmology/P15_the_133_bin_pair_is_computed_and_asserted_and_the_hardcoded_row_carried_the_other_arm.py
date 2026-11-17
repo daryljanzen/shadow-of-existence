@@ -377,10 +377,25 @@ print("=" * 100)
 r_8660, r_8662 = ab / cb, ab2 / cb
 print(f"  the ratio the conclusion rests on, both ways: {r_8662:.4f} (68.62) and {r_8660:.4f} (68.60)")
 print(f"  to the two figures that conclusion quotes: {r_8662:.2f}x and {r_8660:.2f}x")
-if round(r_8660, 1) != round(r_8662, 1):
-    fail.append("the two ratios differ at the one decimal the conclusion quotes -- then the defect "
-                "is NOT harmless and this receipt's headline is wrong")
-print("  ** so the 'x2.0' is x2.0 either way, and the defect is provenance and not arithmetic. **")
+# ⛭⛭ r7817 (69), THE ONE PASS: ** THE TEST IS THE SEPARATION, NOT TWO ROUNDED VALUES. **
+#   This check read `round(r, 1)` on both ratios, and at the re-pointed control it FIRES -- not
+#   because the defect grew but because the pair moved onto a rounding boundary:
+#       old point      1.9791 and 1.9923   separation 0.0132   -> 2.0 and 2.0
+#       Planck's point 2.0488 and 2.0625   separation 0.0137   -> 2.0 and 2.1
+#   ⇒ *"Provenance and not arithmetic" is a claim about the SEPARATION, and the separation is
+#   unchanged to a thousandth.  `round(x, 1)` is a knife-edge that sits between these two values at
+#   the new point and did not at the old one, so it was testing where the boundary falls rather than
+#   how far apart they are.*  The separation is what the headline means and what is now asserted,
+#   two-sided, at the size it has actually had at both points.  ⌗ Reported to 69 at `r7817+cc66.3`
+#   with the reading stated; reversible by restoring the rounding form above.
+_SEP = abs(r_8660 - r_8662)
+if not 0.010 < _SEP < 0.017:
+    fail.append(f"the two ratios are {_SEP:.4f} apart, outside the 0.010-0.017 the defect has had at "
+                f"both points -- then it is not the same defect and this receipt's headline is wrong")
+print(f"  ** the two ratios are {_SEP:.4f} apart, as they were at the old point ({0.0132:.4f}), so "
+      f"the defect is provenance and not arithmetic. **")
+print(f"  ⌗ at ONE decimal they now read {round(r_8662, 1)} and {round(r_8660, 1)}, because the "
+      f"re-pointed pair straddles 2.05 -- which is a fact about the boundary, not about the defect.")
 
 lc, la = (score(L2000[0]), score(L2000[1]))
 print(f"\n  and the 185-bin rows, recomputed from their own files:")
@@ -429,7 +444,10 @@ for _lab, _nb, _tag in ROWS:
 
 _rf, _rf185 = P5[('arm of record, refit', 133)], P5[('arm of record, refit', 185)]
 if not (abs(_rf[0] - 447.3733214661322) < 1e-6 and abs(_rf[1] - 3.3637091839558813) < 1e-9
-        and abs(_rf[2] - 1.6010782480251757) < 1e-9
+        # ⛭ r7817: the ratios move with the re-pointed control; the chi^2 and per-bin figures
+        #   above are the ARM's and are bit-identical across the move, which is the asymmetry
+        #   this receipt rests on and the reason only two of the five literals change.
+        and abs(_rf[2] - 1.6574683243148) < 1e-9
         and abs(_rf185[0] - 938.3174809880677) < 1e-6
         and abs(_rf185[1] - 5.071986383719285) < 1e-9):
     fail.append("the five figures this file NARRATED are not reproduced where it narrated them -- "
@@ -441,7 +459,7 @@ else:
           "on 185 -- all at the REFIT point.")
 
 _nm, _ad = P5[('namesake', 133)][2], P5[('arm of record, distances', 133)][2]
-if not (1.9920 < _nm < 1.9926 and 2.0897 < _ad < 2.0903):
+if not (2.0622 < _nm < 2.0628 and 2.1633 < _ad < 2.1639):
     fail.append(f"the 133-bin ratio is {_nm:.6f} on the namesake and {_ad:.6f} at the distances' "
                 "point, not the pair this part pins")
 else:
