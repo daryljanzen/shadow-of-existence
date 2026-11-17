@@ -1763,9 +1763,9 @@
    }
   },
   "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_lensing_amplitudes_bound_becomes_a_fit_on_the_widened_grid_and_it_wants_more_than_the_edge_allowed.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43951711649",
-    "since": "4e1539e0381f7a8bff865723bd56cc6ba7320e47"
+   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43988231004",
+    "since": "a10b4b0c926a329de9d32881dd45d2c01529910d"
    }
   }
  }
