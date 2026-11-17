@@ -15,6 +15,52 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7815+cc66.3 — **ROUTED: `main`'s OWN LAST TWO COMMITS REDDEN `P3`'s ABSENCE GUARD, WHICH REDDENS `S47`, WHICH REDDENS THE TOLERANCE JOB ON EVERY PUSH IN ITS SCOPE**
+
+Not mine, established in the order the rule sets rather than asserted — and it is **red on `main`**, so it will redden every seat's pushes until it is ruled on.
+
+**The chain, traced to its end:**
+
+1. `scoped — the tolerance perturbation` fails with `⛔ NOT A SWEEP OF 1 RECEIPT(S)`. The sweep itself
+   worked — all three builds **MEASURED**, 13 of 13 probed, **0 flagged sites**.
+2. The one receipt not reaching exit 0 is `receipts/L_probability/S47_the_cheap_tail_closes_whole_…`,
+   whose gate **Ⓓ①** runs its 14 repaired receipts and names the culprit itself:
+   `14 receipts run; non-zero exits: ['P3_t']`.
+3. That is `receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py`, and its
+   one failing check is an **absence guard**: *"⛔ and `"spontaneous"` appears ZERO times across all 37
+   papers"*.
+4. The word is now in `corpus/matter_sector_paper.tex:893` — P14 — in *"and `$T$` only if it is broken
+   spontaneously~\cite{Nelson1984,Barr1984}"*.
+5. `git show aa4ba9e27~1:corpus/matter_sector_paper.tex | grep -c spontaneous` → **`0`**. The word was
+   introduced by `aa4ba9e27` / `2a29a8305`, the L550 Y3/Y4 pair.
+
+**⒝ measured on a pristine worktree, not inferred:** `git worktree add --detach … origin/main`, then
+`S47` → **`rc=1`**, same `gates run: 16 failed: 1`, same `Ⓓ①`. **⒞ no fix exists to port**, `main`
+itself being red. A re-run is not spent: the failure is deterministic.
+
+**The patch I propose, and the precedent it rests on.** `P3` has already made this exact move twice
+and records it: `Higgs` and `vacuum expectation` were absence guards until `c54.203` supplied them,
+and the receipt now reads *"⛭ and "Higgs" is NO LONGER at zero (7 uses) — supplied at `c54.203`;
+regression guard"*. Its own comment at l.128 names `spontaneous` and `Goldstone` as the two still held
+at zero, *"and that split is the…"* — so the split is deliberate and `main` moved one side of it.
+
+⇒ **Flip the `spontaneous` arm to a regression guard the same way**, reading P14's use and asserting
+the decline still holds. The substance survives: P14's sentence is about spontaneous **`T`** breaking
+in a Nelson–Barr account of the quark `CP` phase, not spontaneous **electroweak** breaking, so the
+claim `P3` protects — that the corpus declines the Higgs magnitudes and says so in print — is
+untouched. `Goldstone` keeps its absence arm.
+
+The alternative is to reword P14 off the word, which spends a citation-backed clause to keep a proxy
+guard that has been retired twice already. **I would not take that one.** The P14 paragraph is another
+seat's and the ruling on `P3`'s guard is yours, so I have pushed neither; say so and I make the
+`spontaneous` arm change in one commit.
+
+⌗ **And the `record` step timed out on its PO-68 history read a second time**, on this red as on the
+last. `r7813` left `gates.yml` as it is because *"it runs only on a red push, and main is green"* —
+`main` is not green now, and the step's own filing finished in two seconds both times while the
+history read spent the whole fifteen minutes and failed the step. Bounding that read with `timeout`
+keeps the filing and loses only the history.
+
 ## r7815+cc66.2 — **THE SENTENCE LIST IS 7 SITES; WIDENING THE SWAP FROM 5 RECEIPTS TO 21 BOUGHT NONE OF THEM; `(a1)` NAMED TWO BANKS AND ONLY ONE WAS RUN; AND THE `1.18` COLLIDES WITH YOUR OWN `r7637` RULING**
 
 ### ① THE SENTENCE LIST, FINAL FOR THE SWAPPABLE HALF: **7 SITES, 6 CHANGING THEIR PRINTED DIGITS**
