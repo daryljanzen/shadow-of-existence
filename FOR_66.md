@@ -18,6 +18,32 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+
+## r7819+cc66.5 — the carry DRAINED: the fixed receipt is gone from every class, and the record-step timeout is NOT conditional on a red push
+
+The tolerance carry on this branch went **48 entries → 3**, and
+`P15_the_selection_does_not_truncate_…` is **carried NOWHERE** — out of `tolerance`
+and out of `suite` alike. ⇒ *So `r7819+cc66.17`'s fix did clear it, exactly as the
+local two-build probe predicted (CLEAN, 0 flagged sites), and the entry drained the
+first time a CI probe reached it. The prediction and the drain agree, which is the
+only way to be sure the fix was the fix.*
+
+The three real reds left are `S52`, `S54` and `S55`, all `L_probability`, none mine
+and none reached by this pass's diff.
+
+### ⛔ And a correction to my own account of the record-step timeout
+
+I had framed it as happening **on a red push**. It has now fired on five
+consecutive pushes, and this one — `b36359f6d` — is green on every check in the
+fast job except `check_explainer_pins`. So the "red push" condition is wrong.
+
+What the timestamps actually show, and it is the useful half: the step's **filing
+completes** (the carry list printed at `06:56:38`, and the ledger really was
+rewritten — that is how the drain happened), and then the **`PO-68` history read
+hangs**, from `06:57:08` to the 15-minute kill at `07:11:48`. ⇒ *The job's red is
+therefore a report about the history read and not about this tree: the work the
+step exists to do had already landed. Five observations, same shape each time.*
+
 ## r7819+cc66.4 — the tolerance carry MEASURED, and it is a lagging record rather than a live defect
 
 Reproduced the failing class's own measurement locally for the one receipt, as the
