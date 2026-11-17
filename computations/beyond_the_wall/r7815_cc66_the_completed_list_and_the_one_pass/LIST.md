@@ -124,20 +124,17 @@ assembled step-2 spectrum made `spectra/cc66_lcdm_L2000.npz` swappable for the f
 is now empty — and a second round ran the **10** receipts that read it. Every pair is grid-identical,
 asserted before anything runs, so each swap moves the **point** and nothing else.
 
-| round | receipts run | moved ≥ 1 figure |
-|---|---|---|
-| step-8, `swap_01_02.txt` + `swap_03_21.txt` | 21 | **16** |
-| step-2, `swap_step2.txt` | 10 | **5** |
+| round | receipts run | moved ≥ 1 figure | new printed sites |
+|---|---|---|---|
+| step-8, `swap_01_02.txt` + `swap_03_21.txt` | 21 | **16** | **0** |
+| step-2, one bank re-pointed, `swap_step2.txt` | 10 | 5 | 4 |
+| step-2, **both** banks re-pointed, `swap_both_banks.txt` | 10 | 5 | **9 more** |
 
-**The step-2 round's movers**, which are the ones `(a1)` unlocked:
-
-| receipt | moved |
-|---|---|
-| `P15_the_two_measures_of_the_separation_…` | 85 |
-| `P15_at_its_own_preferred_H0_…` | 27 |
-| `P15_the_full_range_lensed_comparison_…` | 12 |
-| `P15_the_133_bin_pair_…` | 6 |
-| `P15_the_refit_bound_figures_all_reproduce_…` | 6 |
+⛭ **The third round supersedes the second and does not disagree with it** — measured before its log
+was read alongside: of the two logs' pairs, **0** carry conflicting new values, **25** are moves only
+the both-banks run finds (the `2.10 → 2.03` among them), and **0** are moves only the one-bank run
+finds. A strict superset is safe to read together. Had any pair disagreed, keeping both logs would
+have offered two different "new" values for one printed figure, which is why it was checked first.
 
 ### ⛭ THE SENTENCE LIST IS 7 SITES, 6 OF THEM CHANGING THEIR PRINTED DIGITS
 
@@ -147,15 +144,32 @@ is how a tree ends up with two that disagree. Full output in `sentence_list_fina
 
 | # | prints | measured | verdict |
 |---|---|---|---|
-| 1 | `214.1` | `214.06 → 204.71` | **EDIT → `204.7`** |
-| 2 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
-| 3 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
-| 4 | `1.13` | `1.129 → 1.077` | **EDIT → `1.08`** |
-| 5 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
-| 6 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
-| 7 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
+| 1 | `2.10` (133-bin unlensed) | `2.100902 → 2.029426` | **EDIT → `2.03`** |
+| 2 | `0.1792` (the driving subtraction) | `0.1792 → 0.1790` | **see the ruling asked for below** |
+| 3 | `214.1` | `214.1 → 204.7` | **EDIT → `204.7`** |
+| 4 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
+| 5 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 6 | `279.4` | `279.42 → 269.9136` | **EDIT → `269.9`** |
+| 7 | `2.09` | `2.090004 → 2.163614` | **EDIT → `2.16`** |
+| 8 | `0.77` (band quarter 1) | `0.77 → 0.72` | **EDIT → `0.72`** |
+| 9 | `1.44` (band quarter 2) | `1.44 → 1.45` | **EDIT → `1.45`** |
+| 10 | `2.62` (band quarter 3) | `2.62 → 2.27` | **EDIT → `2.27`** |
+| 11 | `3.73` (band quarter 4) | `3.73 → 3.79` | **EDIT → `3.79`** |
+| 12 | `1.60` | `1.601078 → 1.657468` | **EDIT → `1.66`** |
+| 13 | `1.13` | `1.129 → 1.077` | **EDIT → `1.08`** |
+| 14 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 15 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
+| 16 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
 
-Sites 1–3 and 5 are new at `r7815` and are exactly the ones §4 predicted would need the step-2 bank.
+⛔ **Site 2 needs 69's ruling and is not settled here.** `r7811`'s `(b)` says a within-control
+difference **stays where it is**, and the driving subtraction is one — yet its printed figure moves at
+its own precision, `0.1792 → 0.1790`. So `(b)` and the printed precision collide on this one figure:
+either the sentence is re-pointed like the rest, or it keeps `0.1792` and says which point that is.
+The measurement is mine; which of the two it is, is 69's.
+
+Nine of these are new since the step-8 round, and the four the one-bank step-2 round found are
+among them. Every one is a site §4's hand-read had named as *waiting on a step-2 bank* — the
+hand-read predicting the swap rather than following it. Sites 1–3 and 5 are new at `r7815` and are exactly the ones §4 predicted would need the step-2 bank.
 Four more receipts' figures moved with **no body sentence citing them** — re-derivations with no
 prose to edit: `on_the_arm_of_record`, `the_controls_base_log`, `the_refit_bound_figures`,
 `the_two_measures_of_the_separation`.
@@ -238,7 +252,7 @@ the control, not as a standard-model value.
 | | registered | measured | |
 |---|---|---|---|
 | **(6a)** of the 21 receipts, how many move | 8 to 13 | **16** | ⛔ **failed, high** |
-| **(6b)** printed landing sites on the completed list | 12 to 20 | 7 from the swap logs; the rest from §4's hand-read | scored in §7 |
+| **(6b)** printed landing sites on the completed list | 12 to 20 | **16** from the swap logs alone, once BOTH `(a1)` banks were re-pointed | **held** |
 | **(6c)** at least one site in neither `r7812`'s three nor 69's named list | ≥ 1, candidate P15 `l.293` | **held, and it is the candidate**: `4.94σ → 1.97σ` | **held** |
 | **(6d)** sites needing a fresh run rather than a swap, calibration not among them | 2 to 5 | the `1.18`, the `2.10`, the `1320` scan — **3**; the calibration is 70's, as predicted | **held** |
 | **(6e)** the extended swap moves no refitted figure | none | none: the refitted `1.002`, `1.01`/`1.61`, `186.51`, tilt `0.954`, contrast `−0.0075` are all unmoved | **held** |
@@ -255,10 +269,12 @@ answer is no.
 |---|---|
 | `scan.py`, `cross.py`, `owners.py`, `theta_at_planck.py` | banked and pushed |
 | the extended swap, both rounds | **complete** — `swap_01_02.txt`, `swap_03_21.txt`, `swap_step2.txt` |
-| the sentence list | **7 sites, 6 editing** — `sentence_list_final.txt` |
-| `(a1)` four slices, assembled, validated | **complete** |
+| the sentence list | **16 sites, 15 editing** — `sentence_list_final.txt` |
+| `(a1)` both banks — `L2000` in four slices, `L1300` in three, assembled | **complete** |
 | `repoint.py`'s `REFUSED` | **empty** — discharged, not carried |
-| the three sites needing a fresh run (`1.18`, `2.10`, the `1320` lensing scan) | owed |
+| `2.10` | **measured**, `→ 2.03`, by the `L1300` run |
+| `1.18` and the `1320` lensing scan | **blocked on a ruling**, not on a run: their banks are the superseded c54 states `r7637` marks historical |
+| site 2, the driving subtraction `0.1792 → 0.1790` | needs 69's ruling: `(b)` says stays, the precision says it moves |
 | `l.857`'s `0.14 %` through one procedure | owed, 70's bank |
 | P15 `l.164`'s `φ/π = −0.2361` | provenance gap, routed |
 | the one pass itself | waits on 69 reading this list |

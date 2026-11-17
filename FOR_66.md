@@ -63,28 +63,51 @@ keeps the filing and loses only the history.
 
 ## r7815+cc66.2 — **THE SENTENCE LIST IS 7 SITES; WIDENING THE SWAP FROM 5 RECEIPTS TO 21 BOUGHT NONE OF THEM; `(a1)` NAMED TWO BANKS AND ONLY ONE WAS RUN; AND THE `1.18` COLLIDES WITH YOUR OWN `r7637` RULING**
 
-### ① THE SENTENCE LIST, FINAL FOR THE SWAPPABLE HALF: **7 SITES, 6 CHANGING THEIR PRINTED DIGITS**
+### ① THE SENTENCE LIST: **16 SITES, 15 CHANGING THEIR PRINTED DIGITS**
+
+⌗ *This read `7` until `(a1)`'s **second** bank was run. `(a1)` named `cc66_lcdm` as well as
+`cc66_lcdm_L2000`, and with both re-pointed the swap finds 25 `(old → new)` pairs the one-bank round
+did not. The `7` was not wrong, it was incomplete, and the correction is the second bank.*
 
 | # | prints | measured | verdict |
 |---|---|---|---|
-| 1 | `214.1` (`sec:refit-bound`) | `214.06 → 204.71` | **EDIT → `204.7`** |
-| 2 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
-| 3 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
-| 4 | `1.13` (`fig:acoustic-nofit`) | `1.129 → 1.077` | **EDIT → `1.08`** |
-| 5 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
-| 6 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
-| 7 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
+| 1 | `2.10` (133-bin unlensed) | `2.100902 → 2.029426` | **EDIT → `2.03`** |
+| 2 | `0.1792` (the driving subtraction) | `0.1792 → 0.1790` | **⛔ a ruling is asked for — below** |
+| 3 | `214.1` | `214.1 → 204.7` | **EDIT → `204.7`** |
+| 4 | `1.16` | `1.16 → 1.11` | **EDIT → `1.11`** |
+| 5 | `2.35` (`sec:refit-bound`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 6 | `279.4` | `279.42 → 269.9136` | **EDIT → `269.9`** |
+| 7 | `2.09` | `2.090004 → 2.163614` | **EDIT → `2.16`** |
+| 8–11 | the four band quarters `0.77` / `1.44` / `2.62` / `3.73` | `→ 0.72` / `1.45` / `2.27` / `3.79` | **EDIT, all four** |
+| 12 | `1.60` | `1.601078 → 1.657468` | **EDIT → `1.66`** |
+| 13 | `1.13` | `1.129 → 1.077` | **EDIT → `1.08`** |
+| 14 | `2.35` (`fig:acoustic-nofit`) | `2.3456 → 2.4527` | **EDIT → `2.45`** |
+| 15 | `12.6` | `12.63 → 12.64` | no edit — moves inside its last digit |
+| 16 | `0.76` | `0.76 → 0.59` | **EDIT → `0.59`** |
 
-Four of these are new at `r7815`, and they are exactly the four my hand-read had named as *waiting on
-the step-2 bank* — the hand-read predicting the swap rather than following it. Four more receipts'
-figures moved with **no body sentence citing them**: re-derivations with no prose to edit.
+Every one of these is a site my hand-read had named as *waiting on a step-2 bank* — the hand-read
+predicting the swap rather than following it. Four more receipts' figures moved with **no body
+sentence citing them**: re-derivations with no prose to edit.
+
+⇒ **`16` is inside registered `(6b)`'s band of `12`–`20`**, which the swap logs alone (`7`) were not.
+The band was right; it looked wrong only because `(a1)`'s second bank had not been run.
+
+⛔ **AND ONE SITE NEEDS YOUR RULING. I HAVE NOT SETTLED IT.** Site 2 is the driving subtraction
+`0.1792`, which `r7811`'s `(b)` ruling says **stays where it is** — and its printed figure moves at
+its own precision, to `0.1790`. So `(b)` and the printed precision collide on exactly this figure:
+either the sentence is re-pointed with the rest, or it keeps `0.1792` and states which point that is.
+**I lean to the second**, because the sentence's content is a subtraction performed *on* the control
+and naming its point costs nothing, where re-pointing it would quietly turn a within-control
+difference into a standard-model number — the thing `(b)` exists to prevent. The measurement is mine;
+the choice is yours.
 
 ### ⛭ ② THE TELLING NEGATIVE, AND IT IS EVIDENCE FOR YOUR FRAMING
 
 | round | receipts run | moved ≥ 1 figure | new printed sites |
 |---|---|---|---|
 | step-8, all 21 that load a swappable bank | 21 | **16** | **0** |
-| step-2, the 10 that read `cc66_lcdm*` | 10 | 5 | **4** |
+| step-2, one bank re-pointed | 10 | 5 | 4 |
+| step-2, **both** `(a1)` banks re-pointed | 10 | 5 | **9 more** |
 
 Going from `r7809`'s 5 receipts to 21 took the moved-receipt count to **16** and produced **no new
 printed landing site at all** — the list stood at 3 through the entire step-8 round. **So the
