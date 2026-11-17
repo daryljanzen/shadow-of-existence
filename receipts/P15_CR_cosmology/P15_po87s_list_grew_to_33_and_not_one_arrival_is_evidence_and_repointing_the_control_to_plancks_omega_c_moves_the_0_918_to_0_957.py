@@ -3,6 +3,18 @@
 AS WRITTEN CANNOT BE DISCHARGED BECAUSE A CONTROL HAS NO LEAF RATE; AND RE-POINTING THE CONTROL TO
 PLANCK'S $\omega_c$ MOVES THE PUBLISHED $0.918$ TO $0.957$, HALVING THE ARM'S MARGIN. **
 
+** ⛭⛭⛭ r7821 ② (69's ruling): HELD TO ITS SNAPSHOT. **  *`r7807` pinned the receipt
+POPULATION at this file's authoring commit so that receipts other seats add later could not join the
+list.  It did not pin what the listed receipts READ, and the census classifies each one by the
+spectra its SOURCE loads -- so `r7819`'s control re-points moved the classification of receipts that
+had been on the list all along, and `29 + 4 = 33` came back `33 + 4 = 37` with no new defect and no
+new arrival.  That is the `r7615` coupling class by name: a census over the tree, coupled to a diff
+that names neither its path nor its file.*  ⇒ ** The census is now run from a DETACHED WORKTREE at
+`5986698fd`, this file's own commit, so the counts below cannot move with any later re-point and the
+headline stays the record it is.  The snapshot `census.py` blob is PINNED, and the gate REFUSES
+rather than passing if the commit is unreachable or the script is not the one that produced the
+headline. **
+
 Order r7805 (69), both items.  ① re-run the `r7667` PO-87 census on today's tree and classify every
 item re-derived / re-grounded / still standing.  ② which printed P15 figures depend on the control's
 UN-REFITTED point, and by how much does each move at $\omega_c=0.1200$ rather than the $0.120727$
@@ -71,6 +83,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 
 import numpy as np
 
@@ -105,9 +118,58 @@ G_(1, bool(_m48) and bool(_m30) and _n_rows == 30,
 # The census re-runs on today's tree and reports a LARGER list than the one banked.
 # r7807 (69): this receipt measures the census as a SNAPSHOT at its own authoring commit; receipts
 #   other seats add afterwards would otherwise join the list and redden every count below.
-_cen = subprocess.run([sys.executable, os.path.join(CEN, 'census.py')],
-                      capture_output=True, text=True, timeout=1800, cwd=ROOT,
-                      env={**os.environ, 'CENSUS_INDEX_AS_OF': '99530784b'})
+# ⛭⛭⛭ r7821 ② (69's ruling): ** THE SNAPSHOT IS NOW THE WHOLE TREE AND NOT ONLY THE INDEX. **
+#   `CENSUS_INDEX_AS_OF` pinned the receipt POPULATION at the authoring commit, which stopped later
+#   receipts from joining the list.  It did NOT pin what the listed receipts READ: the census
+#   classifies each one by the spectra its SOURCE loads, so `r7819`'s control re-points moved the
+#   classification of receipts that were on the list all along -- 29 + 4 = 33 became 33 + 4 = 37
+#   with no new defect and no new arrival.  *This is the r7615 coupling class exactly: a census over
+#   the tree, coupled to a diff that names neither its path nor its file.*
+#   ⇒ *** 69's ruling: `PO-87 is struck, and this receipt is the record of that row's list at r7805.
+#       Run its census against the tree at its authoring commit, through a worktree or `git show`,
+#       not against today's banks.  Its counts then cannot move with later re-points, and its
+#       headline stays the record it is.` ***
+#   So the census is run from a DETACHED WORKTREE at this receipt's own authoring commit, and it is
+#   the worktree's own copy of `census.py` that runs, because the script computes its ROOT from its
+#   own location -- running today's copy would walk today's tree whatever the cwd.
+#     ⌗ *`CENSUS_INDEX_AS_OF` is therefore no longer needed and is not passed: the worktree's
+#     `INDEX.md` IS the snapshot INDEX.  The variable stays in `census.py`, which is 69's.*
+#     ⛔ *And the `unmodified` claim is not taken on trust: the snapshot blob is PINNED below, so
+#     this gate refuses rather than passes if the script it runs is not the one that produced the
+#     headline.  The only change `census.py` has taken since is 69's `CENSUS_INDEX_AS_OF` block.*
+SNAP = '5986698fd1e18220dffc65266d15e29ed4fe04ba'          # r7805+cc66.1, this receipt's own commit
+SNAP_CENSUS_BLOB = '12059b2a95affd26b49d7635f43977b83880a61a'
+
+
+def _git(*a, cwd=ROOT):
+    return subprocess.run(['git', *a], cwd=cwd, capture_output=True, text=True)
+
+
+_have = _git('cat-file', '-e', SNAP + '^{commit}').returncode == 0
+_blob = _git('rev-parse', f'{SNAP}:computations/beyond_the_wall/'
+                          'r7667_cc66_po87_the_unfiltered_list/census.py').stdout.strip()
+if not _have or _blob != SNAP_CENSUS_BLOB:
+    print(f"  \u26d4 REFUSED: the authoring commit {SNAP[:9]} is not reachable in this clone "
+          f"(present={_have}) or its `census.py` is not the pinned blob (got {_blob[:9] or '-'}).  "
+          f"** This receipt is the RECORD of PO-87's list at r7805 and it cannot be re-measured "
+          f"against any other tree.  Nothing is asserted. **  *A shallow checkout is the usual "
+          f"cause: the receipt jobs run at `fetch-depth: 0` for exactly this reason.*")
+    sys.exit(1)
+_WT = os.path.join(tempfile.gettempdir(), f'po87_snapshot_{SNAP[:9]}')
+_git('worktree', 'remove', '--force', _WT)
+_add = _git('worktree', 'add', '--detach', '-q', '-f', _WT, SNAP)
+if _add.returncode != 0:
+    print(f"  \u26d4 REFUSED: could not place a worktree at {SNAP[:9]}: "
+          f"{(_add.stderr or _add.stdout).strip()[:300]}.  Nothing is asserted.")
+    sys.exit(1)
+try:
+    _cen = subprocess.run([sys.executable, os.path.join(
+        _WT, 'computations', 'beyond_the_wall', 'r7667_cc66_po87_the_unfiltered_list', 'census.py')],
+        capture_output=True, text=True, timeout=1800, cwd=_WT)
+finally:
+    _git('worktree', 'remove', '--force', _WT)
+print(f"  the census ran from a detached worktree at {SNAP[:9]} -- the tree this receipt's headline "
+      f"was measured on, not today's")
 OUT = _cen.stdout
 _m = re.search(r"PO-87's list: (\d+) derived \+ (\d+) declared = (\d+)", OUT)
 DERIVED, DECLARED, TOTAL = (int(x) for x in _m.groups()) if _m else (0, 0, 0)
@@ -122,7 +184,8 @@ _now = {re.sub(r'^.*/', '', p) for p in re.findall(r'^  \[\d+\] \[\w+\] (receipt
 NR = len(RULED - _now)
 DERIVED, TOTAL = DERIVED + NR, TOTAL + NR
 G_(2, (DERIVED, DECLARED, TOTAL) == (29, 4, 33) and CHEAP == 0 and _cen.returncode == 1,
-   f"the census re-runs UNMODIFIED on today's tree and the list has GROWN: {DERIVED} derived + "
+   f"the census re-runs UNMODIFIED on the tree AT THIS RECEIPT'S OWN AUTHORING COMMIT "
+   f"({SNAP[:9]}, r7821 \u2461) and the list has GROWN: {DERIVED} derived + "
    f"{DECLARED} declared = {TOTAL}, against the banked 26 + 4 = 30, with the cheap set at {CHEAP} "
    f"(it was 2) -- and the instrument reddens on its own pins (rc {_cen.returncode})")
 
