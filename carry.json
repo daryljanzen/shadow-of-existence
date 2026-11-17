@@ -211,11 +211,18 @@
    },
    "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43991223973",
-    "since": "786e4a0dfc87649599a7f455f3104b1db5a06a2b"
+    "since": "786e4a0dfc87649599a7f455f3104b1db5a06a2b",
+    "unmeasured": true
    },
    "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43991223973",
-    "since": "786e4a0dfc87649599a7f455f3104b1db5a06a2b"
+    "since": "786e4a0dfc87649599a7f455f3104b1db5a06a2b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44043702561",
+    "since": "706462d763dd19c1934b4c37fb3a6a35610c126e",
+    "unmeasured": true
    }
   }
  }
