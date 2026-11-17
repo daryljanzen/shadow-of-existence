@@ -115,14 +115,28 @@ def main():
               'likelihood are built and confronted below' in p15)
     check('and step ① is what it runs on: "carried on this cosmology\'s own background with the '
           'perturbations on the leaf congruence the framework assigns them"',
+          #: ⛭ r7819 (cc66): the sentence was SPLIT so each citation group pins only what it owns,
+          #: and the validation clause is now its own sentence.  The pin follows the prose and
+          #: deliberately carries NO percentage: the claim is that the control validates it, and the
+          #: figure belongs to the receipt that measures it.
           "a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$, "
           "carried on this cosmology's own background with the perturbations on the leaf congruence the "
-          "framework assigns them, and validated on its control to $0.23\\%$" in p15)
+          "framework assigns them" in p15
+          and "\\emph{And it is validated on its control} to " in p15
+          and "in the first-to-second height ratio in the configuration the arm's own numbers are "
+              "taken in" in p15)
     check('and the build no standard code could be plugged in for is VALIDATED against one on its '
           'control (C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation)',
+          #: ⛭ r7819 (cc66): the sentence was SPLIT so each citation group pins only what it owns,
+          #: and the validation clause is now its own sentence.  The pin follows the prose and
+          #: deliberately carries NO percentage: the claim is that the control validates it, and the
+          #: figure belongs to the receipt that measures it.
           "a two-arm line-of-sight Boltzmann integral, $\\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,d\\eta$, "
           "carried on this cosmology's own background with the perturbations on the leaf congruence the "
-          "framework assigns them, and validated on its control to $0.23\\%$" in p15
+          "framework assigns them" in p15
+          and "\\emph{And it is validated on its control} to " in p15
+          and "in the first-to-second height ratio in the configuration the arm's own numbers are "
+              "taken in" in p15
           and 'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation' in p15)
 
     # ⓶ step ① is built
