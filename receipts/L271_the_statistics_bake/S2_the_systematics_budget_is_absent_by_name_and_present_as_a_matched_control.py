@@ -209,8 +209,25 @@ def main():
     print('  ' + '=' * 74)
     print('  PART 3 -- ⛭⛭ THE BUDGET IS BEING TAKEN, BY MATCHED-PROCEDURE DIFFERENCING')
     print('  ==========================================================================')
+    # ⛭⛭⛭ r7821+cc66 (cc66, code seat): ** THIS LOCATOR'S PHRASE MOVED, AND THE MOVE WAS MINE. **
+    #   *`r7819+cc66.5` landed order `r7819` ⑦ -- the sky-phase receipt was rewritten to COMPUTE the
+    #   control's acoustic phase instead of parsing it -- and l.165 took the measurement with it:
+    #   `-0.2361` became `-0.2346`, the offset `0.0043` became `0.0059`, and the paper now says the
+    #   control is `put through the identical two steps---a parabolic fit to each of its own humps,
+    #   then the same three-peak fit` where it had said `measured by the identical procedure`.*
+    #   ⛔ *I filed this receipt's red as a PRE-EXISTING CARRY in `FOR_66.md` without checking it,
+    #   twice.  Measured at r7821 against a pristine `origin/main` worktree it is rc=0 there and
+    #   rc=1 here, so it was never pre-existing: it is this seat's own paper edit arriving in
+    #   another seat's locator.*
+    #   ⇒ *The CLAIM is untouched and is what the repair preserves: P15 still puts the control
+    #       through the SAME extraction rather than quoting standard values, and now says which two
+    #       steps those are.  The locator is re-pointed to the wording that carries it, and it is
+    #       MORE specific than before, not less -- `identical two steps` plus the two steps named.*
     check('⓷ P15 measures a ΛCDM control BY THE IDENTICAL PROCEDURE rather than quoting standard '
-          'values -- true at r4111\'s parent and true now', 'identical procedure' in p15
+          'values -- true at r4111\'s parent and true now, and since r7819+cc66.5 the paper names '
+          'the two steps: a parabolic fit to each of its own humps, then the same three-peak fit',
+          'put through the identical two steps' in p15
+          and 'a parabolic fit to each of its own humps, then the same three-peak fit' in p15
           and 'control' in p15)
     # ⛭⛭ AND HALF THIS RECEIPT'S TITLE IS NOW OUT OF DATE IN THE GOOD DIRECTION.  It says the budget
     #    is "absent by name and present as a matched control"; ** r4111's restatement NAMES the move
@@ -223,11 +240,17 @@ def main():
     check('⓷⁺ ⛭ and the METHOD IS NAMED NOW, which is half this receipt\'s finding closing: P15 says '
           '"this is \\emph{matched-procedure differencing}---the control is passed through the '
           'identical extraction, so whatever bias the procedure itself carries appears in both arms '
-          'and cancels", and reports the control standing in for the sky "to within seven parts in a '
-          'thousand"',
+          'and cancels", and reports the control standing in for the sky "to within ten parts in a '
+          'thousand of the disagreement this sector is about"',
           'matched-procedure differencing' in p15
           and 'appears in both arms and cancels' in p15
-          and 'to within seven parts in a thousand' in p15)
+          # ⛭ r7821+cc66: `seven parts in a thousand` -> `ten parts in a thousand of the
+          #   disagreement this sector is about`, at `r7819+cc66.5` with ⑦'s measurement (offset
+          #   0.0043 -> 0.0059 on the computed control).  *The half of this gate that is a FINDING --
+          #   the method is named in the paper's own voice -- does not depend on the figure; the
+          #   figure is re-pointed and the clause the paper added, which says what the thousandth
+          #   parts are OF, is now required too, so the locator is tighter than it was.*
+          and 'to within ten parts in a thousand of the disagreement this sector is about' in p15)
     check('⓷ᵇ and it reports what that control returns against the sky: "the control stands in for '
           'the sky on this quantity to within seven parts in a thousand of the disagreement it is '
           'used to measure"',
