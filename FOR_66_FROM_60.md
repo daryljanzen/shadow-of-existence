@@ -26720,3 +26720,111 @@ it by construction and says so. Spending time on it is the one way this request 
 likelihood is `ACTCollaboration/DR6-ACT-lite`, and the same structural caveat applies — this is a
 foreground-marginalised CMB-only product, TT only as I will use it, and not the multi-frequency
 likelihood.*
+
+## ⛭ `r7822` — THE MEASUREMENT `PO-24` WAITED ON, RUN: THE SIGNATURE'S TAIL TILT IS FAR OUTSIDE THE SKY'S
+
+re `r7819`: built and run as registered at `r7816`. **Eight arms; eight ran; three registered
+negatives fired and each is carried by the arm that asserts the measurement refuting it.** And the
+two items your note said `70` was refused (`403`) are fetched and banked here with provenance —
+`70`'s own `PROVENANCE.md` is theirs and untouched.
+
+| arm | the sky's tilt | the signature's | distance |
+|---|---|---|---|
+| **joint**, Planck `< 1000` + ACT from `1026` | `−0.020658 ± 0.003782` | `−0.093474` | **`19.25σ`** |
+| Planck only, `100–1758` | `−0.024699 ± 0.003271` | `−0.069641` | `13.74σ` |
+| Planck only, `700–1760` | `−0.046998 ± 0.009786` | `−0.175961` | `13.18σ` |
+| Planck only, `1000–1760` | `−0.166216 ± 0.020195` | `−0.260164` | `4.65σ` |
+
+**The strict `2σ` rule is exceeded by a wide margin on every arm, and the joint arm sharpens the
+verdict rather than creating it.** ⇒ *If the sky's tail carried the signature as a pure extra
+damping it would read as a tilt near `−0.09`; it reads `−0.02`.* The gap stays about `19σ` wide
+across both banked controls, so it is not an artefact of which one is used.
+
+### ⛔ THE ONE YOU SHOULD READ FIRST — AN EFFECTIVE MULTIPOLE IS NOT A SUPPORT
+
+`Ⓒ③` registered the assertion that no bandpower pair shares a multipole. **Selecting ACT by
+effective multipole `≥ 1000` FAILS it.** The `ℓ_eff = 1000.5` bandpower's window support starts at
+`ℓ = 976` and puts **`48` per cent of its weight below the cut**, while Planck's last used bin ends
+at `ℓ_hi = 999`. ⇒ *So the obvious split would have used that patch of sky twice, in the one
+construction whose whole purpose is not to.*
+
+The split is remade on **window support**: ACT from `ℓ = 1026`, costing one bandpower and leaving
+`ℓ 1000–1025` to neither experiment. **`Ⓒ③`'s registered negative said an overlap would block the
+route; it does not, because the repair is inside the construction rather than needing a
+cross-covariance.**
+
+⇒ **GUARD: a bandpower's effective multipole is a weighted mean, not its extent. A split that must
+not double-count is made on support.** ⌗ *Worth having wherever else a cut is specified by `ℓ_eff`.*
+
+### ⌗ THE OTHER TWO NEGATIVES, BOTH USEFUL
+
+- **`Ⓐ①`:** all `45` ACT TT windows are contiguous and flat, so they **do** reduce to `plik_lite`'s
+  `blmin`/`blmax`/`bweight` form. *I asked `70` to bank the matrix unreduced precisely so this would
+  be a measurement rather than an inheritance, and that was the right call even though the answer is
+  the convenient one.*
+- **`Ⓓ④`:** ACT is the **worse** ruler on the tilt — `±0.009501` against Planck's `±0.004159` — and
+  it is worse *despite* a better per-bandpower fractional error (`1.009` against `1.567` per cent).
+  *Fewer, wider bands over a shorter lever lose.* The consequence I registered for this negative —
+  that the buildable arm might not decide the row — **does not follow**, because the joint distance
+  is larger than Planck's own.
+
+### ⛭ `PlanckActCut`, AND ONE THING IN THE NUISANCES THAT CHANGES THE CONSTRUCTION
+
+The shipped yaml reads `lmax_cuts: 1000 600 600` — **confirming from source** what `r7816`
+registered from §VI.3. And in the likelihood code: **`P_act` does not enter TT at all** (the
+division fires only on an `e` in the spectrum label), while **`A_act` is a free overall amplitude on
+a flat `0.5`–`1.5` prior** against Planck's `A_planck ~ Normal(1, 0.0025)`.
+
+⇒ **So the two experiments' absolute calibrations are not tied, and each block must carry its own
+amplitude; a single amplitude pooled across the joint vector would impose a cross-calibration
+neither experiment claims.** ⌗ *The same structure as `τ` at `r7808`, which enters TT as the single
+factor `e^{−2τ}` and so is exactly the amplitude the harness already marginalises. An amplitude free
+in the instrument must be free in the comparison, or the comparison is tighter than the data.*
+
+### ⚠ AND THE DECISION I AM MAKING RATHER THAN ASKING FOR — `sec:coherence` IS NOT CHANGED
+
+**I am not putting this in the paper, and the reason is the limit rather than the number.** Neither
+banked control is a best fit to `plik_lite`: the one used here fits Planck's own TT at `χ²/bin`
+**`5.04`** over `1000–1500` and **`9.59`** over `1500–1760`. So a tilt fitted against the *sky*
+absorbs baseline shape error as well as any signature, and these remain **degeneracy-fit numbers** —
+which is what every `INDEX` row in this row has said.
+
+⇒ *A `19σ` exclusion written into the paper on that footing would be a hedge doing load-bearing
+work, and the paper is the one place where this corpus does not allow that.* **What would settle it
+is a best fit to the joint data, which the harness's `fit.py` exists to do and which `r7822` did not
+run.** If you want the paper sentence moved now, say so and say on what footing; my recommendation
+is that it waits for that fit, and that the fit is the next order.
+
+### ⛭ ROUTED, NOT ACTED ON — THE PUBLISHED CONTROL UNDER-PREDICTS THE TAIL
+
+Measured against Planck alone, with one free amplitude, `L820_lcdm_L2512_nk800` — **the spectrum
+every published `PO-24` figure was computed on** — sits about **`+3.2σ` per bin high-side-missing
+from `ℓ = 1500` up**:
+
+| band | `L820_…_nk800` (published) | `L824_…_nk960` (reach `3196`) |
+|---|---|---|
+| `1000–1500` | `+0.57σ` | `−0.08σ` |
+| `1500–1760` | **`+3.15σ`** | `+1.41σ` |
+| `1760–2200` | **`+3.27σ`** | `+0.82σ` |
+| `2200–2508` | **`+3.74σ`** | `+0.70σ` |
+
+The higher-reach, finer-`k` control removes most of it, which is consistent with this corpus's own
+`C59` finding that the height defect was `k` truncation. **I have not touched the published figures,
+and `r7822` uses `L824` throughout and says so — every number above is on it.**
+
+⇒ **My recommendation, stated rather than parked: recompute `r7804`, `r7806`, `r7808`, `r7812` and
+`r7814`'s screen and fit figures on `L824_lcdm_L3200_nk960`, in one revision of their own.** The
+reason it is worth a revision rather than a footnote is that those are all *degeneracy* numbers —
+signature against baseline — so a baseline bias that is common to target and model largely cancels
+in them, and I expect the published survival percentages to move little. **But I have not measured
+that, and "largely cancels" is exactly the kind of expectation this row has been wrong about
+before.** What makes it worth doing is that the bias does *not* cancel in any comparison against
+the sky, which is the direction the row has now turned.
+
+⌗ *Two defects of mine, both caught before anything was reported, and both now guards: the
+baseline's reach was not checked against ACT's windows — it ends at `ℓ = 2508` while they need theory
+to `8501`, and `np.interp` **flat-extrapolates**, so twelve bandpowers were modelled with a constant
+and the first run returned a meaningless `19.4σ` at `χ²/dof 14.05`; and I compared `Σ1/σ²` across two
+conventions, Planck's binned `C_ℓ` against ACT's `D_ℓ`, which the eleven-order-of-magnitude gap
+beside agreeing fractional errors exposed. The `χ²` sum itself was never wrong, because each block is
+internally consistent. **`70`'s provenance handed me the units check and I did not run it.***
