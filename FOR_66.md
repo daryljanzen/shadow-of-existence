@@ -19,6 +19,79 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+
+## r7819+cc66.6 — ⛔⛔ **THE PLAIN SUITE FOUND SIX RECEIPTS THIS PASS BROKE, AND I HAD BEEN REPORTING THE BRANCH GREEN. THREE ARE FIXED; THREE ARE YOURS**
+
+** The branch was never "green except `check_explainer_pins`". ** I was reading the
+FAST JOB and the LEAN LOCAL BATCH, and **neither runs receipts**. The plain suite
+does, and it is a CI job. Six receipts were red the whole time. Each was checked
+⒜ against its own failing assertion, ⒝ on a pristine `origin/main` worktree — all
+six GREEN there — and ⒞ for a fix to port. All six are this pass's.
+
+### ⒜ FIXED — and all three were the SAME error of mine
+
+*I moved figures on `LIST.md`'s attribution without reading what each sentence
+USES the figure for, which is exactly what your `r7817` working rule tells me to
+do. `r7815`'s list was my own deliverable, and its incompleteness is the single
+root cause running through all three.*
+
+1. **`P15_the_refit_bound_figures_…`** — ⛔ **`(2)` WAS WRONG ON ITS FACTS.** The
+   `2.33` **is** produced: it is the `grid base` arm/control ratio, `496.5/212.9`,
+   computed by that very receipt, whose own table prints it. At `(2)` I searched
+   six banks of my own choosing, missed that pair, and reported "a third figure,
+   written in and never produced". **And the clause I deleted to move it was
+   itself the `r7167` repair** — `where the computed spectrum sits at … times it
+   on the same bins` — whose locator exists to redden if those words are dropped.
+   Restored, and the six pin rows it restores are byte-identical to `main`'s. *Its
+   `L2000` control was also never re-pointed, so the paper printed `204.7/1.11/2.45`
+   while the receipt scored `214.1/1.16/2.35`; re-pointed now.*
+2. **`P15_the_licensed_configuration_…`** — l.1978's `l_A` restored to `301.375`.
+   Moving it to `301.602` **inverted the sentence's own finding**: the prose says
+   *the forbidden route overshoots*, which holds at `301.375` (arm `301.400` above
+   it) and fails at `301.602` (arm below it).
+3. **The abstract contradicted itself, since my own `0.918 → 0.960`.** l.137 said
+   the arm's `196.5` against the control's **`214.1`** as computed, and l.143 said
+   `0.960` times the control's distance. `196.5/214.1 = 0.918`; `196.5/204.7 =
+   0.960`. I moved the ratio and left the pair it is computed FROM, in the same
+   abstract. Now `204.7`. *Found by `C1`'s citation sweep, not by any figure gate.*
+
+### ⒝ YOURS TO RULE — three, each with the measurement already taken
+
+1. **`P15_the_residual_does_not_sit_at_ell_A_…` — five findings genuinely INVERT.**
+   Isolated by swapping each input: with `main`'s `nofit_figure_numbers.npz` only
+   `Ⓐ②` fails (caption vs bank); with mine, `Ⓐ②` passes and **five** fail. So the
+   re-pointed control moved what the receipt FINDS, not what it quotes:
+
+   | finding | on `main` | re-pointed |
+   |---|---|---|
+   | the two growths agree | arm `3.3×`, ctl `3.5×` | arm **`1.79×`**, ctl **`3.54×`** |
+   | the arm/control ratio is flat | `3.58/3.65/3.32`, 10 % | **`3.26/2.97/1.65`, 61 %** |
+   | the width candidate merely unsupported | ratio flat | ratio **falls by two** |
+   | the longer period is the arm's | — | the control **also** prefers `347`, Δχ² `8.6` |
+   | the separation | `4×` / `6.8×` | **`2.7×` / `4.7×`** |
+
+   ⇒ *Rewriting five of another seat's findings on my own reading is not mine to
+   do. Its own narration says the conclusion its NAME was written for is
+   "unchanged and better founded", which is a reading you should confirm.*
+2. **`P15_po87s_list_grew_to_33_…` — the tree CENSUS moved.** `33 + 4 = 37` against
+   the banked `26 + 4 = 30`, because my re-points changed WHICH BANKS receipts
+   load, so its classification shifted. *This is the `r7615` coupling class your
+   own cycle warns about by name — a receipt coupled to a diff that names neither
+   its path nor its file.* Refreshing its banked list changes its headline.
+3. **`C1`'s last flag: l.2107's `2.195` is now an ORPHAN, and that is my l.877
+   edit.** That sentence is UNCHANGED from `main`; moving l.877's `2.195` to
+   `2.203` left l.2107's the only one in the section, and its closing group cites
+   no receipt that computes it. ⌗ *The VALUE does not move — `r7813+70` measures
+   the unlensed ratio at Planck's point as `2.195` to three decimals — so this is
+   a citation decision, not a figure one, and after being wrong twice today on
+   exactly that kind of call I am not making a third from a list.*
+
+### ⌗ And one more of the list's gaps, for completeness
+
+`grid base`'s control is itself a swappable bank, so the restored `2.33` may be
+owed a move — but that needs the grid-base pair MEASURED at Planck's point.
+Named, not guessed.
+
 ## r7819+cc66.5 — the carry DRAINED: the fixed receipt is gone from every class, and the record-step timeout is NOT conditional on a red push
 
 The tolerance carry on this branch went **48 entries → 3**, and
