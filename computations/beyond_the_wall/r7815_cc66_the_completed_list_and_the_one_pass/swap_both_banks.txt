@@ -91,3 +91,56 @@
 ====================================================================================================
   P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb
 ====================================================================================================
+  as the tree stands: rc=0, 48 number(s) on 21 distinct line shape(s)
+  control re-pointed: rc=1, 49 number(s) on 22 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 20;  numbers on them: 47 (35 unchanged, 12 MOVED)
+  line shapes only in the un-swapped run: 1;  only in the swapped run: 2  (these are the red run's own diagnostics, not figures that moved)
+               696.0 -> 680.2           delta -15.8   control LCDM   185      <#>    <#>      <#>    <#>     <#>
+                3.76 -> 3.68            delta -0.08   control LCDM   185      <#>    <#>      <#>    <#>     <#>
+               214.1 -> 204.7           delta -9.4   control LCDM   185      <#>    <#>      <#>    <#>     <#>
+                1.16 -> 1.11            delta -0.05   control LCDM   185      <#>    <#>      <#>    <#>     <#>
+              -481.9 -> -475.4          delta +6.5   control LCDM   185      <#>    <#>      <#>    <#>     <#>
+                3.25 -> 3.32            delta +0.07   factor <#> and the arm by <#>, so the gap WIDENS.  *A smoothing operator helps
+               696.0 -> 680.2           delta -15.8   THIS control      <#>     <#>
+               214.1 -> 204.7           delta -9.4   THIS control      <#>     <#>
+              2.3456 -> 2.4527          delta +0.1071   arm (no-fit, arm of record): unlensed <#>, lensed <#>, <#> per bin, ratio <#>;
+               696.0 -> 680.2           delta -15.8   control (unmoved): unlensed <#>, lensed <#>, <#> per bin
+              214.06 -> 204.71          delta -9.35   control (unmoved): unlensed <#>, lensed <#>, <#> per bin
+                1.16 -> 1.11            delta -0.05   control (unmoved): unlensed <#>, lensed <#>, <#> per bin
+
+====================================================================================================
+  P15_the_handover_at_the_crossing_and_what_it_costs
+====================================================================================================
+  as the tree stands: rc=0, 69 number(s) on 29 distinct line shape(s)
+  control re-pointed: rc=1, 71 number(s) on 30 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 27;  numbers on them: 61 (58 unchanged, 3 MOVED)
+  line shapes only in the un-swapped run: 2;  only in the swapped run: 3  (these are the red run's own diagnostics, not figures that moved)
+             15472.6 -> 15482.1         delta +9.5   ** excess chi^2 over the control: coded +<#>, crossing +<#> — <#>% removed. **
+              4443.8 -> 4453.3          delta +9.5   ** excess chi^2 over the control: coded +<#>, crossing +<#> — <#>% removed. **
+                71.3 -> 71.2            delta -0.1   ** excess chi^2 over the control: coded +<#>, crossing +<#> — <#>% removed. **
+
+====================================================================================================
+  P15_the_po87_list_is_14_repoints_and_9_departures_and_the_control_at_plancks_own_point_turns_the_0_918_into_0_964
+====================================================================================================
+  as the tree stands: rc=0, 31 number(s) on 9 distinct line shape(s)
+  control re-pointed: rc=1, 62 number(s) on 12 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 2;  numbers on them: 8 (8 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 7;  only in the swapped run: 10  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_chi2_is_read
+====================================================================================================
+  as the tree stands: rc=0, 94 number(s) on 51 distinct line shape(s)
+  control re-pointed: rc=1, 98 number(s) on 55 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 44;  numbers on them: 81 (75 unchanged, 6 MOVED)
+  line shapes only in the un-swapped run: 7;  only in the swapped run: 11  (these are the red run's own diagnostics, not figures that moved)
+               214.1 -> 204.7           delta -9.4   <#>               control chi^2, 185 lensed bins      <#>
+                1.16 -> 1.11            delta -0.05   <#>             control per bin, 185 lensed bins       <#>
+                2.35 -> 2.45            delta +0.1   <#>                their ratio, arm over control       <#>
+               212.9 -> 203.8           delta -9.1   ** ON THOSE BINS, IN THAT CONFIGURATION, THE COMPUTED PAIR IS <#> AND 496.5. *
+              2.3320 -> 2.4358          delta +0.1038   their ratio, arm over control  ->  <#>  ->  <#>
+                2.33 -> 2.44            delta +0.11   their ratio, arm over control  ->  <#>  ->  <#>
+
+====================================================================================================
+  P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree
+====================================================================================================
