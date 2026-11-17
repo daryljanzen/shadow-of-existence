@@ -15,6 +15,75 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7819+cc66 — **RULINGS ①–⑧ TAKEN; AND ⑦ HAS A FORK YOUR INSTRUCTION DOES NOT SEE, SO I AM TAKING THE READING RATHER THAN PRINTING A MISMATCHED PAIR**
+
+### ⛭ ⑦ THE `φ/π = −0.2361` HAS NO PRODUCER — AND SWAPPING ONLY THE CONTROL WOULD PRINT TWO PROCEDURES UNDER THE WORDS "THE IDENTICAL PROCEDURE"
+
+**The provenance, traced as ordered.** `git log -S'0.2361' -- corpus/CR_cosmology.tex` reaches exactly
+one commit: `f618aa7ed`, *"r3005 — Stage One, P15: all four results written in"*. The same pickaxe
+over `computations/` and `receipts/` reaches no producer at any revision — its hits are later,
+unrelated files, and `r7815+cc66`'s own outputs. ⇒ **The figure was written in, and nothing in the
+tree has ever computed it.** Your ⑦'s second branch is the live one.
+
+**But the live measurement comes in two flavours, and the sentence's words choose between them:**
+
+| procedure | the sky | the control, re-pointed | offset | of the `0.615` disagreement |
+|---|---|---|---|---|
+| raw `score()`, the cell maxima | **`−0.2405`** | `−0.2379` | `0.0026` | 4 parts in a thousand |
+| the matched locator | `−0.2378` | **`−0.2295`** | `0.0083` | **14 parts in a thousand** |
+
+**The paper's printed sky figure, `−0.2404`, is the RAW one** (`score()` returns `−0.2405`). Your ⑦
+names `−0.2294`, which is the **matched locator's** control. Printing those two together would put a
+raw sky beside a matched control under the sentence's own words *"measured by the identical
+procedure"* — which is precisely the defect your `r7815` calibration ruling exists to prevent
+(*"every calibration sentence restates through one procedure"*).
+
+⇒ **So I am putting both sides through the matched locator**, and the sentence becomes the sky's
+`−0.2378` against the control's `−0.2295`, an offset of `0.0083`, fourteen parts in a thousand. That
+is one step past ⑦'s letter and I am naming it rather than doing it quietly. **Two reasons it is the
+right step:**
+- the raw control figure is an artefact twice over. `r7817+cc66.11` measured that at the re-pointed
+  control **all four** of the arm of record's raw cells coincide with the control's, where at the old
+  point only three did — so the raw grid can no longer separate the two arms at any peak, and its
+  φ is a statement about where the `LSTEP=2` cells fall;
+- the matched locator is the procedure that is identical **in kind** for a binned sky and a computed
+  spectrum, which is what the sentence claims to be doing.
+
+**Reverse it and I will print `−0.2404` against `−0.2295` instead**, with the "identical procedure"
+clause struck, since that pair cannot carry it.
+
+⌗ *And the receipt stops parsing: `P15_the_sky_phase_fit_and_its_uncertainty` reads all three figures
+out of the paper with `paper_one()`. It will COMPUTE the pair through the locator and assert it, as ⑦
+requires.*
+
+### The other rulings, taken
+
+- **① the 133-bin pair.** The separation test landed at `r7817+cc66.9`; the conclusion now quotes
+  **`2.06`** at two decimals, the `68.60` leg, which is the one the provenance defect is about.
+- **② the `2.33`.** Its owner is `P15_the_likelihood_pair_is_another_instruments_…`; its control is
+  being checked and the figure lands with the rest.
+- **③ site 12** is not a site. ⌗ *And the audit at `r7817+cc66.12` found why it ever looked like one:
+  the paper's `1.60` was pinned **by coincidence**, by that receipt's 133-bin refit ratio
+  `1.6010782`, a different quantity that happened to round there. Re-pointing moved the coincidence
+  away. The figure is right; the pin was never real.*
+- **④ the `1.18` and the lensing scan.** Numbers left as they are, each sentence given a clause
+  naming the c54 instrument state it records. No c54 run at Planck's point.
+- **⑤ θ\* at `l.293`.** Landing the wording as one state, no symmetry.
+- **⑥ `l.857`'s `0.14 %`.** Taken: the fluid path's CAMB number through the same locator.
+- **⑧ `P3`** verified `rc=0` on the merged tree.
+
+### Where the pass stands
+
+**Green:** all six re-pointed receipts; `check_figures_pinned`; `check_marker_transposition`;
+`check_appendix_current`. **Left:** ⑥'s measurement, ⑦'s receipt, ②'s owner, ④'s and ⑤'s clauses, the
+eight calibration sentences and six `0.960` sites in P7, P18 and `EXPLAINER.md`, a receipt pinning the
+`0.960`, the PDFs, and the `FOR_69.md` note on what the explainer pins must be reread against.
+
+⌗ *Three flags I caused were removed at their cause rather than baselined, and no baseline row was
+added: a rate quoted in a comment and a round window bound each made their receipt a spurious
+**carrier** of an unrelated printed figure, and the first rewording reproduced the collision because
+a comment that names the colliding value has to write it down.*
+
 ## r7817+cc66.3 — **THE PASS, IN FLIGHT: FOUR RECEIPTS GREEN, P15's TWELVE FIGURES IN — AND THREE THINGS THAT ARE NOT PIN UPDATES**
 
 ### ⛭ ① THE RE-POINTING MOVES A HARMLESS PROVENANCE DEFECT ONTO A ROUNDING BOUNDARY
