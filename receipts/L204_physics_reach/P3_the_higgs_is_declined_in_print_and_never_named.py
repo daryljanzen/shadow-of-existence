@@ -131,7 +131,16 @@ def main():
     for k, v in _ended.items():
         check(f'⛭ and "{k}" is NO LONGER at zero ({v} uses) -- supplied at c54.203; regression guard',
               v > 0)
-    for k, v in {k: v for k, v in zero.items() if k not in _ended}.items():
+    # r7817 (69): `spontaneous` is NO LONGER at zero either.  The chat seat's P14 parity passage (L550 Y3/Y4)
+    #   names the Nelson--Barr route, in which T is carried only "if it is broken spontaneously": the
+    #   corpus now names spontaneous breaking where it places the strong-CP phase.  The decline this receipt
+    #   guards -- the magnitudes are fixed on the ordinary route -- is asserted below and still holds.
+    #   `Goldstone` stays at zero.
+    _named = {k: v for k, v in zero.items() if k == 'spontaneous'}
+    for k, v in _named.items():
+        check(f'⛭ and "{k}" is NO LONGER at zero ({v} uses) -- named in P14\'s parity passage; regression guard',
+              v > 0)
+    for k, v in {k: v for k, v in zero.items() if k not in _ended and k not in _named}.items():
         check(f'⛔ and "{k}" appears ZERO times across all {len(P)} papers', v == 0)
 
     # ⓶ but it is principled and stated
