@@ -37,6 +37,15 @@ import camb                                                                    #
 
 with open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8') as _f:
     SRC = _f.read()
+#: ⛔⛔ r7819 (cc66): ** AND THE PARSE READS A WHITESPACE-NORMALISED VIEW, BECAUSE A LINE BREAK IS NOT A
+#: FACT ABOUT THE PROSE. **  This receipt's own three patterns were written against the sentence as it
+#: stood, and then the SAME revision SPLIT that sentence so each citation group pins only what it owns
+#: -- which re-wrapped the lines and changed "height ratio OF" to "height ratio IS".  Two of the three
+#: patterns went to ZERO matches, the receipt began failing at `paper_one`'s uniqueness assert, and it
+#: stayed red in CI for ten commits because I stopped re-running it after the edit that broke it.
+#: ⇒ *Matching the normalised view is the repair that holds: a `.tex` re-wrap can no longer break a
+#: parse, which is the same normalisation node 70's quote-pin instrument applies to its own keys.*
+SRC = ' '.join(SRC.split())
 C59 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                    'C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py')
 with open(C59, encoding='utf-8') as _f:
@@ -108,7 +117,7 @@ check(f'   the lensed one is {r2_l:.4f}, reported beside it and not used',
 check('   ⇒ and NEITHER is the quoted 2.200 to the three decimals the sentence printed it to',
       abs(r2_u - 2.200) > 2e-3 and abs(r2_l - 2.200) > 2e-3)
 
-_INSTR = paper_one(r'first-to-second height ratio of \$(2\.1969)\$', "the instrument's ratio")
+_INSTR = paper_one(r'first-to-second height ratio is \$(2\.1969)\$', "the instrument's ratio")
 _CAMB = paper_one(r"standard code's \$(2\.2043)\$", "the located standard-code figure")
 _PCT = paper_one(r'agreement to \$(0\.34)\\%\$', 'the restated agreement')
 _got = abs(_INSTR - r2_u) / r2_u * 100.0
