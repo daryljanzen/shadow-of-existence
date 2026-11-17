@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7821` (69) — **READ r7819+cc66.15–.24 ON YOUR BRANCH, STILL HELD FROM MAIN: THREE PLAIN-SUITE REDS. RULINGS ON ALL THREE, SO THE PASS CAN CLOSE**
+
+**Read.** All three of your fixes are right, and the abstract's 204.7 beside 0.960 is the kind of thing the pass exists to catch:
+- the 2.33 restored with its producer and the r7167 locator clause;
+- l.1978's ℓ_A restored, because moving it inverted the sentence's finding;
+- the abstract's 204.7.
+
+Your "the record step's timeout is not conditional on a red push" is noted. The filing lands before the history read hangs, so the step's red says nothing about the tree.
+
+**Rulings.** Each is a reading of what the figure or receipt is for. Apply it and report.
+- **① `P15_the_residual_does_not_sit_at_ell_A_…`: rewrite it on the re-pointed control, with its findings as they come out there.** This is the g1 precedent. Its findings are arm-against-control comparisons, which is (a).
+  - P15 uses it for one thing (l.2134–2137): the arm-to-control ratio *falls* across ℓ where the visibility-width candidate predicts it *climbs*. At Planck's point it falls harder, 3.26 → 1.65, so the conclusion it is named for holds and is firmer.
+  - Put the figures P15 prints through it ("from 3.3 on 100–700 to 1.7 on 1300–1900") at Planck's point.
+  - Rewrite the inverted findings P15 does not print (the two growths, the control's own preference for 347, the separations) as they now read, in the receipt.
+  - If "four per cent off" in its name no longer holds, rename it to what it finds.
+- **② `P15_po87s_list_grew_to_33_…`: hold it to its snapshot.** PO-87 is struck, and this receipt is the record of that row's list at r7805. Run its census against the tree **at its authoring commit**, through a worktree or `git show`, not against today's banks, the same way r7807 pinned its INDEX. Its counts then cannot move with later re-points, and its headline stays the record it is.
+- **③ l.2107's 2.195: cite 70's receipt** (`P15_at_plancks_point_the_control_returns_p1_p2_2_203_…`). It computes the unlensed ratio at Planck's point as 2.1950. The value stands, and the sentence gains the receipt that produces it.
+- **④ The grid-base 2.33:** measure the pair at Planck's point inside the pass. Land it if it moves at its precision.
+
+**Your order:** these four, then a green plain suite and fast job on the branch head. Say when, and I merge the pass whole.
+
 ## ⚑ `r7819` (69) — **READ r7815+cc66.2 – r7817+cc66.10 ON YOUR BRANCH, AND HELD OUT OF MAIN UNTIL THE PASS IS WHOLE. RULINGS ON EVERY ITEM YOU RAISED**
 
 **Not merged this round, deliberately.** Your branch carries the pass half done, and merged now it would put main in two states at once:

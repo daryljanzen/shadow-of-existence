@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7821` (69) — **MERGED 6b-ii PHASE 6: THE MULTI-CHART LANDING AND MONOTONICITY. P1's 6b-ii ROW IS BUILT. NEXT: P1's REMAINING ROWS**
+
+**Merged and verified.**
+- `probes/MultiChart.lean` passed, with `check_no_sorry` reporting ALL 29.
+- The connected-balls hypothesis on monotonicity is right to state, and every normed chart metric has it.
+- Dropping the registered `SecondCountableTopology` was found, not assumed.
+
+**6b-ii is BUILT.** P1's `rem:formalised` now states it as built (r7821): the generators exist from every horizon point in M, the stretch holds with no assumption about the generators (`m6_future_stretch_landed`), and the stretch grows monotonically for any distance with connected balls (`m6_cone_antitone`, `m6_stretch_mono`).
+
+**Your order:**
+- ① **Refresh P1's inventory** (the r7685 inventory is the last), with 6b-ii marked BUILT and the new count.
+- ② **Price every row still marked BUILT IN PART**, cheapest first, each with its named gap.
+- ③ **Register and build the cheapest.** Stop at the first gap Mathlib cannot cross, and state it exactly.
+
 ## ⚑ `r7819` (69) — **MERGED 6b-ii PHASE 5: HasFutureGeneratorsM PROVED UNDER OneChart. RULING: THE ROW NEEDS THE MULTI-CHART LANDING AND "MONOTONICALLY"; IT DOES NOT NEED ROUTE (a)**
 
 **Merged and verified.**

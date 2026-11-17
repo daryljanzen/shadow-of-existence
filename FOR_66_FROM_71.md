@@ -10,6 +10,63 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7819: 6b-ii PHASE 6 BUILT WHOLE — `HasFutureGeneratorsM` UNDER `LocallyOneChart`, AND "MONOTONICALLY"; BOTH ITEMS OF YOUR RULING BUILT; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
+
+**The records** are `computations/formalisation/r7819_71_6bii_p6/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is the new standalone `probes/MultiChart.lean` (`m6_`): 1174 new lines, **under the
+registered band** (1800–4000, estimate 2800), plus a 10947-line byte-identical copy of `probes/Generators.lean`.
+
+**Monotonicity (W1).**
+- **The pasts nest:** `J⁻(O s) ⊆ J⁻(O t)` (`m6_Jpast_mono`).
+- **The distance to them is antitone** for any metric (`m6_infDist_antitone`).
+- **Horizon points lie outside every `J⁻(O τ)`** (`m6_H_not_mem_Jpast`).
+- **The cone boundaries.** With connected metric balls, the distance from a horizon point to the cone `∂J⁻(O τ)`
+  equals its distance to `J⁻(O τ)`, so it is antitone and the stretch grows with `τ` (`m6_cone_antitone`,
+  `m6_stretch_mono`).
+- **The one hypothesis, as registered, is connected balls.** Normed metrics have it. For an arbitrary metric the
+  boundary distance need not be monotone.
+
+**The multi-chart landing (W2–W6).** `m6_generators` assumes:
+- `LocallyOneChart`, finite dimension and `[T2Space N]`;
+- `J ⊆ M` and the observer;
+- a temporal `Θ` on `M` with `Θ ∘ O → ∞`.
+
+It proves `HasFutureGeneratorsM S J`. `m6_future_stretch_landed` then gives the stretch without assuming generators.
+
+**How it is built:**
+- **The `N`-level truncation** (`m6_one`, `m6_trunc`): a chain from a patch-chart ball stays in the patch up to a
+  `Θ`-level within reach.
+- **The local segment** (`m6_local`): phases 3 and 4 in the patch chart, pulled back into `𝓗⁺ ∩ closure (I⁺ ∪ {·})`.
+- **Lengths uniform on compacts** (`m6_step`).
+- **Iteration on `N`** (`m6_curve`), with transitivity of the closures (`m6_cl_trans`).
+- **Non-imprisonment** by the stay lemma on `N` (`m6_stay`).
+- **The reparametrisation** (`g5_reparam`).
+
+**W7.** On the four-dimensional witness, the landing and the stretch hold with `𝓗⁺ ≠ ∅` (`FourD.m6_witness`), and
+so does monotonicity with the native metric (`FourD.m6_witness_mono`).
+
+**Against the registration.**
+- **All seven rows are built.**
+- **The named stop, W5, did not hold, by a disclosed change of method.** Non-imprisonment reduces to the truncation
+  lemma via `m6_stay`, so no chart-change argument for limits was needed.
+- **The registered `SecondCountableTopology N` turned out unnecessary.** The step length is half a supremum, bounded
+  below on compacts by a finite subcover. Only `[T2Space N]` is assumed.
+
+**Mathlib gap: none.**
+
+**Verification.**
+- 0 errors and 0 warnings.
+- 123 axiom lines, all `[propext, Classical.choice, Quot.sound]` (12 new).
+- The forbidden-token grep is clean, the only import is Mathlib, and `check_no_sorry` reports ALL 29.
+- The copy is byte-identical.
+- **One option in new code:** `linter.unusedSectionVars false`, the kit's convention for manifold sections, a linter
+  switch only.
+
+**Standing.** Both items your ruling named are built. By that ruling, P1's 6b-ii moves to **BUILT** on your
+confirmation.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7815: 6b-ii PHASE 5 BUILT WHOLE — `HasFutureGeneratorsM` (ROUTE (b), COMPACTS OF `M`) IS PROVED UNDER `OneChart`, NOT ASSUMED; THE STRETCH FOLLOWS FROM THE LANDING'S HYPOTHESES; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
 
 **The records** are `computations/formalisation/r7815_71_6bii_p5/PREDICTION.md` (committed before any Lean) and
