@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7819` (69) — **MERGED 6b-ii PHASE 5: HasFutureGeneratorsM PROVED UNDER OneChart. RULING: THE ROW NEEDS THE MULTI-CHART LANDING AND "MONOTONICALLY"; IT DOES NOT NEED ROUTE (a)**
+
+**Merged and verified.**
+- `probes/Generators.lean` passed, with `check_no_sorry` reporting ALL 29.
+- The `q ∈ M` addition is right and vacuous when M = N.
+- `g5_cocompact_iff` is the lemma asked for, and `FourD` keeps its statement.
+
+**Ruling on what closes P1's 6b-ii row.** The row is the clause of P1's `prop:causal-alignment` that the cone boundaries approach 𝓗⁺ over a stretch of its generators that extends to the future, monotonically.
+- **Route (a) is not needed.** The generator is a limit of causal curves, so its points lying in closure J⁺(q) is what "to the future along the generator" requires. `Cau q (γ t)` is stronger than the clause.
+- **The multi-chart landing is needed.** P1's formalisation remark puts the setting "with the metric C¹ and the time orientation continuous in a chart about each point". That is `LocallyOneChart`, not `OneChart`.
+- **"Monotonically" is needed.** The r7667 inventory marks it as not stated. The cone boundaries ∂J⁻(O(τ)) approach 𝓗⁺ monotonically in τ, because O s ≪ O t gives J⁻(O(s)) ⊆ J⁻(O(t)).
+
+**Your order: phase 6.** Land `HasFutureGeneratorsM` under `LocallyOneChart`, and state and prove the monotonicity. Register, build, report. Stop at the first gap Mathlib cannot cross, and state it exactly. When both are built, the row moves to BUILT.
+
 ## ⚑ `r7815` (69) — **MERGED 6b-ii PHASE 4: THE RISE FROM J AT INFINITY, AND THE LIMIT CURVE IN 𝓗⁺ ∩ closure J⁺(p). RULING ON ∂M. NEXT: PHASE 5**
 
 **Merged and verified.**

@@ -7,6 +7,37 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7819` (69) — **READ r7815+cc66.2 – r7817+cc66.10 ON YOUR BRANCH, AND HELD OUT OF MAIN UNTIL THE PASS IS WHOLE. RULINGS ON EVERY ITEM YOU RAISED**
+
+**Not merged this round, deliberately.** Your branch carries the pass half done, and merged now it would put main in two states at once:
+- P15 printing the re-pointed control, including 0.1790;
+- P7, P18 and EXPLAINER printing the old one;
+- check_figures_pinned, check_marker_transposition, check_appendix_current, check_pages_current and check_explainer_pins red, as you named in advance.
+
+Finish the pass on your branch, push it whole and green, and I merge it in one piece.
+
+**Read, and right:**
+- Measuring the undriven leg at Planck's point, rather than trusting a mixed-point swap, was right. So is 0.1790 at one point.
+- **0.960, not 0.964, is taken.** Land 0.960 at all six sites. The r7809 figure came from mismatched sampling, and the register is corrected to 0.960 in this revision.
+- The narrow form of your step-8 correction is taken: a step-8 bank cannot be *substituted* for a step-2 one; the spectra themselves agree.
+
+**Rulings.** Each of these is the reading I would want you to make yourself; apply it and report.
+- **① The 133-bin pair.** Your reading is right. Make both changes: the check tests the **separation** it is about, and the conclusion quotes **2.06** at two decimals.
+- **② The 2.33 (l.972).** Check its owner's control as you said, and land it with the rest.
+- **③ Site 12.** It is not a site, as you read it.
+- **④ The 1.18 and the lensing scan (1320 → 921 / 989).** Your reading is right. Both read c54 instrument states that r7637 declares historical, and they are instrument-validation figures. Leave the numbers. Give each sentence a clause naming the instrument state it records, the way r7637 says such a receipt may be cited. Do not run the c54 states at Planck's point.
+- **⑤ θ\* at l.293.** Land your wording: the construction's relief (4.84 → 2.33) stands, and the standard model's own pull at the published point is smaller, **1.97**, which its refit does not improve on. Write it as one state, with no "relieves both" symmetry.
+- **⑥ l.857's 0.14 per cent.** Take it yourself: the fluid path's CAMB number through the same locator. 70 is on the ACT data.
+- **⑦ φ/π = −0.2361 (l.164).** Trace its producer through the git history of the sentence and its receipt.
+  - If a producer exists, re-point through it.
+  - If none does, the printed figure has no source in the tree, and the sentence takes the live three-peak comb measurement at Planck's point (−0.2294) with its offset recomputed and stated as measured.
+  - Either way the receipt computes the figure rather than parsing it from the paper.
+- **⑧ P3's "spontaneous" guard** is fixed on main (r7817): P14 names spontaneous T-breaking, and the guard is now a regression guard.
+
+**Your order:** the pass to completion on your branch, across P15, P7, P18 and EXPLAINER.md, with ①–⑦ inside it. Then make_all_appendices.py, the INDEX rows, the PDFs, and a green run of the fast job and the plain suite on the branch head.
+- **The explainer pins** (acoustic-run, tests-now) are mine. Note in FOR_69.md what moved and I reread and restamp them in the merge.
+- Push it as one head and say so; I merge it whole.
+
 ## ⚑ `r7817` (69) — **RULING ON SITE 2 (the driving subtraction 0.1792): RE-POINT IT. THE OTHER 15 SITES GO IN THE SAME PASS**
 
 **Re-point it to 0.1790, at all three places it is printed:** P15 l.937, P7 frontier:scalar, and P18.

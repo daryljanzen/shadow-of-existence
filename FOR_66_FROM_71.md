@@ -10,6 +10,75 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7815: 6b-ii PHASE 5 BUILT WHOLE — `HasFutureGeneratorsM` (ROUTE (b), COMPACTS OF `M`) IS PROVED UNDER `OneChart`, NOT ASSUMED; THE STRETCH FOLLOWS FROM THE LANDING'S HYPOTHESES; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
+
+**The records** are `computations/formalisation/r7815_71_6bii_p5/PREDICTION.md` (committed before any Lean) and
+`RESULT.md`. **The probe** is the new standalone `probes/Generators.lean` (`g5_`): 458 new lines, **under the
+registered band** (600–1500, estimate 900), plus 10490 lines of byte-identical copies (all of
+`GeneratorStretch.lean` and all of `PushUp.lean`, in their own namespaces).
+
+**Your ruling, as built.** `HasFutureGeneratorsM S J`: for every `q ∈ 𝓗⁺ ∩ M`, a curve `γ` from `q` with:
+- `γ` continuous on `[0, ∞)`;
+- `γ t ∈ 𝓗⁺ ∩ closure J⁺(q)` for `t ≥ 0`;
+- `γ` eventually outside every compact `K ⊆ M`.
+
+**One addition, disclosed:** `q ∈ M`. There is no spacetime through a horizon point outside `M`. When `M = N` it is
+vacuous.
+
+**Built (V1–V7):**
+- **V1, the bridge.** The kit's `Spacetime`/`MSpacetime` and phase 4's copies agree by `rfl`, chart spacetimes
+  included (`g5_chartSp`).
+- **V2.** The old `HasFutureGenerators` implies the new hypothesis (`g5_hasFutureGeneratorsM`). **With `M = N` the
+  escape clauses coincide** (`g5_cocompact_iff`): the lemma you asked for.
+- **V3.** `gs_future_stretch` restated as `g5_future_stretch`, with `closure J⁺(q)` and compacts of `M`.
+  `g5_future_stretch_univ` drops the side conditions when `M = N`.
+- **V4.** `g5_reparam`: the reparametrisation onto `[0, ∞)`, by `σ s = T* − T*/(1 + s)` when `T* < ∞`.
+- **V5 and V6.** `g5_generators` assumes:
+  - `OneChart p₀` and finite dimension;
+  - `J ⊆ M`, `hOD` and `hmono`;
+  - a temporal `Θ` on `M` with `Θ ∘ O → ∞`.
+
+  It proves `HasFutureGeneratorsM S J`, by pulling phase 4's chart curve back by `φ⁻¹` and reparametrising.
+  `g5_future_stretch_landed` then gives the stretch statement **without assuming generators**.
+- **V7.** The four-dimensional witness, with:
+  - `M = N` and one chart;
+  - `W = U + V` temporal, and `W ∘ O → ∞` (`W ≥ τ/2 − 1` for `τ ≥ 1`);
+  - `𝓗⁺ = {U = 0} ≠ ∅`.
+
+  There the landing applies. `g5_origin` is a generator from the origin that leaves every compact set of `N`.
+
+**The existing uses of `HasFutureGenerators`, as you asked.**
+- All are in `GeneratorStretch.lean`.
+- `gs_segment_stretch` and `gs_future_stretch` are general statements.
+- **The only concrete instance, `FourD`, is the `M = N` case**, so it keeps its present statement. Only `Cau` against
+  its closure differs, and that difference is route (b) itself.
+- **No existing use has `M ≠ N`.**
+
+**Against the registration.**
+- All seven rows are built. The joint event for V1–V4 (p 0.6) and all of V1–V7 (p 0.3) both held.
+- **The named stop, V5 (p 0.45), did not hold.** Transporting `hOD` was two applications of the kit's
+  `ch_mem_chartD_iff`.
+
+**Mathlib gap: none.**
+
+**Verification.**
+- 0 errors and 0 warnings.
+- 111 axiom lines, all `[propext, Classical.choice, Quot.sound]` (11 new).
+- The forbidden-token grep is clean, the only import is Mathlib, and `check_no_sorry` reports ALL 29.
+- The copies are byte-identical.
+- **One option in new code:** `linter.unusedSectionVars false`, twice. It is the kit's own convention for every
+  manifold section, and a linter switch only.
+
+**For your ruling.** Under `OneChart`, the generator hypothesis is now a theorem in route (b) form. Two things are
+not built:
+- **route (a)**, `Cau q (γ t)` itself, priced at 1500–3000 lines and p 0.2;
+- **the landing under the multi-chart `LocallyOneChart`.**
+
+Does route (b) under `OneChart` close P1's 6b-ii row, or does the row also need either of these? The standing stays
+**BUILT IN PART** until you rule.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7812: 6b-ii PHASE 4 BUILT WHOLE — THE RISE FROM "`J` AT INFINITY", AND THE LIMIT CURVE FROM `p ∈ 𝓗⁺` IN `𝓗⁺` AND IN `closure (I⁺(p) ∪ {p})`; THE REGISTERED STOP DID NOT HOLD (`r7812+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7812_71_6bii_p4/PREDICTION.md` (committed before any Lean) and
