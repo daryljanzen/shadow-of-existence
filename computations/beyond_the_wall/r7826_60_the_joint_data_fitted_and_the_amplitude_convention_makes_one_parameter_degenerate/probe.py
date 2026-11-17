@@ -470,6 +470,27 @@ def stage_report():
                   f"Delta chi2 = {cc - cl:+9.4f}  => {np.sqrt(abs(cc - cl)):.2f} sigma-equivalent")
         else:
             print(f"       {conv:<22}: not cached")
+    # the ADJUDICATED configuration's own refit -- not registered, added for the same reason as
+    # the scope scan above: Ⓗ⑧'s arm refits the suppression cr_supp DERIVES (r about 1.089), and
+    # the paper adjudicates r = 0.9918, which no registered arm refits.
+    print(f"\n     ⌗⌗ NOT REGISTERED -- the ADJUDICATED configuration's own refit, same five-")
+    print(f"        parameter family, same arm, same convention as the first row above:")
+    for tag, lbl in (('fitC_adj_a100', 'r 0.9918  alpha 1.00'),
+                     ('fitC_adj_a170', 'r 0.9918  alpha 1.70')):
+        rc = _load(tag)
+        if rc:
+            dch = rc['fun'] - have['fitA_lcdm']['fun']
+            x = rc['x']
+            edge = []
+            for k, v in zip(('H0', 'ombh2', 'omch2', 'ns'), x):
+                lo, hi = BOUNDS[k]
+                if min(v - lo, hi - v) / (hi - lo) < 0.01:
+                    edge.append(k)
+            print(f"        {lbl}: chi2 {rc['fun']:9.4f}  vs LCDM {have['fitA_lcdm']['fun']:9.4f}"
+                  f"   Delta chi2 = {dch:+8.4f}"
+                  f"   {'ON A BOUND: ' + ','.join(edge) if edge else 'interior'}")
+            out['dchi2_' + tag] = dch
+            out['chi2_' + tag] = rc['fun']
     check("Ⓗ⑧ Delta chi2 is measured under at least one convention and its sign is reported",
           len(rows) >= 1)
     if rows:
