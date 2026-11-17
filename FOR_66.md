@@ -15,6 +15,69 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7817+cc66.3 — **THE PASS, IN FLIGHT: FOUR RECEIPTS GREEN, P15's TWELVE FIGURES IN — AND THREE THINGS THAT ARE NOT PIN UPDATES**
+
+### ⛭ ① THE RE-POINTING MOVES A HARMLESS PROVENANCE DEFECT ONTO A ROUNDING BOUNDARY
+
+`the_133_bin_pair`'s standing finding is that a hardcoded row carried the **68.62** run's figure where
+the **68.60** one belongs, and that the defect is *"provenance and not arithmetic"* because the two
+ratios agree at the precision the conclusion quotes. Its own check tests that by rounding both to one
+decimal. At Planck's point the check **fires**:
+
+| | 68.62 | 68.60 | separation | at one decimal |
+|---|---|---|---|---|
+| the corpus's old point | `1.9791` | `1.9923` | `0.0132` | `2.0` and `2.0` — agree |
+| Planck's published point | `2.0488` | `2.0625` | `0.0137` | **`2.0` and `2.1` — differ** |
+
+⇒ **The defect's size has not changed.** The separation is `0.0132` before and `0.0137` after. What
+changed is that the pair now **straddles the `2.05` rounding boundary**, so a one-decimal quote
+separates two numbers it used to merge.
+
+**My reading, stated as your working rule asks:** the receipt's claim survives and its *test* does
+not. "Provenance and not arithmetic" is a statement about the separation, and the separation is
+unchanged; `round(x, 1)` is a knife-edge that happens to sit between these two values at the new
+point and did not at the old one. So the check should test the **separation** it is actually about,
+and the conclusion should quote the figure at **two** decimals (`2.06`) where it now quotes `×2.0`,
+so the published number does not depend on which side of a boundary the control's point puts it.
+**I have not made either change yet** — the second is a wording in `sec:refit-bound` and the first
+rewrites another seat's own headline test, and both are cheap to reverse but not cheap to un-land.
+
+### ⛔ ② A SEVENTH RECEIPT IS IN THE PASS, AND THE MATCHER COULD NOT SEE IT
+
+P15 `l.972` prints *"the computed spectrum sits at `2.33` times it on the same bins"*, and `2.33`
+moves. The matcher missed it because the figure's owner —
+`P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob` — is
+**not among the receipts that sentence cites**. The per-receipt linkage that killed `r7812`'s 26 false
+sites also hid this true one. The `2.33` is **left untouched** until that receipt's control has had the
+same check, rather than guessed at from the neighbouring pair.
+
+### ⛔ ③ AND SITE 12 WAS A FALSE LANDING SITE
+
+The matcher paired the paper's `1.60` with a measured `1.601078 → 1.657468`. Read by hand they are
+different quantities: the receipt's is its **133-bin refit** ratio on the arm of record; the paper's is
+the **185-bin full-range refitted** ratio, `1.61/1.01`, which cannot move with the control's starting
+point. **Not edited.** So the completed list is **15 sites, not 16**, with a sixteenth (`2.33`) owed a
+receipt — and the lesson is that a per-receipt linkage is *necessary and not sufficient*, because a
+receipt that computes many quantities can match a printed figure on the wrong one.
+
+### What is green, and what is left
+
+**Green, re-pointed, all checks pass:** `the_full_range_lensed_comparison`, `the_no_fit_confrontation`
+(and `corpus/make_fig_acoustic_nofit.py` with its figure regenerated), `the_anomalous_driving` (both
+legs), and the driving figure measured at one point. **P15 carries twelve re-pointed figures.**
+
+**Left:** `the_133_bin_pair`'s remaining pins (its five narrated figures and its two pinned ratios,
+whose new values are measured and in hand: `1.601078 → 1.657468`, `1.348222 → 1.379568`,
+`1.680854 → 1.719934`, `1.623301 → 1.661043`, and the pair `2.062459` / `2.163614`);
+`at_its_own_preferred_H0` and `the_selection_does_not_truncate`; the eight calibration sentences and
+the six `0.918 → 0.960` sites in P15, P7, P18 and `EXPLAINER.md`; a receipt pinning the `0.960`
+failably; then `make_all_appendices.py`, the INDEX rows and the PDFs.
+
+⌗ *CI's reds on the intermediate heads are this state and were named in advance: the receipts in
+scope do not all reach exit 0 while the pass is open, which reds the tolerance perturbation and the
+runner-read sweep; `check_appendix_current`, `check_pdf_current` and `check_figures_pinned` follow the
+generated artefacts and the paper text and close at the end of the pass.*
+
 ## r7817+cc66.2 — ⛔ **SITE 2's `0.1790` IS A MIXED-POINT DIFFERENCE. THE UNDRIVEN LEG IS STILL AT THE OLD POINT, AND I AM RUNNING IT AT PLANCK'S RATHER THAN PRINT THE NUMBER**
 
 Your ruling on site 2 is right and I have taken it — the figure is `(a)` and the three sentences set

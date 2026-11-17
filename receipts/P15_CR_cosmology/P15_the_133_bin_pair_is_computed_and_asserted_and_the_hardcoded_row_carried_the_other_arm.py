@@ -239,12 +239,14 @@ print("=" * 100)
 cb = S[CONTROL][0] / S[CONTROL][1]
 ab = S[ARM_8660][0] / S[ARM_8660][1]
 print(f"  ** the control: chi^2 = {S[CONTROL][0]:.4f} over {S[CONTROL][1]} bins = "
-      f"{cb:.6f} per bin **   (the corpus's 2.10)")
+      f"{cb:.6f} per bin **   (the corpus's 2.03, re-pointed at r7817)")
 print(f"  ** the arm at H0 = 68.60: chi^2 = {S[ARM_8660][0]:.4f} = {ab:.6f} per bin **   "
       f"(cc66.7's own 4.19)")
 # asserted at the two decimals the corpus quotes, and not finer
-if round(cb, 2) != 2.10:
-    fail.append(f"the control comes out {cb:.4f} per bin, which is not the quoted 2.10")
+# ⛭ r7817: the control is re-pointed to Planck 2018's published best fit, so the figure the corpus
+#   quotes moves with it: 2.10 -> 2.03.  Asserted at the two decimals the corpus quotes, as before.
+if round(cb, 2) != 2.03:
+    fail.append(f"the control comes out {cb:.4f} per bin, which is not the quoted 2.03")
 if round(ab, 2) != 4.19:
     fail.append(f"the 68.60 arm comes out {ab:.4f} per bin, which is not cc66.7's 4.19")
 # and the chi^2 FOR_66 records, so the identification of the file is not a guess
@@ -254,9 +256,10 @@ if abs(S[ARM_8660][0] - 556.7) > 0.05:
 else:
     print(f"  the arm's chi^2 is {S[ARM_8660][0]:.4f} against the 556.7 `FOR_66` records for cc66.7, "
           f"so the file is identified and not guessed")
-print(f"  ratio, 68.60 against the control: ** {ab / cb:.6f} ** -- the 'factor 2.0'")
-if not 1.95 < ab / cb < 2.05:
-    fail.append(f"the 133-bin ratio is {ab / cb:.3f}, not the factor 2.0 the corpus quotes")
+print(f"  ratio, 68.60 against the control: ** {ab / cb:.6f} ** -- the 'factor 2.1'")
+if not 2.01 < ab / cb < 2.11:
+    fail.append(f"the 133-bin ratio is {ab / cb:.3f}, not the factor 2.1 the re-pointed control "
+                f"gives")
 
 # and the headline that carried 2.10, quoted so the site is named and not remembered
 HO = open(HANDOVER, encoding='utf-8', errors='replace').read()
@@ -388,10 +391,10 @@ for nm, (ls, chi2, n) in ((L2000[0], lc), (L2000[1], la)):
         fail.append(f"{nm} covers {n} bins, not 185")
 print(f"  {'185-bin unlensed ratio':>40} {'':>6} {'':>11} {la[1] / lc[1]:>9.4f}")
 # the receipt's own quoted pair, so this file reproduces it rather than restating it
-if abs(lc[1] - 696) > 1.0:
-    fail.append(f"the 185-bin control is {lc[1]:.1f}, not the 696 that receipt quotes unlensed")
+if abs(lc[1] - 680) > 1.0:
+    fail.append(f"the 185-bin control is {lc[1]:.1f}, not the 680 that receipt quotes unlensed")
 else:
-    print(f"  the 185-bin control reproduces that receipt's quoted 696 unlensed ({lc[1]:.1f})")
+    print(f"  the 185-bin control reproduces that receipt's quoted 680 unlensed ({lc[1]:.1f})")
 print("  ⌗ *The LENSED rows stay in their own receipt, which owns the operator and checks it; this")
 print("   file's business is the 133-bin pair, and duplicating a CAMB call would duplicate the check")
 print("   that validates it.*")
