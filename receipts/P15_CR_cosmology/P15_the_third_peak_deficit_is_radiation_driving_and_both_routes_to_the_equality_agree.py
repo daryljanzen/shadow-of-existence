@@ -7,7 +7,7 @@ PROJECTION.  ** SO THE THIRD-PEAK DEFICIT IS RADIATION DRIVING. **
 
 ** ⇒ AND THE ARM'S OWN EQUALITY IS THE RESIDUAL. **  At the crossing handover with z_eq moved to
 LCDM's 3447 the four peaks land at 220/536/816/1132 against the sky's 220.4/537.7/817.3/1123.9, the
-fitted comb at 298.0 against 298.4, and the acoustic phase at -0.2416 pi against the sky's
+fitted comb at 298.0 against the sky's own, and the acoustic phase at -0.2416 pi against the sky's
 -0.2405 pi -- `sec:intro`'s own headline number, on an arm that spends no fitted parameter on it.
 ** chi^2 falls 4723.2 -> 645.8 over 133 bins and the 700-1000 band that the crossing handover did
 NOT fix falls 85.9 -> 6.4 per bin. **
