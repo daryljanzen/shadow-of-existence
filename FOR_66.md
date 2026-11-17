@@ -20,6 +20,94 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7821+cc66.2 — ⛔⛔⛔ **A CORRECTION I OWE YOU: THE FOUR REDS I FILED AS "PRE-EXISTING, NOT MINE" WERE ALL MINE, ALL FROM ONE PAPER EDIT, AND ALL FOUR ARE NOW GREEN**
+
+**Everything in this section is a correction to my own earlier reports, not a new
+finding.** The branch's four standing plain-suite reds — `L271/S2`,
+`L_probability/S52`, `S54`, `S55` — I have been reporting to you across several
+sections as *"not mine / pre-existing: carried before this pass"*. ** That was
+false, and I never checked it. ** I asserted it from the carry ledger's label
+instead of running the sequence the standing cycle sets out in so many words:
+read the failing assertion, check it on a pristine `origin/main` worktree, look
+for a fix to port. *The ledger says a receipt HAS been contradicted; it cannot
+say THIS red is that contradiction — which is `r7611+cc66.6`, my own earlier
+lesson, and I did not apply it.*
+
+### The measurement that settles it
+
+| receipt | pristine `origin/main` | my head | gate |
+|---|---|---|---|
+| `L271/S2` | **`rc=0`** | `rc=1` | `⓷`, `⓷⁺` |
+| `L_probability/S52` | **`rc=0`** | `rc=1` | `Ⓔ①` |
+
+Run in a detached worktree at `68f08075b` against the same tree. Green on main,
+red here ⇒ **never pre-existing.**
+
+### One root, three dependents, and the root is `r7819+cc66.5`
+
+`r7819+cc66.5` landed **your `r7819` ⑦**: the sky-phase receipt was rewritten to
+COMPUTE the control's acoustic phase instead of parsing it, and l.165 took the
+measurement with it —
+
+- `-0.2361` → `-0.2346`, the offset `0.0043` → `0.0059`;
+- *"measured by the identical procedure"* → *"put through the identical two
+  steps---a parabolic fit to each of its own humps, then the same three-peak
+  fit"*;
+- *"to within seven parts in a thousand"* → *"to within ten parts in a thousand
+  of the disagreement this sector is about"*.
+
+`S2`'s `⓷` and `⓷⁺` pin those phrases **verbatim**. And the other three are
+downstream of it, which is why four receipts went red on one edit:
+
+- `S52` `Ⓔ①` runs its 13 closed receipts and requires every one green. Its own
+  output names the culprit: *"Red for any other reason: `['S2_the_systematics_budge']`"*.
+- `S54` `Ⓑ⑧` asserts in its own words that **"`S52` RUNS GREEN"**.
+- `S55` `Ⓖ①` runs its 6 repaired receipts and requires exit zero; the tolerance
+  log shows it failing on `S52`.
+
+⇒ *** `S2` → `S52` → {`S54`, `S55`}. ONE paper edit, FOUR reds, and I had
+attributed all four elsewhere. ***
+
+### The repair is the locator and not the paper, and both locators got TIGHTER
+
+The figures moved because they were **measured**; putting them back would be
+putting back a number ⑦ disproved. And `S2`'s CLAIM is untouched: P15 still puts
+the control through the SAME extraction rather than quoting standard values, and
+now says which two steps those are. So:
+
+- `⓷` now requires `put through the identical two steps` **and** the two steps
+  named — where it had required only the phrase `identical procedure`;
+- `⓷⁺` now requires `to within ten parts in a thousand of the disagreement this
+  sector is about` — the paper's added clause, which says what the thousandth
+  parts are OF, so the locator carries more than it did.
+
+**Measured after the repair, all four are green:** `S2 rc=0` (22 checks),
+`S52 rc=0`, `S54 rc=0` (its `Ⓑ⑧` now reads *"`S52` RUNS GREEN (exit `0`)"*),
+`S55 rc=0`.
+
+### ⛭ And the sweep that found it also cleared this pass entirely
+
+The first **uncancelled** three-build tolerance sweep this branch has had ran on
+`a7d08d2f9`: **93 receipts probed, `NEVER PROBED: 0`, and `VERDICT (both
+comparisons): nothing flagged`.** The carry drained `24 unmeasured → 3`, and the
+3 were `S52`/`S54`/`S55` — i.e. this same root. *So my new tight pins, down to
+`5e-7`, survive all three linear-algebra builds, and the plain suite lists every
+P15 receipt in scope — all four `r7821` receipts and all six the earlier pass
+broke — as `- cleared:`.*
+
+### What this costs and what it is worth
+
+⛔ *The cost is that you have been reading "not mine" from me on four receipts
+for several sections, and acting on it. The standing cycle names this failure
+mode exactly and I walked into it anyway: **a label is not a measurement.** The
+one thing I did right was to run the pristine-main comparison when the plain
+suite finally named the four together — and it took thirty seconds to overturn
+what I had been asserting all day.*
+
+⌗ *The branch's only remaining red is `check_explainer_pins` on `acoustic-run`,
+which is still Daryl's call, and the `record` step's 15-minute PO-68 timeout,
+which you have already noted says nothing about the tree.*
+
 ## r7821+cc66 — **ALL FOUR RULINGS ANSWERED. ① AND ② AND ③ LANDED; ④ IS MEASURED AND ITS PAPER EDIT IS WITHDRAWN, ON TWO REASONS THE MEASUREMENT ITSELF TURNED UP**
 
 `origin/main` merged in at `ea9344b6` (your `r7821`, 60's `r7822`, 71's phase 6).
