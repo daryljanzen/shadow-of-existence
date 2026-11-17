@@ -94,8 +94,12 @@ PAPER = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
 # Ⓖ⑦ and Ⓗ⑧ say these numbers are what sec:coherence adjudicates; a receipt that only hardcoded
 # them would stay green if the paper moved.  check_unread_figure named exactly that, and was right.
 _PAPER_SRC = open(PAPER, encoding='utf-8').read()
-_m_adj = re.search(r"with both lengths carried to the visibility peak, \$r=(\d+\.\d+)\$", _PAPER_SRC)
-_m_alp = re.search(r"\\alpha=(\d+\.\d+)\$ the instrument's", _PAPER_SRC)
+# ⌗ EACH SPAN IS THE SHORTEST WORD-ALIGNED ONE THAT CARRIES ITS CLAIM, which is what the grain
+# clause asks of a pin: "visibility peak" is what makes this r the ADJUDICATED endpoint rather than
+# one of the paper's several ratios, and "the instrument" is what makes this alpha the measured
+# exponent rather than the imposed one.  Any shorter span would match a different object.
+_m_adj = re.search(r"visibility peak, \$r=(\d+\.\d+)\$", _PAPER_SRC)
+_m_alp = re.search(r"\\alpha=(\d+\.\d+)\$ the instrument", _PAPER_SRC)
 R_ADJUDICATED = float(_m_adj.group(1)) if _m_adj else float('nan')
 ALPHA_FROM_PAPER = float(_m_alp.group(1)) if _m_alp else float('nan')
 ALPHA_SOURCE = 1.70                        # the instrument's own exponent on the faithful route
