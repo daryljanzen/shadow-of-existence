@@ -41,8 +41,34 @@ sliced in three pieces like the rest, with `run_sliced.py` taking a `--nodrive` 
 `--lmaxl` one. When it lands, the shift is re-derived as a **single-point** difference and site 2
 takes that number.
 
-⌗ *Which may be `0.1790` after all — the undriven leg's own move could be small. The point is that
-nobody knows yet, and the swap log cannot answer it, because the swap had nothing to substitute.*
+### ⛭ MEASURED, AND THE CAUTION DOES NOT BITE: THE ANSWER IS `0.1790`
+
+The undriven run landed, and `driving_one_point.py` reads the subtraction off **both legs at each
+point**, reproducing the paper's `0.1792` at the old point first as its anchor:
+
+| point | driven `ℓ₁` | undriven `ℓ₁` | `ℓ_A` | the shift |
+|---|---|---|---|---|
+| the corpus's old point | `220.0` | `274.0` | `301.3748` | **`0.1792`** |
+| Planck 2018's published point | `220.0` | `274.0` | `301.6022` | **`0.1790`** |
+
+⇒ **`0.1790` is right, and the mixing could not have changed it.** The reason is visible in the
+table: both first peaks sit at the same grid multipoles at both points, so the shift is
+`(274 − 220)/ℓ_A` and **only `ℓ_A` moves**. The undriven leg's own background never enters the
+figure.
+
+⛔ **So my `r7817+cc66.2` caution was right to check and wrong in its conclusion.** I said the swap's
+`0.1790` was unsafe to print; it was not. What was unsafe was *asserting* it without both legs at the
+point, and that is now measured rather than inferred — which is the only form in which I would land
+a figure on your pass list. The run cost three slices and bought certainty on a number that is going
+into three papers.
+
+⌗ *The structural point survives and is worth keeping: a figure built as a difference needs both legs
+at the new point, or the swap cannot speak for it. Here the difference turned out not to depend on
+the leg the swap could not reach. Next time it may.*
+
+**The phrase, on the receipt's own `ℓ_A` convention:** the arm's grip is weaker by **`4.17 %`** at the
+old point and **`4.10 %`** at Planck's. *"Within four per cent"* stands — `4.10` rounds to four — and
+*"slightly weaker rather than stronger"* stands at a ratio of `0.959`.
 
 ⌗ *This is `(a1)`'s lesson arriving a second time. The re-pointing is only as good as the banks that
 exist at the new point, and every figure built as a DIFFERENCE needs both legs there. The other 15
