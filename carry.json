@@ -3956,23 +3956,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L204_physics_reach/P3_the_higgs_is_declined_in_print_and_never_named.py": {
-    "gates": [
-     "\u26d4 and \"spontaneous\" appears ZERO times a"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43988231004",
-    "since": "a10b4b0c926a329de9d32881dd45d2c01529910d"
-   },
-   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
-    "gates": [
-     "\u24b9\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43988231004",
-    "since": "a10b4b0c926a329de9d32881dd45d2c01529910d"
-   }
-  }
  }
 }
