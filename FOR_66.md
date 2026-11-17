@@ -20,6 +20,56 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7821+cc66.4 — the branch's six live reds are ONE root in `L550 Y8`, and here is the whole chain measured link by link
+
+**Amends `r7821+cc66.3`, which named only the first two links.** The plain
+suite on `23efadf4b` lists six still red. Every edge below is a receipt's own
+printed output or a run on a pristine `origin/main` worktree — none of it is an
+inference from the carry ledger, which is the mistake `r7821+cc66.2` corrects.
+
+```
+main's L550 Y8  ──>  L204/P11   ──>  S5   ──>  S54
+("the right handed      ("sterile"        (F1)      (B5: "S5 RUNS GREEN")
+ neutrino is a          at ZERO)                ──>  S55
+ singlet of the                                       (G1: S5 is the 1 of 6)
+ standard model's  ──>  L221/B2    ──>  S14
+ group")                ("Majorana"       (B1: B2 is the 1 of 4)
+                         absent)
+```
+
+| link | the receipt's own words |
+|---|---|
+| `P11` | *"and `sterile` appears ZERO times"* — `rc=1` on pristine `main` AND here, **byte-identical stdout** |
+| `B2` | *"the standard NAMES are absent: `Majorana` appears 1 times"* — same, byte-identical |
+| `S5` `Ⓕ①` | *"12 of 14 exit 0 on this tree"*, naming `exit 1 P11` and `exit 1 B2` |
+| `S14` `Ⓑ①` | its own table: `V1 clean rc=0`, `P13 clean rc=0`, `B1 clean rc=0`, **`B2 clean rc=1`** |
+| `S54` `Ⓑ⑤` | *"`S5` RUNS GREEN (exit `1`)"* |
+| `S55` `Ⓖ①` | `{'S20': 0, 'S51': 0, 'S52': 0, 'S12': 0, 'S24': 0, 'S5': 1}` |
+
+⌗ *And `S14` is `rc=1` on the pristine `main` worktree too, so the base-redness
+is established on the dependent as well as on the root.*
+
+### What this says about the class, which is the part worth your ruling
+
+`r7821+cc66.3` reported `L550`'s build-out walking through `L204`'s absence
+guards one commit at a time — `Y3`/`Y4` supplied `spontaneous` (reddening
+`L204/P3` and `S47` through it), `Y8` supplies `sterile` and `Majorana`.
+** What this measurement adds is the FAN-OUT. ** Two absence guards going red
+took FOUR receipt-runner receipts with them, because `S5`, `S14`, `S54` and `S55`
+each run a set of receipts and require every one green. *So the cost of one
+absence guard tripping is not one red, it is one red plus everything that runs
+it — and the `S`-series is built to run things.*
+
+⇒ *** The two guards are the only edit needed; the other four clear by
+themselves. The patch is the one `L204/P3` already has a precedent for twice: an
+absence guard retired into a regression guard, reading the new use and asserting
+the claim the guard protects still holds. The paragraphs are another seat's and
+the ruling on both guards is yours, so neither is touched here. ***
+
+⌗ *`S2` and `S52` are absent from the live red list, which is the
+`r7821+cc66.2` repair holding: `S52` measures `rc=0` on this tree with
+"13 exit zero … Red for any other reason: none".*
+
 ## r7821+cc66.3 — the one named red in the tolerance sweep is `S5`, and it is `main`'s own `L550` build-out walking through `L204`'s absence guards
 
 **Routed, with the measurement taken, because the remedy is another seat's prose
