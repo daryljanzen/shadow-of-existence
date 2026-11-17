@@ -140,6 +140,25 @@ print(f"  {'control (LCDM)':>19} {3447:>5d} {0.3150:>7.4f} "
       f"{CTL['phi'] / np.pi:>8.4f} {CTL['p12']:>7.3f} {CTL['p13']:>7.3f} {CTL['chi2']:>8.1f} "
       f"{CTL['band'] / CTL['nband']:>9.2f}")
 
+# ⛭⛭ r7821 ③ (69's ruling on l.2107): ** THE CONTROL'S TWO HEIGHT RATIOS ARE PINNED ON
+#   LITERALS, BECAUSE `CR_cosmology` NOW CITES THIS RECEIPT FOR THEM. **  *The paper's
+#   `sec:refit-bound` prints the control's first-to-second and first-to-third height ratios on the
+#   polarisation path, and until r7821 that sentence cited nothing -- `C1`'s sweep had the figure
+#   closed only through l.877, whose own number moved at `r7819` ⑥, which orphaned it.  This
+#   receipt is what `C1` names as the producing one, and it is: the control row above returns both.*
+#   ⇒ *A printed figure is pinned by a COMPARISON and not by a print, so the two are asserted here
+#       against literals at the three decimals the paper prints them to.  Perturb the control
+#       spectrum and this reddens.*  ⌗ *70's `P15_at_plancks_point_the_control_returns_p1_p2...` is
+#       cited beside it and returns 2.1950 for the first ratio at PLANCK's published point -- a
+#       corroboration at a different point, as that receipt's own text says.  Its second ratio there
+#       is 2.1935, which is why the paper's second figure is pinned HERE and not there, and why the
+#       sentence was split so each citation group carries only what its receipts can fail on.*
+print(f"  the control's height ratios, pinned: P1/P2 = {CTL['p12']:.6f}, P1/P3 = {CTL['p13']:.6f}")
+if not (round(CTL['p12'], 3) == 2.195 and round(CTL['p13'], 3) == 2.191
+        and abs(CTL['p12'] - 2.195) < 1.1e-3 and abs(CTL['p13'] - 2.191) < 1.1e-3):
+    fail.append(f"the control's height ratios are {CTL['p12']:.4f} and {CTL['p13']:.4f}, not the "
+                f"2.195 and 2.191 sec:refit-bound prints on the polarisation path")
+
 print()
 print("=" * 108)
 print("  PART 2 -- ** THE TEST: DOES P1/P3 TRACK THE EQUALITY OR THE ROUTE? **")
