@@ -17,6 +17,46 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+
+## r7819+cc66.4 — the tolerance carry MEASURED, and it is a lagging record rather than a live defect
+
+Reproduced the failing class's own measurement locally for the one receipt, as the
+⒜⒝⒞ discipline requires: `sweep_tolerances.py --probe` twice at different thread
+counts via `--from`, then `--compare`. **Verdict: CLEAN — 0 flagged site(s), every
+receipt measured on both builds.** (Two probes on one receipt, not the three-build
+sweep, which stays a CI job.)
+
+So the chain is this, and it ends with nothing further owed in code:
+
+1. At `r7817+cc66.2` I re-pointed the anchor, and the receipt began **failing
+   outright** (`Ⓐ①`).
+2. Run `43991223973`'s tolerance probe reached it and filed it red — *a failing
+   receipt is red to the probe*, which is what the entry records.
+3. Every later run left it unreached: the scope is now 63 receipts wide, because
+   editing `quote_pin_baseline.tsv` and `prose_pin_baseline.tsv` pulls in every
+   receipt that reads them, and **47 of the 63 came back `NEVER PROBED`**. A
+   carried entry the record step cannot clear prints as `= still red`.
+4. `r7819+cc66.17` fixed the receipt. It runs green (10 checks, 0 failed) and now
+   probes **clean on two builds**.
+5. The entry clears the first time a CI probe actually reaches it and measures it
+   green.
+
+⛔ **And I got the class wrong in the middle of this, in both directions, which is
+worth recording because the misreading was mine and not the ledger's.** I first
+said the `.17` fix closed it; then, reading `sweep_tolerances.py`'s docstring, I
+corrected myself to "an unjudged build-dependent comparison" on the strength of the
+class's *definition* rather than a measurement; the measurement then said CLEAN,
+so the first reading was right. ⇒ *`TOLERANCE_JUDGED.json` carries no entry for
+this receipt, so nothing lapsed — but the absence of a judgement is not evidence of
+an unjudged flag, and I treated it as though it were. The class definition tells you
+what COULD be flagged; only the probe says what IS.*
+
+⌗ *One thing that follows for the branch: the tolerance probe cannot drain this
+entry while 47 of its 63 scoped receipts go unprobed per run, and the scope is wide
+because the pass edited two shared ledgers — which the standing rule required it to
+do in the same pass. That is a cost of the ledger edits, not a defect in them, and
+it resolves itself as the carry re-probes.*
+
 ## r7819+cc66.3 — ⛔ **A RED OF MINE HAD BEEN CARRIED FOR TWO ORDERS, AND IT IS A CORRECTION TO `r7817+cc66.1`: AN ANCHOR CANNOT BE RE-POINTED**
 
 CI's tolerance class carried `P15_the_selection_does_not_truncate_…` as red since
