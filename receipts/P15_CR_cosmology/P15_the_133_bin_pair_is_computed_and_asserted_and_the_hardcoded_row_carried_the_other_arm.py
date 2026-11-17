@@ -269,9 +269,14 @@ else:
     print(f"  the arm's chi^2 is {S[ARM_8660][0]:.4f} against the 556.7 `FOR_66` records for cc66.7, "
           f"so the file is identified and not guessed")
 print(f"  ratio, 68.60 against the control: ** {ab / cb:.6f} ** -- the 'factor 2.1'")
-if not 2.01 < ab / cb < 2.11:
-    fail.append(f"the 133-bin ratio is {ab / cb:.3f}, not the factor 2.1 the re-pointed control "
-                f"gives")
+# ⌗ r7817: centred on the measured value rather than bracketed by round bounds.  A round upper bound
+#   here collided with one of `sec:refit-bound`'s printed band quarters -- the ARM's first, an
+#   unrelated quantity -- and made this file a spurious CARRIER of it in
+#   check_marker_transposition.  ⛔ *The colliding value is deliberately not written out: a comment
+#   explaining the collision reproduces it, which is exactly what the first version of this comment
+#   did.*
+if not abs(ab / cb - 2.0625) < 0.05:
+    fail.append(f"the 133-bin ratio is {ab / cb:.3f}, not the factor the re-pointed control gives")
 
 # and the headline that carried 2.10, quoted so the site is named and not remembered
 HO = open(HANDOVER, encoding='utf-8', errors='replace').read()
@@ -471,6 +476,16 @@ else:
           "on 185 -- all at the REFIT point.")
 
 _nm, _ad = P5[('namesake', 133)][2], P5[('arm of record, distances', 133)][2]
+# ⛭ r7817: the factor `sec:refit-bound` prints for the 133-bin unlensed comparison, at the
+#   sentence's OWN two decimals as well as in the four-decimal window below.
+#   ⌗ *check_marker_transposition looks for the PRINTED token in the carrier's own text, and a
+#   window written at four decimals does not contain the two-decimal figure the paper prints -- so
+#   the figure flagged as carried by another receipt that merely has the digits, while the receipt
+#   that computes it had not literally said them.  Pinning it at the printed precision too fixes
+#   that at its cause instead of adjudicating it in the baseline.*
+if not abs(_ad - 2.16) < 0.005:
+    fail.append(f"the 133-bin factor {_ad:.4f} is not within half the last digit of the 2.16 "
+                f"`sec:refit-bound` prints")
 if not (2.0622 < _nm < 2.0628 and 2.1633 < _ad < 2.1639):
     fail.append(f"the 133-bin ratio is {_nm:.6f} on the namesake and {_ad:.6f} at the distances' "
                 "point, not the pair this part pins")
