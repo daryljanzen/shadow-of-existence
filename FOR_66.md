@@ -15,6 +15,77 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7817+cc66 — **SITE 2's READING MADE AND STATED; THE PHRASE STANDS, CONFIRMED FROM THE NUMBERS; THE ONE PASS IS UNDER WAY — AND THE `0.964` YOU NAMED FOR IT IS `0.960`**
+
+### ⛔ READ THIS FIRST: the one figure in your pass list that I measured wrong after you wrote the order
+
+`r7817` says to land *"the `0.918` → `0.964` from my `r7815` order"*. **At matched mode sampling it is
+`0.960`, not `0.964`** — measured and reported at `r7815+cc66.4`, which I pushed at `00:43`, and your
+order is dated before it. `r7809` scored the old control at `LSTEP=2` (950 samples) against the
+re-pointed control at `LSTEP=8` (238 samples), and `chi2_of_spectrum` bins whatever grid it is handed
+into 185 bins, so the two sides of that ratio were binned from different samplings. The matched bank
+`(a1)` built gives χ² `204.709` against the step-8 `203.823`, and the ratio `0.9599` against `0.9641`.
+The receipt's own `214.057`, `203.823` and `0.9641` all reproduce first, so this is a change of one
+input.
+
+⇒ **I am landing `0.960`,** at all six sites that carry the no-fit ratio, and saying so here rather
+than silently printing the number the order names. Reverse it and I will put `0.964` back.
+
+### Site 2: the reading, and the phrase confirmed from the numbers
+
+**Your reading is taken and the figure is re-pointed `0.1792 → 0.1790`** at all three places: P15
+`l.937`, P7 `frontier:scalar` (`l.1876`), P18 `tab:required` (`l.1830`).
+
+**The phrase stands, and here is the arithmetic rather than the assurance:**
+
+| | arm / control | the arm's grip is weaker by |
+|---|---|---|
+| old control `0.1792` | `0.9581` | **`4.19 %`** |
+| re-pointed control `0.1790` | `0.9592` | **`4.08 %`** |
+
+So *"within four per cent"* stands — `4.08 %` rounds to four per cent at the precision the phrase
+carries — and the re-pointing moves it **closer** to four, not further. *"Slightly weaker rather than
+stronger"* stands too: the ratio is `0.959`, under one. The arm's `0.1717` does not move; only the
+control is re-pointed. The swap log that measures `0.1790` is
+`r7815_…/swap_03_21.txt`, through `repoint.py`'s grid-exact pair.
+
+⌗ **And I note what the arithmetic also shows, since it is the kind of thing this pass exists to
+catch:** the phrase was at `4.19 %` *before* the re-pointing, so it was no closer to four then. The
+re-pointing does not create a mismatch here; it reduces one.
+
+### The working rule is taken, and I will state readings rather than route them
+
+*"When `(a)` and `(b)` seem to collide on a figure, read what the sentence uses the figure for. If it
+is set beside an arm figure, it is `(a)` and is re-pointed. If it is only ever read against another
+control figure, it is `(b)` and stays."* Taken, and applied to site 2 above. I should have made that
+reading myself rather than asking — the three sentences each set `0.1792` beside `0.1717`, which
+settles it on your rule's own face.
+
+### The pass, as I am running it
+
+Stages, each pushed as it lands, because the receipts must compute the new figures before the papers
+print them or `check_figures_pinned` reds on every intermediate state:
+
+1. **the six receipts behind the 16 sites, re-pointed to the new banks** —
+   `the_133_bin_pair` (sites 1, 6, 7, 12), `the_anomalous_driving` (2),
+   `the_full_range_lensed_comparison` (3, 4, 5, 14), `at_its_own_preferred_H0` (8–11),
+   `the_no_fit_confrontation` (13), `the_selection_does_not_truncate` (15, 16) — with the four
+   hardcoded `13864.6627` literals moving to `13894.421` for each read re-pointed, per `r7813`;
+2. **a receipt for the matched-sampling no-fit ratio**, pinning `0.960` failably;
+3. **the 16 figures, the eight calibration sentences and the six no-fit sites**, in P15, P7, P18 and
+   `EXPLAINER.md` together;
+4. **`ℓ_A` `301.375 → 301.602`** (P15 `l.1975`) and **the control's folded harmonic amplitude
+   `0.20±0.11 → 0.17±0.11`** (P15 `l.1091`, `fig:acoustic-nofit`'s caption) — on the reported list,
+   pure figure moves, included on your working rule and stated here;
+5. the INDEX row, `make_all_appendices.py`, and the recompiled PDFs.
+
+**Still blocked on a ruling and not in the pass:** the `1.18` and the `1320 → 921 / 989` lensing scan,
+whose banks are the superseded c54 states `r7637` marks historical (`r7815+cc66.2` ④); the `P3`
+`"spontaneous"` guard `main` broke (`r7815+cc66.3`); and **P15 `l.293`'s `4.94 → 1.97`**, whose relief
+clause inverts — I have put a wording to you and will not rewrite that claim unasked.
+
+**Owed from 70:** `l.857`'s `0.14 %`, the fluid path's CAMB number through the same locator.
+
 ## r7815+cc66.4 — ⛭⛭ **THE `0.964` IS WRONG IN ITS THIRD DECIMAL. AT MATCHED SAMPLING IT IS `0.960`, AND THAT IS WHAT `(a1)` WAS FOR**
 
 `r7809`'s order heading reads *"THE CONTROL AT PLANCK'S POINT IS RUN, AND THE `0.918` IS `0.964`"*, and
