@@ -288,8 +288,12 @@ if not (max(abs(v) for v in _pc.values()) > 10.0 * abs(_tot * 100)):
 if not (56.0 < _pc[(700, 1000)] < 61.0 and -16.0 < _pc[(400, 700)] < -12.5
         and 22.0 < _pc[(100, 400)] < 25.5 and -7.5 < _pc[(1000, 1300)] < -4.5):
     fail.append("the four per-cent moves are not where this part pins them two-sided")
-if not (2.70 < max(AORD['bands'][b] / CTL['bands'][b] for b in BANDS) < 2.80):
-    fail.append("the arm of record's worst band ratio is not the 2.75 this part pins")
+# ⛭ r7817: the control is re-pointed, so every band RATIO moves even though the arm's own bands do
+#   not.  The worst goes 2.75 -> 2.95, and it also CHANGES BAND: it was the 700-1000 quarter at
+#   both points, but 100-400 now runs it close at 2.91 where it was further behind, because the
+#   control's first quarter fell hardest (0.766 -> 0.723) while its last rose.
+if not (2.90 < max(AORD['bands'][b] / CTL['bands'][b] for b in BANDS) < 3.00):
+    fail.append("the arm of record's worst band ratio is not the 2.95 this part pins")
 
 print()
 print("=" * 112)
@@ -612,14 +616,19 @@ print(f"    against which the paper's own printed pair, l.2072-2074, offers "
 #:   tabled at, so a re-point of any bank fails here rather than changing a reported number silently.*
 for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
         ('THE SKY', _MSKY, (220.98, 533.79, 814.79, 1121.85), 298.362, 296.906, -0.7692, 2.221, 2.262),
-        ('the control, L2000', _MCTL, (220.44, 537.29, 811.06, 1123.99), 298.441, 295.308, -0.7674,
-         2.204, 2.225),
+        # ⛭⛭ r7817 (69), THE ONE PASS: the control is re-pointed to Planck 2018's published best
+        #   fit, so its WHOLE ROW moves -- which is exactly what this table was built to make
+        #   visible: 'a re-point of any bank fails here rather than changing a reported number
+        #   silently', and it did.  The two control rows are the only ones that move; the sky's,
+        #   the namesake's and the arm of record's are bit-identical across the move.
+        ('the control, L2000', _MCTL, (220.60, 537.65, 811.77, 1124.95), 298.718, 295.586, -0.7683,
+         2.203, 2.230),
         ('the namesake, L2000', _MNSK, (221.11, 538.63, 815.49, 1130.79), 300.589, 297.189, -0.7835,
          2.274, 2.336),
         ('the ARM OF RECORD', _MAOR, (220.03, 536.25, 811.59, 1125.11), 299.057, 295.782, -0.7815,
          2.291, 2.349),
-        ('hier, the control', _MHCT, (220.45, 537.31, 811.04, 1123.96), 298.429, 295.299, -0.7672,
-         2.204, 2.225),
+        ('hier, the control', _MHCT, (220.60, 537.67, 811.75, 1124.92), 298.705, 295.577, -0.7681,
+         2.203, 2.229),
         ('hier, the namesake', _MHNS, (221.11, 538.64, 815.47, 1130.76), 300.578, 297.180, -0.7834,
          2.274, 2.335),
         ('hier, the ARM OF RECORD', _MHAO, (220.03, 536.27, 811.58, 1125.02), 299.029, 295.773,
@@ -684,7 +693,13 @@ for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
 #:     than a changed input would have been, and the reason to leave both readings on the record.*
 SKY_SPREAD_PO47 = 2.36            # PO-47's locating spread on the sky's fourth peak -- WORKING STATE
 HIGH_IN_PRINT = 1.4               # l.2790: the fourth peak sits this many locating spreads high
-SHARED_IN_PRINT = 0.67            # l.2790: "two thirds of that offset shared with the control"
+# ⛭⛭ r7817: the control's fourth peak moves from 1123.99 to 1124.95, within a tenth of a
+#   multipole of the arm's 1125.11, so the SHARE of the arm's offset that the control also carries
+#   rises from 0.66 to 0.95 -- from two thirds to nearly all of it.  ⛔ *That is a claim and not a
+#   digit: "two thirds of that offset shared with the control" becomes "nearly all of it", and the
+#   clause is no longer in P15 (69 reworded it), so this constant now records what the receipt
+#   measures rather than what the paper prints.  Reported at r7817+cc66.4.*
+SHARED_IN_PRINT = 0.95            # the control's share of the arm's offset, re-pointed
 _off_arm = float(_MAOR['pk'][3]) - float(_MSKY['pk'][3])
 _off_ctl = float(_MCTL['pk'][3]) - float(_MSKY['pk'][3])
 _high = _off_arm / SKY_SPREAD_PO47
@@ -763,21 +778,31 @@ check("⛭⛭⛭ ** AND THE SECOND INSTRUMENT ANSWERS l.2075 IN ITS FAVOUR, ON B
 #: ⛔⛭⛭ r7653 ⓵ -- ** AND THE RAW-GRID ROW ON THE ARM OF RECORD IS THE LSTEP=2 TRAP IN ITS PUREST FORM. **
 #:   *l.2073-2074 prints "this path's" peaks and heights from `score()`, the RAW-GRID method: the
 #:   namesake gives 222/538/818/1134, comb 298.0, phi/pi -0.2349, heights 2.264/2.298.  On the arm of
-#:   record the same method gives 220/536/814/1130 -- and its first THREE maxima land on the CONTROL's
-#:   own cells, so its three-peak comb (297.0) and its phi (-0.2379) come out BIT-IDENTICAL to the
-#:   control's while the heights (2.281/2.312) do not.*  ⇒ ** So the arm-of-record figure for l.813's
+#:   record the same method gives 220/536/814/1130 -- and at r7817's re-pointed control ALL FOUR of
+#:   its maxima land on the CONTROL's own cells, so its three-peak comb (297.0) and its phi (-0.2379)
+#:   come out BIT-IDENTICAL to the control's while the heights (2.281/2.312) do not.  ⛭ *At the old
+#:   point only the first three coincided; the control's fourth has moved 1128 -> 1130.*  ⇒ ** So the arm-of-record figure for l.813's
 #:   comb cannot come from this method: 69's landed 299.1 is the MATCHED locator's 299.057, and the
 #:   raw grid's 297.0 is an artefact of where the LSTEP=2 cells fall. **
 check("⛔⛭⛭ the raw-grid row on the arm of record is held to its own digits -- peaks 220/536/814/1130, "
       "comb 297.0, phi/pi -0.2379, heights 2.281 and 2.312 -- AND its comb and phi are bit-identical "
-      "to the control's, because its first three maxima land on the control's own LSTEP=2 cells while "
-      "its fourth does not (1130 against the control's 1128)",
+      "to the control's, because ALL FOUR of its maxima now land on the control's own LSTEP=2 "
+      "cells -- the fourth included, at 1130, where the un-refitted control sat at 1128 -- so the "
+      "raw-grid method cannot separate the two arms at any peak (r7817)",
       [int(v) for v in AORD['P']] == [220, 536, 814, 1130]
       and abs(AORD['lA'] - 297.0) < 0.05 and abs(AORD['phi'] / np.pi - (-0.2379)) < 5e-5
       and abs(AORD['p12'] - 2.281) < 0.0005 and abs(AORD['p13'] - 2.312) < 0.0005
       and AORD['lA'] == CTL['lA'] and AORD['phi'] == CTL['phi']
-      and [int(v) for v in AORD['P']][:3] == [int(v) for v in CTL['P']][:3]
-      and int(AORD['P'][3]) != int(CTL['P'][3]),
+      # ⛭⛭ r7817 (69), THE ONE PASS: ** THE RE-POINTING MAKES THE TRAP TOTAL. **  At the corpus's old
+      #   point the raw grid separated the two arms at the FOURTH peak alone -- 1130 against the
+      #   control's 1128 -- and this clause asserted that one difference.  At Planck's point the
+      #   control's fourth maximum lands on 1130 too, so ALL FOUR cells coincide and the raw-grid
+      #   method cannot tell the two arms apart at any peak.
+      #   ⇒ *That strengthens what this part is for rather than weakening it: the 297.0 comb was
+      #   already an artefact of where the LSTEP=2 cells fall, and now the artefact is complete.  The
+      #   clause is therefore turned over -- it asserts the COINCIDENCE at all four, two-sided, so a
+      #   future re-point that pulls them apart again fails here rather than passing quietly.*
+      and [int(v) for v in AORD['P']] == [int(v) for v in CTL['P']],
       f"arm of record raw grid {[int(v) for v in AORD['P']]} comb {AORD['lA']:.1f} "
       f"phi/pi {AORD['phi'] / np.pi:.4f} heights {AORD['p12']:.3f}/{AORD['p13']:.3f}; "
       f"control {[int(v) for v in CTL['P']]} comb {CTL['lA']:.1f} phi/pi {CTL['phi'] / np.pi:.4f}")
