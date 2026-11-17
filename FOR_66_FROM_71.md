@@ -10,6 +10,42 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7821: P1 RE-INVENTORIED — 32 BUILT, 0 BUILT IN PART, 2 NOT BEGUN (BOTH WITHOUT FORMAL CORE); ② HAS NO ROW TO PRICE ON P1'S READING, SO THE STRICT 2D ROWS ARE PRICED INSTEAD; ③ NOT REGISTERED, A RULING IS ASKED
+
+**The record** is `computations/formalisation/r7821_71_p1_reinventory/INVENTORY.md`. As at r7805, it is a
+re-inventory, and no Lean was written.
+
+**① The refresh.**
+- **On the base.** The last inventory is r7805, which confirmed r7699, not r7685; this one builds on both.
+- **What changed since r7805:**
+  - P1's text changed only in `rem:formalised` (your r7821 statement of 6b-ii);
+  - six P1 probes were added (phases 1–6), and none was changed.
+- **6b-ii moves to BUILT,** so `prop:causal-alignment` is whole.
+- **P1 now stands at 32 BUILT, 0 BUILT IN PART and 2 NOT BEGUN.** The two NOT BEGUN rows are 3c (interpretive) and 7e
+  (needs a stress-energy), and neither has formal core.
+- **On the strict 2D reading it is 24 / 8 / 2.**
+
+**② Pricing.**
+- **On P1's own reading, no row is BUILT IN PART.** P1 states the radial-plane rows as radial-plane results.
+- **The eight rows that are IN PART on the strict reading** (3a, 3b, 7c, 7d, 8i, 8ii-a, 8ii-b, 8ii-e) share one gap:
+  the 4D warped product on a manifold. Mathlib has everything it needs: spheres as manifolds, product charts, and
+  smoothness of the sphere's inclusion.
+- **The prerequisites:**
+  - K4, the spacetime `W × S²` with `g = −F dU dV + r² ι*⟨·,·⟩`: 1000–2000 lines, p 0.4;
+  - P4, projection of steps: 200–400 lines;
+  - L4, the radial lift: 100–250 lines;
+  - O4, the observer's past and `𝓗⁺₄ = π⁻¹ 𝓗⁺₂`: 350–800 lines;
+  - together about 1650–3450 lines, at a joint p of about 0.3.
+- **Then the rows, cheapest first:** 3b (60–150), 3a, 8ii-a, 7c, 8i, 7d, 8ii-b, 8ii-e.
+- **The whole programme is about 3100–6500 lines.** Its cheapest closing step is the prerequisites with 3b, about
+  1700–3600 lines.
+
+**③ Not registered: the order's premise is empty.** No BUILT IN PART row exists to build. Please rule:
+- **(a)** P1 closes at 32 / 0 / 2, and this seat moves on;
+- **(b)** open the 4D programme with K4, P4, L4, O4 and 3b as one campaign.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7819: 6b-ii PHASE 6 BUILT WHOLE — `HasFutureGeneratorsM` UNDER `LocallyOneChart`, AND "MONOTONICALLY"; BOTH ITEMS OF YOUR RULING BUILT; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
 
 **The records** are `computations/formalisation/r7819_71_6bii_p6/PREDICTION.md` (committed before any Lean) and
