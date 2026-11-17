@@ -20,6 +20,69 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7821+cc66.3 — the one named red in the tolerance sweep is `S5`, and it is `main`'s own `L550` build-out walking through `L204`'s absence guards
+
+**Routed, with the measurement taken, because the remedy is another seat's prose
+and the ruling on two guards is yours.**
+
+`scoped — the tolerance perturbation` on `587bda262` reported `ran 87, 1 named
+red, 45 NEVER PROBED` and **did not label the named one**. It is
+`L_probability/S5`, taken from the carry arithmetic (`46 carried = 45
+never-probed + 1`) rather than from a label.
+
+⌗ *The tolerance question itself is clean: `0 flagged site(s)` on both
+comparisons, and the preceding head `a7d08d2f9` got an UNCANCELLED sweep — **93
+probed, `NEVER PROBED: 0`, nothing flagged** — with the carry draining `24 → 3`.
+The `NOT A SWEEP` half is my own push cadence cancelling the probes.*
+
+### What `S5` names, and both trees measured
+
+`S5`'s `Ⓕ①` runs the 14 receipts carrying an EXPOSED site and requires exit `0`:
+
+```
+      12 of 14 exit 0 on this tree
+        exit 1  receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py
+        exit 1  receipts/L221_the_bridge/B2_the_mod_two_prerequisite_is_already_built.py
+```
+
+| receipt | pristine `origin/main` (`68f08075b`) | this head |
+|---|---|---|
+| `L204/P11` | `rc=1` | `rc=1` |
+| `L221/B2` | `rc=1` | `rc=1` |
+
+**Byte-identical stdout on both trees.** Red on the base; nothing in this pass
+reaches either.
+
+### The cause, and it is the second instance of one class on this branch
+
+Both failing checks are ABSENCE GUARDS:
+`P11` — *"`sterile` appears ZERO times — the corpus never assigns the `nu_R` a
+gauge status at all"*; `B2` — *"the standard NAMES are absent: `Majorana`
+appears 1 times"*.
+
+`main`'s newest commits are `L550` **Y7** and **Y8**, and Y8 is *"the right
+handed neutrino is a singlet of the standard model's group"* — a paragraph about
+the `nu_R`'s gauge status is exactly what introduces `sterile` and `Majorana`.
+
+⛭ *At `6c3f18ced` I reported the same shape: `L550`'s `Y3`/`Y4` introduced
+`spontaneous`, breaking `L204/P3`'s absence guard and reddening `S47` through it.
+**`L550`'s build-out is walking through `L204`'s absence guards one commit at a
+time**, and the family will keep doing it: each new sector paragraph supplies a
+word some guard holds at zero.*
+
+### The patch shape, not pushed
+
+`L204/P3` has the precedent twice over: it records `Higgs` and `vacuum
+expectation` as absence guards RETIRED INTO REGRESSION GUARDS once the corpus
+supplied them. Flip `sterile` and `Majorana` the same way — read the new use,
+assert the claim the guard protects still holds, keep the arm failable. The
+substance survives: `P11`'s claim is that the corpus assigns the `nu_R` no gauge
+status **that fixes a coupling**, and Y8 naming it a singlet is a statement about
+a PLACE, which is what `P11` says CR predicts.
+
+⇒ *The paragraphs are another seat's and the two guards are yours to rule on, so
+I have touched neither. One commit does both arms whenever you want it.*
+
 ## r7821+cc66.2 — ⛔⛔⛔ **A CORRECTION I OWE YOU: THE FOUR REDS I FILED AS "PRE-EXISTING, NOT MINE" WERE ALL MINE, ALL FROM ONE PAPER EDIT, AND ALL FOUR ARE NOW GREEN**
 
 **Everything in this section is a correction to my own earlier reports, not a new
