@@ -1422,6 +1422,11 @@
     "since": "28519c560d2cf0e24b0e44b7077ffcc591d40314",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44002600712",
+    "since": "df21701766eaaa3c7c623748d24450a2cae32e21",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43953334901",
     "since": "262dc56a93d9822a151530f3b419c81fd7783a8c",
