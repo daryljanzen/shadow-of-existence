@@ -15,6 +15,55 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7815+cc66.4 — ⛭⛭ **THE `0.964` IS WRONG IN ITS THIRD DECIMAL. AT MATCHED SAMPLING IT IS `0.960`, AND THAT IS WHAT `(a1)` WAS FOR**
+
+`r7809`'s order heading reads *"THE CONTROL AT PLANCK'S POINT IS RUN, AND THE `0.918` IS `0.964`"*, and
+that figure is merged. **It was scored across a mode-sampling mismatch**, and `(a1)`'s bank is what
+makes the matched measurement possible for the first time.
+
+**What `r7809` scored:** the OLD control at `LSTEP=2` (950 samples, `100..1998`) against the
+RE-POINTED control at `LSTEP=8` (238 samples, `100..1996`). `chi2_of_spectrum.chi2_of(ls, Dl)` bins
+whatever grid it is handed into 185 bins, so **the two sides of that ratio were binned from different
+samplings.**
+
+**Re-measured through the receipt's own scoring path**, with its own two figures reproduced first as
+anchors so the third row is a change of **one input** and not of two procedures:
+
+| spectrum | samples | bins | χ² |
+|---|---|---|---|
+| the old control, step 2 — the published `0.918`'s denominator | 950 | 185 | `214.057` |
+| the re-pointed control, **step 8** — what `r7809` scored | 238 | 185 | `203.823` |
+| the re-pointed control, **step 2** — matched, `(a1)` built it | 950 | 185 | **`204.709`** |
+
+✓ *Anchors held: `214.057`, `203.823` and `0.9641` all reproduce here.*
+
+| ratio | value | prints as |
+|---|---|---|
+| published, old control | `0.9180` | `0.918` |
+| `r7809`: arm / re-pointed control, **mismatched** sampling | `0.9641` | `0.964` |
+| **`r7815`: arm / re-pointed control, MATCHED sampling** | **`0.9599`** | **`0.960`** |
+
+The control's improvement is **`−4.367 %`** at matched sampling against the `−4.781 %` on the record,
+a difference of `0.414 %` — **and it reaches the printed digits.**
+
+⇒ **So `0.964` should not land. `0.960` should.** Every site that carries the no-fit ratio takes
+`0.960`: P15 `l.143` (abstract), `l.577`; P7 `l.1880`; P18 `l.1546`, `l.1846`; `EXPLAINER.md` `l.257`.
+
+### ⛭ And this is the clean vindication of your `(a1)` ruling
+
+`(a1)` was ordered so the fine-grid figures could be re-derived on a matched bank rather than served
+by a step-8 stand-in. It has now **corrected a figure that was already merged** — and it did so
+through the one form of my `r7809` correction (a) that survived scrutiny. The broad form (*"the
+spectra differ"*) is false: at the same point the two banks agree to `5.55e-16` at every shared
+multipole. The narrow form is exactly this: **238 samples against 950, and every procedure that
+samples the grid reads the difference.** Here the procedure is the binning, and it is worth `0.004`
+on a printed figure.
+
+⌗ *The same caution applies to anything else measured step-8 against step-2. The `2.10 → 2.03`,
+`214.1 → 204.7`, `1.16 → 1.11` and the rest of the 16 sites are all matched by construction — they
+came from grid-exact swaps, which is what `assert_grid_identical()` is for — so they do not inherit
+this defect.*
+
 ## r7815+cc66.3 — **ROUTED: `main`'s OWN LAST TWO COMMITS REDDEN `P3`'s ABSENCE GUARD, WHICH REDDENS `S47`, WHICH REDDENS THE TOLERANCE JOB ON EVERY PUSH IN ITS SCOPE**
 
 Not mine, established in the order the rule sets rather than asserted — and it is **red on `main`**, so it will redden every seat's pushes until it is ruled on.
