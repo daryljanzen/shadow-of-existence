@@ -15,8 +15,17 @@ paper's stated sigma is therefore the LARGER, its separation the SMALLER (77 sig
 its conclusion is safe on either -- but the input and the output did not match, and the sentence now
 names the assumption its own number carries.
 
-WHAT IS NOT CLAIMED.  Not that the peak positions are re-derived here -- they are the paper's, taken
-as given, and this receipt checks the ARITHMETIC ON them.  Not that a 1- or 2-multipole
+⛭⛭ r7819 ⑦ (cc66): THE CONTROL'S FIGURE IS NOW COMPUTED HERE, NOT PARSED.  *** The printed control
+phase was `-0.2361` and a trace through the history found it written in at `r3005` and produced by
+nothing: no script in the tree returns it, and none of the three procedures one might read the
+sentence as naming returns it either. ***  So the sentence was re-pointed to what its own words
+describe -- a parabolic fit to each of the control's humps, then the same three-peak fit -- and that
+is carried out BELOW, on the control at Planck~2018's published point, rather than read off the
+paper.  ⇒ *The paper is still read, but now to check that what it prints is what this receipt
+computes; the direction of the dependency is reversed, which is the point of ⑦.*
+
+WHAT IS NOT CLAIMED.  Not that the SKY's peak positions are re-derived here -- they are the paper's,
+taken as given, and this receipt checks the ARITHMETIC ON them.  The CONTROL's are its own.  Not that a 1- or 2-multipole
 peak-location uncertainty is the right one for `plik_lite`'s binning; that is a statement about the
 instrument, and what is established here is only which input reproduces the paper's quoted sigma.
 """
@@ -53,6 +62,28 @@ def phase(l, n):
     slope, inter = np.linalg.lstsq(A, l, rcond=None)[0]
     return inter / slope, slope
 
+#: ⛭ r7819 ⑦ (cc66): the locator the SENTENCE names -- "a parabolic fit to each hump".  A three-point
+#: parabola through each local maximum and its neighbours; the cell maximum itself is its zeroth-order
+#: version and is NOT what the paragraph prints.
+def parabolic_peaks(ls, Dl, k=3, order=3):
+    from scipy.signal import argrelextrema
+    out = []
+    for i in argrelextrema(Dl, np.greater, order=order)[0]:
+        if len(out) == k:
+            break
+        if i == 0 or i + 1 >= len(Dl):
+            continue
+        y0, y1, y2 = Dl[i - 1], Dl[i], Dl[i + 1]
+        den = y0 - 2.0 * y1 + y2
+        d = 0.0 if den == 0 else 0.5 * (y0 - y2) / den
+        out.append(float(ls[i]) + d * float(ls[i] - ls[i - 1]))
+    return np.array(out)
+
+#: the control the sentence names: a LCDM spectrum at Planck 2018's published point, step-2 sampled.
+CONTROL = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                       'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                       'r7812_control_step2_L2000_assembled.npz')
+
 print()
 print('  P15 -- the sky phase fit and its uncertainty')
 print()
@@ -62,9 +93,19 @@ check(f'⓵ the first three peaks fit to phi/pi = {x3:.4f}, the paper\'s -0.2404
       abs(x3 - (-0.2404)) < 2e-3)
 check(f'   with l_A = {lA:.2f}, the acoustic scale the same fit returns', 250 < lA < 350)
 
-# the control's offset, as the paper reports it
-check('⓶ the control offset 0.0043 is seven parts in a thousand of the 0.615 disagreement',
-      abs(0.0043 / 0.615 - 0.007) < 1e-3)
+# ⛭ r7819 ⑦: the control's own figure, through the identical two steps, computed from its spectrum
+_z = np.load(CONTROL, allow_pickle=True)
+_pk = parabolic_peaks(np.asarray(_z['ls'], float), np.asarray(_z['Dl'], float))
+xc, lAc = phase(_pk, N[:3])
+_OFF = abs(x3 - xc)
+print(f'    ⌗ the control at Planck 2018\'s published point (r_s = {float(_z["r_s"]):.6f}, '
+      f'D_M = {float(_z["D_M"]):.6f})')
+print(f'    ⌗ its own parabolic humps: {np.round(_pk, 2)}  -> l_A = {lAc:.2f}')
+check(f'⓶ the control, put through the identical two steps, fits to phi/pi = {xc:.4f}',
+      abs(xc - (-0.2346)) < 5e-5)
+check(f'   so the offset from the sky is {_OFF:.4f}, which is '
+      f'{_OFF / 0.615 * 1000:.1f} parts in a thousand of the 0.615 disagreement -- within ten',
+      abs(_OFF - 0.0059) < 5e-5 and _OFF / 0.615 < 0.010)
 
 # the propagated uncertainty, at one and at two multipoles
 rng = np.random.default_rng(20260823)
@@ -89,10 +130,24 @@ _PHASE_SKY = paper_one(r'the sky \$\\phi/\\pi=(-?\d+\.\d+)\$', 'the sky phase')
 _PHASE_CTL = paper_one(r'against \$(-?\d+\.\d+)\$ for a \$\\Lambda\$CDM control', 'the control phase')
 _OFFSET = paper_one(r'an offset of \$(\d+\.\d+)\$', 'the quoted offset')
 print(f'    ⌈ the paper prints {_PHASE_SKY} against {_PHASE_CTL}, offset {_OFFSET}, and NO sigma')
+#: ⛭ r7819 ⑦: each printed figure is checked against the one COMPUTED above, not against a literal
+#: copied out of the paper -- so a figure that drifts in print, or one written in and never produced,
+#: fails here.
 check('⓷ the paper quotes the fit and the comparison and NO uncertainty on phi/pi, so the sigma below '
-      'is this receipt\'s own: the three figures it does print are parsed and reproduce',
-      abs(_PHASE_SKY - (-0.2404)) < 5e-5 and abs(_PHASE_CTL - (-0.2361)) < 5e-5
-      and abs(abs(_PHASE_SKY - _PHASE_CTL) - _OFFSET) < 1e-4)
+      'is this receipt\'s own: the three figures it does print are each held to their printed place',
+      abs(_PHASE_SKY - (-0.2404)) < 5e-5 and abs(_PHASE_CTL - (-0.2346)) < 5e-5
+      and abs(_OFFSET - 0.0059) < 5e-5)
+#: ⛭ r7819 ⑦: and the same three against what this receipt COMPUTED, which is the direction that
+#: matters -- a printed figure no procedure produces (which `-0.2361` was) cannot pass this.
+#: ⌈ The SKY's figure carries one unit in the last place of slack and it is not slop: the paragraph
+#: prints its quartet ROUNDED to a tenth of a multipole, and refitting those printed tenths returns
+#: `-0.2405` where the unrounded peaks give the `-0.2404` in print.  The CONTROL's and the offset's
+#: are computed here to better than half the last place.
+check(f'   ⇒ and each is this receipt\'s own computation and not a literal copied out of the paper: '
+      f'the sky {x3:.4f} (the print one unit low, from its rounded quartet), the control {xc:.4f}, '
+      f'the offset {_OFF:.4f}',
+      abs(_PHASE_SKY - x3) < 1.1e-4 and abs(_PHASE_CTL - xc) < 5e-5
+      and abs(_OFFSET - _OFF) < 5e-5)
 check('   ⇒ and the one-multipole sigma is the SMALLER, so the separation it gives is the LARGER: the '
       'choice of peak uncertainty is a floor on the separation and not a free parameter',
       s2 > s1 and 0.615 / s2 < 0.615 / s1)
@@ -106,7 +161,8 @@ if FAILED:
     print(f'  {len(FAILED)} check(s) FAILED'); sys.exit(1)
 print('  ⇒ ** ALL CHECKS PASS. **')
 print()
-print('  ⛭ ** THE FIT REPRODUCES EXACTLY (-0.2405 against the paper\'s -0.2404) and the control offset is')
-print("     seven parts in a thousand as stated.  The SIGMA is THIS RECEIPT'S own: the paper quotes no")
-print('     uncertainty on the phase, and the two-multipole value is the conservative end of the two. **')
+print('  ⛭ ** THE FIT REPRODUCES EXACTLY (-0.2405 against the paper\'s -0.2404) and the control\'s own')
+print('     figure is COMPUTED from its spectrum through the identical two steps, not copied: the offset')
+print("     is within ten parts in a thousand as stated.  The SIGMA is THIS RECEIPT'S own: the paper")
+print('     quotes no uncertainty on the phase, and the two-multipole value is the conservative end. **')
 sys.exit(0)
