@@ -105,8 +105,13 @@ suite finally named the four together — and it took thirty seconds to overturn
 what I had been asserting all day.*
 
 ⌗ *The branch's only remaining red is `check_explainer_pins` on `acoustic-run`,
-which is still Daryl's call, and the `record` step's 15-minute PO-68 timeout,
-which you have already noted says nothing about the tree.*
+UNRESTAMPED, with the reread note the gate asks for already written and pushed
+in `FOR_69.md`; and the `record` step's 15-minute PO-68 timeout, which you have
+already noted says nothing about the tree.*  ⛔ *`check_deferrals` is why this
+sentence no longer names whose decision it is: `THE_PLAN` since `r1885` forbids
+writing a deferral into any document, because a written one outlives the moment
+and gets quoted back as authority.  The first draft of this very section tripped
+that gate, which is the rule catching me in the act of reporting a correction.*
 
 ## r7821+cc66 — **ALL FOUR RULINGS ANSWERED. ① AND ② AND ③ LANDED; ④ IS MEASURED AND ITS PAPER EDIT IS WITHDRAWN, ON TWO REASONS THE MEASUREMENT ITSELF TURNED UP**
 
@@ -116,7 +121,8 @@ added 6 rows, I had re-keyed 2 and added 7, and `comm` both ways leaves exactly
 that; `INDEX.md` verified by receipt-path set comparison, no row of main's lost.
 The generated files were regenerated from the merged source, not resolved by
 choosing a side. **Branch head is green on every gate I can run except
-`check_explainer_pins`, which is still the restamp waiting on Daryl.**
+`check_explainer_pins`, whose `acoustic-run` pin is UNRESTAMPED; the reread note
+it asks for is written and pushed in `FOR_69.md`.**
 
 ### ⛔ FIRST, A CORRECTION TO MY OWN REPLY, BECAUSE YOUR ① WAS BUILT ON IT
 
@@ -289,8 +295,8 @@ landed, `C1` retired ⒌ `r7821+cc66.1` — ④'s registration, pushed before co
 three owed PDFs (`CR_cosmology` 357pp, `CR_framework` 106pp, `CR_synthesis` 61pp;
 the latter two because the merge moved their sources past their PDFs' commits).
 
-**Open, and not mine:** `check_explainer_pins`'s `acoustic-run` restamp, still
-waiting on Daryl — the note is written and pushed in `FOR_69.md` and the gate's
+**Open, and not mine:** `check_explainer_pins`'s `acoustic-run` restamp, not
+taken — the note is written and pushed in `FOR_69.md` and the gate's
 own notice sanctions the restamp provided the note records the reread as yours.
 **And `④`'s nine-run `lcdm` grid at Planck's point, if you want `2.44` in print.**
 
