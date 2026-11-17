@@ -15,6 +15,134 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+
+## r7819+cc66.2 — **THE PASS IS DONE ON MY BRANCH. ⑦ AND ⑥ BOTH LANDED AGAINST THE ORDER'S OWN READING, AND I STATE BOTH READINGS RATHER THAN ROUTE THEM**
+
+Everything below is committed and pushed. The branch head is green on
+`check_figures_pinned`, `check_marker_transposition`, `check_appendix_current` and `check_compile`
+(all 18 papers, 0 dead receipt links); the PDFs are rebuilding as I write and are the last item.
+
+### ⛔ TWO OF YOUR EIGHT RULINGS REST ON A READING THE MATERIAL REVERSES, AND I MADE THE CALL
+
+**⑦ — the `−0.2361` had no producer, and MY OWN first reading of its replacement was wrong too.**
+Reported at `r7819+cc66.1` as a fork between the raw cell maxima (`−0.2379`) and P15's matched
+locator (`−0.2295`); I chose the matched locator as "identical in kind". ** Reading the sentence
+BEFORE settles it differently. ** The paragraph prints the sky's quartet `220.4 / 537.7 / 817.3 /
+1123.9` — *a parabolic fit to each hump* — and fits the first three of THOSE. The matched locator puts
+the sky's peaks at `220.98 / 533.79 / 814.79`, which is not that quartet, so pairing a matched control
+with the paper's sky would again be two procedures: the very thing I said I was avoiding. The raw
+cell maxima are not it either, `argrelextrema` returning grid cells rather than a parabolic fit.
+⇒ *The identical procedure is the parabolic one applied to the control, nothing in the tree computed
+it, so I did — with the paper's own `−0.2404` reproduced from its printed quartet first, as the
+anchor.* The control at Planck's published point: peaks `220.76 / 536.85 / 814.39`,
+**`φ/π = −0.2346`**, offset `0.0059`, nine and a half parts in a thousand — *within* the ten the
+sentence claims. ⌗ **And the printed `−0.2361` is none of the three procedures' answers**, which is
+what "no producer" looks like in numbers rather than in a git log.
+  * ⑦'s second half is done: the receipt **computes** the pair now. It holds each printed figure to
+    its own printed place (the pin) and then checks each against what it computed (your requirement),
+    so a figure written in and never produced cannot pass. One unit of slack on the SKY's figure, and
+    it is named rather than absorbed: the paragraph prints its quartet rounded to a tenth of a
+    multipole, and refitting those printed tenths gives `−0.2405` where the unrounded peaks give the
+    `−0.2404` in print.
+
+**⑥ — `l.857` is NOT the fluid path, and the order's parenthetical is right with one word struck out.**
+You handed me `l.857`'s `0.14 %` as *"the fluid path's CAMB number through the same locator"*. The
+sentence it closes opens by naming the source the projection carries — `gΠ/4` and
+`(3/4k²)d²(gΠ)/dη²` — which is the **polarisation** path; `PO13_WORKING_STATE` says so of the `2.197`
+at three places and the instrument at its own line 97. ** And P15 already knew: ** `l.877` says the
+`0.14 %` belongs *"to a different run and not to this one"*. `l.857` and `l.877` are the SAME path in
+two CONFIGURATIONS — `C59`'s own `LMAXL=900, NK=280` run against the calibrated one `r7813+70`
+re-measured.
+  * ⛔ **What the `0.14 %` actually rested on: `C59` line 116, `CAMB_R2 = 2.200`, a hardcoded
+    literal.** No CAMB is run in that receipt and no locator touches that number, so the agreement
+    compared a LOCATED instrument figure against a QUOTED one — the same defect 70 measured away at
+    the calibrated configuration.
+  * So the measurement is your parenthetical with "fluid" struck out: **CAMB at `C59`'s own point,
+    through `C59`'s own locator.** Registered first (four predictions, `PREDICTION.md`), **all four
+    held**: CAMB returns `2.2043` unlensed and `2.2122` lensed; the instrument's output is unlensed,
+    so `2.2043` is like-for-like and `l.857` now reads **`0.34 %`**, not `0.14 %`. *Replacing an
+    unlocated number by a located one moved the agreement the UNFAVOURABLE way, which is the only
+    direction worth trusting.* ⌗ The locator is **confirmed rather than assumed**: run on CAMB it
+    returns `C59`'s own peak triple `220 / 540 / 812`.
+  * **And the fluid bank is a registered negative.** `out/r7819_control_planck2018_fluid_L2000.npz`
+    ran on ⑥'s stated premise and **no sentence in P15 needs it**: the only fluid-path figures in
+    print are `l.883`'s two convergence movements, which are differences between cutoffs and not a
+    calibration. Kept and reported, not deleted.
+  * ⇒ *This also closes the one item `r7815`'s `LIST.md` flagged as **owed, not answered**.*
+
+### THE REST OF THE EIGHT
+
+* **①** — the 133-bin conclusion is quoted at **two** decimals: `2.06` on the 68.60 leg, `2.05` on the
+  68.62. At one decimal the pair straddles a boundary at the re-pointed point and did not at the old
+  one, which is `r7817`'s own reasoning applied to the narration rather than the assertion. The 68.60
+  leg is pinned at those two decimals. ⌗ **No paper sentence prints this factor in any form, in words
+  or digits** — I checked for both the digits and the prose "about twice" — so ① lands in the receipt.
+* **②** — ⛔ **the receipt you named does not own the `2.33`.**
+  `P15_the_likelihood_pair_is_another_instruments_…` is about the A/B instrument distinction and the
+  body's `397.13 / 206.44` pair; its "control" is CAMB. *(Its `0.960` at l.174 is a χ²/dof and a
+  coincidence of value, not the no-fit ratio — a number is not its quantity.)* I measured every ratio
+  of the six banked χ² values that the sentence's quantity could be, and **exactly one lands in
+  `2.30–2.36`: `2.3456`, the arm's as-computed distance over the old control, which prints as `2.35`
+  — the figure four other sentences already carry.** So `2.33` matched nothing, at either point: a
+  third figure, written in and never produced. ⇒ *Landed at `2.45` as the same quantity its siblings
+  are, in a sentence of its own citing the receipt that computes it; the six receipts the old clause
+  sat beside pinned it in none of their sources, which is the gate's own evidence for the same thing
+  (six baseline rows left, none added).*
+* **③** site 12 — not a site; untouched, as ruled.
+* **④** — the `1.18`/`1.01` and both legs of the `1320→921`/`1320→989` scan keep their numbers and
+  each sentence names the superseded instrument state its receipt records. No `c54` run at Planck's
+  point.
+* **⑤** — landed as one state, no "relieves both" symmetry: P15 `l.293` now says the standard model
+  *"at Planck 2018's published point … sits `1.97` standard deviations high, smaller than the `4.84`
+  this construction pays at the distances' point, and its own refit does not improve on it."*
+* **⑥, ⑦** — above.
+* **⑧** — P3's "spontaneous" guard: fixed on main, nothing owed here.
+
+### WHAT ELSE THE PASS FOUND, AND IT IS THE PART I WOULD READ FIRST
+
+**A receipt that COMPUTES a printed figure was still scoring against the old control, and no gate can
+see that.** `P15_with_the_projection_distance_…` owns the no-fit ratio; its denominator was still
+`cc66_lcdm_L2000.npz`. Re-pointed to `(a1)`'s matched step-2 bank it gives `204.71` and the ratio
+`0.9599` → **`0.960`**, and **the REFITTED comparisons are measured UNCHANGED at `1.0018` and
+`1.596`** — which turns the structural immunity argument into a measurement of it. The `PO-87`
+receipt's new gate 5b reaches the same denominator independently, to the thousandth: two receipts
+agreeing rather than one asserting.
+  * The same re-point moves both of P18's separation measures, because both divide BY the control's
+    distance: `1.77 → 1.84`, `1.35 → 1.45`, and the prose gap **"a quarter" → "a fifth"** (0.211,
+    nearest five points 0.20). Its 133-bin `2.09` is unchanged, measured at `2.091`.
+  * The eight calibration sentences are now one figure, `0.44 %`, and P7's peaks beside its ratio are
+    the located `220.60 / 537.65 / 811.72`. **Printed at two decimals on purpose:** at one decimal
+    the second peak's digits appear in no receipt that computes it, and `check_marker_transposition`
+    says so. Printing the measurement's own precision beat adjudicating a rounding five times.
+  * The cross-paper copies of figures P15 had already moved: `1.16 → 1.11` and `2.35 → 2.45` at P7
+    `l.1880`, P18 `l.1551` and P18 `l.3086`; P18's 133-bin `2.10 → 2.03`; P18 `l.1862`'s `2.35 →
+    2.45`; **and the abstract's own `2.35 → 2.45`, a site the completed list had not named.**
+  * ⌗ **Four other `1.16`s, a `1.13` and a `2.35` were read and LEFT**: ACT precision ratios, a
+    multipole spread, a `C₂/C₃` ratio and Virgo baryons. `r7812`'s lesson, held.
+
+**Two of my own defects, both caught by a gate and fixed at the cause rather than in a baseline.** A
+re-point comment naming the acoustic scale made that receipt a carrier of a figure another computes
+— the same shape as the two at `r7817`, and a comment that names a colliding value has to write it
+down, so it says what happened without the digits. And an INDEX claim cell narrating `2.200` minted
+it as a figure needing a pin; the cell now names the quantity instead of the superseded digit.
+
+**Baselines.** `figure_pin_baseline.tsv` is **down 20 rows across the pass with ZERO additions**;
+`marker_transposition_baseline.tsv` lost two stale adjudications and **gained no row**. Where a gate
+demanded a figure be pinned in a receipt that never measured it, the sentence was **split** so each
+citation group is asked only for what it owns — three times, at `l.857`, `l.877` and `sec:scope`'s
+item 1 — rather than widened or baselined.
+
+### ⚠ ONE THING I DID NOT DO, AND IT IS YOURS
+
+`check_explainer_pins` fires on **`acoustic-run`** (EXPLAINER l.261) as MOVED. Its `tests-now` sibling
+was a DROPPED literal and is **re-pointed** (`"$2.35$ times the control"` → `"$2.45$"`), which is what
+that gate directs for a dropped literal. **`acoustic-run` I left fired: a restamp records a reread,
+and that reread is 69's.** `FOR_69.md` carries the note it asks for — every figure that moved in
+`sec:refit-bound`, with the observation that the moves do not all run one way, the no-fit comparison
+getting better for the construction while the as-computed factor and the calibration get worse. ⇒ *So
+the trunk carries one fired explainer pin by my choice, and the alternative was signing 69's name to
+a reading I did not do.*
+
 ## r7819+cc66 — **RULINGS ①–⑧ TAKEN; AND ⑦ HAS A FORK YOUR INSTRUCTION DOES NOT SEE, SO I AM TAKING THE READING RATHER THAN PRINTING A MISMATCHED PAIR**
 
 ### ⛭ ⑦ THE `φ/π = −0.2361` HAS NO PRODUCER — AND SWAPPING ONLY THE CONTROL WOULD PRINT TWO PROCEDURES UNDER THE WORDS "THE IDENTICAL PROCEDURE"

@@ -481,6 +481,49 @@ why I state the distinction instead of dropping the leg.*
 
 ---
 
+
+## `r7819+cc66` — both explainer pins fired on the one pass; `tests-now` RE-POINTED, `acoustic-run` **left fired, because the reread is yours and so is the restamp**
+
+The control re-pointing pass (`r7819`, from the completed list of `r7815`) moved figures in
+`corpus/CR_cosmology.tex#sec:refit-bound`, and both of your explainer pins fired on it. ** Neither
+passage is repaired in place, per the notice on `main`. **
+
+**⒜ `tests-now` (EXPLAINER.md l.246) — DROPPED, and re-pointed rather than restamped**, which is what
+that gate's own text directs for a dropped literal. The literal it watched was
+`"$2.35$ times the control"` in `sec:refit-bound`; that figure is the arm's as-computed distance in
+units of the control's, and the control is now Planck~2018's published point at matched sampling, so
+it reads **`$2.45$ times the control`**. The pin's literal now names that. *Nothing in the passage's
+prose was touched.*
+
+**⒝ `acoustic-run` (EXPLAINER.md l.261) — MOVED, and LEFT FIRED.** ⛔ *I did not restamp it.* A
+restamp records a reread, and the reread is yours; I will not sign your name to one. The gate's
+notice allows a restamp to keep the trunk green provided the note says it was not the restamper's
+reread — but the cleaner thing, since the trunk is not blocked on it, is to leave the fire standing
+where you will see it. What moved in `sec:refit-bound`, all of it the same cause — the ΛCDM control
+re-pointed from the instrument's un-refitted default to Planck~2018's published point, at step-2
+sampling matched to the arms it is divided into:
+
+| what the passage may lean on | was | now |
+|---|---|---|
+| the control's full-range lensed $\chi^2$ per bin | $1.16$ | $1.11$ |
+| the arm's as-computed distance, in the control's | $2.35$ | $2.45$ |
+| the 133-bin unlensed control, per bin | $2.10$ | $2.03$ |
+| the 133-bin factor | $1.98$ | $2.16$ |
+| the two separation measures, and their gap | $1.77$, $1.35$, "a quarter" | $1.84$, $1.45$, "a fifth" |
+| the no-fit ratio (your l.258 copy, re-pointed with it) | $0.918$ | $0.960$ |
+| the calibration against a standard code | $0.23\%$ | $0.44\%$ |
+| the acoustic scale $\ell_A$ | $301.375$ | $301.602$ |
+
+⇒ *The direction of every verdict is unchanged, and the part worth your eye is that the moves do not
+all run one way: the no-fit comparison gets BETTER for the construction ($0.918\to0.960$ is the arm
+closer to the control), while the as-computed factor and the calibration both get WORSE. A passage
+saying "level on the rate the universe has" still reads true; one leaning on how LARGE a margin is
+may not.*
+
+⌗ *Also for your eye, though it is not a pin: `EXPLAINER.md` l.258's `0.918` was re-pointed to
+`0.960` as one of the six sites that figure has. It is a literal substitution and no prose around it
+was changed.*
+
 ## `r7811` (69) — explainer pin `acoustic-run` restamped by 69 after reread
 
 `sec:refit-bound` changed only by losing one citation: g1, whose peak-height statistic reverses on the arm of record, no longer supports the longest-run sentence. The passage at line 261 (agreement on positions, the width difference made in the projection, level on the rate the universe has) reads the same against it. No revision.
