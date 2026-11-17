@@ -187,7 +187,17 @@ def score(path):
 #   files do not move: LEAFREC does not reach the control.
 GRID_ARM = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185_leafrec1_distances')
 CFG = {
-    'L2000':       (os.path.join(SPEC, 'cc66_lcdm_L2000.npz'),
+    #: ⛔⛔ r7819 (cc66): ** THE L2000 CONTROL IS RE-POINTED, AND THIS RECEIPT WAS MISSED BY THE PASS
+    #: THAT RE-POINTED IT EVERYWHERE ELSE. **  `cc66_lcdm_L2000.npz` is the bank `r7809`'s swap maps
+    #: to `(a1)`'s matched step-2 assembly at Planck 2018's published point; the lensed pair the
+    #: paper prints (`204.7`, `1.11`, `2.45`) is that control's, while this file was still scoring
+    #: the un-refitted one (`214.1`, `1.16`, `2.35`) -- so the receipt and the sentence it reads had
+    #: come apart, and the plain suite is the only thing that sees it.
+    #:   ⌗ *The ARM leg does NOT move and the `r185 verify` row cannot: a minimum of the fit does
+    #:   not depend on where the search began.*
+    'L2000':       (os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
+                                 'r7812_control_step2_L2000_assembled.npz'),
                     os.path.join(SPEC, 'cc66_cr_x_h686_L2000_leafrec1_distances.npz')),
     'grid base':   (os.path.join(GRID, 'lcdm_base.npz'), os.path.join(GRID_ARM, 'cr_base.npz')),
     'r185 verify': (os.path.join(SPEC, 'cc66_r185_verify_lcdm.npz'),
