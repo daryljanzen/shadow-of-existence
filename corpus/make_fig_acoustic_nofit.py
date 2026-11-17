@@ -32,7 +32,7 @@ the spectrum against it is out of sample in the strong sense.
    RATHER THAN BY ITS FILENAME. **  A bank swapped under this script's feet refuses instead of
    plotting someone else's arm:
 
-     nothing fitted   refit_grid185/lcdm_base.npz          D_M = 13864.6627   (67.40, 0.3150)
+     nothing fitted   r7807_control_planck2018_L2000.npz   D_M = 13894.4213   (67.30, 0.3150)
                       refit_grid185_leafrec1_distances/
                         cr_base.npz                        D_M = 14011.4567   (68.60, 0.2973)
      refitted         spectra/cc66_r185_verify_lcdm.npz    D_M = 13954.3535
@@ -80,7 +80,14 @@ X_DATA, COV = CS.X_DATA, CS.COV_TT
 #   ⌗ *The no-fit arm's `D_M` is BIT-IDENTICAL across the move (`LEAFREC` does not touch the
 #   background); the refitted arm's moves, because the MINIMUM moves on the arm of record.*
 SPECTRA = {
-    'nofit_lcdm': (os.path.join(G185, 'lcdm_base.npz'), 13864.6627, 'control, nothing fitted'),
+    # ⛭⛭ r7817 (69), THE ONE PASS: the no-fit control is re-pointed to Planck 2018's published best
+    #   fit, in step with the receipt that checks this figure's own numbers.  The two banks are both
+    #   238 samples of 100..1996 step 8 -- asserted grid-identical in r7809's `repoint.py` -- so the
+    #   POINT moves and nothing else, and the stored `D_M` moves with it.
+    'nofit_lcdm': (os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
+                                'r7807_control_planck2018_L2000.npz'),
+                   13894.4213, 'control, nothing fitted'),
     'nofit_cr': (os.path.join(G185L, 'cr_base.npz'), 14011.4567, 'CR arm, nothing fitted'),
     'refit_lcdm': (os.path.join(SP, 'cc66_r185_verify_lcdm.npz'), 13954.3535, 'control, refitted'),
     'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr_leafrec1.npz'), 14133.9546,

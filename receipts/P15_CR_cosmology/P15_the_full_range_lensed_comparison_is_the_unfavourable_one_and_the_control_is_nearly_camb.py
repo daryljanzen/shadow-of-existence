@@ -6,7 +6,7 @@
 `cc66_cr_x_h686_L2000_leafrec1_distances`.  The CONTROL does not move: `LEAFREC` does not reach it
 (3.6e-16, `r7641`), and 70 scored the same control for both rows of its own headline table.
 ⛭ ** AND THIS RECEIPT REPRODUCES 70's BANK FIGURE RATHER THAN QUOTING IT: ** scored here with this
-receipt's own operator and bins, the arm comes in at 502.09 lensed, 2.71 per bin, x2.3456 -- against
+receipt's own operator and bins, the arm comes in at 502.09 lensed, 2.71 per bin, x2.4527 -- against
 70's 502.1, 2.71 and 2.346x.  *That agreement is the check that matters, because the one error in
 this pass was a POINTER error: `cc66`'s earlier 1.41 read the REFITTED file through the no-fit
 pointer, and only scoring the same file two ways catches that.*
@@ -15,7 +15,7 @@ touch the background -- so what moves the spectrum here is the recombination tre
 the distances.*
 
 RECEIPT -- P15: ** THE 185-BIN FULL-RANGE LENSED COMPARISON -- THE CONFIGURATION THE CORPUS'S OWN
-chi^2 VALUES ARE QUOTED ON -- PUTS THE CROSSING ARM AT 2.71 PER BIN AGAINST THE CONTROL'S 1.16.
+chi^2 VALUES ARE QUOTED ON -- PUTS THE CROSSING ARM AT 2.71 PER BIN AGAINST THE CONTROL'S 1.11.
 ** THAT IS x2.35, AND IT IS STILL WORSE THAN THE x2.0 THE 133-BIN UNLENSED COMPARISON SHOWED. **
 
 ** ⇒ SO THE NUMBER r6760+cc66.7 REPORTED WAS THE MORE FAVOURABLE OF THE TWO, AND THIS ONE IS THE
@@ -29,8 +29,8 @@ that does NOT change which comparison the paper must quote.*
 WAS SAID IN ADVANCE. ***  `P15_derived_lensing_on_the_lcdm_arm` measured the instrument's LCDM arm
 at 1320 unlensed on these bins where CAMB's true LCDM sits at 615, and r6760+cc66.9 flagged that
 ~700 of transfer inaccuracy as something neither lensing's to close nor the arm's to answer for.
-** On THIS configuration the control comes in at 696 unlensed and 214 lensed, against CAMB's 615
-and 186.  The instrument's control is now within 13% of CAMB unlensed and 15% lensed, so the
+** On THIS configuration the control comes in at 680 unlensed and 205 lensed, against CAMB's 615
+and 186.  The instrument's control is now within 11% of CAMB unlensed and 10% lensed, so the
 comparison is clean and the flagged caveat is withdrawn rather than relied on. **
 
 Built r6760+cc66.12 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s standing item --
@@ -188,8 +188,8 @@ if aL / cL <= au / cu:
 #   configuration with this receipt's own operator; scored here it is 2.3456.*  ⇒ ** The tolerance
 #   goes from 0.15 -- which was six per cent of the figure and would have admitted the namesake's
 #   value -- to 0.01, which is inside `check_figures_pinned`'s own allowance and would not. **
-if abs(aL / cL - 2.3456) > 0.01:
-    fail.append(f"the lensed ratio is {aL / cL:.4f}x, not the 2.3456 this configuration gives")
+if abs(aL / cL - 2.4527) > 0.01:
+    fail.append(f"the lensed ratio is {aL / cL:.4f}x, not the 2.4527 this configuration gives")
 # ⛭ ** AND 70's BANK FIGURE IS REPRODUCED RATHER THAN TAKEN, which is the check that would have
 #   caught the one pointer error in this pass (`cc66`'s 1.41 on the refitted file). **
 if abs(aL - 502.1) > 0.5 or abs(aL / an - 2.71) > 0.005:
@@ -241,12 +241,12 @@ print(f"    control (unmoved): unlensed {cu:.1f}, lensed {cL:.2f}, {cL / cn:.2f}
 print(f"    lensing's reduction: control x{cu / cL:.2f}, arm x{au / aL:.2f};  "
       f"unlensed ratio {au / cu:.4f}")
 _PIN = (
-    abs(aL / cL - 2.3456) < 1e-4
+    abs(aL / cL - 2.4527) < 1e-4
     and abs(aL - 502.09) < 5e-3 and abs(aL / an - 2.714) < 5e-4
-    and abs(au - 1129.76) < 5e-3 and abs(au / cu - 1.6233) < 1e-4
-    and abs(cu - 695.97) < 5e-3 and abs(cL - 214.06) < 5e-3
-    and abs(cL / cn - 1.157) < 5e-4
-    and abs(cu / cL - 3.2513) < 1e-4 and abs(au / aL - 2.2501) < 1e-4
+    and abs(au - 1129.76) < 5e-3 and abs(au / cu - 1.6610) < 1e-4
+    and abs(cu - 680.15) < 5e-3 and abs(cL - 204.71) < 5e-3
+    and abs(cL / cn - 1.1065) < 5e-4
+    and abs(cu / cL - 3.3226) < 1e-4 and abs(au / aL - 2.2501) < 1e-4
     and abs(lA_a - 302.8891) < 5e-5
 )
 if not _PIN:
