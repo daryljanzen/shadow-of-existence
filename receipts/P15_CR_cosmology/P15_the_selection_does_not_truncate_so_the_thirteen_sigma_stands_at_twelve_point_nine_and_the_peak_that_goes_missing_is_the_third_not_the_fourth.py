@@ -225,9 +225,23 @@ CRON, CROFF = os.path.join(GOA, 'cr_base.npz'), os.path.join(LEVA, 'cr_nodrive.n
 #   receipt's figures: the observed point goes `0.76 -> 0.59` and one driving unit stays `12.6`.
 #   ⌗ *The directory assertions below are about GOA against GO and are untouched by this: they list
 #   what each grid CARRIES, which is independent of where `SVON` points.*
-SVON = os.path.join(ROOT, 'computations', 'beyond_the_wall',
-                    'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
-                    'r7807_control_planck2018_L2000.npz')   # the CONTROL, re-pointed at r7817
+#: ⛔⛔⛔ r7819 (cc66): ** AND THE r7817 RE-POINT OF THIS LINE IS WITHDRAWN, BECAUSE AN ANCHOR CANNOT BE
+#: RE-POINTED. **  `PUB164` is `cc66.164`'s PUBLISHED measurement, taken at the control's old point,
+#: and `Ⓐ①` exists to assert that this audit reproduces the number it audits.  Re-pointing the
+#: control makes it rebuild a DIFFERENT number -- the sky leg came out at `0.62` against the
+#: published `0.79` -- which is exactly the failure `Ⓐ①`'s own text names: *an audit that cannot
+#: reproduce the number it audits is auditing a different number.*
+#:   ⌗ And the coupling is wider than the control leg: `LAC` is read off THIS bank and is handed to
+#:   the SKY series too, so swapping it moves the whole anchor rather than one arm of a difference.
+#:   The r7817 note below measured the OBSERVED figure's move and never re-ran the anchor, which is
+#:   how it passed review here and failed in CI's tolerance class for two orders.
+#: ⇒ *The figure the paper prints from this receipt (`sec:coherence` l.2310's observed point, the
+#: UNFAVOURABLE END of this audit's own bootstrap interval) is an internal figure OF THE AUDIT --
+#: the sentence uses it to show the audit's conclusion survives its own interval -- so it belongs at
+#: the audited object's point and is withdrawn to `0.76` with this line.*  ⌗ Nothing `r7815`'s order
+#: asked for is lost: the sky-control agreement `0.79` it named is printed in NO paper body, only in
+#: generated appendix blurbs, which follow the receipts' own pins (`LIST.md` §1⒜).
+SVON = os.path.join(GO, 'lcdm_base.npz')          # the CONTROL, and the namesake path is its only one
 #: ⛭⛭ the asymmetry asserted: the arm-of-record grids carry the CR legs and NO control leg, which is
 #:   why the arm's paths move and the control's cannot.  Point `SVON` at `GOA` and this fails.
 _ao_cr = [f for f in os.listdir(GOA) if f.startswith('cr_') and f.endswith('.npz')]

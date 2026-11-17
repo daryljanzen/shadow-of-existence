@@ -16,6 +16,67 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
 
+
+## r7819+cc66.3 — ⛔ **A RED OF MINE HAD BEEN CARRIED FOR TWO ORDERS, AND IT IS A CORRECTION TO `r7817+cc66.1`: AN ANCHOR CANNOT BE RE-POINTED**
+
+CI's tolerance class carried `P15_the_selection_does_not_truncate_…` as red since
+`786e4a0df` — **my own `r7817+cc66.2`**. I had read it as pre-existing on an earlier
+look, because it sits in the `reads` class too and *that* entry predates the pass.
+It does not: separating the carry ledger's entries shows **47 carried as
+`unmeasured` and exactly one as a real red**, and the real one is this, under
+`tolerance`, since my commit.
+
+### The ⒜⒝⒞ sequence, run in order
+
+- **⒜** The failing check is `Ⓐ①`, the anchor: *"the audited number is rebuilt to
+  `cc66.164`'s published digits BEFORE it is questioned … an audit that cannot
+  reproduce the number it audits is auditing a different number."* On my branch the
+  sky leg rebuilt at **`0.62`** against the published **`0.79`**.
+- **⒝** On a pristine `origin/main` worktree the same receipt is **green, 10 checks,
+  0 failed**, with the sky leg at exactly `0.79`. ⇒ *So it is mine.*
+- **⒞** No fix exists anywhere to port; it is mine to make.
+
+### The defect, named
+
+`PUB164` is `cc66.164`'s **published** measurement, taken at the control's old
+point. ** An anchor cannot be re-pointed. ** Re-pointing `SVON` made the receipt
+rebuild a different number, which is the precise failure `Ⓐ①` was written to catch.
+And the coupling is wider than the control leg I checked: **`LAC` is read off that
+same bank and handed to the SKY series too**, so the swap moved the whole anchor
+rather than one arm of a difference.
+
+⛔ **And my `r7817+cc66.1` note in the receipt shows the shape of my error.** It
+says: *"The swap measured what it does to this receipt's figures: the observed
+point goes `0.76 → 0.59` and one driving unit stays `12.6`."* I measured the
+OBSERVED figure's move and never re-ran the ANCHOR. The receipt passed its own run
+at the time because `Ⓔ③` reads the printed figure out of the paper and both sides
+had moved together — so the one check that could still fail was the one I did not
+think to look at.
+
+### What I withdrew, and the reading behind it
+
+`SVON` is back to the namesake bank, and `sec:coherence` l.2310's observed point
+back to **`0.76`**. *The reading: that figure is the UNFAVOURABLE END of this
+audit's own bootstrap interval, and the sentence uses it to show the audit's
+conclusion survives its own interval. It is an internal figure OF THE AUDIT, so it
+belongs at the audited object's point, not at Planck's.* ⇒ **And nothing your
+`r7815` order asked for is lost by this: the sky–control agreement `0.79` it named
+is printed in NO paper body, only in generated appendix blurbs that follow the
+receipts' own pins — which is `LIST.md` §1⒜'s own finding, reported to you before
+any edit.**
+
+The receipt is green again (10 checks, 0 failed, the sky leg at `0.79`). The pin
+baseline is a **two-row re-key whose result is byte-identical to `main`'s own rows**
+for those two keys, which is the cleanest audit a withdrawal can have. None of the
+six `0.59`s left in `INDEX.md` is this figure; all are unrelated quantities, read
+one by one.
+
+⌗ *If you read l.2310 the other way — as a sky-against-standard-model claim that
+should move — then it wants its own measurement at Planck's point rather than this
+audit's internal number, and `Ⓐ①` needs a second control path so the anchor keeps
+the point it audits. Say so and I will build that instead; I am not leaving it on
+the branch as a silent choice.*
+
 ## r7819+cc66.2 — **THE PASS IS DONE ON MY BRANCH. ⑦ AND ⑥ BOTH LANDED AGAINST THE ORDER'S OWN READING, AND I STATE BOTH READINGS RATHER THAN ROUTE THEM**
 
 Everything below is committed and pushed. The branch head is green on
