@@ -144,3 +144,108 @@
 ====================================================================================================
   P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree
 ====================================================================================================
+  as the tree stands: rc=0, 116 number(s) on 33 distinct line shape(s)
+  control re-pointed: rc=0, 116 number(s) on 33 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 30;  numbers on them: 106 (106 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 3;  only in the swapped run: 3  (these are the red run's own diagnostics, not figures that moved)
+
+====================================================================================================
+  P15_the_two_measures_of_the_separation_are_pinned_on_the_arm_of_record_and_the_identity_and_its_bound_hold_on_every_row
+====================================================================================================
+  as the tree stands: rc=0, 174 number(s) on 55 distinct line shape(s)
+  control re-pointed: rc=1, 178 number(s) on 55 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 49;  numbers on them: 154 (69 unchanged, 85 MOVED)
+  line shapes only in the un-swapped run: 6;  only in the swapped run: 6  (these are the red run's own diagnostics, not figures that moved)
+              214.06 -> 204.71          delta -9.35   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              288.04 -> 297.38          delta +9.34   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              378.36 -> 376.91          delta -1.45   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.77 -> 1.84            delta +0.07   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.35 -> 1.45            delta +0.1   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               23.87 -> 21.10           delta -2.77   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               1.504 -> 1.474           delta -0.03   185 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              214.06 -> 204.71          delta -9.35   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              336.42 -> 345.77          delta +9.35   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              476.48 -> 407.09          delta -69.39   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                2.23 -> 1.99            delta -0.24   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.57 -> 1.69            delta +0.12   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               29.39 -> 15.06           delta -14.33   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               1.341 -> 1.418           delta +0.077   185 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              695.97 -> 680.15          delta -15.82   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+              433.80 -> 449.61          delta +15.81   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+              367.19 -> 365.37          delta -1.82   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+                0.53 -> 0.54            delta +0.01   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+                0.62 -> 0.66            delta +0.04   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+               15.36 -> 18.74           delta +3.38   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+               2.753 -> 2.729           delta -0.024   185 unlensed  arm of record     <#>   <#>    <#>    <#>    <#>    <#>  <#>%   
+              141.70 -> 135.12          delta -6.58   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              183.94 -> 190.52          delta +6.58   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              251.02 -> 251.35          delta +0.33   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.77 -> 1.86            delta +0.09   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.30 -> 1.41            delta +0.11   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               26.72 -> 24.20           delta -2.52   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               1.503 -> 1.466           delta -0.037   133 LENSED    arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              141.70 -> 135.12          delta -6.58   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              169.88 -> 176.47          delta +6.59   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              264.57 -> 233.93          delta -30.64   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.87 -> 1.73            delta -0.14   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.20 -> 1.31            delta +0.11   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               35.79 -> 24.57           delta -11.22   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               1.464 -> 1.520           delta +0.056   133 LENSED    LEAFREC=0         <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              276.07 -> 266.98          delta -9.09   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              298.67 -> 307.76          delta +9.09   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              244.07 -> 244.31          delta +0.24   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                0.88 -> 0.92            delta +0.04   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+                1.08 -> 1.15            delta +0.07   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               18.28 -> 20.62           delta +2.34   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+               2.127 -> 2.091           delta -0.036   133 unlensed  arm of record     <#>    <#>    <#>    <#>    <#>    <#>  <#>%  
+              1.7676 -> 1.8412          delta +0.0736   the separation is <#> times the control's own distance [READ from P18] target 
+              0.0024 -> 0.0712          delta +0.0688   the separation is <#> times the control's own distance [READ from P18] target 
+              1.3456 -> 1.4527          delta +0.1071   the difference of the two arms' scores is <#> times it [READ from P18] target 
+              0.0044 -> 0.1027          delta +0.0983   the difference of the two arms' scores is <#> times it [READ from P18] target 
+            288.0369 -> 297.3850        delta +9.3481   that difference, <#> -- THIS RECEIPT'S, not printed in P18  target    <#>   co
+              0.0031 -> 9.3450          delta +9.3419   that difference, <#> -- THIS RECEIPT'S, not printed in P18  target    <#>   co
+            214.0579 -> 204.7098        delta -9.3481   the control's own, <#> -- THIS RECEIPT'S, not printed in P18 target    <#>   c
+              0.0421 -> 9.3902          delta +9.3481   the control's own, <#> -- THIS RECEIPT'S, not printed in P18 target    <#>   c
+              0.2387 -> 0.2110          delta -0.0277   the two measures are a quarter apart                            printed     <#
+                0.25 -> 0.20            delta -0.05   the two measures are a quarter apart                            printed     <#
+               1.504 -> 1.474           delta -0.03   and at the arm of record the bound is <#>, so NOTHING forces the two measures 
+              1.7676 -> 1.8412          delta +0.0736   the separation is <#> times the control's own dista       <#>       <#>       
+              1.4744 -> 1.5379          delta +0.0635   the separation is <#> times the control's own dista       <#>       <#>       
+              1.9193 -> 1.9957          delta +0.0764   the separation is <#> times the control's own dista       <#>       <#>       
+              1.3456 -> 1.4527          delta +0.1071   the difference of the two arms' scores is <#> times       <#>       <#>       
+              1.1279 -> 1.2251          delta +0.0972   the difference of the two arms' scores is <#> times       <#>       <#>       
+              1.1445 -> 1.2399          delta +0.0954   the difference of the two arms' scores is <#> times       <#>       <#>       
+            288.0369 -> 297.3850        delta +9.3481   that difference, <#> -- THIS RECEIPT'S, not print     <#>     <#>     <#>
+            241.4413 -> 250.7894        delta +9.3481   that difference, <#> -- THIS RECEIPT'S, not print     <#>     <#>     <#>
+            267.9622 -> 277.9402        delta +9.978   that difference, <#> -- THIS RECEIPT'S, not print     <#>     <#>     <#>
+            214.0579 -> 204.7098        delta -9.3481   the control's own, <#> -- THIS RECEIPT'S, not prin     <#>     <#>     <#>
+            214.0579 -> 204.7098        delta -9.3481   the control's own, <#> -- THIS RECEIPT'S, not prin     <#>     <#>     <#>
+            234.1326 -> 224.1546        delta -9.978   the control's own, <#> -- THIS RECEIPT'S, not prin     <#>     <#>     <#>
+            234.1326 -> 224.1546        delta -9.978   [PASS] ⓔ③ ⑤″ the control's <#> is INVARIANT under the arm's tilt, EXACTLY -- w
+            214.0579 -> 204.7098        delta -9.3481   [PASS] ⓔ③ ⑤″ the control's <#> is INVARIANT under the arm's tilt, EXACTLY -- w
+              1.7676 -> 1.8412          delta +0.0736   [PASS] ⓔ⑤ the arm's tilt also moves the ratio the sentence leads with by more 
+              1.4744 -> 1.5379          delta +0.0635   [PASS] ⓔ⑤ the arm's tilt also moves the ratio the sentence leads with by more 
+                1.77 -> 1.84            delta +0.07   185 LENSED    arm of record  sep/c  <#>  F2/c  <#>   both>1: True
+                1.35 -> 1.45            delta +0.1   185 LENSED    arm of record  sep/c  <#>  F2/c  <#>   both>1: True
+                2.23 -> 1.99            delta -0.24   185 LENSED    LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: True
+                1.57 -> 1.69            delta +0.12   185 LENSED    LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: True
+                0.53 -> 0.54            delta +0.01   185 unlensed  arm of record  sep/c  <#>  F2/c  <#>   both>1: False
+                0.62 -> 0.66            delta +0.04   185 unlensed  arm of record  sep/c  <#>  F2/c  <#>   both>1: False
+                0.67 -> 0.58            delta -0.09   185 unlensed  LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: False
+                0.68 -> 0.72            delta +0.04   185 unlensed  LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: False
+                1.77 -> 1.86            delta +0.09   133 LENSED    arm of record  sep/c  <#>  F2/c  <#>   both>1: True
+                1.30 -> 1.41            delta +0.11   133 LENSED    arm of record  sep/c  <#>  F2/c  <#>   both>1: True
+                1.87 -> 1.73            delta -0.14   133 LENSED    LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: True
+                1.20 -> 1.31            delta +0.11   133 LENSED    LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: True
+                0.88 -> 0.92            delta +0.04   133 unlensed  arm of record  sep/c  <#>  F2/c  <#>   both>1: False
+                1.08 -> 1.15            delta +0.07   133 unlensed  arm of record  sep/c  <#>  F2/c  <#>   both>1: False
+                0.94 -> 0.86            delta -0.08   133 unlensed  LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: False
+                0.99 -> 1.06            delta +0.07   133 unlensed  LEAFREC=0      sep/c  <#>  F2/c  <#>   both>1: False
+
+====================================================================================================
+  P15_with_the_projection_distance_on_the_leaf_rate_the_refitted_spectrum_is_level_with_the_control_and_the_bao_fit_does_not_move
+====================================================================================================
+  as the tree stands: rc=0, 40 number(s) on 11 distinct line shape(s)
+  control re-pointed: rc=1, 40 number(s) on 11 distinct line shape(s)   (a red here is EXPECTED: the pins hold the old values)
+  matched line shape(s): 8;  numbers on them: 27 (27 unchanged, 0 MOVED)
+  line shapes only in the un-swapped run: 3;  only in the swapped run: 3  (these are the red run's own diagnostics, not figures that moved)

@@ -37,13 +37,21 @@ import check_figures_pinned as F  # noqa: E402
 #: again to the 10 that read the step-2 bank once (a1) made it swappable.  Those logs are ADDED here
 #: rather than read by a second copy of this matcher: the per-receipt linkage below is the thing the
 #: first version threw away, and a second matcher is how a tree grows two of them that disagree.
+#: `swap_both_banks.txt` re-runs the step-2 receipts with BOTH of (a1)'s banks substituted at once,
+#: and it SUPERSEDES `swap_step2.txt` rather than disagreeing with it -- checked, not assumed: of the
+#: two logs' pairs, 0 carry conflicting new values, 25 are moves only the both-banks run finds (the
+#: `2.10 -> 2.03` among them), and 0 are moves only the one-bank run finds.  A strict superset with
+#: no disagreement is safe to read alongside, so both are kept and the dedupe collapses the overlap.
+#: Had any pair disagreed, keeping both would have offered two different "new" values for one figure,
+#: which is why this was measured before the log was added.
 #: Extra log paths may be given on argv; the two r7809 logs are always read.
 _R7809 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                       'r7809_cc66_every_figure_that_reads_the_control_at_its_un_refitted_point')
 _R7815 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                       'r7815_cc66_the_completed_list_and_the_one_pass')
 LOGS = ([os.path.join(_R7809, n) for n in ('repoint_nofit.txt', 'repoint_step8.txt')]
-        + [os.path.join(_R7815, n) for n in ('swap_01_02.txt', 'swap_03_21.txt', 'swap_step2.txt')]
+        + [os.path.join(_R7815, n) for n in ('swap_01_02.txt', 'swap_03_21.txt', 'swap_step2.txt',
+                                            'swap_both_banks.txt')]
         + [a for a in sys.argv[1:] if not a.startswith('-')])
 MOVED = re.compile(r'^\s+(-?[\d.]+) -> (-?[\d.]+)\s+delta\s+\S+\s+(.*)$')
 
