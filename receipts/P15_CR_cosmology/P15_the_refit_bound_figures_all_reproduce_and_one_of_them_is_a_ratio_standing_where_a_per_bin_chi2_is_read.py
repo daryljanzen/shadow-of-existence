@@ -15,16 +15,25 @@ $2.56$ on the same bins" met what looked like the same quantity twice with two v
 ** ⌗ REPAIRED IN PRINT AT `r7167`: the sentence now reads "sits at $2.56$ TIMES IT on the same
 bins", and this receipt's own locator requires the word. **
 
-** ⛭⛭ AND THE FIGURE IT CARRIES HAS SINCE MOVED TWICE, WHICH IS WHAT THIS BLOCK IS FOR. **
+** ⛭⛭ AND THE FIGURES IT CARRIES HAVE SINCE MOVED, WHICH IS WHAT THIS BLOCK IS FOR. **
 *The paragraph above is the r7166 reading and is left as the record of it.  What the file measures
-TODAY is not those figures: the arm leg was re-pointed to the arm of record at `r7649`, and at
-`r7821` ④ -- 69's ruling on this pass -- the as-computed CONTROL was re-pointed to Planck 2018's
-published point, because `refit_grid185/lcdm_base.npz` sits at the UN-REFITTED background and is the
-same swappable-bank class the `L2000` row was re-pointed out of.  The current figures are PART 2's
-printed table and PART 5's literal pins, computed on every run; the only ones written down in prose
-anywhere in this file are the paper's own, captured.*  ⇒ *The finding -- that the clause's figure
-is a RATIO standing among per-bin chi^2 -- does not depend on which point the control sits at, and
-survives both re-points unchanged.*  *So the finding stands as a finding and
+TODAY is not those figures: the arm legs were re-pointed to the arm of record at `r7649`, and at
+`r7819` the `L2000` CONTROL was re-pointed to Planck 2018's published point at matched sampling.
+The current figures are PART 2's printed table, computed on every run; the only ones written down in
+prose anywhere in this file are the paper's own, captured.*
+
+** ⛔⛔ AND r7821 ④ ASKED FOR THE AS-COMPUTED CONTROL TO BE RE-POINTED TOO.  IT WAS MEASURED AND
+IT WAS NOT SUBSTITUTED, AND PART 5 IS THAT ANSWER. **  *The ratio moves at the two decimals the
+paper prints it to.  But `refit_grid185/lcdm_base.npz` is not a swappable bank: it is the ORIGIN of
+the refit's own derivative expansion -- the eight `lcdm` +-runs are taken around it -- and
+`as-computed` means `at the point the fit starts from`, so moving it changes what the figure is
+rather than correcting it.  And the paper's figure is produced by
+`P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`, whose control
+leg is that same grid centre, so substituting here alone would split one printed figure between two
+receipts.*  ⇒ *The Planck-point pair is banked as a FOURTH row and pinned; landing it needs the
+nine-run `lcdm` grid re-launched, which is an instrument job.*  ⌗ *The finding this file is named
+for -- that the clause's figure is a RATIO standing among per-bin chi^2 -- does not depend on which
+point the control sits at, and is untouched either way.*  *So the finding stands as a finding and
 the receipt is the thing that detects its discharge -- which it could not do while it read a
 sentence the repair would break.*
 
@@ -54,10 +63,11 @@ reading"* -- on the two pairs it named, `214.1`/`550.5` and `1.58`/`2.56`.
 
   ** THE THREE CONFIGURATIONS ARE READ FROM BANKED SPECTRA. **  `spectra/cc66_{cr_x_h686,lcdm}_L2000`
   for the full-range lensed pair, with the CONTROL leg taken from `(a1)`'s matched step-2 assembly
-  at Planck 2018's published point; `refit_grid185_leafrec1_distances/cr_base` against
-  `r7807`'s `out/r7807_control_planck2018_L2000` for the refit's as-computed pair -- the same
-  `ARM=lcdm HIER=1 LSTEP=8 LMAXL=2000` configuration as `refit_grid185/lcdm_base` at Planck's
-  published point instead of the un-refitted one, on the same 238-sample grid;
+  at Planck 2018's published point; `refit_grid185/lcdm_base` against
+  `refit_grid185_leafrec1_distances/cr_base` for the refit's as-computed pair, at the grid's own
+  base -- plus, from `r7821` ④, a FOURTH row scoring that same arm against
+  `r7807`'s `out/r7807_control_planck2018_L2000`, which is the same `ARM=lcdm HIER=1 LSTEP=8
+  LMAXL=2000` configuration at Planck's published point on the same 238-sample grid;
   `spectra/cc66_r185_verify_{cr,lcdm}` for its verified minimum, which CANNOT be re-pointed because a
   minimum of the fit does not depend on where the search began.  Nothing is re-solved and no fit is
   re-run -- the scoring is `chi2_of_spectrum`'s, with P15's own CAMB lensing operator imposed on
@@ -70,9 +80,9 @@ reading"* -- on the two pairs it named, `214.1`/`550.5` and `1.58`/`2.56`.
 ** COMPUTES: the nine quoted figures of `sec:refit-bound`'s two chi^2 pairs, each against the
    configuration it is a figure of; the identification of which quantity the paper's 2.56 is; and
    the gap between the two instruments that both call their range "185 bins,
-   ell = 100-1996", shown to be configuration and not disagreement; and, from `r7821` ④, the
-   as-computed pair with its control at Planck 2018's published point, pinned on literals in PART 5
-   because the clause's citation was narrowed to this receipt alone. ***
+   ell = 100-1996", shown to be configuration and not disagreement; and, from `r7821` ④, the same
+   as-computed pair scored a second time with its control at Planck 2018's published point, as a
+   FOURTH row that does not displace the one the paper's figure is read against. ***
 
 STATUS: OK
 rc=0 on success.  Run: python3 <this file>   (numpy, camb; ~10 s -- reads banked spectra)
@@ -217,23 +227,23 @@ CFG = {
                                  'r7812_cc66_the_resumable_mode_loop_and_the_one_pass', 'out',
                                  'r7812_control_step2_L2000_assembled.npz'),
                     os.path.join(SPEC, 'cc66_cr_x_h686_L2000_leafrec1_distances.npz')),
-    #: ⛭⛭ r7821 ④ (69's ruling): ** THE GRID-BASE CONTROL IS RE-POINTED TOO, AND THE RATIO
-    #: MOVES AT ITS PRINTED PRECISION. **  `refit_grid185/lcdm_base.npz` carries the UN-REFITTED
-    #: background point; `refit_grid185/launch.sh` built it with `ARM=lcdm HIER=1 LSTEP=8
-    #: LMAXL=2000` and nothing else, and `r7807`'s control is THE SAME CONFIGURATION at Planck
-    #: 2018's published point on the same 238-sample grid, so the sampling is MATCHED and the
-    #: substitution is direct -- no assembly, unlike the step-2 `L2000` row.
-    #:   ⇒ *Measured at r7821: the control's chi^2 falls by just over four per cent -- the same
-    #:   direction and nearly the same size as the L2000 row's own re-point -- and the ratio rises
-    #:   past the two decimals the paper prints it to, so l.974's figure is owed a move and carries
-    #:   it.  All five predictions registered in
-    #:   `r7821_cc66_the_grid_base_pair_at_plancks_point/PREDICTION.md` held.*  ⌗ *The ARM leg
-    #:   does not move at all; only the control was swapped.  The figures themselves are PART 5's,
-    #:   where they are computed rather than written down.*
-    'grid base':   (os.path.join(ROOT, 'computations', 'beyond_the_wall',
-                                 'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
-                                 'r7807_control_planck2018_L2000.npz'),
-                    os.path.join(GRID_ARM, 'cr_base.npz')),
+    #: ⛭⛭ r7821 ④ (69's ruling): ** MEASURED AT PLANCK'S POINT AND DELIBERATELY NOT
+    #: SUBSTITUTED. **  The row below keeps `refit_grid185/lcdm_base.npz`, which sits at the
+    #: UN-REFITTED background point, and the Planck-point pair is a FOURTH row -- `grid @ Planck` --
+    #: so the audit still scores the banks the paper's producing receipt scores.  PART 5 gives the
+    #: two reasons, both of which say this control is not a swappable bank:
+    #:   ① *it is the ORIGIN OF THE REFIT'S OWN DERIVATIVE EXPANSION* -- the eight +-runs of the
+    #:   `lcdm` grid are taken around it, and `as-computed` MEANS `at the point the fit starts from`,
+    #:   so moving it changes what the figure is rather than correcting it;
+    #:   ② *and the figure the paper prints is produced by
+    #:   `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`, whose
+    #:   base is that same grid centre.  Substituting here and not there would split one printed
+    #:   figure between two receipts -- the very coming-apart this pass exists to close.*
+    'grid base':   (os.path.join(GRID, 'lcdm_base.npz'), os.path.join(GRID_ARM, 'cr_base.npz')),
+    'grid @ Planck': (os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                   'r7807_cc66_the_23_items_and_the_repointed_control', 'out',
+                                   'r7807_control_planck2018_L2000.npz'),
+                      os.path.join(GRID_ARM, 'cr_base.npz')),
     'r185 verify': (os.path.join(SPEC, 'cc66_r185_verify_lcdm.npz'),
                     os.path.join(SPEC, 'cc66_r185_verify_cr_leafrec1.npz')),
 }
@@ -306,21 +316,8 @@ check(f"the paper's {AS} IS the as-computed ratio, at the paper's precision",
       round(as_ratio, dp) == AS)
 check(f"the paper's {AS} is NOT the as-computed per-bin figure, which is {round(as_bin, dp)}",
       round(as_bin, dp) != AS)
-# ⛔⛔ r7821 ④: ** THE RE-POINT NARROWS THE TWO READINGS, AND THE THRESHOLD THIS CHECK WAS
-#   CALIBRATED WITH IS NOW JUST MISSED. **  *On the un-refitted control the as-computed per-bin
-#   figure stood about a sixth above the ratio; at Planck's point the ratio rises and the gap falls
-#   to just under a tenth -- so `> 0.10` would go red on a separation that landed a hundredth of a
-#   per cent below an arbitrary round threshold.  The numbers are PART 4's own printout, computed.*
-#   ⇒ *The claim this check carries is that the two candidate readings of one printed figure are
-#       far enough apart that misreading it is not harmless.  That claim is about MATERIALITY, and a
-#       tenth of the figure is still material.  So the check is restated as a PIN ON THE MEASURED
-#       SEPARATION with a floor at a twentieth, and the narrowing is reported rather than absorbed:
-#       it is a consequence of the re-point and 69 should see it.*  ⌗ The two readings remain
-#       distinguishable at the paper's two decimals either way (2.44 against 2.68), which is the
-#       detectability the locator needs; this floor is the separate question of whether it matters.
 check("the two readings are far enough apart that the wrong one is not harmless "
-      f"({abs(as_bin - AS) / AS:.1%} of the figure, narrowed by the r7821 re-point)",
-      abs(abs(as_bin - AS) / AS - 0.09986031) < 5e-7 and abs(as_bin - AS) / AS > 0.05)
+      f"({abs(as_bin - AS) / AS:.1%} of the figure)", abs(as_bin - AS) / AS > 0.10)
 
 print(f"""
   ⛔ ** AND THE WRONG READING WAS NOT ONLY AVAILABLE, IT WAS PRIMED. **  Three sentences earlier the
@@ -342,43 +339,49 @@ check("the two instruments' as-computed per-bin figures agree to better than 2 p
 # =================================================================================================
 print()
 print(BAR)
-print("  PART 5 -- ** THE CLAUSE'S FOUR FIGURES, PINNED ON LITERALS, BECAUSE ITS CITATION IS NOW "
-      "THIS RECEIPT ALONE **")
+print("  PART 5 -- ** THE SAME PAIR AT PLANCK 2018'S PUBLISHED POINT, MEASURED AND NOT SUBSTITUTED **")
 print(BAR)
-print("""
-  ⛭ r7821 ④: landing `$2.44$` meant NARROWING the clause's citation.  The sentence it sat in
-  cited six receipts and none of them computes this ratio, so the figure stood BASELINED as unpinned
-  six times over -- and `figure_pin_baseline.tsv` can only shrink, so moving the figure under those
-  six keys was not available: six rows would go stale and six new ones would be owed.  *The clause
-  is therefore its own sentence now, citing the receipt that computes it, and the six keys are
-  retired from the baseline rather than re-keyed.*
+_GP = S['grid @ Planck']
+_GB = S['grid base']
+print(f"""
+  ⛭ r7821 ④ ordered this pair measured at Planck's point and landed `if it moves at its
+  precision`.  ** IT MOVES -- {_GB['r']:.4f} -> {_GP['r']:.4f}, which rounds {round(_GB['r'], 2)} -> {round(_GP['r'], 2)} -- AND IT IS NOT LANDED,
+  FOR TWO REASONS THE MEASUREMENT ITSELF TURNED UP. **
 
-  ⛔ ** AND PART 3's LOOP PINS NOTHING, WHICH IS WORTH SAYING OUT LOUD. **  It asserts
-  `round(computed, dp) == want` where `want` is the figure CAPTURED FROM THE PAPER -- so the only
-  constant in the comparison is the paper's own value arriving through a variable, and
-  `check_figures_pinned` collects CONSTANTS.  *A loop that compares the paper to itself is a
-  reproduction and not a pin, and a site that cites only this receipt needs pins.*  ⇒ So the four
-  figures of the clause are asserted here against LITERALS, each failable by perturbing the
-  computation and none of them read out of the paper.""")
-_RF = S['r185 verify']
-print(f"  {'the clause prints':>20} {'computed here':>16} {'from':>46}")
-for _w, _g, _src in ((1.01, _RF['cb'], "r185 verify control chi^2 / 185"),
-                     (1.61, _RF['ab'], "r185 verify arm chi^2 / 185"),
-                     (1.60, _RF['r'], "r185 verify arm chi^2 / control chi^2"),
-                     (2.44, as_ratio, "grid base arm chi^2 / r7807 Planck-point control")):
-    print(f"  {_w:>20} {_g:>16.6f} {_src:>46}")
-check("Ⓔ①  the clause's control figure is this receipt's own computation to the two decimals "
-      "it is printed to -- a LITERAL comparison, not a reproduction of the paper's capture",
-      round(_RF['cb'], 2) == 1.01 and abs(_RF['cb'] - 1.008) < 0.004)
-check("Ⓔ②  the clause's arm figure likewise", round(_RF['ab'], 2) == 1.61
-      and abs(_RF['ab'] - 1.609) < 0.004)
-check("Ⓔ③  the clause's arm-over-control factor likewise", round(_RF['r'], 2) == 1.60
-      and abs(_RF['r'] - 1.596) < 0.004)
-check("Ⓔ④  ⛭ and the as-computed ratio at Planck 2018's published point, which is the figure "
-      "r7821 ④ moved: it is the grid-base arm over r7807's control on the same 185 bins",
-      round(as_ratio, 2) == 2.44 and abs(as_ratio - 2.435828) < 5e-6
-      and abs(S['grid base']['c'] - 203.8226) < 5e-4
-      and abs(S['grid base']['a'] - 496.4769) < 5e-4)
+  The substitution is clean as a substitution: `refit_grid185/launch.sh` built `lcdm_base` with
+  `ARM=lcdm HIER=1 LSTEP=8 LMAXL=2000` and nothing else, and `r7807`'s control is that same
+  configuration at Planck 2018's four published parameters on the same {_GP['n']}-bin coverage and the
+  same 238-sample grid.  The arm leg does not move: {_GP['a']:.1f} either way.
+
+  ① ** BUT THIS CONTROL IS THE ORIGIN OF THE REFIT'S OWN DERIVATIVE EXPANSION, NOT A FREE CHOICE
+     OF CONTROL. **  `refit_grid185`'s eight `lcdm` +-runs are taken AROUND `lcdm_base`, and the
+     sentence's word is `as-computed` -- which means *at the point the fit starts from*.  Moving it
+     to Planck's published point would change WHAT THE FIGURE IS, not correct it: the gradient and
+     the curvature the refit rides would belong to one point and the as-computed pair to another.
+  ② ** AND THE FIGURE THE PAPER PRINTS IS NOT THIS RECEIPT'S TO MOVE. **  It is produced by
+     `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`, which
+     scores the same two banks and prints the same {round(_GB['r'], 2)}x as-computed, and whose control leg IS
+     that grid centre.  *Substituting here and not there would split one printed figure between two
+     receipts -- which is exactly the coming-apart this pass was opened to close, and what the
+     `L2000` row's own comment above records happening.*  Landing {round(_GP['r'], 2)} would need the whole nine-run
+     `lcdm` grid re-launched at Planck's point, which is an instrument job and not a bank swap.
+
+  ⇒ *** SO THE ROW STAYS AT THE UN-REFITTED POINT, THE PLANCK-POINT PAIR IS A FOURTH ROW, AND BOTH
+  ARE PINNED.  The answer to ④ is: it moves, by {100 * (_GP['r'] / _GB['r'] - 1):.1f} per cent, and it should not be landed
+  until the grid moves with it. ***""")
+check("Ⓔ①  the un-refitted row is still what the audit scores, and it still reproduces the "
+      "paper's figure -- the fourth row did not displace it",
+      abs(_GB['c'] - 212.9018) < 5e-4 and abs(_GB['a'] - 496.4769) < 5e-4
+      and round(_GB['r'], 2) == 2.33)
+check("Ⓔ②  ⛭ and at Planck 2018's published point the same arm over `r7807`'s control gives "
+      "203.8 and 2.44 on the same 185 bins: the control's chi^2 falls just over four per cent and "
+      "the ratio rises past the two decimals the paper prints it to",
+      abs(_GP['c'] - 203.8226) < 5e-4 and abs(_GP['a'] - _GB['a']) < 5e-9
+      and abs(_GP['r'] - 2.435828) < 5e-6 and round(_GP['r'], 2) == 2.44
+      and _GP['c'] < _GB['c'] and round(_GP['r'], 2) != round(_GB['r'], 2))
+check("Ⓔ③  and the two rows are like-for-like: same arm bank, same bin count, same sampling, "
+      "so the whole of the move is the control's background point",
+      _GP['n'] == _GB['n'] == 185)
 
 # =================================================================================================
 print()

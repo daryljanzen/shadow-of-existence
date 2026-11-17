@@ -29,7 +29,32 @@ not a regeneration artefact.*
   the wrong way for the candidate -- so the name's CONCLUSION stands and its reason has changed.  The
   name is left as it is because the paper cites it.*
 
-Built r7189+cc66.149 (node 66, code seat), on `PO-13`.
+** ⛭⛭⛭ r7821 ④ (69's ruling): REWRITTEN ON THE RE-POINTED CONTROL, WITH ITS FINDINGS AS THEY
+COME OUT THERE -- AND THE FIRST THING TO REPORT IS THAT THE ORDER'S OWN FIGURES FOR IT WERE MINE,
+AND THEY WERE WRONG. **
+  ⛔ *`FOR_66.md` §`r7819+cc66.6` tabled this row as `on main` against `re-pointed` and put
+  `3.26/2.97/1.65, 61 %` in the RE-POINTED column.  Those are the figures this file was already
+  HARDCODED to expect, which is main's state -- the arm-of-record re-point of `r7645+cc66.70` -- and
+  the column I labelled `on main`, `3.58/3.65/3.32`, is the NAMESAKE arm, one re-point older still.
+  So r7821's `at Planck's point it falls harder, 3.26 -> 1.65` is my mislabelling arriving back as a
+  ruling, and the ruling's conclusion has to be re-read against what the control re-point actually
+  does.*  ⇒ ** Measured here: the band ratio is `$2.63$`, `$8.15$`, `$1.88$`. **
+  ⌗ *The conclusion the file's NAME was written for still holds -- a wider visibility is Silk
+  damping and needs a ratio that CLIMBS, and this one ends lower than it starts -- but it holds on a
+  weaker and differently shaped measurement than main's, not a firmer one: the fall from the first
+  band to the third is a factor `$0.71$` where main's was `$0.51$`, and the ratio is NOT MONOTONE in
+  between.*
+  ⛔⛔ ** AND THE SHARPER LIMIT IS THE CONTROL'S OWN BAND MODULATION, WHICH IS MOSTLY NOT THERE. **
+  *At Planck's point the control's three band amplitudes are resolved at `$1.48$`, `$0.82$` and
+  `$2.95\sigma$`, and its whole-range fold at `$1.59\sigma$` -- so for two of the three bands the
+  arm-to-control RATIO is a ratio against a denominator that is noise, and the middle band's `$8.15$`
+  is exactly that.  **A ratio whose denominator is unresolved cannot test a prediction about how
+  that ratio runs with `$\ell$`,** which is a stronger statement of the limit than `the candidate is
+  refuted` and is the honest one.*  ⇒ *What the measurement still carries is the END-TO-END
+  comparison, first band against third, and it runs the wrong way for the candidate.*
+
+Built r7189+cc66.149 (node 66, code seat), on `PO-13`.  Rewritten on the re-pointed control at
+`r7821+cc66` (69's ruling ①).
 
 ===================================================================================================
 ** WHAT WAS ASKED, AND WHY THIS IS TWO ANSWERS AND NOT ONE **
@@ -262,44 +287,67 @@ print(f"      arm grows {A_CR[0]:.2f} -> {A_CR[2]:.2f} ({A_CR[2] / A_CR[0]:.2f}x
       f"{A_LC[0]:.2f} -> {A_LC[2]:.2f} ({A_LC[2] / A_LC[0]:.2f}x)")
 print(f"      ratio: {RAT[0]:.2f}, {RAT[1]:.2f}, {RAT[2]:.2f}   spread "
       f"{(max(RAT) - min(RAT)) / np.mean(RAT) * 100:.1f} per cent of the mean")
-# ⛔⛔⛔ r7645+cc66.70: ** ON THE ARM OF RECORD THE TWO GROWTHS NO LONGER AGREE, AND THAT IS THE
-#   FINDING. **  *On the namesake arm the arm's amplitude grew 3.3x across the three sub-bands and the
-#   control's 3.5x, within half a factor of each other, and the conclusion was that the growth
-#   belongs to the WHITENING rather than to the arm.  Here the control still grows 3.54x -- it is the
-#   control, and the re-point does not reach it -- while the ARM grows only 1.79x.*
-#   ⇒ *** So the growth is NOT shared, the ratio is not flat (B②), and `whatever drives the
-#       modulation scales with the control's own noise structure` was the namesake arm's reading. What
-#       survives is the warning that made the check worth writing: an amplitude read without its
-#       control would still have been read as an ell-dependence, because the control's 3.54x is most
-#       of what the arm's raw numbers show. ***
-check("Ⓑ①  ⛔⛔ ** THE TWO GROWTHS NO LONGER AGREE: the arm's amplitude grows 1.79x across "
-      "the range where the CONTROL's grows 3.54x, so the growth is not a shared property of the "
+# ⛔⛔⛔ r7821 ④: ** THE TWO GROWTHS STILL DO NOT AGREE, AND THE GAP IS SMALLER THAN MAIN'S. **
+#   *Across the three re-points the pair reads: namesake 3.3x / 3.5x (agreeing, and the conclusion was
+#   that the growth belongs to the WHITENING); arm of record 1.79x / 3.54x (not agreeing, and that was
+#   the r7645 finding); Planck's point 1.79x / 2.51x -- the ARM leg does not move under a control
+#   re-point and never could, so what moved is the control, from 3.54x to 2.51x.*
+#   ⇒ *** The finding holds in direction and weakens in size: the control's growth is now 1.40x the
+#       arm's rather than 1.97x.  `Whatever drives the modulation scales with the control's own noise
+#       structure` is still the namesake arm's reading and still withdrawn.  And the warning that made
+#       the check worth writing survives intact: an amplitude read without its control would still be
+#       read as an ell-dependence, because the control's own growth is most of what the arm's raw
+#       numbers show. ***
+check("Ⓑ①  ⛔⛔ ** THE TWO GROWTHS DO NOT AGREE: the arm's amplitude grows 1.79x across the "
+      "range where the CONTROL's grows 2.51x, so the growth is not a shared property of the "
       "whitening. **  ⇒ *On the namesake arm they were 3.3x and 3.5x and the conclusion was that the "
-      "whitening carried both; here the control carries its own and the arm does not follow it.  The "
-      "warning stands: an amplitude read without its control would still read as an ell-dependence*",
+      "whitening carried both; on main's control the gap was 1.79x against 3.54x.  At Planck's point "
+      "the control's growth falls to 2.51x, so the finding holds in direction and the gap narrows "
+      "from a factor 1.97 to a factor 1.40*",
       abs(A_CR[2] / A_CR[0] - 1.7945879) < 5e-5
-      and abs(A_LC[2] / A_LC[0] - 3.5347260) < 5e-5
-      and A_LC[2] / A_LC[0] > 1.8 * (A_CR[2] / A_CR[0]))
-check("Ⓑ②  ⛔⛔ ** AND THE RATIO IS NOT FLAT ON THIS ARM: 3.26, 2.97, 1.65 over 100-700, "
-      "700-1300 and 1300-1900 -- a spread of 61 per cent of its mean, where the namesake's 3.58, "
-      "3.65, 3.32 spread 10 per cent. **  ⇒ *So the ratio FALLS with ell by a factor two across the "
-      "range.  `Whatever drives the modulation scales with the control's own noise structure rather "
-      "than with ell` is withdrawn: it was the namesake arm's reading, and on the arm of record the "
-      "modulation has an ell-dependence of its own*",
-      abs(RAT[0] - 3.25904425) < 5e-6 and abs(RAT[1] - 2.97426189) < 5e-6
-      and abs(RAT[2] - 1.65462371) < 5e-6
-      and (max(RAT) - min(RAT)) / float(np.mean(RAT)) > 0.5
-      and RAT[2] < 0.6 * RAT[0])
+      and abs(A_LC[2] / A_LC[0] - 2.5121969) < 5e-5
+      and A_LC[2] / A_LC[0] > 1.35 * (A_CR[2] / A_CR[0]))
+check("Ⓑ②  ⛔⛔ ** AND THE RATIO IS NOT FLAT AND NOT MONOTONE: 2.63, 8.15, 1.88 over 100-700, "
+      "700-1300 and 1300-1900 -- a spread of 149 per cent of its mean, where main's 3.26, 2.97, "
+      "1.65 spread 61 and the namesake's 3.58, 3.65, 3.32 spread 10. **  ⇒ *The ratio ends LOWER "
+      "than it starts and RISES in between, so `falls with ell` -- which is what the paper's own "
+      "sentence says -- is true end to end and false as a description of the shape.  That is a "
+      "change in kind and not in size, and Ⓑ④ says where it comes from*",
+      abs(RAT[0] - 2.62967040) < 5e-6 and abs(RAT[1] - 8.14872981) < 5e-6
+      and abs(RAT[2] - 1.87850512) < 5e-6
+      and (max(RAT) - min(RAT)) / float(np.mean(RAT)) > 1.0
+      and RAT[1] > RAT[0] and RAT[1] > RAT[2] and RAT[2] < 0.8 * RAT[0])
 check("Ⓑ③  ⇒ a +14.3 per cent wider visibility is Silk damping, which acts monotonically and "
-      "strongly at high ell and barely at low: it predicts a ratio that GROWS with ell.  "
-      "** THE MEASURED RATIO FALLS, BY A FACTOR TWO -- so the candidate is contradicted MORE "
-      "strongly on the arm of record than on the namesake, where the ratio was merely flat. ** "
+      "strongly at high ell and barely at low: it predicts a ratio that GROWS MONOTONICALLY with "
+      "ell.  ** THE MEASURED RATIO DOES NOT CLIMB: it ends at 0.71 of where it starts, and it is "
+      "not monotone, so it fails the prediction in BOTH of the prediction's parts. ** "
       "⇒ *This file's own name says `predicts an ell-dependence the ratio does not have`, which was "
-      "the namesake's reading; the ratio now HAS one and it runs the wrong way.  The conclusion the "
-      "name was written for is unchanged and better founded: the width still does not explain this "
-      "residual, and it now has to explain a ratio that falls*",
-      RAT[2] < RAT[0] and (max(RAT) - min(RAT)) / float(np.mean(RAT)) > 0.5
-      and abs(RAT[2] / RAT[0] - 0.507700) < 5e-5)
+      "the namesake's reading of a flat ratio; the ratio HAS one and it is not the shape the "
+      "candidate needs.  The conclusion the name was written for is unchanged.  ⌗ But it is NOT "
+      "`better founded` than main's, which is what the r7819 table led 69 to rule: the end-to-end "
+      "fall is shallower (0.71 against main's 0.51) and the shape is worse behaved*",
+      RAT[2] < RAT[0] and (max(RAT) - min(RAT)) / float(np.mean(RAT)) > 1.0
+      and abs(RAT[2] / RAT[0] - 0.71435003) < 5e-7
+      and not (RAT[0] <= RAT[1] <= RAT[2]))
+# ⛔⛔ r7821 ④: ** AND THE LIMIT THAT MATTERS MORE THAN EITHER READING. **  The band ratio's
+#   DENOMINATOR is the control's own band modulation, and at Planck's point two of its three bands
+#   are unresolved.  *A ratio against noise cannot test a claim about how the ratio runs, so this is
+#   reported as the measurement's limit rather than dressed up as a refutation.*
+SIG_LC = [SUB[c][1][2] for c in CUTS]
+SIG_CR = [SUB[c][0][2] for c in CUTS]
+print(f"      control band significances: {SIG_LC[0]:.2f}, {SIG_LC[1]:.2f}, {SIG_LC[2]:.2f} sigma "
+      f"(whole range {AMP['nofit_lcdm'][2]:.2f}); arm's: {SIG_CR[0]:.2f}, {SIG_CR[1]:.2f}, "
+      f"{SIG_CR[2]:.2f}")
+check("Ⓑ④  ⛔⛔ ** THE CONTROL'S OWN BAND MODULATION IS MOSTLY NOT RESOLVED AT PLANCK'S POINT: "
+      "1.48, 0.82 and 2.95 sigma over the three bands, and 1.59 on the whole range. **  ⇒ *So the "
+      "middle band's 8.15 is an arm amplitude over a control amplitude at 0.82 sigma -- a ratio "
+      "against noise -- and only the top band has a denominator even approaching a detection.  "
+      "**This is the measurement's limit and it is stated as one:** what survives is the END-TO-END "
+      "comparison, first band against third, and that is what the paper's sentence should carry*",
+      abs(SIG_LC[0] - 1.47651716) < 5e-7 and abs(SIG_LC[1] - 0.81539441) < 5e-7
+      and abs(SIG_LC[2] - 2.94534827) < 5e-7
+      and abs(AMP['nofit_lcdm'][2] - 1.59404503) < 5e-7
+      and SIG_LC[1] < 1.0 and SIG_LC[2] < 3.0 and min(SIG_CR) > 2.5)
 
 
 # ============================================================ C. the period
@@ -365,20 +413,29 @@ print(f"      the control prefers {b:.2f} too -- also LONGER than l_A -- at delt
 print(f"      but its interval is {wid_lc:.1f} wide against the arm's {wid_cr:.1f}, a factor "
       f"{wid_lc / wid_cr:.1f}, because its amplitude is "
       f"{AMP['nofit_cr'][0] / AMP['nofit_lcdm'][0]:.1f}x smaller")
-check("Ⓓ①  ⛔ ** THE CONTROL ALSO PREFERS A LONGER PERIOD, 347, at delta chi2 = 8.6 against ell_A. "
-      "So a preference for a period longer than ell_A is NOT by itself the arm's. **  This receipt "
-      "therefore does NOT claim the offset as the arm's, and the measurement that would is named "
-      "below rather than run",
-      b > L_A and dchi > 5.0)
+# ⛭⛭ r7821 ④: *On main's control the preference was 347.25 at delta chi2 = 8.62.  At Planck's
+#   point it is 364.75 at 4.65 -- FURTHER from ell_A and less strongly preferred, and its one-sigma
+#   interval RUNS TO THE TOP OF THE SEARCH GRID, so the control's period is not bounded above by this
+#   fit at all.*  ⇒ *The finding is the same and its reason is stronger: the control is not merely
+#   loose about preferring a longer period, it is unconstrained above.  The threshold moves from 5.0
+#   to 4.0 because delta chi2 fell; what carries the finding is the grid-edge fact, which is pinned.*
+check("Ⓓ①  ⛔ ** THE CONTROL ALSO PREFERS A LONGER PERIOD, 364.75, at delta chi2 = 4.65 against "
+      "ell_A -- and its one-sigma interval reaches the top of the 240-380 grid, so it is not bounded "
+      "above.  So a preference for a period longer than ell_A is NOT by itself the arm's. **  This "
+      "receipt therefore does NOT claim the offset as the arm's, and the measurement that would is "
+      "named below rather than run",
+      b > L_A and dchi > 4.0 and abs(b - 364.75) < 1e-9
+      and abs(dchi - 4.65401257) < 5e-7
+      and hi_ >= float(GRID.max()) - 1e-9)
 check("Ⓓ②  what separates them is the DETERMINATION and not the direction: the arm's interval is "
-      "2.7x tighter because its amplitude is 4.7x larger, so the arm's period is measured where the "
+      "3.4x tighter because its amplitude is 5.5x larger, so the arm's period is measured where the "
       "control's is barely constrained.  ** That is a reason to make the measurement, not a "
-      "substitute for it **  ⌗ *The namesake's figures were 4x and 6.8x; both shrink on the arm of "
-      "record because the arm's own amplitude fell from 1.373 to 0.952 while the control's did not "
-      "move.  The separation is smaller and still there*",
-      abs(wid_lc / wid_cr - 2.666667) < 5e-5
-      and abs(AMP['nofit_cr'][0] / AMP['nofit_lcdm'][0] - 4.694606) < 5e-5
-      and wid_lc / wid_cr > 2.0 and AMP['nofit_cr'][0] / AMP['nofit_lcdm'][0] > 4.0)
+      "substitute for it **  ⌗ *The figures across the three re-points are 4x/6.8x on the namesake, "
+      "2.7x/4.7x on main's control, and 3.4x/5.5x at Planck's point -- so the separation GREW back "
+      "under this re-point, because the control's own amplitude fell while the arm's stayed put*",
+      abs(wid_lc / wid_cr - 3.41666667) < 5e-7
+      and abs(AMP['nofit_cr'][0] / AMP['nofit_lcdm'][0] - 5.49043742) < 5e-7
+      and wid_lc / wid_cr > 3.0 and AMP['nofit_cr'][0] / AMP['nofit_lcdm'][0] > 5.0)
 
 
 # ============================================================ verdict
@@ -401,15 +458,23 @@ print("    residual sits at 309.25, 1-sigma [304.75, 313.75] -- a +3.78 per cent
 print("    DISFAVOURED at delta chi2 = 5.55 rather than excluded at 15.0.  The figure's own receipt")
 print("    still could not have seen it: it fits the harmonic AT l_A by construction.  The refit")
 print("    pulls the period to 304.50 without reaching l_A.")
-print("  ⛔ ** AND THE CANDIDATE IS REFUTED THE OTHER WAY ROUND. **  The arm's amplitude grows only")
-print("    1.79x across the range where the CONTROL's grows 3.54x, so the ratio FALLS -- 3.26, 2.97,")
-print("    1.65, a spread of 61 per cent against the namesake's 10.  Silk damping acts at high ell")
-print("    and needs the ratio to CLIMB.  *`the growth is the whitening's` was the namesake's")
-print("    reading; here the whitening carries the control and the arm does not follow it.*")
+print("  ⛔ ** AND THE CANDIDATE STILL FAILS, THOUGH NOT THE WAY THE ORDER EXPECTED. **  The arm's")
+print("    amplitude grows 1.79x across the range where the CONTROL's grows 2.51x, and the ratio is")
+print("    2.63, 8.15, 1.88 -- a spread of 149 per cent, ending at 0.71 of where it starts and NOT")
+print("    monotone in between.  Silk damping needs the ratio to climb monotonically, so it fails")
+print("    both parts of the prediction.  *But r7821's `at Planck's point it falls harder,")
+print("    3.26 -> 1.65` is my own mislabelled table in FOR_66 §r7819+cc66.6 coming back as a")
+print("    ruling: those were MAIN's figures, and the fall is shallower here, not harder.*")
+print("  ⛔⛔ ** AND THE LIMIT THAT MATTERS MORE THAN EITHER READING: THE CONTROL'S OWN BAND")
+print("    MODULATION IS MOSTLY NOT RESOLVED -- 1.48, 0.82 and 2.95 sigma, and 1.59 on the whole")
+print("    range. **  The middle band's 8.15 is a ratio against a denominator at 0.82 sigma.  *A")
+print("    ratio whose denominator is noise cannot test a claim about how that ratio runs with ell,")
+print("    so what survives is the end-to-end comparison and that is what the paper now carries.*")
 print("  ⚠ ** AND THE OFFSET IS STILL NOT CLAIMED AS THE ARM'S. **  The control prefers a longer")
-print("    period too (347.25, delta chi2 = 8.62), loosely.  What differs is the determination --")
-print("    2.7x tighter for the arm, on an amplitude 4.7x larger, against 4x and 6.8x on the")
-print("    namesake -- not the direction.  The measurement that would settle it is the arm's period")
-print("    against the control's as a null, and it is NAMED here and not run: nothing was ordered.")
+print("    period too (364.75, delta chi2 = 4.65), and its one-sigma interval runs to the TOP of the")
+print("    240-380 grid, so it is not bounded above at all.  What differs is the determination --")
+print("    3.4x tighter for the arm, on an amplitude 5.5x larger -- not the direction.  The")
+print("    measurement that would settle it is the arm's period against the control's as a null, and")
+print("    it is NAMED here and not run: nothing was ordered.")
 print(BAR)
 print("  ALL CHECKS PASS")
