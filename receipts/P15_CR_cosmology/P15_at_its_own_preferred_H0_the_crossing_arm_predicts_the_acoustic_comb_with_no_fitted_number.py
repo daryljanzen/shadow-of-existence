@@ -232,7 +232,7 @@ for b in BANDS:
 # =====================================================================================
 # ⛭⛭⛭ `r7647` ⑵ -- THE QUARTERS ON THE ARM OF RECORD, AND THEY DO NOT SCALE: THEY MOVE AROUND.
 #   `sec:refit-bound` l.958-959 prints the arm at 1.70 / 2.22 / 4.23 / 9.29 against the control's
-#   0.77 / 1.44 / 2.62 / 3.73.  All eight are computed in this file already; none was pinned, and
+#   0.72 / 1.45 / 2.27 / 3.79 (re-pointed at r7817).  All eight are computed in this file already; none was pinned, and
 #   the only band gate here asked whether each was within FOUR TIMES the control's -- which the
 #   largest, at 2.75, was never going to fail.
 _pc = {b: (AORD['bands'][b] / NEW['bands'][b] - 1) * 100 for b in BANDS}
@@ -244,11 +244,16 @@ for b in BANDS:
 print(f"  {'TOTAL/bin':>12} {CTL['chi2'] / CTL['n']:>10.6f} {NEW['chi2'] / NEW['n']:>10.6f} "
       f"{AORD['chi2'] / AORD['n']:>14.6f} {_tot * 100:>+10.4f}%")
 
-if not (abs(CTL['bands'][(100, 400)] - 0.765826) < 5e-6
-        and abs(CTL['bands'][(400, 700)] - 1.436731) < 5e-6
-        and abs(CTL['bands'][(700, 1000)] - 2.620049) < 5e-6
-        and abs(CTL['bands'][(1000, 1300)] - 3.725004) < 5e-6):
-    fail.append("the CONTROL's four quarters are not the ones the paper prints (0.77/1.44/2.62/3.73)")
+# ⛭⛭ r7817 (69), THE ONE PASS: the control is re-pointed to Planck 2018's published best fit, so
+#   its four quarters move with it -- and they do NOT all move the same way, which is the point this
+#   part was written to make: 0.765826 -> 0.722766, 1.436731 -> 1.446814, 2.620049 -> 2.271533,
+#   3.725004 -> 3.791399.  Two fall and two rise.  These are the figures `sec:refit-bound` prints as
+#   0.72 / 1.45 / 2.27 / 3.79, pinned here within half their last printed digit.
+if not (abs(CTL['bands'][(100, 400)] - 0.722766) < 5e-6
+        and abs(CTL['bands'][(400, 700)] - 1.446814) < 5e-6
+        and abs(CTL['bands'][(700, 1000)] - 2.271533) < 5e-6
+        and abs(CTL['bands'][(1000, 1300)] - 3.791399) < 5e-6):
+    fail.append("the CONTROL's four quarters are not the ones the paper prints (0.72/1.45/2.27/3.79)")
 if not (abs(NEW['bands'][(100, 400)] - 1.700203) < 5e-6
         and abs(NEW['bands'][(400, 700)] - 2.222014) < 5e-6
         and abs(NEW['bands'][(700, 1000)] - 4.228463) < 5e-6
