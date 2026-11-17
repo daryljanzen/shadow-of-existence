@@ -148,7 +148,6 @@
    },
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
     "gates": [
-     "(ii) CR_cosmology sec:refit-bound: ['#",
      "(ii) CR_cosmology sec:refit-bound: ['#.#"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43953334901",
@@ -179,18 +178,6 @@
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44012102746",
     "since": "41ebb4ef91fce4ea0e8fe3871e3aa3d6bf181ec4"
-   },
-   "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
-    "gates": [
-     "\u26ed\u26ed ** I\u2463 AND THE SCALE FOLLOWS IT ON THI"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44007526657",
-    "since": "bd4c08df9bbe85338d2fa8a7b444e10e86f29a3a"
-   },
-   "receipts/P15_CR_cosmology/P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_chi2_is_read.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/43953334901",
-    "since": "262dc56a93d9822a151530f3b419c81fd7783a8c"
    },
    "receipts/P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py": {
     "gates": [
