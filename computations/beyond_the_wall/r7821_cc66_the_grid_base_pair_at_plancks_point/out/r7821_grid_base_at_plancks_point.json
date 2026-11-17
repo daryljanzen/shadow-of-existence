@@ -1,0 +1,20 @@
+{
+  "arm_chi2": 496.4769455334334,
+  "arm_per_bin": 2.683659165045586,
+  "ctl_planck": 203.82264934347975,
+  "ctl_planck_per_bin": 1.101744050505296,
+  "ctl_unrefitted": 212.90178985752462,
+  "ctl_unrefitted_per_bin": 1.1508204857163493,
+  "nbins": 185,
+  "predictions_falsified": [],
+  "predictions_held": [
+    "\u2460 the control's chi^2 FALLS below 212.9",
+    "\u2461 it falls by between 1 and 8 per cent (195.9 <= chi2 <= 210.8)",
+    "\u2462 the ratio rises past 2.33 at its printed precision",
+    "\u2463 the arm leg does not move (|chi2 - 496.5| <= 0.05)",
+    "\u2464 the ratio lands in [2.36, 2.50]"
+  ],
+  "ratio_planck": 2.4358281434011575,
+  "ratio_unrefitted": 2.331952896524164,
+  "sampling_matched": true
+}
