@@ -135,7 +135,9 @@ def report():
     print(f"  ⌗ and what this is NOT: {D:+.4f} on {npt} points is two models LEVEL, not a "
           f"preference for either.")
 
-    json.dump({'chi2': CHI2, 'chi2_lcdm': LCDM, 'dchi2': D, 'x': X, 'edge': edge,
+    json.dump({'chi2': CHI2, 'chi2_planck': float(z['chi2_planck']),
+               'chi2_act': float(z['chi2_act']),
+               'chi2_lcdm': LCDM, 'dchi2': D, 'x': X, 'edge': edge,
                'r': R_ADJ, 'lD': LD_INFORCE, 'as9': AS9_FIXED, 'n_points': npt,
                'nfev': int(z['nfev']), 'nfev_inbounds': int(z['nfev_inbounds']),
                'r7828_dchi2': R7828_DCHI2, 'r7827_pertrial_dchi2': R7827_PERTRIAL_DCHI2,
