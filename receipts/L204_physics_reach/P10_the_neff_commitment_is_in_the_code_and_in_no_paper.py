@@ -168,14 +168,19 @@ def main():
                 return None
 
         _rnu = _value_of('r_nu')
-        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0'})
+        # r7827 (69): the network gained EXTRA_NU (72, L550 Y10), extra species beyond the three, zero on
+        #   the standard background.  It is read off the module's own tree like everything else here and
+        #   substituted, so the three-species commitment is checked at the module's default.
+        _xnu = _value_of('EXTRA_NU')
+        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0',
+                                 'EXTRA_NU': repr(_xnu if _xnu is not None else float('nan'))})
         check('committing explicitly to the neutrino decoupling ratio (4/11)^(1/3) -- read as a '
               f'VALUE off the module\'s own syntax tree ({_rnu}), not as a spelling of it',
               _rnu is not None and abs(_rnu - (4.0 / 11.0) ** (1.0 / 3.0)) < 1e-12)
         check('and to THREE neutrino species in the relativistic degrees of freedom -- read as a '
               f'VALUE with the temperature ratio set to one ({_gnu}), which is exactly '
               f'$3\\times\\tfrac78\\times2$',
-              _gnu is not None and abs(_gnu - 3.0 * (7.0 / 8.0) * 2.0) < 1e-12)
+              _xnu == 0.0 and _gnu is not None and abs(_gnu - 3.0 * (7.0 / 8.0) * 2.0) < 1e-12)
         # ⛔⛭ r7125+cc66.98: THIS LABEL AND ITS CONDITION SAID OPPOSITE THINGS.  *The label read
         # "ADOPTED IN CODE AND STATED IN NO PAPER" while the condition asserted
         # `len(re.findall('Neff', allp)) > 0` -- that it IS in a paper.  Same rot as the loop above,
