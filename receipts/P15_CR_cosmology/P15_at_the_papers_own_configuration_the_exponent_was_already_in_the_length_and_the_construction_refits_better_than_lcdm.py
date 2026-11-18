@@ -312,18 +312,64 @@ print(f"\n      THE REFIT at r = {RF['r']}, l_D = {RF['lD']} (exponent one, whic
       f"{ALPHA_PAPER}):")
 print(f"        chi2 {RF['chi2']:.4f} against LCDM's {RF['chi2_lcdm']:.4f} over {RF['ndata']} "
       f"points   Delta chi2 {RF['dchi2']:+.4f}   {'interior' if not RF['edge'] else RF['edge']}")
-check("Ⓘ⑨ the joint-arm distance is 8.152 sigma at the paper's configuration against 19.253 at "
-      "the row's, fixed-cosmology on the banked control -- and THE REFIT REVERSES IT: at the "
-      "DECLARED in-force l_D the construction reaches 137.4859 against LCDM's 139.8557 on the same "
-      "150 bandpowers and the same five parameters, Delta chi2 = -2.3697 at an INTERIOR minimum.  "
-      "⇒ PO-24's figure at the paper's own configuration is that the construction fits the joint "
-      "data slightly BETTER than LCDM -- not the +9.02 r7826 reported and 69 adopted, which was "
-      "the double-counted row",
-      abs(float(JZ['dist_row']) - 19.253) < 0.006
+check("Ⓘ⑨ THIS RECEIPT MEASURES the joint-arm distance at r = 0.9918 as 8.152 sigma against "
+      "19.253 at r = 1.0926, fixed-cosmology on the banked control -- and THE REFIT REVERSES IT: "
+      "at the declared in-force l_D the construction reaches 137.4859 against LCDM's 139.8557 on "
+      "the same 150 bandpowers and the same five parameters, Delta chi2 = -2.3697 at an INTERIOR "
+      "minimum.  ⇒ So the figure for that ratio is that the construction fits the joint data "
+      "slightly BETTER than LCDM -- not the +9.02 r7826 computed and r7823 adopted, which was the "
+      "double-counted row.  ⌗ And the ratio this arm is about is the one PARSED OUT OF the paper in "
+      "Ⓓ④, asserted again here so that this arm's own trace reaches that read rather than taking "
+      "the ratio on trust from another arm",
+      abs(R_PAPER - 0.9918) < 1.0e-9 and abs(R_ROW - 1.0926) < 1.0e-9
+      and abs(float(JZ['dist_row']) - 19.253) < 0.006
       and abs(float(JZ['dist_paper']) - 8.152) < 0.006
       and abs(RF['dchi2'] + 2.3697) < 6.0e-4
       and abs(RF['chi2'] - 137.4859) < 6.0e-3
       and not RF['edge'] and RF['chi2'] < RF['chi2_lcdm'])
+
+# ============== THE FIGURES THE PAPER SENTENCE AND THE INDEX ROW PRINT, PINNED WHERE AN AST CAN
+# ============== SEE THEM.  Explicit two-sided comparisons, each inside the coarser of half the last
+# ============== printed digit and 0.05 per cent -- the corpus's own allowance.  Not a twelfth arm:
+# ============== every figure here is one some arm above measures, or one r7826 banked and this
+# ============== receipt reads back.  ⌗ r7826 learned this the hard way: a pin computed through a
+# ============== helper is invisible to check_figures_pinned.
+AL_TT, AL_TT_SIG = 1.243, 0.096           # the temperature constraint, r7812's own constants
+R26 = np.load(os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                           'r7826_60_the_joint_data_fitted_and_the_amplitude_convention_makes_one_'
+                           'parameter_degenerate', 'runs', 'r7826_probe.npz'))
+_AL_V = G[('paper', '100-1758')]['A_L']['v']
+PINS = {
+    "the instrument's declared l_D, 1951.9": abs(LD_DECLARED_AMP - 1951.9) < 1.0e-9,
+    "the exponent it is declared at, 1.70": abs(ALPHA_PAPER - 1.70) < 1.0e-9,
+    "the in-force length, 1497.0390": abs(FOLDED - 1497.0390) < 6.0e-4,
+    "and after the one-rate move, 1489.5783": abs(MOVED - 1489.5783) < 6.0e-4,
+    "the row's ratio, 1.0926": abs(R_ROW - 1.0926) < 1.0e-9,
+    "the adjudicated ratio, 0.9918": abs(R_PAPER - 0.9918) < 1.0e-9,
+    "where r7826's alpha-1.70 rows sat, 1047.70": abs(1366.0363 / ALPHA_PAPER ** 0.5
+                                                      - 1047.70) < 0.5,
+    "LCDM on the joint arm, 139.8557": abs(RF['chi2_lcdm'] - 139.8557) < 0.06,
+    "the construction there, 137.4859": abs(RF['chi2'] - 137.4859) < 0.06,
+    "which is better by 2.3697": abs(RF['dchi2'] + 2.3697) < 6.0e-4,
+    "what r7826 reported and 69 adopted, 9.02": abs(float(R26['dchi2_fitC_adj_a170'])
+                                                    - 9.02) < 4.5e-3,
+    "A_L wants 0.968 at the paper's configuration": abs(_AL_V - 0.968) < 4.9e-4,
+    "against a temperature constraint of 1.243": abs(AL_TT - 1.243) < 1.0e-9,
+    "its sigma, 0.096": abs(AL_TT_SIG - 0.096) < 1.0e-9,
+    "so the affordability is -2.867": abs((_AL_V - AL_TT) / AL_TT_SIG + 2.867) < 6.0e-4,
+    "the joint distance at the row's ratio, 19.253": abs(float(JZ['dist_row']) - 19.253) < 6.0e-3,
+    # r7826's own figure for the same ratio on the FITTED baseline, read back from its bank rather
+    # than recomputed, because the paper's sentence prints it beside this receipt as well
+    "and on the fitted baseline, 27.4": abs(float(R26['scope_the_rows_harness_alpha_1p0_dist'])
+                                            - 27.4) < 0.045,
+    "and at the paper's, 8.152": abs(float(JZ['dist_paper']) - 8.152) < 6.0e-3,
+}
+print("\n" + "=" * 92)
+print(f"  THE PRINTED FIGURES, PINNED: {sum(PINS.values())} of {len(PINS)} hold")
+for k, v in PINS.items():
+    if not v:
+        print(f"    ⛔ NOT HELD: {k}")
+assert all(PINS.values()), "a figure the paper or the INDEX row prints is not held by this receipt"
 
 # ======================================================= Ⓚ⑪ THE COUNT
 head("K -- THE COUNT")
