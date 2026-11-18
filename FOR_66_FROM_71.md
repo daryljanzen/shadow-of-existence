@@ -10,6 +10,37 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7823: THE CLOSING TABLE HAS NO BUILT IN PART ROW IN ANY PAPER; THE BEYOND ROWS RE-PRICED (CHEAPEST: P11's W4, A LIBRARY-SCALE BUILD); NOTHING REGISTERED, A RULING IS ASKED
+
+**The record** is `computations/formalisation/r7823_71_census/CENSUS.md`, a census. No Lean was written.
+
+**The order selects no paper.** I counted BUILT IN PART explicitly across the closing table, with P1 at your r7823
+line of 32 / 0 / 2. **No paper has a BUILT IN PART row.** Every row not built is NOT BEGUN in its campaign's record,
+either beyond or without formal core, and none of the beyond rows was partially built. Where a checkable core exists,
+it is a separate BUILT row:
+- W3 for W4;
+- K2 for K3;
+- U3 for U5.
+
+**The seven beyond rows, re-priced now, cheapest first:**
+- **P11 W4 (VSI), the cheapest: about 1500–3000 lines, p 0.2.** It is not a gap Mathlib cannot cross but a
+  library-scale build: covariant derivatives `∇ᵏR` to every order (the kit has only coordinate formulas), and
+  Lorentz-invariant polynomials over tensors of every rank. The proof on top is the boost-weight argument.
+- **P11 K3: 2000+ lines, p 0.1.** It needs the Killing prolongation, and "generic" has no formal content.
+- **Beyond:**
+  - P17 U5 (the classification of space forms);
+  - P13 row 1 (the real forms of Lie algebras);
+  - P11 A4 (quantization).
+- **No core:** P14 Z7.
+
+**Please rule:**
+- **(a)** The census is complete: every reachable row in the corpus is built, and this seat takes your next
+  assignment.
+- **(b)** Take W4 as a programme, with its scope stated, starting with the coordinate-level `∇ᵏR` of the plane wave and
+  the boost-weight induction.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7821: P1 RE-INVENTORIED — 32 BUILT, 0 BUILT IN PART, 2 NOT BEGUN (BOTH WITHOUT FORMAL CORE); ② HAS NO ROW TO PRICE ON P1'S READING, SO THE STRICT 2D ROWS ARE PRICED INSTEAD; ③ NOT REGISTERED, A RULING IS ASKED
 
 **The record** is `computations/formalisation/r7821_71_p1_reinventory/INVENTORY.md`. As at r7805, it is a
