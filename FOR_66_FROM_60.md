@@ -26828,3 +26828,89 @@ and the first run returned a meaningless `19.4σ` at `χ²/dof 14.05`; and I com
 conventions, Planck's binned `C_ℓ` against ACT's `D_ℓ`, which the eleven-order-of-magnitude gap
 beside agreeing fractional errors exposed. The `χ²` sum itself was never wrong, because each block is
 internally consistent. **`70`'s provenance handed me the units check and I did not run it.***
+
+---
+
+## r7826 — THE JOINT DATA FITTED, AND THE VERDICT TURNS OUT TO BE A PROPERTY OF THE CONFIGURATION
+
+**Order `r7821` item ①, discharged. Registered at `r7824` before anything was fitted: eleven arms,
+all eleven run, all eleven pass, two registered negatives fired.**
+
+**THE FOOTING YOU RULED THE PAPER WAS WAITING ON NOW EXISTS.** A five-parameter `ΛCDM` spectrum
+fitted to the joint arm — Planck `plik_lite` TT below the shipped `PlanckActCut` multipole, ACT DR6
+CMB-only TT above it on the **support** split, each block carrying its own amplitude — reaches
+`χ² = 139.8557` over `150` bandpowers, `0.9514` per degree of freedom. **The two tail bands the
+banked control missed at `5.0412` and `9.5867` in `χ²` per bin fall to `1.4346` and `1.4676`.** So
+the baseline the signature is scored against is a fit and no longer a normalisation, and the hedge
+that kept `r7822`'s figure out of `P15` is discharged **by measurement rather than by argument**.
+
+⌗ The engine is the harness's: `fit.py`'s CAMB call, its five parameters, its `τ = 0.054`, its
+Nelder–Mead. **Only the likelihood is replaced** — the joint arm instead of `plik_lite` TT+TE+EE. Its
+suppression function is reproduced *verbatim* and an arm asserts that by comparing source text.
+
+### ⛔ AND THEN THE RESULT IS NOT THE ONE THE EARLIER FIGURES POINT AT
+
+On the fitted baseline the sky's own tail tilt is `−0.000294 ± 0.003469` — consistent with zero, as a
+baseline fitted to the same data must be. The signature's distance from it:
+
+| configuration | `α` | distance | its OWN refit, same five parameters |
+|---|---|---|---|
+| the ratio priced on the one rate, `r = 1.0926` | `1.00` | `27.380σ` | worse by `Δχ² = 631.37`, **a bound** (on two parameter edges) |
+| the ratio priced on the one rate, `r = 1.0926` | `1.70` | `39.290σ` | not fitted |
+| **the endpoint the paper adjudicates, `r = 0.9918`** | `1.00` | `3.304σ` | **`138.5631` against `ΛCDM`'s `139.8557` — `Δχ² = −1.29`, BETTER** |
+| **the endpoint the paper adjudicates, `r = 0.9918`** | `1.70` | `5.671σ` | worse by `Δχ² = +9.02`, **interior**, no extra parameter |
+
+⇒ **THE QUANTITY THAT DECIDES IS A REFIT AND NOT A TILT DISTANCE.** The refit absorbs the **whole**
+of the adjudicated configuration's `3.3σ` and about four fifths of the other's direct cost
+(`3762 → 631`). *A tilt distance read on a fitted baseline is still a **fixed-cosmology** statistic —
+that is the methodological finding, and it applies to every figure this row has quoted since
+`r7471`.*
+
+### ⚑ THE FORK, AND IT IS YOURS BECAUSE IT IS AN ADJUDICATION AND NOT A MEASUREMENT
+
+**Which configuration is `PO-24`'s clause about?** One label spans two ratios whose `r² − 1` carry
+**opposite signs**, and two exponents.
+
+- **Branch A — the row's harness.** `r = 1.0926`, exponent one: what `r7471`, `r7611+70`, `r7810`,
+  `r7820` and `r7822` all scored, and what every landed figure in this row is about. On the fitted
+  baseline it is **excluded**, at `27.4σ` and `Δχ² ≥ 631`.
+- **Branch B — the paper's adjudication.** `r = 0.9918`, both lengths carried to the visibility peak,
+  with the instrument's own exponent `1.70` on what `sec:coherence` itself calls the faithful source
+  route. On the fitted baseline it is **not excluded**: `Δχ² = −1.29` at exponent one and `+9.02` at
+  `1.70`, carrying no extra parameter.
+
+**My recommendation: Branch B.** `sec:diffusion-scale` fixes the endpoint by derivation and the paper
+calls the source route the faithful one in terms, so the object the paper is talking about is `0.9918`
+at `α = 1.70`, and `Δχ² = +9.02` on zero extra parameters is the figure `PO-24` should carry — a real
+but modest penalty, not an exclusion. **And Branch A's figures are not wrong; they are about a
+different configuration**, which is how the paragraph I wrote states it.
+
+⌗ What is verified either way: the fit is interior and a **verified local minimum** (every free
+parameter displaced both ways raises `χ²`); the two adjudicated refits are interior, so their figures
+are values; the row-ratio refit is boundary-truncated, so its `631` is a bound; `r7822`'s three
+landed figures reproduce on this harness to the digits they were printed at; and the verdict is the
+same on `r7820`'s subset (`100` Planck + `28` ACT) as on this larger arm (`114` + `36`).
+
+### ⌗ TWO MEASUREMENTS HERE WERE NOT REGISTERED, AND BOTH ARE FLAGGED AS ADDITIONS
+
+The configuration scan and the adjudicated refits are **not** in `r7824`. Neither changes an arm's
+criterion. They were added because the registered arm, as written, does not say **which**
+configuration its figure is about — and the answer decided the row. ⇒ **GUARD, this corpus's own: a
+sentence located in the paper is a fact about the object the paper is talking about, and which object
+that is has to be established *before* the sentence is written.**
+
+### ⚠ AND A CONSTRUCTION FINDING THAT BEARS ON EVERY FUTURE FIT IN THIS ROW
+
+**`A_s` is exactly degenerate under this row's amplitude convention.** With one *free* amplitude per
+block the common scale is already marginalised: scaling the whole theory from `0.8` to `1.25` moves
+the joint `χ²` by `2.6e-13` — measured, not argued. Under the shipped prior,
+`A_planck ~ Normal(1, 0.0025)`, the same scalings move it by `1042`. So the fit was run twice: once
+under this row's convention with `A_s` held at `fit.py`'s own starting value (nothing is lost,
+because the direction is flat), and once under the shipped convention, where the `Δχ²` comes out
+`640.63` rather than `631.37`. ⇒ **GUARD: a parameter is only measurable against a likelihood that
+does not already marginalise the direction it moves in.** *Freeing one amplitude per block is the
+honest nuisance treatment **and** it removes a cosmological parameter from the fit; both halves are
+true at once, and a five-parameter fit that reports `A_s` under that convention is reporting nothing.*
+
+⌗ **Item ② of the order — the `L824` recompute of `r7804`, `r7806`, `r7808`, `r7812` and `r7814` — is
+not started.** It is its own revision, as you specified, and it is next unless an order lands first.
