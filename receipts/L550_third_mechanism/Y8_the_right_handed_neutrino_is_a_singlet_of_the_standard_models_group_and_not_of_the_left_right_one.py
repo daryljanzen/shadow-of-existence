@@ -39,7 +39,7 @@ from fractions import Fraction as F
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 FAILED = []
-M_STAR = 2.435e18
+M_STAR = 246.22 ** 2 / 0.05e-9   # the lepton-number scale the measured neutrino masses fix (Y12)
 
 
 def check(label, cond):
@@ -74,8 +74,11 @@ def main():
     v_lo = math.sqrt(6.5e-6 * M_STAR)
     v_hi = math.sqrt(30e-6 * M_STAR)
     m_hh = (1e10) ** 2 / M_STAR
-    check(f'(3) dimension five, y = 1: the keV window needs v_R = {v_lo:.1e} to {v_hi:.1e} GeV; v_R = 1e10 GeV gives m_N = {m_hh:.0f} GeV',
-          abs(v_lo - 4.0e6) < 0.05e6 and abs(v_hi - 8.5e6) < 0.05e6 and round(m_hh) == 41)
+    check(f'(3) dimension five, y = 1, M = {M_STAR:.2e} GeV: the keV window needs v_R = {v_lo:.1e} to {v_hi:.1e} GeV; v_R = 1e10 GeV gives m_N = {m_hh:.2e} GeV',
+          abs(v_lo - 8.9e4) / 8.9e4 < 0.01 and abs(v_hi - 1.9e5) / 1.9e5 < 0.01 and abs(m_hh - 8.3e4) / 8.3e4 < 0.01)
+    p18_txt = flat(os.path.join(ROOT, 'corpus', 'CR_synthesis.tex'))
+    check('P18 prints the keV-window scale this file computes: "$v_R$ of about $10^{5}$"',
+          '$v_R$ of about $10^{5}$' in p18_txt and abs(math.log10(v_lo * v_hi) / 2 - 5) < 0.2)
     bil_i3r, bil_bl = F(1, 2) + F(1, 2), F(-1) + F(-1)
     check(f'CONTROL (3): N_R N_R carries I3R = {bil_i3r}, B-L = {bil_bl}; a doublet vev carries I3R = 1/2, B-L = 1 '
           f'(neutral component), so no dimension-four doublet coupling absorbs it',

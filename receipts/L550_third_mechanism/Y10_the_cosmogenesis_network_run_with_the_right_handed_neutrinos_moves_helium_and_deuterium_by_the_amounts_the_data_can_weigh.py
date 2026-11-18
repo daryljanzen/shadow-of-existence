@@ -87,9 +87,11 @@ def main():
         return (d - OBS_D) / math.hypot(SIG_D, sd * d)
 
     y0, d0 = run(0.0)
-    check(f'CONTROL (1): baseline Y_p = {y0:.4f}, D/H = {d0:.3e} ({t_y(y0):+.1f} and {t_d(d0):+.1f} sigma)',
+    # r7827 (69): deuterium's baseline offset sits at -0.55 to a few thousandths, so at one decimal it
+    #   reads -0.5 here and -0.6 on a CI build.  P16 prints it to two decimals, which no build moves.
+    check(f'CONTROL (1): baseline Y_p = {y0:.4f}, D/H = {d0:.3e} ({t_y(y0):+.1f} and {t_d(d0):+.3f} sigma)',
           abs(y0 - 0.2471) < 0.00005 and abs(d0 - 2.50e-5) < 0.005e-5
-          and f'{t_y(y0):+.1f}' == '+0.5' and f'{t_d(d0):+.1f}' == '-0.5')
+          and f'{t_y(y0):+.1f}' == '+0.5' and round(t_d(d0), 2) == -0.55)
 
     out = {}
     for name, dn in DN.items():
