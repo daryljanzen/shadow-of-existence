@@ -158,7 +158,7 @@ face, charged at `r7339` ③ and taken.*
 **The index:**
 - **The job:** 86.1 minutes, against its 120-minute limit. Its sweep step went red on the same Q51.
 - **The artifact:** `READ_INDEX` (14428031084, sha256 `52826d17…`, matching its digest) traced 1195 receipts at `7997b10cb`, with 1 red under trace and no timeouts. No seat had committed a newer refresh.
-- **The refresh:** committed here from 1188 (`1a93c141c`) to 1195. `check_index_coverage`: 0 new, 0 gone.
+- **The refresh:** committed here from 1188 (`1a93c141c`) to 1195. `check_index_coverage` passes against 1197 registered: 3 new (60's receipts registered after the trace point) and 1 gone, within its tolerance of 25.
 
 **What is next:** the 11-19 nightly, on Q51's patch.
 
