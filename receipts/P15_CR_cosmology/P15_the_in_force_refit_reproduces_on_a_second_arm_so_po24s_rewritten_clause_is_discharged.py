@@ -76,8 +76,6 @@ R7828 = os.path.join(
 R7827_LCDM = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                           'r7827_cc66_the_adjudicated_endpoint_on_an_independent_arm', 'out',
                           'fit_lcdm_a21.npz')
-SCRIPT = os.path.join(ROOT, 'computations', 'beyond_the_wall',
-                      'r7829_cc66_the_in_force_refit_on_an_independent_arm', 'refit.py')
 
 PASSED, FAILED = [], []
 
@@ -168,20 +166,50 @@ check("Ⓔ⑤ ⚠ THIS PREDICTION FAILED AND IS RECORDED AS FAILED: the two lD e
       "on is robust to the choice that made the tilt numbers unreliable",
       J['estimators_apart'] < 0.3 and abs(J['estimators_apart'] - 0.2347) < 1.1e-4)
 
-# ======================================================= Ⓕ⑥ lD IS HELD, SHOWN FROM THE SOURCE
-head("F -- lD IS HELD FIXED, ASSERTED AGAINST THE SOURCE RATHER THAN PROMISED")
-SRC = open(SCRIPT, encoding='utf-8').read()
-body = SRC.split('def spectrum(')[1].split('def objective(')[0]
-print(f"\n      spectrum() mentions cr_supp: {'cr_supp' in body}")
-print(f"      spectrum() uses LD_INFORCE : {'LD_INFORCE' in body}")
-print(f"      LD_INFORCE = {J['lD']}   r = {J['r']}   A_s9 = {J['as9']}")
-check("Ⓕ⑥ the suppression is built at a FIXED in-force lD and never from the trial spectrum: the "
-      "function that builds the theory references LD_INFORCE and does NOT call cr_supp at all, "
-      "shown from its own source text here rather than asserted in prose. ⇒ That is the whole "
-      "correction r7828 made -- a per-trial lD is a different estimator, and multiplying by "
-      "alpha = 1.70 on top of an in-force lD double-counts, which is why r7826's 9.02 and this "
-      "seat's own r7827 1.0569 are both WITHDRAWN",
-      'cr_supp' not in body and 'LD_INFORCE' in body
+# ======================================================= Ⓕ⑥ lD IS HELD, MEASURED NOT READ
+head("F -- lD IS HELD FIXED, MEASURED ON THE BUILDER'S OWN OUTPUT")
+# ** THIS TESTS THE PROPERTY, NOT A VARIABLE NAME. **  The first version asserted the string
+# 'LD_INFORCE' appeared in the builder's source and that 'cr_supp' did not.  That is a weak proxy:
+# a rename defeats it, a name in the body does not prove the constant reaches the returned
+# expression, and it minted a SOURCE/TOKEN quote-pin key on another file's source text.  ⇒ What
+# "held fixed" MEANS is that the suppression at a given multipole depends only on r and lD and NOT
+# on the cosmology.  So it is measured: build the theory at two well-separated cosmologies, divide
+# out each one's own unsuppressed spectrum, and the recovered suppression must be THE SAME curve --
+# and must equal the analytic fixed-lD form.  A per-trial lD would make the two differ, because
+# r7827's own per-trial lD moved with the fit.
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7829_cc66_the_in_force_refit_on_an_independent_arm'))
+import refit as RF                                                         # noqa: E402
+
+PV_A = (67.740724, 0.022206, 0.118237, 0.962136)        # the fitted point
+PV_B = (72.000000, 0.024000, 0.100000, 1.020000)        # deliberately far from it
+LPROBE = 2000
+_i = LPROBE - 2
+
+
+def _recovered(pv):
+    H0, ombh2, omch2, ns = pv
+    d, _dp = RF.FJ.run(H0, ombh2, omch2, RF.AS9_FIXED * 1e-9, ns)
+    unsup = d[2:RF.FJ.LMAX + 1, 0]
+    return float(RF.spectrum(pv)[_i] / unsup[_i])
+
+
+SA, SB = _recovered(PV_A), _recovered(PV_B)
+ANALYTIC = float(np.exp(-1.0 * (0.9918 ** 2 - 1.0) * (LPROBE / 1489.5783) ** 2))
+print(f"\n      suppression recovered at l = {LPROBE}:")
+print(f"        at the fitted point   {SA:.12f}")
+print(f"        at a far cosmology    {SB:.12f}")
+print(f"        analytic, fixed lD    {ANALYTIC:.12f}")
+print(f"        the two cosmologies differ by {abs(SA - SB):.3e}")
+check("Ⓕ⑥ lD is HELD FIXED, and that is MEASURED rather than read off a variable name: the "
+      "suppression recovered from the builder's own output at l = 2000, by dividing out each "
+      "cosmology's own unsuppressed spectrum, is the SAME at the fitted point and at a deliberately "
+      "far cosmology -- identical to better than 1e-12 -- and equals the analytic fixed-lD form "
+      "exp(-(r^2-1)(l/1489.5783)^2). ⇒ A per-trial lD could not do that, because r7827's per-trial "
+      "lD moved with the fit. ⌗ The first version of this gate asserted a STRING was present in "
+      "another file's source; that is defeated by a rename, does not prove the constant reaches the "
+      "returned expression, and minted a quote-pin key for a claim better made by measurement",
+      abs(SA - SB) < 1e-12 and abs(SA - ANALYTIC) < 1e-12
       and abs(J['lD'] - 1489.5783) < 1e-9 and abs(J['r'] - 0.9918) < 1e-12
       and abs(J['as9'] - 2.1) < 1e-12 and J['n_points'] == 142)
 
