@@ -20,6 +20,109 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7827+cc66.2 — ⚑ **`60`'s VERDICT IS ARM-INDEPENDENT, AND ONE OF ITS NUMBERS — THE ONE `sec:coherence` PRINTS — IS NOT: `9.02` READS `1.0569` ON A SECOND ARM**
+
+Registered and run as the cross-check `r7826`'s own deciding figure asks for. **`PREDICTION.md` was pushed
+alone before a line of the computation existed.** Eight checks, all held — and the finding is not in the
+prediction list, which is itself worth saying.
+
+### ⒜ THE HEADLINE: what is arm-independent, and what is not
+
+|  | `r7826` (60), 150 bandpowers | **this arm, 142 points** | |
+|---|---|---|---|
+| ΛCDM best fit `H0` | `68.9372` | **`68.9889`** | ✔ |
+| `ω_b` | `0.0226848` | **`0.0226810`** | ✔ four digits |
+| adjudicated endpoint, `α = 1.00` | `−1.2926` | **`−3.5996`** | ✔ sign, order |
+| **adjudicated endpoint, `α = 1.70`** | **`+9.0172`** | **`+1.0569`** | ⛔ **8.53×** |
+| row-harness ratio | `+631.3686` | **`+432.2577`** | ✔ sign, order |
+| …and its minimum sits on | `ω_b` upper, `ω_c` lower | **the same two edges** | ✔ exactly |
+| `A_s` degeneracy, χ² shift | `2.6e-13` | **`1.137e-13`** | ✔ |
+
+⇒ *** **Your conclusion stands, independently.** Two arms built separately, differing by eight
+bandpowers and each selected on its own window support, reach the **same ΛCDM point to four digits in
+`ω_b`**, and the sign at exponent one is negative on both. So *"the quantity that decides is that refit
+and not a tilt distance"* is **not an artefact of how `r7826`'s arm was built**, and the adjudicated
+endpoint is NOT excluded on either. The configuration the data do exclude is excluded on both — and its
+minimum is truncated on the **same two parameter edges**, which is what makes both figures limits rather
+than values. That is a cross-check passing, and I report it as that. ***
+
+### ⒝ ⛔ THE ONE DISAGREEMENT IS A FIGURE THE PAPER PRINTS, AND IT IS YOURS
+
+`corpus/CR_cosmology.tex:582` currently reads: *"…is worse than $\Lambda$CDM's $139.86$ on the same arm
+by $\Delta\chi^{2}=9.02$, **a penalty that carries no extra parameter**"*.
+
+⇒ *** On this arm the same quantity is **`1.0569`**. The **SIGN** of that penalty is arm-independent;
+its **SIZE** is not, by a factor of `8.53`. `9.02` reads as a real sub-threshold penalty — you called it
+three-sigma-equivalent — where `1.0569` reads as **level with ΛCDM**. ***
+
+⌗ **And note which way it cuts: this STRENGTHENS the paper's "not excluded" rather than weakening it.**
+I am reporting it for exactly that reason — a cross-check that only spoke up when the news was bad
+would not be a cross-check. *The sentence does scope itself with "on the same arm" by quoting `139.86`,
+so it is not wrong; but a reader takes `9.02` as the penalty's size, and its size moves 8.5× between two
+arms that agree on everything else to four digits.* ⇒ **Whether the sentence should say the size is
+arm-sensitive, and which figure it should carry, are your rulings. No paper sentence is edited here and
+`THE_REGISTER.md` is untouched.**
+
+⛔ *What this does NOT establish: which arm is the better arm. A disagreement between two arms **bounds a
+figure's arm-sensitivity** and does not locate the truth between them. I have not claimed `1.0569` is
+the right number.*
+
+### ⒞ `A_s` IS EXACTLY DEGENERATE — which withdraws a claim of mine you may already have read
+
+Scaling the whole theory by `0.8` and `1.25` moves the joint χ² by `1.137e-13`, reproducing your
+`2.6e-13`. ⇒ *So `r7823`'s report of `A_s9` **"on the wall at 3.0"** as one of **three** boundary
+pathologies is **WITHDRAWN**: with one amplitude profiled analytically per block a common scale is
+already marginalised, so that is a degenerate direction drifting to its box edge and carries no
+information. **The two real bounds are `ω_b` and `ω_c` — exactly the two `60` found** — so once the
+degenerate direction is discounted, the wall structure of the two arms matches as well as everything
+else does.*
+
+### ⒟ TWO DEFECTS OF MY OWN, FIXED RATHER THAN REPORTED AROUND
+
+1. ⛔ **An arm that was not a refit at all.** `row_a21` first ran *"after 0 evals"*: its start point sat
+   **exactly on `ω_b`'s closed upper bound** — the very pathology this row keeps producing — so every
+   simplex vertex was rejected, `minimize` returned the start point untouched, and the harness still
+   printed a χ² computed **at** it. ⇒ *A value at a non-optimal point is an **UPPER bound** on χ² and
+   cannot establish a `Δχ²` floor, so that reading was withdrawn, not reported.* Start nudged inside the
+   box (`210` evaluations now), the counter changed to count **every** call so a zero cannot hide, and
+   **gate ⑦ now asserts every arm is a real refit** — the check exists because one was not.
+2. ⌗ **A registration too loose to be a test.** I registered ③ as `0 < Δχ² < 25` at `α = 1.70` — wide
+   enough to score the `8.53×` disagreement of ⒝ as **HELD**. ⇒ *The finding came from **comparing the
+   two arms' numbers**, not from the prediction meant to test them. That is a weakness in my own
+   registration and it is in **gate ⑧**, not left implied by a column of green.*
+
+### ⒠ WHAT LANDED, AND HOW IT IS CHECKED
+
+`receipts/P15_CR_cosmology/P15_the_adjudicated_endpoints_verdict_is_arm_independent_and_the_penalty_the_paper_prints_is_not.py`
+— **8 gates, 0 FAIL, `COMPUTES:` header, 24 of 24 printed figures pinned by a comparison**; INDEX row
+appended at the end of the P15 block (9 pipes / 8 columns); appendices regenerated; `CR_cosmology.pdf`
+rebuilt; `check_pdf_current`, `check_pages_current` rc=0; the lean turn batch **`PASS=124 FAIL=0`**.
+
+⇒ *** **Neither side of the comparison is hardcoded.** `r = 0.9918`, `α = 1.70` and the printed `9.02`
+are **parsed out of the paper**; `r7826`'s `68.9372`, `0.0226848`, `−1.2926`, `9.0172` and `631.3686` are
+**parsed out of its receipt source**. So this receipt goes red if either moves, instead of quietly
+comparing against a memory of numbers that have since changed. *** And `r7823`'s split is **imported as
+a module**, not re-described, so the arm, the window-support selection and the per-block analytic
+amplitude are the same code on both runs.
+
+**Failability measured, not asserted — 5 probes, all bite**, each reddening the arm it should and nothing
+else: moving the `1.0569` → ④; moving the paper's `9.02` → ④; moving `r7826`'s banked point → ②; lifting
+`ω_b` off its wall → ⑤; restoring the zero-evaluation defect → ⑦. *The tree was restored byte-identical
+after each, md5-verified on both tracked files the probes touched.*
+
+### ⒡ ⚑ WHAT IS YOURS
+
+1. **The paper's `9.02`** — see ⒝. A scope line, a different figure, or nothing at all; your call.
+2. **`PO-24`'s discharge clause.** ⒜ settles it: **the row's first half is not dischargeable by a tilt
+   distance** — not at my withdrawn `22.40σ`, not at `27.38σ` — because the deciding statistic is a
+   refit and the refit absorbs the adjudicated endpoint whole, on both arms. ⇒ *The clause wants
+   rewriting in terms of a refit. I registered in `r7827` ⑥ that I would report **no sigma as a verdict**
+   in this case, and I am not reporting one.*
+3. **The row collision** (`r7823+cc66.1` ⒡) still stands unanswered.
+
+*All committed and pushed on `claude/shadow-of-existence-setup-5tjf0b`, PR #821.*
+
+
 ## r7823+cc66.1 — ⛔⛔⛔ **A CORRECTION I OWE YOU BEFORE ANYTHING ELSE: I CLAIMED A DISCHARGE OF `PO-24` AT 22.40σ. IT IS WITHDRAWN, AND `60`'s `r7826` IS WHY**
 
 **Order `r7823`** said: *"the pass is done. Next is the open frontier. Pick the live register row
