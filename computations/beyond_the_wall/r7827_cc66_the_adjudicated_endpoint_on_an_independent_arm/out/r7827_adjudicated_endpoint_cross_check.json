@@ -1,0 +1,68 @@
+{
+  "alpha_paper": 1.7,
+  "arm_dependent": false,
+  "as9_fixed": 2.1,
+  "chi2": {
+    "adj_a100": 111.23742198626519,
+    "adj_a170": 115.89395456184428,
+    "lcdm_a21": 114.83701334304715,
+    "row_a21": 547.0947537763036
+  },
+  "chi2_r7823_lcdm_floating": 113.17391783140775,
+  "dchi2": {
+    "adj_a100": -3.599591356781957,
+    "adj_a170": 1.0569412187971352,
+    "row_a21": 432.25774043325646
+  },
+  "degeneracy_max_shift": 1.1368683772161603e-13,
+  "lD": {
+    "adj_a100": 1360.6375407358937,
+    "adj_a170": 1357.0246851507418,
+    "lcdm_a21": 1365.8956680568479,
+    "row_a21": 1397.6849997124013
+  },
+  "n_points": 142,
+  "nfev": {
+    "adj_a100": 179,
+    "adj_a170": 171,
+    "lcdm_a21": 142,
+    "row_a21": 210
+  },
+  "predictions": {
+    "(1) REGISTERED NEGATIVE did NOT fire (it fires if Delta chi2 > +4)": true,
+    "(1) THE ONE THAT MATTERS: the sign reproduces, Delta chi2 < 0 at alpha 1": true,
+    "(2) level means level: |Delta chi2| < 10 at alpha 1": true,
+    "(3) the exponent axis: 0 < Delta chi2 < 25 at alpha 1.70": true,
+    "(4) A_s is exactly degenerate: the scalings move chi2 by < 1e-6": true,
+    "(5) the excluded configuration stays excluded, Delta chi2 > 100": true,
+    "EVERY arm is a real refit (nfev_inbounds > 0) -- row_a21 once was not": true,
+    "PRECONDITION the two conventions are comparable, |dchi2| < 15": true
+  },
+  "r_adjudicated": 0.9918,
+  "x": {
+    "adj_a100": [
+      67.50158312009609,
+      0.022104999267982248,
+      0.11864934250266862,
+      0.9592801599360952
+    ],
+    "adj_a170": [
+      66.50173841973809,
+      0.0217198564970374,
+      0.12033993931732043,
+      0.9471891399119341
+    ],
+    "lcdm_a21": [
+      68.98892152363427,
+      0.02268124853447579,
+      0.11612044044820735,
+      0.9771162804072892
+    ],
+    "row_a21": [
+      83.95344597552722,
+      0.025999998416889193,
+      0.09000030244075487,
+      1.1359513040949065
+    ]
+  }
+}

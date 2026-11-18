@@ -61,11 +61,19 @@ def spectrum(pv4, arm):
 
 
 def objective(pv4, arm, n):
+    # ** n COUNTS EVERY CALL, in-bounds or not. **  It used to increment only after the bounds
+    # test, and row_a21's start point sat EXACTLY on omega_b's upper bound (0.026), so every
+    # simplex vertex was rejected, minimize returned x0 untouched, and the arm reported
+    # "after 0 evals" while fit() still printed a chi2 -- computed at x0, not at a minimum.
+    # A value at a non-optimal point is an UPPER bound on chi2 and cannot establish a Delta chi2
+    # floor, so that reading was withdrawn rather than reported.  Counting every call makes the
+    # failure loud; n_inbounds makes it diagnosable.
+    n[0] += 1
     H0, ombh2, omch2, ns = pv4
     if not (55 < H0 < 85 and 0.018 < ombh2 < 0.026 and 0.09 < omch2 < 0.16 and 0.85 < ns < 1.25):
         return 1e6
     try:
-        n[0] += 1
+        n[1] += 1
         return FJ.joint_chi2_of(spectrum(pv4, arm)[0])[0]
     except Exception:
         return 1e6
@@ -80,19 +88,23 @@ def fit(arm, budget):
     print(f"  arm={arm}  Planck {int(FJ.P_KEEP.sum())} bins, ACT {int(FJ.A_KEEP.sum())} "
           f"bandpowers, A_s9 held at {AS9_FIXED}, budget {budget}")
     if arm == 'row_a21':
-        x0 = [83.977742, 0.026000, 0.090297, 1.133791]      # r7823's own CR point, A_s9 dropped
+        # r7823's own CR point, A_s9 dropped -- and NUDGED INSIDE the box.  That point sits on
+        # omega_b's upper bound and omega_c's lower bound, which is the very pathology r7823 and
+        # r7826 both found; starting a simplex exactly on a closed bound evaluates nothing.
+        x0 = [83.977742, 0.025990, 0.090100, 1.133791]
     else:
         x0 = [69.734909, 0.022834, 0.114712, 0.981426]      # r7823's own LCDM point
-    n = [0]
+    n = [0, 0]
     r = minimize(objective, x0, args=(arm, n), method='Nelder-Mead',
                  options={'maxfev': budget, 'xatol': 2e-3, 'fatol': 0.2})
     dl, lD, rr = spectrum(r.x, arm)
     c, cp, ca, ap, aa = FJ.joint_chi2_of(dl)
     np.savez(dest, x=r.x, fun=float(r.fun), chi2=c, chi2_planck=cp, chi2_act=ca,
-             amp_planck=ap, amp_act=aa, lD=lD, r=rr, nfev=n[0], as9=AS9_FIXED)
+             amp_planck=ap, amp_act=aa, lD=lD, r=rr, nfev=n[0], nfev_inbounds=n[1],
+             as9=AS9_FIXED)
     print(f"  {arm}: chi2={c:.4f} (Planck {cp:.4f}/{int(FJ.P_KEEP.sum())}, "
           f"ACT {ca:.4f}/{int(FJ.A_KEEP.sum())})  x={np.round(r.x, 6)}  "
-          f"lD={lD:.3f} r={rr:.6f}  after {n[0]} evals")
+          f"lD={lD:.3f} r={rr:.6f}  after {n[0]} evals ({n[1]} in bounds)")
 
 
 def degeneracy():
@@ -136,6 +148,8 @@ def report():
          ('(2) level means level: |Delta chi2| < 10 at alpha 1', abs(D['adj_a100']) < 10.0),
          (f'(3) the exponent axis: 0 < Delta chi2 < 25 at alpha {ALPHA_PAPER:.2f}',
           0.0 < D['adj_a170'] < 25.0),
+         ('EVERY arm is a real refit (nfev_inbounds > 0) -- row_a21 once was not',
+          all(int(Z[a]['nfev_inbounds']) > 0 for a in Z if 'nfev_inbounds' in Z[a])),
          ('(4) A_s is exactly degenerate: the scalings move chi2 by < 1e-6', dmax < 1e-6),
          ('(5) the excluded configuration stays excluded, Delta chi2 > 100',
           D['row_a21'] > 100.0)]
