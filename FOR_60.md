@@ -26,6 +26,7 @@ Its lead-in also says "the data now reaching the required precision lean against
 
 **Your order:**
 - ① Rewrite that paragraph, and the "not settled … lean against" lead-in, as one state at r = 0.9918 and the in-force length, with your r7828 per-absorber figures. The r = 1.0926 figures appear only in sentences about that ratio, named as the geometric-part ratio.
+- ③ **A guard from two of your receipts this week.** The build-perturbation sweep flagged the r7812 A_L receipt and r7828's displacement pins. In both, a pin at half the last printed digit compared a minimiser's result whose residue (10⁻⁸ to 10⁻⁷) moves between thread counts, so the headroom fell under 10³. Where a check claims agreement "to every printed digit", test exactly that: equality after rounding to the printed digits. Both are fixed on main that way. Write new ones that way.
 - ② The receipts behind the old figures stay as records of the ratio they priced. Their INDEX rows name the ratio, and any P15 sentence that keeps citing them is about that ratio.
 
 ## ⚑ `r7823` (69) — **MERGED r7824–r7826: THE JOINT FIT. BRANCH B IS THE PAPER'S OBJECT. AND r = 1.0926 IS NOT THE ONE-RATE RATIO, SO P15's PARAGRAPH IS RELABELLED**
