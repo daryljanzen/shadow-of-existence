@@ -27022,3 +27022,70 @@ better than `ΛCDM`.** Those two together are not an exclusion in either directi
 the paragraph to say exactly that rather than to lean. **If you want a figure for the row's status, my
 recommendation is `Δχ² = −2.3697` with its scope attached**, and the fixed-cosmology `8.152σ` reported
 beside it as the statistic a refit reverses.
+
+---
+
+## r7828 — ⚠ A BLOCK, AND IT IS A RUNTIME BUDGET AND NOT A RESULT: THE CARRIER-SEPARATION RECEIPT EXCEEDS ITS DECLARED `900` s UNDER RUNNER CONTENTION, AT `318` s ALONE
+
+**`r7828` is green on `#824` on everything that was measured** — the fast tier, the runner-read
+sweep, all three tolerance probe builds and both tolerance perturbation comparisons concluded
+success on the current head, with `0` flagged sites. The one standing red is the scoped plain
+suite, and its `RECORD` line names exactly one receipt:
+
+```
+RECORD (suite, @ 08b8d36676): ran 287, 1 named red; +0 carried, 1 cleared by a green,
+                              1 still red, 0 no longer registered; 1 carried after this push
+  = still red: …P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier…
+  [slow] …P15_the_carrier_separation_on_L_p…  -- exceeded 900s
+```
+
+**It is not a failed check. No gate of that receipt fired — the ledger recorded its labels as
+`unrecorded -> []`, which is what an unfinished process leaves behind.** The job's step ran for
+`49` minutes and the receipt was cut off at its declared budget.
+
+### ⌗ WHAT I MEASURED RATHER THAN ASSUMED
+
+| | |
+|---|---|
+| the declared budget, in `scripts/run_all_receipts.py` | `900` s, annotated `measured 264s / 308s alone (r7615)` |
+| the receipt, run alone on this seat, four cores, on the pushed tree | **`318` s, exit `0`, `17` of `17` checks pass** |
+| what the runner was doing to it | the scoped suite ran `07:33:48`→`08:23:13` **while all three tolerance probe builds ran on the same pool** (`07:34`→`07:58`), each probing every receipt in scope |
+| the same red on the previous head | present, and carried as `still red` — so it predates `r7828`'s last push |
+| `main` at `7997b10cb` | green, but its scoped suite never ran this receipt: the scope there was one `A_L` receipt |
+
+**So the cost of the receipt has not moved — `318` against the recorded `264`/`308` — and what
+crossed the budget is the `2.9×` headroom being eaten by four concurrent jobs.** That is
+`L_numerics/Q1`'s failure mode exactly, in a different receipt: a per-receipt limit set from a
+measurement taken alone, crossed under contention the measurement never saw.
+
+### ⚑ THE PATCH, ROUTED AND NOT APPLIED
+
+```diff
+--- a/scripts/run_all_receipts.py
++++ b/scripts/run_all_receipts.py
+@@
+-    'P15_the_carrier_separation_on_L_p_…_sampling_invariant.py': 900,  # measured 264s / 308s alone (r7615)
++    'P15_the_carrier_separation_on_L_p_…_sampling_invariant.py': 2400,  # measured 264s / 308s / 318s alone
++    # (r7615, r7828); 900 was 2.9x the alone-cost and was still crossed when the scoped suite ran
++    # beside all three tolerance probe builds — the budget has to clear contention, not just the clock
+```
+
+**I have not applied it, and I am not asking to.** `scripts/run_all_receipts.py` is the harness
+every seat's CI reads, the receipt it names is not in `r7828`'s diff, and folding a shared budget
+change into a physics revision is the thing routing exists to prevent. **Three ways to take it,
+and my recommendation is the first:**
+
+- **⓵ you apply the patch on `main`** — it is one number, the measurement for it is above, and it
+  leaves the receipt running and every one of its `17` checks binding. **Recommended:** the defect
+  is in the budget, nothing is skipped, and `#824` goes green on its next push with no change to
+  this revision.
+- ⓶ **you authorise me to carry it inside `r7828`**, and I push it as its own commit with the
+  measurement in the message. Same patch, but a harness change rides a revision it has nothing to
+  do with.
+- ⓷ **you rule it a known contention red and leave the budget alone**, in which case it belongs in
+  the ledger beside `L259/D1` and `L_numerics/Q1` as a third standing-down case, and `#824` merges
+  red on that one job. I would not choose this: unlike `D1`, a fix exists and costs one number.
+
+⌗ **What is NOT in question:** the receipt's result. It runs to `17` of `17` on the pushed tree,
+exit `0`, and its conclusions are unchanged — the carriers separate on `L_p` by `146σ`, the
+separation is the comb's own peak count, the sky's reading is void, and the closure has no number.
