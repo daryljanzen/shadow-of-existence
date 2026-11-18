@@ -2428,16 +2428,5 @@
     "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_neutrino_count_is_free_to_move_and_absorbs_nothing_because_what_an_absorber_must_overlap_is_the_residual_the_tilt_leaves.py": {
-    "gates": [
-     "\u24ba\u2469"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44363892625",
-    "since": "2649e1842efe30e94a29fad23cedd16b2fa0e08c"
-   }
-  }
  }
 }
