@@ -146,12 +146,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44231872694",
     "since": "dd616ff01d883396a3f177cb89c6fbcca429d25d"
    }
-  },
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44233538220",
-    "since": "5c90fad6e3c9c672ca73964fb9052388bf18afdd"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
