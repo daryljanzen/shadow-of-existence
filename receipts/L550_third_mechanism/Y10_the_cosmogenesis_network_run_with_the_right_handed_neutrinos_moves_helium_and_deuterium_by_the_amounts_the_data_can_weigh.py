@@ -101,7 +101,7 @@ def main():
     lev_y = (yh - y0) / dh
     lev_d = math.log(dhi / d0) / dh
     check(f'(2) the network\'s own levers: dY_p/dN_eff = {lev_y:.4f}, d ln(D/H)/dN_eff = {lev_d:.3f}',
-          round(lev_y, 3) == 0.013 and abs(lev_d - 0.13) < 0.005)
+          round(lev_y, 3) == 0.013 and round(lev_d, 2) == 0.13)
     ts = [t_y(yl), t_y(yh), t_d(dlo), t_d(dhi)]
     check(f'(3) helium {t_y(y0):+.1f} -> {ts[0]:+.1f} and {ts[1]:+.1f} sigma; deuterium {t_d(d0):+.1f} -> {ts[2]:+.1f} and {ts[3]:+.1f} sigma',
           [f'{x:+.1f}' for x in ts] == ['+1.0', '+1.5', '+0.6', '+1.8'] and max(abs(x) for x in ts) < 2.0)
@@ -120,7 +120,7 @@ def main():
           f'levers {lev_y:.3f}, {lev_d:.4f}',
           abs(dl - 0.14) < 0.005 and abs(dh - 0.29) < 0.005 and abs(d0 * 1e5 - 2.50) < 0.005
           and abs(dlo * 1e5 - 2.55) < 0.005 and abs(dhi * 1e5 - 2.60) < 0.005
-          and round(lev_y, 3) == 0.013 and abs(lev_d - 0.132) < 0.0005)
+          and round(lev_y, 3) == 0.013 and round(lev_d, 3) == 0.132)
 
     # r7827 (69): the flagged pins above test equality at the precision the network determines.  The
     #   integrator's last digits move between builds (the build sweep flagged five sites and one FLIP:
