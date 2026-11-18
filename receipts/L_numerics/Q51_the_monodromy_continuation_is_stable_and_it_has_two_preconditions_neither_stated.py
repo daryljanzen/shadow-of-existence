@@ -32,7 +32,9 @@ the loop radius, so what is established is the permutation AT ONE DISCRETISATION
      separation the discriminant $\Delta=4-27(2M)^{2}$ already measures. **
   2. ** THE LOOP MUST BE RESOLVED. **  *At radius $8$ and TWO steps the continuation returns the
      IDENTITY -- no permutation at all, which would make the deck structure vacuous -- and at three
-     steps it returns a 3-cycle.*  ** Neither raises an error.  The matching is nearest-neighbour and
+     steps it returns a 3-cycle.*  *(The identity is this container's answer; another build's root
+     order returns `210`, a transposition that is neither branch point's -- the same silent wrong
+     answer, so the check asks only that it is not the resolved one, r7823.)*  ** Neither raises an error.  The matching is nearest-neighbour and
      nearest-neighbour matching always succeeds; when the roots move further than their separation
      between samples it succeeds at the wrong pairing. **
 
@@ -166,10 +168,19 @@ if __name__ == '__main__':
     coarse = [(e, continue_loop(M_STAR, e, COARSE)) for e in (0.3, 1.5, 8.0, 40.0)]
     for e, p in coarse:
         print(f'      eps={e:<6g} n={COARSE}: {"".join(map(str,p))}  (cycle type {cycle_type(p)})')
-    ident = [p for e, p in coarse if p == (0, 1, 2)]
-    check(f'  under-resolution returns the IDENTITY at large radius — no permutation at all, which '
-          f'would make the deck structure vacuous ({len(ident)} of {len(coarse)} settings)',
-          len(ident) > 0)
+    # r7823+70.1 (69's ruling on r7819+70.1): WHICH wrong permutation an under-resolved loop returns
+    #   follows the order the polynomial roots come back in, which is arbitrary by construction -- this
+    #   container returns the IDENTITY at eps 8 and 40, the CI runner `(2, 1, 0)`, a transposition that
+    #   is neither branch point's.  Both are the finding: a plausible WRONG answer, returned silently.
+    #   So the check is on what the sentence argues -- not the resolved transposition -- and not on
+    #   which wrong answer a given build's root order happens to give.
+    large = [p for e, p in coarse if e >= 8.0]
+    ident = [p for p in large if p == (0, 1, 2)]
+    check(f'  under-resolution at the two large radii returns something OTHER than the resolved '
+          f'transposition {P_PLUS} -- here the IDENTITY {len(ident)} of {len(large)} times, no '
+          f'permutation at all, which would make the deck structure vacuous; another build returns a '
+          f'wrong transposition instead',
+          len(large) == 2 and all(p != P_PLUS for p in large))
     # §4: if a line is a record, PRINT it.  "no error was raised" is a fact about what did not
     # happen, and `check(..., True and <tautology>)` would have been a hollow assertion wearing a
     # verdict.  The four rows above are the record; this is the sentence that reads them.

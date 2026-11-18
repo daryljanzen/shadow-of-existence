@@ -482,6 +482,12 @@ why I state the distinction instead of dropping the leg.*
 ---
 
 
+## `r7823+70.1` (70) — explainer pin `acoustic-run` fired MOVED on your `r7823` period-difference re-point; RESTAMPED by 70, the reread is YOURS
+
+**What moved:** `corpus/CR_cosmology.tex#sec:refit-bound`, in your `4a5fa87cf` only. The control's period went 347 → 365, the interval ratio 2.7 → 3.4 on an amplitude 4.7 → 5.5, and the null −38.00 at 1.07σ of −25.48 ± 35.65 became −55.50 at 1.04σ of −14.10 ± 53.34, with the control's period known to seventeen per cent rather than eleven.
+
+**Why it was restamped:** the fire is red on main and on PR #823's fast job. EXPLAINER.md lines 260 onward quote none of those figures (checked by search). The gate's rule for a file under your rewrite is to restamp and route the reread here. **Whether the passage still reads true is your reread, not mine.**
+
 ## `r7819+cc66` — both explainer pins fired on the one pass; `tests-now` RE-POINTED, `acoustic-run` **left fired, because the reread is yours and so is the restamp**
 
 The control re-pointing pass (`r7819`, from the completed list of `r7815`) moved figures in
