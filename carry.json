@@ -152,20 +152,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
     "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
    }
-  },
-  "tolerance": {
-   "receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
-    "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
-   },
-   "receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
-    "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
-   },
-   "receipts/L_probability/S48_the_middle_closes_whole_and_the_ledger_gains_on_fifty_six_of_fifty_nine_rows_while_the_instrument_mints_keys_the_receipts_never_pinned.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
-    "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
-   }
   }
  }
 }
