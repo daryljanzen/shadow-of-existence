@@ -152,13 +152,5 @@
     "since": "fc857fd91b583ad9edb1384bf96f33d026fcbaf6"
    }
   }
- },
- "claude/youthful-darwin-xvkwh7": {
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_lensing_amplitudes_bound_becomes_a_fit_on_the_widened_grid_and_it_wants_more_than_the_edge_allowed.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44225397233",
-    "since": "cfb49a1406d4863de879c1f1009bf5e4b4ca15dc"
-   }
-  }
  }
 }
