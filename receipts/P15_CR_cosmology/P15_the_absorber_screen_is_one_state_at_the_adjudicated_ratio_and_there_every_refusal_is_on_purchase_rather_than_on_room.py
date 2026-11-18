@@ -240,13 +240,20 @@ _scoped = _SCOPED in _lead_in
 _refit = _scoped
 print(f"      the lead-in is {len(_lead_in)} characters long")
 print(f"      the whole scoped clause is present    : {_scoped}")
-print(f"      an unscoped lean survives anywhere    : "
-      f"{'YES' if _lead_in.count('lean against') != (1 if _scoped else 0) else 'no'}")
+# ⌗ not a count: every occurrence of the lean must lie INSIDE the scoped clause, which is what
+#   "no unscoped lean survives" means.  An empty set of occurrences would satisfy a bare all(),
+#   so the arm also requires that the clause itself is there to contain them.
+_j = _lead_in.index(_SCOPED) if _scoped else -1
+_hits = [m.start() for m in re.finditer('lean against', _lead_in)]
+_contained = bool(_scoped) and bool(_hits) and all(_j <= k < _j + len(_SCOPED) for k in _hits)
+print(f"      occurrences of the lean in the lead-in: {_hits}")
+print(f"      the scoped clause spans {_j}-{_j + len(_SCOPED) if _scoped else -1}")
+print(f"      every one of them lies inside it      : {_contained}")
 check("Ⓖ⑦ the lead-in no longer asserts that the data lean against the signature full stop, which "
       "is what contradicted the refit's verdict: it says so AT FIXED COSMOLOGY, states in the "
       "same sentence that refitted they do not, and hands the deciding reading to the paragraph "
       "after it -- the hedge that was load-bearing is now in the stem",
-      _scoped and _lead_in.count('lean against') == 1)
+      _scoped and _contained)
 
 # ======================================================= Ⓗ⑧ THE OPTICAL DEPTH IS CONFIGURATION-FREE
 head("H -- THE ONE EXCLUSION THAT IS EXACT AND SO HOLDS AT EVERY CONFIGURATION")
