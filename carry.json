@@ -135,23 +135,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py": {
-    "gates": [
-     "and to THREE neutrino species in the rel"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
-    "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
-   },
-   "receipts/L_probability/S48_the_middle_closes_whole_and_the_ledger_gains_on_fifty_six_of_fifty_nine_rows_while_the_instrument_mints_keys_the_receipts_never_pinned.py": {
-    "gates": [
-     "\u24b9\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44342911514",
-    "since": "3e0ea22b01b84ef95a2a14d5e5d3c5a8e09df914"
-   }
-  }
  }
 }
