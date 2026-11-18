@@ -187,15 +187,18 @@ for cname, cfile in (('L820', 'L820_lcdm_L2512_nk800.npz'), ('L824', 'L824_lcdm_
 check("Ⓐ① the three displacements at the ROW's configuration on L824 reproduce r7822's landed "
       "figures to every digit -- -0.069641, -0.175961 and -0.260164 -- so this harness is the one "
       "that produced them and the figures at the paper's configuration may be set beside them",
-      abs(DISP[('L824', 'row', 100)] + 0.069641) < 5.0e-7
-      and abs(DISP[('L824', 'row', 700)] + 0.175961) < 5.0e-7
-      and abs(DISP[('L824', 'row', 1000)] + 0.260164) < 5.0e-7)
+      # r7827 (69): "to every digit" tested as equality at the printed six decimals.  The bounded
+      #   minimiser leaves a residue near 1e-8 that moves between builds, so a float tolerance at
+      #   half the last digit had headroom 56 against the build sweep's 1e3; the rounded values do not move.
+      round(DISP[('L824', 'row', 100)], 6) == -0.069641
+      and round(DISP[('L824', 'row', 700)], 6) == -0.175961
+      and round(DISP[('L824', 'row', 1000)], 6) == -0.260164)
 check("Ⓔ⑤ at the paper's configuration the displacement turns POSITIVE and shrinks by an order on "
       "every window -- +0.006167, +0.015141 and +0.022361 -- which is the sign and the size of "
       "r^2 - 1 and not a separate fact",
-      abs(DISP[('L824', 'paper', 100)] - 0.006167) < 5.0e-7
-      and abs(DISP[('L824', 'paper', 700)] - 0.015141) < 5.0e-7
-      and abs(DISP[('L824', 'paper', 1000)] - 0.022361) < 5.0e-7
+      round(DISP[('L824', 'paper', 100)], 6) == 0.006167
+      and round(DISP[('L824', 'paper', 700)], 6) == 0.015141
+      and round(DISP[('L824', 'paper', 1000)], 6) == 0.022361
       and all(DISP[('L824', 'paper', lo)] > 0 for lo, _ in WINDOWS))
 
 # ======================================================= Ⓕ⑥ THE SHAPE
