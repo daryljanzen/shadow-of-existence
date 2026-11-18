@@ -227,11 +227,15 @@ print(f"      ⇒ {_sig:.2f} sigma from zero, and {100 * _p:.0f} per cent of dra
 # ⛔ r7645+cc66.70: this gate PASSED on a stale label -- its inequalities still held while the
 #   figures beside them were the namesake arm's.  *That is the same class as cc66.67's answer block:
 #   a condition that survives a re-point does not make the prose beside it true.*
-check("Ⓑ①  ** THE ORDERED DIFFERENCE IS NOT SIGNIFICANT: 1.07 sigma, with 54 per cent of draws at "
+# r7823 (69): the control is re-pointed to Planck 2018's published point (cc66's pass reads the
+#   re-pointed `nofit_figure_numbers.npz`); the control's period moves 347.25 -> 364.75 and its MC error
+#   35.52 -> 53.37.  The arm legs do not move.  The conclusion is unchanged and better founded.
+check("Ⓑ①  ** THE ORDERED DIFFERENCE IS NOT SIGNIFICANT: 1.04 sigma, with 47 per cent of draws at "
       "least as extreme. **  That is the order's third branch and it is reported as the complete "
       "result it asked for, not as a failure to find something.  ⌗ *The namesake arm gave 0.97 "
-      "sigma and 56 per cent; the conclusion is unchanged and the figures are this arm's*",
-      _sig < 2.0 and _p > 0.2 and abs(_sig - 1.0706) < 0.02 and abs(_p - 0.54) < 0.02)
+      "sigma and 56 per cent and main's control 1.07 and 54; the conclusion is unchanged and the "
+      "figures are the re-pointed control's*",
+      _sig < 2.0 and _p > 0.2 and abs(_sig - 1.0405) < 0.02 and abs(_p - 0.47) < 0.02)
 
 
 # ============================================================ C. the decomposition
@@ -243,15 +247,15 @@ for t in ARMS:
 _qa, _qc = MC['nofit_cr'].std(), MC['nofit_lcdm'].std()
 print(f"      error on the difference {DIFF.std():.2f};  control {_qc:.2f}, arm {_qa:.2f}  "
       f"-- the control is {_qc / _qa:.1f}x the arm")
-check("Ⓒ①  ** the error on the ordered difference is 35.65, of which the control contributes "
-      "35.52 and the arm 3.35.  So the test cannot discriminate because of the CONTROL, not the "
-      "arm. **  The arm's period is measured to 1.1 per cent; the control's to 10.6.  ⌗ *The "
+check("Ⓒ①  ** the error on the ordered difference is 53.34, of which the control contributes "
+      "53.37 and the arm 3.35.  So the test cannot discriminate because of the CONTROL, not the "
+      "arm. **  The arm's period is measured to 1.1 per cent; the control's to 16.5.  ⌗ *The "
       "namesake arm gave 36.3 / 35.5 / 3.0 and a factor 12; here the factor is 10.6, because the "
       "ARM's error grew from 2.99 to 3.35 while the control's did not move -- the re-point does not "
       "reach the control*",
       _qc / _qa > 8.0 and _qa / MC['nofit_cr'].mean() < 0.02
       and abs(DIFF.std() - _qc) < 0.3 * _qa
-      and abs(_qc - 35.52) < 0.05 and abs(_qa - 3.35) < 0.02)
+      and abs(_qc - 53.37) < 0.05 and abs(_qa - 3.35) < 0.02)
 check("Ⓒ②  ⇒ so `the difference, not either period alone` is right as a principle and empty as a "
       "statistic here: a null needs a null hypothesis the data can measure, and the control's "
       "preference for a long period is noise.  ** This is the trap the order's own item 1 named, "
