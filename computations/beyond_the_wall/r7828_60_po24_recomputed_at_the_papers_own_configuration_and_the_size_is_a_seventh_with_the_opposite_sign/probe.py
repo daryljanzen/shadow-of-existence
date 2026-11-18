@@ -247,8 +247,139 @@ def run_grid():
     return 0
 
 
+# ============================================== stage: joint -- the arm r7820 built, on L824
+def run_joint():
+    """the joint Planck + ACT tail-tilt distance at each configuration, on L824
+
+    The arm is r7820's with r7826's support split; nothing is refitted here, so this is the
+    FIXED-COSMOLOGY statistic -- which is the one the order asks for, and which r7826 showed a
+    refit absorbs.
+    """
+    AZ = np.load(os.path.join(AD, 'act_dr6_cmbonly.npz'), allow_pickle=True)
+    a_ell, a_dl, a_win, a_wl = AZ['ell_TT'], AZ['Dl_TT'], AZ['win_TT'], AZ['win_ell']
+    a_cov = AZ['cov'][:45, :45]
+    cut = int(open(os.path.join(AD, 'likelihood_source', 'PlanckActCut.yaml'),
+                   encoding='utf-8').read().split('lmax_cuts:')[1].split()[0])
+    ls, dl = load_control(CONTROLS['L824'])
+    p_keep = np.isfinite(CS.bin_spectrum(ls, dl)) & (CS.BIN_HI < cut)
+    p_lmax = int(CS.BIN_HI[p_keep].max())
+    s_min = np.array([a_wl[a_win[:, i] > 0].min() for i in range(a_win.shape[1])])
+    s_max = np.array([a_wl[a_win[:, i] > 0].max() for i in range(a_win.shape[1])])
+    a_keep = (s_min > p_lmax) & (s_max <= float(ls.max()))
+    PF, PD = fisher(p_keep), CS.X_DATA[p_keep]
+    AF, ADv, AW = fisher(None, a_cov[np.ix_(a_keep, a_keep)]), a_dl[a_keep], a_win[:, a_keep]
+
+    def blocks(spec, dP=None, dA=None):
+        mP = CS.bin_spectrum(ls, spec)[p_keep]
+        mA = AW.T @ np.interp(a_wl, ls, spec)
+        tot = 0.0
+        for d, F, m in ((PD if dP is None else dP, PF, mP), (ADv if dA is None else dA, AF, mA)):
+            A = float((m @ F @ d) / (m @ F @ m))
+            r = d - A * m
+            tot += float(r @ F @ r)
+        return tot
+
+    def fit_tilt(dP=None, dA=None):
+        def at(dn):
+            return blocks(dl * (ls / 1000.0) ** dn, dP, dA)
+        o = minimize_scalar(at, bounds=(-3.0, 3.0), method='bounded', options={'xatol': 1e-10})
+        dn0, c0 = float(o.x), float(o.fun)
+        h = 1e-3
+        d2 = (at(dn0 + h) - 2 * c0 + at(dn0 - h)) / h ** 2
+        return dn0, c0, float(np.sqrt(2.0 / d2))
+
+    print("=" * 100)
+    print("r7828 (60) -- Ⓘ⑨ THE JOINT ARM at each configuration, on L824")
+    print("=" * 100)
+    print(f"\n  {int(p_keep.sum())} Planck bins (l_hi < {cut}, highest {p_lmax}) + "
+          f"{int(a_keep.sum())} ACT bandpowers = {int(p_keep.sum()) + int(a_keep.sum())}")
+    dn_sky, c_sky, sg = fit_tilt()
+    print(f"  the sky's tilt on this control: {dn_sky:+.6f} +/- {sg:.6f}")
+    out = {'dn_sky': dn_sky, 'sig_sky': sg, 'n_planck': int(p_keep.sum()),
+           'n_act': int(a_keep.sum())}
+    for gname, (r, ld_force) in CONFIGS.items():
+        sig = sig_of(ls, dl, r, ld_force)
+        dn_s, _, _ = fit_tilt(CS.bin_spectrum(ls, sig)[p_keep],
+                              AW.T @ np.interp(a_wl, ls, sig))
+        dist = abs(dn_s - dn_sky) / sg
+        direct = blocks(sig) - blocks(dl)
+        print(f"  {gname:>11}: r = {r:.4f} at l_D {ld_force:.4f}   dn_sig {dn_s:+.6f}   "
+              f"{dist:7.3f} sigma   direct Delta chi2 {direct:+10.3f}")
+        out[f'dist_{gname}'] = dist
+        out[f'dn_sig_{gname}'] = dn_s
+        out[f'direct_{gname}'] = direct
+    np.savez(os.path.join(RUNS, 'r7828_joint.npz'), **out)
+    print("\n  ⌗ written to runs/r7828_joint.npz")
+    return 0
+
+
+# ======================= stage: refit -- the figure PO-24 should carry, at the DECLARED in-force l_D
+def run_refit(budget=600):
+    """r7826's joint best fit, redone with the suppression at r = 0.9918 and l_D = 1489.5783 FIXED
+
+    ⛔ WHY THIS EXISTS.  r7826 fitted the construction with cr_supp's own l_D -- a log-slope fit of
+    each trial cosmology's power -- and then ALSO multiplied the exponent by alpha = 1.70 in its
+    scan.  The first is a different estimator from the corpus's declared in-force l_D; the second
+    double-counts alpha.  69 adopted the double-counted row.  This stage fits at the DECLARED
+    in-force l_D with exponent one, which is the faithful route, and compares with r7826's own LCDM
+    minimum on the same arm.
+    """
+    sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                    'r7826_60_the_joint_data_fitted_and_the_amplitude_convention_'
+                                    'makes_one_parameter_degenerate'))
+    import probe as P26                                                   # noqa: E402
+    lsx = np.arange(2, P26.LMAX_THEORY + 1, dtype=float)
+    arm = P26.Arm(lsx, planck_prior=False)
+    lcdm = json.load(open(os.path.join(os.path.dirname(P26.__file__), 'runs', 'fitA_lcdm.json')))
+    print("=" * 100)
+    print("r7828 (60) -- the joint refit at the DECLARED in-force l_D, correcting r7826's scan")
+    print("=" * 100)
+    print(f"\n  LCDM on this arm (r7826's own minimum): chi2 {lcdm['fun']:.4f} over {arm.ndata} "
+          f"points at x = {[round(v, 6) for v in lcdm['x']]}")
+
+    def obj(pv):
+        H0, ombh2, omch2, ns = pv
+        for k, v in zip(('H0', 'ombh2', 'omch2', 'ns'), pv):
+            lo, hi = P26.BOUNDS[k]
+            if not (lo < v < hi):
+                return 1e7
+        try:
+            d, dp = P26.camb_spectrum(H0, ombh2, omch2, 2.1e-9, ns)
+            dl = d[2:P26.LMAX_THEORY + 1, 0].copy()
+            dl = dl * np.exp(-(R_PAPER ** 2 - 1.0) * (lsx / LD_INFORCE_ONE_RATE) ** 2)
+            return arm.chi2(dl)[0]
+        except Exception as e:                                            # noqa: BLE001
+            print('   ! failed:', type(e).__name__, e)
+            return 1e7
+
+    x0 = [lcdm['x'][0], lcdm['x'][1], lcdm['x'][2], lcdm['x'][3]]
+    print(f"  chi2 at LCDM's own best fit, with the signature imposed: {obj(x0):.4f}")
+    r = minimize(obj, x0, method='Nelder-Mead',
+                 options={'maxfev': budget, 'xatol': 2e-4, 'fatol': 0.05, 'adaptive': True})
+    edge = [k for k, v in zip(('H0', 'ombh2', 'omch2', 'ns'), r.x)
+            if min(v - P26.BOUNDS[k][0], P26.BOUNDS[k][1] - v)
+            / (P26.BOUNDS[k][1] - P26.BOUNDS[k][0]) < 0.01]
+    print(f"\n  the construction refitted at r = {R_PAPER}, l_D = {LD_INFORCE_ONE_RATE} (exponent "
+          f"one, which IS alpha = {ALPHA_PAPER}):")
+    print(f"    chi2 = {r.fun:.4f}   nfev = {r.nfev}   x = {[round(v, 6) for v in r.x]}   "
+          f"{'ON A BOUND: ' + ','.join(edge) if edge else 'interior'}")
+    print(f"    Delta chi2 against LCDM = {r.fun - lcdm['fun']:+.4f}")
+    print(f"\n  ⌗ against what r7826 reported and 69 adopted: +9.02 at its 'alpha = 1.70' row, "
+          f"which sits at l_D {1366.0363 / ALPHA_PAPER ** 0.5:.2f}; and -1.29 at its alpha = 1.00 "
+          f"row, at l_D 1366.04.")
+    json.dump({'chi2': float(r.fun), 'x': list(map(float, r.x)), 'nfev': int(r.nfev),
+               'chi2_lcdm': lcdm['fun'], 'dchi2': float(r.fun - lcdm['fun']),
+               'r': R_PAPER, 'lD': LD_INFORCE_ONE_RATE, 'edge': edge, 'ndata': arm.ndata},
+              open(os.path.join(RUNS, 'r7828_refit.json'), 'w'), indent=1)
+    return 0
+
+
 if __name__ == '__main__':
     stage = sys.argv[1] if len(sys.argv) > 1 else 'grid'
+    if stage == 'refit':
+        sys.exit(run_refit(int(sys.argv[2]) if len(sys.argv) > 2 else 600))
+    if stage == 'joint':
+        sys.exit(run_joint())
     if stage == 'grid':
         sys.exit(run_grid())
     print(__doc__)
