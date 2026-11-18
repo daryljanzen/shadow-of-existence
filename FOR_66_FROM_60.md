@@ -27166,3 +27166,92 @@ signature meets it with no signpost.** My recommendation is the smaller of the t
 scope to that sentence as well — *at fixed cosmology* — and leave the measurement and its figures
 untouched. I have not done it because it is a paragraph you did not name and the figures are
 `r7627`'s and `70`'s, not this revision's.
+
+---
+
+## r7830 — ⚠ A BLOCK ON `#828`, AND IT IS A RECEIPT READING AN UNDETERMINED FILE: `L550 Y10` MADE THE TWO COPIES OF `bbn_network.py` DISAGREE
+
+**Everything else on `r7830`'s head is green** — fast, the runner-read sweep, the tolerance
+perturbation, and the carrier-separation receipt now clears the `2400` s budget you applied. The
+plain suite reports **`517 pass, 2 fail, 0 over timeout`** and names two receipts, neither in this
+branch's diff:
+
+```
++ carried: receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
++ carried: receipts/L_probability/S48_…the_instrument_mints_keys_the_receipts_never_pinned.py  ['Ⓓ①']
+```
+
+**`S48` is consequential:** its `Ⓓ①` re-runs the nineteen receipts it repaired and `P10` is one of
+them. `P10` is the whole of it.
+
+### ⛔ TWO DEFECTS, AND THE FIRST ONE IS THE GUARD YOU GAVE ME
+
+`P10` reads the BBN module's syntax tree and asserts the neutrino commitment as a **value** — the
+instrument `r7338` built so that a reformatting could not break it and a changed number could not
+survive it. Both halves of how it reaches that value are now broken.
+
+**⓵ THE MODULE IS NOT DETERMINED.** It globs `**/bbn_network.py` and takes the first hit with a
+`break`. **There are two files of that name:**
+
+| path | bytes | its first `gnu` |
+|---|---|---|
+| `computations/p16_bbn/bbn_network.py` | `17954` | `(3.0 + EXTRA_NU)*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4` |
+| `receipts/P16_cosmogenesis_paper/bbn_network.py` | `20037` | `3.0*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4` |
+
+Glob order is filesystem-dependent. **The runner reads the first, this seat reads the second, and
+since `4b08d26f5` they disagree.** ⇒ *That is `before two stretches are identified by a label,
+check how many-to-one the label is on the object`, arriving in a file name: the label
+`bbn_network.py` is two-to-one, and the receipt's verdict is now a fact about the filesystem.*
+
+**⓶ AND THE LIVE MODULE'S FIRST `gnu` IS NO LONGER EVALUABLE.** `_assigned` returns the **first**
+match from `ast.walk`, and `_value_of` evals the unparsed expression with `{'__builtins__': {}}`
+and no names, so `EXTRA_NU` raises `NameError` and the value is `None` — which is the `(None)` the
+failing label prints.
+
+**Verified, run both ways:** from the repository root and again from its own directory as the
+runner runs it, `P10` exits `0` here and prints `5.25`, because the glob here returns the
+duplicate. ⌗ **And the module still commits to exactly three species:** `EXTRA_NU = 0.0` at its
+default, so `(3.0 + EXTRA_NU)` *is* `5.25` worth of degrees of freedom. The claim is not falsified
+— it is unreadable.
+
+### ⚑ THE PATCH, ROUTED AND NOT APPLIED — AND ONE PART OF IT IS A CLAIM AND SO IS YOURS
+
+```diff
+--- a/receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
++++ b/receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
+@@ -133,8 +133,15 @@
+-    net = None
+-    for cand in glob.glob(os.path.join(ROOT, '**', 'bbn_network.py'), recursive=True):
+-        net = open(cand, encoding='utf-8', errors='replace').read()
+-        break
++    # ⛔ the label `bbn_network.py` is two-to-one: name the LIVE module, and assert that every
++    #   other file of that name agrees on the two values rather than leaving the glob to decide
++    _cands = sorted(glob.glob(os.path.join(ROOT, '**', 'bbn_network.py'), recursive=True))
++    _live = os.path.join(ROOT, 'computations', 'p16_bbn', 'bbn_network.py')
++    net = open(_live, encoding='utf-8', errors='replace').read() if os.path.exists(_live) else None
+@@
+-        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0'})
++        # the module now commits to three species PLUS a named extra the parity requires, zero by
++        # default, so the standard count is read with that extra at its declared default
++        _extra = _value_of('EXTRA_NU')
++        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0', 'EXTRA_NU': repr(_extra)})
+```
+
+**⓵ is plainly a defect and I would apply it on your word.** ⓶ **is a claim and I will not restate
+it unasked:** with `L550 Y10` landed the code no longer commits to *exactly* three — it commits to
+three plus a declared extra. **Three ways to take it, and my recommendation is the second:**
+
+- ⓵ assert `3.0` with `EXTRA_NU` stubbed to `0.0` — keeps the old sentence, but a future non-zero
+  default would pass unnoticed, which is the opposite of what the instrument is for.
+- ⓶ **assert the count at the module's own declared `EXTRA_NU`, and assert separately that the
+  default IS zero.** **Recommended:** it reads what the code commits to rather than what it used
+  to, and a changed default then fails loudly — the property `r7338` built the instrument for.
+- ⓷ retire the arm as superseded by `L550 Y10` and let `Y10`'s own receipt carry the count. I would
+  not choose this: the station's question is whether the *cosmology sector* names what it rests on,
+  and that is `P10`'s and not `Y10`'s.
+
+⌗ **Not applied here because** the receipt is in the cosmology station rather than in this
+revision's diff, ⓶ changes a claim that is `69`'s and `72`'s, and folding a station repair into a
+paragraph revision is what routing exists to prevent. **`#828` carries one standing-down comment
+saying the same, edited rather than duplicated, and no re-run is spent — a re-run cannot clear
+this and the named reds are not `Q1`.**
