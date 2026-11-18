@@ -26914,3 +26914,111 @@ true at once, and a five-parameter fit that reports `A_s` under that convention 
 
 ⌗ **Item ② of the order — the `L824` recompute of `r7804`, `r7806`, `r7808`, `r7812` and `r7814` — is
 not started.** It is its own revision, as you specified, and it is next unless an order lands first.
+
+---
+
+## r7828 — ⛔ THE EXPONENT WAS ALREADY IN THE LENGTH, SO THE FIGURE YOU ADOPTED IS THE WRONG ROW OF MY TABLE
+
+**Order `r7823`, items ① ② ③, discharged — and item ① turned up a correction to `r7826` that reaches
+your ruling and the paragraph you wrote from it.** Registered at `r7828` before anything was
+recomputed: eleven arms, eleven run, all eleven pass, one registered negative fired and one arm's
+premise was refuted.
+
+### ⛔ THE CORRECTION, FIRST, BECAUSE IT CHANGES `PO-24`'s HEADLINE FIGURE
+
+`α` and `ℓ_D` enter the signature **only through `ℓ_D/√α`**. This corpus's own landed receipt says so
+in terms — `P15_the_papers_1_06_and_the_joint_fits_1_4967_are_one_curve_in_l_D` — and `70`'s faithful
+copy declares it in its `INPUT` line, `R, LD = 1.0926, 1951.9 / 1.70 ** 0.5`:
+
+```
+1951.9 / sqrt(1.70)          = 1497.0390    the IN-FORCE l_D of the faithful alpha = 1.70 route
+1497.0390 * (1 - 0.0049836)  = 1489.5783    the same, after the one-rate move
+```
+
+⇒ **So `R, LD = 1.0926, 1489.5783` with exponent one — which every `PO-24` figure since `r7471` uses
+— ALREADY IS the faithful `α = 1.70` route on the one rate.** `r7826`'s configuration scan multiplied
+that exponent by `1.70` again. Its `α = 1.70` rows therefore sit at an `ℓ_D` of
+`1366.0363/√1.70 = 1047.70`, **a value nothing in this corpus declares** — and that is the row you
+adopted as `PO-24`'s figure and wrote into `P15` as `Δχ² = +9.02`.
+
+**THE FIGURE AT THE PAPER'S CONFIGURATION, measured here at the declared in-force length:**
+
+| | `χ²` on the 150-point joint arm | against `ΛCDM`'s `139.8557` |
+|---|---|---|
+| `ΛCDM` fitted | `139.8557` | — |
+| the construction at `r = 0.9918`, `ℓ_D = 1489.5783` | **`137.4859`** | **`Δχ² = −2.3697`, interior** |
+
+⇒ **The construction fits the joint data slightly BETTER than `ΛCDM` at the configuration the paper
+adjudicates.** Not excluded: marginally preferred. ⌗ `r7826`'s `α = 1.00` row (`−1.29` at its own
+fitted `ℓ_D = 1366.04`) was the nearer of its two, and this is that figure redone at the declared
+length.
+
+⇒ **GUARD: a folded parameter is folded once. Before multiplying by an exponent, establish whether
+the length it multiplies is declared at amplitude level or already in force.** *The corpus had made
+the mirror-image error once — pricing the faithful route on the header `1951.9` instead of `ℓ_eff` —
+and `cc66`'s receipt exists to stop it. Mine is the same error from the other side, and it got into
+a ruling because I labelled a row `the instrument's own exponent` when the exponent was already
+there.*
+
+### ⌗ AND THE REST OF THE ROW AT THAT CONFIGURATION
+
+Reproduction first, so that everything is comparable: at the row's ratio on `L824` the three
+displacements come back `−0.069641`, `−0.175961`, `−0.260164` — `r7822`'s landed figures to every
+digit — and the joint arm returns `−0.020658 ± 0.003782` against `−0.093474`, `19.253σ`.
+
+| | at `r = 1.0926` | at the adjudicated `r = 0.9918` |
+|---|---|---|
+| `r² − 1` | `+0.193775` | `−0.016333` — one in `11.86`, **opposite sign** |
+| displacement, the three windows | `−0.0696`, `−0.1760`, `−0.2602` | `+0.0062`, `+0.0151`, `+0.0224` |
+| joint-arm distance, fixed cosmology | `19.253σ` | `8.152σ` |
+| the tilt's share of it | `69.27 / 90.83 / 95.67 %` | `68.12 / 89.43 / 94.96 %` |
+| survivals, five absorbers | `83.0`–`102.0 %` | `75.6`–`102.3 %` |
+
+**The shape is the same object at both and the size is not**, which is exactly what your ruling rests
+on: the tilt's share agrees to `1.66` per cent of itself at worst while the size differs by `1086`
+per cent. ⇒ *So the overlaps may be inherited, as you said, and they are.*
+
+**All five inherited parameters still refuse at the adjudicated configuration — and two of the four
+refusals change character rather than strength, because the sign flipped.**
+
+- **`Y_He`** wanted `+11.265σ` **at its bank's edge** and now wants `−2.016σ`: **affordable where it
+  was unaffordable.** That is `Ⓗ⑧`'s registered negative firing. **It does not reopen the route**: it
+  still leaves `75.55` per cent of the displacement standing, the most any of the five takes.
+- **`A_L`** flips the other way, `+1.390σ → −2.867σ`: it now wants `0.968`, below one, against a
+  temperature constraint of `1.243 ± 0.096`. **It becomes the unaffordable one**, and still buys
+  little (`93.50` per cent stands).
+- `ω_b`, `N_eff`, `ω_m` stay affordable within a quarter of a standard deviation and absorb nothing.
+
+### ⌗ ITEM ② AND ITEM ③, AND ONE ARM WHOSE PREMISE I GOT WRONG
+
+**Item ②:** `sec:coherence`'s `PO-24` paragraph is rewritten as one state at the adjudicated
+configuration, leading with the corrected `Δχ² = −2.37`, naming `1.0926` as the geometric-part ratio
+where it appears, and carrying the fold, the size ratio, the sign flip, the five refusals and the
+scope in the same state. **Item ③:** `r7826`'s receipt is renamed —
+`..._the_adjudicated_endpoint_refits_level_with_lcdm_while_the_geometric_part_ratio_does_not` — since
+the old name stated the error.
+
+**And `Ⓑ②`'s premise was refuted rather than its criterion met.** I registered that `ℓ_D` would be
+re-measured on `L824` *"by the same damping fit the harness uses"*, presuming the fit and the
+in-force value are one object. A log-slope fit of a control's own power returns `1154.21` on `L820`
+and `1334.66` on `L824` — `22.5` and `10.4` per cent from `1489.5783`. **They are not one object**,
+and the arm asserts that refutation with both numbers pinned, with the consequence carried out:
+every figure here is at an in-force `ℓ_D`.
+
+### ⌗ NO BANK NEEDS REBUILDING, so `70` is asked for nothing
+
+Every one of the five banks reaches `ℓ = 1996`, above every window used (`1760`), and each enters as
+a **ratio to its own centre** — which is why the control swap is legitimate without rebuilding any of
+them. ⇒ *And the swap itself is negligible: `L820 → L824` moves the published displacement by `0.55`
+per cent while the configuration change moves it by `108.9`. That also answers `r7821`'s item ② — the
+`L824` recompute moves the published figures by well under a per cent, which I had expected and
+flagged as unmeasured, and it is now measured.*
+
+### ⚑ WHAT IS NOW YOURS TO RULE
+
+`PO-24`'s clause asks whether the displacement survives. **At the configuration you adjudicated it
+does survive the five absorbers — and the construction's own refit of the joint data is slightly
+better than `ΛCDM`.** Those two together are not an exclusion in either direction, and I have written
+the paragraph to say exactly that rather than to lean. **If you want a figure for the row's status, my
+recommendation is `Δχ² = −2.3697` with its scope attached**, and the fixed-cosmology `8.152σ` reported
+beside it as the statistic a refit reverses.
