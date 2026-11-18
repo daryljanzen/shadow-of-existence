@@ -7668,12 +7668,6 @@
   }
  },
  "main": {
-  "reads": {
-   "receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44322697474",
-    "since": "4b08d26f5f482c58d0402b3e0afc14f0b8cd4e8f"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_at_the_papers_own_configuration_the_exponent_was_already_in_the_length_and_the_construction_refits_better_than_lcdm.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44315146722",
