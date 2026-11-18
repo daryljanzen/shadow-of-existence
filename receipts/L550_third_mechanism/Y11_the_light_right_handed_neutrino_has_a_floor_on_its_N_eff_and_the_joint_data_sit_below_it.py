@@ -19,7 +19,7 @@ Computed here:
       Planck's 2.99 +- 0.17, 1.1 and 2.0.  Relative to a state that adds nothing at nucleosynthesis,
       the light case costs Delta chi^2 = 5.2 at the floor and 14.5 at the bound on the joint value.
   (3) so the light case is disfavoured at every M_WR and the M_WR dependence does not rescue it; what
-      would is either a mass above an MeV (at dimension five with coupling y, v_R > 4.9e7 GeV / sqrt(y))
+      would is either a mass above an MeV (at dimension five at the scale the measured neutrino masses fix, v_R > 1.1e6 GeV)
       or an entropy release after decoupling: diluting by S cuts Delta N_eff by S^(4/3), and bringing
       it within 2 sigma of the joint value (Delta N_eff < 0.066) needs S > 1.8 at the floor and S > 3.0
       at the bound -- far below the S = 65 to 3000 the keV dark-matter reading needs (Y8).
@@ -44,7 +44,7 @@ NEFF_SM = 3.044
 JOINT = (2.89, 0.11)
 ACT = (2.86, 0.13)
 PLANCK = (2.99, 0.17)
-M_STAR = 2.435e18
+M_STAR = 246.22 ** 2 / 0.05e-9   # the lepton-number scale the measured neutrino masses fix (Y12)
 
 
 def check(label, cond):
@@ -91,8 +91,8 @@ def main():
     s_f, s_b = (floor / lim) ** 0.75, (bound / lim) ** 0.75
     v_mev = math.sqrt(1e-3 * M_STAR)
     check(f'(3) within 2 sigma needs Delta N_eff < {lim:.3f}: an entropy release S > {s_f:.1f} at the floor, {s_b:.1f} at the bound; '
-          f'or m_N > 1 MeV, v_R > {v_mev:.1e} GeV / sqrt(y)',
-          abs(lim - 0.066) < 0.0005 and abs(s_f - 1.8) < 0.05 and abs(s_b - 3.0) < 0.05 and abs(v_mev - 4.9e7) / 4.9e7 < 0.02)
+          f'or m_N > 1 MeV, v_R > {v_mev:.1e} GeV',
+          abs(lim - 0.066) < 0.0005 and abs(s_f - 1.8) < 0.05 and abs(s_b - 3.0) < 0.05 and abs(v_mev - 1.1e6) / 1.1e6 < 0.02)
 
     p15_txt = flat(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'))
     check(f'P15 prints the joint value this file uses, {JOINT[0]} +- {JOINT[1]}, read from the paper; the Standard Model value is {NEFF_SM}',
