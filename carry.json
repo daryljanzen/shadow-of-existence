@@ -339,14 +339,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44224485580",
-    "since": "258e28ae94a759933ca6d79e62298b69bf464920"
-   }
-  }
- },
  "main": {
   "suite": {
    "receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py": {
