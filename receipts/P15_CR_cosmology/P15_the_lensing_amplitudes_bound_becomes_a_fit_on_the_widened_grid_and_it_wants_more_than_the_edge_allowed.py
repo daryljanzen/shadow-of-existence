@@ -308,8 +308,13 @@ check("Ⓗ⑧  THE CONTROL HOLDS, AND IT HAD TEETH: the two windows whose fits w
       "upward cannot move a fit that sat inside it, so had these shifted, the seven-point "
       "interpolation would not have been the same function as the five-point one and every "
       "comparison in this receipt with r7808 would have been void",
-      all(abs(r['al3'] - R7808_INT[(r['lo'], r['hi'])][0]) < 5e-5
-          and abs(r['surv'] - R7808_INT[(r['lo'], r['hi'])][1]) < 5e-3 for r in ROWS[1:]))
+      # r7823 (69): "to every printed digit" is tested as exactly that -- equality at r7808's printed
+      #   precision (five decimals on A_L, three on the survival) -- rather than as a float tolerance.
+      #   The fitted A_L differs from the five-decimal literal by about 1.4e-7, an optimiser-level
+      #   residue that moves between builds, so a tolerance could not reach the tolerance sweep's
+      #   1e3 headroom; the rounded values sit far from any rounding boundary and do not move.
+      all(round(r['al3'], 5) == R7808_INT[(r['lo'], r['hi'])][0]
+          and round(r['surv'], 3) == R7808_INT[(r['lo'], r['hi'])][1] for r in ROWS[1:]))
 
 # ======================================================= THE FIGURES
 head("THE FIGURES THE PAPER AND THE INDEX ROW PRINT, PINNED INLINE")
