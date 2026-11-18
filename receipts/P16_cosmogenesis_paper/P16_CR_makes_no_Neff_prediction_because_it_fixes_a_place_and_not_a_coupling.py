@@ -148,11 +148,17 @@ print()
 print("=" * 78)
 print("PART 4 — AND WHAT THE PARAGRAPH NOW SAYS")
 print("=" * 78)
+# ⛭ L550 Y10 (2026-11-18): the paragraph this PART read -- "a place in a grading, and not a coupling",
+#   "makes no N_eff prediction" -- is retired from P16.  The parity that requires the right-handed
+#   neutrino brings the left-right group, which couples it to W_R; the paragraph now carries the count
+#   as a function of the state's mass and the network run with it.  PARTS 1-3 stand as written: the
+#   naming, the network's commitment and the wall on the gauge content are all still in the paper.
 WRITTEN = [("names N_eff and gives the adopted value with its provenance", r'N_\{\\mathrm\{eff\}\}=3\.046'),
-           ("states that what is fixed is a place and not a coupling", r'place in a grading, and not a coupling'),
-           ("states plainly that no prediction is made", r'makes no \$N_\{\\mathrm\{eff\}\}\$\s*\n?prediction'),
+           ("states that the couplings come through the parity and not the gauge sector",
+            r'the answer runs through the parity rather than through the gauge sector'),
+           ("states that the count turns on the state's mass", r'So the count turns on the state.s mass'),
            ("gives Planck's value for comparison", r'2\.99\\pm0\.17'),
-           ("and puts the stance under F1 rather than a new trip-wire",
+           ("and keeps the stance under F1 rather than a new trip-wire",
             r'\\textup\{\(F1\)\} fires if the gauge group is ever promoted')]
 for what, pat in WRITTEN:
     ok = re.search(pat, P16, re.I | re.S) is not None
