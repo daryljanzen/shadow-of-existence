@@ -2071,13 +2071,6 @@
  },
  "main": {
   "suite": {
-   "receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py": {
-    "gates": [
-     "CONTROL (#): baseline Y_p = #.#, D/H"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44363892625",
-    "since": "2649e1842efe30e94a29fad23cedd16b2fa0e08c"
-   },
    "receipts/P15_CR_cosmology/P15_the_neutrino_count_is_free_to_move_and_absorbs_nothing_because_what_an_absorber_must_overlap_is_the_residual_the_tilt_leaves.py": {
     "gates": [
      "\u24ba\u2469"
