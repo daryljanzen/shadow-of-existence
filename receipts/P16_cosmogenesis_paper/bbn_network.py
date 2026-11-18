@@ -47,6 +47,11 @@ from scipy.integrate import solve_ivp, cumulative_trapezoid
 from scipy.interpolate import interp1d
 import pynucastro as pyna
 
+# Extra relativistic species beyond the three left-handed neutrinos, in units of one neutrino at the
+# post-annihilation T_nu (so a species that decoupled earlier enters already diluted).  Zero is the
+# standard background; the right-handed-neutrino run (L550 Y10) sets it.  It adds to the expansion
+# rate only: such a species decoupled before the window and takes no part in the weak n<->p rates.
+EXTRA_NU = 0.0
 # ----------------------------------------------------------------------------------
 # physical constants (MeV, s, cm, K units; natural where noted)
 # ----------------------------------------------------------------------------------
@@ -77,7 +82,7 @@ def _fe(T_MeV):
 def gstar(T_MeV):
     # energy-density relativistic dof: photons(2) + e+-(7/8*4*fade) + 3 nu(7/8*2 each, at T_nu)
     ge = (7.0/8.0)*4.0*_fe(T_MeV)
-    gnu = 3.0*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4
+    gnu = (3.0 + EXTRA_NU)*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4
     return 2.0 + ge + gnu
 
 def gstar_s(T_MeV):
