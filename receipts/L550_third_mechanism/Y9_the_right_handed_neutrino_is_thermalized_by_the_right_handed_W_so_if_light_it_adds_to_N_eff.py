@@ -18,8 +18,9 @@ Computed here:
       (g*s = 10.75) gives exactly 1 per species.
   (4) against Planck's 2.99 +- 0.17 (P15, sec:coherence), N_eff = 3.044 + Delta = 3.18 to 3.34, i.e.
       1.1 to 2.0 sigma high; helium-4 moves by 0.013 Delta N_eff = 0.002 to 0.004 (P16's network, Y10).
-  (5) 'light at nucleosynthesis' for a dimension-five Majorana mass v_R^2/M_* (y = 1, Y8) means
-      m_N < 1 MeV, i.e. v_R < 4.9e7 GeV.  CONTROL: at the collider bound v_R = 19.7 TeV, m_N = 0.16 eV.
+  (5) 'light at nucleosynthesis' for the dimension-five Majorana mass v_R^2/M, with M = v_L^2/m_nu = 1.2e15 GeV the
+      scale the measured neutrino masses fix (Y12) means
+      m_N < 1 MeV, i.e. v_R < 1.1e6 GeV.  CONTROL: at the collider bound v_R = 19.7 TeV, m_N = 320 eV.
 
 Bound: ideal-gas g*s with step thresholds (lattice corrections near the QCD crossover lower g*s by
 about a tenth there and raise 0.29 accordingly, which is not carried); T_nuL = 1 MeV; W_R exchange only
@@ -40,7 +41,7 @@ FAILED = []
 M_W = 80.38          # GeV
 M_WR = 6400.0        # GeV, ATLAS 2023
 G = 0.65
-M_STAR = 2.435e18    # GeV
+M_STAR = 246.22 ** 2 / 0.05e-9    # GeV, the lepton-number scale the measured neutrino masses fix (Y12)
 M_PL = 1.221e19      # GeV
 NEFF_SM = 3.044
 NEFF_OBS, NEFF_SIG = 2.99, 0.17
@@ -124,8 +125,8 @@ def main():
     v_mev = math.sqrt(1e-3 * M_STAR)
     v_bound = 2 * M_WR / G
     m_bound = v_bound ** 2 / M_STAR
-    check(f'(5) m_N = v_R^2/M_* < 1 MeV for v_R < {v_mev:.1e} GeV', abs(v_mev - 4.9e7) / 4.9e7 < 0.02)
-    check(f'CONTROL (5): at v_R = {v_bound:.3g} GeV, m_N = {m_bound * 1e9:.2f} eV', abs(m_bound * 1e9 - 0.16) < 0.005)
+    check(f'(5) m_N = v_R^2/M < 1 MeV for v_R < {v_mev:.1e} GeV (M = {M_STAR:.2e} GeV)', abs(v_mev - 1.1e6) / 1.1e6 < 0.02)
+    check(f'CONTROL (5): at v_R = {v_bound:.3g} GeV, m_N = {m_bound * 1e9:.0f} eV', abs(m_bound * 1e9 - 320) < 5)
 
     p15 = flat(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'))
     check('P15 carries the reading: "turns on the state\'s mass, which the construction does not fix"',
