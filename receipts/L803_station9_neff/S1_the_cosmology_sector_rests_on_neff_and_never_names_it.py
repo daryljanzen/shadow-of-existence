@@ -149,9 +149,13 @@ def main():
           f'and at {sum(hits.values())} uses today.  c54.205 (`L-527`) named it in P16 where the '
           'network already committed to it.  Regression guard on that naming',
           sum(hits.values()) > 0)
-    check('⌗ and it went in as a CONSISTENCY and not a prediction, which is what the finding turned on: '
-          'CR fixes a place in a grading and not a coupling',
-          corpus_count('place in a grading, and not a coupling') > 0)
+    # ⛭ L550 Y10 (2026-11-18): the CONSISTENCY reading this check asserted ("a place in a grading
+    #   and not a coupling") is retired from P16: the parity that requires the right-handed neutrino
+    #   brings the left-right group, which couples it to W_R, so the count turns on its mass and the
+    #   network is run with it.  ** The check now reads the clause that carries that. **
+    check('⌗ and it went in through the parity: the left-right group the parity brings couples the '
+          'right-handed neutrino, so the count turns on its mass',
+          corpus_count('the answer runs through the parity rather than through the gauge sector') > 0)
         # ** r2720: BOTH repairs kept -- 54 (c54.213) guards the NAMING, cc54 asserts the
         # exact PARAGRAPH.  *** Two checks on one fill are complementary, and dropping either
         # loses a guard the other does not provide. ***
@@ -164,17 +168,10 @@ def main():
           'not the ZERO this receipt found at r2541)',
           sum(hits.values()) > 0)
     check('and the paper takes the corpus\'s stance in its own voice: it adopts the Standard Model '
-          '$N_{\\mathrm{eff}}=3.046$ "rather than derived" and says the construction "makes no '
-          '$N_{\\mathrm{eff}}$ prediction; the standard value is adopted" -- the exact paragraph this '
-          'receipt asked for',
+          '$N_{\\mathrm{eff}}=3.046$ for the network of record and runs the same network with the '
+          'right-handed neutrinos added (L550 Y10)',
           'N_{\\mathrm{eff}}=3.046' in cosmo
-          # ⛭ r7293+cc66: the two arms are MERGED into the clause that names the framework.
-          #   `makes no $N_{\\mathrm{eff}}$ prediction` opened on a finite verb and was satisfied
-          #   by a sentence saying the STANDARD MODEL makes no such prediction -- a different
-          #   claim, and also true -- and `adopted` was one word, twice in the file, standing
-          #   for the whole adoption.  ** One span now carries both halves and their subject. **
-          and 'This framework therefore makes no $N_{\\mathrm{eff}}$ prediction; the standard value is '
-              'adopted, and is consistent with the fourth grading rather than in tension with it' in cosmo)
+          and 'the same network run with them added to the expansion rate' in cosmo)
     # and the sector is otherwise deep -- so it is one missing name, not a missing sector
     # ** r6931+70.1: THE FOURTH TERM FROZE AN ERROR.  Class (a).  "Hubble tension" survived in the
     #   corpus only inside the claim that the geometric rate RESOLVES / DISSOLVES it ("a redshift-free

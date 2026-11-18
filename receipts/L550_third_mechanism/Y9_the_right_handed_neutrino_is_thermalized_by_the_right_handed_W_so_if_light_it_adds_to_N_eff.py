@@ -17,13 +17,13 @@ Computed here:
       electroweak scale gives 0.14.  CONTROL: a state decoupling with the left-handed neutrinos
       (g*s = 10.75) gives exactly 1 per species.
   (4) against Planck's 2.99 +- 0.17 (P15, sec:coherence), N_eff = 3.044 + Delta = 3.18 to 3.34, i.e.
-      1.1 to 2.0 sigma high; helium-4 moves by 0.010 Delta N_eff = 0.001 to 0.003 (the network's own lever, L204 P10).
+      1.1 to 2.0 sigma high; helium-4 moves by 0.013 Delta N_eff = 0.002 to 0.004 (P16's network, Y10).
   (5) 'light at nucleosynthesis' for a dimension-five Majorana mass v_R^2/M_* (y = 1, Y8) means
       m_N < 1 MeV, i.e. v_R < 4.9e7 GeV.  CONTROL: at the collider bound v_R = 19.7 TeV, m_N = 0.16 eV.
 
 Bound: ideal-gas g*s with step thresholds (lattice corrections near the QCD crossover lower g*s by
 about a tenth there and raise 0.29 accordingly, which is not carried); T_nuL = 1 MeV; W_R exchange only
-(Z' exchange adds rate and lowers T_dec slightly); dY_p/dN_eff = 0.010 is the corpus network's lever (L204 P10),
+(Z' exchange adds rate and lowers T_dec slightly); dY_p/dN_eff = 0.013 is P16's network's lever (Y10),
 not a network run; y = 1; the peak is read as thermal radiation.
 
 COMPUTES: closed-form numbers; the g*s step function; two P15 sentences read live.
@@ -44,7 +44,7 @@ M_STAR = 2.435e18    # GeV
 M_PL = 1.221e19      # GeV
 NEFF_SM = 3.044
 NEFF_OBS, NEFF_SIG = 2.99, 0.17
-DYP = 0.010   # the corpus network's own lever (L204 P10)
+DYP = 0.013   # P16's network returns 0.0131 per unit (L550 Y10)
 
 
 def check(label, cond):
@@ -116,7 +116,7 @@ def main():
     y_lo, y_hi = DYP * lo, DYP * hi
     check(f'(4) N_eff = {n_lo:.2f} to {n_hi:.2f}, {s_lo:.1f} to {s_hi:.1f} sigma above 2.99 +- 0.17; Delta Y_p = {y_lo:.4f} to {y_hi:.4f}',
           f'{n_lo:.2f}' == '3.18' and f'{n_hi:.2f}' == '3.34' and f'{s_lo:.1f}' == '1.1' and f'{s_hi:.1f}' == '2.0'
-          and round(y_lo, 3) == 0.001 and round(y_hi, 3) == 0.003 and abs(DYP - 0.010) < 0.0005)
+          and round(y_lo, 3) == 0.002 and round(y_hi, 3) == 0.004 and abs(DYP - 0.013) < 0.0005)
     check(f'(4) pinned: Planck N_eff = {NEFF_OBS} +- {NEFF_SIG}; N_eff = {n_lo:.4f} and {n_hi:.4f}',
           abs(NEFF_OBS - 2.99) < 0.005 and abs(NEFF_SIG - 0.17) < 0.005
           and abs(n_lo - 3.18) < 0.005 and abs(n_hi - 3.34) < 0.005)
