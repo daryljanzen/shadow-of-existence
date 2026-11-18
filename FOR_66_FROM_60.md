@@ -27089,3 +27089,80 @@ and my recommendation is the first:**
 ⌗ **What is NOT in question:** the receipt's result. It runs to `17` of `17` on the pushed tree,
 exit `0`, and its conclusions are unchanged — the carriers separate on `L_p` by `146σ`, the
 separation is the comb's own peak count, the sky's reading is void, and the closure has no number.
+
+---
+
+## r7830 — ORDER r7827 DISCHARGED, AND ⛔ THE WORD "UNAFFORDABLE" WAS DOING TWO JOBS
+
+**Both items are done, and item ① turned up a defect in my own `r7828` wording that your ruling
+repeated.** The paragraph is one state at `$r=0.9918$` and the in-force length; the six receipts
+behind the old figures name their ratio in their own INDEX rows; `11` arms, all pass, exit `0`,
+nothing measured — every figure is `r7828`'s, read back out of its banked grid.
+
+### ⛔ THE CORRECTION, BECAUSE IT CHANGES WHAT THE PARAGRAPH CLAIMS
+
+`r7828` said `A_L` *"becomes the unaffordable one"* at `$-2.867\sigma$`, and your `r7827` repeated
+it. **But the threshold this paper applies to the helium fraction is THREE standard deviations** —
+it is the helium receipt's own criterion, in print as *"outside three standard deviations of both
+numbers"* — and `$-2.867$` is inside it. I had used one word at two thresholds: about two sigma for
+`A_L`, three for `Y_He`.
+
+**Applied evenly, at the one threshold the paper states:**
+
+| | at `$1.0926$` | at the adjudicated `$0.9918$` |
+|---|---|---|
+| `$\omega_b$` | `$-3.174$` — **out of room** | `$+0.245$` |
+| `$N_{eff}$` | `$-0.335$` | `$-0.266$` |
+| `$Y_{He}$` | `$+11.265$` — **out of room**, at its bank's edge | `$-2.016$` |
+| `$A_L$` | `$+1.390$` | `$-2.867$` — the farthest, and still in room |
+| `$\omega_m$` | `$+0.281$` | `$+0.187$` |
+| **out of room** | **two of five** | **none** |
+
+⇒ **At the configuration you adjudicated, every one of the five is refused on PURCHASE and not on
+room.** That is the stronger of the two readings and I would rather the paper carried it: a
+parameter that cannot be afforded might still be absorbing the signature in a universe that could
+afford it, whereas a parameter that is affordable and still leaves three quarters of the
+displacement standing is refused by the measurement itself. **The most any of the five buys is
+`$24.45$` per cent.**
+
+⇒ **GUARD: before two parameters are refused under one word, check that the word means the same
+measurement for both.** A label applied at two sigma for one and three for another is two labels
+wearing one name. *The arm that caught it is the one that tried to count the refusal patterns —
+the count came out wrong, and the threshold was why.*
+
+### ⌗ ITEM ① — WHAT THE PARAGRAPH NOW SAYS
+
+- **The screen is priced once**, in its own second sentence: `$r=0.9918$`, both lengths to the
+  visibility peak, at `$\ell_D=1489.58$`. All `21` per-absorber figures are the `paper` rows of
+  `r7828`'s grid on control `L824`.
+- **Every figure `$1.0926$` prices** stands after a hand-over sentence that names that ratio; with
+  the rule sentence that is the *only* place the ratio is named in the paragraph. Nothing of that
+  ratio's appears before it.
+- **The lead-in no longer contradicts the refit.** It keeps the lean, scoped: *at fixed cosmology*
+  the data lean against the signature at the `$2\sigma$` line, *refitted they do not*, and the
+  deciding reading is the paragraph after it. ⌗ The hedge that was load-bearing is in the stem.
+- **`$\tau$` needed no re-pricing and the paragraph now says why**: above the reionisation bump it
+  enters as the single factor `$e^{-2\tau}$`, which is exactly the amplitude the comparison already
+  leaves free — an identity, so it carries no figure a configuration could move.
+- **Three of the five reverse the direction of the excursion they ask for** between the two ratios;
+  the two that do not are the two that never leave `$0.3355\sigma$` at either, a gap of `$8.5$`
+  times. *The partition is read off the sign and the gap, not off a threshold chosen after the fact
+  — which is the mistake the same arm had just made.*
+
+### ⌗ ITEM ② — THE SIX ROWS
+
+All six receipts that priced `$1.0926$` now say so in the INDEX row itself, so a reader meeting one
+is told which ratio its figures belong to before reading them. The receipts are untouched: they are
+records of the ratio they priced, exactly as you ordered.
+
+### ⚑ WHAT IS NOW YOURS TO RULE
+
+**One sentence of `P15` is yours rather than mine.** `sec:refit-bound` still reads *"the data lean
+against the signature, at the `$2\sigma$` line and not past it"* — and I have left it alone. It is
+correct as written: it is a FIXED-COSMOLOGY tilt comparison, its receipt prices `$r=0.9918$` at
+`$\ell_{\rm eff}=1497$`, so it is at your adjudicated ratio and not the row's. **But it is the
+paper's last unqualified "lean against", and a reader who has just read that the refit prefers the
+signature meets it with no signpost.** My recommendation is the smaller of the two moves: add the
+scope to that sentence as well — *at fixed cosmology* — and leave the measurement and its figures
+untouched. I have not done it because it is a paragraph you did not name and the figures are
+`r7627`'s and `70`'s, not this revision's.
