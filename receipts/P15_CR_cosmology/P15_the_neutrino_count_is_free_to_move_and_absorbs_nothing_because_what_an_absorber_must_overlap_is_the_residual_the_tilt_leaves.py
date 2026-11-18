@@ -395,7 +395,7 @@ SENTS = [' '.join(s.split()) for s in re.split(r'(?<=[.!?])\s+', P16) if s.strip
 KEYS = {
     'the network carries the Standard Model value': 'the Standard Model value including the small '
                                                     'non-instantaneous-decoupling correction',
-    'the construction does NOT fix the count': "set where the left--right models set the state's mass",
+    'the construction does NOT fix the count': "So the count turns on the state's mass",
     'and Planck\'s measurement is the number quoted': '$N_{\\mathrm{eff}}=2.99\\pm0.17$',
 }
 states = {}
@@ -405,7 +405,7 @@ for label, key in KEYS.items():
     print(f"      {label:<52s} -> {states[label]}")
 check("Ⓔ⑩  all three P16 clauses resolve MATCHED -- that the network carries the Standard Model's "
       "value, that the construction does not fix the count (a light right-handed neutrino's share "
-      "turns on a mass the left-right models set), and that Planck's measurement is the number "
+      "turns on its mass, which the right-handed scale sets), and that Planck's measurement is the number "
       "quoted.  These are the clauses the deciding arm reasons FROM: N_eff is free within its "
       "measured error because the construction does not fix it.  "
       "⌗ NOT a registered arm",
