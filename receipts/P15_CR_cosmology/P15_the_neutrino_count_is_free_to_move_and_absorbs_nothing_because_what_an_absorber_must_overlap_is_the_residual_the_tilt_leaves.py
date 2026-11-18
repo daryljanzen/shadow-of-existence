@@ -388,21 +388,26 @@ head("E -- THE P16 SENTENCES THE DECIDING ARM REASONS FROM, IN THREE STATES")
 P16 = ' '.join(io.open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'),
                        encoding='utf-8').read().split())
 SENTS = [' '.join(s.split()) for s in re.split(r'(?<=[.!?])\s+', P16) if s.strip()]
+# r7827 (69): P16 restated (72, L550 Y10).  The network still carries the Standard Model's 3.046; what
+#   the construction adds is a right-handed neutrino whose contribution turns on its mass, which the
+#   left-right models set; and Planck's 2.99 +/- 0.17 is still the measurement quoted.  So N_eff is
+#   still not fixed by the construction, which is what the deciding arm reasons from.
 KEYS = {
-    'N_eff is ADOPTED and not derived': 'adopted here rather than derived',
-    'the framework makes NO prediction for it': 'makes no $N_{\\mathrm{eff}}$ prediction',
-    'and the quoted number is what a departure must move': 'is the number a departure would have '
-                                                           'to move',
+    'the network carries the Standard Model value': 'the Standard Model value including the small '
+                                                    'non-instantaneous-decoupling correction',
+    'the construction does NOT fix the count': "set where the left--right models set the state's mass",
+    'and Planck\'s measurement is the number quoted': '$N_{\\mathrm{eff}}=2.99\\pm0.17$',
 }
 states = {}
 for label, key in KEYS.items():
     states[label] = ('MATCHED' if any(key in s for s in SENTS)
                      else ('WITHDRAWN' if key in P16 else 'STALE'))
     print(f"      {label:<52s} -> {states[label]}")
-check("Ⓔ⑩  all three P16 clauses resolve MATCHED -- that N_eff is adopted and not derived, that the "
-      "framework makes no prediction for it, and that the quoted number is what a departure would "
-      "have to move.  These are the clauses the deciding arm reasons FROM, and they are why the "
-      "order's premise that P16 FIXES N_eff through the network is corrected rather than used.  "
+check("Ⓔ⑩  all three P16 clauses resolve MATCHED -- that the network carries the Standard Model's "
+      "value, that the construction does not fix the count (a light right-handed neutrino's share "
+      "turns on a mass the left-right models set), and that Planck's measurement is the number "
+      "quoted.  These are the clauses the deciding arm reasons FROM: N_eff is free within its "
+      "measured error because the construction does not fix it.  "
       "⌗ NOT a registered arm",
       all(v == 'MATCHED' for v in states.values()))
 
