@@ -194,24 +194,24 @@ def main():
     #   ⇒ *** Replaced by the clause that carries the claim -- the correspondence carries the
     #     right-handed neutrino as the sixteenth Weyl fermion and fixes its PLACE while fixing none
     #     of its couplings, which is this receipt's own subject.  ONE site. ***
-    _NU_R = ("Its correspondence with the Standard Model's content carries a right-handed neutrino "
-             "as the sixteenth Weyl fermion of each generation, and fixes that state's place while "
-             'fixing none of its couplings')
-    check('⌗ and the construction carries a right-handed neutrino in the colourless four, as a '
-          'PLACE and not a coupling -- asserted as the clause that says so, in place of a token '
-          'any paper mentioning neutrinos would satisfy',
+    # ⛭ L550 Y9 (2026-11-17): ** the clause this check read -- "fixes that state's place while fixing
+    #   none of its couplings" -- is retired from P15: the parity that requires the state also fixes
+    #   its gauge charges (L550 Y8), so it couples to W_R and is thermalized. **  ⇒ *** The check now
+    #   reads the clause that carries the requirement, and the answer below is Y9's. ***
+    _NU_R = ("An exact parity requires a right-handed neutrino as the sixteenth Weyl fermion of each "
+             "generation, the electron's partner in a right-handed doublet")
+    check('⌗ and the construction requires a right-handed neutrino as the sixteenth state, its parity '
+          'fixing its charges -- asserted as the clause that says so',
           _NU_R in allp)
-    # ⛔⛭ r7125+cc66.98: the THIRD stale pairing in this file.  *The label said "the unnamed adoption
-    # is what hides it" while the condition asserts the name IS present -- and the question it calls
-    # "unasked" has since been ANSWERED, by `P11` in this directory: CR gives the nu_R a place and no
-    # interactions, N_eff counts thermalized species, so CR makes no N_eff prediction at all.*
-    #   ⇒ *So the question is recorded as ASKED AND ANSWERED, with `P11` named, and what is asserted is
-    #   the two facts this receipt measures: the name is in print and the nu_R is in the grading.*
+    # ⛭ L550 Y9: the question this file called unasked, and `P11` answered as "a place and no
+    # couplings, so no N_eff prediction", is answered again on the left-right reading: W_R exchange
+    # thermalizes the state, so if it is light at nucleosynthesis it adds 0.29 (at the collider
+    # bound) to 0.14 (decoupling above the electroweak scale); its mass is set with v_R.
     check(f'⇒ SO "does CR adopt the standard N_eff, or does its nu_R structure predict a departure?" '
-          f'was a real unasked question -- ** and `P11` has since answered it: CR fixes a PLACE and '
-          f'not a coupling, so it makes no N_eff prediction at all. **  The adoption is no longer '
-          f'unnamed ({n_named}x in print), which is what removed the hiding',
-          n_named > 0 and 'right-handed' in allp)
+          f'is answered by L550 Y9: the parity fixes the couplings, the state is thermalized, and if '
+          f'light it adds 0.14 to 0.29 -- the size set by its mass, which the left-right models set.  '
+          f'The adoption is named ({n_named}x in print)',
+          n_named > 0 and '$0.29$ at the bound, falling to $0.14$' in allp)
 
     # ⓹ the class
     closed = {k: len(re.findall(re.escape(k), allp, re.I))
