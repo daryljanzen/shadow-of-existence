@@ -12,6 +12,10 @@ COMPUTES: whether r7826 (60)'s verdict on PO-24 -- that the joint data exclude t
                          to reproduce its banked chi2 from its banked point
   INPUT  the configuration: r = 0.9918 and alpha = 1.70 PARSED out of corpus/CR_cosmology.tex with
                          r7826's own two spans -- not hardcoded, so the receipt moves if the paper does
+  INPUT  the paper's own penalty: read as a DISJUNCTION over two legitimate states, because Ⓓ④ asks
+                         69 to consider rewording the very sentence it reads -- a bare pin would go
+                         red ON SUCCESS. State A: the sentence stands and the comparison is live.
+                         State B: it has been rescoped and the finding is DISCHARGED. Either passes
   INPUT  r7826's figures: PARSED out of r7826's own receipt source, so the comparison moves if its
                          numbers move rather than silently comparing against a memory of them
   OUTPUT which of r7826's conclusions are arm-independent, and which single figure is not
@@ -107,12 +111,21 @@ R26_ROW = float(_m_rw.group(1)) if _m_rw else float('nan')
 _SRC = open(PAPER, encoding='utf-8').read()
 _m_r = re.search(r"visibility peak, \$r=(\d+\.\d+)\$", _SRC)
 _m_al = re.search(r"\\alpha=(\d+\.\d+)\$ the instrument", _SRC)
+# ** THE PAPER'S PENALTY IS READ AS A DISJUNCTION OVER TWO LEGITIMATE STATES, NOT AS A PIN. **
+# Ⓓ④ below reports that this sentence's figure is ARM-SENSITIVE and asks 69 to consider saying so.
+# ⇒ A bare presence pin would therefore redden THIS receipt the moment 69 acted on its own finding
+# -- the exact failure check_quote_pins warns about: "a gate that asserts another seat's sentence is
+# present fails ON SUCCESS when the sentence said something was open."  Both paper states are
+# legitimate: (A) the sentence still carries the bare unqualified penalty, and the comparison below
+# is live; (B) it has been reworded or rescoped, and this revision's finding is DISCHARGED.  So the
+# disjunction is what is asserted, and this receipt's OWN figure is pinned hard in either state.
 _m_pen = re.search(r"on the same arm by \$\\Delta\\chi\^\{2\}=(\d+\.\d+)\$, a penalty that carries "
                    r"no extra\s+parameter", _SRC)
 R_ADJ = float(_m_r.group(1)) if _m_r else float('nan')
 ALPHA = float(_m_al.group(1)) if _m_al else float('nan')
-PAPER_PENALTY = float(_m_pen.group(1)) if _m_pen else float('nan')
-RATIO = PAPER_PENALTY / D['adj_a170']
+STATE_A = _m_pen is not None                      # the sentence as it stood at r7827
+PAPER_PENALTY = float(_m_pen.group(1)) if STATE_A else float('nan')
+RATIO = (PAPER_PENALTY / D['adj_a170']) if STATE_A else float('nan')
 
 # ======================================================= Ⓐ① THE PRECONDITION
 head("A -- THE PRECONDITION: ARE THE TWO CONVENTIONS COMPARABLE AT ALL")
@@ -156,7 +169,11 @@ check("Ⓒ③ THE VERDICT IS ARM-INDEPENDENT: at the endpoint sec:coherence adju
 
 # ======================================================= Ⓓ④ THE DISAGREEMENT
 head("D -- ⚠ THE ONE DISAGREEMENT, AND IT IS A FIGURE THE PAPER PRINTS")
-print(f"\n      the paper's sentence carries   Delta chi2 = {PAPER_PENALTY:.2f}  (parsed)")
+if STATE_A:
+    print(f"\n      the paper's sentence carries   Delta chi2 = {PAPER_PENALTY:.2f}  (parsed)")
+else:
+    print("\n      STATE B: the paper no longer carries the bare unqualified penalty --")
+    print("      this revision's finding has been acted on, and Ⓓ④ is DISCHARGED, not red.")
 print(f"      r7826's receipt pins it at                  {R26_A7:+.4f}")
 print(f"      this arm gives                              {D['adj_a170']:+.4f}")
 print(f"      ratio                                        {RATIO:.2f}x")
@@ -167,9 +184,10 @@ check("Ⓓ④ ⚠ THE SIZE OF THE PENALTY IS NOT ARM-INDEPENDENT. sec:coherence 
       "agrees and the size does not: 9.02 reads as a real sub-threshold penalty, 1.0569 reads as "
       "level with LCDM. ⇒ This STRENGTHENS the paper's 'not excluded' rather than weakening it, "
       "and is reported for that reason. Which figure the paper should carry is 69's ruling",
-      abs(PAPER_PENALTY - 9.02) < 1.0e-12 and abs(R26_A7 - 9.0172) < 4.5e-4
-      and abs(D['adj_a170'] - 1.0569) < 5.0e-4 and abs(RATIO - 8.53) < 4.3e-3
-      and D['adj_a170'] > 0.0 and ALPHA == 1.70)
+      abs(R26_A7 - 9.0172) < 4.5e-4 and abs(D['adj_a170'] - 1.0569) < 5.0e-4
+      and D['adj_a170'] > 0.0 and ALPHA == 1.70
+      and ((not STATE_A)
+           or (abs(PAPER_PENALTY - 9.02) < 1.0e-12 and abs(RATIO - 8.53) < 4.3e-3)))
 
 # ======================================================= Ⓔ⑤ THE EXCLUDED CONFIGURATION
 head("E -- THE EXCLUDED CONFIGURATION, AND THE EDGES ITS MINIMUM SITS ON")
@@ -244,9 +262,9 @@ PINS = {
     "r7826's, better by 1.2926":           abs(R26_A1 + 1.2926) < 6.0e-4,
     'alpha 1.70 here, 115.8940':           abs(C['adj_a170'] - 115.8940) < 0.05,
     'worse by only 1.0569':                abs(D['adj_a170'] - 1.0569) < 5.0e-4,
-    "the paper's printed penalty, 9.02":   abs(PAPER_PENALTY - 9.02) < 1.0e-12,
+    "the paper's printed penalty, 9.02":   (not STATE_A) or abs(PAPER_PENALTY - 9.02) < 1.0e-12,
     "r7826's, worse by 9.0172":            abs(R26_A7 - 9.0172) < 4.5e-4,
-    'the factor between them, 8.53':       abs(RATIO - 8.53) < 4.3e-3,
+    'the factor between them, 8.53':       (not STATE_A) or abs(RATIO - 8.53) < 4.3e-3,
     'the row ratio here, 547.0948':        abs(C['row_a21'] - 547.0948) < 0.27,
     'worse by 432.2577':                   abs(D['row_a21'] - 432.2577) < 0.2,
     "r7826's, worse by 631.3686":          abs(R26_ROW - 631.3686) < 0.3,
