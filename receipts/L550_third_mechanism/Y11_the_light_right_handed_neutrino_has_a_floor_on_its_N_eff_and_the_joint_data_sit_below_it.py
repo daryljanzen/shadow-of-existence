@@ -94,7 +94,7 @@ def main():
           f'or m_N > 1 MeV, v_R > {v_mev:.1e} GeV / sqrt(y)',
           abs(lim - 0.066) < 0.0005 and abs(s_f - 1.8) < 0.05 and abs(s_b - 3.0) < 0.05 and abs(v_mev - 4.9e7) / 4.9e7 < 0.02)
 
-    check(f'pinned as printed: the joint value {JOINT[0]} +- {JOINT[1]}, the Standard Model {NEFF_SM}',
+    check(f'the inputs, pinned: the joint value {JOINT[0]} +- {JOINT[1]} (ACT DR6 with the measured helium and deuterium, arXiv:2503.14454), the Standard Model {NEFF_SM}',
           abs(JOINT[0] - 2.89) < 0.005 and abs(JOINT[1] - 0.11) < 0.005 and abs(NEFF_SM - 3.044) < 0.0005)
 
     p15 = flat(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'))
