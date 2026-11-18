@@ -27089,3 +27089,202 @@ and my recommendation is the first:**
 ⌗ **What is NOT in question:** the receipt's result. It runs to `17` of `17` on the pushed tree,
 exit `0`, and its conclusions are unchanged — the carriers separate on `L_p` by `146σ`, the
 separation is the comb's own peak count, the sky's reading is void, and the closure has no number.
+
+---
+
+## r7830 — ORDER r7827 DISCHARGED, AND ⛔ THE WORD "UNAFFORDABLE" WAS DOING TWO JOBS
+
+**Both items are done, and item ① turned up a defect in my own `r7828` wording that your ruling
+repeated.** The paragraph is one state at `$r=0.9918$` and the in-force length; the six receipts
+behind the old figures name their ratio in their own INDEX rows; `11` arms, all pass, exit `0`,
+nothing measured — every figure is `r7828`'s, read back out of its banked grid.
+
+### ⛔ THE CORRECTION, BECAUSE IT CHANGES WHAT THE PARAGRAPH CLAIMS
+
+`r7828` said `A_L` *"becomes the unaffordable one"* at `$-2.867\sigma$`, and your `r7827` repeated
+it. **But the threshold this paper applies to the helium fraction is THREE standard deviations** —
+it is the helium receipt's own criterion, in print as *"outside three standard deviations of both
+numbers"* — and `$-2.867$` is inside it. I had used one word at two thresholds: about two sigma for
+`A_L`, three for `Y_He`.
+
+**Applied evenly, at the one threshold the paper states:**
+
+| | at `$1.0926$` | at the adjudicated `$0.9918$` |
+|---|---|---|
+| `$\omega_b$` | `$-3.174$` — **out of room** | `$+0.245$` |
+| `$N_{eff}$` | `$-0.335$` | `$-0.266$` |
+| `$Y_{He}$` | `$+11.265$` — **out of room**, at its bank's edge | `$-2.016$` |
+| `$A_L$` | `$+1.390$` | `$-2.867$` — the farthest, and still in room |
+| `$\omega_m$` | `$+0.281$` | `$+0.187$` |
+| **out of room** | **two of five** | **none** |
+
+⇒ **At the configuration you adjudicated, every one of the five is refused on PURCHASE and not on
+room.** That is the stronger of the two readings and I would rather the paper carried it: a
+parameter that cannot be afforded might still be absorbing the signature in a universe that could
+afford it, whereas a parameter that is affordable and still leaves three quarters of the
+displacement standing is refused by the measurement itself. **The most any of the five buys is
+`$24.45$` per cent.**
+
+⇒ **GUARD: before two parameters are refused under one word, check that the word means the same
+measurement for both.** A label applied at two sigma for one and three for another is two labels
+wearing one name. *The arm that caught it is the one that tried to count the refusal patterns —
+the count came out wrong, and the threshold was why.*
+
+### ⌗ ITEM ① — WHAT THE PARAGRAPH NOW SAYS
+
+- **The screen is priced once**, in its own second sentence: `$r=0.9918$`, both lengths to the
+  visibility peak, at `$\ell_D=1489.58$`. All `21` per-absorber figures are the `paper` rows of
+  `r7828`'s grid on control `L824`.
+- **Every figure `$1.0926$` prices** stands after a hand-over sentence that names that ratio; with
+  the rule sentence that is the *only* place the ratio is named in the paragraph. Nothing of that
+  ratio's appears before it.
+- **The lead-in no longer contradicts the refit.** It keeps the lean, scoped: *at fixed cosmology*
+  the data lean against the signature at the `$2\sigma$` line, *refitted they do not*, and the
+  deciding reading is the paragraph after it. ⌗ The hedge that was load-bearing is in the stem.
+- **`$\tau$` needed no re-pricing and the paragraph now says why**: above the reionisation bump it
+  enters as the single factor `$e^{-2\tau}$`, which is exactly the amplitude the comparison already
+  leaves free — an identity, so it carries no figure a configuration could move.
+- **Three of the five reverse the direction of the excursion they ask for** between the two ratios;
+  the two that do not are the two that never leave `$0.3355\sigma$` at either, a gap of `$8.5$`
+  times. *The partition is read off the sign and the gap, not off a threshold chosen after the fact
+  — which is the mistake the same arm had just made.*
+
+### ⌗ ITEM ② — THE SIX ROWS
+
+All six receipts that priced `$1.0926$` now say so in the INDEX row itself, so a reader meeting one
+is told which ratio its figures belong to before reading them. The receipts are untouched: they are
+records of the ratio they priced, exactly as you ordered.
+
+### ⚑ WHAT IS NOW YOURS TO RULE
+
+**One sentence of `P15` is yours rather than mine.** `sec:refit-bound` still reads *"the data lean
+against the signature, at the `$2\sigma$` line and not past it"* — and I have left it alone. It is
+correct as written: it is a FIXED-COSMOLOGY tilt comparison, its receipt prices `$r=0.9918$` at
+`$\ell_{\rm eff}=1497$`, so it is at your adjudicated ratio and not the row's. **But it is the
+paper's last unqualified "lean against", and a reader who has just read that the refit prefers the
+signature meets it with no signpost.** My recommendation is the smaller of the two moves: add the
+scope to that sentence as well — *at fixed cosmology* — and leave the measurement and its figures
+untouched. I have not done it because it is a paragraph you did not name and the figures are
+`r7627`'s and `70`'s, not this revision's.
+
+---
+
+## r7830 — ⚠ A BLOCK ON `#828`, AND IT IS A RECEIPT READING AN UNDETERMINED FILE: `L550 Y10` MADE THE TWO COPIES OF `bbn_network.py` DISAGREE
+
+**Everything else on `r7830`'s head is green** — fast, the runner-read sweep, the tolerance
+perturbation, and the carrier-separation receipt now clears the `2400` s budget you applied. The
+plain suite reports **`517 pass, 2 fail, 0 over timeout`** and names two receipts, neither in this
+branch's diff:
+
+```
++ carried: receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
++ carried: receipts/L_probability/S48_…the_instrument_mints_keys_the_receipts_never_pinned.py  ['Ⓓ①']
+```
+
+**`S48` is consequential:** its `Ⓓ①` re-runs the nineteen receipts it repaired and `P10` is one of
+them. `P10` is the whole of it.
+
+### ⛔ TWO DEFECTS, AND THE FIRST ONE IS THE GUARD YOU GAVE ME
+
+`P10` reads the BBN module's syntax tree and asserts the neutrino commitment as a **value** — the
+instrument `r7338` built so that a reformatting could not break it and a changed number could not
+survive it. Both halves of how it reaches that value are now broken.
+
+**⓵ THE MODULE IS NOT DETERMINED.** It globs `**/bbn_network.py` and takes the first hit with a
+`break`. **There are two files of that name:**
+
+| path | bytes | its first `gnu` |
+|---|---|---|
+| `computations/p16_bbn/bbn_network.py` | `17954` | `(3.0 + EXTRA_NU)*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4` |
+| `receipts/P16_cosmogenesis_paper/bbn_network.py` | `20037` | `3.0*(7.0/8.0)*2.0*Tnu_over_T(T_MeV)**4` |
+
+Glob order is filesystem-dependent. **The runner reads the first, this seat reads the second, and
+since `4b08d26f5` they disagree.** ⇒ *That is `before two stretches are identified by a label,
+check how many-to-one the label is on the object`, arriving in a file name: the label
+`bbn_network.py` is two-to-one, and the receipt's verdict is now a fact about the filesystem.*
+
+**⓶ AND THE LIVE MODULE'S FIRST `gnu` IS NO LONGER EVALUABLE.** `_assigned` returns the **first**
+match from `ast.walk`, and `_value_of` evals the unparsed expression with `{'__builtins__': {}}`
+and no names, so `EXTRA_NU` raises `NameError` and the value is `None` — which is the `(None)` the
+failing label prints.
+
+**Verified, run both ways:** from the repository root and again from its own directory as the
+runner runs it, `P10` exits `0` here and prints `5.25`, because the glob here returns the
+duplicate. ⌗ **And the module still commits to exactly three species:** `EXTRA_NU = 0.0` at its
+default, so `(3.0 + EXTRA_NU)` *is* `5.25` worth of degrees of freedom. The claim is not falsified
+— it is unreadable.
+
+### ⚑ THE PATCH, ROUTED AND NOT APPLIED — AND ONE PART OF IT IS A CLAIM AND SO IS YOURS
+
+```diff
+--- a/receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
++++ b/receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py
+@@ -133,8 +133,15 @@
+-    net = None
+-    for cand in glob.glob(os.path.join(ROOT, '**', 'bbn_network.py'), recursive=True):
+-        net = open(cand, encoding='utf-8', errors='replace').read()
+-        break
++    # ⛔ the label `bbn_network.py` is two-to-one: name the LIVE module, and assert that every
++    #   other file of that name agrees on the two values rather than leaving the glob to decide
++    _cands = sorted(glob.glob(os.path.join(ROOT, '**', 'bbn_network.py'), recursive=True))
++    _live = os.path.join(ROOT, 'computations', 'p16_bbn', 'bbn_network.py')
++    net = open(_live, encoding='utf-8', errors='replace').read() if os.path.exists(_live) else None
+@@
+-        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0'})
++        # the module now commits to three species PLUS a named extra the parity requires, zero by
++        # default, so the standard count is read with that extra at its declared default
++        _extra = _value_of('EXTRA_NU')
++        _gnu = _value_of('gnu', {'Tnu_over_T(T_MeV)': '1.0', 'EXTRA_NU': repr(_extra)})
+```
+
+**⓵ is plainly a defect and I would apply it on your word.** ⓶ **is a claim and I will not restate
+it unasked:** with `L550 Y10` landed the code no longer commits to *exactly* three — it commits to
+three plus a declared extra. **Three ways to take it, and my recommendation is the second:**
+
+- ⓵ assert `3.0` with `EXTRA_NU` stubbed to `0.0` — keeps the old sentence, but a future non-zero
+  default would pass unnoticed, which is the opposite of what the instrument is for.
+- ⓶ **assert the count at the module's own declared `EXTRA_NU`, and assert separately that the
+  default IS zero.** **Recommended:** it reads what the code commits to rather than what it used
+  to, and a changed default then fails loudly — the property `r7338` built the instrument for.
+- ⓷ retire the arm as superseded by `L550 Y10` and let `Y10`'s own receipt carry the count. I would
+  not choose this: the station's question is whether the *cosmology sector* names what it rests on,
+  and that is `P10`'s and not `Y10`'s.
+
+⌗ **Not applied here because** the receipt is in the cosmology station rather than in this
+revision's diff, ⓶ changes a claim that is `69`'s and `72`'s, and folding a station repair into a
+paragraph revision is what routing exists to prevent. **`#828` carries one standing-down comment
+saying the same, edited rather than duplicated, and no re-run is spent — a re-run cannot clear
+this and the named reds are not `Q1`.**
+
+---
+
+## r7830 — ⚠ AND A SECOND FOREIGN RED, THIS ONE `72`'s: `Y10` HAS FIVE FLAGGED TOLERANCE SITES AND ONE OF THEM IS A `FLIP` AT HEADROOM `0.9`
+
+**Reported and not touched, because the receipt is `72`'s station.** The tolerance perturbation on
+`r7830`'s head returns `VERDICT: FLAGGED AND NOT A SWEEP`, and every one of the five flagged sites
+is in `receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py`:
+
+| site | kind | `err_a` | `err_b` | tol | headroom |
+|---|---|---|---|---|---|
+| `99:41` | FLAG | `1.164e-05` | `3.675e-06` | `5e-05` | `4.3` |
+| `104:10` | FLAG | `1.276e-04` | `1.552e-04` | `5e-04` | `3.2` |
+| `117:14` | FLAG | `9.834e-06` | `1.817e-06` | `3e-04` | `30.5` |
+| `117:47` | FLAG | `1.398e-04` | `3.624e-05` | `5e-03` | `35.8` |
+| **`123:14`** | **FLIP** | `2.756e-05` | `5.519e-05` | `5e-05` | **`0.9`** |
+
+⇒ **`123:14` is the one that matters.** A `FLIP` is a site whose error crosses its own tolerance
+between builds: `2.756e-05` on one and `5.519e-05` on the other, against a tolerance of `5e-05`.
+**So that assertion passes on one build and fails on the other, and which it does is a property of
+the runner rather than of the network.** The other four are flagged for movement at headroom `3.2`
+to `35.8` — they hold on both builds, and they say the tolerances are near the solver's own noise.
+
+⌗ **What I have NOT done, and will not without your word:** this is `72`'s receipt in `72`'s
+station, the whole of it is the cosmogenesis network run, and a tolerance that is too tight for
+cross-build variation is a statement about what that network can resolve — which is `72`'s to make.
+**My recommendation is that `123:14`'s tolerance be set from the measured cross-build spread rather
+than from the figure's last digit**, and that the four FLAG sites be left alone unless `72` wants
+the same treatment: they are not failing, they are merely close.
+
+⌗ `#828` carries this in its one standing-down comment with the measurement, alongside the `P10`
+block above. **No re-run is spent:** a re-run cannot clear a FLIP — it would come back flagged on
+whichever pair of builds disagrees next — and the named reds are not `Q1`.
