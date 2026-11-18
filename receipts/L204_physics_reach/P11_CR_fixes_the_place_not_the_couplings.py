@@ -47,9 +47,13 @@ couplings and this consistency argument would have to be re-run.  The dependency
 already guards, and naming it here puts the N_eff stance under an existing trip-wire rather than a new
 one. ***
 
-WHAT IS NOT CLAIMED.  ** Not that CR's nu_R is a gauge singlet ** -- the corpus never says so, "sterile"
-appears zero times, and the point is that CR assigns no gauge charges at all, which is weaker and is
-what the wall gives.  ** Not that the standard N_eff is right ** -- only that CR does not bear on it.
+WHAT IS NOT CLAIMED.  ** Not that CR derives the nu_R's gauge charges. **  r7823 (69): P18 now states
+(L550 Y8) that the right-handed neutrino is a singlet of the Standard Model's group and not of the
+left-right one -- a representation on the left-right reading the substrate's parity gives, at the
+weight of a reading.  The couplings and the right-handed breaking scale that would decide whether it
+thermalizes are fixed on the ordinary route, so CR still bears on N_eff only through that route, and
+this receipt's conclusion stands.  "sterile" appears in no paper's PROSE; its one occurrence is a
+cited title in P18's bibliography.  ** Not that the standard N_eff is right ** -- only that CR does not bear on it.
 ** Not that the BBN and camb levers cc54 computed are re-derived here **: they stand as reported, and
 they are why the name matters.  ** Not that this discharges station ⑨'s routing ** -- the paragraph is
 still owed; what changes is which paragraph.
@@ -100,6 +104,8 @@ def main():
     allp = ' '.join(re.sub(r'\s+', ' ', '\n'.join(
         l for l in open(f, encoding='utf-8', errors='replace').read().split('\n')
         if not l.lstrip().startswith('%'))) for f in papers)
+    # r7823 (69): the prose without the bibliography, for the one absence this receipt asserts.
+    prose = re.sub(r'\\bibitem\{[^}]*\}.*?(?=\\bibitem|\\end\{thebibliography\}|$)', '', allp)
     arc = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_LIVE_ARC.md'),
                                    encoding='utf-8', errors='replace').read())
 
@@ -144,8 +150,9 @@ def main():
           'replacing a two-arm disjunction whose shorter arm subsumed its longer one',
           ('one generation splits $12$ coloured against $3$ colourless ($4$ with a right-handed '
            'neutrino)') in allp)
-    check('⌗ and "sterile" appears ZERO times -- the corpus never assigns the nu_R a gauge status at '
-          'all', len(re.findall('sterile', allp, re.I)) == 0)
+    check('⌗ and "sterile" appears ZERO times in any paper\'s prose (only in a cited title) -- the '
+          'corpus reads the nu_R\'s representation on the left-right reading and supplies no coupling',
+          len(re.findall('sterile', prose, re.I)) == 0)
 
     # ⓶ what N_eff counts
     # ** the first draft asserted this with a bare True -- a hollow assertion, caught by the lint.
@@ -161,7 +168,7 @@ def main():
           net is not None and ('decouple' in net.lower() or 'decoupling' in net.lower()))
     check('⇒⇒ SO CR\'s nu_R PREDICTION AND N_eff ARE ABOUT DIFFERENT THINGS: CR predicts a PLACE, '
           'N_eff depends on COUPLINGS, and CR\'s own wall says it supplies none',
-          n_wall > 1 and len(re.findall('sterile', allp, re.I)) == 0)
+          n_wall > 1 and len(re.findall('sterile', prose, re.I)) == 0)
 
     # ⓷ the trip-wire is already on the board
     check('⚠ and the trip-wire is already live: F1 fires if the gauge group is ever promoted to FORCED',

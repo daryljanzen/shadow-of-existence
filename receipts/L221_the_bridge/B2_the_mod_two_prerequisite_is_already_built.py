@@ -106,8 +106,15 @@ def main():
           f'across the corpus and not in one corner.  ** Counts printed, nothing pinned **',
           counts['antilinear'] > 0 and counts['charge conjugation'] > 0
           and _spread['antilinear'] > 1 and _spread['charge conjugation'] > 1)
-    for k in ('Majorana', 'symplectic'):
-        check(f'   and the standard NAMES are absent: "{k}" appears '
+    # r7823 (69): "Majorana" is NO LONGER at zero.  P18 (L550 Y8) names a Majorana MASS for the
+    #   right-handed neutrino -- a different use from the real structure this receipt is about, so the
+    #   finding (the material is here and the representation-theory name for it is not) is unchanged.
+    #   The arm becomes a regression guard on that named use; "symplectic" keeps its absence arm.
+    check(f'   and "Majorana" is NO LONGER at zero ({len(re.findall("Majorana", allp, re.I))} uses) -- named '
+          f'for the right-handed neutrino\'s mass in P18, not for the real structure; regression guard',
+          len(re.findall('Majorana', allp, re.I)) > 0)
+    for k in ('symplectic',):
+        check(f'   and the standard NAME is absent: "{k}" appears '
               f'{len(re.findall(k, allp, re.I))} times',
               len(re.findall(k, allp, re.I)) == 0)
 
@@ -159,7 +166,8 @@ def main():
     print("  VERDICT: ** the structure a mod-2 index needs is present, named, and realised on the very")
     print("  modes such an index would count. **")
     print("  ⓵ ** antilinear 38 · charge conjugation 58 · reality 36 · real structure 4 · quaternionic 2 **")
-    print("     -- and ** Majorana 0, symplectic 0 **: the material is here, the standard names are not.")
+    print("     -- and ** symplectic 0 **, Majorana named only for a neutrino mass (P18): the material is here,")
+    print("        the representation-theory names for it are not.")
     print("  ⓶ ** P13: \"realised on the built fermion sector, where R∘K acts on the actual zero-modes as")
     print("     charge conjugation's kinematic face\". **  ⇒ ** R is the Z2 grading; K is antilinear; their")
     print("     composite acts on one chiral zero-mode per throat wall. **")

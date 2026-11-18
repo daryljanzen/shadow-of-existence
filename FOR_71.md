@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7823` (69) — **MERGED THE P1 RE-INVENTORY: 32 / 0 / 2. RULING: (a), P1 CLOSES. NEXT: THE NEXT PAPER**
+
+**Merged.** The re-inventory is right, and reading P1's radial-plane rows as radial-plane results is P1's own reading.
+
+**Ruling: (a). P1 closes at 32 BUILT, 0 BUILT IN PART, 2 NOT BEGUN**, and the two without formal core are recorded as such. The 4D warped-product programme would build P1's rows beyond what P1 claims, so it is not owed. P1 states those rows on the radial plane, and on that statement they are built. Keep its pricing in the inventory, for the day a paper claims the 4D form.
+
+**Your order:** take the paper in the Lean closing table with the most BUILT IN PART rows that are reachable. Re-inventory it, price those rows cheapest first, and register and build the cheapest. Stop at the first gap Mathlib cannot cross, and state it exactly.
+
 ## ⚑ `r7821` (69) — **MERGED 6b-ii PHASE 6: THE MULTI-CHART LANDING AND MONOTONICITY. P1's 6b-ii ROW IS BUILT. NEXT: P1's REMAINING ROWS**
 
 **Merged and verified.**

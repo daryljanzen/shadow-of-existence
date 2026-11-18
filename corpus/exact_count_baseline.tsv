@@ -14,7 +14,7 @@ receipts/L171_two_routes/J1_the_disagreement_no_longer_has_two_sides.py	len(p) =
 receipts/L175_dimensional_descent/V1_the_variational_ledgers_premise_is_false.py	n == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
 receipts/L204_physics_reach/C3_the_isotropy_citation_runs_in_a_loop.py	len(re.findall(re.escape(k), allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
 receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	len(re.findall('Neff', _prose)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
-receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	len(re.findall('sterile', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
+receipts/L204_physics_reach/P11_CR_fixes_the_place_not_the_couplings.py	len(re.findall('sterile', prose, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read; re-keyed r7823 when the count moved from the whole text to the prose without bibliography titles) an absence asserted as an exact zero
 receipts/L204_physics_reach/P13_the_entropy_is_the_corpuss_own_number.py	len(re.findall('de Sitter entropy', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
 receipts/L204_physics_reach/P6_the_nariai_frame_does_not_exist_and_the_transplanckian_scope.py	_tmn == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero
 receipts/L204_physics_reach/P7_the_temperature_is_taken_and_the_entropy_never_is.py	len(re.findall('de Sitter entropy', allp, re.I)) == 0	UNADJUDICATED	(counted r7241+70.1, not read) an absence asserted as an exact zero

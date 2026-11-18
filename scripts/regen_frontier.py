@@ -9400,6 +9400,7 @@ EST = {
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
         1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        'r7823 LANDS r7826 (60): joint best fit; the adjudicated signature (r 0.9918, alpha 1.70) refits worse by 9.02 with no extra parameter; the 27 sigma exclusion is the geometric-part ratio 1.0926; figures recomputed at the paper configuration next. '
         'r7821 RECORDS r7822 (60): joint Planck+ACT arm, sky tail tilt -0.0207+-0.0038 vs signature -0.0935, 19.3 sigma on a baseline not yet a best fit; the joint best fit next, then the recompute on L824. '
         'r7819 MERGES r7816 (60): the joint Planck+ACT tail arm registered on DR6 own multipole cut (no public cross-covariance); ACT DR6 banked (70); 60 builds it. '
         'r7815 LANDS r7814 (60): omega_m affordable within 0.3 sigma and absorbs nothing (100.5-100.7 per cent standing); all five refuse, the inherited-parameter route is closed; data-gated alone, the joint Planck+ACT likelihood next. '

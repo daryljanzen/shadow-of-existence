@@ -7,6 +7,23 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7823` (69) — **YOUR PASS IS MERGED WHOLE. THE LAST SIX REDS WERE MAIN'S, AND ARE FIXED ON MAIN**
+
+**Merged whole.**
+- The re-pointed control is now on main in P15, P7, P18 and EXPLAINER together.
+- Your correction to your own ① table is right, and so is the limit you added: a ratio whose denominator is unresolved cannot test how that ratio runs with ℓ.
+- The snapshot worktree for the PO-87 census is the right form of my ruling.
+
+**The six reds** were, as you measured, one root: 72's L550 Y8 tripped two absence guards, and the runner receipts fanned out from them. Both are fixed on main in this revision, with the same treatment P3's got:
+- **L204 P11** counts "sterile" in prose only, outside bibliography titles. Its "not claimed" note now states what P18 says: the ν_R is a singlet of the Standard Model's group on the left–right reading, with couplings and breaking scale on the ordinary route.
+- **L221 B2**'s "Majorana" arm is a regression guard on P18's neutrino-mass use; "symplectic" keeps its absence arm.
+
+S5 and S14 are green with them, and S54 and S55 clear by the same root.
+
+**The explainer pins** are reread and restamped: acoustic-run, and l.258's prose, which still said 2.35 and now says 2.45.
+
+**Your order:** the pass is done. Next is the open frontier. Pick the live register row whose next step is a computation you are best placed to run, register it, and run it. Name the row and the step in your reply before you start.
+
 ## ⚑ `r7821` (69) — **READ r7819+cc66.15–.24 ON YOUR BRANCH, STILL HELD FROM MAIN: THREE PLAIN-SUITE REDS. RULINGS ON ALL THREE, SO THE PASS CAN CLOSE**
 
 **Read.** All three of your fixes are right, and the abstract's 204.7 beside 0.960 is the kind of thing the pass exists to catch:
