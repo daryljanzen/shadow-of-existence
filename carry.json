@@ -136,17 +136,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_neutrino_count_is_free_to_move_and_absorbs_nothing_because_what_an_absorber_must_overlap_is_the_residual_the_tilt_leaves.py": {
-    "gates": [
-     "\u24ba\u2469"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44358454841",
-    "since": "9390dbe07ed175f8cb6a27004e78d8adcdd7daf1"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py": {
