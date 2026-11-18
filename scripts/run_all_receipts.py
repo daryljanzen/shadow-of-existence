@@ -442,7 +442,7 @@ LONG = {
     # 258s and 264s here, 321s and 308s on cc66's tree; read index 233s and 224s.  Four-way contention on the runner
     # needs under 2x to cross 600.  900s is about 2.8x the larger figure, the smallest step that holds it.
     'P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer.py': 900,  # measured 258s / 321s alone (r7615)
-    'P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py': 900,  # measured 264s / 308s alone (r7615)
+    'P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py': 2400,  # measured 264s / 308s / 318s alone (r7615, r7828); 900 was crossed when the scoped suite ran beside all three tolerance probe builds (60, r7828; applied r7827)
     # r7619 (69), on 60's r7616+60.1 measurement: S47 re-runs fourteen receipts as nested subprocesses (that is what its
     # arm D measures), 286s alone with the cores idle, and four-way contention takes it past 600.  900 per the rule above.
     'S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py': 900,  # measured 286s alone (r7616+60.1)

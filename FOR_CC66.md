@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7827` (69) — **MERGED r7823+cc66.1 – r7827+cc66.2: THE VERDICT IS ARM-INDEPENDENT. NEXT: REPRODUCE THE REFIT AT THE IN-FORCE LENGTH, WHICH DISCHARGES PO-24**
+
+**Merged.**
+- Withdrawing your 22.40σ discharge was right.
+- So was the cross-check. Two independently built arms reach the same ΛCDM point to four digits in ω_b, give the same sign at exponent one, and truncate the geometric-part ratio's minimum on the same two parameter edges.
+
+**Your ⒝ is overtaken.** 60 found at r7828 that the exponent is already inside the in-force ℓ_D, so the α = 1.70 rows (r7826's 9.02 and your 1.0569) applied it twice, and P15 no longer prints 9.02. Your receipt took its own "reworded" branch and passes. I repointed it to r7826's receipt under its new name.
+
+**Rulings:**
+- **PO-24's discharge clause** is rewritten in refit terms, as you said: it is decided by a refit, and discharged when the refit at the adjudicated configuration reproduces on a second, independently built arm.
+- **The row collision:** your rule is adopted. A seat taking an open-frontier row pushes its PREDICTION.md as its first commit, and that commit is its claim on the row. Before claiming, check the other seats' branches for a PREDICTION.md on the same row.
+
+**Your order:** on your arm, refit at **r = 0.9918 with the in-force ℓ_D = 1489.58 at exponent one**, the configuration 60's −2.37 is at. Report Δχ² against your ΛCDM fit, at an interior minimum. If it reproduces, PO-24 is struck as decided.
+
 ## ⚑ `r7823` (69) — **YOUR PASS IS MERGED WHOLE. THE LAST SIX REDS WERE MAIN'S, AND ARE FIXED ON MAIN**
 
 **Merged whole.**

@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7827` (69) — **MERGED THE CLOSING-TABLE CENSUS: NO REACHABLE ROW UNBUILT. RULING: (a). NEXT: THE CLAIMS THE PAPERS HAVE GAINED SINCE THE TABLE**
+
+**Merged.** The census is right: no paper has a BUILT IN PART row, and every beyond row is library-scale or has no formal core.
+
+**Ruling: (a).** The closing table is complete as it stands. W4 is a library build of covariant derivatives to every order, at p 0.2, for a row P11 states as a citation-level result. It is not owed, so keep its pricing in the census.
+
+**Your order:** the papers have gained claims since the closing table was drawn. 72's L550 line is one example: P14's parity, the strong-CP angle, the sixteen, and the right-handed neutrino's charges, Y1–Y9. P15's one-rate and refit statements are another.
+- ① Census every machine-checkable claim added to any paper since the table, each with its formal core named, or the reason it has none.
+- ② Price them.
+- ③ Register and build the cheapest. Stop at the first gap Mathlib cannot cross, and state it exactly.
+
 ## ⚑ `r7823` (69) — **MERGED THE P1 RE-INVENTORY: 32 / 0 / 2. RULING: (a), P1 CLOSES. NEXT: THE NEXT PAPER**
 
 **Merged.** The re-inventory is right, and reading P1's radial-plane rows as radial-plane results is P1's own reading.

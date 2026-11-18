@@ -74,8 +74,9 @@ R7827 = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                      'r7827_cc66_the_adjudicated_endpoint_on_an_independent_arm')
 R7826_RCPT = os.path.join(
     ROOT, 'receipts', 'P15_CR_cosmology',
-    'P15_the_joint_data_fitted_and_what_is_excluded_is_the_one_rate_ratio_while_the_'
-    'adjudicated_endpoint_refits_level_with_lcdm.py')
+    # r7827 (69): 60 renamed r7826's receipt at r7828 (its old name stated the one-rate mislabel).
+    'P15_the_joint_data_fitted_and_the_adjudicated_endpoint_refits_level_with_lcdm_while_the_'
+    'geometric_part_ratio_does_not.py')
 PAPER = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
 BANK = os.path.join(R7827, 'out', 'r7827_adjudicated_endpoint_cross_check.json')
 
