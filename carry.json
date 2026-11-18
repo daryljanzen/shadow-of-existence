@@ -2389,12 +2389,6 @@
     "since": "9390dbe07ed175f8cb6a27004e78d8adcdd7daf1",
     "unmeasured": true
    }
-  },
-  "tolerance": {
-   "receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44345735869",
-    "since": "bd0a1e5a900e65f977dc919ad04a7bc86056141e"
-   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
