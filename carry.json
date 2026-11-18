@@ -7669,6 +7669,13 @@
  },
  "main": {
   "suite": {
+   "receipts/L_probability/S48_the_middle_closes_whole_and_the_ledger_gains_on_fifty_six_of_fifty_nine_rows_while_the_instrument_mints_keys_the_receipts_never_pinned.py": {
+    "gates": [
+     "\u24b9\u2460"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44326694622",
+    "since": "a6b84e4b73a412eb741febb6605777d47c536bfe"
+   },
    "receipts/P15_CR_cosmology/P15_the_neutrino_count_is_free_to_move_and_absorbs_nothing_because_what_an_absorber_must_overlap_is_the_residual_the_tilt_leaves.py": {
     "gates": [
      "\u24ba\u2469"
