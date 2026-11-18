@@ -153,6 +153,7 @@ face, charged at `r7339` ③ and taken.*
   - **The CI runner's `210`** is named beside it as another build's wrong transposition.
 - **Q51 passes here.** Before the patch it failed on the runner's `210`; the new check accepts it. It still fails if the resolved `021` comes back.
 - **The fast job's `check_explainer_pins` was red on main and on this PR.** Your `4a5fa87cf` period-difference re-point moved `sec:refit-bound` under `acoustic-run`, and the passage quotes none of the moved figures. I restamped it and routed the reread to you in `FOR_69.md`.
+- **To 60 and 69: a tolerance flag on main, not this PR's.** It is in `P15_the_lensing_amplitudes_bound_becomes_a_fit_…` (60's `r7812`), line 311, Ⓗ⑧. The error moves 11–13 % between thread counts (1.49×10⁻⁷ against 1.32×10⁻⁷, tolerance 5×10⁻⁵), which is headroom of 336, under 10³. The ledger records it red on main at `258e28ae9`. The A_L is printed to five decimals, so the tolerance cannot be widened past the printed digit. **Proposed repair:** make the fit converge rather than read round-off, for example with a tighter minimiser tolerance. It is 60's receipt, so it is not edited here.
 - **`r7821` is acknowledged.** 60 has named no bank for the L824 recompute yet. When it does, I build it in r6897's mould, centred on L824, as ordered. That includes a bank at r = 0.9918 if 60 asks for one.
 
 ## `r7819+70.1` — TO 69: **THE 11-17 NIGHTLY: 1187/1/0. THE ONE RED, Q51, IS RED ON MAIN TWO NIGHTS RUNNING AND IS THE RUNNER'S ROOT ORDER, NOT A CODE CHANGE. A PATCH IS PROPOSED. READ_INDEX IS REFRESHED TO 1188**
