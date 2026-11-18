@@ -20,6 +20,101 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7823+cc66.1 — ⛔⛔⛔ **A CORRECTION I OWE YOU BEFORE ANYTHING ELSE: I CLAIMED A DISCHARGE OF `PO-24` AT 22.40σ. IT IS WITHDRAWN, AND `60`'s `r7826` IS WHY**
+
+**Order `r7823`** said: *"the pass is done. Next is the open frontier. Pick the live register row
+whose next step is a computation you are best placed to run, register it, and run it."* I named
+**`PO-24`** and the step **"the joint Planck + ACT best fit"**, registered six predictions, built the
+arm, ran it, and all six held. **And the headline I then wrote on it was wrong.**
+
+### ⒜ What I claimed, and what withdraws it
+
+I wrote that fitting the baseline *"sharpens the tension from `19.25σ` to `22.40σ`"* and that
+**`PO-24`'s first half is discharged by its own clause** — the strict `2σ` rule on the arm that does
+not double-count. ⇒ *That is withdrawn in full, in
+`computations/beyond_the_wall/r7823_cc66_PO24_the_joint_best_fit/RESULT.md` under `## ⛔ CORRECTION`,
+and PR #821's title and body are rewritten around the withdrawal rather than carrying the old claim.*
+
+**`60` ran the same computation as `r7826`, landed on `main` at 15:10 yesterday, and you have already
+merged it and rewritten P15's joint-fit paragraph around it.** I had read `r7820`, where `60` named
+the joint best fit as UNRUN, and took it. `60` took it too, at the same time.
+
+### ⒝ And `r7826` does not duplicate my run — **it corrects it**
+
+`60` tested **two** configurations where I tested **one**, and the one I did not test is the one the
+paper adjudicates:
+
+| configuration | `60`'s `r7826` (150 bandpowers) | mine (142 points) |
+|---|---|---|
+| the row-harness ratio, `r ≈ 1.09` | tilt `27.38σ`, own refit `+631.37` — **a LIMIT**, on `ω_b`'s upper and `ω_c`'s lower bound | `22.40σ`, own refit `+372.87`, same pathology |
+| the endpoint `sec:coherence` adjudicates, `r = 0.9918` | tilt `+3.30σ`, own refit **`Δχ² = −1.2926` → NOT EXCLUDED** | ⛔ **NOT TESTED** |
+
+⇒ *** **The statistic that decides is a REFIT, not a tilt distance.** A five-parameter refit absorbs
+the WHOLE of the adjudicated endpoint's `3.30σ`. A tilt distance read on a fitted baseline is still a
+fixed-cosmology number — which is exactly what my `22.40σ` is. It prices the configuration the row's
+harness uses, and **pricing that configuration is not discharging the row.** I should not have
+written that it was, and the error is mine and not an inheritance. ***
+
+### ⒞ What my run IS worth, stated at its real size
+
+An **independent reproduction of one of `r7826`'s two configurations on a differently built arm** —
+142 points against 150 bandpowers, its own window-support selection. The two arms were built
+separately and agree:
+
+| | `r7826` | mine | against `r7820`'s unfitted control |
+|---|---|---|---|
+| sky's fitted tail tilt | `−0.000294 ± 0.003469` | `−0.000500 ± 0.003527` | `−0.020658 ± 0.003782` |
+| Planck `1000–1500`, out of sample | `1.4346`/bin | `1.387`/bin | `5.0`/bin |
+| Planck `1500–1760`, out of sample | `1.4676`/bin | `1.351`/bin | `9.6`/bin |
+
+⇒ *** The last two rows are the ones I would keep if I could keep only two: **both arms
+independently confirm that the paper's footing is real** — the baseline is a FIT and no longer a
+normalisation, measured on bins that enter neither block. And the two fitted tilts agree to a fifth
+of their own error bar. *That* is the result, and it is a cross-check rather than a discovery. ***
+
+### ⒟ A second, smaller correction inside the same run
+
+`r7823` reported the CR arm's `A_s9` *"on the wall at `3.0`"* as one of **three** boundary
+pathologies. ⛔ **It is not a pathology.** `block_chi2` profiles one amplitude per block
+analytically, so a common scale is **exactly marginalised** and `A_s9` carries no information on this
+arm at all — it is a degenerate direction drifting to its box edge. `60` saw this and held `A_s9` at
+`2.1` throughout; I let it float and then read its drift as physics. ⇒ *The two real bounds are
+`ω_b` and `ω_c`, which are **exactly the two `60` found** — so once the degenerate direction is
+discounted, the wall structure of the two arms matches as well as everything else does.*
+
+### ⒠ Registered and running: `r7827`, the cross-check `r7826`'s own number asks for
+
+**`r7826`'s "NOT EXCLUDED" rests on `Δχ² = −1.2926` on 150 bandpowers.** A number that small does
+not measure a preference — it says two models are level — and whether it reads mildly negative or
+mildly positive is the kind of thing that can turn on **how the arm was built**. `r7826` has one arm.
+This seat has an independently constructed one, already validated against it in ⒞.
+
+⇒ *So `r7827` refits the adjudicated endpoint on my arm at `α = 1.0` and at the paper's own
+`α = 1.70`, with `A_s9` held at `2.1` and **`r = 0.9918` and `α = 1.70` PARSED out of
+`corpus/CR_cosmology.tex` with `r7826`'s own two spans** — both verified to match before the fits
+launched, so the receipt moves if the paper moves.* **`PREDICTION.md` was committed and pushed alone,
+before a line of the computation existed**, and its registered negative is stated as the loud
+outcome: *if `Δχ² > +4.0` on this arm, `r7826`'s verdict is **arm-dependent** and the paragraph you
+have just written needs a scope line.* I report that outcome as loudly as the confirming one.
+
+### ⒡ ⚑ TWO THINGS THAT ARE YOURS AND ARE ROUTED, NOT ACTED ON
+
+1. **A row collision, and a rule it suggests.** `60` naming a step unrun in `r7820` is not the same
+   as that step being free, and from my side there was no way to see `r7826` in flight. **Row
+   assignment is yours.** ⇒ *If you want it, the cheap fix is that a seat taking an open-frontier row
+   pushes its `PREDICTION.md` **first** and the registering commit is the claim — which is already
+   the rule for computations, so it would cost nothing to read it as a claim on the row too. I have
+   no standing to make that a rule; I can only say the collision was real and would recur.*
+2. **`PO-24`'s discharge clause.** If `r7827` confirms `r7826`, **the row's first half is not
+   dischargeable by a tilt distance at all** — not at `22.40σ`, not at `27.38σ` — because the
+   deciding statistic is a refit and the refit absorbs the adjudicated endpoint whole. ⇒ *The clause
+   wants rewriting in terms of a refit. `THE_REGISTER.md` is yours to change; I have changed nothing
+   in it and registered in `r7827` ⑥ that in that case I report **no sigma as a verdict.***
+
+*Everything above is committed and pushed on `claude/shadow-of-existence-setup-5tjf0b`, PR #821.
+`r7827`'s four refits are mid-flight; its results, receipt and INDEX row follow in `.2`.*
+
+
 ## r7821+cc66.4 — the branch's six live reds are ONE root in `L550 Y8`, and here is the whole chain measured link by link
 
 **Amends `r7821+cc66.3`, which named only the first two links.** The plain
