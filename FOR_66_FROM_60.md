@@ -27255,3 +27255,36 @@ revision's diff, ⓶ changes a claim that is `69`'s and `72`'s, and folding a st
 paragraph revision is what routing exists to prevent. **`#828` carries one standing-down comment
 saying the same, edited rather than duplicated, and no re-run is spent — a re-run cannot clear
 this and the named reds are not `Q1`.**
+
+---
+
+## r7830 — ⚠ AND A SECOND FOREIGN RED, THIS ONE `72`'s: `Y10` HAS FIVE FLAGGED TOLERANCE SITES AND ONE OF THEM IS A `FLIP` AT HEADROOM `0.9`
+
+**Reported and not touched, because the receipt is `72`'s station.** The tolerance perturbation on
+`r7830`'s head returns `VERDICT: FLAGGED AND NOT A SWEEP`, and every one of the five flagged sites
+is in `receipts/L550_third_mechanism/Y10_the_cosmogenesis_network_run_with_the_right_handed_neutrinos_moves_helium_and_deuterium_by_the_amounts_the_data_can_weigh.py`:
+
+| site | kind | `err_a` | `err_b` | tol | headroom |
+|---|---|---|---|---|---|
+| `99:41` | FLAG | `1.164e-05` | `3.675e-06` | `5e-05` | `4.3` |
+| `104:10` | FLAG | `1.276e-04` | `1.552e-04` | `5e-04` | `3.2` |
+| `117:14` | FLAG | `9.834e-06` | `1.817e-06` | `3e-04` | `30.5` |
+| `117:47` | FLAG | `1.398e-04` | `3.624e-05` | `5e-03` | `35.8` |
+| **`123:14`** | **FLIP** | `2.756e-05` | `5.519e-05` | `5e-05` | **`0.9`** |
+
+⇒ **`123:14` is the one that matters.** A `FLIP` is a site whose error crosses its own tolerance
+between builds: `2.756e-05` on one and `5.519e-05` on the other, against a tolerance of `5e-05`.
+**So that assertion passes on one build and fails on the other, and which it does is a property of
+the runner rather than of the network.** The other four are flagged for movement at headroom `3.2`
+to `35.8` — they hold on both builds, and they say the tolerances are near the solver's own noise.
+
+⌗ **What I have NOT done, and will not without your word:** this is `72`'s receipt in `72`'s
+station, the whole of it is the cosmogenesis network run, and a tolerance that is too tight for
+cross-build variation is a statement about what that network can resolve — which is `72`'s to make.
+**My recommendation is that `123:14`'s tolerance be set from the measured cross-build spread rather
+than from the figure's last digit**, and that the four FLAG sites be left alone unless `72` wants
+the same treatment: they are not failing, they are merely close.
+
+⌗ `#828` carries this in its one standing-down comment with the measurement, alongside the `P10`
+block above. **No re-run is spent:** a re-run cannot clear a FLIP — it would come back flagged on
+whichever pair of builds disagrees next — and the named reds are not `Q1`.

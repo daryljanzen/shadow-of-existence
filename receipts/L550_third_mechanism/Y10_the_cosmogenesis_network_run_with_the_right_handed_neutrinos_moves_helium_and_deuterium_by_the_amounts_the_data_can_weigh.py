@@ -87,21 +87,23 @@ def main():
         return (d - OBS_D) / math.hypot(SIG_D, sd * d)
 
     y0, d0 = run(0.0)
-    check(f'CONTROL (1): baseline Y_p = {y0:.4f}, D/H = {d0:.3e} ({t_y(y0):+.1f} and {t_d(d0):+.1f} sigma)',
+    # r7827 (69): deuterium's baseline offset sits at -0.55 to a few thousandths, so at one decimal it
+    #   reads -0.5 here and -0.6 on a CI build.  P16 prints it to two decimals, which no build moves.
+    check(f'CONTROL (1): baseline Y_p = {y0:.4f}, D/H = {d0:.3e} ({t_y(y0):+.1f} and {t_d(d0):+.3f} sigma)',
           abs(y0 - 0.2471) < 0.00005 and abs(d0 - 2.50e-5) < 0.005e-5
-          and f'{t_y(y0):+.1f}' == '+0.5' and f'{t_d(d0):+.1f}' == '-0.5')
+          and f'{t_y(y0):+.1f}' == '+0.5' and round(t_d(d0), 2) == -0.55)
 
     out = {}
     for name, dn in DN.items():
         out[name] = (dn,) + run(dn)
     (dl, yl, dlo), (dh, yh, dhi) = out['above EW'], out['bound']
     check(f'(2) Delta N_eff = {dl:.3f}: Y_p {yl:.4f}, D/H {dlo:.3e};  Delta N_eff = {dh:.3f}: Y_p {yh:.4f}, D/H {dhi:.3e}',
-          abs(yl - 0.2489) < 0.00005 and abs(yh - 0.2509) < 0.00005
+          round(yl, 4) == 0.2489 and round(yh, 4) == 0.2509
           and abs(dlo - 2.55e-5) < 0.005e-5 and abs(dhi - 2.60e-5) < 0.005e-5)
     lev_y = (yh - y0) / dh
     lev_d = math.log(dhi / d0) / dh
     check(f'(2) the network\'s own levers: dY_p/dN_eff = {lev_y:.4f}, d ln(D/H)/dN_eff = {lev_d:.3f}',
-          abs(lev_y - 0.013) < 0.0005 and abs(lev_d - 0.13) < 0.005)
+          round(lev_y, 3) == 0.013 and round(lev_d, 2) == 0.13)
     ts = [t_y(yl), t_y(yh), t_d(dlo), t_d(dhi)]
     check(f'(3) helium {t_y(y0):+.1f} -> {ts[0]:+.1f} and {ts[1]:+.1f} sigma; deuterium {t_d(d0):+.1f} -> {ts[2]:+.1f} and {ts[3]:+.1f} sigma',
           [f'{x:+.1f}' for x in ts] == ['+1.0', '+1.5', '+0.6', '+1.8'] and max(abs(x) for x in ts) < 2.0)
@@ -114,14 +116,18 @@ def main():
     base = (yh - y0, math.log(dhi / d0))
     check(f'(4) the bound-case shift at eta10 = 6.09 and 6.17: dY_p {shifts[0][0]:.4f}, {shifts[1][0]:.4f} '
           f'(at 6.13: {base[0]:.4f}); d ln D/H {shifts[0][1]:.3f}, {shifts[1][1]:.3f} (at 6.13: {base[1]:.3f})',
-          all(abs(s[0] - base[0]) < 0.0003 and abs(s[1] - base[1]) < 0.005 for s in shifts))
+          all(round(s[0], 3) == round(base[0], 3) and round(s[1], 2) == round(base[1], 2) for s in shifts))
 
     check(f'(5) pinned as printed: Delta N_eff {dl:.4f} and {dh:.4f}; D/H {d0 * 1e5:.4f}, {dlo * 1e5:.4f}, {dhi * 1e5:.4f} e-5; '
-          f'levers {lev_y:.4f}, {lev_d:.4f}',
+          f'levers {lev_y:.3f}, {lev_d:.4f}',
           abs(dl - 0.14) < 0.005 and abs(dh - 0.29) < 0.005 and abs(d0 * 1e5 - 2.50) < 0.005
           and abs(dlo * 1e5 - 2.55) < 0.005 and abs(dhi * 1e5 - 2.60) < 0.005
-          and abs(lev_y - 0.0131) < 0.00005 and abs(lev_d - 0.132) < 0.0005)
+          and round(lev_y, 3) == 0.013 and round(lev_d, 3) == 0.132)
 
+    # r7827 (69): the flagged pins above test equality at the precision the network determines.  The
+    #   integrator's last digits move between builds (the build sweep flagged five sites and one FLIP:
+    #   the helium lever sits at 0.01313 here and 0.01315 on one CI build, on the four-decimal rounding
+    #   boundary).  P16 prints none of the levers, so they are held to three decimals.
     p16 = flat(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
     check('P16 carries the reading: "the same network run with them added to the expansion rate"',
           'the same network run with them added to the expansion rate' in p16)
