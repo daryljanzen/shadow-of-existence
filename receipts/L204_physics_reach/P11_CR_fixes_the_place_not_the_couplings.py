@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""P11 -- L-803 narrowed from the corpus: CR gives the right-handed neutrino a PLACE in the grading and
+"""⌛ SUPERSEDED (r7823, 69) BY L550 Y9: on the left-right reading the substrate's parity fixes the right-handed
+neutrino's charges, so it couples to the right-handed W, is thermalized, and if light adds Delta N_eff 0.14 to 0.29
+(P15).  What follows records the corpus before that reading, and its checks hold on today's text as stated.
+
+P11 -- L-803 narrowed from the corpus: CR gives the right-handed neutrino a PLACE in the grading and
 no INTERACTIONS, N_eff counts THERMALIZED species, so the standard value is consistent with CR's nu_R
 and CR makes no N_eff prediction at all.  The owed sentence changes shape.
 
