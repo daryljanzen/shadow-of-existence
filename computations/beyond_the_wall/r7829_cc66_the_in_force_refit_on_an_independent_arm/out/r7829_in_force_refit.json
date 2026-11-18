@@ -1,0 +1,31 @@
+{
+  "as9": 2.1,
+  "chi2": 111.00274760355126,
+  "chi2_lcdm": 114.83701334304715,
+  "dchi2": -3.8342657394958906,
+  "edge": [],
+  "estimators_apart": 0.23467438271393348,
+  "lD": 1489.5783,
+  "n_points": 142,
+  "nfev": 160,
+  "nfev_inbounds": 160,
+  "predictions": {
+    "(1) REGISTERED NEGATIVE did NOT fire (it fires if Delta chi2 > 0)": true,
+    "(1) THE DISCHARGE: the sign reproduces, Delta chi2 < 0": true,
+    "(2) it reproduces in SIZE: |Delta chi2 - (-2.3697)| < 2.0": true,
+    "(3) INTERIOR: no parameter on a box edge": true,
+    "(4) the two arms land on the same point: |dH0| < 2.5, |dn_s| < 0.025": true,
+    "(5) the two lD estimators are different objects, apart by > 0.3": false,
+    "PRECONDITION the LCDM reference is r7827's, within 0.5": true
+  },
+  "r": 0.9918,
+  "r7827_pertrial_dchi2": -3.599591356781957,
+  "r7828_dchi2": -2.36972560954473,
+  "reproduces": true,
+  "x": [
+    67.74072389223409,
+    0.022205931284385735,
+    0.11823676055893229,
+    0.9621359709424759
+  ]
+}
