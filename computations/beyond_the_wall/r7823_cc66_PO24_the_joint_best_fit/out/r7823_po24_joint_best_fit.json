@@ -1,0 +1,45 @@
+{
+  "cr_at_wall": [
+    "ombh2=0.026000 at [0.018,0.026]",
+    "omch2=0.090297 at [0.09,0.16]",
+    "As9=2.999383 at [1.5,3.0]"
+  ],
+  "cr_chi2": 486.0439250341308,
+  "cr_x": [
+    83.97774242390997,
+    0.025999997031252765,
+    0.09029742757557307,
+    2.9993832376955654,
+    1.133790551142528
+  ],
+  "distance_sigma": 22.40115752623063,
+  "l_D": 1368.3029141188429,
+  "lcdm_chi2": 113.17391783140775,
+  "lcdm_x": [
+    69.734909084576,
+    0.022833790881967138,
+    0.11471231919647543,
+    2.311756619089003,
+    0.9814262087538157
+  ],
+  "n_points": 142,
+  "per_bin": {
+    "1000_1500": 1.3867092299108013,
+    "1500_1760": 1.350645688414357,
+    "1760_2200": 0.9677731363582902
+  },
+  "predictions_falsified": [],
+  "predictions_held": [
+    "\u2460 the LCDM best fit brings Planck 1000-1500 below 2.0 per bin, OUT OF SAMPLE",
+    "\u2461 the sky's fitted tail tilt stays small, |tilt| < 0.05",
+    "\u2462 the signature's own tilt lands in 0.06 <= |dn| <= 0.13",
+    "\u2463 \u26a0 THE RISKY ONE: the distance stays above 6 sigma",
+    "\u2464 the refit does NOT absorb the signature: LCDM beats the CR arm by chi2 > 20",
+    "\u2465 the best fit sits near Planck's point: |dH0| < 3.0 and |dns| < 0.03"
+  ],
+  "r_ratio": 1.0870207983201994,
+  "signature_tilt": -0.0795000000000573,
+  "signature_tilt_cr_point": -0.05300000000006022,
+  "sky_sigma": 0.003526603476069764,
+  "sky_tilt": -0.0005000000000660032
+}
