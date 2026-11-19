@@ -274,6 +274,7 @@ PINS = {
     "CIRS, mass inside r_t, 2.19": abs(CIRS['M_t_over_M200_reaching'] - 2.19) < 0.00500,
     "its error, 0.18": abs(CIRS['M_t_over_M200_reaching_err'] - 0.18) < 0.00500,
     "CIRS over all clusters, 1.97": abs(CIRS['M_t_over_M200_all'] - 1.97) < 0.00500,
+    "its error, 0.10": abs(CIRS['M_t_over_M200_all_err'] - 0.10) < 0.00500,
     "CIRS sample size, 72": CIRS['n'] == 72,
     "CIRS r_t, 4.96 r200": abs(CIRS['r_t_over_r200_reaching'] - 4.96) < 0.00500,
     "the X-ray groups, 2.4": abs(XGROUPS['M_t_over_M200'] - 2.4) < 0.05000,
