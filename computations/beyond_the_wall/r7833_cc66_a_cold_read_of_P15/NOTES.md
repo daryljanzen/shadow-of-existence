@@ -115,6 +115,23 @@ Recorded because each one nearly became a wrong "fix", and guard `⑤` is what s
 | `377` | the radiation-to-matter ratio `$2r_N/r$` is `$2$` at the seam, `$2^{2/3}$` at the turnaround | forces the turnaround to `$2^{1/3}r_N$` ✓ self-consistent |
 | `402` | exponent `$\simeq1.6\times10^{2}c_s/c$` ⇒ `$e^{-1.6}$` at one per cent, `$e^{-16}$` at ten | `1.60` and `16.00` ✓ |
 
+## Arithmetic verified in `§envelope`–`§isw` (625–800) and `§refit-bound`'s opening (856–1010)
+
+Every sentence that prints two figures which must agree, checked. **All eleven MATCH.**
+
+| line | claim | check |
+|---|---|---|
+| `683` | `$r_s=146.4$` Mpc against `$145.4$`, *"within `0.7\%` of each other"* | `0.688\%` ✓ |
+| `693`–`695` | at `$r=0.992$` a rise of *"about three per cent at `$\ell_D$` and six at `$1.5\ell_D$`"`; at `$r=1.023$` *"a fall of eight and sixteen"* | `exp[-1.70(\ell/\ell_D)^2(r^2-1)]` gives `2.75`/`6.29` rise and `7.61`/`16.30` fall — **all four as stated** ✓ |
+| `712` | *"the cosmology's content is `$21.7\%$` radiation"*, `$\rho_r/\rho_m=0.2765$` at `$z=1088$` | `0.2765/1.2765 = 21.66\%` ✓ |
+| `876` | the first peak spans `$148$` to `$228$`, *"a factor of `$1.541$`"* | `1.5405` ✓ |
+| `900` | `$2.1969$` against a standard code's `$2.2043$`, *"agreement to `$0.34\%$`"* | `0.336\%` ✓ |
+| `907` | the height ratio `$2.721$` at an `$\ell$`-equivalent cutoff of `$900$` to `$2.393$` at `$2400$` | matches the corpus's own `KFAC` guard record ✓ |
+
+⌗ *The suppression quartet at `693`–`695` is the strongest single piece of evidence that the
+one-rate landing was carried through properly: four figures, two configurations, one formula, and
+every one reproduces at `\alpha=1.70` from the ratio the sentence names.*
+
 ## Still to read
 
 `§what-crosses` (317) and `§coherence` (436) onward — including `sec:refit-bound` (`856`–`2515`),
