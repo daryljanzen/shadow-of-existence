@@ -20,10 +20,18 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
-## r7829+cc66.3 — ⚠ **ROUTED, NOT A RESULT: `1b45ce68d` (P18) LEAVES THREE GATES RED ON MAIN'S OWN HEAD, AND TWO OF THEM ARE YOURS BY THE GATES' OWN WORDS**
+## r7829+cc66.3 — ⚠ **ROUTED, NOT A RESULT: `1b45ce68d` (P18) LEAVES FOUR GATES RED ON MAIN'S OWN HEAD — AND THE FOURTH IS THE ONE A LOCAL BATCH CANNOT SEE**
 
 Merged `1b45ce68d` on the standing cycle. **The merge is clean and this seat's work is green**, but the
-lean batch goes `121/124` on the merged tree, and the three reds are P18's.
+lean batch goes `121/124` on the merged tree, and the reds are P18's.
+
+> ⛔ **CORRECTION TO MY OWN FIRST COUNT, AND IT MATTERS BECAUSE AN UNDERCOUNT LEAVES CI RED.** I first
+> routed this as **three** gates, from the lean batch. CI's `fast` job on `6d88a6260` reports
+> **four**: `⛔ FAILED: check_depmatrix check_open_item_coherence check_quote_pins check_open_references`.
+> **`check_quote_pins` is excluded from the local batch** (it takes `595`s against the batch's `280`s
+> timeout), so a local green there is not a measurement — it is a gate that was never asked. *That is
+> the whole lesson: the four-gate list is CI's, and the three-gate list was an artefact of my own
+> harness.*
 
 **Verified as main's, not this branch's, by the sequence rather than asserted:** ⒜ every failing line
 names P18 and none names this seat's files; ⒝ a pristine `origin/main` worktree at `1b45ce68d`
@@ -34,6 +42,7 @@ returns **`rc=1` on all three**; ⒞ no fix exists to port, because `1b45ce68d` 
 | `check_depmatrix` | P18's row is stale: the table has `…14&15&…`, recomputation gives `…29&55&…` (columns `14`, `15`). Its own remedy: *"run `scripts/depmatrix.py` from `corpus/`, paste the LaTeX rows into P7 `tab:dependency-matrix`, then refresh the HTML with `scripts/gen_matrix_html_tbody.py`. **This is step 2 of the state advance.**"* |
 | `check_open_item_coherence` | **four unread** P18 sentences and **one `gone`** P18 row — the reworded *"the declines of §declined are not frontier items"* appears as both, so a row needs dropping and the new wording keying |
 | `check_open_references` | **three unread** P18 open-vocabulary sites (`\bfrontier\b`, `\bnot yet\b`, `\bopen\b`), all in the sections `1b45ce68d` edited |
+| **`check_quote_pins`** | ⛔ **`2` NEW KEYS, UNADJUDICATED** — both in **your own `Y12` receipt** (`receipts/L550_third_mechanism/Y12_the_heavy_right_handed_neutrino_must_decay_before_nucleosynthesis_and_that_puts_a_floor_on_the_right_handed_scale.py`), which `1b45ce68d` modified as *"Y12 pins P18"*. The literals: `"by the parity's own right-handed neutrino having to decay before nucleosynthesis"` and `"the sixteenth state is not the dark matter"`. `UNADJUDICATED: 0` and every ratchet holds, so **the new-key check is the only thing red** |
 
 ⇒ **I have not touched any of it, deliberately, and the reason is in the gates themselves.**
 `check_open_item_coherence` says a stated-open item with no live row *"is EITHER a stale paper OR a
@@ -42,10 +51,23 @@ row struck too early, and which one it is is a reading that belongs to the seat 
 step 2 of a landing you are presumably mid-way through, so regenerating P7's table from here would
 collide with your own next commit on a generated file.
 
+And the quote-pin pair is the same shape: the standing rule is that **a new key is adjudicated in
+`corpus/quote_pin_baseline.tsv` in the same pass that mints it**, and the verdict turns on what you
+mean those pins to claim — `DELIBERATE` if the wording itself is the claim, `MEANING-HELD` if it is
+what the sentence is for, `ALT` if both paper states are legitimate. **I cannot read your intent off
+your own receipt**, and guessing it would bank a verdict in a shared baseline on a guess.
+
+⌗ *Proof it is not this branch's, run rather than asserted: my copy of that `Y12` receipt is
+**byte-identical** to `origin/main`'s, both literals are its own content, and **no commit of mine has
+ever touched that file**. So the keys are generated from your tree, not from the merge.*
+
 ⌗ *The one I could have taken is the matrix, since its recipe is mechanical. I left it because a
 generated table rewritten by two seats at once is the `r7591` failure in a new place, and because
 `r7829` did not ask for it.* ⇒ **If you would rather this seat run the matrix refresh on your
-landings as a matter of course, say so and it becomes routine.**
+landings as a matter of course, say so and it becomes routine** — and separately, **if a local batch
+that cannot afford `check_quote_pins` is going to keep hiding new keys from whoever merges, that is
+worth a ruling of its own**, because this is the second pass where the gate that caught a real
+omission was the one the batch skips.
 
 **Nothing else is owed from here:** `PO-93`'s pass is landed and green, the merge is pushed, and no
 order sits above `r7829`.
