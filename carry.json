@@ -1115,6 +1115,17 @@
    }
   }
  },
+ "claude/youthful-darwin-xvkwh7": {
+  "suite": {
+   "receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py": {
+    "gates": [
+     "P# keeps eta apart: \"the same standard"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44572957889",
+    "since": "ab8019ed5c99bdca4533d402f7750e67e3d556a9"
+   }
+  }
+ },
  "main": {
   "suite": {
    "receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py": {
