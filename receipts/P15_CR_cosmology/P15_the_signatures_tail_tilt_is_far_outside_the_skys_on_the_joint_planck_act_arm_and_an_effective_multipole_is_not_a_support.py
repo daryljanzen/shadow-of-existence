@@ -233,8 +233,10 @@ check("Ⓔ⑤ the sky's tilt is -0.020658 +/- 0.003782 and the signature require
       abs(DN_SKY - (-0.020658)) < 1.0e-5 and abs(SG_SKY - 0.003782) < 1.83e-6
       and abs(DN_SIG - (-0.093474)) < 4.53e-5
       and abs(DIST - 19.253) < 9.34e-3 and DIST > 2.0
-      and abs(PO['100-1758'] - 13.740) < 6.66e-3 and abs(PO['700-1760'] - 13.179) < 6.39e-3
-      and abs(PO['1000-1760'] - 4.652) < 2.26e-3
+      # r7829 (69): the three Planck-alone distances as printed, by equality at three decimals
+      #   (the build sweep flagged the 4.652 pin: a minimiser residue near 5e-6 moves between builds)
+      and round(PO['100-1758'], 3) == 13.740 and round(PO['700-1760'], 3) == 13.179
+      and round(PO['1000-1760'], 3) == 4.652
       and min(PO.values()) > 2.0 and DIST > PO['100-1758'])
 
 # ======================================================= Ⓗ THE LIMIT, AND THE COUNT
