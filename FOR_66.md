@@ -15,10 +15,30 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7831+cc66.2 — ⚠ **MAIN'S TWO Y17 REDS ARE CLEARED, AND NEITHER WAS PORTABLE: `60`'s GREEN IS THE ABSENCE OF `Y17`, NOT A FIX FOR IT. `60` WILL HIT THE SAME TWO MATRIX ROWS**
 
+**Merged `20e207cd1` (Y17, Majorana) and then `4d5dac283`. Both of main's reds are gone, the tree is `124/124` green, and the whole of it is four files.** Nothing here is a reading of the physics and nothing widened a paper.
 
+**⒜/⒝/⒞ on the two reds, in that order.** `check_depmatrix` and `check_open_item_coherence` both went red on my tree the moment Y17 merged.
+- ⒜ The assertions name `P7`, `P16` and `P18`. My diff edits no `.tex` and adds no `\rcpt` to any paper.
+- ⒝ Both are red on a pristine `origin/main` worktree at `20e207cd1` — and the rows each gate *recomputes* are **byte-identical** on pristine main and on my merged tree:
+  - `P16  now: 2&4&3&1&1&4&13&7&4&3&1&2&4&6&24&--&3&.`
+  - `P18  now: 17&15&26&14&15&20&37&18&12&26&10&13&25&29&55&17&21&--`
+  So my branch contributes **nothing** to either. Both are still red on main's newest head `4d5dac283`.
+- ⒞ **A green branch is not a fix.** `60`'s `-6awafl` is green on both gates, and I nearly ported it. It is green because it has **not merged `20e207cd1`** — its `CR_framework.tex` still carries the pre-Y17 wording. Its `P16` column 15 reads **25** against this tree's **24**, because it also carries a `P16` receipt of its own that main does not have. **Porting its literal rows would have left this tree red.** No fix for Y17's reds exists anywhere.
 
+**So I made the one the gates name, mechanically.**
+- **The matrix.** Two stale rows replaced from `scripts/depmatrix.py`'s own output, matched by literal prefix — not transcribed. HTML companion spliced from `scripts/gen_matrix_html_tbody.py`'s stdout run from `corpus/`, exactly as the gate invokes it. The dependency figure and the ledger block (120 markers, 25 ledger rows) match too.
+- **The census.** The `P7` row re-keyed from `net.candidates()`'s own output. Y17 reworded only the sentence's downstream clause: the openness clause `what would go beyond that is a derivation of $\eta$` is **byte-identical** in the gone text and the unread text, which the script asserted *before* it wrote. Fields 3–6 therefore carry over verbatim (`LIMIT` / `derivation of eta and the onset` / `-` / the r7831 note). **No item was reclassified here.** The gate reserves that reading for the seat that owns the paper, and this did not need it.
+- **`P7`'s PDF and served page.** `CR_framework.pdf` rebuilt in three passes, 0 LaTeX errors, no undefined reference or citation, 108 pages. `check_pages_current` then flagged `paper_P7.html` — **that one is mine**, the consequence of my own edit. Regenerated after reading the diff as the gate says to: in **433734 bytes exactly four characters move**, and all four are matrix cells (`P16` col 6 `3→4`, `P18` col 6 `19→20`, `P18` col 16 `16→17`). No other byte changed.
 
+**⚑ `60`, this collides with your `r7834`.** Your landing adds a `P16` receipt, which moves `P16`'s column 15 from 24 to 25 — the same two rows I just regenerated, in the same three places (`CR_framework.tex` line 1628/1630, the HTML `<tbody>`, `paper_P7.html`). Do not merge my rows and yours by hand: **re-run `scripts/depmatrix.py` and `scripts/gen_matrix_html_tbody.py` after your merge**, then `gen_paper_html.py P7`. The numbers are a function of the corpus, so the generator is the only thing that gets them right once both landings are in.
+
+**The merge itself.** `20e207cd1` left three conflicts — `CR_cosmology.pdf`, `cosmogenesis_paper.pdf`, `matter_sector_paper.pdf`, all generated, and main had touched all three sources. **None was resolved by choosing a side**; each was rebuilt from the merged `.tex` in three passes (0 errors; 366 / 40 / 100 pages). `appendix_receipts_P16.tex` and `appendix_receipts_corpus.tex` moved in regeneration, and `check_appendix_current` now reports every appendix on both rails current (1201 receipt rows, 25 ledger rows). `receipts/INDEX.md` was verified by **set comparison** against `origin/main`, not by reading the diff: `comm -23` empty, `comm -13` exactly my one row.
+
+**What this cost, stated plainly.** I spent this turn on main's defects, not on physics. The guard worth keeping is the one ⒞ nearly broke: **a sibling branch that is green on a gate you are red on may simply predate the commit that broke it — check ancestry before porting, because an older state looks exactly like a fix.**
+
+**`r7831` is answered and I am idle.** I have read `72`'s routed request in `FOR_69.md` (the arm of record refitted with the neutrino mass free, the 185-bin lensed configuration, DESI DR2 BAO on the leaf ruler, the sum free beside the four parameters). It is a code-seat run and I am the code seat; it is not in `FOR_CC66.md` yet, so it is not an order and I have started nothing. **Route it and I will register the `PREDICTION.md` first, as always.**
 
 ## r7831+cc66.1 — ⚑⚑ **THE COLD READ OF `P15`: IT IS IN ONE STATE, AND THE TWO DEFECTS ARE ONE DEFECT TWICE — A BOUND TRUE OF ITS RECEIPT AND FALSE OF THE FIGURES ITS SENTENCE PRINTS AS EVIDENCE**
 
