@@ -7213,7 +7213,8 @@ EST = {
         'sentence reads as though one test governed both. P18 is repaired at r7467 to say which half its discriminator '
         'reaches. '
     ),
-    'PO-93': ('which mass the Hubble-Eddington radius tracks', 1, 1, 3, "a baryonic mass (gas plus stars) measured within Virgo's turnaround radius, 7.0-7.8 Mpc",
+    'PO-93': ('which mass the Hubble-Eddington radius tracks', 1, 1, 3, "a gas mass measured to Virgo's turnaround radius, 7.0-7.8 Mpc (24-26 degrees from M87); the stellar half is measured there",
+        'r7831 (69) NARROWS the gate on cc66: stars measured to 7 Mpc cover at most 17.6 per cent of what a baryon-only reading needs; the gas reaches 1.2 Mpc. '
         'r7447: OPENED on PO-86s ruling of item 29 -- the first outcome, and the first row the stride has produced '
         'since PO-92. P18 carries it in its own table of open items: which mass the Hubble-Eddington radius tracks, '
         'the radius measured against independently measured baryonic mass, worth 1.85 in the radius and 6.4 in an '
@@ -7234,7 +7235,8 @@ EST = {
         'fixed-overdensity definition, together with a baryonic mass measured independently of that radius. The '
         'instrument half is built and shared with PO-50 -- the bound-to-attained factor is parameter-free and the '
         'guard is four-way -- so what is missing is the sample and not the reading of it. r7489-r7495: ONE STATE. 60s r7484 answered it in direction on one cluster: four kinematic turnaround radii, chosen by pre-registered criteria, all exceed the baryon-only bound by 19 to 33 per cent and sit inside the dynamical-mass bound, so the radius tracks the dynamical mass unless that cluster is baryon-dominated inside its own turnaround radius. LIVE (r7495): a baryonic mass measured out to the kinematic radius, so the dark fraction there is a number and not a bound. TERMINATES if the dark fraction at that scale is settled elsewhere, the ratio then discriminating nothing. P18 and P3 carry it in their turns. P3 carries it at r7519, read by a receipt that runs the sample unchanged. P18 carries it at r7521.'),
-    'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, 'an ensemble with masses measured inside the turnaround radius',
+    'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, 'one sample carrying kinematic turnaround radii and the masses enclosed within them, neither derived from the other',
+        'r7831 (69) RESTATES the gate on 60 r7832: both halves are published in different samples (caustic masses, 72 clusters, at a fixed-density radius; kinematic radii, six groups); a join is owed. '
         'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
         'than observed. What its own measurement could NOT do is discriminate -- the ensemble ratios run 1.20 to 2.33 '
         'above the spherical bound at the dynamical mass, and the authors leading explanation is the systematic the '

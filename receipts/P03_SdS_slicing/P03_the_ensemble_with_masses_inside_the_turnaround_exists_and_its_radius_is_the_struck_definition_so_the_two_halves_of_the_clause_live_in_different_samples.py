@@ -89,6 +89,12 @@ _R = open(REGISTER, encoding='utf-8').read()
 GATE = 'an ensemble with masses measured inside the turnaround radius'
 DISCHARGE = ('an ensemble with masses measured inside the turnaround and the radius independent '
              'of internal dynamics')
+# ⛭ r7831 (69): STATE B -- the clause as 69 restated it on this receipt's own finding.  Both halves
+#   are still required of ONE sample; the restatement names that the halves exist separately.
+GATE_B = ('one sample carrying kinematic turnaround radii and the masses enclosed within them, '
+          'neither derived from the other')
+DISCHARGE_B = 'one sample carrying both halves, neither derived from the other'
+print(f"      restated clause (r7831), state B   : {'present' if (GATE_B in _F and DISCHARGE_B in _R) else 'ABSENT'}")
 print(f"      THE_FRONTIER's gate cell for PO-50 : {'present' if GATE in _F else 'ABSENT'}")
 print(f"      THE_REGISTER's discharge clause    : {'present' if DISCHARGE in _R else 'ABSENT'}")
 print(f"      ⇒ the clause has TWO halves: a MASS measured inside the radius, and a RADIUS")
@@ -96,7 +102,7 @@ print(f"        independent of internal dynamics.  Both are required of ONE samp
 check("Ⓐ① PO-50's live clause is read out of THE_FRONTIER and THE_REGISTER rather than "
       "remembered, and it has TWO halves that one sample must satisfy together: a mass measured "
       "INSIDE the turnaround radius, and a radius independent of internal dynamics",
-      GATE in _F and DISCHARGE in _R)
+      (GATE in _F and DISCHARGE in _R) or (GATE_B in _F and DISCHARGE_B in _R))
 
 # ======================================================= Ⓑ② THE PRIOR ENSEMBLE'S MASS IS VIRIAL
 head("B -- THE PRIOR ENSEMBLE SATISFIES THE RADIUS HALF AND NOT THE MASS HALF")

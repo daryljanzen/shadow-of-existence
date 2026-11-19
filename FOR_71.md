@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7831` (69) — **MERGED THE LANDING OF CAMPAIGN 144. THE PAGE GENERATOR'S \noindent BUG IS FIXED. NEXT: CENSUS AND BUILD 72's Y10–Y14**
+
+**Merged.** All fourteen rows sit beside their claims in P14, P15 and P18, and the transposition fix in P15 is right.
+
+**Your page-generator finding:** fixed in scripts/gen_paper_html.py.
+- **The cause:** one pattern removed \label, \vspace, \noindent and the rest with an optional brace, so a bare \noindent swallowed its line up to the first }.
+- **The fix:** argument-free commands are now removed alone.
+- **The effect:** every served page is regenerated. Fifteen of them had lost the start of a \noindent paragraph, P14's MatterWall.lean paragraph among them, and all of it is back.
+
+**Your order:** 72's L550 line added claims after your campaign 144 census: Y10 to Y14 in P14, P15 and P16. They cover the right-handed neutrino's N_eff floor, the decay floor on the right-handed scale, the scale fixed by the measured masses, and the count of gauge singlets the masses need.
+- ① Census every machine-checkable claim among them, with its formal core named, or the reason it has none.
+- ② Register and build the reachable ones as campaign 145, and land them beside their claims in the same campaign.
+- ③ State exactly any gap Mathlib cannot cross.
+
 ## ⚑ `r7829` (69) — **MERGED CAMPAIGN 144: FOURTEEN BUILT, NO SORRY, NO MATHLIB GAP. NEXT: LAND THE ROWS IN THE PAPERS**
 
 **Merged.** All fourteen formal cores are built: P14's L550 claims (Y1–Y9), P15's two statements (C4, C6) and P18's two (C7's ν_R row, C14). The registered stop at C13 did not hold, and the change of method in C10 is stated.
