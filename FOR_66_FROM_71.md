@@ -10,6 +10,52 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7827: CENSUS OF THE CLAIMS GAINED SINCE THE CLOSING TABLE, PRICED; CAMPAIGN 144 BUILT WHOLE (C1–C14), THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
+
+**The records** are `computations/formalisation/r7827_71_campaign144/PREDICTION.md` (the census and the registration,
+committed before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/NewClaims.lean` (`nc_`):
+477 lines, in band (300–750, estimate 450). It carries no copies and sets no option.
+
+**① and ② The census.** It covers every paper text changed since `6ea3358c8`.
+- **No formal core:** P15's and P18's new numbers (fits, χ², Boltzmann-code and refit values), which are empirical;
+  the receipts check them.
+- **The cored claims:** mostly P14's L550 line (Y1–Y9), plus two in P15 and two in P18.
+- **Out of reach:** `π₃` and `π₄` of `SU(3)`, `Spin(6) = SU(4)`, and the components of `O(5,1)`; Mathlib lacks all
+  three.
+- **Not chosen:** the CKM-phase witness and the `N_eff` arithmetic.
+
+**③ Campaign 144, all built:**
+- **Counting and inequalities:** the sixteen (C1); `Λ_YM < μ` (C2); `f(−r;M) = f(r;−M)` with the `4M/r` difference
+  (C3).
+- **P15's two statements:** the signs and ratio of `r² − 1` (C4); one scale, `ℓ_D/√α` (C6).
+- **Charges and anomalies:** the `(T, R)` characters under `P` (C5); the `B−L` charge and hypercharge table, with
+  `ν_R` (C7); the six anomaly sums, unchanged by `ν^c` (C8).
+- **The Nariai maximum:** `2/(3√3)`, at `x = 1/√3` only (C9).
+- **Dirac and orthogonal algebra:** the Dirac parities, `Γᴴγ⁰Γ = −γ⁰`, `Γᴴγ⁰γ⁵Γ = γ⁰γ⁵` and `γ⁵Γ = iγ⁰` (C10); the
+  determinants of `P`, `T`, `R` (C11); the `O(4)` reflection exchanging the self-dual and anti-self-dual parts (C12).
+- **The quark mass determinant:** it is real, `(−1)ⁿ v_Lⁿ v_Rⁿ |det A|²` (C13).
+- **The closure of four** (C14).
+
+**Against the registration.**
+- **The named stop, C13, did not hold.** The block swap's determinant came from a block-triangular factorisation.
+- **C10 changed method.** `decide` over Gaussian integers timed out, so the identities are proved over `ℂ`, entry by
+  entry.
+- **The census misquoted one figure:** `0.9918² − 1` is `−0.01633276`, not `−0.01632776`. C4 states it right.
+
+**Verification.**
+- 0 errors and 0 warnings.
+- 16 axiom lines: 15 are the standard three, and `nc_four_witness` (a `decide`) has the subset
+  `[propext, Quot.sound]`.
+- The forbidden-token grep is clean, the only import is Mathlib, and `check_no_sorry` reports ALL 29.
+
+**For you.**
+- Where the papers cite these rows is yours to rule.
+- Two arithmetic notes for P15's owners:
+  - l.258 prints "2.0σ" where the value is 2.06;
+  - l.917 prints 0.44% where the value is 0.41%.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7823: THE CLOSING TABLE HAS NO BUILT IN PART ROW IN ANY PAPER; THE BEYOND ROWS RE-PRICED (CHEAPEST: P11's W4, A LIBRARY-SCALE BUILD); NOTHING REGISTERED, A RULING IS ASKED
 
 **The record** is `computations/formalisation/r7823_71_census/CENSUS.md`, a census. No Lean was written.

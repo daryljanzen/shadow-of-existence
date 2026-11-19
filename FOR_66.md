@@ -20,6 +20,115 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7829+cc66.1 — ⚑⚑ **IT REPRODUCES: `Δχ² = −3.8343` AGAINST `60`'s `−2.3697`, AT AN INTERIOR MINIMUM. `PO-24`'s REWRITTEN CLAUSE IS SATISFIED — THE STRIKE IS YOURS**
+
+Order `r7827`: *"refit at `r = 0.9918` with the in-force `ℓ_D = 1489.58` at exponent one… at an
+interior minimum. If it reproduces, `PO-24` is struck as decided."* **`PREDICTION.md` pushed as the
+first commit** — your `r7827` rule — after checking the sibling branches for an unmerged
+`PREDICTION.md` on this step, as that rule also requires. Six of seven registered checks held; one
+failed and its failure is the second finding.
+
+### ⒜ THE DISCHARGE
+
+| | **this arm (142 points)** | `r7828` (60) |
+|---|---|---|
+| the construction, refitted | **`111.0027`** (Planck `85.2746`, ACT `25.7282`) | `137.4859` |
+| ΛCDM on the same arm | `114.8370` | `139.8557` |
+| **`Δχ²`** | **`−3.8343`** | **`−2.3697`** |
+| `H0` | `67.7407` | `67.3934` |
+| `n_s` | `0.962136` | `0.959284` |
+| minimum | **INTERIOR** — `160` of `160` evaluations in bounds, no box edge | `edge: []` |
+
+⇒ *** The two `Δ`s are apart by **`1.4646`**, inside the `±2.0` I registered **before** running, and
+the two separately built arms land on one point — `H0` to `0.35`, `n_s` to `0.003`. **So the clause
+as you rewrote it is satisfied.** ⌗ *The interior result matters on this row specifically: the
+geometric-part ratio's minimum sits on `ω_b`'s upper and `ω_c`'s lower bound on **both** arms, which
+makes that figure a limit — this one has no edge, so `−3.8343` is a value.* ***
+
+⛔ **AND IT IS NOT MORE THAN THAT.** I registered ⑥ before the run so a reproducing result could not
+be inflated: ⇒ *`−3.8343` on `142` points is **two models being LEVEL**. Not a preference for the
+construction, not a detection, not evidence it is correct. **What is discharged is the clause and
+nothing wider, and striking the row is yours — `THE_REGISTER.md` is untouched.***
+
+### ⒝ ⚠ THE ONE REGISTERED PREDICTION THAT FAILED, AND IT IS THE SECOND FINDING
+
+⑤ said the in-force and per-trial `ℓ_D` would be *"genuinely different objects, apart by `> 0.3`"* in
+the refitted `Δχ²`. **They are apart by `0.2347`** — in-force `−3.8343` against `r7827`'s per-trial
+`−3.5996`, about `6 %`.
+
+⇒ *** **The refit is almost INSENSITIVE to which `ℓ_D` estimator is used, even though the
+fixed-cosmology tilt figures were wrecked by the neighbouring exponent error.** My reasoning was
+wrong: I assumed the estimator choice would surface in the refit the way `α`'s double-count surfaced
+in the tilt. It does not, because **the refit absorbs it.** ⇒ **GUARD: measure a statistic's
+sensitivity to a nuisance choice ON the statistic that decides — never inherit it from a different
+one.** I inherited it; the measurement corrected me. ***
+
+⌗ *The failure strengthens your verdict rather than weakening it: the statistic `PO-24` now turns on
+is robust to the very choice that made the tilt numbers unreliable.*
+
+### ⒞ `60`'s CORRECTION ACCEPTED IN FULL, INCLUDING AGAINST MY OWN ROUTED FINDING
+
+`r7828` established that the exponent is already folded into the in-force `ℓ_D`. ⇒ *So `r7826`'s
+exponent-scaled penalty **and my own `r7827` counterpart are both withdrawn as double-counted**, and
+**the "arm-sensitivity" factor I routed to you in `r7827+cc66.2` ⒝ was two arms applying ONE error
+at different strengths, not two arms disagreeing.** That routed item should be struck rather than
+acted on; you have already taken the figure out of P15.* **`60`'s guard restated because it is the
+transferable part: a folded parameter is folded once.**
+
+⌗ *What `r7827` ⒜ established is untouched, and is what made this run possible at all: the two arms
+reach the same ΛCDM point to four digits in `ω_b` and truncate the geometric-part ratio on the same
+two edges.*
+
+⚑ **And the `ALT` earned its keep in the exact event it was built for.** `r7827`'s key was registered
+as a disjunction *because* its own gate asked you to reconsider the sentence it read. On the merged
+tree that receipt now reports **`STATE B` — "the paper no longer carries the bare unqualified
+penalty… Ⓓ④ is DISCHARGED, not red"**: rc=0, 8 arms, 24/24 pins. ⇒ *A bare presence pin would have
+reddened the moment you acted on my finding, and someone would have had to repair it. Thank you for
+the repoint to `r7826`'s new name — the SOURCE parse picks it up and passes.*
+
+### ⒟ TWO DEFECTS OF MINE, BOTH CAUGHT BEFORE THE PUSH, BOTH FIXED AT THE CAUSE
+
+1. ⛔ **A FAKE PIN I wrote myself.** The Planck-block figure went in as a comparison that reduced to
+   `abs(0) < 1e-12` — **always true, unable to fail** — because I never wrote the block split into
+   the banked output. ⇒ *The split is now in the JSON, the pin is a real two-sided comparison, and
+   **probe 5 perturbs that block and watches it redden**, which is the only thing that proves a
+   repair. **A pin that cannot fail is worse than no pin: it looks like coverage and supplies
+   none.***
+2. ⛔ **`check_figures_pinned` failed and was right twice over.** ⒤ Three tolerances overshot its own
+   allowance by a fraction of a per cent — `137.4859` allows `0.06874` and I wrote `0.07`; `3.5996`
+   allows `1.7998e-3`, I wrote `1.8e-3` — so **pins that existed read as absent**; tightened inside
+   the allowance. ⒥ And four numerals were printed in my INDEX row without being pinned there: the
+   **withdrawn** figures plus the exponent. *Printing withdrawn digits beside a receipt is exactly
+   what that gate is for; the row now states the withdrawal without reprinting them, and they stay
+   pinned where they are computed.* ⇒ *Baseline back at `1433` exactly, not raised.*
+
+### ⒠ WHAT LANDED
+
+`receipts/P15_CR_cosmology/P15_the_in_force_refit_reproduces_on_a_second_arm_so_po24s_rewritten_clause_is_discharged.py`
+— **7 gates, 0 FAIL, `COMPUTES:` header, 22 of 22 figures pinned by a comparison**; INDEX row at the
+end of the P15 block (9 pipes / 8 columns); appendices regenerated; `CR_cosmology.pdf` rebuilt;
+`check_appendix_current`, `check_pdf_current`, `check_figures_pinned` rc=0; lean batch **`PASS=124
+FAIL=0`**.
+
+⇒ *** **Neither side is hardcoded.** `60`'s figures are **parsed out of `r7828`'s own banked run** —
+a discharge test must not stay green against a memory of the thing it has to reproduce — and the
+ΛCDM reference is `r7827`'s banked fit **read from the bank**, not re-fitted. **`ℓ_D` is shown held
+from the SOURCE, not promised in prose:** gate ⑥ reads the theory-building function's own text and
+asserts it references the in-force constant and never calls `cr_supp`. *** **Failability: 6 probes,
+all bite**, tree restored byte-identical after each.
+
+### ⒡ ⚑ YOURS
+
+**Striking `PO-24`.** The clause is satisfied on a second, independently built arm, at an interior
+minimum, within the bound registered in advance. I have struck nothing and changed nothing in
+`THE_REGISTER.md`. ⌗ *And the one thing I would not want carried further than it goes: this
+discharges the clause, not the physics — `−3.8343` is level, and ⑥ was registered so that would be
+said out loud whichever way the number fell.*
+
+*Committed and pushed on `claude/shadow-of-existence-setup-5tjf0b`, PR #826 (draft). PR #821 merged
+whole.*
+
+
 ## r7827+cc66.2 — ⚑ **`60`'s VERDICT IS ARM-INDEPENDENT, AND ONE OF ITS NUMBERS — THE ONE `sec:coherence` PRINTS — IS NOT: `9.02` READS `1.0569` ON A SECOND ARM**
 
 Registered and run as the cross-check `r7826`'s own deciding figure asks for. **`PREDICTION.md` was pushed
