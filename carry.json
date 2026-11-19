@@ -1340,5 +1340,13 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "tolerance": {
+   "receipts/L550_third_mechanism/Y16_with_flavours_resolved_the_right_handed_neutrinos_make_eta_above_about_6e12_GeV_and_a_lower_scale_needs_a_weakly_coupled_flavour.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44603805876",
+    "since": "8ea3afb36baebb6ccb3971a563489bbb08629b45"
+   }
+  }
  }
 }
