@@ -19,7 +19,7 @@ Computed here:
       Y16): of the draws that land the measured splitting ratio, normal ordering outnumbers inverted
       by about a thousand to one; the lightest mass is 1.4 to 9 meV (10th-90th percentile), the sum
       about 64 meV, and with the measured mixing angles and free Majorana phases the effective
-      double-beta mass is 1.5 to 8 meV, median 3.9.  CONTROL: at m_1 = 0 the double-beta mass spans
+      double-beta mass is 1.5 to 8 meV, median 3.8.  CONTROL: at m_1 = 0 the double-beta mass spans
       |s12^2 c13^2 m_2 -+ s13^2 m_3| = 1.5 to 3.7 meV, the textbook band.
 
 Bound: the gravitational floor rests on the standard expectation that gravity respects no global
@@ -84,7 +84,8 @@ def main():
     mu_allowed = DM2_SOLAR / (2 * m2)
     check(f'(1) at v_R = {v_r:.3g} GeV gravity alone gives mu = {mu:.2f} eV; a pseudo-Dirac pair needs v_R < {v_pd:.1e} GeV; '
           f'the solar bound needs mu < {mu_allowed:.1e} eV, {mu / mu_allowed:.1e} times smaller',
-          abs(mu - 0.16) < 0.005 and abs(v_pd - 1.1e4) / 1.1e4 < 0.02 and 1e8 < mu / mu_allowed < 2e8)
+          abs(mu - 0.16) < 0.005 and abs(v_pd - 1.1e4) / 1.1e4 < 0.02 and 1e8 < mu / mu_allowed < 2e8
+          and round(mu, 2) == 0.16 and f'{mu / mu_allowed:.1e}' == '1.4e+08')   # the INDEX row prints 0.16 eV and 1.4e8
 
     lo = mbb(0.0, math.pi, 0.0); hi = mbb(0.0, 0.0, 0.0)
     check(f'CONTROL (2): at m_1 = 0 the double-beta mass spans {lo * 1e3:.2f} to {hi * 1e3:.2f} meV',
@@ -112,7 +113,9 @@ def main():
     check(f'(2) lightest {p10:.1f} to {p90:.1f} meV; sum median {np.median(no[:, 1]) * 1e3:.0f} meV; '
           f'double-beta mass {b10:.1f} to {b90:.1f} meV, median {b50:.1f}',
           1.0 < p10 < 1.8 and 7.5 < p90 < 11 and 60 < np.median(no[:, 1]) * 1e3 < 68
-          and 1.2 < b10 < 1.9 and 6.5 < b90 < 9.5 and 3.3 < b50 < 4.5)
+          and 1.2 < b10 < 1.9 and 6.5 < b90 < 9.5 and 3.3 < b50 < 4.5
+          and round(p10, 1) == 1.4 and round(p90) == 9 and round(np.median(no[:, 1]) * 1e3) == 64
+          and round(b10, 1) == 1.5 and round(b90) == 8)   # P16 and the INDEX row print 1.4 (1), 9, 64, 1.5 and 8
 
     p16 = flat(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
     check('P16 carries the reading: "so the construction\'s reading is Majorana"', "so the construction's reading is Majorana" in p16)
