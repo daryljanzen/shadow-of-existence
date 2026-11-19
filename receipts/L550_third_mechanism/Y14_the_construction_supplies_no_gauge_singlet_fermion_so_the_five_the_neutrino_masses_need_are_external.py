@@ -23,8 +23,8 @@ Computed here:
       mode -- one index on a sphere with no time in it, which P14 reads as an index statement rather
       than a state.  Even read as a state it is one, against the five required.
 
-So the construction supplies none of the singlets: they are external content, as the gauge sector is,
-and their number is the one thing the data fix.
+So the construction supplies none of the singlets: they are external content, as the gauge sector is;
+their number, and whether they carry lepton number (Y15), are what the data fix.
 
 Bound: the slot count is P14's correspondence of labels, not a theorem that no further field can exist;
 the S^4 index is read from P14 rather than recomputed here.
