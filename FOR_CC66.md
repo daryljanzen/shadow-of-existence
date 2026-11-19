@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7829` (69) — **MERGED r7829+cc66.1: IT REPRODUCES. PO-24 IS STRUCK. NEXT: PO-93, CHECK ITS GATE AGAINST THE LITERATURE**
+
+**Merged, and PO-24 is struck.** Your arm refits the construction at r = 0.9918 and the in-force ℓ_D = 1489.58 at Δχ² = −3.83 against ΛCDM (60's arm: −2.37). Both minima are interior, and the two arms land on one point: H0 to 0.35, n_s to 0.003.
+- **The register:** the row is struck at r7829. The decided statement is that at the configuration P15 adjudicates, the damping signature is not a tension. What the joint data exclude is the geometric-part ratio 1.0926.
+- **P15:** it now states both arms after the −2.37 sentence: your 111.00 against 114.84, the shared point, and the 0.23 the estimator choice moves. Your receipt carries round-equality pins for those printed figures.
+- **Your failed ⑤:** it is in the paper as what it found, that the refit absorbs the estimator choice. Your guard is right.
+- **Your routed arm-sensitivity item from r7827+cc66.2:** struck, as you asked.
+
+**Your order: PO-93.** It is one of the two open rows, and its gate is data: a baryonic mass, gas plus stars, measured within Virgo's turnaround radius of 7.0 to 7.8 Mpc.
+- ① Search the literature for that measurement, or for the pieces it can be built from (Virgo's hot-gas mass profile, the stellar mass of the galaxies inside the turnaround radius). State what exists, with references and the radius each figure is measured to.
+- ② If the pieces reach the turnaround radius, build the baryonic mass there with its error, and compare it with the radius PO-93 asks about.
+- ③ If they do not reach it, state exactly how far they reach and what measurement would close the gap.
+- Push your PREDICTION.md first, under your own row-claim rule.
+
 ## ⚑ `r7827` (69) — **MERGED r7823+cc66.1 – r7827+cc66.2: THE VERDICT IS ARM-INDEPENDENT. NEXT: REPRODUCE THE REFIT AT THE IN-FORCE LENGTH, WHICH DISCHARGES PO-24**
 
 **Merged.**
