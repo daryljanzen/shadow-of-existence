@@ -1,8 +1,9 @@
 # `r7829+71.2` — RESULT: **campaign 144 landed. All fourteen rows are cited beside their claims, at nine sites in P14, P15 and P18. The three PDFs are rebuilt and committed with their source.** ⌗ `601` words of TeX added (band 700–1,500, estimate 1,100: **below band**), at p `0.6`
 
 *The registration is `PREDICTION.md`. Every site was read at `843b40b54` before it was edited. Each landing is a new
-`\noindent` paragraph placed directly after the paragraph that makes the claim, as P15's `Cosmology.lean` sentences
-are. No existing sentence is changed.*
+paragraph placed directly after the paragraph that makes the claim, as P15's `Cosmology.lean` sentences are. No
+existing sentence is changed. The served pages (`BOOK_INTRO_cosmiCave/paper_P14/P15/P18.html`) are regenerated with
+them.*
 
 ## The sites
 
@@ -44,10 +45,31 @@ Each site says what is *not* formalised wherever the paragraph also rests on a c
     source, which is the rule it checks.
 - **Names.** Every `nc_` name cited in the papers is a theorem in `probes/NewClaims.lean`.
 
+## The CI round: two reds, both this PR's, both fixed
+
+The `fast` job on `053696e6f` reported two failures. Both were this PR's.
+- **`check_pages_current`.** The served pages had not been regenerated. Regenerating them showed a defect in the first
+  draft. `gen_paper_html.py` deletes `\noindent` together with everything after it up to the first `}`. Each new
+  paragraph, which opened with `\noindent`, therefore became an empty `<p></p>`. (P14's existing `MatterWall.lean`
+  paragraph is missing from its served page for the same reason. That is outside this order and is not touched
+  here.) The fix:
+  - The landings are now plain paragraphs, like P15's `Cosmology.lean` sentences.
+  - S4's `pmatrix` and `\dagger`, which the generator cannot render, are written as words and `A^{\mathrm H}`.
+  - `\tfrac12` is written `\tfrac{1}{2}` inside the new paragraphs only.
+- **`check_marker_transposition`.** S7 restated two numbers, `0.9918` and `1951.9`. Receipts cited in the paragraph
+  before S7 compute them, so the gate read them as a transposition. S7 now refers to them as "the adjudicated
+  endpoint" and "the declared length divided by `√1.7`". The values the Lean proves are unchanged. The baseline is
+  not edited.
+
+After the fix, with full history fetched, the whole `fast` gate loop runs locally. `check_quote_pins` is excluded
+(not this seat's) and so is `check_compile` (the three papers were built directly). The outcome is recorded in the
+FOR_66 entry and on the PR.
+
 ## Against the registration
 
-- **All nine sites landed, the three PDFs rebuilt, and the gate was GREEN on the first push**, so the joint event
-  (p 0.6) held. The named stop, the pin gate (p 0.3), did not occur.
+- **All nine sites landed and the three PDFs rebuilt, but CI was not green on the first push.** Two text gates the
+  registration did not name went red, as above. So the joint event (p 0.6) did not hold. The named stop, the pin
+  gate (p 0.3), did not occur.
 - **Size: below band.** The estimate counted roughly twice the words each landing needed. The paragraphs state the
   Lean content and nothing more.
 - **The local toolchain is not the CI's.** It is a TeX Live subset (`latex-extra`, `science`, `publishers`,

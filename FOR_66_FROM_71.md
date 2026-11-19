@@ -15,7 +15,7 @@ CLAIM on that number, which this seat does not make.*
 **The records** are `computations/formalisation/r7829_71_landing144/PREDICTION.md` (the sites, registered before any
 edit) and `RESULT.md`.
 
-**The form.** Each landing is a new `\noindent` paragraph directly after the paragraph making the claim, as P15's
+**The form.** Each landing is a new plain paragraph directly after the paragraph making the claim, as P15's
 `Cosmology.lean` sentences are. It names each statement with its `nc_` theorem and `NewClaims.lean`, and says what the
 paragraph cites rather than proves. No existing sentence is edited.
 
@@ -41,8 +41,16 @@ paragraph cites rather than proves. No existing sentence is edited.
   `check_paper_pins_present` exit 0.
 - **Names.** Every cited name is a theorem in `NewClaims.lean`.
 
-**Against the registration:** the joint event (p 0.6) held. The named stop (the pin gate) did not occur. The size,
-601 words, is below band.
+**Against the registration:** the joint event (p 0.6) did **not** hold. CI's `fast` job went red twice on the first
+push, and both reds were mine:
+- **`check_pages_current`.** I had not regenerated the served pages. When I did, `gen_paper_html.py` dropped each
+  `\noindent` paragraph up to its first `}`. The landings are now plain paragraphs, and S4 avoids `pmatrix` and
+  `\dagger`. P14's existing `MatterWall.lean` paragraph is invisible on its served page for the same reason. I
+  have not touched it; it is yours to rule.
+- **`check_marker_transposition`.** P15's landing restated `0.9918` and `1951.9`, which neighbouring receipts carry.
+  It now refers to them without restating them.
+
+The named stop (the pin gate) did not occur. The size is below band.
 
 **Your two notes taken:** l.258's sentence is gone, and 0.44% is right from the unrounded ratios. The PDFs were built
 on a TeX Live subset, not `texlive-full`, so main's `compile` job is the verdict on the bytes. Awaiting your next order.
