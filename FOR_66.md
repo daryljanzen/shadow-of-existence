@@ -20,6 +20,110 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7831+cc66.1 — ⚑⚑ **THE COLD READ OF `P15`: IT IS IN ONE STATE, AND THE TWO DEFECTS ARE ONE DEFECT TWICE — A BOUND TRUE OF ITS RECEIPT AND FALSE OF THE FIGURES ITS SENTENCE PRINTS AS EVIDENCE**
+
+**Your order:** *"a cold read of `P15`, end to end … ① read every section in order, before touching
+anything; ② check every printed figure against the receipt its sentence cites; ③ check that the
+paper is in one state … Fix mechanical defects as you read. List every substantive one, complete and
+unfiltered, with its line and what it should say, and fix those you can settle from the receipts."*
+
+`3167` lines, `399` `\rcpt` sites, `255` receipts. **`33` claims recomputed from the paper's own
+printed inputs; `31` reproduce exactly.** `PREDICTION.md` pushed as the first commit.
+
+### ③ FIRST, BECAUSE IT IS THE ANSWER: **THE PAPER IS IN ONE STATE**
+
+- **All four figures this seat withdrew at `r7823`/`r7829` return `0` hits** — `22.40`σ, `9.02`,
+  `1.0569`, `8.53`. The withdrawals propagated.
+- **The `\ell_D` chain is named with its configuration at every site**: `1951.9` at `\alpha=1.70`,
+  the exponent-one `1497.04`, `1489.58` after the one-rate move — and `1951.9/\sqrt{1.70}=1497.0390`
+  checks, as does line `612`'s Lean assertion.
+- **`299.1` and `298.5` are different configurations, each with its own receipt**, not a contradiction.
+- **The suppression quartet reproduces all four figures** at `\alpha=1.70` from the ratio each
+  sentence names: `2.75` and `6.29` per cent rise at `r=0.992`, `7.61` and `16.30` fall at `r=1.023`.
+  ⌗ *Four figures, two configurations, one formula. This is the clearest evidence that the one-rate
+  landing was carried **through** the paper rather than patched at the headline.*
+
+### ① THE TWO DEFECTS — and they are the same defect twice
+
+> ⚑ **A CLAIM TRUE OF THE RECEIPT THAT OWNS IT AND FALSE OF THE FIGURES ITS SENTENCE OFFERS AS
+> EVIDENCE.** *In both the physics is right and the receipt is right; the printed pair cannot carry
+> the bound the sentence states.*
+
+**⛔ ① line `466`–`467`, `§coherence`.** *"the wavenumber-independent `$0.4835\,\Psi_i$`, **within
+three per cent** of the frozen value `$\Psi_i/2$`."* `0.4835/0.5` is **`3.30`** per cent — the bound
+is **false as written**. And the cited receipt supplies the half that matters: on the **spectrum**
+`$(0.4835/0.5)^2=0.93509$` is **`6.49`** per cent, *"half the one that reaches the spectrum"*.
+⇒ **Should say `3.3` per cent on the potential AND `6.5` on the spectrum** — the figure the acoustic
+heights actually carry, and one a reader taking "three per cent" as the size of the approximation is
+under-told by a factor of two.
+
+**⛔ ② line `2141`–`2142`, `§refit-bound`.** *"within a fiftieth of a per cent on the heights"*, with
+`$2.348$` against `$2.349$` offered as the evidence.
+
+| | |
+|---|---|
+| the receipt measures | `0.011`% and `0.017`% — **inside `0.02`, so the claim HOLDS** |
+| the printed pair implies | **`0.0426`%** — outside it by `2.13 ×` |
+
+⇒ **And `r7653` had already found exactly this, for the PEAKS:** *"they agree to under a tenth of a
+multipole at every peak and to a hundredth of a per cent on the heights … **So the claim HOLDS, and
+comfortably; what does not hold is the pair of figures offered as its evidence.**"* **The peaks half
+was repaired — the paper's offsets now track the receipt's. The heights half was not.**
+⇒ **Should give the agreement as the receipt measures it** (`0.011`% and `0.017`% on `$P_1/P_2$` and
+`$P_1/P_3$`) rather than inviting the reader to difference two independently rounded four-figure
+ratios.
+
+### ⚠ WHY I FIXED NEITHER — and it is a finding, not a reservation
+
+**Both sentences are PINNED by the receipts that own them, and in both cases the pin is the point.**
+One holds the literal *"within three per cent of the frozen value `$\Psi_i/2$`…"* and asserts it
+present, so **rewording it reddens the receipt whose finding is about that wording**. The other
+states **`THE TABLE IS PINNED, ROW BY ROW, BY ONE PROCEDURE`** and that *"every figure below is held
+to the digit it is"* — so `2.291` and `2.348` are **right as table entries** and must not be
+re-rounded to repair a sentence; the repair belongs in the prose that *compares* them.
+
+⇒ **Each fix is a coordinated paper-and-receipt change, and for ① the real question is whether that
+receipt's finding should be DISCHARGED by rewording the paper or KEPT STANDING as a live criticism of
+it.** That is a judgement about a receipt's purpose, not a transcription. **Yours — with every number
+supplied above, so it is a decision and not a search.**
+
+### ⛔ THREE OF FOUR PREDICTIONS MISSED, AND THE MISSES ARE THE RESULT
+
+I registered that defects would cluster at the **seams** of the month's five landings (*"more than
+half"*), that the commonest class would be a **superseded figure**, and a count of `3`–`12`.
+**`0` of `2` are at a seam. There are `0` superseded figures and `0` receipt errors. The count is
+`2`.** The actual class is one I did not anticipate.
+
+> ⇒ **GUARD: a paper's risk does not sit where the edits were; it sits where a claim's precision was
+> never re-derived from the evidence printed beside it.** *Serial editing by careful seats evidently
+> repairs its own seams — and leaves untouched sentences unexamined, because nothing draws attention
+> to them. I had the wrong model of where a month of five landings leaves damage.*
+
+The two guards held, and `⑤` paid twice: the absorber slope `-1.09` (which does **not** reproduce
+from its first cited receipt but **is** pinned by its second) and the comb (where a receipt is
+**named** `..._takes_the_comb_from_299_1_to_298_94`) would both have become wrong "fixes".
+
+### ⌗ AND THREE DEFECTS IN MY OWN WORK, TWO CAUGHT BY YOUR GATES
+
+- **`check_cannot_fail` caught a literal `True`** in my gate Ⓐ①. A disjunction over two legitimate
+  states is a *scope statement*, not a check. Replaced with a failable one.
+- **The probe's first two perturbations did not flip** — `0.4850` gives *exactly* `3.000` per cent,
+  the boundary. *A probe too small to cross reports "cannot flip" and looks like proof the finding is
+  structural.*
+- **And one in the read itself:** I reported defect ① as *gone* after your P15 edit. It was not — the
+  phrase **wraps** as `within three per\ncent`, so a single-line search cannot match it. **A
+  newline-naive search would have silently dropped a defect from this list.** The receipt now
+  whitespace-flattens the paper before any search, and says why.
+
+⌗ *The presence checks are an **`ALT`** disjunction: STATE A (bound still stated) or STATE B
+(sentence moved, finding discharged), both a pass. A gate that merely asserts a defective sentence is
+present **fails on success** — reddening the moment you repair the thing it asked to have repaired.
+Its three new quote-pin keys are adjudicated `ALT-OK` in the same pass that mints them.*
+
+**Receipt `7`/`7` arms, `24`/`24` figures pinned, INDEX row appended, appendices regenerated, both
+affected PDFs rebuilt with `0` LaTeX errors. Pushed.**
+
+
 ## r7829+cc66.3 — ⚠ **ROUTED, NOT A RESULT: `1b45ce68d` (P18) LEAVES FOUR GATES RED ON MAIN'S OWN HEAD — AND THE FOURTH IS THE ONE A LOCAL BATCH CANNOT SEE**
 
 Merged `1b45ce68d` on the standing cycle. **The merge is clean and this seat's work is green**, but the
