@@ -50,10 +50,70 @@ Arithmetic checked wherever a sentence prints two figures that must agree:
 
 ## The defect list
 
-*(substantive defects with line and correction.)*
+### ⛔ ① `§coherence`, lines `466`–`467` — **a bound that is false as written, and a comparison its own receipt says is half the one that matters**
 
-**`0` substantive so far**, across four seams and five sections. ⌗ *Stated plainly because the
-registration predicted `3`–`12`: the count is a live score against `④`, not a formality.*
+**The paper says:** *"the wavenumber-independent `$0.4835\,\Psi_i$`, **within three per cent** of the
+frozen value `$\Psi_i/2$` the free oscillator carries at every wavenumber."*
+
+**The arithmetic:** `0.4835/0.5` is **`3.30` per cent** low. `3.30 > 3`, so *"within three per cent"*
+is **false as a bound**.
+
+**And the cited receipt already says so, in as many words** —
+`P15_the_route_from_the_handover_amplitude_to_the_spectral_parameters...`, lines `35`–`37`:
+
+> *`$0.4835/0.5$` is `3.30` per cent low. On the SPECTRUM that is `$(0.4835/0.5)^2=0.93509$`,
+> **`6.49` per cent**, and `$0.4835^2=0.23377$` is the factor itself.* ⇒ *The comparison the paper
+> makes on the potential is half the one that reaches the spectrum.*
+
+⇒ **So there are two things wrong and the second is the substantive one.** ⒜ the bound is `3.30`, not
+"within three"; ⒝ **the comparison is made on the POTENTIAL, where it is `3.3` per cent, while the
+quantity that reaches observables is the SPECTRUM, where it is `6.5` per cent** — a reader takes
+"three per cent" as the size of the approximation and the figure that bears on data is double it.
+
+**What it should say:** `3.3` per cent below `$\Psi_i/2$` on the potential, **and `6.5` per cent on the
+spectrum**, the latter being the one the acoustic heights carry.
+
+> ⚠ **NOT FIXED HERE, AND THE REASON IS THE REASON THIS ORDER EXISTS.** That receipt **pins the
+> paper's present wording as a literal**:
+> `_THREE = r"within three per cent of the frozen value $\Psi_i/2$ the free oscillator carries at every "`
+> (line `200`), asserted present (line `206`). **Rewording the sentence reddens the receipt that
+> owns the finding about it.** So the edit is a coordinated paper-and-receipt change, and whether
+> that receipt's finding should be *discharged* by rewording the paper — rather than kept standing as
+> a live criticism of it — is a judgement about the receipt's purpose. ⇒ **`69`'s ruling.** *This is
+> the `R1_the_correction_stopped_at_the_sentence` shape exactly: correcting the sentence and leaving
+> the number it defines behind. Correcting it and leaving the RECEIPT behind is the same error
+> mirrored.*
+
+---
+
+**`1` substantive, `0` mechanical fixed**, across five seams and six sections. ⌗ *Stated plainly
+because the registration predicted `3`–`12`: the count is a live score against `④`, not a formality.*
+
+## Near-misses — figures that read as superseded and are not
+
+Recorded because each one nearly became a wrong "fix", and guard `⑤` is what stopped it.
+
+- **`§coherence` `499`–`503`, the absorber slope `-0.0002` to `-1.09`.** The first cited receipt
+  (`P15_the_tilt_is_the_wrong_absorber`) computes `-0.0002` to **`-1.3141`** at `r=1.0926`,
+  `\ell_D=1362`, **no `\alpha`** — so the paper's `-1.09` does not reproduce from it. It reproduces
+  from the **second** cited receipt, which pins it: *"absorber: slope at `l = 2508` is `-1.0877`
+  (printed `-1.09`) on the faithful exponent, the swing over `30`–`2508` `6989`-fold"*, at
+  `\alpha=1.70` and the instrument header's `\ell_D=1951.9`. ⇒ **The paper prints the figure from the
+  receipt that owns it; citing both is right, because the first establishes the shape and the second
+  the size.** ⌗ *One question for `69` rather than a defect: `1951.9` at `\alpha=1.70` is the
+  exponent-one scale `1497.04`, while the in-force scale after the one-rate move is `1489.58`, at
+  which the same `r` gives `-1.0988`, i.e. `-1.10`. The `1` per cent does not touch the argument —
+  the `6989`-fold swing is `(\ell_{max}/\ell_{min})^2` and carries no `\ell_D` at all — but the
+  instrument header's `\ell_D` is pre-move.*
+
+## Arithmetic verified in `§what-crosses` (317–436) — all four MATCH
+
+| line | claim | check |
+|---|---|---|
+| `325` | the imaginary leg `$=c_0B(\tfrac16,\tfrac12)/2=3.33874$`, `$c_0=2/(\sqrt3\,2^{1/3})$` | `3.338738` ✓ to six figures |
+| `345` | `$aH$` normalised to unity at the seam is `$1.96$` at `$0.1\alpha$` and `$19.6$` at `$10^{-3}\alpha$` | `$aH\propto r^{-1/2}$` ⇒ ratio `10` exactly ✓ |
+| `377` | the radiation-to-matter ratio `$2r_N/r$` is `$2$` at the seam, `$2^{2/3}$` at the turnaround | forces the turnaround to `$2^{1/3}r_N$` ✓ self-consistent |
+| `402` | exponent `$\simeq1.6\times10^{2}c_s/c$` ⇒ `$e^{-1.6}$` at one per cent, `$e^{-16}$` at ten | `1.60` and `16.00` ✓ |
 
 ## Still to read
 

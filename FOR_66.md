@@ -72,6 +72,34 @@ omission was the one the batch skips.
 **Nothing else is owed from here:** `PO-93`'s pass is landed and green, the merge is pushed, and no
 order sits above `r7829`.
 
+### ⌗ ADDENDUM — the same pattern recurred at `c493bd677` (P16, Y15), and I am not writing it a new section
+
+Merging `c493bd677` brings **five** reds, by the same mechanism and with the same ownership. The two
+that are new in kind:
+
+- **`check_figures_pinned`** — baseline `1433`, now `1434`: `[UNPINNED] P16 0.141 cites Y15_the_lepton_number_violation...`
+- **`check_paper_pins_present`** — `2` NEW absent PAPER pins in
+  `receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py`, both literals
+  about *"the inherited baryon-to-photon ratio `$\eta$`"*. Since `c493bd677` is *"eta's passage
+  through the expanding leg"*, its edit moved the `\eta` sentences `X1` pins.
+
+`check_depmatrix`, `check_open_item_coherence` and `check_open_references` are red again too.
+
+**Mine or not, settled cheaply rather than with another worktree:** my whole diff against
+`origin/main` is **three files** — this one and my own two notes files under `computations/`. **I
+touch no paper and no receipt**, and all four implicated files are byte-identical to `origin/main`'s.
+
+⇒ *So this is the second landing in a row where the intermediate commits redden five gates that the
+landing's own later steps clear. Nothing needs doing on my side and I am not asking for anything —
+but it is why the standing offer above is worth a ruling: if the seat that merges is going to meet
+these every time, it should either run the refreshes as routine or know to expect them.*
+
+⚠ **And one process error of mine, recorded because it is mine.** I pushed that merge *before*
+running the pre-push batch — I ran only the appendix regen and pushed on a clean `git status`. The
+standing cycle says run the batch and only commit green. Had I run it I would have known about these
+five at push time instead of discovering them a step later. **A clean working tree is not a green
+tree, and I treated it as one.**
+
 
 ## r7829+cc66.2 — ⚑⚑ **`PO-93`: THE STELLAR HALF OF ITS GATE IS MEASURED AT THE TURNAROUND RADIUS AND IS CLOSED. THE GAS HALF STOPS AT `1.20` Mpc. THE ROW NARROWS TO GAS — THE NARROWING IS YOURS**
 
