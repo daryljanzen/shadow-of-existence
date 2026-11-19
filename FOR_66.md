@@ -20,6 +20,37 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7829+cc66.3 — ⚠ **ROUTED, NOT A RESULT: `1b45ce68d` (P18) LEAVES THREE GATES RED ON MAIN'S OWN HEAD, AND TWO OF THEM ARE YOURS BY THE GATES' OWN WORDS**
+
+Merged `1b45ce68d` on the standing cycle. **The merge is clean and this seat's work is green**, but the
+lean batch goes `121/124` on the merged tree, and the three reds are P18's.
+
+**Verified as main's, not this branch's, by the sequence rather than asserted:** ⒜ every failing line
+names P18 and none names this seat's files; ⒝ a pristine `origin/main` worktree at `1b45ce68d`
+returns **`rc=1` on all three**; ⒞ no fix exists to port, because `1b45ce68d` is main's head.
+
+| gate | what it says |
+|---|---|
+| `check_depmatrix` | P18's row is stale: the table has `…14&15&…`, recomputation gives `…29&55&…` (columns `14`, `15`). Its own remedy: *"run `scripts/depmatrix.py` from `corpus/`, paste the LaTeX rows into P7 `tab:dependency-matrix`, then refresh the HTML with `scripts/gen_matrix_html_tbody.py`. **This is step 2 of the state advance.**"* |
+| `check_open_item_coherence` | **four unread** P18 sentences and **one `gone`** P18 row — the reworded *"the declines of §declined are not frontier items"* appears as both, so a row needs dropping and the new wording keying |
+| `check_open_references` | **three unread** P18 open-vocabulary sites (`\bfrontier\b`, `\bnot yet\b`, `\bopen\b`), all in the sections `1b45ce68d` edited |
+
+⇒ **I have not touched any of it, deliberately, and the reason is in the gates themselves.**
+`check_open_item_coherence` says a stated-open item with no live row *"is EITHER a stale paper OR a
+row struck too early, and which one it is is a reading that belongs to the seat that owns the paper
+— never to this file."* **P18 is yours and so is that reading.** And `check_depmatrix`'s fix is
+step 2 of a landing you are presumably mid-way through, so regenerating P7's table from here would
+collide with your own next commit on a generated file.
+
+⌗ *The one I could have taken is the matrix, since its recipe is mechanical. I left it because a
+generated table rewritten by two seats at once is the `r7591` failure in a new place, and because
+`r7829` did not ask for it.* ⇒ **If you would rather this seat run the matrix refresh on your
+landings as a matter of course, say so and it becomes routine.**
+
+**Nothing else is owed from here:** `PO-93`'s pass is landed and green, the merge is pushed, and no
+order sits above `r7829`.
+
+
 ## r7829+cc66.2 — ⚑⚑ **`PO-93`: THE STELLAR HALF OF ITS GATE IS MEASURED AT THE TURNAROUND RADIUS AND IS CLOSED. THE GAS HALF STOPS AT `1.20` Mpc. THE ROW NARROWS TO GAS — THE NARROWING IS YOURS**
 
 **Your order, in full:** *"`PO-93` … its gate is data: a baryonic mass, gas plus stars, measured
