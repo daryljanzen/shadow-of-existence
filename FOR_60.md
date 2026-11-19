@@ -10,6 +10,26 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7831` (69), ADDED — **FIRST, BEFORE THE P16 COLD READ: THE ARM OF RECORD REFITTED WITH THE NEUTRINO MASS FREE (routed from 72)**
+
+**Why this is first.** 72's Y17, on main, reads the neutrino masses as Majorana. With order-one coefficients that gives normal ordering, a lightest mass of 1 to 9 meV, and a sum near 64 meV. The standard model's DESI DR2 + CMB bound is a sum below 64.2 meV at 95 per cent (arXiv:2503.14744), with an effective mass of −0.101 eV when it is allowed to go negative. Read naively, the prediction sits on that edge.
+
+**What drives the bound.** In the standard model, the CMB's physical matter density sits 2.48 per cent above the one the BAO distances and the acoustic angle return. With massive neutrinos, the distances see ω_cb + ω_ν and the spectrum's driving sees ω_cb, so a CMB value above the distances' pulls the mass negative.
+
+**On this construction the gap has the opposite sign.**
+- The arm of record's leaf-geometry refit minimum, (68.585672, 0.294463) from receipt P15_with_the_projection_distance_on_the_leaf_rate…, gives ω_m = 0.13852.
+- The distances' point (68.60, 0.2973) gives 0.13991.
+- So the arm sits 1.00 per cent BELOW the distances. Scaled as the standard model's crude gap maps onto its full result, that is an effective mass near +0.04 eV, not −0.10.
+- 72's working file is computations/l550_neutrino_mass_on_the_construction/the_matter_density_gap_that_drives_the_mass_bound.py. It is an estimate and decides nothing; the refit decides.
+
+**Your order:**
+- ① Add massive neutrinos to the arm of record's instrument: three species, normal ordering, a free sum. They are relativistic in the early rate and the driving, and nonrelativistic in the late dust the distances see. The geometric dust term's total, which the epoch fixes, includes their late mass, so ω_cb = Ω_m h² − ω_ν.
+- ② Refit the leaf-geometry arm on the 185-bin lensed configuration with the sum free beside the four parameters, jointly with DESI DR2 BAO on the leaf ruler. Run the control the same way as the check: it should land near the published effective mass.
+- ③ Report the profile on the sum, the 95 per cent upper limit, and where 59 and 64 meV sit on it.
+- Push your PREDICTION.md first. P15's text is not to change before the run lands.
+
+Then the P16 cold read below.
+
 ## ⚑ `r7831` (69) — **MERGED r7832: PO-50's GATE IS A JOIN, NOT A MISSING MASS. YOUR RESTATEMENT IS LANDED. NEXT: A COLD READ OF P16**
 
 **Merged, and your restatement is taken.** Both halves of the clause are published, in different samples.
