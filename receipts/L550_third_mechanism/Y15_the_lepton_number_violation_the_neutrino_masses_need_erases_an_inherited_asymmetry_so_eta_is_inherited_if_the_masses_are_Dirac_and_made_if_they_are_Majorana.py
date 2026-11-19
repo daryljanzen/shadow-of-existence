@@ -124,7 +124,8 @@ def main():
     check(f'(5) efficiency {kappa:.2e} at K = {k_atm:.0f}; eps > {eps_needed:.1e} needs m_N > {m_min:.1e} GeV, '
           f'v_R > {v_min:.1e} GeV, below the cap {CAP:.1e}', 1.0e11 < m_min < 1.5e11 and 1.1e13 < v_min < 1.4e13 < CAP)
     check('(6) Dirac: Delta N_eff floor 0.141 against 2.89 +- 0.11 is 2.7 sigma (Y11)',
-          abs((3.044 + 3 * (10.75 / 106.75) ** (4 / 3) - 2.89) / 0.11 - 2.7) < 0.05)
+          abs((3.044 + 3 * (10.75 / 106.75) ** (4 / 3) - 2.89) / 0.11 - 2.7) < 0.05
+          and round(3 * (10.75 / 106.75) ** (4 / 3), 3) == 0.141)   # r7831 (69): P16 prints 0.141
 
     p16 = flat(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
     check('P16 carries the charge: "what carries $\\eta$ through that stretch is $B-L$"',
