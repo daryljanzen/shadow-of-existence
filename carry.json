@@ -5909,6 +5909,11 @@
    }
   },
   "tolerance": {
+   "corpus/check_formalisation_join.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44433042908",
+    "since": "053696e6f25be39c8357a9fc595c0046be5d0f0e",
+    "unmeasured": true
+   },
    "receipts/L204_physics_reach/P10_the_neff_commitment_is_in_the_code_and_in_no_paper.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44431899391",
     "since": "843b40b546c3e502f8ded2328e6f8b3ae1ebf25f",
