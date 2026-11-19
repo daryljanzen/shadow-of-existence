@@ -36,7 +36,10 @@ T_RH = (Gamma M_Pl / 1.66 sqrt(10.75))^(1/2); S = 1.83 g*^(1/4) m Y/(Gamma M_Pl)
 Bound: order-one coefficients (the floor scales with them); m_nu = 0.05 eV; free-quark rates above 1 GeV
 and one pion mode below; the heavy-neutral-lepton widths to a factor of order one; instantaneous decay.
 
-COMPUTES: closed forms and a bisection in v_R; P14, P15 and P16 sentences read live.
+So inside the window the state decays before nucleosynthesis, below it it is light or decays too late, and
+P18 reads that as the sixteenth state not being the dark matter in the doublet realisation.
+
+COMPUTES: closed forms and a bisection in v_R; P14, P15, P16 and P18 sentences read live.
 
 Written by the chat seat.  Stated for reversal.
 """
@@ -161,6 +164,10 @@ def main():
     p16 = flat(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'))
     check('P15 carries the floor: "Heavy, it must decay before nucleosynthesis"', 'Heavy, it must decay before nucleosynthesis' in p15)
     check('P16 carries the floor: "it must decay before nucleosynthesis"', 'it must decay before nucleosynthesis' in p16)
+    p18 = flat(os.path.join(ROOT, 'corpus', 'CR_synthesis.tex'))
+    check('P18 carries the window: "by the parity\'s own right-handed neutrino having to decay before nucleosynthesis"',
+          "by the parity's own right-handed neutrino having to decay before nucleosynthesis" in p18)
+    check('P18 carries the reading: "the sixteenth state is not the dark matter"', 'the sixteenth state is not the dark matter' in p18)
     print()
     if FAILED:
         print(f'  {len(FAILED)} FAILED')
