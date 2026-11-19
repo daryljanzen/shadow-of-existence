@@ -161,10 +161,51 @@ YP_FLOOR, YP_BOUND = 0.2489, 0.2509                # Y10
 D_FLOOR, D_BOUND = 2.55e-5, 2.60e-5                # Y10
 NEFF_LATER, NEFF_FIRST = 3.044, 3.046              # P15/P18/Y11, and Mangano 2005
 ACT_JOINT, ACT_SIG = 2.89, 0.11                    # ACT DR6 + light elements, via Y11
-# the paper's own two printed numbers for the progenitor
-M_PAPER_KG = 4.17e52                               # P16 sec:interior, on the calibrated background
-A_EQ_MPC = 1.4905                                  # P16 sec:interior, "the observable leg's"
-LAM_RECEIPT = 1.1056e-52                           # the generating receipt's own LAM, m^-2
+# ** the paper's own two printed numbers for the progenitor are READ OUT OF THE PAPER and not
+#    retyped: a check whose label says "the paper's" and whose value is a literal stays green when
+#    the paper moves, which is the defect check_unread_figure exists to catch. **
+_m = re.search(r'a mass \$(\d+\.\d+)\\times10\^\{(\d+)\}\$~kg', P16)
+M_PAPER_KG = float(_m.group(1)) * 10.0 ** int(_m.group(2))
+_a = re.search(r'against the observable leg\'s \$(\d+\.\d+)\$', P16)
+A_EQ_MPC = float(_a.group(1))
+_c = re.search(r'\$A\\rho\^2/4=(\d+\.\d+)\$~Mpc', P16)
+CLOSURE_PRINTED = float(_c.group(1))
+_r = re.findall(r'\\rho(?:\\;)?\\simeq(?:\\;)?(\d+\.\d+)\\times10\^\{-2\}', P16)
+RHO_PRINTED = float(_r[0]) * 1e-2
+# and the generating receipt's own Lambda is read out of ITS source, so this pin fails if it moves
+_GEN = 'P16_the_progenitor_composition_is_bracketed'
+SRC_GEN = io.open(os.path.join(HERE, _GEN + '.py'), encoding='utf-8', errors='replace').read()
+LAM_RECEIPT = float(re.search(r'^LAM, MPC = ([0-9.e+-]+),', SRC_GEN, re.M).group(1))
+# the frozen-mode margin, read from the receipt's own print line AND from the paper
+SRC_FROZEN = io.open(os.path.join(HERE, 'P16_every_mode_is_frozen_at_the_crossing.py'),
+                     encoding='utf-8', errors='replace').read()
+MARGIN_RECEIPT = float(re.search(r'freezes with ([0-9.]+)% of the leg to spare', SRC_FROZEN).group(1))
+MARGIN_PAPER = float(re.search(r'\$([0-9.]+)\$ per cent of the collapsing leg', P16).group(1))
+# the two dissociation thresholds, read from the paper rather than retyped
+_t9 = re.search(r'T_9\\simeq([0-9.]+)\$ for deuterium and \$([0-9.]+)\$ for helium-4', P16)
+T9_D, T9_HE = float(_t9.group(1)), float(_t9.group(2))
+# the three papers' Standard Model values, read at source
+NEFF_P16 = float(re.search(r'the \$(\d\.\d+)\$ the companion cosmology quotes', P16).group(1))
+NEFF_P16_FIRST = float(re.search(r'effective number \$N_\{\\mathrm\{eff\}\}=(\d\.\d+)\$', P16).group(1))
+NEFF_P15 = float(re.search(r"the Standard Model's \$(\d\.\d+)\$", P15).group(1))
+NEFF_P18 = float(re.search(r'N_\{\\rm eff\}=(\d\.\d+)', P18).group(1))
+# the measured values the paper now prints, read out of it
+_yp = re.search(r'\$Y_p=(\d\.\d+)\\pm(\d\.\d+)\$', P16)
+_dh = re.search(r'\$D/H=\((\d\.\d+)\\pm(\d\.\d+)\)\\times10\^\{-5\}\$', P16)
+YP_PAPER, SIG_YP_PAPER = float(_yp.group(1)), float(_yp.group(2))
+# the same sentence's group prints the Planck pair this receipt's arm runs at, so they are pinned
+# here too rather than left standing beside a citation that would not fail if they were wrong
+ETA10_PAPER = float(re.search(r'eta_\{10\}=(\d\.\d+)\\pm', P16).group(1))
+OMBH2_PAPER = float(re.search(r'\\Omega_bh\^2=(\d\.\d+)', P16).group(1))
+D_PAPER, SIG_D_PAPER = float(_dh.group(1)) * 1e-5, float(_dh.group(2)) * 1e-5
+# cluster A's four, read out of the paper
+_cA = (float(re.search(r'\\simeq([0-9.]+)\\,k_B\n?\s*per baryon', P16.replace('\n', ' ')).group(1))
+       if False else None)
+CL_A = [float(x) for x in (
+    re.search(r'adds \$\\tfrac43 E/T\\simeq([0-9.]+)\\,k_B\$', P16).group(1),
+    re.search(r'\$([0-9.]+)\\,k_B\$ at four', P16).group(1),
+    re.search(r's/n_b\\simeq([0-9.]+)\\times10\^\{10\}', P16).group(1),
+    re.search(r'perturbing \$\\eta\$ by \$([0-9.]+)\\times10\^\{-10\}', P16).group(1))]
 # physical constants
 G, C, MPC = 6.674e-11, 2.99792458e8, 3.0857e22
 M_N_MEV, T_PK_MEV = 938.91898, 174.0               # PDG nucleon mass; P16_peak_temperature's T_pk
@@ -179,20 +220,18 @@ print('PART 1 -- THE TWO FIXES THAT ARE ARITHMETIC')
 print('=' * 78)
 
 # ---------------------------------------------------------------------- A (1)
-src_frozen = io.open(os.path.join(ROOT, 'receipts', 'P16_cosmogenesis_paper',
-                                  'P16_every_mode_is_frozen_at_the_crossing.py'),
-                     encoding='utf-8', errors='replace').read()
-gloss_factor = 0.2 / 0.065
+src_frozen = SRC_FROZEN
+gloss_factor = 0.2 / MARGIN_RECEIPT
 print('  the retired gloss read 0.2 per cent against the table\'s 0.065, a factor of %.2f,' % gloss_factor)
 print('  and 0.2 > 0.065, so the gloss claimed a SMALLER margin than the computation gives --')
 print('  the harder case for the claim, which is why it is not a conservative slip.')
 check('Ⓐ① the cited receipt carries its own 0.065 figure and its r3124 record of the gloss, the '
       'gloss is threefold out (factor %.2f) and in the less conservative direction, and P16 now '
       'prints 0.065 while the retired wording is gone' % gloss_factor,
-      '0.065% of the leg to spare' in src_frozen
-      and 'a fifth of a per cent' in src_frozen            # the r3124 record of the error
-      and 2.9 < gloss_factor < 3.2 and 0.2 > 0.065
-      and '$0.065$ per cent of the collapsing leg still to run' in P16
+      'a fifth of a per cent' in src_frozen            # the r3124 record of the error
+      and 2.9 < gloss_factor < 3.2 and 0.2 > MARGIN_RECEIPT
+      and abs(MARGIN_PAPER - MARGIN_RECEIPT) < 0.0004      # the pin: paper against receipt
+      and abs(MARGIN_RECEIPT - 0.065) < 0.0004
       and 'a fifth of a per cent' not in P16,
       'factor %.3f' % gloss_factor)
 
@@ -246,7 +285,12 @@ check('Ⓓ④ P16 now names the instantaneous ratio, the count 3, both values wi
       and 'the effective number $N_{\\mathrm{eff}}=3.046$' in P16
       and 'the $3.044$ the companion cosmology quotes' in P16
       and "the Standard Model's $3.044$" in P15
-      and 'N_{\\rm eff}=3.044' in P18)
+      and 'N_{\\rm eff}=3.044' in P18
+      and abs(NEFF_P16 - 3.044) < 0.0004 and abs(NEFF_P15 - 3.044) < 0.0004
+      and abs(NEFF_P18 - 3.044) < 0.0004 and abs(NEFF_P16_FIRST - 3.046) < 0.0004
+      and abs(NEFF_P16 - 3.0 - omitted_later) < 0.0000001
+      and abs(NEFF_P16_FIRST - 3.0 - omitted) < 0.0000001,
+      'P16 %.3f and %.3f, P15 %.3f, P18 %.3f' % (NEFF_P16_FIRST, NEFF_P16, NEFF_P15, NEFF_P18))
 
 print()
 print('=' * 78)
@@ -262,9 +306,12 @@ print('  figures named two numbers rather than one number twice.')
 check('Ⓔ⑤ 5.45e-2 and 5.4e-2 are two values and not one rounded one, and P16 now prints the '
       'former in both places with the retired one gone',
       abs(two_sig - 0.055) < 0.0000001
-      and P16.count('5.45\\times10^{-2}') == 2
+      and abs(RHO_PRINTED - 0.0545) < 0.00002
+      and abs(RHO_PRINTED * 1e2 - 5.45) < 0.002
+      and all(abs(float(x) * 1e-2 - 0.0545) < 0.00002 for x in _r)
+      and bool(_r) and set(_r) == {'5.45'}
       and '5.4\\times10^{-2}' not in P16,
-      '5.45e-2 count %d' % P16.count('5.45\\times10^{-2}'))
+      'the paper prints %s' % ', '.join(_r))
 
 # ---------------------------------------------------------------------- F (6)
 # rho = sqrt(4 a_eq / A) with A = 2M, on the paper's OWN two printed numbers.
@@ -288,6 +335,8 @@ check('Ⓕ⑥ the paper\'s own printed mass and equality radius return 0.0545, a
       abs(rho_paper - 0.05450) < 0.00002
       and abs(rho_receipt - 0.05386) < 0.00002
       and abs(M_receipt_kg - 4.269e52) / 4.269e52 < 0.0004
+      and abs(LAM_RECEIPT * 1e52 - 1.1056) < 0.0004
+      and abs(M_PAPER_KG * 1e-52 - 4.17) < 0.004
       and rho_paper > rho_receipt,
       'paper %.5f, receipt %.5f, M_receipt %.3e' % (rho_paper, rho_receipt, M_receipt_kg))
 
@@ -306,7 +355,9 @@ check('Ⓖ⑦ the four-figure closure the paper asserts holds on either self-con
       'the mass as the single quantity that moved',
       abs(clos_paper - A_EQ_MPC) < 0.0005
       and abs(clos_receipt - A_EQ_MPC) < 0.0015
-      and abs(clos_mixed - A_EQ_MPC) / A_EQ_MPC > 0.02,
+      and abs(clos_mixed - A_EQ_MPC) / A_EQ_MPC > 0.02
+      and abs(CLOSURE_PRINTED - clos_paper) < 0.0005
+      and abs(A_EQ_MPC - 1.4905) < 0.00004,
       'paper %.4f, receipt %.4f, mixed %.4f' % (clos_paper, clos_receipt, clos_mixed))
 
 # ---------------------------------------------------------------------- H (8)
@@ -317,8 +368,12 @@ print()
 print('  from the values P16 now prints: helium %+.2f sigma, deuterium %+.2f sigma' % (t_yp, t_d))
 check('Ⓗ⑧ P16 now prints both measured values, and the +0.5 and -0.5 sigma it reports are '
       'reproduced from them with the propagated theory errors',
-      '$Y_p=0.2453\\pm0.0034$' in P16
-      and '$D/H=(2.527\\pm0.030)\\times10^{-5}$' in P16
+      abs(YP_PAPER - OBS_YP) < 0.00004 and abs(SIG_YP_PAPER - SIG_YP) < 0.00004
+      and abs(D_PAPER - OBS_D) < 0.0004e-5 and abs(SIG_D_PAPER - SIG_D) < 0.0004e-5
+      and abs(YP_PAPER - 0.2453) < 0.00004 and abs(SIG_YP_PAPER - 0.0034) < 0.00004
+      and abs(D_PAPER * 1e5 - 2.527) < 0.0004 and abs(SIG_D_PAPER * 1e5 - 0.030) < 0.0004
+      and abs(ETA10_PAPER - 6.13) < 0.004 and abs(ETA10_PAPER - ETA10) < 0.0000001
+      and abs(OMBH2_PAPER - 0.02237) < 0.000004
       and abs(round(t_yp, 1) - 0.5) < 0.0000001
       and abs(round(t_d, 1) + 0.5) < 0.0000001
       and 'the $0.2453\\pm0.0034$ the cosmogenesis paper quotes there' in P15,
@@ -377,17 +432,18 @@ print('  s/n_b     = %.4e k_B      (g_*s = %.3f, eta = %.2fe-10)' % (s_per_b, g_
 print('  the sum over it = %.4e, i.e. one part in %.3e' % (d_eta_rel, one_part_in))
 check('Ⓙ⑩ cluster A reproduces from banked constants to the precision P16 prints it -- 3.60, '
       '2.77, 1.15e10, 5.5e-10 and one part in 2e9 -- so it is pinnable and is pinned here',
-      abs(s_thermalise - 3.60) < 0.004
-      and abs(s_erase - 2.77) < 0.004
-      and abs(s_per_b - 1.15e10) < 0.004e10
-      and abs(d_eta_rel - 5.5e-10) < 0.048e-10
-      and abs(round(one_part_in / 1e9) - 2.0) < 0.0000001,
+      abs(s_thermalise - CL_A[0]) < 0.004
+      and abs(s_erase - CL_A[1]) < 0.004
+      and abs(s_per_b - CL_A[2] * 1e10) < 0.004e10
+      and abs(d_eta_rel - CL_A[3] * 1e-10) < 0.048e-10
+      and abs(round(one_part_in / 1e9) - 2.0) < 0.0000001
+      and abs(CL_A[0] - 3.60) < 0.004 and abs(CL_A[2] - 1.15) < 0.004,
       '%.4f %.4f %.4e %.4e 1/%.3e' % (s_thermalise, s_erase, s_per_b, d_eta_rel, one_part_in))
 
 # ---------------------------------------------------------------------- K (11)
 # cluster C, NOT reproduced: one exponential tail cannot carry both thresholds.
-x_d = B_D_MEV / (1.2 / K_PER_MEV * 1e9)
-x_he = B_HE4_MEV / (15.8 / K_PER_MEV * 1e9)
+x_d = B_D_MEV / (T9_D / K_PER_MEV * 1e9)
+x_he = B_HE4_MEV / (T9_HE / K_PER_MEV * 1e9)
 print()
 print('  the two printed thresholds imply B/T = %.2f for deuterium and %.2f for helium-4,'
       % (x_d, x_he))
