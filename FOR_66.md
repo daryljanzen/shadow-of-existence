@@ -20,6 +20,130 @@ opens a fresh one on the same branch. **The live PR number is the one on this li
 
 
 
+## r7829+cc66.2 — ⚑⚑ **`PO-93`: THE STELLAR HALF OF ITS GATE IS MEASURED AT THE TURNAROUND RADIUS AND IS CLOSED. THE GAS HALF STOPS AT `1.20` Mpc. THE ROW NARROWS TO GAS — THE NARROWING IS YOURS**
+
+**Your order, in full:** *"`PO-93` … its gate is data: a baryonic mass, gas plus stars, measured
+within Virgo's turnaround radius of `7.0` to `7.8` Mpc. ① Search the literature … State what
+exists, with references and the radius each figure is measured to. ② If the pieces reach the
+turnaround radius, build the baryonic mass there with its error … ③ If they do not, state exactly
+how far they reach and what measurement would close the gap. Push your `PREDICTION.md` first, under
+your own row-claim rule."*
+
+Registration pushed alone as the first commit, sibling branches checked first for an unmerged
+`PREDICTION.md` on this step. **`③` is the outcome, and it is sharper than "they do not reach".**
+
+### ① WHAT EXISTS, EACH WITH ITS APERTURE — AND THE PIECES SPLIT
+
+| term | furthest **MEASURED** aperture | what is there |
+|---|---|---|
+| **gas** | **`1.20` Mpc** | Urban et al. 2011's density profile extent; eROSITA's `M_gas = (1.98 ± 0.70) × 10¹³ M☉` at `r₂₀₀ = 974.1 ± 5.7` kpc |
+| **stars** | **`7.00` Mpc** | Kourkchi & Tully 2017 §7.1 — `L_Ks = 1 × 10¹³ L☉` in the Virgo Association |
+
+⇒ **The gas is short of your band by a factor of `5.83`. The stars are not short at all.**
+
+Kourkchi & Tully's own sentence is the find: *"The Virgo Cluster has an `R₂ₜ` projected radius of
+`1.9` Mpc while the **Virgo Association, enclosing the infall region, has a radius of `7` Mpc**."*
+`r₁ₜ ∼ 7` Mpc **is** the turnaround radius your order names, and they integrate the light across it:
+`1 × 10¹³ L☉` against `5 × 10¹² L☉` in the collapsed core.
+
+### ② SO THE STELLAR TERM IS BUILT AT `R₀`, AND ITS GROWTH ACROSS THE GAP IS EXACTLY `2.00`
+
+`M_*(r₁ₜ) = (6.0` to `10.0) × 10¹² M☉` at `M_*/L_Ks = 0.6`–`1.0`, midpoint `8.0 × 10¹²`.
+
+> ⚑ **The measured stellar growth factor from `1.9` to `7.0` Mpc is `2.0000` — inside the
+> `1.70`–`2.35` window `r7484` showed the TOTAL baryons would need.** *For a moment that looks like
+> the row discharging. It is not, and the reason is the point of the pass.*
+
+### ③ ⚑ THE RESULT: IT CANNOT CLOSE THE GAP, SO THE GATE IS SPECIFICALLY A **GAS** MEASUREMENT
+
+Stars are `~6` per cent of the budget, so doubling them moves almost nothing:
+
+| | |
+|---|---|
+| `r7484`'s shortfall between `~3.4` Mpc and `R₀` | `8.50 × 10¹³` to `2.55 × 10¹⁴ M☉` |
+| what the stellar doubling adds, **at most** | `1.500 × 10¹³ M☉` |
+| **fraction of the shortfall it covers** | **`5.9 %` to `17.6 %`** |
+
+> ⇒ ⚑ **`≥ 82` per cent of the missing mass must be gas, and no measured gas figure reaches past
+> `1.20` Mpc. `PO-93`'s gate is not "a baryonic mass" — the stellar half is closed and the gas half
+> is the whole of what remains.** *That is a narrowing of the row. **Narrowing it is yours; I have
+> touched no register row.***
+
+### ④ AND WHAT WOULD CLOSE IT, AS AN ANGLE RATHER THAN A WISH
+
+`R₀` at `D = 15.8` Mpc subtends **`23.9°` to `26.3°`**. The deepest existing SZ detection (Planck
+XL) reaches **`~8°`**. ⇒ **The closing measurement is a diffuse-phase probe — SZ or absorption — of
+Virgo's infall region out to `≈ 24°`–`26°` from M87, resolving a gas-mass profile rather than
+fitting a truncated model to an `8°` detection: `3.14 ×` further in angle than anything that
+exists.** ⌗ *That `3.14` is Tully's `r₁ₜ/r₂ₜ`, an identity and not a second finding — the aperture
+gap **is** the first-to-second turnaround gap. Said so it cannot be mistaken for one.*
+
+### ⑤ ONE FIGURE EXCLUDED AS **CIRCULAR**, WHICH IS WHY IT IS WORTH YOUR SEEING
+
+HeVICS XVI quotes a hot-gas mass density that looks like a large-aperture gas mass — `~6 × 10¹³ M☉`
+over its volume. **Its own parenthesis:** *"we have used `20 %` of the gravitational mass measured by
+the X-rays."*
+
+> ⚠ **That is an ASSUMED baryon fraction of `0.20` — the very quantity `PO-93` exists to have
+> measured. It is excluded on circularity, not on aperture**, and `Ⓕ⑥` asserts it enters no baryon
+> total rather than promising it in prose.
+
+⌗ *Two further traps in the same paper, both of which would have produced a wrong number and one of
+which nearly did: its totals are **densities** in `M☉ Mpc⁻³`, so "total cluster stars `4 × 10¹⁰`"
+misreads as a stellar mass two hundred times too small; and its `62.4 Mpc³` is an `85` sq deg ×
+(`17`–`23` Mpc) **slab** of projected radius `≈ 1.7` Mpc, not a sphere of radius `7`.*
+
+### ⑥ ⚠ THE MARGIN, BECAUSE IT IS A FACTOR AND NOT AN ORDER OF MAGNITUDE
+
+The receipt's probe perturbs the stellar term and **the verdict flips at `M_* × 2`.** I would rather
+you had that from me than from the probe.
+
+The flip needs an inner `M_*` of `2.12` to `6.375 × 10¹³ M☉` (`1.42`–`4.25 ×`). **The largest
+published Virgo stellar mass at ANY aperture is NGVS VIII's `8.1 × 10¹² M☉`**, and `r7484`'s input
+of `1.5 × 10¹³` is already larger than that — **so the nearest flip sits `2.62 ×` above the largest
+figure the literature provides, and no measurement reaches it.** ⌗ *`r7484`'s stellar input is the
+generous choice: substituting NGVS's measured `8.1 × 10¹²` makes the stellar contribution `smaller`,
+`3.2`–`9.5` per cent. The finding is robust against the data that exist, by a factor of `2.6`.*
+
+### ⑦ `r7484`'s DIRECTION RE-VERIFIED, AND ONE INPUT OF ITS OWN IMPROVED
+
+Substituting the measured stellar term: `M_bary = 1.460`–`1.700 × 10¹⁴ M☉` allows
+`r_HE = 5.5216`–`5.8089` Mpc, so **`R₀/r_HE = 1.2050`–`1.4126`, still violated** — `60`'s `19`–`33`
+per cent survives. ⚠ *The gas term in that line is EXTRAPOLATED and is labelled so at every
+appearance; it re-verifies a **direction** and is not the dark fraction, which `PO-93` still does not
+have as a number.*
+
+⌗ **And it fixes an input of `r7484`'s rather than only agreeing with it.** That revision used
+`M_* = 1.5 × 10¹³ M☉` inferred from Kashibadze's *"an order of magnitude higher than the integral
+stellar mass"* — **carrying no stated aperture at all**. The figure above agrees within the `M/L`
+band and now carries one. *It is slightly lower, which makes the violation marginally stronger; said
+because it is what the photometry gives, not because of which way it moves.*
+
+### ⑧ THE ARMS, AND ONE UNDER-REACH I AM RECORDING RATHER THAN UPGRADING
+
+**Four registered arms hit, two guards honoured, nothing reframed or withdrawn.** ① the gas is what
+stops — hit. ② stars reach further and are the minority term — hit on both clauses. ③ the gap is a
+diffuse-phase probe — hit. ④ neither discharge nor terminate — hit. ⑤ no extrapolation passed off as
+a measurement — honoured. ⑥ every figure carries its radius — honoured.
+
+> ⚠ **But ③ under-reached and the registration is where that shows.** I predicted the instrument
+> correctly and **did not check whether one had already partly been done.** Planck XL *does* detect
+> SZ to `~8°`. So the real gap is not *"no SZ exists"* but *"the SZ that exists reaches `~8°` and
+> every mass quoted past it is extrapolated"* — the sharper statement, and `§④` gives it. ⇒ **GUARD:
+> when registering that a measurement is MISSING, state the state of the art it is missing against;
+> otherwise the prediction is unfalsifiable in the direction that matters.**
+
+### WHAT IS YOURS
+
+- **Narrowing `PO-93` to its gas half**, if you take the finding. I have touched no register row.
+- Whether the stellar half warrants being recorded as *closed* in the row's own text.
+- ⌗ *`PO-50` is untouched: it asks for masses measured INSIDE the turnaround for the ensemble test of
+  the bound, which is a different question from this one and is not answered by it.*
+
+**Gates: `124` of `124` green on the lean batch, `59` of `59` figures pinned, `7` of `7` receipt arms
+passed. `CR_cosmology.pdf` rebuilt, its P15 appendix having moved. Pushed.**
+
+
 ## r7829+cc66.1 — ⚑⚑ **IT REPRODUCES: `Δχ² = −3.8343` AGAINST `60`'s `−2.3697`, AT AN INTERIOR MINIMUM. `PO-24`'s REWRITTEN CLAUSE IS SATISFIED — THE STRIKE IS YOURS**
 
 Order `r7827`: *"refit at `r = 0.9918` with the in-force `ℓ_D = 1489.58` at exponent one… at an

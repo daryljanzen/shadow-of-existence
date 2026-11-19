@@ -1,0 +1,182 @@
+{
+  "L_assoc": 10000000000000.0,
+  "L_core": 5000000000000.0,
+  "Mstar_at_R0": [
+    6000000000000.0,
+    10000000000000.0
+  ],
+  "Mstar_mid": 8000000000000.0,
+  "fb_below_floor": true,
+  "fb_labelled": [
+    0.17590361445783131,
+    0.26153846153846155
+  ],
+  "flip_headroom_over_largest": 2.623456790123457,
+  "flip_multiplier": {
+    "0.25": [
+      1.4166666666666667,
+      4.25
+    ],
+    "0.50": [
+      2.8333333333333335,
+      8.5
+    ]
+  },
+  "gas_reach": 1.2,
+  "gas_short_factor": 5.833333333333334,
+  "gas_stops": true,
+  "hevics_star_total": 2496000000000.0,
+  "inputs": {
+    "D_virgo": 15.8,
+    "D_virgo_band": [
+      15.0,
+      18.0
+    ],
+    "ML_Ks": [
+      0.6,
+      1.0
+    ],
+    "R0_band": [
+      7.0,
+      7.8
+    ],
+    "hevics_assumed_fgas": 0.2,
+    "hevics_star_density": 40000000000.0,
+    "hevics_volume": 62.4,
+    "planck_sz_angle": 8.0,
+    "r7484_aperture": 3.4,
+    "r7484_bary_at_3p4": [
+      155000000000000.0,
+      175000000000000.0
+    ],
+    "r7484_factor": [
+      1.7,
+      2.35
+    ],
+    "r7484_mstar": 15000000000000.0,
+    "r7484_needed": [
+      260000000000000.0,
+      410000000000000.0
+    ]
+  },
+  "largest_published_mstar": 8100000000000.0,
+  "lit": {
+    "erosita_r200": {
+      "aperture_Mpc": 0.9741,
+      "aperture_stated": "r200 = 974.1 +/- 5.7 kpc",
+      "component": "hot gas",
+      "err": 7000000000000.0,
+      "source": "eROSITA, A&A 2024 (aa49391-24)",
+      "status": "MEASURED",
+      "value": 19800000000000.0
+    },
+    "kkk20_MT": {
+      "aperture_Mpc": 7.15,
+      "aperture_stated": "inside R0 = 7.0-7.3 Mpc, from the infall model",
+      "component": "total mass inside R0",
+      "err": 90000000000000.0,
+      "source": "Kashibadze et al. 2020, A&A 635, A135",
+      "status": "MEASURED",
+      "value": 740000000000000.0
+    },
+    "kkk20_core": {
+      "aperture_Mpc": 1.8,
+      "aperture_stated": "inside the 6 deg radius, D = 12-22 Mpc",
+      "component": "stellar light L_K",
+      "err": 1100000000000.0,
+      "source": "Kashibadze, Karachentsev & Karachentseva 2020, A&A 635, A135, sec 3",
+      "status": "MEASURED",
+      "value": 8600000000000.0
+    },
+    "kt17_assoc": {
+      "aperture_Mpc": 7.0,
+      "aperture_stated": "the Virgo Association, enclosing the infall region, radius r1t ~ 7 Mpc",
+      "component": "stellar light L_Ks",
+      "err": null,
+      "source": "Kourkchi & Tully 2017, ApJ 843, 16, sec 7.1",
+      "status": "MEASURED",
+      "value": 10000000000000.0
+    },
+    "kt17_assoc_mass": {
+      "aperture_Mpc": 7.0,
+      "aperture_stated": "within the association, r1t ~ 7 Mpc",
+      "component": "total mass",
+      "err": null,
+      "source": "Kourkchi & Tully 2017 (luminosity-derived; \"susceptible to systematics\")",
+      "status": "MEASURED",
+      "value": 700000000000000.0
+    },
+    "kt17_core": {
+      "aperture_Mpc": 1.9,
+      "aperture_stated": "the collapsed core, R2t projected radius 1.9 Mpc",
+      "component": "stellar light L_Ks",
+      "err": null,
+      "source": "Kourkchi & Tully 2017, ApJ 843, 16, sec 7.1",
+      "status": "MEASURED",
+      "value": 5000000000000.0
+    },
+    "ngvs8_mstar": {
+      "aperture_Mpc": 1.8,
+      "aperture_stated": "within Virgo's virial radius, corrected for diffuse light",
+      "component": "stellar mass M*",
+      "err": null,
+      "source": "Durrell et al. 2014 (NGVS VIII), ApJ 794, 103",
+      "status": "MEASURED",
+      "value": 8100000000000.0
+    },
+    "planck_sz_hi": {
+      "aperture_Mpc": 5.0,
+      "aperture_stated": "integrated to a truncation radius of 5 Mpc",
+      "component": "hot gas",
+      "err": null,
+      "source": "Planck Intermediate XL, A&A 596, A101",
+      "status": "EXTRAPOLATED",
+      "value": 160000000000000.0
+    },
+    "planck_sz_lo": {
+      "aperture_Mpc": 2.5,
+      "aperture_stated": "integrated to a truncation radius of 2.5 Mpc",
+      "component": "hot gas",
+      "err": null,
+      "source": "Planck Intermediate XL, A&A 596, A101",
+      "status": "EXTRAPOLATED",
+      "value": 140000000000000.0
+    },
+    "urban_profile": {
+      "aperture_Mpc": 1.2,
+      "aperture_stated": "r ~ 1.2 Mpc, 13 XMM-Newton pointings, centre northwards",
+      "component": "hot gas density profile extent",
+      "err": null,
+      "source": "Urban et al. 2011, MNRAS 414, 2101",
+      "status": "MEASURED",
+      "value": null
+    }
+  },
+  "rHE_bary": [
+    5.52155122653656,
+    5.808889666145872
+  ],
+  "sep": 1.853674387217929,
+  "shortfall": [
+    85000000000000.0,
+    255000000000000.0
+  ],
+  "star_adds_max": 15000000000000.0,
+  "star_covers_frac": [
+    0.058823529411764705,
+    0.17647058823529413
+  ],
+  "star_growth": 2.0,
+  "star_growth_inside_window": true,
+  "star_reach": 7.0,
+  "star_reaches": true,
+  "theta_R0": [
+    23.895161415070366,
+    26.274212154727437
+  ],
+  "theta_ratio": 3.1355858481123624,
+  "violation": [
+    1.205049570969802,
+    1.412646497330899
+  ]
+}

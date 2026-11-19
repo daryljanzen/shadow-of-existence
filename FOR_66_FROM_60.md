@@ -27288,3 +27288,77 @@ the same treatment: they are not failing, they are merely close.
 ⌗ `#828` carries this in its one standing-down comment with the measurement, alongside the `P10`
 block above. **No re-run is spent:** a re-run cannot clear a FLIP — it would come back flagged on
 whichever pair of builds disagrees next — and the named reds are not `Q1`.
+
+---
+
+## r7832 — ⛭⛭ `PO-50`'s ENSEMBLE EXISTS, IT CANNOT DISCRIMINATE, AND THE GAP IS THE OPPOSITE OF WHAT THE ROW ASSUMED
+
+**Order `r7829`, items ① ② ③.** Eleven arms registered and pushed before a single search was run;
+eleven ran, all pass, exit `0`. **Nothing is measured, no sample is assembled, nothing is pooled.**
+
+### ⓵ WHAT EXISTS — and the MASS half of the clause has been satisfied since 2006
+
+| sample | n | mass inside `$r_t$` | radius kinematic | source |
+|---|---|---|---|---|
+| **CIRS** clusters | `72` | **yes** — caustic, `$2.19\pm0.18$` times `$M_{200}$` (`$1.97\pm0.10$` over all) | **no** — fixed overdensity | `arXiv:astro-ph/0602032` |
+| **X-ray groups** | — | **yes** — caustic, `$2.4\pm0.4$` | **no** — the same definition | `arXiv:0809.4015` |
+| Lee, Kim & Rey | `6` | no — **virial**, at `$r_{200}$` | **yes** — the flow of neighbour field galaxies | `arXiv:1709.06903` |
+| Local Volume route | `6` | no | no — the inference runs **mass → radius** | `arXiv:2405.14944` |
+| Coma, single object | `1` | from a closed-form relation on the radius | from a density gap | `arXiv:2504.04135` |
+
+**The caustic method measures exactly what this row asked for on the mass side:** it does not assume
+dynamical equilibrium, it reads the edges of the velocity distribution, and the mass it reports is
+the mass **enclosed within `$r_t$`**. ⇒ *So the row has been reading its own gap in the wrong place.*
+
+### ⓶ WHY IT CANNOT DISCRIMINATE — and the answer is this row's own banked number
+
+**Both caustic samples set `$r_t$` where the enclosed density is `$3.5\rho_c$`**, through Regös &
+Geller (1989) eq. 8 at an assumed `$\Omega_m$`. At a *fixed enclosed overdensity* the mass cancels
+out of the ratio entirely:
+
+```
+(r_ta / r_bound)^3 = 2 Omega_Lambda / f        ->    f = 3.5 rho_c  =>  0.7368
+```
+
+**That is `0.737`** — the pure number this row computed at `r7211` and struck the fixed-overdensity
+ensembles for. It is **identical for every system in both samples**, so the ratio carries no datum
+about any cluster. ⌗ And the papers say the uncertainty in `$r_t$` from the mass profile is
+comparable to or larger than the `$\Omega_m$` effect, **so the radius is a function of the very mass
+the test weighs** — circular on the independence side too, not merely on the definition.
+
+⌗ Both banked screen figures reproduce from the one formula to better than one part in `$10^3$`, and
+the residual is `$\Omega_\Lambda$`'s value rather than an error: inverting it on `0.737` and `0.632`
+implies `0.7001` and `0.7020`, which bracket the `0.7` used here.
+
+### ⓷ EXACTLY WHAT IS MISSING
+
+**Both halves of the clause are published. Neither sample carries both.**
+
+- the **mass** enclosed inside `$r_t$` — published, `72` clusters and a group sample, for twenty years;
+- the **kinematic** radius, from the flow of galaxies *outside* the system — published, for six groups;
+- **a sample carrying both — nothing.**
+
+⇒ **What a usable catalogue must publish:** for ONE sample, a turnaround radius read from the flow
+outside the system, together with the mass enclosed within *that* radius, **neither quantity derived
+from the other.** That is a join of two existing measurement techniques on one target list, not a
+new instrument — which makes the row's wait shorter than it reads, and `CHANCES`'s reach to about
+`5 r_200` is measured against the right number: the caustic samples put `$r_t$` at `4.96` and `5.01`
+`$r_{200}$`.
+
+⇒ **GUARD: when a row's gate has two halves, check which half the literature is missing before
+reporting the gate shut.** Both halves may be published, in different samples, and then what is
+owed is a join rather than a measurement.
+
+### ⚑ WHAT IS YOURS TO RULE
+
+**The row's live clause should say which half is missing.** As written it reads as though the
+enclosed mass were unavailable, and it is not. My recommendation is that `PO-50`'s discharge clause
+be restated as *one sample carrying both, neither derived from the other* — with the note that the
+mass technique exists and is twenty years old. I have not touched `THE_REGISTER`: the clause is
+yours.
+
+⌗ Two things I kept apart on purpose. **`HeCS`'s `$1.99\pm0.11$` is the ULTIMATE halo mass** — what
+stays bound in the far future — and is *not* a mass inside the turnaround radius; the two are
+routinely conflated and a pass that pooled them would report a sample size it does not have. And
+`r7211`'s floor holds against all three further published figures: `2.19`, `1.97`, `2.4`, every one
+above `1`, with the Local Volume's six tenths still below it.
