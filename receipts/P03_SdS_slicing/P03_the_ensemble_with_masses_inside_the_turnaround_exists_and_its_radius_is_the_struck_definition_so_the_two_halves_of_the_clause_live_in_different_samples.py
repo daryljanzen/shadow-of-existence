@@ -62,6 +62,20 @@ XGROUPS = {        # Rines & Diaferio, arXiv:0809.4015 -- X-ray selected groups,
 }
 HECS_ULTIMATE = 1.99                            # arXiv:1209.3786 -- the ULTIMATE halo mass, NOT M_t
 LKR2017 = {'n': 6, 'radius': 'kinematic, external', 'mass': 'virial, from the members'}
+
+# ⌗ THE CLAUSE'S TWO HALVES AS A TABLE, so that "no sample satisfies both" is COMPUTED from the
+#   published record rather than asserted.  mass_inside: is the reported mass the mass ENCLOSED
+#   within the turnaround radius?  radius_kinematic: is the radius read from the motions, as
+#   opposed to set at a fixed enclosed overdensity or inferred FROM the mass?
+SAMPLES = {
+    'CIRS clusters':        {'n': 72, 'mass_inside': True,  'radius_kinematic': False},
+    # ⛔ n NOT ESTABLISHED by this pass -- the paper's group count was not read, so it is None
+    #   rather than a number, and the >= 5 test turns on CIRS's published 72 instead
+    'X-ray groups':         {'n': None, 'mass_inside': True,  'radius_kinematic': False},
+    'Lee, Kim & Rey 2017':  {'n': 6,  'mass_inside': False, 'radius_kinematic': True},
+    'Local Volume route':   {'n': 6,  'mass_inside': False, 'radius_kinematic': False},
+}
+MIN_ENSEMBLE = 5
 OMEGA_LAMBDA = 0.7
 
 print("=" * 100)
@@ -123,16 +137,16 @@ check(f"Ⓒ③ the {len(ROUTES)} candidate routes are enumerated with their sour
 
 # ======================================================= Ⓓ④ THE REGISTERED PREDICTION
 head("D -- THE REGISTERED PREDICTION, AND IT HOLDS ONLY ON ONE WORD")
-_both = []          # samples satisfying BOTH halves
-print(f"      CIRS                 n = {CIRS['n']:3d}   mass INSIDE r_t: yes (caustic)   "
-      f"radius kinematic: NO (fixed overdensity)")
-print(f"      X-ray groups         n = n/a   mass INSIDE r_t: yes (caustic)   "
-      f"radius kinematic: NO (fixed overdensity)")
-print(f"      Lee, Kim & Rey 2017  n = {LKR2017['n']:3d}   mass INSIDE r_t: NO (virial)      "
-      f"radius kinematic: yes (external flow)")
-print(f"      Local Volume route   n =   6   mass INSIDE r_t: NO              "
-      f"radius kinematic: NO (mass -> radius)")
-print(f"      ⇒ samples satisfying BOTH halves: {len(_both)}")
+def _ensemble(v):
+    return v['n'] is not None and v['n'] >= MIN_ENSEMBLE
+_both = [k for k, v in SAMPLES.items()
+         if v['mass_inside'] and v['radius_kinematic'] and _ensemble(v)]
+for k, v in SAMPLES.items():
+    print(f"      {k:<22} n = {str(v['n']) if v['n'] is not None else 'n/a':>3}   "
+          f"mass INSIDE r_t: "
+          f"{'yes' if v['mass_inside'] else 'NO ':<3}   radius kinematic: "
+          f"{'yes' if v['radius_kinematic'] else 'NO'}")
+print(f"      ⇒ samples satisfying BOTH halves at n >= {MIN_ENSEMBLE}: {len(_both)}  {_both}")
 check("Ⓓ④ the registered prediction HOLDS, and it holds on the word `kinematic` alone: no "
       "published catalogue carries both a kinematic turnaround radius and a mass measured inside "
       "it for an ensemble of five or more.  ⛔ BUT ITS EMPHASIS WAS WRONG -- the registration read "
@@ -222,17 +236,28 @@ print("                       virial.  ⛔ The two halves live in different samp
 print("      ⇒ WHAT A USABLE CATALOGUE WOULD HAVE TO PUBLISH: for one sample, a turnaround radius")
 print("        from the flow of galaxies OUTSIDE the system, together with the mass enclosed")
 print("        within THAT radius -- neither quantity derived from the other.")
-check("Ⓘ⑨ what is missing is stated exactly, and it is the opposite of what the row assumed: the "
-      "enclosed mass inside the turnaround radius is published and has been for twenty years, "
-      "while the kinematic radius is published only for a sample whose mass is virial.  The two "
-      "halves of the clause live in DIFFERENT samples, and what a usable catalogue must publish "
-      "is both of them for ONE sample, neither derived from the other",
-      True)
+_mass_side = {k for k, v in SAMPLES.items() if v['mass_inside'] and _ensemble(v)}
+_rad_side = {k for k, v in SAMPLES.items() if v['radius_kinematic'] and _ensemble(v)}
+print(f"      samples carrying the MASS half   : {sorted(_mass_side)}")
+print(f"      samples carrying the RADIUS half : {sorted(_rad_side)}")
+print(f"      their intersection               : {sorted(_mass_side & _rad_side)}")
+check("Ⓘ⑨ what is missing is stated exactly, and it is the opposite of what the row assumed: BOTH "
+      f"halves of the clause are published and their samples are DISJOINT -- {len(_mass_side)} "
+      f"sample(s) carry the enclosed mass, {len(_rad_side)} carries the kinematic radius, and no "
+      "sample carries both.  So what a usable catalogue must publish is both of them for ONE "
+      "sample, neither derived from the other -- a join of two existing techniques on one target "
+      "list rather than a new instrument",
+      _mass_side and _rad_side and not (_mass_side & _rad_side))
 
 # ======================================================= Ⓙ⑩ NOTHING IS POOLED
 head("J -- NOTHING IS POOLED AND NO DEFINITION IS HARMONISED")
-_formed = []        # every figure this receipt prints is quoted from one paper
-print(f"      figures this receipt FORMS from two samples together : {len(_formed)}")
+# every ratio printed here must come from exactly ONE sample's dict -- checked, not asserted
+_sources = {'CIRS': CIRS, 'XGROUPS': XGROUPS}
+_formed = [v for v in (CIRS['M_t_over_M200_reaching'], CIRS['M_t_over_M200_all'],
+                       XGROUPS['M_t_over_M200'])
+           if sum(v in d.values() for d in _sources.values()) != 1]
+print(f"      ratios printed : {[CIRS['M_t_over_M200_reaching'], CIRS['M_t_over_M200_all'], XGROUPS['M_t_over_M200']]}")
+print(f"      each traced to exactly one sample's record; those that are not: {len(_formed)}")
 print(f"      HeCS's {HECS_ULTIMATE} is the ULTIMATE halo mass and is NOT pooled with the "
       f"M_t/M_200 figures:")
 print(f"      it is the mass that stays bound in the far future, a different quantity, and it is")
