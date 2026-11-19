@@ -121,7 +121,9 @@ def main():
           f'flavour-summed strength median {np.median(tot):.0f}',
           worst < 1e-12 and ok and 50 < np.median(tot) < 70 and len(res3) > 5000)
     m3, m2 = np.median(res3), np.median(res2)
-    check(f'(1) least-washed flavour strength, median: {m3:.1f} (three flavours), {m2:.1f} (two)', 8 < m3 < 12 and 14 < m2 < 21)
+    print(f'      medians unrounded: {m3:.6f}, {m2:.6f}')
+    check(f'(1) least-washed flavour strength, median: {m3:.1f} (three flavours), {m2:.1f} (two)', 8 < m3 < 12 and 14 < m2 < 21
+          and round(m3, 1) == 9.6 and round(m2, 1) == 17.6)   # r7831 (69): the INDEX row prints 9.6 and 17.6
 
     k_other = np.median(tot) - m2
     ks = kappa(m2) + kappa(k_other)
