@@ -84,9 +84,48 @@ spectrum**, the latter being the one the acoustic heights carry.
 > the number it defines behind. Correcting it and leaving the RECEIPT behind is the same error
 > mirrored.*
 
+### ⛔ ② `§refit-bound`, lines `2141`–`2142` — **the claim holds and the figures offered as its evidence do not, which is the defect this very receipt diagnosed for the PEAKS and nobody carried to the HEIGHTS**
+
+**The paper says:** *"and height ratios `$2.291$` and `$2.348$` against `$2.291$` and `$2.349$`:
+within a tenth of a multipole on every peak and **within a fiftieth of a per cent on the heights**."*
+
+**Three figures for one quantity, and they disagree:**
+
+| source | height agreement |
+|---|---|
+| the receipt's measurement (arm-of-record row, one matched locator) | **`-0.011\%`** (`P_1/P_2`) and **`-0.017\%`** (`P_1/P_3`) |
+| the paper's stated bound, *"a fiftieth of a per cent"* | `0.02\%` |
+| **what the paper's own printed pair implies**, `2.348` vs `2.349` | **`-0.043\%`** |
+
+⇒ **The bound is TRUE of the measurement (`0.011` and `0.017` are both inside `0.02`) and FALSE of
+the evidence the sentence prints (`0.043 > 0.02`).** The printed ratios are rounded to four
+significant figures, and at that rounding a one-in-the-last-digit difference overstates the real
+agreement by about a factor of three.
+
+**And the receipt already found exactly this, for the peaks, in these words** (`r7653 ⓵`):
+
+> *Put BOTH paths through the one matched locator and they agree to under a tenth of a multipole at
+> every peak and to a hundredth of a per cent on the heights … **So the claim HOLDS, and comfortably;
+> what does not hold is the pair of figures offered as its evidence.***
+
+*The peaks half was repaired — the paper's offsets `+0.00/+0.02/-0.01/-0.09` now track the receipt's
+`-0.00/+0.01/-0.02/-0.08` and sit inside "a tenth of a multipole". **The heights half was not.***
+
+**What it should say:** give the height agreement as the receipt measures it — `0.011\%` and
+`0.017\%` on `$P_1/P_2$` and `$P_1/P_3$` — instead of inviting the reader to difference two
+independently rounded four-figure ratios. The *"fiftieth of a per cent"* may stand; it is the printed
+pair that cannot carry it.
+
+> ⚠ **NOT FIXED HERE.** The receipt states **`THE TABLE IS PINNED, ROW BY ROW, BY ONE PROCEDURE`**
+> and that *"every figure below is held to the digit it is"* — `2.291` and `2.348` are pinned table
+> values, so they are **right as table entries** and must not be re-rounded to repair a sentence.
+> The repair belongs in the prose that *compares* them, and replacing printed figures with two new
+> ones (`0.011`, `0.017`) in a paper whose figure pins are gated is a coordinated change. ⇒ **`69`'s,
+> with the numbers supplied above so it is a decision and not a search.**
+
 ---
 
-**`1` substantive, `0` mechanical fixed**, across five seams and six sections. ⌗ *Stated plainly
+**`2` substantive, `0` mechanical fixed**, across five seams and eight sections. ⌗ *Stated plainly
 because the registration predicted `3`–`12`: the count is a live score against `④`, not a formality.*
 
 ## Near-misses — figures that read as superseded and are not
@@ -131,6 +170,20 @@ Every sentence that prints two figures which must agree, checked. **All eleven M
 ⌗ *The suppression quartet at `693`–`695` is the strongest single piece of evidence that the
 one-rate landing was carried through properly: four figures, two configurations, one formula, and
 every one reproduces at `\alpha=1.70` from the ratio the sentence names.*
+
+## Arithmetic verified in `§refit-bound` (1010–2515) — nine more, all MATCH
+
+`502.1/185 = 2.714` (printed `2.71`); `584.0/269.9 = 2.164` (printed `2.16`); `1.61/1.01 = 1.594`
+(printed `1.60`); freedom closing `54.9` per cent of the excess (printed *"more than half"*);
+`1.015-0.954 = 0.061`; **`(186.0-180)/\sqrt{2\cdot180} = 0.316`** (printed *"within a third of a
+standard deviation"*) and **`(276.4-180)/\sqrt{2\cdot180} = 5.08`** (printed `5.1`); `276.4-180 =
+96.4` (printed *"about a hundred"*); `60.5/276.4 = 21.9` per cent (printed *"over a fifth"*). Further
+out: `17.307` against `17.369` Mpc is `0.358` per cent (printed `0.36`); `297.0` against `296.0` is
+`1/296` (printed *"a part in three hundred"*); `1.096/0.185 = 5.92` (printed `5.9`).
+
+⌗ *The two `\chi^2` significance conversions are the ones worth naming: both reproduce exactly from
+`\sigma=\sqrt{2\,\mathrm{dof}}` at `\mathrm{dof}=180`, which is the correct conversion and not the
+one a careless author reaches for.*
 
 ## Still to read
 
