@@ -1220,5 +1220,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py": {
+    "gates": [
+     "P# keeps eta apart: \"the same standard"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44571608920",
+    "since": "e39fa0d6ffe2aa3859f42fd1004602da9be78f41"
+   }
+  }
  }
 }
