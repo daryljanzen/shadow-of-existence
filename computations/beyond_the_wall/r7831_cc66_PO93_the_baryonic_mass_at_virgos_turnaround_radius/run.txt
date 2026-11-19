@@ -1,0 +1,114 @@
+========================================================================================================
+  Ⓥ① THE INSTRUMENT IS THE IMPORTED ONE, AND ITS OWN CONTROL IS RE-RUN
+========================================================================================================
+      r_HE and constants  <-  receipts/P03_SdS_slicing/P03_which_mass_sets_the_hubble_eddington_radius.py  (by ast)
+      H0 = 73 km/s/Mpc,  OmL = 0.7,  f_b = 0.157
+      its control: f_b^(-1/3) = 1.854 in radius, 1/f_b = 6.37 in mass  -> ok
+
+========================================================================================================
+  ① WHAT EXISTS, AND THE RADIUS EACH FIGURE IS MEASURED TO
+========================================================================================================
+      component                                 value  aperture  status       aperture as stated
+      hot gas                               1.980e+13   0.974Mpc  MEASURED     r200 = 974.1 +/- 5.7 kpc
+                                                                                 [eROSITA, A&A 2024 (aa49391-24)]
+      hot gas density profile extent               --   1.200Mpc  MEASURED     r ~ 1.2 Mpc, 13 XMM-Newton pointings, centre northwards
+                                                                                 [Urban et al. 2011, MNRAS 414, 2101]
+      hot gas                               1.400e+14   2.500Mpc  EXTRAPOLATED integrated to a truncation radius of 2.5 Mpc
+                                                                                 [Planck Intermediate XL, A&A 596, A101]
+      hot gas                               1.600e+14   5.000Mpc  EXTRAPOLATED integrated to a truncation radius of 5 Mpc
+                                                                                 [Planck Intermediate XL, A&A 596, A101]
+      stellar light L_Ks                    5.000e+12   1.900Mpc  MEASURED     the collapsed core, R2t projected radius 1.9 Mpc
+                                                                                 [Kourkchi & Tully 2017, ApJ 843, 16, sec 7.1]
+      stellar light L_Ks                    1.000e+13   7.000Mpc  MEASURED     the Virgo Association, enclosing the infall region, radius r1t ~ 7 Mpc
+                                                                                 [Kourkchi & Tully 2017, ApJ 843, 16, sec 7.1]
+      stellar light L_K                     8.600e+12   1.800Mpc  MEASURED     inside the 6 deg radius, D = 12-22 Mpc
+                                                                                 [Kashibadze, Karachentsev & Karachentseva 2020, A&A 635, A135, sec 3]
+      stellar mass M*                       8.100e+12   1.800Mpc  MEASURED     within Virgo's virial radius, corrected for diffuse light
+                                                                                 [Durrell et al. 2014 (NGVS VIII), ApJ 794, 103]
+      total mass inside R0                  7.400e+14   7.150Mpc  MEASURED     inside R0 = 7.0-7.3 Mpc, from the infall model
+                                                                                 [Kashibadze et al. 2020, A&A 635, A135]
+      total mass                            7.000e+14   7.000Mpc  MEASURED     within the association, r1t ~ 7 Mpc
+                                                                                 [Kourkchi & Tully 2017 (luminosity-derived; "susceptible to systematics")]
+
+      furthest MEASURED gas aperture    1.200 Mpc
+      furthest MEASURED stellar aperture 7.000 Mpc
+      the turnaround band PO-93 asks about  7.0 - 7.8 Mpc
+
+  ⇒ ① the GAS stops short of 7.0 Mpc: True  (by a factor of 5.83)
+  ⇒ ② the STARS reach the turnaround radius: True
+
+  ⚠ AND ONE FIGURE THAT LOOKS LIKE A GAS MASS AND MAY NOT BE USED AS ONE:
+      HeVICS XVI (Davies et al. 2014) quotes a hot-gas mass DENSITY of ~1e12 Msun/Mpc^3, but states: "we have used 20% of the gravitational mass measured by the X-rays". That is an ASSUMED baryon fraction of 0.20 -- which is the very quantity PO-93 asks to have measured. Using it to answer PO-93 would be circular.
+      (its stellar figure IS usable, as a density: 4e+10 Msun/Mpc^3 x 62.4 Mpc^3 = 2.50e+12 Msun,
+       over an 85 sq deg x (17-23 Mpc) slab -- a projected radius of ~1.7 Mpc, not a sphere of radius 7.)
+
+========================================================================================================
+  ② THE ONE BARYONIC TERM THAT IS MEASURED TO THE TURNAROUND RADIUS, BUILT
+========================================================================================================
+      L_Ks in the collapsed core (R2t = 1.9 Mpc)      5.000e+12 Lsun
+      L_Ks in the association    (r1t ~ 7.0 Mpc)      1.000e+13 Lsun
+  ⇒   the stellar growth factor across the aperture gap   2.0000
+      r7484 needs the TOTAL baryons to grow by 1.7-2.35 across this gap
+  ⇒   the measured STELLAR factor 2.00 sits inside that window: True
+
+      with M*/L_Ks = 0.6-1.0 for old cluster populations:
+        M* inside r1t ~ 7 Mpc      6.000e+12 to 1.000e+13 Msun
+        midpoint                   8.000e+12 Msun
+      r7484 used M* = 1.50e+13 Msun with NO stated aperture;
+      this figure agrees within the M/L band and now CARRIES one.
+
+========================================================================================================
+  ③ THE GAP: WHAT IS MISSING, AND HOW MUCH OF IT THE MEASURED TERM CAN SUPPLY
+========================================================================================================
+      for the baryon-only bound NOT to be violated, r7484 requires
+        M_bary inside R0      2.60e+14 to 4.10e+14 Msun
+      against what is on the books inside ~3.4 Mpc
+        gas (EXTRAPOLATED) + stars  1.55e+14 to 1.75e+14 Msun
+  ⇒   the shortfall to be found between 3.4 and 7.0-7.8 Mpc:
+        8.500e+13 to 2.550e+14 Msun
+
+      the stellar term doubles across the gap, so it adds AT MOST
+        1.50e+13 x (2.00 - 1) = 1.500e+13 Msun
+      (at most, because 3.4 Mpc already encloses part of that growth)
+  ⇒   the measured stellar term covers 5.9% to 17.6% of the shortfall
+
+  ⇒ ⚑ SO PO-93's GATE IS NOT "A BARYONIC MASS" BUT SPECIFICALLY "A GAS MASS".
+      The stellar half is measured to the turnaround radius and it cannot close
+      the gap; 82% or more of the shortfall must be gas, and no
+      measured gas figure reaches past 1.20 Mpc.
+
+========================================================================================================
+  ④ WHAT MEASUREMENT WOULD CLOSE THE GAP — stated as an aperture on the sky
+========================================================================================================
+      Virgo's distance  D = 15.8 Mpc (Kourkchi & Tully 2017 weighted)
+      R0 = 7.0-7.8 Mpc subtends  23.9 to 26.3 deg
+      the existing SZ detection (Planck XL) reaches ~8 deg (~2x the virial radius)
+  ⇒   the closing measurement must reach 3.14x further IN ANGLE than the deepest existing one
+        at D = 15.0 Mpc:  25.0 to 27.5 deg
+        at D = 18.0 Mpc:  21.3 to 23.4 deg
+
+========================================================================================================
+  ⑤ THE BOUND RE-READ WITH THE MEASURED STELLAR TERM — does r7484's direction hold?
+========================================================================================================
+      M_bary = Planck-SZ gas (EXTRAPOLATED, 2.5-5 Mpc) + M* (MEASURED, 7 Mpc)
+             = 1.460e+14 to 1.700e+14 Msun
+      r7484 used 1.550e+14 to 1.750e+14 Msun
+      the r_HE bound this allows   5.522 to 5.809 Mpc
+      against R0 = 7.0-7.8 Mpc
+  ⇒   R0 / r_HE(M_bary) = 1.205 to 1.413   => VIOLATED: True
+      r7484 reported this violation as 19 to 33 per cent; it survives the substitution.
+
+  ⚠ AND THE QUANTITY PO-93 ASKS FOR IS STILL NOT A NUMBER.  The gas term in the
+    line above is EXTRAPOLATED, so f_b(R0) computed from it is the bound r7484
+    already has, not the measurement the row asks for.  Reported, not offered
+    as a discharge -- prediction ⑤ of this revision's registration.
+    (for the record, and labelled: M_bary/M_T(R0) = 0.176 to 0.262, against the
+     1.7-2.35x / 33-56 per cent a baryon-only Virgo would need.)
+    even the EXTRAPOLATED budget falls below that 33 per cent floor: True
+
+========================================================================================================
+  ⇒ VERDICT: PO-93 does NOT discharge and does NOT terminate.  The stellar half of
+    its gate is measured to the turnaround radius and is closed; the gas half is
+    not, and the gap is located to a factor and an angle.
+========================================================================================================
+  wrote computations/beyond_the_wall/r7831_cc66_PO93_the_baryonic_mass_at_virgos_turnaround_radius/result.json
