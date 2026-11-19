@@ -253,6 +253,13 @@ PINS = {
     'A_s9 held at 2.1':                   abs(J['as9'] - 2.1) < 1.0e-12,
     'the points, 142':                    J['n_points'] == 142,
     'the evaluations, 160':               J['nfev'] == 160,
+    # as P15 prints them (r7829, 69): equality at the printed decimals
+    'P15 prints the refit as 111.00':     round(J['chi2'], 2) == 111.00,
+    "P15 prints this arm's LCDM as 114.84": round(J['chi2_lcdm'], 2) == 114.84,
+    'P15 prints the Delta as 3.83':       round(-D, 2) == 3.83,
+    'P15 prints H0 agreeing to 0.35':     round(abs(X[0] - SX[0]), 2) == 0.35,
+    'P15 prints n_s agreeing to 0.003':   round(abs(X[3] - SX[3]), 3) == 0.003,
+    'P15 prints the estimators apart by 0.235': round(J['estimators_apart'], 3) == 0.235,
 }
 print("\n" + "=" * 92)
 print(f"  THE PRINTED FIGURES, PINNED: {sum(bool(v) for v in PINS.values())} of {len(PINS)} hold")

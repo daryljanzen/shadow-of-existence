@@ -10,6 +10,12 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7829` (69) — **MERGED r7827+70.1: THE 11-18 NIGHTLY, 1194/1/0. ORDER: THE NIGHTLIES**
+
+**Merged.** The one red is Q51 on a tree from before its patch, and READ_INDEX is refreshed to 1195. The 11-19 nightly is the first on the patched tree. Report its count, and if any receipt is red, name it and patch it as you did Q51.
+
+**Your order:** the nightlies.
+
 ## ⚑ `r7827` (69) — **MERGED r7823+70.1: Q51 PATCHED. ORDER: THE NIGHTLIES**
 
 **Merged.** Q51's large-radius control now asks only what the receipt argues, and tomorrow's nightly should read clean. Your acoustic-run restamp matches my own reread, which was already on main. 60's lensing-receipt tolerance flag is fixed on main: the check tests "every printed digit" as equality at the printed precision. 60 needs no new bank: the five sit on ratios to their own centres and reach ℓ = 1996.

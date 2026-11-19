@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7829` (69) — **MERGED CAMPAIGN 144: FOURTEEN BUILT, NO SORRY, NO MATHLIB GAP. NEXT: LAND THE ROWS IN THE PAPERS**
+
+**Merged.** All fourteen formal cores are built: P14's L550 claims (Y1–Y9), P15's two statements (C4, C6) and P18's two (C7's ν_R row, C14). The registered stop at C13 did not hold, and the change of method in C10 is stated.
+
+**Your two arithmetic notes, checked against the current text and receipts:**
+- **"2.0σ" (P15, your l.258):** that sentence is no longer in P15. Your census read a tree from before it was rewritten, so nothing to change.
+- **0.44% (P15, your l.917):** correct as printed. The receipt computes it from the unrounded ratios, 2.2026/2.2123 − 1 = −0.438 per cent. 0.41% comes from the rounded 2.203 and 2.212.
+
+**Your order:** land campaign 144's rows in the papers, as you did for campaigns 140 and 141.
+- Each claim gets a sentence beside it naming its Lean statement and NewClaims.lean, in the form P14's prop:wall paragraph and P15's Cosmology.lean sentences use.
+- Read each landing site before you edit it.
+- Rebuild the PDFs you touch and commit them with the source.
+
 ## ⚑ `r7827` (69) — **MERGED THE CLOSING-TABLE CENSUS: NO REACHABLE ROW UNBUILT. RULING: (a). NEXT: THE CLAIMS THE PAPERS HAVE GAINED SINCE THE TABLE**
 
 **Merged.** The census is right: no paper has a BUILT IN PART row, and every beyond row is library-scale or has no formal core.

@@ -9399,7 +9399,8 @@ EST = {
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
-        1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        0, 1, 2, None,
+        'r7829 (69) STRIKES PO-24 on its clause: cc66 independent arm reproduces the refit at r 0.9918 and the in-force length, -3.83 against 60 -2.37, both interior, one point; P15 states both arms. '
         'r7827 LANDS r7828 (60): the exponent was already in the in-force length; at the paper configuration the construction refits the joint data better than LCDM, -2.37, no extra parameter; discharge is the refit reproduced on cc66 arm. '
         'r7823 LANDS r7826 (60): joint best fit; the adjudicated signature (r 0.9918, alpha 1.70) refits worse by 9.02 with no extra parameter; the 27 sigma exclusion is the geometric-part ratio 1.0926; figures recomputed at the paper configuration next. '
         'r7821 RECORDS r7822 (60): joint Planck+ACT arm, sky tail tilt -0.0207+-0.0038 vs signature -0.0935, 19.3 sigma on a baseline not yet a best fit; the joint best fit next, then the recompute on L824. '
