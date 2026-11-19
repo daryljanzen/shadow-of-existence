@@ -2536,6 +2536,21 @@
     "since": "06686032a83ac1d39d11e5ecfd1be12063caf722",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L550_third_mechanism/Y16_with_flavours_resolved_the_right_handed_neutrinos_make_eta_above_about_6e12_GeV_and_a_lower_scale_needs_a_weakly_coupled_flavour.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44613745500",
+    "since": "06686032a83ac1d39d11e5ecfd1be12063caf722"
+   },
+   "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44613745500",
+    "since": "06686032a83ac1d39d11e5ecfd1be12063caf722"
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44613745500",
+    "since": "06686032a83ac1d39d11e5ecfd1be12063caf722",
+    "unmeasured": true
+   }
   }
  },
  "claude/youthful-darwin-xvkwh7": {
