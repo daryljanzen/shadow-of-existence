@@ -200,10 +200,14 @@ def main():
           #   from the ratio the clock reads.  ** The first arm is 69's REPAIR-OWED call on the
           #   trunk and this seat had it MEANING-HELD; repaired on the merged ledger's reading,
           #   which costs the verdict nothing -- a span that names $\eta$ is better either way. **
-          'the inherited baryon-to-photon ratio $\\eta$---the same standard datum that fixes both the '
+          # ⛭ r7831 (69): 'inherited' dropped from both arms with P16's Y15 rewording -- eta is kept or
+          #   remade on the expanding leg according to the neutrino masses, so the paper no longer calls
+          #   it inherited there.  What this check claims, that eta is NAMED and kept apart from the
+          #   ratio the clock reads, is untouched.
+          'the baryon-to-photon ratio $\\eta$---the same standard datum that fixes both the '
           'light-element abundances and the microwave-background peak \\emph{heights}'
           in p16
-          and 'the inherited baryon-to-photon ratio $\\eta$---the composition datum, the one quantity the '
+          and 'the baryon-to-photon ratio $\\eta$---the composition datum, the one quantity the '
               'handover supplies' in p16
           and 'a quantity with no single value has no handover to transmit' in p16
           and 'rho_r/rho_m the peak SPACING' not in p16)
