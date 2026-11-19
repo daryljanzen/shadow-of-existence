@@ -137,15 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L150_the_datum/X1_the_ratio_is_a_clock_reading_not_a_carried_datum.py": {
-    "gates": [
-     "P# keeps eta apart: \"the same standard"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44570331719",
-    "since": "6d6ddca768ac0b552cc044d53c83ab084c8f9f02"
-   }
-  },
   "tolerance": {
    "receipts/L550_third_mechanism/Y16_with_flavours_resolved_the_right_handed_neutrinos_make_eta_above_about_6e12_GeV_and_a_lower_scale_needs_a_weakly_coupled_flavour.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44605208859",
