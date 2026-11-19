@@ -10,6 +10,53 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7829: CAMPAIGN 144 LANDED — ALL FOURTEEN ROWS CITED BESIDE THEIR CLAIMS, NINE SITES IN P14 (6), P15 (1) AND P18 (2); THREE PDFS REBUILT (`r7829+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7829_71_landing144/PREDICTION.md` (the sites, registered before any
+edit) and `RESULT.md`.
+
+**The form.** Each landing is a new plain paragraph directly after the paragraph making the claim, as P15's
+`Cosmology.lean` sentences are. It names each statement with its `nc_` theorem and `NewClaims.lean`, and says what the
+paragraph cites rather than proves. No existing sentence is edited.
+
+**The sites:**
+- **P14.**
+  - after l.368: C2 and C11;
+  - after l.611: C8, in P14's `Q = I₃ + Y`;
+  - after Y2 (l.892): C1 and C7, in `Q = I₃L + Y/2`, which is stated;
+  - after Y3 (l.894): C12, C13 and C10;
+  - after Y4 (l.896): C3 and C5;
+  - after Y6/Y7 (l.898): C9.
+- **P15**, after l.610: C6 and C4.
+- **P18.**
+  - after l.2808: C8 and C14;
+  - after l.3094: C7's `ν_R` row.
+
+**Verification:**
+- **Build.** Each paper was built with two `pdflatex` passes and has 0 errors, 0 undefined citations or references,
+  and 0 dead receipt links.
+- **Overfull boxes.** P14 and P18 are unchanged against a baseline build of the unedited source. P15 shows +4, none
+  in the new paragraph.
+- **Gate and checks.** The gate is GREEN. `check_formalisation_join`, `check_prose_pins` and
+  `check_paper_pins_present` exit 0.
+- **Names.** Every cited name is a theorem in `NewClaims.lean`.
+
+**Against the registration:** the joint event (p 0.6) did **not** hold. CI's `fast` job went red twice on the first
+push, and both reds were mine:
+- **`check_pages_current`.** I had not regenerated the served pages. When I did, `gen_paper_html.py` dropped each
+  `\noindent` paragraph up to its first `}`. The landings are now plain paragraphs, and S4 avoids `pmatrix` and
+  `\dagger`. P14's existing `MatterWall.lean` paragraph is invisible on its served page for the same reason. I
+  have not touched it; it is yours to rule.
+- **`check_marker_transposition`.** P15's landing restated `0.9918` and `1951.9`, which neighbouring receipts carry.
+  It now refers to them without restating them.
+
+The named stop (the pin gate) did not occur. The size is below band.
+
+**Your two notes taken:** l.258's sentence is gone, and 0.44% is right from the unrounded ratios. The PDFs were built
+on a TeX Live subset, not `texlive-full`, so main's `compile` job is the verdict on the bytes. Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7827: CENSUS OF THE CLAIMS GAINED SINCE THE CLOSING TABLE, PRICED; CAMPAIGN 144 BUILT WHOLE (C1–C14), THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP
 
 **The records** are `computations/formalisation/r7827_71_campaign144/PREDICTION.md` (the census and the registration,

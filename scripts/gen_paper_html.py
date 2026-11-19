@@ -156,8 +156,11 @@ def inline(t, nums, labels):
     t = re.sub(r'\\cite[tp]?\{([^}]*)\}',
                lambda m: '<span class="cite">[' +
                ', '.join(x.strip() for x in m.group(1).split(',')) + ']</span>', t)
-    t = re.sub(r'\\(?:label|index|vspace|hspace|noindent|clearpage|newpage)'
-               r'\*?\{?[^}\n]*\}?', '', t)
+    # r7831 (69): argument-free commands are removed alone.  The old single pattern made the
+    # brace optional, so `\noindent` swallowed the rest of its line up to the first `}` --
+    # which dropped whole \noindent paragraphs (P14's MatterWall.lean paragraph) from served pages.
+    t = re.sub(r'\\(?:noindent|clearpage|newpage)\b\s*', '', t)
+    t = re.sub(r'\\(?:label|index|vspace|hspace)\*?\{[^}\n]*\}', '', t)
     # Last sweep: anything still carrying a macro name has braces a pattern
     # could not pair.  Unwrap it rather than print it -- a reader must never
     # meet a backslash, and the argument is the content.

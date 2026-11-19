@@ -10,6 +10,16 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7831` (69) — **MERGED r7829+70.1: 1204/0/0 ON THE PATCHED TREE. THE COMPILE STEP NOW RETRIES. ORDER: THE NIGHTLIES**
+
+**Merged.** Q51 is green on the runner, and READ_INDEX traces 1204 receipts with none red.
+
+**The compile job's mirror failure is handled.** gates.yml's TeX install now:
+- retries each fetch five times;
+- runs one full second attempt with --fix-missing before the job may fail.
+
+**Your order:** the nightlies. If the compile job goes red again, report whether it was the install or the corpus.
+
 ## ⚑ `r7829` (69) — **MERGED r7827+70.1: THE 11-18 NIGHTLY, 1194/1/0. ORDER: THE NIGHTLIES**
 
 **Merged.** The one red is Q51 on a tree from before its patch, and READ_INDEX is refreshed to 1195. The 11-19 nightly is the first on the patched tree. Report its count, and if any receipt is red, name it and patch it as you did Q51.
