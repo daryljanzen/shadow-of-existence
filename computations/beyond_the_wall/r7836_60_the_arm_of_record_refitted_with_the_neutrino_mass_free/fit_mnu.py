@@ -140,29 +140,77 @@ def chi2_joint(arm, B, x, bao=True):
     return c
 
 
-def fit(arm, B, fixed_mnu=None, bao=True):
+# ** THE ORTHOGONALISATION, AND IT IS A FINDING ABOUT THE INSTRUMENT RATHER THAN A CONVENIENCE. **
+# *The first form of this fit left the five directions as generated and minimised with Nelder-Mead
+#  from fixed isotropic starts.  Its profile came out NON-MONOTONE -- the control's CMB-only term
+#  read -0.241, +9.704, +5.063 at sums of 10, 20 and 30 meV -- and `Omega_m` never moved more than
+#  +0.0002 where restoring `omega_cb` needs +0.00142.  A true profile likelihood of a smooth model
+#  cannot fall and rise and fall again, so the minimiser was stalling in a narrow correlated valley
+#  and not the physics being sharp.*
+#   ⇒ ** THE MASS DIRECTION IS ALMOST EXACTLY DEGENERATE WITH THE `Omega_m` DIRECTION, by
+#     construction: the sum lowers `omega_cb` at fixed total, and `Omega_m` raises it.  So the pair
+#     is fitted ORTHOGONALISED -- moving the sum carries the exactly-compensating `Omega_m` with it,
+#     which makes the valley axis-aligned and leaves the minimiser only the residual to find. **
+#   ⌗ *What remains after the compensation is the real physics: the total the distances see has
+#     moved, so `D_M`, `r_s` and the BAO all pay, and that cost is what bounds the sum.*
+def om_compensation(arm, mnu_ev):
+    """the Omega_m shift that holds omega_cb fixed when the sum moves by mnu_ev, in GRID STEPS."""
+    h = ARMS[arm]['centre']['H0'] / 100.0
+    return (mnu_ev / 93.14 / h ** 2) / R.STEP['OM']
+
+
+def fit(arm, B, fixed_mnu=None, bao=True, starts=()):
+    # the OM coefficient is carried in the ORTHOGONALISED coordinate: y[1] is the residual on top
+    # of the compensation the sum demands, so y = 0 already holds omega_cb fixed.
+    comp = om_compensation(arm, fixed_mnu) if fixed_mnu is not None else 0.0
+
     def f(y):
-        x = list(y) + [fixed_mnu / STEP_MNU] if fixed_mnu is not None else list(y)
+        if fixed_mnu is not None:
+            x = [y[0], y[1] + comp, y[2], y[3], fixed_mnu / STEP_MNU]
+        else:
+            x = [y[0], y[1] + om_compensation(arm, STEP_MNU * y[4]), y[2], y[3], y[4]]
         return chi2_joint(arm, B, x, bao)
     n = 4 if fixed_mnu is not None else 5
+    seeds = [[0.0] * n, [0.3] * n, [-0.3] * n]
+    if starts:
+        seeds = [list(s) for s in starts] + seeds
     best = None
-    for s in ([0.0] * n, [0.3] * n, [-0.3] * n):
-        r = minimize(f, np.array(s), method='Nelder-Mead',
-                     options=dict(xatol=1e-5, fatol=1e-6, maxiter=20000, maxfev=20000))
-        if best is None or r.fun < best.fun:
-            best = r
-    x = list(best.x) + [fixed_mnu / STEP_MNU] if fixed_mnu is not None else list(best.x)
-    return float(best.fun), x
+    for s in seeds:
+        for meth in ('Nelder-Mead', 'Powell'):
+            r = minimize(f, np.array(s, float), method=meth,
+                         options=dict(xatol=1e-7, fatol=1e-9, maxiter=60000, maxfev=60000)
+                         if meth == 'Nelder-Mead' else dict(xtol=1e-8, ftol=1e-10, maxiter=60000))
+            if best is None or r.fun < best.fun:
+                best = r
+    y = list(best.x)
+    if fixed_mnu is not None:
+        x = [y[0], y[1] + comp, y[2], y[3], fixed_mnu / STEP_MNU]
+    else:
+        x = [y[0], y[1] + om_compensation(arm, STEP_MNU * y[4]), y[2], y[3], y[4]]
+    return float(best.fun), x, y
 
 
 def profile(arm, B, grid_ev, bao=True):
-    """chi^2 minimised over the four at each fixed sum -- the profile the order asks for."""
-    out = []
-    for s in grid_ev:
-        c, x = fit(arm, B, fixed_mnu=s, bao=bao)
-        out.append(dict(mnu=float(s), chi2=c, x=[float(v) for v in x], phys=phys(arm, x)))
-        print(f'    Sum = {s:+.4f} eV   chi2 = {c:.4f}')
-    return out
+    """chi^2 minimised over the four at each fixed sum -- the profile the order asks for.
+    ** Walked OUTWARD FROM ZERO in both directions, each point started from its neighbour's
+    solution (a continuation), because the first form's fixed starts gave a non-monotone profile. **
+    """
+    out, grid = {}, sorted(grid_ev)
+    zero = min(range(len(grid)), key=lambda j: abs(grid[j]))
+    for side in (range(zero, len(grid)), range(zero, -1, -1)):
+        prev = None
+        for j in side:
+            s = grid[j]
+            if s in out:
+                prev = out[s]['y']
+                continue
+            c, x, y = fit(arm, B, fixed_mnu=s, bao=bao, starts=([prev] if prev else ()))
+            out[s] = dict(mnu=float(s), chi2=c, x=[float(v) for v in x],
+                          y=[float(v) for v in y], phys=phys(arm, x))
+            prev = out[s]['y']
+            print(f'    Sum = {s:+.4f} eV   chi2 = {c:.4f}   '
+                  f'Om = {out[s]["phys"]["OM"]:.5f}  H0 = {out[s]["phys"]["H0"]:.3f}')
+    return [out[s] for s in grid]
 
 
 def upper95(prof):
@@ -191,11 +239,17 @@ def main():
         gm = B['g']['MNU']
         check(f'{arm}: the mass direction is a real gradient, not numerical noise',
               float(np.max(np.abs(gm))) > 0, f'max |dm/dSum| = {np.max(np.abs(gm)):.4g}')
-        c0, x0 = fit(arm, B, bao=True)
+        c0, x0, _y0 = fit(arm, B, bao=True)
         p0 = phys(arm, x0)
         print(f'  joint minimum: chi2 = {c0:.4f}   Sum = {p0["MNU"]:+.5f} eV   '
               f'H0 = {p0["H0"]:.4f}  Om = {p0["OM"]:.5f}  wb = {p0["WB"]:.5f}  ns = {p0["NS"]:.5f}')
         prof = profile(arm, B, GRID_EV, bao=True)
+        cs = [p['chi2'] for p in prof]
+        i = int(np.argmin(cs))
+        mono = (all(cs[k] <= cs[k + 1] + 1e-6 for k in range(i, len(cs) - 1))
+                and all(cs[k] >= cs[k - 1] - 1e-6 for k in range(1, i + 1)))
+        check(f'{arm}: the profile is monotone away from its minimum, so it is converged',
+              mono, 'the first form of this fit failed exactly here')
         lim, smin, cmin = upper95(prof)
         print(f'  profile minimum at Sum = {smin:+.4f} eV, chi2 = {cmin:.4f}')
         print(f'  95 per cent upper limit (Delta chi2 = 2.71): '
