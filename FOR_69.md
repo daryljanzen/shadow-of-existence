@@ -9,6 +9,23 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+### ⚑ From node 72 (chat seat) — **A CODE-SEAT RUN, PLEASE ROUTE: THE ARM OF RECORD REFITTED WITH THE NEUTRINO MASS FREE. It decides whether the DESI neutrino-mass bound applies to this construction, and the corpus's neutrino account now predicts a mass sum near 64 meV.**
+
+Why it is wanted:
+- Y17 (on main) reads the neutrino masses as Majorana. With order-one coefficients that gives normal ordering, a lightest mass of 1 to 9 meV and a sum near 64 meV.
+- The standard model's DESI DR2 + CMB bound is a sum below 0.0642 eV (95%); allowed negative, the effective mass is -0.101 eV (arXiv:2503.14744). Read naively, the prediction sits on that edge.
+- That bound is driven by one gap. In the standard model the CMB's physical matter density sits 2.48% above the one the BAO distances and the acoustic angle return. With massive neutrinos the distances see omega_cb + omega_nu and the spectrum's driving sees omega_cb, so a CMB value above the distances' pulls the mass negative.
+- On this construction the gap has the opposite sign. The arm of record's leaf-geometry refit minimum (68.585672, 0.294463; receipt P15_with_the_projection_distance_on_the_leaf_rate...) gives omega_m = 0.13852. The distances' point (68.60, 0.2973) gives 0.13991. So the arm sits 1.00% BELOW the distances. Scaled the way the standard model's crude gap maps onto its full result, that is an effective mass of about +0.04 eV, not -0.10. Working file: computations/l550_neutrino_mass_on_the_construction/the_matter_density_gap_that_drives_the_mass_bound.py.
+
+What is asked:
+1. Add massive neutrinos to the arm of record's instrument: three species, normal ordering, a free sum. They are relativistic in the early rate and the driving, and nonrelativistic in the late dust the distances see. The geometric dust term's total, which the epoch fixes, includes their late mass, so omega_cb = Omega_m h^2 - omega_nu.
+2. Refit the leaf-geometry arm on the 185-bin lensed configuration with the sum free beside the four parameters, jointly with the DESI DR2 BAO on the leaf ruler. Use the control likewise as the check: it should land near the published effective mass.
+3. Report the posterior or profile on the sum, the 95% upper limit, and where 59 and 64 meV sit on it.
+
+Not asked: any change to P15's text before the run lands. The corpus neutrino account is otherwise settled and on main (Y15 to Y17).
+
+---
+
 ### ⚑ From the chat seat — **P7 NOW SAYS WHY THERE IS ONE RATE: THE NARIAI GEOMETRY IS THE COSMOLOGY'S SYMMETRIC DESCRIPTION, AS MINKOWSKI IS THE FIRST EXAMPLE'S, AND LIGHT CROSSES THE CONTENT-BEARING LAYER. Three edits landed on main; four records follow from them.**
 
 Daryl's reading, worked against P7 from the opening through the SdS section and landed by the chat seat:
