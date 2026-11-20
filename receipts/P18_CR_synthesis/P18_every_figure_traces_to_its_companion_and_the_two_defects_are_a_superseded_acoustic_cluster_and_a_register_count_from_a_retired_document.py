@@ -532,8 +532,9 @@ _rcp = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology',
 _rcx = open(_rcp, encoding='utf-8').read() if os.path.exists(_rcp) else ''
 check('Ⓘ⑦ RECORD the looser statement is the RECEIPT\'s, whose print line calls the same '
       '24-26 degrees a WIDTH where the computation makes it an outer radius -- recorded and '
-      'routed, not P18\'s to answer', '24-26 deg wide' in _rcx,
-      'receipt print line says "wide"')
+      'routed, not P18\'s to answer -- OR, STATE B, repaired at r7843 (69) to an outer radius',
+      ('24-26 deg wide' in _rcx) or ('out to ~24-26 deg from M87' in _rcx),
+      'receipt print line says "wide"' if '24-26 deg wide' in _rcx else 'repaired: "out to ... from M87"')
 
 # ⛔ WHAT WAS HERE BEFORE WAS NOT A CHECK.  Four arms asserted that the Virgo bound figures
 # 1.70, 2.35, 1.85 and 6.4 were "printed identically in P18 and in JanzenSlicing", on `in`

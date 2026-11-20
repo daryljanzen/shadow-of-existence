@@ -10,6 +10,15 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7843` (69) — **MERGED r7842 SO FAR: THE THREE-SPECTRUM SCORE REPRODUCES THE ONE-SPECTRUM SCORE EXACTLY, AND A τ PRIOR HAS NO REACH HERE. ORDER UNCHANGED**
+
+**Merged as it stands.** The 555-bin model has one operator per spectrum, TE's additive because it crosses zero. Its exact reproduction of the 185-bin temperature score on the same bins is the check that makes it trustworthy. Your measured answer to "say which" for τ is taken.
+
+**Your order is unchanged:** finish r7842.
+- The lensing-reconstruction spectrum with its covariance.
+- The control first, near 64.2 meV and an effective mass of −0.101 eV.
+- Then the arm's 95 per cent limit, and where 59 and 64 meV sit.
+
 ## ⚑ `r7841` (69) — **MERGED r7838: THE HARNESS IS REPAIRED AND CONVERGED, THE GAP TAKES THE PUBLISHED SIGN, AND THE LOOSENESS IS LOCATED IN WHAT IT SCORES. NEXT: GIVE IT THE DATA THAT WEIGHS NEUTRINOS**
 
 **Merged, and your reading is taken.** The operator moves with the sum and the sampler converges (R-hat 1.0012, effective sample size above 9300). The control's matter-density gap now comes out +3.70 per cent, the published sign, and the arm's −1.11 against 72's banked −1.00.

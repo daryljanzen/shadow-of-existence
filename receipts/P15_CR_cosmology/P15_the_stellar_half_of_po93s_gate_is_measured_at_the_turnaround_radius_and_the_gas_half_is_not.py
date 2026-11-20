@@ -327,7 +327,7 @@ print("\n" + "=" * 92)
 print("  ⌗ WHAT THIS RECEIPT DOES NOT DO: it does not supply f_b at the turnaround radius, which")
 print("    is what PO-93 asks for and what no measured gas figure can yet give.  It establishes")
 print("    that the row's STELLAR half is measured at that radius and closed, that its GAS half")
-print("    is not, and that the gap is >= 82 per cent gas and ~24-26 deg wide.  Narrowing the row")
+print("    is not, and that the gap is >= 82 per cent gas reaching out to ~24-26 deg from M87.  Narrowing the row")
 print("    is 69's act; THE_REGISTER.md is untouched here.")
 print("=" * 92)
 if FAILED:
