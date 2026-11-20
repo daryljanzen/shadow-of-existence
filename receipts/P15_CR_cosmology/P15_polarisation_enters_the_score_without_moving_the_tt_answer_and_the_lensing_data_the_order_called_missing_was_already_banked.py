@@ -315,8 +315,15 @@ else:
           'R-hat max %.4f, ESS on the sum %.0f, acceptance %.3f'
           % (max(v['rhat'] for v in _dg.values()), _dg['MNU']['ess'], _pb['accept']))
 
+    _pu = PR['lcdm_unbounded']
     _lim = _pb['upper95_mev']
-    _eff = _pb['sum_mean_ev']
+    # ** THE EFFECTIVE MASS IS THE UNBOUNDED FIT'S MEAN, NOT THE BOUNDED ONE'S. **  The published
+    # -0.101 eV is a fit with the sum FREE TO GO NEGATIVE, and r7838 read it off its own unbounded
+    # chain for that reason.  This arm was first written against the BOUNDED mean, which is
+    # bounded below at zero and therefore could not have come out negative however the data fell:
+    # a half that cannot fail is not a test, and it was testing the wrong clause.
+    _eff = _pu['sum_mean_ev']
+    _eff_sd = _pu['sum_sd_ev']
     # the limit's own standard error: recorded by runs from r7842 on, computed from the saved chain
     # for this one, whose JSON predates the field.  ** ONE DEFINITION, NOT TWO. **
     if 'upper95_mcse_mev' in _pb:
@@ -336,16 +343,27 @@ else:
     _passes = bool(_in_band and _neg)
     _over = (_lim - ORDER_BAND_MEV[1]) / _se
     check('Ⓔ⑤ THE DECISIVE ARM IS REPORTED FAILED AGAINST THE ORDER\'S CRITERION, with the '
-          'criterion exactly as registered: the limit had to fall inside 42.8 to 96.3 meV AND the '
-          'effective mass had to be NEGATIVE, the sign the published -0.101 eV carries.  It misses '
-          'on BOTH halves, and the limit half misses by SIX standard errors of its own quantile -- '
-          'so this is a decisive miss and not a boundary case',
-          not _passes and not _in_band and not _neg and _over > 3.0,
-          '%.2f +/- %.2f meV against the published %.1f, a factor %.2f; effective mass %+.1f meV '
-          'against the published %+.0f.  Above the band\'s ceiling by %.2f meV = %.2f standard '
-          'errors'
-          % (_lim, _se, PUBLISHED_LIMIT_MEV, _lim / PUBLISHED_LIMIT_MEV, 1000 * _eff,
-             1000 * PUBLISHED_EFFECTIVE_EV, _lim - ORDER_BAND_MEV[1], _over))
+          'criterion exactly as registered -- but it fails on ONE half of two, and the other half '
+          'HOLDS.  The limit had to fall inside 42.8 to 96.3 meV: it is above the ceiling by SIX '
+          'standard errors of its own quantile, a decisive miss and not a boundary case',
+          not _passes and not _in_band and _over > 3.0,
+          '%.2f +/- %.2f meV against the published %.1f, a factor %.2f; above the band\'s ceiling '
+          'by %.2f meV = %.2f standard errors'
+          % (_lim, _se, PUBLISHED_LIMIT_MEV, _lim / PUBLISHED_LIMIT_MEV,
+             _lim - ORDER_BAND_MEV[1], _over))
+
+    check('Ⓔ⑤ AND ITS SECOND HALF HOLDS, WHICH IS NEW: the effective mass comes out NEGATIVE, the '
+          'sign the published -0.101 eV carries, where r7838\'s was +67.5 meV on temperature '
+          'alone.  ** POLARISATION FLIPPED THE SIGN. **  ⌗ The quantity is the UNBOUNDED fit\'s '
+          'mean, with the sum free to go negative, which is what the published figure is and what '
+          'r7838 read; this arm was first written against the BOUNDED mean, which is bounded below '
+          'at zero and so could not have come out negative however the data fell -- a half that '
+          'cannot fail is not a test',
+          _neg,
+          '%+.1f +/- %.1f meV against the published %+.0f -- same sign, and %.2f sigma from it on '
+          'this fit\'s own width; r7838 gave %+.1f on 185 bins'
+          % (1000 * _eff, 1000 * _eff_sd, 1000 * PUBLISHED_EFFECTIVE_EV,
+             abs(_eff - PUBLISHED_EFFECTIVE_EV) / _eff_sd, 67.5))
 
     _seat_fails = not _passes
     _seat_size = SEAT_EXPECTATION_MEV[0] <= _lim <= SEAT_EXPECTATION_MEV[1]

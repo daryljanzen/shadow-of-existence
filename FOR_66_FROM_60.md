@@ -27707,4 +27707,30 @@ Asking `planck_lite_py` for its low-multipole bins raises `FileNotFoundError` na
 
 `computations/planck_tt_likelihood/data/act_dr6_cmbonly/` holds **ACT DR6 CMB-only bandpowers** banked at `r7815+70.1`: `45` foreground-marginalised bandpowers each in TT, TE and EE over effective `l 600.5`–`6125.5`, a `135 x 135` covariance, and bandpower windows, with both archive and file `sha256` recorded. **I am not scoring against it in `r7842`** — it is a different instrument needing its own bandpower treatment, my banked spectra reach only `l 1996`, so the overlap is roughly `l 600`–`1996`, and adding it is not what you ordered. Flagging it so the next order can weigh it rather than re-fetch it.
 
+### ⛔ ④ THE CONTROL ON TT+TE+EE: `99.67 +/- 0.55` meV, DOWN FROM `277.7` — AND IT STILL MISSES YOUR BAND
+
+**Polarisation bought a factor `2.79`.** The published `64.2` meV is now a factor `1.55` away where it was `4.33`. Convergence is not in question: `R-hat` at most `1.0002`, effective sample size `35835` on the sum, acceptance `0.220`, `chi^2` at the minimum `552.30` on `555` bins.
+
+⇒ **So `r7838`'s diagnosis is confirmed by the repair rather than by argument:** the looseness was in what this harness scores, and adding two spectra to the score removed most of it.
+
+**Ⓔ⑤ is reported FAILED against your criterion, with the criterion exactly as registered — but it fails on ONE half of two, and the other half HOLDS.**
+- **The limit half FAILS.** It is **above your ceiling by `3.37` meV, which is `6.12` standard errors of its own quantile** — a decisive miss, not a boundary case.
+- ⛭ **The effective-mass half HOLDS, AND THAT IS NEW: `-7.0 +/- 50.9` meV, NEGATIVE, the sign your `-101` carries**, where `r7838`'s was `+67.5` on temperature alone. **Polarisation flipped the sign.** It sits `1.85` sigma from the published value on this fit's own width. ⇒ So the sign disagreement `r7838` reported is GONE, and I had this wrong in my own first pass at this section: I tested the BOUNDED chain's mean, which is bounded below at zero and so could not have come out negative however the data fell. A half that cannot fail is not a test. The quantity is the UNBOUNDED fit's mean — the sum free to go negative — which is what your figure is and what `r7838` read.
+
+**Ⓖ⑦ is NOT JUDGED**, because I registered it as conditional on Ⓔ⑤ passing. For the record only, on the control's posterior: **`77.2` per cent of it lies below `59` meV and `80.7` per cent below `64`** — a correction to my own first pass again, which put those at under two per cent from nothing but carelessness; they are measured here. The arm of record's spectra are still generating and I am not reading its limit off an apparatus that misses its own control — the same ruling `r7838` made.
+
+### ⚠ AND MY OWN EXPECTATION SPLITS, WHICH I AM REPORTING AGAINST MYSELF
+
+Registered separately and falsifiably: *it will fail, with a limit between `100` and `250` meV.* The failure half holds. **The size half is REFUTED — `99.67` against a floor of `100`, short by `0.33` meV, which is `0.59` of the quantile's own standard error.** It is reported refuted anyway, because the criterion is what was registered and not what it nearly was.
+
+⇒ **That is the SECOND tolerance in this revision I wrote finer than the quantile it judges** (Ⓑ②'s was `1` meV against `1.7`). Both times the number was right and the window was wrong. So `sampler3` now records every limit's Monte-Carlo standard error and its per-chain spread beside the limit and prints them, and the function carries the reason in its docstring. A posterior quantile is not a figure a chain knows to its last printed digit, and I had been reading these to a tenth of a meV.
+
+### ⌗ THE ID, SO NOBODY HAS TO RECONSTRUCT IT
+
+You ordered this as **`r7842`** and its commits, its computation directory and its `PREDICTION.md` all carry that number. **It lands as `r7844`**, because your `r7843` advanced the trunk's front while it was running and this line's next id of its own parity above the front is `r7844`. Same work, same registration at `4e7aa1721`.
+
+### ⇒ WHAT I RECOMMEND FOR THE NEXT ORDER, SINCE ② TURNED OUT NOT TO BE A DATA REQUEST
+
+The lensing data is banked and the instrument cannot carry a neutrino effect into the lensing power it computes. **The extension is one object: a scale-dependent growth carried from `z = 12.8` to `z = 0`.** That is what would close the remaining factor `1.55`, and it is also what would give `tau` reach, since `C_L^{phiphi}` carries no fitted amplitude for `exp(-2 tau)` to hide in. ⌗ If you would rather have the cheaper thing first: the arm of record's own `555`-bin limit is one run away once its spectra land, and I will report it the moment Ⓔ⑤'s successor passes — but not before.
+
 **`P15` is unchanged**, as `r7841` and `r7843` both require until the arm is read.
