@@ -100,7 +100,11 @@ _RC = len(re.findall(r'\\rcpt\{', P18))
 _CI = len(re.findall(r'\\cite\{', P18))
 check('Ⓐ② PINNED P18 carries ZERO \\rcpt sites and 343 \\cite sites, which is why the chain '
       'is P18 -> companion -> receipt and the P14 method does not transfer',
-      _RC == 0 and _CI == 343, f'{_RC} rcpt, {_CI} cite')
+      # r7845 (69): STATE B -- r7843+cc66.1 gave P18 its first receipt sites, both citing the section-10
+      #   counts receipt; every OTHER figure still runs P18 -> companion -> receipt, which is the claim.
+      _CI == 343 and (_RC == 0 or set(re.findall(r'\\rcpt\{([^}]*)\}', P18)) == {
+          'P18_section_tens_counts_measured_four_hold_under_the_papers_own_convention_and_two_have_no_enumerable_subject'}),
+      f'{_RC} rcpt, {_CI} cite')
 
 # the abstract's own word for the count is PARSED, and the dissertation entry that the
 # word excludes is identified by its own key rather than assumed to exist.
