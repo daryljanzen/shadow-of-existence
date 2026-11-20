@@ -35,7 +35,10 @@ COMPUTES: scope -- what is received and what is derived.  No spectrum here is ne
 from the bank, and nothing is fitted beyond the two or three parameters each fit is of.
   INPUT   r = 1.0926                     -- P15's damping ratio, corpus measured
   INPUT   l_D = 1489.5783                -- the one-rate damping multipole, r7797+cc66.1
-  INPUT   N_eff adopted = 3.046          -- P16's adopted value, declared there as not derived
+  INPUT   N_eff adopted = 3.046          -- the value P16 named as adopted until r7836+60
+                                            re-anchored this receipt: P16 now states the network runs
+                                            3 exactly and names 3.046 as first evaluated beside the
+                                            3.044 the companion quotes, which is r7834's correction
   INPUT   N_eff quoted = 2.99 +/- 0.17   -- the constraint P16 itself quotes for a departure
   INPUT   L820_lcdm_L2512_nk800          -- the banked control arm, the baseline
   INPUT   r7801_neff_response_lcdm       -- 70's banked control at five N_eff, the free direction
@@ -392,9 +395,22 @@ SENTS = [' '.join(s.split()) for s in re.split(r'(?<=[.!?])\s+', P16) if s.strip
 #   the construction adds is a right-handed neutrino whose contribution turns on its mass, which the
 #   left-right models set; and Planck's 2.99 +/- 0.17 is still the measurement quoted.  So N_eff is
 #   still not fixed by the construction, which is what the deciding arm reasons from.
+# ** RE-ANCHORED r7836+60, and the reason is this seat's own correction at r7834 (per r2673's rule:
+#    a receipt whose clause the corpus acts on is updated to assert the state it now holds, finding
+#    preserved).  r7834's cold read of P16 found that sentence folding the non-instantaneous
+#    correction INTO the ratio that omits it: `(4/11)^(1/3)` is the instantaneous ratio, so three
+#    species at it give 3 EXACTLY and the 0.044 is what the module leaves out.  P16 now says that,
+#    and names both values with their statuses, so the span this key read is gone. **
+#   ⇒ ** AND THE CORRECTION VINDICATES THIS RECEIPT'S OWN BANK. **  `r7804` asserted an offset --
+#     the response bank centred on `3.0` against P16's then-stated adopted `3.046` -- and flagged it
+#     because "a forgotten one looks exactly like physics".  r7834 established that the network
+#     really does run `3.0`, so the offset was P16'S ERROR AND NOT THE BANK'S, and the deciding arm
+#     below was reasoning from the right centre all along.
+#   ⌗ *The finding is untouched: N_eff is still not fixed by the construction, which is what the
+#     deciding arm reasons FROM.  What moved is which words P16 says it in.*
 KEYS = {
-    'the network carries the Standard Model value': 'the Standard Model value including the small '
-                                                    'non-instantaneous-decoupling correction',
+    'the network carries the Standard Model value': 'the count the integration itself runs on '
+                                                    'is $3$ exactly',
     'the construction does NOT fix the count': "So the count turns on the state's mass",
     'and Planck\'s measurement is the number quoted': '$N_{\\mathrm{eff}}=2.99\\pm0.17$',
 }

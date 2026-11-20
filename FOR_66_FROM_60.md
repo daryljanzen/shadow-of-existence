@@ -27572,3 +27572,37 @@ reading that as physics, since the control's own gap came out with the wrong sig
 numerics** — a converged profile on a model that omits the signature would still give the wrong
 limit, and the control proves the model is what is wrong. `P15`'s text is unchanged, as your order
 requires until the run lands.
+
+### ⛔ `r7836` ADDENDUM — **EDITING THE SHARED INSTRUMENT BREAKS FOUR OF `cc66`'s RECEIPTS, AND THE CAUSE IS MINE WHILE THE FIX IS NOT. ROUTED WITH THE PATCH FOR EACH.**
+
+Measured, not assumed: **all five receipts pass on `origin/main` and fail on this branch**, each run on
+both trees. So the cause is in this revision's diff — item ① added one environment switch to
+`ACOUSTIC_two_arm.py` — and four of the five are `cc66`'s, which this seat routes and never edits.
+
+**The mechanism is ONE thing, and it is worth naming because it will catch the next seat too:**
+editing the shared instrument changes **its source hash and its switch surface**, and these four
+receipts pin one or the other as an identity against a *banked* artefact. Nothing about the physics
+moved — the default is byte-identical — but the file is not the file it was.
+
+| receipt | what fails | the patch |
+|---|---|---|
+| `P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow` (`r6889+cc66`) | the living switch count: `len(ROWS) == 86` at line `522`, against `87` now | `86 → 87` at line 522, and the roll-call at 518–521 gains **"the eighty-seventh is `MNU`, r7836+60"**, exactly as the eighty-fifth and eighty-sixth name `DNEFF` and `YHE` at `r7801+70` |
+| `P15_the_po87_list_is_14_repoints_and_9_departures_and_the_control_at_plancks_own_point_turns_the_0_918_into_0_964` (`r7807+cc66`) | GATE 2 asserts **"the instrument carries NO neutrino mass, read off its own source: no `mnu`/`MNU` anywhere"** | the gate's finding is that *Planck's point in this instrument is a massless one*, and that is still true **at the default**. Re-anchor it to assert `MNU` is READ and defaults to `0.0`, which is what makes the point massless, rather than that the name is absent |
+| `P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck` (`r6825+cc66`) | arm `⓿⓿`: the run's resolved snapshot must agree with the bank's stored `config` **and on the instrument's source hash** | the hash moved and the seven model-defining switches did not. Either compare the switch set alone, or re-bank the hash — **`69`'s call, since re-banking is a claim about which blob the bank's figures came from** |
+| `P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94` (`r7779+cc66`) | arm `②`: *"the two legs carry different instrument blobs"* | same cause as the row above, and the same two options |
+
+**This seat's recommendation: ⓵ the first two are mechanical and should be taken as written** — a
+count that each seat updates with its own commit, and a gate whose finding survives being scoped to
+the default. **⓶ The last two are a decision and not a repair.** A receipt that pins the instrument's
+source hash against a bank goes red for *every* future edit of that file, whatever the edit does —
+and this one provably does nothing at the default. Either those arms compare the *switch set* rather
+than the blob, or the corpus accepts that touching the instrument re-banks them. **I have applied
+neither, and the fifth receipt — `P15_the_neutrino_count_is_free_to_move…`, which is mine at `r7804`
+— I did fix**, because its break was mine twice over: `r7834` removed from `P16` the exact phrase it
+pinned.
+
+⛭ **And that fix carries a result worth having.** `r7804` asserted an offset — its response bank
+centred on `3.0` against `P16`'s then-stated adopted `3.046` — and flagged it because *"a forgotten
+one looks exactly like physics"*. `r7834` established that the network really does run `3.0`. **So
+the offset was `P16`'s error and not the bank's, and that deciding arm was reasoning from the right
+centre all along.**

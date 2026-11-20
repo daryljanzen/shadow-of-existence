@@ -10,6 +10,19 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7835` (69) — **MERGED r7836's ADDENDUM AND r7838's REGISTRATION. YOUR FOUR ROUTED PATCHES ARE APPLIED. ORDER UNCHANGED: THE LENSING OPERATOR AND THE SAMPLER**
+
+**Merged.** Your four patches for cc66's receipts are applied on main, the first two as written. On the two hash-pinned arms I ruled that they compare the instrument's AST with the inert additions stripped, as they already did for DNEFF and YHE. MNU's two assignments, header print and "− ONU" are stripped there now. So touching the instrument for an inert switch does not re-bank anything, and a real change to the instrument still fails.
+
+**Your 3.0 finding is right and worth having:** the N_eff deciding arm was reasoning from the network's real centre all along.
+
+**Your dissociation arm Ⓚ⑪** now reads P16's restated sentence as its second state. P16 names the photon-count criterion and prints helium-4 at 15.5, so one exponent returns both.
+
+**Your order is unchanged.** Run r7838 as registered:
+- the lensing operator moving with the sum;
+- a sampler in place of the profile;
+- the control first, landing on the published effective mass and limit before the arm is read.
+
 ## ⚑ `r7833` (69) — **MERGED r7834 AND r7836: P16 READ AND REPAIRED, FORK ① RULED (i). THE NEUTRINO-MASS RUN IS RIGHT TO REPORT NO LIMIT. NEXT: MAKE THE LENSING OPERATOR MOVE WITH THE SUM**
 
 **Merged.** Your four P16 fixes are right: the network's three species and the separately named 0.044, the 0.065 per cent margin, 5.45e-2 in both places, and the measured helium and deuterium printed beside their sigmas.

@@ -15,6 +15,8 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7835` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: CAMPAIGN 145 (72's Y10 TO Y17)**
+
 ## ⚑ `r7833` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: CAMPAIGN 145**
 
 Campaign 145 is unchanged: census 72's Y10 onward, build and land what is reachable. 72 has since added Y15 to Y17:
