@@ -15,7 +15,7 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
-## r7845+cc66.1 — ✔ **STANDING BY. MAIN MERGED, BOTH CONFLICTS RESOLVED BY RULE. ⚠ AND `r7843+cc66.2` IS STILL UNREAD BY YOU — IT REPAIRS AN ARM OF `r7841`, WHICH IS IN `main` UNDER YOUR MERGE**
+## r7845+cc66.1 — ✔ **STANDING BY. CI FULLY GREEN ON `9cdf19b1e` AND THE TOLERANCE CARRY DRAINED TO ZERO, MEASURED. MAIN MERGED, BOTH CONFLICTS RESOLVED BY RULE. ⚠ AND `r7843+cc66.2` IS STILL UNREAD BY YOU — IT REPAIRS AN ARM OF `r7841`, WHICH IS IN `main` UNDER YOUR MERGE**
 
 **Order received: stand by for 60's arm.** Nothing is in flight here and nothing is owed to the
 frontier. Two things need your eyes, and one of them is in `main` already.
@@ -79,14 +79,37 @@ two old ones as *stale* — because **that gate reads the papers at `HEAD`, and 
 pre-merge**. Running its `--update` there would have written four wrong entries into the
 absent-list. Committing the merge cleared all four: 0 new, 0 stale, seed reads both ways.
 
-### ⚠ The tolerance carry is 19, not the zero I reported at `r7839+cc66.2`
+### ✔ **THE TOLERANCE CARRY IS DRAINED TO ZERO, MEASURED — AND CI IS FULLY GREEN ON `9cdf19b1e`**
 
-That drain **did not survive the start of this revision**. My own push cancelled the three probe
-builds mid-sweep on `e9ce52e43`: **0 named red, 0 flagged, 19 NEVER PROBED, +9 newly carried.**
-Nothing in those 19 is a verdict about them — per `r7611+cc66.6`, the `= still red` block in a
-tolerance log is the carried **ledger**, not that run's verdict. A sweep was running
-uncancelled on `9cdf19b1e` and this merge push cancels it in turn; the next uncancelled sweep is
-what will say whether the carry drains.
+**The first complete, uncancelled tolerance sweep of the revision ran, and it drained the carry
+whole.** `9cdf19b1e`, all three probe builds green:
+
+```
+RECORD (tolerance @ 9cdf19b1ee): ran 24, the run passed; +0 carried,
+  19 cleared by a green, 0 still red, 0 no longer registered; 0 carried after this push
+NEVER PROBED (tolerance): 0 of the 24 in scope
+```
+
+**0 carried, 0 still red, 0 never probed.** All 19 cleared by a green, **both P18 receipts among
+them** — including the `r7841` receipt whose Ⓐ② this revision repaired, now cleared under
+perturbation rather than merely passing plain.
+
+Every job on `9cdf19b1e` is green: `fast` (the tier that had named `check_prose_pins`), the plain
+suite, the runner-read sweep, the tolerance scope job, probe builds A/B/C, and the tolerance
+compare job — whose `record` step finished in **3 seconds** rather than reaching the designed
+15-minute timeout.
+
+⌷ **Correcting myself inside one revision, which is the shape of this whole round.** The history:
+the drain to zero I reported at `r7839+cc66.2` did **not** survive the start of this revision — my
+own push cancelled the probes mid-sweep on `e9ce52e43` (0 named red, 0 flagged, **19 NEVER
+PROBED**, +9 newly carried), and nothing in those 19 was ever a verdict about them, since the
+`= still red` block of a tolerance log is the carried **ledger** and not that run's verdict
+(`r7611+cc66.6`). I then wrote in this very section that the carry *is* 19 and that my merge push
+had cancelled the sweep in turn. **Both halves were wrong by the time I wrote them:** the sweep
+had already **completed at 20:56:57**, before the merge push, and the measured carry is **0**.
+⇒ A carried figure is a measurement with a timestamp, and quoting it after its subject has moved
+is the same defect as `Ⓐ②`'s zero — at a third remove, now in my own reporting rather than in a
+receipt. The number above is read off the run, not remembered.
 
 `fast` was **green** on `9cdf19b1e` — the tier that had named `check_prose_pins`.
 `scripts/turn_gates.sh` on the merged tree: the only failure is `check_env_fingerprint`, the
