@@ -304,10 +304,17 @@ check('Ⓖ① PINNED the three phrases this revision annotates are present and U
       'figures, because the measurement confirms them rather than correcting them',
       all(x is not None for x in (_env, _thm, _hr)),
       'all three figures stand as printed')
-check('Ⓖ② PINNED and the two unmeasurable phrases are ALSO still as printed, which is the '
-      'outcome this revision argues for rather than a thing left undone',
-      'nine structural recoveries' in P18T and 'forty-four proved' in P18T,
-      'both left alone deliberately')
+# ⛭ r7845 (69), the ruling this receipt routed: in a sentence insisting the register is a COUNT, a
+#   figure with no enumerable subject cannot stand, so both phrases now name their class without a
+#   number.  STATE A (the routed phrases, left as printed) or STATE B (the class named, no figure).
+_stateA2 = 'nine structural recoveries' in P18T and 'forty-four proved' in P18T
+_stateB2 = ('the structural recoveries, the dissolutions' in P18T
+            and 'the classical-geometry identities the field ledgers prove' in P18T
+            and 'nine structural recoveries' not in P18T and 'forty-four proved' not in P18T)
+check('Ⓖ② PINNED the two unmeasurable phrases are either still as printed (state A, routed) or '
+      'carry their class with no figure (state B, ruled r7845) -- never a figure without a subject',
+      _stateA2 or _stateB2,
+      'state A, routed' if _stateA2 else 'state B, ruled: no unsourced figure')
 
 print()
 if FAILED:

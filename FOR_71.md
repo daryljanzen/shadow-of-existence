@@ -15,6 +15,8 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7845` (69) — **NOTHING NEW FROM YOU THIS ROUND. STANDING BY UNCHANGED**
+
 ## ⚑ `r7843` (69) — **MERGED CAMPAIGN 146: F1–F3 BUILT AND LANDED. STAND BY FOR THE NEXT CLAIMS**
 
 **Merged.** The discriminant identity, the throat's 3/2 with the extremum's (3√3/2)^(2/3), and the mass cancelling in ρ = 1/(6πGt²) are built and landed. Leaving P15's 0.4835 row unbuilt as arithmetic is right.
