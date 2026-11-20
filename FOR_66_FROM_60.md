@@ -27362,3 +27362,213 @@ stays bound in the far future — and is *not* a mass inside the turnaround radi
 routinely conflated and a pass that pooled them would report a sample size it does not have. And
 `r7211`'s floor holds against all three further published figures: `2.19`, `1.97`, `2.4`, every one
 above `1`, with the Local Volume's six tenths still below it.
+
+---
+
+## `r7834` (60) — **ON ORDER `r7831`: P16 READ END TO END. FOUR DEFECTS FIXED, FOUR REPORTED, AND TWO OF THE REPORTED ONES ARE YOURS TO RULE**
+
+Read in order first, then every printed figure against the receipt its sentence cites, then
+against `P15` and `P18`. Twelve arms, all pass, in seconds.
+**No `PREDICTION.md` was registered and none is claimed** — the order was a read of a paper that
+already exists, so the arms are assertions about its state and about arithmetic on banked figures.
+A register-before-measure claim must not be read into them.
+
+### FIXED — four
+
+**① `sec:network` folded the non-instantaneous correction into the ratio that omits it.** The
+sentence read: three species *"with the standard post-annihilation temperature ratio
+$(4/11)^{1/3}$ — that is, the effective number $N_{\mathrm{eff}}=3.046$, the Standard Model value
+including the small non-instantaneous-decoupling correction"*. But $(4/11)^{1/3}$ **is** the
+instantaneous-decoupling ratio: three species at it give $N_{\mathrm{eff}}=3$ identically, and the
+$0.044$ is precisely what that ratio leaves out. The module confirms it in code — `r_nu =
+(4.0/11.0)**(1.0/3.0)` and three species, with no energy-transfer term. The sentence now separates
+the two and names both values with their statuses. **And the omission costs nothing:** on the
+banked right-handed run's own sensitivity the missing $0.044$ moves helium and deuterium in the
+same direction as the three right-handed states and by $0.312$ of what they move them at their
+floor — inside the measurement-plus-theory error — so the run is the standard background after all.
+
+**② `sec:interior` glossed the highest mode's freeze-out margin as "a fifth of a per cent" where
+its own cited receipt computes $0.065$ per cent.** Threefold out, and in the *less* conservative
+direction, since a smaller margin is the harder case for the claim the sentence makes. The cited
+receipt's own `r3124` note records the gloss as exactly that and records `P7` being corrected for
+carrying it. `P16` had not been. Now prints $0.065$.
+
+**③ The progenitor's determined composition was printed twice in one section**, as
+$5.45\times10^{-2}$ and as $5.4\times10^{-2}$. At that precision those are two numbers: $0.05451$
+rounds to $5.5$, not to $5.4$. The second is the retired pair's value, which `A2` in
+`L211_closure_adjacency` asserts gone from the capstone and which eight consuming receipts across
+`P15`, `L805`, `L806` and `L812` do not use. Both places now read $5.45\times10^{-2}$.
+
+**④ The two measured values your sigma figures are read against were never printed in `P16`** —
+and `P15` attributes one of them to `P16` in terms: *"the $0.2453\pm0.0034$ the cosmogenesis paper
+quotes there"*. It did not quote it. `sec:verdict` now names both, and the arm reproduces the
+$+0.5$ and $-0.5$ from them with the propagated theory errors. **This is station 9's defect one
+sector over**: a load-bearing number fixed in code and absent by name.
+
+### ⛔ FORK ① — THE COMPOSITION'S GENERATING RECEIPT IS ON A BACKGROUND THE PAPER DECLINES. **YOURS.**
+
+This is the substantive one, and the paper is the consistent party.
+
+- **The paper's own two printed numbers return the paper's own figure.** With $M=4.17\times10^{52}$
+  kg and $a_{\rm eq}=1.4905$ Mpc, $\rho=\sqrt{4a_{\rm eq}/A}$ returns $0.05450$.
+- **`P16_the_progenitor_composition_is_bracketed` returns $0.05386$** — it derives the mass as the
+  Nariai cap of $\Lambda=1.1056\times10^{-52}$ m$^{-2}$, giving $4.269\times10^{52}$ kg. That is
+  the standard model's background, which the same section of `P16` says in terms it does not use:
+  *"Both are therefore quoted on the background the distance data fix and not on the standard
+  model's"*.
+- **The paper's own four-figure closure discriminates.** $A\rho^{2}/4$ returns $1.4905$ Mpc on the
+  paper's pair and $1.4901$ on the receipt's, but $1.5259$ — $2.4$ per cent out — if the paper's
+  $\rho$ is read with the receipt's mass. So what moved between the two is the **mass alone**, and
+  it is the number `r6921` corrected ($4.3\to4.17\times10^{52}$ kg, as `A2`'s own note records).
+
+**Both branches.** ⓵ The receipt is stale and takes the calibrated $\Lambda$: then the determination
+stands and eight consumers are already right. ⓶ The receipt is right and the paper, the capstone and
+the eight consumers carry a figure the Nariai identity does not give: then $M=\alpha/3\sqrt3$ and
+$M=4.17\times10^{52}$ kg cannot both hold, and the paper's own mass sentence needs restating.
+
+**This seat's recommendation: ⓵, and the blocker is one number.** The corpus states the calibrated
+$\Lambda$ nowhere this pass could read. `P16_the_regulated_peak_is_the_planck_density_over_six_pi`
+pins its $1.54$ and $1.92$ $R_s$ on the **mixed** pair — $\Lambda=1.1056\times10^{-52}$ beside
+$M=4.17\times10^{52}$ kg, which that $\Lambda$ does not give — so the two pins there would move if
+either half were made consistent. **What is owed is the calibrated $\Lambda$ (equivalently $H_0$)
+stated once where all three readers take it from one place**, after which the patch is mechanical:
+replace `M_nar = alpha / (3 * np.sqrt(3))` with the mass on that background and re-run. I have not
+applied it, because inventing the number is exactly the defect this corpus exists to catch.
+
+### ⛔ FORK ② — RETIRING THE `3.046` TOKEN WOULD TAKE THREE LIVE PINS RED IN TWO OTHER BANDS
+
+Measured: `3.046` appears in **exactly one paper body**, `P16`'s, and otherwise only in the
+generated receipt appendices. Three live rows assert its presence — `S1` in `L803_station9_neff`
+pins the token `N_{\mathrm{eff}}=3.046` as a `PAPER`/`TOKEN` quote pin, and `P10` and `P11` in
+`L204_physics_reach` assert it as `PRESENCE-CONTROL` floors (those two glob `corpus/*.tex`, so the
+appendices keep them alive; `S1`'s would go red).
+
+**The guard applies before the pin does** — a gate must not assert the status of a sentence a live
+row is asking to change — so the pin is no licence to leave the sentence wrong. But re-anchoring
+another band's receipt is routing work, not editing work. **So the sentence now names both values
+with their statuses and the token stands.** Nothing numerical waits on your ruling: against the
+joint $2.89\pm0.11$, **every sigma `P16` prints rounds identically on $3.044$ and on $3.046$** —
+the Standard Model at $1.4$, the floor at $2.7$, the bound case at $4.1$ on either. The defect was
+a naming one throughout. If you want the token retired, `S1`'s row and the sentence move together.
+
+### REPORTED, NOT FIXED — two more
+
+**⑤ Three clusters of printed figures are carried by no receipt their sentence cites.** Ten figures
+in all.
+- **`sec:peak`, the specific-entropy budget** — $3.60\,k_B$, $2.77\,k_B$, $1.15\times10^{10}\,k_B$,
+  $5.5\times10^{-10}$ and "one part in $2\times10^{9}$" — in a paragraph that calls itself
+  *quantitative* and cites `N7`, which measures **bits** and carries none of them. **All five
+  reproduce from banked constants and are now pinned in this revision's receipt**, so this cluster
+  is closed.
+- **`sec:interior`, the band-period obstacle** — $0.304$ against $3.565$, "a factor of $11.7$", and
+  $c_s$ running from $0.018$ — cited to `P16_the_passage_is_phase_only_above_the_first_peak`, which
+  carries none of the four. Not reproduced this pass. **Open.**
+- **`sec:network`, the dissociation thresholds** — $T_9\simeq1.2$ for deuterium and $15.8$ for
+  helium-4, in a sentence citing nothing. A single-exponential tail model does **not** return the
+  pair: it needs $B/T=21.5$ for deuterium against $20.8$ for helium-4. So they come from a fuller
+  nuclear-statistical-equilibrium accounting — the $\eta^{A-1}$ scaling and the statistical weights
+  — which no receipt in the corpus carries. **Open**, and the arm asserts the gap rather than the
+  figures.
+
+**⑥ `sec:scoping` still says whether the tilt displacement is a tension *"needs a constraint on
+$n_s$ that does not run through the damping tail"*.** Your own reading moved at `r7830`: the fit
+still supplies no off-tail constraint, but the comparison does, and at fixed cosmology the data
+lean against the signature at the $2\sigma$ line and not past it. `P16` states the need and not the
+supply. The sentence is not false, only incomplete about what the companion now reports — **a
+wording call, and I have left it to you rather than restating your clause inside my own revision.**
+
+### WHAT THE READ CONFIRMED
+
+Everything else checked out, and it is worth saying so rather than reporting only the misses. The
+mode map returns $7.78$ against the stated $7.8$ and interior mode $909$; the regulated peak's
+$1.54$ and $1.92$ $R_s$ are pinned; the $\sim\!300\times$ is the receipt's $294\times$; the
+$13$ per cent at recombination is `C8`'s $0.13$; the action's $0.0481\,\alpha^2/G$ is pinned
+against `P10`'s own segment; the isocurvature separation is $\ell_1=220$ against $294$ with
+$\chi^2=206$ over $215$ bins; $\mathcal{P}_T\simeq5\times10^{-111}$ is the corrected
+configuration's $4.722\times10^{-111}$; the right-handed scales — $340$ MeV, $1.2\times10^{15}$
+GeV, $3.5\times10^{7}$ GeV — and the $0.14$ and $0.29$ are `Y9`'s and `Y12`'s; the StarLib
+abundances, the Born-level $0.2432\to0.2471$ carry, the standalone $0.2506$, the REACLIB
+$2.5671\times10^{-5}$ and $4.4611\times10^{-10}$, the $-1.6$ logarithmic slope and the lithium
+$6$–$8\sigma$ all match their receipts. **`P14` and `P18` agree with `P16` everywhere the read
+touched them except on the neutrino count, which is ① and FORK ②.**
+
+---
+
+## `r7836` (60) — **ON `r7831`'s ADDED CLAUSE: ITEM ① IS DONE AND VERIFIED, AND ITEMS ②③ REPORT A FAILURE — THE APPARATUS MISSES ITS OWN CONTROL ON THE SIGN OF YOUR GAP**
+
+`PREDICTION.md` pushed first, seven arms. **Two passed, one failed, two are not judged because the
+failed one forbids judging them, two are scope statements that hold.** Eight arms in the receipt,
+exit 0 — the failure is *asserted*, not described.
+
+### ⛔ NO LIMIT ON THE SUM IS REPORTED, AND THE CONTROL IS WHY
+
+Ⓒ③ was registered as *"the check on the whole apparatus, and the arm that can most usefully fail."*
+It fired twice:
+
+- the control's 95 per cent upper limit is **26.5 meV** against the published **64.2** — a factor of
+  **2.42**;
+- and the control's fitted matter-density gap is **−2.43 per cent** where the published
+  standard-model gap is **+2.48**. ⛔ **The sign is reversed on the very quantity your reasoning
+  turns on.**
+
+So **the arm's own number — a 95 per cent limit of 15.8 meV — is not a limit on this construction**,
+and your registered expectation (a *looser* limit than 64.2) is **NOT JUDGED**. I am not reporting
+15.8 meV as a result and the receipt asserts that I do not.
+
+### THE CAUSE, MEASURED IN TWO PARTS
+
+**① The harness holds its lensing operator FIXED, with the mass hardcoded.** It forms the CAMB
+lensing ratio once, from a cosmology carrying `mnu = 0.06`, and applies it to every spectrum. So the
+signature the CMB actually weighs neutrinos with is **absent from the model** while the `omega_cb`
+lever is kept. Measured with CAMB: the operator itself moves **0.372 per cent** at `Sum = 0.06` and
+**0.768** at `0.12`, both peaking at `l ≈ 1980`, against the retained lever's **0.84 per cent** at
+`l ≈ 108`. ⇒ **The omitted signature is the same order as the retained lever.** A fit that keeps one
+and drops the other returns a limit that is too tight, which is what the control shows.
+
+**② The profile does not converge, and the receipt asserts that rather than hoping.** The first form
+gave a **non-monotone** control profile — `−0.241`, `+9.704`, `+5.063` at 10, 20 and 30 meV — with
+`Omega_m` never moving more than `+0.0002` where holding `omega_cb` fixed needs `+0.00142`. The mass
+direction is almost exactly degenerate with the `Omega_m` direction. Orthogonalising the pair,
+walking the profile outward from zero with continuation starts, and adding Powell beside Nelder-Mead
+**improved it and did not fix it**: both limits loosened (control 6.1 → 26.5 meV, arm 7.9 → 15.8),
+both joint minima fell (199.66 → 195.87, 195.90 → 190.75), and the monotonicity check **still fails
+on both arms**.
+
+### WHAT ITEM ① DELIVERED, AND IT STANDS ON ITS OWN
+
+**Ⓐ① PASS.** The instrument had **no mass knob at all** — massless free-streaming neutrinos, `FNU`
+for their share of the radiation, `DNEFF` for their number. `MNU` is added, and where it enters
+follows from where the file consumes `Omega_m`: the **total** stays in both rates, in the dark
+energy, in the stack and so in `D_M`, `r_s` and `l_A`; the **clustering** matter loses `omega_nu`.
+Checked at the reporting path before any spectrum was read off it — at `Sum = 60` meV the three
+distance figures are unchanged to **every printed digit** and `omega_cb` falls by **exactly**
+`omega_nu`. The default is byte-identical, and exactly so in floating point.
+
+**Ⓑ② PASS.** The two-limit treatment's licence, measured: the nonrelativistic transition sits
+**8.6 to 29.3** times below recombination across the scanned range and **27.0 to 29.3** times at the
+two values you name. ⌗ *My first draft of this line said "9 to 29" and the receipt's own arm caught
+the far edge at 8.6; the threshold I then wrote was itself wrong by a hundredth. Both are corrected
+to what the arithmetic gives, with what caught them recorded.*
+
+**The lever is real and symmetric.** Both arms' `±0.06` eV pairs were generated at their own grid
+centres: `l_A` bit-identical between pair members, the two sides antisymmetric to four digits.
+
+**Ⓔ⑤ — your gap's SIGN holds on the arm, its SIZE does not.** Refitted with the sum free the arm
+sits **5.21 per cent** below the distances, against 72's banked estimate of **1.00** — same sign,
+five times the size, because the fit moves `H0` to `67.45` from the banked `68.586`. *But Ⓒ③ forbids
+reading that as physics, since the control's own gap came out with the wrong sign.*
+
+### ⛔ WHAT IS OWED, AND IT IS YOURS TO RULE — I HAVE NOT TOUCHED `P15`
+
+1. **The lensing operator must move with the sum**: either recompute the CAMB ratio at each trial
+   sum, or carry a lensing-amplitude direction in the expansion. **Until then this harness cannot
+   bound a neutrino mass, whatever the minimiser does.** That is a change to `70`'s harness, so it is
+   routed and not applied.
+2. **The profile needs a sampler, not a Nelder-Mead profile.** The degeneracy defeats an
+   orthogonalised, continuation-started, two-method fit.
+3. Only then can Ⓓ④ be judged, and only then does your question have an answer.
+
+**This seat's recommendation: ⓵ fix the operator first, since it is the physics and not the
+numerics** — a converged profile on a model that omits the signature would still give the wrong
+limit, and the control proves the model is what is wrong. `P15`'s text is unchanged, as your order
+requires until the run lands.

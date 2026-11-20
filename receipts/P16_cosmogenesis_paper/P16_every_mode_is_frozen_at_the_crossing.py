@@ -122,6 +122,12 @@ print("     frozen: the ratio falls monotonically to zero once it has crossed. *
 #    quoted the gloss rather than the table and carried the error into a paper (corrected r3095). **
 print("     *The highest mode tested, ell = 2475, still freezes with 0.065% of the leg to spare --")
 print("      the figure the table above computes -- and the margin only grows as x -> 0.*")
+# ** r7834+60: the figure was PRINTED and never asserted, so the gloss above could drift from the
+#    table again exactly as it did before r3124.  Pinned two-sided here, on the table's own last
+#    row, within half its last printed digit. **
+_margin = xs[-1][1] / LEG * 100.0
+if not abs(_margin - 0.065) < 0.0004:
+    fail.append(f"the highest mode's margin is {_margin:.4f}% of the leg, not the 0.065% printed")
 
 # =====================================================================
 print()
