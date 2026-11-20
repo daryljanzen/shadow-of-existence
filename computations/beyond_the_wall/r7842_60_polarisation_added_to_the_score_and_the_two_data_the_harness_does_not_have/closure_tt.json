@@ -1,0 +1,116 @@
+{
+ "arm": "\u24b7\u2461",
+ "chains": {
+  "accept_r7838": 0.22288055555555555,
+  "accept_r7842": 0.22365069444444444,
+  "burn_accept_identical": true,
+  "burn_accept_r7838": 0.20504166666666668,
+  "burn_accept_r7842": 0.20504166666666668,
+  "chi2min_identical": false,
+  "chi2min_r7838": 194.57369743914185,
+  "chi2min_r7842": 194.57369743914236
+ },
+ "chi2": {
+  "at_best_fit": {
+   "abs_diff": 2.842170943040401e-14,
+   "new": 194.57369743914188,
+   "old": 194.57369743914185
+  },
+  "bitwise_equal": 22,
+  "max_abs": 4.092726157978177e-12,
+  "median_abs": 2.2737367544323206e-13,
+  "points": 200
+ },
+ "combined_mcse_mev": 2.3897199738028676,
+ "directions": {
+  "H0m": 0.0,
+  "H0p": 0.0,
+  "NSm": 0.0,
+  "NSp": 0.0,
+  "OMm": 0.0,
+  "OMp": 0.0,
+  "WBm": 0.0,
+  "WBp": 0.0,
+  "base": 0.0
+ },
+ "directions_max_rel": 0.0,
+ "fisher": {
+  "bins_new": 185,
+  "bins_old": 185,
+  "bitwise": true,
+  "max_abs": 0.0,
+  "same_mask": true
+ },
+ "limit_gap_in_mcse": 0.9979179720682481,
+ "limit_gap_mev": 2.3847445100683444,
+ "nodes": {
+  "identical": true,
+  "r7838": [
+   -0.12,
+   -0.06,
+   0.0,
+   0.06,
+   0.15,
+   0.3,
+   0.45,
+   0.6
+  ],
+  "r7842": [
+   -0.12,
+   -0.06,
+   0.0,
+   0.06,
+   0.15,
+   0.3,
+   0.45,
+   0.6
+  ]
+ },
+ "operator": {
+  "bitwise": true,
+  "grid_identical": true,
+  "ls_identical": true,
+  "max_abs": 0.0
+ },
+ "r7838": {
+  "ess": 22915.96545554184,
+  "mcse_mev": 1.7360294889590673,
+  "per_chain_mev": [
+   279.64493841982386,
+   286.4092243893035,
+   278.56916497163326,
+   278.3506100193374,
+   273.5099013416053,
+   270.97944787501655
+  ],
+  "per_chain_range_mev": 15.42977651428697,
+  "upper95_mev": 277.7099236652287
+ },
+ "r7842": {
+  "ess": 22708.290180748212,
+  "mcse_mev": 1.6422433335705457,
+  "per_chain_mev": [
+   274.9070471496711,
+   282.6337186474965,
+   275.6256000116572,
+   270.21536478412906,
+   281.91011028757487,
+   267.7142574871267
+  ],
+  "per_chain_range_mev": 14.919461160369792,
+  "upper95_mev": 275.32517915516036
+ },
+ "registered": {
+  "chi2": 194.57,
+  "chi2_tol": 0.05,
+  "limit_mev": 277.7,
+  "limit_tol_mev": 1.0
+ },
+ "seconds": 96.41086888313293,
+ "verdict": {
+  "chi2_half_holds": true,
+  "limit_half_holds": false,
+  "scoring_unchanged": true,
+  "tolerance_tighter_than_instrument": true
+ }
+}
