@@ -71,7 +71,10 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 # ── THE RAILS.  name, generator, source index, filename glob, and how a filename maps to a scope.
 #    The floors are a RATCHET: raise them when a rail grows, never lower them to make a run pass.
 RECEIPT_SCOPES = {f"appendix_receipts_P{n:02d}.tex" if n < 10 else f"appendix_receipts_P{n}.tex":
-                  f"P{n}" for n in range(1, 18)}
+                  f"P{n}" for n in range(1, 19)}
+# r7843+cc66.1: 17 -> 18 beside make_all_appendices' own range, because P18 now carries a
+# receipts appendix.  ** The floors are a ratchet and this is NOT a floor: it is the scope
+# MAP, and leaving it short makes a real appendix read as "maps to no scope". **
 RECEIPT_SCOPES['appendix_receipts_corpus.tex'] = 'corpus'
 
 

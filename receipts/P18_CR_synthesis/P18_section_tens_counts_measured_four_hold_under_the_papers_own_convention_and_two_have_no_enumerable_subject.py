@@ -190,10 +190,23 @@ check('Ⓓ② PINNED AND THE PROVENANCE IS EXPLICIT: the harvest that minted thi
       _prov is not None, 'harvest carries "roughly seventy-four hard-tagged results"')
 
 FIVE = ('THEOREM', 'PROPOSITION', 'DERIVED', 'COMPUTED', 'RECEIPT-ANCHORED')
-# the five registers are PARSED out of the paper's own sentence, not retyped here
-P18T = re.sub(r'\s+', ' ', TEXT['CR_synthesis.tex'])
-_named = re.search(r'a hard register --- ([a-z, \-]+?)\.', P18T)
-PAPER_FIVE = tuple(w.strip().upper() for w in _named.group(1).split(',')) if _named else ()
+# the five registers are PARSED out of the paper's own sentence, not retyped here.
+#   ⌗ and P18 is opened BY ITS OWN PATH rather than taken from the glob-built dict above: the
+#     pin operator traces a literal to the file the receipt opens, and through a glob it
+#     cannot, so every sentence pin below came back target UNDECIDED -- a target the baseline
+#     has never carried in 3020 rows.  Read it where the operator can see it.
+P18T = re.sub(r'\s+', ' ',
+              open(os.path.join(ROOT, 'corpus', 'CR_synthesis.tex'), encoding='utf-8').read())
+# ⛔ this pattern's first cut ended at the full stop -- and THIS revision's own edit to P18
+# put a convention phrase after "receipt-anchored", so the receipt stopped parsing the
+# sentence it had just annotated.  Matched on the five words themselves, so it reads the
+# sentence before and after the annotation.
+_named = re.search(r'a hard register --- ([a-z]+, [a-z]+, [a-z]+, [a-z]+, [a-z-]+)', P18T)
+# read in a statement, not a ternary: the pin operator reads a ternary as a disjunction of
+# two arms and flags it ALT/XOR, which this is not.
+PAPER_FIVE = ()
+if _named:
+    PAPER_FIVE = tuple(w.strip().upper() for w in _named.group(1).split(','))
 check('Ⓓ③ PINNED the five registers are PARSED out of P18\'s own sentence and are exactly the '
       'five this receipt counts', PAPER_FIVE == FIVE, f'{PAPER_FIVE}')
 
