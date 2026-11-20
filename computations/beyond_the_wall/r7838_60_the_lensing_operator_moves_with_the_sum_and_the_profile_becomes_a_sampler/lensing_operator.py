@@ -38,7 +38,7 @@ OM = 0.3150
 OMH2 = OM * H ** 2                    # the TOTAL matter density, held fixed as the sum moves
 TAU, AS, NS = 0.054, 2.1e-9, 0.965
 NU_DIVISOR = 93.14                    # eV per unit omega_nu, the standard conversion
-GRID = np.round(np.arange(0.0, 0.3001, 0.03), 6)
+GRID = np.round(np.arange(0.0, 0.6001, 0.03), 6)
 OUT = os.path.join(HERE, 'ratio_grid.npz')
 OUTJ = os.path.join(HERE, 'lensing_operator.json')
 
