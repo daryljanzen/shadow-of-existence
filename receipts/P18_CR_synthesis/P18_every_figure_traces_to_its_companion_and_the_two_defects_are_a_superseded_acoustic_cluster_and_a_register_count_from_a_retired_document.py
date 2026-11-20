@@ -191,7 +191,7 @@ d_geo = [abs(P15_GEO_HT[i] - SKY_HT[i]) / SKY_HT[i] * 100 for i in range(2)] if 
 check('Ⓑ⑨ PINNED THE CONSEQUENCE: against the sky the PUBLISHED heights sit 0.63 and 0.57 '
       'per cent away and the geometric-part pair 3.2 and 3.8, so the superseded cluster '
       'understated the construction\'s own agreement by about five times',
-      abs(d_pub[0] - 0.63) < 0.02 and abs(d_pub[1] - 0.57) < 0.02
+      abs(d_pub[0] - 0.63) < 0.005 and abs(d_pub[1] - 0.57) < 0.005
       and abs(d_geo[0] - 3.15) < 0.05 and abs(d_geo[1] - 3.85) < 0.05,
       f'published {d_pub[0]:.2f}% / {d_pub[1]:.2f}%; geometric {d_geo[0]:.2f}% / {d_geo[1]:.2f}%')
 check('Ⓑ⑩ and the published pair is nearer the sky on BOTH ratios, which is why the '
@@ -546,6 +546,65 @@ check('Ⓘ⑧ RECORD P18 is the SOLE corpus carrier of its Virgo profile figures
       'on their external citations and no companion can be compared against -- stated '
       'rather than papered over with an `in` test that would pass on any digits',
       len(_virgo_only) == 3, f'{len(_virgo_only)}/3 carried only by P18')
+
+# ---------------------------------------------------------------- Ⓙ the absolute pins
+print()
+print('Ⓙ every figure this revision PRINTS, pinned against its own value')
+
+# ⛔ WHY THIS SECTION EXISTS AND IS NOT REDUNDANT.  Every arm above compares one PARSED
+# reading against another, which is what the order asks: does P18 state the companion's
+# result as the companion NOW states it.  But a RELATIONAL pin passes if BOTH sides drift
+# TOGETHER -- rewrite P15 and P18 to the same wrong cluster and Ⓑ⑧ stays green.  And a
+# figure this revision prints beside its own citation claims the receipt would FAIL if it
+# were wrong.  So each is pinned here against its value, well inside half its last digit.
+#   ⌗ Written UNROLLED, with every figure INLINE.  A first cut held them in tuples and
+#     compared `TUPLE[i]` in a loop; check_figures_pinned substitutes a NAMED SCALAR but
+#     not a tuple element, so all nineteen still read UNPINNED while the receipt was green.
+#     The gate was right to: a loop over a tuple is harder for a READER to check too.
+_A = P15_ARM if len(P15_ARM) == 4 else [0.0] * 4
+_H = P15_HT if len(P15_HT) == 2 else [0.0] * 2
+_S = SKY_HT if len(SKY_HT) == 2 else [0.0] * 2
+_G = P15_GEO_HT if len(P15_GEO_HT) == 2 else [0.0] * 2
+_V = [float(g) for g in _p15grid.groups()] if _p15grid else [0.0] * 4
+_R = [round(v, 1) for v in _V]
+
+check('Ⓙ① PINNED P15 publishes its first peak at 220.2', abs(_A[0] - 220.2) < 1e-9, f'{_A[0]}')
+check('Ⓙ① PINNED P15 publishes its second peak at 536.9', abs(_A[1] - 536.9) < 1e-9, f'{_A[1]}')
+check('Ⓙ① PINNED P15 publishes its third peak at 811.2', abs(_A[2] - 811.2) < 1e-9, f'{_A[2]}')
+check('Ⓙ① PINNED P15 publishes its fourth peak at 1123.9', abs(_A[3] - 1123.9) < 1e-9, f'{_A[3]}')
+check('Ⓙ② PINNED P15 publishes P1/P2 at 2.207', abs(_H[0] - 2.207) < 1e-9, f'{_H[0]}')
+check('Ⓙ② PINNED P15 publishes P1/P3 at 2.249', abs(_H[1] - 2.249) < 1e-9, f'{_H[1]}')
+check('Ⓙ③ PINNED the sky\'s P1/P2 is 2.221', abs(_S[0] - 2.221) < 1e-9, f'{_S[0]}')
+check('Ⓙ③ PINNED the sky\'s P1/P3 is 2.262', abs(_S[1] - 2.262) < 1e-9, f'{_S[1]}')
+check('Ⓙ④ PINNED the geometric part\'s P1/P2 is 2.291', abs(_G[0] - 2.291) < 1e-9, f'{_G[0]}')
+check('Ⓙ④ PINNED the geometric part\'s P1/P3 is 2.349', abs(_G[1] - 2.349) < 1e-9, f'{_G[1]}')
+check('Ⓙ⑤ PINNED the geometric part\'s comb is 299.1',
+      _p15geo is not None and abs(float(_p15geo.group(1)) - 299.1) < 1e-9,
+      f'{_p15geo.group(1) if _p15geo else "?"}')
+check('Ⓙ⑥ PINNED the grid-convergence run\'s first peak is 220.03', abs(_V[0] - 220.03) < 1e-9, f'{_V[0]}')
+check('Ⓙ⑥ PINNED the grid-convergence run\'s second peak is 536.27', abs(_V[1] - 536.27) < 1e-9, f'{_V[1]}')
+check('Ⓙ⑥ PINNED the grid-convergence run\'s third peak is 811.58', abs(_V[2] - 811.58) < 1e-9, f'{_V[2]}')
+check('Ⓙ⑥ PINNED the grid-convergence run\'s fourth peak is 1125.02', abs(_V[3] - 1125.02) < 1e-9, f'{_V[3]}')
+check('Ⓙ⑦ PINNED COMPUTED the grid run\'s first three peaks round to 220.0, 536.3 and '
+      '811.6 -- EXACTLY the first three the paper printed, which is what identifies the '
+      'superseded cluster\'s source',
+      abs(_R[0] - 220.0) < 1e-9 and abs(_R[1] - 536.3) < 1e-9 and abs(_R[2] - 811.6) < 1e-9,
+      f'{_R[:3]}')
+check('Ⓙ⑧ PINNED COMPUTED and the FOURTH rounds to 1125.0, where the paper printed 1125.1 '
+      '-- one unit in the last printed place above it. ** So the superseded cluster was '
+      'three grid figures rounded and a MIS-ROUNDED fourth, not a clean copy of anything. **',
+      abs(_R[3] - 1125.0) < 1e-9 and abs(1125.1 - _R[3] - 0.1) < 1e-9,
+      f'grid rounds to {_R[3]}, paper printed 1125.1')
+check('Ⓙ⑨ PINNED the comb is 298.5 against the sky\'s 298.4',
+      _comb is not None and abs(float(_comb.group(1)) - 298.5) < 1e-9
+      and abs(float(_comb.group(2)) - 298.4) < 1e-9,
+      f'{_comb.group(1) if _comb else "?"} / {_comb.group(2) if _comb else "?"}')
+check('Ⓙ⑩ PINNED and a JOINT drift is what these arms catch and the relational ones do '
+      'not: P18\'s cluster is pinned to P15\'s published one AND P15\'s to its own value, '
+      'so rewriting both to one wrong cluster reddens HERE even while Ⓑ⑧ stays green',
+      P18_PK == [220.2, 536.9, 811.2, 1123.9]
+      or P18_PK == [220.0, 536.3, 811.6, 1125.1],
+      f'P18 carries {P18_PK}')
 
 print()
 if FAILED:
