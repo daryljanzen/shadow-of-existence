@@ -15,6 +15,167 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7839+cc66 — ⚑⚑ **THE COLD READ OF `P14`: EVERY PRINTED FIGURE REPRODUCES, AND THE ONE DEFECT IN 1018 LINES NAMES THE *CONJUGATE* CREST — AN UNRECEIPTED DISCRIMINANT DATED `r6683`**
+
+**Order `r7835`, answered whole.** Read every section in order first, then every printed figure against
+the receipt its sentence cites, then P14 against `P16` and `P15`. Receipt
+`P14_matter_sector_paper/P14_every_printed_figure_reproduces_and_the_single_defect_is_an_unreceipted_discriminant_that_names_the_conjugate_crest.py`
+— **62 arms, ALL PASS**; INDEX row appended at the end of P14's block; appendices regenerated; P14's PDF
+recompiled (101 pages).
+
+### The verdict
+
+**Every printed figure in P14 reproduces.** 118 `\rcpt` sites resolve to 98 distinct receipts, **every
+one of which exists on disk**, and none is cited for a figure it does not carry. P14 is in **one state**
+and contradicts neither `P15` nor `P16`.
+
+### The one substantive defect — line 745, and it is sharper than it looked
+
+\S`cosmogenesis` said the Nariai crest is the point *"where two of the three horizon roots merge (the
+discriminant $4-3r_0^2$ vanishing)"*. Under the paper's own $2M=r_0-r_0^3$ (lines 84, 694), the
+discriminant of $r^3-r+2M$ through the designated root is
+
+> $-4(-1)^3-27(2M)^2=(4-3r_0^2)(3r_0^2-1)^2$,  verified to $9.9\times10^{-14}$ over $2\times10^5$ random $r_0$.
+
+⚑ **The printed factor is not merely incomplete — it vanishes at the WRONG crest.** $4-3r_0^2=0$ at
+$r_0=2/\sqrt3$, where $2M=-2/(3\sqrt3)$: the **negative-mass crest, the $R$-image**. At the crest the
+sentence names, $r_0=1/\sqrt3$ with $2M=+2/(3\sqrt3)$ — the member the paper's **own Lean-checked
+maximum at line 916** singles out — the discriminant vanishes through $(3r_0^2-1)^2$ while $4-3r_0^2$
+equals **3**. The two statements are the same algebra, 170 lines apart: the double root that makes
+$x(1-x^2)$ maximal at $1/\sqrt3$ is why $(3r_0^2-1)$ enters the discriminant **squared**.
+
+**The sentence carried no receipt**, citing only `\cite{Nariai1951}` — which is why it was never checked.
+
+**Fixed, and it is a fix the receipts settle, so I did not route it.** Line 745 now reads *"(the
+discriminant $(4-3r_0^2)(3r_0^2-1)^2$ vanishing)"* and cites this receipt. The correction is forced by
+the paper's own machine-checked identity; no reading of yours is needed for it, and nothing else in the
+sentence moves. ⌗ *If you would rather the parenthesis name only the vanishing factor —
+$(3r_0^2-1)$ — say so and I will change it; I took the full discriminant because the word in the
+sentence is "the discriminant".*
+
+### The dating, which is the point of the read
+
+`git log -L 745,745:corpus/matter_sector_paper.tex` → **`r6683`**, then `r6679`, `r3137`, `r2419`. The
+`Y`-series material 170 lines later — the Majorana and right-handed-scale prose 72's L550 line rewrote —
+was rewritten **the same day** by `20e207cd1` (Y17), and before that at Y15, Y14, Y13. **It is clean.**
+
+⇒ **The risk sat where a claim's precision was never re-derived, not where the edits were.** That was my
+registered prediction ③ and it is the `P15` guard transferred and confirmed. **All five substantive
+registered predictions hit** (1 defect against 0–3; precision class, 0 superseded figures; not at the
+`Y` seams; 0 cross-paper contradictions; 100% reproduction against ≥90%) — against *three of four
+missed* on `P15`.
+
+### One precision note, NOT a defect, recorded rather than filed
+
+Line 914 prints the collider bound as *"below about $10^{-2}$"* and the exclusion as *"a factor of
+thirty"*. $2/(3\sqrt3)/10^{-2}=38.5$, not 30 — **the thirty comes from `Y7`'s unrounded $0.0125$**,
+where it is $30.8$. Both printed numbers are right and `Y7` is cited, so nothing is owed. Pinned both
+ways in the receipt because the two are consistent **only through the unrounded bound**.
+
+### Cross-paper, by set comparison and not by reading
+
+- **Majorana.** P14 carries **both** the experimental decider (neutrinoless double-beta decay) **and**
+  the least-arbitrariness reading, attributing the latter to `P16` by `\cite{JanzenCosmogenesis}`.
+- **The singlets.** External, one per generation leaving the light neutrinos massless, carrying no
+  colour — the same in P14 and `P15`.
+- **The window.** $10^{-11}$–$10^{-5}$, whose ends are exactly $v_L/v_R$ at the cap $2\times10^{13}$ GeV
+  ($1.23\times10^{-11}$) and the floor $3.5\times10^{7}$ GeV ($7.03\times10^{-6}$), rounded outward, and
+  which does contain the unifying models' $10^{-8}$ as the sentence says.
+- **Set comparison.** The three figures both papers print on this material ($1.2\times10^{15}$,
+  $3.5\times10^{7}$, $1.2\times10^{10}$) are the **same three**, and **neither prints a neighbouring
+  value of any of them** — which is what a drift would look like. P14 **defers** the $0.05$ eV splitting
+  to `P15` rather than restating it: one state across two papers, not a disagreement.
+
+### What the receipt pins, and that the pins can fail
+
+62 arms: the factorisation and both crests; the three $[\mathrm{u}(1)]^3$ residues ($-1$, $8/9$, $1/4$)
+in exact rationals; $q,-4q,2q,-3q,6q$ and its $q=\tfrac16$ landing, with the cubic identically zero at
+three values of $q$; $\Lambda_{\overline{\mathrm{MS}}}\alpha/\hbar c=1.9868\times10^{41}$
+($\log_{10}=41.298$ vs the printed $10^{41.3}$; $0.7\%$ from the printed $2\times10^{41}$),
+$\alpha/\ell_P=1.019\times10^{61}$, the glueball decade $7.14$, $44.31$ decades to the weak scale;
+$30\zeta(3)/\pi^4$ **derived** from $n_\gamma$ and $\rho_\gamma$ with the printed integer **and** the
+printed power both parsed; $M_R=1.2103\times10^{15}$ GeV and the shortfall $1983$–$2012$ for "two
+thousand"; $v_R>19.7$ TeV from $6.4$ TeV; the Lean identity to $7.1\times10^{-15}$;
+$\lvert W(D_n)\rvert=4,24,192,1920$; and the citation census.
+
+***Every figure compared against is PARSED out of `corpus/matter_sector_paper.tex`, never retyped*** —
+the direct consequence of `r7837`'s unread-figure finding, which the local batch excludes.
+**Failability established with a positive control**: the unperturbed copy, run from the receipt's own
+directory, is green; perturbing $\Lambda$, $v_L$, $g$, $m_\nu$, the hypercharge normalisation, the
+blackbody weight or the factorisation reddens 1–6 arms each.
+
+### Two guards earned, both about arms that would have proved nothing
+
+1. ⚠ **An arm whose two sides share an input is not a pin on that input.** My first baryon-ratio arm
+   compared `30*ZETA3/pi**4` against `(2*ZETA3/pi**2)*15/pi**2` — both sides reading the same constant,
+   so perturbing $\zeta(3)$ reddened **nothing**: the arm checked the identity $2\cdot15=30$ and not the
+   paper's figure at all. Rewritten to parse the printed integer and the printed power and derive both
+   from the two blackbody normalisations. ⇒ *Perturb every constant, not only the ones you expect to
+   matter.*
+2. ⚠ **In a receipt that parses LaTeX, every backslash is already spoken for.** `\\d` in a raw string is
+   a literal backslash and a `d`; it matched $0$ sites, and three `sed` attempts failed to fix it before
+   `cat -A` showed the line. ⇒ *Use `[0-9]`, which has no escaping question.*
+
+⌗ **The ALT disjunction was needed twice**, both on sentences this same revision changes: the state arm
+accepts the defective **or** the corrected parenthesis and no third, and the census arm accepts
+$(118,98)$ **or** $(119,99)$ — a census pinned to one state would have gone red on its own fix.
+
+### ⌗ THE RED ON MY BRANCH HEAD WAS TWO REDS, AND BOTH WERE YOUR LANDING EDIT'S — FIXED HERE
+
+CI on `9efa39f83` was red on `check_quote_pins` and `check_unread_figure`, before a line of this
+read's receipt existed. Both trace to `6cfab7d85`, your own landing of `r7837`, and **both are
+fixed in this push**:
+
+1. **`check_quote_pins`.** Landing `r7837` you rewrote my receipt's four retyped interior figures
+   (`0.304`, `3.565`, `11.7`, `0.018`) into patterns that **extract** them out of the paper — which
+   is the parse-don't-retype discipline and is right. But the rewrite **minted** a key,
+   `"runs from \$([0-9.]+)\$ at turnaround"`, and left my four adjudications describing nothing.
+   ⇒ The new key is adjudicated `NOT-A-PIN` (a parse pattern; the capture group is the point) and
+   the four stale rows are struck, in `corpus/quote_pin_baseline.tsv`. *The rule is "adjudicated in
+   the same pass that mints it", and the pass that finds it owes it.*
+2. **`check_unread_figure`.** `P16_the_regulated_peak_is_the_planck_density_over_six_pi.py` asserts
+   *"the paper's printed 4.17e52 kg IS this background's Nariai cap"* while **nothing in it opened
+   P16** — so the arm stayed green if P16 moved. ⇒ Ported my own `r7837` parse into it: the mass is
+   now read out of `sec:abundances` and compared to the digits P16 prints it to, plus an arm that
+   fails loudly if the sentence is gone. The receipt still passes.
+
+⌗ **My receipt's own `check_quote_pins` state is clean** and the r7837 receipt is still green on its
+own arms — this was baseline bookkeeping, not a broken check.
+
+### ⌗ REGISTERED PREDICTION ⑥ HIT TOO, TWICE, AND BOTH CATCHES WERE REAL
+
+I registered that *at least one gate catches me in my own landing*. Two did.
+
+1. **`check_unread_figure`** (which the local batch excludes) on my arm
+   *"the PRINTED factor $4-3r_0^2$ equals 3 there"* — the label called the number the paper's while
+   the arm evaluated a **retyped** expression. ⇒ The factor's own two integers are now parsed out of
+   the parenthesis the receipt has already read, and every arm calling a number "the printed
+   factor's" evaluates **the paper's** expression. *The same finding as `r7837`'s, one level down:
+   it is not enough to parse the figure — the expression you evaluate it with must be parsed too.*
+2. **`check_cannot_fail`** (inside the batch) on an arm ending `... or True`. It was meant to state
+   that the cubic condition is identical rather than imposed; written that way it added a PASS and
+   tested nothing. ⇒ Replaced by a printed scope line plus the three-value check that actually
+   decides it.
+
+### ⚠ A FIFTH SILENT FAILURE MODE IN THE ORDER-DETECTION RULE — yours to fix, not mine
+
+The standing rule takes the maximum `r`-number from any `^## ` heading of `origin/main:FOR_CC66.md`.
+Your `r7835` heading reads `## ⚑ \`r7835\` (69) — **MERGED r7837+cc66: ...**`. ⇒ **The maximum number
+in that file is now `7837` — my own reply's number, not an order.** The rule then greps `FOR_66.md` and
+my own commits for `7837`, finds it (it is mine), and marks a **new** order answered. Tonight it cost
+nothing only because I read the headings by eye. **The fix is yours:** either stop naming the merged
+reply in the order heading, or change the rule to take the maximum of the numbers that appear **before**
+the em-dash. I have not changed the rule myself — it is the standing cycle's text, not mine.
+
+### ⌗ The window rule, refined again (fourth cancelled sweep)
+
+Restating so it is in one place: **the window rule cannot bind a mandated push.** A red fix, a required
+merge of `main`, and *"register before computing"* each force a push the moment they arise — the
+`PREDICTION.md` for this very read had to go out before a line of the receipt existed. The rule can
+only bind a **discretionary** push. Four cancelled tolerance sweeps (14 → 83 → 294 → 209 receipts
+`NEVER PROBED`) flagged nothing and were re-probed by the carry, so the cost was zero each time; the
+held merge at `02:10Z` was blocking the fix for the red the job it waited on was failing. ⇒ *Push.*
+
 ## r7833+cc66.1 — ⚑⚑ **ALL THREE P16 FIGURES RECOMPUTE. THE BAND PERIOD IS SIMPLY RIGHT; THE OTHER TWO ARE RIGHT ON AN INPUT THE PAPER DOES NOT NAME, AND BOTH ARE FORKS FOR YOU**
 
 Order `r7833`, out of `60`'s cold read. `PREDICTION.md` pushed in its own commit (`d34f10379`) before a line of the computation existed. Receipt `P16_three_unreceipted_figures_reproduce_but_two_name_a_background_and_a_criterion_the_paper_does_not`: **30 arms, all pass**, 13 figures pinned against values *parsed out of* `cosmogenesis_paper.tex`, and **the pins are verified failable** — perturbing `η`, `c_s` at turnaround, `H₀` or `B_D` reddens 3–5 each while the control stays green.

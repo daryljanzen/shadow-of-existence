@@ -42,6 +42,9 @@ cancellation is an accident of arithmetic rather than a consequence of the dust 
 of state meeting a free-fall law that goes as r^(3/2)/sqrt(M).
 """
 import math
+import os
+import re
+
 import sympy as sp
 
 FAILS = []
@@ -95,8 +98,20 @@ M_cap_kg = (nariai / 2) * c_n**2 / G_n
 M_kg = M_cap_kg * (1.0 - 1.0e-6)    # P16 sec:abundances, its own worked progenitor, just below the cap
 Mg = G_n * M_kg / c_n**2
 Rs_n = 2 * Mg
-check("the paper's printed 4.17e52 kg IS this background's Nariai cap to its printed digits",
-      round(M_cap_kg / 1e52, 2) == 4.17, f"cap = {M_cap_kg:.5e} kg")
+# r7839 (cc66): check_unread_figure was right -- the label called 4.17e52 kg "the paper's
+# printed" figure while nothing here opened the paper, so the arm stayed green if P16 moved.
+# The figure is now PARSED out of sec:abundances, with the same pattern r7837 reads it by.
+_P16 = re.sub(r'\s+', ' ', open(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), '..', '..',
+    'corpus', 'cosmogenesis_paper.tex'), encoding='utf-8').read())
+_pm = re.search(r'mass \$([0-9.]+)\\times10\^\{([0-9]+)\}\$~kg', _P16)
+check("P16's printed progenitor mass is READ out of sec:abundances, not retyped",
+      _pm is not None,
+      f"{_pm.group(1)}e{_pm.group(2)} kg" if _pm else "NOT FOUND -- P16 has moved")
+M_PRINTED = float(_pm.group(1)) * 10 ** int(_pm.group(2)) if _pm else 0.0
+check("the figure P16 prints IS this background's Nariai cap to the digits P16 prints it to",
+      round(M_cap_kg / 1e52, 2) == round(M_PRINTED / 1e52, 2),
+      f"cap = {M_cap_kg:.5e} kg against the paper's {M_PRINTED:.5e} kg")
 check("the paper's own progenitor is SUB-NARIAI, so it is a progenitor at all",
       Rs_n < nariai, f"A/Nariai = {Rs_n/nariai:.7f}")
 check("CONTROL: a mass 10 per cent larger is SUPER-Nariai and is not one",
