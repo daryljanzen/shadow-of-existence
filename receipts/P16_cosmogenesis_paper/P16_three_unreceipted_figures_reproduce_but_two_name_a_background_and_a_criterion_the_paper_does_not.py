@@ -74,13 +74,17 @@ nariai_cap_kg = lambda L: (2.0 * alpha(L) / (3.0 * math.sqrt(3.0))) * C ** 2 / (
 
 LAM_P16 = lam(68.60, 0.2973)
 LAM_RCPT = 1.1056e-52
-M_PROG = 4.17e52
+# the progenitor mass is PARSED, not retyped: the paper prints it in sec:abundances
+_mp = re.search(r'mass \$([0-9.]+)\\times10\^\{([0-9]+)\}\$~kg', FLAT)
+M_PROG = float(_mp.group(1)) * 10 ** int(_mp.group(2)) if _mp else 0.0
+check('Ⓑ⓪ the progenitor mass is parsed out of the paper, not retyped: 4.17e52 kg',
+      _mp is not None and abs(M_PROG - 4.17e52) <= 0.005e52, f'{M_PROG:.4e} kg')
 
-check('Ⓑ① P16\'s own stated background (68.60, 0.2973) gives Lambda = 1.1593e-52',
+check('Ⓑ① the distance data\'s point (68.60, 0.2973), which 69\'s order r7833 names and which P16 does NOT print, gives Lambda = 1.1593e-52',
       abs(LAM_P16 - 1.1593e-52) <= 0.00005e-52, f'{LAM_P16:.5e}')
 TAU_P16 = lap_turnaround_gyr(LAM_P16)
 TAU_RCPT = lap_turnaround_gyr(LAM_RCPT)
-check('Ⓑ② PINNED the lap turnaround pi*alpha/3 on P16\'s background is 17.806 Gyr -> 17.8',
+check('Ⓑ② PINNED the lap turnaround pi*alpha/3 on that point is 17.806 Gyr -> 17.8',
       abs(TAU_P16 - 17.806) <= 5e-3, f'{TAU_P16:.4f}')
 check('Ⓑ③ PINNED the same expression on Lambda = 1.1056e-52 is 18.234 Gyr -> 18.2',
       abs(TAU_RCPT - 18.234) <= 5e-3, f'{TAU_RCPT:.4f}')
@@ -172,8 +176,16 @@ check('Ⓒ⑤ the factor is DERIVED and not an independent figure: printed 3.565
       abs(3.565 / 0.304 - FACTOR) / FACTOR < 2.5e-3, f'{3.565/0.304:.4f} vs {FACTOR:.4f}')
 check('Ⓒ⑥ the lap closes short of pure dust\'s 2*pi, as radiation requires',
       ETA_E < 2.0 * math.pi, f'eta_end = {ETA_E:.5f} < {2*math.pi:.5f}')
-check('Ⓒ⑦ all four figures are in the paper, read through the wrap',
-      '0.304' in FLAT and '3.565' in FLAT and '11.7' in FLAT and '0.018' in FLAT)
+_bp = re.search(r'runs from \$([0-9.]+)\$ at turnaround', FLAT)
+_bi = re.search(r'\\int c_s\\,\\mathrm\{d\}\\eta=([0-9.]+)\$ against the frozen '
+                r"value's \$([0-9.]+)\$, a factor of \$([0-9.]+)\$", FLAT)
+check('Ⓒ⑦ all four figures are PARSED out of the paper through the wrap, not retyped',
+      _bp is not None and _bi is not None
+      and abs(float(_bp.group(1)) - 0.018) <= 5e-5
+      and abs(float(_bi.group(1)) - 0.304) <= 5e-5
+      and abs(float(_bi.group(2)) - 3.565) <= 5e-5
+      and abs(float(_bi.group(3)) - 11.7) <= 5e-3,
+      f'{_bp.group(1) if _bp else "-"}, {_bi.groups() if _bi else "-"}')
 
 # the paper prints 0.304, and 0.3046 does not round to it; the honest pin is that the
 # printed figure lies inside the band the ONE input's own two significant figures allow
@@ -187,9 +199,11 @@ check('Ⓒ⑧ PINNED c_s at turnaround is printed to two significant figures, an
       '0.0185 the running integral spans 0.29812 to 0.31105',
       abs(RUN_LO - 0.29812) <= 5e-5 and abs(RUN_HI - 0.31105) <= 5e-5,
       f'{RUN_LO:.6f} .. {RUN_HI:.6f}')
-check('Ⓒ⑨ so the paper\'s printed 0.304 lies INSIDE that band, and 0.3046 is the band\'s '
-      'centre rather than a disagreement with it', RUN_LO < 0.304 < RUN_HI,
-      f'{RUN_LO:.5f} < 0.304 < {RUN_HI:.5f}')
+RUN_PRINTED = float(_bi.group(1))   # PARSED above, not retyped
+check('Ⓒ⑨ so the figure the paper prints, parsed as 0.304, lies INSIDE that band, and 0.3046 '
+      'is the band\'s centre rather than a disagreement with it',
+      RUN_LO < RUN_PRINTED < RUN_HI and abs(RUN_PRINTED - 0.304) <= 5e-5,
+      f'{RUN_LO:.5f} < {RUN_PRINTED} < {RUN_HI:.5f}')
 check('Ⓒ⑩ PINNED and the frozen leg is insensitive to that input, spanning 3.56352 to 3.56698, '
       'so the printed 3.565 sits inside it too',
       abs(BAND[0.0185][1] - 3.56352) <= 5e-5 and abs(BAND[0.0175][1] - 3.56698) <= 5e-5
@@ -213,11 +227,27 @@ check('Ⓒ⑫ SO THIS RECEIPT IS NOT CITED AT THAT SENTENCE, and the reason is r
       abs(INT_RUN - 0.304) > 5.0e-4 and abs(INT_RUN - 0.304) < 7.0e-4,
       f'|{INT_RUN:.6f} - 0.304| = {abs(INT_RUN-0.304):.2e}')
 
-# the background this receipt reads, pinned as printed in P16
-H0_P16, OM_P16 = 68.60, 0.2973
-check('Ⓑ⑨ PINNED the background is P16\'s own printed pair, H0 = 68.60 and Om = 0.2973',
-      abs(H0_P16 - 68.60) <= 5e-3 and abs(OM_P16 - 0.2973) <= 5e-5
-      and abs(lam(H0_P16, OM_P16) - LAM_P16) <= 1e-60, f'Lambda = {LAM_P16:.5e}')
+# ⛭ THE FINDING, and it is why the question is open at all: P16 PRINTS NO BACKGROUND for
+#   the regulated peak.  It prints no Lambda anywhere, prints no H_0 numeral at this site, and
+#   its only printed matter density is 0.307 -- not the 0.2973 of the point 69's order names.
+_om = re.search(r'\\Omega_\{m\}=([0-9.]+)', FLAT)
+OM_PRINTED = float(_om.group(1)) if _om else 0.0
+# the point the ORDER names, pinned as the order states it -- NOT as the paper's, which it is not
+H0_ORDER, OM_ORDER = 68.60, 0.2973
+check('Ⓑ⑪ PINNED the point 69\'s order r7833 names is H_0 = 68.60 with Om = 0.2973, and it is '
+      'that pair, and no figure of the paper, that gives the 1.1593e-52 used above',
+      abs(H0_ORDER - 68.60) <= 5e-3 and abs(OM_ORDER - 0.2973) <= 5e-5
+      and abs(lam(H0_ORDER, OM_ORDER) - LAM_P16) <= 1e-60,
+      f'Lambda({H0_ORDER}, {OM_ORDER}) = {lam(H0_ORDER, OM_ORDER):.5e}')
+check('Ⓑ⑨ PINNED the only matter density P16 prints is 0.307, parsed out of the paper, and it '
+      'is NOT the 0.2973 of the point the order names',
+      _om is not None and abs(OM_PRINTED - 0.307) <= 5e-4 and abs(OM_PRINTED - 0.2973) > 5e-4,
+      f'{OM_PRINTED}')
+check('Ⓑ⑩ and P16 prints NO value of Lambda and neither 68.60 nor 0.2973 anywhere, so the '
+      'background the regulated peak is computed on is stated by NO sentence of the paper',
+      '68.60' not in FLAT and '0.2973' not in FLAT
+      and not re.search(r'1\.1[0-9]*(e-52|\\times10\^\{-52\})', FLAT),
+      'no Lambda, no 68.60, no 0.2973 in the paper')
 
 # ---------------------------------------------------------------- (3)
 print()
@@ -284,9 +314,12 @@ print('Ⓔ the figures this landing PRINTS, pinned so the row cannot drift from 
 LN_INV_ETA = math.log(1.0 / ETA)
 check('Ⓔ① PINNED ln(1/eta) = 21.22 at eta = 6.09e-10',
       abs(LN_INV_ETA - 21.22) <= 5e-3, f'{LN_INV_ETA:.5f}')
-T9_FROM_TD = t9(0.07)
-check('Ⓔ② PINNED the paper\'s own T_D = 0.07 MeV is T_9 = 0.812',
-      abs(T9_FROM_TD - 0.812) <= 5e-4, f'{T9_FROM_TD:.5f}')
+_td = re.search(r'\\TD\\simeq([0-9.]+)\$~MeV', FLAT)
+TD_PRINTED = float(_td.group(1)) if _td else 0.0
+T9_FROM_TD = t9(TD_PRINTED)
+check('Ⓔ② PINNED the paper\'s T_D is parsed out of sec:peak as 0.07 MeV and is T_9 = 0.812',
+      _td is not None and abs(TD_PRINTED - 0.07) <= 5e-5
+      and abs(T9_FROM_TD - 0.812) <= 5e-4, f'{TD_PRINTED} MeV -> T_9 {T9_FROM_TD:.5f}')
 KT_NSE_D = B_D / X_D_NSE
 check('Ⓔ③ PINNED and the NSE deuterium threshold is 0.0678 MeV, which is the 0.07 the paper '
       'prints to its two decimals', abs(KT_NSE_D - 0.0678) <= 5e-5
