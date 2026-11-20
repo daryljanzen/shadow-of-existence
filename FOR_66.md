@@ -15,6 +15,54 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7839+cc66.2 — ⚑ **CI IS GREEN ON `ec6c355f4` EXCEPT ONE RECEIPT, THE FIRST UNCANCELLED SWEEP OF THE SESSION DRAINED THE CARRY, AND THE ONE RED IS `S39` INSIDE `S56` — MAIN'S, WITH NO FIX ANYWHERE TO PORT**
+
+**Both runs on the head have now reported.** Every tier is green but two jobs, and those two fail on **one receipt and one check between them**, plus the designed `record` timeout.
+
+| tier | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **SUCCESS** — its text-gates step ran 19 min, which is `check_quote_pins` **and** `check_unread_figure`, the two that were red twice tonight |
+| `scoped — the runner-read sweep` | **SUCCESS** |
+| `scoped — the tolerance perturbation` (scope) | **SUCCESS** |
+| tolerance probe builds A and C | **SUCCESS** |
+| `scoped — the tolerance perturbation` (compare) | one receipt unmeasured → `NOT A SWEEP`; **0 flagged sites** |
+| `scoped — the plain suite` | hundreds cleared; **1 still red** |
+
+### ⚑ THE SWEEP RAN TO COMPLETION AND DRAINED THE CARRY — the first time this session
+
+```
+RECORD (tolerance, @ ec6c355f4a): ran 105, 1 named red; +0 carried,
+91 cleared by a green, 1 still red, 0 no longer registered; 1 carried after this push
+NEVER PROBED (tolerance): 0 of the 105 in scope
+BUILD PERTURBATION -- 0 flagged site(s); 0 at the precision floor (< 1e-13)
+```
+
+**`0 of 105` never probed**, against `14`, `83`, `294` and `209` in the four sweeps my own pushes cancelled earlier tonight. The plain suite cleared hundreds more — every `P15_CR_cosmology` entry, every `P16` entry including `P16_the_network_runs_three_…` and `P16_the_regulated_peak_…`, plus `P17`, `RP_34_gr` and a storyboard receipt.
+
+⇒ ***The ~40-receipt "still red" list the previous run echoed back was the ledger being re-read, not a measurement*** — exactly what `r7611+cc66.6` says — **and a completed sweep settles it.** The refined window rule earned its keep here: I held this push with a clean tree for 90 minutes rather than kill a fifth sweep, and the drain is what that bought.
+
+### ⛔ THE ONE RED, ROUTED TO YOU: it is `S39`, not `S56`, and it is main's
+
+`receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_…` → `unrecorded -> ['Ⓖ①']`
+
+- **One failed check, and it names the cause.** `Ⓖ①` reads `{'S29': 0, 'S39': 1, 'S53': 0}` — `S29` and `S53` exit 0, **`S39_the_routed_collision_item_is_an_answer_read_as_a_claim_…` exits 1**. So the root is the nested receipt, not `S56`'s own arithmetic. ⌗ *Both jobs that fail agree on this: the tolerance compare says the same receipt is `rc=1` on builds A and B.*
+- **Red on a pristine `origin/main` worktree**, file byte-identical to main's. Established, not asserted.
+- **`S56`, `S29`, `S39` and `S53` are each byte-identical to `origin/main`'s**, and every remote branch carries **exactly one** blob of `S56` and **one** of `S39` ⇒ **no fix exists anywhere to port.** Both were last touched by `cf3bc4741` (`r7819+cc66.24`), the revision that recorded six plain-suite reds.
+- Nothing in this branch's diff touches `receipts/L_probability/`.
+
+⇒ **Yours to rule, not mine to repair:** `S39` is not this seat's receipt, and whether `Ⓖ①`'s population test is right — it asserts that every member running nothing itself exits zero, deriving the population from each file's parse tree — is a judgement about its own assertions.
+
+⌗ ⚠ **AND ONE MEASUREMENT THAT WOULD HAVE SENT ME AT THE WRONG THING.** Locally `S56` fails **three** checks; in CI it fails **one**. The two extra, `Ⓐ②` and `Ⓑ①`, both resolve commits over a range — **the known shallow-clone class in this container**. They are artefacts of clone depth, not defects, and a repair aimed at them would be aimed at nothing. *I would have "fixed" two non-defects if I had trusted the local run over CI's.* ⇒ **Guard: for an assertion that walks git history, this container's local verdict is not the tree's; count the failures in CI before naming them.**
+
+### ⌗ A GUARD EARNED THIS PASS, and it cost a near-miss
+
+**`check_quote_pins` walks the tree as git knows it, so running it before committing a NEW receipt measures nothing about that receipt.** The pre-commit run reported **1** unadjudicated key; the committed tree had **26**. I had already written "the gate is green" on the strength of the first number. ⇒ **Commit first, then gate.** All 31 keys this pass minted are adjudicated with per-key reasons, and CI's text-gates step confirms it.
+
+### Two PR comments stand, and neither needs a third
+
+- `issuecomment-7030555186` — the `record` step's 15-minute timeout is **designed** (`gates.yml:528`, `r7809`: the carry is written before the hang it bounds, which is why the RECORD line above exists at all). It fired again on both jobs here; same answer.
+- `issuecomment-7031572629` — the completed sweep's measurement and the `S39` diagnosis above.
+
 ## r7839+cc66 — ⚑⚑ **THE COLD READ OF `P14`: EVERY PRINTED FIGURE REPRODUCES, AND THE ONE DEFECT IN 1018 LINES NAMES THE *CONJUGATE* CREST — AN UNRECEIPTED DISCRIMINANT DATED `r6683`**
 
 **Order `r7835`, answered whole.** Read every section in order first, then every printed figure against
