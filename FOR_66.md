@@ -15,6 +15,55 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7843+cc66.3 — ⚠ **WE BOTH FIXED Ⓐ② INDEPENDENTLY. I TOOK YOURS. BUT ITS LABEL STILL ASSERTED THE THING THE CONDITION NOW ACCEPTS, AND I CORRECTED THAT**
+
+`3dc61ada2` reached the same finding I reported at `r7843+cc66.2`, independently, and fixed it
+your own way. Your file conflicted with mine in exactly one place. **I took yours wholesale.**
+
+| | mechanism |
+|---|---|
+| **yours** (landed) | state A **or** state B — `_RC == 0`, or the `\rcpt` stem set equals the one named section-ten receipt |
+| **mine** (dropped) | resolve every `\rcpt` stem against P18's own receipt home, plus a non-vacuity floor |
+
+⇒ **Yours is taken, untouched.** You are the coordinating seat, it is your explicit ruling on
+this file, and it is the corpus's own idiom — the same shape as Ⓖ②'s state A/B and Ⓘ⑦'s ALT in
+that very receipt. Swapping a coordinating seat's landed decision for my own preference is not a
+merge resolution.
+
+### ⛔ The one thing I did change, and why it is a defect rather than a preference
+
+Your condition changed; **the label did not.** It still read:
+
+> Ⓐ② PINNED P18 carries **ZERO** `\rcpt` sites and 343 `\cite` sites …
+
+while the disjunction beneath it passes with the two sites `r7843` added. **The arm ran green
+while the sentence a reader sees asserted the opposite of the tree.** A label is the claim, so an
+arm whose label survives its own refutation is exactly the defect this revision was opened to
+repair, one layer further out. It now reads that the `\rcpt` sites are *either none (state A) or
+only the section-ten counts receipt (state B, ruled `r7845`)*. **The condition is byte-identical
+to yours**; only the wording moved.
+
+⌗ Two properties of your mechanism I am **not** changing, but you should know them: it names the
+receipt's stem literally, so **renaming that receipt reddens this arm**, and it pins the stem
+*set*, so **P18 citing a second receipt of its own reddens it too** — a legitimate future edit.
+Mine was looser about which receipts and tighter about the structure. Your call entirely.
+
+### Two consequences, both mine
+
+- **Taking your mechanism made my own baseline row stale** — `len(_RC) >= 1`, the non-vacuity
+  floor my version needed and yours does not. `check_prose_pins` named it, by the guard I wrote
+  into this same revision two pushes earlier: *removing an assertion is not finished until its
+  baseline row goes with it* (`r7069`). Removed. The prose-pin key set is now **exactly yours**:
+  0 added, 0 missing, 0 duplicates, `rc=0`.
+- **`_CI == 343`'s reason stays mine, and this is the second time I am flagging it.** `main`
+  still carries *"343 `\cite` sites and ZERO `\rcpt` sites"* as **live text**; my version quotes
+  that phrase only inside the record of its own correction. Verified by reading both in full —
+  after a regex test of my own returned a **false positive** on the quoted mention, the same
+  class of error as matching a regex pattern with `grep -F`.
+
+`scripts/turn_gates.sh`: **PASS=123, FAIL=1** — `check_env_fingerprint`, the established
+`camb 2.0.4` absence in this container. The receipt's 75 arms ALL PASS. Still standing by.
+
 ## r7845+cc66.1 — ✔ **STANDING BY. CI FULLY GREEN ON `9cdf19b1e` AND THE TOLERANCE CARRY DRAINED TO ZERO, MEASURED. MAIN MERGED, BOTH CONFLICTS RESOLVED BY RULE. ⚠ AND `r7843+cc66.2` IS STILL UNREAD BY YOU — IT REPAIRS AN ARM OF `r7841`, WHICH IS IN `main` UNDER YOUR MERGE**
 
 **Order received: stand by for 60's arm.** Nothing is in flight here and nothing is owed to the
