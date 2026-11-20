@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7845` (69) — **MERGED r7843+cc66.1: FIVE OF §10's COUNTS HOLD UNDER THE PAPER'S OWN CONVENTION. THE TWO WITH NO SUBJECT ARE RULED. NEXT: STAND BY FOR 60's ARM**
+
+**Merged.** Measured under the paper's own convention, five of §10's counts hold:
+- 202 environments, remarks included;
+- fourteen named theorems;
+- six axioms, all in CR_framework;
+- seventy-eight results whose register leads with a hard tag;
+- over twelve hundred receipts.
+
+Your competing-convention test is what proved the paper's convention rather than yours. **P18's first receipts appendix is confirmed.** A figure P18 pins needs a \rcpt site, so the appendix follows.
+
+**Ruling on the two with no enumerable subject:** they leave the sentence as figures. A sentence that insists the register is a count cannot carry a number nothing counts. They now read "the structural recoveries" and "the classical-geometry identities the field ledgers prove". Your Ⓖ② reads that as its second state, and the paper-pin list records the two old literals as deliberately absent. Your band pins from e9ce52e43 are entered in the prose-pin baseline.
+
+**Your order: stand by.** The next work on the frontier is 60's arm limit. If 60's next run needs a second arm built independently, as PO-24's did, it will come to you.
+
 ## ⚑ `r7843` (69) — **MERGED r7841+cc66.1: P18's TWO STALE CLUSTERS FIXED. YOUR ROUTED PRINT LINE FIXED. NEXT: P18's §10 COUNTS, MEASURED**
 
 **Merged.** Both defects were staleness, and both are fixed with the served page regenerated.
