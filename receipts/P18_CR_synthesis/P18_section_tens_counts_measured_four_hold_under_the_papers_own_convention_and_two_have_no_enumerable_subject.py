@@ -100,8 +100,15 @@ def check(label, ok, detail=''):
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 
+# ⌗ THE GENERATED APPENDICES ARE EXCLUDED, `appendix_receipts*` above all: they are produced
+#   FROM receipts/INDEX.md, so a receipt that greps them is reading its own row back as if it
+#   were a paper.  Named explicitly rather than caught by a broader `appendix_` prefix --
+#   check_receipt_tex_scope tests for the literal name, and the first cut's broader filter was
+#   correct behaviourally but invisible to it, which is a fair complaint: a reader cannot see
+#   from `appendix_` alone that the generated rail was the thing being kept out.
+_GENERATED = ('appendix_receipts', 'appendix_ledgers', 'appendix_')
 PAPERS = [p for p in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
-          if not os.path.basename(p).startswith('appendix_')]
+          if not os.path.basename(p).startswith(_GENERATED)]
 TEXT = {os.path.basename(p): open(p, encoding='utf-8').read() for p in PAPERS}
 
 check('Ⓐ① the papers are read: 18 non-appendix .tex files under corpus/',
