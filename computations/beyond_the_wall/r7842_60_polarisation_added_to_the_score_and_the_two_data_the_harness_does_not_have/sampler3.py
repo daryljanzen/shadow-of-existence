@@ -136,7 +136,70 @@ def best_fit(mod, bounded):
     return best
 
 
-def run_chains(mod, bounded, x0, scale, rng):
+def laplace_cov(mod, x0, lo, hi):
+    """the proposal covariance from the CURVATURE AT THE MINIMUM, not from a hard-coded diagonal
+
+    ** THE DIAGONAL THIS REPLACES WAS MIS-SCALED BY UP TO A FACTOR `1812`. **  `[0.25, 0.25, 0.25,
+    0.25, 0.02]` against posterior widths of `[0.21, 0.0024, 0.00014, 0.0039, 0.052]`: the first
+    burn stage accepted `0.002` of its proposals, and what rescued `r7838` was never the adaptation
+    working as designed.  *It was the BETWEEN-CHAIN scatter of the dispersed starts happening to
+    resemble the posterior, so the stage-2 covariance estimate -- built from `~48` accepted points
+    across six frozen chains -- came out usable.*  At `185` bins it did (stage 3 reached `0.524`
+    and `0.141`); at `555` bins it did not, and the staged tuner then ran AWAY from the answer,
+    shrinking the scale because acceptance was low and lowering acceptance because it shrank:
+    `0.002, 0.001, 0.002, 0.004, 0.006, 0.009`.  A tuner whose failure mode is to converge on
+    frozen is not one to leave a result resting on.
+
+    With `logp = -chi2/2` the Gaussian approximation at the minimum has covariance `2 H^-1` for
+    `H` the Hessian of `chi^2`, so that is what is returned.  ** THE STEP PER PARAMETER IS SET
+    FROM A ONE-DIMENSIONAL PROBE and not guessed **, because a second difference taken on the
+    wrong scale measures either rounding or curvature somewhere else entirely.
+    """
+    x0 = np.asarray(x0, float)
+    h = np.empty(5)
+    for i in range(5):
+        # the step that moves chi^2 by about 1: bisect outward from a small trial
+        t, f0 = 1e-4, mod.chi2(x0)
+        for _ in range(60):
+            e = np.zeros(5)
+            e[i] = t
+            z = x0 + e
+            if not (lo <= z[4] <= hi) or np.any(np.abs(z[:4]) > 6):
+                break
+            d = mod.chi2(z) - f0
+            if d > 1.0:
+                break
+            t *= 1.4
+        h[i] = max(t / 4.0, 1e-7)
+    H = np.zeros((5, 5))
+    f0 = mod.chi2(x0)
+    for i in range(5):
+        for j in range(i, 5):
+            ei, ej = np.zeros(5), np.zeros(5)
+            ei[i], ej[j] = h[i], h[j]
+            if i == j:
+                H[i, i] = (mod.chi2(x0 + ei) - 2.0 * f0 + mod.chi2(x0 - ei)) / h[i] ** 2
+            else:
+                H[i, j] = H[j, i] = (mod.chi2(x0 + ei + ej) - mod.chi2(x0 + ei - ej)
+                                     - mod.chi2(x0 - ei + ej) + mod.chi2(x0 - ei - ej)) \
+                    / (4.0 * h[i] * h[j])
+    H = 0.5 * (H + H.T)
+    try:
+        C = 2.0 * np.linalg.inv(H)
+        C = 0.5 * (C + C.T)
+        np.linalg.cholesky(C)
+        ok = bool(np.all(np.isfinite(C)) and np.all(np.diag(C) > 0))
+    except np.linalg.LinAlgError:
+        ok = False
+    if not ok:
+        # ** A FALLBACK THAT IS NOT ANNOUNCED IS A RESULT WITH A HOLE IN IT. **
+        print('       the curvature at the minimum is not positive definite -- falling back to '
+              'the diagonal, and this is recorded', flush=True)
+        return np.diag(np.array([0.25, 0.25, 0.25, 0.25, 0.02]) ** 2), False
+    return C, True
+
+
+def run_chains(mod, bounded, x0, S0, rng):
     """Metropolis with a STAGED adaptation: the covariance is re-estimated and a single global
     scale is tuned toward the 0.234 acceptance that is optimal for a five-dimensional target, and
     then BOTH are held for every kept sample, so the kept chain is a proper Markov chain."""
@@ -149,10 +212,12 @@ def run_chains(mod, bounded, x0, scale, rng):
         c = mod.chi2(z)
         return -np.inf if c >= 1e11 else -0.5 * c
 
+    L0 = np.linalg.cholesky(S0)
     cur = []
     for i in range(CHAINS):
+        # dispersed in the POSTERIOR's own metric: half a sigma to three, along its own axes
         for _ in range(400):
-            z = np.array(x0, float) + scale * rng.standard_normal(5) * (1.0 + 0.5 * i)
+            z = np.array(x0, float) + (L0 @ rng.standard_normal(5)) * (0.5 + 0.5 * i)
             z[4] = float(np.clip(z[4], lo, hi))
             if np.isfinite(logp(z)):
                 break
@@ -161,7 +226,7 @@ def run_chains(mod, bounded, x0, scale, rng):
     lcur = np.array([logp(z) for z in cur])
     assert np.all(np.isfinite(lcur)), 'a chain could not be started at a finite point'
 
-    S = np.diag(scale ** 2)
+    S = np.asarray(S0, float)
     fac = 2.38 ** 2 / 5.0
     STAGES = 6
     per = max(400, BURN // STAGES)
@@ -198,7 +263,14 @@ def run_chains(mod, bounded, x0, scale, rng):
                 acc += 1
         if t % THIN == 0:
             out[:, t // THIN, :] = cur
-    return out, acc / float(KEEP * CHAINS), burn_rate
+    rate = acc / float(KEEP * CHAINS)
+    # ** THE GUARD THE 555-BIN RUN NEEDED AND DID NOT HAVE. **  A chain that accepts almost
+    # nothing still returns an array, still reports an R-hat near 1 (six frozen chains agree with
+    # themselves), and still yields a quantile.  Refusing is the only honest exit.
+    assert 0.03 <= rate <= 0.70, (
+        f'the kept chain accepted {rate:.4f} of its proposals -- REFUSING to report a chain that '
+        f'did not move (burn ended at {burn_rate:.4f})')
+    return out, rate, burn_rate
 
 
 def summarise(mod, arm, bounded, S, rate, burn_rate):
@@ -262,13 +334,23 @@ def main():
         all_res[f'{arm}_bao'] = dict(spline_worst_error=err, truncation=trunc)
         bf0 = best_fit(mod, False)
         print('    unbounded minimum chi2 = %.3f at Sum = %+.4f eV' % (bf0.fun, bf0.x[4]), flush=True)
-        scale = np.array([0.25, 0.25, 0.25, 0.25, 0.02])
+        S0, curvature_ok = laplace_cov(mod, bf0.x, mod.s_lo, mod.s_hi)
+        print('    proposal sd from the curvature: '
+              + '  '.join('%.3g' % v for v in np.sqrt(np.diag(S0)))
+              + ('' if curvature_ok else '   (DIAGONAL FALLBACK)'), flush=True)
+        all_res[f'{arm}_proposal'] = dict(from_curvature=bool(curvature_ok),
+                                          sd=[float(v) for v in np.sqrt(np.diag(S0))])
         for bounded in (True, False):
-            S, rate, br = run_chains(mod, bounded, bf0.x, scale, rng)
+            S, rate, br = run_chains(mod, bounded, bf0.x, S0, rng)
             all_res[f'{arm}_{"bounded" if bounded else "unbounded"}'] = \
                 summarise(mod, arm, bounded, S, rate, br)
+            # ** CHAINTAG EXISTS SO A RE-RUN CANNOT ERASE THE RUN IT IS BEING COMPARED TO. **
+            # `closure_tt.py` reads `chain3_lcdm_b_0.npz`; that file is the record arm `Ⓑ②` was
+            # adjudicated on, and a fixed sampler writing over it would destroy the comparison it
+            # is meant to make.
             np.savez_compressed(os.path.join(HERE, f'chain3_{arm}_{"b" if bounded else "u"}'
-                                             f'_{"".join(str(b) for b in M.BLOCKS)}.npz'),
+                                             f'_{"".join(str(b) for b in M.BLOCKS)}'
+                                             f'{os.environ.get("CHAINTAG", "")}.npz'),
                                 samples=S)
     old = json.load(open(OUT)) if os.path.exists(OUT) else {}
     old.update(all_res)

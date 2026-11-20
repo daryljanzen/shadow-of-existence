@@ -1,0 +1,12 @@
+# DATA THIS HARNESS DOES NOT HAVE, each row adjudicated against the probe that shows its absence.
+# Written by hand; `check_data_absent.py` is the ratchet.  ** THIS LEDGER IS NOT A CENSUS. **  It
+# ranges over ITS OWN ROWS and nothing else: it does not and cannot enumerate every datum the
+# harness lacks, and a datum missing from it is not thereby present.  What it does assert is that
+# each row's datum is STILL absent, so that a receipt reasoning from the absence cannot go quietly
+# stale when the datum arrives.
+#
+# probe      path:REL              absent iff no file at REL
+#            attr:FILE:CLASS:NAME  absent iff CLASS, read from FILE, has no attribute NAME
+# key <TAB> probe <TAB> receipt that reasons from the absence <TAB> what the datum would decide
+planck2018_low_ell_bins	path:computations/planck_tt_likelihood/data/planck2018_low_ell/CTT_bin_low_ell_2018.dat	receipts/P15_CR_cosmology/P15_polarisation_enters_the_score_without_moving_the_tt_answer_and_the_two_data_the_harness_lacks_are_named_by_the_harness_itself.py	the reionisation half of tau, which the high-ell likelihood cannot carry because its own first bin starts at ell 30
+planck_lensing_reconstruction	attr:computations/planck_tt_likelihood/planck_lite_py.py:PlanckLitePy:nbinpp	receipts/P15_CR_cosmology/P15_polarisation_enters_the_score_without_moving_the_tt_answer_and_the_two_data_the_harness_lacks_are_named_by_the_harness_itself.py	the lensing-reconstruction bandpowers and their covariance, against which a predicted phi-phi spectrum could be scored rather than only computed
