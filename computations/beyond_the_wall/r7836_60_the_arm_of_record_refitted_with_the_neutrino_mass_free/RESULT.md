@@ -52,7 +52,9 @@ distance figures are **unchanged to every printed digit** and `omega_cb` falls b
 
 **Ⓑ② PASS — the two-limit treatment is licensed across the whole scanned range, measured.** The
 nonrelativistic transition sits at `1+z = 37, 40, 76, 126` for sums of `59, 64, 120, 200` meV, i.e.
-**9 to 29 times below recombination**. Nowhere in the range does it come within a decade of it.
+**8.6 to 29 times below recombination**, and **27.0 to 29.3 times** at the two values the order asks
+about. ⛔ *The first draft of this line said "9 to 29", and the receipt's own arm caught it: at the
+scan's far edge the margin is `8.6`, not `9`. The corrected figure is what the arithmetic gives.*
 
 **The lever itself is real and symmetric.** Both arms' `±0.06` eV pairs were generated at their own
 grid centres: `±0.84` per cent at `l ~ 108` on the arm, `l_A` bit-identical between the pair members,
