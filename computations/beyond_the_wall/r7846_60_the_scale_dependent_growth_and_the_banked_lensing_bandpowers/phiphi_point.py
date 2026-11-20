@@ -5,10 +5,12 @@ Reads the instrument's switches from the environment, exactly as `gen_pol.sh` se
 spectra, so the two datasets refer to ONE cosmology per point and not to two.  Writes
 `$PPOUT/<arm>_<tag>.json`.
 
-** THE CARRY STARTS AT `ETAREF`, AND `r7846` SETTLED THAT AT `z = 188` RATHER THAN THE ORDERED
-`z = 12.8`, FOR TWO MEASURED REASONS: **  the ordered interval carries only `44.4` per cent of the
-post-non-relativistic neutrino suppression, and it leaves the shape at `chi^2/dof = 2.05` against
-these nine bandpowers where the earlier carry gives `1.07`.
+** THE CARRY STARTS AT `ETAREF = 4000`, THE ORDERED `z = 12.8`. **  `r7846` first settled on
+`z = 188` for two measured reasons -- the ordered interval carries only `44.4` per cent of the
+post-non-relativistic neutrino suppression, and it leaves the shape at `chi^2/dof = 2.05` where the
+earlier carry gives `1.07` -- and then `carry_validity.py` reversed that decision: at `z = 188` the
+growth equation is outside its own range and the better `chi^2` was two errors cancelling.  Both of
+those deficits are still real and neither is fixed by moving the start.
 """
 import json
 import os
@@ -20,7 +22,15 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
 os.environ.setdefault('NOPROJ', '1')
 os.environ.setdefault('NK', '4')
-os.environ.setdefault('ETAREF', '914')
+# ** THE ORDERED CARRY, z = 12.8, AND THIS DEFAULT WAS 914 UNTIL carry_validity.py REVERSED IT. **
+#   The earlier start looked better on the lensing shape and on how much neutrino suppression it
+#   carried, and both of those readings stood until the closed test: Phi taken DIRECTLY from the
+#   instrument at z = 12.8 against Phi at z = 188 carried forward by the growth.  The ratio came
+#   out k-dependent, 0.96 at the largest scales and 0.74 at small ones -- sub-horizon Phi decay
+#   through the residual radiation era, which a matter-only growth equation does not carry.  At
+#   z = 188 radiation is still 5 per cent of matter.  ⇒ The growth was being used outside its own
+#   range, so the better chi^2 was two errors cancelling and not a better model.
+os.environ.setdefault('ETAREF', '4000')
 
 import phiphi as PP                                                      # noqa: E402
 import growth_kdep as GK                                                 # noqa: E402

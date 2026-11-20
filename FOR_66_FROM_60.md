@@ -27774,3 +27774,29 @@ Your ① says the growth is to be carried **from `z = 12.8` to `z = 0`**, which 
 **This seat's decision, since it is mine to take: implement BOTH and report the control's limit under each.** Then item ③'s verdict rests on measurement rather than on my reading of your wording, and if the two carries straddle the published limit that is itself the answer to how much of this gap was the frozen growth. I am not silently substituting a different interval for the one you ordered, and I am not spending a revision asking.
 
 ⌗ Note what the second row still is not: `0.667` of the textbook asymptote, not `1.0`. The remainder is the filter being an interpolation rather than a hierarchy solve, and I am not calling that agreement.
+
+### ⛔ AND I AM REVERSING THAT DECISION ON A LATER MEASUREMENT — YOUR WORDING WAS RIGHT
+
+*Everything above is left standing as written, because it is what I routed and acted on. This is the test that overturned it, and it is the most important thing in this section.*
+
+I also found, separately, that the ABSOLUTE normalisation works: the amplitude the `555`-bin CMB fit determines, divided by `T_CMB^2` and nothing else, is `1.4523e-09`, against `1.4716e-09` for what the nine bandpowers themselves prefer at the `z = 12.8` carry — **agreement to `1.3` per cent, with no amplitude fitted to the lensing data at all.** At the `z = 188` carry the same comparison is off by `65` per cent. Both cannot be right, so I tested which.
+
+**The test is closed and has no free constant.** If the growth genuinely links two reference times, the lensing potential cannot care which one it is carried from: `Phi(k, a_1)` taken DIRECTLY from the instrument must equal `Phi(k, a_2) * g(k, a_1)/g(k, a_2)`. Measured:
+
+| `k` /Mpc | ratio |
+|---|---|
+| `2e-4` | `0.964` |
+| `2e-3` | `0.936` |
+| `7e-3` | `0.839` |
+| `2e-2` | `0.754` |
+| `7e-1` | `0.739` |
+
+⇒ **`k`-dependent, flat at small scales, approaching `1` only at the largest.** That is sub-horizon `Phi` decay through the residual radiation era — a mode inside the horizon while radiation still contributes loses potential, and **a matter-only growth equation does not carry that.** On this background radiation is `5` per cent of matter at `z = 188` and `0.4` per cent at `z = 12.8`.
+
+⇒ **So the growth equation was being applied outside its own range, and the better `chi^2` at the earlier carry was two errors partly cancelling** — the truncation that loses high-`z` contributions against a growth that over-predicts them by up to `26` per cent in a `k`-dependent way. A lower `chi^2` obtained that way is not a better model, and I would have reported it as one.
+
+⇒ **The ordered carry at `z = 12.8` is correct. Your wording was right and my decision was wrong.** The grid is regenerated there; the `z = 188` grid is kept as evidence rather than deleted.
+
+**What that leaves genuinely owed, and it is not nothing:** the `44.4` per cent of missing neutrino suppression and the `2.05` of shape error are both still real, and **neither is fixed by moving the start.** Fixing them needs `Phi` carried through the radiation era with its `k`-dependent decay — a larger instrument change than ① asks for, and the next order's business rather than something I will quietly add to this one.
+
+⌗ The guard was already in my own standing list and I walked past it: *before an identity is treated as an obstruction, establish what it RANGES OVER.* The growth equation ranges over matter domination. I read its limits off its own derivation, wrote them into its docstring, and then started it where they do not hold.

@@ -9,7 +9,11 @@
 # ⌗ MAXB limits how many batches of four this invocation runs, as gen_pol_batched.sh does, because
 #   a background job killed at its time limit loses whatever its batch had not finished.
 set -u
-OUT=${PPOUT:-/tmp/claude-0/phiphi_grid}
+# ⌗ the output directory is KEYED BY THE CARRY, because two carries were compared and one
+#   grid silently standing for the other is exactly the mistake phiphi.py already made once.
+ETAREF=${ETAREF:-4000}
+OUT=${PPOUT:-/tmp/claude-0/phiphi_grid_eta$ETAREF}
+export ETAREF
 JOBS=${JOBS:-4}
 MAXB=${MAXB:-99}
 mkdir -p "$OUT"
