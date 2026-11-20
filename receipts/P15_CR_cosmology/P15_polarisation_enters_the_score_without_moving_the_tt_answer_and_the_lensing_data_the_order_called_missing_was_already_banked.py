@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-r"""RECEIPT -- P15 (r7842, node 60): ** POLARISATION IS IN THE SCORE AND THE EXTENSION IS EXACT ON
+r"""RECEIPT -- P15 (r7844, node 60): ** POLARISATION IS IN THE SCORE AND THE EXTENSION IS EXACT ON
 THE OLD BINS; THE LENSING MEASUREMENT THE ORDER ASKED THIS SEAT TO FETCH HAS BEEN BANKED SINCE
 r7471 AND THE OBSTRUCTION IS THE INSTRUMENT, WHOSE BACKGROUND RATE IS EXACTLY INDEPENDENT OF THE
 SUM; AND TWO REGISTERED ARMS FAIL -- ONE BECAUSE ITS PREMISE WAS FALSE AND ONE BECAUSE ITS
@@ -11,6 +11,13 @@ COMPUTES: the three-spectrum score over 555 bins and its exact closure on the 18
   proposal and the repair; tau's reach in this harness; and the exact reach of the neutrino sum
   into this instrument's background and its clustering source.  ** It pins NO cosmological parameter
   as a result. **
+
+⌷ ** THE ID. **  69 ordered this work as "finish r7842" and its commits carry that number,
+which is also the name of its computation directory and of the PREDICTION.md registered at
+`4e7aa1721`.  It LANDS as r7844, because the trunk's front advanced to 69's own r7843 while it
+was running, and this line's next id of its own parity above the front is r7844.  *Same work,
+same registration, one number higher than the order names, and said here so that nobody has to
+reconstruct it.*
 
 THE ORDER (r7841, 69, restated unchanged at r7843): ① add polarisation to the score, TE and EE on
 the same bandpower and covariance treatment as TT, from POLSAVE on both arms; ② add the
@@ -105,7 +112,8 @@ PR = jload('sampler3_lcdm_pol.json') if os.path.exists(_POLRUN) else None
 _ARMRUN = os.path.join(RUN, 'sampler3_cr_pol.json')
 AR = jload('sampler3_cr_pol.json') if os.path.exists(_ARMRUN) else None
 
-print('r7842 (60) -- polarisation in the score, read from this revision\'s own runs\n')
+print('r7844 (60), ordered as r7842 -- polarisation in the score, read from this '
+      'revision\'s own runs\n')
 
 
 def pin(x, printed, pc=0.0005):
@@ -309,24 +317,63 @@ else:
 
     _lim = _pb['upper95_mev']
     _eff = _pb['sum_mean_ev']
+    # the limit's own standard error: recorded by runs from r7842 on, computed from the saved chain
+    # for this one, whose JSON predates the field.  ** ONE DEFINITION, NOT TWO. **
+    if 'upper95_mcse_mev' in _pb:
+        _se = _pb['upper95_mcse_mev']
+        _span = (max(_pb['upper95_per_chain_mev']) - min(_pb['upper95_per_chain_mev']))
+    else:
+        sys.path.insert(0, RUN)
+        from sampler3 import quantile_mcse            # noqa: E402
+        _z = np.load(os.path.join(RUN, 'chain3_lcdm_b_012.npz'), allow_pickle=True)
+        _C = np.asarray(_z[list(_z.keys())[0]], float)
+        _se = quantile_mcse(_C.reshape(-1, 5)[:, 4], _pb['diagnostics']['MNU']['ess'], 0.95)
+        _pcq = [float(np.quantile(_C[i, :, 4], 0.95) * 1000.0) for i in range(_C.shape[0])]
+        _span = max(_pcq) - min(_pcq)
+
     _in_band = ORDER_BAND_MEV[0] <= _lim <= ORDER_BAND_MEV[1]
     _neg = _eff < 0
     _passes = bool(_in_band and _neg)
-    check(('Ⓔ⑤ THE DECISIVE ARM -- the control on TT+TE+EE %s the order\'s criterion: the 95 per '
-           'cent upper limit inside 42.8 to 96.3 meV AND a NEGATIVE effective mass'
-           % ('MEETS' if _passes else 'is reported FAILED against')),
-          True,
-          '%.1f meV against the published %.1f (a factor %.2f), effective mass %+.1f meV against '
-          'the published %+.0f -- in band: %s, negative: %s'
-          % (_lim, PUBLISHED_LIMIT_MEV, PUBLISHED_LIMIT_MEV / _lim, 1000 * _eff,
-             1000 * PUBLISHED_EFFECTIVE_EV, _in_band, _neg))
+    _over = (_lim - ORDER_BAND_MEV[1]) / _se
+    check('Ⓔ⑤ THE DECISIVE ARM IS REPORTED FAILED AGAINST THE ORDER\'S CRITERION, with the '
+          'criterion exactly as registered: the limit had to fall inside 42.8 to 96.3 meV AND the '
+          'effective mass had to be NEGATIVE, the sign the published -0.101 eV carries.  It misses '
+          'on BOTH halves, and the limit half misses by SIX standard errors of its own quantile -- '
+          'so this is a decisive miss and not a boundary case',
+          not _passes and not _in_band and not _neg and _over > 3.0,
+          '%.2f +/- %.2f meV against the published %.1f, a factor %.2f; effective mass %+.1f meV '
+          'against the published %+.0f.  Above the band\'s ceiling by %.2f meV = %.2f standard '
+          'errors'
+          % (_lim, _se, PUBLISHED_LIMIT_MEV, _lim / PUBLISHED_LIMIT_MEV, 1000 * _eff,
+             1000 * PUBLISHED_EFFECTIVE_EV, _lim - ORDER_BAND_MEV[1], _over))
 
-    _seat = SEAT_EXPECTATION_MEV[0] <= _lim <= SEAT_EXPECTATION_MEV[1]
-    check('Ⓔ⑤ and THIS SEAT\'S OWN registered expectation, which was that the arm would fail with '
-          'a limit between 100 and 250 meV, is adjudicated in the same breath and either way',
-          True,
-          'the expectation %s: %.1f meV against 100-250, and r7838\'s TT-only %.1f'
-          % ('HOLDS' if _seat else 'is REFUTED', _lim, R38_LIMIT_MEV))
+    _seat_fails = not _passes
+    _seat_size = SEAT_EXPECTATION_MEV[0] <= _lim <= SEAT_EXPECTATION_MEV[1]
+    _short = (SEAT_EXPECTATION_MEV[0] - _lim) / _se
+    check('Ⓔ⑤ AND THIS SEAT\'S OWN EXPECTATION, registered separately and falsifiable both ways, '
+          'SPLITS: it predicted a FAILURE, and the failure happened; it predicted the size as a '
+          'limit between 100 and 250 meV, and that half is REFUTED.  ** THE MISS IS 0.33 meV, '
+          'WHICH IS SIX TENTHS OF THE QUANTILE\'S OWN STANDARD ERROR ** -- so the prediction was '
+          'right to the instrument\'s precision and is STILL reported refuted, because the '
+          'criterion is what was registered and not what it nearly was.  That is the SECOND '
+          'tolerance in this revision written finer than the quantile it judges, after Ⓑ②, and '
+          'the sampler now records every limit with its error beside it so there is not a third',
+          _seat_fails and not _seat_size and _short < 1.0,
+          'the failure half HOLDS; the size half is REFUTED -- %.2f meV against a registered floor '
+          'of %.0f, short by %.2f meV = %.2f standard errors, the six chains themselves spanning '
+          '%.2f'
+          % (_lim, SEAT_EXPECTATION_MEV[0], SEAT_EXPECTATION_MEV[0] - _lim, _short, _span))
+
+    check('Ⓔ⑤ and WHAT POLARISATION BOUGHT, which is the half the order was after: the limit '
+          'tightens from r7838\'s 277.7 meV on 185 temperature bins to this, on 555.  ⇒ The '
+          'published 64.2 is now a factor 1.55 away where it was 4.33, so r7838\'s diagnosis -- '
+          'that the looseness was in WHAT the harness scores -- is confirmed by the repair rather '
+          'than by argument',
+          _lim < R38_LIMIT_MEV and (R38_LIMIT_MEV / _lim) > 2.0,
+          '%.1f -> %.2f meV, a factor %.2f tighter; the published limit goes from a factor %.2f '
+          'away to %.2f'
+          % (R38_LIMIT_MEV, _lim, R38_LIMIT_MEV / _lim, R38_LIMIT_MEV / PUBLISHED_LIMIT_MEV,
+             _lim / PUBLISHED_LIMIT_MEV))
 
     _gap = _pb['gap_mean_pc']
     check('Ⓕ⑥ the gap\'s sign survives the wider score: the control\'s fitted matter-density gap '
@@ -369,7 +416,7 @@ check('Ⓙ⑩ the count: this receipt adjudicates all %d registered arms, and TW
 
 print()
 if not fail:
-    print('  r7842 OK -- every arm holds, and the two registered failures are ASSERTED rather than '
+    print('  r7844 OK -- every arm holds, and the two registered failures are ASSERTED rather than '
           'suffered:')
     print('    => Ⓗ⑧: the lensing measurement IS banked, at r7471+70.  Item ② is not blocked on '
           'data; it is blocked on a scale-dependent growth, which is an instrument extension.')

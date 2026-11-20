@@ -273,6 +273,27 @@ def run_chains(mod, bounded, x0, S0, rng):
     return out, rate, burn_rate
 
 
+def quantile_mcse(s, ess, q=0.95):
+    """the Monte-Carlo standard error of a sample quantile, which this seat twice forgot it had
+
+    ** TWO CRITERIA IN r7842's OWN PREDICTION WERE WRITTEN FINER THAN THIS NUMBER. **  Arm Ⓑ②
+    asked a 95th percentile to reproduce within `1` meV when its standard error is about `1.7`, and
+    the decisive arm's own expectation set a floor at `100` meV that the measurement missed by
+    `0.33` -- `0.59` of the error below.  *A posterior quantile is not a figure the chain knows to
+    its last printed digit, and reporting it without its error invites exactly that mistake.*  So
+    every bounded run now records it beside the limit.
+
+    The error of a sample quantile is `sqrt(q(1-q)/N_eff) / f(x_q)`.  `N_eff` is the chain's own
+    effective sample size for the sum -- NOT its length, which would understate the error by the
+    autocorrelation -- and `f` is the posterior density at the quantile, on Silverman's width.
+    """
+    s = np.asarray(s, float)
+    xq = float(np.quantile(s, q))
+    h = 1.06 * float(s.std(ddof=1)) * len(s) ** -0.2
+    f = float(np.mean(np.exp(-0.5 * ((s - xq) / h) ** 2)) / (h * np.sqrt(2 * np.pi)))
+    return float(1000.0 * np.sqrt(q * (1.0 - q) / float(ess)) / f)
+
+
 def summarise(mod, arm, bounded, S, rate, burn_rate):
     lab = 'bounded' if bounded else 'unbounded'
     diag = {}
@@ -295,6 +316,9 @@ def summarise(mod, arm, bounded, S, rate, burn_rate):
                gap_mean_pc=float(gap.mean()), gap_sd_pc=float(gap.std(ddof=1)))
     if bounded:
         res['upper95_mev'] = float(np.quantile(s, 0.95) * 1000.0)
+        res['upper95_mcse_mev'] = quantile_mcse(s, diag['MNU']['ess'], 0.95)
+        res['upper95_per_chain_mev'] = [float(np.quantile(S[i, :, 4], 0.95) * 1000.0)
+                                        for i in range(S.shape[0])]
         res['factor_vs_published'] = float(PUBLISHED_LIMIT_MEV / res['upper95_mev'])
         for q in (0.059, 0.064):
             res[f'frac_below_{q}'] = float((s < q).mean())
@@ -307,8 +331,11 @@ def summarise(mod, arm, bounded, S, rate, burn_rate):
     print('     R-hat ' + '  '.join(f'{nm}={diag[nm]["rhat"]:.4f}' for nm in NAMES), flush=True)
     print('     ESS   ' + '  '.join(f'{nm}={diag[nm]["ess"]:.0f}' for nm in NAMES), flush=True)
     if bounded:
-        print(f"     95 per cent upper limit: {res['upper95_mev']:.1f} meV against the published "
-              f"{PUBLISHED_LIMIT_MEV} -- a factor {res['factor_vs_published']:.2f}", flush=True)
+        _pc = res['upper95_per_chain_mev']
+        print(f"     95 per cent upper limit: {res['upper95_mev']:.1f} +/- "
+              f"{res['upper95_mcse_mev']:.2f} meV against the published "
+              f"{PUBLISHED_LIMIT_MEV} -- a factor {res['factor_vs_published']:.2f}  "
+              f"(the six chains span {max(_pc) - min(_pc):.2f})", flush=True)
     return res
 
 
