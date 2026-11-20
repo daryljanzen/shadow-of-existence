@@ -58,14 +58,22 @@ ARMS = {
                  centre=dict(H0=67.40, OM=0.3150, WB=0.0224, NS=0.965), pref='lcdm', E=DI.E_stack),
 }
 # the arm's own spectrum at each generated sum: (sum, path-relative name, which directory)
-SPEC = {
+_SPEC_ALL = {
     -0.12: (NEW_DIR, 'Sm12'),
     -0.06: (OLD_DIR, 'MNUm'),
     0.00: (NEW_DIR, 'S000'),
     0.06: (OLD_DIR, 'MNUp'),
     0.15: (NEW_DIR, 'S015'),
     0.30: (NEW_DIR, 'S030'),
+    0.45: (NEW_DIR, 'S045'),
+    0.60: (NEW_DIR, 'S060'),
 }
+# only the nodes whose spectra exist FOR BOTH ARMS are used, so the two arms are always
+# interpolated over the same range and a half-generated extension cannot quietly make them
+# different instruments.
+SPEC = {s: v for s, v in _SPEC_ALL.items()
+        if all(os.path.exists(os.path.join(v[0], f'{pref}_{v[1]}.npz'))
+               for pref in ('cr', 'lcdm'))}
 
 _Z = np.load(RATIO_NPZ)
 _LS_R, _SGRID, _RMAT = _Z['ls'], _Z['grid'], _Z['ratio']
