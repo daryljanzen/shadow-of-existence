@@ -20,6 +20,17 @@ but the negative it was built to catch is ruled out by measurement rather than b
 thing that is actually wrong is the tolerance.  *A 1 meV window on a quantile whose standard error
 is 1.7 meV could not have been met by a rerun of `r7838`'s own code against itself.*
 
+** AND A THIRD REALISATION IS REPORTED HERE BECAUSE IT PASSES. **  The sampler's proposal was found
+mis-scaled by `1812` (see `sampler3.laplace_cov`) and fixed; re-run on the fixed sampler, the same
+TT-only closure returns `277.7` meV -- `r7838`'s figure to the printed digit, inside the registered
+`1` meV.  *It is reported precisely so that the failing realisation is not quietly replaced by the
+passing one.*  Three realisations of one posterior read `275.3`, `277.7` and `277.7` against a
+standard error of about `1.7`: that is consistency, not restoration, and nothing here licenses the
+claim that the fix RECOVERED the number.  The arm stands as registered and as first measured:
+FAILED on its limit half.  What the third run adds is that the criterion is satisfiable and
+satisfied on some draws and not others -- which is what a tolerance below the instrument's own
+precision means.
+
 Writes `closure_tt.json`.  Run from this directory with `SUM_ARMS=lcdm`.
 """
 import json
@@ -180,6 +191,15 @@ def main():
     kA, kB = list(cA.keys())[0], list(cB.keys())[0]
     qA = quantile_error(np.asarray(cA[kA], float), jA['diagnostics']['MNU']['ess'])
     qB = quantile_error(np.asarray(cB[kB], float), jB['diagnostics']['MNU']['ess'])
+    # the third realisation: the same closure on the FIXED sampler, reported because it passes
+    qC, jC = None, None
+    _fx = os.path.join(_HERE, 'sampler3_ttonly_fixed.json')
+    _fc = os.path.join(_HERE, 'chain3_lcdm_b_0_fixed.npz')
+    if os.path.exists(_fx) and os.path.exists(_fc):
+        jC = json.load(open(_fx))['lcdm_bounded']
+        cC = np.load(_fc, allow_pickle=True)
+        qC = quantile_error(np.asarray(cC[list(cC.keys())[0]], float),
+                            jC['diagnostics']['MNU']['ess'])
     comb = float(np.hypot(qA['mcse_mev'], qB['mcse_mev']))
     gap = abs(qB['upper95_mev'] - qA['upper95_mev'])
     print('     r7838 %.1f +/- %.2f meV (six chains span %.1f)'
@@ -188,6 +208,15 @@ def main():
           % (qB['upper95_mev'], qB['mcse_mev'], qB['per_chain_range_mev']), flush=True)
     print('     the two differ by %.2f meV = %.2f combined standard errors; the arm asked for 1'
           % (gap, gap / comb), flush=True)
+    if qC is not None:
+        print('     the fixed sampler %.1f +/- %.2f meV (six chains span %.1f) -- INSIDE the '
+              'registered 1 meV, reported because it passes'
+              % (qC['upper95_mev'], qC['mcse_mev'], qC['per_chain_range_mev']), flush=True)
+        _three = [qA['upper95_mev'], qB['upper95_mev'], qC['upper95_mev']]
+        print('     three realisations of one posterior: %s meV, spread %.2f against a standard '
+              'error of about %.2f'
+              % (', '.join('%.1f' % v for v in _three), max(_three) - min(_three),
+                 float(np.mean([qA['mcse_mev'], qB['mcse_mev'], qC['mcse_mev']]))), flush=True)
 
     out = dict(
         arm='Ⓑ②',
@@ -198,8 +227,10 @@ def main():
         operator=op,
         fisher=fish,
         chi2=agree,
-        r7838=qA, r7842=qB,
+        r7838=qA, r7842=qB, r7842_fixed_sampler=qC,
         combined_mcse_mev=comb, limit_gap_mev=gap, limit_gap_in_mcse=gap / comb,
+        three_realisations=([qA['upper95_mev'], qB['upper95_mev'], qC['upper95_mev']]
+                            if qC is not None else None),
         chains=dict(burn_accept_r7838=jA['burn_accept'], burn_accept_r7842=jB['burn_accept'],
                     burn_accept_identical=bool(jA['burn_accept'] == jB['burn_accept']),
                     accept_r7838=jA['accept'], accept_r7842=jB['accept'],
@@ -208,6 +239,8 @@ def main():
         verdict=dict(
             chi2_half_holds=bool(abs(jB['best_fit']['chi2'] - 194.57) <= 0.05),
             limit_half_holds=bool(gap <= 1.0),
+            limit_half_holds_on_fixed_sampler=(
+                bool(abs(qC['upper95_mev'] - 277.7) <= 1.0) if qC is not None else None),
             scoring_unchanged=bool(op['bitwise'] and fish['bitwise']
                                    and agree['max_abs'] < 1e-10 and nodes['identical']),
             tolerance_tighter_than_instrument=bool(1.0 < comb)),

@@ -100,16 +100,36 @@
   "per_chain_range_mev": 14.919461160369792,
   "upper95_mev": 275.32517915516036
  },
+ "r7842_fixed_sampler": {
+  "ess": 23984.9233398732,
+  "mcse_mev": 1.6220716154216626,
+  "per_chain_mev": [
+   278.0317365823311,
+   270.8997702881138,
+   277.78073269026174,
+   281.6316469679048,
+   283.0524819531625,
+   275.99155202125934
+  ],
+  "per_chain_range_mev": 12.152711665048685,
+  "upper95_mev": 277.6707373424247
+ },
  "registered": {
   "chi2": 194.57,
   "chi2_tol": 0.05,
   "limit_mev": 277.7,
   "limit_tol_mev": 1.0
  },
- "seconds": 96.41086888313293,
+ "seconds": 102.54624342918396,
+ "three_realisations": [
+  277.7099236652287,
+  275.32517915516036,
+  277.6707373424247
+ ],
  "verdict": {
   "chi2_half_holds": true,
   "limit_half_holds": false,
+  "limit_half_holds_on_fixed_sampler": true,
   "scoring_unchanged": true,
   "tolerance_tighter_than_instrument": true
  }
