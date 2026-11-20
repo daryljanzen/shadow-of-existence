@@ -1,0 +1,32 @@
+{
+ "carries": {
+  "z13": {
+   "amp": 1.471642855714291e-09,
+   "amp_spread_pc": 64.5154867230993,
+   "chi2": 16.389449912869935,
+   "chi2_per_dof": 2.048681239108742,
+   "dof": 8,
+   "drift_vs_fiducial_pc": 49.81347923198254,
+   "monotone": true,
+   "z_start": 12.83
+  },
+  "z188": {
+   "amp": 8.803716172730279e-10,
+   "amp_spread_pc": 38.84717737241339,
+   "chi2": 8.565138153213859,
+   "chi2_per_dof": 1.0706422691517323,
+   "dof": 8,
+   "drift_vs_fiducial_pc": 19.622057152424134,
+   "monotone": true,
+   "z_start": 188.0
+  }
+ },
+ "verdict": {
+  "chi2_halved": 1.9135067782555493,
+  "converges_with_the_fork": "the earlier carry is now required for TWO independent reasons: it carries 100 per cent of the post-non-relativistic neutrino suppression instead of 44.4, and it brings the shape into agreement with the data",
+  "drift_cut": 2.5386471380157265,
+  "reading": "the growth frozen beyond eta_ref was the dominant shape error: moving the carry to z = 188 takes chi2/dof from 2.05 to 1.07 and the monotone drift from 49.8 to 19.6 per cent, so the shape is now consistent with the bandpowers within their own errors",
+  "residual": "19.6 per cent of monotone drift remains -- the Limber approximation at low L and the neutrino filter being an interpolation are the named candidates, and neither is measured here",
+  "truncation_hypothesis_confirmed": true
+ }
+}
