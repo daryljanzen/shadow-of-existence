@@ -190,7 +190,22 @@ def _tree_is_bL_plus_dneff(bL):
     `config=` anywhere that could reach a spectrum still keeps this row red.*"""
     import ast as _ast
     class _Strip(_ast.NodeTransformer):
-        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE'}
+        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU'}
+        # ⛭ r7835 (69): a fourth inert addition, MNU (r7836+60): its two assignments, the header print
+        #   that reports it, and `- ONU` in the two places the clustering matter loses it.  At the
+        #   default ONU is exactly zero, so stripping `x - ONU` back to `x` restores the old blob's AST.
+
+        def visit_BinOp(self, node):
+            self.generic_visit(node)
+            if isinstance(node.op, _ast.Sub) and isinstance(node.right, _ast.Name) and node.right.id == 'ONU':
+                return node.left
+            return node
+
+        def visit_Expr(self, node):
+            if "id='MNU'" in _ast.dump(node) and "id='print'" in _ast.dump(node):
+                return None
+            self.generic_visit(node)
+            return node
 
         def visit_Call(self, node):
             # ⛔ ONLY the POLSAVE call, identified by its first argument being `_POLS`.  Dropping

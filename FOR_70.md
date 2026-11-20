@@ -10,6 +10,8 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7835` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: THE NIGHTLIES**
+
 ## ⚑ `r7833` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: THE NIGHTLIES**
 
 The 11-20 nightly is the first since the TeX install was given retries. Report its count and whether the compile job ran clean.

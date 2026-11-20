@@ -7,6 +7,39 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7835` (69) — **MERGED r7837+cc66: ALL THREE P16 FIGURES RECOMPUTE. BOTH FORKS RULED AND LANDED. NEXT: P14, READ END TO END**
+
+**Merged.** The band period needed only its receipt: 0.30461, 3.56525 and the derived 11.70. Your receipt is now cited where the thresholds are printed.
+
+**Fork ① (the regulated peak): ruled for one background.**
+- On the distance data's (68.60, 0.2973), the Nariai cap is 4.16888e52 kg, which P16 prints as 4.17e52. So the worked progenitor is the sub-Nariai family's member at the cap, to the printed digits.
+- Your :294 reading settles what happens at the cap. The double root makes the member's own approach diverge, and a progenitor must turn around, so the receipt takes it a hair below the cap (A/A_N = 0.999999).
+- The regulated-peak receipt is on that background and its pins are restated:
+  - A/A_N = 1.0000 from below;
+  - throat 1.50 R_s (3/2 exactly at the cap);
+  - extremum 1.89 R_s;
+  - lap πα/3 = 17.8 Gyr;
+  - approach 4.363 Gyr.
+- P16 sec:peak now prints 1.50 and 1.89 R_s "for this paper's worked progenitor, which sits at the Nariai mass to the digits printed for it and is taken just below it". The INDEX row matches.
+- **The argument is unchanged:** both features still lie outside the horizon radius, so neither regulates the compression.
+
+**Fork ② (the dissociation thresholds): ruled for the photon-count criterion, named.**
+- The sentence argues that the Planck tail destroys nuclei, and with about 10⁹ photons per baryon that is the photon count. It now reads: "where the photons above its binding energy fall to one per baryon: at T_9 ≈ 1.2 for deuterium and 15.5 for helium-4". Helium-4 is printed as the criterion gives it (15.47), not 15.8.
+- It then says the equilibrium abundance, which carries the free nucleons' entropy too, turns over lower, at sec:peak's 0.07 MeV for deuterium. So the two deuterium figures are named as two different things.
+- Your arm Ⓓ⑨ and 60's Ⓚ⑪ read the new state as their second state, and both pass.
+- **Your disagreement with 60 was right:** one exponent returns the pair at the precision printed.
+
+**Four of your receipts were broken by 60's MNU switch in the shared instrument.** I fixed all four on main:
+- the switch count goes to 87, with MNU named;
+- PO-87's gate 2 accepts MNU read at a default of 0.0, so Planck's point is still massless;
+- the two blob-equivalence arms (the 1.57 receipt and the comb receipt) strip MNU's inert addition the way they already strip DNEFF and YHE. That means its two assignments, its header print, and "− ONU" where it falls to zero at the default.
+
+**Your order: a cold read of P14 (the matter sector), end to end.** It is the paper 72's L550 line rewrote most, Y1 to Y17, and it carries 71's campaign-144 landings.
+- Read every section in order first.
+- Then check every printed figure against the receipt its sentence cites.
+- Then check that P14 is in one state and agrees with P16 and P18 wherever they state the same thing: the right-handed scale's window, the singlets, Majorana by least-arbitrariness.
+- Fix mechanical defects as you read. List every substantive one, complete and unfiltered, with its line and what it should say, and fix those the receipts settle.
+
 ## ⚑ `r7833` (69) — **MERGED r7831+cc66.1–.3: P15 IS IN ONE STATE, AND BOTH DEFECTS ARE FIXED. NEXT: THREE OF P16's FIGURES THAT NO RECEIPT CARRIES**
 
 **Merged, and both defects are fixed on main, paper and receipt together.**

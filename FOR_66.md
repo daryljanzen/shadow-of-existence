@@ -15,6 +15,45 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7833+cc66.1 — ⚑⚑ **ALL THREE P16 FIGURES RECOMPUTE. THE BAND PERIOD IS SIMPLY RIGHT; THE OTHER TWO ARE RIGHT ON AN INPUT THE PAPER DOES NOT NAME, AND BOTH ARE FORKS FOR YOU**
+
+Order `r7833`, out of `60`'s cold read. `PREDICTION.md` pushed in its own commit (`d34f10379`) before a line of the computation existed. Receipt `P16_three_unreceipted_figures_reproduce_but_two_name_a_background_and_a_criterion_the_paper_does_not`: **30 arms, all pass**, 13 figures pinned against values *parsed out of* `cosmogenesis_paper.tex`, and **the pins are verified failable** — perturbing `η`, `c_s` at turnaround, `H₀` or `B_D` reddens 3–5 each while the control stays green.
+
+**② `sec:interior`'s band period is simply right.** One input, `c_s` at turnaround, fixes `A/√B = 37.0055`; then `∫c_s dη = 0.30461` (printed `0.304`), `η_end/√3 = 3.56525` (printed `3.565`), ratio `11.7043` (printed `11.7`). ⇒ **"A factor of `11.7`" is derived, not a fourth measurement**: the printed pair's own ratio is `3.565/0.304 = 11.727`. The lap closes at `η = 6.17520`, short of pure dust's `2π`, as radiation requires.
+
+**① The dating is right on both backgrounds; the regulated peak is right on only one.** `πα/3` with `α = √(3/Λ)` returns **both** figures — `18.2337` Gyr on `Λ = 1.1056e-52`, `17.8064` on P16's own stated `(68.60, 0.2973)`, whose `Λ` **is** `1.1593e-52`. But:
+
+| background | Nariai cap | `4.17e52` kg sits at |
+|---|---|---|
+| `1.1056e-52` (the receipt's, hardcoded) | `4.26889e52` kg | **`0.976834`** → the pinned `0.9768` |
+| `1.1593e-52` (P16's own) | `4.16885e52` kg | **`1.000277`** |
+
+⇒ **The ratio crosses `1`.** On its own stated background P16's own worked progenitor sits *at* the cap, so the sub-Nariai margin `:527` requires (*"a progenitor capable of seeding a universe is necessarily sub-Nariai"*) is gone, and which side of `1` it falls on depends on digits P16 does not print. ⌗ Also: `1.1056e-52` is not what any background P16 states gives — it needs `Ω_m = 0.3050` at `H₀ = 67.36`, where Planck's `(67.36, 0.3153)` gives `1.0891e-52`. **⚑ YOURS:** either the progenitor carries more digits and is stated sub-Nariai here, or the peak is computed on a standard-model `Λ` and the paper says which.
+
+**On the degeneracy you asked about:** at the cap the construction's answer is already in the paper at `:294` — the throat survives *identified by its areal radius `α/√3`* and the `dS₂×S²` geometry, while `∫dr/√|f|` **diverges logarithmically** at the double root, so the member carries no static region and the finite `πα/√3` belongs to the family and its limit. ⇒ ① is discharged by a limit statement you already make, not by a new length. ⌗ `πα/√3 = 2.91778e26` m and `πα/3 = 1.68458e26` m are **different lengths, apart by exactly `√3`**, and an arm asserts they are not conflated.
+
+**③ The dissociation pair is returned by one criterion — and it is not the one you ordered.**
+
+| criterion | deuterium | helium-4 |
+|---|---|---|
+| crude photon count, `B/kT = ln(1/η) = 21.22` | **`1.21659`** (printed `1.2`, 1.4%) | **`15.47455`** (printed `15.8`, 2.1%) |
+| NSE, `η^(A−1)` with `(m_N/kT)^{3(A−1)/2}` | **`0.78705`** | **`3.71148`** |
+
+⇒ **And P16 already carries the NSE figure elsewhere:** `sec:peak`'s `T_D ≃ 0.07` MeV is `T_9 = 0.8123`, within `3.2`% of NSE's `0.78705` and **not** of `sec:network`'s `1.2`. **So the paper holds two deuterium photodissociation thresholds, `1.55` apart, in two sections, and neither says which criterion it means.** **⚑ YOURS:** `sec:network` means the crude count it reproduces and says so, or it means NSE and `1.2`→`0.79`, `15.8`→`3.71`. **I supply both numbers and do not pick the physics.**
+
+**⚠ I disagree with `60`'s arm (11), with reasons, and did not adopt its conclusion.** Its ground is that the implied exponents differ — `21.513` for deuterium against `20.782` for helium-4 — and **they do, by 3.45 per cent**. But one criterion at `ln(1/η) = 21.22` returns both printed figures to within `2.1`%, which is the precision the sentence prints (`≃ 1.2`, `15.8`). *Two implied exponents not being identical is a different claim from the pair not being returned.* `60`'s measurement is reproduced in my receipt; its conclusion is not.
+
+**⚠ I withheld BOTH citations the order asked for, and the gates are why.** I added `\rcpt` at the ② and ③ sentences, and then:
+- `check_loci` caught the ③ citation: the sentence names the **branch point** and my receipt names the **turnaround**. Removed.
+- `check_figures_pinned` caught the ② citation: at the printed input taken exactly, `∫c_s dη = 0.304612`, which **prints as `0.305`** and misses `0.304` by `6.1e-4` against the gate's allowance of `5.0e-4`. Removed.
+⇒ **The figures are consistent and the pin is not available at the printed precision.** Read the other way round, the printed `0.304` implies `c_s = 0.017953`, which **is** the printed `0.018` to its two significant figures — so the pair is mutually consistent and what is missing is a digit. **⚑ YOURS:** print `0.305` (taking `0.018` as exact), or state `0.018` as rounded, and then this receipt can be cited there. Two arms record the withholding and its arithmetic, so the reason is in the receipt and not only here. `P16`'s `.tex` is therefore **byte-identical to main's**; its PDF moved only because the appendix now lists the new receipt from its INDEX row.
+
+**Predictions: 4 of 6 hit; both misses reported.** HIT — the `11.7` factor is derived; both integrals reproduce; `πα/3` returns the dated figures; and, against the order's report of `60`, a single-exponential criterion **does** return the pair. **MISSED** — I registered NSE helium-4 "near `T_9 ≈ 5`" and it is `3.711`, because when registering I used `3 × 20.7` and left out the `(m_N/kT)^{3(A−1)/2}` entropy factor, which adds `34.3` to `B/kT`; and I registered `r/R_s ≥ 10⁴` for the collapse-branch extremum and it is **`1.8895`**, order unity — the `M^{-2/3}` scaling I registered is right, but at an `α`-scale mass there is nothing left to amplify.
+
+⇒ **GUARD: registering a number beats registering a direction, and a missed number locates the physics.** My `≈5` was wrong *because* the estimate omitted the very factor that distinguishes the two criteria — so the miss pointed straight at what ③ turns on. "Much lower than `15.8`" would have been right and taught nothing. ⇒ **GUARD: never register an order-of-magnitude bound without evaluating it once** — `≥10⁴` was a guess about a one-line ratio, wrong by four orders.
+
+⌗ **A probe that cannot reach its pins looks exactly like a pin that cannot fail.** My first failability test reported all three perturbations passing with zero red pins; they had crashed at import, because the receipt resolves the paper relative to `__file__` and I had copied it to a scratch directory. ⇒ *A failability probe needs a positive control: the unperturbed copy must pass by the same route the perturbed one fails.*
+
 ## r7831+cc66.3 — ⚑ **CI's THIRD RED WAS MAIN'S AND THE FIX WAS ALREADY IN MAIN: `Y17` MINTED TWO QUOTE-PIN KEYS AND DID NOT ADJUDICATE THEM. THE MERGE WAS THE FIX. AND CI CONFIRMS THE TWO GATES I REGENERATED**
 
 **`123/123` green on the merged tree, pushed at `4e6269c54`, `0` behind main, PR #826 mergeable again.** Three of main's reds are now off this branch and none of the three was mine.
