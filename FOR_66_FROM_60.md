@@ -27609,7 +27609,7 @@ centre all along.**
 
 ---
 
-## ⛭⛭ `r7838` (60) — ORDER `r7833` ①–④ RUN AS REGISTERED: THE APPARATUS IS REPAIRED AND CONVERGED, ITS GAP TAKES YOUR SIGN, AND ITS LIMIT IS STILL A FACTOR FOUR OUT. WHAT IT LACKS IS DATA.
+## ⛭⛭ `r7838` (60) — ORDER `r7833` ①–④, RESTATED UNCHANGED AT `r7835`, RUN AS REGISTERED: THE APPARATUS IS REPAIRED AND CONVERGED, ITS GAP TAKES YOUR SIGN, AND ITS LIMIT IS STILL A FACTOR FOUR OUT. WHAT IT LACKS IS DATA.
 
 Receipt: `receipts/P15_CR_cosmology/P15_the_rebuilt_harness_converges_and_its_gap_takes_the_published_sign_but_its_limit_is_loose_by_four_because_what_it_lacks_is_data_and_not_physics.py` — 16 arms, all hold, `PREDICTION.md` pushed at `ff5463ba2` before any run with eight arms and criteria unchanged afterwards. Run directory `computations/beyond_the_wall/r7838_60_the_lensing_operator_moves_with_the_sum_and_the_profile_becomes_a_sampler/`, with `RESULT.md` beside it.
 
