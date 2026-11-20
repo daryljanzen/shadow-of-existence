@@ -242,6 +242,41 @@ check('Ⓜ⑬ AND THE BAO TERM IS ONE-DIMENSIONAL, which is where the degeneracy
       'the widened bracket and the measured flatness are both in the instrument\'s own source')
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
+# ⌗ r7836's OWN TWO FIGURES, which the sentences above print beside THIS receipt, are pinned here
+#   two-sided -- and READ OUT OF r7836's own stored run rather than retyped, so that if that run is
+#   ever regenerated differently the comparison fails instead of agreeing with a literal.  The
+#   published limit is pinned two-sided as well, because a sentence that prints it beside this
+#   receipt is a sentence this receipt has to be able to fail on.
+_R36 = jload(os.path.join(os.pardir, 'r7836_60_the_arm_of_record_refitted_with_the_neutrino_mass_free',
+                          'fit_mnu.json')) if False else json.load(io.open(
+    os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                 'r7836_60_the_arm_of_record_refitted_with_the_neutrino_mass_free', 'fit_mnu.json'),
+    encoding='utf-8'))
+
+
+def _gap_pc(jm, h0_d, om_d):
+    h = jm['H0'] / 100.0
+    return 100.0 * ((jm['OM'] * h ** 2) / (om_d * (h0_d / 100.0) ** 2) - 1.0)
+
+
+_r36_ctl_limit = _R36['lcdm']['upper95'] * 1000.0
+_r36_arm_gap = _gap_pc(_R36['cr']['joint_min'], 68.60, 0.2973)
+_r36_ctl_gap = _gap_pc(_R36['lcdm']['joint_min'], 68.5, 0.2975)
+check('Ⓠ⑰ the figures of r7836 that these sentences print are pinned two-sided and READ OUT OF '
+      'r7836\'s own stored run rather than retyped: its control limit 26.5 meV and its arm gap '
+      '-5.21 per cent, and its control gap -2.43.  And the published limit 64.2 meV is pinned '
+      'here too, because a sentence '
+      'printing it beside this receipt is one this receipt has to be able to fail on',
+      abs(_r36_ctl_limit - 26.5) < 0.045
+      and abs(_r36_arm_gap - (-5.21)) < 0.0048
+      and abs(_r36_ctl_gap - (-2.43)) < 0.0045
+      and abs(PUBLISHED_LIMIT_MEV - 64.2) < 0.045
+      and abs(PUBLISHED_GAP_PC - 2.48) < 0.0045
+      and abs(PUBLISHED_EFFECTIVE_EV - (-0.101)) < 0.00045
+      and abs(BANKED_ARM_GAP_PC - (-1.00)) < 0.0045,
+      'r7836 read back at %.1f meV, arm gap %+.2f, control gap %+.2f per cent'
+      % (_r36_ctl_limit, _r36_arm_gap, _r36_ctl_gap))
+
 print('\nPART 5 -- THIS REVISION\'S OWN CAUGHT DEFECT, AND THE COUNT')
 _smp = io.open(os.path.join(RUN, 'sampler.py'), encoding='utf-8').read()
 check('Ⓝ⑭ this revision\'s FIRST sampler had the same class of failure r7836 reported, and a smoke '
@@ -258,14 +293,14 @@ check('Ⓝ⑭ this revision\'s FIRST sampler had the same class of failure r7836
 check('Ⓞ⑮ P15 is UNCHANGED by this revision, as the order requires until the arm is read',
       'P15` is unchanged' in RESULT)
 
-ARMS_RUN = 15
+ARMS_RUN = 16
 # ** THE REGISTERED FAILURE IS ASSERTED, NOT SUFFERED. **  Ⓔ⑤ was registered as a comparison with a
 #   reachable negative and the negative was reached.  So the arm that carries it PASSES by asserting
 #   that the control missed the published limit, outside the band registered before the run, with the
 #   effective mass on the wrong side of zero -- and the receipt has no failing arm at all.  A receipt
 #   that merely exited nonzero would say "something broke"; this one says WHICH comparison came out
 #   which way, which is the thing the corpus has to be able to read.
-check('Ⓟ⑯ the count: this receipt ran %d arms and every one of them holds, the registered FAILURE '
+check('Ⓟ⑱ the count: this receipt ran %d arms and every one of them holds, the registered FAILURE '
       'among them -- Ⓔ⑤ asserts that the control missed its band, and Ⓖ⑦ asserts that the arm of '
       'record is therefore NOT JUDGED' % (ARMS_RUN + 1),
       len(fail) == 0,
