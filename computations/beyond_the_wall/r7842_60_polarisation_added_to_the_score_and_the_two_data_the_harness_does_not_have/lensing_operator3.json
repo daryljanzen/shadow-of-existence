@@ -10,7 +10,7 @@
   "divisor": 93.14,
   "model_lmax": 1996
  },
- "te_form": "additive, because TE crosses zero three times inside the reach",
+ "te_form": "additive and dimensionless: (C_TE_lensed - C_TE_unlensed) / C_TT_unlensed, so the instrument's free amplitude cancels on application",
  "grid": [
   0.0,
   0.03,
