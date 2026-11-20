@@ -34,7 +34,26 @@ PREDICTION.md was committed and pushed BEFORE any run, at `ff5463ba2`, with eigh
 ** AND THE LOOSENESS IS LOCATED RATHER THAN LISTED. **  Holding the ruler at the instrument's own
 sound horizon instead of marginalising it moves the limit five per cent.  So it is not the operator,
 not the minimiser and not the ruler: what is left is WHAT this harness scores -- 185 temperature
-bins, no polarisation, no lensing reconstruction, no low-l.
+bins, no polarisation, no lensing reconstruction, no low-l.  (r7842: the lensing bandpowers ARE
+banked -- see the amendment below.  This harness still does not SCORE them, which is what this
+sentence turns on, and the reason is the instrument and not the repository.)
+
+⌗ ** AMENDED AT r7842 UNDER THE r2673 RULE -- THE FINDING STANDS AND ONE OF ITS REASONS WAS WRONG. **
+This receipt's diagnosis, that what the harness lacks is DATA and not physics, named the
+lensing-reconstruction spectrum as a measurement the repository does not hold.  *It holds it.*  The
+nine Planck 2018 conservative `C_L^phiphi` bandpowers, their covariance and their nine windows have
+been in `computations/beyond_the_wall/r7471_70_PO24_tilt_off_the_tail/lensing/` since node 70 banked
+them, and 70 scored against them there.  r7842 found this while writing a gate that ASSERTS the
+absence, and its `lensing_reach.py` then measured why the data still cannot be used from this seat:
+at fixed total Omega_m this instrument's background rate is EXACTLY independent of the sum --
+0.000e+00 across four decades of scale factor -- so the background-only growth factor that
+`L171x_lensing_potential.py` builds carries exactly zero neutrino effect, and the one channel that
+does respond is a Poisson source flat in k and frozen at z = 12.8.
+  ⇒ ** EVERY FIGURE AND EVERY ARM BELOW IS UNCHANGED, and so is the finding: the looseness is in
+    WHAT this harness scores. **  What changes is one clause of the reason.  It is not that the
+    lensing measurement is missing; it is that this instrument cannot carry a neutrino effect into
+    the lensing power it computes.  That is an instrument extension and not a data request, which
+    makes it a different order from the one r7841 wrote on the strength of this sentence.
 
 rc=0 when every arm holds, including the arms that record a registered failure AS a failure.
 Run: python3 <this file>                                                        (numpy only)
@@ -202,7 +221,9 @@ check('Ⓘ⑨ the limit is the DATA\'s and not the grid edge\'s: doubling the su
 check('Ⓙ⑩ and it is NOT the ruler: holding r_d at the instrument\'s own sound horizon instead of '
       'marginalising it gives 262.9 meV, 5.3 per cent tighter, against a factor 4.33 to explain.  '
       'So what is left is WHAT the harness scores -- 185 temperature bins, no polarisation, no '
-      'lensing reconstruction, no low-l -- and that is what the next revision has to change',
+      'lensing reconstruction, no low-l -- and that is what the next revision has to change.  '
+      '(r7842, r2673: the lensing bandpowers are banked at r7471+70 and this harness still does '
+      'not score them; the obstruction is the instrument, not the repository.)',
       abs(_held - 262.9) < 0.045 and abs(100.0 * (1.0 - _held / lim_c) - 5.3) < 0.045
       and (1.0 - _held / lim_c) < 0.25,
       '%.1f meV held against %.1f marginalised, %.1f per cent' % (_held, lim_c,
@@ -316,8 +337,11 @@ if not fail:
                                                                             fac_c))
     print('    => the arm of record is NOT JUDGED, and nothing is concluded about the neutrino mass '
           'on either arm.')
-    print('    => what is owed is DATA, not physics: polarisation and the lensing-reconstruction '
-          'spectrum, which this harness does not score.')
+    print('    => what is owed is polarisation and the lensing-reconstruction spectrum, which '
+          'this harness does not score.')
+    print('    => r7842 amendment (r2673): the lensing bandpowers ARE banked, at r7471+70.  So the '
+          'second half is owed to the INSTRUMENT and not to the repository -- its background rate '
+          'is exactly independent of the sum, so the growth it builds carries no neutrino effect.')
     sys.exit(0)
 print('  ⛔ %d arm(s) failed: %s' % (len(fail), fail))
 sys.exit(1)

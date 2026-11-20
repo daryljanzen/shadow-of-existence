@@ -1,0 +1,18 @@
+# DATA THIS HARNESS DOES NOT HAVE, each row adjudicated against the probe that shows its absence.
+# Written by hand; `check_data_absent.py` is the ratchet.  ** THIS LEDGER IS NOT A CENSUS. **  It
+# ranges over ITS OWN ROWS and nothing else: it does not and cannot enumerate every datum the
+# harness lacks, and a datum missing from it is not thereby present.  What it does assert is that
+# each row's datum is STILL absent, so that a receipt reasoning from the absence cannot go quietly
+# stale when the datum arrives.
+#
+# ⌗ A ROW WAS REMOVED BEFORE THIS LEDGER FIRST PASSED, AND THAT IS THE POINT OF IT.  `r7842`
+#   registered the lensing-reconstruction bandpowers as absent -- `r7841` said so, and `r7838`'s
+#   own finding said so -- and writing the probe is what found the Planck 2018 conservative
+#   bandpowers, their covariance and their nine windows sitting in
+#   `computations/beyond_the_wall/r7471_70_PO24_tilt_off_the_tail/lensing/`, banked by node `70`
+#   and already scored there.  *Two nodes carried the claim and neither had looked.*
+#
+# probe      path:REL              absent iff no file at REL
+#            attr:FILE:CLASS:NAME  absent iff CLASS, read from FILE, has no attribute NAME
+# key <TAB> probe <TAB> receipt that reasons from the absence <TAB> what the datum would decide
+planck2018_low_ell_bins	path:computations/planck_tt_likelihood/data/planck2018_low_ell/CTT_bin_low_ell_2018.dat	receipts/P15_CR_cosmology/P15_polarisation_enters_the_score_without_moving_the_tt_answer_and_the_lensing_data_the_order_called_missing_was_already_banked.py	the reionisation half of tau directly, rather than through the 0.054 +/- 0.007 prior node 70 stood in for it at r7471; the high-ell likelihood cannot carry it because its own first bin starts at ell 30

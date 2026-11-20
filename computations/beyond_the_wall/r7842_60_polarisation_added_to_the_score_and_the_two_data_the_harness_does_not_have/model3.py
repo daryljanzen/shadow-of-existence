@@ -53,11 +53,21 @@ _SUM_TAGS = {-0.12: 'Sm12', -0.06: 'Sm06', 0.00: 'S000', 0.06: 'S006',
              0.15: 'S015', 0.30: 'S030', 0.45: 'S045', 0.60: 'S060'}
 
 
-def available_sums():
-    """only the sums whose spectra exist FOR BOTH ARMS, so the two are never different instruments"""
+# ** WHOSE SPECTRA HAVE TO EXIST BEFORE A SUM IS A NODE. **  By default BOTH arms', so that a
+#   half-finished generation can never leave the two arms interpolated over different ranges, which
+#   would make them two instruments rather than one comparison.  `SUM_ARMS` narrows it to one arm,
+#   and it is narrowed for exactly one purpose: the CONTROL is scored first, as the order requires,
+#   while the arm of record's own points are still generating.  ⌗ *Any run that COMPARES the two
+#   must leave this at its default, and the receipt asserts that the comparison was made on the
+#   same node set.*
+SUM_ARMS = tuple(a for a in os.environ.get('SUM_ARMS', 'cr,lcdm').split(',') if a)
+
+
+def available_sums(arms=None):
+    """the sums whose spectra exist for every arm in `arms` (both, unless narrowed on purpose)"""
+    need = tuple(arms) if arms else SUM_ARMS
     return sorted(s for s, t in _SUM_TAGS.items()
-                  if all(os.path.exists(os.path.join(POL_DIR, f'{p}_{t}.npz'))
-                         for p in ('cr', 'lcdm')))
+                  if all(os.path.exists(os.path.join(POL_DIR, f'{p}_{t}.npz')) for p in need))
 
 
 def directions_ready(arm):
@@ -189,6 +199,28 @@ class Model3:
             b = lo[1] + (hi[1] - lo[1]) * rng.random()
             worst = max(worst, abs(float(self._bao_spl(a, b)[0, 0]) - self.bao_direct(a, b)[0]))
         return float(worst)
+
+    def bao_truncation(self, half_steps=6, n=21):
+        """over the tabulated box: how often the BORROWED bracket binds, and the worst chi^2 it adds
+
+        r7838 established that r7836's `(120, 170)` bracket BINDS over about a sixth of the box, so
+        the ruler was pinned to an endpoint rather than marginalised.  The measurement is repeated
+        here on this arm's own ruler rather than carried across as a remembered number.
+        """
+        c = ARMS[self.arm]['centre']
+        lo, hi = self.RD_BORROWED
+        bound, worst, tot = 0, 0.0, 0
+        for a in np.linspace(c['H0'] - half_steps * R.STEP['H0'],
+                             c['H0'] + half_steps * R.STEP['H0'], n):
+            for b in np.linspace(c['OM'] - half_steps * R.STEP['OM'],
+                                 c['OM'] + half_steps * R.STEP['OM'], n):
+                free = self.bao_direct(float(a), float(b))
+                pin = self.bao_direct(float(a), float(b), bounds=self.RD_BORROWED)
+                tot += 1
+                if pin[1] <= lo + 1e-4 or pin[1] >= hi - 1e-4:
+                    bound += 1
+                    worst = max(worst, pin[0] - free[0])
+        return dict(points=tot, bound=bound, fraction=bound / float(tot), worst_chi2_added=worst)
 
     def chi2_bao(self, H0, OM):
         if self._bao_spl is None:
