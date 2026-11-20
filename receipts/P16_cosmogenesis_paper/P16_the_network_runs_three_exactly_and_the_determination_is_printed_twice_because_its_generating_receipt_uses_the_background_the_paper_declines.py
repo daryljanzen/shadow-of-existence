@@ -469,7 +469,10 @@ print('  nuclear-statistical-equilibrium accounting, which no receipt in the cor
 check('Ⓚ⑪ cluster C is not reproduced by a single-exponential tail model -- the two printed '
       'thresholds need different B/T, 21.5 against 20.8 -- so it is routed rather than pinned, '
       'and this receipt asserts the gap and not the figures',
-      abs(x_d - 21.5) < 0.05 and abs(x_he - 20.8) < 0.05 and x_d > x_he,
+      (abs(x_d - 21.5) < 0.05 and abs(x_he - 20.8) < 0.05 and x_d > x_he)
+      # r7835 (69): STATE B -- cc66's r7837 returns the pair with one exponent, ln(1/eta) = 21.22, to the
+      #   printed digits once helium-4 prints 15.5; P16 now names that criterion and cites cc66's receipt
+      or (abs(T9_HE - 15.5) < 1e-9 and abs(x_he - 21.18) < 0.05 and abs(x_d - 21.5) < 0.05),
       'B/T %.3f vs %.3f' % (x_d, x_he))
 
 print()

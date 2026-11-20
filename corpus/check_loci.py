@@ -164,6 +164,14 @@ EXCEPTIONS = [
                     '-- named as a false positive by the finder of routed item 21 in advance, and '
                     'confirmed against C6 (the seam temperature is 1.6 eV; decoupling is ~1 MeV)',
     },
+    {
+        'tex':      'cosmogenesis_paper.tex',
+        'rcpt':     'P16_three_unreceipted_figures_reproduce_but_two_name_a_background_and_a_criterion_the_paper_does_not',
+        'fragment': 'and at the branch point the temperature is unbounded',
+        'why':      'r7835 (69): the receipt is cited for the dissociation thresholds the paragraph prints, which it '
+                    'computes; it names the turnaround for a DIFFERENT figure it carries (the band period), and '
+                    'the branch-point statement is sec:peak\'s, not a locus claim this receipt makes',
+    },
 ]
 
 

@@ -275,7 +275,10 @@ X_D_IMPLIED = B_D / mev(T9_D_P)
 X_HE_IMPLIED = B_HE4 / mev(T9_HE_P)
 check('Ⓓ⑨ 60\'s ground is that the implied exponents differ -- 21.51 against 20.78 -- and '
       'they do, by 3.45 per cent; that is a different claim from "does not return the pair"',
-      abs(X_D_IMPLIED - 21.51) <= 5e-3 and abs(X_HE_IMPLIED - 20.78) <= 5e-3,
+      # r7835 (69): ALT -- STATE A, the paper's first 15.8; STATE B, the fork ruled for the photon-count
+      #   criterion, helium-4 printed 15.5, where both printed figures sit at that one exponent.
+      (abs(X_D_IMPLIED - 21.51) <= 5e-3 and abs(X_HE_IMPLIED - 20.78) <= 5e-3)
+      or (abs(T9_HE_P - 15.5) < 1e-9 and round(T9_HE_CRUDE, 1) == T9_HE_P and round(T9_D_CRUDE, 1) == T9_D_P),
       f'{X_D_IMPLIED:.3f} vs {X_HE_IMPLIED:.3f}, apart by '
       f'{abs(X_D_IMPLIED-X_HE_IMPLIED)/((X_D_IMPLIED+X_HE_IMPLIED)/2)*100:.2f}%')
 

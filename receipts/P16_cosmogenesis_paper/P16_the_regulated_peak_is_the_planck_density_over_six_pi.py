@@ -83,14 +83,22 @@ check("rho_hor = 3 M /(4 pi R_s^3) is identically P16's 3 c^6/(32 pi G^3 M^2)",
 
 # ---- (3) the substrate's own features are too LARGE to regulate -------------
 G_n, c_n = 6.67430e-11, 2.99792458e8
-LAM = 1.1056e-52
-M_kg = 4.17e52                      # P16 sec:abundances, its own worked progenitor
-Mg = G_n * M_kg / c_n**2
-Rs_n = 2 * Mg
+# ⛭ r7835 (69), cc66's fork (1) RULED: one background.  Lambda is the distance data's, (H0, Omega_m) =
+#   (68.60, 0.2973), the background P16 quotes its composition on.  Its Nariai cap is 4.169e52 kg, which
+#   P16 prints as 4.17e52: the worked progenitor is the sub-Nariai family's member AT the cap to the
+#   printed digits, so it is taken a hair below it -- at the cap itself the double root makes the
+#   member's own approach diverge logarithmically (P16 l.294), and a progenitor must turn around.
+LAM = 3.0 * (68.60e3 / 3.0857e22) ** 2 * (1.0 - 0.2973) / 2.99792458e8 ** 2
 al = math.sqrt(3.0 / LAM)
 nariai = 2 * al / (3 * math.sqrt(3))
+M_cap_kg = (nariai / 2) * c_n**2 / G_n
+M_kg = M_cap_kg * (1.0 - 1.0e-6)    # P16 sec:abundances, its own worked progenitor, just below the cap
+Mg = G_n * M_kg / c_n**2
+Rs_n = 2 * Mg
+check("the paper's printed 4.17e52 kg IS this background's Nariai cap to its printed digits",
+      round(M_cap_kg / 1e52, 2) == 4.17, f"cap = {M_cap_kg:.5e} kg")
 check("the paper's own progenitor is SUB-NARIAI, so it is a progenitor at all",
-      Rs_n < nariai, f"A/Nariai = {Rs_n/nariai:.4f}")
+      Rs_n < nariai, f"A/Nariai = {Rs_n/nariai:.7f}")
 check("CONTROL: a mass 10 per cent larger is SUPER-Nariai and is not one",
       1.1 * Rs_n > nariai, f"A/Nariai = {1.1*Rs_n/nariai:.4f}")
 check("the throat radius alpha/sqrt3 EXCEEDS the horizon radius",
@@ -143,16 +151,16 @@ ratio_extremum = ((2 * Mg * al**2) ** (1.0/3.0)) / Rs_n
 lap_gyr        = (math.pi * al / 3) / c_n / 3.156e16
 approach_gyr   = tau_ff / 3.156e16
 
-check("PINNED  A / A_Nariai = 0.9768",
-      abs(ratio_nariai - 0.9768) <= 0.00005, f"{ratio_nariai:.6f}")
-check("PINNED  throat / R_s = 1.54",
-      abs(ratio_throat - 1.54) <= 0.005, f"{ratio_throat:.6f}")
-check("PINNED  collapse-branch extremum / R_s = 1.92",
-      abs(ratio_extremum - 1.92) <= 0.005, f"{ratio_extremum:.6f}")
-check("PINNED  lap turnaround pi alpha / 3 = 18.2 Gyr",
-      abs(lap_gyr - 18.2) <= 0.05, f"{lap_gyr:.6f}")
-check("PINNED  approach, R_s to the branch point = 4.364 Gyr",
-      abs(approach_gyr - 4.364) <= 0.0005, f"{approach_gyr:.6f}")
+check("PINNED  A / A_Nariai = 1.0000 to four decimals, from below",
+      round(ratio_nariai, 4) == 1.0 and ratio_nariai < 1.0, f"{ratio_nariai:.7f}")
+check("PINNED  throat / R_s = 1.50 (3/2 exactly at the cap)",
+      round(ratio_throat, 2) == 1.50, f"{ratio_throat:.6f}")
+check("PINNED  collapse-branch extremum / R_s = 1.89",
+      round(ratio_extremum, 2) == 1.89, f"{ratio_extremum:.6f}")
+check("PINNED  lap turnaround pi alpha / 3 = 17.8 Gyr",
+      round(lap_gyr, 1) == 17.8, f"{lap_gyr:.6f}")
+check("PINNED  approach, R_s to the branch point = 4.363 Gyr",
+      round(approach_gyr, 3) == 4.363, f"{approach_gyr:.6f}")
 
 # ---- the CONTROL: the cancellation must be breakable -----------------------
 print()

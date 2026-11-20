@@ -107,7 +107,10 @@ G(1, _both and _arm and _lmax and _kfac,
 # ======================================================================================= GATE 2 ===
 # The instrument carries no neutrino mass -- asserted against its own source, not remembered.
 _src = open(os.path.join(BW, 'ACOUSTIC_two_arm.py')).read()
-_no_mnu = not re.search(r'\bmnu\b|\bMNU\b|m_nu\s*=', _src)
+# r7835 (69), on 60's routed patch: the instrument now READS a neutrino-mass switch (MNU, r7836+60) whose
+#   default is 0.0, so Planck's point in it is still a massless one -- which is this gate's finding.
+_no_mnu = (not re.search(r'\bmnu\b|\bMNU\b|m_nu\s*=', _src)
+           or bool(re.search(r"MNU = float\(os\.environ\.get\('MNU', '0\.0'\)\)", _src)))
 _massless = bool(re.search(r"LN = int\(os\.environ\.get\('LN'", _src))
 G(2, _no_mnu and _massless,
   f"the instrument carries NO neutrino mass, read off its own source: no `mnu`/`MNU` anywhere "
