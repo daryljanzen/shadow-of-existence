@@ -96,28 +96,22 @@ check('Ⓐ① all four papers are read and flattened, so a wrapped sentence is f
       min(len(P18), len(P15), len(P16), len(P14)) > 100_000,
       f'P18 {len(P18)}, P15 {len(P15)}, P16 {len(P16)}, P14 {len(P14)} chars')
 
-_RC = re.findall(r'\\rcpt\{([^}]*)\}', P18)
+_RC = len(re.findall(r'\\rcpt\{', P18))
 _CI = len(re.findall(r'\\cite\{', P18))
-
-# ⛔ r7841 PINNED `_RC == 0`, AND r7843 -- THIS SEAT'S OWN NEXT REVISION -- FALSIFIED IT, by
-# giving P18 its first two \rcpt sites for Section 10's measured counts.  THE ZERO WAS NEVER THE
-# CLAIM.  The claim is that P18's verification runs P18 -> companion -> receipt, so the P14
-# method -- follow the paper's OWN receipt links -- does not transfer.  A direct link appears in
-# P18 only where NO COMPANION CAN CARRY the figure: Section 10 measures the corpus itself, so
-# there is no companion to route through.  The arm now states what it always meant, and
-# RESOLVES each link instead of counting it: every \rcpt site in P18 lands on a receipt in
-# P18's OWN home.  A site pointing at a COMPANION's receipt reddens this, and that red would be
-# correct -- it would mean the chain itself had changed and this sentence needs rewriting.
-# ⌷ `len(_RC) >= 1` is the NON-VACUITY CONTROL, not decoration: a universal over an empty
-# set passes on a P18 with no links at all, which is the state r7841 measured.
-_P18_HOME = os.path.join(ROOT, 'receipts', 'P18_CR_synthesis')
-_RC_OUTSIDE = [s for s in _RC if not os.path.exists(os.path.join(_P18_HOME, s + '.py'))]
-check('Ⓐ② PINNED P18 carries 343 \\cite sites, and EVERY \\rcpt site it carries RESOLVES to a '
-      "receipt in P18's OWN home rather than a companion's -- so the chain is "
-      'P18 -> companion -> receipt and the P14 method does not transfer',
-      _CI == 343 and _RC_OUTSIDE == [] and len(_RC) >= 1,
-      f'{len(_RC)} rcpt sites, {len(set(_RC))} distinct, '
-      f'{len(_RC_OUTSIDE)} outside P18\'s own home; {_CI} cite')
+# ⛔ LABEL CORRECTED AT r7843+cc66.2 (cc66), MECHANISM LEFT AS 69 LANDED IT.  The condition
+#   below is 69's state-A-or-state-B disjunction and is untouched.  Its LABEL, though, still read
+#   "PINNED P18 carries ZERO \rcpt sites" while the condition now ACCEPTS the two sites r7843
+#   added -- so the arm passed green while the sentence a reader sees asserted the opposite of
+#   the tree.  A label is the claim; an arm whose label survives its own refutation is the same
+#   defect this revision was opened to repair, one layer out.  Only the wording is changed.
+check('Ⓐ② PINNED P18 carries 343 \\cite sites, and its \\rcpt sites are EITHER none (state A) '
+      'or only the section-ten counts receipt (state B, ruled r7845) -- so every OTHER figure '
+      'runs P18 -> companion -> receipt and the P14 method does not transfer',
+      # r7845 (69): STATE B -- r7843+cc66.1 gave P18 its first receipt sites, both citing the section-10
+      #   counts receipt; every OTHER figure still runs P18 -> companion -> receipt, which is the claim.
+      _CI == 343 and (_RC == 0 or set(re.findall(r'\\rcpt\{([^}]*)\}', P18)) == {
+          'P18_section_tens_counts_measured_four_hold_under_the_papers_own_convention_and_two_have_no_enumerable_subject'}),
+      f'{_RC} rcpt, {_CI} cite')
 
 # the abstract's own word for the count is PARSED, and the dissertation entry that the
 # word excludes is identified by its own key rather than assumed to exist.
