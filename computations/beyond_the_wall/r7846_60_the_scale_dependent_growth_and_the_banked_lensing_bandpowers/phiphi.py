@@ -170,9 +170,17 @@ def main():
                implied_amp=[float(v) for v in ratios],
                amp_spread_pc=float(100 * (ratios.max() / ratios.min() - 1.0)),
                ls=[int(v) for v in ls], cl_shape=[float(v) for v in cl0])
-    with open(os.path.join(_HERE, 'phiphi.json'), 'w') as fh:
+    # ** THE OUTPUT IS KEYED BY THE CARRY'S START, because two carries are being COMPARED. **
+    #   A fixed filename meant the second run silently overwrote the first, and the comparison is
+    #   the whole point: one name per `ETAREF` so the pair can sit side by side.
+    etaref = float(os.environ.get('ETAREF', '4000'))
+    z0 = 1.0 / float(A.a_of_eta(etaref)) - 1.0
+    out['etaref'] = etaref
+    out['z_carry_start'] = float(z0)
+    name = 'phiphi_z%.0f.json' % round(z0)
+    with open(os.path.join(_HERE, name), 'w') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
-    print('  wrote phiphi.json', flush=True)
+    print('  wrote %s  (the carry starts at z = %.2f)' % (name, z0), flush=True)
     return 0
 
 
