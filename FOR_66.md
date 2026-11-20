@@ -15,6 +15,71 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7843+cc66.2 — ⚠ **THIS REVISION FALSIFIED AN ARM OF `r7841`, THE REVISION YOU MERGED AS #835 — AND THE ZERO IT PINNED WAS NEVER THE CLAIM**
+
+**Not a new order's result. A defect in my own work, found by CI's tolerance tier and fixed on
+the branch.** Reporting it because it lands on a receipt that is now *in `main`*.
+
+`r7841`'s Ⓐ② pinned, and you merged:
+
+> Ⓐ② PINNED P18 carries **ZERO** `\rcpt` sites and 343 `\cite` sites, which is why the chain is
+> P18 → companion → receipt and the P14 method does not transfer
+
+True when written. Then `r7843` — this revision, same seat — gave P18 its **first two `\rcpt`
+sites**, for §10's measured counts. The arm went red.
+
+**⒜⒝⒞ before any "not mine", and all three say mine:** ⒜ the assertion's own text is false
+against my diff — 2 sites, both mine; ⒝ on a pristine `origin/main` worktree P18 carries 0
+`\rcpt` and 343 `\cite`, so the arm is **green on main** — this is my PR's red, not the base's;
+⒞ the receipt file is byte-identical to `main`'s, so there is **nothing anywhere to port**.
+
+⌗ **The red surfaced as `scoped — the tolerance perturbation`, and its verdict names a second
+thing:** `NOT A SWEEP -- nothing flagged, a receipt unmeasured -- build A PARTIAL; build B
+PARTIAL; build C PARTIAL`. The perturbation could not be *measured* at all, because the receipt
+was already failing underneath it. A receipt that is red does not merely fail its own claim — it
+**blinds the tier that probes it**, and all three probe builds report PARTIAL rather than a
+verdict.
+
+### The finding worth keeping
+
+**When a pin reads ZERO, the question is whether the zero is the CLAIM or merely today's
+STATE.** Ⓐ②'s claim was structural: P18 verifies *through its companions*, so you cannot audit
+it by following its own receipt links. The zero was a **proxy** for that structure — and a proxy
+the claim's own author can invalidate by ordinary work is the wrong instrument.
+
+⇒ The repair does not re-measure the count. It **RESOLVES** each `\rcpt` site against P18's own
+receipt home, so the arm states what it always meant — *no site points at a companion's
+receipt* — and stays true however many of P18's own measurements come to cite their receipts. A
+site that *did* point at a companion reddens it, and **that red would be correct**: the chain
+itself would have changed. Perturbed three ways and it bites on all three (point a link at
+`P15_expansion_law`; delete both links, which trips the non-vacuity floor; add one `\cite`).
+
+⌗ Same shape as `r7843+cc66.1`'s ⓶ at one more remove. There I pinned an equality to a value
+*the corpus* can move; here to a value *I myself* was about to move.
+
+### Three more, all mine, none of them what the gate named
+
+Found by running `check_prose_pins`, which I had not run:
+
+1. **Three STALE baseline rows** — `N_ALL == 202`, `N_NO_REMARK == 118`, `len(STRICT) == 56`:
+   expressions I deleted in the previous push while leaving their adjudications behind. The
+   gate's own words: *"a fixed site left in the baseline is a silent permission to regress
+   there"* (`r7069`). **Removing an assertion is not finished until its baseline row goes with
+   it.**
+2. **`N_NO_REMARK < 150` was never adjudicated** — the inequality that *replaced* one of those
+   equalities, minted and left unverdicted.
+3. **My own written reason was false.** The `prose_pin_baseline` row beside `_CI == 343` still
+   read *"and ZERO `\rcpt` sites"*. The key held, so no gate keyed on it moved — but the
+   justification I wrote beside my own repair asserted the thing this revision falsified. The
+   key is untouched and only the false half is gone. **A reason beside a repair is a claim that
+   can be false on its own.**
+
+`check_prose_pins` green after. The r7841 receipt's 75 arms all pass; `check_exact_counts`,
+`check_unread_figure`, `check_figures_pinned` green, measured after the fix.
+
+**Nothing here needs a ruling from you.** It is on the branch and in the PR; I am flagging it
+only because the arm it repairs is in `main`, under your merge.
+
 ## r7843+cc66.1 — §10's counts: FOUR ARE RIGHT, TWO EXACTLY, and two have no enumerable subject
 
 **Your order `r7843`, worked.** And the first thing to say is that **`r7841+cc66.1` was wrong

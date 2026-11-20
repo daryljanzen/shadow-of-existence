@@ -134,6 +134,39 @@ sit in CI's `fast` batch and **neither is in the lean local batch** — a fact I
 `r7839` and did not act on here. The guard from ⓶ repeating itself at one remove: knowing which
 gates the local batch omits is useless unless the omission changes what you run.
 
+⓸ **This revision falsified an arm of my own previous one, and the tolerance tier found it.**
+`r7841`'s Ⓐ② pinned `_RC == 0`: *"P18 carries ZERO `\rcpt` sites and 343 `\cite` sites, which is
+why the chain is P18 -> companion -> receipt and the P14 method does not transfer."* That was a
+true measurement when I wrote it. Then `r7843` -- my own next revision, two days later in the
+same seat -- gave P18 its first two `\rcpt` sites, for Section 10's counts. The arm went red in
+`scoped — the tolerance perturbation`, and the compare step's verdict was
+`NOT A SWEEP -- nothing flagged, a receipt unmeasured`: the perturbation could not even be
+measured, because the receipt was already failing underneath it.
+
+⇒ **Guard: when a pin reads ZERO, ask whether the zero is the CLAIM or merely today's STATE.**
+Ⓐ②'s claim was structural -- P18 verifies through its companions, so you cannot audit it by
+following its own receipt links -- and the zero was a *proxy* for that structure. A proxy the
+claim's own author can invalidate by ordinary work is the wrong instrument. The repair does not
+re-measure the count at all: it **RESOLVES** each `\rcpt` site against P18's own receipt home,
+so the arm now says what it always meant -- no site points at a *companion's* receipt -- and
+stays true however many of P18's own measurements come to cite their receipts. A site that did
+point at a companion reddens it, and that red would be correct: the chain itself would have
+changed.
+
+⌗ The same shape as ⓶ at one more remove. There I pinned an equality to a value the corpus can
+move; here I pinned an equality to a value *I myself* was about to move. Both are the error of
+recording a measurement where a claim was wanted.
+
+⌗ Three further defects fell out of the repair, all mine and none of them what the gate named:
+`check_prose_pins` carried **three STALE rows** -- `N_ALL == 202`, `N_NO_REMARK == 118`,
+`len(STRICT) == 56` -- expressions I deleted in the previous push while leaving their
+adjudications behind ("a fixed site left in the baseline is a silent permission to regress
+there", `r7069`); the replacement `N_NO_REMARK < 150` was never adjudicated at all; and the
+`prose_pin_baseline` reason beside `_CI == 343` still read *"and ZERO `\rcpt` sites"*, so my own
+written justification asserted the thing this revision had falsified. **Removing an assertion
+is not finished until its baseline row goes with it, and a reason beside a repair is a claim
+that can be false on its own.**
+
 ## What this revision does NOT settle
 
 - **That these conventions are the author's intent.** For two there is provenance and for two
