@@ -232,6 +232,16 @@ def main():
         mod = M.Model(arm)
         print(f'\n  {arm}: {mod.nb} bins, sum interpolated on [{mod.s_lo:+.2f}, {mod.s_hi:+.2f}] eV'
               f'   (model built in {time.time() - t0:.1f} s)', flush=True)
+        mod._build_bao_spline()
+        err = mod.bao_error(rng, 200)
+        trunc = mod.bao_truncation()
+        print('    BAO tabulated: worst |spline - honest| = %.3e over 200 draws' % err, flush=True)
+        print('    the borrowed ruler bracket would bind at %d of %d box points (%.1f per cent), '
+              'adding up to %.3f in chi2' % (trunc['bound'], trunc['points'],
+                                             100.0 * trunc['fraction'],
+                                             trunc['worst_chi2_added']), flush=True)
+        assert err < 1e-3, 'the tabulated BAO term is not accurate enough to sample on'
+        all_res[f'{arm}_bao'] = dict(spline_worst_error=err, truncation=trunc)
         bf0 = best_fit(mod, False)
         print('    unbounded minimum chi2 = %.3f at Sum = %+.4f eV' % (bf0.fun, bf0.x[4]), flush=True)
         scale = np.array([0.25, 0.25, 0.25, 0.25, 0.02])

@@ -33,7 +33,7 @@ import sys
 
 import numpy as np
 import scipy.linalg
-from scipy.interpolate import CubicSpline
+from scipy.interpolate import CubicSpline, RectBivariateSpline
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BW = os.path.dirname(HERE)
@@ -149,6 +149,7 @@ class Model:
         self.d = CS.X_DATA[self.ok]
         self.sig = np.sqrt(np.diag(CS.COV_TT[np.ix_(self.ok, self.ok)]))
         self._bao = {}
+        self._bao_spl = None
 
     def binned(self, x4, sum_ev):
         s = float(np.clip(sum_ev, self.s_lo, self.s_hi))
@@ -172,14 +173,98 @@ class Model:
                     WB=c['WB'] + R.STEP['WB'] * x4[2], NS=c['NS'] + R.STEP['NS'] * x4[3],
                     MNU=float(sum_ev))
 
-    def chi2_bao(self, H0, OM):
-        key = (round(H0, 4), round(OM, 5))
+    RD_BOUNDS = (100.0, 220.0)
+    RD_BORROWED = (120.0, 170.0)      # what `r7836`'s fit used
+
+    def bao_direct(self, H0, OM, bounds=None):
+        """`distances.chi2_bao` on this arm's own ruler with `r_d` MINIMISED -- the honest call,
+        about 5 ms, which is 48 times the cost of the whole CMB term.
+
+        ** THE RULER'S BRACKET IS WIDENED, AND THAT IS A FINDING RATHER THAN A SETTING. **
+        `r7836` minimised `r_d` inside `(120, 170)`.  Over the region this fit explores the
+        minimising `r_d` LEAVES that interval -- it runs from about 120 at the high-`H0` edge to
+        about 188 at the low one -- so across much of the region the bound was binding and the
+        ruler was NOT being marginalised but pinned to an endpoint.  A bound that binds also puts
+        a KINK in the surface, which is how this was noticed: an interpolation of the term that
+        should have been smooth to a thousandth came out wrong by eleven.  The bracket here is
+        `(100, 220)`, inside which the minimum is interior everywhere in the tabulated box, and
+        `bao_truncation` reports what fraction of that box the borrowed bracket would have
+        truncated.
+        """
+        b = self.RD_BOUNDS if bounds is None else tuple(bounds)
+        key = (round(H0, 6), round(OM, 7), b)
         if key not in self._bao:
             E = ARMS[self.arm]['E']
-            r = minimize_scalar(lambda rd: DI.chi2_bao(H0, OM, rd, E), bounds=(120, 170),
-                                method='bounded')
+            r = minimize_scalar(lambda rd: DI.chi2_bao(H0, OM, rd, E), bounds=b, method='bounded')
             self._bao[key] = (float(r.fun), float(r.x))
         return self._bao[key]
+
+    def bao_truncation(self, half_steps=6, n=21):
+        """over the tabulated box: the fraction of points where the BORROWED bracket binds, and the
+        largest chi^2 it adds by binding."""
+        c = ARMS[self.arm]['centre']
+        lo, hi = self.RD_BORROWED
+        bound, worst, tot = 0, 0.0, 0
+        for a in np.linspace(c['H0'] - half_steps * R.STEP['H0'],
+                             c['H0'] + half_steps * R.STEP['H0'], n):
+            for b in np.linspace(c['OM'] - half_steps * R.STEP['OM'],
+                                 c['OM'] + half_steps * R.STEP['OM'], n):
+                free = self.bao_direct(float(a), float(b))
+                pin = self.bao_direct(float(a), float(b), bounds=self.RD_BORROWED)
+                tot += 1
+                if pin[1] <= lo + 1e-4 or pin[1] >= hi - 1e-4:
+                    bound += 1
+                    worst = max(worst, pin[0] - free[0])
+        return dict(points=tot, bound=bound, fraction=bound / float(tot), worst_chi2_added=worst)
+
+    def _build_bao_spline(self, half_steps=6, n_h0=17, n_om=401):
+        """the SAME minimised BAO term on a grid in (H0, Omega_m), splined.
+
+        A sampler needs a million evaluations and the honest call costs 5 ms, so the term is
+        tabulated once and interpolated.  The grid is deliberately ANISOTROPIC, and that is a
+        measured fact about the term rather than a convenience: with `r_d` minimised, the control's
+        BAO chi^2 is EXACTLY independent of `H0` -- identical to eight decimals across fourteen
+        units of it, because the ruler rescales to absorb it -- and the arm of record's varies by
+        only about `0.03` in chi^2 over the same span, while in `Omega_m` it moves by hundreds.  So
+        the BAO term is effectively a function of `Omega_m` alone, which is also WHY the sum is so
+        nearly degenerate with `Omega_m` in this fit: the only thing paying for a moved total is
+        this one-dimensional term.  THE SUBSTITUTION IS CHECKED, not assumed: `bao_error`
+        reports the largest disagreement against the honest call over points drawn inside the
+        sampled region, and the sampler refuses to run if it is not far below the chi^2 resolution
+        anything here is read at.
+        """
+        c = ARMS[self.arm]['centre']
+        h0 = np.linspace(c['H0'] - half_steps * R.STEP['H0'], c['H0'] + half_steps * R.STEP['H0'],
+                         n_h0)
+        om = np.linspace(c['OM'] - half_steps * R.STEP['OM'], c['OM'] + half_steps * R.STEP['OM'],
+                         n_om)
+        Z = np.empty((n_h0, n_om))
+        for i, a in enumerate(h0):
+            for j, b in enumerate(om):
+                Z[i, j] = self.bao_direct(float(a), float(b))[0]
+        self._bao_lo = (float(h0[0]), float(om[0]))
+        self._bao_hi = (float(h0[-1]), float(om[-1]))
+        self._bao_spl = RectBivariateSpline(h0, om, Z, kx=3, ky=3, s=0)
+
+    def bao_error(self, rng, m=200):
+        """the largest |spline - honest| over m points drawn inside the tabulated region."""
+        if self._bao_spl is None:
+            self._build_bao_spline()
+        lo, hi = self._bao_lo, self._bao_hi
+        worst = 0.0
+        for _ in range(m):
+            a = lo[0] + (hi[0] - lo[0]) * rng.random()
+            b = lo[1] + (hi[1] - lo[1]) * rng.random()
+            worst = max(worst, abs(float(self._bao_spl(a, b)[0, 0]) - self.bao_direct(a, b)[0]))
+        return float(worst)
+
+    def chi2_bao(self, H0, OM):
+        if self._bao_spl is None:
+            self._build_bao_spline()
+        lo, hi = self._bao_lo, self._bao_hi
+        if not (lo[0] <= H0 <= hi[0] and lo[1] <= OM <= hi[1]):
+            return self.bao_direct(H0, OM)
+        return (float(self._bao_spl(H0, OM)[0, 0]), float('nan'))
 
     def chi2(self, x5, bao=True):
         x4, s = x5[:4], float(x5[4])
