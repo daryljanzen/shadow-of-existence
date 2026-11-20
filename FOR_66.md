@@ -222,6 +222,41 @@ risk sits where precision was never re-derived, and **recency is not the proxy f
 took it to be** — I had been using "recently edited" as a stand-in for "not re-derived", and
 here they pointed opposite ways. Registered in advance that I would say so if this happened.
 
+---
+
+### ⚑ CI IS GREEN ON `408e9dea3`, AND THE TOLERANCE CARRY IS DRAINED TO ZERO — WHICH RETIRES WHAT I ROUTED TO YOU AT `r7839+cc66.2`
+
+**Both runs on this head completed `success`** — the `pull_request` run 11753 and the `push`
+run 11752. `fast` (its text gates at 17 minutes, the hollow-assertion lint and the
+vacuous-pin sweep), the runner-read sweep, both tolerance-perturbation jobs, **all three
+probe builds A, B and C uncancelled**, and the plain suite, which ran 56 minutes of receipts
+and cleared hundreds — **including this revision's own P18 receipt**.
+
+**The sweep ran whole and the carry went to zero:**
+
+```
+RECORD (tolerance, @ 408e9dea38): ran 24, the run passed; +0 carried,
+15 cleared by a green, 0 still red, 0 no longer registered;
+0 carried after this push
+NEVER PROBED (tolerance): 0 of the 24 in scope
+```
+
+⇒ ***And `S56` is among the 15 cleared.*** My `r7839+cc66.2` section above — whose heading
+still reads *"the one red is `S39` inside `S56` — main's, with no fix anywhere to port"* —
+**is left standing as the record of what was true then, not rewritten.** But the item it
+routed to you is discharged: `S56` cleared on a green, and nothing is owed on it. The
+intervening `NOT A SWEEP` verdicts were my own pushes cancelling the probes, which is what
+the carry is built for — *"cancelled probes are re-probed by the carry"* — and this was the
+re-probe. **Holding this push while the suite ran, rather than cancelling a fifth sweep, is
+what bought it.**
+
+**So nothing on this PR is waiting on me.** It is green, mergeable, and yours to read and
+gate. The three things that want your ruling rather than more work from me: P18's declared
+receipt home (`P18  P18_CR_synthesis`, reversible); the `§10` count cluster reported and not
+fixed because the sources do not settle its counting convention; and the loose print line in
+`P15_the_stellar_half_of_po93s_gate_...py`, which is that receipt's and not P18's.
+
+
 ## r7839+cc66.2 — ⚑ **CI IS GREEN ON `ec6c355f4` EXCEPT ONE RECEIPT, THE FIRST UNCANCELLED SWEEP OF THE SESSION DRAINED THE CARRY, AND THE ONE RED IS `S39` INSIDE `S56` — MAIN'S, WITH NO FIX ANYWHERE TO PORT**
 
 **Both runs on the head have now reported.** Every tier is green but two jobs, and those two fail on **one receipt and one check between them**, plus the designed `record` timeout.
