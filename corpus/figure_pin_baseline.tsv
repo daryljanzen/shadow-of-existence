@@ -896,7 +896,6 @@ APPENDIX	P16	P16_Yp_freezeout	0.243	1
 APPENDIX	P16	P16_Yp_freezeout	0.247	1
 APPENDIX	P16	P16_Yp_freezeout	0.2506	2
 APPENDIX	P16	P16_cooling_leg_reduction	0.500	1
-APPENDIX	P16	P16_every_mode_is_frozen_at_the_crossing	0.065	1
 APPENDIX	P16	P16_freezeout_trev_toy	1.00	1
 APPENDIX	P16	P16_recollapse_is_the_nariai_threshold	0.074	1
 APPENDIX	P16	P16_the_interior_to_observed_mode_map	2.750	1
@@ -1325,7 +1324,6 @@ PROSE	CR_cosmology.tex	R1_the_correction_stopped_at_the_sentence_and_the_number_
 PROSE	CR_framework.tex	P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there	1.299	1
 PROSE	CR_framework.tex	P15_the_segments_conformal_length_is_the_closed_form_of_the_papers_own_integral_and_the_two_damping_rates_differ_by_the_sound_speed	3.32	1
 PROSE	CR_framework.tex	P16_every_mode_is_frozen_at_the_crossing	0.02	1
-PROSE	CR_framework.tex	P16_every_mode_is_frozen_at_the_crossing	0.065	1
 PROSE	CR_framework.tex	P16_every_mode_is_frozen_at_the_crossing	204.6	1
 PROSE	SdS-slicing-curve_v2.tex	P03_which_mass_sets_the_hubble_eddington_radius	1.85	1
 PROSE	cosmogenesis_paper.tex	P03_acceleration_is_slice_curvature	0.307	1

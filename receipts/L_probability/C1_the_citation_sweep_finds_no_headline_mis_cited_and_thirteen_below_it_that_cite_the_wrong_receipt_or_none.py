@@ -300,7 +300,11 @@ HEAD = [('P16_recollapse_is_the_nariai_threshold', 'EXACTLY THE NARIAI THRESHOLD
          'EXCLUDED BY A SYMMETRY'),
         ('P14_the_twist_conjugates_T_it_does_not_project_it', 'PERMITS the 2+1+1 but does not SELECT'),
         ('P14_quark_lepton_frontier', 'WHAT IT DOES NOT LAND: the count'),
-        ('C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone', 'GENERIC TO CUBICS')]
+        ('C1_the_weyl_closure_is_generic_to_cubics_and_the_match_is_D3_alone', 'GENERIC TO CUBICS'),
+        # r7833 (69), read by hand: P16 sec:verdict cites it for the two measured values printed beside
+        #   the -0.5 and +0.5 sigma, and its arm H reproduces both sigmas from those values
+        ('P16_the_network_runs_three_exactly_and_the_determination_is_printed_twice_because_its_generating_receipt_uses_the_background_the_paper_declines',
+         'P16 now prints both measured values')]
 for name, phrase in HEAD:
     t = open(SRC[name], encoding='utf-8', errors='replace').read()
     check(f"(i) headline: `{name[:62]}` states its result", phrase in ' '.join(t.split()), phrase)
@@ -314,6 +318,7 @@ for name, phrase in HEAD:
 #   is gone).  Either way the receipt fails and names it, instead of passing over the change.
 HEAD_READ = sorted([
     ('cosmogenesis_paper.tex', 'P16_recollapse_is_the_nariai_threshold'),
+    ('cosmogenesis_paper.tex', 'P16_the_network_runs_three_exactly_and_the_determination_is_printed_twice_because_its_generating_receipt_uses_the_background_the_paper_declines'),
     ('cosmogenesis_paper.tex', 'P16_theory_error_and_likelihood'),
     ('geometric_core_paper.tex', 'P17_no_second_scale_on_either_face'),
     ('geometric_core_paper.tex', 'Q3_cayley_klein'),

@@ -199,6 +199,8 @@ head("D.  THE PRICE ON `$A_s$`, WHICH IS THE PAPER'S OWN THREE PER CENT DOUBLED 
 
 _THREE = (r"within three per cent of the frozen value $\Psi_i/2$ the free oscillator carries at every "
           r"wavenumber")
+_NOW = (r"$3.3$ per cent below the frozen value $\Psi_i/2$ the free oscillator carries at every wavenumber, "
+        r"and $6.5$ per cent below it in the power the acoustic heights carry")
 R_PSI = mp.mpf('0.4835') / mp.mpf('0.5')
 R_SPEC = R_PSI ** 2
 FACT = mp.mpf('0.4835') ** 2
@@ -210,7 +212,10 @@ gate("Ⓓ① THE COMPARISON THE PAPER MAKES IS ON THE POTENTIAL AND THE ONE THAT
      "SQUARE: `3.30` per cent becomes **`6.49` per cent**, and the factor `$A_s$` picks up is "
      "`$0.4835^2=0.23377$`.  ⇒ *That doubling is the whole of what the route costs, and it is a number "
      "rather than a direction*",
-     b15.count(_THREE) == 1 and abs(100 * (1 - R_PSI) - mp.mpf('3.30')) < mp.mpf('0.01')
+     # r7831 (69): ALT -- the paper's comparison as first printed ("within three per cent"), or as
+     #   restated on cc66's cold read, which prints both figures this gate derives (3.3 and 6.5).
+     (b15.count(_THREE) == 1 or (_NOW in b15))
+     and abs(100 * (1 - R_PSI) - mp.mpf('3.30')) < mp.mpf('0.01')
      and abs(100 * (1 - R_SPEC) - mp.mpf('6.49')) < mp.mpf('0.01')
      and abs(FACT - mp.mpf('0.233772')) < mp.mpf('1e-6'))
 

@@ -81,6 +81,10 @@ print(f"    {'':7s} {'computed':>12s} {'+/-theory':>11s} {'observed':>12s} {'+/-
 def tension(comp, sig_th, obs, sig_obs):
     return (comp-obs)/np.sqrt(sig_th**2+sig_obs**2)
 # D/H
+assert abs(OBS['Yp'][0] - 0.2453) < 0.00004 and abs(OBS['Yp'][1] - 0.0034) < 0.00004, \
+    "the measured helium value P16 now prints is not the one this receipt scores against"
+assert abs(OBS['DH'][0] * 1e5 - 2.527) < 0.0004 and abs(OBS['DH'][1] * 1e5 - 0.030) < 0.0004, \
+    "the measured deuterium value P16 now prints is not the one this receipt scores against"
 obs,sig_obs,_=OBS['DH']; th=DH*sD
 tD=tension(DH,th,obs,sig_obs)
 print(f"    {'D/H':7s} {DH:12.3e} {th:11.2e} {obs:12.3e} {sig_obs:10.2e} {tD:+8.1f}s")

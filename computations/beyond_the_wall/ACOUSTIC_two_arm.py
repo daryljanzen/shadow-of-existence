@@ -432,10 +432,32 @@ On_of = CubicSpline(eg, FNU * (OR / ag ** 4) / _rt)
 # REQUIRED by the photon hierarchy that follows: once the baryons have their own velocity they must
 # have their own density, or the continuity equation they satisfy is not theirs.
 OB = OMBH2 / (H0 / 100) ** 2
-OCDM = OM - OB
+# ** MNU: THE NEUTRINO MASS SUM, EXPOSED r7836+60 AT 69's ORDER (r7831's added clause, routed from
+#    72).  Until now this file carried MASSLESS neutrinos only: FNU is their share of Omega_r, the
+#    hierarchy at LN free-streams them, DNEFF moves their number -- and there was no mass knob at
+#    all, so "refit with the sum free" was not runnable. **
+# *The order states the treatment, and it is the TWO-LIMIT one: the species is RELATIVISTIC in the
+#  early rate and in the driving, and NONRELATIVISTIC in the late dust the distances see, with the
+#  geometric dust term's total -- which the epoch fixes -- carrying their late mass, so that
+#  omega_cb = Omega_m h^2 - omega_nu.*
+#   ⇒ ** WHERE IT ENTERS, AND WHERE IT MUST NOT. **  `OM` is the TOTAL and stays untouched: the two
+#     rate functions, `OL = 1 - OM`, the stack `_rt`, `D_M`, `r_s` and `l_A` all keep it, which is
+#     what "the dust term's total includes their late mass" MEANS.  What loses `omega_nu` is the
+#     CLUSTERING matter the perturbations see -- `OCDM` and the matter fraction in the Poisson
+#     source -- because a neutrino that is still relativistic at recombination does not cluster.
+#   ⌗ *Default 0.0 = byte-identical: ONU is then exactly zero and both lines below are the old ones.*
+# ⚠ ** THE APPROXIMATION IS NAMED RATHER THAN HIDDEN. **  With the total fixed, the species appears
+#   in `_rt` both as radiation (`FNU * OR / a^4`) and inside the dust total (`ONU / a^3`), so the
+#   background double-counts it by `ONU / a^3` while it is still relativistic.  That term is
+#   negligible against `OR / a^4` until `a ~ ONU / OR`, and the licence for the whole treatment is
+#   that the nonrelativistic transition falls far below recombination; r7836's receipt MEASURES both
+#   rather than asserting them, and reports the range the treatment is not licensed on.
+MNU = float(os.environ.get('MNU', '0.0'))         # sum of the neutrino masses, eV
+ONU = MNU / 93.14 / (H0 / 100) ** 2               # its late density parameter
+OCDM = OM - OB - ONU
 Ob_of = CubicSpline(eg, (OB / ag ** 3) / _rt)
 Oc_of = CubicSpline(eg, (OCDM / ag ** 3) / _rt)
-Om_of = CubicSpline(eg, (OM / ag ** 3) / _rt)
+Om_of = CubicSpline(eg, ((OM - ONU) / ag ** 3) / _rt)
 Rb_of = CubicSpline(eg, RB_REC * (ag / A_REC))
 a_of_eta = CubicSpline(eg, ag)
 eta_rec = float(np.interp(A_REC, ag, eg))
@@ -2098,6 +2120,11 @@ def main():
           f"eta_end = {ETA_END:.0f}")
     print(f"  D_M = {D_M:.0f} Mpc   r_s = {R_S:.2f} Mpc   l_A = pi D/r_s = {L_A:.1f}   "
           f"modes = {len(kk)}")
+    # ** r7836+60: the mass sum and what it splits, in the header, so the arm that checks the
+    #    separation is reachable at the REPORTING path and not only in the code (r6476's practice). **
+    print(f"  Sum m_nu = {MNU:.5f} eV   Omega_nu = {ONU:.7f}   omega_nu = {ONU * (H0 / 100) ** 2:.7f}"
+          f"   omega_m(total) = {OM * (H0 / 100) ** 2:.6f}   omega_cb = "
+          f"{(OM - ONU) * (H0 / 100) ** 2:.6f}", flush=True)
     # ** THE VISIBILITY PEAK AND ITS WIDTH, IN THE HEADER -- r6897+cc66.39, at node 66's request. **
     # *They are computed at module level on both arms and were printed only inside `los_spectrum`, so
     # on `HIER=1` -- the reporting path -- the two arms' widths had never been seen side by side.*
