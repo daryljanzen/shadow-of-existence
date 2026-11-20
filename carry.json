@@ -5087,6 +5087,28 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
     "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
    }
+  },
+  "tolerance": {
+   "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
+    "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
+   },
+   "receipts/P15_CR_cosmology/P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
+    "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
+   },
+   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
+    "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
+   },
+   "receipts/P15_CR_cosmology/P15_the_neutrino_count_is_free_to_move_and_absorbs_nothing_because_what_an_absorber_must_overlap_is_the_residual_the_tilt_leaves.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
+    "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
+   },
+   "receipts/P15_CR_cosmology/P15_the_po87_list_is_14_repoints_and_9_departures_and_the_control_at_plancks_own_point_turns_the_0_918_into_0_964.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44655679490",
+    "since": "8b1a8b04bba80718217d1db1d2f6a497134089a8"
+   }
   }
  }
 }
