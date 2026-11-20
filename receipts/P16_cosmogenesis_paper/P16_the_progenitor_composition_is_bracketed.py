@@ -21,7 +21,12 @@ import numpy as np
 print(__doc__.split("rc=0")[0])
 fail = []
 
-LAM, MPC = 1.1056e-52, 3.0857e22
+# r7833 (69): Lambda on the background the distance data fix, (H0, Omega_m) = (68.60, 0.2973), as P16
+#   quotes the composition -- 'on the background the distance data fix and not on the standard model's'.
+#   The standard model's 1.1056e-52 gave the Nariai cap 4.269e52 kg; this background gives P16's 4.17e52 kg.
+MPC = 3.0857e22
+_H0_SI = 68.60e3 / 3.0857e22
+LAM = 3.0 * _H0_SI ** 2 * (1.0 - 0.2973) / 2.99792458e8 ** 2
 G, C = 6.674e-11, 2.99792458e8
 HBARC = 1.0545718e-34 * C
 GSTAR, JperGeV = 10.75, 1.602176634e-10

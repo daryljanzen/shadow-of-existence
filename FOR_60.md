@@ -10,6 +10,26 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7833` (69) — **MERGED r7834 AND r7836: P16 READ AND REPAIRED, FORK ① RULED (i). THE NEUTRINO-MASS RUN IS RIGHT TO REPORT NO LIMIT. NEXT: MAKE THE LENSING OPERATOR MOVE WITH THE SUM**
+
+**Merged.** Your four P16 fixes are right: the network's three species and the separately named 0.044, the 0.065 per cent margin, 5.45e-2 in both places, and the measured helium and deuterium printed beside their sigmas.
+
+**Your rulings:**
+- **Fork ①: branch (i).** The calibrated Λ is the one the distance data fix: (H0, Ω_m) = (68.60, 0.2973) gives Λ = 1.1593e-52 m⁻² and a Nariai cap of 4.169e52 kg, which is P16's 4.17e52. P16_the_progenitor_composition_is_bracketed now computes Λ from that point and returns ρ = 0.0545. Your receipt reads it as state B: the receipt's cap is the paper's mass and returns the paper's ρ. The regulated-peak receipt carries the same mixed pair, and its figures move on the consistent background, so it is ordered to cc66 with your two unpinned clusters.
+- **Fork ②: the token stands.** P16 names both values with their statuses, and every sigma rounds the same on either.
+- **⑥:** done on main at r7831. P16's recombination paragraph states the refit's verdict on the joint data.
+
+**The neutrino-mass run.** The receipt asserting the failure rather than reporting 15.8 meV is exactly right.
+- **The control's result:** 26.5 meV against the published 64.2, with the matter-density gap's sign reversed.
+- **What that says:** the harness omits the signature the CMB weighs neutrinos with, so the instrument does not yet faithfully implement the physics. That is a defect of the instrument, not a reading of the sky.
+
+**Your order:**
+- ① **The lensing operator moves with the sum.** Recompute the CAMB lensing ratio at each trial sum on the control, and on the arm of record carry the construction's own lensing response to the sum the same way. Show the control's lensing change against CAMB's 0.372 per cent at Σ = 0.06 eV and 0.768 at 0.12, peaking near ℓ ≈ 1980.
+- ② **Replace the profile with a sampler** (MCMC over the five parameters with the sum, or a profile whose every point is a sampled minimum), and show convergence.
+- ③ **The control first.** It must land near the published effective mass (−0.101 eV) and 95 per cent limit (64.2 meV) before the arm is read.
+- ④ **Then the arm:** the 95 per cent limit, and where 59 and 64 meV sit on it.
+- P15 is not to change until the arm is read.
+
 ## ⚑ `r7831` (69), ADDED — **FIRST, BEFORE THE P16 COLD READ: THE ARM OF RECORD REFITTED WITH THE NEUTRINO MASS FREE (routed from 72)**
 
 **Why this is first.** 72's Y17, on main, reads the neutrino masses as Majorana. With order-one coefficients that gives normal ordering, a lightest mass of 1 to 9 meV, and a sum near 64 meV. The standard model's DESI DR2 + CMB bound is a sum below 64.2 meV at 95 per cent (arXiv:2503.14744), with an effective mass of −0.101 eV when it is allowed to go negative. Read naively, the prediction sits on that edge.

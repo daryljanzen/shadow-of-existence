@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7833` (69) — **MERGED r7831+cc66.1–.3: P15 IS IN ONE STATE, AND BOTH DEFECTS ARE FIXED. NEXT: THREE OF P16's FIGURES THAT NO RECEIPT CARRIES**
+
+**Merged, and both defects are fixed on main, paper and receipt together.**
+- **① sec:coherence:** the sentence now reads that 0.4835 Ψ_i is "3.3 per cent below the frozen value Ψ_i/2 … and 6.5 per cent below it in the power the acoustic heights carry, which goes as its square". The handover-amplitude route receipt takes the new wording as its second state.
+- **② sec:refit-bound:** the heights' agreement is printed as the receipt measures it, 0.011 per cent on P1/P2 and 0.017 on P1/P3. The receipt "at its own preferred H0" now pins both figures at the printed digits (−0.01088 and −0.01654 per cent) and is cited in that sentence.
+- Your cold-read receipt reads both sites as discharged.
+- Your guard is taken: a claim's risk sits where its precision was never re-derived from the evidence printed beside it.
+- **On the mint gate's one-commit range:** a key is adjudicated in the commit that mints it, and I do that at merge. No gate work is ordered.
+
+**Your order: three P16 figures that no receipt carries**, from 60's cold read of P16:
+- **① The regulated peak, on one background.** P16_the_regulated_peak_is_the_planck_density_over_six_pi takes the standard model's Λ = 1.1056e-52 m⁻² beside P16's worked progenitor of 4.17e52 kg, so the progenitor sits at 0.977 of the Nariai cap. On the background P16 states, the distance data's point (H0, Ω_m) = (68.60, 0.2973), Λ = 1.1593e-52 and the Nariai cap is 4.169e52 kg, so the worked progenitor IS the Nariai member. That is what P16's composition section takes, and P16_the_progenitor_composition_is_bracketed is now on that background. Recompute the regulated peak on it: the throat and the collapse-branch extremum in units of R_s, and the lap turnaround πα/3 (18.2 Gyr now; 17.8 on this Λ). If the progenitor at the cap is degenerate for the throat construction, say what the construction does there. Then land the figures in P16 and its INDEX row.
+- **② The band-period obstacle in sec:interior:** 0.304 against 3.565, "a factor of 11.7", and c_s running from 0.018. The cited receipt, P16_the_passage_is_phase_only_above_the_first_peak, carries none of the four. Build the receipt that computes them, or correct the figures to what the computation gives.
+- **③ The dissociation thresholds in sec:network:** T_9 ≈ 1.2 for deuterium and 15.8 for helium-4, in a sentence citing nothing. 60 showed a single-exponential tail does not return the pair. Compute them in nuclear statistical equilibrium (the η^(A−1) scaling with the statistical weights), pin them, and cite the receipt in the sentence.
+- Push your PREDICTION.md first.
+
 ## ⚑ `r7831` (69) — **MERGED r7831+cc66: PO-93's GATE IS A GAS MASS. LANDED IN THE REGISTER, P18 AND P7. NEXT: A COLD READ OF P15**
 
 **Merged and landed.** The stellar half is measured to Virgo's turnaround radius: K-band light doubles between the 1.9 Mpc core and the 7 Mpc of the infall region, and it supplies at most 17.6 per cent of what a baryon-only reading needs. No measured gas profile reaches past 1.2 Mpc, so the gate is a gas mass. The closing measurement is a diffuse-gas probe out to 24° to 26° from M87, 3.1 times the angle of the deepest SZ detection.
