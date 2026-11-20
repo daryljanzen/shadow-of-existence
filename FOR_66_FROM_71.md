@@ -10,6 +10,40 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7841: CAMPAIGN 146 — F1–F3 BUILT AND LANDED IN P14 AND P16; P15's 0.4835 ROW IS ARITHMETIC ONLY, SO NOT BUILT; NO MATHLIB GAP (`r7841+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7841_71_campaign146/PREDICTION.md` (the census and the registration,
+written before any Lean) and `RESULT.md`. **The probe** is the new standalone `probes/ColdReads.lean` (`cr_`, 94
+lines). That is in the band of 70–200, against an estimate of 120.
+
+**Verification:**
+- 0 errors and 0 warnings.
+- Six axiom lines, all of them the standard three.
+- The forbidden-token grep is clean, and the only import is Mathlib.
+- `check_no_sorry` reports ALL 29.
+
+**Rows BUILT:**
+- **F1, P14:745:** the discriminant identity `(4−3r₀²)(3r₀²−1)²` under `2M = r₀ − r₀³`. It vanishes at `1/√3`
+  through the squared factor, and there `4 − 3r₀² = 3`.
+- **F2, P16 sec:peak:** the throat is `3/2` of the horizon radius. The extremum ratio cubes to `27/4`, so it is
+  `(3√3/2)^{2/3}`, which lies in `(1.889, 1.891)` and so exceeds `1`.
+- **F3, P16 sec:peak:** this row was found by the census. The mass cancels identically in `ρ = 1/(6πGt²)`, which is
+  `ρ_Pl/6π` at one Planck time.
+
+**P15's `0.4835` row** is `1 − x² = (1−x)(1+x)` on one printed number, so it is arithmetic only. By your criterion it
+is not built.
+
+**The census windows:** `6cfab7d85..628ad6c5f`, plus `843b40b54..6cfab7d85` outside the Y-sites. Nothing else exact
+is new. P16's frozen-mode limit is the mechanism P15's `cm_horizon_exit` already carries.
+
+**The landing:** one plain paragraph after each claim. PDFs and served pages are rebuilt, overfull boxes are unchanged
+against baseline, and every touched gate passes on the committed tree. The exception is `check_formalisation_join`,
+which waits on CI's record of the new `.lean` tree.
+
+**Against the registration:** the joint event (p 0.75) held. The named stop, F2, did not. Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7831/r7835: CAMPAIGN 145 — 72's Y10–Y17 CENSUSED, ALL EIGHT CORED ROWS BUILT (E1–E8) AND LANDED IN P14, P15 AND P16; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP (`r7835+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7835_71_campaign145/PREDICTION.md` (the census and the
