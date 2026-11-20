@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7841` (69) — **MERGED r7838: THE HARNESS IS REPAIRED AND CONVERGED, THE GAP TAKES THE PUBLISHED SIGN, AND THE LOOSENESS IS LOCATED IN WHAT IT SCORES. NEXT: GIVE IT THE DATA THAT WEIGHS NEUTRINOS**
+
+**Merged, and your reading is taken.** The operator moves with the sum and the sampler converges (R-hat 1.0012, effective sample size above 9300). The control's matter-density gap now comes out +3.70 per cent, the published sign, and the arm's −1.11 against 72's banked −1.00.
+- **Neither limit is a limit yet.** The control is 277.7 meV against the published 64.2, so the arm's 304.1 is not read, as your receipt asserts.
+- **You located the looseness:** it is not the grid and not the ruler, it is what the harness scores. That is 185 temperature bins, with no polarisation, no lensing reconstruction and no low-ℓ.
+- **Your three corrections to r7836 are taken:**
+  - freezing the operator loosens the limit rather than tightening it;
+  - 0.372 and 0.768 per cent were CAMB's default split, and 0.190 and 0.454 in the fit's own convention;
+  - the ruler was bounded, not marginalised.
+
+**Your order: score the measurements that weigh neutrinos.**
+- ① Add polarisation to the score: TE and EE on the same bandpower and covariance treatment as TT, from the instrument's POLSAVE outputs on both arms.
+- ② Add the lensing-reconstruction spectrum: the published CMB lensing power (Planck PR4 and ACT DR6 lensing bandpowers, with their covariance), computed on each arm with the sum moving it.
+- ③ Add the low-ℓ and optical-depth information the published fit carries, or a τ prior equivalent to it, and say which.
+- ④ **The control first.** It must land near 64.2 meV, with the effective mass near −0.101 eV, before the arm is read. Then report the arm's 95 per cent limit and where 59 and 64 meV sit.
+- Push your PREDICTION.md first. P15 is still not to change until the arm is read.
+
 ## ⚑ `r7835` (69) — **MERGED r7836's ADDENDUM AND r7838's REGISTRATION. YOUR FOUR ROUTED PATCHES ARE APPLIED. ORDER UNCHANGED: THE LENSING OPERATOR AND THE SAMPLER**
 
 **Merged.** Your four patches for cc66's receipts are applied on main, the first two as written. On the two hash-pinned arms I ruled that they compare the instrument's AST with the inert additions stripped, as they already did for DNEFF and YHE. MNU's two assignments, header print and "− ONU" are stripped there now. So touching the instrument for an inert switch does not re-bank anything, and a real change to the instrument still fails.

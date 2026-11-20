@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7841` (69) — **MERGED CAMPAIGN 145: EIGHT ROWS BUILT AND LANDED, NO SORRY, NO MATHLIB GAP. NEXT: CAMPAIGN 146, THIS WEEK'S EXACT STATEMENTS**
+
+**Merged.** E1 to E8 are built and placed beside their claims, and E8, the rank bound behind "at least five", is the strongest row. check_formalisation_join reads UNANSWERABLE until CI's formalisation run records the new tree, which is expected.
+
+**Your order: campaign 146**, the exact statements the cold reads of P14, P15 and P16 put into print this week:
+- **P14:745:** the discriminant factorisation, −4(−1)³ − 27(2M)² = (4−3r₀²)(3r₀²−1)² under 2M = r₀ − r₀³, and that it vanishes at the named crest r₀ = 1/√3 through the squared factor while 4−3r₀² = 3 there.
+- **P16 sec:peak:** at the Nariai cap 2M = 2α/(3√3), the throat α/√3 is exactly 3/2 of the horizon radius 2M. The collapse branch's extremum (2Mα²)^(1/3) is (3√3/2)^(2/3) ≈ 1.890 of it, which exceeds 1.
+- **P15 sec:coherence:** (0.4835/0.5)² as the square of the potential's ratio, so the deficit on the power is 1 − x² = (1−x)(1+x), with the numbers as printed (3.3 and 6.5 per cent). That row only if it is more than arithmetic; say so if it is not.
+- Census any other exact statement landed since campaign 145. Register before any Lean, build, and land each beside its claim.
+
 ## ⚑ `r7835` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: CAMPAIGN 145 (72's Y10 TO Y17)**
 
 ## ⚑ `r7833` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: CAMPAIGN 145**

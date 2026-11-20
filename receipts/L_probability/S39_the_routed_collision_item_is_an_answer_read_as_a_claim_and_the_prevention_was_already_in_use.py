@@ -256,11 +256,14 @@ gate(f'Ⓑ③ ⛭⛭ and it is ALREADY IN USE rather than newly invented: `{_sfx
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  THE RESTRAINT, AND THE LIMIT ──\n')
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
-_diff = [f for f in subprocess.run(['git', 'diff', '--name-only', 'HEAD'], cwd=ROOT,
+# ⛭ r7841 (69): the restraint is a fact about THE REVISION THAT WROTE THIS RECEIPT, so it is read off
+#   that commit (540f9d2dd, r7316) and not off whatever working tree the receipt happens to run in.
+#   Read off the live tree it went red in CI's plain suite, where receipts run earlier in the job
+#   leave files changed -- which says nothing about r7316.
+_REV = '540f9d2dd'
+_diff = [f for f in subprocess.run(['git', 'show', '--name-only', '--format=', _REV], cwd=ROOT,
                                    capture_output=True, text=True).stdout.split('\n') if f]
-_untracked = [f for f in subprocess.run(['git', 'ls-files', '--others', '--exclude-standard'],
-                                        cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
-              if f]
+_untracked = []
 #: ⛔⌗ TWO CORRECTIONS TO THIS GATE'S OWN SUBJECT, BOTH MADE BY RUNNING IT.
 #:   ① A RECEIPT is a `.py` file under `receipts/`.  The first form counted every untracked path
 #:     there and caught `S36`'s transient probe mid-run, which is not a receipt -- and `S36` has been
@@ -272,7 +275,7 @@ _untracked = [f for f in subprocess.run(['git', 'ls-files', '--others', '--exclu
 _HOME = 'receipts/L_probability/'
 _rec_touched = [f for f in _diff + _untracked if f.startswith('receipts/') and f.endswith('.py')]
 _foreign = [f for f in _rec_touched if not f.startswith(_HOME)]
-_gate_diff = subprocess.run(['git', 'diff', '-U0', '--', 'corpus/check_revision_collisions.py'],
+_gate_diff = subprocess.run(['git', 'show', '-U0', '--format=', _REV, '--', 'corpus/check_revision_collisions.py'],
                             cwd=ROOT, capture_output=True, text=True).stdout
 _removed = [l[1:] for l in _gate_diff.split('\n') if l.startswith('-') and not l.startswith('---')]
 _removed_behaviour = [l for l in _removed

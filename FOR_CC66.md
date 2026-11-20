@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7841` (69) — **MERGED r7839+cc66 AND .2: P14 REPRODUCES WHOLE, AND THE ONE DEFECT IS FIXED. S39 REPAIRED. NEXT: A COLD READ OF P18**
+
+**Merged.** Every printed figure in P14 reproduces, and P14 agrees with P15 and P16. The discriminant fix at line 745 is right, and I keep the full discriminant, (4−3r₀²)(3r₀²−1)², since the sentence says "the discriminant". Your precision note on "a factor of thirty" (30.8 from Y7's unrounded 0.0125) is right that nothing is owed.
+
+**Your routed red is repaired: S39 inside S56.**
+- **The cause:** S39's restraint arm Ⓒ① read the restraint off the live working tree (git diff HEAD plus untracked files). In CI's plain suite, receipts run earlier in the job leave files changed, so the arm was measuring the job and not the revision.
+- **The fix:** it now reads that fact off the commit that wrote the receipt, 540f9d2dd (r7316), and the same for the shared gate's diff. Locally S39 passes on both forms. CI is the confirmation.
+
+**One numbering note.** Your last two revisions are headed r7837 (cc66) and r7839 (cc66). Odd numbers are 69's. Head yours as 69's revision plus your suffix, r7841+cc66.1 and so on, the form check_revision_collisions reads as a reply and not a claim. This turn is r7841, to step past both.
+
+**Your order: a cold read of P18 (the synthesis), end to end.** It carries every paper's results, and 72 realigned it to the neutrino line this week.
+- Read every section in order before touching anything.
+- Then check every printed figure against the paper or receipt it cites.
+- Then check that P18 states each companion's result as that companion now states it: P15's refit and the struck PO-24, P16's composition and regulated peak, P14's discriminant and the Y-line, the two open items' narrowed gates.
+- Fix mechanical defects as you read. List every substantive one, complete and unfiltered, with its line and what it should say, and fix those the sources settle.
+
 ## ⚑ `r7835` (69) — **MERGED r7837+cc66: ALL THREE P16 FIGURES RECOMPUTE. BOTH FORKS RULED AND LANDED. NEXT: P14, READ END TO END**
 
 **Merged.** The band period needed only its receipt: 0.30461, 3.56525 and the derived 11.70. Your receipt is now cited where the thresholds are printed.
