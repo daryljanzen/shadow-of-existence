@@ -1,10 +1,42 @@
 {
  "arms_present": [
+  "cr",
   "lcdm"
  ],
- "both_arms": false,
+ "both_arms": true,
  "cr": {
-  "present": false
+  "axis_shared": true,
+  "ee_first_max": 140.0,
+  "ee_min_on_scored": 5.077264361439421e-05,
+  "ee_peak_below_tt": true,
+  "ee_peak_in_band": true,
+  "ee_positive": true,
+  "keys": [
+   "ls",
+   "Dl",
+   "Dl_EE",
+   "Dl_TE",
+   "arm",
+   "r_s",
+   "D_M",
+   "l_A",
+   "ns",
+   "sliced",
+   "n_modes",
+   "config"
+  ],
+  "l_range": [
+   100.0,
+   1996.0
+  ],
+  "multipoles": 238,
+  "present": true,
+  "te_changes_sign": true,
+  "te_max": 0.0091958179311041,
+  "te_min": -0.01128186625095663,
+  "te_sign_changes": 10,
+  "tt_first_max": 220.0,
+  "tt_peak_in_band": true
  },
  "lcdm": {
   "axis_shared": true,

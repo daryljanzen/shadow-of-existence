@@ -105,6 +105,15 @@ def main():
     print('     fractional errors run %.1f to %.1f per cent; smallest eigenvalue %.3e'
           % (100 * min(data['fractional_error']), 100 * max(data['fractional_error']),
              data['cov_min_eigenvalue']), flush=True)
+    # ⌗ ** THE WINDOW WEIGHTS ARE NOT NORMALISED TO ONE, AND THIS SEAT ASSUMED THEY WERE. **  The
+    #   ACT DR6 bank's provenance says each of ITS bins' weights sums to 1, and that was carried
+    #   across to these without being checked; they run 0.9961 to 1.0277.  So the sums are REPORTED
+    #   and nothing is asserted about them: a lensing bandpower window is not required to be a
+    #   partition of unity, and whether this normalisation is the one a scorer should use is a
+    #   question for whoever writes that scorer.
+    print('     window weight sums run %.6f to %.6f -- NOT normalised to one, and nothing here '
+          'assumes they are'
+          % (min(data['window_weight_sums']), max(data['window_weight_sums'])), flush=True)
 
     a, b = probe(0.0), probe(0.30)
     H1, H2 = np.asarray(a['H'], float), np.asarray(b['H'], float)
