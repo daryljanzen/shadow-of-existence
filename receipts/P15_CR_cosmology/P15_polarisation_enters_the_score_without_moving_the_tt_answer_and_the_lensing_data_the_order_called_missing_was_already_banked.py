@@ -107,6 +107,7 @@ SCORE = io.open(os.path.join(RUN, 'score_ttteee.py'), encoding='utf-8').read()
 MODEL = io.open(os.path.join(RUN, 'model3.py'), encoding='utf-8').read()
 SAMP = io.open(os.path.join(RUN, 'sampler3.py'), encoding='utf-8').read()
 PRED = io.open(os.path.join(RUN, 'PREDICTION.md'), encoding='utf-8').read()
+RESULT = io.open(os.path.join(RUN, 'RESULT.md'), encoding='utf-8').read()
 
 _POLRUN = os.path.join(RUN, 'sampler3_lcdm_pol.json')
 PR = jload('sampler3_lcdm_pol.json') if os.path.exists(_POLRUN) else None
@@ -416,10 +417,18 @@ else:
     # ─────────────────────────────────────────────────────────────────────────────────────────────
     # Ⓖ⑦  THE ARM OF RECORD -- and ONLY if Ⓔ⑤ passes
     if not _passes:
+        # ** THIS WAS WRITTEN AS `True` AND COULD NOT FAIL. **  `check_cannot_fail` caught it.
+        # The clause it reasons FROM is that the revision's own document RECORDS the arm as not
+        # judged and the paper as untouched -- an omission is indistinguishable from an oversight,
+        # a recorded verdict is not, and a pin on the record fires if the document ever starts
+        # reporting the arm's figure as a limit.
         check('Ⓖ⑦ THE ARM OF RECORD IS NOT JUDGED, because Ⓔ⑤ did not pass and the arm was '
               'registered as conditional on it.  A limit read off an apparatus that misses its own '
-              'control is not a result, and P15 is NOT touched',
-              True,
+              'control is not a result, and P15 is NOT touched -- both asserted against this '
+              'revision\'s own RESULT document rather than by this receipt\'s silence',
+              'THE ARM OF RECORD IS NOT JUDGED' in RESULT
+              and 'P15` is unchanged' in RESULT
+              and 'the record only' in RESULT,
               'where 59 and 64 meV sit is reported for the record only: %.1f and %.1f per cent of '
               'the control\'s posterior lies below them'
               % (100 * _pb['frac_below_0.059'], 100 * _pb['frac_below_0.064']))
@@ -434,6 +443,43 @@ else:
               'and %.1f per cent below 64'
               % (_ab['upper95_mev'], _lim, 100 * _ab['frac_below_0.059'],
                  100 * _ab['frac_below_0.064']))
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────
+# EVERY FIGURE THE INDEX ROW PRINTS, PINNED TWO-SIDED AGAINST WHAT MEASURED IT
+# ** A FIGURE A CITING SENTENCE PRINTS HAS TO FAIL THIS RECEIPT IF IT IS WRONG. **  This revision's
+#   row first printed `6.13`, because the standard error was TYPED as `0.55` into the row-building
+#   script instead of read from the chain; the measured value is `0.5511` and the ratio is `6.12`.
+#   That is exactly the defect these pins exist to catch, and they caught it on their own row.
+#   ⌗ Each tolerance is written INSIDE the coarser of half the figure's last printed digit and
+#     0.05 per cent of it -- never AT the bound.  The widths are `0.0049` against a half-digit of
+#     `0.005`, and `0.0499` against `0.05` for the one figure printed to a tenth.
+if PR is not None:
+    _p_lim = abs(_lim - 99.67) < 0.0049
+    _p_se = abs(_se - 0.55) < 0.0049
+    _p_over = abs((_lim - ORDER_BAND_MEV[1]) / _se - 6.12) < 0.0049
+    _p_bought = abs(R38_LIMIT_MEV / _lim - 2.79) < 0.0049
+    _p_away = abs(_lim / PUBLISHED_LIMIT_MEV - 1.55) < 0.0049
+    _p_effsd = abs(1000 * _eff_sd - 50.9) < 0.0499
+    _p_floor = abs(ORDER_BAND_MEV[0] - 42.8) < 0.0049
+    _p_ceil = abs(ORDER_BAND_MEV[1] - 96.3) < 0.0049
+    _p_pub = abs(PUBLISHED_LIMIT_MEV - 64.2) < 0.0049
+    _p_eff = abs(abs(PUBLISHED_EFFECTIVE_EV) - 0.101) < 0.00049
+    _pins = dict(limit=_p_lim, standard_error=_p_se, over_ceiling=_p_over, bought=_p_bought,
+                 published_away=_p_away, effective_width=_p_effsd, band_floor=_p_floor,
+                 band_ceiling=_p_ceil, published_limit=_p_pub, published_effective=_p_eff)
+    check('⌗ every figure this revision\'s INDEX row prints is pinned TWO-SIDED here against the '
+          'quantity that MEASURED it, each tolerance inside the coarser of half the last printed '
+          'digit and 0.05 per cent -- not against a number retyped beside it.  ** THE ROW\'S OWN '
+          '`6.13` WAS CAUGHT THIS WAY AND CORRECTED TO `6.12`: the standard error had been typed '
+          'as 0.55 into the row builder instead of read from the chain, and 0.5511 is what the '
+          'chain says **',
+          all(_pins.values()),
+          '%d figure(s) pinned: limit %.2f, its standard error %.2f, %.2f of them above the '
+          'ceiling, a factor %.2f bought, the published limit now %.2f away, effective width %.1f'
+          % (len(_pins), _lim, _se, (_lim - ORDER_BAND_MEV[1]) / _se, R38_LIMIT_MEV / _lim,
+             _lim / PUBLISHED_LIMIT_MEV, 1000 * _eff_sd)
+          if all(_pins.values())
+          else 'UNPINNED: ' + ', '.join(k for k, v in _pins.items() if not v))
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 # Ⓙ⑩  THE COUNT
