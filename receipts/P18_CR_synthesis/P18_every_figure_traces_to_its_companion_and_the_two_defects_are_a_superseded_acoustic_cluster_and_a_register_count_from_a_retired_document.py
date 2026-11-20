@@ -107,7 +107,7 @@ check('Ⓐ② PINNED P18 carries ZERO \\rcpt sites and 343 \\cite sites, which i
 WORDS = {'five': 5, 'nine': 9, 'ten': 10, 'eleven': 11,
          'twelve': 12, 'thirteen': 13, 'fourteen': 14, 'fifteen': 15, 'sixteen': 16,
          'seventeen': 17, 'eighteen': 18, 'nineteen': 19, 'twenty': 20}
-_abs = re.search(r'([a-z]+) papers', P18)
+_abs = re.search(r'every claim is drawn from one of ([a-z]+) papers', P18)
 ABSTRACT_N = WORDS.get(_abs.group(1)) if _abs else None
 _BIB = len(re.findall(r'\\bibitem\{Janzen', P18))
 _DISS = len(re.findall(r'\\bibitem\{Janzen[A-Za-z]*(?:Thesis|Diss)', P18))
@@ -148,7 +148,7 @@ check('Ⓑ③ and P15\'s GEOMETRIC-PART reading is parsed: a comb and two height
 P15_GEO_HT = [float(_p15geo.group(2)), float(_p15geo.group(3))] if _p15geo else []
 
 # the GRID-CONVERGENCE figures P18's defective cluster was rounded from
-_p15grid = re.search(r'returns peaks at \$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and \$([0-9.]+)\$',
+_p15grid = re.search(r'wavenumber grid---returns peaks at \$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and \$([0-9.]+)\$',
                      P15)
 check('Ⓑ④ PINNED and P15\'s GRID-CONVERGENCE peaks -- the figures the defective cluster was '
       'rounded from -- are parsed as 220.03 / 536.27 / 811.58 / 1125.02',
@@ -165,7 +165,8 @@ check('Ⓑ⑤ P18\'s own peak cluster is PARSED out of P18 at whatever state it 
       _p18pk is not None, ' / '.join(_p18pk.groups()) if _p18pk else 'NOT FOUND')
 P18_PK = [float(x) for x in _p18pk.groups()] if _p18pk else []
 
-_p18arm = re.search(r"which returns this arm's peaks at \$([0-9.]+)\$, \$([0-9.]+)\$, "
+_p18arm = re.search(r'the derivation is the two-arm transfer that propagates the modes, '
+                    r"which returns this arm's peaks at \$([0-9.]+)\$, \$([0-9.]+)\$, "
                     r'\$([0-9.]+)\$ and \$([0-9.]+)\$', P18)
 check('Ⓑ⑥ and the second site -- "this arm\'s peaks", the one that dropped the qualifier -- '
       'is parsed separately', _p18arm is not None,
@@ -209,7 +210,7 @@ check('Ⓑ⑪ RECORD the comb 298.5 against 298.4 is NOT a defect: P15 prints bo
 print()
 print('Ⓒ (2) sec:displace -- the register count, and where it came from')
 
-_rail = re.search(r'an evidence rail of ([a-z ]+) receipts of which the overwhelming majority', P18)
+_rail = re.search(r'an evidence rail of ([a-z ]+) receipts', P18)
 check('Ⓒ① P18\'s own words for the evidence rail\'s size are PARSED, not retyped',
       _rail is not None, repr(_rail.group(1)) if _rail else 'NOT FOUND')
 RAIL = _rail.group(1).strip() if _rail else ''
@@ -241,7 +242,7 @@ check('Ⓒ⑤ the paper is in ONE of two states at that clause and in no third -
       f'STATE {"A (stale)" if RAIL == "several hundred" else "B (corrected)"}: {RAIL!r}')
 check('Ⓒ⑥ RECORD the clause is load-bearing rather than decorative: the same paragraph says '
       'the register "is not an illustration but a count"',
-      'is not an illustration but a count' in P18, 'phrase present')
+      'the register is not an illustration but a count' in P18, 'phrase present')
 
 # ---------------------------------------------------------------- Ⓓ the identities
 print()
@@ -318,7 +319,7 @@ check('Ⓔ② PINNED k^2 = L(L+2) - 2 at the lowest transverse-traceless member 
 # see one -- and `in` is satisfied by either, so changing one site reddened nothing.  The
 # COUNT is pinned instead, and the word is PARSED rather than tested for.
 _floor = re.findall(r'([a-z]+) at the floor', P18)
-_z0 = re.search(r'is \$([0-9]+)\$ exactly', P18)
+_z0 = re.search(r'the spectral zeta at zero is \$([0-9]+)\$ exactly', P18)
 check('Ⓔ③ PINNED the floor degeneracy is worded at TWO places, both of them the same '
       'PARSED word, and the one-scale section\'s zeta(0) is that same integer -- a '
       'self-dual and an anti-self-dual five',
@@ -349,7 +350,7 @@ check('Ⓕ② PINNED Lambda_MSbar alpha / hbar c = 1.99e41, so log10 = 41.30 and
 
 # BOTH exponents are parsed: P14's for alpha/l_P, and P18's own for the gauge count.
 _pl = re.search(r'\\alpha/\\ell_P\\sim10\^\{([0-9]+)\}', P14)
-_bh = re.search(r'of order \$10\^\{([0-9]+)\}\$', P18)
+_bh = re.search(r'=3\\pi/\\Lambda\\ell_\{P\}\^\{2\}\$, of order \$10\^\{([0-9]+)\}\$', P18)
 apl = al / L_P
 check('Ⓕ③ PINNED alpha / l_P reproduces P14\'s PARSED exponent, and pi (alpha/l_P)^2 '
       'reproduces P18\'s OWN PARSED exponent for the Bekenstein--Hawking gauge count',
@@ -381,7 +382,7 @@ check('Ⓖ② PINNED they agree figure for figure, so the abundances are stated 
 _peak18 = re.search(r'the Planck density over \$6\\pi\$ one Planck time before the branch point '
                     r'and free of the progenitor\'s mass', P18)
 _peak16 = re.search(r'a density of \$\\rho_\{\\rm Planck\}/6\\pi\$ one Planck time before the '
-                    r'branch point and free of the', P16)
+                    r"branch point and free of the progenitor's mass", P16)
 check('Ⓖ③ PINNED the regulated peak is stated in P18 verbatim with P16 -- the density, one '
       'Planck time before the branch point, free of the progenitor\'s mass',
       _peak18 is not None and _peak16 is not None, 'both present')
@@ -433,14 +434,16 @@ check('Ⓖ⑥b PINNED COMPUTED and the window the two PARSED bounds leave is fiv
       f'{_FLOOR:.2e} to {_CAP:.2e} GeV is {_decades:.3f} decades')
 
 
-_f18 = re.search(r'add at least \$([0-9.]+)\$ to \$N_\{\\rm eff\}\$', P18)
-_f16 = re.search(r'add at least \$([0-9.]+)\$ to \$N_\{\\mathrm\{eff\}\}\$', P16)
+_f18 = re.search(r'the three states add at least \$([0-9.]+)\$ to \$N_\{\\rm eff\}\$ '
+                 r'whatever the right-handed \$W\$ weighs', P18)
+_f16 = re.search(r'light Dirac partners and add at least \$([0-9.]+)\$ to '
+                 r'\$N_\{\\mathrm\{eff\}\}\$', P16)
 check('Ⓖ⑦ PINNED the N_eff floor is PARSED out of each paper\'s own "add at least" '
       'sentence, the two are the same number, and P18 keeps it a FLOOR -- "whatever the '
       'right-handed W weighs" -- which is what makes it P16\'s result and not a point value',
       _f18 is not None and _f16 is not None
       and float(_f18.group(1)) == float(_f16.group(1))
-      and 'whatever the right-handed $W$ weighs' in P18,
+      ,
       f'P18 {_f18.group(1) if _f18 else "?"} against P16 {_f16.group(1) if _f16 else "?"}, '
       f'stated as a floor in both')
 
@@ -456,12 +459,13 @@ print('Ⓗ the growth-normalisation pivot')
 _piv = re.search(r'\\rho_m/\\rho_\\Lambda=2', P18)
 check('Ⓗ① the pivot is PARSED out of P18 as rho_m/rho_Lambda = 2', _piv is not None,
       'found' if _piv else 'NOT FOUND')
+# read ONCE: evaluating the same pattern twice reads to the pin operator as a
+# disjunction of two arms, which this is not.
+_pv = re.search(r'the value \$([0-9]+)/([0-9]+)\$', P18)
 check('Ⓗ② PINNED acceleration turns where rho + 3p = 0, i.e. rho_m = 2 rho_Lambda, and the '
       'matter FRACTION there is 2/3 -- the value P18 says the balance is taken about',
-      abs(2.0 / (2.0 + 1.0) - 2.0 / 3.0) < 1e-15
-      and re.search(r'the value \$([0-9]+)/([0-9]+)\$', P18) is not None
-      and [int(g) for g in re.search(r'the value \$([0-9]+)/([0-9]+)\$', P18).groups()]
-          == [2, 3],
+      _pv is not None and abs(2.0 / (2.0 + 1.0) - 2.0 / 3.0) < 1e-15
+      and [int(g) for g in _pv.groups()] == [2, 3],
       'rho_m = 2 rho_Lambda gives Omega_m = 2/3, which is the PARSED printed pivot')
 
 # ---------------------------------------------------------------- Ⓘ the Virgo chain
@@ -473,7 +477,10 @@ _v18 = re.search(r"resolving Virgo's profile to \$([0-9]+)\^\{\\circ\}\$--"
 _res = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                     'r7831_cc66_PO93_the_baryonic_mass_at_virgos_turnaround_radius', 'RESULT.md')
 _rtx = open(_res, encoding='utf-8').read() if os.path.exists(_res) else ''
-_vc = re.search(r'to `≈ ([0-9]+)°`–`([0-9]+)°` from M87', _rtx)
+# the computation wraps mid-phrase and quotes with '> ', so it is flattened ONCE here
+# and every span read against it below is read against the flattened form.
+_RTXF = re.sub(r'\s+', ' ', _rtx.replace('> ', ''))
+_vc = re.search(r"Virgo's infall region out to `≈ ([0-9]+)°`–`([0-9]+)°` from M87", _RTXF)
 check('Ⓘ① PINNED the gas-probe angles are PARSED out of BOTH P18 and the r7831 computation '
       'and are the same pair -- not tested for membership, which passed on the wrong '
       'figures once already',
@@ -482,8 +489,8 @@ check('Ⓘ① PINNED the gas-probe angles are PARSED out of BOTH P18 and the r78
       f'{_vc.groups() if _vc else None}')
 check('Ⓘ② PINNED and the computation says "out to" that angle, an OUTER RADIUS, which is '
       'what P18 renders -- so P18 is right here and this is not a defect of P18\'s',
-      'out\nto `≈ 24°`–`26°` from M87' in _rtx.replace('> ', '')
-      or 'to `≈ 24°`–`26°` from M87' in _rtx,
+      'infall region out to `≈ 24°`–`26°` from M87' in _RTXF,
+
       'computation says "out to", matching P18')
 
 # the angle is DERIVABLE from the two radii P18 prints in the same passage, so the three
