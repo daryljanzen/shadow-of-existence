@@ -191,6 +191,31 @@ class Model:
             c += self.chi2_bao(p['H0'], p['OM'])[0]
         return c
 
+
+    def chi2_barrier(self, x5, lo=None):
+        """the same chi^2 for a MINIMISER, with the infeasible region SLOPED instead of flat.
+
+        A flat 1e12 penalty is a trap for a direction-set method: Powell walked into it and
+        reported the plateau as a minimum.  The barrier keeps the infeasible region worse than
+        anything feasible while still pointing back toward the feasible set.
+        """
+        x4, s = np.asarray(x5[:4], float), float(x5[4])
+        slo = self.s_lo if lo is None else lo
+        v = max(0.0, slo - s) + max(0.0, s - self.s_hi) + float(np.sum(np.maximum(0.0, np.abs(x4) - 6.0)))
+        if v > 0:
+            return 1e6 + 1e6 * v * v
+        m = self.binned(x4, s)
+        if not np.all(np.isfinite(m)):
+            return 1e6
+        neg = float(np.sum(np.maximum(0.0, -m) ** 2)) / max(float(np.mean(np.abs(m))) ** 2, 1e-300)
+        if neg > 0:
+            return 1e6 + 1e6 * neg
+        A = float((m @ self.F @ self.d) / (m @ self.F @ m))
+        r = self.d - A * m
+        c = float(r @ self.F @ r)
+        p = self.phys(x4, s)
+        return c + self.chi2_bao(p['H0'], p['OM'])[0]
+
     def binned_exact(self, x4, sum_ev, ls, Dl):
         """the binned model built EXACTLY at this sum from a freshly generated spectrum, for the
         interpolation arm -- no node, no spline on the base."""

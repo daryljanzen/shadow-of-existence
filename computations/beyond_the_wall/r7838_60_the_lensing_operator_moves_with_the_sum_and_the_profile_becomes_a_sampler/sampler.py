@@ -36,9 +36,9 @@ sys.path.insert(0, HERE)
 import model as M                                                          # noqa: E402
 
 CHAINS = int(os.environ.get('CHAINS', '6'))
-BURN = int(os.environ.get('BURN', '6000'))
-KEEP = int(os.environ.get('KEEP', '30000'))
-THIN = int(os.environ.get('THIN', '5'))
+BURN = int(os.environ.get('BURN', '24000'))
+KEEP = int(os.environ.get('KEEP', '240000'))
+THIN = int(os.environ.get('THIN', '20'))
 SEED = int(os.environ.get('SEED', '7838'))
 OUT = os.path.join(HERE, 'sampler.json')
 PUBLISHED_LIMIT_MEV = 64.2
@@ -85,61 +85,90 @@ def ess(chains):
 
 
 def best_fit(mod, bounded):
+    """Nelder-Mead and Powell on the SLOPED objective, several starts, the plateau refused.
+
+    r7836's profile failed because a minimiser stalled and the number it stalled at was reported.
+    Here any result that lands on the barrier (>= 1e5) is discarded rather than reported, the best
+    feasible one is polished again, and the polished point is checked against the objective.
+    """
     lo = 0.0 if bounded else mod.s_lo
-    bnds = [(-4, 4)] * 4 + [(lo, mod.s_hi)]
+    bnds = [(-6, 6)] * 4 + [(lo, mod.s_hi)]
+    f = lambda z: mod.chi2_barrier(z, lo)
+    starts = [[0, 0, 0, 0, max(lo, 0.02)], [0.5, -0.5, 0.3, -0.3, max(lo, 0.10)],
+              [-0.5, 0.5, -0.3, 0.3, max(lo, 0.20)], [-0.6, 0.0, 0.0, -0.05, max(lo, 0.08)],
+              [0, 0, 0, 0, max(lo, 0.0)], [0.2, 0.2, -0.2, 0.2, max(lo, 0.25)]]
     best = None
-    for st in ([0, 0, 0, 0, 0.02], [0.5, -0.5, 0.3, -0.3, 0.10], [-0.5, 0.5, -0.3, 0.3, 0.20],
-               [0, 0, 0, 0, max(lo, -0.08)]):
-        r = minimize(lambda z: mod.chi2(z), np.clip(st, [-4] * 4 + [lo], [4] * 4 + [mod.s_hi]),
-                     method='Powell', bounds=bnds,
-                     options=dict(maxiter=60000, xtol=1e-6, ftol=1e-8))
-        if best is None or r.fun < best.fun:
+    for st in starts:
+        st = list(np.clip(st, [-6] * 4 + [lo], [6] * 4 + [mod.s_hi]))
+        for meth in ('Nelder-Mead', 'Powell'):
+            r = minimize(f, st, method=meth, bounds=bnds,
+                         options=dict(maxiter=200000, maxfev=200000))
+            if r.fun >= 1e5:
+                continue
+            if best is None or r.fun < best.fun:
+                best = r
+    if best is None:
+        raise SystemExit('every start landed on the barrier -- REFUSING to report a minimum')
+    for _ in range(3):
+        r = minimize(f, best.x, method='Nelder-Mead', bounds=bnds,
+                     options=dict(maxiter=200000, maxfev=200000, xatol=1e-8, fatol=1e-10))
+        if r.fun < best.fun:
             best = r
+    assert abs(f(best.x) - best.fun) < 1e-6, 'the reported minimum is not the objective at its point'
     return best
 
 
 def run_chains(mod, bounded, x0, scale, rng):
+    """Metropolis with a STAGED adaptation: the covariance is re-estimated and a single global
+    scale is tuned toward the 0.234 acceptance that is optimal for a five-dimensional target, and
+    then BOTH are held for every kept sample, so the kept chain is a proper Markov chain."""
     lo = 0.0 if bounded else mod.s_lo
     hi = mod.s_hi
 
     def logp(z):
         if not (lo <= z[4] <= hi) or np.any(np.abs(z[:4]) > 6):
             return -np.inf
-        return -0.5 * mod.chi2(z)
+        c = mod.chi2(z)
+        return -np.inf if c >= 1e11 else -0.5 * c
 
-    # ---- burn-in with an adapting diagonal-then-full proposal
     cur = []
     for i in range(CHAINS):
-        z = np.array(x0, float) + scale * rng.standard_normal(5) * 2.0
-        z[4] = float(np.clip(z[4], lo, hi))
+        for _ in range(400):
+            z = np.array(x0, float) + scale * rng.standard_normal(5) * (1.0 + 0.5 * i)
+            z[4] = float(np.clip(z[4], lo, hi))
+            if np.isfinite(logp(z)):
+                break
         cur.append(z)
     cur = np.asarray(cur)
     lcur = np.array([logp(z) for z in cur])
-    for i in range(CHAINS):
-        while not np.isfinite(lcur[i]):
-            cur[i] = np.array(x0, float) + 0.3 * scale * rng.standard_normal(5)
-            cur[i][4] = float(np.clip(cur[i][4], lo, hi))
-            lcur[i] = logp(cur[i])
+    assert np.all(np.isfinite(lcur)), 'a chain could not be started at a finite point'
+
     S = np.diag(scale ** 2)
-    hist, acc = [], 0
-    for t in range(BURN):
-        L = np.linalg.cholesky(S * (2.38 ** 2 / 5))
-        for i in range(CHAINS):
-            prop = cur[i] + L @ rng.standard_normal(5)
-            lp = logp(prop)
-            if lp > lcur[i] or np.log(rng.random()) < lp - lcur[i]:
-                cur[i], lcur[i] = prop, lp
-                acc += 1
-        hist.append(cur.copy())
-        if t in (BURN // 3, 2 * BURN // 3, BURN - 1):
-            H = np.asarray(hist[len(hist) // 2:]).reshape(-1, 5)
-            C = np.cov(H.T)
-            if np.all(np.isfinite(C)) and np.linalg.det(C) > 0:
-                S = C + 1e-12 * np.eye(5)
-            hist = hist[-10:]
-    burn_rate = acc / float(BURN * CHAINS)
-    # ---- kept samples with the proposal HELD
-    L = np.linalg.cholesky(S * (2.38 ** 2 / 5))
+    fac = 2.38 ** 2 / 5.0
+    STAGES = 6
+    per = max(400, BURN // STAGES)
+    for st in range(STAGES):
+        L = np.linalg.cholesky(S * fac)
+        hist, acc = [], 0
+        for t in range(per):
+            for i in range(CHAINS):
+                prop = cur[i] + L @ rng.standard_normal(5)
+                lp = logp(prop)
+                if lp > lcur[i] or np.log(rng.random()) < lp - lcur[i]:
+                    cur[i], lcur[i] = prop, lp
+                    acc += 1
+            hist.append(cur.copy())
+        rate = acc / float(per * CHAINS)
+        H = np.asarray(hist[per // 2:]).reshape(-1, 5)
+        C = np.cov(H.T)
+        if np.all(np.isfinite(C)) and np.linalg.det(C) > 0:
+            S = C + 1e-14 * np.eye(5)
+        fac *= float(np.exp(np.clip((rate - 0.234) * 3.0, -1.0, 1.0)))
+        print(f'       burn stage {st + 1}/{STAGES}: accept {rate:.3f}, scale factor now '
+              f'{fac:.4f}', flush=True)
+    burn_rate = rate
+
+    L = np.linalg.cholesky(S * fac)
     out = np.empty((CHAINS, KEEP // THIN, 5))
     acc = 0
     for t in range(KEEP):
@@ -204,6 +233,7 @@ def main():
         print(f'\n  {arm}: {mod.nb} bins, sum interpolated on [{mod.s_lo:+.2f}, {mod.s_hi:+.2f}] eV'
               f'   (model built in {time.time() - t0:.1f} s)', flush=True)
         bf0 = best_fit(mod, False)
+        print('    unbounded minimum chi2 = %.3f at Sum = %+.4f eV' % (bf0.fun, bf0.x[4]), flush=True)
         scale = np.array([0.25, 0.25, 0.25, 0.25, 0.02])
         for bounded in (True, False):
             S, rate, br = run_chains(mod, bounded, bf0.x, scale, rng)
