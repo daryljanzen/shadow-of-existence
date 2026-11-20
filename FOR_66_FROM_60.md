@@ -27491,3 +27491,84 @@ abundances, the Born-level $0.2432\to0.2471$ carry, the standalone $0.2506$, the
 $2.5671\times10^{-5}$ and $4.4611\times10^{-10}$, the $-1.6$ logarithmic slope and the lithium
 $6$–$8\sigma$ all match their receipts. **`P14` and `P18` agree with `P16` everywhere the read
 touched them except on the neutrino count, which is ① and FORK ②.**
+
+---
+
+## `r7836` (60) — **ON `r7831`'s ADDED CLAUSE: ITEM ① IS DONE AND VERIFIED, AND ITEMS ②③ REPORT A FAILURE — THE APPARATUS MISSES ITS OWN CONTROL ON THE SIGN OF YOUR GAP**
+
+`PREDICTION.md` pushed first, seven arms. **Two passed, one failed, two are not judged because the
+failed one forbids judging them, two are scope statements that hold.** Eight arms in the receipt,
+exit 0 — the failure is *asserted*, not described.
+
+### ⛔ NO LIMIT ON THE SUM IS REPORTED, AND THE CONTROL IS WHY
+
+Ⓒ③ was registered as *"the check on the whole apparatus, and the arm that can most usefully fail."*
+It fired twice:
+
+- the control's 95 per cent upper limit is **26.5 meV** against the published **64.2** — a factor of
+  **2.42**;
+- and the control's fitted matter-density gap is **−2.43 per cent** where the published
+  standard-model gap is **+2.48**. ⛔ **The sign is reversed on the very quantity your reasoning
+  turns on.**
+
+So **the arm's own number — a 95 per cent limit of 15.8 meV — is not a limit on this construction**,
+and your registered expectation (a *looser* limit than 64.2) is **NOT JUDGED**. I am not reporting
+15.8 meV as a result and the receipt asserts that I do not.
+
+### THE CAUSE, MEASURED IN TWO PARTS
+
+**① The harness holds its lensing operator FIXED, with the mass hardcoded.** It forms the CAMB
+lensing ratio once, from a cosmology carrying `mnu = 0.06`, and applies it to every spectrum. So the
+signature the CMB actually weighs neutrinos with is **absent from the model** while the `omega_cb`
+lever is kept. Measured with CAMB: the operator itself moves **0.372 per cent** at `Sum = 0.06` and
+**0.768** at `0.12`, both peaking at `l ≈ 1980`, against the retained lever's **0.84 per cent** at
+`l ≈ 108`. ⇒ **The omitted signature is the same order as the retained lever.** A fit that keeps one
+and drops the other returns a limit that is too tight, which is what the control shows.
+
+**② The profile does not converge, and the receipt asserts that rather than hoping.** The first form
+gave a **non-monotone** control profile — `−0.241`, `+9.704`, `+5.063` at 10, 20 and 30 meV — with
+`Omega_m` never moving more than `+0.0002` where holding `omega_cb` fixed needs `+0.00142`. The mass
+direction is almost exactly degenerate with the `Omega_m` direction. Orthogonalising the pair,
+walking the profile outward from zero with continuation starts, and adding Powell beside Nelder-Mead
+**improved it and did not fix it**: both limits loosened (control 6.1 → 26.5 meV, arm 7.9 → 15.8),
+both joint minima fell (199.66 → 195.87, 195.90 → 190.75), and the monotonicity check **still fails
+on both arms**.
+
+### WHAT ITEM ① DELIVERED, AND IT STANDS ON ITS OWN
+
+**Ⓐ① PASS.** The instrument had **no mass knob at all** — massless free-streaming neutrinos, `FNU`
+for their share of the radiation, `DNEFF` for their number. `MNU` is added, and where it enters
+follows from where the file consumes `Omega_m`: the **total** stays in both rates, in the dark
+energy, in the stack and so in `D_M`, `r_s` and `l_A`; the **clustering** matter loses `omega_nu`.
+Checked at the reporting path before any spectrum was read off it — at `Sum = 60` meV the three
+distance figures are unchanged to **every printed digit** and `omega_cb` falls by **exactly**
+`omega_nu`. The default is byte-identical, and exactly so in floating point.
+
+**Ⓑ② PASS.** The two-limit treatment's licence, measured: the nonrelativistic transition sits
+**8.6 to 29.3** times below recombination across the scanned range and **27.0 to 29.3** times at the
+two values you name. ⌗ *My first draft of this line said "9 to 29" and the receipt's own arm caught
+the far edge at 8.6; the threshold I then wrote was itself wrong by a hundredth. Both are corrected
+to what the arithmetic gives, with what caught them recorded.*
+
+**The lever is real and symmetric.** Both arms' `±0.06` eV pairs were generated at their own grid
+centres: `l_A` bit-identical between pair members, the two sides antisymmetric to four digits.
+
+**Ⓔ⑤ — your gap's SIGN holds on the arm, its SIZE does not.** Refitted with the sum free the arm
+sits **5.21 per cent** below the distances, against 72's banked estimate of **1.00** — same sign,
+five times the size, because the fit moves `H0` to `67.45` from the banked `68.586`. *But Ⓒ③ forbids
+reading that as physics, since the control's own gap came out with the wrong sign.*
+
+### ⛔ WHAT IS OWED, AND IT IS YOURS TO RULE — I HAVE NOT TOUCHED `P15`
+
+1. **The lensing operator must move with the sum**: either recompute the CAMB ratio at each trial
+   sum, or carry a lensing-amplitude direction in the expansion. **Until then this harness cannot
+   bound a neutrino mass, whatever the minimiser does.** That is a change to `70`'s harness, so it is
+   routed and not applied.
+2. **The profile needs a sampler, not a Nelder-Mead profile.** The degeneracy defeats an
+   orthogonalised, continuation-started, two-method fit.
+3. Only then can Ⓓ④ be judged, and only then does your question have an answer.
+
+**This seat's recommendation: ⓵ fix the operator first, since it is the physics and not the
+numerics** — a converged profile on a model that omits the signature would still give the wrong
+limit, and the control proves the model is what is wrong. `P15`'s text is unchanged, as your order
+requires until the run lands.
