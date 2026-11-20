@@ -104,7 +104,8 @@ check('Ⓐ② PINNED P18 carries ZERO \\rcpt sites and 343 \\cite sites, which i
 
 # the abstract's own word for the count is PARSED, and the dissertation entry that the
 # word excludes is identified by its own key rather than assumed to exist.
-WORDS = {'twelve': 12, 'thirteen': 13, 'fourteen': 14, 'fifteen': 15, 'sixteen': 16,
+WORDS = {'five': 5, 'nine': 9, 'ten': 10, 'eleven': 11,
+         'twelve': 12, 'thirteen': 13, 'fourteen': 14, 'fifteen': 15, 'sixteen': 16,
          'seventeen': 17, 'eighteen': 18, 'nineteen': 19, 'twenty': 20}
 _abs = re.search(r'([a-z]+) papers', P18)
 ABSTRACT_N = WORDS.get(_abs.group(1)) if _abs else None
@@ -312,10 +313,18 @@ k2 = lambda L: L * (L + 2) - 2
 check('Ⓔ② PINNED k^2 = L(L+2) - 2 at the lowest transverse-traceless member L = 2 gives 6, '
       'so the floor is sqrt6 = 2.449490', k2(2) == 6 and abs(math.sqrt(k2(2)) - 2.449490) < 5e-7,
       f'k^2 = {k2(2)}, mu = {math.sqrt(k2(2)):.6f}')
-check('Ⓔ③ PINNED and the floor\'s degeneracy is ten as a self-dual and an anti-self-dual '
-      'five, which is the zeta(0) the one-scale section quotes',
-      5 + 5 == 10 and 'ten at the floor' in P18 and 'is $10$ exactly' in P18,
-      'ten at the floor and zeta(0) = 10 both present in P18')
+# ⛔ A MEMBERSHIP TEST IS NOT A PIN.  "ten at the floor" occurs TWICE in the flattened
+# paper -- the second split across a line break, so grep, sed and a line-wise count all
+# see one -- and `in` is satisfied by either, so changing one site reddened nothing.  The
+# COUNT is pinned instead, and the word is PARSED rather than tested for.
+_floor = re.findall(r'([a-z]+) at the floor', P18)
+_z0 = re.search(r'is \$([0-9]+)\$ exactly', P18)
+check('Ⓔ③ PINNED the floor degeneracy is worded at TWO places, both of them the same '
+      'PARSED word, and the one-scale section\'s zeta(0) is that same integer -- a '
+      'self-dual and an anti-self-dual five',
+      len(_floor) == 2 and len(set(_floor)) == 1 and _z0 is not None
+      and WORDS.get(_floor[0]) == int(_z0.group(1)) == 5 + 5,
+      f'{_floor} at the floor; zeta(0) = {_z0.group(1) if _z0 else "?"}')
 check('Ⓔ④ and L = 2 is the lowest member because k^2 vanishes only at L = 1, which carries '
       'no transverse-traceless content', k2(1) == 1 and k2(0) == -2,
       f'k^2(1) = {k2(1)}, k^2(0) = {k2(0)}')
@@ -381,20 +390,59 @@ check('Ⓖ④ RECORD and P18 does NOT restate the throat and extremum radii 69 l
       '1.50' not in P18 and '1.89' not in P18 and 'R_s' not in P18,
       'no 1.50, no 1.89, no R_s in P18')
 
-for fig, name in (('1.2\\times10^{15}', 'the lepton-number scale'),
-                  ('3.5\\times10^{7}', 'the nucleosynthesis floor'),
-                  ('2\\times10^{13}', 'the strong-CP cap')):
-    check(f'Ⓖ⑤ PINNED {name} is printed identically in P18 and P14',
-          fig in P18 and fig in P14, f'{fig} in both')
+# ⛔ AND THE SAME CLASS AGAIN: `fig in P18 and fig in P14` passed for the lepton-number
+# scale while P14 carried it TWICE, so moving one site reddened nothing -- and `in` cannot
+# tell a figure in its own role from the same digits somewhere else.  Each of the three is
+# PARSED out of ITS OWN SENTENCE in BOTH papers, and the two readings compared as numbers.
+_SITES = (
+    ('the lepton-number scale',
+     r'M\\simeq([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV',
+     r'about \$([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV, the Planck-suppressed'),
+    ('the nucleosynthesis floor on v_R',
+     r'below, at about \$([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV',
+     r'needs \$v_R\$ above about \$([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV'),
+    ('the doublets\' angle cap',
+     r'above, near \$([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV',
+     r"doublets' below about \$([0-9.]+)\\times10\^\{([0-9]+)\}\$\\,GeV"),
+)
+PARSED = {}
+for name, pat18, pat14 in _SITES:
+    m18, m14 = re.search(pat18, P18), re.search(pat14, P14)
+    v18 = float(m18.group(1)) * 10 ** int(m18.group(2)) if m18 else None
+    v14 = float(m14.group(1)) * 10 ** int(m14.group(2)) if m14 else None
+    PARSED[name] = v18
+    check(f'Ⓖ⑤ PINNED {name} is parsed from its OWN sentence in each paper and the two '
+          f'readings are the same number',
+          v18 is not None and v14 is not None and v18 == v14,
+          f'P18 {v18:.3e} against P14 {v14:.3e}' if (v18 and v14) else
+          f'P18 {v18}, P14 {v14}')
 
 V, MNU = 246.0, 0.05e-9
-check('Ⓖ⑥ PINNED and the lepton-number scale reproduces as v^2/m_nu = 1.21e15 GeV',
-      abs(V * V / MNU / 1.2e15 - 1.0) < 0.01, f'{V * V / MNU:.4e} GeV')
+_ln = PARSED['the lepton-number scale']
+check('Ⓖ⑥ PINNED and the PARSED lepton-number scale is what a type-I seesaw returns from '
+      'the electroweak scale and the measured neutrino mass, v^2/m_nu, to one per cent',
+      _ln is not None and abs(V * V / MNU / _ln - 1.0) < 0.01,
+      f'v^2/m_nu = {V * V / MNU:.4e} GeV against the papers\' {_ln:.3e}'
+      if _ln else 'scale not parsed')
+_CAP = PARSED['the doublets\' angle cap']
+_FLOOR = PARSED['the nucleosynthesis floor on v_R']
+_decades = math.log10(_CAP / _FLOOR)
+check('Ⓖ⑥b PINNED COMPUTED and the window the two PARSED bounds leave is five and three '
+      'quarter decades wide, so the right-handed scale is bracketed rather than fixed',
+      abs(_decades - 5.757) < 0.01,
+      f'{_FLOOR:.2e} to {_CAP:.2e} GeV is {_decades:.3f} decades')
 
-check('Ⓖ⑦ PINNED the N_eff floor 0.14 is P16\'s own and P18 states it as a floor '
-      '"whatever the right-handed W weighs"',
-      '0.14' in P16 and '0.14' in P18 and 'whatever the right-handed $W$ weighs' in P18,
-      'floor stated as a floor in both')
+
+_f18 = re.search(r'add at least \$([0-9.]+)\$ to \$N_\{\\rm eff\}\$', P18)
+_f16 = re.search(r'add at least \$([0-9.]+)\$ to \$N_\{\\mathrm\{eff\}\}\$', P16)
+check('Ⓖ⑦ PINNED the N_eff floor is PARSED out of each paper\'s own "add at least" '
+      'sentence, the two are the same number, and P18 keeps it a FLOOR -- "whatever the '
+      'right-handed W weighs" -- which is what makes it P16\'s result and not a point value',
+      _f18 is not None and _f16 is not None
+      and float(_f18.group(1)) == float(_f16.group(1))
+      and 'whatever the right-handed $W$ weighs' in P18,
+      f'P18 {_f18.group(1) if _f18 else "?"} against P16 {_f16.group(1) if _f16 else "?"}, '
+      f'stated as a floor in both')
 
 check('Ⓖ⑧ PINNED P18 states the discriminant qualitatively in four places and NEVER writes '
       'the 4-3r_0^2 form, so r7839\'s P14 defect did not propagate',
@@ -410,37 +458,87 @@ check('Ⓗ① the pivot is PARSED out of P18 as rho_m/rho_Lambda = 2', _piv is n
       'found' if _piv else 'NOT FOUND')
 check('Ⓗ② PINNED acceleration turns where rho + 3p = 0, i.e. rho_m = 2 rho_Lambda, and the '
       'matter FRACTION there is 2/3 -- the value P18 says the balance is taken about',
-      abs(2.0 / (2.0 + 1.0) - 2.0 / 3.0) < 1e-15 and 'the value $2/3$' in P18,
-      'rho_m = 2 rho_Lambda gives Omega_m = 2/3, and 2/3 is the printed pivot')
+      abs(2.0 / (2.0 + 1.0) - 2.0 / 3.0) < 1e-15
+      and re.search(r'the value \$([0-9]+)/([0-9]+)\$', P18) is not None
+      and [int(g) for g in re.search(r'the value \$([0-9]+)/([0-9]+)\$', P18).groups()]
+          == [2, 3],
+      'rho_m = 2 rho_Lambda gives Omega_m = 2/3, which is the PARSED printed pivot')
 
 # ---------------------------------------------------------------- Ⓘ the Virgo chain
 print()
-print('Ⓘ sec:frontier -- the Virgo gas probe, traced to the computation')
+print('Ⓘ sec:frontier -- the Virgo gas probe, and the angle recomputed from the radii')
 
-_v18 = re.search(r"resolving Virgo's profile to \$(\d+)\^\{\\circ\}\$--\$(\d+)\^\{\\circ\}\$ from M87",
-                 P18)
-check('Ⓘ① P18\'s gas-probe angles are PARSED out of P18', _v18 is not None,
-      f'{_v18.group(1)}-{_v18.group(2)} deg' if _v18 else 'NOT FOUND')
+_v18 = re.search(r"resolving Virgo's profile to \$([0-9]+)\^\{\\circ\}\$--"
+                 r"\$([0-9]+)\^\{\\circ\}\$ from M87", P18)
 _res = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                     'r7831_cc66_PO93_the_baryonic_mass_at_virgos_turnaround_radius', 'RESULT.md')
 _rtx = open(_res, encoding='utf-8').read() if os.path.exists(_res) else ''
-check('Ⓘ② PINNED and the r7831 computation says "out to ~24-26 from M87", so P18\'s '
-      'rendering is RIGHT and this is not a defect of P18\'s',
-      'out\n> to `≈ 24°`–`26°` from M87' in _rtx or 'to `≈ 24°`–`26°` from M87' in _rtx,
+_vc = re.search(r'to `≈ ([0-9]+)°`–`([0-9]+)°` from M87', _rtx)
+check('Ⓘ① PINNED the gas-probe angles are PARSED out of BOTH P18 and the r7831 computation '
+      'and are the same pair -- not tested for membership, which passed on the wrong '
+      'figures once already',
+      _v18 is not None and _vc is not None and _v18.groups() == _vc.groups(),
+      f'P18 {_v18.groups() if _v18 else None} against the computation '
+      f'{_vc.groups() if _vc else None}')
+check('Ⓘ② PINNED and the computation says "out to" that angle, an OUTER RADIUS, which is '
+      'what P18 renders -- so P18 is right here and this is not a defect of P18\'s',
+      'out\nto `≈ 24°`–`26°` from M87' in _rtx.replace('> ', '')
+      or 'to `≈ 24°`–`26°` from M87' in _rtx,
       'computation says "out to", matching P18')
+
+# the angle is DERIVABLE from the two radii P18 prints in the same passage, so the three
+# figures pin each other instead of resting on the citation alone.
+_core = re.search(r'between the \$([0-9.]+)\$~Mpc core and the \$([0-9]+)\$~Mpc of the '
+                  r'infall region', P18)
+_dist = re.search(r'([0-9.]+)`? Mpc', '')  # placeholder, Virgo's distance is parsed below
+_D = re.search(r'arctan\(([0-9.]+)/([0-9.]+)\)', _rtx)
+check('Ⓘ③ P18\'s core and infall radii are PARSED out of its own Virgo sentence, and the '
+      'distance the computation projects them at is parsed out of the computation',
+      _core is not None and _D is not None,
+      f'core {_core.group(1)} Mpc, infall {_core.group(2)} Mpc, '
+      f'distance {_D.group(2)} Mpc' if (_core and _D) else 'NOT FOUND')
+if _core and _D and _v18:
+    R_CORE, R_INF, DIST = float(_core.group(1)), float(_core.group(2)), float(_D.group(2))
+    a_inf = math.degrees(math.atan(R_INF / DIST))
+    a_core = math.degrees(math.atan(R_CORE / DIST))
+    r_outer = math.tan(math.radians(int(_v18.group(2)))) * DIST
+    check('Ⓘ④ PINNED COMPUTED the probe\'s LOWER angle is the angular size of the infall '
+          'radius P18 prints, at the distance the computation projects from -- so the '
+          'angle is derived from the radii rather than only cited',
+          abs(a_inf - int(_v18.group(1))) < 0.2,
+          f'arctan({R_INF}/{DIST}) = {a_inf:.2f} deg against the printed '
+          f'{_v18.group(1)} deg')
+    check('Ⓘ⑤ PINNED COMPUTED and the UPPER angle reaches just past that edge rather than '
+          'anywhere else, which is what makes the pair a span and not two readings',
+          R_INF < r_outer < R_INF * 1.15,
+          f'tan({_v18.group(2)} deg) x {DIST} = {r_outer:.2f} Mpc against the infall '
+          f'edge {R_INF} Mpc')
+    check('Ⓘ⑥ PINNED COMPUTED and the CORE radius subtends the few degrees the existing '
+          'reach covers, which is the contrast the open item rests on',
+          abs(a_core - 6.86) < 0.05 and a_core < int(_v18.group(1)) / 3.0,
+          f'arctan({R_CORE}/{DIST}) = {a_core:.2f} deg, against a probe at '
+          f'{_v18.group(1)}-{_v18.group(2)} deg')
+
 _rcp = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology',
                     'P15_the_stellar_half_of_po93s_gate_is_measured_at_the_turnaround_radius'
                     '_and_the_gas_half_is_not.py')
 _rcx = open(_rcp, encoding='utf-8').read() if os.path.exists(_rcp) else ''
-check('Ⓘ③ RECORD the looser statement is the RECEIPT\'s, whose print line calls the same '
+check('Ⓘ⑦ RECORD the looser statement is the RECEIPT\'s, whose print line calls the same '
       '24-26 degrees a WIDTH where the computation makes it an outer radius -- recorded and '
       'routed, not P18\'s to answer', '24-26 deg wide' in _rcx,
       'receipt print line says "wide"')
 
-for fig in ('1.70', '2.35', '1.85', '6.4'):
-    check(f'Ⓘ④ PINNED the Virgo bound figure {fig} is printed identically in P18 and in '
-          f'JanzenSlicing', fig in P18 and fig in flat('SdS-slicing-curve_v2.tex'),
-          f'{fig} in both')
+# ⛔ WHAT WAS HERE BEFORE WAS NOT A CHECK.  Four arms asserted that the Virgo bound figures
+# 1.70, 2.35, 1.85 and 6.4 were "printed identically in P18 and in JanzenSlicing", on `in`
+# tests -- and P18 DOES NOT PRINT THAT RATIO AT ALL.  Its 1.70 is the damping exponent on
+# the power in the acoustic section.  The arms passed on unrelated digits in both files.
+# Replaced above, and the true statement is pinned instead:
+_virgo_only = [n for n in ('$1.9$~Mpc', 'under a fifth of the baryons', 'past $1.2$~Mpc')
+               if n in P18 and not any(n in t for t in (P15, P16, P14))]
+check('Ⓘ⑧ RECORD P18 is the SOLE corpus carrier of its Virgo profile figures, so they rest '
+      'on their external citations and no companion can be compared against -- stated '
+      'rather than papered over with an `in` test that would pass on any digits',
+      len(_virgo_only) == 3, f'{len(_virgo_only)}/3 carried only by P18')
 
 print()
 if FAILED:
