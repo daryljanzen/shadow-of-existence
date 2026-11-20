@@ -111,8 +111,10 @@ PAPERS = [p for p in sorted(glob.glob(os.path.join(ROOT, 'corpus', '*.tex')))
           if not os.path.basename(p).startswith(_GENERATED)]
 TEXT = {os.path.basename(p): open(p, encoding='utf-8').read() for p in PAPERS}
 
-check('Ⓐ① the papers are read: 18 non-appendix .tex files under corpus/',
-      len(PAPERS) == 18, f'{len(PAPERS)} papers')
+# monotone: papers accrete, so a floor is the claim and an equality would redden on a
+# paper another seat adds, which says nothing about this measurement.
+check('Ⓐ① the papers are read: at least 18 non-appendix .tex files under corpus/',
+      len(PAPERS) >= 18, f'{len(PAPERS)} papers')
 
 # ---------------------------------------------------------------- Ⓑ the environments
 print()
@@ -127,8 +129,14 @@ COUNT = {e: sum(len(re.findall(r'\\begin\{' + e + r'\}', t)) for t in TEXT.value
 N_ALL = sum(COUNT.values())
 N_NO_REMARK = N_ALL - COUNT.get('remark', 0)
 
-check('Ⓑ② PINNED the live count of formal environments over the papers is 202, which is what '
-      '"some two hundred" says', N_ALL == 202, f'{N_ALL} environments: '
+# ⛔ THE FIRST CUT ASSERTED `N_ALL == 202`, AND THAT CONTRADICTED THE ORDER IT ANSWERS.
+# ② asks for a figure that MOVES WHEN THE CORPUS DOES; an equality on today's value goes
+# RED when the corpus moves, which is the opposite.  And exactness is not the paper's claim
+# here -- it says "some two hundred".  A BAND is the instrument: inside it the phrase holds,
+# outside it the phrase has gone wrong and this receipt should say so.
+check('Ⓑ② PINNED the live count of formal environments sits in the band "some two hundred" '
+      'states -- 190 to 215 -- and the measured figure is printed rather than asserted',
+      190 <= N_ALL <= 215, f'{N_ALL} environments: '
       + ', '.join(f'{e} {COUNT[e]}' for e in DECLARED if COUNT[e]))
 check('Ⓑ③ PINNED and it is within five per cent of "two hundred", so the phrase is right at '
       'the precision it is printed to', abs(N_ALL - 200) / 200.0 < 0.05,
@@ -150,9 +158,9 @@ check('Ⓑ⑤ PINNED COMPUTED and the growth since is small and upward, which is
 # dropped `principle` as well -- the exact class this corpus's gates exist for, committed in
 # the receipt that was written to catch it.  The figure is the COMPUTED one.
 check('Ⓑ⑥ ⛔ THE COMPETING CONVENTION, RECORDED BECAUSE IT FIRED: dropping `remark` as not '
-      'claim-bearing -- the reading this seat would have chosen -- gives 118, barely half of '
+      'claim-bearing -- the reading this seat would have chosen -- lands barely half of '
       '"some two hundred", so the paper COUNTS REMARKS and the instinct was wrong',
-      N_NO_REMARK == 118 and abs(N_NO_REMARK - 200) / 200.0 > 0.4,
+      N_NO_REMARK < 150 and abs(N_NO_REMARK - 200) / 200.0 > 0.4,
       f'without remark {N_NO_REMARK}, {abs(N_NO_REMARK - 200) / 200.0 * 100:.0f}% from 200')
 
 # ---------------------------------------------------------------- Ⓒ theorems and axioms
@@ -230,10 +238,12 @@ check('Ⓓ④ PINNED under the convention that a register LEADS WITH one of the 
       'is 78, and the paper says "roughly seventy-five"', len(LEADS) == 78, f'{len(LEADS)}')
 check('Ⓓ⑤ PINNED and 78 is inside the latitude "roughly" grants at this precision',
       abs(len(LEADS) - 75) <= 5, f'{len(LEADS)} against 75')
+# label carries NO figure: the figures are computed and printed in the detail.  The CLAIM is
+# that the strict reading misses the paper's phrase, not that it lands on any one value.
 check('Ⓓ⑥ ⛔ THE COMPETING CONVENTION FIRED HERE TOO: requiring the tag to be EXACTLY one of '
-      'the five gives 56, which is not "roughly seventy-five" -- so the paper\'s reading is '
+      'the five lands well outside "roughly seventy-five" -- so the paper\'s reading is '
       'the leading-word one and the strict reading is this seat\'s imposition',
-      len(STRICT) == 56 and abs(len(STRICT) - 75) > 5,
+      abs(len(STRICT) - 75) > 5 and len(STRICT) < len(LEADS),
       f'strict {len(STRICT)}, leading {len(LEADS)}')
 
 # ---------------------------------------------------------------- Ⓔ the receipts rail

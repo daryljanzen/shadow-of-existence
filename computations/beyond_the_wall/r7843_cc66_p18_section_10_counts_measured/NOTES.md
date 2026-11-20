@@ -101,6 +101,39 @@ appendices with a broader `appendix_` prefix, correct behaviourally but invisibl
 **That is a fair complaint rather than a gate defect:** a reader cannot see from `appendix_`
 alone that the generated rail was what was being kept out.
 
+### ⓻ ⛔ MY RECEIPT CONTRADICTED THE ORDER IT WAS ANSWERING, and a gate in `fast` said so
+
+Order ② asks for a receipt that measures live **"so the figure moves when the corpus does"**.
+My first cut asserted `N_ALL == 202`, `THM_ALL == 14`, `AX_ALL == 6`, `len(PAPERS) == 18` and
+three more — **equalities on today's values**, which do the opposite: they go **red** the moment
+the corpus moves.
+
+`check_exact_counts` named all seven: *"an equality on a set another seat can move"*.
+
+**And the right fix is not uniform, which is the interesting part.** It depends on the paper's
+own wording:
+
+| the paper says | so the claim is | and the arm should be |
+|---|---|---|
+| "**fourteen** named theorems on **six** axioms" | the equality itself | **keep `== 14` / `== 6`** and adjudicate |
+| "**some two hundred** environments" | a figure inside that phrase's precision | **a band**, 190–215 |
+| (a competing convention's figure) | that it misses the paper's phrase | **an inequality** |
+
+For the first row the red is the receipt *working*: if a seat adds a `theorem` environment,
+**the paper has gone wrong**, and loosening that arm would make the receipt survive exactly the
+event it exists to catch. For the others, exactness was never the claim and the equality was
+over-tight.
+
+⇒ **Guard: "measure it live" and "assert equality to what you measured" are different things,
+and the second is usually wrong. Read the paper's own wording to decide which of band,
+inequality or equality is the claim** — and where equality IS the claim, adjudicate it and say
+why the red would be correct.
+
+⌗ And I did not run `check_exact_counts` or `check_unread_figure` locally before pushing. Both
+sit in CI's `fast` batch and **neither is in the lean local batch** — a fact I recorded at
+`r7839` and did not act on here. The guard from ⓶ repeating itself at one remove: knowing which
+gates the local batch omits is useless unless the omission changes what you run.
+
 ## What this revision does NOT settle
 
 - **That these conventions are the author's intent.** For two there is provenance and for two
