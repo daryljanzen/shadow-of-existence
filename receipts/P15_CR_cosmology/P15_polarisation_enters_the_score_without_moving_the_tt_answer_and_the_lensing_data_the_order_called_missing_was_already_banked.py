@@ -104,6 +104,7 @@ POL = jload('pol_sanity.json')        # the polarisation outputs
 TAU = jload('tau_reach.json')         # tau's reach
 REACH = jload('lensing_reach.json')   # what the sum reaches in the background and the source
 SCORE = io.open(os.path.join(RUN, 'score_ttteee.py'), encoding='utf-8').read()
+MODEL = io.open(os.path.join(RUN, 'model3.py'), encoding='utf-8').read()
 SAMP = io.open(os.path.join(RUN, 'sampler3.py'), encoding='utf-8').read()
 PRED = io.open(os.path.join(RUN, 'PREDICTION.md'), encoding='utf-8').read()
 
@@ -199,12 +200,24 @@ check('Ⓑ② the THIRD realisation is in the record BECAUSE it passes -- on the
 # Ⓒ③  ONE AMPLITUDE, JOINT, AND THE POSITIVITY GUARD OFF TE
 check('Ⓒ③ ONE amplitude is solved analytically and JOINTLY across TT, TE and EE -- not three -- and '
       'the positivity guard is applied to TT and EE only, because TE is negative over part of its '
-      'range.  Asserted off the scorer\'s own source, not from memory',
+      'range.  ** ASSERTED OFF THE CODE THE CHAINS ACTUALLY RAN. **  The scorer DEFINES the guard '
+      'and `model3` is what APPLIES it, and the amplitude the sampler used is `model3`\'s own '
+      'joint solve -- so asserting the scorer alone would have asserted a definition and called it '
+      'a measurement',
       'A = float((m @ F @ d) / (m @ F @ m))' in SCORE
       and 'POSITIVE = BLOCK != 1' in SCORE
-      and SCORE.count('np.tril(_c) + np.tril(_c, -1).T') == 1,
-      'the amplitude is one closed-form solve over the joint vector, and the guard\'s mask excludes '
-      'block 1')
+      and SCORE.count('np.tril(_c) + np.tril(_c, -1).T') == 1
+      and 'self.pos = SC.POSITIVE[self.ok]' in MODEL
+      and 'np.any(m[self.pos] <= 0)' in MODEL
+      and MODEL.count('A = float((m @ self.F @ self.d) / (m @ self.F @ m))')
+      == MODEL.count('A = float('),
+      'EVERY amplitude solve in the model the chains called is the same joint closed form over the '
+      'whole kept vector -- %d of %d, the objective\'s and the barrier\'s, with no per-spectrum '
+      'solve anywhere -- and the guard\'s mask excludes block 1 and is applied there as a 1e12 '
+      'return.  ⌗ The first version of this arm asserted there was only ONE solve; there are two, '
+      'both joint, and counting them was never the claim'
+      % (MODEL.count('A = float((m @ self.F @ self.d) / (m @ self.F @ m))'),
+         MODEL.count('A = float(')))
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 # Ⓘ⑨  ITEM ③'s TWO HALVES
