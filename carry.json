@@ -1850,6 +1850,26 @@
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
     "unmeasured": true
    },
+   "receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
+   "receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
    "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44792083668",
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
@@ -1858,6 +1878,16 @@
    "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44792083668",
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
     "unmeasured": true
    },
    "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
@@ -1885,6 +1915,16 @@
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
     "unmeasured": true
    },
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_stellar_half_of_po93s_gate_is_measured_at_the_turnaround_radius_and_the_gas_half_is_not.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44792083668",
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
@@ -1892,7 +1932,13 @@
    },
    "receipts/P18_CR_synthesis/P18_every_figure_traces_to_its_companion_and_the_two_defects_are_a_superseded_acoustic_cluster_and_a_register_count_from_a_retired_document.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44792083668",
-    "since": "e9ef14bc851bd99d653d7176633b72b189e5909e"
+    "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
+    "unmeasured": true
+   },
+   "receipts/P18_CR_synthesis/P18_section_tens_counts_measured_four_hold_under_the_papers_own_convention_and_two_have_no_enumerable_subject.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
    }
   }
  },
