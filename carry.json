@@ -5137,5 +5137,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/P18_CR_synthesis/P18_every_figure_traces_to_its_companion_and_the_two_defects_are_a_superseded_acoustic_cluster_and_a_register_count_from_a_retired_document.py": {
+    "gates": [
+     "\u24b6\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44815423109",
+    "since": "7cbfadce7e76c46a3eaed2fcba2920ec179eecdd"
+   }
+  }
  }
 }
