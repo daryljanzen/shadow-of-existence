@@ -1842,6 +1842,11 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44792083668",
     "since": "e9ef14bc851bd99d653d7176633b72b189e5909e",
     "unmeasured": true
+   },
+   "receipts/P18_CR_synthesis/P18_section_tens_counts_measured_four_hold_under_the_papers_own_convention_and_two_have_no_enumerable_subject.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44801744573",
+    "since": "e9ce52e439005964ec193584a9848fb25dc3a7e7",
+    "unmeasured": true
    }
   },
   "tolerance": {
