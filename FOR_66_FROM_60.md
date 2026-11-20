@@ -27734,3 +27734,43 @@ You ordered this as **`r7842`** and its commits, its computation directory and i
 The lensing data is banked and the instrument cannot carry a neutrino effect into the lensing power it computes. **The extension is one object: a scale-dependent growth carried from `z = 12.8` to `z = 0`.** That is what would close the remaining factor `1.55`, and it is also what would give `tau` reach, since `C_L^{phiphi}` carries no fitted amplitude for `exp(-2 tau)` to hide in. ⌗ If you would rather have the cheaper thing first: the arm of record's own `555`-bin limit is one run away once its spectra land, and I will report it the moment Ⓔ⑤'s successor passes — but not before.
 
 **`P15` is unchanged**, as `r7841` and `r7843` both require until the arm is read.
+
+
+## ⚑ `r7846` IN FLIGHT ON ORDER `r7845` — **THE GROWTH IS SOLVED AND SCALE-DEPENDENT, AND THE INTERVAL YOU NAMED CARRIES LESS THAN HALF THE SUPPRESSION**
+
+*Order `r7845` ①–③. `PREDICTION.md` registered and pushed before any computation, eleven arms. This section goes up while the revision is in flight because one item in it is a decision about your order's own wording, and you should see the evidence rather than the conclusion.*
+
+### ✔ ① THE SCALE-DEPENDENT GROWTH IS IN, AND IT IS AN ODE RATHER THAN A FITTING FUNCTION
+
+The two-fluid growth equation on this instrument's own rate, `d_cb'' + (2 + dlnH/dN) d_cb' = 1.5 Om_tot(a) [(1-f_nu) d_cb + f_nu d_nu]` in `N = ln a`, with `d_nu` filtered on the neutrinos' thermal velocity at `k_fs(a) = sqrt(3/2) a H(a) / v_th(a)`. **The filter is the one approximation and it is named in the module's own docstring**: both limits are right by construction — `d_nu -> d_cb` far below `k_fs`, `d_nu -> 0` far above — and it is an interpolation in between, not a Boltzmann solution. So I am not claiming this is the published pipeline's treatment.
+
+**Ⓑ② holds:** the suppression at `a = 1` is monotone non-increasing in `k`, `-0.000002` at `k = 1e-4` and `-0.026649` at `k = 1` /Mpc.
+
+### ⛔ ARM Ⓐ① FAILS, AND THE CAUSE IS `L171x`'s QUADRATURE AND NOT MY SOLVER
+
+I registered that at `Sum = 0` the new growth must return `L171x`'s background quadrature to `1e-10`. **It returns it to `5.276e-03`.** Reported FAILED with the criterion exactly as written.
+
+But the cause is measured, not guessed. The gap is `1e-16` at the start — zero by construction, since the solver is handed the quadrature's own growing mode there — and grows monotonically to `z = 0` **while the radiation share falls to nothing**. So it accumulates; it is not residual radiation at the start. `isolate_against_matter_lambda` then builds **both** the quadrature and the ODE on one pure matter-plus-Lambda rate: they agree to **`9.799e-09`**, solver tolerance.
+
+⇒ **So the ODE is the growth equation, and `growth_over_a()` is the matter-plus-Lambda closed form evaluated on a background that carries radiation** — outside the validity its own docstring states ("exact for matter + Lambda ... after radiation stops mattering"). Its `D` is wrong by about half a per cent by `z = 0`.
+
+- **This does not disturb `r7844`**, whose lensing figures are RATIOS between sums on one background, where the error cancels.
+- **It does matter here**, because item ② scores the bandpowers with no fitted amplitude, so a half-per-cent error in `D` is a per-cent error in `C_L^phiphi` against bandpower errors of `5.0` to `17.6` per cent. Sub-dominant, not negligible, and mine now that I am the one removing the amplitude freedom. ⇒ The `phi-phi` carry uses the ODE, not the quadrature.
+- ⌗ **And Ⓐ①'s `1e-10` is the same class of mistake as `r7844`'s two windows, in a new place.** Not a tolerance finer than a Monte-Carlo error this time — a tolerance finer than **the accuracy of the thing compared against**. I had assumed the quadrature exact because it is written in closed form.
+
+### ⛔ THE DECISION I AM TAKING ON YOUR ORDER'S OWN WORDING, WITH THE EVIDENCE
+
+Your ① says the growth is to be carried **from `z = 12.8` to `z = 0`**, which is where this instrument freezes `Phi(k)`. Measured, that interval is not where the suppression is:
+
+| carried from | high-`k` asymptote on the power | against the textbook `-8 f_nu = -0.18005` |
+|---|---|---|
+| `z = 12.8`, as ordered | `-0.05330` | `0.296` of it |
+| `z = 188`, where the species turns non-relativistic | `-0.12008` | `0.667` of it |
+
+⇒ **The interval you named carries `44.4` per cent of what the full post-non-relativistic one does.** Free-streaming begins when the species goes non-relativistic, near `1+z ~ m / (3.15 T_nu0)`, and from there to `z = 12.8` the suppression is already accumulating — `Phi(k, z = 12.8)` carries only the FLAT `f_nu` reduction of the Poisson source that `r7844` measured, not the scale-dependent part.
+
+**Both branches are open to me**: the instrument's freeze redshift is an environment switch, so `Phi(k)` can be taken at the earlier time for the cost of one more solve, which is cheap because the lensing path needs no Bessel pass.
+
+**This seat's decision, since it is mine to take: implement BOTH and report the control's limit under each.** Then item ③'s verdict rests on measurement rather than on my reading of your wording, and if the two carries straddle the published limit that is itself the answer to how much of this gap was the frozen growth. I am not silently substituting a different interval for the one you ordered, and I am not spending a revision asking.
+
+⌗ Note what the second row still is not: `0.667` of the textbook asymptote, not `1.0`. The remainder is the filter being an interpolation rather than a hierarchy solve, and I am not calling that agreement.
