@@ -90,6 +90,69 @@ same commit as the directory — the gate's own stated remedy. The two thematic 
 untouched: the gate matches only paper-prefixed directory names. **Flagged to 69 as a
 structural decision, reversible.**
 
+### ⓻ ⛔ I FILED A ROUTING NOTE WHERE CI HAD ALREADY GIVEN ME THE ANSWER — and this is a repeat
+
+I reported to 69 that `check_revision_collisions` *"still FAILs on `r7811`, claimed by four of
+your own commits for different work ... yours to dispose."*
+
+**On a full clone that gate exits 0**, and `r7811` appears only as prose inside another
+commit's subject line. It was a shallow-clone artefact, and the gate had said so itself, in a
+banner I quoted in an earlier revision:
+
+> `⛔ HORIZON: this clone reaches 136 revision-numbered commits from HEAD; all refs reach 3311.`
+> `THE CLONE IS SHALLOW. ** So this verdict covers the reachable window and not the corpus's`
+> `whole revision history. A green here is a claim about that window. **`
+
+⇒ ***And the authority was already in front of me: CI's `fast` failure list named exactly two
+gates, `check_pdf_current` and `check_prose_pins`, and `check_revision_collisions` was not
+among them.*** The standing cycle names this exact class — *"red locally and green in CI
+because this clone is shallow"* — and lists `check_branches` and
+`check_pins_adjudicated_on_mint` in it. I routed a non-finding to the coordinating seat
+instead of reading the list.
+
+**Guard: when CI has reported, its failure list is the authority over any local run.** A local
+red that CI does not name is mine to explain, not 69's to dispose. And the generalisation of
+r7839's lesson — *"for an assertion that walks git history, this container's local verdict is
+not the tree's"* — applies to a gate's PASS/FAIL verdict, not only to the count of failures.
+
+### ⓼ The container was fixable, and calling it an environment limit was the error
+
+Three things I had been reporting as limits of this container were limits of how I had left
+it:
+
+- **`check_pdf_current`** — I called the PDF unfixable for want of a toolchain. **The gate's
+  own remedy says "NO pdflatex HERE IS NOT A MISSING CAPABILITY: install it"** and names the
+  packages. Installed; the PDF compiled; the gate went green.
+- **`check_compile`** — reported "unrunnable here" across several revisions. It now runs and
+  passes: all 18 papers at 0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt
+  links.
+- **the shallow clone** — `git fetch --unshallow` took one command and 1.1 GB, and turned
+  `check_branches`, `check_pins_adjudicated_on_mint`, `check_marker_transposition`,
+  `check_revision_collisions` and `check_pdf_current` from "known red locally" into green,
+  measured.
+
+**And I had the remaining class WRONG too**: `check_depth`, `check_banked_config` and
+`check_env_fingerprint` are not clone-depth failures but **missing-dependency** ones —
+`numpy`/`scipy`/`camb` absent, where the fingerprint pins `numpy 2.4.6`, `scipy 1.17.1`,
+`camb 2.0.4`. None appears in CI's failure list, because CI installs `requirements-ci.txt`.
+
+⇒ **Guard: before calling something an environment limit, check whether the gate names its own
+remedy.** Two of these did, in the text I had already read to decide it was not mine.
+
+### ⓽ The PDF defect is the one a reader would have met
+
+`check_pdf_current` is a history check and states its own limit — *"a PDF committed later but
+built from an older `.tex` passes"* — so re-committing the stale artefact would have cleared
+it. Measured what that would have left in place, by extracting the text of both files:
+
+| | superseded cluster | published figures | register count |
+|---|---|---|---|
+| committed PDF | `220.0`, `536.3`, `1125.1` present | **absent** | "several hundred" |
+| recompiled | absent | `220.2`, `536.9`, `1123.9` present | "over twelve hundred" |
+
+So the file a reader opens carried *both* defects this revision fixed in the source. **A gate
+whose stated limit lets a wrong artefact pass is a gate to satisfy honestly or not at all.**
+
 ## Repeated mistakes, logged because they are repeats
 
 - **Backslash collapsing, for the third time.** `python3 -c "...\\times..."` inside double

@@ -149,19 +149,63 @@ a baseline of 1431, none mine), `check_cannot_fail`, `check_unread_figure`,
 as P18's structure predicts, now 1207 receipts, and no paper `\input`s it so no PDF moved.
 P18's served page regenerated and carrying both fixes at both sites.
 
-**Still red, and NOT mine — each verified red IDENTICALLY on a pristine `origin/main`
-worktree with ZERO differing finding lines, and none naming this receipt or its directory:**
-`check_tilt_pins` (2 stale entries, both in `L147_two_arm`), `check_banked_config`,
-`check_branches`, `check_depth`, `check_env_fingerprint`, `check_pins_adjudicated_on_mint`
-(*"a SHALLOW clone has no base to compare against"*), and `check_quote_pins` (518 of 524
-MEANING-HELD rows fail the ancestry test because **the shallow graft cuts the walk** — the
-commits exist as objects here but are not ancestors of HEAD; the counts are byte-identical to
-main's). `check_compile` is unrunnable here for want of a TeX toolchain, which is the gate
-refusing to call unrun a pass.
+### ⛔ CI NAMED TWO GATES, BOTH MINE, AND I FIXED THE CONTAINER RATHER THAN EXCUSE THEM
 
-**⌗ `check_revision_collisions` still FAILs on `r7811`, claimed by four of your own commits
-for different work** — `11a54fea5`, `92e43f4c7`, `30b013b29`, `0eb3daaa5`. Unchanged from
-`r7839`, and yours to dispose.
+`fast` went red on this head with exactly **`check_pdf_current check_prose_pins`** — and both
+were mine. ⇒ ***And correcting them retired most of what I had just finished calling "not
+mine", so that paragraph is withdrawn and replaced by this one.***
+
+**`check_prose_pins`** — 5 new sites, all this receipt's, all pins on a COUNT over P18.
+Adjudicated DELIBERATE with a reading each, in the same pass. Two of them exist *because* a
+membership test could not carry the claim.
+
+**`check_pdf_current`** — and this one mattered more than a stale timestamp. The gate's own
+words: *"a paper whose PDF is older than its source is served to a reader as something it no
+longer says."* That was literally true. Extracting the text of both files: **the committed
+PDF carried `220.0`/`536.3`/`1125.1` and "several hundred receipts", with the published
+figures ABSENT** — the artefact a reader opens still carried *both* defects this revision
+fixed in the source. ⛔ *And the gate is a HISTORY check that states its own limit — "a PDF
+committed later but built from an older `.tex` passes" — so re-committing the stale artefact
+would have turned it green and left the wrong figures in place. That is the same class as
+disabling a test to get green.* Compiled instead: `pdflatex` installed (**the gate's own
+remedy says "NO pdflatex HERE IS NOT A MISSING CAPABILITY: install it"** and names the
+packages), three passes, 0 errors, 62 pages before and after.
+
+**⌗ I WITHDRAW THE `r7811` ITEM, AND IT IS THE REPEAT OF A GUARD I WAS HANDED.** I reported
+`check_revision_collisions` as still failing on `r7811`, claimed by four of your commits,
+"yours to dispose". **On a full clone that gate exits 0** and `r7811` appears only as prose
+inside another commit's subject. It was a shallow-clone artefact: the gate saw 136 reachable
+revision-numbered commits against 3311 on the refs and said so under its own `⛔ HORIZON`
+banner. ⇒ ***And CI's failure list never contained it, which was the authority sitting in
+front of me — the standing cycle's own `check_branches`/`check_pins_adjudicated_on_mint`
+class, and I filed a routing note to you instead of reading it.*** Nothing for you to
+dispose.
+
+**So that the excuse cannot be reused, this container is now fixed rather than described:**
+the clone is unshallowed (**8810** commits, marker gone) and a TeX toolchain is installed.
+On real history, `check_branches`, `check_pins_adjudicated_on_mint`,
+`check_marker_transposition`, `check_revision_collisions` and `check_pdf_current` **all go
+green**, and `check_compile` now RUNS and passes — **all 18 papers at 0 errors, 0 undefined
+citations, 0 undefined refs, 0 dead receipt links**, which independently confirms this
+revision's `.tex` edits break nothing. `check_quote_pins`' 518 MEANING-HELD failures were the
+graft cutting the ancestry walk, exactly as described.
+
+**And what remained was a MISSING-DEPENDENCY class, not a clone-depth one — I had the cause
+wrong there too.** `check_depth`, `check_banked_config` and `check_env_fingerprint` were
+failing on `numpy`/`scipy`/`camb` being absent, not on history. Installing them at the
+versions `ENV_FINGERPRINT.txt` pins — `numpy 2.4.6`, `scipy 1.17.1` — turned
+**`check_depth` and `check_banked_config` green**. `check_env_fingerprint` is the last one
+standing and only because **`camb 2.0.4` will not install here**; note that it reads ABSENT
+rather than a different version, so nothing has moved under the corpus's float comparisons
+and no tolerance sweep is owed — and it is not in CI's failure list, because CI installs
+`requirements-ci.txt`.
+
+`check_tilt_pins` is then the only genuinely-not-mine red left: its 2 stale entries are both
+in `L147_two_arm`, and it is red identically on pristine `origin/main`.
+
+⇒ ***Net: of the seven gates I called "not mine" an hour ago, two were mine and fixed, four
+were my container and are now green, and one is actually not mine.*** The phrase was doing
+too much work.
 
 ---
 
