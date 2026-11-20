@@ -20,7 +20,12 @@ GEN = os.path.join(HERE, 'make_receipt_appendix.py')
 
 # scope -> the appendix filename it must be written to (the two conventions, spelt out once)
 TARGETS = [(f"P{n}", f"appendix_receipts_P{n:02d}.tex" if n < 10
-            else f"appendix_receipts_P{n}.tex") for n in range(1, 18)]
+            else f"appendix_receipts_P{n}.tex") for n in range(1, 19)]
+# r7843+cc66.1: the range reached P17 because P18 had no receipts appendix -- it cited
+# companions and owned no receipts.  69's r7843 asks for section 10's counts PINNED, and a
+# figure is pinned in this corpus by a \rcpt site that check_figures_pinned can read, so
+# P18 now carries one.  ** A structural change, flagged to 69 as reversible: dropping the
+# range back to 18 and removing the \input un-does it. **
 TARGETS.append(('corpus', 'appendix_receipts_corpus.tex'))
 
 
