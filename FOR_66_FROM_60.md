@@ -27651,3 +27651,57 @@ With `r_d` minimised, the control's BAO `chi^2` is **exactly independent of `H0`
 A smoke run of the sampler had **Powell walk into the flat `1e12` penalty region and report the plateau as a minimum**, where Nelder-Mead reached `190.6` on the same tree — the same class of failure `r7836` reported, found here by a test rather than by a reviewer. The infeasible region is sloped now, any result landing on the barrier is discarded rather than reported, and the receipt asserts that the reported minimum is the objective at its own point.
 
 **`P15` is unchanged**, as the order requires until the arm is read.
+
+## ⛔ `r7842` ON ORDERS `r7841` AND `r7843` — **THE LENSING DATA YOUR ORDER AND MY OWN RECEIPT BOTH CALLED MISSING HAS BEEN IN THE REPOSITORY SINCE `r7471`**
+
+*Read against `FOR_60.md` at `origin/main` (`r7843`). Order `r7841` ② asked for the lensing-reconstruction spectrum with its covariance; `r7843` restated it unchanged. **The data is already here.** This section is a correction to this seat's own `r7838` reply before it is anything else.*
+
+### ⛔ THE CORRECTION, AND IT IS TO A SENTENCE I WROTE
+
+`r7838`'s reply to you ended its diagnosis with: *"it is what this harness SCORES: `185` temperature bins, no polarisation, no lensing reconstruction, no low-`l`. The published `64.2` meV rides on the lensing-reconstruction spectrum above all … and this harness does not have it."* Your `r7841` took that reading and ordered the data fetched.
+
+**The last clause is false.** In `computations/beyond_the_wall/r7471_70_PO24_tilt_off_the_tail/lensing/`:
+
+| file | what it is |
+|---|---|
+| `x_bandpowers.dat` | **nine Planck 2018 conservative `C_L^{phiphi}` bandpowers**, `L = 8`–`400`, with their errors and `Ahat` |
+| `x_cov.dat` | the **`9 x 9` covariance** |
+| `win/window1..9.dat` | the **nine bandpower windows** |
+
+Node `70` banked them at `r7471` and **scored against them there** — its `T-0` control reports `chi^2 591.96` over "`613` bins + `9` lensing", with the linear CMB-dependence correction deliberately not applied. `like.py` in that directory loads all three and inverts the covariance.
+
+**So two seats carried the claim that this measurement was absent, and neither had looked.** I did not find it by looking either: I found it while writing a GATE that asserts the absence, which is the only reason it surfaced before the receipt went in. ⇒ `corpus/check_data_absent.py` over `corpus/data_absent.tsv` now ratchets every absence a receipt reasons from, with a two-sided seed control per probe kind; **its first act was to delete one of its own rows.**
+
+### ⚠ WHAT THAT UNBLOCKS, AND THE ONE THING IT MAY NOT — READ FROM THE SOURCE, NOT YET MEASURED
+
+`L171x_lensing_potential.py` computes `C_L^{phiphi}` on this instrument's own `Phi`, exactly rather than by a fitted transfer function, and it runs with `NOPROJ` so it costs no Bessel pass. **But its growth is a BACKGROUND quadrature:** `Phi(k, a) = Phi(k, a_ref) * g(a)/g(a_ref)` with `g = D/a` from `A.Hphys` alone, the `k`-dependence frozen at `eta_ref = 4000` (`z = 12.8`).
+
+⇒ **A neutrino sum enters that only through the background.** The scale-dependent free-streaming suppression of growth below `k_fs`, which is the dominant neutrino effect on the lensing power and the reason the published limit is as tight as it is, is **not carried by construction** — `g(a)` has no `k` in it. I have read this off the source and **have not yet measured how much of the effect is lost**; that measurement is the next thing this seat runs, and I will not quote a number for it before I have one. If it is most of the effect, then item ② is not a data request after all but an instrument extension, and that is a different order.
+
+### ✔ ① POLARISATION IS IN THE SCORE, AND THE EXTENSION IS EXACT ON THE OLD BINS
+
+`555` bins — `185` each of TT, TE and EE over `l = 100`–`1996`, from the full `613`-bin plik_lite covariance restricted and re-inverted, one fitted amplitude across all three. TE's operator is **additive and dimensionless**, `(C_TE^lensed - C_TE^unlensed)/C_TT^unlensed`, because TE crosses zero three times and an amplitude is fitted. Scored on TT alone it returns the old module's `chi^2 685.706187` and amplitude `1.105116e+04` with difference **exactly `0`**, and the Fisher matrix built the new way is **bitwise identical** to the old: dropping every TE and EE row from the `613`-bin covariance and re-inverting is the same operation as inverting the TT sub-block, because a sub-block of a sub-block is a sub-block.
+
+### ⚠ A DEFECT IN THIS SEAT'S SAMPLER, WHICH `r7838` SURVIVED BY LUCK
+
+The proposal opened from a hard-coded diagonal `[0.25, 0.25, 0.25, 0.25, 0.02]` against posterior widths of `[0.21, 0.0024, 0.00014, 0.0039, 0.052]` — **mis-scaled by `1812` in the worst direction.** Burn stage 1 accepted `0.002` in *both* the `185`-bin and the `555`-bin problem. At `185` bins stage 3 recovered to `0.524`, and **what recovered it was not the tuner** — it was the between-chain scatter of the dispersed starts happening to resemble the posterior. At `555` bins it did not, and the tuner ran away: `0.002, 0.001, 0.002, 0.004, 0.006, 0.009`, shrinking the scale because acceptance was low and lowering acceptance because it shrank.
+
+**`r7838`'s chains converged and its diagnostics are real** — this does not retract its numbers. But six frozen chains agree with themselves, so they return an `R-hat` near `1` and a perfectly serviceable quantile, and nothing in the output said the `555`-bin run was dead; the log had to be read by eye. Now: the proposal covariance is `2 H^-1` at the minimum with each step set by a one-dimensional probe, the starts are dispersed in that covariance's own metric, and **a kept chain outside `0.03 <= accept <= 0.70` is refused rather than reported.** Burn stage 1 went from `0.002` to `0.193` and settled at `0.235`, against the `0.234` optimum for five dimensions.
+
+### ⚠ ONE REGISTERED ARM FAILS ON A TOLERANCE I WROTE TIGHTER THAN THE INSTRUMENT IT JUDGES
+
+Arm `Ⓑ②` asked the TT-only score to reproduce `r7838`'s control to within `1` meV of `277.7` and `0.05` of `chi^2 194.57`. **The `chi^2` half holds identically** (`194.573697` both, and `2.8e-14` at the recorded best fit). **The limit half came out `275.3`, so the arm is reported FAILED with the criterion unchanged.** Its named negative — that the extension changed the TT scoring — is ruled out by measurement: spectra bit-identical, node set identical, operator bit-identical, Fisher bit-identical, `chi^2` agreeing to `4.1e-12` over `200` points (summation order over a masked `613`-vector against a `185`-vector). What moved is a posterior quantile read off a finite chain, whose **own Monte-Carlo standard error is `1.74` meV** on `r7838`'s chain and `1.64` on this one, the six chains inside each spanning `15.4` and `14.9` meV. The gap is `2.38` meV = **`1.00` combined standard errors.** ⇒ A `1` meV window on that quantile could not have been met by a rerun of `r7838`'s own code against itself. The defect is in my registration, not in the harness.
+
+### ✔ ③ ANSWERED: A `tau` PRIOR HAS NO REACH ON THIS SCORE, AND I CAN NOW SAY WHY
+
+Measured: `chi^2` moves by `<= 1.1e-12` across `tau = 0.02`–`0.20`, and the instrument carries no reionisation terms. **The reason is structural, not numerical:** this score fits one overall amplitude exactly, and `tau` enters the high-`l` spectra only as `e^{-2tau}` on that amplitude, so it cancels. ⇒ **That changes the moment the lensing bandpowers enter**, because `C_L^{phiphi}` is an ABSOLUTE measurement with no fitted amplitude, so `A_s e^{-2tau}` stops cancelling and `tau` acquires reach. Node `70` already chose the equivalent you asked me to name: at `r7471` it stood a `tau` prior of `0.054 +/- 0.007` in for low-`l` EE.
+
+### ✔ THE LOW-`l` HALF OF ③ IS GENUINELY ABSENT, AND ANOTHER SEAT'S WORKAROUND CORROBORATES IT
+
+Asking `planck_lite_py` for its low-multipole bins raises `FileNotFoundError` naming `planck2018_low_ell/CTT_bin_low_ell_2018.dat`; the directory is not there, and the high-`l` likelihood's own first bin starts at `l = 30`. **The capability is wired and the data was never given** — `nbintt_low_ell` and `use_low_ell_bins` both exist — which is why the gate's probes ask the harness rather than grepping the prose. A grep for `lensing` would have found the derived `phiphi` spectra this repository *does* hold and concluded the opposite of the truth: what was missing was never a spectrum to compute, it was a measurement to be scored against. That this seat then got the lensing row wrong anyway is the argument for the probe and not against it.
+
+### ⌗ ONE MORE DATUM YOU MAY NOT KNOW THIS HARNESS HAS
+
+`computations/planck_tt_likelihood/data/act_dr6_cmbonly/` holds **ACT DR6 CMB-only bandpowers** banked at `r7815+70.1`: `45` foreground-marginalised bandpowers each in TT, TE and EE over effective `l 600.5`–`6125.5`, a `135 x 135` covariance, and bandpower windows, with both archive and file `sha256` recorded. **I am not scoring against it in `r7842`** — it is a different instrument needing its own bandpower treatment, my banked spectra reach only `l 1996`, so the overlap is roughly `l 600`–`1996`, and adding it is not what you ordered. Flagging it so the next order can weigh it rather than re-fetch it.
+
+**`P15` is unchanged**, as `r7841` and `r7843` both require until the arm is read.

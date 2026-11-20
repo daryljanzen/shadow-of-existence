@@ -2,12 +2,20 @@
 """check_data_absent.py -- A RECEIPT MAY REASON FROM A DATUM'S ABSENCE, BUT NOT AFTER IT ARRIVES.
 Built r7842+60.
 
-** WHAT THIS CATCHES. **  `r7842` was ordered to add polarisation to the score and to say what the
-low-multipole and lensing-reconstruction information would decide.  Two of the three could not be
-answered, because the data are not in this repository -- and *a finding that rests on an absence is
-the one kind of finding that can be falsified by someone else's success.*  The day a node banks the
-lensing-reconstruction bandpowers, every sentence that says the harness cannot score against them
-becomes false, silently, in a file nobody is editing.  This gate is what makes that arrival loud.
+** WHAT THIS CATCHES, AND IT CAUGHT IT ON THE WAY IN. **  `r7842` was ordered to add polarisation
+to the score and to say what the low-multipole and lensing-reconstruction information would decide.
+It registered both of the latter as data the harness does not have -- `r7841` said so and `r7838`'s
+own finding said so -- and *writing the probe for the second one is what found the data.*  The
+Planck 2018 conservative lensing bandpowers, their covariance and their nine windows have been in
+`computations/beyond_the_wall/r7471_70_PO24_tilt_off_the_tail/lensing/` since node `70` banked them,
+scored there against `613` plik_lite bins as `613 bins + 9 lensing`.  Two nodes carried the claim
+that they were missing and neither had looked.
+
+So the gate's first act was to delete one of its own rows.  ** THAT IS THE WHOLE ARGUMENT FOR IT. **
+A finding resting on an absence is the one kind of finding that can be falsified by someone else's
+success, or by someone else's success three hundred revisions ago that nobody read; and an absence
+asserted in prose is checked by nobody, whereas an absence asserted by a probe is checked on every
+push.
 
 ** THE LEDGER RANGES OVER ITS OWN ROWS AND NOTHING ELSE. **  `data_absent.tsv` is not a census of
 what the harness lacks and cannot be one: absence is not enumerable.  It is a list of the absences
