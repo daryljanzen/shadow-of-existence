@@ -76,11 +76,11 @@ LAM_P16 = lam(68.60, 0.2973)
 LAM_RCPT = 1.1056e-52
 M_PROG = 4.17e52
 
-check('Ⓑ① P16\'s own stated background (68.60, 0.2973) gives Lambda = 1.1593e-52',
+check('Ⓑ① the distance data\'s background (68.60, 0.2973) gives Lambda = 1.1593e-52',
       abs(LAM_P16 - 1.1593e-52) <= 0.00005e-52, f'{LAM_P16:.5e}')
 TAU_P16 = lap_turnaround_gyr(LAM_P16)
 TAU_RCPT = lap_turnaround_gyr(LAM_RCPT)
-check('Ⓑ② PINNED the lap turnaround pi*alpha/3 on P16\'s background is 17.806 Gyr -> 17.8',
+check('Ⓑ② PINNED the lap turnaround pi*alpha/3 on the distance data\'s background is 17.806 Gyr -> 17.8',
       abs(TAU_P16 - 17.806) <= 5e-3, f'{TAU_P16:.4f}')
 check('Ⓑ③ PINNED the same expression on Lambda = 1.1056e-52 is 18.234 Gyr -> 18.2',
       abs(TAU_RCPT - 18.234) <= 5e-3, f'{TAU_RCPT:.4f}')
@@ -89,7 +89,7 @@ RATIO_RCPT = M_PROG / nariai_cap_kg(LAM_RCPT)
 RATIO_P16 = M_PROG / nariai_cap_kg(LAM_P16)
 check('Ⓑ④ PINNED A/A_Nariai = 0.9768 reproduces ONLY on Lambda = 1.1056e-52',
       abs(RATIO_RCPT - 0.9768) <= 5e-5, f'{RATIO_RCPT:.6f}')
-check('Ⓑ⑤ PINNED on P16\'s own background the same progenitor is AT the cap, 1.0003',
+check('Ⓑ⑤ PINNED on the distance data\'s background the same progenitor is AT the cap, 1.0003',
       abs(RATIO_P16 - 1.0003) <= 5e-5, f'{RATIO_P16:.6f}')
 check('Ⓑ⑥ so the margin the paper\'s sub-Nariai requirement needs is gone on its own '
       'background -- the ratio crosses 1', RATIO_RCPT < 1.0 < RATIO_P16,
@@ -187,7 +187,7 @@ check('Ⓒ⑧ PINNED c_s at turnaround is printed to two significant figures, an
       '0.0185 the running integral spans 0.29812 to 0.31105',
       abs(RUN_LO - 0.29812) <= 5e-5 and abs(RUN_HI - 0.31105) <= 5e-5,
       f'{RUN_LO:.6f} .. {RUN_HI:.6f}')
-check('Ⓒ⑨ so the paper\'s printed 0.304 lies INSIDE that band, and 0.3046 is the band\'s '
+check('Ⓒ⑨ so the printed 0.304 lies INSIDE that band, and 0.3046 is the band\'s '
       'centre rather than a disagreement with it', RUN_LO < 0.304 < RUN_HI,
       f'{RUN_LO:.5f} < 0.304 < {RUN_HI:.5f}')
 check('Ⓒ⑩ PINNED and the frozen leg is insensitive to that input, spanning 3.56352 to 3.56698, '
@@ -215,7 +215,7 @@ check('Ⓒ⑫ SO THIS RECEIPT IS NOT CITED AT THAT SENTENCE, and the reason is r
 
 # the background this receipt reads, pinned as printed in P16
 H0_P16, OM_P16 = 68.60, 0.2973
-check('Ⓑ⑨ PINNED the background is P16\'s own printed pair, H0 = 68.60 and Om = 0.2973',
+check('Ⓑ⑨ PINNED the background is the distance data\'s pair, H0 = 68.60 and Om = 0.2973',
       abs(H0_P16 - 68.60) <= 5e-3 and abs(OM_P16 - 0.2973) <= 5e-5
       and abs(lam(H0_P16, OM_P16) - LAM_P16) <= 1e-60, f'Lambda = {LAM_P16:.5e}')
 
@@ -288,7 +288,7 @@ LN_INV_ETA = math.log(1.0 / ETA)
 check('Ⓔ① PINNED ln(1/eta) = 21.22 at eta = 6.09e-10',
       abs(LN_INV_ETA - 21.22) <= 5e-3, f'{LN_INV_ETA:.5f}')
 T9_FROM_TD = t9(0.07)
-check('Ⓔ② PINNED the paper\'s own T_D = 0.07 MeV is T_9 = 0.812',
+check('Ⓔ② PINNED a T_D of 0.07 MeV is T_9 = 0.812',
       abs(T9_FROM_TD - 0.812) <= 5e-4, f'{T9_FROM_TD:.5f}')
 KT_NSE_D = B_D / X_D_NSE
 check('Ⓔ③ PINNED and the NSE deuterium threshold is 0.0678 MeV, which is the 0.07 the paper '
