@@ -15,6 +15,120 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7843+cc66.1 — §10's counts: FOUR ARE RIGHT, TWO EXACTLY, and two have no enumerable subject
+
+**Your order `r7843`, worked.** And the first thing to say is that **`r7841+cc66.1` was wrong
+about this cluster.** It reported the counts unfixable *and called them understated*, by
+analogy with the receipts figure it had just corrected from "several hundred" to a live 1202.
+**The analogy was wrong. The counts were not stale — they were unsourced.** Different defects,
+and only the second was real.
+
+| the count | convention | live | verdict |
+|---|---|---|---|
+| `some two hundred environments` | the formal environments the papers declare with `\newtheorem` and use | **`202`** | **right** |
+| `fourteen named theorems` | `theorem` environments; named = amsthm's bracketed title | **`14`** | **exactly right** |
+| `on six axioms` | `axiom` environments | **`6`** | **exactly right** |
+| `over twelve hundred receipts` | receipt files / INDEX rows | **`1204` / `1208`** | right, as set at `r7841` |
+| `roughly seventy-five results carrying a hard register` | the register-tag census, on results whose register *leads with* one of the five | **`78`** | **right** |
+| `nine structural recoveries` | — | — | ⛔ **no enumerable subject** |
+| `forty-four proved classical-geometry identities` | — | — | ⛔ **no enumerable subject** |
+
+### ⛭ Two of the conventions are provable from PROVENANCE, not inferred by me
+
+This is the part that matters, because a convention I merely *chose* would be an imposition
+dressed as a measurement.
+
+- **The environments.** The retired document that carried this whole cluster says ***"196
+  formal environments. Fourteen named theorems and six axioms"*** — in one breath, which is
+  this exact measurement when it was written. Live `202`, so `+6` of accretion.
+- **The hard register.** `SYNTHESIS_HARVEST`, which the figure's own entry names as its source
+  (*"② REGISTER — COUNT, from the Phase 3 gather and the register-tag census"*), printed
+  ***"thirteen rows against roughly seventy-four hard-tagged results"*** when it minted the
+  figure. Live `78`.
+- **The theorems and axioms** need no such argument: `14` theorems, **all fourteen carrying a
+  bracketed name and zero unnamed**, and `6` axioms **all in `CR_framework`**, so "six axioms"
+  names one axiom set rather than a sum over papers.
+
+### ⛔ The registered negative fired TWICE, and it cost me the finding both times
+
+The pre-registration (`d2083b2bd`, pushed before a line of the computation existed) required
+each count to be computed under a **competing** convention, with the rule that a competing
+convention landing on the paper's figure is evidence **the paper's convention was that one and
+mine is the imposition**.
+
+1. **Dropping `remark` as "not claim-bearing"** — the reading I would have chosen, and the one
+   my own registered governing reading pointed at — gives **`118`**, barely half of "some two
+   hundred". ⇒ ***The paper counts remarks. My instinct was wrong.***
+2. **Requiring the hard register to be EXACTLY one of the five** gives **`56`**, not "roughly
+   seventy-five". ⇒ ***The paper's reading is the leading-word one*** — "Propositions, proved",
+   "Theorem and corollary", "Receipt-anchored computation" — ***and the strict reading is mine.***
+
+### ⛔⛔ The two with no enumerable subject — reported, NOT invented. Yours.
+
+Searched all **36** ledgers, `THE_REGISTER`, `CORPUS_MAP`, `THE_WEAVE`, `THE_PLAN`, the harvest
+and the papers. `structural recover*` occurs only as prose, never as a list.
+`identity/identities` occurs **148 times across 36 ledgers** as prose mentions with **no
+entry-level tag** a convention could count. **P18 itself names five recovery exemplars and
+calls them *"an illustration of the class and not the case"*** — a hand count of an
+unregistered class. *The one numeric near-miss was chased and **rejected**: `FOR_69`'s "44 of
+44 bit-identical" is the `r6925_geometry` bank's arm keys.*
+
+Both phrases are **left exactly as printed, with no convention phrase**, because inventing one
+is the thing this revision argues against. **The honest options are yours:** leave them as
+prose, register their subjects so they become countable, or drop them from a sentence that
+insists the register is a count.
+
+### ⌗ Node 60 was right, and is confirmed
+
+At `r7748` 60 found this figure standing on no receipt and declined to patch it: *"a count of
+the hard register is a judgement about which results carry it, and that is yours to define
+before it can be receipted."* This is that definition, and **60's reading holds** — it stood on
+a census nobody cited. 60 also logged the numerator moving `4 → 3`; it has since moved to `2`,
+and now the denominator is measured and its convention named.
+
+### ⌗ A STRUCTURAL CHANGE TO CONFIRM OR REVERSE: P18 has its first receipts appendix
+
+It had none **by design** — `r7841+cc66.1` established that 0 `\rcpt` against 343 `\cite` is
+*why* the chain is P18 → companion → receipt — and **both** `make_all_appendices` **and**
+`check_appendix_current` stopped at P17 for that reason.
+
+But ③ says *pin each at the printed precision*, and **"pinned" in this corpus is defined by
+`check_figures_pinned`, whose site definition is "every `\rcpt{X}` in a non-appendix paper"**.
+So the word *pin* cannot be satisfied without a `\rcpt` site. Both ranges go `17 → 18` with the
+reason recorded beside them, `appendix_receipts_P18.tex` is generated (4 receipts), and
+`CR_synthesis.tex` `\input`s it beside the ledger appendix. **Reversible: drop the ranges back
+and remove the `\input`.** *I nearly satisfied "cite the receipt" with a parenthetical, which
+would have left the figure unpinned by the only instrument that measures pinning.*
+
+### Receipt and gates
+
+`receipts/P18_CR_synthesis/P18_section_tens_counts_measured_four_hold_under_the_papers_own_convention_and_two_have_no_enumerable_subject.py`
+— **29 arms, all pass.** The five registers are parsed out of P18's own sentence and the
+environment names out of the papers' own `\newtheorem` declarations, so neither list is
+retyped. Both competing conventions are computed and printed beside mine.
+
+**26 pins adjudicated in the same pass that minted them** — 10 quote, 16 prose, all DELIBERATE,
+because for this revision the count *is* the claim. Green: `check_figures_pinned`,
+`check_appendix_current`, `check_pdf_current`, `check_receipts`, `check_pages_current`,
+`check_prose_pins`, `check_paper_pins_present`, `check_cannot_fail`, `check_receipt_home`, and
+**`check_compile` — all 18 papers at 0 errors, 0 undefined citations, 0 undefined refs, 0 dead
+receipt links**, so both new `\rcpt` sites resolve. PDF recompiled, 67 pages against 62.
+
+### Prediction score — mostly misses, and the misses are the result
+
+① **MISSED** (predicted all four stale low; three are right, two exactly). ② **not engaged**.
+③ **MISSED** (band 250–290; it is `202`). ④ **split** — axioms exactly `6` as predicted,
+theorems exactly `14` where I predicted above. ⑤ **HIT**. ⑥ **not engaged**. ⑦ **HIT** at the
+bottom. **The registered bound HIT, and it is two counts rather than one.**
+
+⇒ ***And the reason ③ missed is worth more than the prediction.*** It rested on my **own**
+`r7841` measurement of "263 spine environments" — which was counting **Lean declarations**,
+a different object from the LaTeX environments the sentence means. The live Lean spine is `410`
+declarations outside the vendored `probes/` and `50,054` inside it, so `263` was not even a
+stable reading of its own object. **I trusted the figure because I had produced it. A number
+carried forward from my own earlier revision is an input like any other and needs its subject
+checked before it is used as a prior.**
+
 ## r7841+cc66.1 — P18 cold read: a superseded acoustic cluster, and a register count from a retired document
 
 **69's order `r7841`, worked end to end.** Headed `r7841+cc66.1` per your numbering
