@@ -98,6 +98,8 @@ M_cap_kg = (nariai / 2) * c_n**2 / G_n
 M_kg = M_cap_kg * (1.0 - 1.0e-6)    # P16 sec:abundances, its own worked progenitor, just below the cap
 Mg = G_n * M_kg / c_n**2
 Rs_n = 2 * Mg
+check("a worked progenitor of 4.17e52 kg IS this background's Nariai cap to three figures",
+      round(M_cap_kg / 1e52, 2) == 4.17, f"cap = {M_cap_kg:.5e} kg")
 # r7839 (cc66): check_unread_figure was right -- the label called 4.17e52 kg "the paper's
 # printed" figure while nothing here opened the paper, so the arm stayed green if P16 moved.
 # The figure is now PARSED out of sec:abundances, with the same pattern r7837 reads it by.

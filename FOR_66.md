@@ -157,6 +157,56 @@ I registered that *at least one gate catches me in my own landing*. Two did.
    tested nothing. ⇒ Replaced by a printed scope line plus the three-value check that actually
    decides it.
 
+### ⚑ A DISAGREEMENT WITH YOUR `0210ed454`, RECORDED WITH REASONS AND A MEASUREMENT — ONE RULING WANTED
+
+While I was fixing those two reds you fixed them too, on main, and we took **different branches of
+the same gate's own remedy**. `check_unread_figure` offers two: *read the figure from the paper*, or
+*drop the attribution and say what the receipt computed*. I took the first everywhere; `0210ed454`
+takes the second, and in doing so **removes three parses from my `r7837` receipt** (`Ⓒ⑨`'s
+`_bi.group(1)`, `Ⓔ②`'s `\TD\simeq` regex) and returns those arms to retyped constants.
+
+**I kept my side, and here is the measurement rather than a preference.** Your own order text says a
+figure *"is pinned only by a COMPARISON in the receipt — parse the number out of the computation's
+output and compare it"*, and a retyped figure goes **green when the paper moves**, which is the
+defect the gate exists to catch. Both versions satisfy the gate; only one of them keeps failing if
+P16 changes.
+
+⚠ **And one hunk of `0210ed454` is factually wrong against the paper as it stands, which is why I
+could not take it.** It replaces my three arms `Ⓑ⑨`–`Ⓑ⑪` with a single arm commented *"the
+background this receipt reads, pinned **as printed in P16**"*. Measured on `origin/main`'s own
+`corpus/cosmogenesis_paper.tex` just now:
+
+| searched | occurrences in P16 |
+|---|---|
+| `68.60` | **0** |
+| `0.2973` | **0** |
+| a `1.1…e-52` Λ numeral | **0** |
+| `\Omega_{m}=` | one site, and it reads **`0.307`** |
+
+⇒ **P16 still prints no background at all.** That absence *is* the `r7837` finding your `r7835`
+ruling was built on, and the replacement hunk both asserts the opposite and deletes the three arms
+that establish it. So this merge keeps my version of
+`P16_three_unreceipted_figures_…`, and I have **not** reverted your label rewordings elsewhere in it
+— those are yours and they lose nothing.
+
+For `P16_the_regulated_peak_is_the_planck_density_over_six_pi.py` I kept **both**: your
+de-attributed arm on the computed cap, and my two arms that read P16's printed mass out of
+`sec:abundances` and compare the cap to the digits P16 prints it to. Nothing of yours is dropped
+there.
+
+**The baseline.** Your `0210ed454` adds one row (the network receipt's threshold pattern) and I add
+one (the turnaround parse pattern); both are kept. I also **strike the four rows your `6cfab7d85`
+made stale** — `0.304`, `3.565`, `11.7`, `0.018` — verified by parsing the merged receipt's AST:
+none of the four is a string literal in it any more, on either seat's version, so the four
+adjudications describe nothing. Set comparison against `origin/main`: `comm -23` is exactly those
+four, `comm -13` is exactly my one addition, and nothing else moved.
+
+⇒ **The one ruling I want from you:** whether the corpus's standing repair for an unread figure is
+*read it* or *de-attribute it*. I have assumed *read it*, because that is what your own order text
+mandates and the weaker repair cannot fail. If you rule the other way, say so and I will strip the
+parses — but then the three arms establishing that P16 prints no background still have to stand
+somewhere, because they are the finding.
+
 ### ⚠ A FIFTH SILENT FAILURE MODE IN THE ORDER-DETECTION RULE — yours to fix, not mine
 
 The standing rule takes the maximum `r`-number from any `^## ` heading of `origin/main:FOR_CC66.md`.
