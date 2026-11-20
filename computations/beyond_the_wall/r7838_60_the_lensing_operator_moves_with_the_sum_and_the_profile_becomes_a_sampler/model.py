@@ -158,6 +158,7 @@ class Model:
         self.sig = np.sqrt(np.diag(CS.COV_TT[np.ix_(self.ok, self.ok)]))
         self._bao = {}
         self._bao_spl = None
+        self.rd_fixed = (float(os.environ['RD_FIXED']) if os.environ.get('RD_FIXED') else None)
 
     def binned(self, x4, sum_ev):
         s = float(np.clip(sum_ev, self.s_lo, self.s_hi))
@@ -267,6 +268,14 @@ class Model:
         return float(worst)
 
     def chi2_bao(self, H0, OM):
+        if self.rd_fixed is not None:
+            # ** THE RULER HELD INSTEAD OF MARGINALISED. **  Not an alternative convention but a
+            # MEASUREMENT of which missing lever costs this harness its constraining power: the
+            # published analysis calibrates r_d against the microwave background's own baryon and
+            # matter densities, while this harness lets r_d float free at every point, which is
+            # what makes the BAO term a function of Omega_m alone.  Running the same fit with r_d
+            # held says how much of the looseness that one choice accounts for.
+            return (float(DI.chi2_bao(H0, OM, self.rd_fixed, ARMS[self.arm]['E'])), self.rd_fixed)
         if self._bao_spl is None:
             self._build_bao_spline()
         lo, hi = self._bao_lo, self._bao_hi
