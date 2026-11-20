@@ -10,6 +10,61 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7831/r7835: CAMPAIGN 145 — 72's Y10–Y17 CENSUSED, ALL EIGHT CORED ROWS BUILT (E1–E8) AND LANDED IN P14, P15 AND P16; THE REGISTERED STOP DID NOT HOLD; NO MATHLIB GAP (`r7835+71.1`–`.2`)
+
+**The records** are `computations/formalisation/r7835_71_campaign145/PREDICTION.md` (the census and the
+registration, written before any Lean) and `RESULT.md`. **The probe** is the new standalone
+`probes/NeutrinoSector.lean` (`ns_`, 201 lines; band 200–500, estimate 320).
+
+**Verification:**
+- 0 errors and 0 warnings;
+- 12 axiom lines: eleven are the standard three, and `ns_dims` uses `[propext]` alone;
+- the forbidden-token grep is clean, and the only import is Mathlib;
+- `check_no_sorry` reports ALL 29.
+
+**The census:** the five paragraphs that cite a Y10–Y17 receipt, at P14:914, P15:258, P16:669, P16:681 and P16:804.
+
+**Rows BUILT:**
+- **E1:** the seesaw relation.
+- **E2:** the channel dimensions.
+- **E3:** sixteen slots filled bijectively, the four colourless ones once each.
+- **E4:** the `ΔN_eff` floor and bound, `0.14` and `0.29`.
+- **E5:** `T_dec` at the collider bound.
+- **E6:** the neutrino-mass scale arithmetic and the strong-CP caps.
+- **E7:** the gravitational Majorana splitting against the solar bound, between `10⁸` and `2×10⁸`.
+- **E8:** for any couplings, the neutral mass matrix `[[0, D], [Dᵀ, M_S]]` has rank `≤ 2n`, so it has at least
+  `6 − n` zeros. With `n ≤ 4` there are at least two; with `n = 3` there are three. This is the Lean form of "the two
+  measured splittings need at least five".
+
+**Beyond:**
+- the `SU(4)` Casimir decompositions (no `su(4)` representation theory);
+- the `S⁵` Dirac spectrum and the `S⁴` index (no spin geometry).
+
+**No formal core:**
+- Y10: network outputs;
+- Y15 and Y16: estimates;
+- Y17: random draws, and its Majorana reading, which is interpretive. Its one exact statement is E7.
+
+**Landed** in four plain paragraphs after their claims:
+- P14, after the Y12–Y14 paragraph;
+- P15:258;
+- P16's Y17 paragraph;
+- P16's `N_eff` paragraph.
+
+The landings write the receipts' distinctive inputs in words, which keeps the transposition gate clean. PDFs and
+served pages are rebuilt. All the touched gates pass on the committed tree except one.
+`check_formalisation_join` reads UNANSWERABLE locally until CI records the formalisation-mathlib run for the new
+`.lean` tree.
+
+**Against the registration:**
+- the joint event (p 0.55) held;
+- the named stop, E8 (p 0.75), did not hold, because `fromRows_mul_fromCols` gave the split directly;
+- the size is 201 lines, at the band's floor.
+
+Awaiting your next order.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched.*
+
 ## ✔ re r7829: CAMPAIGN 144 LANDED — ALL FOURTEEN ROWS CITED BESIDE THEIR CLAIMS, NINE SITES IN P14 (6), P15 (1) AND P18 (2); THREE PDFS REBUILT (`r7829+71.1`–`.2`)
 
 **The records** are `computations/formalisation/r7829_71_landing144/PREDICTION.md` (the sites, registered before any
