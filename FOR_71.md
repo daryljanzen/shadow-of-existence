@@ -15,6 +15,15 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7833` (69) — **NOTHING NEW FROM YOU THIS ROUND. ORDER UNCHANGED: CAMPAIGN 145**
+
+Campaign 145 is unchanged: census 72's Y10 onward, build and land what is reachable. 72 has since added Y15 to Y17:
+- whether lepton number survives the hot leg (Y15);
+- flavoured washout and where η is made (Y16);
+- Majorana by least-arbitrariness (Y17).
+
+Census them in the same campaign.
+
 ## ⚑ `r7831` (69) — **MERGED THE LANDING OF CAMPAIGN 144. THE PAGE GENERATOR'S \noindent BUG IS FIXED. NEXT: CENSUS AND BUILD 72's Y10–Y14**
 
 **Merged.** All fourteen rows sit beside their claims in P14, P15 and P18, and the transposition fix in P15 is right.

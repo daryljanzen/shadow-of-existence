@@ -175,7 +175,19 @@ RHO_PRINTED = float(_r[0]) * 1e-2
 # and the generating receipt's own Lambda is read out of ITS source, so this pin fails if it moves
 _GEN = 'P16_the_progenitor_composition_is_bracketed'
 SRC_GEN = io.open(os.path.join(HERE, _GEN + '.py'), encoding='utf-8', errors='replace').read()
-LAM_RECEIPT = float(re.search(r'^LAM, MPC = ([0-9.e+-]+),', SRC_GEN, re.M).group(1))
+# ⛭ r7833 (69): FORK (1) RULED -- branch (i), the receipt takes the background the distance data fix.
+#   STATE A: the generating receipt still carries the standard model's literal Lambda (the defect).
+#   STATE B: it computes Lambda from the distances' point (H0, Omega_m) = (68.60, 0.2973) (repaired).
+_mA = re.search(r'^LAM, MPC = ([0-9.e+-]+),', SRC_GEN, re.M)
+_mB = re.search(r'^_H0_SI = ([0-9.]+)e3 / 3\.0857e22\nLAM = 3\.0 \* _H0_SI \*\* 2 \* \(1\.0 - ([0-9.]+)\)', SRC_GEN, re.M)
+GEN_STATE_B = _mA is None and _mB is not None
+if _mA is not None:
+    LAM_RECEIPT = float(_mA.group(1))
+else:
+    _h = float(_mB.group(1)) * 1e3 / 3.0857e22
+    LAM_RECEIPT = 3.0 * _h ** 2 * (1.0 - float(_mB.group(2))) / 2.99792458e8 ** 2
+print('  generating receipt: %s, Lambda = %.4e' % ('STATE B -- on the distances\' background' if GEN_STATE_B
+                                               else 'STATE A -- the standard model\'s literal', LAM_RECEIPT))
 # the frozen-mode margin, read from the receipt's own print line AND from the paper
 SRC_FROZEN = io.open(os.path.join(HERE, 'P16_every_mode_is_frozen_at_the_crossing.py'),
                      encoding='utf-8', errors='replace').read()
@@ -333,11 +345,16 @@ check('Ⓕ⑥ the paper\'s own printed mass and equality radius return 0.0545, a
       'with a mass of 4.269e52 kg '
       'rather than the 4.17e52 the paper names',
       abs(rho_paper - 0.05450) < 0.00002
-      and abs(rho_receipt - 0.05386) < 0.00002
-      and abs(M_receipt_kg - 4.269e52) / 4.269e52 < 0.0004
-      and abs(LAM_RECEIPT * 1e52 - 1.1056) < 0.0004
       and abs(M_PAPER_KG * 1e-52 - 4.17) < 0.004
-      and rho_paper > rho_receipt,
+      and ((not GEN_STATE_B
+            and abs(rho_receipt - 0.05386) < 0.00002
+            and abs(M_receipt_kg - 4.269e52) / 4.269e52 < 0.0004
+            and abs(LAM_RECEIPT * 1e52 - 1.1056) < 0.0004
+            and rho_paper > rho_receipt)
+           # STATE B: the receipt's Nariai cap IS the paper's mass and returns the paper's rho
+           or (GEN_STATE_B
+               and abs(M_receipt_kg - M_PAPER_KG) / M_PAPER_KG < 0.002
+               and abs(rho_receipt - rho_paper) < 0.00005)),
       'paper %.5f, receipt %.5f, M_receipt %.3e' % (rho_paper, rho_receipt, M_receipt_kg))
 
 # ---------------------------------------------------------------------- G (7)
@@ -355,7 +372,7 @@ check('Ⓖ⑦ the four-figure closure the paper asserts holds on either self-con
       'the mass as the single quantity that moved',
       abs(clos_paper - A_EQ_MPC) < 0.0005
       and abs(clos_receipt - A_EQ_MPC) < 0.0015
-      and abs(clos_mixed - A_EQ_MPC) / A_EQ_MPC > 0.02
+      and (GEN_STATE_B or abs(clos_mixed - A_EQ_MPC) / A_EQ_MPC > 0.02)
       and abs(CLOSURE_PRINTED - clos_paper) < 0.0005
       and abs(A_EQ_MPC - 1.4905) < 0.00004,
       'paper %.4f, receipt %.4f, mixed %.4f' % (clos_paper, clos_receipt, clos_mixed))

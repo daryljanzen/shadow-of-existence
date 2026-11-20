@@ -607,6 +607,13 @@ for _nm, _h, _l in (('namesake', _MHNS, _MNSK), ('ARM OF RECORD', _MHAO, _MAOR))
           f"{' '.join(f'{a - b:+.2f}' for a, b in zip(_h['pk'], _l['pk']))}  "
           f"P1/P2 {100 * (_h['p12'] / _l['p12'] - 1):+.3f}%  "
           f"P1/P3 {100 * (_h['p13'] / _l['p13'] - 1):+.3f}%")
+# r7831 (69): P15 sec:refit-bound now prints the heights' agreement as this measurement gives it,
+#   0.011 and 0.017 per cent on the arm of record, rather than inviting a difference of two rounded ratios.
+check("the two instrument paths agree on the arm of record's height ratios to 0.011 per cent on P1/P2 "
+      "and 0.017 on P1/P3 through one matched locator, the figures P15 prints",
+      round(abs(100 * (_MHAO['p12'] / _MAOR['p12'] - 1)), 3) == 0.011
+      and round(abs(100 * (_MHAO['p13'] / _MAOR['p13'] - 1)), 3) == 0.017,
+      f"P1/P2 {100 * (_MHAO['p12'] / _MAOR['p12'] - 1):+.5f}%, P1/P3 {100 * (_MHAO['p13'] / _MAOR['p13'] - 1):+.5f}%")
 print(f"    against which the paper's own printed pair, l.2072-2074, offers "
       f"-0.04 -1.90 -2.60 -3.47 -- hier located sub-bin, line-of-sight quantised to even `ell`")
 
