@@ -110,9 +110,25 @@ def clpp(ls, mnu_ev, etaref=None, growth=None):
 
 
 def bin_through(ls, cl, wins):
-    """the nine bandpowers, each a weighted sum of `C_L^phiphi` over its own window's L"""
+    """the nine bandpowers, in the convention the BANKED DATA is in and not in raw `C_L^phiphi`
+
+    ** THE CONVENTION IS `[L(L+1)]^2 C_L^phiphi / (2 pi)`, AND IT IS READ OFF THE CODE THAT ALREADY
+    SCORES THESE BANDPOWERS rather than guessed. **  `r7471+70`'s `like.py` says it in one line --
+    `PPm = pp[:, 0] * (L * (L + 1)) ** 2 / (2 * np.pi)   # raw C_L^phiphi -> [L(L+1)]^2 C/2pi` --
+    and then bins THAT through these same nine windows.
+
+    ⌗ The first version of this function binned raw `C_L^phiphi`.  The normalisation check caught
+    it at once: the implied amplitude drifted by a factor `1.9e5` across the nine bins, rising with
+    `L`, which is what a missing `L^4` looks like -- `(377/28)^4` is `3.3e4`, the right order.  *A
+    constant offset would have been invisible and would have biased the neutrino limit; a drift is
+    not, which is the whole reason the check is a drift test and not a magnitude test.*
+    """
     spl = CubicSpline(ls, cl)
-    return np.array([float(np.sum(w * spl(L))) for L, w in wins])
+    out = []
+    for L, w in wins:
+        Lf = L.astype(float)
+        out.append(float(np.sum(w * spl(L) * (Lf * (Lf + 1.0)) ** 2 / (2.0 * np.pi))))
+    return np.array(out)
 
 
 def main():
