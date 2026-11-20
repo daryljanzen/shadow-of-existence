@@ -201,7 +201,7 @@ P18T = re.sub(r'\s+', ' ',
 # put a convention phrase after "receipt-anchored", so the receipt stopped parsing the
 # sentence it had just annotated.  Matched on the five words themselves, so it reads the
 # sentence before and after the annotation.
-_named = re.search(r'a hard register --- ([a-z]+, [a-z]+, [a-z]+, [a-z]+, [a-z-]+)', P18T)
+_named = re.search(r'a hard register\s+---\s+([a-z]+,\s+[a-z]+,\s+[a-z]+,\s+[a-z]+,\s+[a-z-]+)', P18T)
 # read in a statement, not a ternary: the pin operator reads a ternary as a disjunction of
 # two arms and flags it ALT/XOR, which this is not.
 PAPER_FIVE = ()
