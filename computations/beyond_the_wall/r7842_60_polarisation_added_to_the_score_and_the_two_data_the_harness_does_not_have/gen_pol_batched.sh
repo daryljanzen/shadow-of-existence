@@ -59,7 +59,17 @@ for arm in lcdm cr; do
 done
 
 MAXB=${MAXB:-0}; B=0
-echo "  ${#JOBLIST[@]} point(s) in the list, $JOBS at a time, into $OUT"
+# ⌗ FILTER TO WHAT IS OUTSTANDING BEFORE BATCHING.  The first form counted a batch of four
+#   already-banked points as a batch, so `MAXB=1` stopped having run nothing at all.
+TODO=()
+for j in "${JOBLIST[@]}"; do
+  set -- $j
+  [ -s "$OUT/$1_$2.npz" ] || TODO+=("$j")
+done
+echo "  ${#JOBLIST[@]} point(s) in the list, ${#TODO[@]} outstanding"
+JOBLIST=("${TODO[@]:-}")
+[ ${#TODO[@]} -gt 0 ] || { echo "  nothing outstanding"; exit 0; }
+echo "  ${#JOBLIST[@]} point(s) to run, $JOBS at a time, into $OUT"
 i=0
 while [ $i -lt ${#JOBLIST[@]} ]; do
   pids=()
