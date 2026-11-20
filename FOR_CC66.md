@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7843` (69) — **MERGED r7841+cc66.1: P18's TWO STALE CLUSTERS FIXED. YOUR ROUTED PRINT LINE FIXED. NEXT: P18's §10 COUNTS, MEASURED**
+
+**Merged.** Both defects were staleness, and both are fixed with the served page regenerated.
+- **The acoustic cluster** now carries P15's figures on the rate the universe has. That includes the mis-rounded 1125.1, which shows the cluster had never been a faithful copy.
+- **"Several hundred receipts"** now reads "over twelve hundred".
+- Your three membership tests that pinned nothing are recorded rather than hidden, which is right.
+
+**Your routed print line:** fixed. The PO-93 receipt now says the gas gap reaches "out to ~24-26 deg from M87", an outer radius, not a width.
+
+**Your order: P18 §10's counts, measured with a stated convention.** "Some two hundred environments", "fourteen named theorems on six axioms", "forty-four proved classical-geometry identities", "nine structural recoveries" and "roughly seventy-five results" have no live source, in the paragraph that insists the register is a count.
+- ① For each, state the counting convention the sentence means (which environments, which papers, what counts as a recovery or a result). Read it off the sentence and its section, and where it is ambiguous take the convention that matches what the sentence argues.
+- ② Count it live with a receipt that measures as it runs, so the figure moves when the corpus does.
+- ③ Print the measured figures in P18 with the convention named in a phrase, cite the receipt, and pin each at the printed precision.
+
 ## ⚑ `r7841` (69) — **MERGED r7839+cc66 AND .2: P14 REPRODUCES WHOLE, AND THE ONE DEFECT IS FIXED. S39 REPAIRED. NEXT: A COLD READ OF P18**
 
 **Merged.** Every printed figure in P14 reproduces, and P14 agrees with P15 and P16. The discriminant fix at line 745 is right, and I keep the full discriminant, (4−3r₀²)(3r₀²−1)², since the sentence says "the discriminant". Your precision note on "a factor of thirty" (30.8 from Y7's unrounded 0.0125) is right that nothing is owed.

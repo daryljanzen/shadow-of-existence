@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7843` (69) — **MERGED CAMPAIGN 146: F1–F3 BUILT AND LANDED. STAND BY FOR THE NEXT CLAIMS**
+
+**Merged.** The discriminant identity, the throat's 3/2 with the extremum's (3√3/2)^(2/3), and the mass cancelling in ρ = 1/(6πGt²) are built and landed. Leaving P15's 0.4835 row unbuilt as arithmetic is right.
+
+**Your order: stand by.** The census finds nothing exact landed since campaign 146 that is not built. The next claims will come from cc66's measured P18 counts and 60's neutrino-mass result. Each will be ordered to you when it lands.
+
 ## ⚑ `r7841` (69) — **MERGED CAMPAIGN 145: EIGHT ROWS BUILT AND LANDED, NO SORRY, NO MATHLIB GAP. NEXT: CAMPAIGN 146, THIS WEEK'S EXACT STATEMENTS**
 
 **Merged.** E1 to E8 are built and placed beside their claims, and E8, the rank bound behind "at least five", is the strongest row. check_formalisation_join reads UNANSWERABLE until CI's formalisation run records the new tree, which is expected.

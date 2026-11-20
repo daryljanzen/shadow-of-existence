@@ -15,6 +15,248 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7841+cc66.1 — P18 cold read: a superseded acoustic cluster, and a register count from a retired document
+
+**69's order `r7841`, worked end to end.** Headed `r7841+cc66.1` per your numbering
+correction in the same order — odd numbers are yours, so this is your revision plus a
+suffix, the form `check_revision_collisions` reads as a reply and not a claim.
+
+**⛭ First, the thing that would have wasted the revision if I had assumed it.** P18 is not
+P14 and the `r7839` method does not transfer. 3271 lines, **zero** `\rcpt` sites against
+P14's 118 over 98 receipts, 343 `\cite` sites instead, and **no receipts appendix at all** —
+its only appendix wiring is `\ldgappendix{appendix_ledgers_SYN}`. P18 restates results it
+does not own, so "check every figure against the receipt its sentence cites" has no purchase:
+the chain is **P18 → companion paper → that paper's receipt**.
+
+---
+
+### TWO SUBSTANTIVE DEFECTS, with their lines and what they should say. Both staleness.
+
+Both **predate the whole reachable window**: at the oldest commit this shallow clone reaches,
+`1125.1` and `536.3` are already present twice each and `several hundred receipts` once,
+while `220.2` is absent.
+
+**⓵ `sec:acoustic` l.1524 and the handover subsection l.1829 — a SUPERSEDED acoustic cluster.**
+P18 printed peaks `220.0`, `536.3`, `811.6`, `1125.1` with heights `2.291`/`2.349`, and
+**zero occurrences** of P15's current published figures. P15 l.938 now publishes, on the rate
+the universe has, `220.2`, `536.9`, `811.2`, `1123.9` with heights `2.207`/`2.249`, and gives
+the geometric-part reading a comb of `299.1`, those same `2.291`/`2.349`, and **no peak list
+at all**.
+
+**⇒ And the defect understated the construction's own result.** Against the sky's `2.221`
+and `2.262`, the published pair sits `0.63` and `0.57` per cent away; the printed pair
+`3.15` and `3.85` — **about five times worse** — in the section whose whole argument is that
+the geometric-part distance is the *wrong* one. The paper was conceding its own case.
+**l.1829 was the worse of the two sites**: it dropped the qualifier and called them "this
+arm's peaks", in the passage about what the derivation returns.
+
+**⛭ And the cluster was not even a faithful copy** — found only when I pinned the figures
+absolutely. P15's grid-convergence run gives `220.03`, `536.27`, `811.58`, `1125.02`. Three
+round exactly to what P18 printed. **The fourth does not**: `1125.02` rounds to `1125.0` and
+P18 printed `1125.1`, one unit in the last printed place above it. So the cluster was three
+grid figures rounded **and a mis-rounded fourth**.
+
+*Fixed, both sites, and the served page regenerated.*
+
+**⓶ `sec:displace` l.3176 — a register count sourced to a RETIRED document.** *"An evidence
+rail of **several hundred** receipts"*, with no citation, in the paragraph insisting *"the
+register is not an illustration but a count"*. The only other carrier of that cluster is
+`retired/WHAT_THE_FRAMEWORK_DELIVERS.md` l.1112 — *"196 formal environments... 684 receipt
+files"*. Measured live by the receipt as it runs: **1202** receipt files, **1207** INDEX
+rows, **1214** registered per CI's own scope line. The retired figure is **under three
+fifths** of the live count. *Fixed to "over twelve hundred receipts".*
+
+### REPORTED AND NOT FIXED — the rest of §10's cluster, and why
+
+*"Some two hundred environments"*, *"fourteen named theorems on six axioms"*, *"forty-four
+proved classical-geometry identities"*, *"nine structural recoveries"*, *"roughly seventy-five
+results"*. **No live source and no stated counting convention** — the live tree has `263`
+spine environments against the retired document's `196`, and without knowing which
+environments the sentence counts, "some two hundred" is neither confirmed nor refuted. Your
+order says fix those the sources settle; these the sources do not. **Yours.**
+
+---
+
+### CLEAN — each checked and closed, not assumed
+
+- **the comb `298.5`/`298.4`** — not a defect: P15 prints **both**.
+- **all four abundances** — match P16's headline display figure for figure. *Nearly
+  mis-sourced:* P16 l.806's `D/H = 2.50×10⁻⁵` is a right-handed-neutrino comparison run, not
+  the headline.
+- **the regulated peak** — verbatim with P16, and P18 does **not** restate the throat and
+  extremum radii you landed at `r7835`, so nothing there is stale.
+- **the discriminant** — qualitative in four places, **never** in the `4-3r_0^2` form, so
+  **r7839's P14 defect did not propagate**.
+- **the whole neutrino line 72 realigned** — `N_eff = 3.044`, the `0.14` floor stated as a
+  floor, `1.2×10¹⁵`, `3.5×10⁷`, `2×10¹³`: every figure parsed from both papers and compared
+  as numbers. **Clean end to end.**
+- **the Virgo gas probe** — P18's "out to `24°`–`26°`" matches `r7831`. **⌗ The loose
+  statement is a RECEIPT's, not P18's:** `P15_the_stellar_half_of_po93s_gate_...py`'s print
+  line calls the same angles `~24-26 deg **wide**` where its own computation makes them an
+  **outer radius**. Routed to you, not repaired from P18.
+
+---
+
+### THE SWEEP FOUND THREE MEMBERSHIP TESTS IN MY OWN RECEIPT THAT PINNED NOTHING
+
+Recorded rather than quietly fixed, because the third would have misled a reader.
+
+1. `'ten at the floor' in P18` — the phrase occurs **twice in the flattened paper**, the
+   second split across a line break, so `grep`, `sed` and a line-wise count all see one.
+2. `fig in P18 and fig in P14` for the lepton-number scale — **P14 carries it twice.**
+3. **⛔ The worst.** Four arms asserted the Virgo bound figures `1.70`, `2.35`, `1.85`, `6.4`
+   were *"printed identically in P18 and in JanzenSlicing"* — and **P18 does not print that
+   ratio at all.** Its `1.70` is the acoustic damping exponent. The arms passed on unrelated
+   digits in both files. **Deleted**, and replaced by a computation: P18's `24°–26°` **is**
+   the angular span of the `7` Mpc infall edge it prints in the same sentence, at the `15.8`
+   Mpc `r7831` projects from — `arctan(7/15.8) = 23.90°`, `tan(26°)×15.8 = 7.71` Mpc just
+   past that edge, while the `1.9` Mpc core subtends `6.86°`, which is the existing reach the
+   open item contrasts against.
+
+**And `check_figures_pinned` found the structural version of the same thing:** every arm
+compared one *parsed* reading against another — what your order asks — and a **relational
+pin passes when both sides drift together**. Rewrite P15 and P18 to one wrong cluster and
+`Ⓑ⑧` stayed green. 19 figures now pinned against their own values as well, which is what
+turned up the mis-rounded fourth peak above.
+
+---
+
+### Receipt, gates, structure
+
+`receipts/P18_CR_synthesis/P18_every_figure_traces_to_its_companion_and_the_two_defects_are_a_superseded_acoustic_cluster_and_a_register_count_from_a_retired_document.py`
+— **75 arms, all pass**, against a green unperturbed control from its own directory, and
+**32 of 33 perturbations of the sources bite** (the one silence is a probe of mine aimed at
+P14's discriminant, where the arm asserts about P18 and does not claim to pin P14).
+
+**⌗ A structural decision of yours to confirm or reverse: P18 had no declared receipt home.**
+`corpus/receipt_home.txt` declares P1–P17; **P18 is the one paper it never covered**, and
+P18's two pre-existing receipts sit in thematic directories (`L550_third_mechanism`,
+`L_probability`). So `receipts/P18_CR_synthesis` was a stray. I declared
+`P18  P18_CR_synthesis`, matching `P15_CR_cosmology` and its siblings, in the same commit as
+the directory — the gate's own stated remedy. The two thematic homes are untouched.
+
+**37 quote-pin keys minted and adjudicated in the same pass, after committing** (35
+DELIBERATE, 2 ALT-OK). The operator's report was **acted on, not verdicted around**: 11
+dangling spans widened to the clause naming their subject, 1 shortened to its minimal
+carrier, 1 substring-ALT pair collapsed to a single deciding arm, 1 pattern read twice read
+once, and 2 bracket-class pins given `\s` so `check_paper_pins_present` matches them as
+regexes rather than reading them absent from every paper. Instrument 3020, baseline 3020 —
+**nothing unadjudicated**.
+
+Green: `check_receipt_home`, `check_paper_pins_present`, `check_figures_pinned` (1431 against
+a baseline of 1431, none mine), `check_cannot_fail`, `check_unread_figure`,
+`check_appendix_current`. Appendices regenerated — only `appendix_receipts_corpus.tex` moved,
+as P18's structure predicts, now 1207 receipts, and no paper `\input`s it so no PDF moved.
+P18's served page regenerated and carrying both fixes at both sites.
+
+### ⛔ CI NAMED TWO GATES, BOTH MINE, AND I FIXED THE CONTAINER RATHER THAN EXCUSE THEM
+
+`fast` went red on this head with exactly **`check_pdf_current check_prose_pins`** — and both
+were mine. ⇒ ***And correcting them retired most of what I had just finished calling "not
+mine", so that paragraph is withdrawn and replaced by this one.***
+
+**`check_prose_pins`** — 5 new sites, all this receipt's, all pins on a COUNT over P18.
+Adjudicated DELIBERATE with a reading each, in the same pass. Two of them exist *because* a
+membership test could not carry the claim.
+
+**`check_pdf_current`** — and this one mattered more than a stale timestamp. The gate's own
+words: *"a paper whose PDF is older than its source is served to a reader as something it no
+longer says."* That was literally true. Extracting the text of both files: **the committed
+PDF carried `220.0`/`536.3`/`1125.1` and "several hundred receipts", with the published
+figures ABSENT** — the artefact a reader opens still carried *both* defects this revision
+fixed in the source. ⛔ *And the gate is a HISTORY check that states its own limit — "a PDF
+committed later but built from an older `.tex` passes" — so re-committing the stale artefact
+would have turned it green and left the wrong figures in place. That is the same class as
+disabling a test to get green.* Compiled instead: `pdflatex` installed (**the gate's own
+remedy says "NO pdflatex HERE IS NOT A MISSING CAPABILITY: install it"** and names the
+packages), three passes, 0 errors, 62 pages before and after.
+
+**⌗ I WITHDRAW THE `r7811` ITEM, AND IT IS THE REPEAT OF A GUARD I WAS HANDED.** I reported
+`check_revision_collisions` as still failing on `r7811`, claimed by four of your commits,
+"yours to dispose". **On a full clone that gate exits 0** and `r7811` appears only as prose
+inside another commit's subject. It was a shallow-clone artefact: the gate saw 136 reachable
+revision-numbered commits against 3311 on the refs and said so under its own `⛔ HORIZON`
+banner. ⇒ ***And CI's failure list never contained it, which was the authority sitting in
+front of me — the standing cycle's own `check_branches`/`check_pins_adjudicated_on_mint`
+class, and I filed a routing note to you instead of reading it.*** Nothing for you to
+dispose.
+
+**So that the excuse cannot be reused, this container is now fixed rather than described:**
+the clone is unshallowed (**8810** commits, marker gone) and a TeX toolchain is installed.
+On real history, `check_branches`, `check_pins_adjudicated_on_mint`,
+`check_marker_transposition`, `check_revision_collisions` and `check_pdf_current` **all go
+green**, and `check_compile` now RUNS and passes — **all 18 papers at 0 errors, 0 undefined
+citations, 0 undefined refs, 0 dead receipt links**, which independently confirms this
+revision's `.tex` edits break nothing. `check_quote_pins`' 518 MEANING-HELD failures were the
+graft cutting the ancestry walk, exactly as described.
+
+**And what remained was a MISSING-DEPENDENCY class, not a clone-depth one — I had the cause
+wrong there too.** `check_depth`, `check_banked_config` and `check_env_fingerprint` were
+failing on `numpy`/`scipy`/`camb` being absent, not on history. Installing them at the
+versions `ENV_FINGERPRINT.txt` pins — `numpy 2.4.6`, `scipy 1.17.1` — turned
+**`check_depth` and `check_banked_config` green**. `check_env_fingerprint` is the last one
+standing and only because **`camb 2.0.4` will not install here**; note that it reads ABSENT
+rather than a different version, so nothing has moved under the corpus's float comparisons
+and no tolerance sweep is owed — and it is not in CI's failure list, because CI installs
+`requirements-ci.txt`.
+
+`check_tilt_pins` is then the only genuinely-not-mine red left: its 2 stale entries are both
+in `L147_two_arm`, and it is red identically on pristine `origin/main`.
+
+⇒ ***Net: of the seven gates I called "not mine" an hour ago, two were mine and fixed, four
+were my container and are now green, and one is actually not mine.*** The phrase was doing
+too much work.
+
+---
+
+### Prediction score — and ③ is the one worth your attention
+
+① **HIT** (2 defects, band 2–6, at the bottom). ② **HIT** (both staleness, not imprecision).
+**③ ⛔ MISSED.** ④ **not engaged** — P18 never states the explicit crest criterion, so the
+conditional never fired. ⑤ **HIT**. ⑥ **HIT**.
+
+**I registered that the defects would sit on the neutrino line 72 realigned this week. The
+neutrino line is clean end to end, and both defects sit in a section untouched for longer
+than this clone reaches.** So the P15 guard holds **more** broadly than I gave it credit for:
+risk sits where precision was never re-derived, and **recency is not the proxy for that I
+took it to be** — I had been using "recently edited" as a stand-in for "not re-derived", and
+here they pointed opposite ways. Registered in advance that I would say so if this happened.
+
+---
+
+### ⚑ CI IS GREEN ON `408e9dea3`, AND THE TOLERANCE CARRY IS DRAINED TO ZERO — WHICH RETIRES WHAT I ROUTED TO YOU AT `r7839+cc66.2`
+
+**Both runs on this head completed `success`** — the `pull_request` run 11753 and the `push`
+run 11752. `fast` (its text gates at 17 minutes, the hollow-assertion lint and the
+vacuous-pin sweep), the runner-read sweep, both tolerance-perturbation jobs, **all three
+probe builds A, B and C uncancelled**, and the plain suite, which ran 56 minutes of receipts
+and cleared hundreds — **including this revision's own P18 receipt**.
+
+**The sweep ran whole and the carry went to zero:**
+
+```
+RECORD (tolerance, @ 408e9dea38): ran 24, the run passed; +0 carried,
+15 cleared by a green, 0 still red, 0 no longer registered;
+0 carried after this push
+NEVER PROBED (tolerance): 0 of the 24 in scope
+```
+
+⇒ ***And `S56` is among the 15 cleared.*** My `r7839+cc66.2` section above — whose heading
+still reads *"the one red is `S39` inside `S56` — main's, with no fix anywhere to port"* —
+**is left standing as the record of what was true then, not rewritten.** But the item it
+routed to you is discharged: `S56` cleared on a green, and nothing is owed on it. The
+intervening `NOT A SWEEP` verdicts were my own pushes cancelling the probes, which is what
+the carry is built for — *"cancelled probes are re-probed by the carry"* — and this was the
+re-probe. **Holding this push while the suite ran, rather than cancelling a fifth sweep, is
+what bought it.**
+
+**So nothing on this PR is waiting on me.** It is green, mergeable, and yours to read and
+gate. The three things that want your ruling rather than more work from me: P18's declared
+receipt home (`P18  P18_CR_synthesis`, reversible); the `§10` count cluster reported and not
+fixed because the sources do not settle its counting convention; and the loose print line in
+`P15_the_stellar_half_of_po93s_gate_...py`, which is that receipt's and not P18's.
+
+
 ## r7839+cc66.2 — ⚑ **CI IS GREEN ON `ec6c355f4` EXCEPT ONE RECEIPT, THE FIRST UNCANCELLED SWEEP OF THE SESSION DRAINED THE CARRY, AND THE ONE RED IS `S39` INSIDE `S56` — MAIN'S, WITH NO FIX ANYWHERE TO PORT**
 
 **Both runs on the head have now reported.** Every tier is green but two jobs, and those two fail on **one receipt and one check between them**, plus the designed `record` timeout.
