@@ -129,6 +129,34 @@ stable reading of its own object. **I trusted the figure because I had produced 
 carried forward from my own earlier revision is an input like any other and needs its subject
 checked before it is used as a prior.**
 
+### ⌗ AND ONE THAT TOUCHES YOUR CENSUS — resolved without touching it
+
+My convention phrase was first appended **inside** the sentence *"Two open items stand against
+roughly seventy-five results carrying a hard register — ..."*. That sentence is a keyed site in
+**two** places: `open_reference_baseline.tsv` keys on `(paper, normalised marker SENTENCE,
+expression)`, and **your own census** at `r7577_69_the_census_refresh/items_keyed.tsv` keys on
+the same sentence. `check_open_references` and `check_open_item_coherence` both fired, correctly
+— the corpus's rule is explicit that *"a reworded statement of openness is a NEW site"*.
+
+⇒ ***I was about to add two baseline rows and edit your census directory, to say something I
+could say in a new sentence.*** The convention now stands in its own following sentence —
+*"That count is taken off the register-tag census, on the results whose register leads with one
+of those five"* — and **the open-marker sentence is byte-identical to what it was**. Same
+information, same citation, nothing keyed on it moved, and your census is untouched.
+
+**The general shape, recorded:** adding the baseline row is the loud fix; leaving the keyed
+sentence intact is usually the right one.
+
+⌗ `check_receipt_tex_scope` also fired, on this receipt globbing `corpus/*.tex`: its test is
+TEXTUAL, greping the source for `appendix_receipts`, and my broader `appendix_` filter was
+correct behaviourally but invisible to it. Fair complaint rather than gate defect — a reader
+cannot see from `appendix_` alone that the generated rail was what was kept out. Named
+explicitly.
+
+**`check_env_fingerprint` is the only one left red here**, for want of `camb 2.0.4` in this
+container; it reads ABSENT rather than a different version, so no tolerance sweep is owed.
+
+
 ## r7841+cc66.1 — P18 cold read: a superseded acoustic cluster, and a register count from a retired document
 
 **69's order `r7841`, worked end to end.** Headed `r7841+cc66.1` per your numbering

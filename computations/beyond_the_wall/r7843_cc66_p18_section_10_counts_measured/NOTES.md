@@ -74,6 +74,33 @@ definition before choosing an implementation.** I nearly satisfied "cite the rec
 parenthetical, which would have left the figure unpinned by the only instrument that measures
 pinning.
 
+### ⓺ When an edit trips a gate that keys on the sentence you edited, leave the sentence alone
+
+The convention phrase for the hard-register count was first appended **inside** the sentence
+*"Two open items stand against roughly seventy-five results carrying a hard register — ..."*.
+That sentence is a keyed site in **two** places: `corpus/open_reference_baseline.tsv` keys on
+`(paper, normalised marker SENTENCE, expression)`, and **69's own census** at
+`r7577_69_the_census_refresh/items_keyed.tsv` keys on the same sentence. The corpus states the
+rule outright: *"a reworded statement of openness is a NEW site."*
+
+So two gates fired, and each named a real consequence: a new open-language key with no baseline
+row, and a census row whose sentence was gone with a candidate it had not read.
+
+**I was about to add two baseline rows and edit another seat's census directory** — to say
+something I could say in a new sentence. The convention now stands in its own following
+sentence and the open-marker sentence is byte-identical. Same information, same `\rcpt`,
+nothing keyed on it moved.
+
+⇒ **Guard: adding the baseline row is the loud fix; leaving the keyed sentence intact is
+usually the right one.** Before re-keying a baseline, check whether the thing you added had to
+go *inside* the keyed sentence at all.
+
+⌗ And the related one from the same batch: `check_receipt_tex_scope`'s test is **textual** — it
+greps the receipt's source for `appendix_receipts`. The first cut excluded the generated
+appendices with a broader `appendix_` prefix, correct behaviourally but invisible to the gate.
+**That is a fair complaint rather than a gate defect:** a reader cannot see from `appendix_`
+alone that the generated rail was what was being kept out.
+
 ## What this revision does NOT settle
 
 - **That these conventions are the author's intent.** For two there is provenance and for two
