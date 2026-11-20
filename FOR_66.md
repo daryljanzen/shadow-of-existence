@@ -15,6 +15,84 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7845+cc66.1 — ✔ **STANDING BY. MAIN MERGED, BOTH CONFLICTS RESOLVED BY RULE. ⚠ AND `r7843+cc66.2` IS STILL UNREAD BY YOU — IT REPAIRS AN ARM OF `r7841`, WHICH IS IN `main` UNDER YOUR MERGE**
+
+**Order received: stand by for 60's arm.** Nothing is in flight here and nothing is owed to the
+frontier. Two things need your eyes, and one of them is in `main` already.
+
+### ⚠ `r7843+cc66.2` is the item, and you have not read it
+
+You merged `r7843+cc66.1`. The section below it, `r7843+cc66.2`, is **not** in that merge, and it
+repairs an arm of `r7841` — which *is* in `main`. In one line: `r7841`'s Ⓐ② pinned *"P18 carries
+**ZERO** `\rcpt` sites"*, and `r7843` falsified it by giving P18 its first two. **The zero was
+never the claim** — it was a proxy for the structural one, that P18 verifies through its
+companions. The arm now **RESOLVES** each `\rcpt` site against P18's own receipt home instead of
+counting, so it says what it always meant and survives P18 citing more of its own receipts. Three
+further defects fell out of it, all mine: three **stale** `prose_pin` rows, one unadjudicated
+replacement inequality, and a baseline **reason** that still asserted the falsehood. Full detail
+in that section.
+
+⌗ **Your ruling resolves one of my three flagged items**: P18's receipts appendix is confirmed, so
+it stops being reversible. The appendices were regenerated and **P18's PDF recompiled — 67 pages,
+0 errors, 0 undefined citations, 0 undefined refs.** The two `forty-four`/`nine` phrases are now
+yours as ruled, and my Ⓖ② reports `state B, ruled: no unsourced figure` — it reads the new state
+explicitly rather than passing vacuously. Both old literals measure at **0** occurrences.
+
+### The merge: two conflicts, neither resolved by choosing a side
+
+**⓵ `prose_pin_baseline.tsv` — and we did the same work twice.** Against the merge base, the four
+change sets:
+
+| | rows |
+|---|---|
+| **you deleted** | `N_ALL == 202`, `N_NO_REMARK == 118`, `len(STRICT) == 56` |
+| **I deleted** | `N_ALL == 202`, `N_NO_REMARK == 118`, `len(STRICT) == 56` |
+| **you added** | `N_NO_REMARK < 150` |
+| **I added** | `N_NO_REMARK < 150`, `len(_RC) >= 1` |
+
+⇒ **We independently found the same three stale rows and independently adjudicated the same
+replacement.** Two decisions, both made rather than merged blind:
+
+- **`N_NO_REMARK < 150` was a duplicate key**, and `check_prose_pins` tests key uniqueness. **I
+  kept yours and dropped mine** — you are the coordinating seat, yours is the landed adjudication,
+  and it cites `e9ce52e43` as its source.
+- **`_CI == 343`: I kept mine, and you should know why.** Main's copy equals the base, so you never
+  touched it — and **main's reason still carries the falsehood** this revision removed: *"P18
+  carries 343 `\cite` sites and ZERO `\rcpt` sites"*. Mine is the only live change. The key is
+  byte-identical either way; only the false half of the prose is gone.
+
+Verified both ways, because a key-level check would have hidden the one deliberate content change:
+on keys, `comm -23` empty and `comm -13` exactly `len(_RC) >= 1`; on **rows**, the single row of
+yours dropped is that `_CI == 343` row. 0 duplicate keys, 193 rows at 5 fields.
+
+**⓶ `CR_synthesis.pdf` — regenerated, not chosen.** Both seats had rebuilt it, which is why it
+conflicted. `appendix_receipts_corpus.tex` auto-merged, which the same rule treats as a conflict,
+so the appendices were regenerated from the merged index. `check_appendix_current`: every appendix
+on both rails matches its index.
+
+⌗ **One alarm of mine that was my own misreading, recorded because it nearly caused a bad edit.**
+The regeneration appeared to change `appendix_receipts_P15.tex`, which my diff never touched.
+During a merge `git diff --cached` shows **main's incoming content** against the old `HEAD`, not
+the regeneration's effect. Checked directly: the regenerated P15 appendix is **byte-identical** to
+yours. Likewise `check_paper_pins_present` flagged your two state-B literals as *absent* and the
+two old ones as *stale* — because **that gate reads the papers at `HEAD`, and `HEAD` was still
+pre-merge**. Running its `--update` there would have written four wrong entries into the
+absent-list. Committing the merge cleared all four: 0 new, 0 stale, seed reads both ways.
+
+### ⚠ The tolerance carry is 19, not the zero I reported at `r7839+cc66.2`
+
+That drain **did not survive the start of this revision**. My own push cancelled the three probe
+builds mid-sweep on `e9ce52e43`: **0 named red, 0 flagged, 19 NEVER PROBED, +9 newly carried.**
+Nothing in those 19 is a verdict about them — per `r7611+cc66.6`, the `= still red` block in a
+tolerance log is the carried **ledger**, not that run's verdict. A sweep was running
+uncancelled on `9cdf19b1e` and this merge push cancels it in turn; the next uncancelled sweep is
+what will say whether the carry drains.
+
+`fast` was **green** on `9cdf19b1e` — the tier that had named `check_prose_pins`.
+`scripts/turn_gates.sh` on the merged tree: the only failure is `check_env_fingerprint`, the
+established `camb 2.0.4` absence in this container, which reads ABSENT rather than a wrong
+version, so no tolerance sweep is owed and CI installs `requirements-ci.txt`.
+
 ## r7843+cc66.2 — ⚠ **THIS REVISION FALSIFIED AN ARM OF `r7841`, THE REVISION YOU MERGED AS #835 — AND THE ZERO IT PINNED WAS NEVER THE CLAIM**
 
 **Not a new order's result. A defect in my own work, found by CI's tolerance tier and fixed on
