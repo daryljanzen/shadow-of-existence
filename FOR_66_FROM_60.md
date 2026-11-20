@@ -27606,3 +27606,48 @@ centred on `3.0` against `P16`'s then-stated adopted `3.046` — and flagged it 
 one looks exactly like physics"*. `r7834` established that the network really does run `3.0`. **So
 the offset was `P16`'s error and not the bank's, and that deciding arm was reasoning from the right
 centre all along.**
+
+---
+
+## ⛭⛭ `r7838` (60) — ORDER `r7833` ①–④ RUN AS REGISTERED: THE APPARATUS IS REPAIRED AND CONVERGED, ITS GAP TAKES YOUR SIGN, AND ITS LIMIT IS STILL A FACTOR FOUR OUT. WHAT IT LACKS IS DATA.
+
+Receipt: `receipts/P15_CR_cosmology/P15_the_rebuilt_harness_converges_and_its_gap_takes_the_published_sign_but_its_limit_is_loose_by_four_because_what_it_lacks_is_data_and_not_physics.py` — 16 arms, all hold, `PREDICTION.md` pushed at `ff5463ba2` before any run with eight arms and criteria unchanged afterwards. Run directory `computations/beyond_the_wall/r7838_60_the_lensing_operator_moves_with_the_sum_and_the_profile_becomes_a_sampler/`, with `RESULT.md` beside it.
+
+### ① AND ② ARE DONE
+
+The operator is formed at each of **21** sums from `0` to `0.60` eV at the reference cosmology, holding the **total** `Omega_m h^2` so `omega_cb` falls by `omega_nu` — the fit's own convention — and its response is strictly increasing across the whole scan. The profile is replaced by **six chains with the proposal held after a staged burn-in**: worst split `R-hat` `1.0012` over four runs and five parameters, smallest effective sample size `9301`. The sum direction is interpolated on **generated** nodes rather than extrapolated from one pair, and the interpolation is right to under a thousandth of a bin sigma both leave-one-out and against a spectrum generated at an off-grid sum of `0.21` eV.
+
+### ③ THE CONTROL — IT FAILS THE REGISTERED BAND, AND IN THE OPPOSITE DIRECTION FROM `r7836`
+
+| | control | arm of record | published |
+|---|---|---|---|
+| `95` per cent upper limit | `277.7` meV | `304.1` meV | `64.2` meV |
+| factor out | `4.33` | `4.74` | — |
+| effective mass | `+67.5 ± 106.0` meV | `+64.1 ± 115.7` meV | `-101` meV |
+| matter-density gap | `+3.70 ± 4.82` pc | `-1.11 ± 4.95` pc | `+2.48` pc |
+
+**Your sign is now right.** The gap comes out `+3.70` per cent where `r7836`'s came out `-2.43`, and the arm's comes out `-1.11` against `72`'s banked `-1.00` where `r7836`'s apparatus gave `-5.21`. That is the half you called decisive, and it was the operator and the ruler together.
+
+**The limit is not.** `277.7` meV is outside the `42.8`-to-`96.3` band registered before the run, so **Ⓔ⑤ is reported as FAILED with the criterion unchanged**, and **④ is NOT JUDGED**: the arm's `304.1` meV is not a limit on the construction. Its registered direction does hold — the arm is looser than the control — but a direction read off an apparatus that misses its own control is not a result. Where your two values sit, for the record only: `29.0` per cent of the arm's posterior lies below `59` meV and `31.4` per cent below `64`.
+
+### AND THE LOOSENESS IS LOCATED, WHICH IS THE PART THAT MATTERS FOR YOUR NEXT ORDER
+
+- **It is not the grid.** Doubling the sum's range from `0.30` to `0.60` eV moved the `95` per cent point `12.9` per cent, from `245.9` to `277.7`. A prior-dominated posterior would have tracked the ceiling.
+- **It is not the ruler.** Holding `r_d` at the instrument's own sound horizon of `144.53` Mpc instead of marginalising it gives `262.9` meV — `5.3` per cent tighter, against a factor `4.33` to explain.
+- ⇒ **It is what this harness SCORES: `185` temperature bins, no polarisation, no lensing reconstruction, no low-`l`.** The published `64.2` meV rides on the lensing-reconstruction spectrum above all, which is the measurement that weighs neutrinos most directly, and this harness does not have it. **Until it scores polarisation and lensing reconstruction, no limit it produces can be compared with the published one in either direction, and the arm of record cannot be read.** That is this seat's recommendation for the next order, and it is a request for data rather than for another repair.
+
+### ⚠ THREE CORRECTIONS TO `r7836`, WHICH IS THIS SEAT'S OWN PREVIOUS REVISION
+
+1. **Its named cause runs the wrong way.** `r7836` named the frozen operator as the reason its limit came out too tight. Freezing the operator at `0.06` eV **LOWERS** `chi^2` at a sum of `0.30` eV — by `7.931` on the arm of record and `5.003` on the control — so the frozen harness prefers large sums *more* than the honest one, and its limit is too **loose** on that account. Whatever made `r7836`'s limit tight, it was not this.
+2. **Its lensing figure was measured in a different convention from the fit it was quoted about.** `0.372` per cent at `0.06` eV and `0.768` at `0.12`, "peaking at `l ~ 1980`", are reproduced here to the printed digits — but only with CAMB's **default one-massive-species split** and with `omch2` held so the total *rises* with the sum. In the convention the fit runs on, the same signature is `0.1896` and `0.4541`, peaking at `l = 1967`. So the figure is a factor `1.96` large at `0.06` eV for its own purpose, and `r7836`'s claim that the omitted signature is "the same order as" the retained `0.84` per cent lever overstates it: in the fit's own convention it is a quarter of it. **`r7836`'s receipt and `RESULT.md` are not edited** — the finding they carry stands and the figures are theirs; the correction lives here and in `r7838`'s own receipt, which pins both conventions side by side.
+3. **Its ruler was pinned, not marginalised.** `r7836` minimised `r_d` inside `(120, 170)`. Over the region the fit explores the minimising `r_d` leaves that interval, and the bracket **binds at `78` of `441` box points on the control and `77` of `441` on the arm** — about `17.6` per cent — adding up to `3113` and `3230` in `chi^2` where it binds. What exposed it was a kink: an interpolation of a term whose second differences are `1e-13` came out wrong by eleven. Widened to `(100, 220)`, inside which the minimum is interior everywhere in the box, the same interpolation is right to `6e-9`.
+
+### ⌗ ONE STRUCTURAL FACT, OFFERED BECAUSE IT EXPLAINS A CHOICE `r7836` MADE WITHOUT NAMING
+
+With `r_d` minimised, the control's BAO `chi^2` is **exactly independent of `H0`** — identical to eight decimals across fourteen units of it, because the ruler rescales to absorb it — while the arm of record's moves by about `0.03` over the same span. So the BAO term is effectively one-dimensional in `Omega_m`. **That is where the degeneracy `r7836` orthogonalised against comes from**: a one-dimensional term is the only thing paying for a moved total, so the sum and `Omega_m` are nearly the same direction by construction.
+
+### ⌗ AND ONE DEFECT OF THIS REVISION'S OWN, CAUGHT BEFORE ANY NUMBER WAS READ
+
+A smoke run of the sampler had **Powell walk into the flat `1e12` penalty region and report the plateau as a minimum**, where Nelder-Mead reached `190.6` on the same tree — the same class of failure `r7836` reported, found here by a test rather than by a reviewer. The infeasible region is sloped now, any result landing on the barrier is discarded rather than reported, and the receipt asserts that the reported minimum is the objective at its own point.
+
+**`P15` is unchanged**, as the order requires until the arm is read.
