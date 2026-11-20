@@ -9,10 +9,20 @@ Omega_m h^2 held, so omega_cb falls by omega_nu.
 
 ** THE ONE PLACE A RATIO CANNOT BE USED, AND IT IS HANDLED RATHER THAN IGNORED. **  TE crosses zero
 three times inside this instrument's reach, so C_l^lensed / C_l^unlensed is a ratio of two numbers
-that both pass through zero at slightly different multipoles: it diverges.  So the TE operator is
-carried as an ADDITIVE correction, `C^lensed - C^unlensed`, scaled by the same amplitude as the
-spectrum it corrects; TT and EE, which are positive definite, keep the multiplicative form r7838
-used.  ⌗ *The additive form is what the lensing literature uses for TE for exactly this reason.*
+that both pass through zero at slightly displaced multipoles: it diverges, and the displacement is
+physical rather than numerical.  So the TE operator is carried as an ADDITIVE correction -- which is
+what the lensing literature does for TE, and for this reason.
+
+** AND AN ADDITIVE CORRECTION HAS A UNIT PROBLEM THE MULTIPLICATIVE ONES DO NOT, SO IT IS CARRIED
+AS A RATIO TO TT. **  The instrument's spectra have a FREE overall amplitude -- the score fits one
+`A` -- so an additive term in CAMB's own micro-kelvin units cannot be added to them at all without
+first fixing a scale between the two.  The correction is therefore stored as the DIMENSIONLESS
+
+    c_TE(l, Sum) = [ C_TE^lensed - C_TE^unlensed ] / C_TT^unlensed
+
+and applied in the model as `TE_instrument + c_TE * TT_instrument`, both in the INSTRUMENT's own
+units, so the free amplitude cancels exactly and no external scale factor is needed.  `C_TT` is
+positive everywhere, so nothing diverges.
 
 Writes ratio_grid3.npz: the l axis, the grid in the sum, the TT and EE multiplicative ratios, and
 the TE additive correction, with the reference columns.
@@ -70,7 +80,10 @@ def main():
         RTT[i][m] = r['tt_l'][m] / r['tt_u'][m]
         m = r['ee_u'] > 0
         REE[i][m] = r['ee_l'][m] / r['ee_u'][m]
-        DTE[i] = r['te_l'] - r['te_u']              # ADDITIVE, because TE crosses zero
+        # ADDITIVE, because TE crosses zero -- and as a RATIO TO TT, so the
+        # instrument's free amplitude cancels when it is applied
+        _ttu = np.where(r['tt_u'] > 0, r['tt_u'], np.nan)
+        DTE[i] = np.nan_to_num((r['te_l'] - r['te_u']) / _ttu, nan=0.0)
     rep = {}
     w = (ls >= 30) & (ls <= 2000)
     for i, s in enumerate(GRID):
@@ -89,10 +102,11 @@ def main():
                  rep[f'{float(s):.2f}']['ee_max_pct'], rep[f'{float(s):.2f}']['ee_peak_l']),
               flush=True)
     np.savez_compressed(OUT, ls=ls, grid=np.asarray(GRID, float), ratio_tt=RTT, ratio_ee=REE,
-                        delta_te=DTE, omh2=OMH2, ombh2=OMBH2, h0=H0, divisor=DIV)
+                        dte_over_tt=DTE, omh2=OMH2, ombh2=OMBH2, h0=H0, divisor=DIV)
     json.dump(dict(reference=dict(H0=H0, ombh2=OMBH2, omh2_total=OMH2, tau=TAU, As=AS, ns=NS,
                                   lmax=LMAX, divisor=DIV, model_lmax=1996),
-                   te_form='additive, because TE crosses zero three times inside the reach',
+                   te_form='additive and dimensionless: (C_TE_lensed - C_TE_unlensed) / C_TT_unlensed, '
+                            'so the instrument\'s free amplitude cancels on application',
                    grid=[float(s) for s in GRID], response=rep), open(OUTJ, 'w'), indent=1)
     print(f'\n  wrote {os.path.relpath(OUT, HERE)} and {os.path.relpath(OUTJ, HERE)}')
     return 0
