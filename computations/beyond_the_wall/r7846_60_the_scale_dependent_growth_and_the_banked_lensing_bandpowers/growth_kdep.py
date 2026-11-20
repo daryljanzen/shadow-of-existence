@@ -188,6 +188,34 @@ class GrowthKDep:
         den = self.g_of(k, a_ref)
         return num / den
 
+    def surface(self):
+        """one bivariate spline of `log g` over `(log k, ln a)`, for use inside an integrand
+
+        ** THE PER-CALL PATH IS TOO SLOW TO PUT INSIDE A LIMBER INTEGRAL, and that is a reason to
+        interpolate it, not to coarsen the physics. **  `g_of` evaluates one cubic spline per `k`
+        node and then interpolates across them, which is fine for a table and ruinous inside
+        `quad`: the lensing integral asks for `g` at thousands of `(k, chi)` pairs per multipole,
+        and there are nine bandpowers' worth of multipoles per spectrum and seventeen spectra per
+        arm.  The surface is built ONCE from the same solved grid, so it introduces interpolation
+        error in `log g` and no new physics.
+        """
+        from scipy.interpolate import RectBivariateSpline
+        lg = np.log(np.maximum(self.g, 1e-300))
+        return RectBivariateSpline(np.log(self.kk), self.N, lg, kx=3, ky=3, s=0)
+
+    def ratio_fn(self, a_ref):
+        """a callable `(k, a) -> g(k,a)/g(k,a_ref)` off that surface, scalar and fast"""
+        S = self.surface()
+        lkmin, lkmax = np.log(self.kk[0]), np.log(self.kk[-1])
+        Nmin, Nmax = self.N[0], self.N[-1]
+        lnref = float(np.clip(np.log(a_ref), Nmin, Nmax))
+
+        def f(k, a):
+            lk = min(max(float(np.log(k)), lkmin), lkmax)
+            N = min(max(float(np.log(a)), Nmin), Nmax)
+            return float(np.exp(S(lk, N)[0, 0] - S(lk, lnref)[0, 0]))
+        return f
+
 
 def background_g():
     """`L171x`'s own background quadrature, for the zero-sum comparison -- its code, not a copy
