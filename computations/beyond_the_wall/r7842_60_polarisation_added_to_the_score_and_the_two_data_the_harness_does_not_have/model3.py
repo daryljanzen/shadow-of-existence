@@ -200,6 +200,28 @@ class Model3:
             worst = max(worst, abs(float(self._bao_spl(a, b)[0, 0]) - self.bao_direct(a, b)[0]))
         return float(worst)
 
+    def bao_truncation(self, half_steps=6, n=21):
+        """over the tabulated box: how often the BORROWED bracket binds, and the worst chi^2 it adds
+
+        r7838 established that r7836's `(120, 170)` bracket BINDS over about a sixth of the box, so
+        the ruler was pinned to an endpoint rather than marginalised.  The measurement is repeated
+        here on this arm's own ruler rather than carried across as a remembered number.
+        """
+        c = ARMS[self.arm]['centre']
+        lo, hi = self.RD_BORROWED
+        bound, worst, tot = 0, 0.0, 0
+        for a in np.linspace(c['H0'] - half_steps * R.STEP['H0'],
+                             c['H0'] + half_steps * R.STEP['H0'], n):
+            for b in np.linspace(c['OM'] - half_steps * R.STEP['OM'],
+                                 c['OM'] + half_steps * R.STEP['OM'], n):
+                free = self.bao_direct(float(a), float(b))
+                pin = self.bao_direct(float(a), float(b), bounds=self.RD_BORROWED)
+                tot += 1
+                if pin[1] <= lo + 1e-4 or pin[1] >= hi - 1e-4:
+                    bound += 1
+                    worst = max(worst, pin[0] - free[0])
+        return dict(points=tot, bound=bound, fraction=bound / float(tot), worst_chi2_added=worst)
+
     def chi2_bao(self, H0, OM):
         if self._bao_spl is None:
             self._build_bao_spline()
