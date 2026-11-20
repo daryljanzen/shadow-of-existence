@@ -207,7 +207,32 @@ check('Ⓘ⑨ the profile is NOT converged on either arm even after orthogonalis
 
 print()
 print('=' * 78)
-check('Ⓙ⑩ seven arms were registered above this one and all of them ran', len(ARMS) == 7)
+# ** EVERY FIGURE THIS RECEIPT'S DOCSTRING AND ITS INDEX ROW PRINT IS PINNED HERE, two-sided and
+#    inside the coarser of half its last printed digit and 0.05 per cent, so a wrong one fails the
+#    receipt rather than standing in type unchecked.  The limits and the gaps are re-read from the
+#    run's own JSON, not retyped; the two lensing figures are this revision's CAMB measurement and
+#    the lever is its own pair against its base, both recorded in RESULT.md with how they were got. **
+_f = dict(ctl_limit=lim_ctl, arm_limit=lim_arm, factor=PUBLISHED_LIMIT_MEV / lim_ctl,
+          ctl_gap=g_ctl, arm_gap=g_arm, omitted_006=OMITTED_006, omitted_012=OMITTED_012,
+          lever=LEVER)
+print()
+print('  the figures this receipt prints, each pinned two-sided:')
+for _k, _v in _f.items():
+    print('    %-12s %.4f' % (_k, _v))
+check('Ⓙ⑩ every figure this receipt and its INDEX row print is pinned two-sided here',
+      abs(_f['ctl_limit'] - 26.5) < 0.04
+      and abs(_f['arm_limit'] - 15.8) < 0.045      # inside half of 15.8's last digit
+      and abs(_f['factor'] - 2.42) < 0.004
+      and abs(_f['ctl_gap'] + 2.43) < 0.004
+      and abs(_f['arm_gap'] + 5.21) < 0.0048       # inside half of 5.21's last digit
+      and abs(_f['omitted_006'] - 0.372) < 0.0004
+      and abs(_f['omitted_012'] - 0.768) < 0.0004
+      and abs(_f['lever'] - 0.84) < 0.004
+      and abs(PUBLISHED_LIMIT_MEV - 64.2) < 0.04
+      and abs(PUBLISHED_GAP_PC - 2.48) < 0.004,
+      '%.1f / %.1f meV, factor %.2f, gaps %+.2f and %+.2f' %
+      (_f['ctl_limit'], _f['arm_limit'], _f['factor'], _f['ctl_gap'], _f['arm_gap']))
+check('Ⓚ⑪ eight arms were registered above this one and all of them ran', len(ARMS) == 8)
 print('=' * 78)
 if FAILED:
     print('\n%d ARM(S) FAILED -- and Ⓒ③ and Ⓒ③ᵇ are REGISTERED FAILURES, reported as such:' % len(FAILED))
