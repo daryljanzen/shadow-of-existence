@@ -107,7 +107,7 @@ check('Ⓐ② PINNED P18 carries ZERO \\rcpt sites and 343 \\cite sites, which i
 WORDS = {'five': 5, 'nine': 9, 'ten': 10, 'eleven': 11,
          'twelve': 12, 'thirteen': 13, 'fourteen': 14, 'fifteen': 15, 'sixteen': 16,
          'seventeen': 17, 'eighteen': 18, 'nineteen': 19, 'twenty': 20}
-_abs = re.search(r'every claim is drawn from one of ([a-z]+) papers', P18)
+_abs = re.search(r'every claim is drawn from one of ([a-z]+)\s+papers', P18)
 ABSTRACT_N = WORDS.get(_abs.group(1)) if _abs else None
 _BIB = len(re.findall(r'\\bibitem\{Janzen', P18))
 _DISS = len(re.findall(r'\\bibitem\{Janzen[A-Za-z]*(?:Thesis|Diss)', P18))
@@ -210,7 +210,7 @@ check('Ⓑ⑪ RECORD the comb 298.5 against 298.4 is NOT a defect: P15 prints bo
 print()
 print('Ⓒ (2) sec:displace -- the register count, and where it came from')
 
-_rail = re.search(r'an evidence rail of ([a-z ]+) receipts', P18)
+_rail = re.search(r'an evidence rail of ([a-z\s]+?)\s+receipts', P18)
 check('Ⓒ① P18\'s own words for the evidence rail\'s size are PARSED, not retyped',
       _rail is not None, repr(_rail.group(1)) if _rail else 'NOT FOUND')
 RAIL = _rail.group(1).strip() if _rail else ''
