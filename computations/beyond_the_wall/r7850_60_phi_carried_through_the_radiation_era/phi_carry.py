@@ -123,15 +123,27 @@ class PhiCarry:
         self.weights = (wc, wb)
 
     # ------------------------------------------------------- the carry, cold matter and baryons
-    # ** carry_isolate MEASURED why one fluid is not enough. **  At the handover the baryons have
-    # not caught up with the cold matter at the scales that matter: `d_b/d_c` is `1.0000` at
-    # `k = 2e-4` and `0.0101` at `k = 1` at `eta = 500`, and NEGATIVE at the later handovers.  A
-    # single `d_cb` that averages a `d_c` with a `d_b` near zero starts from a state whose next
-    # move is `d_b` CATCHING UP, and a one-fluid equation does not describe that move.
-    #   ⇒ So the two clustering species are carried SEPARATELY.  They share the source and the
-    #   friction -- the source is `1.5 Om_m(a) [ (1-f_nu) d_cb + f_nu d_nu ]` with the SAME `d_cb`
-    #   for both -- so they are coupled only through it, and what is carried is the difference
-    #   between their initial states, which is the whole of the effect.
+    # ** THIS WAS WRITTEN AS A REPAIR AND IT IS NOT ONE.  IT IS KEPT BECAUSE THE MEASUREMENT THAT
+    # SHOWS IT IS NOT ONE IS WORTH MORE THAN THE FILE WOULD BE WITHOUT IT. **
+    #
+    # `carry_isolate` measured that at the handover the baryons have not caught up with the cold
+    # matter at the scales that matter -- `d_b/d_c` is `1.0000` at `k = 2e-4` and `0.0101` at
+    # `k = 1` at `eta = 500`, and NEGATIVE at the later handovers -- so a single `d_cb` that
+    # averages a `d_c` with a `d_b` near zero looked like it must be starting from a state whose
+    # next move a one-fluid equation cannot describe.  So the two clustering species are carried
+    # separately here, sharing the source and the friction and coupled only through the total.
+    #
+    # ⇒ ** AND THE TWO CARRIES AGREE TO EVERY PRINTED DIGIT, WHICH IS NOT A COINCIDENCE: THEY ARE
+    # THE SAME EQUATION. **  Both species obey `d2 d/dN2 + (2 + dlnH/dN) d d/dN = S(d_cb)`, with
+    # the SAME `S` because the source depends only on the total.  Take `w_c` times the first plus
+    # `w_b` times the second: the weighted sum `d_cb` obeys that one equation exactly, with initial
+    # conditions `w_c d_c + w_b d_b` and `w_c d_c' + w_b d_b'` -- which are exactly the one-fluid
+    # initial conditions, because a weighted sum of central differences IS the central difference of
+    # the weighted sum.  *So splitting the species changes nothing, and the baryon shortfall
+    # `carry_isolate` measured is NOT an error the carry can fix by splitting them.*
+    #   ⌗ The guard this walks into is this seat's own: when a fork names two objects, check that
+    #   the thing they are alternatives FOR has a slot for only one of them.  The source has one
+    #   slot, for the total, so there was never a second object to carry.
     def _rhs2(self, N, y, k):
         a = np.exp(N)
         dc, dcp, db, dbp = y
@@ -223,7 +235,11 @@ class PhiCarry:
                         rel=[float(v) for v in rel2],
                         spread=float(rel2.max() - rel2.min()),
                         worst_abs=float(np.max(np.abs(rel2))),
-                        holds=bool((rel2.max() - rel2.min()) < CRITERION)),
+                        holds=bool((rel2.max() - rel2.min()) < CRITERION),
+                        identical_to_one_species=bool(
+                            np.max(np.abs(carried2 / carried - 1.0)) < 1e-9),
+                        worst_relative_difference_from_one_species=float(
+                            np.max(np.abs(carried2 / carried - 1.0)))),
                     weights=dict(cdm=self.weights[0], baryon=self.weights[1]),
                     delta_eta=self.delta, n_k=int(len(self.kk)))
 
@@ -246,8 +262,11 @@ def main():
         print('     residual at k = %.1e is %+.4e; at k = %.1e is %+.4e'
               % (c['k'][0], c['rel'][0], c['k'][-1], c['rel'][-1]), flush=True)
         t = c['two_species']
-        print('     carrying the two clustering species SEPARATELY: spread %.4e, worst %.4e -> %s'
-              % (t['spread'], t['worst_abs'], 'HOLDS' if t['holds'] else 'FAILS'), flush=True)
+        print('     carrying the two clustering species SEPARATELY: spread %.4e, which differs '
+              'from the one-species\n        carry by %.3e relative -- %s'
+              % (t['spread'], t['worst_relative_difference_from_one_species'],
+                 'THE SAME EQUATION, as the module\'s own note derives'
+                 if t['identical_to_one_species'] else 'a real difference'), flush=True)
     best = min(rows, key=lambda r: r['spread'])
     spreads = [r['spread'] for r in rows]
     spreads2 = [r['two_species']['spread'] for r in rows]
@@ -263,7 +282,11 @@ def main():
                    best_handover=float(min(rows, key=lambda r: r['two_species']['spread'])['eta_h']),
                    best_spread=float(min(spreads2)),
                    any_holds=bool(any(r['two_species']['holds'] for r in rows)),
-                   beats_one_species=bool(min(spreads2) < min(spreads))))
+                   identical_to_one_species=bool(
+                       all(r['two_species']['identical_to_one_species'] for r in rows)),
+                   worst_relative_difference=float(max(
+                       r['two_species']['worst_relative_difference_from_one_species']
+                       for r in rows))))
     print('\n  Ⓐ①: %s -- best spread %.4e at eta = %g, against the criterion %.3f and r7848\'s '
           '%.4f' % ('HOLDS' if out['any_holds'] else 'FAILS', out['best_spread'],
                     out['best_handover'], CRITERION, R7848_SPREAD))
@@ -272,12 +295,25 @@ def main():
           % (min(spreads), max(spreads),
              'DEPENDS' if out['depends_on_handover'] else 'does NOT depend strongly'))
     t = out['two_species']
-    print('  ⌗ carrying the two clustering species separately: %.4e at eta = %g, which %s the '
-          'one-species carry' % (t['best_spread'], t['best_handover'],
-                                 'BEATS' if t['beats_one_species'] else 'does NOT beat'))
-    with io.open(os.path.join(_HERE, 'phi_carry.json'), 'w', encoding='utf-8') as fh:
+    print('  ⌗ carrying the two clustering species SEPARATELY changes nothing: the worst relative '
+          'difference\n     from the one-species carry is %.3e, because %s'
+          % (t['worst_relative_difference'],
+             'they are the same equation -- the source has ONE slot, for the total'
+             if t['identical_to_one_species'] else 'they are not the same equation'))
+    # ** THE RECORD IS KEYED BY ITS CONFIGURATION, which is this revision's own lesson about
+    # r7848's cost table: a record that does not carry the configuration it was measured under
+    # cannot be read later. **  `phi_carry.json` is the REGISTERED configuration -- the three
+    # handovers judged at eta = 1893 -- and any other configuration writes beside it, never over
+    # it.
+    reg = (JUDGE_AT == 1893.0 and HANDOVERS == [500.0, 914.0, 1400.0])
+    name = ('phi_carry.json' if reg
+            else 'phi_carry_judge%g_from_%s.json' % (JUDGE_AT,
+                                                     '_'.join('%g' % h for h in HANDOVERS)))
+    out['is_the_registered_configuration'] = bool(reg)
+    out['handovers_requested'] = [float(h) for h in HANDOVERS]
+    with io.open(os.path.join(_HERE, name), 'w', encoding='utf-8') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
-    print('\n  wrote phi_carry.json\n')
+    print('\n  wrote %s%s\n' % (name, '' if reg else '   (NOT the registered configuration)'))
     return 0
 
 
