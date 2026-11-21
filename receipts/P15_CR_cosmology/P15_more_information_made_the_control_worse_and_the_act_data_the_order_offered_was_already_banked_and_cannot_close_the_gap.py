@@ -146,6 +146,7 @@ GKSRC = src('growth_kdep.py')
 RESULT1 = ' '.join(RESULT.split())   # one line, so a wrap cannot decide an assertion
 PRED1 = ' '.join(PRED.split())
 
+R44 = jload('sampler3_lcdm_pol.json', R7842)   # r7844's own control, read not retyped
 _ARM = os.path.join(RUN, 'sampler6_cr.json')
 ARM = jload('sampler6_cr.json') if os.path.exists(_ARM) else None
 
@@ -441,6 +442,78 @@ check('Ⓙ⑩ᵇ ⌗ and the pattern is named rather than buried: this is the SE
       'summary of the thing rather than the thing' in RESULT1
       and 'set by where the grid stops rather than by the data' in RESULT1,
       'both named in RESULT.md, with the boundary recorded in the run')
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────
+# ⌷  EVERY FIGURE THIS REVISION'S INDEX ROW PRINTS, PINNED TWO-SIDED AGAINST WHAT MEASURED IT
+# Each tolerance is written INSIDE the coarser of half a unit in the figure's last printed digit and
+# 0.05 per cent of it, as an EXPLICIT literal comparison rather than through this file's own helper,
+# because a figure held only by a helper is not held where the gate can see it.  r7844's own row
+# carried a `6.13` that came from a standard error TYPED beside the chain instead of read from it,
+# and this is the arm that caught it.
+_pins = {
+    'limit': abs(_lim - 111.38) < 0.0045,
+    'limit_mcse': abs(_se - 0.41) < 0.0045,
+    'r7844_limit': abs(R44['lcdm_bounded']['upper95_mev'] - 99.67) < 0.0045,
+    'r7844_limit_as_typed': abs(R44['lcdm_bounded']['upper95_mev'] - R44_LIMIT_MEV) < 0.0045,
+    'r7844_effective': abs(R44['lcdm_unbounded']['sum_mean_ev'] * 1e3 - -7.0) < 0.045,
+    'r7844_effective_as_typed':
+        abs(R44['lcdm_unbounded']['sum_mean_ev'] * 1e3 - R44_EFFECTIVE_MEV) < 0.045,
+    'r7844_effective_sd': abs(R44['lcdm_unbounded']['sum_sd_ev'] * 1e3 - 50.85) < 0.0045,
+    'effective': abs(_eff - 44.25) < 0.0045,
+    'effective_sd': abs(_effsd - 39.79) < 0.0045,
+    'order_ceiling_is_the_factor_the_order_names':
+        abs(ORDER_BAND_MEV[1] / PUBLISHED_LIMIT_MEV - 1.5) < 0.00045,
+    'sigma_above_band': abs((_lim - ORDER_BAND_MEV[1]) / _se - 36.91) < 0.0045,
+    'sigma_above_seat': abs((_lim - SEAT_EXPECTATION_MEV[1]) / _se - 52.33) < 0.0045,
+    'published_limit': abs(CTRL['published']['limit_mev'] - 64.2) < 0.045,
+    'published_eff': abs(CTRL['published']['effective_ev'] - -0.101) < 0.00045,
+    'A1_measured': abs(GROW['A1_vs_quadrature']['max_rel'] - 0.005276) < 4.5e-07,
+    'A1_isolated': abs(GROW['A1_isolation']['max_rel'] - 9.799e-09) < 4.5e-13,
+    'suppression_high': abs(GROW['B2_shape']['at_high_k'] - -0.026649) < 4.5e-07,
+    'asymptote': abs(GROW['C3_asymptote']['measured_on_power'] - -0.053298) < 4.5e-07,
+    'textbook': abs(GROW['C3_asymptote']['textbook'] - -0.180055) < 4.5e-07,
+    'asym_ratio': abs(GROW['C3_asymptote']['ratio'] - 0.296012) < 4.5e-07,
+    'from_transition': abs(GROW['missing_stretch']['power_from_nr'] - -0.120083) < 4.5e-07,
+    'transition_ratio': abs(GROW['missing_stretch']['ratio_from_nr_to_textbook'] - 0.666922) < 4.5e-07,
+    'fraction_carried': abs(GROW['missing_stretch']['fraction_carried'] * 100.0 - 44.4) < 0.045,
+    'carry_ratio_max': abs(CARRY['ratio_max'] - 0.9638) < 4.5e-05,
+    'carry_ratio_min': abs(CARRY['ratio_min'] - 0.7362) < 4.5e-05,
+    'radiation_188': abs(CARRY['radiation_over_matter']['z_188.1'] * 100.0 - 5.47) < 0.0045,
+    'radiation_13': abs(CARRY['radiation_over_matter']['z_12.8'] * 100.0 - 0.39) < 0.0045,
+    'chi2_dof_ordered': abs(CMP['carries']['z13']['chi2_per_dof'] - 2.049) < 0.00045,
+    'chi2_dof_z188': abs(CMP['carries']['z188']['chi2_per_dof'] - 1.071) < 0.00045,
+    'drift_ordered': abs(CMP['carries']['z13']['drift_vs_fiducial_pc'] - 49.8) < 0.045,
+    'amp_held': abs(INFO['amp_held'] - 1.617967e-09) < 4.5e-16,
+    'amp_preferred': abs(INFO['amp_preferred_by_bandpowers'] - 1.471643e-09) < 4.5e-16,
+    'amp_ratio': abs(INFO['amp_ratio_preferred_over_cmb'] - 0.909563) < 4.5e-07,
+    'sum_moves_chi2': abs(INFO['sum_moves_chi2_by'] - 94.497) < 0.00045,
+    'tau_spread': abs(TAU['spread'] - 355.161) < 0.00045,
+    'tau_without': abs(TAU['r7844_without_lensing'] - 1.137e-12) < 4.5e-16,
+    'tau_pull': abs(TAU['pull_sigma'] - 6.79) < 0.0045,
+    'act_sigma': abs(_worst - 104.1) < 0.045,
+    'act_required': abs(ACTD['sigma_required_of_an_independent_set_mev'] - 12.765) < 0.00045,
+    'act_shortfall': abs(_worst / ACTD['sigma_required_of_an_independent_set_mev'] - 8.16) < 0.0045,
+    'act_gain': abs(_gain[0] - 3.56) < 0.0045,
+    'remainder': abs(_lim - PUBLISHED_LIMIT_MEV - 47.18) < 0.0045,
+    'closing_factor': abs(ACTD['f_required'] - 3.2738) < 4.5e-05,
+    'meff_sigma_now': abs(ACTD['meff_sigma_now'] - 3.65) < 0.0045,
+    'meff_sigma_at_f': abs(ACTD['meff_sigma_at_f'] - 11.95) < 0.0045,
+    'rhat': abs(_rhat - 1.0001) < 4.5e-05,
+    'ess': abs(_ess - 46515) < 0.45,
+    'accept': abs(_b['accept'] - 0.231) < 0.00045,
+    'placement_59': abs(_b['frac_below_0.059'] * 100.0 - 60.64) < 0.0045,
+    'placement_64': abs(_b['frac_below_0.064'] * 100.0 - 65.99) < 0.0045,
+}
+check('⌷ every figure this revision\'s INDEX row prints is pinned TWO-SIDED here, each tolerance '
+      'inside the coarser of half its last printed digit and 0.05 per cent, against the quantity '
+      'that MEASURED it and not against a number retyped beside it.  ** The pins are written as '
+      'explicit literal comparisons, not through this file\'s helper, because a figure held only '
+      'by a helper is not held where the gate that polices the row can see it **',
+      all(_pins.values()),
+      '%d figure(s) pinned, from the growth, the carry, the normalisation, tau, the control, the '
+      'ACT bound and the chains' % len(_pins)
+      if all(_pins.values())
+      else 'UNPINNED: ' + ', '.join(k for k, v in _pins.items() if not v))
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 # Ⓚ⑪  THE COUNT
