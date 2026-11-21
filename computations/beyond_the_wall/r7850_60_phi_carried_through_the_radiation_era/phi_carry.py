@@ -112,7 +112,12 @@ class PhiCarry:
         self.phi = Y[:, :, 6]
         wc = float(A.OCDM) / (float(A.OCDM) + float(A.OB))
         wb = 1.0 - wc
-        self.d_cb = wc * Y[:, :, 0] + wb * Y[:, :, NV - 1]
+        # ** the two components are KEPT, not only their combination. **  carry_isolate needs
+        # d_b/d_c to test whether the baryons have caught up, and re-solving the instrument to get
+        # a column it already had would double the revision's cost for nothing.
+        self.dc = Y[:, :, 0]
+        self.db = Y[:, :, NV - 1]
+        self.d_cb = wc * self.dc + wb * self.db
         self.a_of = np.array([float(A.a_of_eta(min(t, A.eta_0))) for t in te])
         self.N_of = np.log(self.a_of)
         self.weights = (wc, wb)
