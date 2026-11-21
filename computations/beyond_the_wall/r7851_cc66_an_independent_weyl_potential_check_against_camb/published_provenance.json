@@ -1,0 +1,44 @@
+{
+ "source": {
+  "arxiv": "2503.14744",
+  "title": "Constraints on Neutrino Physics from DESI DR2 BAO and DR1 Full Shape",
+  "note": "the corpus already cited this paper at FOR_60.md:133; what was missing was which table, which combination and which prior"
+ },
+ "the_64_2_meV": {
+  "value_as_published": "Sum m_nu < 0.0642 eV",
+  "confidence": "95 per cent",
+  "equation": "(14)",
+  "statistic": "one-sided UPPER LIMIT",
+  "model": "LCDM, degenerate mass spectrum",
+  "prior": "only that Sum m_nu > 0",
+  "data": "DESI DR2 BAO + the baseline 'CMB' dataset",
+  "origin": "described in the companion paper, reference [73] of 2503.14744"
+ },
+ "the_minus_0_101_eV": {
+  "value_as_published": "Sum m_nu,eff = -0.101 (+0.047, -0.056) eV",
+  "confidence": "68 per cent",
+  "equation": "(30)",
+  "table": "Table 5",
+  "statistic": "CENTRAL VALUE with an asymmetric interval",
+  "model": "LCDM + Sum m_nu,eff -- an EXTENSION with an effective parameter",
+  "prior": "uniform, ALLOWING NEGATIVE energy densities, chosen to remove prior-weight effects",
+  "data": "DESI DR2 BAO + the baseline 'CMB' dataset",
+  "variant": "the 'plik' row of Table 5 gives -0.099 instead, so the CMB likelihood choice moves it by 0.002 eV",
+  "table_row_companions": {
+   "Omega_m": "0.2953 +/- 0.0043",
+   "H0": "68.92 +/- 0.38"
+  }
+ },
+ "the_baseline_CMB_dataset": {
+  "lensing_reconstruction": "Planck PR4 and ACT",
+  "low_ell": "SimAll and Commander",
+  "high_ell": "CamSpec",
+  "note": "this is NOT plik_lite, NOT a tau prior standing in for low-ell E, and NOT the nine Planck 2018 conservative lensing bandpowers"
+ },
+ "findings": [
+  "THE TWO FIGURES ARE NOT TWO PROPERTIES OF ONE FIT. 64.2 meV is a 95 per cent upper limit under a Sum m_nu > 0 prior; -0.101 eV is a 68 per cent CENTRAL VALUE in a DIFFERENT model whose prior permits negative values. No single control can land near both at once, yet the control criterion carried through several revisions asks for exactly that.",
+  "THE PUBLISHED COMBINATION IS NOT THE ONE EITHER INSTRUMENT SCORES. The baseline CMB is high-ell CamSpec, low-ell SimAll and Commander, and Planck PR4 + ACT lensing reconstruction. 60's harness and this seat's reference both score binned plik_lite with a tau prior and the nine Planck 2018 CONSERVATIVE bandpowers, so both differ from the published combination in the likelihood itself and not only in the bin count.",
+  "A NUMERAL TRAP: 0.101 eV appears TWICE in the same paper with different meanings -- as the magnitude of the effective mass central value, and as 'Sum m_nu < 0.101 eV (95 per cent, NO)', the normal-ordering upper limit.",
+  "FOR CONTEXT, the same paper's Feldman-Cousins 95 per cent limit is 0.053 eV, and in w0waCDM the limit relaxes to 0.163 eV."
+ ]
+}
