@@ -1,0 +1,52 @@
+{
+ "act_bandpowers_total": 135,
+ "act_bandpowers_usable": 84,
+ "act_usable_ell_max": 1950.5,
+ "act_usable_ell_min": 600.5,
+ "act_usable_per_spectrum": {
+  "EE": 28,
+  "TE": 28,
+  "TT": 28
+ },
+ "amplitude_planck": 11112.197594390136,
+ "arm": "lcdm",
+ "control_limit_mcse_mev": 0.4086018752694265,
+ "control_limit_mev": 111.38288308865462,
+ "control_sum_mean_mev": 44.25338922729254,
+ "control_sum_sd_mev": 39.791932722643594,
+ "decision": "DO NOT ADD",
+ "f_required": 3.273777565815075,
+ "fisher": {
+  "amplitude_free": {
+   "closes": false,
+   "combined_f": 1.0677954605074862,
+   "combined_limit_mev": 108.01008064505743,
+   "combined_sd_mev": 37.26550092630274,
+   "fisher_min_eig": 1.4973041452773752e-05,
+   "n_params": 6,
+   "sigma_sum_conditional_mev": 58.14812493401569,
+   "sigma_sum_marginal_mev": 106.27740395594802
+  },
+  "amplitude_shared_with_planck": {
+   "closes": false,
+   "combined_f": 1.0705551552592454,
+   "combined_limit_mev": 107.82265094071319,
+   "combined_sd_mev": 37.16943730284274,
+   "fisher_min_eig": 0.6763823293955541,
+   "n_params": 5,
+   "sigma_sum_conditional_mev": 58.14812493401569,
+   "sigma_sum_marginal_mev": 104.10875570347172
+  }
+ },
+ "inside_threshold": 0.999,
+ "limit_closed_form_f1_mev": 112.42062036885045,
+ "limit_from_rescaling_f1_mev": 112.7634318937488,
+ "meff_sigma_at_f": 11.950344064095098,
+ "meff_sigma_now": 3.650322547530749,
+ "nuisances_included": false,
+ "planck_act_sky_overlap_included": false,
+ "published_limit_mev": 64.2,
+ "published_meff_mev": -101.0,
+ "sd_at_f_required_mev": 12.154745373709153,
+ "sigma_required_of_an_independent_set_mev": 12.764831535156858
+}

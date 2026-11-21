@@ -1,0 +1,85 @@
+{
+ "binning": {
+  "amp_seventy": 1.471464304050171e-09,
+  "amp_sixty": 1.4716428557142912e-09,
+  "data_fractional_error_pc": [
+   8.99165469219046,
+   5.148305668075488,
+   5.003801486506713,
+   6.515583547821372,
+   8.627377778331082,
+   11.62233270149256,
+   10.264592910661165,
+   11.881877804694954,
+   17.591064518909644
+  ],
+  "in_bin_sigma": [
+   0.002528009520180523,
+   0.002162848711543785,
+   0.0032583940969979183,
+   0.001985262248685373,
+   0.002348379908210826,
+   0.0017869627376044751,
+   0.0010651915111098702,
+   0.006571658870059477,
+   0.04128779800499936
+  ],
+  "in_sigma_is_after_each_vector_is_self_normalised": true,
+  "n_coarse": 36,
+  "n_exact": 393,
+  "rel_diff": [
+   0.0003111132729473054,
+   0.00023029917230621422,
+   0.00029316288476088914,
+   0.00025105531783875534,
+   0.00032001647817914147,
+   0.0003255838204629935,
+   0.0002567442449975532,
+   0.001192915362569713,
+   0.007581522897983639
+  ],
+  "seventy": [
+   119.60595771420348,
+   91.81357572058633,
+   64.67470534148855,
+   47.67879783936114,
+   36.66148819249936,
+   29.060391481502513,
+   23.570071384761317,
+   19.488805562167652,
+   16.357266628782924
+  ],
+  "sixty": [
+   119.56874671323502,
+   91.7924311300914,
+   64.65574511829958,
+   47.66682782361541,
+   36.649755912163194,
+   29.050929888219816,
+   23.564019904579098,
+   19.46555706661441,
+   16.481279620277466
+  ],
+  "worst_in_sigma": 0.04128779800499936,
+  "worst_rel": 0.007581522897983639
+ },
+ "chi2": {
+  "amp_rel_difference": 0.00012134284442288923,
+  "amp_seventy": 1.471464304050171e-09,
+  "amp_sixty": 1.4716428557142912e-09,
+  "difference": 0.0003985775840753547,
+  "seventy": 16.389848490454018,
+  "sixty": 16.389449912869942
+ },
+ "inputs": {
+  "data_bitwise_identical": true,
+  "fisher_max_abs_difference": 1.0,
+  "fisher_max_rel_difference": 1.9186799207204827e-17,
+  "fisher_scale": 5.211916741300396e+16,
+  "seventy_convention_in_source": true,
+  "windows_bitwise_identical": true
+ },
+ "is_not_a_registered_arm": true,
+ "verdict": "the interpolation is not the lensing half: the two binnings agree to 7.582e-03 relatively and 4.129e-02 of a bandpower error once each is normalised by its own best fit, and their chi^2 differ by 3.986e-04 against a chi^2 of 16.390 -- so r7848's lensing half is NOT an interpolation artefact",
+ "why_it_was_run": "r7848 reports that adding the lensing bandpowers made the control worse; this rules out -- or in -- the only place this seat's scoring path differs from the seat that banked the data"
+}

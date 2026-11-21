@@ -27734,3 +27734,140 @@ You ordered this as **`r7842`** and its commits, its computation directory and i
 The lensing data is banked and the instrument cannot carry a neutrino effect into the lensing power it computes. **The extension is one object: a scale-dependent growth carried from `z = 12.8` to `z = 0`.** That is what would close the remaining factor `1.55`, and it is also what would give `tau` reach, since `C_L^{phiphi}` carries no fitted amplitude for `exp(-2 tau)` to hide in. ⌗ If you would rather have the cheaper thing first: the arm of record's own `555`-bin limit is one run away once its spectra land, and I will report it the moment Ⓔ⑤'s successor passes — but not before.
 
 **`P15` is unchanged**, as `r7841` and `r7843` both require until the arm is read.
+
+
+## ⚑ `r7846` IN FLIGHT ON ORDER `r7845` — **THE GROWTH IS SOLVED AND SCALE-DEPENDENT, AND THE INTERVAL YOU NAMED CARRIES LESS THAN HALF THE SUPPRESSION**
+
+*Order `r7845` ①–③. `PREDICTION.md` registered and pushed before any computation, eleven arms. This section goes up while the revision is in flight because one item in it is a decision about your order's own wording, and you should see the evidence rather than the conclusion.*
+
+### ✔ ① THE SCALE-DEPENDENT GROWTH IS IN, AND IT IS AN ODE RATHER THAN A FITTING FUNCTION
+
+The two-fluid growth equation on this instrument's own rate, `d_cb'' + (2 + dlnH/dN) d_cb' = 1.5 Om_tot(a) [(1-f_nu) d_cb + f_nu d_nu]` in `N = ln a`, with `d_nu` filtered on the neutrinos' thermal velocity at `k_fs(a) = sqrt(3/2) a H(a) / v_th(a)`. **The filter is the one approximation and it is named in the module's own docstring**: both limits are right by construction — `d_nu -> d_cb` far below `k_fs`, `d_nu -> 0` far above — and it is an interpolation in between, not a Boltzmann solution. So I am not claiming this is the published pipeline's treatment.
+
+**Ⓑ② holds:** the suppression at `a = 1` is monotone non-increasing in `k`, `-0.000002` at `k = 1e-4` and `-0.026649` at `k = 1` /Mpc.
+
+### ⛔ ARM Ⓐ① FAILS, AND THE CAUSE IS `L171x`'s QUADRATURE AND NOT MY SOLVER
+
+I registered that at `Sum = 0` the new growth must return `L171x`'s background quadrature to `1e-10`. **It returns it to `5.276e-03`.** Reported FAILED with the criterion exactly as written.
+
+But the cause is measured, not guessed. The gap is `1e-16` at the start — zero by construction, since the solver is handed the quadrature's own growing mode there — and grows monotonically to `z = 0` **while the radiation share falls to nothing**. So it accumulates; it is not residual radiation at the start. `isolate_against_matter_lambda` then builds **both** the quadrature and the ODE on one pure matter-plus-Lambda rate: they agree to **`9.799e-09`**, solver tolerance.
+
+⇒ **So the ODE is the growth equation, and `growth_over_a()` is the matter-plus-Lambda closed form evaluated on a background that carries radiation** — outside the validity its own docstring states ("exact for matter + Lambda ... after radiation stops mattering"). Its `D` is wrong by about half a per cent by `z = 0`.
+
+- **This does not disturb `r7844`**, whose lensing figures are RATIOS between sums on one background, where the error cancels.
+- **It does matter here**, because item ② scores the bandpowers with no fitted amplitude, so a half-per-cent error in `D` is a per-cent error in `C_L^phiphi` against bandpower errors of `5.0` to `17.6` per cent. Sub-dominant, not negligible, and mine now that I am the one removing the amplitude freedom. ⇒ The `phi-phi` carry uses the ODE, not the quadrature.
+- ⌗ **And Ⓐ①'s `1e-10` is the same class of mistake as `r7844`'s two windows, in a new place.** Not a tolerance finer than a Monte-Carlo error this time — a tolerance finer than **the accuracy of the thing compared against**. I had assumed the quadrature exact because it is written in closed form.
+
+### ⛔ THE DECISION I AM TAKING ON YOUR ORDER'S OWN WORDING, WITH THE EVIDENCE
+
+Your ① says the growth is to be carried **from `z = 12.8` to `z = 0`**, which is where this instrument freezes `Phi(k)`. Measured, that interval is not where the suppression is:
+
+| carried from | high-`k` asymptote on the power | against the textbook `-8 f_nu = -0.18005` |
+|---|---|---|
+| `z = 12.8`, as ordered | `-0.05330` | `0.296` of it |
+| `z = 188`, where the species turns non-relativistic | `-0.12008` | `0.667` of it |
+
+⇒ **The interval you named carries `44.4` per cent of what the full post-non-relativistic one does.** Free-streaming begins when the species goes non-relativistic, near `1+z ~ m / (3.15 T_nu0)`, and from there to `z = 12.8` the suppression is already accumulating — `Phi(k, z = 12.8)` carries only the FLAT `f_nu` reduction of the Poisson source that `r7844` measured, not the scale-dependent part.
+
+**Both branches are open to me**: the instrument's freeze redshift is an environment switch, so `Phi(k)` can be taken at the earlier time for the cost of one more solve, which is cheap because the lensing path needs no Bessel pass.
+
+**This seat's decision, since it is mine to take: implement BOTH and report the control's limit under each.** Then item ③'s verdict rests on measurement rather than on my reading of your wording, and if the two carries straddle the published limit that is itself the answer to how much of this gap was the frozen growth. I am not silently substituting a different interval for the one you ordered, and I am not spending a revision asking.
+
+⌗ Note what the second row still is not: `0.667` of the textbook asymptote, not `1.0`. The remainder is the filter being an interpolation rather than a hierarchy solve, and I am not calling that agreement.
+
+### ⛔ AND I AM REVERSING THAT DECISION ON A LATER MEASUREMENT — YOUR WORDING WAS RIGHT
+
+*Everything above is left standing as written, because it is what I routed and acted on. This is the test that overturned it, and it is the most important thing in this section.*
+
+I also found, separately, that the ABSOLUTE normalisation works: the amplitude the `555`-bin CMB fit determines, divided by `T_CMB^2` and nothing else, is `1.4523e-09`, against `1.4716e-09` for what the nine bandpowers themselves prefer at the `z = 12.8` carry — **agreement to `1.3` per cent, with no amplitude fitted to the lensing data at all.** At the `z = 188` carry the same comparison is off by `65` per cent. Both cannot be right, so I tested which.
+
+**The test is closed and has no free constant.** If the growth genuinely links two reference times, the lensing potential cannot care which one it is carried from: `Phi(k, a_1)` taken DIRECTLY from the instrument must equal `Phi(k, a_2) * g(k, a_1)/g(k, a_2)`. Measured:
+
+| `k` /Mpc | ratio |
+|---|---|
+| `2e-4` | `0.964` |
+| `2e-3` | `0.936` |
+| `7e-3` | `0.839` |
+| `2e-2` | `0.754` |
+| `7e-1` | `0.739` |
+
+⇒ **`k`-dependent, flat at small scales, approaching `1` only at the largest.** That is sub-horizon `Phi` decay through the residual radiation era — a mode inside the horizon while radiation still contributes loses potential, and **a matter-only growth equation does not carry that.** On this background radiation is `5` per cent of matter at `z = 188` and `0.4` per cent at `z = 12.8`.
+
+⇒ **So the growth equation was being applied outside its own range, and the better `chi^2` at the earlier carry was two errors partly cancelling** — the truncation that loses high-`z` contributions against a growth that over-predicts them by up to `26` per cent in a `k`-dependent way. A lower `chi^2` obtained that way is not a better model, and I would have reported it as one.
+
+⇒ **The ordered carry at `z = 12.8` is correct. Your wording was right and my decision was wrong.** The grid is regenerated there; the `z = 188` grid is kept as evidence rather than deleted.
+
+**What that leaves genuinely owed, and it is not nothing:** the `44.4` per cent of missing neutrino suppression and the `2.05` of shape error are both still real, and **neither is fixed by moving the start.** Fixing them needs `Phi` carried through the radiation era with its `k`-dependent decay — a larger instrument change than ① asks for, and the next order's business rather than something I will quietly add to this one.
+
+⌗ The guard was already in my own standing list and I walked past it: *before an identity is treated as an obstruction, establish what it RANGES OVER.* The growth equation ranges over matter domination. I read its limits off its own derivation, wrote them into its docstring, and then started it where they do not hold.
+
+## ⛔ `r7848` LANDS ON ORDER `r7845` — **THE LENSING TERM MADE YOUR CONTROL WORSE, NOT BETTER, AND THE ACT DATA YOU OFFERED WAS ALREADY BANKED**
+
+*You ordered this as `r7845` and its commits, its computation directory and its `PREDICTION.md` at `0859200f7` all carry `r7846`. **It lands as `r7848`**, because your own `r7845` is the trunk's front and this line's next id of its own parity above the front is `r7848`. Same work, same registration. The same thing happened to `r7844`, which you ordered as `r7842`.*
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_more_information_made_the_control_worse_and_the_act_data_the_order_offered_was_already_banked_and_cannot_close_the_gap.py` — eighteen arm-checks over the eleven registered arms, `rc=0`, fifty figures pinned two-sided.
+
+### ⛔ YOUR ITEM ③ FAILS, AND IT FAILS IN THE DIRECTION NOBODY REGISTERED
+
+| | limit (meV) | effective mass (meV) |
+|---|---|---|
+| `r7838`, temperature only | `277.7` | `+67.5` |
+| `r7844`, polarisation added | `99.67` `±` `0.55` | `-7.0` `±` `50.85` |
+| **`r7848`, lensing and `tau` added** | **`111.38` `±` `0.41`** | **`+44.25` `±` `39.79`** |
+| published | `64.2` | `-101` |
+
+**Every previous revision on this line closed the gap by adding what the harness was not scoring. This one added the two things you ordered and UNDID BOTH REPAIRS.** The limit is `36.91` standard errors above your own `96.3` ceiling. The effective mass is back on the wrong side. I registered PASS and a limit between `50` and `90` meV, and I am refuted by `52.33` standard errors.
+
+**And the chains are not the problem, which is asserted and not assumed:** worst split `R-hat` `1.0001` against the registered `1.05`, smallest effective sample size `46515` against `1000`, kept-chain acceptance `0.231` and `0.232` inside the band below which the sampler refuses to report. ⇒ **The chains are healthy and the answer is wrong.**
+
+### ⛔ AND YOUR ACT DR6 CLAUSE WAS ALREADY ANSWERABLE — THE DATA IS BANKED, FOR THE SECOND REVISION RUNNING
+
+`computations/planck_tt_likelihood/data/act_dr6_cmbonly/` has held the DR6.02 CMB-only SACC file verbatim since `r7815+70.1`: `45` foreground-marginalised bandpowers each in TT, TE and EE over `ell 600.5`–`6125.5`, the full `135 × 135` covariance, windows on `ell 2`–`8501`. **`r7844`'s Ⓗ⑧ found the lensing bandpowers exactly this way.** So I measured the clause instead of asking it.
+
+- **The tightening you would need:** shrinking my own posterior about its own centre, the `95` per cent limit reaches `64.2` meV at a factor `3.2738` — a width of `12.155` meV — so an independent dataset must deliver `12.765` meV **on its own**. The rescaling reproduces the chain's own limit at factor `1` to `1.24` per cent.
+- **What ACT can give:** `84` of the `135` bandpowers lie wholly inside this instrument's reach (`ell 600.5`–`1950.5`); the other `51` carry weight past `ell 1996`, where the banked spectra stop. A marginalised Fisher on those `84`, built with this instrument's own spectra, gives `σ(Σ) = 104.1` meV. **Combined with my control it buys `3.56` meV of the `47.18` meV remainder — seven and a half per cent.**
+- ⌗ **Every choice in that bound is deliberately generous to ACT, so the shortfall is robust:** its calibration and polarisation-efficiency nuisances are left unmarginalised because they are not banked (`DR6-ACT-lite` is refused from this container, HTTP 403), and it is treated as independent of Planck although its footprint sits inside Planck's sky **and** those `84` bandpowers sit inside the band Planck already scores here.
+
+⇒ **NOT ADDED, with the control's figure as the reason, as my Ⓘ⑨ registered.**
+
+### ⛔ AND HERE IS THE THING THAT MATTERS MORE THAN EITHER — THE REMAINDER IS A CENTRE, NOT A WIDTH
+
+Shrinking a width moves a limit and leaves a central value exactly where it is. At the factor `3.2738` that would close the limit, my effective mass goes from `3.65` to `11.95` standard errors from the published `-101` meV.
+
+⇒ **The operation that would mend one half of your item ③ makes the other half worse. No quantity of the same observable closes this.** Whatever is wrong is not a precision deficit, and ordering more data will not find it. **Three successive additions — polarisation, then lensing with `tau` — have moved the limit `277.7` → `99.67` → `111.38` and the sign `+` → `-` → `+`, which is not the behaviour of an apparatus converging on an answer.**
+
+### ⚠ A FIGURE I GAVE YOU IN THIS FILE IS WRONG, AND HERE IS THE CORRECTION
+
+Above, in the in-flight section, I told you the absolute normalisation agrees to **`1.3` per cent**. **It agrees to `9.0` per cent.** The held prediction is `(A_cmb / T_CMB²) · e^{+2τ} = 1.617967e-09` and the bandpowers prefer `1.471643e-09`, a ratio of `0.909563`. The `1.3` per cent figure dropped the `e^{+2τ}`, and that comparison is wrong: the reionisation suppression lives in the CMB amplitude and **not** in the matter potential, which is the whole mechanism that gives `tau` its reach here. The run record always carried the right number; the looser one is what I said.
+
+⌗ **It does not change any conclusion** — nine per cent with nothing fitted is still the arm holding, and the `z = 188` comparison it was used to rule out is off by far more — but you were given a figure `7` times better than the measurement, and you should have the measurement.
+
+### ✔ WHAT YOUR ITEMS ① AND ② BOUGHT, WHICH IS REAL
+
+- **① The growth is scale-dependent and solved**, two-fluid, on this instrument's own rate, from the `z = 12.8` you ordered. The suppression is monotone non-increasing in `k` across the band, `-1.790e-06` at `k = 1e-4` to `-0.026649` at `k = 1` /Mpc.
+- **Ⓐ① FAILS at `5.276e-03` against a registered `1e-10`, and the thing compared against is the defect.** Built on one pure matter + Λ rate the quadrature and the ODE agree to `9.799e-09`. ⇒ `growth_over_a()` is a matter + Λ closed form evaluated on a background carrying radiation, outside the validity its own docstring states. Its `D` is wrong by about half a per cent by `z = 0`.
+- **② Nothing is fitted in the lensing term, and that is asserted off the body of the function that runs**, not off a docstring. The convention was read off node `70`'s own `like.py` — `[L(L+1)]² C_L^φφ / (2π)`, not raw `C_L^φφ`; binning the raw spectrum gave a drift of `188,000` per cent rising with `L`, which is how it came to be checked.
+- **The shape systematic is stated beside the result:** `chi²/dof` `2.049` with a monotone `+49.8` per cent drift. Against it, moving the sum across the grid moves `chi²_lens` by `94.497`, five to six times the systematic, so the term carries information **despite** the shape error.
+- **Ⓔ⑤ holds:** `tau`'s reach goes from `1.137e-12` to `355.161`, a ratio of `3.124e+14`. Lensing alone prefers `tau = +0.0065`, a `6.79σ` pull — **recorded as confounded with the sum and with the shape systematic, not as a measurement of `tau`.**
+- **Ⓕ⑥:** the `tau` treatment is the additive `0.054 ± 0.007` you named, `70`'s `r7471` stand-in, and the receipt says the low-`ell` data itself is absent.
+
+### ⚠ AND A GUARD I WROTE ONE REVISION AGO PASSED A CHAIN FROZEN IN THE ONE DIRECTION THE RESULT IS READ OFF
+
+The arm of record's first attempt had its unbounded minimum at `Σ = -0.1200` eV, **exactly the model's lower bound.** The curvature probe hits the bound at once, its step returns at the floor, and the sum's proposal width came back `1.08e-08` eV. **`r7844`'s refusal guard did not catch it, because it tests the AGGREGATE acceptance and the other five directions were moving at `0.303`.** A limit read off that chain would have looked converged, because six chains frozen in the same direction agree with each other about it.
+
+The run was stopped rather than left to produce a number. A direction whose curvature cannot be measured now takes a **stated** fallback width and is named on stdout and in the run record; the kept chain is checked **per direction**, and a frozen direction is refused by name.
+
+⌗ **That is twice in two revisions that a guard I wrote passed what it was built to catch, and both times for the same reason: the guard tested a SUMMARY of the thing rather than the thing.** `r7844`'s Ⓒ③ asserted a definition instead of the code that ran; this one asserted an average instead of the direction the result is read off.
+
+⌗ **And the boundary is a finding, not just an obstacle.** The arm's joint fit wants the sum pressed against the floor of the grid at `-0.12` eV, so whatever limit it yields is set by where the grid stops rather than by the data.
+
+### ⇒ WHAT I RECOMMEND, SINCE THE DECISION IS YOURS
+
+**Ⓗ⑧ is NOT JUDGED and `P15` is untouched**, as registered and as `r7838` and `r7844` both ruled. `72`'s batch still waits.
+
+**Do not order more data.** The measurement above says it cannot close this. Two things would:
+
+1. **`Φ` carried through the radiation era with its `k`-dependent decay.** That is the `44.4` per cent of missing neutrino suppression AND the `2.05` of shape error, and it is one instrument change rather than two. It is also the only candidate that could move a CENTRAL VALUE rather than a width.
+2. **A closure test on the lensing half against node `70`'s own scoring of the same bandpowers.** `70` scored these nine at `r7471`. If this seat's `chi²` on them disagrees with `70`'s at the same cosmology, the defect is in my binning or my normalisation and not in the physics — and that is a cheap, decisive test I did not register and therefore did not run.
+
+⌗ I am naming `2` as the thing I should have registered. The instrument that produced a limit moving `277.7` → `99.67` → `111.38` has never once been checked against another seat's score of the same data.
