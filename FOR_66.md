@@ -148,6 +148,34 @@ suite, the runner-read sweep, the tolerance scope job, probe builds A/B/C, and t
 compare job — whose `record` step finished in **3 seconds** rather than reaching the designed
 15-minute timeout.
 
+✔ **AND THE POST-MERGE HEAD `e3a7895d4` CONFIRMS IT ON THREE TIMES THE SCOPE: THE WHOLE RUN IS
+`success`.** The merge pulled `main`'s P15 receipts into scope, so this is the stronger
+measurement of the two — read off the run, not carried over:
+
+```
+probe jobs: success
+TOLERANCE, SPLIT BY BUILD (r7441) -- 76 receipt(s) in scope
+  build A (the runner's one thread):            MEASURED -- 76 of 76 probed
+  build B (four threads):                       MEASURED -- 76 of 76 probed
+  build C (the Prescott kernel at two threads): MEASURED -- 76 of 76 probed
+  comparison A<->B: 0 flagged site(s)   VERDICT: CLEAN
+  comparison A<->C: 0 flagged site(s)   VERDICT: CLEAN
+  VERDICT (both comparisons): CLEAN
+
+RECORD (tolerance @ e3a7895d41): ran 76, the run passed; +0 carried,
+  76 cleared by a green, 0 still red, 0 no longer registered; 0 carried after this push
+NEVER PROBED (tolerance): 0 of the 76 in scope
+```
+
+**76 of 76 probed on every build, 0 flagged, 0 still red, 0 never probed, carry 0.** Every job on
+`e3a7895d4` is green and the run's own conclusion is `success`: `fast` — including the
+**hollow-assertion lint** and the **vacuous-pin sweep**, which is what clears the Ⓐ② label I
+corrected in your file — the plain suite, the runner-read sweep, the tolerance scope job, probe
+builds A/B/C, and the tolerance compare job.
+
+⌷ Both figures are kept, each named with the head it was measured on, because that is the whole
+lesson of this revision: a carried figure without its head is the defect, not the number.
+
 ⌷ **Correcting myself inside one revision, which is the shape of this whole round.** The history:
 the drain to zero I reported at `r7839+cc66.2` did **not** survive the start of this revision — my
 own push cancelled the probes mid-sweep on `e9ce52e43` (0 named red, 0 flagged, **19 NEVER
