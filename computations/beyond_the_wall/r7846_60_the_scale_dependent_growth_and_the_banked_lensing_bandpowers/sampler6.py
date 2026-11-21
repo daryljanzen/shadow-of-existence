@@ -107,23 +107,48 @@ def best_fit(mod, bounded):
     return best
 
 
+FALLBACK_SD = np.array([0.25, 0.01, 2e-4, 0.01, 0.05, 0.007])
+
+
 def laplace_cov(mod, x0, lo, hi):
-    """the proposal covariance from the curvature at the minimum -- r7844's repair, at NDIM"""
+    """the proposal covariance from the curvature at the minimum -- r7844's repair, at NDIM
+
+    ** AND A DIRECTION WHOSE CURVATURE COULD NOT BE MEASURED IS NAMED, NOT SILENTLY FROZEN. **
+    `r7844`'s repair takes the step for each second difference from a one-dimensional probe that
+    walks outward until `chi^2` moves by `1`.  If the minimum sits ON a bound, that probe hits the
+    bound immediately, the step comes back at its floor, and the curvature comes back enormous --
+    so the proposal's width in that direction comes back at `1e-8` and the chain never moves in it.
+
+    *That happened on the arm of record at the first attempt:* its unbounded minimum is at
+    `Sum = -0.1200` eV, exactly the model's lower bound, and the sum's proposal width came back
+    `1.08e-08` eV.  ** r7844's refusal guard did not catch it, because it tests the AGGREGATE
+    acceptance and the other five directions were moving perfectly well. **  A chain can be dead in
+    one direction and healthy on the arithmetic that was supposed to notice.
+
+    ⇒ So a probe that terminated against a bound rather than against `chi^2` is RECORDED, that
+    direction takes a stated fallback width instead of the curvature's, and the caller is told
+    which directions those were.
+    """
     x0 = np.asarray(x0, float)
     h = np.empty(NDIM)
+    at_bound = []
     f0 = mod.chi2(x0)
     for i in range(NDIM):
         t = 1e-4
+        hit_bound = False
         for _ in range(60):
             e = np.zeros(NDIM)
             e[i] = t
             z = x0 + e
             if not (lo <= z[4] <= hi) or not (M6.TAU_LO <= z[5] <= M6.TAU_HI) \
                     or np.any(np.abs(z[:4]) > 6):
+                hit_bound = True
                 break
             if mod.chi2(z) - f0 > 1.0:
                 break
             t *= 1.4
+        if hit_bound and t <= 1e-3:
+            at_bound.append(NAMES[i])
         h[i] = max(t / 4.0, 1e-8)
     H = np.zeros((NDIM, NDIM))
     for i in range(NDIM):
@@ -147,8 +172,20 @@ def laplace_cov(mod, x0, lo, hi):
     if not ok:
         print('       the curvature is not positive definite -- diagonal fallback, recorded',
               flush=True)
-        return np.diag(np.array([0.25, 0.01, 2e-4, 0.01, 0.05, 0.007]) ** 2), False
-    return C, True
+        return np.diag(FALLBACK_SD ** 2), False, at_bound
+    # a direction whose probe died on a bound gets a stated width, and the swap is announced
+    sd = np.sqrt(np.diag(C))
+    for i, nm in enumerate(NAMES):
+        if nm in at_bound or sd[i] < 1e-4 * FALLBACK_SD[i]:
+            print('       %s: the curvature could not be measured (the minimum is on a bound); '
+                  'its proposal width is the stated fallback %.3g and NOT %.3g'
+                  % (nm, FALLBACK_SD[i], sd[i]), flush=True)
+            C[i, :] = 0.0
+            C[:, i] = 0.0
+            C[i, i] = FALLBACK_SD[i] ** 2
+            if nm not in at_bound:
+                at_bound.append(nm)
+    return C, True, at_bound
 
 
 def run_chains(mod, bounded, x0, S0, rng):
@@ -217,6 +254,16 @@ def run_chains(mod, bounded, x0, S0, rng):
     assert 0.03 <= rate <= 0.70, (
         f'the kept chain accepted {rate:.4f} of its proposals -- REFUSING to report a chain that '
         f'did not move (burn ended at {burn_rate:.4f})')
+    # ** PER-DIRECTION, BECAUSE THE AGGREGATE RATE CANNOT SEE A SINGLE FROZEN PARAMETER. **  The
+    #   arm of record's first attempt accepted 0.30 of its proposals while its sum direction had a
+    #   proposal width of 1e-8 eV: healthy on the only number r7844 checked, dead on the one the
+    #   limit is read off.
+    flat = out.reshape(-1, NDIM)
+    dead = [NAMES[j] for j in range(NDIM)
+            if float(flat[:, j].std(ddof=1)) < 1e-6 * max(abs(float(flat[:, j].mean())), 1e-3)]
+    assert not dead, ('these direction(s) did not move across the kept chain: %s -- REFUSING to '
+                      'report a chain that is frozen in a parameter the result is read off'
+                      % ', '.join(dead))
     return out, rate, burn_rate
 
 
@@ -277,12 +324,14 @@ def main():
     bf0 = best_fit(mod, False)
     print('    unbounded minimum chi2 = %.3f at Sum = %+.4f eV, tau = %.4f'
           % (bf0.fun, bf0.x[4], bf0.x[5]), flush=True)
-    S0, ok = laplace_cov(mod, bf0.x, mod.cmb.s_lo, mod.s_hi)
+    S0, ok, at_bound = laplace_cov(mod, bf0.x, mod.cmb.s_lo, mod.s_hi)
     print('    proposal sd from the curvature: '
           + '  '.join('%.3g' % v for v in np.sqrt(np.diag(S0)))
           + ('' if ok else '   (DIAGONAL FALLBACK)'), flush=True)
     all_res = {f'{arm}_proposal': dict(from_curvature=bool(ok),
-                                       sd=[float(v) for v in np.sqrt(np.diag(S0))]),
+                                       sd=[float(v) for v in np.sqrt(np.diag(S0))],
+                                       curvature_unmeasurable_in=at_bound,
+                                       minimum_on_a_bound=bool(at_bound)),
                f'{arm}_bao': dict(spline_worst_error=float(err))}
     for bounded in (True, False):
         S, rate, br = run_chains(mod, bounded, bf0.x, S0, rng)
