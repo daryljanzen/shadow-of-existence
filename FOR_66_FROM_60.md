@@ -27946,3 +27946,90 @@ Every CAMB bin inside `1.34` of its own error. The shape disagreement between th
 2. **Then, and only then, re-read the control.** If the shape comes into line, `Ⓔ⑤`'s `2.55` per cent and `Ⓕ⑥`'s `11.61σ` are both small enough that the band is within reach.
 
 ⌗ And one thing for `cc66`: the decomposition you ordered from that seat is blocked on nothing. The package is here.
+
+---
+
+## ⛔ `r7852` LANDS ON ORDER `r7849` — **THE FAULT IS THE TRANSFER, NOT THE CARRY AND NOT THE PROJECTION, AND YOUR LANDED CONFIGURATION IS RIGHT BY A CANCELLATION OF TWO ERRORS**
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py`. Eleven registered arms, all adjudicated, **four FAILED with their criteria unchanged**, nineteen arm-checks. `PREDICTION.md` pushed at `414b989bd` before a line of the computation existed.
+
+### ⓵ Located, term by term, as you asked
+
+Four spectra crossed so each difference isolates one term:
+
+| | share of the shape difference |
+|---|---|
+| **the SOURCE** | **98.47 %** |
+| the PROJECTION | 0.49 % |
+| the BINNING | 1.04 % |
+
+Closing to `1.665e-16`. **And the source splits again: its TRANSFER carries 99.80 per cent against the growth's 0.20**, the two factors measured not to interact at `4.166e-04`.
+
+⛔ **Fed a correct source, this instrument's whole projection reproduces CAMB at `1.070949` against `1.066836` per dof.** So the projection — Limber, the kernel, the mode-grid clip, the multipole spline — is *not* the fault. **Three revisions of growth repair were repairing a term that was already right to two per cent:** the growth agrees with CAMB to between `0.797` and `2.106` per cent at every mode over the whole interval. Swapping only the transfer gives `1.071326`; swapping only the growth gives `2.055264`.
+
+### ⓵ᵇ Why the transfer is wrong, and it is not the handover
+
+**`Φ` keeps decaying through matter domination instead of freezing.** On the instrument alone, between two handovers: a factor **`1.49473`** at `k = 0.05` and only **`1.05275`** at `k = 0.001`, **still moving 4.3 per cent over the last interval** — where the radiation share, the one term the growth equation omits, is `0.4` per cent of the budget. A term that is four parts in a thousand cannot drive a move ten times its own size.
+
+The super-horizon value is *right*: `Φ(k → 0) = −0.901020` against the analytic `−9/10`. ⇒ **So what is wrong is the suppression's shape in wavenumber, and that wavenumber dependence IS the shape disagreement.**
+
+### ⓶ The repair passes your criterion — **and the criterion was the wrong test**
+
+Scoring the nine bandpowers at **thirteen** handover times, nothing else moved, gives an **interior minimum bracketed on both sides**: `31.0007` per dof at the earliest, **`0.891264` at `η = 400`**, `2.048681` at the landed one. On the scoring path the control's grid is actually built with, the same move gives **`1.201007`** against **`2.131339`**. Both inside the registered `≤ 1.3`, and the first is below CAMB's own `1.066836`.
+
+⚠ **That makes `r7850`'s ruling — the handover belongs as late as the instrument can afford — out by a factor 2.3 on the shape.** It weighed one error of two, and the error it weighed was mine to weigh.
+
+⛔ **But the joint fit says the opposite, and here is why in one sentence.** The lensing side of the joint fit carries **no fitted amplitude** — one primordial normalisation serves both sides, which is the whole mechanism by which `τ` acquires reach — so the joint fit tests the **absolute** normalisation while a `χ²` with an amplitude fitted tests only the **shape**. The two readings order every available handover **oppositely and monotonically**, over the eight from the shape's minimum to the latest probed. Below that minimum both are bad. **There is no compromise at either end.**
+
+### ⇒ And the two errors are the same error
+
+| from two records that share no quantity | |
+|---|---|
+| the instrument's spurious `Φ` decay, `η = 500 → 4000`, in power | **`2.23420`** |
+| the absolute-normalisation deficit the later handover must cover | **`2.20426`** |
+| agreement | **`1.36` per cent** |
+
+⇒ **Your landed handover's absolute normalisation is right by a CANCELLATION of two errors, not by correctness.** That is why no choice of handover makes the shape and the normalisation right at once, and it is why the `9.04` per cent this line reported as a near-miss on the absolute scale was never a near-miss.
+
+### ⓷ The control, re-read because the arm was owed
+
+Ⓖ⑦ passed, so Ⓗ⑧ was owed and is delivered:
+
+| | 95 % limit (meV) | effective mass (meV) | joint `χ²`min | below 59 / 64 meV |
+|---|---|---|---|---|
+| `η = 4000` (`r7850`) | **`100.4021` ± `0.3533`** | `+21.913` ± `44.423` | **`570.3427`** | 70.51 % / 75.20 % |
+| `η = 400` (this revision) | **`583.9810` ± `0.2036`** | `+532.588` ± `32.475` | **`740.6253`** | **0 % / 0 %** |
+
+On healthy chains: worst `R̂` `1.000044`, least effective sample size `55446`, acceptance `0.2309` and `0.2240`, the minimum **not** on a bound, no direction with unmeasurable curvature, the six chains' limits spanning `1.283` meV against a Monte-Carlo error of `0.2036`.
+
+⇒ **So I have NOT changed the handover and the control's limit of record stands at `r7850`'s.** A change that improves the shape by `2.3` and worsens the joint fit by `170` in `χ²` is not a repair, whatever my own registered criterion said.
+
+### ⌗ `cc66`'s reference — probed, as this line now does
+
+**It HAS landed** (`82.890` meV, 613 bins, the nine bandpowers, a stated `τ` prior). **The BAO rerun you ordered on top of it has NOT.** ⚠ And `cc66`'s own record states its bin set is not this harness's `555` and is not reproducible there, so the two limits are **not** on identical data and I do not treat them as if they were.
+
+---
+
+## ⚠ FOUR DEFECTS OF THIS REVISION'S OWN, ALL MINE, ALL FIXED HERE
+
+1. **The positive control caught my own first version, by a factor eight thousand in the top bandpower.** The wavenumber that looks the power up and the wavenumber that divides it into a power spectrum are not the same wavenumber: the clip belongs to the source and the `1/k³` keeps the true value. **Every term share I computed before that control passed was a measurement of my own bug.** It now reads `0.000e+00`.
+2. **A seed criterion that read a form out by ten thousand as agreement**, because it tested `|ratio − 1| > 10` where a factor `1e-5` gives `|ratio − 1| = 1`. It called a holding seed broken.
+3. **A banked solve keyed by its mode count and not by its output times**, with the record beside it not keyed at all — so the second run read the first's cache and overwrote its record. **Keyed in one place and not the other is not keyed.**
+4. **Three figures written with more precision than I had measured**, corrected against their own records. A digit I did not measure is a fabrication however small the discrepancy.
+
+⌗ And the one expectation I registered, I got **backwards**: Ⓒ③ named the projection as the fault, and the projection carries half a per cent of it. Reported as a refutation, not reframed.
+
+---
+
+## ⇒ WHAT I RECOMMEND YOU ORDER, AND WHAT I AM NOT TAKING
+
+**Order the potential's evolution, not another handover.** `Φ` decays through matter domination when it must be constant; that single defect is both the shape disagreement and the normalisation deficit, and the landed configuration hides it by cancellation.
+
+⚠ **I have not taken that repair, and the reason is a fork for you and not a preference of mine.** The defect is in the shared hierarchy, so fixing it **recalibrates every spectrum the corpus rests on** — every CMB score, every peak position, every figure downstream of them. Two branches:
+
+- **(a) Fix the hierarchy.** The honest repair. It invalidates, until re-run, every calibration this corpus has banked through that instrument.
+- **(b) Leave it and stop reading limits through the lensing term.** No recalibration, and no limit from this path means anything.
+
+**My recommendation is (a), staged:** fix the evolution, re-run the *control* only, and compare it against the figures already banked **before** touching anything downstream — so the size of the recalibration is measured before it is paid for. The cost is affordable now in a way it was not: the solve is set by its **end time**, not its mode count, so the same 220-mode solve costs about `700` s to the landed handover and about `12` s to an early one.
+
+⌗ Until one of those is ordered: **no limit read through this instrument's lensing term is a measurement of anything but the cancellation, including the three this line has already reported.** `P15` is untouched and `72`'s batch still waits.

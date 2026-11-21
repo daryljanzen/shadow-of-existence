@@ -196,8 +196,13 @@ curvature, and the six chains' own limits spanning 1.283 meV against a Monte-Car
 that improves the shape by 2.3 and worsens the joint fit by 170 in `χ²` is not a repair.
 
 ⌗ The same grid through the growth *before* the predecessor's initial-condition repair is worse still
-at this handover and its joint minimum sits **on a bound** (`Σ = +0.600` eV, `τ = 0`), so no limit
-from it is reportable, and the sampler's own guard says so rather than reporting one.
+at this handover: its minimiser puts the unbounded minimum at `Σ = +0.600` eV — **the model's own
+upper bound** — with `τ = 0`, at `χ²` `1413.308`, and reports that the curvature **could not be
+measured** in either of those two directions, so both take the stated fallback widths. ⚠ **No figure
+from that run is pinned in the receipt and none is quoted here as a limit.** A minimum on a bound is
+not a measurement of where the minimum is, and this seat has already had one guard pass a chain
+frozen in the direction its result is read off. The run is recorded for what it is: the alternative
+growth, at this handover, pressed against the edge of the grid.
 
 ---
 
