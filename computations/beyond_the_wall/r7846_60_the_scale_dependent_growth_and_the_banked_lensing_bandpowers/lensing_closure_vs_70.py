@@ -129,18 +129,34 @@ def main():
 
     rel = np.abs(b60 / b70 - 1.0)
     err = np.sqrt(np.diag(np.linalg.inv(LL.FISHER)))
-    in_sigma = np.abs(b60 - b70) / err
+
+    # ** THE TWO MODEL VECTORS ARE IN THE INSTRUMENT'S OWN ARBITRARY UNITS, of order 1e+2, while
+    # the data and its errors are of order 1e-7. **  Dividing their difference by a bandpower error
+    # therefore says nothing at all -- the first pass printed 2.8e+06 "bin sigma" and concluded the
+    # interpolation mattered, which is this revision's third instance of a figure quoted outside
+    # the convention that makes it mean something.  Each vector is normalised by ITS OWN best fit
+    # to the data before the comparison is made in units of the bandpower errors.
+    def _amp(b):
+        return float((b @ LL.FISHER @ LL.DATA) / (b @ LL.FISHER @ b))
+
+    _a70, _a60 = _amp(b70), _amp(b60)
+    in_sigma = np.abs(_a60 * b60 - _a70 * b70) / err
     print('\n     bin   L_av      70 exact        60 splined      rel. diff    in bin sigma')
     for i in range(len(b70)):
         print('      %d   %6.1f   %.6e   %.6e   %9.3e   %9.3e'
               % (i + 1, LL.L_AV[i], b70[i], b60[i], rel[i], in_sigma[i]))
-    print('\n     worst relative difference %.3e, worst in units of the bin error %.3e'
-          % (rel.max(), in_sigma.max()))
+    print('\n     worst relative difference %.3e; after each vector is normalised by its own '
+          'best fit,\n     the worst difference is %.3e of a bandpower error, against fractional '
+          'errors of %.1f to %.1f per cent'
+          % (rel.max(), in_sigma.max(), 100 * (err / LL.DATA).min(), 100 * (err / LL.DATA).max()))
     out['binning'] = dict(n_exact=int(len(Lall)), n_coarse=int(len(Lcoarse)),
                           seventy=[float(v) for v in b70], sixty=[float(v) for v in b60],
                           rel_diff=[float(v) for v in rel],
                           in_bin_sigma=[float(v) for v in in_sigma],
-                          worst_rel=float(rel.max()), worst_in_sigma=float(in_sigma.max()))
+                          worst_rel=float(rel.max()), worst_in_sigma=float(in_sigma.max()),
+                          amp_seventy=_a70, amp_sixty=_a60,
+                          in_sigma_is_after_each_vector_is_self_normalised=True,
+                          data_fractional_error_pc=[float(100 * v) for v in (err / LL.DATA)])
 
     # ③ the chi^2 each path gives, at the data's own best normalisation so the comparison is of
     #   the SHAPE each binning produces and not of an amplitude
@@ -159,8 +175,10 @@ def main():
                        amp_rel_difference=abs(a60 / a70 - 1.0))
 
     verdict = ('the interpolation is not the lensing half: the two binnings agree to %.3e '
-               'relatively and %.3e of a bin error, and their chi^2 differ by %.3e'
-               % (rel.max(), in_sigma.max(), abs(c60 - c70))) if in_sigma.max() < 0.05 else (
+               'relatively and %.3e of a bandpower error once each is normalised by its own best '
+               'fit, and their chi^2 differ by %.3e against a chi^2 of %.3f -- so r7848\'s '
+               'lensing half is NOT an interpolation artefact'
+               % (rel.max(), in_sigma.max(), abs(c60 - c70), c70)) if in_sigma.max() < 0.05 else (
               'THE INTERPOLATION MATTERS: the two binnings differ by up to %.3e of a bin error, '
               'so r7848\'s lensing half must be re-read on the exact path' % in_sigma.max())
     out['verdict'] = verdict

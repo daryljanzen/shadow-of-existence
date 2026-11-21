@@ -147,6 +147,7 @@ RESULT1 = ' '.join(RESULT.split())   # one line, so a wrap cannot decide an asse
 PRED1 = ' '.join(PRED.split())
 
 R44 = jload('sampler3_lcdm_pol.json', R7842)   # r7844's own control, read not retyped
+CLO70 = jload('lensing_closure_vs_70.json')   # NOT a registered arm; see below
 _ARM = os.path.join(RUN, 'sampler6_cr.json')
 ARM = jload('sampler6_cr.json') if os.path.exists(_ARM) else None
 
@@ -352,6 +353,13 @@ check('Ⓖ⑦ᵇ the failure is not a sampling artefact, and that is asserted ra
 # Ⓗ⑧  THE ARM OF RECORD -- NOT JUDGED, ASSERTED AS SUCH
 _cond = 'and only if Ⓖ⑦ passes' in PRED1
 _notjudged = 'NOT JUDGED' in RESULT1 and 'P15` is not touched' in RESULT1
+_a_b = ARM['cr_bounded'] if ARM else None
+_a_u = ARM['cr_unbounded'] if ARM else None
+_a_lim = _a_b['upper95_mev'] if _a_b else float('nan')
+_a_se = _a_b['upper95_mcse_mev'] if _a_b else float('nan')
+_a_eff = _a_u['sum_mean_ev'] * 1e3 if _a_u else float('nan')
+_a_effsd = _a_u['sum_sd_ev'] * 1e3 if _a_u else float('nan')
+_a_from_pub = abs(_a_eff - PUBLISHED_EFFECTIVE_EV * 1e3) / _a_effsd if _a_u else float('nan')
 check('Ⓗ⑧ the arm of record is NOT JUDGED, and that is asserted against the registration and the '
       'result document rather than merely omitted: PREDICTION.md registered it "and only if Ⓖ⑦ '
       'passes", Ⓖ⑦ did not pass, and r7838 and r7844 both ruled the same way on the same '
@@ -444,6 +452,94 @@ check('Ⓙ⑩ᵇ ⌗ and the pattern is named rather than buried: this is the SE
       'both named in RESULT.md, with the boundary recorded in the run')
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────────
+# Ⓗ⑧ᵇ  THE PLACEMENT THE ORDER ASKS FOR EITHER WAY -- REPORTED, AND NOT AS A BOUND
+check('Ⓗ⑧ᵇ the order asks where 59 and 64 meV sit on the arm either way, so the chain was run and '
+      'the figures are here: the arm of record\'s 95 per cent upper limit is 38.56 +/- 0.23 meV, '
+      'which is TIGHTER than the published 64.2 by a factor 1.665 and tighter than this '
+      'revision\'s own control by a factor 2.888; 99.24 per cent of its posterior sits below 59 '
+      'meV and 99.52 per cent below 64.  Its effective mass is -85.52 +/- 27.05 meV, which is '
+      '0.572 standard errors from the published -101.  ** AND NONE OF THAT IS REPORTED AS A '
+      'RESULT. **  The registered expectation was that the construction\'s limit would be LOOSER '
+      'than the control\'s and the reachable negative was a tighter one; it came out tighter, so '
+      'the expectation is refuted -- but the arm sits on an apparatus that misses its OWN control '
+      'by 36.91 standard errors, and an arm that agrees better with the published figures than '
+      'the calibration does is not evidence for the construction.  ** The control IS the '
+      'calibration, and it failed. **  r7838 and r7844 ruled the same way on the same condition',
+      ARM is not None and _a_lim < _lim and _a_lim < PUBLISHED_LIMIT_MEV and _a_eff < 0.0
+      and _a_from_pub < 1.0 < ACTD['meff_sigma_now'] and 'NOT JUDGED' in RESULT1,
+      'arm %.3f +/- %.3f meV against the control\'s %.3f; effective %+.2f +/- %.2f meV, %.3f '
+      'sigma from the published, where the control is %.2f'
+      % (_a_lim, _a_se, _lim, _a_eff, _a_effsd, _a_from_pub, ACTD['meff_sigma_now']))
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────
+# Ⓗ⑧ᶜ  AND THE REPAIRED GUARD IS WHAT MADE THAT CHAIN READABLE AT ALL
+check('Ⓗ⑧ᶜ the arm\'s own run record carries the thing that nearly went wrong: '
+      '`minimum_on_a_bound` is true and `curvature_unmeasurable_in` names MNU, so the direction '
+      'the limit is read off took the STATED fallback width rather than the curvature\'s, and it '
+      'then moved -- effective sample size 41009 on the bounded chain and 45787 on the unbounded, '
+      'against the registered 1000, with the six chains\' limits spanning 1.04 meV.  ** On the '
+      'first attempt that same direction had a proposal width of 1.08e-08 eV and r7844\'s '
+      'aggregate guard passed it. **  This is the record of the repair working, not of a problem '
+      'avoided by luck',
+      ARM is not None and ARM['cr_proposal']['minimum_on_a_bound'] is True
+      and ARM['cr_proposal']['curvature_unmeasurable_in'] == ['MNU']
+      and min(v['ess'] for v in _a_b['diagnostics'].values()) >= 1000.0
+      and min(v['ess'] for v in _a_u['diagnostics'].values()) >= 1000.0
+      and max(v['rhat'] for v in _a_b['diagnostics'].values()) < 1.05
+      and 0.03 <= _a_b['accept'] <= 0.70 and 0.03 <= _a_u['accept'] <= 0.70,
+      'curvature unmeasurable in %s, fallback taken, ESS %.0f and %.0f, per-chain span %.2f meV'
+      % (ARM['cr_proposal']['curvature_unmeasurable_in'] if ARM else '?',
+         min(v['ess'] for v in _a_b['diagnostics'].values()) if ARM else 0,
+         min(v['ess'] for v in _a_u['diagnostics'].values()) if ARM else 0,
+         (max(_a_b['upper95_per_chain_mev']) - min(_a_b['upper95_per_chain_mev'])) if ARM else 0))
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────
+# ⌷  NOT A REGISTERED ARM -- THE CLOSURE AGAINST THE SEAT THAT BANKED THE DATA
+# `PREDICTION.md`'s eleven arms do not contain it, and it is labelled as unregistered here and in
+# its own docstring.  It was run because this receipt reports that adding the lensing bandpowers
+# made the control WORSE, and an instrument whose limit has moved 277.7 -> 99.67 -> 111.38 meV had
+# never been checked against node 70's own scoring of the same nine bandpowers.  ** Reporting a
+# failure whose cause might be this seat's own binning would be worse than ruling it out. **
+_in = CLO70['inputs']
+_bn = CLO70['binning']
+check('⌷ NOT A REGISTERED ARM, and said so: the lensing half is NOT this seat\'s binning, measured '
+      'against the seat that banked the data.  Node 70\'s `like.py` looks its spectrum up at every '
+      'integer multipole; this seat splines from the 36 the Limber integral is actually solved on, '
+      'and that interpolation is the ONLY place the two paths differ.  The data and the nine '
+      'windows this seat loads are BITWISE what 70\'s own loader expressions produce and the two '
+      'Fisher matrices agree to 1.919e-17 relative; `C_L^phiphi` solved at all 393 integer '
+      'multipoles the windows cover and binned 70\'s way agrees with this seat\'s spline to '
+      '7.58e-03 at worst relatively and 4.129e-02 of a bandpower error once each vector is '
+      'normalised by its own best fit, against fractional errors of 5.0 to 17.6 per cent, with the '
+      'two chi^2 differing by 3.986e-04 on a chi^2 of 16.390.  ** So the failure this receipt '
+      'reports is the instrument\'s and not the interpolation\'s **',
+      _in['data_bitwise_identical'] and _in['windows_bitwise_identical']
+      and _in['fisher_max_rel_difference'] < 1e-10
+      and _bn['n_exact'] == 393 and _bn['worst_in_sigma'] < 0.05
+      and CLO70['chi2']['difference'] < 1e-03
+      and CLO70['is_not_a_registered_arm'] is True
+      and 'interpolation is not the lensing half' in CLO70['verdict'],
+      '393 exact multipoles against 36 splined: %.3e relative, %.3e of a bandpower error, chi^2 '
+      'differing by %.3e' % (_bn['worst_rel'], _bn['worst_in_sigma'], CLO70['chi2']['difference']))
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────
+# ⌷  AND THE SAME MISTAKE A THIRD TIME IN ONE REVISION, RECORDED
+check('⌷ and the convention mistake happened a THIRD time inside this revision, in the closure '
+      'itself, and is recorded rather than tidied: its first pass divided a difference between '
+      'two model vectors of order 1e+2 by a bandpower error of order 1e-7 and printed 2.8e+06 '
+      '"bin sigma", concluding that the interpolation mattered.  It does not; the vectors are in '
+      'the instrument\'s own arbitrary units and had to be normalised by their own best fits '
+      'first.  ** Three times in one revision a figure meant nothing until the convention was '
+      'stated: the normalisation at 1.3 against 9.0 per cent for a missing exp(+2 tau), the two '
+      'Fisher matrices at 1.000e+00 against 1.9e-17 for a missing denominator, and this. **  The '
+      'closure now records that its comparison is made after self-normalisation, and carries the '
+      'bandpower errors beside it',
+      _bn.get('in_sigma_is_after_each_vector_is_self_normalised') is True
+      and len(_bn.get('data_fractional_error_pc', [])) == 9
+      and min(_bn['data_fractional_error_pc']) > 1.0,
+      'the comparison is recorded as self-normalised, with all nine fractional errors beside it')
+
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────
 # ⌷  EVERY FIGURE THIS REVISION'S INDEX ROW PRINTS, PINNED TWO-SIDED AGAINST WHAT MEASURED IT
 # Each tolerance is written INSIDE the coarser of half a unit in the figure's last printed digit and
 # 0.05 per cent of it, as an EXPLICIT literal comparison rather than through this file's own helper,
@@ -502,6 +598,21 @@ _pins = {
     'ess': abs(_ess - 46515) < 0.45,
     'accept': abs(_b['accept'] - 0.231) < 0.00045,
     'placement_59': abs(_b['frac_below_0.059'] * 100.0 - 60.64) < 0.0045,
+    'arm_limit': abs(_a_lim - 38.56) < 0.0045,
+    'arm_limit_mcse': abs(_a_se - 0.23) < 0.0045,
+    'arm_effective': abs(_a_eff - -85.52) < 0.0045,
+    'arm_effective_sd': abs(_a_effsd - 27.05) < 0.0045,
+    'arm_from_published': abs(_a_from_pub - 0.572) < 0.00045,
+    'arm_factor_vs_published': abs(PUBLISHED_LIMIT_MEV / _a_lim - 1.665) < 0.00045,
+    'arm_factor_vs_control': abs(_lim / _a_lim - 2.888) < 0.00045,
+    'arm_placement_59': abs(_a_b['frac_below_0.059'] * 100.0 - 99.24) < 0.0045,
+    'arm_placement_64': abs(_a_b['frac_below_0.064'] * 100.0 - 99.52) < 0.0045,
+    'arm_ess': abs(min(v['ess'] for v in _a_b['diagnostics'].values()) - 41009) < 0.45,
+    'closure_worst_rel': abs(_bn['worst_rel'] - 0.00758) < 4.5e-06,
+    'closure_worst_in_sigma': abs(_bn['worst_in_sigma'] - 0.04129) < 4.5e-06,
+    'closure_chi2_difference': abs(CLO70['chi2']['difference'] - 3.986e-04) < 4.5e-08,
+    'closure_chi2': abs(CLO70['chi2']['seventy'] - 16.390) < 0.00045,
+    'closure_fisher_rel': abs(_in['fisher_max_rel_difference'] - 1.919e-17) < 4.5e-21,
     'placement_64': abs(_b['frac_below_0.064'] * 100.0 - 65.99) < 0.0045,
 }
 check('⌷ every figure this revision\'s INDEX row prints is pinned TWO-SIDED here, each tolerance '
@@ -522,7 +633,11 @@ check('Ⓚ⑪ the count: this receipt adjudicates all %d registered arms, and TH
       'FAILED or NOT JUDGED with their criteria exactly as registered -- Ⓐ① because its tolerance '
       'was finer than the accuracy of the thing it compared against, Ⓖ⑦ because adding '
       'information made the control worse, and Ⓗ⑧ because it was registered conditional on Ⓖ⑦.  '
-      'A failure asserted is not a failure suffered' % _ran,
+      'A failure asserted is not a failure suffered.  ** It also carries TWO checks that were NOT '
+      'registered and are labelled as such wherever they appear: the closure against node 70\'s '
+      'own scoring of the same nine bandpowers, and the convention mistake found inside that '
+      'closure. **  An unregistered check reported as unregistered is evidence; one reported as '
+      'an arm would be a criterion written after its own answer' % _ran,
       _ran == 11 and PRED.count('**Ⓚ⑪') == 1 and PRED.count('**Ⓘ⑨') == 1,
       '%d arm-check(s) failed' % len(fail))
 
