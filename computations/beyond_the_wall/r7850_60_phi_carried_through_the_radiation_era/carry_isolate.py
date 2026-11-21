@@ -131,9 +131,18 @@ def main():
     if best is not None:
         print('     The restricted reading, which is NOT the arm, gives %.4e at eta = %g.'
               % (best['restricted']['spread'], best['eta_h']))
-    with io.open(os.path.join(_HERE, 'carry_isolate.json'), 'w', encoding='utf-8') as fh:
+    # the record is keyed by its configuration, for the same reason `phi_carry` keys its own:
+    # `carry_isolate.json` is the REGISTERED configuration and anything else writes beside it
+    reg = (PC.JUDGE_AT == 1893.0 and PC.HANDOVERS == [500.0, 914.0, 1400.0])
+    name = ('carry_isolate.json' if reg
+            else 'carry_isolate_judge%g_from_%s.json'
+                 % (PC.JUDGE_AT, '_'.join('%g' % h for h in PC.HANDOVERS)))
+    out['is_the_registered_configuration'] = bool(reg)
+    out['judge_at'] = float(PC.JUDGE_AT)
+    out['handovers_requested'] = [float(h) for h in PC.HANDOVERS]
+    with io.open(os.path.join(_HERE, name), 'w', encoding='utf-8') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
-    print('\n  wrote carry_isolate.json\n')
+    print('\n  wrote %s%s\n' % (name, '' if reg else '   (NOT the registered configuration)'))
     return 0
 
 
