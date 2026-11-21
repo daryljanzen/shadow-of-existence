@@ -118,7 +118,11 @@ def main():
     print('  built at zero sum over %d wavenumbers' % len(kk), flush=True)
 
     # Ⓓ④'s reading: the suppression of the POWER at a = 1, against the textbook -8 f_nu
-    sum_ev = float(os.environ.get('SUM_EV', '0.06'))
+    # ** the sum is 0.30 eV by default so that `f_nu` MATCHES r7848's 0.0225069 EXACTLY. **  The
+    # first run here used 0.06 eV, whose `f_nu` is 4.5e-03, and compared its ratio against r7848's
+    # -- two different sums, which is this revision's own refrain about stating a figure in the
+    # convention it was measured in, walked into again.  The comparison is only exact at one sum.
+    sum_ev = float(os.environ.get('SUM_EV', '0.30'))
     gm = GrowthFromInstrument(sum_ev, kk=kk)
     r0 = g0.ratio(kk, 1.0, g0.a_start).ravel()
     rm = gm.ratio(kk, 1.0, gm.a_start).ravel()
@@ -131,16 +135,25 @@ def main():
                at_low_k=float(supp[0]), at_high_k=float(supp[-1]),
                ratio_to_textbook=float(supp[-1] / textbook),
                monotone_non_increasing=bool(np.all(np.diff(supp) <= 1e-12)),
+               monotone_violations=int(np.sum(np.diff(supp) > 0)),
+               worst_violation_relative=float(np.max(np.diff(supp) / np.abs(supp[1:]))),
+               saturates_at=float(supp.min()),
                initial_conditions='from the instrument, per mode',
                meta=gm.meta())
     print('  suppression of the power at a = 1: %+.6f at k = %.1e, %+.6f at k = %.1e'
           % (supp[0], kk[0], supp[-1], kk[-1]))
     print('  against the textbook -8 f_nu = %+.6f: a ratio of %.6f (r7848 got 0.296012 from this '
           'same eta_ref)' % (textbook, out['ratio_to_textbook']))
-    print('  monotone non-increasing in k: %s' % out['monotone_non_increasing'])
-    with io.open(os.path.join(_HERE, 'growth_from_instrument.json'), 'w', encoding='utf-8') as fh:
+    print('  monotone non-increasing in k: %s   (%d violation(s), worst %.2e relative, on the '
+          'saturated plateau at %.6e)'
+          % (out['monotone_non_increasing'], out['monotone_violations'],
+             out['worst_violation_relative'], out['saturates_at']))
+    print('  ⌗ f_nu here is %.7f; r7848 measured its own ratio at f_nu = 0.0225069, so the two are '
+          'comparable only when this run uses 0.30 eV' % f_nu)
+    name = 'growth_from_instrument_sum%g.json' % sum_ev
+    with io.open(os.path.join(_HERE, name), 'w', encoding='utf-8') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
-    print('\n  wrote growth_from_instrument.json\n')
+    print('\n  wrote %s\n' % name)
     return 0
 
 
