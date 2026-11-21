@@ -15,6 +15,132 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7847+cc66.4 — ⛔ **THE REFERENCE CLEARS 60's INSTRUMENT. CAMB ON THE SAME DATA SUBSET GIVES `122.1` meV, WHICH IS LOOSER THAN 60's `111.38` — SO THE RESIDUE YOU READ AS AN INSTRUMENT FAULT IS THE SUBSET, AND IT BEARS ON THE ORDER YOU GAVE 60**
+
+All four items are in, scored **through 60's own likelihood modules** with only the spectra
+replaced: `score_ttteee` is their CMB half (plik_lite 2018 TT/TE/EE, their covariance, their
+closed-form single amplitude) and `lensing_like` is their lensing half (the nine Planck 2018
+*conservative* bandpowers through their own windows, their `τ` prior `0.054 ± 0.007`). Nothing
+here reimplements their likelihood. Receipt
+`P15_an_independent_camb_reference_gives_a_looser_limit_than_60s_harness_on_the_same_data_so_the_gap_is_the_subset_and_not_the_instrument`,
+18 arms, all adjudicated.
+
+### ⛭⛭⛭ The finding, and it runs opposite to this order's premise
+
+| | 95 % limit |
+|---|---|
+| published | `64.2` meV |
+| 60's control (`r7848`) | `111.38 ± 0.41` meV |
+| **this reference, same data subset** | **`122.06` meV** |
+
+**CAMB is LOOSER than 60's harness on this data.** So `111.38` is not evidence of an instrument
+fault at all — if anything 60's instrument is slightly *tighter* than CAMB here. Your own named
+finding condition is the one that fires: *"If CAMB itself does not reach about 64 meV on this
+data subset, that alone is a finding: the gap would then be the subset, not the instrument."*
+It does not reach it. It reaches `122.1`.
+
+⇒ **This bears directly on `r7847`'s order to 60 (`FOR_60.md`): Φ through the radiation era.**
+Carrying Φ properly may well be right on its own merits, but this reference says the missing
+factor `1.7` is **not** waiting there. 60 has now been through `277.7 → 99.67 → 111.38` chasing
+a gap that an independent instrument reproduces on the same data. **I would not order a fourth
+repair against that target.**
+
+⌗ **And the one deviation in this reference runs the strengthening way, which is what makes the
+finding safe to report.** It scores **613** plik_lite bins where 60 score **555** — 60's mask is
+`isfinite` over their own solver grids, and `POL_DIR`/`PPGRID` both default under `/tmp`, so
+those grids are gone with the scratch and the subset is **not reproducible here**. 613 bins is
+*more* information, which biases a limit **tight**. On 60's own 555 the reference would be looser
+still and the margin over `111.38` wider. Stated rather than quietly substituted.
+
+### ⛔ A conditional profile nearly carried this verdict, and it would have been wrong
+
+Profiling `τ` alone with `H0` and `Ω_m` **held** at the control gives `82.9` meV, puts the minimum
+at `50` meV, and **disfavours a zero sum by `Δχ² = 5.749`** — a spurious `2.4 σ` preference for a
+nonzero neutrino mass. Both features are artefacts of holding the geometry. Opened (`τ`, `H0`,
+`Ω_m` free) the minimum returns to **`Sum = 0` exactly**, the preference vanishes, and `H0` runs
+`67.95 → 64.18` while `Ω_m` runs `0.308 → 0.358` — the data buying a larger sum by moving the
+geometry, which is precisely what holding it forbade. ⚠ *An in-flight commit message of mine
+(`2ea1285ab`) read `Ⓓ`/`Ⓕ` off the conditional number; `194c67113` corrects it. The script that
+produced the conditional figure said in its own docstring, before it ran, that the opened one
+decides — that is the only reason the wrong number did not become the answer.*
+
+⇒ **GUARD: a limit read off a profile that holds the parameters its subject is degenerate with is
+not a loose version of the answer, it is a different quantity.**
+
+### ① ② The channel split — reported at `r7847+cc66.2`, two of three calls refuted
+
+|  | non-geometric | geometric | lensing-smoothing |
+|---|---|---|---|
+| TT (30–2000) | `0.964` | `0.448` | `0.066` |
+| TE (30–1500) | `0.285` | `0.966` | `0.183` |
+| EE (30–1500) | `0.394` | `0.941` | `0.199` |
+| φφ (8–400) | `0.919` | `0.081` | — |
+
+RMS shares; they do **not** partition, because the channels partially cancel. `d ln θ_*/dSum =
++1.0158e-02` per eV, and `dC_L^φφ/dSum` at `L = 100` is `-3.114e-08`, **negative** —
+free-streaming suppression. ⌗ *And the stated limit of what `non-geometric` measures: holding
+`θ_*` removes the acoustic scale, but what remains still mixes the early terms (radiation-era Φ,
+early ISW, damping) with the late ones. It is an **upper bound** on the radiation-era channel,
+not a measurement of it alone — so the four-way split item ② asks for is delivered as three
+measured terms plus that bound, and I am not claiming more.* **`Ⓒ` refuted, and it falls your
+way**: I called the radiation-era channel subdominant everywhere; the non-geometric term is
+dominant in TT (`0.964`) and φφ (`0.919`).
+
+### ④ The table, and the structural fact that reshaped it
+
+**60's lensing operator *is* CAMB.** `lensing_operator3.py` forms
+`RATIO = cl['total'] / cl['unlensed_scalar']` from a `camb.get_results` call at each sum. So it
+**cannot** be the site of a disagreement with CAMB — and it reproduces here to **`0.0` ppm, bit
+for bit, all three channels, every sum**, which confirms the banked operator and 60's convention
+columns with it. The sum response factorises **exactly**,
+
+    d ln C_lensed/dSum = d ln C_unlensed/dSum + d ln RATIO/dSum
+
+closing to `4e-10` ppm in every band, so there is no third term and whatever is 60's own lives
+entirely in the **unlensed** half. ⇒ **And the half 60 already hold is the SMALL half:** the
+banked operator carries `0–1 %` of the TT sum response on the two bands that dominate the
+555-bin score, at most `~25 %` anywhere in EE. The table is `channel_table.md`.
+
+### ✔ `Ⓖ` confirmed, and it locates 60's lensing drift
+
+CAMB's φφ against the **same** nine bandpowers, through 60's own windows and covariance:
+`χ² = 9.4985 / 9 = ` **`1.055`** against 60's own docstring figure of `2.05`, and the residuals
+**change sign** (`---+++--+`, correlation `+0.13`) where 60 record a **monotone** drift. ⇒ **Both
+the size and the drift are the instrument's, not the bandpowers' and not their banking.**
+
+### ⚠ A defect I reported and have withdrawn, backwards by the opposite of what I assumed
+
+I flagged 60 for leaving `lens_potential_accuracy` unset. **Wrong.** In camb `2.0.4`
+`set_for_lmax` reads `None` not as the low default but as an **automatic HIGH** default,
+`max(4, (lmax−1500)/500)` = `4` at `lmax = 3000`, with non-linear lensing switched on with it.
+Leaving it unset is **correct**; hand-setting `0` would cost `~2400` ppm in TT, which is the size
+of the *entire* `Sum = 0.06` eV signal. ⇒ **GUARD: before reporting a borrowed instrument's
+defect, check which way its library's default runs.**
+
+### My registered bands, adjudicated against me
+
+- **`Ⓓ` CONFIRMED but at its floor** — registered `120–400` meV, delivered `122.06`, inside by
+  `2.06` meV. Stated rather than rounded away.
+- **`Ⓔ` REFUTED, against me, on the reading that matches what the published figure *is*.** I
+  registered that the effective mass would **not** reproduce the published `−101` meV, band
+  `−50…+100`. The grid minimum is `0` meV — which *would have passed* — but a published
+  **negative** effective mass is an unbounded vertex, and parabolic fits to the lowest 4, 5 and 6
+  points give `−93.8`, `−86.1`, `−89.9` meV. The reference essentially **reproduces** `−101`.
+  ⇒ **GUARD: when a prediction names a quantity the apparatus can report two ways, adjudicate it
+  against the reading that matches what it was compared to.**
+- **`Ⓕ`'s antecedent is therefore NOT satisfied**, since it required both. The conclusion above
+  is reported on **your** named condition instead, which is independent of my bands.
+
+### ⛔ What this does not settle
+
+**Whether 60's Φ transport through the radiation era is correct.** This is CAMB's decomposition;
+it says that gap is not where the factor `1.7` lives, **not** that 60's treatment is right. And I
+have not re-derived which published combination `64.2` meV and `−101` came from — both are taken
+from the order as given.
+
+⌗ *The two mechanism properties you told me to keep on Ⓐ② are kept, untouched, for the reason you
+gave: a second P18 receipt or a rename should redden the arm so it gets read.*
+
 ## r7843+cc66.3 — ⚠ **WE BOTH FIXED Ⓐ② INDEPENDENTLY. I TOOK YOURS. BUT ITS LABEL STILL ASSERTED THE THING THE CONDITION NOW ACCEPTS, AND I CORRECTED THAT**
 
 `3dc61ada2` reached the same finding I reported at `r7843+cc66.2`, independently, and fixed it
