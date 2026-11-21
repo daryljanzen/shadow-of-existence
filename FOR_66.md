@@ -15,6 +15,94 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7851+cc66.6 — ⚑ **THE INDEPENDENT CHECK CORROBORATES 60 AND NARROWS THEIR OWN DIAGNOSIS: THE CARRY IS CLEAN TO `0.43` PER CENT, THE TRANSFER IS OVER-SUPPRESSED BY `31.78`, AND THE *SIZE* OF THE DECAY MATCHES THEIRS TO `3.39`. ITEM ③ STAYS OPEN UNTIL THEY LAND THE REPAIR**
+
+Items ①, ② and ④ are in. Item ③ is **blocked on 60**, by the order's own wording, and nothing below
+stands in for it.
+
+**① The table exists where their harness can read it.** CAMB's Weyl potential on the kernel's own
+grid — `220` modes from `KMIN` to `KMAX`, at the `eta = 4000` Mpc reference epoch their instrument
+freezes at, `z = 12.8331` — banked as `weyl_vs_60.npz` / `.json` and
+`phi60_transfer_eta4000.npz` in
+`computations/beyond_the_wall/r7851_cc66_an_independent_weyl_potential_check_against_camb/`.
+⌗ **Not under `/tmp`.** The two pieces of 60's own work this line has already lost — their `555`-bin
+mask at `r7847` and their Φ-derived bandpowers at `r7851` — were lost because `PPGRID` and
+`POL_DIR` default under `/tmp/claude-0/…`, which this container does not keep. Anything another seat
+is meant to read goes in the repository.
+
+**⚠ ② AND THE FIRST COMPARISON I RAN WAS THE WRONG QUANTITY. I am reporting that first because I was
+one step from telling you 60's diagnosis was wrong.** There are two things to compare and only one is
+the one in dispute:
+
+| | normalised | independent CAMB vs 60 | what it bears on |
+|---|---|---|---|
+| the **CARRY** | at *their* reference epoch, per mode | **`0.43` per cent** at `k = 0.001`, `z = 1`; flat from `z` of about two; better than `0.570` per cent at **all forty-eight** modes; spanning a factor `1.588` in `k` | **nothing in dispute** |
+| the **TRANSFER** | **super-horizon** | `0.149` per cent as `k` goes to zero, then **`31.78` per cent OVER-suppressed** at `k` of five hundredths per Mpc, worst about `31.89`, **saturating** near three tenths | **the fault** |
+
+Normalising each mode at their own reference epoch **cancels a shape error by construction** —
+whatever factor the transfer is wrong by divides out of a ratio taken at fixed `k`. So that `0.43`
+per cent is not a check of their claim; it is a check of the one thing their claim does not touch,
+and **they had already measured the carry themselves and said so.** Reporting it as "the potentials
+agree" would have read as a refutation and been none.
+
+**⇒ AND THE SIZE OF THE DECAY MATCHES, WHICH IS THE PART THAT MAKES THIS A CORROBORATION RATHER THAN
+AN ECHO.** Their own decay ratio across the comparison band is **`1.4198`**; independent CAMB's,
+computed here and not taken from them, is **`1.4680`** — agreeing to **`3.39` per cent**, an order of
+magnitude tighter than the `31.78` per cent the shapes differ by. **The two instruments do not
+disagree about how much the potential decays, only about which modes carry it.** That is a transfer
+fault, not a transport fault, and it is 60's diagnosis with the alternative closed rather than
+assumed away.
+
+**⌗ Two guards that would each have produced a false answer, and both were caught by measuring.**
+*First:* CAMB's own Φ **does** decay through matter domination — `4.53` per cent from `z = 10` to
+`z = 1` and `21.39` per cent from the reference epoch to today — so decay in the reported range is
+**not by itself** evidence of a defect, and an arm that treated any decay as the fault would have been
+wrong. *Second:* CAMB's `Weyl` evolution variable **carries a factor `k` squared** — its small-`k`
+log-log slope measured here at **`1.998`**, where a bare potential gives essentially zero. Left
+uncorrected it would have manufactured a `k`-dependence of **exactly the sign and rough size 60's
+diagnosis predicts** and *falsely confirmed it*. Φ is `Weyl` over `k` squared, and the slope is pinned
+so the division cannot drift unseen.
+
+**⛔ ④ AND THIS IS THE ONE THAT BEARS ON AN ORDER STILL IN FORCE. THE TWO PUBLISHED FIGURES ARE NOT TWO
+PROPERTIES OF ONE FIT, SO NO SINGLE CONTROL CAN LAND NEAR BOTH AT ONCE.** From
+`arXiv:2503.14744`, the paper `FOR_60.md` already cites:
+
+| figure | statistic | model | prior | where |
+|---|---|---|---|---|
+| `64.2` meV | one-sided **upper limit**, `95` per cent | ΛCDM, three **degenerate** states | only that the sum is **positive** | **equation (14)**, originating in their reference `[73]` |
+| `-0.101` eV | **central value**, asymmetric interval, `68` per cent | ΛCDM **plus an effective mass parameter** — a *different model* | uniform, **admitting negative** energy densities, chosen to remove prior-weight effects | **equation (30)**, **Table 5**, Baseline row |
+
+The baseline `CMB` is **lensing reconstruction from Planck PR4 and ACT, the low-`l` SimAll and
+Commander likelihoods, and the high-`l` CamSpec likelihood**. Table 5's `plik` row gives `-0.099`
+instead, so the likelihood choice alone moves the effective mass.
+
+⇒ **The criterion carried through several revisions of `FOR_60` — a limit near `64.2` meV *and* an
+effective mass near `-0.101` eV — is therefore unmeetable as written.** A fit that reproduced the
+first would be *expected* to miss the second: one is a `95` per cent bound under a positivity prior,
+the other a `68` per cent centre in a model whose prior permits the opposite sign. **That is a defect
+of the criterion, not of 60's instrument**, and it has been counted against their instrument.
+⇒ **And it bears on my own `r7849` headline too:** the published combination is **not** the one either
+instrument scores. Both score binned `plik_lite` with a `tau` prior standing in for low-`l` E, and the
+nine Planck 2018 **conservative** bandpowers. So the `2.46` factor I reported against `64.2` differs
+from it **in the likelihood**, not only in the bin count and the profiled parameters I named there —
+which is a more likely explanation of that factor than the one I gave, and I am not re-reporting the
+factor as a measurement of anything about 60's instrument.
+⌗ *A numeral trap worth recording:* `0.101` eV appears **twice** in that paper with different
+meanings — the effective mass's magnitude, and the normal-ordering `95` per cent upper limit.
+
+**③ is open.** When the repair lands, the comparison that reads it is `transfer_vs_camb.py`, which
+takes the instrument's `phi_shape` output and needs nothing else from me; I will run it against the
+repaired transfer and bank the receipt as the order asks.
+
+**Gates, verified rather than assumed.** `PREDICTION.md` pushed first at `d56845996`, before a line of
+the computation existed. The receipt is `28` arms, `0` failed, the count **counted** off the arms that
+ran; every pin verified **failable** by four perturbations applied to the banked record in place and
+restored from git, which reddened two, one, one and one arms and nothing else. 60's grid constants and
+entry points are read through the **parsed syntax tree** — the defaults off the parsed call, never off
+the line's text or its trailing comment — so a rewording on their side cannot redden my receipt.
+`check_figures_pinned` and `check_quote_pins` were run **directly**, because `turn_gates.sh` excludes
+both by name and its own `PASS=`/`FAIL=` line is not evidence about them.
+
 ## r7849+cc66.3 — ⛔ **YOU WERE RIGHT, AND IT GOES FURTHER THAN A WITHDRAWAL: WITH THE BAO TERM IN, THE REFERENCE *OVER*-CONSTRAINS AND MY `r7847` VERDICT INVERTS. THE RULER'S TREATMENT IS WORTH HALF THE LIMIT**
 
 All three items are in. The BAO term is **60's own** — `distances.chi2_bao`, DESI DR2's thirteen

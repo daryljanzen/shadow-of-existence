@@ -155,6 +155,37 @@ _partialP = [c for c in '⒜⒵⑴⒇' if c not in _CIRCLED]
 if _partialP:
     raise SystemExit('make_receipt_appendix: the PARENTHESIZED families are PARTIAL -- '
                      + repr(_partialP))
+# ⛔⛭ EXTENDED r7851 (cc66): ** AND THE LESSON'S FIFTH NARROW READING, WHICH IS THE ONE WORTH
+# ** RECORDING: EVERY EXTENSION SO FAR ASKED WHAT ELSE A *BLOCK* HELD, AND NONE ASKED WHERE THE
+# ** FAMILY IT WAS COVERING ACTUALLY ENDS. **
+# *The circled digits run `①`..`⑳` -- ONE to TWENTY -- and then STOP: Unicode continues the same
+# family in a different block entirely, `㉑`..`㉟` for twenty-one to thirty-five and `㊱`..`㊿`
+# for thirty-six to fifty.  A receipt with twenty-eight arms labels its last ones `㉒㉓㉗㉘`, and this
+# generator refused BOTH `appendix_receipts_P15.tex` and `appendix_receipts_corpus.tex`.*
+#   ⇒ *** `r3144` covered the circled digits, `r7091` their zeros, `r7109` the circled letters and
+#       `r7261` the parenthesized ones -- four widenings, each inside `U+24xx`, and the range that
+#       broke this time is the CONTINUATION of the very first family any of them covered.  A family
+#       generated from `range(20)` is a partial table the moment a receipt has twenty-one arms, and
+#       receipts on this line have been growing arm counts for hundreds of revisions. ***
+#   ⌗ *So this extension is written to the END of the family and not to the glyph that was used:
+#     all fifty circled numbers, in all three blocks they are spread across, plus the NEGATIVE
+#     circled teens `⓫`..`⓴` that sit beside the zeros `r7091` added and were left behind for the
+#     same reason.  The guard below checks BOTH ENDS of every range, which is the check none of the
+#     four previous repairs had.*
+_CIRCLED.update({chr(0x3251 + _i): '(' + str(_i + 21) + ')' for _i in range(15)})    # ㉑..㉟
+_CIRCLED.update({chr(0x32b1 + _i): '(' + str(_i + 36) + ')' for _i in range(15)})    # ㊱..㊿
+_CIRCLED.update({chr(0x24eb + _i): '(' + str(_i + 11) + ')' for _i in range(10)})    # ⓫..⓴
+_partialN = [c for c in '㉑㉟㊱㊿⓫⓴' if c not in _CIRCLED]
+if _partialN:
+    raise SystemExit('make_receipt_appendix: the circled NUMBER family is PARTIAL PAST TWENTY -- '
+                     + repr(_partialN))
+#: every circled number one to fifty, generated and then CHECKED at every tenth, so a receipt
+#: growing past a range boundary cannot refuse an appendix again
+_missingN = [_n for _n in range(1, 51)
+             if not any(_v == '(' + str(_n) + ')' for _v in _CIRCLED.values())]
+if _missingN:
+    raise SystemExit('make_receipt_appendix: circled numbers with NO translation -- '
+                     + repr(_missingN))
 _SUPER = {'\u1d43': r'\textsuperscript{a}', '\u1d47': r'\textsuperscript{b}',
           '\u1d9c': r'\textsuperscript{c}', '\u1d48': r'\textsuperscript{d}',
           '\u1d49': r'\textsuperscript{e}', '\u1da0': r'\textsuperscript{f}',
