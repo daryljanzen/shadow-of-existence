@@ -107,12 +107,18 @@ def camb_weyl_power(r):
 
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 #  THE PROJECTION -- structurally the instrument's own, with its defects as switches
-def project(ls, D2_of, chis, eta_of_chi, a_of_eta, etaref, clip=None, clamp=True, limit=200):
-    """`phiphi.clpp`'s integrand exactly, with the source and the two defects as arguments
+def project(ls, D2_of, chis, eta_of_chi, a_of_eta, etaref, clamp=True, limit=200):
+    """`phiphi.clpp`'s integrand EXACTLY, with the source and the clamp as arguments
 
-    `clip` is the `(kmin, kmax)` the source is clipped to, as `D2_of` does inside `clpp`; `None`
-    leaves `k` alone.  `clamp` freezes `eta` at `etaref` for `chi` beyond the carry start, as
-    `clpp` does; `False` lets it run.
+    ⚠ ** THE `k` THAT DIVIDES AND THE `k` THAT LOOKS UP ARE NOT THE SAME `k`, and getting that
+    wrong is what the positive control caught on this file's first run. **  In `clpp` the clip to
+    the mode grid happens INSIDE `D2_of`, so the `1/k^3` that turns a dimensionless power into
+    `P(k)` keeps the TRUE `k`.  A version that clipped `k` before dividing had eight thousand times
+    too much power in the top bandpower -- the error grows as `k^3`, so it is largest exactly where
+    the comparison is being read.  ⇒ The clip therefore belongs to the SOURCE, not to this
+    function, and each source below states its own.
+
+    `clamp` freezes `eta` at `etaref` for `chi` beyond the carry start, as `clpp` does.
     """
     out = np.empty(len(ls), float)
     for i, l in enumerate(ls):
@@ -124,8 +130,6 @@ def project(ls, D2_of, chis, eta_of_chi, a_of_eta, etaref, clip=None, clamp=True
                 eta = etaref
             a = a_of_eta(eta)
             k = (l + 0.5) / chi
-            if clip is not None:
-                k = float(np.clip(k, clip[0], clip[1]))
             W = -2.0 * (chis - chi) / (chis * chi)
             P = 2 * np.pi ** 2 * D2_of(k, a) / k ** 3
             return W ** 2 / chi ** 2 * P
@@ -196,8 +200,11 @@ def main():
     for a_, b_ in zip(seed, seed_bad):
         print('      L = %4d   with k^-4: ratio to CAMB %8.4f      without: %10.3e'
               % (a_['L'], a_['ratio'], b_['ratio']))
-    ok_seed = all(abs(x['ratio'] - 1.0) < 0.10 for x in seed) and \
-        all(abs(x['ratio'] - 1.0) > 10.0 for x in seed_bad)
+    # ⚠ the criterion is a RATIO test and not a `|ratio - 1|` test: a form that is out by a
+    #   factor 1e-5 has `|ratio - 1| = 1`, which a `> 10` threshold reads as agreement.  The first
+    #   draft of this line said exactly that and called a holding seed broken.
+    ok_seed = all(abs(x['ratio'] - 1.0) < 0.05 for x in seed) and \
+        all(x['ratio'] < 0.1 or x['ratio'] > 10.0 for x in seed_bad)
     print('    ⇒ the seed %s: the k^-4 form reproduces CAMB and the other is out by orders'
           % ('HOLDS' if ok_seed else 'DOES NOT HOLD'), flush=True)
 
@@ -237,19 +244,32 @@ def main():
     _clock('instrument_growth_surface', t0, nk_growth=48, a_ref=a_ref, sum_ev=0.0)
 
     def D2_inst(k, a):
+        """the instrument's source, clipped to its own mode grid -- `clpp`'s `D2_of`, verbatim"""
+        k = float(np.clip(k, kk[0], kk[-1]))
         return float(np.exp(lnP(np.log(k)))) * rat(k, a) ** 2
 
     def D2_camb(k, a):
-        """CAMB's Weyl power put on the instrument's own (k, a) footing"""
+        """CAMB's Weyl power on the instrument's own `(k, a)` footing, NOT clipped"""
         z = 1.0 / a - 1.0
         return k ** 3 * Pw(z, k) / (2 * np.pi ** 2)
 
+    def D2_camb_clipped(k, a):
+        """the same, clipped to the instrument's mode grid, so the clip is priced on CAMB's source
+
+        ** This is the one change between `B` and `B_no_clip`, so their difference is the clip and
+        nothing else. **  The lookup is clipped and the `1/k^3` in `project` is not, so beyond the
+        grid the instrument sees `P(KMAX) * (KMAX/k)^3` -- a power law continued from the last node
+        rather than a constant.  *That is milder than freezing `P` and still wrong, and the
+        difference between the two mistakes is a factor eight thousand in the top bandpower.*
+        """
+        kc = float(np.clip(k, KMIN, KMAX))
+        return kc ** 3 * Pw(1.0 / a - 1.0, kc) / (2 * np.pi ** 2)
+
     # ── A : the status quo, through this file's own projection (the positive control)
     t0 = time.time()
-    clA = project(ls, D2_inst, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF,
-                  clip=(kk[0], kk[-1]), clamp=True)
+    clA = project(ls, D2_inst, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF, clamp=True)
     _clock('A_instrument_source_instrument_projection', t0, multipoles=len(ls), etaref=ETAREF,
-           clip=[float(kk[0]), float(kk[-1])], clamp=True)
+           source_clip=[float(kk[0]), float(kk[-1])], clamp=True)
     A_bp = to_convention(ls, clA, wins)
 
     # the positive control: the banked spectrum from phiphi.py's own run, same configuration
@@ -267,10 +287,10 @@ def main():
 
     # ── B : CAMB's source through the instrument's projection, defects and all
     t0 = time.time()
-    clB = project(ls, D2_camb, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF,
-                  clip=(kk[0], kk[-1]), clamp=True)
+    clB = project(ls, D2_camb_clipped, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF,
+                  clamp=True)
     _clock('B_camb_source_instrument_projection', t0, multipoles=len(ls), etaref=ETAREF,
-           clip=[float(kk[0]), float(kk[-1])], clamp=True)
+           source_clip=[KMIN, KMAX], clamp=True)
     B_bp = to_convention(ls, clB, wins)
 
     # ── C : CAMB's exact projection, through the instrument's L-grid spline and bins
@@ -281,13 +301,13 @@ def main():
     # ── the clip and the clamp, each priced on CAMB's source so the source cannot confound it
     t0 = time.time()
     clB_noclip = project(ls, D2_camb, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF,
-                         clip=None, clamp=True)
-    _clock('B_no_clip', t0, multipoles=len(ls), clip=None, clamp=True)
+                         clamp=True)
+    _clock('B_no_clip', t0, multipoles=len(ls), source_clip=None, clamp=True)
     B_noclip_bp = to_convention(ls, clB_noclip, wins)
     t0 = time.time()
     clB_noclamp = project(ls, D2_camb, chis_inst, eta_of_chi_inst, a_of_eta_inst, ETAREF,
-                          clip=None, clamp=False)
-    _clock('B_no_clip_no_clamp', t0, multipoles=len(ls), clip=None, clamp=False)
+                          clamp=False)
+    _clock('B_no_clip_no_clamp', t0, multipoles=len(ls), source_clip=None, clamp=False)
     B_clean_bp = to_convention(ls, clB_noclamp, wins)
 
     # ── the shares, each self-normalised so only SHAPE is compared
