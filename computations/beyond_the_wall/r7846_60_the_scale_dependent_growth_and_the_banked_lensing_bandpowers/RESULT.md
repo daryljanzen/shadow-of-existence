@@ -189,3 +189,64 @@ average instead of the direction the result is read off.
 ⌗ And the boundary is itself a finding. The arm's joint fit wants the sum pressed against the floor
 of the grid at `−0.12` eV, so whatever limit it yields is set by where the grid stops rather than by
 the data — which is one more reason Ⓗ⑧ stays NOT JUDGED.
+
+## Ⓗ⑧ The arm of record — the placement, reported, and NOT as a bound
+
+The order asks where `59` and `64` meV sit on the arm either way, so the chain was run on the
+repaired sampler. Its record carries `minimum_on_a_bound = true` and
+`curvature_unmeasurable_in = ['MNU']`, so the direction the limit is read off took the **stated**
+fallback width — and then moved: effective sample size `41009` bounded and `45787` unbounded against
+the registered `1000`, `R̂ ≤ 1.0002`, acceptance `0.237` and `0.231`, and the six chains' limits
+spanning `1.04` meV.
+
+| | arm of record | control | published |
+|---|---|---|---|
+| `95` per cent limit (meV) | `38.56 ± 0.23` | `111.38 ± 0.41` | `64.2` |
+| effective mass (meV) | `-85.52 ± 27.05` | `+44.25 ± 39.79` | `-101` |
+| from the published effective mass | `0.572σ` | `3.65σ` | — |
+
+Below `59` meV: `99.24` per cent. Below `64` meV: `99.52` per cent.
+
+⛔ **None of that is reported as a result.** Ⓗ⑧ was registered conditional on Ⓖ⑦; Ⓖ⑦ failed, so the
+arm is **NOT JUDGED**, as `r7838` and `r7844` both ruled on the same condition. The registered
+expectation was that the construction's limit would be **looser** than the control's and the
+reachable negative was a tighter one — it came out tighter by a factor `2.888`, so the expectation
+is refuted.
+
+⌗ **And the temptation here has to be named, because it is the strongest one this line has met.**
+The arm reproduces both published figures far better than the control does: its limit is a factor
+`1.665` of `64.2` where the control's is `1.735` the wrong way, and its effective mass sits `0.572`
+standard errors from `-101` where the control's sits `3.65` the wrong side. **That is not evidence
+for the construction.** The control is the calibration, and an apparatus that misses its own
+calibration by `36.91` standard errors cannot certify the arm it is calibrated for — in either
+direction. `P15` stays untouched.
+
+## NOT A REGISTERED ARM — the closure against the seat that banked the data
+
+`PREDICTION.md`'s eleven arms do not contain this, and it is labelled unregistered wherever it
+appears. It was run because this revision reports that adding the lensing bandpowers made the
+control worse, and **an instrument whose limit has moved `277.7` → `99.67` → `111.38` meV across
+three revisions had never been checked against another seat's score of the same data.** Reporting
+a failure whose cause might be this seat's own binning would have been worse than ruling it out.
+
+Node `70`'s `like.py` looks its spectrum up at every integer multipole; this seat splines from the
+`36` multipoles the Limber integral is actually solved on, and **that interpolation is the only
+place the two paths differ.** Measured:
+
+- the data vector and the nine windows this seat loads are **bitwise** what `70`'s own loader
+  expressions produce, and the two Fisher matrices agree to `1.919e-17` relative;
+- `C_L^φφ` solved at **all `393` integer multipoles** the windows cover and binned `70`'s way
+  agrees with this seat's spline to `7.58e-03` at worst relatively, and to `4.129e-02` of a
+  bandpower error once each vector is normalised by its own best fit — against fractional errors of
+  `5.0` to `17.6` per cent;
+- the two `χ²` differ by `3.986e-04` on a `χ²` of `16.390`.
+
+⇒ **The failure is the instrument's, not the interpolation's.**
+
+⌗ **And the closure's own first pass made this revision's convention mistake a third time.** It
+divided a difference between two model vectors of order `1e+2` by a bandpower error of order
+`1e-7`, printed `2.8e+06` "bin sigma", and concluded that the interpolation mattered. It does not.
+**Three times in one revision a figure meant nothing until its convention was stated:** the
+normalisation reading `1.3` instead of `9.0` per cent for a missing `e^{+2τ}`; the two Fisher
+matrices reading `1.000e+00` instead of `1.9e-17` for a missing denominator; and this. All three are
+recorded rather than tidied away, because the pattern is the finding.
