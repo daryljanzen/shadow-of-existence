@@ -1,0 +1,44 @@
+{
+ "by_poisson_threshold": {
+  "0.0001": {
+   "k_min": 0.07275374998102427,
+   "n": 13,
+   "spread": 0.0037770596630999353,
+   "worst": 0.04433190468475545
+  },
+  "0.0003": {
+   "k_min": 0.04700722497803054,
+   "n": 15,
+   "spread": 0.0037770596630999353,
+   "worst": 0.04433190468475545
+  },
+  "0.001": {
+   "k_min": 0.02441341083755018,
+   "n": 18,
+   "spread": 0.005142076613200652,
+   "worst": 0.04433190468475545
+  },
+  "0.003": {
+   "k_min": 0.012679213227361721,
+   "n": 21,
+   "spread": 0.012395821115712247,
+   "worst": 0.04433190468475545
+  },
+  "0.01": {
+   "k_min": 0.00819221866747028,
+   "n": 23,
+   "spread": 0.022387671033729184,
+   "worst": 0.04433190468475545
+  },
+  "1e-05": {
+   "k_min": 0.21681149641573552,
+   "n": 8,
+   "spread": 0.0037770596630999353,
+   "worst": 0.04433190468475545
+  }
+ },
+ "eta_h": 4000.0,
+ "judge_at": 6000.0,
+ "note": "recomputed from the stored per-mode residuals, with NO new instrument solve: the question is whether the restricted spread is a property of the carry or of the 1 per cent admission threshold, and that is answered by varying the threshold on numbers already measured",
+ "source": "carry_isolate_judge6000_from_4000.json"
+}
