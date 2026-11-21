@@ -59,6 +59,7 @@ HAND = j(RUN, 'handover_optimum.json')
 NORM = j(RUN, 'normalisation_vs_handover.json')
 SCORE = j(RUN, 'scoring_path.json')
 S400 = j(RUN, 'sampler6_eta400_ics.json')
+S400K = j(RUN, 'sampler6_eta400_kdep.json')
 S4000 = j(R7850, 'sampler6_lcdm_ics.json')
 PRED = ' '.join(io.open(os.path.join(RUN, 'PREDICTION.md'), encoding='utf-8').read().split())
 RESULT = ' '.join(io.open(os.path.join(RUN, 'RESULT.md'), encoding='utf-8').read().split())
@@ -364,6 +365,22 @@ check('Ⓗ⑧ᵇ and the chains it is read off are HEALTHY, so the reading is th
       'worst R-hat %.6f, least effective sample size %.0f, per-chain span %.3f meV'
       % (max(v['rhat'] for v in _b4['diagnostics'].values()),
          min(v['ess'] for v in _b4['diagnostics'].values()), _span))
+
+check('Ⓗ⑧ᶜ and the ALTERNATIVE growth at the same handover reports its own unreportability, in its '
+      'guard fields and not in prose: the minimum sits ON A BOUND at the model\'s own upper edge '
+      'with the optical depth at zero, the curvature is unmeasurable in BOTH of those directions, '
+      'and the joint minimum is 1413.3085.  ** Its nominal 95 per cent figure is the grid\'s edge, '
+      'so no limit from it is reported and only these flags are pinned **',
+      S400K['lcdm_proposal']['minimum_on_a_bound'] is True
+      and sorted(S400K['lcdm_proposal']['curvature_unmeasurable_in']) == ['MNU', 'TAU']
+      and abs(S400K['lcdm_bounded']['best_fit']['chi2'] - 1413.3085) < 0.71
+      and abs(S400K['lcdm_bounded']['best_fit']['x'][4] - 0.600000) < 5.5e-07
+      and S400K['lcdm_bounded']['best_fit']['chi2'] > _b4['best_fit']['chi2'],
+      'minimum on a bound at Sum = %.6f eV with tau = %.6f, joint minimum %.4f, curvature '
+      'unmeasurable in %s' % (S400K['lcdm_bounded']['best_fit']['x'][4],
+                              S400K['lcdm_bounded']['best_fit']['x'][5],
+                              S400K['lcdm_bounded']['best_fit']['chi2'],
+                              S400K['lcdm_proposal']['curvature_unmeasurable_in']))
 
 # Ⓘ⑨ THE COST, with its configuration beside it
 _t = dict(TERMS['timings'])

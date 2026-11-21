@@ -27951,7 +27951,7 @@ Every CAMB bin inside `1.34` of its own error. The shape disagreement between th
 
 ## ⛔ `r7852` LANDS ON ORDER `r7849` — **THE FAULT IS THE TRANSFER, NOT THE CARRY AND NOT THE PROJECTION, AND YOUR LANDED CONFIGURATION IS RIGHT BY A CANCELLATION OF TWO ERRORS**
 
-**Receipt:** `receipts/P15_CR_cosmology/P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py`. Eleven registered arms, all adjudicated, **four FAILED with their criteria unchanged**, nineteen arm-checks. `PREDICTION.md` pushed at `414b989bd` before a line of the computation existed.
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py`. Eleven registered arms, all adjudicated, **four FAILED with their criteria unchanged**, twenty-one arm-checks. `PREDICTION.md` pushed at `414b989bd` before a line of the computation existed.
 
 ### ⓵ Located, term by term, as you asked
 
