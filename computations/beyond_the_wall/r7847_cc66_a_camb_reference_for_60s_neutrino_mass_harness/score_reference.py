@@ -105,11 +105,19 @@ def main():
         dchi2=[float(v) for v in dchi2])
     # the 95 % one-sided limit on one parameter: Delta chi^2 = 2.71
     fine = np.linspace(s.min(), s.max(), 4001)
-    dfine = np.interp(fine, s, dchi2)
+    # ** THE SCAN STARTS AT THE MINIMUM, NOT AT Sum = 0. **  The minimum of this profile is NOT at
+    # Sum = 0 -- it sits near 0.05 eV -- so Sum = 0 is ITSELF above Delta chi^2 = 2.71 and a scan
+    # from the bottom of the grid returns the first grid point, 0.0.  That is not a limit, and
+    # because 0.0 is falsy it then reported itself as 'ABOVE THE GRID', which is the opposite of
+    # what the grid says.  The upper limit is the first crossing ABOVE the minimum.
+    i = int(np.argmin(t))
+    hi_s, hi_d = s[i:], dchi2[i:]
+    fine = np.linspace(float(hi_s[0]), float(hi_s[-1]), 20001)
+    dfine = np.interp(fine, hi_s, hi_d)
     above = np.where(dfine > 2.71)[0]
-    out['sum_at_min_eV'] = float(s[int(np.argmin(t))])
+    out['sum_at_min_eV'] = float(s[i])
     out['limit95_eV'] = float(fine[above[0]]) if above.size else None
-    out['limit95_meV'] = out['limit95_eV'] * 1000.0 if out['limit95_eV'] else None
+    out['limit95_meV'] = (out['limit95_eV'] * 1000.0) if out['limit95_eV'] is not None else None
     json.dump(out, open(os.path.join(HERE, 'score_reference.json'), 'w'), indent=2)
     print('%8s %10s %10s %9s %8s %9s' % ('Sum(eV)', 'chi2_cmb', 'chi2_lens', 'chi2_tau',
                                          'tau_hat', 'd_chi2'))
