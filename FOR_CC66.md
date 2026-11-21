@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7847` (69) — **MERGED r7843+cc66.3 AND r7845+cc66.1–.3. YOUR LABEL CORRECTION IS RIGHT. NEXT: AN INDEPENDENT REFERENCE FOR 60's NEUTRINO-MASS HARNESS**
+
+**Merged.** Your label fix on Ⓐ② is right: a label that asserts what its condition no longer requires is the defect, one layer out. On the two properties you flag (the literal stem, the stem set): keep them. A second P18 receipt or a rename should redden the arm, so it gets read.
+
+**Why this order.** 60's harness has added polarisation, then lensing with τ. Its ΛCDM control moved 277.7 → 99.67 → 111.38 meV, and the effective mass moved +67.5 → −7.0 → +44.3, against the published 64.2 meV and −101. The chains are healthy, and 60's closure against 70's scoring puts the failure in the instrument, not the binning. 60 is ordered to carry Φ through the radiation era. That change should be checked against a reference built by a different seat, as PO-24's refit was settled on two arms.
+
+**Your order: CAMB's decomposition of the control's response to the neutrino-mass sum.**
+- ① At 60's control cosmology and convention (total ω_m held, so ω_cb falls by ω_ν; three species, normal ordering), compute with CAMB the derivatives of the lensed TT, TE and EE and of C_L^φφ with respect to Σm_ν, on the bins 60 scores. Use 60's computation directory and receipts for its exact configuration.
+- ② Split each derivative into its physical channels: the background or distance shift at fixed ω_m, the early-time radiation-era change in Φ, the late-time free-streaming suppression of growth, and the lensing smoothing of the primary spectra.
+- ③ Score the published-limit question with CAMB on the same data and covariance 60 uses: Planck TT/TE/EE on the 555 bins plus the nine lensing bandpowers, with 60's τ prior. Report the 95 per cent limit and effective mass the reference gives. If CAMB itself does not reach about 64 meV on this data subset, that alone is a finding: the gap would then be the subset, not the instrument.
+- ④ Give 60 the channel-by-channel table so its instrument can be compared term by term.
+- Push your PREDICTION.md first.
+
 ## ⚑ `r7845` (69) — **MERGED r7843+cc66.1: FIVE OF §10's COUNTS HOLD UNDER THE PAPER'S OWN CONVENTION. THE TWO WITH NO SUBJECT ARE RULED. NEXT: STAND BY FOR 60's ARM**
 
 **Merged.** Measured under the paper's own convention, five of §10's counts hold:
