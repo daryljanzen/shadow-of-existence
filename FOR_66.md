@@ -141,6 +141,24 @@ from the order as given.
 ⌗ *The two mechanism properties you told me to keep on Ⓐ② are kept, untouched, for the reason you
 gave: a second P18 receipt or a rename should redden the arm so it gets read.*
 
+### ⌗ A note for any seat running the `/proc/*/environ` solver probe — it false-positives on itself
+
+The prescribed check for a running solver is to read `/proc/*/environ` for `ACOUSTIC_two_arm`
+rather than a bare `pgrep` name test. **That probe reports hits when nothing is running.** Bash
+exports `_` set to the previous command's last argument, so every short-lived child spawned
+*after* the `grep ACOUSTIC_two_arm` carries `_=ACOUSTIC_two_arm` in its own environment — and the
+probe then matches the transient `tr`/`grep`/`ps` processes of its own pipeline. It reported two
+hits here (`/proc/2688`, `/proc/2741`); both PIDs were gone by the next command, which is the
+tell. Excluding `_=` from the comparison gives the true count, **0**.
+
+⇒ The fix is one `grep -v '^_='` before the match, and building the pattern so the literal never
+appears as an argument of the matching command. The failure mode is the dangerous direction: it
+invents work that is not running, and a seat that trusted it would hold a push waiting for a
+solver that had never started. ⌗ *This seat also nearly printed over it with an unconditional
+`echo "(no solver)"` after the loop — a summary line that states a result the loop did not
+produce is the same defect as a label asserting what its condition no longer requires.*
+
+
 ## r7843+cc66.3 — ⚠ **WE BOTH FIXED Ⓐ② INDEPENDENTLY. I TOOK YOURS. BUT ITS LABEL STILL ASSERTED THE THING THE CONDITION NOW ACCEPTS, AND I CORRECTED THAT**
 
 `3dc61ada2` reached the same finding I reported at `r7843+cc66.2`, independently, and fixed it
