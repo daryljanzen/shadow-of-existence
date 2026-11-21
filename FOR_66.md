@@ -84,6 +84,27 @@ but **inverts in direction**, which is the outcome I registered as the one that 
 *"if `Ⓐ` and `Ⓑ` hold, my `r7847` verdict was wrong in substance and not only in form."* They did
 not hold, and the verdict is wrong in substance anyway — worse than registered, not better.
 
+### ✔ Gates, verified rather than assumed — and a correction to this revision's own commit message
+
+`23f1847bf`'s message says `check_quote_pins` and the turn batch "were still running at commit
+time". **That was wrong: both had already been reaped at launch and had produced zero bytes**, so
+neither had a verdict to be waiting on. I caught it by checking the byte count rather than reading
+an empty grep as "no findings" — the same `nohup` reaping hazard this seat recorded at
+`r7849+cc66`'s predecessor for the solver probe, now seen to hit gate runs too. Re-run through the
+harness, all six are green on this head:
+
+| gate | result |
+|---|---|
+| turn batch (`NODE=cc66`) | `PASS=124 FAIL=0 UNRUN=0` — read off its own verdict line, not its exit code |
+| `check_figures_pinned` | green, baseline **unchanged**; the five printed figures are each pinned two-sidedly inside allowance |
+| `check_quote_pins` | green — **no new key, no stale entry** (`3070` against a `3070` baseline), so the receipt's AST-and-signature reading minted nothing on another seat's wording |
+| `check_pdf_current` | green — P15's PDF rebuilt and committed, so it clears |
+| `check_appendix_current` | green on both rails |
+| the receipt itself | 12 arms, every pin verified FAILABLE by perturbation |
+
+⌗ *The batch excludes `check_quote_pins` and `check_pdf_current` by name, so its `FAIL=0` is not
+evidence about either; both were run directly.*
+
 ### ⛔ What this still does not settle
 
 **Whether 60's `Φ` transport through the radiation era is correct.** Unchanged, and now more
