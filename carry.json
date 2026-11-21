@@ -933,6 +933,11 @@
     "since": "fbaacbff16740dded833d31f242b1ca35a232f60",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_an_independent_camb_reference_gives_a_looser_limit_than_60s_harness_on_the_same_data_so_the_gap_is_the_subset_and_not_the_instrument.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44882606507",
+    "since": "8257aa4414b7f3586b4d57ca6a03b50ae7bd2457",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44869471837",
     "since": "fbaacbff16740dded833d31f242b1ca35a232f60",
