@@ -1,0 +1,50 @@
+{
+ "carries": {
+  "4000": {
+   "a_ref": 0.07229049781256579,
+   "etaref": 4000.0,
+   "n_modes": 220,
+   "phi_at_k_max": -0.0015743566730105345,
+   "phi_at_k_min": -0.9010197896956718,
+   "seconds": 667.0072410106659,
+   "z_ref": 12.833076687240304
+  },
+  "914": {
+   "a_ref": 0.0052892638994573886,
+   "etaref": 914.0,
+   "n_modes": 220,
+   "phi_at_k_max": -0.0020966831009957615,
+   "phi_at_k_min": -0.9186019346799185,
+   "seconds": 40.82387375831604,
+   "z_ref": 188.06222472707162
+  }
+ },
+ "five_mode_probe": {
+  "killed_at": "eta = 9000, at the 30-minute limit, so eta_0 = 14145 is unmeasured and is NOT extrapolated into a claim",
+  "note": "five wavenumbers 2e-4..1.0, measured before this revision registered",
+  "seconds": {
+   "1000": 40.4,
+   "1893": 123.4,
+   "4000": 493.3,
+   "500": 12.2,
+   "6000": 1095.7
+  }
+ },
+ "r7848_record": {
+  "nearest_measured_carry": 914.0,
+  "nearest_ratio": 1.0109022970414867,
+  "phi_seconds": 40.38359975814819,
+  "records_its_etaref": false
+ },
+ "switches": {
+  "ETA_END": 1893.1202795929737,
+  "ETA_ON": 0.015511825319321585,
+  "KMAX": 1.0,
+  "KMIN": 0.0002,
+  "NK": "4",
+  "NKP": 220,
+  "NOPROJ": "1",
+  "RTOL": 1e-07,
+  "eta_0": 14145.332760923342
+ }
+}

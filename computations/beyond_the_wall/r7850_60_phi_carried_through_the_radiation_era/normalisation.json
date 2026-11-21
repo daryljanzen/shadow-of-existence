@@ -1,0 +1,15 @@
+{
+ "amplitude_change_relative": 0.07136773917308648,
+ "camb_As": 2.1e-09,
+ "camb_amplitude_with_nothing_fitted": 1.002493850450405,
+ "camb_chi2_nothing_fitted": 8.817347545463614,
+ "held": 1.617967073881543e-09,
+ "held_does_not_depend_on_the_growth": true,
+ "miss_r7848_pc": 9.043708029003117,
+ "miss_r7850_pc": 2.552363107465905,
+ "moves_toward_one": true,
+ "preferred_r7848": 1.4716428557142912e-09,
+ "preferred_r7850": 1.5766706791968449e-09,
+ "ratio_r7848": 0.9095629197099688,
+ "ratio_r7850": 0.974476368925341
+}
