@@ -27,6 +27,9 @@
   "drift_cut": 2.5386471380157265,
   "reading": "the growth frozen beyond eta_ref was the dominant shape error: moving the carry to z = 188 takes chi2/dof from 2.05 to 1.07 and the monotone drift from 49.8 to 19.6 per cent, so the shape is now consistent with the bandpowers within their own errors",
   "residual": "19.6 per cent of monotone drift remains -- the Limber approximation at low L and the neutrino filter being an interpolation are the named candidates, and neither is measured here",
+  "superseded_by": "carry_validity.json",
+  "superseded_reading": "SUPERSEDED, finding preserved.  The two chi^2 figures and the two drifts below are measurements and stand.  The READING of them -- that z = 188 is the better carry -- does not: carry_validity.py then tested, in closed form on one pure matter + Lambda rate, whether a matter-only growth equation links the two start times at all, and it does not.  The ratio is k-dependent (0.964 at the largest scales, 0.736 at the smallest, median 0.781), which is sub-horizon Phi decay through the residual radiation era -- 5.47 per cent of matter at z = 188 against 0.39 per cent at z = 12.8.  So the lower chi^2 at z = 188 is a truncation error partly cancelled by a growth error, not a better model, and THE ORDERED CARRY AT z = 12.8 IS THE ONE THE GRID WAS BUILT ON.",
+  "this_file_is_not_the_current_decision": true,
   "truncation_hypothesis_confirmed": true
  }
 }
