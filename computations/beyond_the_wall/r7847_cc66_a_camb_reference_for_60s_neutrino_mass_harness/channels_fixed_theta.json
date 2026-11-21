@@ -1,0 +1,59 @@
+{
+  "control": {
+    "H0": 67.4,
+    "Om": 0.315,
+    "ombh2": 0.0224,
+    "ns": 0.965,
+    "tau": 0.054,
+    "om_m_held": 0.14309694000000003
+  },
+  "convention": "total omega_m held; omega_cb falls by omega_nu; 3 species, normal order",
+  "step_eV": 0.02,
+  "theta_0": 0.0104024672486614,
+  "H0_for_held_theta": 67.32926528635221,
+  "theta_residual_when_held": -1.3390890044749974e-13,
+  "dln_theta_dsum_per_eV": 0.010158422180808147,
+  "bands": {
+    "TT": {
+      "band": [
+        30,
+        2000
+      ],
+      "rms_unlensed_total": 103.39707884647953,
+      "non_geometric_share": 0.9643656730470529,
+      "geometric_share": 0.4483444890619404,
+      "lensing_smoothing_share_of_lensed": 0.066363059440243
+    },
+    "TE": {
+      "band": [
+        30,
+        1500
+      ],
+      "rms_unlensed_total": 8.187466151903735,
+      "non_geometric_share": 0.28495521511489585,
+      "geometric_share": 0.9658363720073454,
+      "lensing_smoothing_share_of_lensed": 0.18268662336407349
+    },
+    "EE": {
+      "band": [
+        30,
+        1500
+      ],
+      "rms_unlensed_total": 1.7038892731822763,
+      "non_geometric_share": 0.39370108258391046,
+      "geometric_share": 0.9406970101235991,
+      "lensing_smoothing_share_of_lensed": 0.1989462129024937
+    },
+    "PP": {
+      "band": [
+        8,
+        400
+      ],
+      "rms_total": 2.2344350294069312e-08,
+      "non_geometric_share": 0.9194861223327119,
+      "geometric_share": 0.08119364530124731,
+      "dCl_dsum_at_L100": -3.113539966824389e-08,
+      "sign": "negative = free-streaming suppression"
+    }
+  }
+}
