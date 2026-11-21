@@ -1,0 +1,174 @@
+{
+ "absolute_improves_monotonically_after_it": true,
+ "absolute_improves_monotonically_everywhere": true,
+ "absolute_order_best_first": [
+  4000.0,
+  3200.0,
+  2500.0,
+  1893.0,
+  1400.0,
+  914.0,
+  500.0,
+  400.0,
+  300.0,
+  200.0,
+  150.0,
+  100.0,
+  60.0
+ ],
+ "best_absolute": {
+  "eta": 4000.0,
+  "per_cent_low": 9.043708029003117
+ },
+ "best_shape": {
+  "eta": 400.0,
+  "per_dof": 0.8912636964166392
+ },
+ "closure": {
+  "agrees_within_5_per_cent": true,
+  "decay_from": 500.0,
+  "decay_in_power": 2.234203371462297,
+  "decay_to": 4000.0,
+  "normalisation_deficit_ratio": 2.204264321433992,
+  "phi_ratio": 1.4947251825878551,
+  "relative_disagreement": 0.013582332090203986,
+  "verdict": "the late handover's absolute normalisation is a CANCELLATION of two errors"
+ },
+ "held_amplitude": 1.617967073881543e-09,
+ "note": "the lensing side of the joint fit carries no fitted amplitude, so the joint fit tests the absolute normalisation and the nine-bandpower chi^2 with one amplitude fitted tests only the shape",
+ "opposed_from_shape_minimum_onward": true,
+ "pivot_k": 0.05,
+ "pivot_key_used": "k0.05006",
+ "rows": [
+  {
+   "eta": 60.0,
+   "per_cent_low": 93.25138396198024,
+   "per_dof": 31.000693175376373,
+   "preferred": 1.0919038543784887e-10,
+   "ratio": 0.06748616038019763,
+   "z": 6979.330343893085
+  },
+  {
+   "eta": 100.0,
+   "per_cent_low": 89.16529916645374,
+   "per_dof": 12.071612402968102,
+   "preferred": 1.753018920403476e-10,
+   "ratio": 0.10834700833546261,
+   "z": 3925.3751135426405
+  },
+  {
+   "eta": 150.0,
+   "per_cent_low": 83.67877673023627,
+   "per_dof": 4.931670602906333,
+   "preferred": 2.6407201855946967e-10,
+   "ratio": 0.16321223269763727,
+   "z": 2426.862652512062
+  },
+  {
+   "eta": 200.0,
+   "per_cent_low": 78.47583000988394,
+   "per_dof": 2.7477937539230024,
+   "preferred": 3.4825398336637007e-10,
+   "ratio": 0.21524169990116063,
+   "z": 1696.8387338403272
+  },
+  {
+   "eta": 300.0,
+   "per_cent_low": 69.9071235651577,
+   "per_dof": 1.1939750717841682,
+   "preferred": 4.868928322996063e-10,
+   "ratio": 0.300928764348423,
+   "z": 996.1195765782596
+  },
+  {
+   "eta": 400.0,
+   "per_cent_low": 63.59343253218954,
+   "per_dof": 0.8912636964166392,
+   "preferred": 5.890462743596426e-10,
+   "ratio": 0.3640656746781045,
+   "z": 667.2697090057404
+  },
+  {
+   "eta": 500.0,
+   "per_cent_low": 58.73621367158683,
+   "per_dof": 0.9168272463282766,
+   "preferred": 6.676344762305586e-10,
+   "ratio": 0.4126378632841316,
+   "z": 482.2030692296128
+  },
+  {
+   "eta": 914.0,
+   "per_cent_low": 45.58779153755944,
+   "per_dof": 1.0706422673466989,
+   "preferred": 8.803716170940749e-10,
+   "ratio": 0.5441220846244056,
+   "z": 188.06222472707162
+  },
+  {
+   "eta": 1400.0,
+   "per_cent_low": 35.93546051612992,
+   "per_dof": 1.1629817712239232,
+   "preferred": 1.0365431548828585e-09,
+   "ratio": 0.6406453948387008,
+   "z": 91.50694786988117
+  },
+  {
+   "eta": 1893.0,
+   "per_cent_low": 28.776887103141036,
+   "per_dof": 1.3094786367522702,
+   "preferred": 1.152366515664657e-09,
+   "ratio": 0.7122311289685896,
+   "z": 53.55116336995169
+  },
+  {
+   "eta": 2500.0,
+   "per_cent_low": 21.818957139208393,
+   "per_dof": 1.5173335726399848,
+   "preferred": 1.264943531504825e-09,
+   "ratio": 0.781810428607916,
+   "z": 32.05787943082306
+  },
+  {
+   "eta": 3200.0,
+   "per_cent_low": 15.289159712332179,
+   "per_dof": 1.7669788113047602,
+   "preferred": 1.3705935038628464e-09,
+   "ratio": 0.8471084028766782,
+   "z": 19.99192521380741
+  },
+  {
+   "eta": 4000.0,
+   "per_cent_low": 9.043708029003117,
+   "per_dof": 2.048681239108743,
+   "preferred": 1.4716428557142912e-09,
+   "ratio": 0.9095629197099688,
+   "z": 12.833076687240304
+  }
+ ],
+ "shape_order_best_first": [
+  400.0,
+  500.0,
+  914.0,
+  1400.0,
+  300.0,
+  1893.0,
+  2500.0,
+  3200.0,
+  4000.0,
+  200.0,
+  150.0,
+  100.0,
+  60.0
+ ],
+ "shape_worsens_monotonically_after_its_minimum": true,
+ "tail_etas": [
+  400.0,
+  500.0,
+  914.0,
+  1400.0,
+  1893.0,
+  2500.0,
+  3200.0,
+  4000.0
+ ]
+}
