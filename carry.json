@@ -2624,6 +2624,11 @@
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
     "unmeasured": true
    },
+   "receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
    "receipts/L_probability/S27_my_mode_call_is_refuted_and_the_prefix_landed_in_the_gap_my_own_bimodality_claim_says_is_empty.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44913076461",
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
@@ -2819,9 +2824,24 @@
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
     "unmeasured": true
    },
+   "receipts/P10_canonical_time/P10_the_field_squared_is_already_in_the_trace_at_quadratic_order_and_the_degenerate_point_is_representational.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_the_floor_is_forced_as_a_mode_but_the_subtraction_point_is_a_convention_and_the_residue_is_the_absorbed_constant.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44913076461",
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py": {
@@ -2829,9 +2849,24 @@
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
     "unmeasured": true
    },
+   "receipts/P10_canonical_time/P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_the_subtraction_is_at_operator_dimension_six_pinned_three_ways_and_it_is_not_degenerate_so_the_ledger_cost_is_real.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44913076461",
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_tower_limit_closes_at_first_order_and_the_wall_moves_into_a_boundary_condition_at_second.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
     "unmeasured": true
    },
    "receipts/P12_algebroid/A8_the_self_protecting_falsehood.py": {
@@ -3274,6 +3309,11 @@
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_adjudicated_endpoints_verdict_is_arm_independent_and_the_penalty_the_paper_prints_is_not.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_admissible_band_is_a_third_and_the_two_entries_differ_against_the_potential.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44913076461",
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
@@ -3612,6 +3652,11 @@
    "receipts/P15_CR_cosmology/P15_the_lensing_amplitudes_bound_becomes_a_fit_on_the_widened_grid_and_it_wants_more_than_the_edge_allowed.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44913076461",
     "since": "ed86266fc6fd760f72ab6f9b632d8b53ec3aeaec",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/44927133803",
+    "since": "4a5bea8e00d5f478f07e502c5bc1468908ac3e5b",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py": {
