@@ -228,6 +228,7 @@
      0.8921953342833918
     ],
     "holds": false,
+    "identical_to_one_species": true,
     "rel": [
      -0.3969856583696453,
      -0.3965202036395893,
@@ -271,7 +272,8 @@
      0.19207981750345904
     ],
     "spread": 0.6294945204015278,
-    "worst_abs": 0.3969856583696453
+    "worst_abs": 0.3969856583696453,
+    "worst_relative_difference_from_one_species": 2.297939616369149e-12
    },
    "weights": {
     "baryon": 0.15653723972015054,
@@ -503,6 +505,7 @@
      0.958842725190133
     ],
     "holds": false,
+    "identical_to_one_species": true,
     "rel": [
      -0.3735433714242713,
      -0.3725717450986329,
@@ -546,7 +549,8 @@
      0.10872948027129303
     ],
     "spread": 0.4911552013812597,
-    "worst_abs": 0.3735433714242713
+    "worst_abs": 0.3735433714242713,
+    "worst_relative_difference_from_one_species": 2.0528023725319144e-12
    },
    "weights": {
     "baryon": 0.15653723972015054,
@@ -778,6 +782,7 @@
      0.9731426647210747
     ],
     "holds": false,
+    "identical_to_one_species": true,
     "rel": [
      -0.2854469786503412,
      -0.28400472512657005,
@@ -821,7 +826,8 @@
      0.03155270313430525
     ],
     "spread": 0.3205683672609615,
-    "worst_abs": 0.2854469786503412
+    "worst_abs": 0.2854469786503412,
+    "worst_relative_difference_from_one_species": 8.943956686380261e-13
    },
    "weights": {
     "baryon": 0.15653723972015054,
@@ -832,6 +838,12 @@
    "z_judge": 53.55116336995169
   }
  ],
+ "handovers_requested": [
+  500.0,
+  914.0,
+  1400.0
+ ],
+ "is_the_registered_configuration": true,
  "judge_at": 1893.0,
  "r7848_matter_only_spread": 0.22762677898609984,
  "spread_range": [
@@ -840,12 +852,13 @@
  ],
  "two_species": {
   "any_holds": false,
-  "beats_one_species": true,
   "best_handover": 1400.0,
   "best_spread": 0.3205683672609615,
+  "identical_to_one_species": true,
   "spread_range": [
    0.3205683672609615,
    0.6294945204015278
-  ]
+  ],
+  "worst_relative_difference": 2.297939616369149e-12
  }
 }

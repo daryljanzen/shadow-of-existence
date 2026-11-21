@@ -208,7 +208,11 @@ check('Ⓑ② the residual is measured at FIVE handover/judge combinations, so t
 _ts = [h['two_species'] for h in CARRY['handovers'] + CARRY2['handovers']]
 check('Ⓑ②ᵇ carrying the two clustering species SEPARATELY changes nothing, and that is asserted as a '
       'measurement rather than left as a derivation: the worst relative difference from carrying '
-      'their weighted sum is 1.672e-12 across five configurations.  ** Both obey the same equation '
+      'their weighted sum is 2.298e-12 across five configurations.  ⌷ That figure read '
+      '1.672e-12 until the REGISTERED configuration\'s own record was refreshed to carry '
+      'the measurement: the smaller number was the maximum over the subset of records '
+      'that happened to have it, which is one more figure quoted from the wrong SET '
+      'rather than the wrong switches.  ** Both obey the same equation '
       'with the same source, because the source depends only on the TOTAL, so the weighted sum obeys '
       'it too with the weighted sum of their initial conditions. **  The baryon shortfall the '
       'isolation measured -- d_b/d_c of 1.0000 at k = 2e-4 and 0.0101 at k = 1 -- is real and is NOT '
@@ -409,7 +413,7 @@ check('Ⓙ⑩ the cost is recorded with the configuration beside every number, a
 # ⌷  EVERY FIGURE THIS REVISION'S INDEX ROW PRINTS, PINNED TWO-SIDED AGAINST WHAT MEASURED IT
 _pins = {
     'limit': abs(_lim - 100.402) < 0.0045,
-    'limit_mcse': abs(_se - 0.353) < 0.0045,
+    'limit_mcse': abs(_se - 0.353) < 0.00045,
     'r7848_limit': abs(_olim - 111.383) < 0.0045,
     'r7848_limit_mcse': abs(_ose - 0.409) < 0.0045,
     'limit_improvement': abs((_olim - _lim) - 10.981) < 0.0045,
@@ -434,10 +438,14 @@ _pins = {
     'criterion': abs(CARRY['criterion'] - 0.023) < 0.00045,
     'r7848_matter_only_spread': abs(CARRY['r7848_matter_only_spread'] - 0.2276) < 0.0045,
     'restricted_floor': abs(_floor - 0.0037771) < 4.5e-07,
-    'radiation_share_at_production_handover': abs(_rad - 0.00401) < 4.5e-05,
+    'radiation_share_at_production_handover': abs(_rad - 0.00401) < 4.5e-06,
+    'radiation_share_at_the_earliest_handover':
+        abs(ISO['handovers'][0]['radiation_over_matter'] - 0.1401) < 4.5e-05,
+    'camb_worst_bin': abs(max(abs(v) for v in CAMB['in_bin_sigma']) - 1.34) < 0.0045,
+    'normalisation_miss_r7848': abs(NORM['miss_r7848_pc'] - 9.04) < 0.0045,
     'restricted_at_one_per_cent': abs(float(_t['0.01']['spread']) - 0.0224) < 0.0045,
     'two_species_identity': abs(max(
-        t['worst_relative_difference_from_one_species'] for t in _ts) - 1.672e-12) < 4.5e-16,
+        t['worst_relative_difference_from_one_species'] for t in _ts) - 2.298e-12) < 4.5e-16,
     'baryon_ratio_high_k': abs(ISO['handovers'][0]['baryons']['at_k_max'] - 0.0101) < 4.5e-05,
     'chi2_per_dof_quadrature': abs(_q['chi2_per_dof'] - 2.048681) < 4.5e-07,
     'chi2_per_dof_instrument': abs(_i['chi2_per_dof'] - 2.131182) < 4.5e-07,

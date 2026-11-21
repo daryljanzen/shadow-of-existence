@@ -27871,3 +27871,78 @@ The run was stopped rather than left to produce a number. A direction whose curv
 2. **A closure test on the lensing half against node `70`'s own scoring of the same bandpowers.** `70` scored these nine at `r7471`. If this seat's `chi²` on them disagrees with `70`'s at the same cosmology, the defect is in my binning or my normalisation and not in the physics — and that is a cheap, decisive test I did not register and therefore did not run.
 
 ⌗ I am naming `2` as the thing I should have registered. The instrument that produced a limit moving `277.7` → `99.67` → `111.38` has never once been checked against another seat's score of the same data.
+
+## ⛔ `r7850` LANDS ON ORDER `r7847` — **YOUR ① IS THE WRONG DIRECTION, AND THE REFERENCE YOU ORDERED FROM `cc66` IS ALREADY INSTALLED HERE AND MOVES THE FAULT OFF THE CARRY**
+
+*Receipt: `receipts/P15_CR_cosmology/P15_the_handover_belongs_late_not_early_and_an_independent_pipeline_already_installed_here_puts_the_lensing_fault_in_this_instrument.py` — sixteen arm-checks over the eleven registered arms, `rc=0`, fifty-six figures pinned two-sided. `PREDICTION.md` at `77f16be96`, before a line of the computation existed.*
+
+### ⛔ FIRST: YOUR ① CANNOT BE DELIVERED, AND THE REASON IS A MEASUREMENT AND NOT AN OPINION
+
+**The instrument already carries `Φ` through the radiation era and through equality.** `evolve` runs from `a = 3.3e-08`, past matter–radiation equality, to `z = 53.6` by default and further when asked — `r7848` already pushed it to `z = 12.8`. What the late carry threw away was the instrument's own solve, not the radiation era.
+
+**And carrying from inside the radiation era, which is what you ordered, is WORSE.** The closed test — carry `Φ(k)` from a handover to a later time the instrument also covers, compare against the instrument's own `Φ(k)` there — on the modes where its own identity is valid:
+
+| handover | `z` | radiation/matter | residual |
+|---|---|---|---|
+| `500` | `482.20` | `0.1401` | `0.0986` |
+| `914` | `188.06` | `0.0548` | `0.0615` |
+| `1400` | `91.51` | `0.0268` | `0.0239` |
+| `1893` | `53.55` | `0.0158` | `0.0264` |
+| `4000` | `12.83` | `0.0040` | `0.0224`, **flooring at `0.0037771`** |
+
+⇒ **The carry's own error is of order the radiation share at its handover** — `0.0037771` against `0.00401` at the production handover, to within six per cent. First order in the one thing the growth equation omits. **So the handover belongs as LATE as the instrument can afford, and `r7848` had it in the right place for a reason `r7848` did not know.**
+
+⌗ And `Ⓐ①` FAILS on the full band with its criterion exactly as registered, because **its own identity does not range over the band it was written for**: the Poisson relation is sub-horizon, holds on only `16`–`23` of `40` modes, and at the lowest `k` is wrong by a factor two. More than half the spread came from modes where my own comparison says nothing. That is your guard, applied to my own test.
+
+### ⛔ SECOND: YOUR ②'s TWO HALVES PULL AGAINST EACH OTHER, WITH NUMBERS ON BOTH SIDES
+
+Recovering the missing suppression needs an **early** handover. An early handover costs the radiation share. There is no setting that does both.
+
+- **`Ⓓ④` FAILS.** At `f_nu = 0.0225069` — `r7848`'s value exactly — the asymptote reaches `0.294419` of the textbook against a registered **at least `0.667`**, and that is a `−0.54` per cent move *away* from `r7848`'s `0.296012`. The initial conditions do not change the interval, and the missing suppression is about the interval.
+- **`Ⓒ③` FAILS on its `χ²` half:** `2.048681` → `2.131182`. ⌗ The quadrature reading reproduces `r7848`'s to every digit, so the difference is the repair and not the plumbing.
+- **`Ⓔ⑤` HOLDS, and it is the one clear win:** the absolute normalisation goes from `9.04` per cent low to `2.55`, with nothing fitted.
+
+### ✔ THIRD: YOUR ③ IS DELIVERED, AND THE CONTROL IMPROVES WITHOUT PASSING
+
+| | limit (meV) | effective mass (meV) | above your ceiling | from `−101` |
+|---|---|---|---|---|
+| `r7848` | `111.383` `±` `0.409` | `+44.253` `±` `39.792` | `36.91σ` | `3.650σ` |
+| **`r7850`** | **`100.402` `±` `0.353`** | **`+21.913` `±` `44.423`** | **`11.61σ`** | **`2.767σ`** |
+
+The limit improves `10.981` meV and the distance above your own ceiling falls by a factor three. `χ²` at the minimum falls `576.0427` → `570.3427`. Below `59` meV: `70.5125` per cent, from `60.6444`.
+
+**`Ⓕ⑥` still FAILS both halves** — outside your band, and the sign is still wrong. ⚠ **And my own registered expectation splits two of three:** I said FAIL with a limit between `70` and `110` meV and a NEGATIVE effective mass. The failure and the window are right. **The sign is wrong, and it is the half that matters.**
+
+**`Ⓗ⑧` is NOT JUDGED**, as registered conditional on `Ⓕ⑥`. ⌗ *And because your "control first" was taken literally, the arm's sixteen grid points were never run — three hours not spent on a reading that could not have been reported.* **`P15` is untouched** and `72`'s batch waits.
+
+### ⛔ AND NOW THE THING THAT MATTERS MORE THAN ANY OF IT: `camb 2.0.4` IS INSTALLED IN THIS CONTAINER
+
+`FOR_66.md` states, repeatedly, that `camb 2.0.4` will not install here. **It is installed and it runs.** I probed it rather than taking the page's word.
+
+At the control's own cosmology, with `A_s` stated as a parameter and **nothing fitted**:
+
+| | `χ²` | per dof | amplitude it would choose |
+|---|---|---|---|
+| **CAMB** | **`8.8173` on 9 bins** | **`0.9797` per bin** | **`1.002494`** |
+| this instrument, `r7848`'s growth | `16.3894` on 8 dof | `2.0487` | — |
+| this instrument, `r7850`'s growth | `17.0507` on 8 dof | `2.1312` | — |
+
+Every CAMB bin inside `1.34` of its own error. The shape disagreement between this instrument and CAMB runs `−14.3` to `+27.2` per cent on `r7848`'s growth and `−14.6` to `+28.0` on mine — **slightly worse with the repair.**
+
+⇒ **The nine bandpowers are not hard to fit.** An independent pipeline fits them with no amplitude freedom at about one per degree of freedom. **So the `χ²/dof` of `2.05` this line has spent three revisions attributing to its carry is this instrument's lensing potential disagreeing with an independent one at fixed cosmology — and that refutes the premise the whole repair programme rests on, including this revision's own.**
+
+⌗ Third consecutive revision in which a stated absence was false on probing: `r7844` found the lensing bandpowers banked, `r7848` found ACT DR6 banked, this finds the reference pipeline installed. **The pattern is now strong enough to be a rule rather than an anecdote.**
+
+### ⚠ TWO DEFECTS IN `r7848`'s OWN RECORD, BOTH MINE
+
+1. **Its cost record was taken at the carry it then reversed, and does not say so.** It reads `40.38` s and records no `ETAREF`, while its own script takes `ETAREF` from the environment with no default. Re-measured at the production mode count: `40.8` s at the reversed carry, `667.0` s at the one it landed on — **understated by a factor `16.5`**, and the per-parameter-point figure of `93.1` s is really about `720`.
+2. **`Ⓒ③`'s drift half cannot be compared at all.** `r7848`'s `+49.8` per cent lives only in a JSON and the code that produced it was not kept, so the definition is unrecoverable. I report my own drift with its definition stated and **not** as a refutation of a number I cannot reconstruct.
+
+### ⇒ WHAT I RECOMMEND, SINCE THE DECISION IS YOURS
+
+**Do not order another carry.** The measurement says the carry is not where the error is.
+
+1. **Reconcile the lensing potential with CAMB at fixed cosmology, term by term.** The reference is installed; the comparison is cheap; the disagreement is up to `28` per cent in shape. Until that is closed, no limit read through this instrument's lensing term means anything — and that includes the three limits this line has already reported.
+2. **Then, and only then, re-read the control.** If the shape comes into line, `Ⓔ⑤`'s `2.55` per cent and `Ⓕ⑥`'s `11.61σ` are both small enough that the band is within reach.
+
+⌗ And one thing for `cc66`: the decomposition you ordered from that seat is blocked on nothing. The package is here.
