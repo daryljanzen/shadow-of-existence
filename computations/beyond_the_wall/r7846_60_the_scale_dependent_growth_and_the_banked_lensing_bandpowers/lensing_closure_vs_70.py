@@ -76,17 +76,28 @@ def main():
     d70, ci70, w70 = seventy_loader()
     src70 = io.open(LIKE70, encoding='utf-8').read()
     same_data = bool(np.array_equal(d70, LL.DATA))
+    # ** the Fisher is ~1e16 because the bandpowers are ~1e-7, so an ABSOLUTE difference says
+    # nothing here. **  The first pass printed 1.000e+00 and it looked like a disagreement; it is
+    # one part in 1e16, which is the symmetrisation and the inversion's own rounding.
+    _den = float(np.max(np.abs(ci70)))
     same_cov = float(np.max(np.abs(ci70 - LL.FISHER)))
+    same_cov_rel = same_cov / _den
     same_win = all(np.array_equal(a[0], b[0]) and np.array_equal(a[1], b[1])
                    for a, b in zip(w70, LL.WINDOWS))
     conv70 = '(L * (L + 1)) ** 2 / (2 * np.pi)' in src70
     print('  ① inputs: data bitwise identical %s; windows bitwise identical %s; '
-          'Fisher agrees to %.3e' % (same_data, same_win, same_cov))
+          'Fisher agrees to %.3e RELATIVE\n     (absolute %.3e on entries of order %.3e -- an '
+          'absolute difference means nothing at this scale)'
+          % (same_data, same_win, same_cov_rel, same_cov, _den))
     print('     and 70\'s own convention string is present in its source: %s' % conv70)
     out['inputs'] = dict(data_bitwise_identical=same_data, windows_bitwise_identical=same_win,
                          fisher_max_abs_difference=same_cov,
+                         fisher_max_rel_difference=same_cov_rel,
+                         fisher_scale=_den,
                          seventy_convention_in_source=conv70)
     assert same_data and same_win and conv70, 'the two seats are not reading the same data'
+    assert same_cov_rel < 1e-10, ('the two seats\' Fisher matrices differ by %.3e relative'
+                                  % same_cov_rel)
 
     # ② the same spectrum binned both ways
     Lall = np.unique(np.concatenate([L for L, _ in w70]))
@@ -95,10 +106,17 @@ def main():
     print('\n  ② solving C_L^phiphi at ALL %d integer multipoles %d..%d (70\'s path), and at the '
           '%d this seat\n     actually solves on (its own path)'
           % (len(Lall), Lall.min(), Lall.max(), len(Lcoarse)), flush=True)
-    t0 = time.time()
-    growth = None
-    cl_all = PP.clpp(Lall, 0.0, growth=growth)
-    print('     %d multipoles in %.1f s' % (len(Lall), time.time() - t0), flush=True)
+    cache = os.path.join(_HERE, 'lensing_closure_vs_70_spectrum.npz')
+    if os.path.exists(cache):
+        _z = np.load(cache)
+        assert np.array_equal(_z['Lall'], Lall), 'the cached spectrum is on another multipole set'
+        cl_all = np.asarray(_z['cl_all'], float)
+        print('     %d multipoles read from the cached solve' % len(Lall), flush=True)
+    else:
+        t0 = time.time()
+        cl_all = PP.clpp(Lall, 0.0, growth=None)
+        print('     %d multipoles in %.1f s' % (len(Lall), time.time() - t0), flush=True)
+        np.savez_compressed(cache, Lall=Lall, cl_all=cl_all)
 
     # 70's path: an array indexed by multipole, exact lookup
     ppm = np.zeros(int(Lall.max()) + 1)
