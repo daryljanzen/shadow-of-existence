@@ -62,6 +62,20 @@ COMPUTES: nothing of the physics 60 own.  It re-reads banked outputs of this rev
           banked profiles by the first crossing ABOVE the minimum, and recomputes the
           unbounded vertex by parabolic fits.
 
+** THE PINS ARE VERIFIED FAILABLE BY PERTURBATION, NOT ASSUMED TO BE. **  Each banked input was
+perturbed in turn and the arms that pin it watched to redden, then restored:
+  * the opened profile's Delta chi^2 scaled by 1.0025 -- which moves the limit 0.22 meV, just
+    over check_figures_pinned's 0.061 meV allowance for a printed 122.06 -- reddens Ⓘ⑨;
+    doubling it reddens Ⓘ⑨, Ⓙ⑩, Ⓛ⑫ and Ⓝ⑭, so the limit is cross-pinned four ways;
+  * the banked bandpowers scaled by 1.25 reddens Ⓖ⑦ and Ⓖ⑦ᵇ;
+  * the reproduction's max_abs_ppm set to 7.5 reddens Ⓒ③.
+⌗ And Ⓘ⑨'s tolerance was 0.5 at first, which is EIGHT TIMES too slack to pin the figure the
+INDEX row prints -- check_figures_pinned caught it, along with two figures the row printed that
+this seat cannot pin at all (60's 111.38 and the published 64.2, both one-sided comparisons
+here); those are printed to fewer digits instead, which is the honest precision anyway since
+60's carries +/- 0.41.  The baseline did not grow: it stayed at 1431 while the key count fell
+from 1343 to 1340, because 122.06 is now PINNED rather than baselined.
+
 Bound: this receipt pins THIS REFERENCE's figures and its comparison against 60's banked
 numbers.  It does NOT rule on whether 60's Phi transport through the radiation era is correct
 -- it says that gap is not where the missing factor 1.7 lives, not that the treatment is
@@ -216,7 +230,11 @@ check('Ⓗ⑧ PINNED the CONDITIONAL profile is an ARTEFACT OF HOLDING THE GEOME
 check('Ⓘ⑨ PINNED OPENED -- tau, H0 and Omega_m free -- the minimum returns to Sum = 0 EXACTLY, '
       'the spurious preference vanishes, and the 95 per cent limit is 122.1 meV.  This is the '
       'limit the registered call turns on, and the script said so before it ran',
-      abs(_omin) < 1e-12 and _olim is not None and abs(_olim * 1000 - 122.06) < 0.5,
+      # ** the tolerance is INSIDE check_figures_pinned's allowance for a printed 122.06 **
+      # (the coarser of half a last digit, 0.005, and 0.05 per cent of |X|, 0.061).  It was
+      # 0.5 first, which is eight times too slack to PIN the figure the INDEX row prints --
+      # a one-sided or over-wide comparison is not a pin, and the gate said so.
+      abs(_omin) < 1e-12 and _olim is not None and abs(_olim * 1000 - 122.06) < 0.05,
       'min %.4f eV, limit %.2f meV' % (_omin, _olim * 1000))
 _h0 = [r['H0'] for r in OPEN_['rows']]
 _om = [r['Om'] for r in OPEN_['rows']]
