@@ -39,13 +39,27 @@ PP = TT.PP
 NS, KMIN, KMAX, NKP = TT.NS, TT.KMIN, TT.KMAX, TT.NKP
 
 ETAS = [float(v) for v in os.environ.get('ETAS', '500,914,1400,1893,2500,3200,4000').split(',')]
-SUPERH = -0.9           # the analytic radiation-to-matter super-horizon value, not a fit
+# ⚠ the analytic super-horizon value AFTER the radiation-to-matter transition, not a fit -- and it
+#   is the right comparison only once radiation is negligible.  At `eta = 60` the universe is still
+#   radiation dominated (`rad/matter = 2.02`) and the correct super-horizon value is on its way from
+#   `-1` to `-0.9`, so a reading of `-0.9469` there is the transition in progress and NOT an error.
+SUPERH = -0.9
 
 
 def main():
     t_all = time.time()
     kk = np.logspace(np.log10(KMIN), np.log10(KMAX), NKP)
-    cache = os.path.join(_HERE, 'transfer_history_nkp%d.npz' % NKP)
+    # ** THE RECORD IS KEYED BY ITS OWN OUTPUT TIMES, not by the mode count alone. **  A second
+    #   run with a different `ETAS` would otherwise read the first run's cache and report its
+    #   times as if they were the ones asked for -- the same silent-substitution mistake this
+    #   line has already made twice with grids and with run records.
+    _tag = '-'.join('%g' % e for e in ETAS)
+    cache = os.path.join(_HERE, 'transfer_history_nkp%d_eta%s.npz' % (NKP, _tag))
+    _legacy = os.path.join(_HERE, 'transfer_history_nkp%d.npz' % NKP)
+    if not os.path.exists(cache) and os.path.exists(_legacy):
+        _z = np.load(_legacy)
+        if [float(v) for v in _z['etas']] == list(ETAS):
+            os.rename(_legacy, cache)
     if os.path.exists(cache):
         z_ = np.load(cache)
         PhiT, etas = z_['PhiT'], [float(v) for v in z_['etas']]
@@ -104,13 +118,18 @@ def main():
     print('\n  ⓵ᵇ AND THE INSTRUMENT\'S OWN SUPPRESSION, absolute, against its super-horizon value')
     print('      eta      ' + '  '.join('%9.4g' % q for q in kq))
     absr = {}
+    a_last = float(A.a_of_eta(etas[-1]))
     for i, e in enumerate(etas):
         row = [float(PhiT[i, j] / SUPERH) for j in idx]
         absr['eta%.0f' % e] = row
         print('      %6.0f   ' % e + '  '.join('%9.5f' % v for v in row))
-    print('    ⌗ at k -> 0 the instrument reads Phi = %+.6f against the analytic %.1f -- so what '
-          'moves below is the SUPPRESSION and not the normalisation'
-          % (float(PhiT[-1, 0]), SUPERH), flush=True)
+    _rs_last = float(A.OR / a_last ** 4) / float((A.OM - A.ONU) / a_last ** 3)
+    print('    ⌗ at k -> 0 and eta = %.0f the instrument reads Phi = %+.6f against the MATTER-ERA '
+          'analytic %.1f, with rad/matter = %.4f there.' % (etas[-1], float(PhiT[-1, 0]), SUPERH,
+                                                            _rs_last))
+    print('      ⚠ That comparison is only the right one once radiation is negligible: while it is '
+          'not, the super-horizon value is still on its way from -1 to -0.9 and a reading above '
+          '-0.9 is the transition and not a defect.', flush=True)
 
     out = dict(config=cfg, etas=etas, nkp=NKP, kmin=KMIN, kmax=KMAX, ns=NS,
                k_probed=[float(kk[j]) for j in idx], pivot_k=float(kk[ipiv]),
@@ -124,9 +143,13 @@ def main():
                switches={k: os.environ[k] for k in ('NK', 'NOPROJ', 'LN', 'HIER', 'ARM')
                          if k in os.environ},
                total_seconds=round(time.time() - t_all, 2))
-    with io.open(os.path.join(_HERE, 'transfer_history.json'), 'w', encoding='utf-8') as fh:
+    # ** THE JSON IS KEYED BY ITS OWN OUTPUT TIMES, exactly as the `.npz` is. **  The first run
+    #   here wrote a fixed name and the second overwrote it, which is the same silent substitution
+    #   the cache was keyed to prevent -- keyed in one place and not the other is not keyed.
+    name = 'transfer_history_eta%s.json' % _tag
+    with io.open(os.path.join(_HERE, name), 'w', encoding='utf-8') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
-    print('\n  wrote transfer_history.json  (%.1f s)\n' % out['total_seconds'], flush=True)
+    print('\n  wrote %s  (%.1f s)\n' % (name, out['total_seconds']), flush=True)
     return 0
 
 
