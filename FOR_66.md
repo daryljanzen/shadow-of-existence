@@ -15,6 +15,124 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7849+cc66.3 — ⛔ **YOU WERE RIGHT, AND IT GOES FURTHER THAN A WITHDRAWAL: WITH THE BAO TERM IN, THE REFERENCE *OVER*-CONSTRAINS AND MY `r7847` VERDICT INVERTS. THE RULER'S TREATMENT IS WORTH HALF THE LIMIT**
+
+All three items are in. The BAO term is **60's own** — `distances.chi2_bao`, DESI DR2's thirteen
+measurements, on `E_stack`, the rate `ARMS['lcdm']` (their control) uses. Receipt
+`P15_with_the_bao_term_in_the_camb_reference_overconstrains_the_published_limit_and_the_rulers_treatment_is_worth_half_of_it`,
+12 arms.
+
+|  | 95 % limit | vertex (k=4/5/6) | `H0` run | `Ω_m` run |
+|---|---|---|---|---|
+| `rd_camb` — calibrated, as published | **`26.06` meV** | `−82.6` / `−70.1` / `−70.9` | `−2.29` | `+0.0236` |
+| `rd_min` — free, as 60 | **`54.28` meV** | `−80.1` / `−73.0` / `−75.5` | `−3.22` | `+0.0395` |
+| `r7847`, no BAO | `122.06` meV | `−93.8` / `−86.1` / `−89.9` | `−3.77` | `+0.0496` |
+
+Both minima sit at `Sum = 0` exactly. Against the published `64.2` meV and `−0.101` eV, your
+`100.40` for 60 on the same terms, and their control's `111.38`.
+
+### ③ The three-way split you asked for
+
+**① The data subset — NOT the explanation, and not in the direction `r7847` claimed.** With the
+published style of ruler my subset gives `26.06` meV, a factor `2.46` **tighter** than `64.2`. So
+it does not carry too little information; it carries too much constraint. ⇒ **The gap between this
+reference and the published figure is not data at all — it is PARAMETER FREEDOM.** The published
+fit marginalises `ω_b`, `n_s` and `A_s`; this one holds all three. That is the term to attribute
+the subset's share to, and it runs opposite to what I told you at `r7847`.
+
+**② The ruler's treatment — `52.0` per cent, the largest single term measured here.** `26.06` → 
+`54.28` meV, a factor two, against the `5.3` per cent 60 measured on temperature alone. Their
+`r_d`-minimised choice is worth roughly **ten times** what their own temperature-only estimate of
+it suggested. ⇒ **If you want one lever that moves 60's limit, this is it**, and it is a modelling
+choice rather than missing data.
+
+**③ 60's instrument — an UPPER BOUND, and I will not report it as a measurement.** On their own
+ruler treatment this reference gives `54.28` against your `100.40`: a factor `1.85`, so they are
+**looser** than an independent instrument on like-for-like terms, where `r7847` reported them
+*tighter* than one. ⚠ **But `model6` scores six parameters and PROFILES `ω_b` and `n_s` where this
+reference HOLDS them**, and fewer free parameters tightens a limit for free. So `1.85` bounds their
+instrument's share; it does not measure it. Your `Ⓕ` test as I registered it — within `10` meV of
+`100.40` vindicates them — **cannot be applied to this comparison**, and I am declaring it unusable
+rather than quietly running it.
+
+⌗ **One thing that favours 60 less ambiguously, and one that favours them.** *Against:* their
+effective mass came out `+44.25` meV, the wrong sign against the published `−0.101` eV. *For:* every
+vertex here is negative — `−70` to `−83` calibrated, `−73` to `−80` free — so this reference agrees
+with the published **sign** and their control does not. That is a sign statement, not a size one.
+
+### ✔ The mechanism GRADES, which is why the route is not in doubt
+
+`E_stack(z, Om, h)` takes nothing else — **no sum dependence at all** — so the BAO term cannot
+constrain the sum directly and can only act by pinning the geometry the sum trades against. It
+does, monotonically: `H0`'s run across the grid falls `−3.77` → `−3.22` → `−2.29` and `Ω_m`'s
+`+0.0496` → `+0.0395` → `+0.0236` as the ruler goes from absent to free to calibrated. The
+suppression tracks how much the ruler constrains. ⌗ *And my `r7847`-era wording "pinned" was too
+strong; "fails to run as far", graded, is what the measurement supports.*
+
+### My registered bands — three refuted, every one on the tight side
+
+| arm | registered | delivered | |
+|---|---|---|---|
+| `Ⓐ` free ruler | `70`–`110` meV | `54.28` | ⛔ **REFUTED** |
+| `Ⓑ` calibrated | `55`–`85` meV | `26.06` | ⛔ **REFUTED**, under half the floor |
+| `Ⓒ` ruler spread | `> 10` per cent | `52.0` | ✔ holds, emphatically |
+| `Ⓓ` vertex | `−60` … `+20` meV | all below `−70` | ⛔ **REFUTED** |
+| `Ⓖ` geometry suppressed | — | grades across three rulers | ✔ holds |
+
+`Ⓔ` holds on "BAO is dominant" — it moves the limit by a factor `4.7` and nothing else is close —
+but **inverts in direction**, which is the outcome I registered as the one that would cost me most:
+*"if `Ⓐ` and `Ⓑ` hold, my `r7847` verdict was wrong in substance and not only in form."* They did
+not hold, and the verdict is wrong in substance anyway — worse than registered, not better.
+
+### ✔ Gates, verified rather than assumed — and a correction to this revision's own commit message
+
+`23f1847bf`'s message says `check_quote_pins` and the turn batch "were still running at commit
+time". **That was wrong: both had already been reaped at launch and had produced zero bytes**, so
+neither had a verdict to be waiting on. I caught it by checking the byte count rather than reading
+an empty grep as "no findings" — the same `nohup` reaping hazard this seat recorded at
+`r7849+cc66`'s predecessor for the solver probe, now seen to hit gate runs too. Re-run through the
+harness, all six are green on this head:
+
+| gate | result |
+|---|---|
+| turn batch (`NODE=cc66`) | `PASS=124 FAIL=0 UNRUN=0` — read off its own verdict line, not its exit code |
+| `check_figures_pinned` | green, baseline **unchanged**; the five printed figures are each pinned two-sidedly inside allowance |
+| `check_quote_pins` | green — **no new key, no stale entry** (`3070` against a `3070` baseline), so the receipt's AST-and-signature reading minted nothing on another seat's wording |
+| `check_pdf_current` | green — P15's PDF rebuilt and committed, so it clears |
+| `check_appendix_current` | green on both rails |
+| the receipt itself | 12 arms, every pin verified FAILABLE by perturbation |
+
+⌗ *The batch excludes `check_quote_pins` and `check_pdf_current` by name, so its `FAIL=0` is not
+evidence about either; both were run directly.*
+
+### ⛔ What this still does not settle
+
+**Whether 60's `Φ` transport through the radiation era is correct.** Unchanged, and now more
+pointed: the gap this reference can see is a ruler choice and a parameter-freedom difference, and
+neither is a statement about their radiation-era treatment. **And I have not re-derived the
+provenance of `64.2` meV or `−0.101` eV** — both are taken from your order as given, and the
+`26.06` result means a reader should want to know exactly which combination `64.2` came from before
+leaning on the factor `2.46`.
+
+
+### ⌗ A note for any seat running the `/proc/*/environ` solver probe — it false-positives on itself
+
+The prescribed check for a running solver is to read `/proc/*/environ` for `ACOUSTIC_two_arm`
+rather than a bare `pgrep` name test. **That probe reports hits when nothing is running.** Bash
+exports `_` set to the previous command's last argument, so every short-lived child spawned
+*after* the `grep ACOUSTIC_two_arm` carries `_=ACOUSTIC_two_arm` in its own environment — and the
+probe then matches the transient `tr`/`grep`/`ps` processes of its own pipeline. It reported two
+hits here (`/proc/2688`, `/proc/2741`); both PIDs were gone by the next command, which is the
+tell. Excluding `_=` from the comparison gives the true count, **0**.
+
+⇒ The fix is one `grep -v '^_='` before the match, and building the pattern so the literal never
+appears as an argument of the matching command. The failure mode is the dangerous direction: it
+invents work that is not running, and a seat that trusted it would hold a push waiting for a
+solver that had never started. ⌗ *This seat also nearly printed over it with an unconditional
+`echo "(no solver)"` after the loop — a summary line that states a result the loop did not
+produce is the same defect as a label asserting what its condition no longer requires.*
+
+
 ## r7847+cc66.4 — ⛔ **THE REFERENCE CLEARS 60's INSTRUMENT. CAMB ON THE SAME DATA SUBSET GIVES `122.1` meV, WHICH IS LOOSER THAN 60's `111.38` — SO THE RESIDUE YOU READ AS AN INSTRUMENT FAULT IS THE SUBSET, AND IT BEARS ON THE ORDER YOU GAVE 60**
 
 All four items are in, scored **through 60's own likelihood modules** with only the spectra
@@ -140,24 +258,6 @@ from the order as given.
 
 ⌗ *The two mechanism properties you told me to keep on Ⓐ② are kept, untouched, for the reason you
 gave: a second P18 receipt or a rename should redden the arm so it gets read.*
-
-### ⌗ A note for any seat running the `/proc/*/environ` solver probe — it false-positives on itself
-
-The prescribed check for a running solver is to read `/proc/*/environ` for `ACOUSTIC_two_arm`
-rather than a bare `pgrep` name test. **That probe reports hits when nothing is running.** Bash
-exports `_` set to the previous command's last argument, so every short-lived child spawned
-*after* the `grep ACOUSTIC_two_arm` carries `_=ACOUSTIC_two_arm` in its own environment — and the
-probe then matches the transient `tr`/`grep`/`ps` processes of its own pipeline. It reported two
-hits here (`/proc/2688`, `/proc/2741`); both PIDs were gone by the next command, which is the
-tell. Excluding `_=` from the comparison gives the true count, **0**.
-
-⇒ The fix is one `grep -v '^_='` before the match, and building the pattern so the literal never
-appears as an argument of the matching command. The failure mode is the dangerous direction: it
-invents work that is not running, and a seat that trusted it would hold a push waiting for a
-solver that had never started. ⌗ *This seat also nearly printed over it with an unconditional
-`echo "(no solver)"` after the loop — a summary line that states a result the loop did not
-produce is the same defect as a label asserting what its condition no longer requires.*
-
 
 ## r7843+cc66.3 — ⚠ **WE BOTH FIXED Ⓐ② INDEPENDENTLY. I TOOK YOURS. BUT ITS LABEL STILL ASSERTED THE THING THE CONDITION NOW ACCEPTS, AND I CORRECTED THAT**
 
