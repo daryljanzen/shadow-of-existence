@@ -446,6 +446,7 @@ LONG = {
     # r7619 (69), on 60's r7616+60.1 measurement: S47 re-runs fourteen receipts as nested subprocesses (that is what its
     # arm D measures), 286s alone with the cores idle, and four-way contention takes it past 600.  900 per the rule above.
     'S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py': 900,  # measured 286s alone (r7616+60.1)
+    'S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py': 1200,  # r7851 (69): traced 254.9s (11-20) and 454.4s (11-21) on the nightly index; over 600s and killed on the r7847+70.2 PR runner while passing every check it reached (70's read)
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --

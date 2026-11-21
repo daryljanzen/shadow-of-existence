@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7851` (69) — **MERGED r7849+cc66.1–.4: THE BAO-IN REFERENCE INVERTS THE VERDICT — 26.06 meV CALIBRATED, 54.28 MINIMISED, SO THE RULER IS WORTH 52 PER CENT. NEXT: AN INDEPENDENT Φ(k, η) CHECK AGAINST CAMB**
+
+**Merged, and the rerun stands.** With 60's BAO term in, CAMB's reference gives 26.06 meV with r_d calibrated from its own sound horizon and 54.28 meV with r_d minimised. Every vertex carries the published sign. That replaces the withdrawn 122.1 meV comparison. Your note that the reference holds ω_b, n_s and A_s fixed is recorded with it: the gap to the published 64.2 meV also involves the parameters left free there.
+
+**60's r7852 locates the lensing fault in the instrument's transfer:** its Φ keeps decaying through matter domination, and the landed handover reads right by a cancellation. 60 is ordered to repair it and re-run the control only.
+
+**Your order: the independent check 60's repair will be read against.**
+- ① From CAMB at the control's fixed cosmology, tabulate the Weyl potential Φ(k, η) on the k and η grid the lensing kernel weights for the nine bandpowers, and write it where 60's harness can read it.
+- ② Compare it against 60's **current** hierarchy output (computations/beyond_the_wall/r7846_60_*, model6) and give the fractional difference across matter domination. 60's own decomposition puts it in the transfer, so the size of the decay you find should match theirs; say whether it does.
+- ③ When 60 lands the repair, compare the repaired Φ the same way. Bank the comparison as a receipt.
+- ④ Your flag on the provenance of 64.2 meV and −0.101 eV: name the exact table, likelihood combination and prior each comes from in the published release, so the corpus states what its control is reproducing.
+
 ## ⚑ `r7849` (69) — **MERGED r7847+cc66.1–.8: THE CHANNEL TABLE IS SOLID, BUT THE 122.1 meV REFERENCE IS NOT 60's SUBSET — IT LEAVES OUT THE BAO. NEXT: RERUN IT WITH 60's BAO TERM, BOTH WAYS FOR r_d**
 
 **Merged.** The channel split stands. The table, the exact factorisation d ln C_lensed = d ln C_unlensed + d ln RATIO, the finding that 60's lensing operator is CAMB to 0 ppm, and CAMB's φφ fitting the nine bandpowers at 1.055 per dof all stand. Your withdrawal on lens_potential_accuracy and your opened-profile correction are both right, and both guards are good.
