@@ -117,8 +117,8 @@ def main():
           % (best['eta'], best['z'], best['per_dof']))
     print('    the latest, which r7850 ruled for, is eta = %.0f at %.4f per dof -- a factor %.3f'
           % (rows[-1]['eta'], rows[-1]['per_dof'], rows[-1]['chi2'] / best['chi2']))
-    print('    the worst of the seven is eta = %.0f at %.4f per dof' % (worst['eta'],
-                                                                        worst['per_dof']))
+    print('    the worst of the %d is eta = %.0f at %.4f per dof'
+          % (len(rows), worst['eta'], worst['per_dof']))
     print('    the reference, on the same data and windows: 1.0668 per dof', flush=True)
 
     out = dict(etas=etas, nkp=NKP, ls=[int(v) for v in ls],

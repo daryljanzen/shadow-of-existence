@@ -1,18 +1,18 @@
 {
  "banked_from": {
   "eta100": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta1400": "transfer_history_nkp220.npz",
+  "eta1400": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
   "eta150": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta1893": "transfer_history_nkp220.npz",
+  "eta1893": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
   "eta200": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta2500": "transfer_history_nkp220.npz",
+  "eta2500": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
   "eta300": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta3200": "transfer_history_nkp220.npz",
+  "eta3200": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
   "eta400": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta4000": "transfer_history_nkp220.npz",
-  "eta500": "transfer_history_nkp220.npz",
+  "eta4000": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
+  "eta500": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz",
   "eta60": "transfer_history_nkp220_eta60-100-150-200-300-400.npz",
-  "eta914": "transfer_history_nkp220.npz"
+  "eta914": "transfer_history_nkp220_eta500-914-1400-1893-2500-3200-4000.npz"
  },
  "best": {
   "chi2": 7.130109571333113,
@@ -103,7 +103,7 @@
    "eta": 60.0,
    "per_dof": 31.000693175376373,
    "radiation_over_matter": 2.0243878679136182,
-   "seconds": 25.07,
+   "seconds": 25.19,
    "z": 6979.330343893085
   },
   {
@@ -124,7 +124,7 @@
    "eta": 100.0,
    "per_dof": 12.071612402968102,
    "radiation_over_matter": 1.1387005704805397,
-   "seconds": 21.48,
+   "seconds": 23.24,
    "z": 3925.3751135426405
   },
   {
@@ -145,7 +145,7 @@
    "eta": 150.0,
    "per_dof": 4.931670602906333,
    "radiation_over_matter": 0.7041121919116548,
-   "seconds": 18.75,
+   "seconds": 20.85,
    "z": 2426.862652512062
   },
   {
@@ -166,7 +166,7 @@
    "eta": 200.0,
    "per_dof": 2.7477937539230024,
    "radiation_over_matter": 0.4923956267294994,
-   "seconds": 20.76,
+   "seconds": 21.9,
    "z": 1696.8387338403272
   },
   {
@@ -187,7 +187,7 @@
    "eta": 300.0,
    "per_dof": 1.1939750717841682,
    "radiation_over_matter": 0.2891778288759897,
-   "seconds": 17.26,
+   "seconds": 18.78,
    "z": 996.1195765782596
   },
   {
@@ -208,7 +208,7 @@
    "eta": 400.0,
    "per_dof": 0.8912636964166392,
    "radiation_over_matter": 0.19380702986198184,
-   "seconds": 17.73,
+   "seconds": 18.69,
    "z": 667.2697090057404
   },
   {
@@ -229,7 +229,7 @@
    "eta": 500.0,
    "per_dof": 0.9168272463282766,
    "radiation_over_matter": 0.14013526336083026,
-   "seconds": 17.91,
+   "seconds": 16.61,
    "z": 482.2030692296128
   },
   {
@@ -250,7 +250,7 @@
    "eta": 914.0,
    "per_dof": 1.0706422673466989,
    "radiation_over_matter": 0.05483053883733273,
-   "seconds": 16.61,
+   "seconds": 13.34,
    "z": 188.06222472707162
   },
   {
@@ -271,7 +271,7 @@
    "eta": 1400.0,
    "per_dof": 1.1629817712239232,
    "radiation_over_matter": 0.026828235017464862,
-   "seconds": 13.97,
+   "seconds": 13.37,
    "z": 91.50694786988117
   },
   {
@@ -292,7 +292,7 @@
    "eta": 1893.0,
    "per_dof": 1.3094786367522702,
    "radiation_over_matter": 0.015820556888588914,
-   "seconds": 13.0,
+   "seconds": 12.34,
    "z": 53.55116336995169
   },
   {
@@ -313,7 +313,7 @@
    "eta": 2500.0,
    "per_dof": 1.5173335726399848,
    "radiation_over_matter": 0.009587221057132016,
-   "seconds": 11.59,
+   "seconds": 10.1,
    "z": 32.05787943082306
   },
   {
@@ -334,7 +334,7 @@
    "eta": 3200.0,
    "per_dof": 1.7669788113047602,
    "radiation_over_matter": 0.00608793518836257,
-   "seconds": 10.88,
+   "seconds": 8.51,
    "z": 19.99192521380741
   },
   {
@@ -355,9 +355,9 @@
    "eta": 4000.0,
    "per_dof": 2.048681239108743,
    "radiation_over_matter": 0.004011774692879334,
-   "seconds": 7.6,
+   "seconds": 8.59,
    "z": 12.833076687240304
   }
  ],
- "total_seconds": 212.61
+ "total_seconds": 211.52
 }
