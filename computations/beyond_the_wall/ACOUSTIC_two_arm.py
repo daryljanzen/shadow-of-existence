@@ -319,6 +319,18 @@ Hc_of = CubicSpline(eg, ag * Hgeom(ag) / C)                       # comoving Hub
 # modes, l_1 = 220 against the validated control's 220 and the sky's 220.6.  Set STACKPERT=1 to
 # recover the pre-r3409 behaviour, which ran the perturbations on the stacking rate -- kept only so
 # the earlier results in PO13_WORKING_STATE can be reproduced. **
+# ⛭ ** BVEL=1: the baryons carry their own velocity in `evolve`, r7854 (60) on order r7851. **
+# *Declared here with the other clock and sector switches; what it does, why, and the measurement
+# that ordered it are at `evolve`'s state layout.  DEFAULT OFF: unset, this solver is
+# byte-identical, which `r7854`'s own positive control checks against a banked state rather than
+# asserting.*
+BVEL = os.environ.get('BVEL', '0') == '1'
+# ** THE BARYON INDICES ARE EXPORTED, because `BVEL` moves the state layout and a consumer that
+# computes `NV - 1` for the baryon contrast reads the baryon VELOCITY when it is on. **  *`c54.178`
+# appended `db` at the end precisely so that no index already in use moved; the same care means
+# the index must now be asked for and not derived.*
+I_DB_F = 7 + (LN - 1)
+I_TB_F = I_DB_F + 1 if BVEL else None
 LEAFPERT = os.environ.get('STACKPERT', '0') != '1'
 Hl_of  = CubicSpline(eg, ag * Hleaf(ag) / C)                       # comoving leaf Hubble, 1/Mpc
 Jac_of = CubicSpline(eg, Hgeom(ag) / Hleaf(ag))                    # d eta_leaf / d eta_grid
@@ -838,8 +850,27 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
     its sample points in advance, so it asks for them.
     """
     nk = len(kk)
-    NV = 7 + (LN - 1) + 1
-    I_DB = NV - 1
+    # ⛭⛭⛭ ** BVEL=1: THE BARYONS GET THEIR OWN VELOCITY, r7854 (60) ON ORDER r7851. **
+    # *This solver's baryon continuity was `-tg`: the PHOTON velocity, at every time, because the
+    # state carried no baryon velocity.  Before decoupling that is the tight-coupling
+    # approximation and it is right -- and this solver is used past decoupling by the lensing and
+    # growth path, where it is not.  `r7854` measured the consequence: `delta_b/delta_c` falls to
+    # `2e-4` at `k = 1`, so the Poisson source carries the COLD MATTER ALONE, the growth exponent
+    # comes out `a^0.9011` against the `a^0.9023` that fraction predicts and the `a^1` matter
+    # domination demands, and the potential -- correctly tracking that source -- decays by up to
+    # `54` per cent where it should hold flat.*
+    #   ⇒ ** The repair is the composition the CMB path already uses, brought inside one solver: **
+    #   single-fluid while `tau' > TCSW`, the baryons on their own Euler equation below it, with
+    #   `theta_b = theta_g` at the crossing so the right-hand side is continuous there.  *That is
+    #   the same threshold `eta_switch` uses to hand over to `evolve_hier`, and `evolve_hier`'s own
+    #   baryon equations are the ones adopted.*
+    # ⚠ ** DEFAULT OFF, so an unset `BVEL` leaves this solver byte-identical. **  *The state layout
+    # changes when it is on, which is the silent-failure machine `c54.178` warned about -- so
+    # `I_DB_F` is EXPORTED and consumers ask for the index instead of computing `NV - 1`.*
+    NV = 7 + (LN - 1) + 1 + (1 if BVEL else 0)
+    I_DB = 7 + (LN - 1)
+    I_TBF = I_DB + 1
+    assert I_DB == NV - 1 or BVEL, 'with BVEL off the baryon contrast must stay at the last index'
     e_end = ETA_END if e_end is None else float(e_end)
     y0 = np.zeros((nk, NV))
 
@@ -872,6 +903,11 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         y0[:, 4], y0[:, 5] = dg0, th0
         y0[:, 6] = Ph0
         y0[:, I_DB] = dc0                        # adiabatic: delta_b = delta_c = (3/4) delta_gamma
+        if BVEL:
+            # ** tightly coupled at the onset, so the baryons start on the photons' velocity. **
+            # *Not on `theta_c`: at the onset the baryons are locked to the photons and the two
+            # velocities are the same number here, but it is the PHOTON one they are locked to.*
+            y0[:, I_TBF] = th0
     else:
         # ** THE CR ARM'S HANDOVER.  Theta-hat flat in k (sec:envelope's deep sub-horizon limit),
         #    the phase common, AND THE VELOCITIES ZERO -- which is what the corpus's own text says
@@ -1016,6 +1052,7 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         dc, tc, dg, tg, dn, tn, Ph = (y[:, j] for j in range(7))
         db = y[:, I_DB]
         F = y[:, 7:I_DB]
+        tb = y[:, I_TBF] if BVEL else None
         Hc, Rb = float(Hl_of(e) if LEAFPERT else Hc_of(e)), float(Rb_of(e))
         PH2 = float(Phi2_of(e))                      # PHASEONLY clock factor (1 unless PHASEONLY)
         Ogv, Onv = float(Og_of(e)), float(On_of(e))
@@ -1055,7 +1092,18 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
         out[:, 7 + LN - 2] = kk * F[:, LN - 3] - (LN + 1) / e * F[:, LN - 2]
         # ** the baryon continuity equation, on the baryon velocity.  In this branch the baryons are
         # tightly coupled and tg IS their velocity; the hierarchy branch gives them their own. **
-        out[:, I_DB] = -tg + DRC * 3 * Php
+        # ** THE BARYON CONTINUITY IS ON THE BARYONS' OWN VELOCITY WHEN THEY HAVE ONE. **
+        out[:, I_DB] = (-tb if BVEL else -tg) + DRC * 3 * Php
+        if BVEL:
+            # ⚠ ** TWO REGIMES, AND THE SWITCH IS THE SAME `TCSW` THE CMB PATH HANDS OVER AT. **
+            # *Above it the pair is one fluid and `theta_b` is carried as a STATE THAT FOLLOWS
+            # `theta_g` exactly, which keeps the right-hand side continuous at the crossing and
+            # keeps the stiff drag term out of the integrator where `tau'` is enormous.  Below it
+            # the baryons take `evolve_hier`'s own Euler equation, drag included.*
+            if tp > TCSW:
+                out[:, I_TBF] = out[:, 3]
+            else:
+                out[:, I_TBF] = -Hc * tb + DRE * kk ** 2 * Ps + tp * (tg - tb) / Rb
         return out.ravel() * (float(Jac_of(e)) if LEAFPERT else 1.0)
 
     if y_init is not None:
