@@ -161,7 +161,7 @@ check('Ⓑ② FAILED AS REGISTERED, and the failure is the finding.  The arm reg
       and abs(at_k(1e-2) - 0.3482) < 5.5e-04
       and abs(at_k(2e-2) - 0.1298) < 5.5e-05
       and abs(at_k(1.0) - 0.0554) < 5.5e-05
-      and abs(_sh['T1'] - 98.4700) < 0.050
+      and abs(_sh['T1'] - 98.47) < 0.049
       and _sh['T1'] > 50.0,
       'worst %+.4f at k = %.5f /Mpc; the source carries %.2f per cent of the movement'
       % (_s1, SPLIT['S1_worst_k'], _sh['T1']))
@@ -177,8 +177,8 @@ check('Ⓒ③ FAILED AS REGISTERED, on both halves, and the registered expectati
       and _sh['T2'] < 50.0
       and abs(_clip[8] - 0.00165) < 5.5e-05
       and abs(_clip[8]) < 0.10
-      and abs(TERMS['chi2'][1]['per_dof'] - 1.070949) < 5.5e-04
-      and abs(TERMS['chi2'][5]['per_dof'] - 1.066836) < 5.5e-04,
+      and abs(TERMS['chi2'][1]['per_dof'] - 1.070949) < 5.3e-04
+      and abs(TERMS['chi2'][5]['per_dof'] - 1.066836) < 5.3e-04,
       'projection %.2f per cent, clip %+.5f in log at the top bandpower; projection on the '
       'reference\'s source %.6f per dof against the reference\'s own %.6f'
       % (_sh['T2'], _clip[8], TERMS['chi2'][1]['per_dof'], TERMS['chi2'][5]['per_dof']))
@@ -232,7 +232,7 @@ check('Ⓕ⑥ HOLDS, and it is reported as a BOUND and not as a reading of the i
 check('⌗ᵃ the instrument\'s super-horizon value is RIGHT, so what is wrong is the suppression\'s '
       'shape in wavenumber and not the normalisation: at the smallest mode and the landed handover '
       'the potential reads -0.901020 against the analytic -9/10',
-      abs(HIST['phi_at_k_min'] + 0.901020) < 4.6e-04
+      abs(-HIST['phi_at_k_min'] - 0.901020) < 4.5e-04
       and HIST['superhorizon_analytic'] == -0.9,
       'Phi(k -> 0) = %+.6f against %.1f' % (HIST['phi_at_k_min'], HIST['superhorizon_analytic']))
 
@@ -244,8 +244,8 @@ check('⌗ᵇ AND IT HAS NOT FROZEN.  In matter domination the potential is cons
       'pivot between two handovers and only 1.05275 at the largest scales, and still moving 4.3 per '
       'cent over the last interval, where the one term the growth equation omits is 0.4 per cent of '
       'the budget.  ** That wavenumber dependence IS the shape disagreement **',
-      abs(_fr[_k005][0] - 1.49473) < 8.0e-04
-      and abs(_fr[_k0001][0] - 1.05275) < 5.5e-04
+      abs(_fr[_k005][0] - 1.49473) < 7.4e-04
+      and abs(_fr[_k0001][0] - 1.05275) < 5.2e-04
       and abs(HIST['largest_move_over_last_interval'] - 4.308e-02) < 5.5e-06
       and HIST['largest_move_over_last_interval'] > 10.0 * 0.00401,
       'the pivot falls by %.5f and the largest scale by %.5f; the last interval still moves %.3e'
@@ -256,13 +256,15 @@ check('⌗ᶜ the SOURCE SPLITS, and the growth was already right.  The transfer
       'between 0.797 and 2.106 per cent at every mode over the whole interval.  ** Swapping only '
       'the transfer takes the nine bandpowers to the reference\'s own value; swapping only the '
       'growth leaves them where they were **',
-      abs(SPLIT['shares_per_cent']['transfer'] - 99.7961) < 0.050
+      abs(SPLIT['shares_per_cent']['transfer'] - 99.80) < 0.049
       and abs(SPLIT['shares_per_cent']['growth'] - 0.2039) < 0.0050
-      and abs(SPLIT['chi2']['X2']['per_dof'] - 1.071326) < 5.5e-04
+      and abs(SPLIT['chi2']['X2']['per_dof'] - 1.071326) < 5.3e-04
       and abs(SPLIT['chi2']['X1']['per_dof'] - 2.055264) < 1.1e-03
       and abs(SPLIT['chi2']['A']['per_dof'] - 2.048681) < 1.1e-03
       and abs(min(min(v) for v in SPLIT['S2_growth'].values()) - 0.0079680) < 5.5e-07
-      and abs(max(max(v) for v in SPLIT['S2_growth'].values()) - 0.0210625) < 5.5e-07,
+      and abs(max(max(v) for v in SPLIT['S2_growth'].values()) - 0.0210625) < 5.5e-07
+      and abs(100.0 * min(min(v) for v in SPLIT['S2_growth'].values()) - 0.797) < 3.9e-04
+      and abs(100.0 * max(max(v) for v in SPLIT['S2_growth'].values()) - 2.106) < 1.0e-03,
       'transfer only %.6f per dof, growth only %.6f, neither moved %.6f'
       % (SPLIT['chi2']['X2']['per_dof'], SPLIT['chi2']['X1']['per_dof'],
          SPLIT['chi2']['A']['per_dof']))
@@ -316,8 +318,8 @@ check('⌗ᵉ ** THE CANCELLATION, from two records that share no quantity. **  
       'deficit the later one has to cover between the same two is 2.204.  They agree to 1.36 per '
       'cent.  ⇒ So the landed handover\'s absolute normalisation is a CANCELLATION of two errors '
       'and not a correctness, and no handover makes the shape and the normalisation right at once',
-      abs(_cl['decay_in_power'] - 2.23420) < 1.2e-03
-      and abs(_cl['normalisation_deficit_ratio'] - 2.20426) < 1.2e-03
+      abs(_cl['decay_in_power'] - 2.23420) < 1.1e-03
+      and abs(_cl['normalisation_deficit_ratio'] - 2.20426) < 1.1e-03
       and abs(100.0 * _cl['relative_disagreement'] - 1.36) < 5.0e-03
       and _cl['agrees_within_5_per_cent'] is True
       and 'cancellation' in _cl['verdict'].lower()
