@@ -122,6 +122,47 @@ class PhiCarry:
         self.N_of = np.log(self.a_of)
         self.weights = (wc, wb)
 
+    # ------------------------------------------------------- the carry, cold matter and baryons
+    # ** carry_isolate MEASURED why one fluid is not enough. **  At the handover the baryons have
+    # not caught up with the cold matter at the scales that matter: `d_b/d_c` is `1.0000` at
+    # `k = 2e-4` and `0.0101` at `k = 1` at `eta = 500`, and NEGATIVE at the later handovers.  A
+    # single `d_cb` that averages a `d_c` with a `d_b` near zero starts from a state whose next
+    # move is `d_b` CATCHING UP, and a one-fluid equation does not describe that move.
+    #   ⇒ So the two clustering species are carried SEPARATELY.  They share the source and the
+    #   friction -- the source is `1.5 Om_m(a) [ (1-f_nu) d_cb + f_nu d_nu ]` with the SAME `d_cb`
+    #   for both -- so they are coupled only through it, and what is carried is the difference
+    #   between their initial states, which is the whole of the effect.
+    def _rhs2(self, N, y, k):
+        a = np.exp(N)
+        dc, dcp, db, dbp = y
+        wc, wb = self.weights
+        d_cb = wc * dc + wb * db
+        kf = GK.k_fs(a, self.m_each)
+        filt = 1.0 / (1.0 + (k / kf) ** 2) if np.isfinite(kf) else 1.0
+        src = 1.5 * GK.om_tot(a) * d_cb * ((1.0 - self.f_nu) + self.f_nu * filt)
+        fr = -(2.0 + GK._dlnh_dn(a))
+        return [dcp, fr * dcp + src, dbp, fr * dbp + src]
+
+    def ic2(self):
+        """`d_c`, `d_b` and each one's `N`-derivative at the handover, read off the instrument"""
+        dN = self.N_of[self.i_hi] - self.N_of[self.i_lo]
+        return (self.dc[self.i_h], (self.dc[self.i_hi] - self.dc[self.i_lo]) / dN,
+                self.db[self.i_h], (self.db[self.i_hi] - self.db[self.i_lo]) / dN)
+
+    def carry_to2(self, N_end):
+        """integrate both clustering species from the handover, returning `d_cb` at `N_end`"""
+        c0, cp0, b0, bp0 = self.ic2()
+        N_h = self.N_of[self.i_h]
+        wc, wb = self.weights
+        out = np.empty(len(self.kk))
+        for i, k in enumerate(self.kk):
+            s = solve_ivp(self._rhs2, (N_h, float(N_end)),
+                          [float(c0[i]), float(cp0[i]), float(b0[i]), float(bp0[i])],
+                          args=(float(k),), rtol=1e-11, atol=1e-16, method='Radau')
+            assert s.success, f'the two-species carry failed at k = {k:.4g}: {s.message}'
+            out[i] = wc * float(s.y[0, -1]) + wb * float(s.y[2, -1])
+        return out
+
     # -------------------------------------------------------------------------------- the carry
     def _rhs(self, N, y, k):
         a = np.exp(N)
@@ -164,6 +205,9 @@ class PhiCarry:
         carried = (d_j / a_j) / (d_h / a_h)
         own = self.phi[self.i_j] / self.phi[self.i_h]
         rel = carried / own - 1.0
+        d_j2 = self.carry_to2(self.N_of[self.i_j])
+        carried2 = (d_j2 / a_j) / (d_h / a_h)
+        rel2 = carried2 / own - 1.0
         rad_h = (float(A.OR) / a_h ** 4) / ((float(A.OM) - float(A.ONU)) / a_h ** 3)
         return dict(eta_h=self.eta_h, judge_at=self.judge_at, a_h=a_h, a_judge=a_j,
                     z_h=1.0 / a_h - 1.0, z_judge=1.0 / a_j - 1.0,
@@ -174,6 +218,12 @@ class PhiCarry:
                     spread=float(rel.max() - rel.min()),
                     worst_abs=float(np.max(np.abs(rel))),
                     holds=bool((rel.max() - rel.min()) < CRITERION),
+                    two_species=dict(
+                        carried=[float(v) for v in carried2],
+                        rel=[float(v) for v in rel2],
+                        spread=float(rel2.max() - rel2.min()),
+                        worst_abs=float(np.max(np.abs(rel2))),
+                        holds=bool((rel2.max() - rel2.min()) < CRITERION)),
                     weights=dict(cdm=self.weights[0], baryon=self.weights[1]),
                     delta_eta=self.delta, n_k=int(len(self.kk)))
 
@@ -195,15 +245,25 @@ def main():
                  c['worst_abs'], 'HOLDS' if c['holds'] else 'FAILS'), flush=True)
         print('     residual at k = %.1e is %+.4e; at k = %.1e is %+.4e'
               % (c['k'][0], c['rel'][0], c['k'][-1], c['rel'][-1]), flush=True)
+        t = c['two_species']
+        print('     carrying the two clustering species SEPARATELY: spread %.4e, worst %.4e -> %s'
+              % (t['spread'], t['worst_abs'], 'HOLDS' if t['holds'] else 'FAILS'), flush=True)
     best = min(rows, key=lambda r: r['spread'])
     spreads = [r['spread'] for r in rows]
+    spreads2 = [r['two_species']['spread'] for r in rows]
     out = dict(criterion=CRITERION, r7848_matter_only_spread=R7848_SPREAD,
                judge_at=JUDGE_AT, handovers=rows,
                best_handover=best['eta_h'], best_spread=best['spread'],
                spread_range=[float(min(spreads)), float(max(spreads))],
                depends_on_handover=bool(max(spreads) > 3.0 * min(spreads)),
                any_holds=bool(any(r['holds'] for r in rows)),
-               all_hold=bool(all(r['holds'] for r in rows)))
+               all_hold=bool(all(r['holds'] for r in rows)),
+               two_species=dict(
+                   spread_range=[float(min(spreads2)), float(max(spreads2))],
+                   best_handover=float(min(rows, key=lambda r: r['two_species']['spread'])['eta_h']),
+                   best_spread=float(min(spreads2)),
+                   any_holds=bool(any(r['two_species']['holds'] for r in rows)),
+                   beats_one_species=bool(min(spreads2) < min(spreads))))
     print('\n  Ⓐ①: %s -- best spread %.4e at eta = %g, against the criterion %.3f and r7848\'s '
           '%.4f' % ('HOLDS' if out['any_holds'] else 'FAILS', out['best_spread'],
                     out['best_handover'], CRITERION, R7848_SPREAD))
@@ -211,6 +271,10 @@ def main():
           'on which handover is used'
           % (min(spreads), max(spreads),
              'DEPENDS' if out['depends_on_handover'] else 'does NOT depend strongly'))
+    t = out['two_species']
+    print('  ⌗ carrying the two clustering species separately: %.4e at eta = %g, which %s the '
+          'one-species carry' % (t['best_spread'], t['best_handover'],
+                                 'BEATS' if t['beats_one_species'] else 'does NOT beat'))
     with io.open(os.path.join(_HERE, 'phi_carry.json'), 'w', encoding='utf-8') as fh:
         json.dump(out, fh, indent=1, sort_keys=True)
     print('\n  wrote phi_carry.json\n')
