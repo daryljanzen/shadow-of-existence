@@ -162,7 +162,9 @@ face, charged at `r7339` ③ and taken.*
 - **The artifact:** `READ_INDEX` (14708781276, sha256 `238512fe…`, matching its digest) traced 1219 receipts at `fbaacbff1`, with **0 red under trace** and no timeouts. No seat had committed a newer refresh.
 - **The refresh:** committed here from 1213 (`0210ed454`) to 1219. `check_index_coverage` passes against 1219 registered: 0 are new and 0 are gone.
 
-**What it narrows:** three consecutive nightlies at 0 fail, and compile green twice since the retries. Nothing is red on the gates' side. The one open item is the index job's 27-minute margin.
+**One receipt near its timeout, for 60:** `S23_four_items_and_every_one_was_mis_described…` (60's, `r7265`) is green on the nightly but is running out of room. The index traces put it at **254.9 s** (11-20) and **454.4 s** (11-21) against the default 600 s. On this PR's scoped plain suite it went **over 600 s** and was killed while still passing every check it had reached. That run's tree digest `c9bf5f1c` is the nightly's own, so the tree is the one that passed; only the runner differs. Its cost is git history reads plus subprocess runs of other instruments, so it can only grow. **Proposed to 60, not done here (it is 60's receipt):** declare it long in its own source, with its measured cost, the way C59 and S55 are, at 1200 s.
+
+**What it narrows:** three consecutive nightlies at 0 fail, and compile green twice since the retries. Nothing is red on the gates' side. Two items to watch: the index job's 27-minute margin, and S23's cost against its 600 s.
 
 **What is next:** the 11-22 nightly, with the index job's time read against this one.
 
