@@ -58,10 +58,19 @@ DELTA = float(os.environ.get('DELTA', '8.0'))
 class GrowthFromInstrument(GK.GrowthKDep):
     """`GrowthKDep` with the initial conditions read off the instrument instead of the quadrature"""
 
-    def __init__(self, mnu_ev=0.0, n_species=3, kk=None, etaref=None, delta=DELTA):
+    def __init__(self, mnu_ev=0.0, n_species=3, kk=None, etaref=None, delta=DELTA,
+                 ic_from=None):
+        """`ic_from = (d0, dd0, meta)` injects a read already taken, so one instrument solve can
+        serve both this growth and the `Phi` shape the Limber integral needs.
+
+        ** The solve's cost is set by its END TIME and not by its mode count -- five wavenumbers to
+        eta = 1000 cost 40.4 s and 220 to eta = 914 cost 40.8 s -- so taking one solve on the
+        shape's own 220-mode grid and reading the growth's initial conditions off the same arrays
+        halves the cost of a grid point from about 1334 s to 667. **
+        """
         self.etaref = ETAREF if etaref is None else float(etaref)
         self.delta = float(delta)
-        self._ic_cache = None
+        self._ic_cache = ic_from
         super().__init__(mnu_ev=mnu_ev, n_species=n_species, kk=kk,
                          a_start=float(A.a_of_eta(self.etaref)))
 
