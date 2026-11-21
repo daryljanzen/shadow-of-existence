@@ -81,6 +81,7 @@ numbers.  It does NOT rule on whether 60's Phi transport through the radiation e
 -- it says that gap is not where the missing factor 1.7 lives, not that the treatment is
 right.  It pins no cosmological parameter as a result.
 """
+import ast
 import json
 import os
 import re
@@ -128,15 +129,37 @@ check('Ⓐ① PINNED the convention is 60\'s own, read off THEIR ratio_grid3.npz
           TAB['reference']['omh2_total'], TAB['reference']['ombh2'],
           TAB['reference']['H0'], TAB['reference']['divisor']))
 
-# ------------------------------------------- 60's operator IS CAMB, read off their source
-_OP = open(os.path.join(R42, 'lensing_operator3.py'), encoding='utf-8').read()
-check('Ⓑ② PINNED 60\'s lensing operator is CAMB ITSELF -- asserted off the body of the '
-      'function that RUNS, not off its docstring: it calls camb.get_results and divides '
-      "cl['total'] by cl['unlensed_scalar'], so the operator cannot be the site of a "
-      'disagreement with CAMB',
-      'camb.get_results' in _OP
-      and re.search(r"le,\s*un\s*=\s*cl\['total'\],\s*cl\['unlensed_scalar'\]", _OP) is not None,
-      'camb.get_results present, total/unlensed_scalar pair present')
+# ------------------------------------------- 60's operator IS CAMB, read STRUCTURALLY
+# ** THIS ARM IS DELIBERATELY NOT A TEXT MATCH ON 60's SOURCE. **  Its first version asserted
+# `'camb.get_results' in _OP` and a regex on their `le, un = cl['total'], cl['unlensed_scalar']`
+# line, which minted two quote-pin keys -- and check_quote_pins was right to red them: a pin on
+# wording ANOTHER SEAT OWNS fails when that seat rewords, which is this programme's named defect
+# class and not a property anyone wants.  Renaming `le`/`un`, or splitting the call across two
+# statements, would have reddened an arm whose CLAIM was untouched.
+#   ⇒ It is read off the parsed SYNTAX instead: the module imports camb, calls get_results on it,
+#     and subscripts the result with CAMB's own two spectrum keys.  That breaks only if 60 stop
+#     forming the operator from CAMB -- which is exactly when this receipt's item ④ conclusion
+#     stops holding and the arm SHOULD be read.
+#   ⌗ And the behavioural proof is Ⓒ③, which is stronger than any reading of their source: CAMB
+#     reproduces their banked operator BIT FOR BIT. This arm records the mechanism; Ⓒ③ proves it.
+_OPT = ast.parse(open(os.path.join(R42, 'lensing_operator3.py'), encoding='utf-8').read())
+_imports_camb = any(isinstance(n, ast.Import) and any(a.name == 'camb' for a in n.names)
+                    for n in ast.walk(_OPT))
+_calls_get_results = any(
+    isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute)
+    and n.func.attr == 'get_results'
+    and isinstance(n.func.value, ast.Name) and n.func.value.id == 'camb'
+    for n in ast.walk(_OPT))
+_keys = {n.slice.value for n in ast.walk(_OPT)
+         if isinstance(n, ast.Subscript) and isinstance(n.slice, ast.Constant)
+         and isinstance(n.slice.value, str)}
+check('Ⓑ② PINNED 60\'s lensing operator is CAMB ITSELF -- read off the parsed SYNTAX of the '
+      'module that RUNS, not off its docstring and not off its wording: it imports camb, calls '
+      "camb.get_results, and subscripts the result with 'total' and 'unlensed_scalar', so the "
+      'operator cannot be the site of a disagreement with CAMB',
+      _imports_camb and _calls_get_results and {'total', 'unlensed_scalar'} <= _keys,
+      'imports camb %s, calls get_results %s, spectrum keys %s'
+      % (_imports_camb, _calls_get_results, sorted({'total', 'unlensed_scalar'} & _keys)))
 
 # ------------------------------------------- arm A: the reproduction, and the accuracy contrast
 _auto = [v for k, v in TAB['arm_a_reproduction'].items() if k.startswith('auto4_')]
