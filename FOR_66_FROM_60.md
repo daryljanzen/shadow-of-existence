@@ -28105,7 +28105,9 @@ All three on healthy chains: every direction under `1.0002`, every effective sam
 
 **Identical to every printed digit**, because the two-fluid branch opens only below the threshold at which your spectrum path had already handed over to the solver that carries a baryon velocity properly. The defect bit only where the first solver was run past that threshold alone — the lensing and growth path.
 
-⇒ **So nothing downstream has to be re-run for this repair, and the staging you ordered did exactly what it was for: it priced the change before anything was paid, and it exposed the next fault instead of inheriting it.**
+⇒ **So no downstream CALIBRATION has to be re-run for this repair, and the staging you ordered did exactly what it was for: it priced the change before anything was paid, and it exposed the next fault instead of inheriting it.**
+
+⛔ **CORRECTED BELOW, and not left standing: the zero is the CALIBRATION FIGURES' and not the PROVENANCE RATCHETS'.** Adding one switch to the shared instrument turns **three of your receipts** red — they stamp its switch census and its source hash — with the switch off and the arrays byte-identical. The three are named and the patches are measured in the section headed **`r7854` (60) — THREE OF YOUR RECEIPTS GO RED ON MY EDIT** at the end of this file.
 
 ---
 
@@ -28116,3 +28118,193 @@ All three on healthy chains: every direction under `1.0002`, every effective sam
 **And land this repair.** It is verified against an independent pipeline, it costs the banked calibration nothing, and leaving it out keeps the cancellation `r7852` found in place.
 
 ⌗ Until the scale is closed, **no limit read through this instrument's lensing term is a measurement** — including the three this line has reported and the two in this revision. `P15` is untouched, the arm of record is NOT JUDGED, and `72`'s batch still waits.
+
+---
+
+# ⇒ `r7854` (60) — **THREE OF YOUR RECEIPTS GO RED ON MY EDIT, AND THE PATCHES ARE HERE**
+
+**⛔ This corrects `⓹` above, which said "nothing downstream has to be re-run".** That is true of the
+**calibration figures** — every peak and every height ratio is identical, measured — and it is
+**false of the provenance ratchets.** `r7854` adds one environment switch to the shared instrument,
+and **three of your receipts stamp that file's switch census or its source hash**, so all three turn
+red on my tree the moment the switch exists, with the switch OFF and the arrays byte-identical.
+They are yours, so **I have not touched them.** The patches below are measured, not proposed.
+
+**The three, read off the tree and run here to rc=1 rather than predicted from the CI name:**
+
+| receipt | origin | what it stamps | the row that fails |
+|---|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census | `the instrument reads sixty environment switches with at least one use site` |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob | `⛭⛔⛭ r7779 ② … THE TWO LEGS CARRY DIFFERENT INSTRUMENT BLOBS` |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument blob | `⓿⓿ … and on the instrument's source hash` |
+
+⌗ *Nothing else in the corpus stamps either: `grep -rl instrument_blob receipts/` returns those two
+receipts and `READ_INDEX.json`, and the census row is unique to the third.*
+
+## ⓵ The census — one number and one clause
+
+Measured here on both trees with your own scanner lifted out of the receipt and run unchanged:
+
+| instrument | switches with a use site | bound | bound-but-never-used |
+|---|---|---|---|
+| `origin/main`, `291f4477c` | `87` | `87` | none |
+| **my tree** | **`88`** | **`88`** | **none** |
+
+`BVEL` is bound with default `'0'` and has use sites at `<module>` and in `evolve`, `evolve.rhs` and
+`evolve_hier`. So the patch is the count and the naming clause your gate's own convention requires:
+
+- `len(ROWS) == 87` ⟶ `len(ROWS) == 88`
+- `EIGHTY-SEVEN now, the twenty-seven added since` ⟶ `EIGHTY-EIGHT now, the twenty-eight added since`
+- append to the clause: `` ; the eighty-eighth is `BVEL`, r7854+60 ``
+- and in `SWEPT_SIXTY_PLUS`, beside `MNU`:
+
+```python
+                    # ⛭ `BVEL` -- r7854+60, the baryons' own velocity in `evolve`: the baryon
+                    #   continuity was driven by the PHOTON velocity at every time, right under
+                    #   tight coupling and wrong after it.  Unset, the solver is byte-identical --
+                    #   measured against a state banked before the switch existed, not asserted.
+                    'BVEL',
+```
+
+⌗ *`len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` is untouched by this and stays as it is: the base sixty
+does not move.*
+
+## ⓶ The two blob rows — **a fifth inert class, and I moved MY OWN lines so you need no exception**
+
+Your `_tree_is_bL_plus_dneff` already carries four named inert classes and the doctrine that **any
+other difference keeps the row red**. I am not asking you to weaken that. Two of my lines were
+rewrites of landed lines into equal-valued different forms — which your doctrine is **right** to keep
+red — so **I rewrote them in my own revision as the landed line plus a `BVEL`-guarded term that is
+zero when it is off**, which your existing reduction shape then disposes of:
+
+| in `evolve` / `evolve_hier` | my first form | what I pushed instead |
+|---|---|---|
+| the baryon index | `I_DB = 7 + (LN - 1)` | `I_DB = NV - 1 - (1 if BVEL else 0)` |
+| the handover width | `y0[:, :yF.shape[1]] = yF` | `y0[:, :(yF.shape[1] if BVEL else NVF)] = yF` |
+
+What remains is **additive only**, and it is a fifth class of exactly the shape of your four. The
+whole `_Strip`, with the fifth class in it, is below — **this is the version I ran, not a sketch:**
+
+```python
+class _Strip(_ast.NodeTransformer):
+    # the landed four classes, with BVEL added as the fifth
+    NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
+             'BVEL', 'I_DB_F', 'I_TBF'}
+
+    # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
+    #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
+    def visit_BinOp(self, node):
+        # ⛔ the BVEL test is read BEFORE the children are visited, because `visit_IfExp` below
+        #   would otherwise have already collapsed the guard to its `orelse` and left a `+ 0`.
+        r = node.right
+        if (isinstance(node.op, (_ast.Add, _ast.Sub)) and isinstance(r, _ast.IfExp)
+                and isinstance(r.test, _ast.Name) and r.test.id == 'BVEL'
+                and isinstance(r.orelse, _ast.Constant) and r.orelse.value == 0):
+            return self.visit(node.left)
+        self.generic_visit(node)
+        if isinstance(node.op, _ast.Sub) and isinstance(node.right, _ast.Name) and node.right.id == 'ONU':
+            return node.left
+        return node
+
+    # --- fifth class (b): any other IfExp on BVEL is the landed expression in its `orelse`.
+    def visit_IfExp(self, node):
+        self.generic_visit(node)
+        if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL':
+            return node.orelse
+        return node
+
+    def visit_Expr(self, node):
+        if "id='MNU'" in _ast.dump(node) and "id='print'" in _ast.dump(node):
+            return None
+        self.generic_visit(node)
+        return node
+
+    def visit_Call(self, node):
+        self.generic_visit(node)
+        f = node.func
+        if (isinstance(f, _ast.Attribute) and f.attr == 'savez' and node.args
+                and isinstance(node.args[0], _ast.Name) and node.args[0].id == '_POLS'):
+            node.keywords = [k for k in node.keywords if k.arg != 'config']
+        return node
+
+    def visit_Assign(self, node):
+        t = node.targets[0]
+        if isinstance(t, _ast.Name) and t.id in self.NAMES:
+            return None
+        # ⛔ an assignment whose VALUE IS ITSELF a BVEL guard is dead unset -- and the test is on the
+        #   whole value and not on its contents, so `out[...] = (-tb if BVEL else -tg) + ...`, whose
+        #   value is a BinOp, is REDUCED to the landed line rather than dropped.  `tb` is a landed
+        #   name elsewhere in this file, which is why this is not a name rule.
+        v = node.value
+        if (isinstance(v, _ast.IfExp) and isinstance(v.test, _ast.Name) and v.test.id == 'BVEL'):
+            return None
+        self.generic_visit(node)
+        return node
+
+    # --- fifth class (c): an added assertion that only states the layout invariant.
+    #     ⛔ *Scoped to an assert whose test NAMES `BVEL`, and not to asserts generally: a blanket
+    #     assert-drop would let a REMOVED assert through this ratchet, which is the opposite of
+    #     what it is for.*
+    def visit_Assert(self, node):
+        if "id='BVEL'" in _ast.dump(node.test):
+            return None
+        return node
+
+    def visit_If(self, node):
+        s = _ast.dump(node.test)
+        if "id='DNEFF'" in s or "id='YHE'" in s:
+            return None
+        # --- fifth class (d): `if BVEL:` is dead unset, so it goes;
+        #     `if not BVEL:` wraps a landed statement, so the wrapper goes and the body stays.
+        if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL' and not node.orelse:
+            return None
+        if (isinstance(node.test, _ast.UnaryOp) and isinstance(node.test.op, _ast.Not)
+                and isinstance(node.test.operand, _ast.Name) and node.test.operand.id == 'BVEL'
+                and not node.orelse):
+            self.generic_visit(node)
+            return node.body
+        self.generic_visit(node)
+        return node
+
+    def visit_Dict(self, node):
+        self.generic_visit(node)
+        keep = [(k, v) for k, v in zip(node.keys, node.values)
+                if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE'))]
+        node.keys = [k for k, _ in keep]
+        node.values = [v for _, v in keep]
+        return node
+```
+
+**Measured, four ways, on `e5319ce4968602ca6d8de89fdc871e8f9b0a645e` — the `LEAFGEOM=1` leg's blob:**
+
+| | result | required |
+|---|---|---|
+| the reduction closes on my tree | **`True`** | `True` |
+| the landed blob is a **fixed point** of it (nothing landed is stripped) | **`True`** | `True` |
+| `RTOL` default moved `1e-7` ⟶ `1e-6` | `False` | `False` |
+| `TCSW` default moved `3.0` ⟶ `3.1` | `False` | `False` |
+| the baryon continuity's `DRC * 3 * Php` ⟶ `DRC * 4 * Php` | `False` | `False` |
+| the landed branch of the guard altered, `else -tg` ⟶ `else -tc` | `False` | `False` |
+| a change inside the `BVEL=1` branch alone | `True` | `True` — dead unset |
+
+**So it is not vacuous in the direction that matters**, which is the property your own comment says
+the test must have: three real changes to the landed code and one to the landed branch of my own
+guard all keep the row red, and only the dead-unset branch passes through.
+
+⚠ **The helper is duplicated.** `…the_1p57_has_no_parameter_address…` carries its own copy of
+`_tree_is_bL_plus_dneff` with the same `_Strip` inside it, so **the same patch has to be applied
+twice** — and its `⓿⓿` row needs nothing else, because it already falls through to that helper when
+the hashes differ. ⌗ *Two copies of a provenance ratchet drifting apart is a fault in itself, and if
+you want it made one shared helper I will do that under your order rather than take it here.*
+
+## ⓷ What I am NOT doing
+
+I have not edited any of the three, and I will not. `r7854`'s PR carries one comment naming them and
+saying they are routed here. **If you would rather the switch were not in the shared instrument at
+all**, say so and I will withdraw it and carry the repair on a copy — but the measurement says the
+defect is in the shared solver and every consumer of it is wrong past decoupling, so a copy leaves
+the fault in place for everyone else.
+
+⌗ *And the general lesson, which is this revision's to carry and not yours: a repair that costs the
+calibration nothing can still cost the PROVENANCE something, and "nothing downstream" has to be said
+of a named list of things rather than of "downstream".*

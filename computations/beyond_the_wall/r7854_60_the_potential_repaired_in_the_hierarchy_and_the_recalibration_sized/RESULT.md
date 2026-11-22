@@ -25,7 +25,9 @@ existed.
 3. **The repair works.** The baryon contrast goes to `0.95136`, the exponent to `0.9964`, the shape
    against the reference from `+84` per cent wrong to `2.5`, and the nine bandpowers from
    `2.131339` to **`1.053393`** per dof — *below* the reference's own `1.066836`.
-4. **And the recalibration is zero.** Every peak and every height ratio of the control's spectrum is
+4. **And the recalibration is zero — of the CALIBRATION FIGURES, which is not the same as nothing
+   downstream: three of `cc66`'s provenance ratchets go red on the switch's mere existence, priced
+   at `Ⓚ` and routed.** Every peak and every height ratio of the control's spectrum is
    identical before and after, to its last printed digit.
 
 ---
@@ -149,17 +151,57 @@ spectrum path already hands over to the solver that carries a baryon velocity pr
 path the repair changes nothing it did not already do. The defect bit only where the first solver was
 run past that threshold alone — the lensing and growth path.
 
-⇒ **So the staged repair costs the banked calibration nothing, and nothing downstream has to be
-re-run for it.**
+⇒ **So the staged repair costs the banked CALIBRATION nothing.**
+
+⛔ ** AND THE ZERO IS THE CALIBRATION FIGURES' AND NOT THE PROVENANCE RATCHETS'. ** *It would have
+been easy to write "nothing downstream has to be re-run" here, and this revision did write it before
+the tree said otherwise.* **Adding one environment switch to a SHARED instrument turns three
+receipts red** — they stamp that file's switch census or its source hash — **with the switch off and
+every array byte-identical.** All three are `cc66`'s, so they are not edited here: the patches are
+measured and routed through `FOR_66_FROM_60.md`, and `Ⓚ` below reads the list off the tree rather
+than asserting it.
+
+⌗ *The general form, which is this revision's to carry: a change that costs the calibration nothing
+can still cost the PROVENANCE something, and "nothing downstream" is a claim that has to be made of
+a NAMED LIST and not of "downstream".*
 
 ⌗ A free check fell out of it: the reference's sound horizon at recombination is `144.4066` Mpc
 against this instrument's `144.53`, agreeing to eight parts in ten thousand.
 
-## Ⓗ⑧ Ⓘ⑨ — nothing downstream, and the cost
+## Ⓗ⑧ Ⓘ⑨ — nothing downstream **of the paper and the banks**, and the cost
 
 `P15` is untouched, no banked grid other than the control's repaired one is in this revision's
-range, and `72`'s batch is not started — read off the tree, not asserted. Every timing carries its
-own switches, the defect this line found in `r7848`.
+range, and `72`'s batch is not started — read off the tree, not asserted. ⛔ *That is the scope of
+Ⓗ⑧ as registered and it is exactly what it reads: paper sources and other arms' grids. It is NOT a
+statement about the provenance ratchets, which `Ⓚ` below prices separately and at non-zero.* Every
+timing carries its own switches, the defect this line found in `r7848`.
+
+## Ⓚ — **NOT A REGISTERED ARM: the provenance cost, found after the arms were adjudicated**
+
+The switch exists, so three receipts that stamp the shared instrument's **switch census** or its
+**source hash** go red — each run here to `rc=1` rather than read off a CI name:
+
+| receipt | origin | what it stamps |
+|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census, `87` ⟶ `88` |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob, two legs |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument blob, the bank's `config` |
+
+**Exactly three, and the list is measured:** `instrument_blob` appears in those two receipts and in
+`READ_INDEX.json`, and the census row is unique to the third. **All three are `cc66`'s and none is
+edited here.** Two of this revision's own lines were rewrites of landed lines into equal-valued
+different forms, which those ratchets are right to keep red; they were **rewritten as the landed
+line plus a `BVEL`-guarded term that is zero when it is off**, so the ratchets' existing reduction
+doctrine covers them and `cc66` is asked for no exception — only for a fifth inert class, routed
+with its own non-vacuity measurements in `FOR_66_FROM_60.md`.
+
+⌗ **The re-spelling was measured, not assumed, on both settings of the switch, which is what licenses
+the banked grid and the three chains being kept rather than re-run:** the state the rewritten
+instrument produces is **bitwise identical** to the one the previous form produced — worst absolute
+difference `0.000e+00` under `BVEL=0` **and** under `BVEL=1`. ⌗ *And the solve cache is now keyed by
+the instrument's own source as well as by the switch, in `repair.py` and in the file that reads its
+output, because a cache keyed by the switch alone is read across an instrument change and answers
+for the wrong file — the defect this line recorded at `r7852` in a different place.*
 
 ---
 

@@ -72,7 +72,15 @@ def main():
     loc = json.load(io.open(os.path.join(_HERE, 'locate.json'), encoding='utf-8'))
     Y, etas, kk = st['Y'], [float(v) for v in st['etas']], st['kk']
     NV = Y.shape[2]
-    dc, db = Y[:, :, 0], Y[:, :, NV - 1]
+    # ⚠ ** ASKED FOR, NOT DERIVED. **  *`locate_state.npz` is the PRE-repair bank, so `NV - 1` is in
+    # fact the baryon contrast in it -- but deriving the index is the silent-failure machine this
+    # revision's own guard names, and a bank re-made under `BVEL=1` would hand this line the baryon
+    # VELOCITY without a word.  The index is read from the instrument, and the bank's own width is
+    # asserted against it so that a WIDER bank is refused here rather than silently mis-read.*
+    assert NV == A.I_DB_F + 1, (
+        'this file reads the PRE-repair bank, whose width must be the BVEL-off one: got NV=%d '
+        'against I_DB_F=%d' % (NV, A.I_DB_F))
+    dc, db = Y[:, :, 0], Y[:, :, A.I_DB_F]
     ratio = db / dc
 
     wc = float(A.OCDM) / (float(A.OCDM) + float(A.OB))

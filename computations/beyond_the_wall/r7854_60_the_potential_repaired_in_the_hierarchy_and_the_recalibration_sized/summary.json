@@ -93,7 +93,7 @@
   }
  ],
  "downstream": {
-  "files_changed": 38,
+  "files_changed": 50,
   "no_other_grid": true,
   "other_grids_touched": [],
   "p15_sources_touched": [],
@@ -116,13 +116,13 @@
     "bvel": 0,
     "etas": 9,
     "modes": 9,
-    "seconds": 544.62
+    "seconds": 532.41
    },
    "solve_bvel1": {
     "bvel": 1,
     "etas": 9,
     "modes": 9,
-    "seconds": 553.88
+    "seconds": 548.74
    }
   }
  }

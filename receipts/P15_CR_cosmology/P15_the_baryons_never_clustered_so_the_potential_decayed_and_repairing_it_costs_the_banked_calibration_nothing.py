@@ -295,6 +295,50 @@ check('Ⓗ⑧ PASSES, read off the tree and not asserted: no P15 source is in th
       '%d file(s) in the range, none of them a paper source or another arm\'s grid'
       % SUM['downstream']['files_changed'])
 
+# Ⓚ ** NOT A REGISTERED ARM.  THE PROVENANCE COST, FOUND AFTER THE ARMS WERE ADJUDICATED. **
+#   *Ⓖ⑦ measured the recalibration at zero and Ⓗ⑧ read the paper sources and the other arms' grids
+#   off the tree.  Neither is a statement about the PROVENANCE RATCHETS, and this revision wrote
+#   "nothing downstream has to be re-run" before the tree said otherwise.  This row prices what the
+#   switch's mere EXISTENCE costs, by reading the receipts that stamp this instrument's switch
+#   census or its source hash -- and it is declared as a cost, not presented as a finding.
+#   ⌗ *The switch's own existence is NOT re-asserted here as a bare `'BVEL' in INST`: a bare
+#   presence test on a token is the vacuous form this corpus's own sweep has caught before, and the
+#   substantive fact -- that the switch is bound and DEFAULT OFF -- is already pinned at ⓪ on the
+#   sentence the instrument carries beside it.*
+_RCPTS = os.path.join(ROOT, 'receipts')
+_blobstamp, _censusstamp = [], []
+for _dp, _dn, _fn in os.walk(_RCPTS):
+    for _f in sorted(_fn):
+        if not _f.endswith('.py'):
+            continue
+        _fp = os.path.join(_dp, _f)
+        # ⛔ THIS receipt is skipped, and not by name: it carries both stamps' TEXT because it
+        #   counts them, so leaving it in would have it count itself.  *It did, on the first run of
+        #   this row -- four instead of three -- which is the vacuity trap this corpus's own sweep
+        #   keeps finding: a test that matches on text matches its own text too.*
+        if os.path.abspath(_fp) == os.path.abspath(__file__):
+            continue
+        try:
+            _t = io.open(_fp, encoding='utf-8').read()
+        except OSError:
+            continue
+        if 'instrument_blob' in _t:
+            _blobstamp.append(_f)
+        if 'environment switches with at least one use site' in _t:
+            _censusstamp.append(_f)
+_stamp = sorted(set(_blobstamp) | set(_censusstamp))
+_mine = [_f for _f in _stamp if _f.startswith('P15_the_baryons_never_clustered')]
+check('Ⓚ the provenance cost is NOT zero and is read off the tree: exactly %d receipt(s) stamp this '
+      'shared instrument\'s switch census or its source hash, so the switch\'s EXISTENCE turns them '
+      'red with it OFF and every array byte-identical.  ** None is edited here: all three are '
+      'cc66\'s and the patches are routed through FOR_66_FROM_60.md. **  ⌗ The list is MEASURED, '
+      'not named: this walks receipts/ for the two stamps rather than asserting which files carry '
+      'them, and this receipt is not among them' % len(_stamp),
+      len(_stamp) == 3 and len(_blobstamp) == 2 and len(_censusstamp) == 1 and _mine == []
+      and _stamp == sorted(_stamp)
+      and "the zero is the calibration figures' and not the provenance ratchets'" in RESULT.lower(),
+      'blob-stamping %s; census-stamping %s' % (_blobstamp, _censusstamp))
+
 # Ⓘ⑨ the cost
 _t = SUM['timings']
 check('Ⓘ⑨ PASSES: every timing in the record carries its own configuration, which is the defect '

@@ -44,7 +44,17 @@ def main():
     rep = json.load(io.open(os.path.join(_HERE, 'repair.json'), encoding='utf-8'))
     etas = rep['etas']
     KK = np.array(rep['k'], float)
-    st = np.load(os.path.join(_HERE, 'repair_state_bvel1.npz'))
+    # ⚠ ** THE REPAIRED STATE IS FOUND BY THE SAME KEY `repair.py` WROTE IT UNDER -- the switch AND
+    # the instrument's own source -- so this file cannot read a state an EARLIER instrument
+    # produced.  *A cache keyed by the switch alone was read across an instrument change once in
+    # this line's work and answered for the wrong file; the key is now in both places.*
+    import hashlib
+    with io.open(os.path.join(os.path.dirname(_HERE), 'ACOUSTIC_two_arm.py'), 'rb') as _fh:
+        _tag = hashlib.sha1(_fh.read()).hexdigest()[:10]
+    _sp = os.path.join(_HERE, 'repair_state_bvel1_%s.npz' % _tag)
+    assert os.path.exists(_sp), (
+        'no repaired state for THIS instrument (%s); run repair.py first' % _tag)
+    st = np.load(_sp)
     Ph = st['Y'][:, :, 6]
 
     a = np.array([float(A.a_of_eta(e)) for e in etas])

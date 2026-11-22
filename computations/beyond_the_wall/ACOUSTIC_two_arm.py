@@ -867,8 +867,12 @@ def evolve(kk, t_eval=None, e_end=None, y_init=None):
     # ⚠ ** DEFAULT OFF, so an unset `BVEL` leaves this solver byte-identical. **  *The state layout
     # changes when it is on, which is the silent-failure machine `c54.178` warned about -- so
     # `I_DB_F` is EXPORTED and consumers ask for the index instead of computing `NV - 1`.*
+    #   ⌗ *Both of the next two lines are written as the LANDED line plus a `BVEL`-guarded term that
+    #   is `0` when it is off, and NOT as a new arithmetic that happens to agree: the provenance
+    #   ratchets that stamp this file's AST reduce a `BVEL` guard away, and a line rewritten into an
+    #   equal-valued different form is a difference they are right to keep red.*
     NV = 7 + (LN - 1) + 1 + (1 if BVEL else 0)
-    I_DB = 7 + (LN - 1)
+    I_DB = NV - 1 - (1 if BVEL else 0)
     I_TBF = I_DB + 1
     assert I_DB == NV - 1 or BVEL, 'with BVEL off the baryon contrast must stay at the last index'
     e_end = ETA_END if e_end is None else float(e_end)
@@ -1633,10 +1637,11 @@ def evolve_hier(kk, t_eval, e_sw, yF):
     # ⚠ ** THE HANDOVER CARRIES WHATEVER `evolve` HANDS IT, r7854. **  *Under `BVEL=1` `evolve`'s
     # state is one column longer -- the baryon velocity, which sits at exactly `I_TB`, this
     # segment's own slot for it -- so the two layouts already line up and the copy takes the whole
-    # array.  Under `BVEL=0` it is `NVF` columns and this is the line as it was.*
+    # array.  Under `BVEL=0` the guard reads `NVF` and this is the landed line, unchanged in form
+    # and not merely in value, so the AST ratchets can reduce it away.*
     #   ⌗ It FAILED LOUDLY before this, with a broadcast error naming both shapes, which is the
     #   right failure for a layout change and the reason the switch defaults off.
-    y0[:, :yF.shape[1]] = yF
+    y0[:, :(yF.shape[1] if BVEL else NVF)] = yF
     tp_sw = float(taup_of(e_sw))
     # ** THE TIGHT-COUPLING VALUES, DERIVED FROM THE HIERARCHY'S OWN QUASI-STATIC LIMIT AND NOT
     # QUOTED. **  Setting the time derivatives and the k-terms to zero in the l = 2 and polarisation

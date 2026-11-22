@@ -45,9 +45,20 @@ SUBH = 0.02
 NSTILT = 0.965
 
 
+def _instrument_tag():
+    """⚠ the cache is keyed by the INSTRUMENT'S OWN SOURCE as well as the switch, because a cache
+    keyed by the switch alone is read by a LATER instrument and silently answers for the earlier
+    one.  *That is the defect this line recorded at `r7852` -- a solve keyed in one place and not
+    the other is not keyed -- and the fix belongs here rather than in a note.*"""
+    import hashlib
+    with io.open(os.path.join(_BTW, 'ACOUSTIC_two_arm.py'), 'rb') as fh:
+        return hashlib.sha1(fh.read()).hexdigest()[:10]
+
+
 def solve(bvel):
-    """one solve at the banked configuration, with `BVEL` as given -- cached by that flag"""
-    cache = os.path.join(_HERE, 'repair_state_bvel%d.npz' % int(bvel))
+    """one solve at the banked configuration, with `BVEL` as given -- cached by that flag AND by
+    the instrument's own source, so a changed instrument cannot read an earlier instrument's state"""
+    cache = os.path.join(_HERE, 'repair_state_bvel%d_%s.npz' % (int(bvel), _instrument_tag()))
     if os.path.exists(cache):
         z = np.load(cache)
         return z['Y'], int(z['NV']), int(z['I_DB']), None
