@@ -1,0 +1,38 @@
+{
+ "what": "the state layout on both sides of 60's BVEL repair, measured on a 2-mode probe",
+ "bvel0": {
+  "NV": 19,
+  "I_DB": 18,
+  "A_BVEL": false,
+  "slot6_super_horizon": -0.90102
+ },
+ "bvel1": {
+  "NV": 20,
+  "I_DB": 18,
+  "A_BVEL": true,
+  "slot6_super_horizon": -0.901021
+ },
+ "band_D_adjudication": {
+  "NV_strictly_larger": {
+   "registered": true,
+   "measured": "19 -> 20",
+   "verdict": "HOLDS"
+  },
+  "I_DB_moves": {
+   "registered": true,
+   "measured": "18 -> 18, unchanged",
+   "verdict": "REFUTED -- the added baryon-velocity slot is APPENDED at index 19, it does not displace the baryon-density slot"
+  },
+  "slot6_is_still_Phi": {
+   "registered": "verified by Phi(k->0) near -0.9, NOT assumed from the index",
+   "measured": "-0.901020 (BVEL=0) and -0.901021 (BVEL=1)",
+   "verdict": "HOLDS, and by the stated method rather than by the index"
+  }
+ },
+ "cross_check": {
+  "note": "the 2-mode BVEL=0 probe reproduces r7851's 220-mode bank at the super-horizon end",
+  "probe_bvel0": -0.90102,
+  "r7851_bank": -0.9010197896956718
+ },
+ "bears_on": "item \u2462 -- phi_shape reads slot 6 with a hardcoded index, and this is what licenses reading it under BVEL=1; the licence is the -0.9 check, not the index"
+}
