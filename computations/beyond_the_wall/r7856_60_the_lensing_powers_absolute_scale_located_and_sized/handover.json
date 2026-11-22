@@ -1,0 +1,31 @@
+{
+ "As": 2.1e-09,
+ "T_CMB_UK": 2725500.0,
+ "cancellation": {
+  "bank_shape_is_landed_to_factor": 1.0307113742376601,
+  "chi2": {
+   "the LANDED shape at the derived amplitude": 340.84003086285173,
+   "the LANDED shape at the handed-over amplitude": 30.23718196100384,
+   "the REPAIRED shape at the derived amplitude": 8.429737336529639,
+   "the REPAIRED shape at the handed-over amplitude": 1551.731242264697
+  },
+  "chi2_reference": 8.817347545463614,
+  "handover_over_derived": 1.9828778028014078,
+  "landed_over_derived": 0.5329754028167066
+ },
+ "k_pivot": 0.05,
+ "ns": 0.965,
+ "readings": {
+  "A1d_passes": true,
+  "criterion": 0.1,
+  "derived": 8.404284135218513e-10,
+  "derived_r_wanted": 1.0294024380275877,
+  "handed_over": 1.6664668460160816e-09,
+  "handed_over_r_derived": 1.9828778028014078,
+  "handed_over_r_wanted": 2.041179244514556,
+  "raw_amp_cmb_uk2": 11111.82125136469,
+  "tau": 0.054,
+  "wanted_landed": 1.5768615382253947e-09,
+  "wanted_repaired": 8.164235700977891e-10
+ }
+}

@@ -50,6 +50,10 @@ NKP = int(os.environ.get('NKP', '220'))
 KMIN = float(os.environ.get('KMIN', '2e-4'))
 KMAX = float(os.environ.get('KMAX', '1.0'))
 NS = float(os.environ.get('NS', '0.965'))
+# ⛭ `PRIMNORM` -- r7856+60, the primordial normalisation of the lensing path.  Default OFF.
+PRIMNORM = os.environ.get('PRIMNORM', '0') == '1'
+PRIM_AS = float(os.environ.get('PRIM_AS', '2.1e-9'))        # the same A_s the reference states
+PRIM_KPIVOT = float(os.environ.get('PRIM_KPIVOT', '0.05'))  # /Mpc, the pivot A_s is defined at
 
 
 def bandpowers():
@@ -80,7 +84,27 @@ def clpp(ls, mnu_ev, etaref=None, growth=None):
     etaref = float(os.environ.get('ETAREF', '4000')) if etaref is None else float(etaref)
     a_ref = float(A.a_of_eta(etaref))
     kk, Phi = phi_shape(etaref)
+    # ⛭⛭ ** PRIMNORM=1: THE PRIMORDIAL NORMALISATION THIS PATH NEVER HAD, r7856 (60) ON ORDER
+    # r7853. **  *The line below carries the tilt WITHOUT A PIVOT and no amplitude at all, so
+    # `clpp` has always returned a SHAPE whose absolute scale is whatever a fit gives it -- which
+    # is what the header of this file says in words ("AMP is the one thing not set here") and what
+    # `r7856` measured: the CMB side's fitted factor came out `1.11e+04` against the lensing
+    # side's `8.16e-10`, so the two were never put on one `AMP`.*
+    #   ⇒ ** The missing factor is derived from THIS instrument's own seed and not from a
+    #   textbook: ** the control arm seeds `Ph0 = -1` with `dg0 = -2 Ph0` and `dc0 = 0.75 dg0`,
+    #   the radiation-domination adiabatic growing mode, where `|Phi| = (2/3)|zeta|`.  So
+    #   `D2_Phi,prim = (4/9) A_s (k/k_p)^(ns-1)` against this line's `k^(ns-1)`, and
+    #
+    #       AMP = (4/9) * A_s * k_p ** (1 - ns)
+    #
+    #   ⌗ *Checked, not trusted: at `PRIMNORM=1` the instrument's absolute potential power agrees
+    #   with the reference's own absolutely-normalised Weyl power to `0.13` per cent on the
+    #   SUPER-HORIZON modes, with nothing fitted on either side.*
+    # ⚠ ** DEFAULT OFF, so an unset `PRIMNORM` leaves every banked grid byte-identical **, and
+    # `r7856`'s own control checks that against the banked vectors rather than asserting it.
     D2ref = (kk ** (NS - 1)) * Phi ** 2
+    if PRIMNORM:
+        D2ref = D2ref * ((4.0 / 9.0) * PRIM_AS * PRIM_KPIVOT ** (1.0 - NS))
     lnP = CubicSpline(np.log(kk), np.log(np.maximum(D2ref, 1e-300)))
     g = GK.GrowthKDep(mnu_ev, kk=np.logspace(np.log10(KMIN), np.log10(KMAX), 48),
                       a_start=a_ref) if growth is None else growth
