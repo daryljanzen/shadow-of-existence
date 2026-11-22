@@ -78,7 +78,7 @@ def main():
         print('    %.1f s, cached' % t_solve, flush=True)
 
     NV = Y.shape[2]
-    I_DB = NV - 1
+    I_DB = A.I_DB_F
     dc, dg, dn, Ph, db = (Y[:, :, 0], Y[:, :, 2], Y[:, :, 4], Y[:, :, 6], Y[:, :, I_DB])
 
     a = np.array([float(A.a_of_eta(e)) for e in etas])
