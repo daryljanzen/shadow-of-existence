@@ -77,8 +77,12 @@ COMPUTES: nothing of the physics another seat owns.  It re-reads THIS revision's
           points and the two cold re-runs -- and recomputes from them: each arm's minimum, 95 per
           cent limit by the first Delta chi^2 > 2.71 crossing ABOVE the minimum, the parabolic
           vertices, the ruler spread, the loosening against r7849 and the factors against the
-          published figure.  It reads 60's modules only STRUCTURALLY, through the parsed syntax
-          tree, never by matching their wording.
+          published figure, plus r7849's own banked points re-read to recompute ITS limits.
+          ⌗ It parses NO other seat's source at all: an earlier arm asserted 60's model6.chi2 was
+          present, which minted a quote-pin key for a module THIS REFERENCE DOES NOT USE -- it
+          scores through distances, score_ttteee and lensing_like and never calls model6 -- so the
+          arm was replaced by a consistency check between this revision's own two records rather
+          than adjudicated.
 
 Bound: this receipt pins THIS revision's figures.  It does NOT re-run 60's control, does not rule
 on whether the repaired transfer's slight EXCESS matters, and does NOT reproduce the published
@@ -87,7 +91,6 @@ rather than worked around.  The vertex is an EXTRAPOLATED parabolic vertex and N
 which is a posterior mean over a chain whose lower bound is negative; CAMB has no negative-sum
 construction and none was invented.  It pins no cosmological parameter as a result.
 """
-import ast
 import glob
 import json
 import os
@@ -111,7 +114,6 @@ ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 BTW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
 MINE = os.path.join(BTW, 'r7853_cc66_the_repaired_transfer_and_the_like_for_like_reference')
 R51 = os.path.join(BTW, 'r7851_cc66_an_independent_weyl_potential_check_against_camb')
-R46 = os.path.join(BTW, 'r7846_60_the_scale_dependent_growth_and_the_banked_lensing_bandpowers')
 
 with open(os.path.join(MINE, 'transfer_repaired_vs_camb.json'), encoding='utf-8') as fh:
     T = json.load(fh)
@@ -163,10 +165,12 @@ check('Ⓐ② and FIVE parameters are free, which is what makes it like-for-like
       ROWS['rd_camb'][0]['free'] == ['H0', 'Om', 'ombh2', 'ns', 'tau'],
       'free = %s' % ','.join(ROWS['rd_camb'][0]['free']))
 
-_M6 = ast.parse(open(os.path.join(R46, 'model6.py'), encoding='utf-8').read())
-_names = {n.name for n in ast.walk(_M6) if isinstance(n, ast.FunctionDef)}
-check('Ⓐ③ 60\'s scoring entry point still exists, read off their parsed syntax tree not their wording',
-      'chi2' in _names, 'model6 defines %d functions' % len(_names))
+check('Ⓐ③ and this revision\'s TWO OWN records agree about the state they read -- the transfer '
+      'comparison\'s state block against the layout probe, so neither was written from the other',
+      T['state']['NV'] == L['bvel1']['NV'] and T['state']['I_DB'] == L['bvel1']['I_DB']
+      and T['state']['slot_read'] == 6,
+      'NV %d, I_DB %d, slot %d in both' % (T['state']['NV'], T['state']['I_DB'],
+                                           T['state']['slot_read']))
 
 # ------------------------------------------------ Ⓑ the state layout, and Ⓓ's refutation recorded
 check('Ⓑ④ the state WIDENS across the repair, NV 19 to 20, so the layout did move',
