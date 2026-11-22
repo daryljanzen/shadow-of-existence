@@ -1,0 +1,34 @@
+{
+ "D4_blocked": true,
+ "amp": 8.404284135218513e-10,
+ "blocks": [
+  {
+   "as_constant": 1.9954550466171617,
+   "block": "TT",
+   "over_l_l_plus_1": 2.7094637941517318e-06,
+   "spread_as_constant": 0.05992778639867602,
+   "spread_over_l_l_plus_1": 72.62913645357506,
+   "usable": 238
+  },
+  {
+   "as_constant": 2.0164727634272657,
+   "block": "EE",
+   "over_l_l_plus_1": 2.7380020179665238e-06,
+   "spread_as_constant": 0.18366177498835112,
+   "spread_over_l_l_plus_1": 72.9027765081995,
+   "usable": 238
+  },
+  {
+   "as_constant": 1.9398723246220828,
+   "block": "TE",
+   "over_l_l_plus_1": 2.633992601211868e-06,
+   "spread_as_constant": 13.641823484932479,
+   "spread_over_l_l_plus_1": 75.27310258451021,
+   "usable": 238
+  }
+ ],
+ "central_factors_agree_within_5pc": true,
+ "ns": 0.965,
+ "own_read_refuted": true,
+ "reason": "the three central factors are all about two and agree with TT to a few per cent, so the l(l+1) reading this file predicted is REFUTED; but EE is established only to 18 per cent and TE is unusable at its zero crossings, so the same constant is not established for all three to the precision one shared amplitude needs"
+}
