@@ -1630,7 +1630,13 @@ def evolve_hier(kk, t_eval, e_sw, yF):
     """segment 2: the photon hierarchy with polarisation, from the fluid state at the switch"""
     nk = len(kk)
     y0 = np.zeros((nk, NVH))
-    y0[:, :NVF] = yF
+    # ⚠ ** THE HANDOVER CARRIES WHATEVER `evolve` HANDS IT, r7854. **  *Under `BVEL=1` `evolve`'s
+    # state is one column longer -- the baryon velocity, which sits at exactly `I_TB`, this
+    # segment's own slot for it -- so the two layouts already line up and the copy takes the whole
+    # array.  Under `BVEL=0` it is `NVF` columns and this is the line as it was.*
+    #   ⌗ It FAILED LOUDLY before this, with a broadcast error naming both shapes, which is the
+    #   right failure for a layout change and the reason the switch defaults off.
+    y0[:, :yF.shape[1]] = yF
     tp_sw = float(taup_of(e_sw))
     # ** THE TIGHT-COUPLING VALUES, DERIVED FROM THE HIERARCHY'S OWN QUASI-STATIC LIMIT AND NOT
     # QUOTED. **  Setting the time derivatives and the k-terms to zero in the l = 2 and polarisation
@@ -1639,7 +1645,10 @@ def evolve_hier(kk, t_eval, e_sw, yF):
     # *That is sigma_gamma = (16/45)theta/tau', which is the VISC this file has always carried --
     # and 16/45 over the unpolarised 8/27 is 6/5, the same ratio c54.177 measured.*
     F2 = (32.0 / 45.0) * yF[:, 3] / tp_sw
-    y0[:, I_TB] = yF[:, 3]
+    if not BVEL:
+        # the baryons were slaved to the photons up to here, so they start on the photons' velocity
+        y0[:, I_TB] = yF[:, 3]
+    # ** under BVEL they already carry their own, continuous across the handover rather than reset **
     y0[:, I_FG] = F2
     y0[:, I_GG] = 1.25 * F2
     y0[:, I_GG + 2] = 0.25 * F2
