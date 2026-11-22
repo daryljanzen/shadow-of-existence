@@ -1,0 +1,203 @@
+{
+ "A1": {
+  "L_av": [
+   28.07,
+   63.57,
+   106.31,
+   150.55,
+   195.27,
+   240.4,
+   285.88,
+   331.45,
+   377.28
+  ],
+  "criterion": 0.1,
+  "landed_rbar": 611065216.1119956,
+  "landed_worst": 0.33195461570345164,
+  "passes": true,
+  "ratio_landed": [
+   813911135.0961996,
+   681623082.4013872,
+   615802345.0523543,
+   591868846.1647831,
+   579204104.1981282,
+   568674876.5786098,
+   558074927.4963186,
+   547262570.5606912,
+   543165057.4594889
+  ],
+  "ratio_repaired": [
+   1229231850.8208683,
+   1241064119.0128376,
+   1234415167.7027829,
+   1225955129.032322,
+   1218495275.1375325,
+   1212501257.062825,
+   1205429890.2703717,
+   1198561692.3587377,
+   1200199798.1451042
+  ],
+  "repaired_rbar": 1218428242.1714869,
+  "repaired_worst": 0.018577931845218165
+ },
+ "A1b": {
+  "inverse_fitted_factor": 1224854397.4302733,
+  "passes_as_registered": true,
+  "rbar": 1218428242.1714869,
+  "rbar_times_fitted_factor": 0.9947535353816189,
+  "vacuous_in_the_direction_aimed": true
+ },
+ "A1c": {
+  "as_coded": {
+   "fitted_factor_before_over_after": 1.9314257892340398,
+   "moved_away": true,
+   "rbar_after_over_before": 1.9939414158180038,
+   "registered_expectation_held": true
+  },
+  "revisited": {
+   "after": 1.0294024380275877,
+   "before": 0.5329754028167066,
+   "moved_toward": true,
+   "registered_expectation_refuted": true
+  }
+ },
+ "A1d": {
+  "A1d_passes": true,
+  "criterion": 0.1,
+  "derived": 8.404284135218513e-10,
+  "derived_r_wanted": 1.0294024380275877,
+  "handed_over": 1.6664668460160816e-09,
+  "handed_over_r_derived": 1.9828778028014078,
+  "handed_over_r_wanted": 2.041179244514556,
+  "raw_amp_cmb_uk2": 11111.82125136469,
+  "tau": 0.054,
+  "wanted_landed": 1.5768615382253947e-09,
+  "wanted_repaired": 8.164235700977891e-10
+ },
+ "A1d_pre": {
+  "as_measured": {
+   "A_cmb": 11111.82125136469,
+   "A_lens_landed": 1.5768615382253947e-09,
+   "A_lens_repaired": 8.164235700977891e-10,
+   "chi2_cmb_amplitude_fitted": 584.4130250383815,
+   "chi2_cmb_amplitude_one": 410502.89754783857,
+   "d_abs_max": 1.6980448186295,
+   "d_abs_min": 9.804293166132582e-07,
+   "holds": false,
+   "m_abs_max": 0.00014560631494431138,
+   "m_abs_min": 2.5772206339032336e-11,
+   "n_cmb_bins": 555
+  },
+  "withdrawal": "the arm omitted the T_CMB^2 conversion model6.pp_model itself applies, so its conclusion that the two sides were never put on one AMP is withdrawn; handover.py carries the correction",
+  "withdrawn": true
+ },
+ "B2a": {
+  "attribution_refuted": true,
+  "confound": {
+   "residual_at_last_eta": 0.05211311107736982,
+   "residual_exceeds_confound": true,
+   "worst_phi_minus_psi_over_phi": 0.000532458846038931
+  },
+  "holds": true,
+  "rad_first": 0.14013526336083026,
+  "rad_last": 0.004011774692879334,
+  "share_at_most": 0.0807280816157242,
+  "trend_first": 1.0349800287377362,
+  "trend_last": 1.0521131110773698
+ },
+ "B2b": {
+  "derivation": {
+   "As": 2.1e-09,
+   "amp": 8.404284135218513e-10,
+   "k_pivot": 0.05,
+   "ns": 0.965,
+   "pivot_factor": 0.9004590144876978,
+   "zeta_to_phi": 0.4444444444444444
+  },
+  "holds": true,
+  "mean_ratio_landed": 0.5000602490090995,
+  "mean_ratio_repaired": 1.0517099965850651,
+  "share": 0.9192719183842758,
+  "superhorizon_check": 1.001348052467496
+ },
+ "B2c": {
+  "note": "share_normalisation was formed as 1 - share_radiation_era, so the pair summing to one is an identity and not a measurement; the content is the two shares, each measured, with nothing left unaccounted",
+  "pair": 1.0,
+  "passes": true,
+  "vacuous_by_construction": true
+ },
+ "C3": {
+  "chi2_landed_nothing_fitted": 365.40528723360165,
+  "chi2_reference_nothing_fitted": 8.817347545463614,
+  "chi2_repaired_nothing_fitted": 9.815332567543178,
+  "criterion_chi2_fraction": 0.2,
+  "criterion_ratio": 0.1,
+  "fraction_of_reference": 1.1131842673699544,
+  "passes": false,
+  "per_dof_repaired": 1.0905925075047975,
+  "ratio": [
+   0.969790701610093,
+   0.994061015547407,
+   1.0113166784978955,
+   1.096828827513944,
+   1.1383106788606154,
+   1.1508781543244915,
+   0.9265372413950281,
+   0.8471551048831498,
+   1.1157619534471825
+  ],
+  "worst_ratio_minus_one": 0.15284489511685018
+ },
+ "C3b": {
+  "chi2_one_amplitude": 8.427147672318856,
+  "factor_distance_from_one": 0.028562627152821762,
+  "fitted_factor": 0.9714373728471782
+ },
+ "D4": {
+  "answered": false,
+  "reason": "the remaining repair is in the SHARED CMB bank, which every CMB score in the corpus reads, so it is not \"re-run the control only\"; it is routed as the fork this revision registered, and no limit is reported on a configuration this revision reports as wrong by a factor two",
+  "routed": true
+ },
+ "D4a": {
+  "bank_is_right": false,
+  "bank_low_by_about_two": true,
+  "camb_version": "2.0.4",
+  "carrier_named": true,
+  "geometric_mean": 0.5046723825222991,
+  "handover_over_derived": 1.9828778028014078,
+  "lensed": "total",
+  "n_bins": 185,
+  "ratio_max": 0.5105567400763168,
+  "ratio_min": 0.5000154272768705
+ },
+ "E5": {
+  "arm_of_record_judged": false,
+  "batch_72_waiting": true,
+  "nothing_concluded_about_the_neutrino_mass": true,
+  "p15_touched": false
+ },
+ "O0": {
+  "holds": true,
+  "landed_amp": 1.5768615382253947e-09,
+  "landed_per_dof": 2.1313389647028673,
+  "repaired_amp": 8.164235700977891e-10,
+  "repaired_per_dof": 1.0533934590398568
+ },
+ "O0b": {
+  "holds": true,
+  "set": "True",
+  "unset": "False"
+ },
+ "cancellation": {
+  "bank_shape_is_landed_to_factor": 1.0307113742376601,
+  "chi2": {
+   "the LANDED shape at the derived amplitude": 340.84003086285173,
+   "the LANDED shape at the handed-over amplitude": 30.23718196100384,
+   "the REPAIRED shape at the derived amplitude": 8.429737336529639,
+   "the REPAIRED shape at the handed-over amplitude": 1551.731242264697
+  },
+  "chi2_reference": 8.817347545463614,
+  "handover_over_derived": 1.9828778028014078,
+  "landed_over_derived": 0.5329754028167066
+ }
+}

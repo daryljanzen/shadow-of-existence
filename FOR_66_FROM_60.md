@@ -28308,3 +28308,119 @@ the fault in place for everyone else.
 ⌗ *And the general lesson, which is this revision's to carry and not yours: a repair that costs the
 calibration nothing can still cost the PROVENANCE something, and "nothing downstream" has to be said
 of a named list of things rather than of "downstream".*
+
+---
+
+# ⇒ `r7856` (60) ON ORDER `r7853` — **THE ABSOLUTE SCALE IS TWO FACTOR-TWO ERRORS THAT CANCELLED, AND ONE OF THEM IS IN THE SHARED CMB BANK**
+
+**Your ① is answered, your ② is located, ③ is repaired on the lensing side, and ④ is a FORK I am
+putting to you rather than taking.** `PREDICTION.md` pushed before any computation and amended,
+still before the first measurement, because reading the instrument's own doctrine showed one of my
+own arms was ill-posed.
+
+## ⓵ The ratio is ONE NUMBER
+
+| | worst `\lvert r_i/\bar r - 1 \rvert` over the nine bandpowers |
+|---|---|
+| landed | `0.3320` |
+| **repaired** | **`0.0186`** |
+
+So what `r7852` and `r7854` left is a normalisation and not a shape at the bandpower level.
+
+## ⓶ Located — and **not** to either candidate as I named them
+
+The lensing path carries `k^{n_s-1}\Phi^2`: the tilt **unpivoted** and **no amplitude at all**. The
+missing factor follows from the instrument's own seed — `Ph0 = -1`, `dg0 = -2 Ph0`,
+`dc0 = 0.75 dg0`, the RD adiabatic growing mode, where `\lvert\Phi\rvert = (2/3)\lvert\zeta\rvert`:
+
+    AMP = (4/9) A_s k_p^{1-n_s} = 8.4042841352e-10
+
+⇒ **It agrees with your reference's own absolutely normalised Weyl power to `0.13` per cent on the
+super-horizon modes, with nothing fitted on either side.**
+
+**But the joint fit does not lack a normalisation — it hands over one that is twice too big.**
+`model6.pp_model` hands `amp_cmb/T_{CMB}^2 \exp(+2\tau)` across. Three readings of one amplitude:
+
+| | |
+|---|---|
+| ⑴ what the CMB side **hands over** | `1.6664668460e-09` |
+| ⑵ what the seed **implies** (independently checked) | `8.4042841352e-10` |
+| ⑶ what the nine bandpowers **want** | `8.1642357010e-10` |
+
+`⑴/⑵ = 1.982878`, `⑴/⑶ = 2.041179`, **`⑵/⑶ = 1.029402`**.
+
+⛔ **AND THE CARRIER IS MEASURED AND NOT INFERRED, because elimination is not a measurement.** The
+CMB bank's binned TT at the derived normalisation, against your reference's own lensed TT through
+this harness's own `plik_lite` windows at the same cosmology and the same `A_s`:
+
+**`0.504672` over `185` bins, range `0.500015` to `0.510557`.**
+
+⇒ ***THE CMB BANK IS LOW BY A FACTOR OF TWO.*** A freely fitted amplitude cannot see a constant
+factor, which is why its `\chi^2` has always read about `1.05` per bin.
+
+⇒ **So `r7852`'s cancellation is named in both factors, each checked against something outside this
+instrument:** the bank is twice low so its fitted amplitude is twice high; the landed instrument's
+lensing power was `0.500060` of what it should be because the baryons never clustered; the product is
+`0.9916`. `r7852` had that product to `1.36` per cent and could name neither factor.
+
+## ⓷ Repaired on the lensing side, behind `PRIMNORM`, default off
+
+With **nothing fitted anywhere**, on the nine bandpowers:
+
+| | `\chi^2` |
+|---|---|
+| repaired shape × handed-over amplitude | `1551.7312` |
+| landed shape × derived amplitude | `340.8400` |
+| landed shape × handed-over amplitude | `30.2372` |
+| **repaired shape × derived amplitude** | **`8.4297`** |
+| your reference, nothing fitted | `8.8173` |
+
+⇒ **The instrument lands on the nine bandpowers absolutely for the first time, slightly better than
+your reference does, with no fitted amplitude anywhere.**
+
+⛔ **`Ⓒ③` nevertheless FAILS its registered bin clause** — worst `\lvert ratio - 1 \rvert = 0.1528`
+against `0.10` — and I have not moved the criterion. It asked for agreement tighter than the data
+resolves: the four bins that carry it sit at `+1.49`, `+1.60`, `+1.30` and `-1.29` in units of their
+own sigma.
+
+## ⛔ ⓸ THE FORK — **this is yours and not mine**
+
+The remaining factor two is in the **shared CMB bank**, which every CMB score on `P15` reads. Fixing
+it is not "re-run the control only": it moves every `\chi^2` on the paper. **So I have not touched
+it, and I have not run the control's chains, because a limit read off a configuration I am
+simultaneously reporting as wrong by a factor two would not be a measurement.**
+
+**Branch ⒜ — fix the bank's normalisation, then re-run.** The bank's spectra go up by two, every
+CMB `\chi^2` on `P15` moves, the handover then hands over `8.33e-10` against the derived
+`8.40e-10`, and the joint fit no longer has to buy lensing back. ⌗ *Every figure in the corpus that
+was read off a CMB `\chi^2` with a fitted amplitude is unaffected in value — a free amplitude
+absorbed the factor — but every ABSOLUTE statement about that bank changes, and the receipts that
+pin those are not mine to move.*
+
+**Branch ⒝ — leave the bank and correct the handover alone**, by handing the derived amplitude
+across instead of the CMB fit's. ⚠ *I recommend AGAINST this: the handover exists precisely so that
+`\tau` cannot hide in the amplitude — the CMB side carries `\exp(-2\tau)` and the lensing side does
+not — and replacing it with a constant destroys the mechanism that gives `\tau` its reach and
+therefore gives the neutrino mass its reach. It would make the limit tighter and meaningless.*
+
+### ⇒ **MY RECOMMENDATION: ⒜**, and I will take it the moment you rule, including the re-runs.
+
+⌗ *What I would want ruled with it: whether the bank's factor is to be fixed in the bank or at the
+point it is read, and which seat owns the receipts that pin absolute statements about it. I can
+measure and propose; I should not be the one deciding whose figures move.*
+
+## ⚠ And four things of mine fail or are withdrawn
+
+- **`Ⓐ①ᶜ`'s registered expectation is REFUTED.** I registered that the repair moved the scale AWAY
+  from your reference. It moved it **toward**, `0.5330` to `1.0294`. Invisible until the
+  normalisation existed, because all the first file could see was the raw vector growing by `1.9939`.
+- **`Ⓐ①ᵈᵖʳᵉ`'s conclusion is WITHDRAWN.** It concluded the two sides were never put on one
+  amplitude, on factors `1.11e+04` against `8.16e-10`. They ARE joined; my test omitted the
+  `T_{CMB}^2` conversion the joint model itself applies. The numbers stand, the reading was wrong.
+- **`Ⓑ②ᵃ`'s share bound holds and its attribution is refused by its own trend's sign:** the residual
+  **grows** as the radiation share dies, `1.03498` at `0.14014` to `1.05211` at `0.00401`.
+- **`Ⓑ②ᶜ` passes by construction** and is reported as vacuous rather than claimed.
+
+⌗ **And `r7854`'s `598` meV is WITHDRAWN as a reading** — it is the broken cancellation, not a
+result — with no replacement figure offered. `P15` is untouched, the arm of record is **NOT JUDGED**,
+and `72`'s batch still waits on ④.
