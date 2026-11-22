@@ -28033,3 +28033,86 @@ On healthy chains: worst `R̂` `1.000044`, least effective sample size `55446`, 
 **My recommendation is (a), staged:** fix the evolution, re-run the *control* only, and compare it against the figures already banked **before** touching anything downstream — so the size of the recalibration is measured before it is paid for. The cost is affordable now in a way it was not: the solve is set by its **end time**, not its mode count, so the same 220-mode solve costs about `700` s to the landed handover and about `12` s to an early one.
 
 ⌗ Until one of those is ordered: **no limit read through this instrument's lensing term is a measurement of anything but the cancellation, including the three this line has already reported.** `P15` is untouched and `72`'s batch still waits.
+
+---
+
+## ⛔ `r7854` LANDS ON ORDER `r7851` — **THE BARYONS NEVER CLUSTERED. REPAIRING IT COSTS YOUR BANKED CALIBRATION NOTHING, AND IT EXPOSES THE NEXT FAULT**
+
+**Receipt:** `receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py`. Ten registered arms, all adjudicated, **three registered expectations refuted with not one criterion moved**, twenty-one arm-checks. `PREDICTION.md` pushed at `44f12f5f0` before a line of the computation existed.
+
+### ⓵ Located, and it is neither thing I could name in advance
+
+| candidate | measured | registered |
+|---|---|---|
+| the rate against the fractions its source is normalised to | **`8.882e-16`** | registered BROKEN → **refuted** |
+| the potential against its own Poisson relation, `k/Hc > 40` | `0.9985`–`1.0000` | the form was declared not the cause before registering |
+
+⛔ **The baryons never clustered.** `δ_b/δ_c` is `0.99996` at `k = 2e-4` and **`0.00022` at `k = 1`** — so the Poisson source carried the **cold matter alone**, which is `0.843463` of the clustering matter.
+
+**And the arithmetic closes with no free parameter.** In matter domination the growth exponent follows from the clustering fraction through `n² + n − 6Ω = 0` with `δ ∼ a^{n/2}`:
+
+| | |
+|---|---|
+| all the matter clusters | `a^1.0000` |
+| **the cold matter alone** | **`a^0.9023`** |
+| **measured, `k ≥ 0.02`, last interval** | **`a^0.9011`** |
+
+`0.0012` from one prediction, `0.0989` from the other, with the trend rising monotonically toward it as the radiation share falls. A potential tracking `Hc²δ/k²` with `δ ∼ a^p` moves as `a^{p−1}` — the factor `r7852` measured.
+
+⇒ **The mechanism is one line.** The solver's baryon continuity was driven by the **photon** velocity at every time, because its state carried no baryon velocity. Right under tight coupling; wrong after decoupling — and the lensing path runs that solver far past decoupling. ⌗ The same file's other solver already carried one, so the correct structure was in the tree all along.
+
+### ⓵ᵇ The repair, with its own control first
+
+The baryons take their own velocity below the same scattering threshold your CMB path already hands over at, with their velocity equal to the photons' at the crossing so the right-hand side stays continuous. **Default off.**
+
+⚠ **The state layout moves when it is on, so the edit owes a byte-equivalence control and it has one:** with the switch off the solver reproduces the state banked *before the edit existed* at **`0.000e+00`**. Three consumers that read the baryon contrast as the state's last slot were changed to **ask** for the index — that slot is the baryon *velocity* when the switch is on — and the spectrum path's segment handover failed loudly with a broadcast error naming both shapes, which is the right failure for a layout change.
+
+| | before | after |
+|---|---|---|
+| `δ_b/δ_c` at `k = 1` | `0.00022` | **`0.95136`** |
+| growth exponent at `k = 1` | `0.8992` | **`0.9964`** |
+| shape against your reference, worst over `5e-3 … 0.3` | `0.8442` | **`0.0245`** |
+| the nine bandpowers | `2.131339` /dof | **`1.053393`** /dof |
+
+The reference's own is `1.066836`, so **the repaired instrument now fits them slightly better than the independent pipeline does** — at the handover exactly where it was landed, one switch, no tuning.
+
+### ⓶ Your ② answered, and ⓷ your ③
+
+**Ⓒ③ FAILED as registered** and I will not move the criterion: the potential's drift over the test interval falls from `0.5389` to `0.1249` against a registered `0.02`.
+
+⚠ **And my first move was to argue the criterion had been written over an interval that begins in the radiation era. I put that argument to your reference and it refused:** the reference drifts `0.0078` over the same interval and the same modes where the repaired instrument drifts `0.1249`. **The criterion was right and the repair is incomplete.** The residual is located in time rather than left unattributed — `0.0469` across the first sub-interval, `0.0244` across the second, **`0.0003`** across the last — so it is a **radiation-era** residual that dies with the radiation share. ⌗ Which also restores `r7850`'s ruling: a later handover inherits less of it.
+
+### ⓸ The control, control only, and both rulers
+
+| | 95 % limit (meV) | effective mass (meV) | joint `χ²`min |
+|---|---|---|---|
+| landed, ruler minimised | `100.4021 ± 0.3533` | `+21.913 ± 44.423` | `570.3427` |
+| **repaired, minimised** | **`597.7561 ± 0.0525`** | `+572.202 ± 20.752` | `746.0268` |
+| **repaired, calibrated at `r_d = 147.055454` Mpc** | **`596.4034 ± 0.0723`** | `+565.345 ± 22.804` | `886.5954` |
+
+All three on healthy chains: every direction under `1.0002`, every effective sample size above `44000`, no minimum on a bound, no unmeasurable curvature.
+
+⚠ **Your ④'s expectation, as I registered it, FAILS: the ruler moves this harness's limit by `1.3528` meV, `0.0023` of it**, where `cc66` measured it at half of the reference's. The reading is the content — **this harness's limit is set by the lensing term's absolute scale, not by the ruler.**
+
+⌗ This instrument carries **no drag-epoch sound horizon of its own**, only the one at recombination, so the calibrated value is the reference's own `rdrag` at the control's cosmology. That is legitimate here *because the control is the reference's model* and **would not be for the arm of record**, so it is not carried there. ⌗ A free check: the reference's horizon at recombination is `144.4066` Mpc against this instrument's `144.53`, agreeing to eight parts in ten thousand.
+
+### ⓹ ⇒ **AND THE SIZE OF THE RECALIBRATION IS ZERO**
+
+| | peaks | `l_1/l_A` | `P1/P2` | `P1/P3` |
+|---|---|---|---|---|
+| before | `220, 540, 812, 1132` | `0.7300` | `2.196` | `2.190` |
+| **after** | **`220, 540, 812, 1132`** | **`0.7300`** | **`2.196`** | **`2.190`** |
+
+**Identical to every printed digit**, because the two-fluid branch opens only below the threshold at which your spectrum path had already handed over to the solver that carries a baryon velocity properly. The defect bit only where the first solver was run past that threshold alone — the lensing and growth path.
+
+⇒ **So nothing downstream has to be re-run for this repair, and the staging you ordered did exactly what it was for: it priced the change before anything was paid, and it exposed the next fault instead of inheriting it.**
+
+---
+
+## ⇒ WHAT I RECOMMEND YOU ORDER NEXT
+
+**The absolute scale, not another flatness pass.** With the shape now agreeing with the reference to `2.5` per cent, the remaining disagreement is a **single number**: the repaired model's lensing power wants an amplitude about half the one the CMB side holds, and the joint fit — which shares that one normalisation, the mechanism that gives `τ` its reach — rejects it. The reference prices that number directly at fixed cosmology, and it is cheap.
+
+**And land this repair.** It is verified against an independent pipeline, it costs the banked calibration nothing, and leaving it out keeps the cancellation `r7852` found in place.
+
+⌗ Until the scale is closed, **no limit read through this instrument's lensing term is a measurement** — including the three this line has reported and the two in this revision. `P15` is untouched, the arm of record is NOT JUDGED, and `72`'s batch still waits.
