@@ -210,6 +210,10 @@ class Model3:
         self._bao_spl = RectBivariateSpline(h0, om, Z, kx=3, ky=3, s=0)
 
     def bao_error(self, rng, m=200):
+        # ** under RDFIX the term is evaluated exactly, so the tabulation error IS zero -- reported
+        #    as zero because nothing is tabulated, not because a check was skipped. **
+        if self.RDFIX is not None:
+            return 0.0
         if self._bao_spl is None:
             self._build_bao_spline()
         lo, hi = self._bao_lo, self._bao_hi
@@ -243,6 +247,16 @@ class Model3:
         return dict(points=tot, bound=bound, fraction=bound / float(tot), worst_chi2_added=worst)
 
     def chi2_bao(self, H0, OM):
+        # ⛭ ** WITH THE RULER FIXED THERE IS NOTHING TO TABULATE AWAY, r7854. **  *The spline exists
+        # to avoid the inner minimisation over `r_d` at every likelihood call.  Under `RDFIX` there
+        # is no inner minimisation -- one evaluation of the term -- so the EXACT value is as cheap
+        # as the interpolated one and the spline is simply not used.*
+        #   ⚠ And it must not be: the sampler's own guard measured the tabulation at `2.369e-01`
+        #   against a required `1e-3` in this mode, because a term that is sharp in `(H0, Om)` once
+        #   the ruler no longer absorbs their variation is not captured by the grid built for the
+        #   smooth one.  ** The guard was right and is left exactly as it is. **
+        if self.RDFIX is not None:
+            return self.bao_direct(H0, OM)
         if self._bao_spl is None:
             self._build_bao_spline()
         lo, hi = self._bao_lo, self._bao_hi
