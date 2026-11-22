@@ -28544,3 +28544,106 @@ measure the result in one revision once you rule.** Until then the switch stays 
 ⌗ *What would make ⓸ cheap after that ruling: the switch's factor is exact to `8.9e-16`, so a
 regenerated bank is bit-for-bit predictable from the existing one and the chains need no 20-hour
 recompute — but I will not substitute that silently, and I will say so in the receipt when I do it.*
+
+---
+
+## ⭕ ⓹ THE SAME THREE RECEIPTS OF YOURS GO RED AGAIN, ON THE SAME CAUSE, AND BOTH PATCHES ARE MEASURED
+
+**`r7858` adds ONE environment switch to the shared instrument**, and the three receipts of yours
+that stamp that file's switch census or its source hash turn red on my tree the moment the switch
+exists — **with the switch OFF and every array byte-identical**, which `⓶` above measures against
+`origin/main`'s own instrument. They are yours, so **I have not touched them.** This is the same
+class as `r7854`'s, and `69` applied those patches: the census now names `BVEL` as the
+eighty-eighth and the ratchet carries the fifth inert class. One more switch, one more of each.
+
+**Run here to `rc=1` rather than predicted from the CI name, read off the current head:**
+
+| receipt | origin | what it stamps | what the row needs |
+|---|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census | `88 → 89`, and the roll-call gains the eighty-ninth |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob | a SIXTH inert class on the ratchet |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument blob | the same sixth class |
+
+### ⭕ The census — one number, one set entry and one clause
+
+Measured with your own scanner's rule on both trees:
+
+| instrument | bound switch names with a use site |
+|---|---|
+| `origin/main` | `88` |
+| this head | `89` (`FOURPI` is the one added; it has `6` use sites) |
+
+⇒ `len(ROWS) == 88` becomes `== 89`; `SWEPT_SIXTY_PLUS` (28 entries) gains `'FOURPI'`, which keeps
+`len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` **exactly — measured at `60`, not assumed** — and the
+roll-call gains *"the eighty-ninth is `FOURPI`, r7858+60"*, in the same form as the eighty-eighth:
+
+```
+                    # ⛭ `FOURPI` -- r7858+60, the two definitions the CMB bank's accumulation and
+                    #   save line were each short of: `4 pi` on the accumulation and `1/(2 pi)` on
+                    #   every line that writes a D_l.  Unset, both factors are exactly 1.0 and the
+                    #   banked grids are BITWISE identical -- measured against origin/main's own
+                    #   instrument, not asserted.
+                    'FOURPI'}
+```
+
+### ⭕ The ratchet — a sixth inert class, and it is NOT a blanket drop
+
+A name is inert here **only if its own assignment is `<something> if FOURPI else 1.0`.** That is the
+whole point: a factor written `else 2.0` moves the default output, so the class must keep it red, and
+it does. The class then (a) drops the `FOURPI`, `_FP_ACC` and `_FP_DL` assignments, and (b) collapses
+a `Mult`/`Div` whose right operand is one of those unit-valued names back to its landed left operand.
+
+```python
+def _inert_unit_factors(tree):
+    """the names whose OWN assignment is `<something> if FOURPI else 1.0` -- and no others."""
+    out = set()
+    for n in _ast.walk(tree):
+        if not isinstance(n, _ast.Assign) or len(n.targets) != 1:
+            continue
+        t, v = n.targets[0], n.value
+        if not (isinstance(t, _ast.Name) and isinstance(v, _ast.IfExp)):
+            continue
+        if not (isinstance(v.test, _ast.Name) and v.test.id == 'FOURPI'):
+            continue
+        o = v.orelse
+        if (isinstance(o, _ast.Constant) and not isinstance(o.value, bool)
+                and isinstance(o.value, (int, float)) and o.value == 1):
+            out.add(t.id)
+    return out
+
+# in `_Strip`:  NAMES |= {'FOURPI'} | _inert_unit_factors(tree)
+# and inside `visit_BinOp`, before `generic_visit`:
+            if (isinstance(node.op, (_ast.Mult, _ast.Div))
+                    and isinstance(node.right, _ast.Name)
+                    and node.right.id in unit):
+                return self.visit(node.left)
+```
+
+**Measured against the banked blob `e5319ce49` that `⓿⓿` reads, 8 of 8:**
+
+| what | result |
+|---|---|
+| the landed FIVE classes leave this head RED | **holds** — so the sixth is needed, not decorative |
+| with the sixth class the head reduces to the banked blob | **holds** |
+| control — a landed constant moved (`VISC`) | **kept red** |
+| control — a landed line deleted | **kept red** |
+| control — the LANDED operand of the new factor changed | **kept red** |
+| control — the guard made live-when-off (`1.0 → 2.0`) | **kept red** |
+| control — a landed default moved (`TCSW 3.0 → 3.5`) | **kept red** |
+| control — an UNGUARDED factor on a landed expression | **kept red** |
+
+⚠ **And the class's SCOPE, measured and not hidden:** it certifies that the tree is the landed one
+**when the switch is unset**, and says nothing about what the switch does when SET — so the same
+unit factor added at a *third* site passes. That is the scope of every class in this ratchet (an
+`if DNEFF:` block's contents are dropped wholesale too), and I am stating it rather than letting you
+discover it.
+
+### ⛔ And the ruling I asked for at `r7854` is still open, so I am not re-routing it
+
+`r7854` put you a choice on these two hash rows — **compare the switch set alone, or re-bank the
+hash** — and said it was yours, because re-banking is a claim about which blob the bank's figures
+came from. You applied the inert-class patch instead, which is the narrower of the two and the one
+that keeps the ratchet's teeth. ⇒ **I am following that precedent and nothing more:** the sixth
+class above is the same shape as the fifth, and **the standing question of whether this ratchet
+should compare the switch set rather than the blob is NOT re-asked here** — it is the same question,
+once, and it is still yours.
