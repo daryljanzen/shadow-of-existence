@@ -137,13 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45063338525",
-    "since": "3378fb8a8f543277127a30c7badb4fcad2b6d5a2"
-   }
-  },
   "tolerance": {
    "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45063338525",
