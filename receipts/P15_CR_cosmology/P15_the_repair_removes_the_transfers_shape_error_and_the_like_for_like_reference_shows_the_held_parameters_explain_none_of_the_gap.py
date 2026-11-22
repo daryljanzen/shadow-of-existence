@@ -280,8 +280,27 @@ check('Ⓚ㉓ the warm starts did NOT decide the answer: cold re-runs agree insi
       'own fatol of 5e-3, and the printed "GOT STUCK" verdict was MIS-THRESHOLDED at 1e-6',
       _ok, 'warm minus cold: %s' % '; '.join(_det))
 
-check('Ⓛ㉔ the count is COUNTED off the arms that ran and then pinned, not typed',
-      len(RAN) == 23, 'arms before this one: %d (pinned 23)' % len(RAN))
+# --- Ⓖ⑰ᵇ r7849's OWN comparator, RECOMPUTED from its banked points and not quoted from its prose
+R49 = os.path.join(BTW, 'r7849_cc66_the_camb_reference_with_60s_bao_term_on_two_rulers', 'out')
+_R49 = {}
+for _m in ('rd_camb', 'rd_min'):
+    _rows = sorted((json.load(open(_f, encoding='utf-8'))
+                    for _f in glob.glob(os.path.join(R49, '%s_*.json' % _m))),
+                   key=lambda r: r['sum'])
+    _R49[_m] = (len(_rows), limit95(_rows)[1])
+_sp49 = 100.0 * (1.0 - _R49['rd_camb'][1] / _R49['rd_min'][1])
+check('Ⓖ⑰ᵇ and the 52.0 this revision compares against is RECOMPUTED from r7849\'s own banked '
+      'points, not quoted from its prose: 26.06 and 54.28 meV, its 52.0 spread and its 2.46 all '
+      'reproduce',
+      abs(_R49['rd_camb'][1] - 26.06) < 0.012 and abs(_R49['rd_min'][1] - 54.28) < 0.02
+      and abs(_sp49 - 52.0) < 0.04 and _R49['rd_camb'][0] == _R49['rd_min'][0] == 8
+      and abs(64.2 / _R49['rd_camb'][1] - 2.46) < 0.004,
+      'r7849 recomputes to %.3f and %.3f meV, spread %.3f per cent (pinned 52.0 +/- 0.04), '
+      'factor %.4f against the published figure (pinned 2.46 +/- 0.004)'
+      % (_R49['rd_camb'][1], _R49['rd_min'][1], _sp49, 64.2 / _R49['rd_camb'][1]))
+
+check('Ⓛ㉕ the count is COUNTED off the arms that ran and then pinned, not typed',
+      len(RAN) == 24, 'arms before this one: %d (pinned 24)' % len(RAN))
 
 print()
 print('  %d arms, %d FAILED' % (len(RAN), len(FAILED)))
