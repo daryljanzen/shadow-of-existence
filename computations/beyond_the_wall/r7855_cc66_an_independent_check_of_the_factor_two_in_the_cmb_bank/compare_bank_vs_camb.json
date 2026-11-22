@@ -1,5 +1,6 @@
 {
-  "conversion": "C_l muK^2 = C_l * T_CMB^2, T_CMB = 2.7255e6 muK (model6 T_CMB_UK)",
+  "conversion": "C_l muK^2 = C_l[instrument] * A_s * (3/5)^2 * T_CMB^2; the instrument normalises to Phi = -1 and Phi = -(3/5) zeta in matter domination",
+  "conversion_constant": 5615.832789000001,
   "control": {
     "H0": 67.4,
     "Om": 0.315,

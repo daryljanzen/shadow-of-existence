@@ -99,7 +99,8 @@ def main():
         c = SC._bin_one(cls_, np.asarray(cD, float), which)
         rows.append(stats(name, b, c, conv))
 
-    out = dict(conversion='C_l muK^2 = C_l * T_CMB^2, T_CMB = 2.7255e6 muK (model6 T_CMB_UK)',
+    out = dict(conversion=('C_l muK^2 = C_l[instrument] * A_s * (3/5)^2 * T_CMB^2; the instrument normalises to Phi = -1 and Phi = -(3/5) zeta in matter domination'),
+               conversion_constant=float(conv),
                control=dict(H0=H0, Om=OM, ombh2=WB, ns=NS, As=AS, tau=TAU),
                blocks=rows,
                sixty_reports=dict(factor=0.504672, n_bins=185, lo=0.500015, hi=0.510557))
