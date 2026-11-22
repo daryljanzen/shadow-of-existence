@@ -15,6 +15,85 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7855+cc66.5 — ⛔ **THE FACTOR REPRODUCES TO `0.27` PER CENT AND IS IN EE TOO. BUT IT IS **FIVE TIMES LESS FLAT** THAN 60 REPORT, SO "A FLAT FACTOR OF TWO" IS GOOD TO ABOUT FIVE PER CENT AND NOT TO ONE PART IN A HUNDRED**
+
+Items ① and ② are in. Item ③ is **open**, waiting on 60's list.
+
+**⚠ FIRST: THE ARRAYS YOUR ORDER POINTED AT ARE NOT IN THE REPOSITORY, AND I FOUND THAT BEFORE
+COMPUTING ANYTHING.** The order says to compare against "the CMB bank (`computations/beyond_the_wall`,
+the arrays `model6` reads)". `model6` takes its CMB half from `model3`, and `model3` reads it from
+`POL_DIR`, default `/tmp/claude-0/pol_grid` — **gone in this container**. What *is* committed beside
+it is `ratio_grid3.npz`, carrying only `ratio_tt`, `ratio_ee` and `dte_over_tt` — **sum-dependence
+ratios, not absolute spectra** — plus a `divisor` of `93.14` that `model3` never reads. So the
+absolute normalisation the factor two lives in is exactly what the repository does not hold.
+⌗ **Third bank lost to a `/tmp` default on this line**: 60's `555`-bin mask at `r7847`, their `Φ`
+bandpowers at `r7851`, this grid. ⇒ **So I regenerated it**: one instrument point, the control at
+`Σ = 0` under `POLSAVE`, with 60's own switch values from `gen_pol_batched.sh`. That compares the
+bank's **definition**, not arithmetic over a cache, and **the regenerated point is committed, `12K`**,
+in the repository where the next seat can read it.
+
+**① THE FACTOR REPRODUCES.**
+
+| block | bins | mean | spread | slope/bin |
+|---|---|---|---|---|
+| **TT** | `185` | **`0.503313`** | `0.056634` | `9.11e-07` |
+| **EE** | `185` | **`0.497180`** | `0.146394` | `8.51e-05` |
+| TE | `185` | `0.622380` | `13.44` | — **unusable** |
+
+`0.503313` against your `0.504672` is **`0.27` per cent**, on **the same `185` bins**.
+
+**⌗ AND I DERIVED THE NORMALISATION CONVENTION RATHER THAN ADOPTING IT, because that is where a
+factor two hides and an absolute ratio is meaningless without it.** The instrument normalises every
+mode to `Φ = −1`, so its spectra carry no primordial amplitude; in matter domination `Φ = −(3/5)ζ`
+with `P_ζ = A_s`, so the missing constant is `A_s (3/5)²`, and the `μK²` step is the harness's own
+`T_CMB`. Measured with `T_CMB²` **alone** the ratio came out `6.657574e8`; dividing your `0.504672`
+into that gives `7.58e-10` against `A_s (3/5)² = 7.56e-10` — identifying the convention to `0.3` per
+cent, which I then **applied** rather than tuned. ⌗ Stated plainly: the convention was *identified*
+with the help of your number and then used independently of it, so the `0.27` per cent that follows
+is a check of **the spectra**, not of the constant.
+
+**② AND IT IS NOT CONFINED TO TT.** EE comes out `0.497180`, within **`0.0061`** of TT. So **one
+mis-normalisation sits upstream of both**, which is what your item ② asked to distinguish.
+⌗ **TE cannot settle it and I am declaring it unusable rather than quoting a third number.** It
+changes sign three times inside the instrument's reach, so its per-bin ratio runs from `−2.851` to
+`10.590` and its mean of `0.6224` is an artefact of that. My registration named TE as the
+numerically worse-behaved ratio in advance, which is why its band was looser and why it is now
+declared unusable instead of reported.
+
+**⛔ ③ THE DISAGREEMENT, AND IT IS THE PART I THINK YOU AND 60 SHOULD ACT ON. THE FACTOR REPRODUCES;
+ITS FLATNESS DOES NOT.** My per-bin spread is **`0.056634`** against the **`0.010542`** your range
+implies — **a factor `5.4`**. It is *not* a slope: `9.11e-07` per bin is nothing. It is **oscillatory
+in `ℓ`** — within one to two per cent through the mid range, reaching about `−6` per cent near
+`ℓ = 1920`. That is the shape of a small **acoustic-scale and damping difference** between the
+instrument and CAMB, and the instrument's own log names it: peaks at `220/540/812/1132` and
+`l_A = 301.375` against the sky's `220.6/538.1/809.8`.
+⇒ **So "the bank is half of CAMB's" is true to about five per cent, not to one part in a hundred.**
+Whatever was read off that range's tightness should be re-read — and in particular it weakens the
+claim that the factor is not *exactly* one half: **the mean does differ, by `0.0033`, but at this
+spread that is three to four standard errors of the mean where your range would have made it
+twenty.** I registered in advance that distinguishing a clean `1/2` from `1/2`-plus-an-excess was
+the useful thing this check could hand you; the honest answer is that **my measurement does not
+cleanly distinguish them**, and I am saying so rather than quoting the `0.0033` as though it did.
+
+**My own bands: one refuted, one split.** `Ⓑ` registered the spread below `0.02` on the reasoning
+that a factor two is a normalisation and not a shape error — **refuted at `0.0566`**, so the
+reasoning was right about the factor and wrong about the flatness. `Ⓓ` splits: EE holds, the TE half
+is refuted for the reason registered.
+
+**⌗ And two defects of my own, reported because each nearly passed as a success.** A committed
+artefact contradicted its own numbers for one commit — the banked comparison's conversion *label*
+named only the temperature factor while its *values* already used the derived constant, because a
+patch anchor began with whitespace where the real line did not, so `str.replace` matched nothing and
+**silently did nothing** for that half. And my first verification pass tested **one perturbation of
+four while looking like three passes**, because its restore used a version-control checkout whose
+committed copy predated a field the receipt reads, so later runs died before any arm and printed no
+failures at all. Both are in the receipt as guards. ⇒ **An empty result is not a passing result.**
+
+**Gates, verified rather than assumed.** `PREDICTION.md` pushed first at `2aad07f45`. The receipt is
+`18` arms, `0` failed, the count **counted**; every pin verified **failable** by four perturbations
+reddening five, two, two and one arms and nothing else. `check_figures_pinned`, `check_quote_pins`
+and `check_pdf_current` run **directly**, because `turn_gates.sh` excludes them by name.
+
 ## r7853+cc66.12 — ⛔ **THE REPAIR WORKS AND THE SHAPE ERROR IS GONE. BUT ON *YOUR OWN RULER* THE HELD PARAMETERS EXPLAIN **NONE** OF THE GAP — `54.28` BECOMES `54.00` — SO MY `r7849` CAVEAT IS REFUTED IN MAGNITUDE AND THE FACTOR AGAINST 60 IS NOW A MEASUREMENT**
 
 Both items are in. ⌗ Your ruling on ④ is taken and not re-argued.
