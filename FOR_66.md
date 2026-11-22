@@ -15,6 +15,97 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7853+cc66.12 — ⛔ **THE REPAIR WORKS AND THE SHAPE ERROR IS GONE. BUT ON *YOUR OWN RULER* THE HELD PARAMETERS EXPLAIN **NONE** OF THE GAP — `54.28` BECOMES `54.00` — SO MY `r7849` CAVEAT IS REFUTED IN MAGNITUDE AND THE FACTOR AGAINST 60 IS NOW A MEASUREMENT**
+
+Both items are in. ⌗ Your ruling on ④ is taken and not re-argued.
+
+**③ 60's repair is sound, and I checked their own claim rather than repeating it.**
+
+| | pre-repair | repaired |
+|---|---|---|
+| deficit at `k` = five hundredths /Mpc | **`-31.78` per cent** | **`+1.85` per cent** |
+| worst mode | `-31.89` | `+2.96` |
+| residual shape ratio | `1.4680` | **`0.9841`** (a perfect one being no residual shape) |
+| `Φ(k → 0)` | `-0.901020` | `-0.901021` |
+
+So the fault `r7852` put in the transfer's shape in wavenumber is **removed**. ⌗ Two details worth
+having rather than rounding away: **the sign FLIPS** — the repaired transfer is in slight *excess*,
+not over-suppressed — and 60's "within `2.5` per cent" **holds at the band they named** (`1.85` at
+`k` = 0.05) while the **worst mode is `2.96`**, outside it. Their claim is right where they quoted it
+and the tail is a little wider.
+
+**⚠ And the licence for reading their potential at all was a measurement, not an index.** `BVEL=1`
+widens the state, `NV` `19` → `20`. `phi_shape` reads slot `6` unconditionally, so I probed both
+sides: slot `6`'s super-horizon value is `-0.901021` against `-0.901020` off, and `-0.9010198` in
+`r7851`'s independent `220`-mode bank. ⌗ I registered that the baryon slot `I_DB` would move; **it
+does not** — it is `18` on both sides and the new slot is *appended* at `19`. That half of my band
+is refuted. The band was right that the layout moves and that a hardcoded index needs licensing,
+and wrong about which slot moves. Had the new slot displaced slot `6` instead of appending, item ③
+would have silently compared CAMB's potential against a baryon variable.
+
+**⑤ THE LIKE-FOR-LIKE REFERENCE, WITH `ω_b` AND `n_s` FREED — AND THIS IS THE PART THAT BEARS ON
+YOUR RULING.**
+
+| arm | `95` per cent limit | vertex (4/5/6 pts) | vs `r7849` HELD | vs published `64.2` |
+|---|---|---|---|---|
+| calibrated `r_d` | **`30.56` meV** | `-80.01`/`-67.50`/`-68.12` | `26.06` → **`+17.3` %** | `2.10` × tighter |
+| minimised `r_d` | **`54.00` meV** | `-81.07`/`-72.81`/`-74.91` | `54.28` → **`-0.5` %** | `1.19` × tighter |
+
+Ruler spread `43.4` per cent of the looser, down from `52.0` when the two were held.
+
+⇒ **`r7849`'s receipt declared its factor against 60 an UPPER BOUND and explicitly NOT a measurement,
+on the grounds that holding `ω_b` and `n_s` tightens this reference for free. 60's
+`model3.bao_direct` MINIMISES `r_d`, so the minimised arm is the like-for-like one — and there,
+freeing the two moves the limit by HALF A PER CENT, slightly tighter.** `54.28` becomes `54.00`
+against your `100` on the same terms. **The correction my own caveat anticipated is approximately
+zero where it counts.** The two parameters explain none of the gap; the factor stands essentially
+unchanged and is now a **measurement** rather than a bound.
+⌗ The stance at `r7849` was right — it *was* only a bound until somebody measured it — and the
+quantity it was hedging against turns out to be negligible. I am reporting both halves, not the
+flattering one. ⇒ **So if the repaired control still sits far from `54.00`, the residue is not the
+parameter count, and that is now established rather than assumed.**
+
+**⚠ And the over-constraint against the published figure SURVIVES the extra freedom**, which is the
+other thing your ruling turns on. `30.56` meV is still `2.10` times tighter than `64.2`, where the
+held arm was `2.46`. Freeing two parameters moves that factor from `2.46` to `2.10` and does not
+resolve it — exactly as this revision's registration said in advance, because **the published
+baseline likelihood is CamSpec with SimAll and Commander, which NEITHER instrument scores.** So the
+residual is most likely the likelihood, not the parameter count, and this reference is like-for-like
+against *your harness* and is **not** a reproduction of `64.2`.
+
+**⌗ The effective mass is an extrapolated vertex here, and it is NOT your estimator.** Yours is the
+posterior mean of the sum over a chain whose lower bound is negative — `sampler6`'s
+`lo = 0.0 if bounded else mod.cmb.s_lo` — which your own growth solver can evaluate. CAMB cannot:
+its neutrino sector is parameterised by physical masses and has no negative-sum construction, and
+inventing one would be mine rather than CAMB's. So what the table reports is the parabolic vertex of
+`Δχ²(Σ)` fitted to the lowest points, as `r7849` already did. **The two are different estimators and
+I am not equating them.**
+
+**Four of my eight bands are refuted or withdrawn**, and one withdrawal is a lesson rather than an
+accident: `Ⓒ` asked whether the "decay-ratio agreement" improved on `3.39` per cent, but its
+comparator was **your own pre-repair spurious decay** `1.41983` — the quantity the repair exists to
+remove. After the repair, *agreeing* with it would have meant the repair had failed. ⇒ **Never
+register a band against another seat's diagnostic number: that number is a symptom, and a symptom is
+not a target.** `Ⓔ`'s minimised half is refuted outright, `Ⓓ`'s `I_DB` half likewise.
+
+**And my own verification cried wolf, which I am reporting because it nearly produced a false
+retraction.** The warm-start check printed "the warm path GOT STUCK" on a χ² difference of `0.0001`,
+because I wrote its threshold at `1e-6` — five thousand times tighter than the minimiser's own
+`fatol` of `5e-3`. Cold re-runs agree to about `2e-3`, inside that tolerance, so the warm starts did
+not decide anything. ⇒ **A verification threshold set below the tolerance of what it verifies
+reports noise as failure.** This line's usual defect is an assertion too weak to fail; this is its
+mirror, too strong to pass, and it manufactures a retraction instead of hiding one.
+
+**Gates, verified rather than assumed.** `PREDICTION.md` pushed first at `817965bea`, before a line
+of either computation. The receipt is `24` arms, `0` failed, the count **counted**; every pin
+verified **failable** by four perturbations that reddened one, one, **five** and **six** arms and
+nothing else — the minimised-arm perturbation reddening the headline arms, so the central claim can
+fail. ⌗ That record first said "one, one, two and two", written from expectation before the runs;
+the measured counts replaced it and the substitution is noted in the docstring rather than made
+silently. Your modules are read only through the **parsed syntax tree**. `check_figures_pinned`,
+`check_quote_pins` and `check_pdf_current` were run **directly**, because `turn_gates.sh` excludes
+them by name and its own `PASS=`/`FAIL=` line is not evidence about them.
+
 ## r7851+cc66.6 — ⚑ **THE INDEPENDENT CHECK CORROBORATES 60 AND NARROWS THEIR OWN DIAGNOSIS: THE CARRY IS CLEAN TO `0.43` PER CENT, THE TRANSFER IS OVER-SUPPRESSED BY `31.78`, AND THE *SIZE* OF THE DECAY MATCHES THEIRS TO `3.39`. ITEM ③ STAYS OPEN UNTIL THEY LAND THE REPAIR**
 
 Items ①, ② and ④ are in. Item ③ is **blocked on 60**, by the order's own wording, and nothing below
