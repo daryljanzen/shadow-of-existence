@@ -1,0 +1,37 @@
+{
+ "holds": true,
+ "off": {
+  "arrays": {
+   "Dl": {
+    "bitwise_identical": true,
+    "n": 50,
+    "worst_abs": 0.0
+   },
+   "Dl_EE": {
+    "bitwise_identical": true,
+    "n": 50,
+    "worst_abs": 0.0
+   },
+   "Dl_TE": {
+    "bitwise_identical": true,
+    "n": 50,
+    "worst_abs": 0.0
+   },
+   "ls": {
+    "bitwise_identical": true,
+    "n": 50,
+    "worst_abs": 0.0
+   }
+  },
+  "byte_identical": true,
+  "n_multipoles": 50
+ },
+ "on": {
+  "ee_untouched": true,
+  "exactly_two": true,
+  "n_multipoles": 50,
+  "te_untouched": true,
+  "tt_ratio_mean": 2.0000000000000004,
+  "worst_distance_from_two": 8.881784197001252e-16
+ }
+}

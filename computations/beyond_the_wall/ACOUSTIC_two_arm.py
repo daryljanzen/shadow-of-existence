@@ -324,6 +324,29 @@ Hc_of = CubicSpline(eg, ag * Hgeom(ag) / C)                       # comoving Hub
 # that ordered it are at `evolve`'s state layout.  DEFAULT OFF: unset, this solver is
 # byte-identical, which `r7854`'s own positive control checks against a banked state rather than
 # asserting.*
+# ⛭⛭ ** FOURPI=1: THE TWO NORMALISATION FACTORS THIS SPECTRUM PATH NEVER CARRIED, r7858 (60) ON
+# ORDER r7855. **  *`r7856` measured this instrument's banked TT at `0.504672` of the reference's
+# over `185` bins, range `0.500015` to `0.510557`, and `r7855` ruled that a bank low by a factor two
+# is the model not yet doing what it should, so it is fixed in the model and not at the read point.*
+#   ⇒ ** TWO DEFINITIONS, EACH SHORT OF A FACTOR, IN TWO DIFFERENT PLACES: **
+#   ⒜ the line-of-sight `C_l` carries `4 pi` and the accumulation `np.sum(P * _tr ** 2)` carries
+#     none of it;  ⒝ the `D_l` the data is binned in is `l(l+1) C_l / (2 pi)` and the save lines
+#     apply `l(l+1)` alone.  ** And `4 pi / (2 pi) = 2` exactly, which is the measured factor. **
+# ⛔ *Each is established ALONE and neither is fitted: `r7858`'s `four_pi.py` puts the `4 pi` to the
+# reference's own `C_l` AT THE `C_l` LEVEL -- `out` recovered per multipole before any binning, so
+# no `D_l` convention appears on this side at all -- and gets a geometric mean of `1.002278` over
+# `238` multipoles.  The `1/(2 pi)` is then an identity on the save line.  A factor of two can be
+# inserted in a dozen places and close a ratio from any of them; that is why the two are measured
+# separately rather than together.*
+# ⌗ ** WHAT THIS SWITCH DOES NOT TOUCH: ** the primordial amplitude, `T_CMB^2` and the `exp(-2 tau)`
+# screening all stay where they already live, at the read point, because `tau` is SAMPLED and an
+# amplitude is a parameter -- these two factors are DEFINITIONS and parameter-free, which is what
+# makes them fixable at the source without re-plumbing the likelihood.
+# ⚠ ** DEFAULT OFF.  Unset, every factor below is exactly `1.0`, so the spectra are byte-identical
+# and `r7858`'s own control checks that against the banked ones rather than asserting it. **
+FOURPI = os.environ.get('FOURPI', '0') == '1'
+_FP_ACC = 4.0 * np.pi if FOURPI else 1.0          # ⒜ on the accumulation
+_FP_DL = 2.0 * np.pi if FOURPI else 1.0           # ⒝ on every line that writes a `D_l`
 BVEL = os.environ.get('BVEL', '0') == '1'
 # ** THE BARYON INDICES ARE EXPORTED, because `BVEL` moves the state layout and a consumer that
 # computes `NV - 1` for the baryon contrast reads the baryon VELOCITY when it is on. **  *`c54.178`
@@ -1871,7 +1894,7 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
               f"sigma_s/r_s = {', '.join('%.5f' % (x / R_S) for x in _sg)} -> {_SRCE}")
     if _SRCD:
         _dc = sum(_SRCD_B) * (ls * (ls + 1))[:, None]
-        np.savez(_SRCD, ls=ls, Dl=Cl * ls * (ls + 1), Dl_pairs=_dc, pairs=np.array(_DECN),
+        np.savez(_SRCD, ls=ls, Dl=Cl * ls * (ls + 1) / _FP_DL, Dl_pairs=_dc, pairs=np.array(_DECN),
                  arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
                  sliced=bool(_ksl), n_modes=len(kk))
         _cl = float(np.max(np.abs(_dc.sum(axis=1) - Cl * ls * (ls + 1))
@@ -1888,7 +1911,16 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         #   `SRCFIELD`, `DLKSAVE`, the visibility save and `PHISAVE`).  Those are diagnostics rather
         #   than spectra receipts load for figures, so they are REPORTED to 69 rather than changed
         #   here: the order named POLSAVE.
-        np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1), Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1], arm=ARM, r_s=R_S,
+        # ⛔ ** `FOURPI` TOUCHES `Dl` AND NOT `Dl_EE`/`Dl_TE`, AND THAT IS A SCOPE LIMIT AND NOT
+        # AN OVERSIGHT. **  *Those two are `np.sum(P * _dE**2)` and `np.sum(P * _tr * _dE)` formed
+        # beside `out[j]` rather than through it, so they never see `_FP_ACC`; and they carry no
+        # `l(l+1)` either, despite the `Dl_` in their names, so dividing them by `2 pi` would not
+        # be the `D_l` correction that `⒝` is.  ⇒ `r7856` measured the factor on ** TT ONLY **, so
+        # this switch changes TT only.  The polarisation blocks' own normalisation is UNMEASURED
+        # here and is routed to `69` rather than guessed at -- and their free amplitude is shared
+        # with TT, so a wrong factor on them would move the joint fit.*
+        np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1) / _FP_DL, Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1],
+                 arm=ARM, r_s=R_S,
                  D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk),
                  config=_resolved_config())
         print(f"  POLSAVE: TT, EE and TE on {len(ls)} multipoles -> {_POLS}")
@@ -2099,7 +2131,7 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
         _tr = np.trapezoid(S * J, ee, axis=0)
-        out[j] = np.sum(P * _tr ** 2)
+        out[j] = np.sum(P * _tr ** 2) * _FP_ACC
         if _POLS:
             _dE = np.sqrt(max((l + 2.0) * (l + 1.0) * l * (l - 1.0), 0.0)) * np.trapezoid(_SE * J, ee, axis=0)
             _ee_te[j] = (np.sum(P * _dE ** 2), np.sum(P * _tr * _dE))
