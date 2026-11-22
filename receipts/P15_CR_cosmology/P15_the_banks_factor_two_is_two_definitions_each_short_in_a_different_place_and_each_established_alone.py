@@ -197,8 +197,11 @@ check('Ⓔ⑤ AND NOTHING IS CONCLUDED: no limit is computed, the defaults stay 
       'requires until the absolute statements are routed, P15 is untouched by this revision, the '
       'arm of record is NOT JUDGED and 72\'s batch waits',
       PO['D4_blocked'] is True
-      and "os.environ.get('FOURPI', '0') == '1'" in INST
-      and 'FOURPI' in INST,
+      and "os.environ.get('FOURPI', '0') == '1'" in INST,
+      #: ⛔ a bare `'FOURPI' in INST` stood here and is CUT: a presence test on a token is the
+      #:   vacuous form this corpus's sweep keeps catching, and it caught `'BVEL'` and `'PRIMNORM'`
+      #:   on this same line in the two revisions before this one.  The environ line carries both
+      #:   halves of the claim at once -- the name exists AND its default is '0'.
       'the switch exists, defaults off, and no chain was run')
 
 print()
