@@ -1,0 +1,21 @@
+{
+ "As": 2.1e-09,
+ "T_CMB_UK": 2725500.0,
+ "amp": 8.404284135218513e-10,
+ "four_pi": {
+  "camb_version": "2.0.4",
+  "geometric_mean": 1.0022776526038728,
+  "holds": true,
+  "n_multipoles": 238,
+  "ratio_max": 1.0535026389420943,
+  "ratio_min": 0.9456093759078802,
+  "worst_spread": 0.05653949935805807
+ },
+ "ns": 0.965,
+ "screening": 0.8976275964304349,
+ "two_pi": {
+  "factor": 6.283185307179586,
+  "is_an_identity_on_the_line": true,
+  "net": 2.0
+ }
+}

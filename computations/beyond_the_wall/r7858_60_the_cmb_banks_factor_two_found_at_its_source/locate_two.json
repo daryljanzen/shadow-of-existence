@@ -1,0 +1,33 @@
+{
+ "A1": {
+  "all_bins_within": false,
+  "mean": 1.0093447650445981,
+  "n_bins": 185,
+  "ratio_max": 1.0211134801526336,
+  "ratio_min": 1.000030854553741,
+  "within_one_per_cent": true,
+  "worst_spread": 0.011659757414519757
+ },
+ "A1b_4pi": {
+  "holds": false,
+  "ratio": 97614.26630129393,
+  "ratio_max": 641365.8653816662,
+  "ratio_min": 1740.7769551503184
+ },
+ "As": 2.1e-09,
+ "O0": {
+  "holds": true,
+  "n_bins": 185,
+  "r7856": 0.504672,
+  "ratio": 0.5046723825222991
+ },
+ "amp": 8.404284135218513e-10,
+ "k_pivot": 0.05,
+ "lines": {
+  "accumulation": true,
+  "measure": true,
+  "net_factor": 2.0,
+  "save": true
+ },
+ "ns": 0.965
+}
