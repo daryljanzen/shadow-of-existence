@@ -1,0 +1,17 @@
+{
+ "As": 2.1e-09,
+ "amp_derived": 8.404284135218513e-10,
+ "ns": 0.965,
+ "tt_absolute": {
+  "bank_is_right": false,
+  "bank_low_by_about_two": true,
+  "camb_version": "2.0.4",
+  "carrier_named": true,
+  "geometric_mean": 0.5046723825222991,
+  "handover_over_derived": 1.9828778028014078,
+  "lensed": "total",
+  "n_bins": 185,
+  "ratio_max": 0.5105567400763168,
+  "ratio_min": 0.5000154272768705
+ }
+}

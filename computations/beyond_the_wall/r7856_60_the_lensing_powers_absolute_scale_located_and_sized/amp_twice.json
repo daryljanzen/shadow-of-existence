@@ -1,0 +1,20 @@
+{
+ "A1d": {
+  "reason": "A1d_pre failed: the two fitted factors are not one quantity",
+  "reported_as_a_factor": false,
+  "screening": 0.8976275964304349
+ },
+ "A1d_pre": {
+  "A_cmb": 11111.82125136469,
+  "A_lens_landed": 1.5768615382253947e-09,
+  "A_lens_repaired": 8.164235700977891e-10,
+  "chi2_cmb_amplitude_fitted": 584.4130250383815,
+  "chi2_cmb_amplitude_one": 410502.89754783857,
+  "d_abs_max": 1.6980448186295,
+  "d_abs_min": 9.804293166132582e-07,
+  "holds": false,
+  "m_abs_max": 0.00014560631494431138,
+  "m_abs_min": 2.5772206339032336e-11,
+  "n_cmb_bins": 555
+ }
+}

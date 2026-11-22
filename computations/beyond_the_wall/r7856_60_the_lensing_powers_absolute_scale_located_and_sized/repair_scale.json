@@ -1,0 +1,38 @@
+{
+ "As": 2.1e-09,
+ "C3": {
+  "chi2_landed_nothing_fitted": 365.40528723360165,
+  "chi2_reference_nothing_fitted": 8.817347545463614,
+  "chi2_repaired_nothing_fitted": 9.815332567543178,
+  "criterion_chi2_fraction": 0.2,
+  "criterion_ratio": 0.1,
+  "fraction_of_reference": 1.1131842673699544,
+  "passes": false,
+  "per_dof_repaired": 1.0905925075047975,
+  "ratio": [
+   0.969790701610093,
+   0.994061015547407,
+   1.0113166784978955,
+   1.096828827513944,
+   1.1383106788606154,
+   1.1508781543244915,
+   0.9265372413950281,
+   0.8471551048831498,
+   1.1157619534471825
+  ],
+  "worst_ratio_minus_one": 0.15284489511685018
+ },
+ "C3b": {
+  "chi2_one_amplitude": 8.427147672318856,
+  "factor_distance_from_one": 0.028562627152821762,
+  "fitted_factor": 0.9714373728471782
+ },
+ "amp": 8.404284135218513e-10,
+ "k_pivot": 0.05,
+ "ns": 0.965,
+ "switch": {
+  "holds": true,
+  "set": "True",
+  "unset": "False"
+ }
+}
