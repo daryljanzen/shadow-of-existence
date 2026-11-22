@@ -83,7 +83,9 @@ class GrowthFromInstrument(GK.GrowthKDep):
         Y = sol.y.T.reshape(len(te), nk, NV)
         wc = float(A.OCDM) / (float(A.OCDM) + float(A.OB))
         wb = 1.0 - wc
-        d = wc * Y[:, :, 0] + wb * Y[:, :, NV - 1]
+        # ⚠ the baryon index is ASKED FOR, not computed from the state's length: under
+        #   `BVEL=1` (r7854) the last slot is the baryon VELOCITY and `NV - 1` would read it.
+        d = wc * Y[:, :, 0] + wb * Y[:, :, A.I_DB_F]
         N = np.log(np.array([float(A.a_of_eta(t)) for t in te]))
         self._ic_cache = (d[1], (d[2] - d[0]) / (N[2] - N[0]),
                           dict(phi_at_ref=[float(v) for v in Y[1, :, 6]],

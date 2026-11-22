@@ -65,7 +65,8 @@ def main():
     Y = sol.y.T.reshape(len(te), nk, NV)
     wc = float(A.OCDM) / (float(A.OCDM) + float(A.OB))
     wb = 1.0 - wc
-    d = wc * Y[:, :, 0] + wb * Y[:, :, NV - 1]
+    # ⚠ asked for, not derived: under `BVEL=1` (r7854) `NV - 1` is the baryon VELOCITY.
+    d = wc * Y[:, :, 0] + wb * Y[:, :, A.I_DB_F]
     N = np.log(np.array([float(A.a_of_eta(t)) for t in te]))
     phi_at_ref = Y[1, :, 6]
 

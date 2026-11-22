@@ -116,7 +116,8 @@ class PhiCarry:
         # d_b/d_c to test whether the baryons have caught up, and re-solving the instrument to get
         # a column it already had would double the revision's cost for nothing.
         self.dc = Y[:, :, 0]
-        self.db = Y[:, :, NV - 1]
+        # ⚠ asked for, not derived: under `BVEL=1` (r7854) `NV - 1` is the baryon VELOCITY.
+        self.db = Y[:, :, A.I_DB_F]
         self.d_cb = wc * self.dc + wb * self.db
         self.a_of = np.array([float(A.a_of_eta(min(t, A.eta_0))) for t in te])
         self.N_of = np.log(self.a_of)

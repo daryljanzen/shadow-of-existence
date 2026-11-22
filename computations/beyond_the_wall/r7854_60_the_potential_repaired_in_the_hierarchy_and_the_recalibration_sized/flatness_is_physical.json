@@ -1,0 +1,80 @@
+{
+ "arm_failed_on_the_criterion_as_registered": true,
+ "camb": {
+  "camb_version": "2.0.4",
+  "nonlinear": "NonLinear_none"
+ },
+ "etas": [
+  500.0,
+  4000.0
+ ],
+ "radiation_share": [
+  0.14013526336083026,
+  0.004011774692879334
+ ],
+ "registered_criterion": 0.02,
+ "residual_is_shared_physics": false,
+ "rows": [
+  {
+   "difference": 0.038177278482877774,
+   "instrument": 0.04090482068426815,
+   "k": 0.0002,
+   "reference": 0.002727542201390376
+  },
+  {
+   "difference": 0.04562544597340312,
+   "instrument": 0.05215773100026966,
+   "k": 0.001,
+   "reference": 0.0065322850268665356
+  },
+  {
+   "difference": 0.11181306512506461,
+   "instrument": 0.11805391369491303,
+   "k": 0.005,
+   "reference": 0.006240848569848412
+  },
+  {
+   "difference": 0.11793722125683259,
+   "instrument": 0.12485315962429877,
+   "k": 0.01,
+   "reference": 0.006915938367466179
+  },
+  {
+   "difference": 0.08515098225425621,
+   "instrument": 0.0925857677160935,
+   "k": 0.02,
+   "reference": 0.00743478546183729
+  },
+  {
+   "difference": 0.07334032977019023,
+   "instrument": 0.08104089872150477,
+   "k": 0.05,
+   "reference": 0.007700568951314546
+  },
+  {
+   "difference": 0.087076172962546,
+   "instrument": 0.09485436310574724,
+   "k": 0.1,
+   "reference": 0.007778190143201247
+  },
+  {
+   "difference": 0.08905893728895276,
+   "instrument": 0.09686175640369843,
+   "k": 0.3,
+   "reference": 0.007802819114745674
+  },
+  {
+   "difference": 0.09264198629255138,
+   "instrument": 0.10044897672043729,
+   "k": 1.0,
+   "reference": 0.007806990427885907
+  }
+ ],
+ "worst_difference": 0.11793722125683259,
+ "worst_instrument": 0.12485315962429877,
+ "worst_reference": 0.007802819114745674,
+ "z": [
+  482.2030692296128,
+  12.833076687240304
+ ]
+}

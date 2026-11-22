@@ -166,13 +166,33 @@ class Model3:
     RD_BOUNDS = (100.0, 220.0)
     RD_BORROWED = (120.0, 170.0)
 
+    # ⛭⛭ ** RDFIX: THE RULER CALIBRATED INSTEAD OF MINIMISED, r7854 (60) ON ORDER r7851 ④. **
+    # *The published analysis calibrates `r_d` from the sound horizon at the drag epoch; this
+    # harness MINIMISES it, and `cc66` measured the two treatments as materially different
+    # constraints -- `chi2_bao` of `31.63` at a calibrated `147.06` Mpc against `14.56` at a
+    # minimised `148.66`.  The order asks that BOTH be carried in the control re-run so the ruler's
+    # effect and the potential's are read apart.*
+    #   ⚠ ** THIS INSTRUMENT CARRIES NO DRAG-EPOCH SOUND HORIZON OF ITS OWN **, only `r_s` at
+    #   recombination, so a calibrated value has to come from somewhere.  `RDFIX` takes it as a
+    #   NUMBER FROM THE CALLER, who states where it came from, rather than this file deriving one
+    #   it cannot derive.  *For the control that number is the reference pipeline's own `rdrag` at
+    #   the control's cosmology, which is legitimate because the control IS the reference's model.
+    #   For the arm of record it would not be, and the receipt says so rather than carrying it.*
+    # ⚠ DEFAULT UNSET: the ruler is minimised exactly as before, and the cached key carries the
+    #   mode so the two treatments cannot share an entry.
+    RDFIX = (float(os.environ['RDFIX']) if os.environ.get('RDFIX') else None)
+
     def bao_direct(self, H0, OM, bounds=None):
         b = self.RD_BOUNDS if bounds is None else tuple(bounds)
-        key = (round(H0, 6), round(OM, 7), b)
+        key = (round(H0, 6), round(OM, 7), b, self.RDFIX)
         if key not in self._bao:
-            r = minimize_scalar(lambda rd: DI.chi2_bao(H0, OM, rd, ARMS[self.arm]['E']),
-                                bounds=b, method='bounded')
-            self._bao[key] = (float(r.fun), float(r.x))
+            if self.RDFIX is not None:
+                self._bao[key] = (float(DI.chi2_bao(H0, OM, self.RDFIX,
+                                                    ARMS[self.arm]['E'])), float(self.RDFIX))
+            else:
+                r = minimize_scalar(lambda rd: DI.chi2_bao(H0, OM, rd, ARMS[self.arm]['E']),
+                                    bounds=b, method='bounded')
+                self._bao[key] = (float(r.fun), float(r.x))
         return self._bao[key]
 
     def _build_bao_spline(self, half_steps=6, n_h0=17, n_om=401):
@@ -190,6 +210,10 @@ class Model3:
         self._bao_spl = RectBivariateSpline(h0, om, Z, kx=3, ky=3, s=0)
 
     def bao_error(self, rng, m=200):
+        # ** under RDFIX the term is evaluated exactly, so the tabulation error IS zero -- reported
+        #    as zero because nothing is tabulated, not because a check was skipped. **
+        if self.RDFIX is not None:
+            return 0.0
         if self._bao_spl is None:
             self._build_bao_spline()
         lo, hi = self._bao_lo, self._bao_hi
@@ -223,6 +247,16 @@ class Model3:
         return dict(points=tot, bound=bound, fraction=bound / float(tot), worst_chi2_added=worst)
 
     def chi2_bao(self, H0, OM):
+        # ⛭ ** WITH THE RULER FIXED THERE IS NOTHING TO TABULATE AWAY, r7854. **  *The spline exists
+        # to avoid the inner minimisation over `r_d` at every likelihood call.  Under `RDFIX` there
+        # is no inner minimisation -- one evaluation of the term -- so the EXACT value is as cheap
+        # as the interpolated one and the spline is simply not used.*
+        #   ⚠ And it must not be: the sampler's own guard measured the tabulation at `2.369e-01`
+        #   against a required `1e-3` in this mode, because a term that is sharp in `(H0, Om)` once
+        #   the ruler no longer absorbs their variation is not captured by the grid built for the
+        #   smooth one.  ** The guard was right and is left exactly as it is. **
+        if self.RDFIX is not None:
+            return self.bao_direct(H0, OM)
         if self._bao_spl is None:
             self._build_bao_spline()
         lo, hi = self._bao_lo, self._bao_hi
