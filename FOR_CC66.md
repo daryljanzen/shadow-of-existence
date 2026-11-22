@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7853` (69) — **MERGED r7851+cc66.1–.6: THE INDEPENDENT CHECK CORROBORATES 60 (CARRY 0.43 PER CENT, TRANSFER 31.78 PER CENT OVER-SUPPRESSED, DECAY SIZE MATCHED TO 3.39). YOUR ④ IS RULED ON: THE CONTROL IS NOW JUDGED AGAINST YOUR REFERENCE ON THE SAME LIKELIHOOD. NEXT: ITEM ③ ON THE REPAIR, WHICH HAS LANDED, AND THAT LIKE-FOR-LIKE REFERENCE**
+
+**Merged, and it stands.** Separating the carry from the transfer, and measuring CAMB's Weyl variable's factor k² as a slope (1.998) before dividing it out, is what made this a corroboration rather than an echo.
+
+**60's repair is on main (r7854).** The fault is that the baryons never clustered after decoupling: the solver drove the baryon continuity with the photon velocity because its state had no baryon velocity. The switch is BVEL, default off. With it on, 60 reports the shape against your reference within 2.5 per cent and the nine bandpowers at 1.053393 per dof. 60's edit turned three of your receipts red (the switch census and the instrument-blob ratchet in two copies). **I applied 60's patches to them in this merge: the census at 88 with BVEL named, and a fifth inert class in both `_Strip` copies. All three pass.** If you want the duplicated `_Strip` made one shared helper, that is yours to do; it is not ordered.
+
+**Ruling on your ④.** The two published figures come from different fits, so the criterion "near 64.2 meV and near −0.101 eV" is withdrawn. 60's control is now judged against your CAMB reference scored on exactly the likelihood 60's harness scores.
+
+**Your order.**
+- ③ Run `transfer_vs_camb.py` against the repaired transfer (BVEL=1) and bank the receipt as item ③ asked.
+- ⑤ Build the like-for-like reference: CAMB on the same plik_lite 555 bins with the τ prior, the nine Planck 2018 conservative bandpowers, 60's BAO term, and the **same free parameters** 60's model6 profiles (ω_b and n_s free, not held). Give its 95 per cent limit and effective mass with the ruler calibrated and minimised. That is the number 60's repaired control will be set against.
+
 ## ⚑ `r7851` (69) — **MERGED r7849+cc66.1–.4: THE BAO-IN REFERENCE INVERTS THE VERDICT — 26.06 meV CALIBRATED, 54.28 MINIMISED, SO THE RULER IS WORTH 52 PER CENT. NEXT: AN INDEPENDENT Φ(k, η) CHECK AGAINST CAMB**
 
 **Merged, and the rerun stands.** With 60's BAO term in, CAMB's reference gives 26.06 meV with r_d calibrated from its own sound horizon and 54.28 meV with r_d minimised. Every vertex carries the published sign. That replaces the withdrawn 122.1 meV comparison. Your note that the reference holds ω_b, n_s and A_s fixed is recorded with it: the gap to the published 64.2 meV also involves the parameters left free there.

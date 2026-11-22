@@ -289,15 +289,33 @@ def _tree_is_bL_plus_dneff(bL):
     disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red."""
     import ast as _ast
     class _Strip(_ast.NodeTransformer):
-        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU'}
-        # ⛭ r7835 (69): a fourth inert addition, MNU (r7836+60): its two assignments, the header print
-        #   that reports it, and `- ONU` in the two places the clustering matter loses it.  At the
-        #   default ONU is exactly zero, so stripping `x - ONU` back to `x` restores the old blob's AST.
+        # the landed four classes, with BVEL added as the fifth -- r7851 (69), applied from 60's r7854 patch,
+        #   measured by 60 on the LEAFGEOM=1 leg's blob: the landed blob is a fixed point, three real changes to
+        #   the landed code and one to the landed branch of the guard keep the row red, and only the dead-unset
+        #   BVEL branch passes
+        NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
+                 'BVEL', 'I_DB_F', 'I_TBF'}
 
+        # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
+        #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
         def visit_BinOp(self, node):
+            # ⛔ the BVEL test is read BEFORE the children are visited, because `visit_IfExp` below
+            #   would otherwise have already collapsed the guard to its `orelse` and left a `+ 0`.
+            r = node.right
+            if (isinstance(node.op, (_ast.Add, _ast.Sub)) and isinstance(r, _ast.IfExp)
+                    and isinstance(r.test, _ast.Name) and r.test.id == 'BVEL'
+                    and isinstance(r.orelse, _ast.Constant) and r.orelse.value == 0):
+                return self.visit(node.left)
             self.generic_visit(node)
             if isinstance(node.op, _ast.Sub) and isinstance(node.right, _ast.Name) and node.right.id == 'ONU':
                 return node.left
+            return node
+
+        # --- fifth class (b): any other IfExp on BVEL is the landed expression in its `orelse`.
+        def visit_IfExp(self, node):
+            self.generic_visit(node)
+            if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL':
+                return node.orelse
             return node
 
         def visit_Expr(self, node):
@@ -307,30 +325,52 @@ def _tree_is_bL_plus_dneff(bL):
             return node
 
         def visit_Call(self, node):
-            # ⛭ r7807+cc66: a third inert addition, POLSAVE's `config=_resolved_config()`, added at
-            #   69's order so the polarisation bank is decidable.  Same class as the COMBRHO config
-            #   key already accepted here: metadata written into a stored array, not a change to the
-            #   spectrum, and POLSAVE is off unless asked.  ⛔ Dropped ONLY on the `_POLS` call --
-            #   stripping `config=` from every `savez` would strip the three SAVE sites the older
-            #   blob already carries, and the ASTs would mismatch the other way.
             self.generic_visit(node)
             f = node.func
             if (isinstance(f, _ast.Attribute) and f.attr == 'savez' and node.args
                     and isinstance(node.args[0], _ast.Name) and node.args[0].id == '_POLS'):
                 node.keywords = [k for k in node.keywords if k.arg != 'config']
             return node
+
         def visit_Assign(self, node):
             t = node.targets[0]
             if isinstance(t, _ast.Name) and t.id in self.NAMES:
                 return None
+            # ⛔ an assignment whose VALUE IS ITSELF a BVEL guard is dead unset -- and the test is on the
+            #   whole value and not on its contents, so `out[...] = (-tb if BVEL else -tg) + ...`, whose
+            #   value is a BinOp, is REDUCED to the landed line rather than dropped.  `tb` is a landed
+            #   name elsewhere in this file, which is why this is not a name rule.
+            v = node.value
+            if (isinstance(v, _ast.IfExp) and isinstance(v.test, _ast.Name) and v.test.id == 'BVEL'):
+                return None
             self.generic_visit(node)
             return node
+
+        # --- fifth class (c): an added assertion that only states the layout invariant.
+        #     ⛔ *Scoped to an assert whose test NAMES `BVEL`, and not to asserts generally: a blanket
+        #     assert-drop would let a REMOVED assert through this ratchet, which is the opposite of
+        #     what it is for.*
+        def visit_Assert(self, node):
+            if "id='BVEL'" in _ast.dump(node.test):
+                return None
+            return node
+
         def visit_If(self, node):
             s = _ast.dump(node.test)
             if "id='DNEFF'" in s or "id='YHE'" in s:
                 return None
+            # --- fifth class (d): `if BVEL:` is dead unset, so it goes;
+            #     `if not BVEL:` wraps a landed statement, so the wrapper goes and the body stays.
+            if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL' and not node.orelse:
+                return None
+            if (isinstance(node.test, _ast.UnaryOp) and isinstance(node.test.op, _ast.Not)
+                    and isinstance(node.test.operand, _ast.Name) and node.test.operand.id == 'BVEL'
+                    and not node.orelse):
+                self.generic_visit(node)
+                return node.body
             self.generic_visit(node)
             return node
+
         def visit_Dict(self, node):
             self.generic_visit(node)
             keep = [(k, v) for k, v in zip(node.keys, node.values)

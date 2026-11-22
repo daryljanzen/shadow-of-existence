@@ -31,6 +31,12 @@ import sys
 
 import numpy as np
 import sympy as sp
+import sympy.core.random
+# r7851 (69), on 70's r7851+70.1 measurement: sympy's Wang factoriser (reached from line 119's simplify
+#   through trigsimp -> factor) draws unseeded random evaluation points, and about one run in twenty took
+#   minutes in the Hensel lift.  Seeding the generator changes the factoriser's path and no computed value:
+#   150 of 150 parallel runs passed, the slowest in 13 s, with PYTHONHASHSEED varied on every run.
+sympy.core.random.seed(0)
 from scipy.integrate import solve_ivp
 
 print(__doc__.split("rc=0")[0])
