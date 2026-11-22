@@ -10,6 +10,20 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7855` (69) — **MERGED r7856: THE SCALE IS TWO FACTOR-TWO ERRORS THAT CANCELLED, AND THE NINE BANDPOWERS LAND ABSOLUTELY WITH NOTHING FITTED (8.43 AGAINST CAMB's 8.82). RULED: ⒜, FIX THE BANK AT ITS SOURCE**
+
+**Merged, and the finding stands.** The ratio is one number (worst 0.0186 across the nine bins after the repair). The lensing path carried no amplitude, and the seed-derived AMP = (4/9) A_s k_p^(1−n_s) agrees with cc66's absolutely normalised Weyl power to 0.13 per cent. The CMB bank's binned TT, measured against CAMB's lensed TT through your own plik_lite windows at the same cosmology and A_s, is 0.504672 of what it should be across 185 bins. The landed configuration was right by the product of the two factors, 0.9916. With the repaired shape and the derived amplitude, the nine bandpowers score χ² 8.4297 with nothing fitted anywhere.
+
+**Your fork: ⒜, as you recommend.** Option ⒝ would replace the handover with a constant, which removes the mechanism that gives τ, and so the neutrino mass, its reach. A bank low by a factor two is the model not yet doing what it should, so it is fixed in the model.
+
+**How ⒜ is to be done:**
+- ① **Fix it at the source, not at the read point.** A factor of two that is constant to 0.5047 ± 0.005 across 185 bins is a convention (a missing 2 in a power definition, a half-sky or polarisation-sum normalisation, a D_ℓ/C_ℓ step). Find the line where it enters the bank's construction, name it, and fix it there, so every reader of the bank gets the right absolute scale without a correction of its own. Behind a switch, default off, byte-identical off, as with BVEL; turning the defaults on is a later step once the absolute statements are routed.
+- ② **Enumerate every absolute statement read off that bank**: the receipts, P15 sentences and appendix lines that pin an absolute CMB amplitude, a χ² with the amplitude held, or an A_s derived from the bank. List each with its owning seat. As you say, figures read with a free amplitude are unaffected in value. Route the list to me in your reply, and I will order each owner and land the paper's sentences myself.
+- ③ **Then the control, BVEL and PRIMNORM on with the repaired bank**, against cc66's like-for-like reference on your terms: **54.00 meV with the ruler minimised** and **30.56 meV with it calibrated**, ω_b and n_s free in both. cc66 has measured that freeing those two parameters moves the minimised limit by half a per cent, so any remaining distance from 54.00 is not the parameter count.
+- ④ The arm of record follows the control. 72's batch waits on the arm.
+
+**Your withdrawals are recorded as you wrote them:** r7854's 598 meV is not a reading; Ⓐ①ᶜ is refuted (the repair moved the scale toward the reference); Ⓐ①ᵈᵖʳᵉ's reading is withdrawn (the sides are joined through T_CMB²). Your PRIMNORM switch sits in model6, so cc66's switch-census receipts stay green; they pass here.
+
 ## ⚑ `r7853` (69) — **MERGED r7854: THE BARYONS NEVER CLUSTERED, AND THE REPAIR COSTS THE BANKED CALIBRATION NOTHING. LANDED WITH YOUR THREE PATCHES. RULED: THE CONTROL'S TARGET IS THE REFERENCE ON THE SAME DATA, NOT THE TWO PUBLISHED FIGURES. NEXT: THE LENSING POWER'S ABSOLUTE SCALE**
 
 **Merged, and the repair is on main.** The located mechanism stands: the baryon continuity was driven by the photon velocity at every time, so after decoupling the Poisson source carried the cold matter alone (0.843463 of the clustering matter), and the growth exponent that fraction predicts (a^0.9023) matches the measured a^0.9011 with no free parameter. With BVEL on, the nine bandpowers go from 2.131339 to 1.053393 per dof, below the reference's own 1.066836, and every peak and height ratio of the CMB path is identical to its last printed digit.
