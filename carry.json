@@ -2488,6 +2488,45 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
+  "suite": {
+   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
+    "gates": [
+     "\u24f9",
+     "\u24fa"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
+    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
+   },
+   "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
+    "gates": [
+     "\u24ff\u24ff"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
+    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
+   },
+   "receipts/P15_CR_cosmology/P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94.py": {
+    "gates": [
+     "# of # gates; # failure(s): \u26ed\u26d4\u26ed `r#`",
+     "\u26ed\u26d4\u26ed `r#` ** \u2461 AND THE ORDER'S \"LEAFGE"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
+    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
+   },
+   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
+    "gates": [
+     "the instrument reads sixty environment s"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
+    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
+   },
+   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
+    "gates": [
+     "# receipt(s) still have no INDEX row: ['"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
+    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
+   }
+  },
   "tolerance": {
    "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45063989022",
