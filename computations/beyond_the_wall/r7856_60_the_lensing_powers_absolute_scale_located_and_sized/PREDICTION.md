@@ -133,3 +133,59 @@ in `FOR_66_FROM_60.md`, with both branches stated and this seat's recommendation
 providing is not a property of the model. The `1.05` per dof `r7854` reported is a fit WITH an
 amplitude free; the reference's `8.8173` is a fit with NOTHING free. Those two numbers are not
 comparable and this revision will not compare them.*
+
+---
+
+# ⛔ AMENDMENT, BEFORE ANY COMPUTATION OF THIS REVISION EXISTS
+
+*Registered at the same time as the above and pushed before the first measurement. It is an
+amendment and not a rewrite: `Ⓐ①ᵇ` below stays exactly as registered and will be reported exactly as
+registered, including the fact that it passes for a reason that is not the reason it was written
+for. What is added is the arm that `Ⓐ①ᵇ` was MEANT to be.*
+
+**The defect, found by reading this instrument's own normalisation doctrine rather than by
+measuring.** `phiphi.py` states it in the file: every mode of this solve starts at `Φ = −1`, so
+
+    CMB    = AMP · exp(−2τ) · shape_cmb        (reionisation screens the high-`l` spectra)
+    phiphi = AMP           · shape_phiphi      (the lensing potential is not screened)
+
+and the instrument's lensing vector therefore carries **no primordial normalisation of its own**.
+⇒ So the bin-by-bin ratio `r_i = b_inst,i / b_camb,i` has a **magnitude that is pure convention**:
+since the data wants `A_lens · b_inst ≈ DATA` and the reference already sits on the data at a factor
+of `1.0025`, `r̄` is forced to be about `1/A_lens`, a number of order `1e9` whose size says nothing
+about physics. **`Ⓐ①ᵇ` as written will therefore pass, by nine orders of magnitude, and its passing
+will mean nothing.** It is reported as registered and marked as vacuous in the direction it was
+aimed.
+
+⌗ *What survives untouched: `Ⓐ①`'s criterion is on `r_i / r̄`, which is normalisation-free, and
+`Ⓐ①ᶜ` compares `r̄` BEFORE against `r̄` AFTER in one convention, so their ratio is physical. Only the
+absolute magnitude of a single `r̄` was ill-posed.*
+
+### Ⓐ①ᵈ — THE ARM `Ⓐ①ᵇ` WAS MEANT TO BE: ONE `AMP`, FITTED TWICE
+
+`AMP` is a single number in the physics and it appears in both expressions above. So it can be
+fitted twice, independently, and the two answers compared:
+
+- `A_lens` — fitted on the nine lensing bandpowers alone. **Already measured and declared above:
+  `8.164235700977891e-10` repaired, `1.5768615382253947e-09` landed.**
+- `A_cmb` — fitted on this instrument's own TT/TE/EE spectra at the control's point, which
+  `score_ttteee.chi2_of` returns beside its `χ²` as `A = (m·F·d)/(m·F·m)`. **Not yet computed.**
+
+**Ⓐ①ᵈ CRITERION, fixed now: the two disagree by more than ten per cent** — `|A_lens/A_cmb − 1| >
+0.10` with the `exp(−2τ)` screening accounted for explicitly and stated. ⇒ *Reachable negative: they
+could agree, in which case the joint fit's compromise is NOT a normalisation conflict and `Ⓑ②ᵇ`'s
+expected carrier is refuted at its root.*
+
+- **Ⓐ①ᵈ ᵖʳᵉ — AND THE TWO ARE THE SAME QUANTITY, ASSERTED AND NOT ASSUMED.** Before the ratio is
+  read as a gap, the two fits must be shown to be fitting one number and not two differently-scaled
+  ones: the guard is that a label can be many-to-one on the object. **CRITERION: both fitted
+  amplitudes come out of the same order of magnitude** (`1e-11` to `1e-7`), which is what it means
+  for the one `Φ = −1` seed to be feeding both. ⇒ *Reachable negative, and if it fails then
+  `A_lens/A_cmb` is a comparison between two conventions and NOT a physical gap — in which case this
+  revision says the two sides were never put on one `AMP`, which is itself the finding, and does not
+  report a ratio of incommensurables as a factor.*
+
+⌗ *This seat expects `Ⓐ①ᵈ ᵖʳᵉ` to HOLD and `Ⓐ①ᵈ` to FAIL to agree — i.e. one seed, two different
+answers — because the stub in `phiphi.py` that was meant to read the CMB-determined amplitude across
+to the lensing side assigns `amp = None` in both of its branches, so the two sides have in fact never
+been put on one number. That reading of the source is declared here; the measurement is not made.*
