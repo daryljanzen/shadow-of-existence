@@ -54,10 +54,10 @@ the convention was IDENTIFIED with the help of their number and then used indepe
 ** THE PINS ARE VERIFIED FAILABLE BY PERTURBATION, NOT ASSUMED TO BE. **  Each banked figure was
 moved in turn and the arms that read it watched to redden, then restored from git:
   * scaling the banked TT mean by 1.02 reddens FIVE arms -- Ⓓ⑧ (0.503313 -> 0.513379), Ⓓ⑨'s
-    agreement with 60, Ⓖ⑭'s TT-EE closeness, Ⓘ⑯'s departure from one half and Ⓘ⑰'s strength;
-  * scaling the banked EE mean by 1.05 reddens Ⓖ⑬ (0.497180 -> 0.522039) and Ⓖ⑭;
-  * widening the TT spread by 20 per cent reddens Ⓔ⑩ (0.056634 -> 0.067961) and Ⓔ⑪'s ratio;
-  * setting the slope to 1e-3 per bin reddens Ⓔ⑫, so "not a slope" is a test and not a remark.
+    agreement with 60, Ⓖ⑮'s TT-EE closeness, Ⓘ⑰'s departure from one half and Ⓘ⑱'s strength;
+  * scaling the banked EE mean by 1.05 reddens Ⓖ⑭ (0.497180 -> 0.522039) and Ⓖ⑮;
+  * widening the TT spread by 20 per cent reddens Ⓔ⑪ (0.056634 -> 0.067961) and Ⓔ⑫'s ratio;
+  * setting the slope to 1e-3 per bin reddens Ⓔ⑬, so "not a slope" is a test and not a remark.
 Each was applied to the banked comparison in place, the run watched, and the file restored from a
 copy; the four runs reddened 5, 2, 2 and 1 arms and NOTHING ELSE.
 
@@ -162,34 +162,40 @@ check('Ⓓ⑧ the factor REPRODUCES: the bank\'s binned TT is 0.5033 of CAMB\'s'
       abs(tt['abs_mean'] - 0.5033) < 0.0002,
       'mean %.6f  (pinned 0.5033 +/- 0.0002)' % tt['abs_mean'])
 
-check('Ⓓ⑨ and that is 60\'s 0.504672 to 0.27 per cent, independently',
-      abs(100 * abs(tt['abs_mean'] / SIXTY['factor'] - 1.0) - 0.27) < 0.04,
-      'agreement %.4f per cent' % (100 * abs(tt['abs_mean'] / SIXTY['factor'] - 1.0)))
+check('Ⓓ⑨ and the figure it is compared against is 60\'s reported 0.504672, pinned so a restated '
+      'comparator reddens rather than passing silently',
+      abs(SIXTY['factor'] - 0.504672) < 0.00025,
+      '60 report %.6f  (pinned 0.504672 +/- 0.00025)' % SIXTY['factor'])
 
-check('Ⓔ⑩ ⛔ BUT THE SPREAD IS 0.0566, so the factor is NOT flat to the precision reported',
+check('Ⓓ⑩ so the reproduction is to 0.27 per cent, independently',
+      abs(100 * abs(tt['abs_mean'] / SIXTY['factor'] - 1.0) - 0.27) < 0.004,
+      'agreement %.4f per cent  (pinned 0.27 +/- 0.004)'
+      % (100 * abs(tt['abs_mean'] / SIXTY['factor'] - 1.0)))
+
+check('Ⓔ⑪ ⛔ BUT THE SPREAD IS 0.0566, so the factor is NOT flat to the precision reported',
       abs(tt['abs_spread'] - 0.0566) < 0.00004,
       'spread %.6f  (pinned 0.0566 +/- 0.00004)' % tt['abs_spread'])
 
 _their = SIXTY['hi'] - SIXTY['lo']
-check('Ⓔ⑪ which is 5.4 times the 0.0105 range they report -- this REFUTES this seat\'s own band Ⓑ',
+check('Ⓔ⑫ which is 5.4 times the 0.0105 range they report -- this REFUTES this seat\'s own band Ⓑ',
       abs(_their - 0.0105) < 0.00005 and abs(tt['abs_spread'] / _their - 5.4) < 0.04,
       'theirs %.6f, ratio %.3f  (pinned 5.4 +/- 0.04)' % (_their, tt['abs_spread'] / _their))
 
-check('Ⓔ⑫ and the departure is NOT a slope: under 1e-5 per bin, so it is oscillatory structure',
+check('Ⓔ⑬ and the departure is NOT a slope: under 1e-5 per bin, so it is oscillatory structure',
       abs(tt['abs_slope_per_bin']) < 1e-5,
       'slope %.3e per bin' % tt['abs_slope_per_bin'])
 
 # -------------------------------------------------------------- Ⓖ/Ⓗ item ②: TT alone or all
 ee, te = BLK['EE'], BLK['TE']
-check('Ⓖ⑬ item ②: EE carries the SAME factor, 0.4972, so it is not confined to TT',
+check('Ⓖ⑭ item ②: EE carries the SAME factor, 0.4972, so it is not confined to TT',
       abs(ee['abs_mean'] - 0.4972) < 0.0002,
       'EE mean %.6f  (pinned 0.4972 +/- 0.0002)' % ee['abs_mean'])
 
-check('Ⓖ⑭ and TT and EE agree to 0.0061, so ONE mis-normalisation sits upstream of both',
+check('Ⓖ⑮ and TT and EE agree to 0.0061, so ONE mis-normalisation sits upstream of both',
       abs(abs(tt['abs_mean'] - ee['abs_mean']) - 0.0061) < 0.00004,
       '|TT - EE| = %.6f  (pinned 0.0061 +/- 0.00004)' % abs(tt['abs_mean'] - ee['abs_mean']))
 
-check('Ⓗ⑮ TE is UNUSABLE and is declared so rather than quoted: its ratio spans negative to above '
+check('Ⓗ⑯ TE is UNUSABLE and is declared so rather than quoted: its ratio spans negative to above '
       'ten, because TE changes sign inside the instrument\'s reach',
       te['abs_min'] < 0.0 < te['abs_max'] and te['abs_max'] > 10.0 and te['abs_spread'] > 10.0,
       'TE ratio %.3f to %.3f, spread %.3f' % (te['abs_min'], te['abs_max'], te['abs_spread']))
@@ -197,17 +203,17 @@ check('Ⓗ⑮ TE is UNUSABLE and is declared so rather than quoted: its ratio sp
 # ------------------------------------------ Ⓘ not exactly one half, and how strongly that is known
 dep = tt['abs_mean'] - 0.5
 sem = (tt['abs_spread'] / 4.0) / np.sqrt(tt['n_bins'])          # range/4 as a crude sd, over sqrt N
-check('Ⓘ⑯ it is NOT exactly one half: the mean departs by 0.0033',
+check('Ⓘ⑰ it is NOT exactly one half: the mean departs by 0.0033',
       abs(dep - 0.0033) < 0.00004, 'departure %.6f  (pinned 0.0033 +/- 0.00004)' % dep)
 
-check('Ⓘ⑰ ⚠ but that is only three to four standard errors of the mean, where their much tighter '
+check('Ⓘ⑱ ⚠ but that is only three to four standard errors of the mean, where their much tighter '
       'range would have made it twenty -- so the claim is WEAKER than their numbers imply',
       2.0 < dep / sem < 6.0 and dep / (_their / 4.0 / np.sqrt(185)) > 15.0,
       'mine %.1f sigma, theirs would be %.1f' % (dep / sem,
                                                  dep / (_their / 4.0 / np.sqrt(185))))
 
-check('Ⓙ⑱ the count is COUNTED off the arms that ran and then pinned, not typed',
-      len(RAN) == 17, 'arms before this one: %d (pinned 17)' % len(RAN))
+check('Ⓙ⑲ the count is COUNTED off the arms that ran and then pinned, not typed',
+      len(RAN) == 18, 'arms before this one: %d (pinned 18)' % len(RAN))
 
 print()
 print('  %d arms, %d FAILED' % (len(RAN), len(FAILED)))
