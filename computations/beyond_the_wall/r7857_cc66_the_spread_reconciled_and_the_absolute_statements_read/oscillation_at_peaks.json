@@ -1,0 +1,19 @@
+{
+  "peak_220": {
+    "ell": 221.0,
+    "departure_per_cent": -0.33513981785147084
+  },
+  "peak_540": {
+    "ell": 536.0,
+    "departure_per_cent": 0.42712294222808644
+  },
+  "peak_812": {
+    "ell": 815.0,
+    "departure_per_cent": 2.534904842034491
+  },
+  "worst": {
+    "ell": 1920.0,
+    "departure_per_cent": -6.347043104583983
+  },
+  "rms_per_cent": 2.310164673899482
+}
