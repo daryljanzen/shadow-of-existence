@@ -198,6 +198,11 @@
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
     "unmeasured": true
    },
+   "receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45117688008",
+    "since": "ec8f58e74a58a9f682eed8d33c7ccc8dacc81a7e",
+    "unmeasured": true
+   },
    "receipts/L247_the_build_already_stands/B1_the_geometry_po14_asks_for_was_built_at_r2419.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45112763436",
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
@@ -241,6 +246,11 @@
    "receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45112763436",
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
+    "unmeasured": true
+   },
+   "receipts/L271_the_statistics_bake/S2_the_systematics_budget_is_absent_by_name_and_present_as_a_matched_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45117688008",
+    "since": "ec8f58e74a58a9f682eed8d33c7ccc8dacc81a7e",
     "unmeasured": true
    },
    "receipts/L280_the_ladder_waiver_is_checked/K1_the_ladder_waiver_is_checked_against_the_continuum.py": {
@@ -346,6 +356,11 @@
    "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45112763436",
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45117688008",
+    "since": "ec8f58e74a58a9f682eed8d33c7ccc8dacc81a7e",
     "unmeasured": true
    },
    "receipts/L_probability/S16_the_prefix_is_a_rewriting_job_not_an_adjudication_one_and_its_paper_half_and_source_half_have_opposite_right_answers.py": {
@@ -911,6 +926,11 @@
    "receipts/P15_CR_cosmology/C68_all_twenty_seven_owed_rows_are_performed_and_none_is_held_so_the_owed_class_was_redundant_assertion_and_six_fall_in_the_computable_class_the_negative_asked_for.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45112763436",
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C69_the_four_hundred_and_seventy_five_are_adjudicated_and_meaning_held_takes_none_of_them_so_three_of_four_pinned_numbers_miss_on_one_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45117688008",
+    "since": "ec8f58e74a58a9f682eed8d33c7ccc8dacc81a7e",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C70_seventy_one_per_cent_of_the_two_hundred_and_seventy_two_held_rows_are_computable_so_the_negative_misses_by_sixty_one_points_and_my_band_by_twenty_nine_and_the_cost_inverts.py": {
@@ -1751,6 +1771,11 @@
    "receipts/P15_CR_cosmology/P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45112763436",
     "since": "2b02f2f693fafe570e0bbbb1cf8082c4372ab013",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45117688008",
+    "since": "ec8f58e74a58a9f682eed8d33c7ccc8dacc81a7e",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py": {
