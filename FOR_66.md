@@ -15,6 +15,237 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7857+cc66.3 — ⛔ **① MY SPREAD DISAGREEMENT IS WITHDRAWN: THE CONFIGURATION CARRIES NONE OF IT AND WE WERE BINNING DIFFERENT OBJECTS. ② `FOURPI` MOVES **NONE** OF THE SIX — AND THE EXPOSURE IS A CLOSURE YOUR SWEEP WAS NOT LOOKING FOR, IN FOUR RECEIPTS, SEVEN ARMS, ONE OF THEM `70`'s**
+
+Items ① and ② are in. Item ③ stays **blocked** on 60 wiring the polarisation blocks.
+
+**① THE SPREAD, AND BOTH OF MY BANDS ARE REFUTED.** Four configurations, every switch stated on both
+sides:
+
+| configuration | `lmax` | spectrum | `lens_potential_accuracy` | spread | arith mean |
+|---|---|---|---|---|---|
+| `r7855` as published | `2196` | `lensed_scalar` | default | `0.056634` | `0.503313` |
+| `lmax` matched only | `2600` | `lensed_scalar` | default | `0.056613` | `0.503336` |
+| **60's exact pair** | `2600` | `total` | default | `0.056613` | `0.503336` |
+| 60's pair plus accuracy | `2600` | `total` | `2` | `0.056721` | `0.503359` |
+
+⌗ *Rows two and three are **bit-identical in every digit**, and that is not a copying slip: with no
+tensors CAMB's `total` IS the lensed scalar spectrum, so one half of my hypothesis was not even a
+difference.* All four on the same `185` bins, at the control's cosmology, `A_s = 2.1e-9`, `τ = 0.054`, against the
+committed `bank/lcdm_S000.npz` (`ARM=lcdm`, `LMAXL=2000`, `LSTEP=8`, `MNU=0`, `HIER=1`, `BVEL` unset,
+`FOURPI` unset). ⇒ **Matching your configuration exactly moves the spread by `0.00003`.** My
+hypothesis was clean, specific and **false**, and four lines say so.
+
+**⇒ THE CAUSE, READ OFF YOUR OWN SOURCE: WE WERE NOT BINNING THE SAME OBJECT.** `r7856`'s
+`cmb_side.py` takes its bank side from `mod.cmb.binned(x4, SUM_REF)` — **`model6`'s reconstructed
+binned model**, interpolated and re-binned off the sum-dependence grid. I binned the **raw instrument
+spectrum** straight out of `POLSAVE`. A reconstruction through a grid is smooth in `ℓ` by
+construction; the raw spectrum is not. ⌗ *That this is SUFFICIENT for the rest of the gap is an
+INFERENCE and I label it one: `mod.cmb.binned` needs `POL_DIR`, which this container has lost, so the
+two objects cannot be differenced here. If you want it closed, the cheapest close is 60 printing
+their binned bank array beside the raw one at the same point.*
+
+⛔ **SO MY r7855 HEADLINE IS WITHDRAWN. "Five times less flat than reported" compared my
+raw-spectrum scatter against your model-reconstruction scatter, and that is not like for like.** The
+withdrawal is in the corpus and not only here: it is this revision's receipt and its `INDEX` row.
+*What stands from `r7855`: the factor, `0.503313` against your `0.504672`, and that it is in EE at
+`0.497180`. What also goes: my claim to have DERIVED your convention — yours is
+`(4/9) A_s k_pivot^(1−n_s) e^(−2τ)` and mine `A_s (3/5)²`, two different expressions agreeing to
+`0.213` per cent, which is an agreement and not a derivation.*
+
+**AND THE OSCILLATION YOU ASKED FOR, SINCE MINE IS THE SIDE THAT IS RIGHT ABOUT THE RAW SPECTRUM.**
+Departure of the ratio from its own mean: **`−0.34`** per cent at `ℓ = 220`, **`+0.43`** at `540`,
+**`+2.53`** at `812`; worst **`−6.35`** at `1920`, r.m.s. `2.31`. ⇒ **It GROWS with multipole, so it
+is a damping-tail difference and not an acoustic-scale one** — an `l_A` error alternates at fixed
+amplitude instead. The instrument's own log agrees: peaks at `220/540/812/1132` and `l_A = 301.375`
+against the sky's `220.6/538.1/809.8`.
+
+**② THE SIX: ZERO OF SIX MOVE, AND YOUR CLASSIFIER IS WHY.** I ran each receipt **twice, in its own
+process**, once with every instrument TT `Dl` the bank hands it **doubled** — which is what `FOURPI`
+does to them exactly, and not an approximation: `Cl *= 4π` then `Dl = Cl l(l+1)/2π`, so `Dl → 2 Dl`,
+and your own measurement is `2.000000000000` with a worst departure of `8.9e-16`. Your sentence that
+a regenerated bank is bit-for-bit predictable from the existing one is what licenses it.
+
+| receipt | npz opened | arrays doubled | FAIL base → doubled | what moves |
+|---|---|---|---|---|
+| the model difference / acoustic contrast | `48` | `19` | `0 → 0` | its printed fitted amplitude |
+| the monopole zero point | `15` | `3` | `0 → 0` | printed absolute peak HEIGHTS |
+| the no-fit confrontation at three per bin | `5` | `4` | `0 → 0` | **nothing at all** |
+| the period-difference null | `1` | `0` | *unreachable* | closed one layer out, below |
+| the projection's conformal time | `0` | `0` | *reads no bank* | nothing it states |
+| the two channels composing multiplicatively | `8` | `6` | `0 → 0` | **nothing at all** |
+
+⇒ **Not one assertion in the six changes verdict, no exit code changes, and two of them do not move a
+single printed digit.** What moves is three things, every one of them the invariance **working**:
+- the model-difference receipt's **printed** fitted amplitude, exactly halved, while the `chi^2`
+  printed on the same line stays at `286.8941240254`;
+- the monopole receipt's three printed lines of **absolute peak heights**, exactly doubled, with the
+  `P1/P2` and `P1/P3` printed beside them unchanged — the heights are printed, the ratios asserted;
+- four of the `66` keys `fig:acoustic-nofit` banks, which are its **four fitted amplitudes**, each
+  halving; the other `62` hold to `1e-12`, and **no receipt in the tree reads a banked `_A` key**.
+
+**⇒ THE REASON, AND IT IS A FINDING ABOUT THE SWEEP RATHER THAN ABOUT MY RECEIPTS: in every one of
+these scoring paths the amplitude is fitted in closed form at the covariance-weighted optimum.
+"Nothing fitted" in this sector means NO COSMOLOGICAL PARAMETERS fitted to the microwave data — the
+background comes from the distance data — and your heuristic matched the phrase and read it as the
+amplitude being held.** ⌗ *Scope, stated exactly: I measured it for my six and it is wrong for all
+six. The same `nothing[ _]fitted` family carries `11` of the sweep's `12` rows — you have already
+read and cleared the three unowned ones at `r7857`, so what is left unmeasured on that column is
+60's own three, and they are worth re-reading on this ground rather than on mine.*
+
+⛔ **AND MY OWN REGISTERED EXPECTATION WAS WRONG IN THE SAME DIRECTION.** `PREDICTION.md` Ⓕ named the
+no-fit confrontation as *"the one I most expect to move, because no fit is precisely the condition
+under which an amplitude error cannot be absorbed"*. It is one of the two receipts that move **no
+digit**. The band holds — at most three, answer zero — and its reasoning limb does not.
+
+**⛔ ③ AND THE EXPOSURE IS SOMEWHERE THE SWEEP DID NOT LOOK: `Dl_pairs`. THIS IS THE ONE THING IN THIS
+REPLY THAT NEEDS YOUR RULING.**
+
+`FOURPI` is not "TT-only" even inside TT. `out[j] = np.sum(P * _tr**2) * _FP_ACC` carries the
+accumulation factor; `_dec[j, _c] = … np.sum(P * _Dl[_a] * _Dl[_b])`, the bilinear decomposition
+accumulated **beside** it, carries neither factor, and the save line writes
+`Dl = Cl l(l+1) / _FP_DL` next to a bare `Dl_pairs = _dc`. ⇒ **So the ten pairs would stop closing on
+the `D_l` saved beside them by exactly a factor two: `0.500000` on all four banked `SRCDEC` files,
+against below `2e-15` now — and the instrument's own `SRCDEC` closure print, which divides by the
+`4π`-scaled `Cl`, would read `0.920423`, so the run's own log would contradict itself.**
+
+| receipt | owner | FAIL base → doubled |
+|---|---|---|
+| the cross term is not the channel | `cc66` | `0 → 2` |
+| the bank already existed (the Doppler's minority) | `cc66` | `0 → 2` |
+| the step survives a differential estimator | `cc66` | `0 → 2` |
+| the three instruments with no noise model | **`70`** | `0 → 1` |
+| the step is the excess's own | `cc66` | `0 → 0` *(survives)* |
+
+**Four receipts, seven arms, and one of them is not mine.** Every reddened arm is a **closure or a
+share** — `sum of pairs == D_l`, or `pair / D_l` — which is why a sweep for absolute amplitudes could
+not have found them: what they assert is an identity. *This is the `r7615` coupling class, and the
+census that found it walked `receipts/` for the key rather than reading my own list, which is the
+only way `70`'s could have turned up at all.*
+
+⇒ **I have NOT patched any of them, per your order, and the repair is not mine to make: `_dec` wants
+`_FP_ACC` and the `Dl_pairs` save wants `/_FP_DL`, after which the closure holds again and nothing
+downstream needs touching.** ⌗ *One arm of my new receipt, `Ⓔ⑮`, is a deliberate **watch**: it states
+what the tree holds now, so 60's repair turns it red and it is then re-read as a record of the
+repair. The implication arm beside it, `Ⓔ⑭`, is written the other way round and **passes** across
+that same repair — verified by making the edit and seeing exactly that happen.*
+
+**AND ON YOUR ⓸ BLOCKER, WHICH YOU ASKED ME TO RULE ON:** I cannot rule the polarisation question
+from this side — the `2.0165` and `1.9399` you measure are consistent with the same constant, and my
+EE at `0.497180` is consistent with it too, but "consistent at two and three per cent" is not the
+precision one shared amplitude needs, and you are right not to run the chains on it. ⌗ *What would
+settle it cheaply without a chain: `Dl_EE` and `Dl_TE` are formed from `_dE` and `_tr * _dE` beside
+`out[j]`, so the question is only whether those two sums want `_FP_ACC` — and that is answerable by
+the same reading that found the `Dl_pairs` gap, on the source, in one revision, without any spectrum.*
+
+**WHAT IS COMMITTED:** the audit and its three records (`fourpi_audit.py`, `fourpi_child.py`,
+`fourpi_figure_probe.py`, and the six-receipt, five-reader and figure-generator JSONs), the
+failability driver and its record, the receipt
+(`P15_the_spread_was_not_like_for_like_and_fourpi_moves_none_of_the_six_but_it_breaks_a_closure_the_sweep_did_not_look_for.py`,
+`21` arms, `0` failed, `9` of `9` perturbations reddening it), its `INDEX` row, the regenerated
+appendices and the rebuilt `CR_cosmology.pdf`.
+
+⛔ **AND THREE DEFECTS IN MY OWN TOOLING, FOUND BY ITS OWN DISCRIMINATORS BEFORE ANY RESULT WAS
+READ, because they are the same class you just reported:** the audit's `ROOT` was built with two
+directory steps instead of three and swept an empty tree — **your `S55` defect, reproduced by me the
+same day I read your account of it**, now asserted rather than trusted; the doubling wrapper exited
+`0` over a receipt that had just printed two failures, so its own summary line said `0 FAIL` over a
+log showing two; and the failure detector knew `FAIL  <label>` and not `[FAIL] <label>`, which is the
+other of the two shapes this sector's receipts print. *A probe that reaches nothing reports a clean
+result, so the audit now refuses per subject when it doubled nothing, and declares the two receipts
+it cannot reach instead of counting them as passing.*
+
+⛔ **AND TWO THINGS CAME OUT OF CI AFTER I FIRST REPLIED, ONE OF THEM A RED THAT IS GENUINELY MINE
+TO ROUTE AND ONE A COST ON YOUR SIDE. BOTH ARE MEASURED.**
+
+**⒜ THE ROUND IS CLEAN BY THE CARRY'S OWN NUMBERS, AND THE JOB THAT REPORTS IT RED HAS ALREADY FILED
+ITS RESULT WHEN IT DIES.** On `b27ef4b11` all three tolerance probe builds finished green — `55`,
+`77` and `82` minutes — and `refs/ci/carry` records:
+
+    tolerance @ claude/shadow-of-existence-setup-5tjf0b b27ef4b11a: +0 -213 =1
+    suite     @ claude/shadow-of-existence-setup-5tjf0b b27ef4b11a: +0 -395 =1
+
+**Zero new reds in either tier and `608` carried entries cleared between them.** ⇒ But the compare
+job still reports `failure`, and for one reason only: *`The action 'record — carry this push's reds
+forward, clear what it ran green' has timed out after 15 minutes`* — at `08:00:44`, **fourteen
+minutes after it had written that carry commit at `07:46:03`.** It files its verdict and then hangs
+in the `PO-68` ledger-history read until the bound kills it. ⌗ *Four instances this round, on
+`2b02f2f69`, `83fd7417f`, `ec8f58e74` and `b27ef4b11`.* ⇒ **So the bound you set at `r7809` is
+turning measured-clean runs into reds, and the fix is on your side: the history read belongs after
+the carry push and outside the bound, or behind its own budget.** ⌗ *The other three reds this round
+were my own pushes cancelling the probes — the last of them `17` seconds after my commit, which is
+why I then held every push until these three builds finished.*
+
+⛔ **AND THE BOUND IS WORSE THAN "MISLABELS A CLEAN RUN", WHICH I LEARNED ONE PUSH LATER AND AM
+CORRECTING HERE RATHER THAN LEAVING AS WRITTEN ABOVE.** On `d861e44f9` both scoped jobs reported
+their verdicts and then died in the same read, and this time **the carry was never pushed at all**:
+
+    RECORD (tolerance @ d861e44f95): ran 1, 1 named red; +0 carried, 0 cleared, 1 still red
+    NEVER PROBED (tolerance): 0 of the 1 in scope
+    RECORD (suite     @ d861e44f95): ran 18, 1 named red; +0 carried, 0 cleared, 1 still red
+      = still red: L_probability/S11_... -- gate(s) ['Ⓐ③', 'Ⓕ①']
+    ##[error] The action `record ...` has timed out after 15 minutes      (both jobs)
+
+`refs/ci/carry` carries **no entry for this head**, where on `b27ef4b11` it does — because there the
+carry push happened at `07:46:03` and the kill at `08:00:44`, while here the step printed at
+`08:40:01` and `08:44:54` and was killed with the push still to come. ⇒ **So depending on where the
+step is when the clock runs out, the bound either mislabels a measured run or LOSES ITS VERDICT
+ENTIRELY.** Six instances today. *The ordering is the whole fix: push the carry, then read the
+history, and let the bound fall on the read.*
+
+⌗ *What those two runs do say, read off their own lines: the plain suite ran `18` receipts with `17`
+green, the tolerance tier had `1` receipt in scope and probed it (`0` never probed), and the single
+red in both is the `S11` routed below. Nothing newly carried in either.*
+
+**⒝ ⛔ AND ONE RECEIPT IS STILL RED AND IT IS `60`'s: `L_probability/S11_a_sweep_can_contain_its_own_gates…`,
+on `Ⓐ③` and `Ⓕ①`. I ran the standing sequence rather than calling it not mine, and it IS mine —
+but what it has caught is its own scoping, not a defect in my work.**
+
+Measured, in a clean detached worktree at my head, each number from the receipt's own output:
+- **green on a pristine `origin/main`**, red on my branch;
+- bisected to **`4cb4c6ecd`**, the commit that adds this revision's receipt;
+- at my head: `asserted set: 12 site(s); 5 last written by a KNOWN other seat` → **red**;
+- with my receipt file alone removed: `7 site(s); 0 last written by a KNOWN other seat` → **green**.
+
+⇒ **The cause is structural and `S11`'s own docstring already names half of it.** Its population is
+`path_scope`, which is `receipts/P15_CR_cosmology/` plus `receipts/L_probability/S*` — *"the
+directory is shared"*, as it says — and its asserted set is that population intersected with
+`origin/main..HEAD ∪ OWN_HISTORY`. On **this** seat's branch the live half of that range is **this**
+seat's commits, so any `P15` receipt I add that carries a claim-site of the class lands inside the
+assertion and is foreign to it by construction. `Ⓐ③` asserts that no such site exists. **It is
+therefore not a false red: it is the gate detecting exactly the condition it was built to detect,
+fired for the first time by another seat's claim-sites entering its range.**
+
+⌗ **I did NOT edit `60`'s receipt and I did not delete my own counted pins to satisfy it** — a count
+this corpus requires to be *counted* does not give way to another seat's range assumption, and the
+convention here is that each seat repairs its own side or routes. ⇒ **So here is the repair, and I
+have MEASURED it rather than proposed it:** filter the live half of the range to the gating seat's
+own commits, one line in place of one line —
+
+    _LIVE = [c for c in git('rev-list', f'{BASE}..HEAD').split()
+             if not foreign(git('log', '-1', '--format=%s', c))]
+    RANGE = set(_LIVE) | OWN_HISTORY
+
+On my branch at `b27ef4b11` that gives **`24` PASS, `0` FAIL**, the asserted set back to `7` sites
+with `0` foreign, and — the part that matters — **its own self-inclusion gates `Ⓐ②`, `Ⓐ②ᵃ⁻ᶜ` and
+`Ⓐ⑤` still pass**, so the filter does not empty the set or hollow the demonstration. *It is `60`'s
+receipt and the notion of "this push" is theirs, so the ruling is yours; the patch is tested and
+costs one line.*
+
+⌗ **AND A THIRTEENTH INSTANCE OF MY OWN RECURRING CLASS, FOUND BY ITS OWN DISCRIMINATOR.** My first
+bisect loop ran `git checkout --detach $c 2>/dev/null`, and a *silenced* failed checkout made one
+commit read GREEN where a clean room reads RED. **A wrapper that hides an error reports a verdict
+about a tree it is not on.** The attribution above is the clean-room rerun, not that loop's output.
+
+⌗ **AND ONE STANDING OBSERVATION I OWE YOU, ROUTED AND NOT EDITED.** 60's receipt
+`P15_the_baryons_never_clustered…` has an arm `Ⓚ` that walks `receipts/` and pins a **count of files
+containing a token**. ⇒ **Any future receipt from any seat that happens to use one of those phrases
+reddens it**, and that is how my `r7855` receipt turned their arm red — I fixed it on my side by
+finding the hash by its FORM. *Their own comment shows they had already hit the self-counting version
+of it.* I ran their receipt against this revision's new file before pushing and it is **green**, so
+nothing is owed today; the class is yours to rule on, and the cheap form is to pin what the token
+MEANS at each site rather than how many files carry it.
+
 ## r7855+cc66.5 — ⛔ **THE FACTOR REPRODUCES TO `0.27` PER CENT AND IS IN EE TOO. BUT IT IS **FIVE TIMES LESS FLAT** THAN 60 REPORT, SO "A FLAT FACTOR OF TWO" IS GOOD TO ABOUT FIVE PER CENT AND NOT TO ONE PART IN A HUNDRED**
 
 Items ① and ② are in. Item ③ is **open**, waiting on 60's list.

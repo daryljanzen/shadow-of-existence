@@ -1,0 +1,323 @@
+{
+ "P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py": {
+  "rc_base": 0,
+  "rc_doubled": 1,
+  "arrays_doubled": 4,
+  "archives_opened": 7,
+  "which": "['r6911_source_cr_leafrec1.npz:Dl', 'r6911_source_lcdm.npz:Dl', 'r6915_pairs_cr_leafrec1.npz:Dl', 'r6915_pairs_lcdm.npz:Dl']",
+  "lines": [
+   359,
+   343
+  ],
+  "fails_base": [],
+  "fails_doubled": [
+   "[lcdm] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can hold   (got max relative |sum of pairs - D_l| = 5.000e-01 over 238 multipoles, 11 slices, 2547 modes)",
+   "[cr] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can hold   (got max relative |sum of pairs - D_l| = 5.000e-01 over 238 multipoles, 6 slices, 1452 modes)"
+  ],
+  "moved": [
+   [
+    "[PASS] [lcdm] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that ca",
+    "[FAIL] [lcdm] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that ca",
+    455373406193078.3
+   ],
+   [
+    "[PASS] [cr] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can ",
+    "[FAIL] [cr] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can ",
+    311332503113325.0
+   ],
+   [
+    "[PASS] \u26d4 and the SPECTRA really do NOT add without the cross terms, which is the premise correction stated as a measurement rather than as an argument",
+    "[PASS] \u26d4 and the SPECTRA really do NOT add without the cross terms, which is the premise correction stated as a measurement rather than as an argument",
+    1.6511627906976745
+   ],
+   [
+    "sw*sw          0.50921     0.52371       0.0758       0.0760   yes",
+    "sw*sw          0.25460     0.26185       0.0379       0.0380   yes",
+    0.4999901808684039
+   ],
+   [
+    "sw*dp          0.26314     0.26176       0.0373       0.0359   yes",
+    "sw*dp          0.13157     0.13088       0.0187       0.0180   yes",
+    0.5
+   ],
+   [
+    "sw*isw         0.03293     0.03147      -0.0731      -0.0722   NO -- statistic not applied",
+    "sw*isw         0.01647     0.01574      -0.0366      -0.0361   NO -- statistic not applied",
+    0.5001518372304888
+   ],
+   [
+    "sw*pol        -0.00499    -0.00738      -0.0576      -0.0663   NO -- statistic not applied",
+    "sw*pol        -0.00249    -0.00369      -0.0288      -0.0332   NO -- statistic not applied",
+    0.498997995991984
+   ],
+   [
+    "dp*dp          0.18400     0.17457       0.0252       0.0222   yes",
+    "dp*dp          0.09200     0.08729       0.0126       0.0111   yes",
+    0.5
+   ],
+   [
+    "dp*isw         0.00128     0.00130      -0.1508      -0.1520   NO -- statistic not applied",
+    "dp*isw         0.00064     0.00065      -0.0754      -0.0760   NO -- statistic not applied",
+    0.5
+   ],
+   [
+    "dp*pol         0.00239     0.00227      -0.0005      -0.0007   NO -- statistic not applied",
+    "dp*pol         0.00119     0.00114      -0.0002      -0.0004   NO -- statistic not applied",
+    0.497907949790795
+   ],
+   [
+    "isw*isw        0.00968     0.00965       0.0001       0.0001   yes",
+    "isw*isw        0.00484     0.00482       0.0000       0.0000   yes",
+    0.5
+   ],
+   [
+    "isw*pol        0.00054     0.00061      -0.0084      -0.0085   NO -- statistic not applied",
+    "isw*pol        0.00027     0.00031      -0.0042      -0.0042   NO -- statistic not applied",
+    0.5
+   ],
+   [
+    "pol*pol        0.00183     0.00204       0.0003       0.0003   yes",
+    "pol*pol        0.00091     0.00102       0.0001       0.0002   yes",
+    0.4972677595628415
+   ],
+   [
+    "43 per cent.  ** What closes is the full bilinear decomposition, ten pair",
+    "71 per cent.  ** What closes is the full bilinear decomposition, ten pair",
+    1.6511627906976745
+   ],
+   [
+    "spectra summing to D_l to 1.6e-15 relative on both arms, and that is the gate. **  *This is not",
+    "spectra summing to D_l to 5.0e-01 relative on both arms, and that is the gate. **  *This is not",
+    312500000000000.0
+   ],
+   [
+    "GATES: ALL PASS.",
+    "GATES: 2 FAILED:",
+    null
+   ],
+   [
+    "ESTABLISHED: the monopole-Doppler cross term carries +0.0003 to +0.0028 of the arms' +0.0415",
+    "- [cr] \u2691 ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can hold",
+    null
+   ]
+  ],
+  "secs": [
+   2.1,
+   2.2
+  ]
+ },
+ "P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 4,
+  "archives_opened": 9,
+  "which": "['r6915_pairs_cr_leafrec1.npz:Dl', 'r6915_pairs_lcdm.npz:Dl', 'r6941_fine_cr_leafrec1.npz:Dl', 'r6941_fine_lcdm.npz:Dl']",
+  "lines": [
+   131,
+   131
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [
+   [
+    "[PASS] \u26d4 AND THE DOPPLER, BY THE SWAP ROUTE THAT REACHES BAND 1, IS NOISE AT THE STEP'S RESOLUTION: in sliding half-period windows its contribution ch",
+    "[PASS] \u26d4 AND THE DOPPLER, BY THE SWAP ROUTE THAT REACHES BAND 1, IS NOISE AT THE STEP'S RESOLUTION: in sliding half-period windows its contribution ch",
+    0.5384615384615384
+   ]
+  ],
+  "secs": [
+   49.2,
+   50.2
+  ]
+ },
+ "P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess.py": {
+  "rc_base": 0,
+  "rc_doubled": 1,
+  "arrays_doubled": 4,
+  "archives_opened": 20,
+  "which": "['r6915_pairs_cr.npz:Dl', 'r6915_pairs_lcdm.npz:Dl', 'r6941_fine_cr.npz:Dl', 'r6941_fine_lcdm.npz:Dl']",
+  "lines": [
+   97,
+   99
+  ],
+  "fails_base": [],
+  "fails_doubled": [
+   "\u26ed\u26ed THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multipole in the order the instrument fixes, and they sum to Dl exactly.  \u21d2 No run, no instrument change, and the order's escape hatch is not needed   (got max relative departure from Dl is 5.0e-01)",
+   "\u26ed AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the ARM as well as the control -- negative at every band on both, equal between the arms to a few per cent, and agreeing with cc66.55's three-point finite difference   (got arm against control to 4%, both against the finite difference to 48%)"
+  ],
+  "moved": [
+   [
+    "[PASS] \u26ed\u26ed THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multip",
+    "[FAIL] \u26ed\u26ed THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multip",
+    416666666666666.7
+   ],
+   [
+    "lcdm           -0.479    -0.857    -0.623    -0.654    -0.716    -0.571    -0.720",
+    "lcdm           -0.240    -0.429    -0.312    -0.327    -0.358    -0.286    -0.360",
+    0.5010438413361169
+   ],
+   [
+    "cr             -0.476    -0.861    -0.613    -0.644    -0.702    -0.549    -0.706",
+    "cr             -0.238    -0.431    -0.307    -0.322    -0.351    -0.275    -0.353",
+    0.5
+   ],
+   [
+    "[PASS] \u26ed AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the",
+    "[FAIL] \u26ed AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the",
+    6.857142857142857
+   ],
+   [
+    "mean    excess  +0.0046   +0.0081   +0.0077   +0.0071   +0.0107   +0.0075   +0.0072   fraction     +1%     -12%      +5%     +12%     +11%     +26%   ",
+    "mean    excess  +0.0046   +0.0081   +0.0077   +0.0071   +0.0107   +0.0075   +0.0072   fraction     +1%      -6%      +2%      +6%      +6%     +13%   ",
+    0.5
+   ],
+   [
+    "median  excess  +0.0116   +0.0082   +0.0029   +0.0090   +0.0130   +0.0100   +0.0083   fraction    +12%     -20%     -13%     +32%     +33%     +34%   ",
+    "median  excess  +0.0116   +0.0082   +0.0029   +0.0090   +0.0130   +0.0100   +0.0083   fraction     +6%     -10%      -7%     +16%     +17%     +18%   ",
+    0.5
+   ],
+   [
+    "[PASS] \u26d4 AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under",
+    "[PASS] \u26d4 AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under",
+    0.5
+   ],
+   [
+    "[PASS] and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the ban",
+    "[PASS] and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the ban",
+    0.5
+   ],
+   [
+    "[PASS] \u26ed AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND I",
+    "[PASS] \u26ed AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND I",
+    0.5
+   ],
+   [
+    "[PASS] \u2317 and cc66.55's split is confirmed rather than assumed: the coupling's SIGN is the same on both envelopes while the FRACTION moves by about a f",
+    "[PASS] \u2317 and cc66.55's split is confirmed rather than assumed: the coupling's SIGN is the same on both envelopes while the FRACTION moves by about a f",
+    1.037037037037037
+   ],
+   [
+    "GATES: ALL PASS",
+    "GATES: 2 FAILED:",
+    null
+   ]
+  ],
+  "secs": [
+   0.3,
+   0.2
+  ]
+ },
+ "P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py": {
+  "rc_base": 0,
+  "rc_doubled": 1,
+  "arrays_doubled": 4,
+  "archives_opened": 5,
+  "which": "['r6915_pairs_cr.npz:Dl', 'r6915_pairs_lcdm.npz:Dl', 'r6941_fine_cr.npz:Dl', 'r6941_fine_lcdm.npz:Dl']",
+  "lines": [
+   121,
+   123
+  ],
+  "fails_base": [],
+  "fails_doubled": [
+   "\u21d2 AND NO SINGLE TERM CARRIES IT: removing each term in turn, the fractional losses SUM TO FAR MORE THAN ONE, so the step is not additive across the terms and is a property of the SUM.  ** That is the pre-registered NULL on the naming \u24f6 asked for, reported as a null **   (got the losses sum to 57%; the largest single loss is 23% (dp*dp))",
+   "AND THE MONOPOLE CARRIES THE OSCILLATION WITHOUT CARRYING THE STEP, which is what makes the leverage the readable quantity rather than the share   (got `sw*sw` is 44% of the oscillation at -1.61x leverage)"
+  ],
+  "moved": [
+   [
+    "[PASS] \u21d2 AND NO SINGLE TERM CARRIES IT: removing each term in turn, the fractional losses SUM TO FAR MORE THAN ONE, so the step is not additive across",
+    "[FAIL] \u21d2 AND NO SINGLE TERM CARRIES IT: removing each term in turn, the fractional losses SUM TO FAR MORE THAN ONE, so the step is not additive across",
+    0.3131868131868132
+   ],
+   [
+    "sw*dp       +29.1% of the step on   5.2% of the oscillation  => leverage +5.59x   <- Doppler",
+    "sw*dp       +13.9% of the step on   2.6% of the oscillation  => leverage +5.34x   <- Doppler",
+    0.4776632302405498
+   ],
+   [
+    "dp*dp       +46.2% of the step on  12.2% of the oscillation  => leverage +3.80x   <- Doppler",
+    "dp*dp       +23.5% of the step on   6.1% of the oscillation  => leverage +3.86x   <- Doppler",
+    0.5086580086580086
+   ],
+   [
+    "sw*isw      +39.3% of the step on  31.8% of the oscillation  => leverage +1.23x",
+    "sw*isw      +18.0% of the step on  15.9% of the oscillation  => leverage +1.13x",
+    0.45801526717557256
+   ],
+   [
+    "sw*sw       +63.4% of the step on  88.1% of the oscillation  => leverage +0.72x",
+    "sw*pol       +1.2% of the step on   2.9% of the oscillation  => leverage +0.43x",
+    0.01892744479495268
+   ],
+   [
+    "sw*pol       +3.0% of the step on   5.8% of the oscillation  => leverage +0.52x",
+    "dp*isw       -6.1% of the step on   6.7% of the oscillation  => leverage -0.92x   <- Doppler",
+    -2.033333333333333
+   ],
+   [
+    "dp*isw      -12.1% of the step on  13.3% of the oscillation  => leverage -0.91x   <- Doppler",
+    "sw*sw       -70.8% of the step on  44.0% of the oscillation  => leverage -1.61x",
+    5.851239669421488
+   ],
+   [
+    "isw*isw      -9.6% of the step on   4.6% of the oscillation  => leverage -2.07x",
+    "isw*isw      -4.7% of the step on   2.3% of the oscillation  => leverage -2.01x",
+    0.48958333333333337
+   ],
+   [
+    "[PASS] \u26ed\u26ed BUT THE LEVERAGE IS NOT FLAT, AND THAT IS WHAT THE NULL LEAVES STANDING: the two highest-leverage terms BOTH carry a Doppler factor, and the",
+    "[PASS] \u26ed\u26ed BUT THE LEVERAGE IS NOT FLAT, AND THAT IS WHAT THE NULL LEAVES STANDING: the two highest-leverage terms BOTH carry a Doppler factor, and the",
+    0.9552772808586762
+   ],
+   [
+    "[PASS] AND THE MONOPOLE CARRIES THE OSCILLATION WITHOUT CARRYING THE STEP, which is what makes the leverage the readable quantity rather than the shar",
+    "[FAIL] AND THE MONOPOLE CARRIES THE OSCILLATION WITHOUT CARRYING THE STEP, which is what makes the leverage the readable quantity rather than the shar",
+    0.5
+   ],
+   [
+    "[PASS] \u26a0 AND THE EXCEPTION IS NAMED RATHER THAN DROPPED: a Doppler-bearing term has NEGATIVE leverage, so the claim is \"the two highest-leverage terms",
+    "[PASS] \u26a0 AND THE EXCEPTION IS NAMED RATHER THAN DROPPED: a Doppler-bearing term has NEGATIVE leverage, so the claim is \"the two highest-leverage terms",
+    1.010989010989011
+   ],
+   [
+    "GATES: ALL PASS",
+    "GATES: 2 FAILED:",
+    null
+   ]
+  ],
+  "secs": [
+   0.3,
+   0.3
+  ]
+ },
+ "P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py": {
+  "rc_base": 0,
+  "rc_doubled": 1,
+  "arrays_doubled": 3,
+  "archives_opened": 4,
+  "which": "['cc66_r185_verify_cr_leafrec1.npz:Dl', 'cc66_r185_verify_lcdm.npz:Dl', 'r6915_pairs_lcdm.npz:Dl']",
+  "lines": [
+   80,
+   81
+  ],
+  "fails_base": [],
+  "fails_doubled": [
+   "\u26d4 SRCDEC GETS NO NOISE MODEL FOR ANY SINGLE TERM, AND THIS IS STRUCTURAL: its pair terms sum to the one spectrum the sky measures, so only the SUM has a data counterpart -- whose noise model is the contrast's, above   (got 10 terms close to the total to 5.0e-01)"
+  ],
+  "moved": [
+   [
+    "[PASS] \u26d4 SRCDEC GETS NO NOISE MODEL FOR ANY SINGLE TERM, AND THIS IS STRUCTURAL: its pair terms sum to the one spectrum the sky measures, so only the ",
+    "[FAIL] \u26d4 SRCDEC GETS NO NOISE MODEL FOR ANY SINGLE TERM, AND THIS IS STRUCTURAL: its pair terms sum to the one spectrum the sky measures, so only the ",
+    499999999999999.94
+   ],
+   [
+    "GATES: ALL PASS",
+    "GATES: 1 FAILED:",
+    null
+   ]
+  ],
+  "secs": [
+   5.1,
+   5.2
+  ]
+ }
+}

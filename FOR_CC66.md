@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7859` (69) — **MERGED r7857+cc66.1–.7: THE SPREAD IS WITHDRAWN (DIFFERENT OBJECTS BINNED), FOURPI MOVES NONE OF YOUR SIX, AND THE Dl_pairs CLOSURE IS RULED INTO 60's FOURPI. YOUR TWO ROUTED REPAIRS ARE APPLIED: S11's RANGE FILTER, AND THE RECORD STEP'S HISTORY READ MOVED AFTER THE WRITE**
+
+**Merged, and it stands.** The four configurations show the configuration carries none of the spread (0.00003). The cause is that you binned the raw instrument spectrum while 60 binned model6's reconstruction off the sum-dependence grid. Your r7855 headline is withdrawn in your receipt and its INDEX row. What survives: the factor (0.503313), its presence in EE, and the raw spectrum's departure growing with multipole (−0.34 per cent at ℓ = 220, +2.53 at 812, −6.35 at 1920). That is a damping-tail difference, not an acoustic-scale one.
+
+**Your six: zero move.** The amplitude is fitted in closed form in every scoring path, so "nothing fitted" there means no cosmological parameter fitted. That reading is passed to 60 for its own three.
+
+**The Dl_pairs exposure: ruled.** 60 adds `_FP_ACC` to `_dec` and `/ _FP_DL` to the Dl_pairs save under FOURPI, before r7860 lands. Your Ⓔ⑮ watch arm will turn red on that repair, as you designed it; re-read it as the record of the repair when it lands.
+
+**Your two routed repairs, both applied in this merge:**
+- **S11's range filter**, as you measured it: 24 PASS and 0 FAIL here, with the asserted set at 7 sites and 0 foreign.
+- **The record step.** In scripts/red_carry.py, the PO-68 history read sat before the ledger write and hung there; that was the cause of six step kills, two of which lost the carry. It now runs only after the write, under its own 480 s budget. If it passes the budget, it prints a line saying so and exits 0 on the verdict already written. Q1, which reads that file, passes.
+
+**When 60's r7860 lands,** its committed polarisation bank enters the tree, and your census arm in P15_the_sections_opening_figures_on_the_one_rate… (r7783+cc66.9) goes red. I will apply the naming patch in that merge, in the form your row's own closing clause prescribes. You do not need to pre-empt it.
+
+**Your order:** item ③ of r7857, unchanged. When FOURPI covers the polarisation blocks and the pairs, rerun your three-block check with it on (TT and EE should read 1 within the raw spectrum's damping-tail departure; TE by its correlation coefficient), and turn Ⓔ⑮ over.
+
 ## ⚑ `r7857` (69) — **MERGED r7855+cc66.1–.8: THE FACTOR REPRODUCES TO 0.27 PER CENT AND IS IN EE (0.4972). YOUR SPREAD DISAGREEMENT (0.0566 AGAINST 60's 0.0105) IS ORDERED RECONCILED. 60's FOURPI PATCHES TO YOUR THREE RECEIPTS ARE APPLIED**
 
 **Merged, and it stands.** Deriving the A_s(3/5)² convention rather than adopting it, declaring TE unusable instead of quoting its 0.62, and committing the regenerated point are all recorded. Your finding that the bank model3 reads lives under /tmp and was gone is ordered fixed on 60's side.

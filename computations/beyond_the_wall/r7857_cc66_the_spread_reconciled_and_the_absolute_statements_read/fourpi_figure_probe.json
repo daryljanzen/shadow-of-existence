@@ -1,0 +1,25 @@
+{
+ "worst": 0.5,
+ "moved": [
+  [
+   "nofit_cr_A",
+   0.5
+  ],
+  [
+   "nofit_lcdm_A",
+   0.5
+  ],
+  [
+   "refit_cr_A",
+   0.5
+  ],
+  [
+   "refit_lcdm_A",
+   0.5
+  ]
+ ],
+ "keys": 66,
+ "hits_base": 0,
+ "hits_doubled": 4,
+ "live_unchanged": true
+}
