@@ -1,0 +1,17 @@
+{
+  "blob": "e5319ce4968602ca6d8de89fdc871e8f9b0a645e",
+  "checks": {
+    "control, kept RED: a landed constant moved": true,
+    "control, kept RED: a landed default moved (TCSW 3.0 -> 3.5)": true,
+    "control, kept RED: a landed line deleted": true,
+    "control, kept RED: an UNGUARDED factor on a landed expression": true,
+    "control, kept RED: the LANDED operand of the new factor changed": true,
+    "control, kept RED: the guard made live-when-off (1.0 -> 2.0)": true,
+    "the landed FIVE classes leave this tree RED (so the sixth is needed, not decorative)": true,
+    "with the sixth class the tree reduces to the banked blob": true
+  },
+  "holds": true,
+  "n": 8,
+  "n_hold": 8,
+  "third_site_passes": true
+}

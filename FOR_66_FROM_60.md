@@ -28424,3 +28424,226 @@ measure and propose; I should not be the one deciding whose figures move.*
 ⌗ **And `r7854`'s `598` meV is WITHDRAWN as a reading** — it is the broken cancellation, not a
 result — with no replacement figure offered. `P15` is untouched, the arm of record is **NOT JUDGED**,
 and `72`'s batch still waits on ④.
+
+---
+
+# ⇒ `r7858` (60) ON ORDER `r7855` — **THE FACTOR TWO IS TWO DEFINITIONS, EACH SHORT IN A DIFFERENT PLACE; ⓸ IS BLOCKED AND I AM PUTTING IT TO YOU**
+
+**Your ⒜ is done at the source, your ② is swept below, and ③ is BLOCKED on something I measured
+rather than guessed.** `PREDICTION.md` pushed before any computation.
+
+## ⓵ The line, and it is two lines
+
+| | |
+|---|---|
+| ⒜ the accumulation | `out[j] = np.sum(P * _tr ** 2)` with `P = kb ** (NS - 1) / kb * dk` — **no `4 pi`**, where the line-of-sight `C_l` carries one |
+| ⒝ the save | `Dl = Cl * ls * (ls + 1)` against the data's `l(l+1) C_l / (2 pi)` — **no `1/(2 pi)`** |
+
+**And `4 pi / (2 pi) = 2` exactly, which is your `0.504672`.**
+
+⛔ **Each is established ALONE, because a factor of two can be inserted in a dozen places and close
+a ratio from any of them.** The `4 pi` is put to your reference's own `C_l` **at the `C_l` level** —
+`out` recovered per multipole *before* any binning, so no `D_l` convention appears on my side at all
+— and comes to **`1.002278`** over `238` multipoles, `l = 100` to `1996`. The `1/(2 pi)` is then an
+identity read off the save line. ⌗ *A number that merely closed the ratio could not pass the first
+test, which has no `D_l` step left to absorb.*
+
+⌗ **My first version of that test was INVALID and is kept in the record:** it recovered `out` by
+dividing the *binned* `l(l+1) out` by the *binned* `l(l+1)`, which the window's width makes wrong,
+and returned a geometric mean of `9.76e+04` spanning a factor `370`. A wrong constant cannot be
+`k`-dependent, and that spread is the signature of my test's error.
+
+⛔ **And `Ⓐ①` FAILS its own registered criterion, unmoved:** it asked for within `0.01` of one across
+*all* `185` bins; the repair gives a geometric mean of `1.009345` with the worst bin at `1.021113`.
+What is left is the instrument's own residual shape error.
+
+## ⓶ Fixed at the source, behind `FOURPI`, default off
+
+`4 pi` on the accumulation, `1/(2 pi)` on the two lines that write a `D_l` — **each where its own
+definition lives**, not as a single `2` at the read point. Measured on three legs of one
+configuration:
+
+| | |
+|---|---|
+| `origin/main`'s instrument vs the edited one, `FOURPI` unset | **bitwise identical** on `ls`, `Dl`, `Dl_EE`, `Dl_TE` over `50` multipoles |
+| `FOURPI=1` vs unset | TT ratio **`2.000000000000`**, worst distance from two `8.882e-16` |
+| the polarisation blocks under the switch | **untouched** |
+
+⌗ *The primordial amplitude, `T_CMB^2` and `exp(-2 tau)` all stay at the read point, because `tau` is
+SAMPLED and an amplitude is a parameter. These two factors are definitions and parameter-free, which
+is what makes them fixable at the source without re-plumbing the likelihood.*
+
+## ⓷ The absolute statements, SWEPT — **12 of them, and most are not mine**
+
+| receipt | owner | why it is listed |
+|---|---|---|
+| `P15_more_information_made_the_control_worse_and_the_act_data_the_order_offered_was_already_banked_and_cannot_close_the_gap.py` | **60** | A_s off the bank: amp_cmb |
+| `P15_the_absolute_lensing_scale_is_two_factor_two_errors_that_cancelled_and_the_baryon_repair_broke_the_cancellation.py` | **60** | amplitude-held: nothing[ _]fitted |
+| `P15_the_handover_belongs_late_not_early_and_an_independent_pipeline_already_installed_here_puts_the_lensing_fault_in_this_instrument.py` | **60** | amplitude-held: chi2_nothing_fitted |
+| `P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py` | **cc66** | amplitude-held: nothing[ _]fitted |
+| `U2_the_matter_sector_spends_none.py` | **unknown** | amplitude-held: nothing[ _]fitted |
+| `P14_the_isospin_exchange.py` | **unknown** | amplitude-held: nothing[ _]fitted |
+| `C39_the_derived_list_read.py` | **unknown** | amplitude-held: nothing[ _]fitted |
+
+And **4** more score with a free amplitude only, which `r7856` established is unaffected in value:
+
+- `S1_the_bic_pair_is_delivered_and_CR_is_not_preferred_at_either_seam_phase.py`
+- `P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm.py`
+- `P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py`
+- `P15_where_the_likelihood_sits.py`
+
+⌗ **Three owners my heuristic could not resolve** are listed as `unknown`; they are read off the
+first commit that added each file and I did not guess.
+
+⛔ **The sweep's positive control FAILED on its first run and that is why it exists.** It reported
+**zero** absolute statements, with zero free-amplitude ones beside them: `ROOT` was built with two
+`dirname` calls instead of three, so it came out as `computations/` and the walk had nothing to walk.
+**A census with no positive control would have reported "nothing to route" and you would have
+believed it** — which is the `S55` defect on my own ledger, reproduced and caught the same day. It
+now asserts that `receipts/` is under `ROOT`.
+
+## ⛔ ⓸ BLOCKED — and the blocker is not the one I expected
+
+`FOURPI` moves **TT alone**, because `r7856` measured the factor on TT only. Your harness scores
+TT, TE and EE with **one shared amplitude**. So before running any chain I measured what the other
+two blocks are short of:
+
+| block | read as a CONSTANT | worst spread |
+|---|---|---|
+| TT | **`1.995455`** | `0.0599` |
+| EE | **`2.016473`** | `0.1837` |
+| TE | **`1.939872`** | `13.6418` |
+
+⛔ **My own read of the source is refuted by my own measurement.** I predicted from the code that
+the polarisation entries would be short of `2 l(l+1)` — an `l`-dependent factor, and so a *shape*
+error. Read as a multiple of `l(l+1)` the EE factor spreads by **73**, which refuses that outright.
+Read as a constant all three want about **two**, agreeing with TT to `1.1` and `2.8` per cent. *The
+`l(l+1)` the save names imply is missing is evidently already carried.*
+
+⇒ **So ⓸ is blocked on a weaker ground than I feared, and I am not running the chains.** EE's factor
+is established only to `18` per cent and TE's ratio is unusable where TE crosses zero, so I cannot
+assert the SAME constant is right for all three blocks to the precision one shared amplitude needs.
+Turning `FOURPI` on now would score a spectrum whose three blocks I had just made inconsistent by a
+few per cent in a way the shared amplitude cannot absorb. **No chain is run and no limit is
+reported against your `54.00` / `30.56` meV.**
+
+### ⇒ WHAT I NEED FROM YOU
+
+**One ruling: whether the polarisation blocks take the same two factors as TT.** My reading is that
+they should — the same `4 pi` and the same `D_l` step — and the measurement is consistent with it at
+`2.0165` and `1.9399`. But `Dl_EE` and `Dl_TE` are formed *beside* the TT accumulation rather than
+through it, so they do not pass through `_FP_ACC` at all, and whether they already carry their own
+`l(l+1)` is a question about code I did not write the convention for. ⇒ **I can wire them and
+measure the result in one revision once you rule.** Until then the switch stays TT-only and off.
+
+⌗ *What would make ⓸ cheap after that ruling: the switch's factor is exact to `8.9e-16`, so a
+regenerated bank is bit-for-bit predictable from the existing one and the chains need no 20-hour
+recompute — but I will not substitute that silently, and I will say so in the receipt when I do it.*
+
+---
+
+## ⭕ ⓹ THE SAME THREE RECEIPTS OF YOURS GO RED AGAIN, ON THE SAME CAUSE, AND BOTH PATCHES ARE MEASURED
+
+**`r7858` adds ONE environment switch to the shared instrument**, and the three receipts of yours
+that stamp that file's switch census or its source hash turn red on my tree the moment the switch
+exists — **with the switch OFF and every array byte-identical**, which `⓶` above measures against
+`origin/main`'s own instrument. They are yours, so **I have not touched them.** This is the same
+class as `r7854`'s, and `69` applied those patches: the census now names `BVEL` as the
+eighty-eighth and the ratchet carries the fifth inert class. One more switch, one more of each.
+
+**Run here to `rc=1` rather than predicted from the CI name, read off the current head:**
+
+| receipt | origin | what it stamps | what the row needs |
+|---|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census | `88 → 89`, and the roll-call gains the eighty-ninth |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob | a SIXTH inert class on the ratchet |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument blob | the same sixth class |
+
+### ⭕ The census — one number, one set entry and one clause
+
+Measured with your own scanner's rule on both trees:
+
+| instrument | bound switch names with a use site |
+|---|---|
+| `origin/main` | `88` |
+| this head | `89` (`FOURPI` is the one added; it has `6` use sites) |
+
+⇒ `len(ROWS) == 88` becomes `== 89`; `SWEPT_SIXTY_PLUS` (28 entries) gains `'FOURPI'`, which keeps
+`len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` **exactly — measured at `60`, not assumed** — and the
+roll-call gains *"the eighty-ninth is `FOURPI`, r7858+60"*, in the same form as the eighty-eighth:
+
+```
+                    # ⛭ `FOURPI` -- r7858+60, the two definitions the CMB bank's accumulation and
+                    #   save line were each short of: `4 pi` on the accumulation and `1/(2 pi)` on
+                    #   every line that writes a D_l.  Unset, both factors are exactly 1.0 and the
+                    #   banked grids are BITWISE identical -- measured against origin/main's own
+                    #   instrument, not asserted.
+                    'FOURPI'}
+```
+
+### ⭕ The ratchet — a sixth inert class, and it is NOT a blanket drop
+
+A name is inert here **only if its own assignment is `<something> if FOURPI else 1.0`.** That is the
+whole point: a factor written `else 2.0` moves the default output, so the class must keep it red, and
+it does. The class then (a) drops the `FOURPI`, `_FP_ACC` and `_FP_DL` assignments, and (b) collapses
+a `Mult`/`Div` whose right operand is one of those unit-valued names back to its landed left operand.
+
+```python
+def _inert_unit_factors(tree):
+    """the names whose OWN assignment is `<something> if FOURPI else 1.0` -- and no others."""
+    out = set()
+    for n in _ast.walk(tree):
+        if not isinstance(n, _ast.Assign) or len(n.targets) != 1:
+            continue
+        t, v = n.targets[0], n.value
+        if not (isinstance(t, _ast.Name) and isinstance(v, _ast.IfExp)):
+            continue
+        if not (isinstance(v.test, _ast.Name) and v.test.id == 'FOURPI'):
+            continue
+        o = v.orelse
+        if (isinstance(o, _ast.Constant) and not isinstance(o.value, bool)
+                and isinstance(o.value, (int, float)) and o.value == 1):
+            out.add(t.id)
+    return out
+
+# in `_Strip`:  NAMES |= {'FOURPI'} | _inert_unit_factors(tree)
+# and inside `visit_BinOp`, before `generic_visit`:
+            if (isinstance(node.op, (_ast.Mult, _ast.Div))
+                    and isinstance(node.right, _ast.Name)
+                    and node.right.id in unit):
+                return self.visit(node.left)
+```
+
+**Measured against the banked blob `e5319ce49` that `⓿⓿` reads, 8 of 8:**
+
+| what | result |
+|---|---|
+| the landed FIVE classes leave this head RED | **holds** — so the sixth is needed, not decorative |
+| with the sixth class the head reduces to the banked blob | **holds** |
+| control — a landed constant moved (`VISC`) | **kept red** |
+| control — a landed line deleted | **kept red** |
+| control — the LANDED operand of the new factor changed | **kept red** |
+| control — the guard made live-when-off (`1.0 → 2.0`) | **kept red** |
+| control — a landed default moved (`TCSW 3.0 → 3.5`) | **kept red** |
+| control — an UNGUARDED factor on a landed expression | **kept red** |
+
+⚠ **And the class's SCOPE, measured and not hidden:** it certifies that the tree is the landed one
+**when the switch is unset**, and says nothing about what the switch does when SET — so the same
+unit factor added at a *third* site passes. That is the scope of every class in this ratchet (an
+`if DNEFF:` block's contents are dropped wholesale too), and I am stating it rather than letting you
+discover it.
+
+### ⛔ And the ruling I asked for at `r7854` is still open, so I am not re-routing it
+
+`r7854` put you a choice on these two hash rows — **compare the switch set alone, or re-bank the
+hash** — and said it was yours, because re-banking is a claim about which blob the bank's figures
+came from. You applied the inert-class patch instead, which is the narrower of the two and the one
+that keeps the ratchet's teeth. ⇒ **I am following that precedent and nothing more:** the sixth
+class above is the same shape as the fifth, and **the standing question of whether this ratchet
+should compare the switch set rather than the blob is NOT re-asked here** — it is the same question,
+once, and it is still yours.

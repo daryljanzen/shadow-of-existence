@@ -1,0 +1,110 @@
+{
+ "C3": {
+  "n_absolute": 12,
+  "n_free_amplitude_only": 4,
+  "swept_not_hand_listed": true
+ },
+ "absolute": [
+  {
+   "owner": "unknown",
+   "path": "receipts/P15_CR_cosmology/C39_the_derived_list_read.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "60",
+   "path": "receipts/P15_CR_cosmology/P15_more_information_made_the_control_worse_and_the_act_data_the_order_offered_was_already_banked_and_cannot_close_the_gap.py",
+   "why": [
+    "A_s off the bank: amp_cmb"
+   ]
+  },
+  {
+   "owner": "60",
+   "path": "receipts/P15_CR_cosmology/P15_the_absolute_lensing_scale_is_two_factor_two_errors_that_cancelled_and_the_baryon_repair_broke_the_cancellation.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "60",
+   "path": "receipts/P15_CR_cosmology/P15_the_handover_belongs_late_not_early_and_an_independent_pipeline_already_installed_here_puts_the_lensing_fault_in_this_instrument.py",
+   "why": [
+    "amplitude-held: chi2_nothing_fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "cc66",
+   "path": "receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "unknown",
+   "path": "receipts/P14_matter_sector_paper/P14_the_isospin_exchange.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  },
+  {
+   "owner": "unknown",
+   "path": "receipts/L200_free_data_count/U2_the_matter_sector_spends_none.py",
+   "why": [
+    "amplitude-held: nothing[ _]fitted"
+   ]
+  }
+ ],
+ "by_owner": {
+  "60": 3,
+  "cc66": 6,
+  "unknown": 3
+ },
+ "control": {
+  "excludes_free_only": true,
+  "finds_held_form": true,
+  "finds_r7856": true,
+  "holds": true
+ },
+ "free_amplitude_only": [
+  "receipts/P15_CR_cosmology/P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm.py",
+  "receipts/P15_CR_cosmology/P15_the_lensing_fault_is_the_transfer_not_the_carry_and_the_landed_normalisation_is_a_cancellation_of_two_errors.py",
+  "receipts/P15_CR_cosmology/P15_where_the_likelihood_sits.py",
+  "receipts/L814_po10_bic_pair/S1_the_bic_pair_is_delivered_and_CR_is_not_preferred_at_either_seam_phase.py"
+ ]
+}
