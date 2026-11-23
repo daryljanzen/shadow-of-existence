@@ -972,6 +972,31 @@ _SWITCH_SNAPSHOT = {
     # `r7801+70`: the Delta N_eff knob, recorded as None when unset for the same reason as COMBRHO.
     'DNEFF': DNEFF,
     'YHE': YHE,
+    # ⛭⛭⛭ ** THE FIVE KEYS `r7861` ③ ORDERED BATCHED, PAID HERE BECAUSE THIS REVISION MOVES THE
+    #   BLOB ANYWAY -- r7864+60, on order `r7863` ②. **
+    # *`r7860` found that this config recorded NONE of the switches this line had added, so a
+    # re-solved bank point and a landed one differed in their own records only by the instrument
+    # blob -- a bank that could not state what it was.  `r7861` ③ ruled the repair batched rather
+    # than taken alone, because adding a key MOVES the blob and reds the receipts that stamp it, and
+    # the ratchet should be paid once.  `r7862` deferred it on a gated condition: its receipt
+    # asserted this file byte-identical to `origin/main`'s copy, and it was.*
+    #   ⇒ ** Item ① of `r7863` moves the blob, so the condition is spent and the keys are owed in
+    #     THIS revision.  All five, with the same `None`-when-unset convention `COMBRHO` and `DNEFF`
+    #     already use, so an unset run records the ABSENCE rather than omitting the key. **
+    #   ⌗ *`MNU` and `NUFD` are the pair that matters most here: a bank taken on the repaired
+    #     background and one taken on the old one are different objects, and until now neither could
+    #     say which it was.*
+    'BVEL': bool(BVEL),
+    'MNU': float(MNU),
+    'FOURPI': bool(FOURPI),
+    #   ⛔⛭ *and `PRIMNORM` is the one the order's list got slightly wrong, which is worth saying
+    #     rather than quietly fixing: THIS FILE DOES NOT READ IT.  It is the lensing path's
+    #     primordial normalisation, read where that path is generated, and a `grep` of this
+    #     instrument finds it nowhere.  ⇒ So the key here records the ENVIRONMENT the run was made
+    #     in and not a switch this instrument resolves, and it is labelled as such -- a config that
+    #     claimed to resolve a switch it never reads would be the vacuous form again.*
+    'PRIMNORM_env': os.environ.get('PRIMNORM'),
+    'NUFD': bool(NUFD),
     'instrument': 'ACOUSTIC_two_arm.py',
     # ⛭⛭⛭ ** THE INSTRUMENT'S OWN SOURCE HASH, ADDED AT r7109 ⓵ AT `70`'s REQUEST. **
     # *`70`'s three-grid audit cleared the comparison on all three counts and named exactly one thing
