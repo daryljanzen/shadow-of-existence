@@ -490,6 +490,74 @@ OB = OMBH2 / (H0 / 100) ** 2
 MNU = float(os.environ.get('MNU', '0.0'))         # sum of the neutrino masses, eV
 ONU = MNU / 93.14 / (H0 / 100) ** 2               # its late density parameter
 OCDM = OM - OB - ONU
+# ⛭⛭⛭ ** NUFD: THE MASSIVE-NEUTRINO BACKGROUND GIVEN ITS FERMI-DIRAC DENSITY -- r7864+60, AT 69's
+#    ORDER r7863 ①, AND IT REPAIRS THE APPROXIMATION NAMED FOUR LINES ABOVE. **
+# *`r7862` measured the consequence of that licence failing: this instrument's drag ruler is EXACTLY
+#  FLAT in the neutrino sum, where the reference's `rdrag` runs `0.81` per cent across `[0, 0.60]`
+#  eV, and the two ruler treatments differ by `11.58` meV in the limit.  The order rules that the
+#  background is repaired in the MODEL rather than the ruler patched from the reference's pipeline.*
+#   ⇒ ** WHAT IT DOES. **  Three degenerate states of mass `MNU/3` at `T_nu = (4/11)^(1/3) T_gamma`
+#     get their Fermi-Dirac energy density at each epoch.  The species is taken OUT of both places
+#     the stack carried it -- the radiation share `FNU * OR / a^4` and the dust total's `ONU / a^3`
+#     -- and the exact term is added back, so it is counted ONCE and interpolates between the two
+#     by itself.  `w_nu` runs from `1/3` to `0` on its own, and the drag ruler moves with the sum.
+#   ⛔ ** WHY A RATIO AND NOT A DENSITY, which is what makes the massless limit EXACT. **  The new
+#     term is `FNU * OR / a^4 * NUF(a)`, where `NUF` is the Fermi-Dirac energy integral over its own
+#     zero-mass value -- a pure number that is *exactly* `1.0` at `MNU = 0`, because the integrals
+#     are then the same integral.  So at zero sum the expression reduces to the landed line and the
+#     bits do not move; a term in its own units would have agreed only to two normalisations.
+#   ⌗ *Default UNSET = byte-identical: `NUF_of` is not built, `OL` is the landed `1 - OM`, and every
+#     line below is the one that was there.  The receipt gates inertness BOTH off and on at zero
+#     sum, which are two different claims.*
+#   ⚠ ** AND ONE THING IT DOES NOT FIX, measured before the switch was written. **  Against this
+#     file's own `FNU * OR` normalisation the density lands about `1.2` per cent BELOW the
+#     reference's, because `FNU = 0.4052` codes `N_eff = 3.000` exactly while the reference reports
+#     `3.0293` with a per-state degeneracy of `1.0147`; `3.0293 / 3.0000` accounts for it to the
+#     digit.  *That is a question about `N_eff` and `DNEFF` is its knob -- a separate question from
+#     the ruler's flatness, and the receipt reports it as a registered band FAILING rather than
+#     folding it into this repair.*
+NUFD = os.environ.get('NUFD', '0') == '1'
+if NUFD:
+    _T_NU0_EV = (4.0 / 11.0) ** (1.0 / 3.0) * 2.7255 * 8.617333262e-5
+    _FD0 = 7.0 * np.pi ** 4 / 120.0        # INT q^3/(e^q+1) dq -- the massless energy integral
+
+    #: ⌗ *the Fermi-Dirac weight is written as `exp(-q)/(1+exp(-q))`, which is `1/(e^q+1)` and does
+    #: not overflow at large `q`; the upper limit is `60` because that weight is below `1e-26`
+    #: there whatever the mass, and the receipt measures the truncation rather than asserting it.*
+    def _fd_w(q):
+        e = np.exp(-q)
+        return e / (1.0 + e)
+
+    def _fd_rho(y):
+        """INT q^2 sqrt(q^2+y^2) /(e^q+1) dq -- the energy integral at `y = m/T`"""
+        if y == 0.0:
+            return _FD0
+        return quad(lambda q: q * q * np.sqrt(q * q + y * y) * _fd_w(q), 0.0, 60.0, limit=300)[0]
+
+    def _fd_p(y):
+        """INT q^4 / sqrt(q^2+y^2) /(e^q+1) dq / 3 -- the pressure integral, for `w_nu`"""
+        if y == 0.0:
+            return _FD0 / 3.0
+        return quad(lambda q: q ** 4 / np.sqrt(q * q + y * y) * _fd_w(q),
+                    0.0, 60.0, limit=300)[0] / 3.0
+
+    #: *the factor is splined once over `log a` so the rate functions stay cheap: the integral is
+    #: smooth in `log a` and a dense grid over the whole range this file ever evaluates costs one
+    #: build.  The spline's own error against the integral is MEASURED in the receipt, not assumed.*
+    _nu_la = np.linspace(np.log(1e-10), 0.0, 900)
+    _nu_y = (MNU / 3.0) * np.exp(_nu_la) / _T_NU0_EV
+    NUF_of = CubicSpline(_nu_la, np.array([_fd_rho(float(v)) / _FD0 for v in _nu_y]))
+    NUW_of = CubicSpline(_nu_la, np.array([_fd_p(float(v)) / _fd_rho(float(v)) for v in _nu_y]))
+
+    def Onu_of(a):
+        """the neutrino sector's density fraction at `a`, counted ONCE"""
+        return FNU * OR / a ** 4 * float(NUF_of(np.log(a)))
+else:
+    NUF_of = NUW_of = None
+
+    def Onu_of(a):
+        """unset: the landed split, the species in the radiation share and in the dust total"""
+        return FNU * OR / a ** 4
 Ob_of = CubicSpline(eg, (OB / ag ** 3) / _rt)
 Oc_of = CubicSpline(eg, (OCDM / ag ** 3) / _rt)
 Om_of = CubicSpline(eg, ((OM - ONU) / ag ** 3) / _rt)
