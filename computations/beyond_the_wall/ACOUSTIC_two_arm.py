@@ -1902,7 +1902,7 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         print(f"  SRCDEC: {len(ls)} multipoles x 10 term pairs; the pairs close on D_l to "
               f"{_cl:.3e} relative -> {_SRCD}")
     if _POLS:
-        _pt = sum(_POLS_B) * (ls * (ls + 1))[:, None]
+        _pt = sum(_POLS_B) * (ls * (ls + 1))[:, None] / _FP_DL
         # ⛭ `config` ADDED r7807+cc66, at 69's order: POLSAVE wrote none, and r7805+cc66 measured
         #   that a bank without one cannot be told from an off-leaf-rate bank by anything but its
         #   FILENAME -- which is what put 16 of PO-87's items in the undecidable class.  The three
@@ -1911,14 +1911,19 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
         #   `SRCFIELD`, `DLKSAVE`, the visibility save and `PHISAVE`).  Those are diagnostics rather
         #   than spectra receipts load for figures, so they are REPORTED to 69 rather than changed
         #   here: the order named POLSAVE.
-        # ⛔ ** `FOURPI` TOUCHES `Dl` AND NOT `Dl_EE`/`Dl_TE`, AND THAT IS A SCOPE LIMIT AND NOT
-        # AN OVERSIGHT. **  *Those two are `np.sum(P * _dE**2)` and `np.sum(P * _tr * _dE)` formed
-        # beside `out[j]` rather than through it, so they never see `_FP_ACC`; and they carry no
-        # `l(l+1)` either, despite the `Dl_` in their names, so dividing them by `2 pi` would not
-        # be the `D_l` correction that `⒝` is.  ⇒ `r7856` measured the factor on ** TT ONLY **, so
-        # this switch changes TT only.  The polarisation blocks' own normalisation is UNMEASURED
-        # here and is routed to `69` rather than guessed at -- and their free amplitude is shared
-        # with TT, so a wrong factor on them would move the joint fit.*
+        # ⛔ ** THE COMMENT THAT STOOD HERE AT `r7858` WAS FALSE, AND IT IS CORRECTED RATHER THAN
+        # QUIETLY REPLACED. **  *It said these two carry no `l(l+1)` "despite the `Dl_` in their
+        # names".  The line above multiplies by `(ls * (ls + 1))`, so they DO -- and that is exactly
+        # why `r7858`'s source-read of these blocks was refuted by its own measurement: read as
+        # needing `2 l(l+1)` the EE factor spread by `73`, and read as needing the same CONSTANT as
+        # TT it came to `2.016473`.  The `l(l+1)` was already carried; only the constant was not.*
+        # ⛭ ** `r7857` (69) RULED ①: the polarisation blocks take the SAME TWO FACTORS. **  Both
+        #   are definitions and not fits -- the `4 pi` is the solid-angle normalisation of every
+        #   `C_l` built from a transfer integral, and the `1/(2 pi)` is the data's own `D_l`
+        #   convention -- and neither depends on which Stokes block is being formed.  So each factor
+        #   is applied where that block's own definition lives: `_FP_ACC` on the EE and TE
+        #   accumulations beside `out[j]`, and `_FP_DL` on this line, which is where their `D_l` is
+        #   written.  Two independent seats measure the EE constant at `2.016` and `2.011`.
         np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1) / _FP_DL, Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1],
                  arm=ARM, r_s=R_S,
                  D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk),
@@ -2134,7 +2139,8 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
         out[j] = np.sum(P * _tr ** 2) * _FP_ACC
         if _POLS:
             _dE = np.sqrt(max((l + 2.0) * (l + 1.0) * l * (l - 1.0), 0.0)) * np.trapezoid(_SE * J, ee, axis=0)
-            _ee_te[j] = (np.sum(P * _dE ** 2), np.sum(P * _tr * _dE))
+            _ee_te[j] = (np.sum(P * _dE ** 2) * _FP_ACC,
+                         np.sum(P * _tr * _dE) * _FP_ACC)
         if _DLK:
             _dlk[j] = _tr
         if _SRCD:
