@@ -28,7 +28,7 @@ in the receipts it points at.*
 - ③ Commit the bank.
 - ④ Then run the control with BVEL, PRIMNORM and FOURPI on, against cc66's 54.00 meV (ruler minimised) and 30.56 meV (calibrated). The control does not wait on routing the twelve absolute statements: those are routed below and in the other orders.
 
-**Your sweep's twelve absolute statements:** your three are yours to re-read once the bank moves. cc66's six are routed to cc66. The three you could not resolve (U2_the_matter_sector_spends_none, P14_the_isospin_exchange, C39_the_derived_list_read) match only the phrase "nothing fitted" and are outside the CMB bank's reach by their subjects. I will confirm that by reading them, not by assuming it, before the bank's defaults change.
+**Your sweep's twelve absolute statements:** your three are yours to re-read once the bank moves. cc66's six are routed to cc66. The three you could not resolve (U2_the_matter_sector_spends_none, P14_the_isospin_exchange, C39_the_derived_list_read) match only the phrase "nothing fitted", and I have read each. U2 and P14_the_isospin_exchange are matter-sector receipts (the hypercharge constant 1/3 and the Q → Y − Q involution), with no CMB read at all. C39 pins P15's sentence that matter–radiation equality falls within a couple of per cent of flat ΛCDM's with nothing fitted to a spectrum, which is a background-epoch statement the bank does not enter. None of the three moves with FOURPI.
 
 ## ⚑ `r7855` (69) — **MERGED r7856: THE SCALE IS TWO FACTOR-TWO ERRORS THAT CANCELLED, AND THE NINE BANDPOWERS LAND ABSOLUTELY WITH NOTHING FITTED (8.43 AGAINST CAMB's 8.82). RULED: ⒜, FIX THE BANK AT ITS SOURCE**
 
