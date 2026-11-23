@@ -28647,3 +28647,53 @@ that keeps the ratchet's teeth. ⇒ **I am following that precedent and nothing 
 class above is the same shape as the fifth, and **the standing question of whether this ratchet
 should compare the switch set rather than the blob is NOT re-asked here** — it is the same question,
 once, and it is still yours.
+
+---
+
+# ⇒ `r7860` (60) ON ORDER `r7857` — **OBEYING YOUR RULING ③ REDDENS A CENSUS OF YOURS, AND THE PATCH IS MEASURED**
+
+**Items ① to ④ of `r7857` all hold** and are in the open draft. The one thing that needs you is this,
+and it is a collision between two of your own orders rather than a defect in either.
+
+## ⛔ WHAT HAPPENED, AND IT IS THIS REVISION'S OWN CAUSE
+
+Ruling ③ says the bank stops living in `/tmp`. So the `32` polarisation banks `model3` reads are now
+committed under `computations/beyond_the_wall/bank/pol_grid`, and the defaults point there from each
+reading file's own location. ⇒ **And `16` of those `32` are `LEAFGEOM = true` points of the `cr` arm,
+every one of them carrying `Dl_EE`** — measured off their own recorded `config`, not inferred.
+
+`P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94`
+(`r7783+cc66.9`) has a census arm that walks every `.npz` under `computations/` and asserts that **NO
+polarisation bank in the tree is a `LEAFGEOM=1` arm**. Moving the bank into the tree makes that
+false, so the arm reds — `7` of `8` gates, run here to `rc=1` rather than predicted from the CI name.
+
+⌗ *It is yours, so I have not touched it.*
+
+## ⭕ THE PATCH, AND YOUR OWN ROW ALREADY SAYS WHAT SHAPE IT TAKES
+
+That row's own closing clause reads: *"A bank banked LATER that is not on the one rate does not — it
+is named in the row instead, so an arrival is read and not absorbed. `r7807+cc66`'s re-pointed
+control is the first such bank."* ⇒ **This is the second such arrival, and it wants naming in the
+same form:**
+
+| what arrived | count | arm | switches | carries |
+|---|---|---|---|---|
+| this line's banked polarisation grid, moved out of `/tmp` at your ruling ③ | `16` of `32` | `cr` | `LEAFGEOM=1`, `LEAFREC=1`, `LEAFSCALES=1`, `LMAXL=2000`, `LSTEP=8` | `Dl`, `Dl_EE`, `Dl_TE` |
+
+**And your receipt's historical claim is untouched by it.** The fourth feature DID need a run at
+`r7783`: these banks are the product of that run (`r7842`, this seat's), not evidence that it was
+unnecessary. What changed is only where the artefacts live.
+
+## ⛭ THE FORK I DECIDED, AND WHY I DID NOT TAKE THE CHEAP SIDE
+
+Ruling ③ said to point the defaults into the repository or commit what the scorers read; **it did not
+say where.** So I could have put the bank somewhere the census does not walk, and your receipt would
+have stayed green with no patch at all. ⇒ **I did not, and I am naming it rather than quietly taking
+the easy road: moving data out of a census's reach to keep the census green is the defect, not the
+repair** — it is the same move as deleting an import to get a green, which this line named as a
+temptation and refused once before. The bank sits where the census can see it, and the census gets
+the patch.
+
+⌸ *If you would rather the bank lived outside `computations/`, say so and I will move it — but then
+the census is passing because it cannot see the thing it is looking for, and that is worth your
+explicit ruling rather than my convenience.*
