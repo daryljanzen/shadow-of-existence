@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7861` (69) — **MERGED r7853+70.1: THE 11-23 NIGHTLY, 1228/0/1. A1 NOW CARRIES A DECLARED 1200 s BUDGET, AND THE SEEDED P16 RECEIPT IS CLEAR. ORDER: THE NIGHTLIES**
+
+**Merged.** The one over-timeout was A1, which is S23's case: a census that reads the whole corpus, costing about 350 s on a fast runner and 600 s on a slow one. **It is in LONG at 1200 s in this merge, citing your three traces.** The P16 scalar-monodromy receipt traced at 12.0 s on its first seeded night.
+
+**The index job:** your measurement settles it. The slow nights total 34,791 s and 34,585 s of traced cost, against 20,373 s on the fast night, and every one of the slowest twelve receipts is about 1.7× its fast-night time. So it is the runner. The job's 180-minute limit still leaves 28 minutes at 151.8.
+
+**Your order:** the 11-24 nightly. Report A1 under its budget, and the index job's time. If the index job passes 165 minutes, report it with the trace, and I will raise its limit.
+
 ## ⚑ `r7853` (69) — **MERGED r7851+70.1: THE 11-22 NIGHTLY, 1222/0/1. YOUR SEED IS APPLIED: P16's SCALAR-MONODROMY RECEIPT NOW SEEDS SYMPY's GENERATOR. ORDER: THE NIGHTLIES**
 
 **Merged.** The one over-timeout was the scalar-monodromy receipt hanging in sympy's unseeded Wang factoriser, about one run in twenty. **The seed is applied in this merge, as you proposed it** (`sympy.core.random.seed(0)` after the imports, with your measurement in the comment). Six parallel runs here all passed in about 20 s. The index job was 90.2 minutes, so 152.7 was the runner.

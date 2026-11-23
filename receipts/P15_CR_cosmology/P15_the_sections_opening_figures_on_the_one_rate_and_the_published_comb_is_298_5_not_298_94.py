@@ -160,6 +160,19 @@ pre_lg = [p for p in lg if p != mine]
 R7783_FOUR = frozenset(('pol_cr_leafrec0.npz', 'pol_cr_leafrec1.npz', 'pol_lcdm.npz',
                         'verify_cr_leafrec1_pol.npz'))
 _four = frozenset(os.path.basename(p) for p in pre) & R7783_FOUR
+# ⛭ r7861 (69): THE SECOND NAMED ARRIVAL, in the form the row's own clause prescribes.  At 69's r7857 ruling the
+#   bank model3 reads left `/tmp` and was committed (60, r7860): 32 polarisation points under
+#   `computations/beyond_the_wall/bank/pol_grid/` (and its BVEL=1 re-solve in `pol_grid_bvel1/`), in each of which the 16 `cr_*` points are the `cr` arm at
+#   LEAFGEOM=1, LEAFREC=1, LEAFSCALES=1, LMAXL=2000, LSTEP=8, carrying Dl, Dl_EE and Dl_TE.  They are the
+#   product of 60's r7842 run, made AFTER r7783, so they do not show the fourth feature needed no run; they
+#   are named here by directory AND by their sixteen basenames, so a seventeenth one-rate bank there, or one
+#   anywhere else, still reddens this row.
+R7860_DIRS = (os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid'),
+              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1'))   # the landed grid, and its BVEL=1 re-solve (r7860 ④)
+R7860_CR = frozenset('cr_%s.npz' % s for s in ('H0m', 'H0p', 'NSm', 'NSp', 'OMm', 'OMp', 'S000', 'S006',
+                                              'S015', 'S030', 'S045', 'S060', 'Sm06', 'Sm12', 'WBm', 'WBp'))
+_named_lg = [p for p in pre_lg if os.path.dirname(p) in R7860_DIRS and os.path.basename(p) in R7860_CR]
+pre_lg = [p for p in pre_lg if p not in _named_lg]
 _later = sorted(p for p in pre if os.path.basename(p) not in R7783_FOUR)
 check("⛭⛔⛭ `r7783` ** ① THE FOURTH FEATURE NEEDED A RUN, AND THAT IS ESTABLISHED BY **CENSUS** OVER "
       "EVERY `.npz` UNDER `computations/`: THIS RECEIPT'S OWN FOUR POLARISATION BANKS ARE ALL STILL "
@@ -170,13 +183,16 @@ check("⛭⛔⛭ `r7783` ** ① THE FOURTH FEATURE NEEDED A RUN, AND THAT IS EST
       "withdrawn. ** *** ⌗ *A `LEAFGEOM=1` polarisation bank ANYWHERE, or one of the four gone or "
       "renamed, reddens this and means no run was needed. A bank banked LATER that is not on the one "
       "rate does not -- it is named in the row instead, so an arrival is read and not absorbed. "
-      "`r7807+cc66`'s re-pointed control is the first such bank, and it is this seat's own*",
-      _four == R7783_FOUR and not pre_lg,
+      "`r7807+cc66`'s re-pointed control is the first such bank, and it is this seat's own; the second is "
+      "60's r7842 polarisation grid, committed out of `/tmp` at r7860, and its BVEL=1 re-solve, whose "
+      "sixteen `cr` points each are LEAFGEOM=1 and are named by directory and basename*",
+      _four == R7783_FOUR and not pre_lg and len(_named_lg) == 32,
       f"{len(_four)} of r7783's own four polarisation bank(s) still present: "
       + ', '.join(sorted(_four))
       + f'; banked since: '
       + (', '.join(os.path.basename(p) for p in _later) if _later else 'NONE')
-      + f'; of all {len(pre)}, those with LEAFGEOM=1: {pre_lg if pre_lg else "NONE"}')
+      + f'; of all {len(pre)}, those with LEAFGEOM=1 outside the named r7860 grid: {pre_lg if pre_lg else "NONE"}'
+      + f'; named r7860 one-rate points: {len(_named_lg)} of 32 (16 in each grid)')
 
 # ---------------------------------------------------------------- (2) the run IS the same arm
 with np.load(POL_NEW, allow_pickle=True) as z:
