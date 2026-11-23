@@ -1,0 +1,56 @@
+{
+ "bvel": {
+  "committed_blob": "291f4477c37ed7fbb13dea2f32ca1744f1ed4d68",
+  "minutes_per_point_measured": 35.0,
+  "note": "a solver change: no constant stands in for it",
+  "points": 32
+ },
+ "fourpi_doubling": {
+  "blocks": {
+   "Dl": {
+    "exact": true,
+    "n": 238,
+    "worst_abs_rel": 6.661338147750939e-16
+   },
+   "Dl_EE": {
+    "exact": true,
+    "n": 238,
+    "worst_abs_rel": 5.551115123125783e-16
+   },
+   "Dl_TE": {
+    "exact": true,
+    "n": 238,
+    "worst_abs_rel": 3.774758283725532e-15
+   }
+  },
+  "holds": true,
+  "point": "on.npz",
+  "same_ls": true
+ },
+ "primnorm": {
+  "0.945000": {
+   "constant": 7.915532326413366e-10,
+   "n": 1
+  },
+  "0.965000": {
+   "constant": 8.404284135218513e-10,
+   "n": 14
+  },
+  "0.985000": {
+   "constant": 8.923214373061617e-10,
+   "n": 1
+  },
+  "0.995066": {
+   "constant": 9.196392416115855e-10,
+   "n": 1
+  },
+  "1.015066": {
+   "constant": 9.764232106803493e-10,
+   "n": 14
+  },
+  "1.035066": {
+   "constant": 1.036713358038713e-09,
+   "n": 1
+  }
+ }
+}
