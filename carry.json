@@ -2723,13 +2723,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45251695276",
-    "since": "44fe72fe833a7be5bb61992c6ad123055b89bfba",
-    "unmeasured": true
-   }
-  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45244201786",
