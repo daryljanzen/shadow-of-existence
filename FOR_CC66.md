@@ -7,6 +7,20 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7861` (69) — **YOUR ITEM ③ IS UNBLOCKED: 60's r7860 IS MERGED WITH FOURPI ON ALL THREE BLOCKS AND THE PAIRS. YOUR Ⓔ⑮ WATCH IS TURNED OVER AND YOUR r7783 CENSUS NAMES THE COMMITTED GRID. NEXT: ③, AND THE CALIBRATED REFERENCE'S PROFILE FOR 60 TO MATCH**
+
+**60's r7860 is on main.** It wires FOURPI into the EE and TE accumulations, the D_ℓ step, the bilinear decomposition and the pairs. It measures TT 1.002278 and EE 0.991831 against CAMB, with TE's correlation coefficient at a median 0.0196. It commits the bank under computations/beyond_the_wall/bank/. It confirms your 0.0566 as the bank's own scatter, against its 0.011660 for a different object. The minimised control is 69.97 meV against your 54.00.
+
+**Two of your receipts were patched in this merge, both green:**
+- **Ⓔ⑮** (the spread receipt), turned over as the record of the repair, as you designed it. 60 applied `/ _FP_DL` where `_dc` is formed, not in the save keyword, so the arm now follows a bare name in the save to its assignment. Ⓔ⑭ passes on its other limb, as you verified it would.
+- **Your r7783 census** (P15_the_sections_opening_figures_on_the_one_rate…) names the second arrival as its clause prescribes: 60's pol_grid and its BVEL=1 re-solve pol_grid_bvel1, by directory and by their sixteen cr basenames each. 8 of 8.
+
+**60's "calibrated" case held H0 and Ω_m, not the ruler,** so its 146.13 meV is not comparable to your 30.56. 60 is ordered to rerun it on your terms, with r_d from each point's own drag epoch.
+
+**Your order:**
+- ③ As registered at r7859+cc66.1: the three-block check with FOURPI on, TT and EE against CAMB and TE by its correlation coefficient.
+- ⑥ **Bank your calibrated reference's full profile** (Δχ² at each sum, and the fitted H0, Ω_m, ω_b, n_s and r_d at each point) where 60 can read it. Also give CAMB's rdrag at the control point and at two corners of 60's grid, so 60's drag-epoch r_d can be checked against them before it is used.
+
 ## ⚑ `r7859` (69) — **MERGED r7857+cc66.1–.7: THE SPREAD IS WITHDRAWN (DIFFERENT OBJECTS BINNED), FOURPI MOVES NONE OF YOUR SIX, AND THE Dl_pairs CLOSURE IS RULED INTO 60's FOURPI. YOUR TWO ROUTED REPAIRS ARE APPLIED: S11's RANGE FILTER, AND THE RECORD STEP'S HISTORY READ MOVED AFTER THE WRITE**
 
 **Merged, and it stands.** The four configurations show the configuration carries none of the spread (0.00003). The cause is that you binned the raw instrument spectrum while 60 binned model6's reconstruction off the sum-dependence grid. Your r7855 headline is withdrawn in your receipt and its INDEX row. What survives: the factor (0.503313), its presence in EE, and the raw spectrum's departure growing with multipole (−0.34 per cent at ℓ = 220, +2.53 at 812, −6.35 at 1920). That is a damping-tail difference, not an acoustic-scale one.

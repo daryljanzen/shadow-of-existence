@@ -376,6 +376,13 @@ _UF = _unit_factor_names(TREE)
 _U = set(_UF)
 _accN, _decN = _names(_acc[0].value) & _U, _names(_dec[0].value) & _U
 _dlN, _prN = _names(_kw['Dl']) & _U, _names(_kw['Dl_pairs']) & _U
+# ⛭ r7861 (69): 60's repair applies `/ _FP_DL` where `_dc` is FORMED, one line above the save, and saves the name
+#   bare; so a bare name in the save is followed to its own assignment, which is where the factor now lives.
+if isinstance(_kw['Dl_pairs'], ast.Name):
+    _prA = [n for n in ast.walk(TREE) if isinstance(n, ast.Assign) and len(n.targets) == 1
+            and isinstance(n.targets[0], ast.Name) and n.targets[0].id == _kw['Dl_pairs'].id]
+    for _n in _prA:
+        _prN |= _names(_n.value) & _U
 _gap = (not _decN) or (not _prN)
 print(f"      the instrument's unit-factor class, read structurally: {sorted(_UF)} on switch(es) "
       f"{sorted(set(_UF.values()))}")
@@ -391,8 +398,11 @@ check("Ⓔ⑭ ⛔ ** AND IT WOULD STOP CLOSING BY EXACTLY A FACTOR TWO IF THE DE
       "needing an edit",
       (not _gap) or (abs(max(_under) - 0.5) < 1e-12 and abs(min(_under) - 0.5) < 1e-12),
       f"gap open = {_gap}, closure under the doubling {min(_under):.6f}-{max(_under):.6f}")
-check("Ⓔ⑮ and the accumulation DOES carry a unit factor while the decomposition beside it carries "
-      "none, which is where the asymmetry lives -- found by walking the instrument's own inert-"
+check("Ⓔ⑮ ⛭ RE-READ r7861 (69) AS THE RECORD OF THE REPAIR, AS DESIGNED: 60's r7860 put the unit "
+      "factors into the decomposition and the pairs save, so the decomposition now carries the SAME "
+      "unit factor as the accumulation and the `Dl_pairs` save the same as the `Dl` save.  As first "
+      "landed this arm stated the gap: the accumulation DID carry a unit factor while the decomposition beside it carried "
+      "none, which is where the asymmetry lived -- found by walking the instrument's own inert-"
       "unit-factor CLASS, the one 60 defined for their ratchet, so this arm depends on their "
       "structure and not on the spelling of either factor -- and the two that DO reach TT are gated "
       "by ONE switch, which is what makes them one repair rather than two.  ⌗ *This arm is a WATCH and is MEANT to "
@@ -402,7 +412,7 @@ check("Ⓔ⑮ and the accumulation DOES carry a unit factor while the decomposit
       "verified by making the edit*",
       len(_UF) >= 2 and len(_accN) == 1 and len(_dlN) == 1
       and {_UF[n] for n in _accN} == {_UF[n] for n in _dlN}
-      and not _decN and not _prN,
+      and _decN == _accN and _prN == _dlN,
       f"accumulation {sorted(_accN)}, decomposition {sorted(_decN)}, "
       f"`Dl` {sorted(_dlN)}, `Dl_pairs` {sorted(_prN)}")
 check("Ⓔ⑯ and the instrument's own `SRCDEC` closure print would read `0.920423`, not the `1e-15` it "
