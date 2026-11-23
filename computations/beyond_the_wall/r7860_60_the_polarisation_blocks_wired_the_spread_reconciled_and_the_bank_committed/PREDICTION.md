@@ -118,3 +118,51 @@ branches are ⒜ report it and run `Ⓔ⑤` anyway, since a shared amplitude can
 and route it. **This seat's recommendation, registered before the measurement: ⒝** — a TE shape
 error moves the joint fit through TE's own bandpowers whatever the amplitude does, and `r7856`'s
 whole lesson was that two wrongs can cancel into a plausible number.
+
+---
+
+# ⊕ AMENDMENT, pushed BEFORE the control is run and AFTER `Ⓐ①`, `Ⓑ②`, `Ⓒ③` and `Ⓓ④` held
+
+`Ⓔ⑤` above registered only that the control runs if the other four pass. They have, so this
+amendment states **what the control must show and what it substitutes**, before any of its numbers
+exist. *The original `Ⓔ⑤` is left exactly as registered.*
+
+## ⊕ WHAT IS SUBSTITUTED, AND WHAT IS NOT
+
+* **`BVEL` is NOT substituted.** The grid has been re-solved with the switch on: `32` of `32`
+  polarisation points, in a directory keyed to the switch.
+* **`FOURPI` IS substituted**, as exactly twice the grid. ⇒ *Measured at the bank's own reach in
+  `doubling.py`, worst distance from one `3.8e-15` on all three blocks — and said here rather than
+  done silently, which is what this seat promised in the reply the order merged.*
+* **`PRIMNORM` IS substituted**, per point, from that point's own recorded tilt. The grid carries
+  `6` distinct tilts, so one constant for the grid would be wrong.
+
+## ⛔ Ⓔ⑤ᵃ THE GRID THE CONTROL READS MUST BE PROVED TO BE THE RE-SOLVED ONE
+
+⌗ **And this arm exists because of a gap this seat found while checking:** the instrument's resolved
+config does **not** record `BVEL` (nor `MNU`, `FOURPI` or `PRIMNORM`), so a re-solved point and a
+landed one differ in their own records only by the **instrument blob**. ⇒ So the control asserts, as
+a precondition, that the blob on the grid it reads is NOT the landed grid's. *A control that silently
+read the old grid would produce a number that looks like an answer, which is the whole class this
+line keeps catching.*
+
+  * PASSES only if all `32` points are present AND their blob differs from the landed grid's.
+  * ⇒ FAILS otherwise, and no limit is reported.
+
+⌗ *The config gap itself is a repair this seat is NOT making here: adding a key moves the blob and
+would red the two hash receipts again, which is a cost only `69` should spend. It is routed.*
+
+## Ⓔ⑤ᵇ THE LIMIT, AGAINST THE TWO ORDERED FIGURES
+
+The control is scored with `omega_b` and `n_s` free, against `54.00` meV (ruler minimised) and
+`30.56` meV (calibrated).
+
+  * **This is registered as a COMPARISON and not as a target.** The arm reports the limit it finds
+    and its distance from each of the two figures.
+  * ⇒ **REACHABLE NEGATIVES, stated now:** a limit that does not land between `10` and `200` meV, a
+    fit that does not converge, or a profile with no crossing of the threshold inside the grid's own
+    sum range are each reported AS THAT, with no limit quoted. ⌗ *The grid's sum range is finite, so
+    a limit above its upper node would be an extrapolation and is refused rather than reported.*
+  * ⌗ And whatever it gives, it is a limit **through this instrument**, which `Ⓑ②ᵃ` has just shown
+    still carries a few-per-cent shape residual against the reference. That is stated with the
+    number rather than left for a reader to discover.
