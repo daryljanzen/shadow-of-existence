@@ -26,13 +26,15 @@ its control.  ⛔ *Nothing landed is edited: the ruler is attached by replacing 
 INSTANCE, exactly as `r7860` replaced `amp_cmb`, so the instrument and `model3.py` keep their bytes
 -- which is also the condition the order set for deferring item ③.*
 
-⚠ ** SIX THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS AND ALL SIX ARE THIS SEAT'S OWN. **  A
+⚠ ** SEVEN THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS AND ALL SEVEN ARE THIS SEAT'S OWN. **  A
 registered expectation is REFUTED; a registered criterion was BADLY CHOSEN and its control was added
 afterwards in its own file; a table builder DEADLOCKED and computed nothing for forty-three minutes;
 a defect this seat diagnosed in its own reading of the ruler was then REFUTED BY MEASUREMENT and is
 kept as refuted; a gate read a CONVENTION as a quadrature failure and was loosened before it was
 understood; and another gate compared the wrong two things, taking a grid's own record of when it
-was made for a statement about what the instrument is now.
+was made for a statement about what the instrument is now; and an arm of THIS receipt bounded its
+population by a MOVING REF, which is the defect another receipt of this seat's exists to catch and
+is how it was caught -- the base is pinned now and the emptiness is itself a gate.
 
     NODE=60 python3 <this file>
 
@@ -424,21 +426,44 @@ check('Ⓓ④ᵃ ** ITEM ③ OF THE ORDER STAYS DEFERRED ON THE CONDITION THE OR
       'record is %s and the landed grid\'s is 291f4477c37e'
       % (_BLOB[:12], str(CAL['precondition']['blob'])[:12]))
 
-_FILES = subprocess.run(['git', '-C', ROOT, 'diff', '--name-only', 'origin/main...HEAD'],
-                        capture_output=True, text=True)
-_CH = [f for f in _FILES.stdout.split() if f] if _FILES.returncode == 0 else None
+#: ⛔⛭⛭⛭ ** THIS ARM READ `origin/main...HEAD` AND `S55` CAUGHT IT -- THE DEFECT `S55` EXISTS FOR. **
+#:   *A population bounded by a moving ref is not one a later reader can reproduce, and this seat's
+#:   own work landing is what empties it: once this revision merges, `origin/main...HEAD` is EMPTY
+#:   and the arm below passes on nothing at all.  `S55`'s detector classed the site `MEASURING`
+#:   because a gate asserted on the population it bounds -- which is exactly what this arm did.*
+#:   ⇒ ** The remedy is `S55`'s own, applied here rather than argued with: the base is PINNED and
+#:   the live reading is PRINTED beside it. **  `BASE` is `origin/main` as this revision read it,
+#:   an ancestor of `HEAD` and so a range that stays non-empty for every later reader; and the
+#:   emptiness that would have made the arm vacuous is now itself a GATE.
+BASE = '0f58c629d52a26ab2c1fedbeaacbb01a5b5c76f3'
+
+
+def _range(spec):
+    r = subprocess.run(['git', '-C', ROOT, 'diff', '--name-only', spec],
+                       capture_output=True, text=True)
+    return [f for f in r.stdout.split() if f] if r.returncode == 0 else None
+
+
+_CH = _range('%s..HEAD' % BASE)
+_LIVE = _range('origin/main...HEAD')          # printed beside it, asserted on by nothing
+_ANC = subprocess.run(['git', '-C', ROOT, 'merge-base', '--is-ancestor', BASE, 'HEAD'],
+                      capture_output=True).returncode == 0
 check('Ⓓ④ᵇ and NOTHING of another seat\'s is edited in this revision\'s range, read off the tree '
       'rather than asserted: no receipt under the names the order protects, and the instrument '
-      'itself untouched.  ⌗ Anything owed to another seat is routed through FOR_66_FROM_60.md with '
-      'its patch, which is where the provenance keys of item ③ already sit',
-      _CH is not None
+      'itself untouched.  ** The range is taken from a PINNED base and the range is gated NON-EMPTY, '
+      'because a range bounded by a moving ref empties when this revision merges and an arm that '
+      'passes on nothing is worse than no arm. **  ⌗ Anything owed to another seat is routed '
+      'through FOR_66_FROM_60.md with its patch, which is where the provenance keys of item ③ sit',
+      _CH is not None and _ANC and len(_CH) > 0
       and 'computations/beyond_the_wall/ACOUSTIC_two_arm.py' not in _CH
       and not [f for f in _CH if f.startswith('receipts/L25') or f.startswith('receipts/L_')]
       and not [f for f in _CH
                if f.startswith('receipts/') and 'cc66' in f]
       and '.github/workflows/gates.yml' not in _CH
       and 'receipts/ENV_FINGERPRINT.txt' not in _CH,
-      '%d file(s) in the range, none of them protected' % (len(_CH) if _CH else -1))
+      '%d file(s) from the pinned base, none of them protected; the live `origin/main...HEAD` '
+      'reading beside it is %s file(s), which nothing here asserts on'
+      % (len(_CH) if _CH else -1, 'unreadable' if _LIVE is None else len(_LIVE)))
 
 check('Ⓓ④ᶜ and the two tables this revision commits are read by the profiles and not merely '
       'written: the reference\'s table spans 121.6996 to 180.4629 Mpc and the instrument\'s '
@@ -456,17 +481,18 @@ check('Ⓔ⑤ the record carries its failures rather than only its results: the 
       'the badly chosen criterion, the forty-three-minute deadlock that computed nothing, the '
       'defect this seat diagnosed in its own reading and then REFUTED BY MEASUREMENT, the gate '
       'that read a CONVENTION as a quadrature failure and was loosened before it was understood, '
-      'and the gate that compared the wrong two things -- all six in RESULT.md, and all six this '
-      'seat\'s own',
-      'six things in this record are failures or corrections' in RESULT.lower()
+      'the gate that compared the wrong two things, and the arm of THIS receipt that bounded its '
+      'population by a moving ref -- all seven in RESULT.md, and all seven this seat\'s own',
+      'seven things in this record are failures or corrections' in RESULT.lower()
+      and 'a population bounded by a moving ref' in RESULT.lower()
       and 'deadlocked' in RESULT.lower()
       and 'forty-three minutes' in RESULT.lower()
       and 'badly chosen' in RESULT.lower()
       and 'refuted by measurement' in RESULT.lower()
       and 'read a convention as a quadrature failure' in RESULT.lower()
       and 'compared the wrong two things' in RESULT.lower()
-      and 'and all six are this seat' in RESULT.lower(),
-      'six named in the result document')
+      and 'and all seven are this seat' in RESULT.lower(),
+      'seven named in the result document')
 
 check('Ⓕ⑥ the count: this receipt adjudicates every leg of the revision, and TWO REGISTERED '
       'EXPECTATIONS ARE REPORTED AS REFUTED with their criteria unchanged -- the calibrated '

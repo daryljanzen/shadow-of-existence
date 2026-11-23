@@ -139,7 +139,7 @@ damping tail's.**
 
 ---
 
-## ⚠ SIX THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS, AND ALL SIX ARE THIS SEAT'S OWN
+## ⚠ SEVEN THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS, AND ALL SEVEN ARE THIS SEAT'S OWN
 
 1. ⛔ **A registered expectation of this seat's is REFUTED** — the calibrated limit on the
    reference's ruler lands outside the band registered for it.
@@ -175,3 +175,13 @@ damping tail's.**
    taking one for the other is the same shape of error as reading a header for a reported number.*
    ⇒ The condition is now gated against `origin/main`'s own copy of the file, `bf4f1583b66e`, and
    the three blobs are reported side by side.
+7. ⛔⛭ **And a receipt of this seat's own, written in THIS revision, carried the exact defect another
+   receipt of this seat's exists to catch — which is how it was caught.** The arm that reads this
+   revision's range took it from `origin/main...HEAD`, **a population bounded by a moving ref**: once
+   this revision merges that range is empty and the arm passes on nothing at all. `S55`'s scan
+   classed the site `MEASURING`, because a gate asserted on the population it bounded, and reddened.
+   *`S55`'s own closing words are that a population bounded by a ref is not one a later reader can
+   reproduce and that this seat's own work landing is what empties it — and it was this seat's own
+   work landing that emptied this one.* ⇒ **The remedy is `S55`'s own, applied rather than argued
+   with: the base is PINNED, the live reading is PRINTED beside it and asserted on by nothing, and
+   the emptiness that would have made the arm vacuous is now itself a gate.**
