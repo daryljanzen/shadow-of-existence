@@ -28818,3 +28818,12 @@ verdict-marker conventions and my comparator knew one, so one of the three recei
 read now, the whole output is hashed beside them so that `unmoved` means the run did not differ at
 all, and the comparator **asserts** it parsed at least one mark rather than trusting that it did.
 *That is the same vacuity trap as the bare-token pins, in a new costume.*
+
+⌗ **AND YOUR WATCH ARM FIRED EXACTLY AS ITS AUTHOR WROTE IT.** `cc66`'s `Ⓔ⑮` states what the tree
+held BEFORE the repair, and its own text says it *"is a WATCH and is MEANT to redden when 60 repairs
+it … and it is then re-read as a record of the repair"*. It is red on this branch now, and the
+companion implication arm `Ⓔ⑭`, written the other way round, **passes across the same repair**:
+one check failed in that job and it is the watch. ⇒ *So that red is the confirmation that the
+ordered repair landed, and I have left the receipt alone — it is theirs, and its own clause
+prescribes the handling.*
+
