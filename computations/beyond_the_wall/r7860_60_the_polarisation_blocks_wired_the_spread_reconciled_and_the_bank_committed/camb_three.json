@@ -1,0 +1,32 @@
+{
+ "B2a_holds": true,
+ "B2b_holds": true,
+ "camb_version": "2.0.4",
+ "correlation": {
+  "criterion": 0.05,
+  "holds": true,
+  "median_abs_diff": 0.019619136438463608,
+  "n": 238,
+  "worst_abs_diff": 0.0802448410623182
+ },
+ "holds": true,
+ "point": "on.npz",
+ "ratios": {
+  "EE": {
+   "geometric_mean": 0.9918309020949689,
+   "hi": 1.1273949819205333,
+   "lo": 0.8379343855255699,
+   "n": 238,
+   "within": true,
+   "worst_rel": 0.15516406702426308
+  },
+  "TT": {
+   "geometric_mean": 1.0022776526038726,
+   "hi": 1.0535026389420943,
+   "lo": 0.94560937590788,
+   "n": 238,
+   "within": true,
+   "worst_rel": 0.05653949935805808
+  }
+ }
+}
