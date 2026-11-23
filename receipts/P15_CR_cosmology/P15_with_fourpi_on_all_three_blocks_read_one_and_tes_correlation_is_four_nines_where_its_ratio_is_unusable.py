@@ -155,8 +155,11 @@ check("Ⓑ⑤ ** and its VALUE is `0.999959`, against a registered guess of `> 0
       f"r = {TEC['fourpi_on']:.6f}")
 check("Ⓑ⑥ ⚠ and it is NOT the statistic 60 report: a MEDIAN per bin or per window is a different "
       "object from the Pearson coefficient of the binned values, so `0.0196` and this number must "
-      "not be read against each other -- recorded here so the next reader cannot take them as one",
-      abs(TEC['fourpi_on'] - 0.0196) > 0.5)
+      "not be read against each other -- recorded here so the next reader cannot take them as one.  "
+      "The gap is pinned on BOTH sides, so a mis-transcription of either number reddens this arm "
+      "rather than leaving a quoted figure beside a receipt that would not notice it being wrong",
+      0.98035 < TEC['fourpi_on'] - 0.0196 < 0.98045,
+      f"{TEC['fourpi_on'] - 0.0196:.6f}")
 
 # =================================================================================================
 print()

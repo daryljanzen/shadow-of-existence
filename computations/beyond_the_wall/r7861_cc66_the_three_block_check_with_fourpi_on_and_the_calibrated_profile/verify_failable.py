@@ -86,6 +86,12 @@ def main():
     trial("TE's correlation made to move", 'compare_fourpi_vs_camb.json',
           lambda: jset(T['compare_fourpi_vs_camb.json'],
                        lambda d: d['te_correlation'].__setitem__('abs_difference', 1e-6)))
+    # r7861+cc66.10: Ⓑ⑥'s pin was ONE-SIDED when first landed and `check_figures_pinned` was right
+    #   to flag the figure beside it.  Tightening it to a two-sided gap needs its OWN perturbation:
+    #   the one above moves `abs_difference` and reddens Ⓑ④ alone, so it never tested Ⓑ⑥ at all.
+    trial("the TE correlation's own value moved", 'compare_fourpi_vs_camb.json',
+          lambda: jset(T['compare_fourpi_vs_camb.json'],
+                       lambda d: d['te_correlation'].__setitem__('fourpi_on', 0.95)))
     trial("the ruler's range halved", 'rdrag_grid.json',
           lambda: jset(T['rdrag_grid.json'],
                        lambda d: d['ends'].__setitem__('range_mpc', 1.2)))
