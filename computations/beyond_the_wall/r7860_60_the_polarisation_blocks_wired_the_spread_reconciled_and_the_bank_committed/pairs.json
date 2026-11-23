@@ -1,0 +1,35 @@
+{
+ "closure": {
+  "base_off": 6.878053237272743e-16,
+  "base_on": 0.5000000000000004,
+  "printed_tree_on": 7.832e-16,
+  "tree_off": 6.878053237272743e-16,
+  "tree_on": 7.832379810547445e-16
+ },
+ "found_by": "cc66, read off the source at r7859",
+ "holds": true,
+ "off": {
+  "arrays": {
+   "Dl": {
+    "bitwise_identical": true,
+    "worst_abs": 0.0
+   },
+   "Dl_pairs": {
+    "bitwise_identical": true,
+    "worst_abs": 0.0
+   },
+   "ls": {
+    "bitwise_identical": true,
+    "worst_abs": 0.0
+   }
+  },
+  "byte_identical": true
+ },
+ "on": {
+  "dl_mean": 2.0,
+  "dl_worst": 1.3322676295501878e-15,
+  "pairs_mean": 2.0,
+  "pairs_worst": 4.440892098500626e-16
+ },
+ "unrepaired_pairs_over_dl": 0.5
+}

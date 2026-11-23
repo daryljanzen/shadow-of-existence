@@ -1,0 +1,13 @@
+{
+ "empty_dir_fails": true,
+ "holds": true,
+ "resolved": {
+  "chi2": 584.4130250383815,
+  "n_pol": 64,
+  "n_pp": 65,
+  "pol_dir": "/home/user/shadow-of-existence/computations/beyond_the_wall/bank/pol_grid",
+  "pol_in_repo": true,
+  "pp_in_repo": true,
+  "ppgrid": "/home/user/shadow-of-existence/computations/beyond_the_wall/bank/phiphi_grid_eta4000"
+ }
+}

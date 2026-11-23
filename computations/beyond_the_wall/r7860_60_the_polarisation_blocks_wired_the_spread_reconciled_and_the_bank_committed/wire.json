@@ -1,0 +1,60 @@
+{
+ "config": {
+  "ARM": "lcdm",
+  "HIER": "1",
+  "LH0": "67.40",
+  "LMAXL": "400",
+  "LOM": "0.3150",
+  "LSTEP": "8",
+  "MNU": "0.00",
+  "NS": "0.965",
+  "WBH2": "0.0224"
+ },
+ "holds": true,
+ "off": {
+  "arrays": {
+   "Dl": {
+    "bitwise_identical": true,
+    "n": 38,
+    "worst_abs": 0.0
+   },
+   "Dl_EE": {
+    "bitwise_identical": true,
+    "n": 38,
+    "worst_abs": 0.0
+   },
+   "Dl_TE": {
+    "bitwise_identical": true,
+    "n": 38,
+    "worst_abs": 0.0
+   },
+   "ls": {
+    "bitwise_identical": true,
+    "n": 38,
+    "worst_abs": 0.0
+   }
+  },
+  "byte_identical": true,
+  "n_multipoles": 38
+ },
+ "on": {
+  "EE": {
+   "exactly_two": true,
+   "mean": 2.0,
+   "n": 38,
+   "worst_distance_from_two": 8.881784197001252e-16
+  },
+  "TE": {
+   "exactly_two": true,
+   "mean": 2.0,
+   "n": 38,
+   "worst_distance_from_two": 5.329070518200751e-15
+  },
+  "TT": {
+   "exactly_two": true,
+   "mean": 2.0,
+   "n": 38,
+   "worst_distance_from_two": 1.3322676295501878e-15
+  }
+ }
+}

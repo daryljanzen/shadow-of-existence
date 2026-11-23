@@ -1,0 +1,108 @@
+{
+ "camb_version": "2.0.4",
+ "per_multipole": {
+  "geometric_mean": 1.0022776526038728,
+  "hi": 1.0535026389420943,
+  "lo": 0.9456093759078804,
+  "n": 238,
+  "rms_rel": 0.024486885055604663,
+  "worst_rel": 0.05653949935805785
+ },
+ "positive_control": {
+  "holds": true,
+  "injected": 0.05,
+  "recovered": 0.04999957364828633,
+  "rms_after": 0.04170498571441144,
+  "rms_before": 0.024486885055604663
+ },
+ "r7858_response_bank_path": {
+  "geometric_mean": 1.0093447650445981,
+  "hi": 1.0211134801526336,
+  "lo": 1.000030854553741,
+  "n": 185,
+  "reproduces_r7858": true,
+  "rms_rel": 0.005705581444922966,
+  "worst_rel": 0.011659757414519757
+ },
+ "same_object": {
+  "arrays": {
+   "D_M": {
+    "equal": true,
+    "shape": []
+   },
+   "Dl": {
+    "equal": true,
+    "shape": [
+     238
+    ]
+   },
+   "Dl_EE": {
+    "equal": true,
+    "shape": [
+     238
+    ]
+   },
+   "Dl_TE": {
+    "equal": true,
+    "shape": [
+     238
+    ]
+   },
+   "l_A": {
+    "equal": true,
+    "shape": []
+   },
+   "ls": {
+    "equal": true,
+    "shape": [
+     238
+    ]
+   },
+   "n_modes": {
+    "equal": true,
+    "shape": []
+   },
+   "ns": {
+    "equal": true,
+    "shape": []
+   },
+   "r_s": {
+    "equal": true,
+    "shape": []
+   },
+   "sliced": {
+    "equal": true,
+    "shape": []
+   }
+  },
+  "arrays_differing": [],
+  "config_differing": [
+   "instrument_blob"
+  ],
+  "config_keys": 15,
+  "n_config": 15,
+  "same": true
+ },
+ "through_the_windows": {
+  "geometric_mean": 1.0040954904374753,
+  "hi": 1.0534327259093483,
+  "lo": 0.9460620165535246,
+  "n": 185,
+  "rms_rel": 0.022313839934745828,
+  "worst_rel": 0.057796767774214365
+ },
+ "verdict": {
+  "binning_understates": true,
+  "cc66_spread_reproduced": 0.05653949935805785,
+  "configurations_agree_except": [
+   "instrument_blob"
+  ],
+  "per_multipole_worst": 0.05653949935805785,
+  "response_bank_worst": 0.011659757414519757,
+  "same_point": true,
+  "this_seats_figure_reproduced": true,
+  "through_the_windows_worst": 0.057796767774214365,
+  "which_spread_is_right": "cc66's -- the raw bank point per multipole",
+  "why": "the two numbers are NOT two readings of one array: cc66's is the raw bank point per multipole, and this seat's is the model3 RESPONSE-BANK vector against a densely binned CAMB, reproduced here to six decimals. The question asked -- is the bank's factor a CONSTANT -- is a question about the bank, so the raw point is the right array and this seat's figure understated the spread"
+ }
+}

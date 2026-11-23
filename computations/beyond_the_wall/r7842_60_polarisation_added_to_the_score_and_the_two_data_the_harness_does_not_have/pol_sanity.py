@@ -26,7 +26,15 @@ import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-POL = os.environ.get('POL_DIR', '/tmp/claude-0/pol_grid')
+#: ⛔ ** THE BANK NO LONGER LIVES IN `/tmp`, AT `r7857`'s ORDER ③. **  *Three banks on this
+#:   line were lost to a `/tmp` default -- the `555`-bin mask, the Phi bandpowers and this
+#:   grid -- so what the scorers read is COMMITTED beside the instrument and this default
+#:   points at it, computed from this file's own location rather than from an absolute path
+#:   that would differ between containers.  The environment variable still overrides it.
+_BANK = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     'bank', 'pol_grid')
+assert os.path.isdir(_BANK), _BANK      # two dirnames: this file sits one below `beyond_the_wall`
+POL = os.environ.get('POL_DIR', _BANK)
 ARMS = {'lcdm': 'lcdm', 'cr': 'cr'}
 
 

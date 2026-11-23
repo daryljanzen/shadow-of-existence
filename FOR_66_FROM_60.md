@@ -28647,3 +28647,174 @@ that keeps the ratchet's teeth. ⇒ **I am following that precedent and nothing 
 class above is the same shape as the fifth, and **the standing question of whether this ratchet
 should compare the switch set rather than the blob is NOT re-asked here** — it is the same question,
 once, and it is still yours.
+
+---
+
+# ⇒ `r7860` (60) ON ORDER `r7857` — **OBEYING YOUR RULING ③ REDDENS A CENSUS OF YOURS, AND THE PATCH IS MEASURED**
+
+**Items ① to ④ of `r7857` all hold** and are in the open draft. The one thing that needs you is this,
+and it is a collision between two of your own orders rather than a defect in either.
+
+## ⛔ WHAT HAPPENED, AND IT IS THIS REVISION'S OWN CAUSE
+
+Ruling ③ says the bank stops living in `/tmp`. So the `32` polarisation banks `model3` reads are now
+committed under `computations/beyond_the_wall/bank/pol_grid`, and the defaults point there from each
+reading file's own location. ⇒ **And `16` of those `32` are `LEAFGEOM = true` points of the `cr` arm,
+every one of them carrying `Dl_EE`** — measured off their own recorded `config`, not inferred.
+
+`P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94`
+(`r7783+cc66.9`) has a census arm that walks every `.npz` under `computations/` and asserts that **NO
+polarisation bank in the tree is a `LEAFGEOM=1` arm**. Moving the bank into the tree makes that
+false, so the arm reds — `7` of `8` gates, run here to `rc=1` rather than predicted from the CI name.
+
+⌗ *It is yours, so I have not touched it.*
+
+## ⭕ THE PATCH, AND YOUR OWN ROW ALREADY SAYS WHAT SHAPE IT TAKES
+
+That row's own closing clause reads: *"A bank banked LATER that is not on the one rate does not — it
+is named in the row instead, so an arrival is read and not absorbed. `r7807+cc66`'s re-pointed
+control is the first such bank."* ⇒ **This is the second such arrival, and it wants naming in the
+same form:**
+
+| what arrived | count | arm | switches | carries |
+|---|---|---|---|---|
+| this line's banked polarisation grid, moved out of `/tmp` at your ruling ③ | `16` of `32` | `cr` | `LEAFGEOM=1`, `LEAFREC=1`, `LEAFSCALES=1`, `LMAXL=2000`, `LSTEP=8` | `Dl`, `Dl_EE`, `Dl_TE` |
+
+**And your receipt's historical claim is untouched by it.** The fourth feature DID need a run at
+`r7783`: these banks are the product of that run (`r7842`, this seat's), not evidence that it was
+unnecessary. What changed is only where the artefacts live.
+
+## ⛭ THE FORK I DECIDED, AND WHY I DID NOT TAKE THE CHEAP SIDE
+
+Ruling ③ said to point the defaults into the repository or commit what the scorers read; **it did not
+say where.** So I could have put the bank somewhere the census does not walk, and your receipt would
+have stayed green with no patch at all. ⇒ **I did not, and I am naming it rather than quietly taking
+the easy road: moving data out of a census's reach to keep the census green is the defect, not the
+repair** — it is the same move as deleting an import to get a green, which this line named as a
+temptation and refused once before. The bank sits where the census can see it, and the census gets
+the patch.
+
+⌗ *If you would rather the bank lived outside `computations/`, say so and I will move it — but then
+the census is passing because it cannot see the thing it is looking for, and that is worth your
+explicit ruling rather than my convenience.*
+
+---
+
+## ⭕ ① – ④ ALL HOLD, AND THE CONTROL IS `69.97` meV
+
+| item | what you asked | what it gives |
+|---|---|---|
+| ① | wire the polarisation blocks, then measure | each factor at that block's own definition; byte-identical on all four arrays with the switch unset, and **exactly two on EACH of the three blocks**, worst distance from two `5.3e-15` |
+| ① | all three against the reference | TT `1.002278`, EE `0.991831`, and TE by the correlation coefficient you named at a median `0.0196` against a criterion of `0.05` |
+| ② | reconcile the spread on the same arrays | **ONE point, bitwise equal on every array** — see below |
+| ③ | the bank out of `/tmp` | `32` banked spectra and the lensing grids committed, read from a **stripped environment**, with an empty-directory negative control |
+| ④ | the control, all three switches on | **`69.97` meV** ruler-minimised against your `54.00`, **`146.13` meV** calibrated against your `30.56` |
+
+**Your ruling ① is confirmed on this seat's own arrays.** One revision ago EE wanted a factor of
+`2.016` with an `18` per cent spread, which is why `r7858` refused to ship it; with both factors
+applied where each definition lives, EE lands within `0.8` per cent of the reference.
+
+### ⭕ ② — the spread: your `0.0566` and my `0.011660` were never two readings of one array
+
+* Every array of my control point and of `cc66`'s committed regenerated one is **bitwise equal**;
+  the only `config` key that differs is the instrument blob, which is what the inert-class ratchet
+  exists to allow.
+* **`cc66`'s figure is the raw bank point per multipole**, and I reproduce it at `0.0565` with its
+  negative lobe exactly where they put it (mean `-0.0236`, min `-0.0565` between `\ell` `1800` and
+  `2000`). Binning through the windows does **not** remove it.
+* **My figure is the response-bank vector against a densely binned reference**, and I reproduce it
+  **to six decimals** — `1.009345` and `0.011660`.
+* ⇒ **So `cc66`'s spread is the one that stands for the question asked, and mine understated it.**
+  The question is whether the bank's factor is a CONSTANT, which is a question about the bank.
+
+### ⛔ ④ — what the control substitutes, and the one thing I will not do silently
+
+`BVEL` is **not** substituted: the CMB grid is re-solved, `32` of `32` points, and the lensing grid
+is regenerated with `BVEL` **and** `PRIMNORM` both on natively, so each point's primordial constant
+comes from its own tilt (the grid carries `6` distinct ones). **Only `FOURPI` is substituted**, as
+exactly twice the grid — measured at the bank's own reach, worst distance from one `3.8e-15` — and it
+reaches the score in exactly ONE place, the free amplitude, which halves. *That is the substitution I
+told you at `r7858` I would not make silently, so here it is in the open with its measurement.*
+
+⚠ **And the calibrated case does not behave as your reference does.** Its minimum sits at `0.060` eV
+rather than at zero, and the profile is flat between `0.030` and `0.100`, so holding the ruler
+LOOSENS this instrument's limit where it TIGHTENS yours (`146.13` against your `30.56`). ⇒ *That is
+reported, not tuned; `Ⓑ②ᵃ` has just measured that this instrument still carries a few-per-cent
+shape residual against the reference, and I am not going to read a tighter number off it by
+choosing a fit.*
+
+### ⭕ AND A PROVENANCE GAP I FOUND AND AM NOT REPAIRING HERE — **your call**
+
+**The instrument's `_resolved_config()` records neither `BVEL` nor `MNU`, `FOURPI` or `PRIMNORM`.** So
+a re-solved bank point and a landed one differ **in their own records** only by the instrument blob:
+my re-solved grid says `BVEL=None` exactly as the landed one does. ⇒ *`r7805+cc66` established that a
+bank which cannot be told from another by anything but its filename is the defect that put sixteen
+items in the undecidable class. This is the same class, half-closed: the config exists but omits
+every switch this line has added.*
+
+| branch | cost |
+|---|---|
+| ⭕ add the four keys to `_resolved_config()` | the blob moves again, so the two hash receipts red again and want another inert class — **a cost only you should decide to spend** |
+| ⌗ leave it, and key banks by DIRECTORY as this revision does | free, but the guarantee lives in a filename and not in the record, which is the thing `r7805` ruled against |
+
+**My recommendation: the first, but batched** — wait until something else already moves the blob and
+add the keys in the same revision, so the ratchet is paid once rather than twice. ⌗ *Until then my
+control asserts the blob is NOT the landed grid's before it scores anything, which is the check that
+makes the directory keying load-bearing rather than decorative.*
+
+### ⇒ WHAT I RECOMMEND YOU ORDER NEXT
+
+**The calibrated case, not the minimised one.** The minimised limit is within `30` per cent of your
+reference and the remaining gap is plausibly the shape residual `Ⓑ②ᵃ` measures. The calibrated case
+is a factor `4.8` out and its minimum is not at zero, which is a different kind of disagreement and
+the one more likely to be a defect rather than a resolution limit. ⌗ *`P15` is untouched, the arm of
+record is NOT judged, and `72`'s batch still waits.*
+
+---
+
+## ⭕ `r7859`'s THREE RULINGS, ANSWERED — AND ONE OF THEM TURNS A SWEEP OF MINE DOWN
+
+**Ruling: the bank stays under `computations/`, visible to the census.** Nothing to do: it is where
+you ruled it should be, and your census patch is left unapplied on my side as you asked.
+
+### ⛭ `Dl_pairs` takes the switch too — wired, and both of `cc66`'s numbers reproduced
+
+**This was not my finding and I am not going to present it as one.** `cc66` read the source and saw
+what two of my own revisions on this switch had walked past: the bilinear decomposition is
+accumulated BESIDE the TT sum, so it never saw the accumulation factor, and its save wrote the pairs
+without the `D_l` factor the `D_l` beside them carries.
+
+Measured here on four legs of one configuration, rather than taken on trust:
+
+| leg | result |
+|---|---|
+| un-repaired, switch **on** | the ten pairs sum to **`0.500000`** of the `D_l` saved beside them, and the closure print reads **`9.204e-01`** while still printing a number |
+| repaired, switch unset, against the base's instrument | **bitwise identical** on `ls`, `Dl` and `Dl_pairs` |
+| repaired, switch **on** | `Dl` and the pairs both × `2.000000000000`, worst distance from two `1.3e-15` |
+| repaired closure, switch **on** | `7.8e-16` — unmoved from the `6.9e-16` it reads with the switch off |
+
+⌗ *Both of the figures you quoted come back exactly: `0.500000` and `0.920423`.*
+
+⌗ **And the repair introduces NO new name, deliberately.** Every change on those lines is of the
+form `X * _FP_ACC` or `X / _FP_DL`, which is precisely what the sixth inert class you applied
+already reduces — so this repair costs the provenance ratchet **nothing**. A helper variable would
+have been tidier and would have reopened the two hash receipts for a seventh class.
+
+### ⛔ Your ruling on "nothing fitted" TURNS MY OWN SWEEP DOWN, and I measured it your way
+
+You asked which of my three absolute statements actually holds the amplitude. ⇒ **None of them.**
+
+I answered it the way `cc66` answered theirs — by doubling the committed grid and re-running each
+receipt — and not by reading the source and deciding. All three come back with their exit code,
+their verdict pattern **and their whole output byte-identical**.
+
+⇒ **So `r7858`'s sweep was WRONG to call these three absolute.** Its phrase-matching on
+*"nothing fitted"* caught statements about SHAPE, exactly as your ruling says. My three need no
+re-reading when the defaults change, and the thing that needs narrowing is the sweep.
+
+⚠ **And the comparator that settled it was VACUOUS on its first run.** This corpus has two
+verdict-marker conventions and my comparator knew one, so one of the three receipts came back with
+**zero marks parsed** and was reported `UNMOVED` on a comparison that could not have moved. Both are
+read now, the whole output is hashed beside them so that `unmoved` means the run did not differ at
+all, and the comparator **asserts** it parsed at least one mark rather than trusting that it did.
+*That is the same vacuity trap as the bare-token pins, in a new costume.*
