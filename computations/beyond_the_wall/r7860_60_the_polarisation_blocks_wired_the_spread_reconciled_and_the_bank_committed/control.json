@@ -110,5 +110,12 @@
   "chi2_joint_before_substitution": 2213.1566429236536,
   "cmb_chi2_unchanged": true,
   "worst_halving_error": 0.0
+ },
+ "unconverged": {
+  "dips_at": [
+   0.4
+  ],
+  "limit_meV": 59.62338633526304,
+  "tighter_by_per_cent": 14.791205591677492
  }
 }

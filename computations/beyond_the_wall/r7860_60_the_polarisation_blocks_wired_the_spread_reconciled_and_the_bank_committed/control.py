@@ -189,6 +189,55 @@ def main():
     out['calibrated'] = limit([2, 3],
                               'CALIBRATED -- the ruler held, omega_b and n_s free')
 
+    # ── Ⓔ⑤ᶜ the unconverged profile, RE-RUN deliberately so its limit is a measured datum ──────
+    #   ⛔ *This is not a leftover: the claim that an unconverged profile FLATTERS the instrument is
+    #   only worth making if the flattering number is measured, so the first version's settings are
+    #   reproduced here exactly -- one start per node per `tau` seed, loose tolerances, no
+    #   continuation and no polish -- and its crossing is recorded beside the converged one.*
+    def prof_loose(sum_ev, free):
+        best = np.inf
+        for t0 in (0.045, 0.054, 0.070):
+            x0 = [0.0] * len(free) + [t0]
+
+            def f(v):
+                x4 = np.zeros(4)
+                for j, k in enumerate(free):
+                    x4[k] = v[j]
+                return float(mod.chi2(list(x4) + [sum_ev, float(v[-1])]))
+            r = minimize(f, x0, method='Nelder-Mead',
+                         options=dict(xatol=1e-4, fatol=1e-4, maxiter=4000))
+            if np.isfinite(r.fun) and r.fun < best:
+                best = float(r.fun)
+        return best
+
+    tl = np.array([prof_loose(s, [0, 1, 2, 3]) for s in SUMS], float)
+    sl = np.array(SUMS, float)
+    dl = tl - np.nanmin(tl)
+    il = int(np.nanargmin(tl))
+    abv = [k for k in range(il + 1, len(sl)) if dl[k] >= DCHI2]
+    lim_loose = None
+    if abv:
+        k = abv[0]
+        lim_loose = float(sl[k - 1] + (DCHI2 - dl[k - 1]) * (sl[k] - sl[k - 1])
+                          / (dl[k] - dl[k - 1])) * 1000.0
+    dips_loose = [float(sl[k]) for k in range(il + 1, len(sl)) if tl[k] < tl[k - 1] - 1e-6]
+    print('\n  Ⓔ⑤ᶜ THE UNCONVERGED PROFILE, RE-RUN SO ITS NUMBER IS MEASURED AND NOT REMEMBERED')
+    print('  ' + '-' * 98)
+    print('    one start per node, loose tolerances, no continuation: it dips at %s'
+          % (', '.join('%.3f eV' % v for v in dips_loose) if dips_loose else 'nowhere'))
+    print('    and its crossing is %s meV against the converged %s meV'
+          % (('%.2f' % lim_loose) if lim_loose else 'none',
+             ('%.2f' % out['ruler_minimised']['limit_meV'])
+             if out['ruler_minimised']['limit_meV'] else 'none'))
+    if lim_loose and out['ruler_minimised']['limit_meV']:
+        print('    ⇒ ** the unconverged profile is %.1f per cent TIGHTER, so the failure FLATTERS the'
+              % (100.0 * (1.0 - lim_loose / out['ruler_minimised']['limit_meV'])))
+        print('      instrument -- the direction a seat is least likely to check. **')
+    out['unconverged'] = dict(limit_meV=lim_loose, dips_at=dips_loose,
+                              tighter_by_per_cent=(
+                                  100.0 * (1.0 - lim_loose / out['ruler_minimised']['limit_meV'])
+                                  if lim_loose and out['ruler_minimised']['limit_meV'] else None))
+
     print('\n  ⇒ AGAINST THE TWO ORDERED FIGURES')
     print('  ' + '-' * 98)
     for key, ref, name in (('ruler_minimised', REF_RULER, 'ruler minimised'),

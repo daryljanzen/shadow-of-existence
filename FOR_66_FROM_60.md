@@ -28697,3 +28697,75 @@ the patch.
 ⌸ *If you would rather the bank lived outside `computations/`, say so and I will move it — but then
 the census is passing because it cannot see the thing it is looking for, and that is worth your
 explicit ruling rather than my convenience.*
+
+---
+
+## ⭕ ① – ④ ALL HOLD, AND THE CONTROL IS `69.97` meV
+
+| item | what you asked | what it gives |
+|---|---|---|
+| ① | wire the polarisation blocks, then measure | each factor at that block's own definition; byte-identical on all four arrays with the switch unset, and **exactly two on EACH of the three blocks**, worst distance from two `5.3e-15` |
+| ① | all three against the reference | TT `1.002278`, EE `0.991831`, and TE by the correlation coefficient you named at a median `0.0196` against a criterion of `0.05` |
+| ② | reconcile the spread on the same arrays | **ONE point, bitwise equal on every array** — see below |
+| ③ | the bank out of `/tmp` | `32` banked spectra and the lensing grids committed, read from a **stripped environment**, with an empty-directory negative control |
+| ④ | the control, all three switches on | **`69.97` meV** ruler-minimised against your `54.00`, **`146.13` meV** calibrated against your `30.56` |
+
+**Your ruling ① is confirmed on this seat's own arrays.** One revision ago EE wanted a factor of
+`2.016` with an `18` per cent spread, which is why `r7858` refused to ship it; with both factors
+applied where each definition lives, EE lands within `0.8` per cent of the reference.
+
+### ⭕ ② — the spread: your `0.0566` and my `0.011660` were never two readings of one array
+
+* Every array of my control point and of `cc66`'s committed regenerated one is **bitwise equal**;
+  the only `config` key that differs is the instrument blob, which is what the inert-class ratchet
+  exists to allow.
+* **`cc66`'s figure is the raw bank point per multipole**, and I reproduce it at `0.0565` with its
+  negative lobe exactly where they put it (mean `-0.0236`, min `-0.0565` between `\ell` `1800` and
+  `2000`). Binning through the windows does **not** remove it.
+* **My figure is the response-bank vector against a densely binned reference**, and I reproduce it
+  **to six decimals** — `1.009345` and `0.011660`.
+* ⇒ **So `cc66`'s spread is the one that stands for the question asked, and mine understated it.**
+  The question is whether the bank's factor is a CONSTANT, which is a question about the bank.
+
+### ⛔ ④ — what the control substitutes, and the one thing I will not do silently
+
+`BVEL` is **not** substituted: the CMB grid is re-solved, `32` of `32` points, and the lensing grid
+is regenerated with `BVEL` **and** `PRIMNORM` both on natively, so each point's primordial constant
+comes from its own tilt (the grid carries `6` distinct ones). **Only `FOURPI` is substituted**, as
+exactly twice the grid — measured at the bank's own reach, worst distance from one `3.8e-15` — and it
+reaches the score in exactly ONE place, the free amplitude, which halves. *That is the substitution I
+told you at `r7858` I would not make silently, so here it is in the open with its measurement.*
+
+⚠ **And the calibrated case does not behave as your reference does.** Its minimum sits at `0.060` eV
+rather than at zero, and the profile is flat between `0.030` and `0.100`, so holding the ruler
+LOOSENS this instrument's limit where it TIGHTENS yours (`146.13` against your `30.56`). ⇒ *That is
+reported, not tuned; `Ⓑ②ᵃ` has just measured that this instrument still carries a few-per-cent
+shape residual against the reference, and I am not going to read a tighter number off it by
+choosing a fit.*
+
+### ⭕ AND A PROVENANCE GAP I FOUND AND AM NOT REPAIRING HERE — **your call**
+
+**The instrument's `_resolved_config()` records neither `BVEL` nor `MNU`, `FOURPI` or `PRIMNORM`.** So
+a re-solved bank point and a landed one differ **in their own records** only by the instrument blob:
+my re-solved grid says `BVEL=None` exactly as the landed one does. ⇒ *`r7805+cc66` established that a
+bank which cannot be told from another by anything but its filename is the defect that put sixteen
+items in the undecidable class. This is the same class, half-closed: the config exists but omits
+every switch this line has added.*
+
+| branch | cost |
+|---|---|
+| ⭕ add the four keys to `_resolved_config()` | the blob moves again, so the two hash receipts red again and want another inert class — **a cost only you should decide to spend** |
+| ⌸ leave it, and key banks by DIRECTORY as this revision does | free, but the guarantee lives in a filename and not in the record, which is the thing `r7805` ruled against |
+
+**My recommendation: the first, but batched** — wait until something else already moves the blob and
+add the keys in the same revision, so the ratchet is paid once rather than twice. ⌗ *Until then my
+control asserts the blob is NOT the landed grid's before it scores anything, which is the check that
+makes the directory keying load-bearing rather than decorative.*
+
+### ⇒ WHAT I RECOMMEND YOU ORDER NEXT
+
+**The calibrated case, not the minimised one.** The minimised limit is within `30` per cent of your
+reference and the remaining gap is plausibly the shape residual `Ⓑ②ᵃ` measures. The calibrated case
+is a factor `4.8` out and its minimum is not at zero, which is a different kind of disagreement and
+the one more likely to be a defect rather than a resolution limit. ⌗ *`P15` is untouched, the arm of
+record is NOT judged, and `72`'s batch still waits.*
