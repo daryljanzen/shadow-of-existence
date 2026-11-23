@@ -39,8 +39,13 @@ def ranging():
     return dict(rows=rows, r_rel=float(rel), tol=TOL_RANGE, holds=bool(rel < TOL_RANGE))
 
 
-def grid(n_wm=17, n_wb=9, n_s=9, workers=3):
-    from concurrent.futures import ProcessPoolExecutor
+def grid(n_wm=17, n_wb=9, n_s=9):
+    # ⛔ ** THIS RAN IN A PROCESS POOL AND DEADLOCKED, AND THAT IS KEPT HERE. **  *`ranging()` calls
+    #   `camb` in the PARENT before the pool is built, so the children were forked after `camb`'s
+    #   OpenMP runtime had been initialised, and all three sat at zero CPU for forty-three minutes
+    #   without computing one point.  ⌗ The fix is not a bigger timeout: a background solve costs
+    #   about `0.1` s, so the whole table is two or three minutes SERIALLY, and the pool was buying
+    #   nothing it could not have been measured not to need.*
     h_lo = (DR.CENTRE['H0'] - DR.NSTEP * DR.STEP['H0']) / 100.0
     h_hi = (DR.CENTRE['H0'] + DR.NSTEP * DR.STEP['H0']) / 100.0
     om_lo = DR.CENTRE['OM'] - DR.NSTEP * DR.STEP['OM']
@@ -53,8 +58,7 @@ def grid(n_wm=17, n_wb=9, n_s=9, workers=3):
     H0 = DR.CENTRE['H0']
     jobs = [(float(H0), float(a / (H0 / 100.0) ** 2), float(b), float(s))
             for a in wm for b in wb for s in ss]
-    with ProcessPoolExecutor(max_workers=workers) as ex:
-        res = list(ex.map(_one, jobs))
+    res = [_one(j) for j in jobs]
     Z = np.array([r['rdrag'] for r in res], float).reshape(n_wm, n_wb, n_s)
     ZD = np.array([r['zdrag'] for r in res], float).reshape(n_wm, n_wb, n_s)
     return dict(omega_m=wm, omega_b=wb, sums=ss, rdrag=Z, zdrag=ZD)

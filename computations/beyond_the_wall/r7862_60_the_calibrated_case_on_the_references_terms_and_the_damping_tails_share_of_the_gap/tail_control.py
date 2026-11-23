@@ -97,12 +97,20 @@ def main():
             res['high_end_moved_meV'] = hi.get('moved_meV')
             res['ratio_to_high_end'] = (
                 None if not hi.get('moved_meV') else res['moved_meV'] / hi['moved_meV'])
-            print('    ⇒ the low-end control moves %+.2f meV against the high end\'s %+.2f: %s'
-                  % (res['moved_meV'], hi['moved_meV'],
-                     'THE SAME ORDER -- the high-end move is the data\'s VOLUME'
-                     if (hi.get('moved_meV') and
-                         abs(res['moved_meV']) > 0.5 * abs(hi['moved_meV']))
-                     else 'SMALLER -- the high end carries something the low end does not'))
+            # ⌗ *the comparison is which END costs more, and the verdict is worded as that
+            #   rather than as a sameness: these two moves are not of the same order at all.*
+            res['low_end_costs_more'] = bool(hi.get('moved_meV') is not None
+                                             and abs(res['moved_meV']) > abs(hi['moved_meV']))
+            print('    ⇒ the low-end control moves %+.2f meV against the high end\'s %+.2f'
+                  % (res['moved_meV'], hi['moved_meV']))
+            print('      %s' % (
+                ('the SAME COUNT of bandpowers costs %.1f times more at the low end, so the '
+                 'high-ell bandpowers carry little of this limit and the high-end move is the '
+                 'DATA\'S VOLUME and not the tail\'s residual'
+                 % abs(res['moved_meV'] / hi['moved_meV']))
+                if res['low_end_costs_more'] else
+                ('the high end costs AT LEAST as much as the low end, so the high-ell bandpowers '
+                 'do carry this limit and the tail\'s residual is not ruled out')))
         out['rows'][str(lcut)] = res
 
     with io.open(os.path.join(_HERE, 'tail_control.json'), 'w', encoding='utf-8') as fh:
