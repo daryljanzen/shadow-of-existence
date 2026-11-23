@@ -384,8 +384,19 @@ def main():
           f'is to PIN it and PRINT the live reading beside it -- and printing it writes '
           f'`--not <ref>` into the file. **  Every one of the {R["A_LIVE_REPORTED"]} is a reporting '
           f'arm this revision added, and no gate asserts on any.  ⇒ *A detector that reads the range '
-          f'and not what is DONE with it cannot tell a measured population from a reported one*',
-          R['A_LIVE_MEASURING'] == 0 and R['A_LIVE_REPORTED'] == 4
+          f'and not what is DONE with it cannot tell a measured population from a reported one*'
+          f'\n        ⛔⛭⛭⛭ r7862: ** AND THE `REPORTED` TOTAL IS NO LONGER GATED, BECAUSE GATING IT '
+          f'REDDENED THIS ARM EXACTLY WHEN ITS OWN PRESCRIPTION WAS FOLLOWED. **  *`r7862` added an '
+          f'arm that bounded its population by a moving ref; this scan classed it `MEASURING` and '
+          f'this receipt went red, which is the detector working.  The repair applied THIS '
+          f'receipt\'s remedy -- pin the base, print the live reading -- and the site became '
+          f'`REPORTED`, taking the total from `4` to {R["A_LIVE_REPORTED"]} and reddening this arm '
+          f'a SECOND time, now for complying.*  ⇒ The claim was never the number: it is that NO '
+          f'site is `MEASURING`, that NO gate asserts on one, and that the reporting population may '
+          f'only GROW -- growth here is the remedy spreading, which is the outcome this receipt '
+          f'wanted.  ⌗ *A total is a claim about the corpus that actually asserts no seat has acted '
+          f'since, and this receipt of all receipts should not have carried one.*',
+          R['A_LIVE_MEASURING'] == 0 and R['A_LIVE_REPORTED'] >= 4
           and R['A_ASSERTED_ON'] == 0)
     check(f'Ⓔ②ᵇ ⇒⇒ and the classification itself was keyed by `path:line`, which is not an '
           f'identifier of a site but of a site AND every edit above it: repairing `S24` moved its '

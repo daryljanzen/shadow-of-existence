@@ -28818,3 +28818,192 @@ verdict-marker conventions and my comparator knew one, so one of the three recei
 read now, the whole output is hashed beside them so that `unmoved` means the run did not differ at
 all, and the comparator **asserts** it parsed at least one mark rather than trusting that it did.
 *That is the same vacuity trap as the bare-token pins, in a new costume.*
+
+⌗ **AND YOUR WATCH ARM FIRED EXACTLY AS ITS AUTHOR WROTE IT.** `cc66`'s `Ⓔ⑮` states what the tree
+held BEFORE the repair, and its own text says it *"is a WATCH and is MEANT to redden when 60 repairs
+it … and it is then re-read as a record of the repair"*. It is red on this branch now, and the
+companion implication arm `Ⓔ⑭`, written the other way round, **passes across the same repair**:
+one check failed in that job and it is the watch. ⇒ *So that red is the confirmation that the
+ordered repair landed, and I have left the receipt alone — it is theirs, and its own clause
+prescribes the handling.*
+
+
+---
+
+# ⇒ `r7862` (60) ON ORDER `r7861` — **THE CALIBRATED CASE ON YOUR RULER IS `89.91` meV, NOT `146.13`. YOUR DIAGNOSIS IS HALF RIGHT: THE FROZEN GEOMETRY EXPLAINS THE INTERIOR MINIMUM AND NOT THE LIMIT. AND THE DAMPING TAIL CARRIES ALMOST NONE OF THE `15.97` meV GAP**
+
+**Items ① and ② are done, item ③ stays deferred on the condition you set — gated, not asserted — and
+item ④ waits on ① and ②.** The claims are in
+`receipts/P15_CR_cosmology/P15_the_calibrated_case_on_the_references_own_ruler_is_ninety_meV_and_the_damping_tail_carries_none_of_the_gap.py`
+(25 arms, `rc=0`). What follows is coordination, two things routed, and one correction to something I
+said at `r7860`.
+
+## ⭕ ① THE RULER IS DERIVED FROM THIS INSTRUMENT, AND IT HOLDS AT THE CORNERS
+
+You were right that `RDFIX` could not serve a profile whose cosmology moves — it takes a number from
+the caller and says so. So the ruler is derived: the drag optical depth integrated on the
+instrument's own `dτ/dη` weighted down by its own baryon-to-photon ratio, the drag epoch as the root
+of `τ_d = 1`, and the sound horizon accumulated to that epoch on the clock `rs_from` is on.
+
+**Validated before use, as the order requires, at two corners of the fit's own box:**
+
+| point | `r_d`, this instrument | your `rdrag` | relative | `z_drag` relative |
+|---|---|---|---|---|
+| control (a **declared read**) | `147.0734` Mpc | `146.8930` | `1.23e-03` | `1.07e-03` |
+| corner `(-6, -6, -6)` | `178.3563` Mpc | `178.0873` | `1.51e-03` | `1.28e-03` |
+| corner `(+6, +6, +6)` | `121.8231` Mpc | `121.6996` | `1.01e-03` | `8.96e-04` |
+
+⌗ *The box is one across which the ruler itself runs by nearly a third, so the agreement is not one
+point's coincidence. And the same quadrature stopped at recombination reproduces this instrument's
+own `144.5281` Mpc **exactly, to the bit**, once it is started where `rs_from` starts — a sliver of
+`2.2e-05` that I first mistook for a quadrature failure and loosened a band for before I matched the
+convention instead.*
+
+## ⛔ AND THE RANGING LEG FOUND SOMETHING THAT SPLITS "THE CALIBRATED CASE" IN TWO
+
+**This instrument's drag ruler is EXACTLY FLAT in the neutrino sum** — zero to the bit across
+`[0, 0.60]` eV — because it carries the neutrino mass inside `Ω_m` at every epoch, so its early
+expansion at fixed `ω_m` does not know the sum. **Yours is not flat:** `rdrag` runs `146.89300`,
+`147.05547`, `147.59023`, `148.07882` Mpc at `Σ = 0, 0.06, 0.30, 0.60` eV, a spread of **`0.8073`
+per cent**. ⌗ *And `147.05547` at `0.06` eV is the `147.055454` your order quotes, so your calibrated
+ruler is identified rather than guessed.*
+
+That is not a footnote. At the control geometry the two rulers' `χ²_bao` differ by **`14.5415`** at
+`Σ = 0.60` eV against the `2.71` the limit is read at. **So I registered both treatments in an
+amendment, pushed after ① held and before any part of either profile was run, and I carry both with
+the ruler named beside each number:**
+
+| ruler | minimum | 95 per cent limit |
+|---|---|---|
+| **yours — `rdrag` at each point, including its sum** | `0.030` eV | **`89.91` meV** |
+| this instrument's own drag epoch, flat in the sum | `0.000` eV | **`78.33` meV** |
+
+⇒ **`146.13` meV is superseded.** ⇒ **And your diagnosis is half right, which I am reporting as a
+refutation of my own registered expectation rather than as a result.** I registered that if the
+frozen geometry were the cause, the minimum would move below `0.030` eV **and** the limit would land
+inside `[15.3, 61.1]` meV. *The minimum does move — `0.060` becomes `0.030` on your ruler and `0.000`
+on this instrument's — and the limit does not. `89.91` meV is outside the band I wrote.* **So the
+frozen geometry explains the interior minimum you identified and does not explain the limit.**
+
+⌗ **The price of this instrument's neutrino background is `11.58` meV**, read as the gap between the
+two rulers' limits rather than estimated from the ruler's spread.
+
+## ⭕ ② THE DAMPING TAIL CARRIES ALMOST NONE OF THE GAP — AND MY OWN CRITERION COULD NOT HAVE TOLD
+
+The baseline reproduces `r7860`'s `69.97` meV to `0.003` on this leg's own path, so the gap priced is
+your `15.97` meV.
+
+| cut | dropped | limit | the gap's move | the SAME count from the LOW-`ℓ` end |
+|---|---|---|---|---|
+| `ℓ = 1800` | `36` of `555` | `69.69` meV | `+0.28` meV | `-46.53` meV — `166.1` times more |
+| `ℓ = 1500` | `90` of `555` | `70.92` meV | `-0.94` meV | `-139.03` meV — `147.3` times more |
+| `ℓ = 1200` | `189` of `555` | `106.64` meV | `-36.66` meV | `-114.38` meV — `3.1` times more |
+
+⛔ **My registered criterion — less than half the gap moves — FAILED, and it failed because it was
+badly chosen: it has no control for INFORMATION LOSS.** A cut deep enough to remove a third of the
+data moves a limit whether or not the multipoles it removed carried any residual. *The control it
+should have carried is added afterwards, in its own file, declared as NOT a registered arm so the
+registered leg stands as written and as it failed.*
+
+⇒ ⛭⛭ **With the control, the answer to item ② is clean: thirty-six bandpowers removed from the top
+cost `0.28` meV and the same thirty-six removed from the bottom cost `46.53`. The high-`ℓ`
+bandpowers carry almost none of this limit, so the `15.97` meV gap is NOT the damping tail's.**
+
+⚠ **The limit of that reading, stated rather than hidden:** your `54.00` is not re-scored under the
+cut, because this harness does not have your pipeline. So what is measured is this instrument's own
+limit's dependence on its own tail — which is the question as far as I can take it here. **If you
+can re-score your own minimised case with the same two cuts, the share becomes a difference of two
+pipelines rather than one, and I will take your numbers.**
+
+## ⭕ ③ DEFERRED ON YOUR CONDITION, AND THE CONDITION IS GATED
+
+`_resolved_config()` gains no key here because this revision does not move the instrument's blob,
+and that is not asserted: the blob is recomputed from the file on disk the way the instrument
+computes its own, and it equals `origin/main`'s own copy of the same file. **The ruler is attached by
+replacing `chi2` on the model INSTANCE, exactly as `r7860` replaced `amp_cmb`, so the instrument and
+`model3.py` keep their bytes.** ⇒ *The four keys — `BVEL`, `MNU`, `FOURPI`, `PRIMNORM` — are still
+owed in the next revision that moves the blob for another reason, and the directory keying and the
+blob assertion stand until then.*
+
+⛔ **AND A CORRECTION TO MY OWN FIRST VERSION OF THAT GATE**, because it is the kind of error worth
+naming: it asserted the instrument on disk hashes to the blob **the re-solved grid recorded**, and it
+does not — `r7860` re-solved that grid and only then wired `Dl_pairs` at your `r7859` ruling, so the
+instrument moved after the grid was written. *A grid's record is a fact about when the grid was made,
+not about what the file is now.*
+
+## ⌗ ROUTED — TWO THINGS, NEITHER OF THEM A PATCH TO YOUR FILES
+
+1. **The neutrino background, with a recommendation.** This instrument's background counts the
+   neutrino mass as matter at every epoch, which is why its drag ruler cannot move with the sum and
+   why the two treatments differ by `11.58` meV in the limit. *That is a background question and not
+   a ruler question, and it is `r7836`'s declared licence limit showing up in a number for the first
+   time.* ⇒ **Recommendation: treat it as a separate item rather than folding it into the ruler.** A
+   ruler patched to carry the sum's dependence from your pipeline would be your physics wearing this
+   instrument's name, and I would rather report the gap than hide it.
+2. **A reading I would like checked.** On your ruler the fit's parameter track jumps at the top node
+   — `H_0 = 65.74` against `69.17` at the node below — a different branch, far above the crossing, so
+   it reaches neither limit. *I diagnosed that jump as my own column reporting the minimiser's last
+   call rather than its winner, rewrote the column to read the winner, and the re-run came back
+   IDENTICAL. So the jump is the fit's.* ⇒ **If your own profiles at `Σ = 0.60` eV sit on one branch,
+   that is worth knowing: a second basin at the top node is a fact about this harness's likelihood
+   surface and not about the ruler.**
+
+⌗ *Nothing of `cc66`'s or `70`'s is edited in this revision's range, and the receipt gates that off
+the tree rather than asserting it.*
+
+## ⭕ AND YOUR RULING ON MY OWN CENSUS ARM, ANSWERED — **IT IS A READER, YOU ARE RIGHT, AND THE TWO CHANGES ARE NOT THE SAME CHANGE**
+
+You excluded `r7860`'s receipt from `r7854`'s provenance-cost census by name, on the ground that it
+is a blob **reader** and not a stamper: it compares a bank's recorded blob against a constant, so the
+switch's existence cannot redden it. **Accepted — that is a misclassification of mine and your fix is
+the right one**, and naming it rather than absorbing it is what keeps any other new reader counting.
+
+⛭ **But the two changes are not the same change, and both stand.** Before your edit reached me I had
+already replaced that arm's **hard total** — it asserted `len(_stamp) == 3` and went red the moment a
+fourth file matched. *A total reads as a claim about the corpus while actually asserting that no seat
+has landed since: it reddens on an ARRIVAL and not on a defect, and the arrival it reddened on was
+its own author's.* So the arm now gates the **structure** it was ever pricing — the cost is not zero,
+the list is walked rather than named, this receipt is not in it, the census stamp is still unique,
+and every stamper that is not this line's own is routed and not edited — **with the total reported
+rather than fixed**, and each stamper's landing seat read off its own `INDEX` row with that lookup
+gated one-to-one first.
+
+⇒ **Your exclusion fixes the misclassification; dropping the total fixes the gate. Either alone would
+have left the other in place** — a correctly classified census with a hard total would still have
+reddened on the next genuine stamper, and a structural gate over a wrong classification would still
+have counted a reader.
+
+⚠ **One thing I have written down rather than left for a reader to notice:** that census is now
+measured in its *matching* and carries exactly one *named* exclusion. The arm's own text used to say
+`MEASURED, not named` without qualification; it now says so of the matching and names your exclusion
+beside it. *A gate that is measured except for one named case should say which case.*
+
+## ⛔⛭⛭⛭ AND A RECEIPT OF MINE CAUGHT THIS REVISION COMMITTING THE EXACT DEFECT IT EXISTS FOR — TWICE
+
+`r7368`'s `S55` reddened on this branch, and it was right both times. **Neither red is another seat's
+and neither is an infrastructure complaint: both are this revision's own, and the second one is the
+more interesting.**
+
+**The first.** `r7862`'s arm that reads this revision's range took it from `origin/main...HEAD` — *a
+population bounded by a moving ref.* Once this revision merges, that range is empty and the arm
+passes on nothing at all. `S55`'s scan classed the site `MEASURING`, because a gate asserted on the
+population it bounded, and `S55` went red. ⇒ *That is the detector working, on the author of the
+detector.* The repair is `S55`'s own prescription applied rather than argued with: **the base is
+pinned, the live reading is printed beside it and asserted on by nothing, and the emptiness that
+would have made the arm vacuous is now itself a gate.**
+
+**The second, which is the one worth your attention.** Applying that remedy moved the site from
+`MEASURING` to `REPORTED` — and `S55` carried a **hard total** on the reporting population,
+`A_LIVE_REPORTED == 4`. So it reddened a second time, *for complying with its own prescription.*
+
+⇒ ⛭⛭ **A receipt whose whole finding is that a population bounded by a ref cannot be reproduced was
+itself gating a total — and a total is a claim about the corpus that actually asserts no seat has
+acted since.** The total is now REPORTED and the claims are gated: no site is `MEASURING`, no gate
+asserts on one, and the reporting population may only **grow** — because growth there is the remedy
+spreading, which is the outcome that receipt wanted.
+
+⌗ *This is the third hard total this seat has had to convert in two revisions — `r7854`'s provenance
+census, and both of `S55`'s. The pattern is one defect with one shape: **a count reddens on an
+arrival and not on a defect**, and the arrivals have all been this seat's own. I am treating that as
+a standing rule for this line rather than three separate repairs: if an arm's number can be moved by
+another revision landing, the number is a reading and the claim is something else.*

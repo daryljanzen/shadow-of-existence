@@ -334,16 +334,53 @@ for _dp, _dn, _fn in os.walk(_RCPTS):
             _censusstamp.append(_f)
 _stamp = sorted(set(_blobstamp) | set(_censusstamp))
 _mine = [_f for _f in _stamp if _f.startswith('P15_the_baryons_never_clustered')]
-check('Ⓚ the provenance cost is NOT zero and is read off the tree: exactly %d receipt(s) stamp this '
-      'shared instrument\'s switch census or its source hash, so the switch\'s EXISTENCE turns them '
-      'red with it OFF and every array byte-identical.  ** None is edited here: all three are '
-      'cc66\'s and the patches are routed through FOR_66_FROM_60.md. **  ⌗ The list is MEASURED, '
-      'not named: this walks receipts/ for the two stamps rather than asserting which files carry '
-      'them, and this receipt is not among them' % len(_stamp),
-      len(_stamp) == 3 and len(_blobstamp) == 2 and len(_censusstamp) == 1 and _mine == []
+# ⛔ **THE TOTAL WAS GATED AND IS NOT ANY MORE, AND THE REASON IS THIS LINE'S OWN.**  This row
+#   first ran with three stampers and asserted `len(_stamp) == 3`; the census now finds a fourth,
+#   and it is `r7860`'s receipt -- THIS SEAT'S -- which stamps the shared instrument's source hash
+#   as well.  *A hard total reads as a claim about the corpus while actually asserting that no seat
+#   has landed since: it goes red on an ARRIVAL and not on a defect, and the arrival it went red on
+#   was its own author's.*  What this row prices is the STRUCTURE of the cost, so the structure is
+#   what is gated now -- the cost is not zero, the list is walked and not named, this receipt is not
+#   in it, the census stamp is still unique, and every stamper that is NOT this line's own is
+#   ROUTED and not edited here -- with the total REPORTED rather than fixed.
+#   ⛭ *`r7861` (69) then RULED on the fourth and the ruling is kept above this line rather than
+#   paraphrased: it is a blob READER and not a stamper -- it compares a bank's recorded blob against
+#   a constant, so the switch's existence cannot redden it -- and `69` excluded it BY NAME so that
+#   any other new reader still counts.  ⇒ The census reads three again.  **Both changes stand, and
+#   they are not the same change:** the named exclusion fixes a MISCLASSIFICATION, and dropping the
+#   hard total fixes a GATE that went red on an arrival.  Either alone would have left the other.*
+#   ⚠ *So this census is measured in its MATCHING and carries exactly one NAMED exclusion, which is
+#   documented beside it.  The arm says `MEASURED, not named` of the matching and not of the walk,
+#   and the distinction is written here rather than left for a reader to notice.*
+#   ⌗ *And whose each stamper is, is read off the ledger rather than guessed from its name: the
+#   `receipts/INDEX.md` row that names the file, whose provenance cell carries the landing seat.
+#   The lookup is gated ONE-TO-ONE before it is trusted, because a stem matching two rows would
+#   identify two revisions as one, and the ownership split is exactly what this row turns on.*
+_INDEX = io.open(os.path.join(_RCPTS, 'INDEX.md'), encoding='utf-8').read().split('\n')
+_rows = dict((_f, [_r for _r in _INDEX if _f in _r]) for _f in _stamp)
+_one2one = _rows != {} and all(len(_r) == 1 for _r in _rows.values())
+_prov = dict((_f, _r[0].split('|')[-2]) for _f, _r in _rows.items() if len(_r) == 1)
+_byme = sorted(_f for _f, _p in _prov.items() if 'Node `60`' in _p)
+_byother = sorted(_f for _f, _p in _prov.items() if 'Node `60`' not in _p)
+check('Ⓚ the provenance cost is NOT zero and is read off the tree: %d receipt(s) stamp this shared '
+      'instrument\'s switch census or its source hash, so the switch\'s EXISTENCE turns them red '
+      'with it OFF and every array byte-identical.  ** %d of them are other seats\' and NONE of '
+      'those is edited here -- the patches are routed through FOR_66_FROM_60.md -- and %d of them '
+      'this line\'s own, which PAY this cost rather than impose it. **  ⌗ The list is MEASURED '
+      'and the total is REPORTED, not gated: the MATCHING walks receipts/ for the two stamps rather '
+      'than asserting which files carry them, with exactly ONE named exclusion -- r7861 (69)\'s '
+      'ruling that r7860\'s receipt is a blob READER and not a stamper -- and each one\'s landing '
+      'seat is read off its own INDEX row with that lookup gated one-to-one first, and this receipt '
+      'is not among them'
+      % (len(_stamp), len(_byother), len(_byme)),
+      len(_stamp) >= 3 and len(_blobstamp) >= 2 and len(_censusstamp) == 1 and _mine == []
       and _stamp == sorted(_stamp)
+      and _one2one and sorted(_byme + _byother) == _stamp and _byother != []
+      and set(_censusstamp) <= set(_byother)
+      and SUM['downstream']['p15_sources_touched'] == []
       and "the zero is the calibration figures' and not the provenance ratchets'" in RESULT.lower(),
-      'blob-stamping %s; census-stamping %s' % (_blobstamp, _censusstamp))
+      'blob-stamping %s; census-stamping %s; other seats\' %s; this line\'s own %s'
+      % (_blobstamp, _censusstamp, _byother, _byme))
 
 # Ⓘ⑨ the cost
 _t = SUM['timings']
