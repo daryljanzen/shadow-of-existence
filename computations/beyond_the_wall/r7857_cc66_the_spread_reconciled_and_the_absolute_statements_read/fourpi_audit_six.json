@@ -1,0 +1,132 @@
+{
+ "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 19,
+  "archives_opened": 48,
+  "which": "['cc66_r185_verify_cr.npz:Dl', 'cc66_r185_verify_cr_leafrec1.npz:Dl', 'cc66_r185_verify_lcdm.npz:Dl', 'r6885_dp0_cr.npz:Dl', 'r6885_dp0_lcdm.npz:Dl', 'r6885_drc0_cr.npz:Dl', 'r6885_drc0_lcdm.npz:Dl', 'r6885_dre0_cr.npz:Dl', 'r6885_dre0_lcdm.npz:Dl', 'r6885_ln24_cr.npz:Dl', 'r6885_ln24_lcdm.npz:Dl', 'r6885_los_cr.npz:Dl', 'r6885_los_lcdm.npz:Dl', 'r6885_losdp0_cr.npz:Dl', 'r6885_losdp0_lcdm.npz:Dl', 'r6885_lossw0_cr.npz:Dl', 'r6885_lossw0_lcdm.npz:Dl', 'r6885_noisw_cr.npz:Dl', 'r6885_noisw_lcdm.npz:Dl']",
+  "lines": [
+   460,
+   460
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [
+   [
+    "chi2 286.8941240254 -> 286.8941240254    fitted amplitude 13583.4831 -> 12701.7656 (ratio 1.069417)",
+    "chi2 286.8941240254 -> 286.8941240254    fitted amplitude 6791.7415 -> 6350.8828 (ratio 1.069417)",
+    0.499999996319059
+   ]
+  ],
+  "secs": [
+   2.8,
+   2.9
+  ]
+ },
+ "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 3,
+  "archives_opened": 15,
+  "which": "['cc66_r185_verify_cr.npz:Dl', 'cc66_r185_verify_cr_leafrec1.npz:Dl', 'cc66_r185_verify_lcdm.npz:Dl']",
+  "lines": [
+   361,
+   361
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [
+   [
+    "control  peaks at l = [220, 537, 814]   heights [0.5339, 0.2437, 0.2406]   P1/P2 = 2.1912   P1/P3 = 2.2188",
+    "control  peaks at l = [220, 537, 814]   heights [1.0679, 0.4874, 0.4813]   P1/P2 = 2.1912   P1/P3 = 2.2188",
+    2.000187300992695
+   ],
+   [
+    "arm      peaks at l = [222, 536, 815]   heights [0.417, 0.1954, 0.1925]   P1/P2 = 2.1345   P1/P3 = 2.1663",
+    "arm      peaks at l = [222, 536, 815]   heights [0.8341, 0.3908, 0.385]   P1/P2 = 2.1345   P1/P3 = 2.1663",
+    2.000239808153477
+   ],
+   [
+    "namesake peaks at l = [222, 536, 815]   heights [0.4423, 0.2066, 0.2036]   P1/P2 = 2.1411   P1/P3 = 2.1724",
+    "namesake peaks at l = [222, 536, 815]   heights [0.8846, 0.4132, 0.4072]   P1/P2 = 2.1411   P1/P3 = 2.1724",
+    2.0
+   ]
+  ],
+  "secs": [
+   3.2,
+   3.2
+  ]
+ },
+ "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 4,
+  "archives_opened": 5,
+  "which": "['cc66_r185_verify_cr_leafrec1.npz:Dl', 'cc66_r185_verify_lcdm.npz:Dl', 'cr_base.npz:Dl', 'r7807_control_planck2018_L2000.npz:Dl']",
+  "lines": [
+   141,
+   141
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [],
+  "secs": [
+   2.6,
+   2.7
+  ]
+ },
+ "P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 0,
+  "archives_opened": 1,
+  "which": "[]",
+  "lines": [
+   176,
+   176
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [],
+  "secs": [
+   11.1,
+   11.2
+  ]
+ },
+ "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 0,
+  "archives_opened": 0,
+  "which": "[]",
+  "lines": [
+   14,
+   14
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [],
+  "secs": [
+   0.5,
+   0.5
+  ]
+ },
+ "P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py": {
+  "rc_base": 0,
+  "rc_doubled": 0,
+  "arrays_doubled": 6,
+  "archives_opened": 8,
+  "which": "['r6941_fine_cr.npz:Dl', 'r6941_fine_cr_leafrec1.npz:Dl', 'r6941_fine_lcdm.npz:Dl', 'r6959_nswap_lcdm.npz:Dl', 'r6975_mix_lcdm.npz:Dl', 'r6983_joint_lcdm.npz:Dl']",
+  "lines": [
+   177,
+   177
+  ],
+  "fails_base": [],
+  "fails_doubled": [],
+  "moved": [],
+  "secs": [
+   1.1,
+   1.1
+  ]
+ }
+}
