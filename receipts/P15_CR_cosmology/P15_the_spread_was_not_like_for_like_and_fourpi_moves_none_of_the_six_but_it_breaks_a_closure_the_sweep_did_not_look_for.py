@@ -250,13 +250,19 @@ check("Ⓒ⑥ ** ZERO OF THE SIX MOVE: not one assertion changes verdict and not
       and max(v['arrays_doubled'] for v in _reach.values()) == 19,
       f"{len(_reach)} of {len(SIX)} reached, "
       f"{sum(len(v['fails_doubled']) for v in SIX.values())} FAIL in all")
+# ⛭ ** NAMED, NOT COUNTED -- and `check_prose_pins` is what made me write it this way. **  *The
+#   first form of this arm asserted `.count(1) == 1` and `.count(0) == 1` over the unreachable
+#   receipts, and the gate flagged both as pins on a COUNT OF MATCHES: two receipts swapping which
+#   one opens an archive would have left them both true.  Keyed by receipt instead, it says which
+#   receipt opens what, and it is strictly the stronger statement.*
+_unreach = {f[4:30]: v['archives_opened'] for f, v in SIX.items() if v['arrays_doubled'] == 0}
+print(f"      unreached by the doubling, with the archives each one opens: {_unreach}")
 check("Ⓒ⑦ ⛔ and the POSITIVE CONTROL is what makes that readable: the two receipts the probe does "
-      "NOT reach are declared rather than counted as clean -- one opens a single archive that holds "
-      "no instrument spectrum and one opens none at all",
-      sorted(f[4:30] for f, v in SIX.items() if v['arrays_doubled'] == 0)
-      == ['the_period_difference_null', 'the_projection_read_recomb']
-      and [v['archives_opened'] for f, v in SIX.items() if v['arrays_doubled'] == 0].count(1) == 1
-      and [v['archives_opened'] for f, v in SIX.items() if v['arrays_doubled'] == 0].count(0) == 1)
+      "NOT reach are declared rather than counted as clean -- the period-difference null opens a "
+      "single archive and it holds no instrument spectrum, and the projection receipt opens none at "
+      "all, each named here rather than counted",
+      _unreach == {'the_period_difference_null': 1, 'the_projection_read_recomb': 0},
+      f"{_unreach}")
 _nofit = [v for f, v in SIX.items() if 'no_fit_confrontation' in f][0]
 _two = [v for f, v in SIX.items() if 'two_channels' in f][0]
 check("Ⓒ⑧ ⛔ ** AND THE ONE Ⓕ NAMED AS MOST LIKELY TO MOVE IS ONE OF THE TWO THAT MOVE NO DIGIT AT "
