@@ -138,6 +138,11 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
+   "receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45210594777",
+    "since": "320a832a3bfc0c545857ba3c2044965ca9972d49"
+   },
    "receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py": {
     "gates": [
      "# of # gates; # failure(s): \u26ed\u26d4\u26ed `r#`",
