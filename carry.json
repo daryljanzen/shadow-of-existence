@@ -2155,6 +2155,11 @@
    }
   },
   "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45242076911",
+    "since": "80e0bbd3969d8fab8c4c85ce22b4961988f17966",
+    "unmeasured": true
+   },
    "receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
@@ -2465,11 +2470,6 @@
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
    },
-   "receipts/P15_CR_cosmology/P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
    "receipts/P15_CR_cosmology/P15_all_three_steps_of_chi_for_the_visibility_take_the_rate_the_rule_assigns_them_and_the_collapse_the_order_feared_was_found_and_split_at_r7095.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
@@ -2496,11 +2496,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_more_information_made_the_control_worse_and_the_act_data_the_order_offered_was_already_banked_and_cannot_close_the_gap.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
@@ -2551,11 +2546,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
@@ -2680,11 +2670,6 @@
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
    },
-   "receipts/P15_CR_cosmology/P15_the_interiors_transfer_imprints_its_own_running_so_the_channel_hunt_answered_the_wrong_question.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
    "receipts/P15_CR_cosmology/P15_the_joint_data_fitted_and_the_adjudicated_endpoint_refits_level_with_lcdm_while_the_geometric_part_ratio_does_not.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
@@ -2716,11 +2701,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
@@ -2845,11 +2825,6 @@
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
    },
-   "receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
    "receipts/P15_CR_cosmology/P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
@@ -2886,21 +2861,6 @@
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_spread_was_not_like_for_like_and_fourpi_moves_none_of_the_six_but_it_breaks_a_closure_the_sweep_did_not_look_for.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
-    "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45226829782",
     "since": "60a83b8b4223a9a3f92c500e23854c3ca6cdac47",
     "unmeasured": true
