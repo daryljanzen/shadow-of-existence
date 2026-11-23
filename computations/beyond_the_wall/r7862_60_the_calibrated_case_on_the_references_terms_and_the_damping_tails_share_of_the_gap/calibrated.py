@@ -194,7 +194,7 @@ def price_the_rulers(mod, M3, DI, r_inst, r_ref, sums):
     return out
 
 
-def profile(mod, sums, label, seen):
+def profile(mod, sums, label, seen, ruler):
     """the profile, with the convergence discipline `r7860` had to learn, carried unchanged
 
     ⛔ *`r7860`'s first control profile DIPPED above its minimum and its limit was `14.8` per cent
@@ -230,15 +230,29 @@ def profile(mod, sums, label, seen):
         return best, bestx
 
     s = np.array(sums, float)
-    t, xs, rds = [], [], []
+    t, xs, rds, calls = [], [], [], []
     for v in s:
         del seen[:]
         b, bx = prof(float(v))
         t.append(b)
         xs.append(bx)
+        calls.append(len(seen))
         # ⌗ Ⓑ②ᵈ: the ruler AT THE NODE'S OWN MINIMUM, recorded so a ruler that never moved cannot
-        #   pass for a calibrated one.  `seen` is the ruler's own call log for this node.
-        rds.append(float(seen[-1][1]) if seen else float('nan'))
+        #   pass for a calibrated one.
+        #   ⛔⚠ *The first version of this column read `seen[-1]` -- the ruler's LAST call at the
+        #   node, which is the final polish's last trial point and not the minimum.  It put
+        #   `149.9752` Mpc at the top node against `145.4` -- `146.0` at every other, and this seat
+        #   read that jump as the instrumentation's and fixed it here, evaluating the ruler AT the
+        #   winning parameters instead.*  ⇒ ** AND THE RE-RUN REFUTED THAT DIAGNOSIS: the column
+        #   comes back IDENTICAL, `149.9752` included. **  *So the jump is the FIT's and not the
+        #   reading's -- at the top node the minimiser lands on a different branch, `H0 = 65.74`
+        #   against `69.17` at the node below -- and the hypothesis is kept here as refuted rather
+        #   than quietly dropped.  The change stands on its own merits: evaluating at the winning
+        #   parameters is the right reading whether or not it moves a number.*
+        if bx is None:
+            rds.append(float('nan'))
+        else:
+            rds.append(float(ruler(mod.cmb.phys(list(bx[:4]), float(v)))))
     t = np.array(t, float)
     d = t - np.nanmin(t)
     i0 = int(np.nanargmin(t))
@@ -274,6 +288,7 @@ def profile(mod, sums, label, seen):
                 limit_meV=(None if dips else lim), crossing_meV=lim,
                 monotonic_above_min=not dips, dips=[list(x) for x in dips],
                 rd_at_node=rds, rd_span=rd_moved, ruler_moves=bool(rd_moved > 1e-6),
+                ruler_calls_per_node=calls,
                 x_at_node=[list(map(float, x)) if x else None for x in xs])
 
 
@@ -344,7 +359,7 @@ def main():
         # amplitude the CMB solves for halves.  Carried here unchanged and NOT re-measured.
         mod.amp_cmb = lambda x4, s, _r=raw_amp: _r(x4, s) / 2.0
         seen = attach(mod, ruler, M3, DI)
-        res = profile(mod, sums, 'CALIBRATED on %s' % ruler.label, seen)
+        res = profile(mod, sums, 'CALIBRATED on %s' % ruler.label, seen, ruler)
         res['ruler'] = ruler.name
         res['ruler_label'] = ruler.label
         res['clipped_calls'] = int(ruler.clipped)

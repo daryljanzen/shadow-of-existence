@@ -93,7 +93,10 @@ def validate():
                    rdrag_ref=ref['rdrag'], zdrag_ref=ref['zdrag'],
                    r_rel=abs(mine['r_drag'] / ref['rdrag'] - 1.0),
                    z_rel=abs((1.0 + mine['z_drag']) / (1.0 + ref['zdrag']) - 1.0),
-                   r_rec_error=mine['r_rec_error'], R_S=mine['R_S'],
+                   r_rec_error=mine['r_rec_error'],
+                   r_rec_error_strict=mine['r_rec_error_strict'], R_S=mine['R_S'],
+                   r_rec_reproduced=mine['r_rec_reproduced'],
+                   r_rec_reproduced_strict=mine['r_rec_reproduced_strict'],
                    taud_at_eta_rec=mine['taud_at_eta_rec'], clock=mine['clock'])
         row['within'] = bool(row['r_rel'] < TOL_REF and row['z_rel'] < TOL_REF)
         rows.append(row)
@@ -106,7 +109,8 @@ def validate():
     return dict(rows=rows, tol=TOL_REF,
                 corners_within=bool(all(r['within'] for r in corners)),
                 read_point_within=bool(rows[0]['within']),
-                worst_r_rec_error=max(r['r_rec_error'] for r in rows))
+                worst_r_rec_error=max(r['r_rec_error'] for r in rows),
+                worst_r_rec_error_strict=max(r['r_rec_error_strict'] for r in rows))
 
 
 def ranging():
@@ -176,9 +180,38 @@ def _grid_one(job):
     return probe(H0, OM, WB, MNU=S)
 
 
+def _merge(res):
+    # ⛔ *The first version of this block OVERWROTE the json with whichever section had just run,
+    #   so running `validate` and then `range` left a record carrying only the second.  The record
+    #   is MERGED now: a receipt that reads this file is entitled to every leg that was run, not to
+    #   the last one.*
+    path = os.path.join(HERE, 'drag_ruler.json')
+    old = {}
+    if os.path.exists(path):
+        old = json.load(io.open(path, encoding='utf-8'))
+    old.update(res)
+    with io.open(path, 'w', encoding='utf-8') as fh:
+        fh.write(json.dumps(old, indent=1, sort_keys=True, default=float))
+
+
 if __name__ == '__main__':
     what = sys.argv[1] if len(sys.argv) > 1 else 'all'
     res = {}
+    if what == 'gridmeta':
+        # ⌗ *the table's own shape and span, READ OFF the committed table rather than rebuilt: the
+        #   table is the artefact and this is a fact about it.  It is not a re-measurement and is
+        #   not presented as one.*
+        g = np.load(os.path.join(HERE, 'rd_grid.npz'))
+        res['grid'] = dict(n=[int(len(g['sums'])), int(len(g['omega_m'])), int(len(g['omega_b']))],
+                           r_lo=float(g['r_drag'].min()), r_hi=float(g['r_drag'].max()),
+                           omega_m=[float(g['omega_m'][0]), float(g['omega_m'][-1])],
+                           omega_b=[float(g['omega_b'][0]), float(g['omega_b'][-1])],
+                           read_off_the_committed_table=True)
+        print('    %d x %d x %d nodes, r_d %.4f to %.4f Mpc'
+              % tuple(res['grid']['n'] + [res['grid']['r_lo'], res['grid']['r_hi']]))
+        _merge(res)
+        print('')
+        raise SystemExit(0)
     if what in ('all', 'validate'):
         print('\n  Ⓐ①ᵃ THE RULER AGAINST THE REFERENCE')
         print('  ' + '-' * 110)
@@ -198,6 +231,5 @@ if __name__ == '__main__':
                  g['r_drag'].min(), g['r_drag'].max()))
         res['grid'] = dict(n=[int(len(g['sums'])), int(len(g['omega_m'])), int(len(g['omega_b']))],
                            r_lo=float(g['r_drag'].min()), r_hi=float(g['r_drag'].max()))
-    with io.open(os.path.join(HERE, 'drag_ruler.json'), 'w', encoding='utf-8') as fh:
-        fh.write(json.dumps(res, indent=1, sort_keys=True, default=float))
+    _merge(res)
     print('')

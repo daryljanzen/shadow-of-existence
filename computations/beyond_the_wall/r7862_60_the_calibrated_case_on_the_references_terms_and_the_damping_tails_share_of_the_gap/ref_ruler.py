@@ -69,8 +69,41 @@ def _one(job):
     return DR.camb_drag(H0, OM, WB, MNU=S)
 
 
+def sum_dependence():
+    """the reference's ruler ACROSS THE NEUTRINO SUM at one geometry -- the amendment's evidence
+
+    *This is the measurement that forced the amendment: the instrument's own ruler is exactly flat
+    in the sum and this one is not, so the two cannot both be "the calibrated case".*
+    """
+    c = DR.CENTRE
+    rows = []
+    for sv in (0.0, 0.06, 0.30, 0.60):
+        d = DR.camb_drag(c['H0'], c['OM'], c['WB'], MNU=sv)
+        rows.append(dict(sum=float(sv), rdrag=d['rdrag'], zdrag=d['zdrag']))
+        print('    Sum %.2f eV   rdrag %10.5f   zdrag %9.3f' % (sv, d['rdrag'], d['zdrag']))
+    spread = max(r['rdrag'] for r in rows) / min(r['rdrag'] for r in rows) - 1.0
+    print('    ⇒ the reference\'s ruler spreads %.4f per cent across [0, 0.60] eV, where this'
+          ' instrument\'s moves by exactly zero' % (100.0 * spread))
+    return dict(rows=rows, spread=float(spread))
+
+
+def _merge(out):
+    path = os.path.join(HERE, 'ref_ruler.json')
+    old = json.load(io.open(path, encoding='utf-8')) if os.path.exists(path) else {}
+    old.update(out)
+    with io.open(path, 'w', encoding='utf-8') as fh:
+        fh.write(json.dumps(old, indent=1, sort_keys=True, default=float))
+
+
 if __name__ == '__main__':
     out = {}
+    if len(sys.argv) > 1 and sys.argv[1] == 'sums':
+        print('\n  THE REFERENCE\'S RULER ACROSS THE SUM -- why the amendment exists')
+        print('  ' + '-' * 104)
+        out['sum_dependence'] = sum_dependence()
+        _merge(out)
+        print('')
+        raise SystemExit(0)
     print('\n  Ⓑ②ᶠ⒝ WHAT THE REFERENCE\'S RULER RANGES OVER')
     print('  ' + '-' * 104)
     out['ranging'] = ranging()
@@ -83,6 +116,6 @@ if __name__ == '__main__':
              g['rdrag'].min(), g['rdrag'].max()))
     out['grid'] = dict(n=[int(len(g['omega_m'])), int(len(g['omega_b'])), int(len(g['sums']))],
                        r_lo=float(g['rdrag'].min()), r_hi=float(g['rdrag'].max()))
-    with io.open(os.path.join(HERE, 'ref_ruler.json'), 'w', encoding='utf-8') as fh:
-        fh.write(json.dumps(out, indent=1, sort_keys=True, default=float))
+    out['sum_dependence'] = sum_dependence()
+    _merge(out)
     print('')

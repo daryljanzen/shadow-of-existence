@@ -79,8 +79,18 @@ def main():
                #   already reports is reproduced by this file's own quadrature rather than trusted:
                #   a ruler that could not reproduce `R_S` is not measuring what `R_S` measures.
                r_rec_reproduced=float(_rs_to(float(m.A_REC))),
+               # ⛔ *and the reproduction is checked ON `rs_from`'S OWN CONVENTION, which is not
+               #   `a = 0`: the default is `rs_from(1e8)`, whose lower limit is `a = 1/(1+1e8)`.
+               #   Integrated from zero the agreement is `2.2e-05` and no better -- that sliver is
+               #   the whole of the difference, and the first version of this check read it as a
+               #   quadrature failure instead of as a CONVENTION.  Matching the convention is the
+               #   fix; loosening the band would have hidden which of the two it was.*
+               r_rec_reproduced_strict=float(quad(
+                   lambda a: m.C / (a ** 2 * H(a) * np.sqrt(3 * (1 + m.RB_REC * a / m.A_REC))),
+                   1.0 / (1.0 + 1e8), float(m.A_REC), limit=250)[0]),
                clock=('leaf' if m.LEAFSCALES else ('leaf' if m.LEAFGEOM else 'stack')))
     out['r_rec_error'] = abs(out['r_rec_reproduced'] / out['R_S'] - 1.0)
+    out['r_rec_error_strict'] = abs(out['r_rec_reproduced_strict'] / out['R_S'] - 1.0)
     with io.open(os.environ['OUTJSON'], 'w', encoding='utf-8') as fh:
         fh.write(json.dumps(out, indent=1, sort_keys=True))
     return 0
