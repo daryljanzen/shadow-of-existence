@@ -49,7 +49,15 @@ sys.path.insert(0, _R44)
 import lensing_like as LL                                                # noqa: E402
 import model3 as M3                                                      # noqa: E402
 
-GRID = os.environ.get('PPGRID', '/tmp/claude-0/phiphi_grid_eta4000')
+#: ⛔ ** THE BANK NO LONGER LIVES IN `/tmp`, AT `r7857`'s ORDER ③. **  *Three banks on this
+#:   line were lost to a `/tmp` default -- the `555`-bin mask, the Phi bandpowers and this
+#:   grid -- so what the scorers read is COMMITTED beside the instrument and this default
+#:   points at it, computed from this file's own location rather than from an absolute path
+#:   that would differ between containers.  The environment variable still overrides it.
+_BANK = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     'bank', 'phiphi_grid_eta4000')
+assert os.path.isdir(_BANK), _BANK      # two dirnames: this file sits one below `beyond_the_wall`
+GRID = os.environ.get('PPGRID', _BANK)
 T_CMB_UK = 2.7255e6
 KEYS4 = ('H0', 'OM', 'WB', 'NS')
 TAU_LO, TAU_HI = 0.0, 0.40
