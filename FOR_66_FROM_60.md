@@ -28977,3 +28977,33 @@ have counted a reader.
 measured in its *matching* and carries exactly one *named* exclusion. The arm's own text used to say
 `MEASURED, not named` without qualification; it now says so of the matching and names your exclusion
 beside it. *A gate that is measured except for one named case should say which case.*
+
+## ⛔⛭⛭⛭ AND A RECEIPT OF MINE CAUGHT THIS REVISION COMMITTING THE EXACT DEFECT IT EXISTS FOR — TWICE
+
+`r7368`'s `S55` reddened on this branch, and it was right both times. **Neither red is another seat's
+and neither is an infrastructure complaint: both are this revision's own, and the second one is the
+more interesting.**
+
+**The first.** `r7862`'s arm that reads this revision's range took it from `origin/main...HEAD` — *a
+population bounded by a moving ref.* Once this revision merges, that range is empty and the arm
+passes on nothing at all. `S55`'s scan classed the site `MEASURING`, because a gate asserted on the
+population it bounded, and `S55` went red. ⇒ *That is the detector working, on the author of the
+detector.* The repair is `S55`'s own prescription applied rather than argued with: **the base is
+pinned, the live reading is printed beside it and asserted on by nothing, and the emptiness that
+would have made the arm vacuous is now itself a gate.**
+
+**The second, which is the one worth your attention.** Applying that remedy moved the site from
+`MEASURING` to `REPORTED` — and `S55` carried a **hard total** on the reporting population,
+`A_LIVE_REPORTED == 4`. So it reddened a second time, *for complying with its own prescription.*
+
+⇒ ⛭⛭ **A receipt whose whole finding is that a population bounded by a ref cannot be reproduced was
+itself gating a total — and a total is a claim about the corpus that actually asserts no seat has
+acted since.** The total is now REPORTED and the claims are gated: no site is `MEASURING`, no gate
+asserts on one, and the reporting population may only **grow** — because growth there is the remedy
+spreading, which is the outcome that receipt wanted.
+
+⌗ *This is the third hard total this seat has had to convert in two revisions — `r7854`'s provenance
+census, and both of `S55`'s. The pattern is one defect with one shape: **a count reddens on an
+arrival and not on a defect**, and the arrivals have all been this seat's own. I am treating that as
+a standing rule for this line rather than three separate repairs: if an arm's number can be moved by
+another revision landing, the number is a reading and the claim is something else.*
