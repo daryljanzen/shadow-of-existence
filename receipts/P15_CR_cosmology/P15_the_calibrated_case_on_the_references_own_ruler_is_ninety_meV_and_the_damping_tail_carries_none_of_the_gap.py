@@ -42,6 +42,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -77,6 +78,11 @@ RR = load('ref_ruler.json')
 CAL = load('calibrated.json')
 TS = load('tail_share.json')
 TC = load('tail_control.json')
+#: r7860's own record, so the figure this revision supersedes is READ and not remembered
+R7860 = json.load(io.open(os.path.join(
+    ROOT, 'computations', 'beyond_the_wall',
+    'r7860_60_the_polarisation_blocks_wired_the_spread_reconciled_and_the_bank_committed',
+    'control.json'), encoding='utf-8'))
 RESULT = ' '.join(io.open(os.path.join(D, 'RESULT.md'), encoding='utf-8').read().split())
 PRED = ' '.join(io.open(os.path.join(D, 'PREDICTION.md'), encoding='utf-8').read().split())
 
@@ -160,7 +166,7 @@ check('Ⓐ①ᵇᵇ ** AND THE OTHER HALF OF THAT ARM IS WHY THIS REVISION HAS A
       'between a reading and a memory' % (100.0 * _SD['spread']),
       _NS['spread'] == 0.0 and len(_NS['sums']) == 4 and len(set(_NS['r_drag'])) == 1
       and len(_SD['rows']) == 4 and _SD['spread'] > 0.008
-      and abs(100.0 * _SD['spread'] - 0.8073) < 1.0e-03
+      and abs(100.0 * _SD['spread'] - 0.8073) < 3.0e-04
       and abs(_SD['rows'][0]['rdrag'] - 146.89300) < 1.0e-04
       and abs(_SD['rows'][3]['rdrag'] - 148.07882) < 1.0e-04
       and abs(_SD['rows'][1]['rdrag'] - 147.05547) < 1.0e-04,
@@ -260,16 +266,23 @@ check('Ⓑ②ᵈᵃ ⚠ and the one discontinuity in that column is the FIT\'s a
       'four' % (_RF['x_at_node'][-1][0], _RF['x_at_node'][-2][0]))
 
 _AD = CAL['adjudication']
+_BAND = [float(v) for v in
+         re.findall(r'\[([0-9.]+), ([0-9.]+)\] meV', _AD['expectation'])[0]]
 check('Ⓑ②ᵇ ** THE REGISTERED EXPECTATION IS REFUTED AND THE ORDER\'S DIAGNOSIS IS HALF RIGHT. **  '
       'It was registered that if the frozen geometry were the cause, the calibrated minimum would '
       'move below 0.030 eV AND the limit would land inside [15.3, 61.1] meV.  The minimum DOES '
-      'move -- from r7860\'s 0.060 eV to 0.030 on the reference\'s ruler and to 0.000 on the '
+      'move -- from r7860\'s own recorded 0.060 eV to 0.030 on the reference\'s ruler and to 0.000 on the '
       'instrument\'s -- and the limit does NOT: 89.91 meV is outside the band.  ⇒ So the frozen '
       'geometry explains the interior minimum and does not explain the limit, and the criterion is '
       'reported exactly as written',
       _AD['held'] is False
       and 'inside [15.3, 61.1] meV' in _AD['expectation']
       and 'below 0.030' in _AD['expectation']
+      # ⌗ *the band's two edges are PINNED off the criterion this run itself recorded, so a
+      #   receipt that printed a band the run did not use would fail here rather than read well.*
+      and abs(_BAND[0] - 15.3) < 4.0e-02 and abs(_BAND[1] - 61.1) < 4.0e-02
+      # ⌗ *and r7860's own minimum is READ from its record, not carried in a sentence.*
+      and abs(R7860['calibrated']['min_at'] - 0.060) < 4.0e-04
       and _RF['min_at'] <= 0.030 and not (15.3 <= _RF['limit_meV'] <= 61.1)
       and 'the registered expectation fails' in RESULT.lower(),
       'minimum moved to %.3f eV, limit %.2f meV outside [15.3, 61.1]'
@@ -281,7 +294,7 @@ check('Ⓑ②ʰ and the price of this instrument\'s neutrino background is %.2f 
       'is a number this revision owed and did not have before running both profiles'
       % _AD['price_of_the_neutrino_background'],
       _AD['price_of_the_neutrino_background'] is not None
-      and abs(_AD['price_of_the_neutrino_background'] - 11.58) < 1.0e-02
+      and abs(_AD['price_of_the_neutrino_background'] - 11.58) < 5.0e-03
       and abs(abs(_RF['limit_meV'] - _IN['limit_meV'])
               - _AD['price_of_the_neutrino_background']) < 1.0e-09,
       '%.2f meV between 89.91 and 78.33' % _AD['price_of_the_neutrino_background'])
@@ -306,7 +319,8 @@ check('Ⓒ③ᵃ the baseline is MEASURED on this leg\'s own path rather than ca
       'difference of %.3f -- so the cuts below are differenced against a number this file computed '
       'and not against one it remembered' % (_B['limit_meV'], _B['limit_meV'] - 69.97),
       _B['reproduces_r7860'] is True and abs(_B['limit_meV'] - 69.97) < 1.0e-02
-      and abs(TS['gap_full_meV'] - 15.97) < 1.0e-02
+      and abs(TS['gap_full_meV'] - 15.97) < 5.0e-03
+      and abs((_B['limit_meV'] - 69.97) - 0.003) < 5.0e-04
       and TS['reference_minimised'] == 54.00 and TS['bins_full'] == 555
       and _B['monotonic_above_min'] is True,
       '%.2f meV, gap %.2f meV, on all 555 bandpowers' % (_B['limit_meV'], TS['gap_full_meV']))
@@ -334,8 +348,8 @@ check('Ⓒ③ᵃᵇ and the three cut limits with the gap\'s move at each: %.2f 
       abs(_C['1800']['limit_meV'] - 69.69) < 1.0e-02
       and abs(_C['1500']['limit_meV'] - 70.92) < 1.0e-02
       and abs(_C['1200']['limit_meV'] - 106.64) < 1.0e-02
-      and abs(_C['1800']['moved_meV'] - 0.28) < 1.0e-02
-      and abs(_C['1500']['moved_meV'] + 0.94) < 1.0e-02
+      and abs(_C['1800']['moved_meV'] - 0.28) < 4.0e-03
+      and abs(_C['1500']['moved_meV'] + 0.94) < 4.0e-03
       and abs(_C['1200']['moved_meV'] + 36.66) < 1.0e-02
       and abs(_C['1800']['share_of_gap'] - 0.018) < 1.0e-03
       and abs(_C['1500']['share_of_gap'] + 0.059) < 1.0e-03
