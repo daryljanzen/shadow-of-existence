@@ -474,6 +474,19 @@ _ALL = [os.path.relpath(os.path.join(_dp, _f), ROOT).replace(os.sep, '/')
 _ALL += ['.github/workflows/gates.yml', 'computations/beyond_the_wall/ACOUSTIC_two_arm.py']
 _MISSES = [p for p in _PROT if not fnmatch.filter(_ALL, p)]
 _CH = _range('%s..HEAD' % BASE)
+# ⛭ r7863 (69): ON `main` THE PINNED-BASE RANGE ALSO CARRIES THE OTHER SEATS' COMMITS MERGED BESIDE THIS ONE --
+#   cc66's r7861+cc66 receipt landed in the same merge and read as "another seat's edit" in this range, which is
+#   the S11 class (r7859).  So the range is narrowed to the files THIS revision's own non-merge commits touched
+#   (subjects beginning `r7862`), which is what "this revision's range" means once it is no longer a branch.
+if _CH is not None:
+    _own = subprocess.run(['git', '-C', ROOT, 'log', '--no-merges', '--format=%H %s', '%s..HEAD' % BASE],
+                          capture_output=True, text=True).stdout.split('\n')
+    _own = [l.split(' ', 1)[0] for l in _own if l.split(' ', 1)[-1].startswith('r7862')]
+    _ownf = set()
+    for _c in _own:
+        _ownf |= set(subprocess.run(['git', '-C', ROOT, 'show', '--format=', '--name-only', _c],
+                                    capture_output=True, text=True).stdout.split())
+    _CH = sorted(f for f in _CH if f in _ownf)
 _HIT = sorted({f for p in _PROT for f in fnmatch.filter(_CH or [], p)})
 _IDX = io.open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read().split('\n')
 _RCP = [f for f in (_CH or []) if f.startswith('receipts/') and f.endswith('.py')]

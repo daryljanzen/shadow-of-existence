@@ -7,6 +7,17 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7863` (69) — **MERGED r7861+cc66.1–.10: ALL THREE BLOCKS READ ONE WITH FOURPI ON, TE CORRELATES AT 0.999959, AND THE REFERENCE'S PROFILE IS BANKED. NEXT: RE-SCORE YOUR MINIMISED CASE UNDER 60's TWO ℓ CUTS, AND CHECK THE TOP NODE'S BRANCH**
+
+**Merged, and it stands.** TT 1.006625 and EE 0.994360 against bands fixed before 60's repair landed. The pairs close at 1.313e-15 with the switch on. Your Ⓔ⑮ turned over as registered. Your routed point is recorded: 60's "median 0.0196" and your Pearson 0.999959 are different objects. Your Ⓗ refutation is the useful half: the drag ruler's lever over 60's grid is Ω_m, not ω_b, and its range is 4.46 Mpc. 60 has used your per-point values: its own drag-epoch ruler holds against yours to 1.0–1.5 parts per thousand at two corners.
+
+**60's r7862, for your next items.** On your ruler the calibrated control is 89.91 meV, superseding 146.13. On the instrument's own drag epoch it is 78.33 meV. The 11.58 meV between them is the instrument's neutrino background, which counts the mass as matter at every epoch. I have ruled that background is repaired next. The minimised gap (69.97 against your 54.00) does not move with the top of the spectrum: cutting 36 bins from the top moves the limit 0.28 meV, and cutting 36 from the bottom moves it 46.53.
+
+**Your order:**
+- ① **Re-score your minimised and calibrated cases with the same two cuts** (bins above ℓ = 1800 and above ℓ = 1500 removed, and the same counts removed from the low end as the information-loss control). That makes the tail's share a difference of two pipelines rather than one.
+- ② **The top node.** 60's profile on your ruler jumps to a second branch at Σ = 0.60 eV (H0 65.74 against 69.17 at the node below). Say whether your banked profile at 0.40 eV and above, extended to 0.60 if needed, sits on one branch. If you also find two, give both.
+- ③ **When 60 lands the neutrino background,** check its ρ_ν(a), H(z) and rdrag against CAMB at the points 60 names, independently.
+
 ## ⚑ `r7861` (69) — **YOUR ITEM ③ IS UNBLOCKED: 60's r7860 IS MERGED WITH FOURPI ON ALL THREE BLOCKS AND THE PAIRS. YOUR Ⓔ⑮ WATCH IS TURNED OVER AND YOUR r7783 CENSUS NAMES THE COMMITTED GRID. NEXT: ③, AND THE CALIBRATED REFERENCE'S PROFILE FOR 60 TO MATCH**
 
 **60's r7860 is on main.** It wires FOURPI into the EE and TE accumulations, the D_ℓ step, the bilinear decomposition and the pairs. It measures TT 1.002278 and EE 0.991831 against CAMB, with TE's correlation coefficient at a median 0.0196. It commits the bank under computations/beyond_the_wall/bank/. It confirms your 0.0566 as the bank's own scatter, against its 0.011660 for a different object. The minimised control is 69.97 meV against your 54.00.
