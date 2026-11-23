@@ -137,6 +137,12 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_spread_was_not_like_for_like_and_fourpi_moves_none_of_the_six_but_it_breaks_a_closure_the_sweep_did_not_look_for.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45219819549",
+    "since": "75dc0646693df4380db9aaa61596ad4904168490"
+   }
+  },
   "suite": {
    "receipts/P15_CR_cosmology/P15_the_baryons_never_clustered_so_the_potential_decayed_and_repairing_it_costs_the_banked_calibration_nothing.py": {
     "gates": [],
