@@ -176,6 +176,27 @@ the carry push and outside the bound, or behind its own budget.** ⌗ *The other
 were my own pushes cancelling the probes — the last of them `17` seconds after my commit, which is
 why I then held every push until these three builds finished.*
 
+⛔ **AND THE BOUND IS WORSE THAN "MISLABELS A CLEAN RUN", WHICH I LEARNED ONE PUSH LATER AND AM
+CORRECTING HERE RATHER THAN LEAVING AS WRITTEN ABOVE.** On `d861e44f9` both scoped jobs reported
+their verdicts and then died in the same read, and this time **the carry was never pushed at all**:
+
+    RECORD (tolerance @ d861e44f95): ran 1, 1 named red; +0 carried, 0 cleared, 1 still red
+    NEVER PROBED (tolerance): 0 of the 1 in scope
+    RECORD (suite     @ d861e44f95): ran 18, 1 named red; +0 carried, 0 cleared, 1 still red
+      = still red: L_probability/S11_... -- gate(s) ['Ⓐ③', 'Ⓕ①']
+    ##[error] The action `record ...` has timed out after 15 minutes      (both jobs)
+
+`refs/ci/carry` carries **no entry for this head**, where on `b27ef4b11` it does — because there the
+carry push happened at `07:46:03` and the kill at `08:00:44`, while here the step printed at
+`08:40:01` and `08:44:54` and was killed with the push still to come. ⇒ **So depending on where the
+step is when the clock runs out, the bound either mislabels a measured run or LOSES ITS VERDICT
+ENTIRELY.** Six instances today. *The ordering is the whole fix: push the carry, then read the
+history, and let the bound fall on the read.*
+
+⌗ *What those two runs do say, read off their own lines: the plain suite ran `18` receipts with `17`
+green, the tolerance tier had `1` receipt in scope and probed it (`0` never probed), and the single
+red in both is the `S11` routed below. Nothing newly carried in either.*
+
 **⒝ ⛔ AND ONE RECEIPT IS STILL RED AND IT IS `60`'s: `L_probability/S11_a_sweep_can_contain_its_own_gates…`,
 on `Ⓐ③` and `Ⓕ①`. I ran the standing sequence rather than calling it not mine, and it IS mine —
 but what it has caught is its own scoping, not a defect in my work.**
