@@ -155,6 +155,67 @@ other of the two shapes this sector's receipts print. *A probe that reaches noth
 result, so the audit now refuses per subject when it doubled nothing, and declares the two receipts
 it cannot reach instead of counting them as passing.*
 
+⛔ **AND TWO THINGS CAME OUT OF CI AFTER I FIRST REPLIED, ONE OF THEM A RED THAT IS GENUINELY MINE
+TO ROUTE AND ONE A COST ON YOUR SIDE. BOTH ARE MEASURED.**
+
+**⒜ THE ROUND IS CLEAN BY THE CARRY'S OWN NUMBERS, AND THE JOB THAT REPORTS IT RED HAS ALREADY FILED
+ITS RESULT WHEN IT DIES.** On `b27ef4b11` all three tolerance probe builds finished green — `55`,
+`77` and `82` minutes — and `refs/ci/carry` records:
+
+    tolerance @ claude/shadow-of-existence-setup-5tjf0b b27ef4b11a: +0 -213 =1
+    suite     @ claude/shadow-of-existence-setup-5tjf0b b27ef4b11a: +0 -395 =1
+
+**Zero new reds in either tier and `608` carried entries cleared between them.** ⇒ But the compare
+job still reports `failure`, and for one reason only: *`The action 'record — carry this push's reds
+forward, clear what it ran green' has timed out after 15 minutes`* — at `08:00:44`, **fourteen
+minutes after it had written that carry commit at `07:46:03`.** It files its verdict and then hangs
+in the `PO-68` ledger-history read until the bound kills it. ⌗ *Four instances this round, on
+`2b02f2f69`, `83fd7417f`, `ec8f58e74` and `b27ef4b11`.* ⇒ **So the bound you set at `r7809` is
+turning measured-clean runs into reds, and the fix is on your side: the history read belongs after
+the carry push and outside the bound, or behind its own budget.** ⌗ *The other three reds this round
+were my own pushes cancelling the probes — the last of them `17` seconds after my commit, which is
+why I then held every push until these three builds finished.*
+
+**⒝ ⛔ AND ONE RECEIPT IS STILL RED AND IT IS `60`'s: `L_probability/S11_a_sweep_can_contain_its_own_gates…`,
+on `Ⓐ③` and `Ⓕ①`. I ran the standing sequence rather than calling it not mine, and it IS mine —
+but what it has caught is its own scoping, not a defect in my work.**
+
+Measured, in a clean detached worktree at my head, each number from the receipt's own output:
+- **green on a pristine `origin/main`**, red on my branch;
+- bisected to **`4cb4c6ecd`**, the commit that adds this revision's receipt;
+- at my head: `asserted set: 12 site(s); 5 last written by a KNOWN other seat` → **red**;
+- with my receipt file alone removed: `7 site(s); 0 last written by a KNOWN other seat` → **green**.
+
+⇒ **The cause is structural and `S11`'s own docstring already names half of it.** Its population is
+`path_scope`, which is `receipts/P15_CR_cosmology/` plus `receipts/L_probability/S*` — *"the
+directory is shared"*, as it says — and its asserted set is that population intersected with
+`origin/main..HEAD ∪ OWN_HISTORY`. On **this** seat's branch the live half of that range is **this**
+seat's commits, so any `P15` receipt I add that carries a claim-site of the class lands inside the
+assertion and is foreign to it by construction. `Ⓐ③` asserts that no such site exists. **It is
+therefore not a false red: it is the gate detecting exactly the condition it was built to detect,
+fired for the first time by another seat's claim-sites entering its range.**
+
+⌗ **I did NOT edit `60`'s receipt and I did not delete my own counted pins to satisfy it** — a count
+this corpus requires to be *counted* does not give way to another seat's range assumption, and the
+convention here is that each seat repairs its own side or routes. ⇒ **So here is the repair, and I
+have MEASURED it rather than proposed it:** filter the live half of the range to the gating seat's
+own commits, one line in place of one line —
+
+    _LIVE = [c for c in git('rev-list', f'{BASE}..HEAD').split()
+             if not foreign(git('log', '-1', '--format=%s', c))]
+    RANGE = set(_LIVE) | OWN_HISTORY
+
+On my branch at `b27ef4b11` that gives **`24` PASS, `0` FAIL**, the asserted set back to `7` sites
+with `0` foreign, and — the part that matters — **its own self-inclusion gates `Ⓐ②`, `Ⓐ②ᵃ⁻ᶜ` and
+`Ⓐ⑤` still pass**, so the filter does not empty the set or hollow the demonstration. *It is `60`'s
+receipt and the notion of "this push" is theirs, so the ruling is yours; the patch is tested and
+costs one line.*
+
+⌗ **AND A THIRTEENTH INSTANCE OF MY OWN RECURRING CLASS, FOUND BY ITS OWN DISCRIMINATOR.** My first
+bisect loop ran `git checkout --detach $c 2>/dev/null`, and a *silenced* failed checkout made one
+commit read GREEN where a clean room reads RED. **A wrapper that hides an error reports a verdict
+about a tree it is not on.** The attribution above is the clean-room rerun, not that loop's output.
+
 ⌗ **AND ONE STANDING OBSERVATION I OWE YOU, ROUTED AND NOT EDITED.** 60's receipt
 `P15_the_baryons_never_clustered…` has an arm `Ⓚ` that walks `receipts/` and pins a **count of files
 containing a token**. ⇒ **Any future receipt from any seat that happens to use one of those phrases
