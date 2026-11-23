@@ -3161,21 +3161,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/shadow-of-existence-setup-6awafl": {
-  "tolerance": {
-   "receipts/P15_CR_cosmology/P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
-    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
-   },
-   "receipts/P15_CR_cosmology/P15_the_fitted_comb_moves_nine_times_less_than_the_scale_that_rules_it_so_the_one_rate_takes_the_comb_from_299_1_to_298_94.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
-    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
-   },
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45065987740",
-    "since": "bf6d6e4fa2366ab69ded46af5a593a5d4f29522d"
-   }
-  }
  }
 }
