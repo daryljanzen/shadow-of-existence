@@ -1,0 +1,59 @@
+{
+  "te_correlation": {
+    "fourpi_on": 0.9999589669079232,
+    "fourpi_off": 0.999958966907923,
+    "abs_difference": 2.220446049250313e-16,
+    "n_bins": 185
+  },
+  "conversion": "C_l muK^2 = C_l[instrument] * A_s * (3/5)^2 * T_CMB^2; the instrument normalises to Phi = -1 and Phi = -(3/5) zeta in matter domination",
+  "conversion_constant": 5615.832789000001,
+  "control": {
+    "H0": 67.4,
+    "Om": 0.315,
+    "ombh2": 0.0224,
+    "ns": 0.965,
+    "As": 2.1e-09,
+    "tau": 0.054
+  },
+  "blocks": [
+    {
+      "block": "TT",
+      "n_bins": 185,
+      "abs_mean": 1.0066251698653892,
+      "abs_min": 0.9423898600605592,
+      "abs_max": 1.0556583611254522,
+      "abs_spread": 0.11326850106489295,
+      "abs_slope_per_bin": 1.8227339025669646e-06,
+      "shape_mean": 1.004941344508075,
+      "shape_spread": 0.11307903195564784
+    },
+    {
+      "block": "TE",
+      "n_bins": 185,
+      "abs_mean": 1.2447606830409592,
+      "abs_min": -5.701409819555629,
+      "abs_max": 21.180154034101182,
+      "abs_spread": 26.88156385365681,
+      "abs_slope_per_bin": 0.000289080603869489,
+      "shape_mean": 1.2350106733907844,
+      "shape_spread": 26.671004899991402
+    },
+    {
+      "block": "EE",
+      "n_bins": 185,
+      "abs_mean": 0.9943604637637175,
+      "abs_min": 0.8389935028207559,
+      "abs_max": 1.131780934092622,
+      "abs_spread": 0.292787431271866,
+      "abs_slope_per_bin": 0.00017026962329196306,
+      "shape_mean": 0.9971932306918123,
+      "shape_spread": 0.29362153377542843
+    }
+  ],
+  "sixty_reports": {
+    "factor": 0.504672,
+    "n_bins": 185,
+    "lo": 0.500015,
+    "hi": 0.510557
+  }
+}
