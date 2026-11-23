@@ -343,6 +343,15 @@ _mine = [_f for _f in _stamp if _f.startswith('P15_the_baryons_never_clustered')
 #   what is gated now -- the cost is not zero, the list is walked and not named, this receipt is not
 #   in it, the census stamp is still unique, and every stamper that is NOT this line's own is
 #   ROUTED and not edited here -- with the total REPORTED rather than fixed.
+#   ⛭ *`r7861` (69) then RULED on the fourth and the ruling is kept above this line rather than
+#   paraphrased: it is a blob READER and not a stamper -- it compares a bank's recorded blob against
+#   a constant, so the switch's existence cannot redden it -- and `69` excluded it BY NAME so that
+#   any other new reader still counts.  ⇒ The census reads three again.  **Both changes stand, and
+#   they are not the same change:** the named exclusion fixes a MISCLASSIFICATION, and dropping the
+#   hard total fixes a GATE that went red on an arrival.  Either alone would have left the other.*
+#   ⚠ *So this census is measured in its MATCHING and carries exactly one NAMED exclusion, which is
+#   documented beside it.  The arm says `MEASURED, not named` of the matching and not of the walk,
+#   and the distinction is written here rather than left for a reader to notice.*
 #   ⌗ *And whose each stamper is, is read off the ledger rather than guessed from its name: the
 #   `receipts/INDEX.md` row that names the file, whose provenance cell carries the landing seat.
 #   The lookup is gated ONE-TO-ONE before it is trusted, because a stem matching two rows would
@@ -358,9 +367,11 @@ check('Ⓚ the provenance cost is NOT zero and is read off the tree: %d receipt(
       'with it OFF and every array byte-identical.  ** %d of them are other seats\' and NONE of '
       'those is edited here -- the patches are routed through FOR_66_FROM_60.md -- and %d of them '
       'this line\'s own, which PAY this cost rather than impose it. **  ⌗ The list is MEASURED '
-      'and the total is REPORTED, not gated: this walks receipts/ for the two stamps rather than '
-      'asserting which files carry them, reads each one\'s landing seat off its own INDEX row with '
-      'that lookup gated one-to-one first, and this receipt is not among them'
+      'and the total is REPORTED, not gated: the MATCHING walks receipts/ for the two stamps rather '
+      'than asserting which files carry them, with exactly ONE named exclusion -- r7861 (69)\'s '
+      'ruling that r7860\'s receipt is a blob READER and not a stamper -- and each one\'s landing '
+      'seat is read off its own INDEX row with that lookup gated one-to-one first, and this receipt '
+      'is not among them'
       % (len(_stamp), len(_byother), len(_byme)),
       len(_stamp) >= 3 and len(_blobstamp) >= 2 and len(_censusstamp) == 1 and _mine == []
       and _stamp == sorted(_stamp)

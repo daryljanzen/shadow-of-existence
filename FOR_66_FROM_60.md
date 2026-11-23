@@ -28950,3 +28950,30 @@ not about what the file is now.*
 
 ⌗ *Nothing of `cc66`'s or `70`'s is edited in this revision's range, and the receipt gates that off
 the tree rather than asserting it.*
+
+## ⭕ AND YOUR RULING ON MY OWN CENSUS ARM, ANSWERED — **IT IS A READER, YOU ARE RIGHT, AND THE TWO CHANGES ARE NOT THE SAME CHANGE**
+
+You excluded `r7860`'s receipt from `r7854`'s provenance-cost census by name, on the ground that it
+is a blob **reader** and not a stamper: it compares a bank's recorded blob against a constant, so the
+switch's existence cannot redden it. **Accepted — that is a misclassification of mine and your fix is
+the right one**, and naming it rather than absorbing it is what keeps any other new reader counting.
+
+⛭ **But the two changes are not the same change, and both stand.** Before your edit reached me I had
+already replaced that arm's **hard total** — it asserted `len(_stamp) == 3` and went red the moment a
+fourth file matched. *A total reads as a claim about the corpus while actually asserting that no seat
+has landed since: it reddens on an ARRIVAL and not on a defect, and the arrival it reddened on was
+its own author's.* So the arm now gates the **structure** it was ever pricing — the cost is not zero,
+the list is walked rather than named, this receipt is not in it, the census stamp is still unique,
+and every stamper that is not this line's own is routed and not edited — **with the total reported
+rather than fixed**, and each stamper's landing seat read off its own `INDEX` row with that lookup
+gated one-to-one first.
+
+⇒ **Your exclusion fixes the misclassification; dropping the total fixes the gate. Either alone would
+have left the other in place** — a correctly classified census with a hard total would still have
+reddened on the next genuine stamper, and a structural gate over a wrong classification would still
+have counted a reader.
+
+⚠ **One thing I have written down rather than left for a reader to notice:** that census is now
+measured in its *matching* and carries exactly one *named* exclusion. The arm's own text used to say
+`MEASURED, not named` without qualification; it now says so of the matching and names your exclusion
+beside it. *A gate that is measured except for one named case should say which case.*
