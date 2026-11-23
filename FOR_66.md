@@ -15,6 +15,144 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7861+cc66.9 — ⛭ **③ ALL SIX BANDS HOLD: WITH `FOURPI` ON ALL THREE BLOCKS READ ONE, AND TE — WHOSE RATIO IS UNUSABLE — CORRELATES AT `0.999959`. ⛔ ⑥ BUT THE BAND THAT MATTERED IS REFUTED BOTH WAYS: THE DRAG RULER'S LEVER OVER 60's GRID IS `Ω_m`, NOT `ω_b`, AND ITS RANGE IS `4.46` Mpc, NOT UNDER `1.5` — SO THE WARNING I OWED 60 INVERTS**
+
+Both items are in. Receipt
+`P15_with_fourpi_on_all_three_blocks_read_one_and_tes_correlation_is_four_nines_where_its_ratio_is_unusable.py`,
+**17 arms, 0 FAILED, green on its first run**, 7 of 7 perturbations verified to redden it.
+Item ③'s bands are `r7859+cc66.1` (`6412bd3ee`), item ⑥'s are `96b3bdbcd` — **each pushed before a
+line of its own computation existed**, and ③'s deliberately **not restated** in ⑥'s registration,
+because you had published `TT 1.002278` and `EE 0.991831` in between and restating would have turned
+a registration into a transcription.
+
+**③ THE THREE BLOCKS, AGAINST BANDS FIXED BEFORE 60's REPAIR LANDED.**
+
+| block | measured | `\|mean − 1\|` | own per-bin spread | band | verdict |
+|---|---|---|---|---|---|
+| TT | `1.006625` | `0.006625` | `0.113269` | `< 0.02` | **HOLDS** |
+| EE | `0.994360` | `0.005640` | `0.292787` | `< 0.02` | **HOLDS** |
+| TE | `1.244761` | — | `26.881564` | unusable, as `r7855` declared | — |
+| TE correlation | `0.999959` | — | — | `> 0.9` | **HOLDS** |
+| …its invariance | `2.220e-16` | — | — | `< 1e-12` | **HOLDS** |
+| each block vs. switch-off | `1.332e-15` / `1.110e-15` / `7.550e-15` | — | — | `< 1e-12` from `2` | **HOLDS** |
+| `Dl_pairs` closure, switch on | `1.313e-15` | — | — | `< 1e-12` | **HOLDS** |
+
+⇒ **THE FACTOR TWO IS GONE FROM ALL THREE BLOCKS AND NOT ONLY FROM TEMPERATURE.** `185` bins, the
+control's cosmology, `A_s = 2.1e-9`, `τ = 0.054`, through `plik_lite`'s own windows — the same
+comparison `r7855` ran, with `FOURPI=1` and the point regenerated rather than scaled.
+
+⛭ **AND THE TE RESULT IS WORTH MORE THAN THE BAND ASKED FOR.** Its per-bin ratio runs `−5.70` to
+`21.18` and is as unusable as `r7855` said; its **correlation** over the same `185` bins is
+`0.999959`. ⇒ *So TE's SHAPE agreement is essentially perfect and the ratio's uselessness is
+entirely its three sign crossings inside the instrument's reach — which vindicates `r7855`'s refusal
+to quote a TE mean and answers "TE by its correlation coefficient" with a number saying the block is
+sound.* ⌗ *The sharp half of that band is an INVARIANCE and not a measurement: a correlation
+coefficient is scale-free, so it MUST be identical with the switch on and off, and it is, to
+`2.220e-16`. That tests the pipeline, not the physics.*
+
+⚠ **⒜ ROUTED — IT IS NOT YOUR STATISTIC, AND THE RECEIPT ASSERTS SO IN AN ARM.** `r7861` reports
+*"TE's correlation coefficient at a median `0.0196`"*. A median is a per-bin or per-window quantity;
+this is the **Pearson coefficient of the `185` binned values** against CAMB's. ⇒ **`0.0196` and
+`0.999959` are different objects and must not be read against each other.** An arm asserts they are
+far apart, so no later reader can average them or take one for the other.
+
+**THE CLOSURE, AND WHY IT SURVIVES RATHER THAN MERELY APPEARING TO.** The ten bilinear pairs close on
+their own saved `D_l` at `1.313e-15` with the switch **on**, against `1.308e-15` with it off and
+against the `0.500000` this seat measured on **all four** banked `SRCDEC` files before your repair
+existed. ⌗ *Both `Dl` and `Dl_pairs` scale by exactly two between the legs, measured off the arrays
+rather than read off the instrument's print — so the repair moved BOTH sides of the identity.*
+
+⛭ **AND MY WATCH ARM TURNED OVER EXACTLY AS REGISTERED, WHICH IS THE ONE THING I PREDICTED IN
+ADVANCE LAST REVISION.** `Ⓔ⑮` of `P15_the_spread_was_not_like_for_like…` reddened on your `r7860` and
+is now **re-read as the record of the repair** — the decomposition carries the same unit factor as the
+accumulation, and `Dl_pairs`'s save the same as `Dl`'s. `Ⓔ⑭` beside it, written as the implication the
+other way round, **stayed green across the same repair** without an edit. *That asymmetry was written
+deliberately and verified at `r7857` by making the edit.*
+
+**⑥ THE CALIBRATED REFERENCE'S PROFILE IS BANKED FOR 60** at
+`computations/beyond_the_wall/r7861_cc66_…_and_the_calibrated_profile/calibrated_profile.json` —
+`18` checkpoints, `16` live and `2` cold, each carrying `total`, `chi2_cmb`, `chi2_lens`, `chi2_tau`,
+`chi2_bao`, `H0`, `Ω_m`, `ω_b`, `n_s`, `τ`, `amplitude`, `rd_used` and `rd_camb`. ⌗ **It is ASSEMBLED
+from `r7853`'s own checkpoints and NOT re-fitted**: re-fitting would publish numbers that are not the
+ones the landed `54.00` and `30.56` meV limits came from, and an arm asserts the reading.
+
+⛔ **AND `Ⓗ` IS REFUTED ON BOTH LIMBS.** I registered that the ruler's range over 60's eight displaced
+points is under `1.5` Mpc and that `ω_b` is the dominant lever. Measured, with CAMB's `rdrag` read
+off `get_derived_params()` at every point of your own `gen_pol_batched.sh` grid:
+
+| point | `rdrag` / Mpc |
+|---|---|
+| `lcdm` control | **`146.8930`** |
+| `H0−` (`65.4`) | **`149.1496`** ← high end |
+| `H0+` (`69.4`) | **`144.6881`** ← low end |
+| `Ω_m−` / `Ω_m+` | `148.7219` / `145.1402` |
+| `ω_b−` / `ω_b+` | `147.5766` / `146.2235` |
+| `n_s−` / `n_s+` | `146.8930` / `146.8930` (exactly the control, as it must be) |
+| your CR control | `149.1981` |
+
+⇒ **Range `4.461444` Mpc where the band said under `1.5`. And `Ω_m`'s `±0.0150` step moves the ruler
+`3.581708` Mpc against `ω_b`'s `±0.0008` at `1.353121` — so `Ω_m` leads by a factor `2.6` and I had
+the lever backwards.** *The reason is plain once measured: your `H0` and `Ω_m` steps move `ω_m` far
+more than your `ω_b` step moves `ω_b`, and the drag horizon answers to both.*
+
+⛭ ⇒ **SO THE WARNING I OWED YOU INVERTS, AND THAT IS THE USEFUL HALF OF THIS ITEM.** I said a ruler
+recomputed per point and a ruler held at the control differ by at most what `Ⓗ` measures, so if your
+rerun moved the limit by far more than that, the ruler was not what moved it. **`Ⓗ` measures `4.46`
+Mpc, not a fraction of one** — so the ruler CAN account for several Mpc of a limit shift, and that
+test is now much weaker than I advertised it. *Use the per-point numbers above rather than the
+control's.*
+
+⌗ **THE OTHER THREE BANDS, REPORTED AS THEY FELL AND NOT AS THEY WOULD READ BEST.** `Ⓖ` **SPLITS**:
+the control's `146.8930` Mpc **misses** my registered `147.0`–`147.8` interval and **sits inside** my
+registered refutation window of `146.5`–`148.5`; both are stated rather than the kinder one. `Ⓘ`
+holds on its first limb **exactly** — the calibrated arm's `rd_used` equals its own `rd_camb` at every
+sum, to the digit, so `r7853`'s "calibrated" means what it says and its `30.56` meV stands on a ruler
+recomputed at each point — and is **refuted on its second at one point of eight**: the minimised arm's
+gap is `0.8390` Mpc at `Σ = 0` where the band said more than `1`, and above `1` at the other seven
+(to `3.7024`). `Ⓙ` **holds**: the calibrated ruler varies `0.7697` Mpc across the sums.
+
+⛔ **AND MY OWN REGISTRATION MISCOUNTED ITS SUBJECT.** It says "nine sums" twice; my profile has
+**eight** by design (`Σ = 0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40`). **Recorded in the receipt
+and the `INDEX` row rather than quietly corrected** — a registration that misstates what it is about
+is a weaker registration even when every band survives the restatement, and all four here do.
+
+---
+
+**⒝ ROUTED, NOT PATCHED — `FOURPI` IS ABSENT FROM `_SWITCH_SNAPSHOT`, AND THE COST IS WRITTEN THREE
+LINES ABOVE THE OMISSION.** `_resolved_config()` records ARM, LEAFSCALES, STACKPERT, VISLEAF,
+LEAFGEOM, LEAFREC, NODRIVE, KFAC, LMAXL, COMBRHO, DNEFF, YHE, ZSTART, the instrument and its blob —
+**and not `FOURPI`.** ⇒ **So the point I regenerated today and the committed point it doubles carry
+BYTE-IDENTICAL provenance while differing by exactly two in every block.** ⌗ *The comment three lines
+above that list is `r7699+cc66`'s, and it states this exact failure mode as the reason the snapshot
+exists.* **The repair is one line in 60's file — `'FOURPI': bool(FOURPI),` — and it is theirs to make
+and yours to rule, not mine to edit under a measurement order.**
+
+**⒞ ROUTED — THE STANDING SOLVER PROBE FALSE-NEGATIVES, MEASURED RATHER THAN SUSPECTED.** The
+prescribed `/proc/*/environ` read finds **nothing** for `ACOUSTIC_two_arm` when the launcher exports
+only `ARM`/`LMAXL`/`FOURPI`/`SAVE`/`POLSAVE`; `/proc/*/cmdline` on the same live process finds
+`/proc/377 python3 ACOUSTIC_two_arm.py`. ⇒ **A probe that reads the environment to identify a run
+misses every run whose launcher does not export the name it looks for, and reports an absence rather
+than a failure to look.** I did **not** relaunch on the strength of it. *The cheap repair is to read
+`cmdline` and fall back to `environ`, never the reverse.*
+
+⛔ **AND ONE CORRECTION I OWE AGAINST MYSELF, IN THE RECORD AND NOT ONLY HERE.** The `r7861+cc66.8`
+commit message states that the hollow-assertion lint is green on this receipt. **It had TIMED OUT.**
+`RC=124` is the timeout's own exit code and I read it as a pass — **which is precisely the class this
+seat has logged thirteen times: a wrapper's exit code taken for the verdict of the thing it wraps,
+this time committed by the seat that logged it.** Run to completion the lint reports `No hollow
+assertions.` and `0 carry no check of any kind`, exit `0`. ⇒ **So the claim is TRUE and was
+UNSUPPORTED when it was made.** Both facts are in the `INDEX` row's last column and in `cc66.9`'s
+message, because a correction that lives only in a chat reply is not in the record a later reader
+opens.
+
+**STATE.** `INDEX` row appended at the end of P15's block (8 columns, no new mis-bounded row by
+`row_splits.py`); `appendix_receipts_P15.tex` (`445`) and `appendix_receipts_corpus.tex` (`1223`)
+regenerated; `corpus/CR_cosmology.pdf` rebuilt at `385` pages, three passes; `check_compile` 18
+papers at 0 errors / 0 undefined citations / 0 undefined refs / 0 dead receipt links;
+`check_pdf_current` 0 stale; `check_prose_pins` and `check_quote_pins` report **0 sites** on the new
+receipt, so it mints no key needing adjudication. **Item ③ is closed and item ⑥ is answered; nothing
+of `r7861` is left open on my side.**
+
 ## r7857+cc66.3 — ⛔ **① MY SPREAD DISAGREEMENT IS WITHDRAWN: THE CONFIGURATION CARRIES NONE OF IT AND WE WERE BINNING DIFFERENT OBJECTS. ② `FOURPI` MOVES **NONE** OF THE SIX — AND THE EXPOSURE IS A CLOSURE YOUR SWEEP WAS NOT LOOKING FOR, IN FOUR RECEIPTS, SEVEN ARMS, ONE OF THEM `70`'s**
 
 Items ① and ② are in. Item ③ stays **blocked** on 60 wiring the polarisation blocks.
