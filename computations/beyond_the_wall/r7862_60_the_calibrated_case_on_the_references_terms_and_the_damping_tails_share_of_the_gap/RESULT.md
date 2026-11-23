@@ -139,7 +139,7 @@ damping tail's.**
 
 ---
 
-## ⚠ SEVEN THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS, AND ALL SEVEN ARE THIS SEAT'S OWN
+## ⚠ NINE THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS, AND ALL NINE ARE THIS SEAT'S OWN
 
 1. ⛔ **A registered expectation of this seat's is REFUTED** — the calibrated limit on the
    reference's ruler lands outside the band registered for it.
@@ -185,3 +185,17 @@ damping tail's.**
    work landing that emptied this one.* ⇒ **The remedy is `S55`'s own, applied rather than argued
    with: the base is PINNED, the live reading is PRINTED beside it and asserted on by nothing, and
    the emptiness that would have made the arm vacuous is now itself a gate.**
+8. ⛔ **And the repaired arm then OVER-PROTECTED, which is a defect in the other direction.** It
+   refused any path under two whole receipt trees where the order protects only the **named**
+   receipts in them, so it reported a violation when this revision repaired `S55` — *this line's own
+   receipt, legitimately edited.* ⇒ **A gate that refuses more than its order refuses is not
+   stricter, it is wrong: it reports a violation where there is none, and the next seat learns to
+   disbelieve it.** The patterns are the order's own list now.
+9. ⛔⛭ **And one item of that list cannot be written as a path at all — which the arm's own
+   non-vacuity control is what found.** The order protects any receipt belonging to either of two
+   seats; one seat's are readable from a filename and **the other's are not**, because the tree
+   carries no naming convention for them. *The pattern written for it **matched zero files**, which
+   is the vacuous form, so it is cut rather than left in to look thorough.* ⇒ What stands in its
+   place is a reading off the ledger: every receipt in this revision's range must carry this node in
+   its own `receipts/INDEX.md` row, with that lookup gated one-to-one — **which covers both seats and
+   needs no filename convention.**

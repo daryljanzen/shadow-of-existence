@@ -26,7 +26,7 @@ its control.  ⛔ *Nothing landed is edited: the ruler is attached by replacing 
 INSTANCE, exactly as `r7860` replaced `amp_cmb`, so the instrument and `model3.py` keep their bytes
 -- which is also the condition the order set for deferring item ③.*
 
-⚠ ** SEVEN THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS AND ALL SEVEN ARE THIS SEAT'S OWN. **  A
+⚠ ** NINE THINGS IN THIS RECORD ARE FAILURES OR CORRECTIONS AND ALL NINE ARE THIS SEAT'S OWN. **  A
 registered expectation is REFUTED; a registered criterion was BADLY CHOSEN and its control was added
 afterwards in its own file; a table builder DEADLOCKED and computed nothing for forty-three minutes;
 a defect this seat diagnosed in its own reading of the ruler was then REFUTED BY MEASUREMENT and is
@@ -34,12 +34,16 @@ kept as refuted; a gate read a CONVENTION as a quadrature failure and was loosen
 understood; and another gate compared the wrong two things, taking a grid's own record of when it
 was made for a statement about what the instrument is now; and an arm of THIS receipt bounded its
 population by a MOVING REF, which is the defect another receipt of this seat's exists to catch and
-is how it was caught -- the base is pinned now and the emptiness is itself a gate.
+is how it was caught -- the base is pinned now and the emptiness is itself a gate; and that repaired
+arm then OVER-PROTECTED, refusing two whole trees where the order names receipts, while one item of
+the order's list turned out to have no filename convention at all, so its pattern matched zero files
+and is CUT in favour of a reading off the ledger.
 
     NODE=60 python3 <this file>
 
 Written r7862 (60).  Stated for reversal.
 """
+import fnmatch
 import hashlib
 import io
 import json
@@ -444,7 +448,39 @@ def _range(spec):
     return [f for f in r.stdout.split() if f] if r.returncode == 0 else None
 
 
+#: ⛔⛭ ** AND THE FIRST VERSION OF THIS ARM OVER-PROTECTED, WHICH IS ALSO A DEFECT. **  *It refused
+#:   any path under `receipts/L_` and `receipts/L25`, where the order protects only the NAMED
+#:   receipts in those trees -- `B1`, `V1`, `D1`, `R1`, `C1`, `Q1`.  So it reddened when this
+#:   revision edited `S55`, which is THIS LINE'S OWN receipt and legitimately edited.  ⇒ A gate
+#:   that refuses more than its order refuses is not stricter, it is WRONG -- it reports a
+#:   violation where there is none, and the next seat learns to disbelieve it.*  The patterns are
+#:   the order's own list now, and they are gated non-vacuous against the tree.
+_PROT = ('receipts/L256*/B1_*.py', 'receipts/L257*/V1_*.py', 'receipts/L259*/D1_*.py',
+         'receipts/L_probability/R1_*.py', 'receipts/L_probability/C1_*.py',
+         'receipts/L_numerics/Q1_*.py', 'receipts/ENV_FINGERPRINT.txt',
+         '.github/workflows/gates.yml', 'computations/beyond_the_wall/ACOUSTIC_two_arm.py',
+         'receipts/*/*cc66*.py')
+#: ⛔⛭⛭ ** AND ONE PATTERN OF THE ORDER'S LIST CANNOT BE WRITTEN AS A PATH AT ALL, which the
+#:   non-vacuity control is what found. **  *The order protects "any receipt belonging to `70` or
+#:   `cc66`".  `cc66`'s are readable from a filename; `70`'s are NOT -- the tree carries no naming
+#:   convention for them, and a `receipts/*/*_70_*.py` pattern matches ZERO files.  A pattern that
+#:   matches nothing is the vacuous form, so it is CUT rather than left in to look thorough.*
+#:   ⇒ What replaces it is a reading off the ledger: every receipt in this range must be one THIS
+#:   LINE owns, read from its own `receipts/INDEX.md` row's provenance cell, with the lookup gated
+#:   one-to-one -- which covers `70` and `cc66` both, and does not need a filename convention.
+_OWN = re.compile(r'Node `60`|r\d+_60_|node `?60`?', re.I)
+_ALL = [os.path.relpath(os.path.join(_dp, _f), ROOT).replace(os.sep, '/')
+        for _dp, _dn, _fn in os.walk(os.path.join(ROOT, 'receipts')) for _f in _fn]
+_ALL += ['.github/workflows/gates.yml', 'computations/beyond_the_wall/ACOUSTIC_two_arm.py']
+_MISSES = [p for p in _PROT if not fnmatch.filter(_ALL, p)]
 _CH = _range('%s..HEAD' % BASE)
+_HIT = sorted({f for p in _PROT for f in fnmatch.filter(_CH or [], p)})
+_IDX = io.open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read().split('\n')
+_RCP = [f for f in (_CH or []) if f.startswith('receipts/') and f.endswith('.py')]
+_ROW = dict((f, [r for r in _IDX if os.path.basename(f) in r]) for f in _RCP)
+_ONE = all(len(v) == 1 for v in _ROW.values())
+_NOTMINE = sorted(f for f, v in _ROW.items()
+                  if len(v) != 1 or not _OWN.search(v[0].split('|')[-2]))
 _LIVE = _range('origin/main...HEAD')          # printed beside it, asserted on by nothing
 _ANC = subprocess.run(['git', '-C', ROOT, 'merge-base', '--is-ancestor', BASE, 'HEAD'],
                       capture_output=True).returncode == 0
@@ -453,17 +489,24 @@ check('Ⓓ④ᵇ and NOTHING of another seat\'s is edited in this revision\'s ra
       'itself untouched.  ** The range is taken from a PINNED base and the range is gated NON-EMPTY, '
       'because a range bounded by a moving ref empties when this revision merges and an arm that '
       'passes on nothing is worse than no arm. **  ⌗ Anything owed to another seat is routed '
-      'through FOR_66_FROM_60.md with its patch, which is where the provenance keys of item ③ sit',
-      _CH is not None and _ANC and len(_CH) > 0
-      and 'computations/beyond_the_wall/ACOUSTIC_two_arm.py' not in _CH
-      and not [f for f in _CH if f.startswith('receipts/L25') or f.startswith('receipts/L_')]
-      and not [f for f in _CH
-               if f.startswith('receipts/') and 'cc66' in f]
-      and '.github/workflows/gates.yml' not in _CH
-      and 'receipts/ENV_FINGERPRINT.txt' not in _CH,
-      '%d file(s) from the pinned base, none of them protected; the live `origin/main...HEAD` '
-      'reading beside it is %s file(s), which nothing here asserts on'
-      % (len(_CH) if _CH else -1, 'unreadable' if _LIVE is None else len(_LIVE)))
+      'through FOR_66_FROM_60.md with its patch, which is where the provenance keys of item ③ sit.  '
+      '⛔ And the patterns are the ORDER\'S OWN LIST and not a prefix: a first version refused '
+      'everything under two whole trees where the order protects only the named receipts in them, '
+      'and reddened on a receipt of THIS LINE\'S that this revision legitimately repaired.  ⛔ And '
+      'one item of that list -- `70`\'s receipts -- has NO filename convention to match, so the '
+      'pattern for it matched zero files and is CUT: what stands in its place is a reading of each '
+      'receipt\'s own INDEX row, which names the seat that landed it',
+      _CH is not None and _ANC and len(_CH) > 0 and _HIT == []
+      and _RCP != [] and _ONE and _NOTMINE == []
+      # ⌗ *and the matcher is gated NON-VACUOUS against the tree itself: every pattern must match
+      #   at least one file that EXISTS, so a typo cannot make this arm pass by matching nothing.*
+      and _MISSES == [],
+      '%d file(s) from the pinned base, none of them protected, against %d pattern(s) each of '
+      'which matches a file that exists; %d receipt(s) in the range and every one of them carries '
+      'this node in its own INDEX row; the live `origin/main...HEAD` reading beside it is %s '
+      'file(s), which nothing here asserts on'
+      % (len(_CH) if _CH else -1, len(_PROT), len(_RCP),
+         'unreadable' if _LIVE is None else len(_LIVE)))
 
 check('Ⓓ④ᶜ and the two tables this revision commits are read by the profiles and not merely '
       'written: the reference\'s table spans 121.6996 to 180.4629 Mpc and the instrument\'s '
@@ -482,17 +525,19 @@ check('Ⓔ⑤ the record carries its failures rather than only its results: the 
       'defect this seat diagnosed in its own reading and then REFUTED BY MEASUREMENT, the gate '
       'that read a CONVENTION as a quadrature failure and was loosened before it was understood, '
       'the gate that compared the wrong two things, and the arm of THIS receipt that bounded its '
-      'population by a moving ref -- all seven in RESULT.md, and all seven this seat\'s own',
-      'seven things in this record are failures or corrections' in RESULT.lower()
+      'population by a moving ref, and the two the repair of THAT arm turned up -- all nine in '
+      'RESULT.md, and all nine this seat\'s own',
+      'nine things in this record are failures or corrections' in RESULT.lower()
       and 'a population bounded by a moving ref' in RESULT.lower()
+      and 'matched zero files' in RESULT.lower()
       and 'deadlocked' in RESULT.lower()
       and 'forty-three minutes' in RESULT.lower()
       and 'badly chosen' in RESULT.lower()
       and 'refuted by measurement' in RESULT.lower()
       and 'read a convention as a quadrature failure' in RESULT.lower()
       and 'compared the wrong two things' in RESULT.lower()
-      and 'and all seven are this seat' in RESULT.lower(),
-      'seven named in the result document')
+      and 'and all nine are this seat' in RESULT.lower(),
+      'nine named in the result document')
 
 check('Ⓕ⑥ the count: this receipt adjudicates every leg of the revision, and TWO REGISTERED '
       'EXPECTATIONS ARE REPORTED AS REFUTED with their criteria unchanged -- the calibrated '
