@@ -122,17 +122,27 @@ def main():
         d = inst(dict(NUFD='1', MNU=repr(s)), WANT)
         tot_on = (d['OM'] - d['ONU_EARLY']) + d['OL'] + (1 - d['FNU']) * d['OR'] + d['Onu'][0]
         tot_off = off['OM'] + off['OL'] + off['OR']
+        # ⛔ *a first version of this gate expected the difference to be exactly `-FNU * OR`, the
+        #   double-count removed.  It is not: there is a second term, and it is the CONVENTION GAP
+        #   -- the dust total loses `ONU`, the `93.14` value this file put there, while what is
+        #   added back is the integral's own `Onu_of(1)`, and the two differ by about `1.2` per
+        #   cent.  Both are named now and the sum of the two is what the gate expects, which is why
+        #   it closes to `1e-12` instead of to "about right".*
+        want = -d['FNU'] * d['OR'] - (d['ONU_EARLY'] - d['Onu'][0])
         rows.append(dict(sum=s, total_on=tot_on, total_off=tot_off, diff=tot_on - tot_off,
-                         minus_fnu_or=-d['FNU'] * d['OR'], R_S=d['R_S'],
-                         ONU=d['ONU_EARLY'], ONU_FD=d['ONU_FD']))
-        print('    Sum %.2f eV  total(a=1) %.13f  landed %.13f  diff %+.6e  (-FNU*OR %+.6e)'
-              % (s, tot_on, tot_off, rows[-1]['diff'], rows[-1]['minus_fnu_or']))
-    one_count = all(abs(r['diff'] - r['minus_fnu_or']) < FLAT_TOL for r in rows)
+                         minus_fnu_or=-d['FNU'] * d['OR'],
+                         convention_gap=-(d['ONU_EARLY'] - d['Onu'][0]), expected=want,
+                         R_S=d['R_S'], ONU=d['ONU_EARLY'], ONU_FD=d['ONU_FD']))
+        print('    Sum %.2f eV  total(a=1) %.13f  diff %+.6e  = -FNU*OR %+.6e  + the convention '
+              'gap %+.6e   (residual %.2e)'
+              % (s, tot_on, rows[-1]['diff'], rows[-1]['minus_fnu_or'],
+                 rows[-1]['convention_gap'], abs(rows[-1]['diff'] - want)))
+    one_count = all(abs(r['diff'] - r['expected']) < FLAT_TOL for r in rows)
     flat_as_registered = all(abs(r['total_on'] - 1.0) < FLAT_TOL for r in rows)
     out['bookkeeping'] = dict(rows=rows, one_count=bool(one_count),
                               flatness_as_registered=bool(flat_as_registered), tol=FLAT_TOL)
-    print('    ⇒ the difference from the landed total is EXACTLY -FNU*OR at every sum, to %.0e: %s'
-          % (FLAT_TOL, one_count))
+    print('    ⇒ the difference from the landed total is the double-count removed PLUS the '
+          'convention gap, to %.0e at every sum: %s' % (FLAT_TOL, one_count))
     print('    ⛔ and the REGISTERED band -- that the densities at a = 1 sum to 1 to %.0e -- is %s:'
           % (FLAT_TOL, 'HELD' if flat_as_registered else 'FAILED'))
     print('       the landed convention does NOT subtract the radiation from the vacuum term, so '

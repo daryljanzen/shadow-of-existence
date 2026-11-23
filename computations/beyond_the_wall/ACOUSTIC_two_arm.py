@@ -249,7 +249,8 @@ OL = 1.0 - OM
 #     digit.  *That is a question about `N_eff` and `DNEFF` is its knob -- a separate question from
 #     the ruler's flatness, and the receipt reports it as a registered band FAILING rather than
 #     folding it into this repair.*
-NUFD = os.environ.get('NUFD', '0') == '1'
+NUFD = (os.environ.get('NUFD', '0') == '1'
+        and float(os.environ.get('MNU', '0.0')) != 0.0)
 #: *`MNU` is re-read here because this block now sits ABOVE the line that
 #: binds it: the grid and the stack are built between the two, and they need
 #: the factor.  One environment read, the same value, and the later line is
@@ -351,7 +352,17 @@ RB_REC = float(os.environ.get('RBFAC', '1.0')) * RB_REC
 #:   runs AFTER the `NUFD` block and silently zeroed it: the exact term was added back while the
 #:   dust total still carried the species, so the double-count this repair exists to remove was
 #:   still there and the only tell was that a printed `ONU_FD` read zero at a nonzero mass.*
-_NU_ON = os.environ.get('NUFD', '0') == '1'
+#:   ⛔⛭⛭⛭ *AND THE FLAG REQUIRES A NONZERO MASS, which a first version did not -- it asked only
+#:   whether the switch was set, and the stack's LATE tail then differed at zero sum.  The cause is
+#:   not the physics: at zero mass the new term is `FNU * OR / a^4` exactly, so the on-branch stack
+#:   computes `(1 - FNU) * OR / a^4 + ... + FNU * OR / a^4` where the landed one computes
+#:   `OR / a^4 + ...`, and SPLITTING A SUM AND ADDING IT BACK IS NOT THE IDENTITY IN FLOATING POINT.
+#:   At small `a` the radiation term dominates and the last bits agree; near `a = 1` it is a tiny
+#:   addition to `OM + OL` and they do not.*  ⇒ At zero mass the repair IS the identity, so the
+#:   switch is given nothing to do and the landed expressions stand -- which makes the massless limit
+#:   exact BY CONSTRUCTION rather than by the luck of a rounding.
+_NU_ON = (os.environ.get('NUFD', '0') == '1'
+          and float(os.environ.get('MNU', '0.0')) != 0.0)
 
 
 def Hphys(a):
