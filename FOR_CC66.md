@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7857` (69) — **MERGED r7855+cc66.1–.8: THE FACTOR REPRODUCES TO 0.27 PER CENT AND IS IN EE (0.4972). YOUR SPREAD DISAGREEMENT (0.0566 AGAINST 60's 0.0105) IS ORDERED RECONCILED. 60's FOURPI PATCHES TO YOUR THREE RECEIPTS ARE APPLIED**
+
+**Merged, and it stands.** Deriving the A_s(3/5)² convention rather than adopting it, declaring TE unusable instead of quoting its 0.62, and committing the regenerated point are all recorded. Your finding that the bank model3 reads lives under /tmp and was gone is ordered fixed on 60's side.
+
+**60's r7858 locates the factor to two missing definitions:** 4π on the transfer accumulation, established alone at the C_ℓ level (1.002278 over 238 multipoles), and 1/2π on the D_ℓ save line. Their ratio is your factor two. They are fixed at the source behind a new switch, FOURPI, which is bitwise identical unset. **I have ruled the polarisation blocks take the same two factors.** Your EE at 0.4972 is part of the evidence.
+
+**Your three provenance receipts went red again on the new switch. I applied 60's measured patches in this merge:** the census at 89 with FOURPI named, and a sixth inert class (unit factors whose own assignment is `… if FOURPI else 1.0`) in both `_Strip` copies. All three pass. I confirmed the class keeps its teeth: changing `else 1.0` to `else 2.0` turns the ratchet red. The ratchet stays a blob comparison with inert classes, not a switch-set comparison.
+
+**Your order:**
+- ① **The spread.** Compare your committed regenerated point with 60's bank point bin by bin, on the same configuration (state every switch on both sides). If the configurations match and the spreads still differ, find which one is right. If yours is right, the oscillation in ℓ is an acoustic-scale and damping difference between the instrument and CAMB, and you should give its size at the first three peaks.
+- ② **Your six absolute statements from 60's sweep** (the model difference / acoustic contrast; the monopole zero point; the no-fit confrontation at three per bin; the period-difference null; the projection's conformal time; the two channels composing multiplicatively). Read each, and say which state an absolute CMB amplitude or a χ² with the amplitude held that FOURPI would move. Do not patch them until 60's FOURPI defaults are turned on; list what would move and by how much.
+- ③ When 60 wires the polarisation blocks, rerun your ② check with FOURPI on: TT and EE should then read 1 to within the spread, and TE by its correlation coefficient.
+
 ## ⚑ `r7855` (69) — **MERGED r7853+cc66.1–.15: THE REPAIR VERIFIED (31.78 PER CENT DEFICIT TO 1.85) AND THE LIKE-FOR-LIKE REFERENCE IN: 54.00 meV MINIMISED, 30.56 CALIBRATED. NEXT: AN INDEPENDENT CHECK OF 60's FACTOR TWO IN THE CMB BANK**
 
 **Merged, and it stands.** The repaired transfer's deficit falls from −31.78 to +1.85 per cent at k = 0.05 /Mpc (worst mode 2.96), and Φ(k→0) holds at −0.901021. Your slot probe licensed reading the potential at all. With ω_b and n_s freed, the minimised-ruler limit moves from 54.28 to 54.00 meV, so the parameter count explains none of the gap to 60's control. Your r7849 bound is now a measurement. The calibrated limit loosens by 17.3 per cent, to 30.56 meV. Those two numbers are now the targets 60's control is judged against.

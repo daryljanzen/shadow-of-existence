@@ -288,6 +288,27 @@ def _tree_is_bL_plus_dneff(bL):
     `if ... is not None` blocks and their config keys.  Unset, none of it runs, so the instrument that produced the leg is still the one on
     disk.  Strip exactly those and compare the ASTs; any other difference keeps this row red."""
     import ast as _ast
+    # --- sixth class -- r7857 (69), applied from 60's r7858 patch: `FOURPI` and the unit factors whose OWN
+    #     assignment is `<something> if FOURPI else 1.0` (and no others) are inert unset; a `Mult`/`Div` by one
+    #     of them collapses to its landed left operand.  60 measured it 8 of 8 against the banked blob: the five
+    #     classes alone leave the head red, the sixth reduces it to the blob, and six controls (a moved landed
+    #     constant, a deleted landed line, a changed landed operand, the guard made live-when-off, a moved
+    #     landed default, an unguarded factor) all stay red.
+    def _inert_unit_factors(tree):
+        out = set()
+        for n in _ast.walk(tree):
+            if not isinstance(n, _ast.Assign) or len(n.targets) != 1:
+                continue
+            t, v = n.targets[0], n.value
+            if not (isinstance(t, _ast.Name) and isinstance(v, _ast.IfExp)):
+                continue
+            if not (isinstance(v.test, _ast.Name) and v.test.id == 'FOURPI'):
+                continue
+            o = v.orelse
+            if (isinstance(o, _ast.Constant) and not isinstance(o.value, bool)
+                    and isinstance(o.value, (int, float)) and o.value == 1):
+                out.add(t.id)
+        return out
     class _Strip(_ast.NodeTransformer):
         # the landed four classes, with BVEL added as the fifth -- r7851 (69), applied from 60's r7854 patch,
         #   measured by 60 on the LEAFGEOM=1 leg's blob: the landed blob is a fixed point, three real changes to
@@ -295,6 +316,7 @@ def _tree_is_bL_plus_dneff(bL):
         #   BVEL branch passes
         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
                  'BVEL', 'I_DB_F', 'I_TBF'}
+        UNIT = set()
 
         # --- fifth class (a): a BVEL-guarded term added to or subtracted from a landed expression,
         #     whose `orelse` is Constant 0, collapses the whole BinOp back to the landed left operand.
@@ -302,6 +324,9 @@ def _tree_is_bL_plus_dneff(bL):
             # ⛔ the BVEL test is read BEFORE the children are visited, because `visit_IfExp` below
             #   would otherwise have already collapsed the guard to its `orelse` and left a `+ 0`.
             r = node.right
+            if (isinstance(node.op, (_ast.Mult, _ast.Div)) and isinstance(r, _ast.Name)
+                    and r.id in self.UNIT):
+                return self.visit(node.left)
             if (isinstance(node.op, (_ast.Add, _ast.Sub)) and isinstance(r, _ast.IfExp)
                     and isinstance(r.test, _ast.Name) and r.test.id == 'BVEL'
                     and isinstance(r.orelse, _ast.Constant) and r.orelse.value == 0):
@@ -383,7 +408,11 @@ def _tree_is_bL_plus_dneff(bL):
         new = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')).read()
         if not old:
             return False
-        return _ast.dump(_ast.parse(old)) == _ast.dump(_Strip().visit(_ast.parse(new)))
+        _tr = _ast.parse(new)
+        _s = _Strip()
+        _s.UNIT = _inert_unit_factors(_tr)
+        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT
+        return _ast.dump(_ast.parse(old)) == _ast.dump(_s.visit(_tr))
     except (OSError, SyntaxError):
         return False
 

@@ -516,18 +516,24 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     #   continuity was driven by the PHOTON velocity at every time, right under
                     #   tight coupling and wrong after it.  Unset, the solver is byte-identical --
                     #   measured against a state banked before the switch existed, not asserted.
-                    'BVEL'}
+                    'BVEL',
+                    # ⛭ `FOURPI` -- r7858+60, the two definitions the CMB bank's accumulation and
+                    #   save line were each short of: `4 pi` on the accumulation and `1/(2 pi)` on
+                    #   every line that writes a D_l.  Unset, both factors are exactly 1.0 and the
+                    #   banked grids are BITWISE identical -- measured against origin/main's own
+                    #   instrument, not asserted.
+                    'FOURPI'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-EIGHT now, the twenty-eight "
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-NINE now, the twenty-nine "
       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
       "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2; the "
-      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0; the eighty-fifth is `DNEFF`, r7801+70; the eighty-sixth is `YHE`, r7801+70; the eighty-seventh is `MNU`, r7836+60; the eighty-eighth is `BVEL`, r7854+60)",
-      len(ROWS) == 88 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "eighty-third is `COMBRHO`, r7695+cc66; the eighty-fourth is `SRCFIELD`, r7729+70.0; the eighty-fifth is `DNEFF`, r7801+70; the eighty-sixth is `YHE`, r7801+70; the eighty-seventh is `MNU`, r7836+60; the eighty-eighth is `BVEL`, r7854+60; the eighty-ninth is `FOURPI`, r7858+60)",
+      len(ROWS) == 89 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
