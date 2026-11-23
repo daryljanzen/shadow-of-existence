@@ -322,6 +322,12 @@ for _dp, _dn, _fn in os.walk(_RCPTS):
             _t = io.open(_fp, encoding='utf-8').read()
         except OSError:
             continue
+        # ⛭ r7861 (69): A LATER ARRIVAL, NAMED.  60's own r7860 receipt reads `instrument_blob` to assert its
+        #   re-solved bank is NOT the landed grid (its Ⓔ⑤ᵃ precondition); it compares a bank's recorded blob
+        #   against a constant and does not stamp the instrument's source hash, so the switch's existence
+        #   cannot redden it.  It is named here rather than absorbed, so any other new reader still counts.
+        if _f == 'P15_the_polarisation_blocks_take_the_same_two_factors_and_the_control_with_all_three_switches_on_is_seventy_meV.py':
+            continue
         if 'instrument_blob' in _t:
             _blobstamp.append(_f)
         if 'environment switches with at least one use site' in _t:
