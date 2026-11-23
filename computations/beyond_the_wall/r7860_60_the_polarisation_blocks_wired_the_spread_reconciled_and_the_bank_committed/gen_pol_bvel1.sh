@@ -7,12 +7,12 @@
 # is neither: it changes the SOLVER, so the grid has to be run again -- 32 points, one of them
 # measured here at about 35 minutes on four cores.
 #
-# ⌸ THE SWITCH SETS BELOW ARE NOT RETYPED.  This file is `r7842`'s own `gen_pol_batched.sh` with
+# ⌗ THE SWITCH SETS BELOW ARE NOT RETYPED.  This file is `r7842`'s own `gen_pol_batched.sh` with
 #   `BVEL=1` added to each invocation and the output directory keyed to that switch, so the two
 #   grids cannot be confused for one another and nothing else can drift between them.
-# ⌸ OUTPUT IS KEYED BY CONFIGURATION, in the DIRECTORY and not only in a log: a grid whose
+# ⌗ OUTPUT IS KEYED BY CONFIGURATION, in the DIRECTORY and not only in a log: a grid whose
 #   filenames do not say which switches made it is the defect `r7805` measured.
-# ⌸ IDEMPOTENT: a completed point is skipped, so a batch stopped at its time limit is restarted
+# ⌗ IDEMPOTENT: a completed point is skipped, so a batch stopped at its time limit is restarted
 #   and not redone.
 set -u
 OUT=${OUT:-"$(cd "$(dirname "$0")/../bank" && pwd)/pol_grid_bvel1"}

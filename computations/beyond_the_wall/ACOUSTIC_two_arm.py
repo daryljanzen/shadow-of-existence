@@ -1893,12 +1893,26 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
               f"{_wa.shape[1]} q-bands, with r_s,leaf as its abscissa; monopole+Doppler "
               f"sigma_s/r_s = {', '.join('%.5f' % (x / R_S) for x in _sg)} -> {_SRCE}")
     if _SRCD:
-        _dc = sum(_SRCD_B) * (ls * (ls + 1))[:, None]
+        # ⛭ ** `FOURPI` REACHES THE PAIRS TOO, AT `r7859`'s ORDER — found by `cc66` reading the
+        #   source, not by this seat. **  *The bilinear decomposition is accumulated BESIDE
+        #   `out[j]`, so it never saw `_FP_ACC`, and this save wrote `Dl_pairs` without the `D_l`
+        #   factor the `Dl` beside it carries.  ⇒ With the switch on the ten pairs would have
+        #   stopped summing to the `D_l` saved next to them by exactly a factor two, and the
+        #   closure print below — which four receipts and seven arms read — would have
+        #   contradicted itself while reporting a number.*
+        # ⌗ The closure is formed on the SAVED convention, so both sides carry `/ _FP_DL` and the
+        #   print means the same thing with the switch on as with it off.
+        # ⛔ ** AND NO NEW NAME IS INTRODUCED HERE, DELIBERATELY. **  *Every change on these
+        #   lines is of the form `X * _FP_ACC` or `X / _FP_DL`, which is exactly what the sixth
+        #   inert class routed at `r7858` and applied by `69` already reduces — so this repair
+        #   costs the provenance ratchet nothing.  A helper variable would have been tidier and
+        #   would have reopened the two hash receipts for a seventh class.*
+        _dc = sum(_SRCD_B) * (ls * (ls + 1))[:, None] / _FP_DL
         np.savez(_SRCD, ls=ls, Dl=Cl * ls * (ls + 1) / _FP_DL, Dl_pairs=_dc, pairs=np.array(_DECN),
                  arm=ARM, r_s=R_S, D_M=D_M, l_A=L_A, ns=NS, eta_ls=ETA_LS, eta_ls_w=ETA_LS_W,
                  sliced=bool(_ksl), n_modes=len(kk))
-        _cl = float(np.max(np.abs(_dc.sum(axis=1) - Cl * ls * (ls + 1))
-                           / np.abs(Cl * ls * (ls + 1))))
+        _cl = float(np.max(np.abs(_dc.sum(axis=1) - Cl * ls * (ls + 1) / _FP_DL)
+                           / np.abs(Cl * ls * (ls + 1) / _FP_DL)))
         print(f"  SRCDEC: {len(ls)} multipoles x 10 term pairs; the pairs close on D_l to "
               f"{_cl:.3e} relative -> {_SRCD}")
     if _POLS:
@@ -2151,7 +2165,8 @@ def _project(kb, ee, Y, ls, x0, e_sw, ks=None):
             _c = 0
             for _a in range(4):
                 for _b in range(_a, 4):
-                    _dec[j, _c] = (1.0 if _a == _b else 2.0) * np.sum(P * _Dl[_a] * _Dl[_b])
+                    _dec[j, _c] = ((1.0 if _a == _b else 2.0)
+                                   * np.sum(P * _Dl[_a] * _Dl[_b]) * _FP_ACC)
                     _c += 1
     if _SRCD:
         _SRCD_B.append(_dec)

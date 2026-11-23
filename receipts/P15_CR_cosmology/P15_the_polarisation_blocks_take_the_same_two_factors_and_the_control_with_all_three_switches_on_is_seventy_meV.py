@@ -22,13 +22,16 @@ arrays, told this line to get the bank out of `/tmp`, and then asked for the con
 apply to EE and TE is `69`'s.  What this revision adds is the wiring, the measurement of all three
 blocks against the reference, the reconciliation, the committed bank, and the control.
 
-⚠ ** FIVE THINGS IN THIS RECORD ARE FAILURES, CORRECTIONS OR REFUSALS, AND FOUR ARE THIS SEAT'S OWN. **
+⚠ ** SIX THINGS IN THIS RECORD ARE FAILURES, CORRECTIONS OR REFUSALS, AND FIVE ARE THIS SEAT'S OWN. **
 A comment this seat wrote one revision ago is FALSE and is corrected rather than replaced; the first
 version of the windowed leg BINNED A RATIO and returned a meaningless number; the first run of the
 control's profile was NOT CONVERGED and its limit was 15 per cent TIGHTER than the converged one; a
 census of another seat's goes red BECAUSE this revision obeyed the order, and is routed rather than
 edited; and the instrument's resolved config does not record the solver switch, which is reported
-rather than repaired here because repairing it moves the blob.
+rather than repaired here because repairing it moves the blob; and the comparator that
+settled which of this seat's three absolute statements holds the amplitude knew only one of
+this corpus's two verdict-marker conventions, so one of the three was compared VACUOUSLY on
+its first run.
 
     NODE=60 python3 <this file>
 
@@ -69,6 +72,8 @@ S = load('spread.json')
 B = load('bank_in_repo.json')
 DB = load('doubling.json')
 CT = load('control.json')
+PR = load('pairs.json')
+AH = load('amplitude_held.json')
 with io.open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py'),
              encoding='utf-8') as fh:
     INST = fh.read()
@@ -258,6 +263,49 @@ check('Ⓕ⑥ AND TWO THINGS ARE ROUTED RATHER THAN DONE HERE, each because doin
       DB['bvel']['committed_blob'] is not None
       and DB['bvel']['note'] == 'a solver change: no constant stands in for it',
       'both routed with their measurements attached')
+
+check('Ⓖ⑦ AND THE SWITCH REACHES THE BILINEAR PAIRS TOO, WHICH IS NOT THIS SEAT\'S FINDING: '
+      '`cc66` read the source at `r7859` and saw that the decomposition is accumulated BESIDE the '
+      'TT sum, so it never saw the accumulation factor, and that its save wrote the pairs without '
+      'the `D_l` factor the `D_l` beside them carries.  ** Un-repaired with the switch on, the ten '
+      'pairs sum to 0.500000 of that `D_l` and the instrument\'s own closure print reads 9.2e-01 '
+      'while still printing a number -- both reproduced here rather than taken on trust ** ⇒ and '
+      'repaired, the two move together to the last bit and the closure is unmoved',
+      PR['holds'] is True and PR['off']['byte_identical'] is True
+      and PR['on']['dl_worst'] < 1e-12 and PR['on']['pairs_worst'] < 1e-12
+      and abs(PR['unrepaired_pairs_over_dl'] - 0.5) < 1e-6
+      and PR['closure']['tree_on'] < 1e-6 and PR['closure']['base_on'] > 0.1,
+      'un-repaired the pairs are %.6f of the D_l and the closure reads %.3e; repaired the closure '
+      'is %.3e and both blocks move by two to %.3e'
+      % (PR['unrepaired_pairs_over_dl'], PR['closure']['base_on'], PR['closure']['tree_on'],
+         max(PR['on']['dl_worst'], PR['on']['pairs_worst'])))
+
+check('Ⓗ⑧ AND NONE OF THIS SEAT\'S THREE ABSOLUTE STATEMENTS ACTUALLY HOLDS THE AMPLITUDE, '
+      'MEASURED THE WAY `cc66` MEASURED THEIRS: the committed grid is doubled -- what the switch '
+      'does -- and each of the three is run against both banks.  ** All three come back with their '
+      'exit code, their verdict pattern AND their whole output byte-identical, so the fit solves '
+      'for the amplitude in every one ** ⇒ so `r7858`\'s sweep was WRONG to call them absolute, on '
+      'the ground `r7859` names: "nothing fitted" in this sector means no cosmological parameter '
+      'fitted, not the amplitude held, and the sweep\'s phrase-matching was too wide',
+      AH['n_holding'] == 0 and len(AH['receipts']) == 3
+      and all(v['normal']['n_marks'] > 0 for v in AH['receipts'].values())
+      and all(not v['verdict_moves'] for v in AH['receipts'].values()),
+      '%d of %d hold the amplitude; verdict marks parsed per receipt: %s'
+      % (AH['n_holding'], len(AH['receipts']),
+         ', '.join(str(v['normal']['n_marks']) for v in sorted(AH['receipts'].values(),
+                                                               key=lambda x: -x['normal']['n_marks']))))
+
+check('Ⓗ⑧ᵃ ⚠ AND THAT COMPARATOR\'S FIRST VERSION KNEW ONLY ONE OF THIS CORPUS\'S TWO MARKER '
+      'CONVENTIONS, so one of the three came back with ZERO verdict marks parsed and its '
+      'comparison was VACUOUS while reporting `UNMOVED`.  ** Both conventions are read now, the '
+      'whole output is hashed beside them so that `unmoved` means the run did not differ AT ALL, '
+      'and the comparator ASSERTS it parsed at least one mark rather than trusting that it did **',
+      all(v['normal']['n_marks'] >= 16 for v in AH['receipts'].values())
+      and all(v['normal']['stdout_sha'] == v['doubled']['stdout_sha']
+              for v in AH['receipts'].values()),
+      'the quietest of the three now parses %d marks, and all three outputs are byte-identical '
+      'across the doubling'
+      % min(v['normal']['n_marks'] for v in AH['receipts'].values()))
 
 print()
 print('=' * 100)

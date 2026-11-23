@@ -8,11 +8,11 @@
 # point's OWN tilt, of which the grid carries six distinct values.  ⇒ So nothing is substituted
 # on this half at all.
 #
-# ⌸ THE SWITCH SETS ARE NOT RETYPED: this file is `r7846`'s own `gen_phiphi.sh` with the two
+# ⌗ THE SWITCH SETS ARE NOT RETYPED: this file is `r7846`'s own `gen_phiphi.sh` with the two
 #   switches added to each invocation and the output directory keyed to them, so the grids cannot
 #   stand in for one another -- which that file's own header says is a mistake already made once.
-# ⌸ A lensing point costs about 95 s, not an hour: the lensing path needs no Bessel pass.
-# ⌸ IDEMPOTENT: a completed point is skipped.
+# ⌗ A lensing point costs about 95 s, not an hour: the lensing path needs no Bessel pass.
+# ⌗ IDEMPOTENT: a completed point is skipped.
 set -u
 # ⌗ the output directory is KEYED BY THE CARRY, because two carries were compared and one
 #   grid silently standing for the other is exactly the mistake phiphi.py already made once.

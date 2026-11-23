@@ -1,0 +1,67 @@
+{
+ "ground": "r7859 (69), on cc66: \"nothing fitted\" means no cosmological parameter fitted, not the amplitude held",
+ "holding": [],
+ "n_holding": 0,
+ "receipts": {
+  "P15_more_information_made_the_control_worse_and_the_act_data_the_order_offered_was_already_banked_and_cannot_close_the_gap.py": {
+   "doubled": {
+    "n_fail": 0,
+    "n_marks": 22,
+    "n_pass": 22,
+    "pattern": "PPPPPPPPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "7bd1fa4e91ba"
+   },
+   "holds_the_amplitude": false,
+   "normal": {
+    "n_fail": 0,
+    "n_marks": 22,
+    "n_pass": 22,
+    "pattern": "PPPPPPPPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "7bd1fa4e91ba"
+   },
+   "verdict_moves": false
+  },
+  "P15_the_absolute_lensing_scale_is_two_factor_two_errors_that_cancelled_and_the_baryon_repair_broke_the_cancellation.py": {
+   "doubled": {
+    "n_fail": 0,
+    "n_marks": 20,
+    "n_pass": 20,
+    "pattern": "PPPPPPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "583db16ca3f6"
+   },
+   "holds_the_amplitude": false,
+   "normal": {
+    "n_fail": 0,
+    "n_marks": 20,
+    "n_pass": 20,
+    "pattern": "PPPPPPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "583db16ca3f6"
+   },
+   "verdict_moves": false
+  },
+  "P15_the_handover_belongs_late_not_early_and_an_independent_pipeline_already_installed_here_puts_the_lensing_fault_in_this_instrument.py": {
+   "doubled": {
+    "n_fail": 0,
+    "n_marks": 16,
+    "n_pass": 16,
+    "pattern": "PPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "731992a31e06"
+   },
+   "holds_the_amplitude": false,
+   "normal": {
+    "n_fail": 0,
+    "n_marks": 16,
+    "n_pass": 16,
+    "pattern": "PPPPPPPPPPPPPPPP",
+    "rc": 0,
+    "stdout_sha": "731992a31e06"
+   },
+   "verdict_moves": false
+  }
+ }
+}

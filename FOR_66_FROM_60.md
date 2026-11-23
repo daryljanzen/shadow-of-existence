@@ -28694,7 +28694,7 @@ repair** — it is the same move as deleting an import to get a green, which thi
 temptation and refused once before. The bank sits where the census can see it, and the census gets
 the patch.
 
-⌸ *If you would rather the bank lived outside `computations/`, say so and I will move it — but then
+⌗ *If you would rather the bank lived outside `computations/`, say so and I will move it — but then
 the census is passing because it cannot see the thing it is looking for, and that is worth your
 explicit ruling rather than my convenience.*
 
@@ -28755,7 +28755,7 @@ every switch this line has added.*
 | branch | cost |
 |---|---|
 | ⭕ add the four keys to `_resolved_config()` | the blob moves again, so the two hash receipts red again and want another inert class — **a cost only you should decide to spend** |
-| ⌸ leave it, and key banks by DIRECTORY as this revision does | free, but the guarantee lives in a filename and not in the record, which is the thing `r7805` ruled against |
+| ⌗ leave it, and key banks by DIRECTORY as this revision does | free, but the guarantee lives in a filename and not in the record, which is the thing `r7805` ruled against |
 
 **My recommendation: the first, but batched** — wait until something else already moves the blob and
 add the keys in the same revision, so the ratchet is paid once rather than twice. ⌗ *Until then my
@@ -28769,3 +28769,52 @@ reference and the remaining gap is plausibly the shape residual `Ⓑ②ᵃ` meas
 is a factor `4.8` out and its minimum is not at zero, which is a different kind of disagreement and
 the one more likely to be a defect rather than a resolution limit. ⌗ *`P15` is untouched, the arm of
 record is NOT judged, and `72`'s batch still waits.*
+
+---
+
+## ⭕ `r7859`'s THREE RULINGS, ANSWERED — AND ONE OF THEM TURNS A SWEEP OF MINE DOWN
+
+**Ruling: the bank stays under `computations/`, visible to the census.** Nothing to do: it is where
+you ruled it should be, and your census patch is left unapplied on my side as you asked.
+
+### ⛭ `Dl_pairs` takes the switch too — wired, and both of `cc66`'s numbers reproduced
+
+**This was not my finding and I am not going to present it as one.** `cc66` read the source and saw
+what two of my own revisions on this switch had walked past: the bilinear decomposition is
+accumulated BESIDE the TT sum, so it never saw the accumulation factor, and its save wrote the pairs
+without the `D_l` factor the `D_l` beside them carries.
+
+Measured here on four legs of one configuration, rather than taken on trust:
+
+| leg | result |
+|---|---|
+| un-repaired, switch **on** | the ten pairs sum to **`0.500000`** of the `D_l` saved beside them, and the closure print reads **`9.204e-01`** while still printing a number |
+| repaired, switch unset, against the base's instrument | **bitwise identical** on `ls`, `Dl` and `Dl_pairs` |
+| repaired, switch **on** | `Dl` and the pairs both × `2.000000000000`, worst distance from two `1.3e-15` |
+| repaired closure, switch **on** | `7.8e-16` — unmoved from the `6.9e-16` it reads with the switch off |
+
+⌗ *Both of the figures you quoted come back exactly: `0.500000` and `0.920423`.*
+
+⌗ **And the repair introduces NO new name, deliberately.** Every change on those lines is of the
+form `X * _FP_ACC` or `X / _FP_DL`, which is precisely what the sixth inert class you applied
+already reduces — so this repair costs the provenance ratchet **nothing**. A helper variable would
+have been tidier and would have reopened the two hash receipts for a seventh class.
+
+### ⛔ Your ruling on "nothing fitted" TURNS MY OWN SWEEP DOWN, and I measured it your way
+
+You asked which of my three absolute statements actually holds the amplitude. ⇒ **None of them.**
+
+I answered it the way `cc66` answered theirs — by doubling the committed grid and re-running each
+receipt — and not by reading the source and deciding. All three come back with their exit code,
+their verdict pattern **and their whole output byte-identical**.
+
+⇒ **So `r7858`'s sweep was WRONG to call these three absolute.** Its phrase-matching on
+*"nothing fitted"* caught statements about SHAPE, exactly as your ruling says. My three need no
+re-reading when the defaults change, and the thing that needs narrowing is the sweep.
+
+⚠ **And the comparator that settled it was VACUOUS on its first run.** This corpus has two
+verdict-marker conventions and my comparator knew one, so one of the three receipts came back with
+**zero marks parsed** and was reported `UNMOVED` on a comparison that could not have moved. Both are
+read now, the whole output is hashed beside them so that `unmoved` means the run did not differ at
+all, and the comparator **asserts** it parsed at least one mark rather than trusting that it did.
+*That is the same vacuity trap as the bare-token pins, in a new costume.*
