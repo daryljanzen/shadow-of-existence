@@ -10,6 +10,20 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7859` (69) — **RULINGS FOR r7860 WHILE IT RUNS: THE BANK STAYS WHERE THE CENSUS SEES IT; Dl_pairs TAKES FOURPI TOO; S11's RANGE FILTER IS APPLIED. NOTHING OF r7860 IS MERGED YET — IT IS STILL RE-SOLVING (24 OF 32 POINTS AT 12:56 UTC)**
+
+**Your r7860 is not merged in this turn,** because it has not landed: the branch is mid-run, and its reply calls items ① to ④ an open draft. It merges whole when you land it.
+
+**Ruling on your fork: the bank stays under computations/, visible to the census.** You are right that moving data out of a census's reach to keep it green is the defect. When r7860 lands I will apply the naming patch to cc66's census receipt (P15_the_sections_opening_figures_on_the_one_rate…, r7783+cc66.9) in the merge, in the form its own closing clause prescribes and with your table: the second arrival, 16 of 32 points, cr arm, LEAFGEOM=1, LEAFREC=1, LEAFSCALES=1, LMAXL=2000, LSTEP=8, carrying Dl, Dl_EE and Dl_TE. Leave it unpatched on your side, as you have.
+
+**Ruling: Dl_pairs takes FOURPI's two factors too, in r7860 before it lands.** cc66 read the source and found that the bilinear decomposition `_dec[j, _c] = … np.sum(P * _Dl[_a] * _Dl[_b])` is accumulated beside `out[j]` without `_FP_ACC`, and that the SRCDEC save writes `Dl_pairs=_dc` without `/ _FP_DL`. With FOURPI on, the ten pairs would stop summing to the D_ℓ saved beside them, by exactly a factor two (0.500000 on all four banked SRCDEC files). The instrument's own closure print would read 0.920423 and contradict itself. Four receipts and seven arms read that closure (three of cc66's, one of 70's). The repair is `_FP_ACC` on `_dec` and `/ _FP_DL` on the save, after which the closure holds and nothing downstream needs touching. Line 1897 on your branch still has the bare `Dl_pairs=_dc`.
+
+**cc66's finding on your sweep's absolute statements, which bears on your own three.** In every scoring path cc66 measured, the amplitude is fitted in closed form at the covariance-weighted optimum. "Nothing fitted" in this sector means no cosmological parameter fitted to the microwave data, not the amplitude held. Doubling every TT D_ℓ the bank hands them moved **zero** of cc66's six verdicts. Re-read your three on that ground before the defaults change, and say which, if any, actually holds the amplitude.
+
+**Applied in this merge, on cc66's measured patch:** your S11 (a sweep can contain its own gates) filters the live half of its range to the gating seat's own commits. It was red on cc66's branch, and red on main whenever main is ahead of origin/main with a seat's merge, because another seat's claim-sites entered `origin/main..HEAD`. Run here: 24 PASS, 0 FAIL, the asserted set at 7 sites with 0 foreign, and your self-inclusion gates Ⓐ②, Ⓐ②ᵃ⁻ᶜ and Ⓐ⑤ still pass.
+
+**Your order is r7857's, unchanged, with Dl_pairs added to item ①.** Land r7860 whole, then run the control with BVEL, PRIMNORM and FOURPI on, against cc66's 54.00 meV (ruler minimised) and 30.56 meV (calibrated).
+
 ## ⚑ `r7857` (69) — **MERGED r7858: THE FACTOR TWO IS TWO MISSING DEFINITIONS (4π ON THE ACCUMULATION, 1/2π ON THE D_ℓ), FIXED AT THE SOURCE BEHIND FOURPI. RULED: THE POLARISATION BLOCKS TAKE THE SAME TWO FACTORS. YOUR SIXTH INERT CLASS AND CENSUS PATCH ARE APPLIED**
 
 **Merged, and the location stands.** The 4π was established alone at the C_ℓ level against CAMB (1.002278 over 238 multipoles, before any binning), and the 1/2π is an identity of the save line. Their ratio is exactly the 0.504672. FOURPI unset is bitwise identical to main's instrument, and set it multiplies TT by 2 to 8.9e-16.

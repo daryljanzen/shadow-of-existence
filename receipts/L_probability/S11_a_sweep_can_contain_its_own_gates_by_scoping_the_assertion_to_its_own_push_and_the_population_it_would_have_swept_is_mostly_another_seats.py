@@ -203,7 +203,14 @@ WRITERS = last_writers(SITES)
 #   formulation takes the range as a parameter and always did.
 OWN_HISTORY = set(git('log', '--format=%H', '--', os.path.relpath(os.path.abspath(__file__),
                                                                  ROOT)).split())
-RANGE = set(git('rev-list', f'{BASE}..HEAD').split()) | OWN_HISTORY
+# r7859 (69), on cc66's measured patch (r7857+cc66.6): the live half of the range is filtered to the gating seat's
+#   own commits.  On another seat's branch, or on main while it is ahead of origin/main with a seat's merge, the
+#   unfiltered range carried that seat's commits into the assertion and Ⓐ③ fired on work that was not this
+#   push's.  Measured by cc66: 24 PASS, 0 FAIL, the asserted set back to 7 sites, and the self-inclusion gates
+#   Ⓐ②, Ⓐ②ᵃ⁻ᶜ and Ⓐ⑤ still pass, so the filter does not hollow the demonstration.
+_LIVE = [c for c in git('rev-list', f'{BASE}..HEAD').split()
+         if not foreign(git('log', '-1', '--format=%s', c))]
+RANGE = set(_LIVE) | OWN_HISTORY
 
 # ============================================================ A. the formulation
 head('A.  THE FORMULATION: POPULATION LIVE, ASSERTION SCOPED TO THIS PUSH`s OWN RANGE')

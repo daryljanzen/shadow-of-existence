@@ -120,6 +120,7 @@ def _mod(name):
     return m
 
 
+HISTORY_BUDGET = 480   # r7859 (69): the PO-68 read after the write; the step's own bound is 15 minutes
 GIT_TIMEOUT = 300   # r7765 (cc66): seconds.  `fetch` and `push` below reach a remote, and this helper
 #   had no bound at all -- at r7763 the `record` step sat in it for 59 minutes in one job and 94 in
 #   another, both while a second job was pushing the same carry ref, until the jobs were cancelled.  A
@@ -528,7 +529,6 @@ def do_record(root, which, path, outcome, evidence, remote):
         #   split's compare job, 305 carried, killed at its limit with the write never reached.*  ⇒ Write first;
         #   the history is a report about the write and is printed after it.  No verdict changes.
         changed = bool(added or cleared or removed or relabelled)
-        ev = events(root) if (added or kept) else []   # read BEFORE the write (12 s), so the report is unchanged
         if changed:
             msg = (f'{which} @ {branch} {sha[:10]}: +{len(added)} -{len(cleared)} ={len(kept)}'
                    + (f' unregistered {len(removed)}' if removed else '')
@@ -539,10 +539,27 @@ def do_record(root, which, path, outcome, evidence, remote):
                 print('  red_carry: another job moved the ledger first -- re-reading and re-applying',
                       file=sys.stderr)
                 continue
+        # ⛭ r7859 (69), on cc66 r7857+cc66.6/.7: the `events` read USED to sit before the write, and on
+        #   six measured record steps it hung there until the step's 15-minute bound killed it -- twice with
+        #   the verdict printed and the carry never pushed.  Now the write comes first and the history read
+        #   is the only thing after it, with its own budget: past HISTORY_BUDGET seconds it is abandoned with
+        #   a line saying so, and the step exits 0 because the verdict has already been written.
         if added or kept:
-            print(f'  ⌗ PO-68: the ledger\'s history for what is red here, read at the run:', file=sys.stderr)
-            print_history([h for h in history_lines(root, ev, set(added) | set(kept))
-                           if h['which'] == which], stream=sys.stderr, indent='    ')
+            import signal as _sig
+            def _out(*_):
+                raise TimeoutError
+            _sig.signal(_sig.SIGALRM, _out)
+            _sig.alarm(HISTORY_BUDGET)
+            try:
+                ev = events(root)
+                print(f'  ⌗ PO-68: the ledger\'s history for what is red here, read at the run:', file=sys.stderr)
+                print_history([h for h in history_lines(root, ev, set(added) | set(kept))
+                               if h['which'] == which], stream=sys.stderr, indent='    ')
+            except TimeoutError:
+                print(f'  ⌗ PO-68: the history read passed its {HISTORY_BUDGET} s budget and was abandoned; '
+                      f'the verdict above was already written to {REF}', file=sys.stderr)
+            finally:
+                _sig.alarm(0)
         return 0
     raise SystemExit(f'red_carry: could not write {REF} in {TRIES} tries')
 
