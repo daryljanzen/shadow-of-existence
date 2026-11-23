@@ -195,6 +195,20 @@ line plus a `BVEL`-guarded term that is zero when it is off**, so the ratchets' 
 doctrine covers them and `cc66` is asked for no exception — only for a fifth inert class, routed
 with its own non-vacuity measurements in `FOR_66_FROM_60.md`.
 
+> ⛔ **CORRECTED, AND THE READING ABOVE IS LEFT AS IT WAS MEASURED.** The sentence *"exactly three,
+> and the list is measured"* was true of the tree this revision landed on and is **no longer true of
+> the tree**: the census has since grown, and the arrival is **this line's own** — the receipt
+> landed at `r7860` stamps the shared instrument's source hash as well. *So the row's gate was
+> wrong in a way the number hid: it asserted a TOTAL, which reads as a claim about the corpus while
+> actually asserting that no seat has landed since, and it went red on an **arrival** rather than on
+> a defect — on its own author's arrival, at that.* The arm now gates the **structure** this row was
+> ever pricing — the cost is not zero, the list is walked rather than named, this receipt is not in
+> it, the census stamp is still unique, and every stamper that is **not** this line's own is routed
+> and not edited here — **with the total reported rather than fixed**, and with each stamper's
+> landing seat read off its own `receipts/INDEX.md` row, that lookup gated one-to-one before it is
+> trusted. ⌗ *The sentence above stands as the reading of the day it was taken; what follows the
+> switch's existence into the ledger is measured at run time, not remembered.*
+
 ⌗ **The re-spelling was measured, not assumed, on both settings of the switch, which is what licenses
 the banked grid and the three chains being kept rather than re-run:** the state the rewritten
 instrument produces is **bitwise identical** to the one the previous form produced — worst absolute
