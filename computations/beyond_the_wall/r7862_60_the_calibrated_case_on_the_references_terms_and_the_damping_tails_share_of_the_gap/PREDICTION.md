@@ -121,3 +121,59 @@ point's own drag epoch through Ⓐ①'s ruler, instead of being minimised over.
   validated at the corners, not only where it was read.
 - *when two descriptions differ, first ask whether the difference survives a change of clock* — the
   drag-epoch horizon is accumulated on the clock `rs_from` is on, and the receipt says which.
+
+---
+
+# ⛭⛭ AMENDMENT — pushed after Ⓐ① held and BEFORE ANY PART OF Ⓑ② WAS RUN
+
+**Ⓐ① holds and is not restated here; the arms above stand exactly as registered.** The ruler
+validated at `1.5e-03` and `1.0e-03` relative at the two corners and `1.2e-03` at the read control
+point, and Ⓐ①ᵇ came back stronger than its band: `r_d` is a function of `(ω_b, ω_m)` to `6.6e-10`.
+
+**What forces this amendment is the OTHER half of Ⓐ①ᵇ, which is a measurement and not a plan.** The
+neutrino sum moves this instrument's drag ruler by **exactly zero** across `[0, 0.60]` eV, because
+the instrument carries the neutrino mass INSIDE `OM` at every epoch (`OCDM = OM − OB − ONU`), so the
+early expansion at fixed `ω_m` does not know the sum. **The reference's does not behave that way:**
+`camb`'s `rdrag` at the same total `ω_m` runs `146.8930 → 147.0555 → 147.5902 → 148.0788` Mpc across
+`Σ = 0, 0.06, 0.30, 0.60` eV — a spread of `0.81` per cent. ⌗ *And `147.0555` at `Σ = 0.06` eV is
+the `147.055454` the order quotes, so the reference's calibrated ruler is identified, not guessed.*
+
+⚠ **A ruler error of that size is not small in the BAO term**, which is exactly why it cannot be
+left as a footnote: `r7854` recorded `χ²_bao` of `31.63` at a calibrated `147.06` Mpc against
+`14.56` at a minimised `148.66` — about one per cent in the ruler for seventeen in `χ²` — while the
+limit is read at `Δχ² = 2.71`. **So whichever ruler is used has to be named, and the difference
+between the two has to be priced rather than assumed negligible.**
+
+## Ⓑ②ᵉ — THE RULER DIFFERENCE, PRICED BEFORE THE PROFILES ARE READ
+
+- **what is computed:** `χ²_bao` at the control geometry on the two rulers at each sum node, and the
+  `Δχ²_bao` between them.
+- **criterion: the `Δχ²_bao` between the two rulers at `Σ = 0.60` eV is compared against `2.71`**,
+  the threshold the limit itself is read at.
+- ⛔ **reachable negative:** it comes out **below** `2.71`, in which case the instrument's own flat
+  ruler is adequate for this profile and the second treatment below is redundant — reported as such.
+
+## Ⓑ②ᶠ — BOTH RULERS CARRIED, EACH NAMED
+
+The order asks for the calibrated case **on `cc66`'s terms**, and `cc66`'s ruler is the reference's
+`rdrag`, which moves with the sum. The instrument cannot produce that movement. So **two** calibrated
+profiles are run and both are reported, with the ruler named beside each figure:
+
+- **⒜ THE INSTRUMENT'S OWN RULER** — `r_d(ω_b, ω_m)` from Ⓐ①, flat in the sum. *This is the case
+  that is internally consistent with this instrument's background, and its limit is the instrument's
+  own answer.*
+- **⒝ THE REFERENCE'S RULER** — `rdrag` at each point's own cosmology **including its sum**. *This is
+  the case that is comparable to `30.56` meV, and it is comparable only because the ruler is the
+  reference's; the receipt says so rather than presenting it as this instrument's own.*
+
+**Ⓑ②ᵇ's registered expectation is left exactly as written and is adjudicated on ⒝**, which is the
+comparison to `30.56` meV the order asked for. ⒜ is reported beside it, and the gap between the two
+is the price of the instrument's neutrino background — **a number this revision owes and does not
+have before running it.**
+
+⌗ *GUARD: when a fork names two objects, check that the thing they are alternatives FOR has a slot
+for only one. It does not: "the calibrated case" names the instrument's ruler and the reference's,
+and the order's target was produced on the second. Both are carried for that reason.*
+⌗ *GUARD: a defence against a paper state changing has to ENUMERATE the states it may produce — so
+the ruler treatments are enumerated here, before either profile is minimised, rather than chosen
+after seeing which one lands nearer `30.56`.*
