@@ -1,0 +1,95 @@
+{
+ "Ⓐ① the CAMB leg made to disagree with theirs": {
+  "rc": 1,
+  "reddened": [
+   "Ⓐ① ** Ⓐ HOLDS EXAC"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓑ② the ordered ruler made to dip below": {
+  "rc": 1,
+  "reddened": [
+   "Ⓑ② ** Ⓑ HOLDS at t",
+   "Ⓕ⑨ ⇒ ** so a resid"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓒ③ the ordered worst gap pushed past its tolerance": {
+  "rc": 1,
+  "reddened": [
+   "Ⓒ③ ** Ⓒ HOLDS: the"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓓ④ the worst H point moved off the earliest z": {
+  "rc": 1,
+  "reddened": [
+   "Ⓓ④ ** Ⓓ HOLDS ON B"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓔ⑤ the density improvement dropped under three": {
+  "rc": 1,
+  "reddened": [
+   "Ⓔ⑤ ** Ⓔ HOLDS: the"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓕ⑥ the order figure made to equal N_eff": {
+  "rc": 1,
+  "reddened": [
+   "Ⓕ⑥ ⛔ ** THE ORDERE"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓕ⑦ the gap to three changed": {
+  "rc": 1,
+  "reddened": [
+   "Ⓕ⑦ ⇒ ** so the gap"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓕ⑧ the measured figure made uniformly above too": {
+  "rc": 1,
+  "reddened": [
+   "Ⓕ⑧ ⛭ ** AND THE CO",
+   "Ⓕ⑨ ⇒ ** so a resid"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑩ the limit made to move on the published grid": {
+  "rc": 1,
+  "reddened": [
+   "Ⓖ⑩ ** Ⓕ HOLDS IN T"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑪ the fine-grid bound inflated": {
+  "rc": 1,
+  "reddened": [
+   "Ⓖ⑪ ⌗ and a grid tw"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑫ one re-derivation term made non-zero": {
+  "rc": 1,
+  "reddened": [
+   "Ⓖ⑫ ⛭⛭ ** Ⓖ HOLDS E"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑬ a point moved outside the attributed residue": {
+  "rc": 1,
+  "reddened": [
+   "Ⓖ⑬ ⌗ and the worst"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑭ a re-run point put on the box boundary": {
+  "rc": 1,
+  "reddened": [
+   "Ⓖ⑭ ⌗ and every one"
+  ],
+  "intended_arm_reddened": true
+ }
+}
