@@ -15,10 +15,22 @@ happens upstream in `bin_three` and is untouched).  ⇒ So the cut profiles run 
 minimiser, the same CAMB build and the same BAO and lensing terms as the landed limits, and the one
 difference is the mask.
 
-** AND THE PATCH IS VERIFIED BEFORE IT IS TRUSTED. **  With `cut = None` the wrapper must reproduce
-`r7853`'s banked totals; the driver checks that at every banked sum of both arms and REFUSES to run
-the cut legs if any total moves by more than 1e-6.  A patch that silently changed the uncut answer
-would make every number below meaningless.
+** AND THE PATCH IS VERIFIED BEFORE IT IS TRUSTED -- ON THE TERM THE MASK CAN TOUCH, WHICH IS NOT
+THE TOTAL. **  The first cut of this check compared the TOTAL against `r7853`'s banked value and
+REFUSED, at a worst departure of 6.185e-03.  The wrapper could not be the cause -- at `cut = None` it
+calls the original with the same arguments and returns its result unchanged -- so the check was
+measuring something else, and `reproduce_the_banked_score.py` found what: the departure is confined
+ENTIRELY to `chi2_bao` on the `rd_min` arm, `rd_camb` reproducing bit-exactly on every term at every
+sum.  `bao_min`'s memo is keyed on ROUNDED parameters (`round(h0, 4)`, `round(om, 5)`), so a fresh
+process computes `r_d` at the recorded parameters where the banked run was served the first trial
+point that rounded to the same key -- 1.026e-03 Mpc at worst.  `rd_camb` never calls it.
+
+⇒ ** SO THE GUARD IS NOW ON `chi2_cmb`, WHICH IS THE ONLY TERM AN ELL MASK CAN CHANGE AT ALL. **  The
+lensing, tau and BAO terms do not see the mask, so putting them inside the tolerance made the check
+LOOSER where it matters and impossible to pass where it does not.  The driver now refuses unless
+`chi2_cmb` reproduces EXACTLY on both arms and the whole total reproduces EXACTLY on `rd_camb`, with
+the `rd_min` residue required to be `chi2_bao`-only and under a bound this measurement justifies.
+⌗ *That is the check tightened where it bites, not loosened to let the run proceed.*
 
 ** THE CUT IS A CHOICE AND IS SPELLED OUT. **  A bin is ABOVE the cut when its LOW edge is, so a bin
 straddling the cut is KEPT.  The count removed is taken from the bins the model COVERS, not from all
@@ -98,31 +110,57 @@ def start_of(d):
     return (d['H0'], d['Om'], d['ombh2'], d['ns'], d['tau'])
 
 
+#: the residue `bao_min`'s rounded memo leaves on the minimised arm, measured at
+#: `reproduce_the_banked_score.json` -- 6.185e-03 worst, so this bound is that figure doubled
+BAO_MEMO_BOUND = 1.3e-2
+
+
 def verify_patch():
-    """the uncut wrapper against every banked point of both arms, before any cut leg runs"""
+    """the uncut wrapper against every banked point, on the term the mask can actually change
+
+    Returns a dict of the three quantities the refusal is decided on, so the receipt pins what was
+    checked rather than a single number that hides which term moved.
+    """
     SC.chi2_of = _identity()
-    worst = 0.0
+    out = dict(worst_cmb_either_arm=0.0, worst_total_rd_camb=0.0, worst_total_rd_min=0.0,
+               worst_non_bao_rd_min=0.0, points=0)
     for mode in PL.MODES:
         for s in PL.SUMS:
             d = banked(mode, s)
             if d is None:
                 continue
-            tot, _ = PL.score(s, *start_of(d), mode)
-            worst = max(worst, abs(tot - d['total']))
+            tot, det = PL.score(s, *start_of(d), mode)
+            out['points'] += 1
+            out['worst_cmb_either_arm'] = max(out['worst_cmb_either_arm'],
+                                              abs(det['chi2_cmb'] - d['chi2_cmb']))
+            out['worst_total_%s' % mode] = max(out['worst_total_%s' % mode],
+                                               abs(tot - d['total']))
+            if mode == 'rd_min':
+                non_bao = sum(abs(det[k] - d[k]) for k in ('chi2_cmb', 'chi2_lens', 'chi2_tau'))
+                out['worst_non_bao_rd_min'] = max(out['worst_non_bao_rd_min'], non_bao)
     SC.chi2_of = _ORIG
-    print('  patch verification: worst |total - banked| = %.3e over the banked grid' % worst,
-          flush=True)
-    return worst
+    out['ok'] = (out['worst_cmb_either_arm'] == 0.0 and out['worst_total_rd_camb'] == 0.0
+                 and out['worst_non_bao_rd_min'] == 0.0
+                 and out['worst_total_rd_min'] < BAO_MEMO_BOUND)
+    print('  patch verification over %d banked points:' % out['points'])
+    print('    chi2_cmb, either arm         %.3e   (must be EXACTLY 0 -- the mask touches this)'
+          % out['worst_cmb_either_arm'])
+    print('    total, rd_camb               %.3e   (must be EXACTLY 0)'
+          % out['worst_total_rd_camb'])
+    print('    non-bao terms, rd_min        %.3e   (must be EXACTLY 0)'
+          % out['worst_non_bao_rd_min'])
+    print('    total, rd_min                %.3e   (bao-memo residue, bound %.1e)'
+          % (out['worst_total_rd_min'], BAO_MEMO_BOUND), flush=True)
+    return out
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    worst = verify_patch()
-    json.dump(dict(worst_uncut_departure=worst), open(os.path.join(HERE, 'patch_check.json'), 'w'),
-              indent=1)
-    if worst > 1e-6:
+    chk = verify_patch()
+    json.dump(chk, open(os.path.join(HERE, 'patch_check.json'), 'w'), indent=1)
+    if not chk['ok']:
         print('  ⛔ REFUSING to run the cut legs: the uncut wrapper does not reproduce the banked '
-              'totals (worst %.3e).  Every cut number would be meaningless.' % worst)
+              'score on a term the mask can change.  Every cut number would be meaningless.')
         return 1
     for label, cut, side in LEGS:
         for mode in PL.MODES:
