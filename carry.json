@@ -135,5 +135,14 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45432045840",
+    "since": "e84cf68980fd6f5c66faddb030ca39392d4e8ca1"
+   }
+  }
  }
 }
