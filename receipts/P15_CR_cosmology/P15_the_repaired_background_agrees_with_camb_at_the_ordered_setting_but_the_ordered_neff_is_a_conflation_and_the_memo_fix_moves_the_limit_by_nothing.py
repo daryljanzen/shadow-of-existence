@@ -94,13 +94,20 @@ check('Ⓕ⑥ ⛔ ** THE ORDERED `N_eff` FIGURE IS A CONFLATION, AND THE ARITHME
       'neutrino contributes `1.0147` in those units and not `1` ** -- which is exactly why the '
       'massless figure is not two',
       abs(O['massless_plus_integer'] - O['order_says']) < 5e-05
-      and abs(O['N_eff'] - O['massless_plus_integer']) > 1e-02,
-      'massless+1 %.6f against ordered %.4f, and N_eff %.6f'
-      % (O['massless_plus_integer'], O['order_says'], O['N_eff']))
+      and abs(O['N_eff'] - O['massless_plus_integer']) > 1e-02
+      # the pieces pinned two-sidedly, since the sum is what hides a conflation of them
+      and abs(O['num_massless'] - 2.029333) < 5e-07
+      and abs(O['massless_plus_integer'] - 3.029333) < 5e-07
+      and abs(O['N_eff'] - O['num_massless'] - 1.0147) < 5e-05,
+      'massless %.6f + 1 = %.6f, the massive one worth %.6f, and N_eff %.6f'
+      % (O['num_massless'], O['massless_plus_integer'],
+         O['N_eff'] - O['num_massless'], O['N_eff']))
 
 check('Ⓕ⑦ ⇒ ** so the gap from the other seat\'s three is `0.044000` and the ordered correction '
       'leaves `0.0147` unaccounted **',
-      abs(O['gap_to_three'] - 0.044) < 5e-07, '%.6f' % O['gap_to_three'])
+      abs(O['gap_to_three'] - 0.044) < 5e-07
+      and abs(O['gap_to_three'] - O['order_says'] + 3.0 - 0.0147) < 5e-05,
+      '%.6f, leaving %.6f' % (O['gap_to_three'], O['gap_to_three'] - O['order_says'] + 3.0))
 
 check('Ⓕ⑧ ⛭ ** AND THE CORRECT FIGURE IS NOT UNIFORMLY BETTER, WHICH IS THE FINDING RATHER THAN THE '
       'CORRECTION: at `+0.044` the density improves to a factor `5.97` and `H` at the earliest point '
@@ -108,7 +115,9 @@ check('Ⓕ⑧ ⛭ ** AND THE CORRECT FIGURE IS NOT UNIFORMLY BETTER, WHICH IS TH
       'CROSSES BELOW CAMB\'s at the two lowest sums, where the ordered figure leaves it uniformly '
       'above **',
       B['rho_improvement_measured'] > B['rho_improvement_ordered']
-      and MEA['H_worst'] < ORD['H_worst'] and MEA['n_below'] == 2 and not MEA['all_above'],
+      and MEA['H_worst'] < ORD['H_worst'] and MEA['n_below'] == 2 and not MEA['all_above']
+      and abs(B['rho_improvement_measured'] - 5.97) < 5e-03
+      and abs(MEA['H_worst'] - 3.122e-04) < 5e-08,
       'x%.2f and %.3e, with %d sums below' % (B['rho_improvement_measured'], MEA['H_worst'],
                                               MEA['n_below']))
 
