@@ -15,6 +15,111 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7867+cc66.11 — ⛔ **60's `r7866` IS NOT YET MERGED, AND ITS SECOND RULER COLUMN WAS NEVER COMPUTED: ONE SHARED CACHE KEYED ON THE SUM ALONE SERVED `rd_min`'s SPECTRA TO `rd_camb`, SO `reference_rd_camb` IS `reference_rd_min` RELABELLED. THIS IS THE MEMO DEFECT YOU RULED ME TO REPAIR AT ⑦, IN ANOTHER SEAT'S FILE, ONE WEEK LATER. ⑧ STILL BLOCKED — BUT ON A FILE THAT NEEDS ONE LINE FIRST**
+
+⑧ is unchanged and still blocked: `r7866` is **not on `main`** (head is `dc081afa7`, and no `r7866`
+path exists in its tree). But the work is finished on `origin/claude/shadow-of-existence-setup-6awafl`
+at `a381819f1`, so I read the two files ⑧ depends on before the merge rather than after. **One of them
+has a defect that voids exactly the column my ⑧ is for, and I am routing it rather than touching
+60's file.**
+
+### ⛔ THE DEFECT, PROVED FROM 60's OWN COMMITTED OUTPUT, WITH NOTHING RE-RUN
+
+`same_bins.py` builds its two reference columns through one memo:
+
+    cache = {}                                    # ← created ONCE, outside the mode loop
+    for mode in ('rd_min', 'rd_camb'):
+        for label, keep in (('whole', keep_all), ('minus36', keep_36)):
+            tot, nb, par = ref_profile(mode, keep, cache)
+
+and inside `ref_profile`, where `par` is read from that mode's own banked zero-sum point:
+
+    if s not in cache:
+        cache[s] = camb_binned(*par, sum_ev=s)    # ← keyed on `s`, valued on `(par, s)`
+
+`rd_min` runs first and fills all seven sums with **`rd_min`'s** parameters. `rd_camb` then finds every
+`s` present and **never calls `camb_binned` at all.** So its column is `rd_min`'s, while the `params`
+field it records is `rd_camb`'s — the file reports parameters that did not produce its numbers.
+
+**The proof needs no CAMB and no re-run — it is arithmetic over `same_bins.json` as committed.** All
+five parameters differ between the two modes:
+
+| | `H0` | `Ω_m` | `ω_b` | `n_s` | `τ` |
+|---|---|---|---|---|---|
+| `rd_min` | `68.19858625` | `0.3046094201` | `0.02243780942` | `0.9658715734` | `0.05444883599` |
+| `rd_camb` | `68.62482287` | `0.2990039365` | `0.02249778149` | `0.9681166503` | `0.05621002637` |
+
+— a gap of `0.426237` km/s/Mpc in `H0` alone. And yet, on **both** bin sets, all seven totals are
+**bit-identical**, `max |Δ| = 0.0` exactly, and the crossings agree to every digit printed:
+
+| | `whole` | `minus36` |
+|---|---|---|
+| totals bit-identical on all 7 sums | **yes**, `max |Δ| = 0.0` | **yes**, `max |Δ| = 0.0` |
+| `rd_min` crossing | `16.15833437182978` | `16.28211318087666` |
+| `rd_camb` crossing | `16.15833437182978` | `16.28211318087666` |
+
+Five different parameters cannot give a bit-identical χ² through CAMB. **That identity is the defect's
+signature, not a result.**
+
+### ⛭ WHAT THIS DOES AND DOES NOT COST, STATED EXACTLY
+
+⌗ **The file's headline survives, and I am not asking for it to be re-opened.** The ratio and the
+asymmetry control rest on `moves['instrument']`, `moves['instrument_frozen']` and
+`moves['reference_rd_min']`, every one of which is computed correctly: the instrument's two columns
+never touch that cache, and `rd_min` is the mode that filled it. So `162×` on the reference's own
+frozen treatment, `389×` re-profiled, and "the asymmetry is not the cause" all stand as measured.
+
+⛔ **What is void is the apparent finding that the two rulers move the reference identically**
+(`moves_meV.reference_rd_camb` = `reference_rd_min` = `-0.12377880904688`). The two rulers are the whole
+reason my reference carries two modes — `30.56` against `54.00` meV at the landed limits, a `23.4` meV
+spread — and here they are reported as agreeing to fourteen digits. They were not compared.
+
+⚠ **And the correction may well be small — I am claiming the number is UNMEASURED, not that it is
+wrong.** A `0.43` km/s/Mpc shift in `H0` is modest, so the true `rd_camb` move could land near
+`-0.12` after all. That is precisely why it has to be run: as it stands the column cannot be read
+either way, and a reader who takes it as a measurement would conclude the ruler treatment is
+irrelevant to the low-end lean on evidence that does not exist.
+
+### ⛭ THE FIX IS ONE LINE, AND IT IS THE ONE YOU ALREADY RULED ON
+
+Either form:
+
+    cache[(mode, s)] = camb_binned(*par, sum_ev=s)     # key the memo on what the value depends on
+
+or move `cache = {}` inside the `for mode` loop. **This is the same defect class as my own rounded
+memo, which you ruled me to repair at `r7865` ⑦ and which I landed this turn:** a memo keyed on less
+than the value it stores depends on. Mine was keyed on `round(h0, 4), round(om, 5)` where the value
+depends on the unrounded pair; this one is keyed on `s` where the value depends on `(par, s)`. Mine
+cost up to `6.2e-03` in χ²_bao and made one arm non-re-derivable. This one costs an entire column.
+⇒ **Two seats, two memos, same week, same hole. If a third is wanted, the general form is: a memo
+whose key omits any argument the function reads is a silent aliasing bug, and the cheap guard is to
+key on the full argument tuple and never on a projection of it.**
+
+### ✔ AND 60's `low_bins.json` CONFIRMS MY `r7863` CAVEAT QUANTITATIVELY — THEIR FINDING, NOT MINE
+
+I flagged at `r7863+cc66.17` that a matched bin **count** is not matched **information**. 60 have now
+measured it, and the number is worse than I could state then: the two low cuts share **7 bins of 36
+and 49**. `29` are the instrument's alone and `42` the reference's alone — and the reason is
+structural, not a binning accident: the instrument's score starts at `ℓ = 100`, so `42` of my `49`
+cut bins sit **below where it scores at all**, and after their `36`-bin removal its lowest standing
+bin is `ℓ = 208`. Separately, `58` of my `613` bins are uncovered by their `555` entirely, `42` of
+those below `ℓ = 100`. (Two counts of `42` over different sets; they are not the same `42`.) **So the `46.53` against `1.03` that produced "forty
+times" was a ratio between two different removals, and 60 say so in their own docstring and built
+`same_bins.py` to replace it.** That is theirs and it is right; I record it because it settles the
+caveat rather than leaving it hanging, and because the replacement ratio — `162×` frozen — is the
+number ⑧ now has to be read against.
+
+### ⌗ WHAT I AM DOING, AND NOT DOING
+
+- **Not touching 60's file.** It is another seat's, and it is not even merged.
+- **Not starting ⑧'s computation.** The order's trigger is `r7866` landing, and the bin list is an
+  input: `low_bins.json`'s `rows` (36, twelve per block, `ℓ = 100..207`) is what I would use, and if
+  the merge moves it I would be re-running against a stale list. Registering bands now would mean
+  registering them against a second ruler column that does not yet exist.
+- **Asking for one thing before the merge:** that the cache key be fixed and the `rd_camb` column
+  re-run, so that when I supply the reference's per-bin `dχ²/dΣ` on the identical `36` bins it is set
+  against two rulers that were actually compared. The `DNEFF`-matched settings you corrected to
+  `+0.044` in `r7867` are the ones I will match.
 ## r7865+cc66.10 — ⛭ **③ THE REPAIRED BACKGROUND AGREES WITH CAMB AT THE ORDERED SETTING ON ALL FOUR BANDS — BUT YOUR `N_eff` FIGURE IS A CONFLATION, THE TRUE GAP IS `0.044`, AND AT THE CORRECT VALUE THE DENSITY AND `H` IMPROVE WHILE THE RULER CROSSES BELOW CAMB. ⑦ THE MEMO IS DROPPED AND `54.00` MOVES BY NOTHING — AND ITS ARM IS RE-DERIVABLE FOR THE FIRST TIME. ⑧ WAITS ON YOUR BINS**
 
 Items ③ and ⑦ are in. Receipt
