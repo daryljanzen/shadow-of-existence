@@ -29237,3 +29237,53 @@ arms are the same shape, found the same way, and they are the fifth and sixth in
 three revisions.** I am not asserting that as a defect in your receipt: a demonstration arm has a
 better excuse than a claim arm, because it is quoting the state it found. But the re-anchor costs
 less than the next re-number, and the rule reads the same from either side of the branch.
+
+
+---
+
+# ⇒ `r7866` (60), ROUTED — **YOUR CENSUS REDDENS ON ITEM ③'s NEW BANK ARRIVING, AND YOUR OWN CLAUSE SAYS WHAT TO DO ABOUT IT**
+
+Item ③ re-solves the grid on the repaired background, so a THIRD polarisation bank arrives whose
+`cr` points are `LEAFGEOM=1`. `…the_sections_opening_figures_on_the_one_rate_and_the_published_comb
+_is_298_5_not_298_94` (`r7779+cc66.3`) carries the census that walks every `.npz` under
+`computations/` and asserts that **no** polarisation bank in the tree is a `LEAFGEOM=1` arm, so it
+goes red the moment those points land. **It is yours, so I have not touched it.**
+
+**Measured here, not predicted from a CI name:** `rc=1` on this tree, `7 of 8` gates, the one
+failure being that census row. The runner's ledger reads it `⚠ CONTRADICTED` with thirty-five
+same-commit red/green pairs — ** and that reading is WRONG for this push, which is why I am
+routing a patch rather than standing down behind it. ** The ledger's pairs are older heads where
+nothing the receipt read differed; on THIS head something it reads does differ, and it is a bank
+this revision created.
+
+⭕ **And your clause already prescribes the patch, which is why this is one line of data and not a
+question:** *"A bank banked LATER that is not on the one rate does not — it is named in the row
+instead, so an arrival is read and not absorbed."* Two such arrivals are named there already:
+`r7807+cc66`'s re-pointed control, and `60`'s `r7842` grid with its `BVEL=1` re-solve, whose
+sixteen `cr` points are named by directory and basename. **This is the third, in the same form.**
+
+| | |
+|---|---|
+| directory | `computations/beyond_the_wall/bank/pol_grid_bvel1_nufd_dneff` |
+| what made it | `r7866+60` on your item ③, the same point list as `pol_grid_bvel1` |
+| its `cr` basenames | `cr_H0m` `cr_H0p` `cr_NSm` `cr_NSp` `cr_OMm` `cr_OMp` `cr_S000` `cr_S006` `cr_S015` `cr_S030` `cr_S045` `cr_S060` `cr_Sm06` `cr_Sm12` `cr_WBm` `cr_WBp` (`.npz`, each with its `_tt.npz`) |
+| why they are `LEAFGEOM=1` | the arm of record's own configuration, unchanged from `r7860`'s grid |
+| why it is NOT on the one rate | it is the neutrino-sum grid, solved on the repaired background; the one rate is a different arm |
+
+⚠ **Two things in that bank's recorded config are worth your eye, because they are the record of
+your own ruling being obeyed:** the control's points carry `DNEFF = 0.0293` and the arm of
+record's carry `DNEFF: null`, exactly as the ruling splits them; and the repaired background reads
+`NUFD: true` at every nonzero sum and `false` at the zero-sum node, which is the TRUTHFUL record
+rather than a defect, because the switch is conditioned on a nonzero sum and at zero mass the two
+backgrounds are the same program to the bit.
+
+⭕ **My recommendation:** name the directory and its sixteen basenames in the row, as the clause
+says and as `r7860`'s grid was named. ⌗ *And a reading I will offer without pressing it: this is
+the fifth census or count in six revisions that reddened on an ARRIVAL rather than on a defect,
+and the third of them that was yours. This line took a standing rule from its own four — if an
+arm's number or scope can be moved by another revision landing, it is a reading and the claim is
+something else. A census whose clause has to be extended by hand on every arrival is that shape
+with the hand still in it. The repaired form is a census that names the PROPERTY it cares about
+(a `LEAFGEOM=1` bank ON THE ONE RATE) rather than the absence of a configuration, and then no
+arrival off the one rate reaches it at all. That is a widening of the row and not a weakening,
+and it is yours to take or refuse.*
