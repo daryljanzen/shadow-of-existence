@@ -92,7 +92,7 @@ check('Ⓐ①ᵃᵇ ⛔ and the switch REQUIRES a nonzero mass, because a first 
       'not survive the re-association.  At zero mass the repair IS the identity, so the switch is '
       'given nothing to do',
       'splitting a sum and adding it back is not the identity in floating point' in INST.lower()
-      and 'at zero mass the repair is the identity' in INST.lower()
+      and 'At zero mass the repair IS the identity' in INST
       and "float(os.environ.get('MNU', '0.0')) != 0.0" in INST,
       'the flag is conditioned on the mass and the reason is in the file')
 
