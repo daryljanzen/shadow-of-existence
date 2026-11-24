@@ -384,6 +384,19 @@ def _tree_is_bL_plus_dneff(bL):
             s = _ast.dump(node.test)
             if "id='DNEFF'" in s or "id='YHE'" in s:
                 return None
+            # --- seventh class -- r7865 (69), on 60's r7864 routing: the Fermi-Dirac background, `NUFD`.
+            #     Its switch is `NUFD and MNU != 0.0`, bound twice (`NUFD` and `_NU_ON`).  `if NUFD:` builds
+            #     the background and is dead unset, so it goes WITH its `else` (which only binds names the
+            #     landed code does not have); `if _NU_ON: <new> else: <landed>` reduces to its landed `else`;
+            #     `if _NU_ON: <new>` with no `else`, standing before the landed lines, goes.  The keys the
+            #     config gained in the same revision (`BVEL`, `MNU`, `FOURPI`, `PRIMNORM_env`, `NUFD`) are
+            #     dropped from the config dict below.  Any other difference keeps the row red.
+            if isinstance(node.test, _ast.Name) and node.test.id == 'NUFD':
+                return None
+            if isinstance(node.test, _ast.Name) and node.test.id == '_NU_ON':
+                if not node.orelse:
+                    return None
+                return [self.visit(n) for n in node.orelse]
             # --- fifth class (d): `if BVEL:` is dead unset, so it goes;
             #     `if not BVEL:` wraps a landed statement, so the wrapper goes and the body stays.
             if isinstance(node.test, _ast.Name) and node.test.id == 'BVEL' and not node.orelse:
@@ -399,7 +412,7 @@ def _tree_is_bL_plus_dneff(bL):
         def visit_Dict(self, node):
             self.generic_visit(node)
             keep = [(k, v) for k, v in zip(node.keys, node.values)
-                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE'))]
+                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD'))]
             node.keys = [k for k, _ in keep]
             node.values = [v for _, v in keep]
             return node
@@ -411,7 +424,7 @@ def _tree_is_bL_plus_dneff(bL):
         _tr = _ast.parse(new)
         _s = _Strip()
         _s.UNIT = _inert_unit_factors(_tr)
-        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT
+        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT | {'NUFD', '_NU_ON', '_MNU_EARLY'}
         return _ast.dump(_ast.parse(old)) == _ast.dump(_s.visit(_tr))
     except (OSError, SyntaxError):
         return False

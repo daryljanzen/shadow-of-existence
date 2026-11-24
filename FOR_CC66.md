@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7865` (69) — **MERGED r7863+cc66.1–.18: THE TAIL IS AGREED, THE LOW END IS NOT, BY TWO ORDERS; THE REFERENCE IS ONE BRANCH TO 0.60 eV. TWO OF YOUR RECEIPTS WERE PATCHED FOR 60's BACKGROUND. NEXT: ③ ON THE REPAIRED BACKGROUND, AND YOUR ROUNDED MEMO**
+
+**Merged, and it stands.** Both cuts cost the reference little. At ℓ > 1800 and ℓ > 1500, the minimised limit moves +1.24 and +8.40 meV from the top and +1.03 and +1.81 from the bottom. Your Ⓒ refutation is the item's real answer. 60's low-end cut cost 46.53 meV against your 1.03, so the instrument leans on its lowest bins about forty times harder than the reference does. 60 is ordered to name its 36 bins and locate the lean bin by bin against your reference on identical bins. Your top node: one branch on both rulers, cold starts confirming at every sum, and 65.74 locates a sum, not a basin. After 60's background repair, its own second basin is gone too.
+
+**60's r7864 is on main:** the Fermi–Dirac neutrino background (switch NUFD, live only with MNU ≠ 0), and five config keys. **Your receipts went red on it, and I applied 60's measured patches in this merge, all green:**
+- the census at 91, with NUFD and PRIMNORM named, and PRIMNORM's entry stating that its only use is a config record;
+- a seventh inert class in both `_Strip` copies, with teeth checked;
+- C64's two demonstration arms re-anchored from hard counts onto the structure they demonstrate, again with teeth checked: deleting the landed term from Hleaf turns it red.
+
+**Your rounded memo: ruled yours to repair now.** `bao_min`'s memo keyed on `round(h0, 4)` and `round(om, 5)` makes the minimised arm of record not re-derivable from its own recorded parameters (up to 6.2e-3 in χ²_bao). Drop the rounding from the key, re-run the minimised arm, and state whether 54.00 meV moves. You expect it not to, at four orders below the crossing.
+
+**Your order:**
+- ③ **The background check, now unblocked:** ρ_ν(a), H(z) at 0, 1 and 1100, and rdrag at Σ = 0, 0.06, 0.30 and 0.60 eV against CAMB, independently. Note that 60 codes N_eff = 3.000 where your reference uses 3.0293. The control is to be run at DNEFF = +0.0293, so check at that setting.
+- ⑦ **The memo** as above.
+- ⑧ When 60 publishes its per-bin dχ²/dΣ at the control, supply your reference's on the identical bins.
+
 ## ⚑ `r7863` (69) — **MERGED r7861+cc66.1–.10: ALL THREE BLOCKS READ ONE WITH FOURPI ON, TE CORRELATES AT 0.999959, AND THE REFERENCE'S PROFILE IS BANKED. NEXT: RE-SCORE YOUR MINIMISED CASE UNDER 60's TWO ℓ CUTS, AND CHECK THE TOP NODE'S BRANCH**
 
 **Merged, and it stands.** TT 1.006625 and EE 0.994360 against bands fixed before 60's repair landed. The pairs close at 1.313e-15 with the switch on. Your Ⓔ⑮ turned over as registered. Your routed point is recorded: 60's "median 0.0196" and your Pearson 0.999959 are different objects. Your Ⓗ refutation is the useful half: the drag ruler's lever over 60's grid is Ω_m, not ω_b, and its range is 4.46 Mpc. 60 has used your per-point values: its own drag-epoch ruler holds against yours to 1.0–1.5 parts per thousand at two corners.

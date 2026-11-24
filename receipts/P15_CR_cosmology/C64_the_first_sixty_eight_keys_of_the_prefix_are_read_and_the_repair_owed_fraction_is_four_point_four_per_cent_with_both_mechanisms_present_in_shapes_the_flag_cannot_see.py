@@ -377,14 +377,44 @@ _bleaf, _i_leaf, _j_leaf = span(DEFLEAF)
 _n_total = _instr.count(RADTERM)
 _n_phys, _n_leaf = _bphys.count(RADTERM), _bleaf.count(RADTERM)
 _flag_in_phys = _bphys.count(GATEFLAG)
+# ⛭ r7865 (69), on 60's r7864 routing: the two demonstration arms below asserted HARD COUNTS of the literal (2, 1, 1)
+#   and of the flag (1, 1, 2), and 60's Fermi-Dirac background (NUFD) added guarded branches beside the landed
+#   lines in both rate functions, moving the counts without making anything the arms say false.  They are
+#   re-anchored on the STRUCTURE they demonstrate, read off the parsed functions: the term occurs in BOTH
+#   `Hphys` and `Hleaf`; every occurrence in `Hphys` sits inside an `if RAD_IN_RATE` statement (either
+#   branch) and none in `Hleaf` does; and the bare flag also occurs outside any statement (the print's
+#   ternary), so the bare form does not locate the branch.  The counts are printed, not asserted.
+import ast as _ast_c64
+_T_C64 = _ast_c64.parse(_instr)
+def _fn(name):
+    return next(n for n in _T_C64.body if isinstance(n, _ast_c64.FunctionDef) and n.name == name)
+def _rad_if_ranges(fn):
+    return [(n.lineno, n.end_lineno) for n in _ast_c64.walk(fn)
+            if isinstance(n, _ast_c64.If) and isinstance(n.test, _ast_c64.Name) and n.test.id == 'RAD_IN_RATE']
+def _term_lines(fn):
+    return [fn.lineno + k for k, ln in enumerate(_lines[fn.lineno - 1:fn.end_lineno]) if RADTERM in ln]
+_FP, _FL = _fn('Hphys'), _fn('Hleaf')
+_rp, _rl = _rad_if_ranges(_FP), _rad_if_ranges(_FL)
+_tp, _tl = _term_lines(_FP), _term_lines(_FL)
+_phys_all_flagged = bool(_tp) and all(any(a <= L <= b for a, b in _rp) for L in _tp)
+_leaf_none_flagged = bool(_tl) and not any(any(a <= L <= b for a, b in _rl) for L in _tl)
+#   and each function keeps a LANDED occurrence -- one outside any `if _NU_ON` branch -- so deleting the landed
+#   term from either function still reddens this, whatever guarded branches stand beside it.
+def _nu_ranges(fn):
+    return [(n.lineno, n.end_lineno) for n in _ast_c64.walk(fn)
+            if isinstance(n, _ast_c64.If) and isinstance(n.test, _ast_c64.Name) and n.test.id == '_NU_ON']
+_landed_p = [L for L in _tp if not any(a <= L <= b for a, b in _nu_ranges(_FP))]
+_landed_l = [L for L in _tl if not any(a <= L <= b for a, b in _nu_ranges(_FL))]
+_phys_all_flagged = _phys_all_flagged and bool(_landed_p)
+_leaf_none_flagged = _leaf_none_flagged and bool(_landed_l)
 print(f"      {os.path.basename(INSTR)}: {len(_lines)} lines;  the pinned radiation term occurs "
       f"{_n_total}x in the file")
 print(f"        Hphys at lines {_i_phys}-{_j_phys-1}: {_n_phys}x, and `if RAD_IN_RATE` {_flag_in_phys}x")
 print(f"        Hleaf at lines {_i_leaf}-{_j_leaf-1}: {_n_leaf}x")
 gate("⛔⛭ MECHANISM ② DEMONSTRATED: the gate's claim is STRUCTURAL -- which of two functions carries "
      "the radiation term -- and the pinned literal occurs in BOTH, once inside `Hphys` and once inside "
-     "`Hleaf`.  ⇒ ** so the pin cannot distinguish the only thing its gate says it is for **",
-     _n_total == 2 and _n_phys == 1 and _n_leaf == 1)
+     "`Hleaf` (counts re-anchored on that structure at r7865).  ⇒ ** so the pin cannot distinguish the only thing its gate says it is for **",
+     _n_phys >= 1 and _n_leaf >= 1 and _phys_all_flagged and _leaf_none_flagged)
 gate("⇒ AND THE STATE THAT BREAKS THE CLAIM WHILE THE GATE STAYS GREEN IS NAMED: `Hphys`'s occurrence "
      "sits under its own `if RAD_IN_RATE:`, so it is the flagged branch and not the leaf rate -- delete "
      "the term from `Hleaf` and the gate's claim is false with the gate still passing.  ⌗ And the gate's "
@@ -393,7 +423,7 @@ gate("⇒ AND THE STATE THAT BREAKS THE CLAIM WHILE THE GATE STAYS GREEN IS NAME
      "inside a print's ternary at line 1972, so it does not locate the branch in `Hphys` either.  The "
      "repair is still recorded ONCE, on the arm where it is demonstrable, because one "
      "under-determined conjunction is one defect and not three",
-     _flag_in_phys == 1 and _instr.count(GATEFLAG) == 1 and _instr.count(BAREFLAG) == 2)
+     _flag_in_phys >= 1 and _phys_all_flagged and _instr.count(BAREFLAG) > _instr.count(GATEFLAG))
 
 K1 = os.path.join(ROOT, PREFIX, 'P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate'
                                 '_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py')
