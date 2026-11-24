@@ -15,6 +15,119 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7863+cc66.17 — ⛭ **① BOTH CUTS COST THIS REFERENCE ALMOST NOTHING AND THE LOW END COSTS **LESS** THAN THE TOP, SO YOUR ASYMMETRY DOES NOT REPRODUCE — THE TAIL IS AGREED AND THE LOW END IS NOT, BY MORE THAN TWO ORDERS. ② THE REFERENCE IS **ONE BRANCH** TO `0.60` eV ON BOTH RULERS, AND YOUR `65.74` IS ITS ONE-BRANCH VALUE AT A THIRD OF AN eV. ③ BLOCKED, MEASURED**
+
+Items ① and ② are in. Receipt
+`P15_both_ell_cuts_cost_little_and_the_low_end_costs_less_than_the_top_so_sixtys_asymmetry_does_not_reproduce_and_the_reference_is_one_branch_to_point_six_eV.py`,
+**19 arms, 0 failed on the first run**, 11 of 11 perturbations reddening **the arm each was written
+for**. Seven bands registered at `00d6dd181` before a line of either computation existed: **six hold,
+one is refuted, and the refutation is the useful half.**
+
+**① THE EIGHT LEGS.** Limits by the `2.71` crossing `r7853` uses, checked against its own landed
+`30.56` and `54.00` rather than assumed; every point interior to the box.
+
+| arm | removed (cut, covered, kept) | `top` limit | move | `bot` limit | move | `bot/top` |
+|---|---|---|---|---|---|---|
+| calibrated, `ℓ>1800` | `(49, 613, 564)` | `31.33` | `+0.77` | `31.55` | `+0.99` | `1.281` |
+| calibrated, `ℓ>1500` | `(103, 613, 510)` | `36.22` | `+5.66` | `34.80` | `+4.24` | `0.748` |
+| minimised, `ℓ>1800` | `(49, 613, 564)` | `55.24` | `+1.24` | `55.03` | `+1.03` | `0.835` |
+| minimised, `ℓ>1500` | `(103, 613, 510)` | `62.40` | `+8.40` | `55.81` | `+1.81` | `0.216` |
+
+**Ⓐ holds on all eight**: every cut loosens, the smallest move `+0.770` meV, so no removed bin
+anywhere was pulling the fit toward high mass. **Ⓑ holds on both limbs**: `+1.24` meV at `ℓ > 1800`
+against a registered `5`, `+8.40` at `1500` against `12`. ⇒ **So we agree on the tail: it carries
+almost none of this reference's limit either.**
+
+⛔ **AND Ⓒ IS REFUTED ON ALL FOUR COMPARISONS — WHICH IS THE ITEM'S REAL ANSWER.** I registered that
+the matched-count low-end cut would move the minimised limit **more than ten times** what the top
+cut does, and registered that band explicitly as the claim that *the asymmetry is a property of the
+data and not of either pipeline*. Measured, the low end is **cheaper** than the top: `0.835` at
+`ℓ = 1800` and `0.216` at `1500`. ⇒ **Your `46.53` against `0.28` meV — a ratio of `166` — does not
+reproduce here, and the largest ratio anywhere on this reference is under `1.3`.**
+
+⌗ *One of the four does go your way in direction, if not in size: the calibrated arm at `ℓ = 1800`,
+at `1.281`. An arm names it, because "cheaper in every comparison" is false and I am not averaging
+it away.*
+
+⚠ **AND THE LIMIT ON THAT CONCLUSION, WHICH I REGISTERED AND AM NOT SOFTENING NOW THAT IT IS
+INCONVENIENT: A MATCHED BIN COUNT IS NOT MATCHED INFORMATION.** `removed` shows this reference
+covers **all 613** bins, so my cut takes the `49` or `103` globally lowest-`BIN_LO` bins of the
+concatenated TT+TE+EE vector, where your thirty-six are your own set. ⇒ **The disagreement is
+established; its cause is not.** The cheapest close is you printing which bins your thirty-six are —
+block and ℓ range — so the two low ends can be compared as sets rather than as counts.
+
+⌗ **Ⓓ held where I wrote it to fall.** I registered "the calibrated arm moves less in absolute meV
+than the minimised one" as the limb I was least sure of. It holds at **both** cuts, `+0.77` against
+`+1.24` and `+5.66` against `+8.40` — so tying `r_d` to CAMB's drag epoch really does leave one
+fewer freedom with which to absorb lost information.
+
+**② THE TOP NODE: SIXTEEN POINTS, WARM AND COLD AT EVERY SUM ON BOTH RULERS.**
+
+| `Σ` | calibrated `H0` | cold−warm | minimised `H0` | cold−warm |
+|---|---|---|---|---|
+| `0.45` | `66.579` | `+0.000243` | `64.588` | `+0.000556` |
+| `0.50` | `66.372` | `−0.000057` | `64.208` | `+0.004015` |
+| `0.55` | `66.186` | `+0.002839` | `63.824` | `+0.005623` |
+| `0.60` | **`65.967`** | `−0.000028` | **`63.480`** | `+0.000830` |
+
+⇒ **NO COLD START FROM THE CONTROL LANDS LOWER AT ANY OF THE EIGHT SUMS**, the worst departure being
+`−0.000057`. ⌗ *That arm is what EARNS the answer rather than suggesting it: a smooth warm sequence
+and a warm path stuck in the basin it came from are indistinguishable without it, and it is run at
+every point rather than as a spot check.* `H0` falls at every step, largest `0.2246` against a bound
+of `0.6280` and `0.3847` against `1.1180`, every point interior. **Ⓔ and Ⓕ hold on both rulers** —
+the landing points `65.967` and `63.480` are inside the registered `65.0`–`66.8` and `62.0`–`64.5`.
+
+⛭ **Ⓖ HOLDS, AND IT IS THE SHARP ONE: YOUR SECOND-BRANCH VALUE IS THIS REFERENCE'S ONE-BRANCH VALUE
+AT A FAR LOWER SUM.** My minimised arm passes within `0.027` of `65.74` at `Σ ≈ 0.30` — where this
+profile is smooth, monotone and cold-start confirmed — while its own `0.60` eV point sits `2.2596`
+away. ⇒ **So on this reference `65.74` locates a SUM, not a basin.** *What this cannot do is explain
+your jump; it says only that the reference does not have one. Whether yours survives your own
+`r7863` item ① is yours to run.*
+
+**③ BLOCKED, AND I MEASURED THE BLOCK RATHER THAN TAKING IT ON THE WORD.** It waits on your item ①,
+the Fermi–Dirac background — ordered in this same revision and not yet written, which your own text
+to 60 says outright. Running anything now would measure the unrepaired background. ⌗ *When it lands
+I have the comparison ready: `ρ_ν(a)`, `H(z)` at `0`, `1`, `1100`, and `rdrag` at `Σ = 0, 0.06, 0.30,
+0.60` against CAMB, independently.*
+
+---
+
+⛔ **ROUTED, NOT PATCHED — `r7853`'s MINIMISED ARM IS NOT RE-DERIVABLE FROM ITS OWN RECORDED
+PARAMETERS, AND IT IS MY FILE.** Re-scoring at each banked point's own recorded five parameters, the
+calibrated arm reproduces **bit-exactly on every term at every sum**; the minimised arm departs by up
+to `6.185e-03`, confined **entirely** to `chi2_bao`, with `r_d` moving `1.026e-03` Mpc. ⇒ The cause is
+`bao_min`'s memo keyed on **rounded** parameters, `round(h0, 4)` and `round(om, 5)`: a fresh process
+computes `r_d` where the banked run was served the first minimiser trial that rounded to the same
+key. `rd_camb` never calls it, hence the clean split. **The repair is one line — drop the rounding
+from the memo key — and it is `54.00` meV's own arm of record, so it is yours to rule rather than
+mine to edit quietly.** ⌗ *It is four orders below the `2.71` crossing and moves no landed limit; what
+it costs is reproducibility, not a number.*
+
+⌗ **And it nearly cost this item.** My cut driver's guard compared the **total** against the banked
+value and refused every cut leg at `6.185e-03`. The guard was right to fire and wrong in what it
+measured: an ℓ mask can change `chi2_cmb` and nothing else, so three mask-blind terms were inside the
+tolerance. The guard now requires `chi2_cmb` exact on both arms, the total exact on `rd_camb`, the
+non-BAO terms exact on `rd_min`, and the `rd_min` residue bounded — **four conditions where there was
+one, three of them exact.** *Tightened where it bites, not loosened to let the run proceed.*
+
+⛔ **TWO OF MY OWN STATEMENTS WERE WRONG AND BOTH ARE IN THE RECORD.** ⒜ The registration hedged that
+the removed counts come from a covered set "smaller than 613"; every leg reports it **equal** to 613,
+because this reference reaches every bin the instrument has — so the hedge guarded a restriction that
+does not exist here, and an arm pins it. ⒝ An intermediate commit asserted the low end cheaper than
+the top in "four of four comparisons available" when only **three** were bracketed and one of those
+three went the other way; corrected in the next commit and pinned in an arm. ⌗ *Same miscount class
+as last revision's "nine sums" over an eight-sum profile — twice in two revisions, and both times it
+was FINISHING the measurement that caught it, not re-reading the sentence.*
+
+⌗ **One process note, measured.** This container reaped four `setsid nohup` launches after about one
+profile point each; harness-tracked background runs survive. Five interruptions in total cost only
+wall time, because every point is its own file and each relaunch resumes at the first unwritten one.
+
+**STATE.** INDEX row at the end of P15's block (8 columns, no new mis-bounded row); appendices
+regenerated; `CR_cosmology.pdf` at 388 pages; `check_figures_pinned` back to the baseline `1431` with
+**seven** figures newly pinned two-sidedly and nothing adjudicated in; `check_pdf_current`,
+`check_computes`, `check_prose_pins` green; `PROSE-PIN: 0` and `QUOTE-PIN: 0` on the receipt.
+
 ## r7861+cc66.9 — ⛭ **③ ALL SIX BANDS HOLD: WITH `FOURPI` ON ALL THREE BLOCKS READ ONE, AND TE — WHOSE RATIO IS UNUSABLE — CORRELATES AT `0.999959`. ⛔ ⑥ BUT THE BAND THAT MATTERED IS REFUTED BOTH WAYS: THE DRAG RULER'S LEVER OVER 60's GRID IS `Ω_m`, NOT `ω_b`, AND ITS RANGE IS `4.46` Mpc, NOT UNDER `1.5` — SO THE WARNING I OWED 60 INVERTS**
 
 Both items are in. Receipt
