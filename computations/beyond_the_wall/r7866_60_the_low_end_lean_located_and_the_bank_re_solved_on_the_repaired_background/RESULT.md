@@ -1,5 +1,5 @@
 # `r7866` (60), on order `r7865` ①–④ — **THE ORDER'S FORTY-FOLD WAS A RATIO BETWEEN TWO DIFFERENT
-REMOVALS; ON THE SAME BINS IT IS A HUNDRED AND SIXTY-SEVEN, AND THE BANK RE-SOLVED ON THE REPAIRED
+REMOVALS; ON THE SAME BINS IT IS A HUNDRED AND SIXTY-TWO, AND THE BANK RE-SOLVED ON THE REPAIRED
 BACKGROUND GIVES NO READABLE MINIMISED LIMIT**
 
 ⚠ **Two registered criteria FAIL and are reported as failed with the criteria unmoved, one
@@ -74,7 +74,7 @@ the same quantity. So the comparison was re-taken with **both columns on one clo
 | the reference, `rd_camb` | `16.16` | `16.28` | **`−0.12` meV** |
 
 ⇒ **On identical bins and on the reference's own treatment of the parameters, the instrument
-moves `167` times the reference. With its own parameters re-profiled, `389`.** The asymmetry
+moves `162` times the reference. With its own parameters re-profiled, `389`.** The asymmetry
 control was run before anything was read into the result: the parameter freedom accounts for
 `28.11` meV of the move and leaves two orders of magnitude standing, **so the asymmetry is not the
 cause.**
@@ -144,6 +144,10 @@ is a third grid with the repair on and `DNEFF` unset, and it is routed rather th
    and the verdict re-taken on one clock.
 3. **The first prose pin of this revision's own instrument reading was slack by three** — a ceiling
    of six where the measurement is three. Tightened to the measurement before it was adjudicated.
+   **And the ratio above was first written `167`, from this seat's own arithmetic on the ROUNDED
+   move — `20.09 / 0.12`, where the reference's move is `−0.1238`. The measured ratio is `162.28`,
+   and the receipt's own pin refusing the rounded figure is what caught it. That is what a pin is
+   for.**
 4. ⛔⛭ **A DIAGNOSIS THIS SEAT MADE MID-REVISION WAS REFUTED BY THE MEASUREMENT IT PROVOKED.** The
    first re-solve covered the CMB bank only, and the limits came back unreadable. This seat read
    the declared scope limit as load-bearing — *two terms of one likelihood on different

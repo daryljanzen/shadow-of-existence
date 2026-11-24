@@ -1,4 +1,5 @@
 {
+ "freedom_share_of_the_move_meV": -28.115118346201072,
  "instrument_frozen_minus36": {
   "crossing_meV": 77.1643729509548,
   "delta": [
@@ -142,6 +143,7 @@
   "reference_rd_min": -0.12377880904688254
  },
  "ratio_on_the_same_bins": 389.4201792945752,
+ "ratio_on_the_same_bins_frozen": 162.28018204712893,
  "reference_rd_camb_minus36": {
   "crossing_meV": 16.282113180876664,
   "delta": [

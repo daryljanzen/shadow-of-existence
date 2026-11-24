@@ -29287,3 +29287,138 @@ with the hand still in it. The repaired form is a census that names the PROPERTY
 (a `LEAFGEOM=1` bank ON THE ONE RATE) rather than the absence of a configuration, and then no
 arrival off the one rate reaches it at all. That is a widening of the row and not a weakening,
 and it is yours to take or refuse.*
+
+
+---
+
+# ⇒ `r7866` (60) ON ORDER `r7865` — **THE FORTY-FOLD WAS A RATIO BETWEEN TWO DIFFERENT REMOVALS. ON THE SAME BINS IT IS `162`. AND THE RE-SOLVED BANK GIVES NO READABLE MINIMISED LIMIT**
+
+Your four routed patches are applied and all green — thank you for taking the census reservation
+as stated, and for the `C64` re-anchor on structure rather than on arithmetic.
+
+## ⭕ ① The thirty-six, named — and the comparison your lead rested on was never on one set
+
+This line’s thirty-six are the **twelve lowest bandpowers of EACH block, every one between
+multipoles `100` and `207`**, because that is where this instrument’s score begins. Checked
+against `tail_control.narrow_low`’s own three figures, which it matches.
+
+Your forty-nine, reproduced from `cut_rescore`’s own rule and matching its recorded count exactly
+(`49` of `613` leaving `564`), lie between `30` and `126`, split `17/16/16`.
+
+⚠ **My registered expectation was that they would come from FEWER than three blocks. They come
+from all three. That is REFUTED and reported as refuted.** But the sets differ for a stronger
+reason:
+
+| | |
+|---|---|
+| in both | **`7`** bins |
+| this line’s only | `29` (multipoles `118–207`) |
+| yours only | `42` (multipoles `30–99`) |
+| bins you cover and this instrument does not | `58`, of which `42` sit below multipole `100` |
+
+⇒ **Forty-two of your forty-nine are bins this instrument does not have, and your low cut leaves
+standing almost exactly the band mine removes.** So `46.53` against `1.03` was a ratio between two
+different removals, and the comparable number did not exist.
+
+## ⭕ ② It exists now, and the lean is real: `162` on identical bins
+
+Both columns on the instrument’s own `555` bins, same Fisher, same data, only the spectra
+differing; the move of the `2.71` crossing is the comparable quantity, not either absolute.
+
+| | whole | minus the same thirty-six | move |
+|---|---|---|---|
+| this instrument, parameters held as yours are | `57.08` | `77.16` | **`-20.09` meV** |
+| this instrument, its own four re-profiled | `68.13` | `116.34` | **`-48.20` meV** |
+| your reference, `rd_min` | `16.16` | `16.28` | **`-0.12` meV** |
+
+⇒ **`162` times on your own treatment of the parameters, `389` with mine re-profiled.** The
+asymmetry control was run BEFORE anything was read into that: the parameter freedom carries
+`28.11` meV of the move and leaves two orders of magnitude standing.
+
+**Ⓑ②ᵉ the high-end control HOLDS**: the same count off the TOP moves it `+1.52` meV against the low
+end’s `-20.09`. Had both ends moved it alike I would have reported ② as not located.
+
+### Your three candidates, each tested so it could come back NO
+
+1. **The reionisation bump against the `tau` prior — NO, structurally.** The function whose
+   crossing moved carries no `tau` at all. `tau` enters the joint score through the lensing half,
+   and the lensing half does not reach this crossing — measured, not argued; see the refuted
+   diagnosis below, which is how I know.
+2. **The late ISW — attempted and UNREADABLE on this mask.** Thirteen TT bandpowers below the
+   first peak, no crossing readable on them. Neither confirmed nor refuted: a fact about the mask
+   ① named, not a result about the ISW.
+3. **The lensing-amplitude handover — PARTLY, measured.** With the amplitude FIXED instead of
+   solved the move is `-13.52` against `-20.09`: the amplitude carries `33` per cent and **`67` per
+   cent survives it.** A contributor, not the mechanism.
+
+⇒ So the lean is LOCATED (multipoles `100–207`, `162`-fold, control held) and the mechanism is
+**not yet named**. I am not offering a guess for it.
+
+## ⭕ ③ The bank re-solved — and two registered criteria FAIL
+
+Thirty-two CMB points and thirty-two lensing points, every one `rc=0`, your `DNEFF` ruling on the
+**control only** with the arm of record carrying none, all in each point’s own recorded config.
+`r7864`’s precondition now runs the other way: the key is present at every point, `true` at every
+nonzero sum and `false` at the zero-sum node — **the truthful record, since the repair is
+conditioned on a nonzero sum and at zero mass the two backgrounds are one program.**
+
+| | landed bank (`r7864`) | re-solved bank | yours |
+|---|---|---|---|
+| minimised | `69.97` meV | ⛔ **NOT READABLE** | `54.00` |
+| calibrated | `81.94` meV | `185.69` meV | `30.56` |
+
+The minimised profile stops being monotonic above its minimum at the top node (`35.71` at `0.50`
+eV falling to `32.57` at `0.60`), so `r7860`’s convergence discipline reports no limit, as it is
+built to. Both profiles now put their minimum at `Sigma = 0.06` eV.
+
+⛔ **My registered expectation that the minimised limit moves TOWARDS `54.00` is REFUTED —
+there is none to move — and my registered band of `8` meV FAILS. Both reported with the criteria
+unmoved.**
+
+## ⭕ THE FORK, and this seat’s recommendation attached
+
+**The re-solve changed TWO things at once: the repaired background, and your `N_eff` ruling on the
+control.** At zero sum the switch is inert, so the `7.6e-03` the TT spectra move there is the
+`N_eff` ruling alone — but **the sum-dependence cannot be attributed between the two from this
+bank**, and the limits above are the joint effect.
+
+- **Branch A — the repair carries it.** Then the unreadable minimised limit is the physics of the
+  Fermi–Dirac background meeting this instrument’s low-`ell` lean, and ② and ③
+  are one finding.
+- **Branch B — the `N_eff` ruling carries it.** Then the limits moved because the control’s
+  spectra were shifted to match your `3.0293`, and the lean of ② is a separate matter.
+
+**What is verified either way:** the bank is re-solved and says so at every node; the ruling is
+obeyed and visible; the limits are read through the same scoring path `r7864` used, so the change
+is the spectra and not the method; and the lensing half does not enter these limits at all.
+
+⭕ **My recommendation: one more grid, the repair ON with `DNEFF` UNSET, thirty-two points.** It
+is about seven hours of instrument time and it separates the branches cleanly. I did not start it
+in this revision because ③ as you wrote it is answered and because I would rather you rule on
+whether the separation is worth that grid than spend it and tell you afterwards. **If you say run
+it, it is the next revision’s first item.**
+
+## ⚠ FOUR THINGS IN THIS RECORD ARE MINE, AND ONE IS A DIAGNOSIS I REFUTED MID-REVISION
+
+1. The registration asked your reconstruction to reproduce your banked `dchi2` — a five-parameter
+   profile difference where mine is a frozen derivative. Two different objects. Recorded, criterion
+   unmoved; the reproduction that IS of your object is your `chi2_cmb`, matched to `1.3e-08`.
+2. The first cut of ②’s band comparison put an EXACT derivative against a finite difference.
+   On this instrument’s own numbers those differ by a factor of four. Caught before it was
+   reported; re-taken on one clock, and the verdict survived the change — which is what makes it
+   content.
+3. A prose pin of mine was slack by three (a ceiling of six where the measurement is three),
+   tightened to the measurement before it was adjudicated. **And the headline ratio was first
+   written `167`, from my own arithmetic on the ROUNDED move `20.09 / 0.12` where yours is
+   `-0.1238`. The measurement is `162.28`, and my own receipt’s pin refused the rounded figure.
+   That is what a pin is for.**
+4. ⛔⛭ **The costly one.** The first re-solve covered the CMB bank only, and the limits came
+   back unreadable. I read the declared scope limit as LOAD-BEARING — two terms of one likelihood
+   on different backgrounds — and spent the whole lensing grid re-solve on it. **It changed
+   nothing: every profile total bit-identical to four decimals across eleven nodes and both legs,
+   while the lensing shape the model reads differs by up to `4.5` per cent at the same sum.** The
+   run now records which grids its own model holds, and it holds the re-solved ones.
+   ⇒ *So the hedge was never load-bearing, the unreadable limit is the CMB bank’s own result,
+   and the refutation is what rules out your candidate ⓵. I am keeping it as refuted rather than
+   quietly dropping it, because the two hours bought the one thing in ② I could not otherwise
+   have said.*
