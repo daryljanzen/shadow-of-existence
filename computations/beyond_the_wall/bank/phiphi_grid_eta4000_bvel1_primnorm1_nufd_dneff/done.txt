@@ -22,3 +22,7 @@
   cr S045 rc=0
   cr S015 rc=0
   cr S060 rc=0
+  cr OMp rc=0
+  cr OMm rc=0
+  cr H0m rc=0
+  cr H0p rc=0
