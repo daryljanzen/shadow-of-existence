@@ -1,0 +1,85 @@
+{
+ "Ⓐ② a leg made to TIGHTEN its limit": {
+  "rc": 1,
+  "reddened": [
+   "Ⓐ② ** Ⓐ HOLDS ON A"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓑ④ the top-1800 cost pushed past its bound": {
+  "rc": 1,
+  "reddened": [
+   "Ⓑ④ ** Ⓑ HOLDS ON I"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓒ⑥ the first ratio raised above ten": {
+  "rc": 1,
+  "reddened": [
+   "Ⓒ⑥ ⛔ ** Ⓒ IS REFUT",
+   "Ⓒ⑧ ⌗ AND THE ONE C",
+   "Ⓒ⑨ ⇒ ** AND EVERY "
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓒ⑦ the second ratio raised above ten": {
+  "rc": 1,
+  "reddened": [
+   "Ⓒ⑦ ⛔ ** and the se",
+   "Ⓒ⑧ ⌗ AND THE ONE C",
+   "Ⓒ⑨ ⇒ ** AND EVERY "
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓒ⑧ the one ratio above one brought below it": {
+  "rc": 1,
+  "reddened": [
+   "Ⓒ⑧ ⌗ AND THE ONE C"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓓ⑩ the calibrated arm made to move MORE than the minimised": {
+  "rc": 1,
+  "reddened": [
+   "Ⓓ⑩ ** Ⓓ HOLDS ON B",
+   "Ⓓ⑪ ⌗ and the effec"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓔ⑫ a cold start made to land lower": {
+  "rc": 1,
+  "reddened": [
+   "Ⓔ⑫ ** NO COLD STAR"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓔ⑬ a step made to exceed the three-times-mean bound": {
+  "rc": 1,
+  "reddened": [
+   "Ⓔ⑬ ** Ⓔ HOLDS ON B"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓕ⑭ the calibrated landing point moved outside its interval": {
+  "rc": 1,
+  "reddened": [
+   "Ⓕ⑭ ** Ⓕ HOLDS ON B"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓖ⑮ the minimised landing point moved onto the other pipeline's value": {
+  "rc": 1,
+  "reddened": [
+   "Ⓕ⑭ ** Ⓕ HOLDS ON B",
+   "Ⓖ⑮ ⛭ ** Ⓖ HOLDS, A"
+  ],
+  "intended_arm_reddened": true
+ },
+ "Ⓗ⑰ the covered-bin figure changed": {
+  "rc": 1,
+  "reddened": [
+   "Ⓗ⑰ ⛔ ** AND THE RE"
+  ],
+  "intended_arm_reddened": true
+ }
+}
