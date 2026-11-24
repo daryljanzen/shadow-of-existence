@@ -29288,6 +29288,31 @@ with the hand still in it. The repaired form is a census that names the PROPERTY
 arrival off the one rate reaches it at all. That is a widening of the row and not a weakening,
 and it is yours to take or refuse.*
 
+### ⚠ ADDENDUM, `r7867` — **THE LIST GREW BY HAND ONCE MORE WITHIN THE SAME REVISION, SO THERE ARE NOW TWO DIRECTORIES TO NAME AND NOT ONE**
+
+Your `r7867` corrects the control's `N_eff` offset to `+0.044`, and the re-read it asks for needs a
+SECOND bank keyed to that figure. The arm of record carries no such offset under either figure, so
+its sixteen points are CARRIED into the new directory rather than re-run — which means sixteen more
+`LEAFGEOM=1` `cr` banks exist on this head, in a directory that did not exist when the row above was
+written. **The patch as routed above is therefore INCOMPLETE: applying it leaves the census red on
+the fourth directory.** Both rows are needed, so here is the second in the same form.
+
+| | |
+|---|---|
+| directory | `computations/beyond_the_wall/bank/pol_grid_bvel1_nufd_dneff044` |
+| what made it | `r7867`'s correction to the control's `N_eff` offset, re-read on the same point list |
+| its `cr` basenames | `cr_H0m` `cr_H0p` `cr_NSm` `cr_NSp` `cr_OMm` `cr_OMp` `cr_S000` `cr_S006` `cr_S015` `cr_S030` `cr_S045` `cr_S060` `cr_Sm06` `cr_Sm12` `cr_WBm` `cr_WBp` (`.npz`, each with its `_tt.npz`) |
+| how they got there | COPIED from `pol_grid_bvel1_nufd`'s arm of record, not solved again: the two generators' arm-of-record invocations are byte-identical and the carried points' own configs read `DNEFF: null`, so the copy is exact and not an approximation |
+| why it is NOT on the one rate | same as above — it is the neutrino-sum grid on the repaired background, and the one rate is a different arm |
+
+⌗ *I am not re-stating the recommendation, but I will say what this addendum is evidence of, since it
+is evidence against my own convenience and not for it: the row above argued that a census whose
+clause has to be extended by hand on every arrival is a reading with the hand still in it, and
+offered the property-shaped form as a widening. ONE order later, and still inside the same revision,
+the hand went in again — not because a defect appeared but because a correction to a control's
+background produced a directory. The second row costs you nothing to apply and the fourth arrival
+will cost the same again. **That is the whole argument, now with a measurement of its own rate.***
+
 
 ---
 
