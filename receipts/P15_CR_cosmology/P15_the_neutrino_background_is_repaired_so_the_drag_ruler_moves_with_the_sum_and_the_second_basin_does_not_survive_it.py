@@ -316,9 +316,10 @@ check('Ⓔ⑤ the record carries its five own defects rather than only its resul
       'expected the wrong number, and the gate written one revision ago that would have reddened on '
       'its successor OBEYING AN ORDER -- all five in RESULT.md, and all five this seat\'s own',
       'five things in this record are this seat' in RESULT.lower()
-      and 'silently zeroed the subtraction' in RESULT.lower()
+      and ('a forward declaration ran after the block that binds it and silently zeroed the '
+           'subtraction') in RESULT.lower()
       and 'stopped being inert exactly where it must be' in RESULT.lower()
-      and 'is not the identity in' in RESULT.lower()
+      and 'the switch did not require a nonzero mass' in RESULT.lower()
       and 'expected the wrong number' in RESULT.lower()
       and 'would have reddened on its successor obeying an' in RESULT.lower(),
       'five named in the result document')
