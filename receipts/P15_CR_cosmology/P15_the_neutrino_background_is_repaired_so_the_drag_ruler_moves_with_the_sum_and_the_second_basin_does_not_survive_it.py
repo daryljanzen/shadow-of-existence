@@ -213,7 +213,7 @@ check('Ⓑ②ᵃ ⛔ and ONE ITEM OF THE ORDER\'S LIST IS NAMED RATHER THAN SILE
       'key records the ENVIRONMENT the run was made in and is labelled as such, because a config '
       'claiming to resolve a switch it never reads would be the vacuous form this corpus keeps '
       'catching',
-      'THIS FILE DOES NOT READ IT' in INST
+      ("THE INSTRUMENT DOES NOT READ THE LENSING PATH'S PRIMORDIAL NORMALISATION") in INST
       and 'PRIMNORM_env' in INST
       and INST.count('PRIMNORM') == 3
       and 'this instrument does not\nread `primnorm` at all'.replace('\n', ' ') in RESULT.lower(),

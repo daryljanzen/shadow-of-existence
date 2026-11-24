@@ -990,11 +990,15 @@ _SWITCH_SNAPSHOT = {
     'MNU': float(MNU),
     'FOURPI': bool(FOURPI),
     #   ⛔⛭ *and `PRIMNORM` is the one the order's list got slightly wrong, which is worth saying
-    #     rather than quietly fixing: THIS FILE DOES NOT READ IT.  It is the lensing path's
-    #     primordial normalisation, read where that path is generated, and a `grep` of this
-    #     instrument finds it nowhere.  ⇒ So the key here records the ENVIRONMENT the run was made
-    #     in and not a switch this instrument resolves, and it is labelled as such -- a config that
-    #     claimed to resolve a switch it never reads would be the vacuous form again.*
+    #     rather than quietly fixing:
+    #     THE INSTRUMENT DOES NOT READ THE LENSING PATH'S PRIMORDIAL NORMALISATION.
+    #     It is read where that path is generated, and a `grep` of this instrument finds it
+    #     nowhere.  ⇒ So the key here records the ENVIRONMENT the run was made in and not a
+    #     switch this instrument resolves, and it is labelled as such -- a config that claimed to
+    #     resolve a switch it never reads would be the vacuous form again.
+    #   ⌗ The sentence above names its own object on one line on purpose: the receipt that
+    #     asserts it was pinning `THIS FILE DOES NOT READ IT`, whose object was a pronoun, and the
+    #     repair the corpus's subject rule prescribes is the clause that names it.*
     'PRIMNORM_env': os.environ.get('PRIMNORM'),
     'NUFD': bool(NUFD),
     'instrument': 'ACOUSTIC_two_arm.py',
