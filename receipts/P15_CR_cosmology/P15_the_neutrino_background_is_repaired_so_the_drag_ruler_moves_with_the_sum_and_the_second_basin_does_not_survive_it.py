@@ -236,6 +236,11 @@ check('Ⓒ③ᵃ ** WHAT THESE LIMITS CAN BE READ ON IS PROVED FROM THE BANK\'S 
       '%d CMB points, %d lensing, and the bank cannot state its background'
       % (_P['cmb_points'], _P['lensing_points_lcdm']))
 
+_MI, _CA = L['profiles']['minimised'], L['profiles']['calibrated']
+#: the threshold the limit was read at, solved back out of the profile's own recorded nodes
+_s, _d, _lm = _MI['sums'], _MI['delta'], _MI['limit_meV'] / 1000.0
+_k = min(k for k in range(1, len(_s)) if _s[k] >= _lm)
+_THRESH = _d[_k - 1] + (_lm - _s[_k - 1]) * (_d[_k] - _d[_k - 1]) / (_s[_k] - _s[_k - 1])
 _G = L['ruler_gap']
 check('Ⓒ③ᵇ ** THE REPAIR CLOSES MOST OF THE RULER DISAGREEMENT, AND BELOW THE THRESHOLD THAT MADE '
       'THE SECOND TREATMENT NECESSARY. **  At Sum = 0.60 eV the two rulers now differ by %.4f in '
@@ -244,10 +249,14 @@ check('Ⓒ③ᵇ ** THE REPAIR CLOSES MOST OF THE RULER DISAGREEMENT, AND BELOW 
       _G['closed'] is True
       and abs(_G['dchi2_at_top'] - 2.1989) < 1.0e-03
       and _G['dchi2_at_top_before'] == 14.5415
-      and _G['dchi2_at_top'] < 2.71,
-      '%.4f against 14.5415, and below 2.71' % _G['dchi2_at_top'])
+      and _G['dchi2_at_top'] < _THRESH
+      # ⌗ *and the threshold itself is PINNED, recovered from the profile the run stored rather
+      #   than taken from a sentence: the crossing the limit is read at is solved back out of the
+      #   recorded sums and deltas, and it has to come to the number the limit was read at.*
+      and abs(_THRESH - 2.71) < 4.0e-03,
+      '%.4f against 14.5415, and below the %.4f the limit is read at'
+      % (_G['dchi2_at_top'], _THRESH))
 
-_MI, _CA = L['profiles']['minimised'], L['profiles']['calibrated']
 check('Ⓒ③ᶜ BOTH LIMITS, each with the treatment named beside it: %.2f meV with the ruler minimised '
       'against the reference\'s 54.00, and %.2f meV calibrated on this instrument\'s OWN REPAIRED '
       'drag epoch against the ordered 30.56.  Both minima at 0.000 eV, both profiles monotonic '
@@ -271,7 +280,14 @@ check('Ⓒ③ᵈ ⛔ ** THE REGISTERED EXPECTATION FAILS. **  It was registered 
       'Reported as refuted with the criterion exactly as registered'
       % (_AD['gap_to_r7862_on_reference'], _CA['limit_meV']),
       _AD['held'] is False and _AD['within'] == 4.0
-      and abs(_AD['gap_to_r7862_on_reference'] - 7.97) < 1.0e-02
+      and abs(_AD['gap_to_r7862_on_reference'] - 7.97) < 4.0e-03
+      # ⌗ *the figure this gap is taken against is PINNED too, from the two numbers the run itself
+      #   stored rather than from the sentence that quotes it: the limit plus the gap is r7862's
+      #   own reading on the reference's ruler.*
+      and abs(_CA['limit_meV'] + _AD['gap_to_r7862_on_reference'] - 89.91) < 4.0e-02
+      # ⌗ *and the two ordered figures are pinned off the record the run wrote, not off prose.*
+      and abs(_AD['reference_calibrated'] - 30.56) < 1.0e-02
+      and abs(_AD['reference_minimised'] - 54.00) < 2.0e-02
       and 'lands within `4` meV of the `89.91` meV' in PRED
       and 'the registered expectation fails' in RESULT.lower(),
       'the gap is %.2f meV against the 4 registered' % _AD['gap_to_r7862_on_reference'])
