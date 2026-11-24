@@ -199,6 +199,16 @@
    }
   },
   "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45470605169",
+    "since": "c31ff016e51dc1f60c2c30dbbd8893a1859028df",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45470605169",
+    "since": "c31ff016e51dc1f60c2c30dbbd8893a1859028df",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_298_5_not_298_94.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45450441655",
     "since": "da378ad5894c07bf7faea563a9d4ca4f5001d83b"
