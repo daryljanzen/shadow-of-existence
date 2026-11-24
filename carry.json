@@ -137,13 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45287654510",
-    "since": "8c4553c448fcf7f384d88f7f1c762043f3b4ed14"
-   }
-  },
   "tolerance": {
    "receipts/L147_two_arm/B8_the_zero_velocity_band_is_a_third_of_the_gap.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45397216259",
