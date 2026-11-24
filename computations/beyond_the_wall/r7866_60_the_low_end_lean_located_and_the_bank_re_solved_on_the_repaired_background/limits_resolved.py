@@ -13,11 +13,14 @@ convergence discipline -- imported rather than retyped, with one thing changed: 
 reads.  So a difference between this file's numbers and `r7864`'s is the SPECTRA and not the
 method.*
 
-⚠ ** A SCOPE LIMIT, DECLARED RATHER THAN DISCOVERED BY A READER: the CMB bandpower bank is
-re-solved and the LENSING-POTENTIAL bank is not. ** The lensing grid was solved on the old
-background and this revision does not re-solve it, so the lensing term in both limits still rides
-spectra from before the repair.  That is named here and in the record, and it bounds what these
-two numbers are.
+⚠ ** THE SCOPE LIMIT THIS FILE CARRIED, AND WHY IT IS GONE. ** Its first cut re-solved the CMB
+bandpower bank and DECLARED that the lensing-potential bank was not re-solved.  That read returned
+no readable minimised limit -- the profile stopped being monotonic above its minimum at the top
+node -- and a calibrated `185.69` meV against `r7864`'s `81.94`.  ⇒ The declaration was not
+enough, because the hedge was LOAD-BEARING: two terms of one likelihood were on different
+backgrounds.  Both grids are re-solved now, thirty-two points each, and both environment keys are
+set below.  *The half-and-half numbers are kept in the record as what they were -- the measurement
+that found the hedge -- and are not carried as results.*
 
     NODE=60 python3 limits_resolved.py
 """
@@ -35,9 +38,13 @@ R7864 = os.path.join(_BTW, 'r7864_60_the_massive_neutrino_background_given_its_f
 sys.path.insert(0, R7864)
 import limits as L7864                                                      # noqa: E402
 
-#: ⛭ THE ONE CHANGE: the bank the model reads.  `limits` set this to the landed grid at import.
+#: ⛭ THE TWO CHANGES: BOTH banks the model reads.  `limits` set these to the landed grids at
+#: import, and the first cut of this file changed only the first -- which left two terms of one
+#: likelihood on different backgrounds and is what the no-readable-limit read measured.
 NEWBANK = os.path.join(BANK, 'pol_grid_bvel1_nufd_dneff')
+NEWPP = os.path.join(BANK, 'phiphi_grid_eta4000_bvel1_primnorm1_nufd_dneff')
 os.environ['POL_DIR'] = NEWBANK
+os.environ['PPGRID'] = NEWPP
 
 REF_RULER = 54.00                   # the reference's minimised limit, the order's comparison
 REF_CALIB = 30.56                   # the reference's calibrated limit
@@ -71,7 +78,7 @@ def precondition():
               nufd_true_at_every_nonzero_sum=bool(nonzero_on),
               nufd_false_at_zero_sum=bool(zero_off),
               dneff_on_control_only=bool(dneff_split),
-              lensing_bank_resolved=False,
+              lensing_bank_resolved=True,
               blob=cfgs['lcdm_S000'].get('instrument_blob'))
     ok['holds'] = bool(len(pol) == 32 and len(lc) == 16 and len(cr) == 16
                        and ok['nufd_key_present'] and nonzero_on and zero_off and dneff_split
@@ -97,7 +104,8 @@ def main():
           % pre['nufd_false_at_zero_sum'])
     print('    the ruling\'s DNEFF is on the CONTROL only, the arm of record carrying none: %s'
           % pre['dneff_on_control_only'])
-    print('    ⚠ the LENSING bank is NOT re-solved: declared, and it bounds both numbers below')
+    print('    the LENSING bank is re-solved too, and both keys point at the new grids -- '
+          'so the two terms of this likelihood are on ONE background')
     out['precondition'] = pre
     if not pre['holds']:
         print('\n  ⛔ the precondition FAILS -- no limit is reported.\n')
@@ -107,6 +115,26 @@ def main():
     import model3 as M3
     import distances as DI
     import model6 as M6
+
+    # ⚠ THE PLUMBING, MEASURED RATHER THAN ASSUMED.  The first re-point of the lensing grid left
+    # every profile total BIT-IDENTICAL to the half-and-half run, while the lensing shape the model
+    # reads differs by up to 4.5 per cent at the same sum.  One of those two readings had to be
+    # wrong about what the run was doing, so the run now RECORDS which grids its own model holds
+    # and what the lensing base is, beside the numbers it reports.
+    probe = M6.Model6('lcdm')
+    pb = np.asarray(probe.pp_base(0.30), float)
+    print('\n  THE PLUMBING, as this run\'s own model holds it')
+    print('  ' + '-' * 104)
+    print('    the CMB grid in use     : %s' % os.path.basename(os.environ['POL_DIR']))
+    print('    the lensing grid in use : %s' % os.path.basename(M6.GRID))
+    print('    its base at Sum = 0.30  : %s' % np.array2string(pb[:4], precision=8))
+    out['plumbing'] = dict(pol_dir=os.path.basename(os.environ['POL_DIR']),
+                           pp_grid=os.path.basename(M6.GRID),
+                           pp_grid_is_the_new_one=bool(os.path.basename(M6.GRID) ==
+                                                       os.path.basename(NEWPP)),
+                           pp_base_at_030=[float(v) for v in pb[:4]])
+    print('    ⇒ the lensing grid this model holds IS the re-solved one: %s'
+          % out['plumbing']['pp_grid_is_the_new_one'])
 
     r_inst = L7864.Ruler(os.path.join(R7864, 'rd_grid_nufd.npz'), 'r_drag',
                          "this instrument's own drag epoch ON THE REPAIRED BACKGROUND",
@@ -150,8 +178,8 @@ def main():
         r7864_minimised=R7864_MINIMISED, r7864_calibrated=R7864_CALIBRATED,
         expectation_moved_toward_54=moved_toward,
         band_meV=BAND_OF_54, gap_to_54=gap54, band_holds=in_band,
-        read_on='the RE-SOLVED bank, CMB only; the lensing bank is not re-solved and that is '
-                'declared')
+        read_on='the RE-SOLVED bank, BOTH halves -- the CMB bandpowers and the lensing '
+                'potential, each on the repaired background')
     print('    ⇒ the REGISTERED EXPECTATION was that the minimised limit moves TOWARDS 54.00 from '
           '%.2f: %s' % (R7864_MINIMISED,
                         'MET' if moved_toward else '** REFUTED **, reported with the number'))
