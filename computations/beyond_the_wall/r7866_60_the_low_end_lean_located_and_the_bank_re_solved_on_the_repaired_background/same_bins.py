@@ -180,10 +180,22 @@ def main():
     res['moves_meV'] = moves
     if moves['instrument'] and moves['reference_rd_min']:
         ratio = abs(moves['instrument'] / moves['reference_rd_min'])
+        ratio_f = abs(moves['instrument_frozen'] / moves['reference_rd_min'])
         res['ratio_on_the_same_bins'] = float(ratio)
-        print('\n    ⇒ ON THE SAME BINS the instrument moves %.1f times the reference, against the '
-              'order\'s %.0f from the two DIFFERENT cuts (%.2f against %.2f meV, declared reads)'
-              % (ratio, ORDER_INSTRUMENT_LOW / ORDER_REFERENCE_LOW,
+        res['ratio_on_the_same_bins_frozen'] = float(ratio_f)
+        res['freedom_share_of_the_move_meV'] = float(moves['instrument']
+                                                     - moves['instrument_frozen'])
+        print('\n    ⇒ ON THE SAME BINS, and on the reference\'s OWN treatment of the parameters '
+              '(frozen), the instrument moves %.0f times the reference: %+.2f against %+.2f meV.'
+              % (ratio_f, moves['instrument_frozen'], moves['reference_rd_min']))
+        print('      with the instrument\'s four parameters re-profiled instead, %.0f times: '
+              '%+.2f meV.  ⇒ THE ASYMMETRY IS NOT THE CAUSE -- it accounts for %.2f meV of the '
+              'move and leaves two orders of magnitude standing.'
+              % (ratio, moves['instrument'],
+                 abs(moves['instrument'] - moves['instrument_frozen'])))
+        print('      against the order\'s %.0f from the two DIFFERENT cuts (%.2f against %.2f '
+              'meV, declared reads), which Ⓐ① showed share seven bins of thirty-six and forty-nine'
+              % (ORDER_INSTRUMENT_LOW / ORDER_REFERENCE_LOW,
                  ORDER_INSTRUMENT_LOW, ORDER_REFERENCE_LOW))
     io.open(os.path.join(_HERE, 'same_bins.json'), 'w', encoding='utf-8').write(
         json.dumps(res, indent=1, sort_keys=True))
