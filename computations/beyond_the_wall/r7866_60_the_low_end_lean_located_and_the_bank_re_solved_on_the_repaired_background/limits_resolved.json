@@ -12,6 +12,17 @@
   "reference_calibrated": 30.56,
   "reference_minimised": 54.0
  },
+ "plumbing": {
+  "pol_dir": "pol_grid_bvel1_nufd_dneff",
+  "pp_base_at_030": [
+   1.3234105142921278e-07,
+   1.1874944011463149e-07,
+   9.030400828373452e-08,
+   6.808022487049063e-08
+  ],
+  "pp_grid": "phiphi_grid_eta4000_bvel1_primnorm1_nufd_dneff",
+  "pp_grid_is_the_new_one": true
+ },
  "precondition": {
   "blob": "0421f6877f931f916fd06f6ea10d4df363491305",
   "cmb_points": 32,
