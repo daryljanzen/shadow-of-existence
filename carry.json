@@ -239,5 +239,14 @@
     "since": "da378ad5894c07bf7faea563a9d4ca4f5001d83b"
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45485779648",
+    "since": "dc081afa749e0a0bb5c6468c3fe0e04216bc8c60"
+   }
+  }
  }
 }
