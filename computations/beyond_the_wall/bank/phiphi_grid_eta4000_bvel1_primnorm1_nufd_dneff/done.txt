@@ -18,3 +18,7 @@
   cr S000 rc=0
   cr Sm06 rc=0
   cr Sm12 rc=0
+  cr S030 rc=0
+  cr S045 rc=0
+  cr S015 rc=0
+  cr S060 rc=0
