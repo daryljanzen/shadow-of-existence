@@ -29122,3 +29122,118 @@ It reads as a record now, gated on the pair that revision itself stored. ⇒ *Th
 conversion in three revisions — two counts, one range, one blob. I am treating it as a standing rule
 for this line rather than four repairs: if an arm's number or scope can be moved by another revision
 landing, it is a reading and the claim is something else.*
+
+
+---
+
+# ⇒ `r7864` (60), ROUTED — **FOUR RECEIPTS OF YOURS GO RED ON THIS TREE AND GREEN ON `main`, ALL FOUR ON THE SAME CAUSE: THE ORDER MOVED THE INSTRUMENT**
+
+Item ① adds the Fermi–Dirac background to the shared instrument and item ② adds the five config
+keys, so the instrument's source, its blob and its switch census all move — **which is what your
+order asked for.** Four receipts of yours stamp one of those three things, and they turn red on my
+tree the moment the switch exists, **with the switch OFF and every saved array byte-identical**,
+which this revision's first arm measures. **They are yours, so I have not touched them.** This is
+the same class as `r7854`'s and `r7858`'s, where you applied the patches at the merge.
+
+**Measured on both trees rather than predicted from a CI name — each run to completion, here and in
+a worktree at `origin/main`'s own head:**
+
+| receipt | origin | what it stamps | on `origin/main` | on this head |
+|---|---|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census | `rc=0` | `rc=1`, one arm |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob | `rc=0` | `rc=1`, arm ② |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument source hash | `rc=0` | `rc=1`, arm ⓿⓿ |
+| `C64_the_first_sixty_eight_keys_of_the_prefix_are_read…` | `cc66` | two counts inside `Hphys` and `Hleaf` | `rc=0` | `rc=1`, two arms |
+
+## ⭕ The census — `89 → 91`, and the ninety-first is a name the instrument RECORDS rather than resolves
+
+Measured with your own scanner's rule on both trees:
+
+| instrument | bound switch names with a use site |
+|---|---|
+| `origin/main` | `89` |
+| this head | `91`, and `0` bound-but-never-used |
+
+The two new ones, with the sites your own table prints for them:
+
+| switch | default | on path | use sites |
+|---|---|---|---|
+| `NUFD` | `0` | yes | `<module>`, `Hleaf`, `Hphys` |
+| `PRIMNORM` | `None` | yes | `_resolved_config` **only** |
+
+⇒ `len(ROWS) == 89` becomes `== 91`; `SWEPT_SIXTY_PLUS` (`29` entries, counted) gains `'NUFD'` and
+`'PRIMNORM'`, which keeps `len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` **exactly — `91 - 31 = 60`,
+measured and not assumed**; and the roll-call gains *"the ninetieth is `NUFD`, r7864+60; the
+ninety-first is `PRIMNORM`, r7864+60"*.
+
+⚠ **But `PRIMNORM` is not the same kind of entry as the other ninety, and I would rather say so than
+let it in silently.** Your census's clause is that *every switch that is bound is also used
+somewhere*. `PRIMNORM` satisfies it in `_resolved_config` and NOWHERE ELSE: the instrument does not
+read the value, and it says so in its own text beside the key. It is there because your item ②
+named it, and this revision pays it as an ENVIRONMENT RECORD rather than a resolved switch — a
+config claiming to resolve a switch it never reads would be the vacuous form this corpus keeps
+catching. **So the census would count, as a switch the instrument reads, a name whose only use site
+is the line that records that it is not read.**
+
+⭕ **My recommendation, and it is yours to take or refuse:** add it to the roll-call as the
+ninety-first *with that property stated in the entry* — the one name on the list whose sole use site
+is its own provenance record. The alternative is to exclude it and assert the exclusion, which makes
+the census's own number depend on a reading rather than on its scanner; I prefer the stated entry,
+because a count that excludes by hand is the shape that goes stale.
+
+## ⭕ The two blob stamps — a SEVENTH inert class, not a re-numbering
+
+`…the_fitted_comb…`'s arm ② passes when the working tree either IS the `LEAFGEOM=1` blob or reduces
+to it by the named classes, and its arm ③ — *reduce the newer blob by the named classes and its AST
+is IDENTICAL to the older blob's* — **still PASSES on this tree.** So the confound is still inert;
+what fails is only that the reduction does not yet know this revision's class. `…the_1p57…`'s
+⓿⓿ is the same mechanism read through the bank's stored source hash.
+
+⇒ Both need the same thing, and it is the sixth class's successor: a `NUFD` class that drops the
+Fermi–Dirac block and the `'NUFD'` and `'PRIMNORM_env'` config keys. **The shape is stated so you
+can check the reduction rather than trust it:** the switch is `NUFD and MNU != 0.0`, a conjunction,
+so the inert state is not `NUFD` alone — a name is inert here only if its branch is guarded on BOTH,
+which is what makes the zero-sum case bit-identical rather than merely close. The three sites are
+the module-level block, `Hphys` and `Hleaf`, each with its guarded branch beside the landed one.
+
+⚠ **And the reason the guard is a conjunction is a measurement, not a preference:** with the switch
+on at zero sum the stack's late tail differed from the landed line, because the on-branch computes
+`(1 - FNU) * OR / a**4 + … + FNU * OR / a**4` where the landed one computes `OR / a**4 + …`, and
+re-associating a sum is not the identity in floating point. Conditioning on a nonzero sum makes the
+massless limit exact rather than close, and that is why a reduction keyed on `NUFD` alone would be
+reducing a different program from the one that runs.
+
+## ⭕ `C64` — two arms that demonstrate a count cannot carry a structural claim, written as counts
+
+This one is worth your reading rather than just your patch. `C64`'s two failing arms are its
+DEMONSTRATION of mechanism ②: that a pin on `OR / a ** 4` cannot carry the structural claim about
+which of `Hphys` and `Hleaf` holds the radiation term, because the literal occurs once in each. The
+arms assert that by HARD COUNT — `_n_total == 2 and _n_phys == 1 and _n_leaf == 1`, and
+`_flag_in_phys == 1 and _instr.count(GATEFLAG) == 1 and _instr.count(BAREFLAG) == 2`.
+
+**Measured on both trees:**
+
+| | `OR / a ** 4` in `Hphys` | `if RAD_IN_RATE` in `Hphys` | `OR / a ** 4` in `Hleaf` |
+|---|---|---|---|
+| `origin/main` | `1` | `1` | `1` |
+| this head | `3` | `2` | `2` |
+
+The counts moved because each rate function now carries its guarded branch beside its landed one, so
+the term appears in both branches of both functions. **Nothing `C64` says has become false — the
+literal still occurs in both functions, and the state it names as breaking the claim is still
+reachable. Only its arithmetic moved.**
+
+⇒ So the patch I would route is NOT `2 → 5` and `1 → 3`. It is to re-anchor the two arms on the
+structure they are about: *the term occurs in both functions* (`_n_phys >= 1 and _n_leaf >= 1`), and
+*`Hphys`'s occurrences are all under a `RAD_IN_RATE` branch while `Hleaf`'s are not* — which is the
+whole content of the demonstration and survives any number of inert branches being added beside the
+landed ones. A re-numbered count reddens again on the next arrival.
+
+⚠ **And I will name the symmetry rather than leave you to notice it.** One revision ago I recorded,
+as the fifth of `r7862`'s own defects, that a gate I had written *would have reddened on its
+successor obeying an order* — and I took from it a standing rule: if an arm's number or scope can be
+moved by another revision landing, it is a reading and the claim is something else. **`C64`'s two
+arms are the same shape, found the same way, and they are the fifth and sixth instances of it in
+three revisions.** I am not asserting that as a defect in your receipt: a demonstration arm has a
+better excuse than a claim arm, because it is quoting the state it found. But the re-anchor costs
+less than the next re-number, and the rule reads the same from either side of the branch.
