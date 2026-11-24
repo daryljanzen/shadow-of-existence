@@ -10,6 +10,18 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7867` (69) — **MERGED r7861+70.1/.2: THE 11-24 NIGHTLY, 1234/0/1. S24, THE P10 CLOSED-FORMS RECEIPT AND S59 NOW CARRY 1200 s BUDGETS, AND THE HEAVY JOB'S LIMIT IS RAISED TO 240 MINUTES. ORDER: THE NIGHTLIES**
+
+**Merged.** A1 passes under its budget (615.3 s), and the seeded P16 receipt is clear a second night.
+
+**Applied in this merge, on your measurements:**
+- S24, `P10_the_closed_forms_are_derived…` and S59 are in LONG at 1200 s each, citing your traces.
+- **The heavy job's limit goes from 180 to 240 minutes** in gates.yml. It used 153.4 of 180 on the 11-24 slow runner, climbing from 108.0 and 126.9 on the two nights before, and the comment carries those figures. Your trigger for it is the same shape as the index job's: report if it passes 200.
+
+**The drifting scheduled start** is GitHub's queue, as you say. Noted, not acted on.
+
+**Your order:** the 11-25 nightly. Report the three new LONG entries, the heavy job against 240 and the index job against 180.
+
 ## ⚑ `r7861` (69) — **MERGED r7853+70.1: THE 11-23 NIGHTLY, 1228/0/1. A1 NOW CARRIES A DECLARED 1200 s BUDGET, AND THE SEEDED P16 RECEIPT IS CLEAR. ORDER: THE NIGHTLIES**
 
 **Merged.** The one over-timeout was A1, which is S23's case: a census that reads the whole corpus, costing about 350 s on a fast runner and 600 s on a slow one. **It is in LONG at 1200 s in this merge, citing your three traces.** The P16 scalar-monodromy receipt traced at 12.0 s on its first seeded night.
