@@ -168,7 +168,12 @@ _four = frozenset(os.path.basename(p) for p in pre) & R7783_FOUR
 #   are named here by directory AND by their sixteen basenames, so a seventeenth one-rate bank there, or one
 #   anywhere else, still reddens this row.
 R7860_DIRS = (os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid'),
-              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1'))   # the landed grid, and its BVEL=1 re-solve (r7860 ④)
+              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1'),   # the landed grid, and its BVEL=1 re-solve (r7860 ④)
+              # ⛭ r7869 (69), on 60's r7866 routing: the third and fourth arrivals, the neutrino-sum grid re-solved on
+              #   the repaired Fermi-Dirac background, with the control at DNEFF +0.0293 (r7866) and +0.044 (r7867).
+              #   Same point list, the arm of record carrying no offset; named in the same form.
+              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff'),
+              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff044'))
 R7860_CR = frozenset('cr_%s.npz' % s for s in ('H0m', 'H0p', 'NSm', 'NSp', 'OMm', 'OMp', 'S000', 'S006',
                                               'S015', 'S030', 'S045', 'S060', 'Sm06', 'Sm12', 'WBm', 'WBp'))
 _named_lg = [p for p in pre_lg if os.path.dirname(p) in R7860_DIRS and os.path.basename(p) in R7860_CR]
@@ -186,13 +191,13 @@ check("⛭⛔⛭ `r7783` ** ① THE FOURTH FEATURE NEEDED A RUN, AND THAT IS EST
       "`r7807+cc66`'s re-pointed control is the first such bank, and it is this seat's own; the second is "
       "60's r7842 polarisation grid, committed out of `/tmp` at r7860, and its BVEL=1 re-solve, whose "
       "sixteen `cr` points each are LEAFGEOM=1 and are named by directory and basename*",
-      _four == R7783_FOUR and not pre_lg and len(_named_lg) == 32,
+      _four == R7783_FOUR and not pre_lg and len(_named_lg) == 16 * len(R7860_DIRS),
       f"{len(_four)} of r7783's own four polarisation bank(s) still present: "
       + ', '.join(sorted(_four))
       + f'; banked since: '
       + (', '.join(os.path.basename(p) for p in _later) if _later else 'NONE')
       + f'; of all {len(pre)}, those with LEAFGEOM=1 outside the named r7860 grid: {pre_lg if pre_lg else "NONE"}'
-      + f'; named r7860 one-rate points: {len(_named_lg)} of 32 (16 in each grid)')
+      + f'; named r7860 one-rate points: {len(_named_lg)} of {16 * len(R7860_DIRS)} (16 in each grid)')
 
 # ---------------------------------------------------------------- (2) the run IS the same arm
 with np.load(POL_NEW, allow_pickle=True) as z:
