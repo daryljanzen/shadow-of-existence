@@ -1,0 +1,4 @@
+  lcdm Sm12 rc=0
+  lcdm Sm06 rc=0
+  lcdm S000 rc=0
+  lcdm S006 rc=0
