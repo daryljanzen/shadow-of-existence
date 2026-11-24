@@ -15,6 +15,102 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7865+cc66.10 — ⛭ **③ THE REPAIRED BACKGROUND AGREES WITH CAMB AT THE ORDERED SETTING ON ALL FOUR BANDS — BUT YOUR `N_eff` FIGURE IS A CONFLATION, THE TRUE GAP IS `0.044`, AND AT THE CORRECT VALUE THE DENSITY AND `H` IMPROVE WHILE THE RULER CROSSES BELOW CAMB. ⑦ THE MEMO IS DROPPED AND `54.00` MOVES BY NOTHING — AND ITS ARM IS RE-DERIVABLE FOR THE FIRST TIME. ⑧ WAITS ON YOUR BINS**
+
+Items ③ and ⑦ are in. Receipt
+`P15_the_repaired_background_agrees_with_camb_at_the_ordered_setting_but_the_ordered_neff_is_a_conflation_and_the_memo_fix_moves_the_limit_by_nothing.py`,
+**15 arms, 0 failed on the first run**, 13 of 13 perturbations reddening **the arm each was written
+for**. Seven bands registered at `467ab3d8a` before a line of either computation existed; **all
+seven hold**, and the two findings below are things the bands were built to expose rather than
+failures of them.
+
+**③ FIRST, THE BAND THAT MAKES THE REST A COMPARISON AT ALL.** My CAMB leg is built in my own file
+from the control's parameters, and it reproduces your recorded reference column to **`0.000e+00`** at
+all four sums. ⇒ *So an agreement below is a reproduction, not a copy of your numbers — which is why
+that band was registered first.*
+
+| setting | `ρ` rel | `H` worst | at `z` | ruler | worst gap |
+|---|---|---|---|---|---|
+| `DNEFF` unset | `1.241e-02` | `1.033e-03` | `1100` | all above | `3.393e-03` |
+| **`+0.0293` as ordered** | `2.760e-03` | `5.531e-04` | `1100` | all above | `2.366e-03` |
+| `+0.044` measured | `2.079e-03` | `3.122e-04` | `1100` | **two below** | `1.852e-03` |
+
+**At the ordered setting your repair passes on all four:** the ruler sits above CAMB's at every sum
+with the gap monotone in the sum, worst `2.366e-03` against the `5e-03` you registered; `H(z)` agrees
+to `5.531e-04` inside your `2e-03`, with the worst point the earliest; and the density gap falls
+`1.241e-02 → 2.760e-03`, a factor `4.49` against a registered three. ⌗ *Both legs of that last one
+are measured here, because a diagnosis checked only by the seat that made it is not checked.*
+
+⛔ **AND NOW THE FIRST FINDING, WHICH IS ABOUT YOUR ORDER AND NOT YOUR CODE.** The order says my
+reference uses `N_eff = 3.0293`. Read off the CAMB object my reference builds:
+
+```
+N_eff = 3.044000    num_nu_massless = 2.029333    num_nu_massive = 1
+```
+
+`2.029333 + 1 = 3.029333`, which matches the ordered figure to four decimals. ⇒ **It is the
+EFFECTIVE massless count added to the INTEGER massive count — and CAMB's one massive neutrino is
+worth `1.0147` in those units, not `1`, which is exactly why the massless figure is not two.**
+⇒ **So the gap from your `3.000` is `0.044000`, and `+0.0293` leaves `0.0147` unaccounted.**
+
+⛭ **AND THE SECOND FINDING IS WHY I DID NOT JUST SEND YOU THE CORRECTED NUMBER.** I ran the
+instrument at three settings and not the one ordered, because running only the ordered figure would
+have made the answer depend on that figure being right. At `+0.044` the density improves further to a
+factor `5.97` and `H` at the earliest point to `3.122e-04` — **both monotone in the correction, which
+corroborates `0.044`** — but the drag ruler **crosses below CAMB's at the two lowest sums**
+(`−2.638e-04` at `Σ = 0`, `−2.314e-04` at `0.06`), where the ordered figure leaves it uniformly above.
+
+⇒ ***So no single value of the correction is best on the density, the expansion rate and the ruler at
+once: a residual remains that the neutrino count alone does not account for.*** ⌗ *I am routing both
+tables rather than a one-line correction, because "the figure is wrong" and "the wrong figure looks
+better on the ruler" are two different facts and the second is the one that says something about the
+model.*
+
+**⑦ THE MEMO IS DROPPED, AND THE ANSWER TO YOUR QUESTION IS THAT IT MOVES NOTHING.**
+
+| crossing grid | step | landed | exact memo | moved |
+|---|---|---|---|---|
+| **the published reader's own, 20001 pts** | `0.0200` meV | `54.00000` | `54.00000` | **`+0.00000`** |
+| twenty times finer, 400001 pts | `0.0010` meV | `53.99300` | `53.99200` | `−0.00100` |
+
+⇒ **On the arm of record's own crossing resolution the limit does not move at all**, and the finer
+grid bounds any movement that resolution could have hidden at `0.001` meV. *Both grids are reported
+because the coarse one alone hides the bound and the fine one alone understates the answer.*
+
+⛭⛭ **AND THE SHARP RESULT: THE MINIMISED ARM IS RE-DERIVABLE FROM ITS OWN RECORDED PARAMETERS FOR
+THE FIRST TIME.** Re-scoring each newly banked point at its own recorded five parameters reproduces
+its recorded total to **zero on every term and on the total**, at all eight sums — where the landed
+arm departed by up to `6.185e-03` on `chi2_bao` alone. ⌗ *And the worst single-point move is
+`0.005558`, inside the `6.185e-03` residue I attributed to the rounded key BEFORE re-running, so the
+diagnosis predicted the size of its own repair's effect — the only independent check that was
+available on it.*
+
+**⑧ WAITS ON YOU.** When 60 publishes its per-bin `dχ²/dΣ` at the control, I supply the reference's
+on the identical bins. ⌗ *Their own check-in shows that is downstream of the 32-point bank re-solve
+they are running, so I am not waiting on it actively.*
+
+---
+
+⌗ **TWO THINGS OF MY OWN CORRECTED INSIDE THIS REVISION, BOTH IN THE RECORD.** ⒜ My first reading of
+the limit used only the fine grid and gave `53.9930` against the published `54.00` — a `0.007` meV
+gap **in my reader, not in the repair**, since the published reader interpolates on a `0.02` meV step
+and the two agree inside its single step. ⒝ The repair's own guard first asked whether a **spelling**
+appeared in the imported source, and so **refused the repaired file** on the strength of the docstring
+explaining the repair; it now parses the function and reads the key assignment structurally. *Same
+class as `check_row_matchers`' one-spelling hole, and the most avoidable version of it, since the
+text that tripped it was mine.*
+
+⌗ **And one thing noted so this revision's green cannot read as a clean bill on `r7864` as a
+whole:** your own file records `limits.holds: false` — a late-time factor error of `1.3575e-03`
+against your `1e-03` at `Σ = 0.06` — and `held: false` on your adjudication, `7.97` meV against a
+registered `4.0`. Those are your numbers in your file and I have not re-derived them; the background
+is what item ③ checks, and the limits you read off it are yours.
+
+**STATE.** INDEX row at the end of P15's block (8 columns, 9 unescaped pipes); appendices
+regenerated; `CR_cosmology.pdf` at 390 pages; `check_figures_pinned` back to the baseline `1431` with
+five figures newly pinned two-sidedly and nothing adjudicated in — the ordered `N_eff` figure itself
+is **not** printed in the row, because a figure quoted from an order is one this receipt cannot pin.
+
 ## r7863+cc66.17 — ⛭ **① BOTH CUTS COST THIS REFERENCE ALMOST NOTHING AND THE LOW END COSTS **LESS** THAN THE TOP, SO YOUR ASYMMETRY DOES NOT REPRODUCE — THE TAIL IS AGREED AND THE LOW END IS NOT, BY MORE THAN TWO ORDERS. ② THE REFERENCE IS **ONE BRANCH** TO `0.60` eV ON BOTH RULERS, AND YOUR `65.74` IS ITS ONE-BRANCH VALUE AT A THIRD OF AN eV. ③ BLOCKED, MEASURED**
 
 Items ① and ② are in. Receipt

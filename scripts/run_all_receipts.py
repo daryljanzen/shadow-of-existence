@@ -448,6 +448,9 @@ LONG = {
     'S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py': 900,  # measured 286s alone (r7616+60.1)
     'S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py': 1200,  # r7851 (69): traced 254.9s (11-20) and 454.4s (11-21) on the nightly index; over 600s and killed on the r7847+70.2 PR runner while passing every check it reached (70's read)
     'A1_a_rule_made_of_spellings_misses_the_next_spelling.py': 1200,  # r7861 (69): traced 346.1s (11-20), 601.9s (11-21), 359.3s (11-22) on the nightly index; over 600s on the 11-23 heavy run past PART 5 with every check passing (70's r7853+70.1); its census grows with the corpus, S23's case
+    'S24_a_gate_on_a_repair_has_a_subject_another_seat_may_rewrite_so_all_three_of_mine_went_red_and_the_selector_two_of_them_were_about_was_still_reading_the_commit_body.py': 1200,  # r7867 (69): traced 339.5/590.5/366.6/617.2/686.2 s (11-20..11-24); over 600 s on the 11-24 heavy run (70's r7861+70.1); git-history class
+    'P10_the_closed_forms_are_derived_from_the_recoupling_algebra_at_the_extreme_right_labels_so_the_nine_levels_are_a_check_and_not_the_ground.py': 1200,  # r7867 (69): traced 322.9 (fast) / 548.4 / 551.4 s (slow), 92 per cent of 600 on a slow runner (70's r7861+70.1)
+    'S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py': 1200,  # r7867 (69): traced 261.7/429.1/459.6 s; killed at 600 s on the r7861+70.2 PR scoped run while passing (70)
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --

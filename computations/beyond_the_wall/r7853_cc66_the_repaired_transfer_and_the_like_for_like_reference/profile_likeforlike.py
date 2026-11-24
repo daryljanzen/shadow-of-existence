@@ -64,8 +64,20 @@ _RDMIN = {}
 
 
 def bao_min(h0, om):
-    """minimised-r_d BAO chi^2 depends ONLY on (H0, Om): E_stack has no sum dependence"""
-    key = (round(h0, 4), round(om, 5))
+    """minimised-r_d BAO chi^2 depends ONLY on (H0, Om): E_stack has no sum dependence
+
+    ⛔ r7865+cc66 item ⑦, on 69's ruling.  The key was `(round(h0, 4), round(om, 5))`, which made
+    THIS ARM OF RECORD NOT RE-DERIVABLE FROM ITS OWN RECORDED PARAMETERS: a fresh process computed
+    `r_d` at the parameters a point recorded, where the original run was served the first minimiser
+    trial that happened to round to the same key -- up to `6.185e-03` in `chi2_bao` and `1.026e-03`
+    Mpc in `r_d`, measured at `r7863+cc66.4`.  The calibrated arm never calls this function and
+    reproduced bit-exactly, which is what located it.
+      ⇒ The key is now the EXACT pair.  That costs cache hits and buys reproducibility, and the
+      memo is still correct for its own purpose: `chi2_bao` here depends on `(h0, om)` and nothing
+      else, so two calls with identical arguments must return identical values -- which is what a
+      memo keyed on the arguments themselves guarantees and a rounded one does not.
+    """
+    key = (h0, om)
     if key not in _RDMIN:
         r = minimize_scalar(lambda rd: DI.chi2_bao(h0, om, rd, DI.E_stack),
                             bounds=(120.0, 170.0), method='bounded')
