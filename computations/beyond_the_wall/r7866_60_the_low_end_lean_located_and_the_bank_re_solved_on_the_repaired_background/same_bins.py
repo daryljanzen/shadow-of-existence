@@ -127,6 +127,35 @@ def main():
               % (label, nb, ('%.2f' % res['instrument_' + label]['crossing_meV'])
                  if res['instrument_' + label]['crossing_meV'] is not None else 'none'))
 
+    # ⚠ THE ASYMMETRY CONTROL, and it is the one this comparison needs: the instrument's column
+    # profiles its four parameters at every sum and the reference's holds its five, because
+    # re-profiling the reference is a CAMB minimisation per sum.  So the instrument is given a
+    # freedom the reference is not, and that freedom could BE the move.  The same instrument
+    # column is therefore taken again with its four parameters FROZEN at the zero-sum fit, which
+    # is the reference's own treatment.  If the move survives, the asymmetry is not its cause.
+    x4f, _ = fit_x4(M6.Model6('lcdm'), 0.0)
+    for label, keep in (('whole', keep_all), ('minus36', keep_36)):
+        mod = M6.Model6('lcdm')
+        c = mod.cmb
+        newok = ok.copy()
+        newok[ok] = keep
+        base, g, h = c.base, dict(c.g), dict(c.h)
+        c.base = lambda s, nu=0, _o=base, _k=keep: np.asarray(_o(s, nu), float)[_k]
+        c.g = {k: (lambda s, nu=0, _o=g[k], _k=keep: np.asarray(_o(s, nu), float)[_k])
+               for k in M3.KEYS4}
+        c.h = {k: (lambda s, nu=0, _o=h[k], _k=keep: np.asarray(_o(s, nu), float)[_k])
+               for k in M3.KEYS4}
+        c.ok, c.nb = newok, int(newok.sum())
+        c.F, c.d, c.pos = SC.fisher_for(newok), SC.X_DATA[newok], SC.POSITIVE[newok]
+        tot = [float(c.chi2_cmb(x4f, s)) for s in SUMS]
+        res['instrument_frozen_' + label] = dict(
+            sums=SUMS, totals=tot, nbins=int(newok.sum()), x4=[float(v) for v in x4f],
+            delta=[t - min(tot) for t in tot], crossing_meV=cross_of(SUMS, tot))
+        print('    instrument FROZEN %-8s %3d bin(s), crossing %s meV'
+              % (label, int(newok.sum()),
+                 ('%.2f' % res['instrument_frozen_' + label]['crossing_meV'])
+                 if res['instrument_frozen_' + label]['crossing_meV'] is not None else 'none'))
+
     cache = {}
     for mode in ('rd_min', 'rd_camb'):
         for label, keep in (('whole', keep_all), ('minus36', keep_36)):
@@ -140,8 +169,8 @@ def main():
 
     print('\n  ** THE MOVE THE SAME THIRTY-SIX BINS CAUSE IN EACH COLUMN **')
     moves = {}
-    for col in ('instrument', 'reference_rd_min', 'reference_rd_camb'):
-        a = res[('%s_whole' % col) if col == 'instrument' else '%s_whole' % col]['crossing_meV']
+    for col in ('instrument', 'instrument_frozen', 'reference_rd_min', 'reference_rd_camb'):
+        a = res['%s_whole' % col]['crossing_meV']
         b = res['%s_minus36' % col]['crossing_meV']
         moves[col] = None if (a is None or b is None) else float(a - b)
         print('    %-20s whole %s, minus the thirty-six %s  ⇒ move %s meV'
