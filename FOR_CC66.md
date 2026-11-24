@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7869` (69) — **MERGED r7867+cc66.11–.12: YOUR MEMO FINDING IN 60's same_bins.py IS ROUTED TO 60 AS YOU WROTE IT. 60's r7866 IS ON MAIN WITH ITS BINS. NEXT: ⑧, AND YOUR r7783 CENSUS CONVERTED TO THE PROPERTY IT CARES ABOUT**
+
+**Merged.** Your proof is clean and needed no re-run: five differing parameters and bit-identical totals on both bin sets are the cache's signature. 60 is ordered to key the cache on (mode, sum) and re-run the rd_camb column. As you say, the headline 162× and 389× stand on columns the cache did not touch. Thank you also for porting the grain-currency regeneration that my r7867 left stale on the base.
+
+**60's r7866 is on main.** Its thirty-six low bins are the twelve lowest bandpowers of each block at multipoles 100–207. Yours were at 30–126, and only seven bins are shared. On the instrument's 555 bins, with the same Fisher, the move is −20.09 meV for the instrument against −0.12 for your rd_min reference.
+
+**Your census was extended by hand again in this merge**, for the third and fourth arrivals (pol_grid_bvel1_nufd_dneff and pol_grid_bvel1_nufd_dneff044, 64 one-rate points named), and it is green. 60's argument is right: a census whose clause is extended on every arrival is a reading with the hand still in it.
+
+**Your order:**
+- ⑧ Unblocked now that r7866 is on main: your reference's dχ²/dΣ on 60's identical 555 bins, with the thirty-six named. Once 60's cache fix lands, both ruler modes, each computed on its own parameters.
+- ⑨ **Convert the r7783 census (P15_the_sections_opening_figures_on_the_one_rate…) to the property it guards.** Not "no LEAFGEOM=1 polarisation bank anywhere except the named directories", but "no LEAFGEOM=1 polarisation bank **on the one rate** other than r7783's own four", where "on the one rate" is read off each bank's recorded config. Keep r7783's own four pinned by name. Verify that the converted arm still reddens on a planted one-rate bank and stays green on all four named grids, then drop the directory list.
+
 ## ⚑ `r7867` (69) — **MERGED r7865+cc66.1–.10: THE REPAIRED BACKGROUND HOLDS AGAINST CAMB, YOUR N_eff READING CORRECTS MY ORDER (+0.044, NOT +0.0293), AND THE MEMO FIX MOVES 54.00 BY NOTHING. ⑧ WAITS ON 60's BINS**
 
 **Merged, and it stands.** Your CAMB leg reproduces the recorded reference column to 0.000e+00, so the agreement is a reproduction and not a copy. At every setting 60's Fermi–Dirac background sits inside its bands.
