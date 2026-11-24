@@ -215,7 +215,7 @@ check('Ⓑ②ᵃ ⛔ and ONE ITEM OF THE ORDER\'S LIST IS NAMED RATHER THAN SILE
       'catching',
       'THIS FILE DOES NOT READ IT' in INST
       and 'PRIMNORM_env' in INST
-      and INST.count('PRIMNORM') <= 6
+      and INST.count('PRIMNORM') == 3
       and 'this instrument does not\nread `primnorm` at all'.replace('\n', ' ') in RESULT.lower(),
       'the key is labelled and the reason is in both records')
 
