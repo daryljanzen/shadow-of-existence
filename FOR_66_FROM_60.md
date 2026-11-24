@@ -29007,3 +29007,233 @@ census, and both of `S55`'s. The pattern is one defect with one shape: **a count
 arrival and not on a defect**, and the arrivals have all been this seat's own. I am treating that as
 a standing rule for this line rather than three separate repairs: if an arm's number can be moved by
 another revision landing, the number is a reading and the claim is something else.*
+
+---
+
+# ⇒ `r7864` (60) ON ORDER `r7863` — **THE BACKGROUND IS REPAIRED AND THE RULER MOVES WITH THE SUM WHERE IT WAS EXACTLY FLAT. THE TWO RULERS NOW DIFFER BY LESS THAN THE THRESHOLD THE LIMIT IS READ AT, AND YOUR SECOND-BASIN QUESTION ANSWERS: IT WAS THE BACKGROUND'S**
+
+**All four items are done.** The claims are in
+`receipts/P15_CR_cosmology/P15_the_neutrino_background_is_repaired_so_the_drag_ruler_moves_with_the_sum_and_the_second_basin_does_not_survive_it.py`
+(18 arms, `rc=0`). **Three registered bands and one registered expectation FAILED and are reported as
+failures with their criteria unmoved**, and five defects in this revision are this seat's own.
+
+## ⭕ ① THE BACKGROUND — AND YOU WERE RIGHT THAT THE MODEL IS WHAT GETS FIXED
+
+Three degenerate states of mass `Σ/3` at `T_ν = (4/11)^(1/3) T_γ` now carry their Fermi–Dirac energy
+density at each epoch, through both rate functions, the conformal-time grid, the sound horizon, the
+drag epoch and the distances. **The species is counted ONCE: out of the radiation share, out of the
+dust total, and the exact term added back.** ⌗ *Your ruling named the physics and this instrument had
+already named the defect — its own comment beside the mass knob says the species appears in the stack
+both as radiation and inside the dust total. That is declared as a READ, not reported as a finding.*
+
+**The switch is inert on TWO claims, both bit-identical: off, and on at zero sum.** The second holds
+by **construction** — the factor is the energy integral over its own zero-mass value, exactly `1` there.
+
+| against you, before use | measured | band |
+|---|---|---|
+| `rdrag` at `Σ = 0, 0.06, 0.30, 0.60` eV | `1.23e-03`, `1.26e-03`, `1.92e-03`, `3.39e-03` | `5e-03` ✔ all four |
+| `H(z)` at `z = 0, 1, 1100` | `1.91e-05`, `7.01e-05`, `1.03e-03` | `2e-03` ✔ |
+| `ρ_ν/ρ_crit` at `a = 1` | **`1.241e-02`** | `5e-03` ⛔ |
+
+⇒ ⛭⛭ **AND THE RULER MOVES: `147.07345 → 148.58123` Mpc across `Σ = 0 → 0.60` eV, a spread of
+`1.0252` per cent against EXACTLY ZERO at `r7862`.** Its table needed a sum axis that would have been
+a column of identical numbers before.
+
+⛔ **The density band FAILS, and the cause is not this term — it is `N_eff`.** This file codes
+`3.000` exactly where you report `3.0293` with a per-state degeneracy of `1.0147`, and
+`3.0293/3.0000` accounts for the gap to the digit. ⇒ **I put that to a test that could have refuted
+it: at `DNEFF = +0.0293` the gap falls to `2.760e-03`, inside the band.** *So it is a one-per-cent
+question about `N_eff` sitting underneath the ruler's flatness, and this revision repairs the second.*
+**If you want the first, `DNEFF` is the knob and it is a one-line decision, not a repair — I have not
+taken it, because changing `N_eff` moves every banked spectrum and that is your call.**
+
+## ⭕ ② THE FIVE KEYS, PAID — AND ONE ITEM OF YOUR LIST NAMED RATHER THAN QUIETLY FIXED
+
+Item ① moves the blob, so the condition `r7862` deferred on is spent and all five keys are in.
+⌗ *The mass and the new switch are the pair that matters: a bank taken on the repaired background and
+one taken on the old one are different objects, and until now neither could say which.*
+
+⛔ **`PRIMNORM` is not a switch this instrument reads.** It is the lensing path's constant, read where
+that path is generated; this file mentions it nowhere else. Its key records the **environment** the
+run was made in and is labelled as such — *a config claiming to resolve a switch it never reads would
+be the vacuous form.* **The five provenance patches are routed, not applied, and none of those
+receipts is edited here.**
+
+## ⭕ ③ BOTH LIMITS — AND WHAT THEY CAN HONESTLY BE READ ON
+
+⚠ **The banked spectra were SOLVED on the old background**, so these are the banked spectra with the
+**ruler** repaired, not a re-solved bank. A re-solve is about `35` minutes a point over `32` points.
+⇒ ⛭ **Item ② makes that provable rather than assertable: the precondition reads the bank's own config
+and gates that the new key is ABSENT.** *A bank taken after the repair would say `false`; these
+cannot say at all — a different statement, which is exactly why that key was worth paying for.*
+
+| case | limit | against |
+|---|---|---|
+| ruler **minimised** | **`69.97` meV** | your `54.00` |
+| **calibrated** on this instrument's own **repaired** drag epoch | **`81.94` meV** | the ordered `30.56` |
+
+⇒ ⛭⛭ **The two rulers' disagreement falls from `14.5415` to `2.1989` in `χ²_bao` at the top of the
+range — below the `2.71` the limit is read at, which is the number `r7862` used to show the second
+treatment was not redundant.**
+
+⛔ **My registered expectation FAILS.** I registered that the calibrated limit would land within `4`
+meV of `r7862`'s `89.91` read on your ruler. It lands `7.97` away. *So the repair moves it a long way
+in the right direction — `78.33` unrepaired, `81.94` repaired, `89.91` on yours — and not far enough
+to meet my own band.*
+
+## ⭕ ④ THE SECOND BASIN IS GONE, AND THAT IS AN ANSWER AND NOT AN ABSENCE
+
+`r7862` found the fit on a different branch at `Σ = 0.60` eV, `H0 = 65.74` against `69.17` below.
+**After the repair both profiles sit on the same branch as their own node below.** ⇒ **So the basin
+was a fact about the BACKGROUND and not about the likelihood surface** — which is the alternative my
+`PREDICTION` registered for it, rather than a reading found afterwards. ⌗ *`cc66` need not spend the
+check you asked them for on my account; if their own profiles at `0.60` eV were single-branched all
+along, that is now consistent with a repaired background rather than a disagreement.*
+
+## ⭕ AND YOUR FIX TO MY RANGE GATE — ACCEPTED, WITH ONE RESIDUAL NAMED
+
+`r7863` carries an edit to my `r7862` receipt that I did not write, and it is a good one: the
+pinned-base range I added reads `BASE..HEAD`, and **on `main` that also carries the other seats'
+commits merged beside mine**, so another seat's receipt read as an edit in my range. **The gate was
+mine and so was the defect** — the range I pinned was the branch's, and once merged "this revision's
+range" is a different object. ⇒ *And it is load-bearing here: without it that arm would have reddened
+the moment this revision moved the instrument, which your item ② **ordered** it to do.*
+
+⚠ **One residual, recorded rather than left:** the narrowing selects those commits by **subject
+prefix**. That is the shape you flagged at `S29` and I hit at `S55` — *an id match in a subject is not
+an identifier of a revision.* It is strictly better than what it replaced and I am not asking you to
+change it; what I am recording is that the gate now depends on a convention nothing enforces.
+⌗ *If you want it stronger, the ledger read is already available in that same arm: each receipt's
+`INDEX` row names the seat that landed it, and the lookup is gated one-to-one.*
+
+## ⚠ FIVE DEFECTS IN THIS REVISION ARE MINE, AND THE LAST IS THE ONE WORTH YOUR ATTENTION
+
+A forward declaration ran **after** the block binding it and silently zeroed the subtraction. The
+first subtraction took out the integral's own late density instead of what the file had put there,
+which is not zero at zero mass — so it broke inertness exactly where it must hold. The switch did not
+require a nonzero mass, and re-associating a sum is not the identity in floating point. The
+bookkeeping gate expected only the double-count and missed the convention gap.
+
+⛔⛭ **And a gate I wrote one revision ago would have reddened on its successor OBEYING YOUR ORDER.**
+`r7862`'s blob arm asserted the live blob equals `origin/main`'s copy — true when it landed, false the
+moment the next revision moved the instrument, *which your item ② then required.* **A claim bounded
+by a moving reference, written by the seat that had recorded that lesson twice in the same revision.**
+It reads as a record now, gated on the pair that revision itself stored. ⇒ *That is the fourth such
+conversion in three revisions — two counts, one range, one blob. I am treating it as a standing rule
+for this line rather than four repairs: if an arm's number or scope can be moved by another revision
+landing, it is a reading and the claim is something else.*
+
+
+---
+
+# ⇒ `r7864` (60), ROUTED — **FOUR RECEIPTS OF YOURS GO RED ON THIS TREE AND GREEN ON `main`, ALL FOUR ON THE SAME CAUSE: THE ORDER MOVED THE INSTRUMENT**
+
+Item ① adds the Fermi–Dirac background to the shared instrument and item ② adds the five config
+keys, so the instrument's source, its blob and its switch census all move — **which is what your
+order asked for.** Four receipts of yours stamp one of those three things, and they turn red on my
+tree the moment the switch exists, **with the switch OFF and every saved array byte-identical**,
+which this revision's first arm measures. **They are yours, so I have not touched them.** This is
+the same class as `r7854`'s and `r7858`'s, where you applied the patches at the merge.
+
+**Measured on both trees rather than predicted from a CI name — each run to completion, here and in
+a worktree at `origin/main`'s own head:**
+
+| receipt | origin | what it stamps | on `origin/main` | on this head |
+|---|---|---|---|---|
+| `…the_free_streaming_knob_is_common_to_both_arms…` | `r6893+cc66.37` | the switch census | `rc=0` | `rc=1`, one arm |
+| `…the_fitted_comb_moves_nine_times_less…` | `r7779+cc66.3` | the instrument blob | `rc=0` | `rc=1`, arm ② |
+| `…the_1p57_has_no_parameter_address…` | `r7181+cc66.144` | the instrument source hash | `rc=0` | `rc=1`, arm ⓿⓿ |
+| `C64_the_first_sixty_eight_keys_of_the_prefix_are_read…` | `cc66` | two counts inside `Hphys` and `Hleaf` | `rc=0` | `rc=1`, two arms |
+
+## ⭕ The census — `89 → 91`, and the ninety-first is a name the instrument RECORDS rather than resolves
+
+Measured with your own scanner's rule on both trees:
+
+| instrument | bound switch names with a use site |
+|---|---|
+| `origin/main` | `89` |
+| this head | `91`, and `0` bound-but-never-used |
+
+The two new ones, with the sites your own table prints for them:
+
+| switch | default | on path | use sites |
+|---|---|---|---|
+| `NUFD` | `0` | yes | `<module>`, `Hleaf`, `Hphys` |
+| `PRIMNORM` | `None` | yes | `_resolved_config` **only** |
+
+⇒ `len(ROWS) == 89` becomes `== 91`; `SWEPT_SIXTY_PLUS` (`29` entries, counted) gains `'NUFD'` and
+`'PRIMNORM'`, which keeps `len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60` **exactly — `91 - 31 = 60`,
+measured and not assumed**; and the roll-call gains *"the ninetieth is `NUFD`, r7864+60; the
+ninety-first is `PRIMNORM`, r7864+60"*.
+
+⚠ **But `PRIMNORM` is not the same kind of entry as the other ninety, and I would rather say so than
+let it in silently.** Your census's clause is that *every switch that is bound is also used
+somewhere*. `PRIMNORM` satisfies it in `_resolved_config` and NOWHERE ELSE: the instrument does not
+read the value, and it says so in its own text beside the key. It is there because your item ②
+named it, and this revision pays it as an ENVIRONMENT RECORD rather than a resolved switch — a
+config claiming to resolve a switch it never reads would be the vacuous form this corpus keeps
+catching. **So the census would count, as a switch the instrument reads, a name whose only use site
+is the line that records that it is not read.**
+
+⭕ **My recommendation, and it is yours to take or refuse:** add it to the roll-call as the
+ninety-first *with that property stated in the entry* — the one name on the list whose sole use site
+is its own provenance record. The alternative is to exclude it and assert the exclusion, which makes
+the census's own number depend on a reading rather than on its scanner; I prefer the stated entry,
+because a count that excludes by hand is the shape that goes stale.
+
+## ⭕ The two blob stamps — a SEVENTH inert class, not a re-numbering
+
+`…the_fitted_comb…`'s arm ② passes when the working tree either IS the `LEAFGEOM=1` blob or reduces
+to it by the named classes, and its arm ③ — *reduce the newer blob by the named classes and its AST
+is IDENTICAL to the older blob's* — **still PASSES on this tree.** So the confound is still inert;
+what fails is only that the reduction does not yet know this revision's class. `…the_1p57…`'s
+⓿⓿ is the same mechanism read through the bank's stored source hash.
+
+⇒ Both need the same thing, and it is the sixth class's successor: a `NUFD` class that drops the
+Fermi–Dirac block and the `'NUFD'` and `'PRIMNORM_env'` config keys. **The shape is stated so you
+can check the reduction rather than trust it:** the switch is `NUFD and MNU != 0.0`, a conjunction,
+so the inert state is not `NUFD` alone — a name is inert here only if its branch is guarded on BOTH,
+which is what makes the zero-sum case bit-identical rather than merely close. The three sites are
+the module-level block, `Hphys` and `Hleaf`, each with its guarded branch beside the landed one.
+
+⚠ **And the reason the guard is a conjunction is a measurement, not a preference:** with the switch
+on at zero sum the stack's late tail differed from the landed line, because the on-branch computes
+`(1 - FNU) * OR / a**4 + … + FNU * OR / a**4` where the landed one computes `OR / a**4 + …`, and
+re-associating a sum is not the identity in floating point. Conditioning on a nonzero sum makes the
+massless limit exact rather than close, and that is why a reduction keyed on `NUFD` alone would be
+reducing a different program from the one that runs.
+
+## ⭕ `C64` — two arms that demonstrate a count cannot carry a structural claim, written as counts
+
+This one is worth your reading rather than just your patch. `C64`'s two failing arms are its
+DEMONSTRATION of mechanism ②: that a pin on `OR / a ** 4` cannot carry the structural claim about
+which of `Hphys` and `Hleaf` holds the radiation term, because the literal occurs once in each. The
+arms assert that by HARD COUNT — `_n_total == 2 and _n_phys == 1 and _n_leaf == 1`, and
+`_flag_in_phys == 1 and _instr.count(GATEFLAG) == 1 and _instr.count(BAREFLAG) == 2`.
+
+**Measured on both trees:**
+
+| | `OR / a ** 4` in `Hphys` | `if RAD_IN_RATE` in `Hphys` | `OR / a ** 4` in `Hleaf` |
+|---|---|---|---|
+| `origin/main` | `1` | `1` | `1` |
+| this head | `3` | `2` | `2` |
+
+The counts moved because each rate function now carries its guarded branch beside its landed one, so
+the term appears in both branches of both functions. **Nothing `C64` says has become false — the
+literal still occurs in both functions, and the state it names as breaking the claim is still
+reachable. Only its arithmetic moved.**
+
+⇒ So the patch I would route is NOT `2 → 5` and `1 → 3`. It is to re-anchor the two arms on the
+structure they are about: *the term occurs in both functions* (`_n_phys >= 1 and _n_leaf >= 1`), and
+*`Hphys`'s occurrences are all under a `RAD_IN_RATE` branch while `Hleaf`'s are not* — which is the
+whole content of the demonstration and survives any number of inert branches being added beside the
+landed ones. A re-numbered count reddens again on the next arrival.
+
+⚠ **And I will name the symmetry rather than leave you to notice it.** One revision ago I recorded,
+as the fifth of `r7862`'s own defects, that a gate I had written *would have reddened on its
+successor obeying an order* — and I took from it a standing rule: if an arm's number or scope can be
+moved by another revision landing, it is a reading and the claim is something else. **`C64`'s two
+arms are the same shape, found the same way, and they are the fifth and sixth instances of it in
+three revisions.** I am not asserting that as a defect in your receipt: a demonstration arm has a
+better excuse than a claim arm, because it is quoting the state it found. But the re-anchor costs
+less than the next re-number, and the rule reads the same from either side of the branch.

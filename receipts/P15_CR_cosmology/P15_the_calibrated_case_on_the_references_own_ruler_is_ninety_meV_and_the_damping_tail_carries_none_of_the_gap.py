@@ -420,15 +420,29 @@ check('Ⓓ④ᵃ ** ITEM ③ OF THE ORDER STAYS DEFERRED ON THE CONDITION THE OR
       'asserted the file on disk hashes to the blob the re-solved GRID recorded, and it does not, '
       'because r7860 wired `Dl_pairs` AFTER that grid was written.  A grid\'s record is a fact '
       'about when the grid was made',
-      _BLOB == BS['on_disk_blob'] and _BLOB == BS['origin_main_blob']
+      # ⛔⛭⛭⛭ *AND THIS ARM IS WHERE THE SAME DEFECT TURNED UP A THIRD TIME, which is why it now
+      #   reads as a RECORD rather than as a live comparison.*  A first version asserted that the
+      #   blob recomputed LIVE equals `origin/main`'s copy -- true when this revision landed, and
+      #   false the moment the next revision moved the instrument, which `r7863` ② then ORDERED it
+      #   to do.  *So the arm would have reddened on its successor obeying an order, which is the
+      #   `S55` shape exactly: a claim bounded by a moving reference, made by the seat that had
+      #   just written that lesson down twice.*  ⇒ What this arm claims is a fact about THIS
+      #   REVISION'S OWN RANGE, so it is gated on the pair `blob_state.py` RECORDED at the time --
+      #   a fixed fact any later reader can check -- with the live blob read and REPORTED beside it.
+      BS['on_disk_blob'] == BS['origin_main_blob']
       and BS['unmoved_by_this_revision'] is True
-      and _BLOB == 'bf4f1583b66ea72093e4d2971aa858d8d1c3867d'
-      and _BLOB != CAL['precondition']['blob']
-      and _BLOB != '291f4477c37ed7fbb13dea2f32ca1744f1ed4d68'
+      and BS['on_disk_blob'] == 'bf4f1583b66ea72093e4d2971aa858d8d1c3867d'
+      and BS['on_disk_blob'] != CAL['precondition']['blob']
+      and BS['on_disk_blob'] != '291f4477c37ed7fbb13dea2f32ca1744f1ed4d68'
       and BS['path'] == os.path.join('computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py'),
-      'the instrument on disk and on origin/main both hash to %s, while the re-solved grid\'s own '
-      'record is %s and the landed grid\'s is 291f4477c37e'
-      % (_BLOB[:12], str(CAL['precondition']['blob'])[:12]))
+      'at this revision the instrument on disk and on origin/main both hashed to %s, against the '
+      're-solved grid\'s own record %s and the landed grid\'s 291f4477c37e; the instrument on disk '
+      'NOW hashes to %s, which %s'
+      % (BS['on_disk_blob'][:12], str(CAL['precondition']['blob'])[:12], _BLOB[:12],
+         'is still that same file'
+         if _BLOB == BS['on_disk_blob'] else
+         'is a LATER state of it -- the keys r7861 ③ deferred are owed in whichever revision '
+         'moved it, which is what this arm\'s deferral was conditional on'))
 
 #: ⛔⛭⛭⛭ ** THIS ARM READ `origin/main...HEAD` AND `S55` CAUGHT IT -- THE DEFECT `S55` EXISTS FOR. **
 #:   *A population bounded by a moving ref is not one a later reader can reproduce, and this seat's
