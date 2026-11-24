@@ -209,8 +209,31 @@ def main():
                          sum_per_bin=float(per.sum()), fd_total=float(tot_fd), banded=bd)
     out['reference'] = ref
 
-    # ── Ⓑ②ᶜ where the two differ most ──
-    A = out['instrument']['banded']
+    # ── ⚠ THE CLOCK. The instrument's column above is EXACT and the reference's is a finite
+    # difference at the banked spacing, and this instrument's own numbers show the two are not
+    # the same quantity -- analytic against differenced at the same step, printed below.  A comparison
+    # across that gap would be measuring the differencing scheme.  So the comparison below is
+    # taken on the SAME CLOCK -- a frozen-parameter finite difference at one step for BOTH
+    # columns -- and the exact column is kept as what it is, the instrument's own statement.
+    m0 = np.asarray(mod.cmb.binned(x4, 0.0), float)[keep_all]
+    m1 = np.asarray(mod.cmb.binned(x4, STEP), float)[keep_all]
+    Fi, di = SC.fisher_for(ok), SC.X_DATA[ok]
+    A0i = float((m0 @ Fi @ di) / (m0 @ Fi @ m0))
+    A1i = float((m1 @ Fi @ di) / (m1 @ Fi @ m1))
+    r0i = di - A0i * m0
+    per_fd = -2.0 * (Fi @ r0i) * ((A1i * m1 - A0i * m0) / STEP)
+    print('\n  Ⓑ②ᵃ(same clock) THE INSTRUMENT, frozen parameters, finite difference at step '
+          '%.3f -- the construction the reference column uses:' % STEP)
+    print('    per-bin sum %+.5f against the exact %+.5f at the same point'
+          % (per_fd.sum(), P['total']))
+    out['instrument_same_clock'] = dict(step=STEP, sum_per_bin=float(per_fd.sum()),
+                                        exact=float(P['total']),
+                                        banded=banded(per_fd, idx_all))
+    for k, v in out['instrument_same_clock']['banded'].items():
+        print('      %-16s %+12.5f' % (k, v))
+
+    # ── Ⓑ②ᶜ where the two differ most, ON THE SAME CLOCK ──
+    A = out['instrument_same_clock']['banded']
     for mode in ('rd_min', 'rd_camb'):
         B = ref[mode]['banded']
         diffs = {k: A[k] - B.get(k, float('nan')) for k in A}
