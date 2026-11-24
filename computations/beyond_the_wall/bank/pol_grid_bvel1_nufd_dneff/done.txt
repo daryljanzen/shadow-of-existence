@@ -26,3 +26,7 @@
   cr H0m rc=0
   cr H0p rc=0
   cr OMm rc=0
+  cr NSp rc=0
+  cr WBp rc=0
+  cr WBm rc=0
+  cr NSm rc=0
