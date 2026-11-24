@@ -1,3 +1,8 @@
 {
- "worst_uncut_departure": 0.006184805032603435
+ "worst_cmb_either_arm": 0.0,
+ "worst_total_rd_camb": 0.0,
+ "worst_total_rd_min": 0.006184805032603435,
+ "worst_non_bao_rd_min": 0.0,
+ "points": 16,
+ "ok": true
 }
