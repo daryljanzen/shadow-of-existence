@@ -129,6 +129,28 @@ at zero.
   REFUTED: there is no readable limit to move.**
 - ⛔ **The registered band — within `8` meV of `54.00` — FAILS, with the criterion unmoved.**
 
+## ⛔ ORDER `r7867` CORRECTS THE FIGURE THIS CONTROL RAN AT, AND IT IS STATED HERE AS THE ORDER ASKS
+
+**This revision's control ran at `DNEFF = +0.0293`, the figure `r7865` ordered.** `r7867` corrects
+it: cc66 read the CAMB object its reference actually builds and it is `N_eff = 3.044000` — the
+`3.0293` was the effective massless count plus the INTEGER massive count, where CAMB's one massive
+state is worth `1.0147` in those units. **So the like-for-like figure is `+0.044`, and every number
+in Ⓒ③ above was read at `+0.0293`.**
+
+The order says to state that in the landing and re-read the control at `+0.044` before the arm.
+Both are done: this is the statement, and the re-read is running on a grid keyed to the corrected
+figure. ⌗ *Only the CONTROL needs it — the arm of record carries no `DNEFF` under either figure,
+so its sixteen points are CARRIED into the corrected grid rather than re-run, which is exact and
+not an approximation: the two generators' arm-of-record invocations are byte-identical, and the
+carried points' own configs read `DNEFF: null`.*
+
+⚠ **What the correction does NOT change, and what it may:** cc66's own table has all three
+settings inside the `5e-03` band, with the density and `H` improving monotonically from unset to
+`+0.0293` to `+0.044`, so this is a refinement and not a reversal. But **the limits of Ⓒ③ are the
+numbers most exposed to it**, because they are where a small shift in the control's spectra is
+amplified by the very lean Ⓑ② measured. They are reported as read at `+0.0293` and labelled that
+way, and the `+0.044` read supersedes them when it lands.
+
 ⚠ **And what this revision CANNOT separate, said rather than left implicit:** the re-solve changed
 **two** things at once, the repaired background and the ruling's `N_eff` on the control. At zero
 sum the switch is inert, so the `7.6e-03` the TT spectra move there is the `N_eff` ruling alone —
