@@ -36,14 +36,27 @@ BANKED = os.path.join(R7853, 'out5')
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    # the repair must actually be in the file this run imports, checked rather than assumed
+    # ** the repair must be in the file this run imports, and the check is STRUCTURAL. **
+    #   ⛔ The first cut of this guard asked whether `'round(h0'` appears in the source -- and it
+    #   REFUSED on the repaired file, because the docstring explaining the repair quotes the old
+    #   key.  A guard keyed on a spelling, tripped by prose about the very thing it guards.  So it
+    #   now parses the function and reads the `key` assignment itself: the value must be a plain
+    #   tuple of bare names, which a `round(...)` call is not, whatever any comment says.
+    import ast
     import inspect
-    src = inspect.getsource(PL.bao_min)
-    if 'round(h0' in src:
-        print('  ⛔ the memo is still rounded in the imported module -- refusing to run')
+    fn = ast.parse(inspect.getsource(PL.bao_min).lstrip()).body[0]
+    keys = [n.value for n in ast.walk(fn)
+            if isinstance(n, ast.Assign) and len(n.targets) == 1
+            and isinstance(n.targets[0], ast.Name) and n.targets[0].id == 'key']
+    exact = (len(keys) == 1 and isinstance(keys[0], ast.Tuple)
+             and all(isinstance(e, ast.Name) for e in keys[0].elts))
+    if not exact:
+        print('  ⛔ the imported `bao_min` does not key on bare names -- refusing to run.  '
+              'Its key is: %s' % (ast.dump(keys[0]) if len(keys) == 1 else '%d assignments'
+                                  % len(keys)))
         return 1
-    print('  the imported `bao_min` keys on the exact pair, confirmed by reading its source',
-          flush=True)
+    print('  the imported `bao_min` keys on the exact pair (%s), read off its parsed source rather '
+          'than matched in its text' % ', '.join(e.id for e in keys[0].elts), flush=True)
     done = skipped = 0
     for s in PL.SUMS:
         path = os.path.join(OUT, '%s_%.3f.json' % (MODE, s))
