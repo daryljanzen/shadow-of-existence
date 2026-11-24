@@ -1,0 +1,27 @@
+{
+ "amplitude_handover": {
+  "minus_low36": 52.54062548922206,
+  "move": -13.517781901401392,
+  "move_when_solved": -20.08684766570491,
+  "share_of_the_move_the_amplitude_carries": 0.3270331847798672,
+  "whole": 39.02284358782067
+ },
+ "high_end_control": {
+  "holds": true,
+  "minus_high36": 55.55643755212204,
+  "minus_low36": 77.1643729509548,
+  "move_high": 1.5210877331278496,
+  "move_low": -20.08684766570491,
+  "whole": 57.07752528524989
+ },
+ "late_isw": {
+  "minus12": null,
+  "move": null,
+  "n_bins": 13,
+  "whole": null
+ },
+ "tau_prior": {
+  "chi2_cmb_carries_tau": false,
+  "verdict": "NO -- not in this path"
+ }
+}
