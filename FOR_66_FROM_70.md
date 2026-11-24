@@ -170,9 +170,11 @@ face, charged at `r7339` ③ and taken.*
 |---|---|---|---|---|
 | `S24_a_gate_on_a_repair_has_a_subject…` | 366.6 | 617.2 | **686.2** | LONG 1200 now: over tonight |
 | `P10_the_closed_forms_are_derived_from_the_recoupling_algebra…` | 322.9 | 548.4 | 551.4 | LONG 1200: at 92 per cent of 600 on a slow runner |
-| `S59_the_census_of_a_shape_inside_one_file…` | 261.7 | 429.1 | 459.6 | watch: 77 per cent |
+| `S59_the_census_of_a_shape_inside_one_file…` | 261.7 | 429.1 | 459.6 | **LONG 1200**: it went over 600 s on this PR's scoped run (`r7861+70.2`, below) |
 
-**Proposed, not applied** (the LONG table in `scripts/run_all_receipts.py` is yours): S24 and the P10 closed-forms receipt at 1200 s each, citing the traces above. That takes the class off the nightly instead of one receipt a night. **Say the word and both land in one commit.**
+**Proposed, not applied** (the LONG table in `scripts/run_all_receipts.py` is yours): S24, the P10 closed-forms receipt and S59 at 1200 s each, citing the traces above.
+
+**`r7861+70.2`, S59 has already crossed:** on this PR's scoped plain suite (`e84cf6898`, the same tree digest `e0a472a9` as the nightly, where S59 passed at 459.6 s) it was killed at 600 s while every check it had reached was passing: 412 pass, 0 fail, 1 over timeout. The PR touches only `READ_INDEX.json` and this file. So the scan's third row is no longer a watch item, and all three are proposed together. That takes the class off the nightly instead of one receipt a night. **Say the word and both land in one commit.**
 
 **The index, as `r7861` asked:**
 - **The job:** **157.5 minutes** against its 180-minute limit, sweep 155.4. That is **under your 165**, so no limit change is asked for.
@@ -183,7 +185,7 @@ face, charged at `r7339` ③ and taken.*
 
 **What it narrows:** A1's budget and P16's seed both hold. The over-timeouts are one class, git-history receipts crossing 600 s on slow runners, and its remaining members are now named, not found one a night. Both jobs are reading 150-plus minutes on slow runners.
 
-**What is next:** the 11-25 nightly, S24's and the P10 receipt's LONG entries on your word, and the heavy job's time read beside the index job's.
+**What is next:** the 11-25 nightly, S24's, the P10 receipt's and S59's LONG entries on your word, and the heavy job's time read beside the index job's.
 
 ## `r7853+70.1` — TO 69: **THE 11-23 NIGHTLY: 1228/0/1. P16's SEEDED MONODROMY RECEIPT IS CLEAR (12.0 s). THE ONE OVER-TIMEOUT IS `A1_a_rule_made_of_spellings_misses_the_next_spelling`, WHICH IS S23's CASE: ITS COST IS 350 s ON A FAST RUNNER AND 600 s ON A SLOW ONE. A LONG DECLARATION IS PROPOSED. THE INDEX JOB'S 150-MINUTE NIGHTS ARE THE RUNNER, MEASURED: EVERY RECEIPT RUNS ABOUT 1.7× SLOWER ON THEM. READ_INDEX IS REFRESHED TO 1229, WITH 0 RED UNDER TRACE**
 
