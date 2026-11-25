@@ -1,0 +1,254 @@
+{
+ "env_calibrated": {
+  "crossing_meV": 185.95841975495048,
+  "delta": [
+   1.1231341802554198,
+   0.42073444043126074,
+   0.0,
+   0.10099130781691201,
+   1.1997658096452142,
+   3.299738779323434,
+   6.3899941650356595,
+   10.469374199847152,
+   21.532212167518082,
+   36.49012233039366,
+   55.46064136042696
+  ],
+  "dips": [],
+  "limit_meV": 185.95841975495048,
+  "min_at": 0.06,
+  "monotonic_above_min": true,
+  "sums": [
+   0.0,
+   0.03,
+   0.06,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "totals": [
+   2167.436793121669,
+   2166.7343933818447,
+   2166.3136589414135,
+   2166.4146502492304,
+   2167.5134247510587,
+   2169.613397720737,
+   2172.703653106449,
+   2176.7830331412606,
+   2187.8458711089315,
+   2202.803781271807,
+   2221.7743003018404
+  ]
+ },
+ "env_minimised": {
+  "crossing_meV": 287.7723470975698,
+  "delta": [
+   0.43950005940951087,
+   0.20740291012180023,
+   0.0,
+   0.2981734971131118,
+   1.252499154891666,
+   1.2319344465086033,
+   1.7541740374372239,
+   3.0194196946554257,
+   8.330232672318289,
+   18.137084273915207,
+   33.632197051349976
+  ],
+  "dips": [
+   [
+    0.2,
+    -0.02056470838306268
+   ]
+  ],
+  "limit_meV": null,
+  "min_at": 0.06,
+  "monotonic_above_min": false,
+  "sums": [
+   0.0,
+   0.03,
+   0.06,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "totals": [
+   2166.486679642833,
+   2166.2545824935455,
+   2166.0471795834237,
+   2166.345353080537,
+   2167.2996787383154,
+   2167.2791140299323,
+   2167.801353620861,
+   2169.066599278079,
+   2174.377412255742,
+   2184.184263857339,
+   2199.6793766347737
+  ]
+ },
+ "fork": {
+  "envelope_crossing_meV": 287.7723470975698,
+  "envelope_dips": true,
+  "envelope_is_not_a_limit": true,
+  "raw_dips": true,
+  "raw_limit_meV": null,
+  "verdict": "** THE RAW READING DIPS AND SO DOES THE ENVELOPE. **  Basin mixing does not account for this rung, so something else is carrying it here and it is NOT named by this file -- reported as unseparated on this rung, with the earlier rungs' basin result standing on its own"
+ },
+ "plumbing": {
+  "max_rel_change_vs_offset_rung": 0.007603258116254397,
+  "pol_dir": "pol_grid_bvel1_nufd_only",
+  "pp_grid": "phiphi_grid_eta4000_bvel1_primnorm1_nufd_only",
+  "pp_grid_is_this_rungs": true
+ },
+ "precondition": {
+  "blob": "0421f6877f931f916fd06f6ea10d4df363491305",
+  "cmb_points": 32,
+  "cr_points": 16,
+  "dneff_key_present": true,
+  "holds": true,
+  "lcdm_points": 16,
+  "lensing_points_cr": 16,
+  "lensing_points_lcdm": 16,
+  "no_offset_on_either_arm": true,
+  "nothing_carried": "both arms are solved on this rung",
+  "nufd_false_at_zero_sum": true,
+  "nufd_true_at_every_nonzero_sum": true
+ },
+ "raw_calibrated": {
+  "crossing_meV": 185.95833704143263,
+  "delta": [
+   1.123136270060968,
+   0.4207349929679367,
+   0.0,
+   0.10099443270246411,
+   1.1997692005738827,
+   3.2997422856556113,
+   6.3899971123219075,
+   10.46937652840461,
+   21.532213903029515,
+   36.49012581027,
+   55.46064558539274
+  ],
+  "dips": [],
+  "limit_meV": 185.95833704143263,
+  "min_at": 0.06,
+  "monotonic_above_min": true,
+  "sums": [
+   0.0,
+   0.03,
+   0.06,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "totals": [
+   2167.436792600012,
+   2166.734391322919,
+   2166.313656329951,
+   2166.4146507626533,
+   2167.5134255305247,
+   2169.6133986156065,
+   2172.7036534422728,
+   2176.7830328583555,
+   2187.8458702329804,
+   2202.803782140221,
+   2221.7743019153436
+  ]
+ },
+ "raw_minimised": {
+  "crossing_meV": 181.4362749512743,
+  "delta": [
+   0.43950005940951087,
+   0.20740291012134549,
+   0.0,
+   0.2981734971131118,
+   1.4611962619578662,
+   3.44744262858012,
+   6.3586679286941035,
+   10.2691456526627,
+   21.19126059353266,
+   36.48136980207528,
+   33.632197051349976
+  ],
+  "dips": [
+   [
+    0.6,
+    -2.8491727507253017
+   ]
+  ],
+  "limit_meV": null,
+  "min_at": 0.06,
+  "monotonic_above_min": false,
+  "sums": [
+   0.0,
+   0.03,
+   0.06,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "totals": [
+   2166.486679642833,
+   2166.254582493545,
+   2166.0471795834237,
+   2166.345353080537,
+   2167.5083758453816,
+   2169.494622212004,
+   2172.405847512118,
+   2176.3163252360864,
+   2187.2384401769564,
+   2202.528549385499,
+   2199.6793766347737
+  ]
+ },
+ "reference": {
+  "calibrated": 30.56,
+  "minimised": 54.0
+ },
+ "rungs": [
+  {
+   "calibrated_meV": 81.94,
+   "minimised_meV": 69.97,
+   "provenance": "r7864",
+   "rung": "the landed bank: no repair, no offset"
+  },
+  {
+   "calibrated_meV": 185.95833704143263,
+   "minimised_meV": null,
+   "provenance": "r7870 item \u2461",
+   "rung": "repair ON, no offset  (THIS GRID)"
+  },
+  {
+   "calibrated_meV": 185.69,
+   "minimised_meV": null,
+   "provenance": "r7866",
+   "rung": "repair ON, offset +0.0293"
+  },
+  {
+   "calibrated_meV": 185.92,
+   "minimised_meV": null,
+   "provenance": "r7870 item \u2460",
+   "rung": "repair ON, offset +0.044"
+  }
+ ]
+}

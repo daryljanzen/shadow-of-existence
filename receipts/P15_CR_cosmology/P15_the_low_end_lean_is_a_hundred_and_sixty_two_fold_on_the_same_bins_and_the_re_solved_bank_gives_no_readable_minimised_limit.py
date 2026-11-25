@@ -159,14 +159,35 @@ check('Ⓑ②ᶜ ⛔ THE REGISTERED EXPECTATION THAT THE TWO PIPELINES DIFFER MO
          LN['reference']['rd_min']['banded']['TT 1001-1500']))
 
 _mv = SB['moves_meV']
+#: ⛔⛭⛭ ** THE SECOND PIN IN THIS ARM ASSERTED AN ARTEFACT, AND IT IS CORRECTED HERE AT `r7870`
+#:   ON ORDER `r7869` ITEM ④ (found by `cc66`). **  *`same_bins.py`'s CAMB cache was built once
+#:   outside the mode loop and keyed on the SUM ALONE, so the first reference mode to run
+#:   populated it and the second was served the first mode's spectra.  `rd_min` ran first, so
+#:   `rd_min`'s column was always its own -- its totals are BIT-IDENTICAL before and after the
+#:   fix -- and `rd_camb`'s `-0.12` was `rd_min`'s relabelled.*
+#:   ⇒ *** THE HEADLINE IS UNTOUCHED, and that is a fact about the code path and not a hope:
+#:       both ratios divide by `reference_rd_min`, the mode that populated the cache, so `162.28`
+#:       and `389.42` stand in every digit. ***
+#:   ⚠ ** But the relabelled column was hiding a real difference, which is the part worth saying:
+#:     `rd_camb`'s true move is `-0.26` meV, `2.106` times `rd_min`'s, and its own crossing was
+#:     misreported as `16.16` where it is `13.44`.  So the reference carries TWO rulers at the low
+#:     end and they differ by a factor of two. **  ⇒ *The lean therefore has a SECOND denominator:
+#:     `77`-fold frozen and `185`-fold re-profiled against `rd_camb`, against `162` and `389`
+#:     against `rd_min`.  The conclusion survives the WORSE denominator -- it is two orders of
+#:     magnitude either way -- so what changes is that the figure is a RANGE and not one number,
+#:     and this arm now pins both ends.*
 check('Ⓑ②ᵈ ** THE COMPARABLE NUMBER, ON THE SAME THIRTY-SIX BINS: THE INSTRUMENT MOVES 162 TIMES '
       'THE REFERENCE ON THE REFERENCE\'S OWN TREATMENT OF THE PARAMETERS, AND 389 WITH ITS OWN '
-      'FOUR RE-PROFILED. **  -20.09 meV against -0.12 frozen, -48.20 against -0.12 profiled.  ⇒ '
-      '*The order\'s forty-fold was a ratio between two removals sharing seven bins; this is the '
-      'one taken on one set*',
+      'FOUR RE-PROFILED -- AND 77 AND 185 AGAINST THE REFERENCE\'S *OTHER* RULER, WHICH MOVES '
+      'TWICE AS FAR. **  -20.09 meV against -0.12 frozen, -48.20 against -0.12 profiled, with '
+      'the other ruler at -0.26.  ⇒ *The order\'s forty-fold was a ratio between two removals '
+      'sharing seven bins; this is the one taken on one set, and it is two orders of magnitude '
+      'on EITHER of the reference\'s rulers*',
       abs(_mv['instrument_frozen'] - (-20.09)) < 0.005
       and abs(_mv['reference_rd_min'] - (-0.12)) < 0.005
-      and abs(_mv['reference_rd_camb'] - (-0.12)) < 0.005
+      and abs(_mv['reference_rd_camb'] - (-0.26)) < 0.005
+      and abs(_mv['reference_rd_camb'] / _mv['reference_rd_min'] - 2.106) < 0.001
+      and abs(_mv['instrument_frozen'] / _mv['reference_rd_camb']) > 70.0
       and abs(_mv['instrument'] - (-48.20)) < 0.005
       and abs(SB['ratio_on_the_same_bins_frozen'] - 162.28) < 0.005
       and abs(SB['ratio_on_the_same_bins'] - 389.42) < 0.005
