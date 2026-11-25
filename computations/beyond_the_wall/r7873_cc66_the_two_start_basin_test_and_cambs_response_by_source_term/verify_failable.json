@@ -1,0 +1,218 @@
+{
+ "caught": 15,
+ "restored_green": true,
+ "total": 15,
+ "trials": [
+  {
+   "caught": true,
+   "claim": "the registered path control's own 1.976630e-03",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.001978606919415201,
+   "path": [
+    "path_control",
+    "rel"
+   ],
+   "record": "source_terms.json",
+   "was": 0.001976630289126075
+  },
+  {
+   "caught": true,
+   "claim": "the sixteen-pair closure residual that must EQUAL the path residual",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.001978606919417518,
+   "path": [
+    "closure",
+    "0",
+    "sixteen_vs_own"
+   ],
+   "record": "source_terms.json",
+   "was": 0.00197663028912839
+  },
+  {
+   "caught": true,
+   "claim": "the registered arithmetic's 26.683487 per cent shortfall",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.26710170775045133,
+   "path": [
+    "closure",
+    "0",
+    "autos_median_shortfall"
+   ],
+   "record": "source_terms.json",
+   "was": 0.2668348728775738
+  },
+  {
+   "caught": true,
+   "claim": "the ratio control at 5.858855e-04 of signal",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.0005864714204364475,
+   "path": [
+    "ratio_control",
+    "0.6",
+    "frac_of_signal"
+   ],
+   "record": "source_terms.json",
+   "was": 0.000585885534901546
+  },
+  {
+   "caught": true,
+   "claim": "ISW's 0.291812 share of the response",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.29210336239354073,
+   "path": [
+    "answer",
+    "0.6",
+    "ISW",
+    "signed_share_of_response"
+   ],
+   "record": "source_terms.json",
+   "was": 0.29181155084269805
+  },
+  {
+   "caught": true,
+   "claim": "ISW's 0.136091 weight -- the pin check_figures_pinned found ABSENT",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.13622664320952954,
+   "path": [
+    "answer",
+    "0.6",
+    "ISW",
+    "share_of_spectrum"
+   ],
+   "record": "source_terms.json",
+   "was": 0.13609055265687267
+  },
+  {
+   "caught": true,
+   "claim": "the monopole x ISW interference at 0.209044",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.20925257397070804,
+   "path": [
+    "interference",
+    "mono_x_isw"
+   ],
+   "record": "source_terms.json",
+   "was": 0.2090435304402678
+  },
+  {
+   "caught": true,
+   "claim": "the EARLY ISW's 0.945356 of the ISW response",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.946301043449055,
+   "path": [
+    "isw_window",
+    "halves",
+    "0.6",
+    "early",
+    "signed_share_of_ISW_response"
+   ],
+   "record": "source_terms.json",
+   "was": 0.9453556877612938
+  },
+  {
+   "caught": true,
+   "claim": "the window's closure at 1.049911e-14",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 1.050961032557301e-14,
+   "path": [
+    "isw_window",
+    "rel_to_undivided_isw"
+   ],
+   "record": "source_terms.json",
+   "was": 1.0499111214358652e-14
+  },
+  {
+   "caught": true,
+   "claim": "rd_camb's 0.08595087 chi2 separation",
+   "exit": 1,
+   "failed_arms": 2,
+   "moved": 0.08603682163556947,
+   "path": [
+    "modes",
+    "rd_camb",
+    "dchi2"
+   ],
+   "record": "two_start.json",
+   "was": 0.08595087076480468
+  },
+  {
+   "caught": true,
+   "claim": "rd_min's 0.00000658 -- the pin whose tolerance was SLACK at 1e-7",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 6.5897345407393e-06,
+   "path": [
+    "modes",
+    "rd_min",
+    "dchi2"
+   ],
+   "record": "two_start.json",
+   "was": 6.5831513893499505e-06
+  },
+  {
+   "caught": true,
+   "claim": "the registered criterion's own 0.5 bound, read from the record",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.5005,
+   "path": [
+    "criterion",
+    "same_dh0"
+   ],
+   "record": "two_start.json",
+   "was": 0.5
+  },
+  {
+   "caught": true,
+   "claim": "the midpoint's -0.05522985 below the worse endpoint",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": -0.055285078266056636,
+   "path": [
+    "modes",
+    "rd_camb",
+    "midpoint_minus_worse"
+   ],
+   "record": "basin_detail.json",
+   "was": -0.055229848417639005
+  },
+  {
+   "caught": true,
+   "claim": "rd_min's 0.009668 of fatol -- the scale my first test lacked",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.009677268362293033,
+   "path": [
+    "modes",
+    "rd_min",
+    "excess_over_fatol"
+   ],
+   "record": "basin_detail.json",
+   "was": 0.009667600761531503
+  },
+  {
+   "caught": true,
+   "claim": "the tau separation 0.00146063 the chi2 gap lives in",
+   "exit": 1,
+   "failed_arms": 1,
+   "moved": 0.0014620953605531306,
+   "path": [
+    "modes",
+    "rd_camb",
+    "separations",
+    "tau"
+   ],
+   "record": "basin_detail.json",
+   "was": 0.0014606347258273034
+  }
+ ]
+}
