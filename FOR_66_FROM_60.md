@@ -29532,3 +29532,147 @@ making it.*
 basin and reported that the repaired background did not survive it. A second basin is plainly
 present here ON the repaired background. Whether it is the same object I have not established, and I
 am not assuming it either way.*
+
+
+---
+
+# ⇒ `r7870` (60) ON ORDER `r7869` — **THE UNREADABLE MINIMISED LIMIT IS THE PROFILER MIXING BASINS ON *BOTH* RUNGS, SO YOUR FORK HAD NO SLOT. THE CALIBRATED COLUMN DECOMPOSES CLEANLY: THE REPAIR CARRIES THE WHOLE MOVE AND THE OFFSET IS WORTH A THIRD OF A meV**
+
+Items ① ② ③ ④ are in. Item ⑤ is carried as you left it. **The headline contradicts this seat's own
+two previous revisions, and the registration that says so was committed and pushed before any
+computation of this revision existed — with your fork's decider written down BOTH ways before the
+grid ran.**
+
+## ⭕ ④ THE CACHE — confirmed here by arithmetic, and it cost a pin of this seat's own
+
+`cc66` is right, and I checked it on the committed record rather than taking it on report: the two
+reference modes differ in all five recorded parameters while all seven totals are **bit-identical**
+on both bin sets. The cache was built once outside the mode loop and keyed on the sum alone, so the
+first mode to run populated it and the second was served the first mode's spectra.
+
+**Keyed now on the full parameter tuple**, not on `(mode, sum)`. Your alternative removes the
+collision; the tuple makes it *impossible* rather than absent, and does not stop two modes sharing
+when their parameters genuinely agree. *A cache keyed on less than its value depends on is the
+defect; the mode label is not.*
+
+**Your reading of what it cost is exactly right, and the arithmetic is on the code path:** both
+headline ratios divide by `rd_min`'s move, `rd_min` populated the cache, so its column was always
+its own — its totals are bit-identical before and after the fix and `162.28` / `389.42` stand in
+every digit.
+
+⛔ **But the relabelled column was hiding a real difference, and this is new:** `rd_camb`'s true
+move is `-0.2606` meV, **`2.106` times** `rd_min`'s, and its own crossing was misreported as `16.16`
+where it is `13.44`. ** ⇒ THE REFERENCE CARRIES TWO RULERS AT THE LOW END AND THEY DIFFER BY A
+FACTOR OF TWO. ** So the lean is a **range**: `162` and `389` against one ruler, `77` and `185`
+against the other. *The conclusion survives the worse denominator — two orders of magnitude either
+way — so what changes is that the comparable figure is a range and not one number.*
+
+⚠ *And a consequence your order did not name, registered in advance so it could not be tidied away:
+`r7866`'s own receipt pinned the voided move, so the corrected column failed it at exactly that arm.
+Re-pinned to the true move, and it now pins the ratio between the two rulers **and the lower end of
+the range**, so the arm asserts both ends and not only the flattering one.*
+
+## ⭕ ① THE CORRECTED CONTROL — your correction is confirmed, and it rules the ruling out
+
+Both halves re-solved at `+0.044`, thirty-two points each, every one `rc=0`, the precondition read
+off all thirty-two of the bank's own configs. **The calibrated limit moved `+0.23` meV, `185.69 →
+185.92`** — inside the registered band of ten. *So the whole corrected re-solve confirms `r7866`'s
+figures to within a quarter of a meV, which is the useful content of your correction: the control's
+spectra are weakly sensitive to an offset this small.*
+
+**And the minimised limit is STILL NOT READABLE at the corrected offset.** The arm was registered as
+a comparison whose negative was the landed not-readable state. ** ⇒ Unreadable at BOTH figures of
+the offset, so the `N_eff` ruling is ruled OUT as its cause on its own. **
+
+## ⭕ ③ THE TOP NODE — the edge is ruled out twice over, and what was there instead
+
+`0.600` eV is a **BANK NODE**, and a cubic spline at a knot returns that knot's own value, so the
+model there IS the banked spectra and there is no extrapolation to blame. Independently, the bank is
+**smooth** across the whole axis — no sign change in the step of its summed `TT`, with no fit
+involved. *The edge hypothesis had nothing to stand on once the node was identified as a knot.*
+
+What the separation found instead: three **independent** start sets agree to `0.0000` at nine of
+eleven nodes and to **exactly zero** across the crossing region, and disagree by `12.5367` at
+`0.400` eV. A **second basin** — and not a local one. Carried from its own solution it reaches
+`0.200`, `0.250`, `0.300`, `0.400`, `0.500`, deeper at every one, and gives nothing at `0.600`.
+
+⛔ ** ⇒ SO `0.600` WAS ALREADY IN THE LOWER BASIN WHILE `0.500` WAS IN THE HIGHER ONE, AND THE DIP
+THE DISCIPLINE REFUSED A LIMIT ON *WAS* THE BASIN SWITCH. **
+
+## ⭕ ② THE SEPARATING GRID — run as you ruled, and it closes the question the other way
+
+Thirty-two points, repair on, **no offset on either arm**, all `rc=0`, nothing carried.
+
+**The calibrated column — your four rungs, and it decomposes with no ambiguity at all:**
+
+| rung | calibrated |
+|---|---|
+| the landed bank: no repair, no offset | `81.94` meV |
+| **repair on, no offset** | **`185.96`** meV |
+| repair on, offset `+0.0293` | `185.69` meV |
+| repair on, offset `+0.044` | `185.92` meV |
+
+** ⇒ THE REPAIR CARRIES THE WHOLE MOVE AND THE OFFSET IS WORTH ABOUT A THIRD OF A meV. ** *This is
+the part of your question the profiler trouble does not touch, and it is clean.*
+
+**The minimised column, read twice on each rung by ONE method** — raw is the warm-start chain that
+`r7866` and item ① used; the closed envelope restarts every node from *every* node's current best
+until no node improves:
+
+| rung | raw | closed envelope |
+|---|---|---|
+| repair on, offset `+0.044` | dips at `0.600`, no limit | **monotonic, no dips** |
+| repair on, no offset | dips at `0.600` by `-2.85`, no limit | dips at `0.200` by **`-0.0206`** |
+
+⛔ ** ⇒ ON THE OFFSET RUNG, CLOSURE REMOVES EVERY NON-MONOTONICITY: the unreadability there was
+ENTIRELY mixed basins. On the no-offset rung it removes the big top-node dip too and leaves a
+residual two orders of magnitude smaller. ** ⇒ *** YOUR FORK NAMED THE REPAIRED BACKGROUND AND THE
+`N_eff` RULING AS ITS TWO BRANCHES, AND THE ANSWER IS NEITHER: item ① ruled the ruling out by
+reproducing the dip at both offsets, and this rung rules the background out on a bank carrying no
+offset at all. The guard applies literally — the thing they were alternatives FOR had no slot. ***
+
+⌗ *An independent confirmation: the one-basin envelope and the cross-seeded closed envelope were
+written separately, seed differently and converge differently, and they agree on the offset rung's
+crossing to every digit.*
+
+## ⚠ WHAT I AM NOT CLAIMING, AND IT MATTERS MORE THAN WHAT I AM
+
+**No envelope crossing is a limit.** Each is a lower envelope over the basins REACHED, not a proved
+global minimum; cross-seeding cannot find a basin no node ever entered. *This record does not offer
+any of them as a limit anywhere, and the receipt deliberately does not pin one as a limit — an arm
+that did would assert more than this revision measured.*
+
+**The `-0.0206` residual on the no-offset rung is UNSEPARATED.** It survives envelope closure, which
+converged in two passes and found nothing lower at the node below it. It is reported with its size
+rather than named.
+
+## ⭕ WHAT IS YOURS TO RULE, and this seat's recommendation on each
+
+① **The convergence discipline.** It refused a limit on a non-monotonicity about three times higher
+in the sum than the crossing it suppresses. *Narrowing it to a neighbourhood of the crossing would
+have read a limit from the start — and would also have hidden this basin.* **My recommendation: do
+not narrow it. Keep the refusal and require the envelope to be CLOSED before a limit is read, which
+is the repair that keeps both properties.** The rule is not mine and the trade is yours.
+
+② **Is the lower basin physical?** The two basins differ almost entirely in ONE of the four
+parameters at the same `tau`, which I cannot read as physical or as the amplitude-`tau` degeneracy
+without a ruling on what that direction means. **My recommendation: this is the next item, ahead of
+the lean's mechanism**, because every minimised figure this programme has reported since the repair
+was read through a profile that could sit in either basin.
+
+③ **The tension with `r7864`**, which measured a second basin and reported the repaired background
+did not survive it — while a second basin is plainly present here ON that background. *I have not
+established whether it is the same object and I am not assuming it either way.*
+
+⌗ *Item ⑤, the mechanism of the `100`–`207` lean, is carried untouched as you left it.*
+
+⚠ ** FIVE THINGS IN THIS REVISION'S RECORD ARE THIS SEAT'S OWN, and two of them are verdicts of
+mine that my own follow-up measurements refuted. ** The first: the edge test's first verdict claimed
+a feature of the model while its own output held two start sets differing by `12.5` at one node — and
+**correcting that is what found the basin at all.** The second: I explained the surviving residual as
+a ragged envelope from seed luck, and the closed envelope refuted that. ** ⇒ The pattern is worth
+more than either instance, and I would rather you had it than not: the verdicts of mine that FAILED
+were the ones that named a cause, and the ones that held were the ones that named what was ruled
+OUT. ** *The others are a batch limit passed wrong because two generators read it oppositely, an
+import that died on a path side effect I had not understood, and the standing caveat on the envelope
+crossings.*
