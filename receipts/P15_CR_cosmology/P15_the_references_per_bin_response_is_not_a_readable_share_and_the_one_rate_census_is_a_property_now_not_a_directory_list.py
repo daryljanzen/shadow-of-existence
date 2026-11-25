@@ -54,6 +54,7 @@ print('=' * 100)
 PBR = load(os.path.join(MINE, 'per_bin_response.json'))
 CLO = load(os.path.join(MINE, 'closure_and_reproduction.json'))
 FAI = load(os.path.join(MINE, 'failability.json'))
+_SAF = load(os.path.join(MINE, 'structural_arm_failability.json'))
 LEAN = load(os.path.join(SIXTY, 'lean.json'))
 SAME = load(os.path.join(SIXTY, 'same_bins.json'))
 LOWB = load(os.path.join(SIXTY, 'low_bins.json'))
@@ -224,22 +225,78 @@ check("⛭⛭ `r7869` ** ⑨ Ⓙ⑩ Ⓚ⑪ Ⓛ⑫ THE CONVERTED CLAUSE IS **FAIL
       '%d of %d at the intended arm: ' % (FAI['n_hit'], FAI['n_total'])
       + '; '.join('%s %s->%s' % (t['band'], t['want'], t['got']) for t in FAI['trials']))
 
-# ──────────────────────────────────────────────── ⑨ Ⓜ⑬ the directory list is gone
+# ──────────────────────────────────────────────── ⑨ Ⓜ⑬ no clause gates on a directory list
+#   ⛔⛭ THIS ARM WAS ITSELF KEYED ON A SPELLING AND `check_quote_pins` CAUGHT IT.  The first cut
+#   asserted `'R7860_DIRS' not in src` -- three string literals out of another receipt's source,
+#   which the quote-pin ratchet correctly reported as three new keys.  A clause that reads "the
+#   identifier `R7860_DIRS` is absent" goes GREEN the moment someone renames the list while keeping
+#   it, so it is the same defect this whole revision is about, in this seat's own hand: the FIFTH
+#   instance after the spelling-keyed guard, the rounded memo, the summed cache and the directory
+#   list itself.  ⇒ It is now STRUCTURAL and names no identifier of the other file: the target is
+#   parsed, every module-level name bound to a collection of PATH-LIKE strings is found, and no
+#   `check()` condition in the file may depend on any of them.
 TARGET = os.path.join(ROOT, 'receipts', 'P15_CR_cosmology',
                       'P15_the_sections_opening_figures_on_the_one_rate_and_the_published_comb_is_'
                       '298_5_not_298_94.py')
-src = io.open(TARGET, encoding='utf-8').read()
-check("⛭⛭ `r7869` ** ⑨ Ⓜ⑬ AND THE DIRECTORY LIST IS **GONE**: `R7860_DIRS` AND `R7860_CR` APPEAR "
-      "NOWHERE IN THE CONVERTED RECEIPT, WHILE THE `64` `LEAFGEOM=1` BANKS ARE STILL **COUNTED** ** "
-      "⇒ *** the clause had been extended by hand four times -- `pol_grid`, its `BVEL=1` re-solve, "
-      "and the two repaired-background re-solves -- and 60's argument that such a clause is a "
-      "reading with the hand still in it is taken. ** It never needs extending again: a bank on any "
-      "other rate is counted in the row, so an arrival is read and never absorbed. *** ⌗ *The count "
-      "is REPORTED and not gated, which is what lets the arrivals be visible without the condition "
-      "moving*",
-      'R7860_DIRS' not in src and 'R7860_CR' not in src and 'LEAFGEOM=1 banks counted' in src,
-      'R7860_DIRS present: %s; R7860_CR present: %s; the count is still reported: %s'
-      % ('R7860_DIRS' in src, 'R7860_CR' in src, 'LEAFGEOM=1 banks counted' in src))
+import ast
+
+_tree = ast.parse(io.open(TARGET, encoding='utf-8').read())
+
+
+def _is_pathish(node):
+    """a collection literal carrying strings that look like paths into the tree"""
+    elts = None
+    if isinstance(node, (ast.Tuple, ast.List, ast.Set)):
+        elts = node.elts
+    elif isinstance(node, ast.Call) and getattr(node.func, 'id', None) == 'frozenset' and node.args:
+        inner = node.args[0]
+        elts = inner.elts if isinstance(inner, (ast.Tuple, ast.List, ast.Set)) else None
+    if not elts:
+        return False
+    for e in ast.walk(node):
+        if isinstance(e, ast.Constant) and isinstance(e.value, str):
+            if os.sep in e.value or e.value in ('computations', 'beyond_the_wall', 'bank'):
+                return True
+        if isinstance(e, ast.Call) and isinstance(e.func, ast.Attribute) \
+                and e.func.attr == 'join':
+            return True
+    return False
+
+
+_pathish_names = set()
+for _node in _tree.body:
+    if isinstance(_node, ast.Assign) and len(_node.targets) == 1 \
+            and isinstance(_node.targets[0], ast.Name) and _is_pathish(_node.value):
+        _pathish_names.add(_node.targets[0].id)
+
+_gated_on = set()
+_conds = 0
+for _node in ast.walk(_tree):
+    if isinstance(_node, ast.Call) and getattr(_node.func, 'id', None) == 'check' \
+            and len(_node.args) >= 2:
+        _conds += 1
+        for _sub in ast.walk(_node.args[1]):
+            if isinstance(_sub, ast.Name):
+                _gated_on.add(_sub.id)
+_offending = sorted(_pathish_names & _gated_on)
+check("⛭⛭⛔ `r7869` ** ⑨ Ⓜ⑬ **NO CLAUSE IN THE CONVERTED RECEIPT GATES ON A DIRECTORY LIST**, and "
+      "this arm is STRUCTURAL because its own first cut was keyed on a spelling and the quote-pin "
+      "ratchet caught it ** ⇒ *** the target is parsed; every module-level name bound to a "
+      "collection of path-like strings is collected; and no `check()` condition in the file depends "
+      "on any of them. `%d` such name(s) exist and `%d` condition(s) were read. ** The clause the "
+      "order asked to convert had been hand-extended four times, and the conversion is only real if "
+      "nothing gates on the list -- which an absence-of-identifier test cannot establish, since "
+      "renaming the list would satisfy it. *** ⌗ ⛔ *This is the FIFTH instance of the revision's own "
+      "proposition and the first in this seat's own hand: a rule keyed on something the production "
+      "path does not guarantee -- here a spelling in another file -- is blind exactly where it must "
+      "bite. It was found by the corpus's own ratchet and not by this seat*"
+      % (len(_pathish_names), _conds),
+      not _offending and _conds >= 8 and _SAF['non_vacuous'] is True
+      and _SAF['pre']['arm_fails'] is True and _SAF['post']['arm_fails'] is False,
+      'path-like collection name(s) in the target: %s; gated on by a condition: %s; conditions read: '
+      '%d.  NON-VACUOUS: run against the clause as it stood at %s the same test FAILS, naming %s'
+      % (sorted(_pathish_names) or 'NONE', _offending or 'NONE', _conds,
+         _SAF['pre_rev'], _SAF['pre']['gated_on']))
 
 # ──────────────────────────────────────────────── every figure the INDEX row prints, pinned HERE
 #   ⛔ Each as a TWO-SIDED comparison against the literal, to half its last printed digit.  A
