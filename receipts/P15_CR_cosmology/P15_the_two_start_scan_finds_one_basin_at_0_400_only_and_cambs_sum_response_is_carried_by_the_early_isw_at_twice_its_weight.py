@@ -217,7 +217,7 @@ check("⛭⛔⛭ `r7873` ** ⑫ Ⓑ② **THE REGISTERED PATH CONTROL `Ⓘ⑨` FA
       "twice the band this seat registered. ** THREE DIAGNOSTICS SEPARATE A SETUP ERROR FROM THE "
       "MECHANISM. ⑴ It is INVARIANT to accuracy: identical to four digits across "
       "`lens_potential_accuracy` `1`..`4` and `lmax` `1200`/`2600`, so no accuracy setting moves it. "
-      "⑵ The trough reading is REFUTED, not assumed: at the worst multipole `ℓ = 376` the spectrum "
+      "⑵ The trough reading is REFUTED, not assumed: at the band's worst multipole -- which the detail line names -- the spectrum "
       "is `0.342941` of the band maximum -- not a trough -- and the residual at TT's DEEPEST points "
       "`2.241564e-04` is **SMALLER** than at its peaks `8.106748e-04`, which is the opposite of what "
       "a zero-crossing artefact does. ⑶ CAMB's own docstring names the cause: the symbolic sources "
