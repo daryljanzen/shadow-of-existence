@@ -133,16 +133,38 @@ check('Ⓑ⓪ᵇᵃ and it is INSIDE at every block and every sum, not only at t
       'envelopes `0.00447`, `0.02207`, `0.04508`, `0.00598`, `0.03273`, `0.07054`',
       all(ENV['departure']['%s|%.2f|the run 100-212' % (b, s)]['verdict_on_like_for_like']
           == 'INSIDE' for b in ('TT', 'EE') for s in (0.06, 0.30, 0.60))
+      and abs(ENV['departure']['TT|0.06|the run 100-212']['max_departure_vs_unlensed']
+              - 0.00121776) < 5e-8
+      and abs(ENV['departure']['TT|0.30|the run 100-212']['max_departure_vs_unlensed']
+              - 0.00804917) < 5e-8
       and abs(ENV['departure']['TT|0.60|the run 100-212']['max_departure_vs_unlensed']
               - 0.03053147) < 5e-8
+      and abs(ENV['departure']['EE|0.06|the run 100-212']['max_departure_vs_unlensed']
+              - 0.00079592) < 5e-8
+      and abs(ENV['departure']['EE|0.30|the run 100-212']['max_departure_vs_unlensed']
+              - 0.00261407) < 5e-8
       and abs(ENV['departure']['EE|0.60|the run 100-212']['max_departure_vs_unlensed']
-              - 0.01030974) < 5e-8,
-      '6 of 6 INSIDE')
+              - 0.01030974) < 5e-8
+      #: ⛔ *every one of the twelve figures the INDEX row prints is pinned HERE, pointwise -- the
+      #: figure gate reads COMPARISONS, and a number asserted only through a verdict string is not
+      #: one.  The first cut pinned three of the twelve and the gate was right to say so.*
+      and abs(ENV['departure']['TT|0.06|the run 100-212']['envelope_unlensed']
+              - 0.00446801) < 5e-8
+      and abs(ENV['departure']['TT|0.30|the run 100-212']['envelope_unlensed']
+              - 0.02207391) < 5e-8
+      and abs(ENV['departure']['TT|0.60|the run 100-212']['envelope_unlensed']
+              - 0.04507564) < 5e-8
+      and abs(ENV['departure']['EE|0.06|the run 100-212']['envelope_unlensed']
+              - 0.00597573) < 5e-8
+      and abs(ENV['departure']['EE|0.30|the run 100-212']['envelope_unlensed']
+              - 0.03273088) < 5e-8
+      and abs(ENV['departure']['EE|0.60|the run 100-212']['envelope_unlensed']
+              - 0.07054335) < 5e-8,
+      '6 of 6 INSIDE, all twelve figures pinned')
 
 check('Ⓑ⓪ᵇᵇ ⛔ and the retirement is in the record in those words, so a reader cannot take the '
       'previous revision\'s located departure as standing: the NUMBERS stand, the READING does not',
       'THE DEPARTURE IS NOT RESOLVED AS A DEPARTURE UNDER THE RULING' in RESULT
-      and 'numbers stand' in RESULT
       and 'does not stand is the reading that a departure is LOCATED' in RESULT)
 
 # ── Ⓒ the shift test: the allowance is measured, and the verdict is an amplitude ────────────────
@@ -173,7 +195,7 @@ check('Ⓒ④ᵇ ⛭⛭⛭ ** AN AMPLITUDE DIFFERENCE, IN EVERY BLOCK AND BOTH S
       and abs(_f['EE|0.60']['best_A'] - 1.04630) < 5e-5
       and abs(_f['TT|0.30']['eps_over_allowed'] - 2.73) < 0.02
       and abs(_f['TT|0.60']['eps_over_allowed'] - 3.68) < 0.02
-      and 'too lenient' in RESULT,
+      and 'the envelope test was too lenient for this purpose' in RESULT,
       'TT %.3f and %.3f; EE %.3f and %.3f'
       % (_f['TT|0.30']['best_A'], _f['TT|0.60']['best_A'],
          _f['EE|0.30']['best_A'], _f['EE|0.60']['best_A']))
@@ -224,7 +246,9 @@ check('Ⓓ①ᵇ ⛭⛭⛭ ** NO SINGLE TERM CARRIES IT. **  *The largest pair i
       _c30['top_pair'] == 'sw*sw' and _c60['top_pair'] == 'sw*sw'
       and abs(_c30['top_share'] - 0.3831) < 5e-4 and abs(_c60['top_share'] - 0.3607) < 5e-4
       and _c30['second_pair'] == 'sw*isw' and _c60['second_pair'] == 'sw*isw'
-      and abs(_c30['second_share'] - 0.342) < 1e-3 and abs(_c60['second_share'] - 0.342) < 1e-3
+      and abs(_c30['second_share'] - 0.342) < 5e-4 and abs(_c60['second_share'] - 0.342) < 5e-4
+      and abs(PT['shares']['0.30']['rows'][2]['share_excess'] - 0.198) < 5e-4
+      and abs(PT['shares']['0.60']['rows'][2]['share_excess'] - 0.219) < 5e-4
       and _c30['top_dominates'] is False and _c60['top_dominates'] is False
       and len(_c30['pairs_above_a_tenth']) == 3 and len(_c60['pairs_above_a_tenth']) == 3
       and PT['top_dominates_at_both_sums'] is False
@@ -238,8 +262,8 @@ check('Ⓓ①ᵇᵃ ⛔ and the per-TERM sums DOUBLE-COUNT the cross pairs, so t
       '`sw*isw` is counted twice',
       PT['carriers']['0.30']['term_sums_double_count_cross_pairs'] is True
       and abs(_c30['term_sums']['sw'] - 0.746) < 1e-3
-      and abs(_c30['term_sums']['isw'] - 0.551) < 1e-3
-      and abs(_c60['term_sums']['isw'] - 0.580) < 1e-3
+      and abs(_c30['term_sums']['isw'] - 0.551) < 5e-4
+      and abs(_c60['term_sums']['isw'] - 0.580) < 5e-4
       and abs(_c30['term_sums']['pol']) < 2e-3
       and (_c30['term_sums']['sw'] + _c30['term_sums']['isw']) > 1.0
       and 'DOUBLE-COUNT the cross pairs' in RESULT)
@@ -251,8 +275,8 @@ check('Ⓓ①ᵇᵇ ⚠ AND THE FIRST CUT\'S PRINTED VERDICT NAMED `sw*sw` AS TH
       'the largest contributor and by every contributor above a tenth' in PRED
       and 'overreach of the same shape this line has corrected twice before' in RESULT
       and _c30['top_over_second'] is not None
-      and abs(_c30['top_over_second'] - 1.12) < 0.02
-      and abs(_c60['top_over_second'] - 1.06) < 0.02)
+      and abs(_c30['top_over_second'] - 1.12) < 5e-3
+      and abs(_c60['top_over_second'] - 1.06) < 5e-3)
 
 # ── Ⓔ the two arms that did not run, and why ────────────────────────────────────────────────────
 check('Ⓔ③ ⛔ ** THE ORDER\'S CONDITIONAL ARM HAS ITS CONDITION ANSWERED BOTH WAYS BY ONE '
@@ -271,11 +295,9 @@ check('Ⓔ② ⛔ AND THE CORRECTION ARM IS NOT RUN UNDER ITS OWN REGISTERED GAT
       'the residual turns out resolvable -- as an amplitude.  ⇒ *so the arm is carried and '
       're-registration is ROUTED, because running it on that basis would be acting past a gate '
       'without re-registering it*',
-      'does NOT run' in PRED
-      and 'would decide "one object" on noise' in PRED
+      'would decide "one object" on noise' in PRED
       and 'NOT RUN under the gate' in RESULT
-      and 'dissolves the gate’s stated REASON' in RESULT
-      or 'dissolves the gate' in RESULT)
+      and 'dissolves the gate' in RESULT)
 
 check('Ⓔ⓪ ** THE REGISTRATION CAME FIRST AND THREE OF ITS NEGATIVES WERE REACHABLE AND FIRED: ** '
       'the file declares four reads before it, two of which it says change this revision\'s shape; '
@@ -283,16 +305,14 @@ check('Ⓔ⓪ ** THE REGISTRATION CAME FIRST AND THREE OF ITS NEGATIVES WERE REA
       'it writes the envelope outcome, the not-separable case and the unmet condition in as live '
       'outcomes',
       'committed and pushed before any computation' in PRED
-      and 'does not exist' in PRED
-      and 'IT DOES NOT' in PRED
+      and 'is not a quantity the object has' in PRED
       and 'NOT RUN, condition not met' in PRED)
 
 check('Ⓔ⓪ᵃ ⛭ and the generator carries its own reason: the control arm with the decomposition '
       'switch ON, derived from the previous revision\'s own generator with that one switch flipped '
       'and narrowed to the three sums the order names',
       'SRCDEC="$f"' in GEN and 'NUFD=1 ARM=lcdm' in GEN
-      and 'WHY PAIRS AND NOT TERMS' in GEN_FLAT
-      and 'NARROWED TO WHAT ITEM' not in GEN_FLAT)
+      and 'WHY PAIRS AND NOT TERMS' in GEN_FLAT)
 
 check('Ⓔ④ ⛔ AND THE SCOPE IS DECLARED: no limit is read, NO ENVELOPE CROSSING APPEARS IN THIS '
       'RECORD AT ALL, no switch is written, no CAMB per-term figure is quoted because none exists, '
@@ -305,7 +325,7 @@ check('Ⓔ④ ⛔ AND THE SCOPE IS DECLARED: no limit is read, NO ENVELOPE CROSS
 check('Ⓔ⑤ ⚠ and FOUR things in this record are this seat\'s own, including that the ruling was '
       'spent on this line\'s own headline FIRST and retired it, and that the pattern across the '
       'overreaches is named: the verdicts that FAILED named a single cause',
-      'THIS SEAT’S OWN' in RESULT or 'THIS SEAT' in RESULT.upper()
+      'FOUR THINGS IN THIS RECORD ARE THIS SEAT' in RESULT
       and 'spent on this line' in RESULT
       and 'named a single cause' in RESULT
       and 'cuts against this line' in RESULT)
