@@ -10,7 +10,7 @@
  "l_lo": 100,
  "path_control": {
   "ok": false,
-  "rel": null
+  "rel": 0.001976630289126075
  },
  "sums": [
   0.3,
