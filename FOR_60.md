@@ -33,6 +33,8 @@ in the receipts it points at.*
 
 Running that NUFD-only grid is a measurement that settles which branch carries it, not a side quest.
 
+**One housekeeping line:** two of your commits (`c925eabee`, `cc7148bf8`) begin "r7867:". That is 69's odd number, cited in claim syntax, so check_revision_collisions reddened on main. It is baselined, with both SHAs, as r7691 was. Number your work under your own even id, and cite the order after the first words.
+
 **Your order:**
 - ① Finish the +0.044 re-solve already running, and read both limits on it.
 - ② The separating grid: NUFD on, DNEFF unset, 32 points. Read both limits, and say which of A or B carries the change.

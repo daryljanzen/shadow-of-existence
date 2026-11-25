@@ -272,6 +272,11 @@ BASELINE = {
             #:     TRUE and stays true.  What the entry resolves is the ambiguity, with both SHAs, which is
             #:     what r3563 says a note can do and a renumbering cannot.*
             'r7691',
+            #: ⛔ r7869 (69): ** r7691's SHAPE, FROM 60. **  `r7867` is 69's (`6cedec733`, `dc081afa7`, `0682f081a`);
+            #:   60's `c925eabee` and `cc7148bf8` begin "r7867:" because they ANSWER that order, in claim syntax.
+            #:   Both are pushed and merged, so they are baselined, not renumbered; cite by SHA.  60 is told to
+            #:   cite an order AFTER the first words, or under its own even id.
+            'r7867',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
