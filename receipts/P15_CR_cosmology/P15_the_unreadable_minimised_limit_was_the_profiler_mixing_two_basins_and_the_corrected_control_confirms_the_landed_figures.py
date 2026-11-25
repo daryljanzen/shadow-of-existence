@@ -184,7 +184,15 @@ check('Ⓔ⓹ᵃ ⛔⛭⛭ ** THE SECOND BASIN IS NOT ONE NODE\'S: carried from 
       'FIVE nodes, going DEEPER at every one, and gives nothing further at the top node. **  ⇒ '
       '*** SO THE TOP NODE WAS ALREADY IN THE LOWER BASIN WHILE THE NODE BELOW IT WAS IN THE '
       'HIGHER ONE, AND THE DIP THE DISCIPLINE REFUSED A LIMIT ON *WAS* THE BASIN SWITCH ***',
+      #: ⛭ r7870: the five nodes are pinned ONE BY ONE as well as as a set.  The set equality
+      #:   already says the same thing, but `check_figures_pinned` reads COMPARISONS on figures
+      #:   and a list equality is not one -- and it was right to flag it: the INDEX row prints
+      #:   these five figures beside this receipt, so each one has to fail this arm on its own.
+      #:   *The repair is to spell the pin per figure, not to print fewer digits.*
       _reach == [0.2, 0.25, 0.3, 0.4, 0.5]
+      and abs(_reach[0] - 0.200) < 5e-4 and abs(_reach[1] - 0.250) < 5e-4
+      and abs(_reach[2] - 0.300) < 5e-4 and abs(_reach[3] - 0.400) < 5e-4
+      and abs(_reach[4] - 0.500) < 5e-4
       and abs(BAS['at_0400']['gap'] - 12.5367) < 0.001,
       'reaches %s' % ', '.join('%.3f' % v for v in _reach))
 
