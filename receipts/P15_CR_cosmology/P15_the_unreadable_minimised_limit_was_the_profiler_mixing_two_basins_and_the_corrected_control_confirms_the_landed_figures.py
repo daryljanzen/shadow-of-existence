@@ -22,7 +22,7 @@ than this revision measured.*
 ⌷ ** THE ID. **  `69` ordered this as `r7869`, which merged `r7866`, applied this line's census
 routing, routed `cc66`'s cache defect, and ruled the separating grid.
 
-⚠ ** THE HEADLINE CONTRADICTS THIS SEAT'S OWN TWO PREVIOUS REVISIONS, AND FOUR THINGS IN THE RECORD
+⚠ ** THE HEADLINE CONTRADICTS THIS SEAT'S OWN TWO PREVIOUS REVISIONS, AND FIVE THINGS IN THE RECORD
 ARE THIS SEAT'S OWN -- THE FIRST OF THEM AN OVERREACH IN THIS REVISION'S OWN EDGE TEST, WHOSE
 CORRECTION IS WHAT FOUND THE BASIN AT ALL. **
 
@@ -75,6 +75,9 @@ TOP = load('top_node.json')
 BAS = load('second_basin.json')
 ONE = load('one_basin.json')
 SB = load('same_bins.json', D66)
+SEP = load('limits_separating.json')
+ECO = load('envelope_closed_nufd_only.json')
+ECD = load('envelope_closed_nufd_dneff044.json')
 RESULT = text('RESULT.md')
 PRED = text('PREDICTION.md')
 
@@ -273,6 +276,82 @@ check('Ⓓ④ᵈ ⇒ ** SO THE LEAN HAS A SECOND DENOMINATOR AND IS A RANGE RATH
       and abs(_second - 77.07) < 0.5,
       '%.2f-fold on the other ruler' % _second)
 
+# ── Ⓑ ② the separating grid ────────────────────────────────────────────────────────────────────
+_sp = SEP['precondition']
+check('Ⓑ②ᵃ ** THE SEPARATING RUNG IS THE ONE THE ORDER NAMED, read off ALL THIRTY-TWO of its own '
+      'recorded configs: thirty-two CMB points and sixteen lensing points on each arm, the offset '
+      'key present everywhere and reading NONE on EITHER arm, the repair on at every nonzero sum '
+      'and off at the zero-sum node. **  ⇒ *nothing is carried on this rung -- both arms are '
+      'solved here, unlike the offset rungs where the arm of record was copied across*',
+      _sp['cmb_points'] == 32 and _sp['lcdm_points'] == 16 and _sp['cr_points'] == 16
+      and _sp['lensing_points_lcdm'] == 16 and _sp['lensing_points_cr'] == 16
+      and _sp['dneff_key_present'] is True
+      and _sp['no_offset_on_either_arm'] is True
+      and _sp['nufd_true_at_every_nonzero_sum'] is True
+      and _sp['nufd_false_at_zero_sum'] is True
+      and _sp['holds'] is True,
+      'no offset on either arm: %s' % _sp['no_offset_on_either_arm'])
+
+_rungs = {r['rung']: r for r in SEP['rungs']}
+_cal = sorted(r['calibrated_meV'] for r in SEP['rungs'] if 'no repair' not in r['rung'])
+check('Ⓑ②ᵈ ⛭⛭ ** THE CALIBRATED COLUMN DECOMPOSES WITH NO AMBIGUITY: `81.94` meV on the landed '
+      'bank against `185.96`, `185.69` and `185.92` on the three REPAIRED rungs, which agree to a '
+      'third of a meV however the offset is set.  ⇒ THE REPAIR CARRIES THE WHOLE MOVE AND THE '
+      'OFFSET IS WORTH ABOUT A THIRD OF A meV. **  ⇒ *this is the part of the order\'s four-rung '
+      'question the profiler trouble does not touch*',
+      abs(_cal[-1] - _cal[0]) < 0.40
+      and all(180.0 < v < 190.0 for v in _cal)
+      and abs(_rungs['the landed bank: no repair, no offset']['calibrated_meV'] - 81.94) < 0.005
+      and len(_cal) == 3,
+      'three repaired rungs span %.2f meV, against 81.94 on the landed bank'
+      % abs(_cal[-1] - _cal[0]))
+
+check('Ⓑ②ᵇ⓵ THE RAW READING DIPS ON THIS RUNG TOO, at the top node, so the profiler reports no '
+      'limit on a bank that carries NO offset at all  ⇒ *which is already enough to rule the '
+      'repaired background out as the cause, the same way item ① ruled out the ruling by '
+      'reproducing the dip at both figures of the offset*',
+      SEP['raw_minimised']['limit_meV'] is None
+      and SEP['raw_minimised']['monotonic_above_min'] is False
+      and abs(SEP['raw_minimised']['dips'][-1][0] - 0.600) < 5e-4,
+      'raw dips at %.3f eV' % SEP['raw_minimised']['dips'][-1][0])
+
+check('Ⓑ②ᵇ⓶ ⛔⛭⛭ ** AND ON THE OFFSET RUNG THE CLOSED ENVELOPE IS MONOTONIC WITH NO DIPS AT ALL: '
+      'closure removes EVERY non-monotonicity there, so the unreadability on that rung was '
+      'ENTIRELY the profile sitting in mixed basins. **  ⇒ *** the order\'s fork named the '
+      'repaired background and the N_eff ruling as its two branches, and the answer is NEITHER ***',
+      ECD['minimised']['monotonic_above_min'] is True
+      and ECD['minimised']['dips'] == []
+      and ECD['minimised']['crossing_meV'] is not None,
+      'monotonic, crossing %.2f meV' % ECD['minimised']['crossing_meV'])
+
+check('Ⓑ②ᵇ⓷ ⛭ AND TWO SEPARATELY WRITTEN METHODS AGREE ON THAT RUNG\'S CROSSING TO EVERY DIGIT -- '
+      'the one-basin envelope and the cross-seeded closed envelope  ⇒ *an independent '
+      'confirmation, not a repetition: the two files seed differently and converge differently*',
+      abs(ECD['minimised']['crossing_meV'] - ONE['minimised']['crossing_meV']) < 0.005,
+      '%.2f by both' % ECD['minimised']['crossing_meV'])
+
+check('Ⓑ②ᵉ ⚠ ** AND WHAT SURVIVES ON THE NO-OFFSET RUNG IS REPORTED AS THE RESIDUAL IT IS, NOT '
+      'NAMED: closure removes the top-node dip there too -- the big one -- and leaves a dip two '
+      'orders of magnitude smaller at a lower node, which SURVIVES cross-seeding. **  ⇒ *this arm '
+      'exists because a verdict of this seat\'s explained that residual as seed luck and the '
+      'closed envelope refuted it; cross-seeding cannot find a basin no node entered, so the rung '
+      'is UNSEPARATED and says so*',
+      ECO['minimised']['monotonic_above_min'] is False
+      and len(ECO['minimised']['dips']) == 1
+      and abs(ECO['minimised']['dips'][0][0] - 0.200) < 5e-4
+      and abs(ECO['minimised']['dips'][0][1] - (-0.0206)) < 5e-4
+      and abs(SEP['raw_minimised']['dips'][-1][1]) > 50.0 * abs(ECO['minimised']['dips'][0][1]),
+      'residual %+.4f at %.3f eV against the raw %+.4f'
+      % (ECO['minimised']['dips'][0][1], ECO['minimised']['dips'][0][0],
+         SEP['raw_minimised']['dips'][-1][1]))
+
+check('Ⓑ②ᶠ ⛔ AND NO ENVELOPE CROSSING IS PINNED AS A LIMIT ANYWHERE, on either rung: each is a '
+      'lower envelope over the basins REACHED, and the record says so of both  ⇒ *the same '
+      'discipline the one-basin crossing is under, applied to item ②*',
+      SEP['fork']['envelope_is_not_a_limit'] is True
+      and 'envelope crossings over the basins REACHED' in RESULT
+      and 'does not offer either as a limit' in RESULT)
+
 # ── Ⓕ the scope, and what this revision got wrong ──────────────────────────────────────────────
 check('Ⓕ① THE REGISTRATION WAS COMMITTED AND PUSHED BEFORE ANY COMPUTATION OF THIS REVISION '
       'EXISTED, and it registered the fork\'s decider BOTH WAYS before the grid was run so the '
@@ -281,14 +360,21 @@ check('Ⓕ① THE REGISTRATION WAS COMMITTED AND PUSHED BEFORE ANY COMPUTATION O
       and "THE FORK'S DECIDER, registered both ways before it is run" in PRED,
       'the registration states both')
 
-check('Ⓕ② ⚠ ** FOUR THINGS IN THIS RECORD ARE THIS SEAT\'S OWN, and the FIRST is an overreach in '
+check('Ⓕ② ⚠ ** FIVE THINGS IN THIS RECORD ARE THIS SEAT\'S OWN, and the FIRST is an overreach in '
       'this revision\'s own edge test: its first verdict claimed a feature of the model while its '
       'own output held two start sets differing by twelve units of chi2 at one node.  CORRECTING '
       'THAT IS WHAT FOUND THE BASIN. **  ⇒ *the others are a batch limit passed wrong, an import '
-      'that died on a path side effect, and the envelope caveat*',
-      'FOUR THINGS IN THIS RECORD ARE THIS SEAT' in RESULT
+      'that died on a path side effect, the envelope caveat, and a SECOND verdict of this '
+      'seat\'s own that its follow-up measurement refuted*',
+      'FIVE THINGS IN THIS RECORD ARE THIS SEAT' in RESULT
       and 'overreach' in RESULT
-      and 'batch limit passed wrong' in RESULT)
+      and 'batch limit passed wrong' in RESULT
+      #: ⛭ r7870: a FIFTH item was added when the closed envelope refuted this revision's own
+      #:   explanation of the residual dip, and this arm pins that it is there -- because the
+      #:   pattern across the two is the useful part: the verdicts that FAILED were the ones that
+      #:   named a cause, and the ones that held named what was ruled OUT.
+      and 'seed luck, not a feature' in RESULT
+      and 'the verdicts that failed were the ones that named a cause' in RESULT)
 
 check('Ⓕ③ AND THE SCOPE IS DECLARED: this revision does NOT rule on whether the lower basin is '
       'physical, does NOT narrow the convergence discipline, and does NOT reconcile the tension '

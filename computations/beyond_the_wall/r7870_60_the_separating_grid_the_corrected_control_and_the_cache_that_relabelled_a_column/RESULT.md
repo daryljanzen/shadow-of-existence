@@ -122,7 +122,62 @@ the basin. That trade belongs to whoever owns the rule; the measurement is route
 second basin and reported that the repaired background did not survive it. A second basin is plainly
 present here ON the repaired background. Whether it is the same object is not established.*
 
-## Ⓑ ② THE SEPARATING GRID — running
+## Ⓑ ② THE SEPARATING GRID — measured, and the fork has no slot for its answer
+
+Thirty-two points, the repair **on**, **no offset on either arm**, every one `rc=0`. Nothing is
+carried on this rung: both arms are solved here. **Ⓑ②ᵃ holds, checked on all thirty-two configs.**
+
+### The calibrated column decomposes with no ambiguity at all
+
+| rung | measured by | calibrated |
+|---|---|---|
+| the landed bank: no repair, no offset | `r7864` | `81.94` meV |
+| **repair on, no offset** | **this rung** | **`185.96`** meV |
+| repair on, offset `+0.0293` | `r7866` | `185.69` meV |
+| repair on, offset `+0.044` | item ① | `185.92` meV |
+
+⇒ ** THE REPAIR CARRIES THE WHOLE MOVE AND THE OFFSET IS WORTH ABOUT A THIRD OF A meV. **  *This is
+the part of the order's four-rung question that the profiler trouble does not touch, and it is clean:
+`81.94 → 185.9` is the repaired background, and all three repaired rungs agree to `0.3` meV however
+the offset is set.*
+
+### The minimised column, read twice on each rung by ONE method
+
+The raw reading is the profiler's warm-start chain — what `r7866` and item ① took. The closed
+envelope restarts every node from **every** node's current best until no node improves, so no node
+is left in a higher basin another node has already found a way into.
+
+| rung | raw | closed envelope |
+|---|---|---|
+| repair on, offset `+0.044` | dips at `0.600`, no limit | **monotonic, no dips**, crossing `300.98` meV |
+| repair on, no offset | dips at `0.600` by `−2.85`, no limit | dips at `0.200` by **`−0.0206`**, crossing `287.77` meV |
+
+⛔ ** ⇒ ON THE OFFSET RUNG, CLOSURE REMOVES EVERY NON-MONOTONICITY: the unreadability there was
+ENTIRELY the profile sitting in mixed basins. ON THE NO-OFFSET RUNG, closure removes the `0.600` dip
+too — the big one — and leaves a residual two orders of magnitude smaller at a different node. **
+
+⇒ **So the raw unreadability is basin mixing on BOTH rungs, and the order's fork named the repaired
+background and the `N_eff` ruling as its two branches when the answer is NEITHER.** Item ① had
+already ruled the ruling out on its own, by reproducing the unreadability at both figures of the
+offset; this rung rules the repaired background out the same way, on a bank that carries no offset at
+all. *The guard is the one that applies: when a fork names two objects, check that the thing they
+are alternatives FOR has a slot for only one of them. This one had no slot.*
+
+⌗ *An independent confirmation worth recording: the closed envelope and the earlier one-basin
+envelope were written separately and agree on the offset rung's crossing to every digit — `300.98`
+meV by both. Two methods, one number.*
+
+⚠ **What is NOT settled, stated as the residual it is.** The `−0.0206` dip at `0.200` on the
+no-offset rung **survives envelope closure** — cross-seeding converged in two passes and found
+nothing lower at `0.150`. Cross-seeding cannot find a basin no node ever entered, so this is
+reported as **unseparated on that rung**, with its size, rather than named. *And the `287.77` meV
+beside it is read THROUGH that dip, so it is not comparable with the other rung's crossing without
+this sentence attached.*
+
+⛔ *Neither crossing is a limit. Both are envelope crossings over the basins REACHED, and this
+record does not offer either as a limit anywhere.*
+
+## Ⓑ ② THE GRID AS IT WAS RUN
 
 Thirty-two points, the repair **on**, **no offset on either arm**. Nothing is carried on this rung:
 both arms are solved here. *Its generators are `r7866`'s own with the offset removed from the
@@ -137,7 +192,7 @@ unreadability. *The doubt is routed to `69` with this grid named as running, so 
 
 ---
 
-## ⚠ FOUR THINGS IN THIS RECORD ARE THIS SEAT'S OWN
+## ⚠ FIVE THINGS IN THIS RECORD ARE THIS SEAT'S OWN
 
 ⓵ **The edge test's first verdict was wrong, and correcting it is what found the basin.** Its first
 cut concluded "a feature of the model" from one cold start set agreeing that the dip was still there
@@ -156,3 +211,5 @@ the path *as a consequence of importing the limits module*; the first cut of the
 only this revision's own path.
 
 ⓸ **`300.98` meV is an envelope, not a limit**, and it is not offered as one anywhere in this record.
+
+⓹ **And a second verdict of this revision's own was wrong and was caught the same way.** `limits_separating.py` reported the separating rung UNSEPARATED on a logic that asked only *does the envelope dip at all*, and I then explained the surviving dip to the record as a ragged envelope from an incomplete seed set — *seed luck, not a feature*. **The closed envelope refuted that**: it converged in two passes and the dip survived unchanged. ⇒ *So the rung really is unseparated, the explanation I offered for it was not supported, and the correction came from the test built to check the claim rather than from re-reading it.* ⌗ *Twice in one revision a verdict of this seat's was too strong and its own follow-up measurement was what refuted it. The pattern is worth more than either instance: the verdicts that failed were the ones that named a cause, and the ones that held were the ones that named what was ruled OUT.*
