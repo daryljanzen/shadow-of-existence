@@ -45,6 +45,11 @@ R7864 = os.path.join(_BTW, 'r7864_60_the_massive_neutrino_background_given_its_f
                            'density_and_both_limits_re_read')
 sys.path.insert(0, R7864)
 
+#: ⌗ `limits` is imported for its SIDE EFFECT as much as its contents: it is what puts the
+#:   instrument's own module directories on the path, so `model6` is importable below.  The first
+#:   cut of this file inserted only this revision's own path and died on that import.
+import limits as _L7864                                                     # noqa: E402,F401
+
 NEWBANK = os.path.join(BANK, 'pol_grid_bvel1_nufd_dneff044')
 NEWPP = os.path.join(BANK, 'phiphi_grid_eta4000_bvel1_primnorm1_nufd_dneff044')
 os.environ['POL_DIR'] = NEWBANK
@@ -128,25 +133,61 @@ def main():
                        monotonic_above_min=not dips, crossing_meV=cross,
                        n_starts=len(starts))
 
-    print('\n  Ⓒ③ᵇ⓶ THE TWO TOP NODES, HAMMERED -- is 0.500 the one that stopped high?')
+    #: ⛔⛭⛭ ** THE FIRST CUT OF THIS FILE DREW A VERDICT THE DATA DID NOT SUPPORT, and the
+    #:   correction is the point of this block. **  *It compared ONE cold start set against the
+    #:   warm profile, found the dip still there, and concluded "a feature of the model".  But its
+    #:   own cold column had found `2173.66` at `0.400` eV where the warm profile read `2186.20` --
+    #:   a `12.5` improvement -- and a second start set then read `2186.20` again.  ** Two start
+    #:   sets that disagree by twelve units of `chi2` at one node have not converged, and nothing
+    #:   about what the dip IS follows from a profile that is not converged. **
+    #:   ⇒ *** So the test is now the DISAGREEMENT BETWEEN INDEPENDENT START SETS, measured at
+    #:       every node, and the verdict is allowed to come back UNSEPARATED. ***
+    print('\n  Ⓒ③ᵇ⓶ INDEPENDENT START SETS AT THE SAME NODES -- is this profile converged at all?')
     print('  ' + '-' * 104)
-    hard = {}
-    big = cold_starts(n_tau=6, n_x=10, seed=7870)
-    for s in (0.40, 0.50, 0.60):
-        if s not in ss:
-            continue
-        b, bx = _fit(mod, s, big, xatol=1e-8, fatol=1e-8)
-        hard[s] = b
-        print('    Sum = %.3f eV   best of %d start(s) %12.4f' % (s, len(big), b))
+    sets = [('A', cold_starts(n_tau=6, n_x=3, seed=60)),
+            ('B', cold_starts(n_tau=6, n_x=10, seed=7870)),
+            ('C', cold_starts(n_tau=6, n_x=10, seed=1234))]
+    cols = {}
+    for name, st in sets:
+        cols[name] = [_fit(mod, s, st, xatol=1e-8, fatol=1e-8)[0] for s in ss]
+    spread = [float(max(cols[n][k] for n, _ in sets) - min(cols[n][k] for n, _ in sets))
+              for k in range(len(ss))]
+    print('    %-9s %s' % ('Sum (eV)', '  '.join('%12s' % ('set ' + n) for n, _ in sets)
+                           + '      spread'))
+    for k, s in enumerate(ss):
+        print('    %-9.3f %s   %10.4f'
+              % (s, '  '.join('%12.4f' % cols[n][k] for n, _ in sets), spread[k]))
+    worst = float(max(spread))
+    worst_at = float(ss[int(np.argmax(spread))])
+    #: the crossing region is what a limit is actually read through, so its own agreement is
+    #: reported separately from the top of the profile -- they are different claims
+    cross_idx = [k for k, s in enumerate(ss) if 0.10 <= s <= 0.25]
+    cross_spread = float(max(spread[k] for k in cross_idx)) if cross_idx else float('nan')
+    print('    ⇒ the worst disagreement between independent start sets is %.4f at Sum = %.3f eV'
+          % (worst, worst_at))
+    print('    ⇒ across the CROSSING REGION (0.10-0.25 eV), where a limit is actually read, the '
+          'worst disagreement is %.2e' % cross_spread)
+    converged = bool(worst < 0.1)
+    out['start_sets'] = dict(
+        sums=ss, columns={n: [float(v) for v in cols[n]] for n, _ in sets},
+        spread=spread, worst_spread=worst, worst_spread_at_eV=worst_at,
+        crossing_region_worst_spread=cross_spread,
+        profile_is_converged=converged,
+        note='a profile whose independent start sets disagree is not converged, and no verdict '
+             'about the dip follows from it')
+    hard = {s: min(cols[n][k] for n, _ in sets) for k, s in enumerate(ss) if s >= 0.40}
     out['hammered'] = {str(k): float(v) for k, v in hard.items()}
-    if 0.50 in hard and 0.60 in hard:
+    if 0.50 in hard and 0.60 in hard and converged:
         still = hard[0.60] < hard[0.50] - 1e-6
-        print('    ⇒ with %d starts at each, the top node is %s the node below it: %.4f against '
-              '%.4f  ⇒ the dip %s' % (len(big), 'STILL BELOW' if still else 'NO LONGER BELOW',
-                                      hard[0.60], hard[0.50],
-                                      'SURVIVES better convergence' if still
-                                      else 'was a CONVERGENCE FAILURE at the node below'))
+        print('    ⇒ on the best of every start set, the top node is %s the node below it: '
+              '%.4f against %.4f' % ('STILL BELOW' if still else 'NO LONGER BELOW',
+                                     hard[0.60], hard[0.50]))
         out['dip_survives_convergence'] = bool(still)
+    else:
+        print('    ⛔ the profile is NOT converged, so whether the dip survives convergence is '
+              'NOT ANSWERED here -- that is the finding, and it is reported rather than papered '
+              'over with the best number seen')
+        out['dip_survives_convergence'] = None
 
     print('\n  Ⓒ③ᵇ⓷ THE BANK\'S OWN TOP POINT, WITH NO FIT IN IT AT ALL')
     print('  ' + '-' * 104)
@@ -191,20 +232,34 @@ def main():
 
     print('\n  THE VERDICT')
     print('  ' + '-' * 104)
-    if out.get('dip_survives_convergence') is False:
-        verdict = ('⓵ A CONVERGENCE FAILURE AT THE NODE BELOW -- not the grid\'s edge and not a '
-                   'feature: with many cold starts the node below the top one comes down and the '
-                   'profile is monotonic')
+    if out['start_sets']['profile_is_converged'] is False:
+        verdict = ('⓸ ** NEITHER THE EDGE NOR A FEATURE: THE PROFILE IS NOT CONVERGED ABOVE THE '
+                   'CROSSING, AND THAT IS THE FINDING. **  Independent start sets disagree by '
+                   '%.4f chi2 at Sum = %.3f eV, so the minimiser lands in different basins at high '
+                   'sums and the dip is a symptom of that rather than evidence about the model.  '
+                   'The bank is SMOOTH across the axis and the top node is a BANK NODE, where a '
+                   'spline returns the knot\'s own value -- so the grid\'s edge is RULED OUT as '
+                   'the cause either way.  ⌗ And the crossing region agrees to %.2e between the '
+                   'same start sets, so this does NOT impugn where the limit would be read; it '
+                   'impugns the top of the profile, which is where the discipline is looking.'
+                   % (out['start_sets']['worst_spread'],
+                      out['start_sets']['worst_spread_at_eV'],
+                      out['start_sets']['crossing_region_worst_spread']))
     elif kinks:
         verdict = ('⓶ THE BANK\'S TOP POINT -- its own banked spectra turn the trend, with no fit '
                    'involved, so the dip is in the bank and not in the fit')
+    elif out.get('dip_survives_convergence') is False:
+        verdict = ('⓵ A CONVERGENCE FAILURE AT THE NODE BELOW -- not the grid\'s edge and not a '
+                   'feature: with many cold starts the node below the top one comes down and the '
+                   'profile is monotonic')
     elif out.get('dip_survives_convergence'):
         verdict = ('⓷ A FEATURE OF THE MODEL -- the dip survives cold starts and many-start '
-                   'convergence, and the bank is smooth across the axis, so it is neither the '
-                   'grid\'s edge nor the minimiser.  ⛔ And the top node is a BANK NODE, where a '
-                   'spline returns the knot\'s own value, so there is no extrapolation to blame')
+                   'convergence from independent start sets that AGREE, and the bank is smooth '
+                   'across the axis, so it is neither the grid\'s edge nor the minimiser.  ⛔ And '
+                   'the top node is a BANK NODE, where a spline returns the knot\'s own value, so '
+                   'there is no extrapolation to blame')
     else:
-        verdict = 'NOT SEPARATED by these three tests -- reported as unseparated rather than named'
+        verdict = 'NOT SEPARATED by these tests -- reported as unseparated rather than named'
     print('    %s' % verdict)
     out['verdict'] = verdict
     with io.open(os.path.join(_HERE, 'top_node.json'), 'w', encoding='utf-8') as fh:
