@@ -1,0 +1,3 @@
+  lcdm S030 rc=0
+  lcdm S000 rc=0
+  lcdm S060 rc=0
