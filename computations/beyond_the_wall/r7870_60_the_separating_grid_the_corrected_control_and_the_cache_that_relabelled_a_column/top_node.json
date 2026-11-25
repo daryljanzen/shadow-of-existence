@@ -105,11 +105,85 @@
  },
  "crossing_target": 2.71,
  "dip_over_crossing": 2.998566916824308,
- "dip_survives_convergence": true,
+ "dip_survives_convergence": null,
  "hammered": {
-  "0.4": 2186.1954240798377,
+  "0.4": 2173.6586953386372,
   "0.5": 2201.5084513033216,
   "0.6": 2198.1604982282215
+ },
+ "start_sets": {
+  "columns": {
+   "A": [
+    2166.825251971316,
+    2166.5403183001104,
+    2166.1890276795066,
+    2166.2584745563786,
+    2167.1341745212703,
+    2168.893775809738,
+    2171.6410139334944,
+    2175.431382961864,
+    2173.6586953386372,
+    2201.5084513033216,
+    2198.1604982282215
+   ],
+   "B": [
+    2166.825251971316,
+    2166.5403183001104,
+    2166.1890276795066,
+    2166.2584745563786,
+    2167.1341745212703,
+    2168.893775809738,
+    2171.6410139334944,
+    2175.431382961864,
+    2186.1954240798377,
+    2201.5084513033216,
+    2198.1604982282215
+   ],
+   "C": [
+    2166.825251971316,
+    2166.5403183001104,
+    2166.1890276795066,
+    2166.2584745563786,
+    2167.1341745212703,
+    2168.893775809738,
+    2171.6410139334944,
+    2175.431382961864,
+    2186.1954240798377,
+    2201.5084513033216,
+    2198.1604982282215
+   ]
+  },
+  "crossing_region_worst_spread": 0.0,
+  "note": "a profile whose independent start sets disagree is not converged, and no verdict about the dip follows from it",
+  "profile_is_converged": false,
+  "spread": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   12.536728741200477,
+   0.0,
+   0.0
+  ],
+  "sums": [
+   0.0,
+   0.03,
+   0.06,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "worst_spread": 12.536728741200477,
+  "worst_spread_at_eV": 0.4
  },
  "sums": [
   0.0,
@@ -125,5 +199,5 @@
   0.6
  ],
  "top_node_eV": 0.6,
- "verdict": "\u24f7 A FEATURE OF THE MODEL -- the dip survives cold starts and many-start convergence, and the bank is smooth across the axis, so it is neither the grid's edge nor the minimiser.  \u26d4 And the top node is a BANK NODE, where a spline returns the knot's own value, so there is no extrapolation to blame"
+ "verdict": "\u24f8 ** NEITHER THE EDGE NOR A FEATURE: THE PROFILE IS NOT CONVERGED ABOVE THE CROSSING, AND THAT IS THE FINDING. **  Independent start sets disagree by 12.5367 chi2 at Sum = 0.400 eV, so the minimiser lands in different basins at high sums and the dip is a symptom of that rather than evidence about the model.  The bank is SMOOTH across the axis and the top node is a BANK NODE, where a spline returns the knot's own value -- so the grid's edge is RULED OUT as the cause either way.  \u2317 And the crossing region agrees to 0.00e+00 between the same start sets, so this does NOT impugn where the limit would be read; it impugns the top of the profile, which is where the discipline is looking."
 }
