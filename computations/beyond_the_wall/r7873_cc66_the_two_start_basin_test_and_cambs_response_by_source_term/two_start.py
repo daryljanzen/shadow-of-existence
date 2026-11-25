@@ -70,8 +70,9 @@ def main():
 
         for h0 in H0_STARTS:
             start = [h0] + base[1:]        # everything else at its own best fit
-            chi2, x = PL.profile(SUM, mode, start)
-            x = list(np.asarray(x, float))
+            det = PL.profile(SUM, mode, start)
+            chi2 = float(det['total'])
+            x = [float(det[k]) for k in NAMES]
             rec['runs']['%.2f' % h0] = dict(
                 start=list(start), chi2=float(chi2),
                 params=dict(zip(NAMES, [float(v) for v in x])),
