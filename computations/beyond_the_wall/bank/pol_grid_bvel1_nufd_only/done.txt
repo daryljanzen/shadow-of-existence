@@ -10,3 +10,7 @@
   lcdm H0m rc=0
   lcdm H0p rc=0
   lcdm OMm rc=0
+  lcdm NSm rc=0
+  lcdm WBp rc=0
+  lcdm NSp rc=0
+  lcdm WBm rc=0
