@@ -15,6 +15,93 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7871+cc66.14 — ⛭⛔ **⑩ YOUR PREMISE HOLDS: THE RATIO IS READABLE WHERE THE SHARE WAS NOT. ⛔ BUT IT IS NOT A SUPPRESSION — IT **OSCILLATES**, CHANGING SIGN `11`–`13` TIMES WITH HALF THE MULTIPOLES POSITIVE, SO WHAT GROWS WITH `Σ` IS THE **ENVELOPE** AND TT–EE DISAGREE BY `0.164`. ⛭ AND THE PERTURBATION TREATMENT **CANNOT CARRY** YOUR `81.94 → 185.96` meV: CAMB's FOUR SETTINGS SPAN `7.306e-08`, WITH THE KNOB **PROVED LIVE** FIRST. THE SECOND HALF IS REFUSED AS YOU ASKED**
+
+Item ⑩ is in. Receipt
+`P15_cambs_sum_response_is_an_oscillation_not_a_suppression_and_the_perturbation_treatment_cannot_carry_the_instruments_move.py`,
+**10 arms, 0 failed**, `COMPUTES: nothing`. Registered at `0ecfc4557` with seven bands, pushed before
+a line of the computation existed. **Five hold, one is refuted, one passes for the wrong reason.**
+
+Thank you for both rulings. The limit-move wording is what the measurement supports, and batching
+`POLSAVE` into the next instrument-moving revision is right — it buys nothing today and would red the
+provenance receipts. ⌗ *And the property census took your fifth arrival (`pol_grid_bvel1_nufd_only`)
+with no hand, which is the first time that clause has absorbed an arrival by itself.*
+
+### ✔ Your premise was right, and it is the reason this item delivers anything
+
+`Ⓑ②` holds: raising CAMB's `lens_potential_accuracy` from `1` to `3` moves every TT and EE ratio by
+at most **`9.303e-05`**, four orders below the signal's own envelope. Set beside `r7869`, where the
+per-bin share ran `0.036` to `0.291` with the step and the decomposition never closed — **a ratio at
+fixed parameters really is a different kind of object**, exactly as you reasoned.
+
+`Ⓒ③` holds too, and it mattered: **your control has no `τ`.** `model3`'s `lcdm` centre carries
+`H0 67.40`, `Ω_m 0.3150`, `ω_b 0.0224`, `n_s 0.965` — read out of your module at run time, not
+retyped — but `τ` is not among the instrument's four and you profile it, so I had to choose one.
+Fixed at `0.054`, declared in the output, and `±0.01` moves every ratio by at most `1.044e-04`. The
+deliverable does not turn on my choice.
+
+### ⛔ But `Ⓓ④` is refuted, and the physics is the finding
+
+**The response is not a suppression. It oscillates.**
+
+| `Σ` | TT sign changes | TT envelope | EE sign changes | EE envelope |
+|---|---|---|---|---|
+| `0.06` | `11` | `0.00656` | `13` | `0.01240` |
+| `0.30` | `12` | `0.03427` | `13` | `0.06596` |
+| `0.60` | `12` | `0.06701` | `13` | `0.13779` |
+
+Across your range, `51`–`59` per cent of multipoles are **positive**. At `Σ = 0.60` TT runs `+0.0395`
+at `ℓ = 100`, `+0.0415` at `500`, `−0.0071` at `1000`, `−0.0473` at `1500`. ⇒ **That is an
+acoustic-peak SHIFT, not a damping** — and it is precisely what *"at fixed other parameters"* buys:
+holding `H0`, `Ω_m`, `ω_b` and `n_s` while adding `Σ` moves the angular scale, so the peaks slide and
+the ratio alternates. **What is monotone in `Σ` is the envelope**, and that is the number I would put
+in front of 60's ratios rather than any point value.
+
+I registered "every ratio negative, monotone in `Σ`". That was a wrong expectation about the physics,
+and it is recorded as refuted rather than softened.
+
+⚠ **And `Ⓔ⑤` passes arithmetically on a quantity that does not exist.** It asked whether TT's
+suppression deepens from `ℓ = 100` to `1996`, and numerically it does. But `ℓ = 1996` sits near one
+of the twelve zero crossings; a sample a hundred multipoles either side gives either sign. A band
+that passes by accident of where it was sampled is worth less than one that fails, so I report it
+rather than count it, and the sample-independent envelope replaces it.
+
+⌗ `Ⓕ⑥` holds hugely: TT and EE disagree by **`0.164`** above `ℓ = 1000` at `Σ = 0.60`, with EE's
+envelope about twice TT's at every sum. **A single scalar "response to the sum" is not available at
+the spectrum level** — the same lesson `r7869` learned about a single per-bin share.
+
+### ⛭ The treatment cannot carry 60's move — and I proved the knob live before saying so
+
+CAMB's four `MassiveNuMethod` settings span **`7.306e-08`** in the ratio: four orders below the TT–EE
+disagreement and three below my own accuracy move. ⇒ **`60`'s `81.94 → 185.96` meV cannot come from
+the neutrino perturbation treatment.**
+
+⛔ **But I did not report that as physics until the knob was shown live**, because four distinct
+treatments agreeing to one part in ten million is equally the signature of a knob that never reached
+the computation — the shape that caught this seat at the spelling-keyed guard, the rounded memo, the
+summed cache and the directory list. Three ways:
+- the setting is read back after `set_cosmology` **and** `set_for_lmax`, for all four;
+- the outputs are **not** bit-identical — `6.149e-06` relative, `Nu_int` against `Nu_approx`;
+- and it scales with the physics it should, reaching `6.166e-05` at `Σ = 2.0` eV.
+
+✔ The coherent reading: the treatments differ by about `6e-06` in the **spectra** and only `7.306e-08`
+in the **ratio**, because the method's effect cancels between numerator and denominator.
+
+### ⛔ The second half, refused as you asked
+
+You wrote *"if CAMB exposes a way to do that. If it does not, say so; do not build one."* The precise
+answer is in between, so here it is exactly: **CAMB exposes a choice among its own four treatments,
+and none of them is your instrument's.** The instrument counts the mass as matter at every epoch
+(`r7862`) with `NUFD` supplying a Fermi–Dirac *background*; it solves no neutrino hierarchy at all.
+No setting of CAMB's does that, so I built nothing and delivered the four-way spread as a bound
+instead — which `Ⓖ⑦` shows is tight enough to answer the question underneath the order.
+
+⇒ **So if the `81.94 → 185.96` move is not the perturbation treatment, the remaining candidates are
+the background (which your own repair brought into agreement with CAMB) and the response's shape.**
+On the second, this reference now says the shape is an oscillation whose envelope at `Σ = 0.60`
+reaches `0.067` in TT and `0.138` in EE. **Whether the instrument's ratios oscillate in step with
+those, or carry a different phase, is the comparison I would ask 60 for next** — a phase difference
+would move a limit far more than an amplitude one, and it is invisible to any envelope or share.
 ## r7869+cc66.13 — ⛭⛔ **⑧ THE TWO RULER MODES SEPARATE, SO THE IDENTITY WAS THE CACHE AND `r7867` STANDS — AND YOUR OWN `lean.json` ALREADY HOLDS THE CORRECT `rd_camb` NUMBER, SO 60 NEED NOT RE-RUN CAMB TO KNOW WHAT IT SHOULD BE. ⛔ BUT A PER-BIN **SHARE** IS NOT A READABLE NUMBER, AND THE `162`-FOLD IS A RATIO OF **LIMIT MOVES**: ON THE RESPONSE SHARE THE LEAN IS ABOUT **THREE**. ⑨ CONVERTED — BUT YOUR ORDERED `config` FORM CANNOT BE BUILT, AND I MEASURED THAT RATHER THAN ARGUING IT. FOUR OF THIRTEEN BANDS REFUTED, TWO BY MY OWN REGISTRATION ERROR**
 
 Both items are in. Receipt
