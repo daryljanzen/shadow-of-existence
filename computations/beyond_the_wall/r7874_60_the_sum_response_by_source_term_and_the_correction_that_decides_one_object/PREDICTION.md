@@ -134,3 +134,59 @@ written. An arm run anyway would be building the fix for a diagnosis the measure
 
 ⌗ *This file is the registration. It is committed and pushed before the first number of this
 revision is computed, and nothing in it is revised after a measurement is read.*
+
+---
+
+# ⚑ ADDENDUM, REGISTERED AFTER Ⓐ⓪'s VERDICT AND BEFORE THE ARM IT ADDS IS RUN
+
+⛔ **This section was written after Ⓐ⓪ returned INSIDE and is committed and pushed before the arm
+below is computed.** It is marked as an addendum rather than folded into the file above, because a
+registration edited after a result is not a registration. **Nothing above is changed:** Ⓐ⓪'s
+verdict stands exactly as measured, Ⓒ② stays not-runnable on it, and Ⓓ③'s condition is untouched.
+
+## Why an arm is added at all, stated before its answer is known
+
+The envelope test is a **proxy**, and now that it has decided something it is worth saying what it
+is a proxy for. The envelope is the largest excursion of CAMB's own response over a stretch; the
+departure is the largest pointwise difference between two responses over that stretch. **Those are
+different quantities, and one being smaller than the other is not by itself a reason to call the
+difference unreal.** What makes a pointwise difference between two oscillating curves spurious is
+the two being MISREGISTERED in ℓ — a small peak-position difference, read pointwise, shows up as the
+derivative times the offset.
+
+⇒ **So the question the envelope test is standing in for is directly measurable:** does the
+difference survive a change of ℓ-registration? That is this line's own standing guard — *when two
+descriptions differ, first ask whether the difference survives a change of clock* — applied to the
+clock that labels multipoles.
+
+## Ⓕ④ THE SHIFT TEST, with its negatives
+
+Over `ℓ = 100`–`420`, at `Σ = 0.30` and `0.60`, for TT and EE, fit the instrument's response to
+CAMB's under exactly two parameters and nothing else:
+
+    r_inst(ℓ)  ≈  A · r_camb(ℓ · (1 + ε))
+
+`A` is the response's **amplitude** — how much the sum moves the spectrum. `ε` is a fractional
+**ℓ-stretch** — how much the sum moves the peak positions. The two have separate physical meanings
+and that is the point of using them rather than a free curve.
+
+- **A REGISTRATION DIFFERENCE** — the residual after the best `(A, ε)` is small, `A` is near one,
+  and the `ε` required is **no larger than the instrument's own acoustic-scale difference from
+  CAMB**, which is a measured quantity read off the bank's recorded `l_A` and not a chosen bound.
+  ⇒ The departure is a peak-registration difference, and `r7872`'s locating was wrong on a second
+  count as well as the first.
+- **AN AMPLITUDE DIFFERENCE** — the best fit needs `A` away from one, or the residual survives every
+  `(A, ε)`. ⇒ **There is a real departure that the envelope test was too lenient to see**, and this
+  line reports the order's envelope ruling as too lenient *for this purpose*, with this arm as the
+  reason — routed, not asserted over the seat that ruled it.
+- **NOT SEPARABLE** — `A` and `ε` trade off against each other across a wide range at comparable
+  residual. ⇒ Reported as not separable on this stretch, with the range, and **no verdict is read
+  through a degenerate fit.**
+
+⚠ **The fit is over two parameters on a stretch holding dozens of multipoles, and the `ε` it needs
+is checked against an independently measured number rather than eyeballed.** A fit with enough
+freedom to absorb anything would decide nothing, which is why the model is two parameters and not a
+spline.
+
+⌗ *And whichever way it comes out, Ⓐ⓪'s verdict is not retracted: the departure is inside the
+envelope, as measured. This arm says what being inside the envelope does and does not establish.*
