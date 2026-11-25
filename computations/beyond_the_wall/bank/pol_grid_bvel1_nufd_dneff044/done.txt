@@ -2,3 +2,7 @@
   lcdm Sm06 rc=0
   lcdm S000 rc=0
   lcdm S006 rc=0
+  lcdm S030 rc=0
+  lcdm S060 rc=0
+  lcdm S015 rc=0
+  lcdm S045 rc=0
