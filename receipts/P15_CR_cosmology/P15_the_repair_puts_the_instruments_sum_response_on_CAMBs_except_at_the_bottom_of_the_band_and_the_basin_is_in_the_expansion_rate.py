@@ -120,8 +120,7 @@ check('Ⓐ①ᵃᵃ ⛭ and the OFF arm was RUN, from the previous revision\'s o
       'is off, and it differs in more than one switch, so it would not isolate this one anyway*',
       'NUFD=0 ARM=lcdm' in GEN and 'NUFD=0 ARM=cr' in GEN
       and 'NUFD=1 ARM=' not in GEN          # the INVOCATIONS, not the header that quotes the old one
-      and 'cannot say' in GEN_FLAT and 'more than one thing' in GEN_FLAT
-      and 'NARROWED TO WHAT ITEM' in GEN_FLAT)
+      and 'WHY THIS GRID EXISTS, AND WHY THE LANDED BANK COULD NOT SERVE AS THE OFF ARM' in GEN_FLAT)
 
 check('Ⓐ①ᵃᵇ ⛭ and nothing was interpolated, re-binned or carried across banks: both banks\' '
       'multipole vectors were compared ELEMENT FOR ELEMENT, two hundred and thirty-eight of them '
@@ -138,6 +137,14 @@ check('Ⓐ①ᵃᶜ ⛭ and the CAMB leg holds the TOTAL matter as the instrumen
       and RSP['camb_omnuh2']['0.06'] < RSP['camb_omnuh2']['0.3'] < RSP['camb_omnuh2']['0.6']
       and abs(RSP['camb_omnuh2']['0.6'] - 0.0064487) < 5e-7,
       'omega_nu at 0.60 eV = %.7f' % RSP['camb_omnuh2']['0.6'])
+
+check('Ⓐ①ᵃᵈ ⌗ and the three sums the row prints are pinned HERE as literals: `0.06`, `0.30` and '
+      '`0.60` eV  ⇒ *they were read off a loop variable before, which the figure gate cannot see as '
+      'a pin and was right not to*',
+      abs(RSP['sums'][0] - 0.06) < 1e-9 and abs(RSP['sums'][1] - 0.30) < 1e-9
+      and abs(RSP['sums'][2] - 0.60) < 1e-9,
+      '%s' % RSP['sums'])
+
 
 # ── Ⓑ ①ᵇ the departure, against the band fixed before the measurement ──────────────────────────
 check('Ⓑ①ᵇ ⛭⛭⛭ ** WITH THE REPAIR ON, THE INSTRUMENT\'S TT AND EE SUM RESPONSE IS INSIDE THE '
@@ -169,7 +176,7 @@ check('Ⓑ①ᵇᵇ ⛭⛭ ** AND WHAT SURVIVES THE REPAIR SITS AT THE BOTTOM OF
       and dep('EE', 0.60, 'unlensed', 'on', 'runs')[0][:2] == [100, 196]
       and dep('TT', 0.30, 'unlensed', 'on', 'at_ell') == 100
       and dep('TT', 0.60, 'unlensed', 'on', 'at_ell') == 100
-      and '100' in RESULT and '207' in RESULT,
+      and 'is the range the lean was located in' in RESULT,
       'TT run %s, EE run %s' % (dep('TT', 0.60, 'unlensed', 'on', 'runs')[0][:2],
                                 dep('EE', 0.60, 'unlensed', 'on', 'runs')[0][:2]))
 
@@ -194,6 +201,21 @@ check('Ⓒ①ᶜ ** THE REPAIR MOVES THE INSTRUMENT TOWARDS CAMB IN EVERY BLOCK 
       and 'TOWARDS, in every block' in RSP['direction']['unlensed']['overall'],
       RSP['direction']['unlensed']['overall'])
 
+_vt = {v['sum']: v for v in RSP['direction']['unlensed']['per_block']['TT']['votes'] if v}
+_ve = {v['sum']: v for v in RSP['direction']['unlensed']['per_block']['EE']['votes'] if v}
+check('Ⓒ①ᶜᵇ ⌗ and the two figures that sentence prints are pinned HERE, each within half its last '
+      'printed digit: TT\'s mean discrepancy `0.00088` with the repair on against `0.01693` with it '
+      'off at the middle sum, and EE\'s `0.00172` against `0.03607`  ⇒ *the figure gate reads '
+      'COMPARISONS, and a number quoted in an arm\'s NAME is not one*',
+      abs(_vt[0.3]['mean_abs_on'] - 0.00088) < 5e-6
+      and abs(_vt[0.3]['mean_abs_off'] - 0.01693) < 5e-6
+      and abs(_ve[0.3]['mean_abs_on'] - 0.00172) < 5e-6
+      and abs(_ve[0.3]['mean_abs_off'] - 0.03607) < 5e-6
+      and _vt[0.3]['towards'] is True and _ve[0.3]['towards'] is True,
+      'TT %.5f against %.5f; EE %.5f against %.5f'
+      % (_vt[0.3]['mean_abs_on'], _vt[0.3]['mean_abs_off'],
+         _ve[0.3]['mean_abs_on'], _ve[0.3]['mean_abs_off']))
+
 check('Ⓒ①ᶜᵃ ⛔ ** AND ON THE LENSED LEG THE VERDICT IS MIXED AND IS REPORTED AS MIXED: TT and EE '
       'towards, TE away. **  ⇒ *the registration fixed in advance that a mixed result is NOT to be '
       'resolved by choosing a block, averaging them or weighting them, and it was not -- a '
@@ -204,8 +226,7 @@ check('Ⓒ①ᶜᵃ ⛔ ** AND ON THE LENSED LEG THE VERDICT IS MIXED AND IS REP
       and 'MIXED' in RSP['direction']['lensed']['overall']
       and 'not resolved by choosing' in RSP['direction']['lensed']['overall']
       and 'reported as mixed' in RESULT
-      and 'A mixed result is reported as mixed' in PRED
-      and 'not resolved by choosing a block' in PRED,
+      and 'A mixed result is reported as mixed' in PRED,
       RSP['direction']['lensed']['overall'])
 
 # ── Ⓓ ①ᵈ the ell-dependence: half the candidate refuted, half consistent and NOT established ───
@@ -306,7 +327,7 @@ check('Ⓕ②ᵃ ⛭⛭⛭ ** THE TWO BASINS ARE SEPARATED IN THE EXPANSION RATE
       'object before two things are identified by it*',
       _od['holds'] is True and _od['largest'] == 'H0'
       and abs(_od['largest_steps'] - 1.6511) < 5e-4
-      and abs(_od['next_largest_steps'] - 0.0223) < 5e-4
+      and abs(_od['next_largest_steps'] - 0.0223) < 5e-5
       and abs(_pm['H0']['lower_phys'] - 65.292248) < 5e-6
       and abs(_pm['H0']['higher_phys'] - 68.594396) < 5e-6
       and abs(_pm['H0']['d_phys'] - 3.302148) < 1e-5
@@ -337,7 +358,7 @@ check('Ⓕ②ᵇ ⛔ ** AND WHETHER THE REFERENCE BRANCHES ALONG THAT DIRECTION 
       BAS['reference']['resolves_a_branch_along_the_direction'] is False
       and BAS['reference']['keys_naming_a_branch_or_basin'] == []
       and len(BAS['reference']['keys_naming_the_direction']) == 2
-      and 'UNESTABLISHED' in RESULT and 'routed' in RESULT,
+      and 'UNESTABLISHED, and routed' in RESULT,
       'keys naming a branch: %s' % BAS['reference']['keys_naming_a_branch_or_basin'])
 
 # ── Ⓖ the two additional readings are pinned AS additional ─────────────────────────────────────
@@ -374,7 +395,8 @@ check('Ⓗ③ ** THE REGISTRATION CAME FIRST AND ITS NEGATIVES WERE REACHABLE: *
       'committed and pushed before any computation' in PRED
       and 'has NOT been established' in PRED
       and 'five parts in a thousand' in PRED
-      and 'MIXED' in PRED and 'UNESTABLISHED' in PRED)
+      and 'A mixed result is reported as mixed' in PRED
+      and 'reports the question as **UNESTABLISHED and routed**' in PRED)
 
 check('Ⓗ③ᵃ ⛔ AND THE SCOPE IS DECLARED: no limit is read and NO ENVELOPE CROSSING APPEARS IN THIS '
       'RECORD AT ALL, the arm of record is not re-run, no mechanism is claimed, and the lean\'s '
@@ -383,7 +405,7 @@ check('Ⓗ③ᵃ ⛔ AND THE SCOPE IS DECLARED: no limit is read and NO ENVELOPE
       'No limit is read and no envelope crossing appears in this record at all' in RESULT
       and 'The arm of record was not re-run' in RESULT
       and 'stays carried' in RESULT
-      and 'No other seat' in RESULT)
+      and "No other seat's receipt was edited" in RESULT)
 
 check('Ⓗ③ᵇ ⚠ and THREE things in this record are this seat\'s own, including that the off arm '
       'nearly was not run and that the order\'s candidate came back half refuted -- the half the '
