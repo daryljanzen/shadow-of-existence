@@ -29,6 +29,14 @@ parameters moved.  So:
      convex near its floor, so the midpoint of two points in one basin scores at or below the worse
      of them.  A midpoint that scores ABOVE both means a ridge between them, which is two basins.
 
+⛔ A RIDGE MEANS NOTHING WITHOUT A SCALE, and the first version of this driver had none: it tested
+   `midpoint > worse` against ZERO, so any excess at all -- including `4.8e-05`, which is a hundredth
+   of the minimiser's own `fatol` -- came back as "TWO BASINS".  That is a defect in MY test, not a
+   feature of the likelihood, and it reported a barrier where no barrier of any consequence exists.
+   A barrier is compared here against TWO declared scales: the profiler's own `fatol = 5e-3`, below
+   which the minimiser does not resolve anything, and `dchi2 = 1`, the one-parameter unit of
+   inference.  A ridge under either is noted and NOT called a basin boundary.
+
     NODE=cc66 python3 basin_detail.py
 """
 import io
@@ -92,13 +100,31 @@ def main():
         cm, _ = PL.score(SUM, *xm, mode)
         worse = max(ca, cb)
         better = min(ca, cb)
-        ridge = bool(cm > worse)
+        excess = float(cm - worse)
+        FATOL, UNIT = 5e-3, 1.0
+        above = bool(excess > 0.0)
+        matters = bool(excess > FATOL)
+        spread = float(worse - better)
+        maxsep = max(seps.values())
         print('      ⒞ midpoint chi2 %.8f against worse endpoint %.8f and better %.8f'
               % (cm, worse, better))
-        print('         ⇒ %s' % ('⛔ A RIDGE: the midpoint is ABOVE both endpoints, so these are '
-                                 'TWO BASINS' if ridge else
-                                 'NO RIDGE: the midpoint is at or below the worse endpoint, so '
-                                 'these are ONE BASIN'))
+        print('         midpoint excess over the worse endpoint: %+.8f' % excess)
+        print('         against the profiler\'s own fatol %.0e : %.4f of it' % (FATOL,
+                                                                                excess / FATOL))
+        print('         against the one-parameter unit dchi2=1 : %.2e of it' % (excess / UNIT))
+        if not above:
+            verdict = ('NO RIDGE AT ALL: the midpoint is BELOW the worse endpoint, so the two '
+                       'converged points sit in ONE CONVEX BASIN')
+        elif not matters:
+            verdict = ('A RIDGE BELOW EVERY SCALE THAT MATTERS: %+.2e in chi2 is %.4f of the '
+                       'minimiser\'s own fatol and %.1e of dchi2=1, between two points that agree '
+                       'to %.2e in every parameter.  There is no barrier of consequence: ONE BASIN'
+                       % (excess, excess / FATOL, excess / UNIT, maxsep))
+        else:
+            verdict = ('⛔ A REAL RIDGE: the midpoint is above both endpoints by %+.6f, which '
+                       'exceeds the profiler\'s fatol -- TWO BASINS' % excess)
+        print('         ⇒ %s' % verdict)
+        ridge = matters
         out['modes'][mode] = dict(
             registered_verdict=rec['verdict'], banked_chi2=float(rec['banked_chi2']),
             chi2=[float(ca), float(cb)], chi2_banked=[float(a['chi2']), float(b['chi2'])],
@@ -106,8 +132,11 @@ def main():
             separations=seps, dH0=float(rec['dh0']), dchi2=float(rec['dchi2']),
             midpoint=dict(zip(NAMES, [float(v) for v in xm])), midpoint_chi2=float(cm),
             worse_endpoint=float(worse), better_endpoint=float(better),
-            midpoint_above_both=ridge,
-            midpoint_minus_worse=float(cm - worse),
+            midpoint_above_both=bool(cm > worse),
+            midpoint_minus_worse=excess,
+            excess_over_fatol=float(excess / 5e-3),
+            endpoint_spread=spread, max_separation=float(maxsep),
+            ridge_that_matters=ridge,
             one_basin=bool(not ridge))
 
     io.open(OUT, 'w', encoding='utf-8').write(json.dumps(out, indent=1, sort_keys=True))
