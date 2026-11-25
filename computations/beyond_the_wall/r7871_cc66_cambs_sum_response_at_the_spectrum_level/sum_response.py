@@ -160,11 +160,43 @@ def main():
                 mono_ok = False
     tt_l = out['standard']['0.6']['TT']
     tt_grows = tt_l['l1996'] < tt_l['l100']
+    # ⛔ the registration assumed a monotone SUPPRESSION.  It is not one: the response changes sign
+    #   in l.  So the shape is characterised rather than sampled -- sign changes and envelope.
+    osc = {}
+    for s_ in SUMS:
+        osc['%g' % s_] = {}
+        for sp in ('TT', 'EE'):
+            v = r1['%g' % s_][sp]
+            good = np.isfinite(v)
+            sgn = np.sign(v[good])
+            crossings = int(np.sum(sgn[1:] * sgn[:-1] < 0))
+            osc['%g' % s_][sp] = dict(
+                sign_changes=crossings,
+                frac_positive=float(np.mean(v[good] > 0)),
+                envelope=float(np.nanmax(np.abs(v))),
+                min=float(np.nanmin(v)), max=float(np.nanmax(v)))
+    out['oscillation'] = osc
+    env_mono = all(
+        osc['%g' % b][sp]['envelope'] > osc['%g' % a][sp]['envelope']
+        for sp in ('TT', 'EE') for a, b in zip(SUMS, SUMS[1:]))
+    out['envelope_monotone_in_sum'] = bool(env_mono)
     tt_ee_gap = float(np.nanmax(np.abs(r1['0.6']['TT'][ls > 1000] - r1['0.6']['EE'][ls > 1000])))
     out.update(sign_all_negative=bool(sign_ok), monotone_in_sum=bool(mono_ok),
                tt_suppression_grows_with_l=bool(tt_grows), tt_ee_gap_at_0p60=tt_ee_gap)
-    print('  Ⓓ④ every TT/EE ratio negative: %s;  |ratio| monotone in Sigma: %s' % (sign_ok, mono_ok))
-    print('  Ⓔ⑤ TT suppression deeper at l=1996 than l=100 at Sigma=0.60: %s  (%+.5f vs %+.5f)'
+    print('  ⛔ Ⓓ④ REFUTED -- every TT/EE ratio negative: %s;  |ratio| monotone in Sigma: %s'
+          % (sign_ok, mono_ok))
+    print('     THE RESPONSE IS NOT A SUPPRESSION.  It OSCILLATES in l and changes sign:')
+    for s_ in SUMS:
+        for sp in ('TT', 'EE'):
+            o = osc['%g' % s_][sp]
+            print('       Sigma %.2f %-3s  %3d sign change(s), %.1f%% positive, envelope %.5f '
+                  '(min %+.5f, max %+.5f)'
+                  % (s_, sp, o['sign_changes'], 100.0 * o['frac_positive'], o['envelope'],
+                     o['min'], o['max']))
+    print('     ⇒ what IS monotone in Sigma is the ENVELOPE: %s' % env_mono)
+    print('  ⚠ Ⓔ⑤ passes ARITHMETICALLY (%s: %+.5f at l=1996 against %+.5f at l=100) but the '
+          'quantity it was written for -- a deepening suppression -- DOES NOT EXIST; l=1996 simply '
+          'sits near a zero crossing.  Recorded as passing for the wrong reason.'
           % (tt_grows, tt_l['l1996'], tt_l['l100']))
     print('  Ⓕ⑥ worst TT-EE disagreement above l=1000 at Sigma=0.60: %.5f' % tt_ee_gap)
 
@@ -173,7 +205,7 @@ def main():
     meth = {}
     for m in METHODS:
         _, rm = ratios(con, TAU, 1, m)
-        meth[m] = band_summary(ls, rm)['TT']
+        meth[m] = band_summary(ls, rm['0.6'])['TT']
         print('      %-10s TT at Sigma=0.60:  l=500 %+.5f  l=1000 %+.5f  l=1996 %+.5f'
               % (m, meth[m]['l500'], meth[m]['l1000'], meth[m]['l1996']))
     spread = 0.0
