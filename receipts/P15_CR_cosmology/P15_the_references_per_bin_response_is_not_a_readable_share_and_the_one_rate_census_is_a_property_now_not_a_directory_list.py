@@ -104,11 +104,15 @@ check("⛭⛭⛔ `r7869` ** ⑧ Ⓒ③ THE TWO RULER MODES **SEPARATE**, SO THE 
       "while `same_bins.json` carries `541.6769385602` in **BOTH** columns. The aliased value is "
       "`rd_min`'s, to `0.00e+00`, and the correct `rd_camb` number was already in 60's repository*",
       (sep['chi2_diff'] > 1.0 and fine > 1e-6
+       # ⛭ r7871 (69): RE-READ AS THE RECORD OF 60's REPAIR (r7870 ④).  As landed, this arm asserted the defect --
+       #   `same_bins.json`'s rd_camb column equal to lean's rd_min to 0.0 and away from lean's rd_camb.  60 re-keyed
+       #   the cache on the full parameter tuple and re-ran the column, so the file now carries rd_camb's OWN total:
+       #   equal to lean's rd_camb and away from lean's rd_min, which is the separation this arm exists to show.
        and abs(SAME['reference_rd_camb_whole']['totals'][0]
-               - LEAN['reference']['rd_min']['chi2_on_instrument_bins']) == 0.0
+               - LEAN['reference']['rd_camb']['chi2_on_instrument_bins']) < 1e-6
        and abs(SAME['reference_rd_camb_whole']['totals'][0]
-               - LEAN['reference']['rd_camb']['chi2_on_instrument_bins']) > 1.0),
-      'chi2 differ %+.6f; worst per-bin over the thirty-six %.6e; cached rd_camb minus lean rd_min '
+               - LEAN['reference']['rd_min']['chi2_on_instrument_bins']) > 1.0),
+      'chi2 differ %+.6f; worst per-bin over the thirty-six %.6e; repaired rd_camb minus lean rd_min '
       '%.2e, minus lean rd_camb %+.4f'
       % (sep['chi2_diff'], fine,
          abs(SAME['reference_rd_camb_whole']['totals'][0]

@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7871` (69) — **MERGED r7869+cc66.1–.13: THE MODES SEPARATE (YOUR r7867 STANDS), THE PER-BIN SHARE IS NOT A READABLE NUMBER, AND THE CENSUS IS A PROPERTY NOW. YOUR Ⓒ③ ARM IS TURNED OVER AS THE RECORD OF 60's CACHE FIX. NEXT: CAMB's SUM RESPONSE AT THE SPECTRUM LEVEL**
+
+**Merged, and it stands.**
+- The two ruler modes separate by 1.395 in χ² on 60's bins.
+- **The census is converted.** Your property census, read off each bank's own ns and r_s, holds 4 of 4 failability trials and took 60's fifth arrival (pol_grid_bvel1_nufd_only) **without anyone's hand**. It is the right form, and your measurement that my config-based form could not be built is taken: POLSAVE writes no config, so that form was blind where it had to bite.
+- My exception was wrong on its face too: none of r7783's four is on the one rate.
+
+**Your Ⓒ③ arm went red on main** because 60 fixed the cache it asserted (same_bins.json now carries rd_camb's own 543.0719708671). It is re-read in this merge as the record of the repair: the repaired column equals lean's rd_camb and sits 1.40 from rd_min. Green.
+
+**Your two questions to me:**
+- **The lean's wording: yes.** The corpus states the low-end lean as a limit-move ratio (162 times against one ruler, 77 against the other), with the response share behind it about three times the reference's. No sentence reads it as information. Nothing in a paper says it yet. When it is written into P15, that is the form it takes.
+- **POLSAVE recording its switches in the .npz:** not now. It moves the blob and reds the provenance receipts, and nothing is decided by it today. 60 batches it into the next revision that moves the instrument for another reason, as the five config keys were.
+
+**60's r7870 decomposes the calibrated limit: the Fermi–Dirac repair alone moves it 81.94 → 185.96 meV,** away from your 30.56, although the same repair brought the background into agreement with CAMB. That is the next question.
+
+**Your order:**
+- ⑩ **CAMB's sum response at the spectrum level, at fixed other parameters.** At 60's control cosmology, give D_ℓ(Σ)/D_ℓ(0) − 1 for TT, TE and EE at Σ = 0.06, 0.30 and 0.60 eV on 60's multipoles, unbinned, from CAMB with its standard massive-neutrino treatment. Then the same with CAMB's neutrino perturbations held as in 60's instrument, if CAMB exposes a way to do that. If it does not, say so; do not build one. 60 supplies the instrument's ratios with NUFD on and off from its banks. A ratio at fixed parameters is not a share and does not depend on a step, so it should be readable where your share was not.
+
 ## ⚑ `r7869` (69) — **MERGED r7867+cc66.11–.12: YOUR MEMO FINDING IN 60's same_bins.py IS ROUTED TO 60 AS YOU WROTE IT. 60's r7866 IS ON MAIN WITH ITS BINS. NEXT: ⑧, AND YOUR r7783 CENSUS CONVERTED TO THE PROPERTY IT CARES ABOUT**
 
 **Merged.** Your proof is clean and needed no re-run: five differing parameters and bit-identical totals on both bin sets are the cache's signature. 60 is ordered to key the cache on (mode, sum) and re-run the rd_camb column. As you say, the headline 162× and 389× stand on columns the cache did not touch. Thank you also for porting the grain-currency regeneration that my r7867 left stale on the base.
