@@ -873,6 +873,650 @@
    ]
   }
  },
+ "departures_rms_normalised": {
+  "EE|0.06|lensed|off": {
+   "at_ell": 1076,
+   "max_abs_diff": 0.01126200581319915,
+   "n_departing": 88,
+   "runs": [
+    [
+     1020,
+     1132,
+     15
+    ],
+    [
+     1340,
+     1444,
+     14
+    ],
+    [
+     876,
+     964,
+     12
+    ]
+   ]
+  },
+  "EE|0.06|lensed|on": {
+   "at_ell": 948,
+   "max_abs_diff": 0.0029609574272728405,
+   "n_departing": 0,
+   "runs": []
+  },
+  "EE|0.06|unlensed|off": {
+   "at_ell": 1068,
+   "max_abs_diff": 0.012831620324111186,
+   "n_departing": 100,
+   "runs": [
+    [
+     1012,
+     1132,
+     16
+    ],
+    [
+     1324,
+     1436,
+     15
+    ],
+    [
+     1644,
+     1748,
+     14
+    ]
+   ]
+  },
+  "EE|0.06|unlensed|on": {
+   "at_ell": 1076,
+   "max_abs_diff": 0.0033474974001273215,
+   "n_departing": 0,
+   "runs": []
+  },
+  "EE|0.30|lensed|off": {
+   "at_ell": 1076,
+   "max_abs_diff": 0.060336790177830724,
+   "n_departing": 179,
+   "runs": [
+    [
+     1628,
+     1788,
+     21
+    ],
+    [
+     844,
+     988,
+     19
+    ],
+    [
+     1004,
+     1148,
+     19
+    ]
+   ]
+  },
+  "EE|0.30|lensed|on": {
+   "at_ell": 1332,
+   "max_abs_diff": 0.015210937144852256,
+   "n_departing": 106,
+   "runs": [
+    [
+     956,
+     1076,
+     16
+    ],
+    [
+     1276,
+     1396,
+     16
+    ],
+    [
+     1596,
+     1716,
+     16
+    ]
+   ]
+  },
+  "EE|0.30|unlensed|off": {
+   "at_ell": 1068,
+   "max_abs_diff": 0.06834345097456967,
+   "n_departing": 185,
+   "runs": [
+    [
+     1612,
+     1772,
+     21
+    ],
+    [
+     996,
+     1148,
+     20
+    ],
+    [
+     1300,
+     1452,
+     20
+    ]
+   ]
+  },
+  "EE|0.30|unlensed|on": {
+   "at_ell": 1764,
+   "max_abs_diff": 0.0026763531577827984,
+   "n_departing": 0,
+   "runs": []
+  },
+  "EE|0.60|lensed|off": {
+   "at_ell": 1076,
+   "max_abs_diff": 0.12293435886917424,
+   "n_departing": 197,
+   "runs": [
+    [
+     844,
+     1148,
+     39
+    ],
+    [
+     532,
+     828,
+     38
+    ],
+    [
+     1620,
+     1788,
+     22
+    ]
+   ]
+  },
+  "EE|0.60|lensed|on": {
+   "at_ell": 1652,
+   "max_abs_diff": 0.028631187619840376,
+   "n_departing": 144,
+   "runs": [
+    [
+     940,
+     1084,
+     19
+    ],
+    [
+     1260,
+     1404,
+     19
+    ],
+    [
+     1580,
+     1724,
+     19
+    ]
+   ]
+  },
+  "EE|0.60|unlensed|off": {
+   "at_ell": 1068,
+   "max_abs_diff": 0.13873324164556272,
+   "n_departing": 194,
+   "runs": [
+    [
+     692,
+     1140,
+     57
+    ],
+    [
+     1612,
+     1772,
+     21
+    ],
+    [
+     1300,
+     1452,
+     20
+    ]
+   ]
+  },
+  "EE|0.60|unlensed|on": {
+   "at_ell": 1764,
+   "max_abs_diff": 0.005357752623006865,
+   "n_departing": 15,
+   "runs": [
+    [
+     1100,
+     1140,
+     6
+    ],
+    [
+     1436,
+     1468,
+     5
+    ],
+    [
+     1748,
+     1772,
+     4
+    ]
+   ]
+  },
+  "TE|0.06|lensed|off": {
+   "at_ell": 836,
+   "max_abs_diff": 0.021804716648299142,
+   "n_departing": 132,
+   "runs": [
+    [
+     772,
+     908,
+     18
+    ],
+    [
+     612,
+     732,
+     16
+    ],
+    [
+     940,
+     1060,
+     16
+    ]
+   ]
+  },
+  "TE|0.06|lensed|on": {
+   "at_ell": 860,
+   "max_abs_diff": 0.006290416083408971,
+   "n_departing": 19,
+   "runs": [
+    [
+     828,
+     892,
+     9
+    ],
+    [
+     660,
+     700,
+     6
+    ],
+    [
+     1012,
+     1036,
+     4
+    ]
+   ]
+  },
+  "TE|0.06|unlensed|off": {
+   "at_ell": 836,
+   "max_abs_diff": 0.022360965812268783,
+   "n_departing": 147,
+   "runs": [
+    [
+     764,
+     900,
+     18
+    ],
+    [
+     1388,
+     1516,
+     17
+    ],
+    [
+     932,
+     1052,
+     16
+    ]
+   ]
+  },
+  "TE|0.06|unlensed|on": {
+   "at_ell": 836,
+   "max_abs_diff": 0.006207648533797978,
+   "n_departing": 21,
+   "runs": [
+    [
+     804,
+     868,
+     9
+    ],
+    [
+     972,
+     1020,
+     7
+    ],
+    [
+     644,
+     676,
+     5
+    ]
+   ]
+  },
+  "TE|0.30|lensed|off": {
+   "at_ell": 836,
+   "max_abs_diff": 0.11667333375357132,
+   "n_departing": 226,
+   "runs": [
+    [
+     604,
+     1068,
+     59
+    ],
+    [
+     1084,
+     1540,
+     58
+    ],
+    [
+     132,
+     452,
+     41
+    ]
+   ]
+  },
+  "TE|0.30|lensed|on": {
+   "at_ell": 1404,
+   "max_abs_diff": 0.02251771780574753,
+   "n_departing": 137,
+   "runs": [
+    [
+     1332,
+     1468,
+     18
+    ],
+    [
+     1500,
+     1636,
+     18
+    ],
+    [
+     692,
+     820,
+     17
+    ]
+   ]
+  },
+  "TE|0.30|unlensed|off": {
+   "at_ell": 828,
+   "max_abs_diff": 0.11924851550856111,
+   "n_departing": 223,
+   "runs": [
+    [
+     596,
+     1060,
+     59
+    ],
+    [
+     132,
+     444,
+     40
+    ],
+    [
+     1076,
+     1356,
+     36
+    ]
+   ]
+  },
+  "TE|0.30|unlensed|on": {
+   "at_ell": 1212,
+   "max_abs_diff": 0.0038768983483590154,
+   "n_departing": 0,
+   "runs": []
+  },
+  "TE|0.60|lensed|off": {
+   "at_ell": 836,
+   "max_abs_diff": 0.23811951052511102,
+   "n_departing": 229,
+   "runs": [
+    [
+     468,
+     908,
+     56
+    ],
+    [
+     124,
+     452,
+     42
+    ],
+    [
+     1380,
+     1684,
+     39
+    ]
+   ]
+  },
+  "TE|0.60|lensed|on": {
+   "at_ell": 1404,
+   "max_abs_diff": 0.04177223243617745,
+   "n_departing": 174,
+   "runs": [
+    [
+     1324,
+     1476,
+     20
+    ],
+    [
+     676,
+     820,
+     19
+    ],
+    [
+     852,
+     996,
+     19
+    ]
+   ]
+  },
+  "TE|0.60|unlensed|off": {
+   "at_ell": 828,
+   "max_abs_diff": 0.2431657432336126,
+   "n_departing": 229,
+   "runs": [
+    [
+     596,
+     1356,
+     96
+    ],
+    [
+     124,
+     444,
+     41
+    ],
+    [
+     1372,
+     1524,
+     20
+    ]
+   ]
+  },
+  "TE|0.60|unlensed|on": {
+   "at_ell": 100,
+   "max_abs_diff": 0.011932304413331977,
+   "n_departing": 72,
+   "runs": [
+    [
+     188,
+     308,
+     16
+    ],
+    [
+     1172,
+     1244,
+     10
+    ],
+    [
+     1340,
+     1396,
+     8
+    ]
+   ]
+  },
+  "TT|0.06|lensed|off": {
+   "at_ell": 124,
+   "max_abs_diff": 0.008154822547385492,
+   "n_departing": 8,
+   "runs": [
+    [
+     100,
+     156,
+     8
+    ]
+   ]
+  },
+  "TT|0.06|lensed|on": {
+   "at_ell": 188,
+   "max_abs_diff": 0.0021835549395125553,
+   "n_departing": 0,
+   "runs": []
+  },
+  "TT|0.06|unlensed|off": {
+   "at_ell": 124,
+   "max_abs_diff": 0.008144546679115561,
+   "n_departing": 8,
+   "runs": [
+    [
+     100,
+     156,
+     8
+    ]
+   ]
+  },
+  "TT|0.06|unlensed|on": {
+   "at_ell": 188,
+   "max_abs_diff": 0.0021470404930342968,
+   "n_departing": 0,
+   "runs": []
+  },
+  "TT|0.30|lensed|off": {
+   "at_ell": 132,
+   "max_abs_diff": 0.03085859181685824,
+   "n_departing": 126,
+   "runs": [
+    [
+     100,
+     412,
+     40
+    ],
+    [
+     828,
+     1004,
+     23
+    ],
+    [
+     1468,
+     1604,
+     18
+    ]
+   ]
+  },
+  "TT|0.30|lensed|on": {
+   "at_ell": 100,
+   "max_abs_diff": 0.010018216075535429,
+   "n_departing": 8,
+   "runs": [
+    [
+     100,
+     156,
+     8
+    ]
+   ]
+  },
+  "TT|0.30|unlensed|off": {
+   "at_ell": 132,
+   "max_abs_diff": 0.030821612867242602,
+   "n_departing": 134,
+   "runs": [
+    [
+     100,
+     404,
+     39
+    ],
+    [
+     820,
+     996,
+     23
+    ],
+    [
+     1452,
+     1596,
+     19
+    ]
+   ]
+  },
+  "TT|0.30|unlensed|on": {
+   "at_ell": 100,
+   "max_abs_diff": 0.009949946156185017,
+   "n_departing": 8,
+   "runs": [
+    [
+     100,
+     156,
+     8
+    ]
+   ]
+  },
+  "TT|0.60|lensed|off": {
+   "at_ell": 124,
+   "max_abs_diff": 0.06365232485497319,
+   "n_departing": 177,
+   "runs": [
+    [
+     100,
+     420,
+     41
+    ],
+    [
+     820,
+     1012,
+     25
+    ],
+    [
+     1444,
+     1628,
+     24
+    ]
+   ]
+  },
+  "TT|0.60|lensed|on": {
+   "at_ell": 100,
+   "max_abs_diff": 0.038143284708355055,
+   "n_departing": 23,
+   "runs": [
+    [
+     100,
+     268,
+     22
+    ],
+    [
+     860,
+     860,
+     1
+    ]
+   ]
+  },
+  "TT|0.60|unlensed|off": {
+   "at_ell": 124,
+   "max_abs_diff": 0.06357075600933805,
+   "n_departing": 178,
+   "runs": [
+    [
+     100,
+     420,
+     41
+    ],
+    [
+     812,
+     1004,
+     25
+    ],
+    [
+     1436,
+     1612,
+     23
+    ]
+   ]
+  },
+  "TT|0.60|unlensed|on": {
+   "at_ell": 100,
+   "max_abs_diff": 0.03802400375383647,
+   "n_departing": 23,
+   "runs": [
+    [
+     100,
+     276,
+     23
+    ]
+   ]
+  }
+ },
+ "departures_rms_normalised_note": "an additional reading, not the registered criterion; the registered verdicts are read off the pointwise form",
  "direction": {
   "lensed": {
    "overall": "MIXED -- reported as mixed, not resolved by choosing or averaging blocks",

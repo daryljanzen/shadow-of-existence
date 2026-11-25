@@ -217,6 +217,42 @@ for blk, key in BLOCKS:
             print('%6s %6.2f %5s  %-28s %-28s' % (blk, s, leg, cells[0], cells[1]))
 rec['departures'] = {'%s|%.2f|%s|%s' % k: v for k, v in dep.items()}
 
+# ── the RMS-NORMALISED reading, registered to sit BESIDE the pointwise one ─────────────────────
+# ⚠ ADDITIONAL, not the registered criterion.  The pointwise form above is degenerate at a TE zero
+#   crossing, so this form is reported next to it: each side's response is normalised by ITS OWN
+#   block RMS of Dl(0), which stays amplitude-free (a constant amplitude cancels between the
+#   numerator and its own RMS) and stays finite straight through a crossing.  The registered
+#   verdicts are read off the pointwise form; this one is a reading.
+print('\n  ⌗ ADDITIONAL READING, not the registered criterion -- each response normalised by its '
+      'OWN block RMS of Dl(0), which is finite through a zero crossing')
+print('%6s %6s %5s  %-26s %-26s' % ('block', 'Sum', 'leg', 'NUFD on: departing runs',
+                                    'NUFD off: departing runs'))
+rms_inst = {blk: float(np.sqrt(np.mean(banks['on']['S000'][key] ** 2))) for blk, key in BLOCKS}
+rms_off = {blk: float(np.sqrt(np.mean(banks['off']['S000'][key] ** 2))) for blk, key in BLOCKS}
+rms_camb = {(leg, blk): float(np.sqrt(np.mean(camb[0.0][leg][blk] ** 2)))
+            for leg in ('unlensed', 'lensed') for blk, _ in BLOCKS}
+dep_rms = {}
+for blk, key in BLOCKS:
+    for s in SUMS:
+        for leg in ('unlensed', 'lensed'):
+            c = (camb[s][leg][blk] - camb[0.0][leg][blk]) / rms_camb[(leg, blk)]
+            cells = []
+            for n, rms in (('on', rms_inst), ('off', rms_off)):
+                i = (banks[n][TAGS[s]][key] - banks[n]['S000'][key]) / rms[blk]
+                d = np.abs(i - c)
+                m = d > BAND
+                rr = runs(m)
+                rr.sort(key=lambda t: -t[2])
+                dep_rms[(blk, s, leg, n)] = dict(n_departing=int(m.sum()), runs=rr[:3],
+                                                 max_abs_diff=float(d.max()),
+                                                 at_ell=int(LS[int(np.argmax(d))]))
+                cells.append('%3d of %3d, longest %s'
+                             % (m.sum(), LS.size, ('%d-%d (%d)' % rr[0]) if rr else 'none'))
+            print('%6s %6.2f %5s  %-26s %-26s' % (blk, s, leg, cells[0], cells[1]))
+rec['departures_rms_normalised'] = {'%s|%.2f|%s|%s' % k: v for k, v in dep_rms.items()}
+rec['departures_rms_normalised_note'] = ('an additional reading, not the registered criterion; the '
+                                         'registered verdicts are read off the pointwise form')
+
 # ── Ⓐ①ᶜ towards CAMB or away, only where a departure was named ─────────────────────────────────
 print('\n  Ⓐ①ᶜ does the Fermi-Dirac repair move the instrument TOWARDS CAMB or AWAY, where a '
       'departure was named?')

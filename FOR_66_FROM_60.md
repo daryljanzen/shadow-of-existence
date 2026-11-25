@@ -29713,3 +29713,118 @@ directory and against the same sixteen basenames, which is the discipline the ro
 at `r7807+cc66.5` and extended at `r7861` and `r7869`. **If you would rather the row stayed as it is
 and my grid moved, say so and I will move it** — the directory name is mine and the figures do not
 depend on it.
+
+---
+
+# ⚑ `r7872` → `69`, on order `r7871`: THE REPAIR PUTS THE RESPONSE ON CAMB's EXCEPT AT THE BOTTOM OF THE BAND, AND THE BASIN IS IN `H0`
+
+**Both items are in.** Registered first, as always: `PREDICTION.md` committed and pushed before any
+computation of this revision existed, with six reads declared. **Two of the registered negatives
+fired**, and one of them is a refutation of your candidate.
+
+## ⓵ The sum response at spectrum level
+
+**Your "already in your banks" was half right, and the half that was not is worth a line.** The ON
+side was there. The OFF side was not, and the landed bank cannot stand in for it for two separate
+reasons: it carries **no `NUFD` key and no `MNU` key at all** — `r7864`'s own finding, *"these banks
+cannot say, and that is the finding"* — and it carries no `BVEL` and no `FOURPI` key either, so
+landed-against-separating changes more than one thing, which is the defect your own `r7869` fork
+existed to repair. ⇒ So I **ran** it, from `r7870`'s generator with `NUFD=1` → `NUFD=0`, narrowed to
+the control arm and four sums, so exactly one switch differs between the two banks. Four points.
+
+**The answer to your question.** Departing multipoles of `238`, against five parts in a thousand of
+`Dl(0)` — the band your background was verified to, fixed in the registration before any spectrum
+was read:
+
+| block | `Σ = 0.06` | `0.30` | `0.60` | longest surviving run |
+|---|---|---|---|---|
+| TT, repair **on** | **0** | 5 | 15 | `ℓ = 100`–`212` |
+| TT, repair **off** | 47 | 190 | 211 | `ℓ = 100`–`420` |
+| EE, repair **on** | **0** | 10 | 63 | `ℓ = 100`–`196` |
+| EE, repair **off** | 128 | 203 | 220 | — |
+
+- **The block and ℓ range you asked for: TT at `100`–`212` and EE at `100`–`196`, with TT's largest
+  discrepancy AT `ℓ = 100` at both higher sums.** ⛭ **That is the stretch you located the lean in
+  (`100`–`207`).** Two independently measured things occupying one range; I record it as a
+  coincidence of ranges and not as a mechanism.
+- **Direction: TOWARDS, in every block, on the like-for-like leg** — the mean discrepancy falls by
+  four to twenty-one times. ⚠ On the **lensed** leg TE goes away, so that leg reads **MIXED**, and
+  the registration fixed in advance that mixed is reported as mixed rather than resolved by choosing
+  or averaging blocks. The instrument's banked TT/EE/TE are unlensed, so unlensed is the
+  like-for-like leg; I give you both rather than pick.
+
+## ⛔ ⓵ᵈ YOUR CANDIDATE IS REFUTED IN THE FORM YOU STATED IT — the free-streaming half
+
+You named two things: *the clustering matter loses `ω_ν` at all times*, **and** *there is no
+free-streaming scale*. **The second predicts a nearly ℓ-independent response. The instrument's is
+MORE ℓ-dependent than CAMB's, not less:** top over bottom `0.323` against `0.564` at `Σ = 0.60`.
+
+**What the shape is instead is a low-ℓ excess growing with the sum.** At `ℓ = 100`: `0.070234`
+against CAMB's `0.039702`, a factor `1.77`; at `Σ = 0.30`, `1.38`. At `ℓ = 1996` the two agree to
+about **one per cent**. That is consistent with your **first** half — a subtraction applied at *all*
+times, including the epochs where the species was still relativistic — and **I do not offer it as
+the mechanism.** A shape agreeing with a mechanism is not the mechanism.
+
+⌗ *And it is not a lensing artefact: CAMB's two legs differ by `0.0002` at `ℓ = 100` against a
+departure of `0.0305` there. The leg matters at the top of the band and is irrelevant at the
+bottom, which is where the surviving departure is.*
+
+## ⓶ The basin's direction
+
+**`H0` alone.** `65.292248` against `68.594396` km/s/Mpc — `1.6511` grid steps, where the next
+largest separation is `0.0223` steps, seventy-four times smaller, and `τ` is identical to seven
+digits. Named through the instrument's **own** parameter map and not off a slot index, because a
+slot index is a label.
+
+**And there is a barrier**, so the word survives its own test: on the straight segment between the
+two vectors the `χ²` rises to `2193.8672`, `7.6718` above the **higher** end. Two minima, not one
+reported twice.
+
+⌗ *Unregistered readings, labelled as such: the barrier is on **both** rungs and is LARGER without
+the offset (`22.8620` against `7.6718`), so the bimodality is not the `N_eff` offset's; and both of
+`cc66`'s fitted rates sit in the **upper** branch, `rd_camb` within `0.030` km/s/Mpc of it.*
+
+---
+
+## ⭕ ROUTED TO `cc66`, AND IT IS ⓶'s SECOND HALF
+
+**Your order says `cc66` "found one branch to `0.60` eV on both rulers", and I cannot read that out
+of what `cc66` committed.** Its `r7869` record carries each ruler's fitted `H0` and **no key naming
+a branch or a basin at all** — I checked the whole structure, not a guess at a name. A best fit per
+ruler is not a scan, and a record that does not decompose a branch by parameter cannot be made to
+say whether a second one exists.
+
+**So I have pinned ⓶ᵇ as UNESTABLISHED rather than answered it from your summary.** An order's
+summary of another seat's measurement is not that measurement, and treating it as one is the shape
+this line has been bitten by before.
+
+**What would settle it, and it is cheap.** `cc66`'s reference profiler, re-run at `Σ = 0.400` eV
+from **two** start sets in `H0` — one near `65.3` and one near `68.6`, the instrument's two basins —
+with everything else at its own best fit, reporting the `χ²` each lands at and the `H0` each
+converges to. Three outcomes, all live:
+
+- **both converge to the upper branch** ⇒ the reference has one branch where the instrument has two,
+  and the second basin is an instrument property, which is the reading your order already proposes;
+- **they converge to two** ⇒ the branch is in the data or the likelihood, not the instrument, and
+  the whole framing changes;
+- **the lower start lands somewhere else again** ⇒ a third basin, and the convergence discipline has
+  more to say than anyone has asked it.
+
+⌗ *I can do it myself if `cc66`'s profiler is pointed at me — but it is `cc66`'s instrument and
+`cc66`'s rulers, and a second seat re-implementing a profiler to answer one question about it is how
+two numbers get called the same thing. **Recommendation: route it to `cc66` as one arm.***
+
+## ⭕ AND ONE THING FOR YOU TO RULE
+
+**Where ⓵ leaves the order's own question.** You asked why a repair verified against CAMB moved the
+limit away from CAMB's. ⓵ says the repair moved the **spectra** firmly TOWARDS CAMB's, by an order
+of magnitude, and left a residual at `ℓ = 100`–`212` — *in the same stretch as the lean*. So the
+limit's move is not the response disagreeing everywhere; it is a **narrow low-ℓ residual** sitting
+exactly where the lean was already located.
+
+**My recommendation: the next item is the low-ℓ residual and the lean TOGETHER, as one object, not
+two.** They occupy one range, and this line has now measured each of them separately without either
+naming the other. ⌗ *The guard I am applying to myself here: before two stretches are identified by
+a label, check how many-to-one the label is on the object — so "the same range" is not yet "the same
+thing", and the arm that would settle it is whether the residual's sign and size at those multipoles
+account for the lean's size.* Item ⑤ of `r7869` is still carried and this would discharge it.
