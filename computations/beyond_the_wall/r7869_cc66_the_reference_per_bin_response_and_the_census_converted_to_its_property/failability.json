@@ -1,0 +1,43 @@
+{
+ "n_hit": 4,
+ "n_total": 4,
+ "ordered_form": {
+  "blind_to_the_plant": true,
+  "flagged": [],
+  "n_flagged": 0
+ },
+ "trials": [
+  {
+   "band": "\u24c0\u246a",
+   "failures": 0,
+   "got": "PASS",
+   "hit": true,
+   "trial": "\u2474 the live tree, nothing planted",
+   "want": "PASS"
+  },
+  {
+   "band": "\u24bf\u2469",
+   "failures": 1,
+   "got": "FAIL",
+   "hit": true,
+   "trial": "\u2475 a one-rate bank planted through POLSAVE, carrying NO config",
+   "want": "FAIL"
+  },
+  {
+   "band": "\u24c0\u246a",
+   "failures": 0,
+   "got": "PASS",
+   "hit": true,
+   "trial": "\u2476 a bank planted on ANOTHER rate, declaring LEAFGEOM=1 in config",
+   "want": "PASS"
+  },
+  {
+   "band": "\u24c1\u246b",
+   "failures": 1,
+   "got": "FAIL",
+   "hit": true,
+   "trial": "\u2477 one of r7783's own four renamed away",
+   "want": "FAIL"
+  }
+ ]
+}

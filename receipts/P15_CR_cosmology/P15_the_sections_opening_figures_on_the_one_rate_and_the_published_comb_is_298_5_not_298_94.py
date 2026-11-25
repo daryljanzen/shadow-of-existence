@@ -116,6 +116,9 @@ print('=' * 100)
 
 # ---------------------------------------------------------------- (1) the census
 pol, lg = [], []
+# ⛭ r7869+cc66 ⑨: and each bank's OWN RECORDED RATE, because that is the property this row guards
+#   and the one thing every instrument bank carries -- `config` does not record the rate at all.
+rate = {}
 for f in sorted(glob.glob(os.path.join(ROOT, 'computations', '**', '*.npz'), recursive=True)):
     try:
         z = np.load(f, allow_pickle=True)
@@ -136,6 +139,12 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'computations', '**', '*.npz'), rec
         except Exception:
             v = 'unparsed'
     pol.append(rel)
+
+    def _scalar(key):
+        if key in z.files and np.asarray(z[key]).size:
+            return float(np.asarray(z[key]).ravel()[0])
+        return None
+    rate[rel] = (_scalar('ns'), _scalar('r_s'))
     if v is True or 'LEAFGEOM=1' in (str(z['switches']) if 'switches' in z.files else ''):
         lg.append(rel)
 mine = os.path.relpath(POL_NEW, ROOT)
@@ -160,44 +169,72 @@ pre_lg = [p for p in lg if p != mine]
 R7783_FOUR = frozenset(('pol_cr_leafrec0.npz', 'pol_cr_leafrec1.npz', 'pol_lcdm.npz',
                         'verify_cr_leafrec1_pol.npz'))
 _four = frozenset(os.path.basename(p) for p in pre) & R7783_FOUR
-# ⛭ r7861 (69): THE SECOND NAMED ARRIVAL, in the form the row's own clause prescribes.  At 69's r7857 ruling the
-#   bank model3 reads left `/tmp` and was committed (60, r7860): 32 polarisation points under
-#   `computations/beyond_the_wall/bank/pol_grid/` (and its BVEL=1 re-solve in `pol_grid_bvel1/`), in each of which the 16 `cr_*` points are the `cr` arm at
-#   LEAFGEOM=1, LEAFREC=1, LEAFSCALES=1, LMAXL=2000, LSTEP=8, carrying Dl, Dl_EE and Dl_TE.  They are the
-#   product of 60's r7842 run, made AFTER r7783, so they do not show the fourth feature needed no run; they
-#   are named here by directory AND by their sixteen basenames, so a seventeenth one-rate bank there, or one
-#   anywhere else, still reddens this row.
-R7860_DIRS = (os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid'),
-              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1'),   # the landed grid, and its BVEL=1 re-solve (r7860 ④)
-              # ⛭ r7869 (69), on 60's r7866 routing: the third and fourth arrivals, the neutrino-sum grid re-solved on
-              #   the repaired Fermi-Dirac background, with the control at DNEFF +0.0293 (r7866) and +0.044 (r7867).
-              #   Same point list, the arm of record carrying no offset; named in the same form.
-              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff'),
-              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff044'))
-R7860_CR = frozenset('cr_%s.npz' % s for s in ('H0m', 'H0p', 'NSm', 'NSp', 'OMm', 'OMp', 'S000', 'S006',
-                                              'S015', 'S030', 'S045', 'S060', 'Sm06', 'Sm12', 'WBm', 'WBp'))
-_named_lg = [p for p in pre_lg if os.path.dirname(p) in R7860_DIRS and os.path.basename(p) in R7860_CR]
-pre_lg = [p for p in pre_lg if p not in _named_lg]
+# ⛭⛭ r7869+cc66 ⑨, ON 69's ORDER AND 60's ARGUMENT -- THE CLAUSE IS THE PROPERTY NOW, NOT A
+#   DIRECTORY LIST.  It had been extended by hand FOUR times (pol_grid, its BVEL=1 re-solve, and the
+#   two repaired-background re-solves), and 60's argument is right: a clause extended on every
+#   arrival is a reading with the hand still in it.
+#   ⛔ BUT THE ORDERED FORM CANNOT BE BUILT, and this row measures why instead of asserting it.  69
+#   asked for "no LEAFGEOM=1 polarisation bank ON THE ONE RATE other than r7783's own four", with
+#   "on the one rate" read off each bank's recorded `config`.  Two facts defeat that:
+#     ⒜ of the polarisation banks that carry a `config`, NOT ONE records the rate -- no CRH0, CROM,
+#        NS, WBH2 or any equivalent -- so "on the one rate" is unreadable there for EVERY bank; and
+#     ⒝ ACOUSTIC's POLSAVE path writes NO config at all, which is exactly why r7783 had to hand-write
+#        its own SWITCHES.txt.  So a planted one-rate bank -- the very case this arm must redden on --
+#        would carry no config and be INVISIBLE to a config-keyed test, while the banks that DO
+#        declare LEAFGEOM=1 are 60's grid, which must NOT redden.  ⇒ The ordered property is blind
+#        precisely where it has to bite.  Measured, not supposed: `failability.py` plants that bank.
+#   ⇒ So the property is read off what every instrument bank DOES record: its own `ns` and `r_s`.
+#   ⛔ AND THE ORDER'S "other than r7783's own four" IS WRONG ON ITS FACE: not one of the four is on
+#   the one rate.  Their recorded `ns` are 0.997952, 0.997952, 0.954248 and 1.015066 against the one
+#   rate's 0.961379 -- they are the PRE-EXISTING polarisation banks, which is the row's whole point,
+#   and they stay pinned BY NAME for that reason and not as one-rate arms.  The exception the clause
+#   actually needs is r7783's OWN banked arm, which is the one bank in the tree on the one rate.
+#   ⌗ Both halves are required: `r_s` alone nearly collides (a `lcdm_S060` bank sits 0.0037 Mpc away)
+#   while `ns` separates by 3.5e-3 against a 1e-6 tolerance.  Neither alone is the rate.
+ONE_RATE_NS, ONE_RATE_RS = 0.961379, 145.8231      # r7783's own SWITCHES.txt line, as its bank records it
+TOL_NS, TOL_RS = 1e-6, 1e-3
+
+
+def _on_the_one_rate(rel):
+    """read off the bank's OWN recorded outputs, so a config-less POLSAVE bank is still seen"""
+    ns_, rs_ = rate.get(rel, (None, None))
+    return (ns_ is not None and rs_ is not None
+            and abs(ns_ - ONE_RATE_NS) < TOL_NS and abs(rs_ - ONE_RATE_RS) < TOL_RS)
+
+
+_four = frozenset(os.path.basename(p) for p in pre) & R7783_FOUR
+_one_rate = sorted(p for p in pre if _on_the_one_rate(p))
+_four_on_rate = sorted(p for p in pre if os.path.basename(p) in R7783_FOUR
+                       and _on_the_one_rate(p))
+_lg_all = sorted(pre_lg)                       # REPORTED, so an arrival is still read, never a condition
+_margin = min((abs((rate[p][0] or -9e9) - ONE_RATE_NS) for p in pre if rate.get(p, (None,))[0]
+               is not None and not _on_the_one_rate(p)), default=float('nan'))
 _later = sorted(p for p in pre if os.path.basename(p) not in R7783_FOUR)
 check("⛭⛔⛭ `r7783` ** ① THE FOURTH FEATURE NEEDED A RUN, AND THAT IS ESTABLISHED BY **CENSUS** OVER "
       "EVERY `.npz` UNDER `computations/`: THIS RECEIPT'S OWN FOUR POLARISATION BANKS ARE ALL STILL "
-      "THERE, AND **NO** POLARISATION BANK IN THE TREE IS A `LEAFGEOM=1` ARM ** ⇒ *** the order "
+      "THERE, AND **NO** POLARISATION BANK IN THE TREE IS ON THE ONE RATE ** ⇒ *** the order "
       "expected the banked refit arm to serve, and that arm's `.npz` carries TT only -- `Dl_EE` and "
-      "`Dl_TE` are nowhere on the one rate. ** The census is the row rather than a look at the obvious "
-      "place, because a claim of this shape from this seat at `r7767` was too strong and had to be "
-      "withdrawn. ** *** ⌗ *A `LEAFGEOM=1` polarisation bank ANYWHERE, or one of the four gone or "
-      "renamed, reddens this and means no run was needed. A bank banked LATER that is not on the one "
-      "rate does not -- it is named in the row instead, so an arrival is read and not absorbed. "
-      "`r7807+cc66`'s re-pointed control is the first such bank, and it is this seat's own; the second is "
-      "60's r7842 polarisation grid, committed out of `/tmp` at r7860, and its BVEL=1 re-solve, whose "
-      "sixteen `cr` points each are LEAFGEOM=1 and are named by directory and basename*",
-      _four == R7783_FOUR and not pre_lg and len(_named_lg) == 16 * len(R7860_DIRS),
+      "`Dl_TE` are nowhere on the one rate. ** `r7869+cc66` ⑨ CONVERTED THIS FROM A DIRECTORY LIST "
+      "TO THE PROPERTY IT GUARDS, read off each bank's own recorded `ns` and `r_s`, because the "
+      "`config` the order named RECORDS NO RATE ON ANY BANK and the `POLSAVE` path that would write "
+      "a one-rate bank writes no `config` at all -- so a config-keyed clause is blind exactly where "
+      "it must bite. *** ⌗ *A polarisation bank ON THE ONE RATE anywhere, or one of the four gone or "
+      "renamed, reddens this and means no run was needed. A bank on any OTHER rate does not, however "
+      "many arrive and whatever directory it lands in -- it is counted in the row instead, so an "
+      "arrival is read and never absorbed, and the clause never needs extending again. Not one of "
+      "the four is itself on the one rate: they are the pre-existing banks, pinned by name*",
+      _four == R7783_FOUR and not _one_rate,
       f"{len(_four)} of r7783's own four polarisation bank(s) still present: "
       + ', '.join(sorted(_four))
-      + f'; banked since: '
-      + (', '.join(os.path.basename(p) for p in _later) if _later else 'NONE')
-      + f'; of all {len(pre)}, those with LEAFGEOM=1 outside the named r7860 grid: {pre_lg if pre_lg else "NONE"}'
-      + f'; named r7860 one-rate points: {len(_named_lg)} of {16 * len(R7860_DIRS)} (16 in each grid)')
+      + f'; banked since: {len(_later)} bank(s), '
+      + (('%d distinct basename(s), e.g. ' % len(set(os.path.basename(p) for p in _later)))
+         + ', '.join(sorted(set(os.path.basename(p) for p in _later))[:6]) + ', ...'
+         if _later else 'NONE')
+      + f'; of all {len(pre)}, those ON THE ONE RATE (ns within {TOL_NS:g}, r_s within {TOL_RS:g}): '
+      + (str(_one_rate) if _one_rate else 'NONE')
+      + f'; nearest other bank in ns: {_margin:.2e} away'
+      + f'; of the four, on the one rate: {_four_on_rate if _four_on_rate else "NONE, as the row states"}'
+      + f'; LEAFGEOM=1 banks counted and not gated: {len(_lg_all)}')
 
 # ---------------------------------------------------------------- (2) the run IS the same arm
 with np.load(POL_NEW, allow_pickle=True) as z:
