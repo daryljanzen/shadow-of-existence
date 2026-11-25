@@ -135,14 +135,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/45624977028",
-    "since": "b67c2288e7c114f31f174948cf0ce7c78046a103"
-   }
-  }
  }
 }
