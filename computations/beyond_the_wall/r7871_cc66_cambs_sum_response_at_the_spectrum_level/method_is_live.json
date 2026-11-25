@@ -1,0 +1,15 @@
+{
+ "bit_identical_at_60s_range": false,
+ "knob_is_live": true,
+ "probe": {
+  "mnu=0.6": 6.1492959866941225e-06,
+  "mnu=2": 6.166133279908367e-05
+ },
+ "survives": {
+  "Nu_approx": true,
+  "Nu_best": true,
+  "Nu_int": true,
+  "Nu_trunc": true
+ },
+ "worst_rel_at_60s_range": 6.1492959866941225e-06
+}
