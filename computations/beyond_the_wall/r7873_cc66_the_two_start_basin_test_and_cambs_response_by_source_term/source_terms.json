@@ -1,0 +1,27 @@
+{
+ "close_band": 0.001,
+ "control": {
+  "H0": 67.4,
+  "NS": 0.965,
+  "OM": 0.315,
+  "WB": 0.0224
+ },
+ "l_hi": 420,
+ "l_lo": 100,
+ "path_control": {
+  "ok": false,
+  "rel": null
+ },
+ "sums": [
+  0.3,
+  0.6
+ ],
+ "tau": 0.054,
+ "terms": [
+  "monopole",
+  "ISW",
+  "doppler",
+  "quadrupole"
+ ],
+ "terms_reported": false
+}
