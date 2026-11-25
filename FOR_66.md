@@ -15,6 +15,119 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7873+cc66.15 — ⛭⛔ **⑪ ONE BASIN ON BOTH RULERS AT `Σ = 0.400` — AT THAT SUM ONLY, SO `60`'s OBJECTION STANDS. ⑫ THE SPLIT CLOSES EXACTLY AND `ISW` CARRIES `×2.14` ITS WEIGHT — BUT `0.945356` OF THAT IS THE **EARLY** `ISW`, NOT THE LATE ONE**
+
+Both items are in. Receipt
+`P15_the_two_start_scan_finds_one_basin_at_0_400_only_and_cambs_sum_response_is_carried_by_the_early_isw_at_twice_its_weight.py`,
+**16 arms, 0 failed**, `COMPUTES: nothing`. Registered at `e08e77e1ec` with nine bands, pushed before
+a line of either computation existed. **Three of my own registration defects are on the record, and
+one departure from the registration is declared for you to judge.**
+
+### ⑪ — the basin test, and what the criterion actually measured
+
+The criterion fired differently on the two rulers, and I report that as registered before superseding it:
+
+| ruler | $\lvert\Delta H_0\rvert$ | $\lvert\Delta\chi^2\rvert$ | registered verdict |
+|---|---|---|---|
+| `rd_min` | `0.00058711` | `0.00000658` | **ONE BRANCH** |
+| `rd_camb` | `0.00387394` | `0.08595087` | **THE THIRD OUTCOME** |
+
+Both rulers put $H_0$ in the **same place**, inside four thousandths, and both runs land interior and
+re-score to their banked $\chi^2$ with zero drift. They differ by a factor `13057` in $\Delta\chi^2$,
+so **the split is about convergence, not basins.**
+
+⛔ **The defect is mine.** `fatol = 5e-3` is a stopping rule on the simplex spread, **not a bound on
+the achieved minimum**. My `0.01` bound is twice that rule but `rd_camb`'s measured run-to-run scatter
+is `17.190174×` it — so the threshold sat *between* the two and was bound to fire on the noisier ruler
+and not the quieter one. *An earlier commit message of mine called `0.01` "tighter than the convergence
+tolerance"; that was imprecise and the receipt states it precisely.*
+
+So I asked the question the criterion meant to ask, with a test that needs **no precision from the
+minimiser**: score the **midpoint** of the two converged five-parameter points. A basin is convex near
+its floor, so a midpoint inside one basin scores at or below the worse endpoint; a midpoint above both
+is a barrier. `rd_camb`'s midpoint lands `0.05522985` **below** its worse endpoint — `11.045970×`
+`fatol` below, not a marginal call. Its $\chi^2$ gap lives in `τ`, whose separation `0.00146063` is the
+largest of the four non-$H_0$ parameters by over an order of magnitude: the two runs found the same
+$H_0$ and stopped at different `τ` on one floor.
+
+⛔ **And that test's first version was also defective — no scale.** It compared the midpoint excess
+against **zero**, so `rd_min` came back **TWO BASINS** on a barrier of `0.00004834`: a hundredth of
+`fatol`, between two points agreeing to five decimals in *every* parameter. That verdict would have been
+false and absurd, and it was mine. Scaled against `fatol` and against the one-parameter unit, both
+rulers read **one basin**.
+
+⌗ **The scope is one sum, and I will not let the headline outrun it.** You were right that `r7869` held
+each ruler's best fit and no branch scan. This scans `Σ = 0.400` and nothing else. It removes the
+two-basin worry **at that sum** and leaves "one branch to `0.60` eV" exactly as unestablished as `60`
+found it.
+
+### ⑫ — the response by source term
+
+**CAMB can give it, and the split closes.** Four named sources return all sixteen pairs in one run;
+their sum reproduces CAMB's own TT to the path's own residual **and no worse**, and the four assigned
+contributions are additive to `2.728484e-12`.
+
+⛔ **But the closure arithmetic I registered could not have closed.** $C_\ell$ is **quadratic** in the
+source, so splitting the source in four does not split $C_\ell$ into four spectra. My driver summed the
+four *auto* spectra, dropping every interference term — it misses `26.683487` per cent of the total and
+**would have printed `DOES NOT CLOSE` and told you CAMB could not give the split, on an error of mine.**
+
+The answer, over $\ell = 100$–$420$ at `0.60` eV — median ratio, signed share of the response, share of
+the $\Sigma = 0$ spectrum:
+
+| term | ratio | share of response | weight | |
+|---|---|---|---|---|
+| `monopole` | `+0.020737` | `0.465652` | `0.627097` | `×0.74` |
+| `ISW` | `+0.041584` | `0.291812` | `0.136091` | **`×2.14`** |
+| `doppler` | `+0.030356` | `0.236597` | `0.204474` | `×1.16` |
+| `quadrupole` | `+0.034127` | `0.005940` | `0.005001` | `×1.19` |
+
+Shares additive to `1.00000000`, and nearly unchanged at `0.30` eV — a **structural** property, not an
+artefact of one amplitude. **The sum does not scale the spectrum; it reweights the terms that build it.**
+
+⌗ The terms **interfere** — `monopole × ISW` alone is `0.209044` of the total, the four autos only
+`0.696144` — so no term owns a share until the crosses are *assigned*. I split them half-and-half and
+**say so**; a different convention gives different shares. Same class as `r7869`'s unreadable per-bin
+share. And the per-term ratio *envelope* is **unreadable** for `ISW` and `quadrupole` (`19.354451`,
+`10.823707`) because their contributions cross zero — the third instance of that class here, so I state
+it as a rule: **a ratio is readable only where its denominator keeps its sign.**
+
+### ⑫'s registered gate FAILS, and I read the terms anyway — your call
+
+`Ⓘ⑨` says the unmodified sources must return CAMB's own TT to `1e-3` before any term is read. **It
+returns `1.976630e-03` — twice the band. The failure stands as written.** It is not a dead mechanism and
+not an accuracy problem: invariant across `lens_potential_accuracy` `1`–`4` and `lmax` `1200`/`2600`, and
+**not** the trough artefact that made `r7871`'s `Ⓔ⑤` pass on a quantity that did not exist — I tested
+that and it is refuted, since the residual at TT's deepest points is *smaller* than at its peaks. CAMB's
+own docstring names the cause: the symbolic sources are derived *after integration by parts*, a different
+equivalent **arrangement** of the line-of-sight integral from the one CAMB's code evaluates.
+
+**I read the terms regardless, and that is a departure from my own registration.** The ground is measured,
+not assumed: `Ⓘ⑨` gates *absolute* agreement while every number above is a **ratio within the path**,
+where the common systematic cancels to `0.000572` of the signal — a factor ~`75`. `Ⓘ⑨`'s purpose was to
+catch a mechanism that silently does nothing, and three measurements a dead mechanism could not produce
+serve that purpose better. **If you judge the departure wrong, the item is yours to re-order and I will
+re-run it under whatever gate you set.**
+
+⌗ *Its first failure was `gfortran: not found` — the custom-source path compiles generated Fortran at run
+time. That is an **environment** gap, and calling it "CAMB cannot give it" would have invoked your escape
+clause on a missing compiler and closed a live item. I installed the compiler instead.*
+
+### the one that refuted my own headline
+
+`Ⓗ⑧` registered the early/late `ISW` window **at risk**, because early against late is one integrand over
+different stretches of *time*, not a source term. **It survived** — a logistic window at `a = 0.032258`
+($z = 30.0$) compiled and closes on the undivided term to `1.049911e-14`. And its answer is a negative:
+the **late** `ISW` is intrinsically the more responsive half (`+0.093606` against `+0.074700`, `1.25×`),
+but it is only `0.044190` of the term in this band and carries `0.054644` of the response. **`0.945356`
+of `ISW`'s response is the EARLY `ISW`.**
+
+So `×2.14` is a **recombination-era** effect, not the dark-energy one it reads as. Had the window failed,
+the natural reading — massive neutrinos acting through the late-time growth `ISW` integrates — would have
+gone unchallenged and been **wrong**. ⌗ *And it is a statement about **this band**: $\ell = 100$–$420$ is
+your window and it excludes the late `ISW`, which lives at $\ell \lesssim 10$, almost entirely. The figure
+should not be carried out of this band by anyone.*
+
 ## r7871+cc66.14 — ⛭⛔ **⑩ YOUR PREMISE HOLDS: THE RATIO IS READABLE WHERE THE SHARE WAS NOT. ⛔ BUT IT IS NOT A SUPPRESSION — IT **OSCILLATES**, CHANGING SIGN `11`–`13` TIMES WITH HALF THE MULTIPOLES POSITIVE, SO WHAT GROWS WITH `Σ` IS THE **ENVELOPE** AND TT–EE DISAGREE BY `0.164`. ⛭ AND THE PERTURBATION TREATMENT **CANNOT CARRY** YOUR `81.94 → 185.96` meV: CAMB's FOUR SETTINGS SPAN `7.306e-08`, WITH THE KNOB **PROVED LIVE** FIRST. THE SECOND HALF IS REFUSED AS YOU ASKED**
 
 Item ⑩ is in. Receipt
