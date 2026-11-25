@@ -29447,3 +29447,88 @@ it, it is the next revision’s first item.**
    and the refutation is what rules out your candidate ⓵. I am keeping it as refuted rather than
    quietly dropping it, because the two hours bought the one thing in ② I could not otherwise
    have said.*
+
+
+---
+
+# ⇒ `r7870` (60), ROUTED AND URGENT — **THE UNREADABLE MINIMISED LIMIT IS THE PROFILER MIXING TWO BASINS, SO YOUR FORK MAY HAVE NO SLOT FOR ITS ANSWER. THE SEPARATING GRID IS RUNNING AND YOU CAN STOP IT**
+
+Order `r7869` ruled the thirty-two-point separating grid to decide which of two things carries the
+unreadable minimised profile: the repaired background, or the `N_eff` ruling. **Working item ③ first,
+as your order requires, turned up a third thing that is neither of them, and it is this seat's own
+earlier results that it contradicts.**
+
+## ⭕ What was measured, in the order it was measured
+
+① **Item ① reproduced the unreadability at the corrected offset.** On the bank at `+0.044` the
+minimised profile rises from its minimum at `0.060` eV to `0.500` and then **falls by `3.35`** at
+`0.600`, so the convergence discipline reports no limit — exactly as at `+0.0293`. ** ⇒ On its own
+that already rules the ruling OUT: unreadable at BOTH figures. ** The calibrated limit moved
+`+0.23` meV, `185.69 → 185.92`, so the whole corrected re-solve confirms `r7866`'s figures to
+within a quarter of a meV.
+
+② **Item ③ ruled the grid's edge out, two ways over.** The bank is **smooth** across the whole sum
+axis — no sign change in the step of `sum(Dl)` — and `0.600` eV is a **BANK NODE**, where a cubic
+spline returns that knot's own value, so there is no extrapolation to blame. *The edge hypothesis
+had nothing to stand on once the node was identified as a knot.*
+
+③ **What the edge test found instead: three independent start sets agree to `0.0000` at nine of
+eleven nodes, the crossing region agrees to EXACTLY zero, and ONE node disagrees by `12.5367`.**
+A second basin, at `0.400` eV.
+
+④ **And the basin is not local.** Carried to every node from its own solution, it reaches
+`0.200` (`−1.34`), `0.250` (`−3.81`), `0.300` (`−6.58`), `0.400` (`−12.54`) and `0.500`
+(`−18.50`) — deeper at every one — and gives **nothing further at `0.600`**.
+
+⛔ ** ⇒ SO `0.600` WAS ALREADY IN THE LOWER BASIN WHILE `0.500` WAS IN THE HIGHER ONE, AND THE DIP
+THE DISCIPLINE REFUSED A LIMIT ON *WAS* THE BASIN SWITCH. **
+
+⑤ **On a one-basin envelope the profile is monotonic and the limit reads: `300.98` meV minimised**,
+against the reference's `54.00`. The calibrated limit comes back **`185.92` meV, identical to the
+digit** with and without basin seeding — which is a control worth having: the lower basin does not
+reach the calibrated surface at all, so only the minimised profile was ever basin-mixed.
+
+## ⚠ THE FORK, and what I am NOT claiming
+
+Your fork's two branches were *the repaired background* and *the `N_eff` ruling*. The guard applies
+literally: **when a fork names two objects, check that the thing they are alternatives FOR has a
+slot for only one of them.** On this measurement the unreadability is a property of the PROFILE and
+not of the spectra, so the slot the fork was built around may not exist.
+
+**What is solid is the NEGATIVE claim**, and I want that boundary drawn sharply:
+* the dip is **not** the grid's edge — established on the bank's own smoothness and on the top node
+  being a knot, neither of which involves any fit;
+* the dip is **not** the `N_eff` ruling — it is there at both figures of the offset;
+* the dip **is** reproduced, exactly, by two nodes landing in different basins.
+
+**What is NOT solid is the number `300.98`.** It is read on a **lower envelope of what has been
+found**, not a proved global minimum. A third basin deeper still would move it, and nothing I have
+done rules one out. *I am not asking you to take `300.98` as a limit; I am telling you the
+unreadability has an explanation that neither branch of your fork names.*
+
+## ⭕ This seat's recommendation, and the grid is running meanwhile
+
+**The separating grid is RUNNING** — the repair on, no offset on either arm, both halves, keyed to
+its own directory. I started it rather than waiting, for two reasons that do not depend on the fork:
+you ruled it, and its four-rung decomposition (the landed bank; repair only; repair at `+0.0293`;
+repair at `+0.044`) is wanted whatever carried the unreadability. **It is named here so you can stop
+it if you would rather not spend the cores.**
+
+**My recommendation, which is yours to take or refuse:** keep the grid for the decomposition and
+**retire the fork's question**, because its premise is the thing that moved. What I would put in its
+place is the question the basin raises: *is the lower basin a physical second solution, or is it the
+amplitude-tau degeneracy this score carries?* The two basins differ almost entirely in one
+parameter — `−1.054` against `+0.597` grid steps — at the same `tau`, which is a shape I cannot
+read as physical or spurious without a ruling on what that direction means.
+
+⌗ *And a second, smaller thing, routed separately because it belongs to whoever owns the
+convergence rule rather than to me:* **the discipline refuses a limit on a non-monotonicity at
+`0.600` eV when the crossing it suppresses sits near `0.200` — three times lower.** Narrowing it to
+a neighbourhood of the crossing would have reported a limit here from the start, and would also have
+hidden the basin. *That trade is the rule's to make, and I am attaching the measurement rather than
+making it.*
+
+⚠ *One tension with this line's own record, named rather than reconciled: `r7864` measured a second
+basin and reported that the repaired background did not survive it. A second basin is plainly
+present here ON the repaired background. Whether it is the same object I have not established, and I
+am not assuming it either way.*
