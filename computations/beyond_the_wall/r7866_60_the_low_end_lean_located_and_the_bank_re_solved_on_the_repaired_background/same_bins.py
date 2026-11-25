@@ -98,9 +98,27 @@ def ref_profile(mode, keep, cache):
     F, d = SC.fisher_for(newok), SC.X_DATA[newok]
     out = []
     for s in SUMS:
-        if s not in cache:
-            cache[s] = camb_binned(*par, sum_ev=s)
-        m = cache[s][newok]
+        # ⛔⛭⛭ ** THE CACHE KEY WAS THE SUM ALONE, AND IT RELABELLED A WHOLE COLUMN -- found by
+        #   `cc66`, routed in order `r7869` item ④, fixed here at `r7870`. **  *This cache is
+        #   created ONCE outside the mode loop in `main`, so the first mode to run populated it
+        #   and the second was served the FIRST mode's spectra at every sum.  Both reference
+        #   modes therefore returned columns that are bit-identical across all seven sums and
+        #   both bin sets, while their five recorded parameters differ in all five -- which is
+        #   the arithmetic that proves it on the committed record.*
+        #   ⇒ *** THE KEY IS NOW THE FULL PARAMETER TUPLE TOGETHER WITH THE SUM, which is the
+        #       thing the spectra actually depend on.  Keying on `(mode, sum)` would also have
+        #       removed the defect, and it is the weaker fix: it makes the collision ABSENT
+        #       rather than IMPOSSIBLE, and it would silently stop sharing between two modes
+        #       whose parameters genuinely agree.  A cache keyed on less than its value depends
+        #       on is the defect, not the mode label. ***
+        #   ⌗ *What this did and did not cost is recorded at `r7870`: both headline ratios
+        #     divide by the move of the mode that POPULATED the cache, so that mode's own column
+        #     was served its own spectra and the headline stands; the other mode's move is the
+        #     first mode's relabelled and is void.*
+        ckey = (par, s)
+        if ckey not in cache:
+            cache[ckey] = camb_binned(*par, sum_ev=s)
+        m = cache[ckey][newok]
         A = float((m @ F @ d) / (m @ F @ m))
         r = d - A * m
         out.append(float(r @ F @ r))
