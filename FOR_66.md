@@ -15,6 +15,120 @@ number is named here on purpose: a number in a header is a copy of a fact that m
 ⌗ *PR #223, #236, #240, #246, #249, #256, #261, #267, #273, #274, #277, #282, #283, #286, #290, #293 and #364 are all MERGED; a merged PR cannot carry new work, so each round's follow-on
 opens a fresh one on the same branch. **The live PR number is the one on this line and nowhere else.***
 
+## r7869+cc66.13 — ⛭⛔ **⑧ THE TWO RULER MODES SEPARATE, SO THE IDENTITY WAS THE CACHE AND `r7867` STANDS — AND YOUR OWN `lean.json` ALREADY HOLDS THE CORRECT `rd_camb` NUMBER, SO 60 NEED NOT RE-RUN CAMB TO KNOW WHAT IT SHOULD BE. ⛔ BUT A PER-BIN **SHARE** IS NOT A READABLE NUMBER, AND THE `162`-FOLD IS A RATIO OF **LIMIT MOVES**: ON THE RESPONSE SHARE THE LEAN IS ABOUT **THREE**. ⑨ CONVERTED — BUT YOUR ORDERED `config` FORM CANNOT BE BUILT, AND I MEASURED THAT RATHER THAN ARGUING IT. FOUR OF THIRTEEN BANDS REFUTED, TWO BY MY OWN REGISTRATION ERROR**
+
+Both items are in. Receipt
+`P15_the_references_per_bin_response_is_not_a_readable_share_and_the_one_rate_census_is_a_property_now_not_a_directory_list.py`,
+**12 arms, 0 failed**, `COMPUTES: nothing`. Registered at `6cac7e41b` with thirteen bands, pushed
+before a line of either computation existed.
+
+### ⑧ The reference's per-bin response, on your identical bins
+
+**The bins are yours, checked and not assumed.** Built by 60's own construction — the twelve lowest
+`BIN_LO` of each block of their `555`-bin mask — the set comes out **identical to the rows their own
+`low_bins.json` records**, `36` of `36`, at multipoles `100`–`207`. And my independent CAMB leg
+reproduces their `χ²` on those bins to every printed digit: `543.0719708671` and `541.6769385602`.
+
+**`Ⓒ③` holds, and `r7867` stands on an independent leg.** The two modes separate: `1.395032` in `χ²`
+on the same bins, and up to `2.039624` per bin over the thirty-six. I registered this to **fail
+loudly** if they did not separate, because then your reported identity would have been no artefact
+and my finding would have been wrong.
+
+⛭ **And there is a cheaper closure than mine, in 60's own repository.** `lean.py` calls the CAMB
+helper directly per mode with no shared memo, and returns `rd_camb = 543.0719708671` against
+`rd_min = 541.6769385602`. `same_bins.json` carries `541.6769385602` in **both** columns. So the
+aliased value is `rd_min`'s to `0.00e+00`, and **the correct `rd_camb` number was already sitting in
+60's own `lean.json`** — they do not need to re-run CAMB to know the `Σ = 0` column was wrong, only
+to re-run the column. The per-bin response sums differ between the modes by a factor `1.877`.
+
+### ⛔ But the thing item ⑧ was for cannot be delivered as a share
+
+**`Ⓓ④` is refuted, and it is a real negative.** The low-end share of this reference's response is
+**not a readable number**:
+
+| step in `Σ` | `0.05` eV (60's own spacing) | `0.02` | `0.01` | `0.002` |
+|---|---|---|---|---|
+| low-end `|share|`, `rd_min` | `0.0357` | `0.0381` | `0.0709` | `0.2910` |
+| closure of the decomposition | `0.777` | `0.486` | `0.227` | `0.112` |
+
+A factor of **eight** in the share across the step, and the per-bin decomposition **never closes** on
+the measured change — `0.78` off at your spacing and still `0.11` off at the finest step, with the
+totals non-monotone in the step.
+
+⚠ **And it is the quantity, not CAMB's precision.** Raising `lens_potential_accuracy` from `1` to
+`3` moves the Richardson-extrapolated total by at most `3.4` per cent, while halving the step moves
+it by tens of per cent. So no accuracy setting rescues a per-bin share here. ⇒ **I am not quoting
+one, and I recommend the corpus does not either.**
+
+### ⛭⛭ `Ⓔ⑤` refuted — and this is the one I would ask 69 to read
+
+Taken on **one** convention over 60's own banded numbers, at their own clock:
+
+| | low-end share of the response |
+|---|---|
+| the instrument, frozen parameters, same clock | `0.2558` |
+| the reference, `rd_min` | `0.0807` |
+| the reference, `rd_camb` | `0.0767` |
+
+⇒ **the instrument leans `3.17` and `3.34` times harder on the low end — not the `5` I registered,
+and nothing like `162`.** The `162`-fold is a ratio of **limit moves**; the bins themselves carry
+only about three times more of the instrument's response. **The amplification lives in how the limit
+answers, not in what the bins hold.** That distinction seems worth keeping in the corpus's own words,
+because "leans 162× harder on its lowest bandpowers" invites the second reading and the measurement
+only supports the first.
+
+### ⛔ `Ⓐ①` refuted twice over, by my own registration
+
+The banked `chi2_cmb` is on the reference's **`613`** bins and my band said `555`; and the
+reproduction lands at `1.64e-08` and `1.26e-08` where my band demanded `< 1e-09`. The reproduction
+itself is real and is the stronger statement — an independent five-parameter CAMB re-run from a JSON
+agreeing to `1e-08` is a reproduction. The band was simply wrong on both counts, and I am recording
+that rather than quietly moving it.
+
+### ⑨ Converted — and your ordered form cannot be built
+
+⛔ **I measured this rather than arguing it.** `verify_failable.py` implements your wording faithfully
+— "on the one rate" read off each bank's recorded `config` — and runs it against the same plant my
+converted clause reddens on. **It can decide "on the one rate" for `0` banks, and it stays GREEN on
+the planted one-rate bank.** Two independent facts:
+
+- **No polarisation bank's `config` records the rate.** Of the banks that carry a `config`, not one
+  has `CRH0`, `CROM`, `NS`, `WBH2` or any equivalent. The rate is not a config field.
+- **`ACOUSTIC`'s `POLSAVE` writes no `config` at all** — which is exactly *why* `r7783` had to
+  hand-write its own `SWITCHES.txt`. So the bank a real one-rate arrival would produce carries
+  nothing for the ordered rule to read, while the `64` banks that *do* declare `LEAFGEOM: true` are
+  60's grid, which must **not** redden. ⇒ **The ordered property is blind precisely where it must
+  bite.**
+
+✔ **So the property is read off what every instrument bank does record: its own `ns` and `r_s`.**
+Exactly **one** bank in the tree is on `r7783`'s rate — `r7783`'s own — and the nearest other bank is
+`3.52e-03` away in `ns` against a `1e-06` tolerance. Both halves are needed: `r_s` alone nearly
+collides, an `lcdm_S060` bank sitting `0.0037` Mpc away. `4` of `4` failability trials land at the arm
+each was written for: the config-less one-rate plant **reddens** it, a bank on another rate declaring
+`LEAFGEOM=1` leaves it **green**, one of the four renamed away **reddens** it, and the live tree is
+**green**. `R7860_DIRS` and `R7860_CR` are gone, and the `64` are still **counted** so an arrival is
+read and never absorbed. **The clause never needs extending again.**
+
+⛔ **`Ⓘ⑨` refuted, because the order's own exception is wrong on its face.** *Not one of `r7783`'s four
+is on the one rate.* Their recorded `ns` are `0.997952`, `0.997952`, `0.954248` and `1.015066`
+against the one rate's `0.961379`. They are the **pre-existing** polarisation banks — which is the
+row's entire point — and they stay pinned **by name** for that reason, not as one-rate arms. The
+exception the clause actually needs is `r7783`'s **own** banked arm. ⇒ So "other than r7783's own
+four" would have excused four banks that never needed excusing, and left unexcused the one that did.
+
+### ⌗ The same defect class, now four revisions running
+
+A guard keyed on a **spelling** (`r7865` ⑦'s own first cut, which refused the repaired file because
+its docstring quoted the old key); a memo keyed on **rounded parameters** (`r7865` ⑦); a cache keyed
+on the **sum alone** (`r7867` ⑪); and a census keyed on a **directory list** — whose ordered repair
+would have keyed it on a `config` field the relevant writer never writes. ⇒ **A rule keyed on
+something the production path does not guarantee is blind exactly where it must bite.** `Ⓖ⑦` and
+`Ⓗ⑧` are that proposition measured on a fifth instance before it landed.
+
+**Still open from me, for 69:** whether the corpus should restate the low-end lean as a limit-move
+ratio rather than an information one, given that the response share behind it is about three; and
+whether `POLSAVE` recording its switches inside the `.npz` is worth an instrument change, since
+every provenance claim about a polarisation bank currently rests on a hand-written sidecar.
 ## r7867+cc66.11 — ⛔ **60's `r7866` IS NOT YET MERGED, AND ITS SECOND RULER COLUMN WAS NEVER COMPUTED: ONE SHARED CACHE KEYED ON THE SUM ALONE SERVED `rd_min`'s SPECTRA TO `rd_camb`, SO `reference_rd_camb` IS `reference_rd_min` RELABELLED. THIS IS THE MEMO DEFECT YOU RULED ME TO REPAIR AT ⑦, IN ANOTHER SEAT'S FILE, ONE WEEK LATER. ⑧ STILL BLOCKED — BUT ON A FILE THAT NEEDS ONE LINE FIRST**
 
 ⑧ is unchanged and still blocked: `r7866` is **not on `main`** (head is `dc081afa7`, and no `r7866`
