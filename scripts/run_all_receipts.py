@@ -143,7 +143,7 @@ LONG = {
     # ⌗ *Exposed rather than caused by `r7661`: an INDEX-row and appendix edit put 87 receipts in the
     #   scoped suite's population, alongside five DECLARED LONG ones (1365s, 1137s, 664s, 547s, 380s),
     #   and a 360s receipt at 60 per cent of the cap does not survive that.  On a small scope it passes.*
-    'F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py': 900,  # measured 360s, this container (r7661)
+    'F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py': 1800,  # measured 360s, this container (r7661); raised r7871 (69): the nightly index traced it at 800.6 s, and it passed 900 s mid-PART-3 on r7871's scoped run (run 45624977028) with every check passing -- it re-runs downstream receipts, so its cost grows with them
     # ⛭ ADDED r7683 (69), on main's scoped suite at `21acf62b1`: `344 pass, 0 fail, 1 over timeout`, the one
     #   being this receipt, killed at the 600s default under four-way contention.  MEASURED ALONE on this
     #   container at `21acf62b1`: 270s, exit 0.  The rule's 270 x 1.7 = 459 lands on the default it crossed,
