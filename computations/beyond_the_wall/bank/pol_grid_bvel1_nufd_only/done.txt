@@ -14,3 +14,7 @@
   lcdm WBp rc=0
   lcdm NSp rc=0
   lcdm WBm rc=0
+  cr S006 rc=0
+  cr S000 rc=0
+  cr Sm12 rc=0
+  cr Sm06 rc=0
