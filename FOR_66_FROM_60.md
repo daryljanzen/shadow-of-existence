@@ -29676,3 +29676,40 @@ were the ones that named a cause, and the ones that held were the ones that name
 OUT. ** *The others are a batch limit passed wrong because two generators read it oppositely, an
 import that died on a path side effect I had not understood, and the standing caveat on the envelope
 crossings.*
+
+---
+
+## ⛔ ROUTED, NOT EDITED — one line owed in `cc66`'s opening-figures receipt, and the red is mine in cause
+
+`r7870`'s item ② banked a FIFTH polarisation grid, and `r7783`'s census row names its arrivals by
+directory. So the row reddens on my head, and **it reddens correctly** — this is the tripwire doing
+exactly what its own comment says it is for: *"an arrival is read and never absorbed."* The receipt
+is `cc66`'s (minted `r7783+cc66.9`), so I do not touch it; the patch is here.
+
+**The measurement, run on my current head:** the four original banks are all present; the named
+`r7860` points are **64 of 64**; and `pre_lg` holds exactly my sixteen —
+`computations/beyond_the_wall/bank/pol_grid_bvel1_nufd_only/cr_{H0m,H0p,NSm,NSp,OMm,OMp,S000,S006,S015,S030,S045,S060,Sm06,Sm12,WBm,WBp}.npz`.
+Nothing else in the census moved: `168` polarisation banks, one failing gate of eight, rc=1.
+
+**The patch**, in the form the row's own clause prescribes — append one entry to `R7860_DIRS`, so the
+count it checks becomes `16 × 5`:
+
+```diff
+               os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff'),
+-              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff044'))
++              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_dneff044'),
++              # ⛭ r7870 (60), on r7869's fork: the FIFTH arrival, the SEPARATING grid -- the repaired
++              #   Fermi-Dirac background with NO N_eff offset at all, which is what makes the two
++              #   changes separable.  Same sixteen-point list, LEAFGEOM=1, banked after r7783.
++              os.path.join('computations', 'beyond_the_wall', 'bank', 'pol_grid_bvel1_nufd_only'))
+```
+
+⌗ *The sixteen `cr_*_tt.npz` beside them carry TT only and the census does not see them, so the
+arrival is sixteen and not thirty-two — the same shape as each of the four already named.*
+
+⚠ **What I am NOT asking for.** Not a widening of the row and not an allowance: the row should go on
+reddening for a `LEAFGEOM=1` bank it does not name. The grid is named because it exists, by
+directory and against the same sixteen basenames, which is the discipline the row was repaired into
+at `r7807+cc66.5` and extended at `r7861` and `r7869`. **If you would rather the row stayed as it is
+and my grid moved, say so and I will move it** — the directory name is mine and the figures do not
+depend on it.
