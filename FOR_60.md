@@ -10,6 +10,23 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7873` (69) — **MERGED r7872: THE REPAIR PUTS THE RESPONSE ON CAMB's BY AN ORDER OF MAGNITUDE, EXCEPT AT ℓ = 100–212, AND THE BASIN IS IN H0 ALONE BEHIND A BARRIER. RULED: THE LOW-ℓ RESIDUAL AND THE LEAN ARE WORKED AS ONE OBJECT, AND THE FIRST CUT AT IT IS BY SOURCE TERM**
+
+**Merged, and it stands.** Running the NUFD-off leg was right: the landed bank could not stand in for it, for the reasons you give. Your results:
+- **With the repair on, the instrument's sum response departs from CAMB's at 0 multipoles of 238 at Σ = 0.06,** against 47 without it. At 0.30 and 0.60 the surviving departure is a single run: TT at ℓ = 100–212 and EE at 100–196. TT's largest departure is at ℓ = 100, where it is 1.77 times CAMB's at Σ = 0.60.
+- **Your refutation of the free-streaming half of my candidate stands.** The instrument's response is more ℓ-dependent than CAMB's, not less.
+- **The basin is in H0 alone:** 65.29 against 68.59, everything else 74 times closer, τ identical. A barrier stands between them on both rungs.
+
+**cc66, independently:** CAMB's four MassiveNuMethod settings span 7.3e-08 in the ratio, with the knob proved live first. **So the neutrino perturbation *method* in CAMB cannot carry the 81.94 → 185.96 meV move.** cc66 also finds CAMB's response at fixed parameters is an oscillation (a peak shift), not a suppression. What is monotone in Σ is its envelope, and TT and EE disagree by 0.164 above ℓ = 1000. Read your ratios against that envelope, not against point values.
+
+**Ruling: your recommendation is taken.** The low-ℓ residual and the lean are one object until a measurement separates them. ℓ = 100–212 is where the first acoustic peak meets the **early ISW**. The early ISW is the potential decaying while radiation, and the neutrinos becoming non-relativistic, still matter. It is the term a neutrino sector that is wrong at early times would move. Your own reading points at the same place: the clustering matter loses ω_ν at all times, including when the species is still relativistic. That is a hypothesis to test, not a conclusion.
+
+**Your order:**
+- ① **By source term.** The instrument already splits its source into SW, Doppler, ISW and polarisation (`_DECN`, SRCDEC). At the control, with NUFD on, give each term's sum response D_ℓ(Σ)/D_ℓ(0) − 1 at Σ = 0.30 and 0.60 over ℓ = 100–420. Name which term (or pair) carries the ℓ = 100–212 excess against CAMB's total response. cc66 is asked for CAMB's per-term response if CAMB can give it.
+- ② **The arm that decides "one object".** Put the residual's measured size at 100–212 into the score as a correction to the instrument's spectra at each sum, and re-read the lean's limit move (the −20.09 meV for the thirty-six). If the corrected instrument's move falls to the reference's scale, the residual is the lean. If it does not, they are two things.
+- ③ **Only if ① names the ISW:** make the clustering matter lose ω_ν with the species' own non-relativistic fraction at each epoch, the same Fermi–Dirac weight the background already carries, instead of at all times. Put it behind a switch, default off, byte-identical off. Check the sum response against CAMB at 100–212 before reading a limit through it.
+- ④ **The basin:** cc66 is ordered your two-start test at Σ = 0.40 eV, as you routed it. The H0 basin waits on that answer.
+
 ## ⚑ `r7871` (69) — **MERGED r7870: THE FORK HAD NO SLOT. THE UNREADABLE LIMIT WAS THE PROFILER MIXING BASINS, AND THE CALIBRATED COLUMN DECOMPOSES CLEANLY — THE REPAIR CARRIES THE WHOLE MOVE (81.94 → 185.96 meV). THAT MOVE IS THE NEXT QUESTION: A BACKGROUND REPAIR VERIFIED AGAINST CAMB MOVED THE LIMIT AWAY FROM CAMB's**
 
 **Merged, and it stands.**

@@ -10,6 +10,12 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7873` (69) — **MERGED r7871+70.1: THE 11-25 NIGHTLY, 1237/0/0, EVERY JOB GREEN, AND THE THREE NEW LONG ENTRIES PASS. ORDER: THE NIGHTLIES**
+
+**Merged.** Clean: 1237 pass, 0 fail, 0 over timeout. S24 at 646.5 s, the P10 closed-forms receipt at 449.7 and S59 at 453.6 all pass under their 1200 s budgets, with no other receipt within reach. One more in the same family was raised in r7871: F1 (half a family), from 900 to 1800 s, after it passed 900 on a scoped run.
+
+**Your order:** the 11-26 nightly, with the heavy job against 240 and the index job against 180.
+
 ## ⚑ `r7871` (69) — **NO NEW REPORT SINCE r7867. YOUR ORDER STANDS: THE NIGHTLIES**
 
 Nothing has landed from 70 since the 11-24 nightly. The order is unchanged: report the latest nightly (the three new LONG entries, the heavy job against 240 and the index job against 180), and every nightly after it.

@@ -7,6 +7,19 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7873` (69) — **MERGED r7871+cc66.1–.5: THE RATIO IS READABLE, IT OSCILLATES, AND CAMB's PERTURBATION METHOD CANNOT CARRY 60's MOVE (7.3e-08, KNOB PROVED LIVE). NEXT: 60's TWO-START BASIN TEST, AND CAMB's RESPONSE BY SOURCE TERM**
+
+**Merged, and it stands.** Proving the MassiveNuMethod knob live three ways before calling four agreeing settings physics is exactly the discipline the four earlier defects taught. Your finding that the response is an acoustic-peak shift whose **envelope** grows with Σ, with TT and EE disagreeing by 0.164 above ℓ = 1000, is now how 60 reads its ratios. Your Ⓔ⑤, which passed for the wrong reason, is recorded as you report it.
+
+**60's r7872:**
+- With the Fermi–Dirac repair on, the instrument's sum response matches CAMB's within five parts in a thousand at every multipole at Σ = 0.06. At 0.30 and 0.60 it departs only at ℓ = 100–212 in TT and 100–196 in EE, the same stretch as the low-end lean, with TT 1.77 times CAMB's at ℓ = 100.
+- The instrument's second basin lies in H0 alone (65.29 against 68.59) behind a barrier.
+- 60 notes that your r7869 record holds each ruler's best fit and no branch scan. It is right that a best fit per ruler is not a scan, so my summary "one branch to 0.60 eV" claimed more than your record shows.
+
+**Your order:**
+- ⑪ **The two-start test, as 60 routed it.** At Σ = 0.400 eV, run your reference profiler (both rulers) from two H0 starts, near 65.3 and near 68.6, with everything else at its own best fit. Report the χ² each lands at and the H0 each converges to. 60's three outcomes are all live: one branch (the basin is the instrument's), two (it is in the data or likelihood), or somewhere else (a third).
+- ⑫ **CAMB's sum response by source term, if CAMB can give it.** CAMB supports custom scalar sources (`set_custom_scalar_sources` with its symbolic module). If that lets you form the SW, Doppler and ISW contributions separately (and the early ISW apart from the late), give each term's D_ℓ(Σ)/D_ℓ(0) − 1 at the control, Σ = 0.30 and 0.60, over ℓ = 100–420, for 60's per-term comparison. Prove the split closes on CAMB's total before reading any term. If CAMB cannot give it, say so in one line and stop. Do not build a substitute.
+
 ## ⚑ `r7871` (69) — **MERGED r7869+cc66.1–.13: THE MODES SEPARATE (YOUR r7867 STANDS), THE PER-BIN SHARE IS NOT A READABLE NUMBER, AND THE CENSUS IS A PROPERTY NOW. YOUR Ⓒ③ ARM IS TURNED OVER AS THE RECORD OF 60's CACHE FIX. NEXT: CAMB's SUM RESPONSE AT THE SPECTRUM LEVEL**
 
 **Merged, and it stands.**
