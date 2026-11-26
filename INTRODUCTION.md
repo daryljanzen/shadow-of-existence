@@ -74,25 +74,25 @@ them the Standard Model's arrangement).
 
 <figure>
   <object data="BOOK_INTRO_cosmiCave/assets/dependency_matrix.html" type="text/html" width="100%" height="640"></object>
-  <figcaption><strong>Figure 1 — the corpus's citation dependency matrix.</strong> Entry <em>(i, j)</em> is the
-  number of times paper <em>i</em> cites paper <em>j</em>. A <em>row</em> is what a paper rests on; a
-  <em>column</em> is what it feeds. Heat-shaded; both poles marked; the P1↔P4 complementarity flagged.</figcaption>
+  <figcaption><strong>Figure 1 — the corpus's citation dependency matrix.</strong> Entry <em>(i, j)</em> is the number of times paper <em>i</em> cites paper <em>j</em>. A <em>row</em> is what a paper rests on; a <em>column</em> is what it feeds. Heat-shaded; the two poles marked; the P1↔P4 complementarity flagged.</figcaption>
 </figure>
 
-*(The live table is `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`, regenerated from the corpus by
-`scripts/depmatrix.py`; the same data is P7's `tab:dependency-matrix`.)*
+*(The table is generated from the papers' own citations by `scripts/depmatrix.py`; the same data is P7's
+`tab:dependency-matrix`.)*
 
-**Read down the columns and one thing stands out: exactly two papers are coupled to the whole corpus** — a
-full row *and* a full column each. **P7, the framework**, and **P17, the geometric core.** *(Verified from the
-source `.tex` rather than the rendered table: each cites all sixteen others and is cited by all sixteen. P3,
-the waypoint, is cited by fifteen and has the largest column sum, **147** — recomputed r1612 at 146 and again r1632 after P3 gained a citation; the figure had read 134, stale since the r1600–r1608 placements added citations without re-running `scripts/depmatrix.py`.)* Everything feeds P7
-and P7 feeds everything; P17 is built from every paper and points back to every paper. The other fifteen cluster
-and gap; these two touch all.
+**Two papers are coupled to the whole corpus, in both directions.** **P7, the framework**, is cited by all
+seventeen other papers and draws on every paper written before the synthesis. **P17, the geometric core**, cites
+all seventeen and is cited by all seventeen. Everything feeds P7 and P7 feeds everything; P17 is built from
+every paper and points back to every paper. The other papers cluster and leave gaps; these two touch all.
 
-**That is why the corpus resisted being put in an order for so long, and why it has no first page.** A one-hub
-corpus is a tree with a root, and a root sits at the front. **A two-hub corpus has no linear slot — it has a
-*between*:** fifteen papers stretched between two synthesis poles. P17 kept wanting to be "the border" for
-exactly this reason.
+Three more things can be read straight off the table. **P3**, where the substrate's geometry is built, is the
+most-drawn-on paper after P7, cited by every other paper but P4. **P18**, the synthesis, draws on every paper
+while only P15 and P17 point into it, because it is written from outside the construction. And **P4's row is
+the sparsest by design**: it cites only what its measurement uses, so that it stands on its own ground.
+
+**That is why the corpus has no first page.** A corpus with one hub is a tree with a root, and the root goes at
+the front. A corpus with two hubs has no linear slot for them: the other papers stretch between two synthesis
+poles, and a reader comes in somewhere between them.
 
 ### Where to come in
 *Two things follow, and they answer different questions. **The doors** are per-reader: one arrives with an
@@ -102,8 +102,8 @@ load and also raise the guard before there is anything to weigh them against.*
 
 
 The matrix is not only a self-portrait; it says as data where a reader should enter. **There is no single first
-page, so here are the doors — and whichever you take, the road runs through P3**, the largest column sum in the
-matrix and where the substrate's geometry is actually built.
+page, so here are the doors — and whichever you take, the road runs through P3**, where the substrate's
+geometry is built and which every other paper but P4 draws on.
 
 **If you want what is *forced* — the sceptic's door: P1, then P4.** The two forcing keystones, and the matrix
 marks them a complementary pair: **P1 proves** the foliation from causal structure alone, needing none of the
