@@ -27,12 +27,17 @@ paper whole itself; the read is never farmed out. Each turn:
 **Phase 2 --- writing.** From the survey, the candidates ranked, then each written to the submission-ready state
 P1's and P4's standalones reached, and lined up with venues and an order.
 
+**Where things stand, and the constraint on venues.** No paper is under review: GRG declined P1 and ApJL declined
+P4, so the course is charted afresh, with those two venues out for those papers. arXiv has not let Daryl post, so
+every submission goes directly to a journal, and a venue that requires an arXiv posting first (JCAP, for one) is
+out. Each candidate's venue is checked against that as the survey reaches it.
+
 | paper | survey | standalone candidates found | venue | state |
 |---|---|---|---|---|
-| P1 | not yet surveyed | the existing standalone (event horizon as metric singularity) | GRG declined; next venue open | standalone exists, in work |
+| P1 | not yet surveyed | the existing standalone (event horizon as metric singularity) | GRG out (declined); direct-submission venue to choose | standalone exists, not under review |
 | P2 | not yet surveyed | the existing standalone, `resources/P2_standalone` | CQG (JMP alternative) | in preparation |
 | P3 | not yet surveyed | | | |
-| P4 | not yet surveyed | the existing standalone (the modern parallax) | ApJL declined; ApJ, MNRAS backup | standalone exists |
+| P4 | not yet surveyed | the existing standalone (the modern parallax) | ApJL out (declined), JCAP out (arXiv-gated); ApJ, MNRAS considered | standalone exists, not under review |
 | P5 | not yet surveyed | | | |
 | P6 | not yet surveyed | | | |
 | P7 | not yet surveyed | | | |
@@ -1012,51 +1017,16 @@ the work for its own reasons the whole time.*
 **Current count: 2 live, 0 struck. Non-zero — no flag raised, and the operative question is not yet due.**
 
 ---
-# ⛔⛔ THE HARD PUBLICATION BLOCK — Daryl, r1564.
+# THE PUBLICATION PHASE --- the programme now works toward publishing (Daryl, 26 Nov 2026)
 
-**Superseded by Daryl's own direction:** P1 and P4 have gone to journals, and the standalone papers lane at the head of this plan is his direction to publish. The words below are kept as he wrote them.
-
-**In his words, recorded verbatim because paraphrase would soften it:**
-
-> *"I will **NOT** publish or even share even P1 with anyone at all while the corpus retains a single such
-> incompleteness due to a work-blocker that actively tries to keep work from being done anywhere within the
-> corpus. The corpus/book have been in an absolute **BLOCKED** state where I've only been willing to share a
-> figure here or there with a close friend or family member. Otherwise it's all remained in the real world
-> completely between you and me… **none of it is allowed to see the light of day, in my mind, while the
-> programme tries to quarantine owed work anywhere, load-bearing or not.** Because the very tendency to cut and
-> orphan such work and bury it in nearly unfindable places everywhere is the thing I fear most. **It could
-> silently be killing real load-bearing work from being done. It's where errors hide. It's where everything
-> crumbles to dust.**"*
->
-> *"I would sooner **erase the entire programme from existence** than share it with a single person while I
-> remain not thoroughly convinced that all work-blockers and cut corners have been completely eradicated."*
-
-**This is a hard gate, not a preference.** One instance anywhere blocks publication of everything, including P1.
-
-## The tension it names, stated plainly so a node can hold it
-**A node's natural pull is to cut the thorough parts and get to the prize fast.** *"Not load-bearing, can be
-left"* is that pull wearing a justification. **Daryl's pull is the opposite and stronger: erase it all rather
-than ship it with one quarantined debt in it.** The programme is built out of the second and constantly eroded
-by the first. **Every blocker a node writes is a small bet that nobody will ever need that work. The whole
-corpus is the record of that bet being wrong.**
-**⌗ AND WHAT ARC 11's PER-LANE PASS SAYS ABOUT THIS GATE — recorded because the block IS a gate and a node needs
-to know whether it is moving (r1785).** *The pass found **no new work-blockers of the quarantining kind this
-section fears.** It found **the opposite failure, repeatedly: work already DONE and not recorded as done.**
-**A5.4's own named test unrun for 755 revisions while its answer sat in four papers** · **A4.5 asserting an open
-that P17 struck ANSWERED 162 revisions earlier** · **A1.4 reading as *waiting* while tested and passing on DESI
-DR2** · **A6.5 filed as "a candidate spawned puzzle" that P7 states almost verbatim** · **nine L8 receipts with
-six unregistered** · **a head marker reading OPENED 76 revisions after its own section recorded the closure**.*
-***That is not the bet this section names — it is the same bet inverted: not "nobody will ever need that work"
-but "nobody will ever need to know that work was done."*** **And the harm arrives one step later and looks the
-same: a node re-derives what exists, or treats a settled thing as open and plans around it — which is how two
-revisions at r1706–r1707 rebuilt `prop:triple`.**
-*The block's discharge condition reads **"all work-blockers and cut corners completely eradicated."** **This class
-is neither**, and it is what the audit keeps finding. **Whether it falls under the gate is unassigned; it is
-recorded here rather than assumed either way.***
+The programme is no longer worked in isolation. Its phase now is building publications and getting the work out:
+the standalone papers lane at the head of this file is the route. The earlier block on sharing or publishing
+anything is retired. What stays is what it was guarding: owed work is done, not quarantined, and a paper goes
+out only when it stands against its literature.
 
 ## ✔ THE PHRASE SWEEP IS COMPLETE — and what remains is ADDITIONAL SCOPE, not a failure
 **⚠ First, the distinction that keeps this straight (Daryl, r1565): a PUBLICATION blocker is not a WORK
-blocker.** The gate above stops *shipping*. It does not stop *working* — and **the completed phrase sweep
+blocker.** *(The publication gate this distinction once qualified is retired; see the publication phase above.)* Work was never stopped — and **the completed phrase sweep
 unlocked everything downstream of it in the sequence.** *Do not read the remaining forms as the sweep having
 failed; read them as the next tranche of the same job, with the first tranche done and paid for.*
 
@@ -3654,8 +3624,8 @@ Real cohesion work. *(r1448: the heading read "low-priority hygiene" and the lin
   named there, so whoever books the pass knows what rides on it** — and the next corpus-wide read of any kind
   carries them whether or not it is called the canon sweep.
   ⟐ *material:* the standing check's findings, accumulating in `CONSOLIDATE_THE_PLAN_AND_INDEX_THE_PROGRAMME.md`
-  §14 SA-1 · *gate:* **this is the hard publication block's clearance condition** — see the block at the head of
-  this file · *depends on:* the standing check having matured the detection method.
+  §14 SA-1 · *gate:* none for publication, the publication block being retired (see the publication phase); the
+  check stands as work · *depends on:* the standing check having matured the detection method.
 
 - **D.9 · SA-2's SWEEP — cross-corpus defragmentation (entered r1569 so it happens).** *The right thing in the
   wrong place.* Three shapes established so far: a workaround carried in a tool instead of a record · one job's
