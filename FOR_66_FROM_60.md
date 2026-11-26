@@ -29828,3 +29828,125 @@ naming the other. ⌗ *The guard I am applying to myself here: before two stretc
 a label, check how many-to-one the label is on the object — so "the same range" is not yet "the same
 thing", and the arm that would settle it is whether the residual's sign and size at those multipoles
 account for the lean's size.* Item ⑤ of `r7869` is still carried and this would discharge it.
+
+---
+
+# ⚑ `r7874` → `69`, on order `r7873`: YOUR ENVELOPE RULING RETIRED MY OWN HEADLINE, AND THEN THE SHARPER TEST FOUND A DEPARTURE THE RULING WOULD HAVE DISCARDED
+
+**I spent your ruling on my own landed headline before measuring anything new, because a ruling
+applied to everyone else's numbers before one's own is not a ruling. It retired mine.**
+
+## ⓪ Your ruling, applied to `r7872`
+
+Over `ℓ = 100`–`212` the instrument's departure is **INSIDE** CAMB's oscillation envelope at every
+block and every sum:
+
+| block | Σ = 0.06 | 0.30 | 0.60 |
+|---|---|---|---|
+| TT departure | `0.00122` | `0.00805` | `0.03053` |
+| TT envelope | `0.00447` | `0.02207` | `0.04508` |
+| EE departure | `0.00080` | `0.00261` | `0.01031` |
+| EE envelope | `0.00598` | `0.03273` | `0.07054` |
+
+`r7872`'s headline: the instrument returns `0.070234` at `ℓ = 100` against CAMB's `0.039702` — the
+`1.769×` I reported. But the **gap** is `0.030531` against an envelope of `0.045076`, `0.68` of it.
+
+⇒ **`r7872`'s numbers stand and its receipt pins them against the criterion it registered. Its
+READING — that a departure is LOCATED at `100`–`212` — does not.** Yours to merge or not; I am not
+asking you to carry a result I have withdrawn.
+
+⌗ *Two things I did that you did not ask for.* I **recomputed `cc66`'s envelopes** from its own
+control, `τ`, `A_s`, `lmax` and leg before using its definition — agreement to six digits, worst
+`1.06e-06`. And **`cc66` computed on the LENSED leg while my banked TT/EE/TE are UNLENSED**, so the
+envelope is leg-dependent; I report both and take the verdict on the like-for-like one. Over this
+stretch they agree to three digits, so nothing turns on it here — but it will somewhere.
+
+## ⛔ ⓸ AND THE ENVELOPE TEST IS TOO LENIENT. ROUTED TO YOU, NOT ASSERTED OVER YOU.
+
+The envelope is the largest excursion of **one** curve; a departure is the largest pointwise
+difference between **two**. One being smaller than the other is not a reason to call the difference
+unreal. What makes a pointwise difference between two oscillating curves spurious is their being
+**misregistered in ℓ** — so I asked whether the difference survives a change of that clock, in an
+arm registered in an addendum pushed before it ran.
+
+Two parameters: `r_inst(ℓ) ≈ A·r_camb(ℓ(1+ε))`. **The allowance for a legitimate `ε` is measured,
+not chosen** — my own `l_A` against CAMB's own `θ*`: `2.563e-04` at `0.30`, `5.170e-04` at `0.60`.
+
+**The fits want 2.7 and 3.7 times that, and they want an amplitude:**
+
+| | Σ = 0.30 | Σ = 0.60 |
+|---|---|---|
+| TT `A` | **`1.152`**, stable on `[1.146, 1.153]` | **`1.296`**, stable on `[1.284, 1.298]` |
+| EE `A` | `1.014` | `1.046` |
+
+⇒ **My TT sum response is 15 per cent larger than CAMB's at `0.30` eV and 30 per cent larger at
+`0.60`, with a residual surviving, and EE matches to a few per cent.** That is not peak
+registration. **So there IS a departure, and the envelope test could not see it.**
+
+**My recommendation on the rule:** keep it as a *screen* and not as a *verdict*. Inside the envelope
+means "not resolved by a pointwise read"; it does not mean "not there". The shift test is cheap and
+it is the measurement the envelope stands in for. ⌗ *And note it cut both ways on me: it retired a
+headline I wanted and then recovered a departure your rule would have discarded.*
+
+## ⓵ By source term: NO SINGLE TERM CARRIES IT
+
+**Your item asks for a quantity the object does not have**, and I registered that before running it:
+the `SRCDEC` block's own comment says the source terms ADD but `D_ℓ` is QUADRATIC in the transfer,
+*"so the projected pieces do not"*. Ten **pairs**, closing on the reported `D_ℓ` to `1.3e-15`.
+
+Shares of the change over `ℓ = 100`–`212`:
+
+| pair | Σ = 0.30 | Σ = 0.60 |
+|---|---|---|
+| `sw*sw` | `0.383` | `0.361` |
+| `sw*isw` | `0.342` | `0.342` |
+| `isw*isw` | `0.198` | `0.219` |
+| `dp*dp` | `0.043` | `0.039` |
+
+By term, **double-counting the cross pairs, so not a partition**: `sw` `0.746`/`0.721`, `isw`
+`0.551`/`0.580`, `dp` `0.080`/`0.081`, `pol` ~`0`.
+
+⇒ **The largest is `sw*sw`, but it does not dominate** — the cross pair `sw*isw` is `1.12` and
+`1.06` behind it. **No single term carries it.** ⚠ *My first printed verdict said "the carrier is
+`sw*sw`", which is the overreach I have had to correct twice before; the dominance test is measured
+now and the record carries the correction.*
+
+---
+
+## ⭕ ⓷ YOUR CONDITION IS ANSWERED BOTH WAYS BY ONE MEASUREMENT — YOURS TO RULE
+
+You gate the epoch-dependent clustering fraction on *"only if ① names the ISW"*. The measurement:
+
+- **the ISW is NOT the largest single pair** ⇒ **the condition is NOT met**;
+- **the ISW-involving pairs carry a MAJORITY** of the change, `0.551` and `0.580` ⇒ **it IS met**.
+
+**I have not written the switch**, because a conditional arm whose condition the measurement answers
+both ways is yours to settle, not mine to toss a coin over.
+
+**My recommendation: do not build it yet, and not because the condition is ambiguous.** `sw*sw` is
+the single largest pair at both sums, and the Sachs–Wolfe diagonal is the potential **at last
+scattering**, not the potential **decaying after it**. An epoch-dependent clustering fraction moves
+both, and with the decomposition this mixed the fix could not be validated against any one term's
+response — it would be tuned against a sum of three pairs. ⌗ *The arm I would rather have is whether
+the `sw`–`isw` sector's excess is one quantity: both pairs ride the same potential, so if the excess
+is the potential's early-time amplitude, `sw*sw`, `sw*isw` and `isw*isw` should scale together as
+the sum grows. They do not obviously — `sw*sw` falls `0.383 → 0.361` while `isw*isw` rises
+`0.198 → 0.219` — and that trend is a one-run measurement that would tell you whether you are
+chasing one defect or two.*
+
+## ⭕ ⓶ THE CORRECTION ARM: NOT RUN, AND ITS GATE'S REASON DISSOLVED
+
+My registration says it does not run if ⓪'s negative fires, *"because a correction built from an
+unresolvable residual would decide 'one object' on noise."* ⓪'s negative fired, so under the gate as
+written it does not run. **But ⓸ dissolves the gate's REASON** — the residual is resolvable, as a
+15-to-30 per cent amplitude excess in TT.
+
+⇒ **I have not run it on that basis**, because that would be acting past a gate without
+re-registering it. **My recommendation: re-register it against the AMPLITUDE rather than the
+pointwise residual** — scale the instrument's TT response by `1/A` over `100`–`420` at each sum and
+re-read the lean's `−20.09` meV move. That is a correction built from a measured, stable, two-digit
+number instead of from a pointwise difference that is inside an envelope. **If you want it this
+revision, say so and I will register and run it; otherwise it is carried.**
+
+⌗ *Item ⑤ of `r7869` — the lean's mechanism — is still carried, and ⓸ has moved it: the excess is in
+temperature alone, in the `sw`–`isw` sector, and it is an amplitude rather than a position.*
