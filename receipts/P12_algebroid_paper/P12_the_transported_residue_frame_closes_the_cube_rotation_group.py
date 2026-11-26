@@ -24,6 +24,10 @@ Results (asserted below):
   6. Residue identities (Euler-Jacobi): sum 1/P'(r_i) = 0 and sum r_i/P'(r_i) = 0; since
      f'(r_i) = -P'(r_i)/r_i for f = 1 - 2M/r - r^2, the second is the vanishing sum of inverse
      surface gravities over all three horizons (cf. arXiv:2407.13079).
+
+COMPUTES: the horizon cubic at alpha = 1, loops of radius 0.15 about each Nariai point from base point
+2M = 0.1 in the complex mass plane (robust to base point and radius); group closure and element profile
+exact on signed permutations; residue identities at 2M = 0.1, 0.3, -0.25.
 """
 import itertools
 from collections import Counter
