@@ -62,7 +62,10 @@ check("⛭ `r7875` ** ⑬ Ⓐ① THE CONTROL IS **READ FROM `60`'s MODULE AT RUN
       (abs(AC['control']['H0'] - 67.40) < 1e-9 and abs(AC['control']['OM'] - 0.3150) < 1e-9
        and abs(AC['control']['WB'] - 0.0224) < 1e-9 and abs(AC['control']['NS'] - 0.965) < 1e-9
        and abs(AC['tau'] - 0.054) < 1e-12 and AC['lmax'] == 2600
-       and AC['window'] == [100, 420]),
+       and AC['window'] == [100, 420]
+       and abs(AC['sums'][0] - 0.30) < 1e-12 and abs(AC['sums'][1] - 0.60) < 1e-12
+       and abs(AC['A_s'] - 2.1e-9) < 1e-20
+       and abs(BS['sums'][0] - 0.20) < 1e-12 and abs(BS['sums'][2] - 0.50) < 1e-12),
       'control %s; tau %.3f; lmax %d; window %s' % (AC['control'], AC['tau'], AC['lmax'],
                                                     AC['window']))
 
