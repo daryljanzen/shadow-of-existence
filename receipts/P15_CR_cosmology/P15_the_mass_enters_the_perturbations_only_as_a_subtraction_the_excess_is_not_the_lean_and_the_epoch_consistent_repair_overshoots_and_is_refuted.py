@@ -412,6 +412,57 @@ check('Ⓕ③ʰ ⛔ ** AND WHAT IS NOT DONE IS SAID: ** the three changes went i
       and 'it is **not run here**' in RESULT
       and 'no decomposition of which one over-corrects' in RESULT)
 
+# ══ Ⓗ THE RED THIS REVISION'S OWN DIFF CAUSED, AND THE CLASS THAT DISPOSES OF IT ════════════════
+# *Adding a switch moves the instrument's blob, and two shared `P15` receipts compare the working
+#  tree against a BANKED blob through an AST escape hatch that each adding seat extends by routing a
+#  patch.  That red IS this revision's, so the class is measured here and routed, and the receipts
+#  are not touched.*
+SC = load('strip_class.json')
+SC_PY = text('strip_class.py')
+REPLY = ' '.join(text('FOR_66_FROM_60.md', ROOT).split())
+
+check('Ⓗ⑧ᵃ ⛭ ** THE FIXED POINT: the eighth class reduces the working tree to the banked blob. ** '
+      '⇒ *so the hatch certifies the instrument that produced the bank is still the one on disk, '
+      'which is the claim the two receipts rest their arm on*',
+      SC['fixed_point'] is True)
+
+check('Ⓗ⑧ᵇ ⛭ and THE FLOOR: the seven landed classes ALONE leave it red, so the eighth is doing the '
+      'work and is not a no-op riding on the others.  ⇒ *a class that would pass without being '
+      'needed is an exemption with a nicer name*',
+      SC['floor'] is False)
+
+check('Ⓗ⑧ᶜ ⛭ and EIGHT controls, every one of which keeps the row RED: a moved landed constant, a '
+      'deleted landed line, a changed landed operand, the guard made live-when-off, a moved LANDED '
+      'default, a moved default of THIS revision\'s own switch, a moved marker of its shear arm, '
+      'and an unguarded factor in place of the guarded one',
+      len(SC['controls']) == 8 and all(SC['controls'].values()),
+      '%d control(s), all red' % len(SC['controls']))
+
+check('Ⓗ⑧ᵈ ⛔⛭ ** AND THIS SEAT\'S OWN HOLE, FOUND BY ITS OWN CONTROL AND FIXED RATHER THAN '
+      'DROPPED: ** the landed classes strip a new switch\'s binding BY NAME, and written that way '
+      'this class\'s "moved default" control PASSED -- with the binding stripped by name, a later '
+      'change making the switch default ON would be invisible and the hatch would certify a tree '
+      'whose switch is live.  ⇒ *the class now matches the four statements on their EXACT value '
+      'expression, so a moved default keeps the row red; the same hole is in the fifth and seventh '
+      'classes and is reported to the seat that owns them rather than repaired here*',
+      'TIGHTER THAN ITS PREDECESSORS, AND ON PURPOSE' in SC_PY
+      and 'NEW_STATEMENTS' in SC_PY
+      and 'the one that found the hole' in REPLY
+      and 'The same hole is in the fifth and seventh classes' in REPLY)
+
+check('Ⓗ⑧ᵉ ⛭ and the patch was VERIFIED and then REVERTED: both receipts were run with it applied '
+      'and came back clean, and the files were restored, because they are shared and the convention '
+      'is that the gating seat applies the patch.  ⇒ *routing a patch and saying it was run is only '
+      'honest if it was run*',
+      'rc=0`, zero failed arms, zero failed checks on each — then **reverted the files**'
+      in REPLY)
+
+check('Ⓗ⑧ᶠ ⌗ and the switch-count gate of another seat is routed the same way, not edited: this '
+      'revision takes the instrument from ninety-one environment switches to ninety-three, which is '
+      'that gate\'s own convention -- the count may move and each mover is named with its commit',
+      'A PATCH FOR YOUR SWITCH-COUNT GATE, ROUTED AND NOT APPLIED' in REPLY
+      and 'now reads **93** switches where your gate names 91' in REPLY)
+
 # ══ Ⓖ EVERY FIGURE THE INDEX ROW PRINTS, PINNED POINTWISE AND NOT THROUGH A LOOP ════════════════
 # ⚠ *The arms above hold most of these already -- but they hold them through a LOOP VARIABLE, and a
 #   literal read off a loop variable is not a pin: the comparison the instrument parses contains no

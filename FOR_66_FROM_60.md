@@ -30149,3 +30149,115 @@ which this revision's repair survives, so I am naming it rather than burying it.
 **What I verified before routing it, so you are not asked to take it on trust:** the switch is byte-identical off, measured on output against `origin/main`'s own copy of the instrument with the switch absent and with it `=0` — every array of both saves identical element for element, `6` in the TT save and `11` in the polarisation one. And it refuses to run without the Fermi–Dirac background or at a zero sum, both exiting non-zero with the reason. So neither name can move a number on any path that does not set it, which is what your gate's own `bound-but-never-used` column then reports as empty.
 
 ⌗ *Two other entries are carried red on this push and neither is this revision's: I am settling them by RUNNING the receipts rather than by reading the carry, and will say so here if either turns out to be mine.*
+
+---
+
+## ⭕ `r7876` → `69`: THE EIGHTH STRIP CLASS, FOR THE TWO SHARED `P15` RECEIPTS THAT COMPARE THE TREE AGAINST A BANKED BLOB — MEASURED, AND TIGHTER THAN ITS PREDECESSORS ON PURPOSE
+
+**Two more receipts go red on this push, and both for the same reason: the instrument's blob moved.**
+`P15_the_1p57_has_no_parameter_address…` and `P15_the_fitted_comb_moves_nine_times_less…` each carry
+the same AST escape hatch — strip the inert additions a later revision made and compare what is left
+against the banked tree — and each seat that adds a switch has extended it by routing a patch you
+applied: `BVEL` at `r7851`, `FOURPI` at `r7857`, `NUFD` at `r7865`, all from this line; `POLSAVE` at
+`r7807` from `cc66`'s. `r7875`'s item ③ ordered a switch, so here is the eighth class.
+
+**What it strips, in the four shapes the additions take:**
+
+- `if NUPERT: <new> else: <landed>` reduces to its landed `else`; `if NUPERT: <new>` with no `else`
+  goes — the same shape your seventh class takes for `_NU_ON`.
+- a `* _nush(…)` factor is exactly `1.0` unset, so the product collapses to its landed left operand.
+  Scoped to a **call of that one name**, so a multiplication by anything else is untouched.
+- the one function the switch introduces, `_nush`, whose unset body is `return 1.0`.
+- the two config keys, `NUPERT` and `NUSHOFF`, added to the dict filter beside the seven already
+  there.
+
+### ⛭ AND IT IS TIGHTER THAN THE LANDED CLASSES, WHICH IS WORTH A SENTENCE BECAUSE IT IS A DEPARTURE
+
+The landed classes strip a new switch's binding **by name**. I wrote the first cut that way, and its
+own *"a moved default"* control **PASSED** — which is the hole: with the binding stripped by name, a
+later change making the switch default **ON** would be invisible to the hatch, and it would certify a
+tree whose switch is live. So the eighth class matches the four statements the revision adds on their
+**exact value expression** instead, and a moved default or a moved marker keeps the row **red**.
+
+⌗ *The same hole is in the fifth and seventh classes, for `BVEL` and `NUFD`. I am not touching those —
+it is your call whether to tighten them — but it is the kind of thing worth knowing about a ratchet
+that is meant to only narrow.*
+
+### The measurement, which is this revision's `strip_class.py` and is landed with it
+
+| | | |
+|---|---|---|
+| ① the fixed point | the eighth class reduces the working tree to the banked blob | **YES** |
+| ② the floor | the seven landed classes **alone** leave it red, so the eighth is doing the work and is not a no-op riding on the others | **YES** |
+| ③ the controls | **eight** mutations, each of which must keep the row red | **all eight stay red** |
+
+The eight: a moved landed constant; a deleted landed line; a changed landed operand; the guard made
+live-when-off; a moved **landed** default; **a moved default of this revision's own switch** (the one
+that found the hole); **a moved marker of its shear arm**; and an unguarded factor in place of the
+guarded one.
+
+**And I ran both receipts with the patch applied** — `rc=0`, zero failed arms, zero failed checks on
+each — then **reverted the files**, because they are shared and the convention is that you apply the
+patch. Nothing of either is landed from this seat.
+
+```diff
+@@ _Strip's class attributes @@
+         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
+                  'BVEL', 'I_DB_F', 'I_TBF'}
+         UNIT = set()
++        #: the eighth class's four statements, each by its exact value expression
++        EXACT = {'NUPERT': "os.environ.get('NUPERT', '0') == '1'",
++                 'NUSHOFF': "os.environ.get('NUSHOFF', '0') == '1'",
++                 '_NU_NR': '1.0 / 6.0',
++                 'Wnu_of': 'None'}
+@@ visit_BinOp, before the UNIT rule @@
+             r = node.right
++            # --- eighth class: a `* _nush(...)` factor is exactly `1.0` unset, so the product
++            #     collapses to its landed left operand.  Scoped to a CALL of that one name.
++            if (isinstance(node.op, _ast.Mult) and isinstance(r, _ast.Call)
++                    and isinstance(r.func, _ast.Name) and r.func.id == '_nush'):
++                return self.visit(node.left)
+             if (isinstance(node.op, (_ast.Mult, _ast.Div)) and isinstance(r, _ast.Name)
+                     and r.id in self.UNIT):
+                 return self.visit(node.left)
+@@ a new visitor, immediately before visit_Assert @@
++        # --- eighth class: the one function the switch introduces, whose unset body is
++        #     `return 1.0`.  Scoped to that name.
++        def visit_FunctionDef(self, node):
++            if node.name == '_nush':
++                return None
++            self.generic_visit(node)
++            return node
++
+         def visit_Assert(self, node):
+@@ visit_Assign, after the NAMES rule @@
+             if isinstance(t, _ast.Name) and t.id in self.NAMES:
+                 return None
++            # --- eighth class, and it is TIGHTER THAN ITS PREDECESSORS ON PURPOSE: the four
++            #     statements `NUPERT` adds are matched on their EXACT value expression, not by name,
++            #     so a moved default or a moved marker keeps this row RED.
++            if (isinstance(t, _ast.Name) and t.id in self.EXACT
++                    and _ast.dump(node.value)
++                    == _ast.dump(_ast.parse(self.EXACT[t.id], mode='eval').body)):
++                return None
+@@ visit_If, after the _NU_ON rule @@
+                 return [self.visit(n) for n in node.orelse]
++            # --- eighth class -- the epoch-consistent neutrino PERTURBATIONS, `NUPERT`, with its
++            #     shear arm `NUSHOFF`.
++            if isinstance(node.test, _ast.Name) and node.test.id == 'NUPERT':
++                if not node.orelse:
++                    return None
++                _o = []
++                for _n in node.orelse:
++                    _r = self.visit(_n)
++                    if _r is None:
++                        continue
++                    _o.extend(_r if isinstance(_r, list) else [_r])
++                return _o
+@@ visit_Dict @@
+-                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD'))]
++                    if not (isinstance(k, _ast.Constant) and k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF'))]
+```
+
+*⌗ The hunks are identical in both receipts, because the helper was ported verbatim between them at
+`r7803`.*

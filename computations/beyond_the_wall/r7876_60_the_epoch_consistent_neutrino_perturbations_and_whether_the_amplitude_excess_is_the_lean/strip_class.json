@@ -1,0 +1,16 @@
+{
+ "all_pass": true,
+ "blob": "e5319ce4968602ca6d8de89fdc871e8f9b0a645e",
+ "controls": {
+  "a changed landed operand": true,
+  "a deleted landed line": true,
+  "a moved LANDED default": true,
+  "a moved landed constant": true,
+  "an unguarded factor in place of the guarded one": true,
+  "the guard made live-when-off": true,
+  "\u26ed a moved default of THIS revision's own switch -- the control that found the hole": true,
+  "\u26ed a moved marker of THIS revision's own shear arm": true
+ },
+ "fixed_point": true,
+ "floor": false
+}
