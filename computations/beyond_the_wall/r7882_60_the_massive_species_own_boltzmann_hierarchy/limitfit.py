@@ -30,6 +30,7 @@ fit reads moves.
 import io
 import json
 import os
+import shutil
 import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
@@ -40,7 +41,9 @@ _R7876 = os.path.join(_BTW, 'r7876_60_the_epoch_consistent_neutrino_perturbation
                             '_amplitude_excess_is_the_lean')
 SHIFT = os.path.join(_R7874, 'shift.py')
 BANK = os.path.join(_BTW, 'bank')
+LANDED_DIR = os.path.join(BANK, 'pol_grid_bvel1_nufd_only')
 LEGS = os.path.join(_HERE, 'limitfit')
+WORK = os.path.join(_HERE, '_legs')
 sys.path.insert(0, _R7876)
 from refit import the_two_rebindings                                            # noqa: E402
 
@@ -51,6 +54,29 @@ BLOCKS = ('TT', 'EE')
 A_WAS = {'TT|0.30': 1.15162, 'TT|0.60': 1.29592, 'EE|0.30': 1.01405, 'EE|0.60': 1.04630}
 LANDED = 'pol_grid_bvel1_nufd_only'
 MOVE = 0.003                     # PREDICTION.md: the registered tenth of r7879's 0.03 band
+
+
+def legs(tag):
+    """a leg directory in `shift.py`'s own naming, which is NOT the bank's naming.
+
+    ⚑ `shift.py` opens ONE file per slot, `lcdm_<tag>.npz`, and reads `ls`, `Dl`, `Dl_EE` and
+    `l_A` out of it — all of which the POL leg carries.  So the slot file is the pol leg under the
+    bare name.  ⚑ NOT INVENTED HERE: this is `r7876`'s own `legs()` shape, which did the same for
+    the same fit; only the source directory and the suffix differ.
+    ⛔ *The zero leg is the LANDED bank's, at every reading, for the reason `gen_limitfit.sh`
+    gives: the switch refuses a zero sum, so the zero leg is the same spectrum either way.*
+    """
+    d = os.path.join(WORK, tag)
+    if os.path.isdir(d):
+        shutil.rmtree(d)
+    os.makedirs(d)
+    os.symlink(os.path.join(LANDED_DIR, 'lcdm_S000.npz'), os.path.join(d, 'lcdm_S000.npz'))
+    for slot in ('S030', 'S060'):
+        src = os.path.join(LEGS, tag, 'lcdm_%s_pol.npz' % slot)
+        if not os.path.isfile(src):
+            raise SystemExit('  ⛔ missing leg %s -- run gen_limitfit.sh first' % src)
+        os.symlink(src, os.path.join(d, 'lcdm_%s.npz' % slot))
+    return d
 
 
 def run_fit(label, bank_dir):
@@ -96,11 +122,9 @@ def main():
 
     # ══ THE ARM ═════════════════════════════════════════════════════════════════════════════════
     got = {}
+    os.makedirs(WORK, exist_ok=True)
     for tag in ('off', 'on'):
-        d = os.path.join(LEGS, tag)
-        if not os.path.isdir(d):
-            raise SystemExit('  ⛔ %s is not built; run gen_limitfit.sh first' % d)
-        got[tag] = amps(run_fit('limit_%s' % tag, d))
+        got[tag] = amps(run_fit('limit_%s' % tag, legs(tag)))
     rec['A'] = got
 
     print('\n' + '=' * 100)

@@ -55,17 +55,10 @@ for spec in "off S030 1e-3 0" "off S060 1e-4 0" "on S030 1e-3 1" "on S060 1e-4 1
 done
 fail=0
 for p in "${pids[@]}"; do wait "$p" || fail=1; done
-# the zero leg, shared by both banks and taken from r7874 rather than rebuilt
-Z=$(ls r7874_*/srcdec/lcdm_S000_tt.npz 2>/dev/null | head -1)
-ZP=${Z%_tt.npz}_pol.npz
-for bank in off on; do
-  for sfx in tt pol; do
-    s="$Z"; [ "$sfx" = pol ] && s="$ZP"
-    [ -s "$s" ] && ln -sf "$(cd "$(dirname "$s")" && pwd)/$(basename "$s")" \
-       "$OUT/$bank/lcdm_S000_${sfx}.npz"
-  done
-  b=$(ls r7874_*/srcdec/lcdm_S000.npz 2>/dev/null | head -1)
-  [ -s "$b" ] && ln -sf "$(cd "$(dirname "$b")" && pwd)/lcdm_S000.npz" "$OUT/$bank/lcdm_S000.npz"
-done
+# ⛔ NO ZERO LEG IS PLACED HERE.  `shift.py` opens one file per slot under a BARE name and the
+#   bank writes `_tt`/`_pol` pairs, so the fit cannot read a bank directory directly: `limitfit.py`
+#   assembles its own leg directory, as `r7876`'s `legs()` does for the same fit, and takes the zero
+#   leg from the LANDED bank there.  *This tail first copied `r7874`'s zero leg into each bank,
+#   which the fit never reads — removed rather than left as a file that looks load-bearing.*
 echo "done fail=$fail" | tee "$OUT/done.txt"
 exit $fail
