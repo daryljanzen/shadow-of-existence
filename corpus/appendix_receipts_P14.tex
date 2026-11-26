@@ -64,11 +64,11 @@
 \emph{Computes:} runs clean; registered from its own docstring and a live run
  \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
 \ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/JTOWER\_angular\_index.py}
-\item[\rcptlabel{V4_chirality_parity}{P14R14}\textbf{P14R14}\quad\texttt{V4\_chirality\_parity}]\hfill\textsf{[OK]}\\
-\textit{sec:family} \ (V\_4 acts on the three walls' chirality signs (prop:wall: chirality = sigma\_y eigenvalue per wall, and reversing a wall flips it). det=+1 => EVEN number of flips. What is the orbit of the observed configuration, and is the observed one distinguished?). 
-\emph{Computes:} runs clean; registered from its own docstring and a live run
- \emph{Bound:} description is the receipt's own wording, condensed; not independently re-derived here
-\ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/V4\_chirality\_parity.py}
+\item[\rcptlabel{P14_the_walls_chiralities_are_not_the_residue_frame_signs}{P14R14}\textbf{P14R14}\quad\texttt{P14\_the\_walls\_chiralities\_are\_not\_the\_residue\_frame\_signs}]\hfill\textsf{[OK]}\\
+\textit{sec:family} \ (THE WALLS' CHIRALITIES ARE NOT THE RESIDUE FRAME'S SIGNS: in the frame holonomy (the cube rotation group O, order 24) every root transposition carries one or three sign reversals and none is bare, so O does not contain the S\_3 x 1 by which the walls' chiralities transform; read as chiralities O would carry (+,+,+) to all eight sign patterns, while D\_6 = S\_3 x <-I> carries it only to (+,+,+) and (-,-,-), so dim ker\_- is 0 or 3, never 1 or 2; a mass-plane loop returns the root set to itself while the frame returns as a quarter turn). 
+\emph{Computes:} numerical continuation around both Nariai points; closure on signed permutations; orbits under O and D\_6
+ \emph{Bound:} that chirality is a property of the real geometry, returned by a closed loop, is prop:wall's reading and is argued in the paper, not computed
+\ \emph{Run:} \texttt{python3 receipts/P14\_matter\_sector\_paper/P14\_the\_walls\_chiralities\_are\_not\_the\_residue\_frame\_signs.py}
 \item[\rcptlabel{I19_the_superpotential_is_not_shape_invariant}{P14R15}\textbf{P14R15}\quad\texttt{I19\_the\_superpotential\_is\_not\_shape\_invariant}]\hfill\textsf{[OK]}\\
 \textit{sec:chirality} \ (I19 --- THE SUPERPOTENTIAL IS NOT SHAPE INVARIANT. Integrable-systems field bake, probe I19. V\_+(lambda) = V\_-(mu) + R with R independent of r admits no constant shift; the one that works, mu = -lambda, gives V\_+(lambda) - V\_-(-lambda) = 0 identically and so R = 0 -- the partners coincide and there is no ladder. Carries a POSITIVE CONTROL: the Poschl-Teller superpotential W = lambda tanh(x) run through the same machinery registers shape invariant with mu = lambda - 1 and R = 2 lambda - 1, so the negative is a discrimination rather than a failure to find. Therefore the exactness in P14 is the zero mode's, which is topological, and not the spectrum's -- which is why the generation count is read from an index.). 
 \emph{Computes:} runs clean; nine verdicts including a positive control

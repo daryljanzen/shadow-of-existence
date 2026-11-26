@@ -746,30 +746,22 @@ us $\mathfrak{su}(2,1)$. *And the tempting next step — that $V_4$ and $S_3$ ge
 ***not taken here***: the two act on the same three labels and **whether they generate a semidirect product or
 collapse is a computation, not a pattern-match**.*
 
-**⌗ FACT 13 — the $V_4$ acts on the walls' CHIRALITIES, and it protects the count's parity (r2331).**
+**⌗ FACT 13 — the walls' CHIRALITIES are held by the geometry, not by the frame's $V_4$ (r2331).**
 
-**⌗ THE IDENTIFICATION IS `prop:wall`'s, not an analogy.** *"**Each throat wall binds exactly one**
+**⌗ WHAT `prop:wall` FIXES.** *"**Each throat wall binds exactly one**
 normalizable chiral zero-mode; its chirality is **a definite $\sigma_y$ eigenvalue whose sign is the sign of
 the signed-radius flip**; that operator is the diagram-automorphism parity **$R=\gamma^5$**&hellip; **Reversing the
-wall reverses $\chi_\pm$, flipping the chirality --- the parity IS the chirality**."* ***Each wall carries a
-sign; $V_4$ flips signs. Same object.***
+wall reverses $\chi_\pm$, flipping the chirality --- the parity IS the chirality**."* ***Each wall carries a sign, and the frame carries signs --- but they are different objects.*** *The
+chirality is the sign of the wall's signed-radius flip, a property of the real geometry; a loop in the mass plane
+returns to the same mass and so returns every chirality unchanged. The frame's signs are a branch of
+$\sqrt{f'(r_i)}$, and in the transported holonomy every root transposition carries an odd number of sign reversals, which
+the walls' $S_3\times1$ forbids for chirality. The group acting on the chiralities is $D_6$, where only the
+orientation parity $R$ reverses them, all three at once*\rcpt{P14_the_walls_chiralities_are_not_the_residue_frame_signs}.
 
-**✔ RESULT 1 --- the observed configuration is the unique uniform member of its orbit.** *The $V_4$ orbit of
-$(+,+,+)$ is $\{(+,+,+),(+,-,-),(-,+,-),(-,-,+)\}$, and **only $(+,+,+)$ has all three walls at one
-chirality**\rcpt{V4_chirality_parity} --- which is what the sector computes: $\dim\ker_+=3$, $\dim\ker_-=0$.*
-
-**★ RESULT 2, and it is the stronger one --- a PARITY PROTECTION.** *$\det=+1$ admits **only even numbers of
-flips**. The odd flips $(-,+,+)$, $(+,-,+)$, $(+,+,-)$, $(-,-,-)$ all carry $\det=-1$ and are **excluded from
-the holonomy group**.*
-$$\textbf{No holonomy of this connection can flip a single generation's chirality. Only pairs.}$$
-*So $\dim\ker_-$ **cannot be reached from $\dim\ker_+=3$ by any number of loops**: the holonomy moves the count
-by two at a time, and ***$3$ and $0$ are in different parity classes***.*
-
-**⇒ SO THE SECTOR'S CENTRAL RESULT GAINS A REASON IT CANNOT BE OTHERWISE.** *"$\dim\ker_+=3$, $\dim\ker_-=0$"
-is computed from the index; **the holonomy now says the parity is protected** --- and by exactly the $\det=+1$
-condition that r2321 found on the $3$-cycles and P13 attaches to the orientation-reversing element. *A $V_4$
-element is **$R$ applied to two walls at once**, and the determinant condition is **what forbids applying it to
-one**.*
+**✔ RESULT --- the uniform configuration is carried only to itself and its conjugate.** *Under $D_6$ the orbit of
+$(+,+,+)$ is $\{(+,+,+),(-,-,-)\}$: $\dim\ker_-$ is $0$, or $3$ in the conjugate geometry, never $1$ or $2$ ---
+which is what the sector computes, $\dim\ker_+=3$, $\dim\ker_-=0$, held by the geometry rather than by a
+determinant condition on the frame.*
 
 **⌗ FACT 14 — where $V_4$ comes from, and the Weyl chain it completes (r2332).**
 
