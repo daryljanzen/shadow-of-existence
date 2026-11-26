@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """⛭⛭⛭ THE MASS ENTERS THE INSTRUMENT'S PERTURBATIONS ONLY AS A SUBTRACTION AND NEVER AS A SOURCE,
-THE TT AMPLITUDE EXCESS IS NOT THE LEAN, AND THE EPOCH-CONSISTENT REPAIR CLOSES THE SOURCE EXACTLY.
+THE TT AMPLITUDE EXCESS IS NOT THE LEAN, AND THE EPOCH-CONSISTENT REPAIR REACHES THE RIGHT OBJECT AND
+OVER-APPLIES: IT IS REFUTED ON ITS OWN REGISTERED VALIDATION, BY THE BLOCK THAT ALREADY MATCHED.
 
 COMPUTES: the closure deficit of the instrument's four perturbation weights, measured by EXECUTING
 the instrument's own prelude rather than reimplementing it, at two sums and at two epochs, and set
@@ -8,27 +9,36 @@ beside the instrument's own banked sum response over the same stretch so that th
 credited with more than the defect it removes; the lean re-read with the TT amplitude excess divided
 out of the response, on BOTH of the score's columns and under two no-free-parameter interpolations
 of `A(Sigma)`, against the move the earlier revision recorded; and the new perturbation switch's
-byte-identity when off, its two refusals, and the same closure under it.
+byte-identity when off, its two refusals, the same closure under it, and `A` and `eps` refitted
+against CAMB on the repaired perturbations by the PREVIOUS revision's own fit, executed rather than
+re-implemented, with its reproduction leg required to return that revision's headline first.
 ** IT PINS AS RESULTS: the deficits `-2.024528e-03` and `-6.970164e-03` at `0.30` eV and
 `-7.544464e-03` and `-1.397832e-02` at `0.60`, against the response's own `1.641809e-02` and
 `3.800102e-02`, so `0.1233` and `0.1985` of it; the species' Fermi-Dirac `w` at recombination,
 `0.320474` and `0.290599`, against the `1/3` its own equations hard-code; the corrected moves
 `-19.330577` and `-19.299451` against the recorded `-20.09`, so `0.0378` and `0.0394` of it removed;
-and the closure under the switch at `1.110223e-16` and `2.220446e-16`. **
+and the closure under the switch at `1.110223e-16` and `2.220446e-16`; and on the repaired
+perturbations `A = 0.86401` and `0.81466` in TT against `1.15162` and `1.29592`, with `0.94474` and
+`0.91120` in EE against `1.01405` and `1.04630`, the two shear arms `0.00376` and `0.00364` apart,
+and the fitted residuals falling by `3.5` to `5.9` times. **
 ⛔ ** AND IT PINS WHAT WAS WRONG IN THIS LINE'S OWN FIRST RUN AND HOW IT WAS CAUGHT: ** the
 correction arm's reproduction leg read the RE-PROFILED column where the headline is the FROZEN one
 AND took the move with the opposite sign to the record's own table; both are pinned here as the
 defect and as the reproduction that found it, `-20.086848` and `-48.201966` against `-20.09` and
 `-48.20`.
-⛔ ** NO LIMIT, NO ENVELOPE CROSSING AND NO REFITTED `A` IS PINNED HERE from the repaired
-perturbations: this file pins the defect, the separation and the switch's own arms.  The validation
-`A` is pinned by the revision that reads it. **
+⛔ ** AND IT PINS THE VERDICT AS Ⓖ ON A BAND THAT IS NOT MOVED, WITH THE NEAR THING SAID OUT LOUD: **
+EE's `0.05526` at `0.30` eV sits just past the `0.05` band, and the threshold is left where it was;
+what decides it either way is `0.01405 -> 0.05526`, the repair breaking the block that matched.
+⛔ ** NO LIMIT AND NO ENVELOPE CROSSING IS PINNED HERE, because the verdict is Ⓖ and none was read.
+No decomposition of the three changes is pinned either: it is not run here, and it is routed. **
 
 ⌷ ** THE ID. **  `69` ordered this as `r7875`, which merged `r7874`, ruled the envelope a screen and
 the shift-amplitude fit the verdict, and overruled this seat's recommendation not to build the
 conditional switch -- on the physics, and not on the share table.
 
-⚠ ** THREE THINGS IN THIS RECORD ARE THIS SEAT'S OWN, and the first is the two defects above. **
+⚠ ** FOUR THINGS IN THIS RECORD ARE THIS SEAT'S OWN: the two defects above; the ONE declared
+uncertainty of the approximation, measured and found NOT to be the cause; and a verdict that fires on
+a band this seat set, at a margin this seat reports rather than smooths. **
 
     NODE=60 python3 <this file>
 
@@ -136,7 +146,7 @@ check('Ⓑ①ᵃ ⛭ ** THE DEFICIT IS MEASURED BY EXECUTING THE INSTRUMENT\'S O
       '1..645 in a fresh namespace -- AND NOT BY REIMPLEMENTING ITS SPLINES. **  ⇒ *a second copy '
       'of a definition is how two numbers come to be called the same thing*',
       '_CUT = 645' in CLOSE_PY and 'exec(compile(head, SRC, \'exec\'), ns)' in CLOSE_PY
-      and 'NOT RETYPED' in CLOSE_PY)
+      and 'EXECUTES the instrument' in ' '.join(CLOSE_PY.split()))
 
 for tag, mnu, dr, dn in (('S030', 0.30, -2.024528e-03, -6.970164e-03),
                          ('S060', 0.60, -7.544464e-03, -1.397832e-02)):
@@ -211,7 +221,7 @@ check('Ⓒ②ᶠ ⛔ ** AND WHAT THIS SETTLES IS STATED NARROWLY: ** the previou
       'multipole residual and the lean ONE OBJECT until a measurement separated them; this '
       'separates them, and it does NOT say the lean is not an instrument defect -- only that what '
       'carries it is not the amplitude of the TT sum response over this band',
-      'it separates them' in RESULT
+      'This is that measurement, and it separates them' in RESULT
       and 'It does not say the lean is not an instrument defect' in RESULT)
 
 # ══ Ⓓ ③ THE SWITCH'S OWN ARMS, BEFORE ANY SPECTRUM IS READ THROUGH IT ═══════════════════════════
@@ -251,7 +261,7 @@ check('Ⓓ③ᵈ ⛭ the approximation is NAMED in the code and in the record, a
       'epochs, a second arm switches the species\' shear off below `w = 1/6`, and the SPREAD between '
       'them is reported as the approximation\'s own uncertainty on `A`',
       'THE FERMI-DIRAC FLUID APPROXIMATION' in INST
-      and 'NUSHOFF' in INST and '_NU_NR = 1.0 / 6.0' in INST
+      and '_NU_NR = 1.0 / 6.0' in INST and 'NUSHOFF=1` switches that' in INST
       and 'WHAT IT DOES NOT DO' in INST
       and 'bounded rather than hidden' in RESULT)
 
@@ -260,7 +270,7 @@ check('Ⓓ③ᵉ ⛭ and the weight is redefined WHERE IT IS BUILT and not at it
       'disagree',
       'On_of = CubicSpline(eg, Onu_of(ag) / _rt)' in INST
       and INST.count('On_of(') == 7
-      and 'cannot disagree' in RESULT,
+      and 'take it together and cannot disagree' in RESULT,
       '%d call site(s)' % INST.count('On_of('))
 
 check('Ⓓ③ᶠ ⌗ and the two new switches are recorded in the run\'s resolved config, for the reason an '
@@ -283,20 +293,196 @@ check('Ⓔ⓪ᵃ ⛭ ** THE REGISTRATION WAS COMMITTED AND PUSHED BEFORE ANY MEA
       'the result is read on, unmoved. **',
       'Register-before-measure' in PRED
       and 'the amplitude excess IS the lean' in PRED
-      and '`f` ≤ 0.30' in PRED or 'f ≤ 0.30' in PRED)
+      and 'f ≤ 0.30' in PRED)
 
 check('Ⓔ⓪ᵃᵃ ⛭ and it registered a REACHABLE NEGATIVE on the repair before the repair existed -- '
       'that if the deficit came out small against the response, the order\'s own alternative is the '
       'expected finding -- and the measured ratios cleared it rather than the clause being dropped',
       'the defect is elsewhere' in PRED
-      and 'will not rescue' in PRED
+      and 'will not rescue ③ by widening it' in PRED
       and all(abs(CL[t]['d_rec']) / CL[t]['r_rms'] > 0.10 for t in ('S030', 'S060')))
 
 check('Ⓔ⓪ᵃᵇ ⛭ and the six reads taken before the registration are DECLARED in it, the first being '
       'that item ① IS a read of the code and so could not be taken after',
-      'READS TAKEN BEFORE THIS REGISTRATION' in PRED
-      and 'DECLARED' in PRED
+      'READS TAKEN BEFORE THIS REGISTRATION — DECLARED' in PRED
+      and 'READS TAKEN BEFORE THIS REGISTRATION — DECLARED' in PRED
       and 'No spectrum of this revision has been computed' in PRED)
+
+# ══ Ⓔ ③'s VALIDATION, ON THE BAND FIXED BEFORE THE REPAIR WAS WRITTEN ═══════════════════════════
+RF = load('refit.json')
+REFIT_PY = text('refit.py')
+
+check("Ⓕ③ᵃ ⛭ ** THE FIT IS NOT RE-IMPLEMENTED: the previous revision's own `shift.py` is EXECUTED "
+      'with TWO lines rebound -- the bank it reads and the file it writes -- so the CAMB legs, the '
+      '`eps` allowance measured off the bank\'s acoustic scale against CAMB\'s own, the `eps` grid, '
+      'the `A`-across-the-band measurement and the verdict logic are the ones that revision was '
+      'judged on. **  ⇒ *a fit re-implemented here would be a second instrument, and `1.152 -> ?` '
+      'would then be a comparison between two of them*',
+      'NOT RETYPED, AND NOT APPROXIMATED EITHER' in REFIT_PY
+      and 'the_two_rebindings' in REFIT_PY
+      and "ON = os.environ['R7876_ON']" in REFIT_PY
+      and "OUT = os.environ['R7876_OUT']" in REFIT_PY)
+
+check('Ⓕ③ᵃᵃ ⛭ and its REPRODUCTION leg on the landed bank returns that revision\'s headline to five '
+      'decimal places in all four rows, which is what makes the repaired legs readable at all',
+      RF['reproduced'] is True
+      and abs(RF['landed']['fits']['TT|0.30']['best_A'] - 1.15162) < 5e-06
+      and abs(RF['landed']['fits']['TT|0.60']['best_A'] - 1.29592) < 5e-06
+      and abs(RF['landed']['fits']['EE|0.30']['best_A'] - 1.01405) < 5e-06
+      and abs(RF['landed']['fits']['EE|0.60']['best_A'] - 1.04630) < 5e-06,
+      'TT %.5f / %.5f, EE %.5f / %.5f'
+      % tuple(RF['landed']['fits'][k]['best_A']
+              for k in ('TT|0.30', 'TT|0.60', 'EE|0.30', 'EE|0.60')))
+
+for k, a_now in (('TT|0.30', 0.86401), ('TT|0.60', 0.81466),
+                 ('EE|0.30', 0.94474), ('EE|0.60', 0.91120)):
+    check('Ⓕ③ᵇ(%s) ⛭ on the repaired perturbations `A = %.5f`' % (k, a_now),
+          abs(RF['shear_on']['fits'][k]['best_A'] - a_now) < 5e-06,
+          '%.5f' % RF['shear_on']['fits'][k]['best_A'])
+
+check('Ⓕ③ᶜ ⛔⛭ ** THE VERDICT IS Ⓖ -- THE REPAIR IS REFUTED ON ITS OWN REGISTERED VALIDATION, AND BY '
+      'THE BLOCK THAT ALREADY MATCHED: ** EE\'s departure from one goes from `0.01405` to `0.05526` '
+      'at `0.30` eV and from `0.04630` to `0.08880` at `0.60`, where the order required that EE '
+      '"must not move away from its present agreement".  ⇒ *so NO limit is read through the switch, '
+      'and ④ does not start*',
+      RF['verdict'] == 'G'
+      and abs(RF['bands']['EE'] - 0.05) < 1e-12
+      and abs(RF['shear_on']['fits']['EE|0.30']['best_A'] - 1.0) > RF['bands']['EE']
+      and abs(RF['shear_on']['fits']['EE|0.60']['best_A'] - 1.0) > RF['bands']['EE']
+      and 'No limit is read through `NUPERT`' in RESULT)
+
+check('Ⓕ③ᶜᶜ ⛔ and the band is NOT MOVED, with the near thing said rather than smoothed: `0.05526` '
+      'against `0.05` at the lower sum is a margin of `0.00526`, and the higher sum is not close at '
+      '`0.08880`.  ⇒ *the comparison that decides it either way is not the threshold but '
+      '`0.01405 -> 0.05526`*',
+      abs(abs(RF['shear_on']['fits']['EE|0.30']['best_A'] - 1.0) - 0.05526) < 5e-06
+      and 'the threshold is a near thing' in RESULT
+      and 'and it is held unmoved' in RESULT)
+
+for k, frac in (('TT|0.30', 0.1053), ('TT|0.60', 0.3739)):
+    check('Ⓕ③ᵈ(%s) ⛭ ** AND THE REFUTATION IS NOT THAT NOTHING HAPPENED: ** TT\'s `A` moves TOWARD '
+          'one by `%.4f` of its excess, so the defect ① located is real and the repair\'s SIGN is '
+          'right' % (k, frac),
+          abs(RF['summary']['shear_on|%s' % k]['frac'] - frac) < 5e-05
+          and RF['summary']['shear_on|%s' % k]['frac'] > 0.0,
+          '%.4f' % RF['summary']['shear_on|%s' % k]['frac'])
+
+check('Ⓕ③ᵉ ⛔⛭ ** IT OVERSHOOTS, AND THE ORDER\'S VALIDATION DID NOT ENUMERATE THAT STATE: ** `A` '
+      'does not fall toward one and stop, it CROSSES and lands at `0.86401` and `0.81466`.  The '
+      'order enumerated "falls toward 1" and "does not move"; the repair did neither.  ⇒ *a '
+      'defence against a state changing has to enumerate the states it may produce, and this one '
+      'produced a third*',
+      RF['shear_on']['fits']['TT|0.30']['best_A'] < 1.0
+      and RF['shear_on']['fits']['TT|0.60']['best_A'] < 1.0
+      and "It OVERSHOOTS, and the order's validation did not enumerate that state"
+      in RESULT
+      and 'the repair did neither' in RESULT)
+
+check('Ⓕ③ᶠ ⛭ ** AND THE ONE GAP THIS SEAT DECLARED IS MEASURED AND IS NOT THE CAUSE: ** the two '
+      'shear arms differ by `0.0037550` and `0.0036366` in `A`, which is `2.76` and `1.96` per '
+      'cent of the overshoot they would have to explain.  ⇒ *a declared uncertainty that turns out '
+      'not to matter removes a candidate, which is worth as much as one that does*',
+      abs(RF['A_spread_shear']['0.30'] - 0.0037550) < 5e-07
+      and abs(RF['A_spread_shear']['0.60'] - 0.0036366) < 5e-07
+      and max(RF['A_spread_shear'].values())
+      < 0.05 * abs(RF['shear_on']['fits']['TT|0.60']['best_A'] - 1.0)
+      and 'IS MEASURED AND IS NOT THE CAUSE' in RESULT,
+      '%.6f / %.6f' % (RF['A_spread_shear']['0.30'], RF['A_spread_shear']['0.60']))
+
+_rat = [(RF['landed']['fits'][k]['resid_best'] / RF['shear_on']['fits'][k]['resid_best'])
+        for k in ('TT|0.30', 'TT|0.60', 'EE|0.30', 'EE|0.60')]
+check('Ⓕ③ᵍ ⛭ ** AND THE SHAPE GETS SHARPLY BETTER WHILE THE AMPLITUDE OVERSHOOTS: ** the fitted '
+      'residual falls in every block and every sum, by `3.5` to `5.9` times.  ⇒ *the repaired '
+      'response has CAMB\'s SHAPE far more closely than the landed one and the wrong amplitude, '
+      'which is a different finding from either branch the order wrote down*',
+      all(r > 3.0 for r in _rat) and min(_rat) > 3.4 and max(_rat) < 6.0
+      and 'THE SHAPE GETS SHARPLY BETTER' in RESULT,
+      'factors %s' % ', '.join('%.1f' % r for r in _rat))
+
+check('Ⓕ③ᵍᵍ ⌗ and `eps` grows with it, to `21.65` and `8.22` times its own measured allowance in TT, '
+      'so the repair moves the peak position as well as the amplitude -- reported, not absorbed',
+      abs(RF['shear_on']['fits']['TT|0.30']['eps_over_allowed'] - 21.65) < 0.05
+      and abs(RF['shear_on']['fits']['TT|0.60']['eps_over_allowed'] - 8.22) < 0.05)
+
+check('Ⓕ③ʰ ⛔ ** AND WHAT IS NOT DONE IS SAID: ** the three changes went in TOGETHER and this '
+      'revision has no decomposition of which one over-corrects.  It is three legs per sum, it is '
+      'NOT run here because it would need its own registration, and it is ROUTED -- narrowed first '
+      'by the shear arm\'s result',
+      'WHAT IS NOT DONE HERE, AND IS ROUTED' in RESULT
+      and 'it is **not run here**' in RESULT
+      and 'no decomposition of which one over-corrects' in RESULT)
+
+# ══ Ⓖ EVERY FIGURE THE INDEX ROW PRINTS, PINNED POINTWISE AND NOT THROUGH A LOOP ════════════════
+# ⚠ *The arms above hold most of these already -- but they hold them through a LOOP VARIABLE, and a
+#   literal read off a loop variable is not a pin: the comparison the instrument parses contains no
+#   number at all.  That trap cost an earlier revision of this line four figures.  So every figure
+#   the register's row prints is pinned HERE, pointwise, with the literal written into the
+#   comparison, inside the allowance for the digits the row actually prints.*
+F = CL['S030']
+G = CL['S060']
+AM_F = AM['forms']
+RS = RF['shear_on']['fits']
+RL = RF['landed']['fits']
+
+check('Ⓖ⓪ᵃ the two sums the record is read at', abs(F['mnu'] - 0.30) < 1e-09
+      and abs(G['mnu'] - 0.60) < 1e-09)
+check('Ⓖ⓪ᵇ the closure deficit ratio `0.1233` at the lower sum',
+      abs(abs(F['d_rec']) / F['r_rms'] - 0.1233) < 5e-05)
+check('Ⓖ⓪ᶜ and `0.1985` at the higher',
+      abs(abs(G['d_rec']) / G['r_rms'] - 0.1985) < 5e-05)
+check('Ⓖ⓪ᵈ the Fermi-Dirac `w` at recombination, `0.320474`',
+      abs(F['w_rec'] - 0.320474) < 5e-07)
+check('Ⓖ⓪ᵉ and `0.290599`', abs(G['w_rec'] - 0.290599) < 5e-07)
+check('Ⓖ⓪ᶠ the corrected move `19.330577` meV, form L',
+      abs(abs(AM_F['L']['frozen']['move']) - 19.330577) < 5e-06)
+check('Ⓖ⓪ᵍ and `19.299451`, form Q',
+      abs(abs(AM_F['Q']['frozen']['move']) - 19.299451) < 5e-06)
+check('Ⓖ⓪ʰ the fraction of the lean removed, `0.0378`',
+      abs(AM_F['L']['frozen']['f'] - 0.0378) < 5e-05)
+check('Ⓖ⓪ⁱ and `0.0394`', abs(AM_F['Q']['frozen']['f'] - 0.0394) < 5e-05)
+check('Ⓖ⓪ʲ ⛔ the uncorrected move `20.09` meV, pinned to the digits the row prints and NOT to the '
+      'five-hundredths the reproduction arm above allows -- that arm answers "does it reproduce the '
+      'record", this one answers "would this receipt fail if the printed figure were wrong", and '
+      'they are two questions',
+      abs(abs(AM['uncorrected']['frozen']['move']) - 20.09) < 0.0099)
+check('Ⓖ⓪ᵏ the refitted `A = 0.86401` in TT at the lower sum',
+      abs(RS['TT|0.30']['best_A'] - 0.86401) < 5e-06)
+check('Ⓖ⓪ˡ and `0.81466` at the higher', abs(RS['TT|0.60']['best_A'] - 0.81466) < 5e-06)
+check('Ⓖ⓪ᵐ and EE\'s `0.94474`', abs(RS['EE|0.30']['best_A'] - 0.94474) < 5e-06)
+check('Ⓖ⓪ⁿ and EE\'s `0.91120`', abs(RS['EE|0.60']['best_A'] - 0.91120) < 5e-06)
+check('Ⓖ⓪ᵒ the reproduced `1.15162` and `1.29592` in TT',
+      abs(RL['TT|0.30']['best_A'] - 1.15162) < 5e-06
+      and abs(RL['TT|0.60']['best_A'] - 1.29592) < 5e-06)
+check('Ⓖ⓪ᵖ and the reproduced `1.01405` and `1.04630` in EE',
+      abs(RL['EE|0.30']['best_A'] - 1.01405) < 5e-06
+      and abs(RL['EE|0.60']['best_A'] - 1.04630) < 5e-06)
+check('Ⓖ⓪ᑫ the fraction of TT\'s excess removed, `0.1053`',
+      abs(RF['summary']['shear_on|TT|0.30']['frac'] - 0.1053) < 5e-05)
+check('Ⓖ⓪ʳ and `0.3739`', abs(RF['summary']['shear_on|TT|0.60']['frac'] - 0.3739) < 5e-05)
+check('Ⓖ⓪ˢ the two shear arms\' separation, `0.0037550` and `0.0036366`',
+      abs(RF['A_spread_shear']['0.30'] - 0.0037550) < 5e-08
+      and abs(RF['A_spread_shear']['0.60'] - 0.0036366) < 5e-08)
+check('Ⓖ⓪ᵗ EE\'s departure from one, `0.05526`, and the `0.05` band it sits `0.00526` past',
+      abs(abs(RS['EE|0.30']['best_A'] - 1.0) - 0.05526) < 5e-06
+      and abs(RF['bands']['EE'] - 0.05) < 1e-12)
+check('Ⓖ⓪ᵘ the closure under the switch, `1.110223e-16` and `2.220446e-16`',
+      abs(CL['nupert']['S030']['worst'] - 1.110223e-16) < 1e-22
+      and abs(CL['nupert']['S060']['worst'] - 2.220446e-16) < 1e-22)
+check('Ⓖ⓪ᵛ the four closure deficits the row prints',
+      abs(F['d_rec'] + 2.024528e-03) < 5e-09 and abs(F['d_now'] + 6.970164e-03) < 5e-09
+      and abs(G['d_rec'] + 7.544464e-03) < 5e-09 and abs(G['d_now'] + 1.397832e-02) < 5e-09)
+check('Ⓖ⓪ʷ and the two response sizes they are read against, `1.641809e-02` and `3.800102e-02`',
+      abs(F['r_rms'] - 1.641809e-02) < 5e-08 and abs(G['r_rms'] - 3.800102e-02) < 5e-08)
+check('Ⓖ⓪ˣ the two interpolations\' agreement, `0.0015`',
+      abs(AM['f_spread'] - 0.0015493) < 5e-06)
+check('Ⓖ⓪ʸ the `2.76` and `1.96` per cent the shear arms are of the overshoot',
+      abs(100 * RF['A_spread_shear']['0.30'] / abs(RS['TT|0.30']['best_A'] - 1.0) - 2.76) < 0.005
+      and abs(100 * RF['A_spread_shear']['0.60'] / abs(RS['TT|0.60']['best_A'] - 1.0) - 1.96)
+      < 0.005)
+check('Ⓖ⓪ᶻ and EE\'s `0.01405` before against `0.05526` after, and `0.04630` against `0.08880`',
+      abs(abs(RL['EE|0.30']['best_A'] - 1.0) - 0.01405) < 5e-06
+      and abs(abs(RL['EE|0.60']['best_A'] - 1.0) - 0.04630) < 5e-06
+      and abs(abs(RS['EE|0.60']['best_A'] - 1.0) - 0.08880) < 5e-06)
 
 print('=' * 100)
 print('  %d arm(s), %d failed' % (NARMS, len(FAILS)))

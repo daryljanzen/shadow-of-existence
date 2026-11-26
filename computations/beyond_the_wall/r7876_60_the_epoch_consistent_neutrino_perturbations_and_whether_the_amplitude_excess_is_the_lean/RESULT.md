@@ -148,5 +148,61 @@ legs are readable.
 `NUPERT` is provably inert there — which is also why it refuses to run there rather than pretending
 to.
 
-*⌗ The four legs are generating. The validation table, the shear spread and the verdict are appended
-below when they land; nothing above this line depends on them.*
+### THE VALIDATION — **Ⓖ: THE REPAIR IS REFUTED ON ITS OWN VALIDATION**
+
+**The reproduction arm first.** The same code on `r7874`'s own bank returns `A = 1.15162` and
+`1.29592` in TT and `1.01405` and `1.04630` in EE — `r7874`'s headline to the digit. Only then are
+the repaired legs read.
+
+| | Σ | `A` was | `A` now, shear on | shear off | `\lvert A-1 \rvert` now | of the excess removed | best `ε`, × its allowance |
+|---|---|---|---|---|---|---|---|
+| **TT** | 0.30 | `1.15162` | **`0.86401`** | `0.86025` | `0.13599` | `+0.1053` | `5.55e-03`, **`21.65×`** |
+| **TT** | 0.60 | `1.29592` | **`0.81466`** | `0.81103` | `0.18534` | `+0.3739` | `4.25e-03`, **`8.22×`** |
+| **EE** | 0.30 | `1.01405` | **`0.94474`** | `0.94474` | `0.05526` | — | `−1.35e-03`, `5.27×` |
+| **EE** | 0.60 | `1.04630` | **`0.91120`** | `0.91121` | `0.08880` | — | `−1.60e-03`, `3.09×` |
+
+**The verdict is Ⓖ, on the band fixed before the repair was written, and the band is not moved.**
+The order's own words: *"`A` must fall from 1.15 and 1.30 toward 1, and EE must not move away from
+its present agreement."* **EE moved away.** `\lvert A-1 \rvert` in EE goes from `0.01405` to `0.05526` at 0.30 eV
+and from `0.04630` to `0.08880` at 0.60 — a fourfold and a twofold worsening of the thing that was
+already right. ⇒ **No limit is read through `NUPERT`, and ④ does not start.**
+
+*⌗ At 0.30 eV the threshold is a near thing — `0.05526` against the `0.05` band — and it is held
+unmoved. At 0.60 eV it is not close, and the comparison that decides it either way is not the
+threshold but `0.01405 → 0.05526`: the repair breaks the block that matched.*
+
+### AND WHAT THE REFUTATION IS NOT — four things measured, and they matter more than the verdict
+
+**① TT's `A` moves TOWARD one, by a tenth of its excess at 0.30 eV and over a third at 0.60.** The
+defect ① located is real and the repair's SIGN is right. What it is not is the size.
+
+**② It OVERSHOOTS, and the order's validation did not enumerate that state.** `A` does not fall
+*toward* 1 and stop: it crosses and lands at `0.864` and `0.815`. The order enumerated "falls toward
+1" and "does not move"; the repair did neither. Over this stretch it removes about twice the response
+it should: TT needed `13` and `23` per cent taken out and about `25` and `37` were.
+
+**③ THE GAP THIS SEAT DECLARED IS MEASURED AND IS NOT THE CAUSE.** The two shear arms differ by
+`0.0037550` and `0.0036366` in `A` — **`2.76` and `1.96` per cent of the overshoot they would
+have to explain, about a fortieth of it.** The relativistic
+shear ladder, registered as the approximation's own uncertainty, is not where the over-correction
+lives. ⇒ *A declared uncertainty that turns out not to matter is worth as much as one that does: it
+removes a candidate rather than leaving it standing.*
+
+**④ THE SHAPE GETS SHARPLY BETTER WHILE THE AMPLITUDE OVERSHOOTS.** After the two-parameter fit the
+residual falls in every block and every sum: `1.618e-03 → 4.681e-04` (TT 0.30, `3.5×`),
+`5.599e-03 → 1.064e-03` (TT 0.60, `5.3×`), `1.318e-03 → 2.584e-04` (EE 0.30, `5.1×`),
+`5.043e-03 → 8.542e-04` (EE 0.60, `5.9×`). ⇒ **The repaired response has CAMB's shape far more
+closely than the landed one does, and the wrong amplitude.** And `ε` grows with it, to `21.65` and
+`8.22` times its measured allowance in TT, so the repair moves the peak position as well.
+
+⇒ **Read together: the perturbation sector was wrong in the way ① says, the repair reaches the right
+object, and it over-applies.** That is a different finding from either branch the order wrote down,
+and it is reported as Ⓖ because Ⓖ is what the registered band gives.
+
+### WHAT IS NOT DONE HERE, AND IS ROUTED
+
+**The three changes went in together** — the weight, the continuity equation and the Euler
+equation — and this revision has no decomposition of which one over-corrects. That is the next
+measurement, it is three legs per sum, and it is **not run here**: running it would need its own
+registration, and the order's item ③ asked for a validation, which is what this is. It is routed
+with this seat's recommendation, and the shear arm's result narrows it before it starts.
