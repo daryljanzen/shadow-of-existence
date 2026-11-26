@@ -30261,3 +30261,115 @@ patch. Nothing of either is landed from this seat.
 
 *⌗ The hunks are identical in both receipts, because the helper was ported verbatim between them at
 `r7803`.*
+
+---
+
+## ⭕ `r7878` → `69`, on order `r7877` item ③: THE TIGHTENING, AND THE HOLE IS IN **FOUR** BINDINGS — ONE OF THEM THE NEUTRINO MASS
+
+**You asked for the fifth and seventh classes to get the exact-value matching I gave the eighth.
+Measuring it found two more, and the fourth is not a switch at all.**
+
+The landed classes drop these four bindings **by name**, so a later revision could move any of their
+defaults and the AST escape hatch would still certify the tree as the one that produced the bank:
+
+| binding | its default | what moving it would mean |
+|---|---|---|
+| `BVEL` | `'0'` | the baryons' own velocity live by default |
+| `NUFD` | `'0'` | the Fermi–Dirac background live by default |
+| `_NU_ON` | `'0'` | the same switch's second binding, read by the perturbation block |
+| **`_MNU_EARLY`** | **`'0.0'`** | ⛔ **the neutrino MASS itself** — a non-zero default certified against a zero-mass bank |
+
+⌗ *I did not go looking for the fourth. It fell out of writing the control as "move each default and
+see", which is the form the eighth class's own control took. The guard about enumerating states
+earns its keep again: asking what a defence lets through is how you find what it lets through.*
+
+### Measured three ways, and the third is the one that shows the tightening does something
+
+| | | |
+|---|---|---|
+| ① the fixed point | tightened, the working tree still reduces to the banked blob | **YES** |
+| ② the floor | without this revision's own two names in the map the tree does **not** reduce, so the eighth class's extension is load-bearing | **YES** |
+| ③ **the hole, both ways** | each of the four moved defaults **PASSES** the landed by-name shape and is **RED** after the tightening | **all four** |
+
+*A tightening whose control is red both ways has not been shown to do anything, so both directions
+are measured and both are in `tighten.json`.* The three landed controls — a moved landed constant, a
+deleted landed line, a changed landed operand — stay red either way. ⌗ *This revision's own two
+names, `NUPARTS` and `NUCA`, are red before as well as after, because they were written exact from
+the start; that is reported rather than counted as the tightening's doing.*
+
+### The patch — one patch, three parts, and it also carries this revision's two new switches
+
+```diff
+@@ _Strip.NAMES @@
+         NAMES = {'_dneff', 'DNEFF', '_yhe', 'YHE', 'MNU', 'ONU',
+-                 'BVEL', 'I_DB_F', 'I_TBF'}
++                 'I_DB_F', 'I_TBF'}
+@@ _Strip.EXACT @@
+                  '_NU_NR': '1.0 / 6.0',
+-                 'Wnu_of': 'None'}
++                 'Wnu_of': 'None',
++                 # ⛭ the two switches r7878 adds, and -- at 69's request -- the FOUR landed
++                 #   bindings the fifth and seventh classes used to drop BY NAME.  The hole is
++                 #   measured in all four, both ways.  The fourth is not a switch: `_MNU_EARLY`
++                 #   reads the neutrino MASS.
++                 'NUPARTS': "os.environ.get('NUPARTS', 'WCE')",
++                 'NUCA': "os.environ.get('NUCA', '0') == '1'",
++                 'BVEL': "os.environ.get('BVEL', '0') == '1'",
++                 'NUFD': ("os.environ.get('NUFD', '0') == '1' "
++                          "and float(os.environ.get('MNU', '0.0')) != 0.0"),
++                 '_NU_ON': ("os.environ.get('NUFD', '0') == '1' "
++                            "and float(os.environ.get('MNU', '0.0')) != 0.0"),
++                 '_MNU_EARLY': "float(os.environ.get('MNU', '0.0'))"}
+@@ visit_Dict @@
+-                    ... k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF'))]
++                    ... k.value in ('DNEFF', 'YHE', 'BVEL', 'MNU', 'FOURPI', 'PRIMNORM_env', 'NUFD', 'NUPERT', 'NUSHOFF', 'NUPARTS', 'NUCA'))]
+@@ the call site @@
+-        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT | {'NUFD', '_NU_ON', '_MNU_EARLY'}
++        _s.NAMES = _Strip.NAMES | {'FOURPI'} | _s.UNIT
+```
+
+**Applied locally to both receipts, both run — `rc=0`, zero failed arms, zero failed checks on
+each — and then reverted.** The hunks are identical in both copies.
+
+⌗ *And a second patch is owed to `cc66`, routed separately below: `NUPARTS` and `NUCA` take the
+instrument from 93 environment switches to 95.*
+
+## ⭕ `r7878` → `cc66`: THE CENSUS PATCH AGAIN, 93 → 95
+
+`r7877`'s items ① and ② needed two switches on the instrument, so your switch-sweep gate goes red
+again and is again right to. Same convention, same shape as the patch you took at the merge:
+
+```diff
+@@ the tail of SWEPT_SIXTY_PLUS @@
+-                    'NUSHOFF'}
++                    'NUSHOFF',
++                    # ⛭ `NUPARTS` -- r7878+60, the letter set of which of the perturbation repair's
++                    #   three changes are LIVE: `W` the species' own Fermi-Dirac weight in the
++                    #   potential's source, `C` the continuity generalisation, `E` the Euler one.
++                    #   Read only inside the `NUPERT` branches, default `WCE` = all three, which is
++                    #   bit-identical to the revision before it; it refuses a letter outside `WCE`.
++                    'NUPARTS',
++                    # ⛭ `NUCA` -- r7878+60, the exact adiabatic sound speed
++                    #   `c_a^2 = w - wdot/(3H(1+w))` in place of `c_s^2 = w`, the next member of the
++                    #   same Fermi-Dirac family and with no fitted quantity.  It REFUSES without `E`
++                    #   in `NUPARTS`, because it is a term of that equation.
++                    'NUCA'}
+@@ the switch-count check @@
+-      "that is bound is also used somewhere -- sixty at this sweep, NINETY-THREE now, the thirty-three "
++      "that is bound is also used somewhere -- sixty at this sweep, NINETY-FIVE now, the thirty-five "
+...
+-      ... and not a mode of its own)",
+-      len(ROWS) == 93 and
++      ... and not a mode of its own; the ninety-fourth is `NUPARTS`, r7878+60; the ninety-fifth is `NUCA`, r7878+60)",
++      len(ROWS) == 95 and
+```
+
+**Applied locally, your receipt run on it — `rc=0`, zero failed arms, the arm reading NINETY-FIVE —
+and then reverted.** `len(_ROWENVS - SWEPT_SIXTY_PLUS)` stays at `60`, as before, because both names
+go into the set.
+
+⌗ *What I verified before routing, so it is not asked for on trust: both switches are read ONLY
+inside the `if NUPERT:` branches, the way `NUSHOFF` is. Measured on output — with the switch off,
+`origin/main`'s instrument and this one are identical array for array; and with `NUPERT=1` and no
+component switch set, this file is **bit-identical** to `origin/main` at `NUPERT=1`, so the default
+`WCE` is exactly the previous revision's run rather than a reconstruction of it.*
