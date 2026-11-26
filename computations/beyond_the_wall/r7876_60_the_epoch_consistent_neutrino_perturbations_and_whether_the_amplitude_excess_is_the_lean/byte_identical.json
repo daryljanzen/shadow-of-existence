@@ -1,0 +1,38 @@
+{
+ "all_pass": true,
+ "byte_identical": true,
+ "compare": {
+  "pol|absent": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 11
+  },
+  "pol|zero": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 11
+  },
+  "tt|absent": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 6
+  },
+  "tt|zero": {
+   "arrays_identical": true,
+   "config_same": false,
+   "n_arrays": 6
+  }
+ },
+ "refusals": {
+  "no NUFD": {
+   "message": "\u26d4 NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own Fermi-Dirac weight, and here NUFD=0 MNU=0.3",
+   "rc": 1,
+   "refused": true
+  },
+  "zero sum": {
+   "message": "\u26d4 NUPERT=1 needs NUFD=1 and MNU != 0: the repair IS the species' own Fermi-Dirac weight, and here NUFD=0 MNU=0.0",
+   "rc": 1,
+   "refused": true
+  }
+ }
+}
